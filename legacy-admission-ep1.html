@@ -132,8 +132,8 @@ header.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
 <script>
 /* ---------- state ---------- */
 const KEY='legacy-admission-s1-v1';
-const PEOPLE=['josie','wren','coop','dez','savannah','del','lurleen','fenn','colt','hunter','haskell','graham','jalen','harlan','chip','immy'];
-const NAMES={theo:'You',coop:'Coop',dez:'Dez',josie:'Josie',del:'Del',wren:'Wren',savannah:'Savannah-Claire',fenn:'Dr. Fenn',lurleen:'Mayor Lurleen',birdie:'Birdie',mavis:'Mavis',ladies:'The Gazebo Ladies',hunter:'Hunter',colt:'Colt',graham:'Dad',odell:'Ms. Odell',haskell:'Dean Haskell',earl:'Big Earl Tillman',doc:'Dr. Nguyen',judge:'Judge Crenshaw',rhonda:'Rhonda',sisters:'The Magnolias',preston:'Preston Danvers',chip:'Chip Rennick',immy:'Immy Vale',jalen:'Jalen',harlan:'Harlan Prescott-Lowe',madison:'Madison',marcus:'Marcus Hale',whitfield:'Reverend Whitfield',cletus:'Deputy Cletus',pledges:'The Pledges',student:'Poetry Student'};
+const PEOPLE=['josie','wren','coop','dez','savannah','del','lurleen','fenn','colt','hunter','haskell','graham','jalen','harlan','chip','immy','hudson','nora'];
+const NAMES={theo:'You',coop:'Coop',dez:'Dez',josie:'Josie',del:'Del',wren:'Wren',savannah:'Savannah-Claire',fenn:'Dr. Fenn',lurleen:'Mayor Lurleen',birdie:'Birdie',mavis:'Mavis',ladies:'The Gazebo Ladies',hunter:'Hunter',colt:'Colt',graham:'Dad',odell:'Ms. Odell',haskell:'Dean Haskell',earl:'Big Earl Tillman',doc:'Dr. Nguyen',judge:'Judge Crenshaw',rhonda:'Rhonda',sisters:'The Magnolias',preston:'Preston Danvers',chip:'Chip Rennick',immy:'Immy Vale',hudson:'Hudson Prescott-Lowe',nora:'Nora',jalen:'Jalen',harlan:'Harlan Prescott-Lowe',madison:'Madison',marcus:'Marcus Hale',whitfield:'Reverend Whitfield',cletus:'Deputy Cletus',pledges:'The Pledges',student:'Poetry Student'};
 const BLURB={
  josie:'Pre-med on scholarship. Works the Blue Plate counter. Allergic to rich-kid nonsense.',
  wren:'Sophomore transfer. Theatre. The funniest person at any party and the saddest at the end of it.',
@@ -150,7 +150,9 @@ const BLURB={
  jalen:'Line cook and chemistry grad student. Dez’s person. Does not do back doors.',
  harlan:'Hunter’s father. Tau alumni royalty. Has never lost a brother.',
  chip:'Student Government VP. Laser pointer. Binders. Lives for Homecoming.',
- immy:'Marcus Hale\u2019s associate. Reads liars for a living. Gave you her number.'};
+ immy:'Marcus Hale\u2019s associate. Reads liars for a living. Gave you her number.',
+ hudson:'Hunter\u2019s older brother. Tau president in 2019. Arrives by seaplane.',
+ nora:'Wren\u2019s half-sister. The girl in the yellow dress.'};
 const fresh=()=>({stats:{charm:3,nerve:1,wit:2,heart:1},rep:{campus:0,town:0},dep:0,buzz:0,
   rel:Object.fromEntries(PEOPLE.map(p=>[p,{trust:0,desire:0,loyalty:0}])),flags:{},ledger:[],log:[],cps:{},locks:{},scene:'cold'});
 let G=fresh();
@@ -164,7 +166,7 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 /* save: browser storage plus the artifact database (cloud save Claude can read) */
 const DOC='season1/save';
 let DB=null,dbBusy=false,dbDirty=false,dbTimer=null;
-function brief(){return{episodesDone:[G.flags.ep1done&&1,G.flags.ep2done&&2,G.flags.ep3done&&3,G.flags.ep4done&&4,G.flags.ep5done&&5].filter(Boolean),scene:G.scene,stats:G.stats,reputation:G.rep,dependence:G.dep,
+function brief(){return{episodesDone:[G.flags.ep1done&&1,G.flags.ep2done&&2,G.flags.ep3done&&3,G.flags.ep4done&&4,G.flags.ep5done&&5,G.flags.ep6done&&6].filter(Boolean),scene:G.scene,stats:G.stats,reputation:G.rep,dependence:G.dep,
   flags:Object.keys(G.flags).filter(k=>!/^(met|last):/.test(k)&&G.flags[k]),relationships:G.rel,ledger:G.ledger}}
 function snapshotDoc(){return{state:G,brief:brief(),savedAt:G._t||0}}
 async function pushDb(){
@@ -238,7 +240,7 @@ async function lockEpisode(n){
   try{const ref=DB.doc('season1/ep'+n+'_final');const s=await ref.get();if(!s.exists)await ref.set(snapshotDoc())}catch(e){}
 }
 function snap(){const {cps,...r}=G;return JSON.parse(JSON.stringify(r))}
-const EP_START={1:'cold',2:'cold2',3:'cold3',4:'cold4',5:'cold5'};
+const EP_START={1:'cold',2:'cold2',3:'cold3',4:'cold4',5:'cold5',6:'cold6'};
 function sceneStartSnap(){return{scene:G.scene,stats:{...G.stats},rep:{...G.rep},dep:G.dep,buzz:G.buzz,rel:JSON.parse(JSON.stringify(G.rel)),flags:{...G.flags},ledgerLen:G.ledger.length,logLen:G.log.length}}
 function restoreSceneStart(g){
   const s=g&&g.scStart;if(!s||s.scene!==g.scene)return g;
@@ -251,7 +253,8 @@ function runScene(id){
   if(id==='cold3'){G.cps[3]=snap();Object.keys(G.cps).forEach(k=>{if(+k>3)delete G.cps[k]})}
   if(id==='cold4'){G.cps[4]=snap();Object.keys(G.cps).forEach(k=>{if(+k>4)delete G.cps[k]})}
   if(id==='cold5'){G.cps[5]=snap();Object.keys(G.cps).forEach(k=>{if(+k>5)delete G.cps[k]})}
-  G.scene=id;G.scStart=sceneStartSnap();save(id==='cold2'||id==='cold3'||id==='cold4'||id==='cold5'||id==='done2'||id==='done3'||id==='done4'||id==='done5');stack=[{steps:SC[id],i:0}];next();
+  if(id==='cold6'){G.cps[6]=snap();Object.keys(G.cps).forEach(k=>{if(+k>6)delete G.cps[k]})}
+  G.scene=id;G.scStart=sceneStartSnap();save(id==='cold2'||id==='cold3'||id==='cold4'||id==='cold5'||id==='cold6'||id==='done2'||id==='done3'||id==='done4'||id==='done5'||id==='done6');stack=[{steps:SC[id],i:0}];next();
 }
 function next(){
   setDock(null);
@@ -362,7 +365,7 @@ function openNotebook(tab='people'){
         r.append(el('div','meter',`<em style="font-style:normal">standing</em><i><b style="width:${Math.max(0,Math.min(100,(v+4)/10*100))}%"></b></i><span>${v>0?'+':''}${v}</span>`));body.append(r)});
     }
     if(k==='eps'){
-      const lk=[1,2,3,4,5].filter(locked);
+      const lk=[1,2,3,4,5,6].filter(locked);
       body.append(el('p','empty',lk.length?'Locked episodes: '+lk.join(', ')+'. Finished episodes are canon, so their choices cannot be replayed or changed. The story builds on them.':'Finishing an episode locks it in. Until then you can replay an episode to try different choices. Episode 2 restarts with the exact stats and story flags you had when Episode 1 ended.'));
       const st=el('div','panelrow');st.append(el('h3','','Current stats'));st.append(el('p','',`Charm ${G.stats.charm} \u00B7 Nerve ${G.stats.nerve} \u00B7 Wit ${G.stats.wit} \u00B7 Heart ${G.stats.heart}`));body.append(st);
       body.append(episodeButtons());
@@ -2890,6 +2893,407 @@ SC.funeral5=[
  ['end',5],
 ];
 
+
+/* ============ EPISODE 6: THE LAKE HOUSE ============ */
+/* Canon: Theo amended his statement (Hell Night, names, Nora's name, the address), agreed to host the Tau Halloween Retreat at 114 Lake Ellison Road,
+   promised Wren "yes," and is at Charm 22 / Heart 32 / Wit 15 / Nerve 1, Dependence 13. Wren (Nora's half-sister) has staged the night. */
+
+SC.cold6=[
+ ['act','Cold Open'],
+ fx({buzz:-9}),
+ slug('EXT. 114 LAKE ELLISON ROAD — SATURDAY, OCTOBER 31 — 3:10 P.M.'),
+ n(`The Tau Halloween Retreat, according to the laminated itinerary Hunter Prescott-Lowe has pressed into your hand, is NOT A CHAPTER EVENT.`),
+ n(`It says so in bold across the top: THIS IS A PRIVATE ALUMNI GATHERING HOSTED BY A MEMBER IN HIS PERSONAL CAPACITY. Below it, in a font that has clearly been through a lawyer: ALL ACTIVITIES ARE INDEPENDENT OF SIGMA ALPHA TAU, ITS NATIONAL ORGANIZATION, AND ITS INSURERS. THE HOST IS A PRIVATE CITIZEN. THE HOUSE IS A HOUSE.`),
+ s('hunter',`It’s a very careful sentence. “The house is a house.” We workshopped it.`),
+ n(`It’s the first time you’ve stood in the gravel drive of 114 Lake Ellison Road since May. The long, low, cedar-shingled house sits in its clearing of pines exactly as it did, with deep porches and a stone chimney and a canvas cover on the porch swing. Someone has hung a hand-painted banner over the front door: WELCOME, BROTHERS! (AND WHITLOCK.)`),
+ n(`You are the host. You’re wearing the Tau blazer Hunter had pressed. In your pocket is a key ring you’ve been holding for an hour, and your right hand is doing the thing again, a fine fast flutter you press flat against your thigh.`),
+ n(`The convoy arrives at a quarter past three.`),
+ n(`The first vehicle is a hearse. SLOW BIZ. It rolls up the gravel drive at four miles an hour with a banner on the side that says SAFE RIDES: TAU HALLOWEEN, and in the back, belted into the middle seat in a tiny Tau blazer someone has tailored for him, sits an urn.`),
+ s('lurleen',`Designated driver, baby. Mr. Odell is the designated rider. He’s never once complained about the music.`),
+ n(`Eleven Tau brothers emerge from the hearse in costume. There are four Gatsbys. A Pilgrim. A man who appears to be dressed as a pecan. Hunter has come as Hunter S. Thompson, which is to say he’s wearing a bucket hat and a Hawaiian shirt and is holding a cigarette holder with no cigarette. He looks like a man auditioning for a documentary about himself.`),
+ s('hunter',`Gonzo, baby. It’s a vibe.`),
+ n(`The second vehicle is a minivan. It stops at the foot of the steps and the side door slides open, and out step, in formation, in black dresses and church hats, each carrying a covered casserole, the entire Gazebo Ladies’ auxiliary.`),
+ s('birdie',`We were told it was a funeral.`),
+ s('mavis',`We brought sympathy casseroles. It’s the only kind we have.`),
+ s('hunter',`It’s— a Halloween party, ma’am.`),
+ s('mavis',`Then we brought them very early.`),
+ n(`They proceed up the steps without another word and set the casseroles down on the porch in a row, like a defensive line. Ms. Odell stays at the foot of the stairs and surveys the grounds, one hand on her hat, and says, quietly, to no one, “It’s a lot of house.”`),
+ n(`A flatbed truck arrives, trailing a column of hickory smoke. A hand-lettered sign on its door reads SMOKE & ASH BBQ — MORROW, GA. Jalen climbs down from the cab in an apron and a Mud Hens cap, with a grin the size of a small state, and opens the back gate to reveal a six-foot smoker like the engine of a locomotive.`),
+ s('jalen',`I was told there’d be forty hungry boys. I brought food for a hundred. It’s a lot of pork. It’s a ministry.`),
+ n(`Behind him, standing alone at the end of the driveway on the public side of the property line, with a notebook and a phone and the stony poise of a man working a story, is Dez. He lifts a hand. He doesn’t cross the line. He doesn’t have to.`),
+ s('dez',`Press. The Gazette. I’m on the county road. It’s a public easement.`),
+ s('theo',`You could come in.`),
+ s('dez',`I could. I’d rather not be a guest where I’m also a reporter. It’s a conflict.`),
+ n(`He has the look of someone who has found something and isn’t going to say what. He pockets the notebook and lifts his phone an inch, like a man showing you his cards.`),
+ s('dez',`Later. When it’s quiet. I’ve got a name.`),
+ n(`The last vehicle makes no noise at all. It doesn’t arrive on the drive. It arrives on the lake.`),
+ n(`A white seaplane glides down out of the afternoon light, touches the water in a long, clean, silver line, and taxis, with a purr, toward the Whitlock dock. The propeller slows. The door opens. A tall, tanned, graying man in a camel overcoat steps out onto the float with the practiced ease of someone who has never once been late to an arrival.`),
+ s('hunter',`Oh my God. That’s Hudson.`),
+ n(`Hudson Prescott-Lowe is thirty, handsome in a way that has been professionally maintained, with Hunter’s jaw, his father’s shoulders, and a pair of eyes the color of a very expensive window. He walks the length of your family’s dock, up the lawn, and across the gravel with his coat open and his hands in his pockets, smiling at the house the way you’d smile at an old dog you’d been told had died.`),
+ s('hudson',`Whitlock.`),
+ s('theo',`Mr. Prescott-Lowe.`),
+ s('hudson',`Hudson. Please. I knew your grandfather. I knew your mother. It’s an extraordinary house. I hadn’t been back in four years. I couldn’t imagine why.`),
+ n(`He holds your hand a second longer than necessary. His palm is warm and dry and absolutely steady.`),
+ s('hudson',`I hear you’ve been very candid lately. With the college. I admire that. It’s a rare quality in a man of our class.`),
+ ch('Hudson Prescott-Lowe is still holding your hand.',[
+  o(`“It’s the only way I know to be a host.”`,{tag:['Charm 20'],req:['charm',20],fx:{charm:1,'rel.hunter.trust':1},then:[
+    n(`He laughs. It’s a lovely, rich, perfectly modulated laugh, the sound of a man who is being very gracious about a threat.`),
+    s('hudson',`We’re going to get along.`)]}),
+  o(`“Colt’s told me a lot about you.”`,{tag:['Wit'],fx:{wit:1,'rel.colt.trust':0},then:[
+    s('hudson',`Has he. All good, I hope.`),s('theo',`He’s a very loyal friend.`),
+    n(`Something moves behind the window of Hudson’s eyes, a shutter drawn an inch and let go.`)]}),
+  o(`Say nothing. Take back your hand.`,{tag:['Restraint'],fx:{'rel.hunter.trust':-1},then:[n(`You retrieve your hand with the least possible fuss. Hudson lets it go like a man releasing a bird. “Of course,” he says.`)]}),
+ ]),
+ n(`In the drive, Chip Rennick is directing traffic. He’s in a yellow reflective vest and a hard hat, holding two orange flashlights like a man trying to land a very small jet. A laminated badge on his chest says LAKE ELLISON ROAD HALLOWEEN SECURITY (CONTRACTOR).`),
+ s('chip',`Preston Danvers hired me. Nobody asked who I was. I have a binder. The binder has a binder.`),
+ n(`A pledge in a Pilgrim costume tries to pass him with a case of beer. Chip steps in front of the case. He lifts the flashlights in an X. The Pilgrim stops. Something enormous, unspoken, and very American passes between the two of them in the October light.`),
+ n(`It’s the funniest thing you’ve seen all week. You hold onto it. It’s going to have to last.`),
+ ['card','EPISODE SIX',`The Lake <em>House</em>`,`114 Lake Ellison Road.`],
+ ['go','kitchen6'],
+];
+
+/* ---- the kitchen ---- */
+SC.kitchen6=[
+ slug('INT. 114 LAKE ELLISON ROAD — THE KITCHEN — 4:20 P.M.'),
+ n(`The kitchen is the one room in the house that has never had a ghost. It’s a long, bright, warm room with a bank of south-facing windows, a six-burner range, a farmhouse table big enough to seat twenty, and a hanging rack of copper pans your mother polished on Sundays. It smells, tonight, like bacon, pecans, burnt sugar, and a hundred pounds of lard.`),
+ n(`The Blue Plate has taken it over. Del stands at the range in an apron with her sleeves rolled, directing a team of four teenagers with the calm of an air traffic controller. Sixty pecan pies are cooling in racks along the counters, with a bacon lattice on every one.`),
+ s('del',`The Whitlock. Sixty of them. I want you to know I’m doing this under protest, and for a fee.`),
+ n(`She doesn’t smile. She hands you a slice on a paper plate. It’s warm. It’s perfect. It’s the second one, and you’re paying for it, and somehow you’ve already been paid back.`),
+ s('del',`I saw the Dean’s office on the news. Not the news. Birdie’s phone. They said you told her. All of it.`),
+ s('theo',`I did.`),
+ s('del',`Good.`),
+ n(`It’s one word. It lands in your chest like a coin in a well.`),
+ s('del',`Josie’s in the walk-in. She’s not looking for you. She told me to say that. In those words. She’s not looking for you.`),
+ n(`Behind you, the walk-in door opens with a soft pneumatic hiss, and Josie comes out with a crate of eggs in her arms and her hair in a pencil, saying, “Mama, where do you want the—”`),
+ n(`She stops. She sees you. She sees the Tau blazer, and the plate, and the key ring in your hand, and her eyes do a thing that isn’t anger and isn’t sympathy and isn’t anything you’d have a name for.`),
+ s('josie',`Hi.`),
+ s('theo',`Hi.`),
+ s('josie',`I’m here to cook. That’s all. I want to be very clear. I’m not here to be your friend or your—`),
+ n(`She doesn’t finish. She sets the eggs down on the table with extraordinary care.`),
+ s('josie',`I heard you went in. I heard you said the address.`),
+ s('theo',`I did.`),
+ s('josie',`Good.`),
+ n(`It’s the second “good” in a minute. They’re different words in different mouths. You’re aware that you’re being forgiven in a very small, very exact, very provisional currency, and that you don’t get to count it.`),
+ ch('Josie, over a crate of eggs, in your family’s kitchen.',[
+  o(`“Thank you for being here.”`,{tag:['Heart'],fx:{heart:1,'rel.josie.trust':1},then:[
+    s('josie',`Don’t thank me. Del’s the one who needs the money.`),s('del',`I’m standing right here.`),s('josie',`I know, Mama.`),
+    n(`The corner of her mouth moves. It’s the first time in two weeks. She stops it before it gets anywhere.`)]}),
+  o(`“Will you be okay in here? In this house?”`,{tag:['Heart'],fx:{heart:1,'rel.josie.trust':2},then:[
+    s('josie',`It’s a kitchen. I’ve been in worse. I’ve been in my own.`),
+    n(`She hesitates, a half-second, with her hands on the edge of the table. She says, more quietly:`),
+    s('josie',`It’s a strange house. It listens.`)]}),
+  o(`Leave her be. Take the pie and go.`,{tag:['Restraint'],fx:{'rel.josie.trust':1},then:[n(`You take the plate. You walk out of the kitchen. You don’t look back. It’s an act of respect you’ve been learning in a very hard school.`)]}),
+ ]),
+ ['go','sober6'],
+];
+
+/* ---- the sober-or-not choice ---- */
+SC.sober6=[
+ slug('INT. 114 LAKE ELLISON ROAD — THE GREAT ROOM — 6:40 P.M.'),
+ n(`By dusk the great room has been transformed.`),
+ n(`The Whitlock great room is thirty feet by forty, with a vaulted ceiling, exposed cedar beams, and a stone fireplace large enough to roast a calf. Two hundred paper bats hang from the beams on fishing line. A bar has been set up along the back wall, staffed by a pledge in a tuxedo, under a banner that says BROTHERHOOD HAPPENS HERE. A speaker plays something that’s trying to be a monster mash.`),
+ n(`Forty-one Tau brothers, twelve alumni, and eleven plus-ones fill the room in various states of costume. A Gatsby is arguing with a pecan. Two Pilgrims have found a bottle of something amber and are treating it with ceremonial respect. Preston Danvers stands near the fire in a tuxedo, Harlan Prescott-Lowe beside him in an Elvis jumpsuit, both holding bourbon, both looking like the best of old friends and the worst of old enemies.`),
+ n(`And in the center of the room, rising from the floor like a spine, the staircase.`),
+ n(`It’s a wide, sweeping cedar staircase with a carved newel post and a banister your grandfather had made in 1962 by a man in Asheville. It climbs eleven steps to a landing, under a round stained-glass window of a heron in flight, then turns and climbs eight more to a long gallery of bedrooms. It’s the loveliest staircase in three counties. You’ve been trying not to look at it since you walked in.`),
+ n(`You look at it. You decide you didn’t.`),
+ n(`Colt appears at your elbow in a gold wig and a tuxedo, carrying two red cups and wearing the plaque from the funeral home on a chain around his neck: A MAN IS REMEMBERED BY WHAT HE BUILDS. He looks, you think, a little tired. It’s the first time you’ve seen tiredness on him.`),
+ s('colt',`Whit. Brother. Host with the most. I got you one. I got you the good stuff. It’s Hudson’s. He brought it from the city.`),
+ n(`He puts the cup in your hand. It’s warm from his. It smells like toffee and smoke and an apology.`),
+ n(`You are, at this point in your life, a person who has never once, in front of Colt Danvers, turned down a cup.`),
+ ['if',()=>G.dep>=10,[n(`Your hand closes around the cup before you’ve decided. The warmth at the back of your skull is already waiting, an old friend with a key, and your whole body leans in toward the cup like a plant toward a window. It’s the strangest thing: you can feel exactly what it wants, and exactly what it’s going to cost, and the two feelings sit side by side on the same shelf.`,true)],[]],
+ n(`Across the room, near the foot of the stairs, a figure turns her head.`),
+ n(`She’s in a long black cloak with the hood up, standing very still among the costumed crowd with her hands folded in front of her, and she’s looking at you across forty feet and a hundred bats. She doesn’t smile. She doesn’t nod. She lifts one hand, slowly, and with two fingers touches the front of her hood, and then, almost imperceptibly, her own throat.`),
+ n(`Clear. She means: clear. Tonight I need you clear.`),
+ ch('The cup in your hand. The woman at the stairs.',[
+  o(`Put it down. Tonight you’re sober.`,{tag:['Heart'],fx:{heart:1,'rel.wren.trust':1,'flag:soberNight':true},led:`At the lake house, Colt handed you a cup and you put it down. You stayed sober for the night.`,then:[
+    n(`You set the cup on a side table. Colt’s smile falters, just for a half-second, the way a lamp falters in a storm.`),
+    s('colt',`You’re not— Whit. It’s a party.`),s('theo',`I know. I’m the host. Somebody should be.`),
+    s('colt',`That’s so— okay. That’s, yeah, that’s fair.`),
+    n(`He takes the cup himself, finishes it, and wanders off with a look you can’t read. Your hand is shaking. It’s going to keep shaking. You’ve decided to let it.`)]}),
+  o(`Take the cup. Just the one. To steady your hand.`,{tag:['Dependence'],fx:{buzz:1,dep:1,'flag:oneDrink':true},led:`At the lake house, you took one drink from Colt to steady your hand.`,then:[
+    n(`The cup is warm in your hand and then warm in your throat. It goes down like honey and fire, and your hand goes still. The effect is instant and tender and a lie. You tell yourself it’s one. You’re really very good at telling yourself.`)]}),
+  o(`Take the cup. Drink it. It’s a party. Colt is smiling.`,{tag:['Go along'],fx:{buzz:2,dep:2,'rel.colt.trust':2,'flag:drankNight':true},led:`At the lake house, you drank what Colt handed you, and kept drinking. You were in no shape to stand at the staircase.`,then:[
+    n(`The cup is empty before you’ve decided. Colt refills it, grinning, without being asked. The second goes faster. By the third, the bats on their wires have started to swing in a slow, silky rhythm, and the heron in the stained glass has opened its beak, and you are, for the first time in a week, perfectly warm. You’re aware that you’ve made a choice. You’re aware you can’t quite see around it.`)]}),
+ ]),
+ ['go','lake6'],
+];
+
+
+/* ---- the lake: Wren, reckless; then the reveal ---- */
+SC.lake6=[
+ slug('EXT. THE WHITLOCK DOCK — 9:05 P.M.'),
+ n(`The party has found its rhythm without you. Through the great room’s windows the whole house glows like a lantern: bats on wires, a Gatsby doing the Charleston on a coffee table, Harlan Prescott-Lowe in a rhinestone jumpsuit explaining something to a pecan. The bass thuds faintly across the lawn and gets lost in the pines.`),
+ n(`Out here it’s cold and perfectly still. The moon is a thin, hard coin over the water. The dock runs out into the dark like a gray tongue. At the end of it, on the very last plank, with her boots beside her and the black cloak spread on the boards like a pool of ink, sits Wren.`),
+ n(`She’s in a slip. Under the cloak, nothing else you can see. She’s got a thermos of something at her side and her bare feet over the water, and she’s looking at the far shore as though she’d been asked to memorize it.`),
+ s('wren',`You came.`),s('theo',`I’m the host. I have a key.`),
+ s('wren',`We have an hour. Maybe a little less. At ten the Brotherhood Circle starts, and at midnight there’s the Oath. I’m told it’s very moving.`),
+ n(`She looks up at you. In the moonlight, her face is white and clear and unbelievably tired.`),
+ ['if',()=>G.flags.wrenFlushed,[n(`She’s clear-eyed. There’s a rawness at the edges of her, a thin-skinned brightness, the look of someone who has put something down and can feel every nerve it was holding off.`,true)],[n(`There’s a softness at the edges of her, a held-back glaze, and a small, steady tremor in the hand that holds the thermos. She’s trying very hard to look like a woman who isn’t on anything.`,true)]],
+ s('wren',`Take off your shoes.`),
+ s('theo',`Wren. It’s thirty-eight degrees.`),
+ s('wren',`Fifty-four in the water. I checked. It’ll hurt. That’s the point.`),
+ s('wren',`Rules. You know them. One. If I say stop, it stops. Two. If you say stop, it stops. Three. Nobody’s weird about it tomorrow. Four. It’s not a favor. Five.`),
+ n(`She turns and gets to her feet. She lets the slip drop. She stands at the end of your family’s dock in the cold, naked, in the thin hard moonlight, freckled, shivering, absolutely fearless, and says, in a voice you’ll remember for the rest of your life:`),
+ s('wren',`Five. Whatever happens tonight, I wanted this first.`),
+ ch('Wren is standing at the edge of the water, waiting.',[
+  o(`“Goose.” Say it like a vow. Take off your clothes.`,{tag:['Desire'],fx:{'rel.wren.desire':3},then:[n(`You say it. You take your clothes off in the cold with fingers that fumble at every button and she watches, laughing, wide-eyed, until you’re standing beside her, shaking, in nothing, on the last plank of the dock.`)]}),
+  o(`“Wren. Are you sure about the water?”`,{tag:['Heart'],fx:{heart:1,'rel.wren.trust':2},then:[
+    s('wren',`No. I’m sure about you.`),n(`She says it so simply, so lightly, with such a curdle of terror behind it, that your hand reaches for hers and finds it already out.`)]}),
+ ]),
+ n(`She jumps. She doesn’t dive. She just steps off the end of the dock and drops into the lake with a flat, sharp, shocking smack, and you hear her surface a half-second later with a gasp and a shriek and a long, wild, delighted laugh that echoes across the cove.`),
+ s('wren',`Oh my GOD. Oh— it’s— come in, you coward, come IN—`),
+ n(`You go in. It’s like being struck by a bell. The cold takes all the air out of your lungs and replaces it with white. For a long second you can’t do anything but flail and swear, and she’s laughing at you in the dark, her face a pale blur, her hair slick, her teeth chattering, and the water around you is black and glittering with the moon in a hundred broken pieces.`),
+ n(`She finds you. She wraps her arms around your neck and her legs around your waist, and the whole length of her is frigid and wet and alive against you, and you can feel her heart going like a trapped bird against your sternum. She kisses you. It’s a cold kiss. It tastes like lake and tears and cherry. It’s the hottest thing that has ever happened to you.`),
+ s('wren',`Warm me up.`),
+ n(`The lake is waist-deep beneath the dock’s last pilings, a shelf of sand and cold. She braces her back against a post and hooks one heel behind your thigh, and you lift her, her hands in your hair, her mouth at your ear telling you exactly what she wants in a low unsteady voice that makes your knees go. You’re not gentle. She told you not to be. You take her against the dock’s wet black pilings with the water slapping at your hips and her breath going in white clouds above you both, and she says your name in pieces, “Theo, Theo, oh, Theo,” her nails raking your shoulders, her head thrown back against the weathered wood, her whole body bowing toward you out of the dark.`),
+ n(`It’s fast. It’s cold. It’s reckless in a way that has nothing to do with the temperature. You’re both shaking, and neither of you is cold. You feel her tighten around you and hear the little desperate hiccup in her breath that means she’s close, and she grabs your jaw in one hand and makes you look at her, and says, hoarse, ferocious, wet-eyed: “Look at me. Look at me. Look at me,” and you do, and she comes with her eyes open and her mouth open and tears running into the water, and you follow her over the edge a few seconds later with a sound torn out of your chest.`),
+ n(`When it’s over you hold each other in the black water, your foreheads together, your breath fogging between you, your hands shaking against her back. Above you the party is a distant hum. The moon lies on the lake like a coin on a dark tongue.`),
+ n(`You get her out. You wrap her in the black cloak and sit her on the dock’s end with her feet in your lap, and she stops shivering, slowly, and starts to cry in earnest, in great, quiet, shuddering breaths, and then stops, and wipes her face with the back of her wrist.`),
+ s('wren',`Okay.`),s('wren',`Okay. I have to tell you something. I’m going to say it all at once and you can’t stop me, or I won’t get through it.`),
+ n(`She looks at the water. She doesn’t look at you. She’s a woman at the lip of a stage, with her whole life behind her, stepping into a light.`),
+ s('wren',`Her name is Nora Fitch.`),
+ s('wren',`She’s my sister. Half-sister. Same mother, different fathers. She’s twenty-two. She raised me in a two-bedroom in Lawrenceville while our mom worked doubles at a Waffle House. She taught me how to read. She taught me how to say a monologue so a back row could hear it. She taught me everything I know about how to be a person, and then in May somebody took her to a lake house.`),
+ n(`The lake makes its small sounds against the pilings. Somewhere up the lawn, a laugh breaks and scatters.`),
+ s('wren',`She was a guest. A friend of a friend. She went because she’d just gotten into a graduate program and she wanted to celebrate, and she’d never been to a place like this, and she thought, I think, that she was invited.`),
+ s('wren',`I’m not going to tell you what happened. It’s hers. She’ll tell you if she wants to. I’m going to tell you what happened after.`),
+ s('wren',`The school said there wasn’t enough evidence. There was a settlement. There was an agreement. Our mother signed it for her, because Nora wouldn’t, because she couldn’t speak, because she hadn’t said a word in nine days. Mom said it was the best we’d get. Mom said it would pay for a year of therapy. Mom said, “Don’t make it worse.”`),
+ s('wren',`Nora stopped eating. She quit the program. She slept in the back of the closet where she kept the dress. She won’t wash the dress. She wouldn’t let me. It’s yellow. It’s a stupid, pretty, cheap little dress she bought at a thrift store in Decatur because she thought it looked like spring.`),
+ n(`You can’t move. You can’t feel your hands. The lake keeps lapping, patient, indifferent, a thousand years old.`),
+ s('wren',`I found the file on her laptop. The photos. The texts from a boy named Colt. A name in the thread. Yours.`),
+ s('wren',`I changed my major. I got a transfer. I told them I wanted a better stage. I came to Ashby, to the place where your family’s name was on a building, because I wanted to know what you knew. I wanted to find out if you were one of them.`),
+ s('wren',`And you looked at me in that yellow dress on Lantern Night, and you said her name like it was something you’d been carrying, and I thought: oh no.`),
+ s('wren',`Oh, no. He’s not.`),
+ ch('Wren has been lying to you since September.',[
+  o(`“You used me.”`,{tag:['Wit'],fx:{wit:1,'rel.wren.trust':-2,'flag:accusedWren':true},then:[
+    s('wren',`Yes.`),n(`It’s the cleanest, most naked yes you’ve ever heard. She doesn’t soften it. She doesn’t explain.`),
+    s('wren',`I used you for the first six weeks. After that I was just lying to you because I was scared I’d lose you. That’s a different thing. It’s not a better thing. I’m telling you the difference so you know I know it.`)]}),
+  o(`“Why didn’t you tell me?”`,{tag:['Heart'],fx:{heart:1,'rel.wren.trust':1},then:[
+    s('wren',`Because if I did, I’d be a girl whose sister was hurt. And I’d rather be a girl who’s a little bit in love with you. It’s the only part of this I’ve wanted.`),
+    n(`She says it in a rush, to the water, and then closes her eyes as if she’d said a word she couldn’t take back.`)]}),
+  o(`Take her hand. Say nothing.`,{tag:['Restraint'],fx:{'rel.wren.trust':3},then:[
+    n(`You take her hand. You hold it. You can’t speak. It’s the right thing. It’s possibly the only thing. She turns her face into your shoulder and breathes, and in that long breath is a person letting something down off her back after two years.`)]}),
+ ]),
+ s('wren',`There’s a plan.`),
+ s('wren',`It’s not a good one. It’s the only one I’ve got. Nora doesn’t know I’m here tonight. She asked me not to do this. She said, “Leave it, Wren. It’s over.” She didn’t say it like it was.`),
+ s('wren',`At midnight, the Brotherhood Circle gathers in the great room around the staircase for the Oath. Colt leads it. He’s the Marshal. He’s very good at it. He loves the Oath.`),
+ s('wren',`I’m going to come down the gallery in the yellow dress. I’m going to walk to the top of the stairs. And I’m going to come down, slowly, past all of them, and stop on the landing, and look at him.`),
+ s('wren',`Not say anything. Just look. The way she did.`),
+ s('wren',`And you’re going to be at the foot of the stairs. And you’re going to look at me. And then you’re going to say what you saw. Out loud. In front of everyone. In front of Colt, in front of his father, in front of Hudson, in front of every man in that room who’s ever been told it’s fine.`),
+ s('wren',`I’ll have my phone. It’ll be recording. I need his face when he sees the dress. I need you saying the words. I need them both on the same tape.`),
+ n(`She turns. She finally looks at you. In the moonlight her face is naked and drawn and absolutely resolved.`),
+ s('wren',`I’m asking you to say yes. I already asked you once. I’m asking you to say it knowing what it is.`),
+ ch('Wren is asking you to be a witness. Out loud. In your own house.',[
+  o(`“Yes. I’ll say it.”`,{tag:['Heart'],fx:{heart:2,'rel.wren.trust':3,'flag:agreedStage':true},led:`On the dock at the lake house, Wren told you she was Nora Fitch's half-sister and asked you to stand at the foot of the stairs and say what you saw. You said yes.`,then:[
+    n(`She lets out a breath that goes on for a very long time. She puts her forehead against your shoulder, and her whole body shakes, and she says, in a voice full of ten thousand miles, “Thank you,” and then, quieter, so you almost miss it: “I’m so sorry.”`)]}),
+  o(`“Yes. But I want you to promise me you’ll be careful.”`,{tag:['Heart'],fx:{heart:1,'rel.wren.trust':2,'flag:agreedStage':true,'flag:askedCareful':true},led:`Agreed to stand at the foot of the stairs, and asked Wren to promise she'd be careful. She said, "I can't."`,then:[
+    s('wren',`I can’t promise that.`),s('theo',`Wren.`),s('wren',`I can promise I’ll try. It’s the same word I used with myself in the bathroom on Monday. It’s the best I’ve got.`)]}),
+  o(`“I can’t be in front of those men. I can’t.”`,{tag:['Nerve 3'],req:['nerve',3],fx:{nerve:1,'rel.wren.trust':-1,'flag:agreedStage':true,'flag:refusedFront':true},then:[s('wren',`Then stand at the back. Where she can see you. That’s all I need.`),n(`She says it so gently you can feel the bruise in it. You nod. You’ll be there. You don’t know where.`)]}),
+ ]),
+ n(`She stands. She wraps the cloak around her. She takes your face in both hands, hard, and kisses you, once, quickly, with her whole mouth, like a woman stamping a letter.`),
+ s('wren',`Look at the girl.`),
+ n(`She goes up the lawn toward the dark, boot-less, barefoot in the frost, a black shape moving against a bright house. At the foot of the dock, she turns once, and lifts her hand. Then she’s gone around the side of the boathouse, where, you realize, a small yellow cloth hangs on a hook in the window, lit from behind by a single bare bulb, like something waiting to be worn.`),
+ fx({'flag:wrenRevealed':true,'rel.wren.desire':3},`On the dock at the lake house, Wren told you she was Nora Fitch's half-sister, that she transferred to Ashby to find what you knew, and that she'd stage the confrontation at midnight in Nora's yellow dress.`),
+ ['go','circle6'],
+];
+
+/* ---- the brotherhood circle ---- */
+SC.circle6=[
+ slug('INT. 114 LAKE ELLISON ROAD — THE GREAT ROOM — 11:48 P.M.'),
+ n(`By eleven forty-eight the party has been cleared to the walls.`),
+ n(`The pledges have set up a circle of folding chairs around the foot of the staircase. Forty-one Tau brothers and twelve alumni sit in costume, in a ring, with candles in jars on the floor between them. The bats still hang overhead. The fire is down to coals. Somebody has turned off the monster mash. The silence is thick and reverent and slightly ridiculous, a hundred men trying to feel something with all their might.`),
+ n(`At the head of the circle, in his gold wig and tuxedo, with the plaque on his chest, stands Colt Danvers, the Marshal. He looks, in the candlelight, exactly like what he is: a beautiful, golden, practiced boy at the center of a room that loves him.`),
+ s('hunter',`Brothers. Alumni. Guests. Tonight we gather at the home of our brother Theo Whitlock, in a spirit of fellowship, to renew the Oath.`),
+ n(`Hunter’s in the bucket hat, holding a laminated card.`),
+ s('hunter',`Marshal Danvers will lead.`),
+ n(`The brothers murmur. Harlan, in the rhinestone Elvis, nods gravely. Hudson Prescott-Lowe stands against the stone of the fireplace in his camel overcoat, with his hands in his pockets, a half smile on his face, watching the room with the amused tolerance of a man at a school play.`),
+ n(`Preston Danvers sits in a wingback with a tumbler of bourbon, his son’s father in every line, tender and certain.`),
+ n(`Across the ring, near the front door, in a corner behind a velvet rope, is a table with sixty pecan pies, and, behind the pies, in the shadow of the kitchen door, Josie and Del, with their sleeves rolled and their arms folded, watching.`),
+ n(`You’re at the foot of the stairs.`),
+ n(`You’re standing exactly where you stood in May. You haven’t decided to. Your feet put you here. The newel post is at your hip, carved with a heron, smooth from sixty years of hands. Eleven steps rise above you to a landing under a round window of colored glass. Beyond it, in the dark of the gallery, is the long hall of bedrooms.`),
+ ['if',()=>G.flags.soberNight,[n(`You’re sober. Your hand is shaking, and you’ve decided to let it. Everything is very sharp and very clear and very close: the grain of the cedar, the smell of the candles, the little tick of a bat on its line. Without the warmth to cushion it, the room has edges. You can feel every one.`)],
+  [['if',()=>G.flags.drankNight,[n(`You’re drunk, and you know it. The edges of the room have gone soft and warm and slightly late: the candles trail, the faces swim, the sounds come in a half-beat behind the picture. You hold the banister because it’s steady and you’re not. A voice in the back of your head, small and calm, says: you’re going to need to be faster than this.`)],
+     [n(`You’re one drink in. It’s a small, thin, polite warmth. It steadies your hand and softens the room, a half-step. You’re not sure it’s enough. You’re not sure it’s too much.`)]]]],
+ s('colt',`Brothers.`),
+ n(`He lifts one hand. The ring goes still.`),
+ s('colt',`We’ve had a hard month. A hard fall. We’ve lost a little of the, I don’t know. Of the shine. We’ve been looked at. Some of it’s fair. Some of it isn’t.`),
+ s('colt',`But we’re here. We’re together. Whatever anyone says. And I want to say, before we do the Oath, that I love every one of you. And that I’m so, so grateful to our host for opening this house to us. Whit. Stand up, man.`),
+ n(`A ripple of applause. A hundred faces turn toward you. Colt holds out a hand, beaming, wet-eyed.`),
+ n(`You raise a hand. It trembles. You let it.`),
+ s('colt',`Okay. Repeat after me.`),
+ s('colt',`“I will always protect my brothers.”`),
+ s('pledges',`I will always protect my brothers.`),
+ s('colt',`“From consequences.”`),
+ n(`The ring murmurs it. Somewhere to your left, a pledge laughs, and is hushed.`),
+ s('colt',`“I will say what’s—”`),
+ n(`He stops. His eyes have gone past you. Something has changed in the room. Not a noise. A pressure. The kind of change that makes a hundred men lift their heads at once like animals at a sound.`),
+ n(`At the top of the stairs, in the dark of the gallery, a light has come on.`),
+ n(`It’s the little brass lamp on the landing table, an amber bulb in a dented shade, and in its glow, standing very still at the head of the staircase with one hand on the rail, is a girl in a yellow dress.`),
+ ['go','stairs6'],
+];
+
+
+/* ---- the staircase ---- */
+SC.stairs6=[
+ slug('INT. 114 LAKE ELLISON ROAD — THE STAIRCASE — 11:56 P.M.'),
+ n(`She comes down slowly.`),
+ n(`She doesn’t hurry. She doesn’t look at the room. She comes down from the gallery in bare feet, one hand on the banister, in a thin yellow slip dress the color of lemon peel, with her dark hair loose and a smear of lip color the shade of a bruise. It’s too big at the shoulders. It was made for someone taller. It’s been worn for a year by a person who is not her.`),
+ n(`Nobody in the room speaks.`),
+ n(`A hundred men have turned their faces up toward the stairs. A pledge in a Pilgrim hat takes it off and holds it to his chest, without knowing why. A Gatsby sets down a cup. In the shadow of the kitchen door, Del puts a hand on Josie’s arm.`),
+ n(`She reaches the first turn, the landing, under the round window of the heron in colored glass. She stops. She turns. She looks down at the ring of candles and the circle of faces, and the Marshal in his gold wig, and for a long, long time says nothing at all.`),
+ n(`She’s holding her phone against her thigh, lit, recording.`),
+ n(`It’s the stillest you’ve ever seen a room.`),
+ ['if',()=>G.buzz>=1,[n(`In your hand, you realize, is a cup. You don’t know when you picked it up. It’s warm and it’s half full, and the part of you that knows exactly what this moment is looks at the cup, and the cup looks back.`,true)],[]],
+ n(`“Look at the girl.” Her voice, in your head. “This time, look at her.”`),
+ ch('Wren is on the landing in your family’s house.',[
+  o(`Look at her. Don’t look away.`,{tag:['Heart'],fx:{heart:2,'rel.wren.trust':2,'flag:lookedAtGirl':true},led:`At the staircase, Wren came down in Nora's yellow dress. You looked at her the whole time.`,then:[
+    n(`You lift your face and you look. It’s the hardest thing you’ve ever done with your body. You stand at the foot of the staircase with your hands at your sides and look at the girl on the landing, and she looks back at you, over forty feet of air and a century of cedar, and her face is perfectly steady and perfectly terrified.`)]}),
+  o(`Look at your cup.`,{tag:['Freeze'],show:()=>G.buzz>=1,fx:{dep:1,'rel.wren.trust':-4,'flag:frozeAgain':true},led:`At the staircase, Wren came down in Nora's yellow dress, and you looked at your cup.`,then:[
+    n(`Your eyes go down. It’s a reflex. It’s five months old. The cup is an amber moon, a small warm world, and your own face is reflected in it, vague and trembling. You look at the cup. You look at it for a long, long time. When you lift your head, she’s still on the landing. She’s still looking. She’s waiting. She’s waited for you before, in a dark house, and you did this.`)]}),
+ ]),
+ s('wren',`Hello, Colt.`),
+ n(`Her voice carries. It carries because she was trained to make it, and because the room is a held breath, and because a girl on a landing is the only thing in it that’s moving.`),
+ n(`Colt hasn’t moved. His hand is still half-raised from the Oath. His mouth is open slightly. In the candlelight, the gold wig has begun to slide, a quarter inch, toward his temple. His eyes are on the yellow dress.`),
+ s('colt',`Where—`),
+ n(`It isn’t a question. It’s a sound with the shape of one.`),
+ s('colt',`Where did you get that.`),
+ s('wren',`It’s spring. Don’t you remember? It looked like spring.`),
+ n(`She lifts her chin. She looks at Colt Danvers the way a person looks at the thing they’ve been walking toward for two years, with no hatred in it at all. It’s worse than hatred. It’s recognition.`),
+ s('wren',`Theo.`),
+ n(`She says it without turning her head. The whole room turns instead. A hundred faces swing toward you like a field of sunflowers.`),
+ s('wren',`Tell them.`),
+ ['if',()=>G.flags.soberNight,[n(`You’re clear. Every nerve in you is lit. You can taste the cedar and the candle smoke and your own pulse. You open your mouth, and the words are right there, clean and exact and waiting, five months of them.`)],
+  [['if',()=>G.flags.drankNight,[n(`The room swings a half-beat late. You open your mouth, and your tongue is thick and wrong, and the words are somewhere at the bottom of a warm well. You’re going to have to reach.`)],
+     [n(`You open your mouth. It’s half clear, half not. The words are there. They’re a little too far away.`)]]]],
+ ch('The whole room is waiting for you to say it.',[
+  o(`Say it all. The party, the girl, the stairs, the cup. And her name.`,{tag:['Heart 20'],req:['heart',20],then:[
+    ['chk','wit',9,'saying it out loud',[
+      [n(`“I was here in May,” you say. “I was at this party. I saw a girl in a yellow dress go up these stairs with Colt. Her name is Nora Fitch. She stopped on that landing and looked down at me, and I knew what she was asking. And I looked at my cup.”`),
+       n(`It’s a clean, steady, terrible voice. It’s not yours. It’s not your father’s, either. It carries the whole length of the room and into the rafters and out through the glass doors and across the dark lake. When you finish, nobody moves.`),
+       fx({heart:2,'rel.wren.trust':3,'flag:saidItAll':true,'flag:saidItClean':true},`At the staircase at midnight, you said it out loud in front of every Tau brother, alumnus, and guest: that you saw Nora Fitch go up the stairs, and that you looked at your cup.`)],
+      [n(`“I was here,” you say. “In May. I— there was a girl. She went up the, the stairs. Her name—”`),
+       n(`Your tongue catches on the vowels. The words come out wet and slow. But they come. “Nora Fitch. She looked at me. She was asking me, I knew, and I looked at my cup. I looked at it. I’m sorry. I looked at the cup.” You’re crying and you can’t feel it.`),
+       fx({heart:2,'rel.wren.trust':2,'flag:saidItAll':true},`At the staircase at midnight, you said it out loud, though you slurred it: that you saw Nora Fitch go up the stairs, and that you looked at your cup.`)]
+    ]]]}),
+  o(`“I saw her go up those stairs, in May. I did nothing.”`,{tag:['Heart'],fx:{heart:1,'rel.wren.trust':1,'flag:saidItShort':true},led:`At the staircase at midnight, you told the room in one sentence that you'd seen a girl go up the stairs in May and done nothing.`,then:[
+    n(`It’s short. It’s a stone dropped down a well. The room hears it, and takes a long time to answer.`)]}),
+  o(`“Colt. Tell them what you did.”`,{tag:['Nerve 3'],req:['nerve',3],fx:{nerve:1,'rel.colt.trust':-3,'flag:saidItAll':true,'flag:accusedColt':true},then:[n(`“Colt. Tell them what you did.” It comes out of you hard and plain, the first command you’ve ever given him, and the room hears it as one.`)]}),
+ ]),
+ n(`Colt Danvers makes a small sound.`),
+ n(`It isn’t a word. It’s the sound a very old instrument makes when a string gives way. His hand comes down. His other hand rises to his face, and the gold wig slides off his head and falls to the floor behind him, and under it, for the first time in your life, you see Colt without his hair arranged: a frightened, blotched, pink-eared boy of eighteen with sweat on his lip.`),
+ s('colt',`Don’t.`),
+ s('colt',`Don’t. She’s not— that’s not—`),
+ s('preston',`Colton.`),
+ n(`Preston Danvers is on his feet. His glass has gone to the floor. His face has an expression of intense, patient, gentle command.`),
+ s('preston',`That’s enough. We’re done. We’re leaving.`),
+ s('colt',`She said yes.`),
+ n(`The words are very quiet. They come out of him like water through a crack in a dam.`),
+ s('colt',`She said yes. At the top. I asked her. She said yes. She said it to me at the top of the stairs.`),
+ s('preston',`Colton, stop talking.`),
+ s('colt',`And then in the room she said, “Wait.” She said, “Colt. Wait.” And I— I didn’t. I didn’t wait. I didn’t stop when she stopped. I didn’t, Dad, I didn’t— she said wait and I thought, if I stop, it’s going to be—`),
+ n(`He can’t finish it. He’s weeping openly now, a boy of eighteen on his knees at the foot of a staircase in a tuxedo. A hundred men watch him with horror and love and no idea what to do. Hunter’s face is dead white. Harlan has taken a step back. In the ring, a pledge has quietly put his hands over his ears.`),
+ s('colt',`I thought it was— everybody said— it was a party. It was a party. I didn’t think it was— and then she looked down the stairs and she looked at Whit and Whit didn’t— and I thought: it’s fine. It’s fine, it’s fine, it’s fine. We’re all fine.`),
+ s('colt',`We’re not fine. We’re not. I’m not fine. I haven’t been fine since May.`),
+ n(`It’s the most honest thing anyone has ever said in this house. It takes his whole body to say it.`),
+ s('preston',`I said, that’s enough.`),
+ s('colt',`No.`),
+ n(`He says it to his father. He says it looking straight at him, wet-faced, trembling, with a hand on the carved newel post. You see Preston Danvers hear it. You see the sound go through him like a bullet through a pane.`),
+ s('colt',`No. I’m not going to say it’s fine. I’m done saying it’s fine.`),
+ n(`At the fireplace, Hudson Prescott-Lowe has stopped smiling.`),
+ n(`He’s looking at the landing. At the lit screen in Wren’s hand. At the tiny red dot in the corner of it that tells him, with the perfect, cold, unambiguous clarity of a machine, that every word of this is being kept. He takes his hands out of his pockets. He steps away from the stone, calmly, with the long, easy, unhurried stride of a man who has solved a very similar problem before.`),
+ s('hudson',`Ms. Calder.`),
+ n(`He says it pleasantly, to the girl on the landing, in a voice you could pour on a pancake.`),
+ s('hudson',`That’s private property. I’m afraid the host hasn’t consented to being filmed.`),
+ s('theo',`I consent.`),
+ n(`It comes out of you without permission. He doesn’t look at you. He’s climbing the stairs.`),
+ s('hudson',`Give me the phone, sweetheart.`),
+ n(`Eleven steps. He takes them two at a time. The room has gone completely silent. Wren doesn’t move. She doesn’t retreat. She holds the lit phone against her ribs with both hands like a woman holding a very small child, and she looks down at Hudson Prescott-Lowe with an expression of complete, quiet, bottomless contempt.`),
+ s('wren',`No.`),
+ n(`His hand closes on her wrist.`),
+ n(`You see it happen in four frames.`),
+ n(`One: his hand on her wrist, tight, white. Two: her bare foot slipping on the polished cedar of the landing, the long skirt of the yellow dress catching under her heel. Three: the phone leaving her hand, arcing out over the banister, turning in the lamplight like a coin. Four: Wren’s whole body tipping backward, away from his grip, over the top of the eleven steps, into the empty air above the great room floor.`),
+ n(`She is falling.`),
+ n(`It takes less than a second. It takes five months.`),
+ ch('Wren is falling down the staircase.',[
+  o(`Move. Get under her.`,{tag:['Wit check'],then:[
+    ['chk','wit',9,'getting there in time',[
+      [n(`You’re moving before the thought arrives. The room tilts. Your body goes up the first three steps like a thing fired out of a bow, and your arms are out, and she hits you full in the chest, a hundred and twenty pounds of falling girl, and you go down under her with a grunt and a crack. The newel post catches your shoulder. Her head strikes the edge of the third step, glancing, not squarely, a long, wet, ugly scrape across her temple, and then you’re both on the floor of your family’s great room in a tangle of yellow cloth and blood.`),
+       n(`She isn’t moving. You get a hand under her neck. You feel it: warm, thready, a pulse against your palm. She’s breathing. Her chest is rising. You’ve never been so grateful for a body in your life.`),
+       fx({heart:1,wit:1,'rel.wren.trust':3,'flag:caughtWren':true},`You caught Wren on the lake house stairs and broke her fall. She hit her head, but she was breathing.`)],
+      [n(`You’re moving. You’re too slow. The room is wading through water. You get three steps up the staircase, with your arms out, and you’re two feet short, and the sound she makes when she hits is a sound you’ll hear every time you close your eyes for the rest of your life: a flat, wet, terrible crack, like a dropped melon, as her head meets the edge of the sixth step. Then she tumbles the rest of the way, rag-limp, and lies at the foot of the stairs in a tangle of yellow cloth with one arm bent beneath her at an angle you don’t want to read.`),
+       n(`You’re on your knees beside her. You don’t remember getting there. Her eyes are closed. There’s blood in her hair, a bright slow line spreading across the cedar. You put a hand under her nose. Nothing. You put it there again. A thread of warmth, then another. She’s breathing. She’s breathing.`),
+       fx({heart:1,'rel.wren.trust':1,dep:1,'flag:wrenFell':true},`Wren fell down the lake house stairs and you couldn't reach her in time. She was unconscious and bleeding but breathing.`)]
+    ]]]}),
+  o(`Look at your cup.`,{tag:['Freeze'],show:()=>G.buzz>=1,fx:{dep:2,heart:-1,'rel.wren.trust':-6,'flag:frozeTwice':true,'flag:wrenFell':true},led:`You looked at your cup while Wren fell down the stairs.`,then:[
+    n(`The cup. The amber moon. Your face in it. For an eternity you look at it, and the sound of her body striking the third step, the sixth, the floor, comes to you from a great distance, like the sound of something dropped in another house. When you lift your head she’s lying at the foot of the stairs, and there’s blood, and everybody’s shouting, and you’ve done it. You did it again.`)]}),
+  o(`Go for Hudson.`,{tag:['Nerve 3'],req:['nerve',3],fx:{nerve:1,heart:1,'rel.wren.trust':3,'flag:caughtWren':true,'flag:stoppedHudson':true},then:[n(`You hit the stairs at a dead run and get a hand on Hudson’s sleeve and pull, and his grip on Wren’s wrist breaks, and she drops half a step and you throw an arm around her and the three of you go down in a tangle on the lower steps. She’s scraped, shaken, breathing. Hudson lies on his back on the cedar, looking up at the heron, saying nothing at all.`)]}),
+ ]),
+ ['go','aftermath6'],
+];
+
+/* ---- aftermath ---- */
+SC.aftermath6=[
+ slug('INT. 114 LAKE ELLISON ROAD — THE GREAT ROOM — 12:03 A.M.'),
+ n(`The room does what rooms do. It comes apart.`),
+ n(`A hundred men are on their feet and a hundred voices are shouting different things. “Call 911.” “Don’t move her.” “Somebody get a towel.” A Gatsby is throwing up in the fireplace. A pledge in a Pilgrim hat has gone to his knees in the middle of the floor and is saying the Lord’s Prayer very fast. Hudson Prescott-Lowe stands at the top of the stairs with one hand still half-raised, looking at his fingers, as though he’d just noticed what they were for.`),
+ s('del',`Nobody touch her.`),
+ n(`It isn’t a shout. It’s Del’s voice, low and carrying, and it stops the whole room like a hand on a bell. She’s crossed the great room in six strides with a dish towel in each hand. She kneels beside you and looks at Wren’s head, the angle of her neck, the color of her lips, and says, in a calm, level, absolutely competent voice:`),
+ s('del',`She’s breathing. Her pulse is there. Don’t move her neck. Josie. Towels. The cold ones from the walk-in.`),
+ n(`Josie is already there. She’s on her knees on the other side with a stack of clean towels in her arms and her hair coming down out of its pencil. She looks at Wren. She looks at you. She doesn’t say a word. She takes the first towel and folds it into a pad with two quick, sure movements and presses it against Wren’s temple.`),
+ s('josie',`Here. Put your hand here. Press. Don’t let go.`),
+ n(`She puts your hand over hers and holds it there for a moment, hard, her fingers over yours on a clean white towel going red, and then she takes hers away and leaves yours. It’s the most intimate thing she’s ever done. It has no tenderness in it whatsoever. It’s a task. It’s a trust.`),
+ s('josie',`Don’t you let go.`),
+ n(`You don’t.`),
+ s('chip',`EVERYBODY STAY WHERE YOU ARE.`),
+ n(`Chip Rennick has taken over the front door. He stands in the open frame in his yellow vest and his hard hat, with his two orange flashlights crossed in front of him in an X, and the entire cold October night at his back. He is, for the first time since you’ve known him, entirely and totally right.`),
+ s('chip',`Nobody leaves this property. Nobody. I’ve called the sheriff. I’ve called the ambulance. I called them first. I have a binder.`),
+ n(`Beyond him, across the lawn, a figure moves toward the dock. Tall. Camel coat. He isn’t running. He’s walking, quickly, steadily, toward the floatplane at the end of the Whitlock dock. Chip sees him. He steps out of the doorway and down the steps, and across the gravel, and plants himself in front of the dock gate with the flashlights up, a small, round, furious, courageous man holding two orange cones of light.`),
+ s('chip',`Mr. Prescott-Lowe. Sir. I can’t let you do that.`),
+ s('hudson',`Move.`),
+ s('chip',`I’m a contractor.`),
+ n(`Hudson stops. He looks at Chip. He looks at the flashlights. He looks at the road beyond the gate, where, in the dark, a pair of headlights has come around the bend, steady, official, and blue.`),
+ s('hudson',`…Of course.`),
+ n(`He turns and walks back up the lawn. He’s smiling. It isn’t a different smile. It’s the same smile, only now, for the first time, you can see the wire it hangs from.`),
+ n(`In the great room, Colt Danvers sits on the bottom step with his head in his hands, in a tuxedo, with the gold wig crushed under his shoe. Preston stands over him, saying something low and urgent, a hand on his shoulder. Colt shakes the hand off.`),
+ s('preston',`You will say nothing. Do you understand me? You will say nothing until Marcus is here.`),
+ s('colt',`Marcus quit.`),
+ s('preston',`Then we’ll find another—`),
+ s('colt',`Dad.`),
+ n(`He lifts his head. His face is a ruin. It’s also, for the first time in all the years you’ve known him, entirely his own.`),
+ s('colt',`I’d like to make a statement.`),
+ n(`Nobody speaks. Preston Danvers opens his mouth. Nothing comes out of it.`),
+ ['if',()=>G.flags.caughtWren,[n(`Under your hand, Wren stirs. Her eyelids flutter. A sound comes out of her, a thin, cracked, almost-word. You lean in. “Did he—” she whispers. “Did it—” “It’s on the tape,” you say. “It’s all on the tape.” Her mouth moves in something that might be a smile. Then her eyes close again, and you keep pressing.`)],
+  [n(`Wren doesn’t stir. Her face is white, her lips are gray, her hair is dark and wet against the cedar. A small sound comes out of Josie, a half-second of panic, quickly stopped. You keep pressing. You press the towel against her temple with both hands and you say her name, softly, to the side of her face, again and again, as though it were a rope.`)]],
+ n(`The sirens come up the lake road in the dark, two of them, and then three, a long, bright, wailing procession of red and blue light that sweeps across the vaulted ceiling and the dangling paper bats and the stained-glass heron in its window, as though the house itself were being resurrected.`),
+ n(`The paramedics are quick and quiet. They kneel. They move you aside with gentle hands. They fit the collar, the board, the straps. Deputy Cletus Pike is in the doorway, with his hat in his hand and his face stripped of every ounce of its customary irony, and when Colt rises and goes to him, slowly, in his ruined tuxedo, and says, “Deputy. I’d like to report a crime,” Cletus looks at him for a very long moment, and says, “Son. I think you’d better sit down.”`),
+ n(`The stretcher goes through the front door. You go with it. You don’t ask. Nobody stops you.`),
+ slug('EXT. 114 LAKE ELLISON ROAD — THE FRONT PORCH — 12:31 A.M.'),
+ n(`The ambulance has its doors open at the foot of the porch steps, its light bar sweeping the pines in a slow, cold, silent wheel. The stretcher is halfway up the ramp. A paramedic with a clipboard is asking you something. You can’t hear it.`),
+ n(`The gravel is full of cars. The lawn is full of people: the pledges in a knot, the Gazebo Ladies in a row on the porch with their hands folded and their casseroles untouched, Lurleen standing beside the hearse in her black lace with the urn in her arms, saying something low to Mr. Odell. Dez is at the edge of the lawn, with Jalen’s arm around his shoulder and his phone in his hand, not recording. Fenn has appeared from nowhere in a rumpled tux and a wig, holding a thermos he is not drinking from.`),
+ n(`And, at the end of the drive, where the gravel meets the road, a pair of headlights comes slowly around the bend and goes dark.`),
+ n(`A small white hatchback, a Honda, ten years old, mud-spattered to the windows, stops under the pines. The driver’s door opens. For a long moment nobody gets out.`),
+ n(`Then a woman does.`),
+ n(`She’s twenty-two. She’s thin and dark-haired and not tall, in a green Georgia State sweatshirt and jeans, with a coat she hasn’t zipped and a face you’ve seen on a mirror in a dressing room and in a photo strip and in the back of your own mind, every night, for five months. There’s a small pale scar through her left eyebrow. She’s shaking. Her hands are shoved deep in her pockets.`),
+ n(`She looks at the ambulance. She looks at the red-and-blue lights going around and around. She looks at the stretcher, and at the yellow cloth that hangs from it in a long, bright, bloody trail.`),
+ s('nora',`Is she alive?`),
+ n(`It isn’t a loud voice. It carries. It carries the way Wren’s does, trained or inherited, a low clear voice made for a back row.`),
+ s('theo',`Yes.`),
+ n(`She closes her eyes. She stands there, under the pines, in the swing of the lights, for the length of a long exhale. When she opens them, she looks directly at you. She knows who you are. You can see it come across her face like weather.`),
+ s('nora',`You’re Whitlock.`),
+ s('theo',`Yes.`),
+ s('nora',`I’m Nora.`),
+ n(`She doesn’t offer her hand. She comes across the gravel, slowly, like a person crossing a frozen pond, and stops at the foot of the porch steps, four feet from you, with the ambulance lights moving over the side of her face.`),
+ n(`She looks up at the house. She looks at the long cedar front, the deep porches, the stone chimney, the dark windows. Through the open front door, through the great room, past the burning candles and the fallen chairs, she can see the foot of the staircase. She can see the newel post. She can see, hanging from the banister by one strap, a yellow dress with a long dark stain across it.`),
+ s('nora',`I haven’t been back since May.`),
+ s('nora',`She told me not to come. She said, “Stay home, Nora.” She said it in that voice. She always says it in that voice.`),
+ s('nora',`I got to Macon and I turned around.`),
+ n(`Her mouth shakes. She holds it still.`),
+ s('nora',`Tell me what you saw.`),
+ n(`The ambulance doors close with a heavy, solid, final clunk. The siren lets out a single whoop. In the great room, behind you, someone is crying, and someone else is saying a name, and the stained-glass heron in its round window glows red, then blue, then red, as the lights go round.`),
+ n(`She’s standing at the foot of the stairs. She’s asking you to look at her.`),
+ n(`You look at the girl.`),
+ ['end',6],
+];
+
 /* ---------- episode endings ---------- */
 function gazette(heads){
   const wrap=el('div','');
@@ -2908,6 +3312,7 @@ function endCard(kicker,title,sub,heads,buttons){
 }
 function btn(label,fn,primary){const b=el('button','btn'+(primary?' primary':''),esc(label));b.type='button';b.onclick=fn;return b}
 function finish(ep){
+  if(ep===6)return finish6();
   if(ep===5)return finish5();
   if(ep===4)return finish4();
   if(ep===3)return finish3();
@@ -3010,10 +3415,32 @@ function finish5(){
   if(f.wrenDressing)heads.push('HOLLIS DRESSING ROOM \u201CSMELLS LIKE GREASEPAINT AND REGRET\u201D; STAGE BLOOD \u201CEVERYWHERE\u201D');
   heads.push('GUEST LIST FOR HALLOWEEN RETREAT: 47 NAMES; ONE CIRCLED IN RED');
   G.flags.ep5done=true;G.scene='done5';lockEpisode(5);
-  endCard('End of Episode Five','Two <em>Paragraphs</em>','Episode Five is now locked in. Your choices are canon. Tell Claude to build Episode Six and it starts from exactly what you did.',heads,[
-    btn('Open notebook',()=>openNotebook('prev'),true)]);
+  endCard('End of Episode Five','Two <em>Paragraphs</em>','Episode Five is now locked in. Your choices are canon.',heads,[
+    btn('Continue to Episode Six',()=>{$('overlay').innerHTML='';document.body.style.overflow='';log.innerHTML='';runScene('cold6')},true),
+    btn('Open notebook',()=>openNotebook('prev'))]);
 }
 SC.done5=[['end',5]];
+function finish6(){
+  const f=G.flags;const heads=[];
+  heads.push('TAU \u201CNOT-A-CHAPTER-EVENT\u201D HELD AT PRIVATE HOME; ITINERARY: \u201CTHE HOUSE IS A HOUSE\u201D');
+  heads.push('CHIP RENNICK HOLDS DOCK GATE AGAINST SEAPLANE; \u201CI HAVE A BINDER\u201D');
+  if(f.soberNight)heads.push('HOST DECLINES FIRST CUP AT LAKE HOUSE; HAND \u201CSTILL SHAKING\u201D');
+  else if(f.drankNight)heads.push('HOST \u201CIN NO CONDITION\u201D AT MIDNIGHT; THIRD CUP, FOURTH CUP');
+  else if(f.oneDrink)heads.push('HOST TAKES \u201CJUST ONE\u201D AT 6:40; HAND STILLS');
+  if(f.wrenRevealed)heads.push('GIRL IN YELLOW DRESS NAMES HERSELF ON LAKE ELLISON DOCK; NO ONE ELSE HEARS');
+  if(f.saidItAll)heads.push('WHITLOCK BOY NAMES NORA FITCH ALOUD AT STAIRCASE; THE ROOM \u201CDOES NOT BREATHE\u201D');
+  else if(f.saidItShort)heads.push('WHITLOCK BOY SAYS \u201CI DID NOTHING\u201D IN ONE SENTENCE; ROOM \u201CTAKES A LONG TIME\u201D');
+  heads.push('COLT DANVERS: \u201CI\u2019D LIKE TO MAKE A STATEMENT\u201D; DEPUTY CLETUS \u201CSITS HIM DOWN\u201D');
+  if(f.caughtWren)heads.push('WREN CALDER CAUGHT ON THE STAIRS; PULSE \u201CTHERE\u201D; TOWEL HELD BY ONE HAND');
+  else if(f.wrenFell)heads.push('WREN CALDER FALLS ELEVEN STEPS; AMBULANCE ARRIVES IN 28 MINUTES');
+  if(f.frozeAgain||f.frozeTwice)heads.push('SECOND TIME IN FIVE MONTHS: HOST \u201CLOOKS AT CUP\u201D');
+  heads.push('NORA FITCH ARRIVES AT 12:31 A.M. IN MUD-SPATTERED HONDA; \u201CIS SHE ALIVE?\u201D');
+  G.flags.ep6done=true;G.scene='done6';lockEpisode(6);
+  endCard('End of Episode Six','The Lake <em>House</em>','Episode Six is now locked in. Your choices are canon. Tell Claude to build Episode Seven and it starts from exactly what you did.',heads,[
+    btn('Open notebook',()=>openNotebook('prev'),true)]);
+}
+SC.done6=[['end',6]];
+
 
 
 
@@ -3032,7 +3459,7 @@ function launchEpisode(n){
 }
 function episodeButtons(){
   const row=el('div','row');
-  [1,2,3,4,5].forEach(n=>{
+  [1,2,3,4,5,6].forEach(n=>{
     if(locked(n)||(n>1&&!(G.cps&&G.cps[n])))return;
     const b=btn('Replay Episode '+n,()=>{if(b.dataset.sure)launchEpisode(n);else{b.dataset.sure='1';b.textContent='Start a new timeline from Episode '+n+'?'}});
     row.append(b);
@@ -3050,8 +3477,8 @@ function intro(saved){
   const hasSave=saved&&saved.scene&&SC[saved.scene];
   if(hasSave){
     G=norm(saved);
-    const done=saved.flags.ep5done?5:saved.flags.ep4done?4:saved.flags.ep3done?3:saved.flags.ep2done?2:saved.flags.ep1done?1:0;
-    row.append(btn(done===5?'Continue (Episode Five complete)':done===4?'Continue Season One (Episode Five)':done===3?'Continue Season One (Episode Four)':done===2?'Continue Season One (Episode Three)':done?'Continue Season One (Episode Two)':'Continue',go(()=>{G=restoreSceneStart(norm(saved));if(G.scene==='done2')G.scene='cold3';if(G.scene==='done3')G.scene='cold4';if(G.scene==='done4')G.scene='cold5';runScene(G.scene)}),true));
+    const done=saved.flags.ep6done?6:saved.flags.ep5done?5:saved.flags.ep4done?4:saved.flags.ep3done?3:saved.flags.ep2done?2:saved.flags.ep1done?1:0;
+    row.append(btn(done===6?'Continue (Episode Six complete)':done===5?'Continue Season One (Episode Six)':done===4?'Continue Season One (Episode Five)':done===3?'Continue Season One (Episode Four)':done===2?'Continue Season One (Episode Three)':done?'Continue Season One (Episode Two)':'Continue',go(()=>{G=restoreSceneStart(norm(saved));if(G.scene==='done2')G.scene='cold3';if(G.scene==='done3')G.scene='cold4';if(G.scene==='done4')G.scene='cold5';if(G.scene==='done5')G.scene='cold6';runScene(G.scene)}),true));
     const anyLock=Object.values(G.locks||{}).some(Boolean);
     const nb=btn('New game',()=>{if(nb.dataset.sure){go(()=>{wipe();G=fresh();runScene('cold')})()}else{nb.dataset.sure='1';nb.textContent='Erase my save?'}});
     if(!anyLock)row.append(nb);
