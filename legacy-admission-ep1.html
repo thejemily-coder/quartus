@@ -132,8 +132,8 @@ header.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
 <script>
 /* ---------- state ---------- */
 const KEY='legacy-admission-s1-v1';
-const PEOPLE=['josie','wren','coop','dez','savannah','del','lurleen','fenn','colt','hunter','haskell','graham','jalen','harlan','chip','immy','hudson','nora'];
-const NAMES={theo:'You',coop:'Coop',dez:'Dez',josie:'Josie',del:'Del',wren:'Wren',savannah:'Savannah-Claire',fenn:'Dr. Fenn',lurleen:'Mayor Lurleen',birdie:'Birdie',mavis:'Mavis',ladies:'The Gazebo Ladies',hunter:'Hunter',colt:'Colt',graham:'Dad',odell:'Ms. Odell',haskell:'Dean Haskell',earl:'Big Earl Tillman',doc:'Dr. Nguyen',judge:'Judge Crenshaw',rhonda:'Rhonda',sisters:'The Magnolias',preston:'Preston Danvers',chip:'Chip Rennick',immy:'Immy Vale',hudson:'Hudson Prescott-Lowe',nora:'Nora',pettibone:'Savannah-Claire',pastor:'Reverend Whitfield',paramedic:'Paramedic',nurse:'Nurse',dani:'Dani',dunleavy:'Mr. Dunleavy',pierce:'Pierce',jalen:'Jalen',harlan:'Harlan Prescott-Lowe',madison:'Madison',marcus:'Marcus Hale',whitfield:'Reverend Whitfield',cletus:'Deputy Cletus',pledges:'The Pledges',student:'Poetry Student'};
+const PEOPLE=['josie','wren','coop','dez','savannah','del','lurleen','fenn','colt','hunter','haskell','graham','jalen','harlan','chip','immy','hudson','nora','okafor','vance','margot'];
+const NAMES={theo:'You',coop:'Coop',dez:'Dez',josie:'Josie',del:'Del',wren:'Wren',savannah:'Savannah-Claire',fenn:'Dr. Fenn',lurleen:'Mayor Lurleen',birdie:'Birdie',mavis:'Mavis',ladies:'The Gazebo Ladies',hunter:'Hunter',colt:'Colt',graham:'Dad',odell:'Ms. Odell',haskell:'Dean Haskell',earl:'Big Earl Tillman',doc:'Dr. Nguyen',judge:'Judge Crenshaw',rhonda:'Rhonda',sisters:'The Magnolias',preston:'Preston Danvers',chip:'Chip Rennick',immy:'Immy Vale',hudson:'Hudson Prescott-Lowe',nora:'Nora',okafor:'Dr. Okafor',vance:'Interim Dean Vance',spence:'Rutledge Spence',adeyemi:'Prof. Adeyemi',priya:'Priya Raman',margot:'Margot',recep:'Receptionist',pettibone:'Savannah-Claire',pastor:'Reverend Whitfield',paramedic:'Paramedic',nurse:'Nurse',dani:'Dani',dunleavy:'Mr. Dunleavy',pierce:'Pierce',jalen:'Jalen',harlan:'Harlan Prescott-Lowe',madison:'Madison',marcus:'Marcus Hale',whitfield:'Reverend Whitfield',cletus:'Deputy Cletus',pledges:'The Pledges',student:'Poetry Student'};
 const BLURB={
  josie:'Pre-med on scholarship. Works the Blue Plate counter. Allergic to rich-kid nonsense.',
  wren:'Sophomore transfer. Theatre. The funniest person at any party and the saddest at the end of it.',
@@ -152,7 +152,10 @@ const BLURB={
  chip:'Student Government VP. Laser pointer. Binders. Lives for Homecoming.',
  immy:'Marcus Hale\u2019s associate. Reads liars for a living. Gave you her number.',
  hudson:'Hunter\u2019s older brother. Tau president in 2019. Arrives by seaplane.',
- nora:'Wren\u2019s half-sister. The girl in the yellow dress.'};
+ nora:'Wren\u2019s half-sister. The girl in the yellow dress.',
+ okafor:'Student Health counselor. Mondays at 3. Cannot be charmed. Keeps a bucket of river stones.',
+ vance:'Interim Dean. Former litigator. Chairs the panel. Not a villain; her job is the college.',
+ margot:'The girl from the poem about a bench. Sober, young, unimpressed by you.'};
 const fresh=()=>({stats:{charm:3,nerve:1,wit:2,heart:1},rep:{campus:0,town:0},dep:0,buzz:0,
   rel:Object.fromEntries(PEOPLE.map(p=>[p,{trust:0,desire:0,loyalty:0}])),flags:{},ledger:[],log:[],cps:{},locks:{},scene:'cold'});
 let G=fresh();
@@ -166,7 +169,7 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 /* save: browser storage plus the artifact database (cloud save Claude can read) */
 const DOC='season1/save';
 let DB=null,dbBusy=false,dbDirty=false,dbTimer=null;
-function brief(){return{episodesDone:[G.flags.ep1done&&1,G.flags.ep2done&&2,G.flags.ep3done&&3,G.flags.ep4done&&4,G.flags.ep5done&&5,G.flags.ep6done&&6,G.flags.ep7done&&7,G.flags.ep8done&&8].filter(Boolean),scene:G.scene,stats:G.stats,reputation:G.rep,dependence:G.dep,
+function brief(){return{episodesDone:[G.flags.ep1done&&1,G.flags.ep2done&&2,G.flags.ep3done&&3,G.flags.ep4done&&4,G.flags.ep5done&&5,G.flags.ep6done&&6,G.flags.ep7done&&7,G.flags.ep8done&&8,G.flags.ep9done&&9].filter(Boolean),scene:G.scene,stats:G.stats,reputation:G.rep,dependence:G.dep,sobrietyDays:G.sober,credibility:G.cred||0,
   flags:Object.keys(G.flags).filter(k=>!/^(met|last):/.test(k)&&G.flags[k]),relationships:G.rel,ledger:G.ledger}}
 function snapshotDoc(){return{state:G,brief:brief(),savedAt:G._t||0}}
 async function pushDb(){
@@ -196,10 +199,12 @@ function apply(fx){
     if(v===0)continue;
     if(k.startsWith('flag:')){G.flags[k.slice(5)]=v;continue}
     if(k==='dep'){G.dep+=v;continue}
+    if(k==='sober'){G.sober=(G.sober||0)+v;continue}
+    if(k==='cred'){G.cred=(G.cred||0)+v;chips.push([(v>0?'\u25B2 ':'\u25BC ')+'Credibility',v>0]);continue}
     if(k==='buzz'){G.buzz=Math.max(0,G.buzz+v);continue}
     if(k in G.stats){G.stats[k]+=v;chips.push([cap(k)+' '+(v>0?'+':'')+v,v>0]);continue}
     if(k.startsWith('rep.')){const r=k.slice(4);G.rep[r]+=v;chips.push([(v>0?'▲ ':'▼ ')+(r==='campus'?'Campus':'Town')+' reputation',v>0]);continue}
-    if(k.startsWith('rel.')){const [,p,m]=k.split('.');G.rel[p][m]+=v;chips.push([(v>0?'▲ ':'▼ ')+NAMES[p].replace('Mayor ','')+' · '+cap(m),v>0])}
+    if(k.startsWith('rel.')){const [,p,m]=k.split('.');G.rel[p][m]=(G.rel[p][m]||0)+v;chips.push([(v>0?'▲ ':'▼ ')+NAMES[p].replace('Mayor ','')+' · '+cap(m),v>0])}
   }
   if(chips.length){const c=el('div','chips');chips.forEach(([t,up])=>c.append(el('span','chip '+(up?'up':'down'),esc(t))));log.append(c)}
 }
@@ -213,7 +218,7 @@ function setDock(label,fn){
 }
 function say(who,text){
   if(who!=='theo'&&PEOPLE.includes(who))G.flags['met:'+who]=true;
-  const d=el('div','s'+(who==='theo'?' me':''));const CM={birdie:'ladies',mavis:'ladies',odell:'ladies',rhonda:'ladies',student:'ladies',doc:'doc',judge:'judge'};d.style.setProperty('--c','var(--c-'+(CM[who]||who)+')');
+  const d=el('div','s'+(who==='theo'?' me':''));const CM={vance:'haskell',okafor:'doc',spence:'hunter',adeyemi:'haskell',priya:'doc',margot:'josie',recep:'ladies',birdie:'ladies',mavis:'ladies',odell:'ladies',rhonda:'ladies',student:'ladies',doc:'doc',judge:'judge'};d.style.setProperty('--c','var(--c-'+(CM[who]||who)+')');
   d.append(el('div','who',esc(NAMES[who]||who)));d.append(el('p','say',text));log.append(d);
 }
 function thread(title,msgs){
@@ -240,11 +245,11 @@ async function lockEpisode(n){
   try{const ref=DB.doc('season1/ep'+n+'_final');const s=await ref.get();if(!s.exists)await ref.set(snapshotDoc())}catch(e){}
 }
 function snap(){const {cps,...r}=G;return JSON.parse(JSON.stringify(r))}
-const EP_START={1:'cold',2:'cold2',3:'cold3',4:'cold4',5:'cold5',6:'cold6',7:'porch7',8:'curb8'};
-function sceneStartSnap(){return{scene:G.scene,stats:{...G.stats},rep:{...G.rep},dep:G.dep,buzz:G.buzz,rel:JSON.parse(JSON.stringify(G.rel)),flags:{...G.flags},ledgerLen:G.ledger.length,logLen:G.log.length}}
+const EP_START={1:'cold',2:'cold2',3:'cold3',4:'cold4',5:'cold5',6:'cold6',7:'porch7',8:'curb8',9:'cold9'};
+function sceneStartSnap(){return{scene:G.scene,stats:{...G.stats},rep:{...G.rep},dep:G.dep,sober:G.sober,cred:G.cred,buzz:G.buzz,rel:JSON.parse(JSON.stringify(G.rel)),flags:{...G.flags},ledgerLen:G.ledger.length,logLen:G.log.length}}
 function restoreSceneStart(g){
   const s=g&&g.scStart;if(!s||s.scene!==g.scene)return g;
-  g.stats={...s.stats};g.rep={...s.rep};g.dep=s.dep;g.buzz=s.buzz;g.rel=JSON.parse(JSON.stringify(s.rel));g.flags={...s.flags};
+  g.stats={...s.stats};g.rep={...s.rep};g.dep=s.dep;g.sober=s.sober;g.cred=s.cred;g.buzz=s.buzz;g.rel=JSON.parse(JSON.stringify(s.rel));g.flags={...s.flags};
   g.ledger.length=Math.min(g.ledger.length,s.ledgerLen);g.log.length=Math.min(g.log.length,s.logLen);return g;
 }
 function runScene(id){
@@ -256,7 +261,8 @@ function runScene(id){
   if(id==='cold6'){G.cps[6]=snap();Object.keys(G.cps).forEach(k=>{if(+k>6)delete G.cps[k]})}
   if(id==='porch7'){G.cps[7]=snap();Object.keys(G.cps).forEach(k=>{if(+k>7)delete G.cps[k]})}
   if(id==='curb8'){G.cps[8]=snap();Object.keys(G.cps).forEach(k=>{if(+k>8)delete G.cps[k]})}
-  G.scene=id;G.scStart=sceneStartSnap();save(id==='cold2'||id==='cold3'||id==='cold4'||id==='cold5'||id==='cold6'||id==='porch7'||id==='curb8'||id==='done2'||id==='done3'||id==='done4'||id==='done5'||id==='done6'||id==='done7'||id==='done8');stack=[{steps:SC[id],i:0}];next();
+  if(id==='cold9'){G.cps[9]=snap();Object.keys(G.cps).forEach(k=>{if(+k>9)delete G.cps[k]})}
+  G.scene=id;G.scStart=sceneStartSnap();save(id==='cold2'||id==='cold3'||id==='cold4'||id==='cold5'||id==='cold6'||id==='porch7'||id==='curb8'||id==='cold9'||id==='done2'||id==='done3'||id==='done4'||id==='done5'||id==='done6'||id==='done7'||id==='done8'||id==='done9');stack=[{steps:SC[id],i:0}];next();
 }
 function next(){
   setDock(null);
@@ -352,13 +358,14 @@ function openNotebook(tab='people'){
       if(!met.length)body.append(el('p','empty','You haven’t met anyone yet.'));
       met.forEach(p=>{const r=el('div','panelrow');r.style.setProperty('--c','var(--c-'+(p==='lurleen'?'lurleen':p)+')');
         r.append(el('h3','',esc(NAMES[p])));r.append(el('p','',esc(BLURB[p])));
-        ['trust','desire','loyalty'].forEach(m=>{const v=G.rel[p][m];const pct=Math.max(0,Math.min(100,(v+3)/10*100));
+        (p==='josie'?['trust','desire','home']:['trust','desire','loyalty']).forEach(m=>{const v=G.rel[p][m]||0;const pct=Math.max(0,Math.min(100,(v+3)/10*100));
           const mm=el('div','meter',`<em style="font-style:normal">${m}</em><i><b style="width:${pct}%"></b></i><span>${v>0?'+':''}${v}</span>`);r.append(mm)});
         body.append(r)});
     }
     if(k==='you'){
       const r=el('div','panelrow');r.append(el('h3','','Theo Whitlock'));r.append(el('p','','18. A last name on a dorm. A night from senior year you aren’t discussing.'));
       ['charm','nerve','wit','heart'].forEach(s=>{const v=G.stats[s];r.append(el('div','meter',`<em style="font-style:normal">${s}</em><i><b style="width:${Math.min(100,v*14)}%"></b></i><span>${v}</span>`))});
+      if(G.sober!=null){r.append(el('div','meter',`<em style="font-style:normal">sober</em><i><b style="width:${Math.min(100,(G.sober||0)*2)}%"></b></i><span>${G.sober||0} days</span>`))}
       body.append(r);
     }
     if(k==='town'){
@@ -367,7 +374,7 @@ function openNotebook(tab='people'){
         r.append(el('div','meter',`<em style="font-style:normal">standing</em><i><b style="width:${Math.max(0,Math.min(100,(v+4)/10*100))}%"></b></i><span>${v>0?'+':''}${v}</span>`));body.append(r)});
     }
     if(k==='eps'){
-      const lk=[1,2,3,4,5,6,7,8].filter(locked);
+      const lk=[1,2,3,4,5,6,7,8,9].filter(locked);
       body.append(el('p','empty',lk.length?'Locked episodes: '+lk.join(', ')+'. Finished episodes are canon, so their choices cannot be replayed or changed. The story builds on them.':'Finishing an episode locks it in. Until then you can replay an episode to try different choices. Episode 2 restarts with the exact stats and story flags you had when Episode 1 ended.'));
       const st=el('div','panelrow');st.append(el('h3','','Current stats'));st.append(el('p','',`Charm ${G.stats.charm} \u00B7 Nerve ${G.stats.nerve} \u00B7 Wit ${G.stats.wit} \u00B7 Heart ${G.stats.heart}`));body.append(st);
       body.append(episodeButtons());
@@ -4316,6 +4323,590 @@ SC.envelope8=[
  ['end',8],
 ];
 
+/* ============ EPISODE 9: THE HEARING (Season Two, Ep 1) ============ */
+/* Canon (ep8_final): Charm 25 / Heart 65 / Wit 16 / Nerve 1; Dep 18 (retired as a number; Sobriety Count starts at 6 on Saturday).
+   Josie kissed Theo on the back steps; Theo promised Tuesdays, Mondays, and to call her first (she answers, then they find someone).
+   Nora left the photo strip (Wren and Nora, back says "I LO—"); Theo let her go. Hearing is Thursday. */
+
+SC.cold9=[
+ ['act','Saturday'],
+ ['if',()=>G.sober==null,[fx({sober:6})],[]],
+ slug('INT. THE BLUE PLATE DINER — SATURDAY — 10:03 A.M.'),
+ n(`Here is what you learn about small towns in the first ninety seconds of walking into a diner the morning after you have kissed the waitress on the back steps: it is possible for forty-one people to stop looking at you in perfect synchronization.`),
+ n(`The Saturday crowd is out in force. The Gazebo Ladies hold the big corner booth, shoulder to shoulder, with a single newspaper held up between them like a hymnal. Big Earl Tillman is on the counter stool he has occupied since the Carter administration, studying a bowl of grits as though it were a legal brief. Birdie, at the register, has taken her pen out of her hair and put it back in twice. Mavis, who is eighty-four and has never once been quiet, is silent, and it is the loudest thing in the room.`),
+ n(`The bell over the door stops jingling. Nobody says a word. A fork, somewhere, is set down on a plate with the delicacy of a diplomat’s signature.`),
+ n(`You are carrying a strip of four photographs in a manila envelope and the smallest hope in the world that nobody has noticed.`),
+ s('birdie',`Morning, Theo.`),
+ s('theo',`Morning, Birdie.`),
+ s('birdie',`Sleep well?`),
+ s('theo',`Reasonably.`),
+ s('birdie',`Mm.`),
+ n(`She writes something on the pad by the register. You can read it upside down. It says: FLOUR. HER HAIR. HIS COLLAR. SATURDAY 4:06 A.M. CONFIRMED BY GUS.`),
+ ch('The whole room is pretending to be a diner.',[
+  o(`“Birdie, I swear to God, who is Gus working for?”`,{tag:['Wit'],req:['wit',10],fx:{wit:1,'rep.town':1},then:[s('birdie',`Gus is a freelancer. He sells to all sides.`),n(`From the corner booth, someone in a lavender hat makes a small, wet, strangled noise that she converts into a cough, and the sound ripples out through the room like a thrown stone, until a man at the counter has to put down his coffee and lean on his elbows, shaking.`)]}),
+  o(`Say nothing. Walk to the counter. Sit down like a man with nothing to hide.`,{tag:['Restraint'],fx:{'rel.josie.trust':1},then:[n(`You sit down on a stool. You turn the menu over and read the back of it, which is an ad for a septic company. It is the most committed piece of acting you have ever done. Big Earl, two stools down, without looking up, says, “Atta boy.”`)]}),
+  o(`“Nothing happened. We baked a cake.”`,{tag:['Charm'],fx:{charm:1,'rel.josie.desire':1},then:[n(`A hush. Then, from the booth, Mavis, with the awful clarity of the very old: “Four in the morning.” A second voice, lavender: “It’s a long cake.” A third, more softly: “It’s a lemon.” The three of them are overcome and have to be helped by Big Earl to the door.`)]}),
+ ]),
+ n(`The kitchen pass-through slides open. Josie’s face appears in it, framed by a hair net and a smear of grease across one cheekbone. She looks at you. She looks at the dining room, which is looking, very elaborately, at its eggs. Something happens at the corner of her mouth that she works to flatten.`),
+ s('josie',`Table six is open. You can sit in the back. Where the people can’t see you.`),
+ s('theo',`It would be a mercy.`),
+ s('josie',`I’m not doing it as a mercy. I’m doing it because I don’t want to be fired for laughing.`),
+ n(`Table six is a booth in the back, by the kitchen door, under a framed print of a bass. You slide in with your back to the wall. She comes out in six minutes, without the hair net, with her apron untied, and two cups of coffee. She sets one in front of you. She slides into the booth across from you, and puts her chin in her hand, and looks at you.`),
+ n(`It’s the first time you’ve seen her in daylight since the kiss. There’s a flat white scar of flour on her wrist. Her hair has come half out of its pencil. She’s been up since four, you realize. She’s been up for the dough, and then for you, and then for the dough again.`),
+ s('josie',`Hi.`),
+ s('theo',`Hi.`),
+ s('josie',`This is weird.`),
+ s('theo',`Very.`),
+ s('josie',`I didn’t sleep. I mean I slept. I slept two hours and I woke up grinning like an idiot and Del looked at me over her toast and said, “So.” That’s all. “So.” For eleven minutes.`),
+ s('theo',`What did you say?`),
+ s('josie',`I said, “The dough.”`),
+ s('theo',`That was it?`),
+ s('josie',`I’m a coward in the morning. Show me the strip.`),
+ n(`You put the envelope on the table between the coffee cups. She doesn’t touch it. She looks at it the way you’d look at a sleeping animal. Then she slides the four small photographs out by their edges, lays them on the Formica in a row, and bends over them, and for a long moment, she doesn’t say anything at all.`),
+ n(`Two girls. A green dress and a flannel shirt. Cheek to cheek, laughing, in the first frame. Not laughing, in the second. A blurred hand, in the third. A corner of ceiling, in the fourth. Nora and Wren. You still don’t know when. You still don’t know why.`),
+ s('josie',`Look at her hand in the third one.`),
+ s('theo',`The blur?`),
+ s('josie',`She’s reaching for the lens. She’s covering it. Because she was about to do something. In the fourth frame she isn’t looking up at the camera. She’s looking at the other girl.`),
+ n(`You hadn’t seen it. In the fourth frame, the corner of the ceiling, the streak of light, is only the camera’s fault: the lens knocked to the side. And in the very edge of the picture, at the border, there’s a shoulder in a green dress, a cheek, a fraction of a face turned toward someone out of frame. It’s not a ceiling. It’s two people leaning in.`),
+ s('josie',`I’m not mad. I want you to know that I’m not. I’m looking at a thing that happened before I knew you and I’m trying to hold it correctly. It’s like holding a baby that isn’t yours.`),
+ s('josie',`It’s hard. It’s mostly tenderness. There’s a little bit of something else. I’m going to tell you when there is.`),
+ n(`It’s the most generous sentence anyone has said to you this month. You find, with a drop in your stomach, that you’re nodding and can’t stop.`),
+ ch('The strip lies between you on the table. It’s not really yours. It was left on your porch.',[
+  o(`“I think it should go to Wren. When she’s ready. I’ll give it to Dez.”`,{tag:['Heart'],fx:{heart:1,'rel.josie.trust':2,'rel.dez.trust':1,'flag:stripToDez':true},led:`Decided the photo-booth strip of Wren and Nora belongs to Wren and gave it to Dez to carry to her.`,then:[s('josie',`Yeah.`),s('josie',`That’s right. That’s the thing that’s right.`),n(`She slides it back into the envelope, and then, on second thought, reaches across the table and for a moment lays her hand on top of yours, on top of the envelope, in public, in a diner, with a man at the counter pretending to read a menu. She takes it back. “Okay,” she says. “Don’t let me do that in front of Birdie.”`)]}),
+  o(`“Nora gave it to me. I should keep it until I understand why.”`,{tag:['Honesty'],fx:{'rel.josie.trust':0,'rel.nora.trust':1,'flag:stripKept':true},led:`Kept the photo-booth strip of Wren and Nora, wanting to understand why Nora left it.`,then:[s('josie',`That’s fair. Keep it a week. Then call somebody who knows. Don’t put it in a drawer with your feelings.`),n(`She taps the table once. “It’s a lot to carry. You’ll know when it’s time to put it down.”`)]}),
+  o(`“I’ll put it with the napkin. I want them both near me.”`,{tag:['Avoid'],fx:{'rel.josie.trust':-1,'rel.wren.desire':1,'flag:stripPocket':true},led:`Put the photo strip in the same pocket as Wren's napkin.`,then:[s('josie',`Okay.`),n(`She says it very evenly. It costs her something, and she pays it without a sound. “That’s the little bit of something else,” she says. “I told you I’d tell you. Now it’s told. Eat something.”`)]}),
+ ]),
+ n(`Del comes out of the kitchen with two plates and no expression. She sets one down in front of Josie. She sets one down in front of you. It is a tall stack of pancakes with a single cube of butter melting on top, and, in the exact center of the butter, someone has placed a single poppy seed.`),
+ s('del',`I have eyes.`),
+ s('theo',`Yes, ma’am.`),
+ s('del',`I don’t have an opinion. I have a pancake. Eat.`),
+ n(`She goes back through the swinging door. A second later, from the kitchen, you hear, distinctly, a small, helpless sound of a woman who has been trying to keep a straight face for six hours, and has lost.`),
+ n(`The two of you eat. It’s a good pancake. It’s a very good pancake. It’s a pancake that has been made with a small and furious love. You don’t say a lot. At one point your foot finds hers under the table, and neither of you moves.`),
+ n(`When the plates are empty, Josie wipes her mouth and puts her napkin down, and says, in the clipped, matter-of-fact voice she uses for specials:`),
+ s('josie',`Rules. I’ve been thinking about them since four a.m. I’m going to say them once and then we’re going to be normal.`),
+ s('josie',`One. Tuesdays. Seven o’clock. I’m not coming. That’s not mine. But I’m going to know if you don’t go.`),
+ s('josie',`Two. Monday. The thing at Student Health. You go. You tell the truth to the person. You don’t charm them.`),
+ s('josie',`Three. You call me first. I know I said Del and Fenn and everybody. You call them too. But you call me first, because I’m the one who’ll pick up. That’s not a rope. That’s a phone. A phone is not a rope.`),
+ s('josie',`Four.`),
+ n(`She hesitates. A faint color rises along her cheekbones.`),
+ s('josie',`Four. We’re going to be bad at this for a while. I want you to say so when we are. I’m not good at this part. I’ve been a person who doesn’t say it. You’ll have to say it.`),
+ ch('Four rules. She has laid them on the table like cutlery.',[
+  o(`“I’ll call you first. I’ll call you before I talk myself out of it. I promise.”`,{tag:['Heart'],fx:{heart:1,'rel.josie.trust':2,'rel.josie.home':1,'flag:promisedCallFirst':true},then:[s('josie',`Don’t promise. Do. Promises are cheap. I got a drawer full of them from my father.`),n(`She says it lightly, and you both know it isn’t light. You say, “Okay. Then I’ll do.” She nods, once. That’s the deal.`)]}),
+  o(`“Rule four is going to be the hardest one. I’m going to be bad at it immediately.”`,{tag:['Wit'],req:['wit',10],fx:{wit:1,'rel.josie.desire':1,'rel.josie.home':1},then:[s('josie',`Good. Say that. Say it exactly like that, when it happens.`),n(`She almost smiles. It’s the first sign of the Josie who yells at you across a dish pit, and you are so relieved to see her that you could fall out of the booth.`)]}),
+  o(`“Can we add a rule five? I get to kiss you in the walk-in cooler.”`,{tag:['Charm'],fx:{charm:1,'rel.josie.desire':2},then:[s('josie',`Rule five is approved. Conditions: it’s not for lunch hours, Del can’t hear, and I’m wearing a coat.`),n(`She stands. She takes your plate. She leans down, close, over the table, and says, low, in your ear, “It’s forty degrees in there. Don’t get ideas about my coat.”`),n(`She walks back to the kitchen. You sit very still. You look at the bass on the wall. The bass looks back at you, with something like sympathy.`)]}),
+ ]),
+ n(`That’s how you spend your first Saturday as a man who has been kissed by Josie and told the rules.`),
+ n(`It’s Day Seven.`),
+ ['go','sunday9'],
+];
+
+SC.sunday9=[
+ ['act','Sunday'],
+ fx({sober:1}),
+ slug('INT. WHITLOCK RENTAL, MORROW STREET — SUNDAY — 8:47 P.M.'),
+ n(`Nobody tells you how long a Sunday is.`),
+ n(`You’ve had Sundays. You’ve had a hundred Sundays: brunches, and the long, blurred, bright afternoon of a boy with a drink he didn’t think about. They were short. They had a hole in the center, a warm, quiet hole you fell through, and it was Monday.`),
+ n(`Tonight the Sunday is a rope, and it’s fraying at exactly the same rate as everything else in a day. It’s eight forty-seven. The sun went down at 6:12. You’ve done the dishes (nine dishes). You’ve done the laundry (one load, folded). You’ve read the same four pages of your Intro to Ethics anthology (the Trolley Problem) six times, and you’re now, with a strange dull rancor, on the side of the people on the tracks.`),
+ n(`Coop is at a Sports Management and Vibes retreat in Macon. He left a note on the fridge. It says: BACK MONDAY!!! THERE IS A SANDWICH. THE SANDWICH IS A CONCEPT. You haven’t had the sandwich. You’re not sure it exists.`),
+ n(`The house ticks. The pipes whisper. The fridge hums a single flat B. You’ve been in the living room for three hours, on the couch, with the TV on mute, watching a man on a home shopping channel make a very hard sell on a spiralizer.`),
+ n(`It isn’t a big thing. That’s what is so strange. You expected a lightning bolt. You expected something to rip and howl and come for you down the hall, the way it did in room 314. It isn’t. It’s quiet and flat and patient and very small. It’s a sound like a sink dripping in a room three rooms away. It’s the thought, easy as a yawn, that a drink would make this hour shorter.`),
+ n(`You don’t have a drink. You haven’t had a drink in a week. There’s no bottle in the house. You made sure of that on Wednesday, with Coop, in a grim and silent ceremony involving the sink.`),
+ n(`But there’s a place on Pecan Street that’s open till midnight, and it’s eleven minutes away on foot.`),
+ n(`You look at your phone. You look at it for a very long time.`),
+ ch('It’s 8:52. It’s a small, flat, patient craving. It isn’t an emergency. That’s what makes it dangerous.',[
+  o(`Call Josie. She said to call her first.`,{tag:['Heart'],fx:{heart:1,'rel.josie.trust':2,'rel.josie.home':2,'flag:calledJosieSunday':true},led:`On Sunday night, bored and craving, called Josie first, as promised.`,then:[
+    n(`She picks up on the second ring. You hear a kitchen: a tap running, a radio, a plate going down on a rack.`),
+    s('josie',`Hey. You okay?`),
+    s('theo',`I’m okay. It’s not an emergency. I just— I didn’t know what to do with my hands.`),
+    n(`There’s a pause. The tap goes off.`),
+    s('josie',`Okay.`),
+    s('josie',`Okay. I’m wiping down. I’m going to be here forty minutes. You can talk to me while I do it. About nothing. I’m very good at nothing.`),
+    ['go','nothing9']]}),
+  o(`Call Del. She’s the one who actually knows.`,{tag:['Honesty'],fx:{'rel.del.trust':2,'rel.josie.trust':-1,'flag:calledDelSunday':true},led:`On Sunday night, craving, called Del instead of Josie.`,then:[
+    n(`Del answers on the fourth ring. “Yes,” she says, in the voice of a woman who has been woken from a nap.`),
+    s('theo',`I’m sorry. I didn’t know who else.`),
+    s('del',`That’s fine. That’s what a phone’s for. Josie told you to call her first.`),
+    s('theo',`I know.`),
+    s('del',`Mm. I’m going to talk to you for twenty minutes about the proper way to cut a pie. Then I’m going to hang up, and you’re going to call my daughter, and you’re going to say the exact thing you just said to me. And she’s going to say, “Oh,” and you’re both going to be fine.`),
+    n(`She talks for twenty minutes about the proper way to cut a pie. It’s a very interesting subject. Apparently, there is a right way to hold the knife. When she hangs up you realize that you’ve been laughing for about six of the twenty, and the craving has gone off through the wall like a cat.`),
+    n(`You call Josie. You say the exact thing. She says, “Oh.” You’re both fine.`),
+    ['go','okafor9']]}),
+  o(`Push through. Run it out. You’re not a child.`,{tag:['Restraint'],fx:{'rel.josie.trust':-1,'flag:pushedAlone':true},led:`Pushed through a Sunday craving alone without calling anyone.`,then:[
+    n(`You get up. You do forty-one push-ups. You do the dishes again, which are clean. You reorganize the spice rack alphabetically, then by color, then back. At ten past nine you’re standing in the kitchen with a wooden spoon, holding it like a weapon, and it hits you that this is what it looks like when a man is white-knuckling a Sunday.`),
+    n(`By eleven you’re through. You’re tired and flat and a little proud and a little stupid. In the morning there’s a text from Josie. It says: Did you call me? It’s been 24 hours and the phone has been quiet and I know you. It’s not an accusation. It’s a question. A phone is not a rope. Remember. You text back: I didn’t. I should have. She sends a single thumbs-up. It’s the most terrifying emoji in the language.`),
+    ['go','okafor9']]}),
+  o(`Go to Pecan Street. Just to look.`,{tag:['Nerve 3'],req:['nerve',3],fx:{nerve:1,dep:1,'flag:wentPecan':true},then:[n(`You stand on the sidewalk outside the place on Pecan Street with your hands in your pockets and look through the window at the neon and the bottles and the long, golden, lit back bar. It’s a very beautiful bar. It’s the nicest-looking thing in town. You stand there for twelve minutes, and then you turn around and walk home. It’s the least dramatic act of bravery you have ever performed.`),['go','okafor9']]}),
+ ]),
+];
+
+SC.nothing9=[
+ n(`You talk about nothing for forty-one minutes.`),
+ n(`It’s the finest conversation you’ve ever had. She tells you about the dishwasher at the Blue Plate, whose name is Gerald and who is not a person but a 1994 Hobart machine that hisses and has opinions. She tells you about a man who comes in every Sunday at four and orders a single boiled egg, and has done so since 2011, and has never once said a word, and once, in a snowstorm, left her a twenty-dollar bill under the salt shaker with a note that said: THANK YOU FOR THE EGG.`),
+ n(`You tell her about the spiralizer man. You do his voice. She tells you to stop and then tells you to do it again. You tell her about the four pages of the Trolley Problem and how you’ve come to feel that the person on the side track has been unfairly maligned. She says the person on the side track is a union guy. She says he’s probably fine.`),
+ n(`At minute thirty-eight, she says, quietly, over the sound of a dish towel: “I’m not tired. I just want you to know that. I could do this for another hour.”`),
+ s('theo',`I know. I could too.`),
+ s('josie',`But you should sleep. And I should sleep. The dough doesn’t proof itself.`),
+ s('theo',`It really doesn’t.`),
+ s('josie',`Okay.`),
+ s('josie',`Hey, Theo.`),
+ s('theo',`Yeah?`),
+ s('josie',`That was a good call. The best kind. The boring kind. Do that again.`),
+ n(`She hangs up. The house is quiet. The fridge hums its flat B. The craving, which was a sink dripping three rooms away, has stopped, and in its place there’s a plain, small, ordinary quiet, the quiet of a house with a person in it. You sit on the couch for a long time, with the phone in your hand, and the spiralizer man, still on mute, makes his closing argument to a nation.`),
+ n(`It’s Day Eight.`),
+ ['go','okafor9'],
+];
+
+SC.okafor9=[
+ ['act','Monday'],
+ fx({sober:1}),
+ ['if',()=>G.sober==null,[fx({sober:6})],[]],
+ slug('INT. ASHBY STUDENT HEALTH CENTER — SECOND FLOOR — MONDAY — 3:00 P.M.'),
+ n(`The Student Health Center smells like a dentist’s office, if the dentist were also a monk. There is a fish tank in the waiting room with a single, hostile goldfish. There is a poster on the wall of a kitten on a branch above the words HANG IN THERE (BUT ALSO ASK FOR HELP). Under the poster, on a rack, are pamphlets with titles like SO YOU’VE MADE A CHOICE, and ALCOHOL AND YOU: A PARTNERSHIP, and, in a single, cruel stroke of honesty, YOU ARE NOT AS FUNNY AS YOU THINK YOU ARE WHEN YOU’RE DRUNK.`),
+ n(`You take a number. The number is 14. The receptionist, a woman in cat-eye glasses, looks at your name on the screen and looks at you and then very carefully looks at a spot above your left ear.`),
+ s('recep',`She’ll see you now. Second door on the right. She says to leave the charm in the hall.`),
+ n(`That’s going to be a long hour.`),
+ slug('INT. DR. OKAFOR’S OFFICE'),
+ n(`Dr. Adaeze Okafor is somewhere between forty and sixty, with close-cropped gray hair, small gold-rimmed glasses, and the kind of absolute, unhurried stillness you associate with cats and bridges. Her office is spare: a desk, a sofa, two armchairs, a bookcase full of titles you don’t recognize, a window onto the quad, and a stone on the windowsill, a plain river rock, the size of a fist, which she picks up and puts down as she talks, as though she were checking its weight.`),
+ s('okafor',`Mr. Whitlock.`),
+ s('theo',`Dr. Okafor. It’s a pleasure.`),
+ s('okafor',`It’s not, yet. But it’s kind of you to say.`),
+ n(`She doesn’t smile. She gestures to the sofa. You sit. She sits in the armchair, crosses one ankle over the other, and regards you, with her hands folded, for eleven seconds, and does not say a word. You count them. You can’t help it. It’s the longest eleven seconds of the semester.`),
+ s('okafor',`Tell me what you’ve told other people about why you’re here.`),
+ s('theo',`That I took a pill. That I’d been drinking. That I did a thing in May, and I haven’t been, I wasn’t able to, I—`),
+ s('okafor',`You’re doing a thing.`),
+ s('theo',`What thing?`),
+ s('okafor',`You’re putting a sentence together the way you’d put a tie together. It looks lovely. It tells me nothing. I’d like the version you’d say to yourself at four in the morning.`),
+ ch('She’s right. She doesn’t blink. Sixty minutes is a lot of silence.',[
+  o(`“I drank because it made the thing I did go quiet. And it didn’t. It just made it quiet in public.”`,{tag:['Honesty'],fx:{heart:1,cred:1,'flag:okaforHonest':true,'rel.josie.trust':0},led:`Told Dr. Okafor the 4 a.m. version: you drank to make the thing you did go quiet.`,then:[s('okafor',`Thank you.`),n(`She sets the stone down on the sill. It makes a very small, definite sound. She writes nothing. “That’s the first true thing anyone’s said in this chair all week,” she says. “It wasn’t clever. I’m going to remember that it wasn’t clever.”`)]}),
+  o(`“I think I’m an addict, and I don’t know if I’m allowed to say that. I haven’t earned it.”`,{tag:['Heart'],fx:{heart:2,'flag:okaforAddict':true},led:`Told Dr. Okafor you think you might be an addict and don't know if you've earned the word.`,then:[s('okafor',`Nobody earns it. It isn’t a degree. It’s a description.`),s('okafor',`You’re eighteen. You’ve been using substances to manage something for, what, eight months? That’s not a verdict. It’s a pattern. We’ll call it a pattern, for now, and see if the word wants to attach itself.`)]}),
+  o(`“Doctor, with respect, I’m an excellent patient. I’m very motivated. I’ve read the books.”`,{tag:['Charm'],req:['charm',20],fx:{'flag:okaforCharmed':true},led:`Tried to charm Dr. Okafor and was seen through.`,then:[n(`She lets you do it. She lets you do about ninety seconds, with the full, charming, easy, boyish register, the head tilt, the clean fast self-deprecation, the thing you did on Hunter and the Dean and a country club full of widows. She waits until you’re done. Then she looks at you for a long moment.`),s('okafor',`That was very good. That’s the best I’ve ever seen it done. It’s going to be the hardest part of your recovery.`),s('okafor',`Because you’re going to be good at this, too. You’re going to be so good at recovery that you’ll talk your way around it. Be bad at it. Please. Be as bad at it as you can.`)]}),
+  o(`Say nothing. Sit with the silence. Let her wait.`,{tag:['Restraint'],fx:{'flag:okaforSilent':true},led:`Sat in silence with Dr. Okafor for most of the first session.`,then:[n(`You sit. She sits. The goldfish in the waiting room, through the wall, must be swimming a slow, hostile lap. The clock on the wall ticks. Four minutes pass. It feels like four years. At minute five, without any warning, your eyes go hot, and you stare very hard at a spot on the carpet, and she hands you, without a word, a box of tissues from a shelf you hadn’t noticed.`),s('okafor',`There it is.`),s('okafor',`That’s the thing we’re going to work on.`)]}),
+ ]),
+ s('okafor',`Here’s the only theory I have, and I hold it lightly. A craving isn’t a command. It’s weather. It arrives. It has a shape. It reaches a peak at about twenty minutes, and then, if you don’t feed it, it goes off the way a storm does. You don’t have to win. You have to be indoors.`),
+ s('theo',`Indoors.`),
+ s('okafor',`With a phone. With a person on the phone. With a hot drink and a boring show. It doesn’t have to be an epiphany. It just has to be twenty minutes.`),
+ s('okafor',`How was Sunday night?`),
+ ['if',()=>G.flags.calledJosieSunday,[
+  s('theo',`I called Josie. We talked about a dishwasher named Gerald.`),
+  s('okafor',`That’s a perfect Sunday night. I’m going to put that on a pillow.`),
+  n(`You’re quite sure she’s smiling. It’s impossible to confirm.`)],[
+ ['if',()=>G.flags.calledDelSunday,[
+  s('theo',`I called Del. She told me how to cut a pie.`),
+  s('okafor',`Good. She’s the best sponsor in the county. And then you called the girl.`),
+  s('theo',`I called the girl.`),
+  s('okafor',`Good. Then the system works.`)],[
+  s('theo',`I pushed through. I didn’t call anyone.`),
+  s('okafor',`And how was that?`),
+  s('theo',`Lonely.`),
+  s('okafor',`Yes. It generally is. White-knuckling is a very lonely sport. I’d like you to try it the other way next time, if only to see if it’s different. It’s not a test of your character. It’s a thing you’re allowed to do with a phone.`)]]]],
+ n(`She picks up the stone and holds it out. “Take it,” she says. “It’s from the river behind the Student Health Center. I have a hundred. They’re in a bucket. It’s the stupidest gift in the world. When it gets bad, hold it. It weighs a pound and a half. That’s the weight of a hand.”`),
+ n(`You take the stone. It’s warm from her palm. It’s smooth and gray and perfectly ordinary. It fits your fist like a very small, stubborn heart.`),
+ fx({'flag:haveStone':true}),
+ s('okafor',`Same time next Monday. Do not bring the tie.`),
+ n(`It’s Day Nine. You walk out through the waiting room. The goldfish, in the tank, regards you with a look of deep and ancient contempt. You nod at it. Fair enough.`),
+ ['go','prep9'],
+];
+
+
+/* ---- tuesday and wednesday ---- */
+SC.prep9=[
+ ['act','Tuesday'],
+ fx({sober:1}),
+ slug('INT. THE BLUE PLATE DINER — TUESDAY — 6:58 P.M.'),
+ n(`It’s Day Ten. You go. You go by yourself this time. There’s no Fenn at your elbow, no arm to take. You stand outside the plate glass in the cold, with the neon sign buzzing above you, BLUE PLATE, and the small round stone from Dr. Okafor in your jacket pocket, and you count to a hundred, and you open the door.`),
+ n(`The bell jingles. The chairs are in their circle. Nine people look up. Nobody makes a big deal of it. Rhonda lifts a hand. Pastor Lou lifts his paper cup. The gaunt young man in the Georgia Tech sweatshirt, whose name, you’ve now learned, is Pruitt, no relation, slides a chair out with his foot.`),
+ n(`Margot is in the back by the pie case in her Delta Magnolia hoodie, with her hands in her sleeves. She doesn’t nod. She makes a small, flat, unimpressed face, as if to say: well, look who it is, and moves her bag off the chair next to her.`),
+ ch('There are two open chairs: one beside Pruitt, and one beside Margot, who has the expression of a girl who bites.',[
+  o(`Sit beside Margot.`,{tag:['Heart'],fx:{heart:1,'flag:satMargot':true,'rep.campus':1},then:[s('margot',`You sit down. You’re late.`),s('theo',`I’m four minutes early.`),s('margot',`For you, that’s late. Don’t flatter yourself. Nobody was waiting.`),n(`It’s the nicest thing anyone has said to you all week. You sit with your hands between your knees and she slides, without comment, a paper cup of the worst coffee in Georgia into your hand.`)]}),
+  o(`Sit beside Pruitt.`,{tag:['Restraint'],fx:{'rel.fenn.trust':1,'flag:satPruitt':true},then:[n(`Pruitt doesn’t look at you. He passes you a folded paper napkin, because there is a stack of them on his knee and there seems to be a habit. It’s a small gesture, from a boy who has, you’ve gathered, lost more than you have, and who is paying forward something he’s been handed.`)]}),
+ ]),
+ n(`Del lifts the book. She reads a paragraph. Judge Crenshaw, in the corner, with his hat on his knee, mutters, “Objection,” under his breath, to no one, and is shushed by Rhonda. Fenn is late. Fenn is always late. He comes in at 7:11 in a corduroy blazer with a leaf on the lapel, sits, and announces, with great ceremony, “I have brought a poem, and it’s about a hedge.” There’s a collective groan so warm and heartfelt it could be a hymn.`),
+ n(`It’s the best poem about a hedge you’ve ever heard. You can’t say why. It has the line, “And the hedge, that long accused, said only: leaves.” Rhonda blows her nose. Pastor Lou says, “Amen,” and then, uncertain, “To the hedge.”`),
+ n(`The thing you notice, in the circle, is that nobody’s impressed with you. Nobody has read the Gazette. Nobody has a binder. Nobody’s asking you to be a hero, a villain, a lawsuit, or a legacy. You’re a boy with a stone in his pocket and Day Ten written on a chip, in the same ring as a man who’s been sober for thirty-one years and a woman who bakes a casserole for a boy who isn’t coming home.`),
+ n(`When it’s your turn you say: “Theo. Day ten.” The circle says, “Hi, Theo.” That’s all. It’s all it is. It’s a thing so ordinary it is almost an affront. You keep waiting for the part where it gets hard. It doesn’t get hard. It just gets Tuesday.`),
+ n(`On the way out, Del puts a white chip in your hand. It’s a ten-day chip. It has a smudge of flour on it. She doesn’t say anything. She pats your arm twice and moves on, and, over her shoulder, at the door, she says, “Thursday. The hearing. Eat before. Don’t be a hero on an empty stomach.”`),
+ n(`You go out into the cold with the stone in one pocket and the chip in the other, one pound and a half and one ounce, and walk home along Pecan Street under the old sodium lights, and for the first time in a long time you notice that the night is not a thing you’re being chased by. It’s just the night.`),
+ ['go','immy9'],
+];
+
+SC.immy9=[
+ ['act','Wednesday'],
+ fx({sober:1}),
+ slug('INT. IMMY VALE, ESQ. — ABOVE ORTEGA’S DRY CLEANING — WEDNESDAY — 4:30 P.M.'),
+ n(`The shingle outside is still crooked. You can’t fix it. You tried. It’s a rigid, unfixable crooked, the crookedness of a thing that’s been made this way by God.`),
+ n(`Immy Vale’s office is one room. It smells of starch and fresh paint and a very small candle that says it’s lavender but is lying. There’s a desk made of two filing cabinets and a door, a folding chair, a yellow legal pad, a laptop held together with duct tape, and, on the wall, a framed diploma that’s a little too big for the nail. Next to it a handwritten sign: NO, I WILL NOT REPRESENT YOUR FRATERNITY. (SIGNED, THE MGMT.)`),
+ s('immy',`Sit. Sit, sit, sit. I only have the one chair, and Coop is in it.`),
+ n(`Coop is in the chair. Coop is wearing a tie that is a tie in the way a hat on a dog is a hat. He’s holding a legal pad and looking at you with an expression of enormous solemn pride.`),
+ s('coop',`I’m Tau’s lawyer.`),
+ s('immy',`He’s Tau’s lawyer. It’s a mock. We’re doing a mock cross. I can’t afford a real opposing counsel and he volunteered with an enthusiasm that’s going to have to be managed.`),
+ s('coop',`I have been watching Law & Order.`),
+ s('theo',`Which one?`),
+ s('coop',`All of them.`),
+ n(`Immy sits on the desk, one ankle over the other, in a navy suit she’s clearly worn to a funeral and two interviews. She looks at you for a long moment. She’s twenty-six. She’s very tired. She’s a person who has staked a small, clear, unrepeatable thing on the proposition that being right counts.`),
+ s('immy',`I’m going to explain what Thursday is, because you’re going to be in a room for about five hours, and most of it you’re not going to speak. Hear me. Most of it you’re going to sit.`),
+ s('immy',`It’s not a trial. It’s an Ashby Conduct Panel. Two things on the table. One: the college’s review of Sigma Alpha Tau’s charter. Two: your own deferred status, which is Dean Haskell’s ruling, kept open for review. The panel is four people. Interim Dean Marguerite Vance, chair. Dean Haskell, who’s sitting in his last chair. Professor Adeyemi, from Ethics. A student member, Priya Raman, a junior who is, by all accounts, unbribable.`),
+ s('immy',`Tau’s counsel is a man named Rutledge Spence. He’s the kind of lawyer who would sue a thunderstorm for trespass. His fee is paid by Preston Danvers. He’s going to go after Nora. I want you ready for that.`),
+ n(`Something in the way she says it makes the room go quiet. Coop looks at his legal pad.`),
+ s('immy',`Witnesses. Marcus Hale, to talk about the omission. Hunter. Dez, to authenticate the recording from the staircase. Nora Fitch. You’ll be in the room. You’re entitled. You’re not required to speak at all unless the panel asks you something. They’ll ask three questions, maybe four. The rest is theater.`),
+ s('immy',`Your job is to not make it worse. I mean that. A man in your position can, with great effort, make a good day worse by one small sentence.`),
+ n(`Coop clears his throat. He rises. He puts on a pair of drugstore reading glasses that make him look like a startled owl.`),
+ s('coop',`Mr. Whitlock. Isn’t it true that you were holding a cup.`),
+ s('theo',`I was.`),
+ s('coop',`And isn’t it true that you looked at it.`),
+ s('theo',`Yes.`),
+ s('coop',`And isn’t it true that, in the words of the law, you are a, a, a bad person.`),
+ s('immy',`Objection. Argumentative. Also not a legal term.`),
+ s('coop',`Sustained?`),
+ s('immy',`You can’t sustain your own… Coop. You’re opposing counsel.`),
+ s('coop',`I’m very conflicted.`),
+ n(`It’s so stupid, and so tender, and so completely and heartbreakingly on your side, that you start to laugh. It’s a real laugh, a helpless one, with your hand over your face, and Coop, looking at you over the drugstore glasses, begins to beam. “I got a laugh,” he says. “I got a laugh from the witness.”`),
+ s('immy',`Okay. Okay, okay. Serious. Let’s do Spence. I want to try something. He’s going to ask you one thing at the end, because it’s the sort of thing he does. Tell me what you’d say.`),
+ s('immy',`“Mr. Whitlock, you are now in a substance-abuse recovery program, correct? Isn’t it true that your memory of that night in May can’t be relied upon, because you drank to blur it? And isn’t that exactly what you’ve been telling this panel for five weeks?”`),
+ n(`The room is quiet. Coop has taken off the glasses. Immy’s pen is very still.`),
+ ch('It’s a cruel, tidy, effective question. It turns the thing you’ve been doing right into evidence against you.',[
+  o(`“I drank to blur it. I remember it clearly anyway. That’s the problem.”`,{tag:['Heart'],fx:{heart:1,cred:2,'flag:rehearsedHonest':true},led:`Rehearsed with Immy: "I drank to blur it. I remember it clearly anyway. That's the problem."`,then:[s('immy',`Say that again.`),s('theo',`I drank to blur it. I remember it clearly anyway. That’s the problem.`),s('immy',`That’s it. Don’t improve it. Don’t make it prettier. That’s the whole answer. Spence will never be able to lay a finger on that.`)]}),
+  o(`“My memory has been questioned before. The record shows I told the same story the same way every time.”`,{tag:['Wit'],req:['wit',14],fx:{wit:1,cred:1,'flag:rehearsedRecord':true},led:`Rehearsed a precise, record-based answer to a question about your memory.`,then:[s('immy',`That’s smart. It’s also lawyerly. I want you to say it like a person. Say it again, like you’re tired.`),n(`You say it again, tired. It’s better. It’s almost a different sentence. She nods slowly. “That one’s good. It’s true, and it sounds true. Keep the second one.”`)]}),
+  o(`“I don’t answer questions from men who bill by the hour for lying.”`,{tag:['Charm'],req:['charm',20],fx:{charm:1,cred:-1,'flag:rehearsedSnark':true},led:`Rehearsed a snippy answer to Spence; Immy shot it down.`,then:[s('immy',`No.`),s('coop',`I liked it.`),s('immy',`I know you liked it. That’s the problem with it. It’s a good line. It’ll win you a very satisfying forty seconds and cost you the panel. Pick the humble one.`)]}),
+  o(`Stand up and walk out. You’re not doing this.`,{tag:['Nerve 3'],req:['nerve',3],fx:{nerve:1},then:[n(`You stand. You stand all the way up, and the folding chair scrapes, and for one second the room goes electric, and then you sit back down, because you are a person who stays. Immy lets out a breath. “Oh, thank God,” she says. “I was about to be so upset.”`)]}),
+ ]),
+ n(`You work for another two hours. You practice sitting. You practice the water glass. You practice where to look (“At the chair. Not at Spence. Not at Nora. At the chair”). Coop practices a version of Spence that is so unimaginably incompetent that Immy, around nine, takes the legal pad out of his hand and says, gently, “Go home, buddy.”`),
+ n(`Outside, on the stairs, she catches your sleeve. In the light from the dry cleaner’s window, with the steam rising off the vents, she looks, for a second, about nineteen.`),
+ s('immy',`You know she’s going to be in that room. And you know what it’s going to be like for her.`),
+ s('theo',`I know.`),
+ s('immy',`You’re going to want to do something. You’re going to want to stand up, or say something, or look at her in a certain way that says, I’m on your side. Don’t. Not unless she asks. Not unless she looks at you first. It’s not about you. The only thing you get to do is be quiet and be there.`),
+ s('immy',`It’s the hardest thing I’ve ever asked a client to do.`),
+ n(`She lets go of your sleeve. She goes back up the stairs to a room that smells of lavender and starch and one very large, tired hope.`),
+ ['go','dezwren9'],
+];
+
+SC.dezwren9=[
+ slug('EXT. ASHBY MEMORIAL HOSPITAL — PARKING LOT — WEDNESDAY — 8:12 P.M.'),
+ n(`Dez is waiting by the Buick. Not the Buick; his own sad Corolla. He’s leaning against the hood in a coat too thin for the weather, with a Styrofoam cup of vending-machine cocoa and the look of a man who has been wanting to say something for some time and has finally found out how.`),
+ s('dez',`I went to see her.`),
+ s('theo',`I know. I’m glad.`),
+ s('dez',`I have news. I’m going to give you the news, and I need you not to read into it. You’re going to want to read into it.`),
+ s('theo',`I won’t.`),
+ s('dez',`You will.`),
+ n(`He takes a breath. He turns the cup in his hands.`),
+ s('dez',`She said a word.`),
+ n(`Something moves in your chest, a small, startled bird in a very large room. You keep your face still. It’s the hardest thing you’ve done all week.`),
+ s('theo',`What word?`),
+ s('dez',`The speech therapist was doing flash cards. A cup. A dog. A tree. A spoon. She’d been stuck for six days. Then they put up a card of a pen. And Wren looked at it for about a minute. And she said, very clearly, like she’d just been waiting for the right one, “Pen.”`),
+ s('dez',`And then she looked at the therapist, and she said, “Stupid.”`),
+ n(`You laugh. It comes out of you like a seat belt snapping. You press the heel of your hand against your mouth. Your eyes sting. It’s the most Wren thing you’ve ever heard.`),
+ s('dez',`The nurse said it’s three more words than yesterday.`),
+ s('theo',`Did she say anything about, did she, was there anything else?`),
+ s('dez',`You said you wouldn’t.`),
+ s('theo',`I’m not. I’m asking about her.`),
+ s('dez',`She asked for a pad. She’s been writing. She won’t let anyone see it. She tore up eleven pages while I was there. She looked at me, and for a second I thought she was going to say something, and then she picked the pen back up and tried again.`),
+ n(`He looks at you for a long moment. He’s not unkind.`),
+ s('dez',`I told her you were doing a thing, you were going to a thing on Tuesdays. I didn’t say what. She nodded. She went kind of still. And then she said, in this tiny, ruined voice, “Good.”`),
+ n(`The wind comes across the parking lot. The sodium lights buzz. A nurse at the far entrance lights a cigarette and exhales a long white ribbon into the dark.`),
+ ch('Wren’s first word was “Pen.” Her second was “Stupid.” Her third, you’ve now learned, was “Good.”',[
+  o(`Hand Dez the strip. “For her. When she’s ready. No pressure. No hurry.”`,{tag:['Heart'],show:()=>G.flags.stripToDez,fx:{heart:1,'rel.dez.trust':1,'rel.wren.trust':1,'flag:handedStrip':true},led:`Gave Dez the photo strip of Wren and Nora to carry to Wren.`,then:[n(`He takes the envelope, and holds it a moment. He doesn’t open it. “She’ll know,” he says. “I’ll tell her it came from someone who’s thinking before they act.” It’s the first time he’s ever said anything like a compliment about you, and then he adds, “Don’t get used to it.”`)]}),
+  o(`“Tell her it’s okay to take her time. All of it.”`,{tag:['Honesty'],fx:{'rel.wren.trust':1,'flag:sentWrenTime':true},then:[s('dez',`I’ll tell her. She’ll throw something at me.`),s('theo',`Probably a pen.`),s('dez',`Probably “pen.” Out loud.`)]}),
+  o(`“Can I come with you? Just to the door.”`,{tag:['Avoid'],fx:{'rel.dez.trust':-1,'rel.wren.desire':1,'flag:askedHospital':true},then:[s('dez',`No.`),s('dez',`Not because I don’t believe you. Because she hasn’t asked. And right now, that’s the only vote that counts.`),n(`He says it with something in his face you can only describe as love for both of you. It lands like a clean, small, deserved slap. “Thursday,” he says, getting into the Corolla. “Be a person.”`)]}),
+ ]),
+ n(`He drives away. You stand in the lot, a boy with a stone and a chip and a pen and a word, under a night full of starless clouds, with the lit third-floor window across the lot where somebody, right now, is tearing a page in half.`),
+ n(`It’s Day Eleven. Tomorrow is Thursday.`),
+ ['go','hearing9'],
+];
+
+
+/* ---- thursday: the hearing ---- */
+SC.hearing9=[
+ ['act','Thursday · The Hearing'],
+ fx({sober:1}),
+ slug('INT. ASHBY MEMORIAL HALL — FACULTY SENATE ROOM — THURSDAY — 9:00 A.M.'),
+ n(`The Faculty Senate Room is the most expensive room in Marlowe Springs and the least comfortable. Dark paneling. A coffered ceiling. Eleven portraits of dead white men in black robes, hung at the precise height that makes every one of them look down their nose at you. A long mahogany table at the front, with four chairs and four nameplates. A lectern. A court reporter, in the corner, with a steno machine and the face of a person who has heard it all and is about to hear a little bit more.`),
+ n(`You ate before. Del was right. Three eggs, a piece of toast, and a glass of orange juice that Coop made, with enormous ceremony, from an actual orange. The stone is in your left pocket. The chip is in your right. Your tie is a gift from Savannah-Claire, in a deep, plain burgundy, and you are aware, as you sit in your chair at the long side table under the eye of the second-oldest founder, that you have never in your life looked more like a person in a photograph.`),
+ n(`The gallery has filled. It’s a closed hearing, with an allowance of nineteen chairs, and the nineteen are taken. Savannah-Claire in white, in the front row, as promised, with her chin up and her hands folded. Dez with his recorder and a legal pad. Coop in the tie. Jalen, behind them, in the suit his grandmother picked. Chip Rennick, with a binder, a laser pointer, and a face of intense, thwarted ambition, who has been appointed, God help the college, as the Student Government’s observer. In the back row, in a gray suit that has seen four hundred hearings, with a thermos and a legal pad, sits Judge Crenshaw, who is not on the list, and who has quietly, without any discussion, become furniture.`),
+ n(`Across the aisle, in a row of expensive-looking people, sits Harlan Prescott-Lowe, in a three-piece suit, with his hands crossed on a silver-headed cane. Two seats down is Preston Danvers, Colt’s father, tall and silver and perfect, with a face like a closed door. And at the lectern, arranging papers, in a charcoal suit and a very slightly crooked pocket square, a man in his sixties with the air of a very comfortable, very well-fed shark: Rutledge Spence, of Spence & Spence, Attorneys-at-Law. He turns, finds you, and gives you a long, gracious, entirely empty smile.`),
+ n(`The door at the side opens. Everybody stands.`),
+ n(`Interim Dean Marguerite Vance enters first. She’s fifty, tall, in a dark suit with a plain gold pin, with silver in her hair that she hasn’t bothered to hide. She walks like a woman who has crossed a great many rooms to a great many verdicts and has never once been late. She’s followed by Professor Adeyemi, a slim, gray, watchful man in a bow tie; by Priya Raman, a junior in a blazer and glasses, young and steady and perfectly unflappable; and, last, a little more slowly, with his cane, in the suit he’s worn to every hearing for thirty-one years, Dean Haskell, who catches your eye from the end of the table and gives you, with infinite care, a nod.`),
+ s('vance',`Be seated.`),
+ s('vance',`This is the review panel of the Ashby College Office of Student Conduct, convened under Section Nine of the Code. It has two matters before it: the continued recognition of Sigma Alpha Tau, and the deferred status of the student Theodore Whitlock. This is not a criminal proceeding. The standard is the preponderance of the evidence. The rules of evidence do not strictly apply, and I will not allow them to be used as a weapon.`),
+ s('vance',`Mr. Spence. Do you have an opening statement?`),
+ s('spence',`I do, Madam Chair.`),
+ n(`He rises. He buttons his jacket. He lays his hand on the lectern like a man laying a hand on a Bible.`),
+ s('spence',`This is a good college. It’s a good town. Sigma Alpha Tau is a one-hundred-and-forty-year-old fraternity that has given Ashby seven governors, three federal judges, and a very fine tradition of Christmas carols. It has been tried, in the last six weeks, in the newspapers, by a mob of the unqualified. My clients ask for a fair proceeding, for the presumption of fairness every institution is owed, and for the quiet, patient, unglamorous operation of the rules.`),
+ s('spence',`They do not ask for mercy. They ask for process.`),
+ n(`It’s smoothly done. It’s so smooth it almost works. You can feel the back row of the gallery, Harlan, Preston, the row of expensive people, settle, like cats on a warm sill. Beside you Immy, in her only suit, doesn’t move.`),
+ s('vance',`Thank you, Mr. Spence. Ms. Vale, for the student?`),
+ s('immy',`Briefly, Madam Chair. My client will say what he has said. He will say it plainly. He asks only that the record reflect it.`),
+ s('vance',`So noted. We’ll begin with Mr. Hale.`),
+ slug('MARCUS HALE'),
+ n(`He comes down the aisle with the tight stride of a man being walked to a scaffold in a very good suit. Marcus Hale, who was, for six weeks, your lawyer, and whose careful sentence did you more harm than the truth ever could. He’s lost weight. He’s lost something else, too. He sits in the witness chair, folds his hands, and looks, for a long, level moment, at you. It isn’t an apology. It’s the look of one professional examining another’s work and finding it, to his own surprise, better than his.`),
+ s('vance',`Mr. Hale. You advised Mr. Whitlock in his first statement to this office.`),
+ s('marcus',`I did.`),
+ s('vance',`And that statement was, in your own later words, materially incomplete.`),
+ s('marcus',`It was. It said nothing false. It left out the one thing that mattered, and I wrote the sentence that did it. I’d like the record to say I did it. He didn’t.`),
+ n(`A flicker passes through the gallery. Spence has half-risen and sits again, as though a small unseen animal had bitten him in the leg.`),
+ s('vance',`Why are you telling us this?`),
+ s('marcus',`Because I’ve been practicing law for twenty-two years, Madam Chair. And a week ago a boy in a burgundy tie stood on a staircase in front of two hundred people and told the truth against the advice of everyone he’d ever paid. It got me thinking that I might be able to do it once.`),
+ n(`You look at your hands. Beside you, so quietly nobody else can hear, Immy lets out a long breath through her nose.`),
+ ch('Marcus is testifying against his own sentence. He is, for the first time in the six weeks you’ve known him, being a person.',[
+  o(`Look at him. Nod once.`,{tag:['Heart'],fx:{heart:1,'flag:nodMarcus':true},then:[n(`You nod. He sees it. He doesn’t nod back. He closes his eyes, briefly, for about the length of one breath, and opens them. It’s the whole conversation. When he stands, and passes you on the way out, he says, without turning his head, in a voice like a pressed leaf, “You’re welcome.” It’s the first time he’s ever said it. It’s the first time he’s ever been right.`)]}),
+  o(`Look at the chair. Like you were told.`,{tag:['Restraint'],fx:{cred:1,'flag:obeyedImmy':true},then:[n(`You look at the chair. It’s a very ordinary chair. It’s oak, with a worn seat, and the finish on the left arm has been rubbed through to bare wood by about a century of other people’s nerves. You study the grain. You can feel him pass.`)]}),
+ ]),
+ slug('HUNTER'),
+ n(`They call Hunter next. He comes down the aisle in a gray suit that doesn’t fit him, with a haircut he plainly gave himself. He passes his father without turning his head. Harlan’s knuckles whiten on the silver head of the cane.`),
+ s('vance',`Mr. Prescott-Lowe. You were rush chair of Sigma Alpha Tau.`),
+ s('hunter',`I was.`),
+ s('vance',`In that capacity, were you aware of any conduct, by members of the chapter, at the lake house on the weekend of May the third, that you believed to be improper?`),
+ n(`He looks at Spence. Spence gives him a small, warm, fatherly shake of the head: a don’t. He looks at Harlan, in the third row. Harlan’s face is a hard, calm, ancient mask. Then he looks, for a very long moment, at you. You have no idea what he sees.`),
+ s('hunter',`I was aware that a girl had been taken upstairs by a brother who’d been told to bring her down. I was aware that nobody went after them. I was aware that every one of us, including me, was holding a cup and agreeing, with our faces, that we had somewhere to be.`),
+ s('hunter',`It’s the thing we’re best at. It’s the whole Charter. I used to think it was loyalty.`),
+ n(`The room has gone very quiet. Spence has stood. Vance lifts one finger without looking at him, and he sits.`),
+ s('hunter',`My father is in the room. He taught me that you don’t say it out loud. I’d like to say it out loud, sir, once, in front of him. We knew. We all knew. And I’m sorry.`),
+ n(`He turns his head. For the first time since he sat down, he looks at his father. Harlan Prescott-Lowe, three-piece suit, silver cane, four generations of unbroken brothers, looks back at his son, and something in his face that’s been shut since 1982 shifts a quarter of an inch on its hinge, and he lowers his eyes and sits very still, and does not say a word.`),
+ n(`It’s the most devastating silence you’ve ever heard.`),
+ ch('Hunter walks back to his seat, alone, with the back of a boy who’s just taken off a heavy coat.',[
+  o(`Meet Hunter’s eye. Give him nothing but the look.`,{tag:['Heart'],fx:{heart:1,'rel.hunter.trust':3,'flag:hunterEye':true},then:[n(`You meet his eye. You don’t smile. You don’t nod. You look at him as one person looks at another across a very long distance. He sees it. His shoulders drop an inch. It’s the first time, in nine weeks, that Hunter Prescott-Lowe has looked at you without a request in his face.`)]}),
+  o(`Stay still. It’s his moment, not yours.`,{tag:['Restraint'],fx:{'rel.hunter.trust':1,cred:1},then:[n(`You stay still. It’s the right thing to do. It’s also, you realize, the most cowardly easy thing you could do, and you hold both facts in your head at once, like two weights in the same hand.`)]}),
+ ]),
+ slug('THE RECORDING'),
+ n(`Dez authenticates the recording. He’s twenty-two minutes of calm and legal-pad accuracy. He plays the staircase for the room: four minutes and eleven seconds, a hundred and forty voices, the long awful hush, and a boy’s voice, yours, hoarse and young and even, saying a plain, ugly sentence into a silence that’s going to last the rest of his life.`),
+ n(`Hearing your own voice in a room full of strangers is a thing you’ll remember on your deathbed. You sit with your back against the oak and your hands between your knees and let it go through you.`),
+ s('theo',`I saw Nora Fitch go up the stairs, and I looked at my cup.`),
+ n(`The recording ends. Nobody speaks. In the front row, Savannah-Claire has closed her eyes. In the back row, Judge Crenshaw has stopped writing.`),
+ s('vance',`Thank you. Please call Miss Fitch.`),
+ n(`And then she’s there.`),
+ slug('NORA'),
+ n(`She doesn’t come down the aisle. She’s been sitting, all morning, at the very front of the gallery, in the only chair on the far left, alone, in a gray coat. She stands. She lays the coat across the back of the chair. Underneath it she’s in a plain navy dress. Her hair is pulled back. She’s wearing no jewelry at all. She walks forward the nine paces to the witness chair and sits down in it as you’d sit in a doctor’s office to be told a thing you’ve known for weeks.`),
+ n(`She has not looked at you. She doesn’t now. It’s as if you were a piece of furniture.`),
+ s('vance',`Miss Fitch. I want to say before we begin that you may stop at any time. You may ask for a recess. You may ask that any question be rephrased or withdrawn. I will not permit anyone in this room to make you regret coming.`),
+ s('nora',`Thank you.`),
+ s('vance',`In your own words.`),
+ n(`She takes a breath. She folds her hands in her lap. When she speaks, her voice is quiet and level and carries very well, and she doesn’t cry. She says it once. She says it plainly. She says it in order.`),
+ s('nora',`I went to the lake house on the third of May with my sister, who was a guest of a friend. I had two drinks. I’m telling you the number because I know you’ll want it, and because I counted. I went upstairs with a boy I knew from a class. I said no. I said it twice. I’m sure of that. I’m sure of one other thing.`),
+ n(`She doesn’t look at you. Her eyes are on a portrait of a dead man over Vance’s shoulder.`),
+ s('nora',`The next morning a brother of Sigma Alpha Tau brought me a cup of coffee and a card. The card said, “We’re all so sorry you were upset.”`),
+ n(`A sound goes through the room, small and furious, like a wire being pulled. Savannah-Claire’s hand has gone to her mouth.`),
+ s('nora',`I’ve kept it. It’s in an envelope. I’d like to enter it into the record. It was signed by eleven of them. I’d like you to look at the signatures. Some of them are at this table.`),
+ n(`It’s a plain card, cream-colored, in the neat round hand of a boy who learned penmanship from a nun. She hands it to the court reporter, who hands it up. Vance reads it. She passes it to Professor Adeyemi. He reads it. He puts it down and takes off his glasses, and rubs the bridge of his nose, and says nothing.`),
+ n(`Dean Haskell reads it last. He holds it for a long time. His face is gray. He puts it down with the care of a man putting down something that could go off.`),
+ s('vance',`Mr. Spence. Your witness.`),
+ slug('THE CROSS'),
+ n(`He takes his time. He’s very good. He rises slowly, buttons his jacket, comes round to the front of the lectern, and stands with his hands folded in front of him, like a country doctor at a bedside.`),
+ s('spence',`Miss Fitch. First, let me say how deeply sorry I am. For what you went through. For the, for the whole sad business.`),
+ s('nora',`Thank you.`),
+ s('spence',`You’d been drinking.`),
+ s('nora',`Two drinks.`),
+ s('spence',`Two that you remember.`),
+ s('nora',`Two that I counted.`),
+ s('spence',`You went upstairs. Voluntarily.`),
+ n(`The room tightens. You can hear the court reporter’s keys, a small, dry, merciless sound.`),
+ s('nora',`I went upstairs willingly. Yes.`),
+ s('nora',`I’m willing to go upstairs. That’s not what you’re asking me, Mr. Spence. You know it’s not.`),
+ s('spence',`And you were wearing, I believe, a yellow dress.`),
+ n(`Beside you Immy rises, an inch off the chair. “Objection,” she says, in a clear small voice. “Relevance. And decency.”`),
+ s('vance',`Sustained. Mr. Spence. Do you have a purpose for that question?`),
+ s('spence',`Merely establishing the scene, Madam Chair.`),
+ s('vance',`The scene is established. Move on.`),
+ ch('Spence is circling. He’s going to keep going. Nora hasn’t moved. She’s looking at the dead man in the portrait.',[
+  o(`Stay in your seat. Say nothing. Do what you were told.`,{tag:['Restraint'],fx:{cred:1,'rel.nora.trust':1,'flag:stayedSeated':true},led:`Stayed in your seat and kept quiet while Spence cross-examined Nora, as Immy told you to.`,then:[n(`You don’t move. Your hands are fists between your knees. You count the portraits (eleven), the panes in the windows (thirty-six), the tiles in the coffered ceiling (a number you lose). It is the single hardest piece of nothing you’ve ever done. Immy, beside you, has a hand on your wrist. You can feel the pulse in it.`)]}),
+  o(`Look at Nora. Just look. Let her know you’re there.`,{tag:['Heart'],fx:{heart:1,'rel.nora.trust':-1,'flag:lookedAtNora':true},led:`Looked at Nora during Spence's cross-examination, against Immy's advice.`,then:[n(`You look at her. You don’t mean anything by it. You mean everything by it. She feels it. Her eyes slide off the portrait and, for the first time all day, flick to yours: a quick, flat, level look, with no gratitude in it, and no anger, and something that is, you think, very much like a request.`),n(`She shakes her head. Once. Very slightly. Eyes back on the portrait. It’s not for you. It’s not about you. You drop your eyes to the oak and stare at the grain, hot to the ears. Immy’s hand tightens on your wrist. Message received.`)]}),
+  o(`Stand up. “This is outrageous. Somebody has to say it.”`,{tag:['Nerve 3'],req:['nerve',3],fx:{nerve:1,cred:-2,'rel.nora.trust':-2,'flag:objectedSpence':true},then:[n(`You stand. You say the thing. It’s true. It’s loud. It’s righteous. Every face in the room swivels to you, and, in the witness chair, Nora closes her eyes. And you understand, in a long rolling slow-motion instant, that you have just taken her moment and made it yours, again, in public. Vance’s gavel comes down once. “Mr. Whitlock. Sit.”`)]}),
+ ]),
+ s('spence',`Miss Fitch. One more. You’ve been in contact with Mr. Whitlock since the lake house?`),
+ n(`The room is so quiet you can hear the radiator tick.`),
+ s('nora',`Once.`),
+ s('spence',`When was that?`),
+ s('nora',`On the porch of a house on a Friday night. He told me what he’d seen. All of it. In order. He didn’t improve it. He didn’t ask me for anything.`),
+ s('spence',`And what did you say?`),
+ s('nora',`I told him I didn’t forgive him.`),
+ s('spence',`Is that all?`),
+ n(`She turns her head. For the first time since she sat down, she looks at you, directly, steadily, in front of everyone: eyes dark, level, clear and completely unafraid.`),
+ s('nora',`No. I told him to go. And he went.`),
+ s('nora',`I want that on the record, too. In nine weeks, it’s the only thing anyone in this room has done that I asked.`),
+ n(`She looks back at Spence. He opens his mouth. He closes it. Beside him, Preston Danvers’s face has gone from closed to locked.`),
+ s('spence',`No further questions.`),
+ n(`She stands. She picks up her coat. She walks back to the chair at the end of the front row, alone, with her back straight and her chin at a precise, unforced angle. When she sits, the Dean, at the end of the panel table, stands up. Nobody’s asked him to. He stands, and holds the stand, in silence, with his hand on his cane, for the length of one long breath, and then, slowly, sits again. In the second row Savannah-Claire stands. Then Dez. Then Coop, with his tie askew. Then, one by one, in the awful hush, a quarter of the gallery.`),
+ n(`It isn’t applause. It’s something older.`),
+ s('vance',`Be seated, please. Recess. Fifteen minutes.`),
+ ['go','recess9'],
+];
+
+SC.recess9=[
+ slug('INT. MEMORIAL HALL — CORRIDOR — 12:14 P.M.'),
+ n(`The corridor outside the Faculty Senate Room is wide and cold and marble-floored, with a long row of tall windows onto the quad and a drinking fountain that’s been broken since the Eisenhower administration. The gallery spills into it in knots, murmuring. You stand against the wall by the fountain. Your tie feels like a rope. Your hand is in your left pocket, around the stone.`),
+ n(`Judge Crenshaw, in the middle of the corridor, with his thermos in one hand, is arguing with a campus security officer the size of a refrigerator.`),
+ s('judge',`I’m a sitting judge of the Superior Court of Hale County.`),
+ s('cletus',`Sir, it’s a closed hearing. You’re not on the list.`),
+ s('judge',`I’m not in the hearing. I’m in a hallway. A hallway has been public space since before the Magna Carta.`),
+ s('cletus',`You were in the back row.`),
+ s('judge',`I was resting.`),
+ s('cletus',`With a legal pad.`),
+ s('judge',`I rest professionally.`),
+ n(`The officer sighs, a very large, very weary sigh. “Judge,” he says, with enormous gentleness, “I’m going to have to ask you to rest in the vestibule.” The Judge looks at him for a long moment. “I outrank this building,” he says, with great dignity. Then he takes his thermos and goes and rests in the vestibule.`),
+ n(`A small hand touches your sleeve. It’s Priya Raman, the student member of the panel, in her blazer, with a bottle of water. She’s five-foot-two and has the unblinking calm of a person who’s been told since she was six that she is the smartest in the room. She holds out the water.`),
+ s('priya',`You’re doing well. You’re not doing anything, which is the right thing to be doing. I thought you should know.`),
+ s('theo',`I’m not supposed to talk to you.`),
+ s('priya',`You’re not. I’m not talking. I’m handing you water.`),
+ n(`She goes. You drink the water. It’s the best water you’ve ever tasted. Down the corridor, outside the bathroom doors, you can see the long gray figure of Nora standing at a window with her back to the room, with her arms folded, looking out at the quad. Savannah-Claire is standing about fifteen feet from her, not approaching, not leaving: a white column, keeping watch.`),
+ ch('Nora is at the window. Nobody’s near her. Immy’s voice is in your head: Not unless she looks at you first.',[
+  o(`Leave her alone. It’s not about you.`,{tag:['Restraint'],fx:{'rel.nora.trust':2,cred:1,'flag:leftNoraAlone':true},then:[n(`You stay where you are. You watch her back through the long tall windows, in the pale noon light, and you let her be a person and not a scene. After a minute, Dez, with two cups of coffee, goes up to her and offers one without a word. She takes it. They stand there together without speaking, looking at the quad. It’s the loveliest thing you’ve seen all week, and you’re not in it.`)]}),
+  o(`Go to her. Say you’re sorry she had to do that.`,{tag:['Heart'],fx:{'rel.nora.trust':-2,'flag:approachedNora':true},then:[n(`You get about six paces. She doesn’t turn. Without looking, in a very low, very clear voice, she says, “Don’t.” It’s one word. It lands like a door shutting in a long corridor. You stop. You stand there with your hands at your sides, in the middle of the marble, and say, “I’m sorry,” to nobody, and walk back to the wall. Savannah-Claire looks at you across the hall with an expression that is, you think, the beginning of pity. It’s a clause.`)]}),
+ ]),
+ ['go','questions9'],
+];
+
+SC.questions9=[
+ slug('INT. FACULTY SENATE ROOM — 1:02 P.M.'),
+ n(`When the panel reconvenes the room has changed. It’s subtle. It’s a thing like a pressure drop. Spence has stopped smiling. Preston Danvers has crossed one leg over the other with a very small controlled motion, like a man who has just been told what the bill is. Vance sits at the center of the table with her hands flat on the wood.`),
+ s('vance',`Mr. Whitlock. The panel has a few questions. You may answer or decline. You’re not required to say anything. Do you understand?`),
+ s('theo',`I do.`),
+ s('vance',`You were present in the lake house on the night of May the third.`),
+ s('theo',`Yes.`),
+ s('vance',`Did you see Miss Fitch go upstairs with Mr. Danvers?`),
+ s('theo',`Yes, ma’am.`),
+ s('vance',`What did you do?`),
+ ch('It’s the question. It’s the only question. You’ve been answering it, in some form, for nine weeks.',[
+  o(`“I looked at my cup. I did nothing.”`,{tag:['Honesty'],fx:{heart:1,cred:3,'flag:answeredPlain':true},led:`When the panel asked what you did, answered: "I looked at my cup. I did nothing."`,then:[n(`Four words in a room full of people. You say them to the chair. It’s the shortest sentence of your life. It’s so plain it almost isn’t a confession at all: it’s just a fact, laid on the table like a coin.`),n(`In the gallery, a man in the back row blows out a long breath.`)]}),
+  o(`“I did nothing. I was nineteen drinks into being a coward. It’s not an excuse. It’s the explanation.”`,{tag:['Wit'],req:['wit',14],fx:{wit:1,cred:1,'flag:answeredWit':true},led:`Told the panel you were nineteen drinks into being a coward, "not an excuse, an explanation."`,then:[n(`It’s a good line. You hear it as it leaves your mouth, and you hear that it’s a good line, and that’s the problem. Professor Adeyemi’s eyebrows go up half an inch. “Nineteen?” he says. “I’d thought it was fewer.” “It’s a figure of speech, sir.” “So it is.” He writes something. You’d bet your life it’s the word “polish.”`)]}),
+  o(`“I should have said something. I should have gone after them. I’ve thought about it every day.”`,{tag:['Heart'],fx:{heart:1,cred:2,'flag:answeredShould':true},then:[s('vance',`That’s not what I asked you. I asked what you did.`),s('theo',`Nothing. I did nothing.`),s('vance',`Thank you.`),n(`She says it kindly. It’s a lesson you’ll learn a thousand times: the word “should” is where a person hides.`)]}),
+ ]),
+ s('adeyemi',`If I may, Madam Chair. Mr. Whitlock. You said it, at the staircase, a week ago. You had every chance to say it in May. In June. In the fall. Why now?`),
+ n(`He’s not hostile. He asks it the way a doctor asks where it hurts. It’s the question you’ve been dreading most, because it has no flattering answer.`),
+ ch('Why now? You’ve been asked it, in one form or another, by Wren, by Josie, by Nora, by a mirror.',[
+  o(`“Because somebody made it cost less than staying quiet. And because I was tired of looking at a cup.”`,{tag:['Honesty'],fx:{heart:1,cred:2,'flag:whyNowPlain':true},then:[s('adeyemi',`That’s an honest answer, and a not very flattering one.`),s('theo',`I’m trying to stop giving the flattering ones.`),n(`He regards you for a moment over the half-moon of his glasses. “So I gather,” he says, and makes a note you can’t read.`)]}),
+  o(`“I don’t have a good answer. I’d rather give you no answer than a clean one.”`,{tag:['Restraint'],fx:{cred:2,'flag:whyNowNone':true},then:[s('adeyemi',`Thank you. I’ve sat on this panel eleven years. Most students have an answer.`),n(`He looks, for a second, almost sad.`)]}),
+  o(`“Because of a girl who told me that doing nothing was a choice.”`,{tag:['Charm'],fx:{charm:1,'rel.wren.desire':1,cred:0,'flag:whyNowWren':true},then:[s('adeyemi',`A girl.`),s('theo',`A friend.`),s('adeyemi',`I see.`),n(`He writes. Somewhere in the second row Savannah-Claire’s mouth makes a small, brisk, speculative movement. Beside you, Immy, without moving a muscle of her face, communicates a pure, silent, withering: don’t.`)]}),
+ ]),
+ s('vance',`Last question. Mr. Whitlock, since the staircase, has anyone, Sigma Alpha Tau, any alumnus, any member of your family, any counsel, asked you to change, soften, or withdraw your account?`),
+ n(`It’s asked lightly. It isn’t light. You can feel the whole room feel it, like a change in the weather. Spence has stopped writing. At the far end of the front row, Preston Danvers is looking at the floor, with the absolute stillness of a man holding his breath.`),
+ ch('The honest answer, today, is no.',[
+  o(`“No, ma’am. Not yet.”`,{tag:['Honesty'],fx:{cred:1,'flag:vanceNotYet':true},led:`Told the panel no one had yet asked you to soften your account. "Not yet."`,then:[n(`It comes out before you’ve thought about it. Not yet. Two words. It hangs over the room like a smell of rain. Vance’s eyes narrow, a hair. Spence looks at his hands. And far down the row, a man in a beautiful suit very slowly, very carefully, closes his eyes.`),s('vance',`Thank you. We’ll note the “yet.”`)]}),
+  o(`“No, ma’am.”`,{tag:['Restraint'],fx:{cred:1,'flag:vanceNo':true},then:[s('vance',`Thank you. If anyone does, I’d like to hear about it. At any hour.`),n(`She says it to you and looks, for just a moment, past you, down the row.`)]}),
+ ]),
+ n(`That’s all. That’s it. It’s twelve minutes, from start to finish. You’ve been to the dentist for longer. You sit back. Immy, beside you, doesn’t say a word. She just lays her small, cool, ink-stained hand on the table, an inch from yours, for about the length of a heartbeat, and takes it away.`),
+ s('vance',`The panel will deliberate. We’ll have a written decision within ten days. We are adjourned.`),
+ n(`She brings the gavel down. It’s a small, plain, ordinary sound. It’s the end of nine weeks. It’s the beginning of something you don’t have a word for.`),
+ ['go','after9'],
+];
+
+SC.after9=[
+ ['act','Thursday Night'],
+ slug('EXT. ASHBY MEMORIAL HALL — STEPS — 3:40 P.M.'),
+ n(`You come out into an afternoon so bright it hurts. It’s one of those early-spring Georgia days when everything is yellow and loud and every bird in the county is shouting about it: the quad exploding in dogwoods, the white Greek columns of the Memorial Hall steaming faintly in the sun, a lone sprinkler ticking on the lawn like a very small and optimistic clock.`),
+ n(`The gallery has gone. Savannah-Claire, on the way out, paused beside you and did a thing she has never done: she put her gloved hand flat on your sleeve, held it for exactly one second, and said, “Your father ought to have been here.” Then she went down the steps with the pearls at her throat and her chin at its exact height, and didn’t look back.`),
+ n(`Coop has a hot dog. You don’t know where he got it. You don’t ask. He holds it out, silently, with enormous gravity, and you take a bite. It’s a very good hot dog. It’s the first thing you’ve tasted all day.`),
+ n(`At the bottom of the steps, at the edge of the quad, in the shade of a dogwood, leaning on the fender of a green 1998 Buick LeSabre with a plastic goose on the dashboard, with her arms folded and a white paper bag in one hand, is Josie.`),
+ n(`She isn’t supposed to be here. It’s a closed hearing. She’s taken the afternoon off, which she has not done in a year, and she’s driven twenty minutes in a Buick that gets four miles to the gallon to stand under a tree and not ask. She doesn’t wave. She doesn’t smile. She just looks at you, from forty yards, with that level, steady, patient gaze, and lifts the white bag an inch, the way you’d lift a glass.`),
+ n(`It’s a pie. You know it’s a pie. You’d know it blindfolded.`),
+ ch('Coop, with a mouthful of hot dog, mumbles, “Go.” Dez, beside him, is looking at the sprinkler with great interest. The whole quad is, very lightly, pretending to be elsewhere.',[
+  o(`Walk across the lawn. Don’t run. Let her see you come.`,{tag:['Heart'],fx:{heart:1,'rel.josie.trust':2,'rel.josie.home':2,'flag:walkedToJosie':true},then:[n(`You walk across the lawn. It takes a long time. It’s forty yards, and every one of them is a different day of the last nine weeks. When you reach her she doesn’t say anything. She puts the white bag in your hands. It’s warm. Inside is a slice of pie in a foil tin, still hot, and a plastic fork, and a note on a napkin in her small square print: YOU WERE THE ONE WHO DID NOT RUN. EAT.`)]}),
+  o(`Run to her.`,{tag:['Charm'],fx:{charm:1,'rel.josie.desire':2,'flag:ranToJosie':true},then:[n(`You run. You can’t help it. You’re a boy in a burgundy tie and a borrowed suit sprinting across the Memorial lawn in front of the entire gallery of a closed hearing, and Coop makes a noise like a man witnessing a birth. You arrive winded and grinning. She laughs, an abrupt delighted bark, and says, “You look like a golden retriever in a wedding.” Then she kisses you, once, hard, in front of the quad, with her back against the Buick and the bag crushed between you. Somewhere, a sprinkler sneezes.`)]}),
+ ]),
+ s('josie',`How was it?`),
+ s('theo',`I said four words and a figure of speech.`),
+ s('josie',`How did Nora do?`),
+ s('theo',`She was the best person in the room.`),
+ s('josie',`Yeah.`),
+ s('josie',`I thought she might be.`),
+ n(`She slides her arm through yours, and you walk, slowly, across the lawn toward the Buick, past the dogwoods and the sprinkler and a pair of squirrels having an argument about acorn jurisdiction. The pie is warm against your ribs. The stone is in your pocket. The sun is on the back of your neck like a hand.`),
+ s('josie',`Come on. I’m taking you somewhere. It’s not far.`),
+ ['go','porch9'],
+];
+
+SC.porch9=[
+ slug('EXT. WHITLOCK RENTAL, MORROW STREET — THURSDAY — 9:20 P.M.'),
+ n(`She takes you to the house on Morrow Street. It isn’t a mystery. It’s the closest place with a door. Coop has left a note on the fridge: GONE TO MACON AGAIN!!! AM A SPEAKER NOW. BACK SUNDAY. DID NOT LEAVE THE SANDWICH. YOU’RE WELCOME.`),
+ n(`The two of you sit on the porch swing with the second half of a pie between you and two forks. It’s the sort of Georgia night they print on postcards: warm, soft, close, with a thousand frogs in the ditch and a moon like a coin and an owl somewhere declaiming. The porch light has a halo of moths. She has her feet tucked up under her, her shoes on the boards, her hair coming down.`),
+ n(`You tell her about the hearing. All of it. Marcus and his sentence, Hunter and the silence, Nora and the card. She listens with her chin on her knees. When you get to the end, to Nora’s last line, in the front row of the gallery, “In nine weeks, it’s the only thing anyone in this room has done that I asked,” she lets out a long slow breath and says, very softly, “God.”`),
+ s('josie',`I’m glad I wasn’t in the room. I’d have thrown a chair.`),
+ s('theo',`At Spence?`),
+ s('josie',`At everyone. At the paneling.`),
+ n(`She’s quiet for a time. The swing creaks. A moth gives up on the porch light and tries your ear.`),
+ s('josie',`Eleven days.`),
+ s('theo',`Eleven.`),
+ s('josie',`I counted. I’m not supposed to. I’m not a person who gets to count. I did it in the shower and it felt like something I’d stolen.`),
+ s('theo',`You can count.`),
+ s('josie',`Okay.`),
+ s('josie',`Hey.`),
+ s('theo',`Yeah?`),
+ s('josie',`I’m going to kiss you now, and I’m going to want to keep going, and I’m going to need you to say so if you don’t, and I’ll do the same. That’s the fifth rule. It’s not on the list. It’s the fifth rule.`),
+ n(`She doesn’t wait for the answer. She puts the pie on the porch boards and the fork on the pie. She turns, in the swing, so that her knees are against your thigh. She puts one hand flat on your chest, on the burgundy tie you’ve been wearing since seven this morning, and looks at you from six inches. In the moth-light her eyes are dark and clear and full of an enormous, serious, tender intention.`),
+ ch('The porch swing creaks. She has asked a plain question. She’s waiting for a plain answer.',[
+  o(`“Yes. I want that. I want to keep going.”`,{tag:['Honesty'],fx:{'rel.josie.desire':3,'rel.josie.trust':1,'flag:porchYes':true},then:[
+    n(`It’s a very different kiss from the back steps. It’s slower. It’s warm. It tastes like blackberry pie and the long end of a very hard day. Her hand goes up out of the tie and into the hair at the back of your neck, and your hand finds the small of her back through her Blue Plate sweatshirt, and the porch swing, which has been there since 1962, groans like a ship at anchor.`),
+    n(`She moves. She does it all at once, unhurried, matter-of-fact, the way she’d cross a kitchen: she swings a knee over, and settles on your lap, and takes your face in both hands. There’s a long, loose, wet, unselfconscious stretch of time in which neither of you is thinking at all. Her mouth moves along your jaw. She says your name into your neck, in a small rough voice, as though she were testing whether it still belonged to her.`),
+    n(`It’s sweet, and it’s funny, and then, for a minute, it isn’t funny. Her hands are under your shirt, warm and callused and certain, and you’ve forgotten there was a time when your skin wasn’t just a surface, and she says, against your ear, “Okay?” and you say, “God, yes,” and she laughs, a low delighted gasp, and says, “Good. Me too.”`),
+    ['go','door9']]}),
+  o(`“Yes. I want you. But not tonight. Not on the worst day of the month. I want to do it right.”`,{tag:['Heart'],fx:{heart:1,'rel.josie.desire':2,'rel.josie.trust':3,'rel.josie.home':2,'flag:porchWait':true},then:[
+    n(`She looks at you for a very long moment. Something changes in her face: it softens, and brightens, and then, absurdly, it goes pink to the hairline.`),
+    s('josie',`Oh. Oh, thank God.`),
+    s('theo',`What?`),
+    s('josie',`I wanted to. I really wanted to. And I also, I was going to tell you, I don’t want it to be the thing we do on the day you got through the hearing. It’s too much like a celebration. It’s a Thursday. I want it on a day that’s nothing.`),
+    s('theo',`A Tuesday.`),
+    s('josie',`A very boring Tuesday. After the chairs.`),
+    n(`She kisses you anyway. She kisses you for a good long time, on the swing, in the moths, until your hands are in her hair and her fingers are fisted in your shirt, and you’re both breathing as though you’d run the Buick home. Then she sits back, flushed, laughing, a little wild, and puts her palm over your mouth. “Stop,” she says. “Stop. We’re being virtuous. I want it noted.”`),
+    ['go','door9']]}),
+  o(`“Josie. I’m scared I’ll mess it up. I’m scared of being a thing you rescue.”`,{tag:['Honesty'],fx:{heart:1,'rel.josie.trust':3,'rel.josie.home':1,'flag:porchScared':true},then:[
+    n(`Her hand goes still on your chest.`),
+    s('josie',`I’m not rescuing you.`),
+    s('josie',`I want to be really clear about this. I came to Morrow because I wasn’t going to leave you on a curb. It’s what I’d do for Gerald the dishwasher. I stayed because of what you did on the stairs. And I’m here tonight because you made me laugh at a dishwasher’s name, on the phone, at nine o’clock on a Sunday, when I was too tired to be funny. That’s not a rescue. That’s a, that’s a person I like.`),
+    n(`She says it flatly, with a certain stubborn dignity, to the porch boards. It’s the most romantic sentence you’ve ever been given.`),
+    s('josie',`So shut up and kiss me. Gently. I’m a person you like.`),
+    ['go','door9']]}),
+  o(`“Do you want to go inside? Coop’s in Macon. He’s a speaker now.”`,{tag:['Charm'],fx:{charm:1,'rel.josie.desire':2,'flag:askedInside':true},then:[
+    s('josie',`Oh, you’re smooth.`),
+    s('theo',`I’m trying very hard.`),
+    s('josie',`It shows. It’s adorable. It’s like watching a very large puppy attempt a tie.`),
+    n(`She kisses you quickly, once, on the corner of the mouth, and slides off your lap.`),
+    ['go','door9']]}),
+ ]),
+];
+
+SC.door9=[
+ n(`You don’t make it to the bedroom. You make it, in the end, to the front hall: the narrow front hall of the Morrow Street house, with its coat hooks and its umbrella stand and its one framed picture, of a heron, hung by a previous tenant with a very uncertain hand. The two of you come through the door in a clumsy, laughing tangle, a sweatshirt hits the umbrella stand, a shoe is lost, and you find yourselves against the wall by the heron, breathing hard, in the pooled yellow light from the porch.`),
+ n(`She has your tie. She’s been unknotting it for a full minute, with a frown of tremendous concentration, and has made it, by sheer incompetence, a tighter knot. “Who ties these?” she mutters. “It’s a trap. It’s designed to catch a woman’s pride.” “It’s a Windsor.” “It’s a crime scene.” She gives up and just pulls it over your head, and your hair stands up, and she laughs so hard she has to put her forehead against your collarbone.`),
+ n(`Her hands are on your belt. You’ve got a handful of her hair. You’re a boy who has been kissed before, in a number of rooms, under a number of ceilings, with a number of lessons. None of it is useful. Nothing you’ve learned applies. She’s an entirely new country, with a different language and a different light, and you’re a tourist, and you’re happy to be one.`),
+ n(`She stops. She puts a hand flat on your sternum and pushes, very gently, an inch.`),
+ s('josie',`Wait.`),
+ n(`You wait. You do it at once, without a flicker, without a sigh, with your hands lifted away and open. It’s a thing you didn’t know you knew. It’s the lightest, easiest, most natural movement of your life.`),
+ s('josie',`I’m okay. I’m better than okay. I just, I want to say something, and it’s going to sound dumb.`),
+ s('theo',`Say it.`),
+ s('josie',`I’ve been a person who does things fast, so they’re over. You know? I’m a person who gets through. I haven’t, I don’t, I’ve never been somebody who stays in the room. I think I want to. I think that’s what this is. I think I want to stay in the room.`),
+ s('josie',`So can we, can we do the thing where we’re slow?`),
+ n(`Her eyes are wet. It’s infuriating her. She wipes at them with the back of her wrist, and a streak of flour you hadn’t noticed, still there from four a.m. Wednesday, comes with it. You put your hand up. You thumb it off her cheekbone. It’s so small.`),
+ s('theo',`We can do the slow thing.`),
+ s('josie',`Good.`),
+ n(`So you do the slow thing. You spend a very long time in a hallway, kissing against a wall under a heron: the slow, unhurried, thorough kind of kissing that’s about the discovery that a mouth can be a place you live. Her hand finds yours and laces it. She walks you backward, by the grip, toward the couch, and pushes you down, and sits next to you, with her feet in your lap and her head on the arm.`),
+ n(`It’s not what you planned. It’s better. You lie on a dilapidated sofa in a rented house with a girl in a Blue Plate sweatshirt, in your shirtsleeves, with her bare feet in your hands, and you talk, and kiss, and talk, in the lamplight, with the moths tapping at the screen, like two people in the middle of a very long, very good book.`),
+ n(`At 11:40 a key rattles in the lock.`),
+ n(`The front door opens. You both freeze. A figure steps in out of the dark with a duffel bag, a flat lanyard around his neck that reads SPEAKER, and a smile of tremendous satisfaction. It’s Coop. He looks at the hallway. He looks at the lost shoe. He looks at the tie, on the floor, a hanged man. He looks at the couch. He looks at the two of you, flushed, rumpled, with her feet in your lap and your shirt half unbuttoned.`),
+ s('coop',`I’m back early.`),
+ s('josie',`I see that.`),
+ s('coop',`The thing in Macon got canceled. There was a, somebody sat on the projector.`),
+ s('theo',`That’s a shame.`),
+ s('coop',`It was a very sad day for projectors.`),
+ n(`A long silence. Coop stands in the hallway, very still, with his duffel bag. A slow, cosmic comprehension passes over his large and gentle face, like the sunrise on a cow.`),
+ s('coop',`I’m going to go and stand in the backyard.`),
+ s('josie',`You don’t have to.`),
+ s('coop',`I’m going to stand in the backyard for a long time. I’m going to look at the stars. I have never, in my life, been this respectful.`),
+ n(`He sets down the duffel. He folds the lanyard carefully in half, and lays it on the stand. He goes out the back door, onto the dark lawn. A moment later, through the kitchen window, you can see him in the moonlight, in the middle of the yard, standing at attention with his hands behind his back, facing the sky, like a sentry guarding the integrity of a very small and unlikely kingdom.`),
+ n(`Josie has her face in a pillow. Her shoulders are shaking. When she lifts it she’s laughing so hard no sound comes out. “Oh my God,” she wheezes. “He’s at attention. He’s saluting the moon.” You’re gone too, helpless, folded over, tears on your face, your whole body unwound. It’s the kind of laugh that doesn’t end so much as wear off, into something warm and tired and wide open.`),
+ n(`You don’t get to the rest. It’s fine. It’s going to be a boring Tuesday. It’s going to be the best Tuesday of your life.`),
+ ch('Coop is standing in the backyard. Josie is looking at the clock. It’s almost midnight. She’s got the dough at four.',[
+  o(`“Stay. Sleep on the couch. I’ll take the floor.”`,{tag:['Heart'],fx:{'rel.josie.trust':1,'rel.josie.home':1,'flag:josieStayed':true},then:[s('josie',`I’ve got the dough.`),s('theo',`I’ll set an alarm.`),s('josie',`You’ll set the alarm and then you’ll lie awake and watch the clock, and I’ll have to get up at three-thirty and step over you.`),s('theo',`I’m very good at lying awake.`),n(`She sets the alarm herself. She lies down on the couch with her head on your chest and your arm around her. She is asleep in four minutes. Coop, at 12:25, knocks very quietly on the back door, and then, thinking better of it, goes and sleeps in the car.`)]}),
+  o(`“I’ll walk you to the Buick. You should sleep in your own bed.”`,{tag:['Restraint'],fx:{'rel.josie.trust':2,'flag:walkedJosieHome':true},then:[n(`You walk her to the Buick. You stand in the street under the one working lamp. She leans on the open door and looks at you and says, “You’re good at this.” “At what?” “Letting me go home.” “I’m terrible at it.” “I know,” she says, and kisses you through the window, and drives off down Morrow Street with the plastic goose bobbing on the dash. You walk back up the path. Coop, at the corner of the house, is still at attention. “Is it over?” he whispers. “It’s over,” you say. He lets out a long breath, and kneels, and kisses the grass.`)]}),
+ ]),
+ ['go','finish9s'],
+];
+
+SC.finish9s=[
+ slug('INT. WHITLOCK RENTAL — FRIDAY — 3:40 A.M.'),
+ n(`You don’t sleep. You lie on the couch, or in your bed, or on the roof of the world, and watch the ceiling go from black to blue to gray. At 3:50 a text arrives. It’s from Josie, who’s up for the dough. It says: Morning. I’m covered in flour. I’m thinking about you. It’s distracting. The first batch is going to be terrible. It says: Eleven days. Twelve in an hour. And then a third bubble: You did a hard thing. I’m proud of you. Go to sleep, you maniac.`),
+ n(`You write back: I’m trying. She writes: Try harder. It’s a dough.`),
+ n(`You put the phone on your chest. The stone is on the nightstand. The chip is under the lamp. The house is quiet. Outside, on the lawn, a sprinkler goes on at the neighbor’s, ticking in the dark like a small and stubborn clock, and under the window the bright, brief, absurd chirp of the first bird of the day.`),
+ n(`The ruling is in ten days. It could go either way. Nora’s card is in the record. Hunter’s father has been seen, by Dez, sitting alone in his Lincoln in the Memorial Hall parking lot for forty minutes with the engine off. Preston Danvers’s lawyer has asked the panel for an extension. And somewhere on a third floor across town, in a room with a wall of balled-up paper, a girl has, as of this week, said three words.`),
+ n(`Pen. Stupid. Good.`),
+ n(`She hasn’t said a fourth. You’re starting to suspect she’s saving it.`),
+ ['end',9],
+];
+
 /* ---------- episode endings ---------- */
 function gazette(heads){
   const wrap=el('div','');
@@ -4334,6 +4925,7 @@ function endCard(kicker,title,sub,heads,buttons){
 }
 function btn(label,fn,primary){const b=el('button','btn'+(primary?' primary':''),esc(label));b.type='button';b.onclick=fn;return b}
 function finish(ep){
+  if(ep===9)return finish9();
   if(ep===8)return finish8();
   if(ep===7)return finish7();
   if(ep===6)return finish6();
@@ -4508,10 +5100,45 @@ function finish8(){
   heads.push('NORA FITCH TO TESTIFY THURSDAY; \u201CI AM NOT LEAVING\u201D');
   heads.push('PHOTO STRIP, BACK OF IT: \u201CI LO\u2014\u201D; WHAT IS THE REST OF THE WORD');
   G.flags.ep8done=true;G.scene='done8';lockEpisode(8);
-  endCard('End of Season One','We <em>Remember</em>','Season One is complete and locked in. Your choices are canon. Tell Claude to begin Season Two, and it starts from exactly what you did.',heads,[
-    btn('Open notebook',()=>openNotebook('prev'),true)]);
+  endCard('End of Season One','We <em>Remember</em>','Season One is complete and locked in. Your choices are canon.',heads,[
+    btn('Continue to Season Two: Tuesdays',()=>{$('overlay').innerHTML='';document.body.style.overflow='';log.innerHTML='';runScene('cold9')},true),
+    btn('Open notebook',()=>openNotebook('prev'))]);
 }
 SC.done8=[['end',8]];
+function finish9(){
+  const f=G.flags;const heads=[];
+  heads.push('DINER FALLS SILENT FOR NINETY SECONDS; \u201CGUS CONFIRMS\u201D');
+  if(f.promisedCallFirst)heads.push('FOUR RULES POSTED AT TABLE SIX; RULE FIVE \u201CAPPROVED, CONDITIONS APPLY\u201D');
+  if(f.stripToDez)heads.push('PHOTO STRIP HANDED TO GAZETTE EDITOR FOR DELIVERY TO WREN');
+  else if(f.stripKept)heads.push('PHOTO STRIP KEPT \u201CA WEEK,\u201D THEN SOMEONE WHO KNOWS');
+  else if(f.stripPocket)heads.push('PHOTO STRIP JOINS NAPKIN IN SAME POCKET; WAITRESS \u201CTOLD\u201D');
+  if(f.calledJosieSunday)heads.push('SUNDAY, 8:52 P.M.: CALL PLACED; TOPIC, A DISHWASHER NAMED GERALD');
+  else if(f.calledDelSunday)heads.push('SUNDAY CRAVING ANSWERED BY DEL; PIE-CUTTING LECTURE, 20 MINUTES');
+  else if(f.pushedAlone)heads.push('SUNDAY WHITE-KNUCKLED ALONE; TEXT FOLLOWS: \u201CA PHONE IS NOT A ROPE\u201D');
+  if(f.okaforHonest)heads.push('STUDENT HEALTH: \u201CTHE FIRST TRUE THING ANYONE\u2019S SAID IN THIS CHAIR\u201D');
+  else if(f.okaforCharmed)heads.push('STUDENT HEALTH: PATIENT CHARMS; COUNSELOR \u201CASKS HIM TO BE BAD AT IT\u201D');
+  else if(f.okaforSilent)heads.push('STUDENT HEALTH: FIVE MINUTES OF SILENCE; TISSUES');
+  else if(f.okaforAddict)heads.push('STUDENT HEALTH: \u201CNOBODY EARNS IT; IT\u2019S A DESCRIPTION\u201D');
+  heads.push('RIVER STONE, ONE AND A HALF POUNDS, ISSUED; \u201CTHE WEIGHT OF A HAND\u201D');
+  heads.push('TAU CHARTER HEARING: MARCUS HALE TESTIFIES AGAINST HIS OWN SENTENCE');
+  heads.push('HUNTER PRESCOTT-LOWE TO PANEL, FATHER PRESENT: \u201CWE ALL KNEW\u201D');
+  heads.push('NORA FITCH ENTERS \u201CWE\u2019RE ALL SO SORRY YOU WERE UPSET\u201D CARD INTO RECORD; ELEVEN SIGNATURES');
+  if(f.objectedSpence)heads.push('WHITLOCK INTERRUPTS CROSS-EXAMINATION; CHAIR SAYS SIT');
+  else if(f.lookedAtNora)heads.push('WHITLOCK LOOKS AT NORA DURING CROSS; NORA SHAKES HER HEAD, ONCE');
+  else heads.push('WHITLOCK HOLDS HIS CHAIR DURING CROSS; COUNSEL\u2019S HAND ON HIS WRIST');
+  heads.push('NORA TO SPENCE: \u201CI TOLD HIM TO GO. HE WENT. IT\u2019S THE ONLY THING ANYONE HAS DONE THAT I ASKED\u201D');
+  if(f.answeredPlain)heads.push('PANEL ASKS WHAT HE DID; \u201CI LOOKED AT MY CUP. I DID NOTHING.\u201D');
+  if(f.vanceNotYet)heads.push('ASKED IF ANYONE HAS PRESSED HIM TO SOFTEN HIS ACCOUNT: \u201CNOT YET\u201D; CHAIR \u201CNOTES THE YET\u201D');
+  heads.push('JUDGE CRENSHAW ASKED TO REST IN THE VESTIBULE; \u201CI OUTRANK THIS BUILDING\u201D');
+  heads.push('PANEL TO RULE WITHIN TEN DAYS');
+  heads.push('WREN CALLOWAY, THIRD FLOOR: \u201CPEN.\u201D \u201CSTUPID.\u201D \u201CGOOD.\u201D');
+  if(f.porchYes||f.porchWait||f.porchScared)heads.push('MORROW STREET PORCH SWING GROANS; COOP, AT ATTENTION IN THE BACKYARD, SALUTES THE MOON');
+  G.flags.ep9done=true;G.scene='done9';lockEpisode(9);
+  endCard('End of Episode Nine','The <em>Hearing</em>','Episode Nine is now locked in. Your choices are canon. Tell Claude to build Episode Ten and it starts from exactly what you did.',heads,[
+    btn('Open notebook',()=>openNotebook('prev'),true)]);
+}
+SC.done9=[['end',9]];
+
 
 
 
@@ -4533,7 +5160,7 @@ function launchEpisode(n){
 }
 function episodeButtons(){
   const row=el('div','row');
-  [1,2,3,4,5,6,7,8].forEach(n=>{
+  [1,2,3,4,5,6,7,8,9].forEach(n=>{
     if(locked(n)||(n>1&&!(G.cps&&G.cps[n])))return;
     const b=btn('Replay Episode '+n,()=>{if(b.dataset.sure)launchEpisode(n);else{b.dataset.sure='1';b.textContent='Start a new timeline from Episode '+n+'?'}});
     row.append(b);
@@ -4551,8 +5178,8 @@ function intro(saved){
   const hasSave=saved&&saved.scene&&SC[saved.scene];
   if(hasSave){
     G=norm(saved);
-    const done=saved.flags.ep8done?8:saved.flags.ep7done?7:saved.flags.ep6done?6:saved.flags.ep5done?5:saved.flags.ep4done?4:saved.flags.ep3done?3:saved.flags.ep2done?2:saved.flags.ep1done?1:0;
-    row.append(btn(done===8?'Continue (Season One complete)':done===7?'Continue Season One (Episode Eight)':done===6?'Continue Season One (Episode Seven)':done===5?'Continue Season One (Episode Six)':done===4?'Continue Season One (Episode Five)':done===3?'Continue Season One (Episode Four)':done===2?'Continue Season One (Episode Three)':done?'Continue Season One (Episode Two)':'Continue',go(()=>{G=restoreSceneStart(norm(saved));if(G.scene==='done2')G.scene='cold3';if(G.scene==='done3')G.scene='cold4';if(G.scene==='done4')G.scene='cold5';if(G.scene==='done5')G.scene='cold6';if(G.scene==='done6')G.scene='porch7';if(G.scene==='done7')G.scene='curb8';runScene(G.scene)}),true));
+    const done=saved.flags.ep9done?9:saved.flags.ep8done?8:saved.flags.ep7done?7:saved.flags.ep6done?6:saved.flags.ep5done?5:saved.flags.ep4done?4:saved.flags.ep3done?3:saved.flags.ep2done?2:saved.flags.ep1done?1:0;
+    row.append(btn(done===9?'Continue (Episode Nine complete)':done===8?'Continue Season Two (Episode Nine)':done===7?'Continue Season One (Episode Eight)':done===6?'Continue Season One (Episode Seven)':done===5?'Continue Season One (Episode Six)':done===4?'Continue Season One (Episode Five)':done===3?'Continue Season One (Episode Four)':done===2?'Continue Season One (Episode Three)':done?'Continue Season One (Episode Two)':'Continue',go(()=>{G=restoreSceneStart(norm(saved));if(G.scene==='done2')G.scene='cold3';if(G.scene==='done3')G.scene='cold4';if(G.scene==='done4')G.scene='cold5';if(G.scene==='done5')G.scene='cold6';if(G.scene==='done6')G.scene='porch7';if(G.scene==='done7')G.scene='curb8';if(G.scene==='done8')G.scene='cold9';runScene(G.scene)}),true));
     const anyLock=Object.values(G.locks||{}).some(Boolean);
     const nb=btn('New game',()=>{if(nb.dataset.sure){go(()=>{wipe();G=fresh();runScene('cold')})()}else{nb.dataset.sure='1';nb.textContent='Erase my save?'}});
     if(!anyLock)row.append(nb);
