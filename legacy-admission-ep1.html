@@ -145,7 +145,7 @@ const BLURB={
  fenn:'Poetry professor. Brilliant. Often horizontal.',
  colt:'Your oldest friend from St. Aldric’s. Now, somehow, here.'};
 const fresh=()=>({stats:{charm:3,nerve:1,wit:2,heart:1},rep:{campus:0,town:0},dep:0,buzz:0,
-  rel:Object.fromEntries(PEOPLE.map(p=>[p,{trust:0,desire:0,loyalty:0}])),flags:{},ledger:[],scene:'cold'});
+  rel:Object.fromEntries(PEOPLE.map(p=>[p,{trust:0,desire:0,loyalty:0}])),flags:{},ledger:[],log:[],scene:'cold'});
 let G=fresh();
 let stack=[],busy=false,waitFn=null;
 const $=id=>document.getElementById(id);
@@ -154,7 +154,27 @@ const cap=s=>s[0].toUpperCase()+s.slice(1);
 const el=(tag,cls,html)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e};
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 
-function save(){try{localStorage.setItem(KEY,JSON.stringify(G))}catch(e){}}
+/* save: browser storage plus the artifact database (cloud save Claude can read) */
+const DOC='season1/save';
+let DB=null,dbBusy=false,dbDirty=false,dbTimer=null;
+function brief(){return{episodesDone:[G.flags.ep1done&&1,G.flags.ep2done&&2].filter(Boolean),scene:G.scene,stats:G.stats,reputation:G.rep,dependence:G.dep,
+  flags:Object.keys(G.flags).filter(k=>!/^(met|last):/.test(k)&&G.flags[k]),relationships:G.rel,ledger:G.ledger}}
+function snapshotDoc(){return{state:G,brief:brief(),savedAt:G._t||0}}
+async function pushDb(){
+  if(!DB)return;if(dbBusy){dbDirty=true;return}
+  dbBusy=true;try{await DB.doc(DOC).set(snapshotDoc())}catch(e){}
+  dbBusy=false;if(dbDirty){dbDirty=false;pushDb()}
+}
+function save(now){
+  G._t=Date.now();try{localStorage.setItem(KEY,JSON.stringify(G))}catch(e){}
+  clearTimeout(dbTimer);if(now)pushDb();else dbTimer=setTimeout(pushDb,700);
+}
+async function loadDb(){
+  try{if(!window.claude||!claude.use)return null;DB=await claude.use('db');if(!DB)return null;
+    const s=await DB.doc(DOC).get();return s.exists?s.data():null}catch(e){return null}
+}
+function norm(g){if(!g)return g;if(!g.flags)g.flags={};if(!g.log)g.log=[];if(!g.ledger)g.ledger=[];
+  PEOPLE.forEach(p=>{if(!g.rel[p])g.rel[p]={trust:0,desire:0,loyalty:0}});return g}
 function load(){try{const r=localStorage.getItem(KEY);return r?JSON.parse(r):null}catch(e){return null}}
 function wipe(){try{localStorage.removeItem(KEY)}catch(e){}}
 
@@ -205,7 +225,7 @@ function card(kicker,title,sub,after,extra){
 
 /* ---------- engine ---------- */
 function runScene(id){
-  G.scene=id;save();stack=[{steps:SC[id],i:0}];next();
+  G.scene=id;save(id==='cold2'||id==='done2');stack=[{steps:SC[id],i:0}];next();
 }
 function next(){
   setDock(null);
@@ -246,7 +266,7 @@ function check(stat,dc,label,[pass,fail]){
   setTimeout(()=>{
     line.textContent=`${r1} + ${r2} + ${e} = ${tot} vs ${dc}`;
     box.append(el('span','res '+(ok?'pass':'fail'),ok?'Success':'Not this time'));
-    G.flags['last:'+stat]=ok;
+    G.flags['last:'+stat]=ok;G.log.push({s:G.scene,chk:stat+' '+dc+' ('+label+')',ok:ok,roll:tot});
     stack.push({steps:ok?pass:fail,i:0});pause();
   },matchMedia('(prefers-reduced-motion:reduce)').matches?0:650);
   return true;
@@ -263,12 +283,13 @@ function choice(q,opts){
     (o.tag||[]).forEach(x=>tg.append(el('span','tag',esc(x))));
     if(lock)tg.append(el('span','tag lock',`needs ${cap(o.req[0])} ${o.req[1]}`));
     if(tg.children.length)bt.append(tg);
-    bt.onclick=()=>pick(o,bt,btns);
+    bt.onclick=()=>pick(o,bt,btns,q);
     btns.push(bt);box.append(bt);
   });
   box._keys=btns;log.append(box);window._ch={btns,vis,opts:vis};scroll();setDock(null);return true;
 }
-function pick(o,bt,btns){
+function pick(o,bt,btns,q){
+  G.log.push({s:G.scene,q:q,c:String(o.t).replace(/<[^>]*>/g,'')});if(G.log.length>800)G.log.shift();
   window._ch=null;
   btns.forEach(b=>{b.disabled=true;if(b!==bt)b.classList.add('gone')});bt.classList.add('picked');
   if(o.led)G.ledger.push(o.led);
@@ -292,7 +313,7 @@ function openNotebook(tab='people'){
   head.append(el('h2','','Notebook'));const x=el('button','btn','Close');x.type='button';x.onclick=close;head.append(x);dr.append(head);
   const tabs=el('div','tabs');tabs.setAttribute('role','tablist');
   const body=el('div','');body.style.cssText='display:flex;flex-direction:column;gap:12px';
-  const defs=[['people','People'],['you','You'],['town','Town'],['prev','Previously']];
+  const defs=[['people','People'],['you','You'],['town','Town'],['prev','Previously'],['save','Save']];
   const draw=k=>{
     [...tabs.children].forEach(b=>b.setAttribute('aria-selected',b.dataset.k===k));body.innerHTML='';
     if(k==='people'){
@@ -313,6 +334,16 @@ function openNotebook(tab='people'){
       [['campus','Ashby College','What the Greek system, your classmates, and the quad think of you.'],['town','Marlowe Springs','What the diner, the Gazebo, and the mayor’s hearse think of you.']].forEach(([id,t,d])=>{
         const v=G.rep[id];const r=el('div','panelrow');r.append(el('h3','',t));r.append(el('p','',d));
         r.append(el('div','meter',`<em style="font-style:normal">standing</em><i><b style="width:${Math.max(0,Math.min(100,(v+4)/10*100))}%"></b></i><span>${v>0?'+':''}${v}</span>`));body.append(r)});
+    }
+    if(k==='save'){
+      body.append(el('p','empty','Your game saves itself to this artifact and to this browser, so Claude can build the next episode from your choices. To move it by hand, copy the save below or paste one in.'));
+      const ta=el('textarea');ta.id='saveOut';ta.readOnly=true;ta.rows=6;ta.value=JSON.stringify(snapshotDoc());
+      ta.style.cssText='width:100%;font-family:var(--mono);font-size:11px;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px';
+      const cp=el('button','btn','Copy save');cp.type='button';cp.onclick=()=>{ta.select();try{navigator.clipboard.writeText(ta.value).then(()=>{cp.textContent='Copied'},()=>{cp.textContent='Select and copy'})}catch(e){cp.textContent='Select and copy'}};
+      const ti=el('textarea');ti.id='saveIn';ti.rows=3;ti.placeholder='Paste a save here to load it';
+      ti.style.cssText=ta.style.cssText;
+      const im=el('button','btn','Load pasted save');im.type='button';im.onclick=()=>{try{const d=JSON.parse(ti.value);const g=norm(d.state||d);if(!g.stats||!g.rel)throw 0;G=g;save(true);location.reload()}catch(e){im.textContent='That is not a valid save'}};
+      body.append(ta,cp,ti,im);
     }
     if(k==='prev'){
       if(!G.ledger.length)body.append(el('p','empty','Nothing on the record yet. That won’t last.'));
@@ -1317,8 +1348,8 @@ function finish(ep){
   if(f.josieKiss)heads.push('BLUE PLATE CLOSED, THEN NOT; MAVIS “SAW A LIGHT”');
   if(f.wrenNight)heads.push('WHITLOCK BOY SEEN LEAVING HOLLIS THEATRE APARTMENTS, SHOES IN HAND');
   if(!heads.length)heads.push('WHITLOCK BOY SURVIVES FIRST DAY; TOWN “RESERVING JUDGMENT”');
-  G.flags.ep1done=true;G.scene='cold2';save();
-  endCard('End of Episode One','The Whitlock <em>boy</em>','Your choices are saved. Episode Two, “Rush,” is built from them.',heads,[
+  G.flags.ep1done=true;G.scene='cold2';save(true);
+  endCard('End of Episode One','The Whitlock <em>boy</em>','Your choices are saved to your account.',heads,[
     btn('Continue to Episode Two',()=>{$('overlay').innerHTML='';document.body.style.overflow='';log.innerHTML='';runScene('cold2')},true),
     btn('Open notebook',()=>openNotebook('prev')),
     btn('Start over',()=>{wipe();location.reload()})]);
@@ -1338,28 +1369,42 @@ function finish2(){
   if(f.fullStatement)heads.push('WHITLOCK BOY GIVES DEAN FULL STATEMENT; TOWN “SPLIT, THEN QUIET”');
   else if(f.partialStatement||f.silentStatement||f.lieStatement)heads.push('WHITLOCK BOY “WAITS FOR COUNSEL”; BIRDIE “NOTES THE WORD”');
   if(!heads.length)heads.push('RUSH WEEK ENDS; TOWN “RESERVING JUDGMENT”');
-  G.flags.ep2done=true;G.scene='done2';save();
-  endCard('End of Episode Two','The <em>Hole</em>','Episode Three is built from what you did tonight, and from what you didn’t.',heads,[
+  G.flags.ep2done=true;G.scene='done2';save(true);
+  endCard('End of Episode Two','The <em>Hole</em>','Your choices are saved to your account. Tell Claude to build Episode Three and it starts from exactly what you did.',heads,[
     btn('Open notebook',()=>openNotebook('prev'),true),
     btn('Start over',()=>{wipe();location.reload()})]);
 }
 SC.done2=[['end',2]];
 
 /* ---------- boot ---------- */
-function intro(){
-  const saved=load();
+function intro(saved){
   const o=el('div','card');
   o.append(el('div','k','A Prestige Drama in Text'));
   o.append(el('h1','','Legacy <em>Admission</em>'));
   o.append(el('p','','Season One. You are Theo Whitlock. Everybody here already knows your name.'));
-  o.append(el('p','fine','Mature audiences. Contains frank sex, drinking and drug use, depictions of the aftermath of sexual assault, hazing, and bigotry. All characters are adults. Your choices are saved automatically in this browser.'));
+  o.append(el('p','fine','Mature audiences. Contains frank sex, drinking and drug use, depictions of the aftermath of sexual assault, hazing, and bigotry. All characters are adults. Your choices are saved automatically to this artifact and this browser.'));
   const row=el('div','row');
   const go=fn=>()=>{o.remove();document.body.style.overflow='';fn()};
   const hasSave=saved&&saved.scene&&SC[saved.scene];
-  row.append(btn(hasSave?'New game':'Begin Episode One',go(()=>{wipe();G=fresh();runScene('cold')}),!hasSave));
-  if(hasSave)row.append(btn('Continue',go(()=>{G=saved;if(!G.flags)G.flags={};PEOPLE.forEach(p=>{if(!G.rel[p])G.rel[p]={trust:0,desire:0,loyalty:0}});runScene(G.scene)}),true));
-  row.append(btn('Start at Episode Two',go(()=>{G=fresh();runScene('recap')})));
+  if(hasSave){
+    const done=saved.flags.ep2done?2:saved.flags.ep1done?1:0;
+    row.append(btn(done?'Continue Season One (Episode '+(done+1)+')':'Continue',go(()=>{G=norm(saved);runScene(G.scene)}),true));
+    const nb=btn('New game',()=>{if(nb.dataset.sure){go(()=>{wipe();G=fresh();runScene('cold')})()}else{nb.dataset.sure='1';nb.textContent='Erase my save?'}});
+    row.append(nb);
+  }else{
+    row.append(btn('Begin Episode One',go(()=>{G=fresh();runScene('cold')}),true));
+    row.append(btn('Start at Episode Two',go(()=>{G=fresh();runScene('recap')})));
+  }
   o.append(row);$('overlay').append(o);document.body.style.overflow='hidden';row.firstChild.focus();
 }
-intro();
+async function boot(){
+  const c=el('div','card');c.append(el('div','k','Loading your save'));$('overlay').append(c);
+  const local=norm(load());
+  const remote=await Promise.race([loadDb(),new Promise(r=>setTimeout(()=>r(null),3500))]);
+  c.remove();
+  let saved=local;
+  if(remote&&remote.state&&(!local||(remote.state._t||0)>(local._t||0)))saved=norm(remote.state);
+  intro(saved);
+}
+boot();
 </script>
