@@ -239,13 +239,19 @@ async function lockEpisode(n){
 }
 function snap(){const {cps,...r}=G;return JSON.parse(JSON.stringify(r))}
 const EP_START={1:'cold',2:'cold2',3:'cold3',4:'cold4',5:'cold5'};
+function sceneStartSnap(){return{scene:G.scene,stats:{...G.stats},rep:{...G.rep},dep:G.dep,buzz:G.buzz,rel:JSON.parse(JSON.stringify(G.rel)),flags:{...G.flags},ledgerLen:G.ledger.length,logLen:G.log.length}}
+function restoreSceneStart(g){
+  const s=g&&g.scStart;if(!s||s.scene!==g.scene)return g;
+  g.stats={...s.stats};g.rep={...s.rep};g.dep=s.dep;g.buzz=s.buzz;g.rel=JSON.parse(JSON.stringify(s.rel));g.flags={...s.flags};
+  g.ledger.length=Math.min(g.ledger.length,s.ledgerLen);g.log.length=Math.min(g.log.length,s.logLen);return g;
+}
 function runScene(id){
   if(id==='cold'){G.cps[1]=snap()}
   if(id==='cold2'){G.cps[2]=snap();Object.keys(G.cps).forEach(k=>{if(+k>2)delete G.cps[k]})}
   if(id==='cold3'){G.cps[3]=snap();Object.keys(G.cps).forEach(k=>{if(+k>3)delete G.cps[k]})}
   if(id==='cold4'){G.cps[4]=snap();Object.keys(G.cps).forEach(k=>{if(+k>4)delete G.cps[k]})}
   if(id==='cold5'){G.cps[5]=snap();Object.keys(G.cps).forEach(k=>{if(+k>5)delete G.cps[k]})}
-  G.scene=id;save(id==='cold2'||id==='cold3'||id==='cold4'||id==='cold5'||id==='done2'||id==='done3'||id==='done4'||id==='done5');stack=[{steps:SC[id],i:0}];next();
+  G.scene=id;G.scStart=sceneStartSnap();save(id==='cold2'||id==='cold3'||id==='cold4'||id==='cold5'||id==='done2'||id==='done3'||id==='done4'||id==='done5');stack=[{steps:SC[id],i:0}];next();
 }
 function next(){
   setDock(null);
@@ -2625,7 +2631,7 @@ SC.dean5=[
  s('haskell',`I want to be clear about my role. I’m not a prosecutor. I’m not a judge. I’m the person at this institution who is supposed to know what happened. I’ve been in this chair for nineteen years. I’ve learned that there’s usually a second paragraph.`),
  s('haskell',`I’d like to hear it.`),
  ch('The Dean is holding a pen over a blank line.',[
-  o(`“It’s true. I told her. And on Monday, I lied to you. I’d like to amend.”`,{tag:['Heart 22'],req:['heart',22],fx:{heart:3,'rel.graham.trust':-4,'rel.colt.trust':-8,'rel.hunter.trust':-8,'rel.savannah.trust':3,'rel.dez.trust':3,'rel.coop.trust':2,'rel.josie.trust':2,'rel.wren.trust':-1,'rep.campus':-4,'flag:amendedDean':true,'flag:confirmedDock':true},led:`Told Dean Haskell on Wednesday that Wren's account was true, that you lied on Monday, and amended your statement against Marcus Hale's objection.`,then:[
+  o(`“It’s true. I told her. And on Monday, I lied to you. I’d like to amend.”`,{tag:['Heart 22'],req:['heart',22],fx:{heart:3,'rel.graham.trust':-4,'rel.colt.trust':-8,'rel.hunter.trust':-8,'rel.savannah.trust':3,'rel.dez.trust':3,'rel.coop.trust':2,'rel.josie.trust':2,'rel.wren.trust':2,'rep.campus':-4,'flag:amendedDean':true,'flag:confirmedDock':true},led:`Told Dean Haskell on Wednesday that Wren's account was true, that you lied on Monday, and amended your statement against Marcus Hale's objection.`,then:[
     n(`Marcus says your name once, sharply. You lift a hand without looking at him, the way the Dean lifted hers on Monday, and it works.`),
     n(`You tell her. It takes three-quarters of an hour. You tell it in order: the basement, the handle, the four minutes, the names. Then, because you’re here and the door is open, the lake house, the staircase in May, the cup, the girl on the landing who asked a question without a word. You say “Nora.” You say it plainly. You say the address.`),
     n(`When you finish, the room is very quiet. Immy has put her laptop on the sill. Marcus sits like a man being slowly emptied.`),
@@ -2646,7 +2652,7 @@ SC.dean5=[
     s('haskell',`You have until Friday at five to correct the omission, Mr. Whitlock. After that, I’ll have to treat your Monday statement as materially misleading, which is a matter of conduct. Ms. Calder’s account, I should say, was extremely specific.`)]}),
   o(`“I’d like to consult my father.”`,{tag:['Stall'],fx:{'rel.graham.trust':1,'flag:stalledDean2':true},led:`Asked Dean Haskell for until Friday to consult your father about correcting the omission in your Monday statement.`,then:[
     s('haskell',`Friday at five. Not a minute after.`),n(`She caps the pen. It’s an unusually gentle motion for a woman whose whole life has been the application of pressure.`)]}),
-  o(`“Ms. Calder is telling the truth. I was afraid.”`,{tag:['Nerve 3'],req:['nerve',3],fx:{nerve:2,heart:2,'rel.graham.trust':-4,'rel.colt.trust':-8,'rel.hunter.trust':-8,'rel.savannah.trust':3,'rel.dez.trust':3,'flag:amendedDean':true,'flag:confirmedDock':true},then:[s('haskell',`Afraid.`),n(`She sets down her pen. It’s the first time you’ve seen her do it without capping it. You tell her everything. It comes out hard and plain, like a stone from a wall.`)]}),
+  o(`“Ms. Calder is telling the truth. I was afraid.”`,{tag:['Nerve 3'],req:['nerve',3],fx:{nerve:2,heart:2,'rel.graham.trust':-4,'rel.colt.trust':-8,'rel.hunter.trust':-8,'rel.savannah.trust':3,'rel.dez.trust':3,'rel.wren.trust':2,'flag:amendedDean':true,'flag:confirmedDock':true},then:[s('haskell',`Afraid.`),n(`She sets down her pen. It’s the first time you’ve seen her do it without capping it. You tell her everything. It comes out hard and plain, like a stone from a wall.`)]}),
  ]),
  ['if',()=>G.dep>=8,[n(`As you stand, your hand slips off the arm of the chair and knocks the water glass. It rolls across the Dean’s desk and breaks against the foot of the framed seal. A sharp, tiny sound. A goose, in the frame, looks up from beneath a puddle with an expression of mild surprise.`),
    s('haskell',`Mr. Whitlock. Your hand.`),s('theo',`It’s the cold.`),s('haskell',`It’s seventy-one degrees.`),
@@ -3045,7 +3051,7 @@ function intro(saved){
   if(hasSave){
     G=norm(saved);
     const done=saved.flags.ep5done?5:saved.flags.ep4done?4:saved.flags.ep3done?3:saved.flags.ep2done?2:saved.flags.ep1done?1:0;
-    row.append(btn(done===5?'Continue (Episode Five complete)':done===4?'Continue Season One (Episode Five)':done===3?'Continue Season One (Episode Four)':done===2?'Continue Season One (Episode Three)':done?'Continue Season One (Episode Two)':'Continue',go(()=>{G=norm(saved);if(G.scene==='done2')G.scene='cold3';if(G.scene==='done3')G.scene='cold4';if(G.scene==='done4')G.scene='cold5';runScene(G.scene)}),true));
+    row.append(btn(done===5?'Continue (Episode Five complete)':done===4?'Continue Season One (Episode Five)':done===3?'Continue Season One (Episode Four)':done===2?'Continue Season One (Episode Three)':done?'Continue Season One (Episode Two)':'Continue',go(()=>{G=restoreSceneStart(norm(saved));if(G.scene==='done2')G.scene='cold3';if(G.scene==='done3')G.scene='cold4';if(G.scene==='done4')G.scene='cold5';runScene(G.scene)}),true));
     const anyLock=Object.values(G.locks||{}).some(Boolean);
     const nb=btn('New game',()=>{if(nb.dataset.sure){go(()=>{wipe();G=fresh();runScene('cold')})()}else{nb.dataset.sure='1';nb.textContent='Erase my save?'}});
     if(!anyLock)row.append(nb);
@@ -3066,6 +3072,10 @@ async function boot(){
   c.remove();
   let saved=local;
   if(remote&&remote.state&&(!local||(remote.state._t||0)>(local._t||0)))saved=norm(remote.state);
+  if(saved&&!saved.scStart&&saved.flags&&saved.flags.amendedDean&&!saved.flags.ep5done&&!saved.flags.wrenTrustFix&&saved.rel&&saved.rel.wren){
+    /* one-time repair: the old Wednesday amend choice wrongly lowered Wren's Trust by 1 and should have raised it by 2 */
+    saved.rel.wren.trust+=3;saved.flags.wrenTrustFix=true;
+  }
   intro(saved);
 }
 boot();
