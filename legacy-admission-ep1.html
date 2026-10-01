@@ -145,7 +145,7 @@ const BLURB={
  fenn:'Poetry professor. Brilliant. Often horizontal.',
  colt:'Your oldest friend from St. Aldric’s. Now, somehow, here.'};
 const fresh=()=>({stats:{charm:3,nerve:1,wit:2,heart:1},rep:{campus:0,town:0},dep:0,buzz:0,
-  rel:Object.fromEntries(PEOPLE.map(p=>[p,{trust:0,desire:0,loyalty:0}])),flags:{},ledger:[],log:[],scene:'cold'});
+  rel:Object.fromEntries(PEOPLE.map(p=>[p,{trust:0,desire:0,loyalty:0}])),flags:{},ledger:[],log:[],cps:{},scene:'cold'});
 let G=fresh();
 let stack=[],busy=false,waitFn=null;
 const $=id=>document.getElementById(id);
@@ -173,7 +173,7 @@ async function loadDb(){
   try{if(!window.claude||!claude.use)return null;DB=await claude.use('db');if(!DB)return null;
     const s=await DB.doc(DOC).get();return s.exists?s.data():null}catch(e){return null}
 }
-function norm(g){if(!g)return g;if(!g.flags)g.flags={};if(!g.log)g.log=[];if(!g.ledger)g.ledger=[];
+function norm(g){if(!g)return g;if(!g.cps)g.cps={};if(!g.flags)g.flags={};if(!g.log)g.log=[];if(!g.ledger)g.ledger=[];
   PEOPLE.forEach(p=>{if(!g.rel[p])g.rel[p]={trust:0,desire:0,loyalty:0}});return g}
 function load(){try{const r=localStorage.getItem(KEY);return r?JSON.parse(r):null}catch(e){return null}}
 function wipe(){try{localStorage.removeItem(KEY)}catch(e){}}
@@ -224,7 +224,11 @@ function card(kicker,title,sub,after,extra){
 }
 
 /* ---------- engine ---------- */
+function snap(){const {cps,...r}=G;return JSON.parse(JSON.stringify(r))}
+const EP_START={1:'cold',2:'cold2'};
 function runScene(id){
+  if(id==='cold'){G.cps[1]=snap()}
+  if(id==='cold2'){G.cps[2]=snap();Object.keys(G.cps).forEach(k=>{if(+k>2)delete G.cps[k]})}
   G.scene=id;save(id==='cold2'||id==='done2');stack=[{steps:SC[id],i:0}];next();
 }
 function next(){
@@ -313,7 +317,7 @@ function openNotebook(tab='people'){
   head.append(el('h2','','Notebook'));const x=el('button','btn','Close');x.type='button';x.onclick=close;head.append(x);dr.append(head);
   const tabs=el('div','tabs');tabs.setAttribute('role','tablist');
   const body=el('div','');body.style.cssText='display:flex;flex-direction:column;gap:12px';
-  const defs=[['people','People'],['you','You'],['town','Town'],['prev','Previously'],['save','Save']];
+  const defs=[['people','People'],['you','You'],['town','Town'],['prev','Previously'],['save','Save'],['eps','Episodes']];
   const draw=k=>{
     [...tabs.children].forEach(b=>b.setAttribute('aria-selected',b.dataset.k===k));body.innerHTML='';
     if(k==='people'){
@@ -334,6 +338,11 @@ function openNotebook(tab='people'){
       [['campus','Ashby College','What the Greek system, your classmates, and the quad think of you.'],['town','Marlowe Springs','What the diner, the Gazebo, and the mayor’s hearse think of you.']].forEach(([id,t,d])=>{
         const v=G.rep[id];const r=el('div','panelrow');r.append(el('h3','',t));r.append(el('p','',d));
         r.append(el('div','meter',`<em style="font-style:normal">standing</em><i><b style="width:${Math.max(0,Math.min(100,(v+4)/10*100))}%"></b></i><span>${v>0?'+':''}${v}</span>`));body.append(r)});
+    }
+    if(k==='eps'){
+      body.append(el('p','empty','Replay an episode to try different choices. Episode 2 restarts with the exact stats and story flags you had when Episode 1 ended, so stat-locked options stay reachable. Replaying starts a new timeline from that point; your later progress is replaced when you finish the episode again.'));
+      const st=el('div','panelrow');st.append(el('h3','','Current stats'));st.append(el('p','',`Charm ${G.stats.charm} \u00B7 Nerve ${G.stats.nerve} \u00B7 Wit ${G.stats.wit} \u00B7 Heart ${G.stats.heart}`));body.append(st);
+      body.append(episodeButtons());
     }
     if(k==='save'){
       body.append(el('p','empty','Your game saves itself to this artifact and to this browser, so Claude can build the next episode from your choices. To move it by hand, copy the save below or paste one in.'));
@@ -806,6 +815,12 @@ SC.tag=[
 SC.recap=[
  ['act','Previously on Legacy Admission'],
  fx({'flag:met:josie':true,'flag:met:wren':true,'flag:met:coop':true,'flag:met:dez':true,'flag:met:savannah':true,'flag:met:del':true,'flag:met:lurleen':true,'flag:met:fenn':true,'flag:met:colt':true,'flag:met:hunter':true,heart:1,charm:1}),
+ ch('How did you play Theo through Episode One?',[
+  o(`Charming. Talked my way through everything.`,{tag:['Charm +4'],fx:{charm:4,wit:1}}),
+  o(`Bold. Took the risks and said the hard things.`,{tag:['Nerve +4'],fx:{nerve:4,heart:1}}),
+  o(`Quick. Funny and sharp, always reading the room.`,{tag:['Wit +4'],fx:{wit:4,charm:1}}),
+  o(`Honest. Led with feeling and told the truth.`,{tag:['Heart +4'],fx:{heart:4,nerve:1}}),
+ ]),
  n(`You skipped ahead. Fine. The show’s cold open is a recap anyway. Tell us how Theo’s first weekend at Ashby went, and Episode Two will take it from there.`,true),
  ch('How did the night after the Tau party end?',[
   o(`Above the Hollis Theatre, with Wren.`,{fx:{'flag:wrenNight':true,'rel.wren.desire':3,'rel.wren.trust':2,'rep.campus':1},led:`Slept with Wren Calder. Saw a photo of her with a dark-haired girl on her mirror and told yourself it was nothing.`}),
@@ -1349,7 +1364,7 @@ function finish(ep){
   if(f.wrenNight)heads.push('WHITLOCK BOY SEEN LEAVING HOLLIS THEATRE APARTMENTS, SHOES IN HAND');
   if(!heads.length)heads.push('WHITLOCK BOY SURVIVES FIRST DAY; TOWN “RESERVING JUDGMENT”');
   G.flags.ep1done=true;G.scene='cold2';save(true);
-  endCard('End of Episode One','The Whitlock <em>boy</em>','Your choices are saved to your account.',heads,[
+  endCard('End of Episode One','The Whitlock <em>boy</em>',`Your choices and stats are saved. Charm ${G.stats.charm} \u00B7 Nerve ${G.stats.nerve} \u00B7 Wit ${G.stats.wit} \u00B7 Heart ${G.stats.heart}. Episode Two has options that need them.`,heads,[
     btn('Continue to Episode Two',()=>{$('overlay').innerHTML='';document.body.style.overflow='';log.innerHTML='';runScene('cold2')},true),
     btn('Open notebook',()=>openNotebook('prev')),
     btn('Start over',()=>{wipe();location.reload()})]);
@@ -1377,6 +1392,25 @@ function finish2(){
 SC.done2=[['end',2]];
 
 /* ---------- boot ---------- */
+function launchEpisode(n){
+  document.querySelectorAll('.drawer,.scrim').forEach(e=>e.remove());
+  $('overlay').innerHTML='';document.body.style.overflow='';log.innerHTML='';
+  const cp=G.cps&&G.cps[n];
+  const keep=Object.fromEntries(Object.entries(G.cps||{}).filter(([k])=>+k<=n));
+  const prev={episodesDone:brief().episodesDone,ledger:G.ledger.slice(),stats:{...G.stats}};
+  const base=n===1?fresh():JSON.parse(JSON.stringify(cp));
+  base.cps=keep;base.replays=(G.replays||0)+1;base.prevTimeline=prev;
+  G=base;runScene(EP_START[n]);
+}
+function episodeButtons(){
+  const row=el('div','row');
+  [1,2].forEach(n=>{
+    if(n>1&&!(G.cps&&G.cps[n]))return;
+    const b=btn('Replay Episode '+n,()=>{if(b.dataset.sure)launchEpisode(n);else{b.dataset.sure='1';b.textContent='Start a new timeline from Episode '+n+'?'}});
+    row.append(b);
+  });
+  return row;
+}
 function intro(saved){
   const o=el('div','card');
   o.append(el('div','k','A Prestige Drama in Text'));
@@ -1387,15 +1421,18 @@ function intro(saved){
   const go=fn=>()=>{o.remove();document.body.style.overflow='';fn()};
   const hasSave=saved&&saved.scene&&SC[saved.scene];
   if(hasSave){
+    G=norm(saved);
     const done=saved.flags.ep2done?2:saved.flags.ep1done?1:0;
-    row.append(btn(done?'Continue Season One (Episode '+(done+1)+')':'Continue',go(()=>{G=norm(saved);runScene(G.scene)}),true));
+    row.append(btn(done===2?'Continue (Episode Two complete)':done?'Continue Season One (Episode Two)':'Continue',go(()=>{G=norm(saved);runScene(G.scene)}),true));
     const nb=btn('New game',()=>{if(nb.dataset.sure){go(()=>{wipe();G=fresh();runScene('cold')})()}else{nb.dataset.sure='1';nb.textContent='Erase my save?'}});
     row.append(nb);
+    o.append(row);
+    const rl=el('div','k','Replay an episode (keeps your Episode 1 ending stats for Episode 2)');rl.style.marginTop='14px';o.append(rl);o.append(episodeButtons());
   }else{
     row.append(btn('Begin Episode One',go(()=>{G=fresh();runScene('cold')}),true));
     row.append(btn('Start at Episode Two',go(()=>{G=fresh();runScene('recap')})));
   }
-  o.append(row);$('overlay').append(o);document.body.style.overflow='hidden';row.firstChild.focus();
+  if(!hasSave)o.append(row);$('overlay').append(o);document.body.style.overflow='hidden';row.firstChild.focus();
 }
 async function boot(){
   const c=el('div','card');c.append(el('div','k','Loading your save'));$('overlay').append(c);
