@@ -145,7 +145,7 @@ const BLURB={
  fenn:'Poetry professor. Brilliant. Often horizontal.',
  colt:'Your oldest friend from St. Aldric’s. Now, somehow, here.'};
 const fresh=()=>({stats:{charm:3,nerve:1,wit:2,heart:1},rep:{campus:0,town:0},dep:0,buzz:0,
-  rel:Object.fromEntries(PEOPLE.map(p=>[p,{trust:0,desire:0,loyalty:0}])),flags:{},ledger:[],log:[],cps:{},scene:'cold'});
+  rel:Object.fromEntries(PEOPLE.map(p=>[p,{trust:0,desire:0,loyalty:0}])),flags:{},ledger:[],log:[],cps:{},locks:{},scene:'cold'});
 let G=fresh();
 let stack=[],busy=false,waitFn=null;
 const $=id=>document.getElementById(id);
@@ -173,7 +173,7 @@ async function loadDb(){
   try{if(!window.claude||!claude.use)return null;DB=await claude.use('db');if(!DB)return null;
     const s=await DB.doc(DOC).get();return s.exists?s.data():null}catch(e){return null}
 }
-function norm(g){if(!g)return g;if(!g.cps)g.cps={};if(!g.flags)g.flags={};if(!g.log)g.log=[];if(!g.ledger)g.ledger=[];
+function norm(g){if(!g)return g;if(!g.cps)g.cps={};if(!g.locks)g.locks={};if(!g.flags)g.flags={};if(!g.log)g.log=[];if(!g.ledger)g.ledger=[];
   PEOPLE.forEach(p=>{if(!g.rel[p])g.rel[p]={trust:0,desire:0,loyalty:0}});return g}
 function load(){try{const r=localStorage.getItem(KEY);return r?JSON.parse(r):null}catch(e){return null}}
 function wipe(){try{localStorage.removeItem(KEY)}catch(e){}}
@@ -224,6 +224,12 @@ function card(kicker,title,sub,after,extra){
 }
 
 /* ---------- engine ---------- */
+const locked=n=>!!(G.locks&&G.locks[n]);
+async function lockEpisode(n){
+  G.locks[n]=true;save(true);
+  if(!DB)return;
+  try{const ref=DB.doc('season1/ep'+n+'_final');const s=await ref.get();if(!s.exists)await ref.set(snapshotDoc())}catch(e){}
+}
 function snap(){const {cps,...r}=G;return JSON.parse(JSON.stringify(r))}
 const EP_START={1:'cold',2:'cold2'};
 function runScene(id){
@@ -340,7 +346,8 @@ function openNotebook(tab='people'){
         r.append(el('div','meter',`<em style="font-style:normal">standing</em><i><b style="width:${Math.max(0,Math.min(100,(v+4)/10*100))}%"></b></i><span>${v>0?'+':''}${v}</span>`));body.append(r)});
     }
     if(k==='eps'){
-      body.append(el('p','empty','Replay an episode to try different choices. Episode 2 restarts with the exact stats and story flags you had when Episode 1 ended, so stat-locked options stay reachable. Replaying starts a new timeline from that point; your later progress is replaced when you finish the episode again.'));
+      const lk=[1,2].filter(locked);
+      body.append(el('p','empty',lk.length?'Locked episodes: '+lk.join(', ')+'. Finished episodes are canon, so their choices cannot be replayed or changed. The story builds on them.':'Finishing an episode locks it in. Until then you can replay an episode to try different choices. Episode 2 restarts with the exact stats and story flags you had when Episode 1 ended.'));
       const st=el('div','panelrow');st.append(el('h3','','Current stats'));st.append(el('p','',`Charm ${G.stats.charm} \u00B7 Nerve ${G.stats.nerve} \u00B7 Wit ${G.stats.wit} \u00B7 Heart ${G.stats.heart}`));body.append(st);
       body.append(episodeButtons());
     }
@@ -1363,8 +1370,8 @@ function finish(ep){
   if(f.josieKiss)heads.push('BLUE PLATE CLOSED, THEN NOT; MAVIS “SAW A LIGHT”');
   if(f.wrenNight)heads.push('WHITLOCK BOY SEEN LEAVING HOLLIS THEATRE APARTMENTS, SHOES IN HAND');
   if(!heads.length)heads.push('WHITLOCK BOY SURVIVES FIRST DAY; TOWN “RESERVING JUDGMENT”');
-  G.flags.ep1done=true;G.scene='cold2';save(true);
-  endCard('End of Episode One','The Whitlock <em>boy</em>',`Your choices and stats are saved. Charm ${G.stats.charm} \u00B7 Nerve ${G.stats.nerve} \u00B7 Wit ${G.stats.wit} \u00B7 Heart ${G.stats.heart}. Episode Two has options that need them.`,heads,[
+  G.flags.ep1done=true;G.scene='cold2';lockEpisode(1);
+  endCard('End of Episode One','The Whitlock <em>boy</em>',`Your choices and stats are saved. Charm ${G.stats.charm} \u00B7 Nerve ${G.stats.nerve} \u00B7 Wit ${G.stats.wit} \u00B7 Heart ${G.stats.heart}. Episode One is now locked in. Your choices are canon, and Episode Two has options that need these stats.`,heads,[
     btn('Continue to Episode Two',()=>{$('overlay').innerHTML='';document.body.style.overflow='';log.innerHTML='';runScene('cold2')},true),
     btn('Open notebook',()=>openNotebook('prev')),
     btn('Start over',()=>{wipe();location.reload()})]);
@@ -1384,8 +1391,8 @@ function finish2(){
   if(f.fullStatement)heads.push('WHITLOCK BOY GIVES DEAN FULL STATEMENT; TOWN “SPLIT, THEN QUIET”');
   else if(f.partialStatement||f.silentStatement||f.lieStatement)heads.push('WHITLOCK BOY “WAITS FOR COUNSEL”; BIRDIE “NOTES THE WORD”');
   if(!heads.length)heads.push('RUSH WEEK ENDS; TOWN “RESERVING JUDGMENT”');
-  G.flags.ep2done=true;G.scene='done2';save(true);
-  endCard('End of Episode Two','The <em>Hole</em>','Your choices are saved to your account. Tell Claude to build Episode Three and it starts from exactly what you did.',heads,[
+  G.flags.ep2done=true;G.scene='done2';lockEpisode(2);
+  endCard('End of Episode Two','The <em>Hole</em>','Episode Two is now locked in. Your choices are canon. Tell Claude to build Episode Three and it starts from exactly what you did.',heads,[
     btn('Open notebook',()=>openNotebook('prev'),true),
     btn('Start over',()=>{wipe();location.reload()})]);
 }
@@ -1393,6 +1400,7 @@ SC.done2=[['end',2]];
 
 /* ---------- boot ---------- */
 function launchEpisode(n){
+  if(locked(n))return;
   document.querySelectorAll('.drawer,.scrim').forEach(e=>e.remove());
   $('overlay').innerHTML='';document.body.style.overflow='';log.innerHTML='';
   const cp=G.cps&&G.cps[n];
@@ -1405,7 +1413,7 @@ function launchEpisode(n){
 function episodeButtons(){
   const row=el('div','row');
   [1,2].forEach(n=>{
-    if(n>1&&!(G.cps&&G.cps[n]))return;
+    if(locked(n)||(n>1&&!(G.cps&&G.cps[n])))return;
     const b=btn('Replay Episode '+n,()=>{if(b.dataset.sure)launchEpisode(n);else{b.dataset.sure='1';b.textContent='Start a new timeline from Episode '+n+'?'}});
     row.append(b);
   });
@@ -1424,10 +1432,13 @@ function intro(saved){
     G=norm(saved);
     const done=saved.flags.ep2done?2:saved.flags.ep1done?1:0;
     row.append(btn(done===2?'Continue (Episode Two complete)':done?'Continue Season One (Episode Two)':'Continue',go(()=>{G=norm(saved);runScene(G.scene)}),true));
+    const anyLock=Object.values(G.locks||{}).some(Boolean);
     const nb=btn('New game',()=>{if(nb.dataset.sure){go(()=>{wipe();G=fresh();runScene('cold')})()}else{nb.dataset.sure='1';nb.textContent='Erase my save?'}});
-    row.append(nb);
+    if(!anyLock)row.append(nb);
     o.append(row);
-    const rl=el('div','k','Replay an episode (keeps your Episode 1 ending stats for Episode 2)');rl.style.marginTop='14px';o.append(rl);o.append(episodeButtons());
+    const eb=episodeButtons();
+    if(eb.children.length){const rl=el('div','k','Replay an episode you haven\u2019t finished locking in');rl.style.marginTop='14px';o.append(rl);o.append(eb)}
+    else o.append(el('p','fine','Your finished episodes are locked. Your choices are canon, and the story builds on them.'));
   }else{
     row.append(btn('Begin Episode One',go(()=>{G=fresh();runScene('cold')}),true));
     row.append(btn('Start at Episode Two',go(()=>{G=fresh();runScene('recap')})));
