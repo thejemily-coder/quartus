@@ -1,0 +1,808 @@
+<title>Legacy Admission</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=DM+Mono:wght@400;500&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+/* Layout: one narrow reading column like a script on a nightstand. Sticky header with Notebook,
+   a log that grows downward, and a bottom bar holding Continue. Title cards are full-bleed black. */
+:root{
+  --bg:#f1f2f0; --panel:#ffffff; --fg:#1b1f1d; --muted:#5b6561; --line:#d4d9d6;
+  --accent:#b3123f; --accent-ink:#ffffff; --moss:#17665a; --soft:#e7ebe8;
+  --ink:#0b0d0c; --ink-fg:#f1ece4; --ink-dim:#a49d95;
+  --good:#17665a; --bad:#b3123f;
+  --c-theo:#b3123f; --c-coop:#8a5a00; --c-dez:#5a3fb0; --c-josie:#17665a; --c-del:#7a5a2c;
+  --c-wren:#b0276f; --c-savannah:#9a7a00; --c-fenn:#3b5f8a; --c-lurleen:#6b2f6b; --c-ladies:#555f5b;
+  --c-hunter:#8a3b2c; --c-colt:#a12a2a; --c-graham:#444c49;
+  --display:"Bodoni Moda","Didot",Georgia,serif; --body:"Newsreader",Georgia,"Times New Roman",serif; --mono:"DM Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c1110; --panel:#141b19; --fg:#e8ebe7; --muted:#8e9a96; --line:#26302d;
+  --accent:#ff5c8f; --accent-ink:#1a0710; --moss:#4fd1b5; --soft:#1b2421; --good:#4fd1b5; --bad:#ff5c8f;
+  --c-theo:#ff5c8f; --c-coop:#e0a93b; --c-dez:#a994ff; --c-josie:#4fd1b5; --c-del:#d1a46b;
+  --c-wren:#ff7bbd; --c-savannah:#e8cb4a; --c-fenn:#7fb0e8; --c-lurleen:#d08ad0; --c-ladies:#a3afab;
+  --c-hunter:#f0866f; --c-colt:#ff7070; --c-graham:#a3afab; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c1110; --panel:#141b19; --fg:#e8ebe7; --muted:#8e9a96; --line:#26302d;
+  --accent:#ff5c8f; --accent-ink:#1a0710; --moss:#4fd1b5; --soft:#1b2421; --good:#4fd1b5; --bad:#ff5c8f;
+  --c-theo:#ff5c8f; --c-coop:#e0a93b; --c-dez:#a994ff; --c-josie:#4fd1b5; --c-del:#d1a46b;
+  --c-wren:#ff7bbd; --c-savannah:#e8cb4a; --c-fenn:#7fb0e8; --c-lurleen:#d08ad0; --c-ladies:#a3afab;
+  --c-hunter:#f0866f; --c-colt:#ff7070; --c-graham:#a3afab; color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:19px;line-height:1.6;padding-inline:16px;margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.app{max-width:700px;margin:0 auto;min-height:100%;display:flex;flex-direction:column}
+
+header.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display);font-weight:700;letter-spacing:.02em;font-size:18px}
+.brand small{display:block;font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.btn{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:7px 14px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+
+#log{flex:1;padding-block:28px 24px;display:flex;flex-direction:column;gap:18px}
+#log>*{animation:rise .35s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.slug{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-left:3px solid var(--accent);padding-left:12px;margin-top:14px}
+.n{margin:0;text-wrap:pretty}
+.n.em{font-style:italic}
+.s{display:flex;flex-direction:column;gap:2px}
+.s .who{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--c,var(--muted))}
+.s .say{margin:0;padding-left:14px;border-left:2px solid var(--c,var(--line))}
+.s.me .say{font-style:italic}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.06em;padding:3px 9px;border-radius:999px;background:var(--soft);color:var(--muted)}
+.chip.up{color:var(--good)}.chip.down{color:var(--bad)}
+.thread{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:14px;display:flex;flex-direction:column;gap:6px;max-width:440px}
+.thread .top{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:center;padding-bottom:6px}
+.bub{max-width:82%;padding:8px 13px;border-radius:18px;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:15px;line-height:1.4}
+.bub.them{align-self:flex-start;background:var(--soft)}
+.bub.me{align-self:flex-end;background:var(--accent);color:var(--accent-ink)}
+.bub .nm{display:block;font-size:11px;opacity:.7;margin-bottom:1px}
+.choice{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.choice .q{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.opt{text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt:disabled{cursor:default}
+.opt.picked{border-color:var(--accent);background:var(--soft)}
+.opt.gone{opacity:.4}
+.opt.locked{opacity:.55;border-style:dashed}
+.opt .t{display:block}
+.opt .tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--moss);border:1px solid var(--line);border-radius:4px;padding:1px 6px}
+.tag.lock{color:var(--muted)}
+.roll{font-family:var(--mono);font-size:13px;border:1px dashed var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:4px;background:var(--panel)}
+.roll b{letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+.roll .res{font-size:15px}
+.roll .res.pass{color:var(--good)}.roll .res.fail{color:var(--bad)}
+
+.dock{position:sticky;bottom:0;background:var(--bg);padding-block:12px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);display:flex;justify-content:center;min-height:66px}
+.dock .go{width:100%;max-width:700px;background:var(--accent);color:var(--accent-ink);border:0;border-radius:10px;padding:13px;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.dock .hint{align-self:center;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* title cards: black like a broadcast, in both themes */
+.card{position:fixed;inset:0;z-index:20;background:var(--ink);color:var(--ink-fg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 24px;gap:14px;animation:fade .7s ease both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.card .k{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-dim)}
+.card h1{font-family:var(--display);font-weight:700;font-size:clamp(38px,9vw,76px);line-height:1.04;margin:0;text-wrap:balance;max-width:14ch}
+.card h1 em{color:var(--accent);font-style:italic;font-weight:500}
+.card p{margin:0;font-style:italic;color:var(--ink-dim);max-width:34ch}
+.card .btn{margin-top:22px;background:transparent;color:var(--ink-fg);border-color:#4a4540}
+.card .btn:hover{border-color:var(--accent)}
+.card .fine{font-family:var(--mono);font-size:11px;font-style:normal;letter-spacing:.04em;line-height:1.6;max-width:46ch;color:var(--ink-dim)}
+.card .row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+
+/* notebook drawer */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:30}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--bg);z-index:31;overflow-y:auto;padding:calc(18px + env(safe-area-inset-top,0px)) 16px calc(24px + env(safe-area-inset-bottom,0px));border-left:1px solid var(--line);display:flex;flex-direction:column;gap:16px}
+.drawer h2{font-family:var(--display);font-size:26px;margin:0}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs .btn[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.panelrow{display:flex;flex-direction:column;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+.panelrow h3{margin:0;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--c,var(--fg))}
+.panelrow p{margin:0;font-size:16px;color:var(--muted);line-height:1.45}
+.meter{display:grid;grid-template-columns:70px 1fr 28px;gap:8px;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.meter i{display:block;height:6px;background:var(--soft);border-radius:3px;position:relative;overflow:hidden}
+.meter i b{position:absolute;left:0;top:0;bottom:0;background:var(--c,var(--accent))}
+.meter span{font-variant-numeric:tabular-nums;text-align:right;color:var(--fg)}
+.ledger li{margin:0 0 10px;font-size:16px}
+.ledger{padding-left:18px;margin:0}
+.empty{font-style:italic;color:var(--muted);font-size:16px}
+.gossip{font-family:var(--mono);font-size:13px;letter-spacing:.02em;line-height:1.55;border-top:1px solid var(--ink-dim);padding-top:10px;text-align:left;color:var(--ink-fg)}
+.gossip li{margin-bottom:8px}
+@media (prefers-reduced-motion:reduce){#log>*,.card{animation:none}}
+@media (max-width:420px){body{font-size:18px}}
+</style>
+
+<div class="app" id="app">
+  <header class="bar">
+    <div class="brand">Legacy Admission<small id="actLabel">Season 1 &middot; Episode 1</small></div>
+    <button class="btn" id="nbBtn" type="button">Notebook</button>
+  </header>
+  <main id="log" aria-live="polite"></main>
+  <div class="dock" id="dock"><span class="hint">Loading</span></div>
+</div>
+<div id="overlay"></div>
+
+<script>
+/* ---------- state ---------- */
+const KEY='legacy-admission-s1-v1';
+const PEOPLE=['josie','wren','coop','dez','savannah','del','lurleen','fenn','colt'];
+const NAMES={theo:'You',coop:'Coop',dez:'Dez',josie:'Josie',del:'Del',wren:'Wren',savannah:'Savannah-Claire',fenn:'Dr. Fenn',lurleen:'Mayor Lurleen',birdie:'Birdie',mavis:'Mavis',ladies:'The Gazebo Ladies',hunter:'Hunter',colt:'Colt',graham:'Dad',odell:'Ms. Odell'};
+const BLURB={
+ josie:'Pre-med on scholarship. Works the Blue Plate counter. Allergic to rich-kid nonsense.',
+ wren:'Sophomore transfer. Theatre. The funniest person at any party and the saddest at the end of it.',
+ coop:'Your roommate. Lacrosse recruit. Sweet as pie, dense as a brick, hitting his head a lot.',
+ dez:'Your RA. Smarter than everybody. Will not lie to you and expects the same.',
+ savannah:'President of Delta Magnolia Pi. Runs her chapter like a small government.',
+ del:'Josie’s mother. Owns the Blue Plate. Sees through you in about ten seconds.',
+ lurleen:'Mayor. Funeral director. Notary. Knows what you did before you do.',
+ fenn:'Poetry professor. Brilliant. Often horizontal.',
+ colt:'Your oldest friend from St. Aldric’s. Now, somehow, here.'};
+const fresh=()=>({stats:{charm:3,nerve:1,wit:2,heart:1},rep:{campus:0,town:0},dep:0,buzz:0,
+  rel:Object.fromEntries(PEOPLE.map(p=>[p,{trust:0,desire:0,loyalty:0}])),flags:{},ledger:[],scene:'cold'});
+let G=fresh();
+let stack=[],busy=false,waitFn=null;
+const $=id=>document.getElementById(id);
+const log=$('log'),dock=$('dock');
+const cap=s=>s[0].toUpperCase()+s.slice(1);
+const el=(tag,cls,html)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e};
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+
+function save(){try{localStorage.setItem(KEY,JSON.stringify(G))}catch(e){}}
+function load(){try{const r=localStorage.getItem(KEY);return r?JSON.parse(r):null}catch(e){return null}}
+function wipe(){try{localStorage.removeItem(KEY)}catch(e){}}
+
+/* effective stat, with a temporary buzz modifier */
+function eff(st){let v=G.stats[st];if(G.buzz>=1&&st==='nerve')v+=1;if(G.buzz>=2&&st==='wit')v-=1;return v}
+
+function apply(fx){
+  const chips=[];
+  for(const k in fx){const v=fx[k];
+    if(v===0)continue;
+    if(k.startsWith('flag:')){G.flags[k.slice(5)]=v;continue}
+    if(k==='dep'){G.dep+=v;continue}
+    if(k==='buzz'){G.buzz=Math.max(0,G.buzz+v);continue}
+    if(k in G.stats){G.stats[k]+=v;chips.push([cap(k)+' '+(v>0?'+':'')+v,v>0]);continue}
+    if(k.startsWith('rep.')){const r=k.slice(4);G.rep[r]+=v;chips.push([(v>0?'▲ ':'▼ ')+(r==='campus'?'Campus':'Town')+' reputation',v>0]);continue}
+    if(k.startsWith('rel.')){const [,p,m]=k.split('.');G.rel[p][m]+=v;chips.push([(v>0?'▲ ':'▼ ')+NAMES[p].replace('Mayor ','')+' · '+cap(m),v>0])}
+  }
+  if(chips.length){const c=el('div','chips');chips.forEach(([t,up])=>c.append(el('span','chip '+(up?'up':'down'),esc(t))));log.append(c)}
+}
+
+/* ---------- rendering ---------- */
+function scroll(){const last=log.lastElementChild;if(last)last.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'end'})}
+function setDock(label,fn){
+  dock.innerHTML='';waitFn=fn||null;
+  if(!label){dock.append(el('span','hint','Choose'));return}
+  const b=el('button','go',esc(label));b.type='button';b.onclick=()=>{if(waitFn)waitFn()};dock.append(b);
+}
+function say(who,text){
+  if(who!=='theo'&&PEOPLE.includes(who))G.flags['met:'+who]=true;
+  const d=el('div','s'+(who==='theo'?' me':''));d.style.setProperty('--c','var(--c-'+(who==='birdie'||who==='mavis'||who==='odell'?'ladies':who)+')');
+  d.append(el('div','who',esc(NAMES[who]||who)));d.append(el('p','say',text));log.append(d);
+}
+function thread(title,msgs){
+  const t=el('div','thread');t.append(el('div','top',esc(title)));
+  msgs.forEach(([from,txt])=>{const b=el('div','bub '+(from==='me'?'me':'them'));
+    if(from!=='me'&&from!=='them')b.append(el('span','nm',esc(NAMES[from]||from)));
+    b.append(document.createTextNode(txt));t.append(b)});
+  log.append(t);
+}
+function card(kicker,title,sub,after,extra){
+  const o=el('div','card');
+  o.append(el('div','k',esc(kicker)));o.append(el('h1','',title));if(sub)o.append(el('p','',esc(sub)));
+  if(extra)o.append(extra);
+  const b=el('button','btn','Continue');b.type='button';
+  b.onclick=()=>{o.remove();document.body.style.overflow='';after()};o.append(b);
+  $('overlay').append(o);document.body.style.overflow='hidden';b.focus();
+}
+
+/* ---------- engine ---------- */
+function runScene(id){
+  G.scene=id;save();stack=[{steps:SC[id],i:0}];next();
+}
+function next(){
+  setDock(null);
+  while(stack.length){
+    const f=stack[stack.length-1];
+    if(f.i>=f.steps.length){stack.pop();continue}
+    const st=f.steps[f.i++];
+    if(exec(st,f))return;
+  }
+  setDock('');
+}
+function pause(){scroll();setDock('Continue ▸',()=>next())}
+function exec(st,f){
+  const [t,a,b,c,d]=st;
+  switch(t){
+    case 'slug':log.append(el('div','slug',esc(a)));return false;
+    case 'n':{log.append(el('p','n'+(b?' em':''),a));const nx=f.steps[f.i];if(nx&&nx[0]==='n')return false;pause();return true}
+    case 's':say(a,b);pause();return true;
+    case 't':thread(a,b);pause();return true;
+    case 'fx':apply(a);if(b)G.ledger.push(b);return false;
+    case 'led':G.ledger.push(a);return false;
+    case 'act':$('actLabel').textContent=a;return false;
+    case 'if':{const br=a()?b:(c||[]);if(br.length)stack.push({steps:br,i:0});return false}
+    case 'go':runScene(a);return true;
+    case 'card':card(a,b,c,()=>next());return true;
+    case 'chk':return check(a,b,c,d);
+    case 'c':return choice(a,b);
+    case 'end':finish();return true;
+  }
+  return false;
+}
+function check(stat,dc,label,[pass,fail]){
+  const e=eff(stat);const r1=1+Math.floor(Math.random()*6),r2=1+Math.floor(Math.random()*6);const tot=r1+r2+e;const ok=tot>=dc;
+  const box=el('div','roll');box.append(el('b','',esc(cap(stat))+' check · '+esc(label)));
+  const line=el('span','',`Rolling 2d6 + ${cap(stat)} ${e} against ${dc}…`);box.append(line);log.append(box);scroll();
+  setDock(null);
+  setTimeout(()=>{
+    line.textContent=`${r1} + ${r2} + ${e} = ${tot} vs ${dc}`;
+    box.append(el('span','res '+(ok?'pass':'fail'),ok?'Success':'Not this time'));
+    G.flags['last:'+stat]=ok;
+    stack.push({steps:ok?pass:fail,i:0});pause();
+  },matchMedia('(prefers-reduced-motion:reduce)').matches?0:650);
+  return true;
+}
+function choice(q,opts){
+  const box=el('div','choice');box.append(el('div','q',esc(q)));
+  const vis=opts.filter(o=>!o.show||o.show());
+  const btns=[];
+  vis.forEach((o,i)=>{
+    const lock=o.req&&eff(o.req[0])<o.req[1];
+    const bt=el('button','opt'+(lock?' locked':''));bt.type='button';bt.disabled=!!lock;
+    bt.append(el('span','t',`${i+1}. ${o.t}`));
+    const tg=el('span','tags');
+    (o.tag||[]).forEach(x=>tg.append(el('span','tag',esc(x))));
+    if(lock)tg.append(el('span','tag lock',`needs ${cap(o.req[0])} ${o.req[1]}`));
+    if(tg.children.length)bt.append(tg);
+    bt.onclick=()=>pick(o,bt,btns);
+    btns.push(bt);box.append(bt);
+  });
+  box._keys=btns;log.append(box);window._ch={btns,vis,opts:vis};scroll();setDock(null);return true;
+}
+function pick(o,bt,btns){
+  window._ch=null;
+  btns.forEach(b=>{b.disabled=true;if(b!==bt)b.classList.add('gone')});bt.classList.add('picked');
+  if(o.led)G.ledger.push(o.led);
+  if(o.fx)apply(o.fx);
+  save();
+  if(o.then)stack.push({steps:o.then,i:0});
+  next();
+}
+document.addEventListener('keydown',e=>{
+  if(e.target.closest&&e.target.closest('.drawer'))return;
+  if(window._ch&&/^[1-9]$/.test(e.key)){const i=+e.key-1;const b=window._ch.btns[i];if(b&&!b.disabled){b.click();e.preventDefault()}return}
+  if((e.key===' '||e.key==='Enter'||e.key==='ArrowRight')&&waitFn&&document.activeElement===document.body){e.preventDefault();waitFn()}
+});
+
+/* ---------- notebook ---------- */
+function openNotebook(tab='people'){
+  const old=document.querySelector('.drawer');if(old){old.remove();document.querySelector('.scrim')?.remove()}
+  const sc=el('div','scrim');const dr=el('aside','drawer');dr.setAttribute('role','dialog');dr.setAttribute('aria-label','Notebook');
+  const close=()=>{sc.remove();dr.remove()};sc.onclick=close;
+  const head=el('div','');head.style.cssText='display:flex;justify-content:space-between;align-items:center;gap:10px';
+  head.append(el('h2','','Notebook'));const x=el('button','btn','Close');x.type='button';x.onclick=close;head.append(x);dr.append(head);
+  const tabs=el('div','tabs');tabs.setAttribute('role','tablist');
+  const body=el('div','');body.style.cssText='display:flex;flex-direction:column;gap:12px';
+  const defs=[['people','People'],['you','You'],['town','Town'],['prev','Previously']];
+  const draw=k=>{
+    [...tabs.children].forEach(b=>b.setAttribute('aria-selected',b.dataset.k===k));body.innerHTML='';
+    if(k==='people'){
+      const met=PEOPLE.filter(p=>G.flags['met:'+p]);
+      if(!met.length)body.append(el('p','empty','You haven’t met anyone yet.'));
+      met.forEach(p=>{const r=el('div','panelrow');r.style.setProperty('--c','var(--c-'+(p==='lurleen'?'lurleen':p)+')');
+        r.append(el('h3','',esc(NAMES[p])));r.append(el('p','',esc(BLURB[p])));
+        ['trust','desire','loyalty'].forEach(m=>{const v=G.rel[p][m];const pct=Math.max(0,Math.min(100,(v+3)/10*100));
+          const mm=el('div','meter',`<em style="font-style:normal">${m}</em><i><b style="width:${pct}%"></b></i><span>${v>0?'+':''}${v}</span>`);r.append(mm)});
+        body.append(r)});
+    }
+    if(k==='you'){
+      const r=el('div','panelrow');r.append(el('h3','','Theo Whitlock'));r.append(el('p','','18. A last name on a dorm. A night from senior year you aren’t discussing.'));
+      ['charm','nerve','wit','heart'].forEach(s=>{const v=G.stats[s];r.append(el('div','meter',`<em style="font-style:normal">${s}</em><i><b style="width:${Math.min(100,v*14)}%"></b></i><span>${v}</span>`))});
+      body.append(r);
+    }
+    if(k==='town'){
+      [['campus','Ashby College','What the Greek system, your classmates, and the quad think of you.'],['town','Marlowe Springs','What the diner, the Gazebo, and the mayor’s hearse think of you.']].forEach(([id,t,d])=>{
+        const v=G.rep[id];const r=el('div','panelrow');r.append(el('h3','',t));r.append(el('p','',d));
+        r.append(el('div','meter',`<em style="font-style:normal">standing</em><i><b style="width:${Math.max(0,Math.min(100,(v+4)/10*100))}%"></b></i><span>${v>0?'+':''}${v}</span>`));body.append(r)});
+    }
+    if(k==='prev'){
+      if(!G.ledger.length)body.append(el('p','empty','Nothing on the record yet. That won’t last.'));
+      else{const ul=el('ul','ledger');G.ledger.forEach(t=>ul.append(el('li','',esc(t))));body.append(ul)}
+    }
+  };
+  defs.forEach(([k,l])=>{const b=el('button','btn',l);b.type='button';b.dataset.k=k;b.setAttribute('role','tab');b.onclick=()=>draw(k);tabs.append(b)});
+  dr.append(tabs);dr.append(body);draw(tab);
+  document.body.append(sc,dr);
+}
+$('nbBtn').onclick=()=>openNotebook();
+
+/* ---------- script helpers ---------- */
+const n=(t,em)=>['n',t,em], s=(w,t)=>['s',w,t], slug=t=>['slug',t], fx=(o,l)=>['fx',o,l], led=t=>['led',t];
+const o=(t,x={})=>({t,...x});
+const ch=(q,opts)=>['c',q,opts];
+const SC={};
+
+/* ============ COLD OPEN ============ */
+SC.cold=[
+ ['act','Cold Open'],
+ slug('EXT. HIGHWAY 41 / THE ONLY STOPLIGHT — MARLOWE SPRINGS, GEORGIA — LATE AFTERNOON'),
+ n(`Eleven miles outside Ashby College, your mother’s 1989 Mercedes wagon makes a noise like a cello falling down a staircase. Then it stops being a car and becomes a very expensive opinion.`),
+ n(`It dies at the only stoplight in Marlowe Springs, population 11,400. The light turns green and stays that way, out of what you can only call spite.`),
+ n(`You pop the hood and look at the engine the way men in movies do: hands on hips, zero information.`),
+ s('birdie',`Is that a Whitlock?`),
+ n(`You didn’t see them arrive. Three women in church hats are standing around the car holding casserole dishes. They may have come with the town.`),
+ s('mavis',`It’s the Whitlock boy. Look at that jaw.`),
+ s('birdie',`That’s Eleanor’s jaw.`),
+ s('mavis',`Eleanor Pruitt had a better jaw.`),
+ s('birdie',`Eleanor Pruitt is deceased, Mavis. We’re allowed to say she had a jaw.`),
+ n(`Your mother has been dead for four years and you have never once heard her discussed this efficiently.`),
+ ch('How do you handle the welcome committee?',[
+  o(`“Ladies. If I’d known the welcome committee was this beautiful, I’d have broken down sooner.”`,{tag:['Charm check'],then:[
+    ['chk','charm',8,'the church hats',[
+      [s('birdie',`Oh, he’s a charmer.`),s('mavis',`His granddaddy was a charmer. Look how that turned out.`),n(`A casserole is pressed into your hands. It is warm and aggressive. You have been adopted for exactly as long as it takes you to leave.`),fx({'rep.town':1,charm:1})],
+      [s('mavis',`That’s exactly what his granddaddy said.`),s('birdie',`To me. In 1974. Behind the Piggly Wiggly.`),n(`You are no longer sure which of you is being propositioned. You say nothing. It is the right decision.`),fx({'rep.town':-1})]
+    ]]]}),
+  o(`“I’m told there’s a mechanic named Tillman. I’m also told you already called him.”`,{tag:['Wit'],fx:{wit:1,'rep.town':1},then:[
+    s('birdie',`Mavis called him at 2:14.`),s('mavis',`I called him at 2:11. Birdie texts in all caps. The whole town has seen your car.`),
+    n(`You check your phone. Nine unread messages from numbers you don’t know. All of them say, in different words, WELCOME.`)]}),
+  o(`“She’d have hated this. My mother. She loved this car.”`,{tag:['Heart'],fx:{heart:1,'rep.town':1},then:[
+    n(`The three women go quiet, which you suspect is rare. Birdie sets her casserole on your hood, then thinks better of it and takes it back.`),
+    s('mavis',`She sang at the Gazebo once. “Moon River.” A man proposed to the wrong woman.`),s('birdie',`He’s still married to the wrong woman.`),
+    n(`You laugh. It surprises you. It’s the first time you’ve laughed at something about her without it turning into something else.`)]}),
+  o(`Try to push it through the intersection yourself.`,{tag:['Nerve'],fx:{nerve:1,'flag:pushedCar':true},then:[
+    n(`You put your shoulder into the trunk and shove. The Mercedes rolls four feet, thinks about it, and rolls back two. A seventeen-year-old with a phone is filming from the Dairy Dream across the road.`),
+    n(`The light turns red. You are now, technically, a pedestrian blocking traffic that does not exist.`),
+    s('mavis',`Bless his heart.`),s('birdie',`I don’t think that’s the meaning of “bless his heart” here.`),s('mavis',`It’s the only one I’ve got.`),fx({'rep.town':-1,'rep.campus':1})]}),
+ ]),
+ n(`A hearse pulls up beside you. Long, black, immaculate. The vanity plate reads SLOW BIZ.`),
+ n(`The driver is a woman in her sixties wearing pearl earrings, a black funeral suit, and a mayoral sash over it, like a pageant queen who has seen things.`),
+ s('lurleen',`Mayor Lurleen Beauregard-Pike. Also Beauregard-Pike & Daughters Funeral Home. Also notary. In Marlowe Springs one person holds many offices, and every office has a casserole.`),
+ s('lurleen',`County tow truck is in a ditch. Don’t ask. The hearse has a hitch. Don’t make that face, baby. She’s towed worse than a Mercedes.`),
+ s('theo',`Is— is there a body in there?`),
+ s('lurleen',`Mr. Odell. He’s retired. Easy company. Ride up front.`),
+ slug('INT. HEARSE — MOVING — CONTINUOUS'),
+ n(`The Mercedes trails behind on a chain like a sad dog. The Gazebo Ladies wave from the curb. One of them is already on the phone.`),
+ s('lurleen',`I want you to know, we will know everything about you by supper. So save us time. Tell me one thing right now.`),
+ ch('Tell the mayor one thing.',[
+  o(`“I’m just here for the dining hall.”`,{tag:['Charm'],fx:{'rel.lurleen.trust':0,charm:1},then:[
+    s('lurleen',`Mm. Everyone says something about the dining hall. Last year it was a boy running from the law. Nice kid. Missed his arraignment but was excellent at trivia.`)]}),
+  o(`“My mother talked about this town all the time.”`,{tag:['Heart'],fx:{heart:1,'rel.lurleen.trust':1},then:[
+    s('lurleen',`Eleanor Pruitt. I did her mama’s funeral. Eleanor sang. It was the best funeral I ever did. I’m sorry I said that, I know it’s a strange thing to be proud of.`),
+    n(`You tell her it isn’t. Mostly it isn’t. Mr. Odell has no comment.`)]}),
+  o(`“There’s nothing worth knowing.”`,{tag:['Nerve'],fx:{nerve:1,'rel.lurleen.trust':-1},led:`Told Mayor Lurleen there was "nothing worth knowing." She did not believe you.`,then:[
+    s('lurleen',`Everybody says that.`),n(`She doesn’t look at you. She doesn’t have to. She looks at the road in a way that you feel in your teeth.`),
+    s('lurleen',`Usually it’s the opposite.`)]}),
+  o(`“What’s yours?”`,{tag:['Wit'],fx:{wit:1,'rel.lurleen.loyalty':1},then:[
+    s('lurleen',`I’ve run unopposed since 2009. Nobody wants to be the one who has to bury me.`),
+    n(`She grins. It is the first honest thing anyone has said to you in a week.`)]}),
+ ]),
+ n(`Through the windshield: iron gates, a green quad, a clock tower, and a banner that reads WELCOME, CLASS OF 2030. Over the gate, in stone: MEMINIMUS. We remember.`),
+ n(`Your phone buzzes against your thigh.`),
+ ['t','Dad',[['them','Arrived? Marcus is sorting the car.'],['them','Remember: we are guests of history, not its subjects. Charm everyone. Discuss nothing.'],['them','Especially last spring. Especially the lake house.']]],
+ ch('You read it three times. Then:',[
+  o(`“Yes, sir.”`,{tag:['Obey'],fx:{'rel.dez.trust':0},led:`Told your father "Yes, sir" when he said not to discuss the lake house.`,then:[
+    n(`Three dots. Then nothing. That’s the closest you two have ever come to a conversation.`)]}),
+  o(`“Mom’s car died. She’d have loved the symbolism.”`,{tag:['Heart'],fx:{heart:1},then:[
+    n(`Delivered. Read. No reply. You watch the little word “Read” sit there like a gravestone.`)]}),
+  o(`“Which spring? There were several.”`,{tag:['Nerve'],fx:{nerve:1},led:`Smart-mouthed your father about "last spring." He didn’t answer.`,then:[
+    n(`The dots appear. The dots disappear. You’ve never had the last word with him, but you’re pretty sure you just had the last silence.`)]}),
+  o(`Put the phone face-down on your knee.`,{tag:['Say nothing'],fx:{dep:0},then:[n(`The phone vibrates against your leg twice more. You let it. Mr. Odell, behind you, is not going to tell.`)]}),
+ ]),
+ n(`The hearse rolls through the gates. For the record, this is how the Whitlock boy arrived at Ashby: in the front seat of a hearse, behind a dead car, with a casserole, and a secret.`,true),
+ ['card','EPISODE ONE',`Legacy <em>Admission</em>`,`“We remember.”`],
+ ['go','move'],
+];
+
+/* ============ MOVE-IN ============ */
+SC.move=[
+ ['act','Act One · Welcome Home, Whitlock'],
+ slug('EXT. WHITLOCK HALL — ASHBY COLLEGE — EVENING'),
+ n(`The Augustus Whitlock Residence Hall is a red-brick Georgian with white columns, a bronze plaque, and a third-floor bathroom your grandfather paid for and nobody has ever successfully used.`),
+ n(`The plaque reads: A MAN IS REMEMBERED BY WHAT HE BUILDS. Underneath, in tiny scratched letters: …AND BY WHAT HE LEAVES TO THE HOMEOWNERS’ ASSOCIATION. You like whoever did that.`),
+ s('dez',`Theo Whitlock. Third floor, room 314. I’m Desmond. Not Des, not Desi, not “my guy.” Dez, if I like you, which I’ll know by Thursday.`),
+ n(`He’s holding a clipboard like a man who has already sentenced someone. A lanyard with thirty keys hangs off him, and on it, a tiny rubber duck in a hard hat.`),
+ s('dez',`I’m your RA. Welcome to the building your grandfather named after himself. Fire exits are marked. Please don’t test them. Students always test them. It’s in the handbook that you’re required to do it once.`),
+ s('theo',`That’s not in the handbook.`),
+ s('dez',`It’s in my handbook.`),
+ slug('INT. ROOM 314 — CONTINUOUS'),
+ n(`You hear Room 314 before you see it: a grunt, a crash, a pained “I’M FINE.”`),
+ n(`Inside, a six-foot-three lacrosse recruit in a tank top is lying on the floor beneath a bunk bed he has assembled so the ladder faces the ceiling. Fourteen tubs of protein powder form a load-bearing wall. A hand-lettered sign: COOP’S CORNER (GUESTS WELCOME).`),
+ s('coop',`Whitlock! Roommate! Hold on—`),
+ n(`He stands up fast and cracks his head on his own loft rail.`),
+ s('coop',`—I’M FINE. Cooper Tillman. Coop. My brothers are Cooper too, but I’m the first Cooper. Dad ran out of names and just started over.`),
+ n(`He hugs you. It lasts eleven seconds. You count.`),
+ s('coop',`My daddy owns Tillman’s Package and Spirits, so if you need anything, and by “anything” I mean legal and also not, I know a guy. Me. I’m the guy.`),
+ s('coop',`I’m pre-law. Or pre-lax. One of those. I’m the first in my family to go to college. They said I could major in anything, so I picked whatever has the most Fridays off.`),
+ s('dez',`He’s undeclared.`),
+ s('coop',`I’m “declared to be undeclared.”`),
+ ch('The bed situation.',[
+  o(`“Coop. The ladder is on the ceiling.” Take the bottom bunk.`,{tag:['Wit'],fx:{wit:1,'rel.coop.trust':1},then:[
+    s('coop',`That’s so you can reach the sky from the bed. It’s a feature.`),s('dez',`It is a fall risk.`),s('coop',`It’s a “night view.”`)]}),
+  o(`Quietly fix the loft while Coop talks.`,{tag:['Heart'],fx:{heart:1,'rel.coop.loyalty':2},then:[
+    n(`You unscrew the rail, flip the ladder, and retighten it while Coop describes his family’s dog’s many careers. When you finish, he looks at the bed, then at you, for a long moment.`),
+    s('coop',`That’s the nicest thing anyone’s ever done in a room I was in.`),n(`You don’t know what to say, so you say nothing, and for once it’s not a strategy.`)]}),
+  o(`Rock, paper, scissors for the loft.`,{tag:['Charm'],fx:{charm:1,'rel.coop.trust':1},then:[
+    n(`Coop throws rock six times in a row. He announces it each time, loudly, and then throws rock again, like a man whose body will not follow his own advice.`),
+    s('coop',`I had a feeling you’d think I’d throw something else.`)]}),
+ ]),
+ n(`Dez waits until Coop is in the hall hunting for a duck he swears just walked past, then leans against your doorframe with his clipboard against his chest.`),
+ s('dez',`Can I ask you something? Not as an RA.`),
+ s('dez',`Your file says you went to St. Aldric’s. Your file also says you got into Duke, Vanderbilt, and a place in Connecticut that sent you a hat. Nobody picks Marlowe Springs, Georgia over a hat.`),
+ s('dez',`So. Why Ashby?`),
+ ch('Why Ashby?',[
+  o(`“Legacy. I wanted to see what my money looks like.”`,{tag:['Charm'],fx:{charm:1,'rep.campus':1},then:[
+    s('dez',`That’s a good line. I can tell you’ve used it. I’m going to let it be a good line.`)]}),
+  o(`“My mom would’ve wanted me here.”`,{tag:['Heart'],fx:{heart:1,'rel.dez.trust':1},then:[
+    n(`Dez’s face does a thing: not softening, exactly. More like a door opening a quarter-inch and then deciding to see who’s on the porch.`),
+    s('dez',`That’s the first true thing you’ve said. I can tell. It had weight.`)]}),
+  o(`“Small pond. Big fish.”`,{tag:['Wit'],fx:{wit:1},then:[
+    s('dez',`You’re not a fish. You’re a golden retriever who learned to read. It’s fine. We all deserve a hobby.`)]}),
+  o(`“Next question.”`,{tag:['Nerve'],fx:{nerve:1,'rel.dez.trust':-1},led:`Dez asked why you left St. Aldric’s. You told him "Next question." He wrote something on his clipboard.`,then:[
+    s('dez',`Oh. We’re doing that.`),n(`He writes something on the clipboard. You can’t see what. You are almost certain it is not “fire exits.”`)]}),
+ ]),
+ s('dez',`For the record, I’m the one person on this floor who will not lie to you. It’s either my best quality or my worst. We’ll find out.`),
+ ['t','Third Floor (Haunted)',[['dez','Welcome to the group chat. Rules: no memes before 9. No heat lamps. No lying to me.'],['coop','HI GUYS!!!!'],['coop','i found the duck'],['dez','Coop that is my duck. Put him back where you found him.'],['coop','he looks sad'],['dez','He is a duck wearing a hard hat. It is the only way he feels safe.'],['coop','DINNER??? Blue Plate??? my cousin works there'],['dez','Everyone’s cousin works there. Fine. Go. It’s where you learn what the town thinks of you. It has already reached a verdict.']]],
+ ['go','diner'],
+];
+
+/* ============ DINER ============ */
+SC.diner=[
+ slug('INT. THE BLUE PLATE DINER — NIGHT'),
+ n(`The Blue Plate has eleven stools, nine booths, a jukebox that only plays Patsy Cline, and a laminated sign that reads: WE RESERVE THE RIGHT TO KNOW YOUR BUSINESS.`),
+ n(`When you walk in, every head turns in unison, like sunflowers. At the counter, Birdie and Mavis are already on their second slice of pie. The casserole you gave them is on the table. It’s better than the pie. It has been discussed.`),
+ s('birdie',`That’s him.`),s('mavis',`He’s thinner than I expected.`),s('birdie',`The car made him thin.`),
+ n(`A girl with a pencil in her hair and a coffee stain on her apron shaped like Florida walks over with a pad. She has the expression of someone who has already forgiven you for something you haven’t done yet, and resents it.`),
+ s('josie',`Booth by the window. Counter’s full of people who’ve made up their minds about you and I don’t want blood on my floor.`),
+ s('josie',`Specials: meatloaf, chicken-fried anything, and the Whitlock, which is pecan pie with a bacon lattice and a note of regret. Named for your granddaddy. He tipped in bonds.`),
+ s('coop',`Josie! It’s me! Coop! My cousin Lenny’s wife’s sister!`),
+ s('josie',`Coop. You’ve been in this diner since you were four. You ate a crayon at that table.`),
+ s('coop',`It was a pretty crayon.`),
+ n(`She turns to you, pencil poised.`),
+ s('josie',`Thirty-one minutes. That’s how long it took for the whole town to know your car died. Birdie texts in all caps. We’ve all seen your jaw.`),
+ ch('Your move, Whitlock.',[
+  o(`“A pie named for my grandfather. Is there one for me yet?”`,{tag:['Charm check'],then:[
+    ['chk','charm',8,'Josie',[
+      [s('josie',`Not yet. You have to earn it. Usually it takes a felony.`),n(`A corner of her mouth moves. She stops it. You both know you saw.`),fx({'rel.josie.desire':1,'rel.josie.trust':1,charm:1})],
+      [s('josie',`Save it for the sorority girls. They’ll love it. I have a shift.`),n(`She’s already walking away. Coop pats your hand like a man at a funeral.`),fx({'rel.josie.trust':-1})]
+    ]]]}),
+  o(`“I’m sorry. About the whole rich-boy thing. I’m going to be less of one.”`,{tag:['Heart'],fx:{heart:1,'rel.josie.trust':1},then:[
+    s('josie',`You can’t just apologize for existing. It’s unattractive.`),s('theo',`I wasn’t apologizing for existing. I was apologizing for the pie.`),s('josie',`The pie is perfect.`),n(`Her eyebrows do a thing. You feel, inexplicably, that you’ve passed something.`)]}),
+  o(`“Is it true what they say? Thirty-one minutes?”`,{tag:['Wit'],fx:{wit:1,'rel.josie.trust':1},then:[
+    s('josie',`I timed it. Don’t ask why. I get bored when I’m right.`)]}),
+ ]),
+ n(`Josie takes Coop’s order, which is three pies, a milkshake, and “whatever the opposite of a salad is.” She disappears into the kitchen, and a woman leans out of the pass-through window to look at you, appraising, with a dish towel on her shoulder.`),
+ s('del',`I’m Del. I own this joint and I raised that girl and neither one of us takes tips from strangers. You look like somebody holding a door shut.`),
+ n(`She says it kindly. That’s the worst part.`),
+ n(`On the shelf above the register, next to the cash tray, a small bronze coin sits in a dish, polished from handling. You’ve seen one before.`),
+ ['chk','wit',6,'the coin',[
+  [n(`A five-year sobriety chip. It has been touched more than anything else in this building.`),
+   ch('Del catches you looking.',[
+     o(`“Congratulations.”`,{tag:['Heart'],fx:{heart:1,'rel.del.trust':2},led:`Noticed Del’s five-year sobriety chip and said "Congratulations." She told you five years is Tuesday.`,then:[
+       s('del',`Five years Tuesday. Don’t tell Josie I’m nervous. She’ll make a banner.`),n(`You haven’t been in town for four hours and you’ve been entrusted with a secret by a stranger. It’s the second time that’s happened this week.`)]}),
+     o(`Pretend you didn’t see it.`,{tag:['Discretion'],fx:{'rel.del.trust':1},then:[s('del',`Good manners. Your mama raised you.`),n(`She doesn’t say the next part. You hear it.`)]}),
+   ])],
+  [n(`You look at the coin and see a coin.`),s('del',`That’s for a rainy day. Don’t mind it.`)]
+ ]],
+ n(`The pie arrives. The pie is, as stated, a hug. Coop eats his in four bites and then looks at yours with a spiritual interest.`),
+ ch('The check arrives. Fourteen dollars.',[
+  o(`Pay it, plus a normal tip. Leave.`,{tag:['Quietly decent'],fx:{'rel.josie.trust':1},then:[n(`Josie takes the cash and looks at it for a second longer than math requires.`)]}),
+  o(`Leave a hundred-dollar tip. Wave away the change.`,{tag:['Charm'],fx:{'rel.josie.trust':-2,'rel.coop.loyalty':1,'flag:tip100':true},led:`Tipped $100 on a $14 check at the Blue Plate. Josie noticed.`,then:[
+    s('josie',`I’m not a charity case, Whitlock.`),s('coop',`She’s a little bit one. A little!`),s('josie',`Coop.`),n(`You can feel Del watching from the pass-through. The hundred sits there, a small green accusation.`)]}),
+  o(`“Is the dish pit hiring?”`,{tag:['Nerve'],fx:{nerve:1,'rel.josie.desire':1,'rel.josie.trust':1,'flag:dishPit':true},led:`Asked Josie if the dish pit was hiring. She laughed and said it always is.`,then:[
+    s('josie',`The dish pit is always hiring. It’s where people go to find out what they are.`),s('theo',`And what are they?`),s('josie',`Mostly wet.`)]}),
+ ]),
+ ['go','party1'],
+];
+
+/* ============ PARTY (1) ============ */
+SC.party1=[
+ ['act','Act Two · The Tau House'],
+ slug('EXT. SIGMA ALPHA TAU HOUSE — NIGHT'),
+ n(`The Tau House has six columns, four couches on the lawn, and a banner that says “MEET THE GREEKS” in a font that was chosen by a committee of people who have never met a Greek.`),
+ n(`A keg named Gerald holds court on the porch. A pledge in a diaper (it is a diaper, you check) runs a clipboard line with great seriousness. Behind him, a speaker plays something that is trying to be both a bass line and a lawsuit.`),
+ s('hunter',`WHITLOCK! LEGACY! We’ve been expecting you, bro. Your granddad was Tau ’71. We have a plaque in the basement. It’s next to the thing we don’t talk about.`),
+ n(`Hunter Prescott-Lowe, rush chair of Sigma Alpha Tau, has the posture of a man who has been told he’s tall and the hair of a man who has been told he’s handsome. He presses a red cup into your hand like a ceremonial sword.`),
+ ch('The cup.',[
+  o(`Drink. It’s a party. It’s one cup.`,{tag:['Go along'],fx:{buzz:1,dep:1,'rep.campus':1,charm:1},then:[
+    n(`It tastes like a punch that has been to prison. The warmth goes down to your stomach and unclenches something you didn’t know you were holding.`)]}),
+  o(`Hold it. Don’t drink.`,{tag:['Nerve'],fx:{nerve:1},then:[
+    n(`Nobody notices. You carry the cup like a prop for three hours, and a surprising number of people tell you it’s a good look.`)]}),
+  o(`Hand it back. Ask for water.`,{tag:['Heart'],fx:{heart:1,'rep.campus':-1},then:[
+    s('hunter',`Water. Bro. That’s so— healthy.`),n(`You get a bottle of water. A girl on the lawn nods at you with approval. It’s a small thing. It stays with you.`)]}),
+ ]),
+ n(`You see Coop across the lawn doing a keg stand. A crowd chants “COOP! COOP! COOP!” He’s upside down, delighted, and saying something that sounds like “I’M FINE.”`),
+ ['t','Josie',[['them','Coop sent me a photo of you holding a red cup like it was a baby bird.'],['them','Are you okay?']]],
+ ch('Text her back?',[
+  o(`“A baby bird who’s doing great. Come save me.”`,{tag:['Charm'],fx:{'rel.josie.desire':1,charm:1},then:[['t','',[['me','A baby bird who’s doing great. Come save me.'],['them','I have a pre-calc final in my sleep. Be good.'],['them','Not good. Be careful.']]]]}),
+  o(`“Honestly? A little scared. It’s a lot of people.”`,{tag:['Heart'],fx:{heart:1,'rel.josie.trust':2},then:[['t','',[['me','Honestly? A little scared. It’s a lot of people.'],['them','Good. Means you’re paying attention.'],['them','Find someone who looks lost and stand next to them.']]]]}),
+  o(`Leave her on read. Put the phone away.`,{tag:['Avoid'],fx:{'rel.josie.trust':-1},then:[n(`The little “Read” sits under her message and you can almost feel it judging you, from a different building, in a different life.`)]}),
+ ]),
+ n(`A girl in an immaculate white dress detaches from a cluster of identically perfect girls and glides toward you. She has the posture of someone who has never once been late.`),
+ s('savannah',`Savannah-Claire Whitaker. President, Delta Magnolia Pi. I’m here to look at the boys and decide which of you to be kind to.`),
+ s('savannah',`A Whitlock. Interesting. Your grandfather gave us a fireplace. We still don’t use it. It’s a symbol.`),
+ s('savannah',`Tell me what you bring.`),
+ ch('Impress the president.',[
+  o(`“Nothing yet. Seemed rude to show up with something.”`,{tag:['Wit check'],then:[
+    ['chk','wit',8,'Savannah-Claire',[
+      [s('savannah',`Hm.`),n(`It’s a very small “Hm.” It’s the “Hm” of a woman updating a ledger.`),s('savannah',`Come to our mixer Tuesday. Wear something you’d be ashamed to be photographed in.`),fx({'rel.savannah.trust':1,'rel.savannah.desire':1,wit:1,'rep.campus':1})],
+      [s('savannah',`That sounded better in your head.`),n(`It really had.`),fx({'rel.savannah.trust':-1})]
+    ]]]}),
+  o(`“I can be useful. I know where the bodies are buried.”`,{tag:['Nerve'],fx:{nerve:1,'rel.savannah.trust':-1,'rel.savannah.loyalty':1},led:`Told Savannah-Claire you "know where the bodies are buried." She wrote it down. Not on paper.`,then:[
+    n(`A silence. Her smile doesn’t change, but the temperature of the lawn does.`),s('savannah',`Everybody says that to me. Not many mean it. Be careful which one you are.`)]}),
+  o(`“An apology in advance. For the fireplace.”`,{tag:['Charm'],fx:{charm:1,'rel.savannah.desire':1},then:[
+    s('savannah',`You’re already better than the last Whitlock.`),s('theo',`Which one was that?`),s('savannah',`The one who didn’t offer.`)]}),
+ ]),
+ s('savannah',`One rule, Whitlock. At Tau, don’t leave your drink. At Delta Mag, don’t leave your sisters. Learn which house you’re in.`),
+ n(`She says it lightly, the way you’d mention the weather. Then she’s gone, absorbed into the white, and the lawn goes back to being loud.`),
+ ['go','party2'],
+];
+
+/* ============ PARTY (2) ============ */
+SC.party2=[
+ slug('EXT. SIGMA ALPHA TAU HOUSE — THE HEDGES — LATER'),
+ n(`On your way to find a bathroom, you hear someone reading Larkin to a hedge.`),
+ s('fenn',`“They fuck you up, your mum and dad. They may not mean to, but they do.”`),
+ n(`A man in a rumpled linen suit lies in the boxwood with his shoes off and a flask balanced on his sternum like a medal.`),
+ s('fenn',`You’re a Whitlock. Your grandfather’s name is on the building where I hide.`),
+ s('theo',`Are you hurt?`),
+ s('fenn',`Only emotionally. Alistair Fenn. Poetry. Tenure. Neither of us is as impressive as that sounds.`),
+ s('fenn',`I read your application essay. You write beautifully about your mother. You write dishonestly about everything else.`),
+ n(`The hedge doesn’t blink. Neither do you. It’s a very good sentence, and it goes straight through you to the other side of the night.`),
+ ch('He offers the flask.',[
+  o(`Take a pull. Hand it back.`,{tag:['Go along'],fx:{buzz:1,dep:1,'rel.fenn.trust':1,'flag:fennFlask':true},then:[
+    n(`It tastes like a library on fire. Fenn nods, a man welcoming a convert into a sparse and unglamorous church.`),s('fenn',`Poetry 101, Tuesday. Bring something you’re afraid of.`)]}),
+  o(`“No, thanks. Can I help you up?”`,{tag:['Heart'],fx:{heart:1,'rel.fenn.trust':2},then:[
+    n(`He allows it, with the enormous dignity of a man who has been helped up by better people. When he’s standing, he pats your arm twice.`),s('fenn',`Tuesday. Bring something you’re afraid of.`)]}),
+  o(`“You’re going to want to be somewhere other than a hedge.”`,{tag:['Wit'],fx:{wit:1,'rel.fenn.trust':1},then:[
+    s('fenn',`There is nowhere other than a hedge. Tuesday, Whitlock.`)]}),
+ ]),
+ slug('EXT. THE TAU HOUSE ROOF — NIGHT'),
+ n(`When you get back to the porch, somebody is performing Lady Macbeth on the beer pong table.`),
+ n(`She’s in a thrifted twenties slip and combat boots, a half-bottle of cheap champagne in one hand and a lacrosse stick in the other, as if she’s going to need it.`),
+ s('wren',`“Out, out, damned spot!”`),n(`She points the stick at Hunter.`),s('wren',`Hunter Prescott-Lowe. You are a Pottery Barn Gatsby and I am the fire. Don’t you dare say anything about my boots.`),
+ n(`The crowd roars. Hunter laughs a second too late, like a man whose face is learning how.`),
+ n(`Then she steps off the table without looking, which is a kind of faith, and lands in your arms.`),
+ s('wren',`Oh. A catch. No one at Tau has ever caught me.`),
+ s('theo',`Maybe they didn’t know you were falling.`),
+ s('wren',`I always know when I’m falling. It’s the one thing I’m good at. Wren Calder. Sophomore. Theatre. Do you smoke?`),
+ ch('Wren Calder.',[
+  o(`“No. But I’d watch you do it.”`,{tag:['Charm'],fx:{charm:1,'rel.wren.desire':1},then:[s('wren',`That’s a nice thing to say for a boy who looks like a catalog.`)]}),
+  o(`“I play a character who does. Seemed rude not to.”`,{tag:['Wit'],fx:{wit:1,'rel.wren.desire':1,'rel.wren.trust':1},then:[s('wren',`Ooh. A dork. I love a dork.`)]}),
+  o(`“Are you okay? That was a lot of champagne.”`,{tag:['Heart'],fx:{heart:1,'rel.wren.trust':2,'rel.wren.desire':0},then:[
+    n(`For a second, she doesn’t perform. You see it: a flicker of something tired and unguarded. Then the stage light comes back on.`),s('wren',`Look at you. A professional.`)]}),
+ ]),
+ n(`She takes your hand and leads you through a second-floor window and out onto the roof. From up here the whole town is a handful of lit windows scattered on black velvet. Out past the water tower, you can see a dark flat shine, which is Lake Ellison, and you decide to not look at it for very long.`),
+ s('wren',`You live in Whitlock Hall, you have a face like a bank, and you’re holding that red cup like it owes you money. Tell me your story.`),
+ s('theo',`I’m from Atlanta. My mom died. My dad owns a firm. I’m a legacy.`),
+ s('wren',`That’s a Wikipedia article. Tell me the real one.`),
+ ch('Wren wants the real one.',[
+  o(`Tell her about your mom.`,{tag:['Heart'],fx:{heart:1,'rel.wren.trust':2,'rel.wren.desire':1},then:[
+    n(`You tell her about the Mercedes. You tell her about the singing. She doesn’t say “I’m sorry.” She says “What did she sing?” and you realize no one has asked that in four years.`)]}),
+  o(`Give her the charming version.`,{tag:['Charm'],fx:{charm:1,'rel.wren.desire':1,'rel.wren.trust':-1},then:[
+    s('wren',`Cute. You deflect like a pro.`),n(`You smile. You’ve been doing it so long that you don’t know if you’re hiding something, or if you’re just a smile.`)]}),
+  o(`Ask her one back.`,{tag:['Wit'],fx:{wit:1},then:[
+    s('wren',`Mine’s a mess. Transferred from a school in Ohio. Needed a change. Needed a better stage.`),n(`She says it quickly, the way you say a line you know by heart.`)]}),
+ ]),
+ s('wren',`Where’d you go to high school? Anywhere interesting?`),
+ s('theo',`St. Aldric’s.`),
+ s('wren',`Huh.`),
+ n(`She takes a sip of champagne and looks at the lake.`),
+ s('wren',`Heard of it.`),
+ ['chk','wit',8,'the way she said it',[
+  [n(`It’s too light. It’s a name she has said into a mirror, alone, many times, and now she’s trying it out loud on purpose. Your skin prickles. You tell yourself that’s the cold.`),fx({'flag:noticedWren':true,wit:1},`Noticed that Wren said "Heard of it" about St. Aldric’s a little too lightly.`)],
+  [n(`She smiles and the moment passes. Whatever it was, you didn’t catch it.`)]
+ ]],
+ n(`Down on the lawn, someone yells “COOP! COOP! COOP!” The sound drifts up like heat. Wren laughs and leans her head on your shoulder, and for a minute the roof is the only place in the world.`),
+ ['go','night'],
+];
+
+/* ============ THE FORK ============ */
+SC.night=[
+ slug('EXT. THE TAU HOUSE LAWN — 1:48 A.M.'),
+ n(`The party is bleeding into the grass. Someone has put a traffic cone on the statue of Augustus Whitlock in front of Whitlock Hall. You can see it from here. You’re relieved it’s not worse.`),
+ n(`It’s almost two. The night has a shape to it now: there are four directions it can go.`),
+ ch('Where does the night go?',[
+  o(`Go home with Wren.`,{tag:['Desire'],show:()=>true,then:[
+    ['if',()=>G.rel.wren.desire>=2,[['go','wren']],[
+      s('wren',`Not tonight, Whitlock. Ask me when you’re less drunk or more interesting.`),
+      n(`She says it with a kiss on your cheek and a wink that is somehow worse than a slap. You stand alone on the lawn with a feeling you can only describe as “very politely declined.”`),
+      fx({'rel.wren.trust':1}),
+      ch('So.',[
+        o(`Find Coop. He’s been quiet for a while.`,{then:[['go','coop']]}),
+        o(`Walk to the Blue Plate.`,{then:[['go','josie']]}),
+        o(`Sit on the dorm steps. Think.`,{then:[['go','dez']]}),
+      ])]]]}),
+  o(`Walk to the Blue Plate. It’s late. The light’s on.`,{tag:['Josie'],then:[['go','josie']]}),
+  o(`Find Coop. You haven’t seen him in a while.`,{tag:['Loyalty'],then:[['go','coop']]}),
+  o(`Go home. Sit on the steps of Whitlock Hall.`,{tag:['Dez'],then:[['go','dez']]}),
+ ]),
+];
+
+/* ============ WREN NIGHT ============ */
+SC.wren=[
+ slug('INT. WREN’S APARTMENT — ABOVE THE HOLLIS THEATRE — 2:07 A.M.'),
+ n(`Wren lives above the Hollis Theatre in a room that is mostly costume rack: feathers, a cape, a bodice labeled WENCH — DO NOT LEND TO TAU. A ghost light burns on the stage below, and its glow rises through the floor vents as though the building is thinking.`),
+ n(`She locks the door and leans on it. For a second neither of you speaks, and it’s the most honest moment of the night.`),
+ s('wren',`Okay. Rules. One: if I say stop, it stops. Even mid-sentence. Even mid-anything. Two: same goes for you. Three: nobody gets to be weird about it tomorrow.`),
+ s('wren',`Four. Whatever this is, it’s not a favor. I don’t do favors.`),
+ ch('Rules.',[
+  o(`“Accepted. All four.”`,{tag:['Charm'],fx:{'rel.wren.desire':1}}),
+  o(`“Are you sure? We’ve both been drinking. We can just talk.”`,{tag:['Heart'],fx:{heart:1,'rel.wren.trust':2},then:[
+    n(`She stares at you for a long beat.`),s('wren',`That’s the first time tonight anyone’s asked me that.`),s('wren',`I’m sure. I’ve had two glasses. I’m an actor. I could do this drunk and in iambic pentameter. Are you?`),s('theo',`Sure.`),s('wren',`Good. Say it again with your mouth.`)]}),
+  o(`“Can we add a rule about the cape?”`,{tag:['Wit'],fx:{wit:1,'rel.wren.desire':1},then:[s('wren',`The cape stays. The cape has seen things.`)]}),
+ ]),
+ n(`She kisses you, or you kiss her. Later it will be impossible to say which. Her mouth tastes like cheap champagne and cherry lip balm. Her hands are in your hair and then at your belt, and then she stops and laughs because the buckle fights her and wins.`),
+ n(`The zipper of her slip catches halfway down and you swear you’re good at this.`),
+ s('wren',`You’re doing great, sweet pea. A surgeon. A craftsman.`),
+ n(`You laugh into her collarbone, and the laugh turns into something else. The slip falls. In the glow from the floor vent she is freckles and sharp hips and a long pale scar down her left shin from a stage-combat accident she’ll tell you about later. She watches you look.`),
+ s('wren',`Well?`),s('theo',`I’m trying to be a gentleman.`),s('wren',`Don’t. I have plenty of gentlemen.`),
+ n(`The nightstand drawer contains three condoms, a rosary, a capsule of stage blood, and a Post-it that says YOU’RE DOING GREAT, which you decide to take personally.`),
+ n(`What happens next isn’t smooth. It’s better than smooth. There are elbows. She cracks her head on the sloped ceiling and swears beautifully. You laugh, she laughs, and then neither of you is laughing: her thighs tight against your ribs, her breath catching, your name in her mouth, “Theo,” not “Whitlock,” over and over until it sounds like a question. She sets the pace. She puts your hand where she wants it. She teaches you with a word at a time (“there,” “slower,” “oh, that”) with a precision that makes you want to take notes. By the end your whole body is a held breath, and then it isn’t.`),
+ n(`Afterward she lies with her head on your chest, tracing a slow circle around your sternum with one finger, and says to the ceiling:`),
+ s('wren',`That was a good idea.`),
+ s('theo',`The best one I’ve had all year.`),
+ n(`It’s true. It has been a bad year.`),
+ n(`She falls asleep fast, the way people do when they haven’t slept properly in months. You don’t. You lie there listening to the ghost light hum through the floor, and your eyes drift to the mirror above her dresser.`),
+ n(`A strip of photo-booth pictures is tucked in the frame. Wren, in the first. Wren and another girl in the second, heads together, laughing. The other girl is older, dark-haired, with something about her mouth. It feels familiar. It feels like a name you almost have.`),
+ n(`You decide it’s nothing. You’ve gotten very good at deciding.`),
+ fx({'flag:wrenNight':true,'rel.wren.desire':2,'rel.wren.trust':1,'rep.campus':1},`Slept with Wren Calder. Saw a photo of her with a dark-haired girl on her mirror and told yourself it was nothing.`),
+ ['go','tag'],
+];
+
+/* ============ JOSIE NIGHT ============ */
+SC.josie=[
+ slug('EXT. THE BLUE PLATE DINER — 1:55 A.M.'),
+ n(`The sign says CLOSED. The kitchen light is on. Through the window you see Josie at the counter, a mountain of organic chemistry notes spread out around a slice of pie she isn’t eating.`),
+ n(`You knock. She looks up, sees who it is, and does something with her face that she then undoes.`),
+ s('josie',`We closed at ten. I’m just here because the sign’s broken and I don’t trust the sign.`),
+ slug('INT. THE BLUE PLATE DINER — CONTINUOUS'),
+ n(`She lets you in. She does not ask you if you’re drunk, which is how you know she can tell. She puts a glass of water in your hand.`),
+ s('josie',`I’ve got an orgo exam Monday and my mom’s sober chip anniversary Tuesday. I’m, uh. Not at my best.`),
+ ch('Josie, 2 a.m., not at her best.',[
+  o(`“You’re the most together person I’ve met in this town.”`,{tag:['Charm'],fx:{charm:1,'rel.josie.desire':1},then:[s('josie',`That’s the saddest thing you could have said. I’m barely holding it together with a pencil.`)]}),
+  o(`Sit next to her. Say nothing.`,{tag:['Heart'],fx:{heart:1,'rel.josie.trust':2},then:[n(`You sit. You don’t say a word. It’s a thing you’ve learned about people: nobody knows how to be quiet with you, so you get good at it. Josie lets out a breath she’s been holding since September.`)]}),
+  o(`Offer to quiz her on organic chemistry.`,{tag:['Wit'],fx:{wit:1,'rel.josie.trust':1,'rel.josie.desire':1},then:[
+    n(`You hold her flashcards upside down for four straight minutes before she notices. She’s laughing so hard she has to put her head on the counter.`),s('josie',`Is that— you’re holding them backward.`),s('theo',`I’m using a different method.`)]}),
+ ]),
+ s('josie',`I don’t date rich boys. I want to say that now. Not because you’re a bad guy. Because you leave. People with options always do. I’ve watched it my whole life.`),
+ s('josie',`Also you’re drunk and I don’t kiss drunk boys. It’s a rule. It’s a rule I made after a very specific night.`),
+ ch('The moment.',[
+  o(`“I’m not going anywhere. Not tonight.” Wait.`,{tag:['Heart'],fx:{'rel.josie.trust':1},then:[
+    n(`She looks at you for a long time. Then she leans in and kisses you, once, soft and brief, tasting like coffee and pecan.`),
+    s('josie',`That wasn’t drunk-kissing. That was a data point.`),s('theo',`What’s the data?`),s('josie',`That it’s a mistake I’m going to want to make again.`),fx({'flag:josieKiss':true,'rel.josie.desire':2,'rel.josie.trust':1},`Kissed Josie at the Blue Plate after closing. She called it "a data point."`)]}),
+  o(`Kiss her.`,{tag:['Charm'],then:[
+    n(`She puts a hand flat on your chest. Not pushing. Holding the distance.`),s('josie',`Ask first.`),s('theo',`Can I?`),s('josie',`Better.`),
+    n(`The kiss is slow and warm and entirely too sober for how drunk you are. Her hand curls into your shirt. When it ends she rests her forehead on yours.`),
+    s('josie',`That was a mistake. A pretty one.`),fx({'flag:josieKiss':true,'rel.josie.desire':2,'rel.josie.trust':1,charm:1},`Kissed Josie at the Blue Plate after closing. She asked you to ask first.`)]}),
+  o(`Say good night. Leave her be.`,{tag:['Restraint'],fx:{'rel.josie.trust':2,heart:1},then:[
+    s('josie',`That’s— huh. Okay.`),n(`She stands in the doorway as you walk out. When you look back she’s still watching you go, and she’s not smiling. She’s thinking. It’s so much more dangerous.`)]}),
+ ]),
+ ['go','tag'],
+];
+
+/* ============ COOP NIGHT ============ */
+SC.coop=[
+ slug('EXT. THE QUAD — THE GOOSE POND — 2:10 A.M.'),
+ n(`You find Coop standing waist-deep in the Ashby goose pond, holding a goose.`),
+ s('coop',`HE LIKES ME.`),
+ n(`The goose looks at you with the dead eyes of an animal that has seen things. Behind Coop, a smaller banner on a lamppost reads PLEASE STOP FEEDING THE GEESE. Someone has underlined “PLEASE.”`),
+ s('theo',`Coop. Come out of the pond.`),
+ s('coop',`He’s my best friend! We just met!`),
+ n(`It takes you four minutes, two apologies, and a coin to get the goose to leave. Coop sits on the grass, soaked and radiant, rubbing the back of his head.`),
+ s('coop',`I keep forgetting stuff. It’s been happening since the, you know. The tournament. Coach says it’s nothing. It’s probably nothing.`),
+ ch('Coop, in the dark, honest for a moment.',[
+  o(`“You should tell someone. A doctor. Soon.”`,{tag:['Heart'],fx:{heart:1,'rel.coop.trust':2,'flag:coopHead':true},led:`Told Coop to see a doctor about his head. He said "probably nothing."`,then:[
+    s('coop',`Doctors take your whole summer. And then they take your spot.`),n(`You say nothing. He knows what you’re saying. It’s the first thing he’s ever understood without needing it explained.`)]}),
+  o(`“Yeah. Probably nothing. Let’s get you dry.”`,{tag:['Go along'],fx:{'rel.coop.loyalty':1},then:[n(`You tell yourself you’re not going to think about it. You tell yourself that a lot, lately.`)]}),
+  o(`“Coop. You’re my best friend. Give me the head thing, I’ll hold it.”`,{tag:['Charm'],fx:{charm:1,'rel.coop.loyalty':2,'rel.coop.trust':1},then:[
+    s('coop',`You’re my best friend too. Do you want to hear about my theory on dogs?`),s('theo',`Absolutely.`)]}),
+ ]),
+ n(`You walk him home in the dark, past Whitlock Hall, past the statue wearing a traffic cone. Coop hugs your arm and sings something that might be the Ashby fight song or might be “Bohemian Rhapsody.” Neither of you minds.`),
+ fx({'flag:coopGeese':true,'rel.coop.loyalty':1}),
+ ['go','tag'],
+];
+
+/* ============ DEZ NIGHT ============ */
+SC.dez=[
+ slug('EXT. WHITLOCK HALL — THE FRONT STEPS — 2:20 A.M.'),
+ n(`Dez is sitting on the steps with a thermos and a rubber duck, reading something on his phone. He doesn’t look up.`),
+ s('dez',`You smell like Gerald.`),s('theo',`Who’s Gerald?`),s('dez',`The keg. We’ve all been Gerald’s. Sit.`),
+ n(`You sit. He pours something out of the thermos into the lid and hands it to you. It’s tea. It’s the best tea you’ve ever had. You do not tell him.`),
+ s('dez',`My grandfather is the Reverend Whitfield. He sits on the board of trustees. He asked me to be a good example. I told him I’d be an accurate one.`),
+ s('dez',`So. Here’s my accuracy. In a town where the old money names the buildings and the old money names the rules, anyone who’s polished enough to be on that plaque is sitting on something. Always. It’s a rule.`),
+ s('dez',`You’re polished, Theo. What are you sitting on?`),
+ ch('Dez asks again. Gently, this time.',[
+  o(`“There was a night, at a party, senior year. I’m not ready to say.”`,{tag:['Heart'],fx:{heart:2,'rel.dez.trust':3,'flag:toldDez':true},led:`Told Dez there was "a night, at a party" before college. You didn’t say more.`,then:[
+    n(`The words come out of you like something you swallowed years ago. Dez doesn’t react. He just pours you more tea.`),s('dez',`Okay.`),s('dez',`That’s all I needed. Not the story. The fact that there’s one.`),n(`You didn’t know a person could be that kind and that frightening at once.`)]}),
+  o(`“Nothing. I’m a golden retriever who learned to read.”`,{tag:['Charm'],fx:{charm:1},then:[
+    s('dez',`That’s going on my headstone.`),n(`He lets it go. It’s the kindest thing he could do, and it feels like a door softly closing.`)]}),
+  o(`Say nothing. Drink the tea.`,{tag:['Silence'],fx:{'rel.dez.trust':-1},then:[n(`Dez nods slowly. He’s a person who can hear what people don’t say. It’s the most irritating quality in a friend.`),s('dez',`Tea’s on me. The truth’s on you. Whenever.`)]}),
+ ]),
+ ['go','tag'],
+];
+
+/* ============ TAG ============ */
+SC.tag=[
+ ['act','Tag · Saturday Morning'],
+ slug('EXT. THE QUAD — MORNING'),
+ n(`You wake up in the world, which is to say: late, and with a mouth like a dryer vent.`),
+ ['if',()=>G.flags.wrenNight,[[n(`You are carrying your shoes. You crept out of the Hollis Theatre at 7:40 a.m., past a custodian who nodded at you with the grave neutrality of a priest.`)]],
+   [[n(`The sun comes down on the quad like an accusation. A banner flaps: RUSH WEEK BEGINS MONDAY.`)]]],
+ n(`There’s a table on the quad with a Sigma Alpha Tau banner, a pitcher of lemonade, and a boy in a Tau polo with his back to you, laughing at something, with a laugh you would know in a coma.`),
+ n(`You stop walking. The pavement is very far away and very close.`),
+ s('colt',`WHIT!`),
+ n(`He turns. The tan, the dimple, the golden hair that looks like it’s been commissioned. He’s wearing the exact smile he wore on the lake house dock last May.`),
+ s('colt',`Dude. Thought you’d be in a coma. Thought I’d surprise you. Dad said Gus’s grandson would be here. He said you’d keep an eye on me.`),
+ s('colt',`Isn’t it great? Same school. Same house. It’s like St. Aldric’s never ended.`),
+ ch('Colt Danvers is standing in front of you.',[
+  o(`“Hey, man.” Smile.`,{tag:['Charm'],fx:{charm:1,'rel.colt.trust':1},led:`Smiled at Colt Danvers and said "Hey, man." You did not say anything else.`,then:[
+    n(`Your mouth does it. It’s been trained to. A small voice in your head says: you’re good at this, and you’ve never hated it more.`)]}),
+  o(`“What are you doing here?”`,{tag:['Nerve'],fx:{nerve:1,'rel.colt.trust':-1},led:`Asked Colt what he was doing at Ashby. He laughed.`,then:[
+    s('colt',`Same as you, bro. Starting over.`),n(`He’s still smiling. It doesn’t waver once. You’ve never seen it waver.`)]}),
+  o(`Say nothing.`,{tag:['Freeze'],fx:{'rel.colt.trust':0},led:`Said nothing when Colt Danvers showed up at Ashby.`,then:[
+    n(`Your lungs have stopped taking requests. Colt waits two seconds, then claps you on the shoulder as if nothing is wrong, because nothing, for him, ever is.`)]}),
+  o(`Say “Excuse me,” and keep walking.`,{tag:['Avoid'],fx:{'rel.colt.trust':-1,'rep.campus':-1},led:`Walked away from Colt without a word.`,then:[
+    s('colt',`Whit? Dude, it’s me.`),n(`You walk. You do not turn around. You can feel his smile on the back of your neck for fifty yards.`)]}),
+ ]),
+ s('colt',`Don’t be weird, Whit. It’s a new school. Nobody here knows anything.`),
+ n(`He squeezes your shoulder. It’s a friendly squeeze. It’s exactly the squeeze he gave you at the lake house, when he said: it’s fine, man. We’re fine. We’re all fine.`),
+ n(`Across the quad, on the steps of the Hollis Theatre, someone is watching. It’s Wren, in sunglasses, a coffee in each hand. She isn’t looking at you. She’s looking at Colt.`),
+ n(`Then she sees you see her. And she smiles instantly, brightly, like a stage light coming up.`),
+ n(`You’ve been to enough parties to know the difference between a smile and a performance.`),
+ n(`MEMINIMUS, says the gate behind her. We remember.`,true),
+ ['end'],
+];
+
+/* ---------- finale ---------- */
+function finish(){
+  const f=G.flags;const heads=[];
+  if(f.pushedCar)heads.push('LOCAL BOY PUSHES OWN CAR INTO INTERSECTION; FILMED BY TEENAGER');
+  if(f.tip100)heads.push('WHITLOCK BOY TIPS $100 ON $14 BILL; BLUE PLATE STAFF “DIVIDED”');
+  if(f.dishPit)heads.push('WHITLOCK BOY INQUIRES ABOUT DISH PIT; BIRDIE “HAS QUESTIONS”');
+  if(f.fennFlask)heads.push('PROFESSOR FENN FOUND IN HEDGE, “IN TREMENDOUS SPIRITS”');
+  if(f.coopGeese)heads.push('FRESHMAN FOUND IN GOOSE POND; GEESE UNHARMED, “RELUCTANT”');
+  if(f.josieKiss)heads.push('BLUE PLATE CLOSED, THEN NOT; MAVIS “SAW A LIGHT”');
+  if(f.wrenNight)heads.push('WHITLOCK BOY SEEN LEAVING HOLLIS THEATRE APARTMENTS, SHOES IN HAND');
+  if(!heads.length)heads.push('WHITLOCK BOY SURVIVES FIRST DAY; TOWN “RESERVING JUDGMENT”');
+  const ul=el('ul','gossip');heads.slice(0,5).forEach(h=>ul.append(el('li','',esc(h))));
+  const wrap=el('div','');wrap.append(el('div','k','The Gazebo Gazette'));wrap.append(ul);
+  wrap.style.cssText='display:flex;flex-direction:column;gap:6px;max-width:520px;margin-top:6px';
+  wrap.firstChild.style.cssText='font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim);text-align:center';
+  const row=el('div','row');
+  const nb=el('button','btn','Open notebook');nb.type='button';nb.onclick=()=>openNotebook('prev');
+  const again=el('button','btn','Play again');again.type='button';again.onclick=()=>{wipe();location.reload()};
+  row.append(nb,again);
+  wipe();
+  const o2=el('div','card');
+  o2.append(el('div','k','End of Episode One'));
+  const h=el('h1','','The Whitlock <em>boy</em>');o2.append(h);
+  o2.append(el('p','','Your choices are recorded. Episode Two, “Rush,” is built from them.'));
+  o2.append(wrap);o2.append(row);
+  $('overlay').append(o2);document.body.style.overflow='hidden';
+  window._ep1done=true;
+}
+
+/* ---------- boot ---------- */
+function intro(){
+  const saved=load();
+  const o=el('div','card');
+  o.append(el('div','k','A Prestige Drama in Text'));
+  o.append(el('h1','','Legacy <em>Admission</em>'));
+  o.append(el('p','','Season One · Episode One. You are Theo Whitlock. Everybody here already knows your name.'));
+  o.append(el('p','fine','Mature audiences. Contains frank sex, drinking and drug use, depictions of the aftermath of sexual assault, and bigotry. All characters are adults. Your choices are saved automatically in this browser.'));
+  const row=el('div','row');
+  const b=el('button','btn primary','Begin');b.type='button';
+  b.onclick=()=>{o.remove();document.body.style.overflow='';G=fresh();runScene('cold')};row.append(b);
+  if(saved&&saved.scene){
+    const c=el('button','btn','Continue');c.type='button';
+    c.onclick=()=>{o.remove();document.body.style.overflow='';G=saved;if(!G.flags)G.flags={};runScene(G.scene)};row.append(c);
+  }
+  o.append(row);$('overlay').append(o);document.body.style.overflow='hidden';b.focus();
+}
+intro();
+</script>
