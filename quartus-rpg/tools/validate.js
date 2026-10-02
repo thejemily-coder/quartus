@@ -70,4 +70,34 @@ for (let r = 0; r < runs; r++) {
 const never = Object.keys(Q.scenes).filter(id => !visitedAll.has(id));
 console.log(`Bot: ${endings}/${runs} runs reached the end. Deaths by POV:`, deaths);
 if (never.length) console.log(`Never reached by bots (${never.length}):`, never.join(', '));
+
+/* ---- permanent-death behaviour ---- */
+function playOut(S) {
+  let n = 0;
+  while (S.mode !== 'tbc' && S.mode !== 'gameover') {
+    if (++n > 6000) throw new Error('stuck');
+    const v = Q.view(S);
+    if (v.kind === 'scene' && v.choices.length) { const o = v.choices.filter(c => !c.locked); Q.choose(S, o[Math.floor(rng() * o.length)].i); }
+    else if (v.kind === 'combat' && !v.over) Q.combatAct(S, v.actions[0].id);
+    else Q.advance(S);
+  }
+}
+[['maren'], ['wystan', 'corr'], ['wystan', 'ysolde', 'maren', 'corr']].forEach(dead => {
+  try {
+    const S = Q.newState();
+    dead.forEach(d => { Q.ctx(S).kill(d, 'test'); });
+    const seen = new Set();
+    let n = 0;
+    while (S.mode !== 'tbc' && S.mode !== 'gameover') {
+      if (++n > 6000) throw new Error('stuck');
+      const v = Q.view(S);
+      if (S.mode === 'ch_title') seen.add(S.md.pov);
+      if (v.kind === 'scene' && v.choices.length) { const o = v.choices.filter(c => !c.locked); Q.choose(S, o[Math.floor(rng() * o.length)].i); }
+      else if (v.kind === 'combat' && !v.over) Q.combatAct(S, v.actions[0].id);
+      else Q.advance(S);
+    }
+    dead.forEach(d => { if (seen.has(d)) err('dead POV ' + d + ' still got a chapter'); });
+    console.log(`Death test [${dead.join(',')}] ok; chapters seen: ${[...seen].join(',') || '(none)'}`);
+  } catch (e) { err('death test ' + dead + ': ' + e.message); }
+});
 process.exit(errors ? 1 : 0);

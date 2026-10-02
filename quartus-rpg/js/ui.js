@@ -133,6 +133,10 @@
       }).join('') + '</div>';
       if (v.teaser) h += '<p class="quiet">' + md(v.teaser) + '</p>';
       h += '<button class="btn primary" data-act="adv">' + (v.hasNext ? 'Next: ' + esc(v.next) : 'Continue') + '</button></div>';
+    } else if (v.kind === 'gameover') {
+      h += '<div class="card deathcard"><div class="small">' + esc(Q.SEASON_NAME) + '</div><h2>The Season Ends in Ash</h2><p class="quiet">There is no one left to carry the story. The bell will ring again, and there will be no one in Highgarrow who knows what it counts.</p><div class="cast">' +
+        v.cast.map(function (c) { return '<div class="castrow dead" style="--pov:' + povColor(c.id) + '"><span>' + esc(c.name) + '</span><span>Dead</span></div>'; }).join('') +
+        '</div><div class="row"><button class="btn" data-act="menu">Main menu</button></div></div>';
     } else if (v.kind === 'tbc') {
       h += '<div class="card epend"><div class="small">' + esc(Q.SEASON_NAME) + '</div><h2>To be continued</h2><p class="quiet">The next episode is still being written. Your save is safe; come back and the story will carry on from here.</p>' +
         '<div class="row"><button class="btn" data-act="menu">Main menu</button></div></div>';

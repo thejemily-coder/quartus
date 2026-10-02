@@ -55,4 +55,6 @@
   npc('tamsin', 'Tamsin', 'A kitchen girl with sharp ears');
   npc('hob', 'Hob', 'A name Corr does not say aloud');
   npc('hale', 'Lord Hale of Greyfen', 'Wystan\'s father');
+  npc('hild', 'Hild', 'A miller\'s wife of Hollin Weir');
+  npc('osric', 'Osric Tull', 'Her husband, a miller');
 })();

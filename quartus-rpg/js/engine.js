@@ -185,8 +185,13 @@
     }
   };
 
+  function anyoneAlive(S) {
+    return Object.keys(S.chars).some(function (id) { return S.chars[id].alive; });
+  }
+
   function nextChapter(S) {
     var ep = Q.episodes[S.ep];
+    if (!anyoneAlive(S)) { S.mode = 'gameover'; S.md = null; S.scene = null; return; }
     for (;;) {
       S.ci++;
       if (S.ci >= ep.chapters.length) { S.mode = 'ep_end'; S.md = null; S.scene = null; return; }
@@ -348,6 +353,8 @@
         };
       case 'tbc':
         return { kind: 'tbc', cast: castStatus(S) };
+      case 'gameover':
+        return { kind: 'gameover', cast: castStatus(S), deaths: S.deaths };
     }
   };
 
