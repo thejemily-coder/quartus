@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quartus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header id="bar">
+    <span class="brand">QUARTUS</span>
+    <div id="povbar"></div>
+    <nav>
+      <button id="btn-journal">Journal</button>
+      <button id="btn-saves">Saves</button>
+      <button id="btn-settings">Settings</button>
+      <button id="btn-menu">Menu</button>
+    </nav>
+  </header>
+  <main id="stage" class="stage" aria-live="polite"></main>
+  <div id="toasts" aria-live="polite"></div>
+  <div id="modal"></div>
+  <div id="title"></div>
+</div>
+<script src="js/engine.js"></script>
+<script src="js/data/world.js"></script>
+<!-- episodes -->
+<script src="js/data/ep01/a_prologue.js"></script>
+<script src="js/data/ep01/b_wystan.js"></script>
+<script src="js/data/ep01/c_ysolde.js"></script>
+<script src="js/data/ep01/d_maren.js"></script>
+<script src="js/data/ep01/e_corr.js"></script>
+<script src="js/data/ep01/z_episode.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
