@@ -1,10 +1,12 @@
 :root {
+  color-scheme: dark;
   --bg: #0c0a09; --bg2: #14110f; --panel: #1a1613; --line: #2b2520;
   --text: #e6dcc8; --dim: #9a9080; --ember: #c9772f; --blood: #a03232; --gold: #c2a25a;
   --good: #8fb07a; --bad: #c46a5a;
   --fs: 1.22rem;
 }
-:root[data-theme="parchment"] {
+:root[data-skin="parchment"] {
+  color-scheme: light;
   --bg: #e9dfc8; --bg2: #e1d5ba; --panel: #efe6d1; --line: #c9b992;
   --text: #2a2118; --dim: #6b5d48; --ember: #9a4f14; --blood: #7c1f1f; --gold: #7a5d1e;
   --good: #4c6b3a; --bad: #8a3a2c;
@@ -23,7 +25,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 h1, h2, h3, .small, .place, .epnum, .btn, .who, .tag { font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif; }
 
 #bar {
-  position: sticky; top: 0; z-index: 5; display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; display: flex; align-items: center; justify-content: space-between;
   gap: 12px; padding: 8px 16px; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--line);
 }
@@ -111,7 +113,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 1.4em 25%; }
 .toast.out { opacity: 0; }
 
 #modal, #title { position: fixed; inset: 0; display: none; z-index: 20; }
-#modal.open { display: flex; align-items: flex-start; justify-content: center; background: rgba(0,0,0,.65); overflow: auto; padding: 5vh 12px; }
+#modal.open { z-index: 60; display: flex; align-items: flex-start; justify-content: center; background: rgba(0,0,0,.65); overflow: auto; padding: 5vh 12px; }
 #title.open { display: flex; align-items: center; justify-content: center; background: var(--bg); z-index: 40; overflow: auto; }
 .sheet { background: var(--bg); border: 1px solid var(--line); max-width: 36rem; width: 100%; padding: 22px 24px 28px; position: relative; }
 .sheet h2 { margin: 0 0 .3em; font-weight: 500; letter-spacing: .08em; }
@@ -136,3 +138,10 @@ textarea { width: 100%; background: var(--panel); color: var(--text); border: 1p
 .foot { margin-top: 2em; font-size: .9rem; }
 
 @media (max-width: 520px) { .stage { padding: 18px 14px 80px; } .scene { padding-left: 12px; } #bar .brand { display: none; } #bar { padding: 8px 8px; gap: 4px; } #bar nav button { padding: 6px 5px; font-size: .72rem; } #povbar .pips i { width: 5px; height: 5px; } #povbar { gap: 6px; justify-content: flex-start; } }
+
+.syncnote { font-size: .85rem; color: var(--dim); margin: 1.4em 0 0; }
+.syncnote.on { color: var(--good); }
+.sheet .syncnote { margin: .4em 0 .8em; padding: 8px 10px; border: 1px solid var(--line); }
+.sheet .syncnote.on { border-color: var(--good); }
+.slot > div:first-child { min-width: 0; }
+.slot > div:last-child { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; flex: none; }

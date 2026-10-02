@@ -6,16 +6,19 @@
   var KEY = 'quartus.';
 
   /* ---------- storage (wrapped: may be unavailable) ---------- */
-  function lsGet(k) { try { return localStorage.getItem(KEY + k); } catch (e) { return null; } }
-  function lsSet(k, v) { try { localStorage.setItem(KEY + k, v); return true; } catch (e) { return false; } }
-
+  var Store = Q.Store;
   var settings = { size: 'm', theme: 'night', motion: true };
-  try { var st = JSON.parse(lsGet('settings') || '{}'); for (var k in st) settings[k] = st[k]; } catch (e) {}
-  function applySettings() {
+  var adult = false;
+  function mergePrefs(p) {
+    if (p.settings) for (var k in p.settings) settings[k] = p.settings[k];
+    if (p.adult) adult = true;
+  }
+  mergePrefs(Store.localPrefs());
+  function applySettings(persist) {
     document.documentElement.dataset.size = settings.size;
-    document.documentElement.dataset.theme = settings.theme;
+    document.documentElement.dataset.skin = settings.theme;
     document.documentElement.dataset.motion = settings.motion ? 'on' : 'off';
-    lsSet('settings', JSON.stringify(settings));
+    if (persist) Store.putPrefs({ settings: settings, adult: adult });
   }
 
   /* ---------- text ---------- */
@@ -26,11 +29,10 @@
   function povColor(id) { return (Q.chars[id] && Q.chars[id].color) || '#8a8378'; }
 
   /* ---------- saves ---------- */
-  function save(slot, label) {
-    var rec = { t: Date.now(), label: label || Q.label(S), state: S };
-    return lsSet('save.' + (slot || 'auto'), JSON.stringify(rec));
+  function save(slot) {
+    return Store.put(slot, { t: Date.now(), label: Q.label(S), state: JSON.parse(JSON.stringify(S)) });
   }
-  function loadRec(slot) { try { return JSON.parse(lsGet('save.' + slot)); } catch (e) { return null; } }
+  function loadRec(slot) { return Store.get(slot); }
 
   /* ---------- rendering ---------- */
   var stage = $('#stage');
@@ -145,7 +147,7 @@
     if (v.kind !== 'ep_title' && v.kind !== 'ch_title') autosave();
   }
 
-  function autosave() { if (S) save('auto'); }
+  function autosave() { if (S) Store.queueAuto(S, Q.label(S)); }
 
   function drainToasts() {
     var box = $('#toasts');
@@ -196,11 +198,13 @@
     var b = e.target.closest('[data-do]'); if (!b) return;
     var d = b.dataset.do;
     if (d === 'tab') journal(b.dataset.tab);
-    else if (d === 'save') { save(b.dataset.slot); saves(); }
-    else if (d === 'load') { var r = loadRec(b.dataset.slot); if (r) { S = r.state; closeModal(); hideTitle(); render(); } }
-    else if (d === 'size') { settings.size = b.dataset.v; applySettings(); settingsModal(); }
-    else if (d === 'theme') { settings.theme = b.dataset.v; applySettings(); settingsModal(); }
-    else if (d === 'motion') { settings.motion = !settings.motion; applySettings(); settingsModal(); }
+    else if (d === 'save') { save(b.dataset.slot).then(saves); }
+    else if (d === 'load') { loadRec(b.dataset.slot).then(function (r) { if (r) { S = r.state; closeModal(); hideTitle(); render(); } }); }
+    else if (d === 'newok') { closeModal(); S = Q.newState(); hideTitle(); render(); }
+    else if (d === 'cancel') { closeModal(); }
+    else if (d === 'size') { settings.size = b.dataset.v; applySettings(true); settingsModal(); }
+    else if (d === 'theme') { settings.theme = b.dataset.v; applySettings(true); settingsModal(); }
+    else if (d === 'motion') { settings.motion = !settings.motion; applySettings(true); settingsModal(); }
     else if (d === 'export') { var ta = $('#codebox'); ta.value = btoa(unescape(encodeURIComponent(Q.serialize(S)))); ta.select(); }
     else if (d === 'import') {
       try { var st = Q.deserialize(decodeURIComponent(escape(atob($('#codebox').value.trim())))); S = st; closeModal(); hideTitle(); render(); }
@@ -250,17 +254,21 @@
   }
 
   function saves() {
-    var h = '<h2>Saves</h2><p class="quiet">The game autosaves after every step. Manual slots are for branching your own story.</p>';
-    [1, 2, 3].forEach(function (n) {
-      var r = loadRec(n);
-      h += '<div class="slot"><div><b>Slot ' + n + '</b><div class="quiet">' + (r ? esc(r.label) + ' — ' + new Date(r.t).toLocaleString() : 'Empty') + '</div></div><div>' +
-        (S ? '<button class="btn sm" data-do="save" data-slot="' + n + '">Save</button>' : '') +
-        (r ? '<button class="btn sm" data-do="load" data-slot="' + n + '">Load</button>' : '') + '</div></div>';
+    openModal('<h2>Saves</h2><p class="quiet">Loading…</p>');
+    Promise.all([Store.get('slot1'), Store.get('slot2'), Store.get('slot3'), Store.get('auto')]).then(function (recs) {
+      var d = Store.describe();
+      var h = '<h2>Saves</h2><p class="syncnote ' + (d.cloud ? 'on' : '') + '">' + (d.cloud ? '☁ ' : '') + esc(d.text) + '</p><p class="quiet">The game autosaves after every step. Manual slots are for branching your own story.</p>';
+      [1, 2, 3].forEach(function (n) {
+        var r = recs[n - 1];
+        h += '<div class="slot"><div><b>Slot ' + n + '</b><div class="quiet">' + (r ? esc(r.label) + ' — ' + new Date(r.t).toLocaleString() : 'Empty') + '</div></div><div>' +
+          (S ? '<button class="btn sm" data-do="save" data-slot="slot' + n + '">Save</button>' : '') +
+          (r ? '<button class="btn sm" data-do="load" data-slot="slot' + n + '">Load</button>' : '') + '</div></div>';
+      });
+      var a = recs[3];
+      h += '<div class="slot"><div><b>Autosave</b><div class="quiet">' + (a ? esc(a.label) + ' — ' + new Date(a.t).toLocaleString() : 'Empty') + '</div></div><div>' + (a ? '<button class="btn sm" data-do="load" data-slot="auto">Load</button>' : '') + '</div></div>';
+      h += '<h3 class="subhead">Save code</h3><p class="quiet">A save code is plain text you can paste anywhere. Use it as a backup, or to move a game between accounts.</p><textarea id="codebox" rows="3" ' + (S ? '' : 'placeholder="Paste a save code here"') + '></textarea><div class="row">' + (S ? '<button class="btn sm" data-do="export">Show my code</button>' : '') + '<button class="btn sm" data-do="import">Load from code</button></div><div id="codemsg" class="quiet"></div>';
+      openModal(h);
     });
-    var a = loadRec('auto');
-    h += '<div class="slot"><div><b>Autosave</b><div class="quiet">' + (a ? esc(a.label) + ' — ' + new Date(a.t).toLocaleString() : 'Empty') + '</div></div><div>' + (a ? '<button class="btn sm" data-do="load" data-slot="auto">Load</button>' : '') + '</div></div>';
-    h += '<h3 class="subhead">Save code</h3><p class="quiet">Copy this to keep a save outside your browser, or paste one to restore it.</p><textarea id="codebox" rows="3"></textarea><div class="row"><button class="btn sm" data-do="export">Show my code</button><button class="btn sm" data-do="import">Load from code</button></div><div id="codemsg" class="quiet"></div>';
-    openModal(h);
   }
 
   function settingsModal() {
@@ -276,31 +284,45 @@
   $('#btn-menu').addEventListener('click', showTitle);
 
   /* ---------- title screen ---------- */
+  var titleAuto = null;
   function showTitle() {
-    var a = loadRec('auto');
+    var a = titleAuto;
     var t = $('#title');
-    var ok = lsGet('adult') === '1';
+    var d = Store.describe();
+    var checked = ($('#adult') ? $('#adult').checked : adult);
     t.innerHTML = '<div class="titlecard"><div class="small">A drama in ten episodes</div><h1>' + esc(Q.GAME_TITLE) + '</h1><div class="small">' + esc(Q.SEASON_NAME) + '</div>' +
-      '<div class="gate"><label><input type="checkbox" id="adult"' + (ok ? ' checked' : '') + '> I am 18 or older, and I understand this story contains graphic violence, explicit sexual content, cruelty, and religious and political atrocity.</label></div>' +
-      '<div class="tmenu"><button class="btn primary" id="t-new"' + (ok ? '' : ' disabled') + '>New Game</button>' +
-      (a ? '<button class="btn" id="t-cont"' + (ok ? '' : ' disabled') + '>Continue <span class="quiet">' + esc(a.label) + '</span></button>' : '') +
+      '<div class="gate"><label><input type="checkbox" id="adult"' + (checked ? ' checked' : '') + '> I am 18 or older, and I understand this story contains graphic violence, explicit sexual content, cruelty, and religious and political atrocity.</label></div>' +
+      '<div class="tmenu"><button class="btn primary" id="t-new"' + (checked ? '' : ' disabled') + '>New Game</button>' +
+      (a ? '<button class="btn" id="t-cont"' + (checked ? '' : ' disabled') + '>Continue <span class="quiet">' + esc(a.label) + '</span></button>' : '') +
       '<button class="btn" id="t-saves">Saves</button><button class="btn" id="t-set">Settings</button></div>' +
+      '<p class="syncnote ' + (d.cloud ? 'on' : '') + '">' + (d.cloud ? '☁ Cloud saves on' : (Store.ready && Store.mode === 'local' && Store.reason ? 'Saves on this device only' : 'Checking saves…')) + '</p>' +
       '<p class="quiet foot">Choices carry across episodes. Characters can die, and they stay dead.</p></div>';
     t.classList.add('open');
     $('#adult').onchange = function () {
-      lsSet('adult', this.checked ? '1' : '0');
+      adult = this.checked; applySettings(true);
       $('#t-new').disabled = !this.checked; if ($('#t-cont')) $('#t-cont').disabled = !this.checked;
     };
     $('#t-new').onclick = function () {
-      if (a && !confirm('Start a new game? Your autosave will be replaced as you play.')) return;
-      S = Q.newState(); hideTitle(); render();
+      if (!a) { S = Q.newState(); hideTitle(); render(); return; }
+      openModal('<h2>Start a new game?</h2><p>Your autosave (' + esc(a.label) + ') will be replaced as you play. Manual save slots are not touched.</p><div class="row"><button class="btn primary" data-do="newok">Start new game</button><button class="btn" data-do="cancel">Keep my game</button></div>');
     };
     if ($('#t-cont')) $('#t-cont').onclick = function () { S = a.state; hideTitle(); render(); };
     $('#t-saves').onclick = saves; $('#t-set').onclick = settingsModal;
   }
   function hideTitle() { $('#title').classList.remove('open'); }
 
-  applySettings();
+  applySettings(false);
   showTitle();
+  // Connect to cloud saves in the background, then refresh the title screen and preferences.
+  Store.onChange = function () { if ($('#title').classList.contains('open')) showTitle(); };
+  Store.init().then(function () {
+    return Promise.all([Store.getPrefs(), Store.get('auto')]);
+  }).then(function (r) {
+    mergePrefs(r[0]); applySettings(false);
+    titleAuto = r[1];
+    if ($('#title').classList.contains('open')) showTitle();
+  }).catch(function () { if ($('#title').classList.contains('open')) showTitle(); });
+  // Local mirror is available immediately, before the cloud answers.
+  (function () { try { var a = JSON.parse(localStorage.getItem('quartus.save.auto')); if (a && !titleAuto) { titleAuto = a; showTitle(); } } catch (e) {} })();
   window.Q.dbg = function () { return S; };
 })();
