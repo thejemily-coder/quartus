@@ -4,7 +4,7 @@
 var T = window.TITHE;
 T.EPISODES = T.EPISODES || {};
 
-var XP_TABLE = [0, 0, 100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5600, 6800];
+var XP_TABLE = [0, 0, 100, 300, 600, 1000, 1500, 2200, 3000, 4000, 5300, 6800, 8600];
 var MAX_LVL = 12;
 var BOND_IDS = Object.keys(T.CAST).filter(function (k) { return T.CAST[k].bond; });
 
@@ -93,8 +93,10 @@ function take(id, n) {
   n = n || 1; S.inv[id] = Math.max(0, (S.inv[id] || 0) - n);
   if (!S.inv[id]) { delete S.inv[id]; ['weapon', 'armor', 'trinket'].forEach(function (k) { if (S.equip[k] === id) S.equip[k] = k === 'weapon' ? 'widow' : null; }); }
 }
+var XP_RATE = 0.7;
 function gainXp(n) {
   if (!n) return;
+  n = Math.max(1, Math.round(n * XP_RATE));
   S.xp += n; toast('+' + n + ' XP', 'xp');
   while (S.lvl < MAX_LVL && S.xp >= XP_TABLE[S.lvl + 1]) {
     S.lvl++; S.sp++; if (S.lvl % 2 === 0) S.statPts++;
@@ -451,7 +453,7 @@ function wildTrip(k) {
     h.appendChild(el('div', 'prose', '<p class="line">' + fmt(pick([
       'You hear them before you see them.', 'Ox shies. You trust Ox.', 'The track narrows between two banks of thorn. Of course it does.',
       'Something has been following you for a mile. It stops pretending.', 'You smell them first.'])) + '</p>'));
-    startFight({ foes: foes, win: '@wildwin', flee: '@hub', wild: true });
+    startFight({ foes: foes, win: '@wildwin', flee: '@hub', wild: true, tier: R.tier || 1 });
   } else if (r < 0.85) {
     var got = {}; for (var i = 0; i < rnd(2, 3); i++) { var m = pick(R.forage); got[m] = (got[m] || 0) + 1; }
     h.appendChild(el('div', 'prose', '<p class="line">You spend the day foraging and scavenging. It is quiet, cold, and almost pleasant.</p>'));
@@ -520,17 +522,23 @@ function statline(it) {
 /* ---------- combat ---------- */
 var C = null;
 function foeDef(id) { var d = T.ENEMIES[id]; if (!d) console.error('Unknown enemy', id); return d; }
+var foeScale = 1;
 function makeFoe(id, i) {
   var d = foeDef(id);
+  if (foeScale !== 1) { d = Object.assign({}, d, { hp: Math.round(d.hp * foeScale), dmg: [Math.round(d.dmg[0] * (1 + (foeScale - 1) / 2)), Math.round(d.dmg[1] * (1 + (foeScale - 1) / 2))], acc: d.acc + Math.floor((foeScale - 1) * 4), xp: Math.round(d.xp * foeScale) }); }
   return { id: id, d: d, name: d.name, hp: d.hp, max: d.hp, st: {}, intent: null, next: null, key: id + '_' + i + '_' + Math.random().toString(36).slice(2, 6) };
 }
+/* Wild fights scale to the player so grinding stays dangerous; XP shrinks for easy regions. */
+function wildScale(tier) { return 1 + 0.14 * Math.max(0, S.lvl - tier); }
 function makeAlly(id) {
   var a = T.ALLIES[id]; if (!a) return null;
   var mx = a.hp + a.hpLvl * (S.lvl - 1);
   return { id: id, a: a, name: a.name, hp: mx, max: mx, st: {}, cd: 0, used: false };
 }
 function startFight(spec) {
+  foeScale = spec.wild ? wildScale(spec.tier || 1) : 1;
   var foes = (spec.foes || []).map(makeFoe);
+  foeScale = 1;
   var allyIds = spec.solo ? [] : (spec.allies || S.party);
   C = {
     spec: spec, foes: foes, allies: allyIds.map(makeAlly).filter(Boolean).slice(0, 3),
@@ -825,6 +833,7 @@ function endFight(res) {
     }
   });
   if (spec.noLoot) { loot = {}; silver = 0; }
+  if (spec.wild) xp = Math.round(xp * Math.max(0.35, 1 - 0.12 * Math.max(0, S.lvl - (spec.tier || 1) - 1)) * 0.85);
   if (spec.xp != null) xp = spec.xp;
   finishBox(box, 'Victory');
   var sum = el('div', 'spoils', '<b>Spoils</b> ' + xp + ' XP' + (silver ? ' · ' + silver + ' silver' : '') + Object.keys(loot).map(function (k) { return ' · ' + T.ITEMS[k].name + (loot[k] > 1 ? ' ×' + loot[k] : ''); }).join(''));

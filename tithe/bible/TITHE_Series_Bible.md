@@ -130,7 +130,7 @@ Older than anyone can say. Tiny, toothless, bright-eyed, hairy-chinned, delightf
 A tall grey man in a rain-dark greatcoat, wide-brimmed hat, clean pale hands, a ledger bound in something like skin. Polite, mild, faintly bored. Appears at the edges of scenes where death is coming: at the back of a tavern, at the edge of a battle, beside a sickbed. Only the dying, the oracle and Ansel can see him clearly. He cannot find Ansel in the book and it bothers him the way a wrong sum bothers a clerk. In E8's final scene, he writes a new line, in the capital, under a new heading.
 
 ### Companions joining in Season One
-- **BROTHER PELL** (Pellam Ashe), 54. Defrocked Lamplighter, drunk, scholar, coward, kind. Was expelled from the Lanternhold for asking what happens in the crypt. Knows the Lamp's scripture backwards, including the heresies. Comic, then tragic. Joins E2. *Combat:* a cudgel, a battered prayer-book; once per fight can Litany (heal/steady). Pell's fate in E8 depends on bond: with bond ≥3 he survives; otherwise he dies opening the crypt door to let the others in.
+- **BROTHER PELL** (Pellam Orme), 54. Defrocked Lamplighter, drunk, scholar, coward, kind. Was expelled from the Lanternhold for asking what happens in the crypt. Knows the Lamp's scripture backwards, including the heresies. Comic, then tragic. Joins E2. *Combat:* a cudgel, a battered prayer-book; once per fight can Litany (heal/steady). Pell's fate in E8 depends on bond: with bond ≥4 he survives; otherwise he dies opening the crypt door to let the others in.
 - **HOB FENNER**, 18. A Harrowgate stable boy who idolizes Ansel ("the man who killed the rat-king"). Gangly, freckled, brave in the stupid way. Ansel tries to send him home; Hob follows. Ansel can train him (bond). *E7 fate:* Hob dies in the coup **unless** Ansel trained him (flag `e2_hob_hired` and bond.hob ≥ 3, *and* the player sends Hob to warn Isolde rather than to the gate in E7). His death or survival echoes forever.
 - **ULLA STONEHAND**, 38. Nordvik shieldmaiden, six and a half feet, braided red-grey hair, missing two fingers, gay, warm, blunt, enormous appetite for food, songs and fights. Exiled for killing her chieftain's son, who raped her sister; she doesn't regret it. Working as a mine guard at Saltdown when Ansel meets her; joins E4. *Combat:* axe and shield; taunts enemies onto herself.
 
@@ -316,7 +316,7 @@ Flags live in `f.*`. Writers must use these names exactly.
 | `e4_miners` | E4 | 'saved' / 'left' | E8 epilogue |
 | `unreckoned` | E4 | 1 (unlocks skill branch) | all |
 | `e5_melee` | E5 | 'won' / 'lost' / 'threw' | E8 Cassius |
-| `e5_ledger_to` | E5 | 'isolde' / 'varane' / 'brannagh' / 'kept' | E7, E8 |
+| `e5_ledger_to` | E5 | 'isolde' / 'varane' / 'brannagh' / 'kept' / 'none' (no ledger taken in E4) | E7, E8 |
 | `e5_isolde_kiss` | E5 | 'almost' / 'kissed' / 'no' | E8 letter |
 | `e5_delphine` | E5 | 1 if tryst | S2 |
 | `e5_brannagh_spar` | E5 | 'won' / 'lost' | E7 |
@@ -329,7 +329,7 @@ Flags live in `f.*`. Writers must use these names exactly.
 | `e7_brannagh_doubt` | E7 | 1 (fixed) | E8 |
 | `e7_last_words` | E7 | 'curse' / 'forgive' / 'silence' | E8, S2 |
 | `e8_gall` | E8 | 'killed' / 'spared' / 'drowned' | S3 |
-| `e8_pell` | E8 | 'alive' / 'dead' | S2 |
+| `e8_pell` | E8 | 'alive' (bond.pell ≥ 4) / 'dead' | S2 |
 | `e8_hask` | E8 | 'killed' / 'hollowed' / 'justice' | S2 |
 | `e8_abbess` | E8 | 'dead' / 'arrested' | S2 |
 | `e8_oriel` | E8 | 'freed' (fixed) | S2 |

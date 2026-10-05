@@ -272,7 +272,7 @@ TITHE.CAST = {
   hob:      { name: 'Hob',      full: 'Hob Fenner', color: '#a8c27a', role: 'The Stable Boy', bond: true,
     bio: 'Eighteen. Harrowgate stable boy. Gangly, freckled, brave in the stupid way. Thinks you are a legend.' },
   pell:     { name: 'Pell',     full: 'Brother Pell', color: '#c4a35a', role: 'The Defrocked Priest', bond: true,
-    bio: 'Fifty-four. Pellam Ashe, once a Lamplighter of the Lanternhold, expelled for asking what happens in the crypt. Scholar, drunk, coward, kind.' },
+    bio: 'Fifty-four. Pellam Orme, twenty-two years a Lamplighter of the Lanternhold, expelled two years ago for asking what happens in the crypt. Scholar, drunk, coward, kind.' },
   ulla:     { name: 'Ulla',     full: 'Ulla Stonehand', color: '#c96a5a', role: 'The Shieldmaiden', bond: true,
     bio: 'Thirty-eight. Nordvik exile, six and a half feet of braids, scars and appetite. Killed her chieftain\'s son for what he did to her sister. Does not regret it.' },
   mags:     { name: 'Mags',     full: 'Mags Halloran', color: '#d6a07a', role: 'The Innkeeper', bond: true,
@@ -561,19 +561,19 @@ TITHE.ENEMIES = {
 
 /* Regions for the Wilds (between episodes). unlock: expression. */
 TITHE.REGIONS = {
-  kingsroad: { name: 'The Kingsroad', unlock: 'true', desc: 'Mud, gibbets, burned farms, and men who used to be soldiers.',
+  kingsroad: { tier: 1, name: 'The Kingsroad', unlock: 'true', desc: 'Mud, gibbets, burned farms, and men who used to be soldiers.',
     foes: [['bandit', 'bandit'], ['bandit', 'bandit_archer'], ['wolf', 'wolf'], ['ghoul', 'ghoul'], ['deserter', 'deserter', 'deserter'], ['bandit_captain', 'bandit', 'bandit_archer']],
     forage: ['bog_myrtle', 'linen', 'iron_scrap', 'saltpeter'] },
-  thornwood: { name: 'The Thornwood', unlock: 'ep>=2', desc: 'Old oak and blackthorn, boar trails, and the bandit queen\'s tolls.',
+  thornwood: { tier: 3, name: 'The Thornwood', unlock: 'ep>=2', desc: 'Old oak and blackthorn, boar trails, and the bandit queen\'s tolls.',
     foes: [['boar'], ['wolf', 'wolf', 'wolf'], ['bandit', 'bandit_archer', 'bandit_archer'], ['dire_wolf'], ['dire_wolf', 'wolf']],
     forage: ['wolf_pelt', 'bog_myrtle', 'saltpeter', 'grave_moss'] },
-  fen:       { name: 'Gallowmere Fen', unlock: 'ep>=3', desc: 'Black water, reed islands, eel-weirs and lights that should not be there.',
+  fen:       { tier: 4, name: 'Gallowmere Fen', unlock: 'ep>=3', desc: 'Black water, reed islands, eel-weirs and lights that should not be there.',
     foes: [['drowned', 'drowned'], ['lantern_man'], ['dire_wolf'], ['drowned', 'lantern_man'], ['bog_hag']],
     forage: ['bog_myrtle', 'bog_myrtle', 'hag_hair', 'grave_moss'] },
-  saltdown:  { name: 'Saltdown Hills', unlock: 'ep>=4', desc: 'Chalk downs pocked with mine-mouths. Abandoned galleries go a long way down.',
+  saltdown:  { tier: 5, name: 'Saltdown Hills', unlock: 'ep>=4', desc: 'Chalk downs pocked with mine-mouths. Abandoned galleries go a long way down.',
     foes: [['hollowed', 'hollowed', 'hollowed'], ['rat_swarm', 'rat_swarm'], ['bandit', 'crossbowman', 'bandit'], ['dire_wolf', 'wolf']],
     forage: ['silver_dust', 'saltpeter', 'iron_scrap', 'silver_dust'] },
-  barrows:   { name: 'The Barrowfields', unlock: 'ep>=6', desc: 'Grass-crowned graves of the First Kings, and the crows that know them.',
+  barrows:   { tier: 7, name: 'The Barrowfields', unlock: 'ep>=6', desc: 'Grass-crowned graves of the First Kings, and the crows that know them.',
     foes: [['wight', 'wight'], ['ghoul', 'ghoul', 'ghoul'], ['wight', 'ghoul'], ['ghoul_brute', 'ghoul']],
     forage: ['grave_moss', 'grave_moss', 'wight_dust', 'iron_scrap'] }
 };
@@ -16173,7 +16173,7 @@ TITHE.episode({
 var T = window.TITHE;
 T.EPISODES = T.EPISODES || {};
 
-var XP_TABLE = [0, 0, 100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5600, 6800];
+var XP_TABLE = [0, 0, 100, 300, 600, 1000, 1500, 2200, 3000, 4000, 5300, 6800, 8600];
 var MAX_LVL = 12;
 var BOND_IDS = Object.keys(T.CAST).filter(function (k) { return T.CAST[k].bond; });
 
@@ -16262,8 +16262,10 @@ function take(id, n) {
   n = n || 1; S.inv[id] = Math.max(0, (S.inv[id] || 0) - n);
   if (!S.inv[id]) { delete S.inv[id]; ['weapon', 'armor', 'trinket'].forEach(function (k) { if (S.equip[k] === id) S.equip[k] = k === 'weapon' ? 'widow' : null; }); }
 }
+var XP_RATE = 0.7;
 function gainXp(n) {
   if (!n) return;
+  n = Math.max(1, Math.round(n * XP_RATE));
   S.xp += n; toast('+' + n + ' XP', 'xp');
   while (S.lvl < MAX_LVL && S.xp >= XP_TABLE[S.lvl + 1]) {
     S.lvl++; S.sp++; if (S.lvl % 2 === 0) S.statPts++;
@@ -16620,7 +16622,7 @@ function wildTrip(k) {
     h.appendChild(el('div', 'prose', '<p class="line">' + fmt(pick([
       'You hear them before you see them.', 'Ox shies. You trust Ox.', 'The track narrows between two banks of thorn. Of course it does.',
       'Something has been following you for a mile. It stops pretending.', 'You smell them first.'])) + '</p>'));
-    startFight({ foes: foes, win: '@wildwin', flee: '@hub', wild: true });
+    startFight({ foes: foes, win: '@wildwin', flee: '@hub', wild: true, tier: R.tier || 1 });
   } else if (r < 0.85) {
     var got = {}; for (var i = 0; i < rnd(2, 3); i++) { var m = pick(R.forage); got[m] = (got[m] || 0) + 1; }
     h.appendChild(el('div', 'prose', '<p class="line">You spend the day foraging and scavenging. It is quiet, cold, and almost pleasant.</p>'));
@@ -16689,17 +16691,23 @@ function statline(it) {
 /* ---------- combat ---------- */
 var C = null;
 function foeDef(id) { var d = T.ENEMIES[id]; if (!d) console.error('Unknown enemy', id); return d; }
+var foeScale = 1;
 function makeFoe(id, i) {
   var d = foeDef(id);
+  if (foeScale !== 1) { d = Object.assign({}, d, { hp: Math.round(d.hp * foeScale), dmg: [Math.round(d.dmg[0] * (1 + (foeScale - 1) / 2)), Math.round(d.dmg[1] * (1 + (foeScale - 1) / 2))], acc: d.acc + Math.floor((foeScale - 1) * 4), xp: Math.round(d.xp * foeScale) }); }
   return { id: id, d: d, name: d.name, hp: d.hp, max: d.hp, st: {}, intent: null, next: null, key: id + '_' + i + '_' + Math.random().toString(36).slice(2, 6) };
 }
+/* Wild fights scale to the player so grinding stays dangerous; XP shrinks for easy regions. */
+function wildScale(tier) { return 1 + 0.14 * Math.max(0, S.lvl - tier); }
 function makeAlly(id) {
   var a = T.ALLIES[id]; if (!a) return null;
   var mx = a.hp + a.hpLvl * (S.lvl - 1);
   return { id: id, a: a, name: a.name, hp: mx, max: mx, st: {}, cd: 0, used: false };
 }
 function startFight(spec) {
+  foeScale = spec.wild ? wildScale(spec.tier || 1) : 1;
   var foes = (spec.foes || []).map(makeFoe);
+  foeScale = 1;
   var allyIds = spec.solo ? [] : (spec.allies || S.party);
   C = {
     spec: spec, foes: foes, allies: allyIds.map(makeAlly).filter(Boolean).slice(0, 3),
@@ -16994,6 +17002,7 @@ function endFight(res) {
     }
   });
   if (spec.noLoot) { loot = {}; silver = 0; }
+  if (spec.wild) xp = Math.round(xp * Math.max(0.35, 1 - 0.12 * Math.max(0, S.lvl - (spec.tier || 1) - 1)) * 0.85);
   if (spec.xp != null) xp = spec.xp;
   finishBox(box, 'Victory');
   var sum = el('div', 'spoils', '<b>Spoils</b> ' + xp + ' XP' + (silver ? ' · ' + silver + ' silver' : '') + Object.keys(loot).map(function (k) { return ' · ' + T.ITEMS[k].name + (loot[k] > 1 ? ' ×' + loot[k] : ''); }).join(''));

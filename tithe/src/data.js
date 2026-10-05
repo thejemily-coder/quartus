@@ -27,7 +27,7 @@ TITHE.CAST = {
   hob:      { name: 'Hob',      full: 'Hob Fenner', color: '#a8c27a', role: 'The Stable Boy', bond: true,
     bio: 'Eighteen. Harrowgate stable boy. Gangly, freckled, brave in the stupid way. Thinks you are a legend.' },
   pell:     { name: 'Pell',     full: 'Brother Pell', color: '#c4a35a', role: 'The Defrocked Priest', bond: true,
-    bio: 'Fifty-four. Pellam Ashe, once a Lamplighter of the Lanternhold, expelled for asking what happens in the crypt. Scholar, drunk, coward, kind.' },
+    bio: 'Fifty-four. Pellam Orme, twenty-two years a Lamplighter of the Lanternhold, expelled two years ago for asking what happens in the crypt. Scholar, drunk, coward, kind.' },
   ulla:     { name: 'Ulla',     full: 'Ulla Stonehand', color: '#c96a5a', role: 'The Shieldmaiden', bond: true,
     bio: 'Thirty-eight. Nordvik exile, six and a half feet of braids, scars and appetite. Killed her chieftain\'s son for what he did to her sister. Does not regret it.' },
   mags:     { name: 'Mags',     full: 'Mags Halloran', color: '#d6a07a', role: 'The Innkeeper', bond: true,
@@ -316,19 +316,19 @@ TITHE.ENEMIES = {
 
 /* Regions for the Wilds (between episodes). unlock: expression. */
 TITHE.REGIONS = {
-  kingsroad: { name: 'The Kingsroad', unlock: 'true', desc: 'Mud, gibbets, burned farms, and men who used to be soldiers.',
+  kingsroad: { tier: 1, name: 'The Kingsroad', unlock: 'true', desc: 'Mud, gibbets, burned farms, and men who used to be soldiers.',
     foes: [['bandit', 'bandit'], ['bandit', 'bandit_archer'], ['wolf', 'wolf'], ['ghoul', 'ghoul'], ['deserter', 'deserter', 'deserter'], ['bandit_captain', 'bandit', 'bandit_archer']],
     forage: ['bog_myrtle', 'linen', 'iron_scrap', 'saltpeter'] },
-  thornwood: { name: 'The Thornwood', unlock: 'ep>=2', desc: 'Old oak and blackthorn, boar trails, and the bandit queen\'s tolls.',
+  thornwood: { tier: 3, name: 'The Thornwood', unlock: 'ep>=2', desc: 'Old oak and blackthorn, boar trails, and the bandit queen\'s tolls.',
     foes: [['boar'], ['wolf', 'wolf', 'wolf'], ['bandit', 'bandit_archer', 'bandit_archer'], ['dire_wolf'], ['dire_wolf', 'wolf']],
     forage: ['wolf_pelt', 'bog_myrtle', 'saltpeter', 'grave_moss'] },
-  fen:       { name: 'Gallowmere Fen', unlock: 'ep>=3', desc: 'Black water, reed islands, eel-weirs and lights that should not be there.',
+  fen:       { tier: 4, name: 'Gallowmere Fen', unlock: 'ep>=3', desc: 'Black water, reed islands, eel-weirs and lights that should not be there.',
     foes: [['drowned', 'drowned'], ['lantern_man'], ['dire_wolf'], ['drowned', 'lantern_man'], ['bog_hag']],
     forage: ['bog_myrtle', 'bog_myrtle', 'hag_hair', 'grave_moss'] },
-  saltdown:  { name: 'Saltdown Hills', unlock: 'ep>=4', desc: 'Chalk downs pocked with mine-mouths. Abandoned galleries go a long way down.',
+  saltdown:  { tier: 5, name: 'Saltdown Hills', unlock: 'ep>=4', desc: 'Chalk downs pocked with mine-mouths. Abandoned galleries go a long way down.',
     foes: [['hollowed', 'hollowed', 'hollowed'], ['rat_swarm', 'rat_swarm'], ['bandit', 'crossbowman', 'bandit'], ['dire_wolf', 'wolf']],
     forage: ['silver_dust', 'saltpeter', 'iron_scrap', 'silver_dust'] },
-  barrows:   { name: 'The Barrowfields', unlock: 'ep>=6', desc: 'Grass-crowned graves of the First Kings, and the crows that know them.',
+  barrows:   { tier: 7, name: 'The Barrowfields', unlock: 'ep>=6', desc: 'Grass-crowned graves of the First Kings, and the crows that know them.',
     foes: [['wight', 'wight'], ['ghoul', 'ghoul', 'ghoul'], ['wight', 'ghoul'], ['ghoul_brute', 'ghoul']],
     forage: ['grave_moss', 'grave_moss', 'wight_dust', 'iron_scrap'] }
 };

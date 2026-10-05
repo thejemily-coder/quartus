@@ -6,6 +6,7 @@ const { chromium } = require('playwright');
 const path = require('path');
 const runs = +(process.argv[2] || 2);
 const firstChoice = process.argv.includes('--first');
+const noGrind = process.argv.includes('--nogrind');
 (async () => {
   const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome' }).catch(() => chromium.launch());
   let failures = 0;
@@ -75,7 +76,8 @@ const firstChoice = process.argv.includes('--first');
           await spendPoints();
           const plan = await page.evaluate(() => window.__plan = window.__plan || {});
           const key = 'ep' + st.ep;
-          const visits = await page.evaluate(k => (window.__plan[k] = (window.__plan[k] || 0) + 1), key);
+          let visits = await page.evaluate(k => (window.__plan[k] = (window.__plan[k] || 0) + 1), key);
+          if (noGrind) visits = 11;
           // sequence per hub: board x2, companions x2, wilds x3, market, then next episode
           const cards = await page.$$('#story .hubcard');
           const names = await Promise.all(cards.map(c => c.innerText()));
