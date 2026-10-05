@@ -1943,8 +1943,7 @@ TITHE.episode({
     t_ulla_3: {
       text: [
         '@ulla: "The lady?" She thinks about it while she chews, seriously. "She looks at you like a ledger she wants to balance. That\'s not nothing. In Nordvik we say a woman who counts your cattle is thinking of marrying you." She points a goose-bone at you. "But she\'s marrying the golden one. And you\'re not a cow, Dray, you\'re a stray dog. Strays don\'t get counted. They get fed by whoever\'s kind."',
-        `She glances, not very subtly, at the stairs, where Tamsin's door is.`,
-        '@ulla: "I\'m just saying. Some people feed strays every day and never mention it."'
+        '@ulla: "I like strays. Strays know who fed them."'
       ],
       fx: { bond: { ulla: 1 } },
       next: 't_ulla_end'

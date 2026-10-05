@@ -6052,6 +6052,260 @@ TITHE.episode({
       end: true
     },
 
+    /* ======================= SIDE: TALKS ======================= */
+    t_tam_0: {
+      route: [
+        { if: "f.e3_edda==='mercy'", go: 't_tam_m1' },
+        { if: "f.e3_edda==='burned'", go: 't_tam_b1' },
+        { go: 't_tam_s1' }
+      ]
+    },
+    t_tam_m1: {
+      loc: 'The roof of the Gutted Hen — the small hours',
+      text: [
+        'You find her on the roof, which you didn\'t know you could get onto, sitting on the slates with her back against the chimney stack for the warmth. She has her bow across her knees. The string is in her lap. She has been trying to string it, you think, for some time. Her hands won\'t do it.',
+        '@tamsin: "It\'s stupid," she says, before you can say anything. "I\'ve strung a bow every day since I was seven. I could do it asleep. I could do it *drunk*." She laughs. It\'s a terrible sound. "Look at them. Look at my hands, Sergeant."',
+        'They are shaking the way yours do in the morning.'
+      ],
+      choices: [
+        { t: 'Take the bow and the string. Brace it against your boot. String it for her. Hand it back.', go: 't_tam_m2', fx: { bond: { tamsin: 1 } } },
+        { t: '"It was right. What you did. It was the only kind thing anyone did for her all day."', go: 't_tam_m2' },
+        { t: 'Sit down beside her against the chimney. Say nothing. Put your shoulder against hers.', go: 't_tam_m2', fx: { bond: { tamsin: 1 } } }
+      ]
+    },
+    t_tam_m2: {
+      text: [
+        'She is quiet a long time. Over the roofs, the Lanternhold tower burns blue.',
+        '@tamsin: "There was a Warden," she says at last. "When they did my mam. A big one. He held my chin, so I\'d watch. He was quite gentle about it. He kept saying *there, there, it\'s nearly done*. It wasn\'t nearly done. It went on and on." She swallows. "I used to dream about having a bow. Being up on the roof of the tithe-barn with a bow. Just one arrow. Just one."',
+        '@tamsin: "And now I\'ve done it, and it was somebody else\'s mam. Somebody else\'s girl. And I don\'t know if she wanted it. I never asked her. I never even *asked*." Her voice cracks straight down the middle. "What if she wanted to go up? What if she was praying for it, and I—"',
+        'She stops. She turns to you. Her eyes are dry now, and that\'s worse.',
+        '@tamsin: "If it\'s ever me. On one of those. Would you?"'
+      ],
+      choices: [
+        { t: '"Yes."', go: 't_tam_m3', fx: { set: { e3_tam_promise: 'yes' }, bond: { tamsin: 2 } } },
+        { t: '"It won\'t be you. I\'d cut you down first. I\'d burn the town."', go: 't_tam_m3', fx: { set: { e3_tam_promise: 'cut' }, bond: { tamsin: 1 } } },
+        { t: '"Don\'t ask me that."', go: 't_tam_m3', fx: { set: { e3_tam_promise: 'no' } } }
+      ]
+    },
+    t_tam_m3: {
+      text: [
+        { if: "f.e3_tam_promise==='yes'", t: 'She nods, slowly, as if you\'ve signed something. "Good," she says. "Good. That\'s— thank you." And then, very quietly, to her knees: "You might not want to. One day. You might not want to, and you should do it anyway. Promise me."' },
+        { if: "f.e3_tam_promise==='cut'", t: 'She laughs, wetly. "You would, too. You great idiot. You\'d get yourself killed for it." She looks at you sidelong. "Don\'t. If it\'s me. Don\'t. Some people aren\'t worth burning a town for."' },
+        { if: "f.e3_tam_promise==='no'", t: '"No," she says. "No, that\'s fair. That\'s not fair, what I asked. Forget it." She doesn\'t forget it. Neither do you.' },
+        'She leans her head back against the warm chimney and closes her eyes. After a while, very softly, she starts to hum. Not the heron. Something else, something you don\'t know, low and old, that sounds like water going down into the ground.',
+        'You stay until it\'s light.'
+      ],
+      end: true
+    },
+    t_tam_b1: {
+      loc: 'The Gutted Hen — the back step, evening',
+      text: [
+        'She\'s on the back step, where she peeled the apple once. No apple. She has one arrow across her knees, the one she took off the string in the square, and she is turning it over and over in her fingers.',
+        '@tamsin: "You told me no."',
+        'She doesn\'t look up.',
+        '@tamsin: "And you were right. They\'d have hanged me. Brannagh had three Wardens on the crowd, I saw them. I\'d have been on that stake by morning, and you\'d have had to watch that too." She runs a thumb along the fletching. "You were right, and she screamed for an hour, and I hate you for being right. I hate me more for listening."'
+      ],
+      choices: [
+        { t: '"I\'m sorry."', go: 't_tam_b2' },
+        { t: '"I\'d say it again. I\'d rather watch her burn than you."', go: 't_tam_b2', fx: { bond: { tamsin: 1 }, set: { e3_rather_her: 1 } } },
+        { t: '"You could have done it anyway. Why didn\'t you?"', go: 't_tam_b2' }
+      ]
+    },
+    t_tam_b2: {
+      text: [
+        { if: 'f.e3_rather_her', t: 'She looks at you then. Really looks. Whatever she sees, it makes her look away again, quickly, at the arrow. "That\'s a terrible thing to say," she says. "Don\'t say things like that to me, Sergeant. I\'m not— don\'t."' },
+        { if: '!f.e3_rather_her', t: '"Because I wanted it to be both of us," she says. "If I did it. I wanted you to say *do it*, so it\'d be both of us, and not just me alone with it for the rest of my life. And you didn\'t. And I couldn\'t carry it alone." She laughs, short. "There. Now you know I\'m a coward."' },
+        'She stands, and puts the arrow back in her quiver, point down, the way she did in the square, apart from the others.',
+        '@tamsin: "I\'m keeping this one. I\'m never going to shoot it." A pause. "Next time, say yes. Whatever it is. Say yes, and we\'ll both carry it."',
+        'She goes in. She doesn\'t close the door all the way behind her.'
+      ],
+      fx: { bond: { tamsin: 1 }, set: { e3_tam_next_time: 1 } },
+      end: true
+    },
+    t_tam_s1: {
+      loc: 'The Gutted Hen — the back step, evening',
+      text: [
+        'She\'s on the back step peeling an apple with her knife in one long curl, for Edda, who is in the cellar and who likes apples, she has discovered, more than eels. The curl gets longer and longer. It reaches the ground. It keeps going.',
+        'It doesn\'t break.',
+        'She stares at it, with the knife still in her hand, as if it has done something remarkable. Then she looks up at you, and her face is completely open, for once, like a window with the shutters back.',
+        '@tamsin: "Did you see that? Sergeant. Did you see? It didn\'t *break*."'
+      ],
+      choices: [
+        { t: '"So what did you wish?"', go: 't_tam_s2' },
+        { t: '"I saw." Sit down beside her.', go: 't_tam_s2', fx: { bond: { tamsin: 1 } } },
+        { t: 'Steal a slice of the apple.', go: 't_tam_s2', fx: { bond: { tamsin: 1 } } }
+      ]
+    },
+    t_tam_s2: {
+      text: [
+        '@tamsin: "Not telling. Fen rule." She grins, the chipped tooth. Then, softer: "She\'s alive, Sergeant. She\'s down there eating Mags out of house and home and complaining about the cat. She\'s *alive*." She shakes her head. "We did one thing right. In this whole stinking town. You and me. We did one thing right."',
+        'She says *you and me* without seeming to notice she\'s said it. You notice.',
+        '@tamsin: "My mam would\'ve liked you," she says suddenly, and then looks horrified, and gets up, and takes the apple down to the cellar very fast without looking back.',
+        'The peel is still lying on the step, one unbroken curl. You don\'t know why, but you pick it up. You don\'t know what to do with it. In the end you put it in the case with the roll.'
+      ],
+      fx: { bond: { tamsin: 1 }, set: { e3_kept_peel: 1 } },
+      end: true
+    },
+
+    t_pell_1: {
+      loc: 'The Gutted Hen — a corner table, afternoon',
+      text: [
+        'Brother Pell has been sober for three days. It is not going well. He sits in the corner with a full cup of brandy in front of him, untouched, both hands flat on the table either side of it, like a man keeping a dog from bolting.',
+        '@pell: "Sit, my son. Sit. I need a witness." He doesn\'t look away from the cup. "I am conducting an experiment in the nature of grace."',
+        'His hands are shaking so badly the brandy is shivering in rings.'
+      ],
+      choices: [
+        { t: 'Sit. Wait with him. Don\'t touch the cup.', go: 't_pell_2', fx: { bond: { pell: 1 } } },
+        { t: 'Take the cup and drink it yourself. "Experiment\'s over."', go: 't_pell_2b' },
+        { t: '"What are you so frightened of, Pell?"', go: 't_pell_2' }
+      ]
+    },
+    t_pell_2b: {
+      text: [
+        'He watches it go down your throat with an expression of such naked grief that you almost apologise.',
+        '@pell: "Well," he says at last. "That\'s one way to remove a temptation. Not the way Saint Ambrel recommends." Then, unexpectedly, he laughs, and wipes his eyes. "Thank you. I think. Sit down, you thief."'
+      ],
+      next: 't_pell_2'
+    },
+    t_pell_2: {
+      text: [
+        '@pell: "The Writ," he says. "*A soul that Heaven cannot number.* They think it\'s a witch, or a demon, or a fen girl with mud on her hands. That\'s what the Lamp always thinks. It\'s easier." He turns the cup a quarter-turn, not drinking. "But I know the Book of Embers, my son. I know the old commentary, the bit they stopped copying. *The Starless One shall walk among the living, and the Lamp shall seek him, and shall not see him, though he stand at the foot of the pyre.*"',
+        'He looks, very briefly, at your gloved left hand on the table. Then away.',
+        '@pell: "I am a coward and a drunk and I was thrown out of the Lanternhold for asking a question. I don\'t intend to ask another one. Not of you." His voice is very gentle. "I only wanted you to know that I\'ve read the commentary. In case it should ever be... useful to have a friend who has."',
+        { if: 'f.e3_saw_crypt_door', t: 'You tell him about the undercroft. The stair going down. The iron door, and the line of blue light under it, and the hum like a wet finger round a glass. He goes grey. He goes grey all the way to his lips, and he picks up the brandy, and puts it down again without drinking it, and that is the bravest thing you have ever seen him do.' }
+      ],
+      choices: [
+        { t: '"Thank you, Pell."', go: 't_pell_3', fx: { bond: { pell: 1 } } },
+        { t: '"What was the question? The one that got you thrown out."', go: 't_pell_q' },
+        { t: '"Drink your brandy, old man. You\'ve earned it."', go: 't_pell_3' }
+      ]
+    },
+    t_pell_q: {
+      text: [
+        '@pell: "I asked the Abbess why the Hollowed always came out of the crypt on the morning after a Small Vigil." He says it very quietly. "She said: *what an interesting question, Pellam.* And she smiled at me, and gave me a honey cake. And I was in the street by noon with my robe on my arm, and nobody I had known for twenty years would look at me." He drinks, at last. One swallow. "She was so *kind* about it. That was the worst of it. She was kind."'
+      ],
+      fx: { set: { e3_pell_vigil: 1 }, bond: { pell: 1 } },
+      next: 't_pell_3'
+    },
+    t_pell_3: {
+      text: [
+        'He pushes the cup across the table to you, half-full. Then he pulls it back. Then he leaves it in the middle, between you, and folds his hands.',
+        '@pell: "Tomorrow," he says. "I\'ll try again tomorrow." He smiles, weakly. "That\'s the whole of my theology these days, my son. Tomorrow I\'ll try again."'
+      ],
+      end: true
+    },
+
+    t_edda_1: {
+      loc: 'The Gutted Hen — the cellar',
+      text: [
+        'Edda Moss is sitting cross-legged on her tick behind the small beer with the one-eyed cat in her lap, eating an apple down to the pips and then eating the pips. Her hair is growing back like the fuzz on a gosling.',
+        '@edda: "I can\'t stay down here," she says, when you come down. Not ungrateful. Just certain, the way fen-folk are about weather. "I\'m going mad. I can hear the Wardens\' horses on the Stair every morning. And Mags keeps feeding me. I\'ll be the size of a heifer by Saint Corran\'s." She scratches the cat. "I want to go home. I want to go and sit by my da."'
+      ],
+      choices: [
+        { t: '"Then go home. Gall\'s people will hide you. Wait for the Wardens to leave."', go: 't_edda_2', fx: { set: { e3_edda_after: 'fen' }, rep: { fen: 1 } } },
+        { t: '"Stay. A few more weeks. They\'re watching the fen gate. Mags won\'t mind."', go: 't_edda_2', fx: { set: { e3_edda_after: 'cellar' }, bond: { mags: 1 } } },
+        { t: 'Give her twenty silver. "North. Corvane. Somewhere they don\'t know your face."', cost: 20, go: 't_edda_2', fx: { set: { e3_edda_after: 'north' } } }
+      ]
+    },
+    t_edda_2: {
+      text: [
+        { if: "f.e3_edda_after==='fen'", t: '@edda: "Gall hides everyone," she says. "That\'s what Gall\'s *for*." She says it with total trust, the way a child talks about her mother. You find, without knowing why, that you don\'t like it.' },
+        { if: "f.e3_edda_after==='cellar'", t: '@edda: "A few weeks." She sighs enormously, theatrically, and flops back on the tick, and the cat complains. "Fine. Fine. But you have to bring me eels. Real ones. Mags\'s eels are an insult."' },
+        { if: "f.e3_edda_after==='north'", t: 'She looks at the coins for a long time. "I\'ve never been further than Harrowgate," she says. "I\'ve never been anywhere they don\'t bury people." She closes her fist round the silver anyway. "I\'ll think about it. I will. I\'ll think about it."' },
+        'She looks at you, then, properly, for the first time since the Fish Shambles.',
+        '@edda: "My da was frightened of going up," she says. "All his life. He used to look at the stars and shiver. He said they looked *hungry*." She shrugs. "Stupid, really. They\'re only stars."',
+        '@ansel: "Only stars," you agree, and do not look up at the cellar grating, where you can see three of them.'
+      ],
+      fx: { bond: { mags: 0 } },
+      end: true
+    },
+
+    t_bran_1: {
+      loc: 'A wayside shrine outside the walls — night',
+      text: [
+        'You can\'t sleep, so you walk, out of the West Gate and along the Corvane road, and a mile out, at a crossroads with no gibbet, there\'s a shrine no bigger than a cowshed, with a lamp burning blue in the niche.',
+        'You hear it before you get there. A wet, flat sound, like a sail in wind. Again. Again. A breath through the nose. Counting.',
+        'She\'s kneeling on the stone in her shift, pulled down to the waist, with her plate stacked against the wall. Her back is a map. She doesn\'t stop when she hears your step. She doesn\'t stop until she reaches whatever number it is. Then she sits back on her heels, breathing, and drapes the cord over her knee.',
+        '@brannagh: "Sergeant Dray." Without turning. "You walk like a man who doesn\'t want to be heard. It doesn\'t work on stone."'
+      ],
+      choices: [
+        { t: 'Wait outside. Turn your back. Give her that.', go: 't_bran_2', fx: { bond: { brannagh: 1 } } },
+        { t: '"Why?"', go: 't_bran_2' },
+        { t: 'Sit down in the doorway. Don\'t look away.', go: 't_bran_2' }
+      ]
+    },
+    t_bran_2: {
+      text: [
+        'She pulls the shift up over her shoulders, wincing, and comes and sits on the shrine step, not close, not far, with her hands hanging between her knees.',
+        '@brannagh: "My mother gave me to the Lamp when I was eight, for a tithe remission. Four years\' tithe. I was a good price. I was big for my age." Flat. Not self-pitying. A quartermaster again. "The Wardens taught me that the fire I carry is Heaven\'s, and it burns me because I am not yet clean enough to carry it. So I make myself cleaner." She touches the scar on her throat. "One day I will be clean enough, and it won\'t burn."',
+        '@ansel: "And if it always burns?"',
+        '@brannagh: "Then I will be burned." She looks at you, almost amused. "You think that\'s madness. You keep four hundred and six names in a box and read them aloud when you can\'t sleep. We all have our cords, sergeant."',
+        'Her eyes go to your left hand, in its glove, resting on your knee.',
+        '@brannagh: "Why the glove?"'
+      ],
+      choices: [
+        { t: '"A burn. From a stone." (True. It means nothing to her.)', go: 't_bran_3', fx: { set: { e3_bran_glove: 'truth' } } },
+        { t: '"A Lamp candle, when I was a boy. My father held my hand over it for stealing." (A lie. A good one.)', check: { stat: 'presence', dc: 12, pass: 't_bran_3', fail: 't_bran_3b' } },
+        { t: '"We all have our cords, Lampwarden."', go: 't_bran_3', fx: { bond: { brannagh: 1 }, set: { e3_bran_glove: 'cord' } } }
+      ]
+    },
+    t_bran_3b: {
+      text: [
+        'She looks at you a moment too long.',
+        '@brannagh: "You lie well, sergeant. Not well enough." But she lets it lie, the way you\'d let a wounded man keep his hand over a wound he doesn\'t want you to see. "Keep your glove. I\'m too tired tonight to want to know."'
+      ],
+      fx: { set: { e3_bran_glove: 'lie' } },
+      next: 't_bran_4'
+    },
+    t_bran_3: {
+      text: [
+        { if: "f.e3_bran_glove==='truth'", t: '@brannagh: "A stone." She considers. "Hot stones, in the Lowmarch? The smithies, I suppose." She nods, and files it away, and it means nothing to her at all. Your palm burns in the glove like a shout in an empty church.' },
+        { if: "f.e3_bran_glove==='cord'", t: 'Something happens to her mouth. It\'s almost a smile. It\'s the closest you\'ve seen. "Yes," she says. "I suppose we do."' },
+        { if: "f.e3_bran_glove!=='truth' && f.e3_bran_glove!=='cord'", t: '@brannagh: "Fathers," she says, and something closes in her face. "Yes." She doesn\'t ask again.' }
+      ],
+      next: 't_bran_4'
+    },
+    t_bran_4: {
+      text: [
+        'She reaches behind her into the shrine and comes back with a little pot of salve. Holds it out.',
+        '@brannagh: "There\'s a place between the shoulder-blades I can\'t reach. Oriel usually does it. She can\'t, tonight; they\'ve shut her up for saying strange things." She looks at you steadily. "It\'s only salve, sergeant. I\'m not asking anything else of you. I don\'t know how."'
+      ],
+      choices: [
+        { t: 'Take the pot. Do it. Gently, and only that.', go: 't_bran_5', fx: { bond: { brannagh: 2 }, set: { e3_bran_salve: 1 } } },
+        { t: '"I don\'t think that\'s a good idea, Lampwarden."', go: 't_bran_5b' }
+      ]
+    },
+    t_bran_5: {
+      text: [
+        'She turns her back and lowers the shift to her waist again, and sits very straight on the step, and you kneel behind her with the pot.',
+        'Up close, the lines are a history. Some are years old, white and smooth. The new ones are raised and hot to the touch. You work the salve into them with two fingers, slowly, the way you\'d treat a horse\'s galls. It smells of comfrey and lard. Her skin jumps under your hand, once, then goes still.',
+        'Neither of you says anything. Her breathing is very even, very controlled, like someone holding a guard. Yours isn\'t. You notice that. You hope she doesn\'t.',
+        'When you\'re done she draws the shift back up without turning round.',
+        '@brannagh: "Thank you," she says to the dark road. Her voice is not quite steady. "Go home, Ansel Dray. Go now, please."',
+        'You go. At the bend of the road you look back. She is still sitting on the step, very straight, with her arms wrapped around herself, looking at the sky.'
+      ],
+      end: true
+    },
+    t_bran_5b: {
+      text: [
+        'She nods, at once, as if you\'ve confirmed something.',
+        '@brannagh: "No. You\'re right. It isn\'t." She puts the pot down on the step. "Goodnight, sergeant. Thank you for being sensible. One of us should be."',
+        'You walk back to Harrowgate under the stars. You don\'t look up. It doesn\'t help.'
+      ],
+      fx: { bond: { brannagh: 1 } },
+      end: true
+    }
+  },
+  side: [
+    { id: 'e3_c_rusk', kind: 'contract', title: 'The Toll on Thornwood Road', desc: 'The Carters of the Market Stair will pay 50 silver to whoever opens the Thornwood road. The bandit queen Rusk takes a toll on every wheel.', level: 4, start: 'c_rusk_1' },
+    { id: 'e3_c_hag', kind: 'contract', title: 'Bones in Tidy Piles', desc: 'An eel-wife\'s daughter has been taken into the Sallow Holt, where nobody goes. Thirty silver, all she has.', level: 4, start: 'c_hag_1' },
+    { id: 'e3_t_tamsin', kind: 'talk', who: 'tamsin', title: 'After the pyre', start: 't_tam_0', if: "inParty('tamsin')" },
+    { id: 'e3_t_pell', kind: 'talk', who: 'pell', title: 'An experiment in grace', start: 't_pell_1', if: "inParty('pell')" },
+    { id: 'e3_t_edda', kind: 'talk', who: 'edda', title: 'The girl in the cellar', start: 't_edda_1', if: "f.e3_edda==='saved'" },
+    { id: 'e3_t_brannagh', kind: 'talk', who: 'brannagh', title: 'The shrine on the Corvane road', start: 't_bran_1', if: 'bond.brannagh >= 1' }
+  ]
+});
+
 ;
 /* ep4.js */
 /* TITHE — Season One, Episode 4: "Salt" */
@@ -9946,8 +10200,7 @@ TITHE.episode({
     t_ulla_3: {
       text: [
         '@ulla: "The lady?" She thinks about it while she chews, seriously. "She looks at you like a ledger she wants to balance. That\'s not nothing. In Nordvik we say a woman who counts your cattle is thinking of marrying you." She points a goose-bone at you. "But she\'s marrying the golden one. And you\'re not a cow, Dray, you\'re a stray dog. Strays don\'t get counted. They get fed by whoever\'s kind."',
-        `She glances, not very subtly, at the stairs, where Tamsin's door is.`,
-        '@ulla: "I\'m just saying. Some people feed strays every day and never mention it."'
+        '@ulla: "I like strays. Strays know who fed them."'
       ],
       fx: { bond: { ulla: 1 } },
       next: 't_ulla_end'
@@ -10870,7 +11123,6 @@ TITHE.episode({
         { if: 'f.e6_air', t: `The lantern burns full and bright and greedy. You turn it down. It\'s too late to give back what it\'s eaten. Your head pounds.` },
         `At the foot of the stair there is a small round room with a bench, and nothing else. You sit. You have to.`
       ],
-      fx: { add: { e6_hours: 1 } },
       next: 'lower_route'
     },
     lower_route: {
@@ -11169,8 +11421,8 @@ TITHE.episode({
         '@tamsin: "Sergeant," she says, very low. "He\'s *suffering*." And then, as if she can\'t stop herself: "Take it. Give him his rest. It\'s his to give."'
       ],
       choices: [
-        { t: '"Not yet. You\'re not done. Hold on." Talk him back to himself.', check: { stat: 'presence', dc: 16, uncanny: true, pass: 'h_talk1', fail: 'h_rage' } },
-        { t: '"What happens if you let go?" Make him see it.', check: { stat: 'wits', dc: 15, uncanny: true, pass: 'h_see', fail: 'h_rage' } },
+        { t: '"Not yet. You\'re not done. Hold on." Talk him back to himself.', check: { stat: 'presence', dc: 15, uncanny: true, pass: 'h_talk1', fail: 'h_rage' } },
+        { t: '"What happens if you let go?" Make him see it.', check: { stat: 'wits', dc: 14, uncanny: true, pass: 'h_see', fail: 'h_rage' } },
         { t: '"All right, old man. I\'ll relieve you." Give him the mercy he\'s asking for.', go: 'h_mercy' },
         { t: 'Draw Widow.', go: 'h_draw' }
       ]
@@ -11352,7 +11604,6 @@ TITHE.episode({
         '@tamsin: "Then let\'s talk," she says. "I\'m not dying quiet, Sergeant. Not in front of a king."',
         `She takes an apple out of her coat. A Hen apple, from the barrel behind the bar. She cuts it in two with her knife and gives you the bigger half without comment, and you notice, and she sees you notice, and neither of you says anything.`
       ],
-      fx: { add: { e6_hours: 1 } },
       next: 'dk_hub'
     },
     dk_hub: {

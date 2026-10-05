@@ -802,7 +802,6 @@ TITHE.episode({
         { if: 'f.e6_air', t: `The lantern burns full and bright and greedy. You turn it down. It\'s too late to give back what it\'s eaten. Your head pounds.` },
         `At the foot of the stair there is a small round room with a bench, and nothing else. You sit. You have to.`
       ],
-      fx: { add: { e6_hours: 1 } },
       next: 'lower_route'
     },
     lower_route: {
@@ -1101,8 +1100,8 @@ TITHE.episode({
         '@tamsin: "Sergeant," she says, very low. "He\'s *suffering*." And then, as if she can\'t stop herself: "Take it. Give him his rest. It\'s his to give."'
       ],
       choices: [
-        { t: '"Not yet. You\'re not done. Hold on." Talk him back to himself.', check: { stat: 'presence', dc: 16, uncanny: true, pass: 'h_talk1', fail: 'h_rage' } },
-        { t: '"What happens if you let go?" Make him see it.', check: { stat: 'wits', dc: 15, uncanny: true, pass: 'h_see', fail: 'h_rage' } },
+        { t: '"Not yet. You\'re not done. Hold on." Talk him back to himself.', check: { stat: 'presence', dc: 15, uncanny: true, pass: 'h_talk1', fail: 'h_rage' } },
+        { t: '"What happens if you let go?" Make him see it.', check: { stat: 'wits', dc: 14, uncanny: true, pass: 'h_see', fail: 'h_rage' } },
         { t: '"All right, old man. I\'ll relieve you." Give him the mercy he\'s asking for.', go: 'h_mercy' },
         { t: 'Draw Widow.', go: 'h_draw' }
       ]
@@ -1284,7 +1283,6 @@ TITHE.episode({
         '@tamsin: "Then let\'s talk," she says. "I\'m not dying quiet, Sergeant. Not in front of a king."',
         `She takes an apple out of her coat. A Hen apple, from the barrel behind the bar. She cuts it in two with her knife and gives you the bigger half without comment, and you notice, and she sees you notice, and neither of you says anything.`
       ],
-      fx: { add: { e6_hours: 1 } },
       next: 'dk_hub'
     },
     dk_hub: {
