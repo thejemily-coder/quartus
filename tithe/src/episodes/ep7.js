@@ -717,8 +717,9 @@ TITHE.episode({
       text: [
         `A brazier. One guard. He sees you coming down the cut with a Nordvik giant and a priest at your back, and he does not shout. He puts down his spear, very carefully, and takes off his helmet, and you know the face before you know where from.`,
         `Gorse Ford. An apple in each hand. Seventeen and terrified, and older now, and fed.`,
-        `@wat: "Sergeant Dray." His voice cracks. "They give me work. At the castle. I said you sent me. They laughed and give me a spear." He is already pulling the key off his belt. "I heard the bell. I heard what they're saying. I said to myself, if he comes, he'll come this way, 'cause it's the stupid way, and he's not stupid, so they won't watch it."`,
+        `@wat: "Sergeant Dray." His voice cracks. "They give me work. At the castle." He swallows. "I burned the tabard first." He is already pulling the key off his belt. "I heard the bell. I heard what they're saying. I said to myself, if he comes, he'll come this way, 'cause it's the stupid way, and he's not stupid, so they won't watch it."`,
         `He turns the key. The bar lifts. The night outside the wall comes in: wet grass, the river, the smell of the fen.`,
+        { if: 'f.e1_wat_dray', t: `@wat: "I said *Sergeant Dray sent me*, like you told me. They laughed, and give me a spear anyway."` },
         `@wat: "There. Now we're square." He swallows. "Aren't we?"`
       ],
       choices: [

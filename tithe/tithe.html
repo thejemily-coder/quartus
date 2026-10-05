@@ -12981,8 +12981,9 @@ TITHE.episode({
       text: [
         `A brazier. One guard. He sees you coming down the cut with a Nordvik giant and a priest at your back, and he does not shout. He puts down his spear, very carefully, and takes off his helmet, and you know the face before you know where from.`,
         `Gorse Ford. An apple in each hand. Seventeen and terrified, and older now, and fed.`,
-        `@wat: "Sergeant Dray." His voice cracks. "They give me work. At the castle. I said you sent me. They laughed and give me a spear." He is already pulling the key off his belt. "I heard the bell. I heard what they're saying. I said to myself, if he comes, he'll come this way, 'cause it's the stupid way, and he's not stupid, so they won't watch it."`,
+        `@wat: "Sergeant Dray." His voice cracks. "They give me work. At the castle." He swallows. "I burned the tabard first." He is already pulling the key off his belt. "I heard the bell. I heard what they're saying. I said to myself, if he comes, he'll come this way, 'cause it's the stupid way, and he's not stupid, so they won't watch it."`,
         `He turns the key. The bar lifts. The night outside the wall comes in: wet grass, the river, the smell of the fen.`,
+        { if: 'f.e1_wat_dray', t: `@wat: "I said *Sergeant Dray sent me*, like you told me. They laughed, and give me a spear anyway."` },
         `@wat: "There. Now we're square." He swallows. "Aren't we?"`
       ],
       choices: [
@@ -14151,6 +14152,9 @@ TITHE.episode({
     { if: "f.e4_miners==='left'", t: 'You left the Hollowed miners working in the Saltdown dark.' },
     { if: "f.e5_isolde_kiss==='kissed'", t: 'You kissed Lady Isolde in her father\'s archive, once, and stopped.' },
     { if: "f.e5_isolde_kiss==='almost'", t: 'You almost kissed Lady Isolde in her father\'s archive.' },
+    { if: "f.e6_companion==='pell'", t: 'In the dark of the barrow it was Pell who read the kings\' walls to you, and stopped reading before the end.' },
+    { if: "f.e6_companion==='ulla'", t: 'In the dark of the barrow it was Ulla at your back, singing her sister\'s song to keep the walls up.' },
+    { if: "f.e6_companion==='hob'", t: 'In the dark of the barrow it was Hob who held the torch, and did not drop it once.' },
     { if: "f.e6_ring", t: 'You took a dead king\'s ring off his finger in the Barrow of the Nine Crowns. Somewhere under the downs, a lock is a little looser.' },
     { if: "f.e7_hob==='alive'", t: 'Hob Fenner lived through the coup because you taught him how.' },
     { if: "f.e7_hob==='dead'", t: 'Hob Fenner died at the postern, asking to be put on the roll. You put him on the roll. His pitchfork stands in the corner of the Hen\'s cellar, and nobody moves it.' },
@@ -14475,6 +14479,7 @@ TITHE.episode({
     conf2: {
       text: [
         `@tamsin: "She sent me to find you. Before the Crooked Mile. Before Pettibone. I bribed my way onto that wagon because she told me which road you'd be on." A breath. "She felt you through the ground. She said you were a door. I thought she meant it like a saying."`,
+        { if: "f.e3_tam_promise==='yes'", t: `@tamsin: "You said you'd do it for me. In the fen, that night. If it was ever me on one of those, you'd put an arrow in me before the fire got there." Her jaw works. "And I stood on Gran's landing with your sword in my arms and didn't even do that much for you."` },
         { if: "f.e6_tam_stopped", t: `@tamsin: "In the barrow. When you— when I stopped you." Her jaw works. "That's why. I wasn't going to do that with you and then do *this*. I had that much left. That's all I had left."` },
         { if: "!f.e6_tam_stopped", t: `@tamsin: "In the barrow, in the dark. I nearly— " She stops. "I had that much sense left, anyway. Not much else."` },
         `@tamsin: "I'm not asking you for anything. I want that clear. I dug you out because I couldn't not. What you do now is yours."`,
@@ -14714,7 +14719,10 @@ TITHE.episode({
         { if: "f.e3_edda==='saved' && f.e3_edda_after!=='cellar'", t: `She came in from the fen at noon, when the word went round, with a sack of witch-salt on her back. Nobody asked her to.` },
         { if: "f.e3_edda==='saved' && f.e3_edda_route==='argued'", t: `There is a Lamp star-brand on her right palm, healed shiny. She keeps that hand in her lap.` },
         { if: "f.e3_edda==='saved'", t: `She doesn't say much. She doesn't need to. Every time Brannagh looks at her, Brannagh looks away first.` },
-        { if: "f.e4_miners==='saved'", t: `And Mags says, strangely: "Your miners are back." The Hollowed you led out of Saltdown. Somebody opened their doors in the coup, and they walked down to the Tanners' Bottom by themselves and stood in the street outside the Hen, in a line, facing the door. They're there now. They haven't moved since. "Like they were waiting for orders," Mags says, and shivers.` },
+        { if: "f.e4_miners==='saved'", t: `And Mags says, strangely: "Your miners are back." The Hollowed you led out of Saltdown.` },
+        { if: "f.e4_miners==='saved' && f.e4_miners_ward==='lanternhold'", t: `Lord Varane gave them to the Abbess's white ward, *for proper care*, and she wept over every one. Somebody opened the ward doors in the coup.` },
+        { if: "f.e4_miners==='saved' && f.e4_miners_ward!=='lanternhold'", t: `They were kept in the Keep's old barracks, by your asking. The Marshal's men turned them out into the street on the night of the bell.` },
+        { if: "f.e4_miners==='saved'", t: `They walked down to the Tanners' Bottom by themselves and stood in the street outside the Hen, in a line, facing the door. They're there now. They haven't moved since. "Like they were waiting for orders," Mags says, and shivers.` },
         { if: 'f.e4_miners_some', t: `And the thirteen from Saltdown you left in the Keep's laundry are still there, Mags hears. The washerwoman has kept them fed right through the coup, and barred the door, and told the Marshal's men it was the plague in there. Nobody has gone in.` }
       ],
       next: 'hen_plan'
@@ -15708,6 +15716,7 @@ TITHE.episode({
         `@abbess: "Why?" she says. She genuinely wants to know. "Why would you—"`,
         `@ansel: "Because it'd be a mercy. You'll answer for it in a room full of people, in daylight, with your books open on the table."`,
         `Brannagh puts the point of her sword under the old woman's chin and her other hand on her shoulder.`,
+        `Oriel, at the edge of the chalk, turns her blind face toward the old woman. "You lit the candle by my face," she says, "the night I was born. Here. At Saint Ysolt's. I didn't cry. You told me so, every year." The Abbess shuts her eyes.`,
         `@brannagh: "Morwenna Sallow," she says. Her voice is shaking too, and she lets it. "Abbess of the Lanternhold. I am a Lampwarden of the Lamp, Saints help me, for one more hour, and I arrest you for murder. Seven hundred and twelve counts." A breath. "Seven hundred and twenty-six. Counting the children you tried."`
       ],
       next: 'abbess_after'
