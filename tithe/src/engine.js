@@ -759,20 +759,23 @@ function pickTarget() {
   if (al.length && Math.random() < .3) return pick(al);
   return 'me';
 }
+function starRevealedNow() { return !!(S.f.e7_brannagh_doubt || (S.f.unreckoned && S.ep >= 7)); }
 function foeHits(f, mv, t) {
   var me = t === 'me';
   var def = me ? 10 + stat('finesse') + Math.floor(S.lvl / 3) : 11;
   var acc = f.d.acc + (f.st.fear ? -3 : 0);
-  if (me && S.skills.u2 && (f.d.tags.indexOf('choir') >= 0 || mv.starfire)) acc -= 5;
+  if (me && S.skills.u2 && (f.d.tags.indexOf('choir') >= 0 || (mv.starfire && starRevealedNow()))) acc -= 5;
   if (me && S.skills.u2 && f.d.tags.indexOf('hollow') >= 0) acc -= 3;
   var roll = d20();
   if (roll !== 20 && (roll === 1 || roll + acc < def)) { clog('The ' + f.name.toLowerCase() + '\'s ' + mv.n.toLowerCase() + ' misses ' + (me ? 'you' : t.name) + '.', 'miss'); return; }
   var dmg = rnd(f.d.dmg[0], f.d.dmg[1]) * mv.m * (f.st.weaken ? .6 : 1);
-  if (mv.starfire && me) { dmg *= .5; }
+  var starRevealed = S.f.e7_brannagh_doubt || S.f.unreckoned && S.ep >= 7;
+  if (mv.starfire && me && starRevealed) { dmg *= .5; }
   if (me) {
     if (C.guard) dmg *= mv.heavy ? .25 : .5;
     dmg = Math.max(mv.m ? 1 : 0, Math.round(dmg) - armorVal());
-    if (mv.starfire) clog('Blue starfire washes over you. It feels like nothing much. It feels like it is looking for someone else.', 'cosmic');
+    if (mv.starfire && starRevealed) clog('Blue starfire washes over you. It feels like nothing much. It feels like it is looking for someone else.', 'cosmic');
+    else if (mv.starfire) clog('Cold blue fire. It hurts less than it should, and you have no time to wonder why.', 'cosmic');
     S.hp -= dmg;
     clog('The ' + f.name.toLowerCase() + '\'s ' + mv.n.toLowerCase() + ' hits you for **' + dmg + '**.', 'bad');
     if (mv.fx) applyStatus(C.st, mv.fx, true);
