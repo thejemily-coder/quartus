@@ -376,7 +376,7 @@ TITHE.episode({
         `For the first time since the gate, the smile slips. Not much. A tile sliding off a roof.`,
         `@hask: "Did you." Very quietly. "Did you, now."`,
         `He looks at the leather case on your hip for a long moment. Then he laughs again, and the laugh is almost right.`,
-        `@hask: "Well. I've been dead before. Corvane, '19, the fever ward; ask anyone. It didn't take then either." He lifts his cup. "To the Red Company. All four hundred and seven of us."`
+        `@hask: "Well. I've been dead before. Corvane, the fever winter; ask anyone. It didn't take then either." He lifts his cup. "To the Red Company. All four hundred and seven of us."`
       ],
       fx: { rep: { town: 1, varane: -1 }, set: { e2_hask_named: 1 }, quest: { id: 'hask', note: 'You refused Hask\'s work, and told him you had read his name among the dead. "All four hundred and seven of us," he said.' } },
       next: 'hask_parting'
@@ -631,7 +631,7 @@ TITHE.episode({
     },
     hen_brawl_book: {
       text: [
-        `You put your gloved hand into the fire and pull the prayer-book out by its spine. The glove smokes. The burn on your palm underneath it doesn't feel the heat at all, which is something you decide not to think about.`,
+        `You put your gloved hand into the fire and pull the prayer-book out by its spine. The glove smokes and the heat comes through it like teeth. You'll have blisters across the knuckles tomorrow. You've had worse for less.`,
         `By the time you turn around, the drover has hit Pell once, and is drawing back to do it again, and his two friends are on their feet.`,
         `@narrator: "Oh, you want some as well, do you?"`
       ],
@@ -1756,7 +1756,8 @@ TITHE.episode({
       text: [
         `The Hen is dark and shut. You go round the back. There's a light in the wash-house, and steam coming out of the shutters, and Mags Halloran in the doorway in her shift with a shawl round her shoulders and her hair down, grey-shot auburn, much longer than you'd have guessed.`,
         `She looks at you. She looks at you for a long time. Then she pinches her nose.`,
-        `@mags: "Lamp and Saints. You are *not* coming into my common room like that. Tamsin came in an hour ago smelling like a dead rat and I put her in the copper first. She's gone up. Priest's asleep in the hayloft and the boy's asleep on the priest."`,
+        `@mags: "Lamp and Saints. You are *not* coming into my common room like that. Tamsin came in an hour ago smelling like a dead rat and I put her in the copper first. She's gone up. Priest's asleep in the hayloft."`,
+        { if: 'f.e2_hob_hired', t: `@mags: "And the boy's asleep on the priest."` },
         `@mags: "Water's still hot. Get in."`
       ],
       choices: [
