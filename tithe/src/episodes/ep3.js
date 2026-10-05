@@ -997,6 +997,7 @@ TITHE.episode({
         'She goes back to the pyre. She lifts the torch. She says the last words of the Kindling, *go up, go up, and be counted*, and puts it to the dry wood.',
         'It catches fast. The dry wood on top roars up yellow, and the green wood underneath begins to smoke and hiss and spit, and through it all you can see Edda\'s face, and you watch her understand, all at once, what is happening to her.',
         'She screams for her father. Then for her uncle. Then not for anyone, just screaming, high and continuous, as the flames come up her skirt and take it and her hair, what\'s left of it, goes up in a single bright flash like a struck match. The smell reaches you. You know that smell. Everyone who has been in a war knows it. It smells like pork.',
+        { if: "f.e3_plan==='none'", t: 'Tamsin has come back through the crowd to your side. You didn\'t see her come. She doesn\'t look at you.' },
         'Beside you, Tamsin has her bow in her hand. You didn\'t see her string it. There is an arrow on the string. Her face is perfectly white and perfectly calm and tears are running down it as if they belong to someone else.',
         '@tamsin: "Sergeant." Very low. Very steady. "Tell me to."'
       ],
