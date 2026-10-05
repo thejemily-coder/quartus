@@ -20,7 +20,7 @@ TITHE.episode({
   n: 6, title: 'The Barrow',
   logline: 'Sent to fetch a dead king\'s crown for a living prince, Ansel, Tamsin and one companion are sealed inside the Barrow of the Nine Crowns with the dead, the carvings, and the king who never stopped holding the door.',
   start: 'cold1',
-  credits: ['ansel', 'tamsin', 'hollin', 'pell', 'ulla', 'hob', 'isolde', 'gall'],
+  credits: ['ansel', 'tamsin', 'hollin', 'pell', 'ulla', 'hob', 'isolde', 'moll', 'oriel'],
   previously: [
     { t: 'Six years ago, at Corran\'s Ford, Ansel Dray died on an old stone carved with a seven-pointed star. In the morning, he woke.' },
     { if: "!f.e1_saw_crow && !f.e3_suspect_tam", t: 'Tamsin Vell has walked beside him since the Kingsroad. She calls him Sergeant. She goes to see her gran in the fen.' },
