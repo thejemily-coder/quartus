@@ -551,6 +551,7 @@ TITHE.episode({
         `He sees you coming. He doesn't raise the alarm. He watches you walk all the way up to the edge of his lantern-light with an expression like a man watching his own house burn.`,
         `@moll: "Sergeant Dray."`,
         `@ansel: "Sergeant Moll."`,
+        { if: 'f.e5_keep_sergeant', t: `@moll: "Sergeant of the Keep," he says. "His lordship's own. I stood at the back when he gave you the four men. Two of them are dead tonight, did you know? They went to the solar when the bell rang, and the Marshal's lads met them on the stair."` },
         `@moll: "I've orders to take you. Alive if possible." He doesn't move. Nor do his men. "I've also known Aurel Varane twenty-two years. He stood godfather to my youngest. I'd like to know, before anything else happens, whether you did it."`
       ],
       choices: [

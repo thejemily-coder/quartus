@@ -12815,6 +12815,7 @@ TITHE.episode({
         `He sees you coming. He doesn't raise the alarm. He watches you walk all the way up to the edge of his lantern-light with an expression like a man watching his own house burn.`,
         `@moll: "Sergeant Dray."`,
         `@ansel: "Sergeant Moll."`,
+        { if: 'f.e5_keep_sergeant', t: `@moll: "Sergeant of the Keep," he says. "His lordship's own. I stood at the back when he gave you the four men. Two of them are dead tonight, did you know? They went to the solar when the bell rang, and the Marshal's lads met them on the stair."` },
         `@moll: "I've orders to take you. Alive if possible." He doesn't move. Nor do his men. "I've also known Aurel Varane twenty-two years. He stood godfather to my youngest. I'd like to know, before anything else happens, whether you did it."`
       ],
       choices: [
@@ -14765,7 +14766,8 @@ TITHE.episode({
     hen_roll_mark: {
       text: [
         `She looks at the quill for a long moment like it might bite. Then she comes down the steps and takes it, and her ruined fingers can barely hold it.`,
-        { if: '(f.e5_tam_letters || f.e6_tam_name)', t: `She doesn't ask. She makes the T herself, bad-tempered and square. A. M. The S comes out backwards, the way it always does, a snake going home the wrong way; she glares at it and leaves it. Then, after the name, the crooked fen-knot she ties on her crows, because a name on its own looks naked to her. It blots. She blows on it.`, else: `@tamsin: "Show me," she says, very low, so nobody else can hear. "Which is the T." You put your hand over hers. You make the T. Then she pushes your hand away and makes the rest of the mark herself, a crooked fen-knot, the one she ties on her crows. It blots. She stares at it as if it is the first thing she has ever made that will last.` }
+        { if: 'f.e6_tam_wrote', t: `She doesn't ask. She writes it whole, the name you once walked her hand through in the dust of a barrow, and this time nobody's hand is on hers: T, A, M, the S backwards, I, N, and then VELL, which nobody has ever shown her, guessed at and nearly right. Then the crooked fen-knot she ties on her crows, because a name on its own looks naked to her. It blots. She blows on it, and doesn't look at you, and her ears go red.` },
+        { if: '!f.e6_tam_wrote && (f.e5_tam_letters || f.e6_tam_name)', t: `She doesn't ask. She makes the T herself, bad-tempered and square. A. M. The S comes out backwards, the way it always does, a snake going home the wrong way; she glares at it and leaves it. Then, after the name, the crooked fen-knot she ties on her crows, because a name on its own looks naked to her. It blots. She blows on it.`, else: `@tamsin: "Show me," she says, very low, so nobody else can hear. "Which is the T." You put your hand over hers. You make the T. Then she pushes your hand away and makes the rest of the mark herself, a crooked fen-knot, the one she ties on her crows. It blots. She stares at it as if it is the first thing she has ever made that will last.` }
       ],
       next: 'night_hub'
     },
@@ -16037,7 +16039,8 @@ TITHE.episode({
         `@tamsin: "Teach me," she says. Abruptly, as if it's been in her mouth for weeks. "Reading. Properly. Not now. Not if you don't want. But Pell says the Lady's going to Corvane for the wedding and taking her Dead Men, and Corvane's all signs and letters and contracts, and I'll be damned if I go to the capital and have to ask some lordling what a tavern's called."`,
         `@ansel: "You're coming to Corvane, then."`,
         `@tamsin: "Don't argue," she says. "I'm not asking that one either."`,
-        { if: 'f.e5_tam_letters || f.e6_tam_name', t: `@tamsin: "Teach me the *rest*, I mean. I've got five letters and they're all yours." She takes the pen and writes ANSEL on the scrap from memory, the S backwards, quick, before you can watch her do it. Then she pushes it at you. "Go on, then. Next one."`, else: `You pull the candle closer. You take a scrap of paper from your coat. You write an A.` },
+        { if: 'f.e6_tam_wrote', t: `@tamsin: "Teach me the *rest*, I mean. I've got two words. One's yours and one's mine, and I'm sick of the both of them." She takes the pen and writes ANSEL and TAMSIN side by side from memory, both S's backwards, quick, before you can watch her do it. Then she pushes it at you. "Go on, then. Next one."` },
+        { if: '!f.e6_tam_wrote && (f.e5_tam_letters || f.e6_tam_name)', t: `@tamsin: "Teach me the *rest*, I mean. I've got five letters and they're all yours." She takes the pen and writes ANSEL on the scrap from memory, the S backwards, quick, before you can watch her do it. Then she pushes it at you. "Go on, then. Next one."`, else: `You pull the candle closer. You take a scrap of paper from your coat. You write an A.` },
         { if: 'f.e5_tam_letters || f.e6_tam_name', t: `You pull the candle closer. You write the first letter she hasn't got. It's a B. She glares at it like it owes her money.` },
         `She leans in. Her shoulder is an inch from yours. The inch stays an inch. She doesn't seem to mind it, tonight. Neither do you.`
       ],
