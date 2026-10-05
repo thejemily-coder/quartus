@@ -139,11 +139,12 @@ function fx(e) {
     (Array.isArray(e.quest) ? e.quest : [e.quest]).forEach(function (q) {
       var cur = S.q[q.id] || { title: q.title || q.id, state: 'active', notes: [], ep: S.ep };
       if (q.title) cur.title = q.title;
-      var was = cur.state;
+      var isNew = !S.q[q.id], was = cur.state;
       if (q.state) cur.state = q.state;
-      if (q.note) cur.notes.push(q.note);
+      if (q.note && cur.notes.indexOf(q.note) < 0) cur.notes.push(q.note);
       S.q[q.id] = cur;
-      if (!was || !S.q[q.id] || was !== cur.state || !e._seen) toast((cur.state === 'done' ? 'Quest complete: ' : cur.state === 'failed' ? 'Quest failed: ' : 'Journal: ') + cur.title, 'quest');
+      if (isNew || was !== cur.state) toast((cur.state === 'done' ? 'Quest complete: ' : cur.state === 'failed' ? 'Quest failed: ' : 'New in your journal: ') + cur.title, 'quest');
+      else if (q.note) toast('Journal updated: ' + cur.title, 'quest');
     });
   }
   if (e.skill) { S.skills[e.skill] = 1; }
@@ -861,7 +862,7 @@ function death() {
 function hud() {
   if (!S) return;
   var E = T.EPISODES[S.ctx];
-  $('#hud-ep').textContent = S.mode === 'title' ? '' : (S.mode === 'hub' || S.mode === 'wild' ? 'Between episodes' : (E ? 'E' + E.n + ' · ' + E.title : ''));
+  $('#hud-ep').textContent = S.mode === 'title' ? '' : (S.mode === 'hub' || S.mode === 'wild' || S.mode === 'side' ? 'Between episodes' : (E ? 'E' + E.n + ' · ' + E.title : ''));
   $('#hud-hp').innerHTML = '<span class="lbl">HP</span>' + hpbar(S.hp, maxHp(), 'hpbar') + '<span class="num">' + Math.max(0, S.hp) + '/' + maxHp() + '</span>';
   $('#hud-st').innerHTML = '<span class="lbl">ST</span><span class="pips">' + pips(S.st, maxSt()) + '</span>';
   $('#hud-sv').innerHTML = '<span class="lbl">Silver</span><span class="num">' + S.silver + '</span>';
