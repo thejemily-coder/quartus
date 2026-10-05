@@ -33,17 +33,19 @@ TITHE.episode({
     { if: "f.e1_ashby==='led'", t: 'At Ashby a whole village stood in the rain, emptied. Ansel walked them to Harrowgate, and the Lanternhold took them in.' },
     { if: "f.e1_ashby==='mercy'", t: 'At Ashby a whole village stood in the rain, emptied. Ansel gave them mercy, one by one. They made no sound.' },
     { if: "f.e1_ashby==='left'", t: 'At Ashby a whole village stood in the rain, emptied. Ansel left them there. A little girl with a doll watched him go.' },
-    { t: 'Every door in Ashby was marked with the Lamp\'s tithe-star. On the inside.' },
+    { if: 'f.e1_chalk', t: 'Every door in Ashby was marked with the Lamp\'s tithe-star. On the inside.' },
+    { t: 'On the downs, ghouls took Odo Pettibone in the night. Ansel brought his wagon in anyway.' },
     { if: "f.e1_hask_meeting==='swallowed'", t: 'At the gate of Harrowgate: Konrad Hask, the captain who sold the Red Company. "Sergeant Dray. You\'re dead." Ansel took his hand off his sword.' },
     { if: "f.e1_hask_meeting==='spat'", t: 'At the gate of Harrowgate: Konrad Hask, the captain who sold the Red Company. "Four hundred and six, Captain. I wrote them all down."' },
     { if: "f.e1_hask_meeting==='drew'", t: 'At the gate of Harrowgate: Konrad Hask, the captain who sold the Red Company. Ansel drew. Hask smiled. "There\'s my sergeant."' },
     { if: 'f.e1_saw_crow', t: 'In the dead of night, Tamsin tied a knot of red thread to a crow\'s leg and sent it south.' },
-    { t: 'On the wall above the gate, a young woman with a ledger under her arm watched him come in, and did not look away.' }
+    { t: 'On the wall above the gate, a young woman with a ledger was counting the carts. She counted his, and then she looked at him.' },
+    { if: 'f.e1_hask_bottle', t: 'That night the Marshal sent up a bottle of Corvane red. *To the Red Company.*' }
   ],
   nextTime: [
-    'White horses on the Kingsroad. A woman in white enamel with a burn down her throat.',
-    '"There is a soul in this town that Heaven has not counted. I will find it. I will find it if I have to burn every witch in the March."',
-    'In an iron cage on a wagon, a blind girl opens her silver eyes. "He\'s here."'
+    'Twelve riders in white enamel, the seven-point star on every breast.',
+    '"By its authority I am to seek out, in the March of Harrowgate, a soul that Heaven cannot number."',
+    'In a carriage of black iron and green glass, a blind girl whispers through the rain: "He\'s here."'
   ],
   nodes: {
 
@@ -93,8 +95,10 @@ TITHE.episode({
         `You wake with the shakes and the lime-stink of the tanneries in your nose, which for one terrible moment makes you fifteen again, in your father's yard, with your hands in the pits.`,
         `Then you remember where you are. Harrowgate. The Hen. Konrad Hask, alive, a quarter-mile up the hill, eating his breakfast.`,
         `Across the landing, Tamsin's door stands open. The bed is made, badly. An apple core sits on the windowsill like a note. She said a few days. Her gran's, in the fen.`,
-        `> The room is very quiet without her singing in it. You don't care for how much you notice that.`,
-        `Your purse is lighter than you'd like. There's a bottle on the washstand with two fingers in it.`
+        `Your purse is lighter than you'd like.`,
+        { if: "f.e1_hask_bottle==='drank'", t: `Hask's Corvane red stands on the washstand with two fingers left in it. You don't remember drinking that much. You remember the names.` },
+        { if: "f.e1_hask_bottle==='kept'", t: `Hask's bottle stands on the washstand, still corked, catching the light like a guest who won't leave. Beside it, your own: two fingers of poitín.` },
+        { if: "!f.e1_hask_bottle || f.e1_hask_bottle==='poured'", t: `There's a bottle on the washstand with two fingers of poitín in it.` }
       ],
       choices: [
         { t: `Drink it. Steady the hands. Hask will be watching your hands.`, go: 'morn2', fx: { set: { e2_drank: 1 }, heal: 3 } },
@@ -119,28 +123,19 @@ TITHE.episode({
         { if: 'f.e2_drank', t: `@mags: "Morning. Bread's on the board, and you can tell me what that bottle did for you that the bread couldn't."` },
         { if: '!f.e2_drank', t: `@mags: "Morning. You look like a man who's decided to be brave before breakfast. Bread's on the board."` },
         `She jerks her chin at the table. There's a folded paper on it, sealed in blue wax with a boar.`,
-        `@mags: "Marshal's man brought that at cockcrow. Very polite. Wiped his feet." She takes the pike's guts out in one pull. "And Hettie Pye's been in twice asking if anyone's seen her Dickon. He went home drunk down Lantern Lane last night and never got there. There's a hole in the lane this morning where the old grate was."`
+        `@mags: "Marshal's man brought that at cockcrow. Very polite. Wiped his feet." She takes the pike's guts out in one pull. "And Hettie Pye's been in twice asking if anyone's seen her Dickon. He went home drunk down Lantern Lane last night and never got there. There's a hole in the lane this morning where the old grate was. Cisterns under there, older than the walls. Rats now. Big ones." She wipes the knife. "Nobody goes down there, love."`
       ],
       choices: [
         { t: `Open the letter.`, go: 'morn_letter' },
-        { t: `"A hole?"`, go: 'morn_hole' },
         { t: `"You gut a fish like a sergeant."`, go: 'morn_mags' }
       ]
-    },
-    morn_hole: {
-      text: [
-        `@mags: "The cisterns. Old tanks under the old town, older than the walls. Smugglers use them, or did. Rats use them now. Big ones." She wipes the knife. "Nobody goes down there, love. Dickon Pye's either sleeping it off in somebody's woodshed or he's not coming back, and I know which my money's on."`,
-        `She says it plainly. You've noticed this town says a lot of things plainly, and then doesn't do anything about them.`
-      ],
-      fx: { set: { e2_heard_hole: 1 } },
-      next: 'morn_letter'
     },
     morn_mags: {
       text: [
         `@mags: "I was married to a soldier's son and then a fisherman's. You pick things up." She points the knife at you, friendly. "You hold a spoon like a sergeant. Sit down and use it."`,
         `You sit. The bread is good. It is extremely good. You eat two slices before you notice she's watching you eat with an expression you can't read, something between a cook's satisfaction and something less simple.`
       ],
-      fx: { bond: { mags: 1 }, heal: 4, quiet: true },
+      fx: { heal: 4 },
       next: 'morn_letter'
     },
     morn_letter: {
@@ -157,13 +152,13 @@ TITHE.episode({
       loc: 'The Gutted Hen — the stable yard',
       text: [
         `In the yard, a gangly boy with a thatch of straw-coloured hair and more freckles than face is grooming Ox, which is impossible, because nobody grooms Ox.`,
-        `The boy's left hand is bleeding freely. Ox has clearly bitten it. The boy doesn't seem to mind. He's talking to the horse in a low steady voice, the way you talk to a frightened child, and Ox, the traitor, is leaning into the brush.`,
+        `The boy's left hand is bleeding freely. Ox has clearly bitten it. The boy doesn't seem to mind. He's talking to the horse in a low steady voice, the way you talk to a frightened child, and Ox, who has never in his life leaned into anything but a bite, is leaning into the brush.`,
         `He sees you. He goes red to the ears.`,
         `@hob: "Sir! Sergeant. Sir. I'm Hob. Fenner. I do the horses here, for Mistress Halloran. I saw you bring the wagon in. With the claw-marks on the canvas. Moll says it was ghouls. Was it ghouls? Was it a *mother*?"`
       ],
       fx: { know: { cast: ['hob'] } },
       choices: [
-        { t: `"It was. Bandage that hand before it goes bad."`, go: 'yard_kind', fx: { bond: { hob: 1 } } },
+        { t: `"It was. Bandage that hand before it goes bad."`, go: 'yard_kind' },
         { t: `"He bit you."`, go: 'yard_bit' },
         { t: `"Don't call me sir." Walk on.`, go: 'yard_walk' }
       ]
@@ -193,8 +188,9 @@ TITHE.episode({
     },
     yard_end: {
       text: [
-        { if: 'f.e1_spared_wat', t: `@hob: "Sergeant! There's a new lad on the Keep gate. Wat. From Hobb's End. He says a dead sergeant told him to come and ask for work, and they laughed at him, and then they gave him a spear anyway because the Marshal said a man with a story like that was a man who'd keep his mouth shut." Hob grins. "Was that you? Are you the dead sergeant?"` },
-        { if: 'f.e1_spared_wat', t: `You don't answer. But something in your chest that has been tight since the ford eases by the width of a thread.` },
+        { if: 'f.e1_spared_wat && f.e1_wat_dray', t: `@hob: "Sergeant! There's a new lad on the Keep gate. Wat. From Hobb's End. He came in saying *Sergeant Dray sent me*, and they laughed at him, and then they gave him a spear anyway because the Marshal said a man with a story like that was a man who'd keep his mouth shut." Hob grins. "Was that you? Are you the dead sergeant?"` },
+        { if: 'f.e1_spared_wat && !f.e1_wat_dray', t: `@hob: "Sergeant! There's a new lad on the Keep gate. Wat. From Hobb's End. Says a man on the Kingsroad could have killed him and didn't, so he burned his coat and came to ask for work, and the Marshal gave him a spear." Hob grins. "He says the man had a sergeant's knot. Was that you?"` },
+        { if: 'f.e1_spared_wat', t: `You don't answer. You find you're walking a little easier up the hill.` },
         { if: '!f.e1_spared_wat', t: `@hob: "Sergeant! If you need anything. Anything. I'm Hob. Fenner. I'm *here*."` }
       ],
       next: 'keep1'
@@ -254,7 +250,7 @@ TITHE.episode({
         { t: `"Tell me about the Ford."`, go: 'hask_ford', once: true },
         { t: `"What's the work?"`, go: 'hask_work', once: true },
         { t: `"Why haven't you had me killed?"`, go: 'hask_why', once: true },
-        { t: `Read the ledger upside down while he talks.`, if: '!f.e2_hask_ledger', check: { stat: 'wits', dc: 14, pass: 'hask_ledger_pass', fail: 'hask_ledger_fail' } },
+        { t: `Read the ledger upside down while he talks.`, if: '!f.e2_hask_ledger && !f.e2_hask_ledger_tried', check: { stat: 'wits', dc: 14, pass: 'hask_ledger_pass', fail: 'hask_ledger_fail' } },
         { t: `"Enough. Here's my answer."`, if: 'f.e2_hask_ford', go: 'hask_decide' }
       ]
     },
@@ -262,7 +258,7 @@ TITHE.episode({
       text: [
         `He doesn't flinch. You'd hoped he would. He sets his cup down and folds his hands, and for a moment he is your captain again, giving a briefing.`,
         `@hask: "Ashwick had three thousand crossbows coming down out of the north. You didn't know that. I didn't tell you, because there was nothing you could do with it. The Crown had already signed us away in the treaty: four hundred spears, a line item. Whatever happened at that river, the Red Company was finished. Finished, Ansel. Either the Duke's bolts or the King's hangman, a month later, for the crime of being on the wrong side of a peace."`,
-        `@hask: "The Duke offered gold. And a pardon. One pardon. I asked for four hundred. I want you to know that I asked."`,
+        `@hask: "The Duke offered gold. And a pardon. One pardon. Mine. I asked for four hundred. I want you to know that I asked. The lads who rode with me that morning bought theirs later, with what they did for me after."`,
         `He looks you in the eye. He has always been able to do that. It was the first thing he taught you: look them in the eye and they'll believe the rest.`,
         `@hask: "The Company was finished either way. I chose which of us walked away."`
       ],
@@ -295,7 +291,7 @@ TITHE.episode({
     hask_ford_silent: {
       text: [
         `You drink. It's very good wine. He watches you drink it, and something in his shoulders settles, the way a man settles when a horse he thought would buck takes the saddle.`,
-        `@hask: "That's right. You always were the listener. Tom Ashe used to say you were the only man in the Company who could hear a lie over the sound of his own voice." A little laugh. "Gods, Tom. That joke about the miller's wife. Did he ever finish it?"`,
+        `@hask: "That's right. You always were the listener. Tom Ashe used to say you were the only man in the Company who could hear a lie over the sound of his own voice." A little laugh. "Saints, Tom. That joke about the miller's wife. Did he ever finish it?"`,
         `@ansel: "No."`,
         `The word comes out of you like a stone. Hask hears the weight of it and, for just a breath, has nothing to say.`
       ],
@@ -306,7 +302,7 @@ TITHE.episode({
       text: [
         `@hask: "I need a town sword. Not a man-at-arms; I've got forty of those and they wear the livery and everybody can see them coming. I need a man who drinks in the Hen and hears things, who can lean on a moneylender or walk a debtor up to the Keep without it being a *matter*. Odd jobs. Quiet jobs. Two silver a day and found, and a token that opens doors."`,
         `He grins.`,
-        `@hask: "And you'd be close to me, which is what you want. Don't insult us both by pretending it isn't. You want to watch me. Watch me on my coin. I'd rather have you inside the tent pissing out, as the old saying goes, than outside it pissing on my boots."`,
+        `@hask: "And you'd be close to me, which is what you want. Don't insult us both by pretending it isn't. You want to watch me. Watch me on my coin. Better at my table counting my spoons than out in the rain counting my men."`,
         { if: "f.e1_hask_meeting==='spat'", t: `@hask: "Again."` }
       ],
       next: 'hask_hub'
@@ -324,8 +320,8 @@ TITHE.episode({
     hask_ledger_pass: {
       text: [
         `Upside down, his hand is no harder to read than right way up; you spent four years reading it over his shoulder.`,
-        `Grain from Coldbrook. Arrears from the Thornwood charcoal-burners. Wages. And near the bottom, in the same neat hand: *L.H. — eight head — Saltdown — paid in full.*`,
-        `Head. Cattle, maybe. Pigs. The Lanternhold keeps a farm; everyone knows that.`,
+        `Grain from Coldbrook. Arrears from the Thornwood charcoal-burners. Wages. And near the bottom, in the same neat hand, a line with no goods in it at all: *L.H. — eight — paid in full.*`,
+        `Eight what, he doesn't say. Eight casks. Eight loads. The Lanternhold buys a great deal; everyone knows that.`,
         `He closes the ledger with one finger, without looking down at it, still talking. He hasn't noticed. Or he wants you to think he hasn't.`
       ],
       fx: { set: { e2_hask_ledger: 1 } },
@@ -334,9 +330,9 @@ TITHE.episode({
     hask_ledger_fail: {
       text: [
         `You get as far as *Coldbrook* before he reaches behind him and closes the ledger with one finger, not looking, still smiling.`,
-        `@hask: "Accounts. Gods, the accounts. Varane's daughter goes through them like a ferret through a warren, I swear she counts the candle-ends." He says *Varane's daughter* the way a man says the name of a dog that bites.`
+        `@hask: "Accounts. Saints, the accounts. Varane's daughter goes through them like a ferret through a warren, I swear she counts the candle-ends." He says *Varane's daughter* the way a man says the name of a dog that bites.`
       ],
-      fx: { set: { e2_hask_ledger: 1 } },
+      fx: { set: { e2_hask_ledger_tried: 1 } },
       next: 'hask_hub'
     },
     hask_decide: {
@@ -376,9 +372,9 @@ TITHE.episode({
         `For the first time since the gate, the smile slips. Not much. A tile sliding off a roof.`,
         `@hask: "Did you." Very quietly. "Did you, now."`,
         `He looks at the leather case on your hip for a long moment. Then he laughs again, and the laugh is almost right.`,
-        `@hask: "Well. I've been dead before. Corvane, the fever winter; ask anyone. It didn't take then either." He lifts his cup. "To the Red Company. All four hundred and seven of us."`
+        `@hask: "Well. I've been dead before. Corvane, the fever winter; ask anyone. It didn't take then either." He lifts his cup. "To the Red Company, then. Every line of it. Even the one at the top."`
       ],
-      fx: { rep: { town: 1, varane: -1 }, set: { e2_hask_named: 1 }, quest: { id: 'hask', note: 'You refused Hask\'s work, and told him you had read his name among the dead. "All four hundred and seven of us," he said.' } },
+      fx: { rep: { town: 1, varane: -1 }, set: { e2_hask_named: 1 }, quest: { id: 'hask', note: 'You refused Hask\'s work, and told him you had read his name among the dead. "Every line of it," he toasted. "Even the one at the top."' } },
       next: 'hask_parting'
     },
     hask_parting: {
@@ -404,17 +400,9 @@ TITHE.episode({
       ],
       fx: { know: { cast: ['e2_brisket'] } },
       choices: [
-        { t: `"Which ladyship?"`, go: 'brisket_which' },
         { t: `"Why quietly?"`, go: 'brisket_why' },
         { t: `"Tell her ladyship I'm busy."`, go: 'brisket_busy' }
       ]
-    },
-    brisket_which: {
-      text: [
-        `@e2_brisket: "There's only the one, and if you have to ask, you're stupider than you look, and you look like a man who's been hit in the head for a living." She sniffs. "Lady Isolde Varane. Tall. Grey cloak. Looked at you on the wall like you were a sum that didn't add up."`,
-        `> You remember. You'd hoped you'd imagined it.`
-      ],
-      next: 'brisket_end'
     },
     brisket_why: {
       text: [
@@ -434,6 +422,7 @@ TITHE.episode({
     },
     brisket_end: {
       text: [
+        `@e2_brisket: "Lady Isolde Varane. Tall. Grey cloak. Looked at you on the wall like you were a sum that didn't add up."`,
         `@e2_brisket: "Sundown. Servants' door at the back of the chapel yard. Knock twice and say you've come about the candles." She hands you a small iron key on a loop of blue thread. "And for pity's sake have a wash. She's a lady, not a pig-farmer."`,
         `She goes back into the kitchen. Somebody inside yelps.`
       ],
@@ -448,18 +437,13 @@ TITHE.episode({
         `The archive is a long low room under the chapel, all books. Not holy books: account books. Hundreds of them, calf-bound and cracking, shelved by year back to before anyone's grandfather. Tallies, tithes, rents, debts. The whole history of Harrowgate, written down in what it cost.`,
         `There is one candle, and a woman sitting under it with three ledgers open at once and ink on the side of her hand.`,
         `She doesn't get up. She finishes the line she is writing, blots it, and only then looks at you. Grey eyes. Dark hair coming down out of its pins on one side. A face that has been told since birth that it is valuable and has decided to be useful instead.`,
-        `@isolde: "Master Dray. Sit. Not that one; the leg's going. That one."`
-      ],
-      fx: { know: { cast: ['isolde'] } },
-      next: 'isolde2'
-    },
-    isolde2: {
-      text: [
+        `@isolde: "Master Dray. Sit. Not that one; the leg's going. That one."`,
         `You sit. She looks at you for a moment longer than is polite, the way she did from the wall.`,
         `@isolde: "Harrowgate owes the Crown eleven thousand four hundred silver. It owes the bankers of Corvane six thousand and eighty, at a rate of interest that would embarrass a pirate. It owes its own men-at-arms two quarters' wages, which the Marshal pays them out of a purse I cannot find the bottom of. The canal my father dug to make us rich is a ditch full of frogs four miles long."`,
         `She closes one ledger.`,
         `@isolde: "I'm telling you this so that you understand I have no money to waste, and I am about to give some of it to you."`
       ],
+      fx: { know: { cast: ['isolde'] } },
       choices: [
         { t: `"Why are you telling a stranger how broke you are?"`, go: 'isolde_why_tell' },
         { t: `"The only solvent house in this town is the Lanternhold. Isn't it." (Wits)`, check: { stat: 'wits', dc: 13, pass: 'isolde_solvent', fail: 'isolde_solvent_fail' } },
@@ -470,18 +454,17 @@ TITHE.episode({
       text: [
         `@isolde: "Because everyone in Harrowgate who matters already knows, and the people who don't matter guess. And because I've read about you."`,
         `@ansel: "Read."`,
-        `@isolde: "The Red Company's pay-books came through Harrowgate in my grandfather's time. Sergeant A. Dray, fourteen silver a quarter, docked twice for brawling, once for 'insolence to a knight', commended four times. Your handwriting is in some of them. You used to correct the clerk's arithmetic in the margins." The ghost of something that is nearly a smile. "I liked you before I met you, Master Dray. It's a weakness of mine. I trust people whose sums are right."`
+        `@isolde: "The year the Red Company was broken, its pay-books came through Harrowgate for the Crown's auditors, and nobody ever sent for them back. Sergeant A. Dray, fourteen silver a quarter, docked twice for brawling, once for 'insolence to a knight', commended four times. Your handwriting is in some of them. You used to correct the clerk's arithmetic in the margins." The ghost of something that is nearly a smile. "I liked you before I met you, Master Dray. It's a weakness of mine. I trust people whose sums are right."`
       ],
-      fx: { bond: { isolde: 1 } },
       next: 'isolde_annet'
     },
     isolde_solvent: {
       text: [
         `She goes still. Then she turns the ledger around so you can see it, and puts her finger on a column. Tithe-silver, ten percent of everything in the March. And under it, smaller: *Loan, the Lanternhold, against the spring rents*.`,
         `@isolde: "Most men see a lady with a ledger and assume she's doing the household linens." Her voice is very level. "Yes. The Abbess lends my father money at no interest at all. She is the kindest creditor in Aldermere. I lie awake some nights wondering what she is buying."`,
-        `She looks at you differently now. Like a woman who has been alone in a room for a long time and has just heard someone else breathing.`
+        `She looks at you differently now. Like a woman who has been alone in a room for years and has just heard someone else breathing.`
       ],
-      fx: { bond: { isolde: 2 }, set: { e2_isolde_solvent: 1 } },
+      fx: { set: { e2_isolde_solvent: 1 } },
       next: 'isolde_annet'
     },
     isolde_solvent_fail: {
@@ -511,18 +494,18 @@ TITHE.episode({
         `@ansel: "Had you?"`,
         `@isolde: "I always see the road, Master Dray. It's the only thing in Harrowgate I'm allowed to watch."`
       ],
-      fx: { bond: { isolde: 1 }, set: { e2_isolde_whyme: 1 } },
+      fx: { set: { e2_isolde_whyme: 1 } },
       next: 'isolde_annet_more'
     },
     isolde_whose: {
       text: [
-        `@isolde: "You're on the Marshal's payroll since this morning. Two silver a day and found." A pause, exactly long enough. "I keep the books, Master Dray. I *paid* you."`,
+        `@isolde: "You're on the Marshal's payroll since this morning. Two silver a day and found." A pause, exactly long enough. "I keep the books, Master Dray. Your first two silver came out of my father's purse at noon."`,
         `It lands like a slap. She lets it.`,
         `@isolde: "I don't think you're his man. I think you're a man who's decided to stand very close to a fire to see what's burning. That's either very brave or very stupid, and I need someone who's one or the other."`
       ],
       fx: { set: { e2_isolde_knew_job: 1 } },
       choices: [
-        { t: `"Brave. Stupid. I've never been able to tell them apart either."`, go: 'isolde_annet_more', fx: { bond: { isolde: 1 } } },
+        { t: `"Brave. Stupid. I've never been able to tell them apart either."`, go: 'isolde_annet_more' },
         { t: `"I'm standing close to him so I can kill him when it's time."`, go: 'isolde_kill' },
         { t: `"I'm nobody's man, my lady. Including yours."`, go: 'isolde_annet_more' }
       ]
@@ -533,7 +516,7 @@ TITHE.episode({
         `@isolde: "Not yet," she says at last. "Not while my father needs his sword. Not while the Prince's letters come to his tower and not to mine. When it's time, Master Dray, I'll be the one to tell you."`,
         `It's the most dangerous thing anyone has said to you in Harrowgate. She says it like a woman reading out the price of candles.`
       ],
-      fx: { bond: { isolde: 2 }, set: { e2_isolde_kill: 1 } },
+      fx: { set: { e2_isolde_kill: 1 } },
       next: 'isolde_annet_more'
     },
     isolde_annet_more: {
@@ -549,7 +532,7 @@ TITHE.episode({
       ],
       choices: [
         { t: `Take the thirty.`, go: 'isolde_close', fx: { silver: 30, set: { e2_isolde_paid: 1 } } },
-        { t: `"Keep it. Your father needs it more than I do. Pay me when I bring her back."`, go: 'isolde_close', fx: { bond: { isolde: 2 }, set: { e2_isolde_nopay: 1 } } },
+        { t: `"Keep it. Your father needs it more than I do. Pay me when I bring her back."`, go: 'isolde_close', fx: { set: { e2_isolde_nopay: 1 } } },
         { t: `"Fifty now. A hundred costs you nothing if I'm dead in a ditch."`, check: { stat: 'presence', dc: 13, pass: 'isolde_haggle_ok', fail: 'isolde_haggle_no' } }
       ]
     },
@@ -558,7 +541,7 @@ TITHE.episode({
         `She almost laughs. She very nearly does.`,
         `@isolde: "That is *exactly* the argument I'd have made." She counts out fifty, coin by coin, writing each one down. "There. You're in the books now, Master Dray. Under 'candles'."`
       ],
-      fx: { silver: 50, bond: { isolde: 1 }, set: { e2_isolde_paid: 1 } },
+      fx: { silver: 50, set: { e2_isolde_paid: 1 } },
       next: 'isolde_close'
     },
     isolde_haggle_no: {
@@ -576,7 +559,7 @@ TITHE.episode({
         `@isolde: "Master Dray. If you find her and it's bad. Tell me anyway. Everyone in this castle tells me the version they think I can carry. I can carry a great deal more than they think."`
       ],
       choices: [
-        { t: `"I'll tell you the truth, my lady. Whatever it is."`, go: 'hen_night1', fx: { set: { e2_promised_truth: 1 }, bond: { isolde: 1 } } },
+        { t: `"I'll tell you the truth, my lady. Whatever it is."`, go: 'hen_night1', fx: { set: { e2_promised_truth: 1 } } },
         { t: `"I'll tell you what I find."`, go: 'hen_night1' },
         { t: `"Nobody can carry everything."`, go: 'isolde_carry' }
       ]
@@ -587,7 +570,6 @@ TITHE.episode({
         `@isolde: "No," she agrees. "But somebody has to keep the books."`,
         `She holds your eye a moment longer than she needs to. Then the candle gutters, and she bends to trim it, and the moment goes wherever those moments go.`
       ],
-      fx: { bond: { isolde: 1 } },
       next: 'hen_night1'
     },
 
@@ -597,21 +579,14 @@ TITHE.episode({
       text: [
         `The Hen at night is a different animal: full, loud, steaming, forty people and a fiddler who knows three tunes. Tanners with stained hands, drovers in from the Kingsroad, a pair of Lamplighters in grey drinking small beer in the corner and pretending not to listen.`,
         `In the middle of it, standing on a bench with a cup in one hand and a tattered prayer-book in the other, is a fat, bald, red-faced man of about fifty-five in the remains of a Lamplighter's grey, with the star unpicked from the breast so that only the needle-holes show.`,
-        `@pell: "—and I say unto you, as it is written in the Book of Embers, chapter nine, verse four, *the Saints have mouths*. Mouths! Why would a Saint in eternal light have need of a *mouth*, brothers? What do they *eat*?"`,
+        `@pell: "—and I say unto you, as it is written in the Book of Embers, *the smoke goeth up*. Up, brothers! To whom? Why must every one of us go on the fire? What can a Saint in eternal light want with our *smoke*?"`,
         `@mags: "Pell," says Mags from behind the bar, in the voice of a woman who has said it a thousand times. "Get down off my bench."`,
-        `@pell: "In a moment, dear lady, I am approaching the theological crux—"`
+        `Three drovers by the fire are good Lamp men, and drunk. The biggest stands up. He has a neck like a bull and a face like a bull's opinion of you.`,
+        `@narrator: "That's blasphemy, that is. My mam went up off the pyre at harvest. You saying my mam's smoke is *for* somebody?"`,
+        `The drover pulls him off the bench by the front of his robe. The prayer-book goes into the fire. Pell doesn't raise a hand to the drover. He reaches into the flames after the book with it instead.`,
+        `Mags has put down her cloth. Her eyes go to the window. It is, as she said, a long way down to the tannery pits.`
       ],
       fx: { know: { cast: ['pell'] } },
-      next: 'hen_brawl1'
-    },
-    hen_brawl1: {
-      text: [
-        `Three drovers by the fire have been listening, and they are good Lamp men, and they are drunk. The biggest of them stands up. He has a neck like a bull and a face like a bull's opinion of you.`,
-        `@narrator: "That's blasphemy, that is. Saints with mouths. My mam's a Saint now. You saying my mam *eats* people?"`,
-        `@pell: "I— well— I am saying that the text is ambiguous on the—"`,
-        `The drover pulls him off the bench by the front of his robe. The prayer-book goes into the fire. Pell makes a sound like a kicked dog, not for himself but for the book, and reaches into the flames after it with his bare hand.`,
-        `Mags has put down her cloth. Her eyes go to the window. Your eyes go to the window. It is, as she said, a long way down to the tannery pits.`
-      ],
       choices: [
         { t: `Get between them. "Sit down. He's a drunk old man and you're making a fool of your mam."`, check: { stat: 'might', dc: 13, intimidate: true, pass: 'hen_brawl_scare', fail: 'hen_brawl_fight' } },
         { t: `Pull the book out of the fire first. Then deal with the drover.`, go: 'hen_brawl_book' },
@@ -626,7 +601,7 @@ TITHE.episode({
         `@ansel: "No. Neither did he."`,
         `The drover sits down. Mags picks her cloth back up and gives you a look across the room that is equal parts thanks and warning, and wholly approving.`
       ],
-      fx: { bond: { mags: 1 }, rep: { town: 1 }, xp: 20, quiet: true },
+      fx: { rep: { town: 1 }, xp: 20 },
       next: 'hen_book'
     },
     hen_brawl_book: {
@@ -661,20 +636,20 @@ TITHE.episode({
         `@mags: "That's the fifth window this year," she says to the room. "Everybody's paying for it." Then, to you, lower: "You did that nicely. Don't do it again."`,
         `The fiddler starts up again. Life in the Hen resumes, as it always does, over the bodies.`
       ],
-      fx: { rep: { town: 1 }, bond: { mags: 1 }, quiet: true },
+      fx: { rep: { town: 1 } },
       next: 'hen_book'
     },
     hen_book: {
       text: [
         `Brother Pell is sitting on the floor with his back against the bar, holding his split lip, looking at his burnt hand as if it belongs to a stranger.`,
         { if: 'f.e2_saved_book', t: `You hand him the prayer-book. The cover is charred and the spine is cracked, but the pages are whole. He holds it in both hands and his eyes fill with tears, and he is drunk enough not to be ashamed of it.` },
-        { if: '!f.e2_saved_book', t: `The prayer-book is ashes. He looks at the grate for a long time. "That was my mother's," he says, to nobody. "She couldn't read it either."` },
-        `@pell: "Pellam Ashe. Brother Pell, as was. Defrocked, debauched, and, as of this evening, deeply in your debt." He tries to get up and fails. "Would you buy a defrocked man a drink? I'd buy you one, but the Lamp took my stipend and the dice took everything else."`
+        { if: '!f.e2_saved_book', t: `The prayer-book is ashes. He looks at the grate. "That was my mother's," he says, to nobody. "She couldn't read it either."` },
+        `@pell: "Pellam Orme. Brother Pell, as was. Defrocked, debauched, and, as of this evening, deeply in your debt." He tries to get up and fails. "Would you buy a defrocked man a drink? I'd buy you one, but the Lamp took my stipend and the dice took everything else."`
       ],
       choices: [
-        { t: `Buy him a drink. Buy two.`, go: 'pell_hub', cost: 2, fx: { bond: { pell: 1 }, set: { e2_pell_drink: 1 } } },
-        { t: `"Buy you soup. You've had enough."`, go: 'pell_hub', cost: 1, fx: { bond: { pell: 1 }, set: { e2_pell_soup: 1 }, quiet: true } },
-        { t: `"Tell me what you were saying about mouths."`, go: 'pell_hub' }
+        { t: `Buy him a drink. Buy two.`, go: 'pell_hub', cost: 2, fx: { set: { e2_pell_drink: 1 } } },
+        { t: `"Buy you soup. You've had enough."`, go: 'pell_hub', cost: 1, fx: { set: { e2_pell_soup: 1 } } },
+        { t: `"Tell me what you were saying about smoke."`, go: 'pell_hub' }
       ]
     },
     pell_hub: {
@@ -686,7 +661,6 @@ TITHE.episode({
       ],
       choices: [
         { t: `"Why did they throw you out?"`, go: 'pell_expelled', once: true },
-        { t: `"What happens to the poor who go up to the Lanternhold?"`, go: 'pell_takesin', once: true },
         { t: `"The Lamp burns its dead. The fen buries theirs. Why does it matter so much?"`, go: 'pell_kindling', once: true },
         { t: `Put the stub of tithe-chalk from Ashby on the table.`, if: "has('tithe_chalk')", go: 'pell_chalk', once: true },
         { t: `"A maid called Annet Wale went missing from the Tanners' Bottom. Know anything?"`, go: 'pell_annet', if: '!f.e2_pell_annet' }
@@ -697,19 +671,10 @@ TITHE.episode({
         `@pell: "I asked a question." He turns his cup. "Twenty-two years a Lamplighter of the Lanternhold. I kept the library. I taught the orphans their letters. I was not a good priest, but I was a happy one, and I was devoted to the Abbess, truly. Everyone is."`,
         `@pell: "Then one winter I went down to the undercroft to fetch lamp oil, and I took the wrong stair. There's a door down there. Old iron. A seven-pointed star on it. And it was warm, the way a door is warm when there's a great fire on the other side. And I could hear—"`,
         `He stops. He drinks.`,
-        `@pell: "I asked the Abbess what was in the crypt. She smiled at me and said, *Prayer, Pellam.* And a week later I was found drunk in the chapel, which I was, I grant you, I usually was, and out I went with my star unpicked. Twenty-two years." He touches the needle-holes on his breast. "You can still see where it was. Like a scar you didn't get in a fight."`
+        `@pell: "I asked the Abbess what was in the crypt. She smiled at me and said, *Prayer, Pellam.* By noon I was outside the gate with my star unpicked and my stipend stopped. Twenty-two years." He touches the needle-holes on his breast. "You can still see where it was. Like a scar you didn't get in a fight."`,
+        `@pell: "And here's a thing. Do you know how many beds there are in the white ward? Forty. I counted. And how many the Lanternhold has *taken in* these two years? Nobody knows. More than forty, my friend. A great many more than forty." He smiles, horribly. "They go *up*, the Abbess would say. To the Saints."`
       ],
-      fx: { bond: { pell: 1 }, set: { e2_pell_crypt: 1 } },
-      next: 'pell_hub'
-    },
-    pell_takesin: {
-      text: [
-        `@pell: "They *take them in*." He says it the way the Lanternhold says it, softly, and then he says it again in his own voice, and it sounds quite different. "The Abbess takes in the sick, the poor, the orphans, the Emptied. Bless her. Everyone says bless her. And they go up the hill, and they get soup and a bed and a candle at their head, and then—"`,
-        `@pell: "Do you know how many beds there are in the white ward? Forty. I counted. And do you know how many people the Lanternhold has *taken in* in the last two years? I don't either. Nobody does. But it's more than forty, my friend. A great deal more than forty."`,
-        `@ansel: "So where do they go?"`,
-        `@pell: "*Up*, the Abbess would say." He smiles, horribly. "To the Saints."`
-      ],
-      fx: { bond: { pell: 1 }, set: { e2_pell_takesin: 1 } },
+      fx: { set: { e2_pell_crypt: 1, e2_pell_takesin: 1 } },
       next: 'pell_hub'
     },
     pell_kindling: {
@@ -720,7 +685,7 @@ TITHE.episode({
         `@pell: "But here's the thing the novices are never taught. Why would the Lamp *care*? If the buried soul is lost in the dark, that's the soul's loss, surely? Why burn the mother for it? You don't burn a man for spilling milk. You burn a man for *stealing*."`,
         `@pell: "Somebody up there is very particular, my friend, that every single one of us goes on the fire. As if we were owed."`
       ],
-      fx: { bond: { pell: 1 }, know: { codex: ['kindling', 'earthburial'] } },
+      fx: { know: { codex: ['kindling', 'earthburial'] } },
       next: 'pell_starless'
     },
     pell_starless: {
@@ -741,12 +706,12 @@ TITHE.episode({
         `@ansel: "Ashby. On a windowsill. Every door in the village had a tithe-star on it. On the inside."`,
         `@pell: "That's Lanternhold chalk. That's the Abbess's own seal stamped in it, look, the little lamp. It's not for tithe-doors; any Lamplighter can chalk a tithe-door. This is the Almoners' chalk. The ones who go out with the bread-carts." He pushes it back toward you with one finger, as if it might bite. "Put it away, please. Put it away."`
       ],
-      fx: { bond: { pell: 1 }, set: { e2_pell_chalk: 1 } },
+      fx: { set: { e2_pell_chalk: 1 } },
       next: 'pell_hub'
     },
     pell_annet: {
       text: [
-        `@pell: "Annet." He frowns, rummaging through the drink. "Annet. Goose-laugh. Reads well, for a fuller's girl; I taught her her letters, at the orphans' school, before— before. Gods. Annet."`,
+        `@pell: "Annet." He frowns, rummaging through the drink. "Annet. Goose-laugh. Reads well, for a fuller's girl; I taught her her letters, at the orphans' school, before— before. Saints. Annet."`,
         `@pell: "If she's gone from the Bottom, she's not the first. There's been chalk on doors down there all autumn. People don't talk about it, because the chalk's the Lamp's, and the Lamp is kind, and if you complain about a kindness people look at you like you've grown a second head."`,
         `He grips your wrist suddenly, hard, with his burnt hand.`,
         `@pell: "You're going to look for her. I can see it on you. Let me come. I know the town. I know the Lanternhold. I know the old Lamplighters' stair under Saint Ember's that goes down into the cisterns, and I know where every door in the undercroft goes, except one."`
@@ -754,7 +719,7 @@ TITHE.episode({
       fx: { set: { e2_pell_annet: 1 } },
       choices: [
         { t: `"You're a drunk and a coward, Brother. You'll get us both killed." (But you'll take him.)`, go: 'pell_joins', fx: { set: { e2_pell_hard: 1 } } },
-        { t: `"Be at the Hen at first light. Sober."`, go: 'pell_joins', fx: { bond: { pell: 1 } } },
+        { t: `"Be at the Hen at first light. Sober."`, go: 'pell_joins' },
         { t: `"Why do you want to come?"`, go: 'pell_why' }
       ]
     },
@@ -763,13 +728,13 @@ TITHE.episode({
         `He lets go of your wrist. He looks at the burnt hand, then at the needle-holes on his breast.`,
         `@pell: "Because I asked a question once, and when they threw me out for it, I stopped asking. I went to the Hen instead. Two years, I've been going to the Hen instead." His voice cracks, very slightly. "I'd like to be the sort of man who asks it again. I'm not. But I'd like to be. I thought perhaps if I stood next to you, it might rub off."`
       ],
-      fx: { bond: { pell: 2 } },
+      fx: { set: { e2_pell_why: 1 } },
       next: 'pell_joins'
     },
     pell_joins: {
       text: [
         { if: 'f.e2_pell_hard', t: `@pell: "Oh, almost certainly," he says, delighted. "But I'll be a very *learned* corpse."` },
-        `He falls asleep shortly after, at the table, with his head on his arms and the prayer-book under his cheek. Mags throws a blanket over him without breaking stride, the way you'd cover a birdcage.`,
+        { if: 'f.e2_saved_book', t: `He falls asleep shortly after, at the table, with his head on his arms and the scorched prayer-book under his cheek. Mags throws a blanket over him without breaking stride, the way you'd cover a birdcage.`, else: `He falls asleep shortly after, at the table, with his head on his arms and a fist closed round a pinch of the book's ash. Mags throws a blanket over him without breaking stride, the way you'd cover a birdcage.` },
         `@mags: "He'll be here in the morning. He's always here in the morning. It's the afternoons he goes missing."`,
         `You go up to bed. You don't drink. You lie awake a long time listening to the town settle, and once, very late, you think you hear something underneath it: a long low scraping, like a great many small claws on stone, a long way down.`
       ],
@@ -789,7 +754,7 @@ TITHE.episode({
       ],
       fx: { party: { add: ['pell'] }, set: { e2_pell_joined: 1 } },
       choices: [
-        { t: `"All right, Hob. You carry, you watch, you do what I say, when I say it." Take him on.`, go: 'hob_hired', fx: { set: { e2_hob_hired: 1 }, party: { add: ['hob'] }, bond: { hob: 1 } } },
+        { t: `"All right, Hob. You carry, you watch, you do what I say, when I say it." Take him on.`, go: 'hob_hired', fx: { set: { e2_hob_hired: 1 }, party: { add: ['hob'] } } },
         { t: `"Go home, Hob. This isn't a game."`, go: 'hob_sent' },
         { t: `"What do you know that I don't?"`, go: 'hob_know' }
       ]
@@ -801,7 +766,7 @@ TITHE.episode({
       ],
       fx: { set: { e2_hob_lights: 1 } },
       choices: [
-        { t: `"All right. You're hired. Carry, watch, do what I say."`, go: 'hob_hired', fx: { set: { e2_hob_hired: 1 }, party: { add: ['hob'] }, bond: { hob: 2 } } },
+        { t: `"All right. You're hired. Carry, watch, do what I say."`, go: 'hob_hired', fx: { set: { e2_hob_hired: 1 }, party: { add: ['hob'] } } },
         { t: `"Thank you, Hob. Now go home."`, go: 'hob_sent' }
       ]
     },
@@ -810,7 +775,7 @@ TITHE.episode({
         `His face does something you haven't seen a face do in years. It lights. It just lights up, like someone opened a shutter.`,
         `@hob: "Yes, Sergeant. *Yes*, Sergeant."`,
         `@pell: "Saints preserve us," says Pell, not unkindly. "A drunk, a child and a dead man. The Lamp will tremble."`,
-        `> You know exactly what you've done. You've done it four hundred and six times. You put a boy in a line.`
+        `> You know exactly what you've done. You've done it four hundred and five times. You put a boy in a line.`
       ],
       next: 'town_r'
     },
@@ -886,7 +851,7 @@ TITHE.episode({
     },
     tb_blessing: {
       text: [
-        `She looks at you for a long time.`,
+        `She looks at you.`,
         `@narrator: "No," she says at last. "No, I didn't think it was." And then, finally, very quietly, her face goes, all of it, all at once, and she sits down on the bed and puts her red hands over it, and you stand in a fuller's one room with a sword on your hip that is no use to anyone.`,
         { if: 'f.e2_hob_hired', t: `Hob sits beside her and puts his arm round her shoulders like it's the most natural thing in the world. Maybe, for him, it is.` },
         { if: '!f.e2_hob_hired', t: `Pell sits beside her, and takes one of her hands, and says something in the old liturgy, low, and for once his voice doesn't shake.` }
@@ -915,7 +880,7 @@ TITHE.episode({
       text: [
         `It takes an hour. Most doors don't open. The ones that do open a crack, and close again when you say *star*. But you see enough. A cooper's shop, a chalk star inside the door. An eel-seller's shack, the same. A house with two of everything, two cots, two stools, two little pairs of clogs by the hearth, and a star.`,
         `Lantern Lane runs down to the river, and halfway down it, where the old grate was, there's a hole: ragged, black, breathing out cold air that smells of wet stone and something sweeter underneath. Somebody has put a hurdle across it and a warning daubed in tar: DANGER. KEEP OFF. BY ORDER OF THE MARSHAL.`,
-        `Caught on a snag of rusted iron at the lip of the hole, fluttering in the draught, is a blue ribbon.`
+        `Caught on a snag of rusted iron at the lip of the hole, where the grate's old bars still jut, is a blue ribbon. A week of rain has darkened it. It has been hanging there since before the grate gave way, in a lane that runs down to the river and the old chapel, waiting for somebody to look down.`
       ],
       choices: [
         { t: `Lie flat and reach for it.`, check: { stat: 'finesse', dc: 12, pass: 'tb_ribbon', fail: 'tb_ribbon_slip' } },
@@ -937,7 +902,7 @@ TITHE.episode({
         `> A present a lady could afford that her father's creditors wouldn't notice.`,
         `You put it inside your coat, against your shirt, next to the roll.`
       ],
-      fx: { give: { annet_ribbon: 1 }, set: { e2_ribbon: 1, e2_tb_done: 1 }, add: { e2_leads: 1 }, xp: 25, quest: { id: 'e2_annet', note: 'Tithe-chalk stars inside the doors of the missing on the Tanners\' Bottom. Annet\'s ribbon, caught at the broken grate on Lantern Lane. She went down into the cisterns, or was taken down.' } },
+      fx: { give: { annet_ribbon: 1 }, set: { e2_ribbon: 1, e2_tb_done: 1 }, add: { e2_leads: 1 }, xp: 25, quest: { id: 'e2_annet', note: 'Tithe-chalk stars inside the doors of the missing on the Tanners\' Bottom. Annet\'s ribbon, caught a week ago on the bars of the Lantern Lane grate. Whoever took her came this way, toward the river and the old chapel.' } },
       next: 'tb_bullies'
     },
     tb_bullies: {
@@ -948,7 +913,6 @@ TITHE.episode({
         `His purse is new. His boots are new. Nobody on the Bottom has new boots.`
       ],
       choices: [
-        { t: `"Who paid for the boots?"`, check: { stat: 'presence', dc: 14, pass: 'tb_bullies_talk', fail: 'tb_bullies_fight' } },
         { t: `Draw Widow. "Try it."`, go: 'tb_bullies_fight' },
         { t: `"I'm a tanner's son. Lowmarch. I know what a fleshing knife's for. It's not for this."`, check: { stat: 'presence', dc: 12, pass: 'tb_bullies_tanner', fail: 'tb_bullies_fight' } }
       ]
@@ -961,15 +925,6 @@ TITHE.episode({
         `They go. The big one, passing you, says without looking at you: "Third pit's deep. Mind yourself."`
       ],
       fx: { set: { e2_lamp_silver: 1 }, rep: { town: 1 }, xp: 25 },
-      next: 'town_r'
-    },
-    tb_bullies_talk: {
-      text: [
-        `@ansel: "New boots. New purse. On a journeyman's wage? Somebody paid you, and paid you well, and you're about to earn it the hard way. Who?"`,
-        `The big one looks at his friends. His friends look at the sword.`,
-        `@narrator: "Man with clean hands," he says at last. "Lanternhold silver. The little lamp on it. That's all I know and that's all I'll say." He backs off. "You didn't hear it from me."`
-      ],
-      fx: { set: { e2_lamp_silver: 1 }, xp: 25 },
       next: 'town_r'
     },
     tb_bullies_fight: {
@@ -1012,7 +967,7 @@ TITHE.episode({
         `Tamsin's grin doesn't flicker. Her eyes do, just slightly, the way a candle does when a door opens somewhere in the house.`,
         `@tamsin: "I talk about you. Don't get excited. I talk about the weather too."`
       ],
-      fx: { bond: { tamsin: 1 }, heal: 6, set: { e2_gran_eel: 1 } },
+      fx: { heal: 6, set: { e2_gran_eel: 1 } },
       next: 'tam_back_end'
     },
     tam_back_gossip: {
@@ -1020,24 +975,24 @@ TITHE.episode({
         `@tamsin: "Lantern Men are bad this autumn. Three eel-men drowned off the Gallowmere weirs since harvest, following lights. Nobody follows lights in autumn; everybody knows not to." She spits, neatly, off the Stair. "And folk going up to Harrowgate for work and not coming back. Old Fen-Margery's two sons. A girl from Coot's Ferry. Went up the causeway in the spring and their mams have had no word."`,
         `@tamsin: "Fen-folk say the town eats people. Always have. Only this year they're saying it like they mean it."`
       ],
-      fx: { bond: { tamsin: 1 }, set: { e2_fen_gossip: 1 } },
+      fx: { set: { e2_fen_gossip: 1 } },
       next: 'tam_back_end'
     },
     tam_back_missed: {
       text: [
         `She opens her mouth to say something clever. Nothing comes out. For one whole breath, Tamsin Vell has nothing to say, and she looks at you with the fen-mud drying on her knees, and her face is entirely unguarded and very young.`,
         `Then she shoves you in the chest, hard, with one hand.`,
-        `@tamsin: "Soft." But her ears have gone pink. "Gods. You *are* soft. Don't say things like that in the street, people'll think you've been hit on the head."`,
+        `@tamsin: "Soft." But her ears have gone pink. "Mothers below. You *are* soft. Don't say things like that in the street, people'll think you've been hit on the head."`,
         { if: 'f.e1_saw_crow', t: `On the roof of the cordwainer's across the Stair, a big glossy crow is sitting, watching the two of you with its head on one side. It's probably nothing. There are a lot of crows in Harrowgate.` }
       ],
-      fx: { bond: { tamsin: 2 }, set: { e2_tam_missed: 1 } },
+      fx: { bond: { tamsin: 1 }, set: { e2_tam_missed: 1 } },
       next: 'tam_back_end'
     },
     tam_back_end: {
       text: [
         `You tell her. Annet. The stars inside the doors. The ribbon at the grate. She listens with her head down, and when you get to the stars she goes very still, the way she went still in the square at Ashby.`,
         `@tamsin: "Inside the doors." Flat. "Again."`,
-        `@tamsin: "Right. Well. I'm not letting you go down a hole full of rats with a priest and a stable boy. You'd be eaten by teatime." She hitches the bow higher. "Where are we going?"`
+        `@tamsin: "Right. Well. I'm not letting you go down a hole full of rats with a priest and a stable boy. You'd be eaten by supper." She hitches the bow higher. "Where are we going?"`
       ],
       next: 'town_hub'
     },
@@ -1083,8 +1038,8 @@ TITHE.episode({
       ],
       fx: { know: { cast: ['silas'] } },
       choices: [
-        { t: `Buy two firebombs.`, cost: 40, go: 'ms_silas_end', fx: { give: { firebomb: 2 } } },
-        { t: `Buy a poultice and some spirits.`, cost: 15, go: 'ms_silas_end', fx: { give: { poultice: 1, spirits: 1 } } },
+        { t: `Buy two firebombs.`, cost: 40, go: 'town_r', fx: { give: { firebomb: 2 }, set: { e2_ms_done: 1 }, add: { e2_leads: 1 }, xp: 15 } },
+        { t: `Buy a poultice and some spirits.`, cost: 15, go: 'town_r', fx: { give: { poultice: 1, spirits: 1 }, set: { e2_ms_done: 1 }, add: { e2_leads: 1 }, xp: 15 } },
         { t: `"Who at the Lanternhold buys the poppy?"`, go: 'ms_silas_poppy' }
       ]
     },
@@ -1092,16 +1047,10 @@ TITHE.episode({
       text: [
         `Silas's hands stop over his scales.`,
         `@silas: "The Abbess's own people. Brother Aldo signs for it. Enough poppy to put a regiment to sleep, every month, since the spring." He licks his lips. "For the dying, they say. To ease them. It's a hospital. It's a *hospital*, sir; they have a great many dying."`,
-        `He gives you a poultice for nothing, and you understand that it's so you'll leave.`
-      ],
-      fx: { give: { poultice: 1 }, set: { e2_poppy: 1 } },
-      next: 'ms_silas_end'
-    },
-    ms_silas_end: {
-      fx: { set: { e2_ms_done: 1 }, add: { e2_leads: 1 }, xp: 15 },
-      text: [
+        `He gives you a poultice for nothing, and you understand that it's so you'll leave.`,
         `Out on the Stair, a Lanternhold cart goes by, pulled by two lay brothers in grey, piled with casks that slosh. Lamp oil. The crowd parts for it and people touch their hearts as it passes.`
       ],
+      fx: { give: { poultice: 1 }, set: { e2_poppy: 1, e2_ms_done: 1 }, add: { e2_leads: 1 }, xp: 15 },
       next: 'town_r'
     },
 
@@ -1109,15 +1058,8 @@ TITHE.episode({
     lh1: {
       loc: 'The Lanternhold — the gate court, noon',
       text: [
-        `The Lanternhold is the most beautiful building in Harrowgate, and the only one with new paint. White walls. A gate court swept clean. The lantern-tower going up and up, and at the top, even at noon, a blue flame in a cage of glass.`,
-        `There's a bread line. There's always a bread line. Two hundred people, the Tanners' Bottom and the river and the fen, waiting in silence with their hands out. Young Lamplighters in grey move down it with baskets, gentle-voiced, giving every person a loaf and a blessing, touching every forehead.`,
-        `And moving among them, slow, humming, a plump old woman in a white wimple, with flour on her sleeves and a child on her hip.`
-      ],
-      next: 'lh_abbess'
-    },
-    lh_abbess: {
-      text: [
-        `She sees you. She sets the child down, and it runs off, and she comes across the court with her hands out as if you were a son back from the wars.`,
+        `The Lanternhold is the most beautiful building in Harrowgate, and the only one with new paint. White walls, a gate court swept clean, and at the top of the lantern-tower, even at noon, a blue flame in a cage of glass. Two hundred people stand in the bread line with their hands out, silent, while young Lamplighters in grey go down it giving every one a loaf and touching every forehead.`,
+        `Moving among them, slow, humming, is a plump old woman in a white wimple, with flour on her sleeves and a child on her hip. She sees you. She sets the child down and comes across the court with her hands out as if you were a son back from the wars.`,
         `@abbess: "You're the sergeant. The one who came in with Master Pettibone's wagon, Saints rest him." She smells of honey and lamp oil and bread. Her eyes are blue and kind and very, very tired. "Morwenna Sallow. Everyone calls me Mother, I'm afraid, and you'll have to as well, it's simpler."`,
         { if: "f.e1_ashby==='led'", t: `@abbess: "And you brought me the Ashby folk." She takes your gloved hand in both of hers. "Thirty-one souls. You walked them in. Do you know how rare that is, my son? Most men would have left them in the rain. Or worse." Her thumbs press, gently. "Thank you."` },
         { if: "f.e2_hask_job==='took'", t: `Her eyes find the brass boar on your belt, and her smile deepens, fond and amused. "Ah. You're one of Konrad's. He said he'd found an old friend. He was like a boy at a fair."` },
@@ -1180,17 +1122,18 @@ TITHE.episode({
         `@abbess: "*Pellam.* Oh, Pellam, you came home." She takes his face in both her hands. He shakes, from head to foot, like a horse in a thunderstorm. "You look so thin. Come to supper. Come any night."`,
         `@pell: "Mother," Pell says. Only that. It sounds like it hurts.`
       ],
-      fx: { bond: { pell: 1 }, set: { e2_pell_mother: 1 } },
+      fx: { set: { e2_pell_mother: 1 } },
       next: 'lh_after'
     },
     lh_after: {
       text: [
         `The bells ring the noon Lamp. The Abbess is called away to a dying man. She goes with her hands already out to him.`,
+        `Behind the Abbess the bread line shuffles forward in silence, two hundred hands held out, and the young Lamplighters go down it, touching every forehead, gentle, gentle.`,
         { if: 'f.e2_cauley', t: `By the gate, a young Almoner with a fine singing voice and a bread-basket on his arm is handing out loaves. Brother Aldo Cauley. He sees Crake's ledger under your arm and recognises it from across the court. The basket starts to shake.` }
       ],
       choices: [
         { t: `Take Brother Aldo aside. Show him his page.`, if: 'f.e2_cauley', go: 'lh_cauley' },
-        { t: `Leave.`, go: 'lh_leave' }
+        { t: `Leave.`, go: 'town_r', fx: { set: { e2_lh_done: 1 }, add: { e2_leads: 1 }, xp: 20, know: { codex: ['lamp'] } } }
       ]
     },
     lh_cauley: {
@@ -1213,22 +1156,15 @@ TITHE.episode({
         `He takes the page in both hands and crushes it against his chest and goes back into the Lanternhold without his bread-basket, almost running.`,
         `@pell: "*Spoil*," says Pell, beside you, very softly. "He said *spoil*. As if they were milk."`
       ],
-      fx: { quest: { id: 'e2_annet', note: 'Brother Aldo Cauley, an Almoner: a chute from the Lanternhold undercroft into the north end of the cisterns. "The ones who spoil."' } },
-      next: 'lh_leave'
+      fx: { quest: { id: 'e2_annet', note: 'Brother Aldo Cauley, an Almoner: a chute from the Lanternhold undercroft into the north end of the cisterns. "The ones who spoil."' }, set: { e2_lh_done: 1 }, add: { e2_leads: 1 }, xp: 20, know: { codex: ['lamp'] } },
+      next: 'town_r'
     },
     lh_cauley_keep: {
       text: [
         `You fold his page back into the ledger and close it. He watches the cover close like a man watching a coffin lid.`,
         `> You've just become Crake. You know you have. You decide you can live with it for now. Most things, you can live with for now.`
       ],
-      fx: { quest: { id: 'e2_annet', note: 'Brother Aldo Cauley, an Almoner: a chute from the Lanternhold undercroft into the north end of the cisterns. "The ones who spoil." You kept his page.' } },
-      next: 'lh_leave'
-    },
-    lh_leave: {
-      fx: { set: { e2_lh_done: 1 }, add: { e2_leads: 1 }, xp: 20, know: { codex: ['lamp'] } },
-      text: [
-        `You walk out of the gate court into the noise of the Stair. Behind you the bread line shuffles forward in silence, two hundred hands held out, and the young Lamplighters go down it, touching every forehead, gentle, gentle.`
-      ],
+      fx: { quest: { id: 'e2_annet', note: 'Brother Aldo Cauley, an Almoner: a chute from the Lanternhold undercroft into the north end of the cisterns. "The ones who spoil." You kept his page.' }, set: { e2_lh_done: 1 }, add: { e2_leads: 1 }, xp: 20, know: { codex: ['lamp'] } },
       next: 'town_r'
     },
 
@@ -1287,7 +1223,7 @@ TITHE.episode({
         `@hob: "I know you said go home." He swallows. "I went home. And then I came back. Annet used to give me the heels off the castle bread. She said they were the best bit. They weren't. She just said it."`
       ],
       choices: [
-        { t: `"Stay behind me. Hold the light. If I say run, you run."`, go: 'cis1', fx: { set: { e2_hob_hired: 1 }, party: { add: ['hob'] }, bond: { hob: 2 } } },
+        { t: `"Stay behind me. Hold the light. If I say run, you run."`, go: 'cis1', fx: { set: { e2_hob_hired: 1 }, party: { add: ['hob'] } } },
         { t: `"Go back up. Now. That's an order, Hob." Watch him until he's gone.`, go: 'cis_hob_back' }
       ]
     },
@@ -1303,22 +1239,13 @@ TITHE.episode({
     cis1: {
       loc: 'The cisterns under Harrowgate',
       text: [
-        `The cisterns are older than the town above them. You can tell from the brick: thin, flat, laid in herringbone by people who built for a thousand years. Vault after vault, each one a dark hall half-full of black water, joined by low arches you have to stoop under. Your lantern lights a ring of ten feet. Beyond it, the dark goes on.`,
-        `On the walls, at the height of a man's chest, faded tide-marks. On the ledges, droppings, piled like grain. Gnawed bones of things you'd rather not name. A rat's skull the size of a cat's.`,
-        `And the sound. Under the drip and the slosh, all the time, so constant you stop hearing it and then hear it again: a soft rustling, like a great many dry leaves, in every direction at once.`,
-        { if: 'f.e2_hob_hired', t: `Hob holds the light high, the way you told him, and his arm doesn't shake. Much.` }
-      ],
-      next: 'cis_swarm'
-    },
-    cis_swarm: {
-      text: [
+        `The cisterns are older than the town above them. You can tell from the brick: thin, flat, laid in herringbone by people who built for a thousand years. Vault after vault, each a dark hall half-full of black water, joined by low arches you have to stoop under. Your lantern lights a ring of ten feet. Beyond it, the dark goes on.`,
+        `Tide-marks at the height of a man's chest. Droppings on the ledges, piled like grain. A rat's skull the size of a cat's.`,
+        `And under the drip and the slosh, so constant you stop hearing it and then hear it again, a soft rustling, like a great many dry leaves, in every direction at once.`,
+        { if: 'f.e2_hob_hired', t: `Hob holds the light high, the way you told him, and his arm doesn't shake. Much.` },
         `@tamsin: "Sergeant." Tamsin's voice is very calm. "Look at the water."`,
-        `It's moving. Not in ripples. In a carpet. The surface is solid with swimming bodies, and the ledges on both sides are pouring with them, grey and brown and black, a sound now like rain on a roof.`,
-        `They don't come at you like animals. They come at you like an army.`
+        `It's moving. Not in ripples: in a carpet. The surface is solid with swimming bodies, and the ledges on both sides are pouring with them, grey and brown and black, a sound now like rain on a roof. They come at you like an army.`
       ],
-      next: 'cis_swarm_fight'
-    },
-    cis_swarm_fight: {
       fight: { foes: ['rat_swarm', 'rat_swarm', 'rat_swarm'], title: 'The First Vault', win: 'cis2',
         intro: 'They bleed you a little at a time. Fire scatters them.' }
     },
@@ -1336,11 +1263,10 @@ TITHE.episode({
     },
     cis_pye_pell: {
       text: [
-        `Pell opens the charred prayer-book, or the memory of it, and starts the Litany of the Lit Road, the one they say at the Kindling. He gets three lines in and stops.`,
+        { if: 'f.e2_saved_book', t: `Pell opens his mother's scorched prayer-book and starts the Litany of the Lit Road, the one they say at the Kindling. He gets three lines in and stops.`, else: `Pell starts the Litany of the Lit Road from memory, the one they say at the Kindling. He gets three lines in and stops.` },
         `@pell: "*And the smoke shall carry him up to sing among—*" He closes his mouth. He looks up at the brick vault over his head, and at the water, and at what the rats have left.`,
         `@pell: "No smoke down here," he says. "No pyre. Nobody to carry him anywhere." He kneels in the cold water, which is the bravest thing you've seen him do, and he puts his hand on Dickon Pye's chest. "Dickon Pye. Who was drunk, and loved his wife, and sang badly. Somebody saw you. Somebody's sorry." He gets up. "That's all I've got. It's not in the book."`
       ],
-      fx: { bond: { pell: 1 } },
       next: 'cis3'
     },
     cis_pye_on: {
@@ -1357,7 +1283,7 @@ TITHE.episode({
         `@tamsin: "There's no earth down here," she says, mostly to herself. "It's all brick. Brick and water. Nowhere for him to go."`,
         `She wipes her hand on her thigh, hard, the way she did in the sheepfold.`
       ],
-      fx: { bond: { tamsin: 1 }, quiet: true, set: { e2_tam_nowhere: 1 } },
+      fx: { set: { e2_tam_nowhere: 1 } },
       next: 'cis3'
     },
     cis3: {
@@ -1379,7 +1305,6 @@ TITHE.episode({
         `There's a *thock*, and the crossbow jumps out of the woman's hands and clatters off the ledge into the water with an arrow through its stock.`,
         `@tamsin: "Sorry," says Tamsin, nocking another. "Reflex."`
       ],
-      fx: { bond: { tamsin: 1 }, quiet: true },
       next: 'cis_nan_talk'
     },
     cis_nan_shot: {
@@ -1438,41 +1363,27 @@ TITHE.episode({
         `And out of the fire, burning, comes the king.`
       ],
       fx: { xp: 20 },
-      next: 'cis_boss_desc_fire'
-    },
-    cis_boss_desc_fire: {
-      text: [
-        `It's the size of a cart. It's a wheel of rats, hundreds of them, knotted together at the tails into one great writhing mass, every one of them facing outward, every mouth open. Some of the rats in the knot are long dead, rotted to skin and bone and still carried along, still tied in. It moves by rolling, by heaving, by all of them pulling at once.`,
-        `It's on fire. Half of it is on fire, and the burning half is screaming, and the other half is dragging it toward you through the water anyway, because it is hungry, and it has been taught that what comes down into the dark is food.`,
-        { if: 'f.e2_hob_hired', t: `@ansel: "Hob. Stand. Hold the light. Don't run."`, else: `@ansel: "On me."` }
-      ],
-      fx: { know: { beast: ['rat_king'] } },
       next: 'cis_boss_fire'
     },
     cis_boss_fire: {
+      text: [
+        `It's the size of a cart: a wheel of rats, hundreds of them, knotted together at the tails into one writhing mass, every one facing outward, every mouth open. Some of the rats in the knot are long dead, rotted to skin and bone and still carried along. It moves by heaving, by all of them pulling at once.`,
+        `Half of it is on fire, and the burning half is screaming, and the other half is dragging it toward you through the water anyway, because it has been taught that what comes down into the dark is food.`,
+        { if: 'f.e2_hob_hired', t: `@ansel: "Hob. Stand. Hold the light. Don't run."`, else: `@ansel: "On me."` }
+      ],
+      fx: { know: { beast: ['rat_king'] } },
       fight: { foes: ['e2_ratking_burning'], title: 'The Wedded Rats', win: 'cis_after',
         intro: 'It is burning, and it is faster for it. Watch for the heave.' }
     },
     cis_fight: {
       text: [
-        `You leave the lantern with Nan and take a torch from her brazier instead. You go under the great arch with Widow drawn.`,
-        `The north vault is the biggest yet: a cathedral of brick, the water shallow here, ankle-deep over a floor of bones. Bones everywhere. Rat-gnawed, split for marrow, piled in drifts against the walls. Shreds of grey linen caught among them like the rags on a gibbet. Up in the far wall, a black square mouth: the chute.`,
-        `In the middle of the vault, on a mound of bones and filth and linen, the Wedded Rats are waiting for you.`
-      ],
-      fx: { set: { e2_saw_chute: 1 } },
-      next: 'cis_boss_desc'
-    },
-    cis_boss_desc: {
-      text: [
-        `It's the size of a cart. It's a wheel of rats, hundreds of them, knotted together at the tails into one great writhing mass, every one facing outward, every mouth open. Some of the rats in the knot are long dead, rotted to skin and bone and still carried along, still tied in. It moves by rolling, by heaving, by all of them pulling at once.`,
-        `A hundred heads turn toward your torch at once, in perfect unison. It has one mind. You can feel it thinking about you.`,
-        `It has been fed on what came down the chute for half a year, and it has learned that what comes down into the dark is food.`,
+        `You leave the lantern with Nan, take a torch from her brazier, and go under the great arch with Widow drawn.`,
+        `The north vault is a cathedral of brick, ankle-deep over a floor of bones: rat-gnawed, split for marrow, piled in drifts against the walls. Shreds of grey linen caught among them like rags on a gibbet. High in the far wall, a black square mouth: the chute.`,
+        `In the middle of the vault, on a mound of bones and filth and linen, the Wedded Rats are waiting. It's the size of a cart: a wheel of rats, hundreds of them, knotted at the tails into one writhing mass, every mouth facing outward. Some of the rats in the knot are long dead, rotted to skin and still carried along.`,
+        `A hundred heads turn toward your torch at once. It has one mind, and it has been fed on what came down that chute for half a year. You can feel it thinking about you.`,
         { if: 'f.e2_hob_hired', t: `@ansel: "Hob. Stand. Hold the light. Don't run."`, else: `@ansel: "On me."` }
       ],
-      fx: { know: { beast: ['rat_king'] } },
-      next: 'cis_boss_fight'
-    },
-    cis_boss_fight: {
+      fx: { set: { e2_saw_chute: 1 }, know: { beast: ['rat_king'] } },
       fight: { foes: ['rat_king'], title: 'The Wedded Rats', win: 'cis_after',
         intro: 'When it shudders and tears at its own edges, it is about to shed a swarm. Fire hurts it badly.' }
     },
@@ -1531,7 +1442,7 @@ TITHE.episode({
         `Behind you, Tamsin has gone absolutely silent. When you look round, she's staring at your bare hand with an expression you have never seen on her face before and cannot read at all.`,
         `You put the glove back on.`
       ],
-      fx: { set: { e2_annet_palm: 1 }, bond: { tamsin: 1 }, quiet: true },
+      fx: { set: { e2_annet_palm: 1 } },
       next: 'cis_annet_out'
     },
     cis_annet_wall: {
@@ -1547,7 +1458,7 @@ TITHE.episode({
     cis_annet_wall_fail: {
       text: [
         `Stars and stars and stars. Some crossed through, some not. The pattern swims in the lantern-light and won't sit still for you. It means something. Somebody made it mean something. But your head is full of rats and the smell of honey and you can't make it come out.`,
-        `Pell copies a corner of it into the back of his burnt prayer-book with a stub of charcoal, his lips moving.`
+        { if: 'f.e2_saved_book', t: `Pell copies a corner of it into the back of his scorched prayer-book with a stub of charcoal, his lips moving.`, else: `Pell copies a corner of it onto the inside of his own wrist with a stub of charcoal, his lips moving.` }
       ],
       fx: { set: { e2_pell_copied: 1 } },
       next: 'cis_annet_out'
@@ -1604,7 +1515,6 @@ TITHE.episode({
         `@isolde: "Thank you." A pause. "You do that very well. Not looking."`,
         `@ansel: "I've had practice, my lady. You learn to give people their faces back."`
       ],
-      fx: { bond: { isolde: 1 } },
       next: 'isolde_ribbon'
     },
     isolde_sit: {
@@ -1612,18 +1522,18 @@ TITHE.episode({
         `@isolde: "I don't need to sit down." She sits down. On the edge of a chest, abruptly, as if her knees have made the decision without consulting her. She doesn't let go of Annet's hand.`,
         `@isolde: "I'm sorry. That was— I'm not usually—" She stops. "No. I *am* usually. I'm usually exactly this. I just don't usually let anybody see it."`
       ],
-      fx: { bond: { isolde: 1 } },
       next: 'isolde_ribbon'
     },
     isolde_ribbon: {
+      fx: { take: { annet_ribbon: 1 } },
       text: [
         `You hold out the ribbon. Blue silk, frayed at one end, still faintly sweet.`,
         `She takes it. She stands behind Annet and gathers her hair in one hand and tries to tie it, the way she must have watched it tied a thousand mornings. Her fingers won't do it. The silk slips. She tries again. It slips.`,
-        `@isolde: "I can do eleven-figure sums in my head," she says, very quietly, to the back of Annet's neck, "and I cannot tie a—"`
+        `@isolde: "I can tell you what this March owes to the penny," she says, very quietly, to the back of Annet's neck, "and I cannot tie a—"`
       ],
       choices: [
-        { t: `Step in. Put your hands over hers. Tie it for her: a sergeant's knot, tight and neat.`, go: 'isolde_knot', fx: { bond: { isolde: 2 }, set: { e2_tied_ribbon: 1 } } },
-        { t: `"Take your time, my lady. She's not going anywhere."`, go: 'isolde_ownknot', fx: { bond: { isolde: 1 } } },
+        { t: `Step in. Put your hands over hers. Tie it for her: a sergeant's knot, tight and neat.`, go: 'isolde_knot', fx: { set: { e2_tied_ribbon: 1 } } },
+        { t: `"Take your time, my lady. She's not going anywhere."`, go: 'isolde_ownknot' },
         { t: `"Nurse Brisket's outside the door. She'll know how."`, go: 'isolde_brisket' }
       ]
     },
@@ -1669,11 +1579,11 @@ TITHE.episode({
         `You tell her. All of it, in order, the way you'd make a report: what you saw, where, how many. The stars on the inside of the doors. The ribbon at the grate. The rats, the size of the king. The well-room. The tally on the wall.`,
         { if: 'f.e2_lamp_silver', t: `The journeymen paid in new silver with the little lamp on it.` },
         { if: 'f.e2_nan_bundles || f.e2_cauley_told', t: `Bundles in grey linen, down a chute from up the hill, once a week since spring.` },
-        `She listens without interrupting once. When you're done she's quiet for a long time.`,
+        `She listens without interrupting once. When you're done she's quiet until the candle gutters.`,
         `@isolde: "Thank you," she says. "Nobody in this castle has made me a report in my life. They make me *reassurances*." She looks at Annet. "She'll stay here. In my rooms. Brisket and I will see to her. Nobody from the Lanternhold comes near her."`,
         `@isolde: "If the Lamp is doing this, Master Dray, then the Lamp holds a loan against my father's spring rents, and a seat at his table, and the love of every soul in this town. And I am a girl with a ledger." A thin smile. "Well. I've started with less."`
       ],
-      fx: { bond: { isolde: 2 } },
+      fx: { bond: { isolde: 1 } },
       next: 'isolde_hire'
     },
     isolde_truth_warn: {
@@ -1683,19 +1593,18 @@ TITHE.episode({
         `@isolde: "The Abbess asked for her," she says slowly. "This morning. Before you found her. She sent a brother to say, *if Annet is found, whatever her state, send her to us, we take everyone*." She looks at you, and you watch her do the sum. You watch her get the answer. "She asked *before* you found her."`,
         `@isolde: "She stays here. In my rooms. Brisket and I will see to her. If anyone in a grey robe comes to this door, Brisket will deal with them, and you have *met* Brisket."`
       ],
-      fx: { bond: { isolde: 2 }, set: { e2_isolde_suspects: 1 } },
+      fx: { bond: { isolde: 1 }, set: { e2_isolde_suspects: 1 } },
       next: 'isolde_hire'
     },
     isolde_soft: {
       text: [
         `@ansel: "By the river, my lady. Wandering. Lost. Like Ashby. The sickness."`,
-        `She looks at you for a long time. She has a face for figures, and you can see her checking yours, and you can see her decide, out of tiredness or kindness or because she simply can't carry one more thing tonight, to let the sum stand.`,
+        `She has a face for figures, and you can see her checking yours, and you can see her decide, out of tiredness or kindness or because she simply can't carry one more thing tonight, to let the sum stand.`,
         `@isolde: "The sickness." She nods. "Then the Lanternhold. The Abbess asked for her already; she sent a brother this morning. They know how to care for them. I don't. I'd only— I'd only sit with her and talk to her and she'd starve while I read her the end of the bear book."`,
         `@isolde: "She'll go up tomorrow. Brisket will take her."`,
         `> The girl at Ashby, washed and brushed, holding her doll by one leg. Forty beds. Two stripped.`,
         { if: 'f.e2_promised_truth', t: `> You said you'd tell her the truth. Whatever it was. You're a liar now as well, then. Add it to the list.` }
       ],
-      fx: { bond: { isolde: 0 } },
       choices: [
         { t: `Let it stand.`, go: 'isolde_hire' },
         { t: `"My lady— wait. That's not all of it." Tell her the truth after all.`, go: 'isolde_truth_late', fx: { set: { e2_told_isolde_truth: 1, e2_annet_where: 'keep' } } }
@@ -1709,7 +1618,6 @@ TITHE.episode({
         `@ansel: "Yes."`,
         `@isolde: "Don't do that again." Then, after a moment, less hard: "But you stopped. Most men don't stop. I'll remember that you stopped." She looks at Annet. "She stays here."`
       ],
-      fx: { bond: { isolde: 1 } },
       next: 'isolde_hire'
     },
     isolde_hire: {
@@ -1720,8 +1628,8 @@ TITHE.episode({
         `You've never heard her say please. You suspect very few people have.`
       ],
       choices: [
-        { t: `"I'll keep looking, my lady."`, go: 'isolde_end', fx: { set: { e2_isolde_hired: 1 }, silver: 100, bond: { isolde: 1 }, quest: { id: 'e2_tally', title: 'The Tally on the Wall', state: 'active', note: 'Lady Isolde wants the rest of the lines: who chalks the stars, who pushes the cart. Off the books.' } } },
-        { t: `"Keep the hundred. I'll keep looking anyway. Not for silver. For Annet."`, go: 'isolde_end', fx: { set: { e2_isolde_hired: 1, e2_isolde_free: 1 }, bond: { isolde: 2 }, rep: { varane: 1 }, quest: { id: 'e2_tally', title: 'The Tally on the Wall', state: 'active', note: 'Lady Isolde wants the rest of the lines: who chalks the stars, who pushes the cart. You said you\'d do it for nothing.' } } },
+        { t: `"I'll keep looking, my lady."`, go: 'isolde_end', fx: { set: { e2_isolde_hired: 1 }, silver: 100, quest: { id: 'e2_tally', title: 'The Tally on the Wall', state: 'active', note: 'Lady Isolde wants the rest of the lines: who chalks the stars, who pushes the cart. Off the books.' } } },
+        { t: `"Keep the hundred. I'll keep looking anyway. Not for silver. For Annet."`, go: 'isolde_end', fx: { set: { e2_isolde_hired: 1, e2_isolde_free: 1 }, rep: { varane: 1 }, quest: { id: 'e2_tally', title: 'The Tally on the Wall', state: 'active', note: 'Lady Isolde wants the rest of the lines: who chalks the stars, who pushes the cart. You said you\'d do it for nothing.' } } },
         { t: `"No, my lady. I found your maid. I'm done. This is a fight for lords and priests."`, go: 'isolde_decline', fx: { set: { e2_isolde_hired: 0 }, silver: 100 } }
       ]
     },
@@ -1731,7 +1639,7 @@ TITHE.episode({
         `@isolde: "Of course." Perfectly courteous; a blade is courteous too. "You've been paid. You owe the March nothing." She turns back to Annet. "Brisket will see you out."`,
         `At the door, without turning round, she says: "If you change your mind, the key still works."`
       ],
-      next: 'isolde_end2'
+      next: 'mags1'
     },
     isolde_end: {
       text: [
@@ -1739,13 +1647,7 @@ TITHE.episode({
         `@isolde: "Thank you, Ansel."`,
         `It's the first time she's used your name. She doesn't seem to notice she's done it. You notice.`,
         `She sits down by Annet, takes the girl's limp hand in her lap, and opens a book from the shelf at random, and begins, very steadily, to read aloud. Some dry thing about tithe-law. It doesn't matter. Her voice in the cold room, and the empty girl with the blue ribbon in her hair, listening to nothing.`,
-        `You go. At the door you look back once. She's looking up from the page, straight at you, over Annet's head, and she doesn't look away. Neither do you, for a long time.`
-      ],
-      next: 'isolde_end2'
-    },
-    isolde_end2: {
-      text: [
-        `Brisket lets you out into the chapel yard. The stars are out over the Keep, hard and bright and close. You don't look up. You walk down through the sleeping town with your eyes on the cobbles, all the way to the Hen.`
+        `You go. At the door you look back once. She's looking up from the page, straight at you, over Annet's head, and she doesn't look away. Neither do you.`
       ],
       next: 'mags1'
     },
@@ -1754,25 +1656,21 @@ TITHE.episode({
     mags1: {
       loc: 'The Gutted Hen — the wash-house, before dawn',
       text: [
+        `Brisket lets you out into the chapel yard. The stars are out over the Keep, hard and bright and close. You walk down through the sleeping town with your eyes on the cobbles, all the way to the Hen.`,
         `The Hen is dark and shut. You go round the back. There's a light in the wash-house, and steam coming out of the shutters, and Mags Halloran in the doorway in her shift with a shawl round her shoulders and her hair down, grey-shot auburn, much longer than you'd have guessed.`,
-        `She looks at you. She looks at you for a long time. Then she pinches her nose.`,
-        `@mags: "Lamp and Saints. You are *not* coming into my common room like that. Tamsin came in an hour ago smelling like a dead rat and I put her in the copper first. She's gone up. Priest's asleep in the hayloft."`,
+        `She looks at you. Then she pinches her nose.`,
+        `@mags: "Lamp and Saints. You are *not* coming into my common room like that. Tamsin came in an hour ago smelling like a dead rat and I put her in the copper first. She's up in the hayloft with the priest; wouldn't take her room. Says she likes the company."`,
         { if: 'f.e2_hob_hired', t: `@mags: "And the boy's asleep on the priest."` },
         `@mags: "Water's still hot. Get in."`
       ],
       choices: [
-        { t: `"Mags. I can wash at the pump."`, go: 'mags_pump' },
+        { t: `"Mags. I can wash at the pump."`, go: 'mags_bath', fx: { set: { e2_mags_pump: 1 } } },
         { t: `Strip off and get in. You're too tired to be shy.`, go: 'mags_bath' }
       ]
     },
-    mags_pump: {
-      text: [
-        `@mags: "You can freeze at the pump, is what you can do, and then you'll be ill in my best room and I'll have to nurse you, and I've done enough of that for one life." She holds the door open. "I've seen a man's arse before, love. I was married twice. Get in."`
-      ],
-      next: 'mags_bath'
-    },
     mags_bath: {
       text: [
+        { if: 'f.e2_mags_pump', t: `@mags: "You can freeze at the pump, is what you can do, and then you'll be ill in my best room and I'll have to nurse you, and I've done enough of that for one life." She holds the door open. "I've seen a man's arse before, love. I was married twice. Get in."` },
         `The copper is a great dented tub on the flagstones, full to the brim, steaming. You get out of your clothes, which takes a while, because some of them are stuck to you with blood and worse. Mags takes them away at arm's length with the tongs and drops them in a bucket of lye.`,
         `You get in. The heat goes into every bite and cut and bruise at once, and you hear yourself make a sound you didn't know you had in you, low and helpless, like a horse rolling in the grass.`,
         `Mags laughs. Not unkindly. She pulls a stool up behind the tub and sits, and picks up a cake of soap that smells of lavender, and without asking she starts scrubbing your back.`,
@@ -1786,22 +1684,22 @@ TITHE.episode({
     },
     mags_offer: {
       text: [
-        `@mags: "I'm forty-one," she says at last, conversationally, still with her hand on the scar. "I've buried two husbands and a son, and I've a tavern to open in three hours. I'm not looking for a husband. I'm not looking for anything that lasts past breakfast."`,
+        `@mags: "I'm forty-one," she says at last, conversationally, still with her hand on the scar. "I've buried a husband and a son, and I've a tavern to open in three hours. I'm not looking for a husband. I'm not looking for anything that lasts past breakfast."`,
         `@mags: "But it's a long time since anybody's been in this wash-house with me who wasn't paying for the bath. And you've good shoulders. I told you that."`,
         `She takes her hand off your ribs. She stands up. The shawl slides off one shoulder and she lets it.`,
         `@mags: "Your choice, sergeant. No hard feelings either way. I'll still do you breakfast."`
       ],
       choices: [
-        { t: `Reach up and take her hand.`, go: 'mags_yes', fx: { set: { e2_mags: 1 }, bond: { mags: 2 } } },
-        { t: `"Not tonight, Mags. Not because of you."`, go: 'mags_no', fx: { bond: { mags: 1 } } },
-        { t: `"Stay and talk. Just talk. I don't want to be alone yet."`, go: 'mags_talk', fx: { bond: { mags: 2 }, set: { e2_mags_talk: 1 } } }
+        { t: `Reach up and take her hand.`, go: 'mags_yes', fx: { set: { e2_mags: 1 }, bond: { mags: 1 } } },
+        { t: `"Not tonight, Mags. Not because of you."`, go: 'mags_no' },
+        { t: `"Stay and talk. Just talk. I don't want to be alone yet."`, go: 'mags_talk', fx: { bond: { mags: 1 }, set: { e2_mags_talk: 1 } } }
       ]
     },
     mags_yes: {
       text: [
         `Her hand is warm and wet with soapsuds. You pull, and she laughs, and says *oh, not in the tub, you great fool, I'm forty-one, my back*, and gets in anyway, shift and all, and half the water goes over the side onto the flagstones.`,
-        `It is not graceful. Your knee finds the side of the copper. Her elbow finds your eye. The shift is a sodden nuisance and takes the both of you to get off over her head, and she swears at it the whole time, and you're laughing, which you have not done like this in six years, so hard it hurts your bitten ribs.`,
-        `Then you stop laughing. She's big and soft and strong, freckled across the shoulders, heavy-breasted, a silver stretch-mark low on her belly from the son she buried, and she looks at you looking at her with her chin up, daring you to find any of it wanting. You don't. You put your mouth to the hollow of her throat and she takes a fistful of your hair and says your name, your actual name, *Ansel*, low and rough, and the tub isn't big enough for this and neither of you cares.`,
+        `It is not graceful. Your knee finds the side of the copper. Her elbow finds your eye. The shift is a sodden nuisance and takes the both of you to get off over her head, and she swears at it the whole time, and something comes out of you that is nearly a laugh, a short surprised bark that hurts your bitten ribs and startles you both.`,
+        `Then neither of you is laughing. She's big and soft and strong, freckled across the shoulders, heavy-breasted, a silver stretch-mark low on her belly from the son she buried, and she looks at you looking at her with her chin up, daring you to find any of it wanting. You don't. You put your mouth to the hollow of her throat and she takes a fistful of your hair and says your name, your actual name, *Ansel*, low and rough, and the tub isn't big enough for this and neither of you cares.`,
         `She doesn't ask about the glove you've still got on your left hand. She looks at it, once. Then she takes your gloved hand and puts it where she wants it, and that is the last thing either of you says for some time.`
       ],
       next: 'mags_after'
@@ -1812,10 +1710,10 @@ TITHE.episode({
         `Later, in her bed, which is big and sags in the middle and smells of lavender and woodsmoke, she lies with her head on your chest and draws idle circles on the spear-scar with one finger.`,
         `@mags: "This isn't anything," she says. "You know that."`,
         `@ansel: "I know."`,
-        `@mags: "It's something. It's a Tuesday." She yawns hugely. "You snore, by the way. You snored for a quarter-hour before I kicked you. You sleep like a man who's never slept in a bed."`,
+        `@mags: "It's something. It's a bath that got out of hand." She yawns hugely. "You snore, by the way. You snored for a quarter-hour before I kicked you. You sleep like a man who's never slept in a bed."`,
         `> You did sleep. Without the bottle, without the roll. With somebody breathing next to you. You'd forgotten how.`,
         `The shutters go grey, then gold. Downstairs, someone is banging on the door for beer. Mags groans, gets up, stands naked in the dawn light stretching her back until it cracks, entirely unembarrassed, and throws your clean shirt at your head.`,
-        `@mags: "Breakfast in a quarter-hour. Don't make it weird."`
+        `@mags: "Breakfast in a quarter-hour. Don't go moon-eyed over the porridge."`
       ],
       fx: { rest: true, heal: 'full', st: 2 },
       next: 'tam_tease'
@@ -1865,7 +1763,6 @@ TITHE.episode({
         `@ansel: "I learned from the best."`,
         { if: 'f.e2_mags', t: `@tamsin: "Mm." She leans her shoulder against yours. It's a perfectly ordinary thing to do; she's done it before. Only this time she takes it away again a moment sooner than she did on the step that first evening, and looks at the yard, and says, too brightly: "She's nice, Mags. She's good. I like her. I'm glad." She means every word. That's what makes the small silence after it so strange.`, else: `@tamsin: "Mm." She leans her shoulder against yours, and leaves it there, and you sit together on the step while the town wakes up, and the apple goes back and forth between you until it's a core.` }
       ],
-      fx: { bond: { tamsin: 1 } },
       next: 'gossip1'
     },
     tam_tease_jealous: {
@@ -1873,7 +1770,7 @@ TITHE.episode({
         `@tamsin: "Of *you*?" She laughs, loud, too loud, the laugh that's always a little too loud. "Saints. I'd sooner be jealous of Ox."`,
         `She takes another bite of apple. She looks out across the yard, at the stables, at nothing.`,
         `@tamsin: "Anyway. You couldn't afford me."`,
-        `It's a joke. It comes out wrong, somehow, a little flat, and she hears it come out wrong, and her ears go pink, and she gets up and goes in without finishing the apple.`
+        `It's a joke. It comes out wrong, somehow, a little flat, and she hears it come out wrong, and she gets up and goes in without finishing the apple.`
       ],
       fx: { set: { e2_tam_flicker: 1 } },
       next: 'gossip1'
@@ -1887,17 +1784,12 @@ TITHE.episode({
         `Children on the Market Stair are playing it. One of them is the rat-king, rolling on the steps with five others clinging to his ankles, squealing. One of them is you. He has a stick for a sword and his mother's glove on his left hand.`,
         `@tibb: "*The man who killed the rat-king!*" Old Tibb cries it from the notice board for free, which is unheard of. "*Drinks on him at the Hen!*"`,
         `@tamsin: "Drinks are not on you," Tamsin says. "I want that clear."`,
-        { if: "f.e2_ratking==='burned'", t: `Up and down the Bottom, people stop you to say they saw the smoke come out of the grates last night, blue, all along Lantern Lane, like the town was breathing fire. An old woman kisses your hand. You let her.` }
-      ],
-      fx: { rep: { town: 2 }, set: { e2_ratking_famous: 1 } },
-      next: 'gossip2'
-    },
-    gossip2: {
-      text: [
-        { if: "f.e2_hask_job==='took'", t: `A Keep runner finds you on the Stair with a purse and a note in that quick captain's hand. *My town sword kills a rat-king in his first week. Good for the brand. Here's a bonus; buy the Hen a round. Don't go down holes without telling me again. — K.* The purse has twenty silver in it. The bit about the holes is underlined.` },
+        { if: "f.e2_ratking==='burned'", t: `Up and down the Bottom, people stop you to say they saw the smoke come out of the grates last night, blue, all along Lantern Lane, like the town was breathing fire. An old woman kisses your hand. You let her.` },
+        { if: "f.e2_hask_job==='took'", t: `A Keep runner finds you on the Stair with a purse and a note in that quick captain's hand. *My town sword kills a rat-king in his first week. Good for my name, and better for yours. Here's a bonus; buy the Hen a round. Don't go down holes without telling me again. — K.* The purse has twenty silver in it. The bit about the holes is underlined.` },
         { if: "f.e2_hask_job!=='took'", t: `Sergeant Moll finds you on the Stair. He has the look of a man carrying a message he doesn't like. "Marshal says well done," he says. "Marshal says the cisterns are the town's business and the town's had men down there since the spring, looking after things, and next time you go down a hole you'll ask first." He pauses. "And I say well done. For myself. Hettie Pye's at the Hen, crying. Somebody ought to tell her properly."` },
         `@pell: "*Since the spring*," Pell repeats, when the messenger's gone. "Looking after things."`
       ],
+      fx: { rep: { town: 2 }, set: { e2_ratking_famous: 1 } },
       choices: [
         { t: `Go to the Hen. Tell Hettie Pye about Dickon yourself.`, go: 'gossip_hettie' },
         { t: `Find Hob. He hasn't said a word since the cisterns.`, if: 'f.e2_hob_hired', go: 'gossip_hob' },
@@ -1913,7 +1805,7 @@ TITHE.episode({
         `She nods. She unwinds the dishcloth. She says he was a useless drunk and she'll miss him every day of her life, and both of those are true, and she goes home.`
       ],
       fx: { rep: { town: 1 }, set: { e2_told_hettie: 1 } },
-      next: 'gossip_after'
+      next: 'final1'
     },
     gossip_hob: {
       loc: 'The Gutted Hen — the stable',
@@ -1922,8 +1814,7 @@ TITHE.episode({
         `@hob: "I keep seeing her face," he says, without turning round. "Annet's. Not the rats. I thought it'd be the rats. It's her face." He swallows. "Is that what it's like? Being a soldier? You keep seeing the faces?"`
       ],
       choices: [
-        { t: `"Yes. Every one. That's what the roll is for. So you don't have to carry them all in your head."`, go: 'gossip_hob_roll', fx: { bond: { hob: 1 } } },
-        { t: `"It gets easier." (It doesn't.)`, go: 'gossip_hob_lie' },
+        { t: `"Yes. Every one. That's what the roll is for. So you don't have to carry them all in your head."`, go: 'gossip_hob_roll' },
         { t: `"That's why you should go home, Hob. While you still only see the one."`, go: 'gossip_hob_home' }
       ]
     },
@@ -1932,31 +1823,17 @@ TITHE.episode({
         `You show him. Not the whole thing; the first hand's-breadth. Names. Rank, home, the date.`,
         `@hob: "You wrote them all? All of them?"`,
         `@ansel: "The morning after. Before I forgot any."`,
-        `He reads a few, his lips moving. He reads slowly, but he reads. Then he hands it back, very carefully, the way Tamsin did.`,
+        `He reads a few, his lips moving. He reads slowly, but he reads. Then he hands it back, very carefully, rolled the way you roll it.`,
         `@hob: "I'll remember Annet, then," he says. "I'll be her roll." He goes back to brushing Ox, and Ox, for once, doesn't bite him.`
       ],
       fx: { set: { e2_hob_roll: 1 } },
-      next: 'gossip_after'
-    },
-    gossip_hob_lie: {
-      text: [
-        `@hob: "Right." He brushes Ox. "Right. Good."`,
-        `He believes you. That's the worst part. He believes everything you say.`
-      ],
-      next: 'gossip_after'
+      next: 'final1'
     },
     gossip_hob_home: {
       text: [
         `He turns round. His chin comes up, and for a moment he looks very like you did at fifteen, with your father's belt in his hand, deciding to run.`,
         `@hob: "No, Sergeant. Respectfully. No."`,
         `> You'd have said the same. You did say the same. Look where it got you.`
-      ],
-      fx: { bond: { hob: 1 }, quiet: true },
-      next: 'gossip_after'
-    },
-    gossip_after: {
-      text: [
-        `The afternoon goes. The light goes long and gold down the Market Stair. Up the hill, the Lanternhold bells begin to ring for the Evening Lamp.`
       ],
       next: 'final1'
     },
@@ -1989,18 +1866,9 @@ TITHE.episode({
         `Hask sees you. Over the heads of the whole town, he sees you, and smiles, wide and warm and glad, and lifts a hand.`,
         { if: "f.e2_hask_job==='took'", t: `You lift yours back. You're his town sword. That's what town swords do.`, else: `You don't lift yours. He doesn't seem to mind. He never minds.` },
         `@tamsin: "Sergeant," Tamsin says, very low, not looking at you. "Your hand."`,
-        `You look down. You've taken your left glove off without knowing it. The star on your palm is red and angry, as if it's just been burned there, and it hurts, it *hurts*, a deep pulsing ache like a tooth going bad.`
-      ],
-      next: 'final4'
-    },
-    final4: {
-      text: [
-        `You look up, because you can't help it.`,
-        `At the edge of the crowd, on the far side of the steps, a tall man in a rain-dark coat is standing very still among all the people who aren't. Nobody jostles him. Nobody seems to see him. He has a book open on his arm, and he is looking up at the Abbess and the Marshal on the top step, and he is writing.`,
-        `He doesn't look at you. He turns a page.`,
-        `The bells stop. The crowd lifts its hands to its hearts. Up on the tower, in its cage of glass, the blue flame of the Lanternhold leans, very slightly, toward the Tanners' Bottom, as if in a wind that nobody else can feel.`,
-        `When you look back, the grey man is gone. The Abbess is blessing a child. Hask is laughing.`,
-        `You put your glove back on.`
+        `You look down. You've taken your left glove off without knowing it. The star on your palm is red and angry, as if it's just been burned there, and it hurts, it *hurts*, a deep pulsing ache like a tooth going bad.`,
+        `The bells stop. The crowd lifts its hands to its hearts. Up on the tower, in its cage of glass, the blue flame of the Lanternhold leans, very slightly, away from where you stand, the way a candle leans from a door left open.`,
+        `The Abbess is blessing a child. Hask is laughing. You put your glove back on.`
       ],
       fx: { xp: 60, quest: [{ id: 'hask', note: 'At the Evening Lamp, Hask stood beside the Abbess on the Lanternhold steps. They looked at each other like two people whose sums had come out right.' }] },
       end: true
@@ -2049,8 +1917,8 @@ TITHE.episode({
         `The milk-grey surface of the pit bulges, very gently, beneath his feet.`
       ],
       choices: [
-        { t: `Go in after him. Wade the lime. Get him out first, then fight.`, go: 'c_pits_wade', fx: { hp: -6, set: { e2_jory: 'saved' } } },
-        { t: `Stay on the lip. Make it come to you. He'll have to hold on.`, go: 'c_pits_lip', fx: { set: { e2_jory: 'lost' } } }
+        { t: `Go in after him. Wade the lime. Get him out first, then fight.`, go: 'c_pits_wade', fx: { hp: -6, set: { e2_piers: 'saved' } } },
+        { t: `Stay on the lip. Make it come to you. He'll have to hold on.`, go: 'c_pits_lip', fx: { set: { e2_piers: 'lost' } } }
       ]
     },
     c_pits_wade: {
@@ -2075,17 +1943,14 @@ TITHE.episode({
         `It comes up out of the lime like a white tree falling upward: an eel, thick as a man, longer than the pit is wide, blind, its skin bleached the dead white of everything that lives in lime, its mouth a round red wound full of backward teeth. Lime-milk sheets off it. It turns its blind head toward the warmth of you.`
       ],
       fx: { know: { beast: ['e2_pit_eel'] } },
-      next: 'c_pits_fight2'
-    },
-    c_pits_fight2: {
       fight: { foes: ['e2_pit_eel'], title: 'The Old Pit', win: 'c_pits_3',
         intro: 'When it sinks out of sight, it is coming for your legs. Guard.' }
     },
     c_pits_3: {
       text: [
         `It dies thrashing, and its thrashing empties half the pit over the Guild yard in a grey wave. When it's still, it lies across the lip like a felled birch, and steam comes off it, and the whole Bottom has come out in their nightshirts to look.`,
-        { if: "f.e2_jory==='saved'", t: `The journeyman, Jory, is lying on the cobbles with Crouch kneeling beside him pouring vinegar on his legs, which is the right thing to do, and Jory screaming, which is the right thing too. He'll walk again. Badly. But he'll walk.` },
-        { if: "f.e2_jory==='lost'", t: `They find what's left of the journeyman inside it, later, when Crouch has it opened. Crouch doesn't say anything to you about it. He doesn't have to.` },
+        { if: "f.e2_piers==='saved'", t: `The journeyman, Piers, is lying on the cobbles with Crouch kneeling beside him pouring vinegar on his legs, which is the right thing to do, and Piers screaming, which is the right thing too. He'll walk again. Badly. But he'll walk.` },
+        { if: "f.e2_piers==='lost'", t: `They find what's left of the journeyman inside it, later, when Crouch has it opened. Crouch doesn't say anything to you about it. He doesn't have to.` },
         `@e2_crouch: "Well." Crouch looks at the eel. Then at your boots, which the lime has eaten through. Then at you. "That's a hide. That's a hide and a half, that is. The Guild could tan that. Make a hundred pairs of boots out of that."`
       ],
       choices: [
@@ -2111,19 +1976,10 @@ TITHE.episode({
       ]
     },
     c_mill_took1: {
-      loc: 'The Gutted Hen — morning',
-      text: [
-        `The runner is a Keep page in a blue tabard, twelve years old, very serious. He hands you a paper sealed with the boar.`,
-        `*Town sword. Coldbrook Mill, two hours west on the Thornwood road. Miller Hamm owes the March sixty silver in arrears of mill-dues, three years running. Collect it, or bring him to the Keep and he can work it off at Saltdown like the rest. Your choice how; I trust your judgment. Keep a tenth. — K.*`,
-        `Keep a tenth. Six silver for an old man's mill, or an old man.`
-      ],
-      choices: [
-        { t: `Ride to Coldbrook.`, go: 'c_mill_took2' }
-      ]
-    },
-    c_mill_took2: {
       loc: 'Coldbrook Mill — the Thornwood road',
       text: [
+        `A Keep page in a blue tabard brings it to the Hen at cockcrow, sealed with the boar: *Town sword. Coldbrook Mill, two hours west on the Thornwood road. Miller Hamm owes the March sixty silver in arrears of mill-dues, three years running. Collect it, or bring him to the Keep and he can work it off at Saltdown like the rest. Keep a tenth. — K.*`,
+        `Six silver for an old man's mill, or an old man. By noon you're in the yard.`,
         `Coldbrook Mill is a squat grey building over a fast brown stream, with a wheel that groans and a yard full of geese. Miller Hamm is seventy, bent, flour in every crease of him. His two sons are standing in front of the door with threshing flails, and they've seen the boar on your belt.`,
         `@narrator: "Sixty silver," says the old man. "Three years. You know why three years? Because three years ago the Marshal's men took my hired man, Col, for *his* debts, to Saltdown, to work them off. Col was the one who knew the wheel. Since then the wheel's been grinding half what it did. And I owe more every quarter, and the more I owe the more they'll take."`,
         `@narrator: "Col never came back. Nobody comes back from Saltdown. So you tell me, Marshal's man. What happens to me?"`
@@ -2140,9 +1996,6 @@ TITHE.episode({
         `The sons look at each other. The elder spits on his hands and takes a fresh grip on his flail.`,
         `@narrator: "No," he says. "Not Da. You'll have to go through us."`
       ],
-      next: 'c_mill_force_fight'
-    },
-    c_mill_force_fight: {
       fight: { foes: ['bandit', 'bandit'], title: 'Coldbrook Mill', win: 'c_mill_force2',
         intro: 'Miller\'s sons with threshing flails. They are not fighting for silver.' }
     },
@@ -2215,7 +2068,7 @@ TITHE.episode({
     },
     c_mill_ref_bluff: {
       text: [
-        `Snell looks at you for a long time, doing sums of his own. A man who went down the hole and came back. The Marshal's old sergeant, everybody says. Maybe friends, maybe not.`,
+        `Snell weighs you, doing sums of his own. A man who went down the hole and came back. The Marshal's old sergeant, everybody says. Maybe friends, maybe not.`,
         `@narrator: "Next quarter," he says at last, to the miller, not to you. "Next quarter, Hamm, and the Saints help you." He turns the cart around. As it goes, he gives you a look: the look of a man who will remember your face in a report.`
       ],
       fx: { set: { e2_miller: 'bluffed' }, xp: 50, rep: { town: 1 } },
@@ -2225,9 +2078,6 @@ TITHE.episode({
       text: [
         `@narrator: "Have it your way." Snell draws. "Take him."`
       ],
-      next: 'c_mill_ref_fight2'
-    },
-    c_mill_ref_fight2: {
       fight: { foes: ['man_at_arms', 'man_at_arms'], title: 'Coldbrook Mill', win: 'c_mill_ref_won',
         intro: 'Varane men-at-arms, Hask\'s orders. Trained, armoured, and doing their jobs.' }
     },
@@ -2246,7 +2096,8 @@ TITHE.episode({
     t_pell_1: {
       loc: 'The Gutted Hen — a corner table, late',
       text: [
-        `Pell has been sober for four days, which he announces to you every evening as though it were a military campaign. Tonight he's sitting in the corner with a cup of small beer he hasn't touched, and the charred prayer-book open on the table, and he's not reading it.`,
+        `Pell has been sober for four days, which he announces to you every evening as though it were a military campaign. Tonight he's sitting in the corner with a cup of small beer he hasn't touched, and a book open on the table that he's not reading.`,
+        { if: 'f.e2_saved_book', t: `It's his mother's prayer-book, scorched at the edges. He keeps his hand on it the way you keep yours on the roll-case.`, else: `It's a cheap Book of Embers Mags bought him off a pedlar, which he hates. "The binding's wrong," he says. "The verses are all there. The binding's wrong."` },
         `@pell: "I keep thinking about the forty beds," he says when you sit down. "Forty beds and the line in the gate court going on for ever."`,
         { if: "f.e1_ashby==='led'", t: `@pell: "You brought thirty-one in from Ashby. I've counted the ward three times since. I can't find thirty-one new faces." He turns the cup. "I found the little girl with the doll. I couldn't find the rest."` },
         { if: "f.e1_ashby==='mercy'", t: `@pell: "Tamsin told me about Ashby. What you did there. I keep trying to work out whether it was a sin." He turns the cup. "And I keep thinking that if you'd brought them here instead, I wouldn't have to wonder where they'd gone."` },
@@ -2261,18 +2112,17 @@ TITHE.episode({
       text: [
         `@pell: "No." He looks at it as if it were a dog he used to own. "I pour one every night. I look at it. Then I give it to Hob, and he drinks it and goes red and tells me about horses." He smiles, crookedly. "It's a sort of liturgy. You need a liturgy, when you've stopped believing in the first one."`
       ],
-      fx: { bond: { pell: 1 } },
       next: 't_pell_2'
     },
     t_pell_2: {
       text: [
-        `@pell: "It was the night of Saint Corran." He doesn't seem to notice you flinch at the name. "Midwinter. The whole Lanternhold was at the Evening Lamp but me, because I was drunk in the oil-store. I took the wrong stair. I told you that part."`,
-        `@pell: "The door was warm. I put my ear to it. They were singing on the other side, the Abbess and some of the Almoners. The Litany of the Lit Road, the funeral hymn, very soft. And under the singing there was another sound."`,
+        `@pell: "It was Saint Corran's Eve." He doesn't seem to notice you flinch at the name. "The first night of winter. The whole Lanternhold was at the Evening Lamp but me, because I was drunk in the oil-store. I took the wrong stair. I told you that part."`,
+        `@pell: "The door was warm. I put my ear to it. They were singing on the other side. Voices I knew; Almoners, I think. The Litany of the Lit Road, the funeral hymn, very soft. And under the singing there was another sound."`,
         `He stops. He picks up the beer. He puts it down again.`,
-        `@pell: "Do you know what a child sounds like when they're breathing out for a very long time? Longer than lungs go. As if something were drawing it out of them, like thread off a spool?" His hands are flat on the table. "It went on for the length of the hymn. And then the singing stopped, and so did the breathing, and I heard the Abbess say, quite cheerfully, *There. That's another*. The way you'd say it shelling peas."`,
-        `@pell: "I went back up the stair. I got very drunk. And the next week I asked her. Like a fool. Like a *priest*."`
+        `@pell: "Do you know what a child sounds like when they're breathing out for a very long time? Longer than lungs go. As if something were drawing it out of them, like thread off a spool?" His hands are flat on the table. "It went on for the length of the hymn. And then the singing stopped, and so did the breathing, and a woman said, quite cheerfully, *There. That's another*. The way you'd say it shelling peas." He looks at his hands. "I have spent two years telling myself I didn't know the voice."`,
+        `@pell: "I went back up the stair. I got very drunk. And in the morning I asked the Abbess what was behind that door. Like a fool. Like a *priest*."`
       ],
-      fx: { set: { e2_pell_heard: 1 }, bond: { pell: 1 } },
+      fx: { set: { e2_pell_heard: 1 } },
       choices: [
         { t: `"You've been carrying that alone for two years."`, go: 't_pell_3', fx: { bond: { pell: 1 } } },
         { t: `"Why didn't you go to the Marshal? Lord Varane? Anyone?"`, go: 't_pell_3b' }
@@ -2280,11 +2130,11 @@ TITHE.episode({
     },
     t_pell_3b: {
       text: [
-        `@pell: "I did." He laughs. "I went to the Marshal. He was very kind. He gave me a silver and told me to sleep it off, and the next morning I found my star had been unpicked. *Overnight*, my friend. Ser Konrad works very fast when he's being kind."`,
+        `@pell: "I did." He laughs. "That same afternoon, with my star already unpicked and in my pocket. The Marshal was very kind. He gave me a silver and told me to sleep it off, and by evening every tavern on the Stair knew Brother Pell had been put out for drink. Ser Konrad works very fast when he's being kind."`,
         `He looks at you.`,
         `@pell: "You took his coin, or you didn't; it's none of my business. But I'd count your fingers after you shake his hand."`
       ],
-      fx: { set: { e2_pell_hask: 1 }, bond: { pell: 1 } },
+      fx: { set: { e2_pell_hask: 1 } },
       next: 't_pell_3'
     },
     t_pell_3: {
@@ -2292,7 +2142,7 @@ TITHE.episode({
         `He pushes the beer across the table to you.`,
         `@pell: "There. I've said it out loud to somebody now. It's yours as much as mine." He sits back. He looks ten years younger and very tired. "Do you know, I feel better? Isn't that awful. A child breathes out for the length of a hymn and I feel *better* because I told a sellsword about it in a tavern."`,
         `@ansel: "It's not awful. It's a report."`,
-        `@pell: "A report." He tries the word. "Yes. All right. I'll write it down, then. All of it. In the back of Mother's book, where the pages are blank." He smiles. "Somebody ought to keep the roll."`
+        `@pell: "A report." He tries the word. "Yes. All right. I'll write it down, then. All of it. In the back of the book, where the pages are blank." He smiles. "Somebody ought to keep the roll."`
       ],
       fx: { set: { e2_pell_report: 1 } },
       end: true
@@ -2326,7 +2176,7 @@ TITHE.episode({
         `@hob: "Sergeant. Can I ask you something? What were they like? The Red Company? Before."`
       ],
       choices: [
-        { t: `Tell him the truth. Mostly hungry, mostly frightened, mostly kind to each other. The best men you ever knew.`, go: 't_hob_3', fx: { bond: { hob: 1 } } },
+        { t: `Tell him the truth. Mostly hungry, mostly frightened, mostly kind to each other. The best men you ever knew.`, go: 't_hob_3' },
         { t: `"Dead, Hob. That's what they're like. Mind your feet."`, go: 't_hob_3b' }
       ]
     },
@@ -2377,16 +2227,17 @@ TITHE.episode({
         `It's a joke. She laughs at it. A beat late, but she laughs.`,
         `@tamsin: "She's not a witch. She's a *midwife*. And everybody's interested in you, Sergeant. You came back from the dead. That's gossip for a year in the fen."`
       ],
-      fx: { bond: { tamsin: 1 }, set: { e2_tam_gran: 1 } },
+      fx: { set: { e2_tam_gran: 1 } },
       next: 't_tam_3'
     },
     t_tam_eels: {
       text: [
         `@tamsin: "Right. So. My cousin Abb has a weir off Coot's Ferry, and this year he caught an eel so big it ate his dog. Not a little dog. A *proper* dog. And Abb, who is an idiot, decides he's going to get the dog back."`,
-        `It goes on for some time. It involves a borrowed boat, a priest from Coot's Ferry, a pig-bladder, the eel, the dog (alive, deeply offended), and a lot of shouting in fen-talk which she does all the voices for. By the end you're leaning on the parapet laughing, really laughing, helpless with it, and she's watching you laugh with an odd, still expression, like someone watching a bird land close by and trying not to frighten it off.`,
-        `@tamsin: "There," she says softly. "Knew you had one in you."`
+        `It goes on for some time. It involves a borrowed boat, a priest from Coot's Ferry, a pig-bladder, the eel, the dog (alive, deeply offended), and a lot of shouting in fen-talk which she does all the voices for. By the end you're leaning on the parapet with your face in your hand and something shaking in your chest that hasn't got out yet. It gets as far as your throat. Then it stops, the way it always stops, and you're only breathing hard.`,
+        `She watches it not happen. She doesn't look disappointed. She looks like a poacher who has seen the deer and is in no hurry at all.`,
+        `@tamsin: "Nearly," she says. "I'll get you yet, Sergeant."`
       ],
-      fx: { bond: { tamsin: 2 }, set: { e2_tam_laugh: 1 } },
+      fx: { set: { e2_tam_laugh: 1 } },
       next: 't_tam_3'
     },
     t_tam_3: {
@@ -2414,7 +2265,6 @@ TITHE.episode({
         `She stays anyway, until it's dark. When she goes, she leaves you the sack. Inside: a pair of fen-wool gloves, thick, grey, clumsily knitted, the left one with an extra layer sewn into the palm.`,
         `> She noticed. Of course she noticed. She notices things. It's a curse.`
       ],
-      fx: { bond: { tamsin: 1 } },
       end: true
     },
 
@@ -2423,7 +2273,7 @@ TITHE.episode({
       text: [
         `You knock twice. You say you've come about the candles. Brisket lets you in with a look that could curdle milk and goes away muttering about *men in the archive at all hours*.`,
         `Isolde is where she always is: under the one candle, three ledgers open. She doesn't look up until she's blotted the line.`,
-        { if: "f.e2_annet_where!=='lanternhold'", t: `@isolde: "Annet ate a whole bowl of porridge today," she says. "By herself. Brisket put the spoon in her hand and she lifted it. Brisket wept. I've never seen Brisket weep. It was alarming, like watching a castle wall cry."` },
+        { if: "f.e2_annet_where!=='lanternhold'", t: `@isolde: "Annet ate a whole bowl of porridge three days ago," she says. "By herself. Brisket put the spoon in her hand and she lifted it, and Brisket wept." She turns a page she isn't reading. "The next night the Abbess came to supper and spoke to my father about *proper care*, very kindly. Yesterday he signed the paper. She is in the white ward now. I go every morning. My father and I are being extremely polite to one another."` },
         { if: "f.e2_annet_where==='lanternhold'", t: `@isolde: "Annet is eating well," she says. "That's what the Lamplighters tell me, at any rate. I'm not allowed to see her. The ward is closed to visitors this month. A fever." She turns a page she isn't reading. "Brisket goes up every morning and stands at the gate anyway."` }
       ],
       choices: [
@@ -2433,23 +2283,23 @@ TITHE.episode({
     },
     t_iso_sleep: {
       text: [
-        `@isolde: "I should do a great many things. Marry a prince, for one." She says it lightly, and the lightness is a knife laid flat on the table. "Prince Cassius. The betrothal's been signed since I was nineteen. He comes for the Feast of Lanterns to make it public. Then the Crown takes the March's debts, and the March, and me, in that order."`,
+        `@isolde: "I should do a great many things. Marry a prince, for one." She says it lightly, and the lightness is a knife laid flat on the table. "Prince Cassius. It was agreed when I was nineteen. He comes for the Feast of Lanterns to sign it. Then the Crown takes the March's debts, and the March, and me, in that order."`,
         `@isolde: "So no. I don't sleep much. I count."`
       ],
-      fx: { set: { e2_iso_cassius: 1 }, bond: { isolde: 1 } },
+      fx: { set: { e2_iso_cassius: 1 } },
       next: 't_iso_2'
     },
     t_iso_2: {
       text: [
         `She turns a ledger toward you. The Lanternhold's accounts with the house, three years of them.`,
-        `@isolde: "I've been looking for your tally. Look. Every spring and every autumn, the Lanternhold forgives a little more of my father's loan. It costs them hundreds. And every spring and every autumn, the Marshal's men take a cart north to Saltdown with 'labour for the mines', and the mines' output goes *up*." She traces the columns with an ink-stained finger. "It's not proof. It's arithmetic. But it's very tidy arithmetic."`,
+        `@isolde: "I've been looking for your tally. Look. Every spring and every autumn, the Lanternhold forgives a little more of my father's loan. It costs them hundreds. And every spring and every autumn, the Marshal's men take carts north to Saltdown with 'labour for the mines'. More carts every year. More mouths. And *less* salt." She traces the columns with an ink-stained finger. "It's not proof. It's arithmetic. But it's very tidy arithmetic."`,
         `She looks up at you.`,
         `@isolde: "I don't have anyone else to say that to. Do you understand? I've had this sum in my head for a year, and there was nobody in the whole of Harrowgate I could say it to out loud."`
       ],
       choices: [
-        { t: `"Say it to me. Any time. That's what I'm for."`, go: 't_iso_3', fx: { bond: { isolde: 2 } } },
-        { t: `"Be careful who else sees that ledger, my lady."`, go: 't_iso_3b', fx: { bond: { isolde: 1 } } },
-        { t: `"Show me how you read them. The ledgers."`, go: 't_iso_3c', fx: { bond: { isolde: 1 }, set: { e2_iso_lesson: 1 } } }
+        { t: `"Say it to me. Any time. That's what I'm for."`, go: 't_iso_3', fx: { bond: { isolde: 1 } } },
+        { t: `"Be careful who else sees that ledger, my lady."`, go: 't_iso_3b' },
+        { t: `"Show me how you read them. The ledgers."`, go: 't_iso_3c', fx: { set: { e2_iso_lesson: 1 } } }
       ]
     },
     t_iso_3: {

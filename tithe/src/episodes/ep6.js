@@ -28,14 +28,14 @@ TITHE.episode({
     { t: 'In the Saltdown deep, a grey man with a ledger looked at Ansel, turned a page, and said: "You\'re not here."' },
     { if: 'f.e4_ledger', t: 'The Saltdown ledger: emptied men, delivered from the Lanternhold, priced by the head.' },
     { t: 'At the Feast of Lanterns, Prince Cassius came to claim Lady Isolde. Men in Lamp robes came to kill her father. Ansel stopped them.' },
-    { if: "f.e5_isolde_kiss==='kissed'", t: 'In the archive, by one candle, Isolde kissed him. Then she stopped.' },
+    { if: "f.e5_isolde_kiss==='kissed'", t: 'In the archive, by one candle, he kissed Lady Isolde, and she kissed him back. Then someone knocked.' },
     { if: "f.e5_isolde_kiss==='almost'", t: 'In the archive, by one candle, Isolde almost kissed him.' },
     { if: 'f.e5_delphine', t: 'The Prince\'s courtesan took him to bed, and asked him a great many questions.' },
-    { t: 'A thousand lanterns went up to the stars. One star flickered.' }
+    { t: 'Ten thousand lanterns went up to the stars. One star flickered.' }
   ],
   nextTime: [
-    '"My lord Varane is dead. And the man who did it is the dead sergeant."',
-    'Every gate in Harrowgate shut at once.',
+    '"My lord Varane is dead, and the man who did it is the dead sergeant!"',
+    'A horn in the Bottom, answered from the Market Stair. Then the long iron groan of the portcullis.',
     '"I\'ve got you, Sergeant. I\'ve got you. Come on. I know somewhere safe."'
   ],
   nodes: {
@@ -101,11 +101,11 @@ TITHE.episode({
     hen1: {
       loc: 'The Gutted Hen — three days after the Feast of Lanterns',
       text: [
-        `Harrowgate is still sweeping up the Feast. Paper lantern-husks in the gutters, wax on the cobbles, a pilgrim asleep in the Hen\'s horse-trough with his star pinned on upside down.`,
+        `Harrowgate is still sweeping up the Feast, and the first hard frost has come down on top of the mess. Paper lantern-husks in the gutters, wax on the cobbles, a pilgrim asleep in the Hen\'s horse-trough with his star pinned on upside down.`,
         `You have not slept well since. Every night you go to the window and look, once, quick, the way you\'d touch a bad tooth. The star that flickered is still there. You think it is still there.`,
         { if: 'f.e5_delphine', t: `Your good shirt still smells of the Prince\'s courtesan\'s rose-oil. Mags has noticed. Mags has said nothing in a way that is louder than talking.` },
-        { if: "f.e5_isolde_kiss==='kissed'", t: `And the archive. The shelf at your back, the smell of old vellum, her mouth. Then her hand flat on your chest, pushing, gently, and her whispered *no*, which was not said to you.` },
-        { if: "f.e5_isolde_kiss==='almost'", t: `And the archive. One candle. An inch between you, less. Footsteps on the stair, and her stepping back, and her face closing like a ledger.` },
+        { if: "f.e5_isolde_kiss==='kissed'", t: `And the archive. The shelf at your back, the smell of old vellum, her mouth. Her hand flat on your chest, not pushing, holding on. Then her whispered *oh, no*, which was not said to you.` },
+        { if: "f.e5_isolde_kiss==='almost'", t: `And the archive. One candle. Her forehead on yours, a finger's width, less. Three polite knocks at the door, and her face closing like a ledger.` },
         `Tamsin comes down the stairs eating your breakfast.`,
         '@tamsin: "Letter for you. Wax seal, little boar on it, very posh. I didn\'t open it." She hands it over. The seal has been lifted with a hot knife and pressed back down. "I didn\'t open it *much*."',
         '@ansel: "You can\'t read."',
@@ -140,7 +140,6 @@ TITHE.episode({
         '@ansel: "Do they find any missing?"',
         '@tamsin: "Never. That\'s what worries them."'
       ],
-      fx: { bond: { tamsin: 1 }, quiet: true },
       next: 'keep1'
     },
     keep1: {
@@ -153,7 +152,7 @@ TITHE.episode({
         '@isolde: "Master Dray. Thank you for coming by the back. My father\'s house is full of the Prince\'s people and they all have ears, and some of them have very good ones."',
         '@isolde: "At dinner last night His Highness asked about the barrows. He *collects*. He thought a First King\'s crown would make a charming wedding gift from the March to the Crown. My father said yes before the soup was cleared."',
         `She turns a ledger toward you. A survey map: the Barrowfields east of the fen, the downs drawn as little humps like sleeping sheep, and the largest marked in faded red. *The Nine Crowns.*`,
-        '@isolde: "It\'s on our land. Five men have been found dead on its slope this month. Grave-robbers. They sit in a row, facing west, with frost on them, in October. Nobody will go. Sixty silver to go. Eighty if you bring back a crown."'
+        '@isolde: "It\'s on our land. Five men have been found dead on its slope this month. Grave-robbers. They sit in a row, facing west, with frost on them, and no frost anywhere else on the hill. Nobody will go. Sixty silver to go. Eighty if you bring back a crown."'
       ],
       fx: { know: { cast: ['isolde'] } },
       choices: [
@@ -170,14 +169,14 @@ TITHE.episode({
         `She stops. You watch her decide not to.`,
         '@isolde: "It doesn\'t matter what I want. That\'s the first thing they teach you, and the only thing I was ever slow to learn. Bring back a crown, Master Dray, if you can do it and live. If you can\'t, come back without one. I\'ll think of something to tell him."'
       ],
-      fx: { bond: { isolde: 1 } },
+      fx: { bond: { isolde: 1 }, set: { e6_isolde_want: 1 } },
       next: 'keep1b'
     },
     keep_archive: {
       text: [
         '@isolde: "Nothing happened in the archive."',
         `You look at her. She looks at the ledger. A clerk goes past the door with an armful of rolls and she waits, perfectly composed, until his steps are gone.`,
-        '@isolde: "...Something very nearly happened in the archive. And I am marrying a prince at midsummer, and you are going to go and dig up a king. Let us both do our work, and be very good at it, and not be stupid. One of us has to not be stupid."'
+        '@isolde: "...Something very nearly happened in the archive. And I am marrying a prince at midwinter, and you are going to go and dig up a king. Let us both do our work, and be very good at it, and not be stupid. One of us has to not be stupid."'
       ],
       choices: [
         { t: '"It happened. You know it did."', go: 'keep_arch_push' },
@@ -190,7 +189,7 @@ TITHE.episode({
         '@isolde: "Yes," she says, very quietly, to the map of the downs. "It did."',
         'She does not say anything else. She doesn\'t need to.'
       ],
-      fx: { bond: { isolde: 1 }, quiet: true },
+      fx: { set: { e6_isolde_admitted: 1 } },
       next: 'keep1b'
     },
     keep_arch_let: {
@@ -198,7 +197,6 @@ TITHE.episode({
         `Something in her shoulders comes down an inch. It is not quite gratitude. It is the face of someone who has been holding a heavy thing out at arm\'s length and has been allowed, briefly, to rest it on a table.`,
         '@isolde: "Thank you," she says. And then, drily, because she cannot help it: "You\'re very good at your work. It\'s one of the inconvenient things about you."'
       ],
-      fx: { bond: { isolde: 1 }, quiet: true },
       next: 'keep1b'
     },
     keep_hask: {
@@ -267,7 +265,6 @@ TITHE.episode({
         '@pell: "He\'s a child," says Pell quietly, at your elbow, and presses his notes into your hand. "Downs-hand script. A hand pressed flat means *hold*. Bring him back, Ansel."',
         { if: 'f.e4_ulla', t: '@ulla: "Let the pup bleed a little," Ulla says. "It\'s how they grow."' }
       ],
-      fx: { bond: { hob: 1 } },
       next: 'road1'
     },
 
@@ -328,7 +325,7 @@ TITHE.episode({
         `She looks at the five smiling faces with the frost on them and doesn\'t answer.`
       ],
       choices: [
-        { t: 'Wait. Let them feed.', go: 'rob_wait', fx: { set: { e6_gleaners: 'fed' }, bond: { tamsin: 1 }, rep: { fen: 1 } } },
+        { t: 'Wait. Let them feed.', go: 'rob_wait', fx: { set: { e6_gleaners: 'fed' }, rep: { fen: 1 } } },
         { t: '"They\'re men. Somebody\'s sons." Drive the ghouls off.', go: 'rob_fight', fx: { set: { e6_gleaners: 'fought' } } }
       ]
     },
@@ -380,14 +377,15 @@ TITHE.episode({
     jory1: {
       text: [
         `The voice in the thorn tree belongs to a lad of twenty with a ferret\'s face and a rope round his waist: he has tied himself to the trunk. He has been there, by the smell, some while.`,
-        '@narrator: "Jory," he says, as you cut him down. "Jory Tench. Them\'s my uncles. And my cousin Abe, and Wat Mallow, and Dickon, who owed me four silver." He looks at the row of dead and away again fast. "We went in four nights back. Past the door. There\'s a long table in there, with folk sat at it. Old folk. *Dead* folk. We took a cup, that\'s all. One cup."',
+        '@narrator: "Perkin," he says, as you cut him down. "Perkin Tench. Them\'s my uncles. And my cousin Abe, and Hew Mallow, and Lob, who owed me four silver." He looks at the row of dead and away again fast. "We went in four nights back. Past the door. There\'s a long table in there, with folk sat at it. Old folk. *Dead* folk. We took a cup, that\'s all. One cup."',
+        { if: "done('e5_c_dig')", t: '@narrator: "And the Thrale boy took a mask and run off the first night, and he\'s the clever one, ain\'t he. He\'s the only clever one."' },
         '@narrator: "That night Uncle Sim got up in his sleep and walked back in. In the morning he was sat out here. Smiling. Next night, Abe. Every night, one. I tied myself to the tree so I couldn\'t walk." He shows you his wrists, rope-raw. "I been awake three nights, mister. I can\'t do another."',
         `From inside his shirt he takes a cup. Beaten bronze, green with age, with a ring of little men around the rim, dancing, holding hands.`,
         `Thunder, close, walking up the downs. The first rain hits like flung gravel.`
       ],
       fx: { give: { silver_oil: 1 } },
       choices: [
-        { t: '"Give me the cup. Go home, Jory. Run."', go: 'jory_home', fx: { set: { e6_jory: 'home' } } },
+        { t: '"Give me the cup. Go home, Perkin. Run."', go: 'jory_home', fx: { set: { e6_jory: 'home' } } },
         { t: '"Keep your cup. Go, before the storm takes you."', go: 'jory_go', fx: { set: { e6_jory: 'sat' } } },
         { t: '"You\'ve been inside. You\'re coming in with us. Show us the way."', go: 'jory_come', fx: { set: { e6_jory: 'crushed' } } }
       ]
@@ -435,7 +433,7 @@ TITHE.episode({
     },
     collapse_hold: {
       text: [
-        `It is stupid, and it works, for four heartbeats. The lintel comes down on your shoulders like the hand of God and you hold it, roaring, while they go past you into the passage, and then you let go and dive, and the hill comes down where you were standing.`
+        `It is stupid, and it works, for four heartbeats. The lintel comes down on your shoulders like a giant's hand and you hold it, roaring, while they go past you into the passage, and then you let go and dive, and the hill comes down where you were standing.`
       ],
       fx: { hp: -6, xp: 20 },
       next: 'collapse2'
@@ -452,7 +450,7 @@ TITHE.episode({
         `You take her round the waist and go down with her under you and your arms over her head. She swears into your collarbone. Chalk and stones the size of loaves come down over your back and legs, and keep coming, and then stop.`,
         `She is very still under you. Then she says, muffled: "Get *off*, you great ox," and you do, and she is laughing, a little hysterically, and so are you.`
       ],
-      fx: { hp: -4, bond: { tamsin: 1 }, quiet: true },
+      fx: { hp: -4, set: { e6_shielded_tam: 1 } },
       next: 'collapse2'
     },
     collapse_fail: {
@@ -465,7 +463,7 @@ TITHE.episode({
     collapse2: {
       text: [
         `Dust. Coughing. Somebody\'s hands on your face in the black, checking, then gone. A flint strikes, and strikes again, and a candle comes up in Tamsin\'s fist, and the world comes back: the passage, the corbelled stones, the three of you, white with chalk like the priests in a story.`,
-        { if: "f.e6_jory==='crushed'", t: `Three. Not four. Jory Tench was behind you. Where he was, there is a slope of wet chalk and rubble that fills the passage floor to roof. For a little while you can hear him under it. You dig, with your hands, all of you. Then you can\'t hear him, and you keep digging, and then Tamsin puts her hand on your arm.` },
+        { if: "f.e6_jory==='crushed'", t: `Three. Not four. Perkin Tench was behind you. Where he was, there is a slope of wet chalk and rubble that fills the passage floor to roof. For a little while you can hear him under it. You dig, with your hands, all of you. Then you can\'t hear him, and you keep digging, and then Tamsin puts her hand on your arm.` },
         `Behind you, where the door was, the hill has come in. Not a fall: the *hill*, wet chalk and turf and stone packed solid. The storm is a rumour on the far side of it.`,
         `No draught. Tamsin wets a finger and holds it up and the candle-flame stands perfectly straight.`
       ],
@@ -475,10 +473,11 @@ TITHE.episode({
     sealed1: {
       text: [
         `You take stock the way you would on a bad night in a siege. One lantern, oil for six hours, eight if you\'re mean with it. Four candles. Flint and steel. Two water-skins. Tamsin\'s skin of blackberry wine, half full. Forty feet of rope. Widow.`,
-        { if: "f.e6_companion==='pell'", t: 'Pell has a flask, a prayer-book and nine pages of notes, which he is holding against his chest like a breastplate. "The surveyor— in a barrow this size— a day of air," he says. "Perhaps. If we don\'t, ah. Breathe very much."' },
+        { if: "f.e6_companion==='pell' && f.e2_saved_book", t: 'Pell has a flask, his mother\'s charred prayer-book and nine pages of notes, which he is holding against his chest like a breastplate. "The surveyor— in a barrow this size— a day of air," he says. "Perhaps. If we don\'t, ah. Breathe very much."' },
+        { if: "f.e6_companion==='pell' && !f.e2_saved_book", t: 'Pell has a flask, the pedlar\'s Book of Embers he hates and nine pages of notes, which he is holding against his chest like a breastplate. "The surveyor— in a barrow this size— a day of air," he says. "Perhaps. If we don\'t, ah. Breathe very much."' },
         { if: "f.e6_companion==='ulla'", t: '@ulla: "Air for a day," says Ulla, who has sat out two roof-falls in the Saltdown galleries. "Less if we talk. Less if we light things. Less if the priest was here, he never stops." She pats the rubble like a horse. "We dig, it falls. We wait, we choke. I hate both."' },
         { if: "f.e6_companion==='hob'", t: 'Hob has his back flat to the wall, breathing very fast and very shallow, the candle shaking in his eyes. "It\'s all right," he keeps saying. "It\'s all right. It\'s all right." Nobody has asked him.' },
-        `Behind you, the hill. Ahead, the passage slopes down into the dark, and somewhere in there, by Jory\'s account, the dead are sitting at a table.`
+        `Behind you, the hill. Ahead, the passage slopes down into the dark, and somewhere in there, by Perkin\'s account, the dead are sitting at a table.`
       ],
       choices: [
         { t: 'Try to dig out anyway.', check: { stat: 'might', dc: 16, pass: 'dig_pass', fail: 'dig_fail' } },
@@ -535,7 +534,7 @@ TITHE.episode({
         `All along the table, the dead sigh. You hear it. A dry, contented sound, like a congregation sitting down.`,
         `All but one. The newest, a big lad with a broken nose and frost in his ginger stubble, a month dead at most. He was never at the table when the cup was. He hasn\'t learned his manners. His head turns toward you, and keeps turning, further than a neck turns, and he gets up.`
       ],
-      fx: { xp: 30, bond: { tamsin: 1 }, quiet: true },
+      fx: { xp: 30, set: { e6_cup_returned: 1 } },
       next: 'hall_fight1'
     },
     hall_fight1: {
@@ -615,11 +614,11 @@ TITHE.episode({
     carv_pell: {
       text: [
         `Pell has his nose an inch from the stone and the candle so close he is singeing his eyebrows. His lips are moving.`,
-        '@pell: "Downs-hand. Oh, it\'s *clear*, it\'s beautifully clear, whoever cut this had a— *Here at the Ford the Nine knelt. And the Singers came down to the stone.*" His finger moves along a line of marks like knife-nicks. "*And said: give us your dead, and we will give you crowns that do not fall.*"',
-        `He stops. He goes on, more slowly.`,
-        '@pell: "*And the dead shall go up, and be sung. And She shall not have them. And She shall sleep.*"',
+        '@pell: "Downs-hand. Oh, it\'s *clear*, whoever cut this had a— *Here at the Ford the Nine knelt. And the Singers came down to the stone.*" His finger moves along a line of marks like knife-nicks. "*And said: give us your*— " The line runs into a crack where the face of the stone has flaked away. He tries the next. "*...that do not fall...* *...shall go up, and be...*" Gone again. He makes a small, frustrated sound, like a man patting his pockets.',
+        `At the very bottom of the panel, under the chains, the cutting is deeper. Someone made sure this part would last.`,
+        '@pell: "*And She shall sleep.*"',
         `The candle shakes. He puts a fingertip on one of the carved stars, on its open mouth, very gently, the way you would touch a dog you were not sure of.`,
-        '@pell: "Singers. The Book of Embers calls the Saints *the Choir of Heaven*. I sang the Evening Lamp to them every night for forty years." A laugh that isn\'t one. "They have *mouths*, Ansel."'
+        '@pell: "Singers. The Book of Embers calls the Saints *the Choir of Heaven*. I sang the Evening Lamp to them every night for twenty-two years." A laugh that isn\'t one. "They have *mouths*, Ansel."'
       ],
       choices: [
         { t: '"What\'s the word under the chains?"', go: 'pell_mother' },
@@ -706,7 +705,7 @@ TITHE.episode({
         '@hob: "Sergeant," he says, "are the stars *eating* them?"',
         `Nobody answers him. Nobody can think of anything to say that isn\'t a lie, and he would know.`
       ],
-      fx: { bond: { hob: 1 }, quiet: true },
+      fx: { set: { e6_hob_asked: 1 } },
       next: 'carv_end'
     },
     carv_end: {
@@ -729,7 +728,7 @@ TITHE.episode({
       ],
       fx: { know: { beast: ['wight'] } },
       choices: [
-        { t: 'Salute back, the Red Company way: Widow up, crossguard to your lips, the way Sim told Jory.', if: 'f.e6_salute_known', go: 'sworn_salute' },
+        { t: 'Salute back, the Red Company way: Widow up, crossguard to your lips, the way Sim told Perkin.', if: 'f.e6_salute_known', go: 'sworn_salute' },
         { t: 'Salute back. Read them. Do it right.', if: '!f.e6_salute_known', check: { stat: 'wits', dc: 14, uncanny: true, pass: 'sworn_salute', fail: 'sworn_bad' } },
         { t: 'Don\'t wait for them to finish. Go at the nearest.', go: 'sworn_fight2' }
       ]
@@ -822,7 +821,7 @@ TITHE.episode({
     rest_pell: {
       text: [
         `Pell sits down on the bottom step with his knees up like a schoolboy and drinks the last of his flask in one long swallow. Then he holds it upside down over his open mouth and shakes it, and nothing comes, and he keeps holding it there.`,
-        '@pell: "Forty years," he says, to the flask. "Every evening, at the Lamp. I lifted my face and I sang to them. *Saints receive us. Saints keep us. Take us up.*"',
+        '@pell: "Twenty-two years," he says, to the flask. "Every evening, at the Lamp. I lifted my face and I sang to them. *Saints receive us. Saints keep us. Take us up.*"',
         `He laughs. It is the worst sound you have heard all night, and you have heard the sworn get up.`,
         '@pell: "*Take us up.* I asked them, Ansel. When my mother died. I held her hand on the pyre while they lit it, which you are not supposed to do, it\'s very bad for the hand, and I *asked* them. Take her up. Please. Take her up." He turns the flask over. "And they did. Didn\'t they. They did exactly what I asked."'
       ],
@@ -836,16 +835,15 @@ TITHE.episode({
       text: [
         '@pell: "That\'s kind. You\'re a kind man, under the smell." He pats your knee. "But I asked what happens in the Lanternhold crypt, and they threw me out into the street for it with my books after me. I know what an answer looks like. It looks like *that*." He nods back up the stair, toward the gallery. "It always looks exactly like the thing you were afraid of."'
       ],
-      fx: { bond: { pell: 1 } },
       next: 'pell_end'
     },
     pell_ask: {
       text: [
         `He is quiet for a long time. You think he hasn\'t heard. Then he straightens, slowly, all the way, a thing you have never once seen him do.`,
         '@pell: "No," he says. "Saints help me. No." He hears what he said, and laughs, properly this time, wet-eyed. "Well. *Someone* help me."',
-        '@pell: "If the Saints have mouths, somebody ought to be writing it down. Somebody ought to be *counting*." He looks at you. "You keep a roll, don\'t you. Of your dead. I think I\'d like to start one."'
+        { if: 'f.e2_pell_report', t: '@pell: "If the Saints have mouths, somebody ought to be writing it down." He takes a fold of paper out of his coat, then another, then a whole fat sheaf, forty pages in a small furious hand, the ink going brown at the oldest edges. "I kept it. Since the Hen. Everyone who went up the Lanternhold steps and didn\'t come down the same." He looks at it as if someone else wrote it. "I didn\'t know what I was keeping it for."', else: '@pell: "If the Saints have mouths, somebody ought to be writing it down. Somebody ought to be *counting*." He looks at you. "You keep a roll, don\'t you. Of your dead. I think I\'d like to start one."' }
       ],
-      fx: { bond: { pell: 2 }, set: { e6_pell_resolve: 1 } },
+      fx: { bond: { pell: 1 }, set: { e6_pell_resolve: 1 } },
       next: 'pell_end'
     },
     pell_sit: {
@@ -853,7 +851,7 @@ TITHE.episode({
         `You take the flask. He lets you. You sit on the step beside him with your shoulder against his, the two of you wedged in like a pair of boots on a shelf, and you put the flask to your own lips, and it is empty, and you drink from it anyway, and so does he, in turn, solemnly, nothing at all.`,
         '@pell: "That," says Pell eventually, "is the most theological thing that has happened to me in years."'
       ],
-      fx: { bond: { pell: 2 } },
+      fx: { bond: { pell: 1 } },
       next: 'pell_end'
     },
     pell_end: {
@@ -878,11 +876,10 @@ TITHE.episode({
     },
     ulla_sister: {
       text: [
-        '@ulla: "Hild\'s." She doesn\'t look up. "My sister. Two years younger. Laughed like a goose. Best net-mender in the fjord. She did my hair with this every morning till I was fifteen and big enough to kill her if she pulled."',
-        '@ulla: "The chieftain\'s son, Ragnvald, did a thing to her. I won\'t tell you what. It\'s hers to tell, and she won\'t, and that\'s her right." The comb turns over. "I put my axe in his head at his father\'s table, in front of the whole hall, in the middle of the toast. I\'d do it again every morning before breakfast."',
-        '@ulla: "Then I went home, and Hild wouldn\'t look at me. She said, *now I have to see your face every day too, and remember it.*" Ulla smiles at the comb. "So I left. It was the last thing I could do for her. She can\'t write. Nobody\'s told me she\'s dead. That\'s my good news, every year."'
+        '@ulla: "Sigrun\'s." She doesn\'t look up. "Six years younger. A weaver; she could make a cloak out of a cobweb and a bad mood. She did my hair with this every morning till I was fifteen and big enough to kill her if she pulled."',
+        '@ulla: "She writes once a year. The letters come eight months late." The comb turns over in her fingers, and the three missing teeth go past like a gap in a fence. "The comb is for the years the letter doesn\'t come. In a hole like this, I count its teeth. Seventeen. Same as last time. Good."'
       ],
-      fx: { bond: { ulla: 2 }, set: { e6_ulla_hild: 1 } },
+      fx: { bond: { ulla: 1 }, set: { e6_ulla_comb: 1 } },
       next: 'ulla_end'
     },
     ulla_regret: {
@@ -898,7 +895,6 @@ TITHE.episode({
         '@ulla: "My gods are drunk and stupid and they like a good fight," she says. "If it turns out they\'re liars too, well. They\'re liars I like."',
         `Then, lower, to the comb: "My sister prays to them. Every night, I\'d bet. So they had better be there. They had *better*."`
       ],
-      fx: { bond: { ulla: 1 } },
       next: 'ulla_end'
     },
     ulla_end: {
@@ -928,7 +924,7 @@ TITHE.episode({
         '@hob: "Who taught you that?"',
         '@ansel: "A dead man. He\'d be glad it\'s still working."'
       ],
-      fx: { bond: { hob: 1 } },
+      fx: { set: { e6_hob_breath: 1 } },
       next: 'hob_squeeze'
     },
     hob_scared: {
@@ -936,9 +932,9 @@ TITHE.episode({
         `He stares at you as if you had told him the sun was a cheese.`,
         '@hob: "*You?*"',
         '@ansel: "Every day. Every morning. You just don\'t let your hands find out about it."',
-        `He looks at your hands. He has seen them in the mornings, you realise; everybody at the Hen has. He looks back up at your face, and something steadies in his.`
+        `He looks at your hands. He has seen them in the mornings, you realise; everybody at the Hen has. He looks back up at your face, and his own steadies.`
       ],
-      fx: { bond: { hob: 1 } },
+      fx: { set: { e6_hob_breath: 1 } },
       next: 'hob_squeeze'
     },
     hob_hard: {
@@ -967,9 +963,9 @@ TITHE.episode({
         `A long time. Too long. Scraping, a whimper, scraping. You count. Tamsin counts with you, under her breath.`,
         '@hob: "*Sergeant!*" Far off, muffled, astonished. "It opens out! There\'s room! I did it, I— there\'s a big— there\'s holes in the floor, all over, like burrows, and there\'s—" A pause. "Sergeant. Something\'s coming up out of them."',
         '@hob: "*SERGEANT!*"',
-        `You go through the crack the way a cork goes into a bottle: something tears, you don\'t care. Tamsin comes after you like an eel.`
+        `You go through the crack like a man being born, badly and all at once: something tears, you don\'t care. Tamsin comes after you like an eel.`
       ],
-      fx: { bond: { hob: 2 }, set: { e6_hob_brave: 1 }, hp: -3 },
+      fx: { bond: { hob: 1 }, set: { e6_hob_brave: 1 }, hp: -3 },
       next: 'lower2'
     },
     hob_self: {
@@ -1024,7 +1020,7 @@ TITHE.episode({
       ],
       fx: { heal: 15, xp: 30, quest: { id: 'e6_barrow', note: 'Ghouls came up out of the earth beneath the barrow. Not for the dead. For you.' } },
       choices: [
-        { t: '"I promise."', go: 'crown1', fx: { set: { e6_promised: 1 }, bond: { tamsin: 1 }, quiet: true } },
+        { t: '"I promise."', go: 'crown1', fx: { set: { e6_promised: 1 } } },
         { t: '"Why? What\'s down there?"', go: 'lower_why' }
       ]
     },
@@ -1045,7 +1041,7 @@ TITHE.episode({
         `In the floor, a disc of bronze the width of a cartwheel, green at the rim, polished at the centre to a dull red gleam by a thousand years of one hand. Over it, a stone slab. On the slab, sitting up, the king.`,
         `What is left of him is leather and bronze. The cuirass worked with oak leaves. The mask of a young man\'s face, beautiful, calm, with a crack across one cheek, and behind its eye-holes two cold lights like the sworn have, but brighter, and moving. His right hand is flat on the bronze plate. It has grown there. You can see where the leather of his fingers has run into the metal like roots into rock.`,
         `The plate is breathing. Slowly, hugely, up and down, a hair\'s width. You feel it in your boots.`,
-        '@hollin: "...*sixty-one, three hundred million and four hundred thousand and sixty-two*..." The voice is dry as a seed-husk, in a language that is almost yours, as if learned from people who were dying. "*...sixty-three. Sixty-four.*" The cold lights turn toward you. "Thieves. More thieves. Sit, sit, you are welcome, there is room at my table—"',
+        '@hollin: "...*three hundred million, four hundred thousand and sixty-one. Sixty-two*..." The voice is dry as a seed-husk, in a language that is almost yours, as if learned from people who were dying. "*...sixty-three. Sixty-four.*" The cold lights turn toward you. "Thieves. More thieves. Sit, sit, you are welcome, there is room at my table—"',
         `He stops. The lights fix on you and stay there.`,
         '@hollin: "...You are not written."'
       ],
@@ -1066,7 +1062,7 @@ TITHE.episode({
     },
     h_under: {
       text: [
-        '@hollin: "*Her.*" Very softly, the way you say the name of a sleeping child. "Hush. She dreams. She has dreamed a thousand years, and every night of it she reaches up for her children, and finds my hand in the way."',
+        '@hollin: "*Her.*" Very softly, the way you would say a name in a sickroom. "Hush. She dreams. She has dreamed a thousand years, and every night of it she reaches up for her children, and finds my hand in the way."',
         '@hollin: "Do you know how strong a mother is, thief? When she reaches for her children?" The plate lifts under his palm, a hair\'s width, and settles. "She is very strong."',
         { if: "f.e6_companion==='pell'", t: 'Pell has his prayer-book open and is not reading it. He is just holding it open, like a shield, or a door.' },
         `Tamsin has gone absolutely still beside you. Her lips are moving, without sound. You know the shape of the words by now. *Mothers below.*`
@@ -1110,7 +1106,7 @@ TITHE.episode({
       text: [
         '@ansel: "What happens, Hollin? If you let go. Tell me. Look at it."',
         `The lights go very small. For a long time he says nothing at all.`,
-        '@hollin: "She wakes," he says. "Not at once. She is slow. But she wakes. And she reaches up for her children, and there is nothing in the way, and she *finds* them." He is shaking. "And the Singers see her wake, and they are hungry, they were always hungry, and they come *down*— and the March— the downs— the whole Hearth between the two of them like a— like a—"',
+        '@hollin: "She wakes," he says. "Not at once. She is slow. But she wakes. And she reaches up for her children, and there is nothing in the way, and she *finds* them." He is shaking. "And the Singers— the hungry lights— they hear— and the March— the downs— between the two of them like a— like a—"',
         `He can\'t find the word. You can. You were at Corran\'s Ford. *Like a ford, between two volleys.*`,
         '@hollin: "I forgot," he whispers. "Gods. I had forgotten *why*."'
       ],
@@ -1296,13 +1292,13 @@ TITHE.episode({
     },
     dk_mother: {
       text: [
-        '@tamsin: "Brid Vell. Eel-wife. Sang worse than me, if you can credit it. Had a laugh you could hear across three weirs, and hands that smelled of fish and bog-myrtle whatever she did to them."',
+        '@tamsin: "Nessa Vell. Eel-wife. Sang worse than me, if you can credit it. Had a laugh you could hear across three weirs, and hands that smelled of fish and bog-myrtle whatever she did to them."',
         '@tamsin: "My brother came dead. Blue as a mussel shell. Perfect. Every fingernail." She turns the half-apple in her fingers. "She wouldn\'t burn him. She said he\'d never even been warm, why give him to the fire. So she took him out to the willow by the water at night and put him in the ground and left a bowl of milk. And Annis Croft from two houses down told the Lamplighter, for a tithe-penny."',
         '@tamsin: "Lampwardens came. They built it in the market at Gallowmere. They make the children stand at the front." Very evenly. "She didn\'t scream. I keep telling myself she didn\'t. I was nine. I don\'t know if it\'s true."',
         '@tamsin: "And after, my gran came. Walked into the market with the ashes still hot and took my hand and walked me out into the fen, and nobody stopped her. Nobody ever stops Gran."',
         { if: 'f.e1_saw_crow || f.e3_suspect_tam', t: `> *My gran.* Who nobody ever stops. Who gets crows at night with red thread on their legs. You think of a tiny toothless woman in a stilt-house in the fen, who knew your name before anyone told her. You don\'t say it. You hold it, the way she is holding the apple.` }
       ],
-      fx: { bond: { tamsin: 1 }, set: { e6_heard_brid: 1 } },
+      fx: { set: { e6_heard_brid: 1 } },
       next: 'dk_hub'
     },
     dk_gran: {
@@ -1312,19 +1308,19 @@ TITHE.episode({
         { if: 'f.e6_tam_slip', t: '@tamsin: "I said too much, in the gallery." Not quite a question. "Gran\'s stories. They get into you."' },
         '@tamsin: "She says a lot of things." A small shrug against your arm. "Some of them are even true. That\'s the trouble with Gran."'
       ],
-      fx: { bond: { tamsin: 1 }, quiet: true },
+      fx: { set: { e6_heard_gran: 1 } },
       next: 'dk_hub'
     },
     dk_song: {
       text: [
-        `She sings it. All eleven verses, in a whisper, which is somehow worse than loud: every wrong note gets close enough to see. The eel. The heron. The courtship on the weir. The wedding, where the heron eats three of the guests. The bit you know by heart now.`,
+        `She sings it. All eleven verses, in a whisper, which is somehow worse than loud: every wrong note gets close enough to see. The eel. The heron. The courtship on the weir. The wedding, where the frog gets drunk. The bit you know by heart now.`,
         { if: "f.e6_hollin==='talked'", t: `Halfway through, the king stops counting to listen. He doesn\'t start again until she\'s done.` },
         { if: "f.e6_companion==='ulla'", t: `Ulla, asleep, hums the tune a beat behind her, in a Nordvik key.` },
         `At the end she sings a twelfth verse. You have never heard it. It is about a sergeant who slept under a cart because he was frightened of the sky, and the heron who came and sat on the cart all night to keep the sky off him, and it does not rhyme at all.`,
         '@ansel: "That\'s not a real verse."',
         '@tamsin: "It is now." She is smiling at the candle. "In the real one the heron dies. In mine she gets out."'
       ],
-      fx: { bond: { tamsin: 1 }, set: { e6_twelfth_verse: 1 } },
+      fx: { set: { e6_twelfth_verse: 1 } },
       next: 'dk_hub'
     },
     dk_ford: {
@@ -1355,19 +1351,19 @@ TITHE.episode({
         `You have never said it aloud. Your voice sounds like somebody else\'s.`,
         { if: 'f.e1_told_tam_roll', t: '@tamsin: "I asked you once which one on the roll was you," she says. "Under the wagon. You said you weren\'t on it." She is very quiet. "I don\'t think you were right."' }
       ],
-      fx: { set: { e6_told_ford: 1 }, bond: { tamsin: 1 }, quiet: true },
+      fx: { set: { e6_told_ford: 1 } },
       next: 'dk_hand'
     },
     dk_hand: {
       text: [
         `She takes your left hand. You let her. She works the glove off, finger by finger, the way you\'d unsaddle a horse that bites, and turns your palm up to the candle.`,
-        `The star. Seven points, livid, puckered. She looks at it a long time. Then she puts her thumb in the very centre of it and presses, gently.`,
+        `The star. Seven points, pink and shining and never healed. She looks at it a long time. Then she puts her thumb in the very centre of it and presses, gently.`,
         '@tamsin: "Does it hurt?"',
         '@ansel: "All the time."',
         '@tamsin: "Good," she says. "Means you\'re alive." And then, looking at it, so low you almost miss it: "Oh, Sergeant. They\'ll all want you. Every one of them."'
       ],
       choices: [
-        { t: 'Let her hold it. Don\'t ask what she means.', go: 'dk_name', fx: { bond: { tamsin: 1 }, quiet: true } },
+        { t: 'Let her hold it. Don\'t ask what she means.', go: 'dk_name' },
         { t: '"Who\'ll want me?"', go: 'dk_who' },
         { t: '"Your turn. What are you afraid of?"', go: 'dk_afraid' }
       ]
@@ -1391,13 +1387,15 @@ TITHE.episode({
     },
     dk_name: {
       text: [
-        '@tamsin: "Write something," she says. "In the dust. Your name. So I know what it looks like." A shrug, too careful. "In case."',
-        `You write it with your fingertip in the chalk-dust on the floor between your boots. A N S E L. Five letters. It looks very small.`,
-        `She studies it the way she studied the roll: like a picture, not like words. Like a face.`
+        `She lets go of your hand and leans forward over the chalk-dust between your boots, and before you can ask what she's doing she has written in it with one finger, slowly, tongue between her teeth.`,
+        `A N S E L. The S is backwards.`,
+        { if: 'f.e5_tam_letters', t: `She knows the S. She learned it on the Hen's back step, two snakes in her mother's name. She has still put it on facing the wrong way, and you realise she has never once seen it written the right way round except upside down.` },
+        '@tamsin: "Off your roll-case," she says, not looking at you. "It\'s burned on the flap. I\'ve been looking at it for weeks." A shrug, too careful. "Nobody showed me. Is it right?"',
+        `It is the first word she has ever written that nobody showed her.`
       ],
       choices: [
-        { t: 'Write hers beside it.', go: 'dk_hers' },
-        { t: 'Take her hand. Guide her fingertip through your name.', go: 'dk_guide' }
+        { t: '"It\'s right." Write hers beside it.', go: 'dk_hers' },
+        { t: 'Take her hand. Guide her fingertip through her own name.', go: 'dk_guide' }
       ]
     },
     dk_hers: {
@@ -1407,32 +1405,35 @@ TITHE.episode({
         '@ansel: "That\'s you."',
         '@tamsin: "It\'s got a lot of corners." She traces it with one fingertip, very lightly, as if the dust might still be wet. Then yours. Then hers again. Over and over, the two names, until the lines blur into each other and she has to stop.'
       ],
-      fx: { set: { e6_tam_name: 1 }, bond: { tamsin: 1 }, quiet: true },
+      fx: { set: { e6_tam_name: 1 } },
       next: 'dk_near'
     },
     dk_guide: {
       text: [
-        `You take her hand, the right one, the bow-hand, calloused at the fingertips, and you fold it till only the forefinger is out, and you draw it through the dust beside your own. A. N. S. E. L.`,
-        `She does the last letter on her own. It is crooked. It is the first word she has ever written.`,
+        `You take her hand, the right one, the bow-hand, calloused at the fingertips, and you fold it till only the forefinger is out, and you draw it through the dust beside her own work. T. A. M. S. I.`,
+        `She does the last letter on her own. It is crooked. Her name, next to yours, in two hands.`,
         `She looks at it. She doesn\'t say anything at all. She doesn\'t take her hand back, either.`
       ],
-      fx: { set: { e6_tam_name: 1, e6_tam_wrote: 1 }, bond: { tamsin: 1 }, quiet: true },
+      fx: { set: { e6_tam_name: 1, e6_tam_wrote: 1 } },
       next: 'dk_near'
     },
     dk_near: {
       text: [
         `The candle is very low. Her face is very close. Freckles. Chalk in her eyelashes. The chipped tooth, when her lip lifts. Her breath smells of apple.`,
-        { if: "f.e5_isolde_kiss==='kissed' || f.e5_isolde_kiss==='almost'", t: '@tamsin: "Kissed a lady in a library, I hear," she whispers. "I hear a lot of things."' },
-        { if: "!(f.e5_isolde_kiss==='kissed' || f.e5_isolde_kiss==='almost') && f.e5_delphine", t: '@tamsin: "You still smell of roses," she whispers. "Prince\'s roses. Even down here."' },
-        { if: "!(f.e5_isolde_kiss==='kissed' || f.e5_isolde_kiss==='almost') && !f.e5_delphine && f.e2_mags", t: '@tamsin: "Mags\'ll kill me," she whispers. "She\'ll put me through the window."' },
-        { if: "!(f.e5_isolde_kiss==='kissed' || f.e5_isolde_kiss==='almost') && !f.e5_delphine && !f.e2_mags", t: '@tamsin: "This is a terrible idea," she whispers. You don\'t know what she means. Neither, you think, does she.' },
+        '@tamsin: "This is a terrible idea," she whispers. You don\'t know what she means. Neither, you think, does she.',
         `Neither of you moves. Both of you have moved.`
       ],
       choices: [
-        { t: 'Kiss her.', go: 'dk_almost' },
-        { t: 'Wait. Let her decide.', go: 'dk_almost', fx: { bond: { tamsin: 1 }, quiet: true } },
+        { t: 'Kiss her.', go: 'dk_lean' },
+        { t: 'Wait. Let her decide.', go: 'dk_almost', fx: { set: { e6_let_her: 1 } } },
         { t: '"If we die, Mags keeps my deposit."', go: 'dk_joke' }
       ]
+    },
+    dk_lean: {
+      text: [
+        `You lean in. She turns her face a fraction, not away, only aside, and your mouth finds her temple instead: chalk and salt and the fen smell of her hair. You stay there. So does she.`
+      ],
+      next: 'dk_almost'
     },
     dk_joke: {
       text: [
@@ -1461,7 +1462,7 @@ TITHE.episode({
         '@tamsin: "Not like this." Her voice is wrecked. "Not with what I— " She stops. You hear her breathe in the dark, once, like someone surfacing. "Not like this."',
         `You stay where you are. After a moment her head comes down onto your shoulder, heavy, and stays there, and she takes a fistful of your coat and holds it as if you might go somewhere. As if *she* might.`
       ],
-      fx: { set: { e6_tam_stopped: 1 }, bond: { tamsin: 1 }, quiet: true },
+      fx: { set: { e6_tam_stopped: 1 } },
       next: 'dawn1'
     },
     dk_stay: {
@@ -1470,7 +1471,7 @@ TITHE.episode({
         `At some point her breathing slows and lengthens, and you realise she has fallen asleep like that, against you, upright, her hand still flat on your chest.`,
         `You don\'t sleep. You sit in the dark with her weight on you and listen to the earth breathe, and for the first time in six years you are not afraid of dying. You are only afraid of morning.`
       ],
-      fx: { bond: { tamsin: 1 }, quiet: true },
+      fx: { set: { e6_tam_slept: 1 } },
       next: 'dawn1'
     },
 
@@ -1505,7 +1506,7 @@ TITHE.episode({
         `Every barrow. Every thorn. The slope. The robbers\' tent. Thousands of them, black on the wet green, more crows than you have seen in your life, more than were at the Ford, and none of them making a sound. All of them facing the top of the hill. Facing you.`,
         { if: "f.e6_jory==='sat'", t: `On the slope below, the row of seated dead has grown by one. A ferret-faced lad at the end of the line, facing west, frost in his eyebrows, smiling, with a bronze cup in his lap.` },
         { if: "f.e6_jory==='home'", t: `On the slope below, the five seated dead. Five. Not six. Somewhere east of here, you hope, a ferret-faced lad is asleep in a barn with nothing in his shirt.` },
-        { if: "f.e6_jory==='crushed'", t: `Jory Tench is under the hill. There is nothing to show where. The crows don\'t seem to mind.` },
+        { if: "f.e6_jory==='crushed'", t: `Perkin Tench is under the hill. There is nothing to show where. The crows don\'t seem to mind.` },
         { if: 'f.e6_ring', t: `Under your boots, you can feel it. The whole hill. Breathing. Slow, and deep, and deeper than it was last night.` },
         `Down by the cut, Ox has bitten clean through his hobble-rope and is cropping grass among the crows, who leave him a wide space. He sees you and puts his ears flat and screams at you, furious, a long horse-scream of outrage, which is the most loving thing he knows how to do.`,
         `Tamsin climbs out of the hole behind you and stands up on the top of the barrow and looks at the crows.`,
@@ -1600,7 +1601,7 @@ TITHE.episode({
         `The plate rises.`,
         { if: 'f.e6_ring', t: `It rises a little higher than it did last night, and stays up a little longer, as if something beneath has found that there is, at last, a little room.`, else: `It falls.` },
         `In the dust on the floor, side by side, two names, slowly being covered by the dust that sifts down from the throat.`,
-        { if: 'f.e6_tam_wrote', t: `One of them written twice. The second time in a crooked hand.` }
+        { if: 'f.e6_tam_wrote', t: `Hers in two hands.` }
       ],
       fx: { xp: 80 },
       end: true
@@ -1637,7 +1638,7 @@ TITHE.episode({
       loc: 'The chalk-pit — the small hours',
       text: [
         `You follow the drag-marks up into the downs to an old chalk-pit, white as bone under the moon. At the bottom of it, she is singing.`,
-        `Bigger than the matriarch on the Kingsroad. Older. Chalk-white all over, as though she had been rolled in flour. She is crouched over a row of shallow scrapes in the chalk floor, and in each scrape, laid out straight with their arms crossed on their chests, a pauper in Lanternhold grey. She is covering them. With her long hands, very carefully, the way Tamsin pressed down the turf over Odo Pettibone.`,
+        `Bigger than the matriarch on the Kingsroad. Older. Chalk-white all over, as though she had been rolled in flour. She is crouched over a row of shallow scrapes in the chalk floor, and in each scrape, laid out straight with their arms crossed on their chests, a pauper in Lanternhold grey. She is covering them. With her long hands, very carefully, the way fen-folk press the turf back down over a grave.`,
         `Burying them. The Lamp limes them; the gleaners steal them back and put them in the ground.`,
         `She lifts her blind face to you. She knows you. You don\'t know how you know she knows you.`
       ],
@@ -1702,7 +1703,7 @@ TITHE.episode({
     c_dig_scared: {
       text: [
         `You tell them about the Feast Hall. The table. The guests with frost on their lashes, and how they stood up, politely, all at once, when you came in. You tell it plainly. You don\'t have to make anything up.`,
-        `By the end, the youngest digger is crying, and Ned Gammage is loading Pim onto the handcart himself, very gently, like a man moving a sleeping child.`,
+        `By the end, the youngest digger is crying, and Ned Gammage is loading Pim onto the handcart himself, very gently, like a man lifting a drunk friend into a cart.`,
         '@narrator: "Forty years," says Ned. "Never once been frightened of a grave." He looks at the black door of Crowfoot. "That\'ll learn me."'
       ],
       fx: { set: { e6_diggers: 'scared' }, silver: 40, xp: 70, rep: { varane: 1, fen: 1 } },
@@ -1733,21 +1734,21 @@ TITHE.episode({
     c_lb_1: {
       loc: 'The Barrowfields — Pennock\'s fold, dusk',
       text: [
-        `A shepherd\'s widow, Marrit Pennock, has walked all the way to the Hen to find you, with her boy beside her. Kit, twelve, white as milk, holding a long bundle in sacking that he will not let go of.`,
+        `A shepherd\'s widow, Marrit Pennock, has walked all the way to the Hen to find you, with her boy beside her. Robin, twelve, white as milk, holding a long bundle in sacking that he will not let go of.`,
         '@narrator: "He took it out of the Long Barrow," Marrit says. "On a dare. Every night since, two of the old soldiers come and walk round my fold. Saluting. Then they take a ewe. Nine ewes. Tonight they came up to the *door*."',
-        `Kit unwraps the sacking. A leaf-bladed bronze sword, green and lovely, with a boar-bristle crest on the pommel. The same crest as the door-ward in the Hall of the Sworn.`
+        `Robin unwraps the sacking. A leaf-bladed bronze sword, green and lovely, with a boar-bristle crest on the pommel. The same crest as the door-ward in the Hall of the Sworn.`
       ],
       choices: [
-        { t: '"Then we give it back. You and me, Kit. You\'re carrying it."', go: 'c_lb_return', fx: { set: { e6_wight_sword: 'returned' } } },
+        { t: '"Then we give it back. You and me, Robin. You\'re carrying it."', go: 'c_lb_return', fx: { set: { e6_wight_sword: 'returned' } } },
         { t: '"Give it here. I\'ll wait at the fold for them."', go: 'c_lb_keep', fx: { set: { e6_wight_sword: 'kept' } } }
       ]
     },
     c_lb_return: {
       loc: 'The Long Barrow — night',
       text: [
-        `The Long Barrow is low and long and very dark inside. Kit walks in front of you with the sword held out flat on both palms like an offering, shaking so hard it rattles. You keep your hand on his shoulder.`,
+        `The Long Barrow is low and long and very dark inside. Robin walks in front of you with the sword held out flat on both palms like an offering, shaking so hard it rattles. You keep your hand on his shoulder.`,
         `On a stone bench at the end, an empty place. Two cold lights in the dark either side of it.`,
-        `Kit lays the sword down on the bench. He says, "Sorry," in a very small voice. "I\'m sorry, sir."`,
+        `Robin lays the sword down on the bench. He says, "Sorry," in a very small voice. "I\'m sorry, sir."`,
         `One of the cold lights dips. Goes out. Its owner sits.`,
         `The other does not. It stands, and salutes, and you understand: somebody has to pay for nine ewes and a broken peace, and it would rather it was the grown man.`
       ],
@@ -1755,7 +1756,7 @@ TITHE.episode({
     },
     c_lb_ret_won: {
       text: [
-        `Kit walks out of the Long Barrow beside you without a word, and at the door he takes your hand, which he is far too old to do, and doesn\'t let go till the fold.`,
+        `Robin walks out of the Long Barrow beside you without a word, and at the door he takes your hand, which he is far too old to do, and doesn\'t let go till the fold.`,
         `Marrit Pennock gives you thirty silver she can\'t spare and a wheel of ewe\'s cheese she can spare even less. No soldiers walk round the fold again.`
       ],
       fx: { silver: 30, xp: 70, rep: { fen: 1, town: 1 } },
@@ -1781,23 +1782,22 @@ TITHE.episode({
     t_tam_1: {
       loc: 'The Gutted Hen — the back step, rain',
       text: [
-        `She\'s on the back step, where she always is, feet on the rain-barrel, peeling an apple in one long curl. She hears you come out. She doesn\'t look up. The curl breaks.`,
+        `She\'s on the back step, where she always is, feet on the rain-barrel, re-fletching arrows with goose-feathers and waxed thread, binding each one tight with her teeth. She hears you come out. She doesn\'t look up. The thread snaps.`,
         '@tamsin: "Look what you made me do."',
         { if: 'f.e6_tam_stopped', t: `You haven\'t talked about it. The dark. Her hand on your chest, and *not like this*. She has been very cheerful all week. She has been very cheerful the way a shutter is cheerful.`, else: `You haven\'t talked about it. The dark. Foreheads together. She has been very cheerful all week, in the way a shutter is cheerful.` }
       ],
       choices: [
         { t: '"About the barrow."', go: 't_tam_2a' },
         { t: '"The crows went south. To the fen. All of them."', go: 't_tam_2b' },
-        { t: 'Sit down. Take an apple. Try to peel it in one.', go: 't_tam_2c' }
+        { t: 'Sit down. Take an arrow. Try to fletch it.', go: 't_tam_2c' }
       ]
     },
     t_tam_2a: {
       text: [
-        '@tamsin: "Don\'t." Quick and quiet. Then, because she is Tamsin and can\'t leave a thing like that lying: "Not yet. Please. I\'m not— I haven\'t got the words for it, Sergeant. I can\'t even *read*."',
+        '@tamsin: "Don\'t." Quick and quiet. Then, because she is Tamsin and can\'t leave a thing like that lying: "Not yet. Please. I haven\'t got the words for it, Sergeant. I\'ve got about six words, and they\'re all yours."',
         { if: 'f.e6_tam_stopped', t: '@ansel: "You said *not with what I*. With what?"', else: '@ansel: "All right."' },
         { if: 'f.e6_tam_stopped', t: '@tamsin: "With what I am." She looks at you then, straight, for the first time in a week. "Thief. Liar. Fen-trash. You know." It\'s a good answer. It\'s a practised answer. Her eyes say something else and then close it away.' }
       ],
-      fx: { bond: { tamsin: 1 }, quiet: true },
       next: 't_tam_3'
     },
     t_tam_2b: {
@@ -1806,19 +1806,18 @@ TITHE.episode({
         '@tamsin: "Crows go where they like."',
         '@ansel: "Thousands of them, Tam. Looking at you."',
         '@tamsin: "Looking at *you*," she says. "Everything looks at you, Sergeant. Kings. Gleaners. Ladies. Crows." The knife starts again. "Must be exhausting. Being looked at."',
-        `She doesn\'t say anything else about the crows. You notice that she doesn\'t.`
+        `She doesn\'t say anything else about the crows.`
       ],
       fx: { set: { e6_asked_crows: 1 } },
       next: 't_tam_3'
     },
     t_tam_2c: {
       text: [
-        `You sit. The step is too narrow; it always is. You take an apple from her pile, and her knife, and try. The peel breaks after one turn. She takes it back, horrified, and shows you: thumb here, knife there, turn the apple, not the blade.`,
-        `Yours breaks after two turns. She gives you hers, unbroken, the whole curl, and you hold it up like a dead snake.`,
-        '@tamsin: "Make your wish, then. Go on. Fen rule."',
-        `You make it. She doesn\'t ask. That\'s the other fen rule.`
+        `You sit. The step is too narrow; it always is. You take an arrow and a feather and try. The thread slips. She takes it back, horrified, and shows you: thumb here, teeth there, wrap toward you, never away.`,
+        `Yours comes out lopsided. She looks at it for a long time, and then puts it in her own quiver, with the good ones.`,
+        '@tamsin: "That one\'s mine now. Fen rule. If it flies crooked, it\'s your fault."'
       ],
-      fx: { bond: { tamsin: 1 }, quiet: true },
+      fx: { set: { e6_tam_arrow: 1 } },
       next: 't_tam_3'
     },
     t_tam_3: {
@@ -1831,7 +1830,7 @@ TITHE.episode({
         '@ansel: "Four letters."',
         `You write it on the wet step with your finger. She copies it beside yours, slowly, tongue between her teeth. The rain takes both of them almost at once. She watches it happen and doesn\'t seem to mind. She says it was the shape of it she wanted.`
       ],
-      fx: { bond: { tamsin: 1 }, set: { e6_tam_home: 1 } },
+      fx: { set: { e6_tam_home: 1 } },
       end: true
     },
 
@@ -1851,10 +1850,10 @@ TITHE.episode({
     t_pell_all: {
       text: [
         `You tell him. He doesn\'t interrupt once, which has never happened. When you get to the stars with their mouths open like nestlings, he puts his cup down very carefully, as if it were full, though it is empty.`,
-        '@pell: "*Give us your dead,*" he says. "That\'s what it would say. Wouldn\'t it. Underneath." He laughs, and it\'s a bad laugh, and then it isn\'t. "Ansel. Do you know, I think that\'s the first time in eleven years that the answer to a question hasn\'t made me want a drink."',
+        '@pell: "*Give us your dead,*" he says. "That\'s what it would say. Wouldn\'t it. Underneath." He laughs, and it\'s a bad laugh, and then it isn\'t. "Ansel. Do you know, I think that\'s the first time in two years that the answer to a question hasn\'t made me want a drink."',
         `He pours one anyway. He doesn\'t drink it.`
       ],
-      fx: { bond: { pell: 2 }, set: { e6_pell_told: 1 } },
+      fx: { bond: { pell: 1 }, set: { e6_pell_told: 1 } },
       end: true
     },
     t_pell_soft: {
@@ -1862,7 +1861,6 @@ TITHE.episode({
         '@pell: "My dear boy." He looks almost tender. "I was thrown out of the Lamp for wanting to read the walls. I\'m not going to start *not* wanting to now, at my age, on your say-so." He pats your hand. "But thank you. That was kind. Now tell me everything."',
         `You tell him some of it. He knows it\'s some. He lets you.`
       ],
-      fx: { bond: { pell: 1 } },
       end: true
     },
     t_pell_notes: {
@@ -1894,19 +1892,19 @@ TITHE.episode({
         `When you tell her about Hollin\'s hand grown into the bronze, Ulla goes quiet, which Ulla does not do.`,
         '@ulla: "My grandmother used to say the hill-kings went into the hills to hold the hills shut," she says. "I thought she meant against wolves. Or the sea." She rubs her thumb across the stumps of her missing fingers. "In the north there are a great many hills, Dray. If they\'re all holding something shut, I would like to know what. And I would like very much to be there when it comes out, with my axe."'
       ],
-      fx: { bond: { ulla: 2 }, set: { e6_ulla_hills: 1 } },
+      fx: { bond: { ulla: 1 }, set: { e6_ulla_hills: 1 } },
       end: true
     },
     t_ulla_next: {
       text: [
         '@ulla: "You\'d better." She holds out the hand with three fingers on it. You shake it. She crushes yours, cheerfully, until something clicks. "That\'s a contract, in Nordvik. Breaking it is a killing matter. Also it is very rude."'
       ],
-      fx: { bond: { ulla: 1 } },
+      fx: { set: { e6_ulla_contract: 1 } },
       end: true
     },
 
     t_hob_1: {
-      loc: 'Varane Keep — the stable yard',
+      loc: 'The Gutted Hen — the stable',
       text: [
         `Hob is mucking out with his back to the door and doesn\'t turn round when you come in, which is how you know he\'s seen you.`,
         '@hob: "Heard you came out the top," he says to the straw. "Heard there was a king." Fork, lift, throw.',
@@ -1924,7 +1922,7 @@ TITHE.episode({
         '@hob: "Again," he says, wheezing. "Sergeant. Again."',
         `You give him again. It\'s full dark before you stop.`
       ],
-      fx: { bond: { hob: 2 }, set: { e6_hob_trained: 1 } },
+      fx: { bond: { hob: 1 }, set: { e6_hob_trained: 1 } },
       end: true
     },
     t_hob_why: {
@@ -1943,7 +1941,7 @@ TITHE.episode({
         '@hob: "Then *promise*." He holds out a hand, filthy. "Sergeant\'s promise."',
         `You shake it. You will remember, later, that you did.`
       ],
-      fx: { bond: { hob: 1 }, set: { e6_hob_promise: 1 } },
+      fx: { set: { e6_hob_promise: 1 } },
       end: true
     },
 
@@ -1964,26 +1962,25 @@ TITHE.episode({
     t_oriel_truth: {
       text: [
         `She listens with her whole body. When you say *lock*, she flinches. When you say *door*, she smiles, very slightly, the way people smile at a word they have been trying to remember all day.`,
-        '@oriel: "They\'re frightened," she says. "Up there. I didn\'t know they could be." Her voice is her own, dry and young. "It was a very small fright. But I heard it." She presses her forehead to the glass. "Thank you for telling me. Nobody tells me true things. They tell me what to say."'
+        '@oriel: "They missed a note," she says. "Up there. I\'ve never heard them miss." Her voice is her own, dry and young. "It was a very small note. But I heard it." She presses her forehead to the glass. "Thank you for telling me. Nobody tells me true things. They tell me what to say."'
       ],
-      fx: { bond: { oriel: 2 }, set: { e6_oriel_told: 1 } },
+      fx: { bond: { oriel: 1 }, set: { e6_oriel_told: 1 } },
       next: 't_oriel_end'
     },
     t_oriel_lie: {
       text: [
         '@oriel: "Liar," she says, without heat, almost pleased. "You\'re the only thing in the world I can\'t hear, Ansel Dray, and you still lie badly." She settles back. "Keep it, then. I like that there\'s something you won\'t give them."'
       ],
-      fx: { bond: { oriel: 1 } },
       next: 't_oriel_end'
     },
     t_oriel_palm: {
       text: [
         `You pull off the glove and lay your burned palm flat to the cold glass. After a moment she lays hers against it from the other side. Her hand is thin and very cold, even through glass.`,
         { if: 'f.e6_ring', t: '@oriel: "You\'re wearing something that hums," she says. "Low. Like a bee in a wall. Like a sleeper breathing." Her face goes very still. "Oh. Oh, you took it out of the ground. Be careful, Ansel. They heard that too."' },
-        '@oriel: "It\'s so quiet," she whispers, "where you are."',
+        '@oriel: "I can hear my own breathing," she whispers. "Is that what you hear all the time?"',
         `You stand like that until the guard snores himself awake.`
       ],
-      fx: { bond: { oriel: 2 } },
+      fx: { bond: { oriel: 1 } },
       next: 't_oriel_end'
     },
     t_oriel_end: {
