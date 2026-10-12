@@ -57,7 +57,7 @@ Engine speaker IDs are given in brackets, e.g. `[sam]`. Dialogue in episode mark
 - 81. Italian-English mix ("Madonna mia," "mangia," "stunad," "che cazzo"). Runs the block. Says uncanny things as if they're ordinary: "The clocks will stop soon. Wear a jacket." Knows about 1918. Loves Sam ferociously and calls him "Salvatò."
 
 ## Mikey Kearney [mikey]
-- 26, PPD patrol in the 3rd District (South Philly). Big brother, ball-buster, black-and-white morality, genuinely good cop in a hard system. Calls Sam "Sammy." Investigates the Blur from Episode 2 on.
+- 26, Army 2018–2022 (one Afghanistan deployment, 2020), now PPD patrol in the 3rd District (South Philly). Big brother, ball-buster, black-and-white morality, genuinely good cop in a hard system. Calls Sam "Sammy." Investigates the Blur from Episode 2 on.
 
 ## Gigi Kearney [gigi]
 - 13. Communicates in texts (all lowercase, emoji, "SAMMMMM"). Fearless, funny, nosy. Idolizes Sam. **Never written in any sexual context.**
