@@ -13,6 +13,9 @@ const args = process.argv.slice(2);
 const only = args.find(a => /^s\d\de\d\d$/.test(a));
 const runs = +(args[args.indexOf('--runs') + 1] || 0) || 3000;
 const verbose = args.includes('--verbose');
+const fromPath = args.includes('--from') ? args[args.indexOf('--from') + 1] : null;
+let BASE = null;
+if (fromPath) { const raw = JSON.parse(fs.readFileSync(fromPath, 'utf8')); BASE = (raw.data || raw).state || raw.data || raw; console.log('Seeding runs from save:', fromPath, '(ep', BASE.ep + ')'); }
 let errors = 0, warns = 0;
 const err = m => { errors++; console.log('  ✗ ' + m); };
 const warn = m => { warns++; console.log('  ! ' + m); };
@@ -41,6 +44,7 @@ for (const id of EH.order) {
     const ch = s.choices || [];
     if (!ch.length && !s.next && !s.end) err(`${sid}: no choices, next, or end`);
     if (s.next) tgt(sid, s.next, 'next');
+    (s.nextTargets || []).forEach(t => tgt(sid, t, 'nextTargets'));
     ch.forEach((c, i) => {
       const lbl = `choice ${i + 1}`;
       if (c.check) {
@@ -66,7 +70,12 @@ for (const id of EH.order) {
 
   // markup speaker scan
   const speakerRe = /^([a-z_]+):\s+/gm;
-  const sim = () => { const S = EH.newState(); S.ep = id; return S; };
+  const sim = () => {
+    let S;
+    if (BASE) { S = EH.clone(BASE); delete S.epStart; S.hubs = {}; S.hub = null; S.marked = {}; S.epLog = []; S.epRolls = []; delete S.pending; delete S.flags._failxp; S.pools.nerve = EH.maxPool(S, 'nerve') - (S.sleepDebt >= 6 ? 1 : 0); S.injuries = S.injuries.map(i => Object.assign({}, i, { heal: (i.heal || 1) - 1 })).filter(i => i.heal > 0); }
+    else S = EH.newState();
+    S.ep = id; return S;
+  };
   for (const [sid, s] of Object.entries(sc)) {
     let t = '';
     try { t = typeof s.text === 'function' ? s.text(EH.api(sim())) : (s.text || ''); } catch (e) { /* runtime covered below */ }

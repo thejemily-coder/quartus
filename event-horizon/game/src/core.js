@@ -160,7 +160,7 @@
       grade(c, n) { S.grades[c] = clamp((S.grades[c] ?? 70) + n, 0, 100); note((EH.COURSES[c] || c).split(' ').slice(0, 2).join(' ') + ' standing ' + sgn(n), 'stat', Math.sign(n)); return g; },
       sleep(h) {
         const before = S.sleepDebt;
-        if (h < 8) S.sleepDebt = clamp(S.sleepDebt + (8 - h), 0, 10); else S.sleepDebt = clamp(S.sleepDebt - (h - 8), 0, 10);
+        if (h < 7) S.sleepDebt = clamp(S.sleepDebt + (7 - h), 0, 10); else S.sleepDebt = clamp(S.sleepDebt - (h - 6), 0, 10);
         if (h >= 7) { S.pools.stamina = EH.maxPool(S, 'stamina'); S.pools.focus = EH.maxPool(S, 'focus'); S.pools.nerve = Math.min(EH.maxPool(S, 'nerve'), S.pools.nerve + 2); S.drift = Math.max(0, S.drift - 1); }
         else { S.pools.stamina = Math.min(EH.maxPool(S, 'stamina'), S.pools.stamina + Math.floor(h / 2)); S.pools.focus = Math.min(EH.maxPool(S, 'focus'), S.pools.focus + Math.floor(h / 2)); }
         note('Slept ' + h + 'h · Sleep Debt ' + S.sleepDebt + (S.sleepDebt !== before ? ' (' + sgn(S.sleepDebt - before) + ')' : ''), 'stat', S.sleepDebt > before ? -1 : 1);
