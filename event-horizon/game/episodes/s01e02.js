@@ -11,7 +11,7 @@ EH.episode({
       card: { kind: 'cold' },
       loc: 'CARDONE HALL · ROOM 9-14',
       clock: { day: 'Tue', date: 'Aug 25', time: '7:52 AM' },
-      enter: g => { g.sleep(5); },
+      enter: g => { g.sleep(6); g.know('ear_tell', ['nik']); g.know('wawa_guy', ['nik']); },
       text: g => `There's blood on your pillow.
 
 Not a lot. A rust-colored blot the size of a quarter, already dry, right where your face was. You lie there and look at it for a while. Your nose feels like it's full of pennies. Your phone is face down on the floor, vibrating against the tile in short, furious bursts, like something trying to get out.
@@ -20,7 +20,7 @@ You turn it over. **214 notifications.**
 
 The Wawa video has 1.4 million views. Somebody has slowed it to a crawl and set it to the *Inception* horn. Somebody else has frame-by-framed it and circled the blur in red, and the blur, in a pizza shirt, is the most-watched nine seconds in Philadelphia. Barstool has it. A Sixers beat reporter has quote-tweeted it with *"we need this guy at the four."*
 
-And there's a push alert from the Inquirer, under a byline you've never seen before:
+And there's a push alert from the Inquirer, under a byline you know from the lounge TV last night:
 
 > WAWA GUY, A BUS, AND A "COLD MAN": IS SOMEONE SAVING PEOPLE ON BROAD STREET? · by Dana Fiorillo
 
@@ -49,7 +49,7 @@ He closes the laptop very carefully, like closing it wrong might break something
 nik: I'm not mad. Okay, I'm a little mad. I'm mostly scared. I don't know if I'm scared *of* you or *for* you, and I hate that I don't know.`,
       choices: [
         { text: 'Tell him. All of it. The light, the bus, the cold, the kid. Carmen. Everything.', tag: 'Come clean',
-          fx: g => { g.flag('nik_told2', 'told'); g.know('sam_slip', ['nik']); g.heat('nik', -3); g.bond('nik', { trust: 3, affection: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'cold_tell' },
+          fx: g => { g.flag('nik_told2', 'told'); g.know('sam_slip', ['nik']); g.know('halcyon_aperture', ['nik']); g.know('first_rewind', ['nik']); g.heat('nik', -3); g.bond('nik', { trust: 3, affection: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'cold_tell' },
         { text: 'Lie again. Make it good this time. "It\'s a Ciro\'s shirt, Nik. There are, like, forty of us."',
           check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['nik'], label: 'Lie to Nik, again', on: { strong: 'cold_lie_strong', weak: 'cold_lie_weak', miss: 'cold_lie_miss' } },
           fx: g => g.flag('nik_told2', 'lied') },
@@ -61,9 +61,9 @@ nik: I'm not mad. Okay, I'm a little mad. I'm mostly scared. I don't know if I'm
       enter: g => g.recap('You told Nik everything. He wants to be your guy in the chair.'),
       text: `You sit up. You put your feet on the floor. And you tell him, in order, everything: the order slip, the APERTURE screen, the light, the rain that didn't fall, the cold. The boy. The bus. The world tearing down the middle and the voice that sounded like you saying *No. Again.* Failing anyway. Carmen in the street, praying in Spanish. The sprinklers at Geasey. The Shorti.
 
-It takes twenty minutes. Nik doesn't interrupt once, which is the most frightening thing he's ever done.
+It takes twenty minutes. Nik doesn't interrupt once. You've known him five days, and you didn't know he could do that.
 
-When you're finished, he's quiet for a long time.
+When you're finished, he takes off his glasses, cleans them on the taco boxers, and puts them back on.
 
 nik: Okay. So. First: thank you. Second: my hands are doing a thing, ignore the hands. Third—
 
@@ -73,7 +73,7 @@ nik: I started it Sunday night. I didn't know what it was about yet. I just knew
 
 He scrolls. Frame counts. Timestamps. A sketch map of Broad Street. A section titled **NOSEBLEEDS** with three dates.
 
-nik: You need a guy, Sam. Every single one of these, there's a guy. In a chair. With computers. And I know how that sounds. I know I'm the comic relief in this, I'm aware, I've seen me. But I'm good at this. I'm *so* good at this. Please let me be your guy.
+nik: You need a guy, bro. Every single one of these, there's a guy. In a chair. With computers. And I know how that sounds. I know I'm the Ned in this. I'm aware. I've made peace with being the Ned. But I'm good at this. I'm *so* good at this. Please let me be your guy.
 
 His eyes are wet. He means every word.`,
       choices: [
@@ -87,7 +87,7 @@ His eyes are wet. He means every word.`,
 
 You say it lightly, with a yawn and a stretch, and you keep both hands on the mattress where you can see them.
 
-Nik looks at you for a long time. Then he nods, slowly, and closes the laptop.
+Nik looks at you. At the screen. At you. Then he nods, slowly, and closes the laptop.
 
 nik: Yeah. Okay. Forty of you.
 
@@ -149,7 +149,7 @@ sam: Deal.
 
 nik: Shake on it.
 
-You do the handshake: the slap, the grip, the snap. He's gotten good at it in four days.
+You do the handshake: the slap, the grip, the snap. He's gotten good at it in five days.
 
 nik: I made you a Google Doc, by the way. It's eleven pages. I'm not going to show it to you yet. That's *my* secret. We're even.`,
       next: 'titles'
@@ -191,7 +191,7 @@ femi: Great. Now that I exist. Worksheet one. Pairs. I'm counting you off, and y
 
 He counts. One, two, one, two, up and down the rows. You're a two. You look across the room to find your one.
 
-Juliet Pemberton is sitting in the back corner by the dead radiator, in a navy sweater, in August, with a mechanical pencil and an expression of profound resignation, looking right at you.
+Juliet Pemberton is sitting in the back corner by the radiator, in a navy sweater, in August, with a mechanical pencil and an expression of profound resignation, looking right at you.
 
 jules: Of course.
 
@@ -416,7 +416,7 @@ femi: You know something. I can tell. I'm not asking you to tell me. I'm asking 
       ]
     },
     a1_femi_told: {
-      text: `You tell him. Not everything. Not the bus, not Carmen, not the voice. But you tell him about the cold, and the stopped rain, and the way you can *move* in it. You keep your voice low, though nobody on the stairs can hear him, so nobody will notice the guy he's talking to either.
+      text: `You tell him. Not everything. Not the bus, not Carmen, not the voice. But you tell him about the cold, and the stopped rain, and the way you can *move* in it. You keep your voice low out of habit. You don't need to. Nobody on these stairs can hear Femi, and it turns out nobody much notices the guy he's talking to, either.
 
 Femi listens with his whole face. When you're done, he sits down on the step, hard.
 
@@ -456,7 +456,7 @@ femi: Yeah. You keep saying that.`,
     a1_femi_lie: {
       text: `sam: I don't know what you mean, man. I just heard you. You were talking.
 
-Femi looks at you for a long moment. Then he nods, slowly, and the hope goes out of his face the way air goes out of a tire.
+Femi looks at you. Then he nods, and you watch the hope go out of his face, slow, like a tire with a nail in it.
 
 femi: Yeah. Okay. Sorry. Weird week.
 
@@ -484,9 +484,9 @@ sam: My mother. She's a school nurse.
 
 grace: Good. Your mother's smart. You're not.
 
-She looks up your nose with a penlight. She takes your pulse with two fingers and a watch. She takes your blood pressure with a cuff she pulls out of a drawer, like a normal RA would never own one.
+She looks up your nose with a penlight. She takes your pulse with two fingers and a watch. She takes your blood pressure with a cuff from her desk drawer. Normal RAs do not own a blood pressure cuff.
 
-grace: That's three I know of. Saturday on Liacouras, according to Simone. The lounge last night. Your collar tonight. Epistaxis three times in four days in an eighteen-year-old with no trauma, no history, normal BP. Okay.
+grace: That's three I know of, which means it's more. Saturday on Liacouras, according to Simone. Monday night, Devontae says, you came off the elevator holding a Wawa napkin to your face. Your collar tonight. Recurrent epistaxis in an eighteen-year-old with no trauma, no history, normal BP. Okay.
 
 She strips off the gloves.
 
@@ -516,7 +516,7 @@ grace: I didn't give him anything. I'm not your mom and I'm not your cop and I'm
       ]
     },
     a1_grace_open_strong: {
-      enter: g => { g.bond('grace', { trust: 3, affection: 1 }); g.know('sam_in_zone', ['sam', 'grace'], 'Grace knows you were in the zone Saturday, felt the cold, and have been bleeding since. Not the powers.'); },
+      enter: g => { g.bond('grace', { trust: 3, affection: 1 }); g.know('sam_in_zone', ['sam', 'grace'], 'Who knows you were in the blackout zone at 11:51 Saturday, felt the cold, and have bled since', { track: true }); },
       text: `You tell her some of it. That you were on Broad at Spring Garden. That it got cold, really cold, and that since then you're hungry all the time and you don't sleep and your nose won't quit.
 
 You don't tell her about the stopped rain. You don't tell her about the bus.
@@ -539,14 +539,14 @@ grace: I don't like being offered gift cards for people.`,
       next: 'a1_grace_end'
     },
     a1_grace_open_weak: {
-      enter: g => { g.bond('grace', { trust: 1 }); g.know('sam_in_zone', ['sam', 'grace'], 'Grace knows you were in the zone Saturday night.'); },
+      enter: g => { g.bond('grace', { trust: 1 }); g.know('sam_in_zone', ['sam', 'grace'], 'Who knows you were in the blackout zone at 11:51 Saturday, felt the cold, and have bled since', { track: true }); },
       text: `You try. You get as far as *"I was on Broad Saturday, near Spring Garden"* and then your throat closes up around the rest of it like a fist.
 
 Grace watches you not say it.
 
 grace: Okay.
 
-That's all. She doesn't push. She writes something in a small black notebook, a date and a time, and puts the notebook back in her desk drawer.
+She doesn't push. She writes something in a small black notebook, a date and a time, and puts the notebook back in her desk drawer.
 
 grace: You come to me. Nosebleed, headache, can't sleep. Me. Not Student Health.
 
@@ -558,24 +558,24 @@ grace: Because I said so, and I'm the RA. Get out. Sleep.`,
     a1_grace_lie: {
       text: `sam: It's the heat. I get nosebleeds every summer. Ask my mother.
 
-Grace looks at you for a long time, the way she probably looks at an X-ray.
+Grace looks at you the way she probably looks at an X-ray.
 
 grace: Okay.
 
-She doesn't believe you. You can tell she doesn't believe you, because she writes something in a small black notebook, a date and a time, and puts it back in her drawer without showing you.
+That *okay* isn't belief. It's a receipt: she writes something in a small black notebook, a date and a time, and puts it back in her drawer without showing you.
 
 grace: Come to me if it happens again. Not Student Health. Me.`,
       next: 'a1_grace_end'
     },
     a1_grace_lie_miss: {
-      enter: g => g.bond('grace', { trust: -1 }),
+      enter: g => { g.bond('grace', { trust: -1 }); g.know('ear_tell', ['grace']); },
       text: g => `sam: It's the heat. Every summer. Ask my—
 
 grace: You're touching your ear.
 
 You stop.
 
-${g.knows('ear_tell', 'grace') ? 'grace: The whole floor knows about the ear, Kearney. You did a whole floor meeting about it.' : 'grace: Everybody has a tell, Kearney. My father\'s was his mustache. Yours is your left ear.'}
+${g.knows('ear_tell', 'grace') ? 'grace: The whole floor knows about the ear, Kearney. Pemberton announced it at my icebreaker.' : 'grace: Everybody has a tell, Kearney. My father\'s was his mustache. Yours is your left ear.'}
 
 She writes something in a small black notebook, closes it, and points at the door.
 
@@ -607,17 +607,18 @@ grace: Go. Sleep. Come to me if it happens again, not Student Health.`,
       next: 'a1_grace_end'
     },
     a1_grace_end: {
+      enter: g => { if (g.f('nik_told2') === 'told') { g.know('halcyon_outreach', ['nik']); g.know('halcyon_tablet_man', ['nik']); } },
       text: g => `On your way out, she says, without looking up:
 
 grace: Oh, and Kearney. You look like a ghost wearing a person. Sleep.
 
-${g.f('nik_told2') === 'told' ? 'Back in 9-14, Nik has added a new section to the Google Doc. It\'s titled **HALCYON**, and it already has a subsection called **POLO GUY**.' : g.f('nik_told2') === 'week' ? 'Back in 9-14, Nik is typing very fast and closes his laptop when you come in. That\'s fair. That\'s the deal.' : 'Back in 9-14, the room is dark. Nik\'s side is empty. His laptop\'s gone.'}
+${g.f('nik_told2') === 'told' ? 'Back in 9-14, Nik has added a new section to the Google Doc. It\'s titled **HALCYON**, and it already has a subsection called **POLO GUY**.' : g.f('nik_told2') === 'week' ? 'Back in 9-14, Nik is typing very fast and closes his laptop when you come in. That\'s fair. That\'s the deal.' : (g.f('nik_hurt') ? 'Back in 9-14, the room is dark. Nik\'s side is empty. His laptop\'s gone.' : 'Back in 9-14, Nik has his headphones on. He says "hey" without turning around.')}
 
-You lie down. Through the wall, the beverage center hums. Somewhere south of here, in a hospital bed you've never seen, a woman named Carmen Torres is learning to walk again because you were half a second too slow.`,
+You lie down. Across the hall, faintly, the beverage center hums. A mile up Broad from here, in a hospital bed you've never seen, a woman named Carmen Torres is learning to walk again because you were half a second too slow.`,
       choices: [
         { text: 'Sleep. Actually sleep. Phone across the room.', tag: 'Sleep 8h', fx: g => { g.sleep(8); g.flag('tue_night', 'sleep'); }, go: 'a2_hub' },
-        { text: 'Go up to the roof. Practice. You were half a second too slow. Fix it.', tag: 'Sleep 4h · Power',
-          fx: g => { g.sleep(4); g.mastery(5); g.drift(1); g.pool('focus', -2); g.flag('tue_night', 'roof'); g.hidden('revenant_drift', 0.5); }, go: 'a2_hub' }
+        { text: 'Go up to the roof. Practice. You were half a second too slow. Fix it.', tag: 'Sleep 5h · Power · +1 Drift',
+          fx: g => { g.sleep(5); g.mastery(5); g.drift(1); g.pool('focus', -2); g.flag('tue_night', 'roof'); g.hidden('revenant_drift', 0.5); }, go: 'a2_hub' }
       ]
     }
   },

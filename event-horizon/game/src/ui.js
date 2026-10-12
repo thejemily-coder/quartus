@@ -469,7 +469,7 @@
       b.onclick = () => {
         if (busy) return;
         st.used.push(o.id); st.left -= cost;
-        S.flags['did_' + o.id] = true;
+        S.flags['did_' + o.id] = true; delete S.flags['skipped_' + o.id];
         S.epLog.push({ ep: S.ep, scene: id, choice: o.text, t: Date.now(), hub: true });
         finishScene(box, o.text, () => goto(o.go));
       };

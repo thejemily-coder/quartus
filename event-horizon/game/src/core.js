@@ -125,9 +125,11 @@
         for (const k in d) {
           if (!d[k]) continue;
           const lo = k === 'tension' ? 0 : -10;
-          b[k] = clamp((b[k] || 0) + d[k], lo, 10);
+          const before = b[k] || 0;
+          b[k] = clamp(before + d[k], lo, 10);
+          if (b[k] === before) continue;
           const nm = (EH.CAST[id] && EH.CAST[id].label) || id;
-          note(nm + ' · ' + k[0].toUpperCase() + k.slice(1) + ' ' + sgn(d[k]), 'bond', k === 'tension' ? 0 : Math.sign(d[k]));
+          note(nm + ' · ' + k[0].toUpperCase() + k.slice(1) + ' ' + sgn(b[k] - before), 'bond', k === 'tension' ? 0 : Math.sign(d[k]));
         }
         return g;
       },

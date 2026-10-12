@@ -28,3 +28,11 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
 - **Act Three, "The Hitch" (Sat):** a delivery shift, then the order to Broad & Spring Garden. 11:51:04. The world stops. Sam moves. The bus with the kid (Jayden, 8). A **forced Rewind** on failure: the first diegetic moment. Jules is in the crowd at the Welcome Week concert on Liacouras Walk. (Sam sees her later in the chaos. The player sees a die turn gold.)
 - **Act Four, "Wawa Guy" (Sun–Mon):** aftermath, sleepless. Testing powers (with or without Nik, the first big knowledge choice). Mikey calls. The phone thief at the Wawa. A video goes viral. First day of classes: Philadelphia Neighborhoods with Dr. Weisz, who looks at Sam too long. Jules sits next to him in the class (by luck).
 - **Tag (Mon night):** Jules alone in her room rolling a die, sixes twenty times in a row. *(This is non-interactive and not Sam's POV, framed as "the camera.")* Then Sam on Broad in the rain after the Wawa, and the Revenant across the street, finger to lips. A bus passes, and he's gone.
+
+## Production notes (as played)
+- **E2 "Frame Rate"** was written for this playthrough's E1 save. Deviations from the plan above:
+  - Mikey is *borrowed* to the Second Hand Unit. The full E5 assignment still stands.
+  - Femi is introduced as the Calc learning assistant whom nobody notices.
+  - Nonna's "You moved" moved to the E2 phone call.
+  - Carmen's San Judas medal moved to E2.
+  - Lost minutes trigger when Sam Slips at Girard while drifted.

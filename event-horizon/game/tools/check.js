@@ -106,7 +106,7 @@ for (const id of EH.order) {
           const opts = s.hub.options.filter(o => !st.used.includes(o.id) && (!o.if || o.if(g)) && (o.cost || 1) <= st.left);
           if (!opts.length || (s.hub.canEnd && Math.random() < 0.15)) { cur = s.hub.done; continue; }
           const o = opts[Math.floor(Math.random() * opts.length)];
-          st.used.push(o.id); st.left -= (o.cost || 1); S.flags['did_' + o.id] = true; cur = o.go; continue;
+          st.used.push(o.id); st.left -= (o.cost || 1); S.flags['did_' + o.id] = true; delete S.flags['skipped_' + o.id]; cur = o.go; continue;
         }
         if (s.end) { ended++; endings[cur] = (endings[cur] || 0) + 1; if (ep.onEnd) ep.onEnd(g); break; }
         const list = (s.choices || []).filter(c => !c.if || c.if(g));

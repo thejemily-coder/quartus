@@ -2,10 +2,10 @@
 EH.scenes('s01e02', {
 
   a2_hub: {
-    card: { kind: 'act', label: 'Act Two', title: 'Two Kinds of Stopped' },
+    card: { kind: 'act', label: 'Act Two', title: 'Visiting Hours' },
     loc: 'WEDNESDAY · AUGUST 26',
     clock: { day: 'Wed', date: 'Aug 26', time: '9:00 AM' },
-    text: g => `Wednesday. Classes until noon, then nothing until your shift. The Hitch is already sliding off the front page of the Inquirer, pushed down by the Phillies and a city council fight about a parking garage. Halcyon has taken out a full-page ad: a sunrise over the Navy Yard and the words **WE'RE YOUR NEIGHBORS. WE'RE HERE TO HELP.**
+    text: g => `Wednesday. Classes until noon, then nothing until tonight. The Hitch is already sliding off the front page of the Inquirer, pushed down by the Phillies and a city council fight about a parking garage. Halcyon has taken out a full-page ad: a sunrise over the Navy Yard and the words **WE'RE YOUR NEIGHBORS. WE'RE HERE TO HELP.**
 
 ${g.f('tue_night') === 'roof' ? 'You were on the roof until four. Your hands still haven\'t warmed up.' : 'You slept. Actually slept. It felt like being let out of prison.'}
 
@@ -14,13 +14,13 @@ You have the afternoon. You can't do everything.`,
       slots: 3, label: 'Wednesday, August 26',
       blurb: 'People are waiting on you. Some of them have been waiting since Saturday.',
       options: [
-        { id: 'carmen', text: 'Temple University Hospital. Sixth floor. Carmen Torres. You owe her this.', cost: 1, tag: 'Carmen', go: 'a2_carmen' },
-        { id: 'ma', text: 'Call Ma back. It\'s been two days. She\'s called eleven times.', cost: 1, tag: 'Family', go: 'a2_ma' },
-        { id: 'vinnie', text: 'Vinnie\'s been blowing up your phone since the Wawa video. FaceTime him.', cost: 1, tag: 'Vinnie', go: 'a2_vinnie' },
-        { id: 'weisz', text: 'Dr. Weisz\'s office. Gladfelter Hall. "Your edges are blurry." Ask him what that means.', cost: 1, tag: 'Answers', go: 'a2_weisz' },
-        { id: 'practice', text: 'The roof. Practice the Slip. Find out how long you can stay in.', cost: 1, tag: 'Power', go: 'a2_practice' },
-        { id: 'ciro', text: 'Pick up a lunch shift at Ciro\'s. Money is money.', cost: 1, tag: 'Money', go: 'a2_ciro' },
-        { id: 'nap', text: 'Charles Library, fourth floor, east corner. Sleep.', cost: 1, tag: 'Rest', go: 'a2_nap' }
+        { id: 'wed_carmen', text: 'Temple University Hospital. Sixth floor. Carmen Torres. You owe her this.', cost: 1, tag: 'Carmen', go: 'a2_carmen' },
+        { id: 'wed_ma', text: 'Call Ma back. It\'s been three days. She\'s called eleven times.', cost: 1, tag: 'Family', go: 'a2_ma' },
+        { id: 'wed_vinnie', text: 'Vinnie\'s been blowing up your phone since the Wawa video. FaceTime him.', cost: 1, tag: 'Vinnie', go: 'a2_vinnie' },
+        { id: 'wed_weisz', text: 'Dr. Weisz\'s office. Gladfelter Hall. "Your edges are blurry." Ask him what that means.', cost: 1, tag: 'Answers', go: 'a2_weisz' },
+        { id: 'wed_practice', text: 'The roof. Practice the Slip. Find out how long you can stay in.', cost: 1, tag: 'Power · +1 Drift', go: 'a2_practice' },
+        { id: 'wed_ciro', text: 'Pick up an afternoon shift at Ciro\'s. Money is money.', cost: 1, tag: 'Money', go: 'a2_ciro' },
+        { id: 'wed_nap', text: 'Charles Library, fourth floor. Find somewhere quiet. Sleep.', cost: 1, tag: 'Rest', go: 'a2_nap' }
       ],
       done: 'a2_thursday'
     }
@@ -40,7 +40,7 @@ Jayden is in the visitor's chair with his feet tucked under him and a Nintendo S
 
 jayden: Abuela. It's the cold man.
 
-Carmen turns her head. She looks at you for a long time, the way you'd look at a face in a crowd you're sure you know.
+Carmen turns her head. She studies your face slowly, like she's checking it against something she saw in the rain.
 
 carmen: You.
 
@@ -55,7 +55,7 @@ She holds out her hand. You take it. It's warm and dry and stronger than it look
 carmen: Siéntate. Sit.`,
     choices: [
       { text: '"I\'m sorry. I should\'ve been faster. I should have gotten you too."', tag: 'Say it',
-        fx: g => { g.flag('carmen_sorry'); g.bond('carmen', { affection: 2 }); g.hidden('revenant_drift', 0.3); }, go: 'a2_carmen_sorry' },
+        fx: g => { g.flag('carmen_sorry'); g.know('first_rewind', ['carmen']); g.bond('carmen', { affection: 2 }); g.hidden('revenant_drift', 0.3); }, go: 'a2_carmen_sorry' },
       { text: 'Look at the folder on the tray. "Did they ask you to sign that?"', tag: 'The papers',
         check: { kind: 'd20', attr: 'wits', skill: 'investigate', dc: 13, label: 'Read the fine print', on: { crit: 'a2_carmen_papers_good', success: 'a2_carmen_papers_good', fail: 'a2_carmen_papers_bad', fumble: 'a2_carmen_papers_bad' } } },
       { text: 'Don\'t make it about you. Ask Jayden what he\'s playing.', tag: 'Jayden',
@@ -75,11 +75,11 @@ carmen: In my whole life, nobody comes for me. My husband, no. My son-in-law, no
 
 You go very still. *I see you go back.*
 
-carmen: You think I care about my hip? I have another hip. I have a whole other one.
+carmen: You think I care about my hip? I have another one. I have a whole other hip.
 
 Jayden snorts into his Switch.
 
-carmen: You don't say sorry to me. You say *de nada*.`,
+carmen: You don't say sorry to me. I say *gracias, mijo*. And you say *de nada*.`,
     next: 'a2_carmen_end'
   },
   a2_carmen_papers_good: {
@@ -152,7 +152,7 @@ jayden: I'm not gonna forget.`,
   },
   a2_carmen_end: {
     enter: g => { g.know('carmen_medal', ['sam', 'carmen'], 'Carmen Torres gave you a San Judas Tadeo medal. Saint Jude, patron of lost causes.'); g.recap('You finally went to see Carmen Torres. She gave you a medal of Saint Jude, patron of lost causes.'); },
-    text: `When you get up to leave, Carmen calls you back. She reaches up with her good hand and works a thin gold chain over her head, a little oval medal swinging from it, and presses it into your palm.
+    text: `When you get up to leave, Carmen calls you back. She reaches up with both hands and works a thin gold chain over her head, a little oval medal swinging from it, and presses it into your palm.
 
 carmen: San Judas Tadeo. For the lost causes.
 
@@ -172,21 +172,21 @@ On your way out, the man in the blazer is sitting in the waiting area by the ele
     enter: g => { g.meet('nonna'); g.meet('mikey'); g.bond('rosa', { tension: -1 }); },
     text: `She picks up before it rings.
 
-rosa: Two days.
+rosa: I knew it'd be today. Three days.
 
 sam: Ma—
 
-rosa: Two days you don't call. Sunday you don't come. Eleven times I call. Eleven. Your sister made a chart.
+rosa: Three days you don't call. Sunday you don't come. Eleven times I call. Eleven. Your sister made a chart.
 
 In the background, very faintly: *"IT'S ON THE FRIDGE."*
 
 rosa: You know what I'm doing instead? I'm watching the *news*, Salvatore, to see if my son is alive. A bus on Spring Garden. A woman with a broken hip. And now a boy at a Wawa on Broad, running like the devil, and everybody is laughing, and I'm in my kitchen not laughing.
 
-She stops. You can hear the gravy pot ticking.
+She stops. You can hear the lid of the gravy pot ticking.
 
 rosa: That boy in the video has your walk.
 
-The kitchen goes very quiet. You can hear your own heartbeat in the phone.
+The line goes quiet. You can hear your own heartbeat against the phone.
 
 sam: Ma. It's a nine-second blur.
 
@@ -198,10 +198,10 @@ She doesn't say anything else. She doesn't have to. She just breathes, and waits
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['rosa'], label: 'Lie to Ma', on: { strong: 'a2_ma_lie', weak: 'a2_ma_lie', miss: 'a2_ma_lie_miss' } },
         fx: g => g.flag('ma2', 'lied') },
       { text: '"I\'m okay, Ma. I can\'t talk about the video. But I\'m okay. I\'m sorry I didn\'t come Sunday."', tag: 'Don\'t lie. Don\'t tell.',
-        fx: g => { g.flag('ma2', 'deflect'); g.heat('rosa', 2); g.bond('rosa', { trust: 1, affection: 1 }); }, go: 'a2_ma_nonna' },
+        fx: g => { g.flag('ma2', 'deflect'); g.heat('rosa', 1); g.bond('rosa', { trust: 1, affection: 1 }); }, go: 'a2_ma_nonna' },
       { text: '"Ma, everybody in Philly has my walk. It\'s a Philly walk." Make her laugh.',
         check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', label: 'Disarm Ma', on: { strong: 'a2_ma_laugh', weak: 'a2_ma_laugh', miss: 'a2_ma_lie_miss' } },
-        fx: g => { g.flag('ma2', 'joke'); g.heat('rosa', 1); } }
+        fx: (g, t) => { g.flag('ma2', 'joke'); g.heat('rosa', t === 'miss' ? 2 : 1); } }
     ]
   },
   a2_ma_lie: {
@@ -225,7 +225,7 @@ rosa: *Salvatore.*`,
     next: 'a2_ma_nonna'
   },
   a2_ma_lie_miss: {
-    enter: g => { g.heat('rosa', 1); g.bond('rosa', { trust: -1 }); },
+    enter: g => { g.bond('rosa', { trust: -1 }); },
     text: `You talk. You talk too much, too fast. Somewhere in the middle of it you hear yourself say *"and anyway I'm not even that fast,"* which is the stupidest sentence anyone has ever said to Rosa Kearney.
 
 She doesn't say anything for a long time.
@@ -236,13 +236,13 @@ It's the *okay* she used when Mikey said he'd only be gone six months.`,
     next: 'a2_ma_nonna'
   },
   a2_ma_laugh: {
-    text: `sam: Ma, everybody in Philly has my walk. It's a Philly walk. It's the walk of a man who's been let down by the Eagles. Half the city walks like that. Pop walks like that.
+    text: `sam: Ma, everybody in Philly has my walk. It's a Philly walk. It's the walk of a man who's been let down by the Iggles. Half the city walks like that. Pop walks like that.
 
 There's a pause. Then, against her will, a laugh: one short, wet, furious laugh.
 
 rosa: Your father walks like he has a cabinet on his back.
 
-sam: That's the Eagles, Ma.
+sam: That's the Iggles, Ma.
 
 rosa: Don't make me laugh. I'm mad at you.
 
@@ -263,7 +263,7 @@ It's not a question. You never told anyone you wore it.
 
 sam: …Yeah. I wore it.
 
-nonna: Good. Saturday, you moved. I feel it. Here.
+nonna: Good. Madonna mia. Saturday, you moved. I feel it. Here.
 
 You can picture her tapping her chest, twice, over her heart.
 
@@ -277,7 +277,7 @@ ${g.f('ma2') === 'lied' ? 'Ma doesn\'t say anything about what Nonna said. That\
 
 rosa: Your brother wants you.
 
-mikey: *Sammy.* My guy. Listen. I'm coming up Thursday night. I'm taking you to dinner. Don't argue. I got news, and I'm not saying it on a phone Ma's holding.
+mikey: *Sammy.* There he is. Shut up a sec. I'm coming up Thursday night. I'm taking you to dinner. Don't argue. I got news, and I'm not saying it on a phone Ma's holding.
 
 sam: What news?
 
@@ -293,7 +293,7 @@ He hangs up. In the background, Gigi is yelling something that sounds like *"TEL
     enter: g => { g.meet('vinnie'); g.bond('vinnie', { affection: 1 }); },
     text: `Vinnie picks up on the first ring with his whole face in the camera, and he's already laughing.
 
-vinnie: SALLY. *SALLY*. Is that your Ciro's shirt? In the Wawa video? Is that you? Bro. *Bro.* Everybody at the site's been sending it to me. My foreman sent it to me. My *mom* sent it to me. "Isn't this your friend's pizza place?"
+vinnie: SALLY. *SALLY*. Is that your Ciro's shirt? In the Wawa video? Is that you? Yo. *Yo.* Everybody at the site's been sending me this jawn. My foreman sent it to me. My *mom* sent it to me. "Isn't this your friend's pizza place?"
 
 He's on his lunch break, sitting on an overturned bucket in a hard hat and a reflective vest, behind him a half-finished building with the silver circle-bird logo on a banner: **HALCYON · NAVY YARD CAMPUS · PHASE II**.
 
@@ -327,11 +327,9 @@ vinnie: Oh, and yo. Unrelated. I saw your pop last week. Melrose Diner. Back boo
 
 He wipes his mouth.
 
-vinnie: And they brought in like a walk-in freezer. A medical one, steel, with a lock. Big enough to stand up in.
-
 He looks at you through the phone.
 
-vinnie: What do you think a battery company needs forty-one beds and a walk-in freezer for, college?
+vinnie: What do you think a battery company needs forty-one beds for, college?
 
 You don't have an answer. Neither does he.
 
@@ -380,7 +378,7 @@ He laughs it off. Then somebody yells his name, and he's gone, and you're left h
 
 There are maps everywhere: on the walls, on the desk, taped over the window. Old ones, new ones. A 1683 Thomas Holme plan of the city, Penn's perfect little grid. A 1918 transit map. A Google Maps printout of North Broad with dozens of tiny pencil dots on it, clustered around Spring Garden like iron filings around a magnet.
 
-DR. WEISZ: Mr. Kearney. You're early. By a day.
+${g.f('weisz_name') ? 'DR. WEISZ: Mr. Kearney. You\'re early. By a day.' : 'DR. WEISZ: Fourth row. Kearney, the roster says. You\'re early. By a day.'}
 
 He doesn't get up.
 
@@ -409,7 +407,7 @@ He takes the photo back, gently.
 DR. WEISZ: Now. What color was the light, Mr. Kearney?`,
     choices: [
       { text: 'Tell him. "Every color. Like the inside of your eyelids. And then it was cold."', tag: 'Tell',
-        fx: g => { g.flag('weisz2', 'told'); g.bond('weisz', { trust: 2, respect: 1 }); g.know('sam_in_zone', ['sam', 'weisz']); g.know('weisz_photos', ['sam', 'weisz'], 'Dr. Weisz has photographs from 1876 and 1918 with blurred figures in them, people moving too fast for the shutter. None from any other year.'); }, go: 'a2_weisz_told' },
+        fx: g => { g.flag('weisz2', 'told'); g.bond('weisz', { trust: 2, respect: 1 }); g.know('sam_in_zone', ['sam', 'weisz'], 'Who knows you were in the blackout zone at 11:51 Saturday, felt the cold, and have bled since', { track: true }); g.know('weisz_photos', ['sam', 'weisz'], 'Dr. Weisz has photographs from 1876 and 1918 with blurred figures in them, people moving too fast for the shutter. None from any other year.'); }, go: 'a2_weisz_told' },
       { text: '"What light?" Give him nothing. He\'s a stranger with a wall of maps.', tag: 'Nothing',
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['weisz'], label: 'Lie to Weisz', on: { strong: 'a2_weisz_lie', weak: 'a2_weisz_lie', miss: 'a2_weisz_lie' } },
         fx: g => { g.flag('weisz2', 'lied'); g.know('weisz_photos', ['sam', 'weisz'], 'Dr. Weisz has photographs from 1876 and 1918 with blurred figures in them, people moving too fast for the shutter. None from any other year.'); } }
@@ -437,7 +435,7 @@ The number on the back of the card has a 215 area code. Under it he's written, i
   a2_weisz_lie: {
     text: `sam: What light? I was on a delivery. The power went out.
 
-Dr. Weisz looks at you with no expression at all for a long moment, the way you'd look at a weather report you didn't believe.
+Dr. Weisz looks at you with no expression at all, the way he probably looks at a map someone has drawn wrong.
 
 DR. WEISZ: Of course.
 
@@ -453,7 +451,7 @@ On your way out, you glance at the Google Maps printout taped by the door, the o
   a2_practice: {
     loc: 'CARDONE HALL · ROOF',
     enter: g => { g.mastery(8); g.drift(1); g.pool('focus', -2); g.know('slip_duration', ['sam'], 'A Slip lasts about four seconds of real time. Inside, it feels like a minute. Then something pulls you out.'); },
-    text: g => `${g.knows('sam_slip', 'nik') ? 'Nik sets up on an HVAC unit with a stopwatch app, a laptop, and a borrowed thermometer from the chem lab, like a man about to launch a rocket.\n\nnik: Okay. You Slip, you count in your head. I count out here. Then we compare. Science.' : 'You go alone. You set your phone against the HVAC unit, recording, with a stopwatch app running in the corner of the screen.'}
+    text: g => `${g.knows('sam_slip', 'nik') ? 'Nik sets up on an HVAC unit with a stopwatch app, a laptop, and a borrowed thermometer from the chem lab, like a man about to launch a rocket.\n\nnik: Okay, bro. You Slip, you count in your head. I count out here. Then we compare. Science. Patch notes.' : 'You go alone. You set your phone against the HVAC unit, recording, with a stopwatch app running in the corner of the screen.'}
 
 You step through.
 
@@ -473,7 +471,7 @@ ${g.knows('sam_slip', 'nik') ? 'nik: Four point one seconds.\n\nsam: I counted t
     enter: g => { g.money(14 * 4); },
     text: g => `Ciro is behind the counter in a mood like a thunderstorm.
 
-ciro: Some guy calls me from the "Health Department." Asking how many boys I got, how many shirts. ${g.f('nik_told2') === 'week' || g.f('nik_told2') === 'lied' ? 'Eleven, I tell him. He hangs up. Then a *woman* comes in, Monday, from the Inquirer.' : 'Then a *woman* comes in, Monday, from the Inquirer.'} Very nice shoes. Asks which of my boys delivers on Broad Street. I tell her, all my boys deliver on Broad Street, Broad Street is the whole city. She buys a slice. She tips a dollar.
+ciro: Some guy calls me from the "Health Department." Asking how many boys I got, how many shirts. Eleven, I tell him. Then I hang up on him. Twice. Then a *woman* comes in, yesterday, from the Inquirer. Very nice shoes. Asks which of my boys delivers on Broad Street. I tell her, all my boys deliver on Broad Street, Broad Street is the whole city. She buys a slice. She tips a dollar.
 
 He slams a pie into the oven.
 
@@ -481,25 +479,25 @@ ciro: A dollar. On a slice. That's a *journalist*. And now, the internet, everyb
 
 He points the peel at you.
 
-ciro: If it's you, you don't tell me. I don't want to know. I got a business.
+ciro: If it's you, you don't tell me. I don't want to know. I got a business. Also, it's not you. You deliver like a funeral.
 
-The lunch rush is fast and hot. Somebody on 16th Street asks if you're Wawa Guy, and you laugh, and they tip you five bucks for laughing.`,
+The afternoon run is fast and hot. Somebody on 16th Street asks if you're Wawa Guy, and you laugh, and they tip you five bucks for laughing.`,
     choices: [
       { text: 'Work the doors. Be charming. Lean into the Wawa Guy jokes.',
         check: { kind: 'move', move: 'Work the Door', attr: 'charm', skill: 'hustle', label: 'Tips', on: { strong: 'a2_ciro_good', weak: 'a2_ciro_ok', miss: 'a2_ciro_bad' } } },
       { text: 'Head down. Fast deliveries. Don\'t talk to anyone about anything.',
-        check: { kind: 'pool', attr: 'reflex', skill: 'ride', diff: 2, label: 'Lunch rush', on: { crit: 'a2_ciro_good', success: 'a2_ciro_ok', partial: 'a2_ciro_ok', fail: 'a2_ciro_bad' } } }
+        check: { kind: 'pool', attr: 'reflex', skill: 'ride', diff: 2, label: 'Afternoon run', on: { crit: 'a2_ciro_good', success: 'a2_ciro_ok', partial: 'a2_ciro_ok', fail: 'a2_ciro_bad' } } }
     ]
   },
   a2_ciro_good: { enter: g => { g.money(48); g.bond('ciro', { respect: 1 }); g.heat('press', 1); }, text: `Forty-eight dollars in tips. Three people ask if you're Wawa Guy. Every time you say *"I wish,"* and every time they tip more. Ciro counts the drawer and grunts, and gives you a meatball for the road, which from Ciro is roughly a knighthood.`, next: '@hub' },
   a2_ciro_ok: { enter: g => g.money(22), text: `Twenty-two dollars in tips, a lukewarm Gatorade, and a near-miss with a SEPTA bus on Erie Avenue that you refuse to think about.`, next: '@hub' },
-  a2_ciro_bad: { enter: g => g.money(6), text: `Six dollars in tips and a lecture from Ciro about the difference between "fast" and "on fire," which you were very briefly, a little bit, on Diamond Street, from a pie bag that touched the exhaust.`, next: '@hub' },
+  a2_ciro_bad: { enter: g => g.money(6), text: `Six dollars in tips and a lecture from Ciro about the difference between "fast" and "on fire," which you were very briefly, a little bit, on Diamond Street, from a pie bag that touched a bus's tailpipe at a red light.`, next: '@hub' },
 
   /* ---------- Nap ---------- */
   a2_nap: {
     loc: 'CHARLES LIBRARY · 4TH FLOOR',
     enter: g => g.nap(4),
-    text: g => `You find the quiet room on the fourth floor, east corner. ${g.knows('femi_changed') ? 'Femi wasn\'t lying.' : 'Somebody\'s left a beanbag there like a gift.'} You sleep four hours without dreaming.
+    text: g => `${g.f('did_library') ? 'You find the quiet room on the fourth floor, east corner.' : 'You wander the fourth floor until you find a quiet room in the east corner that nobody seems to know about.'} Somebody's left a beanbag there like a gift. You sleep four hours without dreaming.
 
 When you wake up, there's a sticky note on your knee in small, neat handwriting: *You snore. —F.*
 
@@ -509,10 +507,11 @@ ${g.knows('femi_changed') ? 'You never saw him come in.' : 'You don\'t know who 
 
   /* ================= THURSDAY: THE JOB ================= */
   a2_thursday: {
+    card: { kind: 'act', label: 'Act Three', title: 'Two Kinds of Stopped' },
     loc: 'N. BROAD ST · NORTHBOUND',
     clock: { day: 'Thu', date: 'Aug 27', time: '2:09 PM' },
-    enter: g => { g.sleep(7); if (!g.f('did_ma')) g.meet('mikey'); },
-    text: g => `${g.f('did_ma') ? '' : 'Wednesday night, a text from a number you have saved as **MIKEY (DO NOT ANSWER WHEN AT A PARTY)**:\n\nTXT mikey: thursday 8pm. dinner. wear a collar. not the pizza shirt. got news\n\n'}Thursday afternoon. Lunch delivery to the Divine Lorraine, two large pies for a startup on the fourth floor with a ping-pong table and no furniture. You're coming back down Broad toward Girard, coasting, a twenty in your pocket, when the world does something wrong.
+    enter: g => { g.sleep(7); g.money(20); if (!g.f('did_wed_ma')) g.meet('mikey'); },
+    text: g => `${g.f('did_wed_ma') ? '' : 'Wednesday night, a text from a number you have saved as **MIKEY (DO NOT ANSWER WHEN AT A PARTY)**:\n\nTXT mikey: thursday 8pm. dinner. wear a collar. not the pizza shirt. got news\n\n'}Thursday afternoon. Lunch delivery to the Divine Lorraine, two large pies for a fourth-floor apartment with a ping-pong table and no furniture. You're heading back up Broad toward Girard, coasting, a twenty in your pocket, when the world does something wrong.
 
 It isn't the light. It's a sound, or the lack of one: a deep metallic *THOOM*, like a truck hitting a wall, except there's no wall.
 
@@ -528,7 +527,7 @@ The smallest Gritty, a woman you think, stands on the corner with her phone held
 
 The biggest Gritty is at the back doors, and his hands are *glowing*, a dull orange like stove coils, and the paint on the doors under his palms is bubbling and peeling, and he's tearing the steel open like it's a bag of chips.
 
-The third Gritty is just standing at the front bumper, very still, with one bare hand pressed flat against the truck's grille. He's not doing anything. He's just *touching* it. And as long as he touches it, a thirty-ton armored truck is as immovable as a building.
+The third Gritty is just standing at the front bumper, very still, with one bare hand pressed flat against the truck's grille. He's not doing anything. He's just *touching* it. And as long as he touches it, a fifteen-ton armored truck is as immovable as a building.
 
 In the cab, a guard has gone through the windshield to the waist. He's hanging there, folded over the dash, not moving. There's blood on the glass.
 
@@ -548,7 +547,6 @@ You're thirty feet away. You feel the cold come up into your chest like a questi
   },
 
   a2_heist_slip: {
-    night: true,
     enter: g => g.know('stasis', ['sam'], 'The touching Gritty can stop things. A stopped thing isn\'t cold or warm. It isn\'t in time at all, even in the Slip. You couldn\'t move it.'),
     text: `You step through.
 
@@ -564,7 +562,7 @@ You push. You put your whole body into it, your shoulder, your legs, everything 
 
 It doesn't just not move. It doesn't *notice*.
 
-*Two kinds of stopped*, you think. The world, stopped by you. And this, stopped by *him*.
+*Two kinds of stopped*, you think. Yours is a held breath. His is a photograph.
 
 You look at the Gritty with his hand on the grille. Frozen like everybody else. Mask, hoodie, a pair of beat-up Timberlands. His bare hand on the steel has a Band-Aid across the knuckles.
 
@@ -642,17 +640,17 @@ The small one on the corner laughs, a short, real laugh, and lowers the phone fr
 
 bree[SMALL GRITTY]: Forty seconds, boys. Then the real cops.
 
-Teddy (*Teddy*) keeps his hand on the truck and looks at you.
+*Teddy.* So that's his name. He keeps his hand on the truck and looks at you.
 
 teddy: Listen to me. Nobody's getting hurt who isn't already hurt. It's insured. It's all insured. Go home.
 
 ${g.f('guard_saved') ? 'Behind him, on the sidewalk, the guard you pulled out is starting to move.' : 'Behind him, the guard is still folded over the dashboard, not moving.'}`,
     choices: [
       { text: 'Go for Teddy. He can\'t fight and hold the truck. Put him on the ground.',
-        check: { kind: 'pool', attr: 'nerve', skill: 'brawl', diff: 3, power: true, label: 'Take Teddy down', on: { crit: 'a2_fight_tackle', success: 'a2_fight_tackle', partial: 'a2_fight_touch', fail: 'a2_fight_touch', botch: 'a2_fight_touch' } },
+        check: { kind: 'pool', attr: 'nerve', skill: 'brawl', diff: 3, power: true, label: 'Take Teddy down', fx: { partial: g => g.injure({ id: 'stasis_arm', name: 'Stasis-numb arm', pen: 1, heal: 1, affects: ['body', 'reflex'] }) }, on: { crit: 'a2_fight_tackle', success: 'a2_fight_tackle', partial: 'a2_fight_tackle', fail: 'a2_fight_touch', botch: 'a2_fight_touch' } },
         fx: g => g.flag('fight', 'teddy') },
-      { text: 'Go for the money. Rip a bag off the big one before he can close his hands.',
-        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, power: true, label: 'Snatch a bag', on: { crit: 'a2_fight_money', success: 'a2_fight_money', partial: 'a2_fight_money_burn', fail: 'a2_fight_burn', botch: 'a2_fight_burn' } },
+      { text: 'Go for the money. Rip a bag off the big one before he can close his hands.', if: g => !g.f('bags_recovered'),
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, power: true, label: 'Snatch a bag', on: { crit: 'a2_fight_money', success: 'a2_fight_money', partial: 'a2_fight_money_burn', fail: 'a2_fight_burn', botch: 'a2_fight_burn' } },
         fx: g => g.flag('fight', 'money') },
       { text: '"There\'s a man dying in that windshield. Let me get him out, and you walk."', if: g => !g.f('guard_saved'),
         check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', label: 'Make a deal', on: { strong: 'a2_fight_deal', weak: 'a2_fight_deal', miss: 'a2_fight_touch' } },
@@ -666,7 +664,7 @@ ${g.f('guard_saved') ? 'Behind him, on the sidewalk, the guard you pulled out is
     enter: g => { g.flag('fight_result', 'tackle'); g.know('teddy_name', ['sam'], 'The one who stops things is called Teddy. The big one with the burning hands is Heck.'); g.know('teddy_face', ['sam'], 'You saw the face of the one who stops things: about twenty, pale, tired eyes, a chipped front tooth, a Band-Aid on his knuckles.'); },
     text: `You hit him low, the way Mikey taught you, shoulder to hip. His hand comes off the truck as you take him down.
 
-Behind you, thirty tons of armored car *remembers it's moving*. It lurches forward a foot with a scream of metal, and the trolley groans against it, and every person on that corner flinches at once.
+Behind you, fifteen tons of armored car *remembers it's moving*. It lurches forward a foot with a scream of metal, and the trolley groans against it, and every person on that corner flinches at once.
 
 You're on top of Teddy on the asphalt. His mask is half off, and he's young, pale, and freckled, with a chipped front tooth. He doesn't punch you. He doesn't fight at all. He just reaches past you and lays his palm flat on the street next to your sneaker.
 
@@ -689,17 +687,17 @@ And they're gone: across Girard and down the stairs into the subway, three orang
   },
   a2_fight_touch: {
     enter: g => { g.flag('fight_result', 'touched'); g.injure({ id: 'stasis_arm', name: 'Stasis-numb arm', pen: 1, heal: 1, affects: ['body', 'reflex'] }); g.know('teddy_name', ['sam'], 'The one who stops things is called Teddy. The big one with the burning hands is Heck.'); g.know('stasis_touch', ['sam'], 'Teddy touched your arm and it stopped. Not paralyzed: stopped in time. For a minute and a half you couldn\'t feel it, move it, or even make it bleed.'); },
-    text: `You go for him, and he's faster than he looks, or calmer, which in a fight is the same thing. He lets go of the truck with one hand and, almost gently, lays two fingers on your right forearm.
+    text: `You go for him, and he's faster than he looks, or calmer, which in a fight is the same thing. He takes his hand off the truck and, almost gently, lays two fingers on your right forearm.
 
 Your arm stops.
 
-It isn't paralyzed. You know paralyzed; Nonna had a stroke. This is *stopped*. Your arm is there, hanging in the air at the angle it was when he touched it, and it isn't yours anymore. It's not cold, it's not warm, it doesn't hurt. It just isn't in the same *now* as the rest of you. Your shoulder is pulling at it like a dog on a leash tied to a parking meter.
+It isn't asleep. It isn't numb. It's *stopped*. Your arm is there, hanging in the air at the angle it was when he touched it, and it isn't yours anymore. It's not cold, it's not warm, it doesn't hurt. It just isn't in the same *now* as the rest of you. Your shoulder is pulling at it like a dog on a leash tied to a parking meter.
 
 It's the worst thing you've ever felt. It's not pain. It's the feeling of a part of you being somewhere else.
 
 teddy: Ninety seconds. Then it comes back. Don't fight it, you'll pull your shoulder out.
 
-Behind you, thirty tons of armored car lurches forward a foot with a scream of steel, because he let go of it to touch you. Every person on the corner flinches.
+Behind you, fifteen tons of armored car lurches forward a foot with a scream of steel, because he let go of it to touch you. Every person on the corner flinches.
 
 Heck shoulders the bags. The small one presses play on her phone, and your own voice comes out of it, crackling, perfect: *"Somebody has to."* You don't remember saying it. You must have.
 
@@ -726,7 +724,7 @@ The small one on the corner presses play on her phone, and your own voice comes 
 
 bree[SMALL GRITTY]: Got you, Wawa.
 
-They're gone: across Girard and down into the subway, three orange Grittys vanishing into the Broad Street Line. Teddy lets go of the truck last, and thirty tons of steel lurch forward a foot with a scream like the end of the world.
+They're gone: across Girard and down into the subway, three orange Grittys vanishing into the Broad Street Line. Teddy lets go of the truck last, and fifteen tons of steel lurch forward a foot with a scream like the end of the world.
 
 You're standing in the middle of Broad Street holding a bag of money. Every phone on the corner is pointed at you.`,
     next: 'a2_after_heist'
@@ -762,7 +760,7 @@ teddy: Bags. Go. *Go.*
 
 They go. The small one presses play on her phone as she runs past, and your own voice comes out of it: *"Somebody has to."* You don't remember saying it.
 
-You're on your knees on Broad Street, holding your arm, as three orange Grittys disappear down the subway stairs at Girard, and thirty tons of armored car lurch forward a foot with a scream of steel.`,
+You're on your knees on Broad Street, holding your arm, as three orange Grittys disappear down the subway stairs at Girard, and fifteen tons of armored car lurch forward a foot with a scream of steel.`,
     next: 'a2_after_heist'
   },
   a2_fight_deal: {
@@ -802,7 +800,7 @@ Teddy looks at you for a long second through the mask.
 
 teddy: My mother's on dialysis three days a week at Temple. You know what a kidney transplant workup costs when you lose your insurance? I do. I can tell you to the dollar.
 
-He says it calmly, like a fact about the weather.
+He says it calmly, the way people say numbers they've said too many times.
 
 teddy: Saturday night, God gave me something. I'm using it.
 
@@ -810,9 +808,9 @@ bree[SMALL GRITTY]: *Teddy.* Time.
 
 teddy: Yeah.
 
-He takes his hand off the truck. Thirty tons of steel lurch forward a foot with a scream like the end of the world.
+He takes his hand off the truck. Fifteen tons of steel lurch forward a foot with a scream like the end of the world.
 
-teddy: Go home, cold guy. I'm not who you think.
+teddy: Go home, cold guy. Nobody else is coming for her. So I am.
 
 They go. The small one presses play on her phone as she passes you, and your own voice comes out of it, perfect, crackling: *"I just want to know why."*
 
@@ -824,7 +822,7 @@ bree[SMALL GRITTY]: Don't we all, Wawa.`,
     enter: g => { g.flag('guard_saved'); g.flag('fight_result', 'none'); },
     text: g => `You don't go for the masks. You go for the cab.
 
-The guard has gone through the windshield to the waist. You climb onto the bumper, and it's *wrong*, solid and dead under your feet like standing on a statue, and you get your arms around him and pull. He comes free an inch at a time, with glass in his scalp and blood down his collar. His name tag says **L. MEDINA**. You get him onto the sidewalk on his side, the way Ma would, and press your palm hard against the worst of the bleeding.
+The guard has gone through the windshield to the waist. You climb onto the bumper, and it's *wrong*: not cold, not warm, not anything. The street is hot and loud and moving, and the truck isn't in it. You get your arms around him and pull. He comes free an inch at a time, with glass in his scalp and blood down his collar. His name tag says **L. MEDINA**. You get him onto the sidewalk on his side, the way Ma would, and press your palm hard against the worst of the bleeding.
 
 Behind you, the Grittys work. You hear the big one tear the last of the rear door off with a shriek of metal. You don't look.
 
@@ -859,6 +857,10 @@ The one at the front bumper turns his head and looks right at your phone. Right 
 
 He nods. Like you did the right thing. Like he's *grateful*.
 
+The small one passes close enough to touch. She tilts her mask at your phone, at your voice saying *hurry*, like she's learning a song.
+
+When the one at the bumper finally lets go, the truck lurches a foot with a scream of steel, and thirty feet away, something cold in your chest flinches like it recognized the sound.
+
 Then they're gone, down into the subway at Girard, and the sirens are still four blocks away, and a man is still bleeding through a windshield, and you're still standing there holding your phone.
 
 You did the right thing. You know you did. You'll tell yourself that tonight until you almost believe it.`,
@@ -867,41 +869,40 @@ You did the right thing. You know you did. You'll tell yourself that tonight unt
 
   a2_after_heist: {
     enter: g => { g.recap('Three people in Gritty masks robbed an armored truck at Broad & Girard. One of them could stop things just by touching them.'); g.meet('teddy'); },
-    next: g => (g.S.drift >= 7 ? 'a2_lost' : 'a2_dana'),
+    next: g => (g.S.drift >= 5 && g.f('heist') === 'slip' || g.S.drift >= 7 ? 'a2_lost' : 'a2_dana'),
     nextTargets: ['a2_lost', 'a2_dana'],
     text: g => `Sirens. Lots of them, all at once, from three directions. The trolley passengers are climbing out the back windows. Somebody's crying. Somebody's laughing the way people laugh after something terrible doesn't happen to them.
 
 ${g.f('fight_result') === 'money' || g.f('fight_result') === 'money_burn' ? 'You set the bag down on the sidewalk next to a fire hydrant, very carefully, like it might explode. A Keystone supervisor in a windbreaker runs up and looks at it, and then at you, and his mouth opens and nothing comes out.' : ''}${g.f('slip_did') === 'money' ? 'In the trolley, a woman in scrubs has found two canvas bags of money on the floor by her feet. She\'s holding them up, staring, like they fell from the sky. As far as she knows, they did.' : ''}
 
-Your nose is bleeding. ${g.S.drift >= 6 ? 'It isn\'t a trickle. It\'s a *faucet*, down your lip and chin and onto your shirt, and when you tip your head forward, it patters on the asphalt like rain.' : 'You hold the handkerchief to it.'} The edges of the world are doing something strange: shimmering, a little out of sync, like a TV with the sound a half-second behind the picture.`
+${g.f('fight_result') === 'tackle' ? 'Your sneaker is lying on its side in the crosswalk. You hop out between the cop cars and jam your foot back into it.\n\n' : ''}Your nose is bleeding. ${g.S.drift >= 6 ? 'It isn\'t a trickle. It\'s a *faucet*, down your lip and chin and onto your shirt, and when you tip your head forward, it patters on the asphalt like rain.' : 'You hold the handkerchief to it.'} The edges of the world are doing something strange: shimmering, a little out of sync, like a TV with the sound a half-second behind the picture.`
   },
   a2_lost: {
-    night: true,
-    enter: g => { g.flag('lost_minutes'); g.know('lost_minutes', ['sam'], 'After the Girard job, you lost twenty-one minutes. You woke up on a curb on Ridge Avenue with frost on your sneakers.'); g.drift(-1); g.hidden('revenant_drift', 1); },
+    enter: g => { g.heat('press', 1); g.flag('lost_minutes'); g.know('lost_minutes', ['sam'], 'After the Girard job, you lost twenty-one minutes. You woke up on a curb on Ridge Avenue with frost on your sneakers.'); g.drift(-1); g.hidden('revenant_drift', 1); },
     text: `You blink.
 
 You're sitting on a curb.
 
-It's not Broad and Girard. You don't know where it is. A row of rowhouses, a corner store with a hand-painted sign, a church with a chain-link fence around it. A street sign: **RIDGE AVE**. You've never been on Ridge Avenue in your life.
+It's not Broad and Girard. You don't know where it is. A row of rowhouses, a corner store with a hand-painted sign, a church with a chain-link fence around it. A street sign: **RIDGE AVE**. Not the end you know, down by the Divine Lorraine where you dropped two pies an hour ago. The far end, up past Girard, where Ridge goes crooked and you've never once had a reason to be.
 
 Your phone says **2:34 PM**. It was 2:13.
 
-Twenty-one minutes. Gone. Not forgotten: *gone*. There's no gap in your memory like a dream you've lost. There's just a cut, like a film splice. One frame Girard, the next frame here.
+Twenty-one minutes. Gone. Not forgotten: *gone*. It isn't a gap, the soft kind a dream leaves. It's a cut. A splice. One frame Girard, the next frame here.
 
-Your bike isn't here. Your sneakers are wet, and it hasn't rained in four days. When you look down, there's frost on the laces, melting fast in the August heat, dripping onto the curb.
+Your bike isn't here. Your sneakers are wet, and it hasn't rained since Monday night. When you look down, there's frost on the laces, melting fast in the August heat, dripping onto the curb. Your hands smell like a struck match and wet pennies. You don't know what they've been doing.
 
 An old man on the stoop across the street is watching you with a cigarette halfway to his mouth.
 
 OLD MAN: You okay, young man? You just… you weren't there, and then you were.
 
-You get up. Your knees don't work right. You walk south toward Broad without knowing exactly why you know which way south is.
+You get up. Your knees don't work right. You walk east, toward Broad, and you don't know how you know which way east is.
 
 Somewhere in the back of your head, very faintly, as if from another room, you think you hear someone say your name. In your own voice.`,
     next: 'a3_article'
   },
   a2_dana: {
     enter: g => { g.meet('dana'); g.bond('dana', { respect: 1 }); },
-    text: g => `A woman pushes through the crowd at the corner. Thirties, sharp blazer, sneakers, a press badge on a lanyard, and the expression of someone who got here before the cops on purpose. She takes it all in in one sweep: the truck, the trolley, the guard, the money, you.
+    text: g => `A woman pushes through the crowd at the corner. Thirties, sharp blazer, very nice shoes, a press badge on a lanyard, and the expression of someone who got here before the cops on purpose. She takes it all in in one sweep: the truck, the trolley, the guard, the money, you.
 
 She stops in front of you.
 
@@ -916,13 +917,19 @@ She doesn't say anything else for a second. She looks at you the way Nik looked 
 DANA: That's the second Ciro's shirt I've seen in a viral video this week.`,
     choices: [
       { text: '"No comment." Walk away. Don\'t run. Walk.', tag: 'No comment',
-        fx: g => { g.flag('dana', 'none'); g.heat('press', 1); }, go: 'a3_article' },
+        fx: g => { g.flag('dana', 'none'); g.heat('press', 1); }, go: 'a2_dana_none' },
       { text: '"I\'m a delivery guy. I was delivering. I saw what you saw." Sell it.',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['dana'], label: 'Lie to a reporter', on: { strong: 'a2_dana_lie', weak: 'a2_dana_lie', miss: 'a2_dana_lie' } },
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['press'], label: 'Lie to a reporter', on: { strong: 'a2_dana_lie', weak: 'a2_dana_lie', miss: 'a2_dana_lie' } },
         fx: g => g.flag('dana', 'lied') },
       { text: 'Give her one line. "Somebody has to." Then go.', tag: 'Quote',
-        fx: g => { g.flag('dana', 'quote'); g.heat('press', 3); g.bond('dana', { respect: 2 }); g.know('dana_quote', ['sam', 'dana'], 'You gave Dana Fiorillo a quote at Broad & Girard: "Somebody has to."'); }, go: 'a2_dana_quote' }
+        fx: g => { g.flag('dana', 'quote'); g.heat('press', 2); g.bond('dana', { respect: 2 }); g.know('dana_quote', ['sam', 'dana'], 'You gave Dana Fiorillo a quote at Broad & Girard: "Somebody has to."'); }, go: 'a2_dana_quote' }
     ]
+  },
+  a2_dana_none: {
+    text: `sam: No comment.
+
+You walk away south. You don't run. You can feel her eyes on your back the whole length of the block, and when you glance back at the corner of Thompson Street, she's writing something in a notebook. An actual paper notebook, the kind people use when they don't want it on a server.`,
+    next: 'a3_article'
   },
   a2_dana_lie: {
     text: `sam: I'm a delivery guy. I was delivering. I saw what you saw.
@@ -937,7 +944,7 @@ sam: They already did.
 
 She almost smiles.
 
-DANA: Yeah. I'm sorry about "Wawa Guy." That wasn't me. That was Twitter.`,
+DANA: Yeah. I'm sorry about "Wawa Guy." Twitter made it up. I just put it in a headline. I'll make it up to you.`,
     next: 'a3_article'
   },
   a2_dana_quote: {
