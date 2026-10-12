@@ -39,7 +39,7 @@ Out the back door, Ciro's old windbreaker hangs on the hook, the green one with 
     clock: { time: '11:41 PM' },
     text: g => `Broad Street at night is the best road in the world, and nobody can tell you otherwise.
 
-You ride south with the bag warm on your back${g.f('jacket') ? ' and the windbreaker tied around your waist like a dad at a barbecue' : ''}, and the whole city is lit up for you. The Divine Lorraine's sign burns red against the haze. The old Uptown Theater stands dark, with its terra-cotta face. There are rowhouses with every window open and every fan on, bodega cats in doorways, a kid doing wheelies on a dirt bike down the center line with a dozen more behind him, riding like a flock of birds. Heat lightning flickers silently out over Jersey. It's drizzling, barely. Steam comes up off the asphalt.
+You ride south with the bag warm on your back${g.f('jacket') ? ' and the windbreaker tied around your waist like a dad at a barbecue' : ''}, and the whole city is lit up for you. The Divine Lorraine's sign burns red against the haze. The Met glows gold at Broad and Poplar, every bulb on its marquee burning. There are rowhouses with every window open and every fan on, bodega cats in doorways, a kid doing wheelies on a dirt bike down the center line with a dozen more behind him, riding like a flock of birds. Heat lightning flickers silently out over Jersey. It's drizzling, barely. Steam comes up off the asphalt.
 
 South of Girard, the rowhouses give way to warehouses and new glass. At Spring Garden there's the Baldwin Locomotive Works, a huge brick machine shop from the 1800s with windows twenty feet tall, restored so perfectly it looks fake. A sign on the lawn says **HALCYON DYNAMICS** in thin silver letters, under a logo of a bird made out of a circle.
 
@@ -123,7 +123,7 @@ You know this part.`,
     },
     text: g => `The light. The silence. The rain hanging in the air like beads on a curtain.
 
-It's colder than anything you've ever felt, colder than the walk-in at Dolores', colder than the January the pipes burst on Mifflin Street. ${g.f('jacket') ? 'Ciro\'s windbreaker crackles with frost across your shoulders, and inside it you\'re okay, you\'re *okay*. Nonna. Nonna, how did you know.' : 'Your bare arms go white, then red, then numb. Your fingers won\'t close all the way around anything. Nonna. *Nonna.*'}
+It's colder than anything you've ever felt, colder than the walk-in at Ciro's, colder than the January the pipes burst on Mifflin Street. ${g.f('jacket') ? 'Ciro\'s windbreaker crackles with frost across your shoulders, and inside it you\'re okay, you\'re *okay*. Nonna. Nonna, how did you know.' : 'Your bare arms go white, then red, then numb. Your fingers won\'t close all the way around anything. Nonna. *Nonna.*'}
 
 You're off the bike. You're running into the rain that isn't falling, and each drop breaks against you like a tiny bulb of ice.
 
@@ -151,7 +151,7 @@ You have no idea how long this lasts. You have no idea what this is. You only kn
     enter: g => g.flag('look_result', 'good'),
     text: `You stop.
 
-It's the hardest thing your body has ever done. Every muscle is screaming *go*, and you stand in the frozen rain and make yourself *look*, the way Coach used to make you read the batter before the pitch.
+It's the hardest thing your body has ever done. Every muscle is screaming *go*, and you stand in the frozen rain and make yourself *look*, the way Pop reads traffic three lights ahead.
 
 The bus's front wheel is skidding left. The grandmother is a half step behind the boy, out of the bus's line if she stays where she is. The boy isn't. And on the far curb, there's a parked white van with its hazards frozen mid-blink: a big, empty, unbreakable thing.
 
@@ -378,11 +378,11 @@ Jules doesn't look up. Up close, you can see she's shaking. It's tiny and consta
 
 She says, very quietly, to nobody:
 
-jules: Did you feel it? Like the whole world… skipped.
+jules: I was counting the bass. Four to a bar. One of them didn't happen.
 
 You did feel it. You felt more than that. You were *inside* the skip, walking around in it.
 
-sam: Yeah.
+sam: Transformer, probably. Happens.
 
 It's the first lie you tell her.`,
     choices: [
@@ -434,7 +434,7 @@ And Jules laughs.
 
 It isn't much: one breath, out through her nose, and a crack in her composure that's there and gone. But it's a real laugh. It's the first one you've gotten out of her, and you feel it in your chest like a fist unclenching.
 
-She looks at you then. Really looks.
+She looks at you then, like she's annoyed it worked.
 
 jules: You're bleeding.
 

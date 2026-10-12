@@ -42,7 +42,7 @@ You keep waiting for him to laugh.
 
 Nik puts his glasses on. He takes them off. He cleans them on his taco boxers. He puts them back on. Then he looks at you for a long, long time, and you watch twenty years of comic books, video games, and late-night Wikipedia holes assemble themselves behind his eyes into one gigantic, shaking, incandescent idea.
 
-nik: Okay. Okay. Okay okay okay. So. First: I believe you. Second: I'm having a panic attack. That's unrelated. That's a me thing, that's pre-existing, ignore that. Third—
+nik: Okay. Okay. Okay okay okay. So. First: I believe you. Second: my hands are doing a thing, ignore the hands, the hands are unrelated, the hands are a *me* thing. Third—
 
 He grabs your wrist like a doctor taking a pulse.
 
@@ -100,7 +100,7 @@ nik: Your hand is on your ear.
 
 It is. It *is*. Damn Juliet Pemberton to hell.
 
-nik: Sam. My phone was falling. I heard it fall. It was *falling*, and then you were here.
+nik: Salvatore. My phone was falling. I heard it fall. It was *falling*, and then you were here.
 
 sam: Go back to sleep, Nik.
 
@@ -163,7 +163,7 @@ ${g.f('test_with_nik') ? 'nik: You okay? YOU OKAY? That was eight seconds, which
   },
   a4_run_fail: {
     enter: g => { g.pool('stamina', -1); g.flag('run', 'fail'); },
-    text: g => `You run. You run as hard as you've ever run, every scrap of you, and the world stays stubbornly, normally the world. Eleven-point-something seconds. Good for a shortstop. Nothing for a miracle.
+    text: g => `You run. You run as hard as you've ever run, every scrap of you, and the world stays stubbornly, normally the world. Eleven-point-something seconds. Good for a kid from Mifflin Street. Nothing for a miracle.
 
 You stand at the far line with your hands on your knees, gasping.
 
@@ -244,7 +244,7 @@ You have the rest of Sunday. Classes start tomorrow.`,
     loc: 'THE KEARNEY HOUSE · MIFFLIN STREET',
     clock: { time: '3:00 PM' },
     enter: g => { g.meet('nonna'); g.meet('mikey'); g.bond('gigi', { trust: 1, affection: 1 }); g.bond('rosa', { affection: 1 }); g.money(-5); },
-    text: g => `You take the Broad Street Line south, eleven stops of humming orange seats and a guy selling phone chargers out of a duffel. You come up into South Philly sunlight at Tasker-Morris and walk the four blocks, and Mifflin Street is exactly the same as it was three days ago, which feels impossible. The same stoops, the same plastic chairs, the same Mrs. Iacobucci hosing down the same piece of sidewalk she's been hosing down since 1974.
+    text: g => `You take the Broad Street Line south, nine stops of humming orange seats and a guy selling phone chargers out of a duffel. You come up into South Philly sunlight at Tasker-Morris and walk the four blocks, and Mifflin Street is exactly the same as it was three days ago, which feels impossible. The same stoops, the same plastic chairs, the same Mrs. Iacobucci hosing down the same piece of sidewalk she's been hosing down since 1974.
 
 Nonna is on the stoop. She watches you come down the block. She doesn't wave. She just stands up, slowly, holding the railing, and waits.
 
@@ -260,7 +260,7 @@ She taps her chest, over her heart, twice.
 
 sam: Nonna, what are you—
 
-nonna: Not now. Not with your father. Later we talk. *Mangia.*
+nonna: Not now. Not in front of your mother. Later we talk. *Mangia*, Salvatò.
 
 And she lets go of your face and goes inside, like she's said nothing stranger than *wipe your feet.*
 
@@ -286,7 +286,7 @@ mikey: ${g.f('after') === 'stayed' ? 'Ma doesn\'t know yet. You were "at the con
   },
   a4_mikey_lie_ok: {
     enter: g => { g.heat('mikey', 1); g.flag('mikey', 'lied'); },
-    text: g => `sam: ${g.f('after') === 'stayed' ? 'Okay, I was there. I was *near* there. I was on a delivery. I saw the kid, I yelled, I ran over after. Kowalczyk\'s making it a whole thing. I didn\'t tell Ma \'cause she\'d have put me in bubble wrap and moved me back home by Tuesday.' : 'Mike. Half of North Philly works delivery. You think I\'m the only kid on Broad in a pizza shirt? I was on Liacouras with forty thousand people looking at the sky.'}
+    text: g => `sam: ${g.f('after') === 'stayed' ? 'Okay, I was there. I was *near* there. I was on a delivery. I saw the kid, I yelled, I ran over after. Kowalczyk\'s making it a whole thing. I didn\'t tell Ma \'cause she\'d have put me in bubble wrap and moved me back home by Tuesday.' : 'Mike. Half of North Philly works delivery. You think I\'m the only kid on Broad in a pizza shirt? I was on Liacouras with two thousand people looking at the sky.'}
 
 You hold his eye. You don't touch your ear. Mikey looks at you the way he looks at people through a car window during a traffic stop.
 
@@ -364,7 +364,7 @@ nonna: *Va.* Go. You'll miss the train.`,
     loc: 'TEMPLE UNIVERSITY HOSPITAL · 6TH FLOOR',
     clock: { time: '1:15 PM' },
     enter: g => { g.meet('carmen'); g.bond('carmen', { trust: 1, affection: 2 }); g.know('halcyon_settles', ['sam'], 'Halcyon is paying Hitch victims fast, with papers to sign.'); },
-    text: g => `Carmen Torres is in a room on the sixth floor with ${g.f('carmen') === 'hip' ? 'a brand-new hip, a morphine drip, and a view of the Broad Street Line tracks' : 'her wrist in a fresh purple cast up to the elbow, being kept for observation because of her blood pressure'}. Jayden is on the end of the bed playing a Nintendo Switch with the sound off. When you come in, he looks up and doesn't seem surprised at all.
+    text: g => `Carmen Torres is in a room on the sixth floor with ${g.f('carmen') === 'hip' ? 'a brand-new hip, a morphine drip, and a view of Broad and Ontario' : 'her wrist in a fresh purple cast up to the elbow, being kept for observation because of her blood pressure'}. Jayden is on the end of the bed playing a Nintendo Switch with the sound off. When you come in, he looks up and doesn't seem surprised at all.
 
 jayden: Abuela, the cold man.
 
@@ -374,7 +374,7 @@ There's someone else in the room: a woman in a navy blazer, very clean, a Halcyo
 
 HALCYON LADY: —and of course this is just to make sure Ms. Torres is fully supported, with no need for any lengthy *process*.
 
-carmen: I don't read so good in English.
+carmen: Señora, más despacio. I read English fine. I read it *slow*.
 
 HALCYON LADY: That's fine! I can summarize. It basically says that Halcyon cares.`,
     choices: [
@@ -387,7 +387,7 @@ HALCYON LADY: That's fine! I can summarize. It basically says that Halcyon cares
   },
   a4_hosp_strong: {
     enter: g => { g.flag('hosp', 'stopped'); g.bond('carmen', { trust: 2, respect: 2 }); },
-    text: `sam: She's not signing anything today. She's on morphine. My ma's a nurse, she'd have your whole lanyard.
+    text: `sam: She's not signing anything today. She's on painkillers. My ma's a nurse, she'd have your whole lanyard.
 
 You close the folder, gently, and hand it back with the menace grin at full voltage. The Halcyon lady holds it for a second, like it's hot, and you can see her decide this isn't worth a scene on a Sunday.
 
@@ -442,7 +442,7 @@ carmen: San Judas Tadeo. For the hopeless. For the lost causes.
 
 sam: I can't take—
 
-carmen: Is for you. You go where it's hopeless. I see it. You *go*.
+carmen: Es para ti. You go where it's hopeless. I saw you. You *go*.
 
 It's still warm from her skin. You put it around your neck. You don't take it off.`,
     next: '@hub'
@@ -558,7 +558,7 @@ jules: Then why are you giving it back?
 
 sam: I'm not. I just wanted you to see I took care of it.
 
-She doesn't say anything. After a while, she slides it back across the desk to you with one finger, and she goes on not looking at you, and the tips of her ears go a very faint pink, and you will think about the tips of her ears for most of the semester.`,
+She doesn't say anything. After a while, she slides it back across the desk to you with one finger, and she goes on not looking at you.\n\njules: You ironed the crease the wrong way.\n\nShe says it to the lecture. It's the longest sentence she's said to you all day.`,
     next: 'a4_mon_after'
   },
   a4_mon_hand: {
@@ -572,11 +572,11 @@ jules: How's your nose?
 
 sam: Fine.
 
-jules: Simone says you were bleeding *before* you got to us. She says you came from the south. From Spring Garden.
+sam: And the… the window thing?
 
-She still isn't looking at you. She's looking at Dr. Weisz with total, attentive concentration, the way you'd look at the road during a fight in the car.
+jules: It was a window. It fell. I was lucky.
 
-jules: That's where the bus crashed.
+She says *lucky* like it's a word in a language she's decided not to learn. She's looking at Dr. Weisz with total, attentive concentration, the way you'd look at the road during a fight in the car.
 
 You don't say anything. Neither does she. Down at the front, Dr. Weisz writes **1876** on the board and circles it three times.`,
     next: 'a4_mon_after'
@@ -597,7 +597,7 @@ DR. WEISZ: Something amusing about the Quaker grid, Mr.…?
 
 sam: Kearney. No. Sorry.
 
-He looks at you for a beat too long again. Beside you, Jules is writing down every word of the lecture in beautiful handwriting, and the corner of her mouth is doing the thing. Third time. You're counting.`,
+He looks at you for a beat too long again. Beside you, Jules is writing down every word of the lecture in beautiful handwriting, and she underlines the word *grid* hard enough to tear the page, which you decide to take personally.`,
     next: 'a4_mon_after'
   },
   a4_mon_banter_weak: {
@@ -789,7 +789,7 @@ Something in you, deep down in the place where the cold lives, says that you did
     enter: g => { g.meet('dana'); },
     text: g => `The lounge TV is on the news. Half the floor is lying on the carpet so they can see it at the bolted-on angle. It's about the Hitch: Inquirer reporter Dana Fiorillo on the steps of the Halcyon building, sharp as a tack in a blazer, asking a Halcyon spokesman in a quarter-zip why the building had lights on when the whole of North Philly was dark. The spokesman says *"backup systems"* four times in ninety seconds.
 
-${g.f('video') ? 'And then, before the weather, a segment: **"Philly\'s Newest Mystery: WAWA GUY."** Nine seconds of phone footage from the corner of Broad and Cecil B. Moore. A blur. A thief. ' + (g.f('wawa') === 'slip' ? 'A fifteen-year-old riding into a bus shelter holding a hoagie he didn\'t buy.' : g.f('wawa') === 'trip' ? 'A foot that moves faster than the frame rate.' : 'A smear of motion holding a Shorti.') + ' It has four hundred thousand views. Philly Twitter has already made it a meme. It\'s been set to the *Rocky* theme. It\'s been set to *Gonna Fly Now*. It\'s been set to Gritty\'s goal song.\n\nThe anchor, chuckling: *"Whoever you are, Wawa Guy, Philadelphia salutes you. Please, call your mother."*\n\nThe whole lounge is screaming.\n\nsimone: WAWA GUY. *WAWA GUY*. That\'s a man who\'s never been told no by a hoagie in his life.' : 'Somebody\'s showing a video on their phone of a kid on Broad chasing a bike thief and losing, and the caption on it says **WAWA GUY (almost)**, and it has thirty thousand views, and Philly Twitter is being *mean* about it.\n\nsimone: Wawa Guy. Poor Wawa Guy. He tried. Bless his heart.'}
+${g.f('video') ? 'And then, before the weather, a segment: **"Philly\'s Newest Mystery: WAWA GUY."** Nine seconds of phone footage from the corner of Broad and Cecil B. Moore. A blur. A thief. ' + (g.f('wawa') === 'slip' ? 'A fifteen-year-old riding into a bus shelter holding a hoagie he didn\'t buy.' : g.f('wawa') === 'trip' ? 'A foot that moves faster than the frame rate.' : 'A smear of motion holding a Shorti.') + ' It has four hundred thousand views. Philly Twitter has already made it a meme. It\'s been set to the *Rocky* theme. It\'s been set to *Fly, Eagles Fly*. It\'s been set to Gritty\'s goal song.\n\nThe anchor, chuckling: *"Whoever you are, Wawa Guy, Philadelphia salutes you. Please, call your mother."*\n\nThe whole lounge is screaming.\n\nsimone: WAWA GUY. Y\'all. Somebody got a superpower and used it to do a *bit*. That\'s a theater kid\'s soul in a pizza shirt. …Salvatore, you look pale.' : 'Somebody\'s showing a video on their phone of a kid on Broad chasing a bike thief and losing, and the caption on it says **WAWA GUY (almost)**, and it has thirty thousand views, and Philly Twitter is being *mean* about it.\n\nsimone: Wawa Guy. Poor Wawa Guy. He tried. Bless his heart.'}
 
 ${g.f('nik_told') === 'told' ? 'Nik is next to you on the couch, completely rigid, staring straight ahead with the face of a man trying to keep a live bird in his mouth. When the video plays, he kicks you, hard, in the ankle.' : 'Nik is watching the video over and over on his phone, slowing it down, frame by frame, with an expression you don\'t love.'}
 
@@ -891,7 +891,7 @@ Her hand is shaking.
 
 She whispers, to nobody, so quietly it's barely a breath:
 
-jules: Okay.
+jules: One in three quadrillion.
 
 Then she closes her eyes and rolls it one more time, and this time she *wants* a one. She wants it like she's never wanted anything. She wants to lose, just once, to know she still can.
 
@@ -930,7 +930,7 @@ He raises his left hand, slowly, and puts one finger to his lips. *Shh.*
 
 The hand is missing a finger. The ring finger, gone at the knuckle.
 
-Then the 4 bus comes down Broad between you, a long bright wall of windows and light, rain sheeting off its roof.
+Then the 16 comes down Broad between you, a long bright wall of windows and light, rain sheeting off its roof.
 
 When it passes, he's gone.
 

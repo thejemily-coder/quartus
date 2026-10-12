@@ -167,7 +167,7 @@ frank: Spam. Extended warranty.
 
 sam: On the cab?
 
-frank: On my *life*, Sammy. They want to extend my life.
+frank: On my *life*, kid. They want to extend my life.
 
 He's joking, and Pop never jokes. You file that away in the drawer where you keep things you don't want to look at.`,
       next: 'a1_arrive'
@@ -299,7 +299,7 @@ You stop.
 
 You look back.
 
-Mr. Abernathy has gotten the fridge as far as the stairwell door, apparently also defeated by the elevator line, and he's standing with both hands on his lower back, bent at the angle of a question mark. The girl is beside him trying to lift her end. She's stronger than she looks, but it's a two-person fridge, and one of the two people is seventy.
+Mr. Abernathy has gotten the fridge as far as the stairwell door, apparently also defeated by the elevator line, and he's standing with both hands on his lower back, bent at the angle of a question mark. The girl is beside him trying to lift her end. She's stronger than she looks, but it's a two-person fridge, and one of the two people is pushing seventy.
 
 You put your hamper down on the landing.
 
@@ -434,7 +434,7 @@ sam: I'm 9-14.
 
 jules[FRIDGE GIRL]: *Of course* you are.
 
-She says it the way you'd say it about weather in Philadelphia: not personally, just as a general fact about the universe and its contempt for her. She unlocks her door, and you carry the fridge in and set it down in the only spot it fits, under a window with a view of a Rite Aid and, beyond it, the whole of North Philly in the August haze. It's beautiful, if you squint, and if you're from here.
+She says it the way you'd say it about weather in Philadelphia: not personally, just as a general fact about the universe and its contempt for her. She unlocks her door, and you carry the fridge in and set it down in the only spot it fits, under a window with a view of a shuttered Rite Aid and, beyond it, the whole of North Philly in the August haze. It's beautiful, if you squint, and if you're from here.
 
 ${g.f('stairs_result') === 'fail' ? 'The dent faces the room. Neither of you mentions it. It\'s the loudest thing in there.\n\n' : ''}She sets your lamp down on her desk. Then she seems to realize what she's done, picks it back up, and hands it to you like returning a library book.
 
@@ -577,9 +577,9 @@ MRS. BHATTACHARYA: Are you a good boy, Sam?
 
 sam: …Most days?
 
-MRS. BHATTACHARYA: Most days. Okay. Honest. Good. Nikhil, he is honest, I like him. Are you eating?
+MRS. BHATTACHARYA: "Most days." That's an honest answer. Nikhil, he's honest, I like him. Has he eaten? Have *you* eaten?
 
-nik: Ma, I've been here for two hours—
+nik: Ma, haan, haan, I ate, he ate, everybody ate, I've been here two hours—
 
 He finally gets her off the phone, and his whole body unclenches like a fist. He's skinny and nervous, with a Rutgers hoodie (*"It was my cousin's, it's ironic, it's a long story"*), glasses he pushes up roughly every four seconds, and the general vibe of a guy who's been rehearsing this conversation since June.
 
@@ -627,7 +627,7 @@ ${g.f('promise_sundays') ? 'Gigi has wandered over to Nik\'s monitors and is ask
           fx: g => { g.bond('nik', { affection: 2 }); g.flag('nik_greet', 'handshake'); }, go: 'a1_room_nik' },
         { text: '"Three monitors. What are you, NASA? Show me."', tag: 'Nik',
           fx: g => { g.bond('nik', { respect: 2 }); g.flag('nik_greet', 'monitors'); }, go: 'a1_room_nik' },
-        { text: '"Fair warning. My mother is going to feed you until you die. You can\'t stop it. Nobody can."', tag: 'Nik',
+        { text: '"Fair warning. My mother\'s gonna feed you till you die. Sunday gravy, Wednesday gravy. You can\'t stop it. Nobody can."', tag: 'Nik',
           fx: g => { g.bond('nik', { affection: 1, trust: 1 }); g.flag('nik_greet', 'warning'); }, go: 'a1_room_nik' }
       ]
     },

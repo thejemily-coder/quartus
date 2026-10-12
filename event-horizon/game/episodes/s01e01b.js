@@ -14,9 +14,9 @@ grace: Okay. Fire exits are there and there. Quiet hours start at eleven on week
 
 She doesn't even pause.
 
-grace: I've seen a man's spleen in a Wawa parking lot. I'm allergic to cats. I've never been on academic probation.
+grace: I've seen a man's spleen in a Wawa parking lot. I have a cat named Duodenum. I've never pulled an all-nighter.
 
-A boy named Devontae guesses the cat allergy. He's wrong. Grace has a cat named Duodenum, and she shows you a picture. Nobody asks about the spleen, and you notice that nobody asks about the probation either. Grace notices you noticing, and her face closes a little, like a pharmacy at nine.
+A boy named Devontae guesses the spleen. He's wrong, and she describes it. The lie is the all-nighter, which, looking at her, should have been obvious. She shows you a picture of Duodenum anyway. He's enormous and furious, and she loves him more than anything in this building.
 
 It goes around the circle. Nik's three truths turn into a four-minute explanation of why one of them is technically half-true. Simone's lie is so obvious it loops back around to brilliant, and she gets a standing ovation from a girl who's going to follow her around for the rest of the year.
 
@@ -122,7 +122,7 @@ jules: That's not the point.`,
 
 Jules uncrosses her leg and sits up straight, and the room goes quiet without being asked. She has a way of doing that, you'll learn. It's not loudness. It's that she seems to expect it, so the world just does it.
 
-jules: I've never lost a game of cards. I have a twin brother. I've been in love.
+jules: I've never lost a game of cards. I have a twin brother. I've never broken a rule.
 
 She says it with absolutely nothing on her face. Not a flicker, no ear-touching. She could be reading a cereal box.
 
@@ -130,24 +130,24 @@ grace: Nine-fourteen. You seem invested. Guess.`,
     choices: [
       { text: '"Never lost at cards. Nobody never loses."', fx: g => { g.flag('jules_guess', 'cards'); g.bond('jules', { respect: -1 }); }, go: 'a2_ttal_reveal' },
       { text: '"The twin. You\'re an only child. You *radiate* only child."', fx: g => { g.flag('jules_guess', 'twin'); g.bond('jules', { tension: 1 }); }, go: 'a2_ttal_reveal' },
-      { text: '"You\'ve never been in love."', fx: g => { g.flag('jules_guess', 'love'); g.bond('jules', { respect: 1, tension: 1 }); }, go: 'a2_ttal_reveal' }
+      { text: '"Never broken a rule. You\'re *here*. I heard your mother on the phone."', fx: g => { g.flag('jules_guess', 'love'); g.bond('jules', { respect: 1, tension: 1 }); }, go: 'a2_ttal_reveal' }
     ]
   },
   a2_ttal_reveal: {
     enter: g => {
       g.know('jules_never_loses', ['sam'], 'Jules says she has never lost a game of cards. It was one of her truths.');
       g.know('jules_twin', ['sam'], 'Jules has a twin brother at Penn.');
-      g.know('jules_never_love', ['sam'], 'Jules has never been in love. It was her lie in two truths and a lie.');
+      g.know('jules_chose_temple', ['sam'], 'Jules says she\'s never broken a rule. That was the lie. She chose Temple, apparently over her mother\'s objections.');
     },
     text: g => `${{
-      cards: 'Simone is already shaking her head before you finish.\n\nsimone: That one\'s true. She took three hundred dollars off my cousin at graduation. She took his *watch*. He still talks about it like a war.\n\njules: I gave the watch back.\n\nsimone: You gave it back *engraved*.\n\nThe twin, it turns out, is real too. Hugh. Penn, Wharton. "He\'s a delight," Jules says, in the voice of someone describing a weather system. "Everyone says so."\n\nWhich leaves the lie.',
-      twin: 'jules: Hugh. Penn. Wharton. He\'s a delight. Everyone says so.\n\nShe says it in the voice of someone describing a weather system. Simone confirms the cards too: three hundred dollars and a watch off her cousin at graduation. ("I gave the watch back." "You gave it back *engraved*.")\n\nWhich leaves the lie.',
-      love: 'For one second, maybe less, nothing happens on her face at all. Then she picks up her seltzer and takes a sip, which, you\'ll learn, is the closest Juliet Pemberton comes to flinching.\n\njules: Correct.\n\nThe room does a long, slow *ooooh*. Somebody whistles. Simone looks at her roommate with her eyebrows somewhere near her hairline, like she\'s just learned something she plans to bring up later in private, at length.\n\nThe cards were true (three hundred dollars and a watch, off Simone\'s cousin at graduation). The twin was true: Hugh, Penn, Wharton, "a delight, everyone says so."'
+      cards: 'Simone is already shaking her head before you finish.\n\nsimone: That one\'s true. She took forty dollars off me in gin rummy last night, and I still don\'t know what gin rummy *is*.\n\njules: I explained it twice.\n\nsimone: You explained it *while winning*.\n\nThe twin, it turns out, is real too. Hugh. Penn, Wharton. "He\'s a delight," Jules says, in the voice of someone describing a weather system. "Everyone says so."\n\nWhich leaves the lie.',
+      twin: 'jules: Hugh. Penn. Wharton. He\'s a delight. Everyone says so.\n\nShe says it in the voice of someone describing a weather system. Simone confirms the cards too: forty dollars, gin rummy, last night. ("I explained it twice." "You explained it *while winning*.")\n\nWhich leaves the lie.',
+      love: 'For one second, maybe less, nothing happens on her face at all. Then she picks up her seltzer and takes a sip, which, you\'ll learn, is the closest Juliet Pemberton comes to flinching.\n\njules: Correct.\n\nShe lets the room wait, exactly long enough.\n\njules: I chose Temple.\n\nThe room does a long, slow *ooooh*. Somebody whistles. Simone looks at her roommate with her eyebrows somewhere near her hairline, like she\'s just learned something she plans to bring up later in private, at length.\n\nThe cards were true (forty dollars off Simone in gin rummy, last night). The twin was true: Hugh, Penn, Wharton, "a delight, everyone says so."'
     }[g.f('jules_guess')]}
 
-${g.f('jules_guess') !== 'love' ? 'jules: I\'ve never been in love.\n\nShe says it to the room, but she says it looking at you, and then she looks away so fast you almost miss it.' : 'Which means the lie was the love.'}
+${g.f('jules_guess') !== 'love' ? 'jules: I\'ve never broken a rule.\n\nA pause, exactly long enough.\n\njules: I chose Temple.' : 'Which means the lie was the rule. Juliet Pemberton, Main Line, Honors, chose a public university on North Broad like it was a crime.'}
 
-She's never been in love. She has never lost a game of cards. She has a twin brother who is a delight. You walk back to 9-14 afterward knowing three true things about Juliet Pemberton, and somehow you feel like you know less than when you started.`,
+She chose Temple like it was a crime. She has never lost a game of cards. She has a twin brother who is a delight. You walk back to 9-14 afterward knowing three true things about Juliet Pemberton, and somehow you feel like you know less than when you started.`,
     next: 'a2_hub'
   },
 
@@ -181,7 +181,7 @@ Nothing, it turns out, is a lot of things. You can't do all of them.`,
 
 He looks you up and down.
 
-ciro: You're the Kearney boy. Rosa's son. She called me.
+ciro: You're the Kearney boy. Rosa's son. She said you were handsome. Mothers lie. She called me.
 
 sam: She— When did she call you?
 
@@ -199,7 +199,7 @@ He hands you an insulated bag, a Ciro's T-shirt two sizes too big, and a slip of
 
 ciro: Fourteen an hour plus tips. You eat what you drop. You don't eat what you don't drop. If you drop *on purpose*, I know. I always know. Go. You deliver like a funeral, I fire you.
 
-The dinner rush is a blur of North Philly at golden hour: rowhouse stoops, grad students in high-rises, a Baptist church picnic that orders nine pies and pays in exact change, an old man on Norris Street who answers the door in a bathrobe and tells you, unprompted, that he saw Dr. J play at the Palestra in '74. Tips are a contact sport.`,
+The dinner rush is a blur of North Philly at golden hour: rowhouse stoops, grad students in high-rises, a Baptist church picnic that orders nine pies and pays in exact change, an old man on Norris Street who answers the door in a bathrobe and tells you, unprompted, that he was at the Spectrum for Dr. J's first home game in '76. Tips are a contact sport.`,
     choices: [
       { text: 'Work the doors. Smile, chat, remember names. Make them like you.',
         check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'hustle', label: 'Tips', on: { strong: 'a2_ciro_strong', weak: 'a2_ciro_weak', miss: 'a2_ciro_miss' } } },
@@ -255,27 +255,27 @@ He tells you about work. The union's got him on a crew at the Navy Yard building
 
 Then, casual, cracking another beer:
 
-vinnie: Oh, yo. Saw your pop Tuesday. Melrose Diner. Breakfast with Dante Iannucci.
+vinnie: Oh, yo. Saw your pop Tuesday. Melrose Diner. Back booth, with some young guy in a real nice jacket. Not a cab guy.
 
-He says it like it's nothing. It isn't nothing. Everybody in South Philly knows what the Iannuccis are, the way you know which corner floods when it rains.
+He says it like it's nothing. It isn't nothing. Everybody in South Philly knows that kind of jacket, the way you know which corner floods when it rains.
 
 vinnie: Prob'ly nothing. Probably cabs or whatever. Just saying I saw him.`,
     choices: [
-      { text: '"What do you mean, *with* Dante Iannucci? Like at his table? Vin. What did it look like?"', tag: 'Push',
+      { text: '"What young guy? Vin. Who? What did it look like?"', tag: 'Push',
         check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'streetwise', label: 'Get it out of Vinnie', on: { strong: 'a2_vinnie_strong', weak: 'a2_vinnie_weak', miss: 'a2_vinnie_weak' } } },
       { text: 'Let it go. Pop\'s Pop. "Whatever. How\'s your mom?"', tag: 'Let it go',
-        fx: g => { g.bond('vinnie', { trust: 1 }); g.flag('vinnie_letgo'); g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop having breakfast with Dante Iannucci at the Melrose Diner.'); }, go: 'a2_vinnie_end' }
+        fx: g => { g.bond('vinnie', { trust: 1 }); g.flag('vinnie_letgo'); g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop in a back booth at the Melrose Diner with a young guy in an expensive jacket.'); }, go: 'a2_vinnie_end' }
     ]
   },
   a2_vinnie_strong: {
-    enter: g => { g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop having breakfast with Dante Iannucci at the Melrose Diner. Dante did the talking. Pop didn\'t eat.'); g.bond('vinnie', { trust: 1, respect: 1 }); },
+    enter: g => { g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop in a back booth at the Melrose Diner with a young guy in an expensive jacket. The jacket did the talking and paid. Pop didn\'t eat.'); g.bond('vinnie', { trust: 1, respect: 1 }); },
     text: `Vinnie looks off the side of the roof for a second.
 
-vinnie: Booth in the back. Dante did all the talking. Your pop didn't eat. He had eggs in front of him and he didn't touch 'em, and then Dante paid. For both.
+vinnie: Booth in the back. The jacket did all the talking. Your pop didn't eat. He had eggs in front of him and he didn't touch 'em, and then the jacket paid. For both.
 
 He takes a long pull of the Yuengling.
 
-vinnie: Your pop don't let *nobody* pay for him, Sal. You know that. I'm just saying. I'm just telling you what I saw.
+vinnie: Your pop don't let *nobody* pay for him, Sally. You know that. I'm just saying. I'm just telling you what I saw.
 
 sam: Yeah.
 
@@ -285,7 +285,7 @@ The way he says it makes you think he's already asked around, and doesn't want t
     next: 'a2_vinnie_end'
   },
   a2_vinnie_weak: {
-    enter: g => { g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop having breakfast with Dante Iannucci at the Melrose Diner.'); g.bond('vinnie', { tension: 1 }); },
+    enter: g => { g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop in a back booth at the Melrose Diner with a young guy in an expensive jacket.'); g.bond('vinnie', { tension: 1 }); },
     text: `vinnie: Relax. It's a diner. Everybody eats at the diner.
 
 sam: Vin.
@@ -300,7 +300,7 @@ He laughs it off, and you let him, because the alternative is fighting with Vinn
 
 vinnie: Main Line? Oh, you're *done*. You're done, Sally. She's gonna eat you like a soft pretzel.
 
-sam: I'm not into her.
+sam: I'm not into her. She's a whole jawn, Vin. A *beverage center* jawn.
 
 vinnie: You said "beverage center" in her voice. You did the *voice*.
 
@@ -357,7 +357,7 @@ femi: It's okay. Week zero. Come back Monday. I'm always here. Nobody notices, b
   a2_lib_talk: {
     text: `You close the syllabus, and Femi looks almost startled, like he's not used to being the more interesting option.
 
-He grew up in Upper Darby. His parents are both nurses on opposite shifts, so he basically raised himself and his little sister in the hours between. He works three jobs: the desk, a TA gig, weekend shifts at an Amazon warehouse in Bensalem. He's going to be an economist, the kind that *"explains to rich people why poor people are poor, using graphs, so they'll listen."*
+He grew up in Upper Darby. His parents are both nurses on opposite shifts, so he basically raised himself and his little sister in the hours between. His mother calls him Oluwafemi only when she's angry, which he says is "every time the phone bill comes, and on Nigerian Independence Day if I forget to call my grandmother in Ibadan." He works three jobs: the desk, a TA gig, weekend shifts at an Amazon warehouse in Bensalem. He's going to be an economist, the kind that *"explains to rich people why poor people are poor, using graphs, so they'll listen."*
 
 femi: You're the first person who's sat at this desk on purpose since June. Do you know that? People walk right past me. I could set myself on fire and they'd be like, wow, warm in here.
 
@@ -409,7 +409,7 @@ nonna: Then you wear a jacket.
 
 She hands the phone back to Ma like she's just reminded you to floss. Ma comes back on, and her voice is lighter, the way it gets when she's covering.
 
-rosa: She's been like this all week. She had Gigi count the clocks in the house yesterday. *Count them.* Twenty-two clocks, Sammy. I didn't know we had twenty-two clocks.
+rosa: She's been like this all week. She had Gigi count the clocks in the house yesterday. *Count them.* Twenty-two clocks, Salvatore. I didn't know we had twenty-two clocks.
 
 mikey: Tell him don't do anything stupid!
 
@@ -592,7 +592,7 @@ She's at the last pool table in the back, under a buzzing fluorescent light, in 
 
 ${g.f('did_party') ? 'Callum is nowhere. "Early practice," Simone says. "Crew. They wake up at 4:45 to sit in a boat backwards. It\'s like a cult with oars."' : ''}
 
-simone: Her grandmother taught her. Pool, poker, bridge, backgammon. Her grandmother is, like, a Bond villain. She has a monocle. I've *seen* the monocle.
+simone: Nobody learns to play like that at a country club. Somebody *taught* her. Somebody mean. I've known her two days and I'd bet my whole meal plan it was a grandmother.
 
 nik: Is that legal? Is she allowed to take their money? Is that gambling?
 
@@ -678,7 +678,7 @@ sam: You're exactly as bad as you look.
 
 jules: I'm aware.
 
-There's a flicker, almost, at the corner of her mouth. It's the second time today you've seen it. You're starting to keep count.`,
+Something happens at the corner of her mouth, and she puts it away like a card she doesn't want you to see.`,
     next: 'a2_pool_after'
   },
   a2_pool_partial: {
@@ -742,10 +742,9 @@ She says it the way people say *I'm fine*: fast, a little too firm, like a door 
 
 Then she's gone, out through the glass doors into the August night, with Simone hurrying after her mouthing *"I'll text you"* at you, which is bizarre, since you never gave her your number. Your phone buzzes before you even reach Broad Street.
 
-TXT simone: its simone. i got ur number from nik. nik is very easy
-TXT simone: u owe her a favor?? or u lost money?? either way. iconic. tragic. iconic
-TXT simone: also u should know. ive never seen anybody make her almost laugh twice in one day
-TXT simone: callum hasnt done it once since graduation`,
+TXT simone: It's Simone. I got your number from Nik. Nik is VERY easy.
+TXT simone: Salvatore Kearney. You played Juliet Pemberton. For STAKES. In PUBLIC. Iconic. Tragic. Iconic.
+TXT simone: For the record she called you "the refrigerator person" four times on the walk home. I'm not saying anything. I'm just counting.`,
     next: 'a2_night'
   },
 
