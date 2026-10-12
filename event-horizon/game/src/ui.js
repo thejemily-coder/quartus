@@ -644,17 +644,24 @@
     const skip = el('button', 'skip', 'Skip titles'); o.appendChild(skip);
     document.body.appendChild(o);
     const cast = (ep.cast || []).map(id => EH.CAST[id] && EH.CAST[id].full).filter(Boolean);
-    const cr = $('#cr', o); let i = 0; const per = 5200 / Math.max(1, cast.length);
+    const cr = $('#cr', o);
+    // Each name holds long enough to read (about 1.4s fully visible), then the title lands.
+    const per = 1900, lead = 700, titleLen = 5200;
+    const creditsEnd = lead + cast.length * per, total = creditsEnd + titleLen;
+    $('.ring', o).style.animationDuration = total + 'ms';
+    $('.dots', o).style.animationDuration = total + 'ms';
+    [$('.ttl', o), $('.stamp', o)].forEach(n => { n.style.animationDuration = titleLen + 'ms'; n.style.animationDelay = creditsEnd + 'ms'; n.style.animationFillMode = 'both'; });
     const timers = [];
     cast.forEach((nm, k) => timers.push(setTimeout(() => {
       cr.style.transition = 'none'; cr.style.opacity = 0; cr.innerHTML = 'Starring<b>' + esc(nm) + '</b>';
-      requestAnimationFrame(() => { cr.style.transition = 'opacity .35s'; cr.style.opacity = 1; });
-      timers.push(setTimeout(() => { cr.style.opacity = 0; }, per - 250));
-    }, 300 + k * per)));
+      requestAnimationFrame(() => requestAnimationFrame(() => { cr.style.transition = 'opacity .4s'; cr.style.opacity = 1; }));
+      timers.push(setTimeout(() => { cr.style.opacity = 0; }, per - 400));
+    }, lead + k * per)));
+    timers.push(setTimeout(() => Snd.play('title'), Math.max(0, creditsEnd - 1500)));
     let closed = false;
     const end = () => { if (closed) return; closed = true; timers.forEach(clearTimeout); o.remove(); done(); };
     skip.onclick = end; skip.focus();
-    timers.push(setTimeout(end, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 1500 : 9200));
+    timers.push(setTimeout(end, total + 300));
   }
   function playPreviously(lines, done) {
     const o = el('div', 'overlay');

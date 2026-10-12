@@ -220,9 +220,9 @@ button{font:inherit;color:inherit}
 .seq .credit b{display:block;font-family:var(--display);font-weight:800;letter-spacing:.14em;font-size:clamp(1.3rem,4.4vw,2.4rem);margin-top:6px}
 .seq .ttl{position:absolute;font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(2.6rem,10vw,6.4rem);line-height:.85;text-align:center;opacity:0;
   text-shadow:-5px 0 0 rgba(0,137,191,.9),5px 0 0 rgba(200,0,106,.9);animation:ttl 9s ease forwards}
-@keyframes ttl{0%,62%{opacity:0;letter-spacing:.4em;filter:blur(8px)}76%{opacity:1;letter-spacing:.02em;filter:blur(0)}96%{opacity:1}100%{opacity:0}}
+@keyframes ttl{0%{opacity:0;letter-spacing:.4em;filter:blur(8px)}35%{opacity:1;letter-spacing:.02em;filter:blur(0)}88%{opacity:1}100%{opacity:0}}
 .seq .stamp{position:absolute;bottom:8%;font-family:var(--mono);font-size:.72rem;letter-spacing:.4em;text-transform:uppercase;opacity:0;animation:fadeLate 9s ease forwards}
-@keyframes fadeLate{0%,78%{opacity:0}86%,96%{opacity:.85}100%{opacity:0}}
+@keyframes fadeLate{0%,30%{opacity:0}50%,88%{opacity:.85}100%{opacity:0}}
 .skip{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));background:transparent;border:1.5px solid rgba(255,255,255,.5);color:#ddd;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;cursor:pointer}
 .prev{width:min(92vw,720px);display:flex;flex-direction:column;gap:14px}
 .prev .k{font-family:var(--mono);letter-spacing:.4em;text-transform:uppercase;font-size:.78rem;color:#B9B7C2}
@@ -4394,17 +4394,24 @@ It doesn't change.
     const skip = el('button', 'skip', 'Skip titles'); o.appendChild(skip);
     document.body.appendChild(o);
     const cast = (ep.cast || []).map(id => EH.CAST[id] && EH.CAST[id].full).filter(Boolean);
-    const cr = $('#cr', o); let i = 0; const per = 5200 / Math.max(1, cast.length);
+    const cr = $('#cr', o);
+    // Each name holds long enough to read (about 1.4s fully visible), then the title lands.
+    const per = 1900, lead = 700, titleLen = 5200;
+    const creditsEnd = lead + cast.length * per, total = creditsEnd + titleLen;
+    $('.ring', o).style.animationDuration = total + 'ms';
+    $('.dots', o).style.animationDuration = total + 'ms';
+    [$('.ttl', o), $('.stamp', o)].forEach(n => { n.style.animationDuration = titleLen + 'ms'; n.style.animationDelay = creditsEnd + 'ms'; n.style.animationFillMode = 'both'; });
     const timers = [];
     cast.forEach((nm, k) => timers.push(setTimeout(() => {
       cr.style.transition = 'none'; cr.style.opacity = 0; cr.innerHTML = 'Starring<b>' + esc(nm) + '</b>';
-      requestAnimationFrame(() => { cr.style.transition = 'opacity .35s'; cr.style.opacity = 1; });
-      timers.push(setTimeout(() => { cr.style.opacity = 0; }, per - 250));
-    }, 300 + k * per)));
+      requestAnimationFrame(() => requestAnimationFrame(() => { cr.style.transition = 'opacity .4s'; cr.style.opacity = 1; }));
+      timers.push(setTimeout(() => { cr.style.opacity = 0; }, per - 400));
+    }, lead + k * per)));
+    timers.push(setTimeout(() => Snd.play('title'), Math.max(0, creditsEnd - 1500)));
     let closed = false;
     const end = () => { if (closed) return; closed = true; timers.forEach(clearTimeout); o.remove(); done(); };
     skip.onclick = end; skip.focus();
-    timers.push(setTimeout(end, window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 1500 : 9200));
+    timers.push(setTimeout(end, total + 300));
   }
   function playPreviously(lines, done) {
     const o = el('div', 'overlay');
