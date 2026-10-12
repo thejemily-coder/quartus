@@ -69,5 +69,6 @@ The user reads this conversation and must not learn the secrets. The bible, seas
    - In a new session, first read the artifact (`Artifact` action `read`, url above).
    - Publish with `url` = the artifact URL, `file_path` = `whitlock/whitlock.html`, and `files` = `{"episodes/index.json": "whitlock/episodes/index.json", "episodes/<next id>.json": "whitlock/episodes/<next id>.json"}`.
    - Omit `capabilities` so the stored `{db: {}}` is kept.
+   - The `files` sources resolve against the current working directory. If the shell has moved into `whitlock/`, use `episodes/...` instead of `whitlock/episodes/...`.
 
 8. **Commit and push** to the session's branch (vault, played, episodes, index). Then tell the user in a sentence or two that the next episode is up, with the link, and nothing about its contents.

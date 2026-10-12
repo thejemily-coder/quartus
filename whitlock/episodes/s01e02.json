@@ -196,15 +196,12 @@
      "t": "texts",
      "thread": "Margaux (Don't)",
      "onCal": true,
-     "msgs": [],
-     "if": {
-      "e1_margaux_open": "flirt"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> margaux",
-     "text": "You flirt like you're being graded. Get dressed like it too.",
+     "msgs": [
+      {
+       "from": "margaux",
+       "text": "You flirt like you're being graded. Get dressed like it too."
+      }
+     ],
      "if": {
       "e1_margaux_open": "flirt"
      }
@@ -294,7 +291,7 @@
      "set": {
       "e2_cold": "flirt_text"
      },
-     "remember": "Margaux will remember that.",
+     "remember": "",
      "reaction": [
       {
        "t": "a",
@@ -418,24 +415,7 @@
     },
     {
      "t": "a",
-     "text": "Then he gets to Cal, and stops, and smiles, slow. \"Oh. You're the boy who introduced himself to the Herald as a building.\" The room laughs. Somebody whispers \"like the building\" in a voice.",
-     "if": {
-      "e1_name": "full"
-     }
-    },
-    {
-     "t": "a",
-     "text": "Then he gets to Cal, and stops, and smiles, slow. \"Oh. You're the boy whose grandfather is a building.\" The room laughs.",
-     "if": {
-      "e1_name": "first"
-     }
-    },
-    {
-     "t": "a",
-     "text": "Then he gets to Cal, and stops, and smiles, slow. \"Oh. You're the boy whose grandfather is a building.\" The room laughs.",
-     "if": {
-      "e1_name": "pruitt"
-     }
+     "text": "Then he gets to Cal, and stops, and smiles, slow. \"Oh. You're the boy whose grandfather is a building.\" The room laughs."
     },
     {
      "t": "a",
@@ -714,7 +694,7 @@
      "set": {
       "e2_simon": "read"
      },
-     "remember": "Simon will remember that.",
+     "remember": "",
      "reaction": [
       {
        "t": "line",
@@ -971,7 +951,7 @@
      "set": {
       "e2_single": "truth"
      },
-     "remember": "Dev will remember that.",
+     "remember": "",
      "reaction": [
       {
        "t": "line",
@@ -1155,7 +1135,7 @@
     },
     {
      "t": "a",
-     "text": "Margaux on the floor of her room in the dark, saying it to the wall: Nobody knows. Not your friends. Nobody. And Priya, who is his friend, who has the screenshot that says always, holding the sweatshirt up between them like evidence."
+     "text": "Margaux in her bed in the dark, her back to him, saying it to the wall: Nobody knows. Not your friends. Nobody. And Priya, who is his friend, who has the screenshot that says always, holding the sweatshirt up between them like evidence."
     }
    ],
    "next": "n6",
@@ -2081,7 +2061,7 @@
       "e2_dots": "cut",
       "e2_id_cut": true
      },
-     "remember": "Dev noticed.",
+     "remember": "",
      "reaction": [
       {
        "t": "a",
@@ -2105,7 +2085,7 @@
     },
     {
      "id": "c",
-     "label": "Ask Danny why a junior needs side money that badly",
+     "label": "Ask Danny why a high-schooler needs side money that badly",
      "set": {
       "e2_dots": "asked"
      },
@@ -2113,7 +2093,7 @@
       {
        "t": "line",
        "who": "cal",
-       "text": "Can I ask you something? Why does a junior in high school need side money that badly?"
+       "text": "Can I ask you something? Why does a kid in high school need side money that badly?"
       },
       {
        "t": "a",
@@ -2298,6 +2278,10 @@
       {
        "t": "a",
        "text": "She almost smiles. She converts it into a sip of cold brew at the last second, like a professional."
+      },
+      {
+       "t": "a",
+       "text": "Before she goes, she takes his phone out of his hand without asking, types a number in under NORA (HERALD, NOT A DATE), and texts herself from it. \"For fact-checking. Not a date.\""
       }
      ]
     },
@@ -2335,6 +2319,10 @@
       {
        "t": "a",
        "text": "She writes four words and turns the notebook so he can read them: declined to comment. Then, underneath, smaller: paid for this reporter's coffee. He realizes she's going to print both, side by side, and that it's going to be devastating, and that it's going to be fair."
+      },
+      {
+       "t": "a",
+       "text": "Before she goes, she takes his phone out of his hand without asking, types a number in under NORA (HERALD, NOT A DATE), and texts herself from it. \"So you can scream at me directly. Not a date.\""
       }
      ]
     },
@@ -2685,7 +2673,16 @@
     },
     {
      "t": "a",
-     "text": "He hands it over. Then he looks up past Cal at Lowell House, at the third floor, at the bay window over the Quad with the Commons sign reflected in it."
+     "text": "He hands it over."
+    },
+    {
+     "t": "line",
+     "who": "brooks",
+     "text": "Your father's office sent me your number, by the way. Expect a text. I text first and late."
+    },
+    {
+     "t": "a",
+     "text": "Then he looks up past Cal at Lowell House, at the third floor, at the bay window over the Quad with the Commons sign reflected in it."
     },
     {
      "t": "line",
@@ -2861,7 +2858,7 @@
       },
       {
        "t": "a",
-       "text": "He leaves the card in the quarter-zip anyway, on the table, on top of the eggs, and walks off with his brothers. Dev says nothing for a long moment. Then he bumps Cal's shoulder with his own, once, hard enough to almost put him into the egg table, and leaves his shoulder there a second longer than a bump needs."
+       "text": "He leaves the card tucked in the quarter-zip in Cal's hands anyway, and walks off with his brothers. Dev says nothing for a long moment. Then he bumps Cal's shoulder with his own, once, hard enough to almost put him into the egg table, and leaves his shoulder there a second longer than a bump needs."
       }
      ]
     }
@@ -2900,15 +2897,12 @@
      "t": "texts",
      "thread": "Margaux (Don't)",
      "onCal": true,
-     "msgs": [],
-     "if": {
-      "e2_cold": "inside_out"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> margaux",
-     "text": "Right side out, please.",
+     "msgs": [
+      {
+       "from": "margaux",
+       "text": "Right side out, please."
+      }
+     ],
      "if": {
       "e2_cold": "inside_out"
      }
@@ -3282,7 +3276,7 @@
     },
     {
      "t": "a",
-     "text": "He picks up where he left off on Margaux, unprompted: \"She tutors, you know. Calculus. For money. In Fennimore, in the carrels, where she thinks nobody goes.\" Cal pretends not to care. Simon looks at his face and says, \"Eyebrow,\" and refills his glass.",
+     "text": "He picks up where he left off on Margaux, unprompted: \"She goes to the Fennimore carrels at midnight, you know. Alone, where she thinks nobody goes. Perfect girls don't do their homework in public.\" Cal pretends not to care. Simon looks at his face and says, \"Eyebrow,\" and refills his glass.",
      "if": {
       "e2_simon": "vances"
      }
@@ -3354,7 +3348,7 @@
      "set": {
       "e2_folder": "asked"
      },
-     "remember": "Simon will remember that.",
+     "remember": "",
      "reaction": [
       {
        "t": "a",
@@ -3454,15 +3448,12 @@
      "t": "texts",
      "thread": "Dad",
      "onCal": true,
-     "msgs": [],
-     "if": {
-      "e1_dad": "promise"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> richard",
-     "text": "Proud of you.",
+     "msgs": [
+      {
+       "from": "richard",
+       "text": "Proud of you."
+      }
+     ],
      "if": {
       "e1_dad": "promise"
      }
@@ -3471,15 +3462,12 @@
      "t": "texts",
      "thread": "Dad",
      "onCal": true,
-     "msgs": [],
-     "if": {
-      "e1_dad": "fight"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> richard",
-     "text": "Brooks says you'll be there. Prove me wrong about you.",
+     "msgs": [
+      {
+       "from": "richard",
+       "text": "Brooks says you'll be there. Prove me wrong about you."
+      }
+     ],
      "if": {
       "e1_dad": "fight"
      }
@@ -3488,15 +3476,12 @@
      "t": "texts",
      "thread": "Dad",
      "onCal": true,
-     "msgs": [],
-     "if": {
-      "e1_dad": "read"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> richard",
-     "text": "Brooks says you'll be there. I'll assume that's true.",
+     "msgs": [
+      {
+       "from": "richard",
+       "text": "Brooks says you'll be there. I'll assume that's true."
+      }
+     ],
      "if": {
       "e1_dad": "read"
      }
@@ -3688,7 +3673,7 @@
     },
     {
      "t": "a",
-     "text": "Brooks tilts it to the chandelier, the way Yusuf did at Dot's, and his mouth goes up at one corner.",
+     "text": "Brooks tilts it to the chandelier, the way a bouncer would, and his mouth goes up at one corner.",
      "if": {
       "e1_fake_id": true,
       "e2_id_cut": false
@@ -3851,11 +3836,11 @@
     {
      "t": "line",
      "who": "brooks",
-     "text": "The legacy toast. Make it funny at someone else's expense."
+     "text": "The legacy toast. Next time, make it funny at someone else's expense."
     },
     {
      "t": "a",
-     "text": "Next time make it funny at someone else's expense. His father's text, 1:14 a.m., Monday night, word for word. Not paraphrased. The same eight words, in the same order, in another man's mouth."
+     "text": "Next time make it funny at someone else's expense. His father's text, 1:14 a.m., Monday night, word for word. Not paraphrased. The same nine words, in the same order, in another man's mouth. Cal has told exactly one person about that text, and that person is not in this room. So it came from the other end."
     },
     {
      "t": "a",
@@ -3878,7 +3863,7 @@
      "set": {
       "e2_roast": "cruel"
      },
-     "remember": "Teddy will remember that.",
+     "remember": "",
      "reaction": [
       {
        "t": "a",
@@ -4229,7 +4214,7 @@
      "set": {
       "e2_dock": "dove"
      },
-     "remember": "You know the water now.",
+     "remember": "",
      "reaction": [
       {
        "t": "a",
@@ -4308,7 +4293,7 @@
      "set": {
       "e2_dock": "you_first"
      },
-     "remember": "You saw him afraid.",
+     "remember": "",
      "reaction": [
       {
        "t": "line",
@@ -4498,7 +4483,7 @@
      "set": {
       "e2_tunnel": "true_line"
      },
-     "remember": "Priya photographed it.",
+     "remember": "",
      "reaction": [
       {
        "t": "a",
@@ -4506,9 +4491,26 @@
       },
       {
        "t": "a",
-       "text": "I HAVE BEEN VERY CAREFUL ABOUT TELEPHONES EVER SINCE. The last line of the essay he wrote this morning, the one somebody named Marsh is going to read.",
+       "text": "I HAVE BEEN VERY CAREFUL ABOUT TELEPHONES EVER SINCE. The last line of the essay he wrote yesterday morning, the one somebody named Marsh is going to read.",
        "if": {
-        "e2_essay": "true"
+        "e2_essay": "true",
+        "e2_essay_sign": "whitaker"
+       }
+      },
+      {
+       "t": "a",
+       "text": "I HAVE BEEN VERY CAREFUL ABOUT TELEPHONES EVER SINCE. The last line of the essay he wrote yesterday morning, the one somebody named Marsh is going to read.",
+       "if": {
+        "e2_essay": "true",
+        "e2_essay_sign": "pruitt"
+       }
+      },
+      {
+       "t": "a",
+       "text": "I HAVE BEEN VERY CAREFUL ABOUT TELEPHONES EVER SINCE. The last line of the essay he wrote yesterday morning, the one still folded in quarters in his back pocket.",
+       "if": {
+        "e2_essay": "true",
+        "e2_essay_sign": "kept"
        }
       },
       {
@@ -4650,7 +4652,7 @@
      "set": {
       "e2_catwalk": "climbed"
      },
-     "remember": "Priya will remember that.",
+     "remember": "",
      "reaction": [
       {
        "t": "a",
@@ -4742,7 +4744,7 @@
      "set": {
       "e2_catwalk": "mom_threat"
      },
-     "remember": "Priya will remember that.",
+     "remember": "",
      "reaction": [
       {
        "t": "a",
@@ -4760,7 +4762,7 @@
       {
        "t": "line",
        "who": "priya",
-       "text": "You already did that once this week!",
+       "text": "You already did the mom thing once this week!",
        "if": {
         "e2_priya": "mom_text"
        }
@@ -4834,7 +4836,7 @@
     },
     {
      "t": "a",
-     "text": "Cal knows Simon has a photograph of his father in a folder under a book of Plath. He watches Simon want his father, here, in the dark, a hundred feet up. He says nothing. He doesn't know what he'd say. He doesn't know what it means.",
+     "text": "Cal knows Simon keeps a photograph of Richard Whitaker in a folder under a book of Plath. He watches Simon ask about a man he has never met, with a hunger, here in the dark, a hundred feet up. He says nothing. He doesn't know what he'd say. He doesn't know what it means.",
      "if": {
       "e2_folder": "snooped"
      }
@@ -4870,15 +4872,12 @@
      "t": "texts",
      "thread": "Dad",
      "onCal": true,
-     "msgs": [],
-     "if": {
-      "e1_dad": "promise"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> richard",
-     "text": "You gave your word.",
+     "msgs": [
+      {
+       "from": "richard",
+       "text": "You gave your word."
+      }
+     ],
      "if": {
       "e1_dad": "promise"
      }
@@ -4887,15 +4886,12 @@
      "t": "texts",
      "thread": "Dad",
      "onCal": true,
-     "msgs": [],
-     "if": {
-      "e1_dad": "fight"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> richard",
-     "text": "Exactly what I expected.",
+     "msgs": [
+      {
+       "from": "richard",
+       "text": "Exactly what I expected."
+      }
+     ],
      "if": {
       "e1_dad": "fight"
      }
@@ -4904,15 +4900,12 @@
      "t": "texts",
      "thread": "Dad",
      "onCal": true,
-     "msgs": [],
-     "if": {
-      "e1_dad": "read"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> richard",
-     "text": "Exactly what I expected.",
+     "msgs": [
+      {
+       "from": "richard",
+       "text": "Exactly what I expected."
+      }
+     ],
      "if": {
       "e1_dad": "read"
      }
@@ -4982,7 +4975,7 @@
      "set": {
       "e2_dad_reply": "truth"
      },
-     "remember": "Your father will remember that.",
+     "remember": "",
      "reaction": [
       {
        "t": "texts",
@@ -5035,7 +5028,7 @@
      "set": {
       "e2_dad_reply": "simon"
      },
-     "remember": "Read 11:54 PM.",
+     "remember": "",
      "reaction": [
       {
        "t": "line",
@@ -5121,23 +5114,16 @@
      "t": "texts",
      "thread": "Margaux (Don't)",
      "onCal": true,
-     "msgs": [],
-     "if": {
-      "e2_evening": "margaux"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> margaux",
-     "text": "Back door. Fifteen minutes.",
-     "if": {
-      "e2_evening": "margaux"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> margaux",
-     "text": "Nobody knows.",
+     "msgs": [
+      {
+       "from": "margaux",
+       "text": "Back door. Fifteen minutes."
+      },
+      {
+       "from": "margaux",
+       "text": "Nobody knows."
+      }
+     ],
      "if": {
       "e2_evening": "margaux"
      }
@@ -5146,23 +5132,16 @@
      "t": "texts",
      "thread": "Margaux (Don't)",
      "onCal": true,
-     "msgs": [],
-     "if": {
-      "e2_evening": "simon"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> margaux",
-     "text": "Back door. Fifteen minutes.",
-     "if": {
-      "e2_evening": "simon"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> margaux",
-     "text": "Bring my sweatshirt, coward.",
+     "msgs": [
+      {
+       "from": "margaux",
+       "text": "Back door. Fifteen minutes."
+      },
+      {
+       "from": "margaux",
+       "text": "Bring my sweatshirt, coward."
+      }
+     ],
      "if": {
       "e2_evening": "simon"
      }
@@ -5381,7 +5360,8 @@
      "who": "margaux",
      "text": "Does your Priya know where you are right now?",
      "if": {
-      "e2_priya_sweatshirt": "told"
+      "e2_priya_sweatshirt": "told",
+      "e2_evening": "margaux"
      }
     },
     {
@@ -5389,7 +5369,8 @@
      "who": "cal",
      "text": "Yes.",
      "if": {
-      "e2_priya_sweatshirt": "told"
+      "e2_priya_sweatshirt": "told",
+      "e2_evening": "margaux"
      }
     },
     {
@@ -5397,7 +5378,8 @@
      "who": "margaux",
      "text": "Then everybody will.",
      "if": {
-      "e2_priya_sweatshirt": "told"
+      "e2_priya_sweatshirt": "told",
+      "e2_evening": "margaux"
      }
     },
     {
@@ -5456,7 +5438,7 @@
       },
       {
        "t": "a",
-       "text": "It's not like Monday. Monday was a competition, both of them good at it and wanting the other to know. Tonight is slower. Her parka comes off his shoulders, then hers; the slip goes over her head with his hands, carefully, like taking something down from a high shelf. She's cold everywhere and then she isn't. She pulls him down on top of her and watches his face the whole time, eyes open, which she didn't do before, and when he moves inside her she says his name, just Cal, not Whitaker, not a joke, and holds on to the back of his neck like she's afraid of falling off the bed."
+       "text": "It's not like Monday. Monday was a competition, both of them good at it and wanting the other to know. Tonight is slower. His parka comes off her shoulders; the slip goes over her head with his hands, carefully, like taking something down from a high shelf. She's cold everywhere and then she isn't. She pulls him down on top of her and watches his face the whole time, eyes open, which she didn't do before, and when he moves inside her she says his name, just Cal, not Whitaker, not a joke, and holds on to the back of his neck like she's afraid of falling off the bed."
       },
       {
        "t": "a",
@@ -5478,7 +5460,7 @@
      "set": {
       "e2_margaux_end": "asked"
      },
-     "remember": "Margaux will remember that.",
+     "remember": "",
      "reaction": [
       {
        "t": "line",
@@ -5626,7 +5608,7 @@
      "set": {
       "e2_priya_end": "vow"
      },
-     "remember": "You swore.",
+     "remember": "",
      "reaction": [
       {
        "t": "a",
@@ -5677,7 +5659,7 @@
       },
       {
        "t": "a",
-       "text": "He doesn't say it. He can't. He reaches into his back pocket and takes out the pages he tore from the blue book this morning, folded in quarters, soft from a day of sitting on them, and hands them to her. She reads them by her phone light, all of it: the kite, the lobster rolls, the ice machine, the cord under the bathroom door.",
+       "text": "He doesn't say it. He can't. He reaches into his back pocket and takes out the pages he tore from the blue book on Wednesday, folded in quarters, soft from two days of sitting on them, and hands them to her. She reads them by her phone light, all of it: the kite, the lobster rolls, the ice machine, the cord under the bathroom door.",
        "if": {
         "e2_essay_sign": "kept"
        }
@@ -5736,7 +5718,7 @@
      "set": {
       "e2_priya_end": "counselor"
      },
-     "remember": "Priya will remember that.",
+     "remember": "",
      "reaction": [
       {
        "t": "a",
@@ -5826,16 +5808,12 @@
      "t": "texts",
      "thread": "R.W.",
      "onCal": false,
-     "msgs": [],
-     "if": {
-      "e2_thursday": "dinner",
-      "e2_dock": "dove"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> brooks",
-     "text": "He came. He swam. You'd have been proud.",
+     "msgs": [
+      {
+       "from": "brooks",
+       "text": "He came. He swam. You'd have been proud."
+      }
+     ],
      "if": {
       "e2_thursday": "dinner",
       "e2_dock": "dove"
@@ -5845,16 +5823,12 @@
      "t": "texts",
      "thread": "R.W.",
      "onCal": false,
-     "msgs": [],
-     "if": {
-      "e2_thursday": "dinner",
-      "e2_dock": "refused"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> brooks",
-     "text": "He came. He wouldn't swim. He's smarter than you were.",
+     "msgs": [
+      {
+       "from": "brooks",
+       "text": "He came. He wouldn't swim. He's smarter than you were."
+      }
+     ],
      "if": {
       "e2_thursday": "dinner",
       "e2_dock": "refused"
@@ -5864,16 +5838,12 @@
      "t": "texts",
      "thread": "R.W.",
      "onCal": false,
-     "msgs": [],
-     "if": {
-      "e2_thursday": "dinner",
-      "e2_dock": "you_first"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> brooks",
-     "text": "He made me go first. I didn't.",
+     "msgs": [
+      {
+       "from": "brooks",
+       "text": "He made me go first. I didn't."
+      }
+     ],
      "if": {
       "e2_thursday": "dinner",
       "e2_dock": "you_first"
@@ -5883,15 +5853,12 @@
      "t": "texts",
      "thread": "R.W.",
      "onCal": false,
-     "msgs": [],
-     "if": {
-      "e2_thursday": "anti"
-     }
-    },
-    {
-     "t": "line",
-     "name": "> brooks",
-     "text": "He didn't come. Like father like son.",
+     "msgs": [
+      {
+       "from": "brooks",
+       "text": "He didn't come. Like father like son."
+      }
+     ],
      "if": {
       "e2_thursday": "anti"
      }
@@ -6084,7 +6051,7 @@
    "msgs": [
     "Status report on my ward.",
     "Are you alive. Are you in love. Is it with a sorority. Blink twice.",
-    "Also you owe me forty dollars of Lillet, spiritually."
+    "Also you owe me an evening of Lillet, spiritually."
    ],
    "options": [
     {
@@ -6138,7 +6105,7 @@
     },
     {
      "id": "b",
-     "text": "Is this the coffee you owe me?"
+     "text": "Is this a threat or a flirt, Castellanos?"
     },
     {
      "id": "c",
