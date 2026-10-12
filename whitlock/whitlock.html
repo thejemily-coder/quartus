@@ -1,0 +1,1378 @@
+<title>Whitlock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: a single script-width reading column. Sticky masthead on top, tab bar (bottom on phones).
+   The palette follows the in-story calendar: gold (Aug–Sep), ember (Oct–Nov), frost (Dec–Feb), thaw (Mar–May), tide (Jun–Jul). */
+:root{
+  --bg:#f4efe1; --sf:#fbf8ef; --ink:#2a2418; --mu:#6f6450; --ac:#a86d14; --ac2:#4f6b3a; --ln:#ddd3bb; --on:#fffaf0;
+  --display:"Instrument Serif","Didot","Bodoni 72",Georgia,serif;
+  --body:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  --mono:"Courier Prime","Courier New",ui-monospace,monospace;
+  --col:42rem;
+}
+:root[data-season="ember"]{--bg:#f2e9e4;--sf:#fbf5f1;--ink:#2b1714;--mu:#76564f;--ac:#8e2b23;--ac2:#b5611a;--ln:#e2d1c9;--on:#fff6f2}
+:root[data-season="frost"]{--bg:#edf1f5;--sf:#f8fafc;--ink:#142130;--mu:#536779;--ac:#2c5a88;--ac2:#6d8199;--ln:#d2dce6;--on:#f5f9ff}
+:root[data-season="thaw"]{--bg:#f0f2e8;--sf:#fafbf4;--ink:#1c2419;--mu:#5c6855;--ac:#47733a;--ac2:#8b5f99;--ln:#d8dcca;--on:#f8fff4}
+:root[data-season="tide"]{--bg:#f5f0ea;--sf:#fffdf9;--ink:#1d2426;--mu:#5b686b;--ac:#c04a33;--ac2:#25797e;--ln:#e5dcd2;--on:#fff8f4}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#16130c;--sf:#201b12;--ink:#efe6d0;--mu:#a69878;--ac:#e1aa4a;--ac2:#93b277;--ln:#3a3224;--on:#1b160c;color-scheme:dark}
+  :root[data-season="ember"]:not([data-theme="light"]){--bg:#170d0c;--sf:#22130f;--ink:#f2e1d9;--mu:#b38f85;--ac:#e0705c;--ac2:#e6a057;--ln:#40261f;--on:#1a0c0a}
+  :root[data-season="frost"]:not([data-theme="light"]){--bg:#0b1119;--sf:#121b26;--ink:#e3ecf4;--mu:#8ea3b8;--ac:#86b8ea;--ac2:#a9bacd;--ln:#243344;--on:#0b1119}
+  :root[data-season="thaw"]:not([data-theme="light"]){--bg:#10140e;--sf:#171d14;--ink:#e6ecdf;--mu:#9aa88f;--ac:#93c77c;--ac2:#cda6da;--ln:#2c3627;--on:#10140e}
+  :root[data-season="tide"]:not([data-theme="light"]){--bg:#0d1415;--sf:#142022;--ink:#eaf1f1;--mu:#93a7a8;--ac:#f28d72;--ac2:#62c6c8;--ln:#243537;--on:#0d1415}
+}
+:root[data-theme="dark"]{--bg:#16130c;--sf:#201b12;--ink:#efe6d0;--mu:#a69878;--ac:#e1aa4a;--ac2:#93b277;--ln:#3a3224;--on:#1b160c;color-scheme:dark}
+:root[data-theme="dark"][data-season="ember"]{--bg:#170d0c;--sf:#22130f;--ink:#f2e1d9;--mu:#b38f85;--ac:#e0705c;--ac2:#e6a057;--ln:#40261f;--on:#1a0c0a}
+:root[data-theme="dark"][data-season="frost"]{--bg:#0b1119;--sf:#121b26;--ink:#e3ecf4;--mu:#8ea3b8;--ac:#86b8ea;--ac2:#a9bacd;--ln:#243344;--on:#0b1119}
+:root[data-theme="dark"][data-season="thaw"]{--bg:#10140e;--sf:#171d14;--ink:#e6ecdf;--mu:#9aa88f;--ac:#93c77c;--ac2:#cda6da;--ln:#2c3627;--on:#10140e}
+:root[data-theme="dark"][data-season="tide"]{--bg:#0d1415;--sf:#142022;--ink:#eaf1f1;--mu:#93a7a8;--ac:#f28d72;--ac2:#62c6c8;--ln:#243537;--on:#0d1415}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.62;transition:background-color .8s ease,color .8s ease;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background-image:var(--grain,none);opacity:.07;mix-blend-mode:multiply;z-index:50}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) body::before{mix-blend-mode:screen;opacity:.05}}
+:root[data-theme="dark"] body::before{mix-blend-mode:screen;opacity:.05}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:4px}
+
+/* masthead */
+.mast{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+.mast-in{max-width:64rem;margin:0 auto;padding-block:.6rem;padding-inline:16px;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.mark{font-family:var(--display);font-size:1.5rem;letter-spacing:.32em;text-transform:uppercase;line-height:1;padding-top:.15rem}
+.now{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;color:var(--mu);text-transform:uppercase;display:flex;gap:.8rem;flex-wrap:wrap;min-width:0}
+.now b{color:var(--ink);font-weight:700}
+.tabs{margin-left:auto;display:flex;gap:.15rem}
+.tab{border:0;background:none;padding:.35rem .6rem;border-radius:999px;font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mu);cursor:pointer}
+.tab[aria-current="page"]{color:var(--on);background:var(--ink)}
+.tab:hover{color:var(--ink)}
+.tab[aria-current="page"]:hover{color:var(--on)}
+.dot{display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:var(--ac);vertical-align:.08em;margin-left:.25rem}
+.pill{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ac);display:flex;align-items:center;gap:.4rem}
+.pill i{width:.45rem;height:.45rem;border-radius:50%;background:var(--ac);animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+@media (max-width:720px){
+  .mast{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--bg)}
+  .tabs{position:fixed;left:0;right:0;bottom:0;margin:0;justify-content:space-around;background:var(--sf);border-top:1px solid var(--ln);padding:.4rem .25rem calc(.4rem + env(safe-area-inset-bottom,0px));z-index:30}
+  .tab{padding:.45rem .35rem;font-size:.66rem}
+  main{padding-bottom:5rem}
+  .mark{font-size:1.25rem}
+}
+
+main{max-width:64rem;margin:0 auto;padding-inline:16px;padding-block:1.5rem 4rem}
+.col{max-width:var(--col);margin:0 auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.muted{color:var(--mu)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--ink);background:var(--ink);color:var(--on);padding:.7rem 1.2rem;border-radius:999px;font-family:var(--mono);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.warn{background:var(--ac);border-color:var(--ac);color:var(--on)}
+.btn[disabled]{opacity:.45;cursor:default;transform:none}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+
+/* title screen */
+.hero{position:relative;min-height:min(78vh,44rem);display:grid;place-items:center;text-align:center;overflow:hidden;border-radius:4px}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%}
+.hero-in{position:relative;display:grid;gap:1.2rem;justify-items:center;padding:2rem 0}
+.hero h1{font-size:clamp(3.2rem,13vw,8.5rem);letter-spacing:.2em;line-height:.9;text-transform:uppercase;margin-right:-.2em}
+.hero .sub{font-family:var(--display);font-style:italic;font-size:clamp(1.15rem,3vw,1.6rem);color:var(--mu);max-width:30rem}
+.hero .crest{font-family:var(--mono);font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ac)}
+.fine{font-size:.88rem;color:var(--mu);max-width:34rem;margin:0 auto}
+
+/* script blocks */
+.script{display:grid;gap:.95rem}
+.slug{font-family:var(--mono);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mu);padding-top:1.1rem;margin-top:.4rem;border-top:1px solid var(--ln)}
+.slug.cut{color:var(--ac2)}
+.slug.cut::before{content:"Meanwhile — ";font-weight:400}
+.a{margin:0}
+.ln{display:grid;gap:.1rem;padding-left:clamp(.8rem,4vw,2.2rem)}
+.ln .who{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+.ln .par{font-style:italic;color:var(--mu);font-size:.95rem}
+.ln .say{margin:0}
+.cardline{font-family:var(--mono);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mu);text-align:center;display:flex;align-items:center;gap:1rem}
+.cardline::before,.cardline::after{content:"";flex:1;height:1px;background:var(--ln)}
+.music{font-style:italic;color:var(--ac2);font-size:.95rem}
+.music::before{content:"♪ ";font-style:normal}
+.phone{border:1px solid var(--ln);background:var(--sf);border-radius:18px;padding:.8rem;display:grid;gap:.4rem;max-width:24rem;width:100%;justify-self:center}
+.phone .th{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);text-align:center;padding-bottom:.3rem;border-bottom:1px solid var(--ln)}
+.bub{max-width:82%;padding:.45rem .75rem;border-radius:16px;font-size:.95rem;line-height:1.4;background:var(--bg);justify-self:start;overflow-wrap:anywhere}
+.bub.me{justify-self:end;background:var(--ac);color:var(--on)}
+.bub small{display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;opacity:.7}
+.chosen{font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mu);border-left:2px solid var(--ac);padding-left:.7rem}
+.chosen b{color:var(--ink);text-transform:none;font-family:var(--body);font-size:1rem;letter-spacing:0;font-weight:600;display:block}
+.remember{font-style:italic;color:var(--ac);font-size:.95rem;display:flex;gap:.5rem;align-items:center}
+.remember::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--ac);flex:none}
+.choices{display:grid;gap:.55rem;margin-top:.4rem}
+.choice{text-align:left;border:1px solid var(--ln);background:var(--sf);border-radius:10px;padding:.8rem 1rem;cursor:pointer;font-size:1rem;line-height:1.4;transition:border-color .15s ease,transform .15s ease;display:grid;grid-template-columns:auto 1fr;gap:.8rem;align-items:baseline}
+.choice:hover{border-color:var(--ac);transform:translateX(3px)}
+.choice span{font-family:var(--mono);font-size:.74rem;color:var(--ac)}
+.choice[disabled]{opacity:.5;transform:none;cursor:default}
+.cont{justify-self:center;margin-top:.6rem}
+.titlecard{margin:1.6rem 0;padding:3rem 1rem;text-align:center;background:var(--ink);color:var(--bg);border-radius:3px;display:grid;gap:.6rem;position:relative;overflow:hidden}
+.titlecard .eyebrow{color:color-mix(in srgb,var(--bg) 65%,var(--ink))}
+.titlecard h2{font-size:clamp(2.2rem,7vw,3.6rem);font-style:italic;line-height:1.05}
+.titlecard .mk{font-family:var(--display);letter-spacing:.4em;text-transform:uppercase;font-size:.95rem}
+.actcard{font-family:var(--display);font-size:1.6rem;font-style:italic;text-align:center;color:var(--mu);margin:1.6rem 0 .4rem}
+
+/* panels */
+.panel{border:1px solid var(--ln);background:var(--sf);border-radius:12px;padding:1.1rem 1.2rem}
+.room{display:grid;gap:.7rem}
+.agent{display:grid;grid-template-columns:1fr auto;gap:.15rem .8rem;align-items:baseline}
+.agent .nm{font-weight:600}
+.agent .md{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mu)}
+.agent .st{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mu);grid-row:span 2;align-self:center}
+.agent .st.working{color:var(--ac)}
+.agent .st.done{color:var(--ac2)}
+.agent .st.error{color:var(--ac)}
+.bar{grid-column:1/-1;height:3px;background:var(--ln);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ac);width:0;transition:width .4s ease}
+.prev{display:grid;gap:.6rem;font-family:var(--mono);font-size:.88rem;line-height:1.5}
+.prev p{margin:0;padding-left:.8rem;border-left:2px solid var(--ln)}
+.break{border:1px dashed var(--ac);border-radius:12px;padding:1.1rem 1.2rem;display:grid;gap:.6rem}
+.break h3{font-size:1.5rem;font-style:italic}
+
+/* cast */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,18rem),1fr));gap:1rem}
+.person{border:1px solid var(--ln);background:var(--sf);border-radius:12px;padding:1rem;display:grid;gap:.6rem;align-content:start;min-width:0}
+.person header{display:flex;gap:.8rem;align-items:center}
+.person h3{font-size:1.45rem;line-height:1.1}
+.person .role{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mu)}
+.person p{margin:0;font-size:.95rem}
+.person ul{margin:0;padding-left:1.1rem;font-size:.88rem;color:var(--mu)}
+.chip{display:inline-block;font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--ln);border-radius:999px;padding:.1rem .5rem;color:var(--mu)}
+.av{flex:none;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-style:italic;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.35);font-size:1.15rem;
+  background:radial-gradient(circle at 30% 26%,hsl(var(--h1) 80% 74% / .95),transparent 58%),conic-gradient(from var(--ang),hsl(var(--h2) 52% 42%),hsl(var(--h1) 58% 54%),hsl(var(--h3) 50% 36%),hsl(var(--h2) 52% 42%))}
+.cal-card{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+@media (max-width:520px){.cal-card{grid-template-columns:1fr}}
+
+/* episodes */
+.season{display:grid;gap:.5rem;margin-bottom:2rem}
+.season h2{font-size:2rem}
+.ep{border-top:1px solid var(--ln);padding:.8rem 0;display:grid;grid-template-columns:3.2rem 1fr;gap:.2rem .9rem}
+.ep .n{font-family:var(--mono);font-size:.8rem;color:var(--mu);padding-top:.3rem}
+.ep h3{font-size:1.4rem;font-style:italic}
+.ep p{margin:.2rem 0 0;font-size:.95rem}
+.ep details{grid-column:2}
+.ep summary{cursor:pointer;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ac)}
+.linkbtn{border:0;background:none;padding:0;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ac);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* phone tab */
+.threads{display:grid;grid-template-columns:minmax(0,16rem) minmax(0,1fr);gap:1rem}
+@media (max-width:720px){.threads{grid-template-columns:1fr}}
+.tlist{display:grid;gap:.3rem;align-content:start}
+.titem{border:1px solid transparent;background:none;text-align:left;padding:.55rem .6rem;border-radius:10px;cursor:pointer;display:flex;gap:.6rem;align-items:center;min-width:0}
+.titem[aria-current="true"]{border-color:var(--ln);background:var(--sf)}
+.titem span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.convo{display:grid;gap:.4rem;border:1px solid var(--ln);background:var(--sf);border-radius:18px;padding:1rem;align-content:start;min-height:12rem}
+.epmark{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);text-align:center;margin:.5rem 0}
+
+/* calendar */
+.strip{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:.4rem}
+@media (max-width:640px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.sblock{border:1px solid var(--ln);border-radius:10px;padding:.6rem;display:grid;gap:.15rem;font-size:.85rem;min-width:0}
+.sblock b{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase}
+.sblock.cur{border-color:var(--ac);background:var(--sf);box-shadow:inset 0 -3px 0 var(--ac)}
+.sblock.past{opacity:.55}
+.events{display:grid;gap:.3rem;padding:0;margin:0;list-style:none}
+.events li{display:grid;grid-template-columns:7.5rem 1fr;gap:.6rem;font-size:.95rem}
+.events li span{font-family:var(--mono);font-size:.75rem;color:var(--mu);padding-top:.2rem;font-variant-numeric:tabular-nums}
+.events li.done{color:var(--mu);text-decoration:line-through;text-decoration-color:var(--ln)}
+.bigdate{font-family:var(--display);font-size:clamp(2.4rem,8vw,4rem);line-height:1}
+
+.stack{display:grid;gap:1.4rem}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(5.5rem + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--on);padding:.6rem 1rem;border-radius:999px;font-family:var(--mono);font-size:.75rem;letter-spacing:.05em;z-index:60;max-width:calc(100% - 32px)}
+.banner{background:var(--ac);color:var(--on);padding:.6rem 16px;text-align:center;font-family:var(--mono);font-size:.78rem;display:flex;gap:.8rem;justify-content:center;align-items:center;flex-wrap:wrap}
+.banner button{border:1px solid var(--on);background:none;color:var(--on);border-radius:999px;padding:.2rem .7rem;cursor:pointer}
+.reader{position:fixed;inset:0;z-index:40;background:var(--bg);overflow:auto;padding-inline:16px;padding-block:calc(1rem + env(safe-area-inset-top,0px)) 4rem}
+.secret{border-left:3px solid var(--ac2);padding-left:1rem;display:grid;gap:.4rem}
+.secret h3{font-size:1.5rem;font-style:italic}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div id="banner"></div>
+<header class="mast"><div class="mast-in">
+  <div class="mark" aria-label="Whitlock">Whitlock</div>
+  <div class="now" id="now"><span>Whitlock University · Alder Falls, Mass.</span></div>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button class="tab" data-tab="story" aria-current="page">Story</button>
+    <button class="tab" data-tab="cast">Cast</button>
+    <button class="tab" data-tab="episodes">Episodes</button>
+    <button class="tab" data-tab="phone">Phone</button>
+    <button class="tab" data-tab="calendar">Calendar</button>
+    <button class="tab" data-tab="extras">Extras</button>
+  </nav>
+</div></header>
+<main id="main">
+  <section class="hero" id="boot">
+    <canvas id="drift" aria-hidden="true"></canvas>
+    <div class="hero-in">
+      <div class="crest">Whitlock University · Est. 1791</div>
+      <h1>Whitlock</h1>
+      <p class="sub">Cal Whitaker's name is on the building. That's the problem.</p>
+      <p class="fine">Loading the writers' room…</p>
+    </div>
+  </section>
+</main>
+<div id="reader" class="reader" hidden></div>
+<div id="toast" class="toast" hidden></div>
+
+<script>
+"use strict";
+/* ================================================================
+   SERIES CANON (what the player helped design — not secret)
+   ================================================================ */
+const SERIES_TEXT = `SERIES: WHITLOCK — an interactive prestige-TV college drama.
+SETTING: Whitlock University (est. 1791), an old-money private university in Alder Falls, a small snowy town in the Berkshires of western Massachusetts. Gothic towers, ivy, legacies vs. scholarship kids. Present day: phones, group chats, Instagram, TikTok, read receipts, screenshots as weapons.
+KEY PLACES: Lowell House (oldest dorm; Cal has a coveted single on the 3rd floor — his father pulled strings); Elm Row (fraternity row; Sigma Kappa Rho "the Rho" is the oldest house, a mansion whose alumni include senators and felons); Kappa Lambda sorority house; Whitaker Commons (student center built with Cal's grandfather's money — his name is literally on the building); The Whitlock Herald (student paper, basement of Pruitt Hall); Kessler Rink (varsity hockey); the Tamsin Lake boathouse (rowing); Marlowe Theater (drama dept.); Fennimore Library; The Anchor (townie bar on Mill Street owned by Gus Moretti); Dot's Diner; the town of Alder Falls itself, where locals resent the school.
+WORLDS: Greek life is central (Rho rush/pledging: hazing, loyalty, brotherhood, rot); also the Herald, varsity athletics, theater/arts, and the townies.
+PROTAGONIST: CAL WHITAKER, 18, freshman. Third-generation legacy and black sheep: he got in on the name and everyone knows it. Charming screwup — funny, magnetic, avoidant, self-sabotaging; easy to love, hard to rely on. Smart, doesn't try (a professor will see through him; academic probation is possible). Secret gifts: he is a genuinely gifted writer (notebooks no one has read) and reads people uncannily — he knows what they want to hear, a superpower and a curse. Vices: lies easily (small smoothing lies that stack); runs when it's real (bolts when someone gets close or things get serious). Central wound: his mother Claire walked out when he was eleven; his cold, powerful father Richard raised him (mostly via housekeepers and St. Anselm's boarding school in New Hampshire) and expects him to be a credit. The school is Dad's turf. Cal is straight.
+FATHER: RICHARD WHITAKER, 51, Whitlock '93, Rho alum, trustee, Boston finance. Magnetic, emotionally unavailable; calls rarely and always wants something. Expects Cal to pledge the Rho.
+MOTHER: CLAIRE WHITAKER, 49, a writer, left when Cal was 11. Whereabouts unknown to Cal. She can surface offscreen (a text, a voicemail, a sighting) when the show decides.
+PILOT: Move-in day. Cal arrives alone in a car service; Dad was supposed to come and didn't. By sunset he's at a party.
+TONE: an even split of comedy and drama — real laughs and real damage every episode. Influences: Euphoria (raw, intimate, stylized darkness), Gilmore Girls (rapid literate banter, small-town warmth), Greek (Greek-life politics), How I Met Your Mother and Friends (ensemble chemistry, running bits, friendship as family), Entourage (the boys, status, excess). Mix sweetness, sadness, warmth, cruelty, despair, joy, darkness and hope.
+STRUCTURE: 10 episodes per season; each season covers about a month (summer seasons cover the whole summer, faster). Fall and spring semesters each hold three seasons. Four years at Whitlock. Ensemble cast that grows gradually; across years students arrive, graduate, go abroad and come back, fail out.`;
+
+const CAL = {
+  id:'cal', name:'Cal Whitaker', role:'Freshman · Lowell House · Legacy',
+  descriptor:"Charming screwup with his grandfather's name on the student center. Funny, magnetic, avoidant. Smart, doesn't try. Lies easily; runs when it's real.",
+};
+
+const CAST_SEED = [
+  {id:'nora', name:'Nora Castellanos', role:'Freshman · The Whitlock Herald', age:18, descriptor:"Scholarship kid from Jackson Heights, Queens. Herald reporter with a knife for a tongue; writes Cal off as a rich idiot within five minutes."},
+  {id:'margaux', name:'Margaux Vance', role:'Sophomore · Kappa Lambda', age:19, descriptor:"Sorority royalty and old-money legacy from Greenwich. Perfect from every angle. Knows exactly who Cal's father is and why that matters."},
+  {id:'jess', name:'Jess Doyle', role:'Bartender · The Anchor', age:21, descriptor:"Alder Falls townie, not a student. Funny, tired, unimpressed by the Whitaker name. Raising her kid brother Danny, a high-school junior."},
+  {id:'priya', name:'Priya Raman', role:'Freshman · Theater · Lowell House', age:18, descriptor:"Chaotic, brilliant, a little self-destructive. Lives down the hall and becomes Cal's best friend almost instantly — or so it seems."},
+  {id:'dev', name:'Dev Okafor', role:'Freshman · Pre-med · Lowell House', age:18, descriptor:"From Houston. The nicest guy on campus; lives across the hall in Lowell's only double. Instantly loyal. Quietly hiding something."},
+  {id:'brooks', name:'Brooks Hadley III', role:'Junior · Sigma Kappa Rho pledge master', age:20, descriptor:"Charming and cruel. Sees Cal as a threat, a project, or both."},
+  {id:'tommy', name:'Tommy Reyes', role:'Freshman · Hockey recruit', age:18, descriptor:"Parties hard, loves hard, leaves a trail of bad decisions and great stories."},
+  {id:'simon', name:'Simon Achterberg', role:'Sophomore · Poet', age:19, descriptor:"Gay, pretentious, devastatingly funny. Adopts Cal as a project. Has the best gossip on campus."},
+  {id:'richard', name:'Richard Whitaker', role:"Cal's father · Trustee, Class of '93", age:51, descriptor:"Boston finance, Rho alum, magnetic and emotionally unavailable. Calls rarely; always wants something."},
+  {id:'marsh', name:'Prof. Helen Marsh', role:'English Department', age:58, descriptor:"Brutal, brilliant, refuses to let Cal coast. Knew his mother."},
+  {id:'gus', name:'Gus Moretti', role:'Owner · The Anchor', age:55, descriptor:"Townie bar owner who knew Richard in his student days and has stories Richard would hate told."},
+  {id:'claire', name:'Claire Whitaker', role:"Cal's mother · whereabouts unknown", age:49, descriptor:"A writer. Walked out when Cal was eleven."},
+];
+
+const FACT_SEED = [
+  {t:"Cal's grandfather Charles Whitaker's money built Whitaker Commons; the Whitaker name is on the student center.", k:['cal','richard'], a:['cal','richard'], pub:true},
+  {t:"Richard Whitaker ('93) is a Sigma Kappa Rho alum and a Whitlock trustee.", k:['cal','richard'], a:['richard'], pub:true},
+  {t:"Claire Whitaker left the family when Cal was eleven; Cal hasn't seen her since.", k:['cal','richard'], a:['cal','claire','richard']},
+  {t:"Richard pulled strings to get Cal a single in Lowell House.", k:['cal','richard'], a:['cal','richard']},
+  {t:"Cal writes in notebooks no one has ever read.", k:['cal'], a:['cal']},
+  {t:"Richard promised to drive Cal to move-in day.", k:['cal','richard'], a:['cal','richard']},
+  {t:"Helen Marsh knew Claire Whitaker years ago.", k:['marsh'], a:['marsh','claire']},
+  {t:"Gus Moretti knew Richard Whitaker when Richard was a student.", k:['gus','richard'], a:['gus','richard']},
+];
+
+const STANDARDS = `WRITERS' ROOM STANDARDS (apply to everything you write):
+- Voice: third person, present tense, written like a prestige-TV script translated into lean, vivid prose: scene headings, action, sharp dialogue. Cal is the protagonist; the camera follows him, with occasional short cutaways to scenes he is NOT in (the audience sees them; Cal does not).
+- Tone: an even split of comedy and drama. Banter should crackle (Gilmore Girls speed, HIMYM/Friends ensemble rhythm, Entourage swagger, Euphoria intimacy and darkness). Every episode mixes at least three of: sweetness, sadness, warmth, cruelty, despair, joy, darkness, hope.
+- Content: the player is an adult who opted into fully mature content. Be explicit, frank and unflinching about sex, drugs, drinking, violence, abuse, grief, mental illness, self-harm, racism, class cruelty and other hard subjects when the story calls for it. Sex scenes have real physicality, specificity and emotional texture; violence has weight and aftermath. Hard material always serves character and story and carries consequences — never linger for shock or exploitation. Everyone in any sexual or romantic content is 18 or older; minors (e.g. Jess's brother Danny) are never sexualized.
+- Stakes: Cal can be hurt, humiliated, injured, arrested, put on academic or disciplinary probation, lose friends and lovers — "bruised, not broken": he never dies and never permanently leaves Whitlock.
+- Characters are specific people with their own wants and lives — not props for Cal. Nobody is purely good or bad.
+- KNOWLEDGE DISCIPLINE (critical): a character may only say, reference or act on information that (a) the FACTS list shows they know (their id in knownBy), (b) they witnessed or were told on-screen in this episode, or (c) is public. Cal never knows what happened in cutaways. If someone learns something new, show or state how they learned it. Characters who have not met Cal (metCal false) treat him as a stranger (though they may know of the Whitaker name).
+- Continuity: respect every established fact, relationship, date, location and earlier choice. Never contradict the canon ledger.`;
+
+const BLOCK_FORMAT = `BLOCK FORMAT — scene text is an array of blocks, each one of:
+{"t":"slug","text":"INT. LOWELL HOUSE — CAL'S ROOM — NIGHT","cut":false}   (scene heading; "cut":true marks a cutaway Cal is not in)
+{"t":"a","text":"Action/description prose, 1-4 sentences per block."}
+{"t":"line","who":"nora","name":"NORA","paren":"(not looking up)","text":"Dialogue."}   ("who" is the character id; "paren" optional; use "cal" for Cal)
+{"t":"texts","thread":"Priya Raman","onCal":true,"msgs":[{"from":"priya","text":"..."},{"from":"cal","text":"..."}]}   (phone screens; "onCal":true only if this is Cal's own phone)
+{"t":"music","song":"Song Title","artist":"Artist"}   (a needle-drop; real songs that fit)
+{"t":"card","text":"THREE HOURS LATER"}   (time jumps)`;
+
+const AGENTS = {
+  showrunner:{name:'Showrunner', tier:'complex', job:'Keeps the secret series bible, breaks each season, steers the long arcs', expect:26000},
+  planner:{name:'Episode planner', tier:'complex', job:'Breaks each episode into acts and beats, places clues and introductions', expect:9000},
+  writer:{name:'Head writer', tier:'complex', job:'Writes every scene, line and choice', expect:30000},
+  editor:{name:'Continuity editor', tier:'default', job:'Audits each act for knowledge leaks and contradictions, then patches them', expect:2500},
+  ledger:{name:'Script coordinator', tier:'default', job:'Keeps the cast ledger: who has done what, and who knows what', expect:4500},
+  recap:{name:'Post-production', tier:'default', job:'Writes recaps, "Previously on", and the texts that land on Cal\'s phone', expect:5000},
+};
+const TIER_LABEL = {complex:'Most capable model', default:'Balanced model', quick:'Fast model'};
+
+const SEASON_TEMPLATE = [
+  {sem:'Fall', label:'Late Aug – Sept', start:[8,24], end:[9,27]},
+  {sem:'Fall', label:'October', start:[10,1], end:[10,31]},
+  {sem:'Fall', label:'Nov – Finals', start:[11,2], end:[12,20]},
+  {sem:'Spring', label:'Jan – Feb', start:[1,19], end:[2,21]},
+  {sem:'Spring', label:'Late Feb – Mar', start:[2,26], end:[3,31]},
+  {sem:'Spring', label:'Apr – May', start:[4,6], end:[5,24]},
+  {sem:'Summer', label:'June – Aug', start:[6,1], end:[8,20]},
+];
+const YEARS = ['Freshman','Sophomore','Junior','Senior'];
+const FINAL_SEASON = 28;
+const EVENTS = {
+  Fall:[['08-24','Move-in day'],['09-03','Rho rush week begins'],['09-08','Convocation on the Quad'],['10-17','Head of the Tamsin regatta'],['10-31','Halloween on Elm Row'],['11-25','Thanksgiving break'],['12-08','Reading period'],['12-12','Finals'],['12-20','Winter break']],
+  Spring:[['01-19','Spring semester begins'],['02-07','Winter Carnival'],['02-14',"Valentine's Day"],['03-14','Spring break'],['04-18','Spring Fling'],['05-10','Senior Week'],['05-24','Commencement']],
+  Summer:[['06-01','Summer in Alder Falls'],['07-04','Fourth of July on the lake'],['08-20','Last week of summer']],
+};
+
+/* ================================================================
+   RUNTIME
+   ================================================================ */
+const S = {sample:null, db:null, uid:null, local:true, state:null, canon:null, facts:null, bible:null, guide:null, phone:null,
+  plan:null, acts:{}, jobs:{}, room:{}, err:null, running:false, tab:'story', soften:false, confirmReset:false, phoneSel:null, ready:false};
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pad = n => String(n).padStart(2,'0');
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const arr = x => Array.isArray(x) ? x.map(String) : (x ? [String(x)] : []);
+const slug = s => String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'') || 'x';
+const clip = (s, n) => s.length > n ? s.slice(0, n) + '\n[…truncated]' : s;
+const epKey = (s=S.state.season, e=S.state.ep) => `s${pad(s)}e${pad(e)}`;
+const epLabel = (s=S.state.season, e=S.state.ep) => `S${s}E${e}`;
+const NUM = ['','One','Two','Three','Four','Five'];
+
+function toast(msg){ const t=$('#toast'); t.textContent=msg; t.hidden=false; clearTimeout(toast.h); toast.h=setTimeout(()=>t.hidden=true, 4200); }
+
+/* ---------- storage: private per-account db, falling back to this browser ---------- */
+const Store = {
+  q:{},
+  ref(k){ return S.db.doc(`data/users/${S.uid}/${k}`); },
+  async get(k){
+    if(S.db){
+      try{ const s = await this.ref(k).get(); return s.exists ? structuredClone(s.data()) : null; }
+      catch(e){ if(e?.code==='unavailable'){ await sleep(400+Math.random()*700); const s = await this.ref(k).get(); return s.exists ? structuredClone(s.data()) : null; } throw e; }
+    }
+    try{ const v = localStorage.getItem('whitlock:'+k); return v ? JSON.parse(v) : null; }catch{ return null; }
+  },
+  set(k, obj){
+    const data = JSON.parse(JSON.stringify(obj));
+    const prev = this.q[k] || Promise.resolve();
+    const p = prev.catch(()=>{}).then(async () => {
+      if(S.db){
+        try{ await this.ref(k).set(data); }
+        catch(e){
+          if(e?.code==='unavailable'){ await sleep(500+Math.random()*800); await this.ref(k).set(data); }
+          else { if(e?.code==='quota_exceeded') toast('Save storage is full. Start a new series from Extras to free space.'); else toast("Couldn't save just now. Your next choice will try again."); throw e; }
+        }
+      } else { try{ localStorage.setItem('whitlock:'+k, JSON.stringify(data)); }catch{ toast("This browser blocked saving."); } }
+    });
+    this.q[k] = p; return p;
+  },
+  async wipe(){
+    if(S.db){
+      const snap = await S.db.collection(`data/users/${S.uid}`).get();
+      for(const d of snap.docs){ await S.db.doc(`data/users/${S.uid}/${d.id}`).delete(); }
+    } else {
+      try{ Object.keys(localStorage).filter(k=>k.startsWith('whitlock:')).forEach(k=>localStorage.removeItem(k)); }catch{}
+    }
+  }
+};
+function saveState(){ S.state.rev = (S.state.rev||0) + 1; S.state.updated = Date.now(); return Store.set('state', S.state); }
+
+/* ---------- the agents ---------- */
+function roomSet(k, patch){ S.room[k] = Object.assign(S.room[k]||{}, patch); paintRoom(); }
+let roomFrame = 0;
+function paintRoom(){
+  if(roomFrame) return;
+  roomFrame = requestAnimationFrame(() => {
+    roomFrame = 0;
+    const el = $('#room'); if(el) el.innerHTML = roomHTML();
+    const p = $('#pill'); if(p) p.innerHTML = pillHTML();
+  });
+}
+async function ask(agentKey, prompt, label){
+  if(!S.sample) throw {code:'sampling_unavailable'};
+  const ag = AGENTS[agentKey];
+  roomSet(agentKey, {status:'working', label, chars:0, t0:Date.now()});
+  const ctl = new AbortController();
+  try{
+    const out = await S.sample.json(clip(prompt, 200000), {
+      modelTier: ag.tier, cache:false, signal: ctl.signal,
+      onText: ({text}) => { S.room[agentKey].chars = text.length; paintRoom(); }
+    });
+    roomSet(agentKey, {status:'done', label});
+    return out;
+  }catch(e){ roomSet(agentKey, {status:'error', label}); throw e; }
+}
+
+/* ---------- context builders (what each agent reads) ---------- */
+function castText(includeHidden){
+  const lines = [];
+  lines.push(`cal | Cal Whitaker | ${CAL.role} | protagonist | now: ${S.canon.calNow || CAL.descriptor}`);
+  for(const c of Object.values(S.canon.cast)){
+    if(!includeHidden && !c.introduced) continue;
+    lines.push(`${c.id} | ${c.name} | ${c.role||''} | ${c.age?('age '+c.age+' | '):''}introduced:${!!c.introduced} metCal:${!!c.metCal} | ${c.descriptor||''}${c.impression?(' | now: '+c.impression):''}${c.moments?.length?(' | moments: '+c.moments.slice(-5).join(' / ')):''}`);
+  }
+  return lines.join('\n');
+}
+function factsText(){
+  return S.facts.facts.map(f => `${f.id} | knownBy: ${f.k.join(',')||'nobody'}${f.pub?' (public)':''} | about: ${f.a.join(',')} | ${f.ep||'backstory'}${f.aud===false?' (unaired)':''} | ${f.t}`).join('\n');
+}
+function threadsText(){ return (S.canon.threads||[]).filter(t=>t.state!=='closed').map(t=>`${t.id}: ${t.t}`).join('\n') || '(none)'; }
+function timelineText(){
+  const ss = Object.entries(S.facts.summaries||{}).map(([k,v])=>`Season ${k}: ${v}`).join('\n');
+  const ev = (S.facts.events||[]).slice(-40).map(e=>`${e.ep}: ${e.t}`).join('\n');
+  return (ss ? ss+'\n' : '') + (ev || '(nothing has happened yet)');
+}
+function recentRecaps(n=3){ return (S.guide.eps||[]).slice(-n).map(e=>`${e.label} "${e.title}": ${e.recap}`).join('\n\n') || '(this is the first episode)'; }
+function canonBlock(){
+  return `CANON LEDGER
+DATE NOW: ${S.state.date} · Season ${S.state.season}, Episode ${S.state.ep} · Cal is a ${yearName()} · ${seasonWindow(S.state.season).sem} ${seasonWindow(S.state.season).label}
+CAST (id | name | role | status | first impression | where things stand):
+${castText(true)}
+LOCATIONS SEEN: ${(S.canon.locations||[]).join(', ') || '(none yet)'}
+OPEN THREADS:
+${threadsText()}
+FACTS (who knows what):
+${factsText()}
+TIMELINE:
+${timelineText()}
+RECENT EPISODES:
+${recentRecaps(3)}`;
+}
+function bibleBlock(){ return 'SECRET SERIES BIBLE (never reveal directly; plant, imply, pay off):\n' + JSON.stringify(S.bible||{}); }
+
+/* ---------- calendar ---------- */
+function seasonWindow(n){
+  const yi = Math.floor((n-1)/7), idx = (n-1)%7, t = SEASON_TEMPLATE[idx];
+  const yr = 2026 + yi + (idx >= 3 ? 1 : 0);
+  const d = (m,dd) => `${yr}-${pad(m)}-${pad(dd)}`;
+  return {...t, n, yi, idx, year:yr, startISO:d(...t.start), endISO:d(...t.end)};
+}
+function yearName(){ return YEARS[Math.min(3, Math.floor((S.state.season-1)/7))]; }
+function fmtDate(iso, opt){ try{ return new Date(iso+'T12:00:00').toLocaleDateString('en-US', opt||{weekday:'short',month:'short',day:'numeric'}); }catch{ return iso; } }
+function paletteFor(iso){
+  const m = Number(String(iso||'').slice(5,7)) || 8;
+  if(m===8||m===9) return 'gold'; if(m===10||m===11) return 'ember'; if(m===12||m<=2) return 'frost'; if(m<=5) return 'thaw'; return 'tide';
+}
+function applySeason(){ document.documentElement.dataset.season = paletteFor(S.state?.date || '2026-08-24'); }
+
+/* ================================================================
+   PROMPTS
+   ================================================================ */
+function pBible(){
+  return `${STANDARDS}
+
+${SERIES_TEXT}
+
+STARTING CAST (known to the player; none introduced on-screen yet):
+${CAST_SEED.map(c=>`${c.id} | ${c.name} | ${c.role} | age ${c.age} | ${c.descriptor}`).join('\n')}
+
+You are the SHOWRUNNER. Create the SECRET SERIES BIBLE for a brand-new playthrough. The player will never read this (each arc is revealed to them only after it fully resolves on-screen), so be bold, specific and surprising — but every secret must be fair: it can be clued and it must never contradict the starting canon above.
+Requirements:
+- endgame: the ONE central romance that is Cal's long-term endgame. Choose from the starting women or invent someone in newCast. Don't pick the obvious one by default; she may arrive early or late, be a friend, an enemy, an ex, or all of these over time; they may get together and break up. The player steers Cal's love life, so design how this romance can bend, be delayed or be wrecked and rebuilt, and still land by the series end if the player pays attention. "firstAppearance" is the episode she first appears (e.g. "S1E1" or "S2E3").
+- bigRelationships: one or two other major relationships (romantic) held back for later, with notes.
+- loveInterests: 6-10 additional possibilities across the cast and newCast — one-night stands, flings, friends-with-benefits, real relationships — with notes on how each escalates. A one-night stand who turns up in Cal's orbit again should generate an intense storyline.
+- arcs: a layered set: 1-2 "series" secrets (whole show), 1 "multi" arc (2-3 seasons), the season-1 arc ("season", season:1), and 3-4 "mini" arcs (2-4 episodes each) for season 1. Draw on: everyday campus secrets (who's sleeping with whom, cheating, hookups, rivalries), family secrets (why Claire left, what Richard did, the Whitaker money, old Whitlock and Rho scandals), crimes and cover-ups (hazing, assault, a hit-and-run, money laundering, a buried incident from Richard's era), hidden identities and lies (someone isn't who they say), inner crises (addiction, eating disorders, mental illness, a pregnancy, a diagnosis). Secretly decide whether Cal has a half-sibling at Whitlock and who (an existing character, a newCast character, or a false lead) — that is one of the arcs.
+- Each arc: {"id":"short-slug","scope":"series|multi|season|mini","season":1,"title":"","truth":"the full secret, specific","involves":["ids"],"whoKnows":["ids who know the truth at series start"],"clues":["6-8 planned clues: mostly fair-play and subtle, plus one or two big swings"],"revealWindow":"e.g. S1E8–S1E10 or Year 2 spring","status":"dormant|active","progress":"","cluesPlanted":[]}
+- newCast: 10-14 characters the player doesn't know yet, to be introduced across Year 1 (students of every year, townies, faculty, family): {"id":"slug","name":"","age":19,"role":"","descriptor":"public first impression","secret":"private","firstWindow":"S1E4"}. Every student or romantic figure is 18+. Give a real range of backgrounds and cover the Herald, hockey, rowing, theater, the townies at The Anchor and Greek life.
+- existingCastSecrets: for EVERY starting-cast id: what they hide, want and fear, and how they connect to the arcs.
+- motifs: 3-5 recurring images or running bits. calArc: the truth of Cal's wound, and the best and worst versions of who he could become.
+Keep it to roughly 4,000–6,000 words. Reply with only JSON:
+{"logline":"","themes":[""],"endgame":{"id":"","why":"","shape":"","firstAppearance":""},"bigRelationships":[{"id":"","notes":""}],"loveInterests":[{"id":"","kind":"","notes":""}],"arcs":[],"newCast":[],"existingCastSecrets":{},"motifs":[""],"calArc":""}`;
+}
+
+function pSeason(){
+  const w = seasonWindow(S.state.season);
+  const prevSeason = S.bible.seasons?.[S.state.season-1];
+  return `${STANDARDS}
+
+${SERIES_TEXT}
+
+${bibleBlock()}
+
+${canonBlock()}
+
+You are the SHOWRUNNER. Break SEASON ${S.state.season} (${YEARS[w.yi]} year, ${w.sem} semester, ${w.label}: ${w.startISO} to ${w.endISO}). Ten episodes; the season covers about this window${w.sem==='Summer'?' (summer moves faster — bigger time jumps between episodes)':''}.
+${S.state.season===1 ? 'Episode 1 is the pilot: move-in day; Cal arrives alone in a car service because Richard was supposed to drive him and didn\'t; by sunset he is at a party. The pilot introduces only 3-4 people. Build the cast up gradually across the season (at most 2 new major characters per episode), keeping some starting-cast characters back for later episodes or later seasons.' : `Last season: ${prevSeason?.title||''} — ${prevSeason?.logline||''}. Pick up from its cliffhanger. Account for any time that passed offscreen.`}
+Give the season a medium arc (the season's spine) that serves the longer series and multi-season arcs; layer in single-episode and multi-episode stories; give the ensemble their own lives (graduations, people going abroad and coming back, failing out, new arrivals as the years turn). Episode 10 ends on a real cliffhanger. Use the existing arcs; add 2-4 new "mini" arcs and any newCast needed for this season. Respond to who Cal has become through the player's choices.
+Reply with only JSON:
+{"title":"season title","logline":"","seasonArc":"arc id","episodes":[{"e":1,"title":"","logline":"","dateHint":"YYYY-MM-DD","notes":"private: what happens, which arcs advance, clues, who is introduced"}],"newArcs":[],"newCast":[]}`;
+}
+
+function pPlan(){
+  const sp = S.bible.seasons?.[S.state.season] || {};
+  const epOutline = (sp.episodes||[]).find(x=>Number(x.e)===S.state.ep) || {};
+  const replies = (S.state.phoneReplies||[]).map(r=>`${r.name}: "${(r.msgs||[]).join(' / ')}" — Cal replied: "${r.reply}"`).join('\n') || '(none)';
+  return `${STANDARDS}
+
+${SERIES_TEXT}
+
+${bibleBlock()}
+
+SEASON ${S.state.season} OUTLINE: ${JSON.stringify(sp)}
+
+${canonBlock()}
+
+TEXTS CAL REPLIED TO SINCE LAST EPISODE:
+${replies}
+
+You are the EPISODE PLANNER. Break S${S.state.season}E${S.state.ep}. Outline note for this episode: ${JSON.stringify(epOutline)}
+Rules:
+- Exactly 3 acts with 5-7 beats each (16-19 beats total). Act 1, beat 1 is the cold open (it may be a cutaway). Every beat ends on a real choice for Cal.
+- A-plot, B-plot, optional C-plot; ensemble scenes; real comedy and real damage.
+- 1-3 short cutaways (scenes Cal is not in) per episode; mark them "cutaway":true.
+- Introductions: list in "introduce" every character appearing on-screen for the first time (introduced:false in the ledger). At most 2 new MAJOR characters per episode (minor background people can appear freely but stay minor).
+- Plant 1-3 clues from the bible's arcs; note the arc and beat. Advance at least one mini arc and the season arc.
+- Honor what Cal texted. Follow the player's past choices: they drive Cal's relationships and sex life. Hookups have consequences; a hookup who comes back into Cal's orbit should intensify.
+- The final beat of acts 1 and 2 is a "button" beat: its choice colors how the act ends rather than redirecting the plot.
+${S.state.ep===10?'- This is the season finale: end on a real cliffhanger.':''}
+- 2-4 music cues (real songs that fit; title and artist).
+- dateStart/dateEnd within the season window; the episode usually spans 1-4 days.
+Reply with only JSON:
+{"title":"","logline":"","dateStart":"YYYY-MM-DD","dateEnd":"YYYY-MM-DD","plots":{"a":"","b":"","c":""},"introduce":["ids"],"clues":[{"arc":"","clue":"","beat":"act2/b3"}],"acts":[{"n":1,"summary":"","beats":[{"id":"b1","where":"","when":"","who":["ids"],"cutaway":false,"purpose":"","choiceFocus":"the dilemma Cal faces"}]}],"tag":"the closing tag scene","music":[{"song":"","artist":"","where":""}]}`;
+}
+
+function pAct(k){
+  const plan = S.plan, pa = plan.acts[k-1], nActs = plan.acts.length;
+  const earlier = [];
+  for(let j=1;j<k;j++) earlier.push(`--- ACT ${NUM[j]} (as aired; ▶ marks Cal's choices) ---\n` + blocksToText(actShownBlocks(j)));
+  let bridge = '';
+  if(k>1){
+    const prev = S.acts[k-1], lastB = prev.beats[prev.beats.length-1];
+    const pk = S.state.picks?.[k-1]?.[lastB.id];
+    if(pk){ const c = lastB.choices.find(c=>c.id===pk); bridge = `The previous act ended with Cal choosing: "${c?.label}". Open this act accordingly. Set "bridge" to {}.`; }
+    else bridge = `The previous act ends on a choice the player has not made yet. Its options are:\n${lastB.choices.map(c=>`${c.id}: ${c.label}`).join('\n')}\nIn "bridge", give for EACH option id an array of 1-3 blocks (at most 90 words) that open this act acknowledging that choice. Everything after the bridge must read naturally after any of them.`;
+  }
+  return `${STANDARDS}
+
+${BLOCK_FORMAT}
+
+${SERIES_TEXT}
+
+${bibleBlock()}
+
+${canonBlock()}
+
+EPISODE PLAN S${S.state.season}E${S.state.ep} "${plan.title}": ${JSON.stringify({logline:plan.logline, plots:plan.plots, introduce:plan.introduce, clues:plan.clues, music:plan.music, tag:plan.tag, acts:plan.acts.map(a=>({n:a.n, summary:a.summary}))})}
+
+${earlier.length ? 'EARLIER IN THIS EPISODE:\n' + earlier.join('\n\n') : ''}
+
+You are the HEAD WRITER. Write ACT ${NUM[k]} (act ${k} of ${nActs}). Its beat plan: ${JSON.stringify(pa)}
+- Write every planned beat, in order, with the same ids. Each beat: 180-380 words of blocks ending on a moment of decision for Cal${k===1?' (beat b1 is the cold open, which ends before the title card)':''}.
+- Then 3-4 choices. Each choice: "id" = beat id + "c" + number (e.g. "b2c1"); "label" = what Cal does or says, 4-14 words, concrete, in the player's voice; "reaction" = blocks showing the immediate consequence (50-150 words; up to 280 for a pivotal choice); "remember" = a short soft signal such as "Nora will remember that." only for choices with lasting consequences, else "". Choices must be genuinely different (honest, evasive, funny, cruel, tender, reckless) and none obviously right. Cal's established habits (smoothing lies, running when it's real) should be tempting options, not the only ones.
+- Later beats in this act must read naturally after ANY earlier choice in this act: keep choice-specific consequences inside reactions, and refer back to them only in general terms.
+- ${bridge || 'This is the first act; set "bridge" to {}.'}
+- ${k===nActs ? `This is the final act: put the closing tag scene in "outro" (blocks, with a closing needle-drop)${S.state.ep===10?', ending the season on a cliffhanger':''}.` : '"outro" may be [] or a short sting.'}
+- Plant this act's clues naturally. Respect knowledge discipline exactly.${S.soften ? '\n- If a moment is extremely graphic, cut away at its peak with an ellipsis or time jump, keeping its emotional truth.' : ''}
+Reply with only JSON:
+{"act":${k},"bridge":{},"beats":[{"id":"b1","blocks":[],"choices":[{"id":"b1c1","label":"","reaction":[],"remember":""}]}],"outro":[]}`;
+}
+
+function pEdit(k, act){
+  return `${STANDARDS}
+
+${canonBlock()}
+
+INTRODUCTIONS ALLOWED THIS EPISODE: ${JSON.stringify(S.plan.introduce||[])}
+EARLIER IN THIS EPISODE:
+${Array.from({length:k-1},(_,i)=>blocksToText(actShownBlocks(i+1))).join('\n\n') || '(none)'}
+
+DRAFT — ACT ${k} (JSON):
+${JSON.stringify(act)}
+
+You are the CONTINUITY EDITOR. Audit the draft against the canon ledger and the earlier acts. Check:
+1. Knowledge leaks: anyone saying or acting on information they don't know (not in their FACTS knownBy, not witnessed or told on-screen this episode, not public). Cal must not know cutaway content.
+2. Consistency: names, ages, years, roles, relationships, history, voice, who has met whom (metCal false = strangers to Cal), dates, places, earlier choices.
+3. Characters with introduced:false appearing who aren't in the allowed introductions.
+4. Anyone in sexual content under 18. Malformed beats (fewer than 3 choices, empty reactions, duplicate ids).
+For each REAL problem, write a minimal patch. Don't rewrite for taste. If the draft is clean, return empty arrays.
+Patch addressing: "beat" = beat id; "part" = "blocks" | "reaction" | "bridge" | "outro"; "choice" = choice id (for reaction); "bridgeKey" = bridge option id (for bridge); "index" = block index in that array; "block" = the replacement block (same block format) or null to delete.
+Reply with only JSON:
+{"issues":[{"where":"b3/b3c2","problem":""}],"patches":[{"beat":"b3","part":"reaction","choice":"b3c2","bridgeKey":"","index":0,"block":{}}]}`;
+}
+
+function pLedger(item){
+  return `${canonBlock()}
+
+JUST AIRED — ${item.label}, ACT ${NUM[item.act]} (▶ marks Cal's choices; slugs marked CUTAWAY are scenes Cal is not in):
+${item.text}
+
+You are the SCRIPT COORDINATOR. Update the canon ledger from exactly what aired.
+- cast: every character who appeared or whose situation with Cal changed. Reuse existing ids exactly (newCast ids from the ledger too). For someone new to the ledger, give id (lowercase slug), name, role, age if known, and descriptor (public first impression). "introduced": true if they appeared on-screen. "metCal": true once Cal has actually met them on-screen. "impression": 1-2 sentences, audience-facing, where things stand with Cal right now — only what the audience has seen. "moment": one line for a significant moment this act, or "".
+- facts: new information established on-screen. "k" = ids who now know it (include "cal" only if Cal witnessed or was told); "a" = ids it's about; "aud": true. Record lies as facts ("Cal told Nora his father is in Zurich (false)") and secrets seen in cutaways (without "cal" in k). Record hookups, promises, betrayals, injuries, rumors and who spread them.
+- learned: existing fact ids that more characters learned on-screen: {"id":"f12","k":["nora"]}.
+- threads: open storylines, promises, debts and lies to track: {"id":"existing id or new short id","t":"description","state":"open|closed"}.
+- locations: places newly seen. date: the story date at the end of this act (YYYY-MM-DD). events: 1-4 terse lines.
+Reply with only JSON:
+{"cast":[{"id":"","name":"","role":"","age":0,"descriptor":"","introduced":true,"metCal":true,"impression":"","moment":""}],"facts":[{"t":"","k":[],"a":[],"aud":true}],"learned":[],"threads":[],"locations":[],"date":"YYYY-MM-DD","events":[""]}`;
+}
+
+function pWrap(){
+  const all = S.plan.acts.map((_,i)=>`--- ACT ${NUM[i+1]} ---\n`+blocksToText(actShownBlocks(i+1))).join('\n\n');
+  return `${STANDARDS}
+
+${canonBlock()}
+
+FULL EPISODE S${S.state.season}E${S.state.ep} "${S.plan.title}" (▶ marks Cal's choices):
+${all}
+
+You are POST-PRODUCTION.
+- logline: one spoiler-light sentence. recap: 180-260 words, past tense, audience-facing, naming the key choices Cal made and what they cost.
+- previously: 4-6 short moments to replay in next episode's "Previously on Whitlock" — quoted lines with the speaker ("NORA: You don't get to be tired.") or very brief actions.
+- calNow: 2-3 sentences on who Cal is becoming, based on his choices so far.
+- phone: 2-4 text threads that land on Cal's phone after the episode, only from people who have Cal's number and real reason to text (metCal true) — plus, rarely, an unknown number if the bible calls for it. Each: {"from":"id","name":"display name","msgs":["1-4 short texts in their voice"],"options":[{"id":"r1","text":"Cal's possible reply"}, …3 options with distinct tones]}.
+Reply with only JSON:
+{"logline":"","recap":"","previously":[""],"calNow":"","phone":[{"from":"","name":"","msgs":[""],"options":[{"id":"r1","text":""}]}]}`;
+}
+
+function pBibleUpdate(){
+  const g = S.guide.eps[S.guide.eps.length-1] || {};
+  const replies = (S.state.phoneReplies||[]).map(r=>`${r.name}: "${(r.msgs||[]).join(' / ')}" → Cal: "${r.reply}"`).join('\n') || '(none)';
+  return `${bibleBlock()}
+
+SEASON ${S.state.season} OUTLINE: ${JSON.stringify(S.bible.seasons?.[S.state.season]||{})}
+
+${canonBlock()}
+
+EPISODE THAT JUST AIRED: ${g.label} "${g.title}" — ${g.recap}
+CLUES THE PLANNER PLACED: ${JSON.stringify(S.plan?.clues||[])}
+CAL'S TEXT REPLIES AFTER THE EPISODE:
+${replies}
+
+You are the SHOWRUNNER, after the episode. Update the secret bible:
+- arcs: for each arc that changed: status (dormant → active → closed only once its truth is fully revealed on-screen), progress (where it stands), cluesPlanted (new lines like "S1E3: Dev's hands shaking at the vending machine"), and for a newly closed arc "reveal": 80-160 words for the player, behind the scenes: what was true all along and how it was clued.
+- outline: revise the remaining episodes of this season (only episodes after ${S.state.ep}) to respond to the player's choices — keep the season arc's destination unless the choices make a better one.
+- newArcs: add mini arcs if fewer than two are active. newCast: anyone new the story now needs.
+- privateNotes: how the player's choices have bent the endgame and the big relationships (the endgame must stay reachable).
+Reply with only JSON:
+{"arcs":[{"id":"","status":"","progress":"","cluesPlanted":[""],"reveal":""}],"outline":[{"e":0,"title":"","logline":"","dateHint":"","notes":""}],"newArcs":[],"newCast":[],"privateNotes":""}`;
+}
+
+function pCompact(){
+  return `${canonBlock()}
+
+SEASON ${S.state.season} HAS ENDED. You are the SCRIPT COORDINATOR compacting the ledger so it stays sharp across years.
+- seasonSummary: 250-400 words covering what happened this season, the state of every important relationship, and the choices that defined Cal.
+- keep: the facts to keep, by id. Keep every fact someone could plausibly reference later (secrets, lies, hookups, betrayals, promises, injuries, who knows what). Merge duplicates by keeping one id with rewritten text "t" and the union of "k". Drop trivia.
+- events: the 12 most important events of the season, terse.
+Reply with only JSON:
+{"seasonSummary":"","keep":[{"id":"f1","t":"optional rewritten text","k":["optional full knownBy list"]}],"events":[""]}`;
+}
+
+/* ================================================================
+   MERGES & NORMALIZERS
+   ================================================================ */
+function addCast(list){
+  for(const n of list||[]){
+    if(!n?.id || !n.name) continue;
+    const id = slug(n.id);
+    if(!S.canon.cast[id]) S.canon.cast[id] = {id, name:n.name, role:n.role||'', age:n.age, descriptor:n.descriptor||'', introduced:false, metCal:false, moments:[]};
+  }
+}
+function normalizeBible(b){
+  b = (b && typeof b==='object') ? b : {};
+  b.arcs = Array.isArray(b.arcs) ? b.arcs : [];
+  b.arcs.forEach((a,i) => { a.id = slug(a.id || ('arc-'+i)); a.cluesPlanted = arr(a.cluesPlanted); a.status = a.status || 'dormant'; });
+  b.newCast = Array.isArray(b.newCast) ? b.newCast : [];
+  b.newCast.forEach(n => n.id = slug(n.id || n.name));
+  b.seasons = b.seasons || {};
+  b.notes = b.notes || [];
+  return b;
+}
+function mergeArcs(list){
+  for(const a of list||[]){
+    if(!a?.id) continue; const id = slug(a.id);
+    if(S.bible.arcs.some(x=>x.id===id)) continue;
+    S.bible.arcs.push({...a, id, cluesPlanted:arr(a.cluesPlanted), status:a.status||'dormant'});
+  }
+}
+function mergeBibleUpdate(u){
+  for(const a of u.arcs||[]){
+    const cur = S.bible.arcs.find(x=>x.id===slug(a.id)); if(!cur) continue;
+    if(a.status && cur.status!=='closed'){
+      if(a.status==='closed') cur.closedAt = epLabel();
+      cur.status = a.status;
+    }
+    if(a.progress) cur.progress = a.progress;
+    if(a.reveal) cur.reveal = a.reveal;
+    for(const c of arr(a.cluesPlanted)) if(!cur.cluesPlanted.includes(c)) cur.cluesPlanted.push(c);
+  }
+  mergeArcs(u.newArcs);
+  if(Array.isArray(u.newCast)){ S.bible.newCast.push(...u.newCast.filter(n=>n?.id).map(n=>({...n, id:slug(n.id)}))); addCast(u.newCast); }
+  const sp = S.bible.seasons[S.state.season];
+  if(sp && Array.isArray(u.outline)){
+    for(const o of u.outline){ const e = Number(o.e); if(!(e > S.state.ep)) continue; const i = sp.episodes.findIndex(x=>Number(x.e)===e); if(i>=0) sp.episodes[i] = {...sp.episodes[i], ...o, e}; else sp.episodes.push({...o, e}); }
+  }
+  if(u.privateNotes) S.bible.notes = [...(S.bible.notes||[]), `${epLabel()}: ${u.privateNotes}`].slice(-12);
+}
+function mergeLedger(p, label){
+  const c = S.canon, F = S.facts;
+  for(const x of p.cast||[]){
+    if(!x?.id) continue; const id = slug(x.id); if(id==='cal') continue;
+    const cur = c.cast[id] || {id, moments:[], introduced:false, metCal:false};
+    if(x.name) cur.name = x.name; if(x.role) cur.role = x.role; if(x.age) cur.age = x.age;
+    if(x.descriptor && !cur.descriptor) cur.descriptor = x.descriptor;
+    if(x.introduced !== false){ if(!cur.introduced) cur.firstSeen = label; cur.introduced = true; }
+    if(x.metCal){ if(!cur.metCal) cur.metAt = label; cur.metCal = true; }
+    if(x.impression) cur.impression = x.impression;
+    if(x.moment) cur.moments = [...(cur.moments||[]), `${label}: ${x.moment}`].slice(-10);
+    if(!cur.name) cur.name = id;
+    c.cast[id] = cur;
+  }
+  for(const f of p.facts||[]){ if(!f?.t) continue; F.facts.push({id:'f'+(F.next++), t:f.t, k:arr(f.k), a:arr(f.a), aud:f.aud!==false, pub:!!f.pub, ep:label}); }
+  for(const l of p.learned||[]){ const f = F.facts.find(z=>z.id===l.id); if(f) f.k = [...new Set([...f.k, ...arr(l.k)])]; }
+  c.threads = c.threads || [];
+  for(const t of p.threads||[]){
+    if(!t) continue; const cur = t.id && c.threads.find(z=>z.id===t.id);
+    if(cur){ if(t.t) cur.t = t.t; if(t.state) cur.state = t.state; }
+    else if(t.t) c.threads.push({id: t.id ? slug(t.id) : ('t'+(c.threads.length+1)), t:t.t, state:t.state||'open', ep:label});
+  }
+  c.threads = c.threads.filter(t=>t.state!=='closed').concat(c.threads.filter(t=>t.state==='closed').slice(-20));
+  c.locations = [...new Set([...(c.locations||[]), ...arr(p.locations)])];
+  if(/^\d{4}-\d{2}-\d{2}$/.test(p.date||'')) S.state.date = p.date;
+  F.events = [...(F.events||[]), ...arr(p.events).map(t=>({ep:label, t}))].slice(-120);
+}
+const okBlock = b => b && typeof b==='object' && typeof b.t==='string';
+function normBlocks(x){ return (Array.isArray(x) ? x : []).filter(okBlock); }
+function normalizeAct(act, k){
+  if(!act || !Array.isArray(act.beats) || !act.beats.length) throw {code:'invalid_json', message:'Act had no beats'};
+  act.act = k;
+  act.bridge = (act.bridge && typeof act.bridge==='object' && !Array.isArray(act.bridge)) ? act.bridge : {};
+  for(const key of Object.keys(act.bridge)) act.bridge[key] = normBlocks(act.bridge[key]);
+  act.outro = normBlocks(act.outro);
+  const seen = new Set();
+  act.beats.forEach((b,i) => {
+    if(!b.id || seen.has(b.id)) b.id = 'b'+(i+1); seen.add(b.id);
+    b.blocks = normBlocks(b.blocks);
+    b.choices = (Array.isArray(b.choices)?b.choices:[]).filter(c=>c && c.label);
+    const cs = new Set();
+    b.choices.forEach((c,j) => { if(!c.id || cs.has(c.id)) c.id = b.id+'c'+(j+1); cs.add(c.id); c.reaction = normBlocks(c.reaction); c.remember = c.remember||''; });
+    if(!b.choices.length) b.choices = [{id:b.id+'c1', label:'Keep going.', reaction:[], remember:''}];
+  });
+  return act;
+}
+function applyPatches(act, patches){
+  let n = 0;
+  for(const p of patches||[]){
+    try{
+      let target;
+      if(p.part==='outro') target = act.outro;
+      else if(p.part==='bridge') target = act.bridge?.[p.bridgeKey];
+      else { const b = act.beats.find(x=>x.id===p.beat); if(!b) continue;
+        target = p.part==='reaction' ? b.choices.find(c=>c.id===p.choice)?.reaction : b.blocks; }
+      if(!Array.isArray(target)) continue;
+      const i = Number(p.index); if(!(i>=0 && i<=target.length)) continue;
+      if(p.block===null){ if(i<target.length){ target.splice(i,1); n++; } }
+      else if(okBlock(p.block)){ if(i<target.length) target[i] = p.block; else target.push(p.block); n++; }
+    }catch{}
+  }
+  return n;
+}
+
+/* ---------- transcripts ---------- */
+function actShownBlocks(k){
+  const act = S.acts[k]; if(!act) return [];
+  const out = [], picks = S.state.picks?.[k] || {};
+  if(k>1){ const prev = S.acts[k-1]; const lb = prev?.beats[prev.beats.length-1]; const pk = lb && S.state.picks?.[k-1]?.[lb.id]; if(pk && act.bridge?.[pk]) out.push(...act.bridge[pk]); }
+  for(const b of act.beats){
+    out.push(...b.blocks);
+    const pk = picks[b.id]; if(!pk) break;
+    const c = b.choices.find(x=>x.id===pk);
+    if(c){ out.push({t:'pick', text:c.label}); out.push(...c.reaction); }
+  }
+  const lb = act.beats[act.beats.length-1];
+  if(picks[lb.id]) out.push(...act.outro);
+  return out;
+}
+function blocksToText(blocks){
+  return blocks.map(b => {
+    switch(b.t){
+      case 'slug': return '\n' + (b.cut ? 'CUTAWAY — ' : '') + b.text;
+      case 'a': return b.text;
+      case 'line': return `${(b.name||b.who||'').toUpperCase()}${b.paren?' '+b.paren:''}: ${b.text}`;
+      case 'texts': return `[TEXTS — ${b.thread}${b.onCal?' (Cal\'s phone)':''}] ` + (b.msgs||[]).map(m=>`${m.from}: ${m.text}`).join(' | ');
+      case 'music': return `♪ ${b.song} — ${b.artist}`;
+      case 'card': return `— ${b.text} —`;
+      case 'pick': return `▶ CAL CHOOSES: ${b.text}`;
+      default: return b.text || '';
+    }
+  }).join('\n');
+}
+
+/* ================================================================
+   PIPELINE (resumable; every step persists before moving on)
+   ================================================================ */
+async function runPipeline(){
+  if(S.running || !S.state) return;
+  if(!S.sample){ S.err = describeErr({code:'sampling_unavailable'}); render(); return; }
+  S.running = true; S.err = null; render();
+  try{
+    for(let guard=0; guard<12; guard++){
+      const st = S.state.stage;
+      if(st==='new') await stepBible();
+      else if(st==='season_plan') await stepSeason();
+      else if(st==='plan') await stepPlan();
+      else if(st==='write') await stepWrite();
+      else if(st==='wrap') await stepWrap();
+      else if(st==='between') await stepBetween();
+      else break;
+      render();
+    }
+  }catch(e){ console.warn(e); S.err = describeErr(e); }
+  finally{ S.running = false; render(); }
+}
+async function stepBible(){
+  const b = await ask('showrunner', pBible(), 'Writing the secret series bible');
+  S.bible = normalizeBible(b);
+  addCast(S.bible.newCast);
+  await Store.set('bible', S.bible); await Store.set('canon', S.canon);
+  S.state.stage = 'season_plan'; await saveState();
+}
+async function stepSeason(){
+  const out = await ask('showrunner', pSeason(), `Breaking Season ${S.state.season}`);
+  const eps = Array.isArray(out?.episodes) ? out.episodes : [];
+  if(eps.length < 5) throw {code:'invalid_json', message:'Season outline too short'};
+  S.bible.seasons[S.state.season] = {title:out.title||`Season ${S.state.season}`, logline:out.logline||'', seasonArc:out.seasonArc||'', episodes:eps.map((x,i)=>({...x, e:Number(x.e)||i+1}))};
+  mergeArcs(out.newArcs);
+  if(Array.isArray(out.newCast)){ S.bible.newCast.push(...out.newCast.filter(n=>n?.id).map(n=>({...n,id:slug(n.id)}))); addCast(out.newCast); }
+  await Store.set('bible', S.bible); await Store.set('canon', S.canon);
+  if(S.state.season===1 && S.state.ep===1) S.state.date = seasonWindow(1).startISO;
+  S.state.stage = 'plan'; await saveState();
+}
+async function stepPlan(){
+  const plan = await ask('planner', pPlan(), `Breaking ${epLabel()}`);
+  if(!plan || !Array.isArray(plan.acts) || !plan.acts.length) throw {code:'invalid_json', message:'Plan missing acts'};
+  plan.acts = plan.acts.slice(0,4).map((a,i)=>({...a, n:i+1, beats:Array.isArray(a.beats)?a.beats:[]}));
+  plan.title = plan.title || 'Untitled';
+  plan.introduce = arr(plan.introduce).map(slug);
+  S.plan = plan; S.acts = {};
+  await Store.set('plan-'+epKey(), plan);
+  Object.assign(S.state, {stage:'write', act:1, beat:0, picks:{}, epStarted:false, phoneReplies:[], ledgerQueue:[]});
+  if(/^\d{4}-\d{2}-\d{2}$/.test(plan.dateStart||'')) S.state.date = plan.dateStart;
+  await saveState(); applySeason();
+}
+async function stepWrite(){
+  await ensureAct(S.state.act);
+  S.state.stage = 'play'; await saveState();
+  prefetchCheck();
+}
+function ensureAct(k){
+  if(S.acts[k]) return Promise.resolve(S.acts[k]);
+  if(S.jobs['act'+k]) return S.jobs['act'+k];
+  const ep = epKey();
+  const p = (async () => {
+    let act = await Store.get(`act-${ep}-${k}`);
+    if(!act){
+      const draft = normalizeAct(await ask('writer', pAct(k), `Drafting Act ${NUM[k]}`), k);
+      try{
+        const ed = await ask('editor', pEdit(k, draft), `Checking Act ${NUM[k]}`);
+        const n = applyPatches(draft, ed?.patches);
+        draft.audit = {issues:(ed?.issues||[]).length, fixed:n};
+        roomSet('editor', {status:'done', label: n ? `Fixed ${n} continuity slip${n>1?'s':''} in Act ${NUM[k]}` : `Act ${NUM[k]} is clean`});
+      }catch(e){ if(['not_granted','sampling_disabled','session_expired','rate_limited'].includes(e?.code)) throw e; draft.audit = {skipped:true}; }
+      act = draft;
+      if(epKey()!==ep) return act;
+      await Store.set(`act-${ep}-${k}`, act);
+    }
+    if(epKey()===ep) S.acts[k] = act;
+    return act;
+  })();
+  S.jobs['act'+k] = p;
+  p.then(()=>{ S.soften=false; render(); }, ()=>{}).finally(()=>{ if(S.jobs['act'+k]===p) delete S.jobs['act'+k]; });
+  return p;
+}
+function prefetchCheck(){
+  if(!S.plan || S.state.stage!=='play') return;
+  const k = S.state.act, act = S.acts[k]; if(!act || k >= S.plan.acts.length || S.acts[k+1] || S.jobs['act'+(k+1)]) return;
+  const picked = Object.keys(S.state.picks?.[k]||{}).length;
+  if(picked >= act.beats.length-1 || act.beats.length < 2){
+    ensureAct(k+1).catch(e => { S.prefetchErr = e; });
+  }
+}
+function queueLedger(k){
+  S.state.ledgerQueue = S.state.ledgerQueue || [];
+  if(S.state.ledgerQueue.some(x=>x.ep===epKey() && x.act===k)) return;
+  S.state.ledgerQueue.push({ep:epKey(), label:epLabel(), act:k, text:clip(blocksToText(actShownBlocks(k)), 60000)});
+}
+let ledgerP = null;
+function drainLedger(){
+  if(ledgerP) return ledgerP;
+  ledgerP = (async () => {
+    while((S.state.ledgerQueue||[]).length){
+      const item = S.state.ledgerQueue[0];
+      const p = await ask('ledger', pLedger(item), `Logging ${item.label} Act ${NUM[item.act]}`);
+      mergeLedger(p||{}, item.label);
+      await Store.set('canon', S.canon); await Store.set('facts', S.facts);
+      S.state.ledgerQueue.shift(); await saveState();
+    }
+  })().finally(()=>{ ledgerP = null; });
+  return ledgerP;
+}
+function collectPhone(k){
+  const blocks = actShownBlocks(k).filter(b=>b.t==='texts' && (b.onCal || (b.msgs||[]).some(m=>m.from==='cal')));
+  for(const b of blocks){
+    const key = slug(b.thread||'unknown');
+    const th = S.phone.threads[key] || (S.phone.threads[key] = {name:b.thread||'Unknown', msgs:[]});
+    for(const m of b.msgs||[]) th.msgs.push({me:m.from==='cal', from:m.from, text:m.text, ep:epLabel()});
+    th.last = Date.now();
+  }
+  if(blocks.length) Store.set('phone', S.phone);
+}
+async function stepWrap(){
+  await drainLedger();
+  const w = await ask('recap', pWrap(), `Cutting ${epLabel()}`);
+  const entry = {key:epKey(), label:epLabel(), season:S.state.season, ep:S.state.ep, title:S.plan.title, logline:w.logline||S.plan.logline||'', recap:w.recap||'', previously:arr(w.previously), date:S.state.date,
+    music:(S.plan.music||[]).slice(-1)[0]||null};
+  S.guide.eps = S.guide.eps.filter(e=>e.key!==entry.key).concat(entry);
+  await Store.set('guide', S.guide);
+  const tx = []; S.plan.acts.forEach((_,i)=>{ tx.push({t:'actcard', text:`Act ${NUM[i+1]}`}); tx.push(...actShownBlocks(i+1)); });
+  await Store.set('tx-'+epKey(), {title:S.plan.title, label:epLabel(), blocks:tx});
+  if(w.calNow){ S.canon.calNow = w.calNow; await Store.set('canon', S.canon); }
+  S.state.interlude = (Array.isArray(w.phone)?w.phone:[]).filter(t=>t && t.name && Array.isArray(t.options) && t.options.length).slice(0,4)
+    .map((t,i)=>({...t, i, msgs:arr(t.msgs), options:t.options.slice(0,4).map((o,j)=>({id:'r'+(j+1), text:String(o?.text ?? o)}))}));
+  S.state.interPicks = {};
+  S.state.stage = 'credits'; await saveState();
+}
+async function stepBetween(){
+  await drainLedger();
+  S.state.between = S.state.between || {};
+  if(!S.state.between.bible){
+    const u = await ask('showrunner', pBibleUpdate(), `Steering the arcs after ${epLabel()}`);
+    mergeBibleUpdate(u||{});
+    await Store.set('bible', S.bible);
+    S.state.between.bible = true; await saveState();
+  }
+  if(S.state.ep >= 10){
+    if(!S.state.between.compact){
+      const cmp = await ask('ledger', pCompact(), `Closing the books on Season ${S.state.season}`);
+      if(cmp?.seasonSummary) S.facts.summaries[S.state.season] = cmp.seasonSummary;
+      if(Array.isArray(cmp?.keep) && cmp.keep.length > S.facts.facts.length*0.3){
+        const byId = new Map(S.facts.facts.map(f=>[f.id,f]));
+        S.facts.facts = cmp.keep.map(x=>{ const f = byId.get(x.id); if(!f) return null; if(x.t) f.t = x.t; if(Array.isArray(x.k)&&x.k.length) f.k = arr(x.k); return f; }).filter(Boolean);
+      }
+      if(Array.isArray(cmp?.events)) S.facts.events = cmp.events.map(t=>({ep:`Season ${S.state.season}`, t:String(t)}));
+      await Store.set('facts', S.facts);
+      S.state.between.compact = true; await saveState();
+    }
+    if(S.state.season >= FINAL_SEASON){ S.state.stage = 'finale'; S.state.between = {}; await saveState(); return; }
+    S.state.season++; S.state.ep = 1; S.state.stage = 'season_plan';
+    S.state.date = seasonWindow(S.state.season).startISO;
+  } else { S.state.ep++; S.state.stage = 'plan'; }
+  S.state.between = {}; S.state.interlude = null; S.acts = {}; S.plan = null;
+  await saveState(); applySeason();
+}
+
+function describeErr(e){
+  const code = e?.code || 'upstream_error';
+  if(code==='refused') S.soften = true;
+  const copy = {
+    sampling_unavailable:"The writers need Claude, and this view can't reach it. Open the game on claude.ai while signed in.",
+    not_granted:"Claude access was declined for this page, so the writers can't work. Reload the page and choose Allow when asked.",
+    sampling_disabled:"Claude isn't available on this account right now.",
+    rate_limited:"You've hit a usage limit. Wait a while, then retry. Your progress is saved.",
+    session_expired:"Your claude.ai session expired. Sign in again, then retry.",
+    refused:"The writers balked at a scene. Retry, and they'll handle the most graphic moment with a cut.",
+    invalid_json:"A script came back garbled. Retry to have it rewritten.",
+    empty_completion:"A draft came back empty. Retry.",
+    prompt_too_large:"The story context got too big to send. Retry; if it keeps happening, the ledger needs compacting.",
+    cancelled:"The draft was stopped.",
+  }[code] || "The connection dropped mid-draft. Retry when you're ready.";
+  return {code, copy};
+}
+
+/* ================================================================
+   PLAYER ACTIONS
+   ================================================================ */
+async function newGame(){
+  S.state = {v:1, stage:'new', season:1, ep:1, act:1, beat:0, picks:{}, date:'2026-08-24', created:Date.now(), rev:0, ledgerQueue:[], phoneReplies:[]};
+  S.canon = {cast:{}, threads:[], locations:[], calNow:''};
+  CAST_SEED.forEach(c => S.canon.cast[c.id] = {...c, introduced:false, metCal:false, moments:[]});
+  S.facts = {facts:FACT_SEED.map((f,i)=>({id:'f'+(i+1), ep:'backstory', aud:false, ...f})), next:FACT_SEED.length+1, events:[], summaries:{}};
+  S.guide = {eps:[]}; S.phone = {threads:{}}; S.bible = null; S.acts = {}; S.plan = null;
+  await Promise.all([Store.set('canon',S.canon), Store.set('facts',S.facts), Store.set('guide',S.guide), Store.set('phone',S.phone)]);
+  await saveState(); applySeason(); S.tab='story';
+  runPipeline();
+}
+async function pick(k, beatId, choiceId){
+  if(S.state.stage!=='play' || k!==S.state.act) return;
+  const act = S.acts[k]; const idx = act.beats.findIndex(b=>b.id===beatId);
+  if(idx!==S.state.beat) return;
+  S.state.picks[k] = S.state.picks[k] || {};
+  if(S.state.picks[k][beatId]) return;
+  S.state.picks[k][beatId] = choiceId;
+  S.scrollTo = 'pick-'+k+'-'+beatId;
+  saveState(); render(); prefetchCheck();
+}
+async function cont(){
+  const k = S.state.act, act = S.acts[k];
+  if(!act) return;
+  if(S.state.beat < act.beats.length-1){ S.state.beat++; S.scrollTo = 'beat-'+k+'-'+act.beats[S.state.beat].id; saveState(); render(); return; }
+  queueLedger(k); collectPhone(k);
+  if(k < S.plan.acts.length){
+    S.state.act = k+1; S.state.beat = 0; S.state.stage = S.acts[k+1] ? 'play' : 'write';
+    S.scrollTo = 'act-'+(k+1);
+    await saveState(); render();
+    drainLedger().catch(()=>{});
+    if(S.state.stage==='write') runPipeline(); else prefetchCheck();
+  } else {
+    S.state.stage = 'wrap'; await saveState(); render(); runPipeline();
+  }
+}
+async function startEpisode(){ S.state.epStarted = true; await saveState(); window.scrollTo({top:0}); render(); prefetchCheck(); }
+async function interReply(i, optId){
+  const t = S.state.interlude?.[i]; if(!t || S.state.interPicks[i]) return;
+  const o = t.options.find(x=>x.id===optId) || t.options[0];
+  S.state.interPicks[i] = o.id;
+  S.state.phoneReplies = [...(S.state.phoneReplies||[]), {from:t.from, name:t.name, msgs:t.msgs, reply:o.text}];
+  const key = slug(t.name);
+  const th = S.phone.threads[key] || (S.phone.threads[key] = {name:t.name, msgs:[]});
+  t.msgs.forEach(m => th.msgs.push({me:false, from:t.from, text:m, ep:epLabel()}));
+  th.msgs.push({me:true, from:'cal', text:o.text, ep:epLabel()}); th.last = Date.now();
+  Store.set('phone', S.phone); await saveState(); render();
+}
+async function finishInterlude(){ S.state.stage = 'between'; await saveState(); render(); runPipeline(); }
+async function resetAll(){
+  S.confirmReset = false;
+  await Store.wipe();
+  Object.assign(S, {state:null, canon:null, facts:null, bible:null, guide:null, phone:null, plan:null, acts:{}, room:{}, err:null});
+  applySeason(); S.tab = 'story'; render(); toast('Erased. A new Whitlock awaits.');
+}
+
+/* ================================================================
+   RENDERING
+   ================================================================ */
+function avatar(id, name, size=44){
+  let h = 2166136261; for(const ch of String(id)) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619) >>> 0; }
+  const h1 = h % 360, h2 = (h1 + 35 + (h>>9)%150) % 360, h3 = (h2 + 60 + (h>>17)%90) % 360, ang = (h>>5) % 360;
+  const ini = String(name||id).replace(/^(Prof\.|Dr\.)\s*/,'').split(/\s+/).map(w=>w[0]).filter(Boolean).slice(0,2).join('').toUpperCase();
+  return `<span class="av" aria-hidden="true" style="--h1:${h1};--h2:${h2};--h3:${h3};--ang:${ang}deg;width:${size}px;height:${size}px;font-size:${size*.42}px">${esc(ini)}</span>`;
+}
+function blockHTML(b){
+  switch(b.t){
+    case 'slug': return `<div class="slug${b.cut?' cut':''}">${esc(b.text)}</div>`;
+    case 'a': return `<p class="a">${esc(b.text)}</p>`;
+    case 'line': return `<div class="ln"><span class="who">${esc(b.name || nameOf(b.who))}</span>${b.paren?`<span class="par">${esc(b.paren)}</span>`:''}<p class="say">${esc(b.text)}</p></div>`;
+    case 'texts': return `<div class="phone" role="group" aria-label="Text messages"><div class="th">${esc(b.thread)}</div>${(b.msgs||[]).map(m=>`<div class="bub${m.from==='cal'?' me':''}">${m.from!=='cal' && !b.thread?.toLowerCase().includes(nameOf(m.from).toLowerCase().split(' ')[0]) ? `<small>${esc(nameOf(m.from))}</small>`:''}${esc(m.text)}</div>`).join('')}</div>`;
+    case 'music': return `<div class="music">${esc(b.song)} — ${esc(b.artist)}</div>`;
+    case 'card': return `<div class="cardline">${esc(b.text)}</div>`;
+    case 'actcard': return `<div class="actcard">${esc(b.text)}</div>`;
+    case 'pick': return `<div class="chosen">Cal chose<b>${esc(b.text)}</b></div>`;
+    default: return b.text ? `<p class="a">${esc(b.text)}</p>` : '';
+  }
+}
+function nameOf(id){ if(!id) return ''; if(id==='cal') return 'Cal'; const c = S.canon?.cast?.[id]; return c ? c.name.replace(/^Prof\.\s*/,'').split(' ')[0] : String(id); }
+const blocksHTML = bs => (bs||[]).map(blockHTML).join('');
+
+function roomHTML(){
+  const order = ['showrunner','planner','writer','editor','ledger','recap'];
+  return order.map(k => {
+    const a = AGENTS[k], r = S.room[k] || {};
+    const st = r.status || 'idle';
+    const pct = st==='done' ? 100 : st==='working' ? Math.min(95, Math.round(100*(r.chars||0)/a.expect)) : 0;
+    const label = st==='working' ? (r.chars ? `${r.label} · ${Math.round(r.chars/1000)}k` : `${r.label} · thinking`) : (r.label || a.job);
+    return `<div class="agent"><span class="nm">${esc(a.name)}</span><span class="st ${st}">${st==='idle'?'Standing by':st==='working'?'Working':st==='done'?'Done':'Stopped'}</span><span class="md">${esc(TIER_LABEL[a.tier])} · ${esc(label)}</span><div class="bar"><i style="width:${pct}%"></i></div></div>`;
+  }).join('');
+}
+function pillHTML(){
+  const w = Object.entries(S.room).find(([,r])=>r.status==='working');
+  return w ? `<span class="pill"><i></i>${esc(AGENTS[w[0]].name)} · ${esc(w[1].label||'')}</span>` : '';
+}
+function breakHTML(){
+  if(!S.err) return '';
+  return `<div class="break" role="alert"><h3>The writers' room is on a break.</h3><p class="a">${esc(S.err.copy)}</p><div class="row"><button class="btn" data-do="retry">Retry</button></div></div>`;
+}
+function waitPanel(title, sub){
+  return `<div class="stack"><div><div class="eyebrow">${esc(sub||'')}</div><h2 style="font-size:2rem;font-style:italic">${esc(title)}</h2></div>
+    ${S.err ? breakHTML() : (!S.running ? `<div class="row"><button class="btn" data-do="retry">Bring in the writers</button></div>` : '')}
+    <div class="panel"><div class="eyebrow" style="margin-bottom:.6rem">Writers' room</div><div class="room" id="room">${roomHTML()}</div></div></div>`;
+}
+
+function renderNow(){
+  const n = $('#now');
+  if(!S.state){ n.innerHTML = `<span>Whitlock University · Alder Falls, Mass.</span>`; return; }
+  const t = S.plan?.title && ['play','write','wrap','credits'].includes(S.state.stage) ? ` · <b>“${esc(S.plan.title)}”</b>` : '';
+  n.innerHTML = `<span><b>S${S.state.season} · E${S.state.ep}</b>${t}</span><span>${esc(fmtDate(S.state.date))}</span><span id="pill">${pillHTML()}</span>`;
+}
+
+function render(){
+  renderNow();
+  document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-current', t.dataset.tab===S.tab ? 'page' : 'false'));
+  const m = $('#main');
+  if(!S.ready){ return; }
+  let html = '';
+  if(S.tab==='story') html = storyHTML();
+  else if(S.tab==='cast') html = castHTML();
+  else if(S.tab==='episodes') html = episodesHTML();
+  else if(S.tab==='phone') html = phoneHTML();
+  else if(S.tab==='calendar') html = calendarHTML();
+  else html = extrasHTML();
+  m.innerHTML = html;
+  if(S.tab==='story' && !S.state) startDrift();
+  if(S.scrollTo){ const el = document.getElementById(S.scrollTo); S.scrollTo = null; if(el) requestAnimationFrame(()=>el.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth', block:'start'})); }
+}
+
+function titleScreen(){
+  const noCaps = !S.sample;
+  return `<section class="hero"><canvas id="drift" aria-hidden="true"></canvas><div class="hero-in">
+    <div class="crest">Whitlock University · Est. 1791</div>
+    <h1>Whitlock</h1>
+    <p class="sub">Cal Whitaker's name is on the building. That's the problem.</p>
+    <div class="row" style="justify-content:center"><button class="btn" data-do="new" ${noCaps?'disabled':''}>Start the series</button></div>
+    <p class="fine">${noCaps ? "This game writes itself with Claude. Open it on claude.ai while signed in to play." :
+      "A choice-driven college drama, written live by a room of AI agents. Starting the series lets the showrunner write a secret bible you'll never see and break Season One. The pilot takes a few minutes to write. Claude will ask permission first."}</p>
+    <p class="fine">${S.local ? 'Saves stay in this browser only.' : 'Progress saves to your claude.ai account and follows you to any device.'}</p>
+  </div></section>`;
+}
+
+function storyHTML(){
+  const st = S.state;
+  if(!st) return titleScreen();
+  if(st.stage==='finale') return `<div class="col stack"><div class="titlecard"><div class="mk">Whitlock</div><h2>Series finale</h2><div class="eyebrow">Four years. Every choice was yours.</div></div><p class="a">Cal's story is complete. Every secret is now unlocked in Extras.</p></div>`;
+  if(['new','season_plan'].includes(st.stage)){
+    const s1 = st.season===1;
+    return `<div class="col stack">${s1 ? `<div class="titlecard"><div class="mk">Whitlock</div><h2>Season One</h2><div class="eyebrow">Now casting · The writers are in the room</div></div>` :
+      `<div class="titlecard"><div class="mk">Whitlock</div><h2>Season ${st.season}</h2><div class="eyebrow">${esc(YEARS[seasonWindow(st.season).yi])} year · ${esc(seasonWindow(st.season).sem)} · ${esc(seasonWindow(st.season).label)}</div></div>`}
+      ${waitPanel(s1 ? 'The showrunner is building your show.' : 'Breaking the new season.', s1 ? 'Secret bible, season arc, cast you haven\'t met' : 'The long arcs move forward')}
+      <p class="fine">You can leave and come back. Each step saves as it finishes.</p></div>`;
+  }
+  if(st.stage==='plan' || ((st.stage==='write'||st.stage==='play') && !st.epStarted)) return nextEpHTML();
+  if(st.stage==='credits') return creditsHTML();
+  if(st.stage==='phone') return interludeHTML();
+  if(st.stage==='between') return `<div class="col stack">${previouslyHTML()}${waitPanel('Writing the next episode.', `After ${epLabel()}`)}</div>`;
+  return playHTML();
+}
+function previouslyHTML(){
+  const last = S.guide?.eps?.[S.guide.eps.length-1];
+  if(!last || !last.previously?.length) return '';
+  return `<div class="stack"><div class="eyebrow">Previously on</div><h2 style="font-size:2.4rem;letter-spacing:.2em;text-transform:uppercase">Whitlock</h2><div class="prev">${last.previously.map(p=>`<p>${esc(p)}</p>`).join('')}</div></div>`;
+}
+function nextEpHTML(){
+  const st = S.state, ready = st.stage==='play' && S.acts[1];
+  const sp = S.bible?.seasons?.[st.season];
+  return `<div class="col stack">
+    ${previouslyHTML()}
+    <div class="titlecard"><div class="mk">Whitlock</div><div class="eyebrow">Season ${st.season} · Episode ${st.ep}${sp?.title?` · ${esc(sp.title)}`:''}</div>
+      <h2>${ready || S.plan ? esc(S.plan?.title||'') : 'In the writers\' room'}</h2></div>
+    ${ready ? `<div class="row" style="justify-content:center"><button class="btn" data-do="start">Play episode</button></div>
+      <p class="fine" style="text-align:center">${esc(fmtDate(st.date,{weekday:'long',month:'long',day:'numeric'}))} · ${esc(yearName())} year</p>`
+      : waitPanel(S.plan ? 'Writing Act One.' : 'Breaking the episode.', 'The episode is being written')}
+  </div>`;
+}
+function playHTML(){
+  const st = S.state, plan = S.plan, out = [];
+  out.push(`<div class="col script">`);
+  for(let k=1; k<=st.act; k++){
+    const act = S.acts[k];
+    if(k>1) out.push(`<div class="actcard" id="act-${k}">Act ${NUM[k]}</div>`);
+    if(!act) break;
+    const picks = st.picks?.[k] || {};
+    if(k>1){ const prev = S.acts[k-1], lb = prev.beats[prev.beats.length-1], pk = st.picks?.[k-1]?.[lb.id]; if(pk && act.bridge?.[pk]) out.push(blocksHTML(act.bridge[pk])); }
+    const upto = k < st.act ? act.beats.length-1 : st.beat;
+    for(let i=0; i<=upto && i<act.beats.length; i++){
+      const b = act.beats[i], pk = picks[b.id];
+      out.push(`<div id="beat-${k}-${b.id}"></div>`);
+      out.push(blocksHTML(b.blocks));
+      if(pk){
+        const c = b.choices.find(x=>x.id===pk) || {label:'', reaction:[]};
+        out.push(`<div class="chosen" id="pick-${k}-${b.id}">Cal chose<b>${esc(c.label)}</b></div>`);
+        out.push(blocksHTML(c.reaction));
+        if(c.remember) out.push(`<div class="remember">${esc(c.remember)}</div>`);
+        if(k===1 && i===0) out.push(`<div class="titlecard"><div class="mk">Whitlock</div><div class="eyebrow">Season ${st.season} · Episode ${st.ep}</div><h2>${esc(plan.title)}</h2></div>`);
+      } else if(k===st.act){
+        out.push(`<div class="choices" role="group" aria-label="What does Cal do?">${b.choices.map((c,j)=>`<button class="choice" data-pick="${k}|${esc(b.id)}|${esc(c.id)}"><span>${String.fromCharCode(65+j)}</span>${esc(c.label)}</button>`).join('')}</div>`);
+      }
+    }
+    const lb = act.beats[act.beats.length-1];
+    if(picks[lb.id]) out.push(blocksHTML(act.outro));
+  }
+  const cur = S.acts[st.act];
+  if(st.stage==='play' && cur){
+    const b = cur.beats[st.beat];
+    if(st.picks?.[st.act]?.[b.id]){
+      const last = st.beat === cur.beats.length-1;
+      const lastAct = st.act === plan.acts.length;
+      out.push(`<button class="btn cont" data-do="cont">${last ? (lastAct ? 'End of episode' : `Act ${NUM[st.act+1]}`) : 'Continue'}</button>`);
+    }
+  }
+  if(st.stage==='write') out.push(waitPanel(`Writing Act ${NUM[st.act]}.`, 'Commercial break'));
+  if(st.stage==='wrap') out.push(`<div class="titlecard"><div class="mk">Whitlock</div><h2>End of episode</h2></div>` + waitPanel('Cutting the episode.', 'Post-production'));
+  out.push(`</div>`);
+  return out.join('');
+}
+function creditsHTML(){
+  const g = S.guide.eps[S.guide.eps.length-1] || {};
+  const finale = S.state.ep===10;
+  return `<div class="col stack">
+    <div class="titlecard"><div class="mk">Whitlock</div><div class="eyebrow">${esc(g.label||'')} · End of episode</div><h2>${esc(g.title||'')}</h2>${g.music?`<div class="eyebrow">♪ ${esc(g.music.song)} — ${esc(g.music.artist)}</div>`:''}</div>
+    ${finale ? `<div class="cardline">Season ${S.state.season} will return</div>` : ''}
+    <div class="panel"><div class="eyebrow">Episode recap</div><p class="a">${esc(g.recap||'')}</p></div>
+    <div class="row" style="justify-content:center">${S.state.interlude?.length ? `<button class="btn" data-do="tophone">Cal's phone is buzzing</button>` : `<button class="btn" data-do="finishphone">On to the next episode</button>`}</div>
+  </div>`;
+}
+function interludeHTML(){
+  const it = S.state.interlude || [], picks = S.state.interPicks || {};
+  const done = it.every((_,i)=>picks[i]);
+  return `<div class="col stack"><div><div class="eyebrow">After ${esc(epLabel())}</div><h2 style="font-size:2.2rem;font-style:italic">${it.length} new message${it.length===1?'':'s'}</h2><p class="muted">Cal's replies carry into the next episode.</p></div>
+    ${it.map((t,i)=>`<div class="convo">
+      <div class="th" style="display:flex;gap:.6rem;align-items:center;font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mu)">${avatar(t.from||t.name, t.name, 28)}${esc(t.name)}</div>
+      ${t.msgs.map(m=>`<div class="bub">${esc(m)}</div>`).join('')}
+      ${picks[i] ? `<div class="bub me">${esc((t.options.find(o=>o.id===picks[i])||{}).text||'')}</div>` :
+        `<div class="choices">${t.options.map((o,j)=>`<button class="choice" data-reply="${i}|${esc(o.id)}"><span>${String.fromCharCode(65+j)}</span>${esc(o.text)}</button>`).join('')}</div>`}
+    </div>`).join('')}
+    <div class="row" style="justify-content:center"><button class="btn" data-do="finishphone" ${done?'':'disabled'}>${done?'Put the phone down':'Reply to everyone first'}</button></div></div>`;
+}
+
+function castHTML(){
+  if(!S.state) return emptyHTML('Nobody yet', 'Start the series and the cast arrives as Cal meets them.');
+  const people = Object.values(S.canon.cast).filter(c=>c.introduced).sort((a,b)=> (b.metCal?1:0)-(a.metCal?1:0) || String(a.firstSeen||'').localeCompare(String(b.firstSeen||'')));
+  return `<div class="stack">
+    <div class="panel cal-card">${avatar('cal','Cal Whitaker',72)}<div><div class="eyebrow">Our protagonist</div><h2 style="font-size:2rem">Cal Whitaker</h2><div class="role" style="font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mu)">${esc(yearName())} · Lowell House · Legacy</div><p class="a" style="margin-top:.5rem">${esc(S.canon.calNow || CAL.descriptor)}</p></div></div>
+    ${people.length ? `<div class="grid">${people.map(c=>`<article class="person"><header>${avatar(c.id,c.name)}<div><h3>${esc(c.name)}</h3><div class="role">${esc(c.role||'')}</div></div></header>
+      ${!c.metCal ? `<div><span class="chip">Cal hasn't met them</span></div>` : ''}
+      <p>${esc(c.impression || c.descriptor || '')}</p>
+      ${c.moments?.length ? `<ul>${c.moments.slice(-3).map(m=>`<li>${esc(m)}</li>`).join('')}</ul>` : ''}
+      <div class="role">First seen ${esc(c.firstSeen||'—')}${c.metAt?` · met ${esc(c.metAt)}`:''}</div></article>`).join('')}</div>`
+      : `<p class="muted">The cast appears here as they turn up on-screen.</p>`}
+  </div>`;
+}
+function episodesHTML(){
+  if(!S.state || !S.guide?.eps?.length) return emptyHTML('No episodes yet', 'Finished episodes appear here with recaps and full scripts.');
+  const bySeason = {};
+  S.guide.eps.forEach(e => (bySeason[e.season] = bySeason[e.season] || []).push(e));
+  return Object.entries(bySeason).map(([s, eps]) => `<section class="season col"><div class="eyebrow">${esc(YEARS[seasonWindow(+s).yi])} year · ${esc(seasonWindow(+s).sem)}</div><h2>Season ${s}${S.bible?.seasons?.[s]?.title?`: <i>${esc(S.bible.seasons[s].title)}</i>`:''}</h2>
+    ${eps.map(e=>`<div class="ep"><div class="n">E${e.ep}</div><div><h3>${esc(e.title)}</h3><p>${esc(e.logline)}</p></div>
+      <details><summary>Recap</summary><p>${esc(e.recap)}</p><button class="linkbtn" data-read="${esc(e.key)}">Read the full script</button></details></div>`).join('')}</section>`).join('');
+}
+function phoneHTML(){
+  const th = Object.entries(S.phone?.threads||{}).sort((a,b)=>(b[1].last||0)-(a[1].last||0));
+  if(!th.length) return emptyHTML('No messages', "Texts Cal sends and receives in the story land here.");
+  const sel = S.phoneSel && S.phone.threads[S.phoneSel] ? S.phoneSel : th[0][0];
+  const t = S.phone.threads[sel];
+  let lastEp = '';
+  return `<div class="threads"><div class="tlist">${th.map(([k,v])=>`<button class="titem" data-thread="${esc(k)}" aria-current="${k===sel}">${avatar(k,v.name,32)}<span>${esc(v.name)}</span></button>`).join('')}</div>
+    <div class="convo">${t.msgs.map(m=>{ const mark = m.ep!==lastEp ? `<div class="epmark">${esc(m.ep)}</div>` : ''; lastEp = m.ep; return mark + `<div class="bub${m.me?' me':''}">${esc(m.text)}</div>`; }).join('')}</div></div>`;
+}
+function calendarHTML(){
+  if(!S.state) return emptyHTML('Late August', 'The calendar starts on move-in day.');
+  const w = seasonWindow(S.state.season), base = (w.yi*7);
+  const ev = EVENTS[w.sem].map(([md, name]) => {
+    const iso = `${w.year}-${md}`; return {iso, name, done: iso < S.state.date};
+  });
+  return `<div class="stack col" style="max-width:56rem">
+    <div><div class="eyebrow">${esc(YEARS[w.yi])} year · ${esc(w.sem)} ${w.sem==='Summer'?'':'semester'}</div><div class="bigdate">${esc(fmtDate(S.state.date,{weekday:'long',month:'long',day:'numeric'}))}</div><p class="muted">Season ${S.state.season}${S.bible?.seasons?.[S.state.season]?.title?` · ${esc(S.bible.seasons[S.state.season].title)}`:''} · Episode ${S.state.ep} of 10</p></div>
+    <div class="strip">${SEASON_TEMPLATE.map((t,i)=>{ const n = base+i+1; const cls = n===S.state.season?'cur':n<S.state.season?'past':''; return `<div class="sblock ${cls}"><b>S${n}</b><span>${esc(t.sem)}</span><span class="muted">${esc(t.label)}</span></div>`; }).join('')}</div>
+    <div class="panel"><div class="eyebrow" style="margin-bottom:.6rem">This ${w.sem==='Summer'?'summer':'semester'}</div><ul class="events">${ev.map(e=>`<li class="${e.done?'done':''}"><span>${esc(fmtDate(e.iso,{month:'short',day:'numeric'}))}</span>${esc(e.name)}</li>`).join('')}</ul></div>
+    <div class="panel"><div class="eyebrow" style="margin-bottom:.6rem">Places Cal has been</div><p class="a">${(S.canon.locations||[]).length ? S.canon.locations.map(esc).join(' · ') : '<span class="muted">Nowhere yet. Places appear as the story visits them.</span>'}</p></div>
+  </div>`;
+}
+function extrasHTML(){
+  const closed = (S.bible?.arcs||[]).filter(a=>a.status==='closed' && a.reveal);
+  return `<div class="stack col">
+    <section class="stack"><div><div class="eyebrow">Unlocked secrets</div><h2 style="font-size:2rem">Behind the scenes</h2></div>
+      ${closed.length ? closed.map(a=>`<div class="secret"><div class="eyebrow">${esc(a.scope||'')} arc · closed ${esc(a.closedAt||'')}</div><h3>${esc(a.title||a.id)}</h3><p class="a">${esc(a.reveal)}</p>${a.cluesPlanted?.length?`<div class="eyebrow">Clues you saw</div><ul>${a.cluesPlanted.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>`:''}</div>`).join('')
+      : `<p class="muted">Each hidden storyline unlocks here after it resolves on-screen, with the clues that pointed to it. Nothing has resolved yet.</p>`}
+    </section>
+    <section class="panel"><div class="eyebrow" style="margin-bottom:.6rem">The writers' room</div><div class="room" id="room">${roomHTML()}</div>
+      <p class="fine" style="margin:.8rem 0 0">Every act is drafted by the head writer, then audited by the continuity editor against the ledger of who knows what. The script coordinator updates that ledger after every act.</p></section>
+    <section class="panel stack"><div><div class="eyebrow">Saving</div><p class="a">${S.local ? 'Saves are kept in this browser only, because this view has no account storage.' : 'Every choice saves to your claude.ai account automatically, so you can pick up on any device.'}</p></div>
+      ${S.state ? (S.confirmReset ? `<div class="break"><p class="a">This erases Cal's whole story, the secret bible and every save. It can't be undone.</p><div class="row"><button class="btn warn" data-do="reset">Erase and start over</button><button class="btn ghost" data-do="noreset">Keep playing</button></div></div>`
+        : `<div><button class="btn ghost" data-do="askreset">Start over</button></div>`) : ''}
+    </section></div>`;
+}
+function emptyHTML(t, s){ return `<div class="col stack" style="padding-top:2rem"><h2 style="font-size:2.2rem;font-style:italic">${esc(t)}</h2><p class="muted">${esc(s)}</p></div>`; }
+
+async function openReader(key){
+  const r = $('#reader');
+  r.hidden = false; r.innerHTML = `<div class="col"><p class="muted">Loading script…</p></div>`;
+  const tx = await Store.get('tx-'+key).catch(()=>null);
+  r.innerHTML = `<div class="col script"><div class="row" style="justify-content:space-between"><div class="eyebrow">${esc(tx?.label||'')}</div><button class="btn ghost" data-do="closereader">Close</button></div>
+    <div class="titlecard"><div class="mk">Whitlock</div><h2>${esc(tx?.title||'Script unavailable')}</h2></div>${tx ? blocksHTML(tx.blocks) : ''}<button class="btn ghost cont" data-do="closereader">Close</button></div>`;
+  r.scrollTop = 0;
+}
+
+/* ---------- events ---------- */
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-tab],[data-do],[data-pick],[data-reply],[data-thread],[data-read]');
+  if(!t) return;
+  if(t.dataset.tab){ S.tab = t.dataset.tab; render(); window.scrollTo({top:0}); return; }
+  if(t.dataset.pick){ const [k,b,c] = t.dataset.pick.split('|'); pick(Number(k), b, c); return; }
+  if(t.dataset.reply){ const [i,o] = t.dataset.reply.split('|'); interReply(Number(i), o); return; }
+  if(t.dataset.thread){ S.phoneSel = t.dataset.thread; render(); return; }
+  if(t.dataset.read){ openReader(t.dataset.read); return; }
+  const d = t.dataset.do;
+  if(d==='new'){ t.disabled = true; newGame(); }
+  else if(d==='retry'){ S.err = null; if(S.state?.stage==='play'){ prefetchCheck(); render(); } else runPipeline(); }
+  else if(d==='cont'){ t.disabled = true; cont(); }
+  else if(d==='start') startEpisode();
+  else if(d==='tophone'){ S.state.stage = 'phone'; saveState(); render(); window.scrollTo({top:0}); }
+  else if(d==='finishphone'){ t.disabled = true; finishInterlude(); }
+  else if(d==='askreset'){ S.confirmReset = true; render(); }
+  else if(d==='noreset'){ S.confirmReset = false; render(); }
+  else if(d==='reset') resetAll();
+  else if(d==='closereader'){ $('#reader').hidden = true; }
+});
+
+/* ---------- ambience ---------- */
+function makeGrain(){
+  try{
+    const c = document.createElement('canvas'); c.width = c.height = 140; const x = c.getContext('2d');
+    const img = x.createImageData(140,140);
+    for(let i=0;i<img.data.length;i+=4){ const v = Math.random()*255|0; img.data[i]=img.data[i+1]=img.data[i+2]=v; img.data[i+3]=255; }
+    x.putImageData(img,0,0);
+    document.documentElement.style.setProperty('--grain', `url(${c.toDataURL()})`);
+  }catch{}
+}
+let driftRAF = 0;
+function startDrift(){
+  const cv = document.getElementById('drift'); if(!cv) return;
+  cancelAnimationFrame(driftRAF);
+  const ctx = cv.getContext('2d'); const dpr = Math.min(2, devicePixelRatio||1);
+  const size = () => { cv.width = cv.clientWidth*dpr; cv.height = cv.clientHeight*dpr; };
+  size();
+  const col = getComputedStyle(document.documentElement).getPropertyValue('--ac').trim() || '#a86d14';
+  const P = Array.from({length:38}, () => ({x:Math.random(), y:Math.random(), r:1+Math.random()*2.6, v:.00025+Math.random()*.0007, w:Math.random()*6.28}));
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const draw = () => {
+    if(!document.body.contains(cv)) return;
+    if(cv.width !== cv.clientWidth*dpr) size();
+    ctx.clearRect(0,0,cv.width,cv.height); ctx.fillStyle = col;
+    for(const p of P){
+      if(!reduce){ p.y += p.v; p.w += .01; if(p.y > 1.05){ p.y = -.05; p.x = Math.random(); } }
+      ctx.globalAlpha = .18 + .22*Math.sin(p.w)**2;
+      ctx.beginPath(); ctx.ellipse((p.x + Math.sin(p.w)*.01)*cv.width, p.y*cv.height, p.r*dpr*1.6, p.r*dpr, p.w, 0, 6.283); ctx.fill();
+    }
+    if(!reduce) driftRAF = requestAnimationFrame(draw);
+  };
+  draw();
+}
+
+/* ---------- boot ---------- */
+async function loadAll(){
+  S.state = await Store.get('state');
+  if(!S.state) return;
+  [S.canon, S.facts, S.bible, S.guide, S.phone] = await Promise.all(['canon','facts','bible','guide','phone'].map(k=>Store.get(k)));
+  S.canon = S.canon || {cast:{}, threads:[], locations:[]};
+  S.facts = S.facts || {facts:[], next:1, events:[], summaries:{}};
+  S.facts.summaries = S.facts.summaries || {};
+  S.guide = S.guide || {eps:[]}; S.phone = S.phone || {threads:{}};
+  if(S.bible) S.bible = normalizeBible(S.bible);
+  if(['write','play','wrap','credits','phone'].includes(S.state.stage)){
+    S.plan = await Store.get('plan-'+epKey());
+    if(!S.plan){ S.state.stage = 'plan'; }
+    else for(let k=1;k<=S.plan.acts.length;k++){ const a = await Store.get(`act-${epKey()}-${k}`); if(a) S.acts[k] = a; }
+    if(S.state.stage==='play' && !S.acts[S.state.act]) S.state.stage = 'write';
+  }
+}
+function watchRemote(){
+  if(!S.db) return;
+  try{
+    S.db.doc(`data/users/${S.uid}/state`).onSnapshot(snap => {
+      if(!snap.exists || snap.metadata.hasPendingWrites) return;
+      const d = snap.data();
+      if(S.state && (d.rev||0) > (S.state.rev||0) && d.updated !== S.state.updated){
+        $('#banner').innerHTML = `<div class="banner">Cal's story moved forward on another device.<button data-do="reload" onclick="location.reload()">Reload</button></div>`;
+      }
+    }, () => {});
+  }catch{}
+}
+async function boot(){
+  makeGrain(); applySeason();
+  const c = window.claude;
+  if(c?.use){
+    const [sample, db, user] = await Promise.all([c.use('sample'), c.use('db'), c.use('user')]);
+    S.sample = sample;
+    if(db && user){ const id = await user.id(); if(id){ S.db = db; S.uid = id; S.local = false; } }
+  }
+  try{ await loadAll(); }catch(e){ console.warn(e); toast("Couldn't load your save. Check your connection and reload."); }
+  applySeason(); S.ready = true; render(); watchRemote();
+  // Claude is only called after a click (Play, a choice, or "Bring in the writers"), never on load.
+}
+boot();
+</script>
