@@ -1,48 +1,170 @@
 {
   "_README": "Machine canon for The Event Horizon (SEALED). Updated after every played episode from the player's save (PROCESS.md step 2). The save wins over the plan. 'knowledge' lists who knows each fact IN THIS PLAYTHROUGH; never let a character reference a fact they're not on.",
   "playthrough": {
-    "artifact_url": null,
+    "artifact_url": "https://claude.ai/artifact/DBpWsaVTZeMm4cr1TxKwBz",
     "episodes_played": [],
     "current_episode": "s01e01",
     "in_world_date": "Thu Aug 20 (pilot start)"
   },
   "characters": {
-    "sam": { "age": 18, "status": "Temple freshman, Cardone Hall 9-14, Ciro's delivery", "origin": null, "powers": "Changed in the Hitch (ES-17). Slip.", "injuries": [], "notes": "Origin flag set in pilot cold open." },
-    "jules": { "age": 18, "status": "Temple Honors freshman, Cardone Hall 9-11", "powers": "Changed in the Hitch (ES-44). Probability. Hidden from Sam all of Season 1.", "secret_hidden_from_sam": ["jules_changed", "jules_die_sixes", "poker game in Gladwyne"], "boyfriend": "callum" },
-    "nik": { "age": 18, "status": "Sam's roommate, CS, Edison NJ" },
-    "simone": { "age": 18, "status": "Jules's roommate, theater, Decatur GA", "notes": "Keeps a Notes-app list titled 'Things That Don't Add Up About Juliet'. From the pilot she also tracks Sam's nosebleed." },
-    "vinnie": { "age": 18, "status": "Laborers' Local 57 apprentice on the Halcyon Navy Yard build-out" },
-    "grace": { "age": 21, "status": "9th-floor RA, pre-med senior; had a probation semester (her father's stroke), not public" },
-    "femi": { "age": 21, "status": "Temple junior, econ; Charles Library circulation desk; ES-31 (Unnoticeable) once changed in the Hitch. Dies in E8 by plan." },
-    "rosa": { "age": 49 }, "frank": { "age": 52, "secret": "Owes the Iannuccis $41,000. Ignoring calls from 215-555-4471 (Dante)." },
-    "nonna": { "age": 81, "secret": "1918: her mother Assunta stepped between the seconds. She felt Sam move. Gave him a key (pilot, if he came to Sunday dinner); it opens a tin box in her cedar chest holding Assunta's diary and a stopped pocket watch reading 11:51." },
-    "mikey": { "age": 26, "status": "PPD patrol, 3rd District. Army 2018–2022, one Afghanistan deployment (2020)." },
-    "gigi": { "age": 13, "notes": "Never in any sexual context." },
-    "carmen": { "status": "Carmen Torres, Jayden's grandmother. Injury depends on the Hitch roll: safe / wrist / hip." },
-    "jayden": { "age": 8, "secret": "Latent (Halcyon lists him as a 'possible' ES-62, a post-Event case). Pays off in Season 7." },
-    "weisz": { "secret": "ES-50. Sees seams and Changed people as 'blurry edges'." },
-    "old_sam": { "secret": "The Revenant. Pilot: one sighting across Broad (tag)." }
+    "sam": {
+      "age": 18,
+      "status": "Temple freshman, Cardone Hall 9-14, Ciro's delivery",
+      "origin": null,
+      "powers": "Changed in the Hitch (ES-17). Slip.",
+      "injuries": [],
+      "notes": "Origin flag set in pilot cold open."
+    },
+    "jules": {
+      "age": 18,
+      "status": "Temple Honors freshman, Cardone Hall 9-11",
+      "powers": "Changed in the Hitch (ES-44). Probability. Hidden from Sam all of Season 1.",
+      "secret_hidden_from_sam": [
+        "jules_changed",
+        "jules_die_sixes",
+        "poker game in Gladwyne"
+      ],
+      "boyfriend": "callum"
+    },
+    "nik": {
+      "age": 18,
+      "status": "Sam's roommate, CS, Edison NJ"
+    },
+    "simone": {
+      "age": 18,
+      "status": "Jules's roommate, theater, Decatur GA",
+      "notes": "Keeps a Notes-app list titled 'Things That Don't Add Up About Juliet'. From the pilot she also tracks Sam's nosebleed."
+    },
+    "vinnie": {
+      "age": 18,
+      "status": "Laborers' Local 57 apprentice on the Halcyon Navy Yard build-out"
+    },
+    "grace": {
+      "age": 21,
+      "status": "9th-floor RA, pre-med senior; had a probation semester (her father's stroke), not public"
+    },
+    "femi": {
+      "age": 21,
+      "status": "Temple junior, econ; Charles Library circulation desk; ES-31 (Unnoticeable) once changed in the Hitch. Dies in E8 by plan."
+    },
+    "rosa": {
+      "age": 49
+    },
+    "frank": {
+      "age": 52,
+      "secret": "Owes the Iannuccis $41,000. Ignoring calls from 215-555-4471 (Dante)."
+    },
+    "nonna": {
+      "age": 81,
+      "secret": "1918: her mother Assunta stepped between the seconds. She felt Sam move. Gave him a key (pilot, if he came to Sunday dinner); it opens a tin box in her cedar chest holding Assunta's diary and a stopped pocket watch reading 11:51."
+    },
+    "mikey": {
+      "age": 26,
+      "status": "PPD patrol, 3rd District. Army 2018–2022, one Afghanistan deployment (2020)."
+    },
+    "gigi": {
+      "age": 13,
+      "notes": "Never in any sexual context."
+    },
+    "carmen": {
+      "status": "Carmen Torres, Jayden's grandmother. Injury depends on the Hitch roll: safe / wrist / hip."
+    },
+    "jayden": {
+      "age": 8,
+      "secret": "Latent (Halcyon lists him as a 'possible' ES-62, a post-Event case). Pays off in Season 7."
+    },
+    "weisz": {
+      "secret": "ES-50. Sees seams and Changed people as 'blurry edges'."
+    },
+    "old_sam": {
+      "secret": "The Revenant. Pilot: one sighting across Broad (tag)."
+    }
   },
   "knowledge": {
     "_note": "Populated from the save's `facts` after each episode."
   },
   "open_threads": [
-    { "id": "pop_debt", "scale": "season", "status": "seeded", "note": "Unknown-number calls; Melrose Diner breakfast with Dante Iannucci (if Vinnie FaceTime). Surfaces in E7." },
-    { "id": "halcyon_watch", "scale": "multi-season", "status": "seeded", "note": "Tablet man = Cole Brannigan. hidden.halcyon_heat tracks how hot Sam is. Achterberg at the glass. 'APERTURE' screen." },
-    { "id": "jules_luck", "scale": "season→show", "status": "seeded", "note": "Glass circle; the pool ball stopped (if crit); die sixes (camera only); hidden nudges counter." },
-    { "id": "owe_favor", "scale": "multi-season", "status": "conditional", "note": "If the pool bet was a favor, Jules will call it in 'when it'll hurt the most'. Best used in S2 or S3." },
-    { "id": "revenant", "scale": "show", "status": "seeded", "note": "Tag sighting. Frozen puddle if Sam crossed. Next sighting E5." },
-    { "id": "nonna_1918", "scale": "multi-season", "status": "seeded", "note": "'You moved.' The key (if dinner). Full story begins E5." },
-    { "id": "weisz_seams", "scale": "multi-season", "status": "seeded", "note": "'Your edges are blurry.' Office hours Tue/Thu." },
-    { "id": "wawa_guy", "scale": "season", "status": "conditional", "note": "Press name if a video exists (flag 'video'). Dana Fiorillo picks it up in E2 → 'the Broad Street Blur'." },
-    { "id": "sunday_promise", "scale": "season", "status": "conditional", "note": "promise_sundays / broke_sunday_promise. Gigi tracks it." },
-    { "id": "carmen_jayden", "scale": "multi-season", "status": "seeded", "note": "San Judas medal (if visited). Halcyon settlement signed or not. Jayden: 'Can you teach me?'" }
+    {
+      "id": "pop_debt",
+      "scale": "season",
+      "status": "seeded",
+      "note": "Unknown-number calls; Melrose Diner breakfast with Dante Iannucci (if Vinnie FaceTime). Surfaces in E7."
+    },
+    {
+      "id": "halcyon_watch",
+      "scale": "multi-season",
+      "status": "seeded",
+      "note": "Tablet man = Cole Brannigan. hidden.halcyon_heat tracks how hot Sam is. Achterberg at the glass. 'APERTURE' screen."
+    },
+    {
+      "id": "jules_luck",
+      "scale": "season→show",
+      "status": "seeded",
+      "note": "Glass circle; the pool ball stopped (if crit); die sixes (camera only); hidden nudges counter."
+    },
+    {
+      "id": "owe_favor",
+      "scale": "multi-season",
+      "status": "conditional",
+      "note": "If the pool bet was a favor, Jules will call it in 'when it'll hurt the most'. Best used in S2 or S3."
+    },
+    {
+      "id": "revenant",
+      "scale": "show",
+      "status": "seeded",
+      "note": "Tag sighting. Frozen puddle if Sam crossed. Next sighting E5."
+    },
+    {
+      "id": "nonna_1918",
+      "scale": "multi-season",
+      "status": "seeded",
+      "note": "'You moved.' The key (if dinner). Full story begins E5."
+    },
+    {
+      "id": "weisz_seams",
+      "scale": "multi-season",
+      "status": "seeded",
+      "note": "'Your edges are blurry.' Office hours Tue/Thu."
+    },
+    {
+      "id": "wawa_guy",
+      "scale": "season",
+      "status": "conditional",
+      "note": "Press name if a video exists (flag 'video'). Dana Fiorillo picks it up in E2 → 'the Broad Street Blur'."
+    },
+    {
+      "id": "sunday_promise",
+      "scale": "season",
+      "status": "conditional",
+      "note": "promise_sundays / broke_sunday_promise. Gigi tracks it."
+    },
+    {
+      "id": "carmen_jayden",
+      "scale": "multi-season",
+      "status": "seeded",
+      "note": "San Judas medal (if visited). Halcyon settlement signed or not. Jayden: 'Can you teach me?'"
+    }
   ],
   "timeline": [
-    { "date": "1876-05-10", "event": "Corliss Engine stops 'for a heartbeat' at the Centennial. The Pemberton bargain." },
-    { "date": "1918-09-28", "event": "Liberty Loan parade; 'the night the bells stopped'; Assunta DiNardo steps between seconds." },
-    { "date": "Thu Aug 20", "event": "Move-in (pilot)." },
-    { "date": "Sat Aug 22 23:51:04", "event": "THE HITCH. Aperture runs 0.7 s. 61 Changed within a 1.9 mi radius." },
-    { "date": "Mon Aug 24", "event": "First day of classes; Wawa incident; tag." }
+    {
+      "date": "1876-05-10",
+      "event": "Corliss Engine stops 'for a heartbeat' at the Centennial. The Pemberton bargain."
+    },
+    {
+      "date": "1918-09-28",
+      "event": "Liberty Loan parade; 'the night the bells stopped'; Assunta DiNardo steps between seconds."
+    },
+    {
+      "date": "Thu Aug 20",
+      "event": "Move-in (pilot)."
+    },
+    {
+      "date": "Sat Aug 22 23:51:04",
+      "event": "THE HITCH. Aperture runs 0.7 s. 61 Changed within a 1.9 mi radius."
+    },
+    {
+      "date": "Mon Aug 24",
+      "event": "First day of classes; Wawa incident; tag."
+    }
   ]
 }
