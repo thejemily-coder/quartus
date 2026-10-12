@@ -77,7 +77,17 @@ button{font:inherit;color:inherit}
 .tbtn[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .sync{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint)}
 .sync.ok{color:var(--good)}
-@media (max-width:640px){.mast .pools{order:5;width:100%;justify-content:flex-start}.mast .clock{font-size:.66rem}}
+@media (max-width:640px){
+  .mast{gap:6px 10px;padding:6px 12px}
+  .mast .brand{order:1;flex:1 1 0;min-width:0}
+  .mast .tools{order:2;gap:4px}
+  .mast .pools{order:3}
+  .mast .clock{order:4;font-size:.64rem}
+  .mast .ep small{display:none}
+  .mast .orb{width:20px;height:20px}
+  .tbtn{padding:5px 6px;font-size:.62rem}
+  .sync{display:none}
+}
 
 /* ---------- Stage ---------- */
 .stage{max-width:46rem;margin:0 auto;padding-inline:16px;padding-block:24px 160px}

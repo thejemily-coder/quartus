@@ -51,6 +51,7 @@ Reveal in this order across seasons:
 
 ### Old Sam: the Revenant (sealed, show-long)
 A future Sam Kearney, from a timeline where **Jules died at age 24** (in his timeline, during the Season 6 crisis). He went back to save her. It worked, and someone else died. He went back again, and again. Hundreds of loops have saturated him with **Drift**: he exists in several moments at once, and he is scarred, gray at the temples, missing the ring finger of his left hand (a loop gone wrong), and smells faintly of ozone and wet pennies.
+- **Pemberton luck predates the Hitch.** The line has always been lucky (the bargain). The Hitch turned a family tendency into a power. Small impossibilities around Jules before 11:51:04 (the pool ball stopping on Friday night) are canon.
 - **Pilot:** he appears once, across Broad Street in the rain, after Sam's first good deed. He puts a finger to his lips, and when a bus passes, he's gone. That's the "one shadow."
 - **Season 1:** two more glimpses (Episodes 5 and 9). In Episode 9 he leaves a note in Sam's handwriting: *"Don't trust the lucky one."* He means Jules, because in his timeline her power (the Audience's favor) is what drew the Audience's attention to them both. He is wrong about what that means, but not entirely wrong.
 - **Seasons 2–6:** he intervenes more, sometimes saving people and sometimes killing them, always to steer toward a future where Jules survives.

@@ -82,7 +82,17 @@ button{font:inherit;color:inherit}
 .tbtn[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .sync{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint)}
 .sync.ok{color:var(--good)}
-@media (max-width:640px){.mast .pools{order:5;width:100%;justify-content:flex-start}.mast .clock{font-size:.66rem}}
+@media (max-width:640px){
+  .mast{gap:6px 10px;padding:6px 12px}
+  .mast .brand{order:1;flex:1 1 0;min-width:0}
+  .mast .tools{order:2;gap:4px}
+  .mast .pools{order:3}
+  .mast .clock{order:4;font-size:.64rem}
+  .mast .ep small{display:none}
+  .mast .orb{width:20px;height:20px}
+  .tbtn{padding:5px 6px;font-size:.62rem}
+  .sync{display:none}
+}
 
 /* ---------- Stage ---------- */
 .stage{max-width:46rem;margin:0 auto;padding-inline:16px;padding-block:24px 160px}
@@ -449,7 +459,9 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
     const notes = sink || [];
     const note = (text, kind, dir) => notes.push({ text, kind: kind || 'stat', dir: dir || 0 });
     const g = {
-      S, notes, last: null,
+      S, notes,
+      get last() { return S.lastRoll || null; },
+      set last(v) { S.lastRoll = v; },
       get ep() { return S.ep; },
       flag(k, v) { S.flags[k] = (v === undefined ? true : v); return g; },
       f(k) { return S.flags[k]; },
@@ -469,9 +481,12 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
       },
       b(id) { return EH.bondOf(S, id); },
       heat(id, n) {
-        S.heat[id] = clamp((S.heat[id] || 0) + n, 0, 10);
+        if (!n) return g;
+        const was = S.heat[id] || 0;
+        S.heat[id] = clamp(was + n, 0, 10);
         const nm = EH.WATCHERS[id] || (EH.CAST[id] && EH.CAST[id].label) || id;
-        if (id !== 'halcyon') note(nm + ' · Suspicion ' + sgn(n), 'heat', -Math.sign(n));
+        note(nm + ' · Suspicion ' + sgn(n), 'heat', -Math.sign(n));
+        if (S.heat[id] >= 10 && was < 10) { S.flags['heat_max_' + id] = true; note(nm + ' has figured something out.', 'heat', -1); }
         return g;
       },
       h(id) { return S.heat[id] || 0; },
@@ -479,20 +494,18 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
         const F = S.facts[fact] || (S.facts[fact] = { text: text || fact, knownBy: [], ep: S.ep });
         if (text) F.text = text;
         if (opts && opts.track) F.track = true;
-        (who || []).forEach(w => {
-          if (!F.knownBy.includes(w)) {
-            F.knownBy.push(w);
-            if (w !== 'sam' && F.knownBy.includes('sam') && EH.CAST[w]) note(EH.CAST[w].label + ' now knows: ' + F.text, 'fact');
-            else if (w === 'sam') note('Noted: ' + F.text, 'fact');
-          }
-        });
+        const samBefore = F.knownBy.includes('sam');
+        const added = (who || []).filter(w => !F.knownBy.includes(w));
+        added.forEach(w => F.knownBy.push(w));
+        if (!samBefore && added.includes('sam')) note('Noted: ' + F.text, 'fact');
+        else if (samBefore) added.filter(w => w !== 'sam' && EH.CAST[w]).forEach(w => note(EH.CAST[w].label + ' now knows: ' + F.text, 'fact'));
         return g;
       },
       knows(fact, who) { const F = S.facts[fact]; return !!(F && F.knownBy.includes(who || 'sam')); },
       money(n) { S.money.cash += n; note('Cash ' + (n < 0 ? '−$' + (-n) : '+$' + n), 'money', Math.sign(n)); return g; },
       bank(n) { S.money.bank += n; note('Bank ' + (n < 0 ? '−$' + (-n) : '+$' + n), 'money', Math.sign(n)); return g; },
       cash() { return S.money.cash; },
-      grade(c, n) { S.grades[c] = clamp((S.grades[c] || 70) + n, 0, 100); note((EH.COURSES[c] || c).split(' ').slice(0, 2).join(' ') + ' standing ' + sgn(n), 'stat', Math.sign(n)); return g; },
+      grade(c, n) { S.grades[c] = clamp((S.grades[c] ?? 70) + n, 0, 100); note((EH.COURSES[c] || c).split(' ').slice(0, 2).join(' ') + ' standing ' + sgn(n), 'stat', Math.sign(n)); return g; },
       sleep(h) {
         const before = S.sleepDebt;
         if (h < 8) S.sleepDebt = clamp(S.sleepDebt + (8 - h), 0, 10); else S.sleepDebt = clamp(S.sleepDebt - (h - 8), 0, 10);
@@ -500,6 +513,11 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
         else { S.pools.stamina = Math.min(EH.maxPool(S, 'stamina'), S.pools.stamina + Math.floor(h / 2)); S.pools.focus = Math.min(EH.maxPool(S, 'focus'), S.pools.focus + Math.floor(h / 2)); }
         note('Slept ' + h + 'h · Sleep Debt ' + S.sleepDebt + (S.sleepDebt !== before ? ' (' + sgn(S.sleepDebt - before) + ')' : ''), 'stat', S.sleepDebt > before ? -1 : 1);
         return g;
+      },
+      nap(h) {
+        const b = S.sleepDebt; S.sleepDebt = clamp(S.sleepDebt - Math.ceil(h / 2), 0, 10);
+        S.pools.stamina = Math.min(EH.maxPool(S, 'stamina'), S.pools.stamina + h); S.pools.focus = Math.min(EH.maxPool(S, 'focus'), S.pools.focus + h);
+        note('Napped ' + h + 'h · Sleep Debt ' + S.sleepDebt + ' (' + sgn(S.sleepDebt - b) + ')', 'stat', 1); return g;
       },
       pool(p, n) { S.pools[p] = clamp(S.pools[p] + n, 0, EH.maxPool(S, p)); if (n) note(p[0].toUpperCase() + p.slice(1) + ' ' + sgn(n), 'stat', Math.sign(n)); return g; },
       drift(n) { S.drift = clamp(S.drift + n, 0, 10); S.hidden.revenant_drift += Math.max(0, n) * 0.5; if (n) note('Drift ' + sgn(n), 'stat', -Math.sign(n)); return g; },
@@ -514,7 +532,12 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
       has(node) { return S.powers.slip.nodes.includes(node); },
       offer(node) { const P = S.powers.slip; P.offered = P.offered || []; if (!P.offered.includes(node) && !P.nodes.includes(node)) { P.offered.push(node); note('New power available to learn · ' + EH.NODES[node].name, 'power', 1); } return g; },
       mastery(n) { S.powers.slip.mastery = clamp(S.powers.slip.mastery + n, 0, 100); return g; },
-      attr(k, n) { S.attrs[k] = clamp(S.attrs[k] + n, 1, 5); note(EH.ATTR_NAMES[k] + ' ' + sgn(n), 'stat', Math.sign(n)); EH.refill(S, true); return g; },
+      attr(k, n) {
+        const P = ['stamina', 'focus', 'nerve'], before = P.map(p => EH.maxPool(S, p));
+        S.attrs[k] = clamp(S.attrs[k] + n, 1, 5);
+        P.forEach((p, i) => { S.pools[p] = clamp(S.pools[p] + EH.maxPool(S, p) - before[i], 0, EH.maxPool(S, p)); });
+        note(EH.ATTR_NAMES[k] + ' ' + sgn(n), 'stat', Math.sign(n)); return g;
+      },
       skill(k, n) { S.skills[k] = clamp((S.skills[k] || 0) + n, 0, 5); note(EH.SKILLS[k] + ' ' + sgn(n), 'stat', Math.sign(n)); return g; },
       a(k) { return S.attrs[k]; }, sk(k) { return S.skills[k] || 0; },
       recap(t) { S.recap.push({ ep: S.ep, t }); return g; },
@@ -530,7 +553,7 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
   const d = n => 1 + Math.floor(Math.random() * n);
   EH.attrMod = r => r - 2;
   EH.skillBonus = s => (s >= 4 ? 2 : s >= 2 ? 1 : 0);
-  EH.injPen = S => S.injuries.reduce((a, i) => a + (i.pen || 0), 0);
+  EH.injPen = (S, attr) => S.injuries.filter(i => !i.affects || i.affects.includes(attr)).reduce((a, i) => a + (i.pen || 0), 0);
 
   // Build the modifier breakdown for a check (before pushes).
   EH.checkCalc = function (S, c) {
@@ -541,7 +564,7 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
       base = A + K;
       if (c.bonus) { rows.push([c.bonusLabel || 'Situation', c.bonus]); base += c.bonus; }
       const sp = Math.floor(S.sleepDebt / 3); if (sp) { rows.push(['Sleep Debt', -sp]); base -= sp; }
-      const ip = EH.injPen(S); if (ip && c.physical !== false) { rows.push(['Injuries', -ip]); base -= ip; }
+      const ip = EH.injPen(S, c.attr); if (ip && c.physical !== false) { rows.push(['Injuries', -ip]); base -= ip; }
       if (S.drift >= 5 && c.attr === 'wits') { rows.push(['Drift', -1]); base -= 1; }
     } else if (c.kind === 'move') {
       const am = EH.attrMod(A), sb = c.skill ? EH.skillBonus(K) : 0;
@@ -629,7 +652,8 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
   EH.tryNudge = function (S, c, res) {
     if (!c.near || !c.near.includes('jules')) return false;
     if (EH.isClean(res.tier)) return false;
-    const luck = S.hidden.jules_luck + Math.max(0, (S.bonds.jules ? S.bonds.jules.affection : 0)) * 0.02;
+    const jb = S.bonds.jules || { affection: 0, trust: 0 };
+    const luck = S.hidden.jules_luck + Math.max(0, jb.affection + jb.trust) * 0.01;
     if (Math.random() >= luck) return false;
     if (res.kind === 'pool') {
       let idx = -1, lo = 99; res.dice.forEach((v, i) => { if (v < 7 && v < lo) { lo = v; idx = i; } });
@@ -712,23 +736,25 @@ EH.episode({
       night: true,
       loc: 'BROAD & SPRING GARDEN',
       clock: { day: 'Sat', date: 'Aug 22', time: '11:51 PM' },
-      text: `The order slip in your pocket says **500 N. BROAD · LOADING DOCK · ASK FOR MARCO**. The pizza bag on your back is still warm. The heat on Broad Street at ten to midnight sits on your chest like a cat that won't move. It started drizzling around eleven, which didn't help. It just made the whole city smell like a hot sidewalk somebody had hosed down.
+      text: `The order slip in your pocket says **500 N. BROAD · LOADING DOCK · ASK FOR MARCO**. The pizza bag on your back is empty but still warm. The heat on Broad Street at ten to midnight sits on your chest like a cat that won't move. It started drizzling around eleven, which didn't help. It just made the whole city smell like a hot sidewalk somebody had hosed down.
 
-You're stopped at the light at Spring Garden with one foot down and the e-bike humming under you. Northbound, a SEPTA bus, the 16, is coming down Broad way too fast on wet asphalt. In the crosswalk there's a little boy in a Spider-Man backpack holding his grandmother's hand. The grandmother is looking at her phone. You have exactly enough time to think *oh, no*.
+You're stopped at the light at Spring Garden with one foot down and the e-bike humming under you. Northbound, a SEPTA bus, the 16, is coming up Broad way too fast on wet asphalt. In the crosswalk there's a little boy in a Spider-Man backpack holding his grandmother's hand. The grandmother is looking at her phone. You have exactly enough time to think *oh, no*.
 
 Then the light comes.
 
-It isn't white. It's every color at once, the colors you see on the inside of your eyelids when you rub them too hard. It comes from everywhere at once. Then it comes from nowhere.
+It isn't white. It's every color, the ones you see on the inside of your eyelids when you rub them too hard. It comes from everywhere at once. Then it comes from nowhere.
 
 The sound stops.
 
 It doesn't go quiet. It *stops*: the bus engine, the cicadas in the vacant lot, the hum of the bike, the bass from somebody's car three blocks north. It's like somebody pulled the plug on Philadelphia.
 
-The rain hangs in the air. It isn't falling. It's *hanging*, every drop a little bead of streetlight, a whole curtain of them between you and the bus. The bus isn't moving. The boy isn't moving. The grandmother's thumb is frozen in the middle of a scroll.
+The rain hangs in the air. It isn't falling. It's *hanging*, every drop a little bead of streetlight, a whole curtain of them between you and the bus. The bus is barely moving. The boy isn't moving. The grandmother's thumb is frozen in the middle of a scroll.
 
-It's cold, *so* cold. Your breath comes out white in August. Frost is crawling up the handlebars of your bike like it's late for something.
+And it's cold. Your breath comes out white. In August. Frost is crawling up the handlebars of your bike like it's late for something.
 
 You're the only thing on Broad Street that's moving.
+
+And you have the strangest feeling, standing in all that silence, that somewhere very far away, somebody just leaned forward in their seat.
 
 Your body figures out what to do before you do. It always has. Before Temple, before tonight, before any of this, you were the kind of kid who—`,
       choices: [
@@ -758,7 +784,7 @@ Your body figures out what to do before you do. It always has. Before Temple, be
         caretaker: 'It\'s three in the morning on Mifflin Street, Nonna\'s voice through the wall, and your feet hitting the floor before you\'re awake. You\'re off the bike before you decide to be.'
       }[g.f('origin')]}
 
-The rain that isn't falling bursts cold against your face, drop after drop, like running through a bead curtain made of ice. The bus is still coming, slow as a glacier, slow as a thought. The boy's sneaker is lifted halfway through a step.
+The rain that isn't falling bursts cold against your face, drop after drop, like running through a bead curtain made of ice. The bus is still coming. Slow as a glacier, but coming. The boy's sneaker is lifted halfway through a step.
 
 You realize, with a feeling like missing a stair in the dark, that you might actually make it.
 
@@ -773,7 +799,7 @@ You realize, with a feeling like missing a stair in the dark, that you might act
       card: { kind: 'act', label: 'Act One', title: 'Move-In' },
       loc: 'LIBERTY CAB #2207 · NORTHBOUND ON BROAD',
       clock: { day: 'Thu', date: 'Aug 20', time: '9:12 AM' },
-      enter: g => { g.meet('rosa'); g.meet('frank'); g.meet('gigi'); g.bond('gigi', { affection: 3, trust: 2 }); g.bond('rosa', { affection: 3 }); g.bond('frank', { affection: 2 }); },
+      enter: g => { g.know('nonna_jacket', ['sam', 'nonna'], 'Nonna: "Saturday, near midnight, the clocks. Wear a jacket."'); g.meet('rosa'); g.meet('frank'); g.meet('gigi'); g.bond('gigi', { affection: 3, trust: 2 }); g.bond('rosa', { affection: 3 }); g.bond('frank', { affection: 2 }); },
       text: `Your father's cab smells like pine tree air freshener and the ghost of ten thousand fares. He's driving with the meter off, which in Frank Kearney's language is roughly equivalent to weeping openly.
 
 Ma is in the front seat with a foil tray of lasagna on her lap, the size of a manhole cover. It's for "the RA," a person none of you have met. Ma believes in getting to the authorities early.
@@ -795,7 +821,7 @@ TXT gigi: SAMMMMMM
 
 City Hall slides past, William Penn up top in his hat, looking down at the whole city like he's disappointed in it. Then Broad Street opens up north: the Divine Lorraine with its sign lit even in daylight, the rowhouses, the vacant lots, the new glass buildings that went up so fast nobody's sure who lives in them.
 
-Three miles. That's all it is from Mifflin Street to Temple. You've been making the trip your whole life, for Owls games with Pop, Mikey's graduation, the time Vinnie's cousin got stabbed and everybody went to Temple Hospital to sit in the waiting room in solidarity. Three miles, and somehow it feels like you're being launched into space.
+Three miles. That's all it is from Mifflin Street to Temple. You've been making the trip your whole life, for Owls games with Pop, Mikey's graduation, the time Vinnie's cousin got stabbed and everybody went to Temple Hospital to sit in the waiting room in solidarity. Three miles, and somehow it feels like the moon.
 
 This morning on the stoop, Nonna held your face in both hands the way she does, like she's checking a melon. She said: *"Salvatò. Saturday, you wear a jacket."*
 
@@ -814,7 +840,7 @@ Pop's phone buzzes in the cupholder. UNKNOWN NUMBER. He declines it without look
 Gigi has stopped texting and is staring out the window with her arms crossed, which means she's about to cry and would rather die.`,
       choices: [
         { text: 'Bump Gigi\'s shoulder. "Sunday dinners. Every week. I\'ll be there. Swear on Nonna."', tag: 'A promise',
-          fx: g => { g.bond('gigi', { trust: 2, affection: 1 }); g.flag('promise_sundays'); g.know('promise_sundays', ['sam', 'gigi'], 'You swore to Gigi you\'d come home for Sunday dinner every week.'); }, go: 'a1_cab_gigi' },
+          fx: g => { g.bond('gigi', { trust: 2, affection: 1 }); g.flag('promise_sundays'); g.know('promise_sundays', ['sam', 'gigi', 'rosa', 'frank'], 'You swore to Gigi you\'d come home for Sunday dinner every week.'); }, go: 'a1_cab_gigi' },
         { text: '"Everybody relax. I\'m going three miles. Mikey went to *Afghanistan*."', tag: 'Deflect',
           fx: g => { g.bond('rosa', { tension: 1 }); g.bond('gigi', { affection: -1 }); g.flag('cab_joke'); }, go: 'a1_cab_joke' },
         { text: 'Watch Pop. The phone. The jaw. Something\'s up with him.',
@@ -867,7 +893,7 @@ frank: Spam. Extended warranty.
 
 sam: On the cab?
 
-frank: On my *life*, Sammy. They want to extend my life.
+frank: On my *life*, kid. They want to extend my life.
 
 He's joking, and Pop never jokes. You file that away in the drawer where you keep things you don't want to look at.`,
       next: 'a1_arrive'
@@ -909,7 +935,7 @@ You're on nine. You've got young knees, a hamper, two duffels, and a lamp with a
 
 That's when you see the minifridge.
 
-A black Range Rover is pulled in behind Pop's cab, nose to bumper, like a panther behind a cat. An older man in a gray suit, sixties, white-haired, built like he used to row in college sometime during the Eisenhower administration, is wrestling a black minifridge out of the back. It's the nice kind with a glass door. He gets it to the curb, straightens, and puts one hand to his lower back with a wince you know intimately, because it's your father's wince.
+A black Range Rover is pulled in behind Pop's cab, nose to bumper, like it's waiting for the cab to apologize. An older man in a gray suit, sixties, white-haired, built like he used to row in college sometime during the Eisenhower administration, is wrestling a black minifridge out of the back. It's the nice kind with a glass door. He gets it to the curb, straightens, and puts one hand to his lower back with a wince you know intimately, because it's your father's wince.
 
 Standing beside him is a girl your age. White sneakers that have never touched a Philadelphia puddle. Hair up in the kind of messy bun that took forty minutes. A phone to her ear, and a voice like something poured carefully out of a cut-glass decanter:
 
@@ -920,7 +946,7 @@ She doesn't hang up. She closes her eyes and listens to whatever her mother says
 Mr. Abernathy bends for the fridge again. The wince comes back.`,
       choices: [
         { text: 'Grab the fridge. "I got it. I\'m going up anyway." Don\'t wait for an answer.', tag: 'The reflex',
-          fx: g => { g.flag('fridge', 'grabbed'); g.hidden('revenant_drift', 0.3); g.meet('jules'); g.bond('jules', { affection: -1, tension: 2 }); }, go: 'a1_fridge_grab' },
+          fx: g => { g.flag('fridge', 'grabbed'); g.hidden('revenant_drift', 0.3); g.meet('jules'); g.bond('jules', { affection: -1, tension: 1 }); }, go: 'a1_fridge_grab' },
         { text: 'Ask first. "You want a hand with that?"', tag: 'Ask',
           fx: g => { g.flag('fridge', 'asked'); g.meet('jules'); g.bond('jules', { respect: 1, tension: 1 }); }, go: 'a1_fridge_ask' },
         { text: 'Not your fridge. Not your business. Get your hamper and head for the stairs.', tag: 'Walk away',
@@ -987,7 +1013,7 @@ jules[FRIDGE GIRL]: What floor?
 
 sam: Nine.
 
-jules[FRIDGE GIRL]: Of course it is.`,
+jules[FRIDGE GIRL]: It would be.`,
       next: 'a1_stairs'
     },
     a1_fridge_walk: {
@@ -999,7 +1025,7 @@ You stop.
 
 You look back.
 
-Mr. Abernathy has gotten the fridge as far as the stairwell door, apparently also defeated by the elevator line, and he's standing with both hands on his lower back, bent at the angle of a question mark. The girl is beside him trying to lift her end. She's stronger than she looks, but it's a two-person fridge, and one of the two people is seventy.
+Mr. Abernathy has gotten the fridge as far as the stairwell door, apparently also defeated by the elevator line, and he's standing with both hands on his lower back, bent at the angle of a question mark. The girl is beside him trying to lift her end. She's stronger than she looks, but it's a two-person fridge, and one of the two people is pushing seventy.
 
 You put your hamper down on the landing.
 
@@ -1011,13 +1037,13 @@ sam: I'm not talking to you. Sir?
 
 MR. ABERNATHY: …I would be grateful, young man.
 
-The girl looks at you like you've just personally taken something from her. You won't figure out for a long time that you did.
+The girl looks at you like you've just taken something from her. You won't figure out for a long time that you did.
 
 jules[FRIDGE GIRL]: What floor?
 
 sam: Nine.
 
-jules[FRIDGE GIRL]: Of *course* it is.`,
+jules[FRIDGE GIRL]: It would be.`,
       next: 'a1_stairs'
     },
 
@@ -1040,15 +1066,15 @@ jules[FRIDGE GIRL]: About four hundred dollars.
 The stairwell is hot as an oven. Somebody on six has propped their door open and is blasting Meek Mill. Somebody on seven is crying on the phone. Somebody on eight is crying on the phone *and* blasting Meek Mill, a real Philadelphia combo.`,
       choices: [
         { text: 'Take the stairs at a dead sprint. Show her.',
-          check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 3, label: 'Nine flights, sixty pounds', on: { crit: 'a1_stairs_crit', success: 'a1_stairs_win', partial: 'a1_stairs_partial', fail: 'a1_stairs_fail' } },
+          check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 3, near: ['jules'], label: 'Nine flights, sixty pounds', on: { crit: 'a1_stairs_crit', success: 'a1_stairs_win', partial: 'a1_stairs_partial', fail: 'a1_stairs_fail' } },
           fx: g => g.flag('stairs_showoff') },
         { text: 'Steady pace. Breathe. Don\'t die.',
-          check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 2, label: 'Nine flights, sixty pounds', on: { crit: 'a1_stairs_crit', success: 'a1_stairs_win', partial: 'a1_stairs_partial', fail: 'a1_stairs_fail' } } }
+          check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 2, near: ['jules'], label: 'Nine flights, sixty pounds', on: { crit: 'a1_stairs_crit', success: 'a1_stairs_win', partial: 'a1_stairs_partial', fail: 'a1_stairs_fail' } } }
       ]
     },
     a1_stairs_crit: {
       enter: g => { g.bond('jules', { respect: 2 }); g.flag('stairs_result', 'crit'); },
-      text: `Something kicks in around the fourth floor, some kind of second wind, the shortstop-on-a-double-play feeling. You stop breathing like a dying accordion and start *climbing*. Five. Six (Meek Mill). Seven (sobbing). Eight (both). You hit nine and set the fridge down in the hallway like it's a carton of eggs, and you turn around.
+      text: `Something kicks in around the fourth floor, some kind of second wind, some kind of second wind. You stop breathing like a dying accordion and start *climbing*. Five. Six (Meek Mill). Seven (sobbing). Eight (both). You hit nine and set the fridge down in the hallway like it's a carton of eggs, and you turn around.
 
 She comes around the landing ten full seconds later, holding your lamp, and stops.
 
@@ -1071,11 +1097,11 @@ sam: Thank you.
 
 jules[FRIDGE GIRL]: It wasn't a compliment.
 
-sam: I know. I'm from South Philly. That's how we say thank you to insults.`,
+sam: I know. I'm from South Philly. We say thank you to insults.`,
       next: 'a1_door'
     },
     a1_stairs_partial: {
-      enter: g => { g.pool('stamina', -1); g.flag('stairs_result', 'partial'); g.bond('jules', { tension: 1 }); },
+      enter: g => { g.pool('stamina', -1); g.flag('stairs_result', 'partial'); g.bond('jules', { respect: -1 }); },
       text: `Seventh-floor landing. Your arms have stopped being arms and become two long bags of hot sand. You set the fridge down. Just for a second. Just to readjust.
 
 She stops two steps below you and looks at the fridge, then at you.
@@ -1096,10 +1122,10 @@ At the top, she lets go first. She doesn't say *you're welcome*. Somehow that's 
       next: 'a1_door'
     },
     a1_stairs_fail: {
-      enter: g => { g.pool('stamina', -2); g.flag('stairs_result', 'fail'); g.flag('fridge_dented'); g.bond('jules', { tension: 1, respect: -1 }); },
+      enter: g => { g.pool('stamina', -2); g.flag('stairs_result', 'fail'); g.flag('fridge_dented'); g.bond('jules', { respect: -1 }); },
       text: `Sixth floor. Meek Mill is going *dreams and nightmares*, your grip goes, and the beverage center goes with it.
 
-It doesn't fall far, maybe eight inches. But eight inches of glass-door minifridge onto a concrete step makes a sound like a car accident in a church. Somewhere above you, the crying girl on seven stops crying to listen.
+It doesn't fall far, maybe eight inches. But eight inches of glass-door minifridge onto a concrete step makes a sound like a car accident. Somewhere above you, the crying girl on seven stops crying to listen.
 
 There's a dent now: a small, perfect crescent in the stainless-steel corner. It looks exactly like a frown.
 
@@ -1122,7 +1148,7 @@ You make it to nine on pure Kearney spite. That's a renewable resource.`,
     a1_door: {
       loc: 'CARDONE HALL · 9TH FLOOR',
       clock: { time: '10:05 AM' },
-      text: g => `The ninth floor smells like fresh paint over old paint over something that happened in 1983. Down the hall, somebody's dad is assembling a futon with the despair of a man who has lost a war.
+      text: g => `The ninth floor smells like fresh paint over old paint over something that happened in 1983. Down the hall, somebody's dad is assembling a futon, and losing.
 
 She stops in front of **9-11**, directly across from **9-14**. That's the room number on your housing email.
 
@@ -1134,7 +1160,7 @@ sam: I'm 9-14.
 
 jules[FRIDGE GIRL]: *Of course* you are.
 
-She says it the way you'd say it about weather in Philadelphia: not personally, just as a general fact about the universe and its contempt for her. She unlocks her door, and you carry the fridge in and set it down in the only spot it fits, under a window with a view of a Rite Aid and, beyond it, the whole of North Philly in the August haze. It's beautiful, if you squint, and if you're from here.
+She says it the way you'd say it about weather in Philadelphia: not personally, just as a general fact about the universe and its contempt for her. She unlocks her door, and you carry the fridge in and set it down in the only spot it fits, under a window with a view of a shuttered Rite Aid and, beyond it, the whole of North Philly in the August haze. It's beautiful, if you squint, and if you're from here.
 
 ${g.f('stairs_result') === 'fail' ? 'The dent faces the room. Neither of you mentions it. It\'s the loudest thing in there.\n\n' : ''}She sets your lamp down on her desk. Then she seems to realize what she's done, picks it back up, and hands it to you like returning a library book.
 
@@ -1144,12 +1170,10 @@ sam: I know.
 
 jules[FRIDGE GIRL]: No. I mean you *didn't have to*. Mr. Abernathy is paid to do it. He's paid quite well. If you do it, he feels he's failed my mother, and then he worries all the way back to Gladwyne, and I get a text about it tonight. He uses complete sentences. It's devastating.
 
-From where you're standing, that sounds exactly like a rich girl explaining that the help has feelings. You're too sweaty and too South Philly to hear the other thing underneath it: *I was going to carry it myself. I wanted to carry it myself. I wanted to do one thing today without someone doing it for me.*
-
-You won't hear that for a long time.`,
+From where you're standing, that sounds exactly like a rich girl explaining that the help has feelings. You're too sweaty and too South Philly to hear what's underneath it: *I wanted to carry it myself. I wanted to do one thing today without someone doing it for me.*`,
       choices: [
         { text: 'Turn it on. Smile. "Sam Kearney. Nice to meet you, neighbor."',
-          check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', label: 'Charm her', near: [],
+          check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', label: 'Charm her', near: ['jules'],
             on: { strong: 'a1_door_charm_strong', weak: 'a1_door_charm_weak', miss: 'a1_door_charm_miss' } } },
         { text: '"You\'re welcome, Your Highness."', tag: 'Bite',
           fx: g => { g.bond('jules', { tension: 2, respect: 1, affection: -1 }); g.flag('door', 'highness'); }, go: 'a1_door_highness' },
@@ -1277,9 +1301,9 @@ MRS. BHATTACHARYA: Are you a good boy, Sam?
 
 sam: …Most days?
 
-MRS. BHATTACHARYA: Most days. Okay. Honest. Good. Nikhil, he is honest, I like him. Are you eating?
+MRS. BHATTACHARYA: "Most days." That's an honest answer. Nikhil, he's honest, I like him. Has he eaten? Have *you* eaten?
 
-nik: Ma, I've been here for two hours—
+nik: Ma, haan, haan, I ate, he ate, everybody ate, I've been here two hours—
 
 He finally gets her off the phone, and his whole body unclenches like a fist. He's skinny and nervous, with a Rutgers hoodie (*"It was my cousin's, it's ironic, it's a long story"*), glasses he pushes up roughly every four seconds, and the general vibe of a guy who's been rehearsing this conversation since June.
 
@@ -1287,7 +1311,7 @@ nik: Okay, so, hi. Nikhil. Nik. Edison, New Jersey, which I know, I *know*, but 
 
 You open your mouth.
 
-That's when Ma arrives, having taken the elevator line, gotten to the front of it through methods nobody will ever explain, and come up eight floors with a lasagna the size of a manhole cover. She takes one look at Nik and *adopts him*. You watch it happen in real time. By the time Pop comes up, red-faced from his fight with the Temple police officer (*"We agreed to disagree"*), Ma has learned Nik's allergies, his mother's name, and his opinion on garlic.
+That's when Ma arrives, having taken the elevator line, gotten to the front of it through methods nobody will ever explain, and come up eight floors with the lasagna intact. She takes one look at Nik and *adopts him*. You watch it happen in real time. By the time Pop comes up, red-faced from his fight with the Temple police officer (*"We agreed to disagree"*), Ma has learned Nik's allergies, his mother's name, and his opinion on garlic.
 
 And then there's a knock on your open door, and a girl leans in, tall, Black, gold hoops, a Decatur High Theatre shirt cut into something more ambitious. She looks at you like you're a show she bought tickets to.
 
@@ -1327,7 +1351,7 @@ ${g.f('promise_sundays') ? 'Gigi has wandered over to Nik\'s monitors and is ask
           fx: g => { g.bond('nik', { affection: 2 }); g.flag('nik_greet', 'handshake'); }, go: 'a1_room_nik' },
         { text: '"Three monitors. What are you, NASA? Show me."', tag: 'Nik',
           fx: g => { g.bond('nik', { respect: 2 }); g.flag('nik_greet', 'monitors'); }, go: 'a1_room_nik' },
-        { text: '"Fair warning. My mother is going to feed you until you die. You can\'t stop it. Nobody can."', tag: 'Nik',
+        { text: '"Fair warning. My mother\'s gonna feed you till you die. Sunday gravy, Wednesday gravy. You can\'t stop it. Nobody can."', tag: 'Nik',
           fx: g => { g.bond('nik', { affection: 1, trust: 1 }); g.flag('nik_greet', 'warning'); }, go: 'a1_room_nik' }
       ]
     },
@@ -1338,7 +1362,7 @@ ${g.f('promise_sundays') ? 'Gigi has wandered over to Nik\'s monitors and is ask
         warning: 'Nik looks at Ma, who is cutting the RA\'s lasagna into squares and wrapping a stack in foil labeled NIKHIL in Sharpie. "I don\'t think I want it to stop," he says, very quietly. Then louder: "I mean. Respectfully. My mom feeds me but it\'s, like, *aggressive* love, it comes with a quiz." Ma, without turning around: "There\'s a quiz with mine too, honey." Nik looks at you with real fear. You nod. There\'s a quiz.'
       }[g.f('nik_greet')]}
 
-You'll remember this later, when everything gets so much bigger than this room. The first hour: Ma and the lasagna, Pop testing the window lock three times, Gigi and Nik arguing about a video game you've never heard of, Simone sitting on the radiator saying "and *then* what" to every story like she's paying for them. Grace standing in the doorway holding a foil tray, like she can't remember the last time somebody took care of her.
+You'll remember this later, when everything gets so much bigger than this room. The first hour: Ma and the lasagna, Pop testing the window lock three times, Gigi and Nik arguing about a video game you've never heard of, Simone sitting on the radiator saying "and *then* what" to every story like she's paying for them. Grace in the doorway, holding the foil tray with both hands.
 
 The first hour, before anything happened.`,
       next: 'a1_goodbye'
@@ -1347,11 +1371,11 @@ The first hour, before anything happened.`,
     a1_goodbye: {
       loc: 'N. BROAD ST · OUTSIDE CARDONE HALL',
       clock: { time: '12:30 PM' },
-      text: `The goodbye happens on the sidewalk, because the Temple police officer has come back and is standing next to Pop's cab with his arms folded and the tired face of a man who knows he's going to lose.
+      text: `The goodbye happens on the sidewalk, because the Temple police officer has come back and is standing next to Pop's cab with his arms folded, braced to lose again.
 
 Ma hugs you like she's trying to fold you up and put you back inside her. She smells like garlic and Jean Naté. She says *"Call"* into your shoulder, and *"Eat,"* and *"Your brother says don't do anything stupid,"* and then, without moving her mouth from your shirt, *"Salvatore, I am so proud of you I could throw up."*
 
-Gigi doesn't cry. Gigi cries. Gigi punches you in the arm, hard, and then cries some more and gets into the cab and slams the door and puts her face against the window, which leaves a smudge you're going to think about at 3 a.m. for no reason.
+Gigi doesn't cry. Then Gigi cries. She punches you in the arm, hard, gets into the cab, slams the door, and presses her face to the window. It leaves a smudge on the glass, forehead and nose, the exact shape of being thirteen.
 
 Pop shakes your hand.
 
@@ -1369,8 +1393,8 @@ His phone buzzes in his pocket. He doesn't look at it. You know he doesn't have 
           fx: g => { g.money(200); g.bond('frank', { affection: 2 }); g.flag('pop_money', 'took'); }, go: 'a1_goodbye_end' },
         { text: 'Push it back into his jacket. "I got the job at Ciro\'s, Pop. I\'m good. Keep it."', tag: 'Refuse',
           fx: g => { g.bond('frank', { respect: 2, trust: 1 }); g.flag('pop_money', 'refused'); }, go: 'a1_goodbye_refuse' },
-        { text: 'Take it. Then, while Ma is hugging Nik goodbye (she\'s hugging Nik goodbye), slip half into Gigi\'s backpack.', tag: '+$100',
-          fx: g => { g.money(100); g.bond('gigi', { affection: 1 }); g.flag('pop_money', 'split'); g.know('gigi_money', ['sam'], 'You slipped $100 of Pop\'s money into Gigi\'s backpack.'); }, go: 'a1_goodbye_end' }
+        { text: 'Take it. Then, while Ma is hugging Nik goodbye (she\'s hugging Nik goodbye), slip half through the cab\'s open window into Gigi\'s backpack.', tag: '+$100',
+          fx: g => { g.money(100); g.bond('gigi', { affection: 1 }); g.flag('pop_money', 'split'); g.know('gigi_money', ['sam', 'gigi'], 'You slipped $100 of Pop\'s money into Gigi\'s backpack.'); }, go: 'a1_goodbye_end' }
       ]
     },
     a1_goodbye_refuse: {
@@ -1384,7 +1408,7 @@ He looks at you for a long time. Pop's eyes are the most Irish thing about him: 
 
 frank: …Okay, kid.
 
-He doesn't argue. That's how you know he really needed it, and you'll think about that later too.`,
+He doesn't argue. That's how you know he needed it.`,
       next: 'a1_goodbye_end'
     },
     a1_goodbye_end: {
@@ -1447,25 +1471,25 @@ grace: Okay. Fire exits are there and there. Quiet hours start at eleven on week
 
 She doesn't even pause.
 
-grace: I've seen a man's spleen in a Wawa parking lot. I'm allergic to cats. I've never been on academic probation.
+grace: I've seen a man's spleen in a Wawa parking lot. I have a cat named Duodenum. I've never pulled an all-nighter.
 
-A boy named Devontae guesses the cat allergy. He's wrong. Grace has a cat named Duodenum, and she shows you a picture. Nobody asks about the spleen, and you notice that nobody asks about the probation either. Grace notices you noticing, and her face closes a little, like a pharmacy at nine.
+A boy named Devontae guesses the spleen. He's wrong, and she describes it. The lie is the all-nighter, which, looking at her, should have been obvious. She shows you a picture of Duodenum anyway. He's enormous and furious, and she loves him more than anything in this building.
 
 It goes around the circle. Nik's three truths turn into a four-minute explanation of why one of them is technically half-true. Simone's lie is so obvious it loops back around to brilliant, and she gets a standing ovation from a girl who's going to follow her around for the rest of the year.
 
-Jules is on the far couch with one leg folded under her and a seltzer, watching everyone the way a cat watches a bird feeder. Each time someone lies, she says the lie quietly, under her breath, before anyone else guesses. She's right every time. By the sixth person, the people around her have started watching *her* instead of the speaker.
+Jules is on the far couch with one leg folded under her and a seltzer, watching everyone the way a dealer watches a table. Each time someone lies, she says the lie quietly, under her breath, before anyone else guesses. She's right every time. By the sixth person, the people around her have started watching *her* instead of the speaker.
 
 Then Grace points the clipboard at you.
 
-grace: Nine-fourteen. Refrigerator guy. Go.
+grace: Nine-fourteen. Salvatore Kearney. Refrigerator guy. Go.
 
 Forty heads turn. Across the room, Jules sets down her seltzer.`,
     choices: [
       { text: 'Play it straight. "I broke my arm jumping off a garage on Mifflin Street. I\'ve never seen the ocean. I can flip an over-easy egg one-handed."',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to the room (and Jules)', on: { strong: 'a2_ttal_strong', weak: 'a2_ttal_weak', miss: 'a2_ttal_miss' } },
+        check: { kind: 'move', move: 'Bluff', attr: 'charm', skill: 'lie', near: ['jules'], label: 'Lie to the room (and Jules)', on: { strong: 'a2_ttal_strong', weak: 'a2_ttal_weak', miss: 'a2_ttal_miss' } },
         fx: g => g.flag('ttal', 'straight') },
       { text: 'Play it for laughs. "I was an altar boy for four years. I\'m banned from a Rita\'s Water Ice. My grandmother owns a gun."',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'banter', label: 'Lie to the room (and Jules)', on: { strong: 'a2_ttal_strong', weak: 'a2_ttal_weak', miss: 'a2_ttal_miss' } },
+        check: { kind: 'move', move: 'Bluff', attr: 'charm', skill: 'banter', near: ['jules'], label: 'Lie to the room (and Jules)', on: { strong: 'a2_ttal_strong', weak: 'a2_ttal_weak', miss: 'a2_ttal_miss' } },
         fx: g => g.flag('ttal', 'laughs') },
       { text: 'Don\'t lie at all. Three truths. "My brother\'s a cop. My dad drives a cab. I\'ve never been on a plane." See who catches it.', tag: 'Trick',
         fx: g => { g.flag('ttal', 'truths'); g.bond('jules', { respect: 2, tension: 1 }); }, go: 'a2_ttal_truths' }
@@ -1498,15 +1522,13 @@ She takes her time, long enough that you think you might have her, and then:
 
 jules: ${g.f('ttal') === 'straight' ? 'You\'ve seen the ocean. You have a Wildwood T-shirt in your laundry hamper. It\'s been washed so many times the boardwalk is pink.' : 'Altar boy. Nobody who\'s been banned from a water ice store was an altar boy for four years.'}
 
-sam: …I was an altar boy for two weeks.
-
-jules: That I believe.
+${g.f('ttal') === 'straight' ? 'sam: …It was a long time ago.\n\njules: The shirt says otherwise.' : 'sam: …I was an altar boy for two weeks.\n\njules: That I believe.'}
 
 The room laughs, and it's a good laugh, *with* you mostly. Jules doesn't laugh. She looks at you for one more second, then moves on, like you're a puzzle that was harder than she expected but solved all the same.`,
     next: 'a2_ttal_jules'
   },
   a2_ttal_miss: {
-    enter: g => { g.bond('jules', { tension: 1 }); g.know('ear_tell', ['sam'], 'Jules says you touch your ear when you lie.'); },
+    enter: g => { g.flag('ear_called'); g.bond('jules', { tension: 1 }); g.know('ear_tell', ['sam', 'jules', 'simone', 'nik', 'grace'], 'Jules says you touch your ear when you lie.'); },
     text: g => `You haven't even finished the third one when she says it.
 
 jules: ${g.f('ttal') === 'straight' ? 'The ocean.' : 'The altar boy.'}
@@ -1533,7 +1555,7 @@ jules: There isn't one.
 
 sam: Isn't one what?
 
-jules: There's no lie. You told three truths. You've never been on a plane, your brother is a police officer, and your father drives a cab. I watched him get a ticket this morning.
+jules: There's no lie. You told three truths. You've never been on a plane, your brother is a police officer, and your father drives a cab. I watched him argue with a Temple police officer this morning.
 
 Simone, delighted, as loud as a fire alarm:
 
@@ -1555,32 +1577,33 @@ jules: That's not the point.`,
 
 Jules uncrosses her leg and sits up straight, and the room goes quiet without being asked. She has a way of doing that, you'll learn. It's not loudness. It's that she seems to expect it, so the world just does it.
 
-jules: I've never lost a game of cards. I have a twin brother. I've been in love.
+jules: I've never lost a game of cards. I have a twin brother. I've never broken a rule.
 
-She says it with absolutely nothing on her face. Not a flicker, no ear-touching. She could be reading a cereal box.
+She says it with absolutely nothing on her face. Not a flicker. Not a tell. She could be reading a cereal box.
 
 grace: Nine-fourteen. You seem invested. Guess.`,
     choices: [
       { text: '"Never lost at cards. Nobody never loses."', fx: g => { g.flag('jules_guess', 'cards'); g.bond('jules', { respect: -1 }); }, go: 'a2_ttal_reveal' },
       { text: '"The twin. You\'re an only child. You *radiate* only child."', fx: g => { g.flag('jules_guess', 'twin'); g.bond('jules', { tension: 1 }); }, go: 'a2_ttal_reveal' },
-      { text: '"You\'ve never been in love."', fx: g => { g.flag('jules_guess', 'love'); g.bond('jules', { respect: 1, tension: 2 }); }, go: 'a2_ttal_reveal' }
+      { text: '"Never broken a rule. You\'re *here*. I heard your mother on the phone."', fx: g => { g.flag('jules_guess', 'love'); g.bond('jules', { respect: 1, tension: 1 }); }, go: 'a2_ttal_reveal' }
     ]
   },
   a2_ttal_reveal: {
     enter: g => {
-      g.know('jules_never_loses', ['sam'], 'Jules says she has never lost a game of cards. It was one of her truths.');
-      g.know('jules_twin', ['sam'], 'Jules has a twin brother at Penn.');
-      g.know('jules_never_love', ['sam'], 'Jules has never been in love. It was her lie in two truths and a lie.');
+      if (!g.knows('ear_tell')) g.know('ear_tell', ['sam', 'jules'], 'Jules says you touch your left ear when you lie.');
+      g.know('jules_never_loses', ['sam', 'jules', 'simone', 'nik', 'grace'], 'Jules says she has never lost a game of cards. It was one of her truths.');
+      g.know('jules_twin', ['sam', 'jules', 'simone', 'nik', 'grace'], 'Jules has a twin brother at Penn.');
+      g.know('jules_chose_temple', ['sam', 'jules', 'simone', 'nik', 'grace'], 'Jules says she\'s never broken a rule. That was the lie. She chose Temple, apparently over her mother\'s objections.');
     },
     text: g => `${{
-      cards: 'Simone is already shaking her head before you finish.\n\nsimone: That one\'s true. She took three hundred dollars off my cousin at graduation. She took his *watch*. He still talks about it like a war.\n\njules: I gave the watch back.\n\nsimone: You gave it back *engraved*.\n\nThe twin, it turns out, is real too. Hugh. Penn, Wharton. "He\'s a delight," Jules says, in the voice of someone describing a weather system. "Everyone says so."\n\nWhich leaves the lie.',
-      twin: 'jules: Hugh. Penn. Wharton. He\'s a delight. Everyone says so.\n\nShe says it in the voice of someone describing a weather system. Simone confirms the cards too: three hundred dollars and a watch off her cousin at graduation. ("I gave the watch back." "You gave it back *engraved*.")\n\nWhich leaves the lie.',
-      love: 'For one second, maybe less, nothing happens on her face at all. Then she picks up her seltzer and takes a sip, which, you\'ll learn, is the closest Juliet Pemberton comes to flinching.\n\njules: Correct.\n\nThe room does a long, slow *ooooh*. Somebody whistles. Simone looks at her roommate with her eyebrows somewhere near her hairline, like she\'s just learned something she plans to bring up later in private, at length.\n\nThe cards were true (three hundred dollars and a watch, off Simone\'s cousin at graduation). The twin was true: Hugh, Penn, Wharton, "a delight, everyone says so."'
+      cards: 'Simone is already shaking her head before you finish.\n\nsimone: That one\'s true. She took forty dollars off me in gin rummy last night, and I still don\'t know what gin rummy *is*.\n\njules: I explained it twice.\n\nsimone: You explained it *while winning*.\n\nThe twin, it turns out, is real too. Hugh. Penn, Wharton. "He\'s a delight," Jules says, in the voice of someone describing a weather system. "Everyone says so."\n\nWhich leaves the lie.',
+      twin: 'jules: Hugh. Penn. Wharton. He\'s a delight. Everyone says so.\n\nShe says it in the voice of someone describing a weather system. Simone confirms the cards too: forty dollars, gin rummy, last night. ("I explained it twice." "You explained it *while winning*.")\n\nWhich leaves the lie.',
+      love: 'For one second, maybe less, nothing happens on her face at all. Then she picks up her seltzer and takes a sip, which, you\'ll learn, is the closest Juliet Pemberton comes to flinching.\n\njules: Correct.\n\nShe lets the room wait, exactly long enough.\n\njules: I chose Temple.\n\nThe room does a long, slow *ooooh*. Somebody whistles. Simone looks at her roommate with her eyebrows somewhere near her hairline, like she\'s just learned something she plans to bring up later in private, at length.\n\nThe cards were true (forty dollars off Simone in gin rummy, last night). The twin was true: Hugh, Penn, Wharton, "a delight, everyone says so."'
     }[g.f('jules_guess')]}
 
-${g.f('jules_guess') !== 'love' ? 'jules: I\'ve never been in love.\n\nShe says it to the room, but she says it looking at you, and then she looks away so fast you almost miss it.' : 'Which means the lie was the love.'}
+${g.f('jules_guess') !== 'love' ? 'jules: I\'ve never broken a rule.\n\nA pause, exactly long enough.\n\njules: I chose Temple.' : 'Which means the lie was the rule. Juliet Pemberton, Main Line, Honors, chose a public university on North Broad like it was a crime.'}
 
-She's never been in love. She has never lost a game of cards. She has a twin brother who is a delight. You walk back to 9-14 afterward knowing three true things about Juliet Pemberton, and somehow you feel like you know less than when you started.`,
+She chose Temple like it was a crime. She has never lost a game of cards. She has a twin brother who is a delight. ${!g.f('ear_called') ? 'On her way out, she passes behind your chair without slowing down. *Left ear, Kearney. You touch it when you lie. Not tonight. But you do.* ' : ''}You walk back to 9-14 knowing three true things about Juliet Pemberton and feeling like you know less than when you started.`,
     next: 'a2_hub'
   },
 
@@ -1600,7 +1623,7 @@ Nothing, it turns out, is a lot of things. You can't do all of them.`,
         { id: 'vinnie', text: 'FaceTime Vinnie. You haven\'t talked since the going-away thing.', cost: 1, tag: 'Vinnie', go: 'a2_vinnie' },
         { id: 'library', text: 'Get ahead on Calc at Charles Library. Nobody has to know.', cost: 1, tag: 'Grades', go: 'a2_library' },
         { id: 'home', text: 'Call home.', cost: 1, tag: 'Family', go: 'a2_home' },
-        { id: 'party', text: 'Rowhouse party on Diamond Street with Nik and Simone. It runs long.', cost: 2, tag: 'Party', go: 'a2_party' }
+        { id: 'party', text: 'Rowhouse party on Diamond Street with Nik and Simone. It runs long.', cost: 2, tag: 'Party · ends the night', go: 'a2_party' }
       ],
       done: 'a2_pool'
     }
@@ -1608,13 +1631,12 @@ Nothing, it turns out, is a lot of things. You can't do all of them.`,
 
   a2_ciro: {
     loc: 'CIRO\'S PIZZA · CECIL B. MOORE AVE',
-    clock: { time: '4:40 PM' },
     enter: g => { g.meet('ciro'); g.bond('ciro', { affection: 1 }); g.flag('met_ciro'); },
     text: `Ciro's Pizza is a narrow storefront between a phone repair shop and a church that used to be a bank. Inside are a counter, two tables nobody sits at, a wall of signed photos of people nobody recognizes, and Ciro Bianchi himself: sixty-something, Neapolitan, forearms like hams, an apron that has seen the fall of empires.
 
 He looks you up and down.
 
-ciro: You're the Kearney boy. Rosa's son. She called me.
+ciro: You're the Kearney boy. Rosa's son. She said you were handsome. Mothers lie. She called me.
 
 sam: She— When did she call you?
 
@@ -1632,10 +1654,10 @@ He hands you an insulated bag, a Ciro's T-shirt two sizes too big, and a slip of
 
 ciro: Fourteen an hour plus tips. You eat what you drop. You don't eat what you don't drop. If you drop *on purpose*, I know. I always know. Go. You deliver like a funeral, I fire you.
 
-The dinner rush is a blur of North Philly at golden hour: rowhouse stoops, grad students in high-rises, a Baptist church picnic that orders nine pies and pays in exact change, an old man on Norris Street who answers the door in a bathrobe and tells you, unprompted, that he saw Dr. J play at the Palestra in '74. Tips are a contact sport.`,
+The dinner rush is a blur of North Philly at golden hour: rowhouse stoops, grad students in high-rises, a Baptist church picnic that orders nine pies and pays in exact change, an old man on Norris Street who answers the door in a bathrobe and tells you, unprompted, that he was at the Spectrum for Dr. J's first home game in '76. Tips are a contact sport.`,
     choices: [
       { text: 'Work the doors. Smile, chat, remember names. Make them like you.',
-        check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'hustle', label: 'Tips', on: { strong: 'a2_ciro_strong', weak: 'a2_ciro_weak', miss: 'a2_ciro_miss' } } },
+        check: { kind: 'move', move: 'Work the Door', attr: 'charm', skill: 'hustle', label: 'Tips', on: { strong: 'a2_ciro_strong', weak: 'a2_ciro_weak', miss: 'a2_ciro_miss' } } },
       { text: 'Just be fast. Fast is a tip.',
         check: { kind: 'pool', attr: 'reflex', skill: 'ride', diff: 2, label: 'Dinner rush', on: { crit: 'a2_ciro_strong', success: 'a2_ciro_strong', partial: 'a2_ciro_weak', fail: 'a2_ciro_miss' } } }
     ]
@@ -1672,9 +1694,8 @@ ciro: Tomorrow. Five o'clock. Saturday is a war. Try not to die in it.`,
 
   a2_vinnie: {
     loc: 'FACETIME · A ROOF IN SOUTH PHILLY',
-    clock: { time: '6:15 PM' },
     enter: g => { g.meet('vinnie'); g.bond('vinnie', { affection: 1 }); },
-    text: `Vinnie picks up on the first ring, which means he was waiting, which he'd never admit. He's on the roof of his mother's rowhouse on Moore Street in a sleeveless Local 57 shirt, with a Yuengling sweating in his fist and the whole skyline behind him going orange. He's still got drywall dust in his eyebrows from work.
+    text: `Vinnie picks up on the first ring, which means he was waiting, which he'd never admit. He's on the roof of his mother's rowhouse on Moore Street in a sleeveless Local 57 shirt, with a Yuengling sweating in his fist and the whole skyline behind him gone white with heat. He's still got drywall dust in his eyebrows from work.
 
 vinnie: Ayyy. *College.* Look at him. Look at this guy. You get your little lanyard yet?
 
@@ -1684,31 +1705,31 @@ vinnie: You got a lanyard, Sally, I can *feel* it.
 
 You've known Vinnie Russo since the first day of kindergarten at St. Monica's, when he bit a kid named Brendan for you. It's the founding myth of your friendship, and he still brings it up at weddings.
 
-He tells you about work. The union's got him on a crew at the Navy Yard building out some tech campus for "the battery people, the Halcyon guys." Fat overtime, weird security, men in polo shirts who won't let anybody near the basement. Something about the way he says *college*, every time, with a little too much air in it.
+He tells you about work. The union's got him on a crew at the Navy Yard building out some tech campus for "the battery people, the Halcyon guys." Fat overtime, weird security, men in polo shirts who won't let anybody near the basement. And there's the way he says *college*, every time, with a little too much air in it.
 
 Then, casual, cracking another beer:
 
-vinnie: Oh, yo. Saw your pop Tuesday. Melrose Diner. Breakfast with Dante Iannucci.
+vinnie: Oh, yo. Saw your pop Tuesday. Melrose Diner. Back booth, with some young guy in a real nice jacket. Not a cab guy.
 
-He says it like it's nothing. It isn't nothing. Everybody in South Philly knows what the Iannuccis are, the way you know which corner floods when it rains.
+He says it like it's nothing. It isn't nothing. Everybody in South Philly knows that kind of jacket, the way you know which corner floods when it rains.
 
 vinnie: Prob'ly nothing. Probably cabs or whatever. Just saying I saw him.`,
     choices: [
-      { text: '"What do you mean, *with* Dante Iannucci? Like at his table? Vin. What did it look like?"', tag: 'Push',
-        check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'streetwise', label: 'Get it out of Vinnie', on: { strong: 'a2_vinnie_strong', weak: 'a2_vinnie_weak', miss: 'a2_vinnie_weak' } } },
+      { text: '"What young guy? Vin. Who? What did it look like?"', tag: 'Push',
+        check: { kind: 'move', move: 'Read the Street', attr: 'wits', skill: 'streetwise', label: 'Get it out of Vinnie', on: { strong: 'a2_vinnie_strong', weak: 'a2_vinnie_weak', miss: 'a2_vinnie_weak' } } },
       { text: 'Let it go. Pop\'s Pop. "Whatever. How\'s your mom?"', tag: 'Let it go',
-        fx: g => { g.bond('vinnie', { trust: 1 }); g.flag('vinnie_letgo'); g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop having breakfast with Dante Iannucci at the Melrose Diner.'); }, go: 'a2_vinnie_end' }
+        fx: g => { g.bond('vinnie', { trust: 1 }); g.flag('vinnie_letgo'); g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop in a back booth at the Melrose Diner with a young guy in an expensive jacket.'); }, go: 'a2_vinnie_end' }
     ]
   },
   a2_vinnie_strong: {
-    enter: g => { g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop having breakfast with Dante Iannucci at the Melrose Diner. Dante did the talking. Pop didn\'t eat.'); g.bond('vinnie', { trust: 1, respect: 1 }); },
+    enter: g => { g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop in a back booth at the Melrose Diner with a young guy in an expensive jacket. The jacket did the talking and paid. Pop didn\'t eat.'); g.bond('vinnie', { trust: 1, respect: 1 }); },
     text: `Vinnie looks off the side of the roof for a second.
 
-vinnie: Booth in the back. Dante did all the talking. Your pop didn't eat. He had eggs in front of him and he didn't touch 'em, and then Dante paid. For both.
+vinnie: Booth in the back. The jacket did all the talking. Your pop didn't eat. He had eggs in front of him and he didn't touch 'em, and then the jacket paid. For both.
 
 He takes a long pull of the Yuengling.
 
-vinnie: Your pop don't let *nobody* pay for him, Sal. You know that. I'm just saying. I'm just telling you what I saw.
+vinnie: Your pop don't let *nobody* pay for him, Sally. You know that. I'm just saying. I'm just telling you what I saw.
 
 sam: Yeah.
 
@@ -1718,7 +1739,7 @@ The way he says it makes you think he's already asked around, and doesn't want t
     next: 'a2_vinnie_end'
   },
   a2_vinnie_weak: {
-    enter: g => { g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop having breakfast with Dante Iannucci at the Melrose Diner.'); g.bond('vinnie', { tension: 1 }); },
+    enter: g => { g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop in a back booth at the Melrose Diner with a young guy in an expensive jacket.'); g.bond('vinnie', { tension: 1 }); },
     text: `vinnie: Relax. It's a diner. Everybody eats at the diner.
 
 sam: Vin.
@@ -1733,7 +1754,7 @@ He laughs it off, and you let him, because the alternative is fighting with Vinn
 
 vinnie: Main Line? Oh, you're *done*. You're done, Sally. She's gonna eat you like a soft pretzel.
 
-sam: I'm not into her.
+sam: I'm not into her. She's a whole jawn, Vin. A *beverage center* jawn.
 
 vinnie: You said "beverage center" in her voice. You did the *voice*.
 
@@ -1743,13 +1764,12 @@ It's good. It's almost like before. Then somebody calls him from downstairs, his
 
   a2_library: {
     loc: 'CHARLES LIBRARY · TEMPLE UNIVERSITY',
-    clock: { time: '1:30 PM' },
     enter: g => { g.meet('femi'); g.know('met_femi', ['sam'], 'Femi Ojo works the circulation desk at Charles Library. He naps on the fourth floor.'); },
     text: `Charles Library looks like a spaceship that landed on North Broad and decided to stay: a huge wooden ceiling that swoops over you like the inside of a wave, and glass everywhere. A robot arm in the basement fetches books from a vault, which you watch for nine full minutes through a window, like it's an aquarium.
 
 Then you sit down with the Calc syllabus and an expression of real fear.
 
-At the circulation desk there's a guy, maybe twenty, Black, round glasses, reading a paperback of *The Wealth of Nations* like it personally owes him money. Nobody is checking anything out. He seems to like it that way.
+At the circulation desk there's a guy, maybe twenty, Black, round glasses, reading a paperback of *The Wealth of Nations* like it owes him money. Nobody is checking anything out. He seems to like it that way.
 
 DESK GUY: You've been on page one of that syllabus for twenty minutes.
 
@@ -1777,7 +1797,7 @@ femi: Fourth floor, east corner, there's a quiet room nobody ever goes in. Best 
 
 sam: How'd you know I'm a pizza guy?
 
-femi: You've got a Ciro's menu in your back pocket and sauce on your shoe. I told you. I watch.`,
+femi: You've got a Ciro's menu in your back pocket. I told you. I watch.`,
     next: '@hub'
   },
   a2_lib_bad: {
@@ -1790,7 +1810,7 @@ femi: It's okay. Week zero. Come back Monday. I'm always here. Nobody notices, b
   a2_lib_talk: {
     text: `You close the syllabus, and Femi looks almost startled, like he's not used to being the more interesting option.
 
-He grew up in Upper Darby. His parents are both nurses on opposite shifts, so he basically raised himself and his little sister in the hours between. He works three jobs: the desk, a TA gig, weekend shifts at an Amazon warehouse in Bensalem. He's going to be an economist, the kind that *"explains to rich people why poor people are poor, using graphs, so they'll listen."*
+He grew up in Upper Darby. His parents are both nurses on opposite shifts, so he basically raised himself and his little sister in the hours between. His mother calls him Oluwafemi only when she's angry, which he says is "every time the phone bill comes, and on Nigerian Independence Day if I forget to call my grandmother in Ibadan." He works three jobs: the desk, a TA gig, weekend shifts at an Amazon warehouse in Bensalem. He's going to be an economist, the kind that *"explains to rich people why poor people are poor, using graphs, so they'll listen."*
 
 femi: You're the first person who's sat at this desk on purpose since June. Do you know that? People walk right past me. I could set myself on fire and they'd be like, wow, warm in here.
 
@@ -1802,15 +1822,14 @@ He thinks about it.
 
 femi: Sometimes it's nice. Being invisible. You get to see how people really are.
 
-Later, much later, you'll remember he said that.`,
+He goes back to his paperback. Nobody comes to the desk.`,
     next: '@hub'
   },
 
   a2_home: {
     loc: 'PHONE · THE KEARNEY KITCHEN',
-    clock: { time: '7:45 PM' },
     enter: g => { g.meet('nonna'); g.meet('mikey'); g.bond('rosa', { affection: 1 }); g.bond('nonna', { affection: 1 }); },
-    text: `Ma picks up and immediately puts you on speaker, so you're talking to the entire Kearney kitchen at once. You can hear the gravy pot ticking. You can hear the Phillies on the radio. You can hear Gigi yelling *"IS THAT SAM"* from upstairs, and Mikey, home on his dinner break in uniform, yelling *"TELL HIM DON'T DO ANYTHING STUPID,"* which is apparently going to be his whole personality this semester.
+    text: `Ma picks up and immediately puts you on speaker, so you're talking to the entire Kearney kitchen at once. You can hear the gravy pot ticking. You can hear the Phillies on the radio. You can hear Gigi yelling *"IS THAT SAM"* from upstairs, and Mikey, home on his lunch break in uniform, yelling *"TELL HIM DON'T DO ANYTHING STUPID,"* which is apparently going to be his whole personality this semester.
 
 rosa: Are you eating?
 
@@ -1842,16 +1861,16 @@ nonna: Then you wear a jacket.
 
 She hands the phone back to Ma like she's just reminded you to floss. Ma comes back on, and her voice is lighter, the way it gets when she's covering.
 
-rosa: She's been like this all week. She had Gigi count the clocks in the house yesterday. *Count them.* Twenty-two clocks, Sammy. I didn't know we had twenty-two clocks.
+rosa: She's been like this all week. She had Gigi count the clocks in the house yesterday. *Count them.* Twenty-two clocks, Salvatore. I didn't know we had twenty-two clocks.
 
 mikey: Tell him don't do anything stupid!
 
 rosa: He knows, Michael!`,
     choices: [
       { text: '"Okay, Nonna. I\'ll wear a jacket." Mean it.', tag: 'Promise',
-        fx: g => { g.flag('nonna_promise'); g.bond('nonna', { trust: 2 }); g.know('nonna_warning', ['sam'], 'Nonna said: Saturday, near midnight, don\'t be on Broad Street. Wear a jacket.'); }, go: 'a2_home_end' },
+        fx: g => { g.flag('nonna_promise'); g.bond('nonna', { trust: 2 }); g.know('nonna_warning', ['sam', 'nonna', 'rosa', 'mikey'], 'Nonna said: Saturday, near midnight, don\'t be on Broad Street. Wear a jacket.'); }, go: 'a2_home_end' },
       { text: 'Laugh it off. "She\'s been watching the weather lady again."', tag: 'Laugh',
-        fx: g => { g.bond('nonna', { tension: 1 }); g.know('nonna_warning', ['sam'], 'Nonna said: Saturday, near midnight, don\'t be on Broad Street. Wear a jacket.'); }, go: 'a2_home_end' }
+        fx: g => { g.bond('nonna', { tension: 1 }); g.know('nonna_warning', ['sam', 'nonna', 'rosa', 'mikey'], 'Nonna said: Saturday, near midnight, don\'t be on Broad Street. Wear a jacket.'); }, go: 'a2_home_end' }
     ]
   },
   a2_home_end: {
@@ -1881,7 +1900,7 @@ sam: You've never been to a party?
 
 nik: I've been to *gatherings*. There were *parents*. There was *dal*.
 
-At 11:00, Jules arrives.
+At ten, Jules arrives.
 
 She's in something black and simple that costs more than Pop's cab, and she comes in with a tall guy with a rower's shoulders and a Penn Crew quarter-zip, in August. He has a face like a golden retriever that went to boarding school. He kisses her on the cheek at the door, she lets him, and you feel something you decide is indigestion.
 
@@ -1889,7 +1908,7 @@ simone: Callum. The boyfriend. Main Line. Since tenth grade. He's *nice*.
 
 She says *nice* the way you'd say *terminal*.
 
-At 11:40, a big junior in a backwards Flyers hat backs into Nik, and Nik's jungle juice goes all over the guy's white Air Forces. There's a moment of silence that spreads out across the room like the ripple from a stone.
+At 10:40, a big junior in a backwards Flyers hat backs into Nik, and Nik's jungle juice goes all over the guy's white Air Forces. There's a moment of silence that spreads out across the room like the ripple from a stone.
 
 FLYERS HAT: The *fuck*, man.
 
@@ -1977,7 +1996,7 @@ He goes back to Jules. She doesn't look at you at all, and that's somehow a whol
     next: 'a2_party_end'
   },
   a2_party_nik: {
-    text: `You don't move. It's the hardest thing you've done all week. Every muscle in you wants to go, but you plant your feet and stay one step behind Nik's shoulder, close enough to catch him.
+    text: `You don't move. Your whole body votes no. Every muscle in you wants to go, but you plant your feet and stay one step behind Nik's shoulder, close enough to catch him.
 
 And Nik, skinny, terrified Nik from Edison, opens his mouth.
 
@@ -1997,7 +2016,7 @@ Across the room, you see Jules looking at you, specifically at you, the guy who 
     next: 'a2_party_end'
   },
   a2_party_end: {
-    enter: g => { g.meet('callum'); g.know('jules_callum', ['sam'], 'Jules has a boyfriend: Callum Whitford, Penn Crew. He\'s nice. That\'s the problem.'); g.bond('callum', { affection: 1 }); },
+    enter: g => { g.meet('callum'); g.know('jules_callum', ['sam', 'simone'], 'Jules has a boyfriend: Callum Whitford, Penn Crew. He\'s nice. That\'s the problem.'); g.bond('callum', { affection: 1 }); ['ciro', 'vinnie', 'library', 'home'].forEach(k => { if (!g.f('did_' + k)) g.flag('skipped_' + k); }); },
     text: `Later, out on the stoop, the night air's like soup and somebody is playing Drake from a phone in their back pocket. Simone shares a cigarette she doesn't actually smoke with a girl she's absolutely going to make out with by October.
 
 simone: You know he's a rower, right? Callum. They're all like that. Bodies like Greek gods, souls like a LinkedIn.
@@ -2009,23 +2028,23 @@ simone: Mmhm.
 sam: I don't.
 
 simone: Salvatore, I've known you for thirty-six hours, and you've said "I don't care about Callum" three times.`,
-    next: '@hub'
+    next: 'a2_pool'
   },
 
   /* ---------------- The pool table ---------------- */
   a2_pool: {
     loc: 'HOWARD GITTIS STUDENT CENTER · GAME ROOM',
     clock: { day: 'Fri', date: 'Aug 21', time: '11:52 PM' },
-    enter: g => { if (!g.met('simone')) g.meet('simone'); },
+    enter: g => { if (!g.met('simone')) g.meet('simone'); if (!g.f('did_party')) { g.meet('callum'); g.know('jules_callum', ['sam', 'simone'], 'Jules has a boyfriend: Callum Whitford, Penn Crew. He\'s nice. That\'s the problem.'); } },
     text: g => `${g.f('did_party') ? 'The party dies when somebody\'s neighbor calls L&I about the porch, and the herd migrates to the Student Center, which is open till two during Welcome Week and has the only air conditioning in North Philly that works.' : 'Nik and Simone drag you out at eleven-thirty. Simone has heard there\'s "a situation" in the Student Center game room, and she says it like a war correspondent.'}
 
 The situation is Jules.
 
 She's at the last pool table in the back, under a buzzing fluorescent light, in a crowd of about thirty people. Her cue's chalked. Her hair's still up. Across the table, two Sigma-something guys in matching salmon shorts are losing, slowly and expensively. There's a little stack of twenties on the rail next to her elbow. She's running the table the way she does everything, like it's slightly beneath her, and she's doing it anyway because no one else will do it correctly.
 
-${g.f('did_party') ? 'Callum is nowhere. "Early practice," Simone says. "Crew. They wake up at 4:45 to sit in a boat backwards. It\'s like a cult with oars."' : ''}
+${g.f('did_party') ? 'Callum is nowhere. "Early practice," Simone says. "Crew. They wake up at 4:45 to sit in a boat backwards. It\'s like a cult with oars."' : 'Simone, low, at your elbow: "Her boyfriend\'s at Penn. Callum. Rower. He\'s *nice*." She says *nice* the way you\'d say *terminal*.'}
 
-simone: Her grandmother taught her. Pool, poker, bridge, backgammon. Her grandmother is, like, a Bond villain. She has a monocle. I've *seen* the monocle.
+simone: Nobody learns to play like that at a country club. Somebody *taught* her. Somebody mean. I've known her two days and I'd bet my whole meal plan it was a grandmother.
 
 nik: Is that legal? Is she allowed to take their money? Is that gambling?
 
@@ -2035,7 +2054,7 @@ Jules drops the eight ball, cleanly, in the called pocket, and the second salmon
 
 She looks up and sees you.
 
-jules: Ah. The refrigerator man.
+jules: Ah. The refrigerator man.${g.hurt('black_eye') ? '\n\nHer eyes go to your eye and stay there a second. She doesn\'t mention it. That\'s worse.' : g.hurt('split_lip') ? '\n\nShe glances at your lip and says nothing.' : ''}
 
 sam: Beverage center.
 
@@ -2052,13 +2071,13 @@ jules: Then what are you going to play me for?`,
       { text: '"Forty. That\'s what I got."', need: { cash: 40 }, fx: g => { g.flag('pool_bet', 40); }, go: 'a2_pool_game' },
       { text: '"Twenty, and my pride."', need: { cash: 20 }, fx: g => { g.flag('pool_bet', 20); }, go: 'a2_pool_game' },
       { text: '"No money. A favor. Loser owes the winner one favor, winner\'s choosing, whenever they want."', tag: 'A favor',
-        fx: g => { g.flag('pool_bet', 'favor'); g.bond('jules', { tension: 2 }); }, go: 'a2_pool_game' }
+        fx: g => { g.flag('pool_bet', 'favor'); g.bond('jules', { tension: 1 }); }, go: 'a2_pool_game' }
     ]
   },
   a2_pool_game: {
     text: g => `${g.f('pool_bet') === 'favor' ? 'She actually pauses. Thirty people watch Juliet Pemberton pause.\n\njules: Any favor?\n\nsam: Within reason.\n\njules: Whose reason?\n\nsam: …Mine.\n\njules: Then no. *Any* favor.\n\nThe crowd goes *ooooh*. You should say no. Every cell in your body that came from Rosa Kearney is telling you to say no.\n\nsam: Fine. Any favor.\n\njules: Rack them.' : 'jules: ' + (g.f('pool_bet') === 40 ? 'Forty is a strange number. ' : 'Twenty and your pride. Your pride is worth very little to me, but I accept. ') + 'Rack them.'}
 
-You rack. She breaks, and the break sounds like a gunshot in a church. Two solids drop. She walks around the table the way your grandmother walks around a produce stand, and three more go down without touching a rail, and then she misses.
+You rack. She breaks, and the break cracks like a bat on a fastball. Two solids drop. She walks around the table the way your grandmother walks around a produce stand, and three more go down without touching a rail, and then she misses.
 
 It's a deliberate miss, a soft little nothing shot. She leaves you the table on purpose. The crowd doesn't notice, but you do.
 
@@ -2067,7 +2086,7 @@ jules: Your shot.
 She's giving you a chance, or she's showing you that she *can*. With her, it might be the same thing.`,
     choices: [
       { text: 'Run the table. Uncle Tommy\'s basement. Everything you\'ve got.',
-        check: { kind: 'pool', attr: 'reflex', skill: 'hustle', diff: 3, label: 'Run the table', on: { crit: 'a2_pool_crit', success: 'a2_pool_success', partial: 'a2_pool_partial', fail: 'a2_pool_fail' } } },
+        check: { kind: 'pool', attr: 'reflex', skill: 'hustle', diff: 3, near: ['jules'], label: 'Run the table', on: { crit: 'a2_pool_crit', success: 'a2_pool_success', partial: 'a2_pool_partial', fail: 'a2_pool_fail' } } },
       { text: 'Play it smart. Safeties. Make her work for it.',
         check: { kind: 'd20', attr: 'wits', skill: 'hustle', dc: 15, label: 'Out-think her', on: { crit: 'a2_pool_crit', success: 'a2_pool_success', fail: 'a2_pool_fail', fumble: 'a2_pool_fail' } } }
     ]
@@ -2111,7 +2130,7 @@ sam: You're exactly as bad as you look.
 
 jules: I'm aware.
 
-There's a flicker, almost, at the corner of her mouth. It's the second time today you've seen it. You're starting to keep count.`,
+Something happens at the corner of her mouth, and she puts it away like a card she doesn't want you to see.`,
     next: 'a2_pool_after'
   },
   a2_pool_partial: {
@@ -2138,7 +2157,7 @@ jules: Hm.`,
     next: 'a2_pool_after'
   },
   a2_pool_fail: {
-    enter: g => { g.bond('jules', { tension: 1, respect: -1 }); g.flag('pool_result', 'fail'); },
+    enter: g => { g.bond('jules', { respect: -1 }); g.flag('pool_result', 'fail'); },
     text: `It's a disaster. It's Uncle Tommy's basement played in reverse. You scratch on your first shot, and the crowd goes *ohhh*. You knock in one of *hers* on your second. On your third, the cue ball hops the rail, rolls across the floor, and stops at the feet of a security guard, who looks at it, looks at you, and goes back to his phone.
 
 She runs the table without looking up.
@@ -2147,17 +2166,17 @@ jules: Well. You were very brave.
 
 sam: Thank you.
 
-jules: That also wasn't a compliment.`,
+jules: It was a eulogy.`,
     next: 'a2_pool_after'
   },
   a2_pool_after: {
     enter: g => {
       const b = g.f('pool_bet');
-      if (b === 'favor') g.know('owe_jules_favor', ['sam', 'jules'], 'You owe Jules Pemberton one favor. Any favor. Her choosing, whenever she wants.', { track: true });
-      else g.money(-b);
+      if (b === 'favor') g.know('owe_jules_favor', ['sam', 'jules', 'simone', 'nik'], 'You owe Jules Pemberton one favor. Any favor. Her choosing, whenever she wants.', { track: true });
+      else if (['crit', 'success'].includes(g.f('pool_result'))) g.flag('jules_waived_bet'); else g.money(-b);
       g.know('jules_ivory_die', ['sam'], 'Jules carries an old ivory die from her grandmother. "It isn\'t lucky. Luck isn\'t real."');
     },
-    text: g => `${g.f('pool_bet') === 'favor' ? 'jules: One favor.\n\nShe holds out her hand to shake on it. Her grip is cool and dry and sure.\n\njules: I\'ll let you know.\n\nsam: When?\n\njules: When it\'ll hurt the most.' : 'You count out the money. ' + (g.f('pool_bet') === 40 ? 'It\'s Pop\'s money, or Ciro\'s, or both, and either way it hurts. ' : '') + 'She takes it without counting, folds it once, and puts it in the back of her phone case, and you feel like you\'ve paid a toll on a road you didn\'t mean to drive down.'}
+    text: g => `${g.f('pool_bet') === 'favor' ? 'jules: One favor.\n\nShe holds out her hand to shake on it. Her grip is cool and dry and sure.\n\njules: I\'ll let you know.\n\nsam: When?\n\njules: When it\'ll hurt the most.' : (g.f('jules_waived_bet') ? 'You start counting out the money. She stops you with two fingers on the back of your hand.\n\njules: Keep it. You earned a rematch.\n\nIt\'s somehow the most humiliating thing that\'s happened all night.' : 'You count out the money. ' + (g.f('pool_bet') === 40 ? (g.f('pop_money') !== 'refused' || g.f('did_ciro') ? 'It\'s Pop\'s money, or Ciro\'s, or both, and either way it hurts. ' : 'It\'s almost everything you\'ve got, and it hurts. ') : '') + 'She takes it without counting, folds it once, and puts it in the back of her phone case, and you feel like you\'ve paid a toll on a road you didn\'t mean to drive down.')}
 
 While the crowd breaks up, you see her fidgeting with something on the rail: a small, old, yellowed die, ivory or bone, with the corners worn round. She rolls it between her fingers without looking at it, the way some people play with a ring.
 
@@ -2175,10 +2194,9 @@ She says it the way people say *I'm fine*: fast, a little too firm, like a door 
 
 Then she's gone, out through the glass doors into the August night, with Simone hurrying after her mouthing *"I'll text you"* at you, which is bizarre, since you never gave her your number. Your phone buzzes before you even reach Broad Street.
 
-TXT simone: its simone. i got ur number from nik. nik is very easy
-TXT simone: u owe her a favor?? or u lost money?? either way. iconic. tragic. iconic
-TXT simone: also u should know. ive never seen anybody make her almost laugh twice in one day
-TXT simone: callum hasnt done it once since graduation`,
+TXT simone: It's Simone. I got your number from Nik. Nik is VERY easy.
+TXT simone: Salvatore Kearney. You played Juliet Pemberton. For STAKES. In PUBLIC. Iconic. Tragic. Iconic.
+TXT simone: For the record she called you "the refrigerator person" four times on the walk home. I'm not saying anything. I'm just counting.`,
     next: 'a2_night'
   },
 
@@ -2190,7 +2208,9 @@ TXT simone: callum hasnt done it once since graduation`,
 
 nik: Okay, so I've decided I'm going to be a person who goes to parties now. ${g.f('did_party') ? 'That was the best night of my life. A man wanted to kill me. ' : 'I didn\'t go to the party but Simone told me about it and I feel like I was there spiritually. '}Do you want to play Elden Ring? I have a co-op build. It's a *healer*. I'm always the healer.
 
-Your shift at Ciro's starts at five tomorrow. Saturday is a war. And through the wall, very faintly, you can hear the hum of a beverage center across the hall.`,
+${g.f('did_ciro') ? 'Your shift at Ciro\'s starts at five. Saturday is a war.' : 'Your first shift at Ciro\'s starts at five.'} And from across the hall, very faintly, under everything, you can hear the hum of a beverage center.
+
+> APERTURE · T−22:31:04`,
     choices: [
       { text: 'Co-op with Nik till four in the morning. Be his tank.', tag: 'Sleep 5h',
         fx: g => { g.sleep(5); g.bond('nik', { affection: 2, trust: 1 }); g.flag('night', 'nik'); }, go: 'a3_day' },
@@ -2227,7 +2247,7 @@ He hangs up and looks at the slip like it smells funny.
 
 ciro: They tip like Protestants. Go anyway.
 
-Out the back door, Ciro's old windbreaker hangs on the hook, the green one with *CIRO'S* across the back in cracked white letters. It's ninety degrees outside. The air sits on the street like a hand.
+Out the back door, Ciro's old windbreaker hangs on the hook, the green one with *CIRO'S* across the back in cracked white letters. Outside, the air sits on the street like a hand.
 
 *Saturday, you wear a jacket. Near midnight. The clocks.*${g.f('did_home') ? '\n\n*You don\'t be on Broad Street.*' : ''}`,
     choices: [
@@ -2244,7 +2264,7 @@ Out the back door, Ciro's old windbreaker hangs on the hook, the green one with 
     clock: { time: '11:41 PM' },
     text: g => `Broad Street at night is the best road in the world, and nobody can tell you otherwise.
 
-You ride south with the bag warm on your back${g.f('jacket') ? ' and the windbreaker tied around your waist like a dad at a barbecue' : ''}, and the whole city is lit up for you. The Divine Lorraine's sign burns red against the haze. The old Uptown Theater stands dark, with its terra-cotta face. There are rowhouses with every window open and every fan on, bodega cats in doorways, a kid doing wheelies on a dirt bike down the center line with a dozen more behind him, riding like a flock of birds. Heat lightning flickers silently out over Jersey. It's drizzling, barely. Steam comes up off the asphalt.
+You ride south with the bag warm on your back${g.f('jacket') ? ' and the windbreaker tied around your waist like a dad at a barbecue' : ''}, and the whole city is lit up for you. The Divine Lorraine's sign burns red against the haze. The Met glows gold at Broad and Poplar, every bulb on its marquee burning. There are rowhouses with every window open and every fan on, bodega cats in doorways, a kid doing wheelies on a dirt bike down the center line with a dozen more behind him, riding like a flock of birds. Heat lightning flickers silently out over Jersey. It's drizzling, barely. Steam comes up off the asphalt.
 
 South of Girard, the rowhouses give way to warehouses and new glass. At Spring Garden there's the Baldwin Locomotive Works, a huge brick machine shop from the 1800s with windows twenty feet tall, restored so perfectly it looks fake. A sign on the lawn says **HALCYON DYNAMICS** in thin silver letters, under a logo of a bird made out of a circle.
 
@@ -2307,11 +2327,11 @@ MARCO: Okay, papa. Here. Twenty. Go home. Go home, okay?`,
 
 You coast back out to Broad Street and stop at the light at Spring Garden. One foot down. The e-bike hums under you. It's 11:50 by the bank clock on the corner. Your phone says the same.
 
-Northbound, a SEPTA bus, the 16, is coming down Broad way too fast on the wet asphalt.
+Northbound, a SEPTA bus, the 16, is coming up Broad way too fast on the wet asphalt.
 
 In the crosswalk, a little boy in a Spider-Man backpack holds his grandmother's hand. She's looking at her phone.
 
-${g.f('jacket') ? 'For no reason you can name, you untie the windbreaker from your waist and put it on. It\'s ninety degrees. You zip it to your chin.' : 'A drop of sweat runs down your spine. It\'s ninety degrees. You think, for no reason, of your grandmother\'s hands on your face.'}
+${g.f('jacket') ? 'For no reason you can name, you untie the windbreaker from your waist and put it on. It\'s ninety degrees. You zip it to your chin.' : 'A drop of sweat runs down your spine. You think, for no reason, of your grandmother\'s hands on your face.'}
 
 You know this part.`,
     next: 'a3_light'
@@ -2324,17 +2344,17 @@ You know this part.`,
     sfx: 'whoosh',
     enter: g => {
       g.recap('At 11:51:04 on Saturday night, every clock in North Philadelphia stopped. You didn\'t.');
-      if (!g.f('jacket')) g.injure({ id: 'frostnip', name: 'Frostnip (hands)', pen: 1, heal: 1 });
+      if (!g.f('jacket')) g.injure({ id: 'frostnip', name: 'Frostnip (hands)', pen: 1, heal: 1, affects: ['body', 'reflex'] });
     },
     text: g => `The light. The silence. The rain hanging in the air like beads on a curtain.
 
-It's colder than anything you've ever felt, colder than the walk-in at Dolores', colder than the January the pipes burst on Mifflin Street. ${g.f('jacket') ? 'Ciro\'s windbreaker crackles with frost across your shoulders, and inside it you\'re okay, you\'re *okay*. Nonna. Nonna, how did you know.' : 'Your bare arms go white, then red, then numb. Your fingers won\'t close all the way around anything. Nonna. *Nonna.*'}
+It's colder than anything you've ever felt, colder than the walk-in at Ciro's, colder than the January the pipes burst on Mifflin Street. ${g.f('jacket') ? 'Ciro\'s windbreaker crackles with frost across your shoulders, and inside it you\'re okay, you\'re *okay*. Nonna. Nonna, how did you know.' : 'Your bare arms go white, then red, then numb. Your fingers won\'t close all the way around anything. Nonna. *Nonna.*'}
 
 You're off the bike. You're running into the rain that isn't falling, and each drop breaks against you like a tiny bulb of ice.
 
 The bus is moving. That's the thing. It isn't stopped like everything else. It's *slow*, slow as the minute hand on a clock, but it's coming, a wall of white metal with an ad for a personal-injury lawyer on the side, its front tire already skidding sideways on the wet. The driver is frozen behind the windshield with her mouth open in a perfect O.
 
-The boy is in the middle of the crosswalk, one sneaker lifted. The grandmother is a step behind him, her thumb paused mid-scroll on her phone screen, which shows a photo of the boy, blowing out candles.
+The boy is in the middle of the crosswalk, one sneaker lifted. The grandmother is a step behind him, her thumb paused mid-scroll on her phone screen, which shows a photo of the boy, blowing out candles. Her eyes are open. A raindrop hangs a quarter inch from one of them, and she isn't blinking, and she isn't going to.
 
 You have no idea how long this lasts. You have no idea what this is. You only know one thing, with total certainty, the way you know your own name:
 
@@ -2342,10 +2362,10 @@ You have no idea how long this lasts. You have no idea what this is. You only kn
     choices: [
       { text: 'The kid. Go for the kid. *Now.*',
         check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, label: 'Reach him', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } },
-        fx: g => { g.flag('hitch_choice', 'kid'); g.hidden('revenant_drift', 0.3); } },
+        fx: (g, t, res) => { g.flag('hitch_choice', 'kid'); g.hidden('revenant_drift', 0.3); g.flag('hitch_rewound', !!(res && res.rewound)); } },
       { text: 'The bus. Get to the driver. Get the wheel.',
-        check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 3, label: 'Turn the bus', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } },
-        fx: g => { g.flag('hitch_choice', 'wheel'); g.hidden('revenant_drift', 0.3); } },
+        check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 3, bonus: 1, bonusLabel: 'Momentum', label: 'Turn the bus', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } },
+        fx: (g, t, res) => { g.flag('hitch_choice', 'wheel'); g.hidden('revenant_drift', 0.3); g.flag('hitch_rewound', !!(res && res.rewound)); } },
       { text: 'Stop. Breathe. *Look at the whole street first.* You\'ve got time. Maybe. Use it.',
         check: { kind: 'd20', attr: 'wits', skill: 'investigate', dc: 12, label: 'See it all', on: { crit: 'a3_look_good', success: 'a3_look_good', fail: 'a3_look_bad', fumble: 'a3_look_bad' } },
         fx: g => { g.flag('hitch_choice', 'look'); g.hidden('revenant_drift', -0.6); } }
@@ -2356,7 +2376,7 @@ You have no idea how long this lasts. You have no idea what this is. You only kn
     enter: g => g.flag('look_result', 'good'),
     text: `You stop.
 
-It's the hardest thing your body has ever done. Every muscle is screaming *go*, and you stand in the frozen rain and make yourself *look*, the way Coach used to make you read the batter before the pitch.
+It's the hardest thing your body has ever done. Every muscle is screaming *go*, and you stand in the frozen rain and make yourself *look*, the way Pop reads traffic three lights ahead.
 
 The bus's front wheel is skidding left. The grandmother is a half step behind the boy, out of the bus's line if she stays where she is. The boy isn't. And on the far curb, there's a parked white van with its hazards frozen mid-blink: a big, empty, unbreakable thing.
 
@@ -2365,7 +2385,8 @@ You see it all at once, like a diagram. *Kid first. Then the wheel. Into the van
 You've got time to do both, if you don't waste a single step.`,
     choices: [
       { text: 'Both. The kid, then the wheel. Every step counts.',
-        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, bonus: 2, bonusLabel: 'You saw it all', label: 'Kid, then wheel', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } } }
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, bonus: 2, bonusLabel: 'You saw it all', label: 'Kid, then wheel', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } },
+        fx: (g, t, res) => g.flag('hitch_rewound', !!(res && res.rewound)) }
     ]
   },
   a3_look_bad: {
@@ -2375,10 +2396,11 @@ You've got time to do both, if you don't waste a single step.`,
 
 And the bus is still moving.
 
-You've wasted steps. You know it, the way you know when you've overrun a grounder. Now it's going to be close.`,
+You've wasted steps. You know it, the way you know when you've missed a bus by one stop. Now it's going to be close.`,
     choices: [
       { text: 'Go. *Go.* The kid.',
-        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 4, label: 'Make up the time', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } } }
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, label: 'Make up the time', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } },
+        fx: (g, t, res) => g.flag('hitch_rewound', !!(res && res.rewound)) }
     ]
   },
 
@@ -2387,10 +2409,9 @@ You've wasted steps. You know it, the way you know when you've overrun a grounde
     enter: g => {
       g.flag('hitch_result', 'clean'); g.flag('carmen', 'safe');
       g.unlock('burst'); g.unlock('slip'); g.drift(2); g.mastery(5); g.xp(1);
-      if (g.last && g.last.rewound) g.know('first_rewind', ['sam'], 'In the frozen moment, you failed, and then time ran backward and gave you another try. You didn\'t choose that. It just happened.');
-      g.meet('jayden');
+      if (g.f('hitch_rewound')) g.know('first_rewind', ['sam'], 'In the frozen moment, you failed, and then time ran backward and gave you another try. You didn\'t choose that. It just happened.');
     },
-    text: g => `${g.last && g.last.rewound ? 'For a second you *fail*. You feel it happen. You\'re a step short and the bus is there, it\'s *there*. Then the world tears down the middle like a page, and everything runs backward. The frozen rain falls *up*. Your footsteps un-happen behind you. You\'re back at the curb with your heart going like a jackhammer, and something in the back of your skull says, in a voice that sounds a lot like yours, *No. Again.*\n\nAgain.\n\n' : ''}${g.f('hitch_choice') === 'wheel' ? 'You hit the bus door at a dead run. It\'s locked, folded shut, but the driver\'s side window is open a crack for air, and you get your arm through the gap up to the shoulder and get your hand on the wheel, and you *pull*. It turns. It turns like moving a car with your bare hands through wet cement. The front of the bus swings slowly away from the crosswalk, toward the parked van, and you let go and drop and roll.' : 'You get to the boy. You scoop him up, backpack and all, like a grounder you were always going to get, and keep going. Your feet barely touch. Three steps, four, then the curb. You set him down on the far sidewalk under the bank clock and turn around.\n\nThe grandmother is still a half step back, out of the bus\'s line. ' + (g.f('hitch_choice') === 'look' ? 'And you\'re already moving again. Back across. Up onto the bus\'s bumper. Your arm through the driver\'s cracked-open window to the wheel. You *pull*, and it turns like cement, and the bus swings away from her toward the empty van, and you drop and roll.' : 'You were right. The line of the bus misses her by a foot. It\'s going to miss her by a foot. You stand there and shake.')}
+    text: g => `${g.f('hitch_rewound') ? 'For a second you *fail*. You feel it happen. You\'re a step short and the bus is there, it\'s *there*. Then the world tears down the middle like a page, and everything runs backward. The frozen rain falls *up*. Your footsteps un-happen behind you. You\'re back at the curb with your heart going like a jackhammer, and something in the back of your skull says, in a voice that sounds a lot like yours, *No. Again.*\n\nAgain.\n\n' : ''}${g.f('hitch_choice') === 'wheel' ? 'You hit the bus door at a dead run. It\'s locked, folded shut, but the driver\'s side window is open a crack for air, and you get your arm through the gap up to the shoulder and get your hand on the wheel, and you *pull*. It turns. It turns like pushing a parked car through wet cement. The front of the bus swings slowly away from the crosswalk, toward the parked van, and you let go and drop and roll.' : 'You get to the boy. You scoop him up, backpack and all, like a bag of groceries you were always going to catch, and keep going. Your feet barely touch. Three steps, four, then the curb. You set him down on the far sidewalk under the bank clock and turn around.\n\nThe grandmother is still a half step back, out of the bus\'s line. ' + (g.f('hitch_choice') === 'look' ? 'And you\'re already moving again. Back across. Up onto the bus\'s bumper. Your arm through the driver\'s cracked-open window to the wheel. You *pull*, and it turns like cement, and the bus swings away from her toward the empty van, and you drop and roll.' : 'You were right. The line of the bus misses her by a foot. It\'s going to miss her by a foot. You stand there and shake.')}
 
 And then.
 
@@ -2414,12 +2435,12 @@ jayden: You were the cold man.`,
     enter: g => {
       g.flag('hitch_result', 'partial'); g.flag('carmen', 'wrist');
       g.unlock('burst'); g.unlock('slip'); g.drift(3); g.mastery(4);
-      if (g.f('hitch_choice') === 'wheel') g.injure({ id: 'bruised_ribs', name: 'Bruised ribs', pen: 1, heal: 2 });
-      if (g.last && g.last.rewound) g.know('first_rewind', ['sam'], 'In the frozen moment, you failed, and then time ran backward and gave you another try. You didn\'t choose that. It just happened.');
+      if (g.f('hitch_choice') === 'wheel') g.injure({ id: 'bruised_ribs', name: 'Bruised ribs', pen: 1, heal: 2, affects: ['body', 'reflex'] });
+      if (g.f('hitch_rewound')) g.know('first_rewind', ['sam'], 'In the frozen moment, you failed, and then time ran backward and gave you another try. You didn\'t choose that. It just happened.');
     },
-    text: g => `${g.last && g.last.rewound ? 'You fail. You feel it happen. And then the world tears down the middle like a page, and the rain falls *up*, and your footsteps un-happen, and a voice in the back of your skull that sounds like yours says, *No. Again.* You\'re back at the curb. You go again.\n\n' : ''}You get there. Almost.
+    text: g => `${g.f('hitch_rewound') ? 'You fail. You feel it happen. And then the world tears down the middle like a page, and the rain falls *up*, and your footsteps un-happen, and a voice in the back of your skull that sounds like yours says, *No. Again.* You\'re back at the curb. You go again.\n\n' : ''}You get there. Almost.
 
-${g.f('hitch_choice') === 'wheel' ? 'You get your arm through the driver\'s window and haul the wheel, and the bus turns, but not enough. You feel something in your side go *pop* against the window frame. The bumper clips the grandmother\'s outstretched arm as it swings past.' : 'You get the boy. You scoop him up and run, and the bus comes through the crosswalk where he was standing. But the grandmother has stepped forward after him. Of course she has. Its side mirror catches her arm as it goes past.'}
+${g.f('hitch_choice') === 'wheel' ? 'You get your arm through the driver\'s window and haul the wheel, and the bus turns, but not enough. You feel something in your side go *pop* against the window frame. The bumper clips the grandmother\'s outstretched arm as it swings past. Somehow the boy is on the sidewalk. Somehow his hand is in yours. You don\'t remember any of it.' : 'You get the boy. You scoop him up and run, and the bus comes through the crosswalk where he was standing. But the grandmother has stepped forward after him. Of course she has. Its side mirror catches her arm as it goes past.'}
 
 !! ~SLAM
 
@@ -2439,7 +2460,7 @@ jayden: You were the cold man.`,
     enter: g => {
       g.flag('hitch_result', 'fail'); g.flag('carmen', 'hip');
       g.unlock('burst'); g.unlock('slip'); g.drift(3); g.mastery(3);
-      g.injure({ id: 'bruised_ribs', name: 'Bruised ribs', pen: 1, heal: 2 });
+      g.injure({ id: 'bruised_ribs', name: 'Bruised ribs', pen: 1, heal: 2, affects: ['body', 'reflex'] });
       g.hidden('revenant_drift', 0.5);
       g.know('first_rewind', ['sam'], 'In the frozen moment, you failed, and time ran backward to give you another try. You failed again anyway.');
     },
@@ -2459,7 +2480,7 @@ Sound comes back all at once. Metal. A car alarm. Glass. Then, worst of all, a s
 
 She's lying in the street, crumpled at the hip, ten feet from where she was standing. She's breathing. You can see her breathing. She's looking at the sky, and her lips are moving, and when you crawl over to her on your hands and knees, you hear what she's saying. She's praying, in Spanish, for the boy.
 
-The boy is sitting on the curb where you dropped him, unhurt, not crying, just staring at you.
+${g.f('hitch_choice') === 'wheel' ? 'The boy is sitting on the curb. You don\'t know how he got there. He\'s' : 'The boy is sitting on the curb where you dropped him,'} unhurt, not crying, just staring at you.
 
 jayden: You were the cold man.
 
@@ -2469,15 +2490,17 @@ He's alive. She's alive. You did it, and you didn't, and your nose is pouring bl
 
   a3_after: {
     night: true,
-    loc: 'BROAD & SPRING GARDEN · 11:51:05 PM',
+    loc: 'BROAD & SPRING GARDEN',
+    clock: { time: '11:51:05 PM' },
     enter: g => {
+      g.meet('jayden'); g.meet('carmen');
       g.know('jayden_cold_man', ['sam'], 'The boy, Jayden, called you "the cold man."');
       g.know('sam_slip', ['sam'], 'Your secret: when the world stopped, you didn\'t.', { track: true });
       g.recap('You pulled a little boy named Jayden out from in front of the 16 bus. He called you "the cold man."');
     },
     text: g => `North Philadelphia is dark.
 
-Not *dim*: dark. Every streetlight on Broad is out, every window, every traffic signal, all the way up to the Divine Lorraine, whose red sign is gone like somebody blew out a candle. The only light comes from car headlights, and from the Halcyon building, which is still blazing, every window white, like it's the only thing in the city that got the memo.
+Not *dim*: dark. Every streetlight on Broad is out, every window, every traffic signal, all the way up to the Divine Lorraine, whose red sign is gone like somebody blew out a candle. The only light comes from car headlights, and from the Halcyon building, which is still blazing, every window white, like it's the only building in the city that saw this coming.
 
 And from above. There's something in the sky over the city: a slow ripple of color, green and violet, folding over itself like a curtain in a draft. Like the Northern Lights, if they'd never heard of the North.
 
@@ -2485,7 +2508,7 @@ Up and down Broad Street, people are stopping. Getting out of their cars. Holdin
 
 You look at your phone. 11:51:05. The second before it, 11:51:04, is just *gone*. You'll learn later that every phone in North Philly lost the same 0.7 seconds, and for a while it's the only thing anybody in the city talks about.
 
-${g.f('carmen') === 'hip' ? 'You\'re kneeling next to the grandmother in the street. Her name is Carmen, she tells you, Carmen Torres, and the boy is Jayden, he\'s eight, his birthday was Tuesday. She keeps saying it like it\'s important that someone knows. Someone\'s calling 911. Someone else is directing traffic around her with their phone flashlight.' : g.f('carmen') === 'wrist' ? 'The grandmother, Carmen Torres, is sitting on the curb with her wrist held against her chest and Jayden in her lap, rocking him, rocking herself. She keeps looking at you like she\'s trying to remember where she knows you from.' : 'The grandmother, Carmen Torres, has Jayden in her arms on the curb and won\'t let go of him. She looks up at you and says, very clearly, "Gracias, mijo. Gracias. Gracias." She doesn\'t know what she\'s thanking you for. Neither do you.'}
+${g.f('carmen') === 'hip' ? 'You\'re kneeling next to the grandmother in the street. Her name is Carmen, she tells you, Carmen Torres, and the boy is Jayden, he\'s eight, his birthday was Tuesday. She keeps saying it like it\'s important that someone knows. Someone\'s calling 911. Someone else is directing traffic around her with their phone flashlight. An EMT is already saying *Temple* into a radio.' : g.f('carmen') === 'wrist' ? 'The grandmother (Carmen, she tells you, Carmen Torres) is sitting on the curb with her wrist held against her chest and Jayden in her lap, rocking him, rocking herself. She keeps looking at you like she\'s trying to remember where she knows you from. An EMT is already saying *Temple* into a radio.' : 'The grandmother (Carmen, she tells you, Carmen Torres) has Jayden in her arms on the curb and won\'t let go of him. She looks up at you and says, very clearly, "Gracias, mijo. Gracias. Gracias." She doesn\'t know what she\'s thanking you for. Neither do you.'}
 
 Then you see him.
 
@@ -2505,8 +2528,8 @@ Sirens are coming from the south. Your nose won't stop bleeding.`,
   },
   a3_after_stay: {
     night: true,
-    enter: g => g.know('halcyon_tablet_man', ['sam'], 'A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light. He stopped right next to you.'),
-    text: g => `You stay. You sit down on the wet curb and put your arm around Jayden, and you hold Carmen's good hand, and you bleed politely into a napkin from the pizza bag while the sirens get louder.
+    enter: g => g.flag('tablet_saw_you') && g.know('halcyon_tablet_man', ['sam'], 'A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light. He stopped right next to you.'),
+    text: g => `You stay. You sit down on the wet curb and put your arm around Jayden, and you hold ${g.f('carmen') === 'wrist' ? 'Carmen\'s good hand' : 'Carmen\'s hand'}, and you bleed politely into a napkin from the pizza bag while the sirens get louder.
 
 Tablet Guy walks right up to the crosswalk. He stops six feet from you. He looks at his screen, and then, very slowly, he looks at you. His face is pleasant, forgettable, the face of a man who manages a Best Buy. His eyes take a picture.
 
@@ -2520,7 +2543,7 @@ He smiles, nods, and moves on down the block, sweeping, sweeping.
 
 A Philly cop takes your statement for the crash report: young guy, sunburned, from the 6th District, sent up because everyone is being sent up. You give your name, your real name. Kearney. He looks up.
 
-COP: Kearney? Like Mikey Kearney, the 3rd?
+COP: Kearney? Like Mikey Kearney? From the 3rd District?
 
 sam: …My brother.
 
@@ -2534,7 +2557,7 @@ He's already writing it down.${g.f('carmen') === 'hip' ? '\n\nWhen the ambulance
   a3_after_gone: {
     night: true,
     enter: g => g.know('halcyon_tablet_man', ['sam'], 'A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light.'),
-    text: g => `${g.f('after') === 'handoff' ? 'You step out in front of the first ambulance with both arms up, and it stops, and you lean in the window and point. "Older lady, hip or wrist, she\'s in the crosswalk, the kid\'s fine, the driver\'s shook." You talk like Mikey talks on his radio, calm and quick, and the EMT nods like you\'re a cop, and the doors swing open, and while everybody\'s looking at the doors, you aren\'t there anymore.' : 'You let the crowd take you. Phones up, faces up to the sky. You become one more kid in a pizza shirt staring at the lights, and you drift, drift, drift north, and Tablet Guy walks right past the place where you were standing.'}
+    text: g => `${g.f('after') === 'handoff' ? 'You step out in front of the first ambulance with both arms up, and it stops, and you lean in the window and point. "' + (g.f('carmen') === 'hip' ? 'Older lady, hip, she\'s in the crosswalk' : g.f('carmen') === 'wrist' ? 'Older lady, wrist, she\'s on the curb' : 'Older lady, she\'s shook up, check her out') + ', the kid\'s fine, the driver\'s shook." You talk like Mikey talks on his radio, calm and quick, and the EMT nods like you\'re a cop, and the doors swing open, and while everybody\'s looking at the doors, you aren\'t there anymore.' : 'You let the crowd take you. Phones up, faces up to the sky. You become one more kid in a pizza shirt staring at the lights, and you drift, drift, drift north, and Tablet Guy walks right past the place where you were standing.'}
 
 From half a block up, you look back. Tablet Guy has stopped at the crosswalk, where the frost is still melting off the lamppost in a perfect ring. He crouches. He touches the wet asphalt with two fingers. Then he looks north, up Broad, in your direction.
 
@@ -2545,7 +2568,7 @@ Not tonight.`,
   },
   a3_after_seen: {
     night: true,
-    enter: g => { g.hidden('halcyon_heat', 2); g.know('halcyon_tablet_man', ['sam'], 'A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light. He photographed you.'); },
+    enter: g => { g.flag('tablet_saw_you'); g.hidden('halcyon_heat', 2); g.know('halcyon_tablet_man', ['sam'], 'A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light. He photographed you.'); },
     text: g => `${g.f('after') === 'handoff' ? 'You flag down the ambulance. The EMT wants to know who you are and whether you saw it happen, and the questions keep coming, and you\'re stuck, smiling and bleeding and nodding.' : 'You try to drift into the crowd, but your legs are jelly and your nose is a faucet, and you stumble on the curb in front of everybody.'}
 
 Tablet Guy is right there.
@@ -2563,7 +2586,7 @@ Then he walks on, sweeping, sweeping, as if he got what he came for.`,
     loc: 'LIACOURAS WALK · TEMPLE UNIVERSITY',
     clock: { time: '12:26 AM' },
     enter: g => { g.heal('frostnip'); },
-    text: g => `You walk the bike home because you don't trust yourself to ride it. Your hands won't stop shaking. Every few steps the world seems to *hitch*, a hiccup in the corner of your eye, like the city's a video buffering. You eat both granola bars from the bottom of the pizza bag and the emergency Tastykake you keep for emergencies, and you're still starving.
+    text: g => `You walk the bike home because you don't trust yourself to ride it. Your hands won't stop shaking. Every few steps the world seems to *hitch*, a hiccup in the corner of your eye, like the city's a video buffering. You eat both granola bars from the bottom of the pizza bag and the Tastykake you keep for emergencies, and you're still starving.
 
 Liacouras Walk is a sea of phone flashlights. The concert stopped mid-song when the power went, and now two thousand students are milling around in the dark, looking up at the colors folding across the sky and talking about it in hushed, thrilled voices, the way people talk at a fire.
 
@@ -2583,13 +2606,13 @@ Jules doesn't look up. Up close, you can see she's shaking. It's tiny and consta
 
 She says, very quietly, to nobody:
 
-jules: Did you feel it? Like the whole world… skipped.
+jules: I was counting the bass. Four to a bar. One of them didn't happen.
 
 You did feel it. You felt more than that. You were *inside* the skip, walking around in it.
 
-sam: Yeah.
+sam: Transformer, probably. Happens.
 
-It's the first lie you tell her.`,
+${g.f('ttal') === 'truths' ? 'It\'s the first lie you tell her.' : 'It\'s the first real lie you tell her.'}`,
     choices: [
       { text: 'Sit down next to her on the curb. Don\'t say anything. Just be there.', tag: 'Stay close',
         fx: g => { g.flag('curb', 'sat'); g.bond('jules', { trust: 1, affection: 1, tension: 1 }); }, go: 'a3_jules_sat' },
@@ -2623,7 +2646,7 @@ You take it. You hold it to your nose. It smells like her bag, like cedar and so
 
 jules: Keep it. I don't want it back.
 
-You don't know yet that that's the nicest thing she's said to anyone in a week.`,
+She says it like she's writing you a parking ticket.`,
     next: 'a3_jules_end'
   },
   a3_jules_laugh: {
@@ -2639,7 +2662,7 @@ And Jules laughs.
 
 It isn't much: one breath, out through her nose, and a crack in her composure that's there and gone. But it's a real laugh. It's the first one you've gotten out of her, and you feel it in your chest like a fist unclenching.
 
-She looks at you then. Really looks.
+She looks at you then, like she's annoyed it worked.
 
 jules: You're bleeding.
 
@@ -2664,7 +2687,7 @@ jules: Keep it.`,
   },
   a3_jules_laugh_miss: {
     night: true,
-    enter: g => { g.bond('jules', { tension: 1 }); },
+    enter: g => { g.bond('jules', { respect: -1 }); },
     text: `sam: So, uh, bright side, you're getting your daily glass intake—
 
 jules: Read the room, Kearney.
@@ -2723,7 +2746,7 @@ jules: Keep it. I don't want it back.`,
     night: true,
     enter: g => {
       g.know('jules_glass', ['sam', 'simone', 'jules'], 'The window came down on Jules in the Hitch, and every piece of glass missed her.');
-      g.know('jules_handkerchief', ['sam', 'jules'], 'You have Jules\'s handkerchief: white, ironed, JLP in navy thread. "Keep it."');
+      g.know('jules_handkerchief', ['sam', 'jules', 'simone'], 'You have Jules\'s handkerchief: white, ironed, JLP in navy thread. "Keep it."');
       g.heat('simone', 1);
       g.know('jules_changed', ['jules'], 'Jules was changed in the Hitch.');
     },
@@ -2739,7 +2762,7 @@ She doesn't push. Not tonight. But you see her take out her phone and type somet
 
 A little after one, the power comes back on all at once, the whole of North Philly lighting up block by block like somebody running a hand down a piano. Two thousand people cheer. The colors in the sky are fading. Jules stands up out of the circle of glass, careful, careful, and Simone takes her arm, and they walk back toward Cardone together.
 
-At the corner, Jules looks back once. You can't tell whether she's looking at you or at the empty circle where she was sitting.
+At the corner, Jules looks back once. You can't tell whether she's looking at you or at the empty circle where she was sitting. Her right hand is closed tight at her side. For one frame, something between her fingers catches the streetlight and burns gold.
 
 You stand there holding her handkerchief to your face. Your phone is vibrating so hard it's practically walking out of your pocket: twenty-three missed calls from Ma, nine from Gigi, one from Mikey, one from Vinnie.
 
@@ -2759,7 +2782,7 @@ EH.scenes('s01e01', {
     loc: 'CARDONE HALL · ROOM 9-14',
     clock: { day: 'Sun', date: 'Aug 23', time: '6:08 AM' },
     enter: g => { g.sleep(3); },
-    text: g => `You don't sleep. You lie on the bare mattress with Jules's handkerchief in your fist and watch the ceiling, and everything is wrong in a way you can't name.
+    text: g => `You barely sleep. You lie on the bare mattress with Jules's handkerchief in your fist and watch the ceiling, and everything is wrong in a way you can't name.
 
 You called Ma back at 1:30 and let her cry at you for forty minutes. You told her you were at the concert, nowhere near Spring Garden, totally fine. ${g.f('after') === 'stayed' ? 'You know it won\'t hold. That cop from the 6th District is going to tell Mikey, and Mikey is going to tell Ma, and you\'ll have to have the conversation again with a different lie in it.' : 'It\'s the second lie in two hours. You\'re starting to notice them stacking up, like plates.'}
 
@@ -2793,9 +2816,9 @@ nik: …Bro? Were you just… over there?`,
 
 You keep waiting for him to laugh.
 
-Nik puts his glasses on. He takes them off. He cleans them on his taco boxers. He puts them back on. Then he looks at you for a long, long time, and you watch twenty years of comic books, video games, and late-night Wikipedia holes assemble themselves behind his eyes into one gigantic, shaking, incandescent idea.
+Nik puts his glasses on. He takes them off. He cleans them on his taco boxers. He puts them back on. Then he looks at you for a long, long time, and you watch eighteen years of comic books, video games, and late-night Wikipedia holes assemble themselves behind his eyes into one gigantic, shaking, incandescent idea.
 
-nik: Okay. Okay. Okay okay okay. So. First: I believe you. Second: I'm having a panic attack. That's unrelated. That's a me thing, that's pre-existing, ignore that. Third—
+nik: Okay. Okay. Okay okay okay. So. First: I believe you. Second: my hands are doing a thing, ignore the hands, the hands are unrelated, the hands are a *me* thing. Third—
 
 He grabs your wrist like a doctor taking a pulse.
 
@@ -2853,7 +2876,7 @@ nik: Your hand is on your ear.
 
 It is. It *is*. Damn Juliet Pemberton to hell.
 
-nik: Sam. My phone was falling. I heard it fall. It was *falling*, and then you were here.
+nik: Salvatore. My phone was falling. I heard it fall. It was *falling*, and then you were here.
 
 sam: Go back to sleep, Nik.
 
@@ -2877,12 +2900,12 @@ In the hall the floor is silent, everyone sleeping off the night. Across the hal
 
 ${g.f('test_with_nik') ? 'Nik is in the bleachers in a hoodie with three phones, a laptop, and a borrowed tripod. One phone is set to film at 240 frames per second. One is running a stopwatch. One is open to a Google Doc already titled **SAM: OBSERVATIONS (CONFIDENTIAL) (VERY CONFIDENTIAL)**.\n\nnik: Okay. Okay. Hundred meters. Just run. Like, normal-run first. And then less normal.' : 'You\'re alone. You set your phone against the fence, recording, and walk out to the hundred-meter line. You feel ridiculous, like a kid in the backyard playing a game nobody else can see.'}
 
-You put your toe on the line. You take a breath.
+${g.hurt('bruised_ribs') ? 'Your ribs grab every time you breathe in. ' : ''}You put your toe on the line. You take a breath.
 
 You think about the cold.`,
     choices: [
       { text: 'Run. Just run, as fast as you can, and see what happens.',
-        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, power: true, label: 'Hundred meters', on: { crit: 'a4_run_crit', success: 'a4_run_good', partial: 'a4_run_partial', fail: 'a4_run_fail', botch: 'a4_run_fail' } } }
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, power: true, bonus: 1, bonusLabel: 'Adrenaline', label: 'Hundred meters', on: { crit: 'a4_run_crit', success: 'a4_run_good', partial: 'a4_run_partial', fail: 'a4_run_fail', botch: 'a4_run_fail' } } }
     ]
   },
   a4_run_crit: {
@@ -2904,7 +2927,7 @@ The pigeon lands on the fence. It looks offended.`,
 
 You stop at the far line, breathing hard, and the world snaps back into place.
 
-${g.f('test_with_nik') ? 'nik: Four point… four point *three*. Bro. That\'s *double* the world record. That\'s… I need to sit down. I *am* sitting down. I need to sit down *more*.' : 'The video shows a blur where you should be. 4.3 seconds, give or take. Double the world record. You sit down on the turf for a while.'}`,
+${g.f('test_with_nik') ? 'nik: Four point… four point *three*. Bro. That\'s twice as fast as Usain Bolt. That\'s… I need to sit down. I *am* sitting down. I need to sit down *more*.' : 'The video shows a blur where you should be. 4.3 seconds, give or take. More than twice as fast as anyone has ever run. You sit down on the turf for a while.'}`,
     next: 'a4_test2'
   },
   a4_run_partial: {
@@ -2916,7 +2939,7 @@ ${g.f('test_with_nik') ? 'nik: You okay? YOU OKAY? That was eight seconds, which
   },
   a4_run_fail: {
     enter: g => { g.pool('stamina', -1); g.flag('run', 'fail'); },
-    text: g => `You run. You run as hard as you've ever run, every scrap of you, and the world stays stubbornly, normally the world. Eleven-point-something seconds. Good for a shortstop. Nothing for a miracle.
+    text: g => `You run. You run as hard as you've ever run, every scrap of you, and the world stays stubbornly, normally the world. Eleven-point-something seconds. Good for a kid from Mifflin Street. Nothing for a miracle.
 
 You stand at the far line with your hands on your knees, gasping.
 
@@ -2946,7 +2969,7 @@ There's no light this time, no colors, no tearing. It's just *quiet*. The mower 
 
 It's cold again. Your breath smokes.
 
-${g.f('test_with_nik') ? 'Nik is in the bleachers, mouth open mid-word, one hand raised, pointing at you. You walk over and look at him from a foot away. There\'s a single frozen tear on his cheek. He was crying. He was crying because he was happy for you.\n\nYou don\'t know why, but you take his hand and turn it so he\'s giving a thumbs-up. Then you walk back to the line.' : 'You walk across the frozen field and touch one of the beads of water. It bursts against your fingertip like a cold soap bubble.'}
+${g.f('test_with_nik') ? 'Nik is in the bleachers, mouth open mid-word, one hand raised, pointing at you. You walk over and look at him from a foot away. There\'s a single frozen tear halfway down his cheek, and under it he is grinning so hard it looks like it hurts.\n\nYou don\'t know why, but you take his hand and turn it so he\'s giving a thumbs-up. Then you walk back to the line.' : 'You walk across the frozen field and touch one of the beads of water. It bursts against your fingertip like a cold soap bubble.'}
 
 Then it's like holding your breath underwater. Something in your chest starts to *pull*, and you know without being told that you can't stay. You step back.
 
@@ -2960,14 +2983,12 @@ ${g.f('test_with_nik') ? 'nik: —how did my hand— WHY IS MY HAND DOING THIS? 
   a4_noslip: {
     text: g => `You step back off the line.
 
-${g.f('test_with_nik') ? 'nik: You\'re not gonna try?\n\nsam: Somebody almost got killed Saturday, Nik. I don\'t know what this is. I don\'t know what it costs.\n\nNik looks at you for a long moment, and then he closes his laptop.\n\nnik: …That\'s actually really smart. That\'s smarter than every single person in every single comic. They always just *jump*.' : 'You don\'t know what it is. You don\'t know what it costs. Saturday night a voice that sounded like yours said *No. Again*, and you don\'t know whose it was.\n\nYou\'re a Kearney. Kearneys jump. You don\'t jump.\n\nYou\'ll think about that later, too.'}`,
+${g.f('test_with_nik') ? 'nik: You\'re not gonna try?\n\nsam: Somebody almost got killed Saturday, Nik. I don\'t know what this is. I don\'t know what it costs.\n\nNik looks at you for a long moment, and then he closes his laptop.\n\nnik: …That\'s actually really smart. That\'s smarter than every single person in every single comic. They always just *jump*.' : 'You don\'t know what it is. You don\'t know what it costs. Saturday night a voice that sounded like yours said *No. Again*, and you don\'t know whose it was.\n\nYou\'re a Kearney. Kearneys jump. You don\'t jump.'}`,
     next: 'a4_test_end'
   },
   a4_test_end: {
-    enter: g => { if (g.f('test_with_nik')) g.know('nik_named_slip', ['sam', 'nik'], 'Nik named it: the Slip.'); },
-    text: g => `On the way back, you eat three breakfast sandwiches from the food truck on 12th, then a fourth, while ${g.f('test_with_nik') ? 'Nik takes notes about the sandwiches in the Google Doc under a header titled CALORIC LOAD (???)' : 'the truck guy watches you with real concern'}.
-
-Behind you, out on the field, the groundskeeper has stopped his mower. He's staring at the sprinklers. Every one of them, all down the field, is crusted with a thin white rime of frost, melting fast in the August sun.`,
+    enter: g => { g.money(-12); if (g.f('test_with_nik')) g.know('nik_named_slip', ['sam', 'nik'], 'Nik named it: the Slip.'); },
+    text: g => `On the way back, you eat three breakfast sandwiches from the food truck on 12th, then a fourth, while ${g.f('test_with_nik') ? 'Nik takes notes about the sandwiches in the Google Doc under a header titled CALORIC LOAD (???)' : 'the truck guy watches you with real concern'}.${g.f('first_slip') ? '\n\nBehind you, out on the field, the groundskeeper has stopped his mower. He\'s staring at the sprinklers. Every one of them, all down the field, is crusted with a thin white rime of frost, melting fast in the August sun.' : ''}`,
     next: 'a4_sunday'
   },
 
@@ -2975,7 +2996,7 @@ Behind you, out on the field, the groundskeeper has stopped his mower. He's star
   a4_sunday: {
     loc: 'SUNDAY · AUGUST 23',
     clock: { time: '11:30 AM' },
-    text: g => `The city wakes up hungover from the Hitch. The Inquirer's website runs it top of the page: **"THE HITCH": BLACKOUT, SKY GLOW, AND A STRANGE SECOND OVER NORTH PHILADELPHIA**. Halcyon Dynamics has issued a statement about a "transformer cascade" and "atmospheric ionization." Two dead, one heart attack and one fall down a flight of stairs in the dark. Dozens hurt. Halcyon will "fully support affected residents." A city councilman is already holding a press conference about it in front of the Uptown Theater, because he's never met a microphone he didn't like.
+    text: g => `The city wakes up hungover from the Hitch. The Inquirer's website runs it top of the page: **"THE HITCH": BLACKOUT, SKY GLOW, AND A STRANGE SECOND OVER NORTH PHILADELPHIA**. Halcyon Dynamics has issued a statement about a "transformer cascade" and "atmospheric ionization." Two dead, one heart attack and one fall down a flight of stairs in the dark. Dozens hurt. Halcyon will "fully support affected residents." A city councilman is already holding a press conference about it in front of the Uptown Theater, because the cameras are already there.
 
 ${g.f('promise_sundays') ? 'Your phone buzzes.\n\nTXT gigi: sunday!!!!!!! u swore\nTXT gigi: on the EAGLES\nTXT gigi: nonna made the braciole' : 'Ma texts a photo of the gravy pot with no caption. It\'s a threat.'}
 
@@ -2988,16 +3009,16 @@ You have the rest of Sunday. Classes start tomorrow.`,
         { id: 'hospital', text: 'Temple University Hospital. Check on Carmen Torres.', cost: 1, tag: 'Carmen', if: g => g.f('carmen') !== 'safe', go: 'a4_hospital' },
         { id: 'nap', text: 'Sleep. Just sleep. Six hours, minimum.', cost: 1, tag: 'Rest', go: 'a4_nap' },
         { id: 'practice', text: 'The roof. Practice the Slip in private where nobody can see.', cost: 1, tag: 'Power', if: g => g.f('first_slip'), go: 'a4_practice' },
-        { id: 'study', text: 'Read the first two chapters for ENG 0802 before anybody else does.', cost: 1, tag: 'Grades', go: 'a4_study' }
+        { id: 'study', text: 'Read the first two chapters for ENG 0802 before anybody else does.', cost: 1, tag: 'Grades', go: 'a4_study' },
+        { id: 'books', text: 'Temple bookstore. Buy the ENG reader and the Calc access code before Monday. ($96)', cost: 1, tag: 'Money', go: 'a4_books' }
       ],
       done: 'a4_sunday_after'
     }
   },
   a4_dinner: {
     loc: 'THE KEARNEY HOUSE · MIFFLIN STREET',
-    clock: { time: '3:00 PM' },
     enter: g => { g.meet('nonna'); g.meet('mikey'); g.bond('gigi', { trust: 1, affection: 1 }); g.bond('rosa', { affection: 1 }); g.money(-5); },
-    text: g => `You take the Broad Street Line south, eleven stops of humming orange seats and a guy selling phone chargers out of a duffel. You come up into South Philly sunlight at Tasker-Morris and walk the four blocks, and Mifflin Street is exactly the same as it was three days ago, which feels impossible. The same stoops, the same plastic chairs, the same Mrs. Iacobucci hosing down the same piece of sidewalk she's been hosing down since 1974.
+    text: g => `You take the Broad Street Line south, nine stops of humming orange seats and a guy selling phone chargers out of a duffel. You come up into South Philly sunlight at Tasker-Morris and walk the four blocks, and Mifflin Street is exactly the same as it was three days ago, which feels impossible. The same stoops, the same plastic chairs, the same Mrs. Iacobucci hosing down the same piece of sidewalk she's been hosing down since 1974.
 
 Nonna is on the stoop. She watches you come down the block. She doesn't wave. She just stands up, slowly, holding the railing, and waits.
 
@@ -3013,11 +3034,11 @@ She taps her chest, over her heart, twice.
 
 sam: Nonna, what are you—
 
-nonna: Not now. Not with your father. Later we talk. *Mangia.*
+nonna: Not now. Not in front of your mother. Later we talk. *Mangia*, Salvatò.
 
 And she lets go of your face and goes inside, like she's said nothing stranger than *wipe your feet.*
 
-Dinner is dinner: gravy, meatballs, braciole tied with string, the good bread from Sarcone's, the TV on in the next room with nobody watching it. Gigi sits next to you and leans against your arm the whole time like a cat. Pop isn't there.
+Dinner is dinner: gravy, meatballs, braciole tied with string, the good bread from Sarcone's, the TV on in the next room with nobody watching it. Gigi sits next to you and leans against your arm the whole time, like you might leave again mid-meatball. Pop isn't there.
 
 rosa: He picked up a shift. A Sunday shift. Since when does your father pick up Sunday shifts?
 
@@ -3025,21 +3046,21 @@ She says it lightly, and nobody answers, and Gigi's hand finds your sleeve under
 
 Mikey's there in a T-shirt, off duty, big and loud, eating like a man who's going back to war in the morning. He waits until Ma's in the kitchen.
 
-mikey: So. Crazy thing. ${g.f('after') === 'stayed' ? 'Kowalczyk from the 6th was up at that bus wreck on Spring Garden Saturday night. He says *my baby brother* was there. Says you pulled a kid out of the street. Says you were sitting on the curb bleeding like a stuck pig and gave him a statement like a little gentleman.' : 'Guys from the 6th were up at that bus wreck on Spring Garden Saturday night. Witnesses say some kid in a pizza shirt pulled a little boy out of the street. Then he vanished. Like, *vanished*. Kowalczyk says nobody can find him.'}
+mikey: So. Crazy thing. ${g.f('after') === 'stayed' ? 'Kowalczyk from the 6th was up at that bus wreck on Spring Garden Saturday night. He says *my baby brother* was there. Says you pulled a kid out of the street. Says you were sitting on the curb bleeding like a stuck pig and gave him a statement like a little gentleman.' : 'Guys from the 6th were up at that bus wreck on Spring Garden Saturday night. Witnesses say some kid in a pizza shirt ' + (g.f('hitch_choice') === 'wheel' ? 'was suddenly standing there holding the little boy\'s hand.' : 'pulled a little boy out of the street.') + ' Then he vanished. Like, *vanished*. Kowalczyk says nobody can find him.'}
 
 He tears off a piece of bread and looks at you over it.
 
 mikey: ${g.f('after') === 'stayed' ? 'Ma doesn\'t know yet. You were "at the concert." Wanna tell me why you lied to Ma?' : 'You work for Ciro, right? On Cecil B.? Pizza shirt?'}`,
     choices: [
       { text: 'Lie to Mikey. Cop to cop-brother. Make it airtight.',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Mikey', on: { strong: 'a4_mikey_lie_ok', weak: 'a4_mikey_lie_meh', miss: 'a4_mikey_lie_bad' } } },
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['mikey'], label: 'Lie to Mikey', on: { strong: 'a4_mikey_lie_ok', weak: 'a4_mikey_lie_meh', miss: 'a4_mikey_lie_bad' } } },
       { text: 'Tell him part of it. You were there, you grabbed the kid, you didn\'t want Ma to freak. No powers.', tag: 'Half-truth',
         fx: g => { g.heat('mikey', 1); g.bond('mikey', { trust: 1, respect: 2 }); g.know('sam_at_crash', ['sam', 'mikey'], 'Mikey knows you were at the Spring Garden crash and pulled the kid out. He doesn\'t know how.'); g.flag('mikey', 'half'); }, go: 'a4_mikey_half' }
     ]
   },
   a4_mikey_lie_ok: {
-    enter: g => { g.heat('mikey', 1); g.flag('mikey', 'lied'); },
-    text: g => `sam: ${g.f('after') === 'stayed' ? 'Okay, I was there. I was *near* there. I was on a delivery. I saw the kid, I yelled, I ran over after. Kowalczyk\'s making it a whole thing. I didn\'t tell Ma \'cause she\'d have put me in bubble wrap and moved me back home by Tuesday.' : 'Mike. Half of North Philly works delivery. You think I\'m the only kid on Broad in a pizza shirt? I was on Liacouras with forty thousand people looking at the sky.'}
+    enter: g => { g.flag('mikey', 'lied'); if (g.f('after') === 'stayed') g.know('sam_at_crash', ['sam', 'mikey'], 'Mikey knows you were at the Spring Garden crash.'); },
+    text: g => `sam: ${g.f('after') === 'stayed' ? 'Okay, I was there. I was *near* there. I was on a delivery. I saw the kid, I yelled, I ran over after. Kowalczyk\'s making it a whole thing. I didn\'t tell Ma \'cause she\'d have put me in bubble wrap and moved me back home by Tuesday.' : 'Mike. Half of North Philly works delivery. You think I\'m the only kid on Broad in a pizza shirt? I was on Liacouras with two thousand people looking at the sky.'}
 
 You hold his eye. You don't touch your ear. Mikey looks at you the way he looks at people through a car window during a traffic stop.
 
@@ -3051,18 +3072,18 @@ He says *"Don't do anything stupid,"* on his way out the door, though. And he sa
     next: 'a4_dinner_end'
   },
   a4_mikey_lie_meh: {
-    enter: g => { g.heat('mikey', 2); g.flag('mikey', 'lied'); },
+    enter: g => { g.flag('mikey', 'lied'); if (g.f('after') === 'stayed') g.know('sam_at_crash', ['sam', 'mikey'], 'Mikey knows you were at the Spring Garden crash.'); },
     text: `You give him the story. It comes out a little too smooth, a little too rehearsed, a little too *Ma*.
 
 Mikey chews. Swallows. Wipes his mouth.
 
 mikey: Okay.
 
-He doesn't believe you. He doesn't *not* believe you. He just files it, the same way you filed Pop's phone calls, in the drawer where you keep things you're going to come back to.`,
+He doesn't believe you. He doesn't *not* believe you. He just files it. You know the drawer. You've got one too.`,
     next: 'a4_dinner_end'
   },
   a4_mikey_lie_bad: {
-    enter: g => { g.heat('mikey', 3); g.bond('mikey', { trust: -1 }); g.flag('mikey', 'lied_bad'); },
+    enter: g => { g.bond('mikey', { trust: -1 }); g.flag('mikey', 'lied_bad'); if (g.f('after') === 'stayed') g.know('sam_at_crash', ['sam', 'mikey'], 'Mikey knows you were at the Spring Garden crash.'); },
     text: `You start talking and keep talking, and somewhere in the middle of it you hear yourself say *"and anyway, who even orders pizza at midnight,"* which is insane, because you're the one who delivers pizza at midnight.
 
 Mikey puts the bread down.
@@ -3103,7 +3124,7 @@ mikey: Mm.`,
   a4_dinner_end: {
     text: `After dinner, while Ma packs you four days of leftovers in mismatched Tupperware, Nonna catches your wrist in the hallway by the coats. Her grip is like a crab's.
 
-She doesn't say anything. She pulls you down so she can reach, presses her dry lips to your forehead, and puts something in your hand: a small, cold, heavy old key on a ribbon.
+She doesn't say anything. She pulls you down so she can reach, presses her dry lips to your forehead, and puts something in your hand: an old iron key on a faded ribbon, cold, and heavier than it looks.
 
 nonna: Not yet. You keep it. When it's time, I tell you what it opens.
 
@@ -3115,9 +3136,8 @@ nonna: *Va.* Go. You'll miss the train.`,
   },
   a4_hospital: {
     loc: 'TEMPLE UNIVERSITY HOSPITAL · 6TH FLOOR',
-    clock: { time: '1:15 PM' },
     enter: g => { g.meet('carmen'); g.bond('carmen', { trust: 1, affection: 2 }); g.know('halcyon_settles', ['sam'], 'Halcyon is paying Hitch victims fast, with papers to sign.'); },
-    text: g => `Carmen Torres is in a room on the sixth floor with ${g.f('carmen') === 'hip' ? 'a brand-new hip, a morphine drip, and a view of the Broad Street Line tracks' : 'her wrist in a fresh purple cast up to the elbow, being kept for observation because of her blood pressure'}. Jayden is on the end of the bed playing a Nintendo Switch with the sound off. When you come in, he looks up and doesn't seem surprised at all.
+    text: g => `Carmen Torres is in a room on the sixth floor with ${g.f('carmen') === 'hip' ? 'a brand-new hip, a morphine drip, and a view of Broad and Ontario' : 'her wrist in a fresh purple cast up to the elbow, being kept for observation because of her blood pressure'}. Jayden is on the end of the bed playing a Nintendo Switch with the sound off. When you come in, he looks up and doesn't seem surprised at all.
 
 jayden: Abuela, the cold man.
 
@@ -3127,12 +3147,12 @@ There's someone else in the room: a woman in a navy blazer, very clean, a Halcyo
 
 HALCYON LADY: —and of course this is just to make sure Ms. Torres is fully supported, with no need for any lengthy *process*.
 
-carmen: I don't read so good in English.
+carmen: Señora, más despacio. I read English fine. I read it *slow*.
 
 HALCYON LADY: That's fine! I can summarize. It basically says that Halcyon cares.`,
     choices: [
       { text: '"She\'s not signing anything today." Take the folder. Hand it back. Smile like Ma smiles at a nun.', tag: 'Step in',
-        check: { kind: 'move', move: 'Hold the Line', attr: 'nerve', skill: 'persuade', label: 'Stand up to Halcyon', on: { strong: 'a4_hosp_strong', weak: 'a4_hosp_weak', miss: 'a4_hosp_miss' } },
+        check: { kind: 'move', move: 'Hold the Line', bonus: 1, bonusLabel: 'Ma raised you', attr: 'nerve', skill: 'persuade', label: 'Stand up to Halcyon', on: { strong: 'a4_hosp_strong', weak: 'a4_hosp_weak', miss: 'a4_hosp_miss' } },
         fx: g => g.hidden('halcyon_heat', 1) },
       { text: 'It\'s not your business. Just sit with Jayden and play Mario Kart while the adults talk.', tag: 'Jayden',
         fx: g => { g.bond('jayden', { affection: 3 }); g.flag('hosp', 'jayden'); g.flag('carmen_signed'); }, go: 'a4_hosp_jayden' }
@@ -3140,13 +3160,13 @@ HALCYON LADY: That's fine! I can summarize. It basically says that Halcyon cares
   },
   a4_hosp_strong: {
     enter: g => { g.flag('hosp', 'stopped'); g.bond('carmen', { trust: 2, respect: 2 }); },
-    text: `sam: She's not signing anything today. She's on morphine. My ma's a nurse, she'd have your whole lanyard.
+    text: g => `sam: She's not signing anything today. She's on painkillers. My ma's a nurse, she'd have your whole lanyard.
 
-You close the folder, gently, and hand it back with the menace grin at full voltage. The Halcyon lady holds it for a second, like it's hot, and you can see her decide this isn't worth a scene on a Sunday.
+You close the folder, gently, and hand it back with Ma's nun smile. The Halcyon lady holds it for a second, like it's hot, and you can see her decide this isn't worth a scene on a Sunday.
 
 HALCYON LADY: Of course. Of *course*. I'll leave my card.
 
-She leaves the card. She leaves the basket. On her way out, she looks at your face for one second too long, the way the tablet guy did, like she's matching it to something.
+She leaves the card. She leaves the basket. On her way out, she looks at your face for one second too long, ${g.f('tablet_saw_you') ? 'the way the tablet guy did, ' : ''}like she's matching it to something.
 
 Carmen grips your hand.
 
@@ -3172,11 +3192,11 @@ You never told her your last name.`,
     next: 'a4_hosp_end'
   },
   a4_hosp_jayden: {
-    text: `You sit on the end of the bed with Jayden. He hands you the second Joy-Con without a word. You play Rainbow Road, and he destroys you, and the whole time you can hear the soft murmur of the Halcyon lady explaining what *caring* means, and the scratch of a pen.
+    text: g => `You sit on the end of the bed with Jayden. He hands you the second Joy-Con without a word. You play Rainbow Road, and he destroys you, and the whole time you can hear the soft murmur of the Halcyon lady explaining what *caring* means, and the scratch of a pen.
 
 When she's gone, Jayden says without looking up from the screen:
 
-jayden: You were cold. In the air. When you picked me up. Your hands were like ice cream.
+jayden: You were cold. In the air. ${g.f('hitch_choice') === 'wheel' ? 'When you held my hand.' : 'When you picked me up.'} Your hands were like ice cream.
 
 sam: Yeah?
 
@@ -3189,43 +3209,52 @@ jayden: Can you teach me?`,
   },
   a4_hosp_end: {
     enter: g => { g.know('carmen_medal', ['sam', 'carmen'], 'Carmen Torres gave you a San Judas Tadeo medal. Saint Jude, patron of lost causes.'); },
-    text: `When you leave, Carmen calls you back. She works something off her good wrist, a thin gold chain with a little oval medal on it, and presses it into your palm.
+    text: `When you leave, Carmen calls you back. She reaches up with her good hand and works a thin gold chain over her head, a little oval medal swinging from it, and presses it into your palm.
 
 carmen: San Judas Tadeo. For the hopeless. For the lost causes.
 
 sam: I can't take—
 
-carmen: Is for you. You go where it's hopeless. I see it. You *go*.
+carmen: Es para ti. You go where it's hopeless. I saw you. You *go*.
 
 It's still warm from her skin. You put it around your neck. You don't take it off.`,
     next: '@hub'
   },
+  a4_books: {
+    loc: 'TEMPLE UNIVERSITY BOOKSTORE',
+    enter: g => g.money(-96),
+    text: `The line at the bookstore snakes past the hoodie wall and the forty-dollar Owl mugs. The ENG 0802 reader is a stack of photocopies with a spiral binding, and it costs fifty-one dollars. The Calc "access code" is a piece of cardboard with a number on it, and it costs forty-five.
+
+You pay. The cashier, a junior with a septum ring and the soul of a war correspondent, looks at the cardboard and then at you.
+
+CASHIER: Welcome to college.`,
+    next: '@hub'
+  },
   a4_nap: {
     loc: 'CARDONE HALL · ROOM 9-14',
-    enter: g => g.sleep(6),
+    enter: g => g.nap(6),
     text: `You sleep like you've been shot. No dreams. Or one dream, almost: a man standing in the rain, too far away to see his face, holding up one hand.
 
-When you wake up, it's dark out, and Nik has put a blanket over you, and there's a sticky note on your forehead that says, in his tiny neat handwriting, *u snore too.*`,
+When you wake up, the light in the window has gone gold and slanted, and Nik has put a blanket over you, and there's a sticky note on your forehead that says, in his tiny neat handwriting, *u snore too.*`,
     next: '@hub'
   },
   a4_practice: {
     loc: 'CARDONE HALL · ROOF',
-    clock: { time: '9:40 PM' },
     enter: g => { g.mastery(8); g.drift(1); g.pool('focus', -2); g.xp(1); },
     text: g => `The roof door has an alarm on it that hasn't worked since 2009, according to a Reddit thread Nik found. The roof itself is gravel and HVAC units and the whole of Philadelphia spread out around you: Center City glittering to the south, the Delaware a black ribbon to the east, the Hitch-sky long gone and only a regular orange city haze left behind.
 
-You practice. Slip, and the city stops. Step back, and it starts. Slip. The hum of eight million air conditioners cuts off like a breath held. Step back.
+You practice. Slip, and the city stops. Step back, and it starts. Slip. The hum of a million air conditioners cuts off like a breath held. Step back.
 
 Every time, it's a little easier to find the edge, like finding a light switch in your own house in the dark.
 
-Every time, it's a little harder to come back. There's a pull in there. It's not a sound, not quite a voice. It's more like someone standing just behind you in a dark room. You never turn around.
+Every time, it's a little harder to come back, like climbing out of a pool with your clothes on.
 
 When you finally stop, there's frost on the gravel in a perfect ring around your feet, and your nose is bleeding, and ${g.knows('carmen_medal') ? 'the San Judas medal against your chest is' : 'the skin over your heart is'} cold as a coin in January.`,
     next: '@hub'
   },
   a4_study: {
     loc: 'CHARLES LIBRARY · 4TH FLOOR',
-    text: `You find the quiet room on the fourth floor, east corner, just like Femi said. It's empty and silent, a beanbag chair and a window looking at a brick wall. Best nap in Philadelphia. You don't nap. You read.`,
+    text: g => `${g.f('did_library') ? 'You find the quiet room on the fourth floor, east corner, just like Femi said. It\'s empty and silent, a beanbag chair and a window looking at a brick wall. Best nap in Philadelphia. You don\'t nap.' : 'You wander the fourth floor until you find a quiet room in the east corner that nobody seems to know about: a beanbag chair and a window looking at a brick wall.'} You read.`,
     choices: [
       { text: 'Push through Baldwin and Didion like your future depends on it.',
         check: { kind: 'd20', attr: 'wits', skill: 'study', dc: 13, label: 'ENG 0802 reading', on: { crit: 'a4_study_good', success: 'a4_study_good', fail: 'a4_study_bad', fumble: 'a4_study_bad' } } }
@@ -3240,9 +3269,9 @@ You leave feeling like you're supposed to be here. It's the first time all weeke
   },
   a4_study_bad: {
     enter: g => g.grade('eng', 1),
-    text: `You read the same paragraph of Didion nine times. Every word makes sense and none of them stay. You fall asleep on the beanbag with the book on your face and wake up at midnight with a crease from the spine across your cheek.
+    text: g => `You read the same paragraph of Didion nine times. Every word makes sense and none of them stay. You fall asleep on the beanbag with the book on your face and wake up hours later with a crease from the spine across your cheek.
 
-Best nap in Philadelphia, though. Femi wasn't lying.`,
+${g.f('did_library') ? 'Best nap in Philadelphia, though. Femi wasn\'t lying.' : 'Best nap in Philadelphia, though.'}`,
     next: '@hub'
   },
   a4_sunday_after: {
@@ -3254,9 +3283,9 @@ Best nap in Philadelphia, though. Femi wasn't lying.`,
     },
     text: g => `${g.f('promise_sundays') && !g.f('did_dinner') ? 'Gigi\'s last text came at 6:12 p.m.\n\nTXT gigi: its fine\nTXT gigi: nonna saved u braciole\nTXT gigi: its FINE\n\nIt is not fine. You swore on the Eagles.' : g.f('did_dinner') ? 'The leftovers are in Nik\'s minifridge, because your minifridge is the windowsill. Nik has already eaten a meatball standing up in the dark like a raccoon and doesn\'t regret it.' : 'Ma\'s last text is a photo of an empty chair at the dinner table. No caption. She doesn\'t need one.'}
 
-Tomorrow is the first day of classes. You set three alarms. You lie down. You don't sleep.
+Tomorrow is the first day of classes. You set three alarms. You lie down. You don't sleep for a long time.
 
-You keep thinking about the sprinklers at Geasey: every one of them crusted with frost in August.`,
+${g.f('first_slip') ? 'You keep thinking about the sprinklers at Geasey: every one of them crusted with frost in August.' : 'You keep thinking about the door in the wall, the one you didn\'t open.'}`,
     next: 'a4_monday'
   },
 
@@ -3264,7 +3293,7 @@ You keep thinking about the sprinklers at Geasey: every one of them crusted with
   a4_monday: {
     loc: 'ANDERSON HALL · ROOM 17 · GU 1003: PHILADELPHIA NEIGHBORHOODS',
     clock: { day: 'Mon', date: 'Aug 24', time: '11:00 AM' },
-    enter: g => { g.sleep(g.f('did_nap') ? 7 : 5); g.meet('weisz'); },
+    enter: g => { g.sleep(g.f('did_nap') ? 7 : 5); g.meet('weisz'); g.money(-4); },
     text: g => `Your first college class is a hundred and twenty freshmen in a sloped lecture hall that smells like dry-erase marker. It's taught by a small, rumpled man in a corduroy jacket in August, with a beard like a startled bird's nest.
 
 DR. WEISZ: Philadelphia is not a city. It is a *stack* of cities. Lenape, Swedish, Quaker, industrial, ruined, renewed. They lie on top of one another like pages in a book someone keeps writing in without erasing. You are walking, every day, on top of all of them at once.
@@ -3283,7 +3312,7 @@ That's when the door at the top of the hall opens, and Jules comes in, four minu
 
 It's next to you.
 
-She looks at it for a long moment, as if it's personally arranged itself to inconvenience her. Then she comes down the steps and sits, and she smells like cedar, and she doesn't look at you.
+She looks at it for a long moment, as if it arranged itself there to inconvenience her. Then she comes down the steps and sits, and she smells like cedar, and she doesn't look at you.
 
 jules: Not a word.
 
@@ -3295,7 +3324,7 @@ jules: *Not a word*, Kearney.`,
         fx: g => { g.bond('jules', { affection: 1, tension: 1 }); g.flag('monday', 'hanky'); }, go: 'a4_mon_hanky' },
       { text: 'Lean over and whisper: "How\'s the hand?"', tag: 'Ask',
         fx: g => { g.bond('jules', { trust: 1 }); g.flag('monday', 'hand'); }, go: 'a4_mon_hand' },
-      { text: 'Whisper: "Bird\'s-nest guy is staring at me. Do I have something on my face? Sort of everywhere?"', tag: 'Banter',
+      { text: g => 'Whisper: "Bird\'s-nest guy is staring at me. Do I have something on my face?' + (g.f('door') === 'charm_miss' ? ' Sort of everywhere?' : '') + '"', tag: 'Banter',
         check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', label: 'Make her break', near: ['jules'], on: { strong: 'a4_mon_banter_strong', weak: 'a4_mon_banter_weak', miss: 'a4_mon_banter_miss' } },
         fx: g => g.flag('monday', 'banter') }
     ]
@@ -3311,7 +3340,7 @@ jules: Then why are you giving it back?
 
 sam: I'm not. I just wanted you to see I took care of it.
 
-She doesn't say anything. After a while, she slides it back across the desk to you with one finger, and she goes on not looking at you, and the tips of her ears go a very faint pink, and you will think about the tips of her ears for most of the semester.`,
+She doesn't say anything. After a while, she slides it back across the desk to you with one finger, and she goes on not looking at you.\n\njules: You ironed the crease the wrong way.\n\nShe says it to the lecture. It's the longest sentence she's said to you all day.`,
     next: 'a4_mon_after'
   },
   a4_mon_hand: {
@@ -3325,18 +3354,18 @@ jules: How's your nose?
 
 sam: Fine.
 
-jules: Simone says you were bleeding *before* you got to us. She says you came from the south. From Spring Garden.
+sam: And the… the window thing?
 
-She still isn't looking at you. She's looking at Dr. Weisz with total, attentive concentration, the way you'd look at the road during a fight in the car.
+jules: It was a window. It fell. I was lucky.
 
-jules: That's where the bus crashed.
+She says *lucky* like it's a word in a language she's decided not to learn. She's looking at Dr. Weisz with total, attentive concentration, the way you'd look at the road during a fight in the car.
 
 You don't say anything. Neither does she. Down at the front, Dr. Weisz writes **1876** on the board and circles it three times.`,
     next: 'a4_mon_after'
   },
   a4_mon_banter_strong: {
-    enter: g => g.bond('jules', { affection: 1, tension: 1, respect: 1 }),
-    text: `She doesn't look at you. She looks straight ahead at Dr. Weisz, who is now drawing a map of the city's original grid with the quiet intensity of a man drawing a treasure map.
+    enter: g => { g.bond('jules', { affection: 1, tension: 1, respect: 1 }); g.flag('weisz_name'); },
+    text: `She doesn't look at you. She looks straight ahead at Dr. Weisz, who is now drawing the city's original grid on the board like it's a treasure map.
 
 jules: You do have something on your face.
 
@@ -3350,7 +3379,7 @@ DR. WEISZ: Something amusing about the Quaker grid, Mr.…?
 
 sam: Kearney. No. Sorry.
 
-He looks at you for a beat too long again. Beside you, Jules is writing down every word of the lecture in beautiful handwriting, and the corner of her mouth is doing the thing. Third time. You're counting.`,
+He looks at you for a beat too long again. Beside you, Jules is writing down every word of the lecture in beautiful handwriting, and she underlines the word *grid* hard enough to tear the page, which you decide to take personally.`,
     next: 'a4_mon_after'
   },
   a4_mon_banter_weak: {
@@ -3360,7 +3389,7 @@ She says it without looking at you, and keeps writing. Fair. You walked into tha
     next: 'a4_mon_after'
   },
   a4_mon_banter_miss: {
-    enter: g => g.bond('jules', { tension: 1 }),
+    enter: g => g.bond('jules', { respect: -1 }),
     text: `jules: I said *not a word*.
 
 She shifts her whole body six degrees away from you, which in Pemberton is roughly equivalent to moving to a different state.`,
@@ -3368,9 +3397,9 @@ She shifts her whole body six degrees away from you, which in Pemberton is rough
   },
   a4_mon_after: {
     enter: g => g.know('weisz_strange', ['sam'], 'Dr. Weisz told the class the Corliss Engine stopped "for a heartbeat" in 1876. After class he told you your edges were blurry.'),
-    text: `After class, as the hall empties, Dr. Weisz is waiting at the bottom of the steps. Jules is already gone, up and out the door like a cat leaving a room it's bored of.
+    text: g => `After class, as the hall empties, Dr. Weisz is waiting at the bottom of the steps. Jules is already gone, up and out the door before the last word of the lecture lands.
 
-DR. WEISZ: Mr. Kearney. A moment.
+${g.f('weisz_name') ? 'DR. WEISZ: Mr. Kearney. A moment.' : 'DR. WEISZ: You. Fourth row. A moment.'}
 
 He looks at you the way an optometrist looks at an eye chart.
 
@@ -3384,7 +3413,7 @@ sam: …I was on a delivery.
 
 DR. WEISZ: Hm.
 
-He tilts his head one way, then the other, exactly like Jules did at the floor meeting, which you find extremely unsettling.
+He tilts his head one way, then the other, exactly the way Jules does, which you find extremely unsettling.
 
 DR. WEISZ: Your edges are blurry.
 
@@ -3400,12 +3429,12 @@ He picks up his battered briefcase and walks out, humming something, leaving you
     loc: 'WAWA · N. BROAD & CECIL B. MOORE',
     night: true,
     clock: { time: '9:48 PM' },
-    enter: g => { if (g.f('met_ciro')) g.money(14 * 4 + 18); },
+    enter: g => { if (g.f('met_ciro')) g.money(14 * 4 + 18); g.money(-7); },
     text: g => `After your shift at Ciro's${g.f('met_ciro') ? ' (four hours, eighteen in tips, and Ciro\'s assessment that you deliver "like a man who has seen God")' : ''}, you're at the Wawa on Broad, because there is no problem in the world a Wawa can't make briefly better.
 
 The Wawa on Broad at ten p.m. on the first night of classes is the most Philadelphia room on earth. Nursing students in scrubs. Two SEPTA drivers on break arguing about the Sixers. A guy in a full Gritty costume, head under his arm, buying a single banana. Freshmen in packs of six all holding hoagie tickets like lottery numbers. Somebody's grandmother paying for coffee entirely in nickels.
 
-You get a Shorti: Italian, extra oil, hots. It's the one thing in your life right now that makes total sense.
+You get a Shorti ($7): Italian, extra oil, hots. It's the one thing in your life right now that makes total sense.
 
 You're stepping out the door, unwrapping the end of it, when it happens: a grad student with a laptop bag is standing on the corner on her phone, and a kid in a black hoodie on a bike swings past and *rips* it out of her hand. He's off down Broad, fast, standing on the pedals, her phone in his fist.
 
@@ -3429,7 +3458,7 @@ And the world is right there at the edge of your attention, thin as a page, wait
   },
   a4_wawa_slip: {
     night: true,
-    enter: g => { g.flag('video'); g.heat('press', 2); g.recap('A nine-second video went viral. The internet calls you WAWA GUY.'); g.know('wawa_guy', ['sam'], 'A video of you at the Wawa on Broad went viral. The internet calls you WAWA GUY.'); },
+    enter: g => { g.flag('video'); g.money(-14); g.heat('press', 2); g.recap('A nine-second video went viral. The internet calls you WAWA GUY.'); g.know('wawa_guy', ['sam'], 'A video of you at the Wawa on Broad went viral. The internet calls you WAWA GUY.'); },
     text: `You step through.
 
 Broad Street stops. The bike is frozen thirty feet away with the kid standing on the pedals, hoodie flapping, mouth open in a grin. The grad student's hand is still reaching for where her phone used to be. Twelve people, twelve phones up, twelve little red RECORD dots, all of them pointed at the empty place where nothing has happened yet.
@@ -3511,7 +3540,7 @@ Ten people filmed it. In slow motion, your foot moves faster than the frame rate
   },
   a4_wawa_trip_fail: {
     night: true,
-    enter: g => { g.flag('wawa_lost'); g.injure({ id: 'sore_ankle', name: 'Twisted ankle', pen: 1, heal: 1 }); },
+    enter: g => { g.flag('wawa_lost'); g.injure({ id: 'sore_ankle', name: 'Twisted ankle', pen: 1, heal: 1, affects: ['reflex'] }); },
     text: `You stick your foot out. The front wheel hits your ankle at full speed and keeps going, and so does the kid, and so does the phone, and you go spinning backward through the Wawa doors into a rack of Tastykakes.
 
 You lie on the floor in a drift of Butterscotch Krimpets. A SEPTA driver looks down at you.
@@ -3524,15 +3553,15 @@ SEPTA DRIVER: That was brave, young man. That was very, very stupid. But it was 
     enter: g => { g.flag('wawa_lost'); g.know('let_thief_go', ['sam'], 'You stood still while a kid stole a grad student\'s phone at the Wawa. You could have stopped it.'); },
     text: `You don't move.
 
-It's the hardest thing you've ever done, harder than Saturday, harder than standing still at Geasey. Every part of you is screaming. But there are twelve phones up on that corner, and you're a kid in a Ciro's shirt, and if you go, everybody sees.
+You stand there and let it happen. Every part of you is screaming. But there are twelve phones up on that corner, and you're a kid in a Ciro's shirt, and if you go, everybody sees.
 
-You call 911 instead. You give them the description: black hoodie, bike, Phillies chain. You stay with the grad student while she cries on the curb about her thesis, and you buy her a coffee and a soft pretzel, and she tells you about her research (*urban heat islands*, which makes you laugh out loud, and she doesn't understand why).
+You call 911 instead. You give them the description: black hoodie, bike, Phillies chain. You stay with the grad student while she cries on the curb about her thesis, and you buy her a coffee and a soft pretzel, and she tells you about her research (*urban heat islands*), and you nod like a person who has never once been cold in August.
 
 The cops come forty minutes later and take a report. The phone is gone.
 
 You walk home. You feel sick. You feel like you swallowed something that's still alive.
 
-Something in you, deep down in the place where the cold lives, says that you did the right thing. Something else says that you're going to spend the rest of your life trying to figure out which of those two things is lying.`,
+Something in you, down where the cold lives, says you did the right thing. Something else says you'll spend the rest of your life finding out which of them is lying.`,
     next: 'a4_lounge'
   },
 
@@ -3542,19 +3571,19 @@ Something in you, deep down in the place where the cold lives, says that you did
     enter: g => { g.meet('dana'); },
     text: g => `The lounge TV is on the news. Half the floor is lying on the carpet so they can see it at the bolted-on angle. It's about the Hitch: Inquirer reporter Dana Fiorillo on the steps of the Halcyon building, sharp as a tack in a blazer, asking a Halcyon spokesman in a quarter-zip why the building had lights on when the whole of North Philly was dark. The spokesman says *"backup systems"* four times in ninety seconds.
 
-${g.f('video') ? 'And then, before the weather, a segment: **"Philly\'s Newest Mystery: WAWA GUY."** Nine seconds of phone footage from the corner of Broad and Cecil B. Moore. A blur. A thief. ' + (g.f('wawa') === 'slip' ? 'A fifteen-year-old riding into a bus shelter holding a hoagie he didn\'t buy.' : g.f('wawa') === 'trip' ? 'A foot that moves faster than the frame rate.' : 'A smear of motion holding a Shorti.') + ' It has four hundred thousand views. Philly Twitter has already made it a meme. It\'s been set to the *Rocky* theme. It\'s been set to *Gonna Fly Now*. It\'s been set to Gritty\'s goal song.\n\nThe anchor, chuckling: *"Whoever you are, Wawa Guy, Philadelphia salutes you. Please, call your mother."*\n\nThe whole lounge is screaming.\n\nsimone: WAWA GUY. *WAWA GUY*. That\'s a man who\'s never been told no by a hoagie in his life.' : 'Somebody\'s showing a video on their phone of a kid on Broad chasing a bike thief and losing, and the caption on it says **WAWA GUY (almost)**, and it has thirty thousand views, and Philly Twitter is being *mean* about it.\n\nsimone: Wawa Guy. Poor Wawa Guy. He tried. Bless his heart.'}
+${g.f('wawa') === 'chase' && g.f('wawa_lost') ? 'Somebody\'s showing a video on their phone of a kid on Broad chasing a bike thief and losing, and the caption on it says **WAWA GUY (almost)**, and it has thirty thousand views, and Philly Twitter is being *mean* about it. There\'s one half-second in the middle where the kid is impossibly fast. Nobody\'s talking about that part. Yet.\n\nsimone: Wawa Guy. Poor Wawa Guy. He tried. Bless his heart.' : g.f('video') ? 'And then, before the weather, a segment: **"Philly\'s Newest Mystery: WAWA GUY."** Nine seconds of phone footage from the corner of Broad and Cecil B. Moore. A blur. A thief. ' + (g.f('wawa') === 'slip' ? 'A fifteen-year-old riding into a bus shelter holding a hoagie he didn\'t buy.' : g.f('wawa') === 'trip' ? 'A foot that moves faster than the frame rate.' : 'A smear of motion holding a Shorti.') + ' It has four hundred thousand views. Philly Twitter has already made it a meme. It\'s been set to *Gonna Fly Now*. It\'s been set to *Fly, Eagles Fly*. It\'s been set to Gritty\'s goal song.\n\nThe anchor, chuckling: *"Whoever you are, Wawa Guy, Philadelphia salutes you. Please, call your mother."*\n\nThe whole lounge is screaming.\n\nsimone: WAWA GUY. Y\'all. Somebody got a superpower and used it to do a *bit*. That\'s a theater kid\'s soul in a pizza shirt. …Salvatore, you look pale.' : 'Somebody\'s showing a video of a kid on a bike snatching a grad student\'s phone outside the Wawa on Broad. Thirty thousand views.' + (g.f('wawa') === 'trip' ? ' At the very end, a guy in a Ciro\'s shirt flies backward into a rack of Tastykakes. That part has its own meme.' : '') + '\n\nsimone: Twelve people on that corner, and nobody did a thing. Philadelphia.'}
 
 ${g.f('nik_told') === 'told' ? 'Nik is next to you on the couch, completely rigid, staring straight ahead with the face of a man trying to keep a live bird in his mouth. When the video plays, he kicks you, hard, in the ankle.' : 'Nik is watching the video over and over on his phone, slowing it down, frame by frame, with an expression you don\'t love.'}
 
-Jules is on the far couch with a seltzer. She watches the video once. Then again. Then a third time on Simone's phone. She doesn't look at you. She very carefully doesn't look at you.`,
+${g.f('video') ? 'Jules is on the far couch with a seltzer. She watches the video once. Then again. Then a third time on Simone\'s phone. She doesn\'t look at you. She very carefully doesn\'t look at you.' : 'Jules is on the far couch with a seltzer, not watching the TV, watching the window, like she\'s waiting for something to fall out of the sky.'}`,
     choices: [
-      { text: '"Wawa Guy? That\'s the worst name I ever heard. Philly can do better."', tag: 'Mock it',
+      { text: '"Wawa Guy? That\'s the worst name I ever heard. Philly can do better."', tag: 'Mock it', if: g => g.f('video'),
         fx: g => { g.flag('lounge', 'mock'); }, go: 'a4_lounge_mock' },
-      { text: '"Probably some track guy. Those freaks are fast." Cover Story, nice and casual.',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Cover in the lounge', on: { strong: 'a4_lounge_lie_ok', weak: 'a4_lounge_lie_meh', miss: 'a4_lounge_lie_bad' } },
-        fx: g => g.flag('lounge', 'lie') },
-      { text: 'Say nothing. Get up. Go to bed before your face does anything.', tag: 'Leave',
-        fx: g => { g.flag('lounge', 'left'); g.heat('simone', 1); }, go: 'a4_lounge_left' }
+      { text: '"Probably some track guy. Those freaks are fast." Cover Story, nice and casual.', if: g => g.f('video'),
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['simone', 'jules'], label: 'Cover in the lounge', on: { strong: 'a4_lounge_lie_ok', weak: 'a4_lounge_lie_meh', miss: 'a4_lounge_lie_bad' } },
+        fx: (g, t) => { g.flag('lounge', 'lie'); if (g.f('nik_told') !== 'told') g.heat('nik', t === 'miss' ? 2 : 1); } },
+      { text: g => g.f('video') ? 'Say nothing. Get up. Go to bed before your face does anything.' : 'Say nothing. Go to bed. You\'ve had enough of Broad Street for one night.', tag: 'Leave',
+        fx: g => { g.flag('lounge', 'left'); if (g.f('video')) g.heat('simone', 1); }, go: 'a4_lounge_left' }
     ]
   },
   a4_lounge_mock: {
@@ -3585,7 +3614,7 @@ Nobody looks at your ear.`,
     next: 'tag_jules'
   },
   a4_lounge_lie_meh: {
-    enter: g => { g.heat('simone', 1); g.heat('jules', 1); },
+    
     text: `sam: Probably some track guy. Those freaks are fast.
 
 simone: Mmhm.
@@ -3596,22 +3625,22 @@ Jules is looking at the screen. Then, very briefly, at your hands.`,
     next: 'tag_jules'
   },
   a4_lounge_lie_bad: {
-    enter: g => { g.heat('simone', 2); g.heat('jules', 2); g.heat('nik', 1); },
+    
     text: `sam: Probably some track guy. Those freaks are fast. They're like, built different. Probably eats, like, a dozen raw eggs. Probably from, like, Jersey—
 
 jules: Your ear.
 
-You yank your hand down. The whole lounge laughs, because it's a running bit now, *Sam's ear*, and nobody but the three people who matter think about why.
+You yank your hand down. The whole lounge laughs, because it's a running bit now, *Sam's ear*, and only three people in the room wonder why.
 
 Simone stops laughing first.`,
     next: 'tag_jules'
   },
   a4_lounge_left: {
-    text: `You get up. You say *"night"* to nobody in particular. You walk down the hall to 9-14 with your face very carefully arranged, and you close the door, and you lean on it in the dark.
+    text: g => `You get up. You say *"night"* to nobody in particular. You walk down the hall to 9-14 with your face very carefully arranged, and you close the door, and you lean on it in the dark.
 
 Behind you, through the door, you can hear the lounge still laughing. You can hear somebody playing the video again.
 
-And you can hear Simone, not laughing, saying something low that you can't make out, and Jules answering her, just as low.`,
+${g.f('video') ? 'And you can hear Simone, not laughing,' : 'And you can hear Simone,'} saying something low that you can't make out, and Jules answering her, just as low.`,
     next: 'tag_jules'
   },
 
@@ -3620,11 +3649,11 @@ And you can hear Simone, not laughing, saying something low that you can't make 
     card: { kind: 'tag' },
     night: true,
     loc: 'CARDONE HALL · ROOM 9-11',
-    clock: { time: '1:14 AM' },
+    clock: { day: 'Tue', date: 'Aug 25', time: '1:14 AM' },
     enter: g => { g.know('jules_die_sixes', ['jules'], 'Jules\'s ivory die rolls nothing but sixes now.'); },
     text: `> NOT YOU. THE CAMERA.
 
-Room 9-11. Simone asleep on her stomach under a tapestry of Black theater legends, one arm hanging off the bed. The beverage center hums under the window. Its dent, if it has a dent, faces the wall.
+Room 9-11. Simone asleep on her stomach under a tapestry of Black theater legends, one arm hanging off the bed. The beverage center hums under the window. Its dent, if it has one, has been turned to face the wall.
 
 Jules is sitting at her desk in an oversized Episcopal Academy Crew sweatshirt. Callum's, you'd guess. She'd say it isn't. The desk lamp is on, angled low.
 
@@ -3644,9 +3673,9 @@ Her hand is shaking.
 
 She whispers, to nobody, so quietly it's barely a breath:
 
-jules: Okay.
+jules: One in three quadrillion.
 
-Then she closes her eyes and rolls it one more time, and this time she *wants* a one. She wants it like she's never wanted anything. She wants to lose, just once, to know she still can.
+Then she closes her eyes and rolls it one more time, and this time she *wants* a one. She wants to lose, just once, to know she still can.
 
 The die hits the desk, spins on one corner for a long, long time, and falls.
 
@@ -3660,12 +3689,12 @@ She doesn't turn off the lamp.`,
   tag_sam: {
     night: true,
     loc: 'N. BROAD STREET · OUTSIDE THE WAWA',
-    clock: { time: '1:40 AM' },
-    text: g => `You can't sleep. Of course you can't sleep.
+    clock: { day: 'Tue', date: 'Aug 25', time: '1:40 AM' },
+    text: g => `You can't sleep. Third night running.
 
-You've walked down to Broad, because Broad is where you go. The heat has finally broken. It's raining for real now, warm and steady, washing the whole city clean, steam rising off the sidewalks, the gutters running. You stand under the Wawa's awning in your ${g.f('jacket') ? 'Ciro\'s windbreaker' : 'hoodie'} with ${g.knows('carmen_medal') ? 'Carmen\'s medal around your neck, ' : ''}${g.knows('nonna_key') ? 'Nonna\'s key on its ribbon, ' : ''}Jules's handkerchief in your pocket, and a fresh Shorti you're not even hungry for.
+You've ${g.hurt('sore_ankle') ? 'limped' : 'walked'} down to Broad, because Broad is where you go. The heat has finally broken. It's raining for real now, warm and steady, washing the whole city clean, steam rising off the sidewalks, the gutters running. You stand under the Wawa's awning in your ${g.f('jacket') ? 'Ciro\'s windbreaker' : 'hoodie'} with ${g.knows('carmen_medal') ? 'Carmen\'s medal around your neck, ' : ''}${g.knows('nonna_key') ? 'Nonna\'s key on its ribbon, ' : ''}Jules's handkerchief in your pocket, and a fresh Shorti you're not even hungry for.
 
-You did it. Whatever it is, you did it. A kid named Jayden is alive. A grandmother named Carmen is alive. ${g.f('wawa') && !g.f('wawa_lost') ? 'A grad student has her thesis back. ' : ''}The internet has a name for you, and it's terrible, and some small, stupid, eighteen-year-old part of you is so proud you could throw up, like Ma said.
+You did it. Whatever it is, you did it. A kid named Jayden is alive. A grandmother named Carmen is alive. ${g.f('wawa') && !g.f('wawa_lost') ? 'A grad student has her thesis back. ' : ''}${g.f('video') ? 'The internet has a name for you, and it\'s terrible, and some' : 'Some'} small, stupid, eighteen-year-old part of you is so proud you could throw up, like Ma said.
 
 The light changes at Cecil B. Moore. The street empties.
 
@@ -3677,17 +3706,17 @@ He's looking at you.
 
 The streetlight catches his face. He's older: forty, forty-five. Gray at the temples. A scar runs from the corner of his left eye down into his jaw, white and old. He's looking at you the way you'd look at a photograph of someone who died.
 
-You know that face. You know that face from every mirror you've ever looked in.
+Something in his face snags on you, the way your own voice does on a recording: wrong, and yours.
 
 He raises his left hand, slowly, and puts one finger to his lips. *Shh.*
 
 The hand is missing a finger. The ring finger, gone at the knuckle.
 
-Then the 4 bus comes down Broad between you, a long bright wall of windows and light, rain sheeting off its roof.
+Then the 16 comes down Broad between you, a long bright wall of windows and light, rain sheeting off its roof.
 
 When it passes, he's gone.
 
-There's nothing there but the dead marquee and the rain. No footprints. No one running. Just the faintest smell, carried across six lanes of wet asphalt, of ozone and wet pennies.`,
+There's nothing there but the dead marquee and the rain. No one running. Just the faintest smell, carried across six lanes of Broad Street, of ozone and wet pennies.`,
     choices: [
       { text: 'Cross the street. Now. Find him.', tag: 'Chase',
         fx: g => { g.flag('tag', 'crossed'); g.hidden('revenant_drift', 0.2); }, go: 'tag_end' },
@@ -3727,7 +3756,7 @@ It doesn't change.
   const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html !== undefined) e.innerHTML = html; return e; };
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   const LS_KEY = 'eh_save_v1', LS_TRAIL = 'eh_trail_v1';
-  let S = null, TRAIL = [], DB = null, dbTimer = null, syncState = 'local', busy = false;
+  let S = null, TRAIL = [], DB = null, dbTimer = null, syncState = 'local', busy = false, playing = false, remoteNewer = null;
 
   /* ================= Persistence ================= */
   function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -3740,7 +3769,7 @@ It doesn't change.
     lsSet(LS_TRAIL, JSON.stringify(TRAIL));
     queueDb();
   }
-  function compact(st) { const c = EH.clone(st); delete c.epStart; return c; }
+  function compact(st) { return EH.clone(st); }
   function queueDb() {
     if (!DB) return;
     clearTimeout(dbTimer);
@@ -3754,7 +3783,7 @@ It doesn't change.
         state: compact(S), ep: S.ep, scene: S.scene, savedAt: new Date().toISOString(), engine: EH.version
       });
       setSync('ok');
-    } catch (e) { setSync('err'); }
+    } catch (e) { setSync(e && (e.code === 'invalid_argument' || e.code === 'not_granted') ? 'local' : 'err'); }
   }
   async function pushEpisodeDoc(id, summary) {
     if (!DB) return;
@@ -3775,15 +3804,19 @@ It doesn't change.
       if (snap && snap.exists) {
         const R = snap.data();
         if (R && R.state && (!S || (R.state.updated || 0) > (S.updated || 0) + 2000)) {
-          const keepStart = S && S.ep === R.state.ep ? S.epStart : null;
-          S = R.state; if (keepStart) S.epStart = keepStart;
-          if (!keepStart) TRAIL = [];
-          lsSet(LS_KEY, JSON.stringify(S)); lsSet(LS_TRAIL, JSON.stringify(TRAIL));
-          if (!$('.scene.cur') && !$('.tray-wrap')) renderTitle();
+          if (playing) { remoteNewer = R.state; toast('A newer save exists on another device. Return to the title screen to load it.'); }
+          else adoptRemote(R.state);
         }
       }
       setSync('ok');
     } catch (e) { setSync('err'); }
+  }
+  function adoptRemote(R) {
+    const sameScene = S && S.ep === R.ep && S.scene === R.scene;
+    S = R; remoteNewer = null;
+    if (!sameScene) TRAIL = [];
+    lsSet(LS_KEY, JSON.stringify(S)); lsSet(LS_TRAIL, JSON.stringify(TRAIL));
+    renderTitle();
   }
   function setSync(st) {
     syncState = st;
@@ -3859,10 +3892,10 @@ It doesn't change.
       '<div class="pool fo" title="Focus">Focus<span class="pips">' + pip(S.pools.focus, EH.maxPool(S, 'focus')) + '</span></div>' +
       '<div class="pool ne" title="Nerve">Nerve<span class="pips">' + pip(S.pools.nerve, EH.maxPool(S, 'nerve')) + '</span></div>' +
       '</div>' +
-      '<div class="clock">' + (S.clock.day ? '<b>' + esc(S.clock.day + ' ' + S.clock.date) + '</b>' + esc(S.clock.time) : '') + '<br><span id="sync" class="sync"></span></div>' +
+      '<div class="clock">' + (S.clock.day ? '<b>' + esc(S.clock.day + ' ' + S.clock.date) + '</b>' + esc(S.clock.time) : '') + (S.sleepDebt >= 3 ? ' · <span style="color:var(--bad)">Tired −' + Math.floor(S.sleepDebt / 3) + '</span>' : '') + (S.injuries.length ? ' · <span style="color:var(--bad)">Hurt</span>' : '') + '<br><span id="sync" class="sync"></span></div>' +
       '<div class="tools">' +
       '<button class="tbtn" data-tab="sheet">Sheet</button><button class="tbtn" data-tab="bonds">Bonds</button><button class="tbtn" data-tab="notes">Notes</button>' +
-      '<button class="tbtn" id="sndBtn" aria-pressed="' + (S.settings.sound ? 'true' : 'false') + '" title="Sound">' + (S.settings.sound ? 'Snd On' : 'Snd Off') + '</button>' +
+      '<button class="tbtn" id="sndBtn" aria-pressed="' + (S.settings.sound ? 'true' : 'false') + '" title="Sound">' + (S.settings.sound ? '♪ On' : '♪ Off') + '</button>' +
       '</div>';
     setSync(syncState);
     $('#toTitle').onclick = () => renderTitle();
@@ -3881,7 +3914,8 @@ It doesn't change.
 
   /* ================= Title screen ================= */
   function renderTitle() {
-    closeDrawer();
+    closeDrawer(); playing = false;
+    if (remoteNewer) { const R = remoteNewer; remoteNewer = null; adoptRemote(R); return; }
     $('#mast').hidden = true;
     const a = app(); a.innerHTML = '';
     const wrap = el('div', 'titlescreen');
@@ -3926,6 +3960,7 @@ It doesn't change.
   }
   function resume() {
     if (!S.ep) return newGame();
+    playing = true;
     if (S.done.includes(S.ep)) { return showEndCard(true); }
     if (S.settings.sound) Snd.startHum();
     buildStage();
@@ -3944,14 +3979,18 @@ It doesn't change.
   /* ================= Episodes ================= */
   function startEpisode(id) {
     const ep = EH.episodes[id];
-    S.ep = id; S.season = ep.season; S.scene = ep.start; S.epLog = []; S.epRolls = []; S.hubs = {};
-    S.pools.nerve = EH.maxPool(S, 'nerve');
+    playing = true;
+    const firstEp = !S.done.length && !S.ep;
+    S.ep = id; S.season = ep.season; S.scene = ep.start; S.epLog = []; S.epRolls = []; S.hubs = {}; S.hub = null; S.marked = {}; delete S.pending;
+    delete S.flags._failxp;
+    if (!firstEp) S.injuries = S.injuries.map(i => Object.assign({}, i, { heal: (i.heal || 1) - 1 })).filter(i => i.heal > 0);
+    S.pools.nerve = EH.maxPool(S, 'nerve') - (S.sleepDebt >= 6 ? 1 : 0);
     const snap = EH.clone(S); delete snap.epStart; S.epStart = snap;
     TRAIL = [];
     save();
     buildStage();
     const lines = previously(ep);
-    const go = () => { if (S.settings.sound) Snd.startHum(); goto(ep.start); };
+    const go = () => { if (!$('#log')) return; if (S.settings.sound) Snd.startHum(); goto(ep.start); };
     if (lines.length) playPreviously(lines, go); else go();
   }
   function previously(ep) {
@@ -3968,7 +4007,7 @@ It doesn't change.
     if (!sc) { console.error('Missing scene', id); toast('Missing scene: ' + id); return; }
     S.scene = id;
     if (sc.card && sc.card.kind === 'title') {
-      save();
+      S.scene = sc.next; save();
       playTitle(ep, () => { TRAIL.push('<div class="card cold"><span class="k">— Main Titles —</span></div>'); $('#log').appendChild(el('div', 'card cold', '<span class="k">— Main Titles —</span>')); goto(sc.next); });
       return;
     }
@@ -4027,6 +4066,10 @@ It doesn't change.
   /* ---------- choices ---------- */
   function lockReason(ch, g) {
     if (ch.lock) { const r = ch.lock(g); if (r) return r; }
+    if (ch.cost) {
+      if (ch.cost.cash && S.money.cash < ch.cost.cash) return 'Needs $' + ch.cost.cash + ' cash';
+      for (const p of ['stamina', 'focus', 'nerve']) if (ch.cost[p] && S.pools[p] < ch.cost[p]) return 'Needs ' + ch.cost[p] + ' ' + p;
+    }
     const n = ch.need; if (!n) { if (ch.slip) { if (!g.has('slip')) return 'You can\'t do that. Not yet.'; if (S.pools.focus < 2) return 'Needs 2 Focus'; } return null; }
     if (n.attr) for (const k in n.attr) if (S.attrs[k] < n.attr[k]) return 'Needs ' + EH.ATTR_NAMES[k] + ' ' + n.attr[k];
     if (n.skill) for (const k in n.skill) if ((S.skills[k] || 0) < n.skill[k]) return 'Needs ' + EH.SKILLS[k] + ' ' + n.skill[k];
@@ -4048,7 +4091,7 @@ It doesn't change.
       out.push('<span class="tag cost">' + esc(EH.ATTR_NAMES[c.attr] + (c.skill ? ' + ' + EH.SKILLS[c.skill] : '')) + ' ' + (calc.base >= 0 ? '+' : '') + calc.base + '</span>');
     } else {
       out.push('<span class="tag d20">d20 · ' + esc(EH.ATTR_NAMES[c.attr] + (c.skill ? ' + ' + EH.SKILLS[c.skill] : '')) + '</span>');
-      out.push('<span class="tag cost">+' + calc.base + ' vs DC ' + c.dc + '</span>');
+      out.push('<span class="tag cost">' + (calc.base >= 0 ? '+' : '') + calc.base + ' vs DC ' + c.dc + '</span>');
     }
     const p = EH.successChance(c, c.kind === 'pool' ? Math.max(1, calc.base) : calc.base);
     out.push('<span class="tag odds">≈' + Math.round(p * 100) + '%</span>');
@@ -4081,6 +4124,11 @@ It doesn't change.
       });
     }
     box.appendChild(wrap);
+    if (S.pending && S.pending.scene === id) {
+      const ch = (sc.choices || [])[S.pending.idx];
+      if (ch && ch.check) { const res = S.pending.res; setTimeout(() => choose(id, sc, ch, box, res), 0); }
+      else delete S.pending;
+    }
   }
   function finishScene(box, choiceText, then) {
     const c = $('.choices', box); if (c) c.remove();
@@ -4088,38 +4136,53 @@ It doesn't change.
     TRAIL.push(box.outerHTML.replace(' cur', ' past'));
     then();
   }
-  function choose(id, sc, ch, box) {
+  function choose(id, sc, ch, box, preset) {
     busy = true;
     const notes = []; const g = EH.api(S, notes);
     const txt = typeof ch.text === 'function' ? ch.text(g) : ch.text;
     const entry = { ep: S.ep, scene: id, choice: txt.replace(/<[^>]+>/g, ''), t: Date.now() };
     const c = $('.choices', box); if (c) c.remove();
     box.appendChild(el('div', 'choice-made', '▸ <b>' + EH.inline(txt) + '</b>'));
-    if (ch.cost) { if (ch.cost.cash) g.money(-ch.cost.cash); ['stamina', 'focus', 'nerve'].forEach(p => { if (ch.cost[p]) g.pool(p, -ch.cost[p]); }); }
-    if (ch.slip) { S.pools.focus = Math.max(0, S.pools.focus - 2); g.drift(1); g.mastery(2); Snd.play('whoosh'); }
+    if (!preset) {
+      if (ch.cost) { if (ch.cost.cash) g.money(-ch.cost.cash); ['stamina', 'focus', 'nerve'].forEach(p => { if (ch.cost[p]) g.pool(p, -ch.cost[p]); }); }
+      if (ch.slip) { S.pools.focus = Math.max(0, S.pools.focus - 2); g.drift(1); g.mastery(2); Snd.play('whoosh'); }
+    }
     const after = (target, res) => {
-      if (res) { entry.roll = { label: ch.check.label || '', kind: res.kind, dice: res.dice, tier: res.tier, nudged: !!res.nudged, rewound: !!res.rewound }; }
-      S.epLog.push(entry);
-      if (notes.length) box.appendChild(notesEl(notes));
-      TRAIL.push(box.outerHTML.replace(' cur', ' past'));
-      busy = false;
+      try {
+        if (res) entry.roll = { label: ch.check.label || '', kind: res.kind, dice: res.dice, tier: res.tier, nudged: !!res.nudged, rewound: !!res.rewound };
+        S.epLog.push(entry);
+        delete S.pending;
+        if (notes.length) box.appendChild(notesEl(notes));
+        TRAIL.push(box.outerHTML.replace(' cur', ' past'));
+      } finally { busy = false; }
       save();
       if (target === '@end') return showEndCard(false);
       goto(target);
     };
-    if (ch.check) {
-      openTray(ch.check, res => {
+    const resolve = res => {
+      try {
         g.last = res;
-        if (ch.check.skill) S.marked[ch.check.skill] = true;
-        box.appendChild(rollRec(ch.check, res));
+        const k = ch.check;
+        if (k.skill) S.marked[k.skill] = true;
+        box.appendChild(rollRec(k, res));
+        // Failing forward: a missed roll still teaches you something (max 2 XP per episode).
+        if (!EH.isGood(res.tier) && k.skill && (S.flags._failxp || 0) < 2) { S.flags._failxp = (S.flags._failxp || 0) + 1; g.xp(1); }
+        // Lies build Suspicion automatically when the check names who is being lied to.
+        if (k.liesTo) k.liesTo.forEach(w => g.heat(w, { strong: 1, weak: 2, miss: 3 }[res.tier] || 0));
         if (ch.fx) ch.fx(g, res.tier, res);
-        if (ch.check.fx && ch.check.fx[res.tier]) ch.check.fx[res.tier](g, res);
-        const target = EH.route(ch.check.on, res.tier) || ch.go;
-        S.epRolls.push({ ep: S.ep, scene: id, label: ch.check.label || '', kind: res.kind, dice: res.dice, tier: res.tier, nudged: !!res.nudged, rewound: !!res.rewound });
-        after(target, res);
-      });
+        if (k.fx && k.fx[res.tier]) k.fx[res.tier](g, res);
+        S.epRolls.push({ ep: S.ep, scene: id, label: k.label || '', kind: res.kind, dice: res.dice, tier: res.tier, mod: res.mod, s: res.s, pushes: res.pushes || null, nudged: !!res.nudged, rewound: !!res.rewound });
+        after(EH.route(k.on, res.tier) || ch.go, res);
+      } catch (e) { busy = false; console.error(e); toast('Something broke: ' + e.message); }
+    };
+    if (ch.check) {
+      if (preset) { resolve(preset); return; }
+      const idx = (sc.choices || []).indexOf(ch);
+      save();
+      openTray(ch.check, resolve, res => { S.pending = { scene: id, idx, res: EH.clone(res) }; save(); });
     } else {
-      if (ch.fx) ch.fx(g);
+      S.lastRoll = null;
+      try { if (ch.fx) ch.fx(g); } catch (e) { busy = false; console.error(e); toast('Something broke: ' + e.message); return; }
       after(typeof ch.go === 'function' ? ch.go(g) : ch.go);
     }
   }
@@ -4129,6 +4192,7 @@ It doesn't change.
       let cls = 'mini-die';
       if (res.gold && res.gold.includes(i)) cls += ' gold';
       else if (res.kind === 'pool') cls += v === 10 ? ' dbl' : v >= 7 ? ' hit' : v === 1 ? ' one' : '';
+      else if (res.kind === 'd20') cls += v === 20 ? ' dbl' : v === 1 ? ' one' : '';
       return '<span class="' + cls + '">' + v + '</span>';
     }).join('');
     const tot = res.kind === 'pool' ? res.s + ' succ.' : '= ' + res.total;
@@ -4177,45 +4241,55 @@ It doesn't change.
   }
 
   /* ================= Dice tray ================= */
-  function openTray(c, cb) {
+  function openTray(c, cb, onRolled) {
     const calc = EH.checkCalc(S, c);
     const g = EH.api(S);
-    const state = { push: false, burst: false };
+    const state = { push: false, burst: false, grit: false, focus: false };
     const wrap = el('div', 'tray-wrap'); wrap.setAttribute('role', 'dialog'); wrap.setAttribute('aria-modal', 'true');
     const kindLbl = c.kind === 'pool' ? 'd10 Pool · Difficulty ' + c.diff : c.kind === 'move' ? '2d6 Move · ' + (c.move || '') : 'd20 Check · DC ' + c.dc;
     wrap.innerHTML = '<div class="tray"><div class="hd"><span class="lbl">' + esc(c.label || 'Roll') + '</span><span class="kind">' + esc(kindLbl) + '</span></div><div class="bd"><div class="calc" id="calc"></div><div id="oddsBox"></div><div class="pushes" id="pushes"></div><div class="dicefield" id="field" aria-live="polite"></div><div id="verdict"></div></div><div class="ft" id="tft"></div></div>';
     document.body.appendChild(wrap);
     const mod = () => {
       let m = calc.base;
-      if (state.push) m += c.kind === 'pool' ? 1 : c.kind === 'move' ? 1 : 2;
+      if (state.push) m += c.kind === 'd20' ? 2 : 1;
       if (state.burst) m += 2;
+      if (state.focus) m += 2;
       return c.kind === 'pool' ? Math.max(1, m) : m;
     };
     const drawCalc = () => {
       const rows = calc.rows.slice();
       if (state.push) rows.push(['Push (1 Nerve)', c.kind === 'd20' ? 2 : 1]);
       if (state.burst) rows.push(['Burst (1 Stamina)', 2]);
-      const unit = c.kind === 'pool' ? ' dice' : '';
+      if (state.focus) rows.push(['Concentrate (1 Focus)', 2]);
       $('#calc', wrap).innerHTML = rows.map(r => '<div class="r"><span>' + esc(r[0]) + '</span><span class="' + (r[1] < 0 ? 'neg' : 'pos') + '">' + (r[1] >= 0 ? '+' : '') + r[1] + '</span></div>').join('') +
-        '<div class="r tot"><span>' + (c.kind === 'pool' ? 'Dice' : 'Modifier') + '</span><span>' + (c.kind === 'pool' ? mod() + unit : (mod() >= 0 ? '+' : '') + mod()) + '</span></div>';
+        (state.grit ? '<div class="r"><span>Dig Deep (1 Stamina)</span><span class="pos">reroll 1s</span></div>' : '') +
+        '<div class="r tot"><span>' + (c.kind === 'pool' ? 'Dice' : 'Modifier') + '</span><span>' + (c.kind === 'pool' ? mod() + ' dice' : (mod() >= 0 ? '+' : '') + mod()) + '</span></div>';
       const o = EH.odds(c, mod());
       const pc = v => Math.round(v * 100);
       let bar, leg;
       if (c.kind === 'move') { bar = '<span class="o-succ" style="width:' + pc(o.success) + '%"></span><span class="o-part" style="width:' + pc(o.partial) + '%"></span>'; leg = '<span><i style="background:var(--cyan)"></i>Strong ' + pc(o.success) + '%</span><span><i style="background:var(--yellow)"></i>Weak ' + pc(o.partial) + '%</span><span><i></i>Miss ' + pc(o.fail) + '%</span>'; }
       else if (c.kind === 'pool') { bar = '<span class="o-crit" style="width:' + pc(o.crit) + '%"></span><span class="o-succ" style="width:' + pc(o.success) + '%"></span><span class="o-part" style="width:' + pc(o.partial) + '%"></span>'; leg = '<span><i style="background:var(--magenta)"></i>Crit ' + pc(o.crit) + '%</span><span><i style="background:var(--cyan)"></i>Success ' + pc(o.success) + '%</span><span><i style="background:var(--yellow)"></i>Partial ' + pc(o.partial) + '%</span><span><i></i>Fail ' + pc(o.fail) + '%</span>'; }
       else { bar = '<span class="o-crit" style="width:' + pc(o.crit) + '%"></span><span class="o-succ" style="width:' + pc(o.success) + '%"></span>'; leg = '<span><i style="background:var(--cyan)"></i>Pass ' + pc(o.crit + o.success) + '%</span><span><i></i>Fail ' + pc(o.fail) + '%</span>'; }
-      $('#oddsBox', wrap).innerHTML = '<div class="oddsbar">' + bar + '</div><div class="oddsleg">' + leg + '</div>';
+      $('#oddsBox', wrap).innerHTML = '<div class="oddsbar">' + bar + '</div><div class="oddsleg">' + leg + (c.forceRewind ? '<span>· something else may happen</span>' : '') + '</div>';
     };
     const pushes = $('#pushes', wrap);
-    const mkPush = (key, title, sub, can) => {
-      const b = el('button', 'push', esc(title) + '<small>' + esc(sub) + '</small>'); b.setAttribute('aria-pressed', 'false');
-      if (!can) b.disabled = true;
-      b.onclick = () => { state[key] = !state[key]; b.setAttribute('aria-pressed', state[key] ? 'true' : 'false'); drawCalc(); };
-      pushes.appendChild(b);
+    const keys = { push: 'nerve', burst: 'stamina', grit: 'stamina', focus: 'focus' };
+    const btns = {};
+    const canAfford = () => { const need = { stamina: 0, focus: 0, nerve: 0 }; Object.keys(state).forEach(k => { if (state[k]) need[keys[k]]++; }); return need; };
+    const refresh = () => {
+      const need = canAfford();
+      Object.keys(btns).forEach(k => { const p = keys[k]; btns[k].disabled = !state[k] && S.pools[p] < need[p] + 1; });
     };
-    mkPush('push', 'Push', 'Spend 1 Nerve · ' + (c.kind === 'pool' ? '+1 die' : c.kind === 'move' ? '+1' : '+2'), S.pools.nerve >= 1);
-    if (c.kind === 'pool' && c.power && g.has('burst')) mkPush('burst', 'Burst', 'Spend 1 Stamina · +2 dice', S.pools.stamina >= 1);
-    drawCalc();
+    const mkPush = (key, title, sub) => {
+      const b = el('button', 'push', esc(title) + '<small>' + esc(sub) + '</small>'); b.setAttribute('aria-pressed', 'false');
+      b.onclick = () => { state[key] = !state[key]; b.setAttribute('aria-pressed', state[key] ? 'true' : 'false'); drawCalc(); refresh(); };
+      btns[key] = b; pushes.appendChild(b);
+    };
+    mkPush('push', 'Push', 'Spend 1 Nerve · ' + (c.kind === 'pool' ? '+1 die' : c.kind === 'move' ? '+1' : '+2'));
+    if (c.kind === 'pool' && c.power && g.has('burst')) mkPush('burst', 'Burst', 'Spend 1 Stamina · +2 dice');
+    if (c.kind === 'pool' && (c.attr === 'body' || c.attr === 'reflex')) mkPush('grit', 'Dig Deep', 'Spend 1 Stamina · reroll every 1');
+    if (c.kind === 'd20') mkPush('focus', 'Concentrate', 'Spend 1 Focus · +2');
+    refresh(); drawCalc();
     const ft = $('#tft', wrap);
     const rollBtn = el('button', 'btn primary', 'Roll'); ft.appendChild(rollBtn);
     rollBtn.focus();
@@ -4223,9 +4297,13 @@ It doesn't change.
       rollBtn.remove(); pushes.querySelectorAll('button').forEach(b => b.disabled = true);
       if (state.push) S.pools.nerve -= 1;
       if (state.burst) { S.pools.stamina -= 1; EH.api(S).mastery(1); }
+      if (state.grit) S.pools.stamina -= 1;
+      if (state.focus) S.pools.focus -= 1;
       const m = mod();
-      let res = EH.roll(c, m); res.pushes = { push: state.push, burst: state.burst };
-      animateDice(wrap, c, res, () => afterRoll(wrap, c, res, m, cb));
+      const res = EH.roll(c, m); res.pushes = { push: state.push, burst: state.burst, grit: state.grit, focus: state.focus };
+      if (state.grit) { res.dice = res.dice.map(v => v === 1 ? 1 + Math.floor(Math.random() * 10) : v); const p = res.pushes; Object.assign(res, EH.scorePool(res.dice, c.diff)); res.pushes = p; }
+      if (onRolled) onRolled(res);
+      animateDice(wrap, c, res, () => afterRoll(wrap, c, res, m, cb, onRolled));
     };
   }
   function dieCls(c, res, v, i) {
@@ -4252,23 +4330,31 @@ It doesn't change.
       }
     }, 70);
   }
-  function showVerdict(wrap, c, res) {
+  function showVerdict(wrap, c, res, quiet) {
     const v = $('#verdict', wrap);
     const sm = res.kind === 'pool' ? res.s + ' success' + (res.s === 1 ? '' : 'es') + ' vs ' + res.diff : 'Total ' + res.total + (res.kind === 'd20' ? ' vs DC ' + res.dc : '');
     v.innerHTML = '<div class="verdict"><div class="big ' + res.tier + '">' + esc(EH.TIER_NAMES[res.tier]) + '</div><div class="sm">' + esc(sm) + '</div></div>';
-    Snd.play(EH.isGood(res.tier) ? 'success' : 'fail');
+    if (!quiet) Snd.play(EH.isGood(res.tier) ? 'success' : 'fail');
   }
-  function afterRoll(wrap, c, res, m, cb) {
-    const g = EH.api(S);
+  function afterRoll(wrap, c, res, m, cb, onRolled) {
     const nudged = EH.tryNudge(S, c, res);
+    if (onRolled) onRolled(res);
     const field = $('#field', wrap);
+    const mustForce = () => c.forceRewind && c.kind === 'pool' && !res.rewound && !EH.isClean(res.tier);
+    const forced = () => {
+      showVerdict(wrap, c, res, true);
+      setTimeout(() => {
+        S.drift = Math.min(10, S.drift + 2); S.hidden.revenant_drift += 1;
+        doRewind(wrap, c, res, m + 2, cb, true, onRolled);
+      }, 1100);
+    };
     const finish = () => {
       showVerdict(wrap, c, res);
       const ft = $('#tft', wrap); ft.innerHTML = '';
-      const canRewind = c.kind === 'pool' && !res.rewound && !EH.isClean(res.tier) && g.has('rewind') && S.pools.focus >= 3 && !c.noRewind;
+      const canRewind = c.kind === 'pool' && !res.rewound && !EH.isClean(res.tier) && EH.api(S).has('rewind') && S.pools.focus >= 3 && !c.noRewind;
       if (canRewind) {
         const rb = el('button', 'btn', '◀◀ Rewind · 3 Focus · +2 Drift');
-        rb.onclick = () => { S.pools.focus -= 3; EH.api(S).drift(2); doRewind(wrap, c, res, m, 0, cb); };
+        rb.onclick = () => { S.pools.focus -= 3; EH.api(S).drift(2); doRewind(wrap, c, res, m, cb, false, onRolled); };
         ft.appendChild(rb);
       }
       const ok = el('button', 'btn primary', 'Continue');
@@ -4279,26 +4365,23 @@ It doesn't change.
       setTimeout(() => {
         res.gold.forEach(i => { const n = field.children[i]; n.className = dieCls(c, res, res.dice[i], i); n.textContent = res.dice[i]; n.title = '?'; });
         Snd.play('gold');
-        finish();
+        mustForce() ? forced() : finish();
       }, 650);
-    } else if (c.forceRewind && c.kind === 'pool' && !EH.isClean(res.tier) && !res.rewound) {
-      showVerdict(wrap, c, res);
-      setTimeout(() => {
-        S.drift = Math.min(10, S.drift + 2); S.hidden.revenant_drift += 1;
-        doRewind(wrap, c, res, m + 2, 1, cb, true);
-      }, 1100);
-    } else finish();
+    } else if (mustForce()) forced();
+    else finish();
   }
-  function doRewind(wrap, c, res, m, extra, cb, forced) {
+  function doRewind(wrap, c, res, m, cb, forced, onRolled) {
     const tray = $('.tray', wrap);
     tray.classList.add('rewinding'); Snd.play('rewind');
     $('#verdict', wrap).innerHTML = '<div class="rewtext">◀◀ ' + (forced ? 'NO. AGAIN.' : 'REWIND') + '</div>';
     $('#tft', wrap).innerHTML = '';
     setTimeout(() => {
       tray.classList.remove('rewinding');
-      const r2 = EH.roll(c, m); r2.rewound = true; r2.forced = !!forced;
+      const p = res.pushes;
+      const r2 = EH.roll(c, m); r2.rewound = true; r2.forced = !!forced; r2.pushes = p;
       Object.keys(res).forEach(k => delete res[k]); Object.assign(res, r2);
-      animateDice(wrap, c, res, () => afterRoll(wrap, c, res, m, cb));
+      if (onRolled) onRolled(res);
+      animateDice(wrap, c, res, () => afterRoll(wrap, c, res, m, cb, onRolled));
     }, 1150);
   }
 
@@ -4343,7 +4426,7 @@ It doesn't change.
       const d = { trust: b.trust - a.trust, affection: b.affection - a.affection, respect: b.respect - a.respect, tension: b.tension - a.tension };
       if (Object.values(d).some(v => v)) out.bonds.push({ id, d, now: { trust: b.trust, affection: b.affection, respect: b.respect, tension: b.tension } });
     });
-    out.crits = S.epRolls.filter(r => r.tier === 'crit' || r.tier === 'strong').length;
+    out.crits = S.epRolls.filter(r => EH.isClean(r.tier)).length;
     out.fails = S.epRolls.filter(r => !EH.isGood(r.tier)).length;
     return out;
   }
@@ -4352,12 +4435,12 @@ It doesn't change.
     if (!revisit) {
       const g = EH.api(S);
       if (!S.done.includes(S.ep)) {
-        g.xp(ep.xp || 3);
+        g.xp(ep.xp ?? 3);
         if (ep.onEnd) ep.onEnd(g);
         const sum = summarize();
         S.eps[S.ep] = { title: ep.title, finished: new Date().toISOString(), summary: sum };
         S.done.push(S.ep);
-        save(); pushDb(); pushEpisodeDoc(S.ep, sum);
+        clearTimeout(dbTimer); save(); clearTimeout(dbTimer); pushDb(); pushEpisodeDoc(S.ep, sum);
       }
     }
     closeDrawer();
@@ -4369,7 +4452,7 @@ It doesn't change.
     box.innerHTML = '<div class="card"><div class="k">' + esc(epCode(ep)) + ' · End of Episode</div><div class="h">' + esc(ep.title) + '</div></div>' +
       '<div class="stat-row">' +
       '<div class="stat"><div class="n">Choices made</div><div class="v">' + sum.choices + '</div></div>' +
-      '<div class="stat"><div class="n">Rolls · clean hits</div><div class="v">' + sum.rolls + ' · ' + sum.crits + '</div></div>' +
+      '<div class="stat"><div class="n">Rolls · successes</div><div class="v">' + sum.rolls + ' · ' + sum.crits + '</div></div>' +
       '<div class="stat"><div class="n">Net money</div><div class="v">' + (sum.money < 0 ? '−$' + (-sum.money) : '+$' + sum.money) + '</div></div>' +
       '<div class="stat"><div class="n">XP to spend</div><div class="v">' + (S.xp) + '</div></div></div>';
     st.appendChild(box);
@@ -4533,6 +4616,8 @@ It doesn't change.
 
   /* ================= Boot ================= */
   function start(data) {
+    document.querySelectorAll('.tray-wrap,.overlay,.drawer-wrap').forEach(n => n.remove());
+    busy = false;
     const raw = (data && data.S) ? null : lsGet(LS_KEY);
     if (data && data.S) { S = data.S; TRAIL = data.TRAIL || []; }
     else if (raw) { try { S = JSON.parse(raw); TRAIL = JSON.parse(lsGet(LS_TRAIL) || '[]'); } catch (e) { S = null; TRAIL = []; } }

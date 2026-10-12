@@ -12,23 +12,25 @@ EH.episode({
       night: true,
       loc: 'BROAD & SPRING GARDEN',
       clock: { day: 'Sat', date: 'Aug 22', time: '11:51 PM' },
-      text: `The order slip in your pocket says **500 N. BROAD · LOADING DOCK · ASK FOR MARCO**. The pizza bag on your back is still warm. The heat on Broad Street at ten to midnight sits on your chest like a cat that won't move. It started drizzling around eleven, which didn't help. It just made the whole city smell like a hot sidewalk somebody had hosed down.
+      text: `The order slip in your pocket says **500 N. BROAD · LOADING DOCK · ASK FOR MARCO**. The pizza bag on your back is empty but still warm. The heat on Broad Street at ten to midnight sits on your chest like a cat that won't move. It started drizzling around eleven, which didn't help. It just made the whole city smell like a hot sidewalk somebody had hosed down.
 
-You're stopped at the light at Spring Garden with one foot down and the e-bike humming under you. Northbound, a SEPTA bus, the 16, is coming down Broad way too fast on wet asphalt. In the crosswalk there's a little boy in a Spider-Man backpack holding his grandmother's hand. The grandmother is looking at her phone. You have exactly enough time to think *oh, no*.
+You're stopped at the light at Spring Garden with one foot down and the e-bike humming under you. Northbound, a SEPTA bus, the 16, is coming up Broad way too fast on wet asphalt. In the crosswalk there's a little boy in a Spider-Man backpack holding his grandmother's hand. The grandmother is looking at her phone. You have exactly enough time to think *oh, no*.
 
 Then the light comes.
 
-It isn't white. It's every color at once, the colors you see on the inside of your eyelids when you rub them too hard. It comes from everywhere at once. Then it comes from nowhere.
+It isn't white. It's every color, the ones you see on the inside of your eyelids when you rub them too hard. It comes from everywhere at once. Then it comes from nowhere.
 
 The sound stops.
 
 It doesn't go quiet. It *stops*: the bus engine, the cicadas in the vacant lot, the hum of the bike, the bass from somebody's car three blocks north. It's like somebody pulled the plug on Philadelphia.
 
-The rain hangs in the air. It isn't falling. It's *hanging*, every drop a little bead of streetlight, a whole curtain of them between you and the bus. The bus isn't moving. The boy isn't moving. The grandmother's thumb is frozen in the middle of a scroll.
+The rain hangs in the air. It isn't falling. It's *hanging*, every drop a little bead of streetlight, a whole curtain of them between you and the bus. The bus is barely moving. The boy isn't moving. The grandmother's thumb is frozen in the middle of a scroll.
 
-It's cold, *so* cold. Your breath comes out white in August. Frost is crawling up the handlebars of your bike like it's late for something.
+And it's cold. Your breath comes out white. In August. Frost is crawling up the handlebars of your bike like it's late for something.
 
 You're the only thing on Broad Street that's moving.
+
+And you have the strangest feeling, standing in all that silence, that somewhere very far away, somebody just leaned forward in their seat.
 
 Your body figures out what to do before you do. It always has. Before Temple, before tonight, before any of this, you were the kind of kid who—`,
       choices: [
@@ -58,7 +60,7 @@ Your body figures out what to do before you do. It always has. Before Temple, be
         caretaker: 'It\'s three in the morning on Mifflin Street, Nonna\'s voice through the wall, and your feet hitting the floor before you\'re awake. You\'re off the bike before you decide to be.'
       }[g.f('origin')]}
 
-The rain that isn't falling bursts cold against your face, drop after drop, like running through a bead curtain made of ice. The bus is still coming, slow as a glacier, slow as a thought. The boy's sneaker is lifted halfway through a step.
+The rain that isn't falling bursts cold against your face, drop after drop, like running through a bead curtain made of ice. The bus is still coming. Slow as a glacier, but coming. The boy's sneaker is lifted halfway through a step.
 
 You realize, with a feeling like missing a stair in the dark, that you might actually make it.
 
@@ -73,7 +75,7 @@ You realize, with a feeling like missing a stair in the dark, that you might act
       card: { kind: 'act', label: 'Act One', title: 'Move-In' },
       loc: 'LIBERTY CAB #2207 · NORTHBOUND ON BROAD',
       clock: { day: 'Thu', date: 'Aug 20', time: '9:12 AM' },
-      enter: g => { g.meet('rosa'); g.meet('frank'); g.meet('gigi'); g.bond('gigi', { affection: 3, trust: 2 }); g.bond('rosa', { affection: 3 }); g.bond('frank', { affection: 2 }); },
+      enter: g => { g.know('nonna_jacket', ['sam', 'nonna'], 'Nonna: "Saturday, near midnight, the clocks. Wear a jacket."'); g.meet('rosa'); g.meet('frank'); g.meet('gigi'); g.bond('gigi', { affection: 3, trust: 2 }); g.bond('rosa', { affection: 3 }); g.bond('frank', { affection: 2 }); },
       text: `Your father's cab smells like pine tree air freshener and the ghost of ten thousand fares. He's driving with the meter off, which in Frank Kearney's language is roughly equivalent to weeping openly.
 
 Ma is in the front seat with a foil tray of lasagna on her lap, the size of a manhole cover. It's for "the RA," a person none of you have met. Ma believes in getting to the authorities early.
@@ -95,7 +97,7 @@ TXT gigi: SAMMMMMM
 
 City Hall slides past, William Penn up top in his hat, looking down at the whole city like he's disappointed in it. Then Broad Street opens up north: the Divine Lorraine with its sign lit even in daylight, the rowhouses, the vacant lots, the new glass buildings that went up so fast nobody's sure who lives in them.
 
-Three miles. That's all it is from Mifflin Street to Temple. You've been making the trip your whole life, for Owls games with Pop, Mikey's graduation, the time Vinnie's cousin got stabbed and everybody went to Temple Hospital to sit in the waiting room in solidarity. Three miles, and somehow it feels like you're being launched into space.
+Three miles. That's all it is from Mifflin Street to Temple. You've been making the trip your whole life, for Owls games with Pop, Mikey's graduation, the time Vinnie's cousin got stabbed and everybody went to Temple Hospital to sit in the waiting room in solidarity. Three miles, and somehow it feels like the moon.
 
 This morning on the stoop, Nonna held your face in both hands the way she does, like she's checking a melon. She said: *"Salvatò. Saturday, you wear a jacket."*
 
@@ -114,7 +116,7 @@ Pop's phone buzzes in the cupholder. UNKNOWN NUMBER. He declines it without look
 Gigi has stopped texting and is staring out the window with her arms crossed, which means she's about to cry and would rather die.`,
       choices: [
         { text: 'Bump Gigi\'s shoulder. "Sunday dinners. Every week. I\'ll be there. Swear on Nonna."', tag: 'A promise',
-          fx: g => { g.bond('gigi', { trust: 2, affection: 1 }); g.flag('promise_sundays'); g.know('promise_sundays', ['sam', 'gigi'], 'You swore to Gigi you\'d come home for Sunday dinner every week.'); }, go: 'a1_cab_gigi' },
+          fx: g => { g.bond('gigi', { trust: 2, affection: 1 }); g.flag('promise_sundays'); g.know('promise_sundays', ['sam', 'gigi', 'rosa', 'frank'], 'You swore to Gigi you\'d come home for Sunday dinner every week.'); }, go: 'a1_cab_gigi' },
         { text: '"Everybody relax. I\'m going three miles. Mikey went to *Afghanistan*."', tag: 'Deflect',
           fx: g => { g.bond('rosa', { tension: 1 }); g.bond('gigi', { affection: -1 }); g.flag('cab_joke'); }, go: 'a1_cab_joke' },
         { text: 'Watch Pop. The phone. The jaw. Something\'s up with him.',
@@ -209,7 +211,7 @@ You're on nine. You've got young knees, a hamper, two duffels, and a lamp with a
 
 That's when you see the minifridge.
 
-A black Range Rover is pulled in behind Pop's cab, nose to bumper, like a panther behind a cat. An older man in a gray suit, sixties, white-haired, built like he used to row in college sometime during the Eisenhower administration, is wrestling a black minifridge out of the back. It's the nice kind with a glass door. He gets it to the curb, straightens, and puts one hand to his lower back with a wince you know intimately, because it's your father's wince.
+A black Range Rover is pulled in behind Pop's cab, nose to bumper, like it's waiting for the cab to apologize. An older man in a gray suit, sixties, white-haired, built like he used to row in college sometime during the Eisenhower administration, is wrestling a black minifridge out of the back. It's the nice kind with a glass door. He gets it to the curb, straightens, and puts one hand to his lower back with a wince you know intimately, because it's your father's wince.
 
 Standing beside him is a girl your age. White sneakers that have never touched a Philadelphia puddle. Hair up in the kind of messy bun that took forty minutes. A phone to her ear, and a voice like something poured carefully out of a cut-glass decanter:
 
@@ -287,7 +289,7 @@ jules[FRIDGE GIRL]: What floor?
 
 sam: Nine.
 
-jules[FRIDGE GIRL]: Of course it is.`,
+jules[FRIDGE GIRL]: It would be.`,
       next: 'a1_stairs'
     },
     a1_fridge_walk: {
@@ -311,13 +313,13 @@ sam: I'm not talking to you. Sir?
 
 MR. ABERNATHY: …I would be grateful, young man.
 
-The girl looks at you like you've just personally taken something from her. You won't figure out for a long time that you did.
+The girl looks at you like you've just taken something from her. You won't figure out for a long time that you did.
 
 jules[FRIDGE GIRL]: What floor?
 
 sam: Nine.
 
-jules[FRIDGE GIRL]: Of *course* it is.`,
+jules[FRIDGE GIRL]: It would be.`,
       next: 'a1_stairs'
     },
 
@@ -340,15 +342,15 @@ jules[FRIDGE GIRL]: About four hundred dollars.
 The stairwell is hot as an oven. Somebody on six has propped their door open and is blasting Meek Mill. Somebody on seven is crying on the phone. Somebody on eight is crying on the phone *and* blasting Meek Mill, a real Philadelphia combo.`,
       choices: [
         { text: 'Take the stairs at a dead sprint. Show her.',
-          check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 3, label: 'Nine flights, sixty pounds', on: { crit: 'a1_stairs_crit', success: 'a1_stairs_win', partial: 'a1_stairs_partial', fail: 'a1_stairs_fail' } },
+          check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 3, near: ['jules'], label: 'Nine flights, sixty pounds', on: { crit: 'a1_stairs_crit', success: 'a1_stairs_win', partial: 'a1_stairs_partial', fail: 'a1_stairs_fail' } },
           fx: g => g.flag('stairs_showoff') },
         { text: 'Steady pace. Breathe. Don\'t die.',
-          check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 2, label: 'Nine flights, sixty pounds', on: { crit: 'a1_stairs_crit', success: 'a1_stairs_win', partial: 'a1_stairs_partial', fail: 'a1_stairs_fail' } } }
+          check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 2, near: ['jules'], label: 'Nine flights, sixty pounds', on: { crit: 'a1_stairs_crit', success: 'a1_stairs_win', partial: 'a1_stairs_partial', fail: 'a1_stairs_fail' } } }
       ]
     },
     a1_stairs_crit: {
       enter: g => { g.bond('jules', { respect: 2 }); g.flag('stairs_result', 'crit'); },
-      text: `Something kicks in around the fourth floor, some kind of second wind, the shortstop-on-a-double-play feeling. You stop breathing like a dying accordion and start *climbing*. Five. Six (Meek Mill). Seven (sobbing). Eight (both). You hit nine and set the fridge down in the hallway like it's a carton of eggs, and you turn around.
+      text: `Something kicks in around the fourth floor, some kind of second wind, some kind of second wind. You stop breathing like a dying accordion and start *climbing*. Five. Six (Meek Mill). Seven (sobbing). Eight (both). You hit nine and set the fridge down in the hallway like it's a carton of eggs, and you turn around.
 
 She comes around the landing ten full seconds later, holding your lamp, and stops.
 
@@ -371,11 +373,11 @@ sam: Thank you.
 
 jules[FRIDGE GIRL]: It wasn't a compliment.
 
-sam: I know. I'm from South Philly. That's how we say thank you to insults.`,
+sam: I know. I'm from South Philly. We say thank you to insults.`,
       next: 'a1_door'
     },
     a1_stairs_partial: {
-      enter: g => { g.pool('stamina', -1); g.flag('stairs_result', 'partial'); g.bond('jules', { tension: 1 }); },
+      enter: g => { g.pool('stamina', -1); g.flag('stairs_result', 'partial'); g.bond('jules', { respect: -1 }); },
       text: `Seventh-floor landing. Your arms have stopped being arms and become two long bags of hot sand. You set the fridge down. Just for a second. Just to readjust.
 
 She stops two steps below you and looks at the fridge, then at you.
@@ -396,10 +398,10 @@ At the top, she lets go first. She doesn't say *you're welcome*. Somehow that's 
       next: 'a1_door'
     },
     a1_stairs_fail: {
-      enter: g => { g.pool('stamina', -2); g.flag('stairs_result', 'fail'); g.flag('fridge_dented'); g.bond('jules', { tension: 1, respect: -1 }); },
+      enter: g => { g.pool('stamina', -2); g.flag('stairs_result', 'fail'); g.flag('fridge_dented'); g.bond('jules', { respect: -1 }); },
       text: `Sixth floor. Meek Mill is going *dreams and nightmares*, your grip goes, and the beverage center goes with it.
 
-It doesn't fall far, maybe eight inches. But eight inches of glass-door minifridge onto a concrete step makes a sound like a car accident in a church. Somewhere above you, the crying girl on seven stops crying to listen.
+It doesn't fall far, maybe eight inches. But eight inches of glass-door minifridge onto a concrete step makes a sound like a car accident. Somewhere above you, the crying girl on seven stops crying to listen.
 
 There's a dent now: a small, perfect crescent in the stainless-steel corner. It looks exactly like a frown.
 
@@ -422,7 +424,7 @@ You make it to nine on pure Kearney spite. That's a renewable resource.`,
     a1_door: {
       loc: 'CARDONE HALL · 9TH FLOOR',
       clock: { time: '10:05 AM' },
-      text: g => `The ninth floor smells like fresh paint over old paint over something that happened in 1983. Down the hall, somebody's dad is assembling a futon with the despair of a man who has lost a war.
+      text: g => `The ninth floor smells like fresh paint over old paint over something that happened in 1983. Down the hall, somebody's dad is assembling a futon, and losing.
 
 She stops in front of **9-11**, directly across from **9-14**. That's the room number on your housing email.
 
@@ -444,12 +446,10 @@ sam: I know.
 
 jules[FRIDGE GIRL]: No. I mean you *didn't have to*. Mr. Abernathy is paid to do it. He's paid quite well. If you do it, he feels he's failed my mother, and then he worries all the way back to Gladwyne, and I get a text about it tonight. He uses complete sentences. It's devastating.
 
-From where you're standing, that sounds exactly like a rich girl explaining that the help has feelings. You're too sweaty and too South Philly to hear the other thing underneath it: *I was going to carry it myself. I wanted to carry it myself. I wanted to do one thing today without someone doing it for me.*
-
-You won't hear that for a long time.`,
+From where you're standing, that sounds exactly like a rich girl explaining that the help has feelings. You're too sweaty and too South Philly to hear what's underneath it: *I wanted to carry it myself. I wanted to do one thing today without someone doing it for me.*`,
       choices: [
         { text: 'Turn it on. Smile. "Sam Kearney. Nice to meet you, neighbor."',
-          check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', label: 'Charm her', near: [],
+          check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', label: 'Charm her', near: ['jules'],
             on: { strong: 'a1_door_charm_strong', weak: 'a1_door_charm_weak', miss: 'a1_door_charm_miss' } } },
         { text: '"You\'re welcome, Your Highness."', tag: 'Bite',
           fx: g => { g.bond('jules', { tension: 2, respect: 1, affection: -1 }); g.flag('door', 'highness'); }, go: 'a1_door_highness' },
@@ -587,7 +587,7 @@ nik: Okay, so, hi. Nikhil. Nik. Edison, New Jersey, which I know, I *know*, but 
 
 You open your mouth.
 
-That's when Ma arrives, having taken the elevator line, gotten to the front of it through methods nobody will ever explain, and come up eight floors with a lasagna the size of a manhole cover. She takes one look at Nik and *adopts him*. You watch it happen in real time. By the time Pop comes up, red-faced from his fight with the Temple police officer (*"We agreed to disagree"*), Ma has learned Nik's allergies, his mother's name, and his opinion on garlic.
+That's when Ma arrives, having taken the elevator line, gotten to the front of it through methods nobody will ever explain, and come up eight floors with the lasagna intact. She takes one look at Nik and *adopts him*. You watch it happen in real time. By the time Pop comes up, red-faced from his fight with the Temple police officer (*"We agreed to disagree"*), Ma has learned Nik's allergies, his mother's name, and his opinion on garlic.
 
 And then there's a knock on your open door, and a girl leans in, tall, Black, gold hoops, a Decatur High Theatre shirt cut into something more ambitious. She looks at you like you're a show she bought tickets to.
 
@@ -638,7 +638,7 @@ ${g.f('promise_sundays') ? 'Gigi has wandered over to Nik\'s monitors and is ask
         warning: 'Nik looks at Ma, who is cutting the RA\'s lasagna into squares and wrapping a stack in foil labeled NIKHIL in Sharpie. "I don\'t think I want it to stop," he says, very quietly. Then louder: "I mean. Respectfully. My mom feeds me but it\'s, like, *aggressive* love, it comes with a quiz." Ma, without turning around: "There\'s a quiz with mine too, honey." Nik looks at you with real fear. You nod. There\'s a quiz.'
       }[g.f('nik_greet')]}
 
-You'll remember this later, when everything gets so much bigger than this room. The first hour: Ma and the lasagna, Pop testing the window lock three times, Gigi and Nik arguing about a video game you've never heard of, Simone sitting on the radiator saying "and *then* what" to every story like she's paying for them. Grace standing in the doorway holding a foil tray, like she can't remember the last time somebody took care of her.
+You'll remember this later, when everything gets so much bigger than this room. The first hour: Ma and the lasagna, Pop testing the window lock three times, Gigi and Nik arguing about a video game you've never heard of, Simone sitting on the radiator saying "and *then* what" to every story like she's paying for them. Grace in the doorway, holding the foil tray with both hands.
 
 The first hour, before anything happened.`,
       next: 'a1_goodbye'
@@ -647,11 +647,11 @@ The first hour, before anything happened.`,
     a1_goodbye: {
       loc: 'N. BROAD ST · OUTSIDE CARDONE HALL',
       clock: { time: '12:30 PM' },
-      text: `The goodbye happens on the sidewalk, because the Temple police officer has come back and is standing next to Pop's cab with his arms folded and the tired face of a man who knows he's going to lose.
+      text: `The goodbye happens on the sidewalk, because the Temple police officer has come back and is standing next to Pop's cab with his arms folded, braced to lose again.
 
 Ma hugs you like she's trying to fold you up and put you back inside her. She smells like garlic and Jean Naté. She says *"Call"* into your shoulder, and *"Eat,"* and *"Your brother says don't do anything stupid,"* and then, without moving her mouth from your shirt, *"Salvatore, I am so proud of you I could throw up."*
 
-Gigi doesn't cry. Gigi cries. Gigi punches you in the arm, hard, and then cries some more and gets into the cab and slams the door and puts her face against the window, which leaves a smudge you're going to think about at 3 a.m. for no reason.
+Gigi doesn't cry. Then Gigi cries. She punches you in the arm, hard, gets into the cab, slams the door, and presses her face to the window. It leaves a smudge on the glass, forehead and nose, the exact shape of being thirteen.
 
 Pop shakes your hand.
 
@@ -669,8 +669,8 @@ His phone buzzes in his pocket. He doesn't look at it. You know he doesn't have 
           fx: g => { g.money(200); g.bond('frank', { affection: 2 }); g.flag('pop_money', 'took'); }, go: 'a1_goodbye_end' },
         { text: 'Push it back into his jacket. "I got the job at Ciro\'s, Pop. I\'m good. Keep it."', tag: 'Refuse',
           fx: g => { g.bond('frank', { respect: 2, trust: 1 }); g.flag('pop_money', 'refused'); }, go: 'a1_goodbye_refuse' },
-        { text: 'Take it. Then, while Ma is hugging Nik goodbye (she\'s hugging Nik goodbye), slip half into Gigi\'s backpack.', tag: '+$100',
-          fx: g => { g.money(100); g.bond('gigi', { affection: 1 }); g.flag('pop_money', 'split'); g.know('gigi_money', ['sam'], 'You slipped $100 of Pop\'s money into Gigi\'s backpack.'); }, go: 'a1_goodbye_end' }
+        { text: 'Take it. Then, while Ma is hugging Nik goodbye (she\'s hugging Nik goodbye), slip half through the cab\'s open window into Gigi\'s backpack.', tag: '+$100',
+          fx: g => { g.money(100); g.bond('gigi', { affection: 1 }); g.flag('pop_money', 'split'); g.know('gigi_money', ['sam', 'gigi'], 'You slipped $100 of Pop\'s money into Gigi\'s backpack.'); }, go: 'a1_goodbye_end' }
       ]
     },
     a1_goodbye_refuse: {
@@ -684,7 +684,7 @@ He looks at you for a long time. Pop's eyes are the most Irish thing about him: 
 
 frank: …Okay, kid.
 
-He doesn't argue. That's how you know he really needed it, and you'll think about that later too.`,
+He doesn't argue. That's how you know he needed it.`,
       next: 'a1_goodbye_end'
     },
     a1_goodbye_end: {

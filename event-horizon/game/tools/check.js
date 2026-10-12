@@ -103,6 +103,7 @@ for (const id of EH.order) {
         const list = (s.choices || []).filter(c => !c.if || c.if(g));
         if (!list.length) { if (!s.next) { stuck[cur] = (stuck[cur] || 0) + 1; break; } cur = typeof s.next === 'function' ? s.next(g) : s.next; continue; }
         const open = list.filter(c => {
+          if (c.cost) { if (c.cost.cash && S.money.cash < c.cost.cash) return false; for (const p of ['stamina','focus','nerve']) if (c.cost[p] && S.pools[p] < c.cost[p]) return false; }
           if (c.slip && (!g.has('slip') || S.pools.focus < 2)) return false;
           if (c.lock && c.lock(g)) return false;
           const n = c.need; if (!n) return true;
@@ -110,6 +111,8 @@ for (const id of EH.order) {
           if (n.skill) for (const k in n.skill) if ((S.skills[k] || 0) < n.skill[k]) return false;
           if (n.cash && S.money.cash < n.cash) return false;
           if (n.focus && S.pools.focus < n.focus) return false;
+          if (n.stamina && S.pools.stamina < n.stamina) return false;
+          if (n.nerve && S.pools.nerve < n.nerve) return false;
           return true;
         });
         if (!open.length) { stuck['all-locked:' + cur] = (stuck['all-locked:' + cur] || 0) + 1; break; }
@@ -122,12 +125,13 @@ for (const id of EH.order) {
           EH.tryNudge(S, c.check, res);
           if (c.check.forceRewind && c.check.kind === 'pool' && !EH.isClean(res.tier)) { res = EH.roll(c.check, calc.base + 2); res.rewound = true; }
           if (c.check.skill) S.marked[c.check.skill] = true;
+          if (c.check.liesTo) c.check.liesTo.forEach(w => g.heat(w, { strong: 1, weak: 2, miss: 3 }[res.tier] || 0));
           const tk = cur + ':' + res.tier; tierCount[tk] = (tierCount[tk] || 0) + 1;
           g.last = res;
           if (c.fx) c.fx(g, res.tier, res);
           if (c.check.fx && c.check.fx[res.tier]) c.check.fx[res.tier](g, res);
           cur = EH.route(c.check.on, res.tier) || c.go;
-        } else { if (c.fx) c.fx(g); cur = typeof c.go === 'function' ? c.go(g) : c.go; }
+        } else { S.lastRoll = null; if (c.fx) c.fx(g); cur = typeof c.go === 'function' ? c.go(g) : c.go; }
         if (cur === '@end') { ended++; break; }
       }
       if (steps >= 600) stuck['loop'] = (stuck['loop'] || 0) + 1;

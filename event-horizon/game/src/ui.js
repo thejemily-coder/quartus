@@ -6,7 +6,7 @@
   const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html !== undefined) e.innerHTML = html; return e; };
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   const LS_KEY = 'eh_save_v1', LS_TRAIL = 'eh_trail_v1';
-  let S = null, TRAIL = [], DB = null, dbTimer = null, syncState = 'local', busy = false;
+  let S = null, TRAIL = [], DB = null, dbTimer = null, syncState = 'local', busy = false, playing = false, remoteNewer = null;
 
   /* ================= Persistence ================= */
   function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -19,7 +19,7 @@
     lsSet(LS_TRAIL, JSON.stringify(TRAIL));
     queueDb();
   }
-  function compact(st) { const c = EH.clone(st); delete c.epStart; return c; }
+  function compact(st) { return EH.clone(st); }
   function queueDb() {
     if (!DB) return;
     clearTimeout(dbTimer);
@@ -33,7 +33,7 @@
         state: compact(S), ep: S.ep, scene: S.scene, savedAt: new Date().toISOString(), engine: EH.version
       });
       setSync('ok');
-    } catch (e) { setSync('err'); }
+    } catch (e) { setSync(e && (e.code === 'invalid_argument' || e.code === 'not_granted') ? 'local' : 'err'); }
   }
   async function pushEpisodeDoc(id, summary) {
     if (!DB) return;
@@ -54,15 +54,19 @@
       if (snap && snap.exists) {
         const R = snap.data();
         if (R && R.state && (!S || (R.state.updated || 0) > (S.updated || 0) + 2000)) {
-          const keepStart = S && S.ep === R.state.ep ? S.epStart : null;
-          S = R.state; if (keepStart) S.epStart = keepStart;
-          if (!keepStart) TRAIL = [];
-          lsSet(LS_KEY, JSON.stringify(S)); lsSet(LS_TRAIL, JSON.stringify(TRAIL));
-          if (!$('.scene.cur') && !$('.tray-wrap')) renderTitle();
+          if (playing) { remoteNewer = R.state; toast('A newer save exists on another device. Return to the title screen to load it.'); }
+          else adoptRemote(R.state);
         }
       }
       setSync('ok');
     } catch (e) { setSync('err'); }
+  }
+  function adoptRemote(R) {
+    const sameScene = S && S.ep === R.ep && S.scene === R.scene;
+    S = R; remoteNewer = null;
+    if (!sameScene) TRAIL = [];
+    lsSet(LS_KEY, JSON.stringify(S)); lsSet(LS_TRAIL, JSON.stringify(TRAIL));
+    renderTitle();
   }
   function setSync(st) {
     syncState = st;
@@ -138,10 +142,10 @@
       '<div class="pool fo" title="Focus">Focus<span class="pips">' + pip(S.pools.focus, EH.maxPool(S, 'focus')) + '</span></div>' +
       '<div class="pool ne" title="Nerve">Nerve<span class="pips">' + pip(S.pools.nerve, EH.maxPool(S, 'nerve')) + '</span></div>' +
       '</div>' +
-      '<div class="clock">' + (S.clock.day ? '<b>' + esc(S.clock.day + ' ' + S.clock.date) + '</b>' + esc(S.clock.time) : '') + '<br><span id="sync" class="sync"></span></div>' +
+      '<div class="clock">' + (S.clock.day ? '<b>' + esc(S.clock.day + ' ' + S.clock.date) + '</b>' + esc(S.clock.time) : '') + (S.sleepDebt >= 3 ? ' · <span style="color:var(--bad)">Tired −' + Math.floor(S.sleepDebt / 3) + '</span>' : '') + (S.injuries.length ? ' · <span style="color:var(--bad)">Hurt</span>' : '') + '<br><span id="sync" class="sync"></span></div>' +
       '<div class="tools">' +
       '<button class="tbtn" data-tab="sheet">Sheet</button><button class="tbtn" data-tab="bonds">Bonds</button><button class="tbtn" data-tab="notes">Notes</button>' +
-      '<button class="tbtn" id="sndBtn" aria-pressed="' + (S.settings.sound ? 'true' : 'false') + '" title="Sound">' + (S.settings.sound ? 'Snd On' : 'Snd Off') + '</button>' +
+      '<button class="tbtn" id="sndBtn" aria-pressed="' + (S.settings.sound ? 'true' : 'false') + '" title="Sound">' + (S.settings.sound ? '♪ On' : '♪ Off') + '</button>' +
       '</div>';
     setSync(syncState);
     $('#toTitle').onclick = () => renderTitle();
@@ -160,7 +164,8 @@
 
   /* ================= Title screen ================= */
   function renderTitle() {
-    closeDrawer();
+    closeDrawer(); playing = false;
+    if (remoteNewer) { const R = remoteNewer; remoteNewer = null; adoptRemote(R); return; }
     $('#mast').hidden = true;
     const a = app(); a.innerHTML = '';
     const wrap = el('div', 'titlescreen');
@@ -205,6 +210,7 @@
   }
   function resume() {
     if (!S.ep) return newGame();
+    playing = true;
     if (S.done.includes(S.ep)) { return showEndCard(true); }
     if (S.settings.sound) Snd.startHum();
     buildStage();
@@ -223,14 +229,18 @@
   /* ================= Episodes ================= */
   function startEpisode(id) {
     const ep = EH.episodes[id];
-    S.ep = id; S.season = ep.season; S.scene = ep.start; S.epLog = []; S.epRolls = []; S.hubs = {};
-    S.pools.nerve = EH.maxPool(S, 'nerve');
+    playing = true;
+    const firstEp = !S.done.length && !S.ep;
+    S.ep = id; S.season = ep.season; S.scene = ep.start; S.epLog = []; S.epRolls = []; S.hubs = {}; S.hub = null; S.marked = {}; delete S.pending;
+    delete S.flags._failxp;
+    if (!firstEp) S.injuries = S.injuries.map(i => Object.assign({}, i, { heal: (i.heal || 1) - 1 })).filter(i => i.heal > 0);
+    S.pools.nerve = EH.maxPool(S, 'nerve') - (S.sleepDebt >= 6 ? 1 : 0);
     const snap = EH.clone(S); delete snap.epStart; S.epStart = snap;
     TRAIL = [];
     save();
     buildStage();
     const lines = previously(ep);
-    const go = () => { if (S.settings.sound) Snd.startHum(); goto(ep.start); };
+    const go = () => { if (!$('#log')) return; if (S.settings.sound) Snd.startHum(); goto(ep.start); };
     if (lines.length) playPreviously(lines, go); else go();
   }
   function previously(ep) {
@@ -247,7 +257,7 @@
     if (!sc) { console.error('Missing scene', id); toast('Missing scene: ' + id); return; }
     S.scene = id;
     if (sc.card && sc.card.kind === 'title') {
-      save();
+      S.scene = sc.next; save();
       playTitle(ep, () => { TRAIL.push('<div class="card cold"><span class="k">— Main Titles —</span></div>'); $('#log').appendChild(el('div', 'card cold', '<span class="k">— Main Titles —</span>')); goto(sc.next); });
       return;
     }
@@ -306,6 +316,10 @@
   /* ---------- choices ---------- */
   function lockReason(ch, g) {
     if (ch.lock) { const r = ch.lock(g); if (r) return r; }
+    if (ch.cost) {
+      if (ch.cost.cash && S.money.cash < ch.cost.cash) return 'Needs $' + ch.cost.cash + ' cash';
+      for (const p of ['stamina', 'focus', 'nerve']) if (ch.cost[p] && S.pools[p] < ch.cost[p]) return 'Needs ' + ch.cost[p] + ' ' + p;
+    }
     const n = ch.need; if (!n) { if (ch.slip) { if (!g.has('slip')) return 'You can\'t do that. Not yet.'; if (S.pools.focus < 2) return 'Needs 2 Focus'; } return null; }
     if (n.attr) for (const k in n.attr) if (S.attrs[k] < n.attr[k]) return 'Needs ' + EH.ATTR_NAMES[k] + ' ' + n.attr[k];
     if (n.skill) for (const k in n.skill) if ((S.skills[k] || 0) < n.skill[k]) return 'Needs ' + EH.SKILLS[k] + ' ' + n.skill[k];
@@ -327,7 +341,7 @@
       out.push('<span class="tag cost">' + esc(EH.ATTR_NAMES[c.attr] + (c.skill ? ' + ' + EH.SKILLS[c.skill] : '')) + ' ' + (calc.base >= 0 ? '+' : '') + calc.base + '</span>');
     } else {
       out.push('<span class="tag d20">d20 · ' + esc(EH.ATTR_NAMES[c.attr] + (c.skill ? ' + ' + EH.SKILLS[c.skill] : '')) + '</span>');
-      out.push('<span class="tag cost">+' + calc.base + ' vs DC ' + c.dc + '</span>');
+      out.push('<span class="tag cost">' + (calc.base >= 0 ? '+' : '') + calc.base + ' vs DC ' + c.dc + '</span>');
     }
     const p = EH.successChance(c, c.kind === 'pool' ? Math.max(1, calc.base) : calc.base);
     out.push('<span class="tag odds">≈' + Math.round(p * 100) + '%</span>');
@@ -360,6 +374,11 @@
       });
     }
     box.appendChild(wrap);
+    if (S.pending && S.pending.scene === id) {
+      const ch = (sc.choices || [])[S.pending.idx];
+      if (ch && ch.check) { const res = S.pending.res; setTimeout(() => choose(id, sc, ch, box, res), 0); }
+      else delete S.pending;
+    }
   }
   function finishScene(box, choiceText, then) {
     const c = $('.choices', box); if (c) c.remove();
@@ -367,38 +386,53 @@
     TRAIL.push(box.outerHTML.replace(' cur', ' past'));
     then();
   }
-  function choose(id, sc, ch, box) {
+  function choose(id, sc, ch, box, preset) {
     busy = true;
     const notes = []; const g = EH.api(S, notes);
     const txt = typeof ch.text === 'function' ? ch.text(g) : ch.text;
     const entry = { ep: S.ep, scene: id, choice: txt.replace(/<[^>]+>/g, ''), t: Date.now() };
     const c = $('.choices', box); if (c) c.remove();
     box.appendChild(el('div', 'choice-made', '▸ <b>' + EH.inline(txt) + '</b>'));
-    if (ch.cost) { if (ch.cost.cash) g.money(-ch.cost.cash); ['stamina', 'focus', 'nerve'].forEach(p => { if (ch.cost[p]) g.pool(p, -ch.cost[p]); }); }
-    if (ch.slip) { S.pools.focus = Math.max(0, S.pools.focus - 2); g.drift(1); g.mastery(2); Snd.play('whoosh'); }
+    if (!preset) {
+      if (ch.cost) { if (ch.cost.cash) g.money(-ch.cost.cash); ['stamina', 'focus', 'nerve'].forEach(p => { if (ch.cost[p]) g.pool(p, -ch.cost[p]); }); }
+      if (ch.slip) { S.pools.focus = Math.max(0, S.pools.focus - 2); g.drift(1); g.mastery(2); Snd.play('whoosh'); }
+    }
     const after = (target, res) => {
-      if (res) { entry.roll = { label: ch.check.label || '', kind: res.kind, dice: res.dice, tier: res.tier, nudged: !!res.nudged, rewound: !!res.rewound }; }
-      S.epLog.push(entry);
-      if (notes.length) box.appendChild(notesEl(notes));
-      TRAIL.push(box.outerHTML.replace(' cur', ' past'));
-      busy = false;
+      try {
+        if (res) entry.roll = { label: ch.check.label || '', kind: res.kind, dice: res.dice, tier: res.tier, nudged: !!res.nudged, rewound: !!res.rewound };
+        S.epLog.push(entry);
+        delete S.pending;
+        if (notes.length) box.appendChild(notesEl(notes));
+        TRAIL.push(box.outerHTML.replace(' cur', ' past'));
+      } finally { busy = false; }
       save();
       if (target === '@end') return showEndCard(false);
       goto(target);
     };
-    if (ch.check) {
-      openTray(ch.check, res => {
+    const resolve = res => {
+      try {
         g.last = res;
-        if (ch.check.skill) S.marked[ch.check.skill] = true;
-        box.appendChild(rollRec(ch.check, res));
+        const k = ch.check;
+        if (k.skill) S.marked[k.skill] = true;
+        box.appendChild(rollRec(k, res));
+        // Failing forward: a missed roll still teaches you something (max 2 XP per episode).
+        if (!EH.isGood(res.tier) && k.skill && (S.flags._failxp || 0) < 2) { S.flags._failxp = (S.flags._failxp || 0) + 1; g.xp(1); }
+        // Lies build Suspicion automatically when the check names who is being lied to.
+        if (k.liesTo) k.liesTo.forEach(w => g.heat(w, { strong: 1, weak: 2, miss: 3 }[res.tier] || 0));
         if (ch.fx) ch.fx(g, res.tier, res);
-        if (ch.check.fx && ch.check.fx[res.tier]) ch.check.fx[res.tier](g, res);
-        const target = EH.route(ch.check.on, res.tier) || ch.go;
-        S.epRolls.push({ ep: S.ep, scene: id, label: ch.check.label || '', kind: res.kind, dice: res.dice, tier: res.tier, nudged: !!res.nudged, rewound: !!res.rewound });
-        after(target, res);
-      });
+        if (k.fx && k.fx[res.tier]) k.fx[res.tier](g, res);
+        S.epRolls.push({ ep: S.ep, scene: id, label: k.label || '', kind: res.kind, dice: res.dice, tier: res.tier, mod: res.mod, s: res.s, pushes: res.pushes || null, nudged: !!res.nudged, rewound: !!res.rewound });
+        after(EH.route(k.on, res.tier) || ch.go, res);
+      } catch (e) { busy = false; console.error(e); toast('Something broke: ' + e.message); }
+    };
+    if (ch.check) {
+      if (preset) { resolve(preset); return; }
+      const idx = (sc.choices || []).indexOf(ch);
+      save();
+      openTray(ch.check, resolve, res => { S.pending = { scene: id, idx, res: EH.clone(res) }; save(); });
     } else {
-      if (ch.fx) ch.fx(g);
+      S.lastRoll = null;
+      try { if (ch.fx) ch.fx(g); } catch (e) { busy = false; console.error(e); toast('Something broke: ' + e.message); return; }
       after(typeof ch.go === 'function' ? ch.go(g) : ch.go);
     }
   }
@@ -408,6 +442,7 @@
       let cls = 'mini-die';
       if (res.gold && res.gold.includes(i)) cls += ' gold';
       else if (res.kind === 'pool') cls += v === 10 ? ' dbl' : v >= 7 ? ' hit' : v === 1 ? ' one' : '';
+      else if (res.kind === 'd20') cls += v === 20 ? ' dbl' : v === 1 ? ' one' : '';
       return '<span class="' + cls + '">' + v + '</span>';
     }).join('');
     const tot = res.kind === 'pool' ? res.s + ' succ.' : '= ' + res.total;
@@ -456,45 +491,55 @@
   }
 
   /* ================= Dice tray ================= */
-  function openTray(c, cb) {
+  function openTray(c, cb, onRolled) {
     const calc = EH.checkCalc(S, c);
     const g = EH.api(S);
-    const state = { push: false, burst: false };
+    const state = { push: false, burst: false, grit: false, focus: false };
     const wrap = el('div', 'tray-wrap'); wrap.setAttribute('role', 'dialog'); wrap.setAttribute('aria-modal', 'true');
     const kindLbl = c.kind === 'pool' ? 'd10 Pool · Difficulty ' + c.diff : c.kind === 'move' ? '2d6 Move · ' + (c.move || '') : 'd20 Check · DC ' + c.dc;
     wrap.innerHTML = '<div class="tray"><div class="hd"><span class="lbl">' + esc(c.label || 'Roll') + '</span><span class="kind">' + esc(kindLbl) + '</span></div><div class="bd"><div class="calc" id="calc"></div><div id="oddsBox"></div><div class="pushes" id="pushes"></div><div class="dicefield" id="field" aria-live="polite"></div><div id="verdict"></div></div><div class="ft" id="tft"></div></div>';
     document.body.appendChild(wrap);
     const mod = () => {
       let m = calc.base;
-      if (state.push) m += c.kind === 'pool' ? 1 : c.kind === 'move' ? 1 : 2;
+      if (state.push) m += c.kind === 'd20' ? 2 : 1;
       if (state.burst) m += 2;
+      if (state.focus) m += 2;
       return c.kind === 'pool' ? Math.max(1, m) : m;
     };
     const drawCalc = () => {
       const rows = calc.rows.slice();
       if (state.push) rows.push(['Push (1 Nerve)', c.kind === 'd20' ? 2 : 1]);
       if (state.burst) rows.push(['Burst (1 Stamina)', 2]);
-      const unit = c.kind === 'pool' ? ' dice' : '';
+      if (state.focus) rows.push(['Concentrate (1 Focus)', 2]);
       $('#calc', wrap).innerHTML = rows.map(r => '<div class="r"><span>' + esc(r[0]) + '</span><span class="' + (r[1] < 0 ? 'neg' : 'pos') + '">' + (r[1] >= 0 ? '+' : '') + r[1] + '</span></div>').join('') +
-        '<div class="r tot"><span>' + (c.kind === 'pool' ? 'Dice' : 'Modifier') + '</span><span>' + (c.kind === 'pool' ? mod() + unit : (mod() >= 0 ? '+' : '') + mod()) + '</span></div>';
+        (state.grit ? '<div class="r"><span>Dig Deep (1 Stamina)</span><span class="pos">reroll 1s</span></div>' : '') +
+        '<div class="r tot"><span>' + (c.kind === 'pool' ? 'Dice' : 'Modifier') + '</span><span>' + (c.kind === 'pool' ? mod() + ' dice' : (mod() >= 0 ? '+' : '') + mod()) + '</span></div>';
       const o = EH.odds(c, mod());
       const pc = v => Math.round(v * 100);
       let bar, leg;
       if (c.kind === 'move') { bar = '<span class="o-succ" style="width:' + pc(o.success) + '%"></span><span class="o-part" style="width:' + pc(o.partial) + '%"></span>'; leg = '<span><i style="background:var(--cyan)"></i>Strong ' + pc(o.success) + '%</span><span><i style="background:var(--yellow)"></i>Weak ' + pc(o.partial) + '%</span><span><i></i>Miss ' + pc(o.fail) + '%</span>'; }
       else if (c.kind === 'pool') { bar = '<span class="o-crit" style="width:' + pc(o.crit) + '%"></span><span class="o-succ" style="width:' + pc(o.success) + '%"></span><span class="o-part" style="width:' + pc(o.partial) + '%"></span>'; leg = '<span><i style="background:var(--magenta)"></i>Crit ' + pc(o.crit) + '%</span><span><i style="background:var(--cyan)"></i>Success ' + pc(o.success) + '%</span><span><i style="background:var(--yellow)"></i>Partial ' + pc(o.partial) + '%</span><span><i></i>Fail ' + pc(o.fail) + '%</span>'; }
       else { bar = '<span class="o-crit" style="width:' + pc(o.crit) + '%"></span><span class="o-succ" style="width:' + pc(o.success) + '%"></span>'; leg = '<span><i style="background:var(--cyan)"></i>Pass ' + pc(o.crit + o.success) + '%</span><span><i></i>Fail ' + pc(o.fail) + '%</span>'; }
-      $('#oddsBox', wrap).innerHTML = '<div class="oddsbar">' + bar + '</div><div class="oddsleg">' + leg + '</div>';
+      $('#oddsBox', wrap).innerHTML = '<div class="oddsbar">' + bar + '</div><div class="oddsleg">' + leg + (c.forceRewind ? '<span>· something else may happen</span>' : '') + '</div>';
     };
     const pushes = $('#pushes', wrap);
-    const mkPush = (key, title, sub, can) => {
-      const b = el('button', 'push', esc(title) + '<small>' + esc(sub) + '</small>'); b.setAttribute('aria-pressed', 'false');
-      if (!can) b.disabled = true;
-      b.onclick = () => { state[key] = !state[key]; b.setAttribute('aria-pressed', state[key] ? 'true' : 'false'); drawCalc(); };
-      pushes.appendChild(b);
+    const keys = { push: 'nerve', burst: 'stamina', grit: 'stamina', focus: 'focus' };
+    const btns = {};
+    const canAfford = () => { const need = { stamina: 0, focus: 0, nerve: 0 }; Object.keys(state).forEach(k => { if (state[k]) need[keys[k]]++; }); return need; };
+    const refresh = () => {
+      const need = canAfford();
+      Object.keys(btns).forEach(k => { const p = keys[k]; btns[k].disabled = !state[k] && S.pools[p] < need[p] + 1; });
     };
-    mkPush('push', 'Push', 'Spend 1 Nerve · ' + (c.kind === 'pool' ? '+1 die' : c.kind === 'move' ? '+1' : '+2'), S.pools.nerve >= 1);
-    if (c.kind === 'pool' && c.power && g.has('burst')) mkPush('burst', 'Burst', 'Spend 1 Stamina · +2 dice', S.pools.stamina >= 1);
-    drawCalc();
+    const mkPush = (key, title, sub) => {
+      const b = el('button', 'push', esc(title) + '<small>' + esc(sub) + '</small>'); b.setAttribute('aria-pressed', 'false');
+      b.onclick = () => { state[key] = !state[key]; b.setAttribute('aria-pressed', state[key] ? 'true' : 'false'); drawCalc(); refresh(); };
+      btns[key] = b; pushes.appendChild(b);
+    };
+    mkPush('push', 'Push', 'Spend 1 Nerve · ' + (c.kind === 'pool' ? '+1 die' : c.kind === 'move' ? '+1' : '+2'));
+    if (c.kind === 'pool' && c.power && g.has('burst')) mkPush('burst', 'Burst', 'Spend 1 Stamina · +2 dice');
+    if (c.kind === 'pool' && (c.attr === 'body' || c.attr === 'reflex')) mkPush('grit', 'Dig Deep', 'Spend 1 Stamina · reroll every 1');
+    if (c.kind === 'd20') mkPush('focus', 'Concentrate', 'Spend 1 Focus · +2');
+    refresh(); drawCalc();
     const ft = $('#tft', wrap);
     const rollBtn = el('button', 'btn primary', 'Roll'); ft.appendChild(rollBtn);
     rollBtn.focus();
@@ -502,9 +547,13 @@
       rollBtn.remove(); pushes.querySelectorAll('button').forEach(b => b.disabled = true);
       if (state.push) S.pools.nerve -= 1;
       if (state.burst) { S.pools.stamina -= 1; EH.api(S).mastery(1); }
+      if (state.grit) S.pools.stamina -= 1;
+      if (state.focus) S.pools.focus -= 1;
       const m = mod();
-      let res = EH.roll(c, m); res.pushes = { push: state.push, burst: state.burst };
-      animateDice(wrap, c, res, () => afterRoll(wrap, c, res, m, cb));
+      const res = EH.roll(c, m); res.pushes = { push: state.push, burst: state.burst, grit: state.grit, focus: state.focus };
+      if (state.grit) { res.dice = res.dice.map(v => v === 1 ? 1 + Math.floor(Math.random() * 10) : v); const p = res.pushes; Object.assign(res, EH.scorePool(res.dice, c.diff)); res.pushes = p; }
+      if (onRolled) onRolled(res);
+      animateDice(wrap, c, res, () => afterRoll(wrap, c, res, m, cb, onRolled));
     };
   }
   function dieCls(c, res, v, i) {
@@ -531,23 +580,31 @@
       }
     }, 70);
   }
-  function showVerdict(wrap, c, res) {
+  function showVerdict(wrap, c, res, quiet) {
     const v = $('#verdict', wrap);
     const sm = res.kind === 'pool' ? res.s + ' success' + (res.s === 1 ? '' : 'es') + ' vs ' + res.diff : 'Total ' + res.total + (res.kind === 'd20' ? ' vs DC ' + res.dc : '');
     v.innerHTML = '<div class="verdict"><div class="big ' + res.tier + '">' + esc(EH.TIER_NAMES[res.tier]) + '</div><div class="sm">' + esc(sm) + '</div></div>';
-    Snd.play(EH.isGood(res.tier) ? 'success' : 'fail');
+    if (!quiet) Snd.play(EH.isGood(res.tier) ? 'success' : 'fail');
   }
-  function afterRoll(wrap, c, res, m, cb) {
-    const g = EH.api(S);
+  function afterRoll(wrap, c, res, m, cb, onRolled) {
     const nudged = EH.tryNudge(S, c, res);
+    if (onRolled) onRolled(res);
     const field = $('#field', wrap);
+    const mustForce = () => c.forceRewind && c.kind === 'pool' && !res.rewound && !EH.isClean(res.tier);
+    const forced = () => {
+      showVerdict(wrap, c, res, true);
+      setTimeout(() => {
+        S.drift = Math.min(10, S.drift + 2); S.hidden.revenant_drift += 1;
+        doRewind(wrap, c, res, m + 2, cb, true, onRolled);
+      }, 1100);
+    };
     const finish = () => {
       showVerdict(wrap, c, res);
       const ft = $('#tft', wrap); ft.innerHTML = '';
-      const canRewind = c.kind === 'pool' && !res.rewound && !EH.isClean(res.tier) && g.has('rewind') && S.pools.focus >= 3 && !c.noRewind;
+      const canRewind = c.kind === 'pool' && !res.rewound && !EH.isClean(res.tier) && EH.api(S).has('rewind') && S.pools.focus >= 3 && !c.noRewind;
       if (canRewind) {
         const rb = el('button', 'btn', '◀◀ Rewind · 3 Focus · +2 Drift');
-        rb.onclick = () => { S.pools.focus -= 3; EH.api(S).drift(2); doRewind(wrap, c, res, m, 0, cb); };
+        rb.onclick = () => { S.pools.focus -= 3; EH.api(S).drift(2); doRewind(wrap, c, res, m, cb, false, onRolled); };
         ft.appendChild(rb);
       }
       const ok = el('button', 'btn primary', 'Continue');
@@ -558,26 +615,23 @@
       setTimeout(() => {
         res.gold.forEach(i => { const n = field.children[i]; n.className = dieCls(c, res, res.dice[i], i); n.textContent = res.dice[i]; n.title = '?'; });
         Snd.play('gold');
-        finish();
+        mustForce() ? forced() : finish();
       }, 650);
-    } else if (c.forceRewind && c.kind === 'pool' && !EH.isClean(res.tier) && !res.rewound) {
-      showVerdict(wrap, c, res);
-      setTimeout(() => {
-        S.drift = Math.min(10, S.drift + 2); S.hidden.revenant_drift += 1;
-        doRewind(wrap, c, res, m + 2, 1, cb, true);
-      }, 1100);
-    } else finish();
+    } else if (mustForce()) forced();
+    else finish();
   }
-  function doRewind(wrap, c, res, m, extra, cb, forced) {
+  function doRewind(wrap, c, res, m, cb, forced, onRolled) {
     const tray = $('.tray', wrap);
     tray.classList.add('rewinding'); Snd.play('rewind');
     $('#verdict', wrap).innerHTML = '<div class="rewtext">◀◀ ' + (forced ? 'NO. AGAIN.' : 'REWIND') + '</div>';
     $('#tft', wrap).innerHTML = '';
     setTimeout(() => {
       tray.classList.remove('rewinding');
-      const r2 = EH.roll(c, m); r2.rewound = true; r2.forced = !!forced;
+      const p = res.pushes;
+      const r2 = EH.roll(c, m); r2.rewound = true; r2.forced = !!forced; r2.pushes = p;
       Object.keys(res).forEach(k => delete res[k]); Object.assign(res, r2);
-      animateDice(wrap, c, res, () => afterRoll(wrap, c, res, m, cb));
+      if (onRolled) onRolled(res);
+      animateDice(wrap, c, res, () => afterRoll(wrap, c, res, m, cb, onRolled));
     }, 1150);
   }
 
@@ -631,12 +685,12 @@
     if (!revisit) {
       const g = EH.api(S);
       if (!S.done.includes(S.ep)) {
-        g.xp(ep.xp || 3);
+        g.xp(ep.xp ?? 3);
         if (ep.onEnd) ep.onEnd(g);
         const sum = summarize();
         S.eps[S.ep] = { title: ep.title, finished: new Date().toISOString(), summary: sum };
         S.done.push(S.ep);
-        save(); pushDb(); pushEpisodeDoc(S.ep, sum);
+        clearTimeout(dbTimer); save(); clearTimeout(dbTimer); pushDb(); pushEpisodeDoc(S.ep, sum);
       }
     }
     closeDrawer();
@@ -812,6 +866,8 @@
 
   /* ================= Boot ================= */
   function start(data) {
+    document.querySelectorAll('.tray-wrap,.overlay,.drawer-wrap').forEach(n => n.remove());
+    busy = false;
     const raw = (data && data.S) ? null : lsGet(LS_KEY);
     if (data && data.S) { S = data.S; TRAIL = data.TRAIL || []; }
     else if (raw) { try { S = JSON.parse(raw); TRAIL = JSON.parse(lsGet(LS_TRAIL) || '[]'); } catch (e) { S = null; TRAIL = []; } }

@@ -24,7 +24,7 @@ The engine (`game/src/engine.js`) implements exactly this document. Episodes are
   - otherwise → **Fail**
   - zero successes plus any 1s → **Botch**: fail plus a complication. The author may route `botch` separately; if not, it goes to `fail` with a stated complication.
 - **Sleep Debt penalty:** −1 die per full 3 points of Sleep Debt.
-- **Injury penalty:** each active injury carries a penalty (−1 or −2 dice) to the pools it affects.
+- **Injury penalty:** each active injury carries a penalty (−1 or −2 dice) to pools using the attributes in its `affects` list (all physical pools if no list). `heal` counts down by 1 at the start of each episode, and the injury is removed at 0.
 
 ### 1b. 2d6 Move
 - Roll **2d6 + Attribute modifier + Skill bonus**.
@@ -52,11 +52,19 @@ Before rolling, the player may spend resources:
 - **Burst** (Slip power, physical pools with `power:true`): spend 1 **Stamina** to add +2 dice.
 - **Slip** (story-gated, offered as a special choice rather than a modifier): spend 2 **Focus** for an automatic narrative success on options marked `slip:true`. Adds Drift.
 
+- **Dig Deep** (any Body or Reflex pool): spend 1 **Stamina** to reroll every die showing 1, once, before the result is read.
+- **Concentrate** (any d20 check): spend 1 **Focus** for +2.
+
 After rolling, the player may spend:
-- **Rewind** (power node `rewind`): after a failed or partial **pool**, spend 3 Focus and gain 2 Drift to reroll the whole pool. The screen visibly runs backward. Usable once per check. *In the pilot, Rewind fires once involuntarily during the Event (`forceRewind`).*
+- **Rewind** (power node `rewind`): after a failed or partial **pool**, spend 3 Focus and gain 2 Drift to reroll the whole pool. The screen visibly runs backward. Usable once per check. *In the pilot, Rewind fires once involuntarily during the Event (`forceRewind`). It triggers on any non-clean result (including after a Jules nudge), costs no Focus, adds +2 Drift and +1 hidden `revenant_drift`, and rerolls with **+2 dice**.*
+
+### 1f. Failing forward and lies
+- A failed, missed, botched or fumbled roll that used a skill grants **+1 XP** (at most 2 per episode).
+- A check with `liesTo: [ids]` automatically adds Cover Story Heat to each listed watcher (+1 strong, +2 weak, +3 miss). Authors who handle Heat manually must not also set `liesTo`.
+- **Named move variants** with off-sheet skills are allowed and shown on the check: *Bluff* (a party-game lie, no Heat), *Work the Door* (Charm + Hustle, tips), *Read the Street* (Wits + Streetwise).
 
 ### 1e. Diegetic dice (the strangeness)
-- **Jules's Nudge (hidden in Season 1):** if a pool or move check lists `near:['jules']` and the result is Fail or Partial, the engine rolls against `hidden.jules_luck` (default 35%). On a hit, the lowest non-success die (pool) or lowest die (move) turns to **10 / 6**, drawn in **gold with a flicker**. The tooltip shows only "?". This increments `hidden.nudges` and logs it. Jules does not know she's doing it, and neither does Sam. The writers use the nudge count as a clue meter: Sam may "notice" in later episodes once `nudges ≥ 3`.
+- **Jules's Nudge (hidden in Season 1):** if a pool or move check lists `near:['jules']` and the result is Fail or Partial, the engine rolls against `hidden.jules_luck` (default 35%) plus 1% per point of Jules's (Affection + Trust) toward Sam. On a hit, the lowest non-success die (pool) or lowest die (move) turns to **10 / 6**, drawn in **gold with a flicker**. The tooltip shows only "?". This increments `hidden.nudges` and logs it. Jules does not know she's doing it, and neither does Sam. The writers use the nudge count as a clue meter: Sam may "notice" in later episodes once `nudges ≥ 3`.
 - **Rewind** (above) is visible time reversal.
 - **Later seasons:** Jules gains a player-facing **Nudge** (Season 2+), Sam gains **Echo** (rolling twice and choosing), and the Audience may roll back at the player. Leave room for these.
 
@@ -117,7 +125,7 @@ Mastery (0–100) grows with use. Nodes unlock by story gate, then cost XP.
 - **7+:** lost minutes (engine skips forward)
 - **9+:** Sam is briefly seen in two places, and the next Slip risks a full **Unstick** (a story event)
 
-Every Drift point Sam takes **also** feeds hidden `revenant_drift`, more so when the use was to "fix" something other people had chosen.
+Every Drift point Sam takes **also** feeds hidden `revenant_drift` (+0.5 per point, +1 for each forced rewind), and authored choices add more when Sam "fixes" something other people had chosen. *Engine status: thresholds 3+ (visual glitch) and 5+ (−1 die on Wits pools) are implemented. 7+ and 9+ are story events the writers trigger by hand until Season 2.*
 
 ### Jules: probability (hidden in Season 1)
 - `hidden.jules_luck`: starts at 0.35 and grows with the bond Affection and Trust she has toward Sam (the Audience likes the pairing).
@@ -127,16 +135,16 @@ Every Drift point Sam takes **also** feeds hidden `revenant_drift`, more so when
 
 - **Clock:** each scene may set `clock: {day, date, time}`. The HUD shows it.
 - **Time slots:** free-time **hubs** offer activities, and each costs 1–2 slots. You can't do everything. Unchosen activities are logged as `skipped_*` flags for later callbacks ("you didn't come to the floor meeting").
-- **Sleep:** `sleep(hours)` adds max(0, 8 − hours) to Sleep Debt and subtracts (hours − 8) when above 8. Debt runs 0–10 and penalizes all rolls (see §1).
+- **Sleep:** `sleep(hours)` adds max(0, 8 − hours) to Sleep Debt and subtracts (hours − 8) when above 8. `nap(hours)` subtracts ceil(hours/2) and restores Stamina and Focus by `hours`. Debt runs 0–10 and penalizes all rolls (see §1). At Debt 6+, the next episode starts with 1 less Nerve. The HUD shows "Tired −N".
 - **Money:** cash and bank. Ciro's pays $14/hr plus tips (tips are a Hustle or Banter check). Costs: phone bill, books, food, gear, Nonna's birthday, costume (later).
 - **Grades:** courses carry a standing (0–100) built from attendance, assignments, and exams (d20). GPA is computed at midterms and finals. Sam's Season 1 courses are **ENG 0802 Analytical Reading & Writing**, **MATH 1041 Calculus I**, **PSY 1001 Intro to Psychology**, and **GU 1003 Philadelphia Neighborhoods** (the professor is Dr. Alan Weisz, a geographer who is secretly ES-50 and can see seams).
-- **Heat (0–10 per watcher):** suspicion of the secret. Watchers: everyone in the bond list plus `press`, `police`, and the hidden `halcyon`. At 10, that person learns the secret (a story event the writers must honor) unless the episode handles it first. Lies (Cover Story) and close calls raise Heat. Distance and good alibis lower it.
+- **Heat (0–10 per watcher):** suspicion of the secret. Watchers: everyone in the bond list plus `press`, `police`, and the hidden `halcyon`. At 10, that person learns the secret (a story event the writers must honor) unless the episode handles it first. The engine sets flag `heat_max_<id>` the moment it happens. Halcyon's suspicion lives only in `hidden.halcyon_heat`. Lies (Cover Story) and close calls raise Heat. Distance and good alibis lower it.
 
 ## 5. Bonds (multi-axis)
 Each major character has **Trust**, **Affection**, **Respect** (each −10 to +10) and **Tension** (0–10). Tension means unresolved friction. Romantic and sexual tension use the same axis, and the writers read the context: with Jules in Season 1, Tension *is* the romance.
 - The HUD shows only characters Sam has met (`met:true`).
 - Scenes check specific axes: `g.b('jules').affection >= 3`.
-- **Jules, Season 1:** she starts at Trust 0, Affection −1, Respect 0, Tension 2 after the minifridge. The canonical dislike for about three episodes is enforced by authoring, not by locking stats. Stats determine *how* the fall happens and how fast she admits it.
+- **Jules, Season 1:** after the minifridge she sits at about Trust 0, Affection −1/0, Respect 0/+1, Tension 1 (0 if you walked). Failure outcomes cost Respect, not Tension; Tension is attraction-adjacent friction and should end the pilot around 4–6. The canonical dislike for about three episodes is enforced by authoring, not by locking stats. Stats determine *how* the fall happens and how fast she admits it.
 
 ## 6. The Ledger (continuity backbone)
 The engine records:
@@ -147,6 +155,9 @@ The engine records:
 - **`recap`:** one-line "Previously on" candidates, written by the author at key beats with `g.recap("...")`. The next episode's "Previously on" pulls the last 4–6 relevant ones.
 - **`hidden`:** stats the player never sees: `revenant_drift`, `jules_luck`, `nudges`, `halcyon_heat`, and per-arc secrets.
 - **`eps`:** a per-episode summary, written at episode end: stat deltas, choices, and outcomes.
+
+- **`lastRoll`:** the most recent roll result, readable in the next scene as `g.last`. Prefer setting a flag in the choice's `fx(g, tier, res)` for anything that matters later.
+- **`pending`:** a roll made but not yet resolved (protects against reloading to reroll).
 
 The save syncs to the artifact database (`playthrough/state`, plus one `playthrough/ep_<id>` doc per finished episode) and to localStorage. Writers read it with `ArtifactData`.
 

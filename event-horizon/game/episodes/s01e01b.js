@@ -20,19 +20,19 @@ A boy named Devontae guesses the spleen. He's wrong, and she describes it. The l
 
 It goes around the circle. Nik's three truths turn into a four-minute explanation of why one of them is technically half-true. Simone's lie is so obvious it loops back around to brilliant, and she gets a standing ovation from a girl who's going to follow her around for the rest of the year.
 
-Jules is on the far couch with one leg folded under her and a seltzer, watching everyone the way a cat watches a bird feeder. Each time someone lies, she says the lie quietly, under her breath, before anyone else guesses. She's right every time. By the sixth person, the people around her have started watching *her* instead of the speaker.
+Jules is on the far couch with one leg folded under her and a seltzer, watching everyone the way a dealer watches a table. Each time someone lies, she says the lie quietly, under her breath, before anyone else guesses. She's right every time. By the sixth person, the people around her have started watching *her* instead of the speaker.
 
 Then Grace points the clipboard at you.
 
-grace: Nine-fourteen. Refrigerator guy. Go.
+grace: Nine-fourteen. Salvatore Kearney. Refrigerator guy. Go.
 
 Forty heads turn. Across the room, Jules sets down her seltzer.`,
     choices: [
       { text: 'Play it straight. "I broke my arm jumping off a garage on Mifflin Street. I\'ve never seen the ocean. I can flip an over-easy egg one-handed."',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to the room (and Jules)', on: { strong: 'a2_ttal_strong', weak: 'a2_ttal_weak', miss: 'a2_ttal_miss' } },
+        check: { kind: 'move', move: 'Bluff', attr: 'charm', skill: 'lie', near: ['jules'], label: 'Lie to the room (and Jules)', on: { strong: 'a2_ttal_strong', weak: 'a2_ttal_weak', miss: 'a2_ttal_miss' } },
         fx: g => g.flag('ttal', 'straight') },
       { text: 'Play it for laughs. "I was an altar boy for four years. I\'m banned from a Rita\'s Water Ice. My grandmother owns a gun."',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'banter', label: 'Lie to the room (and Jules)', on: { strong: 'a2_ttal_strong', weak: 'a2_ttal_weak', miss: 'a2_ttal_miss' } },
+        check: { kind: 'move', move: 'Bluff', attr: 'charm', skill: 'banter', near: ['jules'], label: 'Lie to the room (and Jules)', on: { strong: 'a2_ttal_strong', weak: 'a2_ttal_weak', miss: 'a2_ttal_miss' } },
         fx: g => g.flag('ttal', 'laughs') },
       { text: 'Don\'t lie at all. Three truths. "My brother\'s a cop. My dad drives a cab. I\'ve never been on a plane." See who catches it.', tag: 'Trick',
         fx: g => { g.flag('ttal', 'truths'); g.bond('jules', { respect: 2, tension: 1 }); }, go: 'a2_ttal_truths' }
@@ -65,15 +65,13 @@ She takes her time, long enough that you think you might have her, and then:
 
 jules: ${g.f('ttal') === 'straight' ? 'You\'ve seen the ocean. You have a Wildwood T-shirt in your laundry hamper. It\'s been washed so many times the boardwalk is pink.' : 'Altar boy. Nobody who\'s been banned from a water ice store was an altar boy for four years.'}
 
-sam: …I was an altar boy for two weeks.
-
-jules: That I believe.
+${g.f('ttal') === 'straight' ? 'sam: …It was a long time ago.\n\njules: The shirt says otherwise.' : 'sam: …I was an altar boy for two weeks.\n\njules: That I believe.'}
 
 The room laughs, and it's a good laugh, *with* you mostly. Jules doesn't laugh. She looks at you for one more second, then moves on, like you're a puzzle that was harder than she expected but solved all the same.`,
     next: 'a2_ttal_jules'
   },
   a2_ttal_miss: {
-    enter: g => { g.bond('jules', { tension: 1 }); g.know('ear_tell', ['sam'], 'Jules says you touch your ear when you lie.'); },
+    enter: g => { g.flag('ear_called'); g.bond('jules', { tension: 1 }); g.know('ear_tell', ['sam', 'jules', 'simone', 'nik', 'grace'], 'Jules says you touch your ear when you lie.'); },
     text: g => `You haven't even finished the third one when she says it.
 
 jules: ${g.f('ttal') === 'straight' ? 'The ocean.' : 'The altar boy.'}
@@ -100,7 +98,7 @@ jules: There isn't one.
 
 sam: Isn't one what?
 
-jules: There's no lie. You told three truths. You've never been on a plane, your brother is a police officer, and your father drives a cab. I watched him get a ticket this morning.
+jules: There's no lie. You told three truths. You've never been on a plane, your brother is a police officer, and your father drives a cab. I watched him argue with a Temple police officer this morning.
 
 Simone, delighted, as loud as a fire alarm:
 
@@ -124,7 +122,7 @@ Jules uncrosses her leg and sits up straight, and the room goes quiet without be
 
 jules: I've never lost a game of cards. I have a twin brother. I've never broken a rule.
 
-She says it with absolutely nothing on her face. Not a flicker, no ear-touching. She could be reading a cereal box.
+She says it with absolutely nothing on her face. Not a flicker. Not a tell. She could be reading a cereal box.
 
 grace: Nine-fourteen. You seem invested. Guess.`,
     choices: [
@@ -135,9 +133,10 @@ grace: Nine-fourteen. You seem invested. Guess.`,
   },
   a2_ttal_reveal: {
     enter: g => {
-      g.know('jules_never_loses', ['sam'], 'Jules says she has never lost a game of cards. It was one of her truths.');
-      g.know('jules_twin', ['sam'], 'Jules has a twin brother at Penn.');
-      g.know('jules_chose_temple', ['sam'], 'Jules says she\'s never broken a rule. That was the lie. She chose Temple, apparently over her mother\'s objections.');
+      if (!g.knows('ear_tell')) g.know('ear_tell', ['sam', 'jules'], 'Jules says you touch your left ear when you lie.');
+      g.know('jules_never_loses', ['sam', 'jules', 'simone', 'nik', 'grace'], 'Jules says she has never lost a game of cards. It was one of her truths.');
+      g.know('jules_twin', ['sam', 'jules', 'simone', 'nik', 'grace'], 'Jules has a twin brother at Penn.');
+      g.know('jules_chose_temple', ['sam', 'jules', 'simone', 'nik', 'grace'], 'Jules says she\'s never broken a rule. That was the lie. She chose Temple, apparently over her mother\'s objections.');
     },
     text: g => `${{
       cards: 'Simone is already shaking her head before you finish.\n\nsimone: That one\'s true. She took forty dollars off me in gin rummy last night, and I still don\'t know what gin rummy *is*.\n\njules: I explained it twice.\n\nsimone: You explained it *while winning*.\n\nThe twin, it turns out, is real too. Hugh. Penn, Wharton. "He\'s a delight," Jules says, in the voice of someone describing a weather system. "Everyone says so."\n\nWhich leaves the lie.',
@@ -147,7 +146,7 @@ grace: Nine-fourteen. You seem invested. Guess.`,
 
 ${g.f('jules_guess') !== 'love' ? 'jules: I\'ve never broken a rule.\n\nA pause, exactly long enough.\n\njules: I chose Temple.' : 'Which means the lie was the rule. Juliet Pemberton, Main Line, Honors, chose a public university on North Broad like it was a crime.'}
 
-She chose Temple like it was a crime. She has never lost a game of cards. She has a twin brother who is a delight. You walk back to 9-14 afterward knowing three true things about Juliet Pemberton, and somehow you feel like you know less than when you started.`,
+She chose Temple like it was a crime. She has never lost a game of cards. She has a twin brother who is a delight. ${!g.f('ear_called') ? 'On her way out, she passes behind your chair without slowing down. *Left ear, Kearney. You touch it when you lie. Not tonight. But you do.* ' : ''}You walk back to 9-14 knowing three true things about Juliet Pemberton and feeling like you know less than when you started.`,
     next: 'a2_hub'
   },
 
@@ -167,7 +166,7 @@ Nothing, it turns out, is a lot of things. You can't do all of them.`,
         { id: 'vinnie', text: 'FaceTime Vinnie. You haven\'t talked since the going-away thing.', cost: 1, tag: 'Vinnie', go: 'a2_vinnie' },
         { id: 'library', text: 'Get ahead on Calc at Charles Library. Nobody has to know.', cost: 1, tag: 'Grades', go: 'a2_library' },
         { id: 'home', text: 'Call home.', cost: 1, tag: 'Family', go: 'a2_home' },
-        { id: 'party', text: 'Rowhouse party on Diamond Street with Nik and Simone. It runs long.', cost: 2, tag: 'Party', go: 'a2_party' }
+        { id: 'party', text: 'Rowhouse party on Diamond Street with Nik and Simone. It runs long.', cost: 2, tag: 'Party · ends the night', go: 'a2_party' }
       ],
       done: 'a2_pool'
     }
@@ -175,7 +174,6 @@ Nothing, it turns out, is a lot of things. You can't do all of them.`,
 
   a2_ciro: {
     loc: 'CIRO\'S PIZZA · CECIL B. MOORE AVE',
-    clock: { time: '4:40 PM' },
     enter: g => { g.meet('ciro'); g.bond('ciro', { affection: 1 }); g.flag('met_ciro'); },
     text: `Ciro's Pizza is a narrow storefront between a phone repair shop and a church that used to be a bank. Inside are a counter, two tables nobody sits at, a wall of signed photos of people nobody recognizes, and Ciro Bianchi himself: sixty-something, Neapolitan, forearms like hams, an apron that has seen the fall of empires.
 
@@ -202,7 +200,7 @@ ciro: Fourteen an hour plus tips. You eat what you drop. You don't eat what you 
 The dinner rush is a blur of North Philly at golden hour: rowhouse stoops, grad students in high-rises, a Baptist church picnic that orders nine pies and pays in exact change, an old man on Norris Street who answers the door in a bathrobe and tells you, unprompted, that he was at the Spectrum for Dr. J's first home game in '76. Tips are a contact sport.`,
     choices: [
       { text: 'Work the doors. Smile, chat, remember names. Make them like you.',
-        check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'hustle', label: 'Tips', on: { strong: 'a2_ciro_strong', weak: 'a2_ciro_weak', miss: 'a2_ciro_miss' } } },
+        check: { kind: 'move', move: 'Work the Door', attr: 'charm', skill: 'hustle', label: 'Tips', on: { strong: 'a2_ciro_strong', weak: 'a2_ciro_weak', miss: 'a2_ciro_miss' } } },
       { text: 'Just be fast. Fast is a tip.',
         check: { kind: 'pool', attr: 'reflex', skill: 'ride', diff: 2, label: 'Dinner rush', on: { crit: 'a2_ciro_strong', success: 'a2_ciro_strong', partial: 'a2_ciro_weak', fail: 'a2_ciro_miss' } } }
     ]
@@ -239,9 +237,8 @@ ciro: Tomorrow. Five o'clock. Saturday is a war. Try not to die in it.`,
 
   a2_vinnie: {
     loc: 'FACETIME · A ROOF IN SOUTH PHILLY',
-    clock: { time: '6:15 PM' },
     enter: g => { g.meet('vinnie'); g.bond('vinnie', { affection: 1 }); },
-    text: `Vinnie picks up on the first ring, which means he was waiting, which he'd never admit. He's on the roof of his mother's rowhouse on Moore Street in a sleeveless Local 57 shirt, with a Yuengling sweating in his fist and the whole skyline behind him going orange. He's still got drywall dust in his eyebrows from work.
+    text: `Vinnie picks up on the first ring, which means he was waiting, which he'd never admit. He's on the roof of his mother's rowhouse on Moore Street in a sleeveless Local 57 shirt, with a Yuengling sweating in his fist and the whole skyline behind him gone white with heat. He's still got drywall dust in his eyebrows from work.
 
 vinnie: Ayyy. *College.* Look at him. Look at this guy. You get your little lanyard yet?
 
@@ -251,7 +248,7 @@ vinnie: You got a lanyard, Sally, I can *feel* it.
 
 You've known Vinnie Russo since the first day of kindergarten at St. Monica's, when he bit a kid named Brendan for you. It's the founding myth of your friendship, and he still brings it up at weddings.
 
-He tells you about work. The union's got him on a crew at the Navy Yard building out some tech campus for "the battery people, the Halcyon guys." Fat overtime, weird security, men in polo shirts who won't let anybody near the basement. Something about the way he says *college*, every time, with a little too much air in it.
+He tells you about work. The union's got him on a crew at the Navy Yard building out some tech campus for "the battery people, the Halcyon guys." Fat overtime, weird security, men in polo shirts who won't let anybody near the basement. And there's the way he says *college*, every time, with a little too much air in it.
 
 Then, casual, cracking another beer:
 
@@ -262,7 +259,7 @@ He says it like it's nothing. It isn't nothing. Everybody in South Philly knows 
 vinnie: Prob'ly nothing. Probably cabs or whatever. Just saying I saw him.`,
     choices: [
       { text: '"What young guy? Vin. Who? What did it look like?"', tag: 'Push',
-        check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'streetwise', label: 'Get it out of Vinnie', on: { strong: 'a2_vinnie_strong', weak: 'a2_vinnie_weak', miss: 'a2_vinnie_weak' } } },
+        check: { kind: 'move', move: 'Read the Street', attr: 'wits', skill: 'streetwise', label: 'Get it out of Vinnie', on: { strong: 'a2_vinnie_strong', weak: 'a2_vinnie_weak', miss: 'a2_vinnie_weak' } } },
       { text: 'Let it go. Pop\'s Pop. "Whatever. How\'s your mom?"', tag: 'Let it go',
         fx: g => { g.bond('vinnie', { trust: 1 }); g.flag('vinnie_letgo'); g.know('pop_iannucci', ['sam', 'vinnie'], 'Vinnie saw Pop in a back booth at the Melrose Diner with a young guy in an expensive jacket.'); }, go: 'a2_vinnie_end' }
     ]
@@ -310,13 +307,12 @@ It's good. It's almost like before. Then somebody calls him from downstairs, his
 
   a2_library: {
     loc: 'CHARLES LIBRARY · TEMPLE UNIVERSITY',
-    clock: { time: '1:30 PM' },
     enter: g => { g.meet('femi'); g.know('met_femi', ['sam'], 'Femi Ojo works the circulation desk at Charles Library. He naps on the fourth floor.'); },
     text: `Charles Library looks like a spaceship that landed on North Broad and decided to stay: a huge wooden ceiling that swoops over you like the inside of a wave, and glass everywhere. A robot arm in the basement fetches books from a vault, which you watch for nine full minutes through a window, like it's an aquarium.
 
 Then you sit down with the Calc syllabus and an expression of real fear.
 
-At the circulation desk there's a guy, maybe twenty, Black, round glasses, reading a paperback of *The Wealth of Nations* like it personally owes him money. Nobody is checking anything out. He seems to like it that way.
+At the circulation desk there's a guy, maybe twenty, Black, round glasses, reading a paperback of *The Wealth of Nations* like it owes him money. Nobody is checking anything out. He seems to like it that way.
 
 DESK GUY: You've been on page one of that syllabus for twenty minutes.
 
@@ -344,7 +340,7 @@ femi: Fourth floor, east corner, there's a quiet room nobody ever goes in. Best 
 
 sam: How'd you know I'm a pizza guy?
 
-femi: You've got a Ciro's menu in your back pocket and sauce on your shoe. I told you. I watch.`,
+femi: You've got a Ciro's menu in your back pocket. I told you. I watch.`,
     next: '@hub'
   },
   a2_lib_bad: {
@@ -369,15 +365,14 @@ He thinks about it.
 
 femi: Sometimes it's nice. Being invisible. You get to see how people really are.
 
-Later, much later, you'll remember he said that.`,
+He goes back to his paperback. Nobody comes to the desk.`,
     next: '@hub'
   },
 
   a2_home: {
     loc: 'PHONE · THE KEARNEY KITCHEN',
-    clock: { time: '7:45 PM' },
     enter: g => { g.meet('nonna'); g.meet('mikey'); g.bond('rosa', { affection: 1 }); g.bond('nonna', { affection: 1 }); },
-    text: `Ma picks up and immediately puts you on speaker, so you're talking to the entire Kearney kitchen at once. You can hear the gravy pot ticking. You can hear the Phillies on the radio. You can hear Gigi yelling *"IS THAT SAM"* from upstairs, and Mikey, home on his dinner break in uniform, yelling *"TELL HIM DON'T DO ANYTHING STUPID,"* which is apparently going to be his whole personality this semester.
+    text: `Ma picks up and immediately puts you on speaker, so you're talking to the entire Kearney kitchen at once. You can hear the gravy pot ticking. You can hear the Phillies on the radio. You can hear Gigi yelling *"IS THAT SAM"* from upstairs, and Mikey, home on his lunch break in uniform, yelling *"TELL HIM DON'T DO ANYTHING STUPID,"* which is apparently going to be his whole personality this semester.
 
 rosa: Are you eating?
 
@@ -416,9 +411,9 @@ mikey: Tell him don't do anything stupid!
 rosa: He knows, Michael!`,
     choices: [
       { text: '"Okay, Nonna. I\'ll wear a jacket." Mean it.', tag: 'Promise',
-        fx: g => { g.flag('nonna_promise'); g.bond('nonna', { trust: 2 }); g.know('nonna_warning', ['sam'], 'Nonna said: Saturday, near midnight, don\'t be on Broad Street. Wear a jacket.'); }, go: 'a2_home_end' },
+        fx: g => { g.flag('nonna_promise'); g.bond('nonna', { trust: 2 }); g.know('nonna_warning', ['sam', 'nonna', 'rosa', 'mikey'], 'Nonna said: Saturday, near midnight, don\'t be on Broad Street. Wear a jacket.'); }, go: 'a2_home_end' },
       { text: 'Laugh it off. "She\'s been watching the weather lady again."', tag: 'Laugh',
-        fx: g => { g.bond('nonna', { tension: 1 }); g.know('nonna_warning', ['sam'], 'Nonna said: Saturday, near midnight, don\'t be on Broad Street. Wear a jacket.'); }, go: 'a2_home_end' }
+        fx: g => { g.bond('nonna', { tension: 1 }); g.know('nonna_warning', ['sam', 'nonna', 'rosa', 'mikey'], 'Nonna said: Saturday, near midnight, don\'t be on Broad Street. Wear a jacket.'); }, go: 'a2_home_end' }
     ]
   },
   a2_home_end: {
@@ -448,7 +443,7 @@ sam: You've never been to a party?
 
 nik: I've been to *gatherings*. There were *parents*. There was *dal*.
 
-At 11:00, Jules arrives.
+At ten, Jules arrives.
 
 She's in something black and simple that costs more than Pop's cab, and she comes in with a tall guy with a rower's shoulders and a Penn Crew quarter-zip, in August. He has a face like a golden retriever that went to boarding school. He kisses her on the cheek at the door, she lets him, and you feel something you decide is indigestion.
 
@@ -456,7 +451,7 @@ simone: Callum. The boyfriend. Main Line. Since tenth grade. He's *nice*.
 
 She says *nice* the way you'd say *terminal*.
 
-At 11:40, a big junior in a backwards Flyers hat backs into Nik, and Nik's jungle juice goes all over the guy's white Air Forces. There's a moment of silence that spreads out across the room like the ripple from a stone.
+At 10:40, a big junior in a backwards Flyers hat backs into Nik, and Nik's jungle juice goes all over the guy's white Air Forces. There's a moment of silence that spreads out across the room like the ripple from a stone.
 
 FLYERS HAT: The *fuck*, man.
 
@@ -544,7 +539,7 @@ He goes back to Jules. She doesn't look at you at all, and that's somehow a whol
     next: 'a2_party_end'
   },
   a2_party_nik: {
-    text: `You don't move. It's the hardest thing you've done all week. Every muscle in you wants to go, but you plant your feet and stay one step behind Nik's shoulder, close enough to catch him.
+    text: `You don't move. Your whole body votes no. Every muscle in you wants to go, but you plant your feet and stay one step behind Nik's shoulder, close enough to catch him.
 
 And Nik, skinny, terrified Nik from Edison, opens his mouth.
 
@@ -564,7 +559,7 @@ Across the room, you see Jules looking at you, specifically at you, the guy who 
     next: 'a2_party_end'
   },
   a2_party_end: {
-    enter: g => { g.meet('callum'); g.know('jules_callum', ['sam'], 'Jules has a boyfriend: Callum Whitford, Penn Crew. He\'s nice. That\'s the problem.'); g.bond('callum', { affection: 1 }); },
+    enter: g => { g.meet('callum'); g.know('jules_callum', ['sam', 'simone'], 'Jules has a boyfriend: Callum Whitford, Penn Crew. He\'s nice. That\'s the problem.'); g.bond('callum', { affection: 1 }); ['ciro', 'vinnie', 'library', 'home'].forEach(k => { if (!g.f('did_' + k)) g.flag('skipped_' + k); }); },
     text: `Later, out on the stoop, the night air's like soup and somebody is playing Drake from a phone in their back pocket. Simone shares a cigarette she doesn't actually smoke with a girl she's absolutely going to make out with by October.
 
 simone: You know he's a rower, right? Callum. They're all like that. Bodies like Greek gods, souls like a LinkedIn.
@@ -576,21 +571,21 @@ simone: Mmhm.
 sam: I don't.
 
 simone: Salvatore, I've known you for thirty-six hours, and you've said "I don't care about Callum" three times.`,
-    next: '@hub'
+    next: 'a2_pool'
   },
 
   /* ---------------- The pool table ---------------- */
   a2_pool: {
     loc: 'HOWARD GITTIS STUDENT CENTER · GAME ROOM',
     clock: { day: 'Fri', date: 'Aug 21', time: '11:52 PM' },
-    enter: g => { if (!g.met('simone')) g.meet('simone'); },
+    enter: g => { if (!g.met('simone')) g.meet('simone'); if (!g.f('did_party')) { g.meet('callum'); g.know('jules_callum', ['sam', 'simone'], 'Jules has a boyfriend: Callum Whitford, Penn Crew. He\'s nice. That\'s the problem.'); } },
     text: g => `${g.f('did_party') ? 'The party dies when somebody\'s neighbor calls L&I about the porch, and the herd migrates to the Student Center, which is open till two during Welcome Week and has the only air conditioning in North Philly that works.' : 'Nik and Simone drag you out at eleven-thirty. Simone has heard there\'s "a situation" in the Student Center game room, and she says it like a war correspondent.'}
 
 The situation is Jules.
 
 She's at the last pool table in the back, under a buzzing fluorescent light, in a crowd of about thirty people. Her cue's chalked. Her hair's still up. Across the table, two Sigma-something guys in matching salmon shorts are losing, slowly and expensively. There's a little stack of twenties on the rail next to her elbow. She's running the table the way she does everything, like it's slightly beneath her, and she's doing it anyway because no one else will do it correctly.
 
-${g.f('did_party') ? 'Callum is nowhere. "Early practice," Simone says. "Crew. They wake up at 4:45 to sit in a boat backwards. It\'s like a cult with oars."' : ''}
+${g.f('did_party') ? 'Callum is nowhere. "Early practice," Simone says. "Crew. They wake up at 4:45 to sit in a boat backwards. It\'s like a cult with oars."' : 'Simone, low, at your elbow: "Her boyfriend\'s at Penn. Callum. Rower. He\'s *nice*." She says *nice* the way you\'d say *terminal*.'}
 
 simone: Nobody learns to play like that at a country club. Somebody *taught* her. Somebody mean. I've known her two days and I'd bet my whole meal plan it was a grandmother.
 
@@ -602,7 +597,7 @@ Jules drops the eight ball, cleanly, in the called pocket, and the second salmon
 
 She looks up and sees you.
 
-jules: Ah. The refrigerator man.
+jules: Ah. The refrigerator man.${g.hurt('black_eye') ? '\n\nHer eyes go to your eye and stay there a second. She doesn\'t mention it. That\'s worse.' : g.hurt('split_lip') ? '\n\nShe glances at your lip and says nothing.' : ''}
 
 sam: Beverage center.
 
@@ -625,7 +620,7 @@ jules: Then what are you going to play me for?`,
   a2_pool_game: {
     text: g => `${g.f('pool_bet') === 'favor' ? 'She actually pauses. Thirty people watch Juliet Pemberton pause.\n\njules: Any favor?\n\nsam: Within reason.\n\njules: Whose reason?\n\nsam: …Mine.\n\njules: Then no. *Any* favor.\n\nThe crowd goes *ooooh*. You should say no. Every cell in your body that came from Rosa Kearney is telling you to say no.\n\nsam: Fine. Any favor.\n\njules: Rack them.' : 'jules: ' + (g.f('pool_bet') === 40 ? 'Forty is a strange number. ' : 'Twenty and your pride. Your pride is worth very little to me, but I accept. ') + 'Rack them.'}
 
-You rack. She breaks, and the break sounds like a gunshot in a church. Two solids drop. She walks around the table the way your grandmother walks around a produce stand, and three more go down without touching a rail, and then she misses.
+You rack. She breaks, and the break cracks like a bat on a fastball. Two solids drop. She walks around the table the way your grandmother walks around a produce stand, and three more go down without touching a rail, and then she misses.
 
 It's a deliberate miss, a soft little nothing shot. She leaves you the table on purpose. The crowd doesn't notice, but you do.
 
@@ -634,7 +629,7 @@ jules: Your shot.
 She's giving you a chance, or she's showing you that she *can*. With her, it might be the same thing.`,
     choices: [
       { text: 'Run the table. Uncle Tommy\'s basement. Everything you\'ve got.',
-        check: { kind: 'pool', attr: 'reflex', skill: 'hustle', diff: 3, label: 'Run the table', on: { crit: 'a2_pool_crit', success: 'a2_pool_success', partial: 'a2_pool_partial', fail: 'a2_pool_fail' } } },
+        check: { kind: 'pool', attr: 'reflex', skill: 'hustle', diff: 3, near: ['jules'], label: 'Run the table', on: { crit: 'a2_pool_crit', success: 'a2_pool_success', partial: 'a2_pool_partial', fail: 'a2_pool_fail' } } },
       { text: 'Play it smart. Safeties. Make her work for it.',
         check: { kind: 'd20', attr: 'wits', skill: 'hustle', dc: 15, label: 'Out-think her', on: { crit: 'a2_pool_crit', success: 'a2_pool_success', fail: 'a2_pool_fail', fumble: 'a2_pool_fail' } } }
     ]
@@ -705,7 +700,7 @@ jules: Hm.`,
     next: 'a2_pool_after'
   },
   a2_pool_fail: {
-    enter: g => { g.bond('jules', { tension: 1, respect: -1 }); g.flag('pool_result', 'fail'); },
+    enter: g => { g.bond('jules', { respect: -1 }); g.flag('pool_result', 'fail'); },
     text: `It's a disaster. It's Uncle Tommy's basement played in reverse. You scratch on your first shot, and the crowd goes *ohhh*. You knock in one of *hers* on your second. On your third, the cue ball hops the rail, rolls across the floor, and stops at the feet of a security guard, who looks at it, looks at you, and goes back to his phone.
 
 She runs the table without looking up.
@@ -714,17 +709,17 @@ jules: Well. You were very brave.
 
 sam: Thank you.
 
-jules: That also wasn't a compliment.`,
+jules: It was a eulogy.`,
     next: 'a2_pool_after'
   },
   a2_pool_after: {
     enter: g => {
       const b = g.f('pool_bet');
-      if (b === 'favor') g.know('owe_jules_favor', ['sam', 'jules'], 'You owe Jules Pemberton one favor. Any favor. Her choosing, whenever she wants.', { track: true });
-      else g.money(-b);
+      if (b === 'favor') g.know('owe_jules_favor', ['sam', 'jules', 'simone', 'nik'], 'You owe Jules Pemberton one favor. Any favor. Her choosing, whenever she wants.', { track: true });
+      else if (['crit', 'success'].includes(g.f('pool_result'))) g.flag('jules_waived_bet'); else g.money(-b);
       g.know('jules_ivory_die', ['sam'], 'Jules carries an old ivory die from her grandmother. "It isn\'t lucky. Luck isn\'t real."');
     },
-    text: g => `${g.f('pool_bet') === 'favor' ? 'jules: One favor.\n\nShe holds out her hand to shake on it. Her grip is cool and dry and sure.\n\njules: I\'ll let you know.\n\nsam: When?\n\njules: When it\'ll hurt the most.' : 'You count out the money. ' + (g.f('pool_bet') === 40 ? 'It\'s Pop\'s money, or Ciro\'s, or both, and either way it hurts. ' : '') + 'She takes it without counting, folds it once, and puts it in the back of her phone case, and you feel like you\'ve paid a toll on a road you didn\'t mean to drive down.'}
+    text: g => `${g.f('pool_bet') === 'favor' ? 'jules: One favor.\n\nShe holds out her hand to shake on it. Her grip is cool and dry and sure.\n\njules: I\'ll let you know.\n\nsam: When?\n\njules: When it\'ll hurt the most.' : (g.f('jules_waived_bet') ? 'You start counting out the money. She stops you with two fingers on the back of your hand.\n\njules: Keep it. You earned a rematch.\n\nIt\'s somehow the most humiliating thing that\'s happened all night.' : 'You count out the money. ' + (g.f('pool_bet') === 40 ? (g.f('pop_money') !== 'refused' || g.f('did_ciro') ? 'It\'s Pop\'s money, or Ciro\'s, or both, and either way it hurts. ' : 'It\'s almost everything you\'ve got, and it hurts. ') : '') + 'She takes it without counting, folds it once, and puts it in the back of her phone case, and you feel like you\'ve paid a toll on a road you didn\'t mean to drive down.')}
 
 While the crowd breaks up, you see her fidgeting with something on the rail: a small, old, yellowed die, ivory or bone, with the corners worn round. She rolls it between her fingers without looking at it, the way some people play with a ring.
 
@@ -756,7 +751,9 @@ TXT simone: For the record she called you "the refrigerator person" four times o
 
 nik: Okay, so I've decided I'm going to be a person who goes to parties now. ${g.f('did_party') ? 'That was the best night of my life. A man wanted to kill me. ' : 'I didn\'t go to the party but Simone told me about it and I feel like I was there spiritually. '}Do you want to play Elden Ring? I have a co-op build. It's a *healer*. I'm always the healer.
 
-Your shift at Ciro's starts at five tomorrow. Saturday is a war. And through the wall, very faintly, you can hear the hum of a beverage center across the hall.`,
+${g.f('did_ciro') ? 'Your shift at Ciro\'s starts at five. Saturday is a war.' : 'Your first shift at Ciro\'s starts at five.'} And from across the hall, very faintly, under everything, you can hear the hum of a beverage center.
+
+> APERTURE · T−22:31:04`,
     choices: [
       { text: 'Co-op with Nik till four in the morning. Be his tank.', tag: 'Sleep 5h',
         fx: g => { g.sleep(5); g.bond('nik', { affection: 2, trust: 1 }); g.flag('night', 'nik'); }, go: 'a3_day' },

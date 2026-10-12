@@ -111,7 +111,9 @@
     const notes = sink || [];
     const note = (text, kind, dir) => notes.push({ text, kind: kind || 'stat', dir: dir || 0 });
     const g = {
-      S, notes, last: null,
+      S, notes,
+      get last() { return S.lastRoll || null; },
+      set last(v) { S.lastRoll = v; },
       get ep() { return S.ep; },
       flag(k, v) { S.flags[k] = (v === undefined ? true : v); return g; },
       f(k) { return S.flags[k]; },
@@ -131,9 +133,12 @@
       },
       b(id) { return EH.bondOf(S, id); },
       heat(id, n) {
-        S.heat[id] = clamp((S.heat[id] || 0) + n, 0, 10);
+        if (!n) return g;
+        const was = S.heat[id] || 0;
+        S.heat[id] = clamp(was + n, 0, 10);
         const nm = EH.WATCHERS[id] || (EH.CAST[id] && EH.CAST[id].label) || id;
-        if (id !== 'halcyon') note(nm + ' · Suspicion ' + sgn(n), 'heat', -Math.sign(n));
+        note(nm + ' · Suspicion ' + sgn(n), 'heat', -Math.sign(n));
+        if (S.heat[id] >= 10 && was < 10) { S.flags['heat_max_' + id] = true; note(nm + ' has figured something out.', 'heat', -1); }
         return g;
       },
       h(id) { return S.heat[id] || 0; },
@@ -152,7 +157,7 @@
       money(n) { S.money.cash += n; note('Cash ' + (n < 0 ? '−$' + (-n) : '+$' + n), 'money', Math.sign(n)); return g; },
       bank(n) { S.money.bank += n; note('Bank ' + (n < 0 ? '−$' + (-n) : '+$' + n), 'money', Math.sign(n)); return g; },
       cash() { return S.money.cash; },
-      grade(c, n) { S.grades[c] = clamp((S.grades[c] || 70) + n, 0, 100); note((EH.COURSES[c] || c).split(' ').slice(0, 2).join(' ') + ' standing ' + sgn(n), 'stat', Math.sign(n)); return g; },
+      grade(c, n) { S.grades[c] = clamp((S.grades[c] ?? 70) + n, 0, 100); note((EH.COURSES[c] || c).split(' ').slice(0, 2).join(' ') + ' standing ' + sgn(n), 'stat', Math.sign(n)); return g; },
       sleep(h) {
         const before = S.sleepDebt;
         if (h < 8) S.sleepDebt = clamp(S.sleepDebt + (8 - h), 0, 10); else S.sleepDebt = clamp(S.sleepDebt - (h - 8), 0, 10);
@@ -160,6 +165,11 @@
         else { S.pools.stamina = Math.min(EH.maxPool(S, 'stamina'), S.pools.stamina + Math.floor(h / 2)); S.pools.focus = Math.min(EH.maxPool(S, 'focus'), S.pools.focus + Math.floor(h / 2)); }
         note('Slept ' + h + 'h · Sleep Debt ' + S.sleepDebt + (S.sleepDebt !== before ? ' (' + sgn(S.sleepDebt - before) + ')' : ''), 'stat', S.sleepDebt > before ? -1 : 1);
         return g;
+      },
+      nap(h) {
+        const b = S.sleepDebt; S.sleepDebt = clamp(S.sleepDebt - Math.ceil(h / 2), 0, 10);
+        S.pools.stamina = Math.min(EH.maxPool(S, 'stamina'), S.pools.stamina + h); S.pools.focus = Math.min(EH.maxPool(S, 'focus'), S.pools.focus + h);
+        note('Napped ' + h + 'h · Sleep Debt ' + S.sleepDebt + ' (' + sgn(S.sleepDebt - b) + ')', 'stat', 1); return g;
       },
       pool(p, n) { S.pools[p] = clamp(S.pools[p] + n, 0, EH.maxPool(S, p)); if (n) note(p[0].toUpperCase() + p.slice(1) + ' ' + sgn(n), 'stat', Math.sign(n)); return g; },
       drift(n) { S.drift = clamp(S.drift + n, 0, 10); S.hidden.revenant_drift += Math.max(0, n) * 0.5; if (n) note('Drift ' + sgn(n), 'stat', -Math.sign(n)); return g; },
@@ -174,7 +184,12 @@
       has(node) { return S.powers.slip.nodes.includes(node); },
       offer(node) { const P = S.powers.slip; P.offered = P.offered || []; if (!P.offered.includes(node) && !P.nodes.includes(node)) { P.offered.push(node); note('New power available to learn · ' + EH.NODES[node].name, 'power', 1); } return g; },
       mastery(n) { S.powers.slip.mastery = clamp(S.powers.slip.mastery + n, 0, 100); return g; },
-      attr(k, n) { S.attrs[k] = clamp(S.attrs[k] + n, 1, 5); note(EH.ATTR_NAMES[k] + ' ' + sgn(n), 'stat', Math.sign(n)); EH.refill(S, true); return g; },
+      attr(k, n) {
+        const P = ['stamina', 'focus', 'nerve'], before = P.map(p => EH.maxPool(S, p));
+        S.attrs[k] = clamp(S.attrs[k] + n, 1, 5);
+        P.forEach((p, i) => { S.pools[p] = clamp(S.pools[p] + EH.maxPool(S, p) - before[i], 0, EH.maxPool(S, p)); });
+        note(EH.ATTR_NAMES[k] + ' ' + sgn(n), 'stat', Math.sign(n)); return g;
+      },
       skill(k, n) { S.skills[k] = clamp((S.skills[k] || 0) + n, 0, 5); note(EH.SKILLS[k] + ' ' + sgn(n), 'stat', Math.sign(n)); return g; },
       a(k) { return S.attrs[k]; }, sk(k) { return S.skills[k] || 0; },
       recap(t) { S.recap.push({ ep: S.ep, t }); return g; },
@@ -190,7 +205,7 @@
   const d = n => 1 + Math.floor(Math.random() * n);
   EH.attrMod = r => r - 2;
   EH.skillBonus = s => (s >= 4 ? 2 : s >= 2 ? 1 : 0);
-  EH.injPen = S => S.injuries.reduce((a, i) => a + (i.pen || 0), 0);
+  EH.injPen = (S, attr) => S.injuries.filter(i => !i.affects || i.affects.includes(attr)).reduce((a, i) => a + (i.pen || 0), 0);
 
   // Build the modifier breakdown for a check (before pushes).
   EH.checkCalc = function (S, c) {
@@ -201,7 +216,7 @@
       base = A + K;
       if (c.bonus) { rows.push([c.bonusLabel || 'Situation', c.bonus]); base += c.bonus; }
       const sp = Math.floor(S.sleepDebt / 3); if (sp) { rows.push(['Sleep Debt', -sp]); base -= sp; }
-      const ip = EH.injPen(S); if (ip && c.physical !== false) { rows.push(['Injuries', -ip]); base -= ip; }
+      const ip = EH.injPen(S, c.attr); if (ip && c.physical !== false) { rows.push(['Injuries', -ip]); base -= ip; }
       if (S.drift >= 5 && c.attr === 'wits') { rows.push(['Drift', -1]); base -= 1; }
     } else if (c.kind === 'move') {
       const am = EH.attrMod(A), sb = c.skill ? EH.skillBonus(K) : 0;
@@ -289,7 +304,8 @@
   EH.tryNudge = function (S, c, res) {
     if (!c.near || !c.near.includes('jules')) return false;
     if (EH.isClean(res.tier)) return false;
-    const luck = S.hidden.jules_luck + Math.max(0, (S.bonds.jules ? S.bonds.jules.affection : 0)) * 0.02;
+    const jb = S.bonds.jules || { affection: 0, trust: 0 };
+    const luck = S.hidden.jules_luck + Math.max(0, jb.affection + jb.trust) * 0.01;
     if (Math.random() >= luck) return false;
     if (res.kind === 'pool') {
       let idx = -1, lo = 99; res.dice.forEach((v, i) => { if (v < 7 && v < lo) { lo = v; idx = i; } });

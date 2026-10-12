@@ -22,7 +22,7 @@ He hangs up and looks at the slip like it smells funny.
 
 ciro: They tip like Protestants. Go anyway.
 
-Out the back door, Ciro's old windbreaker hangs on the hook, the green one with *CIRO'S* across the back in cracked white letters. It's ninety degrees outside. The air sits on the street like a hand.
+Out the back door, Ciro's old windbreaker hangs on the hook, the green one with *CIRO'S* across the back in cracked white letters. Outside, the air sits on the street like a hand.
 
 *Saturday, you wear a jacket. Near midnight. The clocks.*${g.f('did_home') ? '\n\n*You don\'t be on Broad Street.*' : ''}`,
     choices: [
@@ -102,11 +102,11 @@ MARCO: Okay, papa. Here. Twenty. Go home. Go home, okay?`,
 
 You coast back out to Broad Street and stop at the light at Spring Garden. One foot down. The e-bike hums under you. It's 11:50 by the bank clock on the corner. Your phone says the same.
 
-Northbound, a SEPTA bus, the 16, is coming down Broad way too fast on the wet asphalt.
+Northbound, a SEPTA bus, the 16, is coming up Broad way too fast on the wet asphalt.
 
 In the crosswalk, a little boy in a Spider-Man backpack holds his grandmother's hand. She's looking at her phone.
 
-${g.f('jacket') ? 'For no reason you can name, you untie the windbreaker from your waist and put it on. It\'s ninety degrees. You zip it to your chin.' : 'A drop of sweat runs down your spine. It\'s ninety degrees. You think, for no reason, of your grandmother\'s hands on your face.'}
+${g.f('jacket') ? 'For no reason you can name, you untie the windbreaker from your waist and put it on. It\'s ninety degrees. You zip it to your chin.' : 'A drop of sweat runs down your spine. You think, for no reason, of your grandmother\'s hands on your face.'}
 
 You know this part.`,
     next: 'a3_light'
@@ -119,7 +119,7 @@ You know this part.`,
     sfx: 'whoosh',
     enter: g => {
       g.recap('At 11:51:04 on Saturday night, every clock in North Philadelphia stopped. You didn\'t.');
-      if (!g.f('jacket')) g.injure({ id: 'frostnip', name: 'Frostnip (hands)', pen: 1, heal: 1 });
+      if (!g.f('jacket')) g.injure({ id: 'frostnip', name: 'Frostnip (hands)', pen: 1, heal: 1, affects: ['body', 'reflex'] });
     },
     text: g => `The light. The silence. The rain hanging in the air like beads on a curtain.
 
@@ -129,7 +129,7 @@ You're off the bike. You're running into the rain that isn't falling, and each d
 
 The bus is moving. That's the thing. It isn't stopped like everything else. It's *slow*, slow as the minute hand on a clock, but it's coming, a wall of white metal with an ad for a personal-injury lawyer on the side, its front tire already skidding sideways on the wet. The driver is frozen behind the windshield with her mouth open in a perfect O.
 
-The boy is in the middle of the crosswalk, one sneaker lifted. The grandmother is a step behind him, her thumb paused mid-scroll on her phone screen, which shows a photo of the boy, blowing out candles.
+The boy is in the middle of the crosswalk, one sneaker lifted. The grandmother is a step behind him, her thumb paused mid-scroll on her phone screen, which shows a photo of the boy, blowing out candles. Her eyes are open. A raindrop hangs a quarter inch from one of them, and she isn't blinking, and she isn't going to.
 
 You have no idea how long this lasts. You have no idea what this is. You only know one thing, with total certainty, the way you know your own name:
 
@@ -137,10 +137,10 @@ You have no idea how long this lasts. You have no idea what this is. You only kn
     choices: [
       { text: 'The kid. Go for the kid. *Now.*',
         check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, label: 'Reach him', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } },
-        fx: g => { g.flag('hitch_choice', 'kid'); g.hidden('revenant_drift', 0.3); } },
+        fx: (g, t, res) => { g.flag('hitch_choice', 'kid'); g.hidden('revenant_drift', 0.3); g.flag('hitch_rewound', !!(res && res.rewound)); } },
       { text: 'The bus. Get to the driver. Get the wheel.',
-        check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 3, label: 'Turn the bus', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } },
-        fx: g => { g.flag('hitch_choice', 'wheel'); g.hidden('revenant_drift', 0.3); } },
+        check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 3, bonus: 1, bonusLabel: 'Momentum', label: 'Turn the bus', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } },
+        fx: (g, t, res) => { g.flag('hitch_choice', 'wheel'); g.hidden('revenant_drift', 0.3); g.flag('hitch_rewound', !!(res && res.rewound)); } },
       { text: 'Stop. Breathe. *Look at the whole street first.* You\'ve got time. Maybe. Use it.',
         check: { kind: 'd20', attr: 'wits', skill: 'investigate', dc: 12, label: 'See it all', on: { crit: 'a3_look_good', success: 'a3_look_good', fail: 'a3_look_bad', fumble: 'a3_look_bad' } },
         fx: g => { g.flag('hitch_choice', 'look'); g.hidden('revenant_drift', -0.6); } }
@@ -160,7 +160,8 @@ You see it all at once, like a diagram. *Kid first. Then the wheel. Into the van
 You've got time to do both, if you don't waste a single step.`,
     choices: [
       { text: 'Both. The kid, then the wheel. Every step counts.',
-        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, bonus: 2, bonusLabel: 'You saw it all', label: 'Kid, then wheel', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } } }
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, bonus: 2, bonusLabel: 'You saw it all', label: 'Kid, then wheel', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } },
+        fx: (g, t, res) => g.flag('hitch_rewound', !!(res && res.rewound)) }
     ]
   },
   a3_look_bad: {
@@ -170,10 +171,11 @@ You've got time to do both, if you don't waste a single step.`,
 
 And the bus is still moving.
 
-You've wasted steps. You know it, the way you know when you've overrun a grounder. Now it's going to be close.`,
+You've wasted steps. You know it, the way you know when you've missed a bus by one stop. Now it's going to be close.`,
     choices: [
       { text: 'Go. *Go.* The kid.',
-        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 4, label: 'Make up the time', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } } }
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, label: 'Make up the time', forceRewind: true, on: { crit: 'a3_out_clean', success: 'a3_out_clean', partial: 'a3_out_partial', fail: 'a3_out_fail', botch: 'a3_out_fail' } },
+        fx: (g, t, res) => g.flag('hitch_rewound', !!(res && res.rewound)) }
     ]
   },
 
@@ -182,10 +184,9 @@ You've wasted steps. You know it, the way you know when you've overrun a grounde
     enter: g => {
       g.flag('hitch_result', 'clean'); g.flag('carmen', 'safe');
       g.unlock('burst'); g.unlock('slip'); g.drift(2); g.mastery(5); g.xp(1);
-      if (g.last && g.last.rewound) g.know('first_rewind', ['sam'], 'In the frozen moment, you failed, and then time ran backward and gave you another try. You didn\'t choose that. It just happened.');
-      g.meet('jayden');
+      if (g.f('hitch_rewound')) g.know('first_rewind', ['sam'], 'In the frozen moment, you failed, and then time ran backward and gave you another try. You didn\'t choose that. It just happened.');
     },
-    text: g => `${g.last && g.last.rewound ? 'For a second you *fail*. You feel it happen. You\'re a step short and the bus is there, it\'s *there*. Then the world tears down the middle like a page, and everything runs backward. The frozen rain falls *up*. Your footsteps un-happen behind you. You\'re back at the curb with your heart going like a jackhammer, and something in the back of your skull says, in a voice that sounds a lot like yours, *No. Again.*\n\nAgain.\n\n' : ''}${g.f('hitch_choice') === 'wheel' ? 'You hit the bus door at a dead run. It\'s locked, folded shut, but the driver\'s side window is open a crack for air, and you get your arm through the gap up to the shoulder and get your hand on the wheel, and you *pull*. It turns. It turns like moving a car with your bare hands through wet cement. The front of the bus swings slowly away from the crosswalk, toward the parked van, and you let go and drop and roll.' : 'You get to the boy. You scoop him up, backpack and all, like a grounder you were always going to get, and keep going. Your feet barely touch. Three steps, four, then the curb. You set him down on the far sidewalk under the bank clock and turn around.\n\nThe grandmother is still a half step back, out of the bus\'s line. ' + (g.f('hitch_choice') === 'look' ? 'And you\'re already moving again. Back across. Up onto the bus\'s bumper. Your arm through the driver\'s cracked-open window to the wheel. You *pull*, and it turns like cement, and the bus swings away from her toward the empty van, and you drop and roll.' : 'You were right. The line of the bus misses her by a foot. It\'s going to miss her by a foot. You stand there and shake.')}
+    text: g => `${g.f('hitch_rewound') ? 'For a second you *fail*. You feel it happen. You\'re a step short and the bus is there, it\'s *there*. Then the world tears down the middle like a page, and everything runs backward. The frozen rain falls *up*. Your footsteps un-happen behind you. You\'re back at the curb with your heart going like a jackhammer, and something in the back of your skull says, in a voice that sounds a lot like yours, *No. Again.*\n\nAgain.\n\n' : ''}${g.f('hitch_choice') === 'wheel' ? 'You hit the bus door at a dead run. It\'s locked, folded shut, but the driver\'s side window is open a crack for air, and you get your arm through the gap up to the shoulder and get your hand on the wheel, and you *pull*. It turns. It turns like pushing a parked car through wet cement. The front of the bus swings slowly away from the crosswalk, toward the parked van, and you let go and drop and roll.' : 'You get to the boy. You scoop him up, backpack and all, like a bag of groceries you were always going to catch, and keep going. Your feet barely touch. Three steps, four, then the curb. You set him down on the far sidewalk under the bank clock and turn around.\n\nThe grandmother is still a half step back, out of the bus\'s line. ' + (g.f('hitch_choice') === 'look' ? 'And you\'re already moving again. Back across. Up onto the bus\'s bumper. Your arm through the driver\'s cracked-open window to the wheel. You *pull*, and it turns like cement, and the bus swings away from her toward the empty van, and you drop and roll.' : 'You were right. The line of the bus misses her by a foot. It\'s going to miss her by a foot. You stand there and shake.')}
 
 And then.
 
@@ -209,12 +210,12 @@ jayden: You were the cold man.`,
     enter: g => {
       g.flag('hitch_result', 'partial'); g.flag('carmen', 'wrist');
       g.unlock('burst'); g.unlock('slip'); g.drift(3); g.mastery(4);
-      if (g.f('hitch_choice') === 'wheel') g.injure({ id: 'bruised_ribs', name: 'Bruised ribs', pen: 1, heal: 2 });
-      if (g.last && g.last.rewound) g.know('first_rewind', ['sam'], 'In the frozen moment, you failed, and then time ran backward and gave you another try. You didn\'t choose that. It just happened.');
+      if (g.f('hitch_choice') === 'wheel') g.injure({ id: 'bruised_ribs', name: 'Bruised ribs', pen: 1, heal: 2, affects: ['body', 'reflex'] });
+      if (g.f('hitch_rewound')) g.know('first_rewind', ['sam'], 'In the frozen moment, you failed, and then time ran backward and gave you another try. You didn\'t choose that. It just happened.');
     },
-    text: g => `${g.last && g.last.rewound ? 'You fail. You feel it happen. And then the world tears down the middle like a page, and the rain falls *up*, and your footsteps un-happen, and a voice in the back of your skull that sounds like yours says, *No. Again.* You\'re back at the curb. You go again.\n\n' : ''}You get there. Almost.
+    text: g => `${g.f('hitch_rewound') ? 'You fail. You feel it happen. And then the world tears down the middle like a page, and the rain falls *up*, and your footsteps un-happen, and a voice in the back of your skull that sounds like yours says, *No. Again.* You\'re back at the curb. You go again.\n\n' : ''}You get there. Almost.
 
-${g.f('hitch_choice') === 'wheel' ? 'You get your arm through the driver\'s window and haul the wheel, and the bus turns, but not enough. You feel something in your side go *pop* against the window frame. The bumper clips the grandmother\'s outstretched arm as it swings past.' : 'You get the boy. You scoop him up and run, and the bus comes through the crosswalk where he was standing. But the grandmother has stepped forward after him. Of course she has. Its side mirror catches her arm as it goes past.'}
+${g.f('hitch_choice') === 'wheel' ? 'You get your arm through the driver\'s window and haul the wheel, and the bus turns, but not enough. You feel something in your side go *pop* against the window frame. The bumper clips the grandmother\'s outstretched arm as it swings past. Somehow the boy is on the sidewalk. Somehow his hand is in yours. You don\'t remember any of it.' : 'You get the boy. You scoop him up and run, and the bus comes through the crosswalk where he was standing. But the grandmother has stepped forward after him. Of course she has. Its side mirror catches her arm as it goes past.'}
 
 !! ~SLAM
 
@@ -234,7 +235,7 @@ jayden: You were the cold man.`,
     enter: g => {
       g.flag('hitch_result', 'fail'); g.flag('carmen', 'hip');
       g.unlock('burst'); g.unlock('slip'); g.drift(3); g.mastery(3);
-      g.injure({ id: 'bruised_ribs', name: 'Bruised ribs', pen: 1, heal: 2 });
+      g.injure({ id: 'bruised_ribs', name: 'Bruised ribs', pen: 1, heal: 2, affects: ['body', 'reflex'] });
       g.hidden('revenant_drift', 0.5);
       g.know('first_rewind', ['sam'], 'In the frozen moment, you failed, and time ran backward to give you another try. You failed again anyway.');
     },
@@ -254,7 +255,7 @@ Sound comes back all at once. Metal. A car alarm. Glass. Then, worst of all, a s
 
 She's lying in the street, crumpled at the hip, ten feet from where she was standing. She's breathing. You can see her breathing. She's looking at the sky, and her lips are moving, and when you crawl over to her on your hands and knees, you hear what she's saying. She's praying, in Spanish, for the boy.
 
-The boy is sitting on the curb where you dropped him, unhurt, not crying, just staring at you.
+${g.f('hitch_choice') === 'wheel' ? 'The boy is sitting on the curb. You don\'t know how he got there. He\'s' : 'The boy is sitting on the curb where you dropped him,'} unhurt, not crying, just staring at you.
 
 jayden: You were the cold man.
 
@@ -264,15 +265,17 @@ He's alive. She's alive. You did it, and you didn't, and your nose is pouring bl
 
   a3_after: {
     night: true,
-    loc: 'BROAD & SPRING GARDEN · 11:51:05 PM',
+    loc: 'BROAD & SPRING GARDEN',
+    clock: { time: '11:51:05 PM' },
     enter: g => {
+      g.meet('jayden'); g.meet('carmen');
       g.know('jayden_cold_man', ['sam'], 'The boy, Jayden, called you "the cold man."');
       g.know('sam_slip', ['sam'], 'Your secret: when the world stopped, you didn\'t.', { track: true });
       g.recap('You pulled a little boy named Jayden out from in front of the 16 bus. He called you "the cold man."');
     },
     text: g => `North Philadelphia is dark.
 
-Not *dim*: dark. Every streetlight on Broad is out, every window, every traffic signal, all the way up to the Divine Lorraine, whose red sign is gone like somebody blew out a candle. The only light comes from car headlights, and from the Halcyon building, which is still blazing, every window white, like it's the only thing in the city that got the memo.
+Not *dim*: dark. Every streetlight on Broad is out, every window, every traffic signal, all the way up to the Divine Lorraine, whose red sign is gone like somebody blew out a candle. The only light comes from car headlights, and from the Halcyon building, which is still blazing, every window white, like it's the only building in the city that saw this coming.
 
 And from above. There's something in the sky over the city: a slow ripple of color, green and violet, folding over itself like a curtain in a draft. Like the Northern Lights, if they'd never heard of the North.
 
@@ -280,7 +283,7 @@ Up and down Broad Street, people are stopping. Getting out of their cars. Holdin
 
 You look at your phone. 11:51:05. The second before it, 11:51:04, is just *gone*. You'll learn later that every phone in North Philly lost the same 0.7 seconds, and for a while it's the only thing anybody in the city talks about.
 
-${g.f('carmen') === 'hip' ? 'You\'re kneeling next to the grandmother in the street. Her name is Carmen, she tells you, Carmen Torres, and the boy is Jayden, he\'s eight, his birthday was Tuesday. She keeps saying it like it\'s important that someone knows. Someone\'s calling 911. Someone else is directing traffic around her with their phone flashlight.' : g.f('carmen') === 'wrist' ? 'The grandmother, Carmen Torres, is sitting on the curb with her wrist held against her chest and Jayden in her lap, rocking him, rocking herself. She keeps looking at you like she\'s trying to remember where she knows you from.' : 'The grandmother, Carmen Torres, has Jayden in her arms on the curb and won\'t let go of him. She looks up at you and says, very clearly, "Gracias, mijo. Gracias. Gracias." She doesn\'t know what she\'s thanking you for. Neither do you.'}
+${g.f('carmen') === 'hip' ? 'You\'re kneeling next to the grandmother in the street. Her name is Carmen, she tells you, Carmen Torres, and the boy is Jayden, he\'s eight, his birthday was Tuesday. She keeps saying it like it\'s important that someone knows. Someone\'s calling 911. Someone else is directing traffic around her with their phone flashlight. An EMT is already saying *Temple* into a radio.' : g.f('carmen') === 'wrist' ? 'The grandmother (Carmen, she tells you, Carmen Torres) is sitting on the curb with her wrist held against her chest and Jayden in her lap, rocking him, rocking herself. She keeps looking at you like she\'s trying to remember where she knows you from. An EMT is already saying *Temple* into a radio.' : 'The grandmother (Carmen, she tells you, Carmen Torres) has Jayden in her arms on the curb and won\'t let go of him. She looks up at you and says, very clearly, "Gracias, mijo. Gracias. Gracias." She doesn\'t know what she\'s thanking you for. Neither do you.'}
 
 Then you see him.
 
@@ -300,8 +303,8 @@ Sirens are coming from the south. Your nose won't stop bleeding.`,
   },
   a3_after_stay: {
     night: true,
-    enter: g => g.know('halcyon_tablet_man', ['sam'], 'A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light. He stopped right next to you.'),
-    text: g => `You stay. You sit down on the wet curb and put your arm around Jayden, and you hold Carmen's good hand, and you bleed politely into a napkin from the pizza bag while the sirens get louder.
+    enter: g => g.flag('tablet_saw_you') && g.know('halcyon_tablet_man', ['sam'], 'A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light. He stopped right next to you.'),
+    text: g => `You stay. You sit down on the wet curb and put your arm around Jayden, and you hold ${g.f('carmen') === 'wrist' ? 'Carmen\'s good hand' : 'Carmen\'s hand'}, and you bleed politely into a napkin from the pizza bag while the sirens get louder.
 
 Tablet Guy walks right up to the crosswalk. He stops six feet from you. He looks at his screen, and then, very slowly, he looks at you. His face is pleasant, forgettable, the face of a man who manages a Best Buy. His eyes take a picture.
 
@@ -315,7 +318,7 @@ He smiles, nods, and moves on down the block, sweeping, sweeping.
 
 A Philly cop takes your statement for the crash report: young guy, sunburned, from the 6th District, sent up because everyone is being sent up. You give your name, your real name. Kearney. He looks up.
 
-COP: Kearney? Like Mikey Kearney, the 3rd?
+COP: Kearney? Like Mikey Kearney? From the 3rd District?
 
 sam: …My brother.
 
@@ -329,7 +332,7 @@ He's already writing it down.${g.f('carmen') === 'hip' ? '\n\nWhen the ambulance
   a3_after_gone: {
     night: true,
     enter: g => g.know('halcyon_tablet_man', ['sam'], 'A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light.'),
-    text: g => `${g.f('after') === 'handoff' ? 'You step out in front of the first ambulance with both arms up, and it stops, and you lean in the window and point. "Older lady, hip or wrist, she\'s in the crosswalk, the kid\'s fine, the driver\'s shook." You talk like Mikey talks on his radio, calm and quick, and the EMT nods like you\'re a cop, and the doors swing open, and while everybody\'s looking at the doors, you aren\'t there anymore.' : 'You let the crowd take you. Phones up, faces up to the sky. You become one more kid in a pizza shirt staring at the lights, and you drift, drift, drift north, and Tablet Guy walks right past the place where you were standing.'}
+    text: g => `${g.f('after') === 'handoff' ? 'You step out in front of the first ambulance with both arms up, and it stops, and you lean in the window and point. "' + (g.f('carmen') === 'hip' ? 'Older lady, hip, she\'s in the crosswalk' : g.f('carmen') === 'wrist' ? 'Older lady, wrist, she\'s on the curb' : 'Older lady, she\'s shook up, check her out') + ', the kid\'s fine, the driver\'s shook." You talk like Mikey talks on his radio, calm and quick, and the EMT nods like you\'re a cop, and the doors swing open, and while everybody\'s looking at the doors, you aren\'t there anymore.' : 'You let the crowd take you. Phones up, faces up to the sky. You become one more kid in a pizza shirt staring at the lights, and you drift, drift, drift north, and Tablet Guy walks right past the place where you were standing.'}
 
 From half a block up, you look back. Tablet Guy has stopped at the crosswalk, where the frost is still melting off the lamppost in a perfect ring. He crouches. He touches the wet asphalt with two fingers. Then he looks north, up Broad, in your direction.
 
@@ -340,7 +343,7 @@ Not tonight.`,
   },
   a3_after_seen: {
     night: true,
-    enter: g => { g.hidden('halcyon_heat', 2); g.know('halcyon_tablet_man', ['sam'], 'A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light. He photographed you.'); },
+    enter: g => { g.flag('tablet_saw_you'); g.hidden('halcyon_heat', 2); g.know('halcyon_tablet_man', ['sam'], 'A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light. He photographed you.'); },
     text: g => `${g.f('after') === 'handoff' ? 'You flag down the ambulance. The EMT wants to know who you are and whether you saw it happen, and the questions keep coming, and you\'re stuck, smiling and bleeding and nodding.' : 'You try to drift into the crowd, but your legs are jelly and your nose is a faucet, and you stumble on the curb in front of everybody.'}
 
 Tablet Guy is right there.
@@ -358,7 +361,7 @@ Then he walks on, sweeping, sweeping, as if he got what he came for.`,
     loc: 'LIACOURAS WALK · TEMPLE UNIVERSITY',
     clock: { time: '12:26 AM' },
     enter: g => { g.heal('frostnip'); },
-    text: g => `You walk the bike home because you don't trust yourself to ride it. Your hands won't stop shaking. Every few steps the world seems to *hitch*, a hiccup in the corner of your eye, like the city's a video buffering. You eat both granola bars from the bottom of the pizza bag and the emergency Tastykake you keep for emergencies, and you're still starving.
+    text: g => `You walk the bike home because you don't trust yourself to ride it. Your hands won't stop shaking. Every few steps the world seems to *hitch*, a hiccup in the corner of your eye, like the city's a video buffering. You eat both granola bars from the bottom of the pizza bag and the Tastykake you keep for emergencies, and you're still starving.
 
 Liacouras Walk is a sea of phone flashlights. The concert stopped mid-song when the power went, and now two thousand students are milling around in the dark, looking up at the colors folding across the sky and talking about it in hushed, thrilled voices, the way people talk at a fire.
 
@@ -384,7 +387,7 @@ You did feel it. You felt more than that. You were *inside* the skip, walking ar
 
 sam: Transformer, probably. Happens.
 
-It's the first lie you tell her.`,
+${g.f('ttal') === 'truths' ? 'It\'s the first lie you tell her.' : 'It\'s the first real lie you tell her.'}`,
     choices: [
       { text: 'Sit down next to her on the curb. Don\'t say anything. Just be there.', tag: 'Stay close',
         fx: g => { g.flag('curb', 'sat'); g.bond('jules', { trust: 1, affection: 1, tension: 1 }); }, go: 'a3_jules_sat' },
@@ -418,7 +421,7 @@ You take it. You hold it to your nose. It smells like her bag, like cedar and so
 
 jules: Keep it. I don't want it back.
 
-You don't know yet that that's the nicest thing she's said to anyone in a week.`,
+She says it like she's writing you a parking ticket.`,
     next: 'a3_jules_end'
   },
   a3_jules_laugh: {
@@ -459,7 +462,7 @@ jules: Keep it.`,
   },
   a3_jules_laugh_miss: {
     night: true,
-    enter: g => { g.bond('jules', { tension: 1 }); },
+    enter: g => { g.bond('jules', { respect: -1 }); },
     text: `sam: So, uh, bright side, you're getting your daily glass intake—
 
 jules: Read the room, Kearney.
@@ -518,7 +521,7 @@ jules: Keep it. I don't want it back.`,
     night: true,
     enter: g => {
       g.know('jules_glass', ['sam', 'simone', 'jules'], 'The window came down on Jules in the Hitch, and every piece of glass missed her.');
-      g.know('jules_handkerchief', ['sam', 'jules'], 'You have Jules\'s handkerchief: white, ironed, JLP in navy thread. "Keep it."');
+      g.know('jules_handkerchief', ['sam', 'jules', 'simone'], 'You have Jules\'s handkerchief: white, ironed, JLP in navy thread. "Keep it."');
       g.heat('simone', 1);
       g.know('jules_changed', ['jules'], 'Jules was changed in the Hitch.');
     },
@@ -534,7 +537,7 @@ She doesn't push. Not tonight. But you see her take out her phone and type somet
 
 A little after one, the power comes back on all at once, the whole of North Philly lighting up block by block like somebody running a hand down a piano. Two thousand people cheer. The colors in the sky are fading. Jules stands up out of the circle of glass, careful, careful, and Simone takes her arm, and they walk back toward Cardone together.
 
-At the corner, Jules looks back once. You can't tell whether she's looking at you or at the empty circle where she was sitting.
+At the corner, Jules looks back once. You can't tell whether she's looking at you or at the empty circle where she was sitting. Her right hand is closed tight at her side. For one frame, something between her fingers catches the streetlight and burns gold.
 
 You stand there holding her handkerchief to your face. Your phone is vibrating so hard it's practically walking out of your pocket: twenty-three missed calls from Ma, nine from Gigi, one from Mikey, one from Vinnie.
 
