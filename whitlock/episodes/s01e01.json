@@ -1,0 +1,4931 @@
+{
+ "id": "s01e01",
+ "season": 1,
+ "ep": 1,
+ "title": "Car Service",
+ "logline": "Move-in day at Whitlock: Cal Whitaker arrives alone in a hired car, and by sunset he's at a party on Elm Row with his last name chanted across the lawn.",
+ "date": "2026-08-24",
+ "dateEnd": "2026-08-25",
+ "previously": [],
+ "calNow": "Cal Whitaker is eighteen, a third-generation legacy arriving at a university with his grandfather's name carved over the student center and his father's face on a fraternity wall. He's funny, magnetic and very good at telling people what they want to hear, which is how he gets through rooms without anyone getting close. His father was supposed to drive him up today.",
+ "cast": [],
+ "castNew": [
+  {
+   "id": "dev",
+   "name": "Dev Okafor",
+   "role": "Freshman · Pre-med · Lowell House",
+   "impression": "The nicest guy on campus, who picked up your heaviest box without being asked and lives across the hall in Lowell's only double.",
+   "metCal": true,
+   "node": "n2"
+  },
+  {
+   "id": "priya",
+   "name": "Priya Raman",
+   "role": "Freshman · Theater · Lowell House",
+   "impression": "A hurricane in a slip dress with a prop skull, who decided you were her best friend in about nine seconds.",
+   "metCal": true,
+   "node": "n4"
+  },
+  {
+   "id": "nora",
+   "name": "Nora Castellanos",
+   "role": "Freshman · The Whitlock Herald",
+   "impression": "A Herald reporter who is faster than you, and who decided exactly who you are before you finished your first sentence.",
+   "metCal": true,
+   "node": "n6"
+  },
+  {
+   "id": "margaux",
+   "name": "Margaux Vance",
+   "role": "Sophomore · Kappa Lambda",
+   "impression": "Perfect from every angle, and she knows your father.",
+   "metCal": true,
+   "node": "n13"
+  }
+ ],
+ "places": [
+  "Alder Falls",
+  "Tamsin Lake",
+  "Lowell House",
+  "The Quad",
+  "Whitaker Commons",
+  "Elm Row",
+  "Kappa Lambda house"
+ ],
+ "music": {
+  "song": "Bags",
+  "artist": "Clairo"
+ },
+ "titleAfter": "n1",
+ "start": "n1",
+ "nodes": {
+  "n1": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "EXT. ROUTE 7, THE BERKSHIRES. MOVING CAR. DAY (1:40 P.M.)"
+    },
+    {
+     "t": "music",
+     "song": "Motion Sickness",
+     "artist": "Phoebe Bridgers"
+    },
+    {
+     "t": "a",
+     "text": "A black Escalade on a two-lane road through pine and stone wall. Late August, with an edge already in the light."
+    },
+    {
+     "t": "a",
+     "text": "In the back seat, CAL WHITAKER, 18, is asleep against the window with his mouth slightly open, wearing a St. Anselm's swim-team parka in eighty-degree weather because it was the last thing in his closet. Behind him: seven boxes and a duffel, labeled in Sharpie by the housekeeper. BOOKS. BOOKS. SHOES. BOOKS. That's a life."
+    },
+    {
+     "t": "a",
+     "text": "Up front, TEO, sixties, a rosary swinging from the rearview mirror, has sports radio on low. The Red Sox are losing to the Orioles in the seventh."
+    },
+    {
+     "t": "line",
+     "name": "TEO",
+     "paren": "to the radio, personally wounded",
+     "text": "You don't bring him in. You don't. Who brings him in? A child knows not to bring him in."
+    },
+    {
+     "t": "a",
+     "text": "Cal wakes the way people wake in cars: all at once, embarrassed. His phone is face-up on his thigh. One thread, at the top."
+    },
+    {
+     "t": "texts",
+     "thread": "Denise Farrow",
+     "onCal": true,
+     "msgs": [
+      {
+       "from": "denise",
+       "text": "Hi Cal! Your father sends his regrets. Something came up in New York."
+      },
+      {
+       "from": "denise",
+       "text": "The car is charged to the account and gratuity is included."
+      },
+      {
+       "from": "denise",
+       "text": "He'll call."
+      }
+     ]
+    },
+    {
+     "t": "a",
+     "text": "Under it, in the reply field, still sitting there since 6:02 this morning, never sent: what time are you leaving. No question mark. He'd been trying to sound like he didn't care what time."
+    },
+    {
+     "t": "a",
+     "text": "Denise has handled everything since Cal was eleven. Dentist. Passport. Birthday cards, signed in a hand that is not his father's but is very close. Denise is very good."
+    },
+    {
+     "t": "line",
+     "name": "TEO",
+     "paren": "eyes in the mirror",
+     "text": "First time going alone?"
+    },
+    {
+     "t": "a",
+     "text": "Cal reads him in one look. A man who drives a lot of rich kids up this hill every August. Feels a little sorry for them. Needs them to be fine, so he can be fine about it. So Cal gives him what he needs."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "First time going anywhere without a nanny. I'm told there'll be stairs. I'm told I'll have to carry things."
+    },
+    {
+     "t": "a",
+     "text": "Teo laughs, relieved, and turns the radio up. Then the car crests the hill, and there it is."
+    },
+    {
+     "t": "a",
+     "text": "Alder Falls in the valley: white steeples, a mill river, a main street of brick. Beyond it, Tamsin Lake, black even in full sun, long and narrow as a blade. And rising over the water, the gothic towers of Whitlock University, ivy and slate and old gold stone, all of it looking like a postcard of somewhere you'd be happy."
+    },
+    {
+     "t": "a",
+     "text": "The cursor in the reply field blinks. Under Denise's last message, small and gray: Read 1:41 PM."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "“No worries! Tell him good luck in New York.”",
+     "set": {
+      "e1_denise": "smooth"
+     },
+     "reaction": [
+      {
+       "t": "texts",
+       "thread": "Denise Farrow",
+       "onCal": true,
+       "msgs": [
+        {
+         "from": "cal",
+         "text": "No worries! Tell him good luck in New York."
+        },
+        {
+         "from": "denise",
+         "text": "👍"
+        }
+       ]
+      },
+      {
+       "t": "a",
+       "text": "The thumbs-up arrives in under a second. She didn't have to think about it. Nobody had to think about any of it. He wrote the nice thing so that the nice thing would be on the record, and the record took it like a receipt."
+      },
+      {
+       "t": "a",
+       "text": "In the mirror, Teo looks at him for a long beat and says nothing, which is so much worse than anything he could have said. Then he turns the game up a little louder, as a kindness. The Orioles score again."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "“Tell him I'm naming my first therapist after him.”",
+     "set": {
+      "e1_denise": "bite"
+     },
+     "reaction": [
+      {
+       "t": "texts",
+       "thread": "Denise Farrow",
+       "onCal": true,
+       "msgs": [
+        {
+         "from": "cal",
+         "text": "Tell him I'm naming my first therapist after him."
+        }
+       ]
+      },
+      {
+       "t": "a",
+       "text": "Three dots appear. Disappear. Appear. Disappear. Somewhere on the forty-first floor of a building on Federal Street, a very competent woman is deciding how much of this to forward."
+      },
+      {
+       "t": "texts",
+       "thread": "Denise Farrow",
+       "onCal": true,
+       "msgs": [
+        {
+         "from": "denise",
+         "text": "I'll pass that along."
+        }
+       ]
+      },
+      {
+       "t": "a",
+       "text": "Cal feels great for six seconds. He counts them. On the seventh he feels like a kid who threw a rock at a glass building and watched it bounce off, and the building didn't even notice, and the building is his dad."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Don't answer. Ask Teo to pull over at the overlook.",
+     "set": {
+      "e1_denise": "silent"
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "Teo pulls onto the gravel at the scenic overlook without a word, like he's done this before, for other kids. Cal stands at the guardrail. The lake down there doesn't move. It doesn't look like water so much as a hole someone filled with ink."
+      },
+      {
+       "t": "a",
+       "text": "Teo lights a Parliament and leans on the hood. He doesn't offer one. He doesn't ask anything."
+      },
+      {
+       "t": "line",
+       "name": "TEO",
+       "text": "My father drove a city bus forty-one years. Never once drove me anywhere."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Did you hate him?"
+      },
+      {
+       "t": "line",
+       "name": "TEO",
+       "text": "Every day. Miss him every day. Same thing, turns out."
+      },
+      {
+       "t": "a",
+       "text": "It's the most honest conversation Cal will have all day. He leaves Denise on read. It feels like nothing. It feels like inheriting something."
+      }
+     ]
+    }
+   ],
+   "next": "n2"
+  },
+  "n2": {
+   "act": 1,
+   "blocks": [
+    {
+     "t": "card",
+     "text": "Act One · Move-In"
+    },
+    {
+     "t": "slug",
+     "text": "EXT. LOWELL HOUSE, THE QUAD. DAY (2:15 P.M.)"
+    },
+    {
+     "t": "music",
+     "song": "Oxford Comma",
+     "artist": "Vampire Weekend"
+    },
+    {
+     "t": "a",
+     "text": "Move-in day at Whitlock is a military operation staffed entirely by parents. Dads in Patagonia vests carry mini-fridges like wounded comrades. Moms cry into iced coffees and photograph extension cords. A golden retriever in a Whitlock bandana has escaped from someone and is having the best day of its life."
+    },
+    {
+     "t": "a",
+     "text": "Across the Quad, carved in stone over the doors of the student center, eighteen inches tall: WHITAKER COMMONS. A tour guide walks backward past it, cheerful as a flight attendant."
+    },
+    {
+     "t": "line",
+     "name": "TOUR GUIDE",
+     "text": "And that's Whitaker Commons, home of the dining hall, the mailroom, and the only decent iced latte on campus. Gift of the Whitaker family! Very old Whitlock. Their name's basically on everything, so you'll learn it."
+    },
+    {
+     "t": "a",
+     "text": "Fourteen strangers look up at Cal's last name and take a picture of it. Cal, on the curb in front of Lowell House, stacks seven boxes into a tower by himself. The Escalade pulls away behind him, quiet as a hearse."
+    },
+    {
+     "t": "a",
+     "text": "Then the Okafors arrive like weather. NGOZI OKAFOR, fifties, in a church hat and running shoes, directing traffic with her whole arm. EMEKA OKAFOR, her husband, carrying a toolkit the size of a carry-on. ADA, twelve, filming everything on a phone in a glitter case. And DEV OKAFOR, 18, tall and soft-eyed, a Houston Astros cap on backward, carrying a lamp shaped like a cactus with the care of a man transporting an organ."
+    },
+    {
+     "t": "a",
+     "text": "Dev clocks the tower of boxes. Clocks that there's nobody behind it. He sets the cactus down on the grass, very gently, and picks up the heaviest box, the one marked BOOKS three times, like it weighs nothing."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Third floor? Me too. You're the single. Everybody's talking about the single. I'm the double. Lowell's only double."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Congratulations?"
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "It means I'm the poor one. In Lowell. It's all relative. I'm Dev."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Cal."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "I know. Your boxes say WHITAKER on every side. Somebody really wanted them to get here."
+    },
+    {
+     "t": "a",
+     "text": "He says it warmly, not like a dig. He's warm in a way that seems almost tactical, like he's decided to be nice to you before he's decided anything else. It isn't tactical. Cal can tell, and it throws him."
+    },
+    {
+     "t": "a",
+     "text": "Mrs. Okafor arrives at his elbow and looks him up and down the way a nurse looks at a chart."
+    },
+    {
+     "t": "line",
+     "name": "MRS. OKAFOR",
+     "text": "You're too thin and you're wearing a coat in August. Where are your people, baby?"
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "“My dad's parking the car. He'll be right up.”",
+     "set": {
+      "e1_lie_parking": true
+     },
+     "remember": "Dev noticed.",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "The lie arrives before he decides to tell it. It's out of his mouth smooth as a coin."
+      },
+      {
+       "t": "line",
+       "name": "MRS. OKAFOR",
+       "text": "Good! I want to meet the man who raised such shoulders. Emeka, we're meeting his father. Fix your shirt."
+      },
+      {
+       "t": "a",
+       "text": "She presses a Tupperware of jollof rice into his hands anyway, warm through the lid, as if it were a ticket he'd need later."
+      },
+      {
+       "t": "a",
+       "text": "Over her shoulder, Dev glances at the curb, where the black Escalade with livery plates is turning out of the Quad. He saw it drop Cal off. He saw nobody get out of the front. He looks back at Cal, and says nothing, and picks up a second box. That's the first thing Cal learns about Dev Okafor: he notices, and he lets you keep it."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "“Just me. Dad had a thing.”",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Just me. Dad had a thing. It's fine. He's a very thing-having person."
+      },
+      {
+       "t": "a",
+       "text": "Mrs. Okafor's face does something complicated and maternal and furious, all in about a second, aimed at a man she has never met. Then she reaches into a tote bag the size of a mailbag and comes out with a Tupperware of jollof rice, still warm through the lid, and puts it in his hands without discussion."
+      },
+      {
+       "t": "line",
+       "name": "MRS. OKAFOR",
+       "text": "You'll bring the container back. Not now. Eventually. That's how I know you're alive."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "paren": "quietly",
+       "text": "She's serious. That Tupperware has a tracking chip. It's been to three states."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "“I'm an orphan. Very tragic. Can I borrow your mom?”",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "Ada laughs so hard she drops her phone in the grass, still recording."
+      },
+      {
+       "t": "line",
+       "name": "MRS. OKAFOR",
+       "paren": "completely serious",
+       "text": "Yes."
+      },
+      {
+       "t": "a",
+       "text": "She reaches into a tote bag the size of a mailbag, produces a Tupperware of jollof rice, still warm through the lid, and puts it in his hands like a deed."
+      },
+      {
+       "t": "line",
+       "name": "MRS. OKAFOR",
+       "text": "You eat this tonight. You bring the container back. That's the rule in my family. Now you're in my family."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "paren": "low, to Cal",
+       "text": "She means it. You can't give her back now. There's no return policy. I've checked."
+      }
+     ]
+    }
+   ],
+   "next": "n3"
+  },
+  "n3": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. LOWELL HOUSE, THIRD FLOOR. CONTINUOUS"
+    },
+    {
+     "t": "a",
+     "text": "Lowell House was built in 1791 and has not been meaningfully updated since the Coolidge administration. The stairs groan. The hallway smells like floor wax, old radiators and somebody's sandalwood candle that is definitely against the rules."
+    },
+    {
+     "t": "a",
+     "text": "In Dev's double, Mr. Okafor is disassembling a bunk bed that did not need disassembling. He has the instructions upside down and the confidence of a structural engineer, which he is."
+    },
+    {
+     "t": "line",
+     "name": "MR. OKAFOR",
+     "text": "It's not level. Who built this? Ngozi, who built this?"
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Dad, it's a bed. People have slept in it."
+    },
+    {
+     "t": "line",
+     "name": "MR. OKAFOR",
+     "text": "People have slept in many things that were not level. That doesn't make it right."
+    },
+    {
+     "t": "a",
+     "text": "The RA, JUNE, a senior with a clipboard and the thousand-yard stare of someone who has done this four years running, reads Cal's room assignment, then reads it again."
+    },
+    {
+     "t": "line",
+     "name": "JUNE",
+     "text": "Whitaker. The single. Bay window, fireplace, private sink. Freshmen don't get the single. Who'd you have to kill?"
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Still deciding."
+    },
+    {
+     "t": "a",
+     "text": "He knows exactly how he got it. His father made one phone call in June, the kind of call that doesn't sound like asking. Cal didn't ask him to. Cal didn't ask him not to."
+    },
+    {
+     "t": "a",
+     "text": "The room is ridiculous. A bay window over the Quad, with the Commons sign dead center like a billboard. A fireplace that has been bricked shut since the Truman years. A cast-iron radiator under the window that bangs once, loudly, as Cal walks in, like an old man clearing his throat in church."
+    },
+    {
+     "t": "a",
+     "text": "Across the hall, Dev's double has a second bare mattress with nobody on it."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "My roommate's from Dearborn. He's late. I've never met him. I've decided he's cool. Gimme your phone."
+    },
+    {
+     "t": "a",
+     "text": "Dev puts his number in under DEV (ACROSS THE HALL, HAS DRILL)."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Technically my dad has the drill. By extension."
+    },
+    {
+     "t": "a",
+     "text": "Cal opens one box. Books. On top, a battered paperback, Winterkill by Agnes Fell, the spine broken in four places, the cover softened to cloth. He's read it four times. He puts it on the empty shelf first, before anything else, before the sheets, before the laptop. He doesn't think about why. He never has."
+    },
+    {
+     "t": "a",
+     "text": "Through his open door, across the hall, he sees Mrs. Okafor slide a small white envelope into Dev's desk drawer and close it with two fingers."
+    },
+    {
+     "t": "line",
+     "name": "MRS. OKAFOR",
+     "paren": "quietly",
+     "text": "For Tuesdays."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Mom."
+    },
+    {
+     "t": "a",
+     "text": "A look passes between them. Not embarrassment. Something with more weight in it. Cal, who reads people the way other people breathe, sees it and files it, and goes back to his books like he didn't."
+    }
+   ],
+   "next": "n4"
+  },
+  "n4": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. CAL'S SINGLE. DAY (3:05 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "Cal is on his back on the bare mattress, staring at a water stain on the ceiling shaped like Ohio, when the door flies open hard enough to bounce off the wall."
+    },
+    {
+     "t": "a",
+     "text": "A girl. A vintage silk slip dress over cargo pants. Sunglasses pushed up into a mess of black hair. A liter of mezcal in one hand and, in the other, a full-size prop skull with MARLOWE THEATER — DO NOT REMOVE stenciled on the back of its cranium."
+    },
+    {
+     "t": "a",
+     "text": "This is PRIYA RAMAN, 18. She kicks the door shut behind her with one platform sneaker."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Hi, Cal, hide me."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Hi?"
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Priya. Raman. Two doors down, the one with the radiator that sounds like a dying horse, so, your radiator's cousin. The skull is emotional support. I stole it from the theater during my admitted-students visit in April and I've been carrying it around ever since like a war bride. The mezcal is for the radiator. And my mother is on the stairs."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Why are we hiding from your mother?"
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Because she thinks I'm going to be a dermatologist, and I'm going to let her think that until Thanksgiving, and she has a laminated checklist, Cal. Laminated. Item fourteen is “meet neighbors and assess.” I am not ready to be assessed."
+    },
+    {
+     "t": "a",
+     "text": "She's already filming the room, vertically, sweeping her phone across his seven boxes and his one book on the shelf."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "For my archive. Don't worry about it. This is a historic day."
+    },
+    {
+     "t": "a",
+     "text": "Somewhere on the stairs, a woman's voice, precise and carrying, the voice of someone who tells surgeons when to start cutting."
+    },
+    {
+     "t": "line",
+     "name": "DR. RAMAN",
+     "paren": "O.S.",
+     "text": "Priya. Priya Lakshmi. I can hear you breathing. Your room is unlocked and your shower caddy is on the floor."
+    },
+    {
+     "t": "a",
+     "text": "Priya grabs Cal's forearm. Her hand is cold and very strong. She talks even faster, which he didn't know was possible."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Ten steps. She counts stairs. She's an anesthesiologist from Edison, New Jersey, she counts everything, she counted my breaths when I was a baby, I'm not being metaphorical. Please. You have a face mothers trust. I can tell. It's a whole thing you have going on. Use it for good."
+    },
+    {
+     "t": "a",
+     "text": "Footsteps on the landing. Measured. Getting closer. The skull grins at him."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Shove her in the closet and charm her mother",
+     "set": {
+      "e1_priya_hide": "closet"
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "Priya goes into the closet with the skull and the mezcal. Cal opens the door to DR. LAKSHMI RAMAN, fifties, cardigan, laminated checklist, and smiles the smile that has gotten him out of four detentions and one minor car accident."
+      },
+      {
+       "t": "a",
+       "text": "Within ninety seconds she is telling him about her residency at Mount Sinai and the attending who threw a clamp at her in 1998. He asks the exact right follow-up question. He gives her son-in-law energy so pure it could be bottled. She laughs. She touches his arm. She leaves him her card, in case Priya stops answering, which Priya will."
+      },
+      {
+       "t": "a",
+       "text": "The door closes. A muffled voice from the closet."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "That was disgusting. I love you. Also I think I'm sitting on your shoes."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Take the bottle, send her out onto the fire escape",
+     "set": {
+      "e1_priya_hide": "window"
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He grabs the mezcal. She hands him the skull too, out of reflex, and climbs out through the bay window in a silk slip dress onto an iron fire escape that predates the Constitution by about a year."
+      },
+      {
+       "t": "a",
+       "text": "Dr. Raman walks in on a strange boy holding a liter of mezcal in one hand and a human skull in the other."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "The skull's for anatomy."
+      },
+      {
+       "t": "line",
+       "name": "DR. RAMAN",
+       "paren": "looking at the mezcal",
+       "text": "And that?"
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Also for anatomy. It's a very intense program."
+      },
+      {
+       "t": "line",
+       "name": "DR. RAMAN",
+       "text": "Good."
+      },
+      {
+       "t": "a",
+       "text": "She leaves. On the fire escape, Priya is laughing so hard she has to lie down on the grate, one hand over her mouth, bare knees in the air, three stories above the Quad."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "“I've known you nine seconds. No.”",
+     "set": {
+      "e1_priya_hide": "refused"
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "Priya hides anyway, somehow under his bare mattress, which should not be physically possible. Her mother finds her in two seconds flat, by the platform sneaker sticking out."
+      },
+      {
+       "t": "a",
+       "text": "What follows is a screaming match in Tamil and English, about the shower caddy, a gap year that didn't happen, and someone named Aunty Viji. Cal, standing between them, hears himself say out loud, “I mean, she's eighteen,” and both of them turn and look at him like he's a new species."
+      },
+      {
+       "t": "a",
+       "text": "Dr. Raman leaves. Priya crawls out from under the mattress with dust in her hair."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "You defended me. To my mother. In my mother's presence. That's binding. We're best friends now. I don't make the rules. The rules are ancient."
+      }
+     ]
+    }
+   ],
+   "next": "n5"
+  },
+  "n5": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. CAL'S SINGLE. LATER (3:40 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "Dr. Raman is gone, back down the hill toward a Honda Odyssey and a long, silent drive to Edison. Priya is sprawled across Cal's bare mattress like she's lived here for years, drinking mezcal out of the bottle cap, the skull propped on his pillow."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Here's what I know about you so far. You're from Boston but you went away to school, because you say “wicked” ironically and nobody from Boston says it ironically. You've read that book on your shelf until it died. And you've been in this room for an hour and you haven't plugged anything in, which means you don't think you're staying."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "That's a lot of knowing."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "I'm very observant. It's a curse. Like being tall."
+    },
+    {
+     "t": "a",
+     "text": "The radiator under the window bangs, once, loud as a dropped pan. Priya sits bolt upright."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Who is THAT."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "The radiator."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "No. That's Gerald. Look at him. He's a Gerald. He's got opinions about the Federal Reserve. Gerald, hi, I'm Priya. I'll be here constantly."
+    },
+    {
+     "t": "a",
+     "text": "She takes his phone off the windowsill without asking, puts her number in under PRIYA (EMERGENCIES + VIBES), and hands it back. Then she rolls over and her hand goes into the open box at the foot of the mattress, and comes up holding a black Moleskine, soft at the corners, held shut with a rubber band."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Oh my God. Is this a diary? Are you a diary boy? Cal. Are you a sad diary boy?"
+    },
+    {
+     "t": "a",
+     "text": "She's already slipping the rubber band. Nobody has ever read one of those notebooks. Not a teacher. Not a girlfriend. Not the housekeeper who packed them, who was told not to look and didn't."
+    },
+    {
+     "t": "a",
+     "text": "And while she's busy with it, Cal notices two things, because noticing is what he does instead of feeling. In the mouth of her tote bag, next to a sleeve of Marlboro Lights, there's an orange pill bottle with a pharmacy label in someone else's name: R. MENON. And she hasn't eaten anything all afternoon. She's turned down the jollof twice. She's talking faster now than when she came through the door, and she came through the door fast."
+    },
+    {
+     "t": "a",
+     "text": "She opens the notebook to the middle."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Snatch it back, too fast",
+     "set": {
+      "e1_notebook": "snatched"
+     },
+     "remember": "Priya will remember that.",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He's across the room before he decides to be. The notebook is out of her hands and behind his back and his heart is going like he just swam a 200 free. He laughs, too late, to cover it."
+      },
+      {
+       "t": "a",
+       "text": "Priya looks up at him. For the first time all afternoon she isn't performing. She's clocking it: the first real thing she's seen him do. Not the charm. The flinch."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "Oh. Okay. Sorry. That's... okay."
+      },
+      {
+       "t": "a",
+       "text": "She means it. She also, without looking, remembers exactly where in the box it went."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Let her read one line aloud",
+     "set": {
+      "e1_notebook": "shared"
+     },
+     "remember": "Priya will remember that.",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He doesn't know why he nods. She reads it flat at first, ready to make fun of it."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "“The ice machine at the Seaside Motor Inn sounded like someone choking, and I was the one who called.”"
+      },
+      {
+       "t": "a",
+       "text": "Silence. Gerald doesn't weigh in. Priya lowers the notebook slowly. When she speaks again it isn't a bit."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "Cal. That's really good. Like, actually good. Who called who?"
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Nobody. It's fiction."
+      },
+      {
+       "t": "a",
+       "text": "She closes the notebook and hands it back, carefully, like it's hot. She knows it isn't fiction. He knows she knows. Neither of them says it."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "“Econ notes. Very boring. Supply, demand.”",
+     "set": {
+      "e1_notebook": "lied"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Econ notes. Very boring. Supply. Demand. A graph."
+      },
+      {
+       "t": "a",
+       "text": "She reads the open page anyway, in a mocking newscaster voice, eyebrows high."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "“The ice machine at the Seaside Motor Inn sounded like someone choking, and I was the one who called.” Wow. Brutal market conditions."
+      },
+      {
+       "t": "a",
+       "text": "He laughs along. He does a whole bit about the ice-machine index. It's funny. It costs him something, and his face lets it show for one second too long, and she sees that too, a beat too late to take it back. She hands the notebook over without another word."
+      }
+     ]
+    }
+   ],
+   "next": "n6"
+  },
+  "n6": {
+   "blocks": [
+    {
+     "t": "a",
+     "text": "At the door, skull under one arm like a handbag, Priya turns."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Tonight. Kappa Lambda does Sunset on the Lawn on move-in night. It's a tradition, which means it's a party with a permit. Everyone goes. I'm going to be insane there. You're coming. Kevin's coming."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Who's Kevin?"
+    },
+    {
+     "t": "a",
+     "text": "She holds up the skull. Then she sets it on his shelf, next to Winterkill, and leaves it there."
+    },
+    {
+     "t": "slug",
+     "text": "EXT. THE QUAD, CHECK-IN TENTS OUTSIDE WHITAKER COMMONS. DAY (4:10 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "Cal has to pick up his student ID and his keys at a white tent pitched directly under his grandfather's name. The line moves in alphabetical clumps. A-F. G-M. N-S. T-Z. Someone's dad is arguing with a work-study kid about a parking pass."
+    },
+    {
+     "t": "a",
+     "text": "Working the line like a heat-seeking missile: a girl in a thrifted men's blazer with the sleeves shoved up, a Whitlock Herald press lanyard, a spiral reporter's notebook and a phone held out as a recorder. Dark hair scraped back. No makeup. No time for it. This is NORA CASTELLANOS, 18."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "paren": "to the freshman in front of Cal",
+     "text": "And your parents went here? And your grandparents? And your great-grandfather has a dorm? Cool. Cool, cool, cool. Thanks so much."
+    },
+    {
+     "t": "a",
+     "text": "The freshman, a boy named something like Winthrop, walks away thinking that went well. It did not go well. Nora writes one word and underlines it, and turns to Cal, and does the math on his parka, his haircut and his watch in about a quarter of a second."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "text": "Hi. Nora Castellanos, the Herald. We do a piece every move-in day: “Who Gets In?” Name, year, hometown, and how you feel about the fact that thirty-eight percent of this class are legacies."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Is there a wrong answer?"
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "text": "There are only wrong answers. That's the beauty of it. Name?"
+    },
+    {
+     "t": "a",
+     "text": "Behind her, the name on the building is eighteen inches tall. She hasn't looked up at it. She doesn't have to. Everyone who walks across this Quad learns it by the second day."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Give her just your first name: “Cal. Just Cal.”",
+     "set": {
+      "e1_name": "first"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "Like Cher."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Like Cher."
+      },
+      {
+       "t": "a",
+       "text": "She writes CAL in block capitals and underlines it twice, which somehow feels like a threat."
+      },
+      {
+       "t": "a",
+       "text": "Then the work-study kid at the T-Z table, holding up a lanyard with a key on it, yells across the tent like he's calling a bingo number."
+      },
+      {
+       "t": "line",
+       "name": "WORK-STUDY KID",
+       "text": "Whitaker? Calvin Whitaker? Keys!"
+      },
+      {
+       "t": "a",
+       "text": "Nora doesn't look up at the building. She just adds, very neatly, WHITAKER after CAL, and looks at him over the notebook."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "Just Cal. Huh."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "“Cal Whitaker. Like the building.”",
+     "set": {
+      "e1_name": "full"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Cal Whitaker. Like the building."
+      },
+      {
+       "t": "a",
+       "text": "He nods up at it with a little swagger, the move he does at parties, where it works. Nora looks up at the carved name over the Commons. Then back at him. Very slowly. Like she's comparing a photo to a suspect."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "Wow. They let you out of the cornerstone."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Day pass."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "Hometown?"
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Beacon Hill. And a boarding school in New Hampshire. And, spiritually, the back seat of a car."
+      },
+      {
+       "t": "a",
+       "text": "She writes down Beacon Hill and nothing else."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Borrow the nearest building's name: “Cal... Pruitt.”",
+     "set": {
+      "e1_fake_name": true,
+      "e1_name": "pruitt"
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "His eyes go to the nearest building on the Quad, red brick, carved letters: PRUITT HALL."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Cal... Pruitt."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "Pruitt. Like the hall."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Distant relation. We don't talk about it."
+      },
+      {
+       "t": "a",
+       "text": "She writes it down. CAL PRUITT. Then the work-study kid at the T-Z table yells across the tent, holding up a lanyard."
+      },
+      {
+       "t": "line",
+       "name": "WORK-STUDY KID",
+       "text": "Whitaker? Calvin Whitaker? Your keys!"
+      },
+      {
+       "t": "a",
+       "text": "Nora doesn't look over. Doesn't blink. Cal is pretty sure she didn't hear it. He thinks."
+      },
+      {
+       "t": "a",
+       "text": "She did. She just doesn't say so. Yet."
+      }
+     ]
+    }
+   ],
+   "next": "n7"
+  },
+  "n7": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "EXT. THE QUAD. CONTINUOUS"
+    },
+    {
+     "t": "a",
+     "text": "Cal has his keys. Nora hasn't let go of him."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "text": "How'd you get in?"
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Through the front door. There was a tent. You were there."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "text": "Your SAT score."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Personal."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "text": "Your GPA."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Deeply personal."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "text": "Your essay topic. Let me guess. A service trip. You built a well, or watched a well being built, and it taught you that people in Guatemala are, quote, so happy with so little."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "It was about a lighthouse, actually."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "text": "Was the lighthouse a metaphor for your own loneliness?"
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "...Sort of, yeah."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "text": "Incredible. Did you write it, or did it come with the building?"
+    },
+    {
+     "t": "a",
+     "text": "She's faster than him. That almost never happens. Cal is used to being the quickest person in any room, the one who sees where a conversation is going and gets there first and waits for everybody with a joke. With her he's a half-step behind, and the half-step is thrilling and humiliating in equal measure."
+    },
+    {
+     "t": "a",
+     "text": "He reads her notebook upside down, because he can. Under his name, in her small fast hand: rich idiot. Not even capitalized. Not even worth capitals."
+    },
+    {
+     "t": "a",
+     "text": "And in the margin, in a different pen, something that has nothing to do with move-in day. A scribble, boxed twice: SKR, fall '91, ask G.M.?"
+    },
+    {
+     "t": "a",
+     "text": "He doesn't know what it means. He doesn't have time to wonder, because she sees his eyes on the page and puts her hand flat over the margin. Casually. Like she was going to put her hand there anyway."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "text": "Eyes up, Whitlock."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "I wasn't..."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "text": "You were. You read upside down. That's either a skill or a symptom. Last question. Do you think you deserve to be here?"
+    },
+    {
+     "t": "a",
+     "text": "The recorder light is red. Somewhere behind them a dad yells “PIVOT” at a futon. She has decided who Cal is. It's all over her face. The only question is whether he's going to play the part."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "“Let me buy you a coffee and prove you wrong.”",
+     "set": {
+      "e1_nora": "charm"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Let me buy you a coffee and prove you wrong. Thirty minutes. If I'm still an idiot, you can print it in a bigger font."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "I have a meal plan and a spine."
+      },
+      {
+       "t": "a",
+       "text": "But the corner of her mouth goes. Briefly. A twitch, quickly suppressed, like something she'd have to report to her editor. She writes a sentence and turns the notebook so he can read it right side up, which is meaner: one freshman offered to buy this reporter coffee in lieu of an answer."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "Thanks, Cal. You've been a tremendous help to journalism."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "“My dad was supposed to drive me today. He didn't come.”",
+     "set": {
+      "e1_nora": "honest"
+     },
+     "remember": "Nora will remember that.",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "My dad was supposed to drive me today. He didn't come. He sent a car. So, honestly? I don't know what I deserve. Ask me in a month."
+      },
+      {
+       "t": "a",
+       "text": "He doesn't know why he said it. It just came out, the way true things sometimes do when you're too tired to stop them. Nora looks at him for a long second. Something recalculates behind her eyes."
+      },
+      {
+       "t": "a",
+       "text": "She reaches over and stops the recorder. Closes the notebook."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "That's not a quote. I'm not printing that."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Why not?"
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "Because it's not about legacies. It's about your dad. I don't do dads."
+      },
+      {
+       "t": "a",
+       "text": "A sliver of respect, given grudgingly. She clearly hates that it happened."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "“How'd YOU get in? Essay about your abuela?”",
+     "set": {
+      "e1_nora": "cruel"
+     },
+     "remember": "Nora will remember that.",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "How'd you get in? Let me guess. Essay about your abuela? Her hands? Her kitchen? The smell of something in a pot?"
+      },
+      {
+       "t": "a",
+       "text": "It's cruel and it's aimed perfectly, because he reads people, and he read her, and he picked the softest place and put his thumb in it. It lands. Something in her face goes very still and very far away, like a house with all the lights switched off at once."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "paren": "pleasant, dead",
+       "text": "Thanks. That's great. That's the quote."
+      },
+      {
+       "t": "a",
+       "text": "She clicks the pen and walks away without hurrying. He feels sick for an hour afterward and spends most of it telling himself he doesn't."
+      }
+     ]
+    }
+   ],
+   "next": "n8"
+  },
+  "n8": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "EXT. THE QUAD. DAY (4:35 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "Alone on the Quad with a lanyard around his neck, a key in his fist and nowhere to be until sunset. The light has gone long and honey-colored. Parents are starting to leave. You can tell which ones by the way they hug: too hard, with their eyes shut."
+    },
+    {
+     "t": "a",
+     "text": "Cal checks his phone. Nothing from his father. Nothing from Denise. The New York thing must be going well."
+    },
+    {
+     "t": "a",
+     "text": "Up in Fennimore tower the bells start playing something old and minor-key, a hymn nobody under sixty knows the words to. A girl next to him is FaceTiming her grandmother, holding the phone up to the bells so she can hear. The grandmother is crying. Everyone's crying today. It's like a weather system."
+    },
+    {
+     "t": "a",
+     "text": "Three directions present themselves, the way they do in fairy tales and on campus maps."
+    },
+    {
+     "t": "a",
+     "text": "East, down the hill: Elm Row, where the fraternity houses sit like retired senators. The oldest is the Rho. His father's house. His father's face is on a wall in there somewhere, Cal knows, because his father told him so in the tone other fathers use to say they love you."
+    },
+    {
+     "t": "a",
+     "text": "West: a bench beside the Commons, facing the lake, the kind of bench a person could sit on with a notebook and look like he was waiting for someone."
+    },
+    {
+     "t": "a",
+     "text": "North, back up to Lowell, where through an open third-floor window he can hear Dev Okafor building an IKEA loft bed by himself, and loudly losing."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "paren": "O.S., distant, anguished",
+     "text": "WHY IS THERE A SPARE PART. WHERE DOES IT GO. WHY DOES IT EXIST."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Walk to Elm Row and find Dad's face on the Rho wall",
+     "set": {
+      "e1_detour": "rho"
+     },
+     "next": "n9a",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He tells himself he's just curious. He tells himself a lot of things on the walk down the hill, under the elms, past houses with Greek letters over the doors big enough to land planes. None of it is true. He wants to see his father's face, since his father didn't feel like showing it today."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Sit on the bench by the Commons and write",
+     "set": {
+      "e1_detour": "bench"
+     },
+     "next": "n9c",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He takes the bench. He takes out the Moleskine. He takes the pen out of the spiral and clicks it four times, which is a ritual, which he'd deny. The lake is down there at the bottom of the lawn, black and flat, doing its impression of a mirror."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Go back and help Dev before he loses a finger",
+     "set": {
+      "e1_detour": "unpack"
+     },
+     "next": "n9u",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He climbs three flights. He follows the swearing. It's in English and what he will later learn is Igbo, and it's very creative in both."
+      }
+     ]
+    }
+   ]
+  },
+  "n9a": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. SIGMA KAPPA RHO HOUSE, ELM ROW. DAY (4:50 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "The Rho is a mansion that looks like a bank fell in love with a church. Columns. A widow's walk. A lawn that's been mowed in diagonal stripes like a ballpark. The front door is propped open with a cinder block, and four brothers in pinnies are hauling a leather Chesterfield up the steps while a fifth supervises with a beer."
+    },
+    {
+     "t": "a",
+     "text": "Over the porch, a hand-painted banner: WELCOME HOME BRUTHERS. Someone has corrected the U to an O in Sharpie. Someone else has corrected it back."
+    },
+    {
+     "t": "a",
+     "text": "Nobody stops him. Nobody stops a guy who looks like he belongs here, and Cal has looked like he belongs everywhere his whole life. It's his best trick and his worst one."
+    },
+    {
+     "t": "a",
+     "text": "Inside it smells like beer that's soaked into hundred-year-old wood, and Pledge, the furniture polish, which is funny if you think about it. The front hall is a corridor of composites: a century of class photos, oval portraits under glass, men in the same navy blazer, the same tie, the same jaw, decade after decade, like a flipbook of one very confident face."
+    },
+    {
+     "t": "a",
+     "text": "He finds it without trying. Sigma Kappa Rho, 1991-1992. Top row, center: RICHARD A. WHITAKER, PLEDGE MASTER. A junior. Impossibly handsome. Hair like a Kennedy. Smiling the smile Cal has seen in exactly one photo at home, the one from his parents' wedding, the one that's in a drawer now."
+    },
+    {
+     "t": "a",
+     "text": "Below the officers, the pledge row. Freshmen. Eleven faces, eager and scared and trying to look like neither."
+    },
+    {
+     "t": "a",
+     "text": "And a twelfth oval that's empty. Just blank felt, faded lighter than the felt around it, the way wallpaper looks where a picture hung for years. The brass nameplate under it has been pried off; you can see the scratches from the screwdriver. One corner of the plate is still screwed into the frame. Two letters and a period survive: T. C"
+    },
+    {
+     "t": "a",
+     "text": "Upstairs, a door opens on a meeting. Men's voices, a gavel, a laugh. A brother with a lacrosse stick and no shirt pounds down the stairs, sees Cal, and doesn't stop him either."
+    },
+    {
+     "t": "a",
+     "text": "Cal looks back at the empty oval. Thirty-four other faces in that frame got to stay on the wall. One didn't. Something in his chest goes cold and quiet, the way it does in a pool right before the gun."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Photograph the empty oval with his phone",
+     "set": {
+      "e1_composite_photo": true
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He takes the picture. Then a second one, closer, of the brass fragment. T. C. The flash bounces off the glass and turns the empty oval white, like a hole punched through to somewhere else."
+      },
+      {
+       "t": "a",
+       "text": "He doesn't know why he does it. He'll scroll past it a hundred times this year, between screenshots and party photos, and every time his thumb will stop on it for half a second. It'll matter."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Ask the shirtless brother whose face is missing",
+     "set": {},
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Hey. Whose face is missing?"
+      },
+      {
+       "t": "a",
+       "text": "The shirtless brother, FITZ, cradles the lacrosse stick like a baby and squints at the wall."
+      },
+      {
+       "t": "line",
+       "name": "FITZ",
+       "text": "Oh, the ghost oval? Some guy who dropped out, probably. Or got kicked out. Or, like, there's a ghost story, but there's a ghost story about every room in this house. The third-floor bathroom has a ghost. It's mostly just Hendricks."
+      },
+      {
+       "t": "line",
+       "name": "FITZ",
+       "text": "Ask Brooks. He knows all the house lore. He's like the Rho's grandma."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Touch his father's photo, then leave before anyone sees",
+     "set": {},
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He puts two fingers on the glass over his father's face. A boy, really, in his father's blazer. Someone who hadn't done anything yet, hadn't married anybody or left anybody or sent any cars."
+      },
+      {
+       "t": "a",
+       "text": "His fingerprints stay on the glass. He wipes them off with the cuff of his parka, fast, and turns to go, and walks straight into a bare, sweaty chest."
+      },
+      {
+       "t": "line",
+       "name": "FITZ",
+       "text": "Whoa! Whoa. Bro. Were you just petting the wall?"
+      }
+     ]
+    }
+   ],
+   "next": "n9b"
+  },
+  "n9b": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. RHO HOUSE, FOYER. CONTINUOUS"
+    },
+    {
+     "t": "a",
+     "text": "Fitz is six-four, a lacrosse midfielder from Darien with the delighted face of a golden retriever who has found a tennis ball in a hedge. He looks from Cal to the composite. From the composite to Cal. His jaw drops by stages."
+    },
+    {
+     "t": "line",
+     "name": "FITZ",
+     "text": "Wait. Wait wait wait. Are you a Whitaker? You are. You have the... the..."
+    },
+    {
+     "t": "a",
+     "text": "He gestures at his own jaw."
+    },
+    {
+     "t": "line",
+     "name": "FITZ",
+     "text": "Dude. DUDE. Brooks is gonna lose his mind. Another Whitaker. It's like a sequel. Are you rushing? You're rushing. Don't answer, you're rushing."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "I'm just looking around."
+    },
+    {
+     "t": "line",
+     "name": "FITZ",
+     "text": "That's what rushing IS, bro. Okay, quick question for rush, totally informal, this is not an official question."
+    },
+    {
+     "t": "a",
+     "text": "He lowers his voice, conspiratorial, a man about to share the nuclear codes."
+    },
+    {
+     "t": "line",
+     "name": "FITZ",
+     "text": "Can you swim?"
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Can I... swim?"
+    },
+    {
+     "t": "line",
+     "name": "FITZ",
+     "text": "Brooks asks everyone. Every rush. Can you swim, how far, how fast. Nobody knows why. I think it's a power thing. He asked me and I said I could doggy-paddle with conviction and he wrote it down."
+    },
+    {
+     "t": "a",
+     "text": "Cal swam the 200 free and the 500 for St. Anselm's for two and a half years and then quit in the middle of a meet, walked off the deck in a wet suit and called a car. He's never said why. Nobody asked hard enough."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "I can float. Competitively. I was All-New England in floating."
+    },
+    {
+     "t": "line",
+     "name": "FITZ",
+     "paren": "laughing, slapping the doorframe",
+     "text": "Okay, see, THAT'S a Whitaker answer. That's legacy material."
+    },
+    {
+     "t": "a",
+     "text": "Upstairs, the meeting erupts into a laugh. One laugh carries over the others, warm and big and a little cruel at the end, rolling down the staircase. Cal's head turns toward it before he knows why. It's oddly familiar. Like a song he's heard in a car he wasn't driving."
+    },
+    {
+     "t": "a",
+     "text": "Then a voice, from the top of the stairs, out of sight. Curious. Pleased."
+    },
+    {
+     "t": "line",
+     "name": "VOICE",
+     "paren": "O.S.",
+     "text": "Whitaker?"
+    },
+    {
+     "t": "a",
+     "text": "A beat. Then the door at the top of the stairs shuts. Not slammed. Closed, carefully, by someone who wants you to know he could have come down and decided not to."
+    },
+    {
+     "t": "a",
+     "text": "Cal walks out under the misspelled banner into the late sun. His hands, he notices, are cold."
+    }
+   ],
+   "next": "n10"
+  },
+  "n9c": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "EXT. BENCH BESIDE WHITAKER COMMONS, FACING TAMSIN LAKE. DAY (4:50 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "The bench has a view all the way down the lawn to Tamsin Lake. Rowing shells racked outside a boathouse at the shoreline, white as bones. A dock. The water so still it holds the whole sky upside down."
+    },
+    {
+     "t": "a",
+     "text": "Cal writes. We see it in his hand, over his shoulder, small and slanted and fast:"
+    },
+    {
+     "t": "a",
+     "text": "“Every parent on this lawn is carrying something heavier than it looks. The fathers carry mini-fridges like they're carrying the idea of being needed. The mothers carry nothing, and that's heavier. I'm carrying a key. It weighs about as much as a sentence nobody finished.”"
+    },
+    {
+     "t": "a",
+     "text": "It's good. It's alarmingly good. It's the kind of good teachers would make a fuss about, if he ever let a teacher read it, which he won't, because the second someone makes a fuss about a thing, it belongs to them."
+    },
+    {
+     "t": "a",
+     "text": "Beside him, set into the stone wall of the Commons at shoulder height, there's a bronze dedication plaque gone green at the edges. He reads it because it's there."
+    },
+    {
+     "t": "a",
+     "text": "WHITAKER COMMONS. GIVEN BY CHARLES A. WHITAKER, CLASS OF 1962, IN 1994. IN GRATITUDE FOR WHITLOCK, AND FOR THOSE THE LAKE KEEPS."
+    },
+    {
+     "t": "a",
+     "text": "He reads the last line twice. Then a third time. His grandfather was a man who said “Fine” instead of “Hello” and sent birthday checks with nothing written on the memo line. Not a lake man. Not a poetry man. And Cal has never once heard anybody in his family say a single word about a lake."
+    },
+    {
+     "t": "a",
+     "text": "Down at the boathouse, a rower in a gray hoodie carries an oar on her shoulder out to the dock and stands there looking at the water for a long time without going in. Then she walks back."
+    },
+    {
+     "t": "a",
+     "text": "A group of Kappa girls in white passes behind the bench toward Elm Row, setting up for tonight, arms full of string lights. One of them says “...and his dad's literally on the board,” and they all laugh, and nobody looks at him, which means all of them saw him."
+    },
+    {
+     "t": "a",
+     "text": "He turns to a clean page. He clicks the pen four more times. The question isn't whether he'll write. It's what."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "A letter to his mother he'll never send",
+     "set": {
+      "e1_bench": "mom"
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "“Dear Mom,” he writes, and then sits with his pen above the paper for a full minute, because he hasn't written those two words since he was eleven years old."
+      },
+      {
+       "t": "a",
+       "text": "“I'm here. You'd hate it. You'd love it. There's a lake.”"
+      },
+      {
+       "t": "a",
+       "text": "He stops after the third sentence. He doesn't know her address. He never has. He doesn't know if she's in Boston or Montana or dead. The letter has nowhere to go, so he folds the page into the back of the notebook, where the other ones are. There are more of them than he'd tell anyone. There are seven."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "A vicious, funny takedown of his father",
+     "set": {
+      "e1_bench": "dad"
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "It pours out of him. Two pages. Savage. Funny in the way only accurate things are funny. His father's laugh, “calibrated for clients.” His father's hugs, “brief, firm, like signing for a package.” His father's love, “wired to an account, gratuity included.”"
+      },
+      {
+       "t": "a",
+       "text": "It's the best thing he's written all summer. He reads it back and laughs out loud alone on the bench, and the laugh scares a pigeon. Then he tears both pages out along the seam, folds them into a hard square and shoves them deep in his jeans pocket, where they'll be safe. He thinks."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "A description of the girl with the notebook",
+     "set": {
+      "e1_bench": "nora"
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He doesn't mean to. He starts writing about the parents again and somehow it's three lines about Nora Castellanos's hands."
+      },
+      {
+       "t": "a",
+       "text": "“Ink on the side of her right hand from dragging it through her own sentences. Nails bitten short, but not anxious, efficient. She held the pen like she was going to have to use it on somebody.”"
+      },
+      {
+       "t": "a",
+       "text": "He reads it over. He'd never admit it. It's very specific. He closes the notebook fast, as though she might be standing behind the bench, and checks, and she isn't, and he's relieved and a little disappointed, which is annoying."
+      }
+     ]
+    }
+   ],
+   "next": "n10"
+  },
+  "n9u": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. DEV'S DOUBLE, LOWELL HOUSE. DAY (4:50 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "Dev's parents have gone to the Target in Pittsfield for, quote, “real hangers.” What's left is Dev, cross-legged in a sea of particleboard, an IKEA loft bed called the STORÅ, two Allen keys, a bag of Mr. Okafor's leftover screws, and a single cardboard instruction booklet in which a faceless cartoon man is smiling while doing something impossible."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Oh thank God. Do you know how to read Swedish hieroglyphics?"
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "I've never built anything in my life. People built things for me. I had a guy."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Perfect. Then you've got no bad habits. Hold this."
+    },
+    {
+     "t": "a",
+     "text": "They build. It's a perfect sitcom twenty minutes: the side panel installed backward twice, a dowel that rolls under the radiator and has to be retrieved with a ruler, Dev reading the instructions aloud in the voice of a nature documentary, Cal holding up the entire upper frame like Atlas while Dev looks for a screw that turns out to be in his own mouth."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Step nine. The male human, exhausted, attempts to join part F to part G. He's never seen part G before. He's frightened of it."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Part G is a lie. There is no part G. There's never been a part G."
+    },
+    {
+     "t": "a",
+     "text": "Dev laughs with his whole body. He's gentle and self-deprecating and quick, funny in the way people are when they've decided being easy to be around is the least they can do. Cal hasn't laughed like this with a guy his age in about two years. Since swim. Since he walked off the deck."
+    },
+    {
+     "t": "a",
+     "text": "Then Dev bends to grab the drill and something falls out of the pocket of his basketball shorts. A coin, heavy, bronze. It rings on the floorboards and rolls in a long lazy curve under the radiator."
+    },
+    {
+     "t": "a",
+     "text": "Cal gets there first. He picks it up. It's bigger than a quarter and heavier than it should be. On one side, a triangle inside a circle. On the other, a Roman numeral: IX. Something's printed in tiny letters around the rim. He doesn't get to read it."
+    },
+    {
+     "t": "a",
+     "text": "Dev takes it back, fast and smooth, like a magician recovering a card."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Poker chip. From a casino in Lake Charles. I'm a degenerate. Don't tell my mom."
+    },
+    {
+     "t": "a",
+     "text": "He laughs. Cal laughs. Dev puts it in his pocket and keeps his hand on it for a second, the way you'd keep a hand on a dog that might run."
+    },
+    {
+     "t": "a",
+     "text": "Cal has been lied to by the best. He's been lied to by a trustee of this university, every week of his life, over speakerphone. He knows it's not a poker chip. And he knows Dev is lying to him kindly, which is a different thing, and a rarer one."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "“Poker chip. Sure. I'll take your money sometime.”",
+     "set": {
+      "e1_dev_chip": "let_go"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Poker chip. Sure. I'll take your money sometime."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "text": "You'll try."
+      },
+      {
+       "t": "a",
+       "text": "Dev's shoulders come down about an inch. He doesn't say thank you, because saying thank you would admit there was something to be thanked for. Instead he hands Cal the drill, which is a bigger gesture than it looks, because it's his dad's drill."
+      },
+      {
+       "t": "a",
+       "text": "They finish the loft bed. It's slightly crooked. They both pretend not to see. A friendship gets built on top of a small, deliberate courtesy, which is what most of the good ones are built on."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "“That's not a poker chip, man.”",
+     "set": {
+      "e1_dev_chip": "asked"
+     },
+     "remember": "Dev will remember that.",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "That's not a poker chip, man."
+      },
+      {
+       "t": "a",
+       "text": "Dev stops. The drill hangs in his hand. For a second the whole warm, easy thing he's been doing all afternoon goes away, and underneath it is a person who is very, very tired."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "text": "No. It's not."
+      },
+      {
+       "t": "a",
+       "text": "A long beat. Gerald, in Cal's room across the hall, bangs once, faintly."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "text": "Can it be a poker chip for now?"
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Yeah. It can be a poker chip."
+      },
+      {
+       "t": "a",
+       "text": "They go back to the bed. They both remember, after that, that he asked."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Tell Dev his own lie: the single was a lottery",
+     "set": {
+      "e1_dev_chip": "traded"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Cool. While we're confessing. I won the single in a lottery. Random draw. Pure luck. I'm a very lucky person."
+      },
+      {
+       "t": "a",
+       "text": "Dev looks at him. Cal looks back. Both of them know exactly what the other one just did, and neither of them calls it."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "paren": "smiling",
+       "text": "Cool. We're both lucky."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "So lucky."
+      },
+      {
+       "t": "a",
+       "text": "It's a strange kind of handshake, trading lies. But it's still a handshake. They finish the bed. It's slightly crooked. Like everything else they'll build together."
+      }
+     ]
+    }
+   ],
+   "next": "n10"
+  },
+  "n10": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "EXT. LOWELL HOUSE, CURB. EVENING (6:10 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "The Okafors' minivan, a silver Sienna with a Houston Methodist parking sticker and a bumper sticker that says MY SON IS AN HONOR STUDENT AT WHITLOCK that Dev has begged to have removed, is idling at the curb with its hatch open and emptied."
+    },
+    {
+     "t": "a",
+     "text": "Mrs. Okafor is crying with total commitment. Mr. Okafor is not crying with total commitment. Ada is filming both, narrating in a whisper: “Day one. Mom's lost it.”"
+    },
+    {
+     "t": "a",
+     "text": "Mr. Okafor shakes Cal's hand like he's closing on a house: two pumps, firm, eye contact, a squeeze at the end to make it binding."
+    },
+    {
+     "t": "line",
+     "name": "MR. OKAFOR",
+     "text": "You watch him. He doesn't watch himself."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Dad."
+    },
+    {
+     "t": "line",
+     "name": "MR. OKAFOR",
+     "text": "I'm talking to Cal."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_lie_parking": true
+     },
+     "text": "Then Mrs. Okafor dabs her eyes, looks around the curb and frowns."
+    },
+    {
+     "t": "line",
+     "if": {
+      "e1_lie_parking": true
+     },
+     "name": "MRS. OKAFOR",
+     "text": "Cal, baby, your father never came back from parking? It's been four hours. Where did he park, Connecticut?"
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_lie_parking": true
+     },
+     "text": "The lie needs feeding. Lies always do. Cal opens his mouth and something comes out about New York, about getting called away, it's a whole thing, it's a work thing, he's very in demand. It's getting thinner as it goes. Before it can tear, Dev steps in."
+    },
+    {
+     "t": "line",
+     "if": {
+      "e1_lie_parking": true
+     },
+     "who": "dev",
+     "text": "Mom. Mom, did you pack my inhaler? I can't find my inhaler. I think it's in Houston. I think I'm going to die."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_lie_parking": true
+     },
+     "text": "Mrs. Okafor forgets Cal's father entirely and starts digging through a tote bag. Dev doesn't have asthma. Dev doesn't look at Cal. That's a gift, and Cal notices it, and doesn't know where to put it."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_dev_chip": "asked"
+     },
+     "text": "Over his mother's shoulder, Dev catches Cal's eye. A small nod. Poker chip. It's a poker chip. They're good."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "They're taking me to Dot's in town before they drive back. Diner. Pie. My mom's going to make the waitress cry. Come."
+    },
+    {
+     "t": "line",
+     "name": "MRS. OKAFOR",
+     "paren": "not looking up from the tote",
+     "text": "He's coming. I've decided."
+    },
+    {
+     "t": "a",
+     "text": "At the same moment, Cal's phone buzzes in his pocket. Then again. Then four more times, a drumroll."
+    },
+    {
+     "t": "texts",
+     "thread": "PRIYA (EMERGENCIES + VIBES)",
+     "onCal": true,
+     "msgs": [
+      {
+       "from": "priya",
+       "text": "PREGAME"
+      },
+      {
+       "from": "priya",
+       "text": "MY ROOM"
+      },
+      {
+       "from": "priya",
+       "text": "NOW"
+      },
+      {
+       "from": "priya",
+       "text": "i have a skull and a plan"
+      },
+      {
+       "from": "priya",
+       "text": "wait no the skull is at urs. i have a plan"
+      },
+      {
+       "from": "priya",
+       "text": "bring kevin"
+      }
+     ]
+    },
+    {
+     "t": "a",
+     "text": "Two doors down, through her open window, music starts: loud, sweaty, something with a lot of bass and a woman yelling about a car. Mrs. Okafor is holding out her arms. Ada is filming. The sun is going down behind the towers, and he has to pick a version of tonight."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Dinner at Dot's with the Okafors",
+     "set": {
+      "e1_evening": "okafors"
+     },
+     "next": "n11a",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "I'm coming. I'm told I've been decided."
+      },
+      {
+       "t": "a",
+       "text": "He texts Priya, rain check, see you on the lawn. She sends back a skull emoji, a knife emoji, and a heart, in that order. Mrs. Okafor puts him in the middle seat of the van between Dev and Ada like he's eight. He doesn't hate it. That's the problem. He doesn't hate it at all."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Pregame with Priya",
+     "set": {
+      "e1_evening": "priya"
+     },
+     "next": "n12a",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "I can't. I promised somebody I'd... it's a whole thing. Next time."
+      },
+      {
+       "t": "a",
+       "text": "Mrs. Okafor looks at him for a long second, then hugs him anyway, the hug of a woman who has heard “next time” from a lot of boys. Dev just nods, easy, and climbs into the van. Cal watches the Sienna's taillights go down the hill. Then he goes up three flights to get Kevin off his shelf."
+      }
+     ]
+    }
+   ]
+  },
+  "n11a": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. DOT'S DINER, MILL STREET, ALDER FALLS. EVENING (6:40 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "Dot's is townie territory. Chrome stools, a pie case that rotates like a jewelry display, a Red Sox schedule from 2019 that nobody has had the heart to take down. Two guys in Carhartt at the counter stop talking when the Okafors walk in with a Whitlock kid in a swim parka. They don't start again."
+    },
+    {
+     "t": "a",
+     "text": "DOT herself, seventies, beehive, reading glasses on a chain, seats them in a booth by the window and calls Mrs. Okafor “hon” and Mr. Okafor “chief,” and Mrs. Okafor glows."
+    },
+    {
+     "t": "a",
+     "text": "The food comes. Before anyone lifts a fork, Mrs. Okafor takes Ada's hand and Dev's hand, and Dev takes Mr. Okafor's, and then there's a hand held out toward Cal across the table, and Cal realizes it's for him."
+    },
+    {
+     "t": "a",
+     "text": "He hasn't sat at a family table in years. Not a real one. He's had Christmas at the Four Seasons with his father and his father's phone. He's had Thanksgiving in the St. Anselm's dining hall with the other kids whose parents were in Gstaad. He takes Mrs. Okafor's hand. It's warm and a little damp. She says grace: plain words, thank you for this food, thank you for safe roads, thank you for my son's new friend, keep them both."
+    },
+    {
+     "t": "a",
+     "text": "It undoes something in him. He has to look at the ketchup for a while."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Amen. Also, is it weird if I want to be adopted? Like legally. I'll sign whatever."
+    },
+    {
+     "t": "line",
+     "name": "MR. OKAFOR",
+     "paren": "buttering a roll, squinting",
+     "text": "Whitaker. Whitaker. Richard Whitaker? The Richard Whitaker? Whitaker Lyle?"
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Depends what you read about him."
+    },
+    {
+     "t": "line",
+     "name": "MR. OKAFOR",
+     "text": "I read that he bought half of a hospital system in Ohio and fired the nurses. Pass the salt."
+    },
+    {
+     "t": "a",
+     "text": "Mrs. Okafor reaches over and squeezes Dev's hand on the tabletop, apropos of nothing. Her eyes are wet again."
+    },
+    {
+     "t": "line",
+     "name": "MRS. OKAFOR",
+     "text": "After the year we had. Look at him. Nine months. God is good."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "paren": "instantly, at speed",
+     "text": "What kind of pie do we think they have. I think they have cherry. Dot? Dot, is there cherry? I'm going to ask about the cherry."
+    },
+    {
+     "t": "a",
+     "text": "He's out of the booth before anyone can answer. Cal watches him go. Nine months of what?"
+    },
+    {
+     "t": "a",
+     "text": "At the register after, Mr. Okafor pays and refuses Cal's card with physical force. While Dev's family argues with Dot about the tip, a skinny busboy in a Dot's apron, a high-school kid with a name tag reading DANNY and a pencil behind his ear, clears the booth beside the register and says out of the side of his mouth, very quietly, without looking at Cal:"
+    },
+    {
+     "t": "line",
+     "name": "DANNY",
+     "text": "You need a Vermont license? One-twenty. Better than the real ones. The real ones have a typo in the hologram."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Buy the Vermont license",
+     "set": {
+      "e1_fake_id": true
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "Danny steers him toward the back hall by the restrooms and shoots his photo against the steel door of Dot's walk-in freezer with a phone and a clip-on ring light he produces from his apron like a magician."
+      },
+      {
+       "t": "line",
+       "name": "DANNY",
+       "text": "Look twenty-two. Look tired. Look like you've been to Burlington. Perfect. Name? Not yours. Never yours."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "paren": "without thinking",
+       "text": "Pruitt."
+      },
+      {
+       "t": "line",
+       "name": "DANNY",
+       "text": "Like the hall. Bold. Give me twenty minutes, Dot's got a laminator for the menus."
+      },
+      {
+       "t": "a",
+       "text": "Nineteen minutes later, as the Okafors pile out the door, Danny presses it into his palm with the change: CALVIN R. PRUITT, Burlington, VT, age twenty-two. It's beautiful. It's terrifying. It's better than the real one."
+      },
+      {
+       "t": "line",
+       "name": "DANNY",
+       "text": "You look like a Pruitt. Don't get caught. My sister would kill me."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Pass, but tip him a hundred anyway",
+     "set": {
+      "e1_danny_tip": true
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "Cal folds a hundred-dollar bill into Danny's apron pocket. Danny takes it out and looks at it like it's an insult and a miracle at the same time."
+      },
+      {
+       "t": "line",
+       "name": "DANNY",
+       "text": "You're one of the rich ones."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "I'm one of the rich ones."
+      },
+      {
+       "t": "line",
+       "name": "DANNY",
+       "text": "Cool. Okay. Then take some advice for free. If you ever want a real drink in this town, go to the Anchor down the street. Don't tell them you're from up there. Don't say “up there” either."
+      },
+      {
+       "t": "a",
+       "text": "He pockets the hundred, fast, and goes back to busing like it never happened."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "“Aren't you like sixteen?”",
+     "set": {},
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Aren't you, like, sixteen?"
+      },
+      {
+       "t": "line",
+       "name": "DANNY",
+       "text": "Seventeen. Junior. Thanks for the concern, Dad."
+      },
+      {
+       "t": "a",
+       "text": "He's offended and impressed, in that order, and then just tired, in a way that doesn't fit a seventeen-year-old face. Cal reads it all: a kid carrying too much and carrying it like it's nothing. He's seen that face. It was in the mirror at St. Anselm's, around fifteen."
+      },
+      {
+       "t": "line",
+       "name": "DANNY",
+       "text": "Offer stands. Ask anybody. I'm the best in the county."
+      }
+     ]
+    }
+   ],
+   "next": "n11b"
+  },
+  "n11b": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "EXT. MILL STREET TO CAMPUS. DUSK (7:25 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "The Sienna pulls away from the curb outside Dot's. Mrs. Okafor's hand is out the passenger window, waving, until the van turns the corner by the Methodist church and even then, Cal would swear, she's still waving. Ada films them out the back window until she's a glitter case and then nothing."
+    },
+    {
+     "t": "a",
+     "text": "Dev stands on the sidewalk with his hands in his pockets for a long time after the van's gone."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Okay. Okay. I'm fine."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "You're very fine."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "I'm a grown man. I've done my own laundry since I was fifteen. I'm going to walk up this hill."
+    },
+    {
+     "t": "a",
+     "text": "They walk up the hill. Mill Street at dusk: a hardware store, a laundromat, a tattoo parlor with a neon swallow. Halfway up, a bar with a neon anchor in the window, the A flickering, a hand-painted sign: THE ANCHOR. EST. 1993. Through the window, a woman behind the bar laughs at something and throws a dish towel at someone. The light's warm in there. The kind of place where people know each other's names, which is exactly why Cal keeps walking."
+    },
+    {
+     "t": "a",
+     "text": "Above them on the ridge, the towers of Whitlock are going gold and then purple. Down the hill to their left, the lake has turned the color of a bruise."
+    },
+    {
+     "t": "a",
+     "text": "Dev bumps a pebble along the sidewalk with his sneaker, three, four times, then kicks it into the gutter. When he speaks it's quiet, and to the pavement, apropos of nothing."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "My brother would've liked you. He was a smartass too. He'd have done a whole thing about your parka."
+    },
+    {
+     "t": "a",
+     "text": "Would've. Was. Past tense, twice, in two sentences, from a guy who has spent all day talking in the present tense about everything, about his roommate who isn't here yet, about the loft bed, about pie."
+    },
+    {
+     "t": "a",
+     "text": "Cal reads it. He reads everybody. It's the one thing he's good at without trying. Right now he wishes he weren't."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Catch the past tense and ask: “Would've?”",
+     "set": {
+      "e1_dev_brother": "asked"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Would've?"
+      },
+      {
+       "t": "a",
+       "text": "Dev keeps walking. Ten steps. Fifteen."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "text": "Chidi. Last year. June. I'm not ready to... yeah."
+      },
+      {
+       "t": "a",
+       "text": "Cal doesn't push. He wants to. Every reflex he has says find the next question, find the soft spot, keep the other person talking so you don't have to. He doesn't. He just walks next to him."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "text": "Thanks for not pushing."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "I'm very lazy. It's mostly that."
+      },
+      {
+       "t": "a",
+       "text": "Dev laughs, wet. Their friendship starts here, on the hill, in the dark, in the past tense."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Say nothing. Bump his shoulder.",
+     "set": {},
+     "reaction": [
+      {
+       "t": "a",
+       "text": "Cal doesn't say anything. He just knocks his shoulder into Dev's, once, walking."
+      },
+      {
+       "t": "a",
+       "text": "Dev bumps back. Harder, almost putting Cal into a hedge. They walk the rest of the way up the hill in silence, which says more than either of them could have, and is easier, and is a cheat, and is also exactly right."
+      },
+      {
+       "t": "a",
+       "text": "At the top of the hill, by the gates, Dev says, to nobody, “Okay,” like a man setting something down."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Make him laugh: do an impression of Mr. Okafor",
+     "set": {},
+     "reaction": [
+      {
+       "t": "a",
+       "text": "Cal squints at a lamppost, deeply suspicious."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "paren": "as Mr. Okafor",
+       "text": "Who built this? It's not level. People have walked under many things that were not level. That does not make it right. Ngozi. NGOZI. Who built this street?"
+      },
+      {
+       "t": "a",
+       "text": "Dev laughs so hard he has to stop on the hill and put his hands on his knees. A townie walking a beagle crosses the street to avoid them."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "paren": "gasping",
+       "text": "Don't ever. Ever. Do that in front of him. He'll ground you. He'll ground you and you don't even live with us."
+      },
+      {
+       "t": "a",
+       "text": "Something heavy lifts off him for one night. Cal sees it go. He doesn't ask what it was."
+      }
+     ]
+    }
+   ],
+   "next": "n13"
+  },
+  "n12a": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. PRIYA'S SINGLE, LOWELL HOUSE. EVENING (6:40 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "Priya's room has been occupied for five hours and already looks like a fever dream curated by a museum. Polaroids clothespinned to a string across the window. A Pina Bausch poster. A Sweeney Todd Playbill. Fairy lights she'll be fined for, stapled directly into eighteenth-century plaster. Her own radiator, under the window, hissing like it's been insulted."
+    },
+    {
+     "t": "a",
+     "text": "Cal walks in holding the skull. She takes it, puts a black beret on it, and sets it on the desk like a guest of honor."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Kevin! You made it! Kevin, this is Cal, Cal, Kevin. You've met. He's from the theater department. He's very method."
+    },
+    {
+     "t": "a",
+     "text": "Mezcal in red Solo cups, a cut lime, a saltshaker stolen from the Commons. A speaker blasting something by a woman with a lot of feelings about a car. Priya dances while she pours, with her whole body, and she's dazzling, and Cal can't take his eyes off her, not in a romantic way, in the way you can't take your eyes off a lit match."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Here's the plan. We arrive at Sunset on the Lawn at eight-oh-five. Not eight, eight is desperate. Eight-oh-five is a choice. We enter from the side, by the hydrangeas. I'll say something devastating to someone, I don't know who yet, God will tell me. You'll be mysterious and wounded. It's not a stretch."
+    },
+    {
+     "t": "a",
+     "text": "Then she takes the orange pill bottle out of her tote, the one with the label that says R. MENON, and shakes one pill out onto the Sweeney Todd Playbill. She crushes it with the edge of her new Whitlock student ID, still warm from the laminator, her own face on the card grinning up at her. Chops it. Pushes it into a line with the edge of the card, quick and precise, like she's done it in a lot of dorm rooms she didn't live in yet."
+    },
+    {
+     "t": "a",
+     "text": "She does half of it with a rolled-up Post-it. Sits back. Sniffs. Blinks fast twice, like a camera shutter."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Mm. There she is."
+    },
+    {
+     "t": "a",
+     "text": "She holds out the Playbill, the other half of the line still on it, toward him."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "It's basically coffee for people with ambition. Doctors prescribe it to children. Children, Cal. It's practically a juice box."
+    },
+    {
+     "t": "a",
+     "text": "She's smiling. Her pupils are already a little too big. She's scary and she's luminous and the music is very loud."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Do the bump with her",
+     "set": {
+      "e1_bump": true
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He takes the rolled Post-it. It burns, then it doesn't. It tastes bitter at the back of his throat like an aspirin chewed by accident."
+      },
+      {
+       "t": "a",
+       "text": "Twelve minutes later his whole night goes electric. The colors in the room get louder. He can feel his own heartbeat in his fingertips. He's faster, funnier, everything he says lands, and he's reading Priya so clearly now he can see the jokes before she makes them. He's also a little meaner. He can feel that too, the way you can feel a car pulling slightly to one side."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "paren": "delighted",
+       "text": "Oh, you're FUN. Oh, this is a disaster. I love it."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Take the mezcal, skip the pill",
+     "set": {},
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He takes the Solo cup instead and touches it to the Playbill like a toast."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "I'll stick to the classics."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "Coward."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Yep."
+      },
+      {
+       "t": "a",
+       "text": "She isn't offended. She does the other half herself, quick, and wipes the Playbill clean with her thumb and licks the thumb. But something in her shoulders lets go, just slightly, as if part of her is relieved that someone in this room said no to something. She'd never say so. He'd never ask."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Pick up the bottle and read the name out loud",
+     "set": {
+      "e1_read_bottle": true
+     },
+     "remember": "Priya noticed you noticed.",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He picks up the orange bottle off the desk and turns it so the label catches the fairy lights."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "R. Menon."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "My cousin Rhea. She's generous. She's very generous. It runs in the family, generosity, it's a whole genetic thing."
+      },
+      {
+       "t": "a",
+       "text": "She takes the bottle back. A little too fast. She drops it into the tote and zips the tote, and smiles, and turns the music up. He knows what that's like, having somebody look straight at the one thing you're carrying. She knows he knows. For a second, neither of them is performing, and it's awful, and then it's over."
+      }
+     ]
+    }
+   ],
+   "next": "n12b"
+  },
+  "n12b": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. PRIYA'S SINGLE. LATER (7:20 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "They're side by side at her mirror, an oval thing in a gilt frame she bought at a flea market in Brimfield and drove here in her lap. She's doing her eyeliner, a wing so sharp it could open mail. She's doing his hair, against his will, with a pomade that smells like a tropical fruit that doesn't exist."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Stop moving. You have a cowlick like a political position."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "It's been there since birth. It's load-bearing."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Nothing is load-bearing. Everything's a choice. That's the first thing they teach you in theater. The second thing is how to cry on cue. The third thing is how to get out of a contract."
+    },
+    {
+     "t": "a",
+     "text": "She finishes the wing. Studies herself. Then studies him in the mirror, and her face goes serious, the way it did over the notebook."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Okay. Rule of best friendship, which we are, legally, I've filed the paperwork. Tell me one true thing nobody here knows. One. I'll go first, so it's fair."
+    },
+    {
+     "t": "a",
+     "text": "She looks at herself, not him, while she says it."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "I got rejected from Juilliard. In March. Didn't even get a callback. And I told my parents I got in and turned it down, because Whitlock had a better, quote, “academic profile.” My dad told everyone at temple. There's a sign in my uncle's restaurant."
+    },
+    {
+     "t": "a",
+     "text": "It's true. You can hear it. Her voice goes small for exactly one sentence and then comes back up to full volume like a car stereo."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Anyway! I'm a fraud. Your turn. And it has to be true. I'll know. I'm very observant. It's a curse."
+    },
+    {
+     "t": "a",
+     "text": "She hands him the eyeliner like a microphone. Down the hall, faintly, through two doors, Gerald bangs."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "See, Gerald agrees with me."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "“My mom left when I was eleven. I don't know where she is.”",
+     "set": {
+      "e1_true_thing": "mom"
+     },
+     "remember": "Priya will remember that.",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "My mom left when I was eleven. I don't know where she is. I don't know if she's alive. Nobody's said her name in my house in seven years."
+      },
+      {
+       "t": "a",
+       "text": "Priya stops doing her lip liner halfway through the bottom lip. For once, she doesn't say anything clever, which for her is an enormous thing to not do. The music keeps going. She doesn't turn it down."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "Okay."
+      },
+      {
+       "t": "a",
+       "text": "She reaches down and squeezes his hand once, hard, and lets go. Then she finishes the lip liner with total concentration. Something behind her eyes is filing it away, carefully, in a folder. Something else in her is genuinely moved. Both are true. They're always both true with her."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Tell her a lie that sounds true",
+     "set": {
+      "e1_true_thing": "lie"
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He puts on his most unguarded face, the one he saves for teachers who are about to give him an extension."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "I've never been in love. Not once. I think there's something wrong with me. I think I'm missing the part."
+      },
+      {
+       "t": "a",
+       "text": "Priya looks at him in the mirror for a long time. Then she nods slowly, like a doctor confirming something."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "That's so sad. That's the saddest thing I've ever heard. I believe you."
+      },
+      {
+       "t": "a",
+       "text": "She does. And the worst part is that it's at least half true, which is how he always does it."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "“My dad didn't come today. He sent a car.”",
+     "set": {
+      "e1_true_thing": "dad"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "My dad was supposed to drive me up today. He didn't come. He sent a car. His assistant texted me from the car. Well. Not from the car. To the car."
+      },
+      {
+       "t": "a",
+       "text": "It's a smaller truth than the one he's sitting on, but it's still true, and it still comes out with an edge on it. Priya puts the eyeliner down."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "Then tonight, I'm your dad."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Please never say that again."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "text": "Son. Sit up straight. Have you thought about law school?"
+      },
+      {
+       "t": "a",
+       "text": "He laughs so hard he gets pomade in his eye. It's the best he's felt all day."
+      }
+     ]
+    }
+   ],
+   "next": "n13"
+  },
+  "n13": {
+   "act": 2,
+   "blocks": [
+    {
+     "t": "card",
+     "text": "Act Two · Sunset on the Lawn"
+    },
+    {
+     "t": "slug",
+     "text": "EXT. KAPPA LAMBDA HOUSE LAWN, ELM ROW. SUNSET (7:50 P.M.)"
+    },
+    {
+     "t": "music",
+     "song": "Von dutch",
+     "artist": "Charli xcx"
+    },
+    {
+     "t": "a",
+     "text": "Sunset on the Lawn is a Kappa Lambda tradition older than most of the sisters' grandmothers, which is how it survives: nobody can remember when it was a tea party. String lights in the old oaks. Sisters in white dresses, a hundred of them, like a wedding with no bride, or all brides. A DJ on the porch under the Greek letters. Three kegs disguised as planters of white hydrangeas, which fools no one, including the campus police officer eating a hot dog by the gate."
+    },
+    {
+     "t": "a",
+     "text": "And behind all of it, beyond the backyards of Elm Row, Tamsin Lake is going gold, then copper, then a color that doesn't have a name, the light coming off it so bright it looks like the houses are on fire from behind."
+    },
+    {
+     "t": "a",
+     "text": "Status is everywhere, if you know how to read it, and Cal was raised reading it. Who's wearing their mother's pearls and who bought theirs at Nordstrom. Whose watch is a Patek and whose is a gift-shop Cartier. Which boys stand on the porch steps and which stand on the grass. Which girls are laughing and which girls are being laughed with."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_evening": "priya"
+     },
+     "text": "Priya makes an entrance from the side, by the hydrangeas, at exactly eight-oh-five, holding Kevin aloft in his black beret like Hamlet at a rave. Three people scream. One of them is a Kappa senior who says “Is that real?” and Priya says “Is anything?” and keeps walking."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_evening": "okafors"
+     },
+     "text": "Priya finds them in under a minute, materializing out of the crowd in a white slip dress with a black lace bra under it as a statement, already holding two drinks and giving one to Cal. She kisses Dev on both cheeks like they're in Milan. Dev looks like he's been hit by a very friendly car."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_evening": "okafors"
+     },
+     "text": "Dev holds a can of lime seltzer. A Rho brother offers him a Solo cup and he says “I'm on antibiotics, it's a whole thing.” A Kappa offers him a shot and he says “I'm driving.” Nobody drives at Sunset on the Lawn. He holds the seltzer the entire night like a talisman."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_fake_id": true
+     },
+     "text": "At the keg-planter, the Kappa pouring wristbands checks his Vermont license under her phone flashlight, then looks up at him, then down again."
+    },
+    {
+     "t": "line",
+     "if": {
+      "e1_fake_id": true
+     },
+     "name": "KAPPA AT THE KEG",
+     "text": "Calvin Pruitt. Twenty-two. You look very tired for twenty-two."
+    },
+    {
+     "t": "line",
+     "if": {
+      "e1_fake_id": true
+     },
+     "who": "cal",
+     "text": "It's been a long twenty-two years."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_bump": true
+     },
+     "text": "Cal is moving too fast. He can feel it. Everything is in high definition, every face a page he can read from across the lawn, every joke arriving in his mouth before the setup's even finished. He's laughing at things a half-second before they're funny."
+    },
+    {
+     "t": "a",
+     "text": "Then the crowd on the porch steps parts, the way crowds do in movies and almost never in life."
+    },
+    {
+     "t": "a",
+     "text": "A girl at the top of the steps in a white dress that looks like money, which is the point of it. Blonde hair worn down in a way that took forty minutes to look like it took none. Perfect from every angle. She looks out over the lawn like it's a seating chart, finds him, and comes straight down the steps toward Cal, not hurrying, as though somebody told her exactly where he'd be standing."
+    },
+    {
+     "t": "a",
+     "text": "This is MARGAUX VANCE, 19. She stops a foot from him. Close enough that he can smell her perfume, which is something French and green and very expensive, or was, once."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_bump": true
+     },
+     "text": "Her eyes go to his pupils for half a second. She clocks it. She doesn't mention it. She files it."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Cal Whitaker. You have his jaw."
+    },
+    {
+     "t": "a",
+     "text": "A beat. She looks him over the way a jeweler looks at a stone she suspects is glass."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Not his posture."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "“You know my father?”",
+     "set": {
+      "e1_margaux_open": "direct"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "You know my father?"
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "Everyone knows your father. I've met him."
+      },
+      {
+       "t": "a",
+       "text": "She's precise. She doesn't elaborate. She doesn't say where or when or what he was like, which is its own kind of answer, the way a closed door is a kind of answer."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "Margaux Vance. Sophomore. You asked directly. Nobody here asks anything directly. It's refreshing. It won't last."
+      },
+      {
+       "t": "a",
+       "text": "She likes it, though. He can see that she likes it, and he can see her not wanting him to."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Flirt back, hard, with everything you've got",
+     "set": {
+      "e1_margaux_open": "flirt"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "His posture's for sale. I have my own. It's more of a lean. It's for leaning in. Like this."
+      },
+      {
+       "t": "a",
+       "text": "He gives her the full Whitaker wattage. The eyebrow. The half-smile. The thing with his voice going low and a little rough that has worked on every girl at every mixer between Exeter and Choate. Margaux watches it happen with polite interest, like a tourist watching the changing of the guard."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "That's very good. Really. Is that all of it?"
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "There's an encore."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "I've been flirted with by senators' sons since I was fourteen. You'll have to do better than an encore. I'm Margaux."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "“Whose posture do I have?”",
+     "set": {
+      "e1_margaux_open": "read"
+     },
+     "remember": "Margaux will remember that.",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Whose posture do I have?"
+      },
+      {
+       "t": "a",
+       "text": "He means it lightly. It doesn't come out lightly. He's read her: she meant it as an insult and also, under the insult, as a real question, as if she'd been sent to compare him to a picture and he didn't match."
+      },
+      {
+       "t": "a",
+       "text": "For half a second, Margaux Vance's face is not perfect. Something moves behind it, quick, like a fish under ice."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "I'll let you know."
+      },
+      {
+       "t": "a",
+       "text": "Then she smiles, and it's perfect again, and she holds out a hand like she's at a closing. “Margaux Vance.” Her grip is very cold, and very steady."
+      }
+     ]
+    }
+   ],
+   "next": "n14"
+  },
+  "n14": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "EXT./INT. KAPPA LAMBDA HOUSE, LAWN AND PORCH. NIGHT (8:30 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "Margaux takes his arm and gives him the tour of the party like a docent at the Met, murmuring in his ear, nodding at exhibits."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Rho junior on the swing. Slept with both co-chairs of the Kappa formal committee, in the same week, and they found out at the formal committee. The formal was beautiful. Over there, girl in the Zimmermann. Her grandfather has a wing at the Met and her father has a wing at a federal prison in Danbury. We don't mention the second wing."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "And him?"
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Him? Financial aid. Hides it. Works in the Fennimore stacks and tells people he's doing research. It's sweet."
+    },
+    {
+     "t": "a",
+     "text": "The word aid does something to her mouth for a flicker of a second, a tightening, and then she's moving on, fast, to a lacrosse captain who owes everyone money. Never owe him. Never owe her. Never, ever owe the girl by the hydrangeas, she keeps a spreadsheet."
+    },
+    {
+     "t": "a",
+     "text": "She's the best company Cal's had all day. She's funny in a dry, surgical way that doesn't care if you laugh. And he knows he's being worked. He can feel the angles in it, the way you can feel the slope of a floor in an old house. He just doesn't care yet."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_bump": true
+     },
+     "text": "A Kappa sophomore cuts in to show Margaux her boyfriend's Instagram, and Cal, electric, too fast, hears himself say it before he can stop: “You touch your necklace every time you say his name. He's cheating on you, isn't he? And you know.” The girl goes white. She walks away without a word. Margaux looks at him like he's a weapon she didn't know was loaded."
+    },
+    {
+     "t": "a",
+     "text": "And because he reads everything, he reads her too. When she turns to wave at someone, he catches the corner of a store tag tucked flat inside the back of her dress, folded under so it won't show, the kind of thing you do when you're planning to return something on Monday. Her red-soled shoes have been resoled. Good work, a cobbler who knows what he's doing, but you can see the line where the new leather meets the old."
+    },
+    {
+     "t": "a",
+     "text": "Then, lightly, too precisely, while handing him a drink:"
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Is your father coming up for Convocation? The trustees do a dinner the night before. And is he still doing Nantucket for Labor Day, or did that change?"
+    },
+    {
+     "t": "a",
+     "text": "Three questions. A calendar. Like someone sent her with a list."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Oh, and Brooks Hadley asked me to find you. Don't let him. He has your father's laugh. It's unsettling."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_detour": "rho"
+     },
+     "text": "Cal thinks of the laugh rolling down the stairs at the Rho this afternoon, the one he almost recognized. He doesn't say anything. He doesn't know what he'd say."
+    },
+    {
+     "t": "a",
+     "text": "She takes his phone out of his hand without asking, the second girl to do that today, types her number into it, and hands it back. The contact reads: Margaux (Don't)."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "So? Convocation?"
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "“What do you actually want from me?”",
+     "set": {
+      "e1_margaux_probe": "called"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "What do you actually want from me? Not the tour. The thing under the tour."
+      },
+      {
+       "t": "a",
+       "text": "She looks at him for a long moment. Then she smiles, fully, for the first time all night, and it changes her whole face into somebody younger and more dangerous."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "Everything. Eventually. Tonight, a drink."
+      },
+      {
+       "t": "a",
+       "text": "She clinks her cup against his. It's the most honest lie he's ever heard. Or the most dishonest truth. He can't tell, which never happens, and he's thrilled by it in a way he'll regret."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "“He's coming. We're very close.”",
+     "set": {
+      "e1_margaux_probe": "lied"
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Oh, he's coming. Wouldn't miss it. We're very close. We talk every day. He's basically my best friend. We have a handshake."
+      },
+      {
+       "t": "a",
+       "text": "It's out of him smooth as cream: the lie for status, the one he's told at a hundred dinners. Margaux nods along, warm, impressed, sipping. She's very good at nodding."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "That's lovely. That's so rare."
+      },
+      {
+       "t": "a",
+       "text": "But her eyes have gone somewhere else, the way a person's eyes go when they're writing something down in their head to repeat later, word for word."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "“He didn't come today. I don't know his schedule.”",
+     "set": {
+      "e1_margaux_probe": "truth"
+     },
+     "remember": "Margaux will remember that.",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "He didn't come today. He was supposed to. So I honestly don't know his schedule. You might know it better than me."
+      },
+      {
+       "t": "a",
+       "text": "Margaux goes quiet. It's the first silence she's let happen all night. She looks down into her cup."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "Mine didn't either."
+      },
+      {
+       "t": "a",
+       "text": "It slips out. He watches it slip, like a glass going off the edge of a table. She catches it immediately: a laugh, a toss of the hair, a joke about how her father thinks Greenwich to Alder Falls is a transatlantic flight. Perfect recovery. Ten out of ten. He saw it anyway."
+      }
+     ]
+    }
+   ],
+   "next": "n15"
+  },
+  "n15": {
+   "blocks": [
+    {
+     "t": "slug",
+     "cut": true,
+     "text": "INT. KAPPA LAMBDA HOUSE, UPSTAIRS POWDER ROOM. NIGHT (8:50 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "Margaux locks the door. Checks the lock. Sits down on the closed lid of the toilet in her white dress, knees together, and looks at her phone, which is buzzing in her hand. The screen says MOM."
+    },
+    {
+     "t": "a",
+     "text": "She answers. And she's a different person: smaller, younger, shoulders curving in. Like someone took the perfect girl off a hanger and this is what was underneath."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "I met him."
+    },
+    {
+     "t": "line",
+     "name": "MOM",
+     "paren": "V.O., on the phone, faint",
+     "text": "And?"
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "He's not what I expected. He's... no. No, he's funny. He's actually funny."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "No, he didn't say anything about the debt, Mom, he's eighteen, he doesn't know what a debt is. He thinks money is weather."
+    },
+    {
+     "t": "a",
+     "text": "A long stretch of tinny, precise speech from the phone. Margaux closes her eyes."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "I know what's at stake. I know. I know."
+    },
+    {
+     "t": "a",
+     "text": "She hangs up. Stands. Turns to the mirror, and looks at herself, and keeps looking, and adjusts one strand of hair, and keeps looking, until the girl in the mirror is perfect again. It takes a while. Then she unlocks the door."
+    },
+    {
+     "t": "slug",
+     "text": "EXT. KAPPA LAWN. CONTINUOUS"
+    },
+    {
+     "t": "music",
+     "song": "Good Luck, Babe!",
+     "artist": "Chappell Roan"
+    },
+    {
+     "t": "a",
+     "text": "Down on the lawn, Nora Castellanos is here. Same thrifted blazer, now over a black dress that has clearly been to a lot of funerals and one prom. Notebook out. Recorder out. She's interviewing a very drunk Kappa junior for the “Who Gets In?” piece, nodding sympathetically as the girl explains that legacy admissions are, quote, “basically affirmative action for people who deserve it.” Nora writes that down with something like joy."
+    },
+    {
+     "t": "a",
+     "text": "She crashed. She's not on any list. She looks less like a guest than a war correspondent."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_fake_name": true
+     },
+     "text": "Across the lawn, Priya cups her hands around her mouth and bellows over the music:"
+    },
+    {
+     "t": "line",
+     "if": {
+      "e1_fake_name": true
+     },
+     "who": "priya",
+     "text": "CAL WHITAKER! GET OVER HERE! I NEED YOU TO SETTLE A BET ABOUT OPHELIA!"
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_fake_name": true
+     },
+     "text": "Nora turns. Finds Cal. Raises her pen in a little salute."
+    },
+    {
+     "t": "line",
+     "if": {
+      "e1_fake_name": true
+     },
+     "who": "nora",
+     "text": "Pruitt. Like the hall."
+    },
+    {
+     "t": "line",
+     "if": {
+      "e1_fake_name": true
+     },
+     "who": "cal",
+     "text": "It's a stage name."
+    },
+    {
+     "t": "line",
+     "if": {
+      "e1_fake_name": true
+     },
+     "who": "nora",
+     "text": "I heard them yell Whitaker at the tent four hours ago, genius. I was letting you have it. I wanted to see how long you'd keep it."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_nora": "cruel"
+     },
+     "text": "Nora's eyes pass over Cal like he's a lamppost. Not a flicker. Not a hitch. She looks through him with such perfect, total indifference that it's almost an art form, and it's worse, much worse, than if she'd thrown her drink."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_nora": "honest"
+     },
+     "text": "Nora catches his eye across the lawn and nods at him, once. Not friendly. Just the nod you give another person. A person. It's more than she's given anybody else here."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_nora": "charm"
+     },
+     "text": "Nora spots him and mouths, very clearly, over the heads of three Kappas: COFFEE BOY. Then she goes back to her drunk junior."
+    },
+    {
+     "t": "a",
+     "text": "Then it starts on the porch. A knot of Rho brothers in navy blazers sees Cal, points, and one of them starts it, banging a Solo cup on the porch rail like a gavel."
+    },
+    {
+     "t": "line",
+     "name": "RHO BROTHERS",
+     "text": "WHI-TA-KER! COM-MONS! WHI-TA-KER! COM-MONS!"
+    },
+    {
+     "t": "a",
+     "text": "It spreads. It spreads the way fire spreads in dry grass, from the porch to the steps to the lawn, Kappas joining in, freshmen who don't know why joining in because everybody else is, until there are two hundred people under the string lights chanting his grandfather's building at him like it's a football score. His name as a building. His name as a place you get lunch."
+    },
+    {
+     "t": "a",
+     "text": "Somebody hands him a beer. Somebody slaps his back. A girl he's never met kisses his cheek. Priya is screaming it loudest of all and filming it vertically. And at the edge of the lawn, notebook against her chest, not chanting, Nora is watching him to see what he does with it."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Climb on the keg table and toast his absent father",
+     "set": {
+      "e1_toast": true
+     },
+     "remember": "Everyone has this on video.",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He climbs onto the folding table next to the hydrangea kegs. It wobbles. The lawn roars. He raises his cup and two hundred phones rise with it, a field of little white lights."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Thank you! Thank you. I'd like to raise a glass. To my father. Richard Whitaker, Rho, Class of '93, trustee of this fine institution, who couldn't be here today."
+      },
+      {
+       "t": "a",
+       "text": "A pause, perfectly timed."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Which is the most Whitaker sentence ever spoken."
+      },
+      {
+       "t": "a",
+       "text": "The lawn screams. Rho brothers howl and pound the rail. It's savage and it's hilarious and it's the truest thing he's said in public in his life, dressed up as a joke so nobody has to deal with it. Somebody's filming in landscape. It'll be everywhere by midnight."
+      },
+      {
+       "t": "a",
+       "if": {
+        "e1_bench": "dad"
+       },
+       "text": "As he climbs down, the folded square of his two torn-out pages slides out of his jeans pocket and lands in the grass. He doesn't see it go. Priya does. She picks it up, glances at the first line, and slides it into her bra without a word."
+      },
+      {
+       "t": "a",
+       "text": "Nora, at the edge of the lawn, writes it down word for word. And up on the porch, perfect in white, Margaux Vance is the only person not laughing."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Walk straight to Nora: “Write this down instead.”",
+     "set": {
+      "e1_real_quote": true
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He walks through the chant like it's weather. Straight across the lawn, to the hedges, to her. She looks up, startled, pen half-raised."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Write this down instead. You get a name you didn't earn, and everyone acts like it's a gift. It's not a gift. It's a loan. And you spend your whole life finding out what the interest rate is."
+      },
+      {
+       "t": "a",
+       "text": "Nora writes it down. All of it. Then she looks up at him, actually looks, surprised in spite of herself that he had it in him."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "That's a good sentence."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "I have a few."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "Don't push it."
+      },
+      {
+       "t": "a",
+       "if": {
+        "e1_bench": "dad"
+       },
+       "text": "Behind him, as he cut through the crowd, a folded square of paper worked its way out of his jeans pocket and fell in the grass. He didn't notice. Priya did. She picks it up, reads the first line, and slides it into her bra."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Get out of the chant, and take Nora with him",
+     "set": {
+      "e1_hid_with_nora": true
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He grabs her elbow on the way past and steers her to the far edge of the lawn, behind a wall of boxwood hedges where the string lights don't reach and the chant goes muffled, like a stadium heard from the parking lot."
+      },
+      {
+       "t": "a",
+       "text": "She shakes him off immediately."
+      },
+      {
+       "t": "line",
+       "who": "nora",
+       "text": "I don't need rescuing."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "I wasn't rescuing you. I was hiding behind you."
+      },
+      {
+       "t": "a",
+       "text": "It's true. That's the thing. She hears that it's true. She almost laughs, catches it, turns it into a cough, and fails. For about forty seconds they stand in the dark behind a hedge and listen to two hundred people chant the name of a building, and neither of them says anything, and it's the best forty seconds of the party."
+      },
+      {
+       "t": "a",
+       "if": {
+        "e1_bench": "dad"
+       },
+       "text": "Back on the lawn, where he shoved through the crowd, a folded square of paper lies in the grass. Priya picks it up, reads the first line, and slides it into her bra."
+      }
+     ]
+    }
+   ],
+   "next": "n16"
+  },
+  "n16": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "EXT. KAPPA LAWN. NIGHT (10:40 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "The party peaks the way parties do, all at once and then downhill. The string lights are swinging. The DJ has given up on taste and is playing a song from 2009 that everyone knows all the words to and hates themselves for knowing. A Rho brother is asleep standing up against an oak. Somebody has put a rhinestone Kappa tiara on the police officer, who has allowed it."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_nora": "cruel"
+     },
+     "text": "Across the lawn, in the background, Nora is still working, interviewing the DJ now. She hasn't looked at Cal once in two hours. He's checked. He's checked a lot."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_nora": "charm"
+     },
+     "text": "Across the lawn, in the background, Nora is still working, interviewing the DJ now. Every so often she glances over at Cal like he's a footnote she hasn't decided whether to cut."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_nora": "honest"
+     },
+     "text": "Across the lawn, in the background, Nora is still working, interviewing the DJ now. Every so often she glances over at Cal like he's a footnote she hasn't decided whether to cut."
+    },
+    {
+     "t": "a",
+     "text": "Priya vanished an hour ago. That's what Priya does, he's learning: she's the center of everything and then she's gone, like a fire alarm that stops."
+    },
+    {
+     "t": "a",
+     "text": "Margaux materializes at his shoulder. She hasn't had a single sip of anything all night; he's noticed that too. Her cup's been full since eight."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Come up to the roof. The view's better and the company's worse."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Is that allowed?"
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Nothing good is allowed. That's how you know it's good."
+    },
+    {
+     "t": "a",
+     "text": "She says it lightly, but she's watching him. It's a test. He doesn't know what a pass looks like."
+    },
+    {
+     "t": "a",
+     "text": "And at the exact same moment, his phone buzzes in his hand. PRIYA (EMERGENCIES + VIBES), who vanished an hour ago. A photo: the moon on black water, the end of a wooden dock, her own bare feet hanging over the edge, toes painted chipped silver."
+    },
+    {
+     "t": "texts",
+     "thread": "PRIYA (EMERGENCIES + VIBES)",
+     "onCal": true,
+     "msgs": [
+      {
+       "from": "priya",
+       "text": "come swimming or i'll do something stupid lol"
+      },
+      {
+       "from": "priya",
+       "text": "jk"
+      },
+      {
+       "from": "priya",
+       "text": "unless"
+      }
+     ]
+    },
+    {
+     "t": "a",
+     "text": "Unless. He stares at it. The dots come up, like she's typing something else. Then they go away."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_evening": "okafors"
+     },
+     "text": "Dev, beside him, still holding the same can of seltzer, warm now, sees his face. Sees the phone. Sees Margaux. He doesn't ask. He just puts the can down on the porch rail very carefully, like he's done for the night."
+    },
+    {
+     "t": "line",
+     "if": {
+      "e1_evening": "okafors"
+     },
+     "who": "dev",
+     "text": "Go. Whichever one. I'm going home. It's... a lot of drinking. I'm tired. I'm going home."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_evening": "okafors"
+     },
+     "text": "He means something more than that. Cal doesn't know what yet. Dev walks out the gate toward Lowell with his hands in his pockets, past the cop in the tiara, and doesn't look back."
+    },
+    {
+     "t": "a",
+     "text": "Margaux is waiting, one hand on the porch door, the light from inside making her a silhouette. His phone is warm in his hand. Somewhere down the hill, past the backyards of Elm Row, the lake is out there in the dark, and Priya is on the end of a dock."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Tick tock, Whitaker."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Go up to the roof with Margaux",
+     "set": {
+      "e1_night": "roof"
+     },
+     "next": "n17r",
+     "remember": "This night will follow you.",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He texts Priya: u ok?? And then, because he's a coward, or because he's eighteen, or because Margaux is holding the door, he puts the phone in his pocket before he can see whether she answers."
+      },
+      {
+       "t": "a",
+       "text": "He follows Margaux up three flights of a sorority house that smells like hairspray and old roses, past a framed portrait of a woman in pearls from 1958 who looks deeply disappointed in both of them."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Go find Priya at the lake",
+     "set": {
+      "e1_night": "lake"
+     },
+     "next": "n17l",
+     "remember": "This night will follow you.",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Rain check. I have to... a friend's being a friend. Sorry."
+      },
+      {
+       "t": "a",
+       "text": "Margaux's face doesn't move at all. That's how he knows it landed."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "No you're not."
+      },
+      {
+       "t": "a",
+       "text": "She goes inside. He's already running, down the side of the Kappa house, over a low stone wall, through somebody's backyard and a hedge, downhill in the dark toward the water, phone flashlight bouncing, calling her back and getting voicemail, voicemail, voicemail."
+      }
+     ]
+    }
+   ]
+  },
+  "n17r": {
+   "act": 3,
+   "blocks": [
+    {
+     "t": "card",
+     "text": "Act Three · After"
+    },
+    {
+     "t": "slug",
+     "text": "EXT. KAPPA LAMBDA HOUSE, ROOF. NIGHT (11:05 P.M.)"
+    },
+    {
+     "t": "music",
+     "song": "Apocalypse",
+     "artist": "Cigarettes After Sex"
+    },
+    {
+     "t": "a",
+     "text": "Through a Kappa senior's bedroom, past a bed with eleven decorative pillows and a ring light, out a dormer window, onto slate. The roof pitches gently down to a flat stretch above the porch, rimmed with copper gutters gone green. Completely illegal. Completely gorgeous."
+    },
+    {
+     "t": "a",
+     "text": "From up here you can see all of it. The party shrunk to a bowl of string lights. The black edge of the lake. And across campus, on the hill, the floodlit stone of WHITAKER COMMONS, his name lit up white against the dark like a sign over a motel."
+    },
+    {
+     "t": "a",
+     "text": "Margaux produces a bottle of Ruinart from somewhere in the folds of her dress."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "The house mom keeps it for when a sister gets engaged. Nobody's getting engaged this year. I checked."
+    },
+    {
+     "t": "a",
+     "text": "She pops it with a dishcloth, quietly, like a professional. They pass the bottle back and forth. It's the first thing he's seen her actually drink all night."
+    },
+    {
+     "t": "a",
+     "text": "She's different up here, a little. Shoes off, side by side on the slate, resoled heels to the wall. Knees up, arms around them, a posture he'd bet she has never once used in public."
+    },
+    {
+     "t": "a",
+     "text": "They talk like two people raised by the same kind of money, because they were. Boarding school at twelve. Nannies who were fired for getting too attached. Parents who arrive for the photographs, stay through the cheese course, and leave before the speeches."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "My nanny was Brazilian. Lúcia. She taught me to swear in Portuguese. My mother fired her when I said my first word and it was a Portuguese word for something you can't say at the club."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Mine was named Bridget. She taught me to play poker and gamble for Oreos. My father fired her when he found out I was beating her."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Your father fires people who lose?"
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "My father fires people who make him feel things."
+    },
+    {
+     "t": "a",
+     "text": "She laughs, really laughs, and then catches herself, and then asks, lightly, how Whitaker Lyle is doing this year, has the firm been busy, is it true they're buying up debt now instead of companies. It's one question too many. He sees her see that it was one too many."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_margaux_probe": "truth"
+     },
+     "text": "She takes the bottle from him and says, without looking at him, “Don't bring up what I said on the lawn. About my family. I didn't say it.” He says, “Say what?” She almost smiles."
+    },
+    {
+     "t": "a",
+     "text": "Then, out of nowhere, unguarded, looking across the dark at the Commons, the gothic arches lit from below:"
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "Those buttresses are fake. They're not holding anything up. They bolted them on in 1994 to make it look old. I draw buildings, you know. When I can't sleep. I'd have done the whole thing in glass."
+    },
+    {
+     "t": "a",
+     "text": "A beat. She hears herself. Her face closes like a compact."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "text": "I'm joking. Obviously. I can't draw a circle."
+    },
+    {
+     "t": "a",
+     "text": "She hands him the bottle. Their fingers touch on the cold glass. Neither of them moves them right away. The whole night is tilted like the roof."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Kiss her before either of you can think",
+     "set": {
+      "e1_margaux_kiss": true
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He leans in. She meets him halfway, exactly halfway, not an inch more, like she measured."
+      },
+      {
+       "t": "a",
+       "text": "She kisses him back like it's a decision she made in advance, maybe hours ago, maybe on the porch steps. It's controlled and very good and tastes like the champagne. Her hand goes flat against his chest. Then it fists in his shirt."
+      },
+      {
+       "t": "a",
+       "text": "Then she pulls back, an inch, and studies him in the dark, frowning slightly, like she's surprised. Not by him. By something in herself she didn't put there and can't account for."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "paren": "quiet",
+       "text": "Huh."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Is that a review?"
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "It's a note."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "“Why are you really up here with me?”",
+     "set": {
+      "e1_margaux_ask": true
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Why are you really up here with me?"
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "Because you're interesting."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "That's not the reason."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "It's a reason."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "It's a reason the way that dress is a dress."
+      },
+      {
+       "t": "a",
+       "text": "Her eyes flick to his. She knows he means the tag. She doesn't know how he knows. For a second something very cold and very frightened goes across her face, and then she laughs it off and takes a long drink from the bottle."
+      },
+      {
+       "t": "a",
+       "text": "They don't kiss. They sit six inches apart on a cold roof and don't kiss, and the not-kissing is louder than the party."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Tell her something true: the notebooks",
+     "set": {
+      "e1_margaux_secret": true
+     },
+     "remember": "Margaux will remember that.",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "I write. Notebooks. Since I was a kid. Nobody's ever read them. Nobody even knows they exist. I don't know why I'm telling you that."
+      },
+      {
+       "t": "a",
+       "text": "Margaux is quiet for a long time. Then she pulls her phone out and opens a photo album he can tell is hidden behind a passcode, and hands it to him. Pencil drawings, photographed in bad light. Buildings. Dozens. A library made of glass and timber. A boathouse that floats. A chapel with no walls at all, just a roof hovering on columns over a lake."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "For real this time. Don't tell anyone. My father thinks architecture is a hobby for people who marry architects."
+      },
+      {
+       "t": "a",
+       "text": "Two secret makers on a roof, holding each other's unread pages. It's the most dangerous moment of the night, because it's real, and both of them know it, and neither of them knows what to do with it."
+      }
+     ]
+    }
+   ],
+   "next": "n18r"
+  },
+  "n18r": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "EXT. KAPPA ROOF. NIGHT (11:40 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "The party has thinned below. Somebody's crying on the lawn, the good kind or the bad kind, impossible to tell from up here. The Ruinart is two-thirds gone. Margaux has his parka around her shoulders now, the St. Anselm's crest upside down on her back. She says it's ugly. She hasn't taken it off."
+    },
+    {
+     "t": "a",
+     "text": "Between them on the slate, her phone lights up. The screen glows blue on both their faces."
+    },
+    {
+     "t": "a",
+     "text": "MOM."
+    },
+    {
+     "t": "a",
+     "text": "Margaux freezes. Not a flinch. A freeze. Every muscle goes still at once, like an animal in headlights, like a girl at a piano recital who has forgotten the next bar. It's the only unperformed fear he's seen on her all night, and it is total. Her hand doesn't move toward the phone. Her eyes don't move off it."
+    },
+    {
+     "t": "a",
+     "text": "It rings out. Voicemail."
+    },
+    {
+     "t": "a",
+     "text": "Three seconds of silence. Then it lights up again. MOM."
+    },
+    {
+     "t": "a",
+     "text": "Cal reads all of it. Her hands, which have gone white at the knuckles around her knees. The way her shoulders have come up toward her ears. The way she's stopped breathing, actually stopped, the way people do underwater. He knows that posture. He's seen it in the mirror of a motel bathroom. He's seen it on himself, every time his father's name lights up a screen."
+    },
+    {
+     "t": "a",
+     "text": "Whoever is calling, Margaux Vance is afraid of them. And whoever they are, they're going to keep calling."
+    },
+    {
+     "t": "a",
+     "text": "The phone buzzes against the slate, inching toward the edge of the roof, toward the gutter, toward the three-story drop to the porch, as if it's trying to get away from her."
+    },
+    {
+     "t": "line",
+     "who": "margaux",
+     "paren": "barely",
+     "text": "It's nothing. It's my mother. She does this. She's fine. I'm fine."
+    },
+    {
+     "t": "a",
+     "text": "She isn't. Neither is he. Below them, the DJ plays the last song, and the string lights go off all at once, a hundred bulbs, and the lawn goes dark, and there's only the phone, lit, buzzing, and her face above it."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Turn her phone face-down: “Let it ring.”",
+     "set": {
+      "e1_margaux_hookup": true
+     },
+     "remember": "Nobody knows. For now.",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He reaches over and turns the phone face-down on the slate. The glow goes out. It keeps buzzing, muffled, like something trapped under a glass."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Let it ring."
+      },
+      {
+       "t": "a",
+       "if": {
+        "e1_margaux_kiss": false
+       },
+       "text": "She looks at him for a long time. Then she kisses him, hard, the first time, like she's trying to get somewhere fast."
+      },
+      {
+       "t": "a",
+       "text": "She walks him back through the window to her own room two doors down: drawing tubes in the closet, a bed made with hospital corners. She locks the door. Checks it. Then she turns around and unzips her own dress, without ceremony, and steps out of it, and it lands inside out on the floor with the price tag face-up between them, white as a flag. They both look at it. She laughs, a real laugh, the first unpolished sound he's heard her make, and kicks the dress under the bed."
+      },
+      {
+       "t": "a",
+       "text": "It's frank and a little competitive at first, both of them good at this and wanting the other to know it. She pushes him down onto the hospital corners and tells him what she wants in a low, precise voice, like directions to a driver. He does it better than she expected; her nails in his back say so. Then, somewhere in the middle, it changes. She says his name, just his first name, like a question, and opens her eyes, and he's looking at her, and it gets suddenly, terribly tender, slow, her forehead against his, and that scares them both more than anything else has all day."
+      },
+      {
+       "t": "a",
+       "text": "After, she lies with her back to him and sets the rules to the wall."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "Nobody knows. Not Priya, not your little friends across the hall. Nobody."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Okay."
+      },
+      {
+       "t": "a",
+       "text": "At 1 a.m. he walks back to Lowell in her Kappa sweatshirt, because she's kept his parka. He can't stop smiling. He can't figure out why it feels like losing."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "“Who's scaring you?”",
+     "set": {
+      "e1_margaux_seen": true
+     },
+     "remember": "Margaux will remember that.",
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Who's scaring you?"
+      },
+      {
+       "t": "a",
+       "text": "She turns and looks at him like he just took her clothes off in front of the whole lawn. Then she smiles. It takes about a second to build, and it's flawless."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "No one."
+      },
+      {
+       "t": "a",
+       "text": "The lie of her life, delivered perfectly, with a little laugh at the end. If he hadn't been born into the same kind of house, he'd have believed it."
+      },
+      {
+       "t": "a",
+       "text": "She stands, slips the parka off her shoulders and hands it back to him, folded. She leans down and kisses him on the cheek, very lightly, very correctly, like a hostess at the end of a dinner."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "Goodnight, Whitaker."
+      },
+      {
+       "t": "a",
+       "text": "She's furious at him for seeing it. She's also, he can tell, grateful, and she hates that more. He walks back to Lowell alone with the taste of the champagne going sour."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Make a joke and climb back in the window, fast",
+     "set": {
+      "e1_ran_roof": true
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Wow. Okay. Moms, right? Mine's in witness protection, it's a lot less phone. I should... it's late, I have a... radiator. Goodnight! Great roof!"
+      },
+      {
+       "t": "a",
+       "text": "He's back through the window before she can answer, because it was getting real, and he does what he always does when it gets real. He leaves his parka on her shoulders. He doesn't go back for it."
+      },
+      {
+       "t": "slug",
+       "cut": true,
+       "text": "EXT. KAPPA ROOF. MOMENTS LATER"
+      },
+      {
+       "t": "a",
+       "text": "Margaux, alone on the slate, watches the window he went through. The phone lights up a third time. She picks it up."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "paren": "flat",
+       "text": "He left."
+      },
+      {
+       "t": "a",
+       "text": "A pause. A voice on the line, tinny and sharp."
+      },
+      {
+       "t": "line",
+       "who": "margaux",
+       "text": "No, Mom. I didn't."
+      },
+      {
+       "t": "a",
+       "text": "She hangs up and pulls his ugly parka tighter around her and sits on the roof in the dark for a long time."
+      }
+     ]
+    }
+   ],
+   "next": "n20"
+  },
+  "n17l": {
+   "act": 3,
+   "blocks": [
+    {
+     "t": "card",
+     "text": "Act Three · After"
+    },
+    {
+     "t": "slug",
+     "text": "EXT. TAMSIN LAKE, THE WHITLOCK BOATHOUSE DOCK. NIGHT (11:05 P.M.)"
+    },
+    {
+     "t": "music",
+     "song": "Seventeen Going Under",
+     "artist": "Sam Fender"
+    },
+    {
+     "t": "a",
+     "text": "The boathouse at night is a cathedral for drowned things. The big doors on the water side stand open, and inside, in the dark, racing shells hang on their racks one above another, long and pale and ribbed, like the skeletons of something that used to swim."
+    },
+    {
+     "t": "a",
+     "text": "The dock runs out from the boathouse thirty yards into the black. The lake is dead still. The moon is on it, a white road going nowhere. It's colder down here than on Elm Row, ten degrees colder, the water breathing it up."
+    },
+    {
+     "t": "a",
+     "text": "Priya is at the very end of the dock in her underwear. Black bra, white cotton briefs, the slip dress in a puddle beside a bottle of mezcal with two inches left in it. She's barefoot. She's dancing. There's no music. She's spinning on the wet boards with her arms out like a kid playing helicopter, laughing at something nobody said."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "CAL! You came! You came, you came. I knew you'd come, I said to Kevin, I said he'll come, he's got a rescuer face, it's tragic."
+    },
+    {
+     "t": "a",
+     "text": "She talks faster than he's ever heard her, which is saying something. Her pupils are huge in the moonlight, black lakes. He can see the orange bottle sticking out of the pocket of the dress on the boards, cap off."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Did you know Ophelia didn't fall? Everybody says she fell. She didn't fall. She went in singing. She went in singing, Cal, that's not falling, that's a choice, that's an exit, that's the best exit in Shakespeare and nobody gives her credit because she's a girl and she's sad."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Priya. Hey. Can we come back from the edge a little?"
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Swim with me. The lake's like eight hundred feet deep. Someone died in it. A boy. The rowers say he's still down there. They say if you swim at night he grabs your ankle to say hi. I want to say hi."
+    },
+    {
+     "t": "a",
+     "text": "Through the open boathouse doors, high in the rafters above the hanging shells, his phone flashlight catches something. An old wooden oar, mounted crosswise on the beams, painted black. Lettered in white, by hand, faded almost to nothing: T.C. SWIM ON."
+    },
+    {
+     "t": "a",
+     "text": "He looks at it a second too long. When he looks back at the end of the dock, she's on the edge, toes curled over, arms up."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Watch me go in singing."
+    },
+    {
+     "t": "a",
+     "text": "She dives. A clean dive, a good one, a theater kid's dive, all line. The black water closes over her with almost no splash, and the rings spread out, and spread, and flatten."
+    },
+    {
+     "t": "a",
+     "text": "He waits for her to come up laughing. Two seconds. Four. Six. The water's flat again. The moon is back on it like nothing happened. She isn't coming up."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Jump in after her",
+     "set": {
+      "e1_lake_dove": true
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He's in before he thinks. His body remembers the way it remembers stairs: shoes kicked, three steps, a racing dive off the end of the dock, flat and long. Two and a half years of St. Anselm's swim. It all comes back like a reflex he didn't know he still had."
+      },
+      {
+       "t": "a",
+       "text": "Cold that stops your heart. Actually stops it, for a beat, a full-body clench. Then black. Total black. Not dark, black, like being inside closed eyes. No sound but his own blood, huge and slow in his ears, the underwater roar."
+      },
+      {
+       "t": "a",
+       "text": "He sweeps with his arms. Nothing. Nothing. He goes deeper, lungs starting to burn, the cold pushing in at his temples. Nothing. Then his fingers close on something soft and moving. An arm. Her arm. He finds her arm."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Stay on the dock, phone flashlight, shout her name",
+     "set": {
+      "e1_lake_dove": false
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He drops to his knees on the end of the dock and shines his phone flashlight down into the water. It goes in about a foot and stops, like hitting a wall. Black."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "PRIYA! PRIYA!"
+      },
+      {
+       "t": "a",
+       "text": "Eleven seconds. He counts them later. Eleven seconds that last about a year, the flashlight on black water, his own voice coming back off the boathouse wall."
+      },
+      {
+       "t": "a",
+       "text": "Then she surfaces, twenty feet out, gasping, laughing, triumphant. Then not laughing. Her face changes. She goes under, comes back up, grabbing at her leg. A cramp. The cold. She's not a strong swimmer, it turns out. Ophelia never was."
+      },
+      {
+       "t": "a",
+       "text": "He goes in anyway. Shoes and all. He was always going to."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Grab your phone and call Dev",
+     "set": {
+      "e1_called_dev": true
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "His hands are shaking so hard he almost drops the phone. He hits DEV (ACROSS THE HALL, HAS DRILL). It doesn't even finish the first ring."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "paren": "on the phone, instantly awake",
+       "text": "What's wrong?"
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Priya. The lake. The boathouse. She went in and she's not, she's not coming..."
+      },
+      {
+       "t": "a",
+       "text": "And while he's still talking, she surfaces fifteen feet out, coughing, choking, flailing for the dock, too far."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "text": "I'm coming. Get her out. Get her out, Cal, I'm coming."
+      },
+      {
+       "t": "a",
+       "text": "Cal drops the phone on the boards, still connected, and goes in. Dev is running down the hill from Lowell in the dark. He'll arrive in seven minutes, in flip-flops, carrying every towel from the third-floor bathroom."
+      }
+     ]
+    }
+   ],
+   "next": "n18l"
+  },
+  "n18l": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "EXT. BOATHOUSE DOCK. NIGHT (11:30 P.M.)"
+    },
+    {
+     "t": "a",
+     "text": "He gets her to the ladder. He gets her up the ladder, pushing from below, her bare heel catching him in the jaw. They collapse on the dock, both soaked, both heaving, lake water streaming out of their hair and noses. He's in jeans that weigh forty pounds. She's shaking so hard her teeth sound like dice."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_called_dev": true
+     },
+     "text": "Dev comes thundering down the dock in flip-flops and a Rockets T-shirt with his arms full of towels, and drops to his knees, and wraps Priya up like a burrito without asking anybody's permission. He puts two fingers on her wrist and counts, lips moving, like he's done it before. He doesn't say anything to Cal. He just throws him a towel without looking."
+    },
+    {
+     "t": "a",
+     "text": "Priya is curled on her side on the wet boards. And all at once the mania drains out of her, the way water drains out of a bathtub, with a sound. The speed is gone. The bit is gone. What's left is a girl in her underwear on a dock, crying, ugly, big gasping sobs, the realest she's been all day."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "I'm not okay. I'm not okay. I'm just loud."
+    },
+    {
+     "t": "a",
+     "text": "He doesn't know what to do with his hands. He puts one on her back. She grabs his wrist and holds on with both hands, hard enough to bruise."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_true_thing": "mom"
+     },
+     "text": "She says something through her teeth into the boards, crying. He has to lean down to hear it. “Your mom's an idiot. Your mom's an idiot. Who leaves? Who leaves you?” He doesn't answer. He can't."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Promise me. Promise me you won't tell anybody. Not the RA, not health services, not my mom, God, not my mom. Nobody. Swear to me."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "Priya..."
+    },
+    {
+     "t": "line",
+     "who": "priya",
+     "text": "Swear, Cal."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "I swear."
+    },
+    {
+     "t": "a",
+     "text": "He means it. He'll regret it. Both of those are already true."
+    },
+    {
+     "t": "a",
+     "text": "Then light. A big white flashlight beam swinging down the hill from the path, from the direction of the athletic fields, bouncing, getting closer. A radio crackling. A voice, bored and official, calling out."
+    },
+    {
+     "t": "line",
+     "name": "SECURITY OFFICER",
+     "paren": "O.S.",
+     "text": "Hey! Boathouse is closed after dark! Who's down there?"
+    },
+    {
+     "t": "a",
+     "text": "Campus security. Coming down to the boathouse. Thirty seconds away, maybe less. Priya's pupils are still enormous. The orange bottle with someone else's name on it is sitting in the pocket of her dress on the dock in plain sight, next to an almost empty bottle of mezcal. She's in no shape to be caught. She knows it. She looks at Cal with her whole face."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Run, both of you, laughing and soaking",
+     "set": {
+      "e1_lake_exit": "ran"
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He grabs the dress and the bottle and her hand, and they run. Barefoot across the athletic fields in the dark, soaking, the wet grass freezing, the flashlight sweeping behind them and missing. She starts laughing halfway across the soccer pitch, and then he's laughing, and they can't stop. It's joyful and stupid and she's alive."
+      },
+      {
+       "t": "a",
+       "if": {
+        "e1_called_dev": true
+       },
+       "text": "Dev runs beside them in his flip-flops, losing one, then the other, swearing in Igbo the whole way, carrying the towels like a man rescuing a flag."
+      },
+      {
+       "t": "a",
+       "text": "They make it to Lowell. Up three flights, dripping, slipping, shushing each other too loudly. As they fall through the door onto the third floor, Gerald bangs once, enormously, like a gong."
+      },
+      {
+       "t": "line",
+       "who": "priya",
+       "paren": "wheezing",
+       "text": "Gerald approves. Gerald says we're the best thing that's ever happened to this building."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "Use the name: “I'm Cal Whitaker. We're fine, officer.”",
+     "set": {
+      "e1_lake_exit": "name",
+      "e1_used_name": true
+     },
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He stands up, dripping, into the flashlight beam, and does the voice. His father's voice. Calm and warm and faintly amused."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Evening. Cal Whitaker. We're fine, officer. Just a dumb freshman swim. My fault. We're heading back to Lowell now."
+      },
+      {
+       "t": "a",
+       "text": "The beam drops. The officer, a big guy in his fifties, looks up the hill at the lit name on the Commons, then back at Cal."
+      },
+      {
+       "t": "line",
+       "name": "SECURITY OFFICER",
+       "text": "Whitaker. Oh. Sorry, son. Sorry to bother you. You kids get warm, okay? You need a cart?"
+      },
+      {
+       "t": "a",
+       "text": "It works instantly. That's the worst part. The man apologizes to him."
+      },
+      {
+       "t": "a",
+       "if": {
+        "e1_called_dev": true
+       },
+       "text": "Dev, holding the towels, looks at the ground the whole time."
+      },
+      {
+       "t": "a",
+       "text": "On the walk back up the hill, Priya, wrapped in a towel, quiet now, says: “That was gross.” Then, a minute later: “Thank you.”"
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Take the blame, let Priya slip away",
+     "set": {
+      "e1_lake_exit": "blame",
+      "e1_written_up": true
+     },
+     "remember": "Priya will remember that.",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He shoves the dress and the bottles into her arms and points, without a word, to the dark mouth of the boathouse. She goes. He walks up the dock into the flashlight alone, hands up, dripping."
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Just me. I went swimming. It was stupid. I'm sorry."
+      },
+      {
+       "t": "a",
+       "text": "The officer writes him up: trespassing in a closed athletic facility, alcohol on the premises, a dorm-conduct report that'll go to his RA and the Dean of Students' office. He asks for Cal's name. Cal gives him the real one. He watches the man's pen pause on the W."
+      },
+      {
+       "t": "a",
+       "if": {
+        "e1_called_dev": true
+       },
+       "text": "Dev steps up beside him, towels and all. “Me too. I was swimming too.” He wasn't. He gets written up anyway. He doesn't even look at Cal when he does it. Cal will think about that for a long time."
+      },
+      {
+       "t": "a",
+       "text": "Behind them, in the dark of the boathouse, Priya crouches between the racked shells, wrapped in a towel, and watches him do it. She doesn't make a sound. She'll never forget it."
+      }
+     ]
+    }
+   ],
+   "next": "n20"
+  },
+  "n20": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. LOWELL HOUSE, THIRD FLOOR HALLWAY / CAL'S SINGLE. NIGHT (1:14 A.M.)"
+    },
+    {
+     "t": "music",
+     "song": "Liability",
+     "artist": "Lorde"
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_margaux_hookup": true
+     },
+     "text": "Cal comes up the stairs of Lowell two at a time and then one at a time and then stops on the landing, in Margaux Vance's Kappa Lambda sweatshirt, which smells like her perfume and like her skin under it, the sleeves too short on him, KAPPA LAMBDA across his chest in white like a confession. Nobody knows. He promised. He's grinning in the dark like an idiot and he can't make it stop, and underneath the grin there's something cold he doesn't want to look at."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_margaux_seen": true
+     },
+     "text": "Cal comes up the stairs of Lowell alone with his parka over his arm and the champagne gone sour in his mouth. He keeps seeing her face over the lit phone. He keeps seeing the smile she built in a second, flawless, to cover it. He knows how long it takes to build a smile like that. Years."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_ran_roof": true
+     },
+     "text": "Cal comes up the stairs of Lowell alone, without his parka, cold in a T-shirt. He left it on her shoulders. He left. He's very good at leaving. He tells himself it was a good joke. It was a fine joke. He keeps telling himself, and it keeps not working."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_night": "lake"
+     },
+     "text": "Cal is sitting on the floor of the third-floor hallway with his back against his own door, still in wet jeans, dripping slowly onto a carpet that has survived two centuries and will survive this. Lake water in his shoes. Lake in his ears. Priya is across the hall now, asleep on Dev's floor under every towel the third floor owns. He gave her his last dry shirt. He can't stop shivering. He can't stop hearing his own voice shouting her name off the boathouse wall."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_written_up": true
+     },
+     "text": "In his back pocket, a carbon copy of a campus-security conduct report has gone to pulp. He can still read his own name on it. Everyone always can."
+    },
+    {
+     "t": "a",
+     "text": "His phone buzzes against the floorboards. He almost doesn't look. Then he does."
+    },
+    {
+     "t": "a",
+     "text": "Not Denise. Not a group chat. The contact he has saved as DAD, which has not sent him a text written by its own owner since his eighteenth birthday in March, when it said: Happy birthday. Call Denise re: the trust."
+    },
+    {
+     "t": "texts",
+     "if": {
+      "e1_denise": "bite"
+     },
+     "thread": "Dad",
+     "onCal": true,
+     "msgs": [
+      {
+       "from": "richard",
+       "text": "Denise says you were rude. Fine."
+      }
+     ]
+    },
+    {
+     "t": "texts",
+     "if": {
+      "e1_toast": true
+     },
+     "thread": "Dad",
+     "onCal": true,
+     "msgs": [
+      {
+       "from": "richard",
+       "text": "I saw the video. One of the brothers sent it before you'd climbed down off the table."
+      },
+      {
+       "from": "richard",
+       "text": "It was funny. Next time make it funny at someone else's expense."
+      }
+     ]
+    },
+    {
+     "t": "texts",
+     "if": {
+      "e1_toast": false
+     },
+     "thread": "Dad",
+     "onCal": true,
+     "msgs": [
+      {
+       "from": "richard",
+       "text": "Heard you made an impression on Elm Row tonight. Good."
+      }
+     ]
+    },
+    {
+     "t": "texts",
+     "thread": "Dad",
+     "onCal": true,
+     "msgs": [
+      {
+       "from": "richard",
+       "text": "Brooks Hadley will reach out about rush. The Rho matters, Cal. It's how this place works."
+      },
+      {
+       "from": "richard",
+       "text": "The Herald will want a legacy quote. Don't give them one."
+      }
+     ]
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_real_quote": true
+     },
+     "text": "Cal laughs out loud, alone, a short ugly bark. Too late. He gave them a very good one. He's a little proud of it. He's a little sick about it."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_nora": "cruel"
+     },
+     "text": "He thinks of a red recorder light, and a girl's face going still, and what he said into it. Too late for that too."
+    },
+    {
+     "t": "a",
+     "text": "Then the dots. His father is typing. His father, at 1:14 in the morning, on a Monday, in New York or wherever he is, is typing a text to his son with his own thumbs. The dots go on for a long time. Cal watches them the way you watch a wave before it breaks."
+    },
+    {
+     "t": "a",
+     "text": "Then they stop. Nothing comes. Just: Read 1:14 AM, under Cal's side of the thread, because his father can see that he's seen it. Both of them looking at the same empty screen from two hundred miles apart, both of them waiting for the other one to blink."
+    },
+    {
+     "t": "a",
+     "text": "Down the hall, Gerald bangs once, low, like a judge."
+    },
+    {
+     "t": "a",
+     "text": "This is the first thing his father has asked of him in person, so to speak, in a year. Not a favor. A promise. And he's asking for it the way he asks for everything: as if it's already been given."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Give him what he wants: “I'll rush.”",
+     "set": {
+      "e1_dad": "promise"
+     },
+     "remember": "Your father will hold you to that.",
+     "reaction": [
+      {
+       "t": "texts",
+       "thread": "Dad",
+       "onCal": true,
+       "msgs": [
+        {
+         "from": "cal",
+         "text": "I'll rush."
+        },
+        {
+         "from": "richard",
+         "text": "Good."
+        }
+       ]
+      },
+      {
+       "t": "a",
+       "text": "A minute goes by. Cal is about to put the phone down. Then:"
+      },
+      {
+       "t": "texts",
+       "thread": "Dad",
+       "onCal": true,
+       "msgs": [
+        {
+         "from": "richard",
+         "text": "Proud of you."
+        }
+       ]
+      },
+      {
+       "t": "a",
+       "text": "Three words. Well, two and a half. The words he has waited about eight years to hear, since the last time his father said them, at a swim meet when Cal was ten and still thought winning was the same thing as being wanted. He reads them nine times. They're for the wrong reason. They're for the Rho, for the wall, for the jaw and the name. He knows that."
+      },
+      {
+       "t": "a",
+       "text": "He hates how good it feels. He hates it so much he has to put the phone face-down on the floor and press the heels of his hands into his eyes until he sees colors."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "“You didn't come. You don't get to ask me for anything.”",
+     "set": {
+      "e1_dad": "fight"
+     },
+     "remember": "Your father will remember that.",
+     "reaction": [
+      {
+       "t": "texts",
+       "thread": "Dad",
+       "onCal": true,
+       "msgs": [
+        {
+         "from": "cal",
+         "text": "You didn't come. You don't get to ask me for anything."
+        }
+       ]
+      },
+      {
+       "t": "a",
+       "text": "Typed and sent before he can stop his thumbs. Delivered. Read. Read 1:16 AM."
+      },
+      {
+       "t": "a",
+       "text": "Then a long silence. Long enough that he thinks that's it, that's the end, his father will simply let it sit there like an unsigned contract until it expires."
+      },
+      {
+       "t": "a",
+       "text": "Then the phone lights up in his hand and starts to ring. Not a text. A call. DAD. His father calling, with his voice, at 1:17 in the morning. It hasn't happened in so long that for a second Cal doesn't recognize the screen."
+      },
+      {
+       "t": "a",
+       "text": "He watches it ring. Five times. Six. He declines it. His thumb is shaking."
+      },
+      {
+       "t": "a",
+       "text": "Thirty seconds later: a voicemail. Forty-one seconds long. He looks at the little red dot for a long time. He doesn't listen to it. Not yet."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "Leave him on read.",
+     "set": {
+      "e1_dad": "read"
+     },
+     "remember": "Read 1:15 AM.",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He doesn't answer. He just lets it sit. Under his father's message, in small gray letters: Read 1:15 AM. He knows his father can see it. That's the point. That's the only weapon he's ever had."
+      },
+      {
+       "t": "a",
+       "text": "Five minutes later:"
+      },
+      {
+       "t": "texts",
+       "thread": "Dad",
+       "onCal": true,
+       "msgs": [
+        {
+         "from": "richard",
+         "text": "I can see you read it."
+        }
+       ]
+      },
+      {
+       "t": "a",
+       "text": "Nothing. He reads that too. Then, at 1:31, eleven more minutes of dots and no dots and dots:"
+      },
+      {
+       "t": "texts",
+       "thread": "Dad",
+       "onCal": true,
+       "msgs": [
+        {
+         "from": "richard",
+         "text": "Your mother would have come. That's the joke."
+        }
+       ]
+      },
+      {
+       "t": "a",
+       "text": "Cal stares at it for a long, long time. Gerald doesn't bang. The building holds its breath."
+      },
+      {
+       "t": "a",
+       "text": "His father has not said the word mother, not out loud, not in writing, not once, in seven years. Not when Cal asked, at twelve, and at thirteen, and then stopped asking. And now here it is, at 1:31 in the morning, as a punchline. He doesn't know whether it's an insult, or an apology, or a man who's had four Scotches telling the truth by accident. He doesn't know which would be worse."
+      }
+     ]
+    }
+   ],
+   "next": "n21"
+  },
+  "n21": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. LOWELL HOUSE, THIRD FLOOR HALLWAY. NIGHT (1:35 A.M.)"
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_night": "roof"
+     },
+     "text": "Across the hall, Dev's door opens. Dev stands there in a Houston Rockets T-shirt and plaid pajama pants, wide awake, holding a mug of chamomile like a man holding a candle in a power outage. The bunk bed behind him is very, very level."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_night": "lake"
+     },
+     "text": "Across the hall, Dev eases out of his room and pulls the door almost shut behind him. Through the gap: Priya, asleep on his floor in a nest of towels and his Astros hoodie, one arm flung over her eyes. A plate beside her with crusts on it. Dev made her eat toast. Two slices, with butter, sitting on the floor with her until she finished. It's a quietly enormous thing, and he'll never mention it."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "I don't sleep great. Long year."
+    },
+    {
+     "t": "a",
+     "text": "He doesn't ask if Cal's okay. He doesn't ask anything. He just slides down the wall onto the hallway carpet across from Cal, his back against his own door, mug on his knee, and sits. Cal sits down across from him. Two boys on a hallway floor at 1:35 a.m., six feet of two-hundred-year-old carpet between them, each of them holding something."
+    },
+    {
+     "t": "a",
+     "text": "Gerald bangs. Loud. The pipes shiver all the way down the hall."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Your radiator's been doing that all night."
+    },
+    {
+     "t": "line",
+     "who": "cal",
+     "text": "That's Gerald. Priya named him."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Of course she did."
+    },
+    {
+     "t": "a",
+     "text": "He raises the mug toward Cal's room."
+    },
+    {
+     "t": "line",
+     "who": "dev",
+     "text": "Gerald says hi."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_dev_chip": "asked"
+     },
+     "text": "Dev turns his mug a quarter turn on his knee, and almost smiles. “Poker chips, man,” he says, to nobody, and that's all he says about it."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_dev_brother": "asked"
+     },
+     "text": "Dev looks at the ceiling. “Chidi would've stayed up too. He'd have made me do the impressions.” He says the name like he's testing whether the floor will hold."
+    },
+    {
+     "t": "line",
+     "if": {
+      "e1_lie_parking": true
+     },
+     "who": "dev",
+     "paren": "gently, not a gotcha",
+     "text": "Your dad never did come up from parking, huh."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_lie_parking": true
+     },
+     "text": "It's not an accusation. It's a door left open. Dev saw the car pull away at 2:15 this afternoon, and has known all day, and has carried it for him like the box marked BOOKS."
+    },
+    {
+     "t": "a",
+     "text": "Dev blows on the tea. Waits. He's good at waiting. Cal is starting to understand that Dev is good at a lot of things that don't look like anything: waiting, noticing, carrying. He's looking at Cal's face the way a doctor looks at an X-ray, not with alarm, just with attention, which is rarer."
+    },
+    {
+     "t": "a",
+     "text": "Cal can feel it coming. The question Dev isn't going to ask. Are you okay. It's sitting right there in the hallway between them like a third person."
+    }
+   ],
+   "choices": [
+    {
+     "id": "a",
+     "label": "Tell Dev the truth about tonight and his father",
+     "set": {
+      "e1_told_dev": true
+     },
+     "remember": "Dev will remember that.",
+     "reaction": [
+      {
+       "t": "a",
+       "text": "He tells him. Not all of it. More than he's told anyone. The car service. Denise. The draft he never sent at 6:02 a.m. The text at 1:14."
+      },
+      {
+       "t": "a",
+       "if": {
+        "e1_dad": "promise"
+       },
+       "text": "The promise he made. The two words he got for it."
+      },
+      {
+       "t": "a",
+       "if": {
+        "e1_dad": "fight"
+       },
+       "text": "The fight. The call he declined. The voicemail he hasn't played."
+      },
+      {
+       "t": "a",
+       "if": {
+        "e1_dad": "read"
+       },
+       "text": "The read receipt. The word mother, used as a punchline."
+      },
+      {
+       "t": "a",
+       "text": "Dev listens like a doctor. He doesn't interrupt. He doesn't fix it. When Cal runs out, he's quiet for a while. Then:"
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "text": "For what it's worth? I'd have driven you."
+      },
+      {
+       "t": "a",
+       "text": "It's nothing. It's a sentence. It's everything. Cal has to look at the ceiling for a while."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "label": "“All good, man. Great night.”",
+     "set": {
+      "e1_told_dev": false
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "All good, man. Great night. Truly. Top-five night. Just, you know. Wired."
+      },
+      {
+       "t": "a",
+       "text": "The smooth lie. The one he does best. Dev nods slowly, the nod of someone who respects the lies people need, because he's needed a few."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "text": "Okay. I'm across the hall."
+      },
+      {
+       "t": "a",
+       "text": "He gets up, knees cracking, and goes back in. He leaves his door cracked open, a two-inch stripe of lamplight across the hall carpet, all night long. Cal notices at 3 a.m. when he gets up to pee. It's still open at 5."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "label": "“Why are you awake, Dev?”",
+     "set": {
+      "e1_asked_dev": true
+     },
+     "reaction": [
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Why are you awake, Dev?"
+      },
+      {
+       "t": "a",
+       "text": "Dev looks at him. Then at his tea. He turns the mug a full circle on his knee before he answers."
+      },
+      {
+       "t": "line",
+       "who": "dev",
+       "text": "I'm nine months into a really long year."
+      },
+      {
+       "t": "a",
+       "text": "He doesn't explain. Cal doesn't push. He wants to, every reflex he has says find the soft place and press, but he doesn't. Gerald bangs, and neither of them makes a joke about it. They just sit there. Two boys on a hallway floor in the middle of the night, each of them holding something heavy, neither of them putting it down, both of them a little less alone with it."
+      }
+     ]
+    }
+   ],
+   "next": "n22"
+  },
+  "n22": {
+   "blocks": [
+    {
+     "t": "slug",
+     "text": "INT. CAL'S SINGLE. NIGHT (2:02 A.M.)"
+    },
+    {
+     "t": "music",
+     "song": "Bags",
+     "artist": "Clairo"
+    },
+    {
+     "t": "a",
+     "text": "Cal at the bay window. The Quad empty and silver below. At the bottom of the hill, Tamsin Lake lies flat and bright under the moon, holding whatever it holds. Across the grass, the floodlit name on the Commons, still on, never off, WHITAKER, eighteen inches tall, burning all night for nobody."
+    },
+    {
+     "t": "a",
+     "text": "He takes a new notebook out of the box. Black Moleskine, still in its plastic. He tears the plastic off. Clicks the pen four times. Writes the date at the top of the first page: August 24. Then crosses it out, because it isn't anymore, and writes August 25."
+    },
+    {
+     "t": "a",
+     "text": "His phone lights up on the sill. A push alert. THE WHITLOCK HERALD: MOVE-IN: WHO GETS IN? By Nora Castellanos."
+    },
+    {
+     "t": "a",
+     "text": "He reads it standing up. It's really good: angry, funny, precise, the thirty-eight percent, the drunk Kappa on affirmative action for people who deserve it. Two-thirds of the way down, he finds himself."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_toast": true
+     },
+     "text": "“At Kappa Lambda's Sunset on the Lawn, as two hundred students chanted the name of the student center, one third-generation legacy climbed onto a keg table and raised a glass: ‘To my father, who couldn't be here, which is the most Whitaker sentence ever spoken.’ The crowd loved it. It was, at least, honest about whose name was on the building.” Word for word. She got every word. He laughs, once, and then he doesn't."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_real_quote": true
+     },
+     "text": "“‘You get a name you didn't earn, and everyone acts like it's a gift,’ said Cal Whitaker, a third-generation legacy whose grandfather's name is carved over the student center. ‘It's not a gift. It's a loan. And you spend your whole life finding out what the interest rate is.’ It was the best sentence anyone said to this reporter all day. It's worth asking why the person who said it got in without having to.” In full. Beautifully. Damningly. He's proud of the sentence. She's used it like a scalpel. Both true."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_hid_with_nora": true,
+      "e1_nora": "cruel"
+     },
+     "text": "“Asked how he got in, one legacy freshman instead asked this reporter whether her own admissions essay was ‘about your abuela.’ The quote is printed here in full, because it answers the question better than anything else he said.” His own words, in her font, forever. He reads it four more times. It doesn't get shorter."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_hid_with_nora": true,
+      "e1_nora": "charm",
+      "e1_fake_name": true
+     },
+     "text": "“One freshman, who identified himself to the Herald as Cal Pruitt, which is not his name, declined to discuss his admission and offered to buy this reporter coffee instead. Pruitt Hall was built in 1868 and has never once lied about who it is.” He laughs so hard he has to put the phone down. He's a running joke on day one. He sort of loves it."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_hid_with_nora": true,
+      "e1_nora": "charm",
+      "e1_fake_name": false
+     },
+     "text": "“One legacy, asked how he got in, offered to buy this reporter coffee in lieu of an answer. This reporter has a meal plan.” He laughs out loud, alone. She's funny. He hates that. He doesn't."
+    },
+    {
+     "t": "a",
+     "if": {
+      "e1_hid_with_nora": true,
+      "e1_nora": "honest"
+     },
+     "text": "He scrolls. He scrolls again, slower. He isn't in it. Not his name, not his face, not one sentence. She kept her word. He didn't know until right now how much he expected her not to, and he stands at the window with the phone and that small, strange fact for a long time."
+    },
+    {
+     "t": "a",
+     "text": "He picks up the pen. He writes one line in the new notebook. We don't see it. He looks at it for a while. He doesn't cross it out."
+    },
+    {
+     "t": "slug",
+     "cut": true,
+     "text": "INT. THE WHITLOCK HERALD, BASEMENT OF PRUITT HALL. SAME TIME"
+    },
+    {
+     "t": "a",
+     "text": "A basement newsroom, pipes along the ceiling, old front pages framed on cinder block. Empty except for one desk lamp and Nora, alone. On her screen, the piece is live. She's just hit PUBLISH. She sits back. She doesn't celebrate. She takes a breath like she's been holding it since June."
+    },
+    {
+     "t": "a",
+     "text": "Then she reaches under the desk and pulls out a shoebox. A worn one, a Payless box, the corners held with packing tape gone amber. She lifts the lid."
+    },
+    {
+     "t": "a",
+     "text": "Inside: airmail letters, the blue tissue-paper kind, dozens, written in Spanish in a young man's slanting hand. And on top, a Polaroid. A grinning young man in a Rho sweatshirt, standing on a wooden dock with a lake behind him, squinting into the sun, one hand up like he's about to wave at whoever's holding the camera."
+    },
+    {
+     "t": "a",
+     "text": "She turns it over. On the back, in an old woman's careful, shaky ballpoint: Tomás, Tamsin Lake, oct. 1991."
+    },
+    {
+     "t": "a",
+     "text": "Nora gets up. Above her desk there's a corkboard, mostly empty. Pinned to it already: a printout of the Sigma Kappa Rho composite, 1991-1992. Thirty-four faces in ovals. And one oval in the pledge row with nothing in it but felt."
+    },
+    {
+     "t": "a",
+     "text": "She pins the Polaroid beside it, carefully, with a red pushpin, smoothing the corner flat with her thumb."
+    },
+    {
+     "t": "line",
+     "who": "nora",
+     "paren": "a whisper",
+     "text": "Hi, tío."
+    },
+    {
+     "t": "a",
+     "text": "She takes an index card from her desk and writes on it, in block capitals, pressing hard enough to dent the card: WHO WAS ON THE DOCK? She pins it under the photograph."
+    },
+    {
+     "t": "a",
+     "text": "She looks at it a long time. Then she reaches over and kills the lamp."
+    },
+    {
+     "t": "a",
+     "text": "CUT TO BLACK."
+    }
+   ],
+   "end": true
+  }
+ },
+ "phone": [
+  {
+   "from": "priya",
+   "name": "Priya Raman",
+   "msgs": [
+    "are u awake",
+    "gerald is SCREAMING",
+    "also i decided ur my emergency contact. dont fight me",
+    "thank u for today. like actually"
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Always. Go to sleep, Raman."
+    },
+    {
+     "id": "b",
+     "text": "Gerald and I are in a committed relationship. Respect it."
+    },
+    {
+     "id": "c",
+     "text": "Who is this"
+    }
+   ]
+  },
+  {
+   "from": "dev",
+   "name": "Dev Okafor",
+   "msgs": [
+    "Mom says there's jollof in your mini fridge. She says this is not optional.",
+    "Door's open if you need anything. Seriously."
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Tell her she's my mom now. Thanks, man."
+    },
+    {
+     "id": "b",
+     "text": "I'm putting your mom in my will."
+    },
+    {
+     "id": "c",
+     "text": "All good. Night."
+    }
+   ]
+  },
+  {
+   "from": "margaux",
+   "name": "Margaux (Don't)",
+   "msgs": [
+    "You were very loud tonight.",
+    "Don't be loud tomorrow."
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Define loud."
+    },
+    {
+     "id": "b",
+     "text": "Is that a request or a warning?"
+    },
+    {
+     "id": "c",
+     "text": "(Leave her on read.)"
+    }
+   ]
+  },
+  {
+   "from": "richard",
+   "name": "Dad",
+   "msgs": [
+    "Denise will send the Rho rush schedule.",
+    "Convocation is the 8th. Wear the navy suit."
+   ],
+   "options": [
+    {
+     "id": "a",
+     "text": "Got it."
+    },
+    {
+     "id": "b",
+     "text": "Do you want me to wear it or do you want to come see it?"
+    },
+    {
+     "id": "c",
+     "text": "(Leave him on read.)"
+    }
+   ]
+  }
+ ]
+}
