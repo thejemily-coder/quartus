@@ -1426,7 +1426,7 @@
     },
     {
      "t": "a",
-     "text": "The Kappas know there's a boy. They've known since a sweatshirt went missing and a back door got propped with Ayn Rand. The phone two tables over is how they're learning which one.",
+     "text": "The Kappas know there's a boy. They've known since the sweatshirt. The phone two tables over is how they're learning which one.",
      "if": {
       "e1_margaux_hookup": true,
       "e2_night": "margaux"
@@ -1825,7 +1825,7 @@
       },
       {
        "t": "a",
-       "text": "She goes. June, who heard every word over the hot glue gun, says “Wow” to no one, and goes back into her room, and shuts the door."
+       "text": "She goes. June, who caught the last of it over the hot glue gun, says “Wow” to no one, and goes back into her room, and shuts the door."
       }
      ],
      "set": {
@@ -2486,7 +2486,7 @@
      "reaction": [
       {
        "t": "a",
-       "text": "She gets up. She takes the phone. At the door she stops, back to him, one hand on the frame, the way he stopped on the landing for Dev."
+       "text": "She gets up. She takes the phone. At the door she stops, back to him, one hand on the frame, the way Dev stopped on the landing for him."
       },
       {
        "t": "line",
@@ -2710,7 +2710,7 @@
       },
       {
        "t": "a",
-       "text": "She goes into her room and locks it, and the lock is the loudest sound on the floor. After a while, inside, the tap in her sink. Running."
+       "text": "She goes into her room and locks it, and the lock is the loudest sound on the floor. After a while, from inside, her voice, low, doing Nina's last speech to the wall."
       },
       {
        "t": "a",
@@ -3444,7 +3444,7 @@
     },
     {
      "t": "a",
-     "text": "At 7:06 Priya walks in wearing the sunglasses Tommy left on the ficus last night, gets no food, and sits down directly across from Dev. She takes the sunglasses off. And she says it. The whole thing, July to last night, in under a minute, to his face, in a low steady voice, while the table pretends very hard to be talking about lacrosse.",
+     "text": "At 7:06 Priya walks in wearing Tommy's spare sunglasses, the pair he left on the ficus last night, gets no food, and sits down directly across from Dev. She takes the sunglasses off. And she says it. The whole thing, July to last night, in under a minute, to his face, in a low steady voice, while the table pretends very hard to be talking about lacrosse.",
      "if": {
       "e4_priya_fight": "dev"
      }
@@ -3604,6 +3604,20 @@
      "id": "b",
      "label": "Sit with Dev. Say: ‘I knew. Since yesterday morning.’",
      "reaction": [
+      {
+       "t": "a",
+       "text": "He gets up, goes round to Dev's side of the table, and says it low, under the roar of Hunter's blender, while Priya is busy holding her toast hostage. Nobody else is meant to hear.",
+       "if": {
+        "e4_priya_fight": "forgave"
+       }
+      },
+      {
+       "t": "a",
+       "text": "He gets up, goes round to Dev's side of the table, and says it low, under the roar of Hunter's blender. Nobody else is meant to hear.",
+       "if": {
+        "e4_priya_fight": "cut"
+       }
+      },
       {
        "t": "a",
        "text": "Dev doesn't look up from his egg."
@@ -4546,7 +4560,7 @@
       },
       {
        "t": "a",
-       "text": "For his files. He said it at the mailroom too. You're building a file on your own father. That's my whole personality.",
+       "text": "For his files. At the mailroom he told Cal he was building a file on his own father. Apparently it's catching.",
        "if": {
         "e3_mail": "read_form"
        }
@@ -4676,7 +4690,7 @@
     {
      "t": "line",
      "who": "brooks",
-     "text": "Econ 110 is where the boys who matter are. English is a hobby. Your seminar is, quote, “a woman with a fern.” He'd like you to reconsider by the end of add/drop. Which, I'm aware, was Tuesday. He'd like you to reconsider anyway. He finds deadlines decorative.",
+     "text": "Econ 110 is where the boys who matter are. English is a hobby. Your seminar is, quote, “a woman with tenure and a grudge.” He'd like you to reconsider by the end of add/drop. Which, I'm aware, was Tuesday. He'd like you to reconsider anyway. He finds deadlines decorative.",
      "if": {
       "e3_marsh": "stayed"
      }
@@ -5086,7 +5100,7 @@
        "who": "hollis",
        "text": "Just Cal, I'm told. Brooks warned me.",
        "if": {
-        "e1_name": "just_cal"
+        "e1_name": "first"
        }
       },
       {
@@ -5206,7 +5220,7 @@
     },
     {
      "t": "a",
-     "text": "He's never seen it before. The dash on the roster suddenly has a face, and the face is empty.",
+     "text": "He never photographed it. He doesn't need to. The dash on the roster has a face, and the face is empty.",
      "if": {
       "e2_composite_photo": false
      }
@@ -5568,7 +5582,7 @@
     },
     {
      "t": "a",
-     "text": "She isn't wearing his parka. He knows exactly where it is: on the back of her desk chair, two doors from the dormer, like a treaty nobody has signed.",
+     "text": "She isn't wearing his parka. He can guess exactly where it is: on the back of her desk chair, two doors from the dormer, like a treaty nobody has signed.",
      "if": {
       "e2_margaux_end": "stayed"
      }
@@ -5864,6 +5878,10 @@
        "text": "At 10:31 p.m., his phone:"
       },
       {
+       "t": "a",
+       "text": "At the door Brooks adds the rest, to the room: times at the dock at eleven-thirty. Voluntary. Brothers are welcome to watch."
+      },
+      {
        "t": "texts",
        "thread": "Dad",
        "onCal": true,
@@ -5967,7 +5985,7 @@
       },
       {
        "t": "a",
-       "text": "He left his father a voicemail an hour ago on the Quad. This is the rest of the message.",
+       "text": "He left his father a voicemail two hours ago on the Quad. This is the rest of the message.",
        "if": {
         "e4_talk": "called"
        }
@@ -6084,7 +6102,7 @@
     },
     {
      "t": "a",
-     "text": "Tommy Reyes, three beers and one hit to the head into his night, is already pulling off his borrowed blazer, then his shirt, then one shoe, hopping."
+     "text": "Tommy Reyes, three beers and one hit to the head into his night, is already pulling off his shirt over the Kappa's pearls, then one shoe, hopping."
     },
     {
      "t": "line",
@@ -6265,7 +6283,7 @@
       },
       {
        "t": "a",
-       "text": "His breathing is counted. Four in. Hold. Cal hears it, under the cheering. He doesn't know what it means. He only knows he's heard somebody count before."
+       "text": "His breathing is counted. Four in. Hold. Cal hears it, under the cheering. He doesn't know what it means. He only knows where he has read it before: carved low in a wainscot on the fourth floor."
       },
       {
        "t": "a",
@@ -6585,7 +6603,7 @@
     },
     {
      "t": "a",
-     "text": "Across the street, on the Kappa porch, Margaux Vance has seen the whole thing. The girl who held his hand on the lawn an hour ago. She lifts her glass, and then she sets it down on the railing, carefully, like she's changed her mind about what it means.",
+     "text": "Across the street, on the Kappa porch, Margaux Vance has seen the whole thing. The girl who held his hand on the lawn half an hour ago. She lifts her glass, and then she sets it down on the railing, carefully, like she's changed her mind about what it means.",
      "if": {
       "e4_margaux_seen": "hand"
      }
@@ -6757,7 +6775,7 @@
       {
        "t": "line",
        "who": "brooks",
-       "text": "I did. Three years ago. Nobody asked me to.",
+       "text": "I did. Two years ago. Nobody asked me to.",
        "if": {
         "e4_dress": "sweater"
        }
@@ -7009,7 +7027,7 @@
       {
        "t": "line",
        "who": "nora",
-       "text": "Okay. That's on the record, Whitaker. Not for print. Just for me."
+       "text": "Okay. That's off the record, Whitaker. Not for print. Just for me."
       },
       {
        "t": "a",
@@ -7642,7 +7660,7 @@
       {
        "t": "line",
        "who": "priya",
-       "text": "I knew it was you before the chat. I knew it was you when I saw my phone in your hand at ten-fifty."
+       "text": "I knew it was you before the chat. I knew it was you when I remembered my phone was in your hand at ten-fifty."
       },
       {
        "t": "a",
@@ -8219,7 +8237,7 @@
     },
     {
      "t": "a",
-     "text": "Cal is at the desk in the bay window in a T-shirt. The Moleskine is open to a new page with nothing on it yet. His phone is face-up for once, open to @lowell.three, waiting for the post that has come at 3:07 for nine nights running."
+     "text": "Cal is at the desk in the bay window in a T-shirt. The Moleskine is open to a new page with nothing on it yet. His phone is face-up for once, open to @lowell.three, waiting for the post that came at 3:07 last Friday and again on Wednesday."
     },
     {
      "t": "a",
