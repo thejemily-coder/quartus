@@ -7,7 +7,7 @@ EH.episode({
   previously: g => [
     'Pop owes the Iannucci family $41,000. Dante says: by Thanksgiving.',
     'Femi\'s last message: "M.R. ALIVE. RM 714. THEY CALL YOU 17."',
-    'Teddy is planning one last job. After it, the crew goes for Marisol. All of them.',
+    g.f('crew_marisol') ? 'Teddy is planning one last job. After it, the crew goes for Marisol. All of them.' : 'Teddy is planning one last job. He won\'t say what.',
     'Bree: "A lot of people, standing still. Stop him."',
     g.f('simone9') === 'lied' ? 'Simone knows. You lied when she gave you the chance.' : 'Simone knows. She has two lists.',
     'On the back of Jules\'s index card, in your handwriting: "Don\'t trust the lucky one."'
@@ -67,7 +67,7 @@ The bulb in 714 pops. The girl doesn\'t flinch.`,
       card: { kind: 'act', label: 'Act One', title: 'Wednesday' },
       loc: 'MELROSE DINER · SOUTH PHILADELPHIA',
       clock: { day: 'Wed', date: 'Nov 25', time: '7:15 AM' },
-      text: g => `Two and a half weeks go by. You go to class. You do Femi\'s Calc problems in Femi\'s green notebook, every one of them, *outside first*. You turn in Weisz\'s paper late and get it back with a B-minus and one comment: *Blurry.* It might not be about the paper.
+      text: g => `Two and a half weeks go by. You go to class. You do Femi\'s Calc problems in Femi\'s green notebook, every one of them, *outside first*. ${g.f('phl_paper9') === 'late' ? 'You turn in Weisz\'s paper late and get it back' : 'You get Weisz\'s paper back'} with a B-minus and one comment: *Blurry.* It might not be about the paper.
 
 ${g.f('jules9') === 'stay' ? 'Jules sleeps in your bed four nights out of fourteen, with the lamp on, in her clothes. Nobody on the floor says a word about it, which is how you know Simone has said something to all of them.' : 'You see Jules every day. You don\'t talk about the roof.'} Simone ${g.f('simone9') === 'lied' ? 'nods at you in the hallway like a stranger who\'s been polite to you once. It\'s worse than yelling.' : 'sits with you at dinner and calls you Salvatore, and doesn\'t ask you anything in public.'}
 
@@ -123,7 +123,7 @@ You have the rest of Wednesday. Time for two things.`,
         options: [
           { id: 'w10_jules', text: 'Jules is packing for Ravenscourt. Her door is open. Go in.', cost: 1, tag: 'Jules', go: 'a1_jules' },
           { id: 'w10_nik', text: 'Nik\'s dad is picking him up at noon for Edison. He keeps saying he has "a thing" to give you.', cost: 1, tag: 'Nik', go: 'a1_nik' },
-          { id: 'w10_simone', text: 'Simone has a 1:10 train to Atlanta from 30th Street. Carry her bag. Try.', cost: 1, tag: 'Simone', go: 'a1_simone' },
+          { id: 'w10_simone', text: 'Simone has the afternoon train to Atlanta from 30th Street. Carry her bag. Try.', cost: 1, tag: 'Simone', go: 'a1_simone' },
           { id: 'w10_pop', text: 'Go home early. Find out what Pop means by *handling it*.', cost: 1, tag: 'Pop', go: 'a1_pop' },
           { id: 'w10_vinnie', text: 'Vinnie\'s been texting you *call me* since Monday. Call him.', cost: 1, tag: 'Vinnie', go: 'a1_vinnie' }
         ],
@@ -135,7 +135,7 @@ You have the rest of Wednesday. Time for two things.`,
       enter: g => { g.flag('jules_box'); g.know('jules_parade', ['sam', 'jules'], 'Jules will be in the sponsors\' grandstand at the Art Museum steps on Thanksgiving morning. Her father\'s firm sponsors the parade.'); },
       text: g => `Her room is chaos, which is wrong. Jules Pemberton\'s side of 9-11 is always a magazine spread, and today there are three garment bags on the bed and clothes on the floor and a pair of riding boots standing in the middle of the room by themselves like they\'re waiting for someone.
 
-Simone\'s side is already stripped, her bags by the door. ${g.f('simone9') === 'lied' ? 'She went down the hall when she heard your voice.' : 'There was a note on your door at eight: *Salvatore. Behave. —S.*'}
+Simone\'s side is already stripped, her bags by the door. ${g.f('simone9') === 'lied' && g.f('simone10') !== 'mended' ? 'She went down the hall when she heard your voice.' : 'There was a note on your door at eight: *Salvatore. Behave. —S.*'}
 
 jules: Don\'t look at anything.
 
@@ -201,7 +201,7 @@ His dad honks from Broad Street. Nik sits on his suitcase again, hard, and it cl
 
     a1_simone: {
       enter: g => { if (g.f('simone9') === 'lied') { g.bond('simone', { trust: 2, respect: 1 }); g.flag('simone10', 'mended'); } else { g.bond('simone', { affection: 1 }); g.flag('simone10', 'warm'); } },
-      text: g => `30th Street Station is the inside of a cathedral full of people with roller bags. The big board clacks. The bronze angel holds the dead soldier up toward the ceiling the way it has since 1952.
+      text: g => `30th Street Station is the inside of a cathedral full of people with roller bags. The departure board flickers. The bronze angel holds the dead soldier up toward the ceiling the way it has since 1952.
 
 You carry her bag. She lets you.
 
@@ -299,7 +299,7 @@ You don\'t say anything.
 
 vinnie: And listen. Dante\'s been talking. In the car. He thinks I don\'t listen \'cause I\'m the driver. He keeps talking about under 95. The kid. He says the kid had an Eagles cap on backward, old, from like the Reid years, with a sweat stain on the brim.
 
-vinnie: He says he seen that cap before. On your pop. At the Melrose, in September.
+vinnie: He says he seen that cap before. On your pop. At the Melrose, in August.
 
 The phone is cold against your ear.
 

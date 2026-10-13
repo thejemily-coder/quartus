@@ -140,7 +140,7 @@ There\'s a man sitting in the middle of row M with his hands folded in his lap, 
 
 Nothing moves in the Slip but you. He moves.
 
-Your face. Older. Gray at the temples. A scar through his lip. His left hand on the armrest with a gap where the ring finger should be. His eyes are red. Not from tonight. From years.
+Your face. Older. Gray at the temples. A scar from the corner of his left eye down into his jaw. His left hand on the armrest with a gap where the ring finger should be. His eyes are red. Not from tonight. From years.
 
 He speaks. It\'s your voice, worn down to the wire.
 

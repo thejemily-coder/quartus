@@ -121,3 +121,25 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
   - Sleep Debt into E10: Stay ≈4, Kiss ≈5, Not yet ≈8 (one point lower with a nap). The frostnip9 injury carries through E10 if Sam Showed Simone.
   - Skipping Weisz makes the Philadelphia Neighborhoods paper late: `phl_paper9` set to late, phl −3.
   - `teddy_parade` is a fact; read it with `g.knows`.
+
+### E10 "Broad Street" (season finale): production notes
+- Written for this playthrough's E9 save. Shape:
+  - **Cold open (camera):** Achterberg and Brannigan on the hidden seventh floor of Building 7: "Let him. They run *toward*." Marisol in 714.
+  - **Act One:** Mikey at the Melrose (ME Dr. Feld retired to Boca; Brannigan asked whether Sam is coming to the parade). Hub: Jules / Nik (earbuds, `nik_chair`) / Simone (30th St; mends the lie) / Pop (the $11,400 401(k) shoebox) / Vinnie (Dante remembers the cap). Bree's 11:58 text: the parade.
+  - **Act Two:** call Mikey or not; cap or no cap. The six unnumbered ambulances, plus thermal on the lampposts (d20). 9:41: Teddy freezes the Parkway from 20th to 22nd (objects, not people). Crowd crush at the barricades. The $5M ransom is aimed at sponsor Pemberton Lyle.
+  - **Act Three:** Teddy can't let go because of the wind and the falling dog balloon. Darts; Teddy darted, and his hand coming off the street starts the 90 seconds. Bree is darted. Sam is "Seventeen" on the thermal tablet. **Jules walks down the frozen Parkway through four darts and every one misses** (Sam sees, "almost sure"). The radio says "Civilian, on camera. Hold."
+  - **The choice:**
+    - **Teddy:** Heck catches the lamppost and is taken (715).
+    - **Jayden and Carmen:** Teddy is taken (716).
+    - **Both, by Slipping:** Unstick, the Revenant ("You can't carry all of them." / "Watch me."), four lost minutes, and **Mikey learns** (heat_max_mikey).
+    - On every path Mikey stops Bree's stretcher on live TV.
+  - **Act Four:** the Water Works "almost" (handkerchief; what if / hand / kiss). Thanksgiving on Mifflin Street; Nonna's grace for "the boy nobody saw." **Bruno and Dante Iannucci** at 4:40 with Vinnie driving. With the cap, Bruno sets it on Sam's plate. Bruno's card: "After the holiday. Come see me. Alone." Silent / stand / take the card.
+  - **Tags:** "ES-17 is confirmed." / "Leave forty-four to her family." The Revenant on the top of the Art Museum steps beside a frost shape of someone seated, finger to his lips at the camera. END OF SEASON ONE.
+- **QA:** three passes applied; 0 errors; 3000/3000 runs reach the end; smoke test passes. The end card shows "Next episode · in production."
+- **Known simplification:** if `carmen` is not 'hip', the later scenes still say wheelchair and bad hip. The intro is gated; gate the rest if a non-hip save ever reaches E10.
+- **Season 2 handoff:**
+  - Flags: `choice10`, `teddy_saved` / `teddy_taken10`, `heck_taken10`, `mikey_knows` (Both path), `bruno10`, `cap10`, `waterworks10`, `called_mikey10`.
+  - Bruno's card (S2 "Made Men" premise).
+  - Halcyon wants Sam to come to Building 7 ("make sure the door is open").
+  - Jules's luck debt 5.
+  - Simone is mended if she was visited.

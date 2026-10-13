@@ -9,7 +9,7 @@ EH.scenes('s01e10', {
     enter: g => { g.heat('press', 1); },
     text: g => `Behind the Art Museum, down the hill, the old Water Works sits on the bank of the Schuylkill like a row of little Greek temples somebody forgot. Nobody\'s down here. Everyone in Philadelphia is up on the Parkway, or watching it on television.
 
-The river is low and brown and in no hurry. Boathouse Row is across the water. A goose walks past.
+The river is low and brown and in no hurry. Boathouse Row is just up the bank. A goose walks past.
 
 You\'re sitting on the stone wall over the river. ${g.f('choice10') === 'teddy' || g.f('choice10') === 'both' ? 'Bree took Teddy to Jefferson in a cab, conscious, furious, alive. ' + (g.f('heck_taken10') ? 'Heck is in the back of an ambulance with no numbers on its roof.' : 'Heck went with them.') : 'Teddy is gone. Bree took Heck back to Port Richmond in a cab, both of them crying.'} ${g.f('mikey_knows') ? 'Mikey had to go back to the task group. He made you promise to be on Mifflin Street at four. He made you say it twice.' : 'Mikey had to go back to the task group. *Four o\'clock,* he said. *Mifflin Street. Or I come get you.*'}
 
@@ -29,19 +29,23 @@ The goose walks back the other way.
 
 sam: Jules. On the Parkway. The darts.
 
-jules: Yes.
+jules: I was lucky.
 
 sam: All of them.
 
-jules: Yes.
+jules: I\'m very lucky, Kearney. Everyone says so.
 
 She folds the handkerchief in half. In half again.
 
-jules: What did *you* do? You were next to me. And then you were ${g.f('choice10') === 'both' ? 'across the street with Jayden *and* at the back of an ambulance. Both.' : g.f('choice10') === 'jayden' ? 'across the street with Jayden.' : 'at the back of an ambulance.'} I was holding your hand, Sam. I *felt* you go.
+jules: What did *you* do? You were next to me. And then you were ${g.f('choice10') === 'both' ? (g.f('unstick10') ? 'on your knees in the middle of the street with your brother holding you.' : 'still next to me, and everyone across the street was somewhere else.') : g.f('choice10') === 'jayden' ? 'across the street with Jayden.' : 'at the back of an ambulance.'} I was holding your hand, Sam.
+
+She looks down at her own hand.
+
+jules: Don\'t tell me. Not today.
 
 You don\'t answer. She doesn\'t answer. You sit on the wall over the Schuylkill with both your secrets between you, close enough to touch.`,
     choices: [
-      { text: '"What if it was me?" Say it. See what she does.', tag: 'What if',
+      { text: '"What if it was me?" Say it. See what she does.', tag: 'What if', if: g => g.knows('jules_text_whatif'),
         fx: g => { g.flag('waterworks10', 'whatif'); g.bond('jules', { trust: 1 }); }, go: 'a4_whatif' },
       { text: 'Don\'t ask. Take her hand. Just sit here.', tag: 'Her hand',
         fx: g => { g.flag('waterworks10', 'hand'); g.hidden('revenant_drift', -0.5); }, go: 'a4_hand' },
@@ -204,7 +208,7 @@ Bruno takes the box. He doesn\'t open it. He hands it to Dante without looking.
 
 BRUNO: That\'s very good, Frank. That\'s an honest effort. I respect an honest effort.
 
-He walks into the dining room. Nobody invited him. He looks at the table. He looks at Nonna, and Nonna looks back at him, and something passes between two people who have both lived on these blocks for seventy years, and Bruno is the one who looks away first.
+He walks into the dining room. Nobody invited him. He looks at the table. He looks at Nonna, and Nonna looks back at him, and something passes between two people who have both lived on these blocks for sixty years, and Bruno is the one who looks away first.
 
 BRUNO: Teresa.
 
@@ -222,7 +226,7 @@ ${g.f('cap10') ? `BRUNO: I watched the parade on the TV this morning. Channel 6.
 
 He reaches over the table, past the gravy boat, and picks up an old Eagles cap from the chair beside you, where you dropped it when you came in. Faded green. Sweat stain on the brim. He turns it over in his hands.
 
-BRUNO: My grandson says he saw this hat under 95. In October. He says he saw it on your father\'s head at the Melrose in September. My grandson\'s very observant. It\'s his best quality.
+BRUNO: My grandson says he saw this hat under 95. In October. He says he saw it on your father\'s head at the Melrose in August. My grandson\'s very observant. It\'s his best quality.
 
 He puts the cap down on your plate, gently, on top of the turkey.` : `BRUNO: My grandson says your boy is interesting. Under 95, in October. He says a lot of things. He\'s usually wrong.
 
@@ -365,18 +369,18 @@ Your phone has been going all day. You look at it now, for the first time.
 
 TXT nik: bro
 TXT nik: BRO
-TXT nik: my aunt thinks i have dysentery
+TXT nik: ${g.f('nik_chair') ? 'my aunt thinks i have dysentery' : 'i saw the parkway on 6abc. was that you. dont answer that'}
 TXT nik: are you alive. text me a word. any word
 TXT simone: ${g.f('simone9') !== 'lied' || g.f('simone10') === 'mended' ? 'Salvatore Kearney. I watched a "medical emergency" on the Parkway on my grandmother\'s TV in Decatur, and my grandmother said "that boy is too fast," and I had to go sit in the car. Text me that you\'re alive. Then I\'m calling you. Then you\'re telling me EVERYTHING.' : 'I saw the news. Are you alive.'}
 TXT grace: Okay. Text me when you need stitches. Not if. When.
-TXT bree: ${g.f('choice10') === 'jayden' ? 'they took him. you know they took him. heck wants to go to the navy yard tonight. i said wait for you. i said you promised. you promised wawa' : 'hes at jefferson. hes awake. hes mad at you for saving him. thats how you know hes ok. heck is ' + (g.f('heck_taken10') ? 'gone. they took heck. i cant stop shaking' : 'here. heck says papa')}
+TXT bree: ${g.f('choice10') === 'jayden' ? 'they took him. you know they took him. heck wants to go to the navy yard tonight. i said wait for you.' + (g.f('teddy9') === 'marisol' ? ' i said you promised. you promised wawa' : ' i said youd come. youll come right wawa') : 'hes at jefferson. hes awake. hes mad at you for saving him. thats how you know hes ok. heck is ' + (g.f('heck_taken10') ? 'gone. they took heck. i cant stop shaking' : 'here. heck says papa')}
 TXT jules: Gran asked who you were.
 TXT jules: I told her.
 TXT jules: She said, "Ah."
 
 You type *alive* to Nik. You type *alive* to Simone. You don\'t know what to type to Bree.
 
-${g.f('mikey_knows') ? 'The door opens behind you. Mikey comes out and sits on the step next to you with two cans of Yuengling, like the night after All Souls. He hands you one.\n\nHe doesn\'t say anything.\n\nmikey: Does Pop know?\n\nsam: He thinks he knows.\n\nmikey: Ma?\n\nsam: Ma always knows. She doesn\'t know *what*.\n\nHe nods. He drinks.\n\nmikey: I\'m on the task group. Hunting you. You get that that\'s funny?\n\nHe doesn\'t laugh.\n\nmikey: Brannigan\'s gonna ask me tomorrow what I saw. On the Parkway. When you were standing next to the girl, and then you weren\'t.\n\nsam: What are you gonna say?\n\nHe looks at you. Your brother. The family hero.\n\nmikey: I\'m gonna say I didn\'t see nothing. And I\'m gonna be lying to a man who kills people. For you.\n\nHe puts his arm around your shoulders.\n\nmikey: So you better be worth it, Sammy.' : 'The door opens behind you. Mikey comes out and stands on the step above you with his hands in his pockets.\n\nmikey: You were on the Parkway.\n\nIt isn\'t a question.\n\nmikey: Next to the Pemberton girl. Bleeding. Like you get.\n\nYou don\'t say anything.\n\nmikey: Someday you\'re gonna tell me. And I\'m gonna be mad. And then I\'m gonna be something else.\n\nHe goes back in. He leaves the door open a crack, so the warm comes out.'}
+${g.f('mikey_knows') ? 'The door opens behind you. Mikey comes out and sits on the step next to you with two cans of Yuengling, like the night after All Souls. He hands you one.\n\nHe doesn\'t say anything.\n\nmikey: Does Pop know?\n\nsam: ' + (g.f('pop_knows') === 'suspects' ? 'He thinks he knows.' : g.f('pop_knows') ? 'Yeah. He knows.' : 'No.') + '\n\nmikey: Ma?\n\nsam: Ma always knows. She doesn\'t know *what*.\n\nHe nods. He drinks.\n\nmikey: I\'m on the task group. Hunting you. You get that that\'s funny?\n\nHe doesn\'t laugh.\n\nmikey: Brannigan\'s gonna ask me tomorrow what I saw. On the Parkway. When you were standing next to the girl, and then you weren\'t.\n\nsam: What are you gonna say?\n\nHe looks at you. Your brother. The family hero.\n\nmikey: I\'m gonna say I didn\'t see nothing. And I\'m gonna be lying to a man who kills people. For you.\n\nHe puts his arm around your shoulders.\n\nmikey: So you better be worth it, Sammy.' : 'The door opens behind you. Mikey comes out and stands on the step above you with his hands in his pockets.\n\nmikey: You were on the Parkway.\n\nIt isn\'t a question.\n\nmikey: Next to the Pemberton girl. Bleeding. Like you get.\n\nYou don\'t say anything.\n\nmikey: Someday you\'re gonna tell me. And I\'m gonna be mad. And then I\'m gonna be something else.\n\nHe goes back in. He leaves the door open a crack, so the warm comes out.'}
 
 Down at the end of Mifflin Street, under the streetlight, there\'s nobody.
 
@@ -431,7 +435,7 @@ The Parkway at midnight on Thanksgiving. The barricades are stacked on the media
 
 At the top of the Art Museum steps, the seventy-two steps where every tourist in the world runs up and throws their arms in the air, a man is sitting alone on the top step in the cold.
 
-Gray at the temples. A scar through his lip. His left hand resting on his knee, with a gap where the ring finger should be. He\'s looking down the Parkway toward City Hall, toward Broad Street, at the lights.
+Gray at the temples. A scar from the corner of his left eye down into his jaw. His left hand resting on his knee, with a gap where the ring finger should be. He\'s looking down the Parkway toward City Hall, toward Broad Street, at the lights.
 
 Beside him, on the stone, there\'s frost.
 

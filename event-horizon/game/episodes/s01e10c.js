@@ -76,7 +76,7 @@ You stand up to go for the ropes, and Teddy opens his mouth to say something els
     enter: g => { g.flag('teddy10', 'refused'); g.bond('teddy', { tension: 1 }); },
     text: `sam: Let go. Please. There\'s no money coming. Let go now.
 
-teddy: You don\'t get to tell me that. Not you. You got a mom with two kidneys and a house on Mifflin Street. Get away from me.
+teddy: You don\'t get to tell me that. Not you. You got a mom with two kidneys and a house to go home to. Get away from me.
 
 He presses his hand down harder. The gray creeps past his elbow. He makes a sound through his teeth.
 
@@ -210,7 +210,7 @@ The world is getting soft at the edges. You fight it. You bite the inside of you
 
 She\'s coming down the middle of the frozen Parkway. Not on the sidewalk. *In the street*, inside the barricades, where nobody is supposed to be, between the frozen floats, walking straight down the dotted white line in a camel coat and pearl earrings and ${g.f('jules_box') ? 'the riding boots from her bedroom floor' : 'riding boots'}, like the street was built for her to walk down.
 
-She climbed over the barricade at the grandstand. She left her seat on the aisle. She\'s been walking for fifteen minutes toward the one place in Philadelphia everybody else is running from.
+She climbed over the barricade at the grandstand.${g.f('jules_box') ? ' She left her seat on the aisle.' : ''} She\'s been walking for fifteen minutes toward the one place in Philadelphia everybody else is running from.
 
 The men in the EMS jackets see her too. One of them lifts the thing that isn\'t a flashlight. Not at her. At you. And she steps into the line between you without breaking stride, like she\'s stepping around a puddle.
 
@@ -234,7 +234,7 @@ jules: Get up, Kearney.
 
 From somewhere behind the men, a radio crackles. A calm voice you know.
 
-*Hold fire. All units, hold fire. That\'s the Pemberton girl. Hold.*
+*Hold fire. All units, hold fire. Civilian, on camera. Hold.*
 
 The four men lower their arms. They stand there. Not leaving. Waiting.
 
@@ -242,7 +242,7 @@ Jules holds her hand down to you. You take it. It\'s ice cold. She pulls you up,
 
 sam: Jules. They were— the darts. They all—
 
-jules: Nothing happens to me. I told you. On the roof.
+jules: Nothing happens to me.${g.knows('jules_nothing_happens') ? ' I told you. On the roof.' : ''}
 
 She says it flat. Like a fact she\'s sick of. She wipes her lip with the back of her glove and looks at the blood on the leather like it belongs to somebody else.
 
@@ -261,7 +261,7 @@ And under your feet, the street shivers.
 
 **Teddy.** On the stretcher, unconscious, being slid into the back of the third ambulance. One medic climbing in after him. The other with his hand on the door. When those doors close, Teddy goes to the Navy Yard, to a room with a number on it, and his mother sits in her recliner on Edgemont Street with the cycler humming and waits for him to come home.
 
-**The dog.** Five stories of balloon, frozen mid-fall, over the lamppost at the corner of 21st. When it comes back, it\'s going to hit that lamppost with all the wind in the world, and the lamppost is going to come down. And under the lamppost, on the sidewalk, in a wheelchair with a blanket over her knees, is a woman you know. Carmen Torres. Her hip, from August. From the Hitch. From the bus you were too slow for.
+**The dog.** Five stories of balloon, frozen mid-fall, over the lamppost at the corner of 21st. When it comes back, it\'s going to hit that lamppost with all the wind in the world, and the lamppost is going to come down. And under the lamppost, on the sidewalk, ${g.f('carmen') === 'hip' ? 'in a wheelchair with a blanket over her knees, is a woman you know. Carmen Torres. Her hip, from August. From the Hitch. From the bus you were too slow for.' : 'in a folding chair with a blanket over her knees, is a woman you know. Carmen Torres. From the Hitch. From the bus.'}
 
 And standing next to her chair, in a puffy coat, eight years old, looking straight at you across the frozen Parkway, is Jayden.
 
@@ -508,7 +508,7 @@ Two of them get her onto a stretcher on the curb while she\'s half under from th
 
 mikey: *PPD! Stop that stretcher!*
 
-${g.f('called_mikey10') ? 'He\'s been standing beside the fourth ambulance for an hour. Since you called him. Watching it. Watching the men in the polo shirts. Writing things down.' : 'He\'s coming down 21st Street at a run, badge out, holding it over his head.'}
+${g.f('mikey_knows') ? 'He let go of you thirty seconds ago. He\'s up off his knees with his badge over his head.' : g.f('called_mikey10') ? 'He\'s been near the fourth ambulance all morning. Since you called him. Watching it. Watching the men in the polo shirts. Writing things down.' : 'He\'s coming down 21st Street at a run, badge out, holding it over his head.'}
 
 HALCYON MEDIC: Officer, we\'re contracted EMS, this patient is having a—
 
@@ -534,7 +534,7 @@ bree: *Thanks, officer.*
 
 And she slides off the stretcher and goes to find ${g.f('choice10') === 'jayden' ? 'Heck' : 'Teddy'}.
 
-Across the street, Mikey looks at you.
+Mikey looks back at you.
 
 ${g.f('mikey_knows') ? 'He doesn\'t say anything. He doesn\'t have to. He knows, now. You watch him put it in the drawer with everything else. You watch the drawer not close.' : 'He looks at you for a long time, standing there in the street with blood on your face, beside Jules Pemberton. Then he looks at the ambulances going away up 21st. He\'s adding it up. You watch him add it up.'}
 

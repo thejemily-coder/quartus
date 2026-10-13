@@ -10,7 +10,7 @@ EH.scenes('s01e10', {
 
 You get dressed in the dark. Black hoodie. Gaiter. Sneakers, the left one split at the toe.
 
-On the hook on the back of the door, Pop\'s old Eagles cap, the one you took from the hall closet in September. Faded green. Sweat stain on the brim. ${g.knows('dante_cap') ? '*Don\'t wear the hat,* Vinnie said.' : 'You\'ve worn it every time.'}
+On the hook on the back of the door, Pop\'s old Eagles cap, the one he gave you. Faded green. Sweat stain on the brim. ${g.knows('dante_cap') ? '*Don\'t wear the hat,* Vinnie said.' : 'You\'ve worn it every time.'}
 
 ${g.f('nik_chair') ? 'Nik\'s earbuds are on your desk in their little white box.' : ''}
 
@@ -57,7 +57,7 @@ He hangs up before you can say it back.`,
   a2_cap: {
     text: g => `You look at the cap on the hook.`,
     choices: [
-      { text: 'Wear it. Backward. It\'s Pop\'s. It\'s the only part of this that feels like you.', tag: 'The cap',
+      { text: 'Wear it. Backward. It\'s Pop\'s. It\'s the only part of this that feels like you.', tag: 'The cap', if: g => !g.f('costume') || g.f('costume') === 'hoodie',
         fx: g => { g.flag('cap10', true); g.hidden('revenant_drift', 0.5); }, go: 'a2_parkway' },
       { text: 'Leave it on the hook. Hood up. Nobody\'s face. Nobody\'s hat.', tag: 'No cap',
         fx: g => { g.flag('cap10', false); }, go: 'a2_parkway' }
@@ -78,7 +78,7 @@ nik: *…Okay. Okay. Hold on.*
 
 You hear a door. You hear a television, loud, and a lot of people speaking Bengali, and somebody saying *Nikhil, the turkey biryani!*, and then the door closes and it\'s quiet.
 
-nik: *I\'m in my aunt\'s bathroom. I have the 6abc stream on my phone. I have a tablet. I have Google Maps. I have forty-five relatives who think I have diarrhea. I am the guy in the chair. Go.*` : 'You don\'t call anybody. You take the Broad Street Line south to City Hall with your hood up and your hands in your pockets and nobody looks at you, because nobody looks at anyone on the Broad Street Line.'}
+nik: *I\'m in my aunt\'s bathroom. I have the 6abc stream on my phone. I have a tablet. I have Google Maps. I have forty-five relatives who think I have diarrhea. I am the guy in the chair. Go.*` : 'You take the Broad Street Line south to City Hall with your hood up and your hands in your pockets and nobody looks at you, because nobody looks at anyone on the Broad Street Line.'}
 
 The Parkway on Thanksgiving morning is a river of people.
 
@@ -88,7 +88,7 @@ And the wind. That\'s the first thing you notice. It\'s gusting. Hard. Twenty mi
 
 Up the Parkway, at the end, the Art Museum sits on its hill like a temple, with the grandstand built across the bottom of the steps, red-white-and-blue bunting, a big banner: **PEMBERTON LYLE CAPITAL · PROUD SPONSOR**.
 
-Somewhere in the second row, on the aisle, ${g.f('jules_box') ? 'Jules is sitting so she can leave.' : 'you don\'t know who\'s sitting.'}
+${g.f('jules_box') ? 'Somewhere in the second row, on the aisle, Jules is sitting so she can leave.' : ''}
 
 The first balloons are coming. You can see them over the crowd, back toward City Hall, five stories tall, bobbing in the gusts with fifty handlers each hanging on to the ropes: a turkey in a pilgrim hat, a cartoon dog with a red bowtie, a giant gingerbread man. When the wind hits them, they lean, and the handlers lean back, and the crowd goes *ohhh*.
 
