@@ -17,6 +17,7 @@ The user reads this conversation and must not learn the secrets. The bible, seas
 - In the main thread, never run `vault.py get`, never print episode file contents, and never summarize upcoming plot.
 - All vault work happens inside subagents.
 - Tell every subagent that its final reply must be spoiler-free: what it did, sizes and counts, problems. No plot, no arc names, no hints about the endgame.
+- Tell every subagent to work in its own scratchpad subfolder, delete it when done, and never leave decoded vault copies behind. Their scratch folders sit outside the repo, but stray decoded copies are still a spoiler risk.
 - Your messages to the user stay at the level of "Episode 3 is written, validated and published."
 
 ## Steps
