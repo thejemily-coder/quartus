@@ -80,7 +80,7 @@ You\'ll think about that a lot.`,
       card: { kind: 'act', label: 'Act One', title: 'Two Weeks' },
       loc: 'CARDONE HALL · 9TH FLOOR',
       clock: { day: 'Fri', date: 'Oct 16', time: '4:20 PM' },
-      enter: g => { g.drift(-3); g.flag('nik_rule_kept'); g.sleep(8); },
+      enter: g => { g.drift(-4); g.flag('nik_rule_kept'); g.sleep(8); },
       text: g => `Two weeks.
 
 Two weeks of Nik\'s rule, for real this time. No Slips. Not for a falling coffee, not for a bus, not for anything. ${g.f('broke_nik_rule') ? 'You broke it once, in the alley with Vinnie, and Nik found out, and didn\'t yell, which was worse. He just wrote **RULE 1 (AGAIN)** in Vol. 3 and underlined it until the pen tore through.' : ''} Two weeks of being a normal guy. You go to class. You do your problem sets. You deliver pizzas at the speed of a bike. You sleep. Actually sleep.
@@ -117,7 +117,7 @@ It\'s Friday. You have a dinner shift at Ciro\'s tonight. Before that, you have 
     a1_hub: {
       loc: 'FRIDAY · OCTOBER 16',
       clock: { time: '4:40 PM' },
-      text: `You\'ve got two hours before Ciro needs you. You\'ve got ten XP of things you\'ve learned, a midterm Monday, and a pile of people you owe phone calls.`,
+      text: g => `You\'ve got two hours before Ciro needs you. You\'ve got ${g.S.xp} XP of things you\'ve learned, a midterm Monday, and a pile of people you owe phone calls.`,
       hub: {
         slots: 2, label: 'Friday afternoon',
         blurb: 'Ciro\'s at seven. Choose two.',
@@ -182,7 +182,7 @@ You sit there holding the phone.`,
     },
 
     a1_femi: {
-      enter: g => { g.know('femi_residential', ['sam', 'femi'], 'Femi went back to Halcyon. They want him for a "residential phase" at the Navy Yard over Halloween weekend. He said yes.'); g.bond('femi', { trust: 1 }); },
+      enter: g => { g.know('femi_residential', ['sam', 'femi'], 'Femi went back to Halcyon. They want him for a "residential phase" at the Navy Yard over Halloween weekend (Fri Oct 30 – Sun Nov 1), $2,500 stipend.'); g.bond('femi', { trust: 1 }); },
       text: g => `It takes you forty minutes to find him, and you\'re the only person in the world who can.
 
 He\'s in the stacks on the fourth floor of Charles Library, in a carrel by the window, with a Calc textbook open that he isn\'t reading. People walk past him and don\'t look. A girl sits down in the carrel *next* to him, puts her bag on his feet, and doesn\'t notice.
@@ -421,9 +421,9 @@ He wipes his fingers on a napkin, one at a time.
 DANTE: Saturday is Saturday. Tell him that for me. He\'ll know what it means.`,
       choices: [
         { text: 'Lean over the counter. Get close. "You go near my father, and I\'ll find you."', tag: 'Threaten',
-          check: { kind: 'move', move: 'Hold the Line', attr: 'nerve', skill: 'intimidate', label: 'Make him blink', on: { strong: 'a1_dante_threat', weak: 'a1_dante_threat_weak', miss: 'a1_dante_threat_weak' } } },
+          check: { kind: 'move', move: 'Lean On', attr: 'nerve', skill: 'intimidate', label: 'Make him blink', on: { strong: 'a1_dante_threat', weak: 'a1_dante_threat_weak', miss: 'a1_dante_threat_weak' } } },
         { text: '"What happens Saturday?" Keep your voice flat. Get information.', tag: 'Ask',
-          check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'streetwise', label: 'Read Dante', on: { strong: 'a1_dante_read', weak: 'a1_dante_read_weak', miss: 'a1_dante_read_weak' } } },
+          check: { kind: 'move', move: 'Read the Street', attr: 'wits', skill: 'streetwise', label: 'Read Dante', on: { strong: 'a1_dante_read', weak: 'a1_dante_read_weak', miss: 'a1_dante_read_weak' } } },
         { text: 'Say nothing. Look past him, at the Escalade. At Vinnie.', tag: 'Vinnie',
           fx: g => { g.flag('ciro7', 'vinnie'); }, go: 'a1_dante_vinnie' }
       ]

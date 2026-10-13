@@ -413,7 +413,7 @@ constance: Leave the chips, child. Then come and find me.`,
     card: { kind: 'act', label: 'Act Three', title: 'Half Past Midnight' },
     night: true,
     loc: 'RAVENSCOURT · THE TERRACE',
-    clock: { time: '12:31 AM' },
+    clock: { day: 'Sun', date: 'Oct 4', time: '12:31 AM' },
     text: g => `Callum finds you on the terrace, at the stone wall above the river. It\'s cold. Your breath smokes. Below, the Schuylkill moves in the dark, and across it, very far off, there\'s the faint orange glow of the city.
 
 He puts his jacket around your shoulders without asking. It smells like him, like clean laundry and boathouse.

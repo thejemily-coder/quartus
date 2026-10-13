@@ -117,7 +117,7 @@ You think about the nine things you typed and deleted at 1:09 in the morning two
 
 You think about what she meant. You still don\'t know what she meant. *What if it was me.* What if it was her who what?
 
-You think about the footprints in the frost${g.f('unstick') ? ' at the edge of the stopped river' : ''}. You think about Dante\'s interested face. You think about the people who know about you, and how many of them were on their knees on the gravel tonight.`,
+${g.f('unstick') ? 'You think about the footprints in the frost at the edge of the stopped river. ' : ''}You think about Dante\'s interested face. You think about the people who know about you, and how many of them were on their knees on the gravel tonight.`,
     choices: [
       { text: 'Write: *I hope it is.* Slide it back.', tag: 'I hope it is',
         fx: g => { g.flag('nine', 'hope'); g.bond('jules', { affection: 2, trust: 1 }); g.know('i_hope_it_is', ['sam', 'jules'], 'At 1:30 a.m. in the lounge, you wrote on an index card for Jules: "I hope it is." In answer to "What if it was me."'); }, go: 'a4_nine_hope' },
@@ -200,10 +200,12 @@ It isn\'t an answer. It\'s something better than an answer. You think she knows 
     card: { kind: 'tag' },
     loc: 'WACHMAN HALL · ROOM 413',
     clock: { day: 'Mon', date: 'Oct 19', time: '9:00 AM' },
-    enter: g => { g.sleep(5); },
+    enter: g => { g.sleep(5); g.sleep(5); },
     text: g => `The Calc midterm is ten problems in ninety minutes, and Jules sits two rows ahead of you, and doesn\'t look back once, and you can feel her not looking back the whole time.`,
     choices: [
-      { text: 'Take the test. Problem one. You know this.', tag: 'Midterm',
+      { text: 'Take the test. Problem one. You know this.', tag: 'Midterm', if: g => g.f('pre_study') || g.f('nine') === 'nine',
+        check: { kind: 'd20', attr: 'wits', skill: 'study', dc: 13, bonus: 2, bonusLabel: 'You did the work', label: 'Calc midterm', on: { crit: 'tag_mid_good', success: 'tag_mid_good', fail: 'tag_mid_bad', fumble: 'tag_mid_bad' } } },
+      { text: 'Take the test. Problem one. You know this.', tag: 'Midterm', if: g => !g.f('pre_study') && g.f('nine') !== 'nine',
         check: { kind: 'd20', attr: 'wits', skill: 'study', dc: 13, bonus: 0, label: 'Calc midterm', on: { crit: 'tag_mid_good', success: 'tag_mid_good', fail: 'tag_mid_bad', fumble: 'tag_mid_bad' } } }
     ]
   },
@@ -224,7 +226,7 @@ At 2:10, your phone rings. **MIKEY.**`,
   },
   tag_mid_bad: {
     enter: g => { g.grade('calc', -4); g.flag('midterm', 'shaky'); },
-    text: g => `You know some of it. You know more than you would have two weeks ago. But you slept five hours, and your ribs hurt, and problem seven is the chain rule in a disguise you don\'t see through until there are four minutes left.
+    text: g => `You know some of it. You know more than you would have two weeks ago. But you slept five hours, ${g.hurt('cracked_ribs7') ? 'and your ribs hurt, ' : ''}and problem seven is the chain rule in a disguise you don\'t see through until there are four minutes left.
 
 When you hand it in, you\'re not sure. You\'re not sure of anything.
 

@@ -233,9 +233,9 @@
     const firstEp = !S.done.length && !S.ep;
     S.ep = id; S.season = ep.season; S.scene = ep.start; S.epLog = []; S.epRolls = []; S.hubs = {}; S.hub = null; S.marked = {}; delete S.pending;
     delete S.flags._failxp;
+    if (S.pov && !ep.pov) EH.povExit(S);
     if (!firstEp) S.injuries = S.injuries.map(i => Object.assign({}, i, { heal: (i.heal || 1) - 1 })).filter(i => i.heal > 0);
     S.pools.nerve = EH.maxPool(S, 'nerve') - (S.sleepDebt >= 6 ? 1 : 0);
-    if (S.pov && !ep.pov) EH.povExit(S);
     EH.povEnter(S, ep);
     const snap = EH.clone(S); delete snap.epStart; S.epStart = snap;
     TRAIL = [];

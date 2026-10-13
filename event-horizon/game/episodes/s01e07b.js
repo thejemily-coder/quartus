@@ -103,7 +103,7 @@ nik: Also, you have a study date with Jules Pemberton at seven, and if you blow 
     clock: { time: '7:00 PM' },
     text: g => `She\'s already there when you come in, at the big table in the ninth-floor lounge, with two highlighters, a stack of index cards held with a binder clip, a thermos of tea, and every Calc problem set from the semester laid out in a grid like evidence at a trial.
 
-She\'s wearing a gray cardigan and her hair is up in a pencil. ${g.f('roof_want') ? '' : ''}The pink-and-green bracelet is on her wrist.
+She\'s wearing a gray cardigan and her hair is up in a pencil. The pink-and-green bracelet is on her wrist.
 
 jules: You\'re on time.
 
@@ -147,7 +147,7 @@ jules: What is it.`,
       { text: '"I have to go. It\'s my father. I can\'t tell you more." Look at her when you say it.', tag: 'The truth',
         fx: g => { g.flag('bail', 'truth'); g.bond('jules', { trust: 1 }); g.know('jules_pop', ['jules'], 'Sam left the study night to help his father. He said he couldn\'t say more.'); }, go: 'a2_bail_truth' },
       { text: '"Nonna\'s sick. Ma called. I gotta go to South Philly." Lie. A good one.', tag: 'Lie',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['jules'], near: ['jules'], label: 'Lie to Jules', on: { strong: 'a2_bail_lie', weak: 'a2_bail_lie', miss: 'a2_bail_lie_bad' } } },
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', near: ['jules'], label: 'Lie to Jules', on: { strong: 'a2_bail_lie', weak: 'a2_bail_lie', miss: 'a2_bail_lie_bad' } } },
       { text: '"I got your text. Two weeks ago. I should have answered." Say that first. Then: "I have to go."', tag: 'The text',
         fx: g => { g.flag('bail', 'text'); g.bond('jules', { affection: 1, trust: 1 }); }, go: 'a2_bail_text' }
     ]
@@ -202,7 +202,7 @@ You go. You don\'t look back. If you\'d looked back, you\'d have seen her sittin
     next: 'a3_under95'
   },
   a2_bail_lie_bad: {
-    enter: g => { g.flag('bail', 'lie'); g.bond('jules', { trust: -1 }); },
+    enter: g => { g.flag('bail', 'lie'); g.bond('jules', { trust: -1 }); g.heat('jules', 1); },
     text: `sam: Nonna\'s sick. Ma called. I gotta—
 
 You stop. Your hand is on your ear. You don\'t remember putting it there.
@@ -442,7 +442,7 @@ teddy: Job\'s off, Mr. Iannucci.`,
 
   a3_vinnie: {
     night: true,
-    enter: g => { g.bond('vinnie', { trust: 3, affection: 2 }); g.flag('vinnie_stood'); g.know('vinnie_stood', ['sam', 'vinnie', 'dante'], 'Under I-95, Vinnie got out of Dante\'s Escalade and stood with you. In front of Dante.'); },
+    enter: g => { g.bond('vinnie', { trust: 3, affection: 2 }); g.flag('vinnie_stood'); g.flag('under95', 'vinnie'); g.know('vinnie_stood', ['sam', 'vinnie', 'dante'], 'Under I-95, Vinnie got out of Dante\'s Escalade and stood with you. In front of Dante.'); },
     text: g => `You don\'t go to Dante. You don\'t go to Teddy. You walk to the Escalade, past everyone, and you knock on the driver\'s window with one knuckle, twice, the way you used to knock on his bedroom window when you were eleven.
 
 The window comes down.
@@ -532,7 +532,7 @@ Your nose is pouring.
 Teddy, by the cab, has seen it. He\'s seen it before. He closes his eyes, and lifts his hand off the hood.
 
 teddy: Job\'s off, Mr. Iannucci.`,
-    enter: g => { if (g.f('unstick')) { g.drift(1); g.hidden('revenant_drift', 1.5); g.injure({ id: 'hypothermia7', name: 'Slip-cold (hypothermia)', pen: 1, heal: 1, affects: ['body', 'reflex', 'wits'] }); g.know('unstick', ['sam'], 'Under I-95 you got stuck in the Slip. You couldn\'t get out. You found someone else\'s footprints in the frost, walking onto the stopped Delaware. You pulled yourself out thinking about Jules.'); } g.know('slip_rescue_pop', ['sam'], 'You Slipped and carried Pop away from Dante\'s men under I-95.'); },
+    enter: g => { if (g.S.drift >= 9 || g.hv('revenant_drift') >= 10) g.flag('unstick'); if (g.f('unstick')) { g.drift(1); g.hidden('revenant_drift', 1.5); g.injure({ id: 'hypothermia7', name: 'Slip-cold (hypothermia)', pen: 1, heal: 1, affects: ['body', 'reflex', 'wits'] }); g.know('unstick', ['sam'], 'Under I-95 you got stuck in the Slip. You couldn\'t get out. You found someone else\'s footprints in the frost, walking onto the stopped Delaware. You pulled yourself out thinking about Jules.'); } g.know('slip_rescue_pop', ['sam'], 'You Slipped and carried Pop away from Dante\'s men under I-95.'); },
     next: 'a3_dante'
   },
 
