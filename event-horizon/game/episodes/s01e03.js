@@ -12,12 +12,11 @@ EH.episode({
       night: true,
       loc: 'CARDONE HALL · ROOF',
       clock: { day: 'Thu', date: 'Sep 3', time: '2:50 AM' },
-      enter: g => { g.sleep(7); },
       text: `It's ninety-one degrees at three in the morning, and Nik is wearing a headlamp.
 
 nik: Okay. Trial forty-four. Ready?
 
-He's sitting cross-legged on an HVAC unit with his laptop, a stopwatch app, a thermometer he "borrowed" from the chem lab four days ago and is now emotionally attached to, and a spiral notebook labeled **THE SLIP (VOL. 2)** because Vol. 1 ran out on Tuesday. Below you, North Philly hums in the heat like a fridge about to die. A week into September, and the city still hasn't gotten the memo about it.
+He's sitting cross-legged on an HVAC unit with his laptop, a stopwatch app, a thermometer he "borrowed" from the chem lab four days ago and is now emotionally attached to, and a spiral notebook labeled **THE SLIP (VOL. 2)** because Vol. 1 ran out on Tuesday. Below you, North Philly hums in the heat like a fridge about to die. It's September, technically. Nobody told the city.
 
 It's been a week since Girard. A week of this: every night on the roof, Nik with his stopwatch, you stepping in and out of a stopped world until your nose bleeds and he makes you stop.
 
@@ -50,7 +49,7 @@ nik: You need something else. I'm not saying a *costume*. I'm saying a… a prof
       enter: g => { g.know('costume', ['sam', 'nik'], 'Your "uniform" for nights out: ' + ({ hoodie: 'black hoodie, gaiter, Pop\'s backward Eagles cap.', windbreaker: 'Ciro\'s green windbreaker, inside out.', helmet: 'your night-delivery bike helmet with the tinted visor.', none: 'nothing. You go as yourself.' })[g.f('costume')]); },
       text: g => `${{
         hoodie: 'nik: Okay. Okay, that\'s actually smart. That\'s *so* smart, it\'s basically camouflage. The whole city is a kid in a hoodie. You\'re hiding in the Philadelphia of it all.',
-        windbreaker: 'nik: Inside out? Okay. Okay, I hate that it\'s kind of iconic. That\'s like, a *gesture*. That\'s a fan-theory jacket. People are gonna write essays about why it\'s inside out.\n\nsam: Nonna said wear a jacket.\n\nnik: Nonna\'s the best writer on this show.',
+        windbreaker: 'nik: Inside out? Okay. Okay, I hate that it\'s kind of iconic. That\'s like, a *gesture*. That\'s a fan-theory jacket. People are gonna write essays about why it\'s inside out.\n\nsam: Nonna said wear a jacket.\n\nnik: Then your grandmother\'s running the brand now. I\'ve made my peace with it.',
         helmet: 'nik: The *visor*. Bro. The visor is so good. It\'s like Daft Punk if Daft Punk delivered pizza. Nobody can see your face, nobody can see your nosebleeds. That\'s a two-for-one.',
         none: 'Nik looks at you for a long second, the headlamp right in your eyes.\n\nnik: You know that\'s how they get you, right? It\'s *always* the face. Every single one. The face, and then the family.\n\nYou don\'t have an answer for that. He writes something in Vol. 2 and underlines it twice.'
       }[g.f('costume')]}
@@ -59,13 +58,13 @@ Trial forty-four. You step through. The city stops. A moth hangs in Nik's headla
 
 Something's different tonight.
 
-Far off to the east, past the El, past Kensington, a shimmer hangs over the rooftops like heat off a road. But it's in the *Slip*, where heat shouldn't shimmer, where nothing should move at all. A smear in the stopped air, the size of a city block. Wavering. *Breathing.*
+Far off to the east, past the El, past Kensington, a shimmer hangs over the rooftops like heat off a road. But it's in the *Slip*, where heat shouldn't shimmer, where nothing should move at all. A smear in the stopped air, the size of a city block. Wavering.
 
 You stare at it until the pull takes you.
 
 !! ~WHUMP
 
-nik: Fifty-eight seconds. That's a record. Why are you looking at Kensington like that?
+nik: Three point nine on my end. Times fifteen, that's fifty-eight on yours. That's a record. Why are you looking at Kensington like that?
 
 When you look again, in the normal world, there's nothing there. Just the haze, and the El, and a sky the color of a dirty nickel.
 
@@ -77,7 +76,7 @@ nik: You're lying to me. You promised you wouldn't lie to me.
 
 sam: …I saw something. Over there. In the Slip. Something was *moving*.
 
-Nik looks east for a long time. Then he writes it down, very carefully, with the date and the time. Under it, in capital letters: **NOTHING SHOULD MOVE.**`,
+Nik looks east and doesn't say anything, which for Nik is a medical event. Then he writes it down with the date and the time. Under it, in capital letters: **NOTHING SHOULD MOVE.**`,
       next: 'titles'
     },
 
@@ -88,7 +87,7 @@ Nik looks east for a long time. Then he writes it down, very carefully, with the
       card: { kind: 'act', label: 'Act One', title: 'Heat Advisory' },
       loc: 'CARDONE HALL · 9TH FLOOR',
       clock: { day: 'Sat', date: 'Sep 5', time: '9:40 AM' },
-      enter: g => { g.know('kensington_shimmer', ['sam', 'nik'], 'In the Slip, something over Kensington was moving. Nothing should move in the Slip.'); },
+      enter: g => { g.sleep(7); g.know('kensington_shimmer', ['sam', 'nik'], 'In the Slip, something over Kensington was moving. Nothing should move in the Slip.'); },
       text: `Labor Day weekend. Excessive heat warning through Monday. One hundred and four degrees forecast for Saturday afternoon, the hottest September day in Philadelphia since they started keeping track, which the woman on 6abc says with the cheerful terror of a person who knows she'll be saying it again next year.
 
 The ninth floor is emptying like a bathtub.
@@ -107,7 +106,7 @@ Nik is behind her, frantically making a slicing motion across his throat.
 
 sam: …It's a physics thing. For extra credit. Very safe.
 
-She looks at you for a long time with those eyes that are going to remember your face forever.
+She looks at you the way she must look at Nik's report cards.
 
 MRS. BHATTACHARYA: Most days honest. Okay.
 
@@ -115,7 +114,7 @@ She hands you the cooler.
 
 MRS. BHATTACHARYA: Chicken biryani. Eat it before Monday or it will kill you.
 
-nik: *Ma.*
+nik: *Ma.* Ma, haan, haan, he'll eat it.
 
 At the door, Nik hugs you, fast and awkward, and says into your shoulder, very quietly:
 
@@ -172,7 +171,7 @@ Her phone buzzes again. **MOTHER**. She doesn't turn it over this time. She just
     a1_hub: {
       loc: 'SATURDAY · SEPTEMBER 5',
       clock: { time: '10:30 AM' },
-      text: `The heat sits on the city like a wet hand. By eleven, it's ninety-eight. PECO is texting everyone in North Philly to "conserve energy between 2 and 8 p.m." The Broad Street Line is running slow because the rails are expanding.
+      text: `The heat sits on the city like a wet hand. By eleven, it's ninety-eight. PECO is texting everyone in North Philly to "conserve energy between 2 and 8 p.m." The El is running slow because the rails are expanding.
 
 You have the day. Not all of it.`,
       hub: {
@@ -194,7 +193,7 @@ You have the day. Not all of it.`,
       enter: g => { g.money(14 * 4); },
       text: `The pizza oven is nine hundred degrees, the kitchen is a hundred and twelve, and Ciro is working in a white undershirt with a bag of frozen peas balanced on his head like a hat.
 
-ciro: Don't look at me. Deliver.
+ciro: Don't look at me. You look at me like a dead fish on ice. Deliver.
 
 Everybody in North Philly is ordering in. You ride through streets so hot the air above the asphalt wobbles. Old men sit on milk crates in the shade of rowhouse awnings with wet towels around their necks. Kids have opened a fire hydrant on Norris Street, and a cop in a squad car is pretending very hard not to see it. A woman on 17th Street tips you a cold can of Pepsi instead of money, and it's the best tip you've ever gotten.`,
       choices: [
@@ -237,8 +236,10 @@ He taps the flyer.
 
 femi: And they've got machines, right? Scanners. Real ones. Maybe their machines can see me even if nobody else can. Maybe they can *fix* it.`,
       choices: [
-        { text: '"Don\'t go, Femi. Swear to me. They\'re not studying people, they\'re making a list."', tag: 'Warn him',
-          check: { kind: 'move', move: 'Persuade', attr: 'heart', skill: 'persuade', label: 'Keep Femi away from Halcyon', on: { strong: 'a1_femi_warn_strong', weak: 'a1_femi_warn_weak', miss: 'a1_femi_warn_miss' } } },
+        { text: '"Don\'t go, Femi. Swear to me. They\'re not studying people, they\'re making a list." You have the receipts.', tag: 'Warn him', if: g => g.knows('halcyon_beds') || g.knows('halcyon_outreach'),
+          check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', bonus: 1, bonusLabel: 'You have proof', label: 'Keep Femi away from Halcyon', on: { strong: 'a1_femi_warn_strong', weak: 'a1_femi_warn_weak', miss: 'a1_femi_warn_miss' } } },
+        { text: '"Don\'t go, Femi. Swear to me. They\'re not studying people, they\'re making a list."', tag: 'Warn him', if: g => !(g.knows('halcyon_beds') || g.knows('halcyon_outreach')),
+          check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', label: 'Keep Femi away from Halcyon', on: { strong: 'a1_femi_warn_strong', weak: 'a1_femi_warn_weak', miss: 'a1_femi_warn_miss' } } },
         { text: 'Tell him. What you are. Why Halcyon wants people like you. Both of you.', tag: 'Tell Femi',
           fx: g => { g.flag('femi_told'); g.know('sam_slip', ['femi']); g.bond('femi', { trust: 3 }); g.flag('femi_warned', 'strong'); }, go: 'a1_femi_tell' },
         { text: '"I don\'t know, man. Maybe they can help." It\'s his life. His call.', tag: 'His call',
@@ -276,7 +277,7 @@ femi: I'll think about it. That's all I can do. I'll think about it.`,
       next: '@hub'
     },
     a1_femi_warn_miss: {
-      enter: g => { g.flag('femi_warned', 'none'); g.bond('femi', { tension: 1 }); },
+      enter: g => { g.flag('femi_warned', 'tried'); g.bond('femi', { tension: 1 }); },
       text: `sam: Don't go, Femi. They're making a list—
 
 femi: You don't *get* it. You walk into a room and people look at you. People laugh at your jokes. People *film* you, Sam. I'm writing my name on whiteboards so my own students know I'm in the room.
@@ -291,7 +292,7 @@ He puts the flyer on the desk and smooths it flat with both hands, very carefull
     a1_femi_tell: {
       text: `You lean on the desk and you tell him, low, while the library hums around you: the cold, the stopped rain, the Slip, the Wawa, the truck at Girard. That the polo-shirt man's looking for the Blur. That *you're* the Blur.
 
-Femi stares at you for a long time.
+Femi stares at you.
 
 femi: You're the *Broad Street Blur*.
 
@@ -343,7 +344,7 @@ Then it's quiet.
 ${g.knows('pop_jacket') ? 'You think about the back booth at the Melrose. The jacket. The eggs he didn\'t eat.' : ''} ${g.knows('pop_unknown_calls') ? 'You think about 215-555-4471.' : ''}`,
       choices: [
         { text: '"Pop. Who\'s the guy in the nice jacket? At the Melrose?"', if: g => g.knows('pop_jacket'),
-          check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'empathy', label: 'Get Pop to talk', on: { strong: 'a1_pop_strong', weak: 'a1_pop_weak', miss: 'a1_pop_miss' } } },
+          check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'empathy', label: 'Get Pop to talk', bonus: 1, bonusLabel: 'You saw the jacket', on: { strong: 'a1_pop_strong', weak: 'a1_pop_weak', miss: 'a1_pop_miss' } } },
         { text: '"Pop. Are you okay? Like, actually?"', if: g => !g.knows('pop_jacket'),
           check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', label: 'Get Pop to talk', on: { strong: 'a1_pop_strong', weak: 'a1_pop_weak', miss: 'a1_pop_miss' } } },
         { text: 'Let it be. This was good. Let it just be good.', tag: 'Let it be',
@@ -358,7 +359,7 @@ frank: I owe some people some money, kid.
 
 He says it so quietly you almost miss it.
 
-frank: Old money. From before you were born, almost. I thought it was done. It's not done. They bought it off the guy I owed it to. That's a thing that happens. They buy your… your *paper*. And now it's theirs.
+frank: Old money. Before you were born, almost. I thought it was done. Somebody bought the paper. Now it's theirs.
 
 sam: How much?
 
@@ -366,7 +367,7 @@ frank: It's handled.
 
 sam: Pop. How much?
 
-frank: It's *handled*, Sam. I'm driving nights. It's handled. Don't tell your mother. Don't tell your brother, he's a cop, he'll want to do something. There's nothing to do.
+frank: It's *handled*, kid. Don't tell your mother. Don't tell your brother. There's nothing to do.
 
 A long silence.
 
@@ -424,9 +425,9 @@ Nonna is on her stoop. She's not under an umbrella. She's wearing a cardigan.
 
 She watches you come down the block. She doesn't look surprised.
 
-nonna: You don't wait for Sunday. Good. Sunday is too late.
+nonna: Eh. You don't wait for Sunday. Good. Sunday is too late. *Madonna mia*, look at you. Skin and bone.
 
-She takes your face in both hands, the melon check. Her hands are cold. It's a hundred and two degrees.
+She takes your face in both hands and turns it to the light, the way she checks a cantaloupe at the Italian Market. Her hands are cold. It's a hundred and two degrees.
 
 nonna: Inside. Your mother is at Costco. We have one hour.
 
@@ -489,7 +490,7 @@ Nonna lets go of your wrist and picks up her coffee as if nothing happened.`,
 
 She looks back at you. She nods once, very slowly, like she's confirming a diagnosis she already knew.
 
-nonna: Okay. Okay. Then you listen to one thing. In the cold, you don't stay long. And if you ever see somebody else moving in there, somebody who shouldn't be, you *come out*. You don't talk to them. You come out.
+nonna: *Bene.* Then you listen to one thing. In the cold, you don't stay long. And if you ever see somebody else moving in there, somebody who shouldn't be, you *come out*. You don't talk to them. You come out.
 
 The front door opens. Ma's voice: *"Who's here? Is that Sammy?"*
 
@@ -526,7 +527,7 @@ It's 5:10. The order's for 8:00. The temperature on your phone says 103.`,
       choices: [
         { text: 'Go. Take the pizza. Whatever this is, Teddy said please.', tag: 'Go',
           fx: g => { g.flag('teddy_meet', 'go'); }, go: 'a2_port_richmond' },
-        { text: 'Don\'t go. He robbed an armored truck. He froze your arm. You don\'t owe him a pizza.', tag: 'Don\'t go',
+        { text: 'Don\'t go. He robbed an armored truck. You pulled the guard out of it yourself. You don\'t owe him a pizza.', tag: 'Don\'t go',
           fx: g => { g.flag('teddy_meet', 'no'); g.hidden('revenant_drift', -0.2); }, go: 'a2_no_go' }
       ]
     }

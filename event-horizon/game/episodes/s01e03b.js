@@ -9,7 +9,7 @@ EH.scenes('s01e03', {
 
 You knock soft.
 
-Teddy Kowal opens the door. No mask. Up close and in daylight he's twenty, freckled, sunburned across the nose, with tired eyes, a chipped front tooth, and the same Band-Aid on his knuckles. He looks at the pizza box. He looks at you.
+Teddy Kowal opens the door. No mask. Up close, under the porch light, he's twenty, freckled, sunburned across the nose, with tired eyes, a chipped front tooth, and a fresh Band-Aid on the same knuckles. He looks at the pizza box. He looks at you.
 
 teddy: You came.
 
@@ -61,7 +61,7 @@ Heck takes his hands out of the ice. The water in the tub is bubbling.
 
 heck: And Thursday, a gray van parks across from Bree's job. At the ShopRite on Aramingo. Two guys. They sit there all day. They don't buy nothing.
 
-teddy: I'm not asking you to like us. I know what we are. I'm asking you: have you seen them? Gray van. Polo shirts. Because if they took Marisol, they're coming for the rest of us. And I think you're at the top of their list, cold guy. You're on TV.`,
+teddy: Listen. I'm not asking you to like us. I know what we are. I'm asking you: have you seen them? Gray van. Polo shirts. Because if they took Marisol, they're coming for the rest of us. And I think you're at the top of their list, cold guy. You're on TV.`,
     choices: [
       { text: 'Tell him what you know: the name Brannigan, the beds, the RA bounty. Everything Halcyon.', tag: 'Share',
         fx: g => {
@@ -74,8 +74,8 @@ teddy: I'm not asking you to like us. I know what we are. I'm asking you: have y
         check: { kind: 'move', move: 'Hold the Line', attr: 'nerve', skill: 'persuade', label: 'Make Teddy stop', on: { strong: 'a2_pr_stop_strong', weak: 'a2_pr_stop_weak', miss: 'a2_pr_stop_miss' } },
         fx: g => g.flag('pr2', 'deal') },
       { text: '"I haven\'t seen anything." Keep it to yourself. You don\'t know these people.',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['teddy'], label: 'Lie to Teddy', on: { strong: 'a2_pr_lie', weak: 'a2_pr_lie', miss: 'a2_pr_lie_miss' } },
-        fx: g => g.flag('pr2', 'lied') }
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Teddy', on: { strong: 'a2_pr_lie', weak: 'a2_pr_lie', miss: 'a2_pr_lie_miss' } },
+        fx: g => { g.flag('pr2', 'lied'); g.bond('teddy', { trust: -1 }); } }
     ]
   },
   a2_pr_shared: {
@@ -175,7 +175,7 @@ teddy: In case you start seeing things.`,
 
 Bree laughs. Then, in your voice, perfect: *"I haven't seen anything."* She plays it again, slower, and in the slow version you can hear it: the tiny catch before *anything*, the breath of a lie.
 
-bree: That's a lie, cold guy. You lie in B-flat.
+bree: That's a lie, Wawa. You lie in B-flat.
 
 Teddy opens the front door.
 
@@ -192,7 +192,7 @@ He holds up his hands. The air above them wobbles.
 
 heck: If it gets bad, I don't know if I can turn it off.
 
-He goes back inside. ${g.f('teddy_number') ? 'You ride back across North Philly with Teddy\'s number in your pocket on a piece of cardboard that smells like pizza.' : 'You ride back across North Philly with nothing in your pocket but the smell of a stranger\'s kitchen.'} The sun's going down orange and swollen behind City Hall. It's still a hundred degrees.`,
+He goes back inside. ${g.f('teddy_number') ? 'You ride back across North Philly with Teddy\'s number in your pocket on a piece of cardboard that smells like pizza.' : 'You ride back across North Philly with nothing in your pocket but the smell of a stranger\'s kitchen.'} The sky over City Hall is dark already. It's still a hundred degrees.`,
     next: 'a2_blackout'
   },
   a2_no_go: {
@@ -258,14 +258,13 @@ sam: That's what she didn't say.`,
     night: true,
     loc: 'CARDONE HALL · ROOF',
     clock: { time: '10:05 PM' },
-    enter: g => { g.bond('jules', { tension: -1 }); },
     text: g => `${{ biryani: 'jules: Why do you have a cooler of biryani?\n\nsam: Nik\'s mom. She said eat it before Monday or it\'ll kill me.\n\njules: That\'s the most reasonable threat I\'ve heard all week.', highness: 'She looks at you for a long second.\n\njules: You\'re never going to stop.\n\nsam: Nope.\n\nShe walks past you into the stairwell. You could swear, in the flashlight, that she\'s almost smiling.', door: 'You hold the stairwell door. She looks at you, then at the dark stairs, then at you again. She goes up.' }[g.f('roof_why')]}
 
 The roof is gravel and tar and HVAC units, all dead. It's eighty-nine degrees up here, which feels like a mercy. And North Philadelphia is *gone*.
 
 Every streetlight, every window, every bodega sign, for half a mile in every direction, is dark. The city has been switched off around you. You can see stars, *actual stars*, three or four of them, which you've never seen from North Philly in your life. And to the south, Center City glows like a bonfire behind a hill, every tower lit, William Penn on top of City Hall in his little spotlight like he's onstage.
 
-Jules walks to the parapet and stands there for a long time with the hot wind pulling at her hair.
+Jules walks to the parapet and stands there with the hot wind pulling at her hair, long enough for you to count the stars twice.
 
 jules: It looks like that night.
 
@@ -310,9 +309,9 @@ jules: Like January. Like the chapel at Gran's house in January.
 
 She looks at you sideways.
 
-jules: You remember it too.
+jules: You remember it too. Right? Everyone does.
 
-It isn't a question.`,
+She says *everyone* like she's checking.`,
     next: 'a2_glow'
   },
   a2_roof_laugh: {
@@ -324,7 +323,7 @@ ${g.f('study2') === 'laugh' ? 'She already broke once this week.' : 'You\'ve bee
 
 She laughs.
 
-It isn't the shocked *ha*, and it isn't the swallowed thing she does behind her wrist. It's a real laugh, out loud, on a dark roof, with her head back against an HVAC unit and her eyes closed, and it goes on longer than the joke deserves, the way laughs do when somebody's been holding a lot of other things for a long time.
+It isn't the shocked *ha*, and it isn't the swallowed thing she does behind her wrist. It's a real laugh, out loud, on a dark roof, with her head back against an HVAC unit and her eyes closed, and it goes on longer than the joke deserves.
 
 When she stops, she wipes her eyes with the back of her wrist.
 
@@ -334,7 +333,7 @@ sam: You laughed for, like, a minute.
 
 jules: I'm *tired*, Kearney. I'm tired and it's a hundred degrees and Devontae is doing a podcast in an elevator.
 
-She looks at you. For once, she doesn't look away first.
+She's still smiling, and she's furious about it.
 
 jules: I hate that.
 
@@ -377,7 +376,7 @@ That's all. But she moves her hand on the gravel between you, a little, a few in
     clock: { time: '11:38 PM' },
     text: g => `At 11:38, the smoke starts.
 
-You see it first: a thin gray column rising against the bonfire glow of Center City, east of you and a little north. Then the color under it, an orange that flickers wrong. Then the sirens, three, four, five, all converging.
+You see it first: a thin gray column rising out of the dark to the north, a little west of Broad, black against the stars. Then the color under it, an orange that flickers wrong. Then the sirens, three, four, five, all converging.
 
 Jules stands up and goes to the parapet.
 
@@ -409,7 +408,7 @@ jules: What is it?`,
     night: true,
     loc: 'N. 15TH ST & W. LEHIGH AVE',
     clock: { time: '11:44 PM' },
-    enter: g => { if (g.f('leave') === 'lie') g.flag('jules_lied_roof'); },
+    enter: g => { if (g.f('leave') === 'lie') g.flag('jules_lied_roof'); g.pool('focus', -2); g.drift(1); g.mastery(2); ['teddy', 'bree', 'heck'].forEach(id => g.meet(id)); },
     text: g => `${{ lie: 'jules: Two minutes.\n\nShe says it flatly, still watching the fire. You go before she can look at you.', cant: 'She looks at you for a long moment. Something moves in her face.\n\njules: Go, then.\n\nShe doesn\'t ask. She turns back to the fire. You go.', stay: '' }[g.f('leave')]}
 
 ${{ hoodie: 'Down the stairs in the dark, nine flights. Black hoodie, gaiter up to your eyes, Pop\'s Eagles cap backward.', windbreaker: 'Down the stairs in the dark, nine flights. Ciro\'s windbreaker on, inside out, zipped to your chin, in a hundred degrees.', helmet: 'Down the stairs in the dark, nine flights. The helmet on, the visor down, the world gone amber.', none: 'Down the stairs in the dark, nine flights. No mask, no hood, no nothing. Just you.' }[g.f('costume')]} You come out the side door onto Broad, and you step through.
@@ -418,7 +417,7 @@ Ten blocks in the Slip. The burning city stopped around you, smoke hanging in fr
 
 You step back out on the corner of 15th and Lehigh, and the heat hits you like a door.
 
-It's a rowhouse block, narrow, both sides, with the El and the city behind it. The third house from the corner is *burning*, flames out of the first-floor windows and climbing, black smoke rolling up the brick. The house next to it has started to go. People are on the sidewalk in their underwear, screaming, filming, throwing buckets of water that turn to steam before they land.
+It's a rowhouse block, narrow, both sides, with Temple Hospital lit up on its generators ten blocks north, the only bright thing for a mile. The third house from the corner is *burning*, flames out of the first-floor windows and climbing, black smoke rolling up the brick. The house next to it has started to go. People are on the sidewalk in their underwear, screaming, filming, throwing buckets of water that turn to steam before they land.
 
 And in the middle of the street, standing in a puddle that's boiling around his bare feet: Heck.
 
@@ -449,10 +448,10 @@ You've got one Slip in you. Maybe two. You've got time to do one thing right.`,
   a3_stayed: {
     night: true,
     card: { kind: 'act', label: 'Act Three', title: 'Fifteenth Street' },
-    enter: g => { g.flag('fire', 'stayed'); g.know('let_fire_burn', ['sam'], 'You stayed on the roof while 15th & Lehigh burned.'); },
+    enter: g => { g.flag('fire', 'stayed'); g.flag('bree_taken'); g.know('bree_taken', ['sam', 'teddy', 'heck'], 'Halcyon took Bree Kowal at 15th & Lehigh the night you stayed on the roof.'); g.know('let_fire_burn', ['sam'], 'You stayed on the roof while 15th & Lehigh burned.'); },
     text: g => `You stay.
 
-You put your phone face down on the gravel and you stand at the parapet next to Jules and you watch the fire, and every cell in your body that came from Assunta DiNardo screams at you to *go*.
+You put your phone face down on the gravel and you stand at the parapet next to Jules and you watch the fire, and ${g.knows('assunta') ? 'every cell in your body that came from Assunta DiNardo' : 'every cell in your body, every fight you ever stepped into,'} screams at you to *go*.
 
 You don't go.
 
@@ -464,7 +463,7 @@ Later, you'll read about it in the Inquirer. A mother and a six-year-old boy, re
 
 And a girl named Bree Kowal, eighteen, of Port Richmond, reported missing by her family the next morning.
 
-You don't know any of that yet. Right now, all you know is that you're standing on a roof next to a girl who keeps glancing at you sideways, like she's waiting for something, and you're not doing the thing you were built to do.
+You don't know any of that yet. Right now, all you know is that Jules keeps glancing at you sideways, and you're not doing the thing you were built to do.
 
 jules: You wanted to go.
 
@@ -480,7 +479,7 @@ She doesn't push. She just says it, and lets it sit there in the hot dark betwee
     night: true,
     text: `You step through.
 
-The fire stops. It's the strangest thing you've ever seen: flame *frozen*, orange and gold and white, solid as glass sculpture, curling out of the windows in shapes like coral. The smoke is a gray ceiling you could almost touch. And it's *cold*, so cold that the frozen flames should be impossible, and they're not, they're right there.
+The fire stops. Flame hangs *frozen* out of the windows, orange and gold and white, solid as blown glass, curled like coral. The smoke is a gray ceiling you could almost touch. And it's *cold*. You're climbing toward a burning window, and your breath is fogging.
 
 You go up the front of the house. Not the stairs. The stairs are gone, a hole full of frozen fire. You go up the *outside*: the window ledge, the downspout, the second-floor sill, the brick gone soft and hot even in the Slip. Your fingers burn where they touch it.
 
@@ -489,7 +488,7 @@ Third floor. The window. The woman's face inches from yours through the glass, m
 The glass is the problem.`,
     choices: [
       { text: 'Break the glass. Carry them down one at a time. Every second you have.',
-        check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 3, power: true, label: 'Three trips down a burning wall', on: { crit: 'a3_family_clean', success: 'a3_family_clean', partial: 'a3_family_partial', fail: 'a3_family_fail', botch: 'a3_family_fail' } } },
+        check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 2, bonus: 1, bonusLabel: 'Frozen time', power: true, label: 'Three trips down a burning wall', on: { crit: 'a3_family_clean', success: 'a3_family_clean', partial: 'a3_family_partial', fail: 'a3_family_fail', botch: 'a3_family_fail' } } },
       { text: 'Don\'t climb. Think. Find another way down. The house next door. The roof.',
         check: { kind: 'd20', attr: 'wits', skill: 'investigate', dc: 13, label: 'See the way out', on: { crit: 'a3_family_clean', success: 'a3_family_clean', fail: 'a3_family_partial', fumble: 'a3_family_fail' } },
         fx: g => g.hidden('revenant_drift', -0.3) }
@@ -508,7 +507,7 @@ You set her down on the far curb next to her children.
 
 The world comes back. The house *roars*. The third-floor window you just emptied explodes outward in a ball of flame, right where they were standing.
 
-The woman on the curb looks at her children. Looks at the window. Looks at her own hands. She starts screaming then, the scream she started three floors up, finishing it on a sidewalk across the street, and the boy grabs her leg, and the baby wails, and they're alive. They're *alive*.
+The woman on the curb looks at her children. Looks at the window. Looks at her own hands. She starts screaming then, the scream she started three floors up, finishing it on a sidewalk across the street, and the boy grabs her leg, and the baby wails.
 
 Your nose is pouring. Your fingertips are blistered from the brick. You can't feel your arms.`,
     next: 'a3_rest'
@@ -531,7 +530,7 @@ Your hands are burned, both palms, blistered white. You don't feel it yet. You w
   },
   a3_family_fail: {
     night: true,
-    enter: g => { g.flag('family', 'fail'); g.drift(3); g.injure({ id: 'burned_hands', name: 'Burned hands', pen: 1, heal: 2, affects: ['body', 'reflex'] }); g.hidden('revenant_drift', 1); },
+    enter: g => { g.flag('family', 'fail'); g.drift(2); g.injure({ id: 'burned_hands', name: 'Burned hands', pen: 1, heal: 2, affects: ['body', 'reflex'] }); g.hidden('revenant_drift', 1); },
     text: `You get the boy. You get him down and onto the far curb, and you go back up, and your hands are blistering on the brick, and you get the baby, and you're halfway down when the pull takes you.
 
 !! ~WHUMP
@@ -544,7 +543,7 @@ You drop to the street. You put the baby in the arms of a neighbor in a bathrobe
 
 She's alive. She's burned on her arms and her back, and her hair is gone on one side, and she's alive.
 
-You should have been faster. You keep thinking it, over and over, like a song stuck in your head. *You should have been faster.*`,
+*You should have been faster.* You've thought that before. On Spring Garden, about a bus.`,
     next: 'a3_rest'
   },
 
@@ -576,7 +575,7 @@ Behind the van, one of the men in polos lowers his dart rifle. He looks at you, 
 
 Teddy takes his hand off the hood. The van backs away down Lehigh Avenue without its headlights and is gone.
 
-Up on the third floor, the window is full of fire. And then a ladder truck slews around the corner, and two firefighters are up it in seconds, and they bring the woman out, and the baby, and the boy, coughing, burned, black with smoke. *Alive.* The fire department got them. You didn't. You chose, and they got them anyway, and you'll never know whether they'd have made it in time if you hadn't chosen.`,
+Up on the third floor, the window is full of fire. And then a ladder truck slews around the corner, and two firefighters are up it in seconds, and they bring the woman out, and the baby, and the boy, coughing, burned, black with smoke. *Alive.* The fire department got them. You didn't. You'll never know if they needed you.`,
     next: 'a3_rest'
   },
   a3_heck_partial: {
@@ -623,7 +622,7 @@ The world comes back. The man ${g.f('van_did') === 'rifles' ? 'raises his rifle 
 
 Then he looks up. Right at you.
 
-You're standing ten feet from him, ${g.f('costume') === 'none' ? 'with your face bare in the light of the fire' : 'in your hood and your mask, in the light of the fire'}. He doesn't reach for anything. He just looks at you, calm, the way the tablet man did on Broad, the way you'd look at a deer that walked into your yard.
+You're standing ten feet from him, ${g.f('costume') === 'none' ? 'with your face bare in the light of the fire' : ({ hoodie: 'in your hood and gaiter', windbreaker: 'in Ciro\'s windbreaker, inside out', helmet: 'behind your helmet\'s visor' })[g.f('costume')] + ', in the light of the fire'}. He doesn't reach for anything. He just looks at you, calm, the way the tablet man did on Broad, the way you'd look at a deer that walked into your yard.
 
 POLO MAN: Easy, son.
 
@@ -654,9 +653,9 @@ He sits down in the street and puts his face in his burning hands and sobs, and 
       g.flag('number_was', !!g.f('teddy_number'));
       if (!g.f('teddy_number')) { g.flag('teddy_number'); g.know('teddy_number', ['sam', 'teddy'], 'Teddy wrote his number on the back of your hand. "They\'ll come back. When they do, I\'m calling you."'); }
       g.know('sam_number', ['sam', 'teddy', 'bree'], 'Teddy and Bree have your number.');
-      g.know('bree_scream', ['sam', 'bree', 'teddy', 'heck'], 'Bree heard something in the cold at 11:51:04 on the night of the Hitch, something from the sky, and her power keeps it. It sounds like a crowd and a whale and a clock going backward, and under it, laughing.');
+      g.know('bree_scream', ['sam', 'bree', 'teddy', 'heck'], 'Bree heard something in the cold at 11:51:04 on the night of the Hitch, something from the sky, and her power keeps it. It sounds like a crowd breathing and a clock running the wrong way, and under it, laughing.');
     },
-    text: g => `${g.f('fire') === 'family' ? 'You find out later what happened behind you while you were on the wall. Teddy did the only thing he could think of: he let go of the van and put his hand on Heck. And Heck *stopped*. Not cooled. Stopped, a glowing statue in the middle of 15th Street, his tears frozen mid-fall, and the men in polos couldn\'t touch him or move him, and after four minutes of trying they gave up and drove away. Teddy held on until the fire trucks came. His hand is burned from palm to wrist.\n\n' : ''}Afterward, in an alley off Lehigh, behind a shuttered laundromat, the four of you. Heck sitting on an overturned milk crate under a dripping AC unit someone's run a garden hose to, letting the water run over his head. Teddy pacing. Bree sitting on the curb with her knees pulled up to her chin, shaking, not from cold.
+    text: g => `${g.f('fire') === 'family' ? 'You find out later what happened behind you while you were on the wall. Teddy did the only thing he could think of: he let go of the van and put his hand on Heck. And Heck *stopped*. Not cooled. Stopped, a glowing statue in the middle of 15th Street, his tears frozen mid-fall, and the men in polos couldn\'t touch him or move him, and after four minutes of trying they gave up and drove away. Teddy held on until the fire trucks came. His hand is burned from palm to wrist.\n\n' : ''}Afterward, in an alley off Lehigh, behind a shuttered laundromat, the four of you. Heck sitting on an overturned milk crate under a garden hose somebody's fed out a back window, letting the water run over his head. Teddy pacing. Bree sitting on the curb with her knees pulled up to her chin, shaking, not from cold.
 
 The fire's out. The trucks are still there, pumping water into the black shell of the house, and the street's full of cops and neighbors and phones, and nobody's looking down this alley.
 
@@ -668,21 +667,21 @@ teddy: *Play it.*
 
 Bree looks at you. Her face is wet. When she speaks, it's in her own voice, very small.
 
-bree: That night. The Hitch. I was on the El platform at Allegheny. And I always hear everything. I don't mean I'm a good listener. I mean everything I hear, I keep. Forever. Every sound since I was a baby. I can play it back.
+bree: That night. The Hitch. I was on the El platform at Girard. Since that night, everything I hear, I keep. I don't mean I'm a good listener. I mean I keep it. Forever. Every horn, every word. I can play it back.
 
 She swallows.
 
-bree: At 11:51, when it got cold, I heard something. Not on the street. *Up.* From the sky. I've never told anybody but Teddy. I play it in my sleep. He hears me.
+bree: At 11:51, when it got cold, I heard something. Not on the street. *Up.* Over Kensington. I've never told anybody but Teddy. I play it in my sleep. He hears me.
 
 She closes her eyes and opens her mouth, and the sound comes out of her.
 
-It's not a voice. It's not anything you have a word for. It's like a stadium crowd, tens of thousands of people, heard from very far away and slowed down, and under it something enormous and low, like a whale singing in a language that runs backward, and under *that*, very faint, a clock, ticking, wrong, *tock-tick, tock-tick*. And under all of it, so faint you might be imagining it, so faint you'll lie awake trying to decide later:
+It isn't a voice. It's tens of thousands of people very far away, all drawing the same breath, slowed until the breath takes a minute. Under that, something so low you feel it in your fillings. Under that, a clock, *tock-tick, tock-tick*, running the wrong way around. Heck has been steaming all night. For as long as it plays, his breath comes out as fog. And under all of it, so faint you'll lie awake later deciding whether you heard it:
 
 Laughter.
 
-Not cruel laughter. *Delighted.* The way an audience laughs when the show gets good.
+Not cruel. *Delighted.* Someone very far up, leaning forward.
 
-Bree closes her mouth. The alley is silent except for the dripping AC.
+Bree closes her mouth. The alley is silent except for the hose.
 
 The hair is standing up on your arms. In a hundred degrees.
 
@@ -690,15 +689,15 @@ heck: *Dios.*
 
 teddy: She plays that in her sleep. Every night. I have to wake her up.
 
-He looks at you. He looks younger than you've ever seen him.
+He looks at you. Right now he looks about fifteen.
 
 teddy: What *is* that, cold guy?
 
-You don't know. You think about Nonna, at her kitchen window, telling you: *if you ever see somebody else moving in there, somebody who shouldn't be, you come out.*
+You don't know. ${g.knows('nonna_key') ? 'You think about Nonna, at her kitchen window, telling you: *if you ever see somebody else moving in there, somebody who shouldn\'t be, you come out.*' : 'You think about the cold, and how it\'s supposed to be empty.'}
 
 ${g.f('number_was') ? 'teddy: They\'ll come back. When they do, I\'m calling you.' : 'Teddy takes a Sharpie out of his pocket and writes his number on the back of your hand.\n\nteddy: They\'ll come back. When they do, I\'m calling you.'}
 
-You text him from the alley, right there, so he has yours: *its the cold guy.* His phone buzzes in his pocket. He doesn't look at it. He doesn't have to.`,
+You text him from the alley, right there, so he has yours: *its the cold guy.* His phone buzzes in his pocket. He doesn't look at it.`,
     next: 'a4_return'
   }
 });
