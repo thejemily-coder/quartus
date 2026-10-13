@@ -653,7 +653,7 @@
     },
     {
      "t": "a",
-     "text": "He sat outside a bathroom door for her once, on this floor, at one in the morning. Now she's written the door.",
+     "text": "He sat outside a bathroom door for her once, on this floor, close to midnight. Now she's written the door.",
      "if": {
       "e3_priya_night": "stayed"
      }
@@ -879,7 +879,7 @@
     },
     {
      "t": "a",
-     "text": "The second is a photo, from AUGIE (BUDDY): a typed list on Rho letterhead."
+     "text": "The second is a photo, from AUGIE (BUDDY), who typed his own number into Cal's phone at the smoker and named himself: a typed list on Rho letterhead."
     },
     {
      "t": "a",
@@ -916,6 +916,34 @@
      ],
      "if": {
       "e4_room": false
+     }
+    },
+    {
+     "t": "texts",
+     "thread": "AUGIE (BUDDY)",
+     "onCal": true,
+     "msgs": [
+      {
+       "from": "augie",
+       "text": "ur the only one who smiled at me thursday"
+      }
+     ],
+     "if": {
+      "e4_room": "marcus"
+     }
+    },
+    {
+     "t": "texts",
+     "thread": "AUGIE (BUDDY)",
+     "onCal": true,
+     "msgs": [
+      {
+       "from": "augie",
+       "text": "ur the only one who smiled at me thursday"
+      }
+     ],
+     "if": {
+      "e4_room": "hollis"
      }
     },
     {
@@ -1255,7 +1283,7 @@
        "t": "line",
        "who": "dutra",
        "name": "MR. DUTRA",
-       "text": "That's my father's hand. The stain line's mine. I was thirty-one."
+       "text": "That's my father's hand. The stain line's mine. I was thirty-six."
       },
       {
        "t": "line",
@@ -1383,7 +1411,7 @@
     },
     {
      "t": "a",
-     "text": "A chalkboard by the taps: LABOR DAY COOKOUT · MON 4PM · TOWN ONLY · (THAT MEANS YOU, HILL)."
+     "text": "A chalkboard by the taps: LABOR DAY COOKOUT · MON 4PM · TOWN ONLY · (THAT MEANS YOU, HILL). BRING ICE."
     },
     {
      "t": "a",
@@ -1541,9 +1569,19 @@
      "who": "regular",
      "name": "REGULAR",
      "paren": "from the end of the bar",
-     "text": "Hey! It's the kid who only swims toward money!",
+     "text": "Hey! It's the kid from the video! 'To my father, who couldn't be here!'",
      "if": {
-      "e2_swim": "joke"
+      "e1_toast": true
+     }
+    },
+    {
+     "t": "line",
+     "who": "regular",
+     "name": "REGULAR",
+     "paren": "from the end of the bar",
+     "text": "Hey! It's The Whitaker Problem! In the flesh!",
+     "if": {
+      "e1_toast": false
      }
     },
     {
@@ -1849,6 +1887,9 @@
      ],
      "set": {
       "e5_danny": "truth"
+     },
+     "if": {
+      "e1_fake_id": true
      }
     },
     {
@@ -1919,7 +1960,7 @@
     {
      "t": "line",
      "who": "gus",
-     "text": "Whitaker. Like the building, right? I've heard you say it. Everybody's heard you say it. You've got the jaw. Christ. Hang on.",
+     "text": "Whitaker. Like the building, right? I've seen the video. Everybody's seen the video. You've got the jaw. Christ. Hang on.",
      "if": {
       "e1_name": "full"
      }
@@ -1929,7 +1970,15 @@
      "who": "gus",
      "text": "Cal. Just Cal. Sure. And I'm just Gus. You've got the jaw, kid. Christ. Hang on.",
      "if": {
-      "e1_name": "just_cal"
+      "e1_name": "first"
+     }
+    },
+    {
+     "t": "line",
+     "who": "gus",
+     "text": "Cal. Just Cal. Sure. And I'm just Gus. You've got the jaw, kid. Christ. Hang on.",
+     "if": {
+      "e1_name": "pruitt"
      }
     },
     {
@@ -3050,6 +3099,66 @@
      }
     },
     {
+     "t": "line",
+     "who": "brooks",
+     "paren": "to the room",
+     "text": "Gentlemen. The swimmer. Went in after a hockey player on Thursday. The only legacy in this house who goes in after people.",
+     "if": {
+      "e2_dock": "refused",
+      "e4_dock": "dove"
+     }
+    },
+    {
+     "t": "line",
+     "who": "brooks",
+     "paren": "to the room",
+     "text": "Gentlemen. The legacy.",
+     "if": {
+      "e2_dock": "refused",
+      "e4_dock": "called"
+     }
+    },
+    {
+     "t": "line",
+     "who": "brooks",
+     "paren": "to the room",
+     "text": "Gentlemen. The legacy.",
+     "if": {
+      "e2_dock": "refused",
+      "e4_dock": "watched"
+     }
+    },
+    {
+     "t": "line",
+     "who": "brooks",
+     "paren": "to the room",
+     "text": "Gentlemen. The swimmer. Went in after a hockey player on Thursday. The only legacy in this house who goes in after people.",
+     "if": {
+      "e2_dock": "you_first",
+      "e4_dock": "dove"
+     }
+    },
+    {
+     "t": "line",
+     "who": "brooks",
+     "paren": "to the room",
+     "text": "Gentlemen. The legacy.",
+     "if": {
+      "e2_dock": "you_first",
+      "e4_dock": "called"
+     }
+    },
+    {
+     "t": "line",
+     "who": "brooks",
+     "paren": "to the room",
+     "text": "Gentlemen. The legacy.",
+     "if": {
+      "e2_dock": "you_first",
+      "e4_dock": "watched"
+     }
+    },
+    {
      "t": "a",
      "text": "It sticks instantly."
     },
@@ -3497,7 +3606,15 @@
        "who": "cal",
        "text": "My name is Cal. Cal Whitaker. I'm at Sigma Kappa Rho, 14 Elm Row, second floor. Eighteen-year-old male, alcohol. He's breathing about six times a minute. He's on his side.",
        "if": {
-        "e1_name": "just_cal"
+        "e1_name": "first"
+       }
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "My name is Cal. Cal Whitaker. I'm at Sigma Kappa Rho, 14 Elm Row, second floor. Eighteen-year-old male, alcohol. He's breathing about six times a minute. He's on his side.",
+       "if": {
+        "e1_name": "pruitt"
        }
       },
       {
@@ -3711,7 +3828,7 @@
     },
     {
      "t": "a",
-     "text": "Brotherhood is the people who carry you home. Cal hears it in Hollis's gentle voice, from the porch on Thursday. It isn't funny anymore."
+     "text": "Brotherhood is the people who carry you home. Cal hears it in Hollis's gentle voice, from the lawn on Thursday. It isn't funny anymore."
     }
    ],
    "next": "n12",
@@ -3909,6 +4026,20 @@
      "text": "Margaux turns the dealer's visor over and over in her fingers like a deck.",
      "if": {
       "e5_early": false
+     }
+    },
+    {
+     "t": "a",
+     "text": "Margaux turns the dealer's visor over and over in her fingers like a deck.",
+     "if": {
+      "e5_early": "asked"
+     }
+    },
+    {
+     "t": "a",
+     "text": "Margaux turns the dealer's visor over and over in her fingers like a deck.",
+     "if": {
+      "e5_early": "kiss"
      }
     },
     {
@@ -5006,7 +5137,26 @@
        "who": "cal",
        "text": "Seven minutes to the car. Twenty-three to the hospital. Nobody called from the house.",
        "if": {
-        "e5_augie": "drove"
+        "e5_augie": "drove",
+        "e5_drove": "called_car"
+       }
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Seven minutes to the car. Fifteen to the hospital. Nobody called from the house.",
+       "if": {
+        "e5_augie": "drove",
+        "e5_drove": "floored"
+       }
+      },
+      {
+       "t": "line",
+       "who": "cal",
+       "text": "Seven minutes to the car. Twenty-three to the hospital. Nobody called from the house.",
+       "if": {
+        "e5_augie": "drove",
+        "e5_drove": "talked"
        }
       },
       {
@@ -5138,7 +5288,7 @@
       {
        "t": "line",
        "who": "dev",
-       "text": "Tuesday. After Convocation. I'll tell you Tuesday."
+       "text": "Tuesday. Early. I'll tell you Tuesday."
       },
       {
        "t": "line",
@@ -5187,7 +5337,7 @@
       {
        "t": "line",
        "who": "dev",
-       "text": "Fourth floor. He hasn't come down since he got back."
+       "text": "Fourth floor. He came in before you did, in sunglasses, taking the stairs like he was carrying a tray. He hasn't come down since."
       },
       {
        "t": "a",
@@ -5568,7 +5718,7 @@
     },
     {
      "t": "a",
-     "text": "In the hallway Simon has stopped mid-sentence. He can hear the ringtone through the door, and somehow he knows exactly whose it is."
+     "text": "In the hallway Simon has stopped mid-sentence. He can hear the ringtone through the door."
     },
     {
      "t": "a",
@@ -5633,7 +5783,7 @@
        "t": "line",
        "who": "richard",
        "paren": "on the phone",
-       "text": "And you'll stop correcting Brooks in front of police officers. He was protecting you.",
+       "text": "Martin tells me you corrected Brooks in front of a police officer. Don't. He was protecting you.",
        "if": {
         "e5_called": "contradicted"
        }
@@ -5810,7 +5960,7 @@
        "t": "line",
        "who": "richard",
        "paren": "voicemail",
-       "text": "And you corrected Brooks in front of a police officer. He was protecting you. Don't do it again.",
+       "text": "Martin tells me you corrected Brooks in front of a police officer. He was protecting you. Don't do it again.",
        "if": {
         "e5_called": "contradicted"
        }
@@ -6165,7 +6315,24 @@
      "t": "a",
      "text": "Don't give them one. Twelve days old, and now it has a voice.",
      "if": {
-      "e1_dad": "promise"
+      "e1_dad": "promise",
+      "e5_dad_call": "answered"
+     }
+    },
+    {
+     "t": "a",
+     "text": "Don't give them one. Twelve days old, and now it has a voice.",
+     "if": {
+      "e1_dad": "promise",
+      "e5_dad_call": "rang"
+     }
+    },
+    {
+     "t": "a",
+     "text": "Don't give them one. Twelve days old, and now it has a read receipt.",
+     "if": {
+      "e1_dad": "promise",
+      "e5_dad_call": "declined"
      }
     },
     {
@@ -6523,14 +6690,14 @@
     },
     {
      "t": "a",
-     "text": "Nothing from Mill Street. Just the chalkboard behind Jess's bar, in his head: LABOR DAY COOKOUT · MON 4PM · TOWN ONLY · (THAT MEANS YOU, HILL). And the office door shutting, and the license face-down on the wood.",
+     "text": "Nothing from Mill Street. Just the chalkboard behind Jess's bar, in his head: LABOR DAY COOKOUT · MON 4PM · TOWN ONLY · (THAT MEANS YOU, HILL). BRING ICE. And the office door shutting, and the license face-down on the wood.",
      "if": {
       "e5_danny": "truth"
      }
     },
     {
      "t": "a",
-     "text": "Nothing from Mill Street. Just the chalkboard behind Jess's bar, in his head: LABOR DAY COOKOUT · MON 4PM · TOWN ONLY · (THAT MEANS YOU, HILL). And Danny's face, and the stack of nickels counted again from the start.",
+     "text": "Nothing from Mill Street. Just the chalkboard behind Jess's bar, in his head: LABOR DAY COOKOUT · MON 4PM · TOWN ONLY · (THAT MEANS YOU, HILL). BRING ICE. And Danny's face, and the stack of nickels counted again from the start.",
      "if": {
       "e5_danny": "silent"
      }
@@ -6596,7 +6763,7 @@
        "msgs": [
         {
          "from": "cal",
-         "text": "Can't. Tomorrow. Front row."
+         "text": "Can't. Tomorrow. Convocation."
         }
        ]
       },
@@ -6654,7 +6821,22 @@
       },
       {
        "t": "a",
-       "text": "Then, a minute later, a second text to Augie: Tell your mom I said hi. He doesn't know why he sends it. It's what a person would say."
+       "text": "Then, a minute later, a second text to Augie."
+      },
+      {
+       "t": "texts",
+       "thread": "AUGIE (BUDDY)",
+       "onCal": true,
+       "msgs": [
+        {
+         "from": "cal",
+         "text": "Tell your mom I said hi."
+        }
+       ]
+      },
+      {
+       "t": "a",
+       "text": "He doesn't know why he sends it. It's what a person would say."
       },
       {
        "t": "a",
@@ -7470,7 +7652,7 @@
     },
     {
      "t": "a",
-     "text": "A Kappa passing in the hall outside her door, to someone: 'Bookstore boy's on the roof again.'",
+     "text": "A Kappa passing in the hall outside her door, to someone: 'Bookstore boy's here for Vance.'",
      "if": {
       "e2_cold": "owned"
      }
@@ -8194,7 +8376,7 @@
       },
       {
        "t": "a",
-       "text": "On the drive back she doesn't speak for twenty minutes. Then, on Route 7, with the lake going by on the left, she says to the windshield:"
+       "text": "On the drive back she doesn't speak for twenty minutes. Then, on Route 7, with the lake going by on the right, she says to the windshield:"
       },
       {
        "t": "line",
@@ -8213,7 +8395,7 @@
    "blocks": [
     {
      "t": "slug",
-     "text": "INT. THE LINDQVIST TRUCK, ROUTE 7 / EXT. LOWELL HOUSE. DUSK (MON 5:30 P.M.)"
+     "text": "INT. THE LINDQVIST TRUCK, ROUTE 7 / EXT. LOWELL HOUSE. LATE AFTERNOON (MON 5:30 P.M.)"
     },
     {
      "t": "music",
@@ -8240,7 +8422,7 @@
     },
     {
      "t": "a",
-     "text": "On the left, the lake. They pass the turn for Elm Row, the Rho's roof through the trees, and Augie looks at it, and looks away, and looks at it."
+     "text": "On the right, the lake. They pass the turn for Elm Row, the Rho's roof through the trees, and Augie looks at it, and looks away, and looks at it."
     },
     {
      "t": "a",
@@ -8275,7 +8457,7 @@
     },
     {
      "t": "a",
-     "text": "Augie and Cal on the Lowell steps. Convocation chairs on the Quad in the dusk. The stage. The Commons steps. Augie's hands in the pockets of his gift-shop sweatpants."
+     "text": "Augie and Cal on the Lowell steps. Convocation chairs on the Quad in the low sun. The stage. The Commons steps. Augie's hands in the pockets of his gift-shop sweatpants."
     },
     {
      "t": "line",
@@ -8290,7 +8472,26 @@
      "who": "augie",
      "text": "You drove me. In Brooks's car. Tommy says you ran a light.",
      "if": {
-      "e5_augie": "drove"
+      "e5_augie": "drove",
+      "e5_drove": "floored"
+     }
+    },
+    {
+     "t": "line",
+     "who": "augie",
+     "text": "You drove me. In Brooks's car. Tommy says you drove like you were carrying eggs.",
+     "if": {
+      "e5_augie": "drove",
+      "e5_drove": "talked"
+     }
+    },
+    {
+     "t": "line",
+     "who": "augie",
+     "text": "You drove me. In Brooks's car. Tommy says you drove like you were carrying eggs.",
+     "if": {
+      "e5_augie": "drove",
+      "e5_drove": "called_car"
      }
     },
     {
@@ -8502,7 +8703,7 @@
     },
     {
      "t": "a",
-     "text": "Lowell at 7:30 on Labor Day. The floor half-empty. Light coming in sideways and gold."
+     "text": "Lowell at 7:30 on Labor Day. The floor half-empty. Last light coming in sideways and blue."
     },
     {
      "t": "a",
@@ -8567,7 +8768,7 @@
      "t": "line",
      "who": "priya",
      "paren": "knotting, lightly",
-     "text": "Fifty phones on Thursday and a roof today. Who IS she?",
+     "text": "Fifty phones on Thursday and then you vanish all afternoon. Who IS she?",
      "if": {
       "e5_monday": "margaux"
      }
@@ -9065,7 +9266,7 @@
     },
     {
      "t": "a",
-     "text": "Beside the Moleskine, out of his wallet for the first time, the cleaners ticket. Somewhere dry.",
+     "text": "Beside the Moleskine, out of his wallet again, the cleaners ticket. Somewhere dry.",
      "if": {
       "e5_cleaners": "showed"
      }
