@@ -29,7 +29,7 @@ sam: You\'re the Liberty Bell.
 
 jules: Something *else*.
 
-sam: You\'re from Gladwyne. You\'ve never been south of Washington Avenue. You went as the *Liberty Bell*.
+sam: You\'re from Gladwyne. Before September you\'d never been south of Washington Avenue. You went as the *Liberty Bell*.
 
 jules: I wanted to be something from here.
 
@@ -330,13 +330,13 @@ Your phone buzzes again. A long buzz this time. A call.
 
 You finally take it out of your pocket.
 
-It\'s 11:58. Eleven minutes. **4 missed messages. 1 missed call. FEMI.**`,
+It\'s 11:58. Eleven minutes. **1 missed call. FEMI.** And under it, the messages.`,
     enter: g => { g.flag('femi_dead_found'); },
     next: 'a2_kiss_phone'
   },
   a2_kiss_phone: {
     night: true,
-    text: `TXT femi: here
+    text: g => `${g.f('phone1') === 'ignored' ? 'TXT femi: sam\nTXT femi: i went. the residential thing. building 7 at the navy yard. i didnt tell you because i knew youd tell me not to\nTXT femi: i left. im walking. i saw something. can i come to you\n' : ''}TXT femi: here
 TXT femi: stairwell b. theres someone on the stairs below me
 TXT femi: sam theyre on the stairs
 TXT femi: im on 9. im at your door. please be home
@@ -452,7 +452,7 @@ Femi is still looking at you.
 
 In the stopped world, where nothing moves, where nobody has ever moved but you, his eyes are on yours. They don\'t move. But they\'re *on* you. And you understand, standing there in the cold with your breath smoking, that it\'s the same thing it always was: you can see him. Even here. Even now.
 
-You take the dart gun out of the older man\'s hand and throw it down the stairwell. You lift Femi out of the cart. He weighs nothing. ${g.f('unstick8') ? 'You turn to carry him up the stairs, and the cold gets *colder*, and you feel the ice start to close above you the way it did under 95, and you know, you *know*, that if you stay one more second you won\'t come out, and neither will he.\n\nYou pull. You come out on your knees.' : 'You carry him up six stairs to the ninth-floor landing and set him down against the wall, gently.\n\nYou step back out.'}
+You take the dart gun out of the older man\'s hand and throw it down the stairwell. You lift Femi out of the cart. He weighs nothing. ${g.f('unstick8') ? 'You turn to carry him up the stairs, and the cold gets *colder*, and you feel the ice start to close above you the way it did under 95, and you know, you *know*, that if you stay one more second you won\'t come out, and neither will he.\n\nYou get him up the six stairs, one at a time, with the ice closing over you. You pull. You come out on your knees on the landing.' : 'You carry him up six stairs to the ninth-floor landing and set him down against the wall, gently.\n\nYou step back out.'}
 
 The world comes back. The two men are holding nothing, standing over an empty cart, and when they look up and see you on the landing above them with Femi in your arms, the older one\'s face does something for the first time. It goes very still.
 
@@ -550,15 +550,15 @@ Simone kneels down on the concrete beside you in her Van Helsing coat. She looks
 
 simone: Who is he?
 
-sam: His name is Femi. He\'s the Calc LA. He\'s been in Wachman every day since August. He\'s a junior. Econ. His mom\'s in Lagos. He—
+sam: His name is Femi. He\'s the Calc LA. He\'s been in Wachman every day since August. Econ. He reshelves books at Charles. He has a sister. He—
 
 You stop. You can\'t.
 
-simone: I never saw him. I\'ve been in that building every day since August, and I never once saw him.
+simone: I never saw him. He was ten feet from me tonight, and I never once saw him.
 
 sam: Nobody did.
 
-Down the hallway, the elevator dings. Footsteps. Running. And then, behind you, in the doorway full of Blurs, in a dress the color of old bronze with a black crack painted down it, with your ${{ blur: 'hoodie', ghostbuster: 'hoodie', cabbie: 'father\'s jacket' }[g.f('costume8')]} around her shoulders, Jules.
+Above you, on the flight down from the roof, footsteps. Running. And then, at the turn of the stairs, in a dress the color of old bronze with a black crack painted down it, with your ${{ blur: 'hoodie', ghostbuster: 'hoodie', cabbie: 'father\'s jacket' }[g.f('costume8')]} around her shoulders, Jules.
 
 She looks at you. She looks at Femi. She doesn\'t say anything at all.
 
@@ -593,7 +593,7 @@ You don\'t remember kneeling. You\'re kneeling. You\'ve got his face in your han
 
 His fingernails are torn. The fingertips of his right hand are raw. Under the hem of his hoodie, through a neat slit somebody cut in his jeans, there are three small holes in his hip, deep, bruised black. On the side of his neck, a tiny puncture with a single bead of dried blood.
 
-*They took something out of him.* In the stairwell, where he texted from, where nobody goes. And then they carried him back out here and put him at your door. On purpose.
+*They took something out of him.* In the stairwell, where nobody goes. And then they let him go, and he got as far as your door. They let him. On purpose.
 
 You look up. And for the first time all night, the hallway sees him. All of them, at once. You watch it happen: the attention landing on him like a light switching on, a girl in a Barbie costume beside you looking down and seeing him, finally, now that there\'s nothing left in him for the eye to slide off, and screaming.
 

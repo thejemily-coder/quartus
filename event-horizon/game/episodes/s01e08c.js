@@ -194,12 +194,12 @@ Nik stops rocking.
 
 Nobody says anything for a long time.
 
-${g.f('kissed') ? 'Beside you, very quietly, so only you can hear, Jules says:\n\njules: I was kissing you.\n\nsam: I know.\n\njules: While he was— on the other side of the door— I was—\n\nsam: *I* was. Not you. Me. I didn\'t look at the phone.\n\nShe doesn\'t say anything. Her hand finds yours on the carpet. Her fingers are cold. She holds on.' : 'Beside you, Jules hasn\'t said anything in two hours. Her hand finds yours on the carpet. Her fingers are cold. She holds on.'}`,
+${g.f('kissed') ? 'Beside you, very quietly, so only you can hear, Jules says:\n\njules: I was kissing you.\n\nsam: I know.\n\njules: While he was— at your door— I was—\n\nsam: *I* was. Not you. Me. I didn\'t look at the phone.\n\nShe doesn\'t say anything. Her hand finds yours on the carpet. Her fingers are cold. She holds on.' : 'Beside you, Jules hasn\'t said anything in two hours. Her hand finds yours on the carpet. Her fingers are cold. She holds on.'}`,
     choices: [
-      { text: 'Let it come. Whatever it is. You haven\'t cried in front of anyone since graduation, in the car. Let it come.', tag: 'Break',
+      { text: 'Let it come. Whatever it is. You haven\'t cried since graduation, alone in the car. Let it come.', tag: 'Break',
         fx: g => { g.flag('grief', 'break'); g.bond('jules', { trust: 1, affection: 1 }); g.bond('nik', { trust: 2, affection: 2 }); g.bond('simone', { trust: 2, affection: 1 }); g.bond('grace', { trust: 2 }); g.hidden('revenant_drift', -1); }, go: 'a4_break' },
       { text: 'Stand up. "Room 714. Building 7. The Navy Yard. I\'m going. Tonight."', tag: 'Rage',
-        fx: g => { g.flag('grief', 'rage'); g.hidden('revenant_drift', 1); }, go: 'a4_rage' },
+        fx: g => { g.flag('grief', 'rage'); g.heat('simone', 1); g.hidden('revenant_drift', 1); }, go: 'a4_rage' },
       { text: 'Go quiet. Go all the way down, to the bottom, where nothing can reach you. Stay there.', tag: 'Numb',
         fx: g => { g.flag('grief', 'numb'); g.hidden('revenant_drift', 0.5); }, go: 'a4_numb' }
     ]
@@ -208,7 +208,7 @@ ${g.f('kissed') ? 'Beside you, very quietly, so only you can hear, Jules says:\n
     night: true,
     text: `You let it come.
 
-It comes up out of you like something that\'s been waiting since August. Since the bus. Since Carmen\'s hip. Since Heck\'s fists and the steel bed in the truck and your father on his knees on the gravel. Since every single person you didn\'t get to fast enough.
+It comes up out of you like something that\'s been waiting since August. Since the bus. Since Carmen\'s hip. Since Heck\'s fists and the dart in his neck and your father on his knees on the gravel. Since every single person you didn\'t get to fast enough.
 
 You cry on the floor of the ninth-floor lounge at four in the morning on All Saints' Day, in front of four people, and none of them look away.
 
@@ -237,7 +237,7 @@ nik: No.
 
 sam: Move, Nik.
 
-nik: *No.* Salvatore. You\'re on the *list*. You heard him. *They call you 17.* You walk into that building, and you\'re the next one in a laundry cart.
+nik: *No.* Salvatore. Whatever they did to him, they want to do to you. You walk into that building, and you\'re the next one in a laundry cart.
 
 sam: Move.
 
@@ -288,7 +288,7 @@ It\'s the only thing you can feel.`,
 
 It\'s cold. November cold, the real thing, not the Slip. The sky over the Delaware is going from gray to pale gold. Somebody\'s left a Solo cup on the parapet from last night, half full, with a skin of frost on it.
 
-${g.f('femi_pocket') || g.f('femi_end') === 'found' ? 'You take the sticky note out of your pocket. You unfold it. You read it again, in the first light, in Femi\'s small, neat, hurried handwriting.' : 'Grace gave it to you at five. She took it out of his hoodie pocket before the ME bagged him and pressed it into your hand without a word. You unfold it on the roof, in the first light.'}
+${g.f('femi_pocket') || g.f('femi_end') === 'found' ? 'You take the sticky note out of your pocket. You unfold it. You read it again, in the first light, in Femi\'s small, neat, hurried handwriting.' : 'Grace gave it to you at three, in the hallway, while Mikey was with the detectives. She took it out of his hoodie pocket before the ME bagged him and pressed it into your hand without a word. You unfold it on the roof, in the first light.'}
 
 *M.R. ALIVE. RM 714.*
 *THEY CALL YOU 17.*
@@ -297,7 +297,7 @@ Marisol is alive. And you have a number.
 
 *17.*
 
-You think about the APERTURE screen you saw through the glass on the night of the Hitch. *SUBJECT FIELD.* You think about Brannigan\'s tablet. A list of codes. You think about Femi\'s wristband. *031.* You think about how many other people in this city have a number they don\'t know about.
+You think about the APERTURE screen you saw through the glass on the night of the Hitch. *SUBJECT FIELD.* You think about Brannigan\'s tablet, and the way he looked at it instead of at people. You think about Femi\'s wristband. *031.* You think about how many other people in this city have a number they don\'t know about.
 
 You think: *they call you 17*, and you think about the fact that Femi knew that, that he *saw* it, on a screen or a file or a door, and he walked six miles in the dark to tell you, and you ${g.f('femi_end') === 'found' ? 'were on the roof' : 'were too late anyway'}.
 

@@ -67,7 +67,7 @@ BRANNIGAN: And have a car follow him up Broad. He didn\'t take a coat.`,
       card: { kind: 'act', label: 'Act One', title: 'Costumes' },
       loc: 'CARDONE HALL · 9TH FLOOR',
       clock: { day: 'Sat', date: 'Oct 31', time: '2:30 PM' },
-      enter: g => { g.sleep(7); g.know('mikey_pop_dinner', ['sam', 'mikey', 'frank', 'rosa'], 'Sunday Oct 25: Mikey asked Pop about Dante Iannucci at the table. Pop told him. Ma found out about the $41,000 that way. Nobody ate.'); },
+      enter: g => { g.sleep(7); g.know('mikey_pop_dinner', ['sam', 'mikey', 'frank', 'rosa'], 'Monday Oct 19: Mikey asked Pop about Dante Iannucci at the kitchen table. Pop told him, in front of Ma. At Sunday dinner on Oct 25, nobody ate.'); },
       text: g => `Halloween on the ninth floor of Cardone Hall is a war crime.
 
 There are fake cobwebs on every doorframe, a strobe light in the bathroom that Grace has confiscated twice and that keeps reappearing, a bowl of candy corn outside 9-06 that nobody touches because it\'s candy corn, and a sign-up sheet on the lounge door for the costume contest, judged by Grace, with a first prize of *one (1) uncontested shower slot, 7:30–7:45 a.m., for the rest of the semester*. It\'s the most valuable prize in the history of Temple University.
@@ -80,7 +80,7 @@ You stand in your doorway and watch a sophomore in a Ciro\'s shirt do a slow-mot
 
 It\'s the funniest thing that\'s happened to you in your entire life, and you can\'t tell anyone.
 
-${g.knows('mikey_pop_dinner') ? `It\'s been a strange two weeks. Last Sunday was Sunday dinner on Mifflin Street, and Mikey waited until the macaroni, and then he put his fork down and said, *Pop. Who\'s Dante Iannucci?* And Pop told him. All of it. At the table. In front of Ma.\n\nNobody ate. Ma didn\'t speak to Pop until Tuesday. Gigi texted you eleven times that night asking what *the debt* was. Nonna lit a candle the size of a hydrant and didn\'t say one word, which is how you know it\'s the worst thing that\'s happened in that house since 2009.\n\nMikey caught you on the stoop after. He said *look at me, Sammy*, and you looked at him, and he looked at you for a long time, and he didn\'t ask the second question. You don\'t know why. You think maybe he was scared of the answer. You think maybe you\'re both scared of the same thing.` : ''}
+${g.knows('mikey_pop_dinner') ? `It\'s been a strange two weeks. That Monday night, Mikey did what he said he would. He sat down across from Pop and said, *Pop. Who\'s Dante Iannucci?* And Pop told him. All of it. At the kitchen table. In front of Ma.\n\nMa didn\'t speak to Pop for three days. Gigi texted you eleven times that night asking what *the debt* was. Nonna lit a candle the size of a hydrant and didn\'t say one word, which is how you know it\'s the worst thing that\'s happened in that house since 2009.\n\nSunday, at dinner, nobody ate. Mikey caught you on the stoop after. He said *look at me, Sammy*, and you looked at him, and he looked at you for a long time, and he didn\'t ask the second question. You don\'t know why. You think maybe he was scared of the answer. You think maybe you\'re both scared of the same thing.` : ''}
 
 Behind you, Nik is in your room in a full Ghostbusters jumpsuit, which he ordered in August, and a proton pack made out of a vacuum cleaner and a shoebox, and he\'s been waiting for you to notice him for six minutes.
 
@@ -106,7 +106,7 @@ nik: What are *you* going as?`,
       text: g => `${{
         blur: 'nik: Oh, you *absolute* psychopath.\n\nsam: There are four of them on this floor. Five, now. Nobody\'s gonna look twice.\n\nnik: That\'s either the smartest thing you\'ve ever done or the stupidest, and I genuinely cannot tell.\n\nYou put on a green Ciro\'s shirt. Your *actual* green Ciro\'s shirt, with the grease stain on the hem from August. You tie a black bandana over your nose. You look in the mirror, and the Broad Street Blur looks back, and he looks exactly like every other drunk kid in North Philly tonight.\n\nIt\'s the safest you\'ve felt in months.',
         ghostbuster: 'nik: …Wait. Are you serious?\n\nsam: You bought me one. I know you bought me one.\n\nNik goes very quiet. Then he goes to his closet and takes out a second jumpsuit, still folded in its plastic bag, *STANTZ* on the name tag in his own handwriting.\n\nnik: I bought it in August. Before. I didn\'t know if we\'d still be friends by Halloween.\n\nsam: Nik.\n\nnik: Shut up. Put it on. You\'re Ray. Ray\'s the heart. It\'s very meaningful.\n\nYou put it on. It\'s too short in the legs. You don\'t care.',
-        cabbie: 'You took it from the hall closet on Mifflin Street on Sunday, when nobody was looking: Pop\'s old Liberty Cab jacket, green and yellow, from 1998, with *FRANK* on a patch over the heart. It smells like the inside of a cab. Like cigarettes and pine tree air freshener and coffee and him.\n\nnik: You\'re going as… a cab driver?\n\nsam: I\'m going as my dad.\n\nNik looks at you for a second. Then he nods, slowly, and doesn\'t make a single joke, which is how you know he understands.'
+        cabbie: 'You took it from the hall closet on Mifflin Street on Sunday, when nobody was looking: Pop\'s old Liberty Cab jacket, green and yellow, from 2001, with *FRANK* on a patch over the heart. It smells like the inside of a cab. Like cigarettes and pine tree air freshener and coffee and him.\n\nnik: You\'re going as… a cab driver?\n\nsam: I\'m going as my dad.\n\nNik looks at you for a second. Then he nods, slowly, and doesn\'t make a single joke, which is how you know he understands.'
       }[g.f('costume8')]}
 
 The day goes by in the way that Halloween days go by in a dorm: nobody does any work, everybody eats too much candy, and at five o\'clock Grace comes down the hallway in scrubs with a stethoscope and a clipboard, which is either her costume or her actual life, and nobody has the courage to ask.
@@ -124,7 +124,7 @@ You have a few hours before Simone\'s show at eight.`,
         slots: 2, label: 'Halloween afternoon',
         blurb: 'The show is at eight.',
         options: [
-          { id: 'hal_femi', text: 'Text Femi. You haven\'t seen him in Calc all week. Ask if he wants to come to the party. He\'d hate it. Ask anyway.', cost: 1, tag: 'Femi', go: 'a1_femi' },
+          { id: 'hal_femi', text: 'Text Femi. You haven\'t seen him in Calc in two weeks. Ask if he wants to come to the party. He\'d hate it. Ask anyway.', cost: 1, tag: 'Femi', go: 'a1_femi' },
           { id: 'hal_jules', text: 'Jules\'s door is closed. Simone said she\'s been "building something" since noon. Knock.', cost: 1, tag: 'Jules', go: 'a1_jules' },
           { id: 'hal_bree', text: 'Bree texted at noon: *halloween party in port richmond. heck is a pumpkin.* Call her back.', cost: 1, tag: 'Bree', go: 'a1_bree' },
           { id: 'hal_nap', text: 'Nap. You\'re tired all the way down. Two weeks of catching up isn\'t enough.', cost: 1, tag: 'Rest', go: 'a1_nap' }
@@ -198,7 +198,7 @@ The door closes. You stand in the hallway with that.`,
     },
 
     a1_bree: {
-      enter: g => { g.bond('bree', { trust: 1, affection: 1 }); g.bond('heck', { affection: 1 }); },
+      enter: g => { g.bond('bree', { trust: 1, affection: 1 }); g.bond('heck', { affection: 1 }); g.know('teddy_mother', ['sam']); },
       text: g => `She picks up on the first ring.
 
 bree: Wawa.
