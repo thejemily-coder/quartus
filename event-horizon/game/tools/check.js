@@ -74,7 +74,7 @@ for (const id of EH.order) {
     let S;
     if (BASE) { S = EH.clone(BASE); delete S.epStart; S.hubs = {}; S.hub = null; S.marked = {}; S.epLog = []; S.epRolls = []; delete S.pending; delete S.flags._failxp; S.pools.nerve = EH.maxPool(S, 'nerve') - (S.sleepDebt >= 6 ? 1 : 0); S.injuries = S.injuries.map(i => Object.assign({}, i, { heal: (i.heal || 1) - 1 })).filter(i => i.heal > 0); }
     else S = EH.newState();
-    S.ep = id; return S;
+    S.ep = id; EH.povEnter(S, ep); return S;
   };
   for (const [sid, s] of Object.entries(sc)) {
     let t = '';
@@ -108,7 +108,7 @@ for (const id of EH.order) {
           const o = opts[Math.floor(Math.random() * opts.length)];
           st.used.push(o.id); st.left -= (o.cost || 1); S.flags['did_' + o.id] = true; delete S.flags['skipped_' + o.id]; cur = o.go; continue;
         }
-        if (s.end) { ended++; endings[cur] = (endings[cur] || 0) + 1; if (ep.onEnd) ep.onEnd(g); break; }
+        if (s.end) { ended++; endings[cur] = (endings[cur] || 0) + 1; if (ep.onEnd) ep.onEnd(g); EH.povExit(S); break; }
         const list = (s.choices || []).filter(c => !c.if || c.if(g));
         if (!list.length) { if (!s.next) { stuck[cur] = (stuck[cur] || 0) + 1; break; } cur = typeof s.next === 'function' ? s.next(g) : s.next; continue; }
         const open = list.filter(c => {

@@ -302,23 +302,60 @@
   };
   EH.TIERS_FOR = { pool: ['crit', 'success', 'partial', 'fail', 'botch'], move: ['strong', 'weak', 'miss'], d20: ['crit', 'success', 'fail', 'fumble'] };
 
-  // Jules's hidden nudge (Season 1 rules).
+  // Jules's hidden nudge (Season 1 rules). In a Jules-POV episode, her luck never lets her lose:
+  // every unclean pool or move is nudged until it's clean, and each save adds to her hidden Debt.
   EH.tryNudge = function (S, c, res) {
-    if (!c.near || !c.near.includes('jules')) return false;
+    const pov = S.pov === 'jules';
+    if (!pov && (!c.near || !c.near.includes('jules'))) return false;
     if (EH.isClean(res.tier)) return false;
-    const jb = S.bonds.jules || { affection: 0, trust: 0 };
-    const luck = S.hidden.jules_luck + Math.max(0, jb.affection + jb.trust) * 0.01;
-    if (Math.random() >= luck) return false;
-    if (res.kind === 'pool') {
-      let idx = -1, lo = 99; res.dice.forEach((v, i) => { if (v < 7 && v < lo) { lo = v; idx = i; } });
-      if (idx < 0) return false;
-      res.dice[idx] = 10; const r2 = EH.scorePool(res.dice, res.diff); Object.assign(res, r2); res.gold = [idx];
-    } else if (res.kind === 'move') {
-      const idx = res.dice[0] <= res.dice[1] ? 0 : 1; res.dice[idx] = 6; const r2 = EH.scoreMove(res.dice, res.mod); Object.assign(res, r2); res.gold = [idx];
-    } else return false;
+    if (!pov) {
+      const jb = S.bonds.jules || { affection: 0, trust: 0 };
+      const luck = S.hidden.jules_luck + Math.max(0, jb.affection + jb.trust) * 0.01;
+      if (Math.random() >= luck) return false;
+    }
+    const gold = [];
+    const step = () => {
+      if (res.kind === 'pool') {
+        let idx = -1, lo = 99; res.dice.forEach((v, i) => { if (v < 7 && v < lo) { lo = v; idx = i; } });
+        if (idx < 0) return false;
+        res.dice[idx] = 10; Object.assign(res, EH.scorePool(res.dice, res.diff)); gold.push(idx); return true;
+      } else if (res.kind === 'move') {
+        const idx = res.dice[0] <= res.dice[1] ? 0 : 1; if (res.dice[idx] === 6) return false;
+        res.dice[idx] = 6; Object.assign(res, EH.scoreMove(res.dice, res.mod)); gold.push(idx); return true;
+      } else if (res.kind === 'd20' && pov) {
+        if (res.dice[0] === 20) return false;
+        res.dice[0] = 20; Object.assign(res, EH.scoreD20 ? EH.scoreD20(res.dice, res.mod, res.dc) : {}); gold.push(0); return true;
+      }
+      return false;
+    };
+    if (!step()) return false;
+    if (pov) { let n = 0; while (!EH.isClean(res.tier) && n++ < 6 && step()); S.hidden.jules_debt = (S.hidden.jules_debt || 0) + 1; }
+    res.gold = gold;
     S.hidden.nudges = (S.hidden.nudges || 0) + 1;
     res.nudged = true;
     return true;
+  };
+
+  /* ---------------- Point of view ---------------- */
+  EH.JULES_SHEET = {
+    attrs: { body: 2, reflex: 3, wits: 4, heart: 2, nerve: 3, charm: 4 },
+    skills: { athletics: 2, banter: 2, brawl: 0, cook: 0, empathy: 1, hustle: 3, intimidate: 1, investigate: 2, lie: 3, medicine: 1, parkour: 0, perform: 1, persuade: 2, ride: 0, stealth: 1, streetwise: 0, study: 3, tech: 1 }
+  };
+  // Swap Sam's sheet out for another character's for one episode. Sam's sheet is restored by povExit.
+  EH.povEnter = function (S, ep) {
+    if (!ep || !ep.pov || ep.pov === 'sam' || S.pov) return;
+    S.pov = ep.pov;
+    S.samSheet = EH.clone({ attrs: S.attrs, skills: S.skills, pools: S.pools, injuries: S.injuries, drift: S.drift, sleepDebt: S.sleepDebt, marked: S.marked });
+    const J = S.julesSheet || EH.JULES_SHEET;
+    S.attrs = EH.clone(J.attrs); S.skills = EH.clone(J.skills);
+    S.injuries = []; S.drift = 0; S.sleepDebt = 0; S.marked = {}; S.pools = {};
+    EH.refill(S, true);
+  };
+  EH.povExit = function (S) {
+    if (!S.pov || !S.samSheet) return;
+    S.julesSheet = { attrs: EH.clone(S.attrs), skills: EH.clone(S.skills) };
+    Object.assign(S, S.samSheet);
+    delete S.samSheet; delete S.pov;
   };
 
   /* ---------------- Text markup ---------------- */

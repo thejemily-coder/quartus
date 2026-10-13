@@ -235,6 +235,7 @@
     delete S.flags._failxp;
     if (!firstEp) S.injuries = S.injuries.map(i => Object.assign({}, i, { heal: (i.heal || 1) - 1 })).filter(i => i.heal > 0);
     S.pools.nerve = EH.maxPool(S, 'nerve') - (S.sleepDebt >= 6 ? 1 : 0);
+    EH.povEnter(S, ep);
     const snap = EH.clone(S); delete snap.epStart; S.epStart = snap;
     TRAIL = [];
     save();
@@ -601,7 +602,7 @@
     const finish = () => {
       showVerdict(wrap, c, res);
       const ft = $('#tft', wrap); ft.innerHTML = '';
-      const canRewind = c.kind === 'pool' && !res.rewound && !EH.isClean(res.tier) && EH.api(S).has('rewind') && S.pools.focus >= 3 && !c.noRewind;
+      const canRewind = c.kind === 'pool' && !res.rewound && !EH.isClean(res.tier) && EH.api(S).has('rewind') && S.pools.focus >= 3 && !c.noRewind && !S.pov;
       if (canRewind) {
         const rb = el('button', 'btn', '◀◀ Rewind · 3 Focus · +2 Drift');
         rb.onclick = () => { S.pools.focus -= 3; EH.api(S).drift(2); doRewind(wrap, c, res, m, cb, false, onRolled); };
@@ -694,6 +695,7 @@
       if (!S.done.includes(S.ep)) {
         g.xp(ep.xp ?? 3);
         if (ep.onEnd) ep.onEnd(g);
+        EH.povExit(S);
         const sum = summarize();
         S.eps[S.ep] = { title: ep.title, finished: new Date().toISOString(), summary: sum };
         S.done.push(S.ep);
@@ -799,7 +801,7 @@
   const bar = (v, max, cls) => '<div class="bar ' + (cls || '') + '"><span style="width:' + Math.max(0, Math.min(100, v / max * 100)) + '%"></span></div>';
   function drawSheet(b) {
     b.innerHTML =
-      '<div class="sec"><h4>Sam Kearney</h4><div class="mono" style="font-size:.74rem;color:var(--ink-soft)">18 · Temple University, undeclared · Cardone Hall 9-14 · Ciro\'s Pizza, delivery</div></div>' +
+      (S.pov === 'jules' ? '<div class="sec"><h4>Jules Pemberton</h4><div class="mono" style="font-size:.74rem;color:var(--ink-soft)">18 · Temple University, undeclared · Cardone Hall 9-11 · Gladwyne</div></div>' : '<div class="sec"><h4>Sam Kearney</h4><div class="mono" style="font-size:.74rem;color:var(--ink-soft)">18 · Temple University, undeclared · Cardone Hall 9-14 · Ciro\'s Pizza, delivery</div></div>') +
       '<div class="sec"><h4>Attributes</h4><div class="attrs">' + EH.ATTRS.map(k => '<div class="attr"><span class="n">' + EH.ATTR_NAMES[k] + '</span><span class="v">' + S.attrs[k] + '</span>' + dots5(S.attrs[k]) + '</div>').join('') + '</div></div>' +
       '<div class="sec"><h4>Pools</h4><div style="display:flex;flex-direction:column;gap:8px">' +
       ['stamina', 'focus', 'nerve'].map((p, i) => '<div class="meter"><div class="row"><span>' + p + '</span><span>' + S.pools[p] + ' / ' + EH.maxPool(S, p) + '</span></div>' + bar(S.pools[p], EH.maxPool(S, p), ['m', 'c', 'y'][i]) + '</div>').join('') +
