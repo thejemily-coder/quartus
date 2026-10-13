@@ -372,9 +372,8 @@ function castNow(){
   const cur = ep() || lastPlayedEp(); if(!cur) return [];
   const p = S.plays[cur.id];
   const seenNodes = new Set((p?.path||[]).map(x=>x.n));
-  const finished = p?.finished;
   const list = (cur.cast||[]).map(c=>({...c}));
-  for(const c of cur.castNew||[]) if(finished || seenNodes.has(c.node)) { const i = list.findIndex(x=>x.id===c.id); if(i>=0) list[i] = {...list[i], ...c}; else list.push({...c, firstSeen:labelOf(cur.id)}); }
+  for(const c of cur.castNew||[]) if(seenNodes.has(c.node)) { const i = list.findIndex(x=>x.id===c.id); if(i>=0) list[i] = {...list[i], ...c}; else list.push({...c, firstSeen:labelOf(cur.id)}); }
   return list;
 }
 function lastPlayedEp(){ const d = S.prog?.done||[]; return d.length ? S.eps[d[d.length-1]] : null; }
