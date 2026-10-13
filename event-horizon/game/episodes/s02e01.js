@@ -39,7 +39,7 @@ Brannigan nods slowly, like that\'s an interesting answer to a question he didn\
 
 BRANNIGAN: He does, doesn\'t he. He gets them a lot.
 
-He advances the footage one frame. The blue smear is gone. There\'s just the orange shape, kneeling, holding a small orange shape that\'s turning slowly from blue at the edges to orange, like a stove coil cooling backward.
+He advances the footage one frame. The blue smear is gone. There\'s just the orange shape, kneeling, holding a shape that\'s turning slowly from blue at the edges to orange, like a stove coil cooling backward.
 
 BRANNIGAN: In this frame, your brother is thirty-one degrees Fahrenheit. In the next, he\'s ninety-four. Do you have any idea how that happens, Officer?
 
@@ -68,7 +68,7 @@ He leaves. Mikey sits alone in the conference room, looking out the window at No
       card: { kind: 'act', label: 'Act One', title: 'Leftovers' },
       loc: 'MIFFLIN STREET · THE BATHROOM',
       clock: { day: 'Fri', date: 'Nov 27', time: '9:40 AM' },
-      text: g => `You wake up in your old bed under the glow-in-the-dark stars at nine-forty on the day after Thanksgiving, and your whole body hurts the way it hurt after you fell off the Brennans\' garage roof in fourth grade, a deep ache, in the bones, like you\'re older than you were yesterday.
+      text: g => `You wake up in your old bed under the glow-in-the-dark stars at nine-forty on the day after Thanksgiving, and your whole body hurts the way it hurt after you fell off the Brennans\' garage roof in fourth grade, a deep ache, in the bones.
 
 You go to the bathroom. You run the water. You look in the mirror over the sink.
 
@@ -76,9 +76,9 @@ There\'s a white hair at your left temple.
 
 Not gray. White. One. You pull it straight between two fingers and look at it in the light. It\'s the color of the frost on the Art Museum steps.
 
-You think about a man under a streetlight on Mifflin Street, gray at the temples, crying.
+${g.knows('revenant3') ? 'You think about the man Nonna saw under the streetlight at the end of Mifflin Street. Crying.' : 'You think about a man across Broad Street in the rain, with his finger to his lips.'}
 
-You think: *four minutes*.
+${g.f('unstick10') ? 'You think: *four minutes*.' : 'You think about the cold, and how much longer it holds you every time.'}
 
 You don\'t pull it out. You don\'t know why. You let it go and it curls back against your head, and you stand there, eighteen years old, with your hands on the sink.
 
@@ -108,7 +108,7 @@ gigi: You have an old-man hair.
 
 rosa: Gianna.
 
-gigi: He *does*. Look. Sammy, you have a grandpa hair.
+gigi: He *does*. Look. Sam. *Sam.* You have a grandpa hair.
 
 sam: It\'s from stress.
 
@@ -128,11 +128,11 @@ It\'s Bruno\'s card. Cream. Heavy. A name and a number.
 
 frank: You left this on the dresser.
 
-You didn\'t. It was in the pocket of your jeans. Which are on the floor of your room. Which means Ma went through your pockets this morning, the way she\'s gone through them every day you\'ve lived in this house, and gave it to Pop.
+${g.f('bruno10') === 'card' ? 'You didn\'t. It was in the pocket of your jeans. Which are on the floor of your room. Which means Ma went through your pockets this morning' : 'You didn\'t. You don\'t remember picking it up at all. Which means somebody did, and Ma went through your pockets this morning'}, the way she\'s gone through them every day you\'ve lived in this house, and gave it to Pop.
 
 ${g.f('bruno10') === 'card' ? 'frank: You picked it up. In front of your mother. In front of your sister. You put it in your pocket like a man taking a tip.' : 'frank: He left it on the tablecloth. Next to your hand. And you\'re gonna tell me you didn\'t pick it up after.'}
 
-He doesn\'t raise his voice. Pop never raises his voice. That\'s how you know how bad it is.
+He doesn\'t raise his voice. He never has.
 
 frank: Give it to me, kid.`,
       choices: [
@@ -177,7 +177,7 @@ sam: It\'s *our* house.
 
 The kitchen is very quiet. At the stove, Ma has stopped moving.
 
-Pop takes his hand off the table. He looks at you for a long time, like a man looking at a car he\'s owned for eighteen years and just now noticed has a second engine.
+Pop takes his hand off the table. He looks at your hands, then your face, like he\'s checking which one of you said it.
 
 frank: You don\'t know what those people are.
 
@@ -203,7 +203,7 @@ You say it all in a low voice, fast, so Gigi can\'t hear.
 
 Ma doesn\'t turn around from the stove. She doesn\'t make a sound. But she stops stirring.
 
-When you\'re done, Pop is quiet for a long time.
+When you\'re done, Pop is quiet.
 
 frank: I knew.
 
@@ -241,13 +241,13 @@ He turns his head and looks at your temple.
 
 mikey: What happened to your hair.
 
-sam: The four minutes.
+sam: ${g.f('unstick10') ? 'The four minutes.' : 'The cold.'}
 
 mikey: What does that mean.
 
 sam: I don\'t know. I think when I get stuck in there, I get older. A little. I don\'t know how much.
 
-He looks at the white hair for a long time.
+He looks at the white hair.
 
 mikey: Show me.
 
@@ -350,7 +350,7 @@ sam: I think if I go in too many more times, I don\'t come out. Or I come out ol
 
 You\'ve never said it out loud. Not to Nik. Not to anybody. It sounds worse out loud.
 
-Mikey puts the clementine down on the step between you, carefully, like it might go off.
+Mikey puts the clementine down on the step between you, carefully, stem up.
 
 mikey: Then don\'t.
 
@@ -358,7 +358,7 @@ sam: People were gonna die.
 
 mikey: People die, Sammy. I see \'em every week. I zip the bags. You know what I don\'t see every week? My brother.
 
-He puts his hand on the back of your neck.
+He knocks his knee into yours. Hard. On purpose.
 
 mikey: Then you find another way. You hear me? You find another way, or you call me, and we find it together. That\'s the deal now. That\'s the new deal.`,
       next: 'a1_mikey_end'
@@ -373,7 +373,7 @@ Mikey waits. Then he puts the clementine down between you.
 
 mikey: Okay. Okay, Sammy. It costs something. I got that much.
 
-He puts his hand on the back of your neck.
+He leans his shoulder into yours and leaves it there.
 
 mikey: Then don\'t do it for me. I don\'t need to see it. I believe you.`,
       next: 'a1_mikey_end'

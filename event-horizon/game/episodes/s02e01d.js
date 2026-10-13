@@ -17,7 +17,7 @@ Jules is back. She came back Sunday night. She texted you one word, from the sta
 
 TXT jules: Kearney.
 
-And when you opened your door she was standing there in her camel coat with the dart hole in it, which she hasn\'t had fixed, and she looked at your temple, at the white hair, for a long time, and didn\'t ask. She just put her hand on it.
+And when you opened your door she was standing there in her camel coat with the dart hole in it, which she hasn\'t had fixed, and she looked at your temple, at the white hair, and didn\'t ask. She just put her hand on it.
 
 Your Calc final is Thursday at eight a.m. You have Femi\'s green notebook. You have four days.
 
@@ -41,7 +41,7 @@ You have time for three things.`,
     enter: g => { g.flag('calc_study_s2'); },
     text: `You take Femi\'s notebook to the third floor of Charles Library and sit at the carrel next to the one with the sticky note. *THIS CARREL IS TAKEN · F.O.* Somebody has put a little plastic poinsettia on the desk under it.
 
-You do every problem. Limits. Derivatives. The chain rule, outside first. Related rates. Optimization: a farmer with 400 feet of fence who wants the biggest pen, a problem you\'ve gotten wrong eleven times since September.
+You do every problem. Limits. Derivatives. The chain rule, outside first. Related rates. Optimization: a farmer with 400 feet of fence who wants the biggest pen, a problem you\'ve gotten wrong every time since September.
 
 On the margin of the optimization page, in Femi\'s neat hand: *Sam, the trick is you set it up first. You always want to start solving before you know what you\'re solving. Set it up. Then solve.*
 
@@ -91,7 +91,7 @@ jules: I\'m not going to ask you now.
 
 sam: Okay.
 
-jules: I\'m going to Ravenscourt for the break. Christmas, and then New Year\'s, and then my grandmother has something she wants to tell me, she says, *when the year turns*. She\'s been saying it since Thanksgiving. She\'s very dramatic about it, for a woman who has never once been dramatic.
+jules: I\'m going to Ravenscourt for the break. Christmas, and then New Year\'s, and then my grandmother has something she wants to tell me, she says, *when the year turns*. She\'s been saying it since Thanksgiving. She\'s very dramatic about it, like a governess in a Brontë novel.
 
 She slides another card across. You look at it. It doesn\'t have a problem on it.
 
@@ -116,7 +116,7 @@ You knock on the open door.
 
 She stops. She doesn\'t lower the script.
 
-simone: Salvatore.
+simone: Salvatore Kearney.
 
 sam: I lied to you. In the theater. You gave me one chance and I lied, and you were right, and I\'m sorry. That\'s all. You don\'t have to say anything.`,
     choices: [
@@ -128,7 +128,7 @@ sam: I lied to you. In the theater. You gave me one chance and I lied, and you w
     enter: g => { g.flag('simone10', 'mended'); g.bond('simone', { trust: 3, respect: 2, affection: 1 }); },
     text: `You stand there. You don\'t say anything else. You let her decide.
 
-She looks at you over the script for a long time.
+She looks at you over the script.
 
 simone: That\'s two chances, Salvatore. I don\'t give two chances. Ask anybody in Decatur.
 
@@ -203,7 +203,7 @@ nik: That one\'s weird, right? Gladwyne? That\'s like four posts, total. From th
 
 He looks at you.
 
-nik: I don\'t know what any of it means. I just thought you should have it. I\'m the guy in the chair. The guy in the chair makes maps.`,
+nik: I don\'t know what any of it means. Okay, that\'s a lie, I have like four theories and three of them are bad and one of them is the plot of a Konami game. But you come home cold, bro. Since August. I\'m not stupid, I\'m just polite. So. I\'m the guy in the chair. The guy in the chair makes maps.`,
     next: '@hub'
   },
 
@@ -275,7 +275,7 @@ You finish. Barely.
 
 It\'s a pass. It\'s a C in Calculus at Temple University, and in August that would have been the best thing that ever happened to a Kearney.
 
-You look at your hand on Liacouras Walk. It\'s stopped shaking. You don\'t know what that was.`,
+You look at your hand on Liacouras Walk. It\'s stopped shaking.`,
     next: 'a4_roof'
   },
 
@@ -286,7 +286,7 @@ You look at your hand on Liacouras Walk. It\'s stopped shaking. You don\'t know 
     enter: g => { g.sleep(7); },
     text: g => `The last night before break. Everybody\'s gone but you and Jules. Her car comes at nine in the morning. Your Pop is picking you up at ten.
 
-It\'s snowing on the roof of Cardone Hall. Real snow, the first of the winter, big wet flakes coming out of an orange sky and landing on the parapet and not melting.
+It\'s snowing on the roof of Cardone Hall. Real snow this time, the kind that sticks, big wet flakes coming out of an orange sky and piling up on the parapet.
 
 She\'s standing at the parapet where she stood in September, in the camel coat with the dart hole, with snow in her hair.
 
@@ -304,9 +304,9 @@ jules: *What* I am. Not who. What.
 
 She puts her hand on the parapet in the snow.
 
-jules: Do you ever feel like you\'re in a story somebody else is telling? Like something is watching, and it likes what it sees, and that\'s worse than if it didn\'t?
+jules: Do you ever feel like something\'s been watching you your whole life? Not a person. Something that\'s pleased with you.
 
-You think about the dice of your life. The bus. The cold. The man on the steps with his finger to his lips.
+You think about the bus. The cold. The man on the steps with his finger to his lips.
 
 You think about a card in your own handwriting: *Don\'t trust the lucky one.*`,
     choices: [
@@ -327,17 +327,17 @@ jules: Really.
 
 sam: Really.
 
-She looks at you for a long moment. You can see her wanting to ask the next question. You can see her not asking it. *January.* A deal is a deal.
+She looks at you. You can see her wanting to ask the next question. You can see her not asking it. *January.* A deal is a deal.
 
-She takes your hand on the parapet in the snow. Her hand is cold. Yours is colder. Neither of you says anything about it.
+She takes your hand on the parapet in the snow. She flinches, just slightly, at how cold your hand is. She doesn\'t let go.
 
-jules: Then at least we\'re in the same one.`,
+jules: Then at least it\'s not just me.`,
     next: 'tag_bruno'
   },
   a4_roof_kiss: {
     text: `You don\'t answer. You kiss her.
 
-In the snow, on the roof, with the flakes landing on both of you and not melting, and her hands cold on your face, and the city orange and quiet and stopped below you like the Slip without the Slip.
+In the snow, on the roof, with the flakes landing on both of you, and her hands cold on your face, and the city orange and quiet below you, and nobody down there needing anything.
 
 When you pull back, she has snow in her eyelashes. She doesn\'t brush it away.
 
@@ -406,7 +406,7 @@ BRANNIGAN: My name is Cole Brannigan. I work for Halcyon Dynamics.
 
 BRUNO: I know who you work for.
 
-BRANNIGAN: Then I won\'t waste your time. You have something of ours. ${g.f('teddy_taken10') ? 'A young woman with a remarkable voice.' : 'Two of them, in fact. A young man named Kowal.'} And, as of Saturday, I believe, a third. A young man from Mifflin Street.
+BRANNIGAN: Then I won\'t waste your time. You have something of ours. ${g.f('teddy_taken10') ? 'A young woman with a remarkable voice.' : 'A young man named Kowal.'} And, as of Saturday, I believe, another. A young man from Mifflin Street.
 
 Bruno breaks a pizzelle in half.
 
@@ -418,7 +418,7 @@ He looks at the pizzelles.
 
 BRANNIGAN: Mr. Iannucci. You\'ve been in business in this city for fifty years. I\'ve been in business in this city for six months. I would very much like to learn from you. I would like us to have an *understanding*. I hear you\'re very good at those.
 
-Bruno studies him for a long time.
+Bruno studies him.
 
 BRUNO: Have a pizzelle, Mr. Brannigan.
 
@@ -430,7 +430,7 @@ Neither of them says another word. They sit across from each other in the empty 
 
 Gladwyne. Ravenscourt. The family chapel no one enters, at the end of a snowy path, with a light on in it.
 
-Inside, at the altar, an old woman in a fur coat with a cigarette she isn\'t allowed to smoke in a chapel rolls an ivory die on the stone.
+Inside, at the altar, an old woman in a fur coat, tomorrow\'s cigarette unlit between two fingers, rolls an ivory die on the stone.
 
 Six.
 

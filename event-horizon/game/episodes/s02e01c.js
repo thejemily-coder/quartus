@@ -72,7 +72,7 @@ teddy: This is the job, cold guy. This is what the job is.`,
         fx: g => { g.flag('job1', 'mercy'); g.flag('bruno_jobs_done', 0); g.bond('teddy', { tension: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_mercy' },
       { text: 'Don\'t say anything. Let Teddy do the job. Look at the photo of Krysia on the register the whole time.', tag: 'Let it happen',
         fx: g => { g.flag('job1', 'watched'); g.flag('bruno_jobs_done', 1); g.hidden('revenant_drift', 1); }, go: 'a3_watch' },
-      { text: 'Make up the difference yourself. Every dollar you have. And the rest out of next week\'s tips. Lie to Dante that Eddie paid in full.', tag: 'Pay it',
+      { text: 'Make up the difference yourself. Every dollar you have. And the rest out of next week\'s tips. Tell Dante the rest is coming, and cover it.', tag: 'Pay it',
         fx: g => { g.flag('job1', 'paid'); g.flag('bruno_jobs_done', 1); g.money(-Math.min(365, g.S.money.cash)); g.hidden('revenant_drift', 0.5); }, go: 'a3_paid' }
     ]
   },
@@ -103,8 +103,6 @@ He looks at you a second longer.
 
 teddy: You can\'t carry all of them, Sam.
 
-Somebody said that to you on the Parkway. In the cold. In your own voice.
-
 You don\'t say anything. Teddy goes out the door into the snow.
 
 Eddie is still holding his hands.
@@ -121,7 +119,7 @@ It\'s her pen. She lent it to you in October. You never gave it back.`,
 
 You stand by the jukebox with your hands in your pockets and you look at the photo on the register. Krysia in her Temple sweatshirt. The sunburn. The Phillies game.
 
-Eddie cries. He begs. He says *my kid* four times and *Christ* eleven. At nine minutes, he starts to scream, because his hands are going to sleep, and it doesn\'t feel like sleep. At twelve, he tells Teddy about the coffee can in the walk-in freezer.
+Eddie cries. He begs. He says *my kid* four times and *Christ* nine. At nine minutes, he starts to scream, because his hands are going to sleep, and it doesn\'t feel like sleep. At twelve, he tells Teddy about the coffee can in the walk-in freezer.
 
 There\'s fifty-nine hundred dollars in the coffee can. Rolled in rubber bands. Some of it in ones.
 
@@ -159,7 +157,7 @@ teddy: For a guy you don\'t know.
 
 sam: I know his kid. She lent me a pen.
 
-Teddy doesn\'t say anything for a long time. Then he takes his hand off the bar. The gray goes out of it, and Eddie stumbles back into the shelf of bottles, holding his hands to his chest.
+Teddy doesn\'t say anything. Then he takes his hand off the bar. The gray goes out of it, and Eddie stumbles back into the shelf of bottles, holding his hands to his chest.
 
 Teddy picks up the envelope. And your money. He puts them together in his coat.
 
@@ -183,7 +181,7 @@ You don\'t have an answer that you could say out loud. You go out after Teddy.`,
 
 Dante counts it in the dome light, fast, a bank teller\'s hands.
 
-${g.f('job1') === 'mercy' ? 'DANTE: Twenty-one hundred.\n\nHe looks up at you.\n\nDANTE: That\'s not eight.\n\nsam: That\'s what he had.\n\nDANTE: That\'s not how this works, Sam. You don\'t come back with what he *had*. You come back with what he *owes*.\n\nHe puts the envelope in his jacket.\n\nDANTE: It doesn\'t count. You understand? Your father\'s paper stays where it is. Grandpa\'s gonna be disappointed.\n\nHe rolls up the window. Through the glass, you see Vinnie\'s eyes in the rearview mirror. He looks at you for one second. Then the Escalade pulls away.' : g.f('job1') === 'watched' ? 'DANTE: Eight. Exactly eight.\n\nHe looks up at you, pleased.\n\nDANTE: See? You\'re a natural. Grandpa\'s gonna be happy. That\'s one.\n\nHe rolls up the window. Through the glass, you see Vinnie\'s eyes in the rearview mirror. He looks at you for one second, and then he looks away like he doesn\'t know you, and the Escalade pulls away down Girard.' : 'DANTE: Eight. Exactly eight.\n\nHe counts it again. Slower. He holds up a five-dollar bill to the dome light, a soft old one, folded down the middle the way a delivery guy folds his tips.\n\nDANTE: Huh.\n\nHe looks at you over the money for a long time.\n\nDANTE: That\'s one.\n\nHe rolls up the window. The Escalade pulls away down Girard.'}
+${g.f('job1') === 'mercy' ? 'DANTE: Twenty-one hundred.\n\nHe looks up at you.\n\nDANTE: That\'s not eight.\n\nsam: That\'s what he had.\n\nDANTE: That\'s not how this works, Sam. You don\'t come back with what he *had*. You come back with what he *owes*.\n\nHe puts the envelope in his jacket.\n\nDANTE: It doesn\'t count. You understand? Your father\'s paper stays where it is. Grandpa\'s gonna be disappointed.\n\nHe rolls up the window. Through the glass, you see Vinnie\'s eyes in the rearview mirror. He looks at you for one second. Then the Escalade pulls away.' : g.f('job1') === 'watched' ? 'DANTE: Eight. Exactly eight.\n\nHe looks up at you, pleased.\n\nDANTE: See? You\'re a natural. Grandpa\'s gonna be happy. That\'s one.\n\nHe rolls up the window. Through the glass, you see Vinnie\'s eyes in the rearview mirror. He looks at you for one second, and then he looks away like he doesn\'t know you, and the Escalade pulls away down Girard.' : 'DANTE: Twenty-four hundred and change.\n\nsam: Rest by New Year\'s. He\'s good for it.\n\nHe counts it again. Slower. He holds up a five-dollar bill to the dome light, a soft old one, folded down the middle the way a delivery guy folds his tips.\n\nDANTE: Huh.\n\nHe looks at you over the money.\n\nDANTE: That\'s one.\n\nHe rolls up the window. The Escalade pulls away down Girard.'}
 
 You stand on Girard Avenue at a quarter to three in the morning, in the snow.
 

@@ -8,7 +8,7 @@ EH.scenes('s02e01', {
     clock: { day: 'Sat', date: 'Nov 28', time: '2:00 PM' },
     text: g => `The Circolo Sant\'Agata is a storefront on a side street off East Passyunk with the windows painted green to shoulder height so nobody can see in. There\'s a hand-lettered sign in the door that says *MEMBERS ONLY*, and under it, smaller, *NO CREDIT CARDS*, and under that, smaller still, in different handwriting, *NO EAGLES TALK DURING BRISCOLA*.
 
-You walked past it a thousand times as a kid. You never once looked at the door.
+You walked past it a thousand times as a kid. You never looked at the door.
 
 Vinnie is leaning on the wall beside it in a black peacoat you\'ve never seen, smoking a cigarette he doesn\'t inhale.
 
@@ -18,7 +18,7 @@ sam: Vin.
 
 He looks at you. At your temple. He doesn\'t say anything about the hair.
 
-vinnie: You don\'t gotta go in there.
+vinnie: Yo. You don\'t gotta go in there, bol.
 
 sam: Yeah, I do.
 
@@ -62,11 +62,11 @@ BRUNO: Teodoro. Come say hello.
 
 A door at the back opens. ${g.f('teddy_taken10') ? 'It isn\'t Teddy. It\'s Bree, in a nice blouse, with her hair pulled back, carrying a tray with two more espressos on it. She looks at you and then at the floor.' : 'Teddy comes out carrying a tray with two more espressos on it.\n\nHe\'s wearing a pressed white shirt. His hair is cut. His knuckles have new Band-Aids on them. He puts an espresso in front of you and one in front of Bruno, and he doesn\'t look at you, and he goes back and stands against the wall next to Dante.'}
 
-${g.f('teddy_taken10') ? 'BRUNO: Your friend in the ambulance. The one who stops things. Halcyon has him. His cousin came to me on Saturday and asked me to get him back. I said I would try. In the meantime, she works for me. She has a very useful voice.' : 'BRUNO: His mother\'s evaluation at Jefferson costs forty thousand dollars. I paid it Tuesday. In cash. To a very surprised woman in Patient Accounts.\n\nBRUNO: Halina Kowal goes on the transplant list in January. Teodoro is very grateful. He works for me now.'}
+${g.f('teddy_taken10') ? 'BRUNO: Your friend in the ambulance. The one who stops things. Halcyon has him. His cousin came to me yesterday and asked me to get him back. I said I would try. In the meantime, she works for me. She has a very useful voice.' : 'BRUNO: His mother\'s evaluation at Jefferson costs forty thousand dollars. I paid it yesterday. In cash. To a very surprised woman in Patient Accounts.\n\nBRUNO: Halina Kowal goes on the transplant list in January. Teodoro is very grateful. He works for me now.'}
 
 You look at ${g.f('teddy_taken10') ? 'Bree' : 'Teddy'}. ${g.f('teddy_taken10') ? 'She won\'t look at you.' : 'He looks back at you, finally. His face doesn\'t do anything at all.'}
 
-${g.f('teddy_taken10') ? '' : 'You pulled him out of an ambulance on the Parkway. You got stuck in the cold for four minutes doing it. You came out with a white hair.\n\nAnd you saved him for this.'}
+${g.f('teddy_taken10') ? '' : 'You pulled him out of an ambulance on the Parkway. You went into the cold for him.\n\nAnd you saved him for this.'}
 
 Bruno spreads his hands.
 
@@ -99,7 +99,7 @@ BRUNO: That\'s the offer.`,
   a2_deal_accept: {
     text: `sam: Ten jobs. Then we\'re done. And you never call my father again. You never come to the house again. Not for Thanksgiving. Not for anything.
 
-Bruno looks at you for a long moment. Then he nods, slowly, and holds out his hand across the table.
+Bruno looks at you. Then he nods, slowly, and holds out his hand across the table.
 
 BRUNO: Done.
 
@@ -174,7 +174,7 @@ He reaches into his cardigan and takes out a phone, and turns it around, and sli
 
 It\'s a photo. A school bus stop on Passyunk Avenue, on a cold morning. A girl in a puffy coat with a pink backpack, thirteen, laughing at something on her phone, waiting for the bus to Saint Monica\'s.
 
-BRUNO: She has your face. Around the eyes. Very pretty girl.
+BRUNO: She has your face. Around the eyes.
 
 The cold comes up through the floor. You can feel the Slip, right there, under your skin, the easiest thing in the world.
 
@@ -210,7 +210,7 @@ vinnie: ${g.f('bruno_deal') === 'five' ? 'Five? He gave you *five*? He don\'t gi
 
 He looks at the empty fountain.
 
-vinnie: Teddy\'s been there two weeks. He don\'t talk. He just does what Dante says. He froze a guy\'s car to a fire hydrant on Snyder last Thursday with the guy in it, for like an hour, \'cause the guy was late on the vig. He didn\'t even look sorry. He just looked tired.
+vinnie: Teddy\'s been there since he got outta Jefferson. He don\'t talk. He just does what Dante says. He froze a guy\'s car to a fire hydrant on Snyder this morning with the guy in it, for like an hour, \'cause the guy was late on the vig. He didn\'t even look sorry. He just looked tired.
 
 sam: How long have you been in there, Vin?
 
@@ -222,11 +222,11 @@ vinnie: Since September. Since the Melrose. Since your pop. Dante said if I drov
 
 You stare at him.
 
-sam: You never told me.
+sam: You never told me that part.
 
 vinnie: You never asked. You were up at Temple. You were *busy*.
 
-He doesn\'t say it mean. That\'s the worst part. He just says it.
+He doesn\'t say it mean. He just says it.
 
 vinnie: Go home, Sally. Do your finals. Dante\'ll call.`,
     next: 'a3_pickup'
