@@ -12,7 +12,7 @@ The dining room table has both leaves in it and still isn't big enough, so the e
 
 ${g.f('did_sun_grace') ? 'Your sleeves are buttoned at the wrist. Grace\'s gauze is a soft lump under the left one.' : 'Your sleeves are buttoned at the wrist. Under the left one, nine stitches pull every time you reach for something.'}
 
-Jules sits between you and Gigi, across from Nonna. Nobody told her where to sit. Nonna pointed.
+Jules sits at the corner, at Nonna's right hand, with you beside her. Nobody told her where to sit. Nonna pointed.
 
 Before anybody eats, Nonna holds out her hands, one to Pop on her left and one across the corner of the table to Jules on her right, and the whole table joins hands, and Jules, after a half second, takes Nonna's hand and yours.
 
@@ -22,7 +22,7 @@ Nonna says grace in Italian, fast and low, the way she's said it every Sunday of
 
 She just stops, in the middle of a word, with her eyes closed. Her hand is still holding Jules's. The table waits. Pop opens one eye. Gigi opens both.
 
-Then Nonna finishes the prayer like nothing happened. *Amen.* She lets go of Jules's hand last, slowly, and looks at her across the table.
+Then Nonna finishes the prayer like nothing happened. *Amen.* She lets go of Jules's hand last, slowly, and looks at her.
 
 nonna: Your hands are cold.
 
@@ -30,9 +30,13 @@ jules: They always are, Mrs. DiNardo.
 
 nonna: Mine too. Since I was a girl.
 
-She picks up the bowl of rigatoni and hands it to Jules first. Before Pop. Before *Mikey*. The table notices. Mikey looks at you with his eyebrows all the way up. Ma very carefully doesn't look at anybody.
+She picks up the bowl of rigatoni and hands it to Jules first.
 
-And then it's Sunday dinner, the way it always is: everything at once, the rigatoni and the meatballs and the braciole tied with string and the sausage with fennel and the bread from Sarcone's, and everybody talking over everybody, Pop about the Birds' secondary, Mikey about a guy in his district who stole a whole ATM with a forklift, Ma about the Gallos' daughter's wedding, Gigi about a TikTok, and Nonna about none of it, eating slowly, watching Jules.
+nonna: Mangia. Too skinny, this one.
+
+ Before Pop. Before *Mikey*. The table notices. Mikey looks at you with his eyebrows all the way up. Ma very carefully doesn't look at anybody.
+
+And then it's Sunday dinner, the way it always is: everything at once, the rigatoni and the meatballs and the braciole tied with string and the sausage with fennel and the bread from Sarcone's, and the Eagles on in the front room with the sound off, and everybody talking over everybody, Pop about whether the Birds can run the ball, Mikey about a guy in his district who stole a whole ATM with a forklift, Ma about the Gallos' daughter's wedding, Gigi about a TikTok, and Nonna about none of it, eating slowly, watching Jules.
 
 Jules eats everything. She eats *seconds*. When Ma offers thirds, she says *I really couldn't*, and Ma puts thirds on her plate anyway, and she eats those too, slowly, with a kind of grim, polite determination, like a soldier.
 
@@ -72,7 +76,7 @@ mikey: It's not cool, Gige. That kid's gonna get somebody killed. Probably himse
 
 Beside you, Jules has stopped eating.
 
-You don't look at her. You can feel her not looking at you. She's very still, holding her fork, looking at Mikey, and you know exactly what she's doing, because you've seen her do it at a pool table: she's counting. *The fire. The night he left the movie. Kensington. The handprint. The black hoodie on the back of his desk chair.*
+You don't look at her. You can feel her not looking at you. She's very still, holding her fork, looking at Mikey, and you've seen that stillness before, at a pool table. She's counting.
 
 mikey: Brannigan says he thinks the kid's hurt. Says whoever carried a guy that hot that far, his arms are cooked.
 
@@ -104,7 +108,7 @@ sam: Witnesses in *Kensington*. At eleven at night. On *9/11*.
 
 Pop snorts into his wine. Mikey points his fork at you.
 
-mikey: You're a cynical little punk, you know that?
+mikey: You're a cynical little punk, Sammy, you know that?
 
 sam: I'm just saying, if I could carry a guy on fire, I'd be in the NFL.
 
@@ -125,7 +129,7 @@ He doesn't say anything. He just keeps eating braciole, slowly.
 
 And on your right, you feel Jules turn her head and look, for one second, at your buttoned cuff.
 
-Then she looks down at her plate again. Under the table, her knee is pressed against yours. You don't know when that started. You don't know if she knows.`,
+Then she looks down at her plate again and cuts a meatball into four exact quarters.`,
     next: 'a2_gigi'
   },
   a2_warn: {
@@ -151,13 +155,13 @@ mikey: You *know* him, Sammy.
 
 sam: I know *of* him. That's all. Just watch him. That's all I'm saying.
 
-Mikey looks at you for a long time. Then he picks the fork back up.
+Mikey looks at you the way he looks at guys in the back of the car. Then he picks the fork back up.
 
 mikey: Okay. I'll watch him. I'll watch everybody.
 
 He says it lightly. He's looking at your sleeve.
 
-Beside you, Jules hasn't said a word. Under the table, her knee is pressed against yours. You don't know when that started.`,
+Beside you, Jules hasn't said a word. She's cut her braciole into very small, very even pieces, and she isn't eating any of them.`,
     next: 'a2_gigi'
   },
   a2_bathroom: {
@@ -168,7 +172,7 @@ Beside you, Jules hasn't said a word. Under the table, her knee is pressed again
 
 Brannigan saw you at McPherson Square. He saw you carry Heck. He looked at you the way a man looks at a thing he's going to buy. And four days later, he walked into a police captain's office and asked for *your brother*.
 
-He knows. Or he's close enough to knowing that it doesn't matter. He's not hunting you. He doesn't need to. He's sitting at your family's dinner table, through Mikey, eating Ma's braciole.
+He knows. Or he's close enough to knowing that it doesn't matter. He's not hunting you. He's sitting at your family's dinner table, through Mikey, eating Ma's braciole.
 
 You run the cold water and hold your wrists under it until your heartbeat slows down.
 
@@ -177,9 +181,9 @@ When you come back down, everyone has moved on to the Gallos' wedding. Jules loo
   },
 
   a2_gigi: {
-    text: g => `Salad comes after. It always does. Jules doesn't understand why the salad comes *after*, and is too polite to ask, and you watch her not ask it for a full minute, which is the best thing that's happened all day.
+    text: g => `Salad comes after. It always does. Jules doesn't understand why the salad comes *after*, and is too polite to ask, and you watch her not ask it for a full minute, which almost makes up for the morning.
 
-And then Gigi, who has been staring at Jules for an hour with the uncomplicated adoration of a thirteen-year-old at a concert, puts her fork down, and says, very loud, in the voice she uses for maximum devastation:
+And then Gigi, who has been staring at Jules for an hour with the uncomplicated adoration she used to save for Jalen Hurts, puts her fork down, and says, very loud, in the voice she uses for maximum devastation:
 
 gigi: Are you Sam's girlfriend?
 
@@ -187,7 +191,7 @@ The table stops.
 
 Pop stops chewing. Mikey stops with the bread halfway to his mouth, delighted. Ma says *Gianna*. Nonna doesn't say anything. Nonna leans forward an inch.
 
-Jules looks at Gigi. Her face doesn't move. You've seen this face at the pool table. It's the face she makes before she does something perfect.`,
+Jules looks at Gigi. Her face doesn't move. You've seen this face in recitation, right before she corrects the TA. It's the face she makes before she does something perfect.`,
     choices: [
       { text: 'Save her. "Gige. Eat your salad. She\'s my calculus partner, and I\'m bad at calculus, and that\'s the whole story."', tag: 'Rescue',
         fx: g => { g.flag('gigi_q', 'rescue'); g.bond('jules', { trust: 1 }); }, go: 'a2_gigi_rescue' },
@@ -214,7 +218,7 @@ gigi: Really?
 
 jules: No. He's very bad at calculus.
 
-Gigi shrieks with joy. Pop laughs so hard he has to put his napkin over his face. Nonna, across the table, makes a small sound that you realize, with something like terror, is a *laugh*.
+Gigi shrieks with joy. Pop laughs so hard he has to put his napkin over his face. Nonna, at the head of the table, makes a small sound that you realize, with something like terror, is a *laugh*.
 
 Under the table, Jules's foot touches yours. Once. Then it's gone.`,
     next: 'a2_pop'
@@ -234,7 +238,7 @@ gigi: Oh.
 
 Gigi is so visibly crushed that Ma reaches over and pats her hand.
 
-jules: But your brother carried my refrigerator up nine flights of stairs on the first day of school without asking, and I was very rude to him about it, and he never once brought it up again.
+jules: But your brother carried my refrigerator up nine flights of stairs on the first day of school without asking, and I was very rude to him about it, and he has only brought it up since to call me *Your Highness*.
 
 She says it to Gigi. She doesn't look at you.
 
@@ -242,13 +246,13 @@ jules: So I don't know what that makes him. But it's not *nothing*.
 
 The table is silent.
 
-Nonna, across from her, picks up her wine glass, and drinks, and puts it down.
+Nonna, at the head of the table, picks up her wine glass, and drinks, and puts it down.
 
 nonna: Hm.
 
 ${g.f('roof_end') === 'lean' ? 'You think about a roof at 4:12 in the morning and a forehead against yours. *Not like this.* Not *no*.' : ''}
 
-Under the table, very briefly, Jules's knee presses against yours. Then it's gone.`,
+She picks her fork back up. She doesn't look at you for the rest of the salad.`,
     next: 'a2_pop'
   },
 
@@ -296,7 +300,7 @@ frank: Yeah. Okay. Okay. Friday. Thank you.
 
 *Thank you.*
 
-You get the bread and go back to the table before the vestibule door opens. When Pop sits down, he smiles at Jules and asks her if she follows the Eagles, and she says *I'm learning*, and he laughs, and his hand on his fork is perfectly steady, and you know now exactly where Mikey learned to lie with his whole face.`,
+You get the bread and go back to the table before the vestibule door opens. When Pop sits down, he smiles at Jules and asks her if she follows the Eagles, and she says *I'm learning*, and he laughs, and he cuts the same piece of braciole smaller and smaller and never eats any of it.`,
     next: 'a2_dessert'
   },
   a2_pop_seen: {
@@ -337,7 +341,7 @@ His food sits there. He doesn't touch it again. You remember Vinnie at the Melro
 
 And Vinnie.
 
-He comes in the front door without knocking, the way he's come into this house since kindergarten, yelling *Yo, Mrs. K!* and carrying a ricotta pie from his mother. But he looks different. You see it from across the room. New Jordans, the gray ones that cost two hundred dollars. A leather jacket, black, soft, *real*, the kind of jacket nobody from Local 57 can afford. A gold chain you've never seen.
+He comes in the front door without knocking, the way he's come into this house since kindergarten, yelling *Yo, Mrs. K!* and carrying a tray of his mother's pizzelles. But he looks different. You see it from across the room. New Jordans, the gray ones that cost two hundred dollars. A leather jacket, black, soft, *real*, the kind of jacket nobody from Local 57 can afford. A gold chain you've never seen.
 
 He kisses Ma. He kisses Nonna on both cheeks and calls her *Nonna* like she's his. He shakes Pop's hand, and Pop looks at the jacket for one second too long.
 
@@ -357,7 +361,7 @@ sam: Vin.
 
 vinnie: Three weeks. Four calls. You see 'em?
 
-You did see them. You let all four go to voicemail. One of them was the night of the Hitch. One was the night of the fire. You didn't listen to any of them.
+You did see them. You let all four go to voicemail. One of them was the night of the blackout. One was the night of Kensington. You didn't listen to any of them.
 
 vinnie: Come outside. I gotta show you something on my phone.
 
@@ -378,11 +382,11 @@ vinnie: So.
 
 sam: So.
 
-vinnie: So I got a new job.
+vinnie: Yo. So I got a new job.
 
 He holds out his arms, presenting the jacket, the chain, the Jordans.
 
-vinnie: Left the Local. I drive for a guy now. Pick up, drop off, wait in the car. Twelve hundred a week, Sally. *Cash*. My mom paid the PGW bill for the first time since my pop went inside. We got heat this winter. You know what that is?
+vinnie: Still at the Local, days. Nights, I drive for a guy. Pick up, drop off, wait in the car. Twelve hundred a week, Sally. *Cash*. My mom paid the PGW bill for the first time since my pop went inside. We got heat this winter. You know what that is?
 
 sam: What guy?
 
@@ -419,11 +423,11 @@ vinnie: What the hell is that?`,
     enter: g => { g.flag('vinnie5', 'lied'); g.bond('vinnie', { tension: 1 }); },
     text: `sam: Ciro's oven. I grabbed a pan without the towel.
 
-Vinnie looks at you a long time. He takes a drag.
+Vinnie takes a drag. He looks at the burns, not at you.
 
 vinnie: Okay.
 
-That's all he says. *Okay.* Like Jules. Like Grace. Like every person in your life who's started saying *okay* to you in that voice.
+That's all he says. *Okay.* The way Grace says it. The way everybody's started saying it to you.
 
 vinnie: Okay, Sally. You got your stuff. I got my stuff. That's how it is now, I guess.
 
@@ -431,7 +435,7 @@ He drops the cigarette and steps on it.
 
 vinnie: Just so you know. When you need me. And you're gonna need me. I'm gonna say *okay* too.
 
-He goes back inside. You hear him in the kitchen, loud, making Ma laugh, kissing Nonna goodbye. You stay in the alley a long time with your sleeves rolled up and the burns in the sun.`,
+He goes back inside. You hear him in the kitchen, loud, making Ma laugh, kissing Nonna goodbye. You stay in the alley with your sleeves rolled up and the burns in the sun.`,
     next: 'a4_stoop'
   },
   a3_v_called: {
@@ -446,7 +450,7 @@ vinnie: Don't *do* that. Don't do the ear. I've known you since you were five ye
 
 He steps closer. You're the same height. You have been since seventh grade.
 
-vinnie: I saw the guy on 6abc. The lady from the fire on Lehigh. *He called the baby the little guy.* You call every baby the little guy! You called *my brother* the little guy till he was nine!
+vinnie: I saw the lady from the fire on Lehigh on 6abc. *He called the baby the little guy.* You call every baby the little guy! You called *my brother* the little guy till he was nine!
 
 He's not loud. He's worse than loud. He's hurt.
 
@@ -479,7 +483,7 @@ Not all of it. Some of it you don't have words for yet. But you tell him about t
 
 Vinnie listens to the whole thing with the cigarette burning down in his fingers, forgotten, until it burns him and he swears and drops it.
 
-Then he doesn't say anything for a long time.
+Then he doesn't say anything at all, which for Vinnie is a medical event.
 
 vinnie: Show me.
 
@@ -599,6 +603,8 @@ Mrs. Gallo's window goes up.
 
 MRS. GALLO: *Vincenzo! Salvatore!* I'm calling your mothers!
 
+She is. Thirty feet away, through your kitchen screen, you hear the phone ring, and Ma pick up, and Ma say, *What alley?*
+
 You both stop. You're lying in coffee grounds. Vinnie's new jacket has a banana peel on it.
 
 You start laughing. You can't help it. After a second, so does he, lying on his back in the garbage, laughing at the sky.
@@ -623,7 +629,7 @@ He gets up. He doesn't help you up. He picks the banana peel off his jacket, and
 
 The alley stops. Vinnie's fist hangs in the air two feet from your face. A sparrow stops on the clothesline. The cigarette smoke stops in a gray ribbon from Vinnie's lips. ${g.f('nik_rule') ? 'Somewhere in the back of your head, Nik says *seven days*. You don\'t listen.' : ''}
 
-You walk around him. You stand behind him, at the other end of the alley, by the Gallos' back gate.
+You walk around him. You stand behind him, forty feet down, by the Gallos' back gate.
 
 You step back out.
 
@@ -645,7 +651,7 @@ He sits down on a trash can.
 
 vinnie: You stupid son of a bitch. You're gonna get yourself *killed*.
 
-He stays there a long time. When he finally talks again, it's quiet.
+He stays there until the sparrow comes back. When he finally talks again, it's quiet.
 
 vinnie: I'm not gonna stop driving for Dante. I can't. And now I know a thing about you that Dante would *pay* for. You get that? You just made me the most dangerous friend you got.
 

@@ -131,7 +131,7 @@ jules: The satisfaction of a good deed.
 
 sam: That's not a thing.
 
-jules: Then you get nothing, Kearney, and you do it anyway, because you would have said yes before I finished the sentence, and we both know it, and this negotiation is purely decorative.
+jules: Then you get nothing, Kearney. You'd have said yes before I finished the sentence. This negotiation is decorative.
 
 She's right. You were going to say yes before she knocked.
 
@@ -149,8 +149,6 @@ sam: Nothing. Don't bring anything. If you bring something, my mother will be in
 jules: That's not a real answer.
 
 sam: That's the *only* answer. That's South Philly.
-
-She considers this with the seriousness of a person studying a foreign constitution.
 
 jules: Noon?
 
@@ -182,7 +180,7 @@ Not dorm cold. *Slip* cold. January cold, the bottom-of-the-pool cold, and your 
 
 You're on the roof.
 
-You're on the roof of Cardone Hall, lying on the tar paper next to the HVAC unit where you sat with Jules three weeks ago, in your Phanatic pants and bare feet, and there's frost on your feet. Actual frost. White, feathery, on the tops of your toes, melting as you watch.
+You're on the roof of Cardone Hall, lying on the tar paper next to the HVAC unit where you sat with Jules two weeks ago, in your Phanatic pants and bare feet, and there's frost on your feet. Actual frost. White, feathery, on the tops of your toes, melting as you watch.
 
 It's sixty-one degrees out.
 
@@ -194,7 +192,7 @@ You didn't go up here. You didn't time anything. You went to bed.
 
 ${g.knows('lost_minutes') ? 'The last time this happened, it was Ridge Avenue, and it was twenty-one minutes. This time it\'s twenty-six.' : 'You have no idea what happened in those twenty-six minutes. Neither does anyone.'}
 
-The seagull leaves. You sit there a long time with your knees pulled up, waiting for your feet to feel like feet, watching the sun come up gray over the Delaware, and you think: *it's getting worse.* You don't know what *it* is. You just know it's getting worse, the way you know a tooth is going bad before the dentist does.
+The seagull leaves. You sit there with your knees pulled up, waiting for your feet to feel like feet, watching the sun come up gray over the Delaware, and you think: *it's getting worse.* You don't know what *it* is. You just know it's getting worse, the way you know a tooth is going bad before the dentist does.
 
 Then you remember what day it is, and who's coming to dinner, and you say a word out loud that you would never say in front of Nonna.`,
       next: 'a1_hub'
@@ -231,7 +229,7 @@ nik: You *timed* it.
 
 sam: I didn't time anything. I was asleep.
 
-nik: Something timed it. Something opened my stopwatch app at, what, 5:48 a.m., and pressed *start*, and then pressed *stop* at 6:14, and the something was holding *your phone*, with *your thumb*.
+nik: Your phone opened my stopwatch at 5:48 a.m. and stopped it at 6:14. With *your* thumb. You timed yourself, Sam. In your *sleep*.
 
 He goes very quiet. For Nik, that's an alarm going off.
 
@@ -275,7 +273,7 @@ grace: This is what a cut looks like at four weeks. Maybe five. I've seen it in 
 
 She holds your arm up to the window light and turns it slowly, the way she turned the x-ray film.
 
-grace: I'm going to say this once, and then I'm going to go back to sleep and pretend I dreamed it. Whatever is happening to you, it's not stopping. Your body's doing *something*. It's doing it faster than a body is supposed to do anything. I don't know what it costs. But nothing's free, Sam. Nothing in *biology* is free.
+grace: I'm going to say this once, and then I'm going to go back to sleep and pretend I dreamed it. Whatever is happening to you, it's not stopping. Healing costs calories, protein, cell divisions. Yours is running a tab. Nothing in biology is free, Sam.
 
 She rubs Silvadene into the new pink skin on your arms, gently, with two fingers, and wraps it in fresh gauze, and pats it twice.
 
@@ -350,7 +348,7 @@ TXT femi: man
 TXT femi: i know youre trying. but youve got a whole life where people see you. let me have this one thing where somebody sees me
 TXT femi: ill text you after
 
-He doesn't text anything else. Neither do you.`,
+He doesn't text anything else. You start four replies and send none of them.`,
       next: '@hub'
     },
     a1_femi_text: {
@@ -384,7 +382,7 @@ teddy: Listen.
 
 sam: I'm listening.
 
-teddy: Two things. One. My mom needs a kidney. Jefferson wants forty grand before they'll put her on the list. That's what the truck was. I'm telling you because you carried my best friend across a park on fire, and I figure that buys you the truth.
+teddy: Two things. One. My mom needs a kidney. Jefferson wants forty grand before they'll put her on the list. That's what the truck was. I'm telling you because you carried my best friend across McPherson Square while he was on fire, and I figure that buys you the truth.
 
 sam: Teddy—
 
@@ -432,7 +430,7 @@ She's wearing a dark green dress with long sleeves and a cardigan over it and sm
 
 sam: What's in the box?
 
-jules: Cannoli. From Termini Brothers, on Eighth Street. I read that it's the correct bakery. There's a *Philadelphia Magazine* list.
+jules: Cannoli. From Termini Brothers. Mr. Abernathy drove down to Eighth Street at eight this morning. I read that it's the correct bakery. There's a *Philadelphia Magazine* list.
 
 You look at the box. You think about your grandmother, who has been making cannoli shells by hand on the last Sunday of every month since the Johnson administration, and who once didn't speak to her sister-in-law for two years over a ricotta.
 
@@ -457,7 +455,7 @@ jules: You said bring nothing. I couldn't bring nothing. I *physically* couldn't
 
 Mr. Abernathy drives down Broad Street the way he must have driven Jules everywhere her whole life: smoothly, silently, never once going over the limit, while the whole city honks around him like a river around a rock.
 
-You go past City Hall, past the Kimmel Center, past the Academy of Music. Past Washington Avenue, where Broad Street starts being *yours*, where the bakeries and the funeral homes and the Mummers clubs start, where the rowhouses close in and get shorter and the American flags and the Italian flags and the Eagles flags hang off the same porches.
+You go past City Hall, past the Academy of Music, past the Kimmel Center. Past Washington Avenue, where Broad Street starts being *yours*, where the bakeries and the funeral homes and the social clubs start, where the rowhouses close in and get shorter and the American flags and the Italian flags and the Eagles flags hang off the same porches.
 
 Jules looks out the window the whole way. She doesn't say anything. But she looks at all of it, *all* of it, the old men on lawn chairs and the girl selling water ice out of a cooler on the corner of Tasker and the shrine to the Virgin Mary in somebody's front window surrounded by Christmas lights in September, and she looks like somebody seeing the ocean for the first time and trying to act like she's seen it before.
 
@@ -483,7 +481,7 @@ Mr. Abernathy turns onto Mifflin Street, and every head on every stoop turns to 
       enter: g => { g.meet('rosa'); g.meet('frank'); g.meet('gigi'); g.meet('mikey'); g.meet('nonna'); g.know('jules_mifflin', ['sam', 'jules', 'rosa', 'frank', 'gigi', 'mikey', 'nonna'], 'Jules came to Sunday dinner on Mifflin Street.'); },
       text: `Gigi is on the stoop.
 
-Of course Gigi is on the stoop. Gigi has been on the stoop, you will learn later, since 11:15, in her good jeans and a sweatshirt that says **NEUMANN-GORETTI SAINTS**, looking up the street every thirty seconds. When the Range Rover stops, she stands up so fast she knocks over Nonna's potted basil.
+Of course Gigi is on the stoop. Gigi has been on the stoop, since 11:15, judging by the sunflower-seed shells, in her good jeans and a sweatshirt that says **NEUMANN-GORETTI SAINTS**, looking up the street every thirty seconds. When the Range Rover stops, she stands up so fast she knocks over Nonna's potted basil.
 
 gigi: SAMMMMMM.
 
@@ -501,7 +499,7 @@ gigi: …You can call me Gianna.
 
 And then the whole house comes out at once. That's the only way it ever happens on Mifflin Street: nobody comes out alone. Ma first, wiping her hands on a dish towel, in her church dress with an apron over it. Pop behind her, in a pressed shirt, which means he ironed it, which means he knew company was coming, which means Ma knew. Mikey last, leaning in the doorway in an Eagles jersey with his arms crossed, wearing the face he wore when you brought Kristen Lombardo to the eighth-grade dance.
 
-And Nonna, at her own front door next door, on her own top step, in black, watching.
+And Nonna, at her own front door three houses down, on her own top step, in black, watching.
 
 rosa: Salvatore. You didn't tell me you were bringing somebody.
 
@@ -526,9 +524,9 @@ Jules holds out the white box.`,
     },
     a1_cannoli: {
       text: g => `${{
-        ma: 'jules: Mrs. Kearney. These are for you. Thank you for having me.\n\nYour mother takes the box and reads the string, red and white, and the stamp on top, **TERMINI BROS. BAKERY**, and looks at Jules like she\'s just been handed a newborn.\n\nrosa: *Termini.* Oh, you didn\'t have to. Oh, *Frank*. Look. She went to *Termini\'s*.\n\nShe holds the box up over her head so Nonna can see it from next door. A diplomatic act. Nonna, on her step, looks at the box. Then at Jules. Then at you.\n\nnonna: Hm.\n\nBut it\'s a *good* hm. It\'s the hm of an ambassador accepting credentials. You breathe out for the first time since Gladwyne came up.',
-        lie: 'jules: These are for your grandmother. Sam said she\'d love them.\n\nThe street goes quiet. On the next stoop down, Mrs. Gallo stops sweeping.\n\nYour mother takes the box very carefully, the way you\'d take something that might go off. She looks at you over Jules\'s shoulder with an expression that says *I am going to kill you in front of God later*.\n\nNonna, on her top step, looks at the box. Looks at Jules. Looks at you, for a long time.\n\nnonna: Store cannoli.\n\njules: …Yes. I\'m sorry. Sam said—\n\nnonna: Sam said.\n\nNonna comes down her steps, one at a time, holding the rail. She walks across to Jules. She takes the box out of your mother\'s hands. She opens the lid and looks inside for a long moment, and the whole street holds its breath.\n\nnonna: Termini. Hm.\n\nShe closes the box.\n\nnonna: Good. Not mine. But good. *You*, I like. *Him*\n\nShe points at you without looking.\n\nnonna: him, I\'m going to talk to.',
-        truth: 'jules: These are for the family. From Termini Brothers. I know they won\'t be as good as yours, Mrs. DiNardo.\n\nShe says it straight to Nonna, across the little iron fence between the stoops, without being told which one is Nonna. She just knew. Of course she knew.\n\nNonna looks at the box. At Jules. Her face doesn\'t move at all.\n\nnonna: Good. Not mine.\n\nThen, after a long pause, the eyebrows go up, half an inch, which on Nonna is a standing ovation.\n\nnonna: But good.\n\nJules turns her head just enough that only you can see her face, and she gives you the smallest look of triumph you\'ve ever seen on a human being.'
+        ma: 'jules: Mrs. Kearney. These are for you. Thank you for having me.\n\nYour mother takes the box and reads the string, red and white, and the stamp on top, **TERMINI BROS. BAKERY**, and looks at Jules like she\'s just been handed a newborn.\n\nrosa: *Termini.* Oh, you didn\'t have to. Oh, *Frank*. Look. She went to *Termini\'s*.\n\nShe holds the box up over her head so Nonna can see it from three doors down. Nonna, on her step, looks at the box. Then at Jules. Then at you.\n\nnonna: Hm.\n\nBut it\'s a *good* hm. It\'s the hm of an ambassador accepting credentials. You breathe out for the first time since Gladwyne came up.',
+        lie: 'jules: These are for your grandmother. Sam said she\'d love them.\n\nThe street goes quiet. On the next stoop down, Mrs. Gallo stops sweeping.\n\nYour mother takes the box very carefully, the way you\'d take something that might go off. She looks at you over Jules\'s shoulder with an expression that says *I am going to kill you in front of God later*.\n\nNonna, on her top step, looks at the box. Looks at Jules. Looks at you.\n\nnonna: Store cannoli.\n\njules: …Yes. I\'m sorry. Sam said—\n\nnonna: Sam said.\n\nNonna comes down her steps, one at a time, holding the rail. She walks across to Jules. She takes the box out of your mother\'s hands. She opens the lid and looks inside, and the whole street holds its breath.\n\nnonna: Termini. Hm.\n\nShe closes the box.\n\nnonna: Good. Not mine. But good. *You*, I like.\n\nShe points at you without looking.\n\nnonna: Him, I\'m going to talk to. *Madonna mia.*',
+        truth: 'jules: These are for the family. From Termini Brothers. I know they won\'t be as good as yours, Mrs. DiNardo.\n\nShe says it straight to Nonna, across three stoops' worth of sidewalk, without being told which one is Nonna. She just knew. Of course she knew.\n\nNonna looks at the box. At Jules. Her face doesn\'t move at all.\n\nnonna: Good. Not mine.\n\nThen, after a long pause, the eyebrows go up, half an inch, which on Nonna is a standing ovation.\n\nnonna: But good.\n\nJules turns her head just enough that only you can see her face, and she gives you a look of triumph about the width of a dime.'
       }[g.f('cannoli')]}`,
       next: 'a1_kitchen'
     },
@@ -538,21 +536,21 @@ Jules holds out the white box.`,
       clock: { time: '12:50 PM' },
       text: g => `Ten minutes later, Jules is in the front room on the plastic-covered couch being interviewed by Gigi about Main Line horse culture, and Pop is showing Mikey something on his phone about the Eagles' secondary, and Ma says *Salvatore, come help me with the braciole*, in a voice that is not about braciole.
 
-The kitchen is the kitchen. The kitchen has been the same kitchen your whole life: the yellow linoleum, the radio on the windowsill playing WPHT low, the Last Supper over the doorway, the big pot on the back burner where the gravy has been going since seven this morning, red and black and slow, blooping.
+The kitchen is the kitchen. The kitchen has been the same kitchen your whole life: the yellow linoleum, the radio on the windowsill playing WIP low, the Last Supper over the doorway, the big pot on the back burner where the gravy has been going since seven this morning, red and black and slow, blooping.
 
 Ma doesn't make you help with the braciole. She closes the kitchen door, which she never does, and turns around and takes your left wrist in her hand and pushes your sleeve up before you can stop her.
 
-You let her. You don't know why you let her.
+You let her.
 
 ${g.f('did_sun_grace') ? 'Grace\'s gauze is clean and white. Ma unwinds it with one hand, fast, professionally, the way she must do it forty times a week in the nurse\'s office at Our Lady of Mount Carmel. Under it, the pink new skin, the thin pink line of the cut.' : 'There are stitches in your forearm. Nine of them. And above and below them, both arms, the burns: half-healed, angry, pink and white and shiny.'}
 
-She looks at it for a long time without saying anything. Then she turns your arm over, gently, in the light from the window.
+She looks at it without saying anything. Then she turns your arm over, gently, in the light from the window.
 
 rosa: Salvatore.
 
 sam: Ma—
 
-rosa: I've been a school nurse for twenty-two years. I know what a burn looks like at two days and I know what it looks like at two weeks. This is two weeks. ${g.f('did_sun_grace') ? 'And this cut was stitched. I can see the holes. They\'re almost gone.' : 'And these stitches should have come out already.'}
+rosa: I've been a school nurse for twenty-two years. I know what a burn looks like at two days and I know what it looks like at a month. This is a month. ${g.f('did_sun_grace') ? 'And this cut was stitched. I can see the holes. They\'re almost gone.' : 'And these stitches should have come out already.'}
 
 She looks up at you.
 
@@ -584,7 +582,7 @@ rosa: Long sleeves at the table. I don't want your grandmother seeing that. She'
 
 You think you got away with it. Then she says, very quietly, rubbing the cream in:
 
-rosa: Two weeks, Salvatore. A burn doesn't lie about how old it is. Even when the boy does.`,
+rosa: A month, Salvatore. A burn doesn't lie about how old it is. Even when the boy does.`,
       next: 'a2_table'
     },
     a1_ma_lie_meh: {
@@ -595,7 +593,7 @@ rosa: Twice.
 
 sam: Yeah.
 
-rosa: And it healed two weeks' worth in a week.
+rosa: And it healed a month's worth since I saw you on FaceTime.
 
 You don't say anything.
 
@@ -644,7 +642,7 @@ rosa: Okay. Okay.
 
 She lets you go and wipes her eyes fast with the back of her wrist, the dish towel still in her hand.
 
-rosa: I'm not going to ask you the rest. Not today. But I'm your mother, and I'm a nurse, and I'm not stupid. And you're going to tell me eventually, because you can't keep anything from me, you never could. You're just going to make me wait.
+rosa: I'm not going to ask you the rest. Not today. But I'm your mother, and I'm a nurse, and I have eyes. And you're going to tell me eventually, because you can't keep anything from me, you never could. You're just going to make me wait.
 
 She turns back to the stove.
 
