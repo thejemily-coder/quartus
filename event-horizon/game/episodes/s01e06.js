@@ -1,4 +1,4 @@
-/* S1 · E6 · THE HOUSE ALWAYS WINS (Jules POV), part 1 of 3: meta, cold open, Act One ("Ninth Floor, Other Side"). */
+/* S1 · E6 · THE HOUSE ALWAYS WINS (Jules POV), part 1 of 2: meta, cold open, Act One ("Ninth Floor, Other Side"). */
 EH.episode({
   id: 's01e06', season: 1, number: 6, title: 'The House Always Wins', look: 's1', pov: 'jules',
   cast: ['jules', 'sam', 'simone', 'callum', 'hugh', 'constance', 'catherine', 'whitney', 'nik', 'grace'],
@@ -22,7 +22,7 @@ EH.episode({
 
 You are Juliet Louisa Pemberton, and you have never in your life been this close to anybody on purpose.
 
-${g.f('roof_end') === 'lean' ? 'His forehead is against yours. You put it there. You don\'t remember deciding to; you remember him leaning in, slowly, so slowly, giving you every chance in the world, and you remember that for the first time in your life there were chances, real ones, and none of them had already been decided. And you remember stopping. *Not like this.*' : g.f('roof_end') === 'still' ? 'Your head is on his shoulder. He didn\'t lean in. He sat perfectly still, close enough to feel you breathe, and didn\'t take one inch you didn\'t give him, and nobody has ever done that, and it\'s the most frightening thing anyone has ever done to you.' : 'Your head is on his shoulder. He said something true instead of leaning in, and you can\'t stop hearing it.'}
+${g.f('roof_end') === 'lean' ? 'His forehead is against yours. You put it there. You don\'t remember deciding to; you remember him leaning in, slowly, so slowly, giving you every chance in the world, and you remember that for the first time in your life there were chances, real ones, and none of them had already been decided. And you remember stopping. *Not like this.*' : g.f('roof_end') === 'still' ? 'Your head is on his shoulder. He didn\'t lean in. He sat perfectly still, close enough to feel you breathe, and didn\'t take one inch you didn\'t give him, and nobody has ever done that, and it frightens you more than the window did.' : 'Your head is on his shoulder. He said something true instead of leaning in, and you can\'t stop hearing it.'}
 
 He smells like smoke. A house fire, ten blocks away. He went toward it. He came back with ${g.f('family') === 'clean' ? 'soot in his hairline and his hands shaking' : 'his hands burned'}, and he lied to you about almost nothing, and you let him.
 
@@ -118,7 +118,7 @@ simone: Shocking.
 
 jules: His grandmother said my cannoli were "good, not mine," which I\'m told is the highest honor South Philadelphia can bestow on a non-Italian.
 
-Simone sits up. She looks at you for a long second, the way she looks at a scene partner who\'s dropped a line.
+Simone sits up. She looks at you the way she looks at a scene partner who\'s dropped a line.
 
 simone: You\'re doing the thing.
 
@@ -152,7 +152,7 @@ jules: It goes with the dress.
 
 simone: It does *not* go with the dress.
 
-It doesn\'t go with the dress. You know it doesn\'t. You\'re wearing it anyway. You both know what that means. Neither of you says it, which is the most loving thing Simone has ever done for you.`,
+It doesn\'t go with the dress. You know it doesn\'t. You\'re wearing it anyway. Neither of you says it. Simone eats another fish and lets you have it.`,
       next: 'a1_list'
     },
     a1_simone_ask: {
@@ -313,7 +313,7 @@ sam: What?
 
 jules: You said he owes you a call. Don\'t wait for him. Call him. People who wait for calls never get them.
 
-He looks at you a long second, like you\'ve said something much bigger than you meant to. Maybe you did.
+He looks at you like you\'ve said something much bigger than you meant to. Maybe you did.
 
 sam: …Yeah. Okay. I\'ll call him.`,
       next: 'a1_drift'
@@ -336,7 +336,7 @@ It\'s a good answer. It\'s charming and specific and it has a grandmother in it.
 
 He\'s gotten better at it. You taught him. Every time you caught him, he learned.
 
-You feel something you don\'t have a word for, a cold, specific feeling, like setting down a card and realizing it\'s the one your opponent needed.`,
+It\'s a cold, specific feeling, like setting down a card and realizing it\'s the one your opponent needed.`,
       next: 'a1_drift'
     },
     a1_hall_go: {
@@ -365,7 +365,7 @@ When the doors open in the lobby, you stand there and you think: *You\'re tired.
 
 They don\'t. Nik is five foot seven.
 
-${g.S.samSheet && g.S.samSheet.drift >= 9 ? 'You don\'t know that on the ninth floor, at that exact moment, the boy in the towel stopped dead in the hallway, with frost on the shower caddy, and couldn\'t remember walking out of the bathroom.' : ''}
+${g.S.samSheet && g.S.samSheet.drift >= 9 ? 'And the shower caddy. You keep seeing it. Just before the doors met, it was white with frost.' : ''}
 
 Mr. Abernathy is holding the car door open for you. You get in. You put your hand in your coat pocket, where Gran\'s ivory die lives, and you close your fist around it so hard the corners hurt.
 
@@ -431,7 +431,7 @@ catherine: Dinner\'s at eight. Your father\'s on a call. Your brother\'s bringin
 
 She goes upstairs. The card stays on the table, with its cartoon strawberry and its coffee ring, in the middle of all that silver.
 
-You look at it for a long time. You\'ve never seen anything in this house that was allowed to be crooked.`,
+You stand in the hall and look at it. You\'ve never seen anything in this house that was allowed to be crooked.`,
       next: 'a1_hub'
     },
     a1_mother_keep: {
@@ -456,7 +456,7 @@ You put the card in your coat pocket next to Gran\'s die.`,
       enter: g => { g.flag('mother6', 'reach'); g.bond('catherine', { trust: 1 }); },
       text: `jules: You could make it, you know. Just once. I\'d eat it.
 
-Your mother looks at you over her reading glasses for a long moment.
+Your mother looks at you over her reading glasses.
 
 catherine: I don\'t cook, Juliet. You know I don\'t cook.
 
@@ -490,7 +490,7 @@ catherine: Dinner\'s at eight.`,
     a1_hub: {
       loc: 'RAVENSCOURT · SATURDAY',
       clock: { day: 'Sat', date: 'Oct 3', time: '9:30 AM' },
-      text: `Ravenscourt is four miles from your parents' house and two centuries from everywhere else: a gray stone house on forty acres above the Schuylkill, with a slate roof and too many chimneys and, down a long path through the boxwoods, a small stone chapel built in 1891 that nobody has used for a service since 1956.
+      text: `Ravenscourt is a mile and a half from your parents' house and a century from everywhere else: a gray stone house on forty acres above the Schuylkill, with a slate roof and too many chimneys and, down a long path through the boxwoods, a small stone chapel built in 1891 that nobody has used for a service since 1956.
 
 You haven\'t been inside the chapel since you were seven.
 
@@ -501,10 +501,9 @@ The game is at eight tonight. You have the day. Gran doesn\'t come downstairs un
         options: [
           { id: 'sat6_horse', text: 'Ride Mercutio. He\'s boarded at Ravenscourt now. He bit Callum once. You love him.', cost: 1, tag: 'Mercutio', go: 'a1_horse' },
           { id: 'sat6_hugh', text: 'Hugh wants tennis. Hugh always wants tennis. Hugh has never once beaten you.', cost: 1, tag: 'Hugh', go: 'a1_hugh' },
-          { id: 'sat6_gran', text: 'Wait for four o\'clock. Sit with Gran on the terrace while she smokes her one cigarette.', cost: 1, tag: 'Gran', go: 'a1_gran' },
           { id: 'sat6_callum', text: 'Callum\'s walking the grounds alone. Go walk with him.', cost: 1, tag: 'Callum', go: 'a1_callum' }
         ],
-        done: 'a2_game'
+        done: 'a1_gran'
       }
     },
 
@@ -630,9 +629,7 @@ He throws his racket. Not at the fence. At the ground. It cracks.
 
 hugh: Six-love. Fine. Six-love. You win. You *always* win.
 
-He walks off the court. He doesn\'t pick up the racket. You stand there with the ball in your hand.
-
-You tried. You really tried. It didn\'t let you.`,
+He walks off the court. He doesn\'t pick up the racket. You stand there with the ball in your hand.`,
       next: '@hub'
     },
 
@@ -680,7 +677,7 @@ constance: About your grandfather\'s grandfather, child. And a stopped engine. A
 She stands up, with her hand on the iron chair.
 
 constance: Wear the blue. Your mother\'s right about the blue.`,
-      next: '@hub'
+      next: 'a2_game'
     },
 
     a1_callum: {
@@ -741,7 +738,7 @@ He means it. He\'d wait forever. That\'s the worst thing about him: that he\'d w
       enter: g => { g.flag('callum6', 'lie'); g.bond('callum', { trust: 1 }); },
       text: `jules: Simone made it.
 
-It comes out perfectly. Of course it does. Light, easy, a little fond.
+It comes out light, easy, a little fond.
 
 callum: Aw, that\'s sweet. Simone\'s great. She\'s so funny.
 

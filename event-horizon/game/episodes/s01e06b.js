@@ -20,13 +20,13 @@ The table:
 
 **Hugh**, in a dinner jacket, ${g.f('hugh6') === 'throw' ? 'not looking at you, his jaw tight, a new racket-shaped grudge sitting behind his eyes' : g.f('hugh6') === 'win' ? 'already two drinks in, still sore about tennis' : 'already two drinks in, golden and loud'}.
 
-**Callum**, beside you, in a rented tux that\'s a little short in the sleeves, beaming, delighted to be here, delighted by the fire and the books and the chips and you.
+**Callum**, beside you, in his father\'s old dinner jacket, a little short in the sleeves, beaming, delighted to be here, delighted by the fire and the books and the chips and you.
 
 **Judge Ellison**, eighty, a friend of Gran\'s from the Cricket Club, who falls asleep between hands and wins a surprising amount.
 
-And a woman you don\'t know. Sixties, Dutch, with steel-gray hair cut very short and a black suit and no jewelry at all, sitting very straight, with her hands folded on the table in front of her like a scientist waiting for results.
+And a woman you don\'t know. Late fifties, Dutch by the accent, with steel-gray hair cut very short and a black suit and no jewelry at all, sitting very straight, with her hands folded on the table in front of her like a scientist waiting for results.
 
-whitney: Everybody, this is Miriam. Dr. Achterberg. A friend from the energy thing. Miriam, my daughter Juliet, the one I told you about.
+whitney: Everybody, this is Miriam. Dr. Achterberg. She\'s a physicist. A friend from the energy thing. Miriam, my daughter Juliet, the one I told you about.
 
 DR. ACHTERBERG: The lucky one.
 
@@ -65,7 +65,7 @@ Hugh bets big. He\'s got something. You can see it in his shoulders.`,
   a2_hand1_win: {
     night: true,
     enter: g => { g.inc('hands_won'); },
-    text: g => `The turn is the king of hearts. Nothing.
+    text: g => `The turn is the king of hearts. Nothing for you.
 
 Hugh bets again. You call. Callum, beside you, says *ooh* under his breath, like it\'s a movie.
 
@@ -75,9 +75,9 @@ Gran\'s hand pauses over the deck, just for an instant, the way it always does o
 
 Eight of clubs.
 
-Not just the flush. The *straight* flush. Eight, nine, ten, jack of clubs, and the king doesn\'t matter, nothing matters. The odds of that are something like one in three thousand. You\'ve had four in your life. ${g.last && g.last.nudged ? 'You watched the card come off the deck and you felt it, the way you always feel it now: a little click, somewhere behind your breastbone, like a lock turning.' : 'You felt it coming before Gran\'s hand moved.'}
+Not just the flush. The *straight* flush. Eight, nine, ten, jack of clubs, and the king doesn\'t matter, nothing matters. The odds of that are something like one in three thousand. You\'ve had four in your life. ${g.last && g.last.nudged ? 'You watched the card come off the deck and you felt it, the way you always feel it now: a little click, somewhere behind your breastbone, like a lock turning.' : 'You felt it coming before Gran\'s hand moved: a little click, somewhere behind your breastbone, like a lock turning.'}
 
-Hugh turns over his cards. Two kings. A set. A great hand. On any other night at any other table, a winning hand.
+Hugh turns over his cards. Two kings. With the king on the turn, that\'s three of a kind. A great hand. On any other night at any other table, a winning hand.
 
 hugh: Oh, come *on*.
 
@@ -116,7 +116,7 @@ DR. ACHTERBERG: Were you there? That night? At eleven fifty-one?
 
 Her voice is perfectly casual. Her eyes are not.
 
-Somewhere behind your breastbone, the little lock turns, and turns, and turns, like something trying very hard to get your attention.`,
+Behind your breastbone, the lock turns, and turns again.`,
     choices: [
       { text: '"Yes. A window came down. Every piece of glass missed me." Tell her the truth. What could it hurt?', tag: 'The truth',
         fx: g => { g.flag('achterberg6', 'truth'); g.hidden('halcyon_jules', 3); g.know('jules_glass', ['achterberg']); }, go: 'a2_ach_truth' },
@@ -134,7 +134,7 @@ DR. ACHTERBERG: Every piece.
 
 jules: Every piece. There was a circle on the ground with me in it.
 
-She looks at you for a long, quiet moment. Then she nods, slowly, like a woman hearing that an experiment has gone exactly as predicted.
+She looks at you. Then she nods, slowly, like a woman hearing that an experiment has gone exactly as predicted.
 
 DR. ACHTERBERG: How very fortunate.
 
@@ -148,7 +148,7 @@ You stand by the fire. You realize your heart is going very fast. You can\'t rem
     enter: g => { g.flag('achterberg6', 'lie'); g.hidden('halcyon_jules', 1); },
     text: `jules: No. I was home in Gladwyne that weekend.
 
-It\'s perfect. Of course it\'s perfect. You\'ve been lying to people at parties since you were nine.
+It\'s perfect. You\'ve been lying to people at parties since you were nine.
 
 DR. ACHTERBERG: Ah. Pity. It was quite a night.
 
@@ -160,7 +160,7 @@ DR. ACHTERBERG: Your father showed me the photograph. From the newspaper. The gi
 
 She sits down. She folds her hands on the table.
 
-You stand by the fire. You realize you just lied to a woman who already knew the answer, and that she let you, the way you let Kearney lie to you, because the lie told her more than the truth would have.`,
+You stand by the fire. You just lied to a woman who already knew the answer, and she let you. You know that move. You\'ve been letting Kearney make it for six weeks.`,
     next: 'a2_test'
   },
   a2_ach_turn: {
@@ -194,9 +194,9 @@ She goes back to the table before you can answer.`,
     clock: { time: '10:30 PM' },
     text: g => `By ten-thirty, you have most of the chips on the table.
 
-You\'ve won eleven hands in a row. You\'ve stopped looking at your cards before you bet. You\'ve stopped needing to. Every time, the cards come the way they come, and every time, they come for you: the flush on the river, the third queen on the turn, the impossible gutshot straight. Callum has lost four thousand dollars and keeps apologizing to you for it. Father keeps laughing. Hugh has stopped talking.
+You\'ve won eleven hands in a row. You\'ve stopped looking at your cards before you bet. You\'ve stopped needing to. Every time, the cards come the way they come, and every time, they come for you: the flush on the river, the third queen on the turn, the one card in the deck that fills an inside straight. Callum has lost four thousand dollars and keeps apologizing to you for it. Father keeps laughing. Hugh has stopped talking.
 
-And every time, behind your breastbone: *click*. A lock turning. A door opening a little wider.
+And every time: *click*. A door opening a little wider.
 
 Somewhere in your head, very quietly, a seven-year-old girl in a stone chapel is saying: *something\'s in here with me*.
 
@@ -220,7 +220,7 @@ The worst hand in poker.`,
   },
   a2_allin: {
     night: true,
-    enter: g => { g.inc('hands_won'); g.know('jules_allin', ['jules'], 'Jules went all in with seven-deuce at Ravenscourt to see if she could lose. She hit a full house on the river.'); },
+    enter: g => { g.inc('hands_won'); g.know('jules_allin', ['jules'], 'Jules went all in with seven-deuce at Ravenscourt to see if she could lose. She hit a full house on the flop.'); },
     text: `You push everything into the middle. Every chip. Forty thousand dollars of your father\'s friends' money, on a seven and a two.
 
 The table goes silent.
@@ -251,7 +251,7 @@ Father is laughing so hard he\'s crying. Callum is clapping again, slowly, amaze
 
 Dr. Achterberg takes out her notebook and writes one line.
 
-And Gran looks at you over the table, over the cards, over the forty thousand dollars, for a long time.
+And Gran looks at you over the table, over the cards, over the forty thousand dollars.
 
 She doesn\'t look surprised. She looks like a woman who has just heard a bell ring that she\'s been waiting sixty years to hear.`,
     next: 'a2_hugh'
@@ -275,11 +275,11 @@ New deck. New deal. You fold without looking.
 
 The lights go out.
 
-Not the whole house. Just the library. Just for a second, a hiccup of dark, like a breath, and in the dark you feel the thing behind your breastbone *turn*, impatient, like a key in a lock that won\'t open, and when the lights come back up, Gran is holding the deck very still, and every card on the table, every card that had been dealt, is face up.
+Not the whole house. Just the library. Just for a second, a hiccup of dark, and in it you feel the thing behind your breastbone *turn*, hard, impatient, and when the lights come back up, Gran is holding the deck very still, and every card on the table, every card that had been dealt, is face up.
 
 All of them. Every player\'s. Face up on the green felt.
 
-And yours, the hand you folded without looking, is a royal flush.
+And yours, the hand you folded without looking, is the ace and king of hearts. Beside it, slid off the top of the deck face up: queen, jack, ten of hearts. A royal flush. The best hand there is. You threw it away, and it came back anyway.
 
 Nobody says anything. Callum laughs nervously. Father says *well, that\'s a new one*. Hugh stares at the cards.
 
@@ -305,15 +305,15 @@ Next hand, you play properly again. You bet small. You fold to Callum\'s raise, 
 
 Callum shows his cards, grinning. A pair of fours.
 
-And Gran turns over the cards you folded, like she does sometimes, to teach, and it\'s a full house.
+And Gran turns over the cards you folded, like she does sometimes, to teach. A seven and a three. Nothing. His fours had you beat all along. You didn\'t give him anything. The fold was just correct.
 
 You keep playing properly. You keep making the correct, careful, ordinary decisions. And somehow, every time, the correct decision is the one that wins. When you fold, the hand you folded would have lost. When you call, it wins. When you bet the careful amount, everyone folds to exactly that amount.
 
-You\'re not doing anything. That\'s what\'s so frightening. You\'re just *sitting there*, being a person, and the world is arranging itself around you like iron filings around a magnet.
+You\'re not doing anything. You\'re just *sitting there*, being a person, and the world is arranging itself around you like iron filings around a magnet.
 
 ${g.last && g.last.nudged ? 'Every time, behind your breastbone: *click*.' : ''}
 
-By eleven, you have every chip on the table, and you\'ve never once tried.`,
+By eleven, you have nearly every chip on the table, and you haven\'t tried once.`,
     next: 'a2_hugh'
   },
 
@@ -336,7 +336,7 @@ Two kings.
 
 The flop is already out. King of spades. Four of hearts. Nine of diamonds. Three kings. You can\'t lose this hand. You couldn\'t lose it if you tried.
 
-Hugh is looking at you. Underneath the red face and the tie and the drinks, he\'s eleven minutes older than you and looking at you the way he looked at you when you were six, on the day Gran first let you play, and he cried because you won all his peppermints.`,
+Hugh is looking at you. Underneath the red face and the tie and the drinks, he\'s eleven minutes older than you and looking at you the way he looked at you when you were seven, on the day Gran first let you play, and he cried because you won all his peppermints.`,
     choices: [
       { text: 'Call. Win. It\'s what happens. It\'s what always happens.', tag: 'Call',
         check: { kind: 'pool', attr: 'nerve', skill: 'hustle', diff: 2, label: 'Take it', on: { crit: 'a2_hugh_call', success: 'a2_hugh_call', partial: 'a2_hugh_call', fail: 'a2_hugh_call', botch: 'a2_hugh_call' } } },
@@ -353,7 +353,7 @@ Hugh turns over his cards. Two nines. Three nines. A great hand.
 
 You turn over yours. Three kings.
 
-The turn: a two. The river: a two. It doesn\'t matter. Nothing matters. Kings full of twos.
+The turn: a two. The river: a two. You both make a full house. Yours is bigger. Kings full of twos.
 
 Hugh sits there looking at the cards. Then he stands up, very carefully, the way drunk people stand up when they\'re trying not to look drunk.
 
@@ -369,7 +369,7 @@ You have forty-six thousand dollars in chips in front of you, and your brother i
 
 Gran stands. She doesn\'t say anything. She looks at the chips, and at the French doors, and at you, and her face is very tired and very old.
 
-constance: Cash out with Ostrowski, child. Then come and find me.`,
+constance: Leave the chips, child. Then come and find me.`,
     next: 'a3_terrace'
   },
   a2_hugh_gave: {
@@ -398,13 +398,13 @@ It\'s very quiet. It\'s the most honest thing he\'s said to you since you were t
 
 Across the table, Gran is looking at you. Not at your cards, not at Hugh. At *you*. And her face is doing something you have never once in eighteen years seen it do: it\'s surprised.
 
-It\'s the first hand you\'ve lost since you were seven. You lost it on purpose. Nothing stopped you.
+You\'ve folded hands before tonight. This is the first time since you were seven that losing was your idea. Nothing stopped you.
 
 *Click*, behind your breastbone. But softer this time. Puzzled. Like a door somebody tried, and found unexpectedly locked from the inside.
 
 Dr. Achterberg writes in her notebook. Two lines this time.
 
-constance: Cash out with Ostrowski, child. Then come and find me.`,
+constance: Leave the chips, child. Then come and find me.`,
     next: 'a3_terrace'
   },
 
@@ -451,7 +451,7 @@ You\'ve told Callum you love him before. You\'ve said it back, when he signed ca
     enter: g => { g.flag('ily', 'too'); g.bond('callum', { affection: 2 }); },
     text: `jules: I love you too.
 
-It comes out perfectly. Warm and certain and a little shy, exactly the way it should. He believes it completely. Of course he does. Everyone always does.
+It comes out perfectly. Warm and certain and a little shy, exactly the way it should. He believes it completely. Everyone always does.
 
 He kisses you. Gently, carefully, the way he does everything, holding your face in his warm callused hands, and you kiss him back, and you close your eyes, and you think about a forehead against yours on a roof at 4:12 in the morning and nobody\'s hands touching anybody\'s face at all.
 
@@ -484,7 +484,7 @@ callum: But you don\'t—
 
 jules: I don\'t know. I\'m not going to say something I don\'t know. Not to you. You\'re the only person who\'s never once lied to me.
 
-He looks at you for a long time in the dark. Then he nods. He\'s hurt. You can see it. He\'s trying very hard not to let it be your problem, which is the most Callum thing in the world.
+He looks at you in the dark. Then he nods. He\'s hurt. You can see it. He\'s trying very hard not to let it be your problem, which is the most Callum thing in the world.
 
 callum: Okay. That\'s okay. That\'s honest. I\'d rather have honest.
 
@@ -507,7 +507,7 @@ callum: Are you breaking up with me?
 
 jules: No. I don\'t know. I\'m telling you the truth, for once. I thought you should have that, at least, before anything else.
 
-He looks out at the river for a long time. When he talks again, his voice is very quiet.
+He looks out at the river. When he talks again, his voice is very quiet.
 
 callum: Is it him?
 
@@ -530,6 +530,8 @@ He goes in. It\'s cold without the jacket. You don\'t go after it.`,
     clock: { time: '12:58 AM' },
     text: g => `You take your phone out.
 
+You think about the elevator. *Two of him.*
+
 You open your messages. You scroll past Mother and Father and Simone and Hugh and Callum, and you stop on a name you saved in August, the first week, out of spite, and never changed:
 
 **WAWA GUY**
@@ -540,13 +542,13 @@ You type: *I won forty-six thousand dollars tonight*
 
 You delete it.
 
-You type: *Did you call Vinnie?*
+You type: *Are you awake*
 
 You delete it.
 
 You type: *What if it was me.*
 
-You look at that one for a long time. Your thumb is over the button. Behind your breastbone, nothing clicks. Nothing turns. For the first time all night, whatever has been watching you is perfectly, completely quiet, like it\'s leaning in to see what you\'ll do.`,
+Your thumb is over the button. Behind your breastbone, nothing clicks. Nothing turns. For the first time all night, whatever has been watching you is perfectly, completely quiet, like it\'s leaning in to see what you\'ll do.`,
     choices: [
       { text: 'Delete it. All of it. Put the phone face down on the cold stone.', tag: 'Delete',
         fx: g => { g.flag('text6', 'none'); }, go: 'a3_phone_none' },
@@ -562,7 +564,7 @@ You look at that one for a long time. Your thumb is over the button. Behind your
 
 You put the phone face down on the stone wall.
 
-Ten miles east, a boy on a ninth floor is asleep, or isn\'t, and doesn\'t know that for thirty seconds tonight, on a terrace above the Schuylkill, Juliet Pemberton almost asked him a question.
+Ten miles east, a boy on a ninth floor is asleep, or isn\'t. For thirty seconds tonight, you almost asked him a question.
 
 You think that\'s probably for the best. You think that\'s what *for the best* means: the thing that happens when you don\'t do anything.
 
@@ -575,7 +577,7 @@ You\'re not sure anymore that you\'ve ever once done anything at all.`,
 
 You send it before you can think. The little *whoosh*. Delivered.
 
-It\'s one in the morning. He\'s asleep. Of course he\'s asleep. Normal people are asleep at one in the morning, and he\'s a very normal guy, he said so, with his cereal.
+It\'s one in the morning. He\'s asleep. Of course he\'s asleep. Normal people are asleep at one in the morning, and he\'s a very normal guy, with his cereal and his doorway.
 
 The three dots appear.
 
@@ -597,7 +599,7 @@ TXT jules: goodnight kearney
 
 TXT sam: goodnight pemberton
 
-You hold the phone against your chest on the cold terrace, with the city glowing ten miles away, and it\'s warm, from your hand, and that\'s all, and that\'s everything.`,
+You hold the phone against your chest on the cold terrace, with the city glowing ten miles away, and it\'s warm, from your hand.`,
     next: 'tag_chapel'
   },
   a3_phone_whatif: {
@@ -620,9 +622,7 @@ One minute. Five. Ten. You stand at the wall in the cold holding the phone, and 
 
 And nothing else.
 
-Ten miles east, on a ninth floor, a boy is sitting up in bed in the dark, reading four words over and over, and doesn\'t know what they mean, and is terrified that he does.
-
-You don\'t know that. All you know is *Read*, and the cold, and the thing behind your breastbone, perfectly silent, like it\'s holding its breath too.`,
+All you know is *Read*, and the cold, and the thing behind your breastbone, perfectly silent.`,
     next: 'tag_chapel'
   },
 
@@ -637,7 +637,7 @@ You don\'t know that. All you know is *Read*, and the cold, and the thing behind
 
 She doesn\'t say anything. She turns and walks, and you follow her, the way you followed her everywhere when you were small, down the path between the dark hedges, toward the chapel.
 
-The chapel at Ravenscourt is small and gray and very old, built in 1891 by your great-great-grandfather, with a slate roof and a bell nobody rings and a single stained-glass window over the altar. You haven\'t been inside since you were seven years old. Since the night Hugh locked you in it, as a joke, and went to bed, and forgot.
+The chapel at Ravenscourt is small and gray and very old, built in 1891 by your grandfather\'s grandfather, with a slate roof and a bell nobody rings and a single stained-glass window over the altar. You haven\'t been inside since you were seven years old. Since the night Hugh locked you in it, as a joke, and went to bed, and forgot.
 
 Gran opens the door. It isn\'t locked. It\'s never locked. It wasn\'t locked that night either. You remember that now, standing on the step. You were seven, and you could have walked out at any time. You sat in the dark all night anyway, because you were sure that if you moved, something would notice.
 
@@ -671,7 +671,7 @@ constance: Again.
 
 Six.
 
-You don\'t wait for her to ask. You roll it ten more times, faster and faster, and the sound of ivory on stone fills the chapel like a clock, and every single time it\'s six, six, six, six, and you\'re breathing hard, and your hands are shaking, and you stop.
+You don\'t wait for her to ask. You roll it ten more times, faster and faster, and the sound of ivory on stone fills the chapel like a clock, and every time it\'s six, and six, and six, and you\'re breathing hard, and your hands are shaking, and you stop.
 
 constance: How many times?
 
@@ -681,11 +681,11 @@ constance: And before August?
 
 jules: …Most times.
 
-Gran is quiet for a long while. The candle flame in the lantern stands perfectly straight, perfectly still, not a flicker. ${g.hv('jules_debt') >= 6 ? 'You think about everything that\'s gone wrong around you tonight, every loss that was somebody else\'s, every bit of bad luck that had to go somewhere. You think about Gran\'s old saying. *It has to go somewhere, child.*' : ''}
+Gran is quiet for a long while. The candle flame in the lantern stands perfectly straight, perfectly still, not a flicker. ${g.hv('jules_debt') >= 3 ? 'You think about every loss tonight that was somebody else\'s. *It has to go somewhere, child.*' : ''}
 
 She looks up at the window. At the figure in the doorway. At the word on the ribbon.
 
-When she speaks, it\'s so quietly that you almost don\'t hear it, and she isn\'t saying it to you. She\'s saying it to the window, or to the dark behind the figure in the door, or to someone who\'s been listening in this chapel since 1891.
+When she speaks, it\'s so quietly that you almost don\'t hear it, and she isn\'t saying it to you.
 
 constance: It\'s started, then.
 
