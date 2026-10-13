@@ -22,13 +22,13 @@ teddy: When I let go, everything goes back to what it was doing. That\'s how it 
 
 teddy: I didn\'t think about the wind. I thought about everything. The van. The chair. The money. I didn\'t think about the *wind*, Sam.
 
-It\'s the first time he\'s ever said your name.
+He almost never uses your name.
 
 teddy: So I can\'t let go. Not till the handlers get back on the ropes. And they won\'t, \'cause they\'re scared, \'cause it\'s *frozen*, \'cause it\'s magic. And the money\'s not coming. Is it.
 
 Up the Parkway, on the big screen beside the grandstand, the 6abc anchors have been replaced by a slide that says *PLEASE STAND BY*.
 
-The cold coming up out of the asphalt is the coldest thing you\'ve ever felt. Your nose is pouring.`,
+The cold coming up out of the asphalt is in your teeth now. Your nose is pouring.`,
     choices: [
       { text: '"Let go now. On my count. I\'ll get the handlers on the ropes. Let me fix the dog. Let go."', tag: 'Talk him down',
         check: { kind: 'move', move: 'Talk Them Down', attr: 'charm', skill: 'persuade', label: 'Get Teddy to let go', on: { strong: 'a3_teddy_yes', weak: 'a3_teddy_maybe', miss: 'a3_teddy_no' } } },
@@ -122,7 +122,7 @@ teddy: …Ninety.
 
 He falls sideways off the folding chair cushion into the gutter.
 
-The flat gray goes out of the street like a held breath let go. It\'s still frozen. Everything\'s still frozen. But you can *feel* it now, under your feet, the way you can feel ice on the Delaware getting ready to break. A clock, somewhere, started.
+The flat gray goes out of the street. It\'s still frozen. Everything\'s still frozen. But you can *feel* it now, under your feet, the way you can feel ice on the Delaware getting ready to break. A clock, somewhere, started.
 
 *Ninety seconds.*
 
@@ -142,7 +142,7 @@ bree: *LET HIM GO! LET HIM GO!*
 
 But it isn\'t Bree\'s voice. It\'s Teddy\'s. It\'s Teddy\'s voice coming out of Bree\'s mouth, perfect, *Let him go*, and one of the medics actually turns around to look at the stretcher, confused, before another one shoots Bree in the shoulder and she sits down hard on the curb.
 
-${g.f('nik_chair') ? 'nik: *Sam. SAM. They\'re shooting people. On the stream. On LIVE TV. The anchors are saying they\'re paramedics. Sam, the anchors are saying they\'re PARAMEDICS—*' : ''}
+${g.f('nik_chair') ? 'nik: *Salvatore. SALVATORE. They\'re shooting people. On the stream. On LIVE TV. The anchors are saying they\'re paramedics. Sam, the anchors are saying they\'re PARAMEDICS—*' : ''}
 
 And then the men turn to you.
 
@@ -246,7 +246,7 @@ jules: Nothing happens to me. I told you. On the roof.
 
 She says it flat. Like a fact she\'s sick of. She wipes her lip with the back of her glove and looks at the blood on the leather like it belongs to somebody else.
 
-${g.f('nik_chair') ? 'nik: *…Sam? Sam, the stream just showed— there\'s a girl walking down the— is that JULES? Sam. Sam, I just watched four guys miss Jules Pemberton from ten feet away. Sam, what am I looking at.*\n\nYou don\'t answer him. You don\'t know.' : 'You don\'t know what you just saw. You know exactly what you just saw. You don\'t know what it means.'}
+${g.f('nik_chair') ? 'nik: *…Sam? Sam, the stream just showed— there\'s a girl walking down the— is that JULES? Sam. Sam, I just watched four guys miss Jules Pemberton from ten feet away. Sam, what am I looking at.*\n\nYou don\'t answer him. You don\'t know.' : 'You saw four darts miss her. You\'re almost sure you saw it.'}
 
 And under your feet, the street shivers.
 
@@ -259,7 +259,7 @@ And under your feet, the street shivers.
     clock: { time: '9:57 AM' },
     text: g => `You can see all of it at once. That\'s the thing about how you see now. All of it, laid out, like a map.
 
-**Teddy.** On the stretcher, unconscious, being slid into the back of the third ambulance. One medic climbing in after him. The other with his hand on the door. When those doors close, Teddy goes to the Navy Yard, to a room with a number on it, and his mother sits in her recliner on Edgemont Street with the cycler humming and waits for him to come home for the rest of her life.
+**Teddy.** On the stretcher, unconscious, being slid into the back of the third ambulance. One medic climbing in after him. The other with his hand on the door. When those doors close, Teddy goes to the Navy Yard, to a room with a number on it, and his mother sits in her recliner on Edgemont Street with the cycler humming and waits for him to come home.
 
 **The dog.** Five stories of balloon, frozen mid-fall, over the lamppost at the corner of 21st. When it comes back, it\'s going to hit that lamppost with all the wind in the world, and the lamppost is going to come down. And under the lamppost, on the sidewalk, in a wheelchair with a blanket over her knees, is a woman you know. Carmen Torres. Her hip, from August. From the Hitch. From the bus you were too slow for.
 
@@ -275,7 +275,7 @@ jayden: *COLD MAN!*
 
 *Twenty seconds.*
 
-You can\'t do all of it. You know that. You\'ve known it since August, since the bus, since Carmen\'s hip. You can\'t do all of it.
+You can\'t do all of it. You\'ve known that since August.
 
 Jules is still holding your hand.
 
@@ -329,7 +329,7 @@ Heck is gone.`,
   },
   a3_save_teddy_hurt: {
     enter: g => { g.flag('choice10', 'teddy'); g.flag('teddy_saved'); g.flag('heck_taken10'); g.bond('teddy', { trust: 3, affection: 2 }); g.bond('bree', { trust: 2 }); g.hidden('halcyon_heat', 1); g.injure({ id: 'ribs10', name: 'Cracked ribs (ambulance door)', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
-    text: `You let go of Jules\'s hand and run, and halfway there your legs remember the dart, or the cold, or eleven weeks of not sleeping, and you stumble.
+    text: `You let go of Jules\'s hand and run, and halfway there your legs remember the dart, or the cold, or three months of not sleeping, and you stumble.
 
 You get there anyway. Late. The door is already closing. You get your arm in the gap and the medic slams it on you, twice, hard, and you feel something in your side go *crack* like a stick in a fire. You don\'t let go. You pull the door open with your broken side screaming and grab the stretcher rail and pull, and it comes out and drops off the bumper with a crash, and Teddy rolls into the street, and you drag him, backward, toward the crowd, toward the phones.
 
@@ -363,7 +363,7 @@ Heck is gone.`,
 
 You run. Not toward the ambulance. Away from it. Across the frozen Parkway, between the floats, toward the corner of 21st, toward a boy in a puffy coat yelling *cold man* like it\'s your name.
 
-Behind you, you hear the ambulance doors close. You hear Bree make a sound you will hear for the rest of your life. You don\'t turn around.
+Behind you, you hear the ambulance doors close. You hear Bree scream Teddy\'s name in her own voice. You don\'t turn around.
 
 The street lets go.
 
@@ -394,9 +394,9 @@ He stands in the street with his hands on fire and watches it go.`,
   },
   a3_save_jayden_hurt: {
     enter: g => { g.flag('choice10', 'jayden'); g.flag('teddy_taken10'); g.bond('jayden', { trust: 3, affection: 3 }); g.bond('carmen', { trust: 3, affection: 2 }); g.know('carmen_cold_man', ['sam', 'carmen', 'jayden'], 'On the Parkway, the cold man came back for Jayden and Carmen. This time he was fast enough.'); g.hidden('revenant_drift', -1); g.injure({ id: 'glass10', name: 'Glass cuts and a wrenched shoulder (lamppost)', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
-    text: `You let go of Jules\'s hand and run, across the frozen Parkway toward a boy yelling *cold man*, and halfway there your legs remember the cold and the dart and eleven weeks of no sleep, and you stumble, and you get up, and you\'re late.
+    text: `You let go of Jules\'s hand and run, across the frozen Parkway toward a boy yelling *cold man*, and halfway there your legs remember the cold and the dart and three months of no sleep, and you stumble, and you get up, and you\'re late.
 
-Behind you, you hear the ambulance doors close. You hear Bree make a sound you will hear for the rest of your life.
+Behind you, you hear the ambulance doors close. You hear Bree scream Teddy\'s name in her own voice.
 
 The street lets go. The dog finishes falling. It hits the lamppost, and the steel screams, and the pole comes over.
 
@@ -448,11 +448,11 @@ Your face. Older. Gray at the temples. A gap where the ring finger should be. He
 
 old_sam: You can\'t carry all of them.
 
-His voice is yours, worn to the wire.
+His voice is yours, with nothing left on it.
 
 sam: Watch me.
 
-He stops. He looks at you for a long time. Something moves in his face, and you know it, because it\'s your face, and it\'s the thing your face does right before you cry.
+He stops. Something moves in his face, and you know it, because it\'s your face, and it\'s the thing your face does right before you cry.
 
 old_sam: I did. I watched. That\'s all I do.
 
@@ -468,7 +468,7 @@ You step back out.`}
 
 The street lets go.
 
-It all comes back at once. The wind. The dog falls on the lamppost, and the steel screams, and the pole comes down across an empty sidewalk and a wheelchair with nobody in it. The ambulance doors slam on an empty stretcher. Half a million people scream at once, because a boy is gone from the back of an ambulance, and a woman and a child are gone from a wheelchair, and they\'re all on the other side of the street now, and nobody saw them move.
+It all comes back at once. The wind. The dog falls on the lamppost, and the steel screams, and the pole comes down across an empty sidewalk. The ambulance doors slam on an empty stretcher. Half a million people scream at once, because a boy is gone from the back of an ambulance, and a woman in a wheelchair and a little boy are gone from under a lamppost, and they\'re all somewhere else now, and nobody saw them move.
 
 ${g.f('unstick10') ? `And you\'re on your knees in the middle of the Parkway.
 
@@ -501,7 +501,7 @@ mikey: Okay. Okay. I got you. I got you, Sammy. Nobody\'s taking you anywhere.` 
   a3_bree: {
     loc: 'THE PARKWAY · 21ST STREET',
     clock: { time: '10:03 AM' },
-    enter: g => { if (g.f('unstick10')) { g.heat('mikey', 10); g.know('sam_slip', ['mikey']); g.flag('mikey_knows'); } g.know('mikey_bree', ['sam', 'mikey'], 'On the Parkway, Mikey stopped a fake ambulance from taking Bree Kowal. He made them open the doors on live TV.'); },
+    enter: g => { if (g.f('unstick10')) { g.heat('mikey', 10); g.know('sam_slip', ['mikey']); g.flag('mikey_knows'); } g.know('mikey_bree', ['sam', 'mikey'], 'On the Parkway, Mikey stopped a fake ambulance from taking Bree Kowal. He made them back off on live TV.'); },
     text: g => `They try to take Bree.
 
 Two of them get her onto a stretcher on the curb while she\'s half under from the dart, and they\'re rolling her toward the fourth ambulance when a voice comes across the street. A cop voice. A South Philly cop voice, the loudest voice in the world.

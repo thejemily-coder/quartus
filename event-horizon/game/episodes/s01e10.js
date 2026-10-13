@@ -26,11 +26,11 @@ There is no seventh floor of Building 7. It isn\'t on the drawings. The elevator
 
 It\'s very quiet, and very clean, and it smells like a new car. A long white hallway with doors on both sides, each door with a narrow window and a number. At the end of the hallway, behind glass, a dim room full of screens.
 
-Cole Brannigan stands in front of the screens with a mug of tea. Beside him, in a cardigan, with reading glasses pushed up into gray hair, is a small woman in her late fifties who looks like somebody\'s favorite aunt.
+Cole Brannigan stands in front of the screens with a mug of tea. Beside him, in a cardigan, with reading glasses pushed up into gray hair, is a small woman in her late fifties who looks like a retired piano teacher.
 
 On the screens: a map of Center City. The Benjamin Franklin Parkway, drawn in white, from City Hall to the Art Museum. Dozens of small red dots scattered across the city. A few of them are moving.
 
-BRANNIGAN: Kowal left Port Richmond at four this afternoon. He\'s sleeping in a van on 23rd Street. He\'s bought a thermos and a folding chair. He\'s very organized.
+BRANNIGAN: Kowal left Port Richmond at four this morning. He\'s sleeping in a van on 23rd Street. He\'s bought a thermos and a folding chair. He\'s very organized.
 
 ACHTERBERG: He\'s going to freeze the parade.
 
@@ -67,7 +67,7 @@ The bulb in 714 pops. The girl doesn\'t flinch.`,
       card: { kind: 'act', label: 'Act One', title: 'Wednesday' },
       loc: 'MELROSE DINER · SOUTH PHILADELPHIA',
       clock: { day: 'Wed', date: 'Nov 25', time: '7:15 AM' },
-      text: g => `Two and a half weeks go by the way weeks go by after something. You go to class. You do Femi\'s Calc problems in Femi\'s green notebook, every one of them, *outside first*. You turn in Weisz\'s paper late and get it back with a B-minus and one comment: *Blurry.* You don\'t know if it\'s about the paper.
+      text: g => `Two and a half weeks go by. You go to class. You do Femi\'s Calc problems in Femi\'s green notebook, every one of them, *outside first*. You turn in Weisz\'s paper late and get it back with a B-minus and one comment: *Blurry.* It might not be about the paper.
 
 ${g.f('jules9') === 'stay' ? 'Jules sleeps in your bed four nights out of fourteen, with the lamp on, in her clothes. Nobody on the floor says a word about it, which is how you know Simone has said something to all of them.' : 'You see Jules every day. You don\'t talk about the roof.'} Simone ${g.f('simone9') === 'lied' ? 'nods at you in the hallway like a stranger who\'s been polite to you once. It\'s worse than yelling.' : 'sits with you at dinner and calls you Salvatore, and doesn\'t ask you anything in public.'}
 
@@ -185,7 +185,7 @@ nik: These are the good ones. Bone conduction. Forty-hour battery. Waterproof to
 
 sam: Nik.
 
-nik: I know it\'s weird. Listen. I have this app. It patches into my phone. If you wear one of these, and you\'re anywhere, and something is happening, you tap it twice, and it calls me. And I pick up. Wherever I am. Even at my aunt\'s house in Edison with forty-five Bengali people eating turkey biryani.
+nik: I know it\'s weird. Okay. Patch notes. I have this app. It patches into my phone. If you wear one of these, and you\'re anywhere, and something is happening, you tap it twice, and it calls me. And I pick up. Wherever I am. Even at my aunt\'s house in Edison with forty-five Bengali people eating turkey biryani.
 
 He holds the box out.
 
@@ -326,7 +326,7 @@ TXT bree: theres 6 ambulances on the parkway already. tonight. parked. no number
 TXT bree: im going. i cant not go
 TXT bree: please
 
-You look at the screen for a long time.
+You read it twice.
 
 Then you look at the window over your desk. No frost. Just your own face in the black glass, and behind it, Broad Street, empty, the traffic lights changing for nobody.
 

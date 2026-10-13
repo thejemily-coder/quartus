@@ -17403,6 +17403,1617 @@ Object.assign(EH.episodes.s01e09, {
   }
 });
 
+/* s01e10.js */
+/* S1 · E10 · BROAD STREET (season finale), part 1 of 4: meta, cold open, Act One ("Wednesday"). */
+EH.episode({
+  id: 's01e10', season: 1, number: 10, title: 'Broad Street', look: 's1', runtime: 'finale',
+  cast: ['sam', 'jules', 'nik', 'mikey', 'teddy', 'bree', 'heck', 'frank', 'rosa', 'nonna', 'gigi', 'vinnie', 'simone', 'jayden'],
+  start: 'cold_open',
+  xp: 6,
+  previously: g => [
+    'Pop owes the Iannucci family $41,000. Dante says: by Thanksgiving.',
+    'Femi\'s last message: "M.R. ALIVE. RM 714. THEY CALL YOU 17."',
+    'Teddy is planning one last job. After it, the crew goes for Marisol. All of them.',
+    'Bree: "A lot of people, standing still. Stop him."',
+    g.f('simone9') === 'lied' ? 'Simone knows. You lied when she gave you the chance.' : 'Simone knows. She has two lists.',
+    'On the back of Jules\'s index card, in your handwriting: "Don\'t trust the lucky one."'
+  ],
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      night: true,
+      loc: 'NAVY YARD · BUILDING 7 · SEVENTH FLOOR',
+      clock: { day: 'Wed', date: 'Nov 25', time: '11:40 PM' },
+      text: `> THE CAMERA.
+
+There is no seventh floor of Building 7. It isn\'t on the drawings. The elevator doesn\'t stop there.
+
+It\'s very quiet, and very clean, and it smells like a new car. A long white hallway with doors on both sides, each door with a narrow window and a number. At the end of the hallway, behind glass, a dim room full of screens.
+
+Cole Brannigan stands in front of the screens with a mug of tea. Beside him, in a cardigan, with reading glasses pushed up into gray hair, is a small woman in her late fifties who looks like somebody\'s favorite aunt.
+
+On the screens: a map of Center City. The Benjamin Franklin Parkway, drawn in white, from City Hall to the Art Museum. Dozens of small red dots scattered across the city. A few of them are moving.
+
+BRANNIGAN: Kowal left Port Richmond at four this afternoon. He\'s sleeping in a van on 23rd Street. He\'s bought a thermos and a folding chair. He\'s very organized.
+
+ACHTERBERG: He\'s going to freeze the parade.
+
+BRANNIGAN: He\'s going to freeze the Parkway. The parade\'s on it.
+
+ACHTERBERG: Then let him.
+
+She takes off her glasses and cleans them on her cardigan.
+
+ACHTERBERG: When he does it, every one of them within a mile will feel it. The cold. The nosebleeds. And every one of them will come running toward it, Cole. They can\'t help it. That\'s what the Event selected for. Not strength. Not speed. The ones who run *toward*.
+
+BRANNIGAN: We\'ll have six units on the Parkway. Medic markings. Thermal on every lamppost from 18th to the steps.
+
+ACHTERBERG: And seventeen?
+
+Brannigan sips his tea.
+
+BRANNIGAN: Seventeen will come. He can\'t help it either. He\'s the worst of them for that.
+
+Achterberg puts her glasses back on. She looks through the glass, down the white hallway, at a door with **714** stenciled on it in gray.
+
+Through its narrow window, a girl with dark curly hair is sitting on a bed, staring at the ceiling light. The light is flickering, faster and faster.
+
+ACHTERBERG: And give Miss Reyes a turkey dinner tomorrow. With all the trimmings. She\'s earned it.
+
+The bulb in 714 pops. The girl doesn\'t flinch.`,
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_mikey' },
+
+    /* ================= ACT ONE: WEDNESDAY ================= */
+    a1_mikey: {
+      card: { kind: 'act', label: 'Act One', title: 'Wednesday' },
+      loc: 'MELROSE DINER · SOUTH PHILADELPHIA',
+      clock: { day: 'Wed', date: 'Nov 25', time: '7:15 AM' },
+      text: g => `Two and a half weeks go by the way weeks go by after something. You go to class. You do Femi\'s Calc problems in Femi\'s green notebook, every one of them, *outside first*. You turn in Weisz\'s paper late and get it back with a B-minus and one comment: *Blurry.* You don\'t know if it\'s about the paper.
+
+${g.f('jules9') === 'stay' ? 'Jules sleeps in your bed four nights out of fourteen, with the lamp on, in her clothes. Nobody on the floor says a word about it, which is how you know Simone has said something to all of them.' : 'You see Jules every day. You don\'t talk about the roof.'} Simone ${g.f('simone9') === 'lied' ? 'nods at you in the hallway like a stranger who\'s been polite to you once. It\'s worse than yelling.' : 'sits with you at dinner and calls you Salvatore, and doesn\'t ask you anything in public.'}
+
+Teddy doesn\'t answer his phone. Bree answers once, says *not yet, Wawa*, and hangs up.
+
+On the Wednesday before Thanksgiving, at seven in the morning, Mikey texts you *Melrose. 7:15. I\'m buying.* And you take the Broad Street Line all the way down to Snyder in the dark.
+
+He\'s in a back booth, in plainclothes, with two coffees and a plate of scrapple he\'s not eating. He looks like he hasn\'t slept since you told him.
+
+mikey: The ME who signed the report. Dr. Gerald Feld. Deputy medical examiner, twenty-two years.
+
+He slides his phone across the table. A photo of a man in a fishing hat on a dock, smiling.
+
+mikey: He retired. Monday. The Monday after. He\'s fifty-one. He bought a condo in Boca Raton for cash, and the HOA newsletter says he\'s *thrilled to join the Seabreeze family*.
+
+He takes the phone back.
+
+mikey: So you were right. And I can\'t prove a thing. And my sergeant told me to stop asking, and the guy who told my sergeant was a captain I never met, and the guy who told *him*—
+
+He stops.
+
+mikey: Tomorrow\'s the parade. The task group\'s on plainclothes detail on the Parkway. Brannigan\'s *advising*. He asked for me at the Art Museum end. Specifically me.
+
+He looks at you.
+
+mikey: Then he asked me if my little brother\'s coming to the parade. Just friendly. Just making conversation.
+
+mikey: Don\'t come, Sammy.
+
+sam: I wasn\'t gonna.
+
+mikey: Don\'t touch your ear. I\'m serious. Don\'t come. Stay on Mifflin Street. Help Ma with the bird. Watch it on TV like a normal person.
+
+He pushes the scrapple at you. You eat it. He watches you eat it like Ma does.
+
+mikey: Dinner\'s at four. Pop says he\'s *handling* the other thing. You know what that means?
+
+sam: No.
+
+mikey: Me neither. That\'s what scares me.`,
+      next: 'a1_hub'
+    },
+
+    a1_hub: {
+      loc: 'WEDNESDAY · NOVEMBER 25',
+      clock: { time: '10:00 AM' },
+      text: `The dorm is emptying out for the holiday. Suitcases bumping down the stairwell. Somebody\'s dad double-parked on Broad with the hazards on.
+
+You have the rest of Wednesday. Time for two things.`,
+      hub: {
+        slots: 2, label: 'The day before Thanksgiving',
+        blurb: 'Everybody\'s leaving.',
+        options: [
+          { id: 'w10_jules', text: 'Jules is packing for Ravenscourt. Her door is open. Go in.', cost: 1, tag: 'Jules', go: 'a1_jules' },
+          { id: 'w10_nik', text: 'Nik\'s dad is picking him up at noon for Edison. He keeps saying he has "a thing" to give you.', cost: 1, tag: 'Nik', go: 'a1_nik' },
+          { id: 'w10_simone', text: 'Simone has a 1:10 train to Atlanta from 30th Street. Carry her bag. Try.', cost: 1, tag: 'Simone', go: 'a1_simone' },
+          { id: 'w10_pop', text: 'Go home early. Find out what Pop means by *handling it*.', cost: 1, tag: 'Pop', go: 'a1_pop' },
+          { id: 'w10_vinnie', text: 'Vinnie\'s been texting you *call me* since Monday. Call him.', cost: 1, tag: 'Vinnie', go: 'a1_vinnie' }
+        ],
+        done: 'a1_bree'
+      }
+    },
+
+    a1_jules: {
+      enter: g => { g.flag('jules_box'); g.know('jules_parade', ['sam', 'jules'], 'Jules will be in the sponsors\' grandstand at the Art Museum steps on Thanksgiving morning. Her father\'s firm sponsors the parade.'); },
+      text: g => `Her room is chaos, which is wrong. Jules Pemberton\'s side of 9-11 is always a magazine spread, and today there are three garment bags on the bed and clothes on the floor and a pair of riding boots standing in the middle of the room by themselves like they\'re waiting for someone.
+
+Simone\'s side is already stripped. ${g.f('simone9') === 'lied' ? 'Simone left at eight without saying goodbye to you.' : 'Simone left a note on your door at eight: *Salvatore. Behave. —S.*'}
+
+jules: Don\'t look at anything.
+
+sam: I\'m looking at the boots.
+
+jules: Don\'t look at the boots.
+
+She\'s folding a sweater with great precision, and refolding it.
+
+jules: We do the parade. Every year. My father\'s firm sponsors it, so we sit in the grandstand at the Art Museum steps from eight-thirty until the last balloon, and my mother says something cutting about every float, and Hugh drinks from a flask he thinks no one knows about, and then we drive to Gladwyne and Gran carves a turkey with a knife older than the state of Oklahoma.
+
+sam: That sounds terrible.
+
+jules: It\'s *wonderful*. It\'s the only day of the year all of us are in one place and none of us can leave.
+
+She puts the sweater in a bag.
+
+jules: Come.
+
+sam: To Gladwyne?
+
+jules: God, no. To the parade. The grandstand. I can get you a pass. You\'d sit beside me and be rude about the floats, and my mother would look at you like you\'re a stain, and it would be the best Thanksgiving I\'ve ever had.
+
+You think about Mikey in the back booth. *Don\'t come, Sammy.*
+
+sam: My brother says stay home.
+
+jules: Your brother\'s very wise.
+
+She stops folding.
+
+jules: If you change your mind, I\'ll be in the second row. On the aisle. I always sit on the aisle.
+
+jules: So I can leave.`,
+      next: '@hub'
+    },
+
+    a1_nik: {
+      enter: g => { g.flag('nik_chair'); g.bond('nik', { affection: 1 }); },
+      text: `Nik is sitting on his suitcase to close it. He gets off it when you come in, and the suitcase springs open, and a shirt falls out.
+
+nik: Okay. Okay. Sit down. Close the door.
+
+He goes to his desk and opens a drawer and takes out a small white box. Inside, nestled in foam, two tiny wireless earbuds.
+
+nik: These are the good ones. Bone conduction. Forty-hour battery. Waterproof to a meter. I bought them in September and I never told you because I didn\'t want you to think I was being weird.
+
+sam: Nik.
+
+nik: I know it\'s weird. Listen. I have this app. It patches into my phone. If you wear one of these, and you\'re anywhere, and something is happening, you tap it twice, and it calls me. And I pick up. Wherever I am. Even at my aunt\'s house in Edison with forty-five Bengali people eating turkey biryani.
+
+He holds the box out.
+
+nik: I\'m not saying anything is going to happen. I\'m saying I\'m the guy in the chair. The guy in the chair has to have a *chair*.
+
+You take the box.
+
+nik: Tap twice. That\'s all. Tap twice and I\'m there.
+
+His dad honks from Broad Street. Nik sits on his suitcase again, hard, and it closes.`,
+      next: '@hub'
+    },
+
+    a1_simone: {
+      enter: g => { if (g.f('simone9') === 'lied') { g.bond('simone', { trust: 2, respect: 1 }); g.flag('simone10', 'mended'); } else { g.bond('simone', { affection: 1 }); g.flag('simone10', 'warm'); } },
+      text: g => `30th Street Station is the inside of a cathedral full of people with roller bags. The big board clacks. The bronze angel holds the dead soldier up toward the ceiling the way it has since 1952.
+
+You carry her bag. She lets you.
+
+${g.f('simone9') === 'lied' ? `She doesn\'t say anything until you\'re standing under the board, and her train is *ON TIME*, and there\'s nothing left to do but leave.
+
+simone: Why\'d you come?
+
+sam: Because I lied to you.
+
+She waits.
+
+sam: You gave me one chance, and I lied, and you were right, and I\'m sorry. That\'s all I came to say. You don\'t have to say anything back.
+
+She looks at you for a while.
+
+simone: That\'s two chances, Salvatore. I don\'t give two chances.
+
+sam: I know.
+
+simone: I\'m giving you two chances.
+
+She takes her bag out of your hand. She hugs you, one arm, fast and fierce, and says into your shoulder:
+
+simone: If you die while I\'m in Georgia, I\'ll never forgive you. I\'ll fly back for the funeral and do a *monologue*.` : `She talks the whole way across the station. About Atlanta. About her mother\'s sweet potato pie, which she says is a religious experience, and her grandmother, who doesn\'t approve of theater, and her little cousins, who think she\'s famous.
+
+Under the board, she stops.
+
+simone: You\'re going to do something stupid tomorrow.
+
+sam: What?
+
+simone: I don\'t know what. I have no information. I can see it on you. You\'ve got stupid all over you.
+
+She takes her bag.
+
+simone: Don\'t.
+
+She hugs you, one arm, fast and fierce.
+
+simone: Salvatore. If you die while I\'m in Georgia, I will fly back for the funeral and do a *monologue*.`}
+
+She goes down the stairs to the platform without looking back, which is the Simone way: she exits.`,
+      next: '@hub'
+    },
+
+    a1_pop: {
+      enter: g => { g.know('pop_plan', ['sam', 'frank', 'rosa'], 'Pop has $11,400: his 401(k) from Liberty, cashed out. He\'s going to give it to the Iannuccis on Thanksgiving and ask for more time.'); g.bond('frank', { trust: 1 }); },
+      text: g => `Mifflin Street smells like celery and onions frying in butter. Ma is making the stuffing a day early, the way Nonna taught her, in the big roasting pan.
+
+Pop is at the kitchen table with a shoebox.
+
+He doesn\'t hide it when you come in. That\'s how you know it\'s bad.
+
+frank: Sit down, kid.
+
+The shoebox is full of cash. Rubber-banded stacks of twenties and fifties.
+
+frank: Eleven thousand four hundred. My 401(k) from Liberty. Twenty-six years. I cashed it out Monday. The penalty was a joke. Your mother cried at the bank.
+
+Ma doesn\'t turn around from the stove.
+
+rosa: I didn\'t cry at the bank. I cried in the car.
+
+frank: She cried in the car.
+
+He puts the lid on the box.
+
+frank: Tomorrow they\'re coming. Dante called. Him and the old man, Bruno. To the house. On Thanksgiving. They said they wanna *talk*. So I give them this, and I tell them the rest by summer, and I ask nice.
+
+sam: And if they say no?
+
+He doesn\'t answer.
+
+${g.f('pop9') === 'lied' ? 'He looks at you for a second too long. The way he looked at you in the cab. Like he\'s waiting for you to touch your ear.' : 'He looks at you.'}
+
+frank: Dinner\'s at four. You\'re gonna be here. You\'re gonna sit next to your grandmother and eat, and say grace, and you\'re not gonna say one word to those men. That\'s all I need from you. You hear me?
+
+sam: Yeah, Pop.
+
+Ma puts a spoonful of stuffing in front of you, on a saucer, to taste.
+
+rosa: Eat.`,
+      next: '@hub'
+    },
+
+    a1_vinnie: {
+      enter: g => { g.bond('vinnie', { trust: 1, tension: -1 }); g.know('dante_cap', ['sam', 'vinnie'], 'Vinnie: Dante remembers the cap. Pop\'s Eagles cap, on backward, on the kid under I-95.'); },
+      text: `vinnie: Sally. Finally. Where are you?
+
+sam: Temple. What\'s wrong?
+
+vinnie: I\'m driving \'em tomorrow. Dante and the old man. To your house. Thanksgiving. Four o\'clock. I wanted you to hear it from me.
+
+You don\'t say anything.
+
+vinnie: And listen. Dante\'s been talking. In the car. He thinks I don\'t listen \'cause I\'m the driver. He keeps talking about under 95. The kid. He says the kid had an Eagles cap on backward, old, from like the Reid years, with a sweat stain on the brim.
+
+vinnie: He says he seen that cap before. On your pop. At the Melrose, in September.
+
+The phone is cold against your ear.
+
+vinnie: He ain\'t sure. He\'s a smart guy, he likes to be sure. But he\'s close, Sally. He\'s real close.
+
+vinnie: Don\'t wear the hat.`,
+      next: '@hub'
+    },
+
+    a1_bree: {
+      night: true,
+      loc: 'CARDONE HALL · 9-14',
+      clock: { time: '11:58 PM' },
+      enter: g => { g.sleep(6); g.know('bree_parade', ['sam', 'bree'], 'Bree: the job is the Thanksgiving Day Parade. Teddy left at 4 a.m. Wednesday.'); },
+      text: g => `The ninth floor is dark and empty, all the doors closed, the hallway light buzzing. You\'re the only one left on the floor. You can hear the elevator cables moving in the shaft.
+
+At 11:58, your phone lights up.
+
+TXT bree: wawa
+TXT bree: its the parade
+TXT bree: tomorrow. the parkway. he left this morning at 4 with heck. he took a folding chair. a FOLDING CHAIR
+TXT bree: he thinks if he holds it long enough someone pays and nobody gets hurt
+TXT bree: theres 6 ambulances on the parkway already. tonight. parked. no numbers on them
+TXT bree: im going. i cant not go
+TXT bree: please
+
+You look at the screen for a long time.
+
+Then you look at the window over your desk. No frost. Just your own face in the black glass, and behind it, Broad Street, empty, the traffic lights changing for nobody.
+
+*Don\'t come, Sammy.*
+
+*Stay on Mifflin Street.*
+
+*A lot of people, standing still.*
+
+You set an alarm for 6:00. You lie down in your clothes. ${g.f('jules9') === 'stay' ? 'Across the hall, 9-11 is dark for the first time all semester. You didn\'t know you\'d miss the light.' : ''}
+
+You don\'t sleep much.`,
+      next: 'a2_morning'
+    }
+  }
+});
+
+/* s01e10b.js */
+/* S1 · E10 · BROAD STREET, part 2 of 4: Act Two ("The Parade"). */
+EH.scenes('s01e10', {
+
+  /* ================= ACT TWO: THE PARADE ================= */
+  a2_morning: {
+    card: { kind: 'act', label: 'Act Two', title: 'The Parade' },
+    loc: 'CARDONE HALL · 9-14',
+    clock: { day: 'Thu', date: 'Nov 26', time: '6:00 AM' },
+    text: g => `Thanksgiving. Thirty-four degrees. The sky over the Delaware is the color of a dirty nickel.
+
+You get dressed in the dark. Black hoodie. Gaiter. Sneakers, the left one split at the toe.
+
+On the hook on the back of the door, Pop\'s old Eagles cap, the one you took from the hall closet in September. Faded green. Sweat stain on the brim. ${g.knows('dante_cap') ? '*Don\'t wear the hat,* Vinnie said.' : 'You\'ve worn it every time.'}
+
+${g.f('nik_chair') ? 'Nik\'s earbuds are on your desk in their little white box.' : ''}
+
+You stand there with your hand on the doorknob.`,
+    choices: [
+      { text: 'Call Mikey first. Tell him something\'s going to happen on the Parkway. Don\'t tell him how you know.', tag: 'Call Mikey',
+        fx: g => { g.flag('called_mikey10'); g.heat('mikey', 1); g.bond('mikey', { trust: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a2_call_mikey' },
+      { text: 'Don\'t call anyone. Mikey will try to stop you. Go.', tag: 'Just go',
+        fx: g => { g.flag('called_mikey10', false); g.hidden('revenant_drift', 0.5); }, go: 'a2_cap' }
+    ]
+  },
+  a2_call_mikey: {
+    text: `He picks up on the first ring. He\'s already awake. Of course he is.
+
+mikey: Sammy. What.
+
+sam: Something\'s gonna happen today. On the Parkway. Around the Art Museum end.
+
+Silence.
+
+mikey: How do you know that?
+
+sam: I can\'t tell you that.
+
+mikey: Sammy—
+
+sam: Those ambulances. On the Parkway. Six of them, no unit numbers. They\'re not PFD. Look at them. That\'s all. Just look at them.
+
+A long breath on the other end.
+
+mikey: You\'re coming. Aren\'t you.
+
+You don\'t say anything.
+
+mikey: Goddammit. Okay. Okay. I\'ll look at the ambulances. And if I see you, I\'m gonna put you in the back of my car myself. You hear me?
+
+sam: I hear you.
+
+mikey: I love you, you idiot.
+
+He hangs up before you can say it back.`,
+    next: 'a2_cap'
+  },
+  a2_cap: {
+    text: g => `You look at the cap on the hook.`,
+    choices: [
+      { text: 'Wear it. Backward. It\'s Pop\'s. It\'s the only part of this that feels like you.', tag: 'The cap',
+        fx: g => { g.flag('cap10', true); g.hidden('revenant_drift', 0.5); }, go: 'a2_parkway' },
+      { text: 'Leave it on the hook. Hood up. Nobody\'s face. Nobody\'s hat.', tag: 'No cap',
+        fx: g => { g.flag('cap10', false); }, go: 'a2_parkway' }
+    ]
+  },
+
+  a2_parkway: {
+    loc: 'BENJAMIN FRANKLIN PARKWAY · 20TH STREET',
+    clock: { time: '8:40 AM' },
+    enter: g => { g.know('six_ambulances', ['sam'], 'Six ambulances without unit numbers, staged on the Parkway on Thanksgiving morning.'); },
+    text: g => `${g.f('nik_chair') ? `You put one of the earbuds in on the subway. Tap twice.
+
+nik: *—hello? Hello? Is it working? Bro. BRO. Are you— oh my God, it works. It\'s 7:40 in the morning. Why is it working. Where are you.*
+
+sam: Broad Street Line. Going to the parade.
+
+nik: *…Okay. Okay. Hold on.*
+
+You hear a door. You hear a television, loud, and a lot of people speaking Bengali, and somebody saying *Nikhil, the turkey biryani!*, and then the door closes and it\'s quiet.
+
+nik: *I\'m in my aunt\'s bathroom. I have the 6abc stream on my phone. I have a tablet. I have Google Maps. I have forty-five relatives who think I have diarrhea. I am the guy in the chair. Go.*` : 'You don\'t call anybody. You take the Broad Street Line south to City Hall with your hood up and your hands in your pockets and nobody looks at you, because nobody looks at anyone on the Broad Street Line.'}
+
+The Parkway on Thanksgiving morning is a river of people.
+
+Half a million, the news says later. Families in Eagles jackets and Santa hats, kids on shoulders, grandmothers in folding chairs they brought from home and set up at five in the morning, Mummers in full sequins warming up on the side streets with their saxophones. The smell of coffee and pretzels and cold. The flags of the world down both sides of the Parkway, snapping in the wind.
+
+And the wind. That\'s the first thing you notice. It\'s gusting. Hard. Twenty miles an hour, then nothing, then twenty again, coming down the Parkway off the river like it\'s looking for something.
+
+Up the Parkway, at the end, the Art Museum sits on its hill like a temple, with the grandstand built across the bottom of the steps, red-white-and-blue bunting, a big banner: **PEMBERTON LYLE CAPITAL · PROUD SPONSOR**.
+
+Somewhere in the second row, on the aisle, ${g.f('jules_box') ? 'Jules is sitting so she can leave.' : 'you don\'t know who\'s sitting.'}
+
+The first balloons are coming. You can see them over the crowd, back toward City Hall, five stories tall, bobbing in the gusts with fifty handlers each hanging on to the ropes: a turkey in a pilgrim hat, a cartoon dog with a red bowtie, a giant gingerbread man. When the wind hits them, they lean, and the handlers lean back, and the crowd goes *ohhh*.
+
+At the corner of 20th, in a line along the curb, are the ambulances.
+
+Six of them. White and orange, with *MEDIC* on the side in reflective letters. No unit numbers. No *Philadelphia Fire Department* on the doors. The men standing beside them are wearing EMS jackets over gray polo shirts.
+
+${g.f('nik_chair') ? 'nik: *I see them. On the stream. The wide shot from the helicopter. Bro. Real PFD medic units have numbers on the roof. Big ones. For the helicopters. Those have nothing on the roof. Those are blank.*' : ''}`,
+    choices: [
+      { text: 'Look closer. What are they carrying? What are they watching?', tag: 'Read the street',
+        check: { kind: 'd20', attr: 'wits', skill: 'investigate', dc: 13, bonus: 0, label: 'Read the Parkway', on: { crit: 'a2_scout_good', success: 'a2_scout_good', fail: 'a2_scout_bad', fumble: 'a2_scout_bad' } },
+        if: g => !g.f('nik_chair') },
+      { text: 'Look closer. What are they carrying? What are they watching? Nik has the helicopter shot.', tag: 'Read the street',
+        check: { kind: 'd20', attr: 'wits', skill: 'investigate', dc: 13, bonus: 3, bonusLabel: 'Nik in your ear', label: 'Read the Parkway', on: { crit: 'a2_scout_good', success: 'a2_scout_good', fail: 'a2_scout_bad', fumble: 'a2_scout_bad' } },
+        if: g => g.f('nik_chair') }
+    ]
+  },
+  a2_scout_good: {
+    enter: g => { g.flag('thermal10'); g.know('thermal', ['sam'], 'Halcyon put thermal cameras on the Parkway lampposts. The Changed run cold. They\'re looking for cold.'); },
+    text: g => `You look at the lampposts.
+
+Every lamppost from 20th to the Art Museum has a banner on it. *HAPPY THANKSGIVING PHILADELPHIA.* And above every banner, zip-tied to the pole, a small gray box the size of a paperback with a black glass eye.
+
+Not security cameras. Security cameras are white, and they\'re on the buildings.
+
+You watch one of the men in the EMS jackets. He\'s holding a tablet low, by his hip. On the screen, the crowd in false color: oranges and reds and yellows, half a million warm bodies.
+
+Looking for blue.
+
+${g.f('nik_chair') ? 'nik: *Thermal. That\'s thermal. Bro, that\'s FLIR, those are like four grand each. They\'re looking for— oh. Oh no. You run cold. You said. When you Slip, you run cold.*\n\nsam: Yeah.\n\nnik: *Then don\'t Slip near the lampposts. Don\'t Slip anywhere. Stay warm. Drink something hot. I\'m serious, buy a hot chocolate.*' : 'They\'re looking for cold. For somebody whose body is a few degrees wrong.\n\nYou buy a hot chocolate from a cart on the corner and drink it too fast and burn your tongue.'}
+
+You pull your hood up and keep your face down and move with the crowd, toward 21st.`,
+    next: 'a2_freeze'
+  },
+  a2_scout_bad: {
+    text: `You try to get a look at the men by the ambulances, but the crowd is too thick and too tall, and every time you get close a family with a stroller cuts you off.
+
+You get one glimpse: a man in an EMS jacket holding something low by his hip, a tablet, looking at the crowd instead of the balloons. Everybody else on the Parkway is looking at the balloons.
+
+You pull your hood up and keep your face down and move with the crowd, toward 21st.`,
+    next: 'a2_freeze'
+  },
+
+  a2_freeze: {
+    loc: 'BENJAMIN FRANKLIN PARKWAY · 21ST STREET',
+    clock: { time: '9:41 AM' },
+    enter: g => { g.know('parade_freeze', ['sam'], 'At 9:41 on Thanksgiving morning, Teddy Kowal froze the Benjamin Franklin Parkway.'); },
+    text: g => `At 9:41, the cartoon dog with the red bowtie is passing 21st Street. Five stories of him, leaning in the gust, fifty handlers in matching blue jackets leaning back on the ropes, the crowd going *ohhh*.
+
+And you feel it before you see it.
+
+The cold.
+
+It comes up through the soles of your sneakers, through the asphalt, the way it did on Broad Street in September with the armored car. Your nose starts to bleed. You taste pennies.
+
+Then the Parkway stops.
+
+Not the people. The *Parkway*. Everything on it. The asphalt from 20th to 22nd goes a strange flat gray, like a photograph of asphalt. The metal barricades along both curbs stop, and when a man leans on one, it doesn\'t give, not a millimeter, like leaning on a mountain. The float behind the dog, a giant papier-mâché pumpkin pie with a high school choir on it, stops dead, and the choir kids lurch forward and grab the railings. The ropes go rigid in the handlers\' hands.
+
+And the dog stops.
+
+Five stories of balloon, leaning thirty degrees in a gust that\'s already gone, frozen in the air like a still from a movie. The handlers pull. The ropes don\'t move. The balloon doesn\'t move. A handler lets go of her rope, and it stays exactly where it was, hanging in the air in a stiff curve, pointing at nothing.
+
+Half a million people go quiet at once. It\'s the loudest silence you\'ve ever heard.
+
+Then somebody screams.
+
+Then the pushing starts.
+
+There are four thousand people in the parade, between 20th and 22nd: marchers, band kids, choir kids, balloon handlers, clowns, a troupe of eight-year-old Irish step dancers in green velvet. They can\'t get out. The barricades won\'t move. The floats won\'t move. People on the sidewalks are pushing forward to see, and people in the street are pushing back to get out, and in between them is a frozen steel fence, and in about two minutes somebody is going to get crushed against it.
+
+${g.f('nik_chair') ? 'nik: *Oh my God. Oh my God. The stream just went to a wide shot. The whole— Sam. The whole Parkway is stopped. The anchor is saying "technical difficulties." The anchor is LYING, Sam, I can SEE it.*' : ''}
+
+And there, at the curb at 21st, between a frozen barricade and a frozen pumpkin pie, in a gray Port Richmond Little League hoodie, on one knee on a folding chair cushion, with his bare right hand flat on the asphalt and blood running from both nostrils into his mouth:
+
+Teddy.
+
+Behind him, eight feet tall in a Carhartt jacket with steam rising off his shoulders into the cold air: Heck. Standing guard. Not looking at the crowd. Looking at the ambulances.
+
+Your phone buzzes. And every phone around you buzzes. You look. A push alert, from the Inquirer, from Dana Fiorillo\'s byline, the first line of a story nobody has written yet:
+
+*BREAKING: Group claiming responsibility for Parkway "freeze" demands $5 million from parade sponsor Pemberton Lyle Capital. "Pay by noon and the parade goes on." Video below.*
+
+You don\'t watch the video. You look at the grandstand at the top of the Parkway. **PEMBERTON LYLE CAPITAL · PROUD SPONSOR.**
+
+You look at the crowd at the barricade at 20th, pushing.
+
+You have to get to Teddy.`,
+    choices: [
+      { text: 'Go through the crowd. Shoulders, elbows, sorry, sorry. Fast but human.', tag: 'Push through',
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, label: 'Get to Teddy', physical: true, power: true, on: { crit: 'a2_reach_fast', success: 'a2_reach_fast', partial: 'a2_reach_slow', fail: 'a2_reach_slow', botch: 'a2_reach_slow' } } },
+      { text: 'Stop. The barricade at 20th. A kid is pinned against it. Help her first.', tag: 'The barricade',
+        fx: g => { g.flag('barricade10'); g.hidden('revenant_drift', 0.5); }, go: 'a2_barricade' }
+    ]
+  },
+  a2_barricade: {
+    text: `It\'s one of the step dancers. Eight years old, in green velvet, pressed against the frozen barricade by the crowd behind her, her face going white, her mouth open, not screaming, because there\'s no air in her to scream with.
+
+You put your back to the crowd and your arms out on either side of her, hands on the frozen steel, and you push back. Your shoulders take it. Twenty people leaning on you. Thirty. Your ribs creak.
+
+sam: *BACK UP! THERE\'S KIDS! BACK UP!*
+
+Your voice is louder than you knew it could be. It cracks the silence. A man in an Eagles jacket next to you hears it, and turns around, and puts *his* back to the crowd too, arms out, the way you are. Then a woman. Then two teenagers.
+
+The crowd gives. A foot. Two feet. Enough.
+
+The little girl breathes in, a huge whooping breath, and starts to cry, and her mother is there, grabbing her over the barricade, and you\'re already moving.
+
+By the time you get to 21st, the men in the EMS jackets are already there.`,
+    next: 'a3_teddy'
+  },
+  a2_reach_fast: {
+    enter: g => { g.flag('reach10', 'fast'); },
+    text: `You go through the crowd like you went through traffic on the e-bike in August: gaps that open for half a second, a shoulder, a duck under somebody\'s arm, a vault over a stroller, *sorry, sorry, sorry*. You don\'t Slip. You don\'t have to. You\'re just fast, the human kind of fast, a South Philly kid who\'s been cutting through crowds at Eagles games since he was six.
+
+You come out at the curb at 21st, four feet from Teddy, before anybody in an EMS jacket gets there.
+
+Heck sees you first. His face splits open.
+
+heck: *Papa.*`,
+    next: 'a3_teddy'
+  },
+  a2_reach_slow: {
+    enter: g => { g.flag('reach10', 'slow'); g.injure({ id: 'elbow10', name: 'Elbow to the face (Parkway crowd)', pen: 0, heal: 1 }); },
+    text: `The crowd doesn\'t open. It closes. Somebody\'s elbow catches you in the mouth, and somebody else\'s stroller runs over your foot, and for a long, panicked half a minute you\'re pinned in place between a man in a Santa hat and a woman holding a baby over her head, going nowhere.
+
+You get out. You go around, down 21st and back up through a gap by a Wawa coffee truck, and you come out at the curb with blood in your mouth.
+
+The men in the EMS jackets are already moving. Two of them. Thirty feet away, coming down the curb toward Teddy with a stretcher between them that nobody is lying on.`,
+    next: 'a3_teddy'
+  }
+});
+
+/* s01e10c.js */
+/* S1 · E10 · BROAD STREET, part 3 of 4: Act Three ("Ninety Seconds"). */
+EH.scenes('s01e10', {
+
+  /* ================= ACT THREE: NINETY SECONDS ================= */
+  a3_teddy: {
+    card: { kind: 'act', label: 'Act Three', title: 'Ninety Seconds' },
+    loc: 'THE PARKWAY · 21ST STREET',
+    clock: { time: '9:52 AM' },
+    text: g => `You crouch down next to him at the curb.
+
+Up close, it\'s worse. His hand on the asphalt is gray to the wrist, the same flat photograph-gray as the street, and the gray is creeping up his forearm under the sleeve. His lips are blue. There\'s blood in his teeth. He\'s been holding the whole Parkway for eleven minutes, and it\'s eating him.
+
+teddy: Cold guy.
+
+He doesn\'t look at you. He looks at the dog.
+
+teddy: Listen. Listen to me. You see the dog?
+
+You look up. Five stories of cartoon dog, frozen at thirty degrees, leaning out over the crowd at the corner of 21st. Right above a lamppost. Right above a family on the sidewalk in folding chairs.
+
+teddy: When I let go, everything goes back to what it was doing. That\'s how it works. Ninety seconds after I let go, it all comes back at once. That dog was falling over when I stopped it. It\'s gonna finish.
+
+teddy: I didn\'t think about the wind. I thought about everything. The van. The chair. The money. I didn\'t think about the *wind*, Sam.
+
+It\'s the first time he\'s ever said your name.
+
+teddy: So I can\'t let go. Not till the handlers get back on the ropes. And they won\'t, \'cause they\'re scared, \'cause it\'s *frozen*, \'cause it\'s magic. And the money\'s not coming. Is it.
+
+Up the Parkway, on the big screen beside the grandstand, the 6abc anchors have been replaced by a slide that says *PLEASE STAND BY*.
+
+The cold coming up out of the asphalt is the coldest thing you\'ve ever felt. Your nose is pouring.`,
+    choices: [
+      { text: '"Let go now. On my count. I\'ll get the handlers on the ropes. Let me fix the dog. Let go."', tag: 'Talk him down',
+        check: { kind: 'move', move: 'Talk Them Down', attr: 'charm', skill: 'persuade', label: 'Get Teddy to let go', on: { strong: 'a3_teddy_yes', weak: 'a3_teddy_maybe', miss: 'a3_teddy_no' } } },
+      { text: 'Don\'t argue. Get up. Get the handlers back on the ropes yourself, one by one.', tag: 'The ropes',
+        fx: g => { g.flag('teddy10', 'ropes'); g.bond('teddy', { respect: 1 }); }, go: 'a3_ropes' }
+    ]
+  },
+  a3_teddy_yes: {
+    enter: g => { g.flag('teddy10', 'agreed'); g.bond('teddy', { trust: 2 }); },
+    text: `sam: Let go on my count. I\'ll get the handlers back on the ropes. All fifty. You let go when I say, and the dog comes down slow, and nobody gets hurt, and you go home.
+
+Teddy laughs, red-toothed.
+
+teddy: Home.
+
+sam: To your mom.
+
+He closes his eyes. He nods, once.
+
+teddy: Okay. Your count, cold guy. I\'m tired.
+
+You stand up to go for the ropes, and Teddy opens his mouth to say something else.`,
+    next: 'a3_darts'
+  },
+  a3_teddy_maybe: {
+    enter: g => { g.flag('teddy10', 'maybe'); g.bond('teddy', { trust: 1 }); },
+    text: `sam: Let go on my count. I\'ll get the handlers back on the ropes.
+
+teddy: And the money?
+
+sam: There\'s no money, Teddy.
+
+He looks at you for a long second, blood on his lip.
+
+teddy: There\'s gotta be. There\'s gotta be *something* for this.
+
+He looks at the dog. He looks at the family in folding chairs under the lamppost. A little boy in a Phillies hat waving a tiny flag.
+
+teddy: …Get the ropes. Get the ropes and I\'ll think about it. That\'s all I got.
+
+You stand up to go for the ropes, and Teddy opens his mouth to say something else.`,
+    next: 'a3_darts'
+  },
+  a3_teddy_no: {
+    enter: g => { g.flag('teddy10', 'refused'); g.bond('teddy', { tension: 1 }); },
+    text: `sam: Let go. Please. There\'s no money coming. Let go now.
+
+teddy: You don\'t get to tell me that. Not you. You got a mom with two kidneys and a house on Mifflin Street. Get away from me.
+
+He presses his hand down harder. The gray creeps past his elbow. He makes a sound through his teeth.
+
+teddy: *Get away from me, Sam.*
+
+You stand up. You don\'t go anywhere. Teddy opens his mouth to say something else.`,
+    next: 'a3_darts'
+  },
+  a3_ropes: {
+    text: `You don\'t argue. You get up.
+
+The handlers are huddled on the median in their blue jackets, fifty of them, staring up at the dog. Their supervisor is a woman with a whistle and a clipboard and an expression like the end of the world.
+
+sam: Get back on the ropes! When it unfreezes, it\'s gonna fall. You gotta be on the ropes when it moves!
+
+HANDLER SUPERVISOR: It\'s *frozen*! You can\'t move the ropes!
+
+sam: You don\'t have to move them! Just hold them! Hold on and lean back like you were doing!
+
+She looks at you. A kid in a hoodie with blood down the front of his face, yelling. Then she blows her whistle.
+
+HANDLER SUPERVISOR: *ROPES! Everybody on your rope! Now!*
+
+They go. Slowly. One by one. A rope at a time. You run between them, putting hands on the rigid lines, *this one, here, hold on*.
+
+Twenty of them. Thirty.
+
+Behind you, at the curb, Teddy opens his mouth to say something to you.`,
+    next: 'a3_darts'
+  },
+
+  a3_darts: {
+    loc: 'THE PARKWAY · 21ST STREET',
+    clock: { time: '9:56 AM' },
+    enter: g => { g.know('teddy_darted', ['sam'], 'On the Parkway, Halcyon\'s fake medics darted Teddy Kowal. When his hand left the street, the ninety seconds started.'); },
+    text: g => `A dart blooms in the side of his neck. Red fletching. *Tick.*
+
+Teddy looks surprised. That\'s all. Just surprised, like somebody tapped him on the shoulder on the El.
+
+His hand slides off the asphalt.
+
+teddy: …Ninety.
+
+He falls sideways off the folding chair cushion into the gutter.
+
+The flat gray goes out of the street like a held breath let go. It\'s still frozen. Everything\'s still frozen. But you can *feel* it now, under your feet, the way you can feel ice on the Delaware getting ready to break. A clock, somewhere, started.
+
+*Ninety seconds.*
+
+Two men in EMS jackets are already lifting Teddy onto a stretcher. Fast. Professional. Very gentle with his head.
+
+HALCYON MEDIC: Medical emergency, folks, step back, give us room. He\'s having a seizure. We\'ve got him.
+
+Heck roars.
+
+It isn\'t a word. It\'s heat. The air around him goes wavy, and his Carhartt jacket starts smoking at the shoulders, and the frozen barricade beside him begins to glow a dull red where his hand is on it. The crowd scatters back from him in a ring. The two medics with Teddy\'s stretcher don\'t even look up. Three more, from the ambulance, raise what look like flashlights, and they aren\'t flashlights.
+
+Darts. Into Heck\'s chest, his shoulder, his thigh. He pulls them out like splinters. He keeps coming.
+
+And from up 21st Street, running, in a puffer coat, screaming:
+
+bree: *LET HIM GO! LET HIM GO!*
+
+But it isn\'t Bree\'s voice. It\'s Teddy\'s. It\'s Teddy\'s voice coming out of Bree\'s mouth, perfect, *Let him go*, and one of the medics actually turns around to look at the stretcher, confused, before another one shoots Bree in the shoulder and she sits down hard on the curb.
+
+${g.f('nik_chair') ? 'nik: *Sam. SAM. They\'re shooting people. On the stream. On LIVE TV. The anchors are saying they\'re paramedics. Sam, the anchors are saying they\'re PARAMEDICS—*' : ''}
+
+And then the men turn to you.
+
+You\'re standing in the street with blood running out of your nose, and your breath smoking in a way nobody else\'s breath is smoking, and on the tablet one of them is holding low by his hip, you know exactly what color you are.
+
+Blue.
+
+The one with the tablet looks up from it, and looks at you, and says into the collar of his jacket, very calmly:
+
+HALCYON MEDIC: Seventeen.`,
+    choices: [
+      { text: 'Run. Over the frozen barricade, under the float, through the choir kids. Break the line of sight.', tag: 'Run',
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, label: 'Get clear of the darts', physical: true, power: true, on: { crit: 'a3_evade', success: 'a3_evade', partial: 'a3_hit', fail: 'a3_hit', botch: 'a3_hit' } } },
+      { text: 'Go at the one with the tablet. Take it. Take him down.', tag: 'Fight',
+        check: { kind: 'pool', attr: 'body', skill: 'brawl', diff: 2, label: 'Take the tablet', physical: true, power: true, on: { crit: 'a3_tablet', success: 'a3_tablet', partial: 'a3_hit', fail: 'a3_hit', botch: 'a3_hit' } } }
+    ]
+  },
+  a3_evade: {
+    enter: g => { g.flag('darts10', 'evaded'); },
+    text: `You go over the frozen barricade with one hand, like a hurdle at Neumann-Goretti. A dart *tinks* off the steel where your hip was. You go under the edge of the papier-mâché pumpkin pie on your knees. A dart sticks in the crust above your head, quivering. You come out among the choir kids, and they part around you, screaming, and you\'re through them and around the far side of the float, and you put your back against it and breathe.
+
+They don\'t follow. They don\'t have to. They\'re spreading out. Four of them, in a loose ring, coming around both ends of the float, patient, unhurried, like men herding a dog into a corner.
+
+You\'re cornered between a frozen pie and a frozen barricade with nowhere to go but up.
+
+You could Slip. You know what\'s waiting in there. You can feel it, the way you feel a step that isn\'t there in the dark.`,
+    next: 'a3_jules'
+  },
+  a3_tablet: {
+    enter: g => { g.flag('darts10', 'tablet'); g.know('tablet10', ['sam'], 'You took a Halcyon tablet off a fake medic on the Parkway. On it, a list. Your face, labeled 17. And faces you know.'); },
+    text: `You go straight at him. He doesn\'t expect it. Nobody ever expects the kid to come *at* them.
+
+You hit him at the waist like you\'re sliding into second, and he goes down on the frozen asphalt and the asphalt doesn\'t give an inch, and his head bounces. You come up with the tablet in your hands.
+
+On the screen, for one second, before it locks: a list. Thumbnails. Faces. Teddy. Bree. Heck. A girl with dark curly hair, *RESIDENTIAL*. Femi, with a gray line through his photo.
+
+And you. Your Temple ID photo. *17 · CONFIRMED (PENDING)*.
+
+The screen goes black. Somebody shoots at you. The dart goes through the hood of your sweatshirt and out the other side. You run. Over the barricade, under the edge of the frozen pie, through the choir kids, and you come around the far side of the float and put your back against it, and they don\'t follow.
+
+They don\'t have to. They\'re spreading out. Four of them, in a loose ring, coming around both ends of the float, patient, unhurried, like men herding a dog into a corner.
+
+You\'re cornered between a frozen pie and a frozen barricade with nowhere to go but up.`,
+    next: 'a3_jules'
+  },
+  a3_hit: {
+    enter: g => { g.flag('darts10', 'hit'); g.injure({ id: 'dart10', name: 'Dart (sedative, fighting it)', pen: 1, heal: 1, affects: ['reflex', 'wits'] }); },
+    text: `You make it two steps.
+
+The dart takes you in the back of the left shoulder. It doesn\'t hurt. That\'s the worst part. A pinch, a tick, and then a warmth that spreads down your arm like somebody poured honey in your sleeve.
+
+You pull it out. Half the plunger\'s gone in. You keep going, on legs that feel like they belong to someone a little farther away than you, over the frozen barricade, under the edge of the frozen pumpkin pie, through the choir kids, and you come out on the far side of the float and put your back against it and slide down it until you\'re sitting.
+
+They don\'t follow. They don\'t have to. Four of them, in a loose ring, coming around both ends of the float. Patient. Unhurried. Men walking toward a dog that\'s already lying down.
+
+The world is getting soft at the edges. You fight it. You bite the inside of your cheek until it bleeds and the edges come back, a little.`,
+    next: 'a3_jules'
+  },
+
+  a3_jules: {
+    loc: 'THE PARKWAY · 21ST STREET',
+    clock: { time: '9:57 AM' },
+    enter: g => { g.flag('jules_walked'); g.hidden('jules_debt', 2); g.know('jules_darts', ['sam'], 'On the Parkway, Jules walked down the middle of the frozen street through Halcyon\'s darts. Every one of them missed. Her nose was bleeding. You saw it, and you don\'t know what you saw.'); },
+    text: g => `And then you see her.
+
+She\'s coming down the middle of the frozen Parkway. Not on the sidewalk. *In the street*, inside the barricades, where nobody is supposed to be, between the frozen floats, walking straight down the dotted white line in a camel coat and pearl earrings and the riding boots from her bedroom floor, like the street was built for her to walk down.
+
+She climbed over the barricade at the grandstand. She left her seat on the aisle. She\'s been walking for fifteen minutes toward the one place in Philadelphia everybody else is running from.
+
+The men in the EMS jackets see her too. One of them lifts the thing that isn\'t a flashlight. Not at her. At you. And she steps into the line between you without breaking stride, like she\'s stepping around a puddle.
+
+He fires.
+
+You watch the dart come. You can see it, slow, the way you see things now. You see it go past her ear close enough to move her hair. It hits the frozen rope of the cartoon dog behind her and *stops*, dead, in midair, stuck to the stasis like a fly on flypaper, and hangs there.
+
+Another shot. The dart hits the pavement in front of her and stands straight up, quivering, like it\'s been planted.
+
+Another one jams. You hear the man swear.
+
+The fourth man fires from ten feet away, straight at her chest, and in that exact second a gust comes down the Parkway off the river, the first gust since the freeze, and it lifts the hem of her coat out like a sail, and the dart goes through the camel wool an inch from her ribs and out the back and skitters away across the asphalt.
+
+She doesn\'t look at any of it. She doesn\'t look at the men. She doesn\'t look at the darts. She looks at you.
+
+Her nose is bleeding. A thin red line from one nostril to her lip. She doesn\'t seem to notice it.
+
+She gets to you. She stands between you and the four men, her back to them, and looks down at you sitting against the frozen pie.
+
+jules: Get up, Kearney.
+
+From somewhere behind the men, a radio crackles. A calm voice you know.
+
+*Hold fire. All units, hold fire. That\'s the Pemberton girl. Hold.*
+
+The four men lower their arms. They stand there. Not leaving. Waiting.
+
+Jules holds her hand down to you. You take it. It\'s ice cold. She pulls you up, and she\'s stronger than she looks, and she doesn\'t let go.
+
+sam: Jules. They were— the darts. They all—
+
+jules: Nothing happens to me. I told you. On the roof.
+
+She says it flat. Like a fact she\'s sick of. She wipes her lip with the back of her glove and looks at the blood on the leather like it belongs to somebody else.
+
+${g.f('nik_chair') ? 'nik: *…Sam? Sam, the stream just showed— there\'s a girl walking down the— is that JULES? Sam. Sam, I just watched four guys miss Jules Pemberton from ten feet away. Sam, what am I looking at.*\n\nYou don\'t answer him. You don\'t know.' : 'You don\'t know what you just saw. You know exactly what you just saw. You don\'t know what it means.'}
+
+And under your feet, the street shivers.
+
+*Thirty seconds.*`,
+    next: 'a3_choice'
+  },
+
+  a3_choice: {
+    loc: 'THE PARKWAY · 21ST STREET',
+    clock: { time: '9:57 AM' },
+    text: g => `You can see all of it at once. That\'s the thing about how you see now. All of it, laid out, like a map.
+
+**Teddy.** On the stretcher, unconscious, being slid into the back of the third ambulance. One medic climbing in after him. The other with his hand on the door. When those doors close, Teddy goes to the Navy Yard, to a room with a number on it, and his mother sits in her recliner on Edgemont Street with the cycler humming and waits for him to come home for the rest of her life.
+
+**The dog.** Five stories of balloon, frozen mid-fall, over the lamppost at the corner of 21st. When it comes back, it\'s going to hit that lamppost with all the wind in the world, and the lamppost is going to come down. And under the lamppost, on the sidewalk, in a wheelchair with a blanket over her knees, is a woman you know. Carmen Torres. Her hip, from August. From the Hitch. From the bus you were too slow for.
+
+And standing next to her chair, in a puffy coat, eight years old, looking straight at you across the frozen Parkway, is Jayden.
+
+He knows you. Of course he knows you. He knows the cold.
+
+jayden: *COLD MAN!*
+
+**Heck.** Burning on his knees by the barricade with four darts in him, too hot to touch, too slow to stand.
+
+**Bree.** On the curb, darted, trying to crawl toward Teddy\'s ambulance on her hands.
+
+*Twenty seconds.*
+
+You can\'t do all of it. You know that. You\'ve known it since August, since the bus, since Carmen\'s hip. You can\'t do all of it.
+
+Jules is still holding your hand.
+
+jules: Sam. *Go.*`,
+    choices: [
+      { text: 'Teddy. The ambulance doors. He let go of forty thousand dollars for your father. Get him out.', tag: 'Teddy',
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, label: 'Reach the ambulance', physical: true, power: true, near: ['jules'], on: { crit: 'a3_save_teddy', success: 'a3_save_teddy', partial: 'a3_save_teddy_hurt', fail: 'a3_save_teddy_hurt', botch: 'a3_save_teddy_hurt' } } },
+      { text: 'Jayden and Carmen. The lamppost. You were too slow once. Not twice.', tag: 'Jayden',
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, label: 'Reach the lamppost', physical: true, power: true, near: ['jules'], on: { crit: 'a3_save_jayden', success: 'a3_save_jayden', partial: 'a3_save_jayden_hurt', fail: 'a3_save_jayden_hurt', botch: 'a3_save_jayden_hurt' } } },
+      { text: 'Both. Slip. You know what\'s waiting in there. Do it anyway.', tag: 'Both', slip: true,
+        fx: g => { g.flag('choice10', 'both'); if (g.S.drift >= 9 || g.hv('revenant_drift') >= 10) g.flag('unstick10'); }, go: 'a3_both' }
+    ]
+  },
+
+  a3_save_teddy: {
+    enter: g => { g.flag('choice10', 'teddy'); g.flag('teddy_saved'); g.flag('heck_taken10'); g.bond('teddy', { trust: 3, affection: 2 }); g.bond('bree', { trust: 2 }); g.hidden('halcyon_heat', 1); },
+    text: `You let go of Jules\'s hand.
+
+You run. Not the Slip. Just running, the way you ran across Broad Street in August toward a bus, every bit of you, the frozen asphalt hard under your sneakers, and you get to the third ambulance as the medic is swinging the door shut, and you hit the door with your shoulder and it bangs back open and catches him in the face.
+
+The one inside is reaching for something on his belt. You don\'t let him get there. You grab the stretcher by its rail and pull, and it comes out of the ambulance on its wheels and drops off the back bumper with a crash, and Teddy rolls half off it onto the street, and you get your arms under him and drag him, backward, away, ten feet, twenty, toward the crowd, toward the cameras, toward half a million people with their phones up.
+
+The medics stop at the edge of the crowd. They look at the phones. They look at each other.
+
+Then the street lets go.
+
+It comes back all at once, the way Teddy said. Every sound. Every bit of wind. The barricades rattle. The pumpkin-pie float lurches forward a foot and the choir kids scream. And the dog finishes falling.
+
+Five stories of balloon come down on the corner of 21st in the gust, and the handlers on the ropes, the ones you got back on the ropes or the ones who never left, lean back with everything they have, and it isn\'t enough. The dog hits the lamppost. You hear the steel scream. You see it start to go over, toward the sidewalk, toward a wheelchair.
+
+And Heck catches it.
+
+He\'s on his feet. You don\'t know how. Four darts in him, smoking, and he gets under the falling lamppost with both burning hands and *holds* it, and the steel goes soft and red where his hands are, and bends, and the whole pole folds in half over his shoulders like a drinking straw and comes down in the street behind him instead of on the sidewalk in front of him.
+
+Jayden is screaming. Carmen has her arms around him. Nobody\'s hurt.
+
+Heck stands there in the street with the bent pole across his back, steam coming off him in sheets.
+
+He looks at you. He smiles. He says, very gently:
+
+heck: Papa.
+
+Then he falls over.
+
+The men in the EMS jackets are on him before he hits the ground. Five of them. He doesn\'t fight. He\'s out. They get him on a stretcher with gloved hands, and you hear one of them hiss when he touches Heck\'s arm through the glove, and they have him in the back of an ambulance in eleven seconds, and the doors close, and it pulls away up 21st Street with its lights going and no siren.
+
+Teddy is in your arms in the gutter, unconscious, breathing.
+
+Heck is gone.`,
+    next: 'a3_bree'
+  },
+  a3_save_teddy_hurt: {
+    enter: g => { g.flag('choice10', 'teddy'); g.flag('teddy_saved'); g.flag('heck_taken10'); g.bond('teddy', { trust: 3, affection: 2 }); g.bond('bree', { trust: 2 }); g.hidden('halcyon_heat', 1); g.injure({ id: 'ribs10', name: 'Cracked ribs (ambulance door)', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
+    text: `You let go of Jules\'s hand and run, and halfway there your legs remember the dart, or the cold, or eleven weeks of not sleeping, and you stumble.
+
+You get there anyway. Late. The door is already closing. You get your arm in the gap and the medic slams it on you, twice, hard, and you feel something in your side go *crack* like a stick in a fire. You don\'t let go. You pull the door open with your broken side screaming and grab the stretcher rail and pull, and it comes out and drops off the bumper with a crash, and Teddy rolls into the street, and you drag him, backward, toward the crowd, toward the phones.
+
+The medics stop at the edge of the crowd. They look at the phones.
+
+Then the street lets go.
+
+It comes back all at once. Every sound. Every bit of wind. And the dog finishes falling. It hits the lamppost, and the steel screams, and the pole starts to go over toward the sidewalk, toward a wheelchair.
+
+And Heck catches it.
+
+Four darts in him, smoking, and he gets under the falling lamppost with both burning hands and holds it, and the steel goes soft and red where his hands are, and folds over his shoulders like a drinking straw and comes down in the street behind him instead of on the sidewalk.
+
+Jayden is screaming. Carmen has her arms around him. Nobody\'s hurt.
+
+Heck looks at you across the street. He smiles.
+
+heck: Papa.
+
+Then he falls over, and the men in the EMS jackets are on him before he hits the ground, and they have him in the back of an ambulance in eleven seconds. It pulls away up 21st Street with its lights going and no siren.
+
+Teddy is in your arms in the gutter, breathing. Every breath you take is a knife.
+
+Heck is gone.`,
+    next: 'a3_bree'
+  },
+
+  a3_save_jayden: {
+    enter: g => { g.flag('choice10', 'jayden'); g.flag('teddy_taken10'); g.bond('jayden', { trust: 3, affection: 3 }); g.bond('carmen', { trust: 3, affection: 2 }); g.know('carmen_cold_man', ['sam', 'carmen', 'jayden'], 'On the Parkway, the cold man came back for Jayden and Carmen. This time he was fast enough.'); g.hidden('revenant_drift', -1); },
+    text: `You let go of Jules\'s hand.
+
+You run. Not toward the ambulance. Away from it. Across the frozen Parkway, between the floats, toward the corner of 21st, toward a boy in a puffy coat yelling *cold man* like it\'s your name.
+
+Behind you, you hear the ambulance doors close. You hear Bree make a sound you will hear for the rest of your life. You don\'t turn around.
+
+The street lets go.
+
+It comes back all at once, the way Teddy said. Every sound. Every bit of wind. The barricades rattle. And the dog finishes falling. Five stories of balloon come down on the corner in the gust, and the handlers lean back on the ropes with everything they have, and it isn\'t enough, and it hits the lamppost, and you hear the steel scream.
+
+You\'re already there.
+
+You get Carmen\'s wheelchair by the handles and Jayden by the back of his coat, and you pull, the way you pulled him off Broad Street in August, and the chair tips back on its wheels and rolls, and you all go over together in a heap on the sidewalk six feet away.
+
+The lamppost comes down where they were. It hits the folding chairs and the curb with a sound like a car crash, and the glass globe on top explodes across the sidewalk, and the cartoon dog sags over it, deflating, with its red bowtie in the gutter.
+
+Jayden is on top of you. He\'s not crying. He\'s looking at you from six inches away with his whole face.
+
+jayden: You came back.
+
+sam: Yeah, buddy.
+
+jayden: You were *faster* this time.
+
+Carmen is on the sidewalk on her side with her bad hip, laughing or crying, holding on to your sleeve. She says something in Spanish to the sky. You only catch *San Judas*.
+
+And behind you, on 21st Street, an ambulance with no numbers on its roof pulls away with its lights going and no siren. Teddy is in it.
+
+Heck is on his knees in the street, steaming, roaring at the back of it. He gets up. He starts to run after it, burning, and he\'d catch it, too, he\'d tear the doors off, except Bree is hanging on his arm with both hands, darted, half-conscious, crying, *Hector, no, no, they want you too, they want you too*, and he stops. He stops for her.
+
+He stands in the street with his hands on fire and watches it go.`,
+    next: 'a3_bree'
+  },
+  a3_save_jayden_hurt: {
+    enter: g => { g.flag('choice10', 'jayden'); g.flag('teddy_taken10'); g.bond('jayden', { trust: 3, affection: 3 }); g.bond('carmen', { trust: 3, affection: 2 }); g.know('carmen_cold_man', ['sam', 'carmen', 'jayden'], 'On the Parkway, the cold man came back for Jayden and Carmen. This time he was fast enough.'); g.hidden('revenant_drift', -1); g.injure({ id: 'glass10', name: 'Glass cuts and a wrenched shoulder (lamppost)', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
+    text: `You let go of Jules\'s hand and run, across the frozen Parkway toward a boy yelling *cold man*, and halfway there your legs remember the cold and the dart and eleven weeks of no sleep, and you stumble, and you get up, and you\'re late.
+
+Behind you, you hear the ambulance doors close. You hear Bree make a sound you will hear for the rest of your life.
+
+The street lets go. The dog finishes falling. It hits the lamppost, and the steel screams, and the pole comes over.
+
+You get there with nothing left. You don\'t have time to pull. You throw yourself over them, over Carmen in her chair and Jayden beside it, your arms around both of them, and the lamppost comes down beside you, close enough to feel the wind of it, and the glass globe on top explodes across all three of you.
+
+When you lift your head, there\'s glass in your hair and your back and your hands, and your shoulder\'s wrong, and Jayden is under you, looking up from six inches away.
+
+jayden: You came back.
+
+sam: Yeah, buddy.
+
+jayden: You\'re bleeding.
+
+sam: Yeah.
+
+jayden: You were faster this time, though.
+
+Carmen is holding on to your sleeve, saying *San Judas, San Judas* to the sky.
+
+And behind you, an ambulance with no numbers on its roof pulls away up 21st Street, lights going, no siren. Teddy is in it.
+
+Heck starts to run after it, burning, and Bree hangs on his arm with both hands, darted, half-conscious, *Hector, no, they want you too*, and he stops. He stops for her.`,
+    next: 'a3_bree'
+  },
+
+  a3_both: {
+    enter: g => { g.flag('teddy_saved'); g.bond('teddy', { trust: 3 }); g.bond('jayden', { trust: 3, affection: 3 }); g.bond('carmen', { trust: 2 }); if (g.f('unstick10')) { g.drift(3); g.hidden('revenant_drift', 3); g.injure({ id: 'unstick10', name: 'Time debt (Unstick)', pen: 2, heal: 3, affects: ['body', 'reflex', 'wits'] }); g.know('revenant5', ['sam'], 'In the Slip on the Parkway, the man who stands like you walked toward you between the frozen balloons. "You can\'t carry all of them." You said: "Watch me."'); } },
+    text: g => `You let go of Jules\'s hand.
+
+You step through.
+
+It\'s January. It\'s *deep* January, the kind under the river, the kind under 95. The balloons hang. The wind hangs. A dart hangs in the air beside Jules\'s ear, and Jules hangs, her hand still out where yours was. Jayden\'s mouth is open on *MAN*. Bree is a statue on the curb, reaching.
+
+${g.f('unstick10') ? `And the cold closes over you like ice over a hole.
+
+You know it immediately. You\'ve been here twice. Under 95 and in the stairwell. Stuck. The walls of the second getting thick around you. This time you don\'t fight it. This time you *use* it.
+
+You go to Teddy first. Into the back of the ambulance, past the frozen medic, and you lift him off the stretcher, and he weighs nothing, nothing weighs anything here, and you carry him across the frozen Parkway and lay him down on the sidewalk on the far side of the crowd, under a hundred phones held up and frozen, and you fold his gray hand on his chest.
+
+Then you go to the corner of 21st. You stand under the frozen dog and look at the lamppost and the angle and the wind, and you take Carmen out of her wheelchair, gently, her bad hip, and carry her thirty feet, and come back for Jayden, and then for the chair.
+
+You\'re so cold your teeth have stopped chattering. That\'s bad. You know that\'s bad.
+
+You turn around.
+
+He\'s standing in the middle of the Parkway, between the frozen floats, ten feet from you.
+
+Your face. Older. Gray at the temples. A gap where the ring finger should be. He\'s not frozen. He\'s walking toward you. His breath doesn\'t smoke. He doesn\'t have any warmth left to smoke.
+
+old_sam: You can\'t carry all of them.
+
+His voice is yours, worn to the wire.
+
+sam: Watch me.
+
+He stops. He looks at you for a long time. Something moves in his face, and you know it, because it\'s your face, and it\'s the thing your face does right before you cry.
+
+old_sam: I did. I watched. That\'s all I do.
+
+He turns and looks at Jules, frozen beside the pumpkin pie with her hand still out where yours was, a dart hanging in the air beside her ear.
+
+old_sam: Don\'t trust the lucky one.
+
+Then he\'s gone, and the ice is at your mouth, and you grab for anything, and what you grab is Jules\'s hand, cold, in your hand, two seconds ago, *Get up, Kearney*, and you pull, and you pull—` : `You go to Teddy first. Into the ambulance, past the frozen medic, and you lift him off the stretcher and carry him across the frozen Parkway, and lay him on the sidewalk under a hundred frozen phones.
+
+Then the corner of 21st. Carmen out of her chair, gently, her bad hip. Jayden. The chair.
+
+You step back out.`}
+
+The street lets go.
+
+It all comes back at once. The wind. The dog falls on the lamppost, and the steel screams, and the pole comes down across an empty sidewalk and a wheelchair with nobody in it. The ambulance doors slam on an empty stretcher. Half a million people scream at once, because a boy is gone from the back of an ambulance, and a woman and a child are gone from a wheelchair, and they\'re all on the other side of the street now, and nobody saw them move.
+
+${g.f('unstick10') ? `And you\'re on your knees in the middle of the Parkway.
+
+Your nose is pouring. Your ears are bleeding. You can\'t feel your hands. You look at your watch, and it says 10:01, and it was 9:57, and you don\'t know where four minutes went.
+
+Somebody is kneeling in front of you. Somebody is holding your face in both hands. You know the hands.
+
+mikey: *Sammy.*
+
+He\'s in plainclothes, with his badge on a chain, and his face is white.
+
+mikey: Sammy. You were— I was *looking* at you. I was looking right at you. You were standing next to the girl, and then you were *here*, and you were— Jesus Christ, you\'re like ice, you\'re *ice*—
+
+He\'s looking at your face. At the blood. At the frost in your eyebrows.
+
+He knows. You watch him know.
+
+mikey: It\'s you.
+
+He doesn\'t say it like a question.
+
+mikey: The Blur. It\'s you. It\'s been you since August.
+
+You can\'t answer. Your teeth won\'t work. He pulls his hoodie off over his head, right there in the street, and puts it on you, over your sweatshirt, and pulls you into him.
+
+mikey: Okay. Okay. I got you. I got you, Sammy. Nobody\'s taking you anywhere.` : 'You\'re standing beside Jules again with your nose bleeding, like you never moved.'}`,
+    next: 'a3_bree'
+  },
+
+  a3_bree: {
+    loc: 'THE PARKWAY · 21ST STREET',
+    clock: { time: '10:03 AM' },
+    enter: g => { if (g.f('unstick10')) { g.heat('mikey', 10); g.know('sam_slip', ['mikey']); g.flag('mikey_knows'); } g.know('mikey_bree', ['sam', 'mikey'], 'On the Parkway, Mikey stopped a fake ambulance from taking Bree Kowal. He made them open the doors on live TV.'); },
+    text: g => `They try to take Bree.
+
+Two of them get her onto a stretcher on the curb while she\'s half under from the dart, and they\'re rolling her toward the fourth ambulance when a voice comes across the street. A cop voice. A South Philly cop voice, the loudest voice in the world.
+
+mikey: *PPD! Stop that stretcher!*
+
+${g.f('called_mikey10') ? 'He\'s been standing beside the fourth ambulance for an hour. Since you called him. Watching it. Watching the men in the polo shirts. Writing things down.' : 'He\'s coming down 21st Street at a run, badge out, holding it over his head.'}
+
+HALCYON MEDIC: Officer, we\'re contracted EMS, this patient is having a—
+
+mikey: Then you won\'t mind showing me your PFD certification. And your unit number. And the name of your medical director.
+
+He puts himself between the stretcher and the ambulance doors. He\'s not big, Mikey, not like Heck. But he\'s been a cop four years and a soldier four before that, and he stands like a wall.
+
+mikey: And you won\'t mind if all these nice people film it.
+
+He turns around to the crowd and holds his badge up.
+
+mikey: *Everybody! Phones up! Get his face! Get the truck!*
+
+Five hundred phones come up.
+
+The man in the EMS jacket looks at the phones. He touches his ear. He listens.
+
+Then he lets go of the stretcher, and he and his partner get back in the fourth ambulance, and it pulls away up 21st Street with its lights going and no siren. Like the others.
+
+Bree sits up on the stretcher. She looks at Mikey. Then she says, in Mikey\'s exact voice, perfect, cracked with the same fear:
+
+bree: *Thanks, officer.*
+
+And she slides off the stretcher and goes to find ${g.f('choice10') === 'jayden' ? 'Heck' : 'Teddy'}.
+
+Across the street, Mikey looks at you.
+
+${g.f('mikey_knows') ? 'He doesn\'t say anything. He doesn\'t have to. He knows, now. You watch him put it in the drawer with everything else. You watch the drawer not close.' : 'He looks at you for a long time, standing there in the street with blood on your face, beside Jules Pemberton. Then he looks at the ambulances going away up 21st. He\'s adding it up. You watch him add it up.'}
+
+${g.f('nik_chair') ? 'In your ear, very quietly, from a bathroom in Edison, New Jersey:\n\nnik: *…Bro. Your brother\'s a legend.*' : ''}`,
+    next: 'a4_waterworks'
+  }
+});
+
+/* s01e10d.js */
+/* S1 · E10 · BROAD STREET, part 4 of 4: Act Four ("Broad Street"), tags, polls. */
+EH.scenes('s01e10', {
+
+  /* ================= ACT FOUR: BROAD STREET ================= */
+  a4_waterworks: {
+    card: { kind: 'act', label: 'Act Four', title: 'Broad Street' },
+    loc: 'FAIRMOUNT WATER WORKS · BEHIND THE ART MUSEUM',
+    clock: { time: '11:20 AM' },
+    enter: g => { g.heat('press', 1); },
+    text: g => `Behind the Art Museum, down the hill, the old Water Works sits on the bank of the Schuylkill like a row of little Greek temples somebody forgot. Nobody\'s down here. Everyone in Philadelphia is up on the Parkway, or watching it on television.
+
+The river is the color of a nickel. Boathouse Row is across the water. A goose walks past.
+
+You\'re sitting on the stone wall over the river. ${g.f('choice10') === 'teddy' || g.f('choice10') === 'both' ? 'Bree took Teddy to Jefferson in a cab, conscious, furious, alive. Heck went with them.' : 'Teddy is gone. Bree took Heck back to Port Richmond in a cab, both of them crying.'} ${g.f('mikey_knows') ? 'Mikey had to go back to the task group. He made you promise to be on Mifflin Street at four. He made you say it twice.' : 'Mikey had to go back to the task group. *Four o\'clock,* he said. *Mifflin Street. Or I come get you.*'}
+
+Jules is sitting next to you. Her nose has stopped bleeding. There\'s a smear of dried blood on her lip she hasn\'t noticed.
+
+You take the handkerchief out of your pocket. White, ironed, *JLP* in navy thread. You\'ve had it since September. You hold it out.
+
+She looks at it. She laughs, once, surprised, and takes it, and wipes her lip, and looks at the blood on her own monogram.
+
+jules: You kept it.
+
+sam: You said keep it.
+
+jules: People don\'t usually do what I say. They do what I *want*. It\'s different.
+
+The goose walks back the other way.
+
+sam: Jules. On the Parkway. The darts.
+
+jules: Yes.
+
+sam: All of them.
+
+jules: Yes.
+
+She folds the handkerchief in half. In half again.
+
+jules: What did *you* do? You were next to me. And then you were across the street with Jayden, or in the back of an ambulance. I was holding your hand, Sam. I *felt* you go.
+
+You don\'t answer. She doesn\'t answer. You sit on the wall over the Schuylkill with both your secrets between you, close enough to touch.`,
+    choices: [
+      { text: '"What if it was me?" Say it. See what she does.', tag: 'What if',
+        fx: g => { g.flag('waterworks10', 'whatif'); g.bond('jules', { trust: 1 }); }, go: 'a4_whatif' },
+      { text: 'Don\'t ask. Take her hand. Just sit here.', tag: 'Her hand',
+        fx: g => { g.flag('waterworks10', 'hand'); g.hidden('revenant_drift', -0.5); }, go: 'a4_hand' },
+      { text: 'Kiss her. On a wall by the river, in front of a goose, with blood on both your faces.', tag: 'Kiss her',
+        fx: g => { g.flag('waterworks10', 'kiss'); g.bond('jules', { affection: 1 }); }, go: 'a4_kiss' }
+    ]
+  },
+  a4_whatif: {
+    text: `sam: What if it was me?
+
+She goes very still.
+
+It\'s her line. Her text, at 12:58 in the morning in October, the one you read at 1:09 and typed nine answers to and sent none. *What if it was me.*
+
+She looks at you. She knows exactly what you\'re doing.
+
+jules: What if it was?
+
+sam: What if it was?
+
+Neither of you says anything else. The river goes by. You both sit there, on the edge of it, looking at each other, each of you holding a door shut from the inside and listening for footsteps on the other side.
+
+Then she takes your hand. She laces her fingers through yours, all the way, and holds on.
+
+jules: Ask me some other time.
+
+sam: I will.
+
+jules: I know you will. I\'m counting on it.`,
+    next: 'a4_hugh'
+  },
+  a4_hand: {
+    text: `You don\'t ask. You take her hand.
+
+She looks down at it. Then she laces her fingers through yours, all the way, and holds on, and puts her head on your shoulder, and the two of you sit on the wall over the Schuylkill and watch the water go by.
+
+You don\'t say anything. She doesn\'t say anything. It\'s the best conversation you\'ve ever had.
+
+After a while, very quietly, into your shoulder:
+
+jules: Someday I\'m going to tell you something. And you\'re going to tell me something. And it\'s going to be the worst day of both our lives.
+
+sam: Yeah.
+
+jules: Not today.
+
+sam: Not today.`,
+    next: 'a4_hugh'
+  },
+  a4_kiss: {
+    text: `You kiss her.
+
+On a stone wall over the Schuylkill, with a goose watching, with dried blood on her lip and fresh blood on yours, both of you shaking with cold and with whatever happened on the Parkway, and she grabs the front of your sweatshirt in both fists and kisses you back like she\'s angry about it.
+
+When it\'s over she keeps her forehead on yours.
+
+jules: That doesn\'t answer anything.
+
+sam: I know.
+
+jules: I\'m still going to ask.
+
+sam: I know.
+
+jules: And you\'re going to tell me.
+
+sam: Someday.
+
+jules: *Soon*, Kearney. I don\'t do someday.`,
+    next: 'a4_hugh'
+  },
+  a4_hugh: {
+    text: `Her phone rings. She looks at it.
+
+jules: Hugh.
+
+She answers.
+
+jules: Yes. Yes. I\'m fine. Behind the museum. No. *No.* Tell her I\'ll be up in five minutes. Tell her I said *five*.
+
+She hangs up.
+
+jules: My mother is, quote, *having an aneurysm in public*. My father has had four phone calls with the Mayor. Gran watched the whole thing on television in Gladwyne and has asked Hugh to tell me she is, quote, *not surprised*.
+
+She stands up off the wall. She brushes off the back of her camel coat, which has a dart hole in it.
+
+jules: Happy Thanksgiving, Kearney.
+
+sam: Happy Thanksgiving, Pemberton.
+
+She starts up the hill. Halfway, she stops, and turns around, and holds up the handkerchief.
+
+jules: I\'m keeping this one.
+
+She goes.`,
+    next: 'a4_mifflin'
+  },
+
+  a4_mifflin: {
+    loc: 'MIFFLIN STREET · SOUTH PHILADELPHIA',
+    clock: { time: '4:00 PM' },
+    text: g => `At four o\'clock on Thanksgiving, the Kearney house on Mifflin Street is ninety degrees inside and smells like turkey and sausage stuffing and Ma\'s gravy, and the TV in the front room is on with the sound off, showing the Parkway from a helicopter, over and over. A bent lamppost. A deflated dog. Ambulances without numbers driving away.
+
+The chyron says: **PARKWAY CHAOS: "BLUR" SIGHTED; FREEZE GROUP REMAINS AT LARGE.**
+
+Nobody\'s watching it. Gigi turned the sound off at three-thirty and told everyone it was *a family rule now*.
+
+Ma doesn\'t say anything about your face. She looks at it ${g.f('choice10') === 'jayden' || g.S.injuries.length ? 'and the cuts and the way you\'re holding your arm' : ''} and goes very quiet and gets the first-aid kit from under the sink, the school-nurse kit, and sits you down on the closed toilet and cleans you up without a word, the way she has since you were four. When she\'s done, she holds your face.
+
+rosa: I sat up at nine forty-one this morning.
+
+sam: Ma—
+
+rosa: I\'m not asking. I\'m telling you. I always know. I don\'t always know what.
+
+She kisses your forehead.
+
+rosa: Go sit with your grandmother.
+
+The table is the dining room table with both leaves in and the card table on the end for Gigi, because Gigi insists on sitting at the card table, she says it\'s *the cool table*. Nonna at the head, in her good black dress. Pop at the other end, not eating yet, with his hands flat on the tablecloth. Ma. Gigi. You. ${g.f('mikey_knows') ? 'Mikey, across from you, in a clean shirt, with his badge still on a chain around his neck because he forgot to take it off. He doesn\'t stop looking at you. Not once. Not like he\'s mad. Like he\'s afraid if he looks away, you\'ll be somewhere else.' : 'Mikey, across from you, in a clean shirt, with his badge still on a chain around his neck. He keeps looking at you. Adding it up.'}
+
+Nonna says grace.
+
+She says it in Italian, the long one. And at the end, where she always says the names of the dead, her husband and her mother and her sister, she stops. She looks at you.
+
+nonna: E il ragazzo che nessuno vedeva.
+
+*And the boy nobody saw.*
+
+nonna: Amen.
+
+Everybody says amen. Gigi says it in Italian too, badly, and looks at you to see if you noticed.
+
+You eat. You actually eat. It\'s the best thing you\'ve ever tasted. You know that\'s not true. It\'s true.
+
+At 4:40, somebody knocks on the front door.
+
+Three knocks. Polite.
+
+Pop puts his fork down.`,
+    next: 'a4_bruno'
+  },
+  a4_bruno: {
+    loc: 'MIFFLIN STREET · THE DINING ROOM',
+    clock: { time: '4:40 PM' },
+    enter: g => { g.know('bruno', ['sam', 'frank', 'rosa', 'mikey', 'nonna', 'gigi'], 'On Thanksgiving, Bruno Iannucci came to dinner on Mifflin Street with his grandson Dante.'); },
+    text: g => `Bruno Iannucci is sixty-eight years old and wears a camel-hair overcoat and a gray fedora with a little feather in the band, and he takes the fedora off in the doorway, which is how you know he was raised right, and he smiles at Ma like a favorite uncle.
+
+BRUNO: Rosa. Happy Thanksgiving. I won\'t stay. I know it\'s family.
+
+Behind him, in a beautiful jacket: Dante. Twenty-four. Smiling.
+
+Through the front window, at the curb on Mifflin Street, a black Escalade idling, and at the wheel, not looking at the house, not looking at anything, Vinnie.
+
+Pop gets up. He gets the shoebox from the hutch. He brings it into the front room and holds it out with both hands, like it\'s heavy.
+
+frank: Eleven thousand four hundred. The rest by summer, Bruno. I swear on my mother.
+
+Bruno takes the box. He doesn\'t open it. He hands it to Dante without looking.
+
+BRUNO: That\'s very good, Frank. That\'s an honest effort. I respect an honest effort.
+
+He walks into the dining room. Nobody invited him. He looks at the table. He looks at Nonna, and Nonna looks back at him, and something passes between two people who have both lived on these blocks for seventy years, and Bruno is the one who looks away first.
+
+BRUNO: Teresa.
+
+nonna: Bruno. You got old.
+
+BRUNO: We all got old, Teresa. That\'s the good news.
+
+He looks at Mikey. At the badge on the chain. He smiles.
+
+BRUNO: Officer.
+
+Then he looks at you.
+
+${g.f('cap10') ? `BRUNO: I watched the parade on the TV this morning. Channel 6. Lot of excitement. My grandson, he got very excited. A kid in a hood on the Parkway. Moving very fast. Too fast for the camera, they said. You know, like a blur.
+
+He reaches over the table, past the gravy boat, and picks up an old Eagles cap from the chair beside you, where you dropped it when you came in. Faded green. Sweat stain on the brim. He turns it over in his hands.
+
+BRUNO: My grandson says he saw this hat under 95. In October. He says he saw it on your father\'s head at the Melrose in September. My grandson\'s very observant. It\'s his best quality.
+
+He puts the cap down on your plate, gently, on top of the turkey.` : `BRUNO: My grandson says your boy is interesting. Under 95, in October. He says a lot of things. He\'s usually wrong.
+
+He looks at you a moment longer.
+
+BRUNO: But sometimes not.`}
+
+BRUNO: Forty-one thousand dollars is a lot of money for a cab driver. It\'s not so much money for a young man with *talents*.
+
+He takes a card out of his coat. Cream. Heavy. Just a name and a phone number. He lays it on the tablecloth next to your hand.
+
+BRUNO: After the holiday. Come see me. Alone. We\'ll talk about how your family settles its debts.
+
+Pop takes a step forward.
+
+frank: Bruno. He\'s eighteen. He\'s got nothing to do with—
+
+BRUNO: Frank. Sit down. Eat your turkey. It\'s Thanksgiving.
+
+The whole table is looking at you.`,
+    choices: [
+      { text: 'Say nothing. Pop asked you. Not one word to these men.', tag: 'Silence',
+        fx: g => { g.flag('bruno10', 'silent'); g.bond('frank', { trust: 1, respect: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a4_bruno_silent' },
+      { text: 'Stand up. Look him in the eye. "Get out of my mother\'s house."', tag: 'Stand up',
+        check: { kind: 'move', move: 'Lean On', attr: 'nerve', skill: 'intimidate', label: 'Stare down Bruno Iannucci', on: { strong: 'a4_bruno_stand', weak: 'a4_bruno_stand_weak', miss: 'a4_bruno_stand_miss' } } },
+      { text: 'Pick up the card. Put it in your pocket. Look at him so he knows you will.', tag: 'Take the card',
+        fx: g => { g.flag('bruno10', 'card'); g.bond('frank', { tension: 2 }); g.hidden('revenant_drift', 1); }, go: 'a4_bruno_card' }
+    ]
+  },
+  a4_bruno_silent: {
+    text: `You don\'t say anything.
+
+You look at your plate. You look at Pop. Pop looks at you, and something in his face lets go, just a little.
+
+Bruno waits. When nothing happens, he smiles, like you passed something.
+
+BRUNO: Good boy. Respectful. That\'s rare now.
+
+He puts his fedora back on in the dining room, which is how you know he\'s finished being polite.
+
+BRUNO: Happy Thanksgiving, everybody. Rosa, the house smells beautiful.
+
+They go. The door closes. Through the window, the Escalade pulls away, and Vinnie still doesn\'t look at the house.
+
+The card is still on the tablecloth next to your hand.
+
+Nobody touches it.`,
+    next: 'a4_after'
+  },
+  a4_bruno_stand: {
+    enter: g => { g.flag('bruno10', 'stood'); g.bond('frank', { respect: 2 }); g.bond('mikey', { respect: 1 }); },
+    text: `You stand up. Your chair scrapes on Ma\'s floor. You look him in the eye.
+
+sam: Get out of my mother\'s house.
+
+It comes out quiet. It comes out steady. You don\'t know where it comes from. Some of it comes from Pop. Some of it comes from Nonna. Some of it comes from the Parkway this morning, from four men and four darts and a woman walking down the middle of a frozen street.
+
+Bruno looks at you for a long moment. Then he laughs. A real laugh, delighted, an old man\'s laugh.
+
+BRUNO: Oh, Frank. Oh, he\'s *wonderful*.
+
+He puts his fedora back on.
+
+BRUNO: After the holiday, son. The card has my number.
+
+They go. The door closes. The Escalade pulls away.
+
+You\'re still standing. Your knees aren\'t working right. Across the table, Mikey is looking at you like he\'s never seen you before. Gigi is looking at you like you\'re a superhero.
+
+Pop is looking at the card.`,
+    next: 'a4_after'
+  },
+  a4_bruno_stand_weak: {
+    enter: g => { g.flag('bruno10', 'stood'); g.bond('frank', { respect: 1 }); },
+    text: `You stand up. Your chair scrapes on Ma\'s floor.
+
+sam: Get out of my mother\'s house.
+
+Your voice cracks on *mother*. Just a little. Just enough.
+
+Bruno looks at you for a long moment. Then he smiles, kindly, the way you\'d smile at a dog barking behind a fence.
+
+BRUNO: You\'re a good son. That\'s nice to see.
+
+He puts his fedora back on.
+
+BRUNO: After the holiday. The card has my number.
+
+They go. The door closes. You sit down before your knees decide for you.
+
+Nobody touches the card.`,
+    next: 'a4_after'
+  },
+  a4_bruno_stand_miss: {
+    enter: g => { g.flag('bruno10', 'stood'); g.bond('frank', { tension: 1 }); },
+    text: `You start to stand up, and Bruno puts one hand on your shoulder, gently, from behind, and pushes you back down into your chair. He\'s sixty-eight. He doesn\'t push hard. He doesn\'t have to.
+
+BRUNO: Sit, son. Sit. It\'s Thanksgiving.
+
+He pats your shoulder twice.
+
+BRUNO: After the holiday.
+
+He puts his fedora back on. They go. The door closes.
+
+Your face is burning. Across the table, Pop is looking at his plate.
+
+Nobody touches the card.`,
+    next: 'a4_after'
+  },
+  a4_bruno_card: {
+    text: `You pick up the card. You look at it. *Bruno Iannucci*, and a 215 number. You put it in your pocket.
+
+You look at him so he knows you will.
+
+Bruno nods slowly. He looks pleased, and a little sad, like a man who has seen this exact thing happen before, many times, on these exact blocks.
+
+BRUNO: After the holiday.
+
+He puts his fedora back on.
+
+frank: *Sammy.*
+
+You don\'t look at Pop. You can\'t.
+
+They go. The door closes. Through the window, the Escalade pulls away, and at the wheel, for one second, Vinnie looks at the house. Right at you.
+
+Then he looks away.`,
+    next: 'a4_after'
+  },
+
+  a4_after: {
+    night: true,
+    loc: 'THE STOOP',
+    clock: { time: '9:30 PM' },
+    enter: g => { g.sleep(8); },
+    text: g => `Later, you sit on the stoop in the cold.
+
+Your phone has been going all day. You look at it now, for the first time.
+
+TXT nik: bro
+TXT nik: BRO
+TXT nik: my aunt thinks i have dysentery
+TXT nik: are you alive. text me a word. any word
+TXT simone: ${g.f('simone10') === 'mended' || g.f('simone10') === 'warm' ? 'Salvatore Kearney. I watched a "medical emergency" on the Parkway on my grandmother\'s TV in Decatur, and my grandmother said "that boy is too fast," and I had to go sit in the car. Text me that you\'re alive. Then I\'m calling you. Then you\'re telling me EVERYTHING.' : 'I saw the news. Are you alive.'}
+TXT grace: Okay. Text me when you need stitches. Not if. When.
+TXT bree: ${g.f('choice10') === 'jayden' ? 'they took him. you know they took him. heck wants to go to the navy yard tonight. i said wait for you. i said you promised. you promised wawa' : 'hes at jefferson. hes awake. hes mad at you for saving him. thats how you know hes ok. heck is ' + (g.f('heck_taken10') ? 'gone. they took heck. i cant stop shaking' : 'here. heck says papa')}
+TXT jules: Gran asked who you were.
+TXT jules: I told her.
+TXT jules: She said, "Ah."
+
+You type *alive* to Nik. You type *alive* to Simone. You don\'t know what to type to Bree.
+
+${g.f('mikey_knows') ? 'The door opens behind you. Mikey comes out and sits on the step next to you with two cans of Yuengling, like November. He hands you one.\n\nHe doesn\'t say anything for a long time.\n\nmikey: Does Pop know?\n\nsam: He thinks he knows.\n\nmikey: Ma?\n\nsam: Ma always knows. She doesn\'t know *what*.\n\nHe nods. He drinks.\n\nmikey: I\'m on the task group. Hunting you. Did you know that\'s funny? That\'s the funniest thing I ever heard.\n\nHe doesn\'t laugh.\n\nmikey: Brannigan\'s gonna ask me tomorrow what I saw. On the Parkway. When you were standing next to the girl, and then you weren\'t.\n\nsam: What are you gonna say?\n\nHe looks at you. Your brother. The family hero.\n\nmikey: I\'m gonna say I didn\'t see nothing. And I\'m gonna be lying to a man who kills people. For you.\n\nHe puts his arm around your shoulders.\n\nmikey: So you better be worth it, Sammy.' : 'The door opens behind you. Mikey comes out and stands on the step above you with his hands in his pockets.\n\nmikey: You were on the Parkway.\n\nIt isn\'t a question.\n\nmikey: Next to the Pemberton girl. Bleeding. Like you get.\n\nYou don\'t say anything.\n\nmikey: Someday you\'re gonna tell me. And I\'m gonna be mad. And then I\'m gonna be something else.\n\nHe goes back in. He leaves the door open a crack, so the warm comes out.'}
+
+Down at the end of Mifflin Street, under the streetlight, there\'s nobody.
+
+There\'s salt on Nonna\'s step.`,
+    next: 'tag_achterberg'
+  },
+
+  /* ================= TAGS ================= */
+  tag_achterberg: {
+    card: { kind: 'tag' },
+    night: true,
+    loc: 'NAVY YARD · BUILDING 7 · SEVENTH FLOOR',
+    clock: { time: '11:51 PM' },
+    text: g => `> THE CAMERA.
+
+On the seventh floor of Building 7, behind glass, the screens are full of the Parkway.
+
+Thermal footage. Half a million warm bodies in orange and red. And in the middle of them, for a single frame, a blue shape, standing beside a girl in a camel coat. In the next frame, the blue shape is gone. In the frame after that, it\'s ${g.f('choice10') === 'jayden' ? 'across the street, on the sidewalk under a falling lamppost' : g.f('choice10') === 'both' ? 'everywhere, smeared across forty feet of street in a long blue streak, like a comet' : 'at the back of an ambulance'}.
+
+Dr. Achterberg runs it back. Runs it forward. Back. Forward.
+
+Down the white hallway, a door with **${g.f('heck_taken10') ? '715' : '716'}** stenciled on it. Through its narrow window, ${g.f('heck_taken10') ? 'an enormous man lies strapped to a bed with ice packs piled on his chest, steam rising off him toward the ceiling.' : g.f('teddy_taken10') ? 'a young man in a gray Little League hoodie sits on the edge of a bed with both hands in thick white mittens taped at the wrists, staring at the door.' : 'an empty bed with fresh sheets, waiting.'}
+
+Brannigan stands beside her with his tea.
+
+ACHTERBERG: Well.
+
+She freezes the frame on the blue shape.
+
+ACHTERBERG: ES-17 is confirmed.
+
+BRANNIGAN: And forty-four?
+
+Achterberg advances the footage to a girl in a camel coat walking down the middle of the frozen Parkway through four darts. She watches it twice.
+
+ACHTERBERG: Leave forty-four to her family. For now. They\'re very particular about their own.
+
+She takes off her glasses. She cleans them on her cardigan.
+
+ACHTERBERG: Seventeen is going to come here, Cole. For Miss Reyes. For the others. He can\'t help it.
+
+ACHTERBERG: Let\'s make sure the door is open.`,
+    next: 'tag_steps'
+  },
+  tag_steps: {
+    night: true,
+    loc: 'THE ART MUSEUM STEPS',
+    clock: { time: '11:59 PM' },
+    text: g => `> THE CAMERA.
+
+The Parkway at midnight on Thanksgiving. The barricades are stacked on the median. The bent lamppost lies in the gutter at 21st with yellow tape around it. A city worker is sweeping up the last of the glass.
+
+At the top of the Art Museum steps, the seventy-two steps where every tourist in the world runs up and throws their arms in the air, a man is sitting alone on the top step in the cold.
+
+Gray at the temples. A scar through his lip. His left hand resting on his knee, with a gap where the ring finger should be. He\'s looking down the Parkway toward City Hall, toward Broad Street, at the lights.
+
+Beside him, on the stone, there\'s frost.
+
+Not where he\'s sitting. Next to him. A shape on the top step, in white frost, the shape of someone sitting there beside him with their knees drawn up. Someone the camera can\'t see.
+
+He talks to it without turning his head. His voice is Sam\'s voice, worn to the wire.
+
+old_sam: ${g.f('choice10') === 'jayden' ? 'He picked the boy. The same boy.' : g.f('choice10') === 'teddy' ? 'He picked the one in the ambulance. The big one went instead.' : 'He tried to carry all of them. He got stuck. He got out.'}
+
+He listens to something.
+
+old_sam: I know. I know he did.
+
+He listens.
+
+old_sam: No. Not yet. He still thinks he can carry all of them.
+
+He looks at the frost beside him for a long moment.
+
+old_sam: So did I.
+
+Then he turns his head and looks straight down the steps, straight into the camera, straight at *you*, and puts one finger to his lips.
+
+A bus goes by on the Parkway.
+
+When it\'s gone, the top step is empty, and the frost is melting from the edges in, and there are two shapes in it, side by side.
+
+> END OF SEASON ONE.`,
+    end: true
+  }
+});
+
+Object.assign(EH.episodes.s01e10, {
+  polls: [
+    { q: 'Thanksgiving morning', opts: [
+      { label: 'Called Mikey', pct: 54, if: g => g.f('called_mikey10') === true },
+      { label: 'Just went', pct: 46, if: g => g.f('called_mikey10') === false }
+    ] },
+    { q: 'Ninety seconds', opts: [
+      { label: 'Saved Teddy', pct: 33, if: g => g.f('choice10') === 'teddy' },
+      { label: 'Saved Jayden and Carmen', pct: 41, if: g => g.f('choice10') === 'jayden' },
+      { label: 'Slipped for both', pct: 26, if: g => g.f('choice10') === 'both' }
+    ] },
+    { q: 'Bruno Iannucci, at the table', opts: [
+      { label: 'Stayed silent', pct: 38, if: g => g.f('bruno10') === 'silent' },
+      { label: 'Stood up', pct: 44, if: g => g.f('bruno10') === 'stood' },
+      { label: 'Took the card', pct: 18, if: g => g.f('bruno10') === 'card' }
+    ] }
+  ],
+  onEnd: g => {
+    g.recap('On Thanksgiving, Teddy Kowal froze the Parkway. Halcyon came for the Changed in fake ambulances.');
+    g.recap(g.f('choice10') === 'jayden' ? 'You saved Jayden and Carmen. Halcyon took Teddy.' : g.f('choice10') === 'teddy' ? 'You pulled Teddy out of the ambulance. Heck caught the lamppost, and Halcyon took him.' : 'You Slipped and saved them both. You lost four minutes. Mikey saw.');
+    g.recap('Jules walked down the frozen Parkway through four darts. Every one of them missed.');
+    g.recap('Bruno Iannucci came to Thanksgiving dinner. "After the holiday. Come see me. Alone."');
+    g.recap('Dr. Achterberg: "ES-17 is confirmed."');
+  }
+});
+
 </script>
 <script>
 /* THE EVENT HORIZON: browser engine (UI, sound, saves). Depends on core.js and the episode files. */

@@ -6,7 +6,7 @@ EH.scenes('s01e10', {
     card: { kind: 'act', label: 'Act Two', title: 'The Parade' },
     loc: 'CARDONE HALL · 9-14',
     clock: { day: 'Thu', date: 'Nov 26', time: '6:00 AM' },
-    text: g => `Thanksgiving. Thirty-four degrees. The sky over the Delaware is the color of a dirty nickel.
+    text: g => `Thanksgiving. Thirty-four degrees. The sky over the Delaware is the color of dishwater.
 
 You get dressed in the dark. Black hoodie. Gaiter. Sneakers, the left one split at the toe.
 
@@ -152,7 +152,7 @@ And the dog stops.
 
 Five stories of balloon, leaning thirty degrees in a gust that\'s already gone, frozen in the air like a still from a movie. The handlers pull. The ropes don\'t move. The balloon doesn\'t move. A handler lets go of her rope, and it stays exactly where it was, hanging in the air in a stiff curve, pointing at nothing.
 
-Half a million people go quiet at once. It\'s the loudest silence you\'ve ever heard.
+Half a million people go quiet at once.
 
 Then somebody screams.
 
@@ -166,9 +166,9 @@ And there, at the curb at 21st, between a frozen barricade and a frozen pumpkin 
 
 Teddy.
 
-Behind him, eight feet tall in a Carhartt jacket with steam rising off his shoulders into the cold air: Heck. Standing guard. Not looking at the crowd. Looking at the ambulances.
+Behind him, huge in a Carhartt jacket with steam rising off his shoulders into the cold air: Heck. Standing guard. Not looking at the crowd. Looking at the ambulances.
 
-Your phone buzzes. And every phone around you buzzes. You look. A push alert, from the Inquirer, from Dana Fiorillo\'s byline, the first line of a story nobody has written yet:
+Your phone buzzes. And every phone around you buzzes. You look. A push alert, from the Inquirer, from Dana Fiorillo\'s byline:
 
 *BREAKING: Group claiming responsibility for Parkway "freeze" demands $5 million from parade sponsor Pemberton Lyle Capital. "Pay by noon and the parade goes on." Video below.*
 

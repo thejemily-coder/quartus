@@ -9,7 +9,7 @@ EH.scenes('s01e10', {
     enter: g => { g.heat('press', 1); },
     text: g => `Behind the Art Museum, down the hill, the old Water Works sits on the bank of the Schuylkill like a row of little Greek temples somebody forgot. Nobody\'s down here. Everyone in Philadelphia is up on the Parkway, or watching it on television.
 
-The river is the color of a nickel. Boathouse Row is across the water. A goose walks past.
+The river is low and brown and in no hurry. Boathouse Row is across the water. A goose walks past.
 
 You\'re sitting on the stone wall over the river. ${g.f('choice10') === 'teddy' || g.f('choice10') === 'both' ? 'Bree took Teddy to Jefferson in a cab, conscious, furious, alive. Heck went with them.' : 'Teddy is gone. Bree took Heck back to Port Richmond in a cab, both of them crying.'} ${g.f('mikey_knows') ? 'Mikey had to go back to the task group. He made you promise to be on Mifflin Street at four. He made you say it twice.' : 'Mikey had to go back to the task group. *Four o\'clock,* he said. *Mifflin Street. Or I come get you.*'}
 
@@ -62,7 +62,7 @@ jules: What if it was?
 
 sam: What if it was?
 
-Neither of you says anything else. The river goes by. You both sit there, on the edge of it, looking at each other, each of you holding a door shut from the inside and listening for footsteps on the other side.
+Neither of you says anything else. The river goes by. You both sit there, on the edge of it, looking at each other, each of you waiting for the other one to go first.
 
 Then she takes your hand. She laces her fingers through yours, all the way, and holds on.
 
@@ -78,11 +78,11 @@ jules: I know you will. I\'m counting on it.`,
 
 She looks down at it. Then she laces her fingers through yours, all the way, and holds on, and puts her head on your shoulder, and the two of you sit on the wall over the Schuylkill and watch the water go by.
 
-You don\'t say anything. She doesn\'t say anything. It\'s the best conversation you\'ve ever had.
+You don\'t say anything. She doesn\'t say anything. It\'s enough.
 
 After a while, very quietly, into your shoulder:
 
-jules: Someday I\'m going to tell you something. And you\'re going to tell me something. And it\'s going to be the worst day of both our lives.
+jules: Someday I\'m going to tell you something. And you\'re going to tell me something. And neither of us is going to enjoy it.
 
 sam: Yeah.
 
@@ -155,7 +155,7 @@ rosa: I sat up at nine forty-one this morning.
 
 sam: Ma—
 
-rosa: I\'m not asking. I\'m telling you. I always know. I don\'t always know what.
+rosa: I\'m not asking, Salvatore. I\'m telling you. I always know. I don\'t always know what.
 
 She kisses your forehead.
 
@@ -280,7 +280,7 @@ sam: Get out of my mother\'s house.
 
 It comes out quiet. It comes out steady. You don\'t know where it comes from. Some of it comes from Pop. Some of it comes from Nonna. Some of it comes from the Parkway this morning, from four men and four darts and a woman walking down the middle of a frozen street.
 
-Bruno looks at you for a long moment. Then he laughs. A real laugh, delighted, an old man\'s laugh.
+Bruno looks at you. Then he laughs. A real laugh, delighted, an old man\'s laugh.
 
 BRUNO: Oh, Frank. Oh, he\'s *wonderful*.
 
@@ -303,7 +303,7 @@ sam: Get out of my mother\'s house.
 
 Your voice cracks on *mother*. Just a little. Just enough.
 
-Bruno looks at you for a long moment. Then he smiles, kindly, the way you\'d smile at a dog barking behind a fence.
+Bruno lets it sit. Then he smiles, kindly, the way you\'d smile at a dog barking behind a fence.
 
 BRUNO: You\'re a good son. That\'s nice to see.
 
@@ -344,7 +344,7 @@ BRUNO: After the holiday.
 
 He puts his fedora back on.
 
-frank: *Sammy.*
+frank: *Kid.*
 
 You don\'t look at Pop. You can\'t.
 
@@ -367,7 +367,7 @@ TXT nik: bro
 TXT nik: BRO
 TXT nik: my aunt thinks i have dysentery
 TXT nik: are you alive. text me a word. any word
-TXT simone: ${g.f('simone10') === 'mended' || g.f('simone10') === 'warm' ? 'Salvatore Kearney. I watched a "medical emergency" on the Parkway on my grandmother\'s TV in Decatur, and my grandmother said "that boy is too fast," and I had to go sit in the car. Text me that you\'re alive. Then I\'m calling you. Then you\'re telling me EVERYTHING.' : 'I saw the news. Are you alive.'}
+TXT simone: ${g.f('simone9') !== 'lied' || g.f('simone10') === 'mended' ? 'Salvatore Kearney. I watched a "medical emergency" on the Parkway on my grandmother\'s TV in Decatur, and my grandmother said "that boy is too fast," and I had to go sit in the car. Text me that you\'re alive. Then I\'m calling you. Then you\'re telling me EVERYTHING.' : 'I saw the news. Are you alive.'}
 TXT grace: Okay. Text me when you need stitches. Not if. When.
 TXT bree: ${g.f('choice10') === 'jayden' ? 'they took him. you know they took him. heck wants to go to the navy yard tonight. i said wait for you. i said you promised. you promised wawa' : 'hes at jefferson. hes awake. hes mad at you for saving him. thats how you know hes ok. heck is ' + (g.f('heck_taken10') ? 'gone. they took heck. i cant stop shaking' : 'here. heck says papa')}
 TXT jules: Gran asked who you were.
@@ -376,7 +376,7 @@ TXT jules: She said, "Ah."
 
 You type *alive* to Nik. You type *alive* to Simone. You don\'t know what to type to Bree.
 
-${g.f('mikey_knows') ? 'The door opens behind you. Mikey comes out and sits on the step next to you with two cans of Yuengling, like November. He hands you one.\n\nHe doesn\'t say anything for a long time.\n\nmikey: Does Pop know?\n\nsam: He thinks he knows.\n\nmikey: Ma?\n\nsam: Ma always knows. She doesn\'t know *what*.\n\nHe nods. He drinks.\n\nmikey: I\'m on the task group. Hunting you. Did you know that\'s funny? That\'s the funniest thing I ever heard.\n\nHe doesn\'t laugh.\n\nmikey: Brannigan\'s gonna ask me tomorrow what I saw. On the Parkway. When you were standing next to the girl, and then you weren\'t.\n\nsam: What are you gonna say?\n\nHe looks at you. Your brother. The family hero.\n\nmikey: I\'m gonna say I didn\'t see nothing. And I\'m gonna be lying to a man who kills people. For you.\n\nHe puts his arm around your shoulders.\n\nmikey: So you better be worth it, Sammy.' : 'The door opens behind you. Mikey comes out and stands on the step above you with his hands in his pockets.\n\nmikey: You were on the Parkway.\n\nIt isn\'t a question.\n\nmikey: Next to the Pemberton girl. Bleeding. Like you get.\n\nYou don\'t say anything.\n\nmikey: Someday you\'re gonna tell me. And I\'m gonna be mad. And then I\'m gonna be something else.\n\nHe goes back in. He leaves the door open a crack, so the warm comes out.'}
+${g.f('mikey_knows') ? 'The door opens behind you. Mikey comes out and sits on the step next to you with two cans of Yuengling, like the night after All Souls. He hands you one.\n\nHe doesn\'t say anything.\n\nmikey: Does Pop know?\n\nsam: He thinks he knows.\n\nmikey: Ma?\n\nsam: Ma always knows. She doesn\'t know *what*.\n\nHe nods. He drinks.\n\nmikey: I\'m on the task group. Hunting you. You get that that\'s funny?\n\nHe doesn\'t laugh.\n\nmikey: Brannigan\'s gonna ask me tomorrow what I saw. On the Parkway. When you were standing next to the girl, and then you weren\'t.\n\nsam: What are you gonna say?\n\nHe looks at you. Your brother. The family hero.\n\nmikey: I\'m gonna say I didn\'t see nothing. And I\'m gonna be lying to a man who kills people. For you.\n\nHe puts his arm around your shoulders.\n\nmikey: So you better be worth it, Sammy.' : 'The door opens behind you. Mikey comes out and stands on the step above you with his hands in his pockets.\n\nmikey: You were on the Parkway.\n\nIt isn\'t a question.\n\nmikey: Next to the Pemberton girl. Bleeding. Like you get.\n\nYou don\'t say anything.\n\nmikey: Someday you\'re gonna tell me. And I\'m gonna be mad. And then I\'m gonna be something else.\n\nHe goes back in. He leaves the door open a crack, so the warm comes out.'}
 
 Down at the end of Mifflin Street, under the streetlight, there\'s nobody.
 
@@ -416,7 +416,7 @@ ACHTERBERG: Leave forty-four to her family. For now. They\'re very particular ab
 
 She takes off her glasses. She cleans them on her cardigan.
 
-ACHTERBERG: Seventeen is going to come here, Cole. For Miss Reyes. For the others. He can\'t help it.
+ACHTERBERG: Seventeen is going to come here, Cole. For Miss Reyes. For the others.
 
 ACHTERBERG: Let\'s make sure the door is open.`,
     next: 'tag_steps'
@@ -439,7 +439,7 @@ Not where he\'s sitting. Next to him. A shape on the top step, in white frost, t
 
 He talks to it without turning his head. His voice is Sam\'s voice, worn to the wire.
 
-old_sam: ${g.f('choice10') === 'jayden' ? 'He picked the boy. The same boy.' : g.f('choice10') === 'teddy' ? 'He picked the one in the ambulance. The big one went instead.' : 'He tried to carry all of them. He got stuck. He got out.'}
+old_sam: ${g.f('choice10') === 'jayden' ? 'He picked the boy. The same boy.' : g.f('choice10') === 'teddy' ? 'He picked the one in the ambulance. The big one went instead.' : (g.f('unstick10') ? 'He tried to carry all of them. He got stuck. He got out.' : 'He carried all of them. This time.')}
 
 He listens to something.
 
@@ -449,7 +449,7 @@ He listens.
 
 old_sam: No. Not yet. He still thinks he can carry all of them.
 
-He looks at the frost beside him for a long moment.
+He looks at the frost beside him.
 
 old_sam: So did I.
 
@@ -457,7 +457,7 @@ Then he turns his head and looks straight down the steps, straight into the came
 
 A bus goes by on the Parkway.
 
-When it\'s gone, the top step is empty, and the frost is melting from the edges in, and there are two shapes in it, side by side.
+When it\'s gone, the top step is empty, and the frost is already going to water, and there are two shapes in it, side by side.
 
 > END OF SEASON ONE.`,
     end: true
