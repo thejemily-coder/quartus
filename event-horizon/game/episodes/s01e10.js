@@ -75,7 +75,7 @@ Teddy doesn\'t answer his phone. Bree answers once, says *not yet, Wawa*, and ha
 
 On the Wednesday before Thanksgiving, at seven in the morning, Mikey texts you *Melrose. 7:15. I\'m buying.* And you take the Broad Street Line all the way down to Snyder in the dark.
 
-He\'s in a back booth, in plainclothes, with two coffees and a plate of scrapple he\'s not eating. He looks like he hasn\'t slept since you told him.
+He\'s in a back booth, in plainclothes, with two coffees and a plate of scrapple he\'s not eating. ${g.f('mikey9') === 'open' ? 'He looks like he hasn\'t slept since you told him.' : 'He looks like he hasn\'t slept since Femi.'}
 
 mikey: The ME who signed the report. Dr. Gerald Feld. Deputy medical examiner, twenty-two years.
 
@@ -85,7 +85,7 @@ mikey: He retired. Monday. The Monday after. He\'s fifty-one. He bought a condo 
 
 He takes the phone back.
 
-mikey: So you were right. And I can\'t prove a thing. And my sergeant told me to stop asking, and the guy who told my sergeant was a captain I never met, and the guy who told *him*—
+mikey: ${g.f('mikey9') === 'open' ? 'So you were right.' : 'So something\'s wrong.'} And I can\'t prove a thing. And my sergeant told me to stop asking, and the guy who told my sergeant was a captain I never met, and the guy who told *him*—
 
 He stops.
 
@@ -135,7 +135,7 @@ You have the rest of Wednesday. Time for two things.`,
       enter: g => { g.flag('jules_box'); g.know('jules_parade', ['sam', 'jules'], 'Jules will be in the sponsors\' grandstand at the Art Museum steps on Thanksgiving morning. Her father\'s firm sponsors the parade.'); },
       text: g => `Her room is chaos, which is wrong. Jules Pemberton\'s side of 9-11 is always a magazine spread, and today there are three garment bags on the bed and clothes on the floor and a pair of riding boots standing in the middle of the room by themselves like they\'re waiting for someone.
 
-Simone\'s side is already stripped. ${g.f('simone9') === 'lied' ? 'Simone left at eight without saying goodbye to you.' : 'Simone left a note on your door at eight: *Salvatore. Behave. —S.*'}
+Simone\'s side is already stripped, her bags by the door. ${g.f('simone9') === 'lied' ? 'She went down the hall when she heard your voice.' : 'There was a note on your door at eight: *Salvatore. Behave. —S.*'}
 
 jules: Don\'t look at anything.
 

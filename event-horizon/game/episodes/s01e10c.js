@@ -208,7 +208,7 @@ The world is getting soft at the edges. You fight it. You bite the inside of you
     enter: g => { g.flag('jules_walked'); g.hidden('jules_debt', 2); g.know('jules_darts', ['sam'], 'On the Parkway, Jules walked down the middle of the frozen street through Halcyon\'s darts. Every one of them missed. Her nose was bleeding. You saw it, and you don\'t know what you saw.'); },
     text: g => `And then you see her.
 
-She\'s coming down the middle of the frozen Parkway. Not on the sidewalk. *In the street*, inside the barricades, where nobody is supposed to be, between the frozen floats, walking straight down the dotted white line in a camel coat and pearl earrings and the riding boots from her bedroom floor, like the street was built for her to walk down.
+She\'s coming down the middle of the frozen Parkway. Not on the sidewalk. *In the street*, inside the barricades, where nobody is supposed to be, between the frozen floats, walking straight down the dotted white line in a camel coat and pearl earrings and ${g.f('jules_box') ? 'the riding boots from her bedroom floor' : 'riding boots'}, like the street was built for her to walk down.
 
 She climbed over the barricade at the grandstand. She left her seat on the aisle. She\'s been walking for fifteen minutes toward the one place in Philadelphia everybody else is running from.
 
@@ -329,7 +329,7 @@ Heck is gone.`,
   },
   a3_save_teddy_hurt: {
     enter: g => { g.flag('choice10', 'teddy'); g.flag('teddy_saved'); g.flag('heck_taken10'); g.bond('teddy', { trust: 3, affection: 2 }); g.bond('bree', { trust: 2 }); g.hidden('halcyon_heat', 1); g.injure({ id: 'ribs10', name: 'Cracked ribs (ambulance door)', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
-    text: `You let go of Jules\'s hand and run, and halfway there your legs remember the dart, or the cold, or three months of not sleeping, and you stumble.
+    text: `You let go of Jules\'s hand and run, and halfway there your legs remember the cold, or three months of not sleeping, and you stumble.
 
 You get there anyway. Late. The door is already closing. You get your arm in the gap and the medic slams it on you, twice, hard, and you feel something in your side go *crack* like a stick in a fire. You don\'t let go. You pull the door open with your broken side screaming and grab the stretcher rail and pull, and it comes out and drops off the bumper with a crash, and Teddy rolls into the street, and you drag him, backward, toward the crowd, toward the phones.
 
@@ -394,7 +394,7 @@ He stands in the street with his hands on fire and watches it go.`,
   },
   a3_save_jayden_hurt: {
     enter: g => { g.flag('choice10', 'jayden'); g.flag('teddy_taken10'); g.bond('jayden', { trust: 3, affection: 3 }); g.bond('carmen', { trust: 3, affection: 2 }); g.know('carmen_cold_man', ['sam', 'carmen', 'jayden'], 'On the Parkway, the cold man came back for Jayden and Carmen. This time he was fast enough.'); g.hidden('revenant_drift', -1); g.injure({ id: 'glass10', name: 'Glass cuts and a wrenched shoulder (lamppost)', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
-    text: `You let go of Jules\'s hand and run, across the frozen Parkway toward a boy yelling *cold man*, and halfway there your legs remember the cold and the dart and three months of no sleep, and you stumble, and you get up, and you\'re late.
+    text: `You let go of Jules\'s hand and run, across the frozen Parkway toward a boy yelling *cold man*, and halfway there your legs remember the cold and three months of no sleep, and you stumble, and you get up, and you\'re late.
 
 Behind you, you hear the ambulance doors close. You hear Bree scream Teddy\'s name in her own voice.
 
@@ -423,7 +423,7 @@ Heck starts to run after it, burning, and Bree hangs on his arm with both hands,
   },
 
   a3_both: {
-    enter: g => { g.flag('teddy_saved'); g.bond('teddy', { trust: 3 }); g.bond('jayden', { trust: 3, affection: 3 }); g.bond('carmen', { trust: 2 }); if (g.f('unstick10')) { g.drift(3); g.hidden('revenant_drift', 3); g.injure({ id: 'unstick10', name: 'Time debt (Unstick)', pen: 2, heal: 3, affects: ['body', 'reflex', 'wits'] }); g.know('revenant5', ['sam'], 'In the Slip on the Parkway, the man who stands like you walked toward you between the frozen balloons. "You can\'t carry all of them." You said: "Watch me."'); } },
+    enter: g => { g.flag('teddy_saved'); g.heat('press', 1); g.hidden('halcyon_heat', 1); g.bond('teddy', { trust: 3 }); g.bond('jayden', { trust: 3, affection: 3 }); g.bond('carmen', { trust: 2 }); if (g.f('unstick10')) { g.drift(3); g.hidden('revenant_drift', 3); g.injure({ id: 'unstick10', name: 'Time debt (Unstick)', pen: 2, heal: 2, affects: ['body', 'reflex', 'wits'] }); g.know('revenant5', ['sam'], 'In the Slip on the Parkway, the man who stands like you walked toward you between the frozen balloons. "You can\'t carry all of them." You said: "Watch me."'); } else { g.drift(1); g.injure({ id: 'slipcold10', name: 'Slip-cold (Parkway)', pen: 1, heal: 1, affects: ['body', 'reflex'] }); } },
     text: g => `You let go of Jules\'s hand.
 
 You step through.
@@ -432,7 +432,7 @@ It\'s January. It\'s *deep* January, the kind under the river, the kind under 95
 
 ${g.f('unstick10') ? `And the cold closes over you like ice over a hole.
 
-You know it immediately. You\'ve been here twice. Under 95 and in the stairwell. Stuck. The walls of the second getting thick around you. This time you don\'t fight it. This time you *use* it.
+You know it immediately. You\'ve been here before${g.f('unstick') ? ', under 95' : ''}${g.f('unstick8') ? ', in the stairwell' : ''}${g.f('unstick9') ? ', in the Randall Theater' : ''}. Stuck. The walls of the second getting thick around you. This time you don\'t fight it. This time you *use* it.
 
 You go to Teddy first. Into the back of the ambulance, past the frozen medic, and you lift him off the stretcher, and he weighs nothing, nothing weighs anything here, and you carry him across the frozen Parkway and lay him down on the sidewalk on the far side of the crowd, under a hundred phones held up and frozen, and you fold his gray hand on his chest.
 
@@ -501,7 +501,7 @@ mikey: Okay. Okay. I got you. I got you, Sammy. Nobody\'s taking you anywhere.` 
   a3_bree: {
     loc: 'THE PARKWAY · 21ST STREET',
     clock: { time: '10:03 AM' },
-    enter: g => { if (g.f('unstick10')) { g.heat('mikey', 10); g.know('sam_slip', ['mikey']); g.flag('mikey_knows'); } g.know('mikey_bree', ['sam', 'mikey'], 'On the Parkway, Mikey stopped a fake ambulance from taking Bree Kowal. He made them back off on live TV.'); },
+    enter: g => { if (g.f('unstick10')) { g.heat('mikey', 10 - g.h('mikey')); g.know('sam_slip', ['mikey']); g.flag('mikey_knows'); } g.know('mikey_bree', ['sam', 'mikey'], 'On the Parkway, Mikey stopped a fake ambulance from taking Bree Kowal. He made them back off on live TV.'); },
     text: g => `They try to take Bree.
 
 Two of them get her onto a stretcher on the curb while she\'s half under from the dart, and they\'re rolling her toward the fourth ambulance when a voice comes across the street. A cop voice. A South Philly cop voice, the loudest voice in the world.

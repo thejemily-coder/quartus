@@ -11,11 +11,11 @@ EH.scenes('s01e10', {
 
 The river is low and brown and in no hurry. Boathouse Row is across the water. A goose walks past.
 
-You\'re sitting on the stone wall over the river. ${g.f('choice10') === 'teddy' || g.f('choice10') === 'both' ? 'Bree took Teddy to Jefferson in a cab, conscious, furious, alive. Heck went with them.' : 'Teddy is gone. Bree took Heck back to Port Richmond in a cab, both of them crying.'} ${g.f('mikey_knows') ? 'Mikey had to go back to the task group. He made you promise to be on Mifflin Street at four. He made you say it twice.' : 'Mikey had to go back to the task group. *Four o\'clock,* he said. *Mifflin Street. Or I come get you.*'}
+You\'re sitting on the stone wall over the river. ${g.f('choice10') === 'teddy' || g.f('choice10') === 'both' ? 'Bree took Teddy to Jefferson in a cab, conscious, furious, alive. ' + (g.f('heck_taken10') ? 'Heck is in the back of an ambulance with no numbers on its roof.' : 'Heck went with them.') : 'Teddy is gone. Bree took Heck back to Port Richmond in a cab, both of them crying.'} ${g.f('mikey_knows') ? 'Mikey had to go back to the task group. He made you promise to be on Mifflin Street at four. He made you say it twice.' : 'Mikey had to go back to the task group. *Four o\'clock,* he said. *Mifflin Street. Or I come get you.*'}
 
 Jules is sitting next to you. Her nose has stopped bleeding. There\'s a smear of dried blood on her lip she hasn\'t noticed.
 
-You take the handkerchief out of your pocket. White, ironed, *JLP* in navy thread. You\'ve had it since September. You hold it out.
+You take the handkerchief out of your pocket. White, ironed, *JLP* in navy thread. You\'ve had it since August. You hold it out.
 
 She looks at it. She laughs, once, surprised, and takes it, and wipes her lip, and looks at the blood on her own monogram.
 
@@ -37,7 +37,7 @@ jules: Yes.
 
 She folds the handkerchief in half. In half again.
 
-jules: What did *you* do? You were next to me. And then you were across the street with Jayden, or in the back of an ambulance. I was holding your hand, Sam. I *felt* you go.
+jules: What did *you* do? You were next to me. And then you were ${g.f('choice10') === 'both' ? 'across the street with Jayden *and* at the back of an ambulance. Both.' : g.f('choice10') === 'jayden' ? 'across the street with Jayden.' : 'at the back of an ambulance.'} I was holding your hand, Sam. I *felt* you go.
 
 You don\'t answer. She doesn\'t answer. You sit on the wall over the Schuylkill with both your secrets between you, close enough to touch.`,
     choices: [
@@ -483,7 +483,7 @@ Object.assign(EH.episodes.s01e10, {
   ],
   onEnd: g => {
     g.recap('On Thanksgiving, Teddy Kowal froze the Parkway. Halcyon came for the Changed in fake ambulances.');
-    g.recap(g.f('choice10') === 'jayden' ? 'You saved Jayden and Carmen. Halcyon took Teddy.' : g.f('choice10') === 'teddy' ? 'You pulled Teddy out of the ambulance. Heck caught the lamppost, and Halcyon took him.' : 'You Slipped and saved them both. You lost four minutes. Mikey saw.');
+    g.recap(g.f('choice10') === 'jayden' ? 'You saved Jayden and Carmen. Halcyon took Teddy.' : g.f('choice10') === 'teddy' ? 'You pulled Teddy out of the ambulance. Heck caught the lamppost, and Halcyon took him.' : (g.f('unstick10') ? 'You Slipped and saved them both. You got stuck. You lost four minutes. Mikey saw.' : 'You Slipped and saved them both. Nobody saw you move.'));
     g.recap('Jules walked down the frozen Parkway through four darts. Every one of them missed.');
     g.recap('Bruno Iannucci came to Thanksgiving dinner. "After the holiday. Come see me. Alone."');
     g.recap('Dr. Achterberg: "ES-17 is confirmed."');

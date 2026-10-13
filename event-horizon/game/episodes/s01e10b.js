@@ -142,7 +142,7 @@ And you feel it before you see it.
 
 The cold.
 
-It comes up through the soles of your sneakers, through the asphalt, the way it did on Broad Street in September with the armored car. Your nose starts to bleed. You taste pennies.
+It comes up through the soles of your sneakers, through the asphalt, the way it did on Broad Street in August with the armored car. Your nose starts to bleed. You taste pennies.
 
 Then the Parkway stops.
 
