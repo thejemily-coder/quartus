@@ -1,8 +1,8 @@
 {
   "engine": "1.0.0",
-  "ep": "s01e05",
-  "savedAt": "2026-10-13T15:55:06.617Z",
-  "scene": "tag_revenant",
+  "ep": "s01e06",
+  "savedAt": "2026-10-13T16:59:36.669Z",
+  "scene": "tag_chapel",
   "state": {
     "attrs": {
       "body": 2,
@@ -91,7 +91,7 @@
         "trust": 0
       },
       "jules": {
-        "affection": 7,
+        "affection": 9,
         "met": true,
         "respect": 9,
         "tension": 10,
@@ -155,9 +155,9 @@
       }
     },
     "clock": {
-      "date": "Sep 20",
-      "day": "Sun",
-      "time": "7:24 PM"
+      "date": "Oct 3",
+      "day": "Sat",
+      "time": "1:20 AM"
     },
     "created": 1791831489674,
     "done": [
@@ -165,7 +165,8 @@
       "s01e02",
       "s01e03",
       "s01e04",
-      "s01e05"
+      "s01e05",
+      "s01e06"
     ],
     "drift": 9,
     "entered": {
@@ -366,136 +367,268 @@
       "s01e05:cold_end": true,
       "s01e05:cold_open": true,
       "s01e05:cold_yes": true,
-      "s01e05:tag_revenant": true
+      "s01e05:tag_revenant": true,
+      "s01e06:a1_callum": true,
+      "s01e06:a1_callum_end": true,
+      "s01e06:a1_drift": true,
+      "s01e06:a1_friday": true,
+      "s01e06:a1_gran": true,
+      "s01e06:a1_hall": true,
+      "s01e06:a1_hall_normal": true,
+      "s01e06:a1_horse": true,
+      "s01e06:a1_horse_fall": true,
+      "s01e06:a1_hub": true,
+      "s01e06:a1_list": true,
+      "s01e06:a1_mother": true,
+      "s01e06:a1_mother_defend": true,
+      "s01e06:a1_simone_bracelet": true,
+      "s01e06:a2_ach_lie": true,
+      "s01e06:a2_achterberg": true,
+      "s01e06:a2_game": true,
+      "s01e06:a2_hand1": true,
+      "s01e06:a2_hand1_win": true,
+      "s01e06:a2_hugh": true,
+      "s01e06:a2_hugh_call": true,
+      "s01e06:a2_straight": true,
+      "s01e06:a2_test": true,
+      "s01e06:a3_ily_too": true,
+      "s01e06:a3_phone": true,
+      "s01e06:a3_phone_whatif": true,
+      "s01e06:a3_terrace": true,
+      "s01e06:cold_end": true,
+      "s01e06:cold_open": true,
+      "s01e06:tag_chapel": true
     },
-    "ep": "s01e05",
+    "ep": "s01e06",
     "epLog": [
       {
-        "choice": "\"My grandmother is going to *love* you. That's the problem.\" Yes. Obviously yes.",
-        "ep": "s01e05",
+        "choice": "You wanted to know if he'd still be there if you weren't lucky. If anyone would.",
+        "ep": "s01e06",
         "scene": "cold_open",
-        "t": 1791906251199
+        "t": 1791910181429
       },
       {
-        "choice": "Wake Nik up. Tell him about the roof. Show him the stopwatch.",
-        "ep": "s01e05",
-        "hub": true,
-        "scene": "a1_hub",
-        "t": 1791906366422
+        "choice": "\"His sister made me a bracelet.\" Show her. You haven't taken it off.",
+        "ep": "s01e06",
+        "scene": "a1_friday",
+        "t": 1791910232015
       },
       {
-        "choice": "Go back to bed. In your bed. With the door locked and a chair under the knob.",
-        "ep": "s01e05",
-        "hub": true,
-        "scene": "a1_hub",
-        "t": 1791906376593
+        "choice": "Add one. Type: *8. She knows about this list.* Then put it back.",
+        "ep": "s01e06",
+        "scene": "a1_list",
+        "t": 1791910289332
       },
       {
-        "choice": "\"Termini's is good. Nonna's going to say *good, not mine*. That's the highest compliment she gives anything that isn't hers.\"",
-        "ep": "s01e05",
-        "scene": "a1_ride",
-        "t": 1791906423494
-      },
-      {
-        "choice": "\"Ciro's oven, Ma. I grabbed a pan without the towel. Twice. I'm an idiot.\" Keep your hand off your ear.",
-        "ep": "s01e05",
+        "choice": "\"What are you doing this weekend?\" Ask him a normal question. Be a normal person.",
+        "ep": "s01e06",
         "roll": {
           "dice": [
             6,
+            2
+          ],
+          "kind": "move",
+          "label": "Be normal at him",
+          "nudged": true,
+          "rewound": false,
+          "tier": "strong"
+        },
+        "scene": "a1_hall",
+        "t": 1791910325035
+      },
+      {
+        "choice": "\"That's just how they are, Mother. They mean it.\"",
+        "ep": "s01e06",
+        "scene": "a1_mother",
+        "t": 1791910393177
+      },
+      {
+        "choice": "Ride Mercutio. He's boarded at Ravenscourt now. He bit Callum once. You love him.",
+        "ep": "s01e06",
+        "hub": true,
+        "scene": "a1_hub",
+        "t": 1791910410072
+      },
+      {
+        "choice": "Take the wall, and at the last second, let go of the reins. Just to see.",
+        "ep": "s01e06",
+        "scene": "a1_horse",
+        "t": 1791910417742
+      },
+      {
+        "choice": "Callum's walking the grounds alone. Go walk with him.",
+        "ep": "s01e06",
+        "hub": true,
+        "scene": "a1_hub",
+        "t": 1791910448432
+      },
+      {
+        "choice": "\"A friend's little sister made it.\" True. Every word.",
+        "ep": "s01e06",
+        "scene": "a1_callum",
+        "t": 1791910462770
+      },
+      {
+        "choice": "Play it properly. Read Hugh. Count the odds. Make the right bet.",
+        "ep": "s01e06",
+        "roll": {
+          "dice": [
+            5,
+            1,
+            8,
+            10,
+            10,
+            7,
+            8
+          ],
+          "kind": "pool",
+          "label": "Read the table",
+          "nudged": false,
+          "rewound": false,
+          "tier": "crit"
+        },
+        "scene": "a2_hand1",
+        "t": 1791910543892
+      },
+      {
+        "choice": "\"No. I was home in Gladwyne that weekend.\" Lie, perfectly.",
+        "ep": "s01e06",
+        "roll": {
+          "dice": [
+            5,
             5
           ],
           "kind": "move",
-          "label": "Lie to Ma",
+          "label": "Lie to a stranger",
           "nudged": false,
           "rewound": false,
           "tier": "strong"
         },
-        "scene": "a1_kitchen",
-        "t": 1791906518146
+        "scene": "a2_achterberg",
+        "t": 1791910594555
       },
       {
-        "choice": "Keep your face still. Chew. Swallow. Reach for the bread like a man who has never been on fire in his life.",
-        "ep": "s01e05",
+        "choice": "Don't test it. Don't touch it. Play the hand like a person, and lose it like a person.",
+        "ep": "s01e06",
         "roll": {
           "dice": [
-            4,
-            3,
+            6,
+            10,
             7,
-            9,
-            7
+            4,
+            7,
+            7,
+            1
           ],
           "kind": "pool",
-          "label": "Don't react",
+          "label": "Play it straight",
           "nudged": false,
+          "rewound": false,
+          "tier": "crit"
+        },
+        "scene": "a2_test",
+        "t": 1791910617861
+      },
+      {
+        "choice": "Call. Win. It's what happens. It's what always happens.",
+        "ep": "s01e06",
+        "roll": {
+          "dice": [
+            10,
+            8,
+            5,
+            6,
+            4,
+            4
+          ],
+          "kind": "pool",
+          "label": "Take it",
+          "nudged": true,
           "rewound": false,
           "tier": "success"
         },
-        "scene": "a2_mikey",
-        "t": 1791906616517
+        "scene": "a2_hugh",
+        "t": 1791910672258
       },
       {
-        "choice": "Save her. \"Gige. Eat your salad. She's my calculus partner, and I'm bad at calculus, and that's the whole story.\"",
-        "ep": "s01e05",
-        "scene": "a2_gigi",
-        "t": 1791906655005
+        "choice": "\"I love you too.\" It's what you say. It's what you've always said.",
+        "ep": "s01e06",
+        "roll": {
+          "dice": [
+            6,
+            6
+          ],
+          "kind": "move",
+          "label": "Say it",
+          "nudged": false,
+          "rewound": false,
+          "tier": "strong"
+        },
+        "scene": "a3_terrace",
+        "t": 1791910702781
       },
       {
-        "choice": "Stay. It's his business. It's Sunday. Let him have it.",
-        "ep": "s01e05",
-        "scene": "a2_pop",
-        "t": 1791906693880
-      },
-      {
-        "choice": "\"You first. Who is Dante, Vin? And what does he want with my father?\"",
-        "ep": "s01e05",
-        "scene": "a3_alley",
-        "t": 1791906747971
-      },
-      {
-        "choice": "Slip. Just be somewhere else when it gets there. Let him see it.",
-        "ep": "s01e05",
-        "scene": "a3_fight",
-        "t": 1791906767301
-      },
-      {
-        "choice": "\"What if it was?\" Say it. Just that much.",
-        "ep": "s01e05",
-        "scene": "a4_jules",
-        "t": 1791906834963
+        "choice": "Send it. *What if it was me.*",
+        "ep": "s01e06",
+        "scene": "a3_phone",
+        "t": 1791910746489
       }
     ],
     "epRolls": [
       {
         "dice": [
           6,
-          5
+          2
         ],
-        "ep": "s01e05",
+        "ep": "s01e06",
         "kind": "move",
-        "label": "Lie to Ma",
-        "mod": 2,
-        "nudged": false,
+        "label": "Be normal at him",
+        "mod": 3,
+        "nudged": true,
         "pushes": {
           "burst": false,
           "focus": false,
           "grit": false,
-          "push": true
+          "push": false
         },
         "rewound": false,
-        "scene": "a1_kitchen",
+        "scene": "a1_hall",
         "tier": "strong"
       },
       {
         "dice": [
-          4,
-          3,
+          5,
+          1,
+          8,
+          10,
+          10,
           7,
-          9,
-          7
+          8
         ],
-        "ep": "s01e05",
+        "ep": "s01e06",
         "kind": "pool",
-        "label": "Don't react",
+        "label": "Read the table",
+        "nudged": false,
+        "pushes": {
+          "burst": false,
+          "focus": false,
+          "grit": false,
+          "push": false
+        },
+        "rewound": false,
+        "s": 7,
+        "scene": "a2_hand1",
+        "tier": "crit"
+      },
+      {
+        "dice": [
+          5,
+          5
+        ],
+        "ep": "s01e06",
+        "kind": "move",
+        "label": "Lie to a stranger",
+        "mod": 4,
         "nudged": false,
         "pushes": {
           "burst": false,
@@ -504,175 +637,111 @@
           "push": true
         },
         "rewound": false,
+        "scene": "a2_achterberg",
+        "tier": "strong"
+      },
+      {
+        "dice": [
+          6,
+          10,
+          7,
+          4,
+          7,
+          7,
+          1
+        ],
+        "ep": "s01e06",
+        "kind": "pool",
+        "label": "Play it straight",
+        "nudged": false,
+        "pushes": {
+          "burst": false,
+          "focus": false,
+          "grit": false,
+          "push": false
+        },
+        "rewound": false,
+        "s": 5,
+        "scene": "a2_test",
+        "tier": "crit"
+      },
+      {
+        "dice": [
+          10,
+          8,
+          5,
+          6,
+          4,
+          4
+        ],
+        "ep": "s01e06",
+        "kind": "pool",
+        "label": "Take it",
+        "nudged": true,
+        "pushes": {
+          "burst": false,
+          "focus": false,
+          "grit": false,
+          "push": false
+        },
+        "rewound": false,
         "s": 3,
-        "scene": "a2_mikey",
+        "scene": "a2_hugh",
         "tier": "success"
+      },
+      {
+        "dice": [
+          6,
+          6
+        ],
+        "ep": "s01e06",
+        "kind": "move",
+        "label": "Say it",
+        "mod": 4,
+        "nudged": false,
+        "pushes": {
+          "burst": false,
+          "focus": false,
+          "grit": false,
+          "push": true
+        },
+        "rewound": false,
+        "scene": "a3_terrace",
+        "tier": "strong"
       }
     ],
     "epStart": {
       "attrs": {
         "body": 2,
-        "charm": 3,
-        "heart": 3,
+        "charm": 4,
+        "heart": 2,
         "nerve": 3,
         "reflex": 3,
-        "wits": 2
+        "wits": 4
       },
       "bonds": {
-        "bree": {
-          "affection": 0,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 1
-        },
-        "callum": {
-          "affection": 2,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 0
-        },
-        "carmen": {
-          "affection": 2,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 2
-        },
-        "ciro": {
-          "affection": 1,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 0
-        },
-        "dana": {
-          "affection": 0,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 0
-        },
-        "femi": {
-          "affection": 1,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 3
-        },
-        "frank": {
-          "affection": 4,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 1
-        },
-        "gigi": {
-          "affection": 3,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 2
-        },
-        "grace": {
-          "affection": 1,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 2
-        },
-        "heck": {
-          "affection": 0,
-          "met": true,
-          "respect": 1,
-          "tension": 0,
-          "trust": 5
-        },
-        "jayden": {
-          "affection": 0,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 0
-        },
         "jules": {
-          "affection": 5,
+          "affection": 7,
           "met": true,
-          "respect": 8,
+          "respect": 9,
           "tension": 10,
           "trust": 10
-        },
-        "mikey": {
-          "affection": 2,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 1
-        },
-        "nik": {
-          "affection": 5,
-          "met": true,
-          "respect": 3,
-          "tension": 1,
-          "trust": 7
-        },
-        "nonna": {
-          "affection": 4,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 3
-        },
-        "rosa": {
-          "affection": 3,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 0
-        },
-        "simone": {
-          "affection": 2,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 0
-        },
-        "teddy": {
-          "affection": 0,
-          "met": true,
-          "respect": 6,
-          "tension": 0,
-          "trust": 5
-        },
-        "vinnie": {
-          "affection": 1,
-          "met": true,
-          "respect": 0,
-          "tension": 1,
-          "trust": 0
-        },
-        "weisz": {
-          "affection": 0,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 0
         }
       },
       "clock": {
-        "date": "Sep 12",
-        "day": "Sat",
-        "time": "4:40 PM"
+        "date": "Sep 20",
+        "day": "Sun",
+        "time": "7:24 PM"
       },
       "created": 1791831489674,
       "done": [
         "s01e01",
         "s01e02",
         "s01e03",
-        "s01e04"
+        "s01e04",
+        "s01e05"
       ],
-      "drift": 8,
+      "drift": 0,
       "entered": {
         "s01e01:a1_arrive": true,
         "s01e01:a1_cab": true,
@@ -841,9 +910,39 @@
         "s01e04:a4_ride": true,
         "s01e04:cold_after": true,
         "s01e04:cold_open": true,
-        "s01e04:tag_xray": true
+        "s01e04:tag_xray": true,
+        "s01e05:a1_arrive": true,
+        "s01e05:a1_cannoli": true,
+        "s01e05:a1_hub": true,
+        "s01e05:a1_kitchen": true,
+        "s01e05:a1_ma_lie_ok": true,
+        "s01e05:a1_nik": true,
+        "s01e05:a1_ride": true,
+        "s01e05:a1_ride_after": true,
+        "s01e05:a1_roof": true,
+        "s01e05:a1_sleep": true,
+        "s01e05:a2_dessert": true,
+        "s01e05:a2_face_good": true,
+        "s01e05:a2_gigi": true,
+        "s01e05:a2_gigi_rescue": true,
+        "s01e05:a2_mikey": true,
+        "s01e05:a2_pop": true,
+        "s01e05:a2_pop_stay": true,
+        "s01e05:a2_table": true,
+        "s01e05:a3_alley": true,
+        "s01e05:a3_fight": true,
+        "s01e05:a3_slipped": true,
+        "s01e05:a3_v_push": true,
+        "s01e05:a4_goodbye": true,
+        "s01e05:a4_jules": true,
+        "s01e05:a4_stoop": true,
+        "s01e05:a4_whatif": true,
+        "s01e05:cold_end": true,
+        "s01e05:cold_open": true,
+        "s01e05:cold_yes": true,
+        "s01e05:tag_revenant": true
       },
-      "ep": "s01e05",
+      "ep": "s01e06",
       "epLog": [],
       "epRolls": [],
       "eps": {
@@ -1393,6 +1492,64 @@
             "rolls": 5
           },
           "title": "Sutures"
+        },
+        "s01e05": {
+          "finished": "2026-10-13T15:54:56.630Z",
+          "summary": {
+            "bonds": [
+              {
+                "d": {
+                  "affection": 2,
+                  "respect": 1,
+                  "tension": 0,
+                  "trust": 0
+                },
+                "id": "jules",
+                "now": {
+                  "affection": 7,
+                  "respect": 9,
+                  "tension": 10,
+                  "trust": 10
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                },
+                "id": "nik",
+                "now": {
+                  "affection": 5,
+                  "respect": 3,
+                  "tension": 1,
+                  "trust": 8
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": 4,
+                  "trust": 0
+                },
+                "id": "vinnie",
+                "now": {
+                  "affection": 1,
+                  "respect": 0,
+                  "tension": 5,
+                  "trust": 0
+                }
+              }
+            ],
+            "choices": 11,
+            "crits": 2,
+            "fails": 0,
+            "money": 0,
+            "rolls": 2
+          },
+          "title": "Sunday Gravy"
         }
       },
       "facts": {
@@ -1650,6 +1807,19 @@
           ],
           "text": "Jules carries an old ivory die from her grandmother. \"It isn't lucky. Luck isn't real.\""
         },
+        "jules_mifflin": {
+          "ep": "s01e05",
+          "knownBy": [
+            "sam",
+            "jules",
+            "rosa",
+            "frank",
+            "gigi",
+            "mikey",
+            "nonna"
+          ],
+          "text": "Jules came to Sunday dinner on Mifflin Street."
+        },
         "jules_never_loses": {
           "ep": "s01e01",
           "knownBy": [
@@ -1714,9 +1884,18 @@
         "lost_minutes": {
           "ep": "s01e02",
           "knownBy": [
-            "sam"
+            "sam",
+            "nik"
           ],
           "text": "After the Girard job, you lost twenty-one minutes. You woke up on a curb on Ridge Avenue with frost on your sneakers."
+        },
+        "lost_minutes2": {
+          "ep": "s01e05",
+          "knownBy": [
+            "sam",
+            "nik"
+          ],
+          "text": "You woke up on the Cardone roof at dawn with frost on your bare feet and no memory of going up there. Twenty-six minutes, gone."
         },
         "man_across_street": {
           "ep": "s01e01",
@@ -1742,6 +1921,19 @@
             "nik"
           ],
           "text": "Nik mapped it: the shimmer you saw in the Slip and the sound Bree heard come from the same place. The sky over McPherson Square, Kensington."
+        },
+        "mikey_task": {
+          "ep": "s01e05",
+          "knownBy": [
+            "sam",
+            "jules",
+            "rosa",
+            "frank",
+            "gigi",
+            "nonna",
+            "mikey"
+          ],
+          "text": "Mikey has been assigned full-time to the PPD task group hunting the Broad Street Blur. A Halcyon consultant named Brannigan asked for him by name."
         },
         "nik_panic": {
           "ep": "s01e04",
@@ -1801,6 +1993,14 @@
           ],
           "text": "Pop keeps declining calls from the same unknown number: a 215 number ending in 4471."
         },
+        "revenant2": {
+          "ep": "s01e05",
+          "knownBy": [
+            "sam",
+            "nonna"
+          ],
+          "text": "At dusk on Mifflin Street, the man who stands the way you stand waited under the streetlight at the end of the block. Nonna saw him too. She crossed herself."
+        },
         "rewind_voluntary": {
           "ep": "s01e04",
           "knownBy": [
@@ -1840,7 +2040,8 @@
           "knownBy": [
             "sam",
             "nik",
-            "nonna"
+            "nonna",
+            "vinnie"
           ],
           "text": "Your secret: when the world stopped, you didn't.",
           "track": true
@@ -1890,6 +2091,14 @@
           ],
           "text": "You have Teddy's number. The deal: if Halcyon comes for one of you, you call the others."
         },
+        "vinnie_dante": {
+          "ep": "s01e05",
+          "knownBy": [
+            "sam",
+            "vinnie"
+          ],
+          "text": "Vinnie drives nights for \"Dante from Passyunk.\" Twelve hundred a week, cash."
+        },
         "wawa_guy": {
           "ep": "s01e01",
           "knownBy": [
@@ -1905,6 +2114,14 @@
           ],
           "text": "Dr. Weisz told the class the Corliss Engine stopped \"for a heartbeat\" in 1876. After class he told you your edges were blurry."
         },
+        "whatif": {
+          "ep": "s01e05",
+          "knownBy": [
+            "sam",
+            "jules"
+          ],
+          "text": "On the stoop on Mifflin Street, Jules said your brother was looking for the Blur. You said, \"What if it was?\""
+        },
         "xray": {
           "ep": "s01e04",
           "knownBy": [
@@ -1917,8 +2134,11 @@
       "flags": {
         "after": "handoff",
         "arrive": "slip",
+        "ask": "yes",
         "beat_jules_read": true,
         "brannigan_saw": true,
+        "broke_nik_rule": true,
+        "cannoli": "truth",
         "carmen": "hip",
         "carmen_sorry": true,
         "cold": "laugh",
@@ -1930,6 +2150,8 @@
         "did_party": true,
         "did_sat_nap": true,
         "did_sat_nonna": true,
+        "did_sun_nik": true,
+        "did_sun_sleep": true,
         "did_thu_nik": true,
         "did_thu_sleep": true,
         "did_wed_carmen": true,
@@ -1951,6 +2173,7 @@
         "first_voluntary_rewind": true,
         "fri_leave": "promise",
         "fridge": "grabbed",
+        "gigi_q": "rescue",
         "grace": "open",
         "grace4": "some",
         "guard_saved": true,
@@ -1971,13 +2194,16 @@
         "lost_minutes": true,
         "lounge": "mock",
         "ma2": "joke",
+        "ma5": "lied",
         "met_ciro": true,
         "mikey2": "half",
+        "mikey5": "face",
         "monday": "hanky",
         "night": "brooding",
         "nik_greet": "warning",
         "nik_guy": "reluctant",
         "nik_panic": "sent",
+        "nik_rule": true,
         "nik_told": "lied",
         "nik_told2": "told",
         "nonna_silent": true,
@@ -1987,6 +2213,7 @@
         "party": "fight",
         "pool_bet": "favor",
         "pool_result": "fail",
+        "pop5": "stayed",
         "pop_money": "took",
         "pr": "listen",
         "pr2": "shared",
@@ -2009,6 +2236,9 @@
         "skipped_sat_femi": true,
         "skipped_sat_pop": true,
         "skipped_study": true,
+        "skipped_sun_femi": true,
+        "skipped_sun_grace": true,
+        "skipped_sun_heck": true,
         "skipped_thu_ciro": true,
         "skipped_thu_mikey": true,
         "skipped_thu_teddy": true,
@@ -2019,6 +2249,7 @@
         "skipped_wed_weisz": true,
         "slip_did": "mask",
         "stairs_result": "success",
+        "stoop": "whatif",
         "study1": "lied",
         "study2": "laugh",
         "tag": "stayed",
@@ -2031,6 +2262,7 @@
         "tue_night": "sleep",
         "video": true,
         "vinnie2": "pop",
+        "vinnie5": "slipped",
         "wawa": "slip",
         "xray_healed": true
       },
@@ -2041,44 +2273,22 @@
         "psy": 70
       },
       "heat": {
-        "jules": 8,
+        "jules": 9,
         "mikey": 2,
         "nik": 0,
         "press": 6,
-        "rosa": 1,
+        "rosa": 2,
         "simone": 1
       },
       "hidden": {
         "halcyon_heat": 6,
         "jules_luck": 0.35,
         "nudges": 1,
-        "revenant_drift": 10.5
+        "revenant_drift": 10.7
       },
       "hub": null,
       "hubs": {},
-      "injuries": [
-        {
-          "heal": 1,
-          "id": "handprint",
-          "name": "Burned chest (handprint)",
-          "pen": 0
-        },
-        {
-          "heal": 1,
-          "id": "laceration",
-          "name": "Laceration (forearm, stitched)",
-          "pen": 0
-        },
-        {
-          "affects": [
-            "body"
-          ],
-          "heal": 1,
-          "id": "burned_arms",
-          "name": "Burned arms",
-          "pen": 1
-        }
-      ],
+      "injuries": [],
       "lastRoll": null,
       "marked": {},
       "money": {
@@ -2086,13 +2296,14 @@
         "cash": 323
       },
       "pools": {
-        "focus": 6,
+        "focus": 10,
         "nerve": 8,
         "stamina": 6
       },
+      "pov": "jules",
       "powers": {
         "slip": {
-          "mastery": 34,
+          "mastery": 36,
           "nodes": [
             "burst",
             "slip",
@@ -2172,8 +2383,205 @@
         {
           "ep": "s01e04",
           "t": "Your x-ray showed ten days of healing. You broke it the night before."
+        },
+        {
+          "ep": "s01e05",
+          "t": "Jules came to Sunday dinner on Mifflin Street. Nonna handed her the macaroni first."
+        },
+        {
+          "ep": "s01e05",
+          "t": "Mikey is on the Blur task group now. Brannigan asked for him by name."
+        },
+        {
+          "ep": "s01e05",
+          "t": "Vinnie drives nights for a man named Dante, from Passyunk."
+        },
+        {
+          "ep": "s01e05",
+          "t": "A man who stands the way you do stood at the end of Mifflin Street. Nonna saw him too."
         }
       ],
+      "samSheet": {
+        "attrs": {
+          "body": 2,
+          "charm": 3,
+          "heart": 3,
+          "nerve": 3,
+          "reflex": 3,
+          "wits": 2
+        },
+        "bonds": {
+          "bree": {
+            "affection": 0,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 1
+          },
+          "callum": {
+            "affection": 2,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          },
+          "carmen": {
+            "affection": 2,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 2
+          },
+          "ciro": {
+            "affection": 1,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          },
+          "dana": {
+            "affection": 0,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          },
+          "femi": {
+            "affection": 1,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 3
+          },
+          "frank": {
+            "affection": 4,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 1
+          },
+          "gigi": {
+            "affection": 3,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 2
+          },
+          "grace": {
+            "affection": 1,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 2
+          },
+          "heck": {
+            "affection": 0,
+            "met": true,
+            "respect": 1,
+            "tension": 0,
+            "trust": 5
+          },
+          "jayden": {
+            "affection": 0,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          },
+          "jules": {
+            "affection": 7,
+            "met": true,
+            "respect": 9,
+            "tension": 10,
+            "trust": 10
+          },
+          "mikey": {
+            "affection": 2,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 1
+          },
+          "nik": {
+            "affection": 5,
+            "met": true,
+            "respect": 3,
+            "tension": 1,
+            "trust": 8
+          },
+          "nonna": {
+            "affection": 4,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 3
+          },
+          "rosa": {
+            "affection": 3,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          },
+          "simone": {
+            "affection": 2,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          },
+          "teddy": {
+            "affection": 0,
+            "met": true,
+            "respect": 6,
+            "tension": 0,
+            "trust": 5
+          },
+          "vinnie": {
+            "affection": 1,
+            "met": true,
+            "respect": 0,
+            "tension": 5,
+            "trust": 0
+          },
+          "weisz": {
+            "affection": 0,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          }
+        },
+        "drift": 9,
+        "injuries": [],
+        "marked": {},
+        "pools": {
+          "focus": 4,
+          "nerve": 8,
+          "stamina": 6
+        },
+        "skills": {
+          "athletics": 1,
+          "banter": 3,
+          "brawl": 2,
+          "cook": 1,
+          "empathy": 1,
+          "hustle": 1,
+          "intimidate": 0,
+          "investigate": 1,
+          "lie": 2,
+          "medicine": 0,
+          "parkour": 0,
+          "perform": 0,
+          "persuade": 2,
+          "ride": 2,
+          "stealth": 0,
+          "streetwise": 2,
+          "study": 1,
+          "tech": 0
+        },
+        "sleepDebt": 0
+      },
       "scene": "cold_open",
       "season": 1,
       "settings": {
@@ -2182,30 +2590,30 @@
         "sound": false
       },
       "skills": {
-        "athletics": 1,
-        "banter": 3,
-        "brawl": 2,
-        "cook": 1,
+        "athletics": 2,
+        "banter": 2,
+        "brawl": 0,
+        "cook": 0,
         "empathy": 1,
-        "hustle": 1,
-        "intimidate": 0,
-        "investigate": 1,
-        "lie": 1,
-        "medicine": 0,
+        "hustle": 3,
+        "intimidate": 1,
+        "investigate": 2,
+        "lie": 3,
+        "medicine": 1,
         "parkour": 0,
-        "perform": 0,
+        "perform": 1,
         "persuade": 2,
-        "ride": 2,
-        "stealth": 0,
-        "streetwise": 2,
-        "study": 1,
-        "tech": 0
+        "ride": 0,
+        "stealth": 1,
+        "streetwise": 0,
+        "study": 3,
+        "tech": 1
       },
-      "sleepDebt": 1,
-      "updated": 1791904822320,
+      "sleepDebt": 0,
+      "updated": 1791906905412,
       "v": 1,
-      "xp": 5,
-      "xpSpent": 18
+      "xp": 6,
+      "xpSpent": 22
     },
     "eps": {
       "s01e01": {
@@ -2812,6 +3220,274 @@
           "rolls": 2
         },
         "title": "Sunday Gravy"
+      },
+      "s01e06": {
+        "finished": "2026-10-13T16:59:36.666Z",
+        "summary": {
+          "bonds": [
+            {
+              "d": {
+                "affection": 0,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              },
+              "id": "bree",
+              "now": {
+                "affection": 0,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              }
+            },
+            {
+              "d": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              },
+              "id": "callum",
+              "now": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              }
+            },
+            {
+              "d": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 2
+              },
+              "id": "carmen",
+              "now": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 2
+              }
+            },
+            {
+              "d": {
+                "affection": 1,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              },
+              "id": "ciro",
+              "now": {
+                "affection": 1,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              }
+            },
+            {
+              "d": {
+                "affection": 1,
+                "respect": 0,
+                "tension": 0,
+                "trust": 3
+              },
+              "id": "femi",
+              "now": {
+                "affection": 1,
+                "respect": 0,
+                "tension": 0,
+                "trust": 3
+              }
+            },
+            {
+              "d": {
+                "affection": 4,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              },
+              "id": "frank",
+              "now": {
+                "affection": 4,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              }
+            },
+            {
+              "d": {
+                "affection": 3,
+                "respect": 0,
+                "tension": 0,
+                "trust": 2
+              },
+              "id": "gigi",
+              "now": {
+                "affection": 3,
+                "respect": 0,
+                "tension": 0,
+                "trust": 2
+              }
+            },
+            {
+              "d": {
+                "affection": 1,
+                "respect": 0,
+                "tension": 0,
+                "trust": 2
+              },
+              "id": "grace",
+              "now": {
+                "affection": 1,
+                "respect": 0,
+                "tension": 0,
+                "trust": 2
+              }
+            },
+            {
+              "d": {
+                "affection": 0,
+                "respect": 1,
+                "tension": 0,
+                "trust": 5
+              },
+              "id": "heck",
+              "now": {
+                "affection": 0,
+                "respect": 1,
+                "tension": 0,
+                "trust": 5
+              }
+            },
+            {
+              "d": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              },
+              "id": "jules",
+              "now": {
+                "affection": 9,
+                "respect": 9,
+                "tension": 10,
+                "trust": 10
+              }
+            },
+            {
+              "d": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              },
+              "id": "mikey",
+              "now": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              }
+            },
+            {
+              "d": {
+                "affection": 5,
+                "respect": 3,
+                "tension": 1,
+                "trust": 8
+              },
+              "id": "nik",
+              "now": {
+                "affection": 5,
+                "respect": 3,
+                "tension": 1,
+                "trust": 8
+              }
+            },
+            {
+              "d": {
+                "affection": 4,
+                "respect": 0,
+                "tension": 0,
+                "trust": 3
+              },
+              "id": "nonna",
+              "now": {
+                "affection": 4,
+                "respect": 0,
+                "tension": 0,
+                "trust": 3
+              }
+            },
+            {
+              "d": {
+                "affection": 3,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              },
+              "id": "rosa",
+              "now": {
+                "affection": 3,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              }
+            },
+            {
+              "d": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              },
+              "id": "simone",
+              "now": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              }
+            },
+            {
+              "d": {
+                "affection": 0,
+                "respect": 6,
+                "tension": 0,
+                "trust": 5
+              },
+              "id": "teddy",
+              "now": {
+                "affection": 0,
+                "respect": 6,
+                "tension": 0,
+                "trust": 5
+              }
+            },
+            {
+              "d": {
+                "affection": 1,
+                "respect": 0,
+                "tension": 5,
+                "trust": 0
+              },
+              "id": "vinnie",
+              "now": {
+                "affection": 1,
+                "respect": 0,
+                "tension": 5,
+                "trust": 0
+              }
+            }
+          ],
+          "choices": 15,
+          "crits": 6,
+          "fails": 0,
+          "money": 0,
+          "rolls": 6
+        },
+        "title": "The House Always Wins"
       }
     },
     "facts": {
@@ -2872,6 +3548,14 @@
           "carmen"
         ],
         "text": "Carmen Torres gave you a San Judas Tadeo medal. Saint Jude, patron of lost causes."
+      },
+      "constance_started": {
+        "ep": "s01e06",
+        "knownBy": [
+          "jules",
+          "constance"
+        ],
+        "text": "In the chapel at Ravenscourt, Gran had Jules roll the ivory die on the altar. Six. \"How many times?\" \"Every time.\" Gran said: \"It's started, then.\""
       },
       "costume": {
         "ep": "s01e03",
@@ -3036,6 +3720,13 @@
         ],
         "text": "Jules's ivory die rolls nothing but sixes now."
       },
+      "jules_fall_test": {
+        "ep": "s01e06",
+        "knownBy": [
+          "jules"
+        ],
+        "text": "At Ravenscourt, Jules let go of the reins over a four-foot wall to see what would happen. She landed on her feet. Mercutio didn't."
+      },
       "jules_fire": {
         "ep": "s01e03",
         "knownBy": [
@@ -3117,6 +3808,14 @@
         ],
         "text": "Jules saw you bleed again in recitation, onto her handkerchief."
       },
+      "jules_text_whatif": {
+        "ep": "s01e06",
+        "knownBy": [
+          "sam",
+          "jules"
+        ],
+        "text": "At 12:58 a.m. on October 4, Jules texted you: \"What if it was me.\" Nothing else."
+      },
       "jules_twin": {
         "ep": "s01e01",
         "knownBy": [
@@ -3127,6 +3826,13 @@
           "grace"
         ],
         "text": "Jules has a twin brother at Penn."
+      },
+      "jules_two_sams": {
+        "ep": "s01e06",
+        "knownBy": [
+          "jules"
+        ],
+        "text": "Jules saw Sam in two places at once on the ninth floor. One in a towel, one in his doorway."
       },
       "kensington_shimmer": {
         "ep": "s01e03",
@@ -3308,6 +4014,14 @@
         "text": "Your secret: when the world stopped, you didn't.",
         "track": true
       },
+      "simone_list": {
+        "ep": "s01e06",
+        "knownBy": [
+          "jules",
+          "simone"
+        ],
+        "text": "Simone keeps a list on her phone about Jules, and one about Sam. Jules added a line: \"8. She knows about this list.\""
+      },
       "slip_rules": {
         "ep": "s01e01",
         "knownBy": [
@@ -3394,12 +4108,14 @@
       }
     },
     "flags": {
+      "achterberg6": "lie",
       "after": "handoff",
       "arrive": "slip",
       "ask": "yes",
       "beat_jules_read": true,
       "brannigan_saw": true,
       "broke_nik_rule": true,
+      "callum6": "true",
       "cannoli": "truth",
       "carmen": "hip",
       "carmen_sorry": true,
@@ -3410,6 +4126,8 @@
       "did_ciro": true,
       "did_nap": true,
       "did_party": true,
+      "did_sat6_callum": true,
+      "did_sat6_horse": true,
       "did_sat_nap": true,
       "did_sat_nonna": true,
       "did_sun_nik": true,
@@ -3440,6 +4158,8 @@
       "grace4": "some",
       "guard_saved": true,
       "halcyon_peek": "full",
+      "hall6": "normal",
+      "hands_won": 3,
       "heck_fate": "saved",
       "heck_reach": "miss",
       "heist": "slip",
@@ -3448,11 +4168,15 @@
       "hitch_choice": "kid",
       "hitch_result": "fail",
       "hitch_rewound": true,
+      "horse6": "letgo",
+      "hugh_hand": "won",
+      "ily": "too",
       "jacket": true,
       "jules4": "some",
       "jules_guess": "love",
       "leave": "cant",
       "light": "trade",
+      "list": "added",
       "lost_minutes": true,
       "lounge": "mock",
       "ma2": "joke",
@@ -3461,6 +4185,7 @@
       "mikey2": "half",
       "mikey5": "face",
       "monday": "hanky",
+      "mother6": "defend",
       "night": "brooding",
       "nik_greet": "warning",
       "nik_guy": "reluctant",
@@ -3485,15 +4210,18 @@
       "ret": "truth",
       "roof1": "laugh",
       "roof_end": "lean",
+      "roof_want": "kept",
       "roof_why": "highness",
       "run": "fail",
       "sat_jules": "talk",
+      "sim6": "bracelet",
       "simone_roof": "dodged",
       "skipped_dinner": true,
       "skipped_home": true,
       "skipped_hospital": true,
       "skipped_library": true,
       "skipped_practice": true,
+      "skipped_sat6_hugh": true,
       "skipped_sat_ciro": true,
       "skipped_sat_femi": true,
       "skipped_sat_pop": true,
@@ -3518,6 +4246,8 @@
       "teddy_burned": true,
       "teddy_meet": "go",
       "teddy_number": true,
+      "test6": "straight",
+      "text6": "whatif",
       "the_night": true,
       "thu_slept": true,
       "ttal": "laughs",
@@ -3544,6 +4274,8 @@
     },
     "hidden": {
       "halcyon_heat": 6,
+      "halcyon_jules": 1,
+      "jules_debt": 3,
       "jules_luck": 0.35,
       "nudges": 1,
       "revenant_drift": 10.7
@@ -3553,45 +4285,95 @@
       "a1_hub": {
         "left": 0,
         "used": [
-          "sun_nik",
-          "sun_sleep"
+          "sat6_horse",
+          "sat6_callum"
         ]
       }
     },
-    "injuries": [
-      {
-        "heal": 1,
-        "id": "handprint",
-        "name": "Burned chest (handprint)",
-        "pen": 0
+    "injuries": [],
+    "julesBonds": {
+      "callum": {
+        "affection": 3,
+        "met": true,
+        "respect": 0,
+        "tension": 0,
+        "trust": 0
       },
-      {
-        "heal": 1,
-        "id": "laceration",
-        "name": "Laceration (forearm, stitched)",
-        "pen": 0
+      "catherine": {
+        "affection": 0,
+        "met": true,
+        "respect": 0,
+        "tension": 1,
+        "trust": 0
       },
-      {
-        "affects": [
-          "body"
-        ],
-        "heal": 1,
-        "id": "burned_arms",
-        "name": "Burned arms",
-        "pen": 1
+      "constance": {
+        "affection": 0,
+        "met": true,
+        "respect": 0,
+        "tension": 0,
+        "trust": 3
+      },
+      "hugh": {
+        "affection": 0,
+        "met": true,
+        "respect": 0,
+        "tension": 2,
+        "trust": 0
+      },
+      "simone": {
+        "affection": 1,
+        "met": true,
+        "respect": 2,
+        "tension": 0,
+        "trust": 1
+      },
+      "whitney": {
+        "affection": 0,
+        "met": true,
+        "respect": 0,
+        "tension": 0,
+        "trust": 0
       }
-    ],
-    "lastRoll": null,
-    "marked": {
-      "lie": false
     },
+    "julesSheet": {
+      "attrs": {
+        "body": 2,
+        "charm": 4,
+        "heart": 2,
+        "nerve": 3,
+        "reflex": 3,
+        "wits": 4
+      },
+      "skills": {
+        "athletics": 2,
+        "banter": 2,
+        "brawl": 0,
+        "cook": 0,
+        "empathy": 1,
+        "hustle": 3,
+        "intimidate": 1,
+        "investigate": 2,
+        "lie": 3,
+        "medicine": 1,
+        "parkour": 0,
+        "perform": 1,
+        "persuade": 2,
+        "ride": 0,
+        "stealth": 1,
+        "streetwise": 0,
+        "study": 3,
+        "tech": 1
+      }
+    },
+    "lastRoll": null,
+    "marked": {},
     "money": {
       "bank": 312,
       "cash": 323
     },
     "pools": {
       "focus": 4,
-      "nerve": 6,
+      "nerve": 8,
       "stamina": 6
     },
     "powers": {
@@ -3692,14 +4474,30 @@
       {
         "ep": "s01e05",
         "t": "A man who stands the way you do stood at the end of Mifflin Street. Nonna saw him too."
+      },
+      {
+        "ep": "s01e06",
+        "t": "At Ravenscourt, Jules couldn't lose a hand of cards, no matter what she did."
+      },
+      {
+        "ep": "s01e06",
+        "t": "A physicist named Dr. Achterberg asked where Jules was at 11:51 on August 22."
+      },
+      {
+        "ep": "s01e06",
+        "t": "Callum said \"I love you.\" Jules said it back."
+      },
+      {
+        "ep": "s01e06",
+        "t": "In the chapel at Ravenscourt, Constance watched the die come up six, and said, \"It's started, then.\""
       }
     ],
-    "scene": "tag_revenant",
+    "scene": "tag_chapel",
     "season": 1,
     "settings": {
       "motion": true,
       "size": 1,
-      "sound": false
+      "sound": true
     },
     "skills": {
       "athletics": 1,
@@ -3722,9 +4520,9 @@
       "tech": 0
     },
     "sleepDebt": 0,
-    "updated": 1791906905412,
+    "updated": 1791910776666,
     "v": 1,
-    "xp": 6,
+    "xp": 10,
     "xpSpent": 22
   }
 }
