@@ -357,6 +357,7 @@ function reply(i, oid){
 }
 async function finishEpisode(){
   const p = play(); p.finished = true; p.finishedAt = Date.now();
+  if(ep()?.dateEnd || ep()?.date) S.prog.date = ep().dateEnd || ep().date;
   S.prog.done = [...new Set([...(S.prog.done||[]), S.prog.cur])];
   await savePlay(S.prog.cur);
   const nx = nextId(S.prog.cur);
