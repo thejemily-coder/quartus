@@ -1,8 +1,8 @@
 {
   "engine": "1.0.0",
-  "ep": "s01e02",
-  "savedAt": "2026-10-13T05:28:19.881Z",
-  "scene": "tag_van",
+  "ep": "s01e03",
+  "savedAt": "2026-10-13T13:37:59.048Z",
+  "scene": "tag_morning",
   "state": {
     "attrs": {
       "body": 2,
@@ -13,8 +13,15 @@
       "wits": 2
     },
     "bonds": {
+      "bree": {
+        "affection": 0,
+        "met": true,
+        "respect": 0,
+        "tension": 0,
+        "trust": 1
+      },
       "callum": {
-        "affection": 1,
+        "affection": 2,
         "met": true,
         "respect": 0,
         "tension": 0,
@@ -69,6 +76,13 @@
         "tension": 0,
         "trust": 1
       },
+      "heck": {
+        "affection": 0,
+        "met": true,
+        "respect": 0,
+        "tension": 0,
+        "trust": 2
+      },
       "jayden": {
         "affection": 0,
         "met": true,
@@ -77,11 +91,11 @@
         "trust": 0
       },
       "jules": {
-        "affection": 0,
+        "affection": 4,
         "met": true,
-        "respect": 6,
+        "respect": 8,
         "tension": 10,
-        "trust": 1
+        "trust": 8
       },
       "mikey": {
         "affection": 2,
@@ -93,16 +107,16 @@
       "nik": {
         "affection": 5,
         "met": true,
-        "respect": 2,
+        "respect": 3,
         "tension": 1,
         "trust": 5
       },
       "nonna": {
-        "affection": 0,
+        "affection": 4,
         "met": true,
         "respect": 0,
         "tension": 0,
-        "trust": 1
+        "trust": 3
       },
       "rosa": {
         "affection": 3,
@@ -121,9 +135,9 @@
       "teddy": {
         "affection": 0,
         "met": true,
-        "respect": 2,
+        "respect": 4,
         "tension": 0,
-        "trust": 0
+        "trust": 3
       },
       "vinnie": {
         "affection": 1,
@@ -141,16 +155,17 @@
       }
     },
     "clock": {
-      "date": "Aug 29",
-      "day": "Sat",
-      "time": "2:40 AM"
+      "date": "Sep 6",
+      "day": "Sun",
+      "time": "8:20 AM"
     },
     "created": 1791831489674,
     "done": [
       "s01e01",
-      "s01e02"
+      "s01e02",
+      "s01e03"
     ],
-    "drift": 4,
+    "drift": 6,
     "entered": {
       "s01e01:a1_arrive": true,
       "s01e01:a1_cab": true,
@@ -253,203 +268,105 @@
       "s01e02:cold_open": true,
       "s01e02:cold_tell": true,
       "s01e02:tag_teddy": true,
-      "s01e02:tag_van": true
+      "s01e02:tag_van": true,
+      "s01e03:a1_hub": true,
+      "s01e03:a1_jules_door": true,
+      "s01e03:a1_nap": true,
+      "s01e03:a1_nonna": true,
+      "s01e03:a1_nonna_silent": true,
+      "s01e03:a1_order": true,
+      "s01e03:a1_saturday": true,
+      "s01e03:a2_blackout": true,
+      "s01e03:a2_glow": true,
+      "s01e03:a2_port_richmond": true,
+      "s01e03:a2_pr_leave": true,
+      "s01e03:a2_pr_shared": true,
+      "s01e03:a2_pr_why": true,
+      "s01e03:a2_roof": true,
+      "s01e03:a2_roof_laugh_weak": true,
+      "s01e03:a3_family": true,
+      "s01e03:a3_family_clean": true,
+      "s01e03:a3_go": true,
+      "s01e03:a3_rest": true,
+      "s01e03:a4_dawn": true,
+      "s01e03:a4_hands": true,
+      "s01e03:a4_her_lonely": true,
+      "s01e03:a4_him_carmen": true,
+      "s01e03:a4_lean": true,
+      "s01e03:a4_light_trade": true,
+      "s01e03:a4_return": true,
+      "s01e03:a4_talk_her": true,
+      "s01e03:a4_talk_him": true,
+      "s01e03:a4_talk_light": true,
+      "s01e03:cold_costume": true,
+      "s01e03:cold_open": true,
+      "s01e03:tag_morning": true
     },
-    "ep": "s01e02",
+    "ep": "s01e03",
     "epLog": [
       {
-        "choice": "Tell him. All of it. The light, the bus, the cold, the kid. Carmen. Everything.",
-        "ep": "s01e02",
+        "choice": "Black hoodie, black neck gaiter pulled up to the eyes, the Eagles cap Pop gave you turned backward. Nobody looks twice at a kid in a hoodie in Philly.",
+        "ep": "s01e03",
         "scene": "cold_open",
-        "t": 1791867773187
+        "t": 1791897866816
       },
       {
-        "choice": "\"This isn't a comic, man. A woman's in the hospital because I wasn't fast enough.\" (But let him in.)",
-        "ep": "s01e02",
-        "scene": "cold_tell",
-        "t": 1791867795795
+        "choice": "\"Not going home either, huh?\"",
+        "ep": "s01e03",
+        "scene": "a1_saturday",
+        "t": 1791897956434
       },
       {
-        "choice": "Let her drive. She clearly knows this. Ask good questions.",
-        "ep": "s01e02",
-        "roll": {
-          "dice": [
-            2
-          ],
-          "kind": "d20",
-          "label": "Worksheet 1: limits",
-          "nudged": false,
-          "rewound": false,
-          "tier": "fail"
-        },
-        "scene": "a1_recitation",
-        "t": 1791867891715
-      },
-      {
-        "choice": "\"You're not crazy. I don't know what it is. But I can see you fine. Here, give me your number.\"",
-        "ep": "s01e02",
-        "scene": "a1_femi",
-        "t": 1791868000454
-      },
-      {
-        "choice": "\"Thank you. Seriously.\" Tell her the truth, or some of it: you were in the zone, it was cold, it's been weird since.",
-        "ep": "s01e02",
-        "roll": {
-          "dice": [
-            3,
-            5
-          ],
-          "kind": "move",
-          "label": "Trust Grace",
-          "nudged": false,
-          "rewound": false,
-          "tier": "weak"
-        },
-        "scene": "a1_grace",
-        "t": 1791868107281
-      },
-      {
-        "choice": "Sleep. Actually sleep. Phone across the room.",
-        "ep": "s01e02",
-        "scene": "a1_grace_end",
-        "t": 1791868142555
-      },
-      {
-        "choice": "Call Ma back. It's been three days. She's called eleven times.",
-        "ep": "s01e02",
+        "choice": "The fourth floor of Charles Library has air conditioning and a beanbag. Sleep.",
+        "ep": "s01e03",
         "hub": true,
-        "scene": "a2_hub",
-        "t": 1791868163463
+        "scene": "a1_hub",
+        "t": 1791898008520
       },
       {
-        "choice": "\"Ma, everybody in Philly has my walk. It's a Philly walk.\" Make her laugh.",
-        "ep": "s01e02",
-        "roll": {
-          "dice": [
-            5,
-            5
-          ],
-          "kind": "move",
-          "label": "Disarm Ma",
-          "nudged": false,
-          "rewound": false,
-          "tier": "strong"
-        },
-        "scene": "a2_ma",
-        "t": 1791868184032
-      },
-      {
-        "choice": "Temple University Hospital. Sixth floor. Carmen Torres. You owe her this.",
-        "ep": "s01e02",
+        "choice": "Take the train down to Mifflin Street. Nonna said \"come Sunday\" ten days ago, and you never went. You can't put it off again.",
+        "ep": "s01e03",
         "hub": true,
-        "scene": "a2_hub",
-        "t": 1791868230231
+        "scene": "a1_hub",
+        "t": 1791898013269
       },
       {
-        "choice": "\"I'm sorry. I should've been faster. I should have gotten you too.\"",
-        "ep": "s01e02",
-        "scene": "a2_carmen",
-        "t": 1791868253795
+        "choice": "Say nothing. Hold her hand. She already knows.",
+        "ep": "s01e03",
+        "scene": "a1_nonna",
+        "t": 1791898040483
       },
       {
-        "choice": "Vinnie's been blowing up your phone since the Wawa video. FaceTime him.",
-        "ep": "s01e02",
-        "hub": true,
-        "scene": "a2_hub",
-        "t": 1791868295712
+        "choice": "Go. Take the pizza. Whatever this is, Teddy said please.",
+        "ep": "s01e03",
+        "scene": "a1_order",
+        "t": 1791898080400
       },
       {
-        "choice": "\"What young guy? Vin. Who was Pop with?\"",
-        "ep": "s01e02",
+        "choice": "Sit. Listen. \"Why am I here, Teddy?\"",
+        "ep": "s01e03",
+        "scene": "a2_port_richmond",
+        "t": 1791898107298
+      },
+      {
+        "choice": "Tell him what you know: the name Brannigan, the beds, the RA bounty. Everything Halcyon.",
+        "ep": "s01e03",
+        "scene": "a2_pr_why",
+        "t": 1791898140520
+      },
+      {
+        "choice": "\"After you, Your Highness.\" You're never going to stop.",
+        "ep": "s01e03",
+        "scene": "a2_blackout",
+        "t": 1791898225425
+      },
+      {
+        "choice": "Make her laugh. That's what you're for.",
+        "ep": "s01e03",
         "roll": {
           "dice": [
-            2,
-            5
-          ],
-          "kind": "move",
-          "label": "Get it out of Vinnie",
-          "nudged": false,
-          "rewound": false,
-          "tier": "weak"
-        },
-        "scene": "a2_vinnie",
-        "t": 1791868326852
-      },
-      {
-        "choice": "Slip.",
-        "ep": "s01e02",
-        "scene": "a2_thursday",
-        "t": 1791868792505
-      },
-      {
-        "choice": "The mask. Pull it off the one touching the truck. See his face.",
-        "ep": "s01e02",
-        "scene": "a2_heist_slip",
-        "t": 1791868818048
-      },
-      {
-        "choice": "\"There's a man dying in that windshield. Let me get him out, and you walk.\"",
-        "ep": "s01e02",
-        "roll": {
-          "dice": [
-            3,
+            1,
             4
-          ],
-          "kind": "move",
-          "label": "Make a deal",
-          "nudged": false,
-          "rewound": false,
-          "tier": "weak"
-        },
-        "scene": "a2_teddy",
-        "t": 1791868855571
-      },
-      {
-        "choice": "\"I was there. I deliver up and down Broad, Mike, I was *there*. I saw it. That's all.\" Not a lie. Not the truth.",
-        "ep": "s01e02",
-        "scene": "a3_mikey",
-        "t": 1791869039127
-      },
-      {
-        "choice": "Lie. \"Long shift. Bad tips. I'm fine.\" Smile. Hands still.",
-        "ep": "s01e02",
-        "roll": {
-          "dice": [
-            6,
-            6
-          ],
-          "kind": "move",
-          "label": "Lie to Jules",
-          "nudged": true,
-          "rewound": false,
-          "tier": "strong"
-        },
-        "scene": "a3_study",
-        "t": 1791869089994
-      },
-      {
-        "choice": "Lock in. Do the practice quiz like it's the real one.",
-        "ep": "s01e02",
-        "roll": {
-          "dice": [
-            20
-          ],
-          "kind": "d20",
-          "label": "Practice quiz",
-          "nudged": false,
-          "rewound": false,
-          "tier": "crit"
-        },
-        "scene": "a3_study_calc",
-        "t": 1791869119569
-      },
-      {
-        "choice": "Do Ciro explaining the squeeze theorem. Get the laugh. You need it.",
-        "ep": "s01e02",
-        "roll": {
-          "dice": [
-            2,
-            5
           ],
           "kind": "move",
           "label": "Make her laugh",
@@ -457,115 +374,89 @@
           "rewound": false,
           "tier": "weak"
         },
-        "scene": "a3_study_talk",
-        "t": 1791869157434
+        "scene": "a2_roof",
+        "t": 1791898244124
       },
       {
-        "choice": "Take the quiz. Her handwriting is in your head.",
-        "ep": "s01e02",
+        "choice": "\"I have to go. I can't tell you why. I'm sorry.\" Look at her when you say it.",
+        "ep": "s01e03",
+        "scene": "a2_glow",
+        "t": 1791898283964
+      },
+      {
+        "choice": "The window. The woman, the baby, the boy. Get them out.",
+        "ep": "s01e03",
+        "scene": "a3_go",
+        "t": 1791898309908
+      },
+      {
+        "choice": "Don't climb. Think. Find another way down. The house next door. The roof.",
+        "ep": "s01e03",
         "roll": {
           "dice": [
-            10
+            11
           ],
           "kind": "d20",
-          "label": "MATH 1041 · Quiz 1",
+          "label": "See the way out",
           "nudged": false,
           "rewound": false,
           "tier": "success"
         },
-        "scene": "a3_quiz",
-        "t": 1791869210781
+        "scene": "a3_family",
+        "t": 1791898318509
+      },
+      {
+        "choice": "\"There was a fire. I went to help.\" The truth, or most of it. No more than that.",
+        "ep": "s01e03",
+        "scene": "a4_return",
+        "t": 1791898388792
+      },
+      {
+        "choice": "\"I keep the closet door closed. Every night. Since I was a kid. Mikey told me there was a guy in there.\" Give her one of yours.",
+        "ep": "s01e03",
+        "scene": "a4_talk_light",
+        "t": 1791898447927
+      },
+      {
+        "choice": "Carmen Torres. The bus. \"I was too slow. A grandmother broke her hip because I was half a second too slow.\"",
+        "ep": "s01e03",
+        "scene": "a4_talk_him",
+        "t": 1791898483708
+      },
+      {
+        "choice": "\"That sounds lonely.\"",
+        "ep": "s01e03",
+        "roll": {
+          "dice": [
+            3,
+            6
+          ],
+          "kind": "move",
+          "label": "Hear her",
+          "nudged": false,
+          "rewound": false,
+          "tier": "strong"
+        },
+        "scene": "a4_talk_her",
+        "t": 1791898538713
+      },
+      {
+        "choice": "Lean in. Slowly. Leave her every chance to stop it.",
+        "ep": "s01e03",
+        "scene": "a4_dawn",
+        "t": 1791898597468
       }
     ],
     "epRolls": [
       {
         "dice": [
-          2
-        ],
-        "ep": "s01e02",
-        "kind": "d20",
-        "label": "Worksheet 1: limits",
-        "mod": 4,
-        "nudged": false,
-        "pushes": {
-          "burst": false,
-          "focus": true,
-          "grit": false,
-          "push": false
-        },
-        "rewound": false,
-        "scene": "a1_recitation",
-        "tier": "fail"
-      },
-      {
-        "dice": [
-          3,
-          5
-        ],
-        "ep": "s01e02",
-        "kind": "move",
-        "label": "Trust Grace",
-        "mod": 0,
-        "nudged": false,
-        "pushes": {
-          "burst": false,
-          "focus": false,
-          "grit": false,
-          "push": false
-        },
-        "rewound": false,
-        "scene": "a1_grace",
-        "tier": "weak"
-      },
-      {
-        "dice": [
-          5,
-          5
-        ],
-        "ep": "s01e02",
-        "kind": "move",
-        "label": "Disarm Ma",
-        "mod": 1,
-        "nudged": false,
-        "pushes": {
-          "burst": false,
-          "focus": false,
-          "grit": false,
-          "push": false
-        },
-        "rewound": false,
-        "scene": "a2_ma",
-        "tier": "strong"
-      },
-      {
-        "dice": [
-          2,
-          5
-        ],
-        "ep": "s01e02",
-        "kind": "move",
-        "label": "Get it out of Vinnie",
-        "mod": 0,
-        "nudged": false,
-        "pushes": {
-          "burst": false,
-          "focus": false,
-          "grit": false,
-          "push": false
-        },
-        "rewound": false,
-        "scene": "a2_vinnie",
-        "tier": "weak"
-      },
-      {
-        "dice": [
-          3,
+          1,
           4
         ],
-        "ep": "s01e02",
+        "ep": "s01e03",
         "kind": "move",
-        "label": "Make a deal",
-        "mod": 1,
+        "label": "Make her laugh",
+        "mod": 3,
         "nudged": false,
         "pushes": {
           "burst": false,
@@ -574,56 +465,36 @@
           "push": true
         },
         "rewound": false,
-        "scene": "a2_teddy",
+        "scene": "a2_roof",
         "tier": "weak"
       },
       {
         "dice": [
-          6,
-          6
+          11
         ],
-        "ep": "s01e02",
-        "kind": "move",
-        "label": "Lie to Jules",
-        "mod": 0,
-        "nudged": true,
-        "pushes": {
-          "burst": false,
-          "focus": false,
-          "grit": false,
-          "push": false
-        },
-        "rewound": false,
-        "scene": "a3_study",
-        "tier": "strong"
-      },
-      {
-        "dice": [
-          20
-        ],
-        "ep": "s01e02",
+        "ep": "s01e03",
         "kind": "d20",
-        "label": "Practice quiz",
+        "label": "See the way out",
         "mod": 4,
         "nudged": false,
         "pushes": {
           "burst": false,
-          "focus": true,
+          "focus": false,
           "grit": false,
-          "push": false
+          "push": true
         },
         "rewound": false,
-        "scene": "a3_study_calc",
-        "tier": "crit"
+        "scene": "a3_family",
+        "tier": "success"
       },
       {
         "dice": [
-          2,
-          5
+          3,
+          6
         ],
-        "ep": "s01e02",
+        "ep": "s01e03",
         "kind": "move",
-        "label": "Make her laugh",
+        "label": "Hear her",
         "mod": 2,
         "nudged": false,
         "pushes": {
@@ -633,27 +504,8 @@
           "push": true
         },
         "rewound": false,
-        "scene": "a3_study_talk",
-        "tier": "weak"
-      },
-      {
-        "dice": [
-          10
-        ],
-        "ep": "s01e02",
-        "kind": "d20",
-        "label": "MATH 1041 · Quiz 1",
-        "mod": 4,
-        "nudged": false,
-        "pushes": {
-          "burst": false,
-          "focus": true,
-          "grit": false,
-          "push": false
-        },
-        "rewound": false,
-        "scene": "a3_quiz",
-        "tier": "success"
+        "scene": "a4_talk_her",
+        "tier": "strong"
       }
     ],
     "epStart": {
@@ -674,11 +526,11 @@
           "trust": 0
         },
         "carmen": {
-          "affection": 0,
+          "affection": 2,
           "met": true,
           "respect": 0,
           "tension": 0,
-          "trust": 1
+          "trust": 2
         },
         "ciro": {
           "affection": 1,
@@ -693,6 +545,13 @@
           "respect": 0,
           "tension": 0,
           "trust": 0
+        },
+        "femi": {
+          "affection": 1,
+          "met": true,
+          "respect": 0,
+          "tension": 0,
+          "trust": 2
         },
         "frank": {
           "affection": 4,
@@ -713,7 +572,7 @@
           "met": true,
           "respect": 0,
           "tension": 0,
-          "trust": 0
+          "trust": 1
         },
         "jayden": {
           "affection": 0,
@@ -725,16 +584,23 @@
         "jules": {
           "affection": 0,
           "met": true,
-          "respect": 4,
+          "respect": 6,
           "tension": 10,
           "trust": 1
         },
-        "nik": {
-          "affection": 3,
+        "mikey": {
+          "affection": 2,
           "met": true,
           "respect": 0,
           "tension": 0,
-          "trust": 2
+          "trust": 1
+        },
+        "nik": {
+          "affection": 5,
+          "met": true,
+          "respect": 2,
+          "tension": 1,
+          "trust": 5
         },
         "nonna": {
           "affection": 0,
@@ -747,7 +613,7 @@
           "affection": 3,
           "met": true,
           "respect": 0,
-          "tension": 1,
+          "tension": 0,
           "trust": 0
         },
         "simone": {
@@ -755,6 +621,20 @@
           "met": true,
           "respect": 0,
           "tension": 0,
+          "trust": 0
+        },
+        "teddy": {
+          "affection": 0,
+          "met": true,
+          "respect": 2,
+          "tension": 0,
+          "trust": 0
+        },
+        "vinnie": {
+          "affection": 1,
+          "met": true,
+          "respect": 0,
+          "tension": 1,
           "trust": 0
         },
         "weisz": {
@@ -766,15 +646,16 @@
         }
       },
       "clock": {
-        "date": "Aug 25",
-        "day": "Tue",
-        "time": "1:40 AM"
+        "date": "Aug 29",
+        "day": "Sat",
+        "time": "2:40 AM"
       },
       "created": 1791831489674,
       "done": [
-        "s01e01"
+        "s01e01",
+        "s01e02"
       ],
-      "drift": 6,
+      "drift": 4,
       "entered": {
         "s01e01:a1_arrive": true,
         "s01e01:a1_cab": true,
@@ -836,9 +717,50 @@
         "s01e01:cold_open": true,
         "s01e01:tag_end": true,
         "s01e01:tag_jules": true,
-        "s01e01:tag_sam": true
+        "s01e01:tag_sam": true,
+        "s01e02:a1_femi": true,
+        "s01e02:a1_femi_half": true,
+        "s01e02:a1_grace": true,
+        "s01e02:a1_grace_end": true,
+        "s01e02:a1_grace_open_weak": true,
+        "s01e02:a1_rec_drive_bad": true,
+        "s01e02:a1_rec_nose": true,
+        "s01e02:a1_recitation": true,
+        "s01e02:a2_after_heist": true,
+        "s01e02:a2_carmen": true,
+        "s01e02:a2_carmen_end": true,
+        "s01e02:a2_carmen_sorry": true,
+        "s01e02:a2_fight_deal": true,
+        "s01e02:a2_heist_slip": true,
+        "s01e02:a2_hub": true,
+        "s01e02:a2_lost": true,
+        "s01e02:a2_ma": true,
+        "s01e02:a2_ma_laugh": true,
+        "s01e02:a2_ma_nonna": true,
+        "s01e02:a2_slip_out": true,
+        "s01e02:a2_teddy": true,
+        "s01e02:a2_thursday": true,
+        "s01e02:a2_vinnie": true,
+        "s01e02:a2_vinnie_pop_weak": true,
+        "s01e02:a3_article": true,
+        "s01e02:a3_mikey": true,
+        "s01e02:a3_mikey_end": true,
+        "s01e02:a3_mikey_half": true,
+        "s01e02:a3_quiz": true,
+        "s01e02:a3_quiz_good": true,
+        "s01e02:a3_study": true,
+        "s01e02:a3_study_calc": true,
+        "s01e02:a3_study_calc_good": true,
+        "s01e02:a3_study_end": true,
+        "s01e02:a3_study_lie": true,
+        "s01e02:a3_study_talk": true,
+        "s01e02:a3_talk_laugh_weak": true,
+        "s01e02:cold_open": true,
+        "s01e02:cold_tell": true,
+        "s01e02:tag_teddy": true,
+        "s01e02:tag_van": true
       },
-      "ep": "s01e02",
+      "ep": "s01e03",
       "epLog": [],
       "epRolls": [],
       "eps": {
@@ -1004,35 +926,234 @@
             "rolls": 11
           },
           "title": "Pilot"
+        },
+        "s01e02": {
+          "finished": "2026-10-13T05:28:03.706Z",
+          "summary": {
+            "bonds": [
+              {
+                "d": {
+                  "affection": 2,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                },
+                "id": "carmen",
+                "now": {
+                  "affection": 2,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 2
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                },
+                "id": "grace",
+                "now": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 2,
+                  "tension": 0,
+                  "trust": 0
+                },
+                "id": "jules",
+                "now": {
+                  "affection": 0,
+                  "respect": 6,
+                  "tension": 10,
+                  "trust": 1
+                }
+              },
+              {
+                "d": {
+                  "affection": 2,
+                  "respect": 2,
+                  "tension": 1,
+                  "trust": 3
+                },
+                "id": "nik",
+                "now": {
+                  "affection": 5,
+                  "respect": 2,
+                  "tension": 1,
+                  "trust": 5
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": -1,
+                  "trust": 0
+                },
+                "id": "rosa",
+                "now": {
+                  "affection": 3,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 0
+                }
+              },
+              {
+                "d": {
+                  "affection": 1,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 2
+                },
+                "id": "femi",
+                "now": {
+                  "affection": 1,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 2
+                }
+              },
+              {
+                "d": {
+                  "affection": 2,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                },
+                "id": "mikey",
+                "now": {
+                  "affection": 2,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                }
+              },
+              {
+                "d": {
+                  "affection": 1,
+                  "respect": 0,
+                  "tension": 1,
+                  "trust": 0
+                },
+                "id": "vinnie",
+                "now": {
+                  "affection": 1,
+                  "respect": 0,
+                  "tension": 1,
+                  "trust": 0
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 2,
+                  "tension": 0,
+                  "trust": 0
+                },
+                "id": "teddy",
+                "now": {
+                  "affection": 0,
+                  "respect": 2,
+                  "tension": 0,
+                  "trust": 0
+                }
+              }
+            ],
+            "choices": 20,
+            "crits": 4,
+            "fails": 1,
+            "money": 20,
+            "rolls": 9
+          },
+          "title": "Frame Rate"
         }
       },
       "facts": {
+        "brannigan_list": {
+          "ep": "s01e02",
+          "knownBy": [],
+          "text": "Brannigan has a provisional file on the Blur."
+        },
+        "brannigan_name": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam",
+            "mikey"
+          ],
+          "text": "The Halcyon man in the gray polo is named Brannigan. He's asking the police for the fast kid's name, not the robbers'."
+        },
+        "carmen_medal": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam",
+            "carmen"
+          ],
+          "text": "Carmen Torres gave you a San Judas Tadeo medal. Saint Jude, patron of lost causes."
+        },
         "ear_tell": {
           "ep": "s01e01",
           "knownBy": [
             "sam",
-            "jules"
+            "jules",
+            "nik"
           ],
           "text": "Jules says you touch your left ear when you lie."
+        },
+        "femi_changed": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam",
+            "femi"
+          ],
+          "text": "Femi Ojo was in the zone at 11:51. Since then, nobody notices him. You can."
         },
         "first_rewind": {
           "ep": "s01e01",
           "knownBy": [
-            "sam"
+            "sam",
+            "nik",
+            "carmen"
           ],
           "text": "In the frozen moment, you failed, and time ran backward to give you another try. You failed again anyway."
         },
         "halcyon_aperture": {
           "ep": "s01e01",
           "knownBy": [
-            "sam"
+            "sam",
+            "nik"
           ],
           "text": "Inside Halcyon, a screen read APERTURE, counting down to 11:51. Below it: SUBJECT FIELD 1.9 MI · CONTAINMENT NOMINAL."
+        },
+        "halcyon_beds": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam",
+            "vinnie"
+          ],
+          "text": "Vinnie counted 41 hospital beds delivered to the basement of Halcyon's Navy Yard campus on Monday."
+        },
+        "halcyon_outreach": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam",
+            "grace",
+            "nik"
+          ],
+          "text": "A Halcyon man in a gray polo is asking RAs in the blackout zone to refer students with nosebleeds, migraines, or cold sensitivity. $500 a referral."
         },
         "halcyon_tablet_man": {
           "ep": "s01e01",
           "knownBy": [
-            "sam"
+            "sam",
+            "nik"
           ],
           "text": "A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light."
         },
@@ -1112,6 +1233,14 @@
           ],
           "text": "Jules says she has never lost a game of cards. It was one of her truths."
         },
+        "jules_saw_nose2": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam",
+            "jules"
+          ],
+          "text": "Jules saw you bleed again in recitation, onto her handkerchief."
+        },
         "jules_twin": {
           "ep": "s01e01",
           "knownBy": [
@@ -1130,12 +1259,27 @@
           ],
           "text": "You lied to Nik about the Slip. He didn't buy it."
         },
+        "lost_minutes": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "After the Girard job, you lost twenty-one minutes. You woke up on a curb on Ridge Avenue with frost on your sneakers."
+        },
         "man_across_street": {
           "ep": "s01e01",
           "knownBy": [
             "sam"
           ],
           "text": "A man across Broad Street had your face, older, scarred, missing his left ring finger. He put a finger to his lips. Then he was gone."
+        },
+        "nonna_felt": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam",
+            "nonna"
+          ],
+          "text": "Nonna says she felt you \"move\" on Saturday night."
         },
         "nonna_jacket": {
           "ep": "s01e01",
@@ -1156,6 +1300,14 @@
           "text": "You owe Jules Pemberton one favor. Any favor. Her choosing, whenever she wants.",
           "track": true
         },
+        "pop_jacket": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam",
+            "vinnie"
+          ],
+          "text": "Vinnie saw Pop in a back booth at the Melrose Diner with a young guy in an expensive jacket."
+        },
         "pop_unknown_calls": {
           "ep": "s01e01",
           "knownBy": [
@@ -1163,10 +1315,29 @@
           ],
           "text": "Pop keeps declining calls from the same unknown number: a 215 number ending in 4471."
         },
+        "sam_at_girard": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam",
+            "mikey"
+          ],
+          "text": "Who knows you were at Broad & Girard during the robbery",
+          "track": true
+        },
+        "sam_in_zone": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam",
+            "grace"
+          ],
+          "text": "Who knows you were in the blackout zone at 11:51 Saturday, felt the cold, and have bled since",
+          "track": true
+        },
         "sam_slip": {
           "ep": "s01e01",
           "knownBy": [
-            "sam"
+            "sam",
+            "nik"
           ],
           "text": "Your secret: when the world stopped, you didn't.",
           "track": true
@@ -1178,10 +1349,41 @@
           ],
           "text": "When you Slip: the world stops, it's freezing, you're starving after, and your nose bleeds."
         },
+        "stasis": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "The touching Gritty can stop things. A stopped thing isn't cold or warm. It isn't in time at all, even in the Slip. You couldn't move it."
+        },
+        "teddy_face": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "You saw the face of the one who stops things: about twenty, pale, tired eyes, a chipped front tooth, a Band-Aid on his knuckles."
+        },
+        "teddy_mother": {
+          "ep": "s01e02",
+          "knownBy": [
+            "teddy",
+            "bree",
+            "heck"
+          ],
+          "text": "Teddy's mother, Halina Kowal, needs a kidney. The robbery money is for her transplant evaluation at Jefferson."
+        },
+        "teddy_name": {
+          "ep": "s01e02",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "The one who stops things is called Teddy. The big one with the burning hands is Heck."
+        },
         "wawa_guy": {
           "ep": "s01e01",
           "knownBy": [
-            "sam"
+            "sam",
+            "nik"
           ],
           "text": "A video of you at the Wawa on Broad went viral. The internet calls you WAWA GUY."
         },
@@ -1197,31 +1399,49 @@
         "after": "handoff",
         "beat_jules_read": true,
         "carmen": "hip",
+        "carmen_sorry": true,
         "curb": "sat",
         "did_books": true,
         "did_ciro": true,
         "did_nap": true,
         "did_party": true,
+        "did_wed_carmen": true,
+        "did_wed_ma": true,
+        "did_wed_vinnie": true,
         "door": "highness",
+        "femi_number": true,
+        "fight": "talk",
+        "fight_result": "deal",
         "first_slip": true,
         "fridge": "grabbed",
+        "grace": "open",
+        "guard_saved": true,
         "halcyon_peek": "full",
+        "heist": "slip",
         "hitch_choice": "kid",
         "hitch_result": "fail",
         "hitch_rewound": true,
         "jacket": true,
         "jules_guess": "love",
+        "lost_minutes": true,
         "lounge": "mock",
+        "ma2": "joke",
         "met_ciro": true,
+        "mikey2": "half",
         "monday": "hanky",
         "night": "brooding",
         "nik_greet": "warning",
+        "nik_guy": "reluctant",
         "nik_told": "lied",
+        "nik_told2": "told",
         "origin": "fighter",
         "party": "fight",
         "pool_bet": "favor",
         "pool_result": "fail",
         "pop_money": "took",
+        "quiz1": "pass",
+        "quiz_ready": true,
+        "rec": "drive",
         "run": "fail",
         "skipped_dinner": true,
         "skipped_home": true,
@@ -1230,57 +1450,73 @@
         "skipped_practice": true,
         "skipped_study": true,
         "skipped_vinnie": true,
+        "skipped_wed_ciro": true,
+        "skipped_wed_nap": true,
+        "skipped_wed_practice": true,
+        "skipped_wed_weisz": true,
+        "slip_did": "mask",
         "stairs_result": "success",
+        "study1": "lied",
+        "study2": "laugh",
         "tag": "stayed",
         "ttal": "laughs",
+        "tue_night": "sleep",
         "video": true,
+        "vinnie2": "pop",
         "wawa": "slip"
       },
       "grades": {
-        "calc": 70,
+        "calc": 77,
         "eng": 70,
         "phl": 70,
         "psy": 70
       },
       "heat": {
-        "nik": 3,
-        "press": 2,
+        "jules": 1,
+        "mikey": 2,
+        "nik": 0,
+        "press": 5,
+        "rosa": 1,
         "simone": 1
       },
       "hidden": {
-        "halcyon_heat": 1,
+        "halcyon_heat": 3,
         "jules_luck": 0.35,
-        "nudges": 0,
-        "revenant_drift": 5
+        "nudges": 1,
+        "revenant_drift": 6
       },
       "hub": null,
       "hubs": {},
-      "injuries": [
-        {
-          "affects": [
-            "body",
-            "reflex"
-          ],
-          "heal": 1,
-          "id": "bruised_ribs",
-          "name": "Bruised ribs",
-          "pen": 1
-        }
-      ],
-      "lastRoll": null,
+      "injuries": [],
+      "lastRoll": {
+        "dc": 13,
+        "dice": [
+          10
+        ],
+        "kind": "d20",
+        "mod": 4,
+        "pushes": {
+          "burst": false,
+          "focus": true,
+          "grit": false,
+          "push": false
+        },
+        "tier": "success",
+        "total": 14
+      },
       "marked": {},
       "money": {
         "bank": 312,
-        "cash": 313
+        "cash": 333
       },
       "pools": {
-        "focus": 4,
-        "nerve": 7,
+        "focus": 5,
+        "nerve": 8,
         "stamina": 6
       },
       "powers": {
         "slip": {
-          "mastery": 11,
+          "mastery": 17,
           "nodes": [
             "burst",
             "slip"
@@ -1307,6 +1543,26 @@
         {
           "ep": "s01e01",
           "t": "A man across Broad Street put a finger to his lips. Then a bus passed, and he was gone."
+        },
+        {
+          "ep": "s01e02",
+          "t": "You told Nik everything. He wants to be your guy in the chair."
+        },
+        {
+          "ep": "s01e02",
+          "t": "You finally went to see Carmen Torres. She gave you a medal of Saint Jude, patron of lost causes."
+        },
+        {
+          "ep": "s01e02",
+          "t": "Three people in Gritty masks robbed an armored truck at Broad & Girard. One of them could stop things just by touching them."
+        },
+        {
+          "ep": "s01e02",
+          "t": "The Inquirer has a new name for you: the Broad Street Blur."
+        },
+        {
+          "ep": "s01e02",
+          "t": "Since Saturday, nobody can see Femi Ojo. Except you."
         }
       ],
       "scene": "cold_open",
@@ -1333,14 +1589,14 @@
         "ride": 2,
         "stealth": 0,
         "streetwise": 2,
-        "study": 0,
+        "study": 1,
         "tech": 0
       },
-      "sleepDebt": 6,
-      "updated": 1791844322594,
+      "sleepDebt": 5,
+      "updated": 1791869298677,
       "v": 1,
-      "xp": 0,
-      "xpSpent": 6
+      "xp": 3,
+      "xpSpent": 8
     },
     "eps": {
       "s01e01": {
@@ -1653,9 +1909,143 @@
           "rolls": 9
         },
         "title": "Frame Rate"
+      },
+      "s01e03": {
+        "finished": "2026-10-13T13:37:47.187Z",
+        "summary": {
+          "bonds": [
+            {
+              "d": {
+                "affection": 1,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              },
+              "id": "callum",
+              "now": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 0
+              }
+            },
+            {
+              "d": {
+                "affection": 4,
+                "respect": 2,
+                "tension": 0,
+                "trust": 7
+              },
+              "id": "jules",
+              "now": {
+                "affection": 4,
+                "respect": 8,
+                "tension": 10,
+                "trust": 8
+              }
+            },
+            {
+              "d": {
+                "affection": 0,
+                "respect": 1,
+                "tension": 0,
+                "trust": 0
+              },
+              "id": "nik",
+              "now": {
+                "affection": 5,
+                "respect": 3,
+                "tension": 1,
+                "trust": 5
+              }
+            },
+            {
+              "d": {
+                "affection": 4,
+                "respect": 0,
+                "tension": 0,
+                "trust": 2
+              },
+              "id": "nonna",
+              "now": {
+                "affection": 4,
+                "respect": 0,
+                "tension": 0,
+                "trust": 3
+              }
+            },
+            {
+              "d": {
+                "affection": 0,
+                "respect": 2,
+                "tension": 0,
+                "trust": 3
+              },
+              "id": "teddy",
+              "now": {
+                "affection": 0,
+                "respect": 4,
+                "tension": 0,
+                "trust": 3
+              }
+            },
+            {
+              "d": {
+                "affection": 0,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              },
+              "id": "bree",
+              "now": {
+                "affection": 0,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              }
+            },
+            {
+              "d": {
+                "affection": 0,
+                "respect": 0,
+                "tension": 0,
+                "trust": 2
+              },
+              "id": "heck",
+              "now": {
+                "affection": 0,
+                "respect": 0,
+                "tension": 0,
+                "trust": 2
+              }
+            }
+          ],
+          "choices": 18,
+          "crits": 2,
+          "fails": 0,
+          "money": 0,
+          "rolls": 3
+        },
+        "title": "The Blackout Floor"
       }
     },
     "facts": {
+      "almost_kiss": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "jules"
+        ],
+        "text": "At 4:12 a.m. on the roof of Cardone Hall, you leaned in. She put her forehead against yours. She said, \"Not like this.\" Neither of you moved until the sun came up."
+      },
+      "assunta": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "nonna"
+        ],
+        "text": "Nonna's mother, Assunta DiNardo, \"moved\" once, in 1918, during the Liberty Loan parade. She pulled a child out from under a trolley. Nonna says it runs in the women of the family. Until you."
+      },
       "brannigan_list": {
         "ep": "s01e02",
         "knownBy": [],
@@ -1665,9 +2055,22 @@
         "ep": "s01e02",
         "knownBy": [
           "sam",
-          "mikey"
+          "mikey",
+          "teddy",
+          "bree",
+          "heck"
         ],
         "text": "The Halcyon man in the gray polo is named Brannigan. He's asking the police for the fast kid's name, not the robbers'."
+      },
+      "bree_scream": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "bree",
+          "teddy",
+          "heck"
+        ],
+        "text": "Bree heard something in the cold at 11:51:04 on the night of the Hitch, something from the sky, and her power keeps it. It sounds like a crowd breathing and a clock running the wrong way, and under it, laughing."
       },
       "carmen_medal": {
         "ep": "s01e02",
@@ -1676,6 +2079,14 @@
           "carmen"
         ],
         "text": "Carmen Torres gave you a San Judas Tadeo medal. Saint Jude, patron of lost causes."
+      },
+      "costume": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "nik"
+        ],
+        "text": "Your \"uniform\" for nights out: black hoodie, gaiter, Pop's backward Eagles cap."
       },
       "ear_tell": {
         "ep": "s01e01",
@@ -1707,7 +2118,10 @@
         "ep": "s01e01",
         "knownBy": [
           "sam",
-          "nik"
+          "nik",
+          "teddy",
+          "bree",
+          "heck"
         ],
         "text": "Inside Halcyon, a screen read APERTURE, counting down to 11:51. Below it: SUBJECT FIELD 1.9 MI · CONTAINMENT NOMINAL."
       },
@@ -1715,7 +2129,10 @@
         "ep": "s01e02",
         "knownBy": [
           "sam",
-          "vinnie"
+          "vinnie",
+          "teddy",
+          "bree",
+          "heck"
         ],
         "text": "Vinnie counted 41 hospital beds delivered to the basement of Halcyon's Navy Yard campus on Monday."
       },
@@ -1724,7 +2141,10 @@
         "knownBy": [
           "sam",
           "grace",
-          "nik"
+          "nik",
+          "teddy",
+          "bree",
+          "heck"
         ],
         "text": "A Halcyon man in a gray polo is asking RAs in the blackout zone to refer students with nosebleeds, migraines, or cold sensitivity. $500 a referral."
       },
@@ -1732,9 +2152,22 @@
         "ep": "s01e01",
         "knownBy": [
           "sam",
-          "nik"
+          "nik",
+          "teddy",
+          "bree",
+          "heck"
         ],
         "text": "A calm man from Halcyon in a gray polo swept Broad Street with a tablet after the light."
+      },
+      "heck_heat": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "heck",
+          "teddy",
+          "bree"
+        ],
+        "text": "Heck runs hotter when the weather's hot. He can't turn it off."
       },
       "jayden_cold_man": {
         "ep": "s01e01",
@@ -1751,12 +2184,28 @@
         ],
         "text": "Jules has a boyfriend: Callum Whitford, Penn Crew. He's nice. That's the problem."
       },
+      "jules_carmen": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "jules"
+        ],
+        "text": "You told Jules about Carmen Torres. You said you were \"too slow.\" You didn't say how fast you were."
+      },
       "jules_changed": {
         "ep": "s01e01",
         "knownBy": [
           "jules"
         ],
         "text": "Jules was changed in the Hitch."
+      },
+      "jules_chapel": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "jules"
+        ],
+        "text": "When Jules was seven, Hugh locked her in the family chapel at Ravenscourt overnight. In the dark, she could hear the house breathing. Gran found her in the morning: \"Pembertons don't need to be afraid of the dark. The dark should be afraid of us.\" She has slept with a light on ever since."
       },
       "jules_chose_temple": {
         "ep": "s01e01",
@@ -1775,6 +2224,14 @@
           "jules"
         ],
         "text": "Jules's ivory die rolls nothing but sixes now."
+      },
+      "jules_fire": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "jules"
+        ],
+        "text": "Jules knows you ran to the 15th Street fire to help. She doesn't know how you got there and back so fast."
       },
       "jules_glass": {
         "ep": "s01e01",
@@ -1812,6 +2269,14 @@
         ],
         "text": "Jules says she has never lost a game of cards. It was one of her truths."
       },
+      "jules_nothing_happens": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "jules"
+        ],
+        "text": "Jules told you: \"Nothing happens to me. I don't fall. I don't get hurt. Everyone calls it luck. I think it's the wrong word.\""
+      },
       "jules_saw_nose2": {
         "ep": "s01e02",
         "knownBy": [
@@ -1830,6 +2295,14 @@
           "grace"
         ],
         "text": "Jules has a twin brother at Penn."
+      },
+      "kensington_shimmer": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "nik"
+        ],
+        "text": "In the Slip, something over Kensington was moving. Nothing should move in the Slip."
       },
       "lied_nik": {
         "ep": "s01e01",
@@ -1852,6 +2325,16 @@
         ],
         "text": "A man across Broad Street had your face, older, scarred, missing his left ring finger. He put a finger to his lips. Then he was gone."
       },
+      "marisol": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "teddy",
+          "bree",
+          "heck"
+        ],
+        "text": "A Changed girl in Fishtown, Marisol Reyes, 19, could pop lightbulbs. She went to Halcyon's \"wellness study\" Tuesday. She never came home. Her mother got a text from her phone: \"im fine staying w friends.\" Marisol never texts in lowercase."
+      },
       "nonna_felt": {
         "ep": "s01e02",
         "knownBy": [
@@ -1867,6 +2350,14 @@
           "nonna"
         ],
         "text": "Nonna: \"Saturday, near midnight, the clocks. Wear a jacket.\""
+      },
+      "nonna_key": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "nonna"
+        ],
+        "text": "Nonna gave you an old iron key on a ribbon. \"When it's time, I tell you what it opens.\""
       },
       "owe_jules_favor": {
         "ep": "s01e01",
@@ -1912,11 +2403,21 @@
         "text": "Who knows you were in the blackout zone at 11:51 Saturday, felt the cold, and have bled since",
         "track": true
       },
+      "sam_number": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "teddy",
+          "bree"
+        ],
+        "text": "Teddy and Bree have your number."
+      },
       "sam_slip": {
         "ep": "s01e01",
         "knownBy": [
           "sam",
-          "nik"
+          "nik",
+          "nonna"
         ],
         "text": "Your secret: when the world stopped, you didn't.",
         "track": true
@@ -1958,6 +2459,14 @@
         ],
         "text": "The one who stops things is called Teddy. The big one with the burning hands is Heck."
       },
+      "teddy_number": {
+        "ep": "s01e03",
+        "knownBy": [
+          "sam",
+          "teddy"
+        ],
+        "text": "You have Teddy's number. The deal: if Halcyon comes for one of you, you call the others."
+      },
       "wawa_guy": {
         "ep": "s01e01",
         "knownBy": [
@@ -1975,34 +2484,42 @@
       }
     },
     "flags": {
-      "_failxp": 1,
       "after": "handoff",
       "beat_jules_read": true,
       "carmen": "hip",
       "carmen_sorry": true,
+      "costume": "hoodie",
       "curb": "sat",
       "did_books": true,
       "did_ciro": true,
       "did_nap": true,
       "did_party": true,
+      "did_sat_nap": true,
+      "did_sat_nonna": true,
       "did_wed_carmen": true,
       "did_wed_ma": true,
       "did_wed_vinnie": true,
       "door": "highness",
+      "family": "clean",
       "femi_number": true,
       "fight": "talk",
       "fight_result": "deal",
+      "fire": "family",
       "first_slip": true,
       "fridge": "grabbed",
       "grace": "open",
       "guard_saved": true,
       "halcyon_peek": "full",
       "heist": "slip",
+      "her": "lonely",
+      "him": "carmen",
       "hitch_choice": "kid",
       "hitch_result": "fail",
       "hitch_rewound": true,
       "jacket": true,
       "jules_guess": "love",
+      "leave": "cant",
+      "light": "trade",
       "lost_minutes": true,
       "lounge": "mock",
       "ma2": "joke",
@@ -2014,20 +2531,32 @@
       "nik_guy": "reluctant",
       "nik_told": "lied",
       "nik_told2": "told",
+      "nonna_silent": true,
+      "number_was": true,
       "origin": "fighter",
       "party": "fight",
       "pool_bet": "favor",
       "pool_result": "fail",
       "pop_money": "took",
+      "pr": "listen",
+      "pr2": "shared",
       "quiz1": "pass",
       "quiz_ready": true,
       "rec": "drive",
+      "ret": "truth",
+      "roof1": "laugh",
+      "roof_end": "lean",
+      "roof_why": "highness",
       "run": "fail",
+      "sat_jules": "talk",
       "skipped_dinner": true,
       "skipped_home": true,
       "skipped_hospital": true,
       "skipped_library": true,
       "skipped_practice": true,
+      "skipped_sat_ciro": true,
+      "skipped_sat_femi": true,
+      "skipped_sat_pop": true,
       "skipped_study": true,
       "skipped_vinnie": true,
       "skipped_wed_ciro": true,
@@ -2039,6 +2568,10 @@
       "study1": "lied",
       "study2": "laugh",
       "tag": "stayed",
+      "teddy_burned": true,
+      "teddy_meet": "go",
+      "teddy_number": true,
+      "the_night": true,
       "ttal": "laughs",
       "tue_night": "sleep",
       "video": true,
@@ -2052,10 +2585,10 @@
       "psy": 70
     },
     "heat": {
-      "jules": 1,
+      "jules": 4,
       "mikey": 2,
       "nik": 0,
-      "press": 5,
+      "press": 6,
       "rosa": 1,
       "simone": 1
     },
@@ -2063,67 +2596,37 @@
       "halcyon_heat": 3,
       "jules_luck": 0.35,
       "nudges": 1,
-      "revenant_drift": 6
+      "revenant_drift": 7.5
     },
-    "hub": "a2_hub",
+    "hub": "a1_hub",
     "hubs": {
-      "a2_hub": {
+      "a1_hub": {
         "left": 0,
         "used": [
-          "wed_ma",
-          "wed_carmen",
-          "wed_vinnie"
+          "sat_nap",
+          "sat_nonna"
         ]
       }
     },
-    "injuries": [
-      {
-        "affects": [
-          "body",
-          "reflex"
-        ],
-        "heal": 1,
-        "id": "bruised_ribs",
-        "name": "Bruised ribs",
-        "pen": 1
-      }
-    ],
-    "lastRoll": {
-      "dc": 13,
-      "dice": [
-        10
-      ],
-      "kind": "d20",
-      "mod": 4,
-      "pushes": {
-        "burst": false,
-        "focus": true,
-        "grit": false,
-        "push": false
-      },
-      "tier": "success",
-      "total": 14
-    },
+    "injuries": [],
+    "lastRoll": null,
     "marked": {
-      "banter": true,
+      "banter": false,
       "empathy": true,
-      "lie": true,
-      "persuade": true,
-      "streetwise": true,
-      "study": false
+      "investigate": true
     },
     "money": {
       "bank": 312,
       "cash": 333
     },
     "pools": {
-      "focus": 5,
-      "nerve": 6,
+      "focus": 6,
+      "nerve": 5,
       "stamina": 6
     },
     "powers": {
       "slip": {
-        "mastery": 17,
+        "mastery": 24,
         "nodes": [
           "burst",
           "slip"
@@ -2170,9 +2673,21 @@
       {
         "ep": "s01e02",
         "t": "Since Saturday, nobody can see Femi Ojo. Except you."
+      },
+      {
+        "ep": "s01e03",
+        "t": "A rowhouse burned at 15th & Lehigh. Halcyon's men were waiting with dart rifles."
+      },
+      {
+        "ep": "s01e03",
+        "t": "The night the power went out on the ninth floor, you and Jules talked until the sun came up."
+      },
+      {
+        "ep": "s01e03",
+        "t": "Then Callum came with iced coffee."
       }
     ],
-    "scene": "tag_van",
+    "scene": "tag_morning",
     "season": 1,
     "settings": {
       "motion": true,
@@ -2181,7 +2696,7 @@
     },
     "skills": {
       "athletics": 1,
-      "banter": 2,
+      "banter": 3,
       "brawl": 2,
       "cook": 1,
       "empathy": 1,
@@ -2199,10 +2714,10 @@
       "study": 1,
       "tech": 0
     },
-    "sleepDebt": 5,
-    "updated": 1791869298677,
+    "sleepDebt": 6,
+    "updated": 1791898677844,
     "v": 1,
     "xp": 3,
-    "xpSpent": 8
+    "xpSpent": 14
   }
 }
