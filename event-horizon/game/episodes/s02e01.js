@@ -6,7 +6,7 @@ EH.episode({
   xp: 6,
   previously: g => [
     'Pop owes the Iannucci family $41,000. He paid $11,400 on Thanksgiving.',
-    g.f('choice10') === 'both' ? 'On the Parkway you Slipped and saved them all. You got stuck. You lost four minutes.' : g.f('choice10') === 'jayden' ? 'On the Parkway you saved Jayden and Carmen. Halcyon took Teddy.' : 'On the Parkway you pulled Teddy out of an ambulance. Halcyon took Heck.',
+    g.f('choice10') === 'both' ? (g.f('unstick10') ? 'On the Parkway you Slipped and saved them all. You got stuck. You lost four minutes.' : 'On the Parkway you Slipped and saved them all.') : g.f('choice10') === 'jayden' ? 'On the Parkway you saved Jayden and Carmen. Halcyon took Teddy.' : 'On the Parkway you pulled Teddy out of an ambulance. Halcyon took Heck.',
     g.f('mikey_knows') ? 'Mikey saw you come back. "It\'s you. The Blur."' : 'Mikey saw you on the Parkway, bleeding.',
     'Jules walked through four darts. Every one of them missed.',
     g.f('bruno10') === 'card' ? 'Bruno Iannucci left his card at Thanksgiving dinner. You put it in your pocket.' : 'Bruno Iannucci left his card at Thanksgiving dinner. "After the holiday. Come see me. Alone."',
@@ -141,7 +141,7 @@ frank: Give it to me, kid.`,
         { text: '"No, Pop. It\'s twenty-nine thousand six hundred dollars. You can\'t pay it. I can."', tag: 'Keep it',
           fx: g => { g.flag('card_s2', 'kept'); g.bond('frank', { tension: 1, respect: 1 }); g.hidden('revenant_drift', 0.5); }, go: 'a1_card_kept' },
         { text: 'Tell him. All of it. Under 95. The Parkway. Why Bruno wants you. He already knows. Say it out loud.', tag: 'Tell him',
-          fx: g => { g.flag('card_s2', 'told'); g.flag('pop_knows', 'told'); g.know('sam_slip', ['frank']); g.bond('frank', { tension: -3, trust: 3 }); g.heat('frank', 10 - g.h('frank')); g.know('sam_slip', ['rosa']); g.heat('rosa', 10 - g.h('rosa')); g.flag('rosa_overheard'); g.hidden('revenant_drift', -1); }, go: 'a1_card_told' }
+          fx: g => { g.flag('card_s2', 'told'); g.flag('pop_knows', 'told'); g.know('sam_slip', ['frank']); g.bond('frank', { tension: -3, trust: 3 }); g.heat('frank', 10 - g.h('frank')); g.heat('rosa', 8 - g.h('rosa')); g.flag('rosa_overheard'); g.hidden('revenant_drift', -1); }, go: 'a1_card_told' }
       ]
     },
     a1_card_gave: {
@@ -157,7 +157,7 @@ He nods. He drinks the coffee, pieces and all, without seeming to notice, and ge
 
 You sit at the table with your stuffing eggs.
 
-You know the number by heart. You looked at it on the Broad Street Line all the way home last night until you couldn\'t not know it.
+You know the number by heart. You looked at it under the covers last night by the light of your phone until you couldn\'t not know it.
 
 You don\'t need the card.`,
       next: 'a1_mikey'
@@ -169,7 +169,7 @@ sam: No, Pop.
 
 He looks at you.
 
-sam: It\'s twenty-nine thousand six hundred dollars. I did the math on the subway. You drive a cab. You cashed out your whole retirement and it bought you till summer. You can\'t pay it. And they\'re not gonna wait till summer. You saw him. He liked it here.
+sam: It\'s twenty-nine thousand six hundred dollars. I did the math last night. You drive a cab. You handed him a shoebox and asked for till summer. You can\'t pay it. And they\'re not gonna wait till summer. You saw him. He liked it here.
 
 frank: That\'s my mess.
 
@@ -209,7 +209,7 @@ frank: I knew.
 
 sam: I know you knew.
 
-frank: Under 95. I knew. I knew in the cab, and I let you lie to me, \'cause I didn\'t want to know what I knew.
+frank: Under 95. I knew. I knew in the cab. I just didn\'t want to know what I knew.
 
 He picks up the card. He looks at it. He puts it down again.
 
@@ -221,11 +221,12 @@ You get up. You don\'t know what to do. You put your hand on his shoulder, the w
 
 At the stove, Ma puts down the spoon. She walks out of the kitchen, past you both, into the front room, and sits on the couch next to Gigi, and puts her arm around her, and watches the balloon dog hit the lamppost, again and again, with her face perfectly still.
 
-She heard every word. You know she did.`,
+You don\'t know how much she heard. With Ma, you never know.`,
       next: 'a1_mikey'
     },
 
     a1_mikey: {
+      enter: g => { if (!g.f('mikey_knows')) { g.flag('mikey_learns_s2'); g.flag('mikey_knows'); g.know('sam_slip', ['mikey']); g.heat('mikey', 10 - g.h('mikey')); } },
       night: true,
       loc: 'THE STOOP',
       clock: { time: '9:15 PM' },
@@ -253,7 +254,7 @@ mikey: Show me.
 
 sam: What?
 
-mikey: I never saw it. I saw you be one place and then be another place. I never *saw* it. You\'re my little brother. I taught you to ride a bike on this street. I gotta see it.
+mikey: ${g.f('mikey_learns_s2') ? 'Brannigan thinks it\'s you. The Blur. I looked at that footage for an hour and I think so too. And I never *saw* it.' : 'I never saw it. I saw you be one place and then be another place. I never *saw* it.'} You\'re my little brother. I taught you to ride a bike in that alley. I gotta see it.
 
 He holds up a clementine. He must have taken it from the bowl on Ma\'s table on the way out. He tosses it in his hand.`,
       choices: [
@@ -306,7 +307,7 @@ mikey: Okay. Okay. Good. I\'m glad you\'re tired. Tired means you\'re a person.`
       next: 'a1_mikey_end'
     },
     a1_clem_slip: {
-      enter: g => { g.flag('mikey_s2', 'slip'); g.bond('mikey', { trust: 1 }); if (g.f('unstick_s2e1')) { g.drift(1); g.hidden('revenant_drift', 1); g.injure({ id: 'cold_s2e1', name: 'Slip-cold (stoop)', pen: 1, heal: 1, affects: ['reflex'] }); } },
+      enter: g => { g.flag('mikey_s2', 'slip'); g.bond('mikey', { trust: 1 }); if (g.f('unstick_s2e1')) { g.drift(1); g.hidden('revenant_drift', 1); g.injure({ id: 'cold_s2e1', name: 'Slip-cold (stoop)', pen: 1, heal: 2, affects: ['reflex'] }); } },
       text: g => `He throws it.
 
 You step through.
@@ -315,17 +316,17 @@ It\'s January on Mifflin Street. The clementine hangs in the air a foot from you
 
 ${g.f('unstick_s2e1') ? `And the cold closes. Right away. Not like August, when you could stay in the Slip for what felt like an hour and walk out whenever you wanted. Now it grabs. It\'s thick, like stepping into a river in December. You feel the walls of the second already starting to come in.
 
-You take the clementine out of the air. You take three steps up the street, to Nonna\'s stoop, and set it on her top step, on the salt.
+You take the clementine out of the air. You walk three doors up the street, to Nonna\'s stoop, and set it on her top step, on the salt.
 
 The cold is at your waist.
 
-You reach back for the sound of Mikey\'s voice, *show me*, and you pull, and it\'s like pulling a boot out of mud, and it takes everything, and you come out on your knees on the sidewalk in front of your house with your nose pouring blood onto the concrete.` : `You take the clementine out of the air. You take three steps up the street, to Nonna\'s stoop, and set it on her top step, on the salt.
+You reach back for the sound of Mikey\'s voice, *show me*, and you pull, and it\'s like pulling a boot out of mud, and it takes everything, and you come out on your knees on the sidewalk in front of your house with your nose pouring blood onto the concrete.` : `You take the clementine out of the air. You walk three doors up the street, to Nonna\'s stoop, and set it on her top step, on the salt.
 
 You step back out.`}
 
 Mikey\'s hand is still out. He looks at it. Empty.
 
-He looks up the street. At Nonna\'s top step. At a clementine sitting on the salt, thirty feet away.
+He looks up the street. At Nonna\'s top step. At a clementine sitting on the salt, three doors away.
 
 He looks at you.
 
@@ -385,7 +386,7 @@ mikey: Then don\'t do it for me. I don\'t need to see it. I believe you.`,
 
 mikey: You\'re gonna go see him. Bruno.
 
-sam: Tomorrow. Two o\'clock.
+sam: Tomorrow. Two o\'clock. I called the number. A woman said two o\'clock and hung up.
 
 mikey: I can\'t stop you.
 

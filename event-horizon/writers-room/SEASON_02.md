@@ -29,3 +29,17 @@ Freshman spring at Temple, 10 episodes. Late Nov 2026 to May 2027. The look is S
 | 10 | **The Italian Market** (finale) | May | Finale. Sam picks his own hero name. | — | A Season 3 hook: Hugh joins Halcyon. |
 
 Write each episode to the save. The plan bends; the save doesn't.
+
+## Production notes (as played)
+- **S2E1 "After the Holiday"** was written for this playthrough's S1E10 save (both + Unstick, Mikey knows, no cap, took the card, kissed Jules, Simone not mended).
+  - **Shape:**
+    - **Cold open:** Brannigan pulls Mikey off the task group ("Loyalty… a terrible one in a witness").
+    - **Act One:** white hair. Season-break +1 attribute (no Charm option). Bruno's card at breakfast: give / keep / tell Pop. Telling Pop sets Frank to knowing; **Rosa overhears, heat 8**, so E8 "Ma" still works. Mikey on the stoop with the clementine: catch / Slip / open up. If `mikey_knows` was unset, he learns here.
+    - **Act Two:** the Circolo Sant'Agata. Bruno paid Halina's Jefferson deposit on the day after Thanksgiving, and Teddy works for him. The deal is jobs at 10% each: ten / five / eight / twelve / forced via the Gigi photo. Vinnie's real reason is Pop.
+    - **Act Three:** Szymanski's (Eddie, daughter Krysia in Sam's Psych lecture). Teddy freezes Eddie's hands to the bar. Mercy (job doesn't count) / watch (counts) / pay (`eddie_paid`, `eddie_owed`; Sam told Dante the rest is coming).
+    - **Act Four:** finals hub, Dec 14–17: study / Jules ("January") / Simone repair / Grace (eleven white hairs; "in places, thirty") / Nik's cold map / Ciro. Calc final d20. The snowy roof: Constance's "what we are."
+    - **Tag:** Brannigan and Bruno over pizzelles. Constance rolls a six: "Come home, child. It's time."
+  - **Known gap:** the `teddy_taken10` branch still has Teddy at Szymanski's in Act Three. Rewrite it if a non-canon save ever plays this.
+  - **For later episodes:**
+    - `bruno_jobs_done` is a counter; `bruno_jobs_total` is the deal size.
+    - Treat `pop_knows === 'told'` as knowing.

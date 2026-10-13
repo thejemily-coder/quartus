@@ -5,7 +5,7 @@ EH.scenes('s02e01', {
   a4_finals: {
     card: { kind: 'act', label: 'Act Four', title: 'Finals' },
     loc: 'CARDONE HALL · 9TH FLOOR',
-    clock: { day: 'Mon', date: 'Dec 7', time: '9:00 AM' },
+    clock: { day: 'Mon', date: 'Dec 14', time: '9:00 AM' },
     enter: g => { g.sleep(6); },
     text: g => `Finals week on the ninth floor of Cardone Hall smells like instant ramen and Red Bull and a radiator somebody put a sock on.
 
@@ -13,7 +13,7 @@ Everybody\'s back. Nik is in the lounge with three monitors and a sign on his ba
 
 And Jules.
 
-Jules is back. She came back Sunday night. She texted you one word, from the stairwell:
+Jules is back. She came back the Sunday after Thanksgiving. She texted you one word, from the stairwell:
 
 TXT jules: Kearney.
 
@@ -177,17 +177,17 @@ grace: In places, you\'re eighteen. In places, I\'d say thirty.
 
 You don\'t say anything.
 
-grace: I\'m not a doctor yet. I\'m a pre-med with an MCAT book and a magnifying glass. But if I were you, I would stop getting *stuck*. Okay? Whatever stuck means. Stop.`,
+grace: I\'m not a doctor yet. I\'m a pre-med with an MCAT book and a magnifying glass. But if I were you, I would stop doing whatever it is. Okay? Whatever it is. Stop.`,
     next: '@hub'
   },
 
   a4_nik: {
-    enter: g => { g.flag('nik_map_s2'); g.bond('nik', { trust: 1, affection: 1 }); g.know('nik_tracker', ['sam', 'nik'], 'Nik built a map of every place in the city where people reported "the cold" since August. It clusters around Kensington, the Navy Yard, Ravenscourt, and Mifflin Street.'); },
+    enter: g => { g.flag('nik_map_s2'); g.bond('nik', { trust: 1, affection: 1 }); g.know('nik_tracker', ['sam', 'nik'], 'Nik built a map of every place in the city where people reported "the cold" since August. It clusters around Kensington, the Navy Yard, and Mifflin Street, with one odd point in Gladwyne.'); },
     text: `Nik turns one of his three monitors toward you without a word.
 
 It\'s a map of Philadelphia. Covered in dots. Hundreds of them, in blue.
 
-nik: Every post on Reddit, Twitter, Nextdoor, and the Philly subreddit since August twenty-second where somebody says they felt *cold* for no reason. *Weird cold. Ghost cold. My dog freaked out.* I scraped all of it. Then I geocoded it. Then I did a heat map, which, ironically, is a cold map.
+nik: Every post on Twitter, Nextdoor, Facebook, and the Philly subreddit since August twenty-second where somebody says they felt *cold* for no reason. *Weird cold. Ghost cold. My dog freaked out.* I scraped all of it. Then I geocoded it. Then I did a heat map, which, ironically, is a cold map.
 
 The dots are everywhere. But they cluster. Four places, bright blue, like bruises.
 
@@ -199,7 +199,7 @@ A blue cluster in South Philly that you don\'t have to zoom in on, because you k
 
 And way out on the Main Line, in Gladwyne, by itself, a single bright point, on a property that on the satellite view is all trees and a big stone house.
 
-nik: That one\'s weird, right? Gladwyne? That\'s like four posts, total. From the same address. A *housekeeper*. On Nextdoor. *The chapel is cold again, does anyone know a good HVAC guy.*
+nik: That one\'s weird, right? Gladwyne? That\'s like four posts, total. From the same address. A *housekeeper*. On Nextdoor. *The back of the house is cold again, does anyone know a good HVAC guy.*
 
 He looks at you.
 
@@ -208,7 +208,7 @@ nik: I don\'t know what any of it means. Okay, that\'s a lie, I have like four t
   },
 
   a4_ciro: {
-    enter: g => { g.money(14 * 8 + 160); g.bond('ciro', { affection: 1 }); },
+    enter: g => { g.money(14 * 16 + 48); g.bond('ciro', { affection: 1 }); },
     text: `You work two doubles at Ciro\'s. Lunch and dinner, Tuesday and Wednesday, the oven and the e-bike and the oven again, until your arms smell like garlic down to the elbow.
 
 Ciro watches you for two days without saying anything. On Wednesday night, closing, he puts a slice in front of you and says:
@@ -260,7 +260,7 @@ Problem eleven is a farmer with 400 feet of fence.`,
 
 When you hand in the blue book, the TA glances at it and does a small double take at your name, because she\'s seen your name on a lot of quizzes, and none of them looked like this.
 
-**MATH 1041 final: 88. Course grade: B.**
+**MATH 1041 final: 88. Course grade: B-.**
 
 You walk out onto Liacouras Walk into the cold, and the sky is very blue, and you think: *Femi, I set it up first.*`,
     next: 'a4_roof'
@@ -271,7 +271,7 @@ You walk out onto Liacouras Walk into the cold, and the sky is very blue, and yo
 
 You finish. Barely.
 
-**MATH 1041 final: 69. Course grade: C.**
+**MATH 1041 final: 69. Course grade: C-.**
 
 It\'s a pass. It\'s a C in Calculus at Temple University, and in August that would have been the best thing that ever happened to a Kearney.
 
@@ -296,11 +296,11 @@ jules: My grandmother called again tonight.
 
 sam: The dramatic one.
 
-jules: She\'s never dramatic. That\'s what\'s frightening. She said, *Child, when you come home, we\'ll go to the chapel. It\'s time you knew what you are.*
+jules: She\'s never dramatic. That\'s what\'s frightening. She said, *Child, when you come home, we\'ll go to the chapel. It\'s time you knew what we are.*
 
 She laughs, very small.
 
-jules: *What* I am. Not who. What.
+jules: *What* we are. Not who. What.
 
 She puts her hand on the parapet in the snow.
 
@@ -388,7 +388,7 @@ She squeezes your hand once, hard.`,
     clock: { time: '11:58 PM' },
     text: g => `> THE CAMERA.
 
-The Circolo Sant\'Agata, after midnight. The briscola tables are empty. The soccer game on the TV is a rerun. The espresso machine ticks as it cools.
+The Circolo Sant\'Agata, near midnight. The briscola tables are empty. The soccer game on the TV is a rerun. The espresso machine ticks as it cools.
 
 Bruno Iannucci sits at his back table alone with a demitasse and the last of his sister\'s pizzelles.
 
@@ -461,7 +461,7 @@ Object.assign(EH.episodes.s02e01, {
   ],
   onEnd: g => {
     g.recap('After the Parkway, you have a white hair. Grace says in places your body is thirty.');
-    g.recap('Bruno Iannucci paid for Teddy\'s mother\'s transplant evaluation. Teddy works for him now.');
+    g.recap(g.f('teddy_taken10') ? 'Halcyon has Teddy. Bree works for Bruno Iannucci now.' : 'Bruno Iannucci paid for Teddy\'s mother\'s transplant evaluation. Teddy works for him now.');
     g.recap('You work for him too. ' + ({ ten: 'Ten jobs', five: 'Five jobs', eight: 'Eight jobs', twelve: 'Twelve jobs', forced: 'Ten jobs' }[g.f('bruno_deal')] || 'Ten jobs') + ' to clear Pop\'s debt.');
     g.recap('Jules: "When I come back. In January. I ask, you answer."');
     g.recap('Brannigan sat down with Bruno Iannucci and asked for an understanding.');

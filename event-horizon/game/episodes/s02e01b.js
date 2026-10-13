@@ -58,11 +58,11 @@ BRUNO: Vincenzo\'s a good boy. You have good people around you, Sam. That\'s rar
 
 He sips his coffee. He sets it down.
 
-BRUNO: Teodoro. Come say hello.
+BRUNO: ${g.f('teddy_taken10') ? 'Bree' : 'Teodoro'}. Come say hello.
 
 A door at the back opens. ${g.f('teddy_taken10') ? 'It isn\'t Teddy. It\'s Bree, in a nice blouse, with her hair pulled back, carrying a tray with two more espressos on it. She looks at you and then at the floor.' : 'Teddy comes out carrying a tray with two more espressos on it.\n\nHe\'s wearing a pressed white shirt. His hair is cut. His knuckles have new Band-Aids on them. He puts an espresso in front of you and one in front of Bruno, and he doesn\'t look at you, and he goes back and stands against the wall next to Dante.'}
 
-${g.f('teddy_taken10') ? 'BRUNO: Your friend in the ambulance. The one who stops things. Halcyon has him. His cousin came to me yesterday and asked me to get him back. I said I would try. In the meantime, she works for me. She has a very useful voice.' : 'BRUNO: His mother\'s evaluation at Jefferson costs forty thousand dollars. I paid it yesterday. In cash. To a very surprised woman in Patient Accounts.\n\nBRUNO: Halina Kowal goes on the transplant list in January. Teodoro is very grateful. He works for me now.'}
+${g.f('teddy_taken10') ? 'BRUNO: Your friend in the ambulance. The one who stops things. Halcyon has him. His cousin came to me yesterday and asked me to get him back. I said I would try. In the meantime, she works for me. She has a very useful voice.' : 'BRUNO: His mother\'s evaluation at Jefferson costs forty thousand dollars. I paid it yesterday. The day after Thanksgiving. In cash. To a very surprised woman in Patient Accounts.\n\nBRUNO: Halina Kowal goes on the transplant list in January. Teodoro is very grateful. He works for me now.'}
 
 You look at ${g.f('teddy_taken10') ? 'Bree' : 'Teddy'}. ${g.f('teddy_taken10') ? 'She won\'t look at you.' : 'He looks back at you, finally. His face doesn\'t do anything at all.'}
 
@@ -70,7 +70,7 @@ ${g.f('teddy_taken10') ? '' : 'You pulled him out of an ambulance on the Parkway
 
 Bruno spreads his hands.
 
-BRUNO: You see what I\'m telling you, Sam. There are people in this city, since August, who can do things. You. Teodoro. Others. There\'s a company at the Navy Yard that wants them. They put them in beds. They put needles in them. I know what they do, Sam. I know about your friend at Temple. The quiet one.
+BRUNO: You see what I\'m telling you, Sam. There are people in this city, since August, who can do things. You. Teodoro. Others. There\'s a company at the Navy Yard that wants them. They put them in beds. They put needles in them. I know what they do, Sam. I know about the beds in the basement. Forty-one of them.
 
 He shakes his head.
 
@@ -110,17 +110,17 @@ BRUNO: Dante will call you. Not me. I don\'t call people. Welcome, Sam.`,
   },
   a2_deal_five: {
     enter: g => { g.flag('bruno_deal', 'five'); g.flag('bruno_jobs_total', 5); g.bond('teddy', { respect: 1 }); },
-    text: `sam: Five.
+    text: g => `sam: Five.
 
 Bruno raises his eyebrows.
 
-sam: Five jobs. Fast ones. Things nobody else in this city can do. Five, and the whole thing\'s gone. You don\'t need ten. You know what I am. You saw the Parkway on Channel 6. You know what one job from me is worth.
+sam: Five jobs. Fast ones. Things nobody else in this city can do. Five, and the whole thing\'s gone. You don\'t need ten. You know what I am. ${g.f('cap10') ? 'You saw the Parkway on Channel 6.' : 'Your grandson saw what happened under 95.'} You know what one job from me is worth.
 
 You don\'t blink. You think about Brannigan in the lounge on All Saints\' Day, and how you didn\'t blink then either.
 
 Behind Bruno, Dante opens his mouth. Bruno lifts one finger without looking, and Dante closes it.
 
-Bruno studies you a while. Then he laughs. The real laugh, the one from Thanksgiving.
+Bruno studies you a while. Then he laughs. A real laugh, delighted, an old man\'s laugh.
 
 BRUNO: Five. Okay. Five. For the young man who doesn\'t eat pizzelles.
 
@@ -172,7 +172,7 @@ BRUNO: Okay.
 
 He reaches into his cardigan and takes out a phone, and turns it around, and slides it across the table to you.
 
-It\'s a photo. A school bus stop on Passyunk Avenue, on a cold morning. A girl in a puffy coat with a pink backpack, thirteen, laughing at something on her phone, waiting for the bus to Saint Monica\'s.
+It\'s a photo. A corner on Passyunk Avenue, on a cold morning. A girl in a puffy coat with a pink backpack, thirteen, laughing at something on her phone, walking to Saint Monica\'s.
 
 BRUNO: She has your face. Around the eyes.
 
@@ -180,7 +180,7 @@ The cold comes up through the floor. You can feel the Slip, right there, under y
 
 You don\'t. You put your hands flat on the table.
 
-BRUNO: Nobody\'s going to touch her, Sam. I want you to hear me say that. Nobody\'s ever going to touch her. I\'m not that kind of man. I\'m just showing you that I know where the bus stop is. That\'s all. That\'s information.
+BRUNO: Nobody\'s going to touch her, Sam. I want you to hear me say that. Nobody\'s ever going to touch her. I\'m not that kind of man. I\'m just showing you that I know which corner she crosses at. That\'s all. That\'s information.
 
 He takes the phone back.
 
@@ -191,7 +191,7 @@ You sit there. You can\'t say anything. Your mouth won\'t work.
 Bruno holds out his hand across the table and waits.
 
 After a while, you shake it.`,
-    enter: g => { g.flag('bruno_deal', 'forced'); g.flag('bruno_jobs_total', 10); g.know('bruno_gigi', ['sam'], 'Bruno showed you a photo of Gigi at her bus stop on Passyunk Avenue. "Nobody\'s going to touch her. That\'s information."'); },
+    enter: g => { g.flag('bruno_deal', 'forced'); g.flag('bruno_jobs_total', 10); g.know('bruno_gigi', ['sam'], 'Bruno showed you a photo of Gigi on her walk to school on Passyunk Avenue. "Nobody\'s going to touch her. That\'s information."'); },
     next: 'a2_vinnie'
   },
 
@@ -206,19 +206,19 @@ vinnie: How many?
 
 sam: ${{ ten: 'Ten', five: 'Five', eight: 'Eight', twelve: 'Twelve', forced: 'Ten' }[g.f('bruno_deal')] || 'Ten'}.
 
-vinnie: ${g.f('bruno_deal') === 'five' ? 'Five? He gave you *five*? He don\'t give nobody five. Dante asked for a raise last year and Bruno made him wash the old man\'s car for a month.' : 'Okay. Okay. That\'s doable. Ten things. You can do ten things.'}
+vinnie: ${g.f('bruno_deal') === 'five' ? 'Five? He gave you *five*? He don\'t give nobody five. Dante asked for a raise last year and Bruno made him wash the old man\'s car for a month.' : 'Okay. Okay. That\'s doable. ' + ({ eight: 'Eight things. You can do eight things.', twelve: 'Twelve things. You can do twelve things.' }[g.f('bruno_deal')] || 'Ten things. You can do ten things.')}
 
 He looks at the empty fountain.
 
-vinnie: Teddy\'s been there since he got outta Jefferson. He don\'t talk. He just does what Dante says. He froze a guy\'s car to a fire hydrant on Snyder this morning with the guy in it, for like an hour, \'cause the guy was late on the vig. He didn\'t even look sorry. He just looked tired.
+vinnie: Teddy\'s been there since yesterday. Out of Jefferson with the darts still in his arm, practically. He don\'t talk. He just does what Dante says. This morning he froze a guy\'s car to a fire hydrant on Snyder with the guy in it, for like an hour, \'cause the guy was late on the vig. He didn\'t even look sorry. He just looked tired.
 
-sam: How long have you been in there, Vin?
+sam: Why\'d you really take it, Vin? It was never the twelve hundred.
 
 He doesn\'t answer.
 
 sam: Vin.
 
-vinnie: Since September. Since the Melrose. Since your pop. Dante said if I drove for him, he\'d go easier on Frankie. I figured it was the least I could do. Your pop taught me to drive stick.
+vinnie: \'Cause of the Melrose. \'Cause of your pop. Dante said if I drove for him, he\'d go easier on Frankie. I figured it was the least I could do. Your pop taught me to drive stick.
 
 You stare at him.
 

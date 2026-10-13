@@ -22,7 +22,7 @@ teddy: Listen. He\'s gonna say he doesn\'t have it. They always say that. You le
 
 sam: Teddy.
 
-teddy: You saved my life on the Parkway. I know. My mother knows. She lights a candle for you at Saint Adalbert\'s every morning. *Every* morning. She doesn\'t even know your name. She calls you *the cold boy*.
+teddy: You saved my life on the Parkway. I know. My mother knows. She lights a candle for you at Saint Adalbert\'s every morning. *Every* morning. She knows you as the Wawa boy who ate twelve pierogi. Now she calls you *the cold boy*.
 
 He looks at you, finally. His eyes are very tired.
 
@@ -73,7 +73,7 @@ teddy: This is the job, cold guy. This is what the job is.`,
       { text: 'Don\'t say anything. Let Teddy do the job. Look at the photo of Krysia on the register the whole time.', tag: 'Let it happen',
         fx: g => { g.flag('job1', 'watched'); g.flag('bruno_jobs_done', 1); g.hidden('revenant_drift', 1); }, go: 'a3_watch' },
       { text: 'Make up the difference yourself. Every dollar you have. And the rest out of next week\'s tips. Tell Dante the rest is coming, and cover it.', tag: 'Pay it',
-        fx: g => { g.flag('job1', 'paid'); g.flag('bruno_jobs_done', 1); g.money(-Math.min(365, g.S.money.cash)); g.hidden('revenant_drift', 0.5); }, go: 'a3_paid' }
+        fx: g => { g.flag('job1', 'paid'); g.flag('bruno_jobs_done', 1); g.flag('owe_dante_eddie', 8000 - 2100 - Math.min(365, g.S.money.cash)); g.flag('eddie_paid', g.S.money.cash); g.flag('eddie_owed', Math.max(0, 5900 - g.S.money.cash)); if (g.S.money.cash > 0) g.money(-g.S.money.cash); g.hidden('revenant_drift', 0.5); }, go: 'a3_paid' }
     ]
   },
   a3_mercy: {
@@ -143,7 +143,7 @@ Behind you, through the door, you can hear Eddie Szymanski on the floor of his b
 
 Teddy looks at you.
 
-You take out your wallet. You count it on the bar, next to Eddie\'s gray hands. Everything you have. ${g.S.money.cash >= 300 ? 'Three hundred and some.' : 'Not much.'} Ciro\'s tips since September, in twenties and fives and a lot of ones.
+You take out your wallet. You count it on the bar, next to Eddie\'s gray hands. Everything you have. ${g.f('eddie_paid') >= 300 ? 'Three hundred and some.' : 'Not much.'} Ciro\'s tips since September, in twenties and fives and a lot of ones.
 
 sam: Let him go. That\'s mine. I\'ll get the rest. Tips, shifts. I\'ll have it by New Year\'s. I\'ll tell Dante Eddie paid.
 
@@ -161,7 +161,7 @@ Teddy doesn\'t say anything. Then he takes his hand off the bar. The gray goes o
 
 Teddy picks up the envelope. And your money. He puts them together in his coat.
 
-teddy: I didn\'t see nothing. You hear me? I don\'t know where the rest came from. That\'s yours, cold guy. That\'s all yours.
+teddy: That\'s twenty-four hundred. He owes eight. You tell Dante the rest is coming, and you better make it come, cold guy. I didn\'t see nothing. That\'s all yours.
 
 He goes out into the snow.
 
@@ -175,7 +175,7 @@ You don\'t have an answer that you could say out loud. You go out after Teddy.`,
 
   a3_dante: {
     night: true,
-    loc: 'AN ESCALADE · DELAWARE AVENUE',
+    loc: 'AN ESCALADE · GIRARD AVENUE',
     clock: { time: '2:40 AM' },
     text: g => `Dante is waiting at the curb on Girard in the black Escalade, with Vinnie at the wheel. He rolls down the back window. Teddy hands him the envelope through it.
 
