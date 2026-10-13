@@ -9636,6 +9636,1676 @@ Object.assign(EH.episodes.s01e04, {
   }
 });
 
+/* s01e05.js */
+/* S1 · E5 · SUNDAY GRAVY, part 1 of 3: meta, cold open, Act One ("Mifflin Street"). */
+EH.episode({
+  id: 's01e05', season: 1, number: 5, title: 'Sunday Gravy', look: 's1',
+  cast: ['sam', 'jules', 'rosa', 'frank', 'nonna', 'mikey', 'gigi', 'vinnie', 'nik', 'grace'],
+  start: 'cold_open',
+  xp: 5,
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      night: true,
+      loc: 'CARDONE HALL · ROOM 9-14',
+      clock: { day: 'Sat', date: 'Sep 19', time: '11:40 PM' },
+      text: g => `Somebody knocks on your door at 11:40 on a Saturday night, three times, evenly spaced, like a metronome with manners.
+
+Nik's asleep with his headphones on. You open the door in a Neumann-Goretti Basketball T-shirt and pajama pants with the Phillie Phanatic on them that Gigi gave you for Christmas when you were fifteen, because they were funny then, and you are now wearing them unironically, and Jules Pemberton is standing in the hallway in a navy peacoat, holding her phone against her chest like a hand of cards.
+
+She looks at the Phanatic. She decides, visibly, not to say anything about the Phanatic.
+
+jules: I need to ask you something, and I need you not to make a face.
+
+sam: I don't make faces.
+
+jules: You're making one now.
+
+sam: That's just my face.
+
+She takes a breath. Behind her, down the hallway, her door is open and her lamp is on.
+
+jules: Tomorrow, my mother is hosting a luncheon at the house in Gladwyne for Callum's parents. There's a seating chart. I'm on it, between Mrs. Whitford and a bishop. I told her I couldn't come.
+
+sam: Okay.
+
+jules: She asked why. And I told her I had a prior commitment. Sunday dinner. With my study partner's family.
+
+sam: …Okay.
+
+jules: With the *Kearneys*. Of South Philadelphia.
+
+She says *Kearneys* like it's a word in a foreign language she's been practicing.
+
+jules: My mother looked you up. She knows your father drives a cab. She said "how *charming*," in the voice she uses for skin conditions. And then she said she'd have Mr. Abernathy drive me down and pick me up at seven, and that she'd like the address, so she can send your mother a note. On *paper*.
+
+She finally looks up at you.
+
+jules: So I need there to be a Sunday dinner. With the Kearneys. Of South Philadelphia. Tomorrow.
+
+You stare at her.
+
+${g.knows('owe_jules_favor') ? 'You owe her a favor. Any favor, her choosing, whenever she wants. You both know it. You watch her not say it.' : ''}`,
+      choices: [
+        { text: '"Is this the favor? The one I owe you?"', if: g => g.knows('owe_jules_favor'), tag: 'The favor?',
+          fx: g => { g.flag('ask', 'favor'); g.bond('jules', { respect: 1 }); }, go: 'cold_favor' },
+        { text: '"My grandmother is going to *love* you. That\'s the problem." Yes. Obviously yes.', tag: 'Yes',
+          fx: g => { g.flag('ask', 'yes'); g.bond('jules', { affection: 1 }); }, go: 'cold_yes' },
+        { text: '"What do I get?"', tag: 'Negotiate',
+          check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', near: ['jules'], label: 'Name your price', on: { strong: 'cold_price', weak: 'cold_price_weak', miss: 'cold_price_weak' } } }
+      ]
+    },
+    cold_favor: {
+      night: true,
+      text: `sam: Is this the favor? The one I owe you?
+
+She looks at you like you've said something faintly obscene.
+
+jules: No.
+
+sam: No?
+
+jules: This is a *request*. You can say no to a request. The favor is for something much worse.
+
+sam: Like what?
+
+jules: I'll know it when I see it.
+
+She says it lightly. It doesn't sound light. It sounds like a woman putting something valuable back in a safe.
+
+sam: Then yes. Come to dinner. Nonna's going to try to feed you until you die.
+
+jules: I've read about that. I'm prepared.`,
+      next: 'cold_end'
+    },
+    cold_yes: {
+      night: true,
+      text: `sam: My grandmother is going to *love* you. That's the problem.
+
+jules: Why is that a problem?
+
+sam: Because she's going to love you, and then she's going to ask me every Sunday for the rest of my life where you are. When I'm forty. When I'm *married to somebody else*, Pemberton. *Where's the tall one with the nice manners?*
+
+Something happens at the corner of her mouth that she doesn't authorize.
+
+jules: Then I'll try to be disappointing.
+
+sam: You don't know how.
+
+jules: I've been practicing on you for a month.`,
+      next: 'cold_end'
+    },
+    cold_price: {
+      night: true,
+      enter: g => { g.flag('ask', 'price'); g.flag('pset_deal'); g.bond('jules', { affection: 1, respect: 1 }); },
+      text: `sam: What do I get?
+
+jules: You get to be *useful*. I thought you liked that.
+
+sam: I do. I also like problem set four being done by somebody who understands the chain rule.
+
+She narrows her eyes.
+
+jules: Problems one through six. You do seven through ten yourself, and I check them.
+
+sam: One through *eight*.
+
+jules: One through six, and I don't tell your grandmother about the Phanatic pants.
+
+You look down at the Phanatic. The Phanatic looks back up at you.
+
+sam: …Deal.
+
+She holds out her hand, and you shake it, and she has a very good handshake, dry and firm, like she was taught it by a professional, which she probably was. She holds on maybe one second longer than a handshake.`,
+      next: 'cold_end'
+    },
+    cold_price_weak: {
+      night: true,
+      enter: g => { g.flag('ask', 'price'); },
+      text: `sam: What do I get?
+
+jules: The satisfaction of a good deed.
+
+sam: That's not a thing.
+
+jules: Then you get nothing, Kearney. You'd have said yes before I finished the sentence. This negotiation is decorative.
+
+She's right. You were going to say yes before she knocked.
+
+sam: …Yeah. Okay. Come to dinner.`,
+      next: 'cold_end'
+    },
+    cold_end: {
+      night: true,
+      text: `She nods once, like a deal closing on a trading floor, and starts to go. Then she stops.
+
+jules: What do I bring?
+
+sam: Nothing. Don't bring anything. If you bring something, my mother will be insulted, and if you don't bring anything, my mother will be insulted, so you might as well save the money.
+
+jules: That's not a real answer.
+
+sam: That's the *only* answer. That's South Philly.
+
+jules: Noon?
+
+sam: Twelve-thirty. Dinner's at one. Dinner is always at one. Dinner has been at one since 1962.
+
+jules: Why is it called *dinner* if it's at *one*?
+
+sam: Pemberton. I'm begging you. Don't ask that at the table.
+
+Her door closes. Her lamp stays on.
+
+You get back in bed and stare at the ceiling and think, *Jules Pemberton is coming to Sunday dinner on Mifflin Street*, and your whole body goes hot and cold at the same time, which is a thing it does now for a lot of reasons.
+
+You don't remember falling asleep.`,
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_roof' },
+
+    /* ================= ACT ONE: MIFFLIN STREET ================= */
+    a1_roof: {
+      card: { kind: 'act', label: 'Act One', title: 'Mifflin Street' },
+      loc: 'CARDONE HALL · ROOF',
+      clock: { day: 'Sun', date: 'Sep 20', time: '6:14 AM' },
+      enter: g => { g.know('lost_minutes2', ['sam'], 'You woke up on the Cardone roof at dawn with frost on your bare feet and no memory of going up there. Twenty-six minutes, gone.'); g.sleep(6); g.pool('focus', -1); },
+      text: g => `You wake up cold.
+
+Not dorm cold. *Slip* cold. January cold, the bottom-of-the-pool cold, and your cheek is pressed against something rough and gritty, and the sky is the color of dishwater, and there's a seagull standing about four feet from your face, looking at you with professional interest.
+
+You're on the roof.
+
+You're on the roof of Cardone Hall, lying on the gravel next to the HVAC unit where you sat with Jules two weeks ago, in your Phanatic pants and bare feet, and there's frost on your feet. Actual frost. White, feathery, on the tops of your toes, melting as you watch.
+
+It's sixty-one degrees out.
+
+Your nose is bleeding. Not a lot. A slow, steady line down your lip into your mouth, copper, familiar.
+
+Your phone is in your hand. You don't remember picking it up. The screen says **6:14 AM**, and below that, your last open app is the stopwatch, Nik's stopwatch, the one he uses for trials. It's stopped. It reads **26:03.41**.
+
+You didn't go up here. You didn't time anything. You went to bed.
+
+${g.knows('lost_minutes') ? 'The last time this happened, it was Ridge Avenue, and it was twenty-one minutes. This time it\'s twenty-six.' : 'You have no idea what happened in those twenty-six minutes. Neither does anyone.'}
+
+The seagull leaves. You sit there with your knees pulled up, waiting for your feet to feel like feet, watching the sun come up gray over the Delaware, and you think: *it's getting worse.* You don't know what *it* is. You just know it's getting worse, the way you know a tooth is going bad before the dentist does.
+
+Then you remember what day it is, and who's coming to dinner, and you say a word out loud that you would never say in front of Nonna.`,
+      next: 'a1_hub'
+    },
+
+    /* ---------- Sunday morning hub ---------- */
+    a1_hub: {
+      loc: 'SUNDAY MORNING · SEPTEMBER 20',
+      clock: { time: '7:30 AM' },
+      text: `Mr. Abernathy is picking you both up at 11:45 in front of Cardone. That's four hours. You've got frost-burned toes, a forearm full of stitches, a chest with a handprint on it, and twenty-six minutes you can't account for.
+
+You have time for two things. Maybe.`,
+      hub: {
+        slots: 2, label: 'Sunday morning',
+        blurb: 'Four hours until the Range Rover.',
+        options: [
+          { id: 'sun_nik', text: 'Wake Nik up. Tell him about the roof. Show him the stopwatch.', cost: 1, tag: 'Nik', go: 'a1_nik' },
+          { id: 'sun_grace', text: 'Knock on Grace\'s door. The stitches itch like crazy. That\'s supposed to take two weeks.', cost: 1, tag: 'Grace', go: 'a1_grace' },
+          { id: 'sun_femi', text: 'Text Femi. His Halcyon follow-up is Tuesday.', cost: 1, tag: 'Femi', go: 'a1_femi' },
+          { id: 'sun_heck', text: 'Call Bree. You haven\'t heard how Heck is since the duck.', cost: 1, tag: 'Heck', go: 'a1_heck' },
+          { id: 'sun_sleep', text: 'Go back to bed. In your bed. With the door locked and a chair under the knob.', cost: 1, tag: 'Rest', go: 'a1_sleep' }
+        ],
+        done: 'a1_ride'
+      }
+    },
+
+    a1_nik: {
+      enter: g => { g.bond('nik', { trust: 1 }); g.know('lost_minutes2', ['nik']); if (g.knows('lost_minutes')) g.know('lost_minutes', ['nik']); g.flag('nik_rule'); },
+      text: g => `Nik takes it worse than you do. That's sort of his job.
+
+He sits up in bed with his headphones around his neck and his hair in a shape that defies physics and holds your phone in both hands and stares at **26:03.41** like it's an x-ray.
+
+nik: You *timed* it.
+
+sam: I didn't time anything. I was asleep.
+
+nik: Your phone opened my stopwatch at 5:48 a.m. and stopped it at 6:14. With *your* thumb. You timed yourself, Sam. In your *sleep*.
+
+He goes very quiet. For Nik, that's an alarm going off.
+
+nik: ${g.knows('lost_minutes') ? 'You lost twenty-one minutes on Ridge Avenue and you\'re telling me *now*? Twenty-one there. Twenty-six here. And Ridge Avenue, you\'d been Slipping all night. Last night you didn\'t Slip once. You were *asleep*.' : 'Okay. Okay. So you didn\'t Slip. And you lost twenty-six minutes anyway.'}
+
+He opens his notebook. **THE SLIP (VOL. 3).** Vol. 2 ran out in Kensington.
+
+nik: Okay. I'm making a rule. And you're gonna hate it. No Slipping for seven days. None. Not to catch a bus, not to grab a falling coffee, not to save a cat. Let's see if it goes away when you stop poking it.
+
+sam: And if somebody needs help?
+
+nik: Then *somebody else* helps. Sam. *Salvatore.* You're going places in your sleep. You're going places *without you*.
+
+He writes **RULE 1: SEVEN DAYS** and underlines it so hard the pen goes through the paper.`,
+      next: '@hub'
+    },
+
+    a1_grace: {
+      enter: g => { g.heal('burned_arms'); g.heal('laceration'); g.bond('grace', { trust: 1, affection: 1 }); g.know('grace_stitches', ['sam', 'grace'], 'Grace took your stitches out eight days after Kensington. She said the cut had healed like it was a month old.'); },
+      text: g => `Grace opens her door in a Temple Med sweatshirt with an MCAT flashcard stuck to her cheek. She peels it off. It says **GLYCOLYSIS**.
+
+grace: It's ${g.f('did_sun_sleep') ? 'eleven' : 'seven-thirty'} on a Sunday.
+
+sam: My stitches itch.
+
+grace: Your stitches are eight days old. They're supposed to itch. That's *healing*. Go away.
+
+sam: Grace. They really itch.
+
+She looks at you for a second. Then she sighs, and goes back into her room, and comes back with the tackle box that says **NOT A TACKLE BOX**.
+
+She sits you on the floor of the hallway and unwraps your forearm. Then she doesn't say anything at all for a while.
+
+The cut's closed. Not *closing*. Closed. A thin pink line, flat, the stitches sitting on top of it like they're decoration. The burns on your arms, which were wet and white and terrible eight days ago, are pink and new and shiny, like skin on a baby.
+
+grace: Okay.
+
+She snips the first stitch and pulls it out with tweezers. Then the next. Then all of them.
+
+grace: This is what a cut looks like at four weeks. Maybe five. I've seen it in *textbooks*.
+
+She holds your arm up to the window light and turns it slowly, the way she turned the x-ray film.
+
+grace: I'm going to say this once, and then I'm going to go back to sleep and pretend I dreamed it. Whatever is happening to you, it's not stopping. Healing costs calories, protein, cell divisions. Yours is running a tab. Nothing in biology is free, Sam.
+
+She rubs Silvadene into the new pink skin on your arms, gently, with two fingers, and wraps it in fresh gauze, and pats it twice.
+
+grace: You can't hide those from your mother forever. Long sleeves. And don't let anybody hug you hard.`,
+      next: '@hub'
+    },
+
+    a1_femi: {
+      enter: g => { if (g.f('femi_warned') && g.knows('marisol')) g.know('marisol', ['femi']); },
+      text: g => `TXT sam: hey. tuesday. you going?
+
+You stare at the screen for six minutes before the dots appear.
+
+TXT femi: thinking about it
+TXT femi: ${g.f('femi4') === 'warned' ? 'i know what i said. i said i wouldnt' : g.knows('marisol') && g.f('femi4') !== 'seen' ? 'i know what you said about marisol' : 'i know what you think about them'}
+TXT femi: i want to go and tell them no. in person. to a face. i want somebody to look at me while i say no to them
+TXT femi: also its another 500. ngl
+TXT femi: is that stupid
+
+You look at it a long time.`,
+      choices: [
+        { text: '"I\'ll come with you. Tuesday. I\'ll wait outside. If you\'re not out in twenty minutes, I\'m coming in."', tag: 'Go with him',
+          fx: g => { g.flag('femi_tue', 'with'); g.bond('femi', { trust: 2, affection: 2 }); g.know('femi_tuesday', ['sam', 'femi'], 'You promised Femi you\'d go with him to the Halcyon follow-up on Tuesday 9/22 and wait outside.'); }, go: 'a1_femi_with' },
+        { text: '"Don\'t go. Please. Ghost them. Let them wonder."', tag: 'Don\'t go',
+          check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', bonus: 1, bonusLabel: 'Second time asking', label: 'Keep Femi home', on: { strong: 'a1_femi_stay', weak: 'a1_femi_maybe', miss: 'a1_femi_going' } } },
+        { text: '"It\'s not stupid. Text me the second you\'re out."', tag: 'His call',
+          fx: g => { g.flag('femi_tue', 'text'); g.bond('femi', { affection: 1 }); }, go: 'a1_femi_text' }
+      ]
+    },
+    a1_femi_with: {
+      text: g => `TXT sam: ill come with you. ill wait outside. if youre not out in 20 im coming in
+
+The dots appear. Disappear. Appear.
+
+TXT femi: you would do that
+TXT sam: yeah
+TXT femi: you have calc at 2 on tuesday
+${g.f('pset_deal') ? 'TXT sam: i have a calc partner who does problems one through six' : 'TXT sam: calc can live without me for one day'}
+TXT femi: lol
+TXT femi: ok
+TXT femi: ok. tuesday. navy yard. 3:30
+TXT femi: thank you sam
+
+You put the phone down. You feel good about it. You feel like you did something right for once, before anything happened, instead of after.`,
+      next: '@hub'
+    },
+    a1_femi_stay: {
+      enter: g => { g.flag('femi_tue', 'stay'); g.flag('femi_warned', 'strong'); g.bond('femi', { trust: 2 }); },
+      text: `TXT sam: dont go. ghost them. let them wonder where you went. youre good at that
+TXT femi: lmao
+TXT femi: ok that was actually funny
+TXT femi: ok
+TXT femi: ok fine. im not going. im keeping the first 500 and buying a ps5 and ghosting a multinational corporation
+TXT femi: feels like the most american thing ive ever done
+
+You laugh out loud in an empty hallway. You hope he means it. He sounds like he means it.`,
+      next: '@hub'
+    },
+    a1_femi_maybe: {
+      enter: g => { g.flag('femi_tue', 'maybe'); },
+      text: `TXT sam: dont go. please. ghost them
+TXT femi: ill think about it
+TXT femi: im not saying that to get you off my back. im actually going to think about it
+TXT femi: thats the best i got
+
+It's not a yes. It's not a no. You read it three times like it's going to change.`,
+      next: '@hub'
+    },
+    a1_femi_going: {
+      enter: g => { g.flag('femi_tue', 'going'); g.bond('femi', { tension: 1 }); },
+      text: `TXT sam: dont go. please
+TXT femi: man
+TXT femi: i know youre trying. but youve got a whole life where people see you. let me have this one thing where somebody sees me
+TXT femi: ill text you after
+
+He doesn't text anything else. You start four replies and send none of them.`,
+      next: '@hub'
+    },
+    a1_femi_text: {
+      text: `TXT sam: its not stupid. text me the second youre out
+TXT femi: deal
+TXT femi: if i dont text you, assume ive been turned into a guy who loves gray polo shirts
+TXT femi: jk
+TXT femi: mostly
+
+You send him a thumbs up. It feels like nothing. It's supposed to.`,
+      next: '@hub'
+    },
+
+    a1_heck: {
+      enter: g => { g.know('teddy_mother', ['sam'], 'Teddy\'s mother, Halina Kowal, needs a kidney. Jefferson wants $40,000 before they\'ll put her on the list. That was what the truck was for.'); g.know('brannigan_card', ['sam', 'teddy', 'bree', 'heck'], 'A Halcyon man left a business card at Heck\'s tía\'s house in Kensington: C. BRANNIGAN · COMMUNITY RECOVERY.'); g.bond('teddy', { trust: 1 }); g.bond('bree', { trust: 1 }); },
+      text: `Bree picks up on the first ring and says, without hello:
+
+bree: Ninety-nine point one.
+
+sam: Is that—
+
+bree: That's *normal*, Wawa. That's normal-person temperature. He held his niece yesterday. Yesenia. For like an hour. She fell asleep on him. He cried so hard Teddy had to leave the room so *he* didn't cry.
+
+You sit down on the floor of the hallway. You didn't decide to; your legs did.
+
+bree: Hold on. He wants to—
+
+Rustling. Then Teddy, close to the phone, tired.
+
+teddy: Listen.
+
+sam: I'm listening.
+
+teddy: Two things. One. My mom needs a kidney. Jefferson wants forty grand before they'll put her on the list. That's what the truck was. I'm telling you because you carried my best friend across McPherson Square while he was on fire, and I figure that buys you the truth.
+
+sam: Teddy—
+
+teddy: Two. A guy came to Heck's tía's house on Thursday. Polo shirt. Very polite. He left a business card in the screen door.
+
+A pause. You can hear him turning it over in his fingers.
+
+teddy: **C. BRANNIGAN. COMMUNITY RECOVERY.** On the back he wrote, in pen, *For when it comes back.*
+
+teddy: It's not gonna come back. Is it, cold guy?
+
+You don't know. You don't say anything. You can hear Teddy hear you not say anything.
+
+teddy: Yeah. That's what I thought.`,
+      next: '@hub'
+    },
+
+    a1_sleep: {
+      enter: g => { g.nap(3); },
+      text: g => `You go back to bed. You lock the door. You put your desk chair under the knob like a person in a movie about a haunted house, which you may now be.
+
+${g.f('did_sun_nik') ? 'Nik watches you do it and doesn\'t make a single joke, which is worse.' : 'Nik, headphones on, doesn\'t wake up.'}
+
+You sleep three hours, hard and dreamless, and when your alarm goes off at 10:45, the light through the blinds is warm and gold and your feet are just feet, and the world feels like it's holding you a little tighter than it was at dawn.`,
+      next: '@hub'
+    },
+
+    /* ---------- The ride ---------- */
+    a1_ride: {
+      loc: 'BROAD STREET · SOUTHBOUND',
+      clock: { time: '11:52 AM' },
+      text: g => `At 11:45 exactly, a black Range Rover pulls up in front of Cardone Hall, and a tall gray-haired Black man in a navy suit gets out and opens the back door, and it's Mr. Abernathy, the man whose minifridge you once stole.
+
+He looks at you. You look at him.
+
+MR. ABERNATHY: Mr. Kearney.
+
+sam: Mr. Abernathy. About the refrigerator—
+
+MR. ABERNATHY: It reached the ninth floor. That's all I ever wanted for it.
+
+Jules comes out of Cardone at 11:46, and you forget about the refrigerator.
+
+She's wearing a dark green dress with long sleeves and a cardigan over it and small pearl earrings and flat shoes, and her hair is pulled back in a way that's very simple and must have taken an hour. She looks like she's going to a job interview at a museum. She's carrying a white cardboard box tied with red-and-white string.
+
+sam: What's in the box?
+
+jules: Cannoli. From Termini Brothers. Mr. Abernathy drove down to Eighth Street at eight this morning. I read that it's the correct bakery. There's a *Philadelphia Magazine* list.
+
+You look at the box. You think about your grandmother, who has been making cannoli shells by hand every Sunday since the Johnson administration, and who once didn't speak to her sister-in-law for two years over a ricotta.
+
+sam: Pemberton. You brought *store cannoli* to my *Nonna's* house.
+
+jules: Is that bad?
+
+sam: It's—
+
+jules: You said bring nothing. I couldn't bring nothing. I *physically* couldn't. I tried. I stood in my room with my hands empty and I felt like I was going to faint.`,
+      choices: [
+        { text: '"Okay. Okay. Here\'s what we do. You give them to my *mother*. Not Nonna. Ma. Ma will love it. Ma will handle Nonna."', tag: 'Strategy',
+          fx: g => { g.flag('cannoli', 'ma'); g.bond('jules', { trust: 1 }); }, go: 'a1_ride_after' },
+        { text: '"It\'s fine. It\'s perfect. Nonna\'s going to love them." Lie, to make her feel better.', tag: 'Lie (kindly)',
+          fx: g => { g.flag('cannoli', 'lie'); g.bond('jules', { affection: 1 }); }, go: 'a1_ride_after' },
+        { text: '"Termini\'s is good. Nonna\'s going to say *good, not mine*. That\'s the highest compliment she gives anything that isn\'t hers."', tag: 'The truth',
+          fx: g => { g.flag('cannoli', 'truth'); g.bond('jules', { respect: 1, trust: 1 }); }, go: 'a1_ride_after' }
+      ]
+    },
+    a1_ride_after: {
+      text: g => `${{ ma: 'jules: Your *mother*. Not your grandmother.\n\nsam: Ma handles Nonna. Everybody handles Nonna through Ma. It\'s like the UN.\n\nShe nods slowly and adjusts her grip on the box, like it\'s now a diplomatic pouch.', lie: 'jules: Really?\n\nsam: Really.\n\nShe looks at you, then at your left hand, which is in your lap and nowhere near your ear. She doesn\'t look convinced. She also looks, very slightly, relieved, and that\'s the part you hold on to.', truth: 'jules: *Good, not mine.*\n\nsam: If she says that, you won. If she says nothing, that\'s also fine. If she says *hm*, we leave the country.\n\nShe almost laughs. She puts the box on her lap like it\'s a bomb she\'s been trained to transport.' }[g.f('cannoli')]}
+
+Mr. Abernathy drives down Broad Street the way he must have driven Jules everywhere her whole life: smoothly, silently, never once going over the limit, while the whole city honks around him like a river around a rock.
+
+You go past City Hall, past the Academy of Music, past the Kimmel Center. Past Washington Avenue, where Broad Street starts being *yours*, where the bakeries and the funeral homes and the social clubs start, where the rowhouses close in and get shorter and the American flags and the Italian flags and the Eagles flags hang off the same porches.
+
+Jules looks out the window the whole way. She doesn't say anything. But she looks at all of it, *all* of it, the old men on lawn chairs and the girl selling water ice out of a cooler on the corner of Tasker and the shrine to the Virgin Mary in somebody's front window surrounded by Christmas lights in September, and she looks like somebody seeing the ocean for the first time and trying to act like she's seen it before.
+
+jules: I've never been south of Washington Avenue.
+
+sam: You've lived here your whole life.
+
+jules: I've lived in *Gladwyne* my whole life. We came into the city for the orchestra and the dentist.
+
+She turns and looks at you.
+
+jules: Is it always this loud?
+
+sam: This is quiet. It's Sunday. Everybody's at their mother's.
+
+Mr. Abernathy turns onto Mifflin Street, and every head on every stoop turns to look at the Range Rover, and you put your face in your hands.`,
+      next: 'a1_arrive'
+    },
+
+    a1_arrive: {
+      loc: 'MIFFLIN STREET · SOUTH PHILADELPHIA',
+      clock: { time: '12:31 PM' },
+      enter: g => { g.meet('rosa'); g.meet('frank'); g.meet('gigi'); g.meet('mikey'); g.meet('nonna'); g.know('jules_mifflin', ['sam', 'jules', 'rosa', 'frank', 'gigi', 'mikey', 'nonna'], 'Jules came to Sunday dinner on Mifflin Street.'); },
+      text: `Gigi is on the stoop.
+
+Of course Gigi is on the stoop. Gigi has been on the stoop, since 11:15, judging by the sunflower-seed shells, in her good jeans and a sweatshirt that says **NEUMANN-GORETTI SAINTS**, looking up the street every thirty seconds. When the Range Rover stops, she stands up so fast she knocks over Ma's potted basil.
+
+gigi: SAMMMMMM.
+
+Then she sees Jules get out of the car, and she stops dead on the second step, and her mouth falls open, and she says, in a completely different voice, very quietly, the voice of a thirteen-year-old girl seeing a celebrity at the Acme:
+
+gigi: Oh my God.
+
+jules: Hello. You must be Gianna.
+
+gigi: Nobody calls me Gianna.
+
+jules: What should I call you?
+
+gigi: …You can call me Gianna.
+
+And then the whole house comes out at once. That's the only way it ever happens on Mifflin Street: nobody comes out alone. Ma first, wiping her hands on a dish towel, in her church dress with an apron over it. Pop behind her, in a pressed shirt, which means he ironed it, which means he knew company was coming, which means Ma knew. Mikey last, leaning in the doorway in an Eagles jersey with his arms crossed, wearing the face he wore when you brought Kristen Lombardo to the eighth-grade dance.
+
+And Nonna, at her own front door three houses down, on her own top step, in black, watching.
+
+rosa: Salvatore. You didn't tell me you were bringing somebody.
+
+sam: I didn't— Ma, I *texted*—
+
+rosa: You texted at *eight o'clock this morning*.
+
+She turns to Jules, and her whole face changes, the way it does for teachers and priests and Mikey's sergeant.
+
+rosa: Sweetheart. Come in, come in, come in. Don't stand on the street. I set a place.
+
+sam: You set a place before I texted?
+
+rosa: I set eight places last night. I don't know why. I just did.
+
+She says it the way she always says things like that. Like it's nothing. Like everybody's mother just knows.
+
+Jules looks at you. You shrug. *That's just Ma.*
+
+Jules holds out the white box.`,
+      next: 'a1_cannoli'
+    },
+    a1_cannoli: {
+      text: g => `${{
+        ma: 'jules: Mrs. Kearney. These are for you. Thank you for having me.\n\nYour mother takes the box and reads the string, red and white, and the stamp on top, **TERMINI BROS. BAKERY**, and looks at Jules like she\'s just been handed a newborn.\n\nrosa: *Termini.* Oh, you didn\'t have to. Oh, *Frank*. Look. She went to *Termini\'s*.\n\nShe holds the box up over her head so Nonna can see it from three doors down. Nonna, on her step, looks at the box. Then at Jules. Then at you.\n\nnonna: Hm.\n\nBut it\'s a *good* hm. It\'s the hm of an ambassador accepting credentials. You breathe out for the first time since Gladwyne came up.',
+        lie: 'jules: These are for your grandmother. Sam said she\'d love them.\n\nThe street goes quiet. On the next stoop down, Mrs. Gallo stops sweeping.\n\nYour mother takes the box very carefully, the way you\'d take something that might go off. She looks at you over Jules\'s shoulder with an expression that says *I am going to kill you in front of God later*.\n\nNonna, on her top step, looks at the box. Looks at Jules. Looks at you.\n\nnonna: Store cannoli.\n\njules: …Yes. I\'m sorry. Sam said—\n\nnonna: Sam said.\n\nNonna comes down her steps, one at a time, holding the rail. She walks across to Jules. She takes the box out of your mother\'s hands. She opens the lid and looks inside, and the whole street holds its breath.\n\nnonna: Termini. Hm.\n\nShe closes the box.\n\nnonna: Good. Not mine. But good. *You*, I like.\n\nShe points at you without looking.\n\nnonna: Him, I\'m going to talk to. *Madonna mia.*',
+        truth: 'jules: These are for the family. From Termini Brothers. I know they won\'t be as good as yours, Mrs. DiNardo.\n\nShe says it straight to Nonna, across three stoops\' worth of sidewalk, without being told which one is Nonna. She just knew. Of course she knew.\n\nNonna looks at the box. At Jules. Her face doesn\'t move at all.\n\nnonna: Good. Not mine.\n\nThen, after a long pause, the eyebrows go up, half an inch, which on Nonna is a standing ovation.\n\nnonna: But good.\n\nJules turns her head just enough that only you can see her face, and she gives you a look of triumph about the width of a dime.'
+      }[g.f('cannoli')]}`,
+      next: 'a1_kitchen'
+    },
+
+    a1_kitchen: {
+      loc: 'THE KEARNEY HOUSE · KITCHEN',
+      clock: { time: '12:50 PM' },
+      text: g => `Ten minutes later, Jules is in the front room on the plastic-covered couch being interviewed by Gigi about Main Line horse culture, and Pop is showing Mikey something on his phone about the Eagles' secondary, and Ma says *Salvatore, come help me with the braciole*, in a voice that is not about braciole.
+
+The kitchen is the kitchen. The kitchen has been the same kitchen your whole life: the yellow linoleum, the radio on the windowsill playing WIP low, the Last Supper over the doorway, the big pot on the back burner where the gravy has been going since seven this morning, red and black and slow, blooping.
+
+Ma doesn't make you help with the braciole. She closes the kitchen door, which she never does, and turns around and takes your left wrist in her hand and pushes your sleeve up before you can stop her.
+
+You let her.
+
+${g.f('did_sun_grace') ? 'Grace\'s gauze is clean and white. Ma unwinds it with one hand, fast, professionally, the way she must do it forty times a week in the nurse\'s office at school. Under it, the pink new skin, the thin pink line of the cut.' : 'There are stitches in your forearm. Nine of them. And above and below them, both arms, the burns: half-healed, angry, pink and white and shiny.'}
+
+She looks at it without saying anything. Then she turns your arm over, gently, in the light from the window.
+
+rosa: Salvatore.
+
+sam: Ma—
+
+rosa: I've been a school nurse for twenty-two years. I know what a burn looks like at two days and I know what it looks like at a month. This is a month. ${g.f('did_sun_grace') ? 'And this cut was stitched. I can see the holes. They\'re almost gone.' : 'And these stitches should have come out already.'}
+
+She looks up at you.
+
+rosa: Two weeks ago you were fine. I saw you on FaceTime. You had your shirt off because it was hot, and you were eating cereal out of the box like an animal, and your arms were fine.
+
+The gravy bloops on the stove. On the radio, somebody's yelling about the Phillies' bullpen.
+
+rosa: So what happened to you? And when?`,
+      choices: [
+        { text: '"Ciro\'s oven, Ma. I grabbed a pan without the towel. Twice. I\'m an idiot." Keep your hand off your ear.', tag: 'Lie',
+          check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['rosa'], label: 'Lie to Ma', on: { strong: 'a1_ma_lie_ok', weak: 'a1_ma_lie_meh', miss: 'a1_ma_lie_bad' } } },
+        { text: '"I pulled somebody out of a fire, Ma. That\'s all. That\'s all I can tell you. Please don\'t ask me the rest."', tag: 'Some of it',
+          fx: g => { g.flag('ma5', 'some'); g.heat('rosa', 3); g.bond('rosa', { trust: 2, tension: 1 }); g.know('sam_fire_ma', ['sam', 'rosa'], 'You told Ma you pulled somebody out of a fire. You asked her not to ask the rest.'); }, go: 'a1_ma_some' },
+        { text: 'Make her laugh. That\'s always worked. "Ma. You should see the other guy." Then hug her.', tag: 'Deflect',
+          check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', label: 'Get Ma to laugh', on: { strong: 'a1_ma_laugh', weak: 'a1_ma_laugh_weak', miss: 'a1_ma_laugh_weak' } } }
+      ]
+    },
+    a1_ma_lie_ok: {
+      enter: g => { g.flag('ma5', 'lied'); },
+      text: `sam: Ciro's oven, Ma. I grabbed a pan without the towel. Twice. I'm an idiot.
+
+She looks at you for a long second. Then she sighs, all the way from her shoes.
+
+rosa: You are an idiot.
+
+She lets go of your wrist. She takes the tube of Silvadene she keeps in the junk drawer next to the rubber bands and the soy sauce packets, because of course she has Silvadene in the junk drawer, and she puts it on your arms herself, with two fingers, the way she did when you were nine and fell off the Gallos' garage.
+
+rosa: Long sleeves at the table. I don't want your grandmother seeing that. She'll light a candle the size of a fire hydrant.
+
+You think you got away with it. Then she says, very quietly, rubbing the cream in:
+
+rosa: A month, Salvatore. A burn doesn't lie about how old it is. Even when the boy does.`,
+      next: 'a2_table'
+    },
+    a1_ma_lie_meh: {
+      enter: g => { g.flag('ma5', 'lied'); g.bond('rosa', { tension: 1 }); },
+      text: `sam: Ciro's oven, Ma. I grabbed a pan without the towel. Twice.
+
+rosa: Twice.
+
+sam: Yeah.
+
+rosa: And it healed a month's worth since I saw you on FaceTime.
+
+You don't say anything.
+
+She lets go of your wrist and turns back to the stove and stirs the gravy for a long time, the way she does when she's deciding whether to yell.
+
+rosa: You know what I see at school? Kids who come in with a bruise and a story. Fell off the bike. Walked into a door. I always know. I always *know*, Salvatore. And I always have to decide whether to ask the second time.
+
+She taps the wooden spoon on the side of the pot, twice.
+
+rosa: I haven't decided yet. Go set the table.`,
+      next: 'a2_table'
+    },
+    a1_ma_lie_bad: {
+      enter: g => { g.flag('ma5', 'caught'); g.bond('rosa', { tension: 2, trust: -1 }); },
+      text: `sam: Ciro's oven, Ma. I grabbed a—
+
+Your left hand is on your ear. You take it down. Too late. She's seen you do that since you were four.
+
+Ma doesn't say anything. She doesn't yell. That's worse, much worse; yelling is how Ma says *I love you* when she's scared. She just pulls your sleeve down over the burns herself, carefully, all the way to your wrist, and buttons the cuff.
+
+rosa: Your brother lies with his whole face, like your father. You lie with your ear. You always have.
+
+She picks up the wooden spoon.
+
+rosa: I'm not going to ask you again today. Because there's a girl in my front room who came all the way from Gladwyne, and I'm not going to embarrass you in front of her. But I'm going to ask you again, Salvatore. And next time, you're going to look at me.`,
+      next: 'a2_table'
+    },
+    a1_ma_some: {
+      text: `sam: I pulled somebody out of a fire, Ma. That's all. That's all I can tell you. Please don't ask me the rest.
+
+She stares at you.
+
+For a second you think she's going to slap you. She's never slapped you in your life. Then her face does something you've only seen it do once, at Pop's mother's funeral, and she pulls you down by the back of your neck and holds your head against her shoulder, hard, the way she held you at the airport when Mikey came home.
+
+rosa: *Somebody.*
+
+sam: Yeah.
+
+rosa: Are they okay?
+
+sam: Yeah. They're okay.
+
+She holds on a while longer. She smells like garlic and Jean Naté and church.
+
+rosa: Okay. Okay.
+
+She lets you go and wipes her eyes fast with the back of her wrist, the dish towel still in her hand.
+
+rosa: I'm not going to ask you the rest. Not today. But I'm your mother, and I'm a nurse, and I have eyes. And you're going to tell me eventually, because you can't keep anything from me, you never could. You're just going to make me wait.
+
+She turns back to the stove.
+
+rosa: Long sleeves at the table. Don't let your grandmother see.`,
+      next: 'a2_table'
+    },
+    a1_ma_laugh: {
+      enter: g => { g.flag('ma5', 'laugh'); g.bond('rosa', { affection: 1 }); },
+      text: `sam: Ma. You should see the other guy.
+
+And before she can say anything, you hug her, the way you used to when you were little and in trouble, arms all the way around her, chin on top of her head because you passed her in height in eighth grade.
+
+She makes a noise into your chest that's half a laugh and half something else.
+
+rosa: You're such a *pain in my ass*.
+
+sam: I know.
+
+rosa: You're your father's son. You're *exactly* your father's son.
+
+She lets go and smacks you on the arm, gently, on the side without the burns, because she knows exactly where they are.
+
+rosa: Long sleeves. Set the table. And Salvatore. I'm letting you have this one.
+
+She points the wooden spoon at you.
+
+rosa: I'm not letting you have the next one.`,
+      next: 'a2_table'
+    },
+    a1_ma_laugh_weak: {
+      enter: g => { g.flag('ma5', 'laugh'); g.heat('rosa', 1); },
+      text: `sam: Ma. You should see the other guy.
+
+She doesn't laugh.
+
+rosa: I'd like to. I'd like to see the other guy very much. I'd like to see his *mother*.
+
+She holds onto your wrist a second longer. Then she lets go, and turns back to the stove, and stirs the gravy.
+
+rosa: Long sleeves. Set the table.`,
+      next: 'a2_table'
+    }
+  }
+});
+
+/* s01e05b.js */
+/* S1 · E5 · SUNDAY GRAVY, part 2 of 3: Act Two ("The Table"), Act Three ("The Alley"). */
+EH.scenes('s01e05', {
+
+  /* ================= ACT TWO: THE TABLE ================= */
+  a2_table: {
+    card: { kind: 'act', label: 'Act Two', title: 'The Table' },
+    loc: 'THE KEARNEY HOUSE · DINING ROOM',
+    clock: { time: '1:00 PM' },
+    text: g => `Dinner is at one. Dinner has been at one since 1962.
+
+The dining room table has both leaves in it and still isn't big enough, so the end of it runs into the front room, and Gigi sits on the piano bench. There's the good tablecloth, the lace one from Nonna's wedding, with the plastic over it, and the good dishes with the gold edges that only come out on Christmas and Easter and, apparently, for Jules Pemberton.
+
+${g.f('did_sun_grace') ? 'Your sleeves are buttoned at the wrist. Grace\'s gauze is a soft lump under the left one.' : 'Your sleeves are buttoned at the wrist. Under the left one, nine stitches pull every time you reach for something.'}
+
+Jules sits at the corner, at Nonna's right hand, with you beside her. Nobody told her where to sit. Nonna pointed.
+
+Before anybody eats, Nonna holds out her hands, one to Pop on her left and one across the corner of the table to Jules on her right, and the whole table joins hands, and Jules, after a half second, takes Nonna's hand and yours.
+
+Her hand is cold. It always is.
+
+Nonna says grace in Italian, fast and low, the way she's said it every Sunday of your life, *Benedici, Signore, noi e questi tuoi doni*. Halfway through, she stops.
+
+She just stops, in the middle of a word, with her eyes closed. Her hand is still holding Jules's. The table waits. Pop opens one eye. Gigi opens both.
+
+Then Nonna finishes the prayer like nothing happened. *Amen.* She lets go of Jules's hand last, slowly, and looks at her.
+
+nonna: Your hands are cold.
+
+jules: They always are, Mrs. DiNardo.
+
+nonna: Mine too. Since I was a girl.
+
+She picks up the bowl of rigatoni and hands it to Jules first.
+
+nonna: Mangia. Too skinny, this one.
+
+She served her before Pop. Before *Mikey*. The table notices. Mikey looks at you with his eyebrows all the way up. Ma very carefully doesn't look at anybody.
+
+And then it's Sunday dinner, the way it always is: everything at once, the rigatoni and the meatballs and the braciole tied with string and the sausage with fennel and the bread from Sarcone's, and the Eagles on in the front room with the sound off, and everybody talking over everybody, Pop about whether the Birds can run the ball, Mikey about a guy in his district who stole a whole ATM with a forklift, Ma about the Gallos' daughter's wedding, Gigi about a TikTok, and Nonna about none of it, eating slowly, watching Jules.
+
+Jules eats everything. She eats *seconds*. When Ma offers thirds, she says *I really couldn't*, and Ma puts thirds on her plate anyway, and she eats those too, slowly, with a kind of grim, polite determination, like a soldier.
+
+You watch her laugh at something Pop says, a real laugh, surprised out of her. Pop looks so pleased he turns red.
+
+Then Mikey taps his glass with a fork.`,
+    next: 'a2_mikey'
+  },
+
+  a2_mikey: {
+    enter: g => { g.know('mikey_task', ['sam', 'jules', 'rosa', 'frank', 'gigi', 'nonna', 'mikey'], 'Mikey has been assigned full-time to the PPD task group hunting the Broad Street Blur. A Halcyon consultant named Brannigan asked for him by name.'); },
+    text: g => `mikey: So. Okay. I wasn't gonna say anything till it was official. It's official.
+
+He stands up. He's grinning, trying not to, failing.
+
+mikey: Starting tomorrow, I'm not borrowed anymore. They split the Second Hand Unit. Major Crimes takes the Grittys, and the rest of us go full-time on the Blur. Me included.
+
+The table goes up like a stadium. Ma puts both hands over her mouth. Gigi screams. Pop reaches over and grips Mikey's shoulder and doesn't say anything at all, which for Pop is a speech. Nonna says *bravo* without looking up from her plate.
+
+mikey: It's a big deal, Ma. Same two detectives, the sergeant with the bad hip, me, and now a guy from the FBI field office who mostly drinks coffee. And a private consultant.
+
+rosa: A *private* consultant?
+
+mikey: Yeah. Halcyon. The energy company from the Navy Yard. They've been doing health stuff since the blackout, outreach, a study. Their recovery guy sits in on the briefings.
+
+Under the table, your hand goes still on your knee.
+
+mikey: Brannigan. The polo guy. Turns out he's ex-Army, like me; he was at Bagram the year before I was. He's the one who asked for me, actually. Asked the captain for me *by name*. Said he heard I knew South Philly better than anybody, and the Blur's a South Philly kid.
+
+He says it to the table like it's good news. Then he looks at you, just you, one second longer than good news needs. He's the one who told you to be careful of this man.
+
+mikey: So far we've got the bus on Spring Garden, the Wawa, the truck on Girard, the rowhouse at 15th and Lehigh, and then the big one. The Friday before last, McPherson Square, up in Kensington. Witnesses say a guy *on fire*, I'm not making this up, a guy literally on fire, and a kid in a black hoodie fought under the El for like five minutes. Kid broke a bus shelter with the burning guy's face, or the other way around. And then the kid *carried* the burning guy to a car. Forty yards. And three witnesses swear he didn't move. He was there, and then he was at the car, and the burning guy was in the back seat.
+
+gigi: *That's so cool.*
+
+mikey: It's not cool, Gige. That kid's gonna get somebody killed. Probably himself.
+
+Beside you, Jules has stopped eating.
+
+You don't look at her. You can feel her not looking at you. She's very still, holding her fork, looking at Mikey, and you've seen that stillness before, at a pool table. She's counting.
+
+mikey: Brannigan says he thinks the kid's hurt. Says whoever carried a guy that hot that far, his arms are cooked.
+
+He takes a big bite of braciole.
+
+mikey: So if any of youse see a guy around the neighborhood with burns on his arms, call your brother.`,
+    choices: [
+      { text: 'Keep your face still. Chew. Swallow. Reach for the bread like a man who has never been on fire in his life.', tag: 'Poker face',
+        check: { kind: 'pool', attr: 'nerve', skill: 'lie', diff: 2, near: ['jules'], label: 'Don\'t react', on: { crit: 'a2_face_good', success: 'a2_face_good', partial: 'a2_face_crack', fail: 'a2_face_crack', botch: 'a2_face_crack' } } },
+      { text: '"Mikey. That Brannigan guy. Be careful with him."', tag: 'Warn him',
+        fx: g => { g.flag('mikey5', 'warned'); g.know('halcyon_outreach', ['mikey', 'jules', 'rosa']); g.heat('mikey', 2); g.bond('mikey', { trust: 1 }); }, go: 'a2_warn' },
+      { text: '"Excuse me. Bathroom." Get up. Go. Right now.', tag: 'Leave',
+        fx: g => { g.flag('mikey5', 'left'); g.heat('jules', 1); g.heat('rosa', 1); }, go: 'a2_bathroom' }
+    ]
+  },
+  a2_face_good: {
+    enter: g => g.flag('mikey5', 'face'),
+    text: `You chew. You swallow. You reach for the bread.
+
+sam: Five minutes? No way. Nobody fights for five minutes. Real fights take, like, nine seconds.
+
+mikey: That's what *I* said.
+
+sam: And *carrying* a guy on fire? That's a TikTok, Mike. That's a guy with an app.
+
+mikey: Witnesses—
+
+sam: Witnesses in *Kensington*. At eleven at night. On *9/11*.
+
+Pop snorts into his wine. Mikey points his fork at you.
+
+mikey: You're a cynical little punk, Sammy, you know that?
+
+sam: I'm just saying, if I could carry a guy on fire, I'd be in the NFL.
+
+The table laughs. Mikey laughs. Ma laughs. Gigi says *you can't even carry groceries*. It's perfect.
+
+Beside you, Jules picks her fork back up and eats a bite of rigatoni and doesn't laugh at all.`,
+    next: 'a2_gigi'
+  },
+  a2_face_crack: {
+    enter: g => { g.flag('mikey5', 'crack'); g.heat('jules', 1); g.heat('mikey', 1); },
+    text: `You reach for the bread, and your sleeve rides up an inch, and you pull it back down too fast.
+
+It's nothing. It's an inch. It's half a second.
+
+Mikey sees it. You watch him see it, the way you've watched him see things your whole life: a quick little flick of the eyes, cop eyes, *older brother* eyes, from your wrist up to your face and back to his plate.
+
+He doesn't say anything. He just keeps eating braciole, slowly.
+
+And on your right, you feel Jules turn her head and look, for one second, at your buttoned cuff.
+
+Then she looks down at her plate again and cuts a meatball into four exact quarters.`,
+    next: 'a2_gigi'
+  },
+  a2_warn: {
+    text: `sam: Mikey. That Brannigan guy. Be careful with him.
+
+The table goes quiet. Not all the way. Ma's still passing the sausage. But Mikey looks at you across the table, and his fork stops halfway to his mouth.
+
+mikey: Careful how?
+
+sam: I don't know. I just—there's something about those Halcyon guys. They've been asking around Temple. My RA said. They're asking about *kids*, Mike.
+
+mikey: They're running a health study. Kids got sick after the blackout.
+
+sam: Then why does their recovery guy need a *cop*?
+
+Mikey puts his fork down.
+
+mikey: You met him? Brannigan?
+
+sam: No.
+
+mikey: You *met* him, Sammy.
+
+sam: I know *of* him. From you. That's all. Just watch him. That's all I'm saying.
+
+Mikey looks at you the way he looks at guys in the back of the car. Then he picks the fork back up.
+
+mikey: Okay. I'll watch him. I'll watch everybody.
+
+He says it lightly. He's looking at your sleeve.
+
+Beside you, Jules hasn't said a word. She's cut her braciole into very small, very even pieces, and she isn't eating any of them.`,
+    next: 'a2_gigi'
+  },
+  a2_bathroom: {
+    loc: 'THE KEARNEY HOUSE · UPSTAIRS BATHROOM',
+    text: `You go upstairs to the bathroom, the one with the pink tile and the little crocheted poodle over the spare toilet paper, and you lock the door, and you sit on the edge of the tub, and you put your face in your hands.
+
+*Asked for me by name.*
+
+Brannigan saw you at McPherson Square. He saw you carry Heck. He looked at you the way a man looks at a thing he's going to buy. And sometime since, he walked into a police captain's office and asked for *your brother*.
+
+He knows. Or he's close enough to knowing that it doesn't matter. He's not hunting you. He's sitting at your family's dinner table, through Mikey, eating Ma's braciole.
+
+You run the cold water and hold your wrists under it until your heartbeat slows down.
+
+When you come back down, everyone has moved on to the Gallos' wedding. Jules looks up at you as you sit. She doesn't say anything. She just moves her water glass an inch, so it's closer to your plate than hers.`,
+    next: 'a2_gigi'
+  },
+
+  a2_gigi: {
+    text: g => `Salad comes after. It always does. Jules doesn't understand why the salad comes *after*, and is too polite to ask, and you watch her not ask it for a full minute, which almost makes up for the morning.
+
+And then Gigi, who has been staring at Jules for an hour with the uncomplicated adoration she used to save for Jalen Hurts, puts her fork down, and says, very loud, in the voice she uses for maximum devastation:
+
+gigi: Are you Sam's girlfriend?
+
+The table stops.
+
+Pop stops chewing. Mikey stops with the bread halfway to his mouth, delighted. Ma says *Gianna*. Nonna doesn't say anything. Nonna leans forward an inch.
+
+Jules looks at Gigi. Her face doesn't move. You've seen this face in recitation, right before she corrects the TA. It's the face she makes before she does something perfect.`,
+    choices: [
+      { text: 'Save her. "Gige. Eat your salad. She\'s my calculus partner, and I\'m bad at calculus, and that\'s the whole story."', tag: 'Rescue',
+        fx: g => { g.flag('gigi_q', 'rescue'); g.bond('jules', { trust: 1 }); }, go: 'a2_gigi_rescue' },
+      { text: 'Don\'t say anything. Let her answer. You want to hear it too.', tag: 'Let her answer',
+        fx: g => { g.flag('gigi_q', 'her'); g.bond('jules', { respect: 1 }); }, go: 'a2_gigi_her' }
+    ]
+  },
+  a2_gigi_rescue: {
+    text: `sam: Gige. Eat your salad. She's my calculus partner, and I'm bad at calculus, and that's the whole story.
+
+gigi: You're bad at *everything* except fighting and pizza.
+
+sam: Thank you, Gianna.
+
+gigi: Only *she* can call me Gianna.
+
+The table laughs, and the moment passes, and you breathe.
+
+Then Jules leans over to Gigi, just a little, and says in a low, conspiratorial voice that's somehow still perfectly audible to the whole table:
+
+jules: He's not *that* bad at calculus.
+
+gigi: Really?
+
+jules: No. He's very bad at calculus.
+
+Gigi shrieks with joy. Pop laughs so hard he has to put his napkin over his face. Nonna, at the head of the table, makes a small sound that you realize, with something like terror, is a *laugh*.
+
+Under the table, Jules's foot touches yours. Once. Then it's gone.`,
+    next: 'a2_pop'
+  },
+  a2_gigi_her: {
+    text: g => `You don't say anything. You look at your salad. You can feel your ears going red, which is a thing they do, which Gigi knows, which is why she's grinning.
+
+Jules puts down her fork. She folds her hands on the lace tablecloth.
+
+jules: No, Gianna. I'm not.
+
+A little pause.
+
+jules: I have a boyfriend. His name is Callum. He rows.
+
+gigi: Oh.
+
+Gigi is so visibly crushed that Ma reaches over and pats her hand.
+
+jules: But your brother carried my refrigerator up nine flights of stairs on move-in day without asking, and I was very rude to him about it, and he has only brought it up since to call me *Your Highness*.
+
+She says it to Gigi. She doesn't look at you.
+
+jules: So I don't know what that makes him. But it's not *nothing*.
+
+The table is silent.
+
+Nonna, at the head of the table, picks up her wine glass, and drinks, and puts it down.
+
+nonna: Hm.
+
+${g.f('roof_end') === 'lean' ? 'You think about a roof at 4:12 in the morning and a forehead against yours. *Not like this.* Not *no*.' : ''}
+
+She picks her fork back up. She doesn't look at you for the rest of the salad.`,
+    next: 'a2_pop'
+  },
+
+  a2_pop: {
+    clock: { time: '2:40 PM' },
+    text: g => `During the salad, Pop's phone buzzes on the table next to his plate.
+
+He looks at it. You look at it. You can read it upside down from where you're sitting, because you've been reading things upside down on the table since you were four: **(215) 555-4471**.
+
+${g.knows('pop_unknown_calls') ? 'The same number. The one he kept declining on move-in day.' : ''}
+
+Pop doesn't decline it this time. He looks at it for a second, and something goes out of his face, and he picks up the phone and stands up.
+
+frank: Sorry. Work. One minute.
+
+He goes out through the front room to the vestibule and closes the inner door behind him. Ma watches him go. She doesn't say anything. She picks up the salad tongs and serves Mikey more salad that he didn't ask for.
+
+Through the frosted glass of the vestibule door, you can see Pop's shape, his back to the house, his head down.`,
+    choices: [
+      { text: 'Get up. "Gonna get more bread." Go stand in the front room, where you can hear.', tag: 'Listen',
+        check: { kind: 'pool', attr: 'reflex', skill: 'stealth', diff: 2, label: 'Hear without being seen', on: { crit: 'a2_pop_hear', success: 'a2_pop_hear', partial: 'a2_pop_seen', fail: 'a2_pop_seen', botch: 'a2_pop_seen' } } },
+      { text: 'Stay. It\'s his business. It\'s Sunday. Let him have it.', tag: 'Stay',
+        fx: g => { g.flag('pop5', 'stayed'); g.hidden('revenant_drift', -0.3); }, go: 'a2_pop_stay' }
+    ]
+  },
+  a2_pop_hear: {
+    enter: g => { g.flag('pop5', 'heard'); g.know('pop_owes', ['sam'], 'You heard Pop on the phone in the vestibule: "I said Friday. I\'ll have it Friday. Don\'t come to the house. My kid\'s got nothing to do with this." Pop owes somebody money.'); },
+    text: `You get up and go to the bread basket on the sideboard in the front room, which is the right distance from the vestibule door, which you've known since you were eight and eavesdropping on Christmas presents.
+
+Pop's voice through the glass is low. You've never heard it like this.
+
+frank: I said Friday. I'll have it Friday.
+
+A pause.
+
+frank: No. No. Don't come to the house. You don't come to my *house*.
+
+A longer pause.
+
+frank: My kid's got nothing to do with this. You leave my kids out of it. You hear me? You leave my—
+
+He stops. A long time. Then, very quietly, a voice you don't recognize, a voice you've never heard come out of your father:
+
+frank: Yeah. Okay. Okay. Friday. Thank you.
+
+*Thank you.*
+
+You get the bread and go back to the table before the vestibule door opens. When Pop sits down, he smiles at Jules and asks her if she follows the Eagles, and she says *I'm learning*, and he laughs, and he cuts the same piece of braciole smaller and smaller and never eats any of it.`,
+    next: 'a2_dessert'
+  },
+  a2_pop_seen: {
+    enter: g => { g.flag('pop5', 'seen'); g.bond('frank', { tension: 1 }); },
+    text: `You get up and go to the sideboard in the front room, near the vestibule.
+
+You hear one word, *Friday*, low and flat, before the floorboard by the radiator does what it's done since 1962 and *groans*.
+
+The voice behind the glass stops.
+
+The inner door opens. Pop looks at you, standing at the sideboard with a bread basket you don't need. He's still holding the phone against his chest.
+
+frank: You need something, kid?
+
+sam: Bread.
+
+frank: The bread's on the table.
+
+You both look at the bread basket in your hands.
+
+frank: Go sit down, Sam.
+
+He doesn't say it angry. He says it tired. He goes back into the vestibule and closes the door, and you go sit down, and you don't hear anything else.`,
+    next: 'a2_dessert'
+  },
+  a2_pop_stay: {
+    text: `You stay. You eat your salad. It's his business, and it's Sunday.
+
+He comes back in four minutes. He sits down and puts the phone face down next to his plate and smiles at Jules and asks her if she follows the Eagles. She says *I'm learning*. He laughs.
+
+His food sits there. He doesn't touch it again. You've never once seen your father leave food on a plate.`,
+    next: 'a2_dessert'
+  },
+
+  a2_dessert: {
+    clock: { time: '3:30 PM' },
+    text: g => `Dessert is coffee and anisette and Nonna's cannoli and ${g.f('cannoli') === 'lie' ? 'Termini\'s cannoli on a separate plate, at the far end of the table, like a guest who isn\'t sure they were invited' : 'Termini\'s cannoli on the good plate, side by side with Nonna\'s, which is a historic event'}.
+
+And Vinnie.
+
+He comes in the front door without knocking, the way he's come into this house since kindergarten, yelling *Yo, Mrs. K!* and carrying a tray of his mother's pizzelles. But he looks different. You see it from across the room. New Jordans, the gray ones that cost two hundred dollars. A leather jacket, black, soft, *real*, the kind of jacket nobody from Local 57 can afford. A gold chain you've never seen.
+
+He kisses Ma. He kisses Nonna on both cheeks and calls her *Nonna* like she's his. He shakes Pop's hand, and Pop looks at the jacket for one second too long.
+
+Then he sees Jules.
+
+vinnie: Whoa. *Whoa.* College. Look at you. You holding out on me?
+
+jules: Hello. I'm Jules.
+
+vinnie: Vincenzo. Vinnie. *Enchanted.*
+
+He bows, from the waist, like a jackass, and Gigi laughs, and Jules smiles the smile she uses on doormen. Then Vinnie turns to you, and the grin stays on his face, and it doesn't reach his eyes at all.
+
+vinnie: Sally. Long time.
+
+sam: Vin.
+
+vinnie: Three weeks. Four calls. You see 'em?
+
+You did see them. You let all four go to voicemail. One of them was the night of the blackout. One was the night of Kensington. You didn't listen to any of them.
+
+vinnie: Come outside. I gotta show you something on my phone.
+
+Nobody has ever said *I gotta show you something on my phone* and meant it.`,
+    next: 'a3_alley'
+  },
+
+  /* ================= ACT THREE: THE ALLEY ================= */
+  a3_alley: {
+    card: { kind: 'act', label: 'Act Three', title: 'The Alley' },
+    loc: 'THE ALLEY BEHIND MIFFLIN STREET',
+    clock: { time: '3:41 PM' },
+    enter: g => { g.know('vinnie_dante', ['sam', 'vinnie'], 'Vinnie drives nights for "Dante from Passyunk." Twelve hundred a week, cash.'); },
+    text: g => `The alley behind Mifflin Street is four feet wide and two hundred feet long and has been the center of the universe since you were six. Trash cans. Back gates. Clotheslines. A basketball hoop with no net bolted to the Gallos' back wall in 1994. You learned to ride a bike back here. You had your first fight back here. With Vinnie.
+
+He lights a cigarette. He never used to smoke.
+
+vinnie: So.
+
+sam: So.
+
+vinnie: Yo. So I got a new job.
+
+He holds out his arms, presenting the jacket, the chain, the Jordans.
+
+vinnie: Still at the Local, days. Nights, I drive for a guy. Pick up, drop off, wait in the car. Twelve hundred a week, Sally. *Cash*. My mom paid the PGW bill for the first time since my pop went inside. We got heat this winter. You know what that is?
+
+sam: What guy?
+
+vinnie: Just a guy. From the neighborhood.
+
+sam: What guy, Vin.
+
+He takes a drag. Blows it out the side of his mouth, away from you, a courtesy from childhood.
+
+vinnie: Dante. From Passyunk. You don't need his last name.
+
+${g.knows('pop_jacket') ? `Dante. You think about the Melrose Diner. The back booth. A young guy in a real nice jacket. *Not a cab guy.*\n\nsam: The guy from the Melrose. With my pop. The jacket.\n\nVinnie doesn't say yes. He doesn't say no. He looks at the end of his cigarette.\n\nvinnie: I asked around, like you didn't ask me to. Then somebody asked around about *me*. Then I got a job.` : 'You don\'t know any Dante from Passyunk. You know the type.'}
+
+${g.f('pop5') === 'heard' ? 'You think about Pop in the vestibule. *Don\'t come to my house. Thank you.*' : ''}
+
+vinnie: Don't look at me like that. Don't you *dare* look at me like that, college. You don't live here anymore.
+
+Then he looks at your wrists.
+
+You've rolled your sleeves up in the alley, because it's warm, because you forgot, because it's *Vinnie*. The burns are right there. ${g.f('did_sun_grace') ? 'Grace\'s gauze on one arm, the shiny new pink skin above and below it.' : 'The stitches. The pink and white and angry skin.'}
+
+vinnie: What the hell is that?`,
+    choices: [
+      { text: g => '"Ciro\'s oven."' + (['lied', 'caught'].includes(g.f('ma5')) ? ' You\'ve told it once today already.' : ''), tag: 'Lie',
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['vinnie'], label: 'Lie to Vinnie', on: { strong: 'a3_v_lie_ok', weak: 'a3_v_lie_ok', miss: 'a3_v_called' } } },
+      { text: '"You first. Who is Dante, Vin? And what does he want with my father?"', tag: 'Turn it around',
+        fx: g => { g.flag('vinnie5', 'pushed'); g.bond('vinnie', { tension: 2 }); }, go: 'a3_v_push' },
+      { text: 'Tell him. All of it. He\'s Vinnie. He\'s been Vinnie since you were five.', tag: 'Tell him', slip: true,
+        fx: g => { g.flag('vinnie5', 'told'); if (g.S.drift >= 10) g.flag('unstick_risk'); g.know('sam_slip', ['vinnie']); g.know('sam_at_girard', ['vinnie']); g.bond('vinnie', { trust: 3 }); g.hidden('revenant_drift', -0.3); }, go: 'a3_v_told' }
+    ]
+  },
+
+  a3_v_lie_ok: {
+    enter: g => { g.flag('vinnie5', 'lied'); g.bond('vinnie', { tension: 1 }); },
+    text: `sam: Ciro's oven. I grabbed a pan without the towel.
+
+Vinnie takes a drag. He looks at the burns, not at you.
+
+vinnie: Okay.
+
+That's all he says. *Okay.* The way Grace says it. The way everybody's started saying it to you.
+
+vinnie: Okay, Sally. You got your stuff. I got my stuff. That's how it is now, I guess.
+
+He drops the cigarette and steps on it.
+
+vinnie: Just so you know. When you need me. And you're gonna need me. I'm gonna say *okay* too.
+
+He goes back inside. You hear him in the kitchen, loud, making Ma laugh, kissing Nonna goodbye. You stay in the alley with your sleeves rolled up and the burns in the sun.`,
+    next: 'a4_stoop'
+  },
+  a3_v_called: {
+    enter: g => { g.flag('vinnie5', 'called'); g.bond('vinnie', { tension: 2, trust: -1 }); },
+    text: `sam: Ciro's oven. I grabbed a pan—
+
+vinnie: Don't.
+
+He flicks the cigarette into the gutter.
+
+vinnie: Don't *do* that. Don't do the ear. I've known you since you were five years old, Sally. I know every lie you got. That's the Ciro's one. That's the one you use on your *mother*.
+
+He steps closer. You're the same height. You have been since seventh grade.
+
+vinnie: I saw the lady from the fire on Lehigh on 6abc. *He called the baby the little guy.* You call every baby the little guy! You called *my brother* the little guy till he was nine!
+
+He's not loud. He's worse than loud. He's hurt.
+
+vinnie: I'm not stupid. I was never the stupid one. You were just the one who *left*.`,
+    next: 'a3_fight'
+  },
+  a3_v_push: {
+    text: `sam: You first. Who is Dante, Vin? And what does he want with my father?
+
+Vinnie's face goes very still.
+
+vinnie: Oh. Oh, *okay*. So I tell you my stuff, and you get to keep yours. That's how it works now? You go up Broad Street to your little castle with your little rich girlfriend, and you come back once a month to ask *me* questions?
+
+sam: She's not my—
+
+vinnie: I don't *care*, Sally!
+
+That one's loud. Somewhere up the alley, a back window goes up and Mrs. Gallo looks out, and then goes back in, because this is Mifflin Street, and this is Vinnie and Sam, and Mrs. Gallo has been watching you two yell at each other in this alley since before either of you could spell *alley*.
+
+vinnie: You left. You went up Broad Street, and you *left* me here with all of it. And I didn't say nothing. I didn't say *nothing*, I said congratulations, I came to your *party*.
+
+He shoves you. Two hands, flat on your chest, right on the handprint.`,
+    next: 'a3_fight'
+  },
+  a3_v_told: {
+    enter: g => { if (g.f('nik_rule')) g.flag('broke_nik_rule'); g.know('vinnie_dante', ['sam', 'vinnie'], 'Vinnie drives for "Dante from Passyunk." Twelve hundred a week, cash. Dante is the jacket from the Melrose.'); },
+    text: `You tell him.
+
+Not all of it. Some of it you don't have words for yet. But you tell him about the cold at 11:51, and the bus, and the world stopping, and you not stopping with it. You tell him about the Wawa. The truck on Girard. The fire. Kensington. You roll your sleeves all the way up and show him.
+
+Vinnie listens to the whole thing with the cigarette burning down in his fingers, forgotten, until it burns him and he swears and drops it.
+
+Then he doesn't say anything at all, which for Vinnie is a medical event.
+
+vinnie: Show me.
+
+sam: Vin—
+
+vinnie: Show me, or you're full of it, and I'm going back inside to eat a cannoli.
+
+So you step through.
+
+The alley stops. A sparrow stops on the clothesline. Vinnie stops mid-blink, one eye half closed, like a guy in a photo somebody took at a bad time. You walk around behind him. You take the Phillies cap off the nail on the Gallos' back gate, the one that's been there since 2008, and you put it on his head.
+
+You step back out.
+
+Vinnie blinks. Reaches up. Takes the cap off his head. Looks at it.
+
+vinnie: Oh, *f—*
+
+He sits down on a trash can. It's a full trash can, and it's not a good idea, and he does it anyway.
+
+vinnie: That's the Gallos' hat.
+
+sam: Yeah.
+
+vinnie: You *moved*.
+
+sam: Yeah.
+
+He looks at you, and for a second, he's six years old, sitting on this same trash can after you both got caught stealing Tastykakes from the Acme.
+
+vinnie: You stupid son of a bitch. You absolute idiot. You're gonna get yourself *killed*.
+
+He stands up and grabs you in a hug so hard it hurts your arms. He doesn't let go.
+
+vinnie: I applied too. You know that? To Temple. I never told you. Waitlisted. I never told nobody.
+
+You didn't know. Thirteen years, and you didn't know.
+
+vinnie: Dante's the jacket from the Melrose. Twelve hundred a week. I don't ask what's in the bags. I don't ask about your father. And I'm not gonna stop, Sally. I can't. My mom's got heat this winter.
+
+He lets go and puts the Gallos' cap back on the nail, carefully, exactly where it was.
+
+vinnie: But I'm gonna keep my eyes open. For you. Okay? That's what I got.`,
+    next: 'a4_stoop'
+  },
+
+  a3_fight: {
+    text: g => `He swings.
+
+It's not a real swing. It's a Vinnie swing, wide and slow and telegraphed from the shoulder, the same right hand he's been throwing at you since second grade. You've seen it a thousand times. You could block it in your sleep. You could ${g.has('rewind') ? 'take it back, if it landed. You could ' : ''}step out of the second and be on the other end of the alley before it got halfway there.${g.f('nik_rule') ? ' *Seven days,* Nik said.' : ''}
+
+Or you could let it land.`,
+    choices: [
+      { text: 'Let it land. He needs to hit somebody, and you\'re the one who owes him.', tag: 'Take it',
+        fx: g => { g.flag('vinnie5', 'took'); g.bond('vinnie', { trust: 2, affection: 2, tension: -2 }); g.injure({ id: 'black_eye5', name: 'Black eye (Vinnie)', pen: 0, heal: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_took' },
+      { text: 'Block it and put him on the ground, the way you did in sixth grade. Show him you\'re still you.', tag: 'Fight back',
+        check: { kind: 'pool', attr: 'body', skill: 'brawl', diff: 2, label: 'Put Vinnie down', physical: true, on: { crit: 'a3_fought', success: 'a3_fought', partial: 'a3_fought_ugly', fail: 'a3_fought_ugly', botch: 'a3_fought_ugly' } } },
+      { text: 'Slip. Just be somewhere else when it gets there. Let him see it.', slip: true, tag: 'Slip it',
+        fx: g => { g.flag('vinnie5', 'slipped'); if (g.S.drift >= 10) g.flag('unstick_risk'); g.know('sam_slip', ['vinnie']); g.bond('vinnie', { tension: 2 }); if (g.f('nik_rule')) g.flag('broke_nik_rule'); }, go: 'a3_slipped' }
+    ]
+  },
+  a3_took: {
+    text: `You let it land.
+
+It's a good punch, actually. Better than it used to be. He's been working. It catches you on the cheekbone and snaps your head around and you taste blood, and you stay standing, and you look back at him.
+
+Vinnie stares at you, his fist still up.
+
+vinnie: Why didn't you block it?
+
+sam: 'Cause I deserved it.
+
+vinnie: You don't get to *decide* that.
+
+sam: Yeah, I do. I didn't call you back. Four times. That's one punch.
+
+Vinnie lowers his hand. He looks at it like it's somebody else's. Then he sits down on the Gallos' trash can, hard.
+
+vinnie: I applied too. You know that? To Temple. I never told you. Waitlisted.
+
+You didn't know. Thirteen years, and you didn't know.
+
+vinnie: My mom cried for a week. Not 'cause I didn't get in. 'Cause I *applied*. She didn't know I wanted it.
+
+He wipes his nose on his jacket sleeve, the two-hundred-dollar jacket.
+
+vinnie: I'm not gonna stop driving for Dante. I'm not. My mom's got heat this winter. But I'll keep my eyes open. And you, you stupid son of a bitch, you call me back. Every time. Even if you can't tell me nothing. *Every time.*
+
+sam: Every time.
+
+He holds out his hand from the trash can. You pull him up. He doesn't let go of your hand right away.`,
+    next: 'a4_stoop'
+  },
+  a3_fought: {
+    enter: g => { g.flag('vinnie5', 'fought'); g.bond('vinnie', { respect: 2, tension: 1 }); },
+    text: `You block it with your forearm, which hurts like hell, because it's your burned forearm. You hook his ankle with yours and put a hand on his chest and push, and Vinnie goes down on his back on the alley concrete, the way he did in sixth grade outside the Acme, with all his breath going *whoof*.
+
+You stand over him. He lies there and looks up at you.
+
+vinnie: …Okay. Okay. You're still you.
+
+sam: I'm still me.
+
+vinnie: You're still a jerk.
+
+He holds his hand up. You pull him to his feet. He dusts off the leather jacket, carefully, and looks at you for a long second.
+
+vinnie: You got faster, Sally. You were never that fast.
+
+He doesn't wait for an answer. He goes back inside. You hear him in the kitchen, loud, making Ma laugh, kissing Nonna goodbye, *Ciao, Nonna, ti voglio bene*, and the front door closing behind him. He doesn't say goodbye to you.`,
+    next: 'a4_stoop'
+  },
+  a3_fought_ugly: {
+    enter: g => { g.flag('vinnie5', 'fought'); g.bond('vinnie', { tension: 2, trust: -1 }); g.injure({ id: 'black_eye5', name: 'Black eye (Vinnie)', pen: 0, heal: 2 }); },
+    text: `You block it, but your burned arm screams when it takes the hit, and you hesitate, and Vinnie doesn't. His left catches you under the eye. You catch his jacket. You both go down into the trash cans, and it's not a fight anymore, it's two eighteen-year-olds rolling in the garbage behind their mothers' houses, the way it was when you were eleven.
+
+Mrs. Gallo's window goes up.
+
+MRS. GALLO: *Vincenzo! Salvatore!* I'm calling your mothers!
+
+She is. Thirty feet away, through your kitchen screen, you hear the phone ring, and Ma pick up, and Ma say, *What alley?*
+
+You both stop. You're lying in coffee grounds. Vinnie's new jacket has a banana peel on it.
+
+You start laughing. You can't help it. After a second, so does he, lying on his back in the garbage, laughing at the sky.
+
+Then he stops laughing.
+
+vinnie: I'm not gonna stop driving for Dante.
+
+sam: I know.
+
+vinnie: You're not gonna tell me what's on your arms.
+
+sam: No.
+
+vinnie: Okay.
+
+He gets up. He doesn't help you up. He picks the banana peel off his jacket, and he goes back inside, and you lie there in the coffee grounds for a while, looking up at the clotheslines.`,
+    next: 'a4_stoop'
+  },
+  a3_slipped: {
+    text: g => `You step through.
+
+The alley stops. Vinnie's fist hangs in the air two feet from your face. A sparrow stops on the clothesline. The cigarette smoke stops in a gray ribbon from Vinnie's lips. ${g.f('nik_rule') ? 'Somewhere in the back of your head, Nik says *seven days*. You don\'t listen.' : ''}
+
+You walk around him. You stand behind him, forty feet down, by the Gallos' back gate.
+
+You step back out.
+
+His fist goes through the place you were. He stumbles. He turns around, and you're forty feet away, and you watch his face go through every single emotion a face can have, one after another, like a slot machine.
+
+vinnie: …Sally?
+
+You don't say anything.
+
+vinnie: Sally, what the *hell*—
+
+He walks toward you slowly, the way you'd walk toward a dog you don't know. He stops a foot away. He reaches out and pokes you in the chest, once, like he's checking you're real.
+
+vinnie: That's you. That's *you*. On the news.
+
+sam: Yeah.
+
+He sits down on a trash can.
+
+vinnie: You stupid son of a bitch. You're gonna get yourself *killed*.
+
+He stays there until the sparrow comes back. When he finally talks again, it's quiet.
+
+vinnie: I'm not gonna stop driving for Dante. I can't. And now I know a thing about you that Dante would *pay* for. You get that? You just made me the most dangerous friend you got.
+
+He stands up. He holds out his fist. After a second, you bump it.
+
+vinnie: I'm never gonna tell him. But you gotta stop showing people, Sally. You gotta stop *showing* people.`,
+    next: 'a4_stoop'
+  }
+});
+
+/* s01e05c.js */
+/* S1 · E5 · SUNDAY GRAVY, part 3 of 3: Act Four ("The Stoop"), tag, polls. */
+EH.scenes('s01e05', {
+
+  /* ================= ACT FOUR: THE STOOP ================= */
+  a4_stoop: {
+    card: { kind: 'act', label: 'Act Four', title: 'The Stoop' },
+    loc: 'MIFFLIN STREET',
+    clock: { time: '6:41 PM' },
+    text: g => `By a quarter to seven, the light on Mifflin Street has gone long and gold and slanting, the way it only does in September, when the sun comes in low down the row and lights up every brick on the north side of the street like the inside of an oven.
+
+Jules has been in the kitchen with Ma for an hour. You don't know what they talked about. When she comes out onto the stoop, she's holding a foil-covered paper plate of leftovers the size of a hubcap, and she has a friendship bracelet on her left wrist, pink and green, that wasn't there at lunch, and she has flour on the front of the dark green dress.
+
+jules: Your mother showed me how she ties the braciole.
+
+sam: She doesn't show anybody that. She didn't show *me* that.
+
+jules: She said you'd burn the house down.
+
+sam: That's fair.
+
+She sits down next to you on the top step. Not close. Not far. The Range Rover's due at seven. Up and down the block, people are on their stoops in lawn chairs, and every single one of them is pretending not to look at you.
+
+${g.hurt('black_eye5') ? 'She looks at your eye, which is swelling purple from Vinnie, and doesn\'t ask. She reaches into her cardigan pocket and hands you a white handkerchief, ironed, monogrammed JLP in navy thread. ' + (g.knows('jules_handkerchief') ? 'You have one of these already. You don\'t tell her that.' : '') + '\n\n' : ''}jules: Your family interrupts each other.
+
+sam: Sorry.
+
+jules: No. That's not—
+
+She stops. Starts again.
+
+jules: At my house, nobody interrupts. Ever. You wait until the other person's finished, and then you say the thing you were going to say anyway. Your family interrupts because they want to hear what the other person says *next*. Your father asked me four questions about the Eagles and listened to every answer. Your grandmother handed me the macaroni first. Your sister made me a *bracelet*.
+
+She turns her wrist in the gold light. The bracelet's very badly made. She's looking at it like it's from Tiffany's.
+
+jules: I've never been anywhere like this.
+
+sam: It's just Mifflin Street.
+
+jules: I know. That's what I mean.
+
+The light moves a little further up the bricks. Down the block, a little kid is riding a Big Wheel in circles, very slowly, watching you.
+
+jules: Your brother is looking for the Blur.
+
+She says it to the street, not to you.`,
+    next: 'a4_jules'
+  },
+
+  a4_jules: {
+    text: g => `jules: A boy in a black hoodie. Who was at the fire on 15th Street the night you left the roof. Who was in Kensington the night you left the movie. Who carried a man who was on fire. Whose arms, your brother says, are *cooked*.
+
+She looks down at your arms. Your sleeves are buttoned.
+
+jules: Your mother made me promise not to let you lift anything heavy for a week. She didn't say why. She just said it, like she'd already decided I was somebody who'd be around to stop you.
+
+The Big Wheel goes around. Somewhere a radio is playing the Phillies.
+
+jules: I'm not asking.
+
+sam: You're not?
+
+jules: No. I'm telling you what I see. You can do what you want with it. I've noticed you always do.
+
+${g.h('jules') >= 9 ? 'She\'s not guessing. You can hear it. She *knows*. She\'s just waiting to see what you do with her knowing.' : 'She\'s close. You can see her standing at the edge of it, deciding whether to step off.'}`,
+    choices: [
+      { text: '"It\'s not me, Pemberton." Look her in the eye when you say it.', tag: 'Deny',
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['jules'], near: ['jules'], label: 'Lie to Jules', on: { strong: 'a4_deny_ok', weak: 'a4_deny_seen', miss: 'a4_deny_seen' } } },
+      { text: '"What if it was?" Say it. Just that much.', tag: 'What if',
+        fx: g => { g.flag('stoop', 'whatif'); g.heat('jules', 1); g.bond('jules', { trust: 2, affection: 1 }); g.know('whatif', ['sam', 'jules'], 'On the stoop on Mifflin Street, Jules said your brother was looking for the Blur. You said, "What if it was?"'); }, go: 'a4_whatif' },
+      { text: 'Don\'t say anything. Reach over and take her hand. The one with the bracelet.', tag: 'Her hand',
+        fx: g => { g.flag('stoop', 'hand'); g.bond('jules', { affection: 2 }); }, go: 'a4_hand' }
+    ]
+  },
+  a4_deny_ok: {
+    enter: g => { g.flag('stoop', 'deny'); },
+    text: `sam: It's not me, Pemberton.
+
+You look her right in the eye when you say it. Your hand stays on your knee. It's a good lie.
+
+She studies you in the gold light, the way she studies a table before the break.
+
+jules: Okay.
+
+There it is again. *Okay.*
+
+She looks back at the street.
+
+jules: That's good. That's good, Kearney. Because whoever he is, he's going to get himself killed, and your mother would never survive it.
+
+She smooths the flour on her dress.
+
+jules: And neither, I think, would I.
+
+She says it so quietly, and so fast, that by the time you understand what she said, the Range Rover is turning onto Mifflin Street.`,
+    next: 'a4_goodbye'
+  },
+  a4_deny_seen: {
+    enter: g => { g.flag('stoop', 'deny'); g.bond('jules', { trust: -1 }); },
+    text: `sam: It's not me, Pemberton.
+
+She looks at you. She looks at your left hand, resting on your knee, nowhere near your ear. You did everything right. You kept your voice flat. You didn't blink.
+
+jules: You know what's funny? You didn't touch your ear.
+
+sam: Because it's not a lie.
+
+jules: Because you've gotten *better*.
+
+She looks back at the street.
+
+jules: You're going to get yourself killed. And you're going to do it lying to everyone who'd have helped.
+
+She stands up and brushes off the back of her dress.
+
+jules: Your mother would never survive it.
+
+She doesn't say who else wouldn't. The Range Rover turns onto Mifflin Street.`,
+    next: 'a4_goodbye'
+  },
+  a4_whatif: {
+    text: `sam: What if it was?
+
+It's very quiet on the stoop. Even the Big Wheel stops.
+
+Jules doesn't look at you. She looks at the bracelet on her wrist. She turns it once, slowly, all the way around.
+
+jules: Then I'd want to know why he keeps coming back to the ninth floor at all. Why he does calc problems with somebody who's mean to him. Why he goes to the movies. Why he came back up to that roof at four in the morning when there's a whole city that needs him.
+
+She looks up at you.
+
+jules: Hypothetically.
+
+sam: Hypothetically.
+
+jules: I'd want to know if he comes back because he wants to be here. Or because he doesn't trust anyone to miss him.
+
+You don't have an answer. You open your mouth anyway, and she puts two fingers on your wrist, on your buttoned cuff, on top of the burns, very lightly.
+
+jules: Not tonight. You said it. *Not tonight.*
+
+She takes her fingers away.
+
+jules: But I can count, Sam. And I'm not going anywhere.
+
+*I'm not going anywhere.* You hear it all the way down.
+
+At the end of the block, the Range Rover turns onto Mifflin Street.`,
+    next: 'a4_goodbye'
+  },
+  a4_hand: {
+    text: `You don't say anything. You reach over and take her left hand, the one with the bracelet, on the step between you.
+
+She goes completely still. Up and down Mifflin Street, every lawn chair stops creaking. Mrs. Gallo, on the next stoop, puts her hand over her heart. The Big Wheel kid stops pedaling.
+
+Jules looks down at your hand on hers. Her hand is cold. Yours isn't.
+
+She doesn't pull it away.
+
+jules: That's not an answer.
+
+sam: I know.
+
+jules: It's a very *South Philadelphia* non-answer.
+
+sam: I know.
+
+She turns her hand over under yours, so it's palm to palm. She doesn't lace her fingers. She just lets it lie there, palm to palm, on the warm stone step, in the last of the gold light, for thirty seconds. You count.
+
+At thirty-one, the Range Rover turns onto Mifflin Street, and she takes her hand back, and puts it in her lap, and holds it with the other one, like it's something she doesn't want to drop.`,
+    next: 'a4_goodbye'
+  },
+
+  a4_goodbye: {
+    clock: { time: '7:00 PM' },
+    enter: g => { if (g.h('jules') >= 10) g.flag('jules_suspects'); },
+    text: g => `Mr. Abernathy gets out and opens the back door at seven exactly.
+
+The whole family comes out to say goodbye. That's the only way it happens on Mifflin Street. Ma hugs Jules and tells her to come back, and means it, and Jules says *I will*, and you can see she means it too, and it scares you how much. Pop shakes her hand. Mikey says *nice to meet you, Jules* and looks at you with an expression that says *we will be discussing this* for the rest of your natural life. Gigi hugs her around the middle and won't let go until Ma peels her off.
+
+Nonna stays on her own top step, three doors down. Jules goes to her. She goes up the steps without being asked, and takes both of Nonna's hands in hers, and says something you can't hear.
+
+Nonna says something back. In Italian. You can't hear that either.
+
+Then Jules gets in the Range Rover, with the hubcap of leftovers on her lap, and the window comes down.
+
+jules: Tell your mother the note will arrive on Tuesday. It'll be on Crane's paper. My mother will have written it. Please don't let her read it as an insult.
+
+sam: Everything's an insult to my mother. It's how she knows she's alive.
+
+jules: Then she'll love it.
+
+The window starts to go up. It stops halfway.
+
+jules: Kearney.
+
+sam: Yeah.
+
+jules: Thank you for the Kearneys.
+
+The window goes up. The Range Rover pulls away down Mifflin Street, slow and smooth as a hearse, and every head on every stoop turns to follow it to the corner, and then every head turns back to look at you.
+
+MRS. GALLO: *Salvatore. Who is* she?
+
+Your phone buzzes.
+
+TXT gigi: SAMMMMM
+TXT gigi: is she coming back
+TXT gigi: say yes
+
+Gigi is twelve feet away, inside, watching you through the front window.
+
+You go sit on Nonna's step, because it's the only place on the block nobody will follow you.`,
+    next: 'tag_revenant'
+  },
+
+  /* ================= TAG ================= */
+  tag_revenant: {
+    card: { kind: 'tag' },
+    night: true,
+    loc: 'MIFFLIN STREET',
+    clock: { time: '7:24 PM' },
+    enter: g => { if (!g.knows('assunta')) { g.flag('assunta5'); g.know('assunta', ['sam', 'nonna'], 'Nonna\'s mother, Assunta DiNardo, "moved" once, in 1918, during the Liberty Loan parade. She pulled a child out from under a trolley. Nonna says it runs in the women of the family. Until you.'); } g.know('revenant2', ['sam', 'nonna'], 'At dusk on Mifflin Street, the man who stands the way you stand waited under the streetlight at the end of the block. Nonna saw him too. She crossed herself.'); },
+    text: g => `Nonna comes out with her rosary and sits down next to you on her top step, slowly, one hand on the rail and one on your shoulder, the way she's sat down next to you on this step ten thousand times.
+
+She doesn't say anything for a while. She just runs the beads through her fingers. The streetlights come on one by one down Mifflin Street, *tink, tink, tink*, orange.
+
+nonna: The tall one.
+
+sam: Jules.
+
+nonna: *Giulia.* Bella. Good manners. Eats like a person. Her hands are cold.
+
+sam: You said yours are too.
+
+nonna: Mine are cold because I'm old. Hers are cold because—
+
+She stops. The beads stop.
+
+nonna: Bring her back. She needs feeding.
+
+That's not the end of the sentence she started. You turn to ask her.
+
+And Nonna's not looking at you. She's looking down the block, toward the corner at the end of the row, where the last streetlight on the block has just come on.
+
+There's a man standing under it.
+
+He's tall. He's wearing a dark coat, too heavy for September. His hair is gray at the temples. From almost a block away, in the orange light, you can't make out his face. You don't need to. The way he's standing, the way he holds his weight on his left foot with his right shoulder dropped, is the way you stand. It's the way you've stood your whole life. Ma's always telling you to stand up straight.
+
+He's looking at you. Not at the street. At *you*, on Nonna's step.
+
+${g.S.drift >= 7 ? 'The air goes cold. Not September cold. *Slip* cold, January cold, and you\'re not in the Slip. Your breath smokes in front of your face. Nonna\'s breath smokes too.' : 'The air goes cold for a second, like a door opened somewhere.'}
+
+Nonna's hand closes on your wrist. Her grip is iron. You didn't know she still had a grip like that.
+
+nonna: *Gesù, Giuseppe e Maria.*
+
+She crosses herself. Forehead, heart, left shoulder, right. Slowly. Her eyes never leave him.
+
+nonna: Don't look at him, Salvatò. *Non guardarlo.* Don't look.
+
+You look.
+
+The man under the streetlight looks past you, at Nonna. He nods to her once, small and polite, the way men on this block have nodded to old women on their steps for a hundred years.
+
+Nonna's grip tightens. You look down at it. You look back.
+
+He's gone.
+
+The streetlight is still on. There's nobody under it. On the sidewalk where he was standing, there's something white, catching the orange light, and you know without walking down there that it's frost.
+
+Nonna lets go of your wrist. Her hand is shaking.${g.f('assunta5') ? '\n\nnonna: My mother, Assunta. 1918, the parade on Broad Street. The bells stopped, and it got cold like January, and everything stopped, and she *moved*. She pulled a little boy out from under a trolley. Once. Never again. It\'s in the women, Salvatò. Always the women. Never a boy. Until you.' : ''}
+
+${g.knows('nonna_key') ? 'nonna: The key I gave you. You have it?\n\nYou touch your chest. It\'s on the ribbon, under your shirt. You haven\'t taken it off since she gave it to you.\n\nnonna: Good. Keep it on you.\n\nShe looks back at the empty corner.\n\nnonna: It\'s almost time, Salvatò. I didn\'t think it would be so soon.' : 'nonna: My mother told me, from 1918, from the night the bells stopped. *When the cold comes and nobody moves, you don\'t look.*\n\nnonna: Come inside. Come inside now.'}
+
+She stands up, with your arm, and you help her through her front door, and before she closes it she turns on every light in the front room, and then she lights a candle on the windowsill, a tall glass one with the Sacred Heart on it.
+
+You stay on the step outside. You look at the corner until the frost melts.
+
+In September, frost should be gone in a minute. You watch it for twenty.`,
+    end: true
+  }
+});
+
+Object.assign(EH.episodes.s01e05, {
+  polls: [
+    { q: 'Jules\'s cannoli', opts: [
+      { label: 'Handed to Ma', pct: 44, if: g => g.f('cannoli') === 'ma' },
+      { label: 'Told her Nonna would love them', pct: 21, if: g => g.f('cannoli') === 'lie' },
+      { label: '"Good, not mine"', pct: 35, if: g => g.f('cannoli') === 'truth' }
+    ] },
+    { q: 'Vinnie, in the alley', opts: [
+      { label: 'Told him everything', pct: 22, if: g => g.f('vinnie5') === 'told' },
+      { label: 'Let him land one', pct: 31, if: g => g.f('vinnie5') === 'took' },
+      { label: 'Fought him', pct: 19, if: g => g.f('vinnie5') === 'fought' },
+      { label: 'Slipped it', pct: 11, if: g => g.f('vinnie5') === 'slipped' },
+      { label: 'Lied about the burns', pct: 17, if: g => g.f('vinnie5') === 'lied' || g.f('vinnie5') === 'called' }
+    ] },
+    { q: 'On the stoop', opts: [
+      { label: '"It\'s not me"', pct: 27, if: g => g.f('stoop') === 'deny' },
+      { label: '"What if it was?"', pct: 45, if: g => g.f('stoop') === 'whatif' },
+      { label: 'Took her hand', pct: 28, if: g => g.f('stoop') === 'hand' }
+    ] }
+  ],
+  onEnd: g => {
+    g.recap('Jules came to Sunday dinner on Mifflin Street. Nonna handed her the macaroni first.');
+    g.recap('Mikey is on the Blur task group now. Brannigan asked for him by name.');
+    g.recap(g.f('vinnie5') === 'told' ? 'Vinnie drives for a man named Dante, the jacket from the Melrose.' : 'Vinnie drives nights for a man named Dante, from Passyunk.');
+    g.recap('A man who stands the way you do stood at the end of Mifflin Street. Nonna saw him too.');
+  }
+});
+
 </script>
 <script>
 /* THE EVENT HORIZON: browser engine (UI, sound, saves). Depends on core.js and the episode files. */

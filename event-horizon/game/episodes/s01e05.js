@@ -100,7 +100,7 @@ jules: I've been practicing on you for a month.`,
     },
     cold_price: {
       night: true,
-      enter: g => { g.flag('ask', 'price'); g.bond('jules', { affection: 1, respect: 1 }); },
+      enter: g => { g.flag('ask', 'price'); g.flag('pset_deal'); g.bond('jules', { affection: 1, respect: 1 }); },
       text: `sam: What do I get?
 
 jules: You get to be *useful*. I thought you liked that.
@@ -173,14 +173,14 @@ You don't remember falling asleep.`,
       card: { kind: 'act', label: 'Act One', title: 'Mifflin Street' },
       loc: 'CARDONE HALL · ROOF',
       clock: { day: 'Sun', date: 'Sep 20', time: '6:14 AM' },
-      enter: g => { g.know('lost_minutes2', ['sam'], 'You woke up on the Cardone roof at dawn with frost on your sneakers and no memory of going up there. Twenty-six minutes, gone.'); g.sleep(6); g.pool('focus', -1); },
+      enter: g => { g.know('lost_minutes2', ['sam'], 'You woke up on the Cardone roof at dawn with frost on your bare feet and no memory of going up there. Twenty-six minutes, gone.'); g.sleep(6); g.pool('focus', -1); },
       text: g => `You wake up cold.
 
 Not dorm cold. *Slip* cold. January cold, the bottom-of-the-pool cold, and your cheek is pressed against something rough and gritty, and the sky is the color of dishwater, and there's a seagull standing about four feet from your face, looking at you with professional interest.
 
 You're on the roof.
 
-You're on the roof of Cardone Hall, lying on the tar paper next to the HVAC unit where you sat with Jules two weeks ago, in your Phanatic pants and bare feet, and there's frost on your feet. Actual frost. White, feathery, on the tops of your toes, melting as you watch.
+You're on the roof of Cardone Hall, lying on the gravel next to the HVAC unit where you sat with Jules two weeks ago, in your Phanatic pants and bare feet, and there's frost on your feet. Actual frost. White, feathery, on the tops of your toes, melting as you watch.
 
 It's sixty-one degrees out.
 
@@ -220,7 +220,7 @@ You have time for two things. Maybe.`,
     },
 
     a1_nik: {
-      enter: g => { g.bond('nik', { trust: 1 }); g.know('lost_minutes2', ['nik']); g.flag('nik_rule'); },
+      enter: g => { g.bond('nik', { trust: 1 }); g.know('lost_minutes2', ['nik']); if (g.knows('lost_minutes')) g.know('lost_minutes', ['nik']); g.flag('nik_rule'); },
       text: g => `Nik takes it worse than you do. That's sort of his job.
 
 He sits up in bed with his headphones around his neck and his hair in a shape that defies physics and holds your phone in both hands and stares at **26:03.41** like it's an x-ray.
@@ -233,7 +233,7 @@ nik: Your phone opened my stopwatch at 5:48 a.m. and stopped it at 6:14. With *y
 
 He goes very quiet. For Nik, that's an alarm going off.
 
-nik: ${g.knows('lost_minutes') ? 'Ridge Avenue was twenty-one. This is twenty-six. And Ridge Avenue, you\'d been Slipping all night. Last night you didn\'t Slip once. You were *asleep*.' : 'Okay. Okay. So you didn\'t Slip. And you lost twenty-six minutes anyway.'}
+nik: ${g.knows('lost_minutes') ? 'You lost twenty-one minutes on Ridge Avenue and you\'re telling me *now*? Twenty-one there. Twenty-six here. And Ridge Avenue, you\'d been Slipping all night. Last night you didn\'t Slip once. You were *asleep*.' : 'Okay. Okay. So you didn\'t Slip. And you lost twenty-six minutes anyway.'}
 
 He opens his notebook. **THE SLIP (VOL. 3).** Vol. 2 ran out in Kensington.
 
@@ -249,9 +249,9 @@ He writes **RULE 1: SEVEN DAYS** and underlines it so hard the pen goes through 
 
     a1_grace: {
       enter: g => { g.heal('burned_arms'); g.heal('laceration'); g.bond('grace', { trust: 1, affection: 1 }); g.know('grace_stitches', ['sam', 'grace'], 'Grace took your stitches out eight days after Kensington. She said the cut had healed like it was a month old.'); },
-      text: `Grace opens her door in a Temple Med sweatshirt with an MCAT flashcard stuck to her cheek. She peels it off. It says **GLYCOLYSIS**.
+      text: g => `Grace opens her door in a Temple Med sweatshirt with an MCAT flashcard stuck to her cheek. She peels it off. It says **GLYCOLYSIS**.
 
-grace: It's seven-thirty on a Sunday.
+grace: It's ${g.f('did_sun_sleep') ? 'eleven' : 'seven-thirty'} on a Sunday.
 
 sam: My stitches itch.
 
@@ -282,6 +282,7 @@ grace: You can't hide those from your mother forever. Long sleeves. And don't le
     },
 
     a1_femi: {
+      enter: g => { if (g.f('femi_warned') && g.knows('marisol')) g.know('marisol', ['femi']); },
       text: g => `TXT sam: hey. tuesday. you going?
 
 You stare at the screen for six minutes before the dots appear.
@@ -303,14 +304,14 @@ You look at it a long time.`,
       ]
     },
     a1_femi_with: {
-      text: `TXT sam: ill come with you. ill wait outside. if youre not out in 20 im coming in
+      text: g => `TXT sam: ill come with you. ill wait outside. if youre not out in 20 im coming in
 
 The dots appear. Disappear. Appear.
 
 TXT femi: you would do that
 TXT sam: yeah
 TXT femi: you have calc at 2 on tuesday
-TXT sam: i have a calc partner who does problems one through six
+${g.f('pset_deal') ? 'TXT sam: i have a calc partner who does problems one through six' : 'TXT sam: calc can live without me for one day'}
 TXT femi: lol
 TXT femi: ok
 TXT femi: ok. tuesday. navy yard. 3:30
@@ -370,7 +371,7 @@ bree: Ninety-nine point one.
 
 sam: Is that—
 
-bree: That's *normal*, Wawa. That's normal-person temperature. He held Yesenia yesterday. For like an hour. She fell asleep on him. He cried so hard Teddy had to leave the room so *he* didn't cry.
+bree: That's *normal*, Wawa. That's normal-person temperature. He held his niece yesterday. Yesenia. For like an hour. She fell asleep on him. He cried so hard Teddy had to leave the room so *he* didn't cry.
 
 You sit down on the floor of the hallway. You didn't decide to; your legs did.
 
@@ -402,9 +403,9 @@ teddy: Yeah. That's what I thought.`,
 
     a1_sleep: {
       enter: g => { g.nap(3); },
-      text: `You go back to bed. You lock the door. You put your desk chair under the knob like a person in a movie about a haunted house, which you may now be.
+      text: g => `You go back to bed. You lock the door. You put your desk chair under the knob like a person in a movie about a haunted house, which you may now be.
 
-Nik, headphones on, doesn't wake up.
+${g.f('did_sun_nik') ? 'Nik watches you do it and doesn\'t make a single joke, which is worse.' : 'Nik, headphones on, doesn\'t wake up.'}
 
 You sleep three hours, hard and dreamless, and when your alarm goes off at 10:45, the light through the blinds is warm and gold and your feet are just feet, and the world feels like it's holding you a little tighter than it was at dawn.`,
       next: '@hub'
@@ -432,7 +433,7 @@ sam: What's in the box?
 
 jules: Cannoli. From Termini Brothers. Mr. Abernathy drove down to Eighth Street at eight this morning. I read that it's the correct bakery. There's a *Philadelphia Magazine* list.
 
-You look at the box. You think about your grandmother, who has been making cannoli shells by hand on the last Sunday of every month since the Johnson administration, and who once didn't speak to her sister-in-law for two years over a ricotta.
+You look at the box. You think about your grandmother, who has been making cannoli shells by hand every Sunday since the Johnson administration, and who once didn't speak to her sister-in-law for two years over a ricotta.
 
 sam: Pemberton. You brought *store cannoli* to my *Nonna's* house.
 
@@ -481,7 +482,7 @@ Mr. Abernathy turns onto Mifflin Street, and every head on every stoop turns to 
       enter: g => { g.meet('rosa'); g.meet('frank'); g.meet('gigi'); g.meet('mikey'); g.meet('nonna'); g.know('jules_mifflin', ['sam', 'jules', 'rosa', 'frank', 'gigi', 'mikey', 'nonna'], 'Jules came to Sunday dinner on Mifflin Street.'); },
       text: `Gigi is on the stoop.
 
-Of course Gigi is on the stoop. Gigi has been on the stoop, since 11:15, judging by the sunflower-seed shells, in her good jeans and a sweatshirt that says **NEUMANN-GORETTI SAINTS**, looking up the street every thirty seconds. When the Range Rover stops, she stands up so fast she knocks over Nonna's potted basil.
+Of course Gigi is on the stoop. Gigi has been on the stoop, since 11:15, judging by the sunflower-seed shells, in her good jeans and a sweatshirt that says **NEUMANN-GORETTI SAINTS**, looking up the street every thirty seconds. When the Range Rover stops, she stands up so fast she knocks over Ma's potted basil.
 
 gigi: SAMMMMMM.
 
@@ -542,7 +543,7 @@ Ma doesn't make you help with the braciole. She closes the kitchen door, which s
 
 You let her.
 
-${g.f('did_sun_grace') ? 'Grace\'s gauze is clean and white. Ma unwinds it with one hand, fast, professionally, the way she must do it forty times a week in the nurse\'s office at Our Lady of Mount Carmel. Under it, the pink new skin, the thin pink line of the cut.' : 'There are stitches in your forearm. Nine of them. And above and below them, both arms, the burns: half-healed, angry, pink and white and shiny.'}
+${g.f('did_sun_grace') ? 'Grace\'s gauze is clean and white. Ma unwinds it with one hand, fast, professionally, the way she must do it forty times a week in the nurse\'s office at school. Under it, the pink new skin, the thin pink line of the cut.' : 'There are stitches in your forearm. Nine of them. And above and below them, both arms, the burns: half-healed, angry, pink and white and shiny.'}
 
 She looks at it without saying anything. Then she turns your arm over, gently, in the light from the window.
 

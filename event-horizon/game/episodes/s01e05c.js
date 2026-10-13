@@ -20,7 +20,7 @@ sam: That's fair.
 
 She sits down next to you on the top step. Not close. Not far. The Range Rover's due at seven. Up and down the block, people are on their stoops in lawn chairs, and every single one of them is pretending not to look at you.
 
-${g.hurt('black_eye5') ? 'She looks at your eye, which is swelling purple from Vinnie, and doesn\'t ask. She reaches into her cardigan pocket and hands you a white handkerchief, ironed, monogrammed JLP in navy thread. You have one of these already. You don\'t tell her that.\n\n' : ''}jules: Your family interrupts each other.
+${g.hurt('black_eye5') ? 'She looks at your eye, which is swelling purple from Vinnie, and doesn\'t ask. She reaches into her cardigan pocket and hands you a white handkerchief, ironed, monogrammed JLP in navy thread. ' + (g.knows('jules_handkerchief') ? 'You have one of these already. You don\'t tell her that.' : '') + '\n\n' : ''}jules: Your family interrupts each other.
 
 sam: Sorry.
 
@@ -219,7 +219,7 @@ You go sit on Nonna's step, because it's the only place on the block nobody will
     night: true,
     loc: 'MIFFLIN STREET',
     clock: { time: '7:24 PM' },
-    enter: g => { g.know('revenant2', ['sam', 'nonna'], 'At dusk on Mifflin Street, the man who stands the way you stand waited under the streetlight at the end of the block. Nonna saw him too. She crossed herself.'); },
+    enter: g => { if (!g.knows('assunta')) { g.flag('assunta5'); g.know('assunta', ['sam', 'nonna'], 'Nonna\'s mother, Assunta DiNardo, "moved" once, in 1918, during the Liberty Loan parade. She pulled a child out from under a trolley. Nonna says it runs in the women of the family. Until you.'); } g.know('revenant2', ['sam', 'nonna'], 'At dusk on Mifflin Street, the man who stands the way you stand waited under the streetlight at the end of the block. Nonna saw him too. She crossed herself.'); },
     text: g => `Nonna comes out with her rosary and sits down next to you on her top step, slowly, one hand on the rail and one on your shoulder, the way she's sat down next to you on this step ten thousand times.
 
 She doesn't say anything for a while. She just runs the beads through her fingers. The streetlights come on one by one down Mifflin Street, *tink, tink, tink*, orange.
@@ -268,7 +268,7 @@ He's gone.
 
 The streetlight is still on. There's nobody under it. On the sidewalk where he was standing, there's something white, catching the orange light, and you know without walking down there that it's frost.
 
-Nonna lets go of your wrist. Her hand is shaking.
+Nonna lets go of your wrist. Her hand is shaking.${g.f('assunta5') ? '\n\nnonna: My mother, Assunta. 1918, the parade on Broad Street. The bells stopped, and it got cold like January, and everything stopped, and she *moved*. She pulled a little boy out from under a trolley. Once. Never again. It\'s in the women, Salvatò. Always the women. Never a boy. Until you.' : ''}
 
 ${g.knows('nonna_key') ? 'nonna: The key I gave you. You have it?\n\nYou touch your chest. It\'s on the ribbon, under your shirt. You haven\'t taken it off since she gave it to you.\n\nnonna: Good. Keep it on you.\n\nShe looks back at the empty corner.\n\nnonna: It\'s almost time, Salvatò. I didn\'t think it would be so soon.' : 'nonna: My mother told me, from 1918, from the night the bells stopped. *When the cold comes and nobody moves, you don\'t look.*\n\nnonna: Come inside. Come inside now.'}
 
@@ -304,7 +304,7 @@ Object.assign(EH.episodes.s01e05, {
   onEnd: g => {
     g.recap('Jules came to Sunday dinner on Mifflin Street. Nonna handed her the macaroni first.');
     g.recap('Mikey is on the Blur task group now. Brannigan asked for him by name.');
-    g.recap('Vinnie drives for a man named Dante, the jacket from the Melrose.');
+    g.recap(g.f('vinnie5') === 'told' ? 'Vinnie drives for a man named Dante, the jacket from the Melrose.' : 'Vinnie drives nights for a man named Dante, from Passyunk.');
     g.recap('A man who stands the way you do stood at the end of Mifflin Street. Nonna saw him too.');
   }
 });

@@ -51,3 +51,12 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
   - Brannigan speaks for the first time ("the minute").
   - Nik maps the Kensington shimmer to McPherson Square.
   - Femi is in Halcyon's cohort, with a follow-up on 9/22.
+- **E5 "Sunday Gravy"** was written for this playthrough's E4 save. Deviations:
+  - Jules comes to dinner because she lied to Catherine to dodge the Whitford luncheon and has to make the lie true.
+  - Nonna lives three doors down.
+  - Drift 8 triggers new lost minutes (26 min, roof frost).
+  - Mikey goes full-time on the Blur as the Second Hand Unit splits, and Brannigan asked for him by name.
+  - Vinnie drives nights for "Dante from Passyunk" but is still at the Local by day.
+  - The Revenant nods to Nonna (no finger-to-lips repeat).
+  - Nonna's grace pause, and Jules and Nonna both have cold hands.
+  - `jules_suspects` is set if Jules heat reaches 10.

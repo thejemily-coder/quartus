@@ -34,7 +34,7 @@ She picks up the bowl of rigatoni and hands it to Jules first.
 
 nonna: Mangia. Too skinny, this one.
 
- Before Pop. Before *Mikey*. The table notices. Mikey looks at you with his eyebrows all the way up. Ma very carefully doesn't look at anybody.
+She served her before Pop. Before *Mikey*. The table notices. Mikey looks at you with his eyebrows all the way up. Ma very carefully doesn't look at anybody.
 
 And then it's Sunday dinner, the way it always is: everything at once, the rigatoni and the meatballs and the braciole tied with string and the sausage with fennel and the bread from Sarcone's, and the Eagles on in the front room with the sound off, and everybody talking over everybody, Pop about whether the Birds can run the ball, Mikey about a guy in his district who stole a whole ATM with a forklift, Ma about the Gallos' daughter's wedding, Gigi about a TikTok, and Nonna about none of it, eating slowly, watching Jules.
 
@@ -52,11 +52,11 @@ Then Mikey taps his glass with a fork.`,
 
 He stands up. He's grinning, trying not to, failing.
 
-mikey: Starting tomorrow, I'm detailed full-time to the special task group. Out of Major Crimes. The Blur.
+mikey: Starting tomorrow, I'm not borrowed anymore. They split the Second Hand Unit. Major Crimes takes the Grittys, and the rest of us go full-time on the Blur. Me included.
 
 The table goes up like a stadium. Ma puts both hands over her mouth. Gigi screams. Pop reaches over and grips Mikey's shoulder and doesn't say anything at all, which for Pop is a speech. Nonna says *bravo* without looking up from her plate.
 
-mikey: It's a big deal, Ma. It's two detectives, a sergeant from Major Crimes, me, and a guy from the FBI field office who mostly drinks coffee. And a private consultant.
+mikey: It's a big deal, Ma. Same two detectives, the sergeant with the bad hip, me, and now a guy from the FBI field office who mostly drinks coffee. And a private consultant.
 
 rosa: A *private* consultant?
 
@@ -64,9 +64,9 @@ mikey: Yeah. Halcyon. The energy company from the Navy Yard. They've been doing 
 
 Under the table, your hand goes still on your knee.
 
-mikey: Brannigan. Nice guy. Ex-Army, like me, he was at Bagram the year before I was. He's the one who asked for me, actually. Asked the captain for me *by name*. Said he heard I knew South Philly better than anybody, and the Blur's a South Philly kid.
+mikey: Brannigan. The polo guy. Turns out he's ex-Army, like me; he was at Bagram the year before I was. He's the one who asked for me, actually. Asked the captain for me *by name*. Said he heard I knew South Philly better than anybody, and the Blur's a South Philly kid.
 
-He says it proudly. He has no idea.
+He says it to the table like it's good news. Then he looks at you, just you, one second longer than good news needs. He's the one who told you to be careful of this man.
 
 mikey: So far we've got the bus on Spring Garden, the Wawa, the truck on Girard, the rowhouse at 15th and Lehigh, and then the big one. The Friday before last, McPherson Square, up in Kensington. Witnesses say a guy *on fire*, I'm not making this up, a guy literally on fire, and a kid in a black hoodie fought under the El for like five minutes. Kid broke a bus shelter with the burning guy's face, or the other way around. And then the kid *carried* the burning guy to a car. Forty yards. And three witnesses swear he didn't move. He was there, and then he was at the car, and the burning guy was in the back seat.
 
@@ -87,7 +87,7 @@ mikey: So if any of youse see a guy around the neighborhood with burns on his ar
       { text: 'Keep your face still. Chew. Swallow. Reach for the bread like a man who has never been on fire in his life.', tag: 'Poker face',
         check: { kind: 'pool', attr: 'nerve', skill: 'lie', diff: 2, near: ['jules'], label: 'Don\'t react', on: { crit: 'a2_face_good', success: 'a2_face_good', partial: 'a2_face_crack', fail: 'a2_face_crack', botch: 'a2_face_crack' } } },
       { text: '"Mikey. That Brannigan guy. Be careful with him."', tag: 'Warn him',
-        fx: g => { g.flag('mikey5', 'warned'); g.heat('mikey', 2); g.bond('mikey', { trust: 1 }); }, go: 'a2_warn' },
+        fx: g => { g.flag('mikey5', 'warned'); g.know('halcyon_outreach', ['mikey', 'jules', 'rosa']); g.heat('mikey', 2); g.bond('mikey', { trust: 1 }); }, go: 'a2_warn' },
       { text: '"Excuse me. Bathroom." Get up. Go. Right now.', tag: 'Leave',
         fx: g => { g.flag('mikey5', 'left'); g.heat('jules', 1); g.heat('rosa', 1); }, go: 'a2_bathroom' }
     ]
@@ -147,13 +147,13 @@ sam: Then why does their recovery guy need a *cop*?
 
 Mikey puts his fork down.
 
-mikey: You know him? Brannigan?
+mikey: You met him? Brannigan?
 
 sam: No.
 
-mikey: You *know* him, Sammy.
+mikey: You *met* him, Sammy.
 
-sam: I know *of* him. That's all. Just watch him. That's all I'm saying.
+sam: I know *of* him. From you. That's all. Just watch him. That's all I'm saying.
 
 Mikey looks at you the way he looks at guys in the back of the car. Then he picks the fork back up.
 
@@ -170,7 +170,7 @@ Beside you, Jules hasn't said a word. She's cut her braciole into very small, ve
 
 *Asked for me by name.*
 
-Brannigan saw you at McPherson Square. He saw you carry Heck. He looked at you the way a man looks at a thing he's going to buy. And four days later, he walked into a police captain's office and asked for *your brother*.
+Brannigan saw you at McPherson Square. He saw you carry Heck. He looked at you the way a man looks at a thing he's going to buy. And sometime since, he walked into a police captain's office and asked for *your brother*.
 
 He knows. Or he's close enough to knowing that it doesn't matter. He's not hunting you. He's sitting at your family's dinner table, through Mikey, eating Ma's braciole.
 
@@ -238,7 +238,7 @@ gigi: Oh.
 
 Gigi is so visibly crushed that Ma reaches over and pats her hand.
 
-jules: But your brother carried my refrigerator up nine flights of stairs on the first day of school without asking, and I was very rude to him about it, and he has only brought it up since to call me *Your Highness*.
+jules: But your brother carried my refrigerator up nine flights of stairs on move-in day without asking, and I was very rude to him about it, and he has only brought it up since to call me *Your Highness*.
 
 She says it to Gigi. She doesn't look at you.
 
@@ -331,7 +331,7 @@ He doesn't say it angry. He says it tired. He goes back into the vestibule and c
 
 He comes back in four minutes. He sits down and puts the phone face down next to his plate and smiles at Jules and asks her if she follows the Eagles. She says *I'm learning*. He laughs.
 
-His food sits there. He doesn't touch it again. You remember Vinnie at the Melrose: *He had eggs in front of him and he didn't touch 'em.*`,
+His food sits there. He doesn't touch it again. You've never once seen your father leave food on a plate.`,
     next: 'a2_dessert'
   },
 
@@ -374,6 +374,7 @@ Nobody has ever said *I gotta show you something on my phone* and meant it.`,
     card: { kind: 'act', label: 'Act Three', title: 'The Alley' },
     loc: 'THE ALLEY BEHIND MIFFLIN STREET',
     clock: { time: '3:41 PM' },
+    enter: g => { g.know('vinnie_dante', ['sam', 'vinnie'], 'Vinnie drives nights for "Dante from Passyunk." Twelve hundred a week, cash.'); },
     text: g => `The alley behind Mifflin Street is four feet wide and two hundred feet long and has been the center of the universe since you were six. Trash cans. Back gates. Clotheslines. A basketball hoop with no net bolted to the Gallos' back wall in 1994. You learned to ride a bike back here. You had your first fight back here. With Vinnie.
 
 He lights a cigarette. He never used to smoke.
@@ -398,7 +399,7 @@ He takes a drag. Blows it out the side of his mouth, away from you, a courtesy f
 
 vinnie: Dante. From Passyunk. You don't need his last name.
 
-${g.knows('pop_jacket') ? `Dante. You think about the Melrose Diner. The back booth. A young guy in a real nice jacket. *The jacket did all the talking.*\n\nsam: The guy from the Melrose. With my pop. The jacket.\n\nVinnie doesn't say yes. He doesn't say no. He looks at the end of his cigarette.\n\nvinnie: I asked around, like you didn't ask me to. Then somebody asked around about *me*. Then I got a job.` : 'You don\'t know any Dante from Passyunk. You know the type.'}
+${g.knows('pop_jacket') ? `Dante. You think about the Melrose Diner. The back booth. A young guy in a real nice jacket. *Not a cab guy.*\n\nsam: The guy from the Melrose. With my pop. The jacket.\n\nVinnie doesn't say yes. He doesn't say no. He looks at the end of his cigarette.\n\nvinnie: I asked around, like you didn't ask me to. Then somebody asked around about *me*. Then I got a job.` : 'You don\'t know any Dante from Passyunk. You know the type.'}
 
 ${g.f('pop5') === 'heard' ? 'You think about Pop in the vestibule. *Don\'t come to my house. Thank you.*' : ''}
 
@@ -410,7 +411,7 @@ You've rolled your sleeves up in the alley, because it's warm, because you forgo
 
 vinnie: What the hell is that?`,
     choices: [
-      { text: '"Ciro\'s oven." You\'ve told it once today already.', tag: 'Lie',
+      { text: g => '"Ciro\'s oven."' + (['lied', 'caught'].includes(g.f('ma5')) ? ' You\'ve told it once today already.' : ''), tag: 'Lie',
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['vinnie'], label: 'Lie to Vinnie', on: { strong: 'a3_v_lie_ok', weak: 'a3_v_lie_ok', miss: 'a3_v_called' } } },
       { text: '"You first. Who is Dante, Vin? And what does he want with my father?"', tag: 'Turn it around',
         fx: g => { g.flag('vinnie5', 'pushed'); g.bond('vinnie', { tension: 2 }); }, go: 'a3_v_push' },
@@ -519,7 +520,7 @@ He stands up and grabs you in a hug so hard it hurts your arms. He doesn't let g
 
 vinnie: I applied too. You know that? To Temple. I never told you. Waitlisted. I never told nobody.
 
-You didn't know. Eighteen years, and you didn't know.
+You didn't know. Thirteen years, and you didn't know.
 
 vinnie: Dante's the jacket from the Melrose. Twelve hundred a week. I don't ask what's in the bags. I don't ask about your father. And I'm not gonna stop, Sally. I can't. My mom's got heat this winter.
 
@@ -563,7 +564,7 @@ Vinnie lowers his hand. He looks at it like it's somebody else's. Then he sits d
 
 vinnie: I applied too. You know that? To Temple. I never told you. Waitlisted.
 
-You didn't know. Eighteen years, and you didn't know.
+You didn't know. Thirteen years, and you didn't know.
 
 vinnie: My mom cried for a week. Not 'cause I didn't get in. 'Cause I *applied*. She didn't know I wanted it.
 
