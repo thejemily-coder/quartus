@@ -12,7 +12,7 @@ EH.episode({
       night: true,
       loc: 'CARDONE HALL · ROOM 9-14',
       clock: { day: 'Sun', date: 'Oct 4', time: '1:09 AM' },
-      text: `Your phone buzzes on the windowsill at 12:58 in the morning, and you\'re awake, because you\'re always awake now.
+      text: `Your phone buzzes on the windowsill at 12:58 in the morning. You\'re in the bathroom down the hall. You don\'t see it until 1:09.
 
 You think it\'s going to be Bree. Bree texts at one in the morning. Bree texts *u up wawa* and then a forty-second voice memo of a car alarm in the key of B-flat.
 
@@ -26,7 +26,7 @@ You open it.
 
 TXT jules: What if it was me.
 
-That\'s all. Five words and a period. No question mark, which is wrong, because she always uses question marks. She uses them like a weapon. She sent it from Ravenscourt. From the castle, where she\'s at a card game in a dress, winning all their money.
+That\'s all. Five words and a period. No question mark, which is wrong, because she always uses question marks. She uses them like a weapon. She sent it from Ravenscourt. From the castle. You picture her at some long table in a dress, being polite to people she can\'t stand.
 
 *What if it was me.*
 
@@ -42,7 +42,7 @@ You start typing.`,
       choices: [
         { text: 'Type: *what do you mean*', tag: 'Ask',
           fx: g => g.flag('typed', 'mean'), go: 'cold_delete' },
-        { text: 'Type: *then id want to know why you keep coming back to the ninth floor*', tag: 'Her words',
+        { text: 'Type: *then id want to know if you come back because you want to be here*', tag: 'Her words',
           fx: g => g.flag('typed', 'echo'), go: 'cold_delete' },
         { text: 'Type: *are you okay*', tag: 'Her',
           fx: g => g.flag('typed', 'okay'), go: 'cold_delete' },
@@ -52,23 +52,21 @@ You start typing.`,
     },
     cold_delete: {
       night: true,
-      text: g => `${{ mean: 'TXT sam: what do you mean', echo: 'TXT sam: then id want to know why you keep coming back to the ninth floor', okay: 'TXT sam: are you okay', hope: 'TXT sam: i hope it is' }[g.f('typed')]}
+      text: g => `${{ mean: 'TXT sam: what do you mean', echo: 'TXT sam: then id want to know if you come back because you want to be here', okay: 'TXT sam: are you okay', hope: 'TXT sam: i hope it is' }[g.f('typed')]}
 
 It sits there in the box, not sent, the cursor blinking after it.
 
-You look at it for a long time. You think about her, ten miles away in a stone house in a dress, looking at a little *Read* under her message, waiting.
+You look at it. You think about her, ten miles away in a stone house in a dress, looking at a little *Read* under her message, waiting.
 
-You think about everything you\'d have to say after this, if you sent it. Every next message. Every question she\'d ask, and every one you\'d have to lie about, or not lie about. You think about Brannigan\'s kind voice. *We\'re the only ones who\'ll know what to do.* You think about Mikey at the table, *his arms are cooked*. You think about how the people who know about you keep ending up in danger.
+You think about everything you\'d have to say after this, if you sent it. Every next message. Every question she\'d ask, and every one you\'d have to lie about, or not lie about. You think about Brannigan\'s kind voice. *We\'re the only ones who\'ll know what to do.* You think about Mikey at the table, *his arms are cooked*. 
 
 You delete it. Letter by letter. Backward.
 
-${g.f('typed') === 'hope' ? 'You type it again. You delete it again. You type it a third time, and you hold your thumb over the arrow for so long the screen dims.\n\nYou delete it.' : 'You start a second one. You delete that too.'}
+${g.f('typed') === 'hope' ? 'You type it again. You delete it again. You type it a third time, and you hold your thumb over the arrow for so long the screen dims.\n\nYou delete it.' : 'You start a second one. You delete that too. Then a third. By the end you\'ve typed nine and sent none.'}
 
 You put the phone face down on the windowsill. It\'s warm from your hand.
 
-You lie there till the window goes gray, and you don\'t answer her, and you don\'t sleep, and somewhere in a stone house in Gladwyne, a girl in a blue dress is standing on a terrace in the cold, looking at *Read*, and you know it, and you let her.
-
-You\'ll think about that a lot.`,
+You lie there till the window goes gray, and you don\'t answer her, and you don\'t sleep, and ten miles west, under her five words, it says *Read*, and you let it.`,
       enter: g => { g.know('sam_no_reply', ['sam'], 'Jules texted "What if it was me." You read it at 1:09 a.m. You never answered.'); },
       next: 'titles'
     },
@@ -89,7 +87,7 @@ And it helps. The cold in your fingers goes away. The nosebleeds stop. You stop 
 
 And for two weeks, the city doesn\'t need you. Or it does, and you don\'t hear about it. A guy gets robbed on Diamond Street and you\'re in the library. There\'s a three-alarm fire in Frankford and you watch it on 6abc with Simone, eating Swedish Fish, and you sit on your hands. Literally sit on them.
 
-It\'s the hardest thing you\'ve ever done. You do it.
+It\'s harder than the bus was. You do it.
 
 And Jules.
 
@@ -161,7 +159,7 @@ You talk about nothing for a while. The Birds. His little brothers. A girl from 
 
 Then he goes quiet.
 
-vinnie: Hey. Sally. Listen. Your pop. You talk to him lately?
+vinnie: Yo. Sally. Your pop. You talk to him lately?
 
 sam: Not really. Why?
 
@@ -193,7 +191,7 @@ femi: Took you long enough.
 
 sam: You haven\'t been in recitation.
 
-femi: I *have* been in recitation. Every day. Front row. The TA took attendance and skipped me four times, and I didn\'t say anything, and I just. I stopped going after that. What\'s the point.
+femi: I *have* been in recitation. Every day. At the whiteboard. The course coordinator came to observe Tuesday, asked the room where the learning assistant was, and wrote *no-show* while I was holding the marker. I just. I stopped going after that. What\'s the point.
 
 He\'s thinner. His hoodie hangs off his shoulders like it\'s on a hanger.
 
@@ -209,7 +207,7 @@ femi: Halloween weekend. Three days. They want to watch me *sleep*, Sam. They wa
 
 He laughs, and it isn\'t a laugh.
 
-femi: My mom\'s been sending me money from Lagos every month for three years. Twenty-five hundred dollars is more than she\'s sent me since I got here. I could send it *back*.`,
+femi: My mom\'s been sending me money from Lagos every month for three years. Twenty-five hundred dollars is a year of what she sends. I could send it *back*.`,
       choices: [
         { text: '"Femi. Don\'t. They had a truck in Kensington with restraints rated for six hundred pounds. I saw it."', if: g => g.knows('halcyon_truck'), tag: 'The truck',
           check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', bonus: 2, bonusLabel: 'You saw it', label: 'Keep Femi out of Building 7', on: { strong: 'a1_femi_no', weak: 'a1_femi_maybe', miss: 'a1_femi_yes' } } },
@@ -263,7 +261,7 @@ femi: I\'m going, Sam. Twenty-five hundred dollars. And for three days, somebody
 
 You do it quietly, in a library carrel, while people walk past him like he\'s furniture and past you like you\'re furniture\'s friend. The Hitch. The cold. The bus. Heck in McPherson Square. The truck with the steel bed. Brannigan\'s voice.
 
-Femi doesn\'t interrupt once. When you\'re done, he looks at you for a long time.
+Femi doesn\'t interrupt once. When you\'re done, he looks at you the way nobody ever looks at him.
 
 femi: You\'re the Blur.
 
@@ -287,15 +285,15 @@ femi: Okay. Okay. Then I\'m not going anywhere they can watch me sleep.
 
 He looks up at you.
 
-femi: You see me. You always see me. If they ever take me, Sam, you\'ll know. You\'ll be the only one who\'ll notice I\'m gone.
+femi: You see me. You always see me. Three years at this school, and it\'s the guy who can\'t do the chain rule.
 
-He means it as a joke. It doesn\'t sound like one.`,
+He laughs again. Smaller.`,
       next: '@hub'
     },
 
     a1_pop: {
       enter: g => { g.bond('frank', { trust: 1 }); },
-      text: g => `Pop picks up on the sixth ring. You can hear the cab around him, the click of the turn signal, the dispatcher\'s radio, the AM station playing a Phillies postgame show.
+      text: g => `Pop picks up on the sixth ring. You can hear the cab around him, the click of the turn signal, the dispatcher\'s radio, the AM station playing sports talk.
 
 frank: Kid.
 
@@ -336,7 +334,7 @@ frank: Vinnie.
 
 You don\'t say anything.
 
-frank: Kid. Listen to me. Listen. Whatever you think you know, you don\'t. And you stay *out* of it. You hear me? This is mine. I made it. It\'s not yours. It\'s not your brother\'s. It\'s *mine*.
+frank: Kid. You stay *out* of it. You hear me? I made this. It\'s not yours. It\'s not your brother\'s. It\'s *mine*.
 
 His voice breaks on *mine*. You\'ve never heard your father\'s voice break. Not at his own mother\'s funeral. Not when Mikey shipped out.
 
@@ -380,7 +378,7 @@ You think: Jules is going to be insufferable about this.`,
       loc: 'CIRO\'S PIZZA · CECIL B. MOORE AVE',
       clock: { time: '9:14 PM' },
       enter: g => { g.money(14 * 3); g.know('pop_owes', ['sam'], 'Dante Iannucci told you: your father owes his family $41,000, from a bad bet in 2009. "Saturday is Saturday."'); g.know('dante', ['sam'], 'Dante Iannucci, 24, from Passyunk. The jacket from the Melrose. Grandson of somebody important. Vinnie drives him.'); },
-      text: `Friday night at Ciro\'s is a war. Three ovens, two phones, a line out the door of drunk kids from a party on Diamond Street, and Ciro moving through it all like a general, throwing insults like grenades.
+      text: `Friday night at Ciro\'s is a war. Three ovens, two phones, a line out the door of drunk kids from a party on Diamond Street, and Ciro moving through it all like a general, throwing insults.
 
 ciro: Salvatore! You\'re slow like a *wedding*. Like a wedding in *church*. Move!
 
@@ -414,7 +412,7 @@ DANTE: Sam, right? The college one. Your father talks about you. He\'s proud. He
 
 He takes a bite of the slice. Chews. Nods appreciatively at Ciro.
 
-DANTE: So listen, Sam. I\'m gonna tell you something, because I like your father, and I think he\'s embarrassed, and embarrassed men do stupid things. Your father made a bad bet in 2009. A lot of bad bets. My grandfather\'s been very patient. Seventeen years of patient. It\'s forty-one thousand now, with everything.
+DANTE: So here\'s the thing, Sam. I\'m gonna tell you something, because I like your father, and I think he\'s embarrassed, and embarrassed men do stupid things. Your father made a bad bet in 2009. A lot of bad bets. My grandfather\'s been very patient. Seventeen years of patient. It\'s forty-one thousand now, with everything.
 
 He wipes his fingers on a napkin, one at a time.
 
@@ -440,7 +438,7 @@ DANTE: Huh.
 
 He smiles. It\'s a very good smile. It\'s the smile of a man who\'s going to remember you.
 
-DANTE: My driver said you used to be fast. In the alley. When you were kids.
+DANTE: My driver says you were the one who got in fights. When you were kids.
 
 He folds his napkin, sets it on the counter, and goes.
 
@@ -474,7 +472,7 @@ DANTE: Nothing happens. We have a conversation. Your father and me and a friend 
 
 *Keeping things still.*
 
-DANTE: Your father will be fine, Sam. We\'re not animals. We just need him to understand.
+DANTE: Your father will be fine, Sam. Nobody wants a mess. We just need him to understand.
 
 He goes. Through the window, you watch the Escalade pull away, and you think: *a friend who keeps things still.*
 

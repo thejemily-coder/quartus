@@ -50,7 +50,7 @@ nik: *Oh*. Oh no.`,
   a2_teddy_told: {
     text: `TXT sam: dont do it. its my father. frank kearney is my father.
 
-The dots appear immediately. Then they disappear. Then nothing, for a long time. Twenty minutes. Half an hour.
+The dots appear immediately. Then they disappear. Then nothing. Twenty minutes. Half an hour.
 
 Then:
 
@@ -89,7 +89,7 @@ nik: But it\'s been two weeks. Your temperature\'s normal. Your nose isn\'t blee
 
 He holds up one finger.
 
-nik: So go. But try everything else first. Talk. Punch. Yell. Call your brother. *Everything*. And Slip last.
+nik: So go. But try everything else first. Talk. Punch. Yell. Call your brother. *Everything*. Slip is your ult, and your ult is on a two-week cooldown. Last.
 
 He looks at you very seriously, the headlamp pushed up on his forehead, even though it\'s two in the afternoon.
 
@@ -115,7 +115,7 @@ You sit. She slides an index card across the table. On it, in her perfect handwr
 
 jules: Go.
 
-You look at it. Two weeks ago, you would have drawn a horse on it.
+You look at it. Two weeks ago, you would have drawn a dog on it. With hooves.
 
 sam: Cos of x squared, times two x.
 
@@ -123,7 +123,7 @@ She looks at you. She looks at the card. She looks at you again.
 
 jules: Who are you.
 
-sam: ${g.f('pre_study') ? 'I went to the library yesterday. Two hours. The chain rule clicked.' : 'I don\'t know. It just made sense.'}
+sam: ${g.f('pre_study') ? 'I went to the library yesterday. Two hours. The chain rule clicked.' : 'I don\'t know. It just clicked.'}
 
 jules: *Clicked.*
 
@@ -131,9 +131,9 @@ She says it in a strange voice. She looks down at her cards. For a second you co
 
 jules: Fine. Next one.
 
-You study for two and a half hours. It\'s the best two and a half hours you\'ve had in a month. She\'s merciless and precise and twice she laughs, once at a dumb joke and once when you get an integral right and pump your fist like you hit a home run. At one point her foot is touching yours under the table. Neither of you moves it.
+You study for two and a half hours. It\'s two and a half hours of being eighteen. She\'s merciless and precise and twice she laughs, once at a dumb joke and once when you get an integral right and pump your fist like you hit a home run. At one point her foot is touching yours under the table. Neither of you moves it.
 
-She doesn\'t mention the text. You don\'t mention the text. It sits on the table between you with the index cards, the biggest thing in the room.
+She doesn\'t mention the text. You don\'t mention the text. It sits on the table between you with the index cards.
 
 At 9:40, your phone buzzes against your leg.
 
@@ -155,9 +155,9 @@ jules: What is it.`,
   a2_bail_truth: {
     text: `sam: I have to go. It\'s my father. I can\'t tell you more.
 
-You look at her when you say it. It\'s the hardest thing you\'ve done all day.
+You look at her when you say it. You make yourself.
 
-She looks back at you for a long moment. She doesn\'t ask. She looks at your hand on the table, nowhere near your ear.
+She looks back at you for a long moment. She doesn\'t ask what. She looks at your hand on the table, nowhere near your ear.
 
 jules: Is he in danger?
 
@@ -198,7 +198,7 @@ She says it flatly. She picks up her highlighter. She uncaps it and caps it agai
 
 jules: Give her my love.
 
-You go. You don\'t look back. If you\'d looked back, you\'d have seen her sitting perfectly still at the table with the highlighter in her fist, looking at the door, the way she looks at a card she knows is a bluff.`,
+You go. At the door you look back, once. She\'s sitting perfectly still with the highlighter in her fist, looking at you the way she looks at a card she knows is a bluff.`,
     next: 'a3_under95'
   },
   a2_bail_lie_bad: {
@@ -240,7 +240,7 @@ Your phone buzzes again against your leg. *wawa please.* You stand up.
 
 sam: I have to go. It\'s my father. I can\'t— I\'ll tell you. The nine things. I\'ll tell you all nine. I promise. When I get back.
 
-She looks up at you. Her face is doing something you\'ve never seen it do. It\'s open. Wide open, like a door.
+She looks up at you. Her face is doing something you\'ve never seen it do. It\'s open. Wide open.
 
 jules: Go.
 
@@ -256,9 +256,9 @@ jules: I\'ll hold you to the nine.`,
   a3_under95: {
     card: { kind: 'act', label: 'Act Three', title: 'Under 95' },
     night: true,
-    loc: 'DELAWARE AVE & SNYDER · UNDER I-95',
+    loc: 'COLUMBUS BLVD & SNYDER · UNDER I-95',
     clock: { time: '10:31 PM' },
-    text: g => `${g.f('costume') === 'hoodie' || !g.f('costume') ? 'Black hoodie. Gaiter up to your eyes. Pop\'s Eagles cap, backward. *Pop\'s* cap.' : 'The costume. Your face covered.'} You ride the bike down Columbus Boulevard from Spring Garden, past the casinos and the big-box stores and the empty lots, with the river on your left black and wide, and under the highway at Snyder, in a gravel lot where the trucks park overnight between the concrete pillars of I-95, you find it.
+    text: g => `${g.f('costume') === 'hoodie' || !g.f('costume') ? 'Black hoodie. Gaiter up to your eyes. Pop\'s Eagles cap, backward. *Pop\'s* cap.' : 'The costume. Your face covered.'} You ride the bike down Columbus Boulevard from Spring Garden, past Penn\'s Landing and the piers and the big-box stores, with the river on your left black and wide, and under the highway at Snyder, in a gravel lot where the trucks park overnight between the concrete pillars of I-95, you find it.
 
 A Liberty Cab. Yellow and green. **418** on the roof light. Pop\'s cab.
 
@@ -310,7 +310,7 @@ sam: That\'s what you do. You hold on to people so nobody can take them. That\'s
 
 His hand is shaking on the hood. The moth in the headlight beam trembles, just barely, like the air around it is trying to start again.
 
-teddy: My mom, Sam.
+teddy: ${g.knows('teddy_mother') || g.f('teddy7') === 'told' ? 'My mom, Sam.' : 'My mom needs a kidney, Sam. Jefferson won\'t list her without forty grand.'}
 
 sam: I know.
 
@@ -376,7 +376,7 @@ teddy: He fell.
 
 sam: *Teddy.*
 
-teddy: My mother is going to die without that money! Do you get that? You get to be the *hero*, you get to save people, because you don\'t *need* anything! Some of us *need* things!
+teddy: My mother dies without this money, Sam. You get to be the hero because you don\'t need anything. Go be one somewhere else.
 
 He\'s crying. His hand stays on the cab.
 
@@ -416,7 +416,7 @@ The second man is getting up too. And behind him, Dante has taken his hand out o
 
 Then Teddy takes his hand off the cab and walks over and puts it flat on Dante\'s wrist.
 
-Dante\'s hand stops. The gun stops. Dante\'s whole arm stops, from the elbow down, a statue\'s arm on a living man. He looks at it in disbelief.
+Dante\'s hand stops. The gun stops. Dante\'s whole arm stops, from the elbow down, a statue\'s arm on a living man. He looks at it in disbelief. Teddy pries the gun out of the frozen fingers, like taking a toy from a kid, and drops it in his own jacket pocket.
 
 teddy: Job\'s off, Mr. Iannucci.`,
     next: 'a3_dante'
@@ -430,7 +430,7 @@ You hear Pop yell. You hear your own name. *Sam!* Not *kid*. *Sam.* He knows. He
 
 You try to get up. The world tilts like a boat.
 
-Somebody puts a hand on your back. It\'s warm and steady. It\'s Teddy. He\'s crouched over you, his hand flat between your shoulder blades, and everything around the two of you is stopped, the gravel, the dust, the man with the sap mid-step. *Stopped*. He\'s holding the space around you still with his other hand on the man\'s chest.
+Somebody steps over you. It\'s Teddy. He\'s got his hand flat on the chest of the man with the sap, and the man is *stopped*, mid-step, the sap cocked behind his ear. Teddy crouches beside you without taking his hand away.
 
 teddy: Stay down. *Stay down*, Sam.
 
@@ -455,7 +455,7 @@ sam: Vin. I need you.
 
 He looks past you, through the windshield, at Pop on his knees on the gravel. He looks for a long time. His hands are at ten and two on the wheel. His knuckles are white.
 
-vinnie: You know what you\'re asking me.
+vinnie: Yo. You know what you\'re asking me?
 
 sam: Yeah.
 
@@ -477,7 +477,7 @@ The word sits there in the cold under the highway.
 
 vinnie: You want to talk to Frank, you talk to Frank. You don\'t put him on his *knees*. Not in front of me. I don\'t care what he owes. Not in front of me.
 
-Dante looks at Vinnie for a very long time. He looks at him the way you\'d look at a piece of furniture that just told you no.
+Dante looks at Vinnie the way you\'d look at a piece of furniture that just told you no.
 
 Then he laughs. Softly.
 
@@ -501,7 +501,7 @@ ${g.f('unstick') ? `It\'s cold, colder than it\'s ever been, January, February, 
 
 Then you try to step back out, and you can\'t.
 
-You try again. It\'s like pushing on a wall. Like the surface of the pool has frozen over above you, and you\'re underneath it, and you can see the light through the ice, and you can\'t get *up*.
+You try again. It\'s like the surface of the pool has frozen over above you, and you\'re underneath it, and you can see the light through the ice, and you can\'t get *up*.
 
 You don\'t know how long you\'re in there. There\'s no way to know. Nothing moves. You walk. You walk to Pop and you pull him out of the men\'s hands, gently, and you walk him all the way to the other side of the lot and set him down against a pillar, kneeling, still frozen, and then you try to step out again, and you can\'t.
 
@@ -509,9 +509,9 @@ You sit down on the gravel. You wait. You get hungry. Then you get past hungry, 
 
 You walk to the river. The Delaware is stopped, a sheet of black glass with the lights of Camden frozen on it. You walk back. You count the pillars under 95. Two hundred and twelve, between Snyder and Oregon. You count them again.
 
-And on the third count, you find footprints in the frost on the gravel. Not yours. Bigger than yours, a little. The same stride. Walking away from you, toward the river, and stopping at the water\'s edge, as if whoever made them stepped onto the stopped Delaware and kept going.
+And on the third count, you find footprints in the frost on the gravel. Your sneakers. Your stride. Walking away from the pillar to the water\'s edge, and stopping. You don\'t remember walking to the river a second time.
 
-Nonna, at her kitchen window: *If you ever see somebody else moving in there, somebody who shouldn\'t be, you come out.*
+Nonna, at her kitchen window: *In the cold, you don\'t stay long.*
 
 You can\'t come out.
 
@@ -532,14 +532,14 @@ Your nose is pouring.
 Teddy, by the cab, has seen it. He\'s seen it before. He closes his eyes, and lifts his hand off the hood.
 
 teddy: Job\'s off, Mr. Iannucci.`,
-    enter: g => { if (g.S.drift >= 9 || g.hv('revenant_drift') >= 10) g.flag('unstick'); if (g.f('unstick')) { g.drift(1); g.hidden('revenant_drift', 1.5); g.injure({ id: 'hypothermia7', name: 'Slip-cold (hypothermia)', pen: 1, heal: 1, affects: ['body', 'reflex', 'wits'] }); g.know('unstick', ['sam'], 'Under I-95 you got stuck in the Slip. You couldn\'t get out. You found someone else\'s footprints in the frost, walking onto the stopped Delaware. You pulled yourself out thinking about Jules.'); } g.know('slip_rescue_pop', ['sam'], 'You Slipped and carried Pop away from Dante\'s men under I-95.'); },
+    enter: g => { if (g.S.drift >= 9 || g.hv('revenant_drift') >= 10) g.flag('unstick'); if (g.f('unstick')) { g.drift(1); g.hidden('revenant_drift', 1.5); g.injure({ id: 'hypothermia7', name: 'Slip-cold (hypothermia)', pen: 1, heal: 1, affects: ['body', 'reflex', 'wits'] }); g.know('unstick', ['sam'], 'Under I-95 you got stuck in the Slip. You couldn\'t get out. You found your own footprints in the frost at the river\'s edge and don\'t remember making them. You pulled yourself out thinking about Jules.'); } g.know('slip_rescue_pop', ['sam'], 'You Slipped and carried Pop away from Dante\'s men under I-95.'); },
     next: 'a3_dante'
   },
 
   a3_dante: {
     night: true,
     clock: { time: '10:52 PM' },
-    enter: g => { g.flag('teddy_quit'); g.know('teddy_lost_40k', ['sam', 'teddy', 'bree', 'heck'], 'Teddy let go of Frank Kearney\'s cab under I-95 and walked away from the Iannucci job. $40,000 for his mother\'s transplant evaluation, gone.'); g.know('dante_thanksgiving', ['sam', 'frank', 'teddy'], 'Dante Iannucci: "Forty-one thousand. Thanksgiving. Or we have this conversation again, with the whole family at the table."'); },
+    enter: g => { g.flag('teddy_quit'); g.know('teddy_lost_40k', ['sam', 'teddy', 'bree', 'heck'], 'Teddy let go of Frank Kearney\'s cab under I-95 and walked away from the Iannucci job. $40,000 for his mother\'s transplant evaluation, gone.'); g.know('dante_thanksgiving', ['sam', 'frank', 'teddy'], 'Dante Iannucci: "Forty-one thousand. Thanksgiving. Or we have this conversation again, by Thanksgiving."'); },
     text: g => `Dante takes it all in. His men. Teddy. ${g.f('vinnie_stood') ? 'Vinnie, standing next to you. ' : ''}${g.f('under95') === 'slip' ? 'Frank Kearney, forty yards away, against a pillar, where nobody put him.' : 'Frank Kearney, on his knees on the gravel, free.'} And you, in your hood, with your face covered.
 
 He doesn\'t look angry. That\'s the thing about him. He looks *interested*.
@@ -548,13 +548,13 @@ DANTE: Okay. Okay. So tonight\'s not the night.
 
 He walks over to Pop, unhurried, and crouches down in front of him, and straightens the torn collar of Pop\'s shirt with two fingers, like a son fixing his father\'s tie at a wedding.
 
-DANTE: Forty-one, Frank. Thanksgiving. That\'s very generous, and you know it is. My grandfather says Thanksgiving, because family\'s important, and he wants you to have one more with yours.
+DANTE: Forty-one, Frank. Thanksgiving. That\'s very generous, and you know it is. My grandfather says Thanksgiving, because family\'s important, and he wants you to have one more with yours. Me, I\'d have said tonight.
 
 He stands. He looks at you, in your hood.
 
 DANTE: And you. I don\'t know who you are. But I know this neighborhood, and I\'m going to find out, and when I do, you and I are going to be friends. Everybody in this city ends up friends with my family, one way or the other.
 
-He walks back to the Escalade. ${g.f('vinnie_stood') ? 'He stops beside Vinnie.\n\nDANTE: You drive me home, Vincenzo. We\'ll talk on the way.\n\nVinnie looks at you. Then he gets back in the driver\'s seat. You don\'t know if you\'ll ever see him again as the person who got out of that car.' : 'He gets in the back. The Escalade pulls out from under the highway, Vinnie at the wheel, eyes front.'} His men follow, one of them holding his nose.
+He walks back to the Escalade. ${g.f('vinnie_stood') ? 'He stops beside Vinnie.\n\nDANTE: You drive me home, Vincenzo. We\'ll talk on the way.\n\nVinnie looks at you. Then he gets back in the driver\'s seat, and shuts the door, and he\'s Dante\'s driver again.' : 'He gets in the back. The Escalade pulls out from under the highway, Vinnie at the wheel, eyes front.'} His men follow.
 
 ${g.f('teddy_quit') || g.f('under95') ? 'Teddy stands by the cab for a second. He looks at you.\n\nteddy: I\'m going home to tell my mother. Don\'t follow me.\n\nHe walks away under the highway, toward Snyder, alone, with his bandaged hand in his pocket.' : ''}
 
@@ -584,13 +584,13 @@ ${g.f('under95') === 'fight_lost' ? 'He already knows. He heard himself yell *Sa
     night: true,
     text: `You pull the gaiter down.
 
-He looks at your face for a long time. Your father. In the light of his own headlights, under the highway, with the river going by.
+He looks at your face. Your father. In the light of his own headlights, under the highway, with the river going by.
 
-He doesn\'t say anything. He doesn\'t ask. He reaches out, and puts his hand on the back of your neck, the way he did when you were small and fell asleep in the front seat of the cab, and pulls your forehead against his.
+He doesn\'t say anything. He doesn\'t ask. He reaches out, and puts his hand on the back of your neck, and pulls your forehead against his.
 
 frank: Okay. Okay, kid.
 
-His voice is shaking. You\'ve never heard it shake.
+His voice is shaking.
 
 frank: The bus. On Spring Garden. That was you.
 
@@ -598,15 +598,21 @@ sam: Yeah.
 
 frank: Your mother\'s gonna kill both of us.
 
-You laugh. It comes out wet. He laughs too, holding his ribs, and then he\'s not laughing, and neither are you, and you stand there under I-95 with your foreheads together for a long time.
+You laugh. It comes out wet. He laughs too, holding his ribs, and then he\'s not laughing, and you stand there under I-95 with your foreheads together while the trucks go over.
 
-frank: I\'m sorry, kid. Forty-one thousand. 2009. I had a bad year. I had a bad few years. Your mother doesn\'t know. Nobody knows. I thought I could—
+frank: I\'m sorry, kid. I had a bad few years. Your mother doesn\'t know. Nobody knows.
+
+Ma knows something. Ma\'s the one who told you he\'d gone quiet. You don\'t say it.
+
+frank: I thought I could—
 
 sam: I know, Pop.
 
 frank: I\'m gonna fix it.
 
 sam: *We\'re* gonna fix it.
+
+frank: No, kid. It\'s mine.
 
 He pulls back and looks at you. He wipes his lip with the back of his hand.
 
@@ -616,7 +622,7 @@ He gets in his cab. He rolls down the window.
 
 frank: Get in. I\'ll drive you home. It\'s a long way on a bike.
 
-You put the bike in the trunk. You ride up Columbus Boulevard in the front seat of your father\'s cab, the way you did when you were six, and neither of you says anything, and the meter isn\'t running, and it\'s the best ride of your life.`,
+You put the bike in the trunk. You ride up Columbus Boulevard in the front seat of your father\'s cab, the way you did when you were six, and the meter isn\'t running.`,
     next: 'a4_covering'
   },
   a3_pop_leave: {

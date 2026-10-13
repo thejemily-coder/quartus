@@ -40,11 +40,11 @@ jules: She said *thank you, Jules. You\'re a good girl. Make sure he eats.*
 
 You stand there in the lounge doorway.
 
-jules: I\'ve never lied to a mother before. Other people\'s mothers. I lie to mine all the time; it\'s practically a sport. But I\'ve never lied to someone else\'s mother, in her voice, while she was *worried*.
+jules: I\'ve never lied to a mother before. Other people\'s mothers. I lie to mine all the time. But I\'ve never lied to someone else\'s mother while she was *worried*.
 
 She picks the pencil back up. She doesn\'t write anything.
 
-jules: It was very easy. I didn\'t like how easy it was.`,
+jules: It was very easy. I didn\'t like how easy it was.${g.f('bail') === 'lie' ? '\n\njules: She didn\'t mention your grandmother being sick. So I didn\'t either.' : ''}`,
     choices: [
       { text: '"Thank you." Sit down across from her. "I owe you."', tag: 'Thank her',
         fx: g => { g.flag('cover7', 'thanks'); g.bond('jules', { affection: 1 }); }, go: 'a4_owe' },
@@ -56,7 +56,7 @@ jules: It was very easy. I didn\'t like how easy it was.`,
     night: true,
     text: g => `sam: Thank you. I owe you.
 
-You sit down across from her, in your chair, the one her feet were on. She moved them when you came in. You don\'t know when.
+You sit down across from her, in your chair, the one her feet were on. She moved them at some point. You didn\'t see her do it.
 
 jules: You already owe me a favor.
 
@@ -72,12 +72,12 @@ ${g.knows('owe_jules_favor') ? 'She doesn\'t smile, but something at the corner 
 
 She slides an index card across the table to you, face down.
 
-jules: You said you\'d tell me. The nine things.`,
+jules: ${g.f('bail') === 'text' ? 'You said you\'d tell me. The nine things.' : 'You never answered me.'}`,
     next: 'a4_nine'
   },
   a4_why: {
     night: true,
-    text: `sam: Why did you do that?
+    text: g => `sam: Why did you do that?
 
 She looks at you like you\'ve asked her why the sky is up.
 
@@ -99,7 +99,7 @@ sam: I\'m very tired.
 
 She slides an index card across the table to you, face down.
 
-jules: You said you\'d tell me. The nine things.`,
+jules: ${g.f('bail') === 'text' ? 'You said you\'d tell me. The nine things.' : 'You never answered me.'}`,
     next: 'a4_nine'
   },
 
@@ -107,17 +107,17 @@ jules: You said you\'d tell me. The nine things.`,
     night: true,
     text: g => `You turn the card over. It\'s blank.
 
-jules: Write them down. If you can\'t say them.
+jules: Write it down. If you can\'t say it.
 
 ${g.f('bail') === 'text' ? 'You promised her. You promised her all nine.' : 'You never promised her anything. She\'s asking anyway.'}
 
 You pick up her pencil. It\'s warm from her hand.
 
-You think about the nine things you typed and deleted at 1:09 in the morning two weeks ago. *what do you mean.* *are you okay.* *then id want to know why you keep coming back to the ninth floor.* ${g.f('typed') === 'hope' ? '*i hope it is*, three times, and three times backward.' : ''}
+You think about the nine things you typed and deleted two weeks ago, between 1:09 and the window going gray. ${g.f('typed') === 'hope' ? '*i hope it is*, three times, and three times backward.' : ''}
 
 You think about what she meant. You still don\'t know what she meant. *What if it was me.* What if it was her who what?
 
-${g.f('unstick') ? 'You think about the footprints in the frost at the edge of the stopped river. ' : ''}You think about Dante\'s interested face. You think about the people who know about you, and how many of them were on their knees on the gravel tonight.`,
+${g.f('unstick') ? 'You think about what you saw out there at the edge of the stopped river. ' : ''}You think about Dante\'s interested face. You think about the people who know about you, and how many of them were on their knees on the gravel tonight.`,
     choices: [
       { text: 'Write: *I hope it is.* Slide it back.', tag: 'I hope it is',
         fx: g => { g.flag('nine', 'hope'); g.bond('jules', { affection: 2, trust: 1 }); g.know('i_hope_it_is', ['sam', 'jules'], 'At 1:30 a.m. in the lounge, you wrote on an index card for Jules: "I hope it is." In answer to "What if it was me."'); }, go: 'a4_nine_hope' },
@@ -135,7 +135,7 @@ ${g.f('unstick') ? 'You think about the footprints in the frost at the edge of t
 
 You slide it back across the table.
 
-She reads it. She reads it for a long time. She doesn\'t ask what it means. She doesn\'t ask what it\'s answering. She knows exactly what it\'s answering. You can see it on her face: you can see her realize that you don\'t know what her question meant either, and that you answered it anyway, the way you answer everything, by running straight at it.
+She reads it. She doesn\'t ask what it means. She knows exactly what it\'s answering. She knows you don\'t know what her question meant either. You answered it anyway.
 
 She puts the card in her cardigan pocket. The one over her heart. She doesn\'t say anything.
 
@@ -147,7 +147,7 @@ sam: Pemberton.
 
 jules: Problem nine, Sam.
 
-You do problem nine. Her foot finds yours under the table. Neither of you moves it.`,
+You do problem nine. Her foot finds yours under the table, and stays.`,
     next: 'tag_monday'
   },
   a4_nine_ask: {
@@ -189,9 +189,9 @@ sam: I haven\'t *started*.
 
 jules: You\'re holding the pencil wrong.
 
-You do problem set nine together, all fourteen problems, in pencil, until the window over the lounge couch goes gray. Neither of you says anything about the text. Neither of you says anything about anything. Her shoulder is against yours the whole time.
+You do problem set nine together, all fourteen problems, in pencil, until the window over the lounge couch goes gray. Nobody mentions the text. Her shoulder is against yours the whole time.
 
-It isn\'t an answer. It\'s something better than an answer. You think she knows that. You think that\'s why she let you.`,
+It isn\'t an answer. It\'s problem nine.`,
     next: 'tag_monday'
   },
 
@@ -236,7 +236,7 @@ jules: It\'s one test.
 
 sam: I know.
 
-jules: You\'ll be fine. You\'re going to retake the final with me every night for a week.
+jules: You\'ll be fine. You\'re going to study for the final with me every night for a week.
 
 sam: Is that a threat?
 
@@ -262,7 +262,7 @@ mikey: Pop\'s okay. I want to say that first. Pop\'s okay. He\'s at home. Ma\'s 
 
 sam: Mikey.
 
-mikey: His cab got hit. Last night, or this morning, nobody knows. They found it at six a.m. under 95, at Delaware and Snyder, in that truck lot. Every window. *Every* window, Sammy. The windshield, the back, the sides. They didn\'t take anything. They didn\'t touch the radio, they didn\'t take the cash box. They just broke every piece of glass on it and left it there.
+mikey: His cab got hit. He went back out last night, Sunday, told Ma he had an airport fare. Came home at four in the morning in somebody else\'s cab. They found it at six a.m. under 95, at Delaware and Snyder, in that truck lot. Every window. *Every* window, Sammy. The windshield, the back, the sides. They didn\'t take anything. They didn\'t touch the radio, they didn\'t take the cash box. They just broke every piece of glass on it. And Sammy, somebody swept it up. Into a pile. On the driver\'s seat.
 
 He breathes.
 
@@ -270,7 +270,7 @@ mikey: Pop says it was kids. Pop says he parked it there to take a leak and some
 
 A long silence.
 
-mikey: Pop doesn\'t park in truck lots under 95 to take a leak, Sammy. Pop drives eleven blocks home to take a leak. Pop\'s been driving a cab for twenty-six years and he\'s never once been anywhere near Delaware and Snyder at night.
+mikey: Pop doesn\'t park in truck lots under 95 to take a leak, Sammy. Pop drives eleven blocks home to take a leak. Pop\'s been driving a cab for twenty-six years and he\'s never been anywhere near Delaware and Snyder at night.
 
 You look at the trees on Liacouras Walk. They\'ve gone completely gold this week. People are walking under them in sweaters, laughing, carrying coffee.
 
@@ -304,9 +304,9 @@ He hangs up.
 
 You stand on Liacouras Walk under the gold trees with the phone in your hand, and you think about forty-one thousand dollars, and Thanksgiving, and a man in a beautiful jacket straightening your father\'s collar.
 
-You think about every window in a yellow-and-green cab, broken, one at a time, carefully, so there\'d be nothing left. Not a robbery. Not a warning.
+You think about every window in a yellow-and-green cab, broken, one at a time, carefully, so there\'d be nothing left.
 
-A message. *Everybody in this city ends up friends with my family, one way or the other.*`,
+`,
     end: true
   },
   tag_end_lie_bad: {
@@ -357,7 +357,7 @@ mikey: And then I\'m gonna ask *you*. Sunday. Everybody\'s coming home Sunday.
 
 He hangs up.
 
-You stand on Liacouras Walk under the gold trees, and you think about Pop saying *don\'t make him choose*. You think you just made him choose. You don\'t know yet what he\'s going to pick.`,
+You stand on Liacouras Walk under the gold trees, and you think about Pop saying *don\'t make him choose*. You think you just made him choose.`,
     end: true
   }
 });
@@ -382,7 +382,7 @@ Object.assign(EH.episodes.s01e07, {
   ],
   onEnd: g => {
     g.recap('Pop owes the Iannucci family $41,000. Dante says: by Thanksgiving.');
-    g.recap(g.f('teddy_quit') ? 'Teddy walked away from the job, and his mother\'s forty thousand dollars, for you.' : 'Under I-95, you got your father away from Dante\'s men.');
+    g.recap(g.f('teddy_quit') && !g.f('teddy_refused') ? 'Teddy walked away from the job, and his mother\'s forty thousand dollars, for you.' : 'Under I-95, you got your father away from Dante\'s men.');
     g.recap('Jules lied to your mother for you.');
     g.recap('Monday morning, Pop\'s cab was found with every window broken.');
   }
