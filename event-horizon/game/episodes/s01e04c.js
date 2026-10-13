@@ -39,7 +39,7 @@ He's not fine. He sits down hard on the step, folded over his own knees, and he 
   },
   a4_nik_help: {
     night: true,
-    text: `You get down the four steps on your butt, one at a time, holding your arm up, and you sit next to him. You don't touch him. You just get your face where he can see it, the way you did with Heck three hours ago, three miles away.
+    text: `You get down the four steps on your butt, one at a time, holding your arm up, and you sit next to him. You don't touch him. You just get your face where he can see it.
 
 sam: Nik. Look at me. Not the arm. Me. In for four.
 
@@ -78,7 +78,7 @@ You sit there holding your arm up. You think: *I didn't know. Three weeks, and I
     clock: { time: '3:07 AM' },
     text: g => `Which is how you end up on the floor of the ninth-floor bathroom, between the last shower stall and the radiator, with Grace Lim kneeling over you with a curved needle and her suture practice kit, which she keeps under her bed in a tackle box that says **NOT A TACKLE BOX** in label-maker tape.
 
-Nik's sitting outside the door on the hallway carpet, guarding it. You can hear him breathing. In for four.
+Nik's sitting outside the door on the hallway carpet, guarding it. You can hear him breathing.${g.f('nik_panic') === 'helped' ? ' In for four.' : ''}
 
 ${{ laugh: 'You laughed when she put the needle in. You\'re still sort of laughing, in little hiccups, every time she pulls the thread through.', nobody: 'You grabbed her wrist and made her promise. She promised. She\'s still a little pale about it.', silent: 'You haven\'t made a sound. Forty-one tiles over your head. You\'ve counted them nine times.' }[g.f('cold')]}
 
@@ -108,7 +108,7 @@ grace: Who did this to you, Sam?`,
     night: true,
     text: `You tell her.
 
-You tell her about the cold at 11:51 and the bus on Spring Garden and the kid and the light. The world stopping, and you not stopping with it. The minute that's four seconds. The armored truck on Girard. The rowhouse on 15th Street. Heck, and his sobrina, and the truck with the steel bed rated six hundred pounds. You tell her in a flat, quiet voice, staring at the ceiling, and Grace keeps stitching while you talk. She doesn't stop once. Her hands are steady the whole time.
+You tell her about the cold at 11:51 and the bus on Spring Garden and the kid and the light. The world stopping, and you not stopping with it. The minute that's four seconds. The armored truck on Girard. The rowhouse on 15th Street. Heck, and his sobrina, and the tent, and the white truck idling on F Street. You tell her in a flat, quiet voice, staring at the ceiling, and Grace keeps stitching while you talk. She doesn't stop once. Her hands are steady the whole time.
 
 When you're done, she ties off the stitch and cuts the thread with a pair of tiny curved scissors.
 
@@ -210,7 +210,7 @@ jules: What happened to you?`,
     enter: g => { g.flag('jules4', 'lie'); g.bond('jules', { trust: -1 }); g.know('lie_bike', ['sam'], 'You told Jules you hit a car door on Lehigh and went through a bus shelter. She said "Okay."'); },
     text: g => `sam: Bike. Car door on Lehigh. I went through a bus shelter.
 
-It's a good lie. It's ninety percent true: there *was* a car door, there *was* a bus shelter. Your hand stays in your lap. Your voice stays flat.
+It's a good lie. It's built out of true parts, which is how Vinnie always said you build one. Your hand stays in your lap. Your voice stays flat.
 
 She ties off the stitch.
 
@@ -218,7 +218,7 @@ jules: Okay.
 
 Just that. She doesn't look up. She starts the next stitch.
 
-${g.hurt('handprint') ? 'She doesn\'t look at the handprint on your chest. She very carefully doesn\'t look at it, the whole time, the way you don\'t look at somebody crying on a train.' : 'She doesn\'t ask about the burns. She doesn\'t ask about anything.'}
+${g.hurt('handprint') ? 'She doesn\'t look at the handprint on your chest. She very carefully doesn\'t look at it, the whole time, the way you don\'t look at somebody crying on a train.' : (g.hurt('burned_arm') || g.hurt('burned_arms')) ? 'She doesn\'t ask about the burns. She doesn\'t ask about anything.' : 'She doesn\'t ask about anything.'}
 
 When she's done, she cuts the thread, and lays your ${g.f('f3') === 'bad' ? 'face back against the wall like it\'s something breakable' : 'arm down on your knee like it\'s something breakable'}, and stands up.
 
@@ -240,11 +240,11 @@ jules: A bus shelter.
 
 sam: Yeah.
 
-jules: And the bus shelter was on fire.
+jules: ${g.hurt('handprint') || g.hurt('burned_arm') || g.hurt('burned_arms') ? 'And the bus shelter was on fire.' : 'And the bus shelter threw a left hook.'}
 
 You don't say anything. She doesn't look up.
 
-jules: ${g.hurt('handprint') ? 'The bus shelter had *five fingers*, Kearney.' : 'Bus shelters don\'t burn people.'}
+jules: ${g.hurt('handprint') ? 'The bus shelter had *five fingers*, Kearney.' : (g.hurt('burned_arm') || g.hurt('burned_arms')) ? 'Bus shelters don\'t burn people.' : 'Bus shelters don\'t punch back.'}
 
 She finishes the last stitch in silence, and cuts the thread, and puts the needle down on the tile, very precisely, parallel to the grout line.
 
@@ -358,7 +358,7 @@ sam: Yeah.
 
 nik: Did we win?
 
-You think about the truck. The steel bed. ${g.f('heck_fate') === 'saved' ? 'The duck on the edge of the bathtub.' : 'The misting fans spraying cold water into an empty square.'} Brannigan's kind voice. *The minute.*
+You think about the truck. ${g.f('tent_seen') ? 'The steel bed. ' : ''}${g.f('heck_fate') === 'saved' ? 'The duck on the edge of the bathtub.' : 'The misting fans spraying cold water into an empty square.'} Brannigan's kind voice. *The minute.*
 
 ${g.f('heck_fate') === 'saved' ? 'sam: Yeah. This time.' : 'sam: No.'}
 

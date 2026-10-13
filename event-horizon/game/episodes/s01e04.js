@@ -11,7 +11,7 @@ EH.episode({
       card: { kind: 'cold' },
       night: true,
       loc: 'CARDONE HALL · 9TH FLOOR BATHROOM',
-      clock: { day: 'Sat', date: 'Sep 12', time: '3:07 AM' },
+      clock: { day: 'Sat', date: 'Sep 12', time: '2:58 AM' },
       text: `The tile is cold against your back, which is the only good thing about it.
 
 You're on the floor of the ninth-floor bathroom, between the last shower stall and the radiator, in a puddle of your own blood that's bigger than you'd like. Somebody's lime-green shower caddy is still sitting on the bench. A paper sign over the sinks says **PLEASE DO NOT LEAVE HAIR IN THE DRAINS — G.** with a frowny face.
@@ -28,7 +28,7 @@ sam: That's different from moving.
 
 grace: It is not different from moving to a *needle*.
 
-She tears open a little foil packet with her teeth. The smell of iodine hits you, sharp and yellow. Down the hall, a door opens and closes. Somebody's walking toward the bathroom in slippers, not hurrying, which means they don't know yet.
+She tears open a little foil packet with her teeth. The smell of iodine hits you, sharp and yellow. Out in the hall, on the other side of the door, Nik is sitting on the carpet. You can hear him breathing.
 
 grace: Have you ever had stitches?
 
@@ -60,7 +60,7 @@ She doesn't wait for you to react. She just puts the needle in.`,
         silent: 'You look at the ceiling. Forty-one tiles in the row over your head. Forty-one, like the beds. You don\'t make a sound. Grace notices that you don\'t make a sound, and something about it makes her mouth go thin.\n\ngrace: You can yell. It\'s three in the morning. Nobody\'s going to think it\'s weird. This floor yells at three in the morning.'
       }[g.f('cold')]}
 
-The footsteps stop outside the bathroom door.
+Down the hall, under a door, a lamp is on. It's always on.
 
 > TWO DAYS EARLIER.`,
       next: 'titles'
@@ -104,7 +104,7 @@ simone: Sit *down*.
 
 There's nowhere to sit. You lean against the fridge. She points at you with a Froot Loop.
 
-simone: I'm going to say this once, because I'm a generous woman and I was raised right. Juliet Pemberton came down off that roof on Sunday morning, and she walked past my door, and she was *humming*. Juliet doesn't hum. In four years of boarding school, I am told, she never once hummed. Now she's back to being a Victorian ghost, and you look like somebody ran you over with a Zamboni.
+simone: I'm going to say this once, because I'm a generous woman and I was raised right. Juliet Pemberton came down off that roof on Sunday morning, and she walked into our room, and she was *humming*. Juliet doesn't hum. In four years of high school, I am told, she never once hummed. Now she's back to being a Victorian ghost, and you look like somebody ran you over with a Zamboni.
 
 She crunches the Froot Loop.
 
@@ -139,7 +139,7 @@ simone: But I keep a list.`,
       enter: g => { g.flag('simone_roof', 'lied'); g.bond('simone', { tension: 1 }); },
       text: `sam: We talked. All night. That's it.
 
-simone: Mm-hm. And did you touch your ear, just now? Because you did. Juliet told the whole floor about that ear the first week. Juliet tells nobody *anything*, and she made an announcement about your ear.
+simone: Mm-hm. And did you touch your ear, just now? Because you did. You do it every time you fib. I noticed at move-in. I notice *everything*, Salvatore.
 
 You put your hand down.
 
@@ -212,7 +212,7 @@ simone: And Sam? Callum's a sweetheart. He's going to get hurt, and it's not goi
 
     /* ---------- Calc ---------- */
     a1_calc: {
-      loc: 'WACHMAN HALL · ROOM 015',
+      loc: 'WACHMAN HALL · ROOM 413',
       clock: { time: '2:00 PM' },
       text: g => `Calc recitation. The ventilation finally works now that nobody needs it, and the room is so cold that Jules is wearing a navy cardigan with the sleeves pulled down over her hands.
 
@@ -324,7 +324,7 @@ femi: You look like you got hit by a SEPTA bus.
 
 sam: You should see the bus.
 
-femi: I *did* see the bus. That's sort of my whole thing now.
+femi: I'd have seen it coming. That's sort of my whole thing now.
 
 He's thinner than he was two weeks ago. His Temple Econ hoodie hangs off him. There's a white plastic hospital band on his left wrist, the kind they give you at the ER, and he catches you looking and pulls his sleeve down over it.
 
@@ -375,7 +375,7 @@ femi: I hear you.
 
 sam: But?
 
-femi: But you're asking me to stay invisible, man. You get to be the Broad Street Blur. *I'm* not anybody. They're the first people in three weeks who think I'm *something*.
+femi: But you're asking me to stay invisible, man. You get to be *somebody*. People see you when you walk into a room. *I'm* not anybody. They're the first people in three weeks who think I'm *something*.
 
 He shrugs his backpack higher on his shoulder.
 
@@ -435,7 +435,7 @@ He doesn't say whether he's going back on the twenty-second. You don't ask him.`
       night: true,
       loc: 'CARDONE HALL · ROOF',
       clock: { time: '8:30 PM' },
-      enter: g => { g.mastery(3); g.bond('nik', { trust: 1 }); g.know('mcpherson', ['sam', 'nik'], 'Nik mapped it: the shimmer you saw in the Slip and the sound Bree heard come from the same place. The sky over McPherson Square, Kensington.'); },
+      enter: g => { g.mastery(3); g.bond('nik', { trust: 1 }); g.know('bree_scream', ['nik']); g.know('mcpherson', ['sam', 'nik'], 'Nik mapped it: the shimmer you saw in the Slip and the sound Bree heard come from the same place. The sky over McPherson Square, Kensington.'); },
       text: g => `Nik has a map.
 
 It's a printout of a satellite image of Kensington, taped together from six sheets of paper, weighted at the corners with a Pepsi can, his laptop, a rock, and his own sneaker. He's drawn on it in red Sharpie.
@@ -512,7 +512,7 @@ mikey: Yeah. Okay.
 
 He doesn't say anything for a second. You can hear the city behind him: a siren, a guy yelling about a parking spot, Mikey's partner chewing.
 
-mikey: Hey, so, unrelated. The task group's got a statement from a lady at 15th and Lehigh. Saturday night, the fire. Says a kid in a black hoodie came across the roof from next door and pulled her and the babies out the back. Says he had a Philly accent. Says he said *youse.*
+mikey: Hey, so, unrelated. The unit they borrowed me to got a statement from a lady at 15th and Lehigh. Saturday night, the fire. Says a kid in a black hoodie came across the roof from next door and pulled her and her two kids out the window and down the wall. Says he had a Philly accent. Says he said *youse.*
 
 He lets that sit.
 
@@ -534,7 +534,7 @@ mikey: Yeah, yeah. I saw the blackout on the news.
 
 A pause. He sounds almost relieved.
 
-mikey: It's just, the task group, they're putting together a profile. Young male, local, athletic, *works nights*. And I keep reading it and thinking, that's half the guys I grew up with. That's *you*. And I hate it. I hate that I think it.
+mikey: It's just, the Second Hand guys, they're putting together a profile. Young male, local, athletic, *works nights*. And I keep reading it and thinking, that's half the guys I grew up with. That's *you*. And I hate it. I hate that I think it.
 
 mikey: Come down Sunday. Eat something. You sound thin.`,
       next: '@hub'
@@ -588,7 +588,7 @@ He hangs up.`,
 
     a1_ciro: {
       loc: 'CIRO\'S PIZZA · CECIL B. MOORE AVE',
-      enter: g => { g.money(14 * 3 + 22); g.bond('ciro', { affection: 1 }); },
+      enter: g => { g.money(14 * 4 + 22); g.bond('ciro', { affection: 1 }); },
       text: `Ciro's is slammed, because the heat broke and everybody in North Philly remembered they like hot food.
 
 ciro: Salvatore. You're late. You're late like SEPTA. You're late like my *wife*.
@@ -609,7 +609,7 @@ Across the hall, under Jules's door, her lamp is on. You lie in the dark and loo
 
 You don't dream about the laughing.
 
-You sleep eleven hours. You wake up starving, sore, and almost human.`,
+You sleep ten hours. You wake up starving, sore, and almost human.`,
       next: '@hub'
     },
 
@@ -618,12 +618,12 @@ You sleep eleven hours. You wake up starving, sore, and almost human.`,
       night: true,
       loc: 'CARDONE HALL · 9TH FLOOR LOUNGE',
       clock: { day: 'Fri', date: 'Sep 11', time: '10:52 PM' },
-      enter: g => { if (g.f('thu_slept')) g.sleep(11); else g.sleep(5); },
+      enter: g => { if (g.f('thu_slept')) g.sleep(10); else g.sleep(5); },
       text: g => `Friday goes by like a train you're watching from the platform.
 
 At 8:46 in the morning, the whole campus goes quiet for a minute, and the Bell Tower chimes once, and you stand on the steps of Charles Library with a coffee in your hand and think about your brother, who was one year old that day and doesn't remember it, and who enlisted anyway, years later, because of a day he doesn't remember. You text him a picture of the Bell Tower. He sends back a flag emoji and *love you sammy* in all lowercase like Gigi.
 
-${g.f('mikey4') === 'caught' ? 'It\'s the first time he\'s said it since he hung up on you. You read it a few times.\n\n' : ''}At night, the ninth floor does movie night in the lounge, because the heat's gone and everybody's alive and nineteen. Simone picks *Moonstruck*, "for Sam's people." Nik brings two bags of popcorn and his entire heart. Devontae falls asleep in fifteen minutes.
+${g.f('mikey4') === 'caught' ? 'It\'s the first time he\'s said it since he hung up on you. You read it a few times.\n\n' : ''}At night, the ninth floor does movie night in the lounge, because the heat's gone and everybody's alive and eighteen. Simone picks *Moonstruck*, "for Sam's people." Nik brings two bags of popcorn and his entire heart. Devontae falls asleep in fifteen minutes.
 
 Jules comes. Callum isn't with her. She sits on the other end of the couch from you, with Simone between you like a demilitarized zone, and she watches Cher slap Nicolas Cage and say *snap out of it*, and she laughs once, quietly, and when you look over, she's already looking at you.
 
@@ -632,6 +632,7 @@ At 10:52, your phone buzzes against your leg.
 TXT teddy: hes going to them
 TXT teddy: they texted his tia from marisols phone. "its marisol. they helped me. they can help u. mcpherson sq. 11 tonite. come alone"
 TXT teddy: its not her. he knows its not her. he went anyway
+TXT teddy: he wont even hold his sobrina anymore. shes 2. he says hell burn her
 TXT teddy: im at kensington and somerset. i cant get close. he put bree on the ground for trying
 TXT teddy: please
 
@@ -665,7 +666,7 @@ In the hallway, you pick up, and you don't hear Teddy. You hear Bree, screaming,
 
 Then Teddy, close, out of breath:
 
-teddy: He's in the square. They've got a tent. Sam. *Sam*. I can't—
+teddy: He's in the square. They've got a tent. Cold guy. *Please*. I can't—
 
 The call drops.
 

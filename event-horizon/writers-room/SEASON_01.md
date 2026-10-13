@@ -43,3 +43,11 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
   - Jules first uses "Sam" in the 4:12 Lean beat.
   - If Sam stayed on the roof, Halcyon takes Bree (`bree_taken`).
   - Teddy has Sam's number from the Port Richmond stoop. Bree saved it as WAWA.
+- **E4 "Sutures"** was written for this playthrough's E3 save. Deviations from the plan:
+  - Heck is an ally now, so this isn't a crew fight. Halcyon lures him to McPherson Square with a text sent from Marisol's phone, and a sedative dart turns him on Sam.
+  - Rewind becomes voluntary here, as a story gift (`g.unlock`), with no XP cost.
+  - Grace starts the stitches; Jules finishes them, and Sam lies to her or deflects.
+  - The x-ray shows fractures that are ten days into healing.
+  - Brannigan speaks for the first time ("the minute").
+  - Nik maps the Kensington shimmer to McPherson Square.
+  - Femi is in Halcyon's cohort, with a follow-up on 9/22.

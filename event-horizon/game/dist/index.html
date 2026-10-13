@@ -7731,6 +7731,1911 @@ Your phone buzzes in your pocket. ${g.f('fire') === 'stayed' ? (g.knows('sam_num
   }
 });
 
+/* s01e04.js */
+/* S1 · E4 · SUTURES, part 1 of 3: meta, cold open, Act One ("Normal"). */
+EH.episode({
+  id: 's01e04', season: 1, number: 4, title: 'Sutures', look: 's1',
+  cast: ['sam', 'jules', 'nik', 'simone', 'grace', 'femi', 'teddy', 'bree', 'heck', 'mikey', 'ciro'],
+  start: 'cold_open',
+  xp: 5,
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      night: true,
+      loc: 'CARDONE HALL · 9TH FLOOR BATHROOM',
+      clock: { day: 'Sat', date: 'Sep 12', time: '2:58 AM' },
+      text: `The tile is cold against your back, which is the only good thing about it.
+
+You're on the floor of the ninth-floor bathroom, between the last shower stall and the radiator, in a puddle of your own blood that's bigger than you'd like. Somebody's lime-green shower caddy is still sitting on the bench. A paper sign over the sinks says **PLEASE DO NOT LEAVE HAIR IN THE DRAINS — G.** with a frowny face.
+
+G. is kneeling over you in a Temple Med sweatshirt and one fuzzy sock, threading a curved needle by the light of her phone.
+
+grace: Hold still.
+
+sam: I am holding still.
+
+grace: You're shaking.
+
+sam: That's different from moving.
+
+grace: It is not different from moving to a *needle*.
+
+She tears open a little foil packet with her teeth. The smell of iodine hits you, sharp and yellow. Out in the hall, on the other side of the door, Nik is sitting on the carpet. You can hear him breathing.
+
+grace: Have you ever had stitches?
+
+sam: Twice. Chin, from a shopping cart. Eyebrow, from Vinnie. Have you ever *done* stitches?
+
+grace: Forty times.
+
+sam: On people?
+
+Grace looks at you over the needle. Her eyes are very tired and very steady.
+
+grace: On bananas.
+
+She doesn't wait for you to react. She just puts the needle in.`,
+      choices: [
+        { text: 'Laugh. It hurts like hell. Laugh anyway.', tag: 'Laugh',
+          fx: g => { g.flag('cold', 'laugh'); g.bond('grace', { affection: 1 }); }, go: 'cold_after' },
+        { text: 'Grab her wrist. "Don\'t call anybody. Please. Nobody."', tag: 'Nobody',
+          fx: g => { g.flag('cold', 'nobody'); g.bond('grace', { tension: 1 }); }, go: 'cold_after' },
+        { text: 'Look at the ceiling. Count the tiles. Don\'t make a sound.', tag: 'Silent',
+          fx: g => { g.flag('cold', 'silent'); g.bond('grace', { respect: 1 }); }, go: 'cold_after' }
+      ]
+    },
+    cold_after: {
+      night: true,
+      text: g => `${{
+        laugh: 'You laugh. It comes out of you in pieces, wet and stupid, and every piece of it hurts something.\n\ngrace: Okay. Good. Laughing means you\'re not in shock. Or it means you\'re in shock. It\'s one of those.',
+        nobody: 'Your hand closes around her wrist before you decide to do it. Her pulse is going fast under your fingers. Faster than yours, which isn\'t saying much, because you don\'t have that much blood left to push around.\n\ngrace: Let go of the hand with the needle in it, Sam.\n\nYou let go.\n\ngrace: Okay.',
+        silent: 'You look at the ceiling. Forty-one tiles in the row over your head. Forty-one, like the beds. You don\'t make a sound. Grace notices that you don\'t make a sound, and something about it makes her mouth go thin.\n\ngrace: You can yell. It\'s three in the morning. Nobody\'s going to think it\'s weird. This floor yells at three in the morning.'
+      }[g.f('cold')]}
+
+Down the hall, under a door, a lamp is on. It's always on.
+
+> TWO DAYS EARLIER.`,
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_week' },
+
+    /* ================= ACT ONE: NORMAL ================= */
+    a1_week: {
+      card: { kind: 'act', label: 'Act One', title: 'Normal' },
+      loc: 'CARDONE HALL · ROOM 9-14',
+      clock: { day: 'Thu', date: 'Sep 10', time: '7:50 AM' },
+      text: g => `It's been four days since the roof.
+
+Here is what has happened in four days. The heat broke on Tuesday like a fever, all at once, with a thunderstorm that flooded the Broad Street Line at Cecil B. Moore and turned the steps of the Bell Tower into a waterfall. It's sixty-eight degrees this morning. People are wearing *sweaters*, out of pure relief. Nik wore a scarf to Psych and got made fun of and didn't care.
+
+Callum came back on Wednesday with two more iced coffees and took Jules to dinner at a place in Rittenhouse with no sign on the door. She came back at eleven and her lamp stayed on until two. You know because your door faces her door. You know because you were awake.
+
+You've seen her eleven times since Sunday morning. You've counted. In the hallway, at the elevator, in Calc, at the kitchen sink at midnight both reaching for the same sponge. Eleven times, and every single time she's said *Kearney* in exactly the voice she used the day you carried her refrigerator up nine flights. Polite. Dry. Perfectly, deliberately normal.
+
+As if it didn't happen.
+
+${g.f('roof_end') === 'lean' ? 'Except you were there. You were close enough to feel her breathe. *Not like this,* she said, with her forehead against yours. Not *no*. *Not like this.* You\'ve thought about the difference between those two things more than you\'ve thought about anything in your life, including calculus, including God.' : 'Except you were there.'}
+
+And then there's the other thing. Every night since Sunday, when you close your eyes, you hear it: a crowd breathing, a clock running the wrong way, and very far up, somebody laughing.
+
+Bree texts you on Tuesday at 3 a.m.: *u hear it too now dont u.* You didn't answer. She sent a skull emoji. Then: *welcome to the club wawa. it doesnt have jackets.*`,
+      next: 'a1_simone'
+    },
+
+    a1_simone: {
+      loc: 'CARDONE HALL · 9TH FLOOR KITCHEN',
+      clock: { time: '8:15 AM' },
+      text: `The ninth-floor kitchen has one working burner, a microwave with a note taped to it that reads **FISH IS A HATE CRIME**, and Simone Okonkwo-Hayes, sitting on the counter in a silk headscarf and a Spelman sweatshirt, eating dry cereal out of the box and waiting for you. She was obviously waiting for you.
+
+simone: Salvatore Kearney.
+
+sam: Morning.
+
+simone: Sit *down*.
+
+There's nowhere to sit. You lean against the fridge. She points at you with a Froot Loop.
+
+simone: I'm going to say this once, because I'm a generous woman and I was raised right. Juliet Pemberton came down off that roof on Sunday morning, and she walked into our room, and she was *humming*. Juliet doesn't hum. In four years of high school, I am told, she never once hummed. Now she's back to being a Victorian ghost, and you look like somebody ran you over with a Zamboni.
+
+She crunches the Froot Loop.
+
+simone: So. What happened on that roof?`,
+      choices: [
+        { text: '"We talked. All night. That\'s it. That\'s all."', tag: 'Half true',
+          check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['simone'], label: 'Keep the roof private', on: { strong: 'a1_sim_lie_strong', weak: 'a1_sim_lie_weak', miss: 'a1_sim_lie_miss' } } },
+        { text: '"I leaned in. She said, *not like this.*" Tell her the truth. Somebody should know.', if: g => g.f('roof_end') === 'lean', tag: 'The truth',
+          fx: g => { g.flag('simone_roof', 'truth'); g.bond('simone', { trust: 2, affection: 1 }); g.know('almost_kiss', ['simone']); }, go: 'a1_sim_truth' },
+        { text: '"Simone. I love you. I\'m not doing this before coffee."', tag: 'Dodge',
+          check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', label: 'Get out alive', on: { strong: 'a1_sim_dodge', weak: 'a1_sim_dodge', miss: 'a1_sim_dodge_miss' } } }
+      ]
+    },
+    a1_sim_lie_strong: {
+      enter: g => { g.flag('simone_roof', 'lied'); },
+      text: `sam: We talked. All night. That's it.
+
+Simone studies you for a long, terrible second, the way she studies a cold read before an audition.
+
+simone: Hm.
+
+She hands you the cereal box. You take it, because you're hungry, because you're always hungry now.
+
+simone: I believe that you talked. I believe it was all night. I'm going to choose to believe the third thing for now, Salvatore, because I like you, and because I have a nine a.m.
+
+She hops down off the counter.
+
+simone: But I keep a list.`,
+      next: 'a1_calc'
+    },
+    a1_sim_lie_weak: {
+      enter: g => { g.flag('simone_roof', 'lied'); g.bond('simone', { tension: 1 }); },
+      text: `sam: We talked. All night. That's it.
+
+simone: Mm-hm. And did you touch your ear, just now? Because you did. You do it every time you fib. I noticed at move-in. I notice *everything*, Salvatore.
+
+You put your hand down.
+
+simone: I'm not going to push. I'm going to *watch*. It's much worse.`,
+      next: 'a1_calc'
+    },
+    a1_sim_lie_miss: {
+      enter: g => { g.flag('simone_roof', 'caught'); g.bond('simone', { tension: 1, trust: -1 }); },
+      text: `Simone puts the cereal box down.
+
+simone: Okay. So here's my problem. You're a terrible liar, and she's a *wonderful* liar, and between the two of you I've got one whole lie and no truth. And I am sitting in the middle of it, being *loyal* to both of you, for free.
+
+She slides off the counter and stops in the doorway.
+
+simone: I give everyone one chance to tell me themselves, Sam. That was yours. It's fine. I'll find out the other way. I always do.`,
+      next: 'a1_calc'
+    },
+    a1_sim_dodge: {
+      enter: g => { g.flag('simone_roof', 'dodged'); g.bond('simone', { affection: 1 }); },
+      text: `sam: Simone. I love you. I'm not doing this before coffee.
+
+She stares at you. Then she laughs, the big one, the one that carries down the hallway.
+
+simone: Fine. *Fine.* You get one coffee. I'll be at Saxbys at four. Bring the truth and a muffin.
+
+She hops down and pats your cheek on her way out, twice, like an aunt.
+
+simone: Blueberry. Don't you dare bring me bran.`,
+      next: 'a1_calc'
+    },
+    a1_sim_dodge_miss: {
+      enter: g => { g.flag('simone_roof', 'dodged'); g.bond('simone', { tension: 1 }); },
+      text: `sam: Simone. I love you. I'm not doing this before coffee.
+
+simone: Don't you *I love you* me, Salvatore. I've been I-love-you'd by professionals.
+
+She hops down off the counter and stops in the doorway, with the cereal box under her arm like a clutch.
+
+simone: I give everyone one chance to tell me themselves. You just spent yours on a joke. That's fine. That's very *you*. I'll find out the other way. I always do.`,
+      next: 'a1_calc'
+    },
+    a1_sim_truth: {
+      text: `sam: I leaned in. She said, *not like this.*
+
+Simone doesn't say anything at all. For Simone, that's a medical event. She puts the Froot Loops down very carefully on the counter.
+
+simone: She said *not like this*.
+
+sam: Yeah.
+
+simone: Not *no*.
+
+sam: That's what I keep— yeah.
+
+simone: Oh, *Salvatore*.
+
+She hops down off the counter and hugs you, hard, cereal crumbs and all. She smells like coconut oil and Froot Loops. When she lets go, she holds you at arm's length by both shoulders, and her face is not joking at all.
+
+simone: Okay. Listen to me. She's going to be cold to you for a while. That's not because she doesn't mean it. It's because she *does*, and she has no idea what to do with that, and Juliet Pemberton has never in her life not known what to do. Don't take it personally. Take it seriously.
+
+sam: What's the difference?
+
+simone: About four years of therapy.
+
+She picks the cereal back up.
+
+simone: And Sam? Callum's a sweetheart. He's going to get hurt, and it's not going to be his fault. Don't you ever make him the bad guy. Not even in your head.`,
+      next: 'a1_calc'
+    },
+
+    /* ---------- Calc ---------- */
+    a1_calc: {
+      loc: 'WACHMAN HALL · ROOM 413',
+      clock: { time: '2:00 PM' },
+      text: g => `Calc recitation. The ventilation finally works now that nobody needs it, and the room is so cold that Jules is wearing a navy cardigan with the sleeves pulled down over her hands.
+
+She's in her usual seat. The seat next to her is empty. It's always empty. It's *your* seat; it's been your seat since the day the TA paired you as study partners and she looked at you like you were a parking ticket.
+
+You sit in it.
+
+jules: Kearney.
+
+sam: Pemberton.
+
+jules: You did the problem set.
+
+sam: I did *most* of the problem set.
+
+jules: You did the first four problems and then drew a horse.
+
+sam: That's a *dog*.
+
+jules: It has hooves.
+
+She slides her problem set over without looking at you, so you can see number seven. It's the most generous thing she's done all week. Up at the front, the TA is writing the squeeze theorem on the board, and Femi Ojo is leaning against the wall by the door, where he always is, where nobody but you ever looks.
+
+Halfway through, she writes something in the margin of her notes and tilts the page toward you, just enough.
+
+*We should be normal.*
+
+You look at it. You look at her. She's looking very hard at the squeeze theorem.
+
+${g.f('roof_end') === 'lean' ? 'You know what she means. *Not like this.* Not while she\'s someone else\'s.' : 'You know what she means. You just don\'t know if she\'s right.'}`,
+      choices: [
+        { text: 'Write back: *Okay.* Mean it. Give her the room.', tag: 'Okay',
+          fx: g => { g.flag('normal', 'okay'); g.bond('jules', { respect: 2, trust: 1 }); }, go: 'a1_calc_okay' },
+        { text: 'Write back: *Define normal.* Then draw a little squeeze theorem with two hearts squeezing a sad face.', tag: 'Banter',
+          check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', near: ['jules'], label: 'Make her break', on: { strong: 'a1_calc_banter_strong', weak: 'a1_calc_banter_weak', miss: 'a1_calc_banter_miss' } } },
+        { text: 'Write back: *I\'d do it again.*', tag: 'The truth',
+          fx: g => { g.flag('normal', 'again'); g.bond('jules', { affection: 1, trust: 1 }); }, go: 'a1_calc_again' }
+      ]
+    },
+    a1_calc_okay: {
+      text: `You write *Okay* under her line, small, in pencil.
+
+She reads it. She doesn't look at you. But the pen in her hand stops moving for a second, and then she turns the page, and her shoulder, which has been an inch from yours for forty minutes without touching it, settles.
+
+It's not nothing. It's the exact size of nothing, and you know her well enough by now to know that's on purpose.`,
+      next: 'a1_femi'
+    },
+    a1_calc_banter_strong: {
+      enter: g => { g.flag('normal', 'banter'); g.bond('jules', { affection: 1, respect: 1 }); },
+      text: `You write *Define normal*, and underneath it you draw the squeeze theorem: two little hearts, one on each side, squeezing a frowny face that is very clearly having a terrible time.
+
+She looks at it.
+
+She puts the back of her wrist against her mouth, hard. Her shoulders shake once. The TA turns around, and she's suddenly *fascinated* by her calculator.
+
+When the TA turns back, she writes underneath, very neatly:
+
+*The limit of that face is still you.*
+
+And then, smaller:
+
+*Shut up. Do number seven.*
+
+You do number seven. You do it grinning like an idiot.`,
+      next: 'a1_femi'
+    },
+    a1_calc_banter_weak: {
+      enter: g => { g.flag('normal', 'banter'); },
+      text: `You write *Define normal* and draw two hearts squeezing a sad face.
+
+She looks at it for a long moment. Then she very carefully erases the frowny face with the end of her pencil, and draws in its place a perfectly neutral line.
+
+*Normal,* she writes.
+
+It's funny. It's also not a joke. You can't tell which part she wants you to see.`,
+      next: 'a1_femi'
+    },
+    a1_calc_banter_miss: {
+      enter: g => { g.flag('normal', 'banter'); g.bond('jules', { respect: -1 }); },
+      text: `You write *Define normal* and draw two hearts squeezing a sad face.
+
+She looks at it. Her face does nothing at all.
+
+Then she tears the corner off the page, folds it in half, and puts it in her cardigan pocket, and for the rest of the hour she works with her notes angled away from you.
+
+It's the folding that gets you. She didn't throw it away. She *kept* it, where you can't see it. You don't know what that means, and you spend the rest of recitation not knowing.`,
+      next: 'a1_femi'
+    },
+    a1_calc_again: {
+      text: `You write *I'd do it again* under her line.
+
+She reads it, and the pen in her hand goes perfectly still.
+
+For a long moment, nothing. Up front, the TA drops a marker, and half the room laughs, and she doesn't. Then she writes, without looking at you, in handwriting slightly less neat than usual:
+
+*I know. That's the problem.*
+
+She turns the page. She doesn't look at you again for the rest of the hour. But when recitation ends and everyone stands, she leaves her cardigan on the back of the chair, and you have to run it down the hall to her, and when she takes it from you, your fingers touch for exactly as long as they have to and not one second longer, and you both know exactly how long that was.`,
+      next: 'a1_femi'
+    },
+
+    /* ---------- Femi ---------- */
+    a1_femi: {
+      loc: 'WACHMAN HALL · HALLWAY',
+      clock: { time: '2:55 PM' },
+      text: g => `Femi catches you in the hallway after, falling into step beside you like a guy who's used to nobody noticing when he does.
+
+femi: You look like you got hit by a SEPTA bus.
+
+sam: You should see the bus.
+
+femi: I'd have seen it coming. That's sort of my whole thing now.
+
+He's thinner than he was two weeks ago. His Temple Econ hoodie hangs off him. There's a white plastic hospital band on his left wrist, the kind they give you at the ER, and he catches you looking and pulls his sleeve down over it.
+
+sam: Femi. What's that?
+
+He doesn't answer right away. A girl from your Psych section walks straight into his shoulder, says *sorry* to the air three feet to his left, and keeps going.
+
+femi: ${g.f('femi_warned') && g.f('femi_warned') !== 'none' ? 'I know what you said. I *know*. But' : 'The wellness study. Halcyon. The flyers were everywhere,'} they called it a cohort. I went Tuesday. Five hundred dollars, cash, in an envelope, Sam. They took eight vials of blood. A woman did an eye test where she sat across from me and wrote down how long it took her to *forget I was there*. Eleven seconds. She was so *excited*.
+
+He laughs. It's a thin sound.
+
+femi: She looked at me. For eleven seconds, somebody actually looked at me like I was interesting. Do you know how long it's been?
+
+He holds up his wrist and pulls the sleeve back. The band reads **HCW-COHORT 2 · 031 · F/U 09/22**.
+
+femi: Follow-up's the twenty-second. They said they can help. They said there's a *name* for what I have.`,
+      choices: [
+        { text: '"Don\'t go back. They took a girl in Fishtown, Femi. Marisol Reyes. She went to their study and never came home."', if: g => g.knows('marisol'), tag: 'Marisol',
+          check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', bonus: 1, bonusLabel: 'You know about Marisol', label: 'Keep Femi away from Halcyon', on: { strong: 'a1_femi_strong', weak: 'a1_femi_weak', miss: 'a1_femi_miss' } } },
+        { text: '"Don\'t go back. Please. I can\'t tell you how I know. Just don\'t."', if: g => !g.knows('marisol'),
+          check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', label: 'Keep Femi away from Halcyon', on: { strong: 'a1_femi_strong', weak: 'a1_femi_weak', miss: 'a1_femi_miss' } } },
+        { text: '"I see you. I always see you. You don\'t need them for that."', tag: 'See him',
+          fx: g => { g.flag('femi4', 'seen'); g.bond('femi', { affection: 2, trust: 1 }); }, go: 'a1_femi_seen' }
+      ]
+    },
+    a1_femi_strong: {
+      enter: g => { g.flag('femi4', 'warned'); g.flag('femi_warned', 'strong'); g.bond('femi', { trust: 2 }); if (g.knows('marisol')) g.know('marisol', ['femi']); },
+      text: g => `${g.knows('marisol') ? 'sam: Marisol Reyes. Nineteen. She popped lightbulbs. She went to their study and her mother got a text from her phone that said *im fine*, and nobody\'s seen her since. Femi. They\'re not studying people. They\'re *collecting* them.' : 'sam: I can\'t tell you how I know. I just do. Please.'}
+
+Femi stops walking. Somebody behind him walks into him, swears at nobody, and steps around.
+
+femi: …Okay.
+
+sam: Okay?
+
+femi: You're the only person who's looked me in the eye in three weeks. If you tell me not to go, I won't go.
+
+He pulls the sleeve back down over the band.
+
+femi: But I'm keeping the five hundred. I'm invisible, not stupid.`,
+      next: 'a1_hub'
+    },
+    a1_femi_weak: {
+      enter: g => { g.flag('femi4', 'maybe'); g.flag('femi_warned', 'weak'); g.bond('femi', { trust: 1 }); },
+      text: `Femi listens. He really does. That's the thing about Femi: he listens to everything, because he's got nothing else to do.
+
+femi: I hear you.
+
+sam: But?
+
+femi: But you're asking me to stay invisible, man. You get to be *somebody*. People see you when you walk into a room. *I'm* not anybody. They're the first people in three weeks who think I'm *something*.
+
+He shrugs his backpack higher on his shoulder.
+
+femi: I'll think about it. That's honest. That's the most honest I can be.`,
+      next: 'a1_hub'
+    },
+    a1_femi_miss: {
+      enter: g => { g.flag('femi4', 'going'); g.bond('femi', { tension: 1 }); },
+      text: `femi: Come on.
+
+He says it gently, which is worse.
+
+femi: You don't get to tell me what to be scared of, Sam. You don't even know what it's *like*. Nobody's forgotten *you* in eleven seconds.
+
+He's already walking away. Within ten feet, the hallway has closed around him like water, and even you have to look twice to find him again.`,
+      next: 'a1_hub'
+    },
+    a1_femi_seen: {
+      text: `sam: I see you. I always see you. You don't need them for that.
+
+Femi looks at you for a long second. His eyes go bright, and he looks down at his sneakers, fast.
+
+femi: That's really corny, man.
+
+sam: Yeah.
+
+femi: Like, *really* corny.
+
+sam: I know.
+
+femi: …Thank you.
+
+He doesn't say whether he's going back on the twenty-second. You don't ask him.`,
+      next: 'a1_hub'
+    },
+
+    /* ---------- Thursday hub ---------- */
+    a1_hub: {
+      loc: 'THURSDAY · SEPTEMBER 10',
+      clock: { time: '4:00 PM' },
+      text: `The afternoon goes gold and cool over Broad Street. You have the evening. Not all of it: you've got a Psych reading, a sleep debt you can feel in your teeth, and a city that won't stop happening.`,
+      hub: {
+        slots: 2, label: 'Thursday evening',
+        blurb: 'Choose two. The rest will happen without you.',
+        options: [
+          { id: 'thu_nik', text: 'Roof with Nik. He says he\'s "found something" in the Kensington data and won\'t say what over text.', cost: 1, tag: 'Nik', go: 'a1_nik' },
+          { id: 'thu_teddy', text: 'Text Teddy. You haven\'t heard from him since the alley. You haven\'t heard anything about Heck.', cost: 1, tag: 'Teddy', go: 'a1_teddy' },
+          { id: 'thu_mikey', text: 'Mikey\'s been calling. Three missed calls. Call him back.', cost: 1, tag: 'Mikey', go: 'a1_mikey' },
+          { id: 'thu_ciro', text: 'Pick up a dinner shift at Ciro\'s. The cash is starting to look thin.', cost: 1, tag: 'Money', go: 'a1_ciro' },
+          { id: 'thu_sleep', text: 'Go to bed early like a grandmother. Actually sleep.', cost: 1, tag: 'Rest · pays off Sleep Debt', go: 'a1_sleep' }
+        ],
+        done: 'a1_friday'
+      }
+    },
+
+    a1_nik: {
+      night: true,
+      loc: 'CARDONE HALL · ROOF',
+      clock: { time: '8:30 PM' },
+      enter: g => { g.mastery(3); g.bond('nik', { trust: 1 }); g.know('bree_scream', ['nik']); g.know('mcpherson', ['sam', 'nik'], 'Nik mapped it: the shimmer you saw in the Slip and the sound Bree heard come from the same place. The sky over McPherson Square, Kensington.'); },
+      text: g => `Nik has a map.
+
+It's a printout of a satellite image of Kensington, taped together from six sheets of paper, weighted at the corners with a Pepsi can, his laptop, a rock, and his own sneaker. He's drawn on it in red Sharpie.
+
+nik: Okay. So. Trial forty-four. You were on this roof, facing this way, and you said the shimmer was *past the El, past Kensington*. I got the bearing off the stars, which, you're welcome, I learned celestial navigation in four days from a YouTube channel run by a retired Coast Guard guy named Dale.
+
+He draws a red line from Cardone Hall out across the map, northeast.
+
+nik: Then Bree. She said she was on the El platform at Girard, and the sound came from *up*, *over Kensington*. So I took Girard station, and I drew every line that's *up and over Kensington* from there…
+
+He draws a second red line. It crosses the first.
+
+nik: …and they meet. Here.
+
+He taps the paper. Under his finger, between Kensington Avenue and F Street, there's a square of green with a building in the middle.
+
+nik: McPherson Square. There's a library. It's the size of one city block. Your shimmer was the size of one city block.
+
+sam: So what's there?
+
+nik: Nothing! That's the thing! It's a *library*! It's a library and some benches and a lot of people having the worst day of their lives. But whatever you saw breathing in the Slip, and whatever Bree heard laughing in the Hitch, it was right *over* it.
+
+He sits back on his heels. In the headlamp, his face looks young and very scared and very, very interested.
+
+nik: Bro. I think something's *in* the sky there. Like, in the time of the sky. I don't have words for it yet. Dale doesn't have a video for it.
+
+You run Slip drills with him until ten. You can hold it a little longer now. Seventy-five seconds. You're getting better at it. You try not to think about what *better* means.`,
+      next: '@hub'
+    },
+
+    a1_teddy: {
+      enter: g => { g.flag('teddy_check'); g.know('heck_burning', ['sam', 'teddy', 'bree', 'heck'], 'Heck hasn\'t cooled down since the fire on 15th Street. The heat broke Tuesday. He didn\'t.'); g.know('teddy_mother', ['sam'], 'Teddy\'s mother, Halina Kowal, needs a kidney. The robbery money was for her transplant evaluation at Jefferson.'); g.bond('teddy', { trust: 1 }); },
+      text: `You text him: *hows the hand.*
+
+Twenty minutes. Then:
+
+TXT teddy: bad. bree wrapped it. it looks like a ham
+TXT teddy: thats not why youre texting
+
+TXT sam: hows heck
+
+A long pause. The three dots appear and disappear four times.
+
+TXT teddy: not good
+TXT teddy: he hasnt cooled down. not since saturday. its 68 out and hes at 104. his tia made him sleep in the bathtub with the cold water running. the water came out of the drain warm
+TXT teddy: he wont go to a doctor. a doctor would put him in a computer. a computer is a list
+TXT teddy: he keeps saying hes going to hurt somebody
+
+TXT sam: what do you need
+
+The dots again. Then a longer message, the longest he's ever sent you.
+
+TXT teddy: listen. jefferson wants 40k before they put my mom on the list. thats what the truck was. bree cant sleep. heck is turning into a stove. if i call you its because i dont have anybody else to call
+
+TXT teddy: thats all
+
+You read it three times. Then you put the phone face down on your desk, and you don't sleep for a while.`,
+      next: '@hub'
+    },
+
+    a1_mikey: {
+      enter: g => { g.bond('mikey', { affection: 1 }); },
+      text: g => `Mikey picks up on the first ring.
+
+mikey: *Sammy.* Jesus. I was about to send a car.
+
+sam: You can't send a car, you're a car.
+
+mikey: I'm a car with a radio. Listen. Tomorrow's the eleventh. They're doing the thing at the firehouse on Reed Street, the bell. Pop's coming. Ma's making the cookies with the pignoli. You should come down.
+
+sam: I've got class.
+
+mikey: Yeah. Okay.
+
+He doesn't say anything for a second. You can hear the city behind him: a siren, a guy yelling about a parking spot, Mikey's partner chewing.
+
+mikey: Hey, so, unrelated. The unit they borrowed me to got a statement from a lady at 15th and Lehigh. Saturday night, the fire. Says a kid in a black hoodie came across the roof from next door and pulled her and her two kids out the window and down the wall. Says he had a Philly accent. Says he said *youse.*
+
+He lets that sit.
+
+mikey: Called the baby *the little guy*. Called her *ma'am*. Ran so fast she thought he was two people. ${g.f('costume') === 'hoodie' ? 'And she says he had an Eagles cap on backward, which, I mean, every guy in Philly, but.' : ''}
+
+mikey: Where were you Saturday night, Sammy?`,
+      choices: [
+        { text: '"On the dorm roof. The power was out. Ask anybody on my floor."', tag: 'True enough',
+          check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', bonus: 1, bonusLabel: 'It\'s mostly true', liesTo: ['mikey'], label: 'Lie to Mikey', on: { strong: 'a1_mikey_ok', weak: 'a1_mikey_meh', miss: 'a1_mikey_bad' } } },
+        { text: '"Mikey. If it was me, would you want to know?"', tag: 'Ask him',
+          fx: g => { g.flag('mikey4', 'asked'); g.heat('mikey', 2); g.bond('mikey', { trust: 1 }); }, go: 'a1_mikey_ask' }
+      ]
+    },
+    a1_mikey_ok: {
+      enter: g => { g.flag('mikey4', 'lied'); },
+      text: `sam: On the dorm roof. The power was out. Ask anybody on my floor.
+
+mikey: Yeah, yeah. I saw the blackout on the news.
+
+A pause. He sounds almost relieved.
+
+mikey: It's just, the Second Hand guys, they're putting together a profile. Young male, local, athletic, *works nights*. And I keep reading it and thinking, that's half the guys I grew up with. That's *you*. And I hate it. I hate that I think it.
+
+mikey: Come down Sunday. Eat something. You sound thin.`,
+      next: '@hub'
+    },
+    a1_mikey_meh: {
+      enter: g => { g.flag('mikey4', 'lied'); },
+      text: `sam: On the dorm roof. The power was out. Ask anybody on my floor.
+
+mikey: I might.
+
+He says it lightly. He doesn't say it like a joke.
+
+mikey: Love you, Sammy. Don't do anything stupid. And if you're doing something stupid, do it in a different neighborhood than the one where *I* work.`,
+      next: '@hub'
+    },
+    a1_mikey_bad: {
+      enter: g => { g.flag('mikey4', 'caught'); g.bond('mikey', { tension: 1 }); },
+      text: `sam: On the dorm roof. The power was out. Ask anybody on my floor.
+
+Mikey's quiet.
+
+mikey: You know you used to do this thing when you were a kid? When you broke something. You'd tell me where you were before I asked. Every time. *I was in the yard.* Nobody asked about the yard, Sammy.
+
+mikey: I'm not doing this on the phone.
+
+He hangs up. He doesn't say *love you*. He always says *love you*.`,
+      next: '@hub'
+    },
+    a1_mikey_ask: {
+      text: `sam: Mikey. If it was me, would you want to know?
+
+The siren behind him fades. His partner stops chewing. You hear a car door close, and then it's just your brother, breathing, somewhere in South Philly.
+
+mikey: …That's not a fair question.
+
+sam: I know.
+
+mikey: I'm a cop, Sammy.
+
+sam: I know.
+
+mikey: If it was you, I'd want to know so I could *stop* you. Because that kid on 15th Street is gonna get himself killed. Because the guys in the polo shirts asking about him in my captain's office aren't asking so they can give him a medal.
+
+A long breath.
+
+mikey: So no. Don't tell me. Don't tell me anything. Just… if it's you, be *careful*. And if it's not you, forget I called.
+
+He hangs up.`,
+      next: '@hub'
+    },
+
+    a1_ciro: {
+      loc: 'CIRO\'S PIZZA · CECIL B. MOORE AVE',
+      enter: g => { g.money(14 * 4 + 22); g.bond('ciro', { affection: 1 }); },
+      text: `Ciro's is slammed, because the heat broke and everybody in North Philly remembered they like hot food.
+
+ciro: Salvatore. You're late. You're late like SEPTA. You're late like my *wife*.
+
+He's not mad. He hands you a bag of garlic knots for yourself before you even get your jacket off, and watches you eat four standing up, and shakes his head like a man watching his own son do something stupid.
+
+ciro: You eat like a wolf now. Like a wolf in winter. Where does it go? You're skinny like a *rake*.
+
+You run eleven deliveries in four hours. You get a twenty-two-dollar tip from a nurse at Temple Hospital who says you remind her of her nephew. You don't Slip once. It feels like being a person.`,
+      next: '@hub'
+    },
+
+    a1_sleep: {
+      enter: g => { g.flag('thu_slept'); },
+      text: `You go to bed early, like a grandmother. You put your phone in your desk drawer, under your Calc textbook, like it's a dangerous animal.
+
+Across the hall, under Jules's door, her lamp is on. You lie in the dark and look at the line of light under your own door, and you think about it being on, and you think about a seven-year-old girl in a stone chapel, and somewhere around the thought of her face, you fall asleep.
+
+You don't dream about the laughing.
+
+You sleep ten hours. You wake up starving, sore, and almost human.`,
+      next: '@hub'
+    },
+
+    /* ---------- Friday ---------- */
+    a1_friday: {
+      night: true,
+      loc: 'CARDONE HALL · 9TH FLOOR LOUNGE',
+      clock: { day: 'Fri', date: 'Sep 11', time: '10:52 PM' },
+      enter: g => { if (g.f('thu_slept')) g.sleep(10); else g.sleep(5); },
+      text: g => `Friday goes by like a train you're watching from the platform.
+
+At 8:46 in the morning, the whole campus goes quiet for a minute, and the Bell Tower chimes once, and you stand on the steps of Charles Library with a coffee in your hand and think about your brother, who was one year old that day and doesn't remember it, and who enlisted anyway, years later, because of a day he doesn't remember. You text him a picture of the Bell Tower. He sends back a flag emoji and *love you sammy* in all lowercase like Gigi.
+
+${g.f('mikey4') === 'caught' ? 'It\'s the first time he\'s said it since he hung up on you. You read it a few times.\n\n' : ''}At night, the ninth floor does movie night in the lounge, because the heat's gone and everybody's alive and eighteen. Simone picks *Moonstruck*, "for Sam's people." Nik brings two bags of popcorn and his entire heart. Devontae falls asleep in fifteen minutes.
+
+Jules comes. Callum isn't with her. She sits on the other end of the couch from you, with Simone between you like a demilitarized zone, and she watches Cher slap Nicolas Cage and say *snap out of it*, and she laughs once, quietly, and when you look over, she's already looking at you.
+
+At 10:52, your phone buzzes against your leg.
+
+TXT teddy: hes going to them
+TXT teddy: they texted his tia from marisols phone. "its marisol. they helped me. they can help u. mcpherson sq. 11 tonite. come alone"
+TXT teddy: its not her. he knows its not her. he went anyway
+TXT teddy: he wont even hold his sobrina anymore. shes 2. he says hell burn her
+TXT teddy: im at kensington and somerset. i cant get close. he put bree on the ground for trying
+TXT teddy: please
+
+McPherson Square.${g.knows('mcpherson') ? ' Nik\'s red X. The place the sky is wrong.' : ''}
+
+On the screen, Cher is telling her whole family the truth at the kitchen table. On the couch, Jules has turned her head, and she's watching you read your phone.`,
+      choices: [
+        { text: 'Get up. Don\'t say anything. Just go.', tag: 'Go',
+          fx: g => { g.flag('fri_leave', 'silent'); g.bond('jules', { trust: -2 }); g.heat('jules', 1); }, go: 'a2_go' },
+        { text: 'Lean over Simone and say to Jules, quietly: "I have to go. I\'ll be back. I promise I\'ll be back."', tag: 'Promise',
+          fx: g => { g.flag('fri_leave', 'promise'); g.bond('jules', { trust: 1 }); g.heat('jules', 1); }, go: 'a2_go' },
+        { text: 'Put the phone face down. Not tonight. You promised yourself one normal night.', tag: 'Stay',
+          fx: g => { g.flag('fri_leave', 'stayed'); g.hidden('revenant_drift', -0.5); }, go: 'a1_stay' }
+      ]
+    },
+    a1_stay: {
+      night: true,
+      text: `You put the phone face down on your thigh.
+
+One normal night. Cher and Nicolas Cage and the moon over Brooklyn and Jules Pemberton laughing once, quietly, on the other end of the couch. You've earned one. You've *earned* it.
+
+The phone buzzes again. And again. You don't turn it over. Simone looks down at your leg, then at your face, and says nothing, in a very loud way.
+
+At 11:09, it starts ringing.
+
+You turn it over. **TEDDY**. You let it go to voicemail. It rings again immediately.
+
+sam: Sorry. One sec.
+
+In the hallway, you pick up, and you don't hear Teddy. You hear Bree, screaming, very far from the phone, not words. And under it a sound like a gas burner turned all the way up, and a man's voice, calm, saying *easy, easy, son*.
+
+Then Teddy, close, out of breath:
+
+teddy: He's in the square. They've got a tent. Cold guy. *Please*. I can't—
+
+The call drops.
+
+You're already running.`,
+      next: 'a2_go'
+    }
+  }
+});
+
+/* s01e04b.js */
+/* S1 · E4 · SUTURES, part 2 of 3: Act Two ("Kensington Avenue"), Act Three ("Southpaw"). */
+/* Situational bonuses as mutually exclusive choice variants (checks are static objects). */
+function e4v(choice, mods) {
+  const out = [];
+  for (let m = 0; m < (1 << mods.length); m++) {
+    const act = mods.filter((_, i) => m & (1 << i));
+    const bonus = act.reduce((a, x) => a + x.n, 0);
+    const check = Object.assign({}, choice.check);
+    if (act.length) { check.bonus = (choice.check.bonus || 0) + bonus; check.bonusLabel = [choice.check.bonusLabel, ...act.map(x => x.label)].filter(Boolean).join(' · '); }
+    out.push(Object.assign({}, choice, { check, if: g => mods.every((x, i) => !!x.when(g) === !!(m & (1 << i))) }));
+  }
+  return out;
+}
+const e4late = g => g.f('arrive') === 'late' || g.f('fri_leave') === 'stayed';
+
+EH.scenes('s01e04', {
+
+  /* ================= ACT TWO: KENSINGTON AVENUE ================= */
+  a2_go: {
+    card: { kind: 'act', label: 'Act Two', title: 'Kensington Avenue' },
+    night: true,
+    loc: 'BROAD & CECIL B. MOORE',
+    enter: g => { g.clock({ time: g.f('fri_leave') === 'stayed' ? '11:11 PM' : '10:56 PM' }); },
+    text: g => `${{
+      silent: 'You get up in the middle of the movie and you go. You don\'t look back at the couch. You feel her watching you all the way to the stairwell door anyway, like a hand between your shoulder blades.',
+      promise: 'You lean across Simone, who goes very still, and you say it low, close to Jules\'s ear: *I have to go. I\'ll be back. I promise.* She doesn\'t say anything. She just looks at you, and then down at your phone, and then back at you, and nods, once, like she\'s signing something.',
+      stayed: 'You don\'t remember the stairs. You remember the side door banging open onto Broad, and the cold air, and your own breath.'
+    }[g.f('fri_leave')]}
+
+${{ hoodie: 'The hoodie\'s in your backpack where it lives now. Gaiter up. Pop\'s cap backward.', windbreaker: 'Ciro\'s windbreaker, inside out, zipped to the chin.', helmet: 'The helmet, the visor down, the world gone amber.', none: 'No hood. No mask. Just you.' }[g.f('costume') || 'hoodie']} McPherson Square is three miles northeast, up Lehigh to Kensington Avenue, under the El. ${g.f('fri_leave') === 'stayed' ? 'It\'s 11:11. Whatever\'s happening there is already happening.' : 'It\'s 10:56. Four minutes until the text said eleven.'}`,
+    choices: [
+      { text: 'The bike. Lehigh Avenue, flat out, every light.', tag: 'Ride',
+        check: { kind: 'pool', attr: 'reflex', skill: 'ride', diff: 2, label: 'Three miles, no brakes', physical: true, on: { crit: 'a2_ride_fast', success: 'a2_ride_fast', partial: 'a2_ride_fast', fail: 'a2_ride_slow', botch: 'a2_ride_slow' } } },
+      { text: 'Slip. Run it between the seconds. Three miles of stopped city.', slip: true,
+        fx: g => { g.flag('arrive', 'slip'); }, go: 'a2_square' }
+    ]
+  },
+  a2_ride_fast: {
+    night: true,
+    enter: g => g.flag('arrive', 'ride'),
+    text: `Lehigh Avenue at night is a long straight runway of dead factories and live corner stores. You take it standing on the pedals, through every light, past a cop car parked at Germantown with its windows down and both officers eating cheesesteaks, who watch you go by like a weather event.
+
+At Kensington Avenue the El comes over you like a ceiling, and the world goes dark and loud and striped with light through the tracks.`,
+    next: 'a2_square'
+  },
+  a2_ride_slow: {
+    night: true,
+    enter: g => { g.flag('arrive', 'late'); g.pool('stamina', -1); },
+    text: `A car door opens in front of you at 5th Street, and you go over it.
+
+You don't really go *over* it. You go *into* it, then over it, then across forty feet of Lehigh Avenue on your side, and the bike goes somewhere else. The guy who opened the door yells *you okay?* in the voice of a man who is mostly yelling *don't sue me*.
+
+You're okay. Your hip says you're not. You get the bike, and the front wheel's bent like a taco, and you ride it anyway, wobbling, under the El at Kensington Avenue, fourteen minutes late.`,
+    next: 'a2_square'
+  },
+
+  a2_square: {
+    night: true,
+    loc: 'MCPHERSON SQUARE · KENSINGTON',
+    enter: g => { g.clock({ time: e4late(g) ? '11:14 PM' : g.f('arrive') === 'slip' ? '10:58 PM' : '11:03 PM' }); g.meet('teddy'); g.meet('bree'); g.meet('heck'); g.hidden('halcyon_heat', 1); g.know('halcyon_clinic', ['sam', 'teddy', 'bree', 'heck'], 'Halcyon set up a "cooling clinic" tent in McPherson Square and lured Heck there with a text from Marisol\'s phone.'); },
+    text: g => `${g.f('arrive') === 'slip' ? 'You come out of the Slip at the corner of Kensington and Indiana, and your nose is already bleeding, and the cold of it falls off you like a coat.\n\n' : ''}McPherson Square is one city block of grass and old trees and benches, with a library in the middle, an old stone Carnegie library, like something that wandered over from a nicer century and couldn't find its way home. The El runs along one side of it, black iron, rattling. People sleep on the benches. People who aren't sleeping are standing very still in the half-dark under the trees, the way people stand on this block at this hour.
+
+Tonight there's a tent on the grass.
+
+It's white, clean, lit from inside like a lantern. A generator hums behind it. A banner across the front reads **HALCYON COMMUNITY WELLNESS · FREE COOLING & SYMPTOM CLINIC · ALL WELCOME**. There are misting fans at the entrance, spraying fine cold water into the September night for nobody. Behind the tent, backed up onto the sidewalk on F Street, there's a white box truck with a refrigeration unit on the roof and **BLUE RIBBON FOODS** stenciled on the side.
+
+Four men in gray polo shirts are standing around the tent like dads at a Little League game.
+
+On the library steps, a fifth man is holding a tablet. Forties. Close-cropped gray hair. Calm. The same calm man who swept Broad Street with a tablet the night of the Hitch. *Brannigan.* You've never heard his voice. You've seen his face twice, both the night of the Hitch: through Halcyon's glass, and on Broad Street after.
+
+And down Indiana Avenue, under the El, walking toward the square in the middle of the street:
+
+Heck.
+
+He's shirtless. It's sixty-five degrees and he's *steaming*, a white plume coming off his shoulders and his shaved head like a horse in winter. His knuckles are glowing faintly orange, like stove coils just turned on. Cars are swerving around him. A man on the corner backs into a doorway and crosses himself.
+
+As Heck walks into the square, the streetlamps along the path pop. One, then the next, then the next, each one a little *tink* of glass and then dark, in a line, leading him toward the tent like somebody's turning them off ahead of him on purpose.
+
+${g.f('arrive') === 'late' || g.f('fri_leave') === 'stayed' ? 'You\'re late. You can see you\'re late. Teddy\'s at the corner of Somerset, his bandaged hand cradled against his chest like a broken wing, and Bree is sitting on the curb beside him holding her wrist, and Heck is already halfway across the grass.' : 'Teddy\'s at the corner of Somerset, his bandaged hand cradled against his chest like a broken wing. Bree\'s on the curb beside him holding her wrist. They both see you at the same time. Bree mouths something that might be *wawa* and might be *finally*.'}
+
+Heck is forty yards from the tent.`,
+    choices: [
+      ...e4v({ text: 'Get in front of him. Hands up, open. Talk to him. "Heck. Hey. It\'s me. It\'s the nene."', tag: 'Talk',
+        check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', label: 'Reach Heck', on: { strong: 'a2_talk_strong', weak: 'a2_talk_weak', miss: 'a2_talk_miss' } } }, [
+        { when: g => g.f('teddy_check'), n: 1, label: 'You know what\'s wrong' },
+        { when: g => g.f('arrive') === 'slip' && !e4late(g), n: 1, label: 'You got there first' },
+        { when: e4late, n: -1, label: 'You\'re late' }]),
+      { text: 'Plant yourself in his path. Make him go through you to get to them.', tag: 'Block',
+        check: { kind: 'pool', attr: 'nerve', skill: 'brawl', diff: 2, label: 'Stand your ground', physical: true, on: { crit: 'a2_block_good', success: 'a2_block_good', partial: 'a2_block_shove', fail: 'a2_block_shove', botch: 'a2_block_shove' } } },
+      { text: 'Slip. Get eyes inside that tent and that truck before anybody moves.', slip: true, tag: 'Look',
+        fx: g => { g.flag('tent_seen'); g.know('halcyon_truck', ['sam'], 'Inside the Halcyon truck at McPherson Square: a steel bed with restraints rated to 600 pounds, an ice bath, and an IV bag labeled with Heck\'s name and weight. On the tablet, Marisol\'s photo marked RECOVERED.'); }, go: 'a2_look' }
+    ]
+  },
+
+  a2_look: {
+    night: true,
+    text: g => `You step through.
+
+The square stops. A moth stops. The misting fans stop, and their spray hangs in the air outside the tent like a beaded curtain, every droplet a tiny frozen lens with the lantern-light in it. Heck stops mid-stride, steam standing off his shoulders in a still white mane.
+
+And it's warm near him. That's the first wrong thing. In the Slip, everything is cold, always, January cold. But walking past Heck is like walking past an open oven. He's the only warm thing in the stopped world.
+
+You go into the tent. Folding chairs. A cooler of Gatorade. A table with clipboards and a stack of flyers: *Were you in North Philadelphia on Aug. 22? Experiencing unusual symptoms?* Behind a curtain, a second room, cold, with a stretcher.
+
+You go out the back to the truck. The rear doors are open, and the refrigeration unit is breathing white fog that's frozen into a cloud in the dark.
+
+Inside, it's not a clinic.
+
+It's a steel bed bolted to the floor with restraints on it: wrists, ankles, chest, thick as seatbelts, with a stamped tag on the buckle reading **RATED 600 LB**. A long tub of water with ice floating in it, frozen mid-bob. An IV pole. The bag on the pole is labeled in neat printer type: **RAMOS, H. · 260 LB · PROTOCOL C**.
+
+Somebody made a bed for Heck. Somebody *measured* him.
+
+You go back out. On the library steps, Brannigan's tablet glows in his stopped hands. On the screen, there's a list. Most of it's codes. At the top, a photo of a girl with dark curly hair and a gap in her teeth, smiling at somebody off-camera, and beneath it: **REYES, M. · RECOVERED.**
+
+*Recovered.*
+
+Your nose is pouring. You step back out where you started, on the corner, and the cold falls off you, and Heck takes the next step he was always going to take, thirty yards from the tent now, and you're already moving.`,
+    next: 'a2_dart'
+  },
+
+  a2_talk_strong: {
+    night: true,
+    enter: g => { g.flag('heck_reach', 'strong'); g.bond('heck', { trust: 2, affection: 1 }); },
+    text: `You get in front of him with your hands up and open.
+
+sam: Heck. Hey. Hey. It's me. It's the nene.
+
+He stops.
+
+Up close, the heat comes off him like a car engine after a long drive. His eyes are bloodshot and wet and enormous. He looks at your gaiter, your hood, your eyes over the top of them, and you watch him find you in there.
+
+heck: Nene.
+
+sam: Yeah.
+
+heck: Papa, I can't sleep. I burned my tía's sheets. I held my sobrina, and she *cried*, papa, she cried because I was hot, and she's two, she don't know why.
+
+His voice cracks right down the middle.
+
+heck: They said they can help. Marisol said—
+
+sam: That wasn't Marisol.
+
+heck: I *know* it wasn't Marisol.
+
+He wipes his face with the back of his wrist, and his tears hiss on his skin.
+
+heck: But what if they can? What if they can make it stop? What do I do, nene? What do I do if it never stops?
+
+You don't have an answer. You have a hand, open, held out. You don't know if you can touch him without burning. You hold it out anyway.
+
+He looks at it. He takes one step backward, toward Teddy, away from the tent.
+
+And then something hits him in the side of the neck with a sound like a staple gun.`,
+    next: 'a2_dart'
+  },
+  a2_talk_weak: {
+    night: true,
+    enter: g => { g.flag('heck_reach', 'weak'); g.bond('heck', { trust: 1 }); },
+    text: `You get in front of him with your hands up.
+
+sam: Heck. Hey. It's me. It's the nene.
+
+He slows. He doesn't stop.
+
+heck: Move, nene.
+
+sam: That text wasn't from Marisol.
+
+heck: I know. *I know.* Move.
+
+He's not angry. He's just *tired*, the kind of tired that's already made its decision. He steps around you. When his shoulder passes yours, the heat is like opening an oven, and your gaiter starts to smell like a scorched iron.
+
+sam: Heck—
+
+He takes two more steps toward the tent.
+
+Then something hits him in the side of the neck with a sound like a staple gun.`,
+    next: 'a2_dart'
+  },
+  a2_talk_miss: {
+    night: true,
+    enter: g => { g.flag('heck_reach', 'miss'); g.injure({ id: 'handprint', name: 'Burned chest (handprint)', pen: 0, heal: 2 }); },
+    text: `You get in front of him with your hands up.
+
+sam: Heck. Hey. It's me—
+
+He doesn't hear you. Or he hears you and it doesn't matter. He puts one hand flat on your chest, almost gently, the way you'd move a curtain, and *pushes*.
+
+It isn't a punch. It's barely a push. It moves you nine feet, onto your back on the grass, and when you look down, there's a handprint scorched into the front of your hoodie, and under it, through the hole, a handprint scorched into *you*. Pink-white. Perfect. Five fingers and a palm.
+
+heck: Lo siento, nene.
+
+He keeps walking.
+
+And something hits him in the side of the neck with a sound like a staple gun.`,
+    next: 'a2_dart'
+  },
+  a2_block_good: {
+    night: true,
+    enter: g => { g.flag('heck_reach', 'weak'); g.bond('heck', { respect: 2 }); },
+    text: `You plant yourself in the middle of the path, between Heck and the tent, feet wide, and you don't move.
+
+He comes right up to you. He stops six inches from your face. The heat off him dries your eyes.
+
+heck: You gonna stop me, nene? With what?
+
+sam: With *me*.
+
+He looks down at you, all six-foot-four of him, and for one second, something like a laugh moves in his face, the old Heck, the gentle one from Port Richmond, grinning up at you from the kitchen floor with his hands in a tub of ice.
+
+heck: Mira. The nene's got cojones.
+
+And then something hits him in the side of the neck with a sound like a staple gun.`,
+    next: 'a2_dart'
+  },
+  a2_block_shove: {
+    night: true,
+    enter: g => { g.flag('heck_reach', 'miss'); g.injure({ id: 'handprint', name: 'Burned chest (handprint)', pen: 0, heal: 2 }); },
+    text: `You plant yourself in his path. He doesn't slow down.
+
+He just puts one hand flat on your chest and moves you, the way a bouncer moves a drunk, nine feet backward onto the grass. When you look down, there's a handprint scorched into your hoodie, and through the hole, a handprint scorched into *you*.
+
+heck: Lo siento, nene. Lo siento.
+
+He keeps walking.
+
+And something hits him in the side of the neck with a sound like a staple gun.`,
+    next: 'a2_dart'
+  },
+
+  a2_dart: {
+    night: true,
+    clock: { time: '11:16 PM' },
+    text: g => `A dart. Red-feathered, stuck in the side of his neck. One of the polo men is down on one knee by the misting fans with a rifle against his shoulder, a long black thing with a scope, calm as a guy at a carnival booth.
+
+Heck reaches up and pulls it out. The plastic barrel melts in his fingers and drips.
+
+For a second, nothing.
+
+Then whatever was in that dart hits him. It was dosed for a man at ninety-eight point six. Heck is at a hundred and six, and it boils through him like a match in a gas can. You watch it happen. His pupils go wide and black. The glow at his knuckles runs up his forearms in orange threads, like veins lit from inside. The steam coming off him goes from white to *clear*, the air around him rippling like the air over a highway in August.
+
+He turns his head, slowly, the way a bull turns its head.
+
+He's looking for whoever did this to him. And between Heck and the tent, ${g.f('costume') === 'none' ? 'with your face bare and your hands up' : 'with your face covered, right where the men with the darts want him to look'}, there's you.
+
+${{ strong: 'heck: …Nene? Why, nene? Why\'d you bring them?', weak: 'heck: You. *You* brought them.', miss: 'heck: *You.*' }[g.f('heck_reach') || 'weak']}
+
+sam: Heck, no, I didn't—
+
+Behind him, across the square, Brannigan lowers his tablet and says something into his collar. You can't hear it. You don't need to. All four polo men are moving now, spreading out around the edge of the grass, unhurried, like they've done this before.
+
+Heck raises his hands. Not like a man in a fight. Like a boxer. Chin down. Right hand forward.
+
+Southpaw.
+
+You remember, one full second too late, the way he sat on Teddy's kitchen floor in Port Richmond, hands in the ice. The flattened nose. The scar tissue over both eyes, shiny and thick. *Heck boxed.*`,
+    next: 'a3_f1'
+  },
+
+  /* ================= ACT THREE: SOUTHPAW ================= */
+  a3_f1: {
+    card: { kind: 'act', label: 'Act Three', title: 'Southpaw' },
+    night: true,
+    text: `He comes at you.
+
+People think big men are slow. People are wrong. Heck crosses six feet of grass in the time it takes you to think the word *wait*, and the right jab comes first, not hard, just there, a hot fist the size of a cantaloupe snapping at your face to see what you do.
+
+What you do is flinch.
+
+Behind it, already coming, low and from the outside, the left.`,
+    choices: [
+      { text: 'Move. Get your body out of the way of that left hand.', tag: 'Dodge',
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, label: 'Get out of the way', physical: true, power: true, on: { crit: 'a3_f1_clean', success: 'a3_f1_clean', partial: 'a3_f1_graze', fail: 'a3_f1_hit', botch: 'a3_f1_hit' } } },
+      { text: 'Slip. Step out of the second and just walk around it.', slip: true, tag: 'Slip it',
+        fx: g => g.flag('f1', 'slip'), go: 'a3_f1_slip' }
+    ]
+  },
+  a3_f1_clean: {
+    night: true,
+    enter: g => g.flag('f1', 'clean'),
+    text: `You drop under it. You don't know how. Your body knows how: four years of Vinnie throwing hooks at you in the alley behind the Acme on Passyunk for fun, and a hundred fights you started and a hundred more you finished. You drop and roll left, and his fist goes over your head close enough that the heat curls the hair on your neck, and you come up on the outside of him with nothing broken.
+
+Heck turns, slow and fast at once, and resets. Chin down. Right hand forward.
+
+He's not done. He's barely started.`,
+    next: 'a3_f2'
+  },
+  a3_f1_slip: {
+    night: true,
+    text: `You step through.
+
+The world stops. Heck's fist hangs a foot from your ribs, glowing orange, and around it the air is *bent*, shimmering, rippling, still moving the way nothing in the Slip moves. Even stopped, he's burning.
+
+You walk around his fist like it's a parked car. You walk around *him*. You stand behind him, at his left shoulder, and look at the back of his neck, where the dart went in, where the skin is already blistering around the hole.
+
+*He's not your enemy,* you think. *He's the one they're here for.*
+
+You step back out. His fist hits nothing, and he stumbles a half step into empty air, and wheels around, and finds you behind him, and for the first time something in his drugged face looks *afraid*.
+
+Your nose is bleeding into your gaiter. You can taste it.`,
+    next: 'a3_f2'
+  },
+  a3_f1_graze: {
+    night: true,
+    enter: g => { g.flag('f1', 'graze'); g.injure({ id: 'cracked_ribs', name: 'Cracked ribs', pen: 1, heal: 3, affects: ['body', 'reflex'] }); },
+    text: `You move. Almost enough.
+
+His left hook catches you on the way out, along the ribs on your right side, and it's not a full hit, it's the *edge* of a hit, and the edge is plenty. You hear a dull wet *crack* inside your body, like stepping on a stick under snow.
+
+Then you feel it.
+
+You stay on your feet. You have no idea how you stay on your feet. Your whole right side is a bell somebody rang, and every breath rings it again.
+
+Heck resets. Chin down. Right hand forward.`,
+    next: 'a3_f2'
+  },
+  a3_f1_hit: {
+    night: true,
+    enter: g => { g.flag('f1', 'hit'); g.injure({ id: 'cracked_ribs', name: 'Cracked ribs', pen: 1, heal: 3, affects: ['body', 'reflex'] }); g.pool('stamina', -2); },
+    text: `You don't move enough.
+
+The left hook comes in under your elbow and lands flush on your ribs, and it lifts you off your feet. Not an expression. Your sneakers leave the grass. You fly sideways four feet and come down on your shoulder, and something in your right side goes *crack* like a branch, and for three or four seconds you can't breathe at all, you just lie on the grass with your mouth open like a fish, looking up at the El.
+
+Somewhere far away, Bree is yelling your name. Not your name. *Wawa.* It's close enough.
+
+You get up the way you always get up, because there's somebody behind you, even if right now the somebody is the guy you're getting up to fight.`,
+    next: 'a3_f2'
+  },
+
+  a3_f2: {
+    night: true,
+    text: g => `${g.hurt('cracked_ribs') ? 'Every breath is a knife now. Short breaths. Short. ' : ''}He's driven you off the grass onto the Kensington Avenue sidewalk, under the El, your back to a bus shelter. You've got maybe two seconds before he comes again. The polo men are closing in on the edges of the grass, rifles low. Teddy's yelling something at Bree. Heck's eyes are black from edge to edge.
+
+You need to make him stop. You need to make him stop without killing him, without him killing you, and without either of you ending up in that truck.`,
+    choices: [
+      { text: 'Hit him. Hard, right on the chin. You\'re a fighter. Fight.', tag: 'Hit him',
+        check: { kind: 'pool', attr: 'body', skill: 'brawl', diff: 3, label: 'Land one', physical: true, on: { crit: 'a3_f2_hit', success: 'a3_f2_hit', partial: 'a3_f2_hit_bad', fail: 'a3_f2_miss', botch: 'a3_f2_miss' } } },
+      { text: 'The bodega on the corner has a chest freezer full of bagged ice out front. Cold. Get him cold.', tag: 'Ice',
+        check: { kind: 'd20', attr: 'wits', skill: 'streetwise', dc: 12, label: 'Use the street', on: { crit: 'a3_f2_ice', success: 'a3_f2_ice', fail: 'a3_f2_ice_bad', fumble: 'a3_f2_ice_bad' } } },
+      ...e4v({ text: 'Keep talking. Underneath the drug, he\'s still Heck. "Heck. Your sobrina. Think about your sobrina."', tag: 'Talk',
+        check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'empathy', label: 'Reach him through it', bonus: -1, bonusLabel: 'He\'s drugged', on: { strong: 'a3_f2_talk', weak: 'a3_f2_talk_weak', miss: 'a3_f2_talk_miss' } } }, [
+        { when: g => g.f('heck_reach') === 'strong', n: 1, label: 'He found you once' }])
+    ]
+  },
+  a3_f2_hit: {
+    night: true,
+    enter: g => { g.flag('f2', 'hit'); g.injure({ id: 'broken_hand', name: 'Broken hand (boxer\'s fracture)', pen: 1, heal: 3, affects: ['body', 'reflex'] }); },
+    text: `You step inside his right hand and throw everything you have at his chin.
+
+It lands. It lands perfectly, the one Vinnie spent four years trying to teach you: hips first, then shoulder, then fist, the whole of you behind it.
+
+It's like punching a radiator.
+
+His head snaps sideways. He staggers. And your hand *breaks*. You feel it go, the outside of it, the bone under your pinky knuckle, a crunch like a chicken wing, and then the heat of his jaw comes through after it, and your knuckles are blistering inside your fist before you can open it.
+
+You don't scream. You don't have enough air to scream.
+
+Heck shakes his head like a dog coming out of water. Spits. Blood hisses on the grass. Resets.
+
+He's still coming.`,
+    next: 'a3_f3'
+  },
+  a3_f2_hit_bad: {
+    night: true,
+    enter: g => { g.flag('f2', 'hit'); g.injure({ id: 'broken_hand', name: 'Broken hand (boxer\'s fracture)', pen: 1, heal: 3, affects: ['body', 'reflex'] }); g.pool('stamina', -1); },
+    text: `You throw it. It lands on his cheekbone instead of his chin, high and wrong, and his head barely moves.
+
+Your hand breaks anyway. The outside of it, the bone under your pinky knuckle, a crunch you feel all the way up into your teeth. The skin across your knuckles bubbles, right there, under your eyes. You've never seen your own skin do that.
+
+Heck doesn't even step back. He looks at you with those black eyes like you're a fly that landed on him.`,
+    next: 'a3_f3'
+  },
+  a3_f2_miss: {
+    night: true,
+    enter: g => { g.flag('f2', 'miss'); g.injure({ id: 'burned_arm', name: 'Burned forearm', pen: 1, heal: 2, affects: ['body'] }); },
+    text: `You throw it. He isn't there.
+
+He slides his head six inches to the left, lazily, the way a guy who's been hit by professionals slides away from an amateur, and your fist goes past his ear, and his right hand comes up and catches your forearm on the way back.
+
+He just *holds* it. For one second.
+
+You smell it before you feel it. Then you feel it. Your hoodie sleeve smokes and blackens and sticks to you, and underneath it, the skin of your forearm goes white, then red, then something worse, and you scream into your gaiter, and he lets go. Not because you made him. Because something in him, somewhere under the drug, flinched at the sound.`,
+    next: 'a3_f3'
+  },
+  a3_f2_ice: {
+    night: true,
+    enter: g => { g.flag('f2', 'ice'); g.bond('heck', { trust: 1 }); g.money(-10); },
+    text: `You know this corner. Not *this* corner, but this *kind* of corner: every bodega in Philly keeps a chest freezer of bagged ice out front, chained shut, the chain looped through the handle and a padlock that's been broken since 2016.
+
+It's there. Five feet from the El pillar. **ICE · HIELO · $2.99**. The padlock's broken.
+
+You get the lid up and get two ten-pound bags out, one in each hand, and you turn around just as Heck comes at you, and you swing both bags at his chest like a pair of sandbags.
+
+They don't hit him. They *explode*. Twenty pounds of ice turns to steam on contact with a sound like a fire hose hitting a burning car, *WHUMP*, and suddenly the whole corner is a white cloud, and Heck is in the middle of it roaring, blind, staggering back, his skin hissing everywhere the steam touches.
+
+The bodega guy is standing in his doorway with his mouth open.
+
+You grab two more bags. You leave a ten on the freezer, because you're your mother's son.`,
+    next: 'a3_f3'
+  },
+  a3_f2_ice_bad: {
+    night: true,
+    enter: g => { g.flag('f2', 'ice_bad'); g.injure({ id: 'burned_arm', name: 'Burned forearm', pen: 1, heal: 2, affects: ['body'] }); },
+    text: `You know there'll be a bodega with a chest freezer of ice on the corner. There always is.
+
+There is. It's empty. Somebody's taken the last bag, and somebody else has used the freezer as a trash can. You've got your head inside a freezer full of Utz bags when Heck reaches you, and his hand comes down on the back of your forearm on the lid, and holds.
+
+You smell it before you feel it.`,
+    next: 'a3_f3'
+  },
+  a3_f2_talk: {
+    night: true,
+    enter: g => { g.flag('f2', 'talk'); g.bond('heck', { trust: 2, affection: 2 }); },
+    text: `You don't put your hands up. You put them down.
+
+sam: Heck. Your sobrina. What's her name?
+
+He's coming at you. He stops. It's like watching a truck brake on ice: everything in him keeps going for a second after he's decided not to.
+
+heck: …Yesenia.
+
+sam: Yesenia. How old?
+
+heck: Two. Two and a half. She says *half*. She's very…
+
+He blinks. His eyes are still black, but for a second, way down in them, there's a light on in a back room.
+
+heck: She's very serious about the half.
+
+He drops his hands an inch. Just an inch.
+
+And then behind you, one of the polo men fires a second dart, and it hits Heck in the chest, and the light in the back room goes out.`,
+    next: 'a3_f3'
+  },
+  a3_f2_talk_weak: {
+    night: true,
+    enter: g => { g.flag('f2', 'talk_weak'); g.bond('heck', { trust: 1 }); },
+    text: `sam: Heck. Your sobrina. Think about her.
+
+For one second he hesitates. One second, the hands come down an inch.
+
+Then he shakes his head hard, like there's a wasp in it, and comes at you again. But slower. A half step slower than he was.
+
+You'll take a half step. A half step is a lot.`,
+    next: 'a3_f3'
+  },
+  a3_f2_talk_miss: {
+    night: true,
+    enter: g => { g.flag('f2', 'talk_miss'); g.injure({ id: 'burned_arm', name: 'Burned forearm', pen: 1, heal: 2, affects: ['body'] }); },
+    text: `sam: Heck. Your sobrina—
+
+He's not listening. He's not *in* there to listen. He grabs your forearm while you're still talking and holds it for one long second, and the sleeve of your hoodie smokes and sticks to you, and the skin under it goes white, then red, then something worse.
+
+You scream into your gaiter. He lets go. Not because you made him.`,
+    next: 'a3_f3'
+  },
+
+  a3_f3: {
+    night: true,
+    text: `Here's the thing about boxers. They set you up.
+
+Everything he's done so far, the jab, the lazy step, the slow reset, every single thing has been teaching you where his left hand *is*, and where it isn't, and how long it takes to get there. And you learned. You learned perfectly. And now he throws the left hook from somewhere you learned it couldn't come from, the punch he must have won fights with, and you see it coming from a very, very long way away, which is how you know you can't stop it.
+
+It lands.
+
+You don't feel it, really. It's too big to feel. Your cheekbone. The El. The ground, coming up. Your teeth, and the copper taste, and the lights going long and smeared.
+
+And then something happens that has only ever happened to you on one night before, on Broad Street, the night of the Hitch, with a bus.
+
+The difference is, this time *you do it*.
+
+You don't decide. You don't think *rewind*. You just *want it not to have happened*, so badly and so completely that the wanting has a shape, and you reach out with the shape of it and *pull*.
+
+The world runs backward.
+
+The ground falls away from your face. Your body unfolds off the grass. The blood goes back up into your nose. The hook comes back out of your cheek and draws back, slow, glowing, a fist reversing down its own arc, into his shoulder, into its starting place.
+
+The world lets go, like a held breath, and you're standing in front of Heck again, half a second before, watching his left shoulder dip.
+
+You did that.
+
+You did that *on purpose*.`,
+    enter: g => { g.unlock('rewind'); g.drift(1); if (g.S.pools.focus < 3) g.pool('focus', 3 - g.S.pools.focus); g.hidden('revenant_drift', 1); g.flag('first_voluntary_rewind'); g.know('rewind_voluntary', ['sam'], 'You can rewind on purpose now. You reach for the moment you want back, and pull.'); },
+    choices: [
+      { text: 'Now you know where it\'s coming from. Slip the hook. Come back with everything you have left.', tag: 'Slip the hook',
+        check: { kind: 'pool', attr: 'reflex', skill: 'brawl', diff: 3, label: 'Beat the hook', physical: true, power: true, on: { crit: 'a3_f3_good', success: 'a3_f3_good', partial: 'a3_f3_partial', fail: 'a3_f3_bad', botch: 'a3_f3_bad' } } }
+    ]
+  },
+  a3_f3_good: {
+    night: true,
+    enter: g => { g.flag('f3', 'good'); g.injure({ id: 'laceration', name: 'Laceration (forearm, stitched)', pen: 0, heal: 2 }); if (!g.hurt('broken_hand')) g.injure({ id: 'broken_hand', name: 'Broken hand (boxer\'s fracture)', pen: 1, heal: 3, affects: ['body', 'reflex'] }); g.bond('heck', { respect: 1 }); },
+    text: g => `This time you're already gone.
+
+You duck under the hook, and it goes over you, and with nothing to stop it, Heck's fist and all of the weight behind it go right on through into the glass wall of the SEPTA bus shelter behind you.
+
+The glass doesn't break. It *explodes*. The heat and the punch hit it at the same time, and it comes apart into a hundred thousand pieces that rain down over both of you, glittering, in the light from the El. The torn steel frame catches your left forearm on the way past and opens it, six inches, below the elbow, and you don't even feel it yet.
+
+${g.f('f2') === 'hit' ? 'And you come up inside his reach with your good hand and put it into his liver, the way Vinnie taught you, the punch nobody sees, and he folds.' : 'And you come up inside his reach and hit him, liver shot, the way Vinnie taught you, the punch nobody sees, and your right hand breaks on his ribs, and he folds.'}
+
+Heck goes down on one knee on the sidewalk, in the glass, steaming, gasping.
+
+You stand over him, bleeding from your arm onto the concrete. You can hear your own heartbeat. You can hear the El. You can hear the misting fans, still hissing cold water at nobody.`,
+    next: 'a3_f4'
+  },
+  a3_f3_partial: {
+    night: true,
+    enter: g => { g.flag('f3', 'partial'); g.injure({ id: 'laceration', name: 'Laceration (forearm, stitched)', pen: 0, heal: 2 }); if (!g.hurt('broken_hand')) g.injure({ id: 'broken_hand', name: 'Broken hand (boxer\'s fracture)', pen: 1, heal: 3, affects: ['body', 'reflex'] }); g.pool('stamina', -1); },
+    text: `You move. Most of the way.
+
+The hook catches your shoulder instead of your face, and spins you, and drives you back into the glass wall of the SEPTA bus shelter, and the glass doesn't break so much as *give up*. It comes down on you in a glittering sheet, and the torn steel frame opens your left forearm, six inches, below the elbow.
+
+You come off the shelter swinging. You don't decide to. You put everything into his body, the liver shot Vinnie taught you, and your right hand comes apart on his ribs, and he folds.
+
+Heck goes down on one knee on the sidewalk, in the glass, steaming, gasping. You stay up. Barely. Your blood is running off your fingers in a steady patter onto the concrete, like a faucet somebody didn't turn all the way off.`,
+    next: 'a3_f4'
+  },
+  a3_f3_bad: {
+    night: true,
+    enter: g => { g.flag('f3', 'bad'); g.injure({ id: 'laceration', name: 'Lacerations (eyebrow and forearm, stitched)', pen: 0, heal: 2 }); g.injure({ id: 'cheekbone', name: 'Cracked cheekbone', pen: 1, heal: 3, affects: ['wits', 'reflex'] }); g.pool('stamina', -2); },
+    text: `You knew where it was coming from. It didn't matter. Knowing where a train is coming from doesn't get you off the tracks.
+
+It lands. Not the whole of it; you took the worst of it off by turning, but enough. Your cheekbone. The curb. The edge of the curb opens your eyebrow to the bone, and the blood sheets down into your left eye, and the world goes red on one side and black on the other. On the way down, your left forearm catches the lip of a storm grate and opens, six inches, below the elbow.
+
+You lie there. The El rattles over you. You think: *if I rewind again, I'll lose something.* You don't know how you know that. You don't know what. It's just there in you, like a word on the tip of your tongue in a language you don't speak.
+
+Heck stands over you, steaming. He raises his fist.
+
+And then he stops. He just *stops*, fist up, and looks at it, the glowing thing at the end of his own arm, like it belongs to somebody else. He sways. Whatever was in the darts is finally, finally winning. He goes down on one knee beside you, on the sidewalk, gasping.
+
+You get as far as one elbow.`,
+    next: 'a3_f4'
+  },
+
+  a3_f4: {
+    night: true,
+    clock: { time: '11:21 PM' },
+    text: g => `Then Bree's car comes up onto the sidewalk.
+
+It's a 2009 Corolla with one blue door, and it comes up over the curb on F Street and across the grass and stops ten feet from you with the passenger door already open and Teddy hanging out of it. Bree's driving with one hand. She leans across Teddy and opens her mouth, and what comes out isn't her voice.
+
+It's sirens. *Police sirens*, six or seven of them, layered, close, coming from everywhere at once, and under them, perfectly, a dispatcher's flat bored voice: *all units, McPherson Square, shots fired, shots fired, units responding.*
+
+Every polo man in the square stops.
+
+On the library steps, Brannigan holds up one hand. *Wait.* He's looking toward Kensington Avenue, toward the sirens that aren't coming, trying to see the lights. He's careful. He's very, very careful. It buys you a minute. Maybe less.
+
+teddy: Get him in the car! Cold guy! *Get him in the car!*
+
+Heck's on one knee in front of you, steaming, swaying, half-gone. He's two hundred and sixty pounds of burning man. He's still dangerous. He's still Heck.
+
+${g.hurt('broken_hand') ? 'Your right hand is useless. ' : ''}${g.hurt('cracked_ribs') ? 'You can\'t take a full breath. ' : ''}${g.hurt('laceration') ? 'You\'re bleeding a lot. ' : ''}You've got one more thing in you. Maybe.`,
+    choices: [
+      ...e4v({ text: g => 'Get down on the sidewalk with him. Get close. "Heck. ' + (g.f('f2') === 'talk' ? 'Yesenia\'s' : 'Your sobrina\'s') + ' waiting. Let\'s go home."', tag: 'Bring him back',
+        check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'empathy', label: 'Bring Heck home', on: { strong: 'a3_end_talk', weak: 'a3_end_talk_hot', miss: 'a3_end_taken' } } }, [
+        { when: g => g.f('tent_seen'), n: 1, label: 'You saw the truck' },
+        { when: g => g.f('heck_reach') === 'strong' || g.f('f2') === 'talk', n: 1, label: 'He knows your voice' }]),
+      { text: 'Put him to sleep. One more punch, right on the button. Then carry him.', tag: 'Knock him out',
+        check: { kind: 'pool', attr: 'body', skill: 'brawl', diff: 2, label: 'Lights out', physical: true, on: { crit: 'a3_end_ko', success: 'a3_end_ko', partial: 'a3_end_ko_hot', fail: 'a3_end_taken', botch: 'a3_end_taken' } } },
+      { text: 'Slip. Carry two hundred and sixty pounds of burning man to that car between the seconds.', slip: true, tag: 'Slip him out',
+        fx: g => { g.flag('end', 'slip'); }, go: 'a3_end_slip' }
+    ]
+  },
+
+  a3_end_talk: {
+    night: true,
+    enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'talk'); g.bond('heck', { trust: 3, affection: 3 }); g.bond('teddy', { trust: 2, respect: 2 }); g.bond('bree', { trust: 2 }); },
+    text: g => `You get down on the sidewalk with him, in the glass. You're close enough that your eyes water from the heat. You don't touch him. You just get your face where he can see it, and you pull the gaiter down so he can see *all* of it.
+
+sam: Heck. It's me. It's the nene. ${g.f('f2') === 'talk' ? 'Yesenia\'s waiting. She\'s very serious about the half.' : 'Your sobrina\'s waiting.'} Let's go home.
+
+He looks at you with those black drugged eyes, and you watch them find you. Slowly. Like somebody walking back up a long hallway toward a door with a light under it.
+
+heck: …Nene.
+
+sam: Yeah.
+
+heck: I hit you.
+
+sam: Yeah. A lot.
+
+heck: Lo siento. *Lo siento*, nene. Dios. Your *face*.
+
+And the heat goes out of him.
+
+Not all of it. Not even most. But you feel it go, like a tide pulling back off a beach, and the orange threads in his arms fade to a dull red, and the air around him stops rippling, and when he puts his hand on your shoulder to lean on you, it's hot like a mug of coffee, not like a stove.
+
+You and Teddy get him into the back seat. It takes both of you and his own legs and a lot of Polish swearing. The Corolla's springs groan. Bree's crying and driving at the same time and doing both very well.`,
+    next: 'a3_after'
+  },
+  a3_end_talk_hot: {
+    night: true,
+    enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'talk'); g.heal('burned_arm'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('heck', { trust: 2, affection: 2 }); g.bond('teddy', { trust: 2, respect: 1 }); g.bond('bree', { trust: 1 }); },
+    text: g => `You get down on the sidewalk with him and pull your gaiter down so he can see your face.
+
+sam: Heck. It's me. ${g.f('f2') === 'talk' ? 'Yesenia\'s' : 'Your sobrina\'s'} waiting. Let's go home.
+
+He hears you. You see him hear you. But he's too far down, and his legs won't work, and his eyes keep rolling up, and when he starts to tip over sideways toward the glass, you catch him.
+
+You catch him with both arms. You hold on.
+
+It's like hugging a radiator in a burning house. Your sleeves smoke. The skin of your forearms goes and goes and you hold on anyway, and you get him up, and Teddy gets his good shoulder under Heck's other arm, and the three of you lurch to the car together like the world's worst three-legged race.
+
+heck: Nene, your arms, nene, *let go*—
+
+sam: Shut up and walk.
+
+You get him in. You let go. You look at your arms, and then you don't look at them again.`,
+    next: 'a3_after'
+  },
+  a3_end_ko: {
+    night: true,
+    enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'ko'); g.bond('teddy', { trust: 1, respect: 2 }); g.bond('heck', { respect: 1 }); },
+    text: g => `${g.hurt('broken_hand') ? 'You throw it with your left, because your right hand is broken already.' : 'You throw it.'} Short. Clean. Right on the point of his chin, where every boxing coach on Front Street tells you the off switch is.
+
+It works.
+
+His eyes roll up and his whole body just *lets go*, all at once, two hundred and sixty pounds tipping over like a tree, and you and Teddy get under him before he hits the glass.
+
+You and Teddy get him into the back seat. It takes both of you and a lot of Polish swearing, and he's hot as a pizza stone the whole way, and when the door slams, Teddy looks at you over the roof of the car.
+
+teddy: You knocked out Hector Ramos.
+
+sam: Yeah.
+
+teddy: Nobody's ever knocked out Hector Ramos.
+
+sam: He was drugged.
+
+teddy: Don't tell him that. Ever. Let him think you're a *monster*.`,
+    next: 'a3_after'
+  },
+  a3_end_ko_hot: {
+    night: true,
+    enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'ko'); g.heal('burned_arm'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('teddy', { trust: 1, respect: 1 }); },
+    text: `You hit him. It isn't clean. It takes two, and the second one is mostly elbow and mostly desperation, and he goes down anyway, sideways, toward the glass.
+
+You catch him. You shouldn't. It's like catching a burning car door. Your sleeves smoke and you hear the skin of your forearms go, a sound like bacon on a flat-top, and you hold on, because the glass is there, because you're you.
+
+Teddy gets under his other side. The two of you get him to the car together. When the door slams, you look at your arms, and then you don't look at them again.`,
+    next: 'a3_after'
+  },
+  a3_end_slip: {
+    night: true,
+    enter: g => { g.flag('heck_fate', 'saved'); g.flag('brannigan_saw'); g.hidden('halcyon_heat', 2); g.heal('burned_arm'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('heck', { trust: 2 }); g.bond('teddy', { trust: 2, respect: 2 }); },
+    text: `You step through.
+
+The sirens stop mid-wail. The El stops mid-rattle. The cloud of breath coming out of Bree's mouth stops, and the misting fans stop, and the whole square becomes a photograph of itself.
+
+Except Heck. Heck is still hot.
+
+You get your arms around him. In the Slip it's January, it's the dead middle of winter, your breath is smoking, and holding him is like holding the sun. He's two hundred and sixty pounds, and in here he's two hundred and sixty pounds of *stopped*, of dead weight that won't help you, and you lift him anyway, with your broken parts and your good parts and every part, and you *carry* him.
+
+Ten feet. Your sleeves start to smoke.
+
+Twenty feet. They're not smoking anymore. They're gone.
+
+Thirty feet. You can't feel your forearms. You think that's probably bad.
+
+You put him in the back seat of the Corolla like a sleeping kid. You step back out.
+
+Time comes back like a slammed door. The sirens. The El. Bree, staring at Heck, who's suddenly in her back seat, and then at you, standing by her bumper with your arms held out from your sides because you can't stand to let them touch anything.
+
+On the library steps, Brannigan is looking down at his tablet.
+
+Then he looks up at you. Not at the car. At *you*.`,
+    next: 'a3_after'
+  },
+
+  a3_end_taken: {
+    night: true,
+    enter: g => { g.flag('end', 'lost'); },
+    text: `It's not enough.
+
+Whatever you had left, it's not enough. Heck lurches up off the sidewalk and away from you, toward the polo men, toward the tent, roaring, and the polo men aren't careful anymore. Two darts. Three. They go into his back like a row of buttons, and he goes down on his face on the grass, and this time he doesn't get up.
+
+They come in with heat gloves, silver, like oven mitts from a nightmare. Four of them. They've got him by the arms. They're dragging him toward the truck, and his feet are leaving two long burned stripes in the grass.
+
+teddy: *No!* No, no, Heck, *HECK—*
+
+Bree's sirens stop. She's just screaming now, in her own voice.
+
+You're bleeding. You're broken in at least one place. You've got maybe one more step between the seconds in you, and maybe not.`,
+    choices: [
+      { text: 'Slip. Take him back. Whatever it costs.', slip: true, tag: 'Take him back',
+        fx: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'rescue'); g.flag('brannigan_saw'); g.hidden('halcyon_heat', 3); g.heal('burned_arm'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('teddy', { trust: 3, respect: 3 }); g.bond('heck', { trust: 2 }); g.bond('bree', { trust: 2 }); }, go: 'a3_rescue' },
+      { text: 'You can\'t. You *can\'t*. You stand there, and you watch.', tag: 'Let him go',
+        fx: g => { g.flag('heck_fate', 'taken'); g.hidden('revenant_drift', -0.5); g.bond('teddy', { trust: -3, tension: 2 }); g.bond('bree', { trust: -2 }); g.know('heck_taken', ['sam', 'teddy', 'bree'], 'Halcyon took Heck from McPherson Square on September 11. They put him in a white box truck that said BLUE RIBBON FOODS.'); }, go: 'a3_heck_taken' }
+    ]
+  },
+  a3_rescue: {
+    night: true,
+    text: `You step through.
+
+The square stops, and the polo men stop, four of them leaning back against Heck's dead weight with their silver gloves sunk into his arms. One of them has his mouth open, mid-shout. Up close, he's just a guy. Thirty. A wedding ring. A sunburned nose. A little sweat on his upper lip.
+
+You pull their hands off Heck one finger at a time. It takes forever. In here, everything takes forever, and you don't have forever. You have a minute.
+
+Then you lift him.
+
+Holding him in here is like holding the sun. Your sleeves smoke, and then they're not smoking anymore, because they're gone, and you carry him across forty yards of frozen grass and glass with your broken parts and your good parts and every part, and you put him in the back of Bree's Corolla, and you step back out.
+
+Time comes back like a slammed door.
+
+Four polo men fall over backward onto the grass, holding nothing. Bree is staring at Heck in her back seat, and then at you, by her bumper, with your arms held out from your sides.
+
+On the library steps, Brannigan is very still. He looks at his tablet. Then he looks up at you, not at the car, at *you*, for a long, calm second, the way a man looks at a thing he's going to buy.`,
+    next: 'a3_after'
+  },
+
+  a3_heck_taken: {
+    night: true,
+    text: `You stand there. You watch.
+
+They lift him into the truck. It takes all four of them. One of them slips on the ramp and swears and laughs at himself, a normal laugh, a guy-at-work laugh. The rear doors close. *Clunk.* The refrigeration unit on the roof kicks on with a shudder.
+
+**BLUE RIBBON FOODS** pulls off the curb onto F Street, signals left, a good citizen, and turns onto Indiana Avenue, and is gone.
+
+The misting fans are still going. They spray cold water into the empty night.
+
+Teddy doesn't scream anymore. He's sitting on the curb with his bandaged hand in his lap, staring at the place where the truck was. When you limp over to him, he doesn't look up.
+
+teddy: You had a step left. I saw it. I saw you think about it.
+
+You don't say anything.
+
+teddy: Go home, cold guy.
+
+Bree doesn't look at you at all. She starts the Corolla, and Teddy gets in, and they drive away the same way the truck went, slower, like a funeral. On the library steps, Brannigan watches them go. Then he looks at you.`,
+    next: 'a3_after'
+  },
+
+  a3_after: {
+    night: true,
+    clock: { time: '11:26 PM' },
+    enter: g => { g.know('brannigan_voice', ['sam'], 'Brannigan spoke to you at McPherson Square: "When the nosebleeds start lasting longer than the minute, you call us. We\'re the only ones who\'ll know what to do."'); },
+    text: g => `${g.f('heck_fate') === 'saved' ? 'The Corolla goes off the curb backward with a crunch, and spins, and goes, and Bree\'s sirens go with it, Doppler-fading east on Allegheny toward Port Richmond. Through the back window you can see the top of Heck\'s head against the glass, steaming the window white.\n\nAnd then it\'s just you, in the square, in the glass, bleeding.\n\n' : ''}Brannigan comes down the library steps.
+
+He doesn't hurry. He doesn't look at the polo men, who've stopped at the edge of the grass like dogs that know the word *stay*. He stops twenty feet from you, with the tablet held loosely at his side, the way another man would hold a newspaper.
+
+His voice is nothing like you expected. It's kind. A youth pastor's voice. A pediatrician's.
+
+BRANNIGAN: You're hurt, son.
+
+You don't answer.
+
+BRANNIGAN: ${g.hurt('cheekbone') ? 'That face needs a surgeon. ' : 'That arm needs a surgeon. '}${g.hurt('broken_hand') ? 'That hand needs setting. ' : ''}We've got a doctor in that tent who doesn't ask names. Nobody would ever have to know.
+
+He waits. He's very good at waiting.
+
+BRANNIGAN: No? Okay.
+
+He nods, like you've answered a question he only asked to be polite.
+
+BRANNIGAN: Then I'll just say this one thing, and you can do what you want with it. When the nosebleeds start lasting longer than the minute, you call us. We're the only ones who'll know what to do.
+
+*The minute.*
+
+He knows about the minute.
+
+You run. You don't decide to; you're just running, under the El, your blood leaving a trail on Kensington Avenue that anybody could follow, and nobody does. Behind you, Brannigan doesn't move. He doesn't have to.`,
+    next: 'a4_ride'
+  }
+});
+
+/* s01e04c.js */
+/* S1 · E4 · SUTURES, part 3 of 3: Act Four ("Sutures"), tag, polls. */
+EH.scenes('s01e04', {
+
+  /* ================= ACT FOUR: SUTURES ================= */
+  a4_ride: {
+    card: { kind: 'act', label: 'Act Four', title: 'Sutures' },
+    night: true,
+    loc: 'CARDONE HALL · STAIRWELL B',
+    clock: { day: 'Sat', date: 'Sep 12', time: '2:38 AM' },
+    text: g => `You get home somehow. Some of it on the El, in the last car, where a man asleep across three seats opens one eye at the blood and closes it again. Some of it walking. The last six blocks, leaning on a parked car every half block like you're saying goodbye to each one.
+
+You don't go to your room. You can't go to your room. Nik's in your room.
+
+You go to the top of Stairwell B, the landing outside the roof door, where nobody comes, and you sit down on the concrete with your back to the wall. You wrap your arm in your own T-shirt and hold it up over your head, because you saw that in a movie once. You sit there for two hours trying to figure out how to be a person who walks into a dorm at three in the morning looking like this.
+
+You don't figure it out.
+
+${g.f('heck_fate') === 'saved' ? 'At 1:15, your phone buzzes. *Bree.* A photo: Heck asleep in a bathtub in a tiled bathroom somewhere in Port Richmond, cold water running, a two-year-old\'s rubber duck on the edge of the tub. The steam coming off him is faint now. Barely there.\n\nTXT bree: 101.2 and dropping\nTXT bree: he woke up and said lo siento for ur face and went back to sleep\nTXT bree: teddy says ur an idiot\nTXT bree: teddy says thank u. he wont text it so im texting it\n\nYou look at the duck.' : 'At 1:15, you text Teddy: *im sorry.*\n\nDelivered.\n\nIt doesn\'t say *Read*. You watch it not say *Read*.'}
+
+At 2:38, the stairwell door bangs open two floors down, and you hear Nik, in socks, taking the stairs two at a time and saying your name, and then your *full* name, which means he's scared.
+
+nik: Sam? *Salvatore?* Bro, I swear to God, your phone pinged on this staircase, I can *see* you on Find My, if you're up there—
+
+He comes around the landing and sees you.
+
+He stops.
+
+You watch it happen. You watch all the blood go out of his face at once. He grabs the railing. His breathing changes: fast, then faster, high in his chest, like he's trying to drink the air through a straw. His hand on the railing is shaking so hard the railing rattles.
+
+nik: I'm fine. I'm fine. I'm fine, I'm, this is, this happens, I'm—
+
+He's not fine. He sits down hard on the step, folded over his own knees, and he can't get a breath in, and he's looking at your arm and can't stop looking at it.`,
+    choices: [
+      { text: 'Get down there with him. Your arm can wait two minutes. "Nik. Look at me. Breathe with me. In for four."', tag: 'Him first',
+        fx: g => { g.flag('nik_panic', 'helped'); g.bond('nik', { trust: 2, affection: 2 }); g.know('nik_panic', ['sam', 'nik'], 'Nik has panic attacks. He had one on the stairwell when he saw you bleeding. He\'s had them since he was eleven.'); }, go: 'a4_nik_help' },
+      { text: '"Nik. Nik. I need Grace. Go get Grace. Go."', tag: 'Get Grace',
+        fx: g => { g.flag('nik_panic', 'sent'); g.bond('nik', { trust: 1 }); g.know('nik_panic', ['sam', 'nik'], 'Nik has panic attacks. He had one on the stairwell when he saw you bleeding.'); }, go: 'a4_nik_send' }
+    ]
+  },
+  a4_nik_help: {
+    night: true,
+    text: `You get down the four steps on your butt, one at a time, holding your arm up, and you sit next to him. You don't touch him. You just get your face where he can see it.
+
+sam: Nik. Look at me. Not the arm. Me. In for four.
+
+He looks at you. He breathes in, ragged, a hiccup in the middle of it.
+
+sam: Hold it. Out for four. Yeah. Like that. Again.
+
+You do it with him eight times. Nine. On the tenth, his hand stops rattling the railing.
+
+nik: Sorry. *Sorry.* I'm sorry, this is so stupid, you're the one who's *bleeding*—
+
+sam: How long?
+
+nik: …Since I was eleven. My mom calls them my *nerves*. Like I'm a Victorian lady. Like I need a *fainting couch*.
+
+He wipes his face with both hands.
+
+nik: Okay. Okay. I'm good. I'm getting Grace. Don't argue. You'll lose. I'm the guy in the chair, and the guy in the chair gets to make *one call*.`,
+    next: 'a4_grace'
+  },
+  a4_nik_send: {
+    night: true,
+    text: `sam: Nik. Nik. I need Grace. Go get Grace. Go.
+
+It works. Not because it helps him breathe. It doesn't help him breathe. But it gives him something to *do*, and Nik Bhattacharya has never in his life been able to not do something somebody needed.
+
+He goes down the stairs gasping, holding the rail, one floor, two, and you hear him in the ninth-floor hallway, banging on Grace's door with the flat of his hand like there's a fire.
+
+You sit there holding your arm up. You think: *I didn't know. Three weeks, and I didn't know he did that.* You think: *What else don't I know about the people I keep almost getting killed in front of?*`,
+    next: 'a4_grace'
+  },
+
+  a4_grace: {
+    night: true,
+    loc: 'CARDONE HALL · 9TH FLOOR BATHROOM',
+    clock: { time: '3:07 AM' },
+    text: g => `Which is how you end up on the floor of the ninth-floor bathroom, between the last shower stall and the radiator, with Grace Lim kneeling over you with a curved needle and her suture practice kit, which she keeps under her bed in a tackle box that says **NOT A TACKLE BOX** in label-maker tape.
+
+Nik's sitting outside the door on the hallway carpet, guarding it. You can hear him breathing.${g.f('nik_panic') === 'helped' ? ' In for four.' : ''}
+
+${{ laugh: 'You laughed when she put the needle in. You\'re still sort of laughing, in little hiccups, every time she pulls the thread through.', nobody: 'You grabbed her wrist and made her promise. She promised. She\'s still a little pale about it.', silent: 'You haven\'t made a sound. Forty-one tiles over your head. You\'ve counted them nine times.' }[g.f('cold')]}
+
+Grace works fast and neat and doesn't talk. She cleaned the ${g.hurt('laceration') && g.f('f3') === 'bad' ? 'cut over your eye' : 'cut on your arm'} with a whole bottle of saline and most of a bottle of iodine. She's looked at everything else, too. ${g.hurt('broken_hand') ? 'Your hand, which is swelling up like a latex glove somebody blew into. ' : ''}${g.hurt('cracked_ribs') ? 'Your ribs, which she pressed once and you nearly went through the ceiling. ' : ''}${g.hurt('cheekbone') ? 'Your face, which she won\'t let you see. ' : ''}${g.hurt('burned_arms') || g.hurt('burned_arm') ? 'The burns, which she looked at without saying anything. ' : ''}${g.hurt('handprint') ? 'The handprint on your chest. Five fingers and a palm. She put two fingers next to one of the burned fingers, measuring, and then took her hand away fast. ' : ''}
+
+She ties off the fourth stitch. Then she sits back on her heels and looks at you.
+
+grace: Okay.
+
+It's not *okay* like everything's okay. It's *okay* like a door closing.
+
+grace: I'm going to ask you once. I'm pre-med. I've been your RA for three weeks. You came back from the blackout zone bleeding out of your face, and a man in a polo shirt asked me about your *floor*, and you just walked in at three in the morning ${g.hurt('handprint') ? 'with burns in the shape of a human hand' : 'looking like you lost a fight with a building'}.
+
+She holds up the needle, threaded, for the next stitch.
+
+grace: Who did this to you, Sam?`,
+    choices: [
+      { text: 'Tell her. All of it. The Slip, the cold, the Hitch, Heck, the truck. Somebody who isn\'t Nik should know.', tag: 'Tell Grace',
+        fx: g => { g.flag('grace4', 'told'); g.know('sam_slip', ['grace']); g.know('sam_at_girard', ['grace']); g.know('halcyon_clinic', ['grace']); if (g.knows('halcyon_truck')) g.know('halcyon_truck', ['grace']); g.bond('grace', { trust: 3, respect: 2 }); g.hidden('revenant_drift', -0.3); }, go: 'a4_grace_told' },
+      { text: '"A guy who was on fire." Beat. "I\'m not joking."', tag: 'Some of it',
+        fx: g => { g.flag('grace4', 'some'); g.bond('grace', { trust: 1 }); g.know('heck_fire_grace', ['sam', 'grace'], 'You told Grace a man who was on fire did this to you.'); }, go: 'a4_grace_some' },
+      { text: '"Grace. Please don\'t ask me that."', tag: 'Don\'t ask',
+        fx: g => { g.flag('grace4', 'refused'); g.bond('grace', { tension: 1 }); }, go: 'a4_grace_refused' }
+    ]
+  },
+  a4_grace_told: {
+    night: true,
+    text: `You tell her.
+
+You tell her about the cold at 11:51 and the bus on Spring Garden and the kid and the light. The world stopping, and you not stopping with it. The minute that's four seconds. The armored truck on Girard. The rowhouse on 15th Street. Heck, and his sobrina, and the tent, and the white truck idling on F Street. You tell her in a flat, quiet voice, staring at the ceiling, and Grace keeps stitching while you talk. She doesn't stop once. Her hands are steady the whole time.
+
+When you're done, she ties off the stitch and cuts the thread with a pair of tiny curved scissors.
+
+grace: Okay.
+
+sam: That's it? *Okay?*
+
+grace: This was supposed to be my MCAT year. That was the whole plan.
+
+She threads the needle again.
+
+grace: Okay means I believe you. Okay means I'm in. Okay means you're going to the ER tomorrow and I'm driving, and if you argue, I'm calling the emergency contact on your housing form, which is your *mother*, Sam, and I've *met* her, and she scares me.`,
+    next: 'a4_door'
+  },
+  a4_grace_some: {
+    night: true,
+    text: `sam: A guy who was on fire.
+
+Grace looks at you.
+
+sam: I'm not joking.
+
+grace: I know you're not joking. I'm the one sewing you shut.
+
+She bends back over your arm and puts the needle in, and pulls it through, and ties it off.
+
+grace: Okay. Here's the deal. You don't have to tell me the rest tonight. But you're going to the ER tomorrow, and I'm driving. And when you're ready to tell me how a man was on fire, and how you were *close enough to him* for that, you're going to tell *me*, and not some guy in a polo shirt with a clipboard. Deal?
+
+sam: Deal.
+
+grace: Okay.`,
+    next: 'a4_door'
+  },
+  a4_grace_refused: {
+    night: true,
+    text: `sam: Grace. Please don't ask me that.
+
+She doesn't say anything. She bends back over your arm and finishes the stitch, and ties it, and cuts it, and starts another one, and her mouth is very thin.
+
+grace: Okay.
+
+This time it's the other kind of *okay*. The one that means *I heard you, and I'm writing it down somewhere*.
+
+grace: You're going to the ER tomorrow. I'm driving. That part's not a question.`,
+    next: 'a4_door'
+  },
+
+  /* ---------- Jules ---------- */
+  a4_door: {
+    night: true,
+    clock: { time: '3:24 AM' },
+    enter: g => { g.know('jules_saw_hurt', ['sam', 'jules'], 'Jules saw you bleeding on the bathroom floor at 3 a.m. after Kensington. She saw the injuries.'); g.heat('jules', 1); },
+    text: g => `Out in the hallway, Nik says *hey—no—Jules, wait—* and then the bathroom door opens.
+
+It's Jules. In plaid pajama pants and a gray cardigan and slippers, her hair down, her face scrubbed and bare and very young. Behind her, all the way down the hall, her door is open, and her lamp is on, a long yellow rectangle of light across the hallway carpet.
+
+She sees you. You watch her see all of it, one thing after another: the blood on the tile, ${g.hurt('cheekbone') ? 'your face, ' : ''}the arm, ${g.hurt('broken_hand') ? 'the hand, ' : ''}${g.hurt('handprint') ? 'the handprint, ' : ''}${g.hurt('burned_arms') || g.hurt('burned_arm') ? 'the burns, ' : ''}Grace's bloody gloves, the needle.
+
+${g.f('fri_leave') === 'promise' ? 'jules: You said you\'d be back.\n\nsam: I came back.\n\nShe looks at the floor. At the blood on it.\n\njules: *This* is back?' : g.f('fri_leave') === 'silent' ? 'jules: You just *left*. In the middle of the movie. You didn\'t say anything.\n\nsam: I know.' : 'jules: You went out in the hallway to take a call. You never came back in.\n\nsam: I know.'}
+
+grace: Pemberton. Go back to bed.
+
+jules: No.
+
+She comes in. She closes the door behind her. She kneels down on the tile on your other side, opposite Grace, in her pajamas, in your blood, and looks at Grace's hands.
+
+jules: Your hands are shaking.
+
+grace: They are not.
+
+They are. They weren't five minutes ago. They are now.
+
+jules: Give it to me.
+
+grace: Do *you* know how?
+
+jules: My mother let me practice on oranges at the kitchen table. I was six.
+
+Grace looks at her for a long second. Then she hands over the needle.
+
+Jules threads it without looking. She takes your ${g.f('f3') === 'bad' ? 'face in one hand, turning it to the light, her thumb along your jaw' : 'arm in her lap, across her pajama knees, palm up'}, and she puts the needle in, and her hands are perfectly, perfectly steady.
+
+Every stitch is a question. You can feel her asking it.
+
+On the fourth one, she asks it out loud. She doesn't look up.
+
+jules: What happened to you?`,
+    choices: [
+      { text: '"Bike. Car door on Lehigh. I went through a bus shelter." Keep your hand away from your ear.', tag: 'Lie',
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['jules'], near: ['jules'], label: 'Lie to Jules', on: { strong: 'a4_lie_strong', weak: 'a4_lie_weak', miss: 'a4_lie_miss' } } },
+      { text: '"Somebody I know was in trouble. I helped. It went bad." True. Every word of it. Not one word more.', tag: 'Some of it',
+        fx: g => { g.flag('jules4', 'some'); g.heat('jules', 2); g.bond('jules', { trust: 1 }); }, go: 'a4_jules_some' },
+      { text: '"I can\'t tell you, Jules." Then: "I\'m sorry."', tag: 'Can\'t',
+        fx: g => { g.flag('jules4', 'cant'); g.heat('jules', 1); g.bond('jules', { respect: 1, trust: -1 }); }, go: 'a4_jules_cant' }
+    ]
+  },
+  a4_lie_strong: {
+    night: true,
+    enter: g => { g.flag('jules4', 'lie'); g.bond('jules', { trust: -1 }); g.know('lie_bike', ['sam'], 'You told Jules you hit a car door on Lehigh and went through a bus shelter. She said "Okay."'); },
+    text: g => `sam: Bike. Car door on Lehigh. I went through a bus shelter.
+
+It's a good lie. It's built out of true parts, which is how Vinnie always said you build one. Your hand stays in your lap. Your voice stays flat.
+
+She ties off the stitch.
+
+jules: Okay.
+
+Just that. She doesn't look up. She starts the next stitch.
+
+${g.hurt('handprint') ? 'She doesn\'t look at the handprint on your chest. She very carefully doesn\'t look at it, the whole time, the way you don\'t look at somebody crying on a train.' : (g.hurt('burned_arm') || g.hurt('burned_arms')) ? 'She doesn\'t ask about the burns. She doesn\'t ask about anything.' : 'She doesn\'t ask about anything.'}
+
+When she's done, she cuts the thread, and lays your ${g.f('f3') === 'bad' ? 'face back against the wall like it\'s something breakable' : 'arm down on your knee like it\'s something breakable'}, and stands up.
+
+jules: Keep it dry. Forty-eight hours. Then soap and water.
+
+She goes to the door. With her hand on the handle, she stops.
+
+jules: Kearney. You're getting better at that.`,
+    next: 'a4_after'
+  },
+  a4_lie_weak: {
+    night: true,
+    enter: g => { g.flag('jules4', 'lie'); g.bond('jules', { trust: -2 }); g.know('lie_bike', ['sam', 'jules'], 'You told Jules you hit a car door on Lehigh. She knew it wasn\'t true.'); },
+    text: g => `sam: Bike. Car door on Lehigh. I went through a bus shelter.
+
+She ties off the stitch.
+
+jules: A bus shelter.
+
+sam: Yeah.
+
+jules: ${g.hurt('handprint') || g.hurt('burned_arm') || g.hurt('burned_arms') ? 'And the bus shelter was on fire.' : 'And the bus shelter threw a left hook.'}
+
+You don't say anything. She doesn't look up.
+
+jules: ${g.hurt('handprint') ? 'The bus shelter had *five fingers*, Kearney.' : (g.hurt('burned_arm') || g.hurt('burned_arms')) ? 'Bus shelters don\'t burn people.' : 'Bus shelters don\'t punch back.'}
+
+She finishes the last stitch in silence, and cuts the thread, and puts the needle down on the tile, very precisely, parallel to the grout line.
+
+jules: The night of the Hitch, you came up Liacouras Walk shaking like you'd been somewhere. Then the fire. Now this. You're always *there*. Every time something happens in this city, you're there, and you come back looking like *this*, and you lie to me about it with your whole face.
+
+She stands up.
+
+jules: I'm not asking you to tell me. I'm asking you to stop insulting me.`,
+    next: 'a4_after'
+  },
+  a4_lie_miss: {
+    night: true,
+    enter: g => { g.flag('jules4', 'lie'); g.bond('jules', { trust: -2, respect: -1 }); g.know('lie_bike', ['sam', 'jules'], 'You told Jules you hit a car door on Lehigh. She caught it immediately.'); },
+    text: `sam: Bike. Car door on Lehigh. I went through a—
+
+Your hand is on your ear. You don't know how it got there. You take it down.
+
+Jules pulls the stitch tight. Not cruelly. Just *tight*, exactly as tight as it should be and not a hair looser, and you feel it all the way up your arm.
+
+She ties it off. She cuts the thread. She stands up, and looks down at you on the floor, in your blood, and her face isn't angry. It isn't anything at all.
+
+jules: I sat on a roof with you for six hours. I told you about the chapel.
+
+She opens the door.
+
+jules: Keep it dry for forty-eight hours.`,
+    next: 'a4_after'
+  },
+  a4_jules_some: {
+    night: true,
+    text: `sam: Somebody I know was in trouble. I helped. It went bad.
+
+She stops with the needle halfway through.
+
+Then she finishes the stitch. Ties it. Starts the next one.
+
+jules: Somebody you know.
+
+sam: Yeah.
+
+jules: The same somebody as the fire?
+
+You don't answer. That's an answer. She knows it's an answer.
+
+She finishes the last stitch and cuts the thread and sits back on her heels on the bathroom tile, with your blood on her pajama knees, and looks at you for the first time since she walked in.
+
+jules: The night of the Hitch, you came up Liacouras Walk shaking like you'd been somewhere. Then the fire. Now this. You keep being *there*, Kearney.
+
+sam: I know.
+
+jules: Are you going to tell me why?
+
+sam: Not tonight.
+
+She nods slowly, like she's agreeing to the terms of something.
+
+jules: *Not tonight.*
+
+She hears herself say it. She stands up.
+
+jules: Keep it dry for forty-eight hours. And Sam—
+
+She stops in the doorway, her back to you.
+
+jules: I was awake when you came in. I'd like it on the record that I hate that.`,
+    next: 'a4_after'
+  },
+  a4_jules_cant: {
+    night: true,
+    text: `sam: I can't tell you, Jules.
+
+You hear yourself. *Jules.* Not *Pemberton*. It just came out.
+
+sam: I'm sorry.
+
+She finishes the stitch. Ties it. She doesn't say anything for the rest of them, four more, five, and the only sound is the radiator ticking and Nik breathing out in the hallway and the thread pulling through.
+
+When she's done, she cuts it and puts the needle down on the tile.
+
+jules: *Can't.*
+
+sam: I know.
+
+jules: You know what's strange? I believe you. That you can't. I believe that it's *can't*, and not *won't*.
+
+She stands up.
+
+jules: I just don't know how many times I can believe it.`,
+    next: 'a4_after'
+  },
+
+  a4_after: {
+    night: true,
+    clock: { time: '3:51 AM' },
+    enter: g => { g.sleep(7); },
+    text: g => `When the door closes behind her, Grace lets out a long breath and sits down against the radiator next to you, with her bloody gloves still on, like she's too tired to take them off.
+
+grace: Okay. So that's a whole thing.
+
+sam: That's a whole thing.
+
+grace: Does she know you're—
+
+${g.f('grace4') === 'told' ? 'sam: No.\n\ngrace: Okay.\n\nShe doesn\'t ask why not. She just sits there with you, shoulder to shoulder, the two of you looking at the lime-green shower caddy on the bench.' : 'sam: Does she know I\'m what?\n\ngrace: …I genuinely don\'t know how I was going to finish that sentence.\n\nShe sits there with you, shoulder to shoulder, the two of you looking at the lime-green shower caddy on the bench.'}
+
+Out in the hall, Nik has fallen asleep sitting up against the bathroom door. When you open it, he falls over backward into the room and lies there looking up at you.
+
+nik: Is it over?
+
+sam: Yeah.
+
+nik: Did we win?
+
+You think about the truck. ${g.f('tent_seen') ? 'The steel bed. ' : ''}${g.f('heck_fate') === 'saved' ? 'The duck on the edge of the bathtub.' : 'The misting fans spraying cold water into an empty square.'} Brannigan's kind voice. *The minute.*
+
+${g.f('heck_fate') === 'saved' ? 'sam: Yeah. This time.' : 'sam: No.'}
+
+You sleep seven hours, like a stone. Your body is busy with something.`,
+    next: 'tag_xray'
+  },
+
+  /* ================= TAG ================= */
+  tag_xray: {
+    card: { kind: 'tag' },
+    loc: 'TEMPLE UNIVERSITY HOSPITAL · EMERGENCY DEPT',
+    clock: { day: 'Sat', date: 'Sep 12', time: '4:40 PM' },
+    enter: g => {
+      g.S.injuries.forEach(i => { if (['broken_hand', 'cracked_ribs', 'cheekbone'].includes(i.id)) i.heal = 1; });
+      g.flag('xray_healed');
+      g.know('xray', ['sam', 'grace'], 'The x-ray at Temple ER showed fractures that were ten days into healing. You broke them the night before.');
+    },
+    text: g => `The ER at Temple University Hospital on a Saturday afternoon is a city of its own: a guy holding his own finger in a bag of ice, a grandmother in a wheelchair praying the rosary out loud, two cops eating Tastykakes, a baby screaming in a way that sounds personal. Grace sits next to you with an MCAT prep book the size of a cinderblock and a highlighter, and every twenty minutes, without looking up, she says *you're fine, stop looking at it*.
+
+You tell triage you fell off your bike. Triage writes it down without looking at you. Everybody at Temple ER on a Saturday fell off their bike.
+
+At 4:40, a resident named Dr. Ferrante, thirty, Italian-American, with a South Jersey accent and the exhausted cheer of a man twenty-six hours into a shift, puts your film up on the light box. It's your ${g.hurt('broken_hand') ? 'right hand. The five long bones fanning out from your wrist like a hand of cards' : g.hurt('cheekbone') ? 'skull, from the side. Your own face, as a ghost' : 'ribcage. Your own ribs, white curves like a bird cage'}.
+
+Dr. Ferrante looks at it. He tilts his head. He looks at it some more.
+
+DR. FERRANTE: Huh.
+
+He taps the film with his pen, at the ${g.hurt('broken_hand') ? 'bone under your pinky knuckle' : g.hurt('cheekbone') ? 'curve under your eye' : 'sixth rib, on the right side'}. There's a line across it, faint. And around the line, a soft gray cloud, like smoke frozen around the break.
+
+DR. FERRANTE: So, that's a fracture. ${g.hurt('broken_hand') ? 'Boxer\'s fracture, classic, you see a lot of guys who punched a wall. ' : ''}But see this? The fuzzy stuff? That's callus. That's new bone. That's your body *patching* it.
+
+sam: Okay.
+
+DR. FERRANTE: So when did you do this?
+
+sam: Last night.
+
+He laughs, like you made a joke.
+
+DR. FERRANTE: No, seriously.
+
+sam: Last night. Like, eleven-thirty.
+
+He stops laughing. He looks at the film. He looks at you, at your stitched arm, at the date on your intake form.
+
+DR. FERRANTE: Callus like this takes ten days, minimum. This is a fracture that's ten days into healing. Did you have a fall a couple weeks ago? Maybe you didn't notice?
+
+You look at the ghost of your own bones on the light box, glowing.
+
+sam: …Yeah. Maybe. A couple weeks ago.
+
+DR. FERRANTE: There you go. Mystery solved. You heal like a twelve-year-old, kid. Count yourself lucky.
+
+He writes something down and leaves to go save somebody's finger.
+
+Grace doesn't say anything. She's put the MCAT book down. She stands up and walks to the light box and looks at the film for a long time, close, with her arms crossed, the way she looks at a problem set she's going to get right no matter how long it takes.
+
+grace: That's not okay.
+
+She says it quietly.
+
+grace: Sam. That's not *okay*. A callus takes ten days. You didn't *have* ten days.
+
+You look at the light box. You think about the cold in there, and how long a minute always feels.
+
+grace: Sam?
+
+On the light box, your bones glow white and patient.`,
+    end: true
+  }
+});
+
+Object.assign(EH.episodes.s01e04, {
+  polls: [
+    { q: 'Heck, in McPherson Square', opts: [
+      { label: 'Brought him home', pct: 71, if: g => g.f('heck_fate') === 'saved' },
+      { label: 'Watched the truck pull away', pct: 29, if: g => g.f('heck_fate') === 'taken' }
+    ] },
+    { q: 'Grace asked who did this', opts: [
+      { label: 'Told her everything', pct: 34, if: g => g.f('grace4') === 'told' },
+      { label: '"A guy who was on fire"', pct: 48, if: g => g.f('grace4') === 'some' },
+      { label: '"Please don\'t ask"', pct: 18, if: g => g.f('grace4') === 'refused' }
+    ] },
+    { q: 'Jules, with the needle', opts: [
+      { label: 'Lied: the bike, the car door', pct: 39, if: g => g.f('jules4') === 'lie' },
+      { label: 'Told her some of it', pct: 42, if: g => g.f('jules4') === 'some' },
+      { label: '"I can\'t tell you"', pct: 19, if: g => g.f('jules4') === 'cant' }
+    ] }
+  ],
+  onEnd: g => {
+    g.recap(g.f('heck_fate') === 'saved' ? 'Halcyon lured Heck to McPherson Square. You fought him to bring him home, and you did.' : 'Halcyon lured Heck to McPherson Square. You fought him, and they took him anyway.');
+    g.recap('For the first time, you rewound time on purpose.');
+    g.recap('Brannigan knows about the minute.');
+    g.recap('Jules stitched you up on the bathroom floor at 3 a.m.');
+    g.recap('Your x-ray showed ten days of healing. You broke it the night before.');
+  }
+});
+
 </script>
 <script>
 /* THE EVENT HORIZON: browser engine (UI, sound, saves). Depends on core.js and the episode files. */

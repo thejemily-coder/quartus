@@ -20,14 +20,14 @@ EH.scenes('s01e04', {
     card: { kind: 'act', label: 'Act Two', title: 'Kensington Avenue' },
     night: true,
     loc: 'BROAD & CECIL B. MOORE',
-    clock: { time: '10:56 PM' },
+    enter: g => { g.clock({ time: g.f('fri_leave') === 'stayed' ? '11:11 PM' : '10:56 PM' }); },
     text: g => `${{
       silent: 'You get up in the middle of the movie and you go. You don\'t look back at the couch. You feel her watching you all the way to the stairwell door anyway, like a hand between your shoulder blades.',
       promise: 'You lean across Simone, who goes very still, and you say it low, close to Jules\'s ear: *I have to go. I\'ll be back. I promise.* She doesn\'t say anything. She just looks at you, and then down at your phone, and then back at you, and nods, once, like she\'s signing something.',
       stayed: 'You don\'t remember the stairs. You remember the side door banging open onto Broad, and the cold air, and your own breath.'
     }[g.f('fri_leave')]}
 
-${{ hoodie: 'The hoodie\'s in your backpack where it lives now. Gaiter up. Pop\'s cap backward.', windbreaker: 'Ciro\'s windbreaker, inside out, zipped to the chin.', helmet: 'The helmet, the visor down, the world gone amber.', none: 'No hood. No mask. Just you.' }[g.f('costume') || 'hoodie']} McPherson Square is three miles east and a little north, up Lehigh to Kensington Avenue, under the El. ${g.f('fri_leave') === 'stayed' ? 'It\'s 11:11. Whatever\'s happening there is already happening.' : 'It\'s 10:56. Four minutes until the text said eleven.'}`,
+${{ hoodie: 'The hoodie\'s in your backpack where it lives now. Gaiter up. Pop\'s cap backward.', windbreaker: 'Ciro\'s windbreaker, inside out, zipped to the chin.', helmet: 'The helmet, the visor down, the world gone amber.', none: 'No hood. No mask. Just you.' }[g.f('costume') || 'hoodie']} McPherson Square is three miles northeast, up Lehigh to Kensington Avenue, under the El. ${g.f('fri_leave') === 'stayed' ? 'It\'s 11:11. Whatever\'s happening there is already happening.' : 'It\'s 10:56. Four minutes until the text said eleven.'}`,
     choices: [
       { text: 'The bike. Lehigh Avenue, flat out, every light.', tag: 'Ride',
         check: { kind: 'pool', attr: 'reflex', skill: 'ride', diff: 2, label: 'Three miles, no brakes', physical: true, on: { crit: 'a2_ride_fast', success: 'a2_ride_fast', partial: 'a2_ride_fast', fail: 'a2_ride_slow', botch: 'a2_ride_slow' } } },
@@ -50,7 +50,7 @@ At Kensington Avenue the El comes over you like a ceiling, and the world goes da
 
 You don't really go *over* it. You go *into* it, then over it, then across forty feet of Lehigh Avenue on your side, and the bike goes somewhere else. The guy who opened the door yells *you okay?* in the voice of a man who is mostly yelling *don't sue me*.
 
-You're okay. Your hip says you're not. You get the bike, and the front wheel's bent like a taco, and you ride it anyway, wobbling, under the El at Kensington Avenue, eleven minutes late.`,
+You're okay. Your hip says you're not. You get the bike, and the front wheel's bent like a taco, and you ride it anyway, wobbling, under the El at Kensington Avenue, fourteen minutes late.`,
     next: 'a2_square'
   },
 
@@ -66,7 +66,7 @@ It's white, clean, lit from inside like a lantern. A generator hums behind it. A
 
 Four men in gray polo shirts are standing around the tent like dads at a Little League game.
 
-On the library steps, a fifth man is holding a tablet. Forties. Close-cropped gray hair. Calm. The same calm man who swept Broad Street with a tablet the night of the Hitch. *Brannigan.* You've never heard his voice. You've seen his face once before, on Broad Street, the night of the Hitch.
+On the library steps, a fifth man is holding a tablet. Forties. Close-cropped gray hair. Calm. The same calm man who swept Broad Street with a tablet the night of the Hitch. *Brannigan.* You've never heard his voice. You've seen his face twice, both the night of the Hitch: through Halcyon's glass, and on Broad Street after.
 
 And down Indiana Avenue, under the El, walking toward the square in the middle of the street:
 
@@ -207,7 +207,7 @@ heck: You gonna stop me, nene? With what?
 
 sam: With *me*.
 
-He looks down at you, all six-foot-four of him, and for one second, something like a laugh moves in his face, the old Heck, the gentle one from Port Richmond, eating pierogi off a paper plate.
+He looks down at you, all six-foot-four of him, and for one second, something like a laugh moves in his face, the old Heck, the gentle one from Port Richmond, grinning up at you from the kitchen floor with his hands in a tub of ice.
 
 heck: Mira. The nene's got cojones.
 
@@ -254,7 +254,7 @@ Heck raises his hands. Not like a man in a fight. Like a boxer. Chin down. Right
 
 Southpaw.
 
-You remember, one full second too late, the way he stood in the kitchen in Port Richmond. The flattened nose. The scar tissue over both eyes, shiny and thick. *Heck boxed.*`,
+You remember, one full second too late, the way he sat on Teddy's kitchen floor in Port Richmond, hands in the ice. The flattened nose. The scar tissue over both eyes, shiny and thick. *Heck boxed.*`,
     next: 'a3_f1'
   },
 
@@ -385,7 +385,7 @@ You smell it before you feel it. Then you feel it. Your hoodie sleeve smokes and
   },
   a3_f2_ice: {
     night: true,
-    enter: g => { g.flag('f2', 'ice'); g.bond('heck', { trust: 1 }); },
+    enter: g => { g.flag('f2', 'ice'); g.bond('heck', { trust: 1 }); g.money(-10); },
     text: `You know this corner. Not *this* corner, but this *kind* of corner: every bodega in Philly keeps a chest freezer of bagged ice out front, chained shut, the chain looped through the handle and a padlock that's been broken since 2016.
 
 It's there. Five feet from the El pillar. **ICE · HIELO · $2.99**. The padlock's broken.
@@ -517,10 +517,10 @@ Heck goes down on one knee on the sidewalk, in the glass, steaming, gasping. You
   },
   a3_f3_bad: {
     night: true,
-    enter: g => { g.flag('f3', 'bad'); g.injure({ id: 'laceration', name: 'Laceration (eyebrow, stitched)', pen: 0, heal: 2 }); g.injure({ id: 'cheekbone', name: 'Cracked cheekbone', pen: 1, heal: 3, affects: ['wits', 'reflex'] }); g.pool('stamina', -2); },
+    enter: g => { g.flag('f3', 'bad'); g.injure({ id: 'laceration', name: 'Lacerations (eyebrow and forearm, stitched)', pen: 0, heal: 2 }); g.injure({ id: 'cheekbone', name: 'Cracked cheekbone', pen: 1, heal: 3, affects: ['wits', 'reflex'] }); g.pool('stamina', -2); },
     text: `You knew where it was coming from. It didn't matter. Knowing where a train is coming from doesn't get you off the tracks.
 
-It lands. Not the whole of it; you took the worst of it off by turning, but enough. Your cheekbone. The curb. The edge of the curb opens your eyebrow to the bone, and the blood sheets down into your left eye, and the world goes red on one side and black on the other.
+It lands. Not the whole of it; you took the worst of it off by turning, but enough. Your cheekbone. The curb. The edge of the curb opens your eyebrow to the bone, and the blood sheets down into your left eye, and the world goes red on one side and black on the other. On the way down, your left forearm catches the lip of a storm grate and opens, six inches, below the elbow.
 
 You lie there. The El rattles over you. You think: *if I rewind again, I'll lose something.* You don't know how you know that. You don't know what. It's just there in you, like a word on the tip of your tongue in a language you don't speak.
 
@@ -545,7 +545,7 @@ Every polo man in the square stops.
 
 On the library steps, Brannigan holds up one hand. *Wait.* He's looking toward Kensington Avenue, toward the sirens that aren't coming, trying to see the lights. He's careful. He's very, very careful. It buys you a minute. Maybe less.
 
-teddy: Get him in the car! Sam! *Get him in the car!*
+teddy: Get him in the car! Cold guy! *Get him in the car!*
 
 Heck's on one knee in front of you, steaming, swaying, half-gone. He's two hundred and sixty pounds of burning man. He's still dangerous. He's still Heck.
 
@@ -734,7 +734,7 @@ Bree doesn't look at you at all. She starts the Corolla, and Teddy gets in, and 
     night: true,
     clock: { time: '11:26 PM' },
     enter: g => { g.know('brannigan_voice', ['sam'], 'Brannigan spoke to you at McPherson Square: "When the nosebleeds start lasting longer than the minute, you call us. We\'re the only ones who\'ll know what to do."'); },
-    text: g => `${g.f('heck_fate') === 'saved' ? 'The Corolla goes off the curb backward with a crunch, and spins, and goes, and Bree\'s sirens go with it, Doppler-fading down Kensington Avenue toward Port Richmond. Through the back window you can see the top of Heck\'s head against the glass, steaming the window white.\n\nAnd then it\'s just you, in the square, in the glass, bleeding.\n\n' : ''}Brannigan comes down the library steps.
+    text: g => `${g.f('heck_fate') === 'saved' ? 'The Corolla goes off the curb backward with a crunch, and spins, and goes, and Bree\'s sirens go with it, Doppler-fading east on Allegheny toward Port Richmond. Through the back window you can see the top of Heck\'s head against the glass, steaming the window white.\n\nAnd then it\'s just you, in the square, in the glass, bleeding.\n\n' : ''}Brannigan comes down the library steps.
 
 He doesn't hurry. He doesn't look at the polo men, who've stopped at the edge of the grass like dogs that know the word *stay*. He stops twenty feet from you, with the tablet held loosely at his side, the way another man would hold a newspaper.
 
