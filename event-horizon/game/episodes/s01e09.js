@@ -41,7 +41,7 @@ She looks at the river.
 
 jules: Sit down, Callum.
 
-He sits. He\'s still holding his oar gloves. He puts them on the bench between them, very neatly, a good boy from Episcopal Academy who was raised to put things down neatly, and he waits. He\'s good at waiting. He has always been good at it.
+He sits. He\'s still holding his oar gloves. He puts them on the bench between them, very neatly, a good boy from Episcopal Academy who was raised to put things down neatly, and he waits. He\'s good at waiting.
 
 jules: I\'m ending this. Us. I\'m sorry. I wanted to tell you in person, because you deserve that, and because you would have done it in person.
 
@@ -69,7 +69,7 @@ callum: You said it back. In October. At the party. I said it and you said it ba
 
 jules: I know. I\'m sorry. I said it because you said it.
 
-He looks at her for a second, and the camera, which has been watching them from across the path, sees his face do the thing a face does when it understands that something it believed was never true.
+He looks at her for a second, and the camera, which has been watching them from across the path, sees him believe her.
 
 Then he kisses the top of her head, the way you\'d kiss a sister, and he walks back down the grass to the boathouse, and he doesn\'t look back, which is the only unkind thing he does all afternoon, and it\'s not very unkind.
 
@@ -106,7 +106,6 @@ A gloved hand turns the bag face down and closes the drawer.`,
       card: { kind: 'act', label: 'Act One', title: 'All Souls' },
       loc: 'NORTH BROAD STREET',
       clock: { day: 'Sun', date: 'Nov 1', time: '4:30 PM' },
-      enter: g => { g.know('callum_over', ['sam', 'jules'], 'On Sunday afternoon, Jules ended it with Callum. In person.'); },
       text: g => `You sleep for three hours with your shoes on and wake up to two texts.
 
 TXT jules: are you asleep
@@ -141,7 +140,7 @@ frank: You wear it backward. You been wearing it backward since you were six. Yo
 He doesn\'t ask. He drives, and he doesn\'t ask, and you can feel him not asking all the way down Broad.`,
       choices: [
         { text: '"Yeah, Pop. It was me."', tag: 'Tell him',
-          fx: g => { g.flag('pop9', 'told'); g.flag('pop_knows', 'told'); g.know('sam_slip', ['frank']); g.bond('frank', { trust: 2, tension: -2 }); g.hidden('revenant_drift', -0.5); }, go: 'a1_pop_told' },
+          fx: g => { g.flag('pop9', 'told'); g.flag('pop_knows', 'told'); g.know('sam_slip', ['frank']); g.know('sam_blur_pop', ['sam', 'frank'], 'You told Pop it was you under I-95. He knows you\'re the Blur.'); g.bond('frank', { trust: 2, tension: -2 }); g.hidden('revenant_drift', -0.5); }, go: 'a1_pop_told' },
         { text: '"Pop. Not today. Please."', tag: 'Not today',
           fx: g => { g.flag('pop9', 'later'); g.bond('frank', { tension: -1 }); }, go: 'a1_pop_later' },
         { text: '"It wasn\'t me, Pop. I was at Temple. Ask Jules."', tag: 'Lie',
@@ -235,7 +234,7 @@ frank: You touched your ear.
 
 sam: What?
 
-frank: Since you were four. You broke your mother\'s lamp, you touched your ear. You took twenty bucks out of my coat, you touched your ear.
+frank: Since you were six. You told your mother the dog broke the lamp, you touched your ear. We never had a dog. You took twenty bucks out of my coat, you touched your ear.
 
 He doesn\'t say anything else. He turns the radio on, loud, and you ride to Mifflin Street with a man from Delco yelling about the secondary, and neither of you says another word.`,
       next: 'a1_mifflin'
@@ -298,7 +297,7 @@ He turns the can around in his hands.
 
 mikey: And at three in the morning, in your hallway, while you were in the lounge, Brannigan walks up to me with two coffees. Gives me one. Asks me how my brother\'s been sleeping. Whether you get nosebleeds. Whether you\'ve been, quote, *sensitive to cold*.
 
-The can is cold in your hand. Your hand is colder.
+You put the can down on the step.
 
 mikey: Then he asks the RA for a list of every resident on nine. I said that\'s not how a death investigation works. He said, *It is now, Officer.* Real friendly.
 
@@ -324,7 +323,7 @@ That Femi was in Halcyon\'s study. That they paid him and he needed the money. T
 
 You don\'t tell him what Femi came to tell you. You don\'t tell him *17*.
 
-Mikey listens to all of it without interrupting, which he has never done once in your life. When you\'re done he sits there with the can.
+Mikey listens to all of it without interrupting, which he has never done in your life. When you\'re done he sits there with the can.
 
 mikey: Then it wasn\'t an adverse reaction.
 
@@ -332,7 +331,7 @@ sam: No.
 
 mikey: Then somebody signed a lie at nine o\'clock this morning, and somebody closed a homicide by noon.
 
-He sets the can down on the step, very carefully, like it might go off.
+He sets the can down on the step like it might go off.
 
 mikey: Okay. I\'m gonna find out who.
 
@@ -361,7 +360,7 @@ sam: What?
 
 mikey: He walked six miles to tell you something. What?
 
-You don\'t answer. He waits. He\'s good at waiting. It\'s a cop thing, or a big-brother thing, or both.
+You don\'t answer. He waits. It\'s a cop thing, or a big-brother thing, or both.
 
 mikey: Okay. Okay. That\'s yours. For now.
 
@@ -410,7 +409,7 @@ Mikey looks at you for a long second. Then he looks at your hand.
 
 You\'re touching your left ear.
 
-mikey: Ma\'s lamp. 2012.
+mikey: The lamp, Sammy. The dog.
 
 sam: Mikey—
 
@@ -493,7 +492,7 @@ nonna: He was crying, Salvatò. Grown man, under the streetlight, crying like a 
 
 sam: Nonna. Who is he?
 
-She\'s quiet a long moment. The priest from Nigeria is putting out the altar candles one by one with a brass snuffer.
+She doesn\'t answer right away. The priest from Nigeria is putting out the altar candles one by one with a brass snuffer.
 
 nonna: I don\'t know who he is.
 

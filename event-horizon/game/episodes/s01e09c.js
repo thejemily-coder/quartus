@@ -7,10 +7,10 @@ EH.scenes('s01e09', {
     night: true,
     loc: 'RANDALL THEATER · TEMPLE UNIVERSITY',
     clock: { day: 'Fri', date: 'Nov 6', time: '10:30 PM' },
-    enter: g => { g.sleep(6); },
+    enter: g => { g.sleep(6); if (!g.f('did_hub_weisz')) { g.flag('phl_paper9', 'late'); g.grade('phl', -3); } },
     text: g => `Simone texts you Friday afternoon.
 
-TXT simone: Salvatore. Strike is tonight. We are short two bodies who can lift a flat. You have a body. Randall, 10pm. Wear shoes you hate.
+TXT simone: Salvatore. Strike is tonight. We are short two bodies who can lift a flat. You have a body. Randall, 7pm. Wear shoes you hate.
 
 You go. Of course you go.
 
@@ -47,7 +47,7 @@ She takes out her phone. She unlocks it and opens the Notes app, and turns it ar
 *5. September. You came home at 3 a.m. with a face like a dropped pie, and Grace and Juliet sewed you up on the bathroom floor. Juliet came back to our room with your blood on her cuffs and didn\'t say one word. Juliet ALWAYS says words.*
 *6. Your hands are cold. All the time. In October.*
 *7. You saw him. Nobody saw him. You knew his name.*
-*8. Nik: "Whatever they did to him, they want to do to you." Nik is the worst liar in North America. He wasn\'t lying.*
+${g.f('grief') === 'rage' ? '*8. Nik: "Whatever they did to him, they want to do to you." Nik is the worst liar in North America. He wasn\'t lying.*' : '*8. Nik won\'t look at me when your name comes up. Nik can\'t keep a secret to save his life. He\'s keeping one.*'}
 
 You read it twice. She lets you.
 
@@ -60,7 +60,7 @@ simone: This is yours.`,
       { text: 'Don\'t tell her. Show her.', tag: 'Show her', slip: true,
         fx: g => { g.flag('simone9', 'show'); if (g.S.drift >= 9 || g.hv('revenant_drift') >= 10) g.flag('unstick9'); }, go: 'a3_show' },
       { text: '"Simone. I get nosebleeds. I eat a lot. I knew a guy from Calc. That\'s the list."', tag: 'Lie',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['simone'], label: 'Lie to Simone', on: { strong: 'a3_lie', weak: 'a3_lie', miss: 'a3_lie' } } }
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Simone', on: { strong: 'a3_lie', weak: 'a3_lie', miss: 'a3_lie' } } }
     ]
   },
   a3_tell: {
@@ -104,7 +104,7 @@ simone: Salvatore Kearney. If you die, I will kill you.`,
     enter: g => { g.flag('simone9', 'told'); g.heat('simone', 10); g.know('sam_slip', ['simone']); g.bond('simone', { trust: 2, affection: 1 }); g.hidden('revenant_drift', -1); },
     text: `You try to tell her. You start at the beginning, at 11:51, and you get as far as the bus on Broad before your voice goes.
 
-So it comes out wrong. Out of order. The Slip and then Femi and then the bus again, Jayden, the cold, Pop on his knees under 95, Femi\'s fingertips on your door. You say *I didn\'t look* four times. You don\'t know you\'re crying until she hands you a tissue from the pocket of her coat, and then another, and then the whole packet.
+So it comes out wrong. Out of order. The Slip and then Femi and then the bus again, Jayden, the cold, Pop on his knees under 95, Femi\'s eyes, open. You say *I didn\'t look* four times. You don\'t know you\'re crying until she hands you a tissue from the pocket of her coat, and then another, and then the whole packet.
 
 She doesn\'t interrupt. When you run out, she\'s quiet for a while. The ghost light buzzes.
 
@@ -121,7 +121,7 @@ simone: Salvatore Kearney. If you die, I will kill you.`,
   },
   a3_show: {
     night: true,
-    enter: g => { g.flag('simone9', 'show'); g.heat('simone', 10); g.know('sam_slip', ['simone']); g.bond('simone', { trust: 2, respect: 2 }); if (g.f('unstick9')) { g.drift(1); g.hidden('revenant_drift', 1); g.injure({ id: 'frostnip9', name: 'Frostnipped fingers', pen: 1, heal: 1, affects: ['reflex'] }); g.know('revenant4', ['sam'], 'In the Slip, in the empty Randall Theater, the man who stands like you was sitting in row M. He was moving. He said, in your voice: "Get out before it closes."'); } },
+    enter: g => { g.flag('simone9', 'show'); g.heat('simone', 10); g.know('sam_slip', ['simone']); g.bond('simone', { trust: 2, respect: 2 }); if (g.f('unstick9')) { g.drift(1); g.hidden('revenant_drift', 1); g.injure({ id: 'frostnip9', name: 'Frostnipped fingers', pen: 1, heal: 2, affects: ['reflex'] }); g.know('revenant4', ['sam'], 'In the Slip, in the empty Randall Theater, the man who stands like you was sitting in row M. He was moving. He said, in your voice: "Get out before it closes."'); } },
     text: g => `You don\'t say anything. You stand up.
 
 You step through.
@@ -138,9 +138,9 @@ And in the dark, in the empty theater, in row M, something moves.
 
 There\'s a man sitting in the middle of row M with his hands folded in his lap, the way people sit at a show they\'ve paid for. He\'s watching the stage. He\'s watching Simone under the ghost light. Then he turns his head, slowly, and he looks at you.
 
-Nothing moves in the Slip. Nothing has ever moved in the Slip but you. He moves.
+Nothing moves in the Slip but you. He moves.
 
-Your face. Older. Gray at the temples. A scar through his lip. His left hand on the armrest with a gap where the ring finger should be. His eyes are red. He\'s been crying, and he\'s been crying for a long time, years, the way a riverbank has been eroding.
+Your face. Older. Gray at the temples. A scar through his lip. His left hand on the armrest with a gap where the ring finger should be. His eyes are red. Not from tonight. From years.
 
 He speaks. It\'s your voice, worn down to the wire.
 
@@ -194,12 +194,12 @@ simone: I know, Salvatore. I *know*. I\'ve known since about number four. I want
 
 She stands up, and brushes the sawdust off the back of her coat.
 
-simone: I\'m not going to say anything to anybody. Don\'t insult me by asking. I just wanted to be the person you\'d tell.`,
+simone: I\'m not going to say anything to anybody. Don\'t insult me by asking.`,
     next: 'a3_lists'
   },
   a3_lists: {
     night: true,
-    enter: g => { g.know('simone_two_lists', ['sam', 'simone'], 'Simone has two lists. One was about you. The other one, she says, "isn\'t mine to tell."'); },
+    enter: g => { g.know('simone_list', ['sam']); g.know('simone_two_lists', ['sam', 'simone'], 'Simone has two lists. One was about you. The other one, she says, "isn\'t mine to tell."'); },
     text: g => `Later, when the theater is locked and you\'re walking back up Liacouras Walk in the cold, she says it.
 
 simone: Does Juliet know?
@@ -253,11 +253,11 @@ Inside, it\'s warm, and it smells like onions frying in butter, and there\'s a m
 
 It\'s the size of a carry-on suitcase, on a cart beside the recliner, with a screen and two clear tubes, and it hums. Halina Kowal is in the recliner under a crocheted blanket, a small woman with Teddy\'s tired eyes, and the tubes go under the blanket. She has a rosary in one hand and a TV remote in the other, and *Wheel of Fortune* is on.
 
-BREE\'S AUNT: You\'re the Wawa boy.
+HALINA: You\'re the Wawa boy.
 
 sam: Yes, ma\'am.
 
-BREE\'S AUNT: Theodore says you are a good boy. Theodore does not say this about anybody. Sit. Eat. You are too skinny.
+HALINA: Theodore says you are a good boy. Theodore does not say this about anybody. Sit. Eat. You are too skinny.
 
 Heck is in the kitchen, enormous, at the stove in an apron that says *KISS THE COOK* in Polish, turning pierogi in a cast-iron pan with his bare fingers. A two-year-old in a bumblebee costume is sitting on the counter beside him, eating a pierogi with both hands. When he sees you, he grins his whole face.
 
@@ -275,7 +275,7 @@ Then you tell them.
 
 About Femi. About the stairwell, and the marrow, and your door. About the note.
 
-sam: Marisol\'s alive. Room 714. Building 7, at the Navy Yard. On a floor that isn\'t on the drawings.
+sam: Marisol\'s alive. Room 714. Building 7, at the Navy Yard.${g.knows('building7') ? ' On a floor that isn\'t on the drawings.' : ''}
 
 Heck puts down the spatula.
 
@@ -295,7 +295,7 @@ teddy: *No.* Not tonight.
 
 He turns the laptop around. It\'s a spreadsheet. Numbers. Halina\'s name at the top. *JEFFERSON TRANSPLANT EVAL · DEPOSIT · $40,000*. A column of zeroes, and one line that says *ShopRite (T+B) · $1,140*.
 
-teddy: You know what this is? This is my mother. I had forty grand in September. I had it in my *hand*, under 95, and I let it go, because it was your father on his knees, and it was you asking.
+teddy: You know what this is? This is my mother. I had forty grand in October. I had it in my *hand*, under 95, and I let it go, because it was your father on his knees, and it was you asking.
 
 He doesn\'t raise his voice. Teddy never raises his voice.
 
@@ -319,11 +319,11 @@ sam: Come with me and get Marisol instead. Heck\'s right. Before they do to her 
 
 Teddy looks at you a long time. He looks at the spreadsheet. He looks across the room at his mother in the recliner, who is watching *Wheel of Fortune* and pretending not to listen and mouthing *Sam is right* at the TV.
 
-teddy: Find me forty grand by the twenty-sixth, Wawa.
+teddy: Find me forty grand by the twenty-sixth, cold guy.
 
 sam: Teddy—
 
-teddy: Find me forty grand by the twenty-sixth, and I\'ll think about it. That\'s the best I got. That\'s the most I ever said to anybody.
+teddy: Find me forty grand by the twenty-sixth, and I\'ll think about it. That\'s the best I got.
 
 He closes the laptop.
 
@@ -336,7 +336,7 @@ teddy: And yes. Marisol. Heck\'s right. We do that together. That\'s the deal. H
 
 Teddy shakes his head.
 
-teddy: You don\'t get to tell me no, Wawa. You don\'t know what it\'s like to watch your mother hooked up to a suitcase.
+teddy: You don\'t get to tell me no, cold guy. You don\'t know what it\'s like to watch your mother hooked up to a suitcase.
 
 Heck puts his big hand on the table between you.
 
@@ -361,11 +361,11 @@ Teddy goes very still.
 
 teddy: Somebody already got killed. Somebody gets killed every day. My mother is getting killed in that chair, slow, three days a week.
 
-He stands up. He doesn\'t raise his voice. He never does.
+He stands up.
 
 teddy: You ate. That\'s good. Now you should go.
 
-BREE\'S AUNT: Theodore.
+HALINA: Theodore.
 
 teddy: Mom, he\'s going.
 
@@ -421,7 +421,7 @@ sam: Then Marisol.
 
 Teddy almost smiles. It\'s the first time you\'ve seen it. His chipped front tooth.
 
-teddy: After, Wawa. After the job, we go get her. I swear on my mother. You, me, Heck, Bree. That\'s the deal.
+teddy: After, cold guy. After the job, we go get her. I swear on my mother. You, me, Heck, Bree. That\'s the deal.
 
 heck: After.
 
@@ -455,7 +455,7 @@ She laughs, small and awful.
 
 bree: I can do anybody\'s voice in the world, perfect. I can\'t do mine so he\'ll hear it.
 
-Then, without any warning, out of her mouth, a voice you\'ve never heard. A woman\'s voice, old, Polish, tired, kind:
+Then, without any warning, out of her mouth, a voice you heard an hour ago over *Wheel of Fortune*. Halina\'s voice, old, Polish, tired, kind:
 
 *Theodore. Theodore, come and sit with me. I don\'t need the money. I need you to sit with me.*
 
@@ -471,14 +471,14 @@ She goes back up Edgemont Street. You stand under the El until the next train co
     night: true,
     loc: 'CARDONE HALL · 9-14',
     clock: { day: 'Sun', date: 'Nov 8', time: '11:51 PM' },
-    enter: g => { g.know('revenant_note', ['sam'], 'On the back of Jules\'s index card, under "When I know, you\'ll be the first," someone wrote in your handwriting: "Don\'t trust the lucky one." You didn\'t write it.'); },
+    enter: g => { g.sleep(7); g.know('revenant_note', ['sam'], 'On the back of Jules\'s index card, under "When I know, you\'ll be the first," someone wrote in your handwriting: "Don\'t trust the lucky one." You didn\'t write it.'); },
     text: g => `Sunday night, late, you finally open your Calc textbook.
 
-Nik is asleep with his headphones on. The radiator is knocking. You have Femi\'s green notebook open on the desk next to the textbook, *NOTES FOR SAM K.*, and you\'re going to do it, you\'re going to go back to chapter three and do every problem, the way he wrote them out, *outside first*, because you promised a phone in a drawer that you would.
+Nik is asleep with his headphones on. The radiator is knocking. You have Femi\'s green notebook open on the desk next to the textbook, *NOTES FOR SAM K.*, and you\'re going to do it, you\'re going to go back to chapter three and do every problem, the way he wrote them out, *outside first*, because you promised Femi\'s phone that you would, and somebody read it.
 
 You open the textbook, and an index card falls out onto the desk.
 
-It\'s the card from the lounge. From the night under 95, from problem set nine. You forgot you kept it. On the front, in your handwriting, in pencil: *What did you mean?*
+It\'s the card from the lounge. From the study night, from problem nine. You forgot you kept it. On the front, in your handwriting, in pencil: *What did you mean?*
 
 You turn it over. Her perfect handwriting.
 
@@ -493,7 +493,7 @@ Not *like* your handwriting. *Yours.* The *t*\'s crossed low, like little crucif
 
 *Don\'t trust the lucky one.*
 
-The card is cold. Colder than the room. It smells, very faintly, like a struck match and old pennies.
+The card is cold. Colder than the room. It smells, very faintly, like ozone and wet pennies.
 
 You sit there with it in your hand.
 
@@ -519,7 +519,7 @@ You turn around. The room is empty. Nik is asleep. The door to the hall is shut,
 
 ${g.knows('jules_light') ? 'Jules sleeps with the light on.' : 'Whoever\'s in there never turns it off.'}
 
-You turn back to the window. The frost is already going. You watch the handprint melt from the edges in, the four fingers running down the glass in thin lines, curving down, like the marks on your door.
+You turn back to the window. The frost is already going. You watch the handprint melt from the edges in, the four marks running down the glass in thin lines${g.f('femi_end') === 'found' ? ', like the marks on your door' : ''}.
 
 The card is still in your hand.
 

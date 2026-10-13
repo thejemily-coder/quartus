@@ -10,17 +10,17 @@ EH.scenes('s01e09', {
 
 One coat, white, the cheap kind. The tape is gone, and the carpet in front of it has been shampooed and smells like a rental car. A flyer is taped to the wall beside it: *TEMPLE CARES · Counseling Services · Walk-ins welcome*, with a stock photo of two people smiling on a bench.
 
-If you stand to the left and the hallway light hits the door sideways, you can still see them under the paint. Ten faint lines, curving down.
+${g.f('femi_end') === 'found' ? 'If you stand to the left and the hallway light hits the door sideways, you can still see them under the paint. Ten faint lines.' : 'There was never anything on it. He got as far as the stairwell. They painted it anyway, like they weren\'t sure.'}
 
 You stand there. Then you go in.
 
-Nik is sitting on his bed with his laptop and doesn\'t pretend he wasn\'t waiting. He\'s wearing his Rutgers hoodie, which he never wears, because he says it\'s "for home."
+Nik is sitting on his bed with his laptop and doesn\'t pretend he wasn\'t waiting. He\'s wearing his cousin\'s Rutgers hoodie, the ironic one, which stopped being ironic sometime in September.
 
 nik: Hey.
 
 sam: Hey.
 
-nik: You eat? You ate. Your mom fed you. I can tell. You have pastina energy.
+nik: You eat? You ate. Your mom fed you. I can tell. Your health bar\'s back. That\'s mom-tier healing.
 
 He closes the laptop. He opens it again. He turns it around so you can see the screen.
 
@@ -103,7 +103,8 @@ He\'s laughing. It\'s the first time since Saturday. He covers his face with bot
   a2_knock: {
     night: true,
     clock: { time: '9:40 PM' },
-    text: g => `At 9:40, somebody knocks. Three times, evenly spaced. A metronome with manners.
+    enter: g => { g.know('callum_over', ['sam', 'jules'], 'On Sunday afternoon, Jules ended it with Callum. In person.'); },
+    text: g => `At 9:40, somebody knocks. Three times, evenly spaced. Your knock. She\'s stolen your knock.
 
 Nik is already standing up.
 
@@ -113,7 +114,7 @@ He opens the door. Jules is standing there in a Penn sweatshirt and sweatpants, 
 
 nik: Hi, Jules. Bye, Jules.
 
-He\'s gone. Jules stands in the doorway. Her eyes go, once, to the painted door, to the left side of it, where the light from the hall comes in sideways. She sees them. You watch her see them.
+He\'s gone. Jules stands in the doorway. ${g.f('femi_end') === 'found' ? 'Her eyes go, once, to the painted door, to the left side of it, where the light from the hall comes in sideways. She sees them. You watch her see them.' : 'Her eyes go, once, down the hall, to the fire door of Stairwell B. You watch her look at it and look away.'}
 
 She comes in and closes the door.
 
@@ -133,7 +134,7 @@ jules: He\'s a *wonderful* guy. Somebody\'s going to be very happy with him.
 
 She looks at her hands.
 
-jules: I haven\'t slept. I keep lying down and seeing your door. Not him. The *door*. The marks. I didn\'t even see him, Sam, the first time I saw him he was already— and I keep thinking—
+jules: I haven\'t slept. ${g.f('femi_end') === 'found' ? 'I keep lying down and seeing your door. Not him. The *door*. The marks.' : 'I keep lying down and seeing the stairwell. Not him. Your *hands*. How you were holding him.'} I didn\'t even see him, Sam, the first time I saw him he was already— and I keep thinking—
 
 She stops herself. She\'s good at stopping herself.
 
@@ -145,7 +146,7 @@ jules: I don\'t know why I\'m here. I don\'t know what I\'m asking for.`,
     choices: [
       { text: '"Stay. I haven\'t slept either. Just stay."', tag: 'Stay',
         fx: g => { g.flag('jules9', 'stay'); g.bond('jules', { trust: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a2_jules_stay' },
-      { text: '"I can\'t. Not yet. Every time I close my eyes I see the door."', tag: 'Not yet',
+      { text: '"I can\'t. Not yet. Every time I close my eyes I see him."', tag: 'Not yet',
         fx: g => { g.flag('jules9', 'notyet'); g.bond('jules', { respect: 1 }); }, go: 'a2_jules_notyet' },
       { text: 'Don\'t talk. Cross the room. Kiss her.', tag: 'Kiss her',
         fx: g => { g.flag('jules9', 'kiss'); g.bond('jules', { affection: 1 }); }, go: 'a2_jules_kiss' }
@@ -158,7 +159,7 @@ jules: I don\'t know why I\'m here. I don\'t know what I\'m asking for.`,
 
 She looks at you. Then at your bed, which is a Temple-issue extra-long twin with a Phillies blanket on it that Gigi picked out.
 
-jules: That bed is a war crime.
+jules: That bed is a cry for help.
 
 sam: It\'s a great bed.
 
@@ -170,31 +171,31 @@ You reach for the desk lamp.
 
 jules: Leave it on.
 
-You leave it on. You don\'t ask. She lets out a breath you didn\'t know she was holding.
+You leave it on. You don\'t ask. She lets out a breath.
 
-jules: Thank you for not asking.
+jules: Thank you for not making it a thing.
 
-sam: I\'ll ask some other time.
+sam: It\'s a lamp, Jules.
 
-jules: I know you will.
+jules: It\'s a lamp.
 
-You lie there. After a while she reaches back without turning around and finds your hand and pulls your arm over her, and holds it against her stomach with both of hers, the way she held your arm in the lounge on Saturday night, like a door she\'s holding shut.
+You lie there. After a while she reaches back without turning around and finds your hand and pulls your arm over her, and holds it against her stomach with both of hers, the way she held your hand on the lounge carpet on Saturday night.
 
 Her hands are cold. Yours are colder. Neither of you says anything about it.
 
 Some time after midnight, in the dark, with her back against your chest, she says, very quietly, into the pillow:
 
-jules: I\'m glad it was you. On the roof. I\'m not glad about anything else. But I\'m glad about that.
+jules: I\'m glad it\'s you. I\'m not glad about anything else. But I\'m glad about that.
 
 You don\'t answer. You don\'t have to. She\'s already asleep.
 
-You sleep eight hours. You don\'t dream about the door.`,
+You sleep eight hours. You don\'t dream.`,
     next: 'a2_vigil'
   },
   a2_jules_notyet: {
     night: true,
     enter: g => { g.sleep(4); },
-    text: `sam: I can\'t. Not yet. Every time I close my eyes, I see the door. And if you\'re here, I\'m going to see you too, and I\'m going to think about the roof, and I—
+    text: `sam: I can\'t. Not yet. Every time I close my eyes, I see him. And if you\'re here, I\'m going to see you too, and I\'m going to think about the roof, and I—
 
 You stop.
 
@@ -210,11 +211,11 @@ jules: I\'ll be across the hall. Nine-eleven. I\'m good at waiting.
 
 She thinks about it.
 
-jules: I\'m not, actually. I\'m terrible at it. I\'ve never had to do it once in my life. I\'ll learn.
+jules: I\'m not, actually. I\'m terrible at it. I\'ve never had to. I\'ll learn.
 
-She goes. The door closes, and through it you hear hers open and close, across the hall, and the hall light go off under your door.
+She goes. The door closes, and through it you hear hers open and close, across the hall, and then nothing.
 
-You lie on your bed with the lights off. You sleep four hours. You dream the fingertip marks are on the *inside* of the door, and you\'re the one making them.`,
+You lie on your bed with the lights off. You sleep four hours. You dream you\'re in the hallway, knocking on your own door with your fingertips, and nobody inside can hear you.`,
     next: 'a2_vigil'
   },
   a2_jules_kiss: {
@@ -222,7 +223,7 @@ You lie on your bed with the lights off. You sleep four hours. You dream the fin
     enter: g => { g.sleep(7); g.know('jules_light', ['sam', 'jules'], 'Jules sleeps with a light on. She asked you to leave the desk lamp on. You didn\'t ask why.'); },
     text: `You don\'t say anything. You cross the room, and she stands up off Nik\'s chair to meet you, and you kiss her.
 
-It\'s not like the roof. On the roof it was the start of something. This is two people holding on in the dark. It\'s hard, almost angry, her hands fisted in your shirt and yours in her hair, and she makes a sound against your mouth that you feel all the way down. She walks you backward until your legs hit the bed, and you sit, and she\'s in your lap, her knees on either side of you on the Phillies blanket, and her sweatshirt is half off one shoulder and your mouth is on her collarbone and she\'s breathing *Sam*, *Sam*, like it\'s the only word she knows.
+It isn\'t sweet. It\'s two people holding on in the dark. It\'s hard, almost angry, her hands fisted in your shirt and yours in her hair, and she bites your lower lip, not gently, and says *sorry* against your mouth in a voice that isn\'t. She walks you backward until your legs hit the bed, and you sit, and she\'s in your lap, her knees on either side of you on the Phillies blanket, and her sweatshirt is half off one shoulder and your mouth is on her collarbone and she says *Sam* into your jaw, once, in a voice with no punctuation in it.
 
 Then she stops.
 
@@ -238,7 +239,7 @@ sam: I know.
 
 jules: Because when it happens, I want you in the room. You\'re not in the room yet. You\'re still on the roof. I can see it.
 
-She\'s right. You don\'t know how she can see it. She\'s right.
+She\'s right. Of course she\'s right.
 
 She doesn\'t leave. She climbs off you and gets under the blanket on the wall side, in her sweatpants and her half-off sweatshirt, and when you reach for the desk lamp she says *leave it on*, and you leave it on, and you don\'t ask.
 
@@ -252,6 +253,7 @@ You sleep seven hours.`,
   a2_vigil: {
     night: true,
     loc: 'THE BELL TOWER · LIACOURAS WALK',
+    enter: g => { g.know('tolu_nda', ['sam'], 'Halcyon offered Femi\'s sister Tolu $250,000 to sign an NDA about the study. She gave you his green notebook, "NOTES FOR SAM K."'); },
     clock: { day: 'Tue', date: 'Nov 3', time: '7:00 PM' },
     text: g => `Tuesday is Election Day. You forgot. Everybody on Liacouras Walk has an *I VOTED* sticker on their coat, and there\'s a table outside the student center where a girl with a clipboard is still yelling *polls are open till eight!* at people who already voted.
 
@@ -259,7 +261,7 @@ Femi\'s vigil is at seven, at the Bell Tower. It was in the TempleToday email, a
 
 Twelve people come.
 
-You, and Nik in his new Temple shirt under his coat, and Simone, and Grace, and Jules. A professor you don\'t know. Two guys from the Charles Library circulation desk who keep saying *he was so quiet* to each other, like it\'s a compliment. A campus minister with a guitar she doesn\'t play. A woman in her late twenties in navy scrubs under a parka, holding a phone up in front of her with both hands.
+You, and Nik in his new Temple shirt under his coat, and Simone, and Grace, and Jules. A professor you don\'t know. Two guys from the Charles Library circulation desk who keep saying *he was so quiet* to each other, like it\'s a compliment. Devontae, and Kyle who was the T-rex, in regular coats, which looks wrong on them. A campus minister with a guitar she doesn\'t play. A woman in her late twenties in navy scrubs under a parka, holding a phone up in front of her with both hands.
 
 And in front of the Bell Tower, on an easel, flowers. White lilies, white roses, white orchids, five feet tall. A card in a little plastic fork:
 
@@ -269,37 +271,37 @@ Grace looks at it, and walks over, and turns the card around so it faces the Bel
 
 The woman in scrubs speaks first. Her voice is steady the whole way through, the way a nurse\'s voice is steady.
 
-FEMI\'S SISTER: My name is Tolu. I\'m Femi\'s sister. Our mother is on the phone with us from Lagos. It\'s one in the morning there. She wanted to see who came.
+TOLU: My name is Tolu. I\'m Femi\'s sister. Our mother is on the phone with us from Lagos. It\'s one in the morning there. She wanted to see who came.
 
 She turns the phone around. On the screen, a woman in a head wrap, in a dark room lit by a lamp, looks out at twelve people in the cold. She doesn\'t say anything. She puts her hand over her mouth.
 
-FEMI\'S SISTER: Thank you for coming. He would be very confused that you\'re here. He didn\'t think anybody at this school knew his name.
+TOLU: Thank you for coming. He would be very confused that you\'re here. He didn\'t think anybody at this school knew his name.
 
 She says a few more things. That he was the smart one. That he came to her apartment in Southwest every Sunday for dinner and ate everything and washed every dish. That their mother would call and ask *where is Femi* while he was sitting right there at the table, and he would wave at the phone, and laugh, and it was a joke, and then it wasn\'t a joke.
 
 Afterward, while the campus minister is talking, Tolu walks through the twelve people, and stops in front of you.
 
-FEMI\'S SISTER: You\'re Sam. Kearney.
+TOLU: You\'re Sam. Kearney.
 
 sam: Yeah.
 
-FEMI\'S SISTER: He talked about you. Every Sunday since August. *There\'s a guy in my Calc section who can see me.* He said it like he\'d found a twenty on the street.
+TOLU: He talked about you. Every Sunday since August. *There\'s a guy in my Calc section who can see me.* He said it like he\'d found a twenty on the street.
 
-She reaches into her parka and takes out a spiral notebook, green, with a coffee ring on the cover. In Femi\'s small neat handwriting: **CALC 1041 · NOTES FOR SAM K. (he never comes to recitation)**.
+She reaches into her parka and takes out a spiral notebook, green, with a coffee ring on the cover. In Femi\'s small neat handwriting: **CALC 1041 · NOTES FOR SAM K. (he will not read these)**.
 
-FEMI\'S SISTER: It was at my place. It has your name on it.
+TOLU: It was at my place. It has your name on it.
 
 You take it. Your hands aren\'t working right. You hold it against your chest.
 
-FEMI\'S SISTER: A man came to my apartment yesterday. Nice coat. Kind face. He brought papers and a check. Two hundred fifty thousand dollars. He said *regrettable* four times. If I sign, I never talk about the study. To anybody. Ever.
+TOLU: A man came to my apartment yesterday. Nice coat. Kind face. He brought papers and a check. Two hundred fifty thousand dollars. He said *regrettable* four times. If I sign, I never talk about the study. To anybody. Ever.
 
 She looks at the lilies.
 
-FEMI\'S SISTER: My mother\'s roof leaks. She\'s sixty-eight. I make sixty-one thousand a year at Jefferson.
+TOLU: My mother\'s roof leaks. She\'s sixty-eight. I make sixty-one thousand a year at Jefferson.
 
 She looks back at you.
 
-FEMI\'S SISTER: You were his friend. The only one. So I\'m asking you. Was it an accident?`,
+TOLU: You were his friend. The only one. So I\'m asking you. Was it an accident?`,
     choices: [
       { text: '"No. It wasn\'t an accident."', tag: 'The truth',
         fx: g => { g.flag('tolu9', 'truth'); g.hidden('halcyon_heat', 1); g.know('tolu_truth', ['sam', 'tolu'], 'You told Femi\'s sister, Tolu, that it wasn\'t an accident.'); }, go: 'a2_tolu_truth' },
@@ -315,19 +317,19 @@ FEMI\'S SISTER: You were his friend. The only one. So I\'m asking you. Was it an
 
 She doesn\'t flinch. She nods, once, like a nurse taking a pulse and getting the number she expected.
 
-FEMI\'S SISTER: I know. I\'m a nurse. They let me see him at the ME\'s office. I saw his hip.
+TOLU: I know. I\'m a nurse. They let me see him at the ME\'s office. I saw his hip.
 
 Her jaw works.
 
-FEMI\'S SISTER: Three. You don\'t do three.
+TOLU: Three. You don\'t do three.
 
 sam: Grace said that too.
 
-FEMI\'S SISTER: Your Grace is right.
+TOLU: Your Grace is right.
 
 She puts the phone in her pocket. Her mother\'s face goes dark against her parka.
 
-FEMI\'S SISTER: I\'m not signing. My mother\'s roof can leak.
+TOLU: I\'m not signing. My mother\'s roof can leak.
 
 She looks at the Halcyon lilies, five feet tall and white, and then she walks over, and very calmly, without any hurry at all, tips the easel over backward into the hedge.
 
@@ -344,15 +346,15 @@ sam: They came to your apartment once. Don\'t give them a reason to come back.
 
 It\'s quiet for a while. The campus minister is talking about light.
 
-FEMI\'S SISTER: That\'s an answer.
+TOLU: That\'s an answer.
 
 sam: It\'s the only one I\'ve got that doesn\'t get you hurt.
 
-FEMI\'S SISTER: He said you\'d be like this. *Sam would carry the whole building if you let him.*
+TOLU: He said you\'d be like this. *Sam would carry the whole building if you let him.*
 
 She puts the phone away. Her mother\'s face goes dark against her parka.
 
-FEMI\'S SISTER: I\'ll think about it.
+TOLU: I\'ll think about it.
 
 She walks back to the front. She doesn\'t look at the lilies again.`,
     next: 'a2_phone'
@@ -361,13 +363,13 @@ She walks back to the front. She doesn\'t look at the lilies again.`,
     night: true,
     text: `sam: I don\'t know.
 
-She looks at you for a long moment. Then she almost smiles. It\'s Femi\'s almost-smile, the one that only used one side of his mouth.
+She looks at you. Then she almost smiles. It\'s Femi\'s almost-smile, the one that only used one side of his mouth.
 
-FEMI\'S SISTER: You\'re a bad liar. He said you would be.
+TOLU: You\'re a bad liar. He said you would be.
 
 She puts the phone away. Her mother\'s face goes dark against her parka.
 
-FEMI\'S SISTER: That\'s all right. You gave me an answer anyway.`,
+TOLU: That\'s all right. You gave me an answer anyway.`,
     next: 'a2_phone'
   },
 
@@ -376,15 +378,15 @@ FEMI\'S SISTER: That\'s all right. You gave me an answer anyway.`,
     loc: 'CARDONE HALL · ROOF',
     clock: { time: '11:09 PM' },
     enter: g => { g.know('femi_phone_read', ['sam'], 'On the night of the vigil, you texted Femi\'s phone. At 11:14 p.m., it said Read. Someone has it.'); },
-    text: `Later, on the roof, by yourself, you open your messages and scroll down to his name.
+    text: g => `Later, on the roof, by yourself, you open your messages and scroll down to his name.
 
-The last thing in the thread is his. 11:51 p.m. *im on 9. im at your door. please be home*
+The last thing in the thread is his. ${g.f('femi_end') === 'found' ? '11:51 p.m. *im on 9. im at your door. please be home*' : '11:39 p.m. *sam theyre on the stairs*'}
 
 You type.
 
 TXT sam: i\'m sorry
 TXT sam: i didn\'t look
-TXT sam: your sister gave me the notebook. i\'m gonna come to recitation. i swear to god
+TXT sam: your sister gave me the notebook. i\'m gonna do every problem in it. i swear to god
 
 *Delivered.*
 
@@ -553,11 +555,11 @@ grace: It\'s a little disgusting.
 
 She puts the book down.
 
-grace: You know what I wanted? My whole life? I wanted something to happen to me. I was the kid who did everything right, and I wanted one thing to happen to me that wasn\'t a test. Something real. Something I\'d have to rise to.
+grace: You know what I wanted? My whole life? Something to happen to me. Something that wasn\'t a test.
 
 She looks at the index cards on the floor.
 
-grace: And then it did. I stood in a hallway in scrubs from Target and watched the ME turn a boy over, and I saw his hip, and I knew what it was. I knew *exactly* what it was. Because I\'ve been studying for this for four years.
+grace: And then it did. I stood there in scrubs from Target and watched the ME turn a boy over, and I saw his hip, and I knew what it was. I knew *exactly* what it was. Because I\'ve been studying for this for four years.
 
 grace: I\'m going to be a very good doctor, Sam. I\'m going to be so good. And I\'m never going to wish for something to happen to me again as long as I live.
 
@@ -568,16 +570,16 @@ grace: Okay. You can go. Thank you for not saying anything helpful.`,
   },
 
   a2_ciro: {
-    enter: g => { g.money(78); g.bond('ciro', { affection: 1 }); },
+    enter: g => { g.money(14 * 3 + 78); g.bond('ciro', { affection: 1 }); },
     text: `Ciro looks at you when you come in the door, and doesn\'t say anything, which has never happened.
 
 Then he does.
 
 ciro: You look like a fish they find in the Schuylkill. Apron. Go.
 
-You work the lunch rush. You fold boxes. You run four deliveries on the e-bike up and down Cecil B. Moore and North 15th in the cold, and nobody you deliver to knows anything about anything, and it\'s the best three hours you\'ve had all week.
+You work the lunch rush. You fold boxes. You run four deliveries on the e-bike up and down Cecil B. Moore and North 15th in the cold, and nobody you deliver to knows anything about anything, and for three hours you don\'t think about anything.
 
-At two, when it\'s slow, Ciro puts a slice in front of you on a paper plate, a corner slice, the one with the most cheese, which he has never once in your life given anyone for free.
+At two, when it\'s slow, Ciro puts a slice in front of you on a paper plate, a corner slice, the one with the most cheese, which he has never given anyone for free.
 
 ciro: Is on the TV. The boy in your building.
 
@@ -593,7 +595,7 @@ ciro: In Napoli, when I am a boy, my friend Gennaro, he fall off the scooter. I 
 
 He keeps wiping.
 
-ciro: Fifty-two years. Every day I think, why me walk away. Is a stupid question. There\'s no answer. You ask it anyway, every day, like a stupid person.
+ciro: Fifty-two years. Every day I think, why me walk away. Is a stupid question. Is no answer. You ask it anyway, every day, like a stupid person.
 
 He throws the rag in the sink.
 
@@ -626,7 +628,7 @@ Then question thirty-one.
 
 You sit there with your pencil over the Scantron.
 
-A Blur stepping over his outstretched leg. A Barbie setting an empty Solo cup down by his hand. Candy wrappers in his lap.
+${g.f('femi_end') === 'found' ? 'A Blur stepping over his outstretched leg. A Barbie setting an empty Solo cup down by his hand. Candy wrappers in his lap.' : 'Devontae on the landing. Three feet away. Ten minutes. Looking at the empty air in your lap.'}
 
 The TA\'s sneakers squeak up the aisle and stop beside you.
 
