@@ -82,3 +82,16 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
   - Dante's deadline is $41K by Thanksgiving, which feeds E10.
   - The cab is found with every window broken and the glass swept onto the driver's seat.
   - Unstick fires if Sam Slips while revenant_drift ≥ 10: his own footprints in the frost.
+
+### E8 "All Hallows": production notes
+- Three QA passes applied: voice/tone, continuity/knowledge, mechanics/prose. Checker: 0 errors, 3000/3000 runs reach the end. Smoke test from the save passes.
+- Continuity: the Mikey/Pop Iannucci talk is Monday Oct 19 at the kitchen table (follows E7's tag). The Oct 25 dinner happens, and nobody eats. The recap only shows when `mikey7==='dante'`.
+- Sam knows a bare "17" from Femi's sticky note (`sam_es17`), never the "ES-" prefix. On the stay path Grace hands him the note at 3 AM. Marisol has no code; don't invent one.
+- Femi's mother: E2 implies she's local and E7 says Lagos (Sam skipped that scene). Sam only knows: Econ, reshelves at Charles, has a sister. Resolve before Femi's family appears.
+- Femi's texts were sent at 11:39 and landed at once on the roof. The marrow taps (3, iliac, no anesthetic) happened between Building 7 and the stairwell; leave the exact place sealed.
+- **E9 handoff:**
+  - The tag gives `sleep(3)` after the all-nighter, so Sleep Debt is high going in.
+  - cracked_ribs8 carries through E9. dart8 heals at the start of E9.
+  - Mikey's heat goes up +1 after Brannigan named Sam. Mikey asked, "How does a Halcyon man know your *name*?"
+  - On the kiss path Jules promised to end it with Callum.
+- Deferred: the HUD clock runs backward from the cold open (Sat 9:02 PM) to Act One (2:30 PM); acceptable for a flash-forward. DST ends mid-Act Four; unused.

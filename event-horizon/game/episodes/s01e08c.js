@@ -7,7 +7,7 @@ EH.scenes('s01e08', {
     night: true,
     loc: 'CARDONE HALL · 9TH FLOOR',
     clock: { day: 'Sun', date: 'Nov 1', time: '1:35 AM' },
-    enter: g => { g.meet('mikey'); },
+    enter: g => { g.heat('mikey', 1); },
     text: g => `By one-thirty, the ninth floor is a crime scene.
 
 Temple police first, then Philly PD, then two homicide detectives in rumpled coats who look like they were asleep forty minutes ago. Yellow tape across the ${g.f('femi_end') === 'arms' ? 'door to Stairwell B' : 'hallway outside 9-14'}. A woman from the medical examiner\'s office with a kit. Everybody on the floor has been herded into the lounge, still in costume, and the lounge is full of Blurs and Barbies and a T-rex sitting on the floor with his inflatable head in his lap, and nobody\'s talking. A girl dressed as a traffic cone is crying in a way that doesn\'t stop.
@@ -18,7 +18,7 @@ He\'s in plainclothes. Jeans, a Birds hoodie, his badge on a chain around his ne
 
 mikey: Sammy. Are you hurt?
 
-sam: No.
+sam: I don\'t know.
 
 mikey: Is any of this yours?
 
@@ -53,7 +53,7 @@ BRANNIGAN: You must be Sam. I\'m so sorry about your friend. He talked about you
       { text: 'Stay on the floor. Look up at him. Say it quietly, so only he hears: "I know what you did."', tag: 'I know',
         fx: g => { g.flag('brannigan8', 'know'); g.hidden('halcyon_heat', 1); }, go: 'a4_iknow' },
       { text: 'Say nothing. Look at his face. Memorize it. Every line. You\'re going to need it.', tag: 'Memorize',
-        check: { kind: 'move', move: 'Hold the Line', attr: 'nerve', skill: 'empathy', label: 'Don\'t break', on: { strong: 'a4_memorize', weak: 'a4_memorize', miss: 'a4_memorize_crack' } } }
+        check: { kind: 'move', move: 'Hold the Line', attr: 'nerve', skill: 'persuade', label: 'Don\'t break', on: { strong: 'a4_memorize', weak: 'a4_memorize', miss: 'a4_memorize_crack' } } }
     ]
   },
   a4_lunge: {
@@ -75,7 +75,7 @@ BRANNIGAN: Get some rest, Sam.
 
 He goes back to the detectives.
 
-Mikey doesn\'t let go of you for a long time. When he does, he turns you around and looks at you. His face is pale.
+Mikey doesn\'t let go of you until Brannigan is back with the detectives. When he does, he turns you around and looks at you. His face is pale.
 
 mikey: Sammy. How does a Halcyon man know your *name*?`,
     next: 'a4_lounge'
@@ -192,13 +192,13 @@ Simone makes a sound and puts her hand over her mouth.
 
 Nik stops rocking.
 
-Nobody says anything for a long time.
+Nobody says anything.
 
 ${g.f('kissed') ? 'Beside you, very quietly, so only you can hear, Jules says:\n\njules: I was kissing you.\n\nsam: I know.\n\njules: While he was— at your door— I was—\n\nsam: *I* was. Not you. Me. I didn\'t look at the phone.\n\nShe doesn\'t say anything. Her hand finds yours on the carpet. Her fingers are cold. She holds on.' : 'Beside you, Jules hasn\'t said anything in two hours. Her hand finds yours on the carpet. Her fingers are cold. She holds on.'}`,
     choices: [
       { text: 'Let it come. Whatever it is. You haven\'t cried since graduation, alone in the car. Let it come.', tag: 'Break',
         fx: g => { g.flag('grief', 'break'); g.bond('jules', { trust: 1, affection: 1 }); g.bond('nik', { trust: 2, affection: 2 }); g.bond('simone', { trust: 2, affection: 1 }); g.bond('grace', { trust: 2 }); g.hidden('revenant_drift', -1); }, go: 'a4_break' },
-      { text: 'Stand up. "Room 714. Building 7. The Navy Yard. I\'m going. Tonight."', tag: 'Rage',
+      { text: 'Stand up. "Room 714. The Navy Yard. I\'m going. Tonight."', tag: 'Rage',
         fx: g => { g.flag('grief', 'rage'); g.heat('simone', 1); g.hidden('revenant_drift', 1); }, go: 'a4_rage' },
       { text: 'Go quiet. Go all the way down, to the bottom, where nothing can reach you. Stay there.', tag: 'Numb',
         fx: g => { g.flag('grief', 'numb'); g.hidden('revenant_drift', 0.5); }, go: 'a4_numb' }
@@ -214,7 +214,7 @@ You cry on the floor of the ninth-floor lounge at four in the morning on All Sai
 
 Nik comes over and sits on your other side and puts his head on your shoulder and cries too, ugly, snotty, the way Nik does everything, completely. Simone gets down on the carpet in front of you in her Van Helsing coat and puts both hands on your knees. Grace doesn\'t move from her chair, but after a while she gets up and brings you a cup of water, and stands there holding it until you can take it.
 
-And Jules holds onto your hand, and doesn\'t say anything, and doesn\'t let go, and when you finally look at her, her eyes are wet. She doesn\'t cry. She doesn\'t. But her eyes are wet, and she lets you see it, and you understand that that is the most she has ever let anyone see.
+And Jules holds onto your hand, and doesn\'t say anything, and doesn\'t let go, and when you finally look at her, her eyes are wet. She doesn\'t cry. She doesn\'t. But her eyes are wet, and she lets you see it.
 
 nik: He was nice to me once. In the library. In September. I dropped my calculator and it rolled under a table and somebody handed it back to me, and I said thanks, and I looked up, and there was nobody there.
 
@@ -229,7 +229,7 @@ sam: Yeah. It was him.`,
     night: true,
     text: g => `You stand up.
 
-sam: Room 714. Building 7. The Navy Yard. I\'m going. Tonight.
+sam: Room 714. The Navy Yard. I\'m going. Tonight.
 
 Nik is up before you finish the sentence, standing in front of the door in his Ghostbusters jumpsuit.
 
@@ -283,7 +283,7 @@ It\'s the only thing you can feel.`,
     card: { kind: 'tag' },
     loc: 'CARDONE HALL · ROOF',
     clock: { time: '6:58 AM' },
-    enter: g => { g.sleep(0); g.know('femi_card', ['sam'], 'Femi\'s last message: "M.R. ALIVE. RM 714. THEY CALL YOU 17."'); g.know('sam_es17', ['sam'], 'Halcyon calls you 17.'); },
+    enter: g => { g.sleep(3); g.know('femi_card', ['sam'], 'Femi\'s last message: "M.R. ALIVE. RM 714. THEY CALL YOU 17."'); g.know('sam_es17', ['sam'], 'Halcyon calls you 17.'); },
     text: g => `You go up to the roof at dawn, because it\'s the only place left.
 
 It\'s cold. November cold, the real thing, not the Slip. The sky over the Delaware is going from gray to pale gold. Somebody\'s left a Solo cup on the parapet from last night, half full, with a skin of frost on it.
@@ -297,7 +297,7 @@ Marisol is alive. And you have a number.
 
 *17.*
 
-You think about the APERTURE screen you saw through the glass on the night of the Hitch. *SUBJECT FIELD.* You think about Brannigan\'s tablet, and the way he looked at it instead of at people. You think about Femi\'s wristband. *031.* You think about how many other people in this city have a number they don\'t know about.
+You think about Brannigan\'s tablet, and the way he looked at it instead of at people. You think about Femi\'s wristband. *031.* You think about how many other people in this city have a number they don\'t know about.
 
 You think: *they call you 17*, and you think about the fact that Femi knew that, that he *saw* it, on a screen or a file or a door, and he walked six miles in the dark to tell you, and you ${g.f('femi_end') === 'found' ? 'were on the roof' : 'were too late anyway'}.
 
@@ -305,7 +305,7 @@ At seven o\'clock, the bells at St. Malachy\'s, on 11th Street, start ringing fo
 
 You stand there and you count them.
 
-You don\'t know what else to do.
+
 
 ${g.f('grief') === 'numb' ? 'You count to twenty-one. You don\'t feel anything. You keep counting.' : g.f('grief') === 'rage' ? 'You count to twenty-one. Your hands are cold. You keep counting.' : 'You count to twenty-one. You\'re crying again. You keep counting.'}
 

@@ -124,6 +124,7 @@ Mastery (0–100) grows with use. Nodes unlock by story gate, then cost XP.
 - **5+:** nosebleeds, −1 die to Wits pools
 - **7+:** lost minutes (engine skips forward)
 - **9+:** Sam is briefly seen in two places, and the next Slip risks a full **Unstick** (a story event)
+  - The Unstick also triggers when hidden `revenant_drift` is 10 or more (E7 onward). This is the Revenant's pull, not Sam's drift. Guilt counts: in E8, choices that leave someone to die add revenant_drift as well.
 
 Every Drift point Sam takes **also** feeds hidden `revenant_drift` (+0.5 per point, +1 for each forced rewind), and authored choices add more when Sam "fixes" something other people had chosen. *Engine status: thresholds 3+ (visual glitch) and 5+ (−1 die on Wits pools) are implemented. 7+ and 9+ are story events the writers trigger by hand until Season 2.*
 

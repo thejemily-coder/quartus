@@ -236,9 +236,9 @@ jules: Come with me. I want to show you something.`,
     clock: { time: '11:38 PM' },
     text: g => `She takes you up the stairwell to the roof door, the one with the broken alarm, the one you went through on the night of the blackout, and she props it open with the brick, and you go out into the cold.
 
-It\'s forty-four degrees. Halloween. The whole city is lit up below you, orange and gold and every window glowing, and somewhere out toward Fishtown there are fireworks going up, little green and red flowers bursting over the rooftops, very far away, with no sound.
+It\'s forty-four degrees. Halloween. The whole city is lit up below you, orange and gold and every window glowing, and somewhere out toward Fishtown somebody is setting off illegal fireworks, little green and red flowers bursting over the rooftops, very far away, with no sound.
 
-She walks to the parapet, where she stood on the night of the blackout. She stands there in her bell dress with her gold arms, shivering. You take off your ${{ blur: 'hoodie', ghostbuster: 'hoodie', cabbie: 'father\'s jacket' }[g.f('costume8')]} and put it on her shoulders. She lets you.
+She walks to the parapet. She stands there in her bell dress with her gold arms, shivering. You take off your ${{ blur: 'hoodie', ghostbuster: 'hoodie', cabbie: 'father\'s jacket' }[g.f('costume8')]} and put it on her shoulders. She lets you.
 
 jules: You asked me what I meant.
 
@@ -252,7 +252,7 @@ jules: I know now.
 
 ${g.f('femi_reply') ? 'In your hand, the phone is dark. You keep looking at it. You make yourself stop.' : ''}
 
-jules: I\'ve been trying to work out how to say it since the lounge. Since Ravenscourt. I\'ve been trying to say it right, and I can\'t, because I\'ve never once said anything to anyone that I didn\'t already know the end of.
+jules: I\'ve been trying to work out how to say it since the lounge. Since Ravenscourt. I\'ve been trying to say it right, and I can\'t, because I\'ve never said anything to anyone that I didn\'t already know the end of.
 
 She turns around. Her back is to the city. Her face is very close to yours, and her eyes are bright.
 
@@ -282,7 +282,7 @@ TXT femi: here
 TXT femi: stairwell b. theres someone on the stairs below me
 TXT femi: sam theyre on the stairs
 
-It\'s 11:47. The last one came in nine seconds ago.
+It\'s 11:47. They were sent at 11:39. The roof gets one bar; they all landed at once.
 
 You look up at Jules. Her hand is still on your face. She sees your eyes. She sees whatever\'s in them.
 
@@ -304,13 +304,13 @@ You put the phone in your pocket without looking, and you put your hand over her
 
 She kisses you.
 
-Or you kiss her. You\'ll never be able to decide which, later, and it won\'t matter. It\'s not like the movies. It\'s clumsy for a second, her nose cold against yours, gold paint on your mouth, the bell dress crackling between you, and then it isn\'t clumsy at all. Her hand moves from your face into your hair. Yours is on her back, on the bare painted skin between her shoulder blades, and she\'s shaking, and so are you, and it\'s forty-four degrees on the roof of Cardone Hall and you are warm all the way through for the first time since August.
+Or you kiss her. It doesn\'t matter which. It\'s not like the movies. It\'s clumsy for a second, her nose cold against yours, gold paint on your mouth, the bell dress crackling between you, and then it isn\'t clumsy at all. Her hand moves from your face into your hair. Yours is on her back, on the bare painted skin between her shoulder blades, and she\'s shaking, and so are you, and it\'s forty-four degrees on the roof of Cardone Hall and you are warm all the way through for the first time since August.
 
 In your pocket, your phone buzzes. Again. Again.
 
 You don\'t stop. She doesn\'t stop.
 
-When she finally pulls back, an inch, her forehead against yours the way it was on the night of the blackout, she\'s breathing hard, and she\'s laughing, quietly, astonished, at herself.
+When she finally pulls back, an inch, her forehead against yours, she\'s breathing hard, and she\'s laughing, quietly, astonished, at herself.
 
 jules: That\'s what I meant.
 
@@ -324,7 +324,7 @@ jules: I\'m going to end it with Callum. Tomorrow. In person. He deserves that.
 
 sam: Okay.
 
-jules: I chose this. You understand? I *chose* it. Nobody gave it to me. Nothing decided it for me. I *chose*.
+jules: I chose this. You understand? Nothing decided it for me. I *chose*.
 
 Your phone buzzes again. A long buzz this time. A call.
 
@@ -361,9 +361,9 @@ You\'re already running.`,
     clock: { time: '11:48 PM' },
     text: g => `You take the stairs down from the roof landing three at a time.
 
-Stairwell B is the one nobody uses. Cinderblock painted the color of old teeth, a fire door at every floor, a light that buzzes. You come around the turn above the ninth-floor landing.
+Stairwell B is the one nobody uses. Cinderblock painted the color of old teeth, a fire door at every floor, a light that buzzes. You swing around the rail onto the ninth-floor landing.
 
-There are two men on the landing below you.
+There are two men on the half-landing below it, between nine and eight.
 
 They\'re wearing navy Temple Facilities jackets, the kind the custodial staff wears, and blue latex gloves. There\'s a gray laundry cart between them, the big canvas kind on wheels, and they\'re lifting something into it. Something in a Temple Econ hoodie.
 
@@ -407,7 +407,7 @@ They don\'t take Femi.`,
   },
   a3_fight_hurt: {
     night: true,
-    enter: g => { g.flag('stair', 'fight'); g.injure({ id: 'dart8', name: 'Dart (sedative, wearing off)', pen: 1, heal: 1, affects: ['reflex', 'wits'] }); g.injure({ id: 'cracked_ribs8', name: 'Bruised ribs (stairwell rail)', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
+    enter: g => { g.flag('stair', 'fight'); g.injure({ id: 'dart8', name: 'Dart (sedative, wearing off)', pen: 1, heal: 1, affects: ['reflex', 'wits'] }); g.injure({ id: 'cracked_ribs8', name: 'Cracked ribs (stairwell rail)', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
     text: `You come down the last six stairs in one jump, and the mustache is ready for you.
 
 He shoots you in the chest from five feet away. The dart goes in under your collarbone like a bee sting, and then a wave of warm comes up through you, heavy and soft and sweet, and your legs go, and you hit the steel railing with your ribs on the way down.
@@ -420,7 +420,7 @@ You reach out. Your arm weighs two hundred pounds. You get your hand on his hood
 
 Above you, the fire door to the ninth floor bangs open, and there\'s music and light and Devontae in a green shirt with a Wawa bag yelling *yo, YO, what the hell*, and the men look at each other, and they go. Down the stairs. Fast and quiet, taking the empty cart.
 
-They don\'t take Femi. They don\'t take you. They didn\'t need to. They\'d already done what they came to do.`,
+They don\'t take Femi. They don\'t need to.`,
     next: 'a3_holding'
   },
   a3_yell: {
@@ -452,7 +452,7 @@ Femi is still looking at you.
 
 In the stopped world, where nothing moves, where nobody has ever moved but you, his eyes are on yours. They don\'t move. But they\'re *on* you. And you understand, standing there in the cold with your breath smoking, that it\'s the same thing it always was: you can see him. Even here. Even now.
 
-You take the dart gun out of the older man\'s hand and throw it down the stairwell. You lift Femi out of the cart. He weighs nothing. ${g.f('unstick8') ? 'You turn to carry him up the stairs, and the cold gets *colder*, and you feel the ice start to close above you the way it did under 95, and you know, you *know*, that if you stay one more second you won\'t come out, and neither will he.\n\nYou get him up the six stairs, one at a time, with the ice closing over you. You pull. You come out on your knees on the landing.' : 'You carry him up six stairs to the ninth-floor landing and set him down against the wall, gently.\n\nYou step back out.'}
+You take the dart gun out of the older man\'s hand and throw it down the stairwell. You lift Femi out of the cart. He weighs nothing. ${g.f('unstick8') ? 'You turn to carry him up the stairs, and the cold gets *colder*, and you feel the ice start to close above you the way it did under 95, and you know, you *know*, that if you stay one more second you won\'t come out, and neither will he.\n\nYou get him up the six stairs, one at a time, with the ice closing over you. You pull. You come out on your knees on the landing.' : 'You carry him up six stairs to the ninth-floor landing and hold him against your chest.\n\nYou step back out.'}
 
 The world comes back. The two men are holding nothing, standing over an empty cart, and when they look up and see you on the landing above them with Femi in your arms, the older one\'s face does something for the first time. It goes very still.
 
@@ -523,18 +523,18 @@ sam: I see you. I see you. You\'re not invisible. You\'re right here. I see you.
 
 His eyes stay on yours. His fingers squeeze, once, so faint.
 
-You talk to him. You don\'t know what you say. You tell him about Simone\'s song, *Stake Through My Heart (Metaphorically)*. You tell him Kyle the T-rex won the shower slot. You tell him Grace said the Liberty Bell was the best thing she\'d ever seen. You tell him the chain rule clicked. You tell him he\'s going to be fine, which is a lie, and you\'ve gotten so good at lying that it comes out perfectly, and you\'ll hate that for the rest of your life.
+You talk to him. Whatever comes. You tell him about Simone\'s song, *Stake Through My Heart (Metaphorically)*. You tell him Kyle the T-rex won the shower slot. You tell him Grace gave the Liberty Bell first place and said she doesn\'t even like her. You tell him the chain rule clicked. You tell him he\'s going to be fine, which is a lie, and you\'ve gotten so good at lying that it comes out perfectly.
 
 His eyes go to his pocket again. Once. Then back to you. Like he\'s decided it can wait.
 
-It can\'t wait. You don\'t know that yet.`,
+`,
     next: 'a3_death'
   },
 
   a3_death: {
     night: true,
     clock: { day: 'Sun', date: 'Nov 1', time: '12:04 AM' },
-    text: g => `At 12:04 in the morning on the first of November, All Saints' Day, Femi Ojo stops breathing in your lap on the ninth-floor landing of Stairwell B.
+    text: g => `At 12:04 in the morning on the first of November, All Saints' Day, Femi Ojo stops breathing in your lap in Stairwell B, a few steps from the ninth-floor door.
 
 It\'s not dramatic. You keep waiting for it to be. It\'s just that his chest is moving, very slightly, and then it moves a little less, and then it doesn\'t. His fingers in yours go still. His eyes are still open. They\'re still on you.
 
@@ -542,7 +542,7 @@ And then something happens.
 
 The people on the landing *see* him.
 
-All of them. All at once. Devontae, who has been standing three feet away for ten minutes looking at you and the empty air in your lap, says *oh my God* in a voice you\'ve never heard a person use. Simone drops her phone. A girl in a Barbie costume screams. Kyle the T-rex sits down in the doorway, finally, his inflatable legs folding under him.
+All of them. All at once. Devontae, who has been standing three feet away for ten minutes looking at you and the empty air in your lap, says *oh my God*, very small. Simone drops her phone. A girl in a Barbie costume screams. Kyle the T-rex sits down in the doorway, finally, his inflatable legs folding under him.
 
 For ten weeks, nobody could see Femi Ojo. Now everybody can.
 
@@ -587,7 +587,7 @@ Femi is sitting with his back against your door, in his Temple Econ hoodie, with
 
 His right hand is raised. It\'s resting against your door, flat, at the level of the doorknob. There are marks on the white paint above his hand. Faint brown lines, curving down, four of them, five, ten. Fingertip marks.
 
-He was knocking. With his fingertips. With what little he could still move. On your door. While the party went on around him and nobody saw him, and you were on the roof.
+He was knocking. With his fingertips. With what little he could still move. On your door. While the party went on around him and nobody saw him.
 
 You don\'t remember kneeling. You\'re kneeling. You\'ve got his face in your hands, and it\'s cool, and it isn\'t cold yet. It isn\'t cold yet. You missed it by minutes.
 
@@ -607,7 +607,7 @@ She doesn\'t come any closer. She puts her gold hand over her mouth.`,
   a3_found_pocket: {
     night: true,
     enter: g => { g.know('femi_card', ['sam'], 'In Femi\'s pocket: his Halcyon wristband, cut off, and a sticky note in his handwriting: "M.R. ALIVE. RM 714. THEY CALL YOU 17."'); },
-    text: `His hoodie pocket is bulging. You don\'t know why you look. You reach in.
+    text: `His hoodie pocket is bulging. You reach in.
 
 His wristband, cut off. **HCW-COHORT 2 · 031 · RESIDENTIAL.** And a yellow sticky note, folded in half, in his small neat hurried handwriting, the handwriting of a guy who took notes for people who never thanked him:
 

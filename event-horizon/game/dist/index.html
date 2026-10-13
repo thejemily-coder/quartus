@@ -14392,6 +14392,1273 @@ Object.assign(EH.episodes.s01e07, {
   }
 });
 
+/* s01e08.js */
+/* S1 · E8 · ALL HALLOWS, part 1 of 3: meta, cold open, Act One ("Costumes"). */
+EH.episode({
+  id: 's01e08', season: 1, number: 8, title: 'All Hallows', look: 's1',
+  cast: ['sam', 'jules', 'nik', 'simone', 'grace', 'femi', 'mikey', 'bree'],
+  start: 'cold_open',
+  xp: 5,
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      night: true,
+      loc: 'NAVY YARD · BUILDING 7',
+      clock: { day: 'Sat', date: 'Oct 31', time: '9:02 PM' },
+      text: `> THE CAMERA.
+
+The room is white and quiet and very clean. It has a bed with good sheets, a desk with a bowl of fruit nobody has touched, a television playing a cooking show with the sound off, and, high in the corner where the wall meets the ceiling, a small black dome with a red light in it.
+
+Femi Ojo is sitting on the edge of the bed in a gray Halcyon sweatshirt with the tags still on it, holding a white plastic band on his wrist with his other hand, turning it around and around.
+
+**HCW-COHORT 2 · 031 · RESIDENTIAL.**
+
+He\'s been here since four o\'clock yesterday. At five, a woman in a lab coat brought him a tray of food and sat across from him while he ate it, with a stopwatch. *Seven seconds,* she said, delighted, when she looked down at her clipboard and then looked up and couldn\'t find him for a moment, though he hadn\'t moved. *Seven, Femi. You\'re getting so much better.*
+
+This morning, they took more blood. Eight vials. Then a ninth, from his hip, with a needle as long as a pencil, and they gave him something first that made the room go soft and bright, and he remembers lying on his side on a paper sheet looking at the wall while somebody behind him said *again* in a calm voice.
+
+At eight, he went to the bathroom down the hall, and nobody walked with him. Nobody noticed him go. On the way back, he passed a door with a narrow window in it, and he looked in.
+
+A girl was sitting on a bed. Dark curly hair. A gap in her teeth. She was looking at the ceiling light, and the ceiling light was flickering, faster and faster, the way lightbulbs flicker in the second before they pop.
+
+She looked at the window. She looked right at him. Nobody looks right at him.
+
+She mouthed something. Two words. He read it the way you read lips across a lecture hall.
+
+*Get out.*
+
+He\'s been sitting on the bed for an hour since then. Turning the band on his wrist.
+
+At 9:02, he stands up. He takes off the gray sweatshirt and puts on his own hoodie, his Temple Econ hoodie, the one that hangs off him now like it\'s on a hanger. He opens the door. The hallway is empty and white and lit. He walks down it. A man in a polo shirt comes around the corner carrying a coffee, and walks right past him, close enough to touch, and doesn\'t look.
+
+Femi keeps walking. Through a door. Down a stairwell. Out a fire exit into the cold, into the dark of the Navy Yard, toward the lights of Broad Street.
+
+> ELSEWHERE IN BUILDING 7.
+
+On a bank of monitors in a dim room, a small figure in a hoodie crosses a parking lot. On every screen, the picture goes soft at the edges where he is, the way your eye slides off a word you\'ve read too many times.
+
+A man in a gray polo shirt watches him go. He has a mug of tea in his hand. He doesn\'t put it down.
+
+ASSISTANT: Sir. ES-31 is leaving the building.
+
+BRANNIGAN: I see him.
+
+ASSISTANT: Do we—
+
+BRANNIGAN: No. He\'ll want to tell someone. Let him.
+
+He sips his tea.
+
+BRANNIGAN: And have a car follow him up Broad. He didn\'t take a coat.`,
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_halloween' },
+
+    /* ================= ACT ONE: COSTUMES ================= */
+    a1_halloween: {
+      card: { kind: 'act', label: 'Act One', title: 'Costumes' },
+      loc: 'CARDONE HALL · 9TH FLOOR',
+      clock: { day: 'Sat', date: 'Oct 31', time: '2:30 PM' },
+      enter: g => { g.sleep(7); if (g.f('mikey7') === 'dante') g.know('mikey_pop_dinner', ['sam', 'mikey', 'frank', 'rosa'], 'Monday Oct 19: Mikey asked Pop about Dante Iannucci at the kitchen table. Pop told him, in front of Ma. At Sunday dinner on Oct 25, nobody ate.'); },
+      text: g => `Halloween on the ninth floor of Cardone Hall is a war crime.
+
+There are fake cobwebs on every doorframe, a strobe light in the bathroom that Grace has confiscated twice and that keeps reappearing, a bowl of candy corn outside 9-06 that nobody touches because it\'s candy corn, and a sign-up sheet on the lounge door for the costume contest, judged by Grace, with a first prize of *one (1) uncontested shower slot, 7:30–7:45 a.m., for the rest of the semester*. People have been campaigning for it since Tuesday.
+
+And it\'s the year of the Blur.
+
+You know this because, by two-thirty in the afternoon, you\'ve already seen *four* Broad Street Blurs on the ninth floor alone. Devontae\'s going as the Blur: a green Ciro\'s T-shirt he bought off a delivery guy for twenty bucks, a black bandana, and a Wawa bag. The twins in 9-03 are going as *the Blur and the bus*. A girl from the eighth floor came up to borrow a hair dryer dressed as the Blur in a cardboard Liberty Cab.
+
+You stand in your doorway and watch a sophomore in a Ciro\'s shirt do a slow-motion run down the hallway making *whoosh* noises while his friends film it.
+
+It\'s the funniest thing all semester, and you can\'t tell anyone.
+
+${g.knows('mikey_pop_dinner') ? `It\'s been a strange two weeks. That Monday night, Mikey did what he said he would. He sat down across from Pop and said, *Pop. Who\'s Dante Iannucci?* And Pop told him. All of it. At the kitchen table. In front of Ma.\n\nMa didn\'t speak to Pop for three days. Gigi texted you eleven times that night asking what *the debt* was. Nonna lit a candle the size of a hydrant and didn\'t say one word, which is how you know it\'s the worst thing that\'s happened in that house since 2009.\n\nSunday, at dinner, nobody ate. Mikey caught you on the stoop after. He said *look at me, Sammy*, and you looked at him, and he looked at you, and he didn\'t ask the second question. Maybe he was scared of the answer. Maybe you both are.` : ''}
+
+Behind you, Nik is in your room in a full Ghostbusters jumpsuit, which he ordered in August, and a proton pack made out of a vacuum cleaner and a shoebox, and he\'s been waiting for you to notice him for six minutes.
+
+nik: Bro.
+
+sam: I see you.
+
+nik: You *don\'t*. You\'re looking at the Blurs. Look at *me*. I\'m Egon. I\'m the smart one. It\'s very meaningful.
+
+He looks you up and down.
+
+nik: What are *you* going as?`,
+      choices: [
+        { text: 'The Blur. Obviously. Green Ciro\'s shirt, black bandana. Hide in plain sight.', tag: 'The Blur',
+          fx: g => { g.flag('costume8', 'blur'); g.bond('nik', { affection: 1 }); }, go: 'a1_costume' },
+        { text: 'Ray Stantz. Nik bought you a jumpsuit too. You know he did. He\'s had it in his closet since August.', tag: 'Ghostbuster',
+          fx: g => { g.flag('costume8', 'ghostbuster'); g.bond('nik', { affection: 2, trust: 1 }); }, go: 'a1_costume' },
+        { text: 'A cab driver. Pop\'s old Liberty Cab jacket from the hall closet on Mifflin Street. You don\'t tell anyone why.', tag: 'Pop',
+          fx: g => { g.flag('costume8', 'cabbie'); g.bond('frank', { affection: 1 }); }, go: 'a1_costume' }
+      ]
+    },
+    a1_costume: {
+      text: g => `${{
+        blur: 'nik: Oh, you *absolute* psychopath.\n\nsam: There are four of them on this floor. Five, now. Nobody\'s gonna look twice.\n\nnik: That\'s either the smartest thing you\'ve ever done or the stupidest, and I genuinely cannot tell.\n\nYou put on a green Ciro\'s shirt. Your *actual* green Ciro\'s shirt, with the grease stain on the hem from August. You tie a black bandana over your nose. You look in the mirror, and the Broad Street Blur looks back, and he looks exactly like every other drunk kid in North Philly tonight.\n\nIt\'s the safest you\'ve felt in months.',
+        ghostbuster: 'nik: …Wait. Are you serious?\n\nsam: You bought me one. I know you bought me one.\n\nNik goes very quiet. Then he goes to his closet and takes out a second jumpsuit, still folded in its plastic bag, *STANTZ* on the name tag in his own handwriting.\n\nnik: I bought it in August. Before. I didn\'t know if we\'d still be friends by Halloween.\n\nsam: Nik.\n\nnik: Shut up. Put it on. You\'re Ray. Ray\'s the heart. It\'s very meaningful.\n\nYou put it on. It\'s too short in the legs. You don\'t care.',
+        cabbie: 'You took it from the hall closet on Mifflin Street on Sunday, when nobody was looking: Pop\'s old Liberty Cab jacket, green and yellow, from 2001, with *FRANK* on a patch over the heart. It smells like the inside of a cab. Like cigarettes and pine tree air freshener and coffee and him.\n\nnik: You\'re going as… a cab driver?\n\nsam: I\'m going as my dad.\n\nNik looks at you for a second. Then he nods, slowly, and doesn\'t make a single joke.'
+      }[g.f('costume8')]}
+
+The day goes by in the way that Halloween days go by in a dorm: nobody does any work, everybody eats too much candy, and at five o\'clock Grace comes down the hallway in scrubs with a stethoscope and a clipboard, which is either her costume or her actual life, and nobody has the courage to ask.
+
+You have a few hours before Simone\'s show at eight.`,
+      next: 'a1_hub'
+    },
+
+    /* ---------- Saturday hub ---------- */
+    a1_hub: {
+      loc: 'SATURDAY · OCTOBER 31',
+      clock: { time: '5:00 PM' },
+      text: `Simone\'s show is at eight, in the Randall Theater. The floor party starts after. You have time for two things.`,
+      hub: {
+        slots: 2, label: 'Halloween afternoon',
+        blurb: 'The show is at eight.',
+        options: [
+          { id: 'hal_femi', text: 'Text Femi. You haven\'t seen him in Calc in two weeks. Ask if he wants to come to the party. He\'d hate it. Ask anyway.', cost: 1, tag: 'Femi', go: 'a1_femi' },
+          { id: 'hal_jules', text: 'Jules\'s door is closed. Simone said she\'s been "building something" since noon. Knock.', cost: 1, tag: 'Jules', go: 'a1_jules' },
+          { id: 'hal_bree', text: 'Bree texted at noon: *halloween party in port richmond. heck is a pumpkin.* Call her back.', cost: 1, tag: 'Bree', go: 'a1_bree' },
+          { id: 'hal_nap', text: 'Nap. You\'re tired all the way down. Two weeks of catching up isn\'t enough.', cost: 1, tag: 'Rest', go: 'a1_nap' }
+        ],
+        done: 'a1_show'
+      }
+    },
+
+    a1_femi: {
+      enter: g => { g.flag('texted_femi'); g.know('femi_unanswered', ['sam'], 'On Halloween afternoon, you texted Femi to come to the party. The texts didn\'t deliver. His phone was off.'); },
+      text: `TXT sam: yo. party on 9 tonight. floor costume contest. grace is judging. you should come
+TXT sam: nobodyll see you so you can eat all the candy
+TXT sam: thats a joke. come anyway
+
+Nothing. You watch the screen. The little gray text under your messages doesn\'t say *Read*. It doesn\'t even say *Delivered*.
+
+You call. It goes straight to voicemail.
+
+*Hey, this is Femi. If you\'re hearing this, congratulations, you found me. Leave a message.*
+
+You don\'t leave a message. You think: his phone\'s dead. You think: he\'s at the library, in a carrel, being invisible, with a dead phone, which is the most Femi thing in the world.
+
+You think: you haven\'t seen him in two weeks. You think: when was the last time you went looking?
+
+You put the phone in your pocket. You\'ll try him again tonight.`,
+      next: '@hub'
+    },
+
+    a1_jules: {
+      enter: g => { g.bond('jules', { affection: 1 }); },
+      text: g => `You knock. Three times, evenly spaced. Like a metronome with manners.
+
+From inside, a long pause. Then:
+
+jules: Who is it.
+
+sam: It\'s Kearney.
+
+jules: Go away. I\'m busy.
+
+sam: Simone says you\'re building something.
+
+jules: Simone has a very large mouth for someone so small.
+
+The door opens four inches. Jules looks at you through the gap. Her hair is pinned up in a way you\'ve never seen, and she has a smear of gold paint on her cheekbone, and she\'s wearing an old Penn sweatshirt with the sleeves pushed up and paint on both forearms.
+
+She looks at your costume. ${{ blur: 'At the green Ciro\'s shirt. The bandana around your neck. Her eyebrows go up very slowly.\n\njules: You\'re going as the *Blur*.\n\nsam: Everybody\'s going as the Blur.\n\njules: Not everybody, Kearney.\n\nShe says it lightly. Her eyes don\'t say it lightly. You both stand there with that in the doorway for a second.', ghostbuster: 'At the jumpsuit. *STANTZ*.\n\njules: Nik made you.\n\nsam: Nik *asked* me. There\'s a difference.\n\njules: There isn\'t.\n\nBut she\'s almost smiling.', cabbie: 'At the green-and-yellow jacket. *FRANK* on the patch.\n\nShe doesn\'t say anything for a second. She knows your father\'s name. She heard it at Sunday dinner. She heard your father laugh.\n\njules: That\'s his.\n\nsam: Yeah.\n\njules: It suits you.' }[g.f('costume8')]}
+
+sam: What are you going as?
+
+jules: You\'ll see.
+
+sam: Can I see now?
+
+jules: No.
+
+sam: Pemberton.
+
+jules: Kearney. The answer is no. It\'s always going to be no. I\'ve been working on it since noon and I\'ve been planning it since September, and you\'re going to see it at the same time as everyone else, like a person.
+
+She starts to close the door. She stops.
+
+jules: Are you going to the show?
+
+sam: Simone would kill me.
+
+jules: Sit with me.
+
+The door closes. You stand in the hallway with that.`,
+      next: '@hub'
+    },
+
+    a1_bree: {
+      enter: g => { g.bond('bree', { trust: 1, affection: 1 }); g.bond('heck', { affection: 1 }); g.know('teddy_mother', ['sam']); },
+      text: g => `She picks up on the first ring.
+
+bree: Wawa.
+
+sam: Bree.
+
+bree: Heck\'s a pumpkin. Like, a whole pumpkin. Orange body suit, a little stem hat. He\'s been carving real pumpkins all day with his *hands*. Like, his bare hands. He gets them warm and the knife just goes through.
+
+In the background, you hear a deep laugh, and a two-year-old shrieking with delight, and somebody yelling *Hector, not on the table!* in Spanish.
+
+bree: Yesenia\'s a bumblebee. She bit Teddy.
+
+sam: How\'s Teddy?
+
+A pause.
+
+bree: He\'s okay. He\'s not okay. He\'s okay. He got a job at the ShopRite with me. Stocking shelves, nights. My aunt\'s on dialysis three days a week now. The list\'s still forty grand away.
+
+${g.f('teddy7') === 'none' ? 'She doesn\'t say *because of you*. You hear it anyway.' : ''}
+
+Then Teddy\'s voice comes out of her mouth, exact, tired: *Tell him thanks. For his dad.*
+
+bree: He won\'t say it to you. So I\'m playing it.
+
+Another pause.
+
+bree: Come to Port Richmond some time, Wawa. Come eat pierogi. Heck would love it. He talks about you like you\'re a saint. It\'s very annoying.
+
+sam: Maybe.
+
+bree: Not maybe. *Come.* Come while Heck\'s still a pumpkin.
+
+She hangs up.`,
+      next: '@hub'
+    },
+
+    a1_nap: {
+      enter: g => { g.nap(2); },
+      text: `You lie down on your bed in your costume and close your eyes, and the ninth floor goes on around you, music through the walls and somebody running a hair dryer and Devontae yelling *WHOOSH* in the hallway.
+
+You sleep two hours. You dream about the frozen Delaware, and about footprints, your own, going out onto the black glass of the river and not coming back.
+
+You wake up at seven with your heart going.`,
+      next: '@hub'
+    },
+
+    /* ---------- Simone\'s show ---------- */
+    a1_show: {
+      night: true,
+      loc: 'RANDALL THEATER · TEMPLE UNIVERSITY',
+      clock: { time: '8:00 PM' },
+      text: g => `Simone\'s show is called *DRACULA: A Musical (Unauthorized)*, and it is magnificent.
+
+It\'s a student production, sixteen people in costumes from the Goodwill on Lehigh, a five-piece band in the pit that\'s playing at least two different songs at once, and Simone Okonkwo-Hayes in a long black coat as Van Helsing, singing a forty-second power ballad called "Stake Through My Heart (Metaphorically)" with such total commitment that a man in the third row starts crying, possibly from laughter, possibly not.
+
+${g.f('did_hal_jules') ? 'You sit with Jules. She asked. She\'s in a long dark coat buttoned to the throat, so you can\'t see the costume, and gold paint on her cheekbones, and she sits next to you in the dark with her shoulder against yours, and when Simone hits the high note at the end of the first act, Jules grabs your arm with both hands and squeezes so hard you\'ll have bruises.' : 'You end up sitting with Jules by accident. She\'s in a long dark coat buttoned to the throat, so you can\'t see the costume, and gold paint on her cheekbones, and when Simone hits the high note at the end of the first act, Jules grabs your arm without seeming to notice she\'s done it.'}
+
+Nik, on your other side, is filming the whole thing on his phone with his proton pack on, which blocks the view of four people behind him, all of whom have decided to let it go.
+
+At intermission, Simone comes out through the curtain in her Van Helsing coat and finds the three of you in the aisle, sweating, radiant, still in character.
+
+simone: Well?
+
+nik: You were *transcendent*.
+
+simone: I know. Salvatore?
+
+sam: I\'ve never seen anything like it in my life.
+
+simone: That\'s not a compliment, that\'s a *description*.
+
+sam: It\'s both.
+
+Simone looks at Jules. Jules looks back.
+
+jules: You were extraordinary.
+
+She says it simply, plainly, without any irony at all, and Simone stops, with her mouth open, and for a second Simone Okonkwo-Hayes has nothing to say.
+
+simone: …Juliet Pemberton just complimented me without a qualifier. Somebody write down the date.
+
+nik: It\'s Halloween.
+
+simone: *Perfect.*
+
+She sweeps back through the curtain.
+
+During the second act, your phone buzzes once in your pocket. You don\'t look at it. Nobody looks at their phone during Simone\'s show. That\'s the rule.`,
+      enter: g => { g.flag('show_buzz'); },
+      next: 'a2_party'
+    }
+  }
+});
+
+/* s01e08b.js */
+/* S1 · E8 · ALL HALLOWS, part 2 of 3: Act Two ("The Party"), Act Three ("Ninth Floor"). */
+EH.scenes('s01e08', {
+
+  /* ================= ACT TWO: THE PARTY ================= */
+  a2_party: {
+    card: { kind: 'act', label: 'Act Two', title: 'The Party' },
+    night: true,
+    loc: 'CARDONE HALL · 9TH FLOOR LOUNGE',
+    clock: { time: '10:24 PM' },
+    text: g => `By ten-thirty, the ninth floor is the loudest place in North Philadelphia.
+
+The lounge is packed wall to wall: seven Blurs, three Barbies, a guy in a full inflatable T-rex who can\'t get through the door and is being fed candy corn through the gap, a girl from the fourth floor dressed as Gritty with a terrifying amount of commitment. Simone arrives at ten-fifteen still in her Van Helsing coat, to a standing ovation she organized herself. Grace sits on the arm of the couch with her clipboard and a juice box, judging, in scrubs, not smiling, writing things down.
+
+And then Jules takes off her coat.
+
+She\'s the Liberty Bell.
+
+You don\'t understand it at first. You just see gold: a dress the color of old bronze, flared from the waist like a bell, and her shoulders and arms painted gold too, shimmering under the strobe light Grace finally stopped confiscating, and her hair pinned up into a crown of gold leaves. Then you see the crack. A long black jagged line, hand-painted, running from her collarbone down across the dress to the hem.
+
+The lounge goes quiet. Then it goes *loud*. Devontae yells *PHILLY!* and three Blurs start chanting *JU-LES, JU-LES* for reasons nobody will ever be able to explain.
+
+She stands there in the middle of it, very straight, with her chin up, looking like she\'s going to throw up.
+
+She finds you in the crowd. She walks over. Up close, you can see the brushstrokes in the gold on her shoulders.
+
+jules: Say something.
+
+sam: You\'re the Liberty Bell.
+
+jules: Something *else*.
+
+sam: You\'re from Gladwyne. Before September you\'d never been south of Washington Avenue. You went as the *Liberty Bell*.
+
+jules: I wanted to be something from here.
+
+She says it very quietly, under the music.
+
+jules: Your sister said nobody from the Main Line ever dresses as anything from Philly. She said it was *depressing*. So.
+
+She looks down at the crack painted across her own body.
+
+jules: It\'s flawed. That\'s the point of it. Everybody loves it because it\'s broken and it\'s still standing there.
+
+You don\'t say anything. You can\'t. She looks up at you, and whatever she sees on your face makes her go pink under the gold.
+
+jules: Stop it.
+
+sam: I\'m not doing anything.
+
+jules: You\'re doing it with your *face*.
+
+In your pocket, your phone buzzes. Twice.
+
+On the couch, Grace stands up with her clipboard and clears her throat.
+
+grace: Okay. *Okay.* The costume contest. Everybody shut up. This is the most important decision I will make this semester, and I\'m including my MCAT.`,
+    choices: [
+      { text: 'Check your phone. Just for a second.', tag: 'Phone',
+        fx: g => { g.flag('phone1', 'checked'); }, go: 'a2_phone_early' },
+      { text: 'Not now. Grace is announcing. Jules is standing next to you, covered in gold. Not now.', tag: 'Not now',
+        fx: g => { g.flag('phone1', 'ignored'); }, go: 'a2_contest' }
+    ]
+  },
+  a2_phone_early: {
+    night: true,
+    enter: g => { g.know('femi_left_b7', ['sam', 'femi'], 'Femi texted you on Halloween night: he\'d gone to Halcyon\'s residential phase at Building 7, and left. He was coming to you.'); },
+    text: g => `You take it out. Three texts. The first one at 9:14, during the show. When you weren\'t looking. Because nobody looks at their phone during Simone\'s show.
+
+TXT femi: sam
+TXT femi: i went. the residential thing. building 7 at the navy yard. i didnt tell you because i knew youd tell me not to
+TXT femi: i left. im walking. i saw something. can i come to you
+
+You read it twice. Your heart goes cold and fast at the same time.
+
+*Building 7.* You didn\'t know. You didn\'t know because you didn\'t go looking. Two weeks, and you didn\'t go looking.`,
+    choices: [
+      { text: 'Text back right now: *yes. come. 9th floor cardone. im here. im not going anywhere*', tag: 'Come',
+        fx: g => { g.flag('femi_reply', 'come'); g.bond('femi', { trust: 2 }); }, go: 'a2_phone_reply' },
+      { text: 'Call him. Right now. In the middle of the lounge.', tag: 'Call',
+        fx: g => { g.flag('femi_reply', 'call'); }, go: 'a2_phone_call' }
+    ]
+  },
+  a2_phone_reply: {
+    night: true,
+    text: `TXT sam: yes. come. 9th floor cardone. im here. im not going anywhere
+
+Delivered. Then, almost immediately:
+
+TXT femi: ok
+TXT femi: walking up broad. its far. ill be there by 11 something
+TXT femi: dont tell anyone. not even nik. please
+TXT femi: ill explain. i saw her sam. i saw marisol
+
+*Marisol.*
+
+You stand there with the phone in your hand in the middle of a party. Jules is looking at you. Grace is reading a list of names off a clipboard. Seven Broad Street Blurs are cheering.
+
+TXT sam: ill be here
+
+You put the phone in your pocket. You\'ll keep it in your hand, you think. You\'ll watch it all night.`,
+    next: 'a2_contest'
+  },
+  a2_phone_call: {
+    night: true,
+    text: `You call him. You put your finger in your other ear and turn your back on the party and stand in the corner of the lounge by the fridge.
+
+It rings. Once. Twice. Six times.
+
+*Hey, this is Femi. If you\'re hearing this, congratulations, you found me.*
+
+You hang up. You text instead.
+
+TXT sam: come here. 9th floor cardone. im here. call me
+
+Delivered. No dots. Nothing.
+
+You stand by the fridge with the phone in your hand. Behind you, Grace has started reading names off the clipboard. You\'ll keep the phone in your hand. You\'ll watch it all night.`,
+    enter: g => { g.flag('femi_reply', 'call'); },
+    next: 'a2_contest'
+  },
+
+  a2_contest: {
+    night: true,
+    clock: { time: '10:41 PM' },
+    text: g => `grace: Third place. Devontae. As the Blur. For the Wawa bag, which is the only creative choice I\'ve seen from any of the *eleven* Blurs on this floor tonight. You people need help.
+
+Devontae accepts third place like it\'s an Oscar.
+
+grace: Second place. Kyle in 9-08, as the T-rex, for suffering. He\'s been in that thing for four hours. He can\'t sit down. He can\'t use the bathroom. That\'s commitment.
+
+The T-rex, through the doorway, roars with gratitude.
+
+grace: First place.
+
+She looks up from the clipboard. She looks right at Jules.
+
+grace: Pemberton. As the Liberty Bell. You painted your *arms*. I don\'t even like you. First place.
+
+The lounge erupts. Jules goes red under the gold. She stands there while seven Blurs and a Gritty and a T-rex cheer for her, and her face is doing something you\'ve never seen it do: she\'s *delighted*. Plainly, openly delighted, like a little kid, for one second, before she gets it back under control.
+
+Then she turns around and looks at Grace.
+
+jules: Give it to Kyle.
+
+grace: What?
+
+jules: The shower slot. Give it to the T-rex. He can\'t sit down. He\'s suffered more than I have.
+
+Kyle the T-rex starts to cry inside the costume. You can hear it through the inflatable head.
+
+${g.f('femi_reply') ? 'Your phone is in your hand. Nothing.' : 'In your pocket, your phone buzzes again. You don\'t feel it over the music.'}`,
+    choices: [
+      { text: 'Get up on the coffee table. Make a speech for the T-rex. The floor needs it.', tag: 'Speech',
+        check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', label: 'Work the room', on: { strong: 'a2_speech', weak: 'a2_speech', miss: 'a2_speech_flop' } } },
+      { text: 'Stay next to Jules. Say, under the noise: "That was a good thing you just did."', tag: 'Her',
+        fx: g => { g.flag('contest', 'her'); g.bond('jules', { affection: 1 }); }, go: 'a2_her' }
+    ]
+  },
+  a2_speech: {
+    night: true,
+    enter: g => { g.flag('contest', 'speech'); g.bond('simone', { affection: 1 }); },
+    text: `You climb onto the coffee table. The lounge goes quiet in a ripple, the way it does when a guy in a costume gets on furniture.
+
+sam: Ladies and gentlemen and Gritty. Tonight, a hero walks among us. He cannot sit. He cannot pee. He cannot fit through a standard door frame. And yet he *perseveres*.
+
+A cheer.
+
+sam: Kyle. You are the Blur we need. Not the Blur we deserve.
+
+The lounge goes *insane*. Seven Blurs carry the T-rex down the hallway on their shoulders, which takes eleven people because he\'s inflatable and keeps tipping. Simone is laughing so hard she\'s sitting on the floor. Grace is shaking her head slowly, eyes closed, a woman watching a building she is responsible for burn down.
+
+You climb down. Jules is waiting at the bottom. She\'s laughing, the real one, the whole-body one, gold on her shoulders.
+
+jules: You\'re an idiot.
+
+sam: You keep saying that.
+
+jules: I keep meaning it.
+
+She takes your wrist.
+
+jules: Come with me. I want to show you something.`,
+    next: 'a2_roof'
+  },
+  a2_speech_flop: {
+    night: true,
+    enter: g => { g.flag('contest', 'speech'); },
+    text: `You climb onto the coffee table. The lounge goes quiet.
+
+sam: Ladies and gentlemen. Tonight, a hero—
+
+The coffee table, which has been structurally compromised since 2019, folds in half. You go down into a pile of candy wrappers and Solo cups. The lounge goes *insane* anyway. Seven Blurs carry *you* down the hallway on their shoulders, for no reason, chanting *TABLE, TABLE*.
+
+When they finally put you down, Jules is waiting at the end of the hall, laughing, the real one, gold on her shoulders.
+
+jules: You\'re an idiot.
+
+sam: You keep saying that.
+
+jules: I keep meaning it.
+
+She takes your wrist.
+
+jules: Come with me. I want to show you something.`,
+    next: 'a2_roof'
+  },
+  a2_her: {
+    night: true,
+    text: `sam: That was a good thing you just did.
+
+She doesn\'t look at you. She\'s watching Kyle the T-rex try to hug Grace, who is holding her clipboard up like a shield.
+
+jules: It wasn\'t good. I just didn\'t want it.
+
+sam: Pemberton. You wanted it. I watched your face. You wanted it for one whole second.
+
+She turns and looks at you. She\'s very close. The gold on her cheekbone catches the light.
+
+jules: You watch my face too much.
+
+sam: Yeah.
+
+jules: Somebody should tell you to stop.
+
+sam: Somebody should.
+
+She doesn\'t. She takes your wrist instead, her fingers cold and painted, leaving gold on your skin.
+
+jules: Come with me. I want to show you something.`,
+    next: 'a2_roof'
+  },
+
+  a2_roof: {
+    night: true,
+    loc: 'CARDONE HALL · ROOF',
+    clock: { time: '11:38 PM' },
+    text: g => `She takes you up the stairwell to the roof door, the one with the broken alarm, the one you went through on the night of the blackout, and she props it open with the brick, and you go out into the cold.
+
+It\'s forty-four degrees. Halloween. The whole city is lit up below you, orange and gold and every window glowing, and somewhere out toward Fishtown somebody is setting off illegal fireworks, little green and red flowers bursting over the rooftops, very far away, with no sound.
+
+She walks to the parapet. She stands there in her bell dress with her gold arms, shivering. You take off your ${{ blur: 'hoodie', ghostbuster: 'hoodie', cabbie: 'father\'s jacket' }[g.f('costume8')]} and put it on her shoulders. She lets you.
+
+jules: You asked me what I meant.
+
+sam: Yeah.
+
+jules: On the card. *What did you mean.* And I said I didn\'t know yet.
+
+She looks out at the city.
+
+jules: I know now.
+
+${g.f('femi_reply') ? 'In your hand, the phone is dark. You keep looking at it. You make yourself stop.' : ''}
+
+jules: I\'ve been trying to work out how to say it since the lounge. Since Ravenscourt. I\'ve been trying to say it right, and I can\'t, because I\'ve never said anything to anyone that I didn\'t already know the end of.
+
+She turns around. Her back is to the city. Her face is very close to yours, and her eyes are bright.
+
+jules: So I\'m going to do this instead. And you\'re going to let me. And then I\'ll tell you what I meant. Okay?
+
+sam: Okay.
+
+She puts her cold gold hand on your face.
+
+And your phone buzzes in your other hand. And again. And again. Three times, fast, the way a phone only buzzes when somebody is typing as fast as they can.`,
+    choices: [
+      { text: 'Look at the phone.', tag: 'Look',
+        fx: g => { g.flag('roof8', 'phone'); }, go: 'a2_roof_phone' },
+      { text: 'Don\'t look. Not now. Not this. Kiss her.', tag: 'Kiss her',
+        fx: g => { g.flag('roof8', 'kiss'); g.flag('kissed'); g.bond('jules', { affection: 2, trust: 1 }); g.know('first_kiss', ['sam', 'jules'], 'On Halloween, on the roof of Cardone Hall, at 11:47 p.m., you kissed Jules Pemberton. She was dressed as the Liberty Bell.'); g.hidden('revenant_drift', 0.5); }, go: 'a2_kiss' }
+    ]
+  },
+  a2_roof_phone: {
+    night: true,
+    clock: { time: '11:47 PM' },
+    enter: g => { g.flag('femi_alive'); },
+    text: `You look.
+
+You don\'t decide to. Your eyes just go, the way they go to a siren.
+
+TXT femi: here
+TXT femi: stairwell b. theres someone on the stairs below me
+TXT femi: sam theyre on the stairs
+
+It\'s 11:47. They were sent at 11:39. The roof gets one bar; they all landed at once.
+
+You look up at Jules. Her hand is still on your face. She sees your eyes. She sees whatever\'s in them.
+
+She takes her hand away.
+
+jules: Go.
+
+She doesn\'t ask. She doesn\'t say *again*. She just says it, the way she\'s said it twice before, and you\'re already moving, and as you reach the roof door you hear her behind you, and it isn\'t *go*. It\'s your name.
+
+You don\'t stop.`,
+    next: 'a3_stairwell'
+  },
+  a2_kiss: {
+    night: true,
+    clock: { time: '11:47 PM' },
+    text: `You don\'t look.
+
+You put the phone in your pocket without looking, and you put your hand over hers on your face, and you lean in, and this time she doesn\'t stop.
+
+She kisses you.
+
+Or you kiss her. It doesn\'t matter which. It\'s not like the movies. It\'s clumsy for a second, her nose cold against yours, gold paint on your mouth, the bell dress crackling between you, and then it isn\'t clumsy at all. Her hand moves from your face into your hair. Yours is on her back, on the bare painted skin between her shoulder blades, and she\'s shaking, and so are you, and it\'s forty-four degrees on the roof of Cardone Hall and you are warm all the way through for the first time since August.
+
+In your pocket, your phone buzzes. Again. Again.
+
+You don\'t stop. She doesn\'t stop.
+
+When she finally pulls back, an inch, her forehead against yours, she\'s breathing hard, and she\'s laughing, quietly, astonished, at herself.
+
+jules: That\'s what I meant.
+
+sam: Yeah.
+
+jules: *What if it was me.* That\'s what I meant. Some of it. I couldn\'t— I\'ve never asked anybody for anything. I didn\'t know how to ask.
+
+sam: It was you. It\'s been you since the minifridge.
+
+jules: I\'m going to end it with Callum. Tomorrow. In person. He deserves that.
+
+sam: Okay.
+
+jules: I chose this. You understand? Nothing decided it for me. I *chose*.
+
+Your phone buzzes again. A long buzz this time. A call.
+
+You finally take it out of your pocket.
+
+It\'s 11:58. Eleven minutes. **1 missed call. FEMI.** And under it, the messages.`,
+    enter: g => { g.flag('femi_dead_found'); },
+    next: 'a2_kiss_phone'
+  },
+  a2_kiss_phone: {
+    night: true,
+    text: g => `${g.f('phone1') === 'ignored' ? 'TXT femi: sam\nTXT femi: i went. the residential thing. building 7 at the navy yard. i didnt tell you because i knew youd tell me not to\nTXT femi: i left. im walking. i saw something. can i come to you\n' : ''}TXT femi: here
+TXT femi: stairwell b. theres someone on the stairs below me
+TXT femi: sam theyre on the stairs
+TXT femi: im on 9. im at your door. please be home
+
+The last one is from 11:51.
+
+The call is from 11:52. It lasted four seconds. No voicemail. Just four seconds of somebody on the other end, and then nothing.
+
+You look at Jules. She sees your face. Everything she just felt leaves hers, all at once.
+
+jules: What is it.
+
+You\'re already running.`,
+    next: 'a3_found'
+  },
+
+  /* ================= ACT THREE: NINTH FLOOR ================= */
+  a3_stairwell: {
+    card: { kind: 'act', label: 'Act Three', title: 'Ninth Floor' },
+    night: true,
+    loc: 'CARDONE HALL · STAIRWELL B',
+    clock: { time: '11:48 PM' },
+    text: g => `You take the stairs down from the roof landing three at a time.
+
+Stairwell B is the one nobody uses. Cinderblock painted the color of old teeth, a fire door at every floor, a light that buzzes. You swing around the rail onto the ninth-floor landing.
+
+There are two men on the half-landing below it, between nine and eight.
+
+They\'re wearing navy Temple Facilities jackets, the kind the custodial staff wears, and blue latex gloves. There\'s a gray laundry cart between them, the big canvas kind on wheels, and they\'re lifting something into it. Something in a Temple Econ hoodie.
+
+Femi.
+
+His eyes are open. You can see them from here. They\'re open and they move, they find you on the stairs above, and the rest of him doesn\'t move at all. His arms hang. His head lolls against the edge of the cart. There\'s a small dark spot on the side of his neck, under his ear, the size of a pencil eraser.
+
+One of the men looks up and sees you. He\'s fifty, maybe. A gray mustache. A wedding ring under the latex glove. He looks at you with no expression at all, the way you\'d look at a man reading a meter.
+
+The other one doesn\'t even look up. He finishes lowering Femi into the cart. He tucks Femi\'s arm in, carefully, so it won\'t catch on the edge.
+
+MUSTACHE: Evening.
+
+He has a small black pistol in his right hand, the same kind as the polo man in Kensington. Not a gun. A dart gun. It\'s pointed at the floor. Not at you. Not yet.`,
+    choices: [
+      { text: 'Go for them. Both of them. Now. Get Femi out of that cart.', tag: 'Fight',
+        check: { kind: 'pool', attr: 'reflex', skill: 'brawl', diff: 3, label: 'Two cleaners, a dart gun, a stairwell', physical: true, power: true, on: { crit: 'a3_fight_win', success: 'a3_fight_win', partial: 'a3_fight_hurt', fail: 'a3_fight_hurt', botch: 'a3_fight_hurt' } } },
+      { text: 'Slip. In the stopped world they can\'t do anything. Take him.', slip: true, tag: 'Slip',
+        fx: g => { g.flag('stair_slip'); if (g.S.drift >= 9 || g.hv('revenant_drift') >= 10) g.flag('unstick8'); g.hidden('halcyon_heat', 1); }, go: 'a3_slip' },
+      { text: 'Yell. Loud enough for the whole ninth floor. Bring every Blur at that party into this stairwell.', tag: 'Yell',
+        fx: g => { g.flag('stair_yell'); }, go: 'a3_yell' }
+    ]
+  },
+  a3_fight_win: {
+    night: true,
+    enter: g => { g.flag('stair', 'fight'); g.injure({ id: 'dart8', name: 'Dart (sedative, wearing off)', pen: 1, heal: 1, affects: ['reflex', 'wits'] }); },
+    text: `You come down the last six stairs in one jump.
+
+The mustache gets the dart gun up. You\'re faster. You hit his wrist with your forearm and the dart goes into the cinderblock with a *tick* and you hit him in the throat, not hard, hard enough, and he goes down on one knee choking.
+
+The other one is younger. He doesn\'t fight. He pulls a second dart gun from his jacket and shoots you in the thigh from three feet away.
+
+It goes in like a bee sting. And then a wave of warm comes up your leg, heavy and soft and sweet, and the stairwell tilts.
+
+You don\'t stop. You can\'t stop. You grab the laundry cart and pull it over, and it goes over on its side with a crash that echoes up and down all fourteen floors, and Femi spills out onto the landing, limp, and you fall on top of him, half-protecting him, half because your leg\'s gone.
+
+Above you, the fire door to the ninth floor bangs open, and there\'s music and light and a Blur in a green shirt yelling *yo, what the hell*, and the two men look at each other, and they go. Down the stairs. Fast and quiet. The younger one helping the older one, who\'s holding his throat. They take the cart.
+
+They don\'t take Femi.`,
+    next: 'a3_holding'
+  },
+  a3_fight_hurt: {
+    night: true,
+    enter: g => { g.flag('stair', 'fight'); g.injure({ id: 'dart8', name: 'Dart (sedative, wearing off)', pen: 1, heal: 1, affects: ['reflex', 'wits'] }); g.injure({ id: 'cracked_ribs8', name: 'Cracked ribs (stairwell rail)', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
+    text: `You come down the last six stairs in one jump, and the mustache is ready for you.
+
+He shoots you in the chest from five feet away. The dart goes in under your collarbone like a bee sting, and then a wave of warm comes up through you, heavy and soft and sweet, and your legs go, and you hit the steel railing with your ribs on the way down.
+
+You\'re on the landing. On your side. Next to Femi. Your face is a foot from his.
+
+His eyes are open. They move. They find yours.
+
+You reach out. Your arm weighs two hundred pounds. You get your hand on his hoodie and you hold on.
+
+Above you, the fire door to the ninth floor bangs open, and there\'s music and light and Devontae in a green shirt with a Wawa bag yelling *yo, YO, what the hell*, and the men look at each other, and they go. Down the stairs. Fast and quiet, taking the empty cart.
+
+They don\'t take Femi. They don\'t need to.`,
+    next: 'a3_holding'
+  },
+  a3_yell: {
+    night: true,
+    enter: g => { g.flag('stair', 'yell'); },
+    text: `You yell.
+
+Not a word. Just noise, as loud as you\'ve ever made it, the yell you used to do in the alley behind Mifflin Street to make Vinnie\'s dog bark, a yell that fills Stairwell B from the basement to the roof.
+
+On the ninth-floor landing, the fire door bangs open. Then another one, on eight. Then music and light and a Blur in a green shirt, and two more Blurs behind him, and Simone in her Van Helsing coat, and Kyle the T-rex, somehow, wedged in the doorway.
+
+The two men look up the stairs at you. They look at the doorway full of Blurs.
+
+They look at each other. The older one lets go of the cart. They go down the stairs. Not running. Walking fast, the way men walk when they\'ve done this before and know exactly how fast you have to walk to not look like you\'re running.
+
+You come down the last six stairs, and Femi is in the cart, and you lift him out, and he weighs nothing. He weighs nothing at all.`,
+    next: 'a3_holding'
+  },
+  a3_slip: {
+    night: true,
+    enter: g => { g.flag('stair', 'slip'); if (g.f('unstick8')) { g.drift(1); g.hidden('revenant_drift', 1); } },
+    text: g => `You step through.
+
+It\'s January. The buzzing light stops buzzing. The two men stop, mid-motion, one with his hand on Femi\'s arm, one with the dart gun half-raised toward you.
+
+And Femi.
+
+Femi is still looking at you.
+
+In the stopped world, where nothing moves, where nobody has ever moved but you, his eyes are on yours. They don\'t move. But they\'re *on* you. And you understand, standing there in the cold with your breath smoking, that it\'s the same thing it always was: you can see him. Even here. Even now.
+
+You take the dart gun out of the older man\'s hand and throw it down the stairwell. You lift Femi out of the cart. He weighs nothing. ${g.f('unstick8') ? 'You turn to carry him up the stairs, and the cold gets *colder*, and you feel the ice start to close above you the way it did under 95, and you know, you *know*, that if you stay one more second you won\'t come out, and neither will he.\n\nYou get him up the six stairs, one at a time, with the ice closing over you. You pull. You come out on your knees on the landing.' : 'You carry him up six stairs to the ninth-floor landing and hold him against your chest.\n\nYou step back out.'}
+
+The world comes back. The two men are holding nothing, standing over an empty cart, and when they look up and see you on the landing above them with Femi in your arms, the older one\'s face does something for the first time. It goes very still.
+
+Then they go. Down the stairs, fast and quiet, taking the cart.
+
+Your nose is pouring. You don\'t wipe it.`,
+    next: 'a3_holding'
+  },
+
+  a3_holding: {
+    night: true,
+    clock: { time: '11:51 PM' },
+    enter: g => { g.flag('femi_end', 'arms'); g.know('femi_dead', ['sam'], 'Femi Ojo died at 12:04 a.m. on November 1, in Stairwell B of Cardone Hall, in your arms. Halcyon\'s cleaners did it.'); },
+    text: g => `You\'re on the landing. You\'ve got him across your lap. You don\'t remember sitting down.
+
+His eyes are open. They\'re on you. The rest of him doesn\'t move at all. His hand is lying palm-up on the concrete, and his fingertips are moving, just barely, the way a sleeping person\'s fingers move.
+
+sam: Femi. Femi. Hey. I\'m here. I\'m here, man. I see you.
+
+His eyes are wet.
+
+${g.hurt('dart8') ? 'Your own body is heavy and warm and slow from the dart. You fight it. You hold on to him.' : ''}
+
+There\'s a puncture in the side of his neck, a tiny one, a dark bead of blood. And when you shift him on your lap, his hoodie rides up, and there are more: on his hip, through a neat slit somebody cut in his jeans, three small holes, deep, with the skin around them bruised purple-black. The kind of holes a needle as long as a pencil leaves.
+
+*They took something out of him.*
+
+Above you, the fire door is open, and people are on the landing, Devontae and Simone and Blurs, and Simone is on the phone saying *Cardone Hall, ninth floor, Stairwell B, somebody\'s hurt, I can\'t— Sam, who\'s hurt?*, and somebody is crying, and you don\'t look at any of them.
+
+You look at Femi.
+
+sam: Hold on. They\'re coming. Hold on.
+
+His fingers move on the concrete. You take his hand. It\'s cold. He squeezes, barely, so little you\'d never feel it if you weren\'t holding on with everything you have.
+
+He\'s trying to tell you something. His eyes go to his own hoodie pocket, and back to you. To his pocket. To you.`,
+    choices: [
+      { text: 'His pocket. Reach into it.', tag: 'His pocket',
+        fx: g => { g.flag('femi_pocket'); }, go: 'a3_pocket' },
+      { text: 'Don\'t look away from him. Not for a second. Not now. Hold his hand.', tag: 'Stay with him',
+        fx: g => { g.flag('femi_stayed'); g.hidden('revenant_drift', -1); }, go: 'a3_stay' }
+    ]
+  },
+  a3_pocket: {
+    night: true,
+    enter: g => { g.know('femi_card', ['sam'], 'In Femi\'s pocket: his Halcyon wristband, cut off, and a sticky note in his handwriting: "M.R. ALIVE. RM 714. THEY CALL YOU 17."'); },
+    text: `You reach into his hoodie pocket.
+
+His wristband, cut off. **HCW-COHORT 2 · 031 · RESIDENTIAL.** And a yellow sticky note, folded in half, in his handwriting, small and neat and hurried, the handwriting of a guy who took notes for people who never thanked him:
+
+*M.R. ALIVE. RM 714.*
+*THEY CALL YOU 17.*
+
+You look at him.
+
+His eyes are on yours. They\'re satisfied. That\'s the only word for it. He did it. He got it to you.
+
+sam: I got it. I got it, man. I have it.
+
+His fingers squeeze yours, once.`,
+    next: 'a3_death'
+  },
+  a3_stay: {
+    night: true,
+    text: `You don\'t look away. You hold his hand and you look at him and you don\'t stop.
+
+sam: I see you. I see you. You\'re not invisible. You\'re right here. I see you.
+
+His eyes stay on yours. His fingers squeeze, once, so faint.
+
+You talk to him. Whatever comes. You tell him about Simone\'s song, *Stake Through My Heart (Metaphorically)*. You tell him Kyle the T-rex won the shower slot. You tell him Grace gave the Liberty Bell first place and said she doesn\'t even like her. You tell him the chain rule clicked. You tell him he\'s going to be fine, which is a lie, and you\'ve gotten so good at lying that it comes out perfectly.
+
+His eyes go to his pocket again. Once. Then back to you. Like he\'s decided it can wait.
+
+`,
+    next: 'a3_death'
+  },
+
+  a3_death: {
+    night: true,
+    clock: { day: 'Sun', date: 'Nov 1', time: '12:04 AM' },
+    text: g => `At 12:04 in the morning on the first of November, All Saints' Day, Femi Ojo stops breathing in your lap in Stairwell B, a few steps from the ninth-floor door.
+
+It\'s not dramatic. You keep waiting for it to be. It\'s just that his chest is moving, very slightly, and then it moves a little less, and then it doesn\'t. His fingers in yours go still. His eyes are still open. They\'re still on you.
+
+And then something happens.
+
+The people on the landing *see* him.
+
+All of them. All at once. Devontae, who has been standing three feet away for ten minutes looking at you and the empty air in your lap, says *oh my God*, very small. Simone drops her phone. A girl in a Barbie costume screams. Kyle the T-rex sits down in the doorway, finally, his inflatable legs folding under him.
+
+For ten weeks, nobody could see Femi Ojo. Now everybody can.
+
+Simone kneels down on the concrete beside you in her Van Helsing coat. She looks at Femi\'s face. She looks at you.
+
+simone: Who is he?
+
+sam: His name is Femi. He\'s the Calc LA. He\'s been in Wachman every day since August. Econ. He reshelves books at Charles. He has a sister. He—
+
+You stop. You can\'t.
+
+simone: I never saw him. He was ten feet from me tonight, and I never once saw him.
+
+sam: Nobody did.
+
+Above you, on the flight down from the roof, footsteps. Running. And then, at the turn of the stairs, in a dress the color of old bronze with a black crack painted down it, with your ${{ blur: 'hoodie', ghostbuster: 'hoodie', cabbie: 'father\'s jacket' }[g.f('costume8')]} around her shoulders, Jules.
+
+She looks at you. She looks at Femi. She doesn\'t say anything at all.
+
+She comes down the stairs and kneels on your other side and puts her arms around you, and her gold paint comes off on your neck, and you put your face against her painted shoulder, and you make a sound you don\'t recognize.`,
+    next: 'a4_saints'
+  },
+
+  /* ---------- found (didn\'t look at the phone) ---------- */
+  a3_found: {
+    card: { kind: 'act', label: 'Act Three', title: 'Ninth Floor' },
+    night: true,
+    loc: 'CARDONE HALL · 9TH FLOOR HALLWAY',
+    clock: { time: '11:59 PM' },
+    enter: g => { g.flag('femi_end', 'found'); g.know('femi_dead', ['sam'], 'Femi Ojo died alone outside your door, 9-14, on Halloween night, while the party went on around him. Halcyon\'s cleaners did it. You were on the roof.'); g.hidden('revenant_drift', 1.5); },
+    text: g => `You come down the stairs from the roof and through the fire door into the ninth-floor hallway, and the party is still going.
+
+It\'s louder than when you left. The music is pounding out of the lounge. The hallway is full of costumes, Blurs and Barbies and a girl dressed as a traffic cone, everybody laughing, everybody holding Solo cups, the strobe light flashing white through the open bathroom door.
+
+You push through them. You push through them toward your door. 9-14.
+
+There\'s someone sitting on the floor against your door.
+
+People are walking past him. You watch them do it. A Blur steps over his outstretched leg without looking down. A Barbie sets an empty Solo cup down on the carpet next to his hand, the way you\'d set a cup on a step. There are candy wrappers in his lap, three or four, that people have dropped there, not seeing that it was a lap.
+
+Femi is sitting with his back against your door, in his Temple Econ hoodie, with his legs out in front of him on the hallway carpet. His head is tilted back against the wood, at an angle no living person would hold. His eyes are open.
+
+His right hand is raised. It\'s resting against your door, flat, at the level of the doorknob. There are marks on the white paint above his hand. Faint brown lines, curving down, four of them, five, ten. Fingertip marks.
+
+He was knocking. With his fingertips. With what little he could still move. On your door. While the party went on around him and nobody saw him.
+
+You don\'t remember kneeling. You\'re kneeling. You\'ve got his face in your hands, and it\'s cool, and it isn\'t cold yet. It isn\'t cold yet. You missed it by minutes.
+
+His fingernails are torn. The fingertips of his right hand are raw. Under the hem of his hoodie, through a neat slit somebody cut in his jeans, there are three small holes in his hip, deep, bruised black. On the side of his neck, a tiny puncture with a single bead of dried blood.
+
+*They took something out of him.* In the stairwell, where nobody goes. And then they let him go, and he got as far as your door. They let him. On purpose.
+
+You look up. And for the first time all night, the hallway sees him. All of them, at once. You watch it happen: the attention landing on him like a light switching on, a girl in a Barbie costume beside you looking down and seeing him, finally, now that there\'s nothing left in him for the eye to slide off, and screaming.
+
+The music keeps going.
+
+Behind you, in the doorway to the stairwell, in a dress the color of old bronze, Jules stops. She looks at Femi. She looks at the marks on your door. She looks at you.
+
+She doesn\'t come any closer. She puts her gold hand over her mouth.`,
+    next: 'a3_found_pocket'
+  },
+  a3_found_pocket: {
+    night: true,
+    enter: g => { g.know('femi_card', ['sam'], 'In Femi\'s pocket: his Halcyon wristband, cut off, and a sticky note in his handwriting: "M.R. ALIVE. RM 714. THEY CALL YOU 17."'); },
+    text: `His hoodie pocket is bulging. You reach in.
+
+His wristband, cut off. **HCW-COHORT 2 · 031 · RESIDENTIAL.** And a yellow sticky note, folded in half, in his small neat hurried handwriting, the handwriting of a guy who took notes for people who never thanked him:
+
+*M.R. ALIVE. RM 714.*
+*THEY CALL YOU 17.*
+
+He came to give you this. He walked from the Navy Yard to North Philly, six miles, at night, with people following him, to give you this.
+
+In August he told you: *If something happens to me, you\'ll be the one who notices.*
+
+You were on the roof.
+
+Somebody\'s calling 911. Somebody\'s crying. Somebody turns the music off, finally. In the quiet you can hear the fan in Kyle\'s T-rex costume, still running.`,
+    next: 'a4_saints'
+  }
+});
+
+/* s01e08c.js */
+/* S1 · E8 · ALL HALLOWS, part 3 of 3: Act Four ("All Saints"), tag, polls. */
+EH.scenes('s01e08', {
+
+  /* ================= ACT FOUR: ALL SAINTS ================= */
+  a4_saints: {
+    card: { kind: 'act', label: 'Act Four', title: 'All Saints' },
+    night: true,
+    loc: 'CARDONE HALL · 9TH FLOOR',
+    clock: { day: 'Sun', date: 'Nov 1', time: '1:35 AM' },
+    enter: g => { g.heat('mikey', 1); },
+    text: g => `By one-thirty, the ninth floor is a crime scene.
+
+Temple police first, then Philly PD, then two homicide detectives in rumpled coats who look like they were asleep forty minutes ago. Yellow tape across the ${g.f('femi_end') === 'arms' ? 'door to Stairwell B' : 'hallway outside 9-14'}. A woman from the medical examiner\'s office with a kit. Everybody on the floor has been herded into the lounge, still in costume, and the lounge is full of Blurs and Barbies and a T-rex sitting on the floor with his inflatable head in his lap, and nobody\'s talking. A girl dressed as a traffic cone is crying in a way that doesn\'t stop.
+
+At 1:35, the elevator opens, and your brother walks out.
+
+He\'s in plainclothes. Jeans, a Birds hoodie, his badge on a chain around his neck. His hair\'s still flat on one side from his pillow. He heard it on the radio. *Cardone Hall, ninth floor.* He doesn\'t stop to talk to the detectives. He walks straight into the lounge and finds you on the floor against the wall with ${g.f('femi_end') === 'arms' ? 'Femi\'s blood on your shirt' : 'your hands in your lap'}, and he crouches down in front of you and puts both hands on your face, the way Ma does, and looks at you.
+
+mikey: Sammy. Are you hurt?
+
+sam: I don\'t know.
+
+mikey: Is any of this yours?
+
+sam: No. It\'s his.
+
+He holds your face a second longer. Then he pulls you in, hard, the way he did at the airport when he came home from Afghanistan, and you let him.
+
+And over his shoulder, through the lounge doorway, you watch the elevator open again.
+
+Two men in gray polo shirts. And between them, in a dark overcoat, with a tablet under his arm, calm as a man arriving at a dinner party: Brannigan.
+
+He shakes the lead detective\'s hand like they\'re old friends. You can\'t hear what he says. You can see the detective nodding. You can see Brannigan gesture, gently, sadly, toward the ${g.f('femi_end') === 'arms' ? 'stairwell' : 'hallway'}. You catch pieces of it between the radios:
+
+*study participant. left against medical advice. experimental compound. adverse reaction. such a tragedy.*
+
+The detective writes it down.
+
+Then Brannigan turns, and looks through the lounge doorway, past the Blurs and the Barbies and the crying traffic cone, and finds you. On the floor. In your brother\'s arms.
+
+He walks over. Mikey stands up. Mikey knows him.
+
+mikey: Mr. Brannigan.
+
+BRANNIGAN: Officer Kearney. I\'m so sorry we\'re meeting like this.
+
+He looks down at you. His face is kind. His voice is kind.
+
+BRANNIGAN: You must be Sam. I\'m so sorry about your friend. He talked about you, you know, at the facility. He said you were the only one who ever really saw him.`,
+    choices: [
+      { text: 'Get up. Go for his throat. In front of everyone.', tag: 'Go for him',
+        check: { kind: 'pool', attr: 'body', skill: 'brawl', diff: 2, label: 'Get to Brannigan', physical: true, on: { crit: 'a4_lunge', success: 'a4_lunge', partial: 'a4_lunge', fail: 'a4_lunge_stopped', botch: 'a4_lunge_stopped' } } },
+      { text: 'Stay on the floor. Look up at him. Say it quietly, so only he hears: "I know what you did."', tag: 'I know',
+        fx: g => { g.flag('brannigan8', 'know'); g.hidden('halcyon_heat', 1); }, go: 'a4_iknow' },
+      { text: 'Say nothing. Look at his face. Memorize it. Every line. You\'re going to need it.', tag: 'Memorize',
+        check: { kind: 'move', move: 'Hold the Line', attr: 'nerve', skill: 'persuade', label: 'Don\'t break', on: { strong: 'a4_memorize', weak: 'a4_memorize', miss: 'a4_memorize_crack' } } }
+    ]
+  },
+  a4_lunge: {
+    night: true,
+    enter: g => { g.flag('brannigan8', 'lunge'); g.heat('mikey', 2); g.bond('mikey', { tension: 1 }); g.hidden('halcyon_heat', 1); },
+    text: `You\'re up before you decide to be. You\'re past Mikey before he can turn. You get one hand on Brannigan\'s overcoat, on his collar, and you shove him back against the lounge wall hard enough that the framed floor-rules poster falls and the glass breaks.
+
+He doesn\'t fight back. He doesn\'t raise a hand. He just lets you pin him there, looking at you with that kind, patient face, while the room goes silent and every Blur on the ninth floor watches.
+
+BRANNIGAN: It\'s all right. It\'s all right, son. Grief does this.
+
+Then Mikey\'s arms are around you from behind, and he\'s pulling you off, and the polo men are stepping forward, and Brannigan holds up one hand: *stay*. They stay.
+
+BRANNIGAN: No harm done, Officer. He\'s in shock. They were close.
+
+He straightens his collar. He looks at you over Mikey\'s arm, and for one second, just one, the kindness goes out of his eyes, and what\'s left is flat and patient.
+
+BRANNIGAN: Get some rest, Sam.
+
+He goes back to the detectives.
+
+Mikey doesn\'t let go of you until Brannigan is back with the detectives. When he does, he turns you around and looks at you. His face is pale.
+
+mikey: Sammy. How does a Halcyon man know your *name*?`,
+    next: 'a4_lounge'
+  },
+  a4_lunge_stopped: {
+    night: true,
+    enter: g => { g.flag('brannigan8', 'lunge'); g.heat('mikey', 1); },
+    text: `You start to get up. Mikey\'s hand is on your shoulder before you\'re halfway, pushing you back down, hard, the way he used to hold you down when you were nine and wanted to fight a kid twice your size.
+
+mikey: Don\'t.
+
+You fight him. He doesn\'t let go.
+
+mikey: Sammy. *Don\'t.*
+
+Brannigan watches the whole thing with polite concern.
+
+BRANNIGAN: It\'s all right. Grief does this.
+
+He goes back to the detectives. Mikey keeps his hand on your shoulder until Brannigan\'s gone, and then a while longer.
+
+mikey: How does a Halcyon man know your *name*, Sammy?`,
+    next: 'a4_lounge'
+  },
+  a4_iknow: {
+    night: true,
+    enter: g => { g.know('brannigan_threat', ['sam'], 'On Halloween night, Brannigan told you: "Then you know what happens to the ones who are on their own. Come in, Sam. Before it\'s somebody you can\'t carry."'); },
+    text: `You don\'t get up. You look at him from the floor, and you say it so quietly that Mikey, standing right beside him, doesn\'t hear.
+
+sam: I know what you did.
+
+Brannigan crouches down, so his face is level with yours. To everyone in the lounge, it looks like a kind older man comforting a grieving kid. He even puts a hand on your knee.
+
+BRANNIGAN: Then you know what happens to the ones who are on their own.
+
+His voice is so soft. So gentle.
+
+BRANNIGAN: Come in, Sam. Before it\'s somebody you can\'t carry.
+
+He pats your knee twice and stands up.
+
+BRANNIGAN: Officer. Take care of your brother. He\'s had a terrible night.
+
+He goes back to the detectives. Mikey watches him go. Then he looks down at you.
+
+mikey: What did he say to you?
+
+sam: He said he was sorry.
+
+mikey: Sammy. How does a Halcyon man know your *name*?`,
+    next: 'a4_lounge'
+  },
+  a4_memorize: {
+    night: true,
+    enter: g => { g.flag('brannigan8', 'memorize'); g.know('brannigan_face', ['sam'], 'You memorized Brannigan\'s face on Halloween night. A scar through the left eyebrow. A chipped canine. A wedding ring on a chain around his neck, not his finger. He doesn\'t blink enough.'); },
+    text: `You don\'t say anything. You look up at him.
+
+You look at his face the way Jules looks at a card table. Every line. A thin white scar through the outside of his left eyebrow. A chipped lower canine. Reading glasses folded in the overcoat\'s breast pocket. A wedding ring, but not on his finger: on a thin chain around his neck, just visible at the open collar. He doesn\'t blink enough. He blinks about once every twenty seconds, like a man who taught himself to stop.
+
+He waits for you to say something. You don\'t. He waits a little longer.
+
+Something flickers in his face. Not much. A man noticing that a thing he expected to break hasn\'t.
+
+BRANNIGAN: Get some rest, son.
+
+He goes back to the detectives.
+
+Mikey watches him go. Then he looks down at you.
+
+mikey: Sammy. How does a Halcyon man know your *name*?`,
+    next: 'a4_lounge'
+  },
+  a4_memorize_crack: {
+    night: true,
+    enter: g => { g.flag('brannigan8', 'memorize'); },
+    text: `You try. You try to look at him and memorize him and not break.
+
+You break. Your face goes, all of it, at once, and you put your head down on your knees on the lounge floor in front of the man who killed Femi Ojo and you shake.
+
+Brannigan stands there for a moment, watching. Then he puts a hand, very lightly, on the top of your head. Like a priest.
+
+BRANNIGAN: I know, son. I know.
+
+He goes back to the detectives.
+
+When you can lift your head again, Mikey\'s crouched in front of you.
+
+mikey: Sammy. How does a Halcyon man know your *name*?`,
+    next: 'a4_lounge'
+  },
+
+  a4_lounge: {
+    night: true,
+    clock: { time: '4:10 AM' },
+    text: g => `You don\'t answer Mikey. He doesn\'t make you. He gets called away by a detective at two, and he squeezes the back of your neck and says *I\'m right down the hall*, and he is, all night.
+
+By four, the police have let most of the floor go to bed. Nobody goes to bed. The ones who live here sit in the lounge, still in their costumes, because nobody can make themselves take them off and nobody can make themselves leave.
+
+It\'s just the five of you, in the end. You. Nik, in his Ghostbusters jumpsuit, with his proton pack on the floor beside him, rocking a little, breathing in for four. Grace, in her scrubs, sitting very straight with her hands folded, staring at nothing. Simone, in her Van Helsing coat, with her makeup in black rivers down her face. And Jules, in the Liberty Bell dress, the gold paint gone streaky and dull, ${g.f('costume8') === 'cabbie' ? 'your father\'s jacket' : 'your hoodie'} still around her shoulders.
+
+Grace talks first. She talks the way she talks when she\'s scared: clinically.
+
+grace: The holes in his hip. I saw them, when the ME was working. Three of them. Iliac crest. That\'s where you take bone marrow.
+
+She stops.
+
+grace: You do one. For a marrow sample, you do one. You numb it first. They did three. And there\'s no sign they numbed anything. There\'s bruising around all three. Hematoma. That means his heart was beating. That means he was—
+
+She stops again. Her hands are shaking. She doesn\'t hide them.
+
+grace: He was awake for it. Sam. He was *awake*. That\'s why the paralytic. So he couldn\'t move. Not so he couldn\'t feel it.
+
+Simone makes a sound and puts her hand over her mouth.
+
+Nik stops rocking.
+
+Nobody says anything.
+
+${g.f('kissed') ? 'Beside you, very quietly, so only you can hear, Jules says:\n\njules: I was kissing you.\n\nsam: I know.\n\njules: While he was— at your door— I was—\n\nsam: *I* was. Not you. Me. I didn\'t look at the phone.\n\nShe doesn\'t say anything. Her hand finds yours on the carpet. Her fingers are cold. She holds on.' : 'Beside you, Jules hasn\'t said anything in two hours. Her hand finds yours on the carpet. Her fingers are cold. She holds on.'}`,
+    choices: [
+      { text: 'Let it come. Whatever it is. You haven\'t cried since graduation, alone in the car. Let it come.', tag: 'Break',
+        fx: g => { g.flag('grief', 'break'); g.bond('jules', { trust: 1, affection: 1 }); g.bond('nik', { trust: 2, affection: 2 }); g.bond('simone', { trust: 2, affection: 1 }); g.bond('grace', { trust: 2 }); g.hidden('revenant_drift', -1); }, go: 'a4_break' },
+      { text: 'Stand up. "Room 714. The Navy Yard. I\'m going. Tonight."', tag: 'Rage',
+        fx: g => { g.flag('grief', 'rage'); g.heat('simone', 1); g.hidden('revenant_drift', 1); }, go: 'a4_rage' },
+      { text: 'Go quiet. Go all the way down, to the bottom, where nothing can reach you. Stay there.', tag: 'Numb',
+        fx: g => { g.flag('grief', 'numb'); g.hidden('revenant_drift', 0.5); }, go: 'a4_numb' }
+    ]
+  },
+  a4_break: {
+    night: true,
+    text: `You let it come.
+
+It comes up out of you like something that\'s been waiting since August. Since the bus. Since Carmen\'s hip. Since Heck\'s fists and the dart in his neck and your father on his knees on the gravel. Since every single person you didn\'t get to fast enough.
+
+You cry on the floor of the ninth-floor lounge at four in the morning on All Saints' Day, in front of four people, and none of them look away.
+
+Nik comes over and sits on your other side and puts his head on your shoulder and cries too, ugly, snotty, the way Nik does everything, completely. Simone gets down on the carpet in front of you in her Van Helsing coat and puts both hands on your knees. Grace doesn\'t move from her chair, but after a while she gets up and brings you a cup of water, and stands there holding it until you can take it.
+
+And Jules holds onto your hand, and doesn\'t say anything, and doesn\'t let go, and when you finally look at her, her eyes are wet. She doesn\'t cry. She doesn\'t. But her eyes are wet, and she lets you see it.
+
+nik: He was nice to me once. In the library. In September. I dropped my calculator and it rolled under a table and somebody handed it back to me, and I said thanks, and I looked up, and there was nobody there.
+
+He wipes his face on his jumpsuit sleeve.
+
+nik: I thought I was losing it. It was him. It was him, wasn\'t it.
+
+sam: Yeah. It was him.`,
+    next: 'tag_bells'
+  },
+  a4_rage: {
+    night: true,
+    text: g => `You stand up.
+
+sam: Room 714. The Navy Yard. I\'m going. Tonight.
+
+Nik is up before you finish the sentence, standing in front of the door in his Ghostbusters jumpsuit.
+
+nik: No.
+
+sam: Move, Nik.
+
+nik: *No.* Salvatore. Whatever they did to him, they want to do to you. You walk into that building, and you\'re the next one in a laundry cart.
+
+sam: Move.
+
+Simone stands up next to Nik. Then Grace. The three of them, in a jumpsuit and a Van Helsing coat and scrubs, between you and the door.
+
+And Jules doesn\'t stand up. She stays on the floor. She just says, very quietly, to your back:
+
+jules: Not tonight.
+
+You stop.
+
+jules: You said it to me. On the bathroom floor. *Not tonight.* I\'m saying it to you.
+
+You stand there with your fists closed, in front of three people who love you, with the fourth one on the floor behind you, and the whole ninth floor smelling like candy corn and fear.
+
+${g.S.drift >= 7 ? 'The air around your hands has gone cold. Nik sees it. He sees your breath smoke in a warm room.' : ''}
+
+You sit back down.
+
+You don\'t cry. You don\'t say anything. You sit on the floor with your fists closed until the sun comes up, and Jules sits beside you with her shoulder against yours, holding on to your arm with both hands, like she\'s holding a door shut.`,
+    next: 'tag_bells'
+  },
+  a4_numb: {
+    night: true,
+    text: `You go quiet. You go all the way down.
+
+There\'s a place under everything, under the noise and the guilt and the sound Simone keeps making, where it\'s very cold and very still. It\'s like the Slip. It\'s the Slip without the Slip. Nothing moves there. Nothing reaches you.
+
+You sit there. You stay there.
+
+Nik talks to you. You don\'t hear what he says. Grace puts a cup of water in your hand. You hold it. Simone says your full name twice, *Salvatore Kearney*, the way she says it to make you look up, and you don\'t look up.
+
+And Jules doesn\'t say anything. She just sits beside you, with her shoulder against yours, holding your hand, and she doesn\'t let go, and every few minutes she squeezes, once, like she\'s checking that you\'re still in there.
+
+You are. Barely. Somewhere at the bottom of the cold, you can feel her squeeze.
+
+It\'s the only thing you can feel.`,
+    next: 'tag_bells'
+  },
+
+  /* ================= TAG ================= */
+  tag_bells: {
+    card: { kind: 'tag' },
+    loc: 'CARDONE HALL · ROOF',
+    clock: { time: '6:58 AM' },
+    enter: g => { g.sleep(3); g.know('femi_card', ['sam'], 'Femi\'s last message: "M.R. ALIVE. RM 714. THEY CALL YOU 17."'); g.know('sam_es17', ['sam'], 'Halcyon calls you 17.'); },
+    text: g => `You go up to the roof at dawn, because it\'s the only place left.
+
+It\'s cold. November cold, the real thing, not the Slip. The sky over the Delaware is going from gray to pale gold. Somebody\'s left a Solo cup on the parapet from last night, half full, with a skin of frost on it.
+
+${g.f('femi_pocket') || g.f('femi_end') === 'found' ? 'You take the sticky note out of your pocket. You unfold it. You read it again, in the first light, in Femi\'s small, neat, hurried handwriting.' : 'Grace gave it to you at three, in the hallway, while Mikey was with the detectives. She took it out of his hoodie pocket before the ME bagged him and pressed it into your hand without a word. You unfold it on the roof, in the first light.'}
+
+*M.R. ALIVE. RM 714.*
+*THEY CALL YOU 17.*
+
+Marisol is alive. And you have a number.
+
+*17.*
+
+You think about Brannigan\'s tablet, and the way he looked at it instead of at people. You think about Femi\'s wristband. *031.* You think about how many other people in this city have a number they don\'t know about.
+
+You think: *they call you 17*, and you think about the fact that Femi knew that, that he *saw* it, on a screen or a file or a door, and he walked six miles in the dark to tell you, and you ${g.f('femi_end') === 'found' ? 'were on the roof' : 'were too late anyway'}.
+
+At seven o\'clock, the bells at St. Malachy\'s, on 11th Street, start ringing for All Saints' Day. You\'ve never heard them from the roof before. You didn\'t know you could.
+
+You stand there and you count them.
+
+
+
+${g.f('grief') === 'numb' ? 'You count to twenty-one. You don\'t feel anything. You keep counting.' : g.f('grief') === 'rage' ? 'You count to twenty-one. Your hands are cold. You keep counting.' : 'You count to twenty-one. You\'re crying again. You keep counting.'}
+
+Behind you, the roof door opens. You don\'t turn around. You know the footsteps. They stop beside you, and a cold hand finds yours on the parapet, and holds on, and the bells keep ringing.`,
+    end: true
+  }
+});
+
+Object.assign(EH.episodes.s01e08, {
+  polls: [
+    { q: 'On the roof, 11:47 p.m.', opts: [
+      { label: 'Looked at the phone', pct: 38, if: g => g.f('roof8') === 'phone' },
+      { label: 'Kissed her', pct: 62, if: g => g.f('roof8') === 'kiss' }
+    ] },
+    { q: 'Brannigan, in the lounge', opts: [
+      { label: 'Went for him', pct: 29, if: g => g.f('brannigan8') === 'lunge' },
+      { label: '"I know what you did."', pct: 44, if: g => g.f('brannigan8') === 'know' },
+      { label: 'Memorized his face', pct: 27, if: g => g.f('brannigan8') === 'memorize' }
+    ] },
+    { q: 'At 4 a.m.', opts: [
+      { label: 'Broke', pct: 46, if: g => g.f('grief') === 'break' },
+      { label: 'Raged', pct: 31, if: g => g.f('grief') === 'rage' },
+      { label: 'Went numb', pct: 23, if: g => g.f('grief') === 'numb' }
+    ] }
+  ],
+  onEnd: g => {
+    g.recap('On Halloween, Halcyon\'s cleaners killed Femi Ojo.');
+    g.recap(g.f('femi_end') === 'arms' ? 'He died in your arms in Stairwell B. When he died, everyone could finally see him.' : 'He died alone outside your door while the party went on around him. You were on the roof.');
+    if (g.f('kissed')) g.recap('You kissed Jules on the roof at 11:47. You didn\'t look at your phone.');
+    g.recap('Brannigan knows your name.');
+    g.recap('Femi\'s last message: "M.R. ALIVE. RM 714. THEY CALL YOU 17."');
+  }
+});
+
 </script>
 <script>
 /* THE EVENT HORIZON: browser engine (UI, sound, saves). Depends on core.js and the episode files. */
