@@ -43,7 +43,6 @@ The light moves a little further up the bricks. Down the block, a little kid is 
 jules: Your brother is looking for the Blur.
 
 She says it to the street, not to you.`,
-    enter: g => { if (g.h('jules') >= 10) g.flag('jules_suspects'); },
     next: 'a4_jules'
   },
 
@@ -62,12 +61,12 @@ sam: You're not?
 
 jules: No. I'm telling you what I see. You can do what you want with it. I've noticed you always do.
 
-${g.f('jules_suspects') ? 'She\'s not guessing. You can hear it. She *knows*. She\'s just waiting to see what you do with her knowing.' : 'She\'s close. You can see her standing at the edge of it, deciding whether to step off.'}`,
+${g.h('jules') >= 9 ? 'She\'s not guessing. You can hear it. She *knows*. She\'s just waiting to see what you do with her knowing.' : 'She\'s close. You can see her standing at the edge of it, deciding whether to step off.'}`,
     choices: [
       { text: '"It\'s not me, Pemberton." Look her in the eye when you say it.', tag: 'Deny',
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['jules'], near: ['jules'], label: 'Lie to Jules', on: { strong: 'a4_deny_ok', weak: 'a4_deny_seen', miss: 'a4_deny_seen' } } },
       { text: '"What if it was?" Say it. Just that much.', tag: 'What if',
-        fx: g => { g.flag('stoop', 'whatif'); g.heat('jules', 2); g.bond('jules', { trust: 2, affection: 1 }); g.know('whatif', ['sam', 'jules'], 'On the stoop on Mifflin Street, Jules said your brother was looking for the Blur. You said, "What if it was?"'); }, go: 'a4_whatif' },
+        fx: g => { g.flag('stoop', 'whatif'); g.heat('jules', 1); g.bond('jules', { trust: 2, affection: 1 }); g.know('whatif', ['sam', 'jules'], 'On the stoop on Mifflin Street, Jules said your brother was looking for the Blur. You said, "What if it was?"'); }, go: 'a4_whatif' },
       { text: 'Don\'t say anything. Reach over and take her hand. The one with the bracelet.', tag: 'Her hand',
         fx: g => { g.flag('stoop', 'hand'); g.bond('jules', { affection: 2 }); }, go: 'a4_hand' }
     ]
@@ -173,6 +172,7 @@ At thirty-one, the Range Rover turns onto Mifflin Street, and she takes her hand
 
   a4_goodbye: {
     clock: { time: '7:00 PM' },
+    enter: g => { if (g.h('jules') >= 10) g.flag('jules_suspects'); },
     text: g => `Mr. Abernathy gets out and opens the back door at seven exactly.
 
 The whole family comes out to say goodbye. That's the only way it happens on Mifflin Street. Ma hugs Jules and tells her to come back, and means it, and Jules says *I will*, and you can see she means it too, and it scares you how much. Pop shakes her hand. Mikey says *nice to meet you, Jules* and looks at you with an expression that says *we will be discussing this* for the rest of your natural life. Gigi hugs her around the middle and won't let go until Ma peels her off.
@@ -219,7 +219,7 @@ You go sit on Nonna's step, because it's the only place on the block nobody will
     night: true,
     loc: 'MIFFLIN STREET',
     clock: { time: '7:24 PM' },
-    enter: g => { g.know('revenant2', ['sam', 'nonna'], 'At dusk on Mifflin Street, the man who stands the way you stand waited under the streetlight at the end of the block. Nonna saw him too. She crossed herself.'); g.hidden('revenant_drift', 0.5); },
+    enter: g => { g.know('revenant2', ['sam', 'nonna'], 'At dusk on Mifflin Street, the man who stands the way you stand waited under the streetlight at the end of the block. Nonna saw him too. She crossed herself.'); },
     text: g => `Nonna comes out with her rosary and sits down next to you on her top step, slowly, one hand on the rail and one on your shoulder, the way she's sat down next to you on this step ten thousand times.
 
 She doesn't say anything for a while. She just runs the beads through her fingers. The streetlights come on one by one down Mifflin Street, *tink, tink, tink*, orange.

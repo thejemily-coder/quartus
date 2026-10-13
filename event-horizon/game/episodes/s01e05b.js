@@ -47,7 +47,7 @@ Then Mikey taps his glass with a fork.`,
   },
 
   a2_mikey: {
-    enter: g => { g.know('mikey_task', ['sam', 'jules', 'rosa', 'frank', 'gigi', 'nonna', 'mikey'], 'Mikey has been assigned full-time to the PPD task group hunting the Broad Street Blur. A Halcyon consultant named Brannigan asked for him by name.'); g.heat('jules', 1); },
+    enter: g => { g.know('mikey_task', ['sam', 'jules', 'rosa', 'frank', 'gigi', 'nonna', 'mikey'], 'Mikey has been assigned full-time to the PPD task group hunting the Broad Street Blur. A Halcyon consultant named Brannigan asked for him by name.'); },
     text: g => `mikey: So. Okay. I wasn't gonna say anything till it was official. It's official.
 
 He stands up. He's grinning, trying not to, failing.
@@ -411,11 +411,11 @@ You've rolled your sleeves up in the alley, because it's warm, because you forgo
 vinnie: What the hell is that?`,
     choices: [
       { text: '"Ciro\'s oven." You\'ve told it once today already.', tag: 'Lie',
-        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['vinnie'], label: 'Lie to Vinnie', on: { strong: 'a3_v_lie_ok', weak: 'a3_v_called', miss: 'a3_v_called' } } },
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['vinnie'], label: 'Lie to Vinnie', on: { strong: 'a3_v_lie_ok', weak: 'a3_v_lie_ok', miss: 'a3_v_called' } } },
       { text: '"You first. Who is Dante, Vin? And what does he want with my father?"', tag: 'Turn it around',
         fx: g => { g.flag('vinnie5', 'pushed'); g.bond('vinnie', { tension: 2 }); }, go: 'a3_v_push' },
-      { text: 'Tell him. All of it. He\'s Vinnie. He\'s been Vinnie since you were five.', tag: 'Tell him',
-        fx: g => { g.flag('vinnie5', 'told'); g.know('sam_slip', ['vinnie']); g.know('sam_at_girard', ['vinnie']); g.bond('vinnie', { trust: 3 }); g.hidden('revenant_drift', -0.3); }, go: 'a3_v_told' }
+      { text: 'Tell him. All of it. He\'s Vinnie. He\'s been Vinnie since you were five.', tag: 'Tell him', slip: true,
+        fx: g => { g.flag('vinnie5', 'told'); if (g.S.drift >= 10) g.flag('unstick_risk'); g.know('sam_slip', ['vinnie']); g.know('sam_at_girard', ['vinnie']); g.bond('vinnie', { trust: 3 }); g.hidden('revenant_drift', -0.3); }, go: 'a3_v_told' }
     ]
   },
 
@@ -476,7 +476,7 @@ He shoves you. Two hands, flat on your chest, right on the handprint.`,
     next: 'a3_fight'
   },
   a3_v_told: {
-    enter: g => { g.pool('focus', -2); g.drift(1); if (g.f('nik_rule')) g.flag('broke_nik_rule'); g.know('vinnie_dante', ['sam', 'vinnie'], 'Vinnie drives for "Dante from Passyunk." Twelve hundred a week, cash. Dante is the jacket from the Melrose.'); },
+    enter: g => { if (g.f('nik_rule')) g.flag('broke_nik_rule'); g.know('vinnie_dante', ['sam', 'vinnie'], 'Vinnie drives for "Dante from Passyunk." Twelve hundred a week, cash. Dante is the jacket from the Melrose.'); },
     text: `You tell him.
 
 Not all of it. Some of it you don't have words for yet. But you tell him about the cold at 11:51, and the bus, and the world stopping, and you not stopping with it. You tell him about the Wawa. The truck on Girard. The fire. Kensington. You roll your sleeves all the way up and show him.
@@ -537,11 +537,11 @@ It's not a real swing. It's a Vinnie swing, wide and slow and telegraphed from t
 Or you could let it land.`,
     choices: [
       { text: 'Let it land. He needs to hit somebody, and you\'re the one who owes him.', tag: 'Take it',
-        fx: g => { g.flag('vinnie5', 'took'); g.bond('vinnie', { trust: 2, affection: 2, tension: -2 }); g.injure({ id: 'black_eye5', name: 'Black eye (Vinnie)', pen: 0, heal: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_took' },
+        fx: g => { g.flag('vinnie5', 'took'); g.bond('vinnie', { trust: 2, affection: 2, tension: -2 }); g.injure({ id: 'black_eye5', name: 'Black eye (Vinnie)', pen: 0, heal: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_took' },
       { text: 'Block it and put him on the ground, the way you did in sixth grade. Show him you\'re still you.', tag: 'Fight back',
         check: { kind: 'pool', attr: 'body', skill: 'brawl', diff: 2, label: 'Put Vinnie down', physical: true, on: { crit: 'a3_fought', success: 'a3_fought', partial: 'a3_fought_ugly', fail: 'a3_fought_ugly', botch: 'a3_fought_ugly' } } },
       { text: 'Slip. Just be somewhere else when it gets there. Let him see it.', slip: true, tag: 'Slip it',
-        fx: g => { g.flag('vinnie5', 'slipped'); g.know('sam_slip', ['vinnie']); g.bond('vinnie', { tension: 2 }); if (g.f('nik_rule')) g.flag('broke_nik_rule'); }, go: 'a3_slipped' }
+        fx: g => { g.flag('vinnie5', 'slipped'); if (g.S.drift >= 10) g.flag('unstick_risk'); g.know('sam_slip', ['vinnie']); g.bond('vinnie', { tension: 2 }); if (g.f('nik_rule')) g.flag('broke_nik_rule'); }, go: 'a3_slipped' }
     ]
   },
   a3_took: {
@@ -596,7 +596,7 @@ He doesn't wait for an answer. He goes back inside. You hear him in the kitchen,
     next: 'a4_stoop'
   },
   a3_fought_ugly: {
-    enter: g => { g.flag('vinnie5', 'fought'); g.bond('vinnie', { tension: 2, trust: -1 }); g.injure({ id: 'black_eye5', name: 'Black eye (Vinnie)', pen: 0, heal: 1 }); },
+    enter: g => { g.flag('vinnie5', 'fought'); g.bond('vinnie', { tension: 2, trust: -1 }); g.injure({ id: 'black_eye5', name: 'Black eye (Vinnie)', pen: 0, heal: 2 }); },
     text: `You block it, but your burned arm screams when it takes the hit, and you hesitate, and Vinnie doesn't. His left catches you under the eye. You catch his jacket. You both go down into the trash cans, and it's not a fight anymore, it's two eighteen-year-olds rolling in the garbage behind their mothers' houses, the way it was when you were eleven.
 
 Mrs. Gallo's window goes up.

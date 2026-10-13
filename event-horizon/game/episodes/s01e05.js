@@ -173,7 +173,7 @@ You don't remember falling asleep.`,
       card: { kind: 'act', label: 'Act One', title: 'Mifflin Street' },
       loc: 'CARDONE HALL · ROOF',
       clock: { day: 'Sun', date: 'Sep 20', time: '6:14 AM' },
-      enter: g => { g.know('lost_minutes2', ['sam'], 'You woke up on the Cardone roof at dawn with frost on your sneakers and no memory of going up there. Twenty-six minutes, gone.'); g.pool('focus', -1); },
+      enter: g => { g.know('lost_minutes2', ['sam'], 'You woke up on the Cardone roof at dawn with frost on your sneakers and no memory of going up there. Twenty-six minutes, gone.'); g.sleep(6); g.pool('focus', -1); },
       text: g => `You wake up cold.
 
 Not dorm cold. *Slip* cold. January cold, the bottom-of-the-pool cold, and your cheek is pressed against something rough and gritty, and the sky is the color of dishwater, and there's a seagull standing about four feet from your face, looking at you with professional interest.
@@ -248,7 +248,7 @@ He writes **RULE 1: SEVEN DAYS** and underlines it so hard the pen goes through 
     },
 
     a1_grace: {
-      enter: g => { g.heal('burned_arms'); g.bond('grace', { trust: 1, affection: 1 }); g.know('grace_stitches', ['sam', 'grace'], 'Grace took your stitches out eight days after Kensington. She said the cut had healed like it was a month old.'); },
+      enter: g => { g.heal('burned_arms'); g.heal('laceration'); g.bond('grace', { trust: 1, affection: 1 }); g.know('grace_stitches', ['sam', 'grace'], 'Grace took your stitches out eight days after Kensington. She said the cut had healed like it was a month old.'); },
       text: `Grace opens her door in a Temple Med sweatshirt with an MCAT flashcard stuck to her cheek. She peels it off. It says **GLYCOLYSIS**.
 
 grace: It's seven-thirty on a Sunday.
@@ -287,7 +287,7 @@ grace: You can't hide those from your mother forever. Long sleeves. And don't le
 You stare at the screen for six minutes before the dots appear.
 
 TXT femi: thinking about it
-TXT femi: ${g.f('femi4') === 'warned' ? 'i know what i said. i said i wouldnt' : 'i know what you said about marisol'}
+TXT femi: ${g.f('femi4') === 'warned' ? 'i know what i said. i said i wouldnt' : g.knows('marisol') && g.f('femi4') !== 'seen' ? 'i know what you said about marisol' : 'i know what you think about them'}
 TXT femi: i want to go and tell them no. in person. to a face. i want somebody to look at me while i say no to them
 TXT femi: also its another 500. ngl
 TXT femi: is that stupid
@@ -401,7 +401,7 @@ teddy: Yeah. That's what I thought.`,
     },
 
     a1_sleep: {
-      enter: g => { g.nap(3); g.drift(-1); },
+      enter: g => { g.nap(3); },
       text: `You go back to bed. You lock the door. You put your desk chair under the knob like a person in a movie about a haunted house, which you may now be.
 
 Nik, headphones on, doesn't wake up.
@@ -526,7 +526,7 @@ Jules holds out the white box.`,
       text: g => `${{
         ma: 'jules: Mrs. Kearney. These are for you. Thank you for having me.\n\nYour mother takes the box and reads the string, red and white, and the stamp on top, **TERMINI BROS. BAKERY**, and looks at Jules like she\'s just been handed a newborn.\n\nrosa: *Termini.* Oh, you didn\'t have to. Oh, *Frank*. Look. She went to *Termini\'s*.\n\nShe holds the box up over her head so Nonna can see it from three doors down. Nonna, on her step, looks at the box. Then at Jules. Then at you.\n\nnonna: Hm.\n\nBut it\'s a *good* hm. It\'s the hm of an ambassador accepting credentials. You breathe out for the first time since Gladwyne came up.',
         lie: 'jules: These are for your grandmother. Sam said she\'d love them.\n\nThe street goes quiet. On the next stoop down, Mrs. Gallo stops sweeping.\n\nYour mother takes the box very carefully, the way you\'d take something that might go off. She looks at you over Jules\'s shoulder with an expression that says *I am going to kill you in front of God later*.\n\nNonna, on her top step, looks at the box. Looks at Jules. Looks at you.\n\nnonna: Store cannoli.\n\njules: …Yes. I\'m sorry. Sam said—\n\nnonna: Sam said.\n\nNonna comes down her steps, one at a time, holding the rail. She walks across to Jules. She takes the box out of your mother\'s hands. She opens the lid and looks inside, and the whole street holds its breath.\n\nnonna: Termini. Hm.\n\nShe closes the box.\n\nnonna: Good. Not mine. But good. *You*, I like.\n\nShe points at you without looking.\n\nnonna: Him, I\'m going to talk to. *Madonna mia.*',
-        truth: 'jules: These are for the family. From Termini Brothers. I know they won\'t be as good as yours, Mrs. DiNardo.\n\nShe says it straight to Nonna, across three stoops' worth of sidewalk, without being told which one is Nonna. She just knew. Of course she knew.\n\nNonna looks at the box. At Jules. Her face doesn\'t move at all.\n\nnonna: Good. Not mine.\n\nThen, after a long pause, the eyebrows go up, half an inch, which on Nonna is a standing ovation.\n\nnonna: But good.\n\nJules turns her head just enough that only you can see her face, and she gives you a look of triumph about the width of a dime.'
+        truth: 'jules: These are for the family. From Termini Brothers. I know they won\'t be as good as yours, Mrs. DiNardo.\n\nShe says it straight to Nonna, across three stoops\' worth of sidewalk, without being told which one is Nonna. She just knew. Of course she knew.\n\nNonna looks at the box. At Jules. Her face doesn\'t move at all.\n\nnonna: Good. Not mine.\n\nThen, after a long pause, the eyebrows go up, half an inch, which on Nonna is a standing ovation.\n\nnonna: But good.\n\nJules turns her head just enough that only you can see her face, and she gives you a look of triumph about the width of a dime.'
       }[g.f('cannoli')]}`,
       next: 'a1_kitchen'
     },
