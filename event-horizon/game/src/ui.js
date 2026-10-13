@@ -275,6 +275,7 @@
 
   function renderScene(id, resumed) {
     const ep = episode(); const sc = ep.scenes[id];
+    document.body.dataset.look = ep.look || 's1';
     const log = $('#log');
     log.querySelectorAll('.scene.cur').forEach(n => n.classList.replace('cur', 'past'));
     const notes = [];

@@ -335,3 +335,10 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important}
 }
+
+/* ---------- Season looks ---------- */
+/* Season 2: same Silver Age palette, inks heavier. Denser halftone, deeper shadows, thicker key lines. */
+body[data-look="s2"]{--dot:rgba(21,22,27,.15);--shadow:6px 6px 0 var(--key);background-size:6px 6px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) body[data-look="s2"]{--dot:rgba(236,233,225,.09)}}
+:root[data-theme="dark"] body[data-look="s2"]{--dot:rgba(236,233,225,.09)}
+body[data-look="s2"] .mast{border-bottom-width:5px}
