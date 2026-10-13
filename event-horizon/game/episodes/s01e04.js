@@ -1,7 +1,7 @@
 /* S1 · E4 · SUTURES, part 1 of 3: meta, cold open, Act One ("Normal"). */
 EH.episode({
   id: 's01e04', season: 1, number: 4, title: 'Sutures', look: 's1',
-  cast: ['sam', 'jules', 'nik', 'simone', 'grace', 'femi', 'teddy', 'bree', 'heck', 'mikey'],
+  cast: ['sam', 'jules', 'nik', 'simone', 'grace', 'femi', 'teddy', 'bree', 'heck', 'mikey', 'ciro'],
   start: 'cold_open',
   xp: 5,
   scenes: {
@@ -141,7 +141,7 @@ simone: But I keep a list.`,
       enter: g => { g.flag('simone_roof', 'lied'); g.bond('simone', { tension: 1 }); },
       text: `sam: We talked. All night. That's it.
 
-simone: Mm-hm. And did you touch your ear, just now? Because you did. Jules told me about the ear. Jules tells me *nothing*, and she told me about the ear.
+simone: Mm-hm. And did you touch your ear, just now? Because you did. Juliet told the whole floor about that ear the first week. Juliet tells nobody *anything*, and she made an announcement about your ear.
 
 You put your hand down.
 
@@ -244,7 +244,7 @@ Halfway through, she writes something in the margin of her notes and tilts the p
 
 You look at it. You look at her. She's looking very hard at the squeeze theorem.
 
-${g.f('roof_end') === 'lean' ? 'You know what she means. *Not like this.* Not while she\'s someone else\'s. Normal is the shape of the waiting.' : 'You know what she means. You just don\'t know if she\'s right.'}`,
+${g.f('roof_end') === 'lean' ? 'You know what she means. *Not like this.* Not while she\'s someone else\'s.' : 'You know what she means. You just don\'t know if she\'s right.'}`,
       choices: [
         { text: 'Write back: *Okay.* Mean it. Give her the room.', tag: 'Okay',
           fx: g => { g.flag('normal', 'okay'); g.bond('jules', { respect: 2, trust: 1 }); }, go: 'a1_calc_okay' },
@@ -326,7 +326,7 @@ femi: You look like you got hit by a SEPTA bus.
 
 sam: You should see the bus.
 
-femi: I *did* see the bus. That's sort of my whole thing now. I see everything, and nobody sees me.
+femi: I *did* see the bus. That's sort of my whole thing now.
 
 He's thinner than he was two weeks ago. His Temple Econ hoodie hangs off him. There's a white plastic hospital band on his left wrist, the kind they give you at the ER, and he catches you looking and pulls his sleeve down over it.
 
@@ -340,7 +340,7 @@ He laughs. It's a thin sound.
 
 femi: She looked at me. For eleven seconds, somebody actually looked at me like I was interesting. Do you know how long it's been?
 
-He holds up his wrist and pulls the sleeve back. The band reads **HCW-COHORT 2 · ES-31 · F/U 09/22**.
+He holds up his wrist and pulls the sleeve back. The band reads **HCW-COHORT 2 · 031 · F/U 09/22**.
 
 femi: Follow-up's the twenty-second. They said they can help. They said there's a *name* for what I have.`,
       choices: [
@@ -445,7 +445,7 @@ nik: Okay. So. Trial forty-four. You were on this roof, facing this way, and you
 
 He draws a red line from Cardone Hall out across the map, northeast.
 
-nik: Then${g.knows('bree_scream') ? ' your Bree' : ''}. She said she was on the El platform at Girard, and the sound came from *up*, *over Kensington*. So I took Girard station, and I drew every line that's *up and over Kensington* from there…
+nik: Then Bree. She said she was on the El platform at Girard, and the sound came from *up*, *over Kensington*. So I took Girard station, and I drew every line that's *up and over Kensington* from there…
 
 He draws a second red line. It crosses the first.
 
@@ -489,7 +489,7 @@ TXT sam: what do you need
 
 The dots again. Then a longer message, the longest he's ever sent you.
 
-TXT teddy: listen. i dont need anything. i have a mother who needs a kidney, a cousin who hears god laughing, and a best friend who's slowly turning into a stove. i didnt rob a truck because i'm a bad guy. i robbed a truck because jefferson wants 40k before they put my mom on the list. i'm telling you this so you understand. if i call you, its because i dont have anybody else to call
+TXT teddy: listen. jefferson wants 40k before they put my mom on the list. thats what the truck was. bree cant sleep. heck is turning into a stove. if i call you its because i dont have anybody else to call
 
 TXT teddy: thats all
 
@@ -632,7 +632,7 @@ She doesn't look away.
 At 10:52, your phone buzzes against your leg.
 
 TXT teddy: hes going to them
-TXT teddy: they texted him from marisols phone. "its marisol. they helped me. they can help u. mcpherson sq. 11 tonite. come alone"
+TXT teddy: they texted his tia from marisols phone. "its marisol. they helped me. they can help u. mcpherson sq. 11 tonite. come alone"
 TXT teddy: its not her. he knows its not her. he went anyway
 TXT teddy: im at kensington and somerset. i cant get close. he put bree on the ground for trying
 TXT teddy: please

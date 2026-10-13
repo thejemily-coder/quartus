@@ -90,7 +90,7 @@ grace: Okay.
 
 It's not *okay* like everything's okay. It's *okay* like a door closing.
 
-grace: I'm going to ask you once. I'm pre-med. I've been your RA for three weeks. You came back from the blackout zone bleeding out of your face, and a man in a polo shirt asked me about your *floor*, and you just walked in at three in the morning with burns in the shape of a human hand.
+grace: I'm going to ask you once. I'm pre-med. I've been your RA for three weeks. You came back from the blackout zone bleeding out of your face, and a man in a polo shirt asked me about your *floor*, and you just walked in at three in the morning ${g.hurt('handprint') ? 'with burns in the shape of a human hand' : 'looking like you lost a fight with a building'}.
 
 She holds up the needle, threaded, for the next stitch.
 
@@ -116,7 +116,7 @@ grace: Okay.
 
 sam: That's it? *Okay?*
 
-grace: I've been waiting three weeks for something to happen to me, Sam. I thought it would be a car accident. Or I'd meet somebody. I thought it would be *normal*.
+grace: This was supposed to be my MCAT year. That was the whole plan.
 
 She snaps off her gloves.
 
@@ -131,7 +131,7 @@ Grace looks at you.
 
 sam: I'm not joking.
 
-grace: I know you're not joking. I can see the *handprint*.
+grace: I know you're not joking. I'm the one sewing you shut.
 
 She bends back over your arm and puts the needle in, and pulls it through, and ties it off.
 
@@ -163,7 +163,7 @@ grace: You're going to the ER tomorrow. I'm driving. That part's not a question.
     enter: g => { g.know('jules_saw_hurt', ['sam', 'jules'], 'Jules saw you bleeding on the bathroom floor at 3 a.m. after Kensington. She saw the injuries.'); g.heat('jules', 1); },
     text: g => `Out in the hallway, Nik says *hey—no—Jules, wait—* and then the bathroom door opens.
 
-It's Jules. In plaid pajama pants and a gray cardigan, barefoot, her hair down, her face scrubbed and bare and very young. Behind her, all the way down the hall, her door is open, and her lamp is on, a long yellow rectangle of light across the hallway carpet.
+It's Jules. In plaid pajama pants and a gray cardigan and slippers, her hair down, her face scrubbed and bare and very young. Behind her, all the way down the hall, her door is open, and her lamp is on, a long yellow rectangle of light across the hallway carpet.
 
 She sees you. You watch her see all of it, one thing after another: the blood on the tile, ${g.hurt('cheekbone') ? 'your face, ' : ''}the arm, ${g.hurt('broken_hand') ? 'the hand, ' : ''}${g.hurt('handprint') ? 'the handprint, ' : ''}${g.hurt('burned_arms') || g.hurt('burned_arm') ? 'the burns, ' : ''}Grace's bloody gloves, the needle.
 
@@ -185,7 +185,7 @@ jules: Give it to me.
 
 grace: Do *you* know how?
 
-jules: My mother let me practice on oranges at the kitchen table when I was six. It was the only game she ever played with me.
+jules: My mother let me practice on oranges at the kitchen table. I was six.
 
 Grace looks at her for a long second. Then she hands over the needle.
 
@@ -311,7 +311,7 @@ jules: Keep it dry for forty-eight hours. And Sam—
 
 She stops in the doorway, her back to you.
 
-jules: Whoever they are. They're lucky.`,
+jules: I was awake when you came in. I'd like it on the record that I hate that.`,
     next: 'a4_after'
   },
   a4_jules_cant: {
@@ -364,7 +364,7 @@ You think about the truck. The steel bed. ${g.f('heck_fate') === 'saved' ? 'The 
 
 ${g.f('heck_fate') === 'saved' ? 'sam: Yeah. This time.' : 'sam: No.'}
 
-You sleep four hours. When you close your eyes, you hear it again, the crowd breathing and the clock going the wrong way. Tonight, the laughing is closer.`,
+You sleep four hours, like a stone. Your body is busy with something.`,
     next: 'tag_xray'
   },
 
@@ -390,7 +390,7 @@ DR. FERRANTE: Huh.
 
 He taps the film with his pen, at the ${g.hurt('broken_hand') ? 'bone under your pinky knuckle' : g.hurt('cheekbone') ? 'curve under your eye' : 'sixth rib, on the right side'}. There's a line across it, faint. And around the line, a soft gray cloud, like smoke frozen around the break.
 
-DR. FERRANTE: So, that's a fracture. That's a boxer's fracture, actually, classic, you see a lot of guys who punched a wall. But see this? The fuzzy stuff? That's callus. That's new bone. That's your body *patching* it.
+DR. FERRANTE: So, that's a fracture. ${g.hurt('broken_hand') ? 'Boxer\'s fracture, classic, you see a lot of guys who punched a wall. ' : ''}But see this? The fuzzy stuff? That's callus. That's new bone. That's your body *patching* it.
 
 sam: Okay.
 
@@ -406,7 +406,7 @@ sam: Last night. Like, eleven-thirty.
 
 He stops laughing. He looks at the film. He looks at you, at your stitched arm, at the date on your intake form.
 
-DR. FERRANTE: Callus like this takes ten days. Two weeks, honestly. This is a fracture that's two weeks into healing. Did you have a fall a couple weeks ago? Maybe you didn't notice?
+DR. FERRANTE: Callus like this takes ten days, minimum. This is a fracture that's ten days into healing. Did you have a fall a couple weeks ago? Maybe you didn't notice?
 
 You look at the ghost of your own bones on the light box, glowing. Broken, and already halfway mended. Healed in a time you didn't live.
 
@@ -424,11 +424,7 @@ She says it quietly.
 
 grace: Sam. That's not *okay*. A callus takes ten days. You didn't *have* ten days.
 
-You look at the light box. You think about a minute that's four seconds. You think about how many minutes you've spent in there, in the cold, since the Hitch: on the roof every night with Nik's stopwatch, on Girard, on 15th Street, last night, carrying Heck. All those minutes nobody else lived.
-
-You think about the man across Broad Street, with your face and a missing finger, who looked so *old*.
-
-You don't know how long you've been alive anymore.
+You look at the light box. You think about the cold in there, and how long a minute always feels.
 
 grace: Sam?
 
@@ -459,6 +455,6 @@ Object.assign(EH.episodes.s01e04, {
     g.recap('For the first time, you rewound time on purpose.');
     g.recap('Brannigan knows about the minute.');
     g.recap('Jules stitched you up on the bathroom floor at 3 a.m.');
-    g.recap('Your x-ray showed two weeks of healing. You broke it the night before.');
+    g.recap('Your x-ray showed ten days of healing. You broke it the night before.');
   }
 });

@@ -88,7 +88,7 @@ Heck is forty yards from the tent.`,
       { text: 'Plant yourself in his path. Make him go through you to get to them.', tag: 'Block',
         check: { kind: 'pool', attr: 'nerve', skill: 'brawl', diff: 2, label: 'Stand your ground', physical: true, on: { crit: 'a2_block_good', success: 'a2_block_good', partial: 'a2_block_shove', fail: 'a2_block_shove', botch: 'a2_block_shove' } } },
       { text: 'Slip. Get eyes inside that tent and that truck before anybody moves.', slip: true, tag: 'Look',
-        fx: g => { g.flag('tent_seen'); g.know('halcyon_truck', ['sam'], 'Inside the Halcyon truck at McPherson Square: a steel bed with restraints rated to 600 pounds, an ice bath, and an IV bag labeled ES-22. On the tablet, a girl\'s photo marked ES-14 · RECOVERED.'); }, go: 'a2_look' }
+        fx: g => { g.flag('tent_seen'); g.know('halcyon_truck', ['sam'], 'Inside the Halcyon truck at McPherson Square: a steel bed with restraints rated to 600 pounds, an ice bath, and an IV bag labeled with Heck\'s name and weight. On the tablet, Marisol\'s photo marked RECOVERED.'); }, go: 'a2_look' }
     ]
   },
 
@@ -106,11 +106,11 @@ You go out the back to the truck. The rear doors are open, and the refrigeration
 
 Inside, it's not a clinic.
 
-It's a steel bed bolted to the floor with restraints on it: wrists, ankles, chest, thick as seatbelts, with a stamped tag on the buckle reading **RATED 600 LB**. A long tub of water with ice floating in it, frozen mid-bob. An IV pole. The bag on the pole is labeled in neat printer type: **ES-22 · RAMOS, H. · PROTOCOL C**.
+It's a steel bed bolted to the floor with restraints on it: wrists, ankles, chest, thick as seatbelts, with a stamped tag on the buckle reading **RATED 600 LB**. A long tub of water with ice floating in it, frozen mid-bob. An IV pole. The bag on the pole is labeled in neat printer type: **RAMOS, H. · 260 LB · PROTOCOL C**.
 
 Somebody made a bed for Heck. Somebody *measured* him.
 
-You go back out. On the library steps, Brannigan's tablet glows in his stopped hands. On the screen, there's a list. Most of it's codes. At the top, a photo of a girl with dark curly hair and a gap in her teeth, smiling at somebody off-camera, and beneath it: **ES-14 · REYES, M. · RECOVERED.**
+You go back out. On the library steps, Brannigan's tablet glows in his stopped hands. On the screen, there's a list. Most of it's codes. At the top, a photo of a girl with dark curly hair and a gap in her teeth, smiling at somebody off-camera, and beneath it: **REYES, M. · RECOVERED.**
 
 *Recovered.*
 
@@ -169,7 +169,7 @@ sam: That text wasn't from Marisol.
 
 heck: I know. *I know.* Move.
 
-He's not angry. That's the worst part. He's just *tired*, more tired than you've ever seen anybody, the kind of tired that's already made its decision. He steps around you. When his shoulder passes yours, the heat is like opening an oven, and your gaiter starts to smell like a scorched iron.
+He's not angry. He's just *tired*, more tired than you've ever seen anybody, the kind of tired that's already made its decision. He steps around you. When his shoulder passes yours, the heat is like opening an oven, and your gaiter starts to smell like a scorched iron.
 
 sam: Heck—
 
@@ -242,7 +242,7 @@ Then whatever was in that dart hits him. It was dosed for a man at ninety-eight 
 
 He turns his head, slowly, the way a bull turns its head.
 
-He's looking for whoever did this to him. And between Heck and the tent, ${g.f('costume') === 'none' ? 'with your face bare and your hands up' : 'in a black hood with your face covered, the same as every other man he\'s been afraid of since August'}, there's you.
+He's looking for whoever did this to him. And between Heck and the tent, ${g.f('costume') === 'none' ? 'with your face bare and your hands up' : 'in a black hood with your face covered, right where the men with the darts want him to look'}, there's you.
 
 ${{ strong: 'heck: …Nene? Why, nene? Why\'d you bring them?', weak: 'heck: You. *You* brought them.', miss: 'heck: *You.*' }[g.f('heck_reach') || 'weak']}
 
@@ -290,7 +290,7 @@ He's not done. He's barely started.`,
     night: true,
     text: `You step through.
 
-The world stops. Heck's fist hangs a foot from your ribs, glowing orange, and around it the air is *bent*, shimmering, rippling, still moving the way nothing in the Slip moves. The heat coming off him is the only warm thing in the universe. Even stopped, he's burning.
+The world stops. Heck's fist hangs a foot from your ribs, glowing orange, and around it the air is *bent*, shimmering, rippling, still moving the way nothing in the Slip moves. Even stopped, he's burning.
 
 You walk around his fist like it's a parked car. You walk around *him*. You stand behind him, at his left shoulder, and look at the back of his neck, where the dart went in, where the skin is already blistering around the hole.
 
@@ -464,9 +464,9 @@ Everything he's done so far, the jab, the lazy step, the slow reset, every singl
 
 It lands.
 
-You hear it before you feel it, and you don't feel it, really, because it's too big to feel. Your cheekbone. The El. The ground, coming up. Your teeth, and the copper taste, and the lights going long and smeared.
+You don't feel it, really. It's too big to feel. Your cheekbone. The El. The ground, coming up. Your teeth, and the copper taste, and the lights going long and smeared.
 
-And then something happens that has only ever happened to you once before, on Broad Street, the night of the Hitch, with a bus.
+And then something happens that has only ever happened to you on one night before, on Broad Street, the night of the Hitch, with a bus.
 
 The difference is, this time *you do it*.
 
@@ -500,7 +500,7 @@ ${g.f('f2') === 'hit' ? 'And you come up inside his reach with your good hand an
 
 Heck goes down on one knee on the sidewalk, in the glass, steaming, gasping.
 
-You stand over him, bleeding from your arm in long dark ropes onto the concrete. You can hear your own heartbeat. You can hear the El. You can hear, very faintly, under all of it, like a radio in another room, something laughing.`,
+You stand over him, bleeding from your arm in long dark ropes onto the concrete. You can hear your own heartbeat. You can hear the El. You can hear the misting fans, still hissing cold water at nobody.`,
     next: 'a3_f4'
   },
   a3_f3_partial: {
@@ -510,7 +510,7 @@ You stand over him, bleeding from your arm in long dark ropes onto the concrete.
 
 The hook catches your shoulder instead of your face, and spins you, and drives you back into the glass wall of the SEPTA bus shelter, and the glass doesn't break so much as *give up*. It comes down on you in a glittering sheet, and a long blade of it opens your left forearm from wrist to elbow on the way down.
 
-You come off the shelter swinging. You don't decide to. You put everything into his body, the liver shot Vinnie taught you, and your hand breaks on his ribs like it was made of breadsticks, and he folds.
+You come off the shelter swinging. You don't decide to. You put everything into his body, the liver shot Vinnie taught you, and your hand comes apart on his ribs like it was made of breadsticks, and he folds.
 
 Heck goes down on one knee on the sidewalk, in the glass, steaming, gasping. You stay up. Barely. Your blood is running off your fingers in a steady patter onto the concrete, like a faucet somebody didn't turn all the way off.`,
     next: 'a3_f4'
@@ -611,7 +611,7 @@ You get him in. You let go. You look at your arms, and then you don't look at th
   a3_end_ko: {
     night: true,
     enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'ko'); g.bond('teddy', { trust: 1, respect: 2 }); g.bond('heck', { respect: 1 }); },
-    text: g => `${g.hurt('broken_hand') ? 'You throw it with your left, your bad hand, because your right one is broken already.' : 'You throw it.'} Short. Clean. Right on the point of his chin, where every boxing coach on Front Street tells you the off switch is.
+    text: g => `${g.hurt('broken_hand') ? 'You throw it with your left, the cut arm, because your right hand is broken already.' : 'You throw it.'} Short. Clean. Right on the point of his chin, where every boxing coach on Front Street tells you the off switch is.
 
 It works.
 
@@ -635,7 +635,7 @@ teddy: Don't tell him that. Ever. Let him think you're a *monster*.`,
     enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'ko'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('teddy', { trust: 1, respect: 1 }); },
     text: `You hit him. It isn't clean. It takes two, and the second one is mostly elbow and mostly desperation, and he goes down anyway, sideways, toward the glass.
 
-You catch him. You shouldn't. It's like catching a burning car door. Your sleeves smoke and the skin of your forearms goes white and then red and then something worse, and you hold on, because the glass is there, because you're you.
+You catch him. You shouldn't. It's like catching a burning car door. Your sleeves smoke and you hear the skin of your forearms go, a sound like bacon on a flat-top, and you hold on, because the glass is there, because you're you.
 
 Teddy gets under his other side. The two of you get him to the car together. When the door slams, you look at your arms, and then you don't look at them again.`,
     next: 'a3_after'
@@ -649,7 +649,7 @@ The sirens stop mid-wail. The El stops mid-rattle. The cloud of breath coming ou
 
 Except Heck. Heck is still hot.
 
-You get your arms around him. In the Slip it's January, it's the dead middle of winter, your breath is smoking, and he's the only warm thing in the universe, and holding him is like holding the sun. He's two hundred and sixty pounds, and in here he's two hundred and sixty pounds of *stopped*, of dead weight that won't help you, and you lift him anyway, with your broken parts and your good parts and every part, and you *carry* him.
+You get your arms around him. In the Slip it's January, it's the dead middle of winter, your breath is smoking, and holding him is like holding the sun. He's two hundred and sixty pounds, and in here he's two hundred and sixty pounds of *stopped*, of dead weight that won't help you, and you lift him anyway, with your broken parts and your good parts and every part, and you *carry* him.
 
 Ten feet. Your sleeves start to smoke.
 
@@ -698,7 +698,7 @@ You pull their hands off Heck one finger at a time. It takes forever. In here, e
 
 Then you lift him.
 
-He's the only warm thing in the universe. Holding him in here is like holding the sun. Your sleeves smoke, and then they're not smoking anymore, because they're gone, and you carry him across forty yards of frozen grass and glass with your broken parts and your good parts and every part, and you put him in the back of Bree's Corolla, and you step back out.
+Holding him in here is like holding the sun. Your sleeves smoke, and then they're not smoking anymore, because they're gone, and you carry him across forty yards of frozen grass and glass with your broken parts and your good parts and every part, and you put him in the back of Bree's Corolla, and you step back out.
 
 Time comes back like a slammed door.
 
@@ -724,7 +724,7 @@ teddy: You had a step left. I saw it. I saw you think about it.
 
 You don't say anything.
 
-teddy: Go home, Blur.
+teddy: Go home, cold guy.
 
 Bree doesn't look at you at all. She starts the Corolla, and Teddy gets in, and they drive away the same way the truck went, slower, like a funeral. On the library steps, Brannigan watches them go. Then he looks at you.`,
     next: 'a3_after'
@@ -738,13 +738,13 @@ Bree doesn't look at you at all. She starts the Corolla, and Teddy gets in, and 
 
 He doesn't hurry. He doesn't look at the polo men, who've stopped at the edge of the grass like dogs that know the word *stay*. He stops twenty feet from you, with the tablet held loosely at his side, the way another man would hold a newspaper.
 
-His voice is nothing like you expected. It's kind. That's the horrible part. It's a Little League coach's voice, a youth pastor's.
+His voice is nothing like you expected. It's kind. A youth pastor's voice. A pediatrician's.
 
 BRANNIGAN: You're hurt, son.
 
 You don't answer.
 
-BRANNIGAN: That arm needs a surgeon. And the hand. ${g.hurt('cheekbone') ? 'And the face. ' : ''}We've got a doctor in that tent who doesn't ask names. Nobody would ever have to know.
+BRANNIGAN: ${g.hurt('cheekbone') ? 'That face needs a surgeon. ' : 'That arm needs a surgeon. '}${g.hurt('broken_hand') ? 'That hand needs setting. ' : ''}We've got a doctor in that tent who doesn't ask names. Nobody would ever have to know.
 
 He waits. He's very good at waiting.
 
