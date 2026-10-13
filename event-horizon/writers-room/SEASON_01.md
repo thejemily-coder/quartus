@@ -36,3 +36,10 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
   - Nonna's "You moved" moved to the E2 phone call.
   - Carmen's San Judas medal moved to E2.
   - Lost minutes trigger when Sam Slips at Girard while drifted.
+- **E3 "The Blackout Floor"** was written for this playthrough's E2 save. Deviations:
+  - Nonna's 1918 Assunta story can play here (optional `sat_nonna` slot, which also gives the key). If it's skipped, E5 still carries it.
+  - Bree heard the sound from the Girard El platform, "Up. Over Kensington." This ties it to the cold-open shimmer. The laughter is described as "someone very far up, leaning forward"; the Audience stays unnamed.
+  - Jules circles her power ("luck is the wrong word") but doesn't state it. E6 keeps the realization.
+  - Jules first uses "Sam" in the 4:12 Lean beat.
+  - If Sam stayed on the roof, Halcyon takes Bree (`bree_taken`).
+  - Teddy has Sam's number from the Port Richmond stoop. Bree saved it as WAWA.

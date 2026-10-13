@@ -64,7 +64,11 @@ You stare at it until the pull takes you.
 
 !! ~WHUMP
 
-nik: Three point nine on my end. Times fifteen, that's fifty-eight on yours. That's a record. Why are you looking at Kensington like that?
+nik: Four point six on my watch. What'd you count?
+
+sam: Seventy-something.
+
+nik: That's a record. Why are you looking at Kensington like that?
 
 When you look again, in the normal world, there's nothing there. Just the haze, and the El, and a sky the color of a dirty nickel.
 
@@ -161,7 +165,7 @@ sam: It kind of is, though.
 
 jules: It's a ranking. You came in above a string quartet.
 
-${g.f('door') === 'highness' ? 'It\'s the closest she\'s come to a joke with you since you called her *Your Highness*. You decide not to point that out.' : ''}
+${g.f('door') === 'highness' ? 'It\'s the warmest she\'s been to you since you called her *Your Highness* at her own door. You decide not to point that out.' : ''}
 
 Her phone buzzes again. **MOTHER**. She doesn't turn it over this time. She just looks at it, buzzing, until it stops.`,
       next: 'a1_hub'
@@ -181,7 +185,7 @@ You have the day. Not all of it.`,
           { id: 'sat_ciro', text: 'Work the lunch shift at Ciro\'s. Everybody orders in when it\'s this hot.', cost: 1, tag: 'Money', go: 'a1_ciro' },
           { id: 'sat_femi', text: 'Text Femi. He wrote you at 4 a.m.: *are you awake. something is wrong with the cameras.*', cost: 1, tag: 'Femi', go: 'a1_femi' },
           { id: 'sat_pop', text: 'Call Pop. Not Ma: Pop. You haven\'t talked to him since the cab.', cost: 1, tag: 'Pop', go: 'a1_pop' },
-          { id: 'sat_nonna', text: 'Take the train down to Mifflin Street. Nonna said Sunday, but Nonna is never wrong about anything, and you can\'t wait.', cost: 2, tag: 'Nonna', go: 'a1_nonna' },
+          { id: 'sat_nonna', text: 'Take the train down to Mifflin Street. Nonna said "come Sunday" ten days ago, and you never went. You can\'t put it off again.', cost: 2, tag: 'Nonna', go: 'a1_nonna' },
           { id: 'sat_nap', text: 'The fourth floor of Charles Library has air conditioning and a beanbag. Sleep.', cost: 1, tag: 'Rest', go: 'a1_nap' }
         ],
         done: 'a1_order'
@@ -190,7 +194,7 @@ You have the day. Not all of it.`,
 
     a1_ciro: {
       loc: 'CIRO\'S PIZZA · CECIL B. MOORE AVE',
-      enter: g => { g.money(14 * 4); },
+      enter: g => { g.money(14 * 3); },
       text: `The pizza oven is nine hundred degrees, the kitchen is a hundred and twelve, and Ciro is working in a white undershirt with a bag of frozen peas balanced on his head like a hat.
 
 ciro: Don't look at me. You look at me like a dead fish on ice. Deliver.
@@ -241,13 +245,13 @@ femi: And they've got machines, right? Scanners. Real ones. Maybe their machines
         { text: '"Don\'t go, Femi. Swear to me. They\'re not studying people, they\'re making a list."', tag: 'Warn him', if: g => !(g.knows('halcyon_beds') || g.knows('halcyon_outreach')),
           check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', label: 'Keep Femi away from Halcyon', on: { strong: 'a1_femi_warn_strong', weak: 'a1_femi_warn_weak', miss: 'a1_femi_warn_miss' } } },
         { text: 'Tell him. What you are. Why Halcyon wants people like you. Both of you.', tag: 'Tell Femi',
-          fx: g => { g.flag('femi_told'); g.know('sam_slip', ['femi']); g.bond('femi', { trust: 3 }); g.flag('femi_warned', 'strong'); }, go: 'a1_femi_tell' },
+          fx: g => { g.flag('femi_told'); g.know('sam_slip', ['femi']); g.know('sam_at_girard', ['femi']); g.know('wawa_guy', ['femi']); g.bond('femi', { trust: 3 }); g.flag('femi_warned', 'strong'); }, go: 'a1_femi_tell' },
         { text: '"I don\'t know, man. Maybe they can help." It\'s his life. His call.', tag: 'His call',
           fx: g => { g.flag('femi_warned', 'none'); g.hidden('revenant_drift', -0.3); }, go: 'a1_femi_none' }
       ]
     },
     a1_femi_warn_strong: {
-      enter: g => { g.flag('femi_warned', 'strong'); g.bond('femi', { trust: 2 }); },
+      enter: g => { g.flag('femi_warned', 'strong'); g.bond('femi', { trust: 2 }); if (g.knows('halcyon_outreach')) g.know('halcyon_outreach', ['femi']); if (g.knows('halcyon_beds')) g.know('halcyon_beds', ['femi']); },
       text: g => `sam: Don't go. Femi. Swear to me. They're not studying people, they're making a list. ${g.knows('halcyon_outreach') ? 'They\'re paying RAs five hundred bucks to hand over names. My RA told me. A guy in a gray polo shirt asked about my *floor*.' : ''} ${g.knows('halcyon_beds') ? 'My friend works construction at their Navy Yard building. They just moved forty-one hospital beds into the basement.' : ''}
 
 Femi goes very still.
@@ -344,7 +348,8 @@ Then it's quiet.
 ${g.knows('pop_jacket') ? 'You think about the back booth at the Melrose. The jacket. The eggs he didn\'t eat.' : ''} ${g.knows('pop_unknown_calls') ? 'You think about 215-555-4471.' : ''}`,
       choices: [
         { text: '"Pop. Who\'s the guy in the nice jacket? At the Melrose?"', if: g => g.knows('pop_jacket'),
-          check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'empathy', label: 'Get Pop to talk', bonus: 1, bonusLabel: 'You saw the jacket', on: { strong: 'a1_pop_strong', weak: 'a1_pop_weak', miss: 'a1_pop_miss' } } },
+          check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'empathy', label: 'Get Pop to talk', bonus: 1, bonusLabel: 'You saw the jacket', on: { strong: 'a1_pop_strong', weak: 'a1_pop_weak', miss: 'a1_pop_miss' } },
+          fx: g => g.know('pop_jacket', ['frank']) },
         { text: '"Pop. Are you okay? Like, actually?"', if: g => !g.knows('pop_jacket'),
           check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', label: 'Get Pop to talk', on: { strong: 'a1_pop_strong', weak: 'a1_pop_weak', miss: 'a1_pop_miss' } } },
         { text: 'Let it be. This was good. Let it just be good.', tag: 'Let it be',
@@ -377,8 +382,8 @@ He hangs up. You sit on the edge of your bed in a hundred-degree room with the p
       next: '@hub'
     },
     a1_pop_weak: {
-      enter: g => { g.flag('pop_call', 'deflected'); g.know('pop_owes_hint', ['sam'], 'When you asked Pop if he was okay, he said "It\'s handled." You didn\'t say what "it" was. Neither did he.'); },
-      text: `frank: I'm fine.
+      enter: g => { g.flag('pop_call', 'deflected'); g.know('pop_owes_hint', ['sam'], g.knows('pop_jacket') ? 'When you asked Pop about the man at the Melrose, he said "It\'s handled." He never asked how you knew.' : 'When you asked Pop if he was okay, he said "It\'s handled." You didn\'t say what "it" was. Neither did he.'); },
+      text: g => `frank: I'm fine.
 
 sam: Pop.
 
@@ -390,7 +395,7 @@ There's a long pause. The engine idles. A horn somewhere on Oregon Avenue.
 
 frank: Everything. Everything's handled. Eat something. It's hot. Drink water.
 
-He hangs up. *It's handled.* You never said there was an *it*.`,
+${g.knows('pop_jacket') ? 'He hangs up. He never asked how you knew about the Melrose. That\'s how you know it matters.' : 'He hangs up. *It\'s handled.* You never said there was an *it*.'}`,
       next: '@hub'
     },
     a1_pop_miss: {
@@ -417,7 +422,6 @@ You say it anyway, to the dead line.`,
 
     a1_nonna: {
       loc: 'MIFFLIN STREET · SOUTH PHILADELPHIA',
-      clock: { time: '1:30 PM' },
       enter: g => { g.meet('nonna'); g.bond('nonna', { trust: 2, affection: 2 }); g.know('nonna_key', ['sam', 'nonna'], 'Nonna gave you an old iron key on a ribbon. "When it\'s time, I tell you what it opens."'); g.know('assunta', ['sam', 'nonna'], 'Nonna\'s mother, Assunta DiNardo, "moved" once, in 1918, during the Liberty Loan parade. She pulled a child out from under a trolley. Nonna says it runs in the women of the family. Until you.'); },
       text: g => `The Broad Street Line south is so hot the seats are sweating. You come up at Tasker-Morris into a South Philly that has given up: every stoop has a kiddie pool on it, every rowhouse door is open with a box fan in it, and every old lady on Mifflin Street is sitting in a lawn chair on the sidewalk under an umbrella, like a row of mushrooms.
 
@@ -425,7 +429,7 @@ Nonna is on her stoop. She's not under an umbrella. She's wearing a cardigan.
 
 She watches you come down the block. She doesn't look surprised.
 
-nonna: Eh. You don't wait for Sunday. Good. Sunday is too late. *Madonna mia*, look at you. Skin and bone.
+nonna: Eh. Last Sunday I make the gravy, you don't come. Okay. Now you come. Good. Tomorrow is too late. *Madonna mia*, look at you. Skin and bone.
 
 She takes your face in both hands and turns it to the light, the way she checks a cantaloupe at the Italian Market. Her hands are cold. It's a hundred and two degrees.
 
@@ -500,7 +504,7 @@ Nonna lets go of your hand and picks up her coffee as if nothing happened.`,
 
     a1_nap: {
       loc: 'CHARLES LIBRARY · 4TH FLOOR',
-      enter: g => g.nap(4),
+      enter: g => g.nap(2),
       text: `The fourth floor is cold. Cold the way Saturday-night cold was, almost: the air conditioning on full blast for six people and a robot arm. You find a corner and a chair and you're gone before your head touches your backpack.
 
 You dream about rain that doesn't fall. In the dream, somebody is standing in it with you, very far away, wearing your jacket.`,
@@ -511,7 +515,7 @@ You dream about rain that doesn't fall. In the dream, somebody is standing in it
     a1_order: {
       loc: 'CARDONE HALL · ROOM 9-14',
       clock: { time: '5:10 PM' },
-      text: g => `${g.f('did_sat_ciro') ? 'At the end of your shift, Ciro calls you over to the counter with a face like a storm cloud and slaps an order slip down in front of you.' : 'At five, Ciro texts you a photo of an order slip with no message, and then, a second later: **WHO ARE YOUR FRIENDS.**'}
+      text: g => `${g.f('did_sat_ciro') ? 'At five, Ciro calls you. Not a text, a *call*, which he has never once done. Then he sends a photo of an order slip.' : 'At five, Ciro texts you a photo of an order slip with no message, and then, a second later: **WHO ARE YOUR FRIENDS.**'}
 
 The slip is in Ciro's handwriting. It's a phone order. Paid in advance, cash, dropped through the mail slot in an envelope while the store was closed this morning. Twenty dollars over.
 
@@ -519,7 +523,7 @@ The slip is in Ciro's handwriting. It's a phone order. Paid in advance, cash, dr
 
 ${g.f('did_sat_ciro') ? 'ciro: The *cold one*. In *my shirt*. I don\'t want to know. I don\'t want to *know*, Salvatore. You go, you come back, I never saw this.' : 'TXT ciro: i dont want to know\nTXT ciro: you go you come back i never saw this'}
 
-Port Richmond. E. Allegheny Ave. You've never been to Port Richmond in your life. But only one person has ever called you *the cold one*.
+Port Richmond. E. Allegheny Ave. You've never been to Port Richmond in your life. Plenty of people have called you the cold man since Jayden said it and Dana printed it. Only one person ever looked you in the eye and said *one of the cold ones*.
 
 *Only him. Please.*
 
@@ -527,7 +531,7 @@ It's 5:10. The order's for 8:00. The temperature on your phone says 103.`,
       choices: [
         { text: 'Go. Take the pizza. Whatever this is, Teddy said please.', tag: 'Go',
           fx: g => { g.flag('teddy_meet', 'go'); }, go: 'a2_port_richmond' },
-        { text: 'Don\'t go. He robbed an armored truck. You pulled the guard out of it yourself. You don\'t owe him a pizza.', tag: 'Don\'t go',
+        { text: g => 'Don\'t go. He robbed an armored truck.' + (g.f('fight_result') === 'touched' ? ' He froze your arm.' : g.f('fight_result') === 'tackle' ? ' He froze your sneaker to Broad Street.' : ' A man almost died in that windshield.') + ' You don\'t owe him a pizza.', tag: 'Don\'t go',
           fx: g => { g.flag('teddy_meet', 'no'); g.hidden('revenant_drift', -0.2); }, go: 'a2_no_go' }
       ]
     }
@@ -541,9 +545,10 @@ It's 5:10. The order's for 8:00. The temperature on your phone says 103.`,
       { label: 'No costume', pct: 12, if: g => g.f('costume') === 'none' }
     ] },
     { q: 'The fire on 15th Street', opts: [
-      { label: 'The family on the third floor', pct: 57, if: g => g.f('fire') === 'family' },
-      { label: 'Heck', pct: 26, if: g => g.f('fire') === 'heck' },
-      { label: 'The men with the van', pct: 17, if: g => g.f('fire') === 'van' }
+      { label: 'The family on the third floor', pct: 54, if: g => g.f('fire') === 'family' },
+      { label: 'Heck', pct: 23, if: g => g.f('fire') === 'heck' },
+      { label: 'The men with the van', pct: 14, if: g => g.f('fire') === 'van' },
+      { label: 'Stayed on the roof', pct: 9, if: g => g.f('fire') === 'stayed' }
     ] },
     { q: '4:12 a.m., the roof', opts: [
       { label: 'Leaned in', pct: 41, if: g => g.f('roof_end') === 'lean' },

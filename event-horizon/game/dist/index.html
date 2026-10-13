@@ -5851,6 +5851,1886 @@ On the ninth floor, the lamp in 9-11 stays on.`,
   }
 });
 
+/* s01e03.js */
+/* S1 · E3 · THE BLACKOUT FLOOR, part 1 of 3: meta, cold open, Act One ("Heat Advisory"). */
+EH.episode({
+  id: 's01e03', season: 1, number: 3, title: 'The Blackout Floor', look: 's1',
+  cast: ['sam', 'jules', 'nik', 'simone', 'vinnie', 'grace', 'rosa', 'frank', 'nonna', 'mikey', 'gigi'],
+  start: 'cold_open',
+  xp: 5,
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      night: true,
+      loc: 'CARDONE HALL · ROOF',
+      clock: { day: 'Thu', date: 'Sep 3', time: '2:50 AM' },
+      text: `It's ninety-one degrees at three in the morning, and Nik is wearing a headlamp.
+
+nik: Okay. Trial forty-four. Ready?
+
+He's sitting cross-legged on an HVAC unit with his laptop, a stopwatch app, a thermometer he "borrowed" from the chem lab four days ago and is now emotionally attached to, and a spiral notebook labeled **THE SLIP (VOL. 2)** because Vol. 1 ran out on Tuesday. Below you, North Philly hums in the heat like a fridge about to die. It's September, technically. Nobody told the city.
+
+It's been a week since Girard. A week of this: every night on the roof, Nik with his stopwatch, you stepping in and out of a stopped world until your nose bleeds and he makes you stop.
+
+You've learned things. You can stay in for about a minute, which is four seconds out here. Coming back is like surfacing from the bottom of a pool. The colder it is in there, the hungrier you are after. You eat like a linebacker now. Ciro has started leaving you a whole tray of garlic knots "so you don't die in my store."
+
+And the Broad Street Blur is everywhere. A mural petition has nine thousand signatures. Somebody's selling **I ❤️ THE BLUR** shirts out of a van on Passyunk Avenue, eight blocks from your mother's house. A guy on a local morning show did a segment called *"Blur or Blurn't?"* that Nik has watched eleven times.
+
+nik: Okay, so, before trial forty-four, I need to say something, and I need you to let me finish.
+
+sam: You never let *me* finish.
+
+nik: That's because you never have a finish, you just stop. Listen. If you keep doing this, the Girard thing, the Wawa thing, the bus, you can't keep doing it in the Ciro's shirt. That shirt is the single most identifiable piece of fabric in the city of Philadelphia right now. There's a *fan account for the shirt*.
+
+He holds up his phone. There is a fan account for the shirt. It has four thousand followers.
+
+nik: You need something else. I'm not saying a *costume*. I'm saying a… a professional uniform. For your, uh, nights.`,
+      choices: [
+        { text: 'Black hoodie, black neck gaiter pulled up to the eyes, the Eagles cap Pop gave you turned backward. Nobody looks twice at a kid in a hoodie in Philly.', tag: 'Hoodie',
+          fx: g => { g.flag('costume', 'hoodie'); g.bond('nik', { respect: 1 }); }, go: 'cold_costume' },
+        { text: 'Ciro\'s green windbreaker, the one from the Hitch, turned inside out so the letters are hidden. Nonna said wear a jacket.', tag: 'The jacket',
+          fx: g => { g.flag('costume', 'windbreaker'); }, go: 'cold_costume' },
+        { text: 'Your bike helmet with the tinted visor Ciro bought you for night deliveries. Full face, no face.', tag: 'Helmet',
+          fx: g => { g.flag('costume', 'helmet'); }, go: 'cold_costume' },
+        { text: '"I\'m not wearing a costume, Nik. I\'m not a superhero. I\'m just a guy who keeps being there."', tag: 'No costume',
+          fx: g => { g.flag('costume', 'none'); g.bond('nik', { tension: 1 }); g.hidden('revenant_drift', 0.3); }, go: 'cold_costume' }
+      ]
+    },
+    cold_costume: {
+      night: true,
+      enter: g => { g.know('costume', ['sam', 'nik'], 'Your "uniform" for nights out: ' + ({ hoodie: 'black hoodie, gaiter, Pop\'s backward Eagles cap.', windbreaker: 'Ciro\'s green windbreaker, inside out.', helmet: 'your night-delivery bike helmet with the tinted visor.', none: 'nothing. You go as yourself.' })[g.f('costume')]); },
+      text: g => `${{
+        hoodie: 'nik: Okay. Okay, that\'s actually smart. That\'s *so* smart, it\'s basically camouflage. The whole city is a kid in a hoodie. You\'re hiding in the Philadelphia of it all.',
+        windbreaker: 'nik: Inside out? Okay. Okay, I hate that it\'s kind of iconic. That\'s like, a *gesture*. That\'s a fan-theory jacket. People are gonna write essays about why it\'s inside out.\n\nsam: Nonna said wear a jacket.\n\nnik: Then your grandmother\'s running the brand now. I\'ve made my peace with it.',
+        helmet: 'nik: The *visor*. Bro. The visor is so good. It\'s like Daft Punk if Daft Punk delivered pizza. Nobody can see your face, nobody can see your nosebleeds. That\'s a two-for-one.',
+        none: 'Nik looks at you for a long second, the headlamp right in your eyes.\n\nnik: You know that\'s how they get you, right? It\'s *always* the face. Every single one. The face, and then the family.\n\nYou don\'t have an answer for that. He writes something in Vol. 2 and underlines it twice.'
+      }[g.f('costume')]}
+
+Trial forty-four. You step through. The city stops. A moth hangs in Nik's headlamp beam like a flake of ash. You walk to the parapet and look out over North Philly, frozen, every window lit, every AC dripping.
+
+Something's different tonight.
+
+Far off to the east, past the El, past Kensington, a shimmer hangs over the rooftops like heat off a road. But it's in the *Slip*, where heat shouldn't shimmer, where nothing should move at all. A smear in the stopped air, the size of a city block. Wavering.
+
+You stare at it until the pull takes you.
+
+!! ~WHUMP
+
+nik: Four point six on my watch. What'd you count?
+
+sam: Seventy-something.
+
+nik: That's a record. Why are you looking at Kensington like that?
+
+When you look again, in the normal world, there's nothing there. Just the haze, and the El, and a sky the color of a dirty nickel.
+
+nik: Sam?
+
+sam: Nothing. Heat.
+
+nik: You're lying to me. You promised you wouldn't lie to me.
+
+sam: …I saw something. Over there. In the Slip. Something was *moving*.
+
+Nik looks east and doesn't say anything, which for Nik is a medical event. Then he writes it down with the date and the time. Under it, in capital letters: **NOTHING SHOULD MOVE.**`,
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_saturday' },
+
+    /* ================= ACT ONE: HEAT ADVISORY ================= */
+    a1_saturday: {
+      card: { kind: 'act', label: 'Act One', title: 'Heat Advisory' },
+      loc: 'CARDONE HALL · 9TH FLOOR',
+      clock: { day: 'Sat', date: 'Sep 5', time: '9:40 AM' },
+      enter: g => { g.sleep(7); g.know('kensington_shimmer', ['sam', 'nik'], 'In the Slip, something over Kensington was moving. Nothing should move in the Slip.'); },
+      text: `Labor Day weekend. Excessive heat warning through Monday. One hundred and four degrees forecast for Saturday afternoon, the hottest September day in Philadelphia since they started keeping track, which the woman on 6abc says with the cheerful terror of a person who knows she'll be saying it again next year.
+
+The ninth floor is emptying like a bathtub.
+
+Everybody with a family within two hours is going home: to Pittsburgh, to the Poconos, to the shore, to air conditioning that works. The hallway is a parade of rolling suitcases and laundry bags and parents double-parked on Broad.
+
+Nik's mother has come down from Edison personally. She's standing in the doorway of 9-14 with her car keys in one hand and a cooler in the other, and she's looking at you with tremendous suspicion.
+
+MRS. BHATTACHARYA: You are the honest one. Sam.
+
+sam: Hi, Mrs. Bhattacharya.
+
+MRS. BHATTACHARYA: Nikhil says you are on the roof every night. Doing *science*. Is that true?
+
+Nik is behind her, frantically making a slicing motion across his throat.
+
+sam: …It's a physics thing. For extra credit. Very safe.
+
+She looks at you the way she must look at Nik's report cards.
+
+MRS. BHATTACHARYA: Most days honest. Okay.
+
+She hands you the cooler.
+
+MRS. BHATTACHARYA: Chicken biryani. Eat it before Monday or it will kill you.
+
+nik: *Ma.* Ma, haan, haan, he'll eat it.
+
+At the door, Nik hugs you, fast and awkward, and says into your shoulder, very quietly:
+
+nik: Burner's charged. Earpiece is in your sock drawer. If anything happens, I'm in Edison, and Edison has Wi-Fi.
+
+Then he's gone, and 9-14 is very quiet, and there's a cooler of biryani on your bed.
+
+Across the hall, 9-11's door is open. Simone is stuffing a weekend bag with the urgency of someone escaping a burning building.
+
+simone: Fishtown. My friend Dez has a window unit and a bathtub full of ice and zero rules. I'll be back Monday. *Juliet* refuses to come.
+
+Jules is sitting at her desk in a tank top with her hair up and a fan pointed directly at her face, reading. She doesn't look up.
+
+jules: Juliet has work to do.
+
+simone: Juliet's mother is throwing a Labor Day lawn party for two hundred people with a *string quartet*, and Juliet would rather die in a brick oven.
+
+jules: Both of those things are true.
+
+Simone looks at you over her shoulder, eyebrows halfway up her forehead, as if to say *you two are going to be alone on this floor for three days, and I'm going to miss it, and I'll never forgive either of you.*
+
+simone: Salvatore. Don't let her die.
+
+She's gone in a cloud of perfume and rolling wheels. It's just you and Jules, and the hallway, and the heat.
+
+Jules's phone buzzes on the desk. She looks at the screen. **MOTHER**. She turns it face down.`,
+      choices: [
+        { text: '"Not going home either, huh?"', tag: 'Small talk',
+          fx: g => { g.flag('sat_jules', 'talk'); }, go: 'a1_jules_door' },
+        { text: 'Say nothing. Take your biryani and go. You have a shift.', tag: 'Leave it',
+          fx: g => { g.flag('sat_jules', 'left'); g.bond('jules', { respect: 1 }); }, go: 'a1_hub' }
+      ]
+    },
+    a1_jules_door: {
+      text: g => `She looks up. It's the first time she's looked directly at you since she left you asleep under the lounge blanket with a note.
+
+jules: My mother is having two hundred people to Ravenscourt for the last lawn party of the summer. My father will arrive by helicopter, which he'll pretend is a joke, which it won't be. My twin will give a toast. Everyone will ask me why I'm at Temple, in a voice that sounds like they're asking about a diagnosis.
+
+She turns a page of her book.
+
+jules: I would rather be here, in a hundred and four degrees, with you, across a hallway. Which is a sentence I want you to understand is not a compliment.
+
+sam: It kind of is, though.
+
+jules: It's a ranking. You came in above a string quartet.
+
+${g.f('door') === 'highness' ? 'It\'s the warmest she\'s been to you since you called her *Your Highness* at her own door. You decide not to point that out.' : ''}
+
+Her phone buzzes again. **MOTHER**. She doesn't turn it over this time. She just looks at it, buzzing, until it stops.`,
+      next: 'a1_hub'
+    },
+
+    /* ---------- Saturday hub ---------- */
+    a1_hub: {
+      loc: 'SATURDAY · SEPTEMBER 5',
+      clock: { time: '10:30 AM' },
+      text: `The heat sits on the city like a wet hand. By eleven, it's ninety-eight. PECO is texting everyone in North Philly to "conserve energy between 2 and 8 p.m." The El is running slow because the rails are expanding.
+
+You have the day. Not all of it.`,
+      hub: {
+        slots: 3, label: 'Saturday, September 5',
+        blurb: 'It\'s a hundred and four degrees. Everything takes longer than it should.',
+        options: [
+          { id: 'sat_ciro', text: 'Work the lunch shift at Ciro\'s. Everybody orders in when it\'s this hot.', cost: 1, tag: 'Money', go: 'a1_ciro' },
+          { id: 'sat_femi', text: 'Text Femi. He wrote you at 4 a.m.: *are you awake. something is wrong with the cameras.*', cost: 1, tag: 'Femi', go: 'a1_femi' },
+          { id: 'sat_pop', text: 'Call Pop. Not Ma: Pop. You haven\'t talked to him since the cab.', cost: 1, tag: 'Pop', go: 'a1_pop' },
+          { id: 'sat_nonna', text: 'Take the train down to Mifflin Street. Nonna said "come Sunday" ten days ago, and you never went. You can\'t put it off again.', cost: 2, tag: 'Nonna', go: 'a1_nonna' },
+          { id: 'sat_nap', text: 'The fourth floor of Charles Library has air conditioning and a beanbag. Sleep.', cost: 1, tag: 'Rest', go: 'a1_nap' }
+        ],
+        done: 'a1_order'
+      }
+    },
+
+    a1_ciro: {
+      loc: 'CIRO\'S PIZZA · CECIL B. MOORE AVE',
+      enter: g => { g.money(14 * 3); },
+      text: `The pizza oven is nine hundred degrees, the kitchen is a hundred and twelve, and Ciro is working in a white undershirt with a bag of frozen peas balanced on his head like a hat.
+
+ciro: Don't look at me. You look at me like a dead fish on ice. Deliver.
+
+Everybody in North Philly is ordering in. You ride through streets so hot the air above the asphalt wobbles. Old men sit on milk crates in the shade of rowhouse awnings with wet towels around their necks. Kids have opened a fire hydrant on Norris Street, and a cop in a squad car is pretending very hard not to see it. A woman on 17th Street tips you a cold can of Pepsi instead of money, and it's the best tip you've ever gotten.`,
+      choices: [
+        { text: 'Hustle. Fast and friendly. Every door is a tip.',
+          check: { kind: 'move', move: 'Work the Door', attr: 'charm', skill: 'hustle', label: 'Tips', on: { strong: 'a1_ciro_good', weak: 'a1_ciro_ok', miss: 'a1_ciro_bad' } } },
+        { text: 'Burn through the route. Heat be damned.',
+          check: { kind: 'pool', attr: 'reflex', skill: 'ride', diff: 2, label: 'Heat-wave lunch', on: { crit: 'a1_ciro_good', success: 'a1_ciro_good', partial: 'a1_ciro_ok', fail: 'a1_ciro_bad' } } }
+      ]
+    },
+    a1_ciro_good: { enter: g => { g.money(52); g.bond('ciro', { respect: 1 }); }, text: `Fifty-two in tips, two cold Pepsis, a popsicle, and a blessing from a church lady in a lawn chair who says you have "a delivering spirit." Ciro takes the peas off his head long enough to say *"Not bad,"* and then puts them back.`, next: '@hub' },
+    a1_ciro_ok: { enter: g => g.money(24), text: `Twenty-four in tips and a mild case of heat stroke you treat with a garlic knot and the walk-in freezer. Ciro finds you sitting inside it at two-fifteen and closes the door on you for a full minute "to teach you something."`, next: '@hub' },
+    a1_ciro_bad: { enter: g => { g.money(9); g.pool('stamina', -1); }, text: `Nine dollars and a flat tire on Diamond Street, which you fix by hand in a hundred and one degrees while a pit bull named Princess watches you from a porch with deep contempt. You've met Princess before. She remembers you.`, next: '@hub' },
+
+    a1_femi: {
+      loc: 'CHARLES LIBRARY · CIRCULATION DESK',
+      enter: g => { g.bond('femi', { trust: 1, affection: 1 }); g.know('femi_cameras', ['sam', 'femi'], 'Femi doesn\'t show up on the library\'s security cameras anymore. The chair he sits in does, but he doesn\'t. Halcyon\'s "wellness study" is offering $500 a head on flyers all over campus.'); },
+      text: g => `Charles Library is one of the only buildings on campus with air conditioning that works on a holiday weekend, so it's full of the people who stayed: grad students, international students, a guy asleep on the floor of the lobby under the big wooden wave of a ceiling, using his backpack as a pillow.
+
+Femi is at the circulation desk. You walk straight to him, and three people in line behind you glance at the desk, see nobody, and leave.
+
+femi: You came.
+
+He doesn't say hi. He turns his laptop around. On it is a grid of security-camera feeds from the library: the lobby, the stacks, the circulation desk. In the circulation desk feed, there's the desk, the computer, the chair, and a pen moving, writing on a pad by itself. Nobody's holding it.
+
+femi: That's me. Right now. Wave.
+
+You wave at the camera. In the feed, a kid in a Ciro's shirt waves at an empty chair.
+
+femi: I'm not on them anymore. Any of them. The library, my phone's camera, the Wawa. I took a selfie this morning and it's just the wall behind my head. I'm *disappearing*, Sam. Not, like, emotionally. Optically.
+
+He laughs. It's a thin sound.
+
+femi: And then there's this.
+
+He slides a flyer across the desk. Glossy, cheerful, a sunrise over the Navy Yard. **HALCYON COMMUNITY WELLNESS STUDY · Were you in North Philadelphia on Aug. 22? Experiencing unusual symptoms? $500 for one visit. Confidential. Caring.** There are a hundred of them on bulletin boards all over campus.
+
+femi: Five hundred dollars. That's a month of my sister's daycare.
+
+He taps the flyer.
+
+femi: And they've got machines, right? Scanners. Real ones. Maybe their machines can see me even if nobody else can. Maybe they can *fix* it.`,
+      choices: [
+        { text: '"Don\'t go, Femi. Swear to me. They\'re not studying people, they\'re making a list." You have the receipts.', tag: 'Warn him', if: g => g.knows('halcyon_beds') || g.knows('halcyon_outreach'),
+          check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', bonus: 1, bonusLabel: 'You have proof', label: 'Keep Femi away from Halcyon', on: { strong: 'a1_femi_warn_strong', weak: 'a1_femi_warn_weak', miss: 'a1_femi_warn_miss' } } },
+        { text: '"Don\'t go, Femi. Swear to me. They\'re not studying people, they\'re making a list."', tag: 'Warn him', if: g => !(g.knows('halcyon_beds') || g.knows('halcyon_outreach')),
+          check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', label: 'Keep Femi away from Halcyon', on: { strong: 'a1_femi_warn_strong', weak: 'a1_femi_warn_weak', miss: 'a1_femi_warn_miss' } } },
+        { text: 'Tell him. What you are. Why Halcyon wants people like you. Both of you.', tag: 'Tell Femi',
+          fx: g => { g.flag('femi_told'); g.know('sam_slip', ['femi']); g.know('sam_at_girard', ['femi']); g.know('wawa_guy', ['femi']); g.bond('femi', { trust: 3 }); g.flag('femi_warned', 'strong'); }, go: 'a1_femi_tell' },
+        { text: '"I don\'t know, man. Maybe they can help." It\'s his life. His call.', tag: 'His call',
+          fx: g => { g.flag('femi_warned', 'none'); g.hidden('revenant_drift', -0.3); }, go: 'a1_femi_none' }
+      ]
+    },
+    a1_femi_warn_strong: {
+      enter: g => { g.flag('femi_warned', 'strong'); g.bond('femi', { trust: 2 }); if (g.knows('halcyon_outreach')) g.know('halcyon_outreach', ['femi']); if (g.knows('halcyon_beds')) g.know('halcyon_beds', ['femi']); },
+      text: g => `sam: Don't go. Femi. Swear to me. They're not studying people, they're making a list. ${g.knows('halcyon_outreach') ? 'They\'re paying RAs five hundred bucks to hand over names. My RA told me. A guy in a gray polo shirt asked about my *floor*.' : ''} ${g.knows('halcyon_beds') ? 'My friend works construction at their Navy Yard building. They just moved forty-one hospital beds into the basement.' : ''}
+
+Femi goes very still.
+
+femi: Forty-one.
+
+sam: Forty-one.
+
+He looks at the flyer for a long moment. Then he folds it in half, and in half again, and puts it in his pocket, not the trash. You notice that.
+
+femi: Okay. Okay, I won't go. I swear. On my sister.
+
+He means it. You can see that he means it. You can also see how much he wanted the five hundred dollars, and the scanner, and the chance that somebody, anybody, could look at him and see him.`,
+      next: '@hub'
+    },
+    a1_femi_warn_weak: {
+      enter: g => { g.flag('femi_warned', 'weak'); g.bond('femi', { trust: 1 }); },
+      text: `sam: Don't go, Femi. They're not studying people. They're making a list.
+
+femi: You don't know that.
+
+sam: I know a guy in a polo shirt is offering my RA a gift card for my name.
+
+He thinks about it. He folds the flyer in half, then in half again, and puts it in his pocket.
+
+femi: I'll think about it. That's all I can do. I'll think about it.`,
+      next: '@hub'
+    },
+    a1_femi_warn_miss: {
+      enter: g => { g.flag('femi_warned', 'tried'); g.bond('femi', { tension: 1 }); },
+      text: `sam: Don't go, Femi. They're making a list—
+
+femi: You don't *get* it. You walk into a room and people look at you. People laugh at your jokes. People *film* you, Sam. I'm writing my name on whiteboards so my own students know I'm in the room.
+
+He's not angry. That's the worst part. He just sounds tired.
+
+femi: Five hundred dollars and a machine that might see me. You'd go too.
+
+He puts the flyer on the desk and smooths it flat with both hands, very carefully, like a dollar bill.`,
+      next: '@hub'
+    },
+    a1_femi_tell: {
+      text: `You lean on the desk and you tell him, low, while the library hums around you: the cold, the stopped rain, the Slip, the Wawa, the truck at Girard. That the polo-shirt man's looking for the Blur. That *you're* the Blur.
+
+Femi stares at you.
+
+femi: You're the *Broad Street Blur*.
+
+sam: Keep your voice down.
+
+femi: Nobody can hear me! That's my whole thing!
+
+He starts laughing. He laughs until he has to put his head down on the desk, and for a second you think he's crying, and then you're sure he is, a little, both at once.
+
+femi: Okay. Okay. So they want *us*. Not to fix us. To find us.
+
+He takes the flyer and tears it in half, slowly, then in half again.
+
+femi: I'm not going. I swear on my sister. And if they come for you, I'll see them first. Nobody notices me, remember? I'm the best lookout in Philadelphia.`,
+      next: '@hub'
+    },
+    a1_femi_none: {
+      text: `sam: I don't know, man. Maybe they can help.
+
+Femi nods slowly.
+
+femi: Yeah. Maybe.
+
+He puts the flyer in his shirt pocket, over his heart, and pats it twice. When you leave, he's sitting at the desk in the cold blue air conditioning, writing his name over and over on a sticky note, F-E-M-I, like he's trying to remember how.`,
+      next: '@hub'
+    },
+
+    a1_pop: {
+      loc: 'PHONE · LIBERTY CAB #2207',
+      enter: g => g.bond('frank', { trust: 1 }),
+      text: g => `He picks up on the fourth ring. In the background: the cab's engine idling, the AC rattling, talk radio about the Eagles' secondary.
+
+frank: Kid.
+
+sam: Hey, Pop.
+
+frank: Something wrong?
+
+sam: No. I just. Wanted to call.
+
+A long pause. You can hear him not knowing what to do with that.
+
+frank: Okay.
+
+You talk about the heat. You talk about the Eagles, at length, because that's the only language you and your father have ever been fluent in together. He tells you about a fare who threw up in the back seat on Delaware Avenue and then tipped forty dollars "as an apology." You laugh. He laughs. It's the best conversation you've had with him in a year.
+
+Then it's quiet.
+
+${g.knows('pop_jacket') ? 'You think about the back booth at the Melrose. The jacket. The eggs he didn\'t eat.' : ''} ${g.knows('pop_unknown_calls') ? 'You think about 215-555-4471.' : ''}`,
+      choices: [
+        { text: '"Pop. Who\'s the guy in the nice jacket? At the Melrose?"', if: g => g.knows('pop_jacket'),
+          check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'empathy', label: 'Get Pop to talk', bonus: 1, bonusLabel: 'You saw the jacket', on: { strong: 'a1_pop_strong', weak: 'a1_pop_weak', miss: 'a1_pop_miss' } },
+          fx: g => g.know('pop_jacket', ['frank']) },
+        { text: '"Pop. Are you okay? Like, actually?"', if: g => !g.knows('pop_jacket'),
+          check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', label: 'Get Pop to talk', on: { strong: 'a1_pop_strong', weak: 'a1_pop_weak', miss: 'a1_pop_miss' } } },
+        { text: 'Let it be. This was good. Let it just be good.', tag: 'Let it be',
+          fx: g => { g.bond('frank', { affection: 2 }); g.flag('pop_call', 'good'); }, go: 'a1_pop_good' }
+      ]
+    },
+    a1_pop_strong: {
+      enter: g => { g.flag('pop_call', 'admitted'); g.bond('frank', { trust: 2 }); g.know('pop_owes', ['sam', 'frank'], 'Pop admitted he owes "some people" money from "before you were born, almost." "It\'s handled. Don\'t tell your mother."'); },
+      text: `The engine idles. The radio is talking about a linebacker's hamstring. Your father breathes.
+
+frank: I owe some people some money, kid.
+
+He says it so quietly you almost miss it.
+
+frank: Old money. Before you were born, almost. I thought it was done. Somebody bought the paper. Now it's theirs.
+
+sam: How much?
+
+frank: It's handled.
+
+sam: Pop. How much?
+
+frank: It's *handled*, kid. Don't tell your mother. Don't tell your brother. There's nothing to do.
+
+A long silence.
+
+frank: I'm glad you called, kid. I mean that. Don't call about this again.
+
+He hangs up. You sit on the edge of your bed in a hundred-degree room with the phone in your hand, and the money from the envelope he gave you on move-in day is still in your sock drawer, next to Nik's earpiece.`,
+      next: '@hub'
+    },
+    a1_pop_weak: {
+      enter: g => { g.flag('pop_call', 'deflected'); g.know('pop_owes_hint', ['sam'], g.knows('pop_jacket') ? 'When you asked Pop about the man at the Melrose, he said "It\'s handled." He never asked how you knew.' : 'When you asked Pop if he was okay, he said "It\'s handled." You didn\'t say what "it" was. Neither did he.'); },
+      text: g => `frank: I'm fine.
+
+sam: Pop.
+
+frank: I'm *fine*, kid. It's handled.
+
+sam: What's handled?
+
+There's a long pause. The engine idles. A horn somewhere on Oregon Avenue.
+
+frank: Everything. Everything's handled. Eat something. It's hot. Drink water.
+
+${g.knows('pop_jacket') ? 'He hangs up. He never asked how you knew about the Melrose. That\'s how you know it matters.' : 'He hangs up. *It\'s handled.* You never said there was an *it*.'}`,
+      next: '@hub'
+    },
+    a1_pop_miss: {
+      enter: g => { g.flag('pop_call', 'shut'); g.bond('frank', { tension: 1 }); },
+      text: `frank: Don't.
+
+Just that. One word, flat, the way he says it to drunks who try to give him directions.
+
+frank: You worry about school. I'll worry about me. That's the deal. That's always been the deal.
+
+The line goes dead. You stare at the phone. Your father has never hung up on you in your life.`,
+      next: '@hub'
+    },
+    a1_pop_good: {
+      text: `You let it be. You let it just be your father, in his cab, telling you that the Eagles' secondary is "a crime scene." You tell him about Ciro and the frozen peas. He laughs so hard he starts coughing.
+
+frank: Love you, kid.
+
+He's never said it on the phone before. He says it fast, like he's ripping off a Band-Aid, and hangs up before you can answer.
+
+You say it anyway, to the dead line.`,
+      next: '@hub'
+    },
+
+    a1_nonna: {
+      loc: 'MIFFLIN STREET · SOUTH PHILADELPHIA',
+      enter: g => { g.meet('nonna'); g.bond('nonna', { trust: 2, affection: 2 }); g.know('nonna_key', ['sam', 'nonna'], 'Nonna gave you an old iron key on a ribbon. "When it\'s time, I tell you what it opens."'); g.know('assunta', ['sam', 'nonna'], 'Nonna\'s mother, Assunta DiNardo, "moved" once, in 1918, during the Liberty Loan parade. She pulled a child out from under a trolley. Nonna says it runs in the women of the family. Until you.'); },
+      text: g => `The Broad Street Line south is so hot the seats are sweating. You come up at Tasker-Morris into a South Philly that has given up: every stoop has a kiddie pool on it, every rowhouse door is open with a box fan in it, and every old lady on Mifflin Street is sitting in a lawn chair on the sidewalk under an umbrella, like a row of mushrooms.
+
+Nonna is on her stoop. She's not under an umbrella. She's wearing a cardigan.
+
+She watches you come down the block. She doesn't look surprised.
+
+nonna: Eh. Last Sunday I make the gravy, you don't come. Okay. Now you come. Good. Tomorrow is too late. *Madonna mia*, look at you. Skin and bone.
+
+She takes your face in both hands and turns it to the light, the way she checks a cantaloupe at the Italian Market. Her hands are cold. It's a hundred and two degrees.
+
+nonna: Inside. Your mother is at Costco. We have one hour.
+
+The kitchen. The radio on low, the gravy pot on even in this heat, because the gravy pot is always on. Nonna sits in her chair by the window and points at the other chair. You sit.
+
+nonna: My mother's name was Assunta. Assunta DiNardo. In 1918, she was sixteen. There was a parade on Broad Street. For the war, for the bonds. Everybody went. And the flu was coming, and nobody knew yet how bad.
+
+She looks out the window at the street.
+
+nonna: In the middle of the parade, all the church bells in the city stopped. All at once. Not *finished*. Stopped. Like a hand on the rope. And my mother said it got cold, like January, and everything stopped, the people, the flags, a bird in the air, and she could *move*. And there was a little boy under a trolley on Broad. And she went and got him.
+
+She looks at you.
+
+nonna: She did it once. Never again. She told me when I was a girl, and I didn't believe her, and then I felt it. Not like her. I just feel it, when the clocks are going to go wrong. My mother felt it. Your mother feels it a little, she doesn't know what it is, she thinks she's psychic about phone calls.
+
+Her voice drops.
+
+nonna: It's in the women. Always the women. Never a boy. Never, in a hundred years.
+
+Her cold hand on your wrist.
+
+nonna: And then Saturday night, I'm sitting right here, and I feel the clocks go, and I feel somebody *move*. And it's you, Salvatò. It's you.
+
+She reaches into the pocket of her cardigan and puts something in your hand: a small, cold, heavy old iron key on a faded ribbon.
+
+nonna: Not yet. You keep it. When it's time, I tell you what it opens.
+
+sam: When's it time?
+
+nonna: When you need it. Not before. *Mangia.* Your mother's coming back.`,
+      choices: [
+        { text: '"Nonna. It\'s me. I can do it. Whatever she did. I can do it whenever I want."', tag: 'Tell Nonna',
+          fx: g => { g.flag('nonna_told'); g.know('sam_slip', ['nonna']); g.bond('nonna', { trust: 3 }); }, go: 'a1_nonna_told' },
+        { text: 'Say nothing. Hold her hand. She already knows.', tag: 'Silence',
+          fx: g => { g.flag('nonna_silent'); g.bond('nonna', { affection: 2 }); g.know('sam_slip', ['nonna']); }, go: 'a1_nonna_silent' }
+      ]
+    },
+    a1_nonna_told: {
+      text: `sam: Nonna. It's me. I can do it. Whatever she did, I can do it whenever I want.
+
+She closes her eyes. Her mouth moves: a prayer, or a curse, in an Italian so old you can't follow it.
+
+nonna: *Whenever you want.*
+
+sam: Yeah.
+
+nonna: She did it *once*. One time, and she was sick for a month after, and she was never the same, and she would never, *never* talk about what she saw when she was in there.
+
+She opens her eyes and grips your wrist so hard it hurts.
+
+nonna: Salvatò. You listen to me. In there, in the cold, you don't stay long. And if you ever see somebody else moving in there, somebody who shouldn't be, you *come out*. You don't talk to them. You come out.
+
+The front door opens. Ma's voice: *"Who's here? Is that Sammy?"*
+
+Nonna lets go of your wrist and picks up her coffee as if nothing happened.`,
+      next: '@hub'
+    },
+    a1_nonna_silent: {
+      text: `You don't say anything. You just take her hand, cold and papery and stronger than it looks, and hold it, and look at her.
+
+She looks back at you. She nods once, very slowly, like she's confirming a diagnosis she already knew.
+
+nonna: *Bene.* Then you listen to one thing. In the cold, you don't stay long. And if you ever see somebody else moving in there, somebody who shouldn't be, you *come out*. You don't talk to them. You come out.
+
+The front door opens. Ma's voice: *"Who's here? Is that Sammy?"*
+
+Nonna lets go of your hand and picks up her coffee as if nothing happened.`,
+      next: '@hub'
+    },
+
+    a1_nap: {
+      loc: 'CHARLES LIBRARY · 4TH FLOOR',
+      enter: g => g.nap(2),
+      text: `The fourth floor is cold. Cold the way Saturday-night cold was, almost: the air conditioning on full blast for six people and a robot arm. You find a corner and a chair and you're gone before your head touches your backpack.
+
+You dream about rain that doesn't fall. In the dream, somebody is standing in it with you, very far away, wearing your jacket.`,
+      next: '@hub'
+    },
+
+    /* ---------- the order ---------- */
+    a1_order: {
+      loc: 'CARDONE HALL · ROOM 9-14',
+      clock: { time: '5:10 PM' },
+      text: g => `${g.f('did_sat_ciro') ? 'At five, Ciro calls you. Not a text, a *call*, which he has never once done. Then he sends a photo of an order slip.' : 'At five, Ciro texts you a photo of an order slip with no message, and then, a second later: **WHO ARE YOUR FRIENDS.**'}
+
+The slip is in Ciro's handwriting. It's a phone order. Paid in advance, cash, dropped through the mail slot in an envelope while the store was closed this morning. Twenty dollars over.
+
+> 1 LG PLAIN · 8:00 PM SAT · E. ALLEGHENY AVE (PORT RICHMOND) · FOR: "THE COLD ONE IN THE CIRO'S SHIRT" · NOTE: "only him. please."
+
+${g.f('did_sat_ciro') ? 'ciro: The *cold one*. In *my shirt*. I don\'t want to know. I don\'t want to *know*, Salvatore. You go, you come back, I never saw this.' : 'TXT ciro: i dont want to know\nTXT ciro: you go you come back i never saw this'}
+
+Port Richmond. E. Allegheny Ave. You've never been to Port Richmond in your life. Plenty of people have called you the cold man since Jayden said it and Dana printed it. Only one person ever looked you in the eye and said *one of the cold ones*.
+
+*Only him. Please.*
+
+It's 5:10. The order's for 8:00. The temperature on your phone says 103.`,
+      choices: [
+        { text: 'Go. Take the pizza. Whatever this is, Teddy said please.', tag: 'Go',
+          fx: g => { g.flag('teddy_meet', 'go'); }, go: 'a2_port_richmond' },
+        { text: g => 'Don\'t go. He robbed an armored truck.' + (g.f('fight_result') === 'touched' ? ' He froze your arm.' : g.f('fight_result') === 'tackle' ? ' He froze your sneaker to Broad Street.' : ' A man almost died in that windshield.') + ' You don\'t owe him a pizza.', tag: 'Don\'t go',
+          fx: g => { g.flag('teddy_meet', 'no'); g.hidden('revenant_drift', -0.2); }, go: 'a2_no_go' }
+      ]
+    }
+  },
+
+  polls: [
+    { q: 'Your uniform for nights out', opts: [
+      { label: 'Black hoodie and Pop\'s Eagles cap', pct: 38, if: g => g.f('costume') === 'hoodie' },
+      { label: 'Ciro\'s windbreaker, inside out', pct: 29, if: g => g.f('costume') === 'windbreaker' },
+      { label: 'The night-delivery helmet', pct: 21, if: g => g.f('costume') === 'helmet' },
+      { label: 'No costume', pct: 12, if: g => g.f('costume') === 'none' }
+    ] },
+    { q: 'The fire on 15th Street', opts: [
+      { label: 'The family on the third floor', pct: 54, if: g => g.f('fire') === 'family' },
+      { label: 'Heck', pct: 23, if: g => g.f('fire') === 'heck' },
+      { label: 'The men with the van', pct: 14, if: g => g.f('fire') === 'van' },
+      { label: 'Stayed on the roof', pct: 9, if: g => g.f('fire') === 'stayed' }
+    ] },
+    { q: '4:12 a.m., the roof', opts: [
+      { label: 'Leaned in', pct: 41, if: g => g.f('roof_end') === 'lean' },
+      { label: 'Didn\'t', pct: 33, if: g => g.f('roof_end') === 'still' },
+      { label: 'Told her something true instead', pct: 26, if: g => g.f('roof_end') === 'true' }
+    ] }
+  ],
+
+  onEnd: g => {
+    g.recap('The night the power went out on the ninth floor, you and Jules talked until the sun came up.');
+    g.recap('Then Callum came with iced coffee.');
+  }
+});
+
+/* s01e03b.js */
+/* S1 · E3 · THE BLACKOUT FLOOR, part 2 of 3: Port Richmond, Act Two ("Ninth Floor"), Act Three ("Fifteenth Street"). */
+EH.scenes('s01e03', {
+
+  a2_port_richmond: {
+    loc: 'E. ALLEGHENY AVE · PORT RICHMOND',
+    clock: { time: '8:02 PM' },
+    enter: g => { g.meet('teddy'); g.meet('bree'); g.meet('heck'); },
+    text: g => `Port Richmond is all Polish bakeries and rowhouses with aluminum awnings, a church spire every four blocks, and the I-95 overpass humming along the river like a giant asleep. The address is a rowhouse with a Virgin Mary in the front window, a church calendar from St. Adalbert's, and a hand-lettered sign in the door: **PLEASE KNOCK SOFT · MOM SLEEPING**.
+
+You knock soft.
+
+Teddy Kowal opens the door. No mask. Up close, under the porch light, he's twenty, freckled, sunburned across the nose, with tired eyes, a chipped front tooth, and a fresh Band-Aid on the same knuckles. He looks at the pizza box. He looks at you.
+
+teddy: You came.
+
+He says it like he's genuinely surprised. Like he'd bet against it.
+
+teddy: Come in. Quiet. My mom's asleep. She had a bad week.
+
+The kitchen is exactly as hot as everywhere else in Philadelphia, which is to say lethal. A box fan in the window pushes the hot air around. An older woman is asleep in a recliner in the next room under a crocheted blanket, even in this heat, and there's gauze taped over a lump in her forearm.
+
+Heck is sitting on the kitchen floor against the fridge with both hands in a plastic tub of ice. The ice is *boiling*. Steam rolls off it in sheets. He's soaked through with sweat, and his skin has a faint glow under it, like a coal under ash.
+
+heck: Papa. Mira, it's the nene.
+
+He grins at you. He looks terrible.
+
+heck: You kept your promise. You didn't follow. Bree said you wouldn't.
+
+A girl on the counter, eighteen, with a shaved undercut, a cereal box, and a Phillies jersey cut into a tank top, presses her lips together, and your voice comes out of her mouth: *"I swear to God."* Perfect, down to the crackle.
+
+bree: You did, though. You swore. Most people swear and don't mean it. You sound like you meant it.
+
+She holds out the cereal box.
+
+bree: Bree. Cousin. Want some?
+
+teddy: Sit down. Please. I know what you think of us. I'd think it too.`,
+    choices: [
+      { text: 'Sit. Listen. "Why am I here, Teddy?"', tag: 'Listen',
+        fx: g => { g.flag('pr', 'listen'); g.bond('teddy', { respect: 1 }); }, go: 'a2_pr_why' },
+      { text: g => 'Stay standing by the door. "Talk fast. ' + (g.f('fight_result') === 'tackle' ? 'You froze my sneaker to Broad Street."' : g.f('fight_result') === 'touched' ? 'You froze my arm."' : 'I let you walk once. That was the deal."'), tag: 'Guarded',
+        fx: g => { g.flag('pr', 'guarded'); g.bond('teddy', { tension: 1 }); }, go: 'a2_pr_why' }
+    ]
+  },
+  a2_pr_why: {
+    enter: g => { g.know('marisol', ['sam', 'teddy', 'bree', 'heck'], 'A Changed girl in Fishtown, Marisol Reyes, 19, could pop lightbulbs. She went to Halcyon\'s "wellness study" Tuesday. She never came home. Her mother got a text from her phone: "im fine staying w friends." Marisol never texts in lowercase.'); g.know('heck_heat', ['sam', 'heck', 'teddy', 'bree'], 'Heck runs hotter when the weather\'s hot. He can\'t turn it off.'); },
+    text: g => `Teddy doesn't sit either. He leans on the counter next to Bree.
+
+teddy: There's a girl in Fishtown. Marisol Reyes. Nineteen. She was on Girard Avenue Saturday night, the night of the Hitch, and since then, when she gets upset, lightbulbs pop. All the lightbulbs. Whole block. She found us. People like us find each other. You'd be surprised.
+
+He takes a breath.
+
+teddy: Tuesday, she went to that study. The Halcyon thing. Five hundred dollars. She needed it for her mom's rent. She went in the front door of their Navy Yard building at two in the afternoon. She never came out.
+
+bree: Her mom got a text from her phone that night. *"im fine staying w friends."* All lowercase.
+
+teddy: Marisol texts like a lawyer. Capital letters, periods. She *corrects people's* commas.
+
+Heck takes his hands out of the ice. The water in the tub is bubbling.
+
+heck: And Thursday, a gray van parks across from Bree's job. At the ShopRite on Aramingo. Two guys. They sit there all day. They don't buy nothing.
+
+teddy: Listen. I'm not asking you to like us. I know what we are. I'm asking you: have you seen them? Gray van. Polo shirts. Because if they took Marisol, they're coming for the rest of us. And I think you're at the top of their list, cold guy. You're on TV.`,
+    choices: [
+      { text: 'Tell him what you know: the name Brannigan, the beds, the RA bounty. Everything Halcyon.', tag: 'Share',
+        fx: g => {
+          g.flag('pr2', 'shared'); ['halcyon_aperture', 'halcyon_tablet_man', 'brannigan_name', 'halcyon_beds', 'halcyon_outreach'].forEach(f => { if (g.knows(f)) g.know(f, ['teddy', 'bree', 'heck']); }); g.bond('teddy', { trust: 3, respect: 1 }); g.bond('heck', { trust: 2 }); g.bond('bree', { trust: 1 });
+          if (g.knows('brannigan_name')) g.know('brannigan_name', ['teddy', 'bree', 'heck']);
+          if (g.knows('halcyon_beds')) g.know('halcyon_beds', ['teddy', 'bree', 'heck']);
+          if (g.knows('halcyon_outreach')) g.know('halcyon_outreach', ['teddy', 'bree', 'heck']);
+        }, go: 'a2_pr_shared' },
+      { text: '"I\'ll tell you what I know when you stop robbing armored trucks."',
+        check: { kind: 'move', move: 'Hold the Line', attr: 'nerve', skill: 'persuade', label: 'Make Teddy stop', on: { strong: 'a2_pr_stop_strong', weak: 'a2_pr_stop_weak', miss: 'a2_pr_stop_miss' } },
+        fx: g => g.flag('pr2', 'deal') },
+      { text: '"I haven\'t seen anything." Keep it to yourself. You don\'t know these people.',
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Teddy', on: { strong: 'a2_pr_lie', weak: 'a2_pr_lie', miss: 'a2_pr_lie_miss' } },
+        fx: g => { g.flag('pr2', 'lied'); g.bond('teddy', { trust: -1 }); } }
+    ]
+  },
+  a2_pr_shared: {
+    text: g => `You tell them. ${g.knows('brannigan_name') ? 'Brannigan, the name your brother gave you, and the polo shirt, and the captain\'s office. ' : 'The polo shirt and the tablet. '}${g.knows('halcyon_beds') ? 'Forty-one hospital beds in a Navy Yard basement. ' : ''}${g.knows('halcyon_outreach') ? 'Five hundred dollars to an RA for a name. ' : ''}${g.knows('halcyon_aperture') ? 'APERTURE, on a screen, counting down to 11:51. ' : ''}
+
+Nobody in the kitchen says anything for a long time. The box fan rattles. In the next room, Teddy's mother shifts in her sleep.
+
+heck: Forty-one beds.
+
+He says it to the tub of ice. Then he says it again in Spanish, very quietly, like a prayer.
+
+Teddy looks at you differently now. It's not friendship. It's the look two people give each other in a hospital waiting room.
+
+teddy: Okay. Then here's the deal, cold guy. If they come for one of us, we call the rest. All of us. Doesn't matter who likes who. Doesn't matter about the trucks.
+
+He writes a number on the pizza box lid with a Sharpie and tears it off.
+
+teddy: My cell. Bree's under it. Heck doesn't have a phone. He melts them.
+
+heck: *One time.*
+
+bree: Three times.`,
+    enter: g => { g.flag('teddy_number'); g.know('teddy_number', ['sam', 'teddy'], 'You have Teddy\'s number. The deal: if Halcyon comes for one of you, you call the others.'); },
+    next: 'a2_pr_leave'
+  },
+  a2_pr_stop_strong: {
+    enter: g => { g.flag('teddy_number'); g.flag('teddy_stop', 'promised'); g.know('teddy_mother', ['sam']); ['brannigan_name', 'halcyon_beds', 'halcyon_outreach'].forEach(f => { if (g.knows(f)) g.know(f, ['teddy', 'bree', 'heck']); }); g.bond('teddy', { respect: 3, trust: 1 }); g.know('teddy_number', ['sam', 'teddy'], 'You have Teddy\'s number. Teddy promised: no more armored trucks. The deal: if Halcyon comes for one of you, you call the others.'); },
+    text: `sam: I'll tell you what I know when you stop robbing armored trucks. A guard almost died at Girard. A trolley full of people.
+
+Teddy looks at you for a long beat. Then he looks through the doorway at his mother in the recliner.
+
+teddy: We've got enough. For the evaluation. Not the surgery. The evaluation.
+
+sam: Teddy.
+
+teddy: …Okay. No more trucks. I swear.
+
+Bree presses her lips together and plays it back at him in his own voice, *"No more trucks. I swear,"* and grins.
+
+bree: Recorded.
+
+teddy: Yeah. I know.
+
+So you tell them: the polo shirt, the name, the beds. Teddy writes his number on the pizza box lid with a Sharpie and tears it off.
+
+teddy: If they come for one of us, we call the rest. All of us. That's the only deal I've got.`,
+    next: 'a2_pr_leave'
+  },
+  a2_pr_stop_weak: {
+    enter: g => { g.flag('teddy_number'); g.flag('teddy_stop', 'maybe'); g.know('teddy_mother', ['sam']); g.bond('teddy', { respect: 1 }); g.know('teddy_number', ['sam', 'teddy'], 'You have Teddy\'s number. The deal: if Halcyon comes for one of you, you call the others.'); },
+    text: `sam: I'll tell you what I know when you stop robbing armored trucks.
+
+teddy: When my mother has a kidney, I'll stop robbing armored trucks.
+
+He says it without heat. It's just a fact.
+
+teddy: But I'll be careful. Nobody else gets hurt. That's the best I can do.
+
+It isn't enough. It's what there is. You tell them some of it. Teddy writes his number on the pizza box lid and tears it off.
+
+teddy: If they come for one of us, we call the rest.`,
+    next: 'a2_pr_leave'
+  },
+  a2_pr_stop_miss: {
+    enter: g => { g.bond('teddy', { tension: 2, respect: -1 }); g.flag('teddy_stop', 'refused'); },
+    text: `sam: I'll tell you what I know when you stop robbing armored trucks.
+
+Teddy's face closes like a garage door.
+
+teddy: You've got a mother, right? A family? A house with a roof? Must be nice to have principles.
+
+heck: Teddy.
+
+teddy: No. He came into *my* kitchen. In that shirt.
+
+He opens the front door. The heat comes in like a wall.
+
+teddy: Thanks for the pizza.`,
+    next: 'a2_pr_leave'
+  },
+  a2_pr_lie: {
+    text: `sam: I haven't seen anything. Sorry.
+
+Teddy nods slowly.
+
+teddy: Okay.
+
+He doesn't believe you, but he lets it go, which is maybe the most Teddy thing you'll ever see him do. He writes a number on the pizza box lid with a Sharpie and tears it off anyway.
+
+teddy: In case you start seeing things.`,
+    enter: g => { g.flag('teddy_number'); g.know('teddy_number', ['sam', 'teddy'], 'You have Teddy\'s number. "In case you start seeing things."'); },
+    next: 'a2_pr_leave'
+  },
+  a2_pr_lie_miss: {
+    enter: g => g.bond('teddy', { trust: -1 }),
+    text: `sam: I haven't seen anything.
+
+Bree laughs. Then, in your voice, perfect: *"I haven't seen anything."* She plays it again, slower, and in the slow version you can hear it: the tiny catch before *anything*, the breath of a lie.
+
+bree: That's a lie, Wawa. You lie in B-flat.
+
+Teddy opens the front door.
+
+teddy: Thanks for the pizza.`,
+    next: 'a2_pr_leave'
+  },
+  a2_pr_leave: {
+    clock: { time: '9:05 PM' },
+    enter: g => { if (g.f('teddy_number')) g.know('sam_number', ['sam', 'teddy'], 'Teddy has your number.'); },
+    text: g => `On the stoop, Heck follows you out. He stands in the doorway, huge, his skin faintly glowing in the dark like a lamp behind a lampshade.
+
+heck: The heat, papa. It makes it worse. Every day it's hot, I run hotter. Last night I woke up and the sheets were on fire. Not smoking. *On fire.*
+
+He holds up his hands. The air above them wobbles.
+
+heck: If it gets bad, I don't know if I can turn it off.
+
+He goes back inside. ${g.f('teddy_number') ? 'Before you get on the bike, you text the number on the cardboard so he has yours: *its the cold guy.* Through the screen door you hear a phone buzz on the counter. You ride back across North Philly with Teddy\'s number in your pocket on a piece of cardboard that smells like pizza.' : 'You ride back across North Philly with nothing in your pocket but the smell of a stranger\'s kitchen.'} The sky over City Hall is dark already. It's still a hundred degrees.`,
+    next: 'a2_blackout'
+  },
+  a2_no_go: {
+    clock: { time: '8:40 PM' },
+    text: `You don't go. You sit on your bed in 9-14 with the window open and the box fan roaring and eat Mrs. Bhattacharya's biryani straight out of the container. It's the best thing you've eaten in your life. It's so spicy you sweat, which in a hundred-degree room is a kind of madness.
+
+At 8:40, Ciro texts you a photo. It's a note someone has slid under the door of the closed store, written on the back of a Ciro's menu in careful block capitals:
+
+> IF HE DIDN'T COME, TELL HIM: WATCH FOR A GRAY VAN. THEY TOOK A GIRL NAMED MARISOL. SHE WENT TO THEIR "STUDY" AND DIDN'T COME BACK. WE'RE NOT THE BAD GUYS HE SHOULD WORRY ABOUT. —T
+
+TXT ciro: who is T
+TXT ciro: dont tell me
+TXT ciro: i dont want to know`,
+    enter: g => { g.know('marisol', ['sam', 'teddy'], 'Teddy left a note: a girl named Marisol went to Halcyon\'s "study" and didn\'t come back. Watch for a gray van.'); },
+    next: 'a2_blackout'
+  },
+
+  /* ================= ACT TWO: NINTH FLOOR ================= */
+  a2_blackout: {
+    card: { kind: 'act', label: 'Act Two', title: 'Ninth Floor' },
+    night: true,
+    loc: 'CARDONE HALL · 9TH FLOOR',
+    clock: { time: '9:41 PM' },
+    text: `At 9:41 PM, every light in Cardone Hall goes out at once.
+
+Not a flicker. A *click*, deep in the building, like a giant switch being thrown, and then nothing: no hum of the fridge, no rattle of the box fan, no whine of the elevator motor, nothing but the sudden huge silence of fourteen floors of concrete that have stopped breathing.
+
+You stand very still in the dark. For one second, your heart slams against your ribs, because you think it's *happening again*.
+
+But it isn't cold. It's the opposite of cold. It's a hundred and one degrees, and getting hotter, and through the window the whole of North Broad is dark for blocks in every direction, the streetlights out, only car headlights moving. To the south, Center City is still lit up like a birthday cake. A rolling outage. PECO.
+
+In the hallway, a phone flashlight comes on.
+
+Jules is standing in the doorway of 9-11 in a tank top and running shorts, with a book in one hand and her phone in the other, and the white light of the flashlight throws her shadow huge against the cinderblock.
+
+jules: Of course.
+
+From the stairwell door at the end of the hall comes another light: a battery lantern, swinging. Grace comes through with a clipboard under her arm, sweat-soaked, in an RA polo.
+
+grace: PECO says four to six hours. Rolling. The elevators are dead. Devontae from 9-02 is stuck in one between six and seven. He's fine. He's eating a sleeve of Oreos and doing a podcast about it. Fire department's coming for him.
+
+She looks at the two of you, standing in your doorways across the hall from each other, the only people left on the ninth floor.
+
+grace: It's twelve degrees cooler on the roof. I didn't say that. The alarm on the roof door doesn't work. I didn't say that either.
+
+She goes back into the stairwell. Her lantern bobs down and away.
+
+Jules looks at you across the hallway.
+
+jules: Twelve degrees.
+
+sam: That's what she didn't say.`,
+    choices: [
+      { text: '"I\'ve got ice packs. In a cooler of biryani. Long story." Hold up the cooler.', tag: 'Roof',
+        fx: g => { g.flag('roof_why', 'biryani'); g.bond('jules', { affection: 1 }); }, go: 'a2_roof' },
+      { text: '"After you, Your Highness." You\'re never going to stop.', if: g => g.f('door') === 'highness', tag: 'Roof',
+        fx: g => { g.flag('roof_why', 'highness'); g.bond('jules', { respect: 1 }); }, go: 'a2_roof' },
+      { text: 'Just go. Hold the stairwell door. Let her decide.', tag: 'Roof',
+        fx: g => { g.flag('roof_why', 'door'); g.bond('jules', { trust: 1 }); }, go: 'a2_roof' }
+    ]
+  },
+  a2_roof: {
+    night: true,
+    loc: 'CARDONE HALL · ROOF',
+    clock: { time: '10:05 PM' },
+    text: g => `${{ biryani: 'jules: Why do you have a cooler of biryani?\n\nsam: Nik\'s mom. She said eat it before Monday or it\'ll kill me.\n\njules: That\'s the most reasonable threat I\'ve heard all week.', highness: 'She looks at you for a long second.\n\njules: You\'re never going to stop.\n\nsam: Nope.\n\nShe walks past you into the stairwell. You could swear, in the flashlight, that she\'s almost smiling.', door: 'You hold the stairwell door. She looks at you, then at the dark stairs, then at you again. She goes up.' }[g.f('roof_why')]}
+
+The roof is gravel and tar and HVAC units, all dead. It's eighty-nine degrees up here, which feels like a mercy. And North Philadelphia is *gone*.
+
+Every streetlight, every window, every bodega sign, for half a mile in every direction, is dark. The city has been switched off around you. You can see stars, *actual stars*, three or four of them, which you've never seen from North Philly in your life. And to the south, Center City glows like a bonfire behind a hill, every tower lit, William Penn on top of City Hall in his little spotlight like he's onstage.
+
+Jules walks to the parapet and stands there with the hot wind pulling at her hair, long enough for you to count the stars twice.
+
+jules: It looks like that night.
+
+sam: The Hitch?
+
+jules: The lights all going out. The city going dark around you. Like being in the eye of something.
+
+She sits down on the gravel with her back against an HVAC unit. After a second, so do you. Not close. A careful two feet of gravel between you.
+
+You open the cooler. Her beverage center died with everything else, so she's brought four seltzers that are already lukewarm. You trade her an ice pack. She holds it against the back of her neck and closes her eyes, and makes a sound you've never heard her make, a small, helpless sound of relief, and then opens her eyes and looks at you like she's daring you to mention it.
+
+You don't mention it.`,
+    choices: [
+      { text: 'Ask about the Hitch. "Where were you? When it happened."', tag: 'The night',
+        fx: g => { g.flag('roof1', 'hitch'); g.bond('jules', { trust: 1 }); }, go: 'a2_roof_hitch' },
+      { text: 'Make her laugh. That\'s what you\'re for.',
+        check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', near: ['jules'], label: 'Make her laugh', on: { strong: 'a2_roof_laugh', weak: 'a2_roof_laugh_weak', miss: 'a2_roof_laugh_weak' } },
+        fx: g => g.flag('roof1', 'laugh') },
+      { text: 'Don\'t talk. Look at the stars. Let the quiet be enough.', tag: 'Quiet',
+        fx: g => { g.flag('roof1', 'quiet'); g.bond('jules', { respect: 1, trust: 1 }); }, go: 'a2_roof_quiet' }
+    ]
+  },
+  a2_roof_hitch: {
+    night: true,
+    enter: g => g.know('sam_in_zone', ['jules']),
+    text: `sam: Where were you? When it happened. Before the window.
+
+She's quiet for a while.
+
+jules: At the concert. With Simone. Standing by the bubble tea place because there was shade. I was looking at my phone. My mother had texted me a photo of my old room at Ravenscourt, with no caption. Just my room. Made up. Waiting.
+
+She turns the seltzer can in her hands.
+
+jules: And then it went cold, and everything stopped, and I…
+
+She stops.
+
+jules: I don't remember the next part. Simone says the window came down. I don't remember the window. I remember the cold, and then I was sitting on the curb, and there was glass all around me, in a circle, like a drawing of a sun.
+
+sam: You remember the cold?
+
+jules: Like January. Like the chapel at Gran's house in January.
+
+She looks at you sideways.
+
+jules: You remember it too. Right? Everyone does.
+
+She says *everyone* like she's checking.`,
+    next: 'a2_glow'
+  },
+  a2_roof_laugh: {
+    night: true,
+    enter: g => { g.bond('jules', { affection: 2 }); g.flag('roof_laugh'); },
+    text: g => `You do Devontae, stuck in the elevator, recording a podcast. *"Welcome back to Trapped, the podcast. I'm your host, and I'm in an elevator. Today's guest is an Oreo."*
+
+${g.f('study_laugh') ? 'She broke once already, over the squeeze theorem, and hated it.' : 'You\'ve been trying to make her laugh for two weeks.'} You expect nothing.
+
+She laughs.
+
+${g.f('rec_laugh') || g.f('study_laugh') ? 'It isn\'t the shocked *ha*, and it isn\'t the swallowed thing she does behind her wrist.' : 'It isn\'t the polite nothing she gave your Ciro impression.'} It's a real laugh, out loud, on a dark roof, with her head back against an HVAC unit and her eyes closed, and it goes on longer than the joke deserves.
+
+When she stops, she wipes her eyes with the back of her wrist.
+
+jules: That wasn't even funny.
+
+sam: You laughed for, like, a minute.
+
+jules: I'm *tired*, Kearney. I'm tired and it's a hundred degrees and Devontae is doing a podcast in an elevator.
+
+She's still smiling, and she's furious about it.
+
+jules: I hate that.
+
+sam: I know.`,
+    next: 'a2_glow'
+  },
+  a2_roof_laugh_weak: {
+    night: true,
+    text: `You do Devontae stuck in the elevator recording a podcast. She smiles, a little, at the gravel.
+
+jules: You're very committed to that.
+
+sam: I'm committed to everything.
+
+jules: That's what worries me.
+
+She says it lightly. It doesn't come out light.`,
+    next: 'a2_glow'
+  },
+  a2_roof_quiet: {
+    night: true,
+    text: `You don't say anything. Neither does she.
+
+You sit with your backs against a dead HVAC unit and look at the four stars over North Philadelphia, the first you've ever seen from here, and listen to the city: car alarms, a radio somewhere playing salsa off a battery, a dog, a kid laughing on a fire escape, a siren very far away.
+
+After a long time she says, without turning her head:
+
+jules: Thank you.
+
+sam: For what?
+
+jules: For not filling it.
+
+That's all. But she moves her hand on the gravel between you, a little, a few inches. Not to you. Just closer.`,
+    next: 'a2_glow'
+  },
+
+  a2_glow: {
+    night: true,
+    clock: { time: '11:38 PM' },
+    text: g => `At 11:38, the smoke starts.
+
+You see it first: a thin gray column rising out of the dark to the north, a little west of Broad, black against the stars. Then the color under it, an orange that flickers wrong. Then the sirens, three, four, five, all converging.
+
+Jules stands up and goes to the parapet.
+
+jules: That's close.
+
+It's about ten blocks. Fifteenth and Lehigh, maybe. In the dark you can see the shapes of the rowhouses against the glow, and one of them is *burning*, a whole row of windows lit orange from the inside.
+
+And then you feel it, in your chest. Not the Slip, not exactly, but something like it, an answering cold. It's like when you hear your name across a crowded room before you know you've heard it.
+
+Your phone buzzes. ${g.f('teddy_number') ? 'A text. Not from Nik.\n\nTXT teddy: 15th & lehigh\nTXT teddy: the van came\nTXT teddy: heck cant turn it off\nTXT teddy: please' : 'The burner. Nik, from Edison.\n\nTXT nik: bro\nTXT nik: scanner. 15th & lehigh. structure fire, multiple occupants, 3rd floor\nTXT nik: and the dispatcher just said "subject on fire, WALKING"\nTXT nik: walking sam'}
+
+Beside you, Jules is watching the fire with her arms folded. Then she's watching *you*. Watching you read your phone.
+
+jules: What is it?`,
+    choices: [
+      { text: '"Bathroom. Two minutes." Go. Lie and go.',
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['jules'], near: ['jules'], label: 'Lie to Jules', on: { strong: 'a3_go', weak: 'a3_go', miss: 'a3_go' } },
+        fx: g => { g.flag('leave', 'lie'); } },
+      { text: '"I have to go. I can\'t tell you why. I\'m sorry." Look at her when you say it.', tag: 'Can\'t',
+        fx: g => { g.flag('leave', 'cant'); g.heat('jules', 1); g.bond('jules', { respect: 1 }); }, go: 'a3_go' },
+      { text: 'Stay. The fire department is coming. This is what the fire department is for.', tag: 'Stay',
+        fx: g => { g.flag('leave', 'stay'); g.hidden('revenant_drift', -1); }, go: 'a3_stayed' }
+    ]
+  },
+
+  /* ================= ACT THREE: FIFTEENTH STREET ================= */
+  a3_go: {
+    card: { kind: 'act', label: 'Act Three', title: 'Fifteenth Street' },
+    night: true,
+    loc: 'N. 15TH ST & W. LEHIGH AVE',
+    clock: { time: '11:44 PM' },
+    enter: g => { if (g.f('leave') === 'lie') g.flag('jules_lied_roof'); g.pool('focus', -2); g.drift(1); g.mastery(2); ['teddy', 'bree', 'heck'].forEach(id => g.meet(id)); },
+    text: g => `${{ lie: 'jules: Two minutes.\n\nShe says it flatly, still watching the fire. You go before she can look at you.', cant: 'She looks at you for a long moment. Something moves in her face.\n\njules: Go, then.\n\nShe doesn\'t ask. She turns back to the fire. You go.', stay: '' }[g.f('leave')]}
+
+${{ hoodie: 'Down the stairs in the dark, nine flights. Black hoodie, gaiter up to your eyes, Pop\'s Eagles cap backward.', windbreaker: 'Down the stairs in the dark, nine flights. Ciro\'s windbreaker on, inside out, zipped to your chin, in a hundred degrees.', helmet: 'Down the stairs in the dark, nine flights. The helmet on, the visor down, the world gone amber.', none: 'Down the stairs in the dark, nine flights. No mask, no hood, no nothing. Just you.' }[g.f('costume')]} You come out the side door onto Broad, and you step through.
+
+Ten blocks in the Slip. The burning city stopped around you, smoke hanging in frozen gray curtains. The cold is a relief so huge it's almost obscene. You run.
+
+You step back out on the corner of 15th and Lehigh, and the heat hits you like a door.
+
+It's a rowhouse block, narrow, both sides, with Temple Hospital lit up on its generators ten blocks north, the only bright thing for a mile. The third house from the corner is *burning*, flames out of the first-floor windows and climbing, black smoke rolling up the brick. The house next to it has started to go. People are on the sidewalk in their underwear, screaming, filming, throwing buckets of water that turn to steam before they land.
+
+And in the middle of the street, standing in a puddle that's boiling around his bare feet: Heck.
+
+His clothes are mostly gone. His skin is *glowing*, not like a coal now but like a stove element, orange-white, the air around him rippling so hard he looks like he's underwater. He's crying, and the tears are steam.
+
+heck: I can't. I can't turn it off, I can't, I can't—
+
+At the end of the block, a gray van sits at an angle across the street with its side door open. Two men in gray polos are crouched behind it holding long black rifles. Not guns. Something with a cylinder under the barrel. *Dart* rifles. They're calm. They're waiting for Heck to cool down enough to touch.
+
+And Teddy is standing at the van's front bumper with his bare hand on the hood. The van isn't going anywhere. It's frozen in place, as immovable as Broad Street. But Teddy can't let go. If he lets go, they drive off with whatever they came for.
+
+Bree is on the sidewalk screaming at the men in polos in a dozen voices at once: a cop's, a firefighter's, a priest's, a mother's. They don't even look at her.
+
+And on the third floor of the burning house, at the window, there's a woman holding a baby, and a little boy beside her, maybe six, his face pressed to the glass. The stairs behind them are gone. You can see the orange light coming up through the floor.
+
+The fire trucks are still four blocks away. You can hear them.
+
+You've got one Slip in you. Maybe two. You've got time to do one thing right.`,
+    choices: [
+      { text: 'The window. The woman, the baby, the boy. Get them out.', tag: 'The family',
+        fx: g => { g.flag('fire', 'family'); g.hidden('revenant_drift', 0.3); }, go: 'a3_family' },
+      { text: 'Heck. He\'s going to burn the whole block down. There\'s a hydrant on the corner.', tag: 'Heck',
+        fx: g => { g.flag('fire', 'heck'); }, go: 'a3_heck' },
+      { text: 'The van. The men with the dart rifles. Take them out of this before they take somebody.', tag: 'The van',
+        fx: g => { g.flag('fire', 'van'); g.hidden('halcyon_heat', 3); }, go: 'a3_van' }
+    ]
+  },
+  a3_stayed: {
+    night: true,
+    card: { kind: 'act', label: 'Act Three', title: 'Fifteenth Street' },
+    enter: g => { g.flag('fire', 'stayed'); g.flag('bree_taken'); g.know('bree_taken', ['sam', 'teddy', 'heck'], 'Halcyon took Bree Kowal at 15th & Lehigh the night you stayed on the roof.'); g.know('let_fire_burn', ['sam'], 'You stayed on the roof while 15th & Lehigh burned.'); },
+    text: g => `You stay.
+
+You put your phone face down on the gravel and you stand at the parapet next to Jules and you watch the fire, and ${g.knows('assunta') ? 'every cell in your body that came from Assunta DiNardo' : 'every cell in your body, every fight you ever stepped into,'} screams at you to *go*.
+
+You don't go.
+
+The first truck turns onto Lehigh at 11:45. The second alarm rolls in at 11:51, which you notice, and which makes your skin crawl. The orange in the windows goes from bright to dull to steam. It takes an hour. At one point the whole roof of the burning house falls in with a sound like a slow clap, and a column of sparks goes up into the dark, and Jules takes a breath and holds it.
+
+${g.f('teddy_number') ? 'Your phone buzzes against the gravel. Once. Twice. Six times. You don\'t turn it over.' : 'The burner buzzes against the gravel. Nik. Then Nik again. You don\'t turn it over.'}
+
+Later, you'll read about it in the Inquirer. A mother and a six-year-old boy, rescued from a third-floor window by ladder. The baby, eight months old, treated for smoke inhalation at St. Christopher's. Stable. A man witnesses describe as "glowing," who walked away from the scene before police arrived. A gray van that was there, and then wasn't.
+
+And a girl named Bree Kowal, eighteen, of Port Richmond, reported missing by her family the next morning.
+
+You don't know any of that yet. Right now, all you know is that Jules keeps glancing at you sideways, and you're not doing the thing you were built to do.
+
+jules: You wanted to go.
+
+sam: What?
+
+jules: Just now. You looked at that fire like it was calling your name.
+
+She doesn't push. She just says it, and lets it sit there in the hot dark between you.`,
+    next: 'a4_return'
+  },
+
+  a3_family: {
+    night: true,
+    text: `You step through.
+
+The fire stops. Flame hangs *frozen* out of the windows, orange and gold and white, solid as blown glass, curled like coral. The smoke is a gray ceiling you could almost touch. And it's *cold*. You're climbing toward a burning window, and your breath is fogging.
+
+You go up the front of the house. Not the stairs. The stairs are gone, a hole full of frozen fire. You go up the *outside*: the window ledge, the downspout, the second-floor sill, the brick gone soft and hot even in the Slip. Your fingers burn where they touch it.
+
+Third floor. The window. The woman's face inches from yours through the glass, mouth open, mid-scream. The baby against her chest. The boy's palms flat on the pane.
+
+The glass is the problem.`,
+    choices: [
+      { text: 'Break the glass. Carry them down one at a time. Every second you have.',
+        check: { kind: 'pool', attr: 'body', skill: 'athletics', diff: 2, bonus: 1, bonusLabel: 'Frozen time', power: true, label: 'Three trips down a burning wall', on: { crit: 'a3_family_clean', success: 'a3_family_clean', partial: 'a3_family_partial', fail: 'a3_family_fail', botch: 'a3_family_fail' } } },
+      { text: 'Don\'t climb. Think. Find another way down. The house next door. The roof.',
+        check: { kind: 'd20', attr: 'wits', skill: 'investigate', dc: 13, label: 'See the way out', on: { crit: 'a3_family_clean', success: 'a3_family_clean', fail: 'a3_family_partial', fumble: 'a3_family_fail' } },
+        fx: g => g.hidden('revenant_drift', -0.3) }
+    ]
+  },
+  a3_family_clean: {
+    night: true,
+    enter: g => { g.flag('family', 'clean'); g.drift(2); g.mastery(5); g.xp(1); },
+    text: `You do it.
+
+You'll never be able to explain to anyone how. The glass comes out of its frame in your hands in big frozen sheets. The boy first, under your arm, light as a backpack. Down the wall, across the street, set him on the far curb in the cold. Back up. The baby, so small, warm even in the Slip, pressed against your chest inside your shirt. Down. Back up. The mother, heavy, rigid, her mouth still open around a scream that hasn't happened yet. You get her down the wall a foot at a time, your arms screaming, the pull coming, *coming*—
+
+You set her down on the far curb next to her children.
+
+!! ~WHUMP
+
+The world comes back. The house *roars*. The third-floor window you just emptied explodes outward in a ball of flame, right where they were standing.
+
+The woman on the curb looks at her children. Looks at the window. Looks at her own hands. She starts screaming then, the scream she started three floors up, finishing it on a sidewalk across the street, and the boy grabs her leg, and the baby wails.
+
+Your nose is pouring. Your fingertips are blistered from the brick. You can't feel your arms.`,
+    next: 'a3_rest'
+  },
+  a3_family_partial: {
+    night: true,
+    enter: g => { g.flag('family', 'partial'); g.drift(2); g.mastery(4); g.injure({ id: 'burned_hands', name: 'Burned hands', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
+    text: `You get the boy out. You get the baby out. You get them down the wall and onto the far curb, and you go back up for the mother, and the pull takes you halfway down.
+
+!! ~WHUMP
+
+The world comes back with a roar. You're on the second-floor sill with the mother in your arms, and the window above you explodes, and something burning comes down across your hands and your back.
+
+You jump.
+
+You land in the street holding her, and your ankle goes sideways, and you both go down hard on the asphalt, and she's alive. She's screaming and crawling toward her children on the far curb, and she's alive.
+
+Your hands are burned, both palms, blistered white. You don't feel it yet. You will.`,
+    next: 'a3_rest'
+  },
+  a3_family_fail: {
+    night: true,
+    enter: g => { g.flag('family', 'fail'); g.drift(2); g.injure({ id: 'burned_hands', name: 'Burned hands', pen: 1, heal: 2, affects: ['body', 'reflex'] }); g.hidden('revenant_drift', 1); },
+    text: `You get the boy. You get him down and onto the far curb, and you go back up, and your hands are blistering on the brick, and you get the baby, and you're halfway down when the pull takes you.
+
+!! ~WHUMP
+
+The world comes back. The fire roars. You're clinging to a second-floor sill with a baby against your chest, and above you the mother is still at the window, alone, screaming her children's names, and the glass behind her is turning orange.
+
+You drop to the street. You put the baby in the arms of a neighbor in a bathrobe. You turn around to go back—
+
+—and a ladder truck slews around the corner, and two firefighters are already up it, already at the window, already pulling the mother out into the air. They got her. *They* got her. Not you.
+
+She's alive. She's burned on her arms and her back, and her hair is gone on one side, and she's alive.
+
+*You should have been faster.* You've thought that before. On Spring Garden, about a bus.`,
+    next: 'a3_rest'
+  },
+
+  a3_heck: {
+    night: true,
+    text: `There's a fire hydrant on the corner. Kids opened it this afternoon to cool off, and somebody's closed it since, but the wrench is still lying in the gutter where they left it.
+
+You grab the wrench. You put it on the hydrant's cap. You *heave*.`,
+    choices: [
+      { text: 'Open it. Put everything into it.',
+        check: { kind: 'pool', attr: 'body', skill: 'brawl', diff: 2, power: true, label: 'Crack the hydrant', on: { crit: 'a3_heck_good', success: 'a3_heck_good', partial: 'a3_heck_partial', fail: 'a3_heck_partial', botch: 'a3_heck_partial' } } },
+      { text: 'Slip, crack it, aim the stream. Use the frozen seconds to do it right.', slip: true, go: 'a3_heck_good' }
+    ]
+  },
+  a3_heck_good: {
+    night: true,
+    enter: g => { g.flag('heck_saved', 'clean'); g.bond('heck', { trust: 3, affection: 2 }); g.bond('teddy', { trust: 2 }); g.know('heck_saved', ['sam', 'heck', 'teddy', 'bree'], 'You cooled Heck with a fire hydrant at 15th & Lehigh while the Halcyon men waited with dart rifles.'); },
+    text: `The cap spins off. The hydrant *screams*, and a solid column of water blasts across 15th Street. You get both hands on the nozzle and swing it, and it hits Heck square in the chest.
+
+The street *explodes*. Steam erupts off him in a white wall that rolls down the block, so thick you can't see your own hands. People scream. Somebody's car alarm goes off. And inside the cloud, you hear Heck making a sound like a man who's been on fire for an hour and just put his face in a cold river.
+
+When the steam thins, he's on his knees in the street, and his skin is just skin again: brown, burned in places, smoking, but *skin*. He's gasping. He's alive.
+
+He looks up at you through the steam.
+
+heck: …Papa.
+
+Behind the van, one of the men in polos lowers his dart rifle. He looks at you, at the hydrant, at Heck, and then he says something into a radio on his shoulder, very calm, and you hear the van's side door slide shut.
+
+Teddy takes his hand off the hood. The van backs away down Lehigh Avenue without its headlights and is gone.
+
+Up on the third floor, the window is full of fire. And then a ladder truck slews around the corner, and two firefighters are up it in seconds, and they bring the woman out, and the baby, and the boy, coughing, burned, black with smoke. *Alive.* The fire department got them. You didn't. You'll never know if they needed you.`,
+    next: 'a3_rest'
+  },
+  a3_heck_partial: {
+    night: true,
+    enter: g => { g.flag('heck_saved', 'partial'); g.bond('heck', { trust: 2 }); g.injure({ id: 'burned_hands', name: 'Burned hands', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
+    text: `The cap's rusted on. You heave, and heave, and the wrench slips, and you take the skin off two knuckles. Heck is getting hotter. The paint on the car beside him is blistering.
+
+Then the cap *gives*, and the hydrant screams, and you get the water onto him, but you have to get *close* to aim it, close enough that the air coming off him burns your hands on the nozzle, burns them white.
+
+The street explodes in steam.
+
+When it clears, he's on his knees, skin again, gasping. Your hands are blistered from fingertips to wrists. You can't open them.
+
+The van backs away down Lehigh without its headlights. On the third floor, a ladder truck is pulling a woman and a baby and a little boy out of the window, all three black with smoke, all three alive. The fire department got them. Not you.`,
+    next: 'a3_rest'
+  },
+
+  a3_van: {
+    night: true,
+    text: g => `You step through and walk down Lehigh Avenue in the frozen dark to the van.
+
+Two men in gray polos crouch behind it with dart rifles. Up close, they're ordinary: forties, a wedding ring on one, reading glasses pushed up on the other's head. They look like dads at a Little League game. One of them has a tablet clipped to his belt. On the screen, frozen, is a map of North Philly covered in little colored dots. One of the dots is pulsing, right here, at 15th and Lehigh.
+
+There's a second dot, pulsing, ten blocks south. At Broad and Cecil B. Moore.
+
+At Cardone Hall.
+
+The pull is coming. You've got seconds.`,
+    choices: [
+      { text: 'Take the rifles. Strip the darts out of both. Throw them down the sewer.', tag: 'Disarm',
+        fx: g => { g.flag('van_did', 'rifles'); }, go: 'a3_van_out' },
+      { text: 'Take the tablet. Whatever they know, you want it.', tag: 'Tablet',
+        fx: g => { g.flag('van_did', 'tablet'); g.know('halcyon_tablet_dots', ['sam'], 'The Halcyon men\'s tablet showed a map of North Philly covered in dots. One pulsed at 15th & Lehigh. Another pulsed at Cardone Hall.'); }, go: 'a3_van_out' }
+    ]
+  },
+  a3_van_out: {
+    night: true,
+    enter: g => { g.drift(2); g.mastery(4); g.know('halcyon_tablet_dots', ['sam'], 'The Halcyon men\'s tablet showed a map of North Philly covered in dots. One pulsed at 15th & Lehigh. Another pulsed at Cardone Hall.'); },
+    text: g => `${g.f('van_did') === 'rifles' ? 'You pull the dart cartridges out of both rifles. There are three darts in each, long, with a yellow fluid inside, and a label printed on the barrel of each one in tiny type: **HALCYON · RECOVERY · ES-SERIES**. You drop all six down the storm drain at the corner.' : 'You unclip the tablet from his belt. It\'s heavy, and cold, and in the frozen world the dot at Cardone Hall is still pulsing on the screen. You tuck it into your waistband under your shirt.'}
+
+!! ~WHUMP
+
+The world comes back. The man ${g.f('van_did') === 'rifles' ? 'raises his rifle and pulls the trigger on an empty chamber. *Click.* He looks at it like it betrayed him.' : 'reaches for the tablet at his belt and finds nothing. He pats himself down twice, like a man who\'s lost his keys.'}
+
+Then he looks up. Right at you.
+
+You're standing ten feet from him, ${g.f('costume') === 'none' ? 'with your face bare in the light of the fire' : ({ hoodie: 'in your hood and gaiter', windbreaker: 'in Ciro\'s windbreaker, inside out', helmet: 'behind your helmet\'s visor' })[g.f('costume')] + ', in the light of the fire'}. He doesn't reach for anything. He just looks at you, calm, the way the tablet man did on Broad, the way you'd look at a deer that walked into your yard.
+
+POLO MAN: Easy, son.
+
+He says it gently.
+
+POLO MAN: We're the good guys.
+
+Then the van door slides shut, and Teddy takes his hand off the hood, and the van backs away down Lehigh without its headlights.
+
+And behind you, at the burning house, Heck is walking into the fire.
+
+He walks straight in through the front door, which is a wall of flame, and the flame doesn't touch him, or it does and he doesn't care. Thirty seconds later he comes back out through it, glowing like a lantern, with the boy under one arm and the baby against his chest and the mother holding onto his back, all three screaming, all three alive.
+
+He sets them down on the sidewalk. The baby's arm is blistered where his hand was. He looks at it. He looks at his own hand.
+
+heck: No. No, no, no. I'm sorry. *Lo siento, mamá, I'm sorry—*
+
+He sits down in the street and puts his face in his burning hands and sobs, and the asphalt under him begins to smoke.`,
+    next: 'a3_rest'
+  },
+
+  a3_rest: {
+    night: true,
+    clock: { day: 'Sun', date: 'Sep 6', time: '12:21 AM' },
+    enter: g => {
+      g.recap('A rowhouse burned at 15th & Lehigh. Halcyon\'s men were waiting with dart rifles.');
+      if (g.f('costume') === 'none') { g.hidden('halcyon_heat', 2); g.heat('press', 2); } else g.heat('press', 1);
+      g.flag('number_was', !!g.f('teddy_number'));
+      if (g.f('fire') === 'family') g.flag('teddy_burned');
+      if (!g.f('teddy_number')) { g.flag('teddy_number'); g.know('teddy_number', ['sam', 'teddy'], 'Teddy wrote his number on the back of your hand. "They\'ll come back. When they do, I\'m calling you."'); }
+      g.know('sam_number', ['sam', 'teddy', 'bree'], 'Teddy and Bree have your number.');
+      g.know('bree_scream', ['sam', 'bree', 'teddy', 'heck'], 'Bree heard something in the cold at 11:51:04 on the night of the Hitch, something from the sky, and her power keeps it. It sounds like a crowd breathing and a clock running the wrong way, and under it, laughing.');
+    },
+    text: g => `${g.f('fire') === 'family' ? 'You find out later what happened behind you while you were on the wall. Teddy did the only thing he could think of: he let go of the van and put his hand on Heck. And Heck *stopped*. Not cooled. Stopped, a glowing statue in the middle of 15th Street, his tears frozen mid-fall, and the men in polos couldn\'t touch him or move him, and after four minutes of trying they gave up and drove away. Teddy held on until the fire trucks came. His hand is burned from palm to wrist.\n\n' : ''}Afterward, in an alley off Lehigh, behind a shuttered laundromat, the four of you. Heck sitting on an overturned milk crate under a garden hose somebody's fed out a back window, letting the water run over his head. Teddy pacing. Bree sitting on the curb with her knees pulled up to her chin, shaking, not from cold.
+
+The fire's mostly out. The trucks are still there, pumping water into the black shell of the house, and the street's full of cops and neighbors and phones, and nobody's looking down this alley.
+
+teddy: ${g.f('fire') === 'van' ? 'You took them out. You *saw* them.' : 'They were going to take him. They had *darts*.'} Bree. Tell him. Play it for him.
+
+bree: Teddy, no.
+
+teddy: *Play it.*
+
+Bree looks at you. Her face is wet. When she speaks, it's in her own voice, very small.
+
+bree: That night. The Hitch. I was on the El platform at Girard. Since that night, everything I hear, I keep. I don't mean I'm a good listener. I mean I keep it. Forever. Every horn, every word. I can play it back.
+
+She swallows.
+
+bree: At 11:51, when it got cold, I heard something. Not on the street. *Up.* Over Kensington. I've never told anybody but Teddy. I play it in my sleep. He hears me.
+
+She closes her eyes and opens her mouth, and the sound comes out of her.
+
+It isn't a voice. It's tens of thousands of people very far away, all drawing the same breath, slowed until the breath takes a minute. Under that, something so low you feel it in your fillings. Under that, a clock, *tock-tick, tock-tick*, running the wrong way around. Heck has been steaming all night. For as long as it plays, his breath comes out as fog. And under all of it, so faint you'll lie awake later deciding whether you heard it:
+
+Laughter.
+
+Not cruel. *Delighted.* Someone very far up, leaning forward.
+
+Bree closes her mouth. The alley is silent except for the hose.
+
+The hair is standing up on your arms. In a hundred degrees.
+
+heck: *Dios.*
+
+teddy: She plays that in her sleep. Every night. I have to wake her up.
+
+He looks at you. Right now he looks about fifteen.
+
+teddy: What *is* that, cold guy?
+
+You don't know. ${g.knows('nonna_key') ? 'You think about Nonna, at her kitchen window, telling you: *if you ever see somebody else moving in there, somebody who shouldn\'t be, you come out.*' : 'You think about the cold, and how it\'s supposed to be empty.'}
+
+${g.f('number_was') ? 'teddy: They\'ll come back. When they do, I\'m calling you.' : 'Teddy takes a Sharpie out of his pocket and writes his number on the back of your hand.\n\nteddy: They\'ll come back. When they do, I\'m calling you.'}
+
+${g.f('number_was') ? '' : 'You text him from the alley, right there, so he has yours: *its the cold guy.* His phone buzzes in his pocket. He doesn\'t look at it.\n\n'}Bree holds her phone out without looking up. You type your number into it. She saves it as WAWA.`,
+    next: 'a4_return'
+  }
+});
+
+/* s01e03c.js */
+/* S1 · E3 · THE BLACKOUT FLOOR, part 3 of 3: Act Four ("4:12 A.M.") and the Tag. */
+EH.scenes('s01e03', {
+
+  a4_return: {
+    card: { kind: 'act', label: 'Act Four', title: '4:12 A.M.' },
+    night: true,
+    loc: 'CARDONE HALL · ROOF',
+    clock: { day: 'Sun', date: 'Sep 6', time: '12:52 AM' },
+    text: g => g.f('fire') === 'stayed' ? `The fire's out. The trucks are still there, their lights turning slow red circles on the rowhouse fronts ten blocks away. The power isn't back. Center City still glows to the south, sealed off and bright, a city in a snow globe.
+
+Jules is sitting with her back against the HVAC unit again, knees up, an ice pack on the back of her neck. You sit down next to her. Not two feet away this time. One.
+
+She doesn't move away.
+
+jules: You wanted to go.
+
+sam: Yeah.
+
+jules: Where?
+
+You don't answer that. She doesn't ask again. She just hands you her ice pack, and you hold it against your face, and you would marry it if it asked.` : `You come up the stairs at 12:52 smelling like a house fire.
+
+${g.hurt('burned_hands') ? 'Your hands are blistered from fingertips to wrists, and you\'re holding them in front of you like you\'re carrying something invisible. ' : ''}${g.S.drift >= 5 ? 'Your nose has been bleeding for an hour.' : 'Your nose bled on the way back and stopped.'} There's soot on your face, in your hair, in your teeth. ${g.f('costume') === 'none' ? 'You didn\'t even have a hood to hide behind.' : 'You stuffed the ' + ({ hoodie: 'hoodie and the cap', windbreaker: 'windbreaker', helmet: 'helmet' })[g.f('costume')] + ' in a recycling bin on Broad and came up nine flights in your undershirt.'}
+
+She's exactly where you left her. Standing at the parapet with her arms folded, watching the fire trucks ten blocks away, the slow red circles of their lights on the rowhouse fronts. She hears the door and turns.
+
+She looks you over by the light of Center City, top to bottom, the way her mother taught her to look at a wound.
+
+jules: ${g.f('leave') === 'lie' ? 'That was a very long bathroom.' : 'You came back.'}
+
+Her voice is very level.
+
+jules: Grace came up to check on us at midnight. I told her you'd gone to the bathroom. ${g.f('leave') === 'lie' ? 'Grace' : 'She'} now believes you have a medical condition. I didn't correct her.
+
+She looks at your face, the soot, the blood on your lip. ${g.hurt('burned_hands') ? 'She looks at your hands.' : ''}
+
+jules: You were *there*.
+
+Not a question.`,
+    choices: [
+      { text: '"There was a fire. I went to help." The truth, or most of it. No more than that.', if: g => g.f('fire') !== 'stayed', tag: 'Some of it',
+        fx: g => { g.flag('ret', 'truth'); g.heat('jules', 1); g.bond('jules', { trust: 2, tension: -1 }); g.know('jules_fire', ['sam', 'jules'], 'Jules knows you ran to the 15th Street fire to help. She doesn\'t know how you got there and back so fast.'); }, go: 'a4_hands' },
+      { text: '"I was helping Grace with Devontae. The elevator." Lie. Hands still.', if: g => g.f('fire') !== 'stayed',
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['jules'], near: ['jules'], label: 'Lie to Jules again', on: { strong: 'a4_ret_lie', weak: 'a4_ret_lie', miss: 'a4_ret_lie_miss' } },
+        fx: g => g.flag('ret', 'lie') },
+      { text: '"I can\'t tell you, Jules." And then: "I\'m sorry."', if: g => g.f('fire') !== 'stayed', tag: 'Can\'t',
+        fx: g => { g.flag('ret', 'cant'); g.heat('jules', 1); g.bond('jules', g.f('leave') === 'cant' ? { respect: 2, trust: 1, tension: -1 } : { respect: 1 }); }, go: 'a4_hands' },
+      { text: 'Lean your head back against the HVAC unit. Close your eyes. "Thanks for the ice."', if: g => g.f('fire') === 'stayed', tag: 'Stay here',
+        fx: g => { g.flag('ret', 'stayed'); g.bond('jules', { trust: 1, tension: -1 }); }, go: 'a4_talk_light' }
+    ]
+  },
+  a4_ret_lie: {
+    night: true,
+    text: `sam: I was helping Grace with Devontae. The elevator. It got stuck again.
+
+She looks at your face. The soot. The blood. Your shirt, which smells like a burning rowhouse from four feet away.
+
+jules: Okay.
+
+She isn't believing you. She isn't even pretending to. She's deciding to let you have it, and she lets you watch her decide.
+
+jules: Sit down before you fall down.`,
+    next: 'a4_hands'
+  },
+  a4_ret_lie_miss: {
+    night: true,
+    enter: g => g.bond('jules', { trust: -1 }),
+    text: `sam: I was helping Grace with Devontae. The elevator—
+
+jules: Don't.
+
+One word, quiet. She doesn't say *ear*. She doesn't have to. Your hand's already halfway up.
+
+jules: You don't have to tell me where you went. I'm not entitled to it. But you came up those stairs smelling like *that*, with your face like *that*, and you looked at me, and you tried to tell me it was an *elevator*.
+
+She sounds tired. Not angry. Worse than angry.
+
+jules: Sit down before you fall down.`,
+    next: 'a4_hands'
+  },
+  a4_hands: {
+    night: true,
+    text: g => `You sit. Your legs give out more than you sit. She sits down next to you, close, closer than she has all night.
+
+${g.hurt('burned_hands') ? `jules: Show me your hands.
+
+You don't want to. She takes your wrists anyway, gently, and turns your hands over in the light of her phone. The palms are blistered white. She makes a sound in her throat.
+
+jules: Second-degree. You need Silvadene and a doctor. You're getting neither until the power comes back.
+
+She opens one of her lukewarm seltzers and pours it slowly over your palms, and it's not cold, but it's *wet*, and you hiss through your teeth, and she doesn't let go. Then she takes the last ice pack out of the biryani cooler, wraps it in the old gray T-shirt she's been using as a pillow, Penn Crew, three sizes too big, and folds your hands around it.
+
+jules: My mother made me do a first-aid course every summer from eight to fourteen. She thought it would make me want to be a surgeon.
+
+sam: Did it?
+
+jules: It made me good at first aid.` : `She takes the last ice pack out of the biryani cooler and presses it against the side of your neck without asking, and holds it there. Her fingers are cold. Her face is very close, looking at the blood on your lip, the soot, your eyes.
+
+jules: Pupils equal and reactive. You're not concussed. Whatever's wrong with you is pre-existing.
+
+sam: Thanks.
+
+jules: You'd have to be concussed to take that as a kindness.`}
+
+Neither of you moves away. The two of you sit against the dead HVAC unit, shoulders almost touching, and watch the fire trucks' lights turn slow red circles on the rowhouses ten blocks away until, one by one, they leave.`,
+    next: 'a4_talk_light'
+  },
+
+  /* ---------- the long night ---------- */
+  a4_talk_light: {
+    night: true,
+    clock: { time: '1:40 AM' },
+    enter: g => { g.know('jules_chapel', ['sam', 'jules'], 'When Jules was seven, Hugh locked her in the family chapel at Ravenscourt overnight. In the dark, she could hear the house breathing. Gran found her in the morning: "Pembertons don\'t need to be afraid of the dark. The dark should be afraid of us." She has slept with a light on ever since.'); },
+    text: `sam: Is there any wooder left?
+
+jules: *Water.*
+
+sam: That's what I said.
+
+She hands you the last seltzer without comment. Then, around one-forty, she starts talking. You don't ask. She just starts, looking out at the dark city.
+
+jules: I sleep with the light on.
+
+sam: I noticed. Your lamp. Under the door.
+
+jules: Of course you noticed.
+
+She pulls her knees up.
+
+jules: When I was seven, my brother locked me in the chapel at Ravenscourt. My grandmother's house. There's a chapel, a real one, stone, from the 1890s. Nobody goes in. It was a joke. Hugh thought it was a joke. He went to bed and forgot about me.
+
+She's quiet for a moment.
+
+jules: It was January. There's no electricity in the chapel. I sat on the floor by the door all night. And it was so dark, the kind of dark where you can't tell if your eyes are open. And I could hear the house. Not creaking. *Breathing.* Slow. In and out. All night. Like it was asleep, and I was inside it.
+
+You don't say anything. You don't trust your voice.
+
+jules: In the morning, Gran found me. She opened the door, and looked at me sitting there, and she said—
+
+She does the voice without meaning to: old, dry, very Main Line.
+
+jules: *"Pembertons don't need to be afraid of the dark, child. The dark should be afraid of us."*
+
+She lets out a breath.
+
+jules: I've slept with a light on every night since. I'm eighteen years old. I'm in the Honors program. I have a lamp.`,
+    choices: [
+      { text: '"Your brother locked a seven-year-old in a freezing chapel *overnight*?" Let her hear how angry you are for her.', tag: 'Angry for her',
+        fx: g => { g.flag('light', 'angry'); g.bond('jules', { trust: 2, affection: 1 }); }, go: 'a4_light_angry' },
+      { text: '"I keep the closet door closed. Every night. Since I was a kid. Mikey told me there was a guy in there." Give her one of yours.', tag: 'Trade',
+        fx: g => { g.flag('light', 'trade'); g.bond('jules', { affection: 1, trust: 1 }); }, go: 'a4_light_trade' },
+      { text: 'Say nothing. Just shift your shoulder, so it\'s touching hers.', tag: 'Touch',
+        fx: g => { g.flag('light', 'touch'); g.bond('jules', { affection: 1, tension: 1 }); }, go: 'a4_light_touch' }
+    ]
+  },
+  a4_light_angry: {
+    night: true,
+    text: `sam: Your brother locked a seven-year-old in a freezing chapel *overnight*? And your grandmother's response was a *motivational poster*?
+
+She looks at you, startled. Then she laughs, one breath, surprised out of her.
+
+jules: Nobody's ever said it like that.
+
+sam: How do people say it?
+
+jules: They say, "Oh, *Hugh*." Like it's a funny story. At Thanksgiving. Hugh tells it. He does the voices. Everyone laughs. I laugh.
+
+sam: Why do you laugh?
+
+She doesn't answer for a long time.
+
+jules: Because if I don't, I'm the only one at the table who isn't.`,
+    next: 'a4_talk_him'
+  },
+  a4_light_trade: {
+    night: true,
+    text: `sam: I keep my closet door closed. Every night, since I was six. Mikey told me there was a guy who lived in there named Mr. Mustard, who ate the toes of boys who left the door open. I'm eighteen. I still check.
+
+She turns her head and looks at you.
+
+jules: *Mr. Mustard.*
+
+sam: He had a whole backstory. He was from Delaware.
+
+jules: That's the most frightening thing I've ever heard.
+
+She's smiling. Not the corner-of-the-mouth thing. Actually smiling, with her whole face, in the dark, and you can see it because you're very close.
+
+jules: Okay. So we're both idiots with older siblings.
+
+sam: Twin. Hugh's not older.
+
+jules: Hugh's *nine minutes* older. He's never let me forget a single one of them.`,
+    next: 'a4_talk_him'
+  },
+  a4_light_touch: {
+    night: true,
+    text: `You don't say anything. You just shift your shoulder an inch, so it's touching hers.
+
+She goes very still.
+
+Then, slowly, so slowly that you could pretend later it never happened, she lets her weight settle against you. Not a lot. A little. The way you'd lean on a wall you weren't sure was there.
+
+She doesn't say anything else for a while. Neither do you. Down on Broad, a car goes by with the windows down playing Lil Uzi Vert, and the bass fades north up the dark avenue, and she breathes out, long and slow, and you feel it through your shoulder.`,
+    next: 'a4_talk_him'
+  },
+
+  a4_talk_him: {
+    night: true,
+    clock: { time: '2:35 AM' },
+    text: g => `jules: Your turn.
+
+sam: My turn for what?
+
+jules: I told you about the chapel. That's a big one. That's a Thanksgiving-level one. Your turn.
+
+You think about it. There's so much you can't tell her: the cold, the Slip, the man across the street with your face. There's so much else, under that, that you've never told anybody.`,
+    choices: [
+      { text: 'Carmen Torres. The bus. "I was too slow. A grandmother broke her hip because I was half a second too slow."', tag: 'Carmen',
+        fx: g => { g.flag('him', 'carmen'); g.heat('jules', 1); g.bond('jules', { trust: 2 }); g.know('jules_carmen', ['sam', 'jules'], 'You told Jules about Carmen Torres. You said you were "too slow." You didn\'t say how fast you were.'); }, go: 'a4_him_carmen' },
+      { text: g => 'Pop.' + (g.knows('pop_owes') ? ' The debt.' : '') + ' "My father owes money to people you don\'t owe money to."', if: g => g.knows('pop_owes') || g.knows('pop_owes_hint') || g.knows('pop_jacket'), tag: 'Pop',
+        fx: g => { g.flag('him', 'pop'); g.bond('jules', { trust: 2 }); g.know('jules_pop', ['sam', 'jules'], 'You told Jules your father owes money to dangerous people.'); }, go: 'a4_him_pop' },
+      { text: 'The thing you\'ve never told anyone: that you think you\'re the family afterthought. Mikey\'s the hero. Gigi\'s the baby. You\'re the one who got in fights.', tag: 'The afterthought',
+        fx: g => { g.flag('him', 'afterthought'); g.bond('jules', { affection: 1, trust: 1 }); }, go: 'a4_him_after' }
+    ]
+  },
+  a4_him_carmen: {
+    night: true,
+    text: g => `You tell her about the bus. Not the Slip. Not the cold. Just a bus, too fast on wet asphalt, and a boy in the crosswalk, and his grandmother on her phone, and you running, and getting there, and not getting there *enough*.
+
+sam: She broke her hip. Sixty-seven. She's learning to walk again. Because I was half a second too slow.
+
+Jules is quiet for a long time.
+
+jules: The video. The Wawa. The thing on the news. The *Blur*.
+
+Your heart stops.
+
+jules: People keep saying he's fast. Like that's the point. Like fast is the whole thing.
+
+She turns her head on the HVAC unit and looks at you.
+
+jules: You know what I think the point is? Somebody *ran toward* it. Everybody else on that corner stood still. He ran toward it. Fast is just what happened after.
+
+She looks away.
+
+jules: Whoever got that boy out from in front of that bus, he didn't break that woman's hip. A bus did.
+
+You can't breathe for a second. ${g.f('carmen_sorry') ? 'You think about Carmen, in the hospital bed: *You don\'t say sorry to me.*' : ''}`,
+    next: 'a4_talk_her'
+  },
+  a4_him_pop: {
+    night: true,
+    text: g => `You tell her about the back booth at the Melrose Diner, and the jacket, and the phone calls${g.knows('pop_owes') ? ', and the night shifts' : ''}. You tell her about the envelope of twenties Pop gave you on move-in day, which is still in your sock drawer.
+
+sam: ${g.knows('pop_owes') ? 'My father owes money to the kind of people you don\'t owe money to.' : 'I think my father owes money to the kind of people you don\'t owe money to. He won\'t say.'} And I can't do anything about it. I can't *fix* it.
+
+Jules is quiet for a while.
+
+jules: You really want to, though.
+
+sam: What?
+
+jules: Fix it. You said it like it physically hurts you that you can't. Like it's a bone out of place.
+
+She pulls her knees in.
+
+jules: My father has never owed anybody anything in his life. Everybody owes *him*. It's worse, Kearney. Trust me. It's so much worse.`,
+    next: 'a4_talk_her'
+  },
+  a4_him_after: {
+    night: true,
+    text: `You tell her. You've never said it out loud. You didn't know you were going to say it until it's out.
+
+sam: Mikey's the hero. He went to Afghanistan and came back and became a cop. He's the one Ma lights candles for. Gigi's the baby, she's the one everybody watches. And I'm the one who got in fights. I'm the one the nuns called Ma about. I'm the one who's *fine*. So I figured, if I'm not useful, if I'm not the one who shows up, then I'm…
+
+You don't finish.
+
+Jules doesn't say anything comforting. She doesn't tell you that's not true. She just looks at you. You can feel it on the side of your face, warmer than the night.
+
+jules: So you carry refrigerators up nine flights of stairs for people who didn't ask.
+
+sam: …Yeah.
+
+jules: That's the worst reason I've ever heard to be kind.
+
+She says it softly.
+
+jules: It's still kind, though.`,
+    next: 'a4_talk_her'
+  },
+
+  a4_talk_her: {
+    night: true,
+    clock: { time: '3:20 AM' },
+    enter: g => { g.know('jules_nothing_happens', ['sam', 'jules'], 'Jules told you: "Nothing happens to me. I don\'t fall. I don\'t get hurt. Everyone calls it luck. I think it\'s the wrong word."'); },
+    text: `At three-twenty, she says something nobody has ever said to you.
+
+jules: Nothing happens to me.
+
+sam: What do you mean?
+
+jules: I mean, *nothing happens to me*. I've never broken a bone. I've never lost at cards. You know that one. When I was twelve, I fell off a horse at a jump, and I landed on my feet. Standing up. Everyone said *what luck*.
+
+She's looking at her own hands.
+
+jules: The window came down on me. A *whole window*. And there was a circle on the ground with me in it, and not one piece touched me.
+
+Her voice is very steady and very quiet.
+
+jules: Everyone calls it luck. I've started to think luck is the wrong word. I just don't know what the right one is.
+
+She looks at you then, and her face in the city light is something you've never seen on her: not composed, not cool, not cutting. *Frightened.*
+
+jules: I've never told anyone that. Not Simone. Not Callum. I don't know why I'm telling you.`,
+    choices: [
+      { text: '"That sounds lonely."',
+        check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', near: ['jules'], label: 'Hear her', on: { strong: 'a4_her_lonely', weak: 'a4_her_lonely_weak', miss: 'a4_her_lonely_weak' } },
+        fx: g => g.flag('her', 'lonely') },
+      { text: '"Maybe something\'s looking out for you." You mean it as comfort.', tag: 'Comfort',
+        fx: g => { g.flag('her', 'looking'); g.bond('jules', { tension: 1, trust: 1 }); }, go: 'a4_her_looking' },
+      { text: '"I believe you." Just that. Nothing else.', tag: 'Believe her',
+        fx: g => { g.flag('her', 'believe'); g.bond('jules', { trust: 2, affection: 1 }); }, go: 'a4_her_believe' }
+    ]
+  },
+  a4_her_lonely: {
+    night: true,
+    enter: g => g.bond('jules', { affection: 2, trust: 2 }),
+    text: `sam: That sounds lonely.
+
+She makes a sound. Not a laugh, not a sob. Something between, something that comes up out of her before she can stop it.
+
+jules: Yes.
+
+She puts the heel of her hand against one eye, hard.
+
+jules: Yes. It is. Everyone thinks it's a *gift*. Everyone thinks I'm *lucky*. Nobody ever thinks, how would you know if anyone actually *liked* you? How would you know if you'd ever actually *won* anything? How would you know if anything you've ever done was *yours*?
+
+She takes her hand away from her eye. It's dry. She's made sure of it, the way you hold pressure on a cut.
+
+jules: You're the first person who's ever said lonely.`,
+    next: 'a4_dawn'
+  },
+  a4_her_lonely_weak: {
+    night: true,
+    enter: g => g.bond('jules', { affection: 1, trust: 1 }),
+    text: `sam: That sounds lonely.
+
+She doesn't answer for a while.
+
+jules: Maybe.
+
+She pulls her knees in tighter.
+
+jules: Everybody else says *lucky*. You said lonely. I don't know what to do with that yet.`,
+    next: 'a4_dawn'
+  },
+  a4_her_looking: {
+    night: true,
+    text: `sam: Maybe something's looking out for you.
+
+She goes very still.
+
+jules: That's what Gran says.
+
+She says it flatly. Something has closed in her face, a door you didn't mean to touch.
+
+jules: *"Something is looking out for us, child. Something always has."* She says it like it's a blessing.
+
+She looks out at the city.
+
+jules: I never told her it sounds like a threat.`,
+    next: 'a4_dawn'
+  },
+  a4_her_believe: {
+    night: true,
+    text: g => `sam: I believe you.
+
+You don't make it smaller with a joke.
+
+She searches your face for the joke anyway.
+
+jules: You *do*.
+
+sam: Yeah.
+
+jules: Why?
+
+You can't tell her why. *Because the world stopped and I didn't. Because time ran backward for me and said "Again." Because I've stood in rain that doesn't fall.* You can't tell her any of it.
+
+sam: ${g.knows('ball_stopped') ? 'Because I watched a pool ball stop a quarter inch from a pocket. On a table I know.' : 'Because you said it like it scares you. People don\'t make up things that scare them.'}
+
+She lets out a breath like she's been holding it since she was twelve.
+
+jules: Okay.
+
+${g.knows('ball_stopped') ? 'She doesn\'t say anything to that. She looks like you\'ve handed her the answer to a question she hasn\'t worked up the nerve to ask.' : ''}`,
+    next: 'a4_dawn'
+  },
+
+  /* ---------- 4:12 ---------- */
+  a4_dawn: {
+    night: true,
+    clock: { time: '4:12 AM' },
+    enter: g => { g.flag('the_night'); },
+    text: g => `It's four-twelve in the morning.
+
+The city is so quiet you can hear a freight train somewhere out past Port Richmond, grinding along the river. The sky over the Delaware is still black. All four stars are still there. Nobody has told them about the morning yet.
+
+You've been talking for six hours. You've talked about everything: the Iggles, which she refuses to call them; whether calculus is real; her horse, named Mercutio, who bit Callum once; Ciro and the frozen peas; Simone's ranking of everyone on the floor by how early they'd die in a horror movie (you: first, "heroically, stupidly"; Jules: last, "out of spite"); your Nonna; her Gran; the smell of the chapel, stone and candle wax and cold; ${g.f('him') === 'carmen' ? 'Carmen, and her whole other hip;' : g.f('him') === 'pop' ? 'your father, and his eggs he didn\'t eat;' : 'Mikey and Mr. Mustard;'} and nothing at all.
+
+${g.f('light') === 'touch' ? 'Her head\'s been on your shoulder for an hour.' : 'Somewhere around three-thirty you stopped being two feet apart. You don\'t know who moved.'}${g.f('ret') === 'lie' ? ' Somewhere after three she forgave you the elevator. Or filed it, carefully, somewhere you\'ll find it later. You can\'t tell which.' : ''} Her hair smells like the roof, tar and heat, and under that like cedar.
+
+You realize you've known her for seventeen days.
+
+You realize you've thought about her for sixteen of them.
+
+She lifts her head and looks at you. In the dark, her face is very close. Her eyes go to your mouth and come back, and she knows you saw it, and she doesn't pretend she didn't.
+
+jules: Kearney.
+
+sam: Yeah.
+
+jules: I have a boyfriend.
+
+sam: I know.
+
+Nobody moves.`,
+    choices: [
+      { text: 'Lean in. Slowly. Leave her every chance to stop it.', tag: 'Lean in',
+        fx: g => { g.flag('roof_end', 'lean'); }, go: 'a4_lean' },
+      { text: 'Don\'t. Stay exactly here. Close enough to feel her breathe, and not one inch closer.', tag: 'Stay still',
+        fx: g => { g.flag('roof_end', 'still'); g.bond('jules', { respect: 2, trust: 2 }); }, go: 'a4_still' },
+      { text: 'Say something true instead. The truest thing you have.', tag: 'Something true',
+        fx: g => { g.flag('roof_end', 'true'); }, go: 'a4_true' }
+    ]
+  },
+  a4_lean: {
+    night: true,
+    enter: g => { g.bond('jules', { affection: 1, tension: 1 }); g.know('almost_kiss', ['sam', 'jules'], 'At 4:12 a.m. on the roof of Cardone Hall, you leaned in. She put her forehead against yours. She said, "Not like this." Neither of you moved until the sun came up.'); },
+    text: g => `You lean in. Slowly. So slowly that she has every chance in the world.
+
+She doesn't take any of them.
+
+Her eyes close. Yours almost do. You're close enough to feel her breath on your lip, close enough that the space between you is warm.
+
+And then she stops. Not away. She just *stops*, and tips her head forward, and puts her forehead against yours, and stays there.
+
+jules: Not like this.
+
+She says it so quietly it's almost just breath.
+
+jules: Not while I'm someone else's. Not on a roof${g.f('fire') === 'stayed' ? ' at four in the morning with the whole city switched off' : ' with you smelling like a house fire'}. I don't want it to be one more thing that just goes my way, Sam. Everything goes my way. When it happens, I want to have *chosen* it.
+
+Her hand finds yours on the gravel. ${g.hurt('burned_hands') ? 'She holds it very carefully, around the blisters.' : 'Her fingers are cool.'}
+
+So you stay like that. Forehead to forehead on the roof of Cardone Hall, holding hands on the gravel, while the sky over the Delaware goes from black to gray to pink, and the first El grinds north, and neither of you moves until the sun comes up.`,
+    next: 'tag_morning'
+  },
+  a4_still: {
+    night: true,
+    enter: g => { g.bond('jules', { affection: 1 }); g.know('roof_still', ['sam', 'jules'], 'At 4:12 a.m. on the roof, you didn\'t lean in. She put her head on your shoulder and fell asleep there until the sun came up.'); },
+    text: g => `You don't move. It's the hardest thing you've done all night, and tonight you ${({ family: 'climbed a burning building', heck: 'opened a hydrant on a man who was on fire', van: 'walked up to two men with dart rifles', stayed: 'stood still while a block burned' })[g.f('fire')]}.
+
+You stay exactly where you are. Close enough to feel her breathe. Not one inch closer.
+
+She watches you not move. Something happens in her face, slowly, like the sky over the river: a lightening, a surprise.
+
+jules: You're not going to.
+
+sam: You have a boyfriend.
+
+jules: I know. I said that.
+
+sam: I heard you.
+
+She laughs, more breath than sound, and shakes her head.
+
+jules: Everyone takes what they want from me, Kearney. Politely. With a toast. They don't even know they're doing it.
+
+She puts her head down on your shoulder.
+
+jules: Thank you for not happening.
+
+She falls asleep there, five minutes later, with her head on your shoulder and her hand on your knee, and you sit very still on the roof of Cardone Hall with a girl asleep against you and watch the sun come up over the Delaware, and you don't move until it's all the way up, and your arm has been asleep for an hour.`,
+    next: 'tag_morning'
+  },
+  a4_true: {
+    night: true,
+    text: `You say something true instead. You don't plan it. It just comes out.`,
+    choices: [
+      { text: '"I think about you all the time, and I don\'t even like you."',
+        check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', near: ['jules'], label: 'Say it', on: { strong: 'a4_true_strong', weak: 'a4_true_weak', miss: 'a4_true_weak' } } },
+      { text: '"You\'re the first person in my life who looked at me like I might be more than what I look like."',
+        check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', near: ['jules'], label: 'Say it', on: { strong: 'a4_true_strong2', weak: 'a4_true_weak', miss: 'a4_true_weak' } } }
+    ]
+  },
+  a4_true_strong: {
+    night: true,
+    enter: g => { g.bond('jules', { affection: 2, tension: -1, trust: 1 }); g.know('true_thing', ['sam', 'jules'], 'At 4:12 a.m. you told Jules: "I think about you all the time, and I don\'t even like you." She said: "Same."'); },
+    text: g => `sam: I think about you all the time. And I don't even like you.
+
+For a second, nothing. Then she laughs. Not a breath, not swallowed behind a wrist: she *laughs*, helplessly, with her forehead on her knees and her shoulders shaking, and it goes on and on, and it's the best sound you've ever made happen.
+
+When she lifts her head, her eyes are wet.
+
+jules: Same.
+
+sam: *Same?*
+
+jules: I think about you constantly. It's *humiliating*. You're loud and you're sweaty and you carry other people's refrigerators and ${g.f('jules_lied_roof') || g.f('ret') === 'lie' ? 'you lie badly and you touch your *ear*' : 'you lie well enough that I can\'t always tell, which I *hate*, except for your *ear*'}, and I lie in bed with the lamp on and think about the stupid face you made when ${g.knows('ball_stopped') ? 'the eight ball stopped' : 'I sank the eight'}.
+
+She wipes her eyes.
+
+jules: And I have a boyfriend. Who is *kind*. Who rows on the river at five in the morning and sends me pictures of it.
+
+She looks at the sky, which is getting lighter whether she likes it or not.
+
+jules: So I don't know what we do with that.
+
+sam: Nothing. Not tonight.
+
+jules: Not tonight.
+
+She leans her head against your shoulder, and stays there, and you watch the sun come up over the Delaware together, and neither of you says anything else, because there isn't anything else.`,
+    next: 'tag_morning'
+  },
+  a4_true_strong2: {
+    night: true,
+    enter: g => { g.bond('jules', { affection: 2, tension: -1, trust: 1 }); g.know('true_thing', ['sam', 'jules'], 'At 4:12 a.m. you told Jules she was the first person who looked at you like you might be more than you look like. She said: "You are."'); },
+    text: `sam: You're the first person in my life who looked at me like I might be more than what I look like.
+
+She doesn't laugh. She looks at you until the roof goes quiet the way the world does when it stops.
+
+jules: You are.
+
+She says it like the answer to a limit: not where a thing is, but where it's going.
+
+Then she leans her head against your shoulder, and you watch the sun come up over the Delaware, and you don't say anything else.`,
+    next: 'tag_morning'
+  },
+  a4_true_weak: {
+    night: true,
+    enter: g => { g.bond('jules', { affection: 1, tension: -1 }); },
+    text: `You say it, and it comes out wrong, too fast, half a joke, the way you say everything that matters.
+
+She heard what you meant under it anyway. You can see her hear it.
+
+jules: I know.
+
+She hears herself say it and shuts her eyes, like she's just let go of something she meant to keep.
+
+jules: That came out wrong too.
+
+sam: No, it didn't.
+
+She puts her head on your shoulder, and leaves it there, and you watch the sun come up over the Delaware together without saying anything else.`,
+    next: 'tag_morning'
+  },
+
+  /* ================= TAG ================= */
+  tag_morning: {
+    card: { kind: 'tag' },
+    loc: 'CARDONE HALL · LOBBY',
+    clock: { day: 'Sun', date: 'Sep 6', time: '8:20 AM' },
+    enter: g => { g.sleep(4); g.meet('callum'); g.bond('callum', { affection: 1 }); },
+    text: g => `The power comes back at 6:02 AM with a *click* that runs through the whole building like a shiver. Somewhere below you, fourteen floors of refrigerators all start humming at once.
+
+You wake up on the roof at eight, sunburned on one side of your face, with gravel printed into your arm. She's already awake, sitting a few feet away with her knees up, watching you sleep, and she looks away fast when you open your eyes. Neither of you mentions it.
+
+Grace's voice comes up the stairwell, tired, echoing:
+
+grace: *Pemberton.* There's a Callum in the lobby. He has iced coffee. He came straight from Boathouse Row.
+
+Jules closes her eyes.
+
+She goes down first. You give it five minutes. You give it seven. Then you go down too, because you're an idiot, and because you have to see.
+
+The lobby is cool again, the AC roaring. Callum Whitford is standing by the front desk in a Penn Crew T-shirt and khaki shorts, holding a cardboard tray of iced coffees and a brand-new box fan, still in the box, under one arm. He has the windburned look of a guy who was on the Schuylkill at five this morning, while you were on the roof.
+
+He's hugging her. Gently, with the coffee tray held out to the side so it won't spill on her.
+
+callum: You weren't answering. Your mom said you weren't coming to the party, and then the news said North Philly was out, and I just… I got you an oat milk thing. And a fan. In case it goes out again.
+
+He's so *nice*. He's so nice it's like being punched.
+
+He sees you over her shoulder. ${g.hurt('burned_hands') ? 'He sees your hands, wrapped in a gray Penn Crew T-shirt that used to be his. He looks at it for exactly one second.' : (g.f('fire') === 'stayed' ? 'He sees the sunburn, and the gravel printed into your arm.' : 'He sees the soot still in your hairline.')} His face goes concerned, genuinely, immediately.
+
+callum: Dude. You okay? You look rough, man. Were you near that fire?
+
+He doesn't wait for an answer. He holds out the coffee tray.
+
+callum: Here. I got an extra. I always get an extra.
+
+You take the coffee. It's cold. It's exactly how you take it. You don't know how he knew.
+
+Over Callum's shoulder, with her chin against his Penn Crew shirt, Jules looks at you.
+
+She doesn't look away.
+
+Your phone buzzes in your pocket. ${g.f('fire') === 'stayed' ? (g.knows('sam_number', 'teddy') ? 'It\'s Teddy.\n\nTXT teddy: they took bree\nTXT teddy: last night. 15th st. the van\nTXT teddy: i texted you six times\nTXT teddy: where were you' : 'It\'s Ciro.\n\nTXT ciro: ' + (g.f('teddy_meet') === 'no' ? 'the T' : 'your pizza friend. the cold one') + ' called the store. 7am\nTXT ciro: he was crying\nTXT ciro: he says tell you they took bree. last night. 15th st. the van\nTXT ciro: he says where were you\nTXT ciro: i dont want to know. i want to know. where were you') : g.f('fire') === 'van' ? 'It\'s a voice note from Bree. You play it with the phone pressed to your ear. It\'s the man in the polo, perfect, calm, close: *"Easy, son."* Then her own voice, small: *"thank you, wawa. heck says thank you. teddy wont say it but he means it."*' : 'It\'s a voice note from Bree. You play it with the phone pressed to your ear. It\'s you, perfect, crackling, from some moment last night you don\'t remember: *"Somebody has to."* Then her own voice, small: *"thank you, wawa."*'}`,
+    end: true
+  }
+});
+
 </script>
 <script>
 /* THE EVENT HORIZON: browser engine (UI, sound, saves). Depends on core.js and the episode files. */

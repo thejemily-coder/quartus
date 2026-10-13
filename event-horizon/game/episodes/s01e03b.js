@@ -39,7 +39,7 @@ teddy: Sit down. Please. I know what you think of us. I'd think it too.`,
     choices: [
       { text: 'Sit. Listen. "Why am I here, Teddy?"', tag: 'Listen',
         fx: g => { g.flag('pr', 'listen'); g.bond('teddy', { respect: 1 }); }, go: 'a2_pr_why' },
-      { text: 'Stay standing by the door. "Talk fast. You froze my sneaker to Broad Street." / "You froze my arm."', tag: 'Guarded',
+      { text: g => 'Stay standing by the door. "Talk fast. ' + (g.f('fight_result') === 'tackle' ? 'You froze my sneaker to Broad Street."' : g.f('fight_result') === 'touched' ? 'You froze my arm."' : 'I let you walk once. That was the deal."'), tag: 'Guarded',
         fx: g => { g.flag('pr', 'guarded'); g.bond('teddy', { tension: 1 }); }, go: 'a2_pr_why' }
     ]
   },
@@ -65,7 +65,7 @@ teddy: Listen. I'm not asking you to like us. I know what we are. I'm asking you
     choices: [
       { text: 'Tell him what you know: the name Brannigan, the beds, the RA bounty. Everything Halcyon.', tag: 'Share',
         fx: g => {
-          g.flag('pr2', 'shared'); g.bond('teddy', { trust: 3, respect: 1 }); g.bond('heck', { trust: 2 }); g.bond('bree', { trust: 1 });
+          g.flag('pr2', 'shared'); ['halcyon_aperture', 'halcyon_tablet_man', 'brannigan_name', 'halcyon_beds', 'halcyon_outreach'].forEach(f => { if (g.knows(f)) g.know(f, ['teddy', 'bree', 'heck']); }); g.bond('teddy', { trust: 3, respect: 1 }); g.bond('heck', { trust: 2 }); g.bond('bree', { trust: 1 });
           if (g.knows('brannigan_name')) g.know('brannigan_name', ['teddy', 'bree', 'heck']);
           if (g.knows('halcyon_beds')) g.know('halcyon_beds', ['teddy', 'bree', 'heck']);
           if (g.knows('halcyon_outreach')) g.know('halcyon_outreach', ['teddy', 'bree', 'heck']);
@@ -98,11 +98,11 @@ teddy: My cell. Bree's under it. Heck doesn't have a phone. He melts them.
 heck: *One time.*
 
 bree: Three times.`,
-    enter: g => { g.flag('teddy_number'); g.know('teddy_number', ['sam', 'teddy'], 'You have Teddy\'s and Bree\'s numbers. The deal: if Halcyon comes for one of you, you call the others.'); },
+    enter: g => { g.flag('teddy_number'); g.know('teddy_number', ['sam', 'teddy'], 'You have Teddy\'s number. The deal: if Halcyon comes for one of you, you call the others.'); },
     next: 'a2_pr_leave'
   },
   a2_pr_stop_strong: {
-    enter: g => { g.flag('teddy_number'); g.flag('teddy_stop', 'promised'); g.bond('teddy', { respect: 3, trust: 1 }); g.know('teddy_number', ['sam', 'teddy'], 'You have Teddy\'s and Bree\'s numbers. Teddy promised: no more armored trucks. The deal: if Halcyon comes for one of you, you call the others.'); },
+    enter: g => { g.flag('teddy_number'); g.flag('teddy_stop', 'promised'); g.know('teddy_mother', ['sam']); ['brannigan_name', 'halcyon_beds', 'halcyon_outreach'].forEach(f => { if (g.knows(f)) g.know(f, ['teddy', 'bree', 'heck']); }); g.bond('teddy', { respect: 3, trust: 1 }); g.know('teddy_number', ['sam', 'teddy'], 'You have Teddy\'s number. Teddy promised: no more armored trucks. The deal: if Halcyon comes for one of you, you call the others.'); },
     text: `sam: I'll tell you what I know when you stop robbing armored trucks. A guard almost died at Girard. A trolley full of people.
 
 Teddy looks at you for a long beat. Then he looks through the doorway at his mother in the recliner.
@@ -125,7 +125,7 @@ teddy: If they come for one of us, we call the rest. All of us. That's the only 
     next: 'a2_pr_leave'
   },
   a2_pr_stop_weak: {
-    enter: g => { g.flag('teddy_number'); g.flag('teddy_stop', 'maybe'); g.bond('teddy', { respect: 1 }); g.know('teddy_number', ['sam', 'teddy'], 'You have Teddy\'s and Bree\'s numbers. The deal: if Halcyon comes for one of you, you call the others.'); },
+    enter: g => { g.flag('teddy_number'); g.flag('teddy_stop', 'maybe'); g.know('teddy_mother', ['sam']); g.bond('teddy', { respect: 1 }); g.know('teddy_number', ['sam', 'teddy'], 'You have Teddy\'s number. The deal: if Halcyon comes for one of you, you call the others.'); },
     text: `sam: I'll tell you what I know when you stop robbing armored trucks.
 
 teddy: When my mother has a kidney, I'll stop robbing armored trucks.
@@ -184,7 +184,8 @@ teddy: Thanks for the pizza.`,
   },
   a2_pr_leave: {
     clock: { time: '9:05 PM' },
-    text: g => `On the stoop, Heck follows you out. He stands in the doorway, huge, his skin faintly glowing in the dusk like a lamp behind a lampshade.
+    enter: g => { if (g.f('teddy_number')) g.know('sam_number', ['sam', 'teddy'], 'Teddy has your number.'); },
+    text: g => `On the stoop, Heck follows you out. He stands in the doorway, huge, his skin faintly glowing in the dark like a lamp behind a lampshade.
 
 heck: The heat, papa. It makes it worse. Every day it's hot, I run hotter. Last night I woke up and the sheets were on fire. Not smoking. *On fire.*
 
@@ -192,7 +193,7 @@ He holds up his hands. The air above them wobbles.
 
 heck: If it gets bad, I don't know if I can turn it off.
 
-He goes back inside. ${g.f('teddy_number') ? 'You ride back across North Philly with Teddy\'s number in your pocket on a piece of cardboard that smells like pizza.' : 'You ride back across North Philly with nothing in your pocket but the smell of a stranger\'s kitchen.'} The sky over City Hall is dark already. It's still a hundred degrees.`,
+He goes back inside. ${g.f('teddy_number') ? 'Before you get on the bike, you text the number on the cardboard so he has yours: *its the cold guy.* Through the screen door you hear a phone buzz on the counter. You ride back across North Philly with Teddy\'s number in your pocket on a piece of cardboard that smells like pizza.' : 'You ride back across North Philly with nothing in your pocket but the smell of a stranger\'s kitchen.'} The sky over City Hall is dark already. It's still a hundred degrees.`,
     next: 'a2_blackout'
   },
   a2_no_go: {
@@ -206,7 +207,7 @@ At 8:40, Ciro texts you a photo. It's a note someone has slid under the door of 
 TXT ciro: who is T
 TXT ciro: dont tell me
 TXT ciro: i dont want to know`,
-    enter: g => { g.know('marisol', ['sam'], 'Teddy left a note: a girl named Marisol went to Halcyon\'s "study" and didn\'t come back. Watch for a gray van.'); },
+    enter: g => { g.know('marisol', ['sam', 'teddy'], 'Teddy left a note: a girl named Marisol went to Halcyon\'s "study" and didn\'t come back. Watch for a gray van.'); },
     next: 'a2_blackout'
   },
 
@@ -289,6 +290,7 @@ You don't mention it.`,
   },
   a2_roof_hitch: {
     night: true,
+    enter: g => g.know('sam_in_zone', ['jules']),
     text: `sam: Where were you? When it happened. Before the window.
 
 She's quiet for a while.
@@ -319,11 +321,11 @@ She says *everyone* like she's checking.`,
     enter: g => { g.bond('jules', { affection: 2 }); g.flag('roof_laugh'); },
     text: g => `You do Devontae, stuck in the elevator, recording a podcast. *"Welcome back to Trapped, the podcast. I'm your host, and I'm in an elevator. Today's guest is an Oreo."*
 
-${g.f('study2') === 'laugh' ? 'She already broke once this week.' : 'You\'ve been trying to make her laugh for two weeks.'} You expect nothing.
+${g.f('study_laugh') ? 'She broke once already, over the squeeze theorem, and hated it.' : 'You\'ve been trying to make her laugh for two weeks.'} You expect nothing.
 
 She laughs.
 
-It isn't the shocked *ha*, and it isn't the swallowed thing she does behind her wrist. It's a real laugh, out loud, on a dark roof, with her head back against an HVAC unit and her eyes closed, and it goes on longer than the joke deserves.
+${g.f('rec_laugh') || g.f('study_laugh') ? 'It isn\'t the shocked *ha*, and it isn\'t the swallowed thing she does behind her wrist.' : 'It isn\'t the polite nothing she gave your Ciro impression.'} It's a real laugh, out loud, on a dark roof, with her head back against an HVAC unit and her eyes closed, and it goes on longer than the joke deserves.
 
 When she stops, she wipes her eyes with the back of her wrist.
 
@@ -455,7 +457,7 @@ You put your phone face down on the gravel and you stand at the parapet next to 
 
 You don't go.
 
-The fire trucks arrive at 11:51, which you notice, and which makes your skin crawl. The orange in the windows goes from bright to dull to steam. It takes an hour. At one point the whole roof of the burning house falls in with a sound like a slow clap, and a column of sparks goes up into the dark, and Jules takes a breath and holds it.
+The first truck turns onto Lehigh at 11:45. The second alarm rolls in at 11:51, which you notice, and which makes your skin crawl. The orange in the windows goes from bright to dull to steam. It takes an hour. At one point the whole roof of the burning house falls in with a sound like a slow clap, and a column of sparks goes up into the dark, and Jules takes a breath and holds it.
 
 ${g.f('teddy_number') ? 'Your phone buzzes against the gravel. Once. Twice. Six times. You don\'t turn it over.' : 'The burner buzzes against the gravel. Nik. Then Nik again. You don\'t turn it over.'}
 
@@ -646,18 +648,19 @@ He sits down in the street and puts his face in his burning hands and sobs, and 
 
   a3_rest: {
     night: true,
-    clock: { time: '12:21 AM' },
+    clock: { day: 'Sun', date: 'Sep 6', time: '12:21 AM' },
     enter: g => {
       g.recap('A rowhouse burned at 15th & Lehigh. Halcyon\'s men were waiting with dart rifles.');
       if (g.f('costume') === 'none') { g.hidden('halcyon_heat', 2); g.heat('press', 2); } else g.heat('press', 1);
       g.flag('number_was', !!g.f('teddy_number'));
+      if (g.f('fire') === 'family') g.flag('teddy_burned');
       if (!g.f('teddy_number')) { g.flag('teddy_number'); g.know('teddy_number', ['sam', 'teddy'], 'Teddy wrote his number on the back of your hand. "They\'ll come back. When they do, I\'m calling you."'); }
       g.know('sam_number', ['sam', 'teddy', 'bree'], 'Teddy and Bree have your number.');
       g.know('bree_scream', ['sam', 'bree', 'teddy', 'heck'], 'Bree heard something in the cold at 11:51:04 on the night of the Hitch, something from the sky, and her power keeps it. It sounds like a crowd breathing and a clock running the wrong way, and under it, laughing.');
     },
     text: g => `${g.f('fire') === 'family' ? 'You find out later what happened behind you while you were on the wall. Teddy did the only thing he could think of: he let go of the van and put his hand on Heck. And Heck *stopped*. Not cooled. Stopped, a glowing statue in the middle of 15th Street, his tears frozen mid-fall, and the men in polos couldn\'t touch him or move him, and after four minutes of trying they gave up and drove away. Teddy held on until the fire trucks came. His hand is burned from palm to wrist.\n\n' : ''}Afterward, in an alley off Lehigh, behind a shuttered laundromat, the four of you. Heck sitting on an overturned milk crate under a garden hose somebody's fed out a back window, letting the water run over his head. Teddy pacing. Bree sitting on the curb with her knees pulled up to her chin, shaking, not from cold.
 
-The fire's out. The trucks are still there, pumping water into the black shell of the house, and the street's full of cops and neighbors and phones, and nobody's looking down this alley.
+The fire's mostly out. The trucks are still there, pumping water into the black shell of the house, and the street's full of cops and neighbors and phones, and nobody's looking down this alley.
 
 teddy: ${g.f('fire') === 'van' ? 'You took them out. You *saw* them.' : 'They were going to take him. They had *darts*.'} Bree. Tell him. Play it for him.
 
@@ -697,7 +700,7 @@ You don't know. ${g.knows('nonna_key') ? 'You think about Nonna, at her kitchen 
 
 ${g.f('number_was') ? 'teddy: They\'ll come back. When they do, I\'m calling you.' : 'Teddy takes a Sharpie out of his pocket and writes his number on the back of your hand.\n\nteddy: They\'ll come back. When they do, I\'m calling you.'}
 
-You text him from the alley, right there, so he has yours: *its the cold guy.* His phone buzzes in his pocket. He doesn't look at it.`,
+${g.f('number_was') ? '' : 'You text him from the alley, right there, so he has yours: *its the cold guy.* His phone buzzes in his pocket. He doesn\'t look at it.\n\n'}Bree holds her phone out without looking up. You type your number into it. She saves it as WAWA.`,
     next: 'a4_return'
   }
 });

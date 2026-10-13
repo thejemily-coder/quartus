@@ -218,7 +218,7 @@ You think about it. There's so much you can't tell her: the cold, the Slip, the 
     choices: [
       { text: 'Carmen Torres. The bus. "I was too slow. A grandmother broke her hip because I was half a second too slow."', tag: 'Carmen',
         fx: g => { g.flag('him', 'carmen'); g.heat('jules', 1); g.bond('jules', { trust: 2 }); g.know('jules_carmen', ['sam', 'jules'], 'You told Jules about Carmen Torres. You said you were "too slow." You didn\'t say how fast you were.'); }, go: 'a4_him_carmen' },
-      { text: 'Pop. The debt. "My father owes money to people you don\'t owe money to."', if: g => g.knows('pop_owes') || g.knows('pop_owes_hint') || g.knows('pop_jacket'), tag: 'Pop',
+      { text: g => 'Pop.' + (g.knows('pop_owes') ? ' The debt.' : '') + ' "My father owes money to people you don\'t owe money to."', if: g => g.knows('pop_owes') || g.knows('pop_owes_hint') || g.knows('pop_jacket'), tag: 'Pop',
         fx: g => { g.flag('him', 'pop'); g.bond('jules', { trust: 2 }); g.know('jules_pop', ['sam', 'jules'], 'You told Jules your father owes money to dangerous people.'); }, go: 'a4_him_pop' },
       { text: 'The thing you\'ve never told anyone: that you think you\'re the family afterthought. Mikey\'s the hero. Gigi\'s the baby. You\'re the one who got in fights.', tag: 'The afterthought',
         fx: g => { g.flag('him', 'afterthought'); g.bond('jules', { affection: 1, trust: 1 }); }, go: 'a4_him_after' }
@@ -251,9 +251,9 @@ You can't breathe for a second. ${g.f('carmen_sorry') ? 'You think about Carmen,
   },
   a4_him_pop: {
     night: true,
-    text: `You tell her about the back booth at the Melrose Diner, and the jacket, and the phone calls, and the night shifts. You tell her about the envelope of twenties Pop gave you on move-in day, which is still in your sock drawer.
+    text: g => `You tell her about the back booth at the Melrose Diner, and the jacket, and the phone calls${g.knows('pop_owes') ? ', and the night shifts' : ''}. You tell her about the envelope of twenties Pop gave you on move-in day, which is still in your sock drawer.
 
-sam: My father owes money to the kind of people you don't owe money to. And I can't do anything about it. I can't *fix* it.
+sam: ${g.knows('pop_owes') ? 'My father owes money to the kind of people you don\'t owe money to.' : 'I think my father owes money to the kind of people you don\'t owe money to. He won\'t say.'} And I can't do anything about it. I can't *fix* it.
 
 Jules is quiet for a while.
 
@@ -450,7 +450,7 @@ jules: Not like this.
 
 She says it so quietly it's almost just breath.
 
-jules: Not while I'm someone else's. Not on a roof with you smelling like a house fire. I don't want it to be one more thing that just goes my way, Sam. Everything goes my way. When it happens, I want to have *chosen* it.
+jules: Not while I'm someone else's. Not on a roof${g.f('fire') === 'stayed' ? ' at four in the morning with the whole city switched off' : ' with you smelling like a house fire'}. I don't want it to be one more thing that just goes my way, Sam. Everything goes my way. When it happens, I want to have *chosen* it.
 
 Her hand finds yours on the gravel. ${g.hurt('burned_hands') ? 'She holds it very carefully, around the blisters.' : 'Her fingers are cool.'}
 
@@ -460,7 +460,7 @@ So you stay like that. Forehead to forehead on the roof of Cardone Hall, holding
   a4_still: {
     night: true,
     enter: g => { g.bond('jules', { affection: 1 }); g.know('roof_still', ['sam', 'jules'], 'At 4:12 a.m. on the roof, you didn\'t lean in. She put her head on your shoulder and fell asleep there until the sun came up.'); },
-    text: `You don't move. It's the hardest thing you've done all night, and tonight you climbed a burning building.
+    text: g => `You don't move. It's the hardest thing you've done all night, and tonight you ${({ family: 'climbed a burning building', heck: 'opened a hydrant on a man who was on fire', van: 'walked up to two men with dart rifles', stayed: 'stood still while a block burned' })[g.f('fire')]}.
 
 You stay exactly where you are. Close enough to feel her breathe. Not one inch closer.
 
@@ -508,7 +508,7 @@ jules: Same.
 
 sam: *Same?*
 
-jules: I think about you constantly. It's *humiliating*. You're loud and you're sweaty and you carry other people's refrigerators and you lie badly and you touch your *ear*, and I lie in bed with the lamp on and think about the stupid face you made when ${g.knows('ball_stopped') ? 'the eight ball stopped' : 'I sank the eight'}.
+jules: I think about you constantly. It's *humiliating*. You're loud and you're sweaty and you carry other people's refrigerators and ${g.f('jules_lied_roof') || g.f('ret') === 'lie' ? 'you lie badly and you touch your *ear*' : 'you lie well enough that I can\'t always tell, which I *hate*, except for your *ear*'}, and I lie in bed with the lamp on and think about the stupid face you made when ${g.knows('ball_stopped') ? 'the eight ball stopped' : 'I sank the eight'}.
 
 She wipes her eyes.
 
@@ -584,7 +584,7 @@ callum: You weren't answering. Your mom said you weren't coming to the party, an
 
 He's so *nice*. He's so nice it's like being punched.
 
-He sees you over her shoulder. ${g.hurt('burned_hands') ? 'He sees your hands, wrapped in a gray Penn Crew T-shirt that used to be his. He looks at it for exactly one second.' : 'He sees the soot still in your hairline.'} His face goes concerned, genuinely, immediately.
+He sees you over her shoulder. ${g.hurt('burned_hands') ? 'He sees your hands, wrapped in a gray Penn Crew T-shirt that used to be his. He looks at it for exactly one second.' : (g.f('fire') === 'stayed' ? 'He sees the sunburn, and the gravel printed into your arm.' : 'He sees the soot still in your hairline.')} His face goes concerned, genuinely, immediately.
 
 callum: Dude. You okay? You look rough, man. Were you near that fire?
 
@@ -598,7 +598,7 @@ Over Callum's shoulder, with her chin against his Penn Crew shirt, Jules looks a
 
 She doesn't look away.
 
-Your phone buzzes in your pocket. ${g.f('fire') === 'stayed' ? 'It\'s Ciro.\n\nTXT ciro: the T called the store. 7am\nTXT ciro: he was crying\nTXT ciro: he says tell you they took bree. last night. 15th st. the van\nTXT ciro: he says where were you\nTXT ciro: i dont want to know. i want to know. where were you' : g.f('fire') === 'van' ? 'It\'s a voice note from Bree. You play it with the phone pressed to your ear. It\'s the man in the polo, perfect, calm, close: *"Easy, son."* Then her own voice, small: *"thank you, wawa. heck says thank you. teddy wont say it but he means it."*' : 'It\'s a voice note from Bree. You play it with the phone pressed to your ear. It\'s you, perfect, crackling, from some moment last night you don\'t remember: *"Somebody has to."* Then her own voice, small: *"thank you, wawa."*'}`,
+Your phone buzzes in your pocket. ${g.f('fire') === 'stayed' ? (g.knows('sam_number', 'teddy') ? 'It\'s Teddy.\n\nTXT teddy: they took bree\nTXT teddy: last night. 15th st. the van\nTXT teddy: i texted you six times\nTXT teddy: where were you' : 'It\'s Ciro.\n\nTXT ciro: ' + (g.f('teddy_meet') === 'no' ? 'the T' : 'your pizza friend. the cold one') + ' called the store. 7am\nTXT ciro: he was crying\nTXT ciro: he says tell you they took bree. last night. 15th st. the van\nTXT ciro: he says where were you\nTXT ciro: i dont want to know. i want to know. where were you') : g.f('fire') === 'van' ? 'It\'s a voice note from Bree. You play it with the phone pressed to your ear. It\'s the man in the polo, perfect, calm, close: *"Easy, son."* Then her own voice, small: *"thank you, wawa. heck says thank you. teddy wont say it but he means it."*' : 'It\'s a voice note from Bree. You play it with the phone pressed to your ear. It\'s you, perfect, crackling, from some moment last night you don\'t remember: *"Somebody has to."* Then her own voice, small: *"thank you, wawa."*'}`,
     end: true
   }
 });
