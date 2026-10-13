@@ -650,23 +650,63 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
   };
   EH.TIERS_FOR = { pool: ['crit', 'success', 'partial', 'fail', 'botch'], move: ['strong', 'weak', 'miss'], d20: ['crit', 'success', 'fail', 'fumble'] };
 
-  // Jules's hidden nudge (Season 1 rules).
+  // Jules's hidden nudge (Season 1 rules). In a Jules-POV episode, her luck never lets her lose:
+  // every unclean pool or move is nudged until it's clean, and each save adds to her hidden Debt.
   EH.tryNudge = function (S, c, res) {
-    if (!c.near || !c.near.includes('jules')) return false;
+    const pov = S.pov === 'jules';
+    if (!pov && (!c.near || !c.near.includes('jules'))) return false;
     if (EH.isClean(res.tier)) return false;
-    const jb = S.bonds.jules || { affection: 0, trust: 0 };
-    const luck = S.hidden.jules_luck + Math.max(0, jb.affection + jb.trust) * 0.01;
-    if (Math.random() >= luck) return false;
-    if (res.kind === 'pool') {
-      let idx = -1, lo = 99; res.dice.forEach((v, i) => { if (v < 7 && v < lo) { lo = v; idx = i; } });
-      if (idx < 0) return false;
-      res.dice[idx] = 10; const r2 = EH.scorePool(res.dice, res.diff); Object.assign(res, r2); res.gold = [idx];
-    } else if (res.kind === 'move') {
-      const idx = res.dice[0] <= res.dice[1] ? 0 : 1; res.dice[idx] = 6; const r2 = EH.scoreMove(res.dice, res.mod); Object.assign(res, r2); res.gold = [idx];
-    } else return false;
-    S.hidden.nudges = (S.hidden.nudges || 0) + 1;
+    if (!pov) {
+      const jb = S.bonds.jules || { affection: 0, trust: 0 };
+      const luck = S.hidden.jules_luck + Math.max(0, jb.affection + jb.trust) * 0.01;
+      if (Math.random() >= luck) return false;
+    }
+    const gold = [];
+    const step = () => {
+      if (res.kind === 'pool') {
+        let idx = -1, lo = 99; res.dice.forEach((v, i) => { if (v < (pov ? 10 : 7) && v < lo) { lo = v; idx = i; } });
+        if (idx < 0) return false;
+        res.dice[idx] = 10; Object.assign(res, EH.scorePool(res.dice, res.diff)); gold.push(idx); return true;
+      } else if (res.kind === 'move') {
+        const idx = res.dice[0] <= res.dice[1] ? 0 : 1; if (res.dice[idx] === 6) return false;
+        res.dice[idx] = 6; Object.assign(res, EH.scoreMove(res.dice, res.mod)); gold.push(idx); return true;
+      } else if (res.kind === 'd20' && pov) {
+        if (res.dice[0] === 20) return false;
+        res.dice[0] = 20; Object.assign(res, EH.scoreD20 ? EH.scoreD20(res.dice, res.mod, res.dc) : {}); gold.push(0); return true;
+      }
+      return false;
+    };
+    if (!step() && !pov) return false;
+    if (pov) { while (!EH.isClean(res.tier) && step()); if (!EH.isClean(res.tier)) res.tier = res.kind === 'move' ? 'strong' : 'success'; S.hidden.jules_debt = Math.min(10, (S.hidden.jules_debt || 0) + 1); }
+    res.gold = gold;
+    if (!pov) S.hidden.nudges = (S.hidden.nudges || 0) + 1;
     res.nudged = true;
     return true;
+  };
+
+  /* ---------------- Point of view ---------------- */
+  EH.JULES_SHEET = {
+    attrs: { body: 2, reflex: 3, wits: 4, heart: 2, nerve: 3, charm: 4 },
+    skills: { athletics: 2, banter: 2, brawl: 0, cook: 0, empathy: 1, hustle: 3, intimidate: 1, investigate: 2, lie: 3, medicine: 1, parkour: 0, perform: 1, persuade: 2, ride: 0, stealth: 1, streetwise: 0, study: 3, tech: 1 }
+  };
+  // Swap Sam's sheet out for another character's for one episode. Sam's sheet is restored by povExit.
+  EH.povEnter = function (S, ep) {
+    if (!ep || !ep.pov || ep.pov === 'sam' || S.pov) return;
+    S.pov = ep.pov;
+    S.samSheet = EH.clone({ attrs: S.attrs, skills: S.skills, pools: S.pools, injuries: S.injuries, drift: S.drift, sleepDebt: S.sleepDebt, marked: S.marked, bonds: S.bonds });
+    const J = S.julesSheet || EH.JULES_SHEET;
+    S.attrs = EH.clone(J.attrs); S.skills = EH.clone(J.skills);
+    S.bonds = Object.assign(EH.clone(S.julesBonds || {}), S.bonds.jules ? { jules: EH.clone(S.bonds.jules) } : {});
+    S.injuries = []; S.drift = 0; S.sleepDebt = 0; S.marked = {}; S.pools = {};
+    EH.refill(S, true);
+  };
+  EH.povExit = function (S) {
+    if (!S.pov || !S.samSheet) return;
+    S.julesSheet = { attrs: EH.clone(S.attrs), skills: EH.clone(S.skills) };
+    const jb = S.bonds.jules; S.julesBonds = S.bonds; delete S.julesBonds.jules;
+    Object.assign(S, S.samSheet);
+    if (jb) S.bonds.jules = jb;
+    delete S.samSheet; delete S.pov;
   };
 
   /* ---------------- Text markup ---------------- */
@@ -694,7 +734,7 @@ body.drift3 .scene.cur .prose p:nth-child(3n){text-shadow:-1px 0 rgba(0,137,191,
         if (l.startsWith('> ')) { flush(); out.push('<div class="cap">' + inline(l.slice(2)) + '</div>'); return; }
         if (l.startsWith('!! ')) { flush(); const t = l.slice(3); const cy = t.startsWith('~'); out.push('<div class="sfx' + (cy ? ' cy' : '') + '" aria-label="' + esc(t.replace(/^~/, '')) + '">' + esc(t.replace(/^~/, '')) + '</div>'); return; }
         if ((m = l.match(/^TXT ([a-z_]+|[A-Z][A-Za-z .'\-]*):\s*(.*)$/))) {
-          flush(); const id = m[1]; const me = id === 'sam';
+          flush(); const id = m[1]; const me = id === (EH.viewer || 'sam');
           const nm = EH.CAST[id] ? EH.CAST[id].label : id;
           out.push('<div class="txt' + (me ? ' me' : '') + '"><span class="from">' + esc(me ? 'You' : nm) + '</span><span class="bub">' + inline(m[2]) + '</span></div>'); return;
         }
@@ -11306,6 +11346,1497 @@ Object.assign(EH.episodes.s01e05, {
   }
 });
 
+/* s01e06.js */
+/* S1 · E6 · THE HOUSE ALWAYS WINS (Jules POV), part 1 of 2: meta, cold open, Act One ("Ninth Floor, Other Side"). */
+EH.episode({
+  id: 's01e06', season: 1, number: 6, title: 'The House Always Wins', look: 's1', pov: 'jules',
+  cast: ['jules', 'sam', 'simone', 'callum', 'hugh', 'constance', 'catherine', 'whitney', 'nik', 'grace'],
+  start: 'cold_open',
+  xp: 4,
+  previously: g => [
+    'You have never lost a game of cards in your life.',
+    g.f('roof_end') === 'lean' ? 'On the roof at 4:12, Sam Kearney leaned in. You said, "Not like this."' : 'On the roof at 4:12, you and Sam Kearney watched the sun come up.',
+    'He came back from Kensington bleeding. You stitched him on the bathroom floor.',
+    g.f('stoop') === 'whatif' ? 'On a stoop on Mifflin Street, he said, "What if it was?"' : 'You went to Sunday dinner on Mifflin Street, and his grandmother handed you the macaroni first.'
+  ],
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      night: true,
+      loc: 'CARDONE HALL · ROOF',
+      clock: { day: 'Sun', date: 'Sep 6', time: '4:12 AM' },
+      text: g => `> FOUR WEEKS EARLIER. THE OTHER SIDE OF THE ROOF.
+
+You are Juliet Louisa Pemberton, and you have never in your life been this close to anybody on purpose.
+
+${g.f('roof_end') === 'lean' ? 'His forehead is against yours. You put it there. You don\'t remember deciding to; you remember him leaning in, slowly, so slowly, giving you every chance in the world, and you remember that for the first time in your life there were chances, real ones, and none of them had already been decided. And you remember stopping. *Not like this.*' : g.f('roof_end') === 'still' ? 'Your head is on his shoulder. He didn\'t lean in. He sat perfectly still, close enough to feel you breathe, and didn\'t take one inch you didn\'t give him, and nobody has ever done that, and it frightens you more than the window did.' : 'Your head is on his shoulder. He said something true instead of leaning in, and you can\'t stop hearing it.'}
+
+He smells like smoke. A house fire, ten blocks away. He went toward it. He came back with ${g.f('family') === 'clean' ? 'soot in his hairline and his hands shaking' : 'his hands burned'}, and he lied to you about almost nothing, and you let him.
+
+Here is what you know about the world, the things you\'ve known since you were small:
+
+You don\'t fall. When you were twelve, Mercutio refused a jump at Devon and you went over his head, and you landed on your feet. Standing up. In your good boots. Everyone said *what luck*.
+
+You don\'t lose. Not at cards, not at tennis, not at anything with a coin or a die in it. You stopped telling people at thirteen, because they stopped wanting to play.
+
+And something is *watching*. You\'ve never said that one out loud. Not to Gran. Not to anybody. It\'s just a feeling, the feeling of a room when someone\'s come in behind you. You\'ve had it your whole life. Since the Hitch, it\'s been louder.
+
+And right now, on this roof, with his hand around yours on the gravel, it\'s gone quiet.
+
+For the first time you can remember, nothing is watching.
+
+Over the Delaware, the sky starts thinking about morning.`,
+      choices: [
+        { text: 'You wanted him. That\'s all. That\'s the whole terrible thing.', tag: 'Him',
+          fx: g => { g.flag('roof_want', 'him'); g.bond('jules', { affection: 1 }); }, go: 'cold_end' },
+        { text: 'You wanted it to be your choice. Yours. Not luck. Not the thing that watches.', tag: 'The choice',
+          fx: g => { g.flag('roof_want', 'choice'); g.bond('jules', { respect: 1 }); }, go: 'cold_end' },
+        { text: 'You wanted to know if he\'d still be there if you weren\'t lucky. If anyone would.', tag: 'To be kept',
+          fx: g => { g.flag('roof_want', 'kept'); g.bond('jules', { trust: 1 }); }, go: 'cold_end' }
+      ]
+    },
+    cold_end: {
+      night: true,
+      text: g => `${{ him: 'You wanted him. Not the idea of him, not the story of the boy from South Philly who carried your minifridge up nine flights. *Him.* The sweat and the ear and the terrible jokes. It\'s humiliating. You have never once been humiliated in your life, and you\'re finding you don\'t mind it.', choice: 'You wanted it to be a *choice*. One thing in your life that you picked and nothing picked for you. You don\'t know if that\'s possible. You don\'t know if anything you\'ve ever done has been yours.', kept: 'You wanted to know if he\'d stay if you weren\'t lucky. If you fell, and nothing caught you, and you were just a person on a roof. You\'ve never been able to test it. You\'ve never once been allowed to fall.' }[g.f('roof_want')]}
+
+The sun comes up over the Delaware. Neither of you moves.
+
+Four hours from now, Callum will be in the lobby with iced coffee, and you\'ll go down first, and you\'ll let him hug you with Kearney watching over his shoulder, and you\'ll look at Kearney the whole time.
+
+You won\'t remember deciding to do that either.`,
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_friday' },
+
+    /* ================= ACT ONE: THE OTHER SIDE OF THE HALL ================= */
+    a1_friday: {
+      card: { kind: 'act', label: 'Act One', title: 'The Other Side of the Hall' },
+      loc: 'CARDONE HALL · ROOM 9-11',
+      clock: { day: 'Fri', date: 'Oct 2', time: '3:40 PM' },
+      text: g => `It\'s October. The trees on Liacouras Walk have started to turn. The campus smells like cold coffee, leaf rot and the Chinese food truck on 12th Street. You\'ve been at Temple six weeks, and nothing in those six weeks has gone the way it was supposed to.
+
+You are packing a weekend bag for Ravenscourt.
+
+Your grandmother\'s house. The first Saturday of October. Every year since before you were born, Constance Pemberton hosts a card game in the library at Ravenscourt: family, two or three men from the Merion Cricket Club, whoever your father is trying to impress that year. Black tie, because Gran says a card game without black tie is just gambling. Callum\'s coming. Hugh\'s coming. Your mother is coming, although she doesn\'t play. *I don\'t gamble, Juliet. I married.*
+
+You have never lost a hand at Ravenscourt. Not once since you were seven, the year Gran first let you sit at the table with a stack of peppermints for chips.
+
+Simone is lying on her bed across the room in a silk bonnet with her feet up the wall, eating Swedish Fish, watching you fold a black dress into tissue paper.
+
+simone: You fold like a serial killer.
+
+jules: I fold like my mother\'s housekeeper taught me.
+
+simone: That\'s what I said.
+
+She bites the head off a Swedish Fish.
+
+simone: You\'re gonna see Callum.
+
+jules: He\'s my boyfriend. I see him all the time.
+
+simone: Mm-hm. And you\'re gonna sit across a card table from him in a ball gown, and you\'re gonna think about somebody *else*, and you\'re gonna win all his money, and he\'s gonna *thank* you for it.
+
+You stop folding.
+
+Simone doesn\'t look at you. She looks at the ceiling, and she eats another fish, and she says, very lightly, the way she says the worst things:
+
+simone: How was Sunday dinner, Juliet?
+
+${g.f('stoop') === 'whatif' ? 'You think about a stoop on Mifflin Street, in gold light. *What if it was?*' : 'You think about a stoop on Mifflin Street, in gold light.'}`,
+      choices: [
+        { text: '"It was very nice. His mother taught me braciole." Give her nothing.', tag: 'Nothing',
+          fx: g => { g.flag('sim6', 'nothing'); }, go: 'a1_simone_nothing' },
+        { text: '"His sister made me a bracelet." Show her. You haven\'t taken it off.', tag: 'The bracelet',
+          fx: g => { g.flag('sim6', 'bracelet'); g.bond('simone', { trust: 1, affection: 1 }); }, go: 'a1_simone_bracelet' },
+        { text: '"Simone. Do you think something\'s wrong with him?"', tag: 'Ask her',
+          fx: g => { g.flag('sim6', 'ask'); g.bond('simone', { trust: 2 }); }, go: 'a1_simone_ask' }
+      ]
+    },
+    a1_simone_nothing: {
+      text: `jules: It was very nice. His mother showed me how she ties the braciole.
+
+simone: Uh-huh.
+
+jules: His father follows the Eagles.
+
+simone: Shocking.
+
+jules: His grandmother said my cannoli were "good, not mine," which I\'m told is the highest honor South Philadelphia can bestow on a non-Italian.
+
+Simone sits up. She looks at you the way she looks at a scene partner who\'s dropped a line.
+
+simone: You\'re doing the thing.
+
+jules: What thing?
+
+simone: The thing where you give me a whole *paragraph* so I don\'t notice there\'s no answer in it.
+
+She lies back down.
+
+simone: That\'s fine. I\'ll wait. I\'m very good at waiting. I\'m in theater. Waiting is ninety percent of theater.`,
+      next: 'a1_list'
+    },
+    a1_simone_bracelet: {
+      text: `You hold up your wrist. Pink and green embroidery floss, knotted badly, a little frayed already. You\'ve worn it in the shower all week.
+
+jules: His sister made it. Gianna. She\'s thirteen. She asked if I was his girlfriend at the table, in front of everyone.
+
+simone: *Shut up.* What did you say?
+
+jules: He saved me. He said I was his calculus partner and he\'s bad at calculus.
+
+simone: He\'s *very* bad at calculus.
+
+jules: That\'s what I said.
+
+Simone stares at you. Then she throws a Swedish Fish at your head. It hits you in the forehead. It doesn\'t hurt, nothing ever hurts, but she meant it.
+
+simone: Juliet Pemberton. You\'re wearing a *friendship bracelet* from a *middle schooler*. To *Ravenscourt*.
+
+jules: It goes with the dress.
+
+simone: It does *not* go with the dress.
+
+It doesn\'t go with the dress. You know it doesn\'t. You\'re wearing it anyway. Neither of you says it. Simone eats another fish and lets you have it.`,
+      next: 'a1_list'
+    },
+    a1_simone_ask: {
+      text: `jules: Simone. Do you think something\'s wrong with him?
+
+Simone stops eating Swedish Fish. That\'s how you know you\'ve said something real.
+
+simone: Wrong like *sick*?
+
+jules: Wrong like… he leaves. In the middle of things. He comes back with injuries that heal faster than injuries should. He touches his ear when he lies, except recently he\'s stopped. His brother is looking for a boy in a black hoodie, and he owns a black hoodie, and so does every boy in Philadelphia.
+
+You hear yourself. You stop.
+
+jules: That sounds insane.
+
+simone: No.
+
+She swings her feet down off the wall and sits on the edge of her bed, facing you, very serious, the bonnet slightly crooked.
+
+simone: It doesn\'t sound insane. It sounds like you\'ve been keeping a *list*.
+
+Something in the way she says *list* makes you look at her. She looks away first. Simone never looks away first.
+
+simone: Ask him, Jules. Not me. *Him*. You get one chance to let somebody tell you themselves. That\'s my rule. Steal it.`,
+      next: 'a1_list'
+    },
+
+    a1_list: {
+      text: g => `Simone goes to shower. She leaves her phone on her bed, face up, unlocked, playing a Spotify playlist called **ugly crying (theatrical)**.
+
+You don\'t mean to look at it. You\'re getting your toiletry bag off her bed, where she threw it, and the playlist ends, and the screen goes back to the last thing she had open.
+
+It\'s the Notes app. A note titled:
+
+**Things That Don\'t Add Up About Juliet**
+
+You stand there with your toiletry bag in your hand, reading your own name.
+
+*1. Never lost at anything. Ever. Not even Uno.*
+*2. The window. Every piece missed her. EVERY piece.*
+*3. Fell down the Cardone stairs 9/1, landed on her feet holding a full coffee. Didn\'t spill.*
+*4. Sixes. Her stupid little die. Every time I\'ve seen it.*
+*5. Her phone was at 1% for 3 days and never died.*
+*6. Plant on her windowsill came back from dead.*
+*7. Since the Hitch it\'s WORSE.*
+
+And then, under that, a separate heading, added more recently, the font a little different because she typed it fast:
+
+**Things That Don\'t Add Up About Sam**
+
+*1. He was in the zone at 11:51.*
+*2. Leaves. A lot.*
+*3. Left movie night halfway through Moonstruck. NOBODY leaves Moonstruck.*
+
+The shower turns off down the hall.`,
+      choices: [
+        { text: 'Put it down exactly where it was. Say nothing. Ever.', tag: 'Say nothing',
+          fx: g => { g.flag('list', 'silent'); g.know('simone_list', ['jules', 'simone'], 'Simone keeps a list on her phone: "Things That Don\'t Add Up About Juliet." And a second one, about Sam.'); }, go: 'a1_hall' },
+        { text: 'Leave it open. Let her come back and see you saw.', tag: 'Let her know',
+          fx: g => { g.flag('list', 'open'); g.bond('simone', { tension: 2 }); g.know('simone_list', ['jules', 'simone'], 'Simone keeps a list on her phone: "Things That Don\'t Add Up About Juliet." And a second one, about Sam. Jules saw it, and Simone knows she saw it.'); }, go: 'a1_list_open' },
+        { text: 'Add one. Type: *8. She knows about this list.* Then put it back.', tag: 'Add one',
+          fx: g => { g.flag('list', 'added'); g.bond('simone', { respect: 2 }); g.know('simone_list', ['jules', 'simone'], 'Simone keeps a list on her phone about Jules, and one about Sam. Jules added a line: "8. She knows about this list."'); }, go: 'a1_hall' }
+      ]
+    },
+    a1_list_open: {
+      text: `You put the phone down on Simone\'s bed, face up, with the note still open, and you go back to folding your dress.
+
+Simone comes back in a towel with her hair wrapped. She sees the phone. She sees the screen. She stops in the doorway.
+
+Neither of you says anything for a while.
+
+simone: …So.
+
+jules: So.
+
+simone: I wasn\'t going to show anybody.
+
+jules: I know.
+
+simone: It\'s not mean. It\'s not *for* anything. I just notice things. It\'s what I do instead of being normal.
+
+She sits down on her bed and picks up the phone and looks at the list herself, like she\'s seeing it for the first time.
+
+simone: Is any of it wrong?
+
+You think about the stairs. The coffee. The plant on the windowsill, which you\'d watered exactly once.
+
+jules: No.
+
+Simone nods slowly. She closes the note. She doesn\'t delete it.
+
+simone: Okay. Then I\'ll keep it. And you\'ll know I\'m keeping it. And when you want to tell me what it means, I\'ll be right here, eating Swedish Fish.`,
+      next: 'a1_hall'
+    },
+
+    a1_hall: {
+      loc: 'CARDONE HALL · 9TH FLOOR HALLWAY',
+      clock: { time: '4:45 PM' },
+      text: g => `Mr. Abernathy is downstairs at five. You go out into the hall with your weekend bag and your garment bag over your shoulder, and Kearney is there.
+
+Of course he\'s there. He\'s always there. He\'s leaning in his doorway in a gray Temple T-shirt, eating a bowl of cereal at a quarter to five in the afternoon, and his arms are fine.
+
+That\'s the first thing you see. His arms are *fine*. Three weeks ago, on the bathroom floor, they were burned and blistered, and you finished the stitches in one of them with your own hands. Now the skin is smooth and a little pink, like a scar that\'s had a year.
+
+sam: Pemberton.
+
+jules: Kearney.
+
+sam: Big weekend at the castle?
+
+jules: It isn\'t a castle. It\'s a house.
+
+sam: Does it have a name?
+
+jules: …Ravenscourt.
+
+sam: That\'s a castle, Pemberton. Houses don\'t have names. Houses have *numbers*.
+
+He grins. It\'s the grin from the pool table, from the first week, the one you wanted to slap off his face, and you realize, standing there in the hallway holding a garment bag, that you\'ve thought about that grin every single day for six weeks, and that you\'ve stopped wanting to slap it.
+
+Behind him, in his room, Nik is on the floor with a notebook, writing furiously, and doesn\'t look up.
+
+sam: Have fun. Win all their money.
+
+jules: I always do.
+
+You say it lightly. It doesn\'t come out lightly. It comes out sounding exactly like what it is, and he hears it, and something crosses his face, a flicker, there and gone.`,
+      choices: [
+        { text: '"What are you doing this weekend?" Ask him a normal question. Be a normal person.', tag: 'Normal',
+          check: { kind: 'move', move: 'Read the Room', attr: 'charm', skill: 'banter', label: 'Be normal at him', on: { strong: 'a1_hall_normal', weak: 'a1_hall_normal', miss: 'a1_hall_normal' } } },
+        { text: '"Your arms healed." Just that. Watch his face.', tag: 'His arms',
+          check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'investigate', label: 'Watch him', on: { strong: 'a1_hall_arms', weak: 'a1_hall_arms', miss: 'a1_hall_arms' } } },
+        { text: 'Say nothing else. Nod once, the way his father nodded at you across the dinner table. Go.', tag: 'Go',
+          fx: g => { g.flag('hall6', 'go'); }, go: 'a1_hall_go' }
+      ]
+    },
+    a1_hall_normal: {
+      enter: g => { g.flag('hall6', 'normal'); g.bond('jules', { affection: 1 }); },
+      text: `jules: What are you doing this weekend?
+
+He blinks, like nobody\'s ever asked him that.
+
+sam: Uh. Ciro\'s, Saturday. Calc problem set. Nik\'s making me do a thing on the roof Sunday, with a thermometer. Vinnie owes me a phone call. My Nonna wants me to come light a candle with her at St. Monica\'s, which, I don\'t know why, she\'s been weird all week.
+
+He shrugs, holding the cereal.
+
+sam: Normal stuff.
+
+jules: That\'s a lot of normal stuff.
+
+sam: I\'m a very normal guy.
+
+You both stand there in the hallway. It\'s the longest conversation you\'ve had without anybody bleeding since Mifflin Street.
+
+jules: Call Vinnie.
+
+sam: What?
+
+jules: You said he owes you a call. Don\'t wait for him. Call him. People who wait for calls never get them.
+
+He looks at you like you\'ve said something much bigger than you meant to. Maybe you did.
+
+sam: …Yeah. Okay. I\'ll call him.`,
+      next: 'a1_drift'
+    },
+    a1_hall_arms: {
+      enter: g => { g.flag('hall6', 'arms'); g.know('jules_saw_healed', ['jules'], 'Two weeks after the bathroom floor, Sam\'s burns were gone. Smooth, pink, like a year-old scar.'); },
+      text: `jules: Your arms healed.
+
+You watch his face. You\'re very good at watching faces; you\'ve been doing it across card tables since you were seven.
+
+Nothing moves in it. Not one thing. He doesn\'t touch his ear. He doesn\'t blink.
+
+sam: Yeah. I\'m a fast healer. My Nonna says it runs in the family.
+
+jules: Does it?
+
+sam: Ask her. She\'ll tell you about a guy in 1952 who got hit by a trolley and went back to work the next day.
+
+It\'s a good answer. It\'s charming and specific and it has a grandmother in it. Six weeks ago, he couldn\'t have done that.
+
+He\'s gotten better at it. You taught him. Every time you caught him, he learned.
+
+It\'s a cold, specific feeling, like setting down a card and realizing it\'s the one your opponent needed.`,
+      next: 'a1_drift'
+    },
+    a1_hall_go: {
+      text: `You nod once, the way his father nodded at you across the dinner table at Sunday dinner, and you go.
+
+You can feel him watching you all the way to the elevator. It\'s not the other kind of watching, the kind you\'ve felt your whole life, the room-behind-you kind. It\'s just a boy, in a doorway, with a bowl of cereal, looking at you.
+
+You find that you can tell the difference now. You couldn\'t, before.`,
+      next: 'a1_drift'
+    },
+
+    a1_drift: {
+      text: g => `The elevator comes. You step in. You turn around to press the button, and the doors start to close, and through the narrowing gap you see Kearney, down the hall, coming out of the bathroom.
+
+In a towel. With his hair wet. Holding a shower caddy.
+
+You look past him, at his doorway. At the gray T-shirt and the bowl of cereal and Kearney, *also Kearney*, still leaning there, looking at the elevator.
+
+*Two of him.*
+
+The doors close.
+
+You stand very still in the elevator, all the way down, holding your garment bag, and you don\'t breathe.
+
+When the doors open in the lobby, you stand there and you think: *You\'re tired. You haven\'t slept properly since August. It was Nik in the towel. Nik and Kearney have the same haircut, the same build—*
+
+Nik was on the floor of their room with a notebook. You saw him.
+
+${g.S.samSheet && g.S.samSheet.drift >= 9 ? 'And the shower caddy. You keep seeing it. Just before the doors met, it was white with frost.' : ''}
+
+Mr. Abernathy is holding the car door open for you. You get in. You put your hand in your coat pocket, where Gran\'s ivory die lives, and you close your fist around it so hard the corners hurt.
+
+They don\'t hurt. They never do.`,
+      enter: g => { g.know('jules_two_sams', ['jules'], 'Jules saw Sam in two places at once on the ninth floor. One in a towel, one in his doorway.'); },
+      next: 'a1_mother'
+    },
+
+    /* ---------- Gladwyne ---------- */
+    a1_mother: {
+      loc: 'THE PEMBERTON HOUSE · GLADWYNE',
+      clock: { time: '6:10 PM' },
+      text: g => `Your parents\' house in Gladwyne, where you mostly didn\'t grow up (your room was always at Gran\'s), is beautiful, and enormous, and very quiet, and it has never once in your life felt like it was yours.
+
+Your mother is in the front hall when you come in, as if she\'s been standing there, which she may have been. Dr. Catherine Pemberton, in a cream silk blouse and gray trousers and her reading glasses pushed up into her hair, holding a small white card.
+
+catherine: Juliet.
+
+jules: Mother.
+
+She kisses the air beside your cheek. She smells like Chanel No. 19 and the hospital, both, always.
+
+catherine: You look tired. That school is running you ragged.
+
+jules: That school is fine.
+
+catherine: Mm.
+
+She holds up the card. It\'s a recipe card, the kind they sell at drugstores, with a cartoon strawberry in the corner. It\'s covered in ballpoint pen in a big slanting hand, and there\'s a coffee ring on one corner.
+
+catherine: I sent your *Mrs. Kearney* a note on Tuesday. A thank-you, for having you. On the good Crane\'s.
+
+jules: I know. You told me.
+
+catherine: This is what came back.
+
+She reads it aloud. She reads it in her driest voice, the voice she uses for grant applications she intends to reject.
+
+catherine: *Dear Dr. Pemberton. Thank you for your nice card. Your daughter is a lovely girl with beautiful manners and she ate like a horse, God bless her. Here is the braciole so she can make it for you. Don\'t use the cheap cheese. Love, Rosa Kearney. P.S. She is too skinny.*
+
+She lowers the card.
+
+catherine: *Love.* She wrote *love*, Juliet. To a woman she\'s never met.
+
+You look at the card. You look at the coffee ring. You think about the kitchen on Mifflin Street, the yellow linoleum, the radio, Mrs. Kearney\'s hands on yours, showing you how to tie the string.`,
+      choices: [
+        { text: '"That\'s just how they are, Mother. They mean it."', tag: 'Defend them',
+          fx: g => { g.flag('mother6', 'defend'); g.bond('catherine', { tension: 1 }); }, go: 'a1_mother_defend' },
+        { text: 'Take the card out of her hand. "Can I keep this?"', tag: 'Keep it',
+          fx: g => { g.flag('mother6', 'keep'); g.flag('braciole_card'); }, go: 'a1_mother_keep' },
+        { text: '"You could make it, you know. Just once. I\'d eat it."', tag: 'Ask her',
+          check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', label: 'Reach Mother', on: { strong: 'a1_mother_reach', weak: 'a1_mother_reach', miss: 'a1_mother_reach' } } }
+      ]
+    },
+    a1_mother_defend: {
+      text: `jules: That\'s just how they are, Mother. They mean it.
+
+catherine: I\'m sure they do.
+
+She says it the way she says *I\'m sure* to residents who are wrong. Then she does something unexpected: she doesn\'t throw the card away. She props it up on the hall table against the silver bowl where the mail goes, where everyone who comes through the front door will see it.
+
+catherine: Dinner\'s at eight. Your father\'s on a call. Your brother\'s bringing Callum from the boathouse. Wear the blue.
+
+She goes upstairs. The card stays on the table, with its cartoon strawberry and its coffee ring, in the middle of all that silver.
+
+You stand in the hall and look at it. You\'ve never seen anything in this house that was allowed to be crooked.`,
+      next: 'a1_hub'
+    },
+    a1_mother_keep: {
+      text: `jules: Can I keep this?
+
+Your mother looks at you. Then at the card. Then at you again.
+
+catherine: It\'s a recipe for braciole, Juliet. We have a cook.
+
+jules: I know.
+
+She hands it to you. She does it slowly, the way she hands a scalpel to a resident she isn\'t sure of.
+
+catherine: Don\'t use the cheap cheese.
+
+It might be a joke. You\'ve never been able to tell with her. You look up, and she\'s already turning away, going up the stairs with her hand on the banister, and you can\'t see her face.
+
+She stops on the landing without turning around.
+
+catherine: Wear the blue tomorrow.
+
+You put the card in your coat pocket next to Gran\'s die.`,
+      next: 'a1_hub'
+    },
+    a1_mother_reach: {
+      enter: g => { g.flag('mother6', 'reach'); g.bond('catherine', { trust: 1 }); },
+      text: `jules: You could make it, you know. Just once. I\'d eat it.
+
+Your mother looks at you over her reading glasses.
+
+catherine: I don\'t cook, Juliet. You know I don\'t cook.
+
+jules: I know.
+
+catherine: My mother didn\'t cook. Her mother didn\'t cook. My hands are insured.
+
+jules: I know, Mother.
+
+She looks down at the card again. At the ballpoint. *Don\'t use the cheap cheese.*
+
+catherine: …What\'s the cheap cheese?
+
+jules: I think she means the pre-grated Parmesan. In the green can.
+
+catherine: *Obviously* you don\'t use the green can. Who would use the *green can*.
+
+She says it with such sincere outrage, about a cheese, that you laugh. You laugh out loud in the front hall of the house in Gladwyne, and your mother looks at you, startled, like she\'s never heard the sound before.
+
+Maybe she hasn\'t.
+
+catherine: Wear the blue tomorrow. And Juliet. You look…
+
+She stops. She looks for the word. She doesn\'t find it.
+
+catherine: Dinner\'s at eight.`,
+      next: 'a1_hub'
+    },
+
+    /* ---------- Saturday morning hub ---------- */
+    a1_hub: {
+      loc: 'RAVENSCOURT · SATURDAY',
+      clock: { day: 'Sat', date: 'Oct 3', time: '9:30 AM' },
+      text: `Ravenscourt is a mile and a half from your parents' house and a century from everywhere else: a gray stone house on forty acres above the Schuylkill, with a slate roof and too many chimneys and, down a long path through the boxwoods, a small stone chapel built in 1891 that nobody has used for a service since 1956.
+
+You haven\'t been inside the chapel since you were seven.
+
+The game is at eight tonight. You have the day. Gran doesn\'t come downstairs until noon, and doesn\'t smoke until four, and won\'t speak to anyone about anything important before the cigarette.`,
+      hub: {
+        slots: 2, label: 'Saturday at Ravenscourt',
+        blurb: 'The game is at eight.',
+        options: [
+          { id: 'sat6_horse', text: 'Ride Mercutio. He\'s boarded at Ravenscourt now. He bit Callum once. You love him.', cost: 1, tag: 'Mercutio', go: 'a1_horse' },
+          { id: 'sat6_hugh', text: 'Hugh wants tennis. Hugh always wants tennis. Hugh has never once beaten you.', cost: 1, tag: 'Hugh', go: 'a1_hugh' },
+          { id: 'sat6_callum', text: 'Callum\'s walking the grounds alone. Go walk with him.', cost: 1, tag: 'Callum', go: 'a1_callum' }
+        ],
+        done: 'a1_gran'
+      }
+    },
+
+    a1_horse: {
+      text: `Mercutio is a sixteen-hand bay gelding with a white blaze, a nasty sense of humor, and an unshakable conviction that you belong to him. He sees you coming across the stable yard and puts his ears forward and screams, a horse scream, the whole barn ringing with it.
+
+You tack him up yourself. Gran\'s groom, Mr. Ostrowski, watches you do it and doesn\'t help, because he knows better.
+
+You take him out across the back fields, down along the line of the river, the trees going red and gold on the bluff on the other side. It\'s cold. The air smells like apples and smoke. You let him have his head on the long flat stretch by the old wall, and he goes, all of him, flat out, and you lean down over his neck and the world goes away.
+
+There\'s a stone wall at the end of the field. Four feet. You\'ve jumped it a hundred times.
+
+You have never, until this second, wanted to fall.`,
+      choices: [
+        { text: 'Take the wall. Like always.', tag: 'Jump',
+          check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, label: 'The wall', on: { crit: 'a1_horse_jump', success: 'a1_horse_jump', partial: 'a1_horse_jump', fail: 'a1_horse_jump', botch: 'a1_horse_jump' } } },
+        { text: 'Take the wall, and at the last second, let go of the reins. Just to see.', tag: 'Let go',
+          fx: g => { g.flag('horse6', 'letgo'); g.hidden('jules_debt', 1); }, go: 'a1_horse_fall' }
+      ]
+    },
+    a1_horse_jump: {
+      enter: g => { g.flag('horse6', 'jump'); },
+      text: `He takes it like it\'s nothing. He always does. A gather, a lift, a long beautiful moment in the air over the old stones with the river shining off to your left, and then the landing, soft as a carpet.
+
+You pull him up in the next field. He blows and dances and tosses his head, delighted with himself.
+
+Everything was perfect. It always is.
+
+You sit there on him in the cold, breathing hard, and you try to think of the last time anything came up anything else.
+
+You can\'t remember.`,
+      next: '@hub'
+    },
+    a1_horse_fall: {
+      enter: g => { g.know('jules_fall_test', ['jules'], 'At Ravenscourt, Jules let go of the reins over a four-foot wall to see what would happen. She landed on her feet. Mercutio didn\'t.'); },
+      text: `You take the wall, and at the top of it, in the long beautiful moment in the air, you open your hands.
+
+You let go of the reins. You let go of everything. Just to see.
+
+Mercutio *twists*.
+
+You don\'t know how. Sixteen hands of horse twists in midair like a cat, and you come off him sideways, and the stone wall comes up at you, and the ground comes up at you, and the sky goes around once—
+
+You land on your feet.
+
+On your feet. Standing. In the next field, in the wet grass, in your good boots, with your hands still open in front of you. Not a scratch. Not a bruise. Not a hair out of place.
+
+Behind you, there\'s a terrible sound.
+
+Mercutio is down on his side on the far side of the wall, and he\'s getting up, he\'s getting up, thank God, but he\'s lame on his near fore, holding it off the ground, shaking his head, and there\'s blood on the stones where his leg caught them.
+
+You run to him. You hold his head. He shoves his nose into your coat, trusting, the way he always does, and you stand there in the field holding your horse, who is hurt, who is hurt *because of you*, and you are not hurt at all.
+
+*Bad luck comes back around*, Gran used to say, when you were small. *It has to go somewhere, child.*
+
+You never asked her where.
+
+Mr. Ostrowski says it\'s a sprain, and a cut, and he\'ll be sound in a month. He says *what luck you landed on your feet, Miss Juliet*. You don\'t answer. You stand in the stall with Mercutio for an hour, holding a cold hose on his leg, and you don\'t cry, because you don\'t, but you think about it.`,
+      next: '@hub'
+    },
+
+    a1_hugh: {
+      text: `Hugh is already on the grass court behind the house in tennis whites, bouncing a ball on his racket, looking like a Ralph Lauren ad that\'s about to say something cruel. Your twin. Golden, glib, eleven minutes older, and he\'s never let you forget a single one of them.
+
+hugh: *Jubilee.* There she is. The prodigal Temple Owl.
+
+jules: Hugh.
+
+hugh: Best of three?
+
+jules: You\'ve never won a set against me.
+
+hugh: That\'s why it\'s *best of three*, Jubilee. Statistically, I\'m due.
+
+He serves. It\'s a good serve. Hugh is genuinely good at tennis. He\'s genuinely good at most things, which is the tragedy of Hugh: he would be the best at everything, in any family but this one.`,
+      choices: [
+        { text: 'Play to win. Like always.', tag: 'Win',
+          check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, label: 'Beat Hugh', on: { crit: 'a1_hugh_win', success: 'a1_hugh_win', partial: 'a1_hugh_win', fail: 'a1_hugh_win', botch: 'a1_hugh_win' } } },
+        { text: 'Let him win. Just once. Hit everything into the net. See what happens.', tag: 'Let him',
+          fx: g => { g.flag('hugh6', 'throw'); g.hidden('jules_debt', 1); }, go: 'a1_hugh_throw' }
+      ]
+    },
+    a1_hugh_win: {
+      enter: g => { g.flag('hugh6', 'win'); g.bond('hugh', { tension: 1 }); },
+      text: `Six-two, six-one. Forty minutes.
+
+Hugh throws his racket at the fence on the last point, and it bounces off and lands in the boxwoods, and he stands there with his hands on his hips, breathing hard, looking at you over the net.
+
+hugh: How do you *do* that?
+
+jules: Practice.
+
+hugh: You don\'t practice. You *never* practice. I\'m out here four mornings a week with Coach Garrity and you play twice a year and you *destroy* me.
+
+He goes to get his racket out of the hedge. With his back to you, he says, in a different voice:
+
+hugh: You know what Gran told me, when we were ten? I was crying because you beat me at Monopoly six times in a row. She said, *Some Pembertons are lucky, Hugh, and some are just rich. Be grateful you\'re one of them.*
+
+He pulls the racket out and turns around, smiling, the full golden Hugh smile, the one that gets him anything he wants from anyone except you.
+
+hugh: I\'ve been trying to figure out which one I am for eight years, Jubilee.`,
+      next: '@hub'
+    },
+    a1_hugh_throw: {
+      enter: g => { g.know('jules_throw_test', ['jules'], 'Jules tried to let Hugh win at tennis. She couldn\'t. Every bad shot went in.'); g.bond('hugh', { tension: 2 }); },
+      text: `You try to lose.
+
+You hit the first serve into the net, on purpose. It clips the tape, hangs in the air on top of the net for a full second, and falls over on Hugh\'s side. Ace.
+
+You hit the next one long, as long as you can, way out past the baseline. The wind picks it up, a gust out of nowhere, and drops it on the line. Chalk flies up. *In.*
+
+You swing and miss completely on a return. The ball bounces off the frame of your racket and loops up in a ridiculous rainbow and drops just over the net where Hugh can\'t get to it.
+
+Hugh stops playing. He stands on his baseline, staring at you.
+
+hugh: What are you *doing*?
+
+jules: Nothing.
+
+hugh: You\'re trying to *lose*. I can see you trying to lose, Jules, it\'s *pathetic*, it\'s the most insulting thing you\'ve ever done to me, and you *still can\'t do it*—
+
+He throws his racket. Not at the fence. At the ground. It cracks.
+
+hugh: Six-love. Fine. Six-love. You win. You *always* win.
+
+He walks off the court. He doesn\'t pick up the racket. You stand there with the ball in your hand.`,
+      next: '@hub'
+    },
+
+    a1_gran: {
+      clock: { time: '4:00 PM' },
+      enter: g => { g.meet('constance'); g.bond('constance', { trust: 1 }); },
+      text: g => `At four o\'clock exactly, your grandmother comes out onto the stone terrace above the river with a cigarette and a silver lighter and sits in the wrought-iron chair that nobody else is allowed to sit in.
+
+Constance Pemberton is eighty-four. She\'s small and straight-backed, with white hair cut like a man\'s and eyes the color of a February sky, and she is the only person in your family you have never once been able to read at a card table.
+
+She lights the cigarette. One a day. She\'s smoked one a day since 1958.
+
+constance: Child.
+
+jules: Gran.
+
+You sit on the low wall across from her. She smokes. The river goes by below, slow and brown and full of leaves.
+
+constance: You can\'t lose anymore.
+
+It isn\'t a question. It\'s never a question, with Gran.
+
+${g.f('horse6') === 'letgo' ? 'constance: Ostrowski tells me Mercutio is lame.\n\nYou don\'t say anything. She looks at you through the smoke.\n\nconstance: And that you landed on your feet.\n\n' : ''}${g.f('hugh6') === 'throw' ? 'constance: Your brother broke a racket this morning.\n\njules: I tried to let him win.\n\nconstance: Yes. I imagine you did.\n\n' : ''}jules: I never lost before, either.
+
+constance: Before, you won. Now nothing is permitted to happen to you. There\'s a difference, and you know it, or you wouldn\'t be sitting on my wall at four o\'clock.
+
+She taps the ash over the wall into the boxwoods.
+
+constance: Something happened to you in August.
+
+jules: …There was a blackout. At school. I was at a concert. A window came down on me, and every piece of glass missed.
+
+constance: Of course it did.
+
+She says it the way you\'d say *of course it rained*.
+
+constance: Tonight, watch yourself. Not the cards. *Yourself*. Afterward, when the house is asleep, we\'ll talk.
+
+jules: About what?
+
+Gran looks at you through the smoke. Then she stubs out the cigarette, exactly half smoked, the way she always does.
+
+constance: Whatever you think to ask me. I won\'t lie to you, child. Ask well.
+
+She stands up, with her hand on the iron chair.
+
+constance: Wear the blue. Your mother\'s right about the blue.`,
+      next: 'a2_game'
+    },
+
+    a1_callum: {
+      enter: g => { g.meet('callum'); g.bond('callum', { affection: 1 }); },
+      text: `Callum is walking the long path down through the boxwoods with his hands in the pockets of a navy quarter-zip, looking at everything the way he looks at everything: openly, pleasantly, a golden retriever touring a museum.
+
+callum: Jules! Hey. This place is *insane*. Your grandmother has a *chapel*.
+
+jules: I know.
+
+callum: Like, a real one. With a bell. Can we go in?
+
+jules: No.
+
+It comes out sharper than you meant. He blinks.
+
+callum: Okay. Sure. Sorry.
+
+He doesn\'t ask why. He never asks why. You\'ve been dating Callum Whitford for fourteen months, since the Merion Cricket Club summer dance before senior year, and in fourteen months he has never once asked you why about anything, and for a long time you thought that was restful.
+
+You walk together along the path. He takes your hand. His hand is warm and dry and kind, an oarsman\'s hand, callused across the palm.
+
+callum: Hey. I was thinking. For Thanksgiving. My parents are doing the Vineyard this year, the whole family, and my mom asked if you\'d come. She really likes you. Everybody really likes you.
+
+He squeezes your hand.
+
+callum: I really like you.
+
+He says it the way he says everything, plainly, gratefully, as if you\'ve done him a favor just by existing. You look down at your hand in his. Pink and green embroidery floss on your wrist, badly knotted, a little frayed.
+
+He sees it. He smiles.
+
+callum: Cute bracelet. Is that new?`,
+      choices: [
+        { text: '"A friend\'s little sister made it." True. Every word.', tag: 'True',
+          fx: g => { g.flag('callum6', 'true'); }, go: 'a1_callum_end' },
+        { text: '"Simone made it." Easy. He\'ll never check.', tag: 'Lie',
+          check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Callum', on: { strong: 'a1_callum_lie', weak: 'a1_callum_lie', miss: 'a1_callum_lie' } } }
+      ]
+    },
+    a1_callum_end: {
+      text: `jules: A friend\'s little sister made it.
+
+callum: That\'s so nice. That\'s so *you*. You\'re good with kids.
+
+You\'ve never once been good with kids. You don\'t say that. He swings your joined hands a little as you walk, like you\'re both nine.
+
+callum: So, Thanksgiving? The Vineyard?
+
+jules: Can I think about it?
+
+callum: Of course! Of course. Take all the time you want.
+
+He means it. He\'d wait forever. That\'s the worst thing about him: that he\'d wait forever, pleasantly, and never once ask you why.`,
+      next: '@hub'
+    },
+    a1_callum_lie: {
+      enter: g => { g.flag('callum6', 'lie'); g.bond('callum', { trust: 1 }); },
+      text: `jules: Simone made it.
+
+It comes out light, easy, a little fond.
+
+callum: Aw, that\'s sweet. Simone\'s great. She\'s so funny.
+
+He swings your joined hands as you walk.
+
+callum: So, Thanksgiving? The Vineyard?
+
+jules: Can I think about it?
+
+callum: Of course! Take all the time you want.
+
+You walk on through the boxwoods holding his hand, with another boy\'s sister\'s bracelet on your wrist, and the lie sits in your mouth like a stone. It\'s the first lie you\'ve ever told Callum that wasn\'t *I love you too*. You thought it would be harder.
+
+It wasn\'t hard at all. Nothing ever is.`,
+      next: '@hub'
+    }
+  }
+});
+
+/* s01e06b.js */
+/* S1 · E6 · THE HOUSE ALWAYS WINS (Jules POV), part 2 of 2: Act Two ("The Game"), Act Three ("Half Past Midnight"), tag ("The Chapel"). */
+EH.scenes('s01e06', {
+
+  /* ================= ACT TWO: THE GAME ================= */
+  a2_game: {
+    card: { kind: 'act', label: 'Act Two', title: 'The Game' },
+    night: true,
+    loc: 'RAVENSCOURT · THE LIBRARY',
+    clock: { time: '8:00 PM' },
+    enter: g => { g.meet('hugh'); g.meet('whitney'); g.meet('catherine'); g.meet('constance'); g.meet('callum'); },
+    text: g => `The library at Ravenscourt has a fireplace you could park a car in, two thousand books nobody reads, and a round mahogany card table that has been in the family since 1880 and has a cigarette burn on one edge from 1944 that nobody is allowed to mention.
+
+You\'re wearing the blue. It\'s a long dark blue silk thing with no sleeves, and you\'ve put your hair up, and on your left wrist, where your mother can see it and has visibly decided to say nothing, there\'s a pink-and-green friendship bracelet.
+
+The table:
+
+**Gran**, at the head, dealing. She deals every hand and plays none of them. She says her card-playing days ended in 1962, and when you asked her once why, she said *because I won, child*.
+
+**Father**, Whitney Pemberton, in a velvet smoking jacket, warm and handsome and silver at the temples, with his phone face down beside his chips and buzzing every four minutes. *Jules-bug!* he said when you came down, and kissed your forehead, and then took a call.
+
+**Hugh**, in a dinner jacket, ${g.f('hugh6') === 'throw' ? 'not looking at you, his jaw tight, a new racket-shaped grudge sitting behind his eyes' : g.f('hugh6') === 'win' ? 'already two drinks in, still sore about tennis' : 'already two drinks in, golden and loud'}.
+
+**Callum**, beside you, in his father\'s old dinner jacket, a little short in the sleeves, beaming, delighted to be here, delighted by the fire and the books and the chips and you.
+
+**Judge Ellison**, eighty, a friend of Gran\'s from the Cricket Club, who falls asleep between hands and wins a surprising amount.
+
+And a woman you don\'t know. Late fifties, Dutch by the accent, with steel-gray hair cut very short and a black suit and no jewelry at all, sitting very straight, with her hands folded on the table in front of her like someone waiting for a result.
+
+whitney: Everybody, this is Miriam. Dr. Achterberg. She\'s a physicist. Judge Ellison\'s guest. Miriam, my daughter Juliet.
+
+DR. ACHTERBERG: Ah. The one at Temple.
+
+She says it pleasantly. She\'s looking right at you.
+
+Your mother, who doesn\'t play, sits by the fire with a glass of white wine and a medical journal, turning pages at perfectly regular intervals, not reading.
+
+Gran shuffles. Her old hands move like a magician\'s.
+
+constance: Hundred-dollar chips. Real money. A card game without stakes is a conversation, and I don\'t like conversations.
+
+She deals.`,
+    next: 'a2_hand1'
+  },
+
+  a2_hand1: {
+    night: true,
+    text: `Texas Hold\'em. Two cards each, face down. Five on the table, shared, three then one then one.
+
+You look at your two cards. Jack of clubs, nine of clubs. A pretty hand. Not a strong one.
+
+Across the table, Father calls without looking at his cards, because he\'s on his phone. Hugh raises. Callum calls, because Callum always calls, because folding feels rude to him. The judge is asleep. Dr. Achterberg folds without hesitation, without looking at her cards either.
+
+She\'s looking at you.
+
+The flop comes: ten of clubs, two of hearts, eight of clubs. Four to a flush. You need one more club.
+
+Hugh bets big. He\'s got something. You can see it in his shoulders.`,
+    choices: [
+      { text: 'Play it properly. Read Hugh. Count the odds. Make the right bet.', tag: 'Play',
+        check: { kind: 'pool', attr: 'wits', skill: 'hustle', diff: 3, label: 'Read the table', on: { crit: 'a2_hand1_win', success: 'a2_hand1_win', partial: 'a2_hand1_win', fail: 'a2_hand1_win', botch: 'a2_hand1_win' } } },
+      { text: 'Don\'t think. Push your chips in. You know how this ends.', tag: 'Push',
+        check: { kind: 'move', move: 'Bluff', attr: 'nerve', skill: 'hustle', label: 'All of it', on: { strong: 'a2_hand1_win', weak: 'a2_hand1_win', miss: 'a2_hand1_win' } } }
+    ]
+  },
+  a2_hand1_win: {
+    night: true,
+    enter: g => { g.inc('hands_won'); },
+    text: g => `The turn is the king of hearts. Nothing for you.
+
+Hugh bets again. You call. Callum, beside you, says *ooh* under his breath, like it\'s a movie.
+
+The river.
+
+Gran\'s hand pauses over the deck, just for an instant, the way it always does on the last card, and you watch her face, and her face doesn\'t move, and she turns it over.
+
+Queen of clubs.
+
+Not just the flush. The *straight* flush. Eight, nine, ten, jack, queen of clubs, and the king doesn\'t matter, nothing matters. The odds of that are something like one in three thousand. You\'ve had four in your life. ${g.last && g.last.nudged ? 'You watched the card come off the deck and you felt it, the way you always feel it now: a little click, somewhere behind your breastbone, like a lock turning.' : 'You felt it coming before Gran\'s hand moved: a little click, somewhere behind your breastbone, like a lock turning.'}
+
+Hugh turns over his cards. Two kings. With the king on the turn, that\'s three of a kind. A great hand. On any other night at any other table, a winning hand.
+
+hugh: Oh, come *on*.
+
+whitney: Jules-bug! *Look* at that!
+
+Father\'s off his phone for the first time all night, laughing, delighted. Callum\'s clapping. The judge wakes up and says *what happened*.
+
+Dr. Achterberg doesn\'t clap. She takes a small black notebook out of her jacket pocket and writes something in it, one line, and puts it away.
+
+Gran, at the head of the table, gathers the cards and shuffles them and doesn\'t look at you at all.`,
+    next: 'a2_achterberg'
+  },
+
+  a2_achterberg: {
+    night: true,
+    clock: { time: '9:15 PM' },
+    text: `During the break, while Father\'s on the terrace on a call and Hugh\'s at the bar cart, Dr. Achterberg comes and stands next to you by the fire.
+
+She has a glass of water. She doesn\'t drink from it.
+
+DR. ACHTERBERG: Your father tells me you\'re at Temple University.
+
+jules: Yes.
+
+DR. ACHTERBERG: Against your mother\'s wishes.
+
+jules: Most things are.
+
+She smiles, a small precise smile, like a measurement.
+
+DR. ACHTERBERG: I was in North Philadelphia in August. The night of the power failure. I understand there was a concert on Liacouras Walk.
+
+She turns the water glass a quarter turn on its coaster.
+
+DR. ACHTERBERG: Were you there? That night? At eleven fifty-one?
+
+Her voice is perfectly casual. Her eyes are not.
+
+Behind your breastbone, the lock turns, and turns again.`,
+    choices: [
+      { text: '"Yes. A window came down. Every piece of glass missed me." Tell her the truth. What could it hurt?', tag: 'The truth',
+        fx: g => { g.flag('achterberg6', 'truth'); g.hidden('halcyon_jules', 3); g.know('achterberg_glass', ['jules'], 'You told Dr. Achterberg about the window. Every piece of glass missed you. She said, "How very fortunate."'); }, go: 'a2_ach_truth' },
+      { text: '"No. I was home in Gladwyne that weekend." Lie, perfectly.', tag: 'Lie',
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to a stranger', on: { strong: 'a2_ach_lie', weak: 'a2_ach_lie', miss: 'a2_ach_lie' } } },
+      { text: '"Why would a physicist care where I was at midnight?"', tag: 'Turn it',
+        check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'investigate', label: 'Read her', on: { strong: 'a2_ach_turn', weak: 'a2_ach_turn', miss: 'a2_ach_turn' } } }
+    ]
+  },
+  a2_ach_truth: {
+    night: true,
+    text: `jules: Yes. A window came down. Every piece of glass missed me.
+
+DR. ACHTERBERG: Every piece.
+
+jules: Every piece. There was a circle on the ground with me in it.
+
+She looks at you. Then she nods, slowly, like a woman hearing that an experiment has gone exactly as predicted.
+
+DR. ACHTERBERG: How very fortunate.
+
+She touches your arm, once, lightly, two cool fingertips just above the bracelet, and goes back to the table.
+
+You stand by the fire. You realize your heart is going very fast. You can\'t remember the last time your heart went fast because of something that wasn\'t Sam Kearney.`,
+    next: 'a2_test'
+  },
+  a2_ach_lie: {
+    night: true,
+    enter: g => { g.flag('achterberg6', 'lie'); g.hidden('halcyon_jules', 1); },
+    text: `jules: No. I was home in Gladwyne that weekend.
+
+It\'s perfect. You\'ve been lying to people at parties since you were nine.
+
+DR. ACHTERBERG: Ah. Pity. It was quite a night.
+
+She nods pleasantly and goes back to the table.
+
+And then, halfway there, without turning around, she says:
+
+DR. ACHTERBERG: Your father showed me a photograph someone posted that night. A girl on a curb outside a bubble-tea shop, in a perfect circle of broken glass. He was very proud. *My Jules-bug, cool as a cucumber.*
+
+She sits down. She folds her hands on the table.
+
+You stand by the fire. You just lied to a woman who already knew the answer, and she let you. You know that move. You\'ve been letting Kearney make it for six weeks.`,
+    next: 'a2_test'
+  },
+  a2_ach_turn: {
+    night: true,
+    enter: g => { g.flag('achterberg6', 'turn'); g.know('achterberg_concert', ['jules'], 'Dr. Miriam Achterberg, a physicist and Judge Ellison\'s guest, asked whether you were on Liacouras Walk at 11:51 on August 22. She said she was "taking measurements" that night.'); },
+    text: `jules: Why would a physicist care where I was at midnight?
+
+Dr. Achterberg looks at you. For the first time all evening, something real moves in her face: surprise, and then, very clearly, *pleasure*. The look of a chess player whose opponent has finally made an interesting move.
+
+DR. ACHTERBERG: Very good.
+
+She turns the water glass another quarter turn.
+
+DR. ACHTERBERG: Because I was taking measurements that night. It was a very good night for it.
+
+jules: And did you get what you were looking for?
+
+DR. ACHTERBERG: Oh, my dear.
+
+She smiles. It\'s not a measurement anymore.
+
+DR. ACHTERBERG: I\'m looking at it.
+
+She goes back to the table before you can answer.`,
+    next: 'a2_test'
+  },
+
+  /* ---------- The test ---------- */
+  a2_test: {
+    night: true,
+    clock: { time: '10:30 PM' },
+    text: g => `By ten-thirty, you have most of the chips on the table.
+
+You\'ve won eleven hands in a row. You\'ve stopped looking at your cards before you bet. You\'ve stopped needing to. Every time, the cards come the way they come, and every time, they come for you: the flush on the river, the third queen on the turn, the one card in the deck that fills an inside straight. Callum has lost four thousand dollars and keeps apologizing to you for it. Father keeps laughing. Hugh has stopped talking.
+
+And every time: *click*.
+
+Somewhere in your head, very quietly, a seven-year-old girl in a stone chapel is saying: *something\'s in here with me*.
+
+${g.f('horse6') === 'letgo' ? 'You think about Mercutio, standing in his stall on three legs.' : g.f('hugh6') === 'throw' ? 'You think about Hugh\'s cracked racket lying on the grass.' : 'You think about every game you\'ve ever played. You can\'t remember a single loss. Not one.'}
+
+You want to see what it does when you give it nothing to work with.
+
+Gran deals. You look at your cards without picking them up.
+
+Seven of diamonds. Two of spades.
+
+The worst hand in poker.`,
+    choices: [
+      { text: 'Go all in. Seven-deuce. The worst hand there is. Let\'s see what it does.', tag: 'All in',
+        fx: g => { g.flag('test6', 'allin'); g.hidden('jules_debt', 1); }, go: 'a2_allin' },
+      { text: 'Fold. And fold the next one, and the next. Fold everything until somebody else wins.', tag: 'Fold',
+        fx: g => { g.flag('test6', 'fold'); g.hidden('jules_debt', 1); }, go: 'a2_fold' },
+      { text: 'Don\'t test it. Don\'t touch it. Play the hand like a person, and lose it like a person.', tag: 'Play it straight', fx: g => { g.flag('test6', 'straight'); },
+        check: { kind: 'pool', attr: 'wits', skill: 'hustle', diff: 3, label: 'Play it straight', on: { crit: 'a2_straight', success: 'a2_straight', partial: 'a2_straight', fail: 'a2_straight', botch: 'a2_straight' } } }
+    ]
+  },
+  a2_allin: {
+    night: true,
+    enter: g => { g.inc('hands_won'); g.know('jules_allin', ['jules'], 'Jules went all in with seven-deuce at Ravenscourt to see if she could lose. She hit a full house on the flop.'); },
+    text: `You push everything into the middle. Every chip. Forty thousand dollars of your father\'s friends' money, on a seven and a two.
+
+The table goes silent.
+
+whitney: Jules-bug…
+
+hugh: She\'s *bluffing*. She\'s bluffing. Call. *Everybody* call.
+
+Hugh calls. Callum calls, because Callum always calls. Father calls, laughing, off his phone, eyes bright. Dr. Achterberg folds without looking. The judge is asleep.
+
+Gran turns the flop.
+
+Seven of hearts. Seven of clubs. Two of hearts.
+
+You feel the lock turn. *Click.* Behind your breastbone. Hard. So hard it almost hurts.
+
+Full house. Sevens full of twos. Off the worst hand in poker, on the flop. You don\'t need the turn or the river. You don\'t need anything. You never have.
+
+Hugh throws his cards across the table. They hit the fire screen.
+
+hugh: *That\'s not possible.* That\'s not *possible*, Gran, that\'s—she\'s cheating, she *has* to be—
+
+constance: Hugh.
+
+One word. Hugh stops.
+
+Father is laughing so hard he\'s crying. Callum is clapping again, slowly, amazed. *Jules, that\'s insane!*
+
+Dr. Achterberg takes out her notebook and writes one line.
+
+And Gran looks at you over the table, over the cards, over the forty thousand dollars.
+
+She doesn\'t look surprised. She looks like a woman who has just heard a bell ring that she\'s been waiting sixty years to hear.`,
+    next: 'a2_hugh'
+  },
+  a2_fold: {
+    night: true,
+    enter: g => { g.know('jules_fold', ['jules'], 'Jules tried to fold every hand at Ravenscourt so someone else would win. The deck kept refusing to let her.'); },
+    text: `You fold.
+
+You fold the seven-deuce. Fine. That\'s normal. Anyone would.
+
+Next hand. Two aces. You fold them too.
+
+Gran pauses, holding the deck. Then she deals the flop, and the turn, and the river, and Hugh wins with two pair, and he looks at you suspiciously, and takes the pot.
+
+Next hand. Gran deals. You fold without looking.
+
+And Judge Ellison, waking up, knocks over his whiskey, and it floods across the table, and the cards are soaked, and Gran says *misdeal* and calls for a new deck.
+
+New deck. New deal. You fold without looking.
+
+The lights go out.
+
+Not the whole house. Just the library. Just for a second, a hiccup of dark, and in it you feel the thing behind your breastbone *turn*, hard, impatient, and when the lights come back up, Gran is holding the deck very still, and every card on the table, every card that had been dealt, is face up.
+
+All of them. Every player\'s. Face up on the green felt.
+
+And yours, the hand you folded without looking, is the ace and king of hearts. Beside it, slid off the top of the deck face up: queen, jack, ten of hearts. A royal flush. The best hand there is. You threw it away, and it came back anyway.
+
+Nobody says anything. Callum laughs nervously. Father says *well, that\'s a new one*. Hugh stares at the cards.
+
+Dr. Achterberg doesn\'t write in her notebook this time. She just looks at you, with her hands folded.
+
+Gran gathers up the cards. Very slowly. She looks at you.
+
+constance: Child. Play your cards.
+
+It\'s not a request.`,
+    next: 'a2_hugh'
+  },
+  a2_straight: {
+    night: true,
+    enter: g => { g.inc('hands_won'); },
+    text: g => `You don\'t test it. You play it like a person.
+
+You fold the seven-deuce, like a person would. Next hand, you get two queens and play them carefully, correctly, the way Gran taught you on peppermints when you were seven. You bet the right amount. You read Hugh. You fold to a raise when the board gets scary, like a careful, sensible person who knows how to lose.
+
+You fold, and Hugh shows his cards to rub it in, and he had nothing. A bluff.
+
+Next hand, you play properly again. You bet small. You fold to Callum\'s raise, because Callum has, for once, raised, and you want him to have it.
+
+Callum shows his cards, grinning. A pair of fours.
+
+And Gran turns over the cards you folded, like she does sometimes, to teach. A seven and a three. Nothing. His fours had you beat all along. You didn\'t give him anything. The fold was just correct.
+
+You keep playing properly. You keep making the correct, careful, ordinary decisions. And somehow, every time, the correct decision is the one that wins. When you fold, the hand you folded would have lost. When you call, it wins. When you bet the careful amount, everyone folds to exactly that amount.
+
+You\'re not doing anything. You\'re just *sitting there*, being a person, and the cards keep finding you anyway.
+
+${g.last && g.last.nudged ? 'Every time, behind your breastbone: *click*.' : ''}
+
+By eleven, you have nearly every chip on the table, and you haven\'t tried once.`,
+    next: 'a2_hugh'
+  },
+
+  a2_hugh: {
+    night: true,
+    clock: { time: '11:20 PM' },
+    text: g => `Last hand.
+
+It\'s just you and Hugh. Father went out to the terrace on a call twenty minutes ago and never came back. Callum busted out an hour ago and is sitting beside you, cheerfully watching, holding your hand under the table. The judge went home. Dr. Achterberg sits back from the table with her water and her notebook, watching.
+
+Hugh has the last of his chips stacked in front of him, two thousand dollars, and his face is red, and his tie is undone, and he is pushing them in.
+
+hugh: All of it. All in. Come on, Jubilee. Come *on*. One time. Just once in your life, lose to me *once*.
+
+He says it like a joke. It isn\'t a joke. You can hear eighteen years in it, every board game and every tennis match and every swim race at the club.${g.f('hugh6') === 'win' ? ' *Some Pembertons are lucky, Hugh, and some are just rich.*' : ''}
+
+You look at your cards. You already know what they are. You knew before Gran dealt them.
+
+Two kings.
+
+The flop is already out. King of spades. Four of hearts. Nine of diamonds. Three kings. You can\'t lose this hand. You couldn\'t lose it if you tried.
+
+Hugh is looking at you. Underneath the red face and the tie and the drinks, he\'s eleven minutes older than you and looking at you the way he looked at you when you were seven, on the day Gran first let you play, and he cried because you won all his peppermints.`,
+    choices: [
+      { text: 'Call. Win. It\'s what happens. It\'s what always happens.', tag: 'Call',
+        check: { kind: 'pool', attr: 'nerve', skill: 'hustle', diff: 2, label: 'Take it', on: { crit: 'a2_hugh_call', success: 'a2_hugh_call', partial: 'a2_hugh_call', fail: 'a2_hugh_call', botch: 'a2_hugh_call' } } },
+      { text: 'Fold. Push your three kings into the middle face down. Give it to him. *Give* it.', tag: 'Give it to him',
+        fx: g => { g.flag('hugh_hand', 'gave'); g.bond('hugh', { trust: 2, affection: 2, tension: -2 }); g.know('jules_gave', ['jules', 'constance'], 'At Ravenscourt, Jules folded three kings and gave the last hand to Hugh. It was the first time since she was seven that losing was her idea.'); }, go: 'a2_hugh_gave' }
+    ]
+  },
+  a2_hugh_call: {
+    night: true,
+    enter: g => { g.flag('hugh_hand', 'won'); g.inc('hands_won'); g.bond('hugh', { tension: 2 }); },
+    text: `jules: Call.
+
+Hugh turns over his cards. Two nines. Three nines. A great hand.
+
+You turn over yours. Three kings.
+
+The turn: a two. The river: a two. You both make a full house. Yours is bigger. Kings full of twos.
+
+Hugh sits there looking at the cards. Then he stands up, very carefully, the way drunk people stand up when they\'re trying not to look drunk.
+
+hugh: Okay. Okay. Good game, everybody.
+
+He goes out through the French doors onto the terrace. Through the glass, you watch him walk to the stone wall above the river and stand there with his back to the house, and his shoulders do something, and you look away, because you know what Hugh looks like when he cries, and he\'d never forgive you for seeing it.
+
+Callum squeezes your hand under the table.
+
+callum: That was *amazing*. You\'re amazing.
+
+You have forty-six thousand dollars in chips in front of you, and your brother is crying on the terrace, and your boyfriend is holding your hand and telling you you\'re amazing.
+
+Gran stands. She doesn\'t say anything. She looks at the chips, and at the French doors, and at you, and her face is very tired and very old.
+
+constance: Leave the chips, child. Then come and find me.`,
+    next: 'a3_terrace'
+  },
+  a2_hugh_gave: {
+    night: true,
+    text: `You don\'t call. You fold.
+
+You push your three kings into the middle face down, gently, and you sit back.
+
+jules: Fold.
+
+Hugh stares at you.
+
+hugh: You\'re folding.
+
+jules: I\'m folding.
+
+hugh: You never fold to me. You\'ve *never*—
+
+He grabs the pot with both hands like it might disappear. Then he stops, with the chips half pulled toward him, and looks at your cards, face down in the middle of the table, and you watch him think about turning them over.
+
+He doesn\'t. He\'s eleven minutes older, and he knows you, and he doesn\'t turn them over.
+
+hugh: …Thanks, Jubilee.
+
+It\'s very quiet. It\'s the most honest thing he\'s said to you since you were twelve.
+
+Across the table, Gran is looking at you. Not at your cards, not at Hugh. At *you*. And her face is doing something you have never once in eighteen years seen it do: it\'s surprised.
+
+You\'ve folded hands before tonight. This is the first time since you were seven that losing was your idea. Nothing stopped you.
+
+*Click*, behind your breastbone. But softer this time. Puzzled, almost. As if it reached for something and found you\'d already given it away.
+
+Dr. Achterberg writes in her notebook. Two lines this time.
+
+constance: Leave the chips, child. Then come and find me.`,
+    next: 'a3_terrace'
+  },
+
+  /* ================= ACT THREE: HALF PAST MIDNIGHT ================= */
+  a3_terrace: {
+    card: { kind: 'act', label: 'Act Three', title: 'Half Past Midnight' },
+    night: true,
+    loc: 'RAVENSCOURT · THE TERRACE',
+    clock: { time: '12:31 AM' },
+    text: g => `Callum finds you on the terrace, at the stone wall above the river. It\'s cold. Your breath smokes. Below, the Schuylkill moves in the dark, and across it, very far off, there\'s the faint orange glow of the city.
+
+He puts his jacket around your shoulders without asking. It smells like him, like clean laundry and boathouse.
+
+callum: There you are.
+
+jules: Here I am.
+
+He stands next to you, close, looking at the river. He\'s quiet for a while, which isn\'t like him.
+
+callum: Jules. Can I say something?
+
+jules: Of course.
+
+callum: I know I\'m not… exciting. I row and I study and I like my parents. I\'m not dumb. I know what I am. But I think about you all the time. Like, *all* the time. Even at five in the morning on the river.
+
+He turns and looks at you, and his face in the dark is open and earnest and terrified.
+
+callum: I love you. I\'ve said it before. I don\'t think I ever said it right. I love you, Jules.
+
+Across the river, the city glows. Somewhere in it, ten miles east, there\'s a boy on a ninth floor who lies to you with his whole face.
+
+You\'ve told Callum you love him before. You\'ve said it back, when he signed cards, when he hung up the phone. You\'ve never said it first, and he\'s never said it like *this*, like it costs something.`,
+    choices: [
+      { text: '"I love you too." It\'s what you say. It\'s what you\'ve always said.', tag: 'Say it back',
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Say it', on: { strong: 'a3_ily_too', weak: 'a3_ily_too', miss: 'a3_ily_too' } } },
+      { text: '"Thank you, Callum." Just that. You won\'t lie to him about this one.', tag: 'Thank you',
+        fx: g => { g.flag('ily', 'thanks'); g.bond('callum', { tension: 2 }); g.bond('jules', { respect: 1 }); }, go: 'a3_ily_thanks' },
+      { text: '"Callum, I don\'t think I know what that means. I don\'t think I ever have."', tag: 'The truth',
+        fx: g => { g.flag('ily', 'truth'); g.bond('callum', { trust: 1, tension: 3 }); g.bond('jules', { trust: 1 }); }, go: 'a3_ily_truth' }
+    ]
+  },
+  a3_ily_too: {
+    night: true,
+    enter: g => { g.flag('ily', 'too'); g.bond('callum', { affection: 2 }); },
+    text: `jules: I love you too.
+
+It comes out perfectly. Warm and certain and a little shy, exactly the way it should. He believes it completely. Everyone always does.
+
+He kisses you. Gently, carefully, the way he does everything, holding your face in his warm callused hands, and you kiss him back, and you close your eyes, and you think about a roof at 4:12 in the morning, and a boy who never touched your face at all.
+
+callum: Okay. Okay. Wow. Okay.
+
+He laughs at himself. He\'s so happy. He\'s so happy it\'s like watching someone stand in the sun.
+
+callum: I should go. I\'ve got erg at six. The car\'s coming at one. Text me when you\'re up?
+
+jules: Of course.
+
+He kisses your forehead and goes in. You stand at the wall with his jacket around your shoulders and you say it to yourself once, in your head, to see how it sounds, now that you\'ve said it.
+
+*I love you too.*
+
+It sounds perfect. It sounds like every other thing you\'ve ever won.`,
+    next: 'a3_phone'
+  },
+  a3_ily_thanks: {
+    night: true,
+    text: `jules: Thank you, Callum.
+
+He waits. He waits for the rest of it. You watch him wait, and you watch him realize there isn\'t any more.
+
+callum: …Oh.
+
+jules: I mean it. Thank you. Nobody\'s ever said it like that to me.
+
+callum: But you don\'t—
+
+jules: I don\'t know. I\'m not going to say something I don\'t know. Not to you. You\'re the only person who\'s never once lied to me.
+
+He looks at you in the dark. Then he nods. He\'s hurt. You can see it. He\'s trying very hard not to let it be your problem. He\'s always been good at that.
+
+callum: Okay. That\'s okay. That\'s honest. I\'d rather have honest.
+
+He takes your hand and squeezes it once.
+
+callum: I\'ve got erg at six. The car\'s coming at one. I\'ll text you.
+
+He goes in. He leaves his jacket on your shoulders. He doesn\'t ask for it back.`,
+    next: 'a3_phone'
+  },
+  a3_ily_truth: {
+    night: true,
+    text: `jules: Callum, I don\'t think I know what that means. I don\'t think I ever have.
+
+He stares at you.
+
+jules: I\'ve said it to you. I know I have. I said it because you said it, and because it was the next thing to say. I\'m sorry. You don\'t deserve that. You deserve somebody who knows what it means.
+
+callum: Are you breaking up with me?
+
+jules: No. I don\'t know. I\'m telling you the truth, for once. I thought you should have that, at least, before anything else.
+
+He looks out at the river. When he talks again, his voice is very quiet.
+
+callum: Is it him?
+
+jules: Who?
+
+callum: The guy from your hall. From the party. In the lobby that morning, with the soot in his hair. He looked at you like I look at you.
+
+You don\'t answer. You can\'t. You\'ve never been asked a question you couldn\'t answer before.
+
+Callum nods, slowly. He reaches for the jacket on your shoulders, like he\'s going to take it back. He fixes the collar instead.
+
+callum: Okay. I\'ve got erg at six. The car\'s coming at one. I\'ll… I\'ll call you.
+
+He goes in. You stand at the wall in his jacket. It\'s worse than the cold would have been.`,
+    next: 'a3_phone'
+  },
+
+  a3_phone: {
+    night: true,
+    clock: { time: '12:58 AM' },
+    text: g => `You take your phone out.
+
+You think about the elevator. *Two of him.*
+
+You open your messages. You scroll past Mother and Father and Simone and Hugh and Callum, and you stop on a name you saved in August, the first week, out of spite, and never changed:
+
+**WAWA GUY**
+
+You\'ve texted him eleven times in six weeks. All of them about calculus.
+
+You type: *I won everything tonight*
+
+You delete it.
+
+You type: *Are you awake*
+
+You delete it.
+
+You type: *What if it was me.*
+
+Your thumb is over the button. Behind your breastbone, nothing clicks. Nothing turns. For the first time all night, whatever has been watching you is perfectly, completely quiet, like it\'s leaning in to see what you\'ll do.`,
+    choices: [
+      { text: 'Delete it. All of it. Put the phone face down on the cold stone.', tag: 'Delete',
+        fx: g => { g.flag('text6', 'none'); }, go: 'a3_phone_none' },
+      { text: 'Send something small instead: *how\'s the arm*', tag: 'Small',
+        fx: g => { g.flag('text6', 'arm'); g.know('jules_text_arm', ['sam', 'jules'], 'At 12:58 a.m. on October 4, Jules texted you: "how\'s the arm."'); g.bond('jules', { affection: 1 }); }, go: 'a3_phone_arm' },
+      { text: 'Send it. *What if it was me.*', tag: 'Send it',
+        fx: g => { g.flag('text6', 'whatif'); g.know('jules_text_whatif', ['sam', 'jules'], 'At 12:58 a.m. on October 4, Jules texted you: "What if it was me." Nothing else.'); g.bond('jules', { affection: 1, trust: 1 }); }, go: 'a3_phone_whatif' }
+    ]
+  },
+  a3_phone_none: {
+    night: true,
+    text: `You delete it. Letter by letter, backward, the way you\'d unpick a stitch.
+
+You put the phone face down on the stone wall.
+
+Ten miles east, a boy on a ninth floor is asleep, or isn\'t. For thirty seconds tonight, you almost asked him a question.
+
+You think that\'s probably for the best. You think that\'s what *for the best* means: the thing that happens when you don\'t do anything.
+
+You\'re not sure anymore that you\'ve ever once done anything at all.`,
+    next: 'tag_chapel'
+  },
+  a3_phone_arm: {
+    night: true,
+    text: `TXT jules: how\'s the arm
+
+You send it before you can think. The little *whoosh*. Delivered.
+
+It\'s one in the morning. He\'s asleep. Of course he\'s asleep. Normal people are asleep at one in the morning, and he\'s a very normal guy, with his cereal and his doorway.
+
+The three dots appear.
+
+They disappear.
+
+They appear again. For a long time.
+
+TXT sam: healed. weirdly fast lol
+TXT sam: how was the castle
+
+TXT jules: i won
+TXT sam: obviously
+TXT sam: did you have fun
+
+You look at that for a long time. *did you have fun.* Nobody\'s ever asked you that about a card game. Nobody\'s ever thought to.
+
+TXT jules: no
+TXT jules: goodnight kearney
+
+TXT sam: goodnight pemberton
+
+You hold the phone against your chest on the cold terrace, with the city glowing ten miles away, and it\'s warm, from your hand.`,
+    next: 'tag_chapel'
+  },
+  a3_phone_whatif: {
+    night: true,
+    text: `TXT jules: What if it was me.
+
+You send it.
+
+The little *whoosh*. Delivered.
+
+You stand there. Your heart is going. You can\'t believe you did it. You\'ve never once in your life done something you couldn\'t take back, and you just did, with your thumb, at one in the morning, to a boy saved in your phone as WAWA GUY.
+
+The three dots appear.
+
+They disappear.
+
+They don\'t come back.
+
+One minute. Five. Ten. You stand at the wall in the cold holding the phone, and it says *Delivered*, and then, at 1:09, it says *Read*.
+
+And nothing else.
+
+All you know is *Read*, and the cold, and the thing behind your breastbone, perfectly silent.`,
+    next: 'tag_chapel'
+  },
+
+  /* ================= TAG ================= */
+  tag_chapel: {
+    card: { kind: 'tag' },
+    night: true,
+    loc: 'RAVENSCOURT · THE CHAPEL',
+    clock: { time: '1:20 AM' },
+    enter: g => { g.know('constance_started', ['jules', 'constance'], 'In the chapel at Ravenscourt, Gran had Jules roll the ivory die on the altar. Six. "How many times?" "Every time." Gran said: "It\'s started, then."'); g.bond('constance', { trust: 2 }); },
+    text: g => `Gran is waiting for you at the end of the boxwood path, in a black wool coat, holding an old brass lantern with a real candle in it.
+
+She doesn\'t say anything. She turns and walks, and you follow her, the way you followed her everywhere when you were small, down the path between the dark hedges, toward the chapel.
+
+The chapel at Ravenscourt is small and gray and very old, built in 1891 by your grandfather\'s grandfather, with a slate roof and a bell nobody rings and a single stained-glass window over the altar. You haven\'t been inside since you were seven years old. Since the night Hugh locked you in it, as a joke, and went to bed, and forgot.
+
+Gran opens the door. It isn\'t locked tonight. That night it was: you heard Hugh\'s key turn, and you never once tried the latch. You were seven. You sat by the door in the dark all night, because you were sure that if you moved, something would notice.
+
+Inside: cold stone, old wood, the smell of candle wax and dust and January. Gran sets the lantern on the altar. In its light, the stained-glass window glows dimly above you. You\'d forgotten the window. It shows a tall figure in white standing in a doorway, one hand resting on the edge of the door, and behind the figure there\'s nothing, not sky, not stars, just a deep blue dark, and a single word on a ribbon at the bottom, in gold: **TENEO**.
+
+constance: Sit down, child.
+
+You sit in the front pew. Gran stays standing. She holds out her hand, palm up.
+
+constance: The die.
+
+You take it out of your pocket. Her die. Small, yellowed ivory, older than anyone alive, the pips worn almost smooth. She gave it to you on your sixteenth birthday and told you *it isn\'t lucky. Luck isn\'t real.* You\'ve carried it every day since.
+
+You put it in her palm. She closes her hand around it, and holds it for a moment, eyes closed, the way she held cards when you were small. Then she gives it back.
+
+constance: Roll it. On the altar.
+
+You stand. You go to the altar. You roll it on the old stone, under the window, in the candlelight.
+
+It tumbles. It stops.
+
+Six.
+
+constance: Again.
+
+Six.
+
+constance: Again.
+
+Six.
+
+You don\'t wait for her to ask. You roll it ten more times, faster and faster, and the sound of ivory on stone fills the chapel like a clock, and every time it\'s six, and six, and six, and you\'re breathing hard, and your hands are shaking, and you stop.
+
+constance: How many times?
+
+jules: Every time. Since August. Every single time.
+
+constance: And before August?
+
+jules: …Most times.
+
+Gran is quiet for a long while. The candle flame in the lantern stands perfectly straight, perfectly still, not a flicker. ${g.hv('jules_debt') >= 4 ? 'You think about every loss tonight that was somebody else\'s. *It has to go somewhere, child.*' : ''}
+
+She looks up at the window. At the figure in the doorway. At the word on the ribbon.
+
+When she speaks, it\'s so quietly that you almost don\'t hear it, and she isn\'t saying it to you.
+
+constance: It\'s started, then.
+
+She picks up the lantern. The light swings, and the shadows of the pews swing with it, and for one second, in the moving dark behind the altar, you feel it, the thing you\'ve felt your whole life, the room-behind-you feeling.
+
+It isn\'t behind you now.
+
+It\'s *in front* of you. In the window. Looking down.
+
+${g.f('hugh_hand') === 'gave' ? 'And, very faintly, so faintly you\'ll spend the rest of the night deciding whether you imagined it, it seems *puzzled*.' : 'And, very faintly, so faintly you\'ll spend the rest of the night deciding whether you imagined it, it seems *pleased*.'}`,
+    end: true
+  }
+});
+
+Object.assign(EH.episodes.s01e06, {
+  polls: [
+    { q: 'The worst hand in poker', opts: [
+      { label: 'Went all in', pct: 46, if: g => g.f('test6') === 'allin' },
+      { label: 'Folded everything', pct: 31, if: g => g.f('test6') === 'fold' },
+      { label: 'Played it straight', pct: 23, if: g => g.f('test6') === 'straight' || !g.f('test6') }
+    ] },
+    { q: 'The last hand, against Hugh', opts: [
+      { label: 'Called. Won.', pct: 38, if: g => g.f('hugh_hand') === 'won' },
+      { label: 'Gave it to him', pct: 62, if: g => g.f('hugh_hand') === 'gave' }
+    ] },
+    { q: 'At 12:58 a.m.', opts: [
+      { label: 'Deleted it', pct: 33, if: g => g.f('text6') === 'none' },
+      { label: '"how\'s the arm"', pct: 41, if: g => g.f('text6') === 'arm' },
+      { label: '"What if it was me."', pct: 26, if: g => g.f('text6') === 'whatif' }
+    ] }
+  ],
+  onEnd: g => {
+    g.recap(g.f('hugh_hand') === 'gave' ? 'At Ravenscourt, Jules couldn\'t lose a hand of cards, until she gave one away.' : 'At Ravenscourt, Jules couldn\'t lose a hand of cards, no matter what she did.');
+    g.recap('A physicist named Dr. Achterberg asked where Jules was at 11:51 on August 22.');
+    g.recap(g.f('ily') === 'too' ? 'Callum said "I love you." Jules said it back.' : g.f('ily') === 'thanks' ? 'Callum said "I love you." Jules said "Thank you."' : 'Callum said "I love you." Jules told him she didn\'t know what it meant.');
+    g.recap('In the chapel at Ravenscourt, Constance watched the die come up six, and said, "It\'s started, then."');
+  }
+});
+
 </script>
 <script>
 /* THE EVENT HORIZON: browser engine (UI, sound, saves). Depends on core.js and the episode files. */
@@ -11545,6 +13076,8 @@ Object.assign(EH.episodes.s01e05, {
     delete S.flags._failxp;
     if (!firstEp) S.injuries = S.injuries.map(i => Object.assign({}, i, { heal: (i.heal || 1) - 1 })).filter(i => i.heal > 0);
     S.pools.nerve = EH.maxPool(S, 'nerve') - (S.sleepDebt >= 6 ? 1 : 0);
+    if (S.pov && !ep.pov) EH.povExit(S);
+    EH.povEnter(S, ep);
     const snap = EH.clone(S); delete snap.epStart; S.epStart = snap;
     TRAIL = [];
     save();
@@ -11594,7 +13127,7 @@ Object.assign(EH.episodes.s01e05, {
     if (hasText) {
       const body = el('div', sc.night ? 'panel-night' : '');
       if (sc.loc) body.appendChild(el('div', 'slug', '<span>' + esc(sc.loc) + '</span>' + (sc.clock ? '<span class="t">' + esc([sc.clock.day, sc.clock.date, sc.clock.time].filter(Boolean).join(' · ')) + '</span>' : '')));
-      const pr = el('div', 'prose'); pr.innerHTML = EH.markup(EH.text(sc, g)); body.appendChild(pr);
+      const pr = el('div', 'prose'); EH.viewer = S.pov || 'sam'; pr.innerHTML = EH.markup(EH.text(sc, g)); body.appendChild(pr);
       box.appendChild(body);
     }
     if (notes.length) box.appendChild(notesEl(notes));
@@ -11736,7 +13269,7 @@ Object.assign(EH.episodes.s01e05, {
       } catch (e) { busy = false; console.error(e); toast('Something broke: ' + e.message); }
     };
     if (ch.check) {
-      if (preset) { resolve(preset); return; }
+      if (preset) { if (S.pov && !preset.nudged) EH.tryNudge(S, ch.check, preset); resolve(preset); return; }
       const idx = (sc.choices || []).indexOf(ch);
       save();
       openTray(ch.check, resolve, res => { S.pending = { scene: id, idx, res: EH.clone(res) }; save(); });
@@ -11911,7 +13444,7 @@ Object.assign(EH.episodes.s01e05, {
     const finish = () => {
       showVerdict(wrap, c, res);
       const ft = $('#tft', wrap); ft.innerHTML = '';
-      const canRewind = c.kind === 'pool' && !res.rewound && !EH.isClean(res.tier) && EH.api(S).has('rewind') && S.pools.focus >= 3 && !c.noRewind;
+      const canRewind = c.kind === 'pool' && !res.rewound && !EH.isClean(res.tier) && EH.api(S).has('rewind') && S.pools.focus >= 3 && !c.noRewind && !S.pov;
       if (canRewind) {
         const rb = el('button', 'btn', '◀◀ Rewind · 3 Focus · +2 Drift');
         rb.onclick = () => { S.pools.focus -= 3; EH.api(S).drift(2); doRewind(wrap, c, res, m, cb, false, onRolled); };
@@ -12004,6 +13537,7 @@ Object.assign(EH.episodes.s01e05, {
       if (!S.done.includes(S.ep)) {
         g.xp(ep.xp ?? 3);
         if (ep.onEnd) ep.onEnd(g);
+        EH.povExit(S);
         const sum = summarize();
         S.eps[S.ep] = { title: ep.title, finished: new Date().toISOString(), summary: sum };
         S.done.push(S.ep);
@@ -12109,16 +13643,16 @@ Object.assign(EH.episodes.s01e05, {
   const bar = (v, max, cls) => '<div class="bar ' + (cls || '') + '"><span style="width:' + Math.max(0, Math.min(100, v / max * 100)) + '%"></span></div>';
   function drawSheet(b) {
     b.innerHTML =
-      '<div class="sec"><h4>Sam Kearney</h4><div class="mono" style="font-size:.74rem;color:var(--ink-soft)">18 · Temple University, undeclared · Cardone Hall 9-14 · Ciro\'s Pizza, delivery</div></div>' +
+      (S.pov === 'jules' ? '<div class="sec"><h4>Jules Pemberton</h4><div class="mono" style="font-size:.74rem;color:var(--ink-soft)">18 · Temple University, undeclared · Cardone Hall 9-11 · Gladwyne</div></div>' : '<div class="sec"><h4>Sam Kearney</h4><div class="mono" style="font-size:.74rem;color:var(--ink-soft)">18 · Temple University, undeclared · Cardone Hall 9-14 · Ciro\'s Pizza, delivery</div></div>') +
       '<div class="sec"><h4>Attributes</h4><div class="attrs">' + EH.ATTRS.map(k => '<div class="attr"><span class="n">' + EH.ATTR_NAMES[k] + '</span><span class="v">' + S.attrs[k] + '</span>' + dots5(S.attrs[k]) + '</div>').join('') + '</div></div>' +
       '<div class="sec"><h4>Pools</h4><div style="display:flex;flex-direction:column;gap:8px">' +
       ['stamina', 'focus', 'nerve'].map((p, i) => '<div class="meter"><div class="row"><span>' + p + '</span><span>' + S.pools[p] + ' / ' + EH.maxPool(S, p) + '</span></div>' + bar(S.pools[p], EH.maxPool(S, p), ['m', 'c', 'y'][i]) + '</div>').join('') +
       '<div class="meter"><div class="row"><span>Sleep Debt</span><span>' + S.sleepDebt + ' / 10</span></div>' + bar(S.sleepDebt, 10, 'r') + '</div>' +
-      (S.powers.slip.nodes.length ? '<div class="meter"><div class="row"><span>Drift</span><span>' + S.drift + ' / 10</span></div>' + bar(S.drift, 10, 'c') + '</div>' : '') +
+      (S.powers.slip.nodes.length && !S.pov ? '<div class="meter"><div class="row"><span>Drift</span><span>' + S.drift + ' / 10</span></div>' + bar(S.drift, 10, 'c') + '</div>' : '') +
       '</div></div>' +
       '<div class="sec"><h4>Skills</h4><div class="skills">' + Object.keys(EH.SKILLS).map(k => '<div class="s' + (S.skills[k] ? '' : ' zero') + '"><span>' + (S.marked[k] ? '<span class="mk">●</span> ' : '') + EH.SKILLS[k] + '</span><span>' + S.skills[k] + '</span></div>').join('') + '</div>' +
       '<div class="mono" style="font-size:.66rem;color:var(--ink-faint);margin-top:6px">● marked: used this episode, can be raised at episode end.</div></div>' +
-      (S.powers.slip.nodes.length ? '<div class="sec"><h4>Powers · the Slip</h4><div style="display:flex;flex-direction:column;gap:6px">' +
+      (S.powers.slip.nodes.length && !S.pov ? '<div class="sec"><h4>Powers · the Slip</h4><div style="display:flex;flex-direction:column;gap:6px">' +
         Object.keys(EH.NODES).map(n => { const has = S.powers.slip.nodes.includes(n); const N = EH.NODES[n]; return '<div class="node' + (has ? '' : ' locked') + '"><b>' + (has ? N.name : '???') + '</b><span>' + (has ? N.desc : 'Locked') + '</span></div>'; }).join('') +
         '<div class="meter"><div class="row"><span>Mastery</span><span>' + S.powers.slip.mastery + ' / 100</span></div>' + bar(S.powers.slip.mastery, 100, 'm') + '</div></div></div>' : '') +
       '<div class="sec"><h4>Life</h4><dl class="kv">' +

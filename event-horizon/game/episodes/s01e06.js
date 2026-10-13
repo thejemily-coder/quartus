@@ -54,7 +54,7 @@ Over the Delaware, the sky starts thinking about morning.`,
 
 The sun comes up over the Delaware. Neither of you moves.
 
-Three hours from now, Callum will be in the lobby with iced coffee, and you\'ll go down first, and you\'ll let him hug you with Kearney watching over his shoulder, and you\'ll look at Kearney the whole time.
+Four hours from now, Callum will be in the lobby with iced coffee, and you\'ll go down first, and you\'ll let him hug you with Kearney watching over his shoulder, and you\'ll look at Kearney the whole time.
 
 You won\'t remember deciding to do that either.`,
       next: 'titles'
@@ -205,12 +205,12 @@ And then, under that, a separate heading, added more recently, the font a little
 
 *1. He was in the zone at 11:51.*
 *2. Leaves. A lot.*
-*3. "Ciro\'s oven"*
+*3. Left movie night halfway through Moonstruck. NOBODY leaves Moonstruck.*
 
 The shower turns off down the hall.`,
       choices: [
         { text: 'Put it down exactly where it was. Say nothing. Ever.', tag: 'Say nothing',
-          fx: g => { g.flag('list', 'silent'); g.know('simone_list', ['jules'], 'Simone keeps a list on her phone: "Things That Don\'t Add Up About Juliet." And a second one, about Sam.'); }, go: 'a1_hall' },
+          fx: g => { g.flag('list', 'silent'); g.know('simone_list', ['jules', 'simone'], 'Simone keeps a list on her phone: "Things That Don\'t Add Up About Juliet." And a second one, about Sam.'); }, go: 'a1_hall' },
         { text: 'Leave it open. Let her come back and see you saw.', tag: 'Let her know',
           fx: g => { g.flag('list', 'open'); g.bond('simone', { tension: 2 }); g.know('simone_list', ['jules', 'simone'], 'Simone keeps a list on her phone: "Things That Don\'t Add Up About Juliet." And a second one, about Sam. Jules saw it, and Simone knows she saw it.'); }, go: 'a1_list_open' },
         { text: 'Add one. Type: *8. She knows about this list.* Then put it back.', tag: 'Add one',
@@ -255,7 +255,7 @@ simone: Okay. Then I\'ll keep it. And you\'ll know I\'m keeping it. And when you
 
 Of course he\'s there. He\'s always there. He\'s leaning in his doorway in a gray Temple T-shirt, eating a bowl of cereal at a quarter to five in the afternoon, and his arms are fine.
 
-That\'s the first thing you see. His arms are *fine*. Three weeks ago, on the bathroom floor, they were burned and blistered, and you put nine stitches in one of them with your own hands. Now the skin is smooth and a little pink, like a scar that\'s had a year.
+That\'s the first thing you see. His arms are *fine*. Three weeks ago, on the bathroom floor, they were burned and blistered, and you finished the stitches in one of them with your own hands. Now the skin is smooth and a little pink, like a scar that\'s had a year.
 
 sam: Pemberton.
 
@@ -305,7 +305,7 @@ jules: That\'s a lot of normal stuff.
 
 sam: I\'m a very normal guy.
 
-You both stand there in the hallway. It\'s the longest conversation you\'ve had without anybody bleeding in two weeks.
+You both stand there in the hallway. It\'s the longest conversation you\'ve had without anybody bleeding since Mifflin Street.
 
 jules: Call Vinnie.
 
@@ -340,7 +340,7 @@ It\'s a cold, specific feeling, like setting down a card and realizing it\'s the
       next: 'a1_drift'
     },
     a1_hall_go: {
-      text: `You nod once, the way his father nodded at you across the dinner table on Sunday, and you go.
+      text: `You nod once, the way his father nodded at you across the dinner table at Sunday dinner, and you go.
 
 You can feel him watching you all the way to the elevator. It\'s not the other kind of watching, the kind you\'ve felt your whole life, the room-behind-you kind. It\'s just a boy, in a doorway, with a bowl of cereal, looking at you.
 
@@ -378,7 +378,7 @@ They don\'t hurt. They never do.`,
     a1_mother: {
       loc: 'THE PEMBERTON HOUSE · GLADWYNE',
       clock: { time: '6:10 PM' },
-      text: g => `The house in Gladwyne is the house you grew up in, which is to say it is beautiful, and enormous, and very quiet, and it has never once in your life felt like it was yours.
+      text: g => `Your parents\' house in Gladwyne, where you mostly didn\'t grow up (your room was always at Gran\'s), is beautiful, and enormous, and very quiet, and it has never once in your life felt like it was yours.
 
 Your mother is in the front hall when you come in, as if she\'s been standing there, which she may have been. Dr. Catherine Pemberton, in a cream silk blouse and gray trousers and her reading glasses pushed up into her hair, holding a small white card.
 
@@ -754,7 +754,7 @@ jules: Can I think about it?
 
 callum: Of course! Take all the time you want.
 
-You walk on through the boxwoods holding his hand, with another boy\'s sister\'s bracelet on your wrist, and the lie sits in your mouth like a stone. It\'s the first lie you\'ve ever told Callum. You thought it would be harder.
+You walk on through the boxwoods holding his hand, with another boy\'s sister\'s bracelet on your wrist, and the lie sits in your mouth like a stone. It\'s the first lie you\'ve ever told Callum that wasn\'t *I love you too*. You thought it would be harder.
 
 It wasn\'t hard at all. Nothing ever is.`,
       next: '@hub'

@@ -26,9 +26,9 @@ The table:
 
 And a woman you don\'t know. Late fifties, Dutch by the accent, with steel-gray hair cut very short and a black suit and no jewelry at all, sitting very straight, with her hands folded on the table in front of her like someone waiting for a result.
 
-whitney: Everybody, this is Miriam. Dr. Achterberg. She\'s a physicist. A friend from the energy thing. Miriam, my daughter Juliet, the one I told you about.
+whitney: Everybody, this is Miriam. Dr. Achterberg. She\'s a physicist. Judge Ellison\'s guest. Miriam, my daughter Juliet.
 
-DR. ACHTERBERG: He did. At length.
+DR. ACHTERBERG: Ah. The one at Temple.
 
 She says it pleasantly. She\'s looking right at you.
 
@@ -108,7 +108,7 @@ jules: Most things are.
 
 She smiles, a small precise smile, like a measurement.
 
-DR. ACHTERBERG: I was at Temple once. For a concert. In August. The Welcome Week concert on Liacouras Walk, the night of the power failure.
+DR. ACHTERBERG: I was in North Philadelphia in August. The night of the power failure. I understand there was a concert on Liacouras Walk.
 
 She turns the water glass a quarter turn on its coaster.
 
@@ -122,7 +122,7 @@ Behind your breastbone, the lock turns, and turns again.`,
         fx: g => { g.flag('achterberg6', 'truth'); g.hidden('halcyon_jules', 3); g.know('achterberg_glass', ['jules'], 'You told Dr. Achterberg about the window. Every piece of glass missed you. She said, "How very fortunate."'); }, go: 'a2_ach_truth' },
       { text: '"No. I was home in Gladwyne that weekend." Lie, perfectly.', tag: 'Lie',
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to a stranger', on: { strong: 'a2_ach_lie', weak: 'a2_ach_lie', miss: 'a2_ach_lie' } } },
-      { text: '"Why would a physicist go to a student concert?"', tag: 'Turn it',
+      { text: '"Why would a physicist care where I was at midnight?"', tag: 'Turn it',
         check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'investigate', label: 'Read her', on: { strong: 'a2_ach_turn', weak: 'a2_ach_turn', miss: 'a2_ach_turn' } } }
     ]
   },
@@ -156,7 +156,7 @@ She nods pleasantly and goes back to the table.
 
 And then, halfway there, without turning around, she says:
 
-DR. ACHTERBERG: Your father showed me the photograph. From the newspaper. The girl sitting on the curb outside the bubble-tea shop with the tall Black girl holding her hand. It was in the *Inquirer*, page three. He was very proud. *My Jules-bug, cool as a cucumber.*
+DR. ACHTERBERG: Your father showed me a photograph someone posted that night. A girl on a curb outside a bubble-tea shop, in a perfect circle of broken glass. He was very proud. *My Jules-bug, cool as a cucumber.*
 
 She sits down. She folds her hands on the table.
 
@@ -165,8 +165,8 @@ You stand by the fire. You just lied to a woman who already knew the answer, and
   },
   a2_ach_turn: {
     night: true,
-    enter: g => { g.flag('achterberg6', 'turn'); g.know('achterberg_concert', ['jules'], 'Dr. Miriam Achterberg, a physicist and a friend of your father\'s, asked whether you were on Liacouras Walk at 11:51 on August 22. She was there. She said she was "taking measurements."'); },
-    text: `jules: Why would a physicist go to a student concert?
+    enter: g => { g.flag('achterberg6', 'turn'); g.know('achterberg_concert', ['jules'], 'Dr. Miriam Achterberg, a physicist and Judge Ellison\'s guest, asked whether you were on Liacouras Walk at 11:51 on August 22. She said she was "taking measurements" that night.'); },
+    text: `jules: Why would a physicist care where I was at midnight?
 
 Dr. Achterberg looks at you. For the first time all evening, something real moves in her face: surprise, and then, very clearly, *pleasure*. The look of a chess player whose opponent has finally made an interesting move.
 
@@ -174,7 +174,7 @@ DR. ACHTERBERG: Very good.
 
 She turns the water glass another quarter turn.
 
-DR. ACHTERBERG: I wasn\'t there for the music. I was taking measurements. It was a very good night for it.
+DR. ACHTERBERG: Because I was taking measurements that night. It was a very good night for it.
 
 jules: And did you get what you were looking for?
 
@@ -341,7 +341,7 @@ Hugh is looking at you. Underneath the red face and the tie and the drinks, he\'
       { text: 'Call. Win. It\'s what happens. It\'s what always happens.', tag: 'Call',
         check: { kind: 'pool', attr: 'nerve', skill: 'hustle', diff: 2, label: 'Take it', on: { crit: 'a2_hugh_call', success: 'a2_hugh_call', partial: 'a2_hugh_call', fail: 'a2_hugh_call', botch: 'a2_hugh_call' } } },
       { text: 'Fold. Push your three kings into the middle face down. Give it to him. *Give* it.', tag: 'Give it to him',
-        fx: g => { g.flag('hugh_hand', 'gave'); g.bond('hugh', { trust: 2, affection: 2, tension: -2 }); g.know('jules_gave', ['jules', 'constance'], 'At Ravenscourt, Jules folded three kings and gave the last hand to Hugh. It was the first hand she\'d lost since she was seven. She chose to.'); }, go: 'a2_hugh_gave' }
+        fx: g => { g.flag('hugh_hand', 'gave'); g.bond('hugh', { trust: 2, affection: 2, tension: -2 }); g.know('jules_gave', ['jules', 'constance'], 'At Ravenscourt, Jules folded three kings and gave the last hand to Hugh. It was the first time since she was seven that losing was her idea.'); }, go: 'a2_hugh_gave' }
     ]
   },
   a2_hugh_call: {
@@ -414,7 +414,7 @@ constance: Leave the chips, child. Then come and find me.`,
     night: true,
     loc: 'RAVENSCOURT · THE TERRACE',
     clock: { time: '12:31 AM' },
-    text: g => `Callum finds you on the terrace, at the stone wall above the river, where Hugh stood an hour ago. It\'s cold. Your breath smokes. Below, the Schuylkill moves in the dark, and across it, very far off, there\'s the faint orange glow of the city.
+    text: g => `Callum finds you on the terrace, at the stone wall above the river. It\'s cold. Your breath smokes. Below, the Schuylkill moves in the dark, and across it, very far off, there\'s the faint orange glow of the city.
 
 He puts his jacket around your shoulders without asking. It smells like him, like clean laundry and boathouse.
 
@@ -513,7 +513,7 @@ callum: Is it him?
 
 jules: Who?
 
-callum: The guy from your hall. With the pizza shirt. At the dorm that morning, with the coffee. He looked at you like I look at you.
+callum: The guy from your hall. From the party. In the lobby that morning, with the soot in his hair. He looked at you like I look at you.
 
 You don\'t answer. You can\'t. You\'ve never been asked a question you couldn\'t answer before.
 
@@ -639,7 +639,7 @@ She doesn\'t say anything. She turns and walks, and you follow her, the way you 
 
 The chapel at Ravenscourt is small and gray and very old, built in 1891 by your grandfather\'s grandfather, with a slate roof and a bell nobody rings and a single stained-glass window over the altar. You haven\'t been inside since you were seven years old. Since the night Hugh locked you in it, as a joke, and went to bed, and forgot.
 
-Gran opens the door. It isn\'t locked. It\'s never locked. It wasn\'t locked that night either. You never tried it. You were seven, and you could have walked out at any time. You sat in the dark all night anyway, because you were sure that if you moved, something would notice.
+Gran opens the door. It isn\'t locked tonight. That night it was: you heard Hugh\'s key turn, and you never once tried the latch. You were seven. You sat by the door in the dark all night, because you were sure that if you moved, something would notice.
 
 Inside: cold stone, old wood, the smell of candle wax and dust and January. Gran sets the lantern on the altar. In its light, the stained-glass window glows dimly above you. You\'d forgotten the window. It shows a tall figure in white standing in a doorway, one hand resting on the edge of the door, and behind the figure there\'s nothing, not sky, not stars, just a deep blue dark, and a single word on a ribbon at the bottom, in gold: **TENEO**.
 

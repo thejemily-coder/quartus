@@ -60,3 +60,13 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
   - The Revenant nods to Nonna (no finger-to-lips repeat).
   - Nonna's grace pause, and Jules and Nonna both have cold hands.
   - `jules_suspects` is set if Jules heat reaches 10.
+- **E6 "The House Always Wins"** is the first Jules-POV episode and uses the new POV engine. Deviations:
+  - The cold open is her side of the 4:12 roof.
+  - The Saturday afternoon Gran scene always plays.
+  - Dr. Achterberg is at the table as Judge Ellison's guest. Her tie to Whitney stays sealed.
+  - Jules's tests are the horse let-go, throwing tennis, and seven-deuce all-in, fold-everything, or play straight.
+  - The last hand against Hugh: she calls, or gives it to him.
+  - Callum's "I love you."
+  - The 12:58 text to Sam: none, "how's the arm," or "What if it was me."
+  - The chapel's TENEO window, then "It's started, then."
+  - Jules saw two Sams (Drift 9).
