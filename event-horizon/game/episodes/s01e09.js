@@ -1,7 +1,7 @@
 /* S1 · E9 · THINGS THAT DON\'T ADD UP, part 1 of 3: meta, cold open, Act One ("All Souls"). */
 EH.episode({
   id: 's01e09', season: 1, number: 9, title: 'Things That Don\'t Add Up', look: 's1',
-  cast: ['sam', 'jules', 'simone', 'nik', 'mikey', 'frank', 'rosa', 'nonna', 'teddy', 'bree'],
+  cast: ['sam', 'jules', 'simone', 'nik', 'mikey', 'frank', 'rosa', 'nonna', 'grace', 'vinnie', 'callum', 'teddy', 'bree', 'heck'],
   start: 'cold_open',
   xp: 5,
   previously: g => [
@@ -47,7 +47,7 @@ jules: I\'m ending this. Us. I\'m sorry. I wanted to tell you in person, because
 
 He doesn\'t say anything for a moment. A goose walks past the bench and looks at them both.
 
-callum: Is it the guy? From the dinner? The one whose family you went to?
+callum: Is it the guy? From your hall? The one with the soot in his hair?
 
 She doesn\'t answer. That\'s an answer, and he hears it.
 
@@ -65,9 +65,7 @@ jules: It\'s the best thing about you. It\'s just not what I want.
 
 He laughs once, wet, and picks up his gloves, and puts them down again.
 
-callum: You said it back. In October. At the party. I said it and you said it back.
-
-jules: I know. I\'m sorry. I said it because you said it.
+${g.f('ily') === 'too' ? 'callum: You said it back. In October. At Ravenscourt. I said it and you said it back.\n\njules: I know. I\'m sorry. I said it because you said it.' : 'callum: At Ravenscourt I told you I loved you. I thought you\'d catch up.\n\njules: I know. I\'m sorry. I never was going to.'}
 
 He looks at her for a second, and the camera, which has been watching them from across the path, sees him believe her.
 
@@ -85,7 +83,7 @@ She sends it.
 
 > ELSEWHERE.
 
-A drawer, in a cold room, in a building at the Navy Yard. In the drawer, a clear plastic bag with a white label: **ES-31 · PERSONAL EFFECTS.** A wallet. A Charles Library staff lanyard. A phone.
+A drawer, in a cold room, in a building at the Navy Yard. In the drawer, a clear plastic bag with a white label: **SUBJECT 031 · PERSONAL EFFECTS.** A wallet. A Charles Library staff lanyard. A phone.
 
 The phone lights up inside the bag.
 
@@ -131,19 +129,19 @@ frank: That night. Under 95.
 
 He\'s looking straight ahead, through the new windshield.
 
-frank: I weigh two-twenty, kid. Somebody picked me up off that gravel and carried me sixty feet, and I never felt my feet touch the ground. One second I\'m on my knees. Next second I\'m behind a pillar, and I\'m cold, I\'m so cold my teeth hurt, and there\'s a kid on a bike going up Columbus with his cap on backward.
+${g.f('under95') === 'slip' ? 'frank: I weigh two-twenty, kid. Somebody picked me up off that gravel and carried me sixty feet, and I never felt my feet touch the ground. One second I\'m on my knees. Next second I\'m behind a pillar, and I\'m cold, I\'m so cold my teeth hurt, and there\'s a kid on a bike going up Columbus with his cap on backward. My cap.' : 'frank: I\'m on my knees on that gravel, and a kid in a hood walks out of the dark like he owns the place, and ten minutes later I\'m free and he\'s on a bike going up Columbus with his cap on backward. My cap.'}
 
 The horn again. Pop goes. Slowly.
 
 frank: You wear it backward. You been wearing it backward since you were six. Your mother used to turn it around in church.
 
-He doesn\'t ask. He drives, and he doesn\'t ask, and you can feel him not asking all the way down Broad.`,
+${g.f('pop_knows') === true ? 'He doesn\'t ask. He saw your face that night. He doesn\'t have to ask. He just wants you to know he hasn\'t stopped seeing it.' : 'He doesn\'t ask. He drives, and he doesn\'t ask, and you can feel him not asking all the way down Broad.'}`,
       choices: [
-        { text: '"Yeah, Pop. It was me."', tag: 'Tell him',
+        { text: '"Yeah, Pop. It was me."', tag: 'Tell him', if: g => g.f('pop_knows') !== true,
           fx: g => { g.flag('pop9', 'told'); g.flag('pop_knows', 'told'); g.know('sam_slip', ['frank']); g.know('sam_blur_pop', ['sam', 'frank'], 'You told Pop it was you under I-95. He knows you\'re the Blur.'); g.bond('frank', { trust: 2, tension: -2 }); g.hidden('revenant_drift', -0.5); }, go: 'a1_pop_told' },
         { text: '"Pop. Not today. Please."', tag: 'Not today',
           fx: g => { g.flag('pop9', 'later'); g.bond('frank', { tension: -1 }); }, go: 'a1_pop_later' },
-        { text: '"It wasn\'t me, Pop. I was at Temple. Ask Jules."', tag: 'Lie',
+        { text: '"It wasn\'t me, Pop. I was at Temple. Ask Jules."', tag: 'Lie', if: g => g.f('pop_knows') !== true,
           check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['frank'], label: 'Lie to Pop', on: { strong: 'a1_pop_lie', weak: 'a1_pop_lie', miss: 'a1_pop_lie_bad' } } }
       ]
     },
@@ -198,7 +196,7 @@ frank: Okay.
 
 He turns the radio on. Sports talk, a man from Delco yelling about the secondary. He turns it down until it\'s just a murmur, a sound for the car to have, and he drives.
 
-At Snyder, at the light, without looking at you:
+At Morris, at the light, without looking at you:
 
 frank: But you\'re gonna tell me.
 
@@ -307,7 +305,7 @@ mikey: I told you in October I was gonna ask you. On a Sunday. It\'s Sunday.
 
 mikey: So. How does a Halcyon man know your name?`,
       choices: [
-        { text: 'Give him the part you can. Femi was in their study. He was scared of them. He came to your door to tell you something, and they killed him for it.', tag: 'Open Up',
+        { text: 'Give him the part you can. Femi was in their study. He was scared of them. He came to find you, to tell you something, and they killed him for it.', tag: 'Open Up',
           check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', label: 'Tell Mikey what you can', on: { strong: 'a1_mikey_open', weak: 'a1_mikey_open_weak', miss: 'a1_mikey_open_miss' } } },
         { text: '"Halcyon was handing out nosebleed flyers to RAs in September. I bled in the lounge once. I\'m on a list. That\'s all."', tag: 'Lie',
           check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['mikey'], label: 'Lie to Mikey', on: { strong: 'a1_mikey_lie', weak: 'a1_mikey_lie', miss: 'a1_mikey_lie_bad' } } },
@@ -319,7 +317,7 @@ mikey: So. How does a Halcyon man know your name?`,
       enter: g => { g.flag('mikey9', 'open'); g.bond('mikey', { trust: 2 }); g.know('femi_halcyon', ['sam', 'mikey'], 'Femi was in Halcyon\'s study. He was scared of them. He came to your door to tell you something, and they killed him for it.'); },
       text: `You tell him the part you can.
 
-That Femi was in Halcyon\'s study. That they paid him and he needed the money. That he was scared of them, and he walked out, and he walked six miles up Broad in the dark to tell you something, and he got as far as your door.
+That Femi was in Halcyon\'s study. That they paid him and he needed the money. That he was scared of them, and he walked out, and he walked six miles up Broad in the dark to tell you something, and he got as far as the ninth floor.
 
 You don\'t tell him what Femi came to tell you. You don\'t tell him *17*.
 
@@ -350,7 +348,7 @@ mikey: Look who\'s telling who to be careful.`,
       enter: g => { g.flag('mikey9', 'open'); g.bond('mikey', { trust: 1 }); g.heat('mikey', 1); g.know('femi_halcyon', ['sam', 'mikey'], 'Femi was in Halcyon\'s study. He was scared of them. He came to your door to tell you something, and they killed him for it.'); },
       text: `You tell him the part you can.
 
-That Femi was in Halcyon\'s study. That he was scared of them. That he walked six miles up Broad in the dark to tell you something, and got as far as your door.
+That Femi was in Halcyon\'s study. That he was scared of them. That he walked six miles up Broad in the dark to tell you something, and got as far as the ninth floor.
 
 Mikey listens. When you\'re done, he\'s quiet.
 
@@ -444,12 +442,12 @@ sam: I call you.`,
     },
     a1_mikey_end: {
       night: true,
-      enter: g => { g.sleep(9); g.know('brannigan_list9', ['sam', 'mikey'], 'Brannigan asked Mikey whether you get nosebleeds and feel the cold. He asked the RA for a list of every resident on the ninth floor.'); },
+      enter: g => { g.sleep(7); g.know('brannigan_list9', ['sam', 'mikey'], 'Brannigan asked Mikey whether you get nosebleeds and feel the cold. He asked the RA for a list of every resident on the ninth floor.'); },
       text: `You sit on the stoop with him until the beers are gone. He tells you about a guy he arrested in September who tried to hide a stolen catalytic converter in his pants. You laugh. It hurts to laugh. You do it anyway.
 
-You sleep in your old room, in your old bed, under the glow-in-the-dark stars Mikey stuck on the ceiling when you were seven, and you sleep nine hours without dreaming, the first real night since August.
+You sleep in your old room, in your old bed, under the glow-in-the-dark stars Mikey stuck on the ceiling when you were seven, and you sleep seven hours without dreaming, the first real night since August.
 
-When you wake up it\'s still dark, and Nonna is knocking on the front door.`,
+When you wake up the window is barely gray, and Nonna is knocking on the front door.`,
       next: 'a1_allsouls'
     },
 

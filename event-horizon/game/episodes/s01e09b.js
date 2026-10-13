@@ -8,7 +8,7 @@ EH.scenes('s01e09', {
     clock: { day: 'Mon', date: 'Nov 2', time: '7:20 PM' },
     text: g => `Facilities painted your door while you were in South Philly.
 
-One coat, white, the cheap kind. The tape is gone, and the carpet in front of it has been shampooed and smells like a rental car. A flyer is taped to the wall beside it: *TEMPLE CARES · Counseling Services · Walk-ins welcome*, with a stock photo of two people smiling on a bench.
+One coat, white, the cheap kind. ${g.f('femi_end') === 'found' ? 'The tape is gone, and the carpet in front of it has been shampooed and smells like a rental car.' : 'Down the hall, the tape is gone from the door to Stairwell B, and the landing behind it smells like bleach.'} A flyer is taped to the wall beside it: *TEMPLE CARES · Counseling Services · Walk-ins welcome*, with a stock photo of two people smiling on a bench.
 
 ${g.f('femi_end') === 'found' ? 'If you stand to the left and the hallway light hits the door sideways, you can still see them under the paint. Ten faint lines.' : 'There was never anything on it. He got as far as the stairwell. They painted it anyway, like they weren\'t sure.'}
 
@@ -28,7 +28,7 @@ It\'s an email. **Rutgers University–New Brunswick · Office of Undergraduate 
 
 sam: You were transferring?
 
-nik: I *was going* to. Since September. Since about the third week. Closer to home, my mom wanted it, my dad wanted it, the CS program\'s ranked higher, I had the essay done. It was a good essay. It was about *resilience*. I was going to hit submit November first. That was the plan.
+nik: I *was going* to. Since September. Since about the third week. Closer to home, my mom wanted it, my dad wanted it, the CS program\'s ranked higher, I had the essay done. It was a good essay. It was about *resilience*. I hit submit October fifteenth. I was going to tell you November first. That was the plan.
 
 He looks at the screen.
 
@@ -110,7 +110,7 @@ Nik is already standing up.
 
 nik: I\'m gonna go be in the lounge. Very far away. With headphones. Noise-cancelling. *Expensive* ones.
 
-He opens the door. Jules is standing there in a Penn sweatshirt and sweatpants, with her hair down, without her armor on. Nik edges past her sideways, the way you\'d edge past a nervous horse.
+He opens the door. Jules is standing there in a gray sweatshirt and sweatpants, with her hair down, without her armor on. Nik edges past her sideways, the way you\'d edge past a nervous horse.
 
 nik: Hi, Jules. Bye, Jules.
 
@@ -118,11 +118,7 @@ He\'s gone. Jules stands in the doorway. ${g.f('femi_end') === 'found' ? 'Her ey
 
 She comes in and closes the door.
 
-jules: I did it. Yesterday. At the boathouse.
-
-sam: I know. You texted.
-
-jules: I texted *are you asleep*. That\'s not the same.
+${g.f('kissed') ? 'jules: I did it. Yesterday. At the boathouse.\n\nsam: I know. You texted.\n\njules: I texted *are you asleep*. That\'s not the same.' : 'jules: I ended it with Callum. Yesterday. At the boathouse.\n\nsam: You— what?\n\njules: I texted you *are you asleep*. I know that wasn\'t the same thing.'}
 
 She sits down on Nik\'s desk chair, on the edge of it, like she might have to get up fast.
 
@@ -199,7 +195,7 @@ You sleep eight hours. You don\'t dream.`,
 
 You stop.
 
-sam: It\'s not you. It\'s that I didn\'t look.
+sam: It\'s not you. It\'s that I was on the roof.
 
 She nods slowly. She doesn\'t argue. You\'ve never seen Jules Pemberton not argue.
 
@@ -297,7 +293,7 @@ TOLU: A man came to my apartment yesterday. Nice coat. Kind face. He brought pap
 
 She looks at the lilies.
 
-TOLU: My mother\'s roof leaks. She\'s sixty-eight. I make sixty-one thousand a year at Jefferson.
+TOLU: My mother\'s roof leaks. She\'s sixty-eight. I make seventy-eight thousand a year at Jefferson.
 
 She looks back at you.
 
@@ -385,7 +381,7 @@ The last thing in the thread is his. ${g.f('femi_end') === 'found' ? '11:51 p.m.
 You type.
 
 TXT sam: i\'m sorry
-TXT sam: i didn\'t look
+TXT sam: ${g.f('femi_end') === 'found' ? 'i didn\'t look' : 'i was too slow'}
 TXT sam: your sister gave me the notebook. i\'m gonna do every problem in it. i swear to god
 
 *Delivered.*
@@ -422,8 +418,8 @@ You have time for two things.`,
       options: [
         { id: 'hub_study', text: 'Study for Psych at Charles Library. Third floor. The quiet section where Femi used to sit.', cost: 1, tag: 'Study', go: 'a2_study' },
         { id: 'hub_weisz', text: 'Dr. Weisz\'s office hours. Ask for an extension on the paper. You haven\'t written a word.', cost: 1, tag: 'Weisz', go: 'a2_weisz' },
-        { id: 'hub_vinnie', text: 'Call Vinnie. He works the Halcyon build-out at the Navy Yard. Ask him about Building 7.', cost: 1, tag: 'Vinnie', go: 'a2_vinnie' },
-        { id: 'hub_grace', text: 'Grace hasn\'t come out of the RA room since Sunday. Knock.', cost: 1, tag: 'Grace', go: 'a2_grace' },
+        { id: 'hub_vinnie', text: 'Call Vinnie. He works the Halcyon build-out at the Navy Yard. Ask him what\'s really in there.', cost: 1, tag: 'Vinnie', go: 'a2_vinnie' },
+        { id: 'hub_grace', text: 'Grace went back into the RA room after the vigil and hasn\'t come out. Knock.', cost: 1, tag: 'Grace', go: 'a2_grace' },
         { id: 'hub_ciro', text: 'Work a lunch shift at Ciro\'s. You need the money. You need to be somewhere that isn\'t here.', cost: 1, tag: 'Ciro\'s', go: 'a2_ciro' },
         { id: 'hub_nap', text: 'Sleep. Just sleep.', cost: 1, tag: 'Rest', go: 'a2_nap' }
       ],
@@ -453,7 +449,7 @@ She doesn\'t take it down. She pushes her cart on.`,
 
 He gives you the extension before you finish asking. Then he takes off his glasses and cleans them on his tie.
 
-weisz: Mr. Ojo took this course last spring.
+weisz: Mr. Ojo was in my upper-level seminar this semester.
 
 sam: You knew him?
 
@@ -499,7 +495,7 @@ sam: Yeah. I knew him.
 
 vinnie: Ah, Sally. I\'m sorry.
 
-sam: Vin. Building 7. At the Navy Yard. You know it?
+sam: Vin. Halcyon\'s place at the Navy Yard. Is there a building where people stay overnight? A seventh floor?
 
 A pause.
 
@@ -509,7 +505,7 @@ sam: Do you know it.
 
 Another pause. Longer.
 
-vinnie: It\'s the old hospital annex, by the dry dock. We did the HVAC in September. Brick, seven floors, new windows, nice. Real nice. Too nice.
+vinnie: Building 7. The old hospital annex, by the dry dock. We did the HVAC in September. Brick, seven floors, new windows, nice. Real nice. Too nice.
 
 vinnie: Here\'s the thing. The drawings we got, the plans, they go one through six, then the roof. No seven. The elevator goes six, then roof. But I counted the windows from the parking lot on my lunch, \'cause I\'m a nosy prick. Seven rows. And there\'s a stair door on seven with a card reader on it that ain\'t on any electrical plan I ever seen, and I seen all of them, \'cause I humped half the conduit in that building up the stairs.
 

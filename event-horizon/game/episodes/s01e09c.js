@@ -32,7 +32,7 @@ simone: The real answer is it\'s for the ghosts. Every theater has them. So you 
 
 She looks at the bulb.
 
-${g.f('femi_end') === 'found' ? 'simone: He was sitting against your door for twenty minutes, Salvatore. I walked past your door twice. To the bathroom and back. Twice.' : 'simone: I was ten feet from him, Salvatore. In the stairwell door, in my Van Helsing coat. Ten feet.'} I\'m supposed to be the one who sees things. That\'s my *whole personality*.
+${g.f('femi_end') === 'found' ? 'simone: He was sitting against your door for ten minutes, Salvatore. I walked past your door twice. To the bathroom and back. Twice.' : 'simone: I was ten feet from him, Salvatore. In the stairwell door, in my Van Helsing coat. Ten feet.'} I\'m supposed to be the one who sees things. That\'s my *whole personality*.
 
 simone: Turns out I only see things about my friends.
 
@@ -43,7 +43,7 @@ She takes out her phone. She unlocks it and opens the Notes app, and turns it ar
 *1. Nosebleeds. Since August 22. Nineteen that I have personally witnessed. Nobody gets nineteen nosebleeds.*
 *2. The Wawa Guy video. Left sneaker, split at the toe. Your left sneaker is split at the toe.*
 *3. You eat like a man who has been lost in the woods for a week. Every day.*
-*4. Labor Day weekend: Juliet says you were on the roof with her all night. Juliet also says you "went to check the stairwell" and were back before she finished her sentence. She tells me things. She doesn\'t know she\'s telling me.*
+${g.f('fire') === 'stayed' ? '*4. Labor Day weekend, the blackout: you and Juliet on the roof until sunrise. Then Callum showed up with iced coffee and you looked like he\'d hit you with the cup.*' : '*4. Labor Day weekend, the blackout: Juliet told Grace you were in the bathroom. For an hour. You came back up nine flights smelling like the fire on 15th Street. Juliet tells me things. She doesn\'t know she\'s telling me.*'}
 *5. September. You came home at 3 a.m. with a face like a dropped pie, and Grace and Juliet sewed you up on the bathroom floor. Juliet came back to our room with your blood on her cuffs and didn\'t say one word. Juliet ALWAYS says words.*
 *6. Your hands are cold. All the time. In October.*
 *7. You saw him. Nobody saw him. You knew his name.*
@@ -70,7 +70,7 @@ simone: This is yours.`,
 
 You tell her about 11:51 and the cold and the bus on Broad and Jayden. The Wawa. The armored car on Broad that you couldn\'t move. Girard and the frost. Kensington and Heck\'s fists. Under 95 and Pop on his knees. The Slip and how it feels, which is like January, and how you come out of it starving, and how your nose bleeds.
 
-You tell her about Femi. How you could see him. How he came to your door.
+You tell her about Femi. How you could see him. How he came to find you.
 
 You don\'t tell her about Room 714. You don\'t tell her about *17*. You don\'t know why you keep those. You keep them.
 
@@ -104,7 +104,7 @@ simone: Salvatore Kearney. If you die, I will kill you.`,
     enter: g => { g.flag('simone9', 'told'); g.heat('simone', 10); g.know('sam_slip', ['simone']); g.bond('simone', { trust: 2, affection: 1 }); g.hidden('revenant_drift', -1); },
     text: `You try to tell her. You start at the beginning, at 11:51, and you get as far as the bus on Broad before your voice goes.
 
-So it comes out wrong. Out of order. The Slip and then Femi and then the bus again, Jayden, the cold, Pop on his knees under 95, Femi\'s eyes, open. You say *I didn\'t look* four times. You don\'t know you\'re crying until she hands you a tissue from the pocket of her coat, and then another, and then the whole packet.
+So it comes out wrong. Out of order. The Slip and then Femi and then the bus again, Jayden, the cold, Pop on his knees under 95, Femi\'s eyes, open. You say *I was on the roof* four times. You don\'t know you\'re crying until she hands you a tissue from the pocket of her coat, and then another, and then the whole packet.
 
 She doesn\'t interrupt. When you run out, she\'s quiet for a while. The ghost light buzzes.
 
@@ -199,7 +199,7 @@ simone: I\'m not going to say anything to anybody. Don\'t insult me by asking.`,
   },
   a3_lists: {
     night: true,
-    enter: g => { g.know('simone_list', ['sam']); g.know('simone_two_lists', ['sam', 'simone'], 'Simone has two lists. One was about you. The other one, she says, "isn\'t mine to tell."'); },
+    enter: g => { g.know('simone_two_lists', ['sam', 'simone'], 'Simone has two lists. One was about you. The other one, she says, "isn\'t mine to tell."'); },
     text: g => `Later, when the theater is locked and you\'re walking back up Liacouras Walk in the cold, she says it.
 
 simone: Does Juliet know?
@@ -251,7 +251,7 @@ The Kowals live in a rowhouse on Edgemont Street with a Polish flag in the windo
 
 Inside, it\'s warm, and it smells like onions frying in butter, and there\'s a machine in the living room.
 
-It\'s the size of a carry-on suitcase, on a cart beside the recliner, with a screen and two clear tubes, and it hums. Halina Kowal is in the recliner under a crocheted blanket, a small woman with Teddy\'s tired eyes, and the tubes go under the blanket. She has a rosary in one hand and a TV remote in the other, and *Wheel of Fortune* is on.
+It\'s the size of a carry-on suitcase, on a cart beside the recliner, with a screen and two clear tubes, and it hums. Halina Kowal is in the recliner under a crocheted blanket, a small woman with Teddy\'s tired eyes, and the tubes go under the blanket. She has a rosary in one hand and a TV remote in the other, and a *Wheel of Fortune* rerun is on.
 
 HALINA: You\'re the Wawa boy.
 
@@ -273,9 +273,9 @@ You sit. Bree puts a plate in front of you: six pierogi, potato and cheese, frie
 
 Then you tell them.
 
-About Femi. About the stairwell, and the marrow, and your door. About the note.
+About Femi. About the stairwell, and the marrow. About the note.
 
-sam: Marisol\'s alive. Room 714. Building 7, at the Navy Yard.${g.knows('building7') ? ' On a floor that isn\'t on the drawings.' : ''}
+sam: Marisol\'s alive. Room 714. ${g.knows('building7') || g.knows('femi_left_b7') || g.f('kissed') ? 'Building 7, at the Navy Yard.' : 'Somewhere in Halcyon\'s buildings at the Navy Yard.'}${g.knows('building7') ? ' On a floor that isn\'t on the drawings.' : ''}
 
 Heck puts down the spatula.
 
@@ -295,7 +295,7 @@ teddy: *No.* Not tonight.
 
 He turns the laptop around. It\'s a spreadsheet. Numbers. Halina\'s name at the top. *JEFFERSON TRANSPLANT EVAL · DEPOSIT · $40,000*. A column of zeroes, and one line that says *ShopRite (T+B) · $1,140*.
 
-teddy: You know what this is? This is my mother. I had forty grand in October. I had it in my *hand*, under 95, and I let it go, because it was your father on his knees, and it was you asking.
+teddy: You know what this is? This is my mother. I had forty grand in October. I had it in my *hand*, under 95, and I let it go, because it was your father on his knees, and it was ${g.f('under95') === 'slip' ? 'you' : 'you asking'}.
 
 He doesn\'t raise his voice. Teddy never raises his voice.
 
@@ -461,7 +461,7 @@ Then, without any warning, out of her mouth, a voice you heard an hour ago over 
 
 bree: That\'s my aunt. Last Tuesday. He was in the kitchen. He didn\'t hear it.
 
-She goes back up Edgemont Street. You stand under the El until the next train comes.`,
+She heads back toward Edgemont Street. You stand under the El until the next train comes.`,
     next: 'tag_card'
   },
 
@@ -471,21 +471,25 @@ She goes back up Edgemont Street. You stand under the El until the next train co
     night: true,
     loc: 'CARDONE HALL · 9-14',
     clock: { day: 'Sun', date: 'Nov 8', time: '11:51 PM' },
-    enter: g => { g.sleep(7); g.know('revenant_note', ['sam'], 'On the back of Jules\'s index card, under "When I know, you\'ll be the first," someone wrote in your handwriting: "Don\'t trust the lucky one." You didn\'t write it.'); },
+    enter: g => { g.sleep(7); g.know('revenant_note', ['sam'], g.f('nine') === 'ask' ? 'On the back of Jules\'s index card, under "When I know, you\'ll be the first," someone wrote in your handwriting: "Don\'t trust the lucky one." You didn\'t write it.' : 'On the back of one of Jules\'s Calc index cards, someone wrote in your handwriting: "Don\'t trust the lucky one." You didn\'t write it.'); },
     text: g => `Sunday night, late, you finally open your Calc textbook.
 
 Nik is asleep with his headphones on. The radiator is knocking. You have Femi\'s green notebook open on the desk next to the textbook, *NOTES FOR SAM K.*, and you\'re going to do it, you\'re going to go back to chapter three and do every problem, the way he wrote them out, *outside first*, because you promised Femi\'s phone that you would, and somebody read it.
 
 You open the textbook, and an index card falls out onto the desk.
 
-It\'s the card from the lounge. From the study night, from problem nine. You forgot you kept it. On the front, in your handwriting, in pencil: *What did you mean?*
+${g.f('nine') === 'ask' ? `It\'s the card from the lounge. From the study night, from problem nine. You forgot you kept it. On the front, in your handwriting, in pencil: *What did you mean?*
 
 You turn it over. Her perfect handwriting.
 
 *I don\'t know yet.*
 *When I know, you\'ll be the first.*
 
-And under that, there\'s a third line.
+And under that, there\'s a third line.` : `It\'s one of her cards from the lounge. From the study night. On the front, in her perfect handwriting: *d/dx [sin(x²)]*. You don\'t remember keeping it.
+
+You turn it over. The back was blank.
+
+It isn\'t now. There\'s a line.`}
 
 It wasn\'t there before. You know it wasn\'t there before. It\'s in black ballpoint, pressed so hard into the card that it\'s torn through in two places. And it\'s in your handwriting.
 
@@ -517,7 +521,7 @@ Pinky.
 
 You turn around. The room is empty. Nik is asleep. The door to the hall is shut, and under it is a thin line of light from the hallway, and across the hall, under the door of 9-11, another line of light, the way there always is, all night, every night.
 
-${g.knows('jules_light') ? 'Jules sleeps with the light on.' : 'Whoever\'s in there never turns it off.'}
+Jules sleeps with the light on. She has since she was seven.
 
 You turn back to the window. The frost is already going. You watch the handprint melt from the edges in, the four marks running down the glass in thin lines${g.f('femi_end') === 'found' ? ', like the marks on your door' : ''}.
 

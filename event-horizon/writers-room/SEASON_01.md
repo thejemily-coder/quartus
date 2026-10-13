@@ -98,7 +98,7 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
 
 ### E9 "Things That Don't Add Up": production notes
 - Written for this playthrough's E8 save (kiss path, Femi found at the door, rage). Shape:
-  - **Cold open (camera):** Jules ends it with Callum at Boathouse Row; die = six. Femi's phone in an **ES-31 · PERSONAL EFFECTS** bag gets a call from his mother.
+  - **Cold open (camera):** Jules ends it with Callum at Boathouse Row; die = six. Femi's phone in a **SUBJECT 031 · PERSONAL EFFECTS** bag gets a call from his mother.
   - **Act One "All Souls":** Pop drives Sam home in #2207 (glass still in the seat tracks); tell / not today / lie. Pastina. Mikey on the stoop: the ME signed "adverse reaction" at 9 AM and Homicide closed it by noon. Brannigan asked Mikey about Sam's nosebleeds and cold, and asked for the ninth-floor resident list. Nonna, All Souls' Mass: two candles. **Nonna saw the Revenant crying under the streetlight at 3 AM** ("I know whose face he has").
   - **Act Two "Midterms":**
     - Nik withdrew his Rutgers transfer (the bible's S1 secret, resolved).
@@ -116,3 +116,8 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
   - Brannigan holds the ninth-floor resident list (Jules is ES-44 on nine).
   - Simone holds Sam's secret and is circling Jules's.
   - Halcyon has Femi's phone and Sam's texts to it.
+- **E9 QA:** voice, continuity, and mechanics passes applied. Checker: 0 errors, 3000/3000 runs reach the end. Smoke test from the save passes.
+  - Off-save paths now branch: `femi_end` arms vs found, `kissed`, `nine` (card wording), `under95`, `pop_knows`, `fire`, `ily`.
+  - Sleep Debt into E10: Stay ≈4, Kiss ≈5, Not yet ≈8 (one point lower with a nap). The frostnip9 injury carries through E10 if Sam Showed Simone.
+  - Skipping Weisz makes the Philadelphia Neighborhoods paper late: `phl_paper9` set to late, phl −3.
+  - `teddy_parade` is a fact; read it with `g.knows`.
