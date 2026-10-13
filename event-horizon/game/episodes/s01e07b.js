@@ -25,7 +25,7 @@ You read it three times.
 
 *A cab. A friend who keeps things still.*
 
-${g.f('ciro7') === 'read' ? 'Dante, at the counter: *My friend\'s very good at keeping things still while people talk.*' : 'Dante, at the counter: *Saturday is Saturday.*'}
+${g.knows('dante_saturday') ? 'Dante, at the counter: *My friend\'s very good at keeping things still while people talk.*' : 'Dante, at the counter: *Saturday is Saturday.*'}
 
 You sit down on your bed. Across the room, Nik looks up from his laptop and sees your face and takes his headphones off.
 
@@ -39,7 +39,7 @@ sam: Yeah.
 
 nik: *Oh*. Oh no.`,
     choices: [
-      { text: 'Text Teddy. *dont do it. its my father. frank kearney is my father.*', tag: 'Tell Teddy',
+      { text: 'Text Teddy. *dont do it. its my father. frank kearney is my father. its sam.*', tag: 'Tell Teddy',
         fx: g => { g.flag('teddy7', 'told'); g.know('sam_name', ['teddy', 'bree'], 'Teddy knows your name now. Sam Kearney. Frank Kearney\'s son.'); }, go: 'a2_teddy_told' },
       { text: 'Text Teddy. *dont take this job. please.* Nothing else.', tag: 'Just ask',
         fx: g => { g.flag('teddy7', 'asked'); }, go: 'a2_teddy_asked' },
@@ -48,7 +48,8 @@ nik: *Oh*. Oh no.`,
     ]
   },
   a2_teddy_told: {
-    text: `TXT sam: dont do it. its my father. frank kearney is my father.
+    enter: g => { g.know('teddy_mother', ['sam']); },
+    text: `TXT sam: dont do it. its my father. frank kearney is my father. its sam.
 
 The dots appear immediately. Then they disappear. Then nothing. Twenty minutes. Half an hour.
 
@@ -260,7 +261,7 @@ jules: I\'ll hold you to the nine.`,
     clock: { time: '10:31 PM' },
     text: g => `${g.f('costume') === 'hoodie' || !g.f('costume') ? 'Black hoodie. Gaiter up to your eyes. Pop\'s Eagles cap, backward. *Pop\'s* cap.' : 'The costume. Your face covered.'} You ride the bike down Columbus Boulevard from Spring Garden, past Penn\'s Landing and the piers and the big-box stores, with the river on your left black and wide, and under the highway at Snyder, in a gravel lot where the trucks park overnight between the concrete pillars of I-95, you find it.
 
-A Liberty Cab. Yellow and green. **418** on the roof light. Pop\'s cab.
+A Liberty Cab. Yellow and green. **2207** on the roof light. Pop\'s cab.
 
 It\'s sitting perfectly still in the middle of the lot with the driver\'s door open. Not parked. *Stopped*, the way the armored car on Girard was stopped: dust motes frozen in the headlight beams, a moth hanging in the air an inch from the windshield, the exhaust from the tailpipe standing in a gray curl like a sculpture.
 
@@ -295,7 +296,7 @@ DANTE: Can I help you?`,
 
   a3_teddy_lets_go: {
     night: true,
-    enter: g => { g.flag('under95', 'teddy'); g.flag('teddy_quit'); g.bond('teddy', { trust: 2, respect: 2 }); g.know('teddy_lost_40k', ['sam', 'teddy', 'bree', 'heck'], 'Teddy let go of Frank Kearney\'s cab under I-95 and walked away from the Iannucci job. $40,000 for his mother\'s transplant evaluation, gone.'); },
+    enter: g => { g.flag('under95', 'teddy'); g.flag('teddy_quit'); g.bond('teddy', { trust: 2, respect: 2 }); g.flag('teddy7_talk'); },
     text: g => `You walk past Dante like he isn\'t there. You walk right up to Teddy, at the cab, close enough to see the bandage on his hand and the sweat at his hairline in the cold.
 
 sam: Let go of it, Teddy. That\'s my father.
@@ -310,13 +311,13 @@ sam: That\'s what you do. You hold on to people so nobody can take them. That\'s
 
 His hand is shaking on the hood. The moth in the headlight beam trembles, just barely, like the air around it is trying to start again.
 
-teddy: ${g.knows('teddy_mother') || g.f('teddy7') === 'told' ? 'My mom, Sam.' : 'My mom needs a kidney, Sam. Jefferson won\'t list her without forty grand.'}
+teddy: ${g.knows('teddy_mother') || g.f('teddy7') === 'told' ? 'My mom, Sam.' : 'My mom needs a kidney, cold guy. Jefferson won\'t list her without forty grand.'}
 
-sam: I know.
+sam: ${g.knows('teddy_mother') || g.f('teddy7') === 'told' ? 'I know.' : 'I didn\'t know.'}
 
 teddy: Forty thousand dollars.
 
-sam: I know. I\'ll help. I don\'t know how. I\'ll help.
+sam: ${g.knows('teddy_mother') || g.f('teddy7') === 'told' ? 'I know.' : 'Okay.'} I\'ll help. I don\'t know how. I\'ll help.
 
 He looks at you for a long time over his own hand. Then he lifts it off the hood.
 
@@ -326,7 +327,7 @@ teddy: Job\'s off, Mr. Iannucci.
 
 Dante looks at Teddy. At you. Back at Teddy.
 
-DANTE: Then you owe *me* the forty, Kowal. You understand that? You took my retainer.
+DANTE: Then you owe *me* my retainer back, Kowal. You understand that? You took my retainer.
 
 teddy: Yeah. I understand.
 
@@ -361,14 +362,14 @@ He takes his hand off the man. The man finishes the swing into empty air and sta
   },
   a3_teddy_no: {
     night: true,
-    enter: g => { g.flag('teddy_refused'); g.bond('teddy', { tension: 2 }); },
+    enter: g => { g.flag('teddy_refused'); g.bond('teddy', { tension: 2 }); g.know('teddy_mother', ['sam']); },
     text: `You walk past Dante, straight to Teddy.
 
 sam: Let go of it, Teddy. That\'s my father.
 
 Teddy looks at you. He doesn\'t take his hand off the cab.
 
-teddy: Listen. Listen to me. Nobody\'s getting hurt. I hold the cab, he talks, your dad agrees to something, everybody goes home. That\'s *it*, Sam. That\'s all it is.
+teddy: Listen. Listen to me. Nobody\'s getting hurt. I hold the cab, he talks, your dad agrees to something, everybody goes home. That\'s *it*, cold guy. That\'s all it is.
 
 sam: He\'s bleeding.
 
@@ -376,7 +377,7 @@ teddy: He fell.
 
 sam: *Teddy.*
 
-teddy: My mother dies without this money, Sam. You get to be the hero because you don\'t need anything. Go be one somewhere else.
+teddy: My mother dies without this money, cold guy. You get to be the hero because you don\'t need anything. Go be one somewhere else.
 
 He\'s crying. His hand stays on the cab.
 
@@ -507,7 +508,7 @@ You don\'t know how long you\'re in there. There\'s no way to know. Nothing move
 
 You sit down on the gravel. You wait. You get hungry. Then you get past hungry, into a place that\'s cold and clear and enormous.
 
-You walk to the river. The Delaware is stopped, a sheet of black glass with the lights of Camden frozen on it. You walk back. You count the pillars under 95. Two hundred and twelve, between Snyder and Oregon. You count them again.
+You walk to the river. The Delaware is stopped, a sheet of black glass with the lights of Gloucester City frozen on it. You walk back. You count the pillars under 95. Two hundred and twelve, between Snyder and Oregon. You count them again.
 
 And on the third count, you find footprints in the frost on the gravel. Your sneakers. Your stride. Walking away from the pillar to the water\'s edge, and stopping. You don\'t remember walking to the river a second time.
 
@@ -539,7 +540,7 @@ teddy: Job\'s off, Mr. Iannucci.`,
   a3_dante: {
     night: true,
     clock: { time: '10:52 PM' },
-    enter: g => { g.flag('teddy_quit'); g.know('teddy_lost_40k', ['sam', 'teddy', 'bree', 'heck'], 'Teddy let go of Frank Kearney\'s cab under I-95 and walked away from the Iannucci job. $40,000 for his mother\'s transplant evaluation, gone.'); g.know('dante_thanksgiving', ['sam', 'frank', 'teddy'], 'Dante Iannucci: "Forty-one thousand. Thanksgiving. Or we have this conversation again, by Thanksgiving."'); },
+    enter: g => { g.flag('teddy_quit'); g.know('teddy_lost_40k', ['sam', 'teddy', 'bree', 'heck'], 'Teddy let go of Frank Kearney\'s cab under I-95 and walked away from the Iannucci job. $40,000, gone.'); if (g.f('teddy7_talk')) g.know('teddy_mother', ['sam']); g.know('dante_thanksgiving', ['sam', 'frank', 'teddy'], 'Dante Iannucci: "Forty-one thousand, by Thanksgiving. Or we have this conversation again."'); },
     text: g => `Dante takes it all in. His men. Teddy. ${g.f('vinnie_stood') ? 'Vinnie, standing next to you. ' : ''}${g.f('under95') === 'slip' ? 'Frank Kearney, forty yards away, against a pillar, where nobody put him.' : 'Frank Kearney, on his knees on the gravel, free.'} And you, in your hood, with your face covered.
 
 He doesn\'t look angry. That\'s the thing about him. He looks *interested*.

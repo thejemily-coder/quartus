@@ -12527,7 +12527,7 @@ constance: Leave the chips, child. Then come and find me.`,
     card: { kind: 'act', label: 'Act Three', title: 'Half Past Midnight' },
     night: true,
     loc: 'RAVENSCOURT · THE TERRACE',
-    clock: { time: '12:31 AM' },
+    clock: { day: 'Sun', date: 'Oct 4', time: '12:31 AM' },
     text: g => `Callum finds you on the terrace, at the stone wall above the river. It\'s cold. Your breath smokes. Below, the Schuylkill moves in the dark, and across it, very far off, there\'s the faint orange glow of the city.
 
 He puts his jacket around your shoulders without asking. It smells like him, like clean laundry and boathouse.
@@ -12837,6 +12837,1561 @@ Object.assign(EH.episodes.s01e06, {
   }
 });
 
+/* s01e07.js */
+/* S1 · E7 · DEBT SERVICE, part 1 of 3: meta, cold open, Act One ("Two Weeks"). */
+EH.episode({
+  id: 's01e07', season: 1, number: 7, title: 'Debt Service', look: 's1',
+  cast: ['sam', 'jules', 'nik', 'frank', 'rosa', 'vinnie', 'teddy', 'bree', 'ciro', 'femi', 'mikey', 'grace'],
+  start: 'cold_open',
+  xp: 5,
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      night: true,
+      loc: 'CARDONE HALL · ROOM 9-14',
+      clock: { day: 'Sun', date: 'Oct 4', time: '1:09 AM' },
+      text: `Your phone buzzes on the windowsill at 12:58 in the morning, and you\'re awake, because you\'re always awake now.
+
+You think it\'s going to be Bree. Bree texts at one in the morning. Bree texts *u up wawa* and then a forty-second voice memo of a car alarm in the key of B-flat.
+
+It isn\'t Bree.
+
+**PEMBERTON**
+
+You saved her as PEMBERTON the first week, in all caps, out of spite. You\'ve thought about changing it about four hundred times. You never have. You don\'t know what you\'d change it to.
+
+You don\'t open it. You read it off the lock screen, in the little gray box, so it won\'t say *Read* on her end.
+
+TXT jules: What if it was me.
+
+That\'s all. Five words and a period. No question mark, which is wrong, because she always uses question marks. She uses them like a weapon. She sent it from Ravenscourt. From the castle. You picture her at some long table in a dress, being polite to people she can\'t stand.
+
+*What if it was me.*
+
+You think about the stoop on Mifflin Street, in the gold light, and you saying *what if it was?*, and her saying *hypothetically*.
+
+You read it again. And again. You sit up in bed in the dark. Across the room, Nik is asleep with his headphones on, snoring softly into a pillow that says LOOK AT ME I\'M A PILLOW.
+
+*What if it was me* what? What if it was her who… what? What if it was her, *instead*? What if it was her, *too*? What if it was her on the stoop, saying it to *you*?
+
+You think about a window coming down on a girl, and every piece of glass missing her. You think about her running the pool table without missing once. You don\'t know why you think about those things. You put them away.
+
+You hold the notification down. The reply box comes up right there on the lock screen. You start typing.`,
+      choices: [
+        { text: 'Type: *what do you mean*', tag: 'Ask',
+          fx: g => g.flag('typed', 'mean'), go: 'cold_delete' },
+        { text: 'Type: *then id want to know if you come back because you want to be here*', tag: 'Her words',
+          fx: g => g.flag('typed', 'echo'), go: 'cold_delete' },
+        { text: 'Type: *are you okay*', tag: 'Her',
+          fx: g => g.flag('typed', 'okay'), go: 'cold_delete' },
+        { text: 'Type: *i hope it is*', tag: 'The truth',
+          fx: g => g.flag('typed', 'hope'), go: 'cold_delete' }
+      ]
+    },
+    cold_delete: {
+      night: true,
+      text: g => `${{ mean: 'TXT sam: what do you mean', echo: 'TXT sam: then id want to know if you come back because you want to be here', okay: 'TXT sam: are you okay', hope: 'TXT sam: i hope it is' }[g.f('typed')]}
+
+It sits there in the box, not sent, the cursor blinking after it.
+
+You look at it. You think about her, ten miles away in a stone house in a dress, looking at *Delivered* under her message, and your three dots, waiting.
+
+You think about everything you\'d have to say after this, if you sent it. Every next message. Every question she\'d ask, and every one you\'d have to lie about, or not lie about. You think about Brannigan\'s kind voice. *We\'re the only ones who\'ll know what to do.* You think about Mikey at the table, *his arms are cooked*. 
+
+You delete it. Letter by letter. Backward.
+
+${g.f('typed') === 'hope' ? 'You type it again. You delete it again. You type it a third time, and you hold your thumb over the arrow for so long the screen dims.\n\nYou delete it.' : 'You start a second one. You delete that too. Then a third. By the end you\'ve typed nine and sent none.'}
+
+At 1:09 you open the thread, just to see her words whole. You know what that does on her end. You do it anyway, and you don\'t type anything else.
+
+You put the phone face down on the windowsill. It\'s warm from your hand.
+
+You lie there till the window goes gray, and you don\'t answer her, and you don\'t sleep, and ten miles west, under her five words, it says *Read*, and you let it.`,
+      enter: g => { g.know('sam_no_reply', ['sam'], 'Jules texted "What if it was me." You read it at 1:09 a.m. You never answered.'); },
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_two_weeks' },
+
+    /* ================= ACT ONE: TWO WEEKS ================= */
+    a1_two_weeks: {
+      card: { kind: 'act', label: 'Act One', title: 'Two Weeks' },
+      loc: 'CARDONE HALL · 9TH FLOOR',
+      clock: { day: 'Fri', date: 'Oct 16', time: '4:20 PM' },
+      enter: g => { g.drift(-4); g.flag('nik_rule_kept'); g.sleep(8); },
+      text: g => `Two weeks.
+
+Two weeks of Nik\'s rule, for real this time. No Slips. Not for a falling coffee, not for a bus, not for anything. ${g.f('broke_nik_rule') ? 'You broke it once, in the alley with Vinnie, and Nik found out, and didn\'t yell, which was worse. He just wrote **RULE 1 (AGAIN)** in Vol. 3 and underlined it until the pen tore through.' : ''} Two weeks of being a normal guy. You go to class. You do your problem sets. You deliver pizzas at the speed of a bike. You sleep. Actually sleep.
+
+And it helps. The cold in your fingers goes away. The nosebleeds stop. You stop losing minutes. Nik takes your temperature every night with the chem-lab thermometer he still hasn\'t returned, and it creeps back up, ninety-seven, ninety-eight, ninety-eight point six. *Normal.* He writes it down like a man recording a miracle.
+
+And for two weeks, the city doesn\'t need you. Or it does, and you don\'t hear about it. A guy gets robbed on Diamond Street and you\'re in the library. There\'s a three-alarm fire in Frankford and you watch it on 6abc with Simone, eating Swedish Fish, and you sit on your hands. Literally sit on them.
+
+It\'s harder than the bus was. You do it.
+
+And Jules.
+
+You haven\'t answered her. Two weeks. She hasn\'t mentioned it. Not once. Monday morning after Ravenscourt she was in Calc, perfectly normal, perfectly polite, *Kearney*, and she slid her problem set over to you to check your answers against, and her hand was steady, and she didn\'t look at you, and she\'s been exactly like that every day since.
+
+Except Wednesday, when she said, packing up after recitation, not looking at you:
+
+jules: The midterm\'s Monday. You\'re going to fail it.
+
+sam: Probably.
+
+jules: Saturday night. Seven. The lounge. Bring every problem set. *Every* one, Kearney, including the one with the horse.
+
+sam: Dog.
+
+jules: It has hooves.
+
+Then she left. And you stood there in the hallway of Wachman Hall like a guy who\'d been handed something very fragile and told not to drop it.
+
+It\'s Friday. You have a dinner shift at Ciro\'s tonight. Before that, you have a couple of hours.`,
+      next: 'a1_hub'
+    },
+
+    /* ---------- Friday hub ---------- */
+    a1_hub: {
+      loc: 'FRIDAY · OCTOBER 16',
+      clock: { time: '4:40 PM' },
+      text: g => `You\'ve got two hours before Ciro needs you. You\'ve got ${g.S.xp} XP of things you\'ve learned, a midterm Monday, and a pile of people you owe phone calls.`,
+      hub: {
+        slots: 2, label: 'Friday afternoon',
+        blurb: 'Ciro\'s at seven. Choose two.',
+        options: [
+          { id: 'fri7_vinnie', text: 'Call Vinnie. Jules told you to. "People who wait for calls never get them."', cost: 1, tag: 'Vinnie', go: 'a1_vinnie' },
+          { id: 'fri7_femi', text: 'Femi hasn\'t been in Calc in a week. Even you can\'t find him. Go look.', cost: 1, tag: 'Femi', go: 'a1_femi' },
+          { id: 'fri7_pop', text: 'Call Pop. He\'s been weird on the phone with Ma. She told you. She *never* tells you.', cost: 1, tag: 'Pop', go: 'a1_pop' },
+          { id: 'fri7_study', text: 'Library. Start the Calc review now, so Saturday isn\'t a massacre.', cost: 1, tag: 'Study', go: 'a1_study' }
+        ],
+        done: 'a1_ciro'
+      }
+    },
+
+    a1_vinnie: {
+      enter: g => { g.flag('called_vinnie'); g.bond('vinnie', { trust: 2, tension: -2, affection: 1 }); },
+      text: g => `He picks up on the second ring. He sounds surprised. He sounds like a guy who\'d stopped expecting the phone to say your name.
+
+vinnie: …Sally?
+
+sam: Hey, Vin.
+
+vinnie: You called me.
+
+sam: Somebody told me people who wait for calls never get them.
+
+vinnie: Who told you that?
+
+sam: Somebody smart.
+
+A pause. You can hear a car engine, idling. You can hear the radio, low, a WIP host losing his mind about the Eagles' offensive line.
+
+vinnie: The rich girl.
+
+sam: …Yeah.
+
+vinnie: Huh. Okay. I like her better now.
+
+${g.f('vinnie5') === 'slipped' || g.f('vinnie5') === 'told' ? 'He doesn\'t mention the alley. Neither do you. But it\'s there on the line between you, like a third person, listening.' : ''}
+
+You talk about nothing for a while. The Birds. His little brothers. A girl from the Local\'s office who told him he has nice eyelashes and he hasn\'t recovered. It\'s good. It\'s so good it hurts a little. You haven\'t talked to Vinnie about nothing in months.
+
+Then he goes quiet.
+
+vinnie: Yo. Sally. Your pop. You talk to him lately?
+
+sam: Not really. Why?
+
+vinnie: I\'m in the car. I can\'t— I\'m in the *car*, you know?
+
+His voice drops.
+
+vinnie: Saturday\'s a big day. For a lot of people. That\'s all I\'m saying. That\'s all I *can* say. Call your pop.
+
+A door opens on his end. A voice, smooth, amused: *Vincenzo. Who\'s that?*
+
+vinnie: My ma. Gotta go. Love you, Ma.
+
+He hangs up.
+
+You sit there holding the phone.`,
+      next: '@hub'
+    },
+
+    a1_femi: {
+      enter: g => { g.know('femi_residential', ['sam', 'femi'], 'Femi went back to Halcyon. They want him for a "residential phase" at the Navy Yard over Halloween weekend (Fri Oct 30 – Sun Nov 1), $2,500 stipend.'); g.bond('femi', { trust: 1 }); },
+      text: g => `It takes you forty minutes to find him, and you\'re the only person in the world who can.
+
+He\'s in the stacks on the fourth floor of Charles Library, in a carrel by the window, with a Calc textbook open that he isn\'t reading. People walk past him and don\'t look. A girl sits down in the carrel *next* to him, puts her bag on his feet, and doesn\'t notice.
+
+He notices you. He smiles. It\'s a thin smile.
+
+femi: Took you long enough.
+
+sam: You haven\'t been in recitation.
+
+femi: I *have* been in recitation. Every day. At the whiteboard. The course coordinator came to observe Tuesday, asked the room where the learning assistant was, and wrote *no-show* while I was holding the marker. I just. I stopped going after that. What\'s the point.
+
+He\'s thinner. His hoodie hangs off his shoulders like it\'s on a hanger.
+
+femi: ${g.f('femi_tue') === 'stay' ? 'I didn\'t go. On the twenty-second. Like you said. I ghosted them.\n\nsam: Good.\n\nfemi: They found me anyway. A woman came to my Econ lecture. She walked straight to my seat. She *saw* me, Sam, first try, like I was lit up. She gave me a card.' : 'I went. On the twenty-second. They measured me again. Eleven seconds is nine now. I\'m getting *better* at it, she says. Better at disappearing.'}
+
+He takes something out of his hoodie pocket and puts it on the desk between you. A white card, heavy, embossed.
+
+**HALCYON COMMUNITY WELLNESS · COHORT 2 · RESIDENTIAL PHASE**
+**Friday Oct. 30 – Sunday Nov. 1 · Navy Yard Campus, Building 7**
+**Meals, lodging, and $2,500 stipend provided.**
+
+femi: Halloween weekend. Three days. They want to watch me *sleep*, Sam. They want to see if I disappear in my sleep. Twenty-five hundred dollars.
+
+He laughs, and it isn\'t a laugh.
+
+femi: My mom\'s been sending me money from Lagos every month for three years. Twenty-five hundred dollars is a year of what she sends. I could send it *back*.`,
+      choices: [
+        { text: '"Femi. Don\'t. They had a truck in Kensington with restraints rated for six hundred pounds. I saw it."', if: g => g.knows('halcyon_truck'), tag: 'The truck',
+          check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', bonus: 2, bonusLabel: 'You saw it', label: 'Keep Femi out of Building 7', on: { strong: 'a1_femi_no', weak: 'a1_femi_maybe', miss: 'a1_femi_yes' } } },
+        { text: '"Femi. Don\'t. Please. I know things about them I can\'t tell you."', if: g => !g.knows('halcyon_truck'),
+          check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', label: 'Keep Femi out of Building 7', on: { strong: 'a1_femi_no', weak: 'a1_femi_maybe', miss: 'a1_femi_yes' } } },
+        { text: 'Tell him. What you are. What happened to Heck. Why Halcyon wants people like you. Both of you.', tag: 'Tell him everything',
+          fx: g => { g.flag('femi7', 'told'); g.know('sam_slip', ['femi']); g.know('halcyon_clinic', ['femi']); g.bond('femi', { trust: 3, affection: 2 }); g.hidden('revenant_drift', -0.3); }, go: 'a1_femi_told' }
+      ]
+    },
+    a1_femi_no: {
+      enter: g => { g.flag('femi7', 'no'); g.bond('femi', { trust: 2 }); },
+      text: `He listens. He really does. And at the end of it, he takes the card and folds it in half, and in half again, and puts it in his pocket.
+
+femi: Okay.
+
+sam: Okay you won\'t go?
+
+femi: Okay I won\'t go. Okay I believe you. Okay I\'m scared.
+
+He looks out the window at the trees going orange on Liacouras Walk.
+
+femi: But they found me in a lecture hall, Sam, with three hundred people in it. First try. If they want me in Building 7, I don\'t think *not going* is going to be the thing that decides it.`,
+      next: '@hub'
+    },
+    a1_femi_maybe: {
+      enter: g => { g.flag('femi7', 'maybe'); },
+      text: `He listens. At the end, he doesn\'t say anything for a while.
+
+femi: I\'ll think about it.
+
+sam: Femi—
+
+femi: That\'s honest. I\'m being honest with you. It\'s two weeks away. I\'ll think about it.
+
+He puts the card back in his pocket, unfolded.`,
+      next: '@hub'
+    },
+    a1_femi_yes: {
+      enter: g => { g.flag('femi7', 'yes'); g.bond('femi', { tension: 1 }); },
+      text: `He listens. Then he shakes his head, slowly.
+
+femi: You keep telling me things you can\'t tell me. You know how that sounds? It sounds like everybody else. *Trust me. I can\'t explain.* At least *they* explain.
+
+He puts the card back in his pocket.
+
+femi: I\'m going, Sam. Twenty-five hundred dollars. And for three days, somebody\'s going to be looking at me the whole time. You don\'t know what I\'d give for that.`,
+      next: '@hub'
+    },
+    a1_femi_told: {
+      text: `You tell him.
+
+You do it quietly, in a library carrel, while people walk past him like he\'s furniture and past you like you\'re furniture\'s friend. The Hitch. The cold. The bus. Heck in McPherson Square. Marisol. Brannigan\'s voice.
+
+Femi doesn\'t interrupt once. When you\'re done, he looks at you the way nobody ever looks at him.
+
+femi: You\'re the Blur.
+
+sam: Yeah.
+
+femi: The *Broad Street Blur*. Is in my Calc recitation. And can\'t do the chain rule.
+
+sam: Nobody can do the chain rule.
+
+He laughs, a real one, the first real one you\'ve heard out of him in a month. Then he stops.
+
+femi: So we\'re the same. You and me.
+
+sam: Kind of. Yeah.
+
+femi: And they want *both* of us.
+
+He takes the card out of his pocket and looks at it for a long time. Then he tears it in half, and in half again, and again, until it\'s confetti, and he drops it in the recycling bin under the desk.
+
+femi: Okay. Okay. Then I\'m not going anywhere they can watch me sleep.
+
+He looks up at you.
+
+femi: You see me. You always see me. Three years at this school, and it\'s the guy who can\'t do the chain rule.
+
+He laughs again. Smaller.`,
+      next: '@hub'
+    },
+
+    a1_pop: {
+      enter: g => { g.bond('frank', { trust: 1 }); },
+      text: g => `Pop picks up on the sixth ring. You can hear the cab around him, the click of the turn signal, the dispatcher\'s radio, the AM station playing sports talk.
+
+frank: Kid.
+
+sam: Hey, Pop.
+
+frank: Something wrong? You never call me.
+
+sam: Nothing\'s wrong. Ma said you\'ve been… I don\'t know. She said you\'ve been quiet.
+
+frank: I\'m always quiet.
+
+sam: Quieter.
+
+A long pause. The turn signal clicks. Somebody honks.
+
+frank: I\'m fine, kid. Busy weekend. I\'m driving Saturday night, a double. There\'s a convention at the Center, all the hotels. Good money.
+
+He says *good money* the way he says it when he\'s trying to convince himself.
+
+${g.knows('vinnie_dante') ? 'You think about Vinnie in the alley. *Dante. From Passyunk.* You think about the jacket at the Melrose.' : 'You think about the 4471 calls he keeps declining.'}`,
+      choices: [
+        { text: '"Pop. Is it Dante?"', if: g => g.knows('vinnie_dante'), tag: 'Name him',
+          fx: g => { g.flag('pop7', 'named'); g.bond('frank', { tension: 2 }); }, go: 'a1_pop_named' },
+        { text: '"Okay, Pop. Be careful. Drive safe."', tag: 'Let it go',
+          fx: g => { g.flag('pop7', 'let'); }, go: 'a1_pop_let' }
+      ]
+    },
+    a1_pop_named: {
+      text: `sam: Pop. Is it Dante?
+
+The turn signal stops clicking. For a second, you think he\'s hung up.
+
+frank: …Where\'d you hear that name.
+
+sam: Around.
+
+frank: Vinnie.
+
+You don\'t say anything.
+
+frank: Kid. You stay *out* of it. You hear me? I made this. It\'s not yours. It\'s not your brother\'s. It\'s *mine*.
+
+His voice breaks on *mine*. You\'ve never heard your father\'s voice break. Not at his own mother\'s funeral. Not when Mikey shipped out.
+
+frank: I\'ll handle it. Saturday. It\'s handled.
+
+He hangs up.`,
+      next: '@hub'
+    },
+    a1_pop_let: {
+      text: `sam: Okay, Pop. Be careful. Drive safe.
+
+frank: Always do, kid.
+
+A pause.
+
+frank: Hey. Your mother says the Pemberton girl\'s mother wrote her a card. On the *good* paper. Your mother put it on the refrigerator. Next to Gigi\'s report card.
+
+You can hear him smiling. It\'s the first time you\'ve heard him smile in weeks.
+
+frank: Good girl, that one. Don\'t screw it up.
+
+He hangs up before you can say anything.`,
+      next: '@hub'
+    },
+
+    a1_study: {
+      enter: g => { g.flag('pre_study'); g.grade('calc', 2); },
+      text: `You go to the fourth floor of Charles Library with every Calc problem set you\'ve done this semester, including the one with the horse, which is a dog, and you work through them from the beginning, one by one, for two straight hours.
+
+It\'s terrible. You\'re terrible at it. But somewhere around the middle of problem set four, the chain rule clicks, the way a lock clicks, and you sit back in the chair and stare at it, and it\'s *simple*. It was always simple. You just had to sit still long enough to see it.
+
+You think: that\'s what the last two weeks have been. Sitting still.
+
+You think: Jules is going to be insufferable about this.`,
+      next: '@hub'
+    },
+
+    /* ---------- Ciro\'s ---------- */
+    a1_ciro: {
+      night: true,
+      loc: 'CIRO\'S PIZZA · CECIL B. MOORE AVE',
+      clock: { time: '9:14 PM' },
+      enter: g => { g.money(14 * 3); g.know('pop_owes', ['sam'], 'Dante Iannucci told you: your father owes his family $41,000, from a bad bet in 2009. "Saturday is Saturday."'); g.know('dante', ['sam'], 'Dante Iannucci, 24, from Passyunk. The jacket from the Melrose. Grandson of somebody important. Vinnie drives him.'); },
+      text: `Friday night at Ciro\'s is a war. Three ovens, two phones, a line out the door of drunk kids from a party on Diamond Street, and Ciro moving through it all like a general, throwing insults.
+
+ciro: Salvatore! You\'re slow like a *wedding*. Like a wedding in *church*. Move!
+
+At 9:14, the bell over the door rings, and the store goes quiet.
+
+Not all at once. In a ripple, from the door back. The drunk kids don\'t notice, but the regulars do: the old Dominican guy who comes in every night for a plain slice, the two nurses from Temple Hospital, Ciro.
+
+*Especially* Ciro. Ciro stops with a pizza peel in his hand.
+
+The man who\'s just walked in is twenty-four, maybe. Handsome, in the way of guys who know it. Dark hair, perfect. A jacket you could live in for a year, cognac-brown leather, soft as a glove. *A real nice jacket. Not a cab guy.*
+
+He smiles at Ciro like they\'re old friends.
+
+DANTE: Ciro. How\'s business.
+
+ciro: Good. Good, Mr. Iannucci. Everything is good.
+
+You\'ve never heard Ciro call anyone *mister*. You\'ve never heard Ciro sound *scared*.
+
+Through the front window, at the curb on Cecil B. Moore, there\'s a black Escalade with its engine running. You can see the driver\'s silhouette behind the wheel. Broad shoulders. A gold chain catching the streetlight.
+
+Vinnie.
+
+Dante orders a plain slice. He pays with a hundred and tells Ciro to keep it. Then he turns around, and looks right at you, behind the counter, in your Ciro\'s shirt, with flour on your arms.
+
+DANTE: You\'re Frank Kearney\'s kid.
+
+It isn\'t a question.
+
+DANTE: Sam, right? The college one. Your father talks about you. He\'s proud. He should be.
+
+He takes a bite of the slice. Chews. Nods appreciatively at Ciro.
+
+DANTE: So here\'s the thing, Sam. I\'m gonna tell you something, because I like your father, and I think he\'s embarrassed, and embarrassed men do stupid things. Your father made a bad bet in 2009. A lot of bad bets. My grandfather\'s been very patient. Seventeen years of patient. It\'s forty-one thousand now, with everything.
+
+He wipes his fingers on a napkin, one at a time.
+
+DANTE: Saturday is Saturday. Tell him that for me. He\'ll know what it means.`,
+      choices: [
+        { text: 'Lean over the counter. Get close. "You go near my father, and I\'ll find you."', tag: 'Threaten',
+          check: { kind: 'move', move: 'Lean On', attr: 'nerve', skill: 'intimidate', label: 'Make him blink', on: { strong: 'a1_dante_threat', weak: 'a1_dante_threat_weak', miss: 'a1_dante_threat_weak' } } },
+        { text: '"What happens Saturday?" Keep your voice flat. Get information.', tag: 'Ask',
+          check: { kind: 'move', move: 'Read the Street', attr: 'wits', skill: 'streetwise', label: 'Read Dante', on: { strong: 'a1_dante_read', weak: 'a1_dante_read_weak', miss: 'a1_dante_read_weak' } } },
+        { text: 'Say nothing. Look past him, at the Escalade. At Vinnie.', tag: 'Vinnie',
+          fx: g => { g.flag('ciro7', 'vinnie'); }, go: 'a1_dante_vinnie' }
+      ]
+    },
+    a1_dante_threat: {
+      enter: g => { g.flag('ciro7', 'threat'); g.flag('dante_noticed'); },
+      text: `You lean over the counter. Close. Close enough to smell his cologne, something expensive with cedar in it.
+
+sam: You go near my father, and I\'ll find you.
+
+Dante looks at you. For a second, something real goes across his face: not fear, not exactly. Interest.
+
+DANTE: Huh.
+
+He smiles. It\'s a very good smile. It\'s the smile of a man who\'s going to remember you.
+
+DANTE: My driver says you were the one who got in fights. When you were kids.
+
+He folds his napkin, sets it on the counter, and goes.
+
+Through the window, as the Escalade pulls away, Vinnie doesn\'t look at you. He looks straight ahead, both hands on the wheel at ten and two, like his driving-test instructor taught him.`,
+      next: 'a2_saturday'
+    },
+    a1_dante_threat_weak: {
+      enter: g => { g.flag('ciro7', 'threat'); },
+      text: `You lean over the counter.
+
+sam: You go near my father, and I\'ll—
+
+DANTE: You\'ll what?
+
+He says it pleasantly. He says it like he genuinely wants to know. You don\'t finish. You realize, standing there in a pizza shirt with flour up to your elbows, that there\'s nothing you can say to this man that he hasn\'t heard from a hundred guys bigger than you.
+
+DANTE: Tell your father. Saturday.
+
+He goes. Ciro puts the pizza peel down very carefully and doesn\'t look at you for the rest of the night.`,
+      next: 'a2_saturday'
+    },
+    a1_dante_read: {
+      enter: g => { g.flag('ciro7', 'read'); g.know('dante_saturday', ['sam'], 'Dante let slip that Saturday is "a pickup." They\'re going to "have a conversation" with your father in his cab, somewhere quiet, with "a friend who keeps things still."'); },
+      text: `sam: What happens Saturday?
+
+You keep your voice flat. You keep your hands on the counter. You\'ve been reading guys like this since you were eleven, on Passyunk Avenue, outside the social clubs.
+
+Dante considers you. He decides you\'re not a threat. You can see him decide it. It\'s the most useful thing he could have done.
+
+DANTE: Nothing happens. We have a conversation. Your father and me and a friend of mine. In the cab, somewhere quiet. My friend\'s very good at keeping things still while people talk.
+
+*Keeping things still.*
+
+DANTE: Your father will be fine, Sam. Nobody wants a mess. We just need him to understand.
+
+He goes. Through the window, you watch the Escalade pull away, and you think: *a friend who keeps things still.*
+
+You only know one person in Philadelphia who keeps things still.`,
+      next: 'a2_saturday'
+    },
+    a1_dante_read_weak: {
+      enter: g => { g.flag('ciro7', 'read'); },
+      text: `sam: What happens Saturday?
+
+DANTE: Your father knows.
+
+He smiles. He doesn\'t give you anything else. He\'s better at this than you are.
+
+He goes. You watch the Escalade pull away from the curb, Vinnie\'s silhouette behind the wheel, and you stand there behind the counter with your hands flat on the steel so nobody can see them shake.`,
+      next: 'a2_saturday'
+    },
+    a1_dante_vinnie: {
+      text: `You don\'t look at Dante. You look past him, through the window, at the Escalade.
+
+Vinnie is looking back at you.
+
+He doesn\'t wave. He doesn\'t nod. He just looks at you through the windshield, under the streetlight on Cecil B. Moore, for a long second, the way you used to look at each other across the classroom at St. Monica\'s when one of you was in trouble and the other couldn\'t help.
+
+Then he looks away.
+
+DANTE: That\'s my driver. Vincenzo. You two know each other, right? From the old neighborhood?
+
+He knows you do. He\'s watching your face to see how you\'ll answer.
+
+sam: Everybody knows everybody.
+
+DANTE: That\'s true. That\'s very true.
+
+He goes. The Escalade pulls away. Vinnie keeps his eyes on the road.`,
+      next: 'a2_saturday'
+    }
+  }
+});
+
+/* s01e07b.js */
+/* S1 · E7 · DEBT SERVICE, part 2 of 3: Act Two ("Saturday Is Saturday"), Act Three ("Under 95"). */
+EH.scenes('s01e07', {
+
+  /* ================= ACT TWO: SATURDAY IS SATURDAY ================= */
+  a2_saturday: {
+    card: { kind: 'act', label: 'Act Two', title: 'Saturday Is Saturday' },
+    loc: 'CARDONE HALL · ROOM 9-14',
+    clock: { day: 'Sat', date: 'Oct 17', time: '2:15 PM' },
+    enter: g => { g.sleep(6); },
+    text: g => `You call Pop four times on Saturday. He doesn\'t pick up. The fifth time, it goes straight to voicemail. *You\'ve reached Frank Kearney, Liberty Cab, leave a message, God bless.*
+
+You call Ma. You say you\'re just checking in. She says Pop\'s sleeping, he\'s doing a double tonight, the convention. She says it normally. Then she says, *Salvatore, what\'s wrong*, in the voice, and you say *nothing, Ma*, and she lets it go, and you know she didn\'t.
+
+At 2:15, your phone buzzes.
+
+TXT bree: wawa
+TXT bree: teddy took a job
+TXT bree: from south philly guys. fancy car. a guy with a jacket
+TXT bree: its tonight. hes being weird. he wont look at me
+TXT bree: i heard him on the phone. i hear everything. "a cab. under 95. delaware ave at snyder. 10:30. i just hold it"
+TXT bree: heck says ur not supposed to know. im telling u anyway
+TXT bree: i dont like it
+
+You read it three times.
+
+*A cab. A friend who keeps things still.*
+
+${g.knows('dante_saturday') ? 'Dante, at the counter: *My friend\'s very good at keeping things still while people talk.*' : 'Dante, at the counter: *Saturday is Saturday.*'}
+
+You sit down on your bed. Across the room, Nik looks up from his laptop and sees your face and takes his headphones off.
+
+nik: What.
+
+You show him. He reads it. He reads it again.
+
+nik: Your dad drives a cab.
+
+sam: Yeah.
+
+nik: *Oh*. Oh no.`,
+    choices: [
+      { text: 'Text Teddy. *dont do it. its my father. frank kearney is my father. its sam.*', tag: 'Tell Teddy',
+        fx: g => { g.flag('teddy7', 'told'); g.know('sam_name', ['teddy', 'bree'], 'Teddy knows your name now. Sam Kearney. Frank Kearney\'s son.'); }, go: 'a2_teddy_told' },
+      { text: 'Text Teddy. *dont take this job. please.* Nothing else.', tag: 'Just ask',
+        fx: g => { g.flag('teddy7', 'asked'); }, go: 'a2_teddy_asked' },
+      { text: 'Don\'t text anyone. Just be there at 10:30.', tag: 'Just go',
+        fx: g => { g.flag('teddy7', 'none'); }, go: 'a2_nik' }
+    ]
+  },
+  a2_teddy_told: {
+    enter: g => { g.know('teddy_mother', ['sam']); },
+    text: `TXT sam: dont do it. its my father. frank kearney is my father. its sam.
+
+The dots appear immediately. Then they disappear. Then nothing. Twenty minutes. Half an hour.
+
+Then:
+
+TXT teddy: i didnt know
+TXT teddy: i swear to god i didnt know. they gave me a name and a cab number. i didnt know your name. i never knew your name
+TXT teddy: listen
+TXT teddy: my mom goes on the list or she doesnt. 40k. thats the number. i dont get another number
+TXT teddy: im sorry cold guy
+TXT teddy: sam
+
+That\'s all. He doesn\'t say he won\'t. He doesn\'t say he will.`,
+    next: 'a2_nik'
+  },
+  a2_teddy_asked: {
+    text: `TXT sam: dont take this job. please.
+
+TXT teddy: listen. i dont have a choice
+TXT teddy: nobody gets hurt. i just hold a cab. guy talks to another guy. done
+TXT teddy: stay out of it cold guy. its not your business
+
+You stare at *its not your business* for a long time.`,
+    next: 'a2_nik'
+  },
+  a2_nik: {
+    text: g => `Nik closes his laptop.
+
+nik: Okay. Okay. So. Here\'s the thing. I\'m gonna say something, and you\'re not gonna like it.
+
+sam: Nik.
+
+nik: You\'re going. I know you\'re going. I\'m not stupid. It\'s your *dad*. I\'d go. I\'d go and I can\'t even do a pull-up.
+
+He takes a breath.
+
+nik: But it\'s been two weeks. Your temperature\'s normal. Your nose isn\'t bleeding. You haven\'t lost a single minute since the roof. ${g.S.drift >= 7 ? 'You\'re still high. You\'re still really high, Sam.' : 'You\'re *better*.'} If you go in there and Slip, I don\'t know what happens. Nobody knows. *Brannigan* knows, maybe, and that\'s the scariest sentence I\'ve ever said.
+
+He holds up one finger.
+
+nik: So go. But try everything else first. Talk. Punch. Yell. Call your brother. *Everything*. Slip is your ult, and your ult is on a two-week cooldown. Last.
+
+He looks at you very seriously, the headlamp pushed up on his forehead, even though it\'s two in the afternoon.
+
+nik: Also, you have a study date with Jules Pemberton at seven, and if you blow that off without telling her, she\'s going to kill you, and I\'m going to help.`,
+    next: 'a2_study'
+  },
+
+  /* ---------- Study night ---------- */
+  a2_study: {
+    loc: 'CARDONE HALL · 9TH FLOOR LOUNGE',
+    clock: { time: '7:00 PM' },
+    text: g => `She\'s already there when you come in, at the big table in the ninth-floor lounge, with two highlighters, a stack of index cards held with a binder clip, a thermos of tea, and every Calc problem set from the semester laid out in a grid like evidence at a trial.
+
+She\'s wearing a gray cardigan and her hair is up in a pencil. The pink-and-green bracelet is on her wrist.
+
+jules: You\'re on time.
+
+sam: I\'m always on time.
+
+jules: You\'ve been on time twice since August. I wrote it down.
+
+You sit. She slides an index card across the table. On it, in her perfect handwriting: *d/dx [sin(x²)]*.
+
+jules: Go.
+
+You look at it. Two weeks ago, you would have drawn a dog on it. With hooves.
+
+sam: Cos of x squared, times two x.
+
+She looks at you. She looks at the card. She looks at you again.
+
+jules: Who are you.
+
+sam: ${g.f('pre_study') ? 'I went to the library yesterday. Two hours. The chain rule clicked.' : 'I don\'t know. It just clicked.'}
+
+jules: *Clicked.*
+
+She says it in a strange voice. She looks down at her cards. For a second you could swear her hand goes to her chest, to her breastbone, and then she puts it back on the table.
+
+jules: Fine. Next one.
+
+You study for two and a half hours. It\'s two and a half hours of being eighteen. She\'s merciless and precise and twice she laughs, once at a dumb joke and once when you get an integral right and pump your fist like you hit a home run. At one point her foot is touching yours under the table. Neither of you moves it.
+
+She doesn\'t mention the text. You don\'t mention the text. It sits on the table between you with the index cards.
+
+At 9:40, your phone buzzes against your leg.
+
+TXT bree: theyre leaving now
+TXT bree: wawa please
+
+Jules sees your face change. She puts down her highlighter.
+
+jules: What is it.`,
+    choices: [
+      { text: '"I have to go. It\'s my father. I can\'t tell you more." Look at her when you say it.', tag: 'The truth',
+        fx: g => { g.flag('bail', 'truth'); g.bond('jules', { trust: 1 }); g.know('jules_pop', ['jules'], 'Sam left the study night to help his father. He said he couldn\'t say more.'); }, go: 'a2_bail_truth' },
+      { text: '"Nonna\'s sick. Ma called. I gotta go to South Philly." Lie. A good one.', tag: 'Lie',
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', near: ['jules'], label: 'Lie to Jules', on: { strong: 'a2_bail_lie', weak: 'a2_bail_lie', miss: 'a2_bail_lie_bad' } } },
+      { text: '"I got your text. Two weeks ago. I should have answered." Say that first. Then: "I have to go."', tag: 'The text',
+        fx: g => { g.flag('bail', 'text'); g.bond('jules', { affection: 1, trust: 1 }); }, go: 'a2_bail_text' }
+    ]
+  },
+  a2_bail_truth: {
+    text: `sam: I have to go. It\'s my father. I can\'t tell you more.
+
+You look at her when you say it. You make yourself.
+
+She looks back at you for a long moment. She doesn\'t ask what. She looks at your hand on the table, nowhere near your ear.
+
+jules: Is he in danger?
+
+sam: …Yeah.
+
+jules: Go.
+
+You\'re standing. You\'re at the door.
+
+jules: Sam.
+
+You turn around. She\'s holding the index card. *d/dx [sin(x²)]*.
+
+jules: You\'re going to pass on Monday. I\'m not going to let you not.
+
+You go.`,
+    next: 'a3_under95'
+  },
+  a2_bail_lie: {
+    enter: g => { g.flag('bail', 'lie'); },
+    text: `sam: Nonna\'s sick. Ma called. I gotta go to South Philly.
+
+It\'s a good lie. Your hand stays on the table. Your voice stays steady. It\'s got a grandmother in it and a mother and a direction, and it\'s the kind of lie that would work on anyone.
+
+Jules looks at you.
+
+jules: Your grandmother.
+
+sam: Yeah.
+
+jules: Is sick.
+
+sam: Yeah. I\'m sorry. I\'m really sorry, Pemberton, I wanted to—
+
+jules: Go.
+
+She says it flatly. She picks up her highlighter. She uncaps it and caps it again.
+
+jules: Give her my love.
+
+You go. At the door you look back, once. She\'s sitting perfectly still with the highlighter in her fist, looking at you the way she looks at a card she knows is a bluff.`,
+    next: 'a3_under95'
+  },
+  a2_bail_lie_bad: {
+    enter: g => { g.flag('bail', 'lie'); g.bond('jules', { trust: -1 }); g.heat('jules', 1); },
+    text: `sam: Nonna\'s sick. Ma called. I gotta—
+
+You stop. Your hand is on your ear. You don\'t remember putting it there.
+
+Jules watches you take it down.
+
+jules: Go.
+
+sam: Jules—
+
+jules: I said go. Whatever it is. Wherever. You were always going to go.
+
+She starts gathering the index cards into a neat stack, squaring the edges, very precisely.
+
+jules: I\'ll be here.
+
+She doesn\'t say for how long.`,
+    next: 'a3_under95'
+  },
+  a2_bail_text: {
+    enter: g => { g.know('sam_got_text', ['sam', 'jules'], 'Sam told Jules he got her text, "What if it was me," and that he should have answered.'); },
+    text: `sam: I got your text. Two weeks ago. I should have answered.
+
+She goes completely still.
+
+sam: I didn\'t know what to say. I typed like nine things. I didn\'t send any of them. I\'m sorry. That\'s not— you deserved an answer.
+
+jules: …What were they?
+
+sam: What?
+
+jules: The nine things.
+
+Your phone buzzes again against your leg. *wawa please.* You stand up.
+
+sam: I have to go. It\'s my father. I can\'t— I\'ll tell you. The nine things. I\'ll tell you all nine. I promise. When I get back.
+
+She looks up at you. Her face is doing something you\'ve never seen it do. It\'s open. Wide open.
+
+jules: Go.
+
+You go.
+
+Behind you, very quietly, so quietly you almost don\'t hear it:
+
+jules: I\'ll hold you to the nine.`,
+    next: 'a3_under95'
+  },
+
+  /* ================= ACT THREE: UNDER 95 ================= */
+  a3_under95: {
+    card: { kind: 'act', label: 'Act Three', title: 'Under 95' },
+    night: true,
+    loc: 'COLUMBUS BLVD & SNYDER · UNDER I-95',
+    clock: { time: '10:31 PM' },
+    text: g => `${g.f('costume') === 'hoodie' || !g.f('costume') ? 'Black hoodie. Gaiter up to your eyes. Pop\'s Eagles cap, backward. *Pop\'s* cap.' : 'The costume. Your face covered.'} You ride the bike down Columbus Boulevard from Spring Garden, past Penn\'s Landing and the piers and the big-box stores, with the river on your left black and wide, and under the highway at Snyder, in a gravel lot where the trucks park overnight between the concrete pillars of I-95, you find it.
+
+A Liberty Cab. Yellow and green. **2207** on the roof light. Pop\'s cab.
+
+It\'s sitting perfectly still in the middle of the lot with the driver\'s door open. Not parked. *Stopped*, the way the armored car on Girard was stopped: dust motes frozen in the headlight beams, a moth hanging in the air an inch from the windshield, the exhaust from the tailpipe standing in a gray curl like a sculpture.
+
+Teddy is standing beside it with his hand flat on the hood.
+
+Twenty feet away, between the pillars, two men in dark jackets are holding your father by the arms. Pop\'s on his knees on the gravel. His good shirt is torn at the shoulder. There\'s blood on his lip.
+
+Dante Iannucci is standing in front of him with his hands in the pockets of his beautiful jacket, talking. Calm. Reasonable. You can\'t hear what he\'s saying.
+
+Behind them all, at the edge of the lot, the black Escalade, engine running. The driver\'s door is closed. You can see Vinnie\'s shape behind the wheel. He\'s not getting out.
+
+${g.S.drift >= 7 ? 'Your fingertips are cold. They\'ve been cold since you got on the bike.' : 'Your hands are steady. Two weeks of sleep. Two weeks of being a person.'}
+
+You leave the bike against a pillar and walk into the light.
+
+Teddy sees you first. His face does something terrible. He doesn\'t take his hand off the cab.
+
+Dante turns. He sees a kid in a hoodie with his face covered, walking toward him out of the dark under I-95, alone.
+
+DANTE: Can I help you?`,
+    choices: [
+      { text: 'Walk past Dante. Straight to Teddy. "Let go of it, Teddy. That\'s my father."', tag: 'Teddy',
+        check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', bonus: 1, bonusLabel: 'He owes you Heck', label: 'Reach Teddy', on: { strong: 'a3_teddy_lets_go', weak: 'a3_teddy_weak', miss: 'a3_teddy_no' } } },
+      { text: 'The two men holding Pop. Take them. Now. Before anybody decides anything.', tag: 'Fight',
+        check: { kind: 'pool', attr: 'body', skill: 'brawl', diff: 3, label: 'Two men, one of you', physical: true, power: true, on: { crit: 'a3_fight_win', success: 'a3_fight_win', partial: 'a3_fight_ugly', fail: 'a3_fight_lose', botch: 'a3_fight_lose' } } },
+      { text: 'Walk to the Escalade. Knock on the driver\'s window. "Vin. I need you."', if: g => g.f('called_vinnie') || g.knows('sam_slip', 'vinnie'), tag: 'Vinnie',
+        fx: g => { g.flag('vinnie7', 'asked'); }, go: 'a3_vinnie' },
+      { text: 'Slip. Get Pop out of their hands and away before anyone sees you move.', slip: true, tag: 'Slip',
+        fx: g => { g.flag('under95', 'slip'); if (g.S.drift >= 9) g.flag('unstick'); g.hidden('halcyon_heat', 1); }, go: 'a3_slip' }
+    ]
+  },
+
+  a3_teddy_lets_go: {
+    night: true,
+    enter: g => { g.flag('under95', 'teddy'); g.flag('teddy_quit'); g.bond('teddy', { trust: 2, respect: 2 }); g.flag('teddy7_talk'); },
+    text: g => `You walk past Dante like he isn\'t there. You walk right up to Teddy, at the cab, close enough to see the bandage on his hand and the sweat at his hairline in the cold.
+
+sam: Let go of it, Teddy. That\'s my father.
+
+${g.f('teddy7') === 'told' ? 'teddy: I know. You told me. I *know*.' : 'Teddy stares at you. Then at the man on his knees. Then at you again, at your eyes over the gaiter. And you watch him do the math.\n\nteddy: …Oh, God.'}
+
+sam: You held Heck. In the fire. You burned your own hand holding him so they couldn\'t take him. You remember?
+
+teddy: Don\'t.
+
+sam: That\'s what you do. You hold on to people so nobody can take them. That\'s *you*. Not this.
+
+His hand is shaking on the hood. The moth in the headlight beam trembles, just barely, like the air around it is trying to start again.
+
+teddy: ${g.knows('teddy_mother') || g.f('teddy7') === 'told' ? 'My mom, Sam.' : 'My mom needs a kidney, cold guy. Jefferson won\'t list her without forty grand.'}
+
+sam: ${g.knows('teddy_mother') || g.f('teddy7') === 'told' ? 'I know.' : 'I didn\'t know.'}
+
+teddy: Forty thousand dollars.
+
+sam: ${g.knows('teddy_mother') || g.f('teddy7') === 'told' ? 'I know.' : 'Okay.'} I\'ll help. I don\'t know how. I\'ll help.
+
+He looks at you for a long time over his own hand. Then he lifts it off the hood.
+
+The world comes back to the cab. The moth flies into the windshield and bounces off. The exhaust curl breaks up and drifts. The engine, which was idling when Teddy touched it, picks up again in the middle of a cylinder, a rough cough and then the steady rumble.
+
+teddy: Job\'s off, Mr. Iannucci.
+
+Dante looks at Teddy. At you. Back at Teddy.
+
+DANTE: Then you owe *me* my retainer back, Kowal. You understand that? You took my retainer.
+
+teddy: Yeah. I understand.
+
+Dante sighs, like a teacher with a disappointing class. He nods to his men. They let go of Pop. Pop sits back on his heels on the gravel, holding his ribs.`,
+    next: 'a3_dante'
+  },
+  a3_teddy_weak: {
+    night: true,
+    enter: g => { g.flag('under95', 'teddy'); g.flag('teddy_quit'); g.bond('teddy', { trust: 1 }); g.injure({ id: 'cracked_ribs7', name: 'Cracked ribs', pen: 1, heal: 2, affects: ['body', 'reflex'] }); },
+    text: `You walk past Dante, straight to Teddy.
+
+sam: Let go of it, Teddy. That\'s my father.
+
+You get the words out. That\'s all you get out, because one of Dante\'s men lets go of Pop and comes at you from the side, and he\'s big, and he\'s done this before, and he hits you in the ribs with something that isn\'t a fist. A sap. Leather and lead.
+
+You go down on one knee on the gravel. Something cracks.
+
+Teddy watches it happen. His hand is shaking on the hood.
+
+And then he takes it off.
+
+He lets go of the cab and walks over and puts his hand flat on the chest of the man standing over you, almost gently, and the man *stops*. Mid-swing. The sap frozen over his head, his face frozen in a grimace, a statue in a Members Only jacket.
+
+teddy: Job\'s off, Mr. Iannucci.
+
+DANTE: Kowal. You took my *retainer*.
+
+teddy: I know.
+
+He takes his hand off the man. The man finishes the swing into empty air and staggers. Dante holds up a hand. *Enough.* His other man lets go of Pop.`,
+    next: 'a3_dante'
+  },
+  a3_teddy_no: {
+    night: true,
+    enter: g => { g.flag('teddy_refused'); g.bond('teddy', { tension: 2 }); g.know('teddy_mother', ['sam']); },
+    text: `You walk past Dante, straight to Teddy.
+
+sam: Let go of it, Teddy. That\'s my father.
+
+Teddy looks at you. He doesn\'t take his hand off the cab.
+
+teddy: Listen. Listen to me. Nobody\'s getting hurt. I hold the cab, he talks, your dad agrees to something, everybody goes home. That\'s *it*, cold guy. That\'s all it is.
+
+sam: He\'s bleeding.
+
+teddy: He fell.
+
+sam: *Teddy.*
+
+teddy: My mother dies without this money, cold guy. You get to be the hero because you don\'t need anything. Go be one somewhere else.
+
+He\'s crying. His hand stays on the cab.
+
+You\'ve got seconds. You can see it in Dante\'s shoulders. He\'s decided you\'re a problem.`,
+    choices: [
+      { text: 'The two men holding Pop. Now.', tag: 'Fight',
+        check: { kind: 'pool', attr: 'body', skill: 'brawl', diff: 3, label: 'Two men, one of you', physical: true, power: true, on: { crit: 'a3_fight_win', success: 'a3_fight_win', partial: 'a3_fight_ugly', fail: 'a3_fight_lose', botch: 'a3_fight_lose' } } },
+      { text: 'Slip. Nik said last. This is last.', slip: true, tag: 'Slip',
+        fx: g => { g.flag('under95', 'slip'); if (g.S.drift >= 9) g.flag('unstick'); g.hidden('halcyon_heat', 1); }, go: 'a3_slip' }
+    ]
+  },
+
+  a3_fight_win: {
+    night: true,
+    enter: g => { g.flag('under95', 'fight'); g.injure({ id: 'split_brow7', name: 'Split eyebrow', pen: 0, heal: 2 }); },
+    text: `You don\'t stop to think. You hit the first one before he knows you\'re coming, a hook to the kidney from behind, the dirtiest punch Vinnie ever taught you, and he folds and lets go of Pop\'s arm.
+
+The second one is faster. He gets a hand on your hood and a fist into your eyebrow, and the world goes white on one side, and you feel the skin split. You get your forehead into his nose. You hear it go. He sits down on the gravel holding his face.
+
+It\'s over in nine seconds. Real fights take nine seconds.
+
+Pop is on his hands and knees on the gravel between the two men, looking up at you. Blood from your eyebrow is running into your gaiter.
+
+Teddy is still standing by the cab with his hand on the hood, staring at you. Then, slowly, deliberately, he takes it off.
+
+teddy: Job\'s off, Mr. Iannucci.`,
+    next: 'a3_dante'
+  },
+  a3_fight_ugly: {
+    night: true,
+    enter: g => { g.flag('under95', 'fight'); g.injure({ id: 'cracked_ribs7', name: 'Cracked ribs', pen: 1, heal: 2, affects: ['body', 'reflex'] }); g.injure({ id: 'split_brow7', name: 'Split eyebrow', pen: 0, heal: 2 }); },
+    text: `You take the first one from behind and he goes down. The second one gets you. A sap, leather and lead, into your ribs, and you feel them go. You get your forehead into his nose anyway. You both go down on the gravel.
+
+You get up first. Barely.
+
+The second man is getting up too. And behind him, Dante has taken his hand out of his jacket pocket, and there\'s something in it, small and black and matte, pointed at the ground. Not at you. Not yet.
+
+Then Teddy takes his hand off the cab and walks over and puts it flat on Dante\'s wrist.
+
+Dante\'s hand stops. The gun stops. Dante\'s whole arm stops, from the elbow down, a statue\'s arm on a living man. He looks at it in disbelief. Teddy pries the gun out of the frozen fingers, like taking a toy from a kid, and drops it in his own jacket pocket.
+
+teddy: Job\'s off, Mr. Iannucci.`,
+    next: 'a3_dante'
+  },
+  a3_fight_lose: {
+    night: true,
+    enter: g => { g.flag('under95', 'fight_lost'); g.injure({ id: 'cracked_ribs7', name: 'Cracked ribs', pen: 1, heal: 2, affects: ['body', 'reflex'] }); g.injure({ id: 'concussion7', name: 'Concussion', pen: 1, heal: 1, affects: ['wits'] }); },
+    text: `You go for the first one, and he\'s ready for you. He\'s been ready for you since you walked out of the dark. He hits you with a sap, leather and lead, behind the ear, and the gravel comes up and hits you in the face.
+
+You hear Pop yell. You hear your own name. *Sam!* Not *kid*. *Sam.* He knows. He saw you go down and he *knows*.
+
+You try to get up. The world tilts like a boat.
+
+Somebody steps over you. It\'s Teddy. He\'s got his hand flat on the chest of the man with the sap, and the man is *stopped*, mid-step, the sap cocked behind his ear. Teddy crouches beside you without taking his hand away.
+
+teddy: Stay down. *Stay down*, Sam.
+
+He stands up. He takes his hand off the man with the sap, who stumbles, confused.
+
+teddy: Job\'s off, Mr. Iannucci.`,
+    next: 'a3_dante'
+  },
+
+  a3_vinnie: {
+    night: true,
+    enter: g => { g.bond('vinnie', { trust: 3, affection: 2 }); g.flag('vinnie_stood'); g.flag('under95', 'vinnie'); g.know('vinnie_stood', ['sam', 'vinnie', 'dante'], 'Under I-95, Vinnie got out of Dante\'s Escalade and stood with you. In front of Dante.'); },
+    text: g => `You don\'t go to Dante. You don\'t go to Teddy. You walk to the Escalade, past everyone, and you knock on the driver\'s window with one knuckle, twice, the way you used to knock on his bedroom window when you were eleven.
+
+The window comes down.
+
+Vinnie looks at you. At the gaiter. At the cap. At your eyes.
+
+vinnie: Sally.
+
+sam: Vin. I need you.
+
+He looks past you, through the windshield, at Pop on his knees on the gravel. He looks for a long time. His hands are at ten and two on the wheel. His knuckles are white.
+
+vinnie: Yo. You know what you\'re asking me?
+
+sam: Yeah.
+
+vinnie: You know what it costs.
+
+sam: Yeah.
+
+He closes his eyes. He breathes in. He breathes out.
+
+Then he turns off the engine, and gets out of the car, and walks across the gravel under I-95 in his two-hundred-dollar Jordans and his leather jacket, and stands next to you.
+
+vinnie: Dante. That\'s Frank Kearney. That\'s my *uncle*. I grew up in his kitchen. Mrs. K fed me every Sunday of my life.
+
+DANTE: Vincenzo. Get back in the car.
+
+vinnie: No.
+
+The word sits there in the cold under the highway.
+
+vinnie: You want to talk to Frank, you talk to Frank. You don\'t put him on his *knees*. Not in front of me. I don\'t care what he owes. Not in front of me.
+
+Dante looks at Vinnie the way you\'d look at a piece of furniture that just told you no.
+
+Then he laughs. Softly.
+
+DANTE: Okay, Vincenzo. Okay. Loyalty. My grandfather loves loyalty.
+
+He nods to his men. They let go of Pop.
+
+Teddy, by the cab, looks at Vinnie, and at you, and takes his hand off the hood.
+
+teddy: Job\'s off.`,
+    next: 'a3_dante'
+  },
+
+  a3_slip: {
+    night: true,
+    text: g => `You step through.
+
+${g.f('unstick') ? 'And something goes wrong.' : 'The lot stops.'}
+
+${g.f('unstick') ? `It\'s cold, colder than it\'s ever been, January, February, the dead heart of the year, and the world stops around you the way it always does: the dust, the men, the moth, Pop\'s face.
+
+Then you try to step back out, and you can\'t.
+
+You try again. It\'s like the surface of the pool has frozen over above you, and you\'re underneath it, and you can see the light through the ice, and you can\'t get *up*.
+
+You don\'t know how long you\'re in there. There\'s no way to know. Nothing moves. You walk. You walk to Pop and you pull him out of the men\'s hands, gently, and you walk him all the way to the other side of the lot and set him down against a pillar, kneeling, still frozen, and then you try to step out again, and you can\'t.
+
+You sit down on the gravel. You wait. You get hungry. Then you get past hungry, into a place that\'s cold and clear and enormous.
+
+You walk to the river. The Delaware is stopped, a sheet of black glass with the lights of Gloucester City frozen on it. You walk back. You count the pillars under 95. Two hundred and twelve, between Snyder and Oregon. You count them again.
+
+And on the third count, you find footprints in the frost on the gravel. Your sneakers. Your stride. Walking away from the pillar to the water\'s edge, and stopping. You don\'t remember walking to the river a second time.
+
+Nonna, at her kitchen window: *In the cold, you don\'t stay long.*
+
+You can\'t come out.
+
+You put your back against a pillar and close your eyes and you think about the warmest thing you know, which is, it turns out, a girl\'s foot touching yours under a study table, and you *pull*, the way you pulled the hook back out of your cheek in Kensington, and the ice cracks.
+
+You come out on your knees, gasping, beside your father.` : `It\'s January in there. The dust hangs in the headlights. Dante\'s mouth is open on a word. The two men holding Pop have their fingers sunk in his arms.
+
+You walk over. You peel their fingers off him one by one. You get your arms under your father\'s, the way he used to get his under yours when you fell asleep in the cab as a kid, and you lift him, and you walk him all the way across the gravel to the far pillar, and you set him down against it, sitting.
+
+You stand there in the stopped cold and look at him. His lip is split. His eyes are open, looking at where the men were. He\'s fifty-two years old. He looks seventy.
+
+You step back out.`}
+
+Time comes back. The two men are holding nothing. They stumble into each other. Dante turns, looking for Pop, and finds him forty yards away against a pillar, gasping, holding his ribs, staring at the kid in the hoodie standing next to him.
+
+Your nose is pouring.
+
+Teddy, by the cab, has seen it. He\'s seen it before. He closes his eyes, and lifts his hand off the hood.
+
+teddy: Job\'s off, Mr. Iannucci.`,
+    enter: g => { if (g.S.drift >= 9 || g.hv('revenant_drift') >= 10) g.flag('unstick'); if (g.f('unstick')) { g.drift(1); g.hidden('revenant_drift', 1.5); g.injure({ id: 'hypothermia7', name: 'Slip-cold (hypothermia)', pen: 1, heal: 1, affects: ['body', 'reflex', 'wits'] }); g.know('unstick', ['sam'], 'Under I-95 you got stuck in the Slip. You couldn\'t get out. You found your own footprints in the frost at the river\'s edge and don\'t remember making them. You pulled yourself out thinking about Jules.'); } g.know('slip_rescue_pop', ['sam'], 'You Slipped and carried Pop away from Dante\'s men under I-95.'); },
+    next: 'a3_dante'
+  },
+
+  a3_dante: {
+    night: true,
+    clock: { time: '10:52 PM' },
+    enter: g => { g.flag('teddy_quit'); g.know('teddy_lost_40k', ['sam', 'teddy', 'bree', 'heck'], 'Teddy let go of Frank Kearney\'s cab under I-95 and walked away from the Iannucci job. $40,000, gone.'); if (g.f('teddy7_talk')) g.know('teddy_mother', ['sam']); g.know('dante_thanksgiving', ['sam', 'frank', 'teddy'], 'Dante Iannucci: "Forty-one thousand, by Thanksgiving. Or we have this conversation again."'); },
+    text: g => `Dante takes it all in. His men. Teddy. ${g.f('vinnie_stood') ? 'Vinnie, standing next to you. ' : ''}${g.f('under95') === 'slip' ? 'Frank Kearney, forty yards away, against a pillar, where nobody put him.' : 'Frank Kearney, on his knees on the gravel, free.'} And you, in your hood, with your face covered.
+
+He doesn\'t look angry. That\'s the thing about him. He looks *interested*.
+
+DANTE: Okay. Okay. So tonight\'s not the night.
+
+He walks over to Pop, unhurried, and crouches down in front of him, and straightens the torn collar of Pop\'s shirt with two fingers, like a son fixing his father\'s tie at a wedding.
+
+DANTE: Forty-one, Frank. Thanksgiving. That\'s very generous, and you know it is. My grandfather says Thanksgiving, because family\'s important, and he wants you to have one more with yours. Me, I\'d have said tonight.
+
+He stands. He looks at you, in your hood.
+
+DANTE: And you. I don\'t know who you are. But I know this neighborhood, and I\'m going to find out, and when I do, you and I are going to be friends. Everybody in this city ends up friends with my family, one way or the other.
+
+He walks back to the Escalade. ${g.f('vinnie_stood') ? 'He stops beside Vinnie.\n\nDANTE: You drive me home, Vincenzo. We\'ll talk on the way.\n\nVinnie looks at you. Then he gets back in the driver\'s seat, and shuts the door, and he\'s Dante\'s driver again.' : 'He gets in the back. The Escalade pulls out from under the highway, Vinnie at the wheel, eyes front.'} His men follow.
+
+${g.f('teddy_quit') || g.f('under95') ? 'Teddy stands by the cab for a second. He looks at you.\n\nteddy: I\'m going home to tell my mother. Don\'t follow me.\n\nHe walks away under the highway, toward Snyder, alone, with his bandaged hand in his pocket.' : ''}
+
+And then it\'s just you and your father, under I-95, in the dark, with his cab idling and the river going by.`,
+    next: 'a3_pop'
+  },
+
+  a3_pop: {
+    night: true,
+    text: g => `Pop gets up. Slowly. He\'s holding his ribs, and his lip is bleeding into his collar, and he walks over to you, across the gravel, one step at a time.
+
+He stops in front of you. Close. You\'re the same height now. You\'ve been the same height since you were sixteen, and he still looks bigger.
+
+He looks at you. At the hood. The cap. *His* cap, backward. At your eyes over the gaiter.
+
+frank: …Kid?
+
+${g.f('under95') === 'fight_lost' ? 'He already knows. He heard himself yell *Sam*. He watched you go down.' : 'You don\'t say anything.'}`,
+    choices: [
+      { text: 'Pull the gaiter down. Let him see your face.', tag: 'Show him',
+        fx: g => { g.flag('pop_knows'); g.know('sam_slip', ['frank']); g.know('sam_blur_pop', ['sam', 'frank'], 'Pop saw your face under I-95. He knows you\'re the Blur.'); g.bond('frank', { trust: 3, affection: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_pop_show' },
+      { text: 'Don\'t. Turn around. Get on the bike. Go.', if: g => g.f('under95') !== 'fight_lost', tag: 'Leave',
+        fx: g => { g.flag('pop_knows', 'suspects'); g.bond('frank', { tension: 1 }); }, go: 'a3_pop_leave' }
+    ]
+  },
+  a3_pop_show: {
+    night: true,
+    text: `You pull the gaiter down.
+
+He looks at your face. Your father. In the light of his own headlights, under the highway, with the river going by.
+
+He doesn\'t say anything. He doesn\'t ask. He reaches out, and puts his hand on the back of your neck, and pulls your forehead against his.
+
+frank: Okay. Okay, kid.
+
+His voice is shaking.
+
+frank: The bus. On Spring Garden. That was you.
+
+sam: Yeah.
+
+frank: Your mother\'s gonna kill both of us.
+
+You laugh. It comes out wet. He laughs too, holding his ribs, and then he\'s not laughing, and you stand there under I-95 with your foreheads together while the trucks go over.
+
+frank: I\'m sorry, kid. I had a bad few years. Your mother doesn\'t know. Nobody knows.
+
+Ma knows something. Ma\'s the one who told you he\'d gone quiet. You don\'t say it.
+
+frank: I thought I could—
+
+sam: I know, Pop.
+
+frank: I\'m gonna fix it.
+
+sam: *We\'re* gonna fix it.
+
+frank: No, kid. It\'s mine.
+
+He pulls back and looks at you. He wipes his lip with the back of his hand.
+
+frank: Don\'t tell your brother. About any of it. About *you*. You hear me? He\'s a cop, Sam. He\'d have to choose. Don\'t make him choose.
+
+He gets in his cab. He rolls down the window.
+
+frank: Get in. I\'ll drive you home. It\'s a long way on a bike.
+
+You put the bike in the trunk. You ride up Columbus Boulevard in the front seat of your father\'s cab, the way you did when you were six, and the meter isn\'t running.`,
+    next: 'a4_covering'
+  },
+  a3_pop_leave: {
+    night: true,
+    text: `You don\'t say anything. You turn around and walk to your bike and get on it.
+
+frank: *Kid.*
+
+You don\'t stop. You ride out from under the highway into the cold, up Columbus Boulevard, and you don\'t look back, because if you look back he\'ll see you, and he\'ll *know*, and you can\'t do that to him tonight, not on top of everything.
+
+Behind you, you hear his voice once more, over the noise of the traffic above:
+
+frank: Your cap\'s on backward.
+
+You ride faster.`,
+    next: 'a4_covering'
+  }
+});
+
+/* s01e07c.js */
+/* S1 · E7 · DEBT SERVICE, part 3 of 3: Act Four ("Covering"), tag ("Monday"), polls. */
+EH.scenes('s01e07', {
+
+  /* ================= ACT FOUR: COVERING ================= */
+  a4_covering: {
+    card: { kind: 'act', label: 'Act Four', title: 'Covering' },
+    night: true,
+    loc: 'CARDONE HALL · 9TH FLOOR LOUNGE',
+    clock: { day: 'Sun', date: 'Oct 18', time: '1:12 AM' },
+    enter: g => { g.flag('jules_covered'); g.know('jules_covered', ['sam', 'jules'], 'While Sam was under I-95, Rosa called Jules. Jules told her Sam had fallen asleep on the lounge couch with his calculus book on his face, and that she\'d put a blanket on him.'); },
+    text: g => `The lounge light is still on.
+
+She\'s still there. At the big table, with the index cards and the thermos and the problem sets in their grid. She\'s got her cardigan pulled around her and her feet up on the chair you were sitting in, and she\'s doing problem set nine, by herself, at one in the morning, in pencil.
+
+She looks up when you come in. She looks at you from your sneakers to your hair. ${g.hurt('split_brow7') ? 'At the split eyebrow, crusted over.' : ''}${g.hurt('cracked_ribs7') ? ' At the way you\'re holding your side.' : ''}${g.hurt('hypothermia7') ? ' At your lips, which you know are blue, because Nik screamed when he saw them in the stairwell.' : ''}${!g.hurt('split_brow7') && !g.hurt('cracked_ribs7') && !g.hurt('hypothermia7') ? 'You\'re fine. Not a scratch. You watch her notice that, and not know what to make of it.' : ''}
+
+She doesn\'t ask if you\'re okay.
+
+jules: Your mother called me.
+
+sam: …What?
+
+jules: At 10:40. She got my number from your sister, who got it from me, at dinner, because I gave her my number and told her she could text me about Main Line horse culture, which she has, eleven times.
+
+She puts the pencil down.
+
+jules: Your mother said she\'d called you four times and you didn\'t answer. She said she had a *feeling*. She said, *Is he with you, sweetheart?*
+
+sam: What\'d you say?
+
+jules: I said yes.
+
+She says it simply. Like it\'s a calculus answer.
+
+jules: I said you were right here. I said you\'d fallen asleep on the lounge couch with your calculus book on your face, and that you were snoring, and that I\'d put a blanket on you. She asked me to take a picture. I told her I didn\'t want to wake you with the flash.
+
+She looks at you.
+
+jules: She said *thank you, Jules. You\'re a good girl. Make sure he eats.*
+
+You stand there in the lounge doorway.
+
+jules: I\'ve never lied to a mother before. Other people\'s mothers. I lie to mine all the time. But I\'ve never lied to someone else\'s mother while she was *worried*.
+
+She picks the pencil back up. She doesn\'t write anything.
+
+jules: It was very easy. I didn\'t like how easy it was.${g.f('bail') === 'lie' ? '\n\njules: She didn\'t mention your grandmother being sick. So I didn\'t either.' : ''}`,
+    choices: [
+      { text: '"Thank you." Sit down across from her. "I owe you."', tag: 'Thank her',
+        fx: g => { g.flag('cover7', 'thanks'); g.bond('jules', { affection: 1 }); }, go: 'a4_owe' },
+      { text: '"Why did you do that?"', tag: 'Why',
+        fx: g => { g.flag('cover7', 'why'); }, go: 'a4_why' }
+    ]
+  },
+  a4_owe: {
+    night: true,
+    text: g => `sam: Thank you. I owe you.
+
+You sit down across from her, in your chair, the one her feet were on. She moved them at some point. You didn\'t see her do it.
+
+jules: You already owe me a favor.
+
+sam: Then I owe you two.
+
+jules: You can\'t owe two favors. That isn\'t how favors work.
+
+sam: How do favors work?
+
+jules: You owe one. And you live in fear of it. That\'s the whole point.
+
+${g.knows('owe_jules_favor') ? 'She doesn\'t smile, but something at the corner of her mouth goes off duty for a second.' : ''}
+
+She slides an index card across the table to you, face down.
+
+jules: ${g.f('bail') === 'text' ? 'You said you\'d tell me. The nine things.' : 'You never answered me.'}`,
+    next: 'a4_nine'
+  },
+  a4_why: {
+    night: true,
+    text: g => `sam: Why did you do that?
+
+She looks at you like you\'ve asked her why the sky is up.
+
+jules: Because she was scared. And because you\'d gone somewhere, and I didn\'t know where, and I didn\'t know if you were coming back, and if you didn\'t come back, I wasn\'t going to be the person who\'d told her.
+
+She stops. She hears herself.
+
+jules: And because I wanted to. That\'s the honest answer. I wanted to be on your side of something, just once, and not just watching it.
+
+She looks down at her problem set.
+
+jules: That\'s not a good reason. I\'m aware.
+
+sam: It\'s the best reason anyone\'s ever had for anything.
+
+jules: You\'re very tired.
+
+sam: I\'m very tired.
+
+She slides an index card across the table to you, face down.
+
+jules: ${g.f('bail') === 'text' ? 'You said you\'d tell me. The nine things.' : 'You never answered me.'}`,
+    next: 'a4_nine'
+  },
+
+  a4_nine: {
+    night: true,
+    text: g => `You turn the card over. It\'s blank.
+
+jules: Write it down. If you can\'t say it.
+
+${g.f('bail') === 'text' ? 'You promised her. You promised her all nine.' : 'You never promised her anything. She\'s asking anyway.'}
+
+You pick up her pencil. It\'s warm from her hand.
+
+You think about the nine things you typed and deleted two weeks ago, between 12:58 and 1:09. ${g.f('typed') === 'hope' ? '*i hope it is*, three times, and three times backward.' : ''}
+
+You think about what she meant. You still don\'t know what she meant. *What if it was me.* What if it was her who what?
+
+${g.f('unstick') ? 'You think about what you saw out there at the edge of the stopped river. ' : ''}You think about Dante\'s interested face. You think about the people who know about you, and how many of them were on their knees on the gravel tonight.`,
+    choices: [
+      { text: 'Write: *I hope it is.* Slide it back.', tag: 'I hope it is',
+        fx: g => { g.flag('nine', 'hope'); g.bond('jules', { affection: 2, trust: 1 }); g.know('i_hope_it_is', ['sam', 'jules'], 'At 1:30 a.m. in the lounge, you wrote on an index card for Jules: "I hope it is." In answer to "What if it was me."'); }, go: 'a4_nine_hope' },
+      { text: 'Write: *What did you mean?* Slide it back.', tag: 'Ask',
+        fx: g => { g.flag('nine', 'ask'); g.bond('jules', { trust: 1 }); }, go: 'a4_nine_ask' },
+      { text: 'Write nothing. Turn the card over and do problem nine with her, in pencil, until it\'s light out.', tag: 'Problem nine',
+        fx: g => { g.flag('nine', 'nine'); g.grade('calc', 3); g.bond('jules', { affection: 1 }); }, go: 'a4_nine_nine' }
+    ]
+  },
+  a4_nine_hope: {
+    night: true,
+    text: `You write it. Four words, in pencil, on an index card at 1:30 in the morning in the ninth-floor lounge.
+
+*I hope it is.*
+
+You slide it back across the table.
+
+She reads it. She doesn\'t ask what it means. She knows exactly what it\'s answering. She knows you don\'t know what her question meant either. You answered it anyway.
+
+She puts the card in her cardigan pocket. The one over her heart. She doesn\'t say anything.
+
+Then she reaches across the table and takes the pencil out of your hand, and her fingers are cold, and she holds onto your hand for one second longer than it takes to get a pencil.
+
+jules: Problem nine. You\'re going to fail it on Monday if you don\'t.
+
+sam: Pemberton.
+
+jules: Problem nine, Sam.
+
+You do problem nine. Her foot finds yours under the table, and stays.`,
+    next: 'tag_monday'
+  },
+  a4_nine_ask: {
+    night: true,
+    text: `You write it. *What did you mean?*
+
+You slide it back.
+
+She reads it. She looks at it for a long time. Then she turns it over and writes on the back, and slides it back to you.
+
+*I don\'t know yet.*
+
+And under that, smaller:
+
+*When I know, you\'ll be the first.*
+
+You look at her. She\'s looking at the problem set, very hard.
+
+jules: That\'s not an answer. I know. It\'s the only one I\'ve got.
+
+sam: It\'s a good answer.
+
+jules: It\'s a terrible answer. Problem nine.
+
+You do problem nine. Around three, she falls asleep sitting up with her cheek on her fist, and you take the blanket off the back of the couch, the one she told your mother she\'d put on you, and you put it on her.`,
+    next: 'tag_monday'
+  },
+  a4_nine_nine: {
+    night: true,
+    text: `You don\'t write anything. You turn the card back over, blank side down, and pull problem set nine toward you, and pick up her pencil.
+
+sam: Number one.
+
+She looks at you. For a second you think she\'s going to say something. Then she pulls her chair around the table so she\'s next to you, shoulder to shoulder, looking at the same page.
+
+jules: You\'re doing it wrong already.
+
+sam: I haven\'t *started*.
+
+jules: You\'re holding the pencil wrong.
+
+You do problem set nine together, all fourteen problems, in pencil, until the window over the lounge couch goes gray. Nobody mentions the text. Her shoulder is against yours the whole time.
+
+It isn\'t an answer. It\'s problem nine.`,
+    next: 'tag_monday'
+  },
+
+  /* ================= TAG ================= */
+  tag_monday: {
+    card: { kind: 'tag' },
+    loc: 'WACHMAN HALL · ROOM 413',
+    clock: { day: 'Mon', date: 'Oct 19', time: '9:00 AM' },
+    enter: g => { g.sleep(5); g.sleep(5); },
+    text: g => `The Calc midterm is ten problems in ninety minutes, and Jules sits two rows ahead of you, and doesn\'t look back once, and you can feel her not looking back the whole time.`,
+    choices: [
+      { text: 'Take the test. Problem one. You know this.', tag: 'Midterm', if: g => g.f('pre_study') || g.f('nine') === 'nine',
+        check: { kind: 'd20', attr: 'wits', skill: 'study', dc: 13, bonus: 2, bonusLabel: 'You did the work', label: 'Calc midterm', on: { crit: 'tag_mid_good', success: 'tag_mid_good', fail: 'tag_mid_bad', fumble: 'tag_mid_bad' } } },
+      { text: 'Take the test. Problem one. You know this.', tag: 'Midterm', if: g => !g.f('pre_study') && g.f('nine') !== 'nine',
+        check: { kind: 'd20', attr: 'wits', skill: 'study', dc: 13, bonus: 0, label: 'Calc midterm', on: { crit: 'tag_mid_good', success: 'tag_mid_good', fail: 'tag_mid_bad', fumble: 'tag_mid_bad' } } }
+    ]
+  },
+  tag_mid_good: {
+    enter: g => { g.grade('calc', 8); g.flag('midterm', 'pass'); },
+    text: g => `You know it. You actually know it. Problem seven is the chain rule wearing a hat, and you see through the hat.
+
+When you hand it in, the TA looks at your paper and then at you, surprised, like a guy whose dog just did his taxes.
+
+On your way out, Jules is waiting by the stairwell. She doesn\'t say *how\'d it go*. She just looks at your face, and reads it, and nods once.
+
+jules: Told you.
+
+${g.f('nine') === 'hope' ? 'Her hand goes to her cardigan pocket. The one over her heart. You don\'t think she knows she\'s doing it.' : ''}
+
+At 2:10, your phone rings. **MIKEY.**`,
+    next: 'tag_cab'
+  },
+  tag_mid_bad: {
+    enter: g => { g.grade('calc', -4); g.flag('midterm', 'shaky'); },
+    text: g => `You know some of it. You know more than you would have two weeks ago. But you slept five hours, ${g.hurt('cracked_ribs7') ? 'and your ribs hurt, ' : ''}and problem seven is the chain rule in a disguise you don\'t see through until there are four minutes left.
+
+When you hand it in, you\'re not sure. You\'re not sure of anything.
+
+Jules is waiting by the stairwell. She reads your face.
+
+jules: It\'s one test.
+
+sam: I know.
+
+jules: You\'ll be fine. You\'re going to study for the final with me every night for a week.
+
+sam: Is that a threat?
+
+jules: It\'s a *plan*.
+
+At 2:10, your phone rings. **MIKEY.**`,
+    next: 'tag_cab'
+  },
+  tag_cab: {
+    night: false,
+    loc: 'LIACOURAS WALK',
+    clock: { time: '2:10 PM' },
+    enter: g => { g.know('cab_smashed', ['sam', 'mikey', 'frank', 'rosa'], 'Monday morning, Pop\'s cab, Liberty #2207, was found under I-95 at Columbus Blvd & Snyder with every window smashed. Pop says it was kids.'); },
+    text: g => `mikey: Sammy. Hey. You sitting down?
+
+sam: I\'m on Liacouras Walk.
+
+mikey: Sit down on Liacouras Walk.
+
+You don\'t sit down.
+
+mikey: Pop\'s okay. I want to say that first. Pop\'s okay. He\'s at home. Ma\'s with him. He\'s okay.
+
+sam: Mikey.
+
+mikey: His cab got hit. He went back out last night, Sunday, told Ma he had an airport fare. Came home at four in the morning in somebody else\'s cab. They found it at six a.m. under 95, at Delaware and Snyder, in that truck lot. Every window. *Every* window, Sammy. The windshield, the back, the sides. They didn\'t take anything. They didn\'t touch the radio, they didn\'t take the cash box. They just broke every piece of glass on it. And Sammy, somebody swept it up. Into a pile. On the driver\'s seat.
+
+He breathes.
+
+mikey: Pop says it was kids. Pop says he parked it there to take a leak and some kids from the projects must\'ve done it.
+
+A long silence.
+
+mikey: Pop doesn\'t park in truck lots under 95 to take a leak, Sammy. Pop drives eleven blocks home to take a leak. Pop\'s been driving a cab for twenty-six years and he\'s never been anywhere near Delaware and Snyder at night.
+
+You look at the trees on Liacouras Walk. They\'ve gone completely gold this week. People are walking under them in sweaters, laughing, carrying coffee.
+
+${g.f('pop_knows') === true ? 'Pop knows about you now. Pop knows you were under 95. And he didn\'t tell Mikey that you were there. He told Mikey it was kids. *Don\'t make him choose.*' : 'Pop doesn\'t know you were there. Or he does, and he isn\'t saying.'}
+
+mikey: He\'s lying to me. My own father\'s sitting in his kitchen with a cut lip, lying to my face, and I\'m a cop, and I can\'t do anything.
+
+His voice changes. It goes low and careful, the way it goes when he\'s talking to somebody in the back of his patrol car.
+
+mikey: Sammy. Do you know something?`,
+    choices: [
+      { text: '"No, Mike. I don\'t know anything." Lie to your brother.', tag: 'Lie',
+        check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['mikey'], label: 'Lie to Mikey', on: { strong: 'tag_end_lie', weak: 'tag_end_lie', miss: 'tag_end_lie_bad' } } },
+      { text: '"Ask Pop about Dante Iannucci." Give him that much.', tag: 'Dante',
+        fx: g => { g.flag('mikey7', 'dante'); g.know('dante', ['mikey']); g.bond('mikey', { trust: 2 }); g.bond('frank', { tension: 2 }); }, go: 'tag_end_dante' }
+    ]
+  },
+  tag_end_lie: {
+    enter: g => { g.flag('mikey7', 'lied'); },
+    text: `sam: No, Mike. I don\'t know anything.
+
+A long silence on the line.
+
+mikey: Okay.
+
+*Okay.* He says it like everybody says it to you now.
+
+mikey: Come home Sunday. Ma wants everybody home Sunday. She lit a candle the size of a fire hydrant. Nonna\'s lit three.
+
+He hangs up.
+
+You stand on Liacouras Walk under the gold trees with the phone in your hand, and you think about forty-one thousand dollars, and Thanksgiving, and a man in a beautiful jacket straightening your father\'s collar.
+
+You think about every window in a yellow-and-green cab, broken, one at a time, carefully, so there\'d be nothing left.
+
+`,
+    end: true
+  },
+  tag_end_lie_bad: {
+    enter: g => { g.flag('mikey7', 'caught'); g.bond('mikey', { tension: 2 }); },
+    text: `sam: No, Mike. I don\'t—
+
+Your hand is on your ear. He can\'t see it. He doesn\'t need to.
+
+mikey: Sammy. You\'re doing the thing. I can *hear* you doing the thing.
+
+You don\'t say anything.
+
+mikey: Okay. Okay. So my father\'s lying to me, and my brother\'s lying to me, and my mother\'s lighting candles, and I\'m a cop on a task group with a guy in a polo shirt who asked for me by name.
+
+His voice is very quiet.
+
+mikey: Come home Sunday, Sammy. Everybody\'s coming home Sunday. And when you come home, you\'re gonna look at me.
+
+He hangs up.
+
+You stand on Liacouras Walk under the gold trees, and you think about every window in a yellow-and-green cab, broken one at a time, so there\'d be nothing left.`,
+    end: true
+  },
+  tag_end_dante: {
+    text: g => `sam: Ask Pop about Dante Iannucci.
+
+The silence on the line is so long you check to see if the call dropped.
+
+mikey: …Iannucci.
+
+sam: Yeah.
+
+mikey: *Bruno* Iannucci?
+
+sam: His grandson.
+
+mikey: How do *you* know that name, Sammy?
+
+sam: Ask Pop. Not me. Pop.
+
+You hear him breathe in and out, slowly, the way he taught you to breathe when you were eight and couldn\'t stop crying after a nightmare.
+
+mikey: Okay. Okay. I\'m gonna ask him. Tonight.
+
+A pause.
+
+mikey: And then I\'m gonna ask *you*. Sunday. Everybody\'s coming home Sunday.
+
+He hangs up.
+
+You stand on Liacouras Walk under the gold trees, and ${g.f('pop_knows') === true ? 'you think about Pop saying *don\'t make him choose*. You think you just made him choose.' : 'you think you just made your brother choose.'}`,
+    end: true
+  }
+});
+
+Object.assign(EH.episodes.s01e07, {
+  polls: [
+    { q: 'Under 95', opts: [
+      { label: 'Talked Teddy down', pct: 41, if: g => g.f('under95') === 'teddy' },
+      { label: 'Fought Dante\'s men', pct: 22, if: g => g.f('under95') === 'fight' || g.f('under95') === 'fight_lost' },
+      { label: 'Asked Vinnie to get out of the car', pct: 19, if: g => g.f('vinnie_stood') },
+      { label: 'Slipped', pct: 18, if: g => g.f('under95') === 'slip' }
+    ] },
+    { q: 'Pop, under the highway', opts: [
+      { label: 'Showed him your face', pct: 58, if: g => g.f('pop_knows') === true },
+      { label: 'Rode away', pct: 42, if: g => g.f('pop_knows') !== true }
+    ] },
+    { q: 'The index card', opts: [
+      { label: '"I hope it is."', pct: 47, if: g => g.f('nine') === 'hope' },
+      { label: '"What did you mean?"', pct: 21, if: g => g.f('nine') === 'ask' },
+      { label: 'Problem nine', pct: 32, if: g => g.f('nine') === 'nine' }
+    ] }
+  ],
+  onEnd: g => {
+    g.recap('Pop owes the Iannucci family $41,000. Dante says: by Thanksgiving.');
+    g.recap(g.knows('teddy_mother') && !g.f('teddy_refused') ? 'Teddy walked away from the job, and his mother\'s forty thousand dollars, for you.' : 'Under I-95, you got your father away from Dante\'s men.');
+    g.recap('Jules lied to your mother for you.');
+    g.recap('Monday morning, Pop\'s cab was found with every window broken.');
+  }
+});
+
 </script>
 <script>
 /* THE EVENT HORIZON: browser engine (UI, sound, saves). Depends on core.js and the episode files. */
@@ -13074,9 +14629,9 @@ Object.assign(EH.episodes.s01e06, {
     const firstEp = !S.done.length && !S.ep;
     S.ep = id; S.season = ep.season; S.scene = ep.start; S.epLog = []; S.epRolls = []; S.hubs = {}; S.hub = null; S.marked = {}; delete S.pending;
     delete S.flags._failxp;
+    if (S.pov && !ep.pov) EH.povExit(S);
     if (!firstEp) S.injuries = S.injuries.map(i => Object.assign({}, i, { heal: (i.heal || 1) - 1 })).filter(i => i.heal > 0);
     S.pools.nerve = EH.maxPool(S, 'nerve') - (S.sleepDebt >= 6 ? 1 : 0);
-    if (S.pov && !ep.pov) EH.povExit(S);
     EH.povEnter(S, ep);
     const snap = EH.clone(S); delete snap.epStart; S.epStart = snap;
     TRAIL = [];

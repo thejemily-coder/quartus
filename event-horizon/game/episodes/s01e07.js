@@ -12,7 +12,7 @@ EH.episode({
       night: true,
       loc: 'CARDONE HALL · ROOM 9-14',
       clock: { day: 'Sun', date: 'Oct 4', time: '1:09 AM' },
-      text: `Your phone buzzes on the windowsill at 12:58 in the morning. You\'re in the bathroom down the hall. You don\'t see it until 1:09.
+      text: `Your phone buzzes on the windowsill at 12:58 in the morning, and you\'re awake, because you\'re always awake now.
 
 You think it\'s going to be Bree. Bree texts at one in the morning. Bree texts *u up wawa* and then a forty-second voice memo of a car alarm in the key of B-flat.
 
@@ -22,7 +22,7 @@ It isn\'t Bree.
 
 You saved her as PEMBERTON the first week, in all caps, out of spite. You\'ve thought about changing it about four hundred times. You never have. You don\'t know what you\'d change it to.
 
-You open it.
+You don\'t open it. You read it off the lock screen, in the little gray box, so it won\'t say *Read* on her end.
 
 TXT jules: What if it was me.
 
@@ -36,9 +36,9 @@ You read it again. And again. You sit up in bed in the dark. Across the room, Ni
 
 *What if it was me* what? What if it was her who… what? What if it was her, *instead*? What if it was her, *too*? What if it was her on the stoop, saying it to *you*?
 
-You think about a window coming down on a girl, and every piece of glass missing her. You think about a pool ball stopping a quarter inch from a pocket. You don\'t know why you think about those things. You put them away.
+You think about a window coming down on a girl, and every piece of glass missing her. You think about her running the pool table without missing once. You don\'t know why you think about those things. You put them away.
 
-You start typing.`,
+You hold the notification down. The reply box comes up right there on the lock screen. You start typing.`,
       choices: [
         { text: 'Type: *what do you mean*', tag: 'Ask',
           fx: g => g.flag('typed', 'mean'), go: 'cold_delete' },
@@ -56,13 +56,15 @@ You start typing.`,
 
 It sits there in the box, not sent, the cursor blinking after it.
 
-You look at it. You think about her, ten miles away in a stone house in a dress, looking at a little *Read* under her message, waiting.
+You look at it. You think about her, ten miles away in a stone house in a dress, looking at *Delivered* under her message, and your three dots, waiting.
 
 You think about everything you\'d have to say after this, if you sent it. Every next message. Every question she\'d ask, and every one you\'d have to lie about, or not lie about. You think about Brannigan\'s kind voice. *We\'re the only ones who\'ll know what to do.* You think about Mikey at the table, *his arms are cooked*. 
 
 You delete it. Letter by letter. Backward.
 
 ${g.f('typed') === 'hope' ? 'You type it again. You delete it again. You type it a third time, and you hold your thumb over the arrow for so long the screen dims.\n\nYou delete it.' : 'You start a second one. You delete that too. Then a third. By the end you\'ve typed nine and sent none.'}
+
+At 1:09 you open the thread, just to see her words whole. You know what that does on her end. You do it anyway, and you don\'t type anything else.
 
 You put the phone face down on the windowsill. It\'s warm from your hand.
 
@@ -259,7 +261,7 @@ femi: I\'m going, Sam. Twenty-five hundred dollars. And for three days, somebody
     a1_femi_told: {
       text: `You tell him.
 
-You do it quietly, in a library carrel, while people walk past him like he\'s furniture and past you like you\'re furniture\'s friend. The Hitch. The cold. The bus. Heck in McPherson Square. The truck with the steel bed. Brannigan\'s voice.
+You do it quietly, in a library carrel, while people walk past him like he\'s furniture and past you like you\'re furniture\'s friend. The Hitch. The cold. The bus. Heck in McPherson Square. Marisol. Brannigan\'s voice.
 
 Femi doesn\'t interrupt once. When you\'re done, he looks at you the way nobody ever looks at him.
 

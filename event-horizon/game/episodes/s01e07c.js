@@ -7,7 +7,7 @@ EH.scenes('s01e07', {
     night: true,
     loc: 'CARDONE HALL · 9TH FLOOR LOUNGE',
     clock: { day: 'Sun', date: 'Oct 18', time: '1:12 AM' },
-    enter: g => { g.flag('jules_covered'); g.know('jules_covered', ['sam', 'jules', 'rosa'], 'While Sam was under I-95, Rosa called Jules. Jules told her Sam had fallen asleep on the lounge couch with his calculus book on his face, and that she\'d put a blanket on him.'); },
+    enter: g => { g.flag('jules_covered'); g.know('jules_covered', ['sam', 'jules'], 'While Sam was under I-95, Rosa called Jules. Jules told her Sam had fallen asleep on the lounge couch with his calculus book on his face, and that she\'d put a blanket on him.'); },
     text: g => `The lounge light is still on.
 
 She\'s still there. At the big table, with the index cards and the thermos and the problem sets in their grid. She\'s got her cardigan pulled around her and her feet up on the chair you were sitting in, and she\'s doing problem set nine, by herself, at one in the morning, in pencil.
@@ -113,7 +113,7 @@ ${g.f('bail') === 'text' ? 'You promised her. You promised her all nine.' : 'You
 
 You pick up her pencil. It\'s warm from her hand.
 
-You think about the nine things you typed and deleted two weeks ago, between 1:09 and the window going gray. ${g.f('typed') === 'hope' ? '*i hope it is*, three times, and three times backward.' : ''}
+You think about the nine things you typed and deleted two weeks ago, between 12:58 and 1:09. ${g.f('typed') === 'hope' ? '*i hope it is*, three times, and three times backward.' : ''}
 
 You think about what she meant. You still don\'t know what she meant. *What if it was me.* What if it was her who what?
 
@@ -249,7 +249,7 @@ At 2:10, your phone rings. **MIKEY.**`,
     night: false,
     loc: 'LIACOURAS WALK',
     clock: { time: '2:10 PM' },
-    enter: g => { g.know('cab_smashed', ['sam', 'mikey', 'frank', 'rosa'], 'Monday morning, Pop\'s cab, Liberty 418, was found under I-95 at Delaware Ave with every window smashed. Pop says it was kids.'); },
+    enter: g => { g.know('cab_smashed', ['sam', 'mikey', 'frank', 'rosa'], 'Monday morning, Pop\'s cab, Liberty #2207, was found under I-95 at Columbus Blvd & Snyder with every window smashed. Pop says it was kids.'); },
     text: g => `mikey: Sammy. Hey. You sitting down?
 
 sam: I\'m on Liacouras Walk.
@@ -285,7 +285,7 @@ mikey: Sammy. Do you know something?`,
       { text: '"No, Mike. I don\'t know anything." Lie to your brother.', tag: 'Lie',
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['mikey'], label: 'Lie to Mikey', on: { strong: 'tag_end_lie', weak: 'tag_end_lie', miss: 'tag_end_lie_bad' } } },
       { text: '"Ask Pop about Dante Iannucci." Give him that much.', tag: 'Dante',
-        fx: g => { g.flag('mikey7', 'dante'); g.know('dante', ['mikey']); g.know('pop_owes', ['mikey']); g.bond('mikey', { trust: 2 }); g.bond('frank', { tension: 2 }); }, go: 'tag_end_dante' }
+        fx: g => { g.flag('mikey7', 'dante'); g.know('dante', ['mikey']); g.bond('mikey', { trust: 2 }); g.bond('frank', { tension: 2 }); }, go: 'tag_end_dante' }
     ]
   },
   tag_end_lie: {
@@ -331,7 +331,7 @@ You stand on Liacouras Walk under the gold trees, and you think about every wind
     end: true
   },
   tag_end_dante: {
-    text: `sam: Ask Pop about Dante Iannucci.
+    text: g => `sam: Ask Pop about Dante Iannucci.
 
 The silence on the line is so long you check to see if the call dropped.
 
@@ -357,7 +357,7 @@ mikey: And then I\'m gonna ask *you*. Sunday. Everybody\'s coming home Sunday.
 
 He hangs up.
 
-You stand on Liacouras Walk under the gold trees, and you think about Pop saying *don\'t make him choose*. You think you just made him choose.`,
+You stand on Liacouras Walk under the gold trees, and ${g.f('pop_knows') === true ? 'you think about Pop saying *don\'t make him choose*. You think you just made him choose.' : 'you think you just made your brother choose.'}`,
     end: true
   }
 });
@@ -382,7 +382,7 @@ Object.assign(EH.episodes.s01e07, {
   ],
   onEnd: g => {
     g.recap('Pop owes the Iannucci family $41,000. Dante says: by Thanksgiving.');
-    g.recap(g.f('teddy_quit') && !g.f('teddy_refused') ? 'Teddy walked away from the job, and his mother\'s forty thousand dollars, for you.' : 'Under I-95, you got your father away from Dante\'s men.');
+    g.recap(g.knows('teddy_mother') && !g.f('teddy_refused') ? 'Teddy walked away from the job, and his mother\'s forty thousand dollars, for you.' : 'Under I-95, you got your father away from Dante\'s men.');
     g.recap('Jules lied to your mother for you.');
     g.recap('Monday morning, Pop\'s cab was found with every window broken.');
   }

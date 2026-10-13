@@ -70,3 +70,15 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
   - The 12:58 text to Sam: none, "how's the arm," or "What if it was me."
   - The chapel's TENEO window, then "It's started, then."
   - Jules saw two Sams (Drift 9).
+- **E7 "Debt Service"** deviations:
+  - The cold open mirrors E6: Sam reads the text at 1:09 and types nine replies, sending none.
+  - Teddy's crew takes the Iannucci job, which is to hold Pop's cab (Liberty #2207) under I-95 at Columbus & Snyder.
+  - Bree tips Sam off.
+  - Teddy walks away from the job, so the $40K for his mother is lost.
+  - Vinnie may get out of the Escalade.
+  - **Frank may learn Sam is the Blur** if Sam shows his face. This deviates from the bible, where Rosa is the first in the family to find out; it was the player's choice.
+  - Jules covers for Sam with Rosa ("asleep on the couch, I put a blanket on him").
+  - The index card: "I hope it is" / "What did you mean?" / problem nine.
+  - Dante's deadline is $41K by Thanksgiving, which feeds E10.
+  - The cab is found with every window broken and the glass swept onto the driver's seat.
+  - Unstick fires if Sam Slips while revenant_drift ≥ 10: his own footprints in the frost.
