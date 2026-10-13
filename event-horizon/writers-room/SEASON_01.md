@@ -95,3 +95,24 @@ Freshman fall at Temple, 10 episodes, from move-in (Thu Aug 20) to winter break.
   - Mikey's heat goes up +1 after Brannigan named Sam. Mikey asked, "How does a Halcyon man know your *name*?"
   - On the kiss path Jules promised to end it with Callum.
 - Deferred: the HUD clock runs backward from the cold open (Sat 9:02 PM) to Act One (2:30 PM); acceptable for a flash-forward. DST ends mid-Act Four; unused.
+
+### E9 "Things That Don't Add Up": production notes
+- Written for this playthrough's E8 save (kiss path, Femi found at the door, rage). Shape:
+  - **Cold open (camera):** Jules ends it with Callum at Boathouse Row; die = six. Femi's phone in an **ES-31 · PERSONAL EFFECTS** bag gets a call from his mother.
+  - **Act One "All Souls":** Pop drives Sam home in #2207 (glass still in the seat tracks); tell / not today / lie. Pastina. Mikey on the stoop: the ME signed "adverse reaction" at 9 AM and Homicide closed it by noon. Brannigan asked Mikey about Sam's nosebleeds and cold, and asked for the ninth-floor resident list. Nonna, All Souls' Mass: two candles. **Nonna saw the Revenant crying under the streetlight at 3 AM** ("I know whose face he has").
+  - **Act Two "Midterms":**
+    - Nik withdrew his Rutgers transfer (the bible's S1 secret, resolved).
+    - Jules on Monday night: stay / not yet / kiss. The stay and kiss paths reveal she sleeps with the light on (`jules_light`); no sex, by her choice ("I want you in the room").
+    - Vigil on Election Day. Femi's sister **Tolu Ojo** (nurse at Jefferson, apartment in Southwest; their mother is in Lagos, which resolves the E2/E7 conflict). Halcyon offered Tolu $250K plus an NDA. She gives Sam the green notebook "NOTES FOR SAM K."
+    - Sam texts Femi's phone; it reads "Read 11:14," then dots, then nothing.
+    - Wednesday hub: study / Weisz ("I marked him present… Be careful who you let measure you") / Vinnie (Building 7 has a seventh floor that's on no drawing; Vinnie saw Sam's cap under 95; Dante is asking about fast kids) / Grace / Ciro / nap.
+    - PSY midterm (question 31: the bystander effect).
+  - **Act Three "Ghost Light":** Simone's list, with exactly one chance: tell / show (Slip, which Unsticks; the Revenant appears in row M: "Get out before it closes") / lie. Simone's heat is maxed and she knows on every path. "I have two lists… not mine to tell… I'm going to give her hers."
+  - **Act Four "The Last Job":** the Kowals' house in Port Richmond with Halina's home dialysis cycler. Sam tells the crew that Marisol is alive in Room 714. Teddy: one more job (Nov 26), then Marisol, together. The fridge map shows the 6abc parade route (d20). Bree: "a lot of people, standing still."
+  - **Tag:** the index card has a third line in Sam's own hand: "Don't trust the lucky one." A frost handprint inside the window, missing the ring finger. The light under 9-11.
+- **E10 handoff:**
+  - Flags: `crew_marisol` (the crew will hit Building 7 *after* the job), `teddy9` (wavering / firm / angry / map / nomap / marisol), `teddy_parade` (whether Sam knows the target), `pop9`, `mikey9`, `tolu9`, `simone9`, `jules9`, `nik9`, `unstick9`.
+  - Teddy's "find me forty grand by the 26th" mirrors Pop's $41K by Thanksgiving.
+  - Brannigan holds the ninth-floor resident list (Jules is ES-44 on nine).
+  - Simone holds Sam's secret and is circling Jules's.
+  - Halcyon has Femi's phone and Sam's texts to it.
