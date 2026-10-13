@@ -62,8 +62,6 @@ She doesn't wait for you to react. She just puts the needle in.`,
 
 The footsteps stop outside the bathroom door.
 
-The door starts to open.
-
 > TWO DAYS EARLIER.`,
       next: 'titles'
     },
@@ -75,9 +73,9 @@ The door starts to open.
       card: { kind: 'act', label: 'Act One', title: 'Normal' },
       loc: 'CARDONE HALL · ROOM 9-14',
       clock: { day: 'Thu', date: 'Sep 10', time: '7:50 AM' },
-      text: g => `It's been five days since the roof.
+      text: g => `It's been four days since the roof.
 
-Here is what has happened in five days. The heat broke on Tuesday like a fever, all at once, with a thunderstorm that flooded the Broad Street Line at Cecil B. Moore and turned the steps of the Bell Tower into a waterfall. It's sixty-eight degrees this morning. People are wearing *sweaters*, out of pure relief. Nik wore a scarf to Psych and got made fun of and didn't care.
+Here is what has happened in four days. The heat broke on Tuesday like a fever, all at once, with a thunderstorm that flooded the Broad Street Line at Cecil B. Moore and turned the steps of the Bell Tower into a waterfall. It's sixty-eight degrees this morning. People are wearing *sweaters*, out of pure relief. Nik wore a scarf to Psych and got made fun of and didn't care.
 
 Callum came back on Wednesday with two more iced coffees and took Jules to dinner at a place in Rittenhouse with no sign on the door. She came back at eleven and her lamp stayed on until two. You know because your door faces her door. You know because you were awake.
 
@@ -114,7 +112,7 @@ simone: So. What happened on that roof?`,
       choices: [
         { text: '"We talked. All night. That\'s it. That\'s all."', tag: 'Half true',
           check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['simone'], label: 'Keep the roof private', on: { strong: 'a1_sim_lie_strong', weak: 'a1_sim_lie_weak', miss: 'a1_sim_lie_miss' } } },
-        { text: '"I leaned in. She said, *not like this.*" Tell her the truth. Somebody should know.', tag: 'The truth',
+        { text: '"I leaned in. She said, *not like this.*" Tell her the truth. Somebody should know.', if: g => g.f('roof_end') === 'lean', tag: 'The truth',
           fx: g => { g.flag('simone_roof', 'truth'); g.bond('simone', { trust: 2, affection: 1 }); g.know('almost_kiss', ['simone']); }, go: 'a1_sim_truth' },
         { text: '"Simone. I love you. I\'m not doing this before coffee."', tag: 'Dodge',
           check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', label: 'Get out alive', on: { strong: 'a1_sim_dodge', weak: 'a1_sim_dodge', miss: 'a1_sim_dodge_miss' } } }
@@ -251,7 +249,7 @@ ${g.f('roof_end') === 'lean' ? 'You know what she means. *Not like this.* Not wh
         { text: 'Write back: *Define normal.* Then draw a little squeeze theorem with two hearts squeezing a sad face.', tag: 'Banter',
           check: { kind: 'move', move: 'Sweet-Talk', attr: 'charm', skill: 'banter', near: ['jules'], label: 'Make her break', on: { strong: 'a1_calc_banter_strong', weak: 'a1_calc_banter_weak', miss: 'a1_calc_banter_miss' } } },
         { text: 'Write back: *I\'d do it again.*', tag: 'The truth',
-          fx: g => { g.flag('normal', 'again'); g.bond('jules', { affection: 1, tension: 1 }); }, go: 'a1_calc_again' }
+          fx: g => { g.flag('normal', 'again'); g.bond('jules', { affection: 1, trust: 1 }); }, go: 'a1_calc_again' }
       ]
     },
     a1_calc_okay: {
@@ -278,7 +276,7 @@ And then, smaller:
 
 *Shut up. Do number seven.*
 
-You do number seven. You've never done a calc problem so happily in your life.`,
+You do number seven. You do it grinning like an idiot.`,
       next: 'a1_femi'
     },
     a1_calc_banter_weak: {
@@ -293,7 +291,7 @@ It's funny. It's also not a joke. You can't tell which part she wants you to see
       next: 'a1_femi'
     },
     a1_calc_banter_miss: {
-      enter: g => { g.flag('normal', 'banter'); g.bond('jules', { tension: 1, respect: -1 }); },
+      enter: g => { g.flag('normal', 'banter'); g.bond('jules', { respect: -1 }); },
       text: `You write *Define normal* and draw two hearts squeezing a sad face.
 
 She looks at it. Her face does nothing at all.
@@ -334,7 +332,7 @@ sam: Femi. What's that?
 
 He doesn't answer right away. A girl from your Psych section walks straight into his shoulder, says *sorry* to the air three feet to his left, and keeps going.
 
-femi: ${g.f('femi_warned') ? 'I know what you said. I *know*. But' : 'The wellness study. Halcyon. The flyers were everywhere,'} they called it a cohort. I went Tuesday. Five hundred dollars, cash, in an envelope, Sam. They took eight vials of blood. A woman did an eye test where she sat across from me and wrote down how long it took her to *forget I was there*. Eleven seconds. She was so *excited*.
+femi: ${g.f('femi_warned') && g.f('femi_warned') !== 'none' ? 'I know what you said. I *know*. But' : 'The wellness study. Halcyon. The flyers were everywhere,'} they called it a cohort. I went Tuesday. Five hundred dollars, cash, in an envelope, Sam. They took eight vials of blood. A woman did an eye test where she sat across from me and wrote down how long it took her to *forget I was there*. Eleven seconds. She was so *excited*.
 
 He laughs. It's a thin sound.
 
@@ -410,7 +408,7 @@ sam: I know.
 
 femi: …Thank you.
 
-He doesn't say whether he's going back on the twenty-second. You don't ask him. Maybe you should have.`,
+He doesn't say whether he's going back on the twenty-second. You don't ask him.`,
       next: 'a1_hub'
     },
 
@@ -427,13 +425,14 @@ He doesn't say whether he's going back on the twenty-second. You don't ask him. 
           { id: 'thu_teddy', text: 'Text Teddy. You haven\'t heard from him since the alley. You haven\'t heard anything about Heck.', cost: 1, tag: 'Teddy', go: 'a1_teddy' },
           { id: 'thu_mikey', text: 'Mikey\'s been calling. Three missed calls. Call him back.', cost: 1, tag: 'Mikey', go: 'a1_mikey' },
           { id: 'thu_ciro', text: 'Pick up a dinner shift at Ciro\'s. The cash is starting to look thin.', cost: 1, tag: 'Money', go: 'a1_ciro' },
-          { id: 'thu_sleep', text: 'Go to bed at nine like a grandmother. Actually sleep.', cost: 1, tag: 'Rest', go: 'a1_sleep' }
+          { id: 'thu_sleep', text: 'Go to bed early like a grandmother. Actually sleep.', cost: 1, tag: 'Rest · pays off Sleep Debt', go: 'a1_sleep' }
         ],
         done: 'a1_friday'
       }
     },
 
     a1_nik: {
+      night: true,
       loc: 'CARDONE HALL · ROOF',
       clock: { time: '8:30 PM' },
       enter: g => { g.mastery(3); g.bond('nik', { trust: 1 }); g.know('mcpherson', ['sam', 'nik'], 'Nik mapped it: the shimmer you saw in the Slip and the sound Bree heard come from the same place. The sky over McPherson Square, Kensington.'); },
@@ -463,7 +462,7 @@ He sits back on his heels. In the headlamp, his face looks young and very scared
 
 nik: Bro. I think something's *in* the sky there. Like, in the time of the sky. I don't have words for it yet. Dale doesn't have a video for it.
 
-You run Slip drills with him until eleven. You can hold it a little longer now. Seventy-five seconds. You're getting better at it. You try not to think about what *better* means.`,
+You run Slip drills with him until ten. You can hold it a little longer now. Seventy-five seconds. You're getting better at it. You try not to think about what *better* means.`,
       next: '@hub'
     },
 
@@ -505,7 +504,7 @@ mikey: *Sammy.* Jesus. I was about to send a car.
 
 sam: You can't send a car, you're a car.
 
-mikey: I'm a car with a radio. Listen. Tomorrow's the eleventh. They're doing the thing at Engine 46, on Reed Street, the bell. Pop's coming. Ma's making the cookies with the pignoli. You should come down.
+mikey: I'm a car with a radio. Listen. Tomorrow's the eleventh. They're doing the thing at the firehouse on Reed Street, the bell. Pop's coming. Ma's making the cookies with the pignoli. You should come down.
 
 sam: I've got class.
 
@@ -555,7 +554,7 @@ mikey: Love you, Sammy. Don't do anything stupid. And if you're doing something 
       enter: g => { g.flag('mikey4', 'caught'); g.bond('mikey', { tension: 1 }); },
       text: `sam: On the dorm roof. The power was out. Ask anybody on my floor.
 
-Mikey's quiet for a long time.
+Mikey's quiet.
 
 mikey: You know you used to do this thing when you were a kid? When you broke something. You'd tell me where you were before I asked. Every time. *I was in the yard.* Nobody asked about the yard, Sammy.
 
@@ -583,7 +582,7 @@ A long breath.
 
 mikey: So no. Don't tell me. Don't tell me anything. Just… if it's you, be *careful*. And if it's not you, forget I called.
 
-He hangs up. Neither of you said yes. Neither of you said no.`,
+He hangs up.`,
       next: '@hub'
     },
 
@@ -592,7 +591,7 @@ He hangs up. Neither of you said yes. Neither of you said no.`,
       enter: g => { g.money(14 * 3 + 22); g.bond('ciro', { affection: 1 }); },
       text: `Ciro's is slammed, because the heat broke and everybody in North Philly remembered they like hot food.
 
-ciro: Salvatore. You're late. You're late like the Septa. You're late like my *wife*.
+ciro: Salvatore. You're late. You're late like SEPTA. You're late like my *wife*.
 
 He's not mad. He hands you a bag of garlic knots for yourself before you even get your jacket off, and watches you eat four standing up, and shakes his head like a man watching his own son do something stupid.
 
@@ -604,7 +603,7 @@ You run eleven deliveries in four hours. You get a twenty-two-dollar tip from a 
 
     a1_sleep: {
       enter: g => { g.flag('thu_slept'); },
-      text: `You go to bed at nine, like a grandmother. You put your phone in your desk drawer, under your Calc textbook, like it's a dangerous animal.
+      text: `You go to bed early, like a grandmother. You put your phone in your desk drawer, under your Calc textbook, like it's a dangerous animal.
 
 Across the hall, under Jules's door, her lamp is on. You lie in the dark and look at the line of light under your own door, and you think about it being on, and you think about a seven-year-old girl in a stone chapel, and somewhere around the thought of her face, you fall asleep.
 
@@ -616,18 +615,17 @@ You sleep eleven hours. You wake up starving, sore, and almost human.`,
 
     /* ---------- Friday ---------- */
     a1_friday: {
+      night: true,
       loc: 'CARDONE HALL · 9TH FLOOR LOUNGE',
       clock: { day: 'Fri', date: 'Sep 11', time: '10:52 PM' },
       enter: g => { if (g.f('thu_slept')) g.sleep(11); else g.sleep(5); },
       text: g => `Friday goes by like a train you're watching from the platform.
 
-At 8:46 in the morning, the whole campus goes quiet for a minute, and the bell in the Bell Tower rings once, and you stand on the steps of Charles Library with a coffee in your hand and think about your brother, who was one year old that day and doesn't remember it, and who enlisted anyway, years later, because of a day he doesn't remember. You text him a picture of the Bell Tower. He sends back a flag emoji and *love you sammy* in all lowercase like Gigi.
+At 8:46 in the morning, the whole campus goes quiet for a minute, and the Bell Tower chimes once, and you stand on the steps of Charles Library with a coffee in your hand and think about your brother, who was one year old that day and doesn't remember it, and who enlisted anyway, years later, because of a day he doesn't remember. You text him a picture of the Bell Tower. He sends back a flag emoji and *love you sammy* in all lowercase like Gigi.
 
 ${g.f('mikey4') === 'caught' ? 'It\'s the first time he\'s said it since he hung up on you. You read it a few times.\n\n' : ''}At night, the ninth floor does movie night in the lounge, because the heat's gone and everybody's alive and nineteen. Simone picks *Moonstruck*, "for Sam's people." Nik brings two bags of popcorn and his entire heart. Devontae falls asleep in fifteen minutes.
 
 Jules comes. Callum isn't with her. She sits on the other end of the couch from you, with Simone between you like a demilitarized zone, and she watches Cher slap Nicolas Cage and say *snap out of it*, and she laughs once, quietly, and when you look over, she's already looking at you.
-
-She doesn't look away.
 
 At 10:52, your phone buzzes against your leg.
 
@@ -642,7 +640,7 @@ McPherson Square.${g.knows('mcpherson') ? ' Nik\'s red X. The place the sky is w
 On the screen, Cher is telling her whole family the truth at the kitchen table. On the couch, Jules has turned her head, and she's watching you read your phone.`,
       choices: [
         { text: 'Get up. Don\'t say anything. Just go.', tag: 'Go',
-          fx: g => { g.flag('fri_leave', 'silent'); g.bond('jules', { tension: 1, trust: -1 }); g.heat('jules', 1); }, go: 'a2_go' },
+          fx: g => { g.flag('fri_leave', 'silent'); g.bond('jules', { trust: -2 }); g.heat('jules', 1); }, go: 'a2_go' },
         { text: 'Lean over Simone and say to Jules, quietly: "I have to go. I\'ll be back. I promise I\'ll be back."', tag: 'Promise',
           fx: g => { g.flag('fri_leave', 'promise'); g.bond('jules', { trust: 1 }); g.heat('jules', 1); }, go: 'a2_go' },
         { text: 'Put the phone face down. Not tonight. You promised yourself one normal night.', tag: 'Stay',
@@ -650,6 +648,7 @@ On the screen, Cher is telling her whole family the truth at the kitchen table. 
       ]
     },
     a1_stay: {
+      night: true,
       text: `You put the phone face down on your thigh.
 
 One normal night. Cher and Nicolas Cage and the moon over Brooklyn and Jules Pemberton laughing once, quietly, on the other end of the couch. You've earned one. You've *earned* it.

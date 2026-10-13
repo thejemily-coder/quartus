@@ -6,7 +6,7 @@ function e4v(choice, mods) {
     const act = mods.filter((_, i) => m & (1 << i));
     const bonus = act.reduce((a, x) => a + x.n, 0);
     const check = Object.assign({}, choice.check);
-    if (bonus) { check.bonus = bonus; check.bonusLabel = act.map(x => x.label).join(' · '); }
+    if (act.length) { check.bonus = (choice.check.bonus || 0) + bonus; check.bonusLabel = [choice.check.bonusLabel, ...act.map(x => x.label)].filter(Boolean).join(' · '); }
     out.push(Object.assign({}, choice, { check, if: g => mods.every((x, i) => !!x.when(g) === !!(m & (1 << i))) }));
   }
   return out;
@@ -30,9 +30,9 @@ EH.scenes('s01e04', {
 ${{ hoodie: 'The hoodie\'s in your backpack where it lives now. Gaiter up. Pop\'s cap backward.', windbreaker: 'Ciro\'s windbreaker, inside out, zipped to the chin.', helmet: 'The helmet, the visor down, the world gone amber.', none: 'No hood. No mask. Just you.' }[g.f('costume') || 'hoodie']} McPherson Square is three miles east and a little north, up Lehigh to Kensington Avenue, under the El. ${g.f('fri_leave') === 'stayed' ? 'It\'s 11:11. Whatever\'s happening there is already happening.' : 'It\'s 10:56. Four minutes until the text said eleven.'}`,
     choices: [
       { text: 'The bike. Lehigh Avenue, flat out, every light.', tag: 'Ride',
-        check: { kind: 'pool', attr: 'reflex', skill: 'ride', diff: 2, label: 'Three miles, no brakes', physical: true, on: { crit: 'a2_ride_fast', success: 'a2_ride_fast', partial: 'a2_ride_slow', fail: 'a2_ride_slow', botch: 'a2_ride_slow' } } },
+        check: { kind: 'pool', attr: 'reflex', skill: 'ride', diff: 2, label: 'Three miles, no brakes', physical: true, on: { crit: 'a2_ride_fast', success: 'a2_ride_fast', partial: 'a2_ride_fast', fail: 'a2_ride_slow', botch: 'a2_ride_slow' } } },
       { text: 'Slip. Run it between the seconds. Three miles of stopped city.', slip: true,
-        fx: g => { g.flag('arrive', 'slip'); g.mastery(2); }, go: 'a2_square' }
+        fx: g => { g.flag('arrive', 'slip'); }, go: 'a2_square' }
     ]
   },
   a2_ride_fast: {
@@ -50,15 +50,15 @@ At Kensington Avenue the El comes over you like a ceiling, and the world goes da
 
 You don't really go *over* it. You go *into* it, then over it, then across forty feet of Lehigh Avenue on your side, and the bike goes somewhere else. The guy who opened the door yells *you okay?* in the voice of a man who is mostly yelling *don't sue me*.
 
-You're okay. Your hip says you're not. You get the bike, and the front wheel's bent like a taco, and you ride it anyway, wobbling, under the El at Kensington Avenue, eleven minutes late, which is the most expensive eleven minutes of your life so far.`,
+You're okay. Your hip says you're not. You get the bike, and the front wheel's bent like a taco, and you ride it anyway, wobbling, under the El at Kensington Avenue, eleven minutes late.`,
     next: 'a2_square'
   },
 
   a2_square: {
     night: true,
     loc: 'MCPHERSON SQUARE · KENSINGTON',
-    enter: g => { g.clock({ time: g.f('arrive') === 'slip' ? '10:58 PM' : e4late(g) ? '11:14 PM' : '11:03 PM' }); g.meet('teddy'); g.meet('bree'); g.meet('heck'); g.hidden('halcyon_heat', 1); g.know('halcyon_clinic', ['sam', 'teddy', 'bree', 'heck'], 'Halcyon set up a "cooling clinic" tent in McPherson Square and lured Heck there with a text from Marisol\'s phone.'); },
-    text: g => `${g.f('arrive') === 'slip' ? 'You come out of the Slip at the corner of Kensington and Indiana, and your nose is already bleeding, and the cold of it falls off you like a coat.\n\n' : ''}McPherson Square is one city block of grass and old trees and benches, with a library in the middle, a sandstone building from 1898 with a cupola, like something that wandered over from a nicer century and couldn't find its way home. The El runs along one side of it, black iron, rattling. People sleep on the benches. People who aren't sleeping are standing very still in the half-dark under the trees, the way people stand on this block, in the worst hours of the worst days of their lives.
+    enter: g => { g.clock({ time: e4late(g) ? '11:14 PM' : g.f('arrive') === 'slip' ? '10:58 PM' : '11:03 PM' }); g.meet('teddy'); g.meet('bree'); g.meet('heck'); g.hidden('halcyon_heat', 1); g.know('halcyon_clinic', ['sam', 'teddy', 'bree', 'heck'], 'Halcyon set up a "cooling clinic" tent in McPherson Square and lured Heck there with a text from Marisol\'s phone.'); },
+    text: g => `${g.f('arrive') === 'slip' ? 'You come out of the Slip at the corner of Kensington and Indiana, and your nose is already bleeding, and the cold of it falls off you like a coat.\n\n' : ''}McPherson Square is one city block of grass and old trees and benches, with a library in the middle, an old stone Carnegie library, like something that wandered over from a nicer century and couldn't find its way home. The El runs along one side of it, black iron, rattling. People sleep on the benches. People who aren't sleeping are standing very still in the half-dark under the trees, the way people stand on this block at this hour.
 
 Tonight there's a tent on the grass.
 
@@ -66,7 +66,7 @@ It's white, clean, lit from inside like a lantern. A generator hums behind it. A
 
 Four men in gray polo shirts are standing around the tent like dads at a Little League game.
 
-On the library steps, a fifth man is holding a tablet. Forties. Close-cropped gray hair. Calm. The same calm man who swept Broad Street with a tablet the night of the Hitch. *Brannigan.* You've never heard his voice. You've seen his face once, from fifty feet away, in the cold.
+On the library steps, a fifth man is holding a tablet. Forties. Close-cropped gray hair. Calm. The same calm man who swept Broad Street with a tablet the night of the Hitch. *Brannigan.* You've never heard his voice. You've seen his face once before, on Broad Street, the night of the Hitch.
 
 And down Indiana Avenue, under the El, walking toward the square in the middle of the street:
 
@@ -83,7 +83,7 @@ Heck is forty yards from the tent.`,
       ...e4v({ text: 'Get in front of him. Hands up, open. Talk to him. "Heck. Hey. It\'s me. It\'s the nene."', tag: 'Talk',
         check: { kind: 'move', move: 'Talk Them Down', attr: 'heart', skill: 'persuade', label: 'Reach Heck', on: { strong: 'a2_talk_strong', weak: 'a2_talk_weak', miss: 'a2_talk_miss' } } }, [
         { when: g => g.f('teddy_check'), n: 1, label: 'You know what\'s wrong' },
-        { when: g => g.f('arrive') === 'slip', n: 1, label: 'You got there first' },
+        { when: g => g.f('arrive') === 'slip' && !e4late(g), n: 1, label: 'You got there first' },
         { when: e4late, n: -1, label: 'You\'re late' }]),
       { text: 'Plant yourself in his path. Make him go through you to get to them.', tag: 'Block',
         check: { kind: 'pool', attr: 'nerve', skill: 'brawl', diff: 2, label: 'Stand your ground', physical: true, on: { crit: 'a2_block_good', success: 'a2_block_good', partial: 'a2_block_shove', fail: 'a2_block_shove', botch: 'a2_block_shove' } } },
@@ -169,7 +169,7 @@ sam: That text wasn't from Marisol.
 
 heck: I know. *I know.* Move.
 
-He's not angry. He's just *tired*, more tired than you've ever seen anybody, the kind of tired that's already made its decision. He steps around you. When his shoulder passes yours, the heat is like opening an oven, and your gaiter starts to smell like a scorched iron.
+He's not angry. He's just *tired*, the kind of tired that's already made its decision. He steps around you. When his shoulder passes yours, the heat is like opening an oven, and your gaiter starts to smell like a scorched iron.
 
 sam: Heck—
 
@@ -242,7 +242,7 @@ Then whatever was in that dart hits him. It was dosed for a man at ninety-eight 
 
 He turns his head, slowly, the way a bull turns its head.
 
-He's looking for whoever did this to him. And between Heck and the tent, ${g.f('costume') === 'none' ? 'with your face bare and your hands up' : 'in a black hood with your face covered, right where the men with the darts want him to look'}, there's you.
+He's looking for whoever did this to him. And between Heck and the tent, ${g.f('costume') === 'none' ? 'with your face bare and your hands up' : 'with your face covered, right where the men with the darts want him to look'}, there's you.
 
 ${{ strong: 'heck: …Nene? Why, nene? Why\'d you bring them?', weak: 'heck: You. *You* brought them.', miss: 'heck: *You.*' }[g.f('heck_reach') || 'weak']}
 
@@ -271,7 +271,7 @@ What you do is flinch.
 Behind it, already coming, low and from the outside, the left.`,
     choices: [
       { text: 'Move. Get your body out of the way of that left hand.', tag: 'Dodge',
-        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, label: 'Get out of the way', physical: true, on: { crit: 'a3_f1_clean', success: 'a3_f1_clean', partial: 'a3_f1_graze', fail: 'a3_f1_hit', botch: 'a3_f1_hit' } } },
+        check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, label: 'Get out of the way', physical: true, power: true, on: { crit: 'a3_f1_clean', success: 'a3_f1_clean', partial: 'a3_f1_graze', fail: 'a3_f1_hit', botch: 'a3_f1_hit' } } },
       { text: 'Slip. Step out of the second and just walk around it.', slip: true, tag: 'Slip it',
         fx: g => g.flag('f1', 'slip'), go: 'a3_f1_slip' }
     ]
@@ -306,7 +306,7 @@ Your nose is bleeding into your gaiter. You can taste it.`,
     enter: g => { g.flag('f1', 'graze'); g.injure({ id: 'cracked_ribs', name: 'Cracked ribs', pen: 1, heal: 3, affects: ['body', 'reflex'] }); },
     text: `You move. Almost enough.
 
-His left hook catches you on the way out, along the ribs on your right side, and it's not a full hit, it's the *edge* of a hit, and it's the hardest thing that's ever touched you. You hear it inside your body before you feel it: a dull wet *crack*, like stepping on a stick under snow.
+His left hook catches you on the way out, along the ribs on your right side, and it's not a full hit, it's the *edge* of a hit, and the edge is plenty. You hear a dull wet *crack* inside your body, like stepping on a stick under snow.
 
 Then you feel it.
 
@@ -324,13 +324,13 @@ The left hook comes in under your elbow and lands flush on your ribs, and it lif
 
 Somewhere far away, Bree is yelling your name. Not your name. *Wawa.* It's close enough.
 
-You get up. You don't know how. You get up the way you always get up, because there's somebody behind you, even if right now the somebody is the guy you're getting up to fight.`,
+You get up the way you always get up, because there's somebody behind you, even if right now the somebody is the guy you're getting up to fight.`,
     next: 'a3_f2'
   },
 
   a3_f2: {
     night: true,
-    text: g => `${g.hurt('cracked_ribs') ? 'Every breath is a knife now. Short breaths. Short. ' : ''}You've got maybe two seconds before he comes again. The polo men are closing in on the edges of the grass, rifles low. Teddy's yelling something at Bree. Heck's eyes are black from edge to edge.
+    text: g => `${g.hurt('cracked_ribs') ? 'Every breath is a knife now. Short breaths. Short. ' : ''}He's driven you off the grass onto the Kensington Avenue sidewalk, under the El, your back to a bus shelter. You've got maybe two seconds before he comes again. The polo men are closing in on the edges of the grass, rifles low. Teddy's yelling something at Bree. Heck's eyes are black from edge to edge.
 
 You need to make him stop. You need to make him stop without killing him, without him killing you, and without either of you ending up in that truck.`,
     choices: [
@@ -348,7 +348,7 @@ You need to make him stop. You need to make him stop without killing him, withou
     enter: g => { g.flag('f2', 'hit'); g.injure({ id: 'broken_hand', name: 'Broken hand (boxer\'s fracture)', pen: 1, heal: 3, affects: ['body', 'reflex'] }); },
     text: `You step inside his right hand and throw everything you have at his chin.
 
-It lands. It lands perfectly, the best punch you've ever thrown, the one Vinnie spent four years trying to teach you: hips first, then shoulder, then fist, the whole of you behind it.
+It lands. It lands perfectly, the one Vinnie spent four years trying to teach you: hips first, then shoulder, then fist, the whole of you behind it.
 
 It's like punching a radiator.
 
@@ -481,10 +481,10 @@ The world lets go, like a held breath, and you're standing in front of Heck agai
 You did that.
 
 You did that *on purpose*.`,
-    enter: g => { g.unlock('rewind'); g.drift(2); g.hidden('revenant_drift', 1); g.flag('first_voluntary_rewind'); g.know('rewind_voluntary', ['sam'], 'You can rewind on purpose now. You reach for the moment you want back, and pull.'); },
+    enter: g => { g.unlock('rewind'); g.drift(1); if (g.S.pools.focus < 3) g.pool('focus', 3 - g.S.pools.focus); g.hidden('revenant_drift', 1); g.flag('first_voluntary_rewind'); g.know('rewind_voluntary', ['sam'], 'You can rewind on purpose now. You reach for the moment you want back, and pull.'); },
     choices: [
       { text: 'Now you know where it\'s coming from. Slip the hook. Come back with everything you have left.', tag: 'Slip the hook',
-        check: { kind: 'pool', attr: 'reflex', skill: 'brawl', diff: 3, label: 'Beat the hook', physical: true, on: { crit: 'a3_f3_good', success: 'a3_f3_good', partial: 'a3_f3_partial', fail: 'a3_f3_bad', botch: 'a3_f3_bad' } } }
+        check: { kind: 'pool', attr: 'reflex', skill: 'brawl', diff: 3, label: 'Beat the hook', physical: true, power: true, on: { crit: 'a3_f3_good', success: 'a3_f3_good', partial: 'a3_f3_partial', fail: 'a3_f3_bad', botch: 'a3_f3_bad' } } }
     ]
   },
   a3_f3_good: {
@@ -494,13 +494,13 @@ You did that *on purpose*.`,
 
 You duck under the hook, and it goes over you, and with nothing to stop it, Heck's fist and all of the weight behind it go right on through into the glass wall of the SEPTA bus shelter behind you.
 
-The glass doesn't break. It *explodes*. The heat and the punch hit it at the same time, and it comes apart into a hundred thousand pieces that rain down over both of you, glittering, in the light from the El. A long blade of it opens your left forearm from wrist to elbow on the way down, and you don't even feel it yet.
+The glass doesn't break. It *explodes*. The heat and the punch hit it at the same time, and it comes apart into a hundred thousand pieces that rain down over both of you, glittering, in the light from the El. The torn steel frame catches your left forearm on the way past and opens it, six inches, below the elbow, and you don't even feel it yet.
 
-${g.f('f2') === 'hit' ? 'And you come up inside his reach with your good hand and put it into his liver, the way Vinnie taught you, the punch nobody sees, and he folds.' : 'And you come up inside his reach and hit him, liver shot, the way Vinnie taught you, the punch nobody sees, and your hand breaks on his ribs like it was made of breadsticks, and he folds.'}
+${g.f('f2') === 'hit' ? 'And you come up inside his reach with your good hand and put it into his liver, the way Vinnie taught you, the punch nobody sees, and he folds.' : 'And you come up inside his reach and hit him, liver shot, the way Vinnie taught you, the punch nobody sees, and your right hand breaks on his ribs, and he folds.'}
 
 Heck goes down on one knee on the sidewalk, in the glass, steaming, gasping.
 
-You stand over him, bleeding from your arm in long dark ropes onto the concrete. You can hear your own heartbeat. You can hear the El. You can hear the misting fans, still hissing cold water at nobody.`,
+You stand over him, bleeding from your arm onto the concrete. You can hear your own heartbeat. You can hear the El. You can hear the misting fans, still hissing cold water at nobody.`,
     next: 'a3_f4'
   },
   a3_f3_partial: {
@@ -508,9 +508,9 @@ You stand over him, bleeding from your arm in long dark ropes onto the concrete.
     enter: g => { g.flag('f3', 'partial'); g.injure({ id: 'laceration', name: 'Laceration (forearm, stitched)', pen: 0, heal: 2 }); if (!g.hurt('broken_hand')) g.injure({ id: 'broken_hand', name: 'Broken hand (boxer\'s fracture)', pen: 1, heal: 3, affects: ['body', 'reflex'] }); g.pool('stamina', -1); },
     text: `You move. Most of the way.
 
-The hook catches your shoulder instead of your face, and spins you, and drives you back into the glass wall of the SEPTA bus shelter, and the glass doesn't break so much as *give up*. It comes down on you in a glittering sheet, and a long blade of it opens your left forearm from wrist to elbow on the way down.
+The hook catches your shoulder instead of your face, and spins you, and drives you back into the glass wall of the SEPTA bus shelter, and the glass doesn't break so much as *give up*. It comes down on you in a glittering sheet, and the torn steel frame opens your left forearm, six inches, below the elbow.
 
-You come off the shelter swinging. You don't decide to. You put everything into his body, the liver shot Vinnie taught you, and your hand comes apart on his ribs like it was made of breadsticks, and he folds.
+You come off the shelter swinging. You don't decide to. You put everything into his body, the liver shot Vinnie taught you, and your right hand comes apart on his ribs, and he folds.
 
 Heck goes down on one knee on the sidewalk, in the glass, steaming, gasping. You stay up. Barely. Your blood is running off your fingers in a steady patter onto the concrete, like a faucet somebody didn't turn all the way off.`,
     next: 'a3_f4'
@@ -528,7 +528,7 @@ Heck stands over you, steaming. He raises his fist.
 
 And then he stops. He just *stops*, fist up, and looks at it, the glowing thing at the end of his own arm, like it belongs to somebody else. He sways. Whatever was in the darts is finally, finally winning. He goes down on one knee beside you, on the sidewalk, gasping.
 
-You get up. You don't know how. Somebody is always behind you. Tonight, somehow, it's him.`,
+You get as far as one elbow.`,
     next: 'a3_f4'
   },
 
@@ -569,7 +569,7 @@ ${g.hurt('broken_hand') ? 'Your right hand is useless. ' : ''}${g.hurt('cracked_
 
 sam: Heck. It's me. It's the nene. ${g.f('f2') === 'talk' ? 'Yesenia\'s waiting. She\'s very serious about the half.' : 'Your sobrina\'s waiting.'} Let's go home.
 
-He looks at you. He looks at you for a long time, with those black drugged eyes, and you watch them find you. Slowly. Like somebody walking back up a long hallway toward a door with a light under it.
+He looks at you with those black drugged eyes, and you watch them find you. Slowly. Like somebody walking back up a long hallway toward a door with a light under it.
 
 heck: …Nene.
 
@@ -590,7 +590,7 @@ You and Teddy get him into the back seat. It takes both of you and his own legs 
   },
   a3_end_talk_hot: {
     night: true,
-    enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'talk'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('heck', { trust: 2, affection: 2 }); g.bond('teddy', { trust: 2, respect: 1 }); g.bond('bree', { trust: 1 }); },
+    enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'talk'); g.heal('burned_arm'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('heck', { trust: 2, affection: 2 }); g.bond('teddy', { trust: 2, respect: 1 }); g.bond('bree', { trust: 1 }); },
     text: g => `You get down on the sidewalk with him and pull your gaiter down so he can see your face.
 
 sam: Heck. It's me. ${g.f('f2') === 'talk' ? 'Yesenia\'s' : 'Your sobrina\'s'} waiting. Let's go home.
@@ -611,7 +611,7 @@ You get him in. You let go. You look at your arms, and then you don't look at th
   a3_end_ko: {
     night: true,
     enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'ko'); g.bond('teddy', { trust: 1, respect: 2 }); g.bond('heck', { respect: 1 }); },
-    text: g => `${g.hurt('broken_hand') ? 'You throw it with your left, the cut arm, because your right hand is broken already.' : 'You throw it.'} Short. Clean. Right on the point of his chin, where every boxing coach on Front Street tells you the off switch is.
+    text: g => `${g.hurt('broken_hand') ? 'You throw it with your left, because your right hand is broken already.' : 'You throw it.'} Short. Clean. Right on the point of his chin, where every boxing coach on Front Street tells you the off switch is.
 
 It works.
 
@@ -632,7 +632,7 @@ teddy: Don't tell him that. Ever. Let him think you're a *monster*.`,
   },
   a3_end_ko_hot: {
     night: true,
-    enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'ko'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('teddy', { trust: 1, respect: 1 }); },
+    enter: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'ko'); g.heal('burned_arm'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('teddy', { trust: 1, respect: 1 }); },
     text: `You hit him. It isn't clean. It takes two, and the second one is mostly elbow and mostly desperation, and he goes down anyway, sideways, toward the glass.
 
 You catch him. You shouldn't. It's like catching a burning car door. Your sleeves smoke and you hear the skin of your forearms go, a sound like bacon on a flat-top, and you hold on, because the glass is there, because you're you.
@@ -642,7 +642,7 @@ Teddy gets under his other side. The two of you get him to the car together. Whe
   },
   a3_end_slip: {
     night: true,
-    enter: g => { g.flag('heck_fate', 'saved'); g.flag('brannigan_saw'); g.hidden('halcyon_heat', 2); g.drift(1); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('heck', { trust: 2 }); g.bond('teddy', { trust: 2, respect: 2 }); },
+    enter: g => { g.flag('heck_fate', 'saved'); g.flag('brannigan_saw'); g.hidden('halcyon_heat', 2); g.heal('burned_arm'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('heck', { trust: 2 }); g.bond('teddy', { trust: 2, respect: 2 }); },
     text: `You step through.
 
 The sirens stop mid-wail. The El stops mid-rattle. The cloud of breath coming out of Bree's mouth stops, and the misting fans stop, and the whole square becomes a photograph of itself.
@@ -683,7 +683,7 @@ Bree's sirens stop. She's just screaming now, in her own voice.
 You're bleeding. You're broken in at least one place. You've got maybe one more step between the seconds in you, and maybe not.`,
     choices: [
       { text: 'Slip. Take him back. Whatever it costs.', slip: true, tag: 'Take him back',
-        fx: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'rescue'); g.flag('brannigan_saw'); g.hidden('halcyon_heat', 3); g.drift(1); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('teddy', { trust: 3, respect: 3 }); g.bond('heck', { trust: 2 }); g.bond('bree', { trust: 2 }); }, go: 'a3_rescue' },
+        fx: g => { g.flag('heck_fate', 'saved'); g.flag('end', 'rescue'); g.flag('brannigan_saw'); g.hidden('halcyon_heat', 3); g.heal('burned_arm'); g.injure({ id: 'burned_arms', name: 'Burned arms', pen: 1, heal: 2, affects: ['body'] }); g.bond('teddy', { trust: 3, respect: 3 }); g.bond('heck', { trust: 2 }); g.bond('bree', { trust: 2 }); }, go: 'a3_rescue' },
       { text: 'You can\'t. You *can\'t*. You stand there, and you watch.', tag: 'Let him go',
         fx: g => { g.flag('heck_fate', 'taken'); g.hidden('revenant_drift', -0.5); g.bond('teddy', { trust: -3, tension: 2 }); g.bond('bree', { trust: -2 }); g.know('heck_taken', ['sam', 'teddy', 'bree'], 'Halcyon took Heck from McPherson Square on September 11. They put him in a white box truck that said BLUE RIBBON FOODS.'); }, go: 'a3_heck_taken' }
     ]
@@ -694,7 +694,7 @@ You're bleeding. You're broken in at least one place. You've got maybe one more 
 
 The square stops, and the polo men stop, four of them leaning back against Heck's dead weight with their silver gloves sunk into his arms. One of them has his mouth open, mid-shout. Up close, he's just a guy. Thirty. A wedding ring. A sunburned nose. A little sweat on his upper lip.
 
-You pull their hands off Heck one finger at a time. It takes forever. In here, everything takes forever, and forever is what you have.
+You pull their hands off Heck one finger at a time. It takes forever. In here, everything takes forever, and you don't have forever. You have a minute.
 
 Then you lift him.
 

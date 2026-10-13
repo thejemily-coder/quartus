@@ -15,7 +15,7 @@ You go to the top of Stairwell B, the landing outside the roof door, where nobod
 
 You don't figure it out.
 
-${g.f('heck_fate') === 'saved' ? 'At 1:15, your phone buzzes. *Bree.* A photo: Heck asleep in a bathtub in a tiled bathroom somewhere in Port Richmond, cold water running, a two-year-old\'s rubber duck on the edge of the tub. The steam coming off him is faint now. Barely there.\n\nTXT bree: 101.2 and dropping\nTXT bree: he woke up and said lo siento for ur face and went back to sleep\nTXT bree: teddy says ur an idiot\nTXT bree: teddy says thank u. he wont text it so im texting it\n\nYou look at the duck for a long time.' : 'At 1:15, you text Teddy: *im sorry.*\n\nDelivered.\n\nIt doesn\'t say *Read*. You watch it not say *Read* for a long time.'}
+${g.f('heck_fate') === 'saved' ? 'At 1:15, your phone buzzes. *Bree.* A photo: Heck asleep in a bathtub in a tiled bathroom somewhere in Port Richmond, cold water running, a two-year-old\'s rubber duck on the edge of the tub. The steam coming off him is faint now. Barely there.\n\nTXT bree: 101.2 and dropping\nTXT bree: he woke up and said lo siento for ur face and went back to sleep\nTXT bree: teddy says ur an idiot\nTXT bree: teddy says thank u. he wont text it so im texting it\n\nYou look at the duck.' : 'At 1:15, you text Teddy: *im sorry.*\n\nDelivered.\n\nIt doesn\'t say *Read*. You watch it not say *Read*.'}
 
 At 2:38, the stairwell door bangs open two floors down, and you hear Nik, in socks, taking the stairs two at a time and saying your name, and then your *full* name, which means he's scared.
 
@@ -76,13 +76,13 @@ You sit there holding your arm up. You think: *I didn't know. Three weeks, and I
     night: true,
     loc: 'CARDONE HALL · 9TH FLOOR BATHROOM',
     clock: { time: '3:07 AM' },
-    text: g => `Which is how you end up on the floor of the ninth-floor bathroom, between the last shower stall and the radiator, with Grace Lim kneeling over you with a curved needle and her MCAT practice kit, which she keeps under her bed in a tackle box that says **NOT A TACKLE BOX** in label-maker tape.
+    text: g => `Which is how you end up on the floor of the ninth-floor bathroom, between the last shower stall and the radiator, with Grace Lim kneeling over you with a curved needle and her suture practice kit, which she keeps under her bed in a tackle box that says **NOT A TACKLE BOX** in label-maker tape.
 
 Nik's sitting outside the door on the hallway carpet, guarding it. You can hear him breathing. In for four.
 
 ${{ laugh: 'You laughed when she put the needle in. You\'re still sort of laughing, in little hiccups, every time she pulls the thread through.', nobody: 'You grabbed her wrist and made her promise. She promised. She\'s still a little pale about it.', silent: 'You haven\'t made a sound. Forty-one tiles over your head. You\'ve counted them nine times.' }[g.f('cold')]}
 
-Grace works fast and neat and doesn't talk. She cleaned the ${g.hurt('laceration') && g.f('f3') === 'bad' ? 'cut over your eye' : 'cut on your arm'} with a whole bottle of saline and most of a bottle of iodine. She's looked at everything else, too. ${g.hurt('broken_hand') ? 'Your hand, which is swelling up like a latex glove somebody blew into. ' : ''}${g.hurt('cracked_ribs') ? 'Your ribs, which she pressed once and you nearly went through the ceiling. ' : ''}${g.hurt('cheekbone') ? 'Your face, which she won\'t let you see. ' : ''}${g.hurt('burned_arms') || g.hurt('burned_arm') ? 'The burns, which she looked at for a very long time without saying anything. ' : ''}${g.hurt('handprint') ? 'The handprint on your chest. Five fingers and a palm. She put two fingers next to one of the burned fingers, measuring, and then took her hand away fast. ' : ''}
+Grace works fast and neat and doesn't talk. She cleaned the ${g.hurt('laceration') && g.f('f3') === 'bad' ? 'cut over your eye' : 'cut on your arm'} with a whole bottle of saline and most of a bottle of iodine. She's looked at everything else, too. ${g.hurt('broken_hand') ? 'Your hand, which is swelling up like a latex glove somebody blew into. ' : ''}${g.hurt('cracked_ribs') ? 'Your ribs, which she pressed once and you nearly went through the ceiling. ' : ''}${g.hurt('cheekbone') ? 'Your face, which she won\'t let you see. ' : ''}${g.hurt('burned_arms') || g.hurt('burned_arm') ? 'The burns, which she looked at without saying anything. ' : ''}${g.hurt('handprint') ? 'The handprint on your chest. Five fingers and a palm. She put two fingers next to one of the burned fingers, measuring, and then took her hand away fast. ' : ''}
 
 She ties off the fourth stitch. Then she sits back on her heels and looks at you.
 
@@ -110,7 +110,7 @@ grace: Who did this to you, Sam?`,
 
 You tell her about the cold at 11:51 and the bus on Spring Garden and the kid and the light. The world stopping, and you not stopping with it. The minute that's four seconds. The armored truck on Girard. The rowhouse on 15th Street. Heck, and his sobrina, and the truck with the steel bed rated six hundred pounds. You tell her in a flat, quiet voice, staring at the ceiling, and Grace keeps stitching while you talk. She doesn't stop once. Her hands are steady the whole time.
 
-When you're done, she ties off the last knot and cuts the thread with a pair of tiny curved scissors.
+When you're done, she ties off the stitch and cuts the thread with a pair of tiny curved scissors.
 
 grace: Okay.
 
@@ -118,7 +118,7 @@ sam: That's it? *Okay?*
 
 grace: This was supposed to be my MCAT year. That was the whole plan.
 
-She snaps off her gloves.
+She threads the needle again.
 
 grace: Okay means I believe you. Okay means I'm in. Okay means you're going to the ER tomorrow and I'm driving, and if you argue, I'm calling the emergency contact on your housing form, which is your *mother*, Sam, and I've *met* her, and she scares me.`,
     next: 'a4_door'
@@ -201,7 +201,7 @@ jules: What happened to you?`,
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', liesTo: ['jules'], near: ['jules'], label: 'Lie to Jules', on: { strong: 'a4_lie_strong', weak: 'a4_lie_weak', miss: 'a4_lie_miss' } } },
       { text: '"Somebody I know was in trouble. I helped. It went bad." True. Every word of it. Not one word more.', tag: 'Some of it',
         fx: g => { g.flag('jules4', 'some'); g.heat('jules', 2); g.bond('jules', { trust: 1 }); }, go: 'a4_jules_some' },
-      { text: '"I can\'t tell you, Jules." The second time you\'ve said it to her. "I\'m sorry."', tag: 'Can\'t',
+      { text: '"I can\'t tell you, Jules." Then: "I\'m sorry."', tag: 'Can\'t',
         fx: g => { g.flag('jules4', 'cant'); g.heat('jules', 1); g.bond('jules', { respect: 1, trust: -1 }); }, go: 'a4_jules_cant' }
     ]
   },
@@ -210,7 +210,7 @@ jules: What happened to you?`,
     enter: g => { g.flag('jules4', 'lie'); g.bond('jules', { trust: -1 }); g.know('lie_bike', ['sam'], 'You told Jules you hit a car door on Lehigh and went through a bus shelter. She said "Okay."'); },
     text: g => `sam: Bike. Car door on Lehigh. I went through a bus shelter.
 
-It's a good lie. It's the best lie you've ever told. It's ninety percent true: there *was* a car door, there *was* a bus shelter. Your hand stays in your lap. Your voice stays flat.
+It's a good lie. It's ninety percent true: there *was* a car door, there *was* a bus shelter. Your hand stays in your lap. Your voice stays flat.
 
 She ties off the stitch.
 
@@ -226,9 +226,7 @@ jules: Keep it dry. Forty-eight hours. Then soap and water.
 
 She goes to the door. With her hand on the handle, she stops.
 
-jules: Kearney. You're getting better at that.
-
-She doesn't say at what. She doesn't have to.`,
+jules: Kearney. You're getting better at that.`,
     next: 'a4_after'
   },
   a4_lie_weak: {
@@ -266,7 +264,7 @@ Your hand is on your ear. You don't know how it got there. You take it down.
 
 Jules pulls the stitch tight. Not cruelly. Just *tight*, exactly as tight as it should be and not a hair looser, and you feel it all the way up your arm.
 
-She ties it off. She cuts the thread. She stands up, and looks down at you on the floor, in your blood, and her face isn't angry. That's the worst part. It isn't angry at all.
+She ties it off. She cuts the thread. She stands up, and looks down at you on the floor, in your blood, and her face isn't angry. It isn't anything at all.
 
 jules: I sat on a roof with you for six hours. I told you about the chapel.
 
@@ -305,7 +303,7 @@ She nods slowly, like she's agreeing to the terms of something.
 
 jules: *Not tonight.*
 
-She hears herself say it, the way she said *not like this* on the roof, and something in her face changes, and she looks away. She stands up.
+She hears herself say it. She stands up.
 
 jules: Keep it dry for forty-eight hours. And Sam—
 
@@ -326,7 +324,7 @@ She finishes the stitch. Ties it. She doesn't say anything for the rest of them,
 
 When she's done, she cuts it and puts the needle down on the tile.
 
-jules: That's twice.
+jules: *Can't.*
 
 sam: I know.
 
@@ -341,7 +339,7 @@ jules: I just don't know how many times I can believe it.`,
   a4_after: {
     night: true,
     clock: { time: '3:51 AM' },
-    enter: g => { g.sleep(4); },
+    enter: g => { g.sleep(7); },
     text: g => `When the door closes behind her, Grace lets out a long breath and sits down against the radiator next to you, with her bloody gloves still on, like she's too tired to take them off.
 
 grace: Okay. So that's a whole thing.
@@ -364,7 +362,7 @@ You think about the truck. The steel bed. ${g.f('heck_fate') === 'saved' ? 'The 
 
 ${g.f('heck_fate') === 'saved' ? 'sam: Yeah. This time.' : 'sam: No.'}
 
-You sleep four hours, like a stone. Your body is busy with something.`,
+You sleep seven hours, like a stone. Your body is busy with something.`,
     next: 'tag_xray'
   },
 
@@ -374,7 +372,7 @@ You sleep four hours, like a stone. Your body is busy with something.`,
     loc: 'TEMPLE UNIVERSITY HOSPITAL · EMERGENCY DEPT',
     clock: { day: 'Sat', date: 'Sep 12', time: '4:40 PM' },
     enter: g => {
-      g.S.injuries.forEach(i => { if (['broken_hand', 'cracked_ribs', 'cheekbone'].includes(i.id)) i.heal = Math.min(i.heal, 2); });
+      g.S.injuries.forEach(i => { if (['broken_hand', 'cracked_ribs', 'cheekbone'].includes(i.id)) i.heal = 1; });
       g.flag('xray_healed');
       g.know('xray', ['sam', 'grace'], 'The x-ray at Temple ER showed fractures that were ten days into healing. You broke them the night before.');
     },
@@ -382,7 +380,7 @@ You sleep four hours, like a stone. Your body is busy with something.`,
 
 You tell triage you fell off your bike. Triage writes it down without looking at you. Everybody at Temple ER on a Saturday fell off their bike.
 
-At 4:40, a resident named Dr. Ferrante, thirty, Italian-American, with a South Jersey accent and the exhausted cheer of a man thirty-one hours into a shift, puts your film up on the light box. It's your ${g.hurt('broken_hand') ? 'right hand. The five long bones fanning out from your wrist like a hand of cards' : g.hurt('cheekbone') ? 'skull, from the side. Your own face, as a ghost' : 'ribcage. Your own ribs, white curves like a bird cage'}.
+At 4:40, a resident named Dr. Ferrante, thirty, Italian-American, with a South Jersey accent and the exhausted cheer of a man twenty-six hours into a shift, puts your film up on the light box. It's your ${g.hurt('broken_hand') ? 'right hand. The five long bones fanning out from your wrist like a hand of cards' : g.hurt('cheekbone') ? 'skull, from the side. Your own face, as a ghost' : 'ribcage. Your own ribs, white curves like a bird cage'}.
 
 Dr. Ferrante looks at it. He tilts his head. He looks at it some more.
 
@@ -408,7 +406,7 @@ He stops laughing. He looks at the film. He looks at you, at your stitched arm, 
 
 DR. FERRANTE: Callus like this takes ten days, minimum. This is a fracture that's ten days into healing. Did you have a fall a couple weeks ago? Maybe you didn't notice?
 
-You look at the ghost of your own bones on the light box, glowing. Broken, and already halfway mended. Healed in a time you didn't live.
+You look at the ghost of your own bones on the light box, glowing.
 
 sam: …Yeah. Maybe. A couple weeks ago.
 
@@ -428,7 +426,7 @@ You look at the light box. You think about the cold in there, and how long a min
 
 grace: Sam?
 
-On the light box, your bones glow white, and patient, and older than they should be.`,
+On the light box, your bones glow white and patient.`,
     end: true
   }
 });
