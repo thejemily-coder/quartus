@@ -316,7 +316,7 @@
     const gold = [];
     const step = () => {
       if (res.kind === 'pool') {
-        let idx = -1, lo = 99; res.dice.forEach((v, i) => { if (v < 7 && v < lo) { lo = v; idx = i; } });
+        let idx = -1, lo = 99; res.dice.forEach((v, i) => { if (v < (pov ? 10 : 7) && v < lo) { lo = v; idx = i; } });
         if (idx < 0) return false;
         res.dice[idx] = 10; Object.assign(res, EH.scorePool(res.dice, res.diff)); gold.push(idx); return true;
       } else if (res.kind === 'move') {
@@ -328,10 +328,10 @@
       }
       return false;
     };
-    if (!step()) return false;
-    if (pov) { let n = 0; while (!EH.isClean(res.tier) && n++ < 6 && step()); S.hidden.jules_debt = (S.hidden.jules_debt || 0) + 1; }
+    if (!step() && !pov) return false;
+    if (pov) { while (!EH.isClean(res.tier) && step()); if (!EH.isClean(res.tier)) res.tier = res.kind === 'move' ? 'strong' : 'success'; S.hidden.jules_debt = Math.min(10, (S.hidden.jules_debt || 0) + 1); }
     res.gold = gold;
-    S.hidden.nudges = (S.hidden.nudges || 0) + 1;
+    if (!pov) S.hidden.nudges = (S.hidden.nudges || 0) + 1;
     res.nudged = true;
     return true;
   };
@@ -345,16 +345,19 @@
   EH.povEnter = function (S, ep) {
     if (!ep || !ep.pov || ep.pov === 'sam' || S.pov) return;
     S.pov = ep.pov;
-    S.samSheet = EH.clone({ attrs: S.attrs, skills: S.skills, pools: S.pools, injuries: S.injuries, drift: S.drift, sleepDebt: S.sleepDebt, marked: S.marked });
+    S.samSheet = EH.clone({ attrs: S.attrs, skills: S.skills, pools: S.pools, injuries: S.injuries, drift: S.drift, sleepDebt: S.sleepDebt, marked: S.marked, bonds: S.bonds });
     const J = S.julesSheet || EH.JULES_SHEET;
     S.attrs = EH.clone(J.attrs); S.skills = EH.clone(J.skills);
+    S.bonds = Object.assign(EH.clone(S.julesBonds || {}), S.bonds.jules ? { jules: EH.clone(S.bonds.jules) } : {});
     S.injuries = []; S.drift = 0; S.sleepDebt = 0; S.marked = {}; S.pools = {};
     EH.refill(S, true);
   };
   EH.povExit = function (S) {
     if (!S.pov || !S.samSheet) return;
     S.julesSheet = { attrs: EH.clone(S.attrs), skills: EH.clone(S.skills) };
+    const jb = S.bonds.jules; S.julesBonds = S.bonds; delete S.julesBonds.jules;
     Object.assign(S, S.samSheet);
+    if (jb) S.bonds.jules = jb;
     delete S.samSheet; delete S.pov;
   };
 
@@ -383,7 +386,7 @@
         if (l.startsWith('> ')) { flush(); out.push('<div class="cap">' + inline(l.slice(2)) + '</div>'); return; }
         if (l.startsWith('!! ')) { flush(); const t = l.slice(3); const cy = t.startsWith('~'); out.push('<div class="sfx' + (cy ? ' cy' : '') + '" aria-label="' + esc(t.replace(/^~/, '')) + '">' + esc(t.replace(/^~/, '')) + '</div>'); return; }
         if ((m = l.match(/^TXT ([a-z_]+|[A-Z][A-Za-z .'\-]*):\s*(.*)$/))) {
-          flush(); const id = m[1]; const me = id === 'sam';
+          flush(); const id = m[1]; const me = id === (EH.viewer || 'sam');
           const nm = EH.CAST[id] ? EH.CAST[id].label : id;
           out.push('<div class="txt' + (me ? ' me' : '') + '"><span class="from">' + esc(me ? 'You' : nm) + '</span><span class="bub">' + inline(m[2]) + '</span></div>'); return;
         }

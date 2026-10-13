@@ -235,6 +235,7 @@
     delete S.flags._failxp;
     if (!firstEp) S.injuries = S.injuries.map(i => Object.assign({}, i, { heal: (i.heal || 1) - 1 })).filter(i => i.heal > 0);
     S.pools.nerve = EH.maxPool(S, 'nerve') - (S.sleepDebt >= 6 ? 1 : 0);
+    if (S.pov && !ep.pov) EH.povExit(S);
     EH.povEnter(S, ep);
     const snap = EH.clone(S); delete snap.epStart; S.epStart = snap;
     TRAIL = [];
@@ -285,7 +286,7 @@
     if (hasText) {
       const body = el('div', sc.night ? 'panel-night' : '');
       if (sc.loc) body.appendChild(el('div', 'slug', '<span>' + esc(sc.loc) + '</span>' + (sc.clock ? '<span class="t">' + esc([sc.clock.day, sc.clock.date, sc.clock.time].filter(Boolean).join(' · ')) + '</span>' : '')));
-      const pr = el('div', 'prose'); pr.innerHTML = EH.markup(EH.text(sc, g)); body.appendChild(pr);
+      const pr = el('div', 'prose'); EH.viewer = S.pov || 'sam'; pr.innerHTML = EH.markup(EH.text(sc, g)); body.appendChild(pr);
       box.appendChild(body);
     }
     if (notes.length) box.appendChild(notesEl(notes));
@@ -427,7 +428,7 @@
       } catch (e) { busy = false; console.error(e); toast('Something broke: ' + e.message); }
     };
     if (ch.check) {
-      if (preset) { resolve(preset); return; }
+      if (preset) { if (S.pov && !preset.nudged) EH.tryNudge(S, ch.check, preset); resolve(preset); return; }
       const idx = (sc.choices || []).indexOf(ch);
       save();
       openTray(ch.check, resolve, res => { S.pending = { scene: id, idx, res: EH.clone(res) }; save(); });
@@ -806,11 +807,11 @@
       '<div class="sec"><h4>Pools</h4><div style="display:flex;flex-direction:column;gap:8px">' +
       ['stamina', 'focus', 'nerve'].map((p, i) => '<div class="meter"><div class="row"><span>' + p + '</span><span>' + S.pools[p] + ' / ' + EH.maxPool(S, p) + '</span></div>' + bar(S.pools[p], EH.maxPool(S, p), ['m', 'c', 'y'][i]) + '</div>').join('') +
       '<div class="meter"><div class="row"><span>Sleep Debt</span><span>' + S.sleepDebt + ' / 10</span></div>' + bar(S.sleepDebt, 10, 'r') + '</div>' +
-      (S.powers.slip.nodes.length ? '<div class="meter"><div class="row"><span>Drift</span><span>' + S.drift + ' / 10</span></div>' + bar(S.drift, 10, 'c') + '</div>' : '') +
+      (S.powers.slip.nodes.length && !S.pov ? '<div class="meter"><div class="row"><span>Drift</span><span>' + S.drift + ' / 10</span></div>' + bar(S.drift, 10, 'c') + '</div>' : '') +
       '</div></div>' +
       '<div class="sec"><h4>Skills</h4><div class="skills">' + Object.keys(EH.SKILLS).map(k => '<div class="s' + (S.skills[k] ? '' : ' zero') + '"><span>' + (S.marked[k] ? '<span class="mk">●</span> ' : '') + EH.SKILLS[k] + '</span><span>' + S.skills[k] + '</span></div>').join('') + '</div>' +
       '<div class="mono" style="font-size:.66rem;color:var(--ink-faint);margin-top:6px">● marked: used this episode, can be raised at episode end.</div></div>' +
-      (S.powers.slip.nodes.length ? '<div class="sec"><h4>Powers · the Slip</h4><div style="display:flex;flex-direction:column;gap:6px">' +
+      (S.powers.slip.nodes.length && !S.pov ? '<div class="sec"><h4>Powers · the Slip</h4><div style="display:flex;flex-direction:column;gap:6px">' +
         Object.keys(EH.NODES).map(n => { const has = S.powers.slip.nodes.includes(n); const N = EH.NODES[n]; return '<div class="node' + (has ? '' : ' locked') + '"><b>' + (has ? N.name : '???') + '</b><span>' + (has ? N.desc : 'Locked') + '</span></div>'; }).join('') +
         '<div class="meter"><div class="row"><span>Mastery</span><span>' + S.powers.slip.mastery + ' / 100</span></div>' + bar(S.powers.slip.mastery, 100, 'm') + '</div></div></div>' : '') +
       '<div class="sec"><h4>Life</h4><dl class="kv">' +

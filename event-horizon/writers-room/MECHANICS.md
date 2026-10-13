@@ -130,6 +130,9 @@ Every Drift point Sam takes **also** feeds hidden `revenant_drift` (+0.5 per poi
 ### Jules: probability (hidden in Season 1)
 - `hidden.jules_luck`: starts at 0.35 and grows with the bond Affection and Trust she has toward Sam (the Audience likes the pairing).
 - In Jules-POV episodes she has her own sheet: Body 2 · Reflex 3 · Wits 4 · Heart 2 · Nerve 3 · Charm 4. Powers: **Luck** (passive rerolls of 1s), **Nudge** (Season 2+), **Jinx**, **Branch**, **Fate**. Backlash meter: **Debt** (0–10). Bad luck comes back around.
+- **POV engine (from E6):** an episode with `pov:'jules'` calls `EH.povEnter` at start. It parks Sam's sheet (attrs, skills, pools, injuries, drift, sleepDebt, marked, bonds) in `S.samSheet` and loads `S.julesSheet` (default `EH.JULES_SHEET`) and `S.julesBonds`. The Jules↔Sam bond (`bonds.jules`) carries both ways.
+- **Season 1 Luck in POV:** every unclean roll is nudged clean, shown with a gold die. Each save adds +1 to `hidden.jules_debt`, capped at 10. POV nudges don't count toward Sam's `hidden.nudges`.
+- **Ending a POV episode:** `EH.povExit` runs after `onEnd` and restores Sam's sheet. Episode XP goes to Sam.
 
 ## 4. Life Sim
 

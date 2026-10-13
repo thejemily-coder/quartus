@@ -10,7 +10,7 @@ EH.scenes('s01e06', {
     enter: g => { g.meet('hugh'); g.meet('whitney'); g.meet('catherine'); g.meet('constance'); g.meet('callum'); },
     text: g => `The library at Ravenscourt has a fireplace you could park a car in, two thousand books nobody reads, and a round mahogany card table that has been in the family since 1880 and has a cigarette burn on one edge from 1944 that nobody is allowed to mention.
 
-You\'re wearing the blue. It\'s a long dark blue silk thing with no sleeves, and you\'ve put your hair up, and on your left wrist, where Mother can see it and has visibly decided to say nothing, there\'s a pink-and-green friendship bracelet.
+You\'re wearing the blue. It\'s a long dark blue silk thing with no sleeves, and you\'ve put your hair up, and on your left wrist, where your mother can see it and has visibly decided to say nothing, there\'s a pink-and-green friendship bracelet.
 
 The table:
 
@@ -24,15 +24,15 @@ The table:
 
 **Judge Ellison**, eighty, a friend of Gran\'s from the Cricket Club, who falls asleep between hands and wins a surprising amount.
 
-And a woman you don\'t know. Late fifties, Dutch by the accent, with steel-gray hair cut very short and a black suit and no jewelry at all, sitting very straight, with her hands folded on the table in front of her like a scientist waiting for results.
+And a woman you don\'t know. Late fifties, Dutch by the accent, with steel-gray hair cut very short and a black suit and no jewelry at all, sitting very straight, with her hands folded on the table in front of her like someone waiting for a result.
 
 whitney: Everybody, this is Miriam. Dr. Achterberg. She\'s a physicist. A friend from the energy thing. Miriam, my daughter Juliet, the one I told you about.
 
-DR. ACHTERBERG: The lucky one.
+DR. ACHTERBERG: He did. At length.
 
 She says it pleasantly. She\'s looking right at you.
 
-Mother, who doesn\'t play, sits by the fire with a glass of white wine and a medical journal, turning pages at perfectly regular intervals, not reading.
+Your mother, who doesn\'t play, sits by the fire with a glass of white wine and a medical journal, turning pages at perfectly regular intervals, not reading.
 
 Gran shuffles. Her old hands move like a magician\'s.
 
@@ -52,7 +52,7 @@ Across the table, Father calls without looking at his cards, because he\'s on hi
 
 She\'s looking at you.
 
-The flop comes: ten of clubs, two of hearts, four of clubs. Four to a flush. You need one more club.
+The flop comes: ten of clubs, two of hearts, eight of clubs. Four to a flush. You need one more club.
 
 Hugh bets big. He\'s got something. You can see it in his shoulders.`,
     choices: [
@@ -73,9 +73,9 @@ The river.
 
 Gran\'s hand pauses over the deck, just for an instant, the way it always does on the last card, and you watch her face, and her face doesn\'t move, and she turns it over.
 
-Eight of clubs.
+Queen of clubs.
 
-Not just the flush. The *straight* flush. Eight, nine, ten, jack of clubs, and the king doesn\'t matter, nothing matters. The odds of that are something like one in three thousand. You\'ve had four in your life. ${g.last && g.last.nudged ? 'You watched the card come off the deck and you felt it, the way you always feel it now: a little click, somewhere behind your breastbone, like a lock turning.' : 'You felt it coming before Gran\'s hand moved: a little click, somewhere behind your breastbone, like a lock turning.'}
+Not just the flush. The *straight* flush. Eight, nine, ten, jack, queen of clubs, and the king doesn\'t matter, nothing matters. The odds of that are something like one in three thousand. You\'ve had four in your life. ${g.last && g.last.nudged ? 'You watched the card come off the deck and you felt it, the way you always feel it now: a little click, somewhere behind your breastbone, like a lock turning.' : 'You felt it coming before Gran\'s hand moved: a little click, somewhere behind your breastbone, like a lock turning.'}
 
 Hugh turns over his cards. Two kings. With the king on the turn, that\'s three of a kind. A great hand. On any other night at any other table, a winning hand.
 
@@ -119,7 +119,7 @@ Her voice is perfectly casual. Her eyes are not.
 Behind your breastbone, the lock turns, and turns again.`,
     choices: [
       { text: '"Yes. A window came down. Every piece of glass missed me." Tell her the truth. What could it hurt?', tag: 'The truth',
-        fx: g => { g.flag('achterberg6', 'truth'); g.hidden('halcyon_jules', 3); g.know('jules_glass', ['achterberg']); }, go: 'a2_ach_truth' },
+        fx: g => { g.flag('achterberg6', 'truth'); g.hidden('halcyon_jules', 3); g.know('achterberg_glass', ['jules'], 'You told Dr. Achterberg about the window. Every piece of glass missed you. She said, "How very fortunate."'); }, go: 'a2_ach_truth' },
       { text: '"No. I was home in Gladwyne that weekend." Lie, perfectly.', tag: 'Lie',
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to a stranger', on: { strong: 'a2_ach_lie', weak: 'a2_ach_lie', miss: 'a2_ach_lie' } } },
       { text: '"Why would a physicist go to a student concert?"', tag: 'Turn it',
@@ -174,13 +174,13 @@ DR. ACHTERBERG: Very good.
 
 She turns the water glass another quarter turn.
 
-DR. ACHTERBERG: I wasn\'t there for the music. I was taking measurements. My company had instruments on the roof of a building on Broad Street. We were measuring something in the air. It was a very good night for it.
+DR. ACHTERBERG: I wasn\'t there for the music. I was taking measurements. It was a very good night for it.
 
 jules: And did you get what you were looking for?
 
 DR. ACHTERBERG: Oh, my dear.
 
-She smiles. It\'s not a measurement anymore. It\'s something much older.
+She smiles. It\'s not a measurement anymore.
 
 DR. ACHTERBERG: I\'m looking at it.
 
@@ -196,13 +196,13 @@ She goes back to the table before you can answer.`,
 
 You\'ve won eleven hands in a row. You\'ve stopped looking at your cards before you bet. You\'ve stopped needing to. Every time, the cards come the way they come, and every time, they come for you: the flush on the river, the third queen on the turn, the one card in the deck that fills an inside straight. Callum has lost four thousand dollars and keeps apologizing to you for it. Father keeps laughing. Hugh has stopped talking.
 
-And every time: *click*. A door opening a little wider.
+And every time: *click*.
 
 Somewhere in your head, very quietly, a seven-year-old girl in a stone chapel is saying: *something\'s in here with me*.
 
 ${g.f('horse6') === 'letgo' ? 'You think about Mercutio, standing in his stall on three legs.' : g.f('hugh6') === 'throw' ? 'You think about Hugh\'s cracked racket lying on the grass.' : 'You think about every game you\'ve ever played. You can\'t remember a single loss. Not one.'}
 
-You want to know. You need to know. *Is it me?* Or is it the thing in the chapel?
+You want to see what it does when you give it nothing to work with.
 
 Gran deals. You look at your cards without picking them up.
 
@@ -213,8 +213,8 @@ The worst hand in poker.`,
       { text: 'Go all in. Seven-deuce. The worst hand there is. Let\'s see what it does.', tag: 'All in',
         fx: g => { g.flag('test6', 'allin'); g.hidden('jules_debt', 1); }, go: 'a2_allin' },
       { text: 'Fold. And fold the next one, and the next. Fold everything until somebody else wins.', tag: 'Fold',
-        fx: g => { g.flag('test6', 'fold'); }, go: 'a2_fold' },
-      { text: 'Don\'t test it. Don\'t touch it. Play the hand like a person, and lose it like a person.', tag: 'Play it straight',
+        fx: g => { g.flag('test6', 'fold'); g.hidden('jules_debt', 1); }, go: 'a2_fold' },
+      { text: 'Don\'t test it. Don\'t touch it. Play the hand like a person, and lose it like a person.', tag: 'Play it straight', fx: g => { g.flag('test6', 'straight'); },
         check: { kind: 'pool', attr: 'wits', skill: 'hustle', diff: 3, label: 'Play it straight', on: { crit: 'a2_straight', success: 'a2_straight', partial: 'a2_straight', fail: 'a2_straight', botch: 'a2_straight' } } }
     ]
   },
@@ -229,7 +229,7 @@ whitney: Jules-bug…
 
 hugh: She\'s *bluffing*. She\'s bluffing. Call. *Everybody* call.
 
-Hugh calls. Callum calls, bless him, because Callum always calls. Father calls, laughing, off his phone, eyes bright. Dr. Achterberg folds without looking. The judge is asleep.
+Hugh calls. Callum calls, because Callum always calls. Father calls, laughing, off his phone, eyes bright. Dr. Achterberg folds without looking. The judge is asleep.
 
 Gran turns the flop.
 
@@ -283,7 +283,7 @@ And yours, the hand you folded without looking, is the ace and king of hearts. B
 
 Nobody says anything. Callum laughs nervously. Father says *well, that\'s a new one*. Hugh stares at the cards.
 
-Dr. Achterberg doesn\'t write in her notebook this time. She just looks at you, with her hands folded, like a woman watching a sunrise she\'s been told about her whole life.
+Dr. Achterberg doesn\'t write in her notebook this time. She just looks at you, with her hands folded.
 
 Gran gathers up the cards. Very slowly. She looks at you.
 
@@ -309,7 +309,7 @@ And Gran turns over the cards you folded, like she does sometimes, to teach. A s
 
 You keep playing properly. You keep making the correct, careful, ordinary decisions. And somehow, every time, the correct decision is the one that wins. When you fold, the hand you folded would have lost. When you call, it wins. When you bet the careful amount, everyone folds to exactly that amount.
 
-You\'re not doing anything. You\'re just *sitting there*, being a person, and the world is arranging itself around you like iron filings around a magnet.
+You\'re not doing anything. You\'re just *sitting there*, being a person, and the cards keep finding you anyway.
 
 ${g.last && g.last.nudged ? 'Every time, behind your breastbone: *click*.' : ''}
 
@@ -328,7 +328,7 @@ Hugh has the last of his chips stacked in front of him, two thousand dollars, an
 
 hugh: All of it. All in. Come on, Jubilee. Come *on*. One time. Just once in your life, lose to me *once*.
 
-He says it like a joke. It isn\'t a joke. You can hear eighteen years in it, every board game and every tennis match and every swim race at the club. *Some Pembertons are lucky, Hugh, and some are just rich.*
+He says it like a joke. It isn\'t a joke. You can hear eighteen years in it, every board game and every tennis match and every swim race at the club.${g.f('hugh6') === 'win' ? ' *Some Pembertons are lucky, Hugh, and some are just rich.*' : ''}
 
 You look at your cards. You already know what they are. You knew before Gran dealt them.
 
@@ -400,7 +400,7 @@ Across the table, Gran is looking at you. Not at your cards, not at Hugh. At *yo
 
 You\'ve folded hands before tonight. This is the first time since you were seven that losing was your idea. Nothing stopped you.
 
-*Click*, behind your breastbone. But softer this time. Puzzled. Like a door somebody tried, and found unexpectedly locked from the inside.
+*Click*, behind your breastbone. But softer this time. Puzzled, almost. As if it reached for something and found you\'d already given it away.
 
 Dr. Achterberg writes in her notebook. Two lines this time.
 
@@ -428,13 +428,13 @@ callum: Jules. Can I say something?
 
 jules: Of course.
 
-callum: I know I\'m not… I know I\'m not the most exciting guy. I know that. I\'m not dumb. I\'m *boring*, I know. I row and I study and I like my parents. But I think about you all the time. Like, *all* the time. Even at five in the morning on the river.
+callum: I know I\'m not… exciting. I row and I study and I like my parents. I\'m not dumb. I know what I am. But I think about you all the time. Like, *all* the time. Even at five in the morning on the river.
 
 He turns and looks at you, and his face in the dark is open and earnest and terrified.
 
-callum: I love you. I\'ve wanted to say it for, like, a year. I love you, Jules.
+callum: I love you. I\'ve said it before. I don\'t think I ever said it right. I love you, Jules.
 
-Across the river, the city glows. Somewhere in it, ten miles east, there\'s a boy on a ninth floor who smells like smoke and lies to you with his whole face and came back from Kensington with burns on his arms, and who said, on a stoop, in the gold light, *what if it was?*
+Across the river, the city glows. Somewhere in it, ten miles east, there\'s a boy on a ninth floor who lies to you with his whole face.
 
 You\'ve told Callum you love him before. You\'ve said it back, when he signed cards, when he hung up the phone. You\'ve never said it first, and he\'s never said it like *this*, like it costs something.`,
     choices: [
@@ -453,7 +453,7 @@ You\'ve told Callum you love him before. You\'ve said it back, when he signed ca
 
 It comes out perfectly. Warm and certain and a little shy, exactly the way it should. He believes it completely. Everyone always does.
 
-He kisses you. Gently, carefully, the way he does everything, holding your face in his warm callused hands, and you kiss him back, and you close your eyes, and you think about a forehead against yours on a roof at 4:12 in the morning and nobody\'s hands touching anybody\'s face at all.
+He kisses you. Gently, carefully, the way he does everything, holding your face in his warm callused hands, and you kiss him back, and you close your eyes, and you think about a roof at 4:12 in the morning, and a boy who never touched your face at all.
 
 callum: Okay. Okay. Wow. Okay.
 
@@ -484,7 +484,7 @@ callum: But you don\'t—
 
 jules: I don\'t know. I\'m not going to say something I don\'t know. Not to you. You\'re the only person who\'s never once lied to me.
 
-He looks at you in the dark. Then he nods. He\'s hurt. You can see it. He\'s trying very hard not to let it be your problem, which is the most Callum thing in the world.
+He looks at you in the dark. Then he nods. He\'s hurt. You can see it. He\'s trying very hard not to let it be your problem. He\'s always been good at that.
 
 callum: Okay. That\'s okay. That\'s honest. I\'d rather have honest.
 
@@ -517,11 +517,11 @@ callum: The guy from your hall. With the pizza shirt. At the dorm that morning, 
 
 You don\'t answer. You can\'t. You\'ve never been asked a question you couldn\'t answer before.
 
-Callum nods, slowly. He takes his jacket back off your shoulders, carefully, and folds it over his arm.
+Callum nods, slowly. He reaches for the jacket on your shoulders, like he\'s going to take it back. He fixes the collar instead.
 
 callum: Okay. I\'ve got erg at six. The car\'s coming at one. I\'ll… I\'ll call you.
 
-He goes in. It\'s cold without the jacket. You don\'t go after it.`,
+He goes in. You stand at the wall in his jacket. It\'s worse than the cold would have been.`,
     next: 'a3_phone'
   },
 
@@ -538,7 +538,7 @@ You open your messages. You scroll past Mother and Father and Simone and Hugh an
 
 You\'ve texted him eleven times in six weeks. All of them about calculus.
 
-You type: *I won forty-six thousand dollars tonight*
+You type: *I won everything tonight*
 
 You delete it.
 
@@ -639,11 +639,9 @@ She doesn\'t say anything. She turns and walks, and you follow her, the way you 
 
 The chapel at Ravenscourt is small and gray and very old, built in 1891 by your grandfather\'s grandfather, with a slate roof and a bell nobody rings and a single stained-glass window over the altar. You haven\'t been inside since you were seven years old. Since the night Hugh locked you in it, as a joke, and went to bed, and forgot.
 
-Gran opens the door. It isn\'t locked. It\'s never locked. It wasn\'t locked that night either. You remember that now, standing on the step. You were seven, and you could have walked out at any time. You sat in the dark all night anyway, because you were sure that if you moved, something would notice.
+Gran opens the door. It isn\'t locked. It\'s never locked. It wasn\'t locked that night either. You never tried it. You were seven, and you could have walked out at any time. You sat in the dark all night anyway, because you were sure that if you moved, something would notice.
 
-Inside: cold stone, old wood, the smell of candle wax and dust and January. Gran sets the lantern on the altar. In its light, the stained-glass window glows dimly above you. You\'d forgotten the window. It shows a tall figure in white standing in a doorway, holding the door open with one hand, and behind the figure there\'s nothing, not sky, not stars, just a deep blue dark, and a single word on a ribbon at the bottom, in gold: **TENEO**.
-
-*I hold.*
+Inside: cold stone, old wood, the smell of candle wax and dust and January. Gran sets the lantern on the altar. In its light, the stained-glass window glows dimly above you. You\'d forgotten the window. It shows a tall figure in white standing in a doorway, one hand resting on the edge of the door, and behind the figure there\'s nothing, not sky, not stars, just a deep blue dark, and a single word on a ribbon at the bottom, in gold: **TENEO**.
 
 constance: Sit down, child.
 
@@ -681,7 +679,7 @@ constance: And before August?
 
 jules: …Most times.
 
-Gran is quiet for a long while. The candle flame in the lantern stands perfectly straight, perfectly still, not a flicker. ${g.hv('jules_debt') >= 3 ? 'You think about every loss tonight that was somebody else\'s. *It has to go somewhere, child.*' : ''}
+Gran is quiet for a long while. The candle flame in the lantern stands perfectly straight, perfectly still, not a flicker. ${g.hv('jules_debt') >= 4 ? 'You think about every loss tonight that was somebody else\'s. *It has to go somewhere, child.*' : ''}
 
 She looks up at the window. At the figure in the doorway. At the word on the ribbon.
 
@@ -718,7 +716,7 @@ Object.assign(EH.episodes.s01e06, {
     ] }
   ],
   onEnd: g => {
-    g.recap('At Ravenscourt, Jules couldn\'t lose a hand of cards, no matter what she did.');
+    g.recap(g.f('hugh_hand') === 'gave' ? 'At Ravenscourt, Jules couldn\'t lose a hand of cards, until she gave one away.' : 'At Ravenscourt, Jules couldn\'t lose a hand of cards, no matter what she did.');
     g.recap('A physicist named Dr. Achterberg asked where Jules was at 11:51 on August 22.');
     g.recap(g.f('ily') === 'too' ? 'Callum said "I love you." Jules said it back.' : g.f('ily') === 'thanks' ? 'Callum said "I love you." Jules said "Thank you."' : 'Callum said "I love you." Jules told him she didn\'t know what it meant.');
     g.recap('In the chapel at Ravenscourt, Constance watched the die come up six, and said, "It\'s started, then."');

@@ -6,7 +6,7 @@ EH.episode({
   xp: 4,
   previously: g => [
     'You have never lost a game of cards in your life.',
-    'On the roof at 4:12, Sam Kearney leaned in. You said, "Not like this."',
+    g.f('roof_end') === 'lean' ? 'On the roof at 4:12, Sam Kearney leaned in. You said, "Not like this."' : 'On the roof at 4:12, you and Sam Kearney watched the sun come up.',
     'He came back from Kensington bleeding. You stitched him on the bathroom floor.',
     g.f('stoop') === 'whatif' ? 'On a stoop on Mifflin Street, he said, "What if it was?"' : 'You went to Sunday dinner on Mifflin Street, and his grandmother handed you the macaroni first.'
   ],
@@ -36,7 +36,7 @@ And something is *watching*. You\'ve never said that one out loud. Not to Gran. 
 
 And right now, on this roof, with his hand around yours on the gravel, it\'s gone quiet.
 
-For the first time you can remember, nothing is watching. Or it\'s watching *very* closely, holding its breath, waiting to see what you do. You honestly can\'t tell which.
+For the first time you can remember, nothing is watching.
 
 Over the Delaware, the sky starts thinking about morning.`,
       choices: [
@@ -50,7 +50,7 @@ Over the Delaware, the sky starts thinking about morning.`,
     },
     cold_end: {
       night: true,
-      text: g => `${{ him: 'You wanted him. Not the idea of him, not the story of the boy from South Philly who carried your refrigerator. *Him.* The sweat and the ear and the terrible jokes. It\'s humiliating. You have never once been humiliated in your life, and you\'re finding you don\'t mind it.', choice: 'You wanted it to be a *choice*. One thing in your life that you picked and nothing picked for you. You don\'t know if that\'s possible. You don\'t know if anything you\'ve ever done has been yours.', kept: 'You wanted to know if he\'d stay if you weren\'t lucky. If you fell, and nothing caught you, and you were just a person on a roof. You\'ve never been able to test it. You\'ve never once been allowed to fall.' }[g.f('roof_want')]}
+      text: g => `${{ him: 'You wanted him. Not the idea of him, not the story of the boy from South Philly who carried your minifridge up nine flights. *Him.* The sweat and the ear and the terrible jokes. It\'s humiliating. You have never once been humiliated in your life, and you\'re finding you don\'t mind it.', choice: 'You wanted it to be a *choice*. One thing in your life that you picked and nothing picked for you. You don\'t know if that\'s possible. You don\'t know if anything you\'ve ever done has been yours.', kept: 'You wanted to know if he\'d stay if you weren\'t lucky. If you fell, and nothing caught you, and you were just a person on a roof. You\'ve never been able to test it. You\'ve never once been allowed to fall.' }[g.f('roof_want')]}
 
 The sun comes up over the Delaware. Neither of you moves.
 
@@ -67,7 +67,7 @@ You won\'t remember deciding to do that either.`,
       card: { kind: 'act', label: 'Act One', title: 'The Other Side of the Hall' },
       loc: 'CARDONE HALL · ROOM 9-11',
       clock: { day: 'Fri', date: 'Oct 2', time: '3:40 PM' },
-      text: g => `It\'s October. The trees on Liacouras Walk have started to go, and the whole campus smells like cold coffee and leaf rot and the Chinese food truck on 12th Street, and you\'ve been at Temple for six weeks, and it\'s been six weeks since anything in your life went the way it was supposed to.
+      text: g => `It\'s October. The trees on Liacouras Walk have started to turn. The campus smells like cold coffee, leaf rot and the Chinese food truck on 12th Street. You\'ve been at Temple six weeks, and nothing in those six weeks has gone the way it was supposed to.
 
 You are packing a weekend bag for Ravenscourt.
 
@@ -255,7 +255,7 @@ simone: Okay. Then I\'ll keep it. And you\'ll know I\'m keeping it. And when you
 
 Of course he\'s there. He\'s always there. He\'s leaning in his doorway in a gray Temple T-shirt, eating a bowl of cereal at a quarter to five in the afternoon, and his arms are fine.
 
-That\'s the first thing you see. His arms are *fine*. Two weeks ago, on the bathroom floor, they were burned and blistered, and you put nine stitches in one of them with your own hands. Now the skin is smooth and a little pink, like a scar that\'s had a year.
+That\'s the first thing you see. His arms are *fine*. Three weeks ago, on the bathroom floor, they were burned and blistered, and you put nine stitches in one of them with your own hands. Now the skin is smooth and a little pink, like a scar that\'s had a year.
 
 sam: Pemberton.
 
@@ -285,7 +285,7 @@ You say it lightly. It doesn\'t come out lightly. It comes out sounding exactly 
           check: { kind: 'move', move: 'Read the Room', attr: 'charm', skill: 'banter', label: 'Be normal at him', on: { strong: 'a1_hall_normal', weak: 'a1_hall_normal', miss: 'a1_hall_normal' } } },
         { text: '"Your arms healed." Just that. Watch his face.', tag: 'His arms',
           check: { kind: 'move', move: 'Read the Room', attr: 'wits', skill: 'investigate', label: 'Watch him', on: { strong: 'a1_hall_arms', weak: 'a1_hall_arms', miss: 'a1_hall_arms' } } },
-        { text: 'Say nothing else. Nod once, the way his father nods at cab drivers. Go.', tag: 'Go',
+        { text: 'Say nothing else. Nod once, the way his father nodded at you across the dinner table. Go.', tag: 'Go',
           fx: g => { g.flag('hall6', 'go'); }, go: 'a1_hall_go' }
       ]
     },
@@ -295,7 +295,7 @@ You say it lightly. It doesn\'t come out lightly. It comes out sounding exactly 
 
 He blinks, like nobody\'s ever asked him that.
 
-sam: Uh. Ciro\'s, Saturday. Calc problem set. Nik\'s making me do a thing on the roof Sunday, with a thermometer. Vinnie owes me a phone call. My grandmother wants me to come light a candle with her at St. Monica\'s, which, I don\'t know why, she\'s been weird all week.
+sam: Uh. Ciro\'s, Saturday. Calc problem set. Nik\'s making me do a thing on the roof Sunday, with a thermometer. Vinnie owes me a phone call. My Nonna wants me to come light a candle with her at St. Monica\'s, which, I don\'t know why, she\'s been weird all week.
 
 He shrugs, holding the cereal.
 
@@ -340,7 +340,7 @@ It\'s a cold, specific feeling, like setting down a card and realizing it\'s the
       next: 'a1_drift'
     },
     a1_hall_go: {
-      text: `You nod once, the way you\'ve watched his father nod at other cab drivers, and you go.
+      text: `You nod once, the way his father nodded at you across the dinner table on Sunday, and you go.
 
 You can feel him watching you all the way to the elevator. It\'s not the other kind of watching, the kind you\'ve felt your whole life, the room-behind-you kind. It\'s just a boy, in a doorway, with a bowl of cereal, looking at you.
 
@@ -359,11 +359,11 @@ You look past him, at his doorway. At the gray T-shirt and the bowl of cereal an
 
 The doors close.
 
-You stand very still in the elevator, all nine floors down, holding your garment bag, and you don\'t breathe.
+You stand very still in the elevator, all the way down, holding your garment bag, and you don\'t breathe.
 
 When the doors open in the lobby, you stand there and you think: *You\'re tired. You haven\'t slept properly since August. It was Nik in the towel. Nik and Kearney have the same haircut, the same build—*
 
-They don\'t. Nik is five foot seven.
+Nik was on the floor of their room with a notebook. You saw him.
 
 ${g.S.samSheet && g.S.samSheet.drift >= 9 ? 'And the shower caddy. You keep seeing it. Just before the doors met, it was white with frost.' : ''}
 
@@ -449,6 +449,10 @@ catherine: Don\'t use the cheap cheese.
 
 It might be a joke. You\'ve never been able to tell with her. You look up, and she\'s already turning away, going up the stairs with her hand on the banister, and you can\'t see her face.
 
+She stops on the landing without turning around.
+
+catherine: Wear the blue tomorrow.
+
 You put the card in your coat pocket next to Gran\'s die.`,
       next: 'a1_hub'
     },
@@ -516,7 +520,7 @@ You take him out across the back fields, down along the line of the river, the t
 
 There\'s a stone wall at the end of the field. Four feet. You\'ve jumped it a hundred times.
 
-You\'ve never once, in your life, wanted to fall.`,
+You have never, until this second, wanted to fall.`,
       choices: [
         { text: 'Take the wall. Like always.', tag: 'Jump',
           check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 3, label: 'The wall', on: { crit: 'a1_horse_jump', success: 'a1_horse_jump', partial: 'a1_horse_jump', fail: 'a1_horse_jump', botch: 'a1_horse_jump' } } },
@@ -532,7 +536,7 @@ You pull him up in the next field. He blows and dances and tosses his head, deli
 
 Everything was perfect. It always is.
 
-You sit there on him in the cold, breathing hard, and you think about the dice you just rolled in your head, the way you always roll them, and you think: *it always comes up perfect. It always comes up perfect, Jules. When was the last time anything came up anything else?*
+You sit there on him in the cold, breathing hard, and you try to think of the last time anything came up anything else.
 
 You can\'t remember.`,
       next: '@hub'
@@ -648,13 +652,13 @@ jules: Gran.
 
 You sit on the low wall across from her. She smokes. The river goes by below, slow and brown and full of leaves.
 
-constance: You\'ve stopped losing at anything at all, then.
+constance: You can\'t lose anymore.
 
 It isn\'t a question. It\'s never a question, with Gran.
 
 ${g.f('horse6') === 'letgo' ? 'constance: Ostrowski tells me Mercutio is lame.\n\nYou don\'t say anything. She looks at you through the smoke.\n\nconstance: And that you landed on your feet.\n\n' : ''}${g.f('hugh6') === 'throw' ? 'constance: Your brother broke a racket this morning.\n\njules: I tried to let him win.\n\nconstance: Yes. I imagine you did.\n\n' : ''}jules: I never lost before, either.
 
-constance: Before, you won. Now nothing is permitted to happen to you. There\'s a difference, and you know it, or you wouldn\'t be sitting on my wall at four o\'clock looking like a girl who\'s seen a ghost.
+constance: Before, you won. Now nothing is permitted to happen to you. There\'s a difference, and you know it, or you wouldn\'t be sitting on my wall at four o\'clock.
 
 She taps the ash over the wall into the boxwoods.
 
@@ -666,13 +670,13 @@ constance: Of course it did.
 
 She says it the way you\'d say *of course it rained*.
 
-constance: Tonight, at the table, I want you to watch yourself. Not the cards. *Yourself*. And after, when the house is asleep, you and I will talk.
+constance: Tonight, watch yourself. Not the cards. *Yourself*. Afterward, when the house is asleep, we\'ll talk.
 
 jules: About what?
 
 Gran looks at you through the smoke. Then she stubs out the cigarette, exactly half smoked, the way she always does.
 
-constance: About your grandfather\'s grandfather, child. And a stopped engine. And a promise this family made that you\'re old enough now to hear about.
+constance: Whatever you think to ask me. I won\'t lie to you, child. Ask well.
 
 She stands up, with her hand on the iron chair.
 
