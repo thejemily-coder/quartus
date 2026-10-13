@@ -134,7 +134,7 @@ grace: First place.
 
 She looks up from the clipboard. She looks right at Jules.
 
-grace: Pemberton. As the Liberty Bell. You painted your *arms*. I don\'t even like you and that\'s the best thing I\'ve ever seen.
+grace: Pemberton. As the Liberty Bell. You painted your *arms*. I don\'t even like you. First place.
 
 The lounge erupts. Jules goes red under the gold. She stands there while seven Blurs and a Gritty and a T-rex cheer for her, and her face is doing something you\'ve never seen it do: she\'s *delighted*. Plainly, openly delighted, like a little kid, for one second, before she gets it back under control.
 
@@ -238,7 +238,7 @@ jules: Come with me. I want to show you something.`,
 
 It\'s forty-four degrees. Halloween. The whole city is lit up below you, orange and gold and every window glowing, and somewhere out toward Fishtown there are fireworks going up, little green and red flowers bursting over the rooftops, very far away, with no sound.
 
-She walks to the parapet, where she stood on the night of the blackout. She stands there in her bell dress with her gold arms, shivering. You take off your ${{ blur: 'flannel overshirt', ghostbuster: 'jumpsuit jacket', cabbie: 'father\'s jacket' }[g.f('costume8')]} and put it on her shoulders. She lets you.
+She walks to the parapet, where she stood on the night of the blackout. She stands there in her bell dress with her gold arms, shivering. You take off your ${{ blur: 'hoodie', ghostbuster: 'hoodie', cabbie: 'father\'s jacket' }[g.f('costume8')]} and put it on her shoulders. She lets you.
 
 jules: You asked me what I meant.
 
@@ -254,7 +254,7 @@ ${g.f('femi_reply') ? 'In your hand, the phone is dark. You keep looking at it. 
 
 jules: I\'ve been trying to work out how to say it since the lounge. Since Ravenscourt. I\'ve been trying to say it right, and I can\'t, because I\'ve never once said anything to anyone that I didn\'t already know the end of.
 
-She turns around. Her back is to the city. Her face is very close to yours, and her eyes are wet, and she isn\'t crying, she doesn\'t, but they\'re wet.
+She turns around. Her back is to the city. Her face is very close to yours, and her eyes are bright.
 
 jules: So I\'m going to do this instead. And you\'re going to let me. And then I\'ll tell you what I meant. Okay?
 
@@ -316,9 +316,9 @@ jules: That\'s what I meant.
 
 sam: Yeah.
 
-jules: *What if it was me.* That\'s what I meant. What if it was me you came back to the ninth floor for. I couldn\'t— I\'ve never asked anybody for anything. I didn\'t know how to ask.
+jules: *What if it was me.* That\'s what I meant. Some of it. I couldn\'t— I\'ve never asked anybody for anything. I didn\'t know how to ask.
 
-sam: It was always you.
+sam: It was you. It\'s been you since the minifridge.
 
 jules: I\'m going to end it with Callum. Tomorrow. In person. He deserves that.
 
@@ -345,7 +345,7 @@ The last one is from 11:51.
 
 The call is from 11:52. It lasted four seconds. No voicemail. Just four seconds of somebody on the other end, and then nothing.
 
-You look at Jules. She sees your face. Everything she just felt leaves hers, all at once, like a light going off.
+You look at Jules. She sees your face. Everything she just felt leaves hers, all at once.
 
 jules: What is it.
 
@@ -398,7 +398,7 @@ The other one is younger. He doesn\'t fight. He pulls a second dart gun from his
 
 It goes in like a bee sting. And then a wave of warm comes up your leg, heavy and soft and sweet, and the stairwell tilts.
 
-You don\'t stop. You can\'t stop. You grab the laundry cart and pull it over, and it goes over on its side with a crash that echoes up and down all eleven floors, and Femi spills out onto the landing, limp, and you fall on top of him, half-protecting him, half because your leg\'s gone.
+You don\'t stop. You can\'t stop. You grab the laundry cart and pull it over, and it goes over on its side with a crash that echoes up and down all fourteen floors, and Femi spills out onto the landing, limp, and you fall on top of him, half-protecting him, half because your leg\'s gone.
 
 Above you, the fire door to the ninth floor bangs open, and there\'s music and light and a Blur in a green shirt yelling *yo, what the hell*, and the two men look at each other, and they go. Down the stairs. Fast and quiet. The younger one helping the older one, who\'s holding his throat. They take the cart.
 
@@ -458,7 +458,7 @@ The world comes back. The two men are holding nothing, standing over an empty ca
 
 Then they go. Down the stairs, fast and quiet, taking the cart.
 
-Your nose is pouring. It doesn\'t matter. Nothing matters.`,
+Your nose is pouring. You don\'t wipe it.`,
     next: 'a3_holding'
   },
 
@@ -478,9 +478,9 @@ ${g.hurt('dart8') ? 'Your own body is heavy and warm and slow from the dart. You
 
 There\'s a puncture in the side of his neck, a tiny one, a dark bead of blood. And when you shift him on your lap, his hoodie rides up, and there are more: on his hip, through a neat slit somebody cut in his jeans, three small holes, deep, with the skin around them bruised purple-black. The kind of holes a needle as long as a pencil leaves.
 
-*They took something out of him.* While he was lying here. While he could see it. While he could feel it.
+*They took something out of him.*
 
-Above you, the fire door is open, and people are on the landing, Devontae and Simone and Blurs, and Simone is on the phone saying *Cardone Hall, ninth floor, Stairwell B, he\'s not breathing right, please*, and somebody is crying, and you don\'t look at any of them.
+Above you, the fire door is open, and people are on the landing, Devontae and Simone and Blurs, and Simone is on the phone saying *Cardone Hall, ninth floor, Stairwell B, somebody\'s hurt, I can\'t— Sam, who\'s hurt?*, and somebody is crying, and you don\'t look at any of them.
 
 You look at Femi.
 
@@ -538,13 +538,13 @@ It can\'t wait. You don\'t know that yet.`,
 
 It\'s not dramatic. You keep waiting for it to be. It\'s just that his chest is moving, very slightly, and then it moves a little less, and then it doesn\'t. His fingers in yours go still. His eyes are still open. They\'re still on you.
 
-And then something happens that you\'ll think about for the rest of your life.
+And then something happens.
 
 The people on the landing *see* him.
 
 All of them. All at once. Devontae, who has been standing three feet away for ten minutes looking at you and the empty air in your lap, says *oh my God* in a voice you\'ve never heard a person use. Simone drops her phone. A girl in a Barbie costume screams. Kyle the T-rex sits down in the doorway, finally, his inflatable legs folding under him.
 
-For eleven weeks, nobody could see Femi Ojo. Now everybody can.
+For ten weeks, nobody could see Femi Ojo. Now everybody can.
 
 Simone kneels down on the concrete beside you in her Van Helsing coat. She looks at Femi\'s face. She looks at you.
 
@@ -558,11 +558,11 @@ simone: I never saw him. I\'ve been in that building every day since August, and
 
 sam: Nobody did.
 
-Down the hallway, the elevator dings. Footsteps. Running. And then, behind you, in the doorway full of Blurs, in a dress the color of old bronze with a black crack painted down it, with your ${{ blur: 'flannel', ghostbuster: 'jacket', cabbie: 'father\'s jacket' }[g.f('costume8')]} around her shoulders, Jules.
+Down the hallway, the elevator dings. Footsteps. Running. And then, behind you, in the doorway full of Blurs, in a dress the color of old bronze with a black crack painted down it, with your ${{ blur: 'hoodie', ghostbuster: 'hoodie', cabbie: 'father\'s jacket' }[g.f('costume8')]} around her shoulders, Jules.
 
 She looks at you. She looks at Femi. She doesn\'t say anything at all.
 
-She comes down the stairs and kneels on your other side and puts her arms around you, and her gold paint comes off on your neck, and you put your face against her painted shoulder, and you make a sound you have never made in your life.`,
+She comes down the stairs and kneels on your other side and puts her arms around you, and her gold paint comes off on your neck, and you put your face against her painted shoulder, and you make a sound you don\'t recognize.`,
     next: 'a4_saints'
   },
 
@@ -593,7 +593,7 @@ You don\'t remember kneeling. You\'re kneeling. You\'ve got his face in your han
 
 His fingernails are torn. The fingertips of his right hand are raw. Under the hem of his hoodie, through a neat slit somebody cut in his jeans, there are three small holes in his hip, deep, bruised black. On the side of his neck, a tiny puncture with a single bead of dried blood.
 
-*They took something out of him.* And then they put him here. At your door. On purpose.
+*They took something out of him.* In the stairwell, where he texted from, where nobody goes. And then they carried him back out here and put him at your door. On purpose.
 
 You look up. And for the first time all night, the hallway sees him. All of them, at once. You watch it happen: the attention landing on him like a light switching on, a girl in a Barbie costume beside you looking down and seeing him, finally, now that there\'s nothing left in him for the eye to slide off, and screaming.
 
@@ -614,11 +614,13 @@ His wristband, cut off. **HCW-COHORT 2 · 031 · RESIDENTIAL.** And a yellow sti
 *M.R. ALIVE. RM 714.*
 *THEY CALL YOU 17.*
 
-He came to give you this. He walked from the Navy Yard to North Philly, five miles, at night, with people following him, to give you this.
+He came to give you this. He walked from the Navy Yard to North Philly, six miles, at night, with people following him, to give you this.
+
+In August he told you: *If something happens to me, you\'ll be the one who notices.*
 
 You were on the roof.
 
-Somebody\'s calling 911. Somebody\'s crying. Somebody turns the music off, finally, and the silence on the ninth floor is the loudest thing you\'ve ever heard.`,
+Somebody\'s calling 911. Somebody\'s crying. Somebody turns the music off, finally. In the quiet you can hear the fan in Kyle\'s T-rex costume, still running.`,
     next: 'a4_saints'
   }
 });

@@ -11,7 +11,7 @@ EH.episode({
       card: { kind: 'cold' },
       night: true,
       loc: 'NAVY YARD · BUILDING 7',
-      clock: { day: 'Fri', date: 'Oct 30', time: '11:52 PM' },
+      clock: { day: 'Sat', date: 'Oct 31', time: '9:02 PM' },
       text: `> THE CAMERA.
 
 The room is white and quiet and very clean. It has a bed with good sheets, a desk with a bowl of fruit nobody has touched, a television playing a cooking show with the sound off, and, high in the corner where the wall meets the ceiling, a small black dome with a red light in it.
@@ -20,11 +20,11 @@ Femi Ojo is sitting on the edge of the bed in a gray Halcyon sweatshirt with the
 
 **HCW-COHORT 2 · 031 · RESIDENTIAL.**
 
-He\'s been here since four o\'clock. At five, a woman in a lab coat brought him a tray of food and sat across from him while he ate it, with a stopwatch. *Seven seconds,* she said, delighted, when she looked down at her clipboard and then looked up and couldn\'t find him for a moment, though he hadn\'t moved. *Seven, Femi. You\'re getting so much better.*
+He\'s been here since four o\'clock yesterday. At five, a woman in a lab coat brought him a tray of food and sat across from him while he ate it, with a stopwatch. *Seven seconds,* she said, delighted, when she looked down at her clipboard and then looked up and couldn\'t find him for a moment, though he hadn\'t moved. *Seven, Femi. You\'re getting so much better.*
 
-At nine, they took more blood. Eight vials. Then a ninth, from his hip, with a needle as long as a pencil, and they gave him something first that made the room go soft and bright, and he remembers lying on his side on a paper sheet looking at the wall while somebody behind him said *again* in a calm voice.
+This morning, they took more blood. Eight vials. Then a ninth, from his hip, with a needle as long as a pencil, and they gave him something first that made the room go soft and bright, and he remembers lying on his side on a paper sheet looking at the wall while somebody behind him said *again* in a calm voice.
 
-At eleven, he went to the bathroom down the hall, and nobody walked with him. Nobody noticed him go. On the way back, he passed a door with a narrow window in it, and he looked in.
+At eight, he went to the bathroom down the hall, and nobody walked with him. Nobody noticed him go. On the way back, he passed a door with a narrow window in it, and he looked in.
 
 A girl was sitting on a bed. Dark curly hair. A gap in her teeth. She was looking at the ceiling light, and the ceiling light was flickering, faster and faster, the way lightbulbs flicker in the second before they pop.
 
@@ -34,9 +34,9 @@ She mouthed something. Two words. He read it the way you read lips across a lect
 
 *Get out.*
 
-He\'s been sitting on the bed for forty minutes since then. Turning the band on his wrist.
+He\'s been sitting on the bed for an hour since then. Turning the band on his wrist.
 
-At 11:52, he stands up. He takes off the gray sweatshirt and puts on his own hoodie, his Temple Econ hoodie, the one that hangs off him now like it\'s on a hanger. He opens the door. The hallway is empty and white and lit. He walks down it. A man in a polo shirt comes around the corner carrying a coffee, and walks right past him, close enough to touch, and doesn\'t look.
+At 9:02, he stands up. He takes off the gray sweatshirt and puts on his own hoodie, his Temple Econ hoodie, the one that hangs off him now like it\'s on a hanger. He opens the door. The hallway is empty and white and lit. He walks down it. A man in a polo shirt comes around the corner carrying a coffee, and walks right past him, close enough to touch, and doesn\'t look.
 
 Femi keeps walking. Through a door. Down a stairwell. Out a fire exit into the cold, into the dark of the Navy Yard, toward the lights of Broad Street.
 
@@ -52,11 +52,11 @@ BRANNIGAN: I see him.
 
 ASSISTANT: Do we—
 
-BRANNIGAN: No. Let him run.
+BRANNIGAN: No. He\'ll want to tell someone. Let him.
 
 He sips his tea.
 
-BRANNIGAN: Let\'s see who he runs to.`,
+BRANNIGAN: And have a car follow him up Broad. He didn\'t take a coat.`,
       next: 'titles'
     },
 
@@ -74,7 +74,7 @@ There are fake cobwebs on every doorframe, a strobe light in the bathroom that G
 
 And it\'s the year of the Blur.
 
-You know this because, by two-thirty in the afternoon, you\'ve already seen *four* Broad Street Blurs on the ninth floor alone. Devontae\'s going as the Blur: a green Ciro\'s T-shirt he bought on Passyunk, a black bandana, and a Wawa bag. The twins in 9-03 are going as *the Blur and the bus*. A girl from the eighth floor came up to borrow a hair dryer dressed as the Blur in a cardboard Liberty Cab.
+You know this because, by two-thirty in the afternoon, you\'ve already seen *four* Broad Street Blurs on the ninth floor alone. Devontae\'s going as the Blur: a green Ciro\'s T-shirt he bought off a delivery guy for twenty bucks, a black bandana, and a Wawa bag. The twins in 9-03 are going as *the Blur and the bus*. A girl from the eighth floor came up to borrow a hair dryer dressed as the Blur in a cardboard Liberty Cab.
 
 You stand in your doorway and watch a sophomore in a Ciro\'s shirt do a slow-motion run down the hallway making *whoosh* noises while his friends film it.
 
@@ -219,7 +219,9 @@ bree: He\'s okay. He\'s not okay. He\'s okay. He got a job at the ShopRite with 
 
 ${g.f('teddy7') === 'none' ? 'She doesn\'t say *because of you*. She doesn\'t have to. You hear it anyway.' : ''}
 
-bree: He says thank you, by the way. For your dad. He won\'t say it. So I\'m saying it.
+Then Teddy\'s voice comes out of her mouth, exact, tired: *Tell him thanks. For his dad.*
+
+bree: He won\'t say it to you. So I\'m playing it.
 
 Another pause.
 
@@ -227,9 +229,9 @@ bree: Come to Port Richmond some time, Wawa. Come eat pierogi. Heck would love i
 
 sam: Maybe.
 
-bree: Not maybe. *Come.* People keep dying in this city. Come while everybody\'s still here.
+bree: Not maybe. *Come.* Come while Heck\'s still a pumpkin.
 
-She hangs up. You think about that one a long time after.`,
+She hangs up.`,
       next: '@hub'
     },
 
@@ -252,7 +254,7 @@ You wake up at seven with your heart going.`,
 
 It\'s a student production, sixteen people in costumes from the Goodwill on Lehigh, a five-piece band in the pit that\'s playing at least two different songs at once, and Simone Okonkwo-Hayes in a long black coat as Van Helsing, singing a forty-second power ballad called "Stake Through My Heart (Metaphorically)" with such total commitment that a man in the third row starts crying, possibly from laughter, possibly not.
 
-${g.f('did_hal_jules') ? 'You sit with Jules. She asked. She\'s in a long dark coat buttoned to the throat, so you can\'t see the costume, and gold paint on her cheekbones, and she sits next to you in the dark with her shoulder against yours, and when Simone hits the high note at the end of the second act, Jules grabs your arm with both hands and squeezes so hard you\'ll have bruises.' : 'You end up sitting with Jules by accident. She\'s in a long dark coat buttoned to the throat, so you can\'t see the costume, and gold paint on her cheekbones, and when Simone hits the high note at the end of the second act, Jules grabs your arm without seeming to notice she\'s done it.'}
+${g.f('did_hal_jules') ? 'You sit with Jules. She asked. She\'s in a long dark coat buttoned to the throat, so you can\'t see the costume, and gold paint on her cheekbones, and she sits next to you in the dark with her shoulder against yours, and when Simone hits the high note at the end of the first act, Jules grabs your arm with both hands and squeezes so hard you\'ll have bruises.' : 'You end up sitting with Jules by accident. She\'s in a long dark coat buttoned to the throat, so you can\'t see the costume, and gold paint on her cheekbones, and when Simone hits the high note at the end of the first act, Jules grabs your arm without seeming to notice she\'s done it.'}
 
 Nik, on your other side, is filming the whole thing on his phone with his proton pack on, which blocks the view of four people behind him, all of whom have decided to let it go.
 

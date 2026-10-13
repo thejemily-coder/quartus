@@ -30,7 +30,7 @@ And over his shoulder, through the lounge doorway, you watch the elevator open a
 
 Two men in gray polo shirts. And between them, in a dark overcoat, with a tablet under his arm, calm as a man arriving at a dinner party: Brannigan.
 
-He shakes the lead detective\'s hand like they\'re old friends. You can\'t hear what he says. You can see the detective nodding. You can see Brannigan gesture, gently, sadly, toward the ${g.f('femi_end') === 'arms' ? 'stairwell' : 'hallway'}. You can read his lips, because you\'ve learned to read lips this semester across a hundred lecture halls:
+He shakes the lead detective\'s hand like they\'re old friends. You can\'t hear what he says. You can see the detective nodding. You can see Brannigan gesture, gently, sadly, toward the ${g.f('femi_end') === 'arms' ? 'stairwell' : 'hallway'}. You catch pieces of it between the radios:
 
 *study participant. left against medical advice. experimental compound. adverse reaction. such a tragedy.*
 
@@ -61,7 +61,7 @@ BRANNIGAN: You must be Sam. I\'m so sorry about your friend. He talked about you
     enter: g => { g.flag('brannigan8', 'lunge'); g.heat('mikey', 2); g.bond('mikey', { tension: 1 }); g.hidden('halcyon_heat', 1); },
     text: `You\'re up before you decide to be. You\'re past Mikey before he can turn. You get one hand on Brannigan\'s overcoat, on his collar, and you shove him back against the lounge wall hard enough that the framed floor-rules poster falls and the glass breaks.
 
-He doesn\'t fight back. That\'s the worst part. He doesn\'t raise a hand. He just lets you pin him there, looking at you with that kind, patient face, while the room goes silent and every Blur on the ninth floor watches.
+He doesn\'t fight back. He doesn\'t raise a hand. He just lets you pin him there, looking at you with that kind, patient face, while the room goes silent and every Blur on the ninth floor watches.
 
 BRANNIGAN: It\'s all right. It\'s all right, son. Grief does this.
 
@@ -69,7 +69,7 @@ Then Mikey\'s arms are around you from behind, and he\'s pulling you off, and th
 
 BRANNIGAN: No harm done, Officer. He\'s in shock. They were close.
 
-He straightens his collar. He looks at you over Mikey\'s arm, and for one second, just one, the kindness goes out of his eyes like a light being switched off, and what\'s left behind is perfectly flat and perfectly patient.
+He straightens his collar. He looks at you over Mikey\'s arm, and for one second, just one, the kindness goes out of his eyes, and what\'s left is flat and patient.
 
 BRANNIGAN: Get some rest, Sam.
 
@@ -174,7 +174,7 @@ mikey: Sammy. How does a Halcyon man know your *name*?`,
 
 By four, the police have let most of the floor go to bed. Nobody goes to bed. The ones who live here sit in the lounge, still in their costumes, because nobody can make themselves take them off and nobody can make themselves leave.
 
-It\'s just the five of you, in the end. You. Nik, in his Ghostbusters jumpsuit, with his proton pack on the floor beside him, rocking a little, breathing in for four. Grace, in her scrubs, sitting very straight with her hands folded, staring at nothing. Simone, in her Van Helsing coat, with her makeup in black rivers down her face. And Jules, in the Liberty Bell dress, the gold paint gone streaky and dull, ${g.f('costume8') === 'cabbie' ? 'your father\'s jacket' : 'your shirt'} still around her shoulders.
+It\'s just the five of you, in the end. You. Nik, in his Ghostbusters jumpsuit, with his proton pack on the floor beside him, rocking a little, breathing in for four. Grace, in her scrubs, sitting very straight with her hands folded, staring at nothing. Simone, in her Van Helsing coat, with her makeup in black rivers down her face. And Jules, in the Liberty Bell dress, the gold paint gone streaky and dull, ${g.f('costume8') === 'cabbie' ? 'your father\'s jacket' : 'your hoodie'} still around her shoulders.
 
 Grace talks first. She talks the way she talks when she\'s scared: clinically.
 
@@ -237,7 +237,7 @@ nik: No.
 
 sam: Move, Nik.
 
-nik: *No.* You\'re on the *list*, Sam. You heard him. *They call you 17.* You walk into that building, and you\'re the next one in a laundry cart.
+nik: *No.* Salvatore. You\'re on the *list*. You heard him. *They call you 17.* You walk into that building, and you\'re the next one in a laundry cart.
 
 sam: Move.
 
@@ -288,18 +288,18 @@ It\'s the only thing you can feel.`,
 
 It\'s cold. November cold, the real thing, not the Slip. The sky over the Delaware is going from gray to pale gold. Somebody\'s left a Solo cup on the parapet from last night, half full, with a skin of frost on it.
 
-${g.f('femi_pocket') || g.f('femi_end') === 'found' ? 'You take the sticky note out of your pocket. You unfold it. You read it again, in the first light, in Femi\'s small, neat, hurried handwriting.' : 'At 6:41, your phone buzzed. A text. From Femi\'s number. Sent at 11:49 last night, from the stairwell, stuck somewhere in the network all night, finally coming through now that he\'s gone. You read it on the roof, in the first light.'}
+${g.f('femi_pocket') || g.f('femi_end') === 'found' ? 'You take the sticky note out of your pocket. You unfold it. You read it again, in the first light, in Femi\'s small, neat, hurried handwriting.' : 'Grace gave it to you at five. She took it out of his hoodie pocket before the ME bagged him and pressed it into your hand without a word. You unfold it on the roof, in the first light.'}
 
 *M.R. ALIVE. RM 714.*
 *THEY CALL YOU 17.*
 
-Marisol Reyes is alive, in room 714 of Building 7 at the Navy Yard. And you have a number.
+Marisol is alive. And you have a number.
 
 *17.*
 
-You think about the APERTURE screen you saw through the glass on the night of the Hitch. *SUBJECT FIELD.* You think about Brannigan\'s tablet. A list of codes. You think about Femi\'s wristband. *031.* You think about how many numbers there are between 1 and 31, and how many after, and how many people in this city are walking around right now with a number they don\'t know they have.
+You think about the APERTURE screen you saw through the glass on the night of the Hitch. *SUBJECT FIELD.* You think about Brannigan\'s tablet. A list of codes. You think about Femi\'s wristband. *031.* You think about how many other people in this city have a number they don\'t know about.
 
-You think: *they call you 17*, and you think about the fact that Femi knew that, that he *saw* it, on a screen or a file or a door, and he walked five miles in the dark to tell you, and you ${g.f('femi_end') === 'found' ? 'were on the roof' : 'were too late anyway'}.
+You think: *they call you 17*, and you think about the fact that Femi knew that, that he *saw* it, on a screen or a file or a door, and he walked six miles in the dark to tell you, and you ${g.f('femi_end') === 'found' ? 'were on the roof' : 'were too late anyway'}.
 
 At seven o\'clock, the bells at St. Malachy\'s, on 11th Street, start ringing for All Saints' Day. You\'ve never heard them from the roof before. You didn\'t know you could.
 
@@ -307,7 +307,7 @@ You stand there and you count them.
 
 You don\'t know what else to do.
 
-${g.f('grief') === 'numb' ? 'You count to forty-one. You don\'t feel anything. You keep counting.' : g.f('grief') === 'rage' ? 'You count to forty-one. Your hands are cold. You keep counting.' : 'You count to forty-one. You\'re crying again. You keep counting.'}
+${g.f('grief') === 'numb' ? 'You count to twenty-one. You don\'t feel anything. You keep counting.' : g.f('grief') === 'rage' ? 'You count to twenty-one. Your hands are cold. You keep counting.' : 'You count to twenty-one. You\'re crying again. You keep counting.'}
 
 Behind you, the roof door opens. You don\'t turn around. You know the footsteps. They stop beside you, and a cold hand finds yours on the parapet, and holds on, and the bells keep ringing.`,
     end: true
