@@ -1,11 +1,11 @@
 {
   "engine": "1.0.0",
-  "ep": "s01e10",
-  "savedAt": "2026-10-13T21:02:50.853Z",
-  "scene": "tag_steps",
+  "ep": "s02e01",
+  "savedAt": "2026-10-14T00:03:51.395Z",
+  "scene": "tag_bruno",
   "state": {
     "attrs": {
-      "body": 2,
+      "body": 3,
       "charm": 3,
       "heart": 3,
       "nerve": 3,
@@ -59,8 +59,8 @@
         "affection": 4,
         "met": true,
         "respect": 0,
-        "tension": 7,
-        "trust": 2
+        "tension": 4,
+        "trust": 5
       },
       "gigi": {
         "affection": 3,
@@ -102,14 +102,14 @@
         "met": true,
         "respect": 0,
         "tension": 0,
-        "trust": 6
+        "trust": 7
       },
       "nik": {
-        "affection": 8,
+        "affection": 9,
         "met": true,
         "respect": 3,
         "tension": 1,
-        "trust": 9
+        "trust": 10
       },
       "nonna": {
         "affection": 4,
@@ -155,9 +155,9 @@
       }
     },
     "clock": {
-      "date": "Nov 26",
-      "day": "Thu",
-      "time": "11:59 PM"
+      "date": "Dec 18",
+      "day": "Fri",
+      "time": "11:58 PM"
     },
     "created": 1791831489674,
     "done": [
@@ -170,7 +170,8 @@
       "s01e07",
       "s01e08",
       "s01e09",
-      "s01e10"
+      "s01e10",
+      "s02e01"
     ],
     "drift": 4,
     "entered": {
@@ -504,132 +505,127 @@
       "s01e10:a4_waterworks": true,
       "s01e10:cold_open": true,
       "s01e10:tag_achterberg": true,
-      "s01e10:tag_steps": true
+      "s01e10:tag_steps": true,
+      "s02e01:a1_breakfast": true,
+      "s02e01:a1_card_told": true,
+      "s02e01:a1_clem_slip": true,
+      "s02e01:a1_mikey": true,
+      "s02e01:a1_mikey_end": true,
+      "s02e01:a1_mirror": true,
+      "s02e01:a2_club": true,
+      "s02e01:a2_deal_eight": true,
+      "s02e01:a2_vinnie": true,
+      "s02e01:a3_dante": true,
+      "s02e01:a3_pickup": true,
+      "s02e01:a3_watch": true,
+      "s02e01:a4_final": true,
+      "s02e01:a4_final_good": true,
+      "s02e01:a4_finals": true,
+      "s02e01:a4_jules": true,
+      "s02e01:a4_nik": true,
+      "s02e01:a4_roof": true,
+      "s02e01:a4_roof_yeah": true,
+      "s02e01:a4_study": true,
+      "s02e01:cold_open": true,
+      "s02e01:tag_bruno": true
     },
-    "ep": "s01e10",
+    "ep": "s02e01",
     "epLog": [
       {
-        "choice": "Jules is packing for Ravenscourt. Her door is open. Go in.",
-        "ep": "s01e10",
-        "hub": true,
-        "scene": "a1_hub",
-        "t": 1791924746609
+        "choice": "Stronger. You carried people. Pop. Teddy. Carmen. Your back remembers every one. (Body +1)",
+        "ep": "s02e01",
+        "scene": "a1_mirror",
+        "t": 1791935595099
       },
       {
-        "choice": "Vinnie's been texting you *call me* since Monday. Call him.",
-        "ep": "s01e10",
-        "hub": true,
-        "scene": "a1_hub",
-        "t": 1791924784342
+        "choice": "Tell him. All of it. Under 95. The Parkway. Why Bruno wants you. He already knows. Say it out loud.",
+        "ep": "s02e01",
+        "scene": "a1_breakfast",
+        "t": 1791935626867
       },
       {
-        "choice": "Call Mikey first. Tell him something's going to happen on the Parkway. Don't tell him how you know.",
-        "ep": "s01e10",
-        "scene": "a2_morning",
-        "t": 1791924821590
+        "choice": "Show him the real thing. Slip. You know what's in there now. Show him anyway.",
+        "ep": "s02e01",
+        "scene": "a1_mikey",
+        "t": 1791935688516
       },
       {
-        "choice": "Leave it on the hook. Hood up. Nobody's face. Nobody's hat.",
-        "ep": "s01e10",
-        "scene": "a2_cap",
-        "t": 1791924843322
-      },
-      {
-        "choice": "Look closer. What are they carrying? What are they watching?",
-        "ep": "s01e10",
+        "choice": "Don't say yes to the first thing. \"Five. Five jobs, and the whole thing's gone.\"",
+        "ep": "s02e01",
         "roll": {
           "dice": [
-            9
+            3,
+            2
+          ],
+          "kind": "move",
+          "label": "Haggle with Bruno Iannucci",
+          "nudged": false,
+          "rewound": false,
+          "tier": "weak"
+        },
+        "scene": "a2_club",
+        "t": 1791935793279
+      },
+      {
+        "choice": "Don't say anything. Let Teddy do the job. Look at the photo of Krysia on the register the whole time.",
+        "ep": "s02e01",
+        "scene": "a3_pickup",
+        "t": 1791935963286
+      },
+      {
+        "choice": "Study Calc. Femi's notebook, every page, *outside first*. Do it right.",
+        "ep": "s02e01",
+        "hub": true,
+        "scene": "a4_finals",
+        "t": 1791936079573
+      },
+      {
+        "choice": "Jules is in the lounge at the big table with index cards. There's a chair across from her with nobody in it.",
+        "ep": "s02e01",
+        "hub": true,
+        "scene": "a4_finals",
+        "t": 1791936091900
+      },
+      {
+        "choice": "Nik has been building something on those three monitors since Thanksgiving. He keeps looking at you.",
+        "ep": "s02e01",
+        "hub": true,
+        "scene": "a4_finals",
+        "t": 1791936133869
+      },
+      {
+        "choice": "Set it up first. Then solve. You did this problem in the library under a plastic poinsettia.",
+        "ep": "s02e01",
+        "roll": {
+          "dice": [
+            19
           ],
           "kind": "d20",
-          "label": "Read the Parkway",
+          "label": "MATH 1041 final",
           "nudged": false,
           "rewound": false,
           "tier": "success"
         },
-        "scene": "a2_parkway",
-        "t": 1791924853924
+        "scene": "a4_final",
+        "t": 1791936156831
       },
       {
-        "choice": "Stop. The barricade at 20th. A kid is pinned against it. Help her first.",
-        "ep": "s01e10",
-        "scene": "a2_freeze",
-        "t": 1791924904107
-      },
-      {
-        "choice": "Don't argue. Get up. Get the handlers back on the ropes yourself, one by one.",
-        "ep": "s01e10",
-        "scene": "a3_teddy",
-        "t": 1791924939890
-      },
-      {
-        "choice": "Go at the one with the tablet. Take it. Take him down.",
-        "ep": "s01e10",
-        "roll": {
-          "dice": [
-            4,
-            6,
-            8,
-            7
-          ],
-          "kind": "pool",
-          "label": "Take the tablet",
-          "nudged": false,
-          "rewound": false,
-          "tier": "success"
-        },
-        "scene": "a3_darts",
-        "t": 1791924976440
-      },
-      {
-        "choice": "Both. Slip. You know what's waiting in there. Do it anyway.",
-        "ep": "s01e10",
-        "scene": "a3_choice",
-        "t": 1791925045142
-      },
-      {
-        "choice": "Kiss her. On a wall by the river, in front of a goose, with blood on both your faces.",
-        "ep": "s01e10",
-        "scene": "a4_waterworks",
-        "t": 1791925155161
-      },
-      {
-        "choice": "Pick up the card. Put it in your pocket. Look at him so he knows you will.",
-        "ep": "s01e10",
-        "scene": "a4_bruno",
-        "t": 1791925253938
+        "choice": "\"Yeah. All the time.\" Tell her that much. Nothing more.",
+        "ep": "s02e01",
+        "scene": "a4_roof",
+        "t": 1791936191089
       }
     ],
     "epRolls": [
       {
         "dice": [
-          9
+          3,
+          2
         ],
-        "ep": "s01e10",
-        "kind": "d20",
-        "label": "Read the Parkway",
-        "mod": 5,
-        "nudged": false,
-        "pushes": {
-          "burst": false,
-          "focus": true,
-          "grit": false,
-          "push": true
-        },
-        "rewound": false,
-        "scene": "a2_parkway",
-        "tier": "success"
-      },
-      {
-        "dice": [
-          4,
-          6,
-          8,
-          7
-        ],
-        "ep": "s01e10",
-        "kind": "pool",
-        "label": "Take the tablet",
+        "ep": "s02e01",
+        "kind": "move",
+        "label": "Haggle with Bruno Iannucci",
+        "mod": 3,
         "nudged": false,
         "pushes": {
           "burst": false,
@@ -638,8 +634,26 @@
           "push": true
         },
         "rewound": false,
-        "s": 2,
-        "scene": "a3_darts",
+        "scene": "a2_club",
+        "tier": "weak"
+      },
+      {
+        "dice": [
+          19
+        ],
+        "ep": "s02e01",
+        "kind": "d20",
+        "label": "MATH 1041 final",
+        "mod": 12,
+        "nudged": false,
+        "pushes": {
+          "burst": false,
+          "focus": true,
+          "grit": false,
+          "push": true
+        },
+        "rewound": false,
+        "scene": "a4_final",
         "tier": "success"
       }
     ],
@@ -672,7 +686,7 @@
           "met": true,
           "respect": 0,
           "tension": 0,
-          "trust": 2
+          "trust": 4
         },
         "ciro": {
           "affection": 1,
@@ -699,7 +713,7 @@
           "affection": 4,
           "met": true,
           "respect": 0,
-          "tension": 5,
+          "tension": 7,
           "trust": 2
         },
         "gigi": {
@@ -724,11 +738,11 @@
           "trust": 7
         },
         "jayden": {
-          "affection": 0,
+          "affection": 3,
           "met": true,
           "respect": 0,
           "tension": 0,
-          "trust": 0
+          "trust": 3
         },
         "jules": {
           "affection": 10,
@@ -742,7 +756,7 @@
           "met": true,
           "respect": 0,
           "tension": 0,
-          "trust": 5
+          "trust": 6
         },
         "nik": {
           "affection": 8,
@@ -775,16 +789,16 @@
         "teddy": {
           "affection": 0,
           "met": true,
-          "respect": 7,
+          "respect": 8,
           "tension": 0,
-          "trust": 5
+          "trust": 8
         },
         "vinnie": {
           "affection": 2,
           "met": true,
           "respect": 0,
-          "tension": 3,
-          "trust": 2
+          "tension": 2,
+          "trust": 3
         },
         "weisz": {
           "affection": 0,
@@ -795,9 +809,9 @@
         }
       },
       "clock": {
-        "date": "Nov 8",
-        "day": "Sun",
-        "time": "11:51 PM"
+        "date": "Nov 26",
+        "day": "Thu",
+        "time": "11:59 PM"
       },
       "created": 1791831489674,
       "done": [
@@ -809,9 +823,10 @@
         "s01e06",
         "s01e07",
         "s01e08",
-        "s01e09"
+        "s01e09",
+        "s01e10"
       ],
-      "drift": 1,
+      "drift": 4,
       "entered": {
         "s01e01:a1_arrive": true,
         "s01e01:a1_cab": true,
@@ -1113,9 +1128,39 @@
         "s01e09:a4_marisol": true,
         "s01e09:a4_portrichmond": true,
         "s01e09:cold_open": true,
-        "s01e09:tag_card": true
+        "s01e09:tag_card": true,
+        "s01e10:a1_bree": true,
+        "s01e10:a1_hub": true,
+        "s01e10:a1_jules": true,
+        "s01e10:a1_mikey": true,
+        "s01e10:a1_vinnie": true,
+        "s01e10:a2_barricade": true,
+        "s01e10:a2_call_mikey": true,
+        "s01e10:a2_cap": true,
+        "s01e10:a2_freeze": true,
+        "s01e10:a2_morning": true,
+        "s01e10:a2_parkway": true,
+        "s01e10:a2_scout_good": true,
+        "s01e10:a3_both": true,
+        "s01e10:a3_bree": true,
+        "s01e10:a3_choice": true,
+        "s01e10:a3_darts": true,
+        "s01e10:a3_jules": true,
+        "s01e10:a3_ropes": true,
+        "s01e10:a3_tablet": true,
+        "s01e10:a3_teddy": true,
+        "s01e10:a4_after": true,
+        "s01e10:a4_bruno": true,
+        "s01e10:a4_bruno_card": true,
+        "s01e10:a4_hugh": true,
+        "s01e10:a4_kiss": true,
+        "s01e10:a4_mifflin": true,
+        "s01e10:a4_waterworks": true,
+        "s01e10:cold_open": true,
+        "s01e10:tag_achterberg": true,
+        "s01e10:tag_steps": true
       },
-      "ep": "s01e10",
+      "ep": "s02e01",
       "epLog": [],
       "epRolls": [],
       "eps": {
@@ -2210,6 +2255,109 @@
             "rolls": 4
           },
           "title": "Things That Don't Add Up"
+        },
+        "s01e10": {
+          "finished": "2026-10-13T21:02:40.945Z",
+          "summary": {
+            "bonds": [
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 2
+                },
+                "id": "carmen",
+                "now": {
+                  "affection": 2,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 4
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": 2,
+                  "trust": 0
+                },
+                "id": "frank",
+                "now": {
+                  "affection": 4,
+                  "respect": 0,
+                  "tension": 7,
+                  "trust": 2
+                }
+              },
+              {
+                "d": {
+                  "affection": 3,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 3
+                },
+                "id": "jayden",
+                "now": {
+                  "affection": 3,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 3
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                },
+                "id": "mikey",
+                "now": {
+                  "affection": 2,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 6
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 1,
+                  "tension": 0,
+                  "trust": 3
+                },
+                "id": "teddy",
+                "now": {
+                  "affection": 0,
+                  "respect": 8,
+                  "tension": 0,
+                  "trust": 8
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": -1,
+                  "trust": 1
+                },
+                "id": "vinnie",
+                "now": {
+                  "affection": 2,
+                  "respect": 0,
+                  "tension": 2,
+                  "trust": 3
+                }
+              }
+            ],
+            "choices": 11,
+            "crits": 2,
+            "fails": 0,
+            "money": 0,
+            "rolls": 2
+          },
+          "title": "Broad Street"
         }
       },
       "facts": {
@@ -2267,6 +2415,14 @@
           ],
           "text": "Brannigan spoke to you at McPherson Square: \"When the nosebleeds start lasting longer than the minute, you call us. We're the only ones who'll know what to do.\""
         },
+        "bree_parade": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam",
+            "bree"
+          ],
+          "text": "Bree: the job is the Thanksgiving Day Parade. Teddy left at 4 a.m. Wednesday."
+        },
         "bree_scream": {
           "ep": "s01e03",
           "knownBy": [
@@ -2277,6 +2433,18 @@
             "nik"
           ],
           "text": "Bree heard something in the cold at 11:51:04 on the night of the Hitch, something from the sky, and her power keeps it. It sounds like a crowd breathing and a clock running the wrong way, and under it, laughing."
+        },
+        "bruno": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam",
+            "frank",
+            "rosa",
+            "mikey",
+            "nonna",
+            "gigi"
+          ],
+          "text": "On Thanksgiving, Bruno Iannucci came to dinner on Mifflin Street with his grandson Dante."
         },
         "cab_smashed": {
           "ep": "s01e07",
@@ -2327,6 +2495,14 @@
             "mikey"
           ],
           "text": "Dante Iannucci, 24, from Passyunk. The jacket from the Melrose. Grandson of somebody important. Vinnie drives him."
+        },
+        "dante_cap": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam",
+            "vinnie"
+          ],
+          "text": "Vinnie: Dante remembers the cap. Pop's Eagles cap, on backward, on the kid under I-95."
         },
         "dante_saturday": {
           "ep": "s01e07",
@@ -2537,6 +2713,13 @@
           ],
           "text": "While Sam was under I-95, Rosa called Jules. Jules told her Sam had fallen asleep on the lounge couch with his calculus book on his face, and that she'd put a blanket on him."
         },
+        "jules_darts": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "On the Parkway, Jules walked down the middle of the frozen street through Halcyon's darts. Every one of them missed. Her nose was bleeding. You saw it, and you don't know what you saw."
+        },
         "jules_die_sixes": {
           "ep": "s01e01",
           "knownBy": [
@@ -2623,6 +2806,14 @@
             "jules"
           ],
           "text": "Jules told you: \"Nothing happens to me. I don't fall. I don't get hurt. Everyone calls it luck. I think it's the wrong word.\""
+        },
+        "jules_parade": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam",
+            "jules"
+          ],
+          "text": "Jules will be in the sponsors' grandstand at the Art Museum steps on Thanksgiving morning. Her father's firm sponsors the parade."
         },
         "jules_pop": {
           "ep": "s01e07",
@@ -2729,6 +2920,14 @@
           ],
           "text": "Nik mapped it: the shimmer you saw in the Slip and the sound Bree heard come from the same place. The sky over McPherson Square, Kensington."
         },
+        "mikey_bree": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam",
+            "mikey"
+          ],
+          "text": "On the Parkway, Mikey stopped a fake ambulance from taking Bree Kowal. He made them back off on live TV."
+        },
         "mikey_pop_dinner": {
           "ep": "s01e08",
           "knownBy": [
@@ -2803,6 +3002,13 @@
           "text": "You owe Jules Pemberton one favor. Any favor. Her choosing, whenever she wants.",
           "track": true
         },
+        "parade_freeze": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "At 9:41 on Thanksgiving morning, Teddy Kowal froze the Benjamin Franklin Parkway."
+        },
         "pop_jacket": {
           "ep": "s01e02",
           "knownBy": [
@@ -2840,6 +3046,13 @@
             "nonna"
           ],
           "text": "On the night after Halloween, at 3 a.m., Nonna saw the man who stands like you under the streetlight at the end of Mifflin Street. He was crying."
+        },
+        "revenant5": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "In the Slip on the Parkway, the man who stands like you walked toward you between the frozen balloons. \"You can't carry all of them.\" You said: \"Watch me.\""
         },
         "revenant_note": {
           "ep": "s01e09",
@@ -2903,7 +3116,8 @@
             "nik",
             "nonna",
             "vinnie",
-            "simone"
+            "simone",
+            "mikey"
           ],
           "text": "Your secret: when the world stopped, you didn't.",
           "track": true
@@ -2923,6 +3137,13 @@
             "simone"
           ],
           "text": "Simone has two lists. One was about you. The other one, she says, \"isn't mine to tell.\""
+        },
+        "six_ambulances": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "Six ambulances without unit numbers, staged on the Parkway on Thanksgiving morning."
         },
         "slip_rescue_pop": {
           "ep": "s01e07",
@@ -2944,6 +3165,20 @@
             "sam"
           ],
           "text": "The touching Gritty can stop things. A stopped thing isn't cold or warm. It isn't in time at all, even in the Slip. You couldn't move it."
+        },
+        "tablet10": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "You took a Halcyon tablet off a fake medic on the Parkway. On it, a list. Your face, labeled 17. And faces you know."
+        },
+        "teddy_darted": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "On the Parkway, Halcyon's fake medics darted Teddy Kowal. When his hand left the street, the ninety seconds started."
         },
         "teddy_face": {
           "ep": "s01e02",
@@ -2986,6 +3221,13 @@
             "teddy"
           ],
           "text": "You have Teddy's number. The deal: if Halcyon comes for one of you, you call the others."
+        },
+        "thermal": {
+          "ep": "s01e10",
+          "knownBy": [
+            "sam"
+          ],
+          "text": "Halcyon put thermal cameras on the Parkway lampposts. The Changed run cold. They're looking for cold."
         },
         "tolu_nda": {
           "ep": "s01e09",
@@ -3055,15 +3297,20 @@
         "arrive": "slip",
         "ask": "yes",
         "bail": "truth",
+        "barricade10": true,
         "beat_jules_read": true,
         "brannigan8": "memorize",
         "brannigan_saw": true,
         "broke_nik_rule": true,
+        "bruno10": "card",
+        "called_mikey10": true,
         "called_vinnie": true,
         "callum6": "true",
         "cannoli": "truth",
+        "cap10": false,
         "carmen": "hip",
         "carmen_sorry": true,
+        "choice10": "both",
         "ciro7": "read",
         "cold": "laugh",
         "contest": "her",
@@ -3072,6 +3319,7 @@
         "cover7": "thanks",
         "crew_marisol": true,
         "curb": "sat",
+        "darts10": "tablet",
         "did_books": true,
         "did_ciro": true,
         "did_fri7_pop": true,
@@ -3090,6 +3338,8 @@
         "did_sun_sleep": true,
         "did_thu_nik": true,
         "did_thu_sleep": true,
+        "did_w10_jules": true,
+        "did_w10_vinnie": true,
         "did_wed_carmen": true,
         "did_wed_ma": true,
         "did_wed_vinnie": true,
@@ -3119,6 +3369,7 @@
         "halcyon_peek": "full",
         "hall6": "normal",
         "hands_won": 3,
+        "heat_max_mikey": true,
         "heat_max_simone": true,
         "heck_fate": "saved",
         "heck_reach": "miss",
@@ -3134,8 +3385,10 @@
         "jacket": true,
         "jules4": "some",
         "jules9": "stay",
+        "jules_box": true,
         "jules_covered": true,
         "jules_guess": "love",
+        "jules_walked": true,
         "kissed": true,
         "leave": "cant",
         "light": "trade",
@@ -3150,6 +3403,7 @@
         "mikey5": "face",
         "mikey7": "dante",
         "mikey9": "open",
+        "mikey_knows": true,
         "monday": "hanky",
         "mother6": "defend",
         "night": "brooding",
@@ -3220,6 +3474,9 @@
         "skipped_thu_mikey": true,
         "skipped_thu_teddy": true,
         "skipped_vinnie": true,
+        "skipped_w10_nik": true,
+        "skipped_w10_pop": true,
+        "skipped_w10_simone": true,
         "skipped_wed_ciro": true,
         "skipped_wed_nap": true,
         "skipped_wed_practice": true,
@@ -3230,15 +3487,18 @@
         "study1": "lied",
         "study2": "laugh",
         "tag": "stayed",
+        "teddy10": "ropes",
         "teddy7": "none",
         "teddy9": "marisol",
         "teddy_burned": true,
         "teddy_meet": "go",
         "teddy_number": true,
         "teddy_quit": true,
+        "teddy_saved": true,
         "test6": "straight",
         "text6": "whatif",
         "the_night": true,
+        "thermal10": true,
         "thu_slept": true,
         "tolu9": "truth",
         "ttal": "laughs",
@@ -3246,9 +3506,11 @@
         "typed": "echo",
         "under95": "slip",
         "unstick": true,
+        "unstick10": true,
         "video": true,
         "vinnie2": "pop",
         "vinnie5": "slipped",
+        "waterworks10": "kiss",
         "wawa": "slip",
         "xray_healed": true
       },
@@ -3261,23 +3523,35 @@
       "heat": {
         "frank": 1,
         "jules": 9,
-        "mikey": 3,
+        "mikey": 10,
         "nik": 0,
-        "press": 6,
+        "press": 8,
         "rosa": 2,
         "simone": 10
       },
       "hidden": {
-        "halcyon_heat": 8,
+        "halcyon_heat": 9,
         "halcyon_jules": 1,
-        "jules_debt": 3,
+        "jules_debt": 5,
         "jules_luck": 0.35,
         "nudges": 1,
-        "revenant_drift": 15.7
+        "revenant_drift": 21.7
       },
       "hub": null,
       "hubs": {},
-      "injuries": [],
+      "injuries": [
+        {
+          "affects": [
+            "body",
+            "reflex",
+            "wits"
+          ],
+          "heal": 1,
+          "id": "unstick10",
+          "name": "Time debt (Unstick)",
+          "pen": 2
+        }
+      ],
       "julesBonds": {
         "callum": {
           "affection": 3,
@@ -3365,7 +3639,7 @@
       },
       "powers": {
         "slip": {
-          "mastery": 38,
+          "mastery": 40,
           "nodes": [
             "burst",
             "slip",
@@ -3529,10 +3803,30 @@
         {
           "ep": "s01e09",
           "t": "On the back of Jules's index card, in your handwriting: \"Don't trust the lucky one.\""
+        },
+        {
+          "ep": "s01e10",
+          "t": "On Thanksgiving, Teddy Kowal froze the Parkway. Halcyon came for the Changed in fake ambulances."
+        },
+        {
+          "ep": "s01e10",
+          "t": "You Slipped and saved them both. You got stuck. You lost four minutes. Mikey saw."
+        },
+        {
+          "ep": "s01e10",
+          "t": "Jules walked down the frozen Parkway through four darts. Every one of them missed."
+        },
+        {
+          "ep": "s01e10",
+          "t": "Bruno Iannucci came to Thanksgiving dinner. \"After the holiday. Come see me. Alone.\""
+        },
+        {
+          "ep": "s01e10",
+          "t": "Dr. Achterberg: \"ES-17 is confirmed.\""
         }
       ],
       "scene": "cold_open",
-      "season": 1,
+      "season": 2,
       "settings": {
         "motion": true,
         "size": 1,
@@ -3541,7 +3835,7 @@
       "skills": {
         "athletics": 1,
         "banter": 3,
-        "brawl": 2,
+        "brawl": 3,
         "cook": 1,
         "empathy": 2,
         "hustle": 1,
@@ -3558,11 +3852,11 @@
         "study": 3,
         "tech": 0
       },
-      "sleepDebt": 4,
-      "updated": 1791919462905,
+      "sleepDebt": 3,
+      "updated": 1791925369646,
       "v": 1,
       "xp": 1,
-      "xpSpent": 48
+      "xpSpent": 54
     },
     "eps": {
       "s01e01": {
@@ -4759,6 +5053,64 @@
           "rolls": 2
         },
         "title": "Broad Street"
+      },
+      "s02e01": {
+        "finished": "2026-10-14T00:03:51.393Z",
+        "summary": {
+          "bonds": [
+            {
+              "d": {
+                "affection": 0,
+                "respect": 0,
+                "tension": -3,
+                "trust": 3
+              },
+              "id": "frank",
+              "now": {
+                "affection": 4,
+                "respect": 0,
+                "tension": 4,
+                "trust": 5
+              }
+            },
+            {
+              "d": {
+                "affection": 0,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              },
+              "id": "mikey",
+              "now": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 7
+              }
+            },
+            {
+              "d": {
+                "affection": 1,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              },
+              "id": "nik",
+              "now": {
+                "affection": 9,
+                "respect": 3,
+                "tension": 1,
+                "trust": 10
+              }
+            }
+          ],
+          "choices": 10,
+          "crits": 1,
+          "fails": 0,
+          "money": 0,
+          "rolls": 2
+        },
+        "title": "After the Holiday"
       }
     },
     "facts": {
@@ -5368,6 +5720,14 @@
         ],
         "text": "Nik was going to transfer to Rutgers in the spring. He withdrew the application on November 2, so he wouldn't be \"the guy who wasn't here.\""
       },
+      "nik_tracker": {
+        "ep": "s02e01",
+        "knownBy": [
+          "sam",
+          "nik"
+        ],
+        "text": "Nik built a map of every place in the city where people reported \"the cold\" since August. It clusters around Kensington, the Navy Yard, and Mifflin Street, with one odd point in Gladwyne."
+      },
       "nonna_felt": {
         "ep": "s01e02",
         "knownBy": [
@@ -5518,7 +5878,8 @@
           "nonna",
           "vinnie",
           "simone",
-          "mikey"
+          "mikey",
+          "frank"
         ],
         "text": "Your secret: when the world stopped, you didn't.",
         "track": true
@@ -5704,11 +6065,17 @@
       "brannigan_saw": true,
       "broke_nik_rule": true,
       "bruno10": "card",
+      "bruno_deal": "eight",
+      "bruno_jobs_done": 1,
+      "bruno_jobs_total": 8,
+      "calc_final": "good",
+      "calc_study_s2": true,
       "called_mikey10": true,
       "called_vinnie": true,
       "callum6": "true",
       "cannoli": "truth",
       "cap10": false,
+      "card_s2": "told",
       "carmen": "hip",
       "carmen_sorry": true,
       "choice10": "both",
@@ -5731,6 +6098,9 @@
       "did_hub_study": true,
       "did_nap": true,
       "did_party": true,
+      "did_s2f_jules": true,
+      "did_s2f_nik": true,
+      "did_s2f_study": true,
       "did_sat6_callum": true,
       "did_sat6_horse": true,
       "did_sat_nap": true,
@@ -5770,6 +6140,7 @@
       "halcyon_peek": "full",
       "hall6": "normal",
       "hands_won": 3,
+      "heat_max_frank": true,
       "heat_max_mikey": true,
       "heat_max_simone": true,
       "heck_fate": "saved",
@@ -5784,11 +6155,13 @@
       "hugh_hand": "won",
       "ily": "too",
       "jacket": true,
+      "job1": "watched",
       "jules4": "some",
       "jules9": "stay",
       "jules_box": true,
       "jules_covered": true,
       "jules_guess": "love",
+      "jules_s2e1": "study",
       "jules_walked": true,
       "kissed": true,
       "leave": "cant",
@@ -5805,12 +6178,15 @@
       "mikey7": "dante",
       "mikey9": "open",
       "mikey_knows": true,
+      "mikey_s2": "slip",
+      "mikey_slip_s2": true,
       "monday": "hanky",
       "mother6": "defend",
       "night": "brooding",
       "nik9": "thanks",
       "nik_greet": "warning",
       "nik_guy": "reluctant",
+      "nik_map_s2": true,
       "nik_panic": "sent",
       "nik_rule": true,
       "nik_rule_kept": true,
@@ -5829,7 +6205,7 @@
       "pop5": "stayed",
       "pop7": "named",
       "pop9": "lied",
-      "pop_knows": "suspects",
+      "pop_knows": "told",
       "pop_money": "took",
       "pr": "listen",
       "pr2": "shared",
@@ -5842,9 +6218,12 @@
       "roof1": "laugh",
       "roof8": "kiss",
       "roof_end": "lean",
+      "roof_s2e1": "yeah",
       "roof_want": "kept",
       "roof_why": "highness",
+      "rosa_overheard": true,
       "run": "fail",
+      "s2_attr": "body",
       "sat_jules": "talk",
       "show_buzz": true,
       "sim6": "bracelet",
@@ -5863,6 +6242,8 @@
       "skipped_hub_weisz": true,
       "skipped_library": true,
       "skipped_practice": true,
+      "skipped_s2f_grace": true,
+      "skipped_s2f_simone": true,
       "skipped_sat6_hugh": true,
       "skipped_sat_ciro": true,
       "skipped_sat_femi": true,
@@ -5908,6 +6289,7 @@
       "under95": "slip",
       "unstick": true,
       "unstick10": true,
+      "unstick_s2e1": true,
       "video": true,
       "vinnie2": "pop",
       "vinnie5": "slipped",
@@ -5916,18 +6298,18 @@
       "xray_healed": true
     },
     "grades": {
-      "calc": 73,
+      "calc": 82,
       "eng": 70,
       "phl": 67,
       "psy": 64
     },
     "heat": {
-      "frank": 1,
+      "frank": 10,
       "jules": 9,
       "mikey": 10,
       "nik": 0,
       "press": 8,
-      "rosa": 2,
+      "rosa": 8,
       "simone": 10
     },
     "hidden": {
@@ -5936,15 +6318,16 @@
       "jules_debt": 5,
       "jules_luck": 0.35,
       "nudges": 1,
-      "revenant_drift": 21.7
+      "revenant_drift": 23.7
     },
-    "hub": "a1_hub",
+    "hub": "a4_finals",
     "hubs": {
-      "a1_hub": {
+      "a4_finals": {
         "left": 0,
         "used": [
-          "w10_jules",
-          "w10_vinnie"
+          "s2f_study",
+          "s2f_jules",
+          "s2f_nik"
         ]
       }
     },
@@ -5955,10 +6338,19 @@
           "reflex",
           "wits"
         ],
-        "heal": 2,
+        "heal": 1,
         "id": "unstick10",
         "name": "Time debt (Unstick)",
         "pen": 2
+      },
+      {
+        "affects": [
+          "reflex"
+        ],
+        "heal": 2,
+        "id": "cold_s2e1",
+        "name": "Slip-cold (stoop)",
+        "pen": 1
       }
     ],
     "julesBonds": {
@@ -6037,8 +6429,8 @@
     },
     "lastRoll": null,
     "marked": {
-      "brawl": false,
-      "investigate": true
+      "persuade": true,
+      "study": true
     },
     "money": {
       "bank": 312,
@@ -6047,11 +6439,11 @@
     "pools": {
       "focus": 6,
       "nerve": 8,
-      "stamina": 6
+      "stamina": 8
     },
     "powers": {
       "slip": {
-        "mastery": 40,
+        "mastery": 42,
         "nodes": [
           "burst",
           "slip",
@@ -6235,10 +6627,30 @@
       {
         "ep": "s01e10",
         "t": "Dr. Achterberg: \"ES-17 is confirmed.\""
+      },
+      {
+        "ep": "s02e01",
+        "t": "After the Parkway, you have a white hair. Grace says in places your body is thirty."
+      },
+      {
+        "ep": "s02e01",
+        "t": "Bruno Iannucci paid for Teddy's mother's transplant evaluation. Teddy works for him now."
+      },
+      {
+        "ep": "s02e01",
+        "t": "You work for him too. Eight jobs to clear Pop's debt."
+      },
+      {
+        "ep": "s02e01",
+        "t": "Jules: \"When I come back. In January. I ask, you answer.\""
+      },
+      {
+        "ep": "s02e01",
+        "t": "Brannigan sat down with Bruno Iannucci and asked for an understanding."
       }
     ],
-    "scene": "tag_steps",
-    "season": 1,
+    "scene": "tag_bruno",
+    "season": 2,
     "settings": {
       "motion": true,
       "size": 1,
@@ -6265,9 +6677,9 @@
       "tech": 0
     },
     "sleepDebt": 3,
-    "updated": 1791925369646,
+    "updated": 1791936231393,
     "v": 1,
-    "xp": 1,
+    "xp": 7,
     "xpSpent": 54
   }
 }
