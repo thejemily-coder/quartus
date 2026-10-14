@@ -43,3 +43,20 @@ Write each episode to the save. The plan bends; the save doesn't.
   - **For later episodes:**
     - `bruno_jobs_done` is a counter; `bruno_jobs_total` is the deal size.
     - Treat `pop_knows === 'told'` as knowing.
+- **S2E2 "Seven Fishes"** was written for this playthrough's S2E1 save. Shape:
+  - **Cold open:** 1918. Assunta, 16, at Broad & Wharton; the trolley; the bells stop. A distant man at Broad & Federal raises his hand "like a man at a window" (the Revenant across time).
+  - **Christmas Eve hub:** Ma (tell her: `ma_told` = 's2e2', Rosa knows) / Jayden & Carmen (LEGO trolley; Jayden "feels it coming") / Pop (offered himself to Dante; laughed at) / Gigi on Passyunk / Simone repair call.
+  - **Job:** 12 envelopes before 8, including a police captain, a priest and a councilman. The 12th, a manila envelope for Brannigan at the Navy Yard gate, holds Bruno's list of 26 Changed not on his payroll. Jayden is on it, and at the bottom: "DiNardo, T. — NO." Options: sealed / tear out Jayden / deliver then warn / burn (job doesn't count).
+    - Brannigan: "When you get tired of being somebody's errand boy, I'm hiring." He knows Nonna eats at eight.
+  - **The Feast:** Nonna adds "E Salvatore" at grace. At Midnight Mass the bells stop for one second at 11:51.
+  - **The key:**
+    - **Nonna lied twice.** Assunta did it her whole life, and there was a boy: her brother **Salvatore DiNardo** (1931–1961). He went in after three children at an Arch Street fire on Dec 18, 1961, came back old, and died at the Feast on Dec 24 at 11:51. Sam is named for him.
+    - In January 1964 Assunta pulled six-year-old **Bruno Iannucci** out of the Schuylkill ice. That is Bruno's debt to the DiNardos.
+    - **Salvatore's watch** (stopped at 11:51; `assunta_watch`): Unsticks no longer injure. Rule is in MECHANICS; engine helpers are `g.unsticks()` and `g.unstick()`.
+  - **Tag:** Brannigan circles "DiNardo, T." (or, on the burned path, looks at a surveillance photo of Nonna). Jules's 3 a.m. texts: Gran's chapel on New Year's Day.
+  - SERIES_BIBLE §3 is updated for the Salvatore retcon.
+- **E3 (Jules POV) prep:**
+  - Gate Burst and Slip by `!S.pov` in the engine.
+  - Jules's auto-nudge debt is near its cap (5).
+  - Decide on the player-facing Nudge.
+  - Jules hasn't seen any of the DiNardo facts.

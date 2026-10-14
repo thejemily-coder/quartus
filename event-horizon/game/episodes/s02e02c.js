@@ -7,7 +7,7 @@ EH.scenes('s02e02', {
     night: true,
     loc: 'MIFFLIN STREET · THE DINING ROOM',
     clock: { time: '8:02 PM' },
-    text: g => `You come in the door at 8:02 with snow in your hair ${g.S.injuries.some(i => i.id === 'ice_s2e2' || i.id === 'unstick_s2e2') ? 'and a limp you try to hide and can\'t' : 'and your face red from the cold'}, and nobody says anything about the two minutes, because Nonna is already at the head of the table, and when Nonna is at the head of the table, the Feast has begun.
+    text: g => `You come in the door at ${g.f('envelopes_late') ? '8:24' : '8:02'} with snow in your hair ${g.S.injuries.some(i => i.id === 'ice_s2e2' || i.id === 'unstick_s2e2') ? 'and a limp you try to hide and can\'t' : 'and your face red from the cold'}, and nobody says anything about the ${g.f('envelopes_late') ? 'twenty-four minutes' : 'two minutes'}, because Nonna is already at the head of the table, and when Nonna is at the head of the table, the Feast has begun.
 
 The dining room table with both leaves in. The card table on the end for Gigi, who calls it the cool table. Ma\'s good tablecloth, the white one with the lace that comes out twice a year. Candles. The seven fishes in a row down the middle like a parade: fried smelts in a mountain, the baccalà salad with olives and lemon, calamari in red sauce, shrimp, linguine with white clam sauce in the big bowl, the flounder (Kevin, rest in peace), and, in a little dish by itself at Nonna\'s elbow, the eel, which nobody but Nonna will touch.
 
@@ -17,7 +17,7 @@ ${g.f('card_s2') === 'told' ? 'Pop is at the other end of the table, not on the 
 
 Nonna says grace. In Italian, the long one. At the end, where she names the dead, she says her mother, Assunta. Her husband, Gennaro. Her sister, Lucia.
 
-Then, for the first time you can remember, she says one more.
+Then, for the second time in a month, she says one more.
 
 nonna: E Salvatore.
 
@@ -34,12 +34,14 @@ TXT jules: Hugh is drunk. Callum\'s parents are here. Callum is not. I am gratef
 TXT jules: Gran just told the table, apropos of nothing, that "the bells will ring again soon, and some of us had better be ready." Nobody knew what to say. My father changed the subject to municipal bonds.
 TXT jules: Tell me something true about your fish.
 
+*The bells will ring again soon.* You read it twice. Then Gigi screams about Kevin, and you put it away.
+
 You look at the table. Gigi stealing calamari off Mikey\'s plate. Pop with his arm on the back of Ma\'s chair. Nonna, eating her eel alone, slowly, the way she does every Christmas Eve.`,
     choices: [
       { text: 'Text Jules: "my grandmother just said a name at grace ive never heard before. i think its mine"', tag: 'Jules',
         fx: g => { g.flag('feast_text', 'name'); g.bond('jules', { respect: 1 }); }, go: 'a3_text' },
       { text: 'Go to the bathroom. Call Carmen. Tell her to take Jayden somewhere tonight. Anywhere.', tag: 'Call Carmen',
-        if: g => g.f('saw_list'),
+        if: g => g.f('saw_list') && g.f('jayden_xmas'),
         fx: g => { g.flag('feast_text', 'carmen'); g.flag('carmen_warned'); g.bond('carmen', { trust: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_carmen' },
       { text: 'Put the phone face down. Eat. Be here. It\'s Christmas Eve.', tag: 'Be here',
         fx: g => { g.flag('feast_text', 'here'); g.bond('rosa', { affection: 1 }); g.bond('gigi', { affection: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_here' }
@@ -141,7 +143,7 @@ The cold comes up out of the marble floor through the soles of your shoes. The c
 
 Then the bells start again.
 
-Nobody in the church noticed. Nobody.
+Nobody in the church noticed. Almost nobody.
 
 Except Nonna. Her hand is on your arm. Her small hand, gripping hard enough to hurt. She\'s looking straight ahead at the altar, and her lips are moving, and she isn\'t praying.
 
@@ -160,8 +162,8 @@ nonna: Come to my house. Now. ${g.f('ma_told') === 's2e2' ? 'Your mother comes t
     card: { kind: 'act', label: 'Act Four', title: 'The Key' },
     night: true,
     loc: 'NONNA\'S HOUSE · THREE DOORS DOWN',
-    clock: { day: 'Fri', date: 'Dec 25', time: '1:10 AM' },
-    enter: g => { const w = g.f('ma_told') === 's2e2' ? ['sam', 'nonna', 'rosa'] : ['sam', 'nonna']; g.know('salvatore_dinardo', w, 'Nonna\'s older brother was Salvatore DiNardo (1931–1961). Once, in 1961, at a fire, it woke in him. He went in after three children and came back an old man. He died on Christmas Eve at 11:51. You are named for him.'); g.know('assunta_diary', w, 'Assunta DiNardo\'s diary: she did it more than once. Every time she came back a little older. On September 28, 1918, there was a man up the street who moved too, and raised his hand to her like a man at a window.'); },
+    clock: { day: 'Fri', date: 'Dec 25', time: '1:30 AM' },
+    enter: g => { const w = g.f('ma_told') === 's2e2' ? ['sam', 'nonna', 'rosa'] : ['sam', 'nonna']; g.know('salvatore_dinardo', w, 'Nonna\'s older brother was Salvatore DiNardo (1931–1961). He could do what you do, and he never learned to stop. In December 1961 he went in after three children at a fire on Arch Street and came back an old man. He died on Christmas Eve at 11:51. You are named for him.'); g.know('assunta_diary', w, 'Assunta DiNardo\'s diary: she did it more than once. Every time she came back a little older. On September 28, 1918, there was a man up the street who moved too, and raised his hand to her like a man at a window.'); },
     text: g => `Nonna\'s house smells like her house: mothballs and gravy and Jean Naté. The plastic is still on the living room couch from 1987. The Sacred Heart on the wall with the little red bulb in front of it, always on. The cedar chest at the foot of her bed, which nobody has ever been allowed to touch, which Mikey once got smacked with a wooden spoon for sitting on.
 
 ${g.f('ma_told') === 's2e2' ? 'Ma sits on the edge of the bed with her coat still on and her hands in her lap. She doesn\'t say anything. She watches her mother.' : ''}
@@ -186,9 +188,13 @@ nonna: I lied to you, Salvatò. In September. In my kitchen. I said it was in th
 
 nonna: There was a boy. There was my brother.
 
-nonna: And my mother. I told you once, never again. Che bugiarda. She did it her whole life.
+nonna: And my mother. I told you once, never again. Che bugiarda. She did it her whole life. Every time, she came back a little older.
 
-She opens the diary. The pages are full of a cramped, faded, old-fashioned handwriting, in Italian, in ink that\'s gone brown. She turns to a page near the back and runs her finger along a line and translates, slow, flat, the way you read something you\'ve read a thousand times:
+She opens the diary to the first page. *28 settembre 1918*, in a girl\'s hand. Nonna reads one line.
+
+nonna: *There was a man up the street who moved too. He raised his hand to me like a man at a window.*
+
+She turns past it fast, like it burns. The pages are full of a cramped, faded, old-fashioned handwriting, in Italian, in ink that\'s gone brown. She turns to a page near the back and runs her finger along a line and translates, slow, flat, the way you read something you\'ve read a thousand times:
 
 nonna: *December 18, 1961. Salvatore went in after the children at the fire on Arch Street. Three children. He brought them out, all three. He was in the cold a long time. He came back old.*
 
@@ -236,7 +242,7 @@ nonna: My mother was sixty-one years old. She was on the bank, with me, with a t
 
 nonna: She was sick for a month after. She never got warm again, not really. She died in \'68.
 
-She closes the diary.
+She puts her hand flat on the diary.
 
 nonna: The little boy was Bruno Iannucci. His mother, Filomena, came to our house every Christmas with a tray of pizzelles until she died. She made him come. She made him kneel and thank my mother. He knows. He has always known what we are.
 
@@ -304,7 +310,7 @@ She looks at you. You can see her deciding whether to believe you. You can see h
 
 nonna: Good. Good boy.
 
-She lets go of your face. She puts the diary back in the tin, and the photograph, and closes the lid, and leaves the padlock open on the floor beside it, for the first time in sixty-five years.
+She lets go of your face. She puts the diary back in the tin, and the photograph, and closes the lid, and leaves the padlock open on the floor beside it, for the first time since 1968.
 
 You put the watch in the pocket of your jeans, against your leg. It\'s cold.
 
@@ -323,7 +329,7 @@ nonna: Good. You don\'t lie to me. My brother lied to my mother every time. *I\'
 
 nonna: You don\'t lie. That\'s something. That\'s a start.
 
-She puts the diary back in the tin, and the photograph, and closes the lid, and leaves the padlock open on the floor beside it, for the first time in sixty-five years.
+She puts the diary back in the tin, and the photograph, and closes the lid, and leaves the padlock open on the floor beside it, for the first time since 1968.
 
 You put the watch in your pocket. On the walk home, three doors, in the snow, at two in the morning on Christmas, you put your hand in your pocket and hold it.
 
@@ -409,8 +415,8 @@ Object.assign(EH.episodes.s02e02, {
   onEnd: g => {
     g.recap('Nonna lied. There was a boy: her brother, Salvatore. In 1961 he came back old, and died at the Feast at 11:51.');
     g.recap('You have his watch. Nonna says in the cold it\'s the only thing that ticks.');
-    if (g.f('saw_list')) g.recap('Bruno sent Brannigan a list of twenty-six people. Jayden was on it. At the bottom: "DiNardo, T. — NO."');
-    g.recap('Brannigan, at the Navy Yard gate: "When you get tired of being somebody\'s errand boy, I\'m hiring."');
+    if (g.f('saw_list')) g.recap((g.f('manila') === 'burned' ? 'Bruno tried to send Brannigan a list of twenty-six people. You burned it.' : 'Bruno sent Brannigan a list of twenty-six people.') + ' Jayden was on it. At the bottom: "DiNardo, T. — NO."');
+    if (g.f('manila') !== 'burned') g.recap('Brannigan, at the Navy Yard gate: "When you get tired of being somebody\'s errand boy, I\'m hiring."');
     g.recap('At 11:51 on Christmas Eve, the bells at St. Monica\'s stopped for one second.');
   }
 });

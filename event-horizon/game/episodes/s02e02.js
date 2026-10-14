@@ -9,7 +9,7 @@ EH.episode({
     'Nonna gave you an old iron key. "When it\'s time, I tell you what it opens."',
     g.f('card_s2') === 'told' ? 'You told Pop everything. Ma was at the stove.' : 'Bruno Iannucci\'s card. Pop wanted it torn up.',
     'You work for Bruno now. ' + ({ ten: 'Ten', five: 'Five', eight: 'Eight', twelve: 'Twelve', forced: 'Ten' }[g.f('bruno_deal')] || 'Ten') + ' jobs. Teddy works for him too.',
-    'Grace: "In places, I\'d say thirty."',
+    g.knows('time_debt2') ? 'Grace: "In places, I\'d say thirty."' : 'There\'s white in your hair now. At the temple. More every week.',
     'Jules: "When I come back. In January. I ask, you answer."'
   ],
   scenes: {
@@ -27,7 +27,7 @@ Flags from every window. Bunting on every lamppost. A brass band from the Navy Y
 
 On the curb at Broad and Wharton, in a borrowed hat, sixteen years old, is Assunta DiNardo.
 
-She came with her sisters. She lost them an hour ago. She doesn\'t mind. She\'s watching a trolley come up Broad Street behind the parade, a Number 2 car, too fast, swaying, the motorman shouting, and in the tracks in front of it, chasing a toy flag that blew out of his hand, a boy. Four, maybe. In short pants. Not looking.
+She came with her sisters. She lost them an hour ago. She doesn\'t mind. She\'s watching a trolley come up Broad Street behind the parade, too fast, swaying, the motorman shouting, and in the tracks in front of it, chasing a toy flag that blew out of his hand, a boy. Four, maybe. In short pants. Not looking.
 
 People see. People scream. Nobody is close enough.
 
@@ -73,7 +73,7 @@ Nobody says why. Ma says it\'s his back. Pop says it\'s his back. Gigi says *it\
 
 You don\'t know how much she heard at the table that morning. With Ma, you never know.` : 'Pop is in the yard in his undershirt, scrubbing the big pot for the clams, even though it\'s thirty degrees out. Ma says it\'s good for his back.'}
 
-Dinner is at eight. Midnight Mass at St. Monica\'s after, because Nonna has gone to midnight Mass at St. Monica\'s every Christmas Eve since the Truman administration.
+Dinner is at eight. Midnight Mass at St. Monica\'s after, because Nonna has gone to midnight Mass at St. Monica\'s every Christmas Eve but one since the Truman administration.
 
 Your phone buzzes.
 
@@ -101,7 +101,7 @@ You have the day before the fish. Time for two things.`,
         blurb: 'Dinner at eight.',
         options: [
           { id: 'x2_ma', text: 'Stay in the kitchen. Help Ma with the baccalà. Be in the room with her.', cost: 1, tag: 'Ma', go: 'a1_ma' },
-          { id: 'x2_jayden', text: 'Take the El up to North Philly with a present for Jayden. You saw him on the Parkway. You never went back.', cost: 1, tag: 'Jayden', go: 'a1_jayden' },
+          { id: 'x2_jayden', text: 'Take the Broad Street Line up to Lehigh with a present for Jayden. You saw him on the Parkway. You never went back.', cost: 1, tag: 'Jayden', go: 'a1_jayden' },
           { id: 'x2_pop', text: 'Pop\'s in the yard with the clam pot. Go out there.', cost: 1, tag: 'Pop', go: 'a1_pop' },
           { id: 'x2_gigi', text: 'Gigi needs a present for Ma and has eleven dollars. Take her up Passyunk.', cost: 1, tag: 'Gigi', go: 'a1_gigi' },
           { id: 'x2_simone', text: 'Call Simone in Atlanta. You never fixed it. It\'s Christmas.', cost: 1, tag: 'Simone', go: 'a1_simone', if: g => g.f('simone9') === 'lied' && g.f('simone10') !== 'mended' }
@@ -132,7 +132,7 @@ rosa: *The cold.* He says *the cold*, and *don\'t, kid*, and once he said *Bruno
 
 She pulls a bone out of the cod, a long thin one, and lays it on the side of the board, very precisely.
 
-rosa: I\'m not asking you. I want you to know I\'m not asking. I\'m telling you I\'m your mother, and I know when something is wrong with you. I have always known. I sat up in bed at nine forty-one on Thanksgiving morning.
+rosa: I\'m not asking you. I want you to know I\'m not asking. I\'m telling you I\'m your mother, and I know when something is wrong with you. I have always known. I sat up at nine forty-one on Thanksgiving morning.
 
 rosa: When you want to tell me, I\'m going to be right here. Pulling bones out of a fish. That\'s all.`,
       choices: [
@@ -165,7 +165,7 @@ sam: Nonna told me. In September.
 
 Ma\'s face does something you\'ve never seen it do. It goes very young, and very old, at the same time.
 
-rosa: She told me it was a story. My whole life. A story, about the bells. She said it was in the women. She said I had a *little* of it, the phone calls, and that was all, and that was *fine*. She said it never went to a boy.
+rosa: She told me it was a story. My whole life. A story, about the bells. She said it was in the women. She said it skipped me, and that was *fine*. She said it never went to a boy.
 
 She takes her hand off your hair.
 
@@ -192,7 +192,7 @@ Then she lets go and hands you the lemons.`,
     },
 
     a1_jayden: {
-      enter: g => { g.flag('jayden_xmas'); g.bond('jayden', { trust: 2, affection: 2 }); g.bond('carmen', { trust: 2, affection: 1 }); g.know('jayden_cold', ['sam', 'carmen'], 'Carmen: since the Parkway, Jayden says he can feel when "it\'s about to get cold." Last week he made her stop the car on Lehigh. A minute later a truck ran the light.'); g.know('carmen_address', ['sam'], 'Carmen and Jayden Torres live on the second floor of a rowhouse on North 15th Street, near Lehigh.'); },
+      enter: g => { g.flag('jayden_xmas'); g.money(-45); g.bond('jayden', { trust: 2, affection: 2 }); g.bond('carmen', { trust: 2, affection: 1 }); g.know('jayden_cold', ['sam', 'carmen'], 'Carmen: since the Parkway, Jayden says he can feel when "it\'s about to get cold." Last week he made her stop the car on Lehigh. A minute later a truck ran the light.'); g.know('carmen_address', ['sam'], 'Carmen and Jayden Torres live on the second floor of a rowhouse on North 15th Street, near Lehigh.'); },
       text: g => `Carmen Torres lives on the second floor of a rowhouse on North 15th Street, near Lehigh, up a narrow staircase she can\'t really do anymore with her hip, which is why she has a stair chair now, a little motorized seat on a rail, which Jayden rides up and down like it\'s Six Flags.
 
 You bring a present. You agonized over it at the Target on Columbus Boulevard for forty minutes. A LEGO set. A train. A trolley car, actually, an old-fashioned one, green and cream, which you only realize when you\'re standing in their doorway holding it.
@@ -207,7 +207,7 @@ carmen: He talks about you. Every day. *The cold man came back. The cold man was
 
 She stirs her coffee.
 
-carmen: Since the parade, he says he feels it. When it\'s about to get cold. Last week we were driving on Lehigh, and he said *Abuela, stop, stop, it\'s getting cold*, and I stopped. I don\'t know why. I just stopped. And a truck ran the red light. Right where we would have been.
+carmen: Since the parade, he says he feels it. When it\'s about to get cold. Last week my nephew was driving us on Lehigh, and he said *Tío, stop, stop, it\'s getting cold*, and I made him stop. I don\'t know why. I just did. And a truck ran the red light. Right where we would have been.
 
 She looks at you.
 
@@ -254,7 +254,7 @@ ${g.f('job1') === 'watched' ? 'After a while he says, without looking: *That thi
     },
 
     a1_gigi: {
-      enter: g => { g.bond('gigi', { affection: 2, trust: 1 }); g.flag('gigi_passyunk'); },
+      enter: g => { g.bond('gigi', { affection: 2, trust: 1 }); g.flag('gigi_passyunk'); g.money(-29); },
       text: g => `Gigi has eleven dollars and forty cents and a very clear vision.
 
 gigi: I want to get her something *nice*. Not a candle. She has a million candles. Something she\'d buy for herself if she wasn\'t Ma.

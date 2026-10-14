@@ -14,7 +14,7 @@ sam: It\'s Christmas Eve.
 
 DANTE: I know what day it is. My grandfather has a tradition. Every Christmas Eve, he sends envelopes. To friends. People who helped this year. Twelve envelopes. They need to be delivered before the Feast, because it\'s rude to interrupt a man\'s Feast. That\'s eight o\'clock.
 
-DANTE: Usually Vinnie does it. In the car. Takes him all afternoon, with the traffic on Christmas Eve. Grandpa thought, this year, why not try the fast way.
+DANTE: Usually somebody drives them. Takes all afternoon, with the traffic on Christmas Eve. Grandpa thought, this year, why not try the fast way.
 
 DANTE: Come to the club. The envelopes are on the bar. Twelve addresses. The last one is special. You\'ll see.
 
@@ -71,7 +71,7 @@ vinnie: Yo. Don\'t do the cold thing, Sally. Okay? Just run. Just be fast. You\'
     enter: g => { g.flag('envelopes', 'fast'); },
     text: `You go.
 
-Down Passyunk in the snow, the Christmas lights smeared in it. Snyder Avenue, a rowhouse with an inflatable Santa, a woman in a housecoat who takes the card and says *tell Bruno God bless*. Ritner. Moyamensing. A man in his undershirt at a door on Shunk Street who takes the card without a word and closes the door, and you realize from the cruiser in the driveway that he\'s a police captain. A rectory on Christian Street, where a priest in a cardigan takes it and puts it in his breast pocket and says *Merry Christmas, son*, and doesn\'t ask your name. A councilman\'s office on Broad with a guard who knows you were coming.
+Down Passyunk in the snow, the Christmas lights smeared in it. Snyder Avenue, a rowhouse with an inflatable Santa, a woman in a housecoat who takes the card and says *tell Bruno God bless*. Ritner. Moyamensing. A man in his undershirt at a door on Shunk Street who takes the card without a word and closes the door, and you realize from the cruiser at the curb that he\'s a police captain. A rectory on Christian Street, where a priest in a cardigan takes it and puts it in his breast pocket and says *Merry Christmas, son*, and doesn\'t ask your name. A councilman\'s office on Broad with a guard who knows you were coming.
 
 Eleven envelopes in two hours and ten minutes, in the snow, on Christmas Eve. You don\'t step all the way into the cold. Not once. You\'re just fast. You\'re a kid who grew up on these blocks, cutting through the alleys and the driveways and the backyards, over the fences, the way you did when you were nine and late for dinner.
 
@@ -136,7 +136,7 @@ It\'s thin. A few sheets of paper. You can feel the edge of them through the man
 
 *DO NOT OPEN.*
 
-Bruno Iannucci and Cole Brannigan sat in an empty club and asked each other for an understanding. This is what an understanding looks like. Paper in an envelope, on Christmas Eve, carried by a kid who doesn\'t ask.
+Bruno Iannucci told you he\'d have an understanding with the people from the Navy Yard. This is what an understanding looks like. Paper in an envelope, on Christmas Eve, carried by a kid who doesn\'t ask.
 
 You could not ask.`,
     choices: [
