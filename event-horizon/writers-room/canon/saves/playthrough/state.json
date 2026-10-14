@@ -1,8 +1,8 @@
 {
   "engine": "1.0.0",
-  "ep": "s02e02",
-  "savedAt": "2026-10-14T01:03:05.301Z",
-  "scene": "tag_list",
+  "ep": "s02e03",
+  "savedAt": "2026-10-14T11:24:11.886Z",
+  "scene": "tag_hugh",
   "state": {
     "attrs": {
       "body": 3,
@@ -155,9 +155,9 @@
       }
     },
     "clock": {
-      "date": "Dec 25",
-      "day": "Fri",
-      "time": "3:00 AM"
+      "date": "Jan 2",
+      "day": "Sat",
+      "time": "2:20 AM"
     },
     "created": 1791831489674,
     "done": [
@@ -172,7 +172,8 @@
       "s01e09",
       "s01e10",
       "s02e01",
-      "s02e02"
+      "s02e02",
+      "s02e03"
     ],
     "drift": 3,
     "entered": {
@@ -546,98 +547,154 @@
       "s02e02:a4_take": true,
       "s02e02:a4_watch": true,
       "s02e02:cold_open": true,
-      "s02e02:tag_list": true
+      "s02e02:tag_list": true,
+      "s02e03:a1_house": true,
+      "s02e03:a1_hugh": true,
+      "s02e03:a1_hugh_lose": true,
+      "s02e03:a1_simone": true,
+      "s02e03:a1_simone_lie": true,
+      "s02e03:a2_midnight": true,
+      "s02e03:a2_party": true,
+      "s02e03:a2_text": true,
+      "s02e03:a2_yes": true,
+      "s02e03:a3_chapel": true,
+      "s02e03:a3_cost": true,
+      "s02e03:a3_end": true,
+      "s02e03:a3_next": true,
+      "s02e03:a3_q1": true,
+      "s02e03:a3_sam": true,
+      "s02e03:a3_where": true,
+      "s02e03:a4_call": true,
+      "s02e03:a4_decide": true,
+      "s02e03:cold_open": true,
+      "s02e03:tag_hugh": true
     },
-    "ep": "s02e02",
+    "ep": "s02e03",
     "epLog": [
       {
-        "choice": "Call Simone in Atlanta. You never fixed it. It's Christmas.",
-        "ep": "s02e02",
+        "choice": "Simone has texted you nine times since Christmas Eve. The last one says: *Juliet. Call me. It's about a list.*",
+        "ep": "s02e03",
         "hub": true,
-        "scene": "a1_vigilia",
-        "t": 1791939340503
+        "scene": "a1_house",
+        "t": 1791976397879
       },
       {
-        "choice": "Wait. Don't fill the silence. Let her decide.",
-        "ep": "s02e02",
+        "choice": "Simone has texted you nine times since Christmas Eve. The last one says: *Juliet. Call me. It's about a list.*",
+        "ep": "s02e03",
+        "hub": true,
+        "scene": "a1_house",
+        "t": 1791976398050
+      },
+      {
+        "choice": "\"I'm a very lucky person, Simone. Everybody says so.\" Lie. You're very good at it.",
+        "ep": "s02e03",
         "roll": {
           "dice": [
-            1,
+            5,
             2
           ],
           "kind": "move",
-          "label": "Apologize to Simone",
+          "label": "Lie to Simone",
           "nudged": false,
           "rewound": false,
-          "tier": "miss"
+          "tier": "strong"
         },
         "scene": "a1_simone",
-        "t": 1791939351929
+        "t": 1791976434258
       },
       {
-        "choice": "Gigi needs a present for Ma and has eleven dollars. Take her up Passyunk.",
-        "ep": "s02e02",
+        "choice": "Hugh has challenged you to a game of billiards. \"For old times' sake, Jubilee.\" He has never once beaten you.",
+        "ep": "s02e03",
         "hub": true,
-        "scene": "a1_vigilia",
-        "t": 1791939369609
+        "scene": "a1_house",
+        "t": 1791976472214
       },
       {
-        "choice": "Borrow Ciro's e-bike. You know these streets. Ride it.",
-        "ep": "s02e02",
+        "choice": "Play it straight. Don't let the click happen. Just shoot, like a person, and see.",
+        "ep": "s02e03",
         "roll": {
           "dice": [
-            4,
-            3,
-            2,
-            7,
             1,
-            8,
-            3
+            1,
+            5,
+            3,
+            3,
+            1
           ],
           "kind": "pool",
-          "label": "Twelve envelopes before eight",
+          "label": "Play it straight",
           "nudged": false,
           "rewound": false,
-          "tier": "success"
+          "tier": "botch"
         },
-        "scene": "a2_club",
-        "t": 1791939443073
+        "scene": "a1_hugh",
+        "t": 1791976486347
       },
       {
-        "choice": "Don't open it. Don't ask. Deliver it. Get home for the fish.",
-        "ep": "s02e02",
-        "scene": "a2_manila",
-        "t": 1791939489714
+        "choice": "Stay with the party. Find a quiet corner. Text Sam. It's almost midnight.",
+        "ep": "s02e03",
+        "scene": "a2_party",
+        "t": 1791976558329
       },
       {
-        "choice": "Text Jules: \"my grandmother just said a name at grace ive never heard before. i think its mine\"",
-        "ep": "s02e02",
-        "scene": "a3_feast",
-        "t": 1791939567441
+        "choice": "Text back: \"Yes.\"",
+        "ep": "s02e03",
+        "scene": "a2_midnight",
+        "t": 1791976686261
       },
       {
-        "choice": "\"What happened to him? In the cold? Why couldn't he get out?\"",
-        "ep": "s02e02",
-        "scene": "a4_key",
-        "t": 1791939698750
+        "choice": "\"Where did it come from?\"",
+        "ep": "s02e03",
+        "scene": "a3_q1",
+        "t": 1791976737694
       },
       {
-        "choice": "Take the watch. \"I'll learn, Nonna.\"",
-        "ep": "s02e02",
-        "scene": "a4_watch",
-        "t": 1791939751555
+        "choice": "Ask another.",
+        "ep": "s02e03",
+        "scene": "a3_next",
+        "t": 1791976769418
+      },
+      {
+        "choice": "\"Is Sam Kearney in danger because of me?\"",
+        "ep": "s02e03",
+        "scene": "a3_q1",
+        "t": 1791976779269
+      },
+      {
+        "choice": "Ask another.",
+        "ep": "s02e03",
+        "scene": "a3_next",
+        "t": 1791976811859
+      },
+      {
+        "choice": "\"What does it cost?\"",
+        "ep": "s02e03",
+        "scene": "a3_q1",
+        "t": 1791976814265
+      },
+      {
+        "choice": "Go on.",
+        "ep": "s02e03",
+        "scene": "a3_next",
+        "t": 1791976842633
+      },
+      {
+        "choice": "Call him. Now. It's almost midnight. He said he'd pick up.",
+        "ep": "s02e03",
+        "scene": "a4_decide",
+        "t": 1791976878002
       }
     ],
     "epRolls": [
       {
         "dice": [
-          1,
+          5,
           2
         ],
-        "ep": "s02e02",
+        "ep": "s02e03",
         "kind": "move",
-        "label": "Apologize to Simone",
-        "mod": 3,
+        "label": "Lie to Simone",
+        "mod": 4,
         "nudged": false,
         "pushes": {
           "burst": false,
@@ -647,178 +704,86 @@
         },
         "rewound": false,
         "scene": "a1_simone",
-        "tier": "miss"
+        "tier": "strong"
       },
       {
         "dice": [
-          4,
-          3,
-          2,
-          7,
           1,
-          8,
-          3
+          1,
+          5,
+          3,
+          3,
+          1
         ],
-        "ep": "s02e02",
+        "ep": "s02e03",
         "kind": "pool",
-        "label": "Twelve envelopes before eight",
+        "label": "Play it straight",
         "nudged": false,
         "pushes": {
-          "burst": true,
+          "burst": false,
           "focus": false,
           "grit": false,
-          "push": true
+          "push": false
         },
         "rewound": false,
-        "s": 2,
-        "scene": "a2_club",
-        "tier": "success"
+        "s": 0,
+        "scene": "a1_hugh",
+        "tier": "botch"
       }
     ],
     "epStart": {
       "attrs": {
-        "body": 3,
-        "charm": 3,
-        "heart": 3,
+        "body": 2,
+        "charm": 4,
+        "heart": 2,
         "nerve": 3,
         "reflex": 3,
-        "wits": 2
+        "wits": 4
       },
       "bonds": {
-        "bree": {
-          "affection": 1,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 2
-        },
         "callum": {
-          "affection": 2,
+          "affection": 3,
           "met": true,
           "respect": 0,
           "tension": 0,
           "trust": 0
         },
-        "carmen": {
-          "affection": 2,
+        "catherine": {
+          "affection": 0,
           "met": true,
           "respect": 0,
-          "tension": 0,
-          "trust": 4
-        },
-        "ciro": {
-          "affection": 1,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
+          "tension": 1,
           "trust": 0
         },
-        "dana": {
+        "constance": {
           "affection": 0,
           "met": true,
           "respect": 0,
           "tension": 0,
+          "trust": 3
+        },
+        "hugh": {
+          "affection": 0,
+          "met": true,
+          "respect": 0,
+          "tension": 2,
           "trust": 0
-        },
-        "femi": {
-          "affection": 1,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 3
-        },
-        "frank": {
-          "affection": 4,
-          "met": true,
-          "respect": 0,
-          "tension": 4,
-          "trust": 5
-        },
-        "gigi": {
-          "affection": 3,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 2
-        },
-        "grace": {
-          "affection": 1,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 2
-        },
-        "heck": {
-          "affection": 2,
-          "met": true,
-          "respect": 1,
-          "tension": 0,
-          "trust": 7
-        },
-        "jayden": {
-          "affection": 3,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 3
         },
         "jules": {
           "affection": 10,
           "met": true,
-          "respect": 9,
+          "respect": 10,
           "tension": 10,
           "trust": 10
         },
-        "mikey": {
-          "affection": 2,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 7
-        },
-        "nik": {
-          "affection": 9,
-          "met": true,
-          "respect": 3,
-          "tension": 1,
-          "trust": 10
-        },
-        "nonna": {
-          "affection": 4,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 3
-        },
-        "rosa": {
-          "affection": 3,
-          "met": true,
-          "respect": 0,
-          "tension": 0,
-          "trust": 0
-        },
         "simone": {
-          "affection": 2,
+          "affection": 1,
           "met": true,
-          "respect": -1,
+          "respect": 2,
           "tension": 0,
-          "trust": -2
+          "trust": 1
         },
-        "teddy": {
-          "affection": 0,
-          "met": true,
-          "respect": 8,
-          "tension": 0,
-          "trust": 8
-        },
-        "vinnie": {
-          "affection": 2,
-          "met": true,
-          "respect": 0,
-          "tension": 2,
-          "trust": 3
-        },
-        "weisz": {
+        "whitney": {
           "affection": 0,
           "met": true,
           "respect": 0,
@@ -827,9 +792,9 @@
         }
       },
       "clock": {
-        "date": "Dec 18",
+        "date": "Dec 25",
         "day": "Fri",
-        "time": "11:58 PM"
+        "time": "3:00 AM"
       },
       "created": 1791831489674,
       "done": [
@@ -843,9 +808,10 @@
         "s01e08",
         "s01e09",
         "s01e10",
-        "s02e01"
+        "s02e01",
+        "s02e02"
       ],
-      "drift": 4,
+      "drift": 0,
       "entered": {
         "s01e01:a1_arrive": true,
         "s01e01:a1_cab": true,
@@ -1199,9 +1165,27 @@
         "s02e01:a4_roof_yeah": true,
         "s02e01:a4_study": true,
         "s02e01:cold_open": true,
-        "s02e01:tag_bruno": true
+        "s02e01:tag_bruno": true,
+        "s02e02:a1_gigi": true,
+        "s02e02:a1_simone": true,
+        "s02e02:a1_simone_no": true,
+        "s02e02:a1_vigilia": true,
+        "s02e02:a2_call": true,
+        "s02e02:a2_club": true,
+        "s02e02:a2_gate": true,
+        "s02e02:a2_manila": true,
+        "s02e02:a2_run_good": true,
+        "s02e02:a3_feast": true,
+        "s02e02:a3_mass": true,
+        "s02e02:a3_text": true,
+        "s02e02:a4_him": true,
+        "s02e02:a4_key": true,
+        "s02e02:a4_take": true,
+        "s02e02:a4_watch": true,
+        "s02e02:cold_open": true,
+        "s02e02:tag_list": true
       },
-      "ep": "s02e02",
+      "ep": "s02e03",
       "epLog": [],
       "epRolls": [],
       "eps": {
@@ -2457,6 +2441,64 @@
             "rolls": 2
           },
           "title": "After the Holiday"
+        },
+        "s02e02": {
+          "finished": "2026-10-14T01:02:51.913Z",
+          "summary": {
+            "bonds": [
+              {
+                "d": {
+                  "affection": 2,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                },
+                "id": "gigi",
+                "now": {
+                  "affection": 5,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 3
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 1,
+                  "tension": 0,
+                  "trust": 0
+                },
+                "id": "jules",
+                "now": {
+                  "affection": 10,
+                  "respect": 10,
+                  "tension": 10,
+                  "trust": 10
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                },
+                "id": "simone",
+                "now": {
+                  "affection": 2,
+                  "respect": -1,
+                  "tension": 0,
+                  "trust": -1
+                }
+              }
+            ],
+            "choices": 8,
+            "crits": 1,
+            "fails": 1,
+            "money": -29,
+            "rolls": 2
+          },
+          "title": "Seven Fishes"
         }
       },
       "facts": {
@@ -2475,6 +2517,14 @@
             "nonna"
           ],
           "text": "Nonna's mother, Assunta DiNardo, \"moved\" once, in 1918, during the Liberty Loan parade. She pulled a child out from under a trolley. Nonna says it runs in the women of the family. Until you."
+        },
+        "assunta_diary": {
+          "ep": "s02e02",
+          "knownBy": [
+            "sam",
+            "nonna"
+          ],
+          "text": "Assunta DiNardo's diary: she did it more than once. Every time she came back a little older. On September 28, 1918, there was a man up the street who moved too, and raised his hand to her like a man at a window."
         },
         "brannigan_face": {
           "ep": "s01e08",
@@ -3175,6 +3225,14 @@
           ],
           "text": "You can rewind on purpose now. You reach for the moment you want back, and pull."
         },
+        "salvatore_dinardo": {
+          "ep": "s02e02",
+          "knownBy": [
+            "sam",
+            "nonna"
+          ],
+          "text": "Nonna's older brother was Salvatore DiNardo (1931–1961). He could do what you do, and he never learned to stop. In December 1961 he went in after three children at a fire on Arch Street and came back an old man. He died on Christmas Eve at 11:51. You are named for him."
+        },
         "sam_at_girard": {
           "ep": "s01e02",
           "knownBy": [
@@ -3367,6 +3425,14 @@
           ],
           "text": "Vinnie drives nights for \"Dante from Passyunk.\" Twelve hundred a week, cash."
         },
+        "watch": {
+          "ep": "s02e02",
+          "knownBy": [
+            "sam",
+            "nonna"
+          ],
+          "text": "Salvatore DiNardo's pocket watch, stopped at 11:51. Nonna says in the Slip it's the only thing that ticks. Hold it, and walk toward it."
+        },
         "wawa_guy": {
           "ep": "s01e01",
           "knownBy": [
@@ -3404,6 +3470,7 @@
         "after": "handoff",
         "arrive": "slip",
         "ask": "yes",
+        "assunta_watch": true,
         "bail": "truth",
         "barricade10": true,
         "beat_jules_read": true,
@@ -3412,7 +3479,7 @@
         "broke_nik_rule": true,
         "bruno10": "card",
         "bruno_deal": "eight",
-        "bruno_jobs_done": 1,
+        "bruno_jobs_done": 2,
         "bruno_jobs_total": 8,
         "calc_final": "good",
         "calc_study_s2": true,
@@ -3460,12 +3527,16 @@
         "did_wed_carmen": true,
         "did_wed_ma": true,
         "did_wed_vinnie": true,
+        "did_x2_gigi": true,
+        "did_x2_simone": true,
         "door": "highness",
         "end": "slip",
+        "envelopes": "fast",
         "f1": "slip",
         "f2": "ice",
         "f3": "good",
         "family": "clean",
+        "feast_text": "name",
         "femi4": "maybe",
         "femi_dead_found": true,
         "femi_end": "found",
@@ -3478,6 +3549,7 @@
         "first_voluntary_rewind": true,
         "fri_leave": "promise",
         "fridge": "grabbed",
+        "gigi_passyunk": true,
         "gigi_q": "rescue",
         "grace": "open",
         "grace4": "some",
@@ -3509,6 +3581,8 @@
         "jules_guess": "love",
         "jules_s2e1": "study",
         "jules_walked": true,
+        "key_promise": "learn",
+        "key_q": "him",
         "kissed": true,
         "leave": "cant",
         "light": "trade",
@@ -3517,6 +3591,7 @@
         "lounge": "mock",
         "ma2": "joke",
         "ma5": "lied",
+        "manila": "sealed",
         "met_ciro": true,
         "midterm": "shaky",
         "mikey2": "half",
@@ -3573,6 +3648,7 @@
         "sat_jules": "talk",
         "show_buzz": true,
         "sim6": "bracelet",
+        "simone10": "cool",
         "simone9": "lied",
         "simone_roof": "dodged",
         "skipped_dinner": true,
@@ -3609,6 +3685,9 @@
         "skipped_wed_nap": true,
         "skipped_wed_practice": true,
         "skipped_wed_weisz": true,
+        "skipped_x2_jayden": true,
+        "skipped_x2_ma": true,
+        "skipped_x2_pop": true,
         "slip_did": "mask",
         "stairs_result": "success",
         "stoop": "whatif",
@@ -3664,21 +3743,11 @@
         "jules_debt": 5,
         "jules_luck": 0.35,
         "nudges": 1,
-        "revenant_drift": 23.7
+        "revenant_drift": 22.2
       },
       "hub": null,
       "hubs": {},
-      "injuries": [
-        {
-          "affects": [
-            "reflex"
-          ],
-          "heal": 1,
-          "id": "cold_s2e1",
-          "name": "Slip-cold (stoop)",
-          "pen": 1
-        }
-      ],
+      "injuries": [],
       "julesBonds": {
         "callum": {
           "affection": 3,
@@ -3757,16 +3826,17 @@
       "marked": {},
       "money": {
         "bank": 312,
-        "cash": 365
+        "cash": 336
       },
       "pools": {
-        "focus": 6,
+        "focus": 10,
         "nerve": 8,
-        "stamina": 8
+        "stamina": 6
       },
+      "pov": "jules",
       "powers": {
         "slip": {
-          "mastery": 42,
+          "mastery": 43,
           "nodes": [
             "burst",
             "slip",
@@ -3970,8 +4040,205 @@
         {
           "ep": "s02e01",
           "t": "Brannigan sat down with Bruno Iannucci and asked for an understanding."
+        },
+        {
+          "ep": "s02e02",
+          "t": "Nonna lied. There was a boy: her brother, Salvatore. In 1961 he came back old, and died at the Feast at 11:51."
+        },
+        {
+          "ep": "s02e02",
+          "t": "You have his watch. Nonna says in the cold it's the only thing that ticks."
+        },
+        {
+          "ep": "s02e02",
+          "t": "Brannigan, at the Navy Yard gate: \"When you get tired of being somebody's errand boy, I'm hiring.\""
+        },
+        {
+          "ep": "s02e02",
+          "t": "At 11:51 on Christmas Eve, the bells at St. Monica's stopped for one second."
         }
       ],
+      "samSheet": {
+        "attrs": {
+          "body": 3,
+          "charm": 3,
+          "heart": 3,
+          "nerve": 3,
+          "reflex": 3,
+          "wits": 2
+        },
+        "bonds": {
+          "bree": {
+            "affection": 1,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 2
+          },
+          "callum": {
+            "affection": 2,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          },
+          "carmen": {
+            "affection": 2,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 4
+          },
+          "ciro": {
+            "affection": 1,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          },
+          "dana": {
+            "affection": 0,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          },
+          "femi": {
+            "affection": 1,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 3
+          },
+          "frank": {
+            "affection": 4,
+            "met": true,
+            "respect": 0,
+            "tension": 4,
+            "trust": 5
+          },
+          "gigi": {
+            "affection": 5,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 3
+          },
+          "grace": {
+            "affection": 1,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 2
+          },
+          "heck": {
+            "affection": 2,
+            "met": true,
+            "respect": 1,
+            "tension": 0,
+            "trust": 7
+          },
+          "jayden": {
+            "affection": 3,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 3
+          },
+          "jules": {
+            "affection": 10,
+            "met": true,
+            "respect": 10,
+            "tension": 10,
+            "trust": 10
+          },
+          "mikey": {
+            "affection": 2,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 7
+          },
+          "nik": {
+            "affection": 9,
+            "met": true,
+            "respect": 3,
+            "tension": 1,
+            "trust": 10
+          },
+          "nonna": {
+            "affection": 4,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 3
+          },
+          "rosa": {
+            "affection": 3,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          },
+          "simone": {
+            "affection": 2,
+            "met": true,
+            "respect": -1,
+            "tension": 0,
+            "trust": -1
+          },
+          "teddy": {
+            "affection": 0,
+            "met": true,
+            "respect": 8,
+            "tension": 0,
+            "trust": 8
+          },
+          "vinnie": {
+            "affection": 2,
+            "met": true,
+            "respect": 0,
+            "tension": 2,
+            "trust": 3
+          },
+          "weisz": {
+            "affection": 0,
+            "met": true,
+            "respect": 0,
+            "tension": 0,
+            "trust": 0
+          }
+        },
+        "drift": 3,
+        "injuries": [],
+        "marked": {},
+        "pools": {
+          "focus": 6,
+          "nerve": 8,
+          "stamina": 7
+        },
+        "skills": {
+          "athletics": 1,
+          "banter": 3,
+          "brawl": 3,
+          "cook": 1,
+          "empathy": 3,
+          "hustle": 1,
+          "intimidate": 0,
+          "investigate": 1,
+          "lie": 2,
+          "medicine": 0,
+          "parkour": 0,
+          "perform": 0,
+          "persuade": 3,
+          "ride": 3,
+          "stealth": 0,
+          "streetwise": 3,
+          "study": 3,
+          "tech": 0
+        },
+        "sleepDebt": 2
+      },
       "scene": "cold_open",
       "season": 2,
       "settings": {
@@ -3980,30 +4247,30 @@
         "sound": false
       },
       "skills": {
-        "athletics": 1,
-        "banter": 3,
-        "brawl": 3,
-        "cook": 1,
-        "empathy": 2,
-        "hustle": 1,
-        "intimidate": 0,
-        "investigate": 1,
-        "lie": 2,
-        "medicine": 0,
+        "athletics": 2,
+        "banter": 2,
+        "brawl": 0,
+        "cook": 0,
+        "empathy": 1,
+        "hustle": 3,
+        "intimidate": 1,
+        "investigate": 2,
+        "lie": 3,
+        "medicine": 1,
         "parkour": 0,
-        "perform": 0,
-        "persuade": 3,
-        "ride": 2,
-        "stealth": 0,
-        "streetwise": 3,
+        "perform": 1,
+        "persuade": 2,
+        "ride": 0,
+        "stealth": 1,
+        "streetwise": 0,
         "study": 3,
-        "tech": 0
+        "tech": 1
       },
-      "sleepDebt": 3,
-      "updated": 1791936231393,
+      "sleepDebt": 0,
+      "updated": 1791939784092,
       "v": 1,
-      "xp": 7,
-      "xpSpent": 54
+      "xp": 1,
+      "xpSpent": 66
     },
     "eps": {
       "s01e01": {
@@ -5316,6 +5583,49 @@
           "rolls": 2
         },
         "title": "Seven Fishes"
+      },
+      "s02e03": {
+        "finished": "2026-10-14T11:24:11.882Z",
+        "summary": {
+          "bonds": [
+            {
+              "d": {
+                "affection": 2,
+                "respect": 1,
+                "tension": -1,
+                "trust": 0
+              },
+              "id": "hugh",
+              "now": {
+                "affection": 2,
+                "respect": 1,
+                "tension": 1,
+                "trust": 0
+              }
+            },
+            {
+              "d": {
+                "affection": 0,
+                "respect": 0,
+                "tension": 0,
+                "trust": -2
+              },
+              "id": "simone",
+              "now": {
+                "affection": 1,
+                "respect": 2,
+                "tension": 0,
+                "trust": -1
+              }
+            }
+          ],
+          "choices": 14,
+          "crits": 1,
+          "fails": 1,
+          "money": 0,
+          "rolls": 2
+        },
+        "title": "Old Money"
       }
     },
     "facts": {
@@ -5342,6 +5652,14 @@
           "nonna"
         ],
         "text": "Assunta DiNardo's diary: she did it more than once. Every time she came back a little older. On September 28, 1918, there was a man up the street who moved too, and raised his hand to her like a man at a window."
+      },
+      "bells_both": {
+        "ep": "s02e03",
+        "knownBy": [
+          "jules",
+          "sam"
+        ],
+        "text": "At midnight on New Year's, the bells stopped for one second. He asked if you heard the bells. You said yes. Neither of you said what you meant."
       },
       "brannigan_face": {
         "ep": "s01e08",
@@ -5549,6 +5867,14 @@
         ],
         "text": "In the frozen moment, you failed, and time ran backward to give you another try. You failed again anyway."
       },
+      "gran_sam": {
+        "ep": "s02e03",
+        "knownBy": [
+          "jules",
+          "constance"
+        ],
+        "text": "Gran: \"Some families are lucky. Some are early. The early ones always go in for somebody else. Keep him close, child, and don't let the house collect from him.\""
+      },
       "halcyon_aperture": {
         "ep": "s01e01",
         "knownBy": [
@@ -5628,6 +5954,14 @@
           "sam"
         ],
         "text": "The boy, Jayden, called you \"the cold man.\""
+      },
+      "josiah_1876": {
+        "ep": "s02e03",
+        "knownBy": [
+          "jules",
+          "constance"
+        ],
+        "text": "Gran: when he was thirty-one, Josiah Pemberton stood beside a great engine when it stopped \"for a heartbeat,\" and something stood beside him. He made an agreement he didn't understand. Every Pemberton since has been lucky."
       },
       "jules_callum": {
         "ep": "s01e01",
@@ -5860,6 +6194,14 @@
           "nik"
         ],
         "text": "You woke up on the Cardone roof at dawn with frost on your bare feet and no memory of going up there. Twenty-six minutes, gone."
+      },
+      "luck_cost": {
+        "ep": "s02e03",
+        "knownBy": [
+          "jules",
+          "constance"
+        ],
+        "text": "Gran: the luck costs other people. \"The house always collects. Not from us. Near us.\" Mercutio. Every time it goes your way, it goes someone else's way less."
       },
       "man_across_street": {
         "ep": "s01e01",
@@ -6284,6 +6626,7 @@
     },
     "flags": {
       "_failxp": 1,
+      "achterberg3": "none",
       "achterberg6": "lie",
       "after": "handoff",
       "arrive": "slip",
@@ -6292,6 +6635,7 @@
       "bail": "truth",
       "barricade10": true,
       "beat_jules_read": true,
+      "bells_reply": "yes",
       "brannigan8": "memorize",
       "brannigan_saw": true,
       "broke_nik_rule": true,
@@ -6309,6 +6653,7 @@
       "card_s2": "told",
       "carmen": "hip",
       "carmen_sorry": true,
+      "chapel_done": true,
       "choice10": "both",
       "ciro7": "read",
       "cold": "laugh",
@@ -6327,6 +6672,8 @@
       "did_hal_nap": true,
       "did_hub_nap": true,
       "did_hub_study": true,
+      "did_j3_hugh": true,
+      "did_j3_simone": true,
       "did_nap": true,
       "did_party": true,
       "did_s2f_jules": true,
@@ -6388,6 +6735,7 @@
       "hitch_result": "fail",
       "hitch_rewound": true,
       "horse6": "letgo",
+      "hugh3": "lost",
       "hugh_hand": "won",
       "ily": "too",
       "jacket": true,
@@ -6396,6 +6744,7 @@
       "jules9": "stay",
       "jules_box": true,
       "jules_covered": true,
+      "jules_decision": "call",
       "jules_guess": "love",
       "jules_s2e1": "study",
       "jules_walked": true,
@@ -6450,6 +6799,10 @@
       "pr2": "shared",
       "psy_mid": "bad",
       "psy_study": true,
+      "q_cost": true,
+      "q_count": 3,
+      "q_sam": true,
+      "q_where": true,
       "quiz1": "pass",
       "quiz_ready": true,
       "rec": "drive",
@@ -6468,6 +6821,7 @@
       "sim6": "bracelet",
       "simone10": "cool",
       "simone9": "lied",
+      "simone_j3": "lied",
       "simone_roof": "dodged",
       "skipped_dinner": true,
       "skipped_fri7_femi": true,
@@ -6480,6 +6834,9 @@
       "skipped_hub_grace": true,
       "skipped_hub_vinnie": true,
       "skipped_hub_weisz": true,
+      "skipped_j3_father": true,
+      "skipped_j3_gran": true,
+      "skipped_j3_mother": true,
       "skipped_library": true,
       "skipped_practice": true,
       "skipped_s2f_grace": true,
@@ -6509,6 +6866,7 @@
       "slip_did": "mask",
       "stairs_result": "success",
       "stoop": "whatif",
+      "straight_hugh": true,
       "study1": "lied",
       "study2": "laugh",
       "tag": "stayed",
@@ -6558,32 +6916,23 @@
     "hidden": {
       "halcyon_heat": 9,
       "halcyon_jules": 1,
-      "jules_debt": 5,
+      "jules_debt": 4,
       "jules_luck": 0.35,
       "nudges": 1,
       "revenant_drift": 22.2
     },
-    "hub": "a1_vigilia",
+    "hub": "a1_house",
     "hubs": {
-      "a1_vigilia": {
+      "a1_house": {
         "left": 0,
         "used": [
-          "x2_simone",
-          "x2_gigi"
+          "j3_simone",
+          "j3_simone",
+          "j3_hugh"
         ]
       }
     },
-    "injuries": [
-      {
-        "affects": [
-          "reflex"
-        ],
-        "heal": 1,
-        "id": "cold_s2e1",
-        "name": "Slip-cold (stoop)",
-        "pen": 1
-      }
-    ],
+    "injuries": [],
     "julesBonds": {
       "callum": {
         "affection": 3,
@@ -6607,10 +6956,10 @@
         "trust": 3
       },
       "hugh": {
-        "affection": 0,
+        "affection": 2,
         "met": true,
-        "respect": 0,
-        "tension": 2,
+        "respect": 1,
+        "tension": 1,
         "trust": 0
       },
       "simone": {
@@ -6618,7 +6967,7 @@
         "met": true,
         "respect": 2,
         "tension": 0,
-        "trust": 1
+        "trust": -1
       },
       "whitney": {
         "affection": 0,
@@ -6659,17 +7008,14 @@
       }
     },
     "lastRoll": null,
-    "marked": {
-      "empathy": false,
-      "ride": false
-    },
+    "marked": {},
     "money": {
       "bank": 312,
       "cash": 336
     },
     "pools": {
       "focus": 6,
-      "nerve": 6,
+      "nerve": 8,
       "stamina": 7
     },
     "powers": {
@@ -6894,9 +7240,21 @@
       {
         "ep": "s02e02",
         "t": "At 11:51 on Christmas Eve, the bells at St. Monica's stopped for one second."
+      },
+      {
+        "ep": "s02e03",
+        "t": "At Ravenscourt, Gran took Jules to the chapel and gave her three questions."
+      },
+      {
+        "ep": "s02e03",
+        "t": "In the chapel, Jules rolled a die and didn't let it. It came up one."
+      },
+      {
+        "ep": "s02e03",
+        "t": "At midnight on New Year's, the bells stopped for one second, for both of you. You asked if she heard them. She said yes."
       }
     ],
-    "scene": "tag_list",
+    "scene": "tag_hugh",
     "season": 2,
     "settings": {
       "motion": true,
@@ -6924,9 +7282,9 @@
       "tech": 0
     },
     "sleepDebt": 2,
-    "updated": 1791939784092,
+    "updated": 1791977051882,
     "v": 1,
-    "xp": 1,
+    "xp": 6,
     "xpSpent": 66
   }
 }

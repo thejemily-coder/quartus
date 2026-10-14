@@ -87,3 +87,14 @@ Write each episode to the save. The plan bends; the save doesn't.
   - Summarize before `povExit`. The S1E6 episode summary in the save is still polluted, which is harmless.
   - `jules_debt` is clamped to 0–10.
 - **E4–E5:** the letter (if written) stays undelivered until the E6 reveal.
+- **S2E4 "Made Men"** was written for this playthrough's S2E3 save (Jules called Sam; bells "yes"). Shape:
+  - **Cold open:** Dana's corkboard: "BLUR = IANNUCCI?" (Girard doorbell cam, Eddie's frostbite ER form).
+  - **Spring hub:** Simone, third chance / Jules at lunch / Nik's live map (Navy Yard flares nightly at 11:51 since Jan 10) / Ciro (Vinnie stared at Sam's Polaroid).
+  - **Job 3 at Phở Thanh:** Thomas Nguyen (52, hears through walls; daughter Mai). Talk him in / warn him to run (Vinnie covers for Sam with Dante) / let Dante do it. Vinnie, in a camel coat, is now Dante's right hand. "Every time I say yes to save somebody, I owe him more."
+  - **Dana Fiorillo** on Liacouras Walk: lie (press heat) / redirect her to Halcyon, Femi and Feld / walk away.
+  - **Friday:** Bree says the raid on Building 7 is tonight; the guard went home "sick." Jules's appointment is the roof at nine. **The roof** (tell all = MUTUAL REVEAL, moved up from E6 if chosen; or the true part) / **the Navy Yard** (the door is propped open; 714 holds only a cold Thanksgiving turkey; the 11:51 pulse; the door shuts).
+  - **Tag:** Achterberg: "the experiment worked."
+- **E5 must resolve:**
+  - **Roof path:** the crew is inside Building 7 without Sam (Bree's texts stop).
+  - **Navy Yard path:** `navy4` = in (all four locked on seven) / held (all out) / split (Sam at the closing door).
+  - **Revealed path:** with `mutual_reveal` set, E6 "What If It Was" becomes the aftermath, not the reveal.
