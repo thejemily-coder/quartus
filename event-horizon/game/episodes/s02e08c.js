@@ -67,6 +67,7 @@ rosa: I\'m telling you, because nobody in this house lies to anybody anymore, an
   a3_circolo_first: {
     loc: 'CIRCOLO SANT\'AGATA · EAST PASSYUNK',
     clock: { day: 'Fri', date: 'Mar 19', time: '6:05 AM' },
+    enter: g => { g.sleep(5); },
     text: `You take the first Broad Street Line train south at 5:30, in the dark, and walk from Tasker-Morris, and you get to the green-painted windows of the Circolo Sant\'Agata at five past six in the morning.
 
 The door\'s unlocked.
@@ -90,6 +91,7 @@ You sit.`,
   a3_circolo_alone: {
     loc: 'CARDONE HALL · 9-14',
     clock: { day: 'Fri', date: 'Mar 19', time: '7:04 AM' },
+    enter: g => { g.sleep(3); },
     text: `You don\'t sleep. You lie in bed in 9-14 and watch the ceiling go from black to gray, and at seven o\'clock exactly, you feel it.
 
 Not the cold. Something else. A tightness, like a held breath, coming from the south. From Passyunk. Like your mother is standing very straight somewhere, and you can feel how straight.
@@ -112,9 +114,9 @@ A rustle. Muffled voices. Then, through the wall of a social club on East Passyu
 
   a3_circolo: {
     loc: 'CIRCOLO SANT\'AGATA · THE BACK ROOM',
-    clock: { day: 'Fri', date: 'Mar 19', time: '7:00 AM' },
+    clock: { day: 'Fri', date: 'Mar 19', time: '7:05 AM' },
     enter: g => { g.flag('paid8'); g.flag('even8'); g.flag('bruno_jobs_done', g.f('bruno_jobs_total') || 8); g.know('rosa_bruno', ['sam', 'rosa', 'bruno', 'frank'], 'Rosa went to the Circolo and asked Bruno Iannucci, as Assunta DiNardo\'s granddaughter, for Frank\'s paper, her son, and the Pemberton girl. Bruno said yes. "After today, Rosa, we\'re even. The DiNardos and the Iannuccis."'); g.know('bruno_jules_table', ['sam', 'rosa', 'bruno'], 'Bruno: "The Pembertons always come back to the table."'); },
-    text: g => `${g.f('circolo8') === 'with' ? 'You walk in with her at seven. Past the sign. Past Sonny Pugliese at the door, three hundred pounds, twenty years a cop, who looks at your mother in her church coat and *moves*. Into the back room, where Bruno is at the little table with the oilcloth, in his cardigan, with his espresso, and stands up when he sees her.\n\n' : ''}rosa: Bruno.
+    text: g => `${g.f('circolo8') === 'with' ? 'You walk in with her at seven. Past the sign. Past Sonny Pugliese at the door, three hundred pounds, twenty years a cop, who looks at your mother in her church coat and *moves*. Into the back room, where Bruno is at the little table with the oilcloth, in his cardigan, with his espresso, and stands up when he sees her.\n\n' : g.f('circolo8') === 'first' ? 'At seven o\'clock exactly, by the clock over the espresso machine, Ma puts down her cup, pushes back her chair, and stands. The visit is over. Now it\'s business.\n\nBruno stops laughing.\n\n' : ''}rosa: Bruno.
 
 BRUNO: Rosa DiNardo. In my club. My father is turning over in Holy Cross.
 

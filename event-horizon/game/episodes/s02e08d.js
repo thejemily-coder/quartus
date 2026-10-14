@@ -12,7 +12,7 @@ EH.scenes('s02e08', {
 
 ${g.f('friday7') === 'slip' ? 'You were there on opening night. Every song. She left a heart on your door.' : g.f('friday7') === 'half' ? 'You saw half of it on opening night. She watched you leave at intermission. She hasn\'t said a word to you since that wasn\'t about the weather.' : 'You weren\'t there on opening night. Row C, seat nine, empty, in the middle of the third row, where the whole cast could see it. She hasn\'t said a word to you since.'}
 
-There\'s a box office window at the Tomlinson with a sophomore in it doing calculus homework. You have forty dollars in your pocket from Ciro\'s.
+There\'s a box office window at the Tomlinson with a sophomore in it doing calculus homework. You have Thursday\'s ninety dollars from Ciro\'s in your pocket.
 
 sam: One for tonight. Row C, if you have it. Seat nine.
 
@@ -52,7 +52,7 @@ simone: I saw.
 
 She coils.
 
-sam: Simone. Opening night, I wasn\'t there because a man from the Mafia asked my girlfriend to play poker for a pier on Columbus Boulevard, and I had to be in the room so she could look at me. That\'s true. It sounds insane. It\'s true.
+sam: Simone. ${g.f('friday7') === 'slip' ? 'Opening night, I was there, but I wasn\'t *there*, because' : g.f('friday7') === 'half' ? 'Opening night, I left at intermission because' : 'Opening night, I wasn\'t there because'} a man from the Mafia asked my girlfriend to play poker for a pier on Columbus Boulevard, and I had to be in the room so she could look at me. That\'s true. It sounds insane. It\'s true.
 
 She stops coiling.
 
@@ -277,7 +277,7 @@ Object.assign(EH.episodes.s02e08, {
     g.recap('The DiNardo women count. When the clocks stop, their eyes still move.');
     g.recap('Nonna saw a Pemberton girl in a black car at the Boathouse in 1964. Her eyes moved too.');
     g.recap('Ma walked into the Circolo and spent the DiNardo debt. Pop\'s paper is clean. Jules doesn\'t play. "After today, we\'re even."');
-    if (g.f('simone10') === 'mended') g.recap('You told Simone the whole truth, backstage, on closing night.');
+    if (g.f('simone8') === 'told') g.recap('You told Simone the whole truth, backstage, on closing night.');
     g.recap('Halcyon tested your blood. Three months, twelve years.');
   }
 });

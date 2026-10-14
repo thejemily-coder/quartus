@@ -24,7 +24,7 @@ January 1964. Boathouse Row in black and white, or close to it: gray sky, gray i
 
 The river is frozen from bank to bank. Kids are on it. They\'re not supposed to be. There\'s a sign. There\'s always a sign.
 
-On the bank, two women in black coats. One is sixty-one, small, with gray hair under a kerchief and a string bag of oranges from the Italian Market. The other is nineteen, dark, sharp-faced, carrying nothing, with her hands jammed in her pockets against the cold.
+On the bank, two women in black coats. One is sixty-one, small, with gray hair under a kerchief and a string bag of oranges from the Italian Market. The other is eighteen, dark, sharp-faced, carrying nothing, with her hands jammed in her pockets against the cold.
 
 TERESA: Mamma, we\'ll miss the trolley.
 
@@ -177,7 +177,7 @@ And that\'s when she cries. Not before. Not at the bus or the Parkway or Teddy. 
 
     a1_shown: {
       loc: 'MIFFLIN STREET · THE KITCHEN',
-      enter: g => { g.unstick('unstick_s2e8', 'Time debt (the kitchen)'); g.know('rosa_saw', ['sam', 'rosa'], 'You Slipped in the kitchen on Mifflin Street so Ma could see. She watched. She counted to nine.'); },
+      enter: g => { if (g.unsticks()) g.unstick('unstick_s2e8', 'Time debt (the kitchen)'); g.know('rosa_saw', ['sam', 'rosa'], 'You Slipped in the kitchen on Mifflin Street so Ma could see. She watched. She counted to nine.'); },
       text: g => `You don\'t say anything. You look at the clock over the stove.
 
 Then you step through.
@@ -271,7 +271,7 @@ She turns off the water.
 
 rosa: Salvatore. Who else in this family knows?
 
-${g.f('pop_knows') ? 'Pop knows. You told him, under the highway, or he saw. Mikey knows. Mikey\'s known since the fall. Nonna\'s known since before you did.' : 'Mikey knows. Nonna\'s known since before you did.'}
+${g.knows('sam_slip', 'frank') ? 'Pop knows. You told him, under the highway, or he saw. Mikey knows. Mikey\'s known since the fall. Nonna\'s known since before you did.' : 'Mikey knows. Nonna\'s known since before you did.'}
 
 And Ma is standing at the sink, the last one in the house to be told, with her hands dripping.`,
       choices: [
@@ -356,7 +356,7 @@ They stop in the doorway of the kitchen.
 
 Ma is at the stove. You\'re at the table. Nonna has come down and is sitting at the end, in her black cardigan, with her hands folded, like the judge.
 
-Pop looks at Ma\'s back. Then at you. At the calendar page on the oilcloth with the red marks.
+Pop looks at Ma\'s back. Then at you. At the stove, at the pot, at the wooden spoon standing in it.
 
 He takes his Phillies cap off.
 

@@ -63,7 +63,7 @@ nonna: Ask me what you want to ask me. I\'ll answer one. Then I\'m going to slee
       { text: '"How do I stop? Before I end up like him?"', tag: 'How to stop',
         fx: g => { g.flag('nonna8', 'stop'); g.know('nonna_stop', ['sam', 'rosa', 'nonna'], 'Nonna: Assunta stopped going in after 1964. "You stop when you let somebody count for you."'); g.hidden('revenant_drift', -1); }, go: 'a2_answer' },
       { text: '"The man under the streetlight. The one who cries. Who is he?"', tag: 'The man',
-        fx: g => { g.flag('nonna8', 'man'); g.know('nonna_man', ['sam', 'nonna'], 'Nonna on the man under the streetlight: "He walks like my brother. He walks like you. He stands like a DiNardo man who never let anybody count."'); }, go: 'a2_answer' },
+        fx: g => { g.flag('nonna8', 'man'); g.know('nonna_man', ['sam', 'rosa', 'nonna'], 'Nonna on the man under the streetlight: "He walks like my brother. He walks like you. He stands like a DiNardo man who never let anybody count."'); }, go: 'a2_answer' },
       { text: '"What happens to me? Honestly."', tag: 'What happens',
         fx: g => { g.flag('nonna8', 'fate'); g.know('nonna_fate', ['sam', 'rosa', 'nonna'], 'Nonna: Salvatore had his first white hair at twenty-five. "You have it at eighteen. You\'re going faster than he did."'); g.bond('nonna', { trust: 2 }); }, go: 'a2_answer' }
     ]
