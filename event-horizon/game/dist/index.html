@@ -26776,6 +26776,1313 @@ Object.assign(EH.episodes.s02e06, {
   }
 });
 
+/* s02e07.js */
+/* S2 · E7 · BAD TIMING, part 1 of 4: meta, cold open, Act One ("March"). */
+EH.episode({
+  id: 's02e07', season: 2, number: 7, title: 'Bad Timing', look: 's2',
+  cast: ['sam', 'jules', 'hugh', 'callum', 'simone', 'bree', 'nik', 'mikey', 'vinnie'],
+  start: 'cold_open',
+  xp: 5,
+  previously: g => [
+    'Teddy Kowal died at the bottom of the dry dock at the Navy Yard.',
+    'Bruno sat with Halina at Jefferson. He knows her surgeon.',
+    g.f('building6') === 'true' ? 'You gave Bruno the map of Building 7. One of his men was found on the bottom step of the dry dock with his hair gone white.' : g.f('building6') === 'refuse' ? 'You refused to give Bruno the building. Halina\'s appointment moved to April.' : 'You gave Bruno a false map of Building 7.',
+    g.f('jules6') === 'girlfriend' ? 'Dante: "Bring her to Sunday dinner at Grandpa\'s. In March."' : 'Dante asked who the blonde across the street was. Bruno noticed her.',
+    g.f('note6') === 'told' ? 'You gave Jules the card. "Don\'t trust the lucky one." She keeps it in her coat.' : 'You still have the card. "Don\'t trust the lucky one."',
+    g.f('first6') === 'yes' ? 'Valentine\'s Day. "It\'s just us."' : 'Valentine\'s Day. "Soon, Kearney."'
+  ],
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      night: true,
+      loc: 'RAVENSCOURT · THE BILLIARD ROOM',
+      clock: { day: 'Sat', date: 'Feb 27', time: '10:40 PM' },
+      text: `> THE CAMERA.
+
+The billiard room at Ravenscourt. Green baize, brass lamps, a fire nobody needs. Hugh Pemberton is alone at the table in his shirtsleeves, running the rack by himself, the way he has every Saturday night since Christmas.
+
+He sinks the nine. He sets up the rack again.
+
+Since Christmas, he hasn\'t lost a game. He hasn\'t played anyone.
+
+The door opens. His father, in a cardigan, with a glass of Scotch. And behind him, in a gray dress, a small woman with her glasses pushed up on her head.
+
+WHITNEY: Hughie. You remember Dr. Achterberg. From the party.
+
+hugh: The piano teacher.
+
+ACHTERBERG: I\'ve been called worse. May I?
+
+She picks up a cue from the rack on the wall, chalks it, and breaks. Badly. The balls go everywhere and nothing goes in.
+
+ACHTERBERG: I\'m terrible at this. I\'ve always been terrible at this. Your sister, I\'m told, is very good.
+
+hugh: My sister\'s good at everything.
+
+ACHTERBERG: Is she? You beat her at Christmas. Your father tells me it was the first time in your lives.
+
+Hugh doesn\'t say anything. He lines up a shot and misses it.
+
+ACHTERBERG: And then you watched her through the door. In the chapel. With your grandmother\'s die.
+
+He straightens up.
+
+ACHTERBERG: Sixes, Hugh. Every time. You counted. I would have counted too.
+
+hugh: How do you—
+
+ACHTERBERG: It\'s my job to know who\'s counting.
+
+She puts the cue back in the rack, very precisely, in its slot.
+
+ACHTERBERG: Your sister carries a handkerchief. White, monogrammed, in the inside pocket of a camel coat. It has someone else\'s blood on it. I\'d like it. That\'s all. Nobody gets hurt by a handkerchief.
+
+hugh: Why would I do that?
+
+ACHTERBERG: Because you\'ve been playing pool by yourself every Saturday for two months, trying to work out what she is. And I\'m the only person in this house who\'ll tell you.
+
+She looks at Whitney. Whitney raises his glass a quarter of an inch, like a toast, and leaves.
+
+The door closes.
+
+Hugh looks at the table. At the scattered balls. At the cue ball, sitting by itself in the middle of the green.
+
+hugh: What *is* she?
+
+ACHTERBERG: Bring me the handkerchief, and I\'ll show you.`,
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_march' },
+
+    /* ================= ACT ONE: MARCH ================= */
+    a1_march: {
+      card: { kind: 'act', label: 'Act One', title: 'March' },
+      loc: 'CARDONE HALL · 9-14',
+      clock: { day: 'Mon', date: 'Mar 1', time: '7:20 AM' },
+      enter: g => { g.sleep(7); },
+      text: g => `March comes in like it\'s angry about something.
+
+Sleet on the windows of 9-14. The radiator knocking. Nik\'s alarm going off for the fourth time across the room, and Nik, under a pile of blankets, saying *no* to it in a calm, reasonable voice, like a man declining a timeshare.
+
+And Jules, in your bed, in your Temple hoodie, reading your phone.
+
+${g.f('first6') === 'yes' ? 'She sleeps here most nights now. The whole ninth floor knows. Devontae has started calling 9-14 *the embassy*. Grace has put a box of condoms in the lounge with a Post-it on it in her handwriting: *FOR EVERYONE. NOT A COMMENTARY. — G.* Nobody believes the Post-it.' : 'She sleeps here most nights now. On top of the covers, some nights. Under them, some nights. You haven\'t talked about *soon*. You both know it\'s coming. The whole floor knows it\'s coming. Devontae has a pool.'}
+
+jules: You have a text.
+
+sam: You\'re reading my texts?
+
+jules: It was face up on your chest. I\'m a reader, Kearney. It\'s not a choice.
+
+She turns the phone around.
+
+TXT Unknown number: sunday march 7. grandpas house. 1610 s. 9th. 5pm. bring the blonde
+TXT Unknown number: grandpa says shes allergic to nothing he hopes
+TXT Unknown number: — D
+
+Sleet on the window.
+
+jules: Am I the blonde?
+
+sam: You\'re the blonde.
+
+jules: I\'ve never been called *the blonde* in my life. It\'s actually rather thrilling.
+
+She doesn\'t look thrilled. She looks the way she looks at a card table, when somebody across from her has just pushed in all their chips.
+
+jules: You told him I was your girlfriend.
+
+sam: He asked.
+
+jules: In a car. In front of Vinnie. And now Bruno Iannucci, who sat next to Teddy\'s mother at Jefferson with a pastry, would like me to come to dinner.
+
+She puts the phone down on your chest, face down.
+
+jules: I\'m going.
+
+sam: Jules—
+
+jules: I\'ve been to dinners with worse men, Sam. My father has dinner with worse men twice a week. I know which fork. I know how to smile at someone who\'s pricing me.
+
+jules: And if I don\'t go, he\'ll come and find out why. You know he will.`,
+      choices: [
+        { text: '"Okay. Together. I\'m not letting you walk into that house alone."', tag: 'Together',
+          fx: g => { g.flag('dinner7', 'together'); g.bond('jules', { trust: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a1_march_end' },
+        { text: '"No. Not you. Not Bruno. I\'ll go alone and tell him you\'re sick."', tag: 'No',
+          fx: g => { g.flag('dinner7', 'refused'); g.bond('jules', { tension: 2 }); g.hidden('revenant_drift', 1); }, go: 'a1_march_end' }
+      ]
+    },
+    a1_march_end: {
+      loc: 'CARDONE HALL · 9-14',
+      text: g => `${g.f('dinner7') === 'together' ? `sam: Okay. Together. I\'m not letting you walk into that house by yourself.
+
+jules: I wasn\'t going to walk in by myself. I was going to walk in with you. I just wanted to hear you say it.
+
+She lies back down with her head on your chest.
+
+jules: What do I wear to dinner with a Mafia don?
+
+sam: He\'s not a—
+
+jules: Sam.
+
+sam: Something with sleeves. His sister will judge you.` : `sam: No. Not you. I\'ll go by myself and tell him you\'ve got the flu.
+
+She sits up. All the way.
+
+jules: Say that again.
+
+sam: Jules. He *collects* people. Vinnie said—
+
+jules: I heard what Vinnie said. You told me. And you don\'t get to *no* me, Kearney. Not about this. Not about anything. You get to say *I\'m scared*, and then you get to come with me.
+
+You open your mouth.
+
+jules: Every man in my life has decided where I go. My father. My grandmother. Callum, very politely. I chose Temple. I chose this floor. I chose *you*. I\'m choosing this.
+
+She gets out of bed and starts getting dressed, fast, angry, precise.
+
+jules: Sunday. Five o\'clock. You\'re coming. I\'ll wear sleeves.
+
+She leaves for her nine o\'clock without kissing you. It\'s the first time since Valentine\'s Day.
+
+Across the room, under the blankets, Nik says, very quietly:
+
+nik: Bro.
+
+sam: I know.
+
+nik: *Bro.*`}
+
+You have a week. It goes fast.`,
+      next: 'a1_week'
+    },
+
+    a1_week: {
+      loc: 'TEMPLE · MAIN CAMPUS',
+      clock: { day: 'Tue', date: 'Mar 2', time: '12:00 PM' },
+      text: `Midterms in two weeks. Psych, Calc II, a history gen-ed on the Silk Road you have not opened the book for. Ciro has you on three nights. The sleet turns to rain and the rain turns back to sleet.
+
+You have four days before Thursday, when Jules\'s brother is coming up from Penn to *meet the boyfriend*. You have six before Sunday.`,
+      hub: {
+        slots: 2, label: 'The first week of March',
+        blurb: 'Thursday, Hugh. Sunday, Bruno.',
+        options: [
+          { id: 'w7_simone', text: 'Simone. *Mummers: The Musical* opens Friday the twelfth. She\'s put a ticket under your door with no note. Go find her.', cost: 1, tag: 'Simone', go: 'a1_simone' },
+          { id: 'w7_bree', text: 'Bree. She texted: *can u come by. its about my aunt. its good news. i hate it.*', cost: 1, tag: 'Bree', go: 'a1_bree' },
+          { id: 'w7_nik', text: 'Nik. He\'s been weird since the Navy Yard. Weirder. He keeps closing his laptop when you walk in.', cost: 1, tag: 'Nik', go: 'a1_nik', if: g => !g.knows('nik_frame') },
+          { id: 'w7_mikey', text: 'Mikey. He wants to get a beer. Mikey never wants to get a beer.', cost: 1, tag: 'Mikey', go: 'a1_mikey' }
+        ],
+        done: 'a1_hugh'
+      }
+    },
+
+    a1_simone: {
+      loc: 'TOMLINSON THEATER · REHEARSAL',
+      text: g => `She\'s in the house of the Tomlinson Theater at nine at night with a clipboard and a headset, in a feathered hat for no reason anybody has explained, watching twelve freshmen in sequins try to do a strut in unison and fail.
+
+simone: *Again.* Again from *the top of the strut*, Kyle, the strut is a *philosophy*.
+
+You sit down in the seat next to her.
+
+She doesn\'t look at you.
+
+simone: You got the ticket.
+
+sam: I got the ticket.
+
+simone: Row C. Seat nine. Opening night. Friday the twelfth. Seven-thirty curtain.
+
+sam: I\'ll be there.
+
+Now she looks at you.
+
+simone: Salvatore Kearney. I have been lied to by you since September. I have been lied to by your girlfriend since August, beautifully. I\'m not asking you for the truth anymore. I gave up on the truth around Valentine\'s.
+
+simone: I\'m asking you for one seat. Row C, nine. For two hours and ten minutes, including intermission. I\'m asking you to be a person who is *where he said he\'d be*.
+
+${g.f('simone10') === 'mended' ? 'She says it gently. You\'re friends again. That\'s why it matters.' : 'She says it the way you\'d say the last thing you were going to ask somebody.'}`,
+      choices: [
+        { text: '"Row C. Seat nine. Seven-thirty. I swear to God, Simone."', tag: 'Promise',
+          fx: g => { g.flag('simone7', 'promised'); g.bond('simone', { trust: 1 }); }, go: 'a1_simone_end' },
+        { text: '"I\'ll try. I really will. But things happen to me, Simone. I don\'t want to promise and not be there."', tag: 'I\'ll try',
+          fx: g => { g.flag('simone7', 'try'); g.bond('simone', { respect: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a1_simone_end' }
+      ]
+    },
+    a1_simone_end: {
+      loc: 'TOMLINSON THEATER · REHEARSAL',
+      text: g => `${g.f('simone7') === 'promised' ? `simone: Don\'t swear to God. God\'s not coming. Swear to me.
+
+sam: I swear to you.
+
+She turns back to the stage.
+
+simone: *Again*, Kyle. Like you *mean* it. Like the Mummers are a *calling*.
+
+She doesn\'t look at you again. But when you get up to leave, she reaches out without turning her head, and squeezes your wrist, once.` : `Simone looks at you for a moment. Then she laughs, short.
+
+simone: That\'s the most honest thing you\'ve ever said to me. *Things happen to me.* God. Yes. They do.
+
+She turns back to the stage.
+
+simone: Try, then. Row C. If you\'re not in it, I\'ll know something happened to you. That\'s almost better.
+
+simone: *Again*, Kyle!`}`,
+      next: '@hub'
+    },
+
+    a1_bree: {
+      loc: 'EDGEMONT STREET · PORT RICHMOND',
+      enter: g => { g.know('halina_moved_up', ['sam', 'bree'], 'Halina Kowal\'s transplant evaluation was moved up to March 11. Dr. Feingold\'s office called. Bruno called ten minutes later.'); g.bond('bree', { trust: 1 }); },
+      text: g => `Bree meets you on the stoop. She won\'t go inside. Through the window, Halina is in the recliner, and the machine is humming, and the TV is on.
+
+bree: Feingold\'s office called. Yesterday. Seven in the morning. The evaluation\'s moved *up*. March eleventh. Next Thursday. "A cancellation."
+
+She lights a cigarette. You\'ve never seen Bree smoke. She doesn\'t seem to know how. She holds it like a pencil.
+
+bree: Bruno called ten minutes after. He didn\'t say anything about it. He asked how she was feeling. He asked if we needed a ride.
+
+bree: Wawa, if she gets a kidney, I\'m his. That\'s the deal nobody said out loud. I know it. She knows it. She cried for an hour and then she said *we take it*.
+
+She looks at the cigarette like she doesn\'t know how it got there.
+
+bree: And then he asked me something else. On the phone. At the end. Like it was nothing.
+
+bree: He asked what the Pemberton girl sounds like.
+
+The cigarette burns down.
+
+bree: I heard her once. At the Navy Yard. On the seventh floor. *Hello.* That\'s all she said. One word. I could do it right now. I could do it perfect.
+
+bree: I told him I didn\'t remember. He laughed. He said, *Sure, sweetheart.*
+
+She drops the cigarette and steps on it.
+
+bree: Whatever he wants her for, it\'s Sunday. Isn\'t it. Dante told the whole Circolo.`,
+      next: '@hub'
+    },
+
+    a1_nik: {
+      loc: 'CARDONE HALL · 9-14',
+      enter: g => { g.know('man_across_street', ['nik']); g.know('nik_frame', ['sam', 'nik'], 'Nik saved the Navy Yard camera feed from 00:51:04. In one frame, across the dry dock, a gray-haired man with his left hand raised. He\'s in no other frame.'); g.bond('nik', { trust: 1 }); g.hidden('revenant_drift', -0.5); },
+      text: g => `You close the door behind you. Nik closes the laptop.
+
+sam: Nik.
+
+nik: It\'s nothing.
+
+sam: Nik, you closed it so fast it bounced.
+
+He looks at you for a long moment. Then he opens it again.
+
+nik: I recorded the feeds. That night. All four. I hit record when you said *Broad and Intrepid*. It\'s a reflex. And I\'ve been—I keep watching one part. Not him falling. I can\'t watch that. The frame *before*.
+
+*00:51:04.* The dry dock. Teddy on the lip. And across the water, under the light, a man in a long coat with one hand raised, like he\'s waving at somebody in a window.
+
+One frame. Nik clicks forward. Gone. Back. There.
+
+nik: Thirty-three milliseconds. He\'s not in the frame before. He\'s not in the frame after. He\'s not on the other three cameras. Bro, a person can\'t be in one frame.
+
+He zooms in. The hand. Three gaps between the fingers where there should be four.
+
+You tell him. The man across Broad Street in the rain. The finger to his lips. Your face.
+
+Nik listens with both hands over his mouth.
+
+nik: Salvatore. That\'s *you*.
+
+sam: You don\'t know that.
+
+nik: I know you wave like that. Like a guy at a window. You do it to Grace across the lounge. I have it on my phone. Don\'t ask why I have it on my phone.
+
+He closes the laptop, gently this time.
+
+nik: He was there. When Teddy fell. ${g.f('jules_blames5') ? 'Bro, does Jules know? She thinks it was—' : ''}
+
+sam: She knows I saw someone.
+
+nik: That\'s not the same as *this*.
+
+He holds out a thumb drive.
+
+nik: It\'s on there. The frame. The whole night. I made you a copy. I don\'t want to be the only one who has it.`,
+      next: '@hub'
+    },
+
+    a1_mikey: {
+      loc: 'THE PEN & PENCIL CLUB',
+      clock: { day: 'Wed', date: 'Mar 3', time: '9:40 PM' },
+      enter: g => { g.know('mikey_sal', ['sam', 'mikey'], 'Mikey: Sal Russo, the Iannucci soldier with the white hair, is at Friends Hospital. He says "eleven fifty-one" and nothing else. Dante told the 3rd District it was a stroke.'); g.bond('mikey', { trust: 1, affection: 1 }); },
+      text: g => `The Pen & Pencil Club is the oldest press club in America, an unmarked door in an alley off 15th Street, and cops drink there because reporters drink there and everybody wants to know what everybody else knows.
+
+Mikey has a Yuengling and a basket of fries he isn\'t eating.
+
+mikey: There\'s a guy at Friends Hospital. Sal Russo. Fifty-four. Iannucci soldier, been with Bruno since the eighties. Two weeks ago he walked into the Navy Yard on a Saturday night and walked out Sunday morning with white hair. All of it. Like an old man.
+
+${g.knows('sal_white') ? 'You knew. You read it on your phone in Jules\'s bed on Valentine\'s Day. You don\'t say so.' : 'You didn\'t know. You find out you\'re holding the edge of the bar.'}
+
+mikey: He doesn\'t talk. He says one thing. *Eleven fifty-one.* Over and over. Dante told the 3rd District it was a stroke. A stroke doesn\'t turn your hair white overnight, Sammy.
+
+He eats a fry finally. Doesn\'t taste it.
+
+mikey: Brannigan\'s guy in the Camry stopped sitting outside my place. Two weeks ago. The same night.
+
+mikey: You know what that means? It means they don\'t need to watch me anymore. It means they\'ve got eyes on something better.
+
+He looks at you.
+
+mikey: Bruno Iannucci\'s telling the whole Circolo a Pemberton is coming to Sunday dinner. A *Pemberton*, Sammy. Do you have any idea what that name means to a man like Bruno? My lieutenant\'s father used to say, in this city, there\'s three families you don\'t play cards with. The Pembertons are two of them.
+
+He finishes his beer.
+
+mikey: Don\'t take her there.
+
+sam: She\'s going whether I take her or not.
+
+Mikey looks at you for a long time.
+
+mikey: Then I\'ll be parked on 9th Street. In my own car. Like a guy who likes cannoli.`,
+      next: '@hub'
+    },
+
+    a1_hugh: {
+      loc: 'CARDONE HALL · 9TH FLOOR LOUNGE',
+      clock: { day: 'Thu', date: 'Mar 4', time: '7:10 PM' },
+      enter: g => { g.meet('hugh'); g.flag('hugh_coat7'); g.know('hugh_visit', ['sam', 'jules'], 'Hugh Pemberton came to Cardone Hall on March 4 to meet you. He brought Callum. He used the bathroom in 9-04.'); },
+      text: g => `Jules\'s brother is exactly what you expected and also not at all.
+
+He\'s her face, but wider. Her eyes, but warmer and less careful. Golden, the way she\'s silver. A Penn crew jacket, a good haircut, and the easy, unbothered way of standing in a room that you only get from never once being told to leave one.
+
+hugh: So you\'re the boyfriend.
+
+sam: So you\'re the twin.
+
+hugh: I\'m the *older* twin. By six minutes. She\'s never forgiven me.
+
+He shakes your hand. Firm, friendly, a little too long. He\'s looking at your hair. At the white at your temple.
+
+hugh: Huh. She said you were eighteen.
+
+And behind him, in the lounge doorway, holding a box of Federal Donuts like a peace offering, tall and broad-shouldered and visibly wishing he were anywhere else, is Callum Whitford.
+
+callum: Hi. Sorry. Hi. Hugh said—Hugh said it would be fine.
+
+jules: *Hugh.*
+
+hugh: What? He\'s my roommate\'s best friend. He was coming up anyway. And he wanted to see you were okay. That\'s allowed, Jubilee. People are allowed to want that.
+
+Callum puts the donuts on the big table very carefully, the way you\'d put down something that might go off.
+
+callum: I can go. I should go. I\'ll go.
+
+jules: Sit down, Callum. Have a donut. You brought them.
+
+It\'s the most awkward forty minutes of your life, and you once delivered a pizza to your high school guidance counselor\'s divorce party.
+
+Hugh talks. Hugh is good at talking. Penn, crew, their father\'s new boat, Gran\'s birthday in April. He talks to Jules the way you talk to Gigi, half-teasing, half-checking. And every so often, when he thinks nobody\'s looking, he looks at her hands. At what she does with them. Like he\'s waiting for something.
+
+Callum doesn\'t talk. Callum eats one donut in very small bites and looks at you, and looks at Jules, and looks at the way she sits with her knee touching yours under the table.
+
+At one point Hugh asks to use the bathroom in 9-04. Jules says *it\'s Simone\'s side too, don\'t touch the feathers*. He\'s gone a while. When he comes back, he\'s smiling.
+
+When they finally go, Callum hangs back. In the hallway, by the elevator, while Hugh is holding the door.
+
+callum: Hey. Sam. Can I—just one thing.
+
+He looks at his shoes. Then at you.
+
+callum: Is she happy?`,
+      choices: [
+        { text: '"Yeah. I think so. I think she\'s happy."', tag: 'Yeah',
+          fx: g => { g.flag('callum7', 'yes'); g.bond('callum', { respect: 2, affection: 1 }); }, go: 'a1_callum' },
+        { text: '"I don\'t know. Some days. It\'s a hard year. Ask her."', tag: 'Ask her',
+          fx: g => { g.flag('callum7', 'ask'); g.bond('callum', { respect: 3 }); g.hidden('revenant_drift', -0.5); }, go: 'a1_callum' }
+      ]
+    },
+    a1_callum: {
+      loc: 'CARDONE HALL · 9TH FLOOR',
+      text: g => `${g.f('callum7') === 'yes' ? 'sam: Yeah. I think so. I think she\'s happy.\n\nCallum nods. Something in his face loosens. He looks relieved and sad and like a guy who rowed four miles on the Schuylkill this morning in the sleet to not think about something, and is going to row four more tomorrow.\n\ncallum: Good. That\'s good. That\'s all I wanted.' : 'sam: I don\'t know. Some days. It\'s been a hard year. You should ask her.\n\nCallum looks at you for a second, surprised.\n\ncallum: Huh. I thought you\'d say yes. Anybody would say yes.\n\nsam: She\'d know I was lying.\n\ncallum: Yeah. She would.\n\nHe almost smiles.'}
+
+callum: She never touched my knee under a table. Not once. Two years.
+
+He gets in the elevator. Hugh lets the door go. The last thing you see is Hugh, golden, smiling, with his hand in the pocket of his crew jacket, holding something.
+
+The doors close.
+
+Jules is standing behind you in the hallway.
+
+jules: That was the worst evening of my life, and I\'ve been to a Pemberton Christmas.
+
+sam: Your brother likes me.
+
+jules: My brother likes *everyone*. That\'s the problem with Hugh. He likes everyone, and he wants everything they have.`,
+      next: 'a2_dinner'
+    }
+  }
+});
+
+/* s02e07b.js */
+/* S2 · E7 · BAD TIMING, part 2 of 4: Act Two ("Sunday Dinner"). */
+EH.scenes('s02e07', {
+
+  /* ================= ACT TWO: SUNDAY DINNER ================= */
+  a2_dinner: {
+    card: { kind: 'act', label: 'Act Two', title: 'Sunday Dinner' },
+    loc: '1610 S. 9TH STREET',
+    clock: { day: 'Sun', date: 'Mar 7', time: '5:00 PM' },
+    enter: g => { g.sleep(7); },
+    text: g => `Bruno Iannucci lives four blocks from the Italian Market in a rowhouse that looks like every other rowhouse on 9th Street, except that the steps are marble and somebody scrubs them every morning, and there\'s an Infant of Prague in the front window in a red velvet robe, and the black Escalade is parked in front of the fire hydrant and nobody has ever given it a ticket.
+
+${g.f('did_w7_mikey') ? 'Halfway down the block, a gray Honda Accord with a man in it eating a cannoli. Mikey doesn\'t look at you. You don\'t look at him.' : ''}
+
+Jules is wearing sleeves. Navy, high-necked, a cardigan over it, pearls, her hair back. She looks like she\'s going to a christening. She\'s holding a box of pastries from Termini Brothers that she insisted on buying herself and wouldn\'t let you carry.
+
+${g.f('dinner7') === 'refused' ? 'She hasn\'t said much to you since Monday. She\'s not angry anymore, exactly. She\'s *precise*. Every word measured, like she\'s paying for them.' : 'She squeezes your hand once on the marble steps. Then she lets go, because you\'re about to be looked at.'}
+
+Vinnie opens the door. In an apron.
+
+vinnie: Sally. Miss.
+
+jules: Vincenzo. Hello again.
+
+He blinks. He didn\'t think she\'d remember his name. Nobody remembers his name.
+
+Inside, it\'s 1974. Plastic on the good couch. A crucifix over every door. A wall of framed photographs, weddings and christenings and first communions going back to black and white, and one, near the top, of a boy of about six in a heavy coat on a riverbank in winter, held by a young woman with black hair, both of them soaking wet.
+
+You stop in front of that one.
+
+BRUNO: *(behind you)* January 1964. My father took that. He was crying so hard it\'s a miracle it\'s in focus.
+
+He comes down the hall on his cane in a cardigan and slippers. He looks at the photo. Then at you.
+
+BRUNO: You have her eyes, Sam. I noticed it at Thanksgiving. Assunta DiNardo\'s eyes.
+
+Then he turns to Jules. And something happens to his face, a small change, like a man at an auction when the lot he came for comes up.
+
+BRUNO: And you are Miss Pemberton.
+
+jules: Juliet. Thank you for having me, Mr. Iannucci.
+
+BRUNO: Bruno. Please. Come. My sister has been cooking since Thursday. If you don\'t eat, she\'ll put a curse on you. A real one. She\'s from Calabria.
+
+Dinner is eleven courses and four hours.
+
+Philomena, his sister, eighty-two, in black, makes the gravy and the braciole and the pizzelles, and sits at the end of the table watching Jules eat with the intensity of a scientist. Dante tells a long story about a boat. Vinnie serves and clears and doesn\'t sit down once.
+
+Bruno is charming. Bruno is *wonderful*. He asks Jules about Temple, about pre-med, about her grandmother, whom he says he met once at a fundraiser for the Academy of Music in 1988 and has been afraid of ever since. Jules laughs at the right times. She uses the right fork. She asks Philomena for the braciole recipe and Philomena tells her, in Calabrese, and Bruno translates, and everybody laughs.
+
+You don\'t eat much. You watch.
+
+At the end, over espresso and Sambuca and the Termini cannoli, Bruno sits back.
+
+BRUNO: My grandfather, Carmine Iannucci, God rest him, had a produce stall at the Reading Terminal. In 1931 he lost it. In one hand of cards. At a club on Walnut Street. To a man named Pemberton.
+
+He smiles at Jules.
+
+BRUNO: He told that story every Christmas until he died. *Never play cards with a Pemberton. They don\'t lose. They don\'t know how.*
+
+jules: That sounds like my family.
+
+BRUNO: Mm. Do you play, Juliet?
+
+jules: A little.
+
+Bruno reaches into the pocket of his cardigan and takes out a deck of Neapolitan cards. Old, soft, the corners round. Coins, cups, swords, clubs.
+
+BRUNO: Briscola. My grandfather\'s game. I\'ll teach you. One hand. For fun.
+
+He deals.
+
+Jules picks up her three cards and looks at them. Then she looks at you. Across the table, over the cannoli, the way she looks at you on the roof. A question.
+
+*How do you want me to play this?*`,
+    choices: [
+      { text: 'Touch your ear. Your tell. Her signal. *Lose.*', tag: 'Lose',
+        fx: g => { g.flag('briscola7', 'lost'); g.hidden('jules_debt', -1); }, go: 'a2_briscola' },
+      { text: 'Nod. *Let it go your way.* Let him see what he came to see, and get it over with.', tag: 'Let her win',
+        fx: g => { g.flag('briscola7', 'luck'); g.hidden('jules_debt', 1); g.hidden('jules_open', 1); }, go: 'a2_briscola' },
+      { text: 'Don\'t signal anything. It\'s her hand. It\'s always been her hand.', tag: 'Her call',
+        fx: g => { g.flag('briscola7', 'skill'); g.bond('jules', { respect: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a2_briscola' }
+    ]
+  },
+
+  a2_briscola: {
+    loc: '1610 S. 9TH STREET',
+    text: g => `${g.f('briscola7') === 'lost' ? `She sees you touch your ear. She looks back at her cards.
+
+She holds her breath. You watch her do it. Then she plays.
+
+She loses. Not badly. Beautifully. Like a girl who\'s played twice in her life and is enjoying herself. She takes a trick she shouldn\'t have and throws away a three of coins she should have kept, and Bruno takes the last trick with the ace of cups, and laughs, and pats her hand.
+
+BRUNO: Beginner\'s bad luck.
+
+jules: I\'m afraid I\'m hopeless.
+
+BRUNO: Mm.
+
+He gathers the cards. He shuffles them, slowly, with his old hands. He doesn\'t take his eyes off her.
+
+BRUNO: You threw the three of coins, Juliet. With the briscola in coins. Even a child knows to keep the three.
+
+Silence at the table.
+
+BRUNO: You lost *on purpose*. Which is a very interesting thing to be able to do. Most people can\'t lose on purpose. Most people just lose.` : g.f('briscola7') === 'luck' ? `She sees you nod. She looks back at her cards.
+
+She breathes out. Long and slow. You feel it from across the table, the little tilt, the whole room leaning a quarter inch toward her.
+
+She doesn\'t look at her cards again. She doesn\'t have to. She plays them in order, left to right, like she\'s reading a sentence, and every card is the right card. The ace of coins when coins are trump. The three when Bruno leads the king. Every trick. All of them. Bruno doesn\'t take one.
+
+Philomena crosses herself.
+
+Bruno sits back. He looks at the cards on the table. Then at Jules. And his face does a thing you\'ve never seen it do. It goes young. Six years old, on a riverbank, in a wet coat.
+
+BRUNO: There it is.
+
+He says it so softly only the table hears.
+
+BRUNO: My grandfather wasn\'t lying.
+
+There\'s a single drop of blood on the white tablecloth, by Jules\'s plate. She covers it with her napkin before anyone else sees it. You see it.` : `She looks at you. You don\'t move. You don\'t touch your ear. You don\'t nod. You just look back.
+
+Something in her face settles.
+
+She looks at her cards. She holds her breath, the way she does now, every time, to keep the luck out. And then she plays briscola like a girl who has run a high-stakes poker game for Main Line kids since she was fifteen and has never once needed to cheat at it.
+
+She counts every card. She knows the three is worth ten. She lets Bruno take two cheap tricks to bleed his trump, and then she takes the last four, one after another, clean.
+
+Bruno looks at the cards. Then he laughs, a big real laugh, and slaps the table, and Philomena\'s espresso cup jumps.
+
+BRUNO: *Brava!* Brava. That wasn\'t luck. That was *counting*.
+
+jules: I also run a card game, Mr. Iannucci. On the side. Since I was fifteen.
+
+BRUNO: Do you. Do you. Did you hear that, Dante? Fifteen.
+
+He wipes his eyes.
+
+BRUNO: The luck, I could buy anywhere. If I could find it. That? *That*, you can\'t buy.`}
+
+He puts the deck back in his cardigan pocket.
+
+BRUNO: Juliet. I\'m going to ask you something. And Sam is going to want to say no for you. And I\'m going to ask him to let you answer.
+
+BRUNO: Friday night, there is a card game. On Bustleton Avenue. In the back room of a bathhouse owned by a man named Pavel Orlov, who came here from Odessa in 1991 with one suitcase and now owns half of Northeast Philadelphia. Pavel and I have a disagreement about a pier. Pier 53. On Columbus Boulevard. We\'ve agreed to settle it like gentlemen, with one game, so nobody has to settle it any other way.
+
+BRUNO: I would like you to play for me.
+
+The clock on the wall ticks.
+
+BRUNO: In return. Sam\'s father\'s paper. All of it. Gone. ${g.f('bruno_jobs_total') ? 'No more jobs, Sam. No more envelopes. You\'re free.' : ''} And Mrs. Kowal\'s doctor stays a friend of mine for as long as she needs one.
+
+BRUNO: One night. One game. And then you go back to your chemistry, and your boyfriend, and you never have to sit in my house again unless you want the braciole.
+
+Jules doesn\'t answer. She looks at you.
+
+Everybody at the table looks at you.`,
+    choices: [
+      { text: '"It\'s her call." And mean it. Let her answer.', tag: 'Her call',
+        fx: g => { g.flag('offer7', 'hers'); g.bond('jules', { trust: 1, respect: 1 }); g.hidden('revenant_drift', -1); }, go: 'a2_answer' },
+      { text: '"No. Not her. Never her." Say it to Bruno\'s face, at his own table.', tag: 'No',
+        fx: g => { g.flag('offer7', 'no'); g.bond('jules', { tension: 2 }); g.hidden('revenant_drift', 1); }, go: 'a2_answer' },
+      { text: '"Me instead. Give me the jobs. Give me ten more. Leave her out of it."', tag: 'Me instead',
+        fx: g => { g.flag('offer7', 'me'); g.hidden('revenant_drift', 1); }, go: 'a2_answer' }
+    ]
+  },
+
+  a2_answer: {
+    loc: '1610 S. 9TH STREET',
+    text: g => `${g.f('offer7') === 'hers' ? `sam: It\'s her call.
+
+Bruno nods slowly, approving, like you\'ve passed something.
+
+BRUNO: Good boy.` : g.f('offer7') === 'no' ? `sam: No. Not her. Never her.
+
+The table goes quiet. Dante puts his fork down. Philomena says something under her breath in Calabrese that makes Vinnie, by the sideboard, flinch.
+
+Bruno doesn\'t get angry. That\'s the worst part. He looks at you with something like sympathy.
+
+BRUNO: That\'s love, Sam. I understand. I was eighteen once. But I didn\'t ask you.
+
+And Jules, beside you, puts her hand on your arm. Not gently.` : `sam: Me instead. Give me the jobs. Ten more. Twenty. Leave her out of it.
+
+Bruno smiles at you like you\'re a nephew who said something sweet at a wedding.
+
+BRUNO: You\'re fast, Sam. I know you\'re fast. Your great-grandmother was fast. But fast doesn\'t win a card game. She\'s *lucky*. They\'re different things.
+
+He turns back to Jules.`}
+
+jules: Yes.
+
+She says it to Bruno. Clearly. Precisely. The way she\'d accept a seat at a dinner.
+
+jules: One game. Friday. Pier 53. Sam\'s father\'s debt, all of it, in writing. And Mrs. Kowal\'s surgeon stays your friend until she has a kidney and it takes.
+
+BRUNO: In *writing*?
+
+jules: I\'m a Pemberton, Mr. Iannucci. We don\'t do anything not in writing.
+
+Bruno stares at her for a long moment. Then he laughs until he coughs, and Philomena has to bring him water.
+
+BRUNO: *Madonna.* In writing. Dante, get a pen.
+
+${g.f('offer7') === 'no' ? 'She doesn\'t look at you while Dante writes it out on the back of a Termini receipt. You don\'t think she can.' : 'Under the table, while Dante writes it out on the back of a Termini receipt, she finds your hand and holds it so hard it hurts.'}`,
+    next: 'a2_ninth'
+  },
+
+  a2_ninth: {
+    night: true,
+    loc: '9TH STREET',
+    clock: { time: '9:20 PM' },
+    text: g => `Outside, the Italian Market is dark. The awnings rolled up, the fires in the barrels out, the street wet and empty and smelling like old produce and the river.
+
+You walk. Neither of you says anything until Washington Avenue.
+
+${g.f('did_w7_mikey') ? 'Behind you, half a block back, a gray Honda Accord pulls out from the curb with its lights off, and follows at a walking pace.' : ''}
+
+sam: Why.
+
+jules: Your father has paid Bruno Iannucci everything he had, Sam. You\'ve been doing his jobs since December. You told me what they were. And Halina Kowal is on a machine in her living room. I saw it, the morning after.
+
+jules: One night. I can end all of it in one night.
+
+sam: And the house collects.
+
+She stops walking.
+
+jules: Yes. It does. Near us.
+
+jules: Unless I don\'t let it go. Unless I play it straight. I *can* play it straight now. You saw me. I beat him straight.
+
+${g.f('briscola7') === 'skill' ? 'sam: You beat an eighty-year-old man at briscola.' : 'sam: Jules.'}
+
+jules: And on Friday I\'ll be playing a man from Odessa who owns half the Northeast, for a pier, with Bruno Iannucci watching. I know. I know exactly what I said yes to.
+
+She takes your cold hand in both of hers on the corner of 9th and Washington, under a streetlight, outside a closed pho restaurant.
+
+jules: I need you there. Not to stop me. Not to save me. To sit across the room where I can see you, so I know which way is up.
+
+jules: Friday. Nine o\'clock. Bustleton Avenue.
+
+You remember something. A seat. Row C, nine. Seven-thirty. Friday the twelfth.
+
+${g.f('simone7') === 'promised' ? '*Swear to me.*\n\nYou swore.' : g.f('simone7') === 'try' ? '*If you\'re not in it, I\'ll know something happened to you.*' : 'There\'s a ticket under your door you haven\'t looked at.'}
+
+Friday is going to be a bad night to be one person.`,
+    next: 'a3_friday'
+  }
+});
+
+/* s02e07c.js */
+/* S2 · E7 · BAD TIMING, part 3 of 4: Act Three ("Friday"). */
+EH.scenes('s02e07', {
+
+  /* ================= ACT THREE: FRIDAY ================= */
+  a3_friday: {
+    card: { kind: 'act', label: 'Act Three', title: 'Friday' },
+    loc: 'CARDONE HALL · 9-14',
+    clock: { day: 'Fri', date: 'Mar 12', time: '6:40 PM' },
+    enter: g => { g.sleep(6); },
+    text: g => `Friday.
+
+Simone\'s ticket is on your desk. *TOMLINSON THEATER · MUMMERS: THE MUSICAL · OPENING NIGHT · ROW C · SEAT 9 · 7:30 PM.*
+
+Jules\'s text is on your phone. *Vinnie picks me up at 8:15. Bustleton Avenue. Nine o\'clock. I\'ll be wearing the coat.*
+
+The Tomlinson is a four-minute walk from Cardone. Bustleton Avenue is eleven miles, a forty-minute cab ride on a Friday night, all the way up the Boulevard into the Northeast.
+
+The curtain comes down at nine-forty.
+
+Nik is watching you look from one to the other.
+
+nik: Bro. I want to say, very gently, as a friend: you can\'t be in two places.
+
+He hears himself. He closes his eyes.
+
+nik: Okay. You *can*. But last time you did that a lot, your hair went white.`,
+    choices: [
+      { text: 'The show. First act, at least. Then leave at intermission and get to Bustleton by nine. Simone gets half. Jules gets the rest.', tag: 'Half and half',
+        fx: g => { g.flag('friday7', 'half'); if (g.f('simone7') === 'promised') g.bond('simone', { trust: -2 }); else g.bond('simone', { trust: -1 }); }, go: 'a3_half' },
+      { text: 'Jules. All of it. From the start. Text Simone something true and terrible and go.', tag: 'Jules',
+        fx: g => { g.flag('friday7', 'jules'); if (g.f('simone7') === 'promised') g.bond('simone', { trust: -3, affection: -1 }); else g.bond('simone', { trust: -2 }); }, go: 'a3_skip' },
+      { text: 'Both. The whole show, every song, the curtain call. Then Slip to Bustleton. Eleven miles in no time. It\'ll cost what it costs.', tag: 'Slip', slip: true,
+        fx: g => { g.flag('friday7', 'slip'); g.bond('simone', { trust: 2, affection: 1 }); g.hidden('revenant_drift', 1); }, go: 'a3_slipshow' }
+    ]
+  },
+
+  a3_half: {
+    loc: 'TOMLINSON THEATER',
+    clock: { time: '7:30 PM' },
+    text: g => `Row C, seat nine.
+
+The lights go down. The band, two horns, a banjo and a glockenspiel, plays something that might be *Oh, Dem Golden Slippers*. Twelve freshmen in sequins strut onto the stage, in unison, more or less, and Kyle, at the end of the line, gets the strut *right*, for the first time ever, and you hear a sound from the booth at the back of the house that can only be Simone.
+
+It\'s terrible. It\'s *wonderful*. There\'s a song about a man in a feathered hat that makes you laugh so hard the woman next to you shushes you.
+
+At intermission, the lights come up. You stand. You look back at the booth.
+
+Simone is looking down at you through the glass with her headset on.
+
+You hold up your phone. You point at the door. You put your hand flat on your chest. *I\'m sorry.*
+
+She looks at you for one second. Then she turns away from the glass.
+
+You go. You run. You get a cab on Broad.
+
+The second act starts without you. Row C, seat nine, empty, in the middle of the third row, where the whole cast can see it.
+
+${g.f('simone7') === 'promised' ? 'You swore. You swore to her, not to God. You\'re in a cab on the Boulevard, and that\'s the thing you can\'t stop hearing.' : 'You said you\'d try. You did. You\'re in a cab on the Boulevard, and it doesn\'t feel like trying.'}
+
+At 9:12, your phone buzzes.
+
+TXT simone: Row C. Nine.
+
+That\'s all.`,
+    next: 'a3_banya'
+  },
+
+  a3_skip: {
+    loc: 'ROOSEVELT BOULEVARD',
+    clock: { time: '8:15 PM' },
+    text: g => `You text Simone before you can stop yourself. You write it four times. You send the fifth.
+
+TXT sam: simone im so sorry. something is happening tonight to someone i love and i have to be there. i cant explain. i know thats what i always say. i know.
+
+It says *Read* at 7:31. One minute after curtain.
+
+She doesn\'t answer.
+
+At 8:15, a black Escalade pulls up in front of Cardone. Vinnie at the wheel. Jules in the back, in the camel coat, her hair back, very pale, very calm. She sees you on the curb and her whole body changes. Like a held breath, letting go.
+
+jules: You came.
+
+sam: I said I would.
+
+jules: You said you\'d be at a musical, too. Simone told me. She tells me everything she\'s angry about. It\'s a long list.
+
+She takes your hand. It\'s cold. Hers, for once.
+
+jules: Thank you.
+
+Up Broad, onto the Boulevard. Twelve lanes of it, the city\'s widest street, the one everybody says is the most dangerous road in America. Car dealerships and Chinese buffets and Russian groceries with Cyrillic signs. Vinnie drives at exactly the speed limit, in the right lane, both hands on the wheel.
+
+vinnie: *(to the mirror)* Yo. Sally. You know what you\'re walking into?
+
+sam: No.
+
+vinnie: Good. Me neither. That\'s how you walk in.`,
+    next: 'a3_banya'
+  },
+
+  a3_slipshow: {
+    loc: 'TOMLINSON THEATER',
+    clock: { time: '9:40 PM' },
+    enter: g => { g.unstick('unstick_s2e7', 'Time debt (the Boulevard)'); g.know('simone_curtain', ['sam', 'simone'], 'You were in Row C, seat nine, for every minute of Mummers: The Musical. You stood up first at the curtain call.'); },
+    text: g => `Row C, seat nine.
+
+You see every minute of it. The strut. The song about the man in the feathered hat. The second act, which is somehow about grief, about a Mummers captain whose brother died, and a girl in a sequined cape singing alone in a spotlight, and you sit in the dark in Row C with your hand over your mouth.
+
+At the curtain call, you\'re the first one on your feet.
+
+Simone comes out from the booth for the company bow, in her feathered hat, and she sees you standing in Row C, and her face does something you\'ve never seen it do. She puts her hand over her heart. She mouths, *Salvatore Kearney.*
+
+You mouth back, *I\'m here.*
+
+Then you walk out of the theater at 9:41, into the alley behind the Tomlinson, and you step through.
+
+${g.f('assunta_watch') ? 'The cold takes you like a river. The watch ticks in your fist.' : 'The cold takes you like a river.'} Broad Street, frozen. Roosevelt Boulevard, twelve lanes of stopped headlights, all the way up into the Northeast. You run. Eleven miles. The longest you\'ve ever gone. Your nose starts to pour at the Boulevard. Your knees go at Cottman.
+
+${g.f('assunta_watch') ? 'The walls of the second come in at Bustleton Avenue. You find the door by the sound of the watch. You come out on your knees on a sidewalk in front of a bathhouse with Cyrillic on the awning, with frost on your sneakers and blood on your shirt.' : 'The walls of the second come in at Bustleton Avenue, and you claw your way out, and come out on your knees on a sidewalk with frost on your sneakers and blood on your shirt.'}
+
+You look at your phone. 9:49.
+
+Eight minutes gone. Somewhere between Cottman and here.
+
+A black Escalade at the curb. Vinnie leaning on it, smoking a cigarette he doesn\'t inhale. He looks at you on your knees on the sidewalk, bleeding. He doesn\'t ask.
+
+vinnie: She\'s on the last hand, Sally. Get in there.`,
+    next: 'a3_banya'
+  },
+
+  a3_banya: {
+    night: true,
+    loc: 'BUSTLETON AVENUE · THE BATHHOUSE',
+    clock: { time: '9:50 PM' },
+    text: g => `The back room of the bathhouse is hot, wet, and smells like eucalyptus and cigarettes. Tile walls. A drain in the floor. A green felt table under one hanging lamp.
+
+${g.f('friday7') === 'slip' ? 'You come in at the end, bleeding into your sleeve, and nobody looks at you, because nobody in the room is looking at anything but the table.' : g.f('friday7') === 'half' ? 'You come in at 9:15, late, out of breath, and Jules looks up from the table for one half of one second, sees you against the back wall, and goes back to her cards. For the next half hour, you watch.' : 'You\'ve been here since nine, against the back wall, where she can see you. You\'ve watched every hand. You\'ve watched Orlov. You know how he breathes when he has nothing.'}
+
+Pavel Orlov is seventy, bald, enormous, in a terrycloth robe, with a gold cross on his chest and a glass of tea in a silver holder. He looks like somebody\'s grandfather. So does Bruno, at the other end of the table, in a cardigan, with his cane across his knees. So did Teddy\'s mother. In this city, everybody who can hurt you looks like somebody\'s grandparent.
+
+Between them, Jules. In the camel coat, buttoned, in a room where everybody else is in towels.
+
+Texas hold\'em. Heads up. Jules against Orlov\'s nephew, Grisha, a pale young man with fast hands who plays like he learned online.
+
+It\'s been even all night. Up a little. Down a little. Jules is playing straight. You can see it. You can see her hold her breath before every bet, and let it out after.
+
+And now the last hand.
+
+The chips are in the middle. All of them. The pier is in the middle. Pier 53.
+
+On the table: the king of hearts, the nine of clubs, the nine of spades, the four of hearts. One card left to come.
+
+Grisha has pushed everything in. He\'s leaning back with his arms crossed.
+
+Jules looks at her two cards. Then she looks up, across the hot room, over the green felt, past Bruno and Orlov and Dante, at you.
+
+The question again. The same one from Sunday.
+
+*How do you want me to play this?*
+
+On the wall behind you, an old Soviet clock with a red second hand, ticking toward 9:51.`,
+    choices: [
+      { text: 'Nod. *Let it go your way.* End it. Free Pop, free Halina, free everybody.', tag: 'Let it go',
+        fx: g => { g.flag('game7', 'luck'); g.hidden('jules_debt', 2); g.hidden('jules_open', 1); }, go: 'a3_luck' },
+      { text: 'Read Grisha for her. You\'ve been watching. Find his tell. Give it to her with your eyes. No luck. Just the two of you.', tag: 'Read him',
+        check: { kind: 'move', move: 'Read the Street', attr: 'wits', skill: 'streetwise', label: 'Read Grisha', noLuck: true,
+          on: { strong: 'a3_win', weak: 'a3_split', miss: 'a3_loss' } },
+        fx: g => { g.flag('game7', 'read'); g.hidden('jules_debt', -1); }, if: g => g.f('friday7') !== 'jules' },
+      { text: 'Read Grisha for her. You\'ve watched every hand tonight. You know how he breathes when he has nothing.', tag: 'Read him',
+        check: { kind: 'move', move: 'Read the Street', attr: 'wits', skill: 'streetwise', label: 'Read Grisha', noLuck: true, bonus: 1, bonusLabel: 'Watched every hand',
+          on: { strong: 'a3_win', weak: 'a3_split', miss: 'a3_loss' } },
+        fx: g => { g.flag('game7', 'read'); g.hidden('jules_debt', -1); }, if: g => g.f('friday7') === 'jules' },
+      { text: 'Touch your ear. *Fold.* Lose the pier. Lose the deal. Get her out of Bruno\'s pocket for good, whatever it costs.', tag: 'Fold',
+        fx: g => { g.flag('game7', 'fold'); g.bond('jules', { trust: 1 }); }, go: 'a3_fold' }
+    ]
+  },
+
+  a3_luck: {
+    night: true,
+    enter: g => { g.flag('paid7'); g.flag('pop7', 'crash'); g.flag('bruno_jobs_done', g.f('bruno_jobs_total') || 8); g.bond('jules', { tension: 1 }); },
+    text: `You nod.
+
+She looks back at her cards. She breathes out.
+
+You feel it. The room tilts. The hot wet air leans a quarter inch toward the green felt.
+
+jules: Call.
+
+The dealer turns the last card.
+
+The nine of hearts.
+
+Jules turns over her two cards. The nine of diamonds. The king of spades.
+
+Four nines. In the whole history of the world, there have only ever been four nines, and she has all of them.
+
+Grisha stares at the table. Orlov puts his tea glass down very slowly in its silver holder. Somebody behind you says something in Russian that sounds like a prayer, or the opposite of one.
+
+Bruno closes his eyes, smiling, like a man listening to music.
+
+BRUNO: *My grandfather wasn\'t lying.*
+
+The Soviet clock on the wall says 9:51.
+
+Jules is sitting very still. There\'s blood coming from her nose, a thin line, down over her lip, onto the camel coat. She doesn\'t wipe it. She\'s looking at you, across the room. She\'s not happy. She looks like someone who just heard a door open somewhere in a dark house.
+
+jules: *(very quietly, just to you)* Something just happened.
+
+sam: What?
+
+jules: I don\'t know. Somewhere. Near us. I felt it go.`,
+    next: 'a4_call'
+  },
+
+  a3_win: {
+    night: true,
+    enter: g => { g.flag('paid7'); g.flag('pop7', 'safe'); g.flag('bruno_jobs_done', g.f('bruno_jobs_total') || 8); g.bond('jules', { trust: 1, affection: 1 }); g.hidden('revenant_drift', -1); },
+    text: `You watch Grisha.
+
+You\'ve watched him all night. You know what he does with his hands when he\'s got it. He touches his chips. Stacks them, restacks them, lines up the edges. And when he doesn\'t have it, he crosses his arms. Leans back. Big. Like Pop at the kitchen table when he lost at the track.
+
+His arms are crossed.
+
+You look at Jules. You don\'t touch your ear. You don\'t nod. You look at Grisha\'s crossed arms, and then back at her, and you lift one shoulder, half an inch.
+
+*He\'s got nothing.*
+
+She sees it. You see her see it.
+
+She holds her breath. Not to stop the luck. To stop herself from smiling.
+
+jules: Call.
+
+The last card: the two of diamonds. Nothing.
+
+Grisha turns over a seven and an eight. A straight draw that missed. Nothing.
+
+Jules turns over the king of diamonds and the ten of spades. Kings and nines. Not luck. Just better.
+
+Orlov laughs, a huge rumble from inside his robe, and claps Grisha on the back of the head hard enough to knock him forward.
+
+Bruno doesn\'t close his eyes. He looks at Jules. Then at you, against the back wall. For a long moment.
+
+BRUNO: Huh.
+
+The Soviet clock says 9:51. Nothing happens. Nothing at all.
+
+Jules gets up from the table, and walks across the hot tile room, past Bruno, past Orlov, past Dante, and puts her arms around your neck in front of all of them.
+
+jules: *(into your ear)* That was us. That was just us. Nobody paid.`,
+    next: 'a4_call'
+  },
+
+  a3_split: {
+    night: true,
+    enter: g => { g.flag('pop7', 'safe'); g.flag('split7'); g.flag('bruno_jobs_done', Math.min(g.f('bruno_jobs_total') || 8, (g.f('bruno_jobs_done') || 0) + 2)); g.hidden('revenant_drift', -0.5); },
+    text: `You watch Grisha. His arms are crossed. He\'s leaning back.
+
+But his foot is going. Under the table. You can see it in the drape of his towel. Tapping.
+
+You don\'t know what that means. You look at Jules and you give her the only thing you\'ve got: a tiny shake of your head. *I don\'t know.*
+
+She looks at her cards. She holds her breath.
+
+jules: Call.
+
+The last card: the four of spades.
+
+Grisha turns over a king and a three. Two pair, kings and nines.
+
+Jules turns over a king and a four. Two pair, kings and nines. Fours on the board play for both of them.
+
+Split pot.
+
+The room breathes out. Orlov laughs. Bruno doesn\'t.
+
+BRUNO: Half a pier.
+
+ORLOV: *(in English, delighted)* Half a pier! Bruno. We can *share*. Like brothers.
+
+Bruno looks at Jules for a long time.
+
+BRUNO: The paper said one game, Juliet. Half a game is half the paper.
+
+The Soviet clock says 9:51. Nothing happens.
+
+On the way out, in the hallway, Dante catches your arm.
+
+DANTE: Grandpa says your father\'s half paid. And he says he\'d like to see her play again. Sometime. No rush.`,
+    next: 'a4_call'
+  },
+
+  a3_loss: {
+    night: true,
+    enter: g => { g.flag('pop7', 'beaten'); g.flag('lost7'); g.bond('jules', { tension: 1 }); },
+    text: `You watch Grisha. His arms are crossed. He\'s leaning back. You think it means nothing. You think it means he\'s *bluffing*.
+
+You look at Jules. You lift one shoulder half an inch. *He\'s got nothing.*
+
+She holds her breath. She trusts you.
+
+jules: Call.
+
+The last card: the king of clubs.
+
+Grisha turns over the other king. Full house. Kings full of nines.
+
+He wasn\'t bluffing. He was *comfortable*.
+
+Jules turns over a queen and a jack. Two pair off the board and a queen. Nothing.
+
+The room explodes in Russian. Orlov stands up in his robe and hugs his nephew so hard Grisha\'s feet leave the floor.
+
+At the other end of the table, Bruno sits very still with his cane across his knees.
+
+The Soviet clock says 9:51.
+
+BRUNO: *(quietly)* The paper said she plays, Sam. It didn\'t say she wins.
+
+He stands up, slowly, on the cane. He doesn\'t look at Jules. He looks at you.
+
+BRUNO: I don\'t blame her. She played straight. I watched her. I watched you, too, at the back of the room, telling her where to go.
+
+He puts on his gloves, one finger at a time.
+
+BRUNO: An understanding is an understanding. Somebody pays for a pier.
+
+He walks out. Dante follows him. Dante is already on his phone.`,
+    next: 'a4_call'
+  },
+
+  a3_fold: {
+    night: true,
+    enter: g => { g.flag('pop7', 'beaten'); g.flag('folded7'); g.hidden('revenant_drift', -0.5); },
+    text: `You touch your ear.
+
+She sees it. She looks at you for one long second. You see her understand: not *I don\'t know*. Not *he\'s bluffing*. *Fold. Lose it. Get out of his pocket.*
+
+She closes her eyes.
+
+jules: Fold.
+
+She puts her cards face down on the felt and pushes them away.
+
+The room explodes in Russian. Grisha didn\'t even have to turn his cards over. Orlov laughs and slaps the table.
+
+Bruno looks at the face-down cards in front of Jules. He reaches out with the tip of his cane and flips them over.
+
+The nine of diamonds. The king of spades.
+
+A full house. Nines full of kings. The best hand at the table. She folded it.
+
+Silence.
+
+Bruno looks at the cards for a long time. Then at Jules. Then, slowly, at you.
+
+BRUNO: She folded a full house.
+
+He knows. He doesn\'t know how, but he knows. You can see it.
+
+BRUNO: She folded a full house because you told her to.
+
+He gets up. He puts his gloves on, one finger at a time.
+
+BRUNO: I respect it, Sam. I want you to know that. It\'s what your great-grandmother would have done. She would have thrown the pier in the river to keep the girl.
+
+BRUNO: But an understanding is an understanding. Somebody pays for a pier.
+
+He goes. Dante goes with him, already on his phone.
+
+The Soviet clock says 9:51.`,
+    next: 'a4_call'
+  }
+});
+
+/* s02e07d.js */
+/* S2 · E7 · BAD TIMING, part 4 of 4: Act Four ("The Coat"), tag, polls. */
+EH.scenes('s02e07', {
+
+  /* ================= ACT FOUR: THE COAT ================= */
+  a4_call: {
+    card: { kind: 'act', label: 'Act Four', title: 'The Coat' },
+    night: true,
+    loc: 'BUSTLETON AVENUE',
+    clock: { time: '10:14 PM' },
+    text: g => `${g.f('pop7') === 'safe' ? `Outside on Bustleton Avenue, it\'s raining. Vinnie has the Escalade running. Jules is standing under the bathhouse awning with her hands in her coat pockets, looking up at the rain like she\'s never seen it before.
+
+Nothing happens.
+
+You keep waiting for it to. You stand on the sidewalk with your phone in your hand for twenty minutes, waiting for it to ring, for Mikey, for Ma, for Bree. For the bill.
+
+It doesn\'t ring.` : `Outside on Bustleton Avenue, it\'s raining. Vinnie has the Escalade running. Jules is standing under the bathhouse awning with her hands in her coat pockets.
+
+At 10:14, your phone rings.
+
+Mikey.
+
+mikey: Sammy. Where are you.
+
+sam: The Northeast. Why. What.
+
+mikey: It\'s Pop.
+
+The rain on the awning.
+
+mikey: ${g.f('pop7') === 'crash' ? 'He\'s alive. He\'s alive, okay? A box truck ran the light on Columbus Boulevard at 9:51 and T-boned the cab. Driver\'s side. Right in front of Pier 53, Sammy, right in front of the pier. Collarbone, three ribs, his head\'s cut open. They took him to Jefferson. Ma\'s on her way. Get there.' : 'He\'s alive. He\'s alive, okay? Two guys came up to the cab at the airport taxi line at ten o\'clock. Pulled him out. They didn\'t take anything. They didn\'t say anything. They broke his right hand, Sammy. His driving hand. With the car door. And they did his face. Jefferson. Ma\'s on her way. Get there.'}
+
+The line goes dead.
+
+You\'re standing on the sidewalk. Jules is looking at you. She heard. ${g.f('pop7') === 'crash' ? 'Her face goes gray. You watch her do the arithmetic. 9:51. The pier.\n\njules: That was me.\n\nsam: Jules—\n\njules: *That was me*, Sam. I felt it go. I felt it go somewhere, and it went to your *father*.' : 'Her face goes white.\n\njules: Bruno.\n\nsam: Bruno.\n\njules: Because I lost. Because I folded. Because we—\n\nsam: Because he said somebody pays for a pier.'}`}`,
+    next: g => g.f('pop7') === 'safe' ? 'a4_quiet' : 'a4_jefferson',
+    nextTargets: ['a4_quiet', 'a4_jefferson']
+  },
+
+  a4_jefferson: {
+    night: true,
+    loc: 'JEFFERSON · TRAUMA BAY 4',
+    clock: { time: '11:20 PM' },
+    enter: g => { g.flag('pop_hurt7'); g.know('pop_hurt7', ['sam', 'jules', 'rosa', 'mikey', 'nonna', 'gigi'], g.f('pop7') === 'crash' ? 'Pop\'s cab was T-boned by a box truck on Columbus Boulevard at 9:51 p.m. on March 12, in front of Pier 53. Collarbone, three ribs, a concussion. Jefferson.' : 'On March 12, two men pulled Pop out of his cab at the airport taxi line and broke his right hand in the car door. Jefferson.'); g.bond('frank', { affection: 2 }); },
+    text: g => `Jefferson, again. The same building. Eleven floors up from here, Halina Kowal is on a list.
+
+Pop is in Trauma Bay 4 behind a curtain. ${g.f('pop7') === 'crash' ? 'Neck brace. Arm strapped across his chest. A line of black stitches across his forehead into his hair. He\'s awake. He\'s groggy. He\'s complaining about the cab, which is totaled, which was *paid off*, Rosa, it was *paid off*.' : 'His right hand is in a splint the size of a boxing glove. Both eyes are swollen shut. His lip is split. He\'s awake. He keeps saying he doesn\'t know who they were, and he keeps not looking at anybody when he says it.'}
+
+Ma is sitting beside the bed holding his good hand. Nonna is in the plastic chair in the corner in her black coat, with her rosary. Gigi is asleep across two waiting-room chairs out in the hall with her head on Mikey\'s jacket.
+
+Mikey is standing by the curtain. He looks at you when you come in. He looks at Jules behind you. He doesn\'t say anything.
+
+Ma looks up.
+
+She looks at your face. Then at Jules. Then at your hair, at your temple, at the white there. She looks at it the way she looks at a kid in her nurse\'s office who says he fell off the monkey bars.
+
+You\'re bleeding. Your nose. You didn\'t notice. ${g.f('friday7') === 'slip' ? 'You never stopped, after the Boulevard.' : 'You don\'t know when it started.'}
+
+Jules sees it. She reaches into the inside pocket of her camel coat, the way she has a hundred times since August, for the handkerchief.
+
+Her hand stops.
+
+She checks the pocket again. The other pocket. The outside ones.
+
+jules: It\'s gone.
+
+sam: What?
+
+jules: The handkerchief. It\'s *gone*. ${g.f('note6') === 'told' ? 'And the card. Sam. The card\'s gone.' : ''} I keep it in this pocket. I always keep it in this pocket. I button it.
+
+She looks at you, and you can see her go back through every day since Valentine\'s. Every room the coat has been in. Every hanger.
+
+jules: Someone was in my coat.
+
+You think about a golden boy in a crew jacket, smiling, coming out of the bathroom in 9-04 with his hand in his pocket.
+
+Behind you, Ma stands up.
+
+rosa: Salvatore.
+
+You turn around.
+
+She\'s looking at the blood on your lip. At the white in your hair. At the girl in the camel coat checking her pockets for a handkerchief. At your father in the bed. At the clock on the wall.
+
+rosa: Outside. Now.
+
+Nonna, in the corner, stops moving her rosary.
+
+nonna: *(very quietly)* Ecco. Now it\'s time.`,
+    next: 'tag_hugh'
+  },
+
+  a4_quiet: {
+    night: true,
+    loc: 'CARDONE HALL · 9-14',
+    clock: { time: '11:51 PM' },
+    enter: g => { g.know('pop_call7', ['sam'], 'At 11:51 on March 12, Pop called just to say goodnight. He never calls.'); g.bond('frank', { affection: 2, trust: 1 }); },
+    text: g => `Back on the ninth floor. ${g.f('friday7') !== 'jules' ? 'There\'s a sticky note on your door in Simone\'s handwriting. ' + (g.f('friday7') === 'slip' ? '*ROW C. NINE. I SAW YOU. I SAW YOU, SALVATORE. — S.* With a heart. A real one.' : '*ROW C. NINE. FIRST ACT ONLY. I\'M NOT DONE BEING ANGRY. — S.*') : 'There\'s nothing on your door. No note from Simone. That\'s worse.'}
+
+Jules sits on your bed in her coat. She hasn\'t taken it off. She\'s looking at the wall.
+
+jules: Nothing happened.
+
+sam: Nothing happened.
+
+jules: I keep waiting.
+
+At 11:51, your phone rings.
+
+Pop.
+
+Pop never calls. Pop has called you four times in your life, and three of them were to ask where the cab keys were.
+
+sam: Pop?
+
+frank: Kid.
+
+A long pause. You can hear the TV. The Flyers, losing.
+
+frank: Nothing. I just— I don\'t know. I was sitting here and I thought, I\'ll call the kid. Your mother\'s asleep. I don\'t know.
+
+sam: You okay?
+
+frank: Yeah. I\'m good. Something weird today. Dante Iannucci called me. Said, and I\'m quoting here, *your paper\'s clean, Frank.* Then he hung up. ${g.f('split7') ? 'Then he called back and said *half clean*. Then he hung up again.' : ''} I don\'t know what that means, kid. I been sitting here two hours not knowing what that means.
+
+You close your eyes.
+
+frank: You know what that means?
+
+sam: Yeah, Pop. I know what it means.
+
+A long pause.
+
+frank: Okay. Okay. Don\'t tell me. Your mother wants you home Sunday. Alone, she said. Don\'t ask me. She\'s been weird all week.
+
+frank: Goodnight, kid.
+
+He hangs up.
+
+Jules is looking at you. She puts her hand in the inside pocket of her camel coat, the way she does when she\'s thinking, for the handkerchief.
+
+Her hand stops.
+
+She checks the pocket again. The other pocket.
+
+jules: It\'s gone.
+
+sam: What?
+
+jules: The handkerchief. ${g.f('note6') === 'told' ? 'And the card. Sam. The card\'s gone.' : ''} I button this pocket. I always button it.
+
+She looks at you. You can see her going back through every room the coat has been in.
+
+jules: Someone was in my coat.
+
+You think about a golden boy in a crew jacket, smiling, coming out of the bathroom in 9-04 with his hand in his pocket.`,
+    next: 'tag_hugh'
+  },
+
+  /* ================= TAG ================= */
+  tag_hugh: {
+    card: { kind: 'tag' },
+    night: true,
+    loc: 'WAWA · CITY AVENUE',
+    clock: { day: 'Sat', date: 'Mar 13', time: '1:15 AM' },
+    text: g => `> THE CAMERA.
+
+A Wawa parking lot on City Avenue at one in the morning. The only lit thing for a mile.
+
+A silver Volvo, Penn parking sticker in the windshield. Hugh Pemberton behind the wheel, in his crew jacket.
+
+A gray Camry pulls in beside him. The passenger window comes down.
+
+Cole Brannigan, with a Wawa coffee.
+
+BRANNIGAN: Mr. Pemberton.
+
+Hugh holds out a Ziploc bag. Inside it, folded neatly, a white handkerchief. *JLP* in navy thread. Brown stains on it, old and new.
+
+Brannigan takes it. He looks at it in the parking lot light. He doesn\'t open the bag.
+
+BRANNIGAN: Thank you. Dr. Achterberg will be in touch.
+
+He starts to roll up the window. Stops.
+
+BRANNIGAN: Was there anything else in the pocket?
+
+Hugh looks at him.
+
+hugh: No.
+
+BRANNIGAN: Mm.
+
+The window goes up. The Camry pulls out onto City Avenue and is gone.
+
+Hugh sits in his Volvo with the engine off.
+
+${g.f('note6') === 'told' ? 'After a minute, he takes something out of the inside pocket of his crew jacket. An index card, soft at the corners, folded in half. He unfolds it.\n\nOn the front, in pencil, in a hand he doesn\'t know: *What did you mean?*\n\nOn the back, in his sister\'s handwriting: *I don\'t know yet. When I know, you\'ll be the first.*\n\nAnd under that, in black ballpoint, pressed so hard it tore the card:\n\n*Don\'t trust the lucky one.*\n\nHugh reads it for a long time, in the light from the Wawa.\n\nThen he smiles. Not a nice smile. The smile of somebody who has been second for eighteen years, by six minutes, and has just found out that somebody else knows it.' : 'He sits there for a long time, looking at the empty space where the Camry was.\n\nThen he looks at his own hands on the steering wheel. Turns them over. Looks at them, like he\'s waiting for something to happen.\n\nNothing does.'}`,
+    end: true
+  }
+});
+
+Object.assign(EH.episodes.s02e07, {
+  polls: [
+    { q: 'Briscola', opts: [
+      { label: 'Lose', pct: 34, if: g => g.f('briscola7') === 'lost' },
+      { label: 'Let her win', pct: 21, if: g => g.f('briscola7') === 'luck' },
+      { label: 'Her call', pct: 45, if: g => g.f('briscola7') === 'skill' }
+    ] },
+    { q: 'Friday night', opts: [
+      { label: 'Half and half', pct: 38, if: g => g.f('friday7') === 'half' },
+      { label: 'Jules', pct: 29, if: g => g.f('friday7') === 'jules' },
+      { label: 'Slipped for both', pct: 33, if: g => g.f('friday7') === 'slip' }
+    ] },
+    { q: 'The last hand', opts: [
+      { label: 'Let it go her way', pct: 31, if: g => g.f('game7') === 'luck' },
+      { label: 'Read him for her', pct: 52, if: g => g.f('game7') === 'read' },
+      { label: 'Fold', pct: 17, if: g => g.f('game7') === 'fold' }
+    ] }
+  ],
+  onEnd: g => {
+    g.recap('Hugh came to Cardone Hall with Callum. He used the bathroom in 9-04.');
+    g.recap('Jules played cards for Bruno Iannucci. For Pier 53.');
+    if (g.f('paid7')) g.recap('Pop\'s debt to the Iannuccis is paid. "Your paper\'s clean, Frank."');
+    else if (g.f('split7')) g.recap('A split pot. Pop\'s debt is half paid. Bruno wants to see her play again.');
+    if (g.f('pop7') === 'crash') g.recap('At 9:51, a box truck hit Pop\'s cab in front of Pier 53. Jules felt it go.');
+    else if (g.f('pop7') === 'beaten') g.recap('Somebody paid for the pier. Bruno\'s men broke Pop\'s driving hand.');
+    g.recap('The handkerchief is gone from Jules\'s coat.' + (g.f('note6') === 'told' ? ' So is the card.' : ''));
+    g.recap(g.f('pop7') === 'safe' ? 'Ma wants you home Sunday. Alone.' : 'At Jefferson, Ma looked at your hair. "Salvatore. Outside. Now."');
+  }
+});
+
 </script>
 <script>
 /* THE EVENT HORIZON: browser engine (UI, sound, saves). Depends on core.js and the episode files. */
