@@ -1,7 +1,7 @@
 /* S2 · E8 · MA, part 1 of 4: meta, cold open, Act One ("Sunday"). */
 EH.episode({
   id: 's02e08', season: 2, number: 8, title: 'Ma', look: 's2',
-  cast: ['sam', 'rosa', 'nonna', 'frank', 'mikey', 'gigi', 'jules', 'simone', 'vinnie'],
+  cast: ['sam', 'rosa', 'ciro', 'nonna', 'frank', 'mikey', 'gigi', 'jules', 'simone', 'vinnie'],
   start: 'cold_open',
   xp: 5,
   previously: g => [
@@ -20,7 +20,7 @@ EH.episode({
       clock: { day: 'Sun', date: 'Jan 19, 1964', time: '3:12 PM' },
       text: `> THE CAMERA.
 
-January 1964. Boathouse Row in black and white, or close to it: gray sky, gray ice, the old boathouses with their gingerbread trim and no lights on them yet, because nobody has thought of that yet.
+January 1964. Boathouse Row in black and white, or close to it: gray sky, gray ice, the old boathouses with their gingerbread trim and no lights on them, because nobody will think of that for fifteen years.
 
 The river is frozen from bank to bank. Kids are on it. They\'re not supposed to be. There\'s a sign. There\'s always a sign.
 
@@ -38,7 +38,7 @@ TERESA: Count what?
 
 The ice opens.
 
-There\'s no crack. No sound. One second the boy is there, and the next there\'s a black hole in the white, and his friends are screaming, and the girl on the bank opens her mouth to scream too—
+There\'s no crack. No sound. One second the boy is there, and the next there\'s a black hole in the white, and his friends are screaming, and one of his friends, a girl in a red hat, opens her mouth to scream too—
 
 And the bells stop.
 
@@ -46,7 +46,7 @@ Not church bells. *All* of them. The trolley bell on the Parkway. The bell on th
 
 Teresa can still move her eyes. Only her eyes. She watches her mother put down the bag of oranges, very carefully, on the frozen grass. Watches her walk out onto the ice, not running, walking, like a woman crossing her own kitchen, to the black hole, and kneel, and put both arms in up to the shoulders.
 
-One. Teresa counts. She doesn\'t know why. Two. Three.
+One. Teresa counts. She doesn\'t know what she\'s counting. Two. Three.
 
 On the road behind them, on East River Drive, a long black car has stopped. A young woman in the back seat with the window down, in a fur collar, blonde, twenty-one or so, is also not moving. Except her eyes. Her eyes are on Assunta.
 
@@ -56,9 +56,9 @@ Assunta comes back across the ice with a boy in her arms, soaking, blue, coughin
 
 The bells start.
 
-The friends are still screaming. The girl on the bank finishes her scream. The boy\'s mother is running down from the drive with her arms out.
+The friends are still screaming. The girl in the red hat finishes her scream. The boy\'s mother is running down from the drive with her arms out.
 
-And Assunta DiNardo is sitting on the frozen grass beside her oranges with her hands bleeding from the ice, and when she looks up at her daughter, Teresa sees it. In one minute, in ten seconds, her mother has gotten older. The lines by her eyes. A new gray at her temple.
+And Assunta DiNardo is sitting on the frozen grass beside her oranges with her hands bleeding from the ice, and when she looks up at her daughter, Teresa sees it. In ten seconds, her mother has gotten older. The lines by her eyes. A new gray at her temple.
 
 ASSUNTA: You counted?
 
@@ -98,7 +98,7 @@ rosa: Sit.
 
 You sit.
 
-rosa: I sent your father to the Phillies spring training thing at the Linc with Mikey. I sent Gigi to the Iacobuccis. I sent your grandmother upstairs, and I told her if she comes down I\'ll put her in a home, and she laughed at me, and she went.
+rosa: I sent your father and Mikey to the ballpark for the Phillies fan thing, and I sent Gigi with them, so she\'s not at the Iacobuccis\' with her ear on the wall. I sent your grandmother upstairs, and I told her if she comes down I\'ll put her in a home, and she laughed at me, and she went.
 
 She looks at you.
 
@@ -112,7 +112,7 @@ rosa: And I knew it was you.
 
 She doesn\'t blink.
 
-rosa: I didn\'t know what I knew. I just knew. The way I knew you were coming home from the shore a day early when you were eleven, and I made your bed. The way I knew Mikey was hurt in Afghanistan two days before they called. My mother knows things like that. Her mother knew things like that. We *count*, the women in this family. We always know when the clocks stop.
+rosa: I didn\'t know what I knew. I just knew. The way I knew you were coming home from the shore a day early when you were eleven, and I made your bed. The way I knew Mikey was hurt in Afghanistan two days before they called. My mother knows things like that. Her mother knew things like that. I used to think it was just being Italian.
 
 rosa: Since August, the clocks have stopped in this house eleven times. I wrote them down. Every one. On the calendar from St. Monica\'s.
 
@@ -159,7 +159,7 @@ Then she gets up. She goes to the stove. She stirs the gravy. She taps the woode
 
 She puts the spoon down.
 
-She comes back around the table and takes your face in both hands, the way she did at the door in February, and looks at the white in your hair.
+She comes back around the table and takes your face in both hands and looks at the white in your hair.
 
 rosa: You\'re eighteen years old.
 
@@ -190,7 +190,7 @@ Ma, frozen at the table, leaning forward, in her good blouse.
 
 Except her eyes.
 
-Her eyes are moving. They\'re *following you.* You stand up from your chair and her eyes come up with you. You walk around the table, and her eyes come around too, the way Teresa\'s did on the riverbank, in a story nobody ever told you.
+Her eyes are moving. They\'re *following you.* You stand up from your chair and her eyes come up with you. You walk around the table, and her eyes come around too.
 
 You stand beside her. You take the wooden spoon out of the gravy and put it in her hand, on the table, and fold her frozen fingers around it.
 
@@ -238,7 +238,7 @@ rosa: No. That\'s fine. That\'s your answer.
 
 She gets up and goes to the stove and stirs the gravy.
 
-rosa: I know you are, Salvatore. I\'ve known since August. I didn\'t need you to tell me *what*. I needed you to tell me *at all*. I needed to know that if I asked you to your face, at my own table, you would trust your mother.
+rosa: I know, Salvatore. I\'ve known since August. I didn\'t need you to tell me *what*. I needed you to tell me *at all*. I needed to know that if I asked you to your face, at my own table, you would trust your mother.
 
 She taps the spoon on the side of the pot. Twice.
 
@@ -287,7 +287,7 @@ And Ma is standing at the sink, the last one in the house to be told, with her h
       enter: g => { g.know('rosa_family', ['sam', 'rosa', 'frank', 'mikey', 'nonna'], 'Ma knows everyone in the family knew before she did. Pop, Mikey, Nonna. She was the last.'); },
       text: g => `sam: Pop knows. Mikey knows. Nonna knows. ${g.knows('sam_slip', 'jules') ? 'And Jules.' : ''}
 
-Ma stands at the sink for a long time.
+Ma stands at the sink.
 
 rosa: Your father.
 
@@ -297,7 +297,7 @@ rosa: Your *father*, who can\'t keep a surprise party secret, who told me what h
 
 She dries her hands on the towel over her shoulder. Very slowly.
 
-At six-thirty, Pop and Mikey come home from the Linc with Gigi, all three of them in red, Gigi with a foam finger. They come in loud.
+At six-thirty, Pop and Mikey come home from the ballpark with Gigi, all three of them in red, Gigi with a foam finger. They come in loud.
 
 They stop in the doorway of the kitchen.
 
@@ -344,13 +344,13 @@ And for the first time in your whole life, you watch your father put his face in
       enter: g => { g.know('rosa_nonna', ['sam', 'rosa', 'nonna'], 'You told Ma that only Nonna knew. You kept Pop and Mikey out of it.'); },
       text: `sam: Just Nonna. She felt it. She always feels it.
 
-Ma looks at you for a long moment. She knows. You can see she knows. She\'s a school nurse; she has heard ten thousand children say *just me*.
+Ma looks at you. She knows. You can see she knows. She\'s a school nurse; she has heard ten thousand children say *just me*.
 
 rosa: Okay.
 
 She lets you have it. That\'s worse, somehow, than if she\'d fought.
 
-At six-thirty, Pop and Mikey come home from the Linc with Gigi, all three of them in red, Gigi with a foam finger. They come in loud.
+At six-thirty, Pop and Mikey come home from the ballpark with Gigi, all three of them in red, Gigi with a foam finger. They come in loud.
 
 They stop in the doorway of the kitchen.
 

@@ -66,9 +66,9 @@ Then she does.
 
 simone: *Thank* you.
 
-She drops the cable. She puts both her hands on either side of your face, the way your mother did, the way Nonna did.
+She drops the cable. She grabs the front of your jacket in both fists and holds on.
 
-simone: Salvatore Kearney. That is the first time in seven months anyone on that floor has told me the whole truth. I had it on a *list*. I had it on a list in September and I had to sit with it alone for seven months while two people I love lied to my face.
+simone: Salvatore Kearney. That is the first time in six months anyone on that floor has told me the whole truth. I had it on a *list*. I had it on a list in September and I had to sit with it alone for six months while two people I love lied to my face.
 
 simone: Do you know what that *does* to a person?
 
@@ -90,7 +90,7 @@ simone: Now go away. Grace is taking me for pancakes at the Melrose, and she\'s 
 
 You open your mouth to tell her.
 
-And it doesn\'t come. The whole true thing, the bus, the cold, the stopped world, it gets as far as the back of your throat and stops there, like the second closing.
+And it doesn\'t come. The whole true thing, the bus, the cold, the stopped world, it gets as far as the back of your throat and stops there.
 
 sam: I— Simone. I can\'t—
 
@@ -187,7 +187,7 @@ She pats Jules\'s hand.
 
 nonna: Now eat. You\'re too skinny. All of you are too skinny. Madonna, the young people.
 
-${g.f('terms8') === 'count' ? 'After dinner, on the stoop, in the cold, Ma sits down next to you on Nonna\'s cushion. She doesn\'t say anything. She holds out her hand, palm up, the way she did when you were six and had something in your pocket you weren\'t supposed to have.\n\nROSA: Since Sunday.\n\nsam: None, Ma. I haven\'t gone in once.\n\nShe nods. She closes her hand.\n\nROSA: Zero. Good. I\'m writing it down.' : 'After dinner, on the stoop, in the cold, Ma sits down next to you on Nonna\'s cushion and doesn\'t say anything. Through the window behind you, you can hear Jules and Gigi doing the dishes, and Jules laughing at something, with her whole body.\n\nROSA: She laughs like you.\n\nsam: Yeah?\n\nROSA: Like it costs her something. Like she\'s paying for it.'}`,
+${g.f('terms8') === 'count' ? 'After dinner, on the stoop, in the cold, Ma sits down next to you on Nonna\'s cushion. She doesn\'t say anything. She holds out her hand, palm up, the way she did when you were six and had something in your pocket you weren\'t supposed to have.\n\nrosa: Since Sunday.\n\nsam: None, Ma. I haven\'t gone in once.\n\nShe nods. She closes her hand.\n\nrosa: Zero. Good. I\'m writing it down.' : 'After dinner, on the stoop, in the cold, Ma sits down next to you on Nonna\'s cushion and doesn\'t say anything. Through the window behind you, you can hear Jules and Gigi doing the dishes, and Jules laughing at something, short, surprised out of her.\n\nrosa: She laughs like you.\n\nsam: Yeah?\n\nrosa: Like it costs her something. Like she\'s paying for it.'}`,
     next: 'tag_lab'
   },
 
@@ -221,7 +221,7 @@ ACHTERBERG: *(quietly)* He\'s spending himself.
 
 She takes the printout. She folds it in half.
 
-ACHTERBERG: Every time he stops the clock, he pays for it in years. Like the old reports. Like the brother in 1961.
+ACHTERBERG: Every time he stops the clock, he pays for it in years. The old reports say the brother did the same, in 1961.
 
 She walks to the window. The dry dock below, gray in the dawn.
 
@@ -239,11 +239,11 @@ hugh: Gran.
 
 constance: Hugh.
 
-${g.f('note6') === 'told' ? 'He takes his hand out of his pocket. He holds out an index card, folded in half, soft at the corners.\n\nhugh: I found this. In Jubilee\'s coat. I wasn\'t— I didn\'t— I just found it.\n\nConstance takes the card without looking at him. She unfolds it. She reads the front. She reads the back.\n\n*Don\'t trust the lucky one.*\n\nShe reads it for a long time. Her cigarette burns down.\n\nhugh: Who wrote it? Is it the boyfriend? It\'s his writing, I think. Is he—\n\nconstance: No.\n\nShe folds the card. She puts it in the pocket of her coat.\n\nconstance: Someone who loved her very much. And was wrong.\n\nhugh: About what?\n\nconstance: About which of us to be afraid of.' : 'He stands beside her at the balustrade. He doesn\'t say anything for a long time.\n\nhugh: Gran. What is she?\n\nConstance doesn\'t look at him.\n\nconstance: Who have you been talking to, Hugh?\n\nHe doesn\'t answer. That\'s an answer.'}
+${g.f('note6') === 'told' ? 'He takes his hand out of his pocket. He holds out an index card, folded in half, soft at the corners.\n\nhugh: Found this in Jubilee\'s coat. Thought you\'d want it before she did.\n\nConstance takes the card without looking at him. She unfolds it. She reads the front. She reads the back.\n\n*Don\'t trust the lucky one.*\n\nHer cigarette burns down while she reads it.\n\nhugh: Who wrote it? Is it the boyfriend? It\'s his writing, I think. Is he—\n\nconstance: No.\n\nShe folds the card. She puts it in the pocket of her coat.\n\nconstance: Someone who loved her very much. And was wrong.\n\nhugh: About what?\n\nconstance: About which of us to be afraid of.' : 'He stands beside her at the balustrade. He doesn\'t say anything for a long time.\n\nhugh: Gran. What is she?\n\nConstance doesn\'t look at him.\n\nconstance: Who have you been talking to, Hugh?\n\nHe doesn\'t answer. That\'s an answer.'}
 
 She stubs out the cigarette on the stone.
 
-constance: Go inside. Your father wants you. He always wants you, Hugh. That\'s what you have that she doesn\'t. Try to remember it\'s worth something.
+constance: Go inside. Your father wants you. He always does. That\'s worth something, Hugh. Not much.
 
 He goes.
 

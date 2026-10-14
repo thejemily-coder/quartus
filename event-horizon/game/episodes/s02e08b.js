@@ -16,7 +16,7 @@ nonna: Now it\'s time.
 
 She says it to Ma. Not to you.
 
-nonna: I told your mother, Rosa. Your grandmother Assunta. I told her I\'d tell you when it was time. You were nine. You had a fever, a bad one, and the clock in the hall stopped, and you sat up in bed and said, *Mamma, the clock.* And I knew.
+nonna: I told my mother, Rosa. Your grandmother Assunta. I told her I\'d tell you when it was time. You were nine. You had a fever, a bad one, and the clock in the hall stopped, and you sat up in bed and said, *Mamma, the clock.* And I knew.
 
 rosa: I remember the fever.
 
@@ -32,7 +32,7 @@ She looks at you.
 
 nonna: My brother Salvatore went in. Three children out of a fire on Arch Street. He came back old. He went in again. And again. Nobody counted for him. He wouldn\'t let us. He died at the Feast at thirty years old with his hair white, Salvatò, and I was sixteen, and I counted to eleven, and then he didn\'t get up.
 
-The room is very quiet.
+Out in the hall, the clock ticks.
 
 nonna: My mother went in once more after that. Only once. In 1964, at the Boathouse, for a little boy in the ice. I counted to ten. She came back older. And she never went in again. Never. She said, *Teresa, I\'m done. Now I count.*
 
@@ -46,7 +46,7 @@ nonna: And there was a car. On the Drive. A black car, with a girl in the back s
 
 nonna: I found out later who she was. I made it my business. A Pemberton. From the Main Line.
 
-You stop breathing.
+You put your hand flat on the floor.
 
 You think about a girl in a camel coat. A grandmother in a chapel with no cross. *Some families are lucky. Some are early.*
 
@@ -56,7 +56,7 @@ sam: Her grandmother. Constance. She\'d be—
 
 nonna: Eighty-four. Yes. I read the society pages, Salvatò. I\'m old, I\'m not dead.
 
-She reaches over and takes your face in her small dry hands, the same way Ma did, the same way, generations of the same hands.
+She leans down and pinches your earlobe. Hard. You\'re eighteen and it still works.
 
 nonna: Ask me what you want to ask me. I\'ll answer one. Then I\'m going to sleep. I\'m eighty-one.`,
     choices: [
@@ -154,7 +154,7 @@ rosa: So tell me what you can promise me. Not what I want. What you can actually
 
 Ma doesn\'t say anything for a while.
 
-rosa: That\'s what my grandmother made my mother promise.
+rosa: That\'s what my mother made my grandmother promise.
 
 sam: Yeah?
 

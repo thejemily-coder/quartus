@@ -23,7 +23,7 @@ TXT jules: It\'s the other half of your father\'s paper, Sam. One more night.
 
 You stand there with the peel in your hand and a pie on it, getting cold.
 
-CIRO: The pie. *The pie*, Kearney. It\'s not a photograph. Put it in the oven.
+ciro: The pie. *The pie*, Kearney. It\'s not a photograph. Put it in the oven.
 
 The bell on the door jingles.
 
@@ -33,13 +33,15 @@ In her coat, with her purse, at eight o\'clock on a Thursday night, at Ciro\'s o
 
 rosa: You\'re Ciro.
 
-CIRO: I am Ciro. Who are you?
+ciro: I am Ciro. You, I don\'t know. You have his face, so already I\'m sorry for you.
 
 rosa: I\'m his mother. Give me a slice of plain, please, and give my son five minutes.
 
-Ciro looks at her. Then at you. Then he takes his apron off, and puts a slice on a paper plate, and goes in the back, and you have never in two years seen Ciro leave the front of the store for anybody.
+Ciro looks at her. Then at you. Then he takes his apron off, and puts a slice on a paper plate, and goes in the back, and you have never once, since August, seen Ciro leave the front of the store for anybody.
 
-Ma sits on a stool at the counter. She doesn\'t touch the slice.
+Ma sits on a stool at the counter. She pushes the slice across the counter to you without looking at it.
+
+rosa: Eat that.
 
 rosa: Your phone just buzzed. Twice. Bruno\'s grandson, and the girl.
 
@@ -51,7 +53,7 @@ She folds her hands on the counter.
 
 rosa: Tomorrow morning, at seven o\'clock, I\'m going to the Circolo Sant\'Agata on East Passyunk Avenue, where no woman has walked in the door since 1951, and I am going to talk to Bruno Iannucci.
 
-rosa: I\'m telling you, because you promised me no more lying, and I\'m not going to do to you what you did to me. I\'m not asking.`,
+rosa: I\'m telling you, because nobody in this house lies to anybody anymore, and I\'m not going to do to you what you did to me. I\'m not asking.`,
     choices: [
       { text: '"Then I\'m coming with you."', tag: 'With her',
         fx: g => { g.flag('circolo8', 'with'); g.bond('rosa', { trust: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_circolo' },
@@ -69,11 +71,11 @@ rosa: I\'m telling you, because you promised me no more lying, and I\'m not goin
 
 The door\'s unlocked.
 
-Inside, the card tables are empty. The chairs are up. The espresso machine is hissing. And at the little table in the back room, with the oilcloth, across from Bruno Iannucci in his cardigan, with a cup of coffee and a pizzelle in front of her, is your mother.
+Inside, the card tables are empty. The chairs are up. The espresso machine is hissing. And at the little table in the back room, with the oilcloth, across from Bruno Iannucci in his cardigan, with a cup of coffee in front of her she hasn\'t touched, is your mother.
 
 She looks up at you.
 
-rosa: Six-oh-five. I said six. You always run five minutes late, Salvatore. Since you were born. You were five minutes late being *born*.
+rosa: Six-oh-five. I said seven, so you came at six. You think I don\'t know you? You always run five minutes late, Salvatore. Since you were born. You were five minutes late being *born*.
 
 Bruno is laughing so hard he has to put his cup down.
 
@@ -87,12 +89,12 @@ You sit.`,
 
   a3_circolo_alone: {
     loc: 'CARDONE HALL · 9-14',
-    clock: { day: 'Fri', date: 'Mar 19', time: '7:42 AM' },
+    clock: { day: 'Fri', date: 'Mar 19', time: '7:04 AM' },
     text: `You don\'t sleep. You lie in bed in 9-14 and watch the ceiling go from black to gray, and at seven o\'clock exactly, you feel it.
 
 Not the cold. Something else. A tightness, like a held breath, coming from the south. From Passyunk. Like your mother is standing very straight somewhere, and you can feel how straight.
 
-At 7:42, your phone rings. Vinnie.
+At 7:04, your phone rings. Vinnie.
 
 vinnie: Sally.
 
@@ -112,7 +114,7 @@ A rustle. Muffled voices. Then, through the wall of a social club on East Passyu
     loc: 'CIRCOLO SANT\'AGATA · THE BACK ROOM',
     clock: { day: 'Fri', date: 'Mar 19', time: '7:00 AM' },
     enter: g => { g.flag('paid8'); g.flag('even8'); g.flag('bruno_jobs_done', g.f('bruno_jobs_total') || 8); g.know('rosa_bruno', ['sam', 'rosa', 'bruno', 'frank'], 'Rosa went to the Circolo and asked Bruno Iannucci, as Assunta DiNardo\'s granddaughter, for Frank\'s paper, her son, and the Pemberton girl. Bruno said yes. "After today, Rosa, we\'re even. The DiNardos and the Iannuccis."'); g.know('bruno_jules_table', ['sam', 'rosa', 'bruno'], 'Bruno: "The Pembertons always come back to the table."'); },
-    text: g => `${g.f('circolo8') === 'with' ? 'You walk in with her at seven. Past the sign. Past Sonny Pugliese at the door, three hundred pounds, twenty years a cop, who looks at your mother in her church coat and *moves*. Into the back room, where Bruno is at the little table with the oilcloth, in his cardigan, with his espresso, and stands up when he sees her.\n\n' : ''}ROSA: Bruno.
+    text: g => `${g.f('circolo8') === 'with' ? 'You walk in with her at seven. Past the sign. Past Sonny Pugliese at the door, three hundred pounds, twenty years a cop, who looks at your mother in her church coat and *moves*. Into the back room, where Bruno is at the little table with the oilcloth, in his cardigan, with his espresso, and stands up when he sees her.\n\n' : ''}rosa: Bruno.
 
 BRUNO: Rosa DiNardo. In my club. My father is turning over in Holy Cross.
 
@@ -136,9 +138,9 @@ The espresso machine hisses in the front room.
 
 rosa: Frank\'s paper. All of it. Gone. Not the half. All of it. My son: no more envelopes, no more jobs, no more Escalade at the curb. You don\'t call him. Your grandson doesn\'t call him. And the girl. The Pemberton girl. She doesn\'t play tonight. She doesn\'t play for you again.
 
-For a long time Bruno doesn\'t move.
+Bruno doesn\'t move.
 
-Then he sits back in his chair. He looks old. Older than you\'ve ever seen him. Six years old in a wet coat.
+Then he sits back in his chair. ${g.f('circolo8') === 'alone' ? 'Through Vinnie\'s pocket, a chair creaks. A long breath out.' : 'He looks old. Older than you\'ve ever seen him. Six years old in a wet coat.'}
 
 BRUNO: She never asked. Your grandmother. Not once. I went to her funeral in 1981 and I stood in the back of St. Monica\'s and I thought, *she never asked me for anything*. It\'s the only debt I have that I never paid.
 
@@ -171,13 +173,13 @@ BRUNO: Go home. Tell Frank his paper\'s clean. Tell him from me: *don\'t bet the
 
 You sit down next to her.
 
-Her hands are shaking. Not a little. A lot.
+She\'s still holding her purse in both hands, the clasp clicking open and shut.
 
 rosa: I just spent my grandmother.
 
 sam: Ma.
 
-rosa: Sixty-three years. She never asked him for anything. She could have. A hundred times. My father\'s shipyard job. Uncle Joey\'s trouble in 1979. She never asked. She saved it. I don\'t know what for. I don\'t think she knew.
+rosa: She could have used it a hundred times. My father\'s shipyard job. Uncle Joey\'s trouble in 1979. She never asked. She saved it. I don\'t know what for. I don\'t think she knew.
 
 She laughs.
 
@@ -189,7 +191,7 @@ rosa: On you.
 
 The fountain is off. It\'s March. There\'s nothing in it but pennies and a Wawa cup.
 
-${g.f('terms8') === 'count' ? 'ROSA: You promised me I could count. So I\'m counting. That\'s one. That\'s one I did for you, Salvatore. Don\'t make me spend anything else.' : 'ROSA: Don\'t make me spend anything else, Salvatore. I don\'t have anything else. That was it. That was the whole DiNardo bank.'}
+${g.f('terms8') === 'count' ? 'rosa: You promised me I could count. So I\'m counting. That\'s one. That\'s one I did for you, Salvatore. Don\'t make me spend anything else.' : 'rosa: Don\'t make me spend anything else, Salvatore. I don\'t have anything else. That was it. That was the whole DiNardo bank.'}
 
 You put your arm around your mother on the edge of a dry fountain on a Friday morning in March, and she lets you, and she cries for exactly one minute by your watch and then stops, and wipes her eyes with the back of her wrist, and stands up.
 
@@ -222,7 +224,7 @@ sam: My mother did.
 
 You tell her. The Circolo. The river. *I\'m asking.* The whole DiNardo bank, spent in a back room on Passyunk Avenue in one morning.
 
-When you\'re done, Jules sits there for a long time with her hand flat on her orgo book.
+When you\'re done, Jules sits with her hand flat on her orgo book.
 
 jules: Your mother walked into a Mafia social club at seven in the morning and told Bruno Iannucci I don\'t play cards anymore.
 
@@ -238,9 +240,9 @@ jules: Nobody has ever—
 
 She stops. She starts again.
 
-jules: My mother has never once walked into a room for me. Not once. Not a parent-teacher conference. Not a horse show. She sends Margaret. Margaret is the house manager.
+jules: My mother has never walked into a room for me. Not a parent-teacher conference. Not a horse show. She sends Margaret. Margaret is the house manager.
 
-She opens her eyes. They\'re wet. She doesn\'t cry in front of people. She\'s not crying. She\'s very carefully not crying.
+She opens her eyes. They\'re wet. She doesn\'t cry in front of people. She doesn\'t now.
 
 jules: I\'d like to meet her. Properly. Not at a Thanksgiving with Bruno Iannucci at the table. I\'d like to bring her flowers. What kind of flowers does she like?
 
