@@ -155,7 +155,7 @@
         else if (samBefore) added.filter(w => w !== 'sam' && EH.CAST[w]).forEach(w => note(EH.CAST[w].label + ' now knows: ' + F.text, 'fact'));
         return g;
       },
-      knows(fact, who) { const F = S.facts[fact]; return !!(F && F.knownBy.includes(who || 'sam')); },
+      knows(fact, who) { const F = S.facts[fact]; return !!(F && F.knownBy.includes(who || S.pov || 'sam')); },
       money(n) { S.money.cash += n; note('Cash ' + (n < 0 ? '−$' + (-n) : '+$' + n), 'money', Math.sign(n)); return g; },
       bank(n) { S.money.bank += n; note('Bank ' + (n < 0 ? '−$' + (-n) : '+$' + n), 'money', Math.sign(n)); return g; },
       cash() { return S.money.cash; },
@@ -175,7 +175,7 @@
       },
       pool(p, n) { S.pools[p] = clamp(S.pools[p] + n, 0, EH.maxPool(S, p)); if (n) note(p[0].toUpperCase() + p.slice(1) + ' ' + sgn(n), 'stat', Math.sign(n)); return g; },
       drift(n) { S.drift = clamp(S.drift + n, 0, 10); S.hidden.revenant_drift += Math.max(0, n) * 0.5; if (n) note('Drift ' + sgn(n), 'stat', -Math.sign(n)); return g; },
-      hidden(k, n) { S.hidden[k] = (S.hidden[k] || 0) + n; return g; },
+      hidden(k, n) { S.hidden[k] = (S.hidden[k] || 0) + n; if (k === 'jules_debt') S.hidden[k] = clamp(S.hidden[k], 0, 10); return g; },
       hset(k, v) { S.hidden[k] = v; return g; },
       hv(k) { return S.hidden[k] || 0; },
       injure(o) { S.injuries.push(Object.assign({ pen: 1, heal: 1 }, o)); note('Injury · ' + o.name, 'injury', -1); return g; },

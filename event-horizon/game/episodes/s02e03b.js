@@ -30,7 +30,7 @@ Toward his study.`,
       { text: 'Don\'t follow. Wait for her to come back. Then go talk to her yourself.', tag: 'Talk to her',
         fx: g => { g.flag('achterberg3', 'talk'); }, go: 'a2_achterberg' },
       { text: 'Stay with the party. Find a quiet corner. Text Sam. It\'s almost midnight.', tag: 'Text Sam',
-        fx: g => { g.flag('achterberg3', 'none'); g.bond('sam', { affection: 1 }); }, go: 'a2_text' }
+        fx: g => { g.flag('achterberg3', 'none'); g.bond('jules', { affection: 1 }); }, go: 'a2_text' }
     ]
   },
 
@@ -195,7 +195,7 @@ You don\'t answer. You sit on the stairs while the party sings and the snow come
 *Oh, Sam.*`,
     choices: [
       { text: 'Text back: "Yes."', tag: 'Yes',
-        fx: g => { g.flag('bells_reply', 'yes'); g.bond('sam', { trust: 1 }); g.know('bells_both', ['jules', 'sam'], 'At midnight on New Year\'s, the bells stopped for one second. You both felt it. You both said so.'); }, go: 'a2_yes' },
+        fx: g => { g.flag('bells_reply', 'yes'); g.bond('jules', { trust: 1 }); g.know('bells_both', ['jules', 'sam'], 'At midnight on New Year\'s, the bells stopped for one second. You both felt it. You both said so.'); }, go: 'a2_yes' },
       { text: 'Text back: "Happy New Year, Kearney." Nothing else. Not yet. January.', tag: 'Not yet',
         fx: g => { g.flag('bells_reply', 'wait'); }, go: 'a2_wait' }
     ]

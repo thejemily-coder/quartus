@@ -697,8 +697,8 @@
       if (!S.done.includes(S.ep)) {
         g.xp(ep.xp ?? 3);
         if (ep.onEnd) ep.onEnd(g);
-        EH.povExit(S);
         const sum = summarize();
+        EH.povExit(S);
         S.eps[S.ep] = { title: ep.title, finished: new Date().toISOString(), summary: sum };
         S.done.push(S.ep);
         clearTimeout(dbTimer); save(); clearTimeout(dbTimer); pushDb(); pushEpisodeDoc(S.ep, sum);

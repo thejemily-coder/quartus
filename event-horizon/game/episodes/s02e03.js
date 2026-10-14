@@ -264,9 +264,9 @@ simone: You get one. That\'s the rule. That\'s my only rule in this life. This i
 The horses shift in their stalls. Mercutio at the end, head over his stall door, watching you with his ears back.`,
       choices: [
         { text: 'Tell her the truth. The part you know. You\'re lucky. Impossibly. It\'s getting worse. You don\'t know what it is.', tag: 'Tell her',
-          fx: g => { g.flag('simone_j3', 'told'); g.bond('simone', { trust: 3, affection: 2 }); g.know('jules_changed', ['simone']); }, go: 'a1_simone_told' },
+          fx: g => { g.flag('simone_j3', 'told'); g.bond('simone', { trust: 3, affection: 2 }); g.know('jules_changed', ['simone']); g.know('jules_told_simone', ['jules', 'simone'], 'From the Ravenscourt stables, Jules told Simone the truth: she\'s impossibly lucky, it\'s getting worse, and she doesn\'t know what it is.'); }, go: 'a1_simone_told' },
         { text: '"I\'m a very lucky person, Simone. Everybody says so." Lie. You\'re very good at it.', tag: 'Lie',
-          check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', noLuck: true, label: 'Lie to Simone', on: { strong: 'a1_simone_lie', weak: 'a1_simone_lie', miss: 'a1_simone_lie' } } }
+          check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Simone', on: { strong: 'a1_simone_lie', weak: 'a1_simone_lie', miss: 'a1_simone_lie' } } }
       ]
     },
     a1_simone_told: {

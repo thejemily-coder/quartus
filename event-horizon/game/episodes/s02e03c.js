@@ -18,7 +18,7 @@ Inside, it\'s cold. Colder than outside. Colder than it should be. Six pews. An 
 
 Gran lights her cigarette in the chapel. At four o\'clock exactly. She smokes it standing in front of the altar.
 
-constance: Your great-great-great-grandfather built this. Josiah. In 1891, when he was an old man and very rich and very frightened. He built a whole house around it. Ravenscourt is the box. This is what\'s in the box.
+constance: Your great-great-great-grandfather built this. Josiah. In 1891, when he was forty-six and very rich and very frightened. He built a whole house around it. Ravenscourt is the box. This is what\'s in the box.
 
 She takes an ivory die out of her coat. The other half of the pair she gave you at sixteen. The one she kept.
 
@@ -63,7 +63,7 @@ constance: Not broke down. Stopped. For a heartbeat. Nobody else in the hall not
 
 jules: What was it?
 
-constance: That\'s a fourth question.
+constance: That would be another question.
 
 She looks at the window. The figure in the doorway.
 
@@ -86,7 +86,7 @@ constance: It costs other people.
 
 constance: Not us. Never us. Luck isn\'t made, child. It\'s moved. The house always collects. Not from us. Near us.
 
-You think of the stables. A brass nameplate. An empty stall.
+You think of the stables. A horse that went lame for a month so you could find out.
 
 jules: Mercutio.
 
@@ -211,11 +211,11 @@ You think about January. *I ask, you answer. Then you ask, and I answer.*
 You pick up your phone.`,
     choices: [
       { text: 'Write it all down. Everything Gran told you. A letter, in your own hand, to give him in January. And then give it to him.', tag: 'Tell him',
-        fx: g => { g.flag('jules_decision', 'tell'); g.bond('sam', { trust: 1 }); g.know('jules_letter', ['jules'], 'You wrote Sam a letter on New Year\'s night. Seven pages. Everything. You\'ll give it to him in January.'); }, go: 'a4_letter' },
+        fx: g => { g.flag('jules_decision', 'tell'); g.bond('jules', { trust: 1 }); g.know('jules_letter', ['jules'], 'You wrote Sam a letter on New Year\'s night. Seven pages. Everything. You\'ll give it to him in January.'); }, go: 'a4_letter' },
       { text: 'Keep it. Not because you don\'t trust him. Because the house collects from the people near you, and you want him far enough away that it can\'t.', tag: 'Protect him',
         fx: g => { g.flag('jules_decision', 'distance'); }, go: 'a4_distance' },
       { text: 'Call him. Now. It\'s almost midnight. He said he\'d pick up.', tag: 'Call him',
-        fx: g => { g.flag('jules_decision', 'call'); g.bond('sam', { affection: 1 }); }, go: 'a4_call' }
+        fx: g => { g.flag('jules_decision', 'call'); g.bond('jules', { affection: 1 }); }, go: 'a4_call' }
     ]
   },
   a4_letter: {
@@ -244,7 +244,7 @@ January.`,
     enter: g => { g.hidden('jules_debt', -1); },
     text: `You put the phone down.
 
-You think about Mercutio\'s empty stall. About a boy on the Parkway with blood on his face, standing next to you, and four darts turning away from you and toward somewhere else. About what the house collects, and from whom.
+You think about Mercutio, ears back at you over his stall door. About a boy on the Parkway with blood on his face, standing next to you, and four darts turning away from you and toward somewhere else. About what the house collects, and from whom.
 
 *Near us.*
 
@@ -364,7 +364,7 @@ Object.assign(EH.episodes.s02e03, {
       { label: 'Played it straight and lost', pct: 37, if: g => g.f('hugh3') === 'lost' }
     ] },
     { q: 'New Year\'s Eve', opts: [
-      { label: 'Followed them to the study', pct: 46, if: g => g.f('achterberg3') === 'overheard' || g.f('achterberg3') === 'caught' },
+      { label: 'Followed them to the study', pct: 46, if: g => g.f('achterberg3') === 'overheard' },
       { label: 'Talked to Achterberg', pct: 21, if: g => g.f('achterberg3') === 'talk' },
       { label: 'Texted Sam', pct: 33, if: g => g.f('achterberg3') === 'none' }
     ] },
@@ -378,7 +378,7 @@ Object.assign(EH.episodes.s02e03, {
     g.recap('At Ravenscourt, Gran took Jules to the chapel and gave her three questions.');
     if (g.knows('forty_four')) g.recap('Jules heard Dr. Achterberg call her "forty-four." And you, "seventeen."');
     g.recap('In the chapel, Jules rolled a die and didn\'t let it. It came up one.');
-    g.recap('At midnight on New Year\'s, the bells stopped for one second, for both of you.');
+    g.recap(g.f('bells_reply') === 'yes' ? 'At midnight on New Year\'s, the bells stopped for one second, for both of you. You both said so.' : 'At midnight on New Year\'s, the bells stopped for one second. You asked Jules if she felt it. She said Happy New Year.');
     if (g.f('jules_decision') === 'tell') g.recap('Jules wrote you a letter. Seven pages. She\'s keeping it for January.');
   }
 });
