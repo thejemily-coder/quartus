@@ -172,3 +172,29 @@ Write each episode to the save. The plan bends; the save doesn't.
     - jules_debt is 3–9 and `jules_open` is 1–4.
     - halcyon_heat is 10–15 (unclamped).
     - Possible injury: `dart_s2e5` on a yard miss.
+- **S2E6 "What If It Was"** (Valentine's week, Feb 8–14) was written for this playthrough's S2E5 save (luck at the dock, `jules_blames5`, glimpse only, told Bruno "Halcyon", promise kept). It is the aftermath, not the reveal.
+  - **Cold open (Tue Feb 2):** Bruno sits with Halina at Jefferson's transplant clinic. He knows her surgeon (Dr. Feingold, whose daughter married at the Bellevue). "Five years on the list." He asks about **Bree's voice**. This is the **E7 vector**: with Teddy dead, Bruno moves through Halina, then Bree, toward Jules.
+  - **Act One "Ninety":** Teddy's voicemail at 3:12 a.m. Counting to ninety. Jules counts with him. She plays everything straight; her nosebleeds scale with debt.
+  - **Hub (2 of 4):**
+    - **Nik:** he recorded every feed; the single 00:51:04 frame. Nik now knows the man across the street: "That's you, bro."
+    - **Bree:** Teddy's phone kept charged; Bruno at Jefferson; she has stopped doing voices. "Did he say anything about me?" (close enough / the truth.)
+    - **Simone:** "Tell me who he was." The Open Up check mends `simone10`.
+    - **Ma:** Tuesday meatballs. "Did you know that boy?" Answering "I knew him" or lying both put Rosa's heat at 9, not 10; she keeps the reveal for E8. Nonna: "Soon she asks you a question you can't answer with *no*."
+  - **Act Two "Debts":** Bruno wants the layout of Building 7, and it counts as a job.
+    - Options: true (+1 job) / refuse (Halina's evaluation is moved to April) / false map (lie check; a clean lie means Bruno's men walk past the unnumbered door; a doubted lie means Dante finds the 8th floor).
+    - **Dante: "Who's the blonde across the street?"**
+      - Girlfriend: "Sunday dinner at Grandpa's. **In March.**"
+      - Nobody: Vinnie covers.
+      - Reporter: Dante answers "Fiorillo." Dana is now on Dante's list.
+    - Vinnie on the corner: "He collects people who can do things."
+  - **Act Three "Valentine's":**
+    - Jules's first 71 ("It's wonderful").
+    - "I want to fall down": the RiverRink, a `noLuck` skate check. On a miss Sam falls and **Jules cries in public** (`jules_cried6`).
+    - The pier: Jules finally gives **gran_sam** ("don't let the house collect from him"), and "What if it was you?"
+    - Sam can give her **the card** ("Don't trust the lucky one"); she keeps it in her coat. "Then he's wrong about something."
+    - 9-04 (Simone is at Grace's: **Simone/Grace confirmed**, Jules's list item 11). **First night** (`first6` yes/wait): "It's just us." / "Soon, Kearney."
+  - **Act Four "Sunday":** the fallout from Bruno's map.
+    - Refuse: Halina's evaluation moves to April.
+    - Otherwise: Bruno's men hit Building 7 and **Sal Russo** is found on the bottom step of the dry dock with white hair, saying "eleven fifty-one" (Halcyon's answer).
+    - Show Jules (shared) / "I'll handle it": "The man with your face doesn't tell anyone anything either."
+  - **Tag:** Building 10 has a wall of 11 frames of the Revenant. Achterberg to Whitney: "They know… A pair is more interesting." "Every place seventeen has been, *he* was there first." **"Get me something with the boy's blood on it."** It's the JLP handkerchief, in his left back pocket. This seeds a theft in E7 or E8, and an eventual blood match (keep it sealed; don't pay it off before S3).
