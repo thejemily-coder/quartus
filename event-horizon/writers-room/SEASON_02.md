@@ -129,3 +129,27 @@ Write each episode to the save. The plan bends; the save doesn't.
     - Simone's "lied beautifully" needs `simone_j3==='lied'`.
     - Jules's warmth on the distance path.
     - Dana's frostbite evidence assumes `job1==='watched'`.
+- **S2E5 "The Open Door"** was written for this playthrough's S2E4 save (roof, all of it, mutual reveal; crew inside Building 7 without Sam). Only the roof path is supported. **Known gap:** a Navy Yard save (`friday4` 'navy') needs its own E5.
+  - **Cold open:** the crew finds an 8th floor that isn't on the drawings (Marisol is ES-26 in bed 8-03). They spend two hours looking for a card. At the 11:51 pulse, Teddy goes gray to the elbows, Heck burns, and **Bree loses her own voice** (she has only replayed voices). The elevator stands open: "It's for him."
+  - **Act One "Southbound":** Jules: "I'm coming." Either a cab on Jules's luck (every light on Broad green; she bleeds) or Sam Slips ahead (Unstick with the watch; Jules follows in the cab). **One call** (slots 1): Nik (in the ear; spoofs a 911 call at 12:52) / Vinnie (Dante's Escalade at the south gate; "I never told nobody nothing") / Mikey (off duty, badge; Brannigan has a Camry outside his apartment).
+  - **Act Two "Building Seven":** reunion. The eighth-floor door: Heck burns it / Jules opens it with luck (a stairwell bulb pops: "near us") / the glass room (d20; a visitor card left on purpose; the screen lists **ES-17 KEARNEY, ES-44 PEMBERTON "DO NOT RECOVER · OBSERVE"**; SECOND DRAW 00:51:04). The ward: 22 sedated Changed with ES numbers, plus **an empty bed made up for ES-44**. Just Marisol / photos for Dana (only if `dana4` 'halcyon') / all of them (ES-03: "The old man comes at night… He has your face").
+  - **Act Three "Somebody Pays":** Brannigan comes up Stair B. Teddy freezes the stair door ("Ninety seconds after I let go") and the others go (trust or stay; staying gives the GoFundMe/Bruno confession). The yard is a move check; **"Jules's luck" uses the new `luck:'jules'`**. At the dry dock, Brannigan names Halina's Jefferson appointment. 00:51:04: no dart is aimed at Jules or Sam.
+    - **Slip:** the Revenant is beside Teddy. "He's the one who takes her to Bruno. In March. On a Tuesday… four hundred times… every way I stop it ends in the same place." Two fingers push Teddy, and he closes the second on Sam. Last move: Teddy's coat / grab his wrist ("You'll do it too. That's the part nobody tells you.") / all four darts.
+    - **Her hand:** the luck goes absurd (spotlight, a seagull). Teddy slips on ice nobody saw. One frame of a man with his hand raised across the dock. Jules swears for the first time ("Near us"), and `jules_blames5` is set.
+    - **Teddy dies** on the bottom step, 12:53 a.m., Jan 23, age 20. Last words: "Listen." His stasis holds a circle of river still for 90 seconds after. Bree's own voice comes back to scream his name. Sam's response: promise to tell Halina / Marisol's out / hold his hand.
+    - The truck withdraws. Carry him home (Heck) / leave him for police (Mikey's "a cop who heard a noise").
+  - **Act Four "Port Richmond":**
+    - Halina (Edgemont St) asks for his last words: his version (the warehouse, the GoFundMe) / the truth (Bruno; she already knew, he brought a ham at Christmas).
+    - **Marisol:** the old man sat by her bed every night and cried; last night he said "Not you. You get to go home."
+    - **Funeral** Thu Jan 28 at St. Adalbert, paid for by Bruno (plot at Our Lady of Grace). Bruno: "Who?" Halcyon ("Then they owe me a boy") / "He fell" / silence (Assunta's face).
+    - Photos to Dana (sent / one: the ES-44 bed / held).
+    - **Jules in 9-14:** she counted every use of the luck. Tell her all (slip paths give her `revenant_push`: he killed Teddy for her; "That's *you* with nobody left to stop you") / "not you" (Sam keeps it: two secrets now) / hold her.
+    - **She asks him to turn off the light**, and sleeps in the dark for the first time.
+  - **Tag:** Achterberg finds **one frame** at 00:51:04 of a man with a missing left ring finger: "Pull everything… Him." ELSEWHERE: the Melrose Diner at 4 a.m., a placemat column of names, one more crossed out with the left hand, frost in the shape of a hand.
+- **E6 "What If It Was" (Valentine's week), re-planned for this save:**
+  - The reveal already happened, so E6 is the **aftermath**: grief for Teddy (bible: "the next episode lives in it"), Jules and Sam as an open secret to each other, and the first night together if earned.
+  - Bree, with her voice back, on Edgemont Street: who carries Halina now?
+  - Heck and Marisol.
+  - Achterberg learns they know each other's secrets (the season plan's shadow). Now she also has "Him."
+  - Bruno's response depends on `bruno5`.
+- **E7 adjusts:** the Revenant says Teddy "takes her to Bruno in March." With Teddy dead, Bruno still wants Jules (luck is worth more than speed), and someone else must become the vector: Dante or Vinnie? Use `call5` and `bruno5`. Halina's transplant and Bruno's leverage over the Kowals remain.
