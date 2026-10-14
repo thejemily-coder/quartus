@@ -51,7 +51,7 @@ rosa: Salvatore. Please.
 
 She folds her hands on the counter.
 
-rosa: Tomorrow morning, at seven o\'clock, I\'m going to the Circolo Sant\'Agata on East Passyunk Avenue, where no woman has walked in the door since 1951, and I am going to talk to Bruno Iannucci.
+rosa: Tomorrow morning, at seven o\'clock, I\'m going to the Circolo Sant\'Agata off East Passyunk Avenue, where no woman has walked in the door since 1951, and I am going to talk to Bruno Iannucci.
 
 rosa: I\'m telling you, because nobody in this house lies to anybody anymore, and I\'m not going to do to you what you did to me. I\'m not asking.`,
     choices: [
@@ -108,7 +108,7 @@ sam: Vin. What did she say. What did *he* say.
 
 vinnie: I don\'t know yet. I\'m in the front. They\'re in the back with the door shut. Hold on. Hold on, I\'m gonna put you on speaker in my pocket and stand by the door. Don\'t make a noise.
 
-A rustle. Muffled voices. Then, through the wall of a social club on East Passyunk Avenue and the wool of Vinnie\'s pocket, faint, your mother.`,
+A rustle. Muffled voices. Then, through the wall of a social club off East Passyunk Avenue and the wool of Vinnie\'s pocket, faint, your mother.`,
     next: 'a3_circolo'
   },
 
@@ -126,13 +126,13 @@ BRUNO: You were a DiNardo before you were a Kearney. Sit. Please. Coffee?
 
 rosa: No.
 
-She doesn\'t sit. She stands across the table from him with her purse in front of her in both hands.
+${g.f('circolo8') === 'alone' ? 'Through the phone, nobody sits.' : 'She doesn\'t sit. She stands across the table from him with her purse in front of her in both hands.'}
 
 rosa: My grandmother pulled you out of the Schuylkill River in January of 1964. Her hands were bleeding from the ice. My mother counted. Ten seconds.
 
 Bruno doesn\'t say anything.
 
-rosa: Sixty-three years. My grandmother never asked you for anything. My mother never asked you for anything. You came to my house at Thanksgiving with your grandson and sat at my table and ate my food, and threatened my husband with your eyes, and my mother never asked you for anything.
+rosa: Sixty-three years. My grandmother never asked you for anything. My mother never asked you for anything. You came to my house at Thanksgiving with your grandson and stood in my dining room and looked at my table, and threatened my husband with your eyes, and my mother never asked you for anything.
 
 rosa: I\'m asking.
 
@@ -144,7 +144,7 @@ Bruno doesn\'t move.
 
 Then he sits back in his chair. ${g.f('circolo8') === 'alone' ? 'Through Vinnie\'s pocket, a chair creaks. A long breath out.' : 'He looks old. Older than you\'ve ever seen him. Six years old in a wet coat.'}
 
-BRUNO: She never asked. Your grandmother. Not once. I went to her funeral in 1981 and I stood in the back of St. Monica\'s and I thought, *she never asked me for anything*. It\'s the only debt I have that I never paid.
+BRUNO: She never asked. Your grandmother. Not once. I went to her funeral in 1968. I was ten years old. My mother stood me in the back of St. Monica\'s and I thought, *she never asked me for anything*. It\'s the only debt I have that I never paid.
 
 BRUNO: You know what you\'re spending, Rosa?
 
@@ -181,11 +181,11 @@ rosa: I just spent my grandmother.
 
 sam: Ma.
 
-rosa: She could have used it a hundred times. My father\'s shipyard job. Uncle Joey\'s trouble in 1979. She never asked. She saved it. I don\'t know what for. I don\'t think she knew.
+rosa: They could have used it a hundred times. My grandmother, then my mother. My father\'s shipyard job. Uncle Joey\'s trouble in 1979. They never asked. They saved it. I don\'t know what for. I don\'t think they knew.
 
 She laughs.
 
-rosa: And I just walked in there in my church coat and spent it. On your father\'s gambling. On a girl from the Main Line I\'ve met twice.
+rosa: And I just walked in there in my church coat and spent it. On your father\'s gambling. On a girl from the Main Line I\'ve met once.
 
 She looks at you.
 
@@ -195,7 +195,7 @@ The fountain is off. It\'s March. There\'s nothing in it but pennies and a Wawa 
 
 ${g.f('terms8') === 'count' ? 'rosa: You promised me I could count. So I\'m counting. That\'s one. That\'s one I did for you, Salvatore. Don\'t make me spend anything else.' : 'rosa: Don\'t make me spend anything else, Salvatore. I don\'t have anything else. That was it. That was the whole DiNardo bank.'}
 
-You put your arm around your mother on the edge of a dry fountain on a Friday morning in March, and she lets you, and she cries for exactly one minute by your watch and then stops, and wipes her eyes with the back of her wrist, and stands up.
+You put your arm around your mother on the edge of a dry fountain on a Friday morning in March, and she lets you, and she cries for exactly one minute by your phone and then stops, and wipes her eyes with the back of her wrist, and stands up.
 
 rosa: I have a second-grade field trip to the Franklin Institute at nine-fifteen. Go to class.`,
     next: 'a3_jules'
@@ -246,7 +246,7 @@ jules: My mother has never walked into a room for me. Not a parent-teacher confe
 
 She opens her eyes. They\'re wet. She doesn\'t cry in front of people. She doesn\'t now.
 
-jules: I\'d like to meet her. Properly. Not at a Thanksgiving with Bruno Iannucci at the table. I\'d like to bring her flowers. What kind of flowers does she like?
+jules: I\'d like to meet her. Properly. Not as the girl who lied to her on the phone. I\'d like to bring her flowers. What kind of flowers does she like?
 
 sam: Carnations. From the Acme. She says roses are for people who don\'t know what anything costs.
 

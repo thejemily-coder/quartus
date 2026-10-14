@@ -56,7 +56,7 @@ sam: Simone. ${g.f('friday7') === 'slip' ? 'Opening night, I was there, but I wa
 
 She stops coiling.
 
-sam: And in September, when you asked me in the theater, and I lied, I lied because I can stop time. Not like a metaphor. When the world stops, I don\'t. It\'s why my hair\'s white. It\'s why Femi came to my door. It\'s why I bleed. ${g.knows('sam_slip', 'simone') ? 'You knew. You figured it out before I ever said it. I know you did. I\'m saying it anyway, because you deserved to hear it from me.' : ''}
+sam: And in November, when you asked me in the theater, and I lied, I lied because I can stop time. Not like a metaphor. When the world stops, I don\'t. It\'s why my hair\'s white. It\'s why Femi came to my door. It\'s why I bleed. ${g.knows('sam_slip', 'simone') ? 'You knew. You figured it out before I ever said it. I know you did. I\'m saying it anyway, because you deserved to hear it from me.' : ''}
 
 The cable is hanging from her hand.
 
@@ -74,7 +74,7 @@ simone: Do you know what that *does* to a person?
 
 sam: I\'m sorry.
 
-simone: I know you are. You\'ve been sorry since October. Sorry is cheap, baby. *This* is what costs.
+simone: I know you are. You\'ve been sorry since November. Sorry is cheap, baby. *This* is what costs.
 
 She lets go of your face. She picks the cable back up.
 
@@ -187,7 +187,7 @@ She pats Jules\'s hand.
 
 nonna: Now eat. You\'re too skinny. All of you are too skinny. Madonna, the young people.
 
-${g.f('terms8') === 'count' ? 'After dinner, on the stoop, in the cold, Ma sits down next to you on Nonna\'s cushion. She doesn\'t say anything. She holds out her hand, palm up, the way she did when you were six and had something in your pocket you weren\'t supposed to have.\n\nrosa: Since Sunday.\n\nsam: None, Ma. I haven\'t gone in once.\n\nShe nods. She closes her hand.\n\nrosa: Zero. Good. I\'m writing it down.' : 'After dinner, on the stoop, in the cold, Ma sits down next to you on Nonna\'s cushion and doesn\'t say anything. Through the window behind you, you can hear Jules and Gigi doing the dishes, and Jules laughing at something, short, surprised out of her.\n\nrosa: She laughs like you.\n\nsam: Yeah?\n\nrosa: Like it costs her something. Like she\'s paying for it.'}`,
+${g.f('terms8') === 'count' ? 'After dinner, on the stoop, in the cold, Ma sits down next to you on the top step. She doesn\'t say anything. She holds out her hand, palm up, the way she did when you were six and had something in your pocket you weren\'t supposed to have.\n\nrosa: Since Sunday.\n\nsam: None, Ma. I haven\'t gone in once.\n\nShe nods. She closes her hand.\n\nrosa: Zero. Good. I\'m writing it down.' : 'After dinner, on the stoop, in the cold, Ma sits down next to you on the top step and doesn\'t say anything. Through the window behind you, you can hear Jules and Gigi doing the dishes, and Jules laughing at something, short, surprised out of her.\n\nrosa: She laughs like you.\n\nsam: Yeah?\n\nrosa: Like it costs her something. Like she\'s paying for it.'}`,
     next: 'tag_lab'
   },
 
@@ -201,7 +201,7 @@ ${g.f('terms8') === 'count' ? 'After dinner, on the stoop, in the cold, Ma sits 
 
 A lab. White, cold, humming. A technician in a paper mask is sitting at a screen with a printout in her hand, and Dr. Achterberg is standing behind her, reading over her shoulder.
 
-TECHNICIAN: Two samples on the handkerchief. Same donor. Male. One from late August, maybe. One from late November.
+TECHNICIAN: Two usable samples from the male donor. One from late August, maybe. One from late November. There\'s a newer stain, February. Female. Different file.
 
 ACHTERBERG: And?
 
@@ -221,11 +221,11 @@ ACHTERBERG: *(quietly)* He\'s spending himself.
 
 She takes the printout. She folds it in half.
 
-ACHTERBERG: Every time he stops the clock, he pays for it in years. The old reports say the brother did the same, in 1961.
+ACHTERBERG: Every time he stops the clock, he pays for it in years. Like the old reports.
 
 She walks to the window. The dry dock below, gray in the dawn.
 
-ACHTERBERG: At this rate he\'ll be forty by Christmas.
+ACHTERBERG: At this rate he\'ll be an old man by Christmas.
 
 > ELSEWHERE.
 
@@ -239,7 +239,7 @@ hugh: Gran.
 
 constance: Hugh.
 
-${g.f('note6') === 'told' ? 'He takes his hand out of his pocket. He holds out an index card, folded in half, soft at the corners.\n\nhugh: Found this in Jubilee\'s coat. Thought you\'d want it before she did.\n\nConstance takes the card without looking at him. She unfolds it. She reads the front. She reads the back.\n\n*Don\'t trust the lucky one.*\n\nHer cigarette burns down while she reads it.\n\nhugh: Who wrote it? Is it the boyfriend? It\'s his writing, I think. Is he—\n\nconstance: No.\n\nShe folds the card. She puts it in the pocket of her coat.\n\nconstance: Someone who loved her very much. And was wrong.\n\nhugh: About what?\n\nconstance: About which of us to be afraid of.' : 'He stands beside her at the balustrade. He doesn\'t say anything for a long time.\n\nhugh: Gran. What is she?\n\nConstance doesn\'t look at him.\n\nconstance: Who have you been talking to, Hugh?\n\nHe doesn\'t answer. That\'s an answer.'}
+${g.f('note6') === 'told' ? 'He takes his hand out of his pocket. He holds out an index card, folded in half, soft at the corners.\n\nhugh: Found this in Jubilee\'s coat. Thought you\'d want it before she did.\n\nConstance takes the card without looking at him. She unfolds it. She reads the front. She reads the back.\n\n*Don\'t trust the lucky one.*\n\nHer cigarette burns down while she reads it.\n\nhugh: Who wrote it? Is it the boyfriend? Is he—\n\nconstance: *(after a long time)* I don\'t think so.\n\nShe folds the card. She puts it in the pocket of her coat.\n\nconstance: Someone who is very frightened for her. And is wrong.\n\nhugh: About what?\n\nconstance: About which of us to be afraid of.' : 'He stands beside her at the balustrade. He doesn\'t say anything for a long time.\n\nhugh: Gran. What is she?\n\nConstance doesn\'t look at him.\n\nconstance: Who have you been talking to, Hugh?\n\nHe doesn\'t answer. That\'s an answer.'}
 
 She stubs out the cigarette on the stone.
 

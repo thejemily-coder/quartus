@@ -34,7 +34,7 @@ The older woman has stopped walking. She\'s looking at the ice. At a boy, six or
 
 ASSUNTA: *(quietly, in Italian)* Teresa. Count for me.
 
-TERESA: Count what?
+TERESA: Mamma. No. Not like Salvatore.
 
 The ice opens.
 
@@ -46,7 +46,7 @@ Not church bells. *All* of them. The trolley bell on the Parkway. The bell on th
 
 Teresa can still move her eyes. Only her eyes. She watches her mother put down the bag of oranges, very carefully, on the frozen grass. Watches her walk out onto the ice, not running, walking, like a woman crossing her own kitchen, to the black hole, and kneel, and put both arms in up to the shoulders.
 
-One. Teresa counts. She doesn\'t know what she\'s counting. Two. Three.
+One. Teresa counts, the way she counted at the Feast. Two. Three.
 
 On the road behind them, on East River Drive, a long black car has stopped. A young woman in the back seat with the window down, in a fur collar, blonde, twenty-one or so, is also not moving. Except her eyes. Her eyes are on Assunta.
 
@@ -56,7 +56,7 @@ Assunta comes back across the ice with a boy in her arms, soaking, blue, coughin
 
 The bells start.
 
-The friends are still screaming. The girl in the red hat finishes her scream. The boy\'s mother is running down from the drive with her arms out.
+The friends are still screaming. The girl in the red hat finishes her scream. The boy\'s mother is running down from the drive with her arms out, and behind her his father, a camera around his neck, crying.
 
 And Assunta DiNardo is sitting on the frozen grass beside her oranges with her hands bleeding from the ice, and when she looks up at her daughter, Teresa sees it. In ten seconds, her mother has gotten older. The lines by her eyes. A new gray at her temple.
 
@@ -70,7 +70,7 @@ She picks up her oranges.
 
 ASSUNTA: The men go in. The women count. Remember that, when it\'s your turn. Remember it when it\'s your daughter\'s turn.
 
-Behind them, on East River Drive, the window of the black car goes up. The car pulls away.`,
+Behind them, on East River Drive, the blonde girl in the black car is still watching. Assunta looks back at her across the frozen grass, a long, level look, one woman recognizing another. Then the window of the black car goes up. The car pulls away.`,
       next: 'titles'
     },
 
@@ -88,7 +88,7 @@ The house on Mifflin Street smells like gravy. It always smells like gravy on Su
 
 But nobody else is here.
 
-Pop\'s cab isn\'t out front. Gigi\'s sneakers aren\'t by the door. Nonna\'s chair on the stoop is empty, with her cushion on it. The house is so quiet you can hear the clock over the stove, the one that\'s been five minutes fast since 1998, ticking.
+Pop\'s cab isn\'t out front. Gigi\'s sneakers aren\'t by the door. Three doors down, Nonna\'s chair on her stoop is empty, with her cushion on it. The house is so quiet you can hear the clock over the stove, the one that\'s been five minutes fast since 1998, ticking.
 
 Ma is at the kitchen table. Not at the stove. *At the table*, sitting down, with her hands folded in front of her on the oilcloth, in her good blouse, like she\'s waiting for a parent-teacher conference.
 
@@ -98,7 +98,7 @@ rosa: Sit.
 
 You sit.
 
-rosa: I sent your father and Mikey to the ballpark for the Phillies fan thing, and I sent Gigi with them, so she\'s not at the Iacobuccis\' with her ear on the wall. I sent your grandmother upstairs, and I told her if she comes down I\'ll put her in a home, and she laughed at me, and she went.
+rosa: I sent your father and Mikey to the ballpark for the Phillies fan thing, and I sent Gigi with them, so she\'s not at the Iacobuccis\' with her ear on the wall. I sent your grandmother home, three doors down, and I told her if she comes back before supper I\'ll put her in a home, and she laughed at me, and she went.
 
 She looks at you.
 
@@ -271,7 +271,7 @@ She turns off the water.
 
 rosa: Salvatore. Who else in this family knows?
 
-${g.knows('sam_slip', 'frank') ? 'Pop knows. You told him, under the highway, or he saw. Mikey knows. Mikey\'s known since the fall. Nonna\'s known since before you did.' : 'Mikey knows. Nonna\'s known since before you did.'}
+${g.knows('sam_slip', 'frank') ? 'Pop knows. You told him at breakfast in December, over Bruno\'s card, with Ma at the stove. Mikey knows. Mikey\'s known since the fall. Nonna\'s known since before you did.' : 'Mikey knows. Nonna\'s known since before you did.'}
 
 And Ma is standing at the sink, the last one in the house to be told, with her hands dripping.`,
       choices: [
@@ -301,7 +301,7 @@ At six-thirty, Pop and Mikey come home from the ballpark with Gigi, all three of
 
 They stop in the doorway of the kitchen.
 
-Ma is sitting at the table. You\'re sitting across from her. Nonna has come down and is sitting at the end, in her black cardigan, with her hands folded, like the judge.
+Ma is sitting at the table. You\'re sitting across from her. Nonna has come up the street and is sitting at the end, in her black cardigan, with her hands folded, like the judge.
 
 Pop looks at Ma\'s face. He looks at yours. He takes off his Phillies cap.
 
@@ -321,9 +321,9 @@ mikey: Ma—
 
 rosa: Since when.
 
-mikey: Since the fall.
+mikey: Since Thanksgiving. The parade.
 
-rosa: *October.* And you, Francis?
+rosa: *Thanksgiving.* At my table. And you, Francis?
 
 Pop sits down heavily. He looks at his hands.
 
@@ -354,7 +354,7 @@ At six-thirty, Pop and Mikey come home from the ballpark with Gigi, all three of
 
 They stop in the doorway of the kitchen.
 
-Ma is at the stove. You\'re at the table. Nonna has come down and is sitting at the end, in her black cardigan, with her hands folded, like the judge.
+Ma is at the stove. You\'re at the table. Nonna has come up the street and is sitting at the end, in her black cardigan, with her hands folded, like the judge.
 
 Pop looks at Ma\'s back. Then at you. At the stove, at the pot, at the wooden spoon standing in it.
 

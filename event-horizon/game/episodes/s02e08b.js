@@ -5,10 +5,10 @@ EH.scenes('s02e08', {
   a2_nonna: {
     card: { kind: 'act', label: 'Act Two', title: 'The Women Count' },
     night: true,
-    loc: 'MIFFLIN STREET · NONNA\'S ROOM',
+    loc: 'NONNA\'S HOUSE · HER ROOM',
     clock: { time: '9:30 PM' },
-    enter: g => { g.know('dinardo_women', ['sam', 'rosa', 'nonna'], 'Nonna: the DiNardo women count. When the clocks stop, their eyes still move. Assunta. Teresa. Rosa. "The men go in. The women count."'); g.know('constance_1964', ['sam', 'rosa', 'nonna'], 'Nonna: in January 1964, at Boathouse Row, a young blonde woman in a black car on East River Drive watched Assunta go into the ice. Her eyes moved too. "A Pemberton. I found out later."'); },
-    text: g => `Nonna\'s room is at the top of the stairs at the front of the house, over the stoop, so she can hear the street. It smells like Jean Naté and candle wax. There\'s a crucifix, and a picture of Padre Pio, and a picture of Nonno in his Navy uniform, and on the dresser, in a frame, a photograph you\'ve never noticed: a small old woman in a kerchief, on a riverbank, in winter, with a bag of oranges.
+    enter: g => { g.know('assunta_bruno', ['sam', 'rosa', 'nonna'], 'In January 1964, Assunta DiNardo pulled six-year-old Bruno Iannucci out of the Schuylkill ice at Boathouse Row.'); g.know('dinardo_women', ['sam', 'rosa', 'nonna'], 'Nonna: the DiNardo women count. When the clocks stop, their eyes still move. Assunta. Teresa. Rosa. "The men go in. The women count."'); g.know('constance_1964', ['sam', 'rosa', 'nonna'], 'Nonna: in January 1964, at Boathouse Row, a young blonde woman in a black car on East River Drive watched Assunta go into the ice. Her eyes moved too. "A Pemberton. I found out later."'); },
+    text: g => `Three doors down, Nonna\'s room is at the top of the stairs at the front of her house, over her stoop, so she can hear the street. It smells like Jean Naté and candle wax. There\'s a crucifix, and a picture of Padre Pio, and a picture of Nonno in his Navy uniform, and on the dresser, in a frame, a photograph you\'ve never noticed: a small old woman in a kerchief, on a riverbank, in winter, with a bag of oranges.
 
 Nonna sits on the edge of her bed. Ma sits in the chair by the window. You sit on the floor, the way you did when you were small and she told you stories about the old country that you found out later she\'d made up.
 
@@ -24,7 +24,7 @@ nonna: You don\'t remember the clock. I made sure.
 
 She folds her hands.
 
-nonna: The DiNardo women count. That\'s all. That\'s what we have. When the clocks stop, our eyes keep moving. We can\'t do anything. We can\'t go in. We can only watch, and count, and remember.
+nonna: The DiNardo women count. That\'s all. That\'s what we have. When the clocks stop, our eyes keep moving. Most of us can\'t do anything. Most of us can\'t go in. My mother could, God help her. The rest of us watch, and count, and remember.
 
 nonna: The men go in.
 
@@ -34,7 +34,7 @@ nonna: My brother Salvatore went in. Three children out of a fire on Arch Street
 
 Out in the hall, the clock ticks.
 
-nonna: My mother went in once more after that. Only once. In 1964, at the Boathouse, for a little boy in the ice. I counted to ten. She came back older. And she never went in again. Never. She said, *Teresa, I\'m done. Now I count.*
+nonna: My mother went in once more after that. Only once. In 1964, at the Boathouse, for a little boy in the ice. I counted to ten. She came back older, with her hands bleeding from the ice. And she never went in again. Never. She said, *Teresa, I\'m done. Now I count.*
 
 rosa: The little boy.
 
@@ -71,12 +71,12 @@ nonna: Ask me what you want to ask me. I\'ll answer one. Then I\'m going to slee
 
   a2_answer: {
     night: true,
-    loc: 'MIFFLIN STREET · NONNA\'S ROOM',
+    loc: 'NONNA\'S HOUSE · HER ROOM',
     text: g => `${g.f('nonna8') === 'stop' ? `sam: How do I stop? Before I end up like him?
 
 Nonna looks at you a long moment.
 
-nonna: My mother asked her own grandmother that, in Calabria, in 1912. Her grandmother said: *You stop when you let somebody count for you.*
+nonna: I asked my mother that, after the Feast. After Salvatore. She said: *You stop when you let somebody count for you.*
 
 sam: What does that mean?
 
@@ -100,7 +100,7 @@ She looks back at you.
 
 nonna: The night after Halloween, I opened the window and I said to him, *Go home.* In Italian. He looked up at me. And he said, *I can\'t, Teresa. I don\'t have one.*
 
-nonna: He knew my name, Salvatò. Nobody has called me Teresa since my mother died.` : `sam: What happens to me? Honestly.
+nonna: He knew my name, Salvatò. *Teresa.* The way my mother said it. Nobody alive says it like that.` : `sam: What happens to me? Honestly.
 
 Nonna doesn\'t pretend. She never has.
 
@@ -116,7 +116,7 @@ nonna: That\'s honest. You asked for honest. Now listen to the rest. He went fas
 
 Nonna lies back on her pillows. She closes her eyes.
 
-nonna: Now go downstairs, both of you, and fight. I can hear you wanting to. Go.`,
+nonna: Now go home, both of you, and fight. I can hear you wanting to. Go.`,
     next: 'a2_terms'
   },
 
@@ -124,7 +124,7 @@ nonna: Now go downstairs, both of you, and fight. I can hear you wanting to. Go.
     night: true,
     loc: 'MIFFLIN STREET · THE STOOP',
     clock: { time: '10:40 PM' },
-    text: g => `You end up on the stoop, the two of you. Ma in her cardigan with her arms crossed. You on Nonna\'s cushion. The streetlight at the end of the block is on, and there\'s nobody under it.
+    text: g => `You end up on the stoop, the two of you. Ma in her cardigan with her arms crossed. You on the top step. The streetlight at the end of the block is on, and there\'s nobody under it.
 
 Mifflin Street at night in March. Somebody\'s TV through a window. Somebody\'s dog. The smell of the Delaware when the wind\'s right.
 

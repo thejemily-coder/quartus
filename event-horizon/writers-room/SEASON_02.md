@@ -243,7 +243,7 @@ Write each episode to the save. The plan bends; the save doesn't.
     - The split is capped at total-1.
     - `pop7` now means the S2E7 outcome (the S1E7 value is overwritten).
 - **S2E8 "Ma"** (Mar 14–22) was written for this playthrough's S2E7 save (split pot, Pop safe, "Sunday. Alone.").
-  - **Cold open, Jan 19, 1964, Boathouse Row:** Assunta (61) walks out onto the ice for six-year-old Bruno. Teresa (19) counts to ten. A blonde girl in a black car on East River Drive (Constance, 21) watches; **her eyes move too**. Assunta: "The men go in. The women count."
+  - **Cold open, Jan 19, 1964, Boathouse Row:** Assunta (61) walks out onto the ice for six-year-old Bruno. Teresa (18) counts to ten. A blonde girl in a black car on East River Drive (Constance, 21) watches; **her eyes move too**. Assunta: "The men go in. The women count."
   - **Act One "Sunday":** Ma at the kitchen table with the St. Monica's calendar: 11 red marks since Aug 22, Thanksgiving circled. "Are you the Blur?"
     - Tell / **show** (Slip: her eyes follow him; she counts nine) / lie ("I asked you first").
     - Every branch sets **heat_max_rosa**.
@@ -271,3 +271,12 @@ Write each episode to the save. The plan bends; the save doesn't.
   - Vinnie has to choose.
   - Constance has the card and a message from Teresa.
   - Halcyon has the telomere data.
+  - **S2E8 QA:**
+    - Nonna lives three doors down (her own house).
+    - Assunta died in 1968 (Bruno was 10 at her funeral).
+    - The 1912 Calabria line and Halcyon knowing about Salvatore were both cut (seals).
+    - Mikey learned at Thanksgiving.
+    - Constance only *suspects* who wrote the card.
+    - Speaker IDs are lowercase (`rosa`, `ciro`).
+    - Sleep costs are now applied on Friday morning.
+    - New canon to note: Rosa says Mikey was hurt in Afghanistan.
