@@ -187,7 +187,7 @@ DANTE: Who is she?`,
       { text: '"No idea. I didn\'t see anybody." Let Vinnie back you up.', tag: 'Nobody', if: g => g.f('jules_blames5'),
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Dante', on: { strong: 'a2_car_nobody', weak: 'a2_car_nobody', miss: 'a2_car_nobody_bad' } },
         fx: g => { g.flag('jules6', 'nobody'); } },
-      { text: '"A reporter. From the Inquirer. She\'s been following me around." Give him somebody he already hates.', tag: 'A reporter',
+      { text: '"A reporter. From the Inquirer. She\'s been following me around." Give him somebody he already hates.', tag: 'A reporter', if: g => g.f('jules_blames5'),
         fx: g => { g.flag('jules6', 'reporter'); g.hidden('revenant_drift', 1); g.know('dante_dana', ['sam', 'dante', 'vinnie'], 'You told Dante Iannucci the woman across the street at Teddy\'s funeral was a reporter from the Inquirer. He said: "Fiorillo."'); }, go: 'a2_car_reporter' }
     ]
   },

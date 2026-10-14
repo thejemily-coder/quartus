@@ -198,3 +198,13 @@ Write each episode to the save. The plan bends; the save doesn't.
     - Otherwise: Bruno's men hit Building 7 and **Sal Russo** is found on the bottom step of the dry dock with white hair, saying "eleven fifty-one" (Halcyon's answer).
     - Show Jules (shared) / "I'll handle it": "The man with your face doesn't tell anyone anything either."
   - **Tag:** Building 10 has a wall of 11 frames of the Revenant. Achterberg to Whitney: "They know… A pair is more interesting." "Every place seventeen has been, *he* was there first." **"Get me something with the boy's blood on it."** It's the JLP handkerchief, in his left back pocket. This seeds a theft in E7 or E8, and an eventual blood match (keep it sealed; don't pay it off before S3).
+  - **S2E6 QA:**
+    - Knowledge gates on Nik, Feingold, Sal and the tag.
+    - The ward count is 21.
+    - `assunta_bruno` is added on refuse.
+    - The TXT unknown number renders as a text bubble.
+    - `gran_sam` has its text.
+    - "Nobody" and "reporter" are gated on `jules_blames5`.
+    - Rosa and Nonna use lowercase speaker ids.
+    - The orgo professor is renamed Adeyemi.
+    - Going into E7: `revenant_drift` >= 10, so every Slip Unsticks (the watch is held). Rosa heat is 9 if Sam visited.

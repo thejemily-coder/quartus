@@ -249,7 +249,7 @@ sam: That\'s not—
 
 jules: You don\'t know that. Neither do I. That\'s what\'s unbearable. Nobody knows.
 
-${g.knows('revenant_push', 'jules') ? 'She doesn\'t say *except you*. You both think it. The man on the lip of the dock, the two fingers. You told her. She knows it wasn\'t the house. She\'s afraid of something else now: that a man with your face would do that, for her.' : 'You think about the man across the water, under the dead spotlight, one hand raised, for one frame. You told her you saw him. You told her you don\'t know.'}
+${g.knows('revenant_push', 'jules') ? 'She doesn\'t say *except you*. You both think it. The man on the lip of the dock, the two fingers. You told her. She knows it wasn\'t the house. She\'s afraid of something else now: that a man with your face would do that, for her.' : g.knows('revenant_glimpse5', 'jules') ? 'You think about the man across the water, under the dead spotlight, one hand raised, for one frame. You told her you saw him. You told her you don\'t know.' : 'You think about the man with your face. You never told her about him. She\'s been carrying it as arithmetic for three weeks, because you let her.'}
 
 She\'s quiet for a while.
 
@@ -272,9 +272,9 @@ She told you hers. She gave you the last thing. It\'s your turn.
 It\'s 11:59.`,
     choices: [
       { text: 'Give her the card. The last thing. "He wrote this. In my handwriting. Before I ever knew what you were."', tag: 'The card',
-        fx: g => { g.flag('note6', 'told'); g.know('revenant_note', ['jules']); g.know('gran_sam', ['sam']); g.bond('jules', { trust: 2 }); g.hidden('revenant_drift', -1.5); g.hidden('jules_debt', -1); }, go: 'a3_card' },
+        fx: g => { g.flag('note6', 'told'); g.know('revenant_note', ['jules']); g.know('gran_sam', ['sam'], 'Gran: "Some families are lucky. Some are early. The early ones always go in for somebody else. Keep him close, child, and don\'t let the house collect from him."'); g.bond('jules', { trust: 2 }); g.hidden('revenant_drift', -1.5); g.hidden('jules_debt', -1); }, go: 'a3_card' },
       { text: 'Keep it. She just took a weight off her chest. Don\'t put a heavier one there tonight. Kiss her at midnight instead.', tag: 'Keep it',
-        fx: g => { g.flag('note6', 'kept'); g.know('gran_sam', ['sam']); g.hidden('revenant_drift', 0.5); }, go: 'a3_midnight' }
+        fx: g => { g.flag('note6', 'kept'); g.know('gran_sam', ['sam'], 'Gran: "Some families are lucky. Some are early. The early ones always go in for somebody else. Keep him close, child, and don\'t let the house collect from him."'); g.hidden('revenant_drift', 0.5); }, go: 'a3_midnight' }
     ]
   },
 

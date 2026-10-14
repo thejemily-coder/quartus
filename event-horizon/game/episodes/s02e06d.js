@@ -25,15 +25,15 @@ TXT nik: BRO
 
 And under it, from a number you don\'t have saved:
 
-TXT 267-555-0143: grandpas guys went in last night
-TXT 267-555-0143: theres a second stair sam. and an 8th floor. no number on the door. beds all stripped. empty
-TXT 267-555-0143: grandpa says hes very interested in long hallways
-${g.f('jules6') === 'reporter' ? 'TXT 267-555-0143: tell fiorillo the blonde looks good on her' : 'TXT 267-555-0143: sunday dinner. march. bring the blonde'}
-TXT 267-555-0143: — D` : `TXT nik: bro. 6abc. "break-in at navy yard office building overnight, no injuries, halcyon dynamics declined to comment"
+TXT Unknown number: grandpas guys went in last night
+TXT Unknown number: theres a second stair sam. and an 8th floor. no number on the door. beds all stripped. empty
+TXT Unknown number: grandpa says hes very interested in long hallways
+${g.f('jules6') === 'reporter' ? 'TXT Unknown number: tell fiorillo the blonde looks good on her' : 'TXT Unknown number: sunday dinner. march. bring the blonde'}
+TXT Unknown number: — D` : `TXT nik: bro. 6abc. "break-in at navy yard office building overnight, no injuries, halcyon dynamics declined to comment"
 TXT nik: building 7
 TXT nik: BRO
 
-${g.f('building6') === 'true' ? 'TXT 267-555-0143: grandpas guys went in last night. 8th floor. all the beds stripped. they moved everybody. grandpa says thanks anyway. it counts\nTXT 267-555-0143: — D' : 'TXT 267-555-0143: grandpas guys went in last night. offices. a lab. a turkey lol. you were right. grandpa says they must have moved the beds somewhere else\nTXT 267-555-0143: — D'}
+${g.f('building6') === 'true' ? 'TXT Unknown number: grandpas guys went in last night. 8th floor. all the beds stripped. they moved everybody. grandpa says thanks anyway. it counts\nTXT Unknown number: — D' : 'TXT Unknown number: grandpas guys went in last night. offices. a lab. a turkey lol. you were right. grandpa says they must have moved the beds somewhere else\nTXT Unknown number: — D'}
 
 And then, twenty minutes later, from Bree:
 

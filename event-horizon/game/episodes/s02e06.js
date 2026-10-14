@@ -132,6 +132,7 @@ You have three days before anything else happens. You can feel it coming, the wa
 
     a1_nik: {
       loc: 'PALEY LIBRARY · 3RD FLOOR',
+      clock: { day: 'Mon', date: 'Feb 8', time: '4:15 PM' },
       enter: g => { g.know('man_across_street', ['nik']); g.know('nik_frame', ['sam', 'nik'], 'Nik saved the Navy Yard camera feed from 00:51:04. In one frame, across the dry dock, a gray-haired man with his left hand raised. He\'s in no other frame.'); g.bond('nik', { trust: 1, affection: 1 }); g.hidden('revenant_drift', -0.5); },
       text: g => `He\'s on the third floor of Paley, at a carrel in the back, in the same hoodie he wore to the funeral. He has his laptop open and his headphones on and four empty cans of Celsius lined up on the desk.
 
@@ -189,7 +190,7 @@ sam: Yeah.
 
 nik: Then it wasn\'t ice. It wasn\'t *nobody*. Bro. Jules was right there. You have to tell Jules.
 
-sam: ${g.knows('revenant_push', 'jules') ? 'I did. I told her everything I saw. She said that\'s worse. She said a stranger she could have hated.' : 'I did. I told her I saw someone. She said that\'s worse. She said now she doesn\'t even get to know.'}
+sam: ${g.knows('revenant_push', 'jules') ? 'I did. I told her everything I saw. She said that\'s worse. She said a stranger she could have hated.' : g.knows('revenant_glimpse5', 'jules') ? 'I did. I told her I saw someone. She said that\'s worse. She said now she doesn\'t even get to know.' : 'Not yet. If I tell her I saw someone, she gets a ghost instead of a sum. I think that\'s worse.'}
 
 Nik thinks about that.
 
@@ -205,6 +206,7 @@ sam: Come home, Nik.`,
 
     a1_bree: {
       loc: 'EDGEMONT STREET · PORT RICHMOND',
+      clock: { day: 'Mon', date: 'Feb 8', time: '6:40 PM' },
       enter: g => { g.know('bruno_jefferson', ['sam', 'bree'], 'Bree: Bruno Iannucci sat with Halina at Jefferson and told her he knows her surgeon. "Five years on the list. I don\'t want you to wait five years." He asked about Bree\'s voice.'); g.bond('bree', { trust: 2, affection: 1 }); },
       text: g => `The plaster Virgin Mary in the front yard has a new scarf. Black. Somebody knitted it this week.
 
@@ -286,6 +288,7 @@ bree: Yeah. That\'s what I thought.`,
 
     a1_simone: {
       loc: 'CARDONE HALL · 9-04',
+      clock: { day: 'Wed', date: 'Feb 10', time: '12:30 AM' },
       text: `Simone\'s door is open. It\'s always open. She\'s on her bed in a sea of sequins and sheet music, with a highlighter in her mouth.
 
 *Mummers: The Musical* opens in five weeks. She has eleven songs to learn and has described every one of them to the whole floor as *a crime against the Commonwealth of Pennsylvania*.
@@ -383,11 +386,11 @@ She goes back to her sheet music. You go.`,
 
 Ma opens the door before you get to it. DiNardo timing. *I knew you\'d come.* She takes your face in both hands and looks at it, hard, the way she looks at a kid in her nurse\'s office who says he fell off the monkey bars.
 
-ROSA: You\'re not sleeping.
+rosa: You\'re not sleeping.
 
 sam: I\'m sleeping.
 
-ROSA: You\'re not *eating*.
+rosa: You\'re not *eating*.
 
 sam: I\'m here, aren\'t I?
 
@@ -397,15 +400,15 @@ Dinner. Gigi talks for forty minutes about a girl in her class named Ava who is 
 
 After, Ma washes and you dry, the way it\'s been since you were eight.
 
-ROSA: There was a boy who died at the Navy Yard. It was in the Daily News. Port Richmond boy. Twenty years old. Fell in the dry dock.
+rosa: There was a boy who died at the Navy Yard. It was in the Daily News. Port Richmond boy. Twenty years old. Fell in the dry dock.
 
 You dry a plate. You keep drying it.
 
-ROSA: Mikey said it at Sunday dinner. You weren\'t at Sunday dinner. Mikey said it, and then he looked at his plate, and he didn\'t look up again. That\'s how I knew.
+rosa: Mikey said it at Sunday dinner. You weren\'t at Sunday dinner. Mikey said it, and then he looked at his plate, and he didn\'t look up again. That\'s how I knew.
 
 She hands you a glass.
 
-ROSA: Salvatore. Did you know that boy?
+rosa: Salvatore. Did you know that boy?
 
 The water running. Nonna in the next room with the TV on, *Jeopardy*, too loud. The window over the sink, black, with your face in it and your mother\'s face beside it.
 
@@ -423,15 +426,15 @@ You have white in your hair. She\'s been looking at it all night.`,
 
 She doesn\'t ask anything else. She turns the water off. She dries her hands on the dish towel over her shoulder, and she puts her arms around you, standing at the sink, the way she hasn\'t since you were maybe twelve, and holds on.
 
-ROSA: Okay. Okay.
+rosa: Okay. Okay.
 
 She\'s shaking. A little.
 
-ROSA: I\'m going to light a candle for him at St. Monica\'s. What was his name?
+rosa: I\'m going to light a candle for him at St. Monica\'s. What was his name?
 
 sam: Teddy.
 
-ROSA: Teddy.
+rosa: Teddy.
 
 She holds on through the whole rest of *Jeopardy*. When she does let go, she wipes her eyes with the back of her wrist, and looks at the white in your hair, and doesn\'t say anything about it. Yet.` : `sam: No, Ma.
 
@@ -439,17 +442,17 @@ You dry the glass. You put it away.
 
 She looks at you. She looks at the white in your hair.
 
-ROSA: Okay.
+rosa: Okay.
 
 She turns the water back on. She washes the pot. She doesn\'t say anything else.
 
 On your way out, Nonna catches your wrist at the door with her small dry hand.
 
-NONNA: Stunad. Your mother is a DiNardo, Salvatò. She knows when the clocks stop. She has always known. You think you can lie to a woman who knew you were coming before you left the train?
+nonna: Stunad. Your mother is a DiNardo, Salvatò. She knows when the clocks stop. She has always known. You think you can lie to a woman who knew you were coming before you left the train?
 
 She lets go.
 
-NONNA: Soon. Soon she asks you a question you can\'t answer with *no*. Be ready.`}`,
+nonna: Soon. Soon she asks you a question you can\'t answer with *no*. Be ready.`}`,
       next: '@hub'
     }
   }

@@ -25331,7 +25331,7 @@ BRUNO: We\'ll talk. Eat your sfogliatella.
 
 The nurse calls her name. Halina stands up. She doesn\'t touch the coffee.
 
-When she\'s gone, Bruno sits by the window alone and eats his pastry and watches a barge go down the Delaware, very slowly, toward the Navy Yard.`,
+When she\'s gone, Bruno sits by the window alone and eats his pastry and watches a barge go down the Delaware toward the Navy Yard, taking its time.`,
       next: 'titles'
     },
 
@@ -25382,11 +25382,11 @@ In the morning, she\'s already gone. She left a note on your desk in her precise
 
 She\'s been doing that for two weeks. Holding her breath through everything. Every quiz, every crosswalk, every coin flip. Losing on purpose. ${g.hv('jules_debt') >= 5 ? 'She had a nosebleed in the lounge on Thursday, and another one in the dining hall on Saturday, and she says it\'s the dry air.' : 'She says it\'s getting easier.'}
 
-It isn\'t getting easier. You can see it in her shoulders. It\'s like watching somebody hold a door shut against the wind.
+It isn\'t getting easier. You can see it in her shoulders.
 
 It\'s Valentine\'s week. The ninth floor has hung a single pink paper heart on the lounge door, and somebody has already written *GRIEF IS A SOCIAL CONSTRUCT* on it in Sharpie. You suspect Devontae.
 
-You have three days before anything else happens. You can feel it coming the way you feel 11:51. Something is coming.`,
+You have three days before anything else happens. You can feel it coming, the way you feel 11:51.`,
       hub: {
         slots: 2, label: 'Valentine\'s week',
         blurb: 'Two things before Wednesday.',
@@ -25402,8 +25402,9 @@ You have three days before anything else happens. You can feel it coming the way
 
     a1_nik: {
       loc: 'PALEY LIBRARY · 3RD FLOOR',
+      clock: { day: 'Mon', date: 'Feb 8', time: '4:15 PM' },
       enter: g => { g.know('man_across_street', ['nik']); g.know('nik_frame', ['sam', 'nik'], 'Nik saved the Navy Yard camera feed from 00:51:04. In one frame, across the dry dock, a gray-haired man with his left hand raised. He\'s in no other frame.'); g.bond('nik', { trust: 1, affection: 1 }); g.hidden('revenant_drift', -0.5); },
-      text: g => `He\'s on the third floor of Paley, at a carrel in the back, in the same hoodie he wore to the funeral. He has his laptop open and his headphones on and four empty cans of Celsius lined up on the desk like soldiers.
+      text: g => `He\'s on the third floor of Paley, at a carrel in the back, in the same hoodie he wore to the funeral. He has his laptop open and his headphones on and four empty cans of Celsius lined up on the desk.
 
 He doesn\'t hear you come up. On his screen: grainy black and white. A camera on a light pole. The dry dock.
 
@@ -25437,7 +25438,7 @@ He zooms in. It goes to mush. A smear of gray. But the hand, raised, the fingers
 
 nik: Who is he.
 
-You look at the frame for a long time.
+You look at the frame. Nik looks at you looking at it.
 
 You tell him. The man across Broad Street in the rain. The one with your face. The finger to his lips.
 
@@ -25445,7 +25446,7 @@ Nik listens to the whole thing with his hands over his mouth.
 
 nik: Okay. Okay. So, I want to say something, and I want you to know I\'m saying it as your friend and as a man who has seen every episode of *Doctor Who* including the bad years.
 
-nik: That\'s you, bro.
+nik: That\'s you, Salvatore.
 
 sam: You don\'t know that.
 
@@ -25457,9 +25458,9 @@ nik: And he was there. When Teddy fell. He was *there*.
 
 sam: Yeah.
 
-nik: Then it wasn\'t her. Bro, you have to tell Jules. It wasn\'t *her*.
+nik: Then it wasn\'t ice. It wasn\'t *nobody*. Bro. Jules was right there. You have to tell Jules.
 
-sam: I did. I told her I saw someone. She said that\'s worse. She said now she doesn\'t even get to know.
+sam: ${g.knows('revenant_push', 'jules') ? 'I did. I told her everything I saw. She said that\'s worse. She said a stranger she could have hated.' : g.knows('revenant_glimpse5', 'jules') ? 'I did. I told her I saw someone. She said that\'s worse. She said now she doesn\'t even get to know.' : 'Not yet. If I tell her I saw someone, she gets a ghost instead of a sum. I think that\'s worse.'}
 
 Nik thinks about that.
 
@@ -25475,6 +25476,7 @@ sam: Come home, Nik.`,
 
     a1_bree: {
       loc: 'EDGEMONT STREET · PORT RICHMOND',
+      clock: { day: 'Mon', date: 'Feb 8', time: '6:40 PM' },
       enter: g => { g.know('bruno_jefferson', ['sam', 'bree'], 'Bree: Bruno Iannucci sat with Halina at Jefferson and told her he knows her surgeon. "Five years on the list. I don\'t want you to wait five years." He asked about Bree\'s voice.'); g.bond('bree', { trust: 2, affection: 1 }); },
       text: g => `The plaster Virgin Mary in the front yard has a new scarf. Black. Somebody knitted it this week.
 
@@ -25493,6 +25495,12 @@ bree: People still text him. Did you know that? Guys from Bruno\'s. *T where u a
 She sits down across from you.
 
 bree: I keep it charged. I don\'t know why. I think if it dies, he\'s more dead.
+
+bree: Somebody calls it. Every night. Three, three-thirty. It rings on the doily and I let it go to him. *It\'s Teddy. Leave it.*
+
+She looks at you.
+
+bree: I figured it was you. Nobody else is up.
 
 Her voice is her own. Hoarse still, a little, like she\'s getting over a cold. She hasn\'t used anybody else\'s since the dry dock. You notice. She sees you notice.
 
@@ -25550,6 +25558,7 @@ bree: Yeah. That\'s what I thought.`,
 
     a1_simone: {
       loc: 'CARDONE HALL · 9-04',
+      clock: { day: 'Wed', date: 'Feb 10', time: '12:30 AM' },
       text: `Simone\'s door is open. It\'s always open. She\'s on her bed in a sea of sequins and sheet music, with a highlighter in her mouth.
 
 *Mummers: The Musical* opens in five weeks. She has eleven songs to learn and has described every one of them to the whole floor as *a crime against the Commonwealth of Pennsylvania*.
@@ -25568,13 +25577,13 @@ simone: They\'re terrible. Sit down, Salvatore.
 
 You sit on the end of her bed. Sequins stick to your jeans.
 
-simone: Somebody died. Somebody I never heard of. And you came back that morning looking like you\'d been dug up, and Juliet came back looking like she\'d done the digging, and the two of you have been walking around this floor for two weeks like a pair of ghosts holding hands.
+simone: Somebody died. Somebody I never heard of. And you came back from that funeral looking like you\'d been dug up, and Juliet came back looking like she\'d done the digging, and the two of you have been walking around this floor for two weeks like a pair of ghosts holding hands.
 
 simone: I\'m not asking what happened. I learned. You won\'t tell me, and she\'ll lie beautifully, and I\'ll lie awake.
 
 She caps the highlighter.
 
-simone: I\'m asking who he was. That\'s all. Just tell me who he was. Somebody should know who he was who didn\'t know him.`,
+simone: I\'m asking who he was. That\'s all. Just tell me who he was. Somebody who didn\'t know him should know who he was.`,
       choices: [
         { text: 'Tell her who he was. Not what. Who. "His name was Teddy. He was twenty. He was from Port Richmond. He took care of his mother."', tag: 'Who he was',
           check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', label: 'Tell Simone who Teddy was', on: { strong: 'a1_simone_yes', weak: 'a1_simone_yes', miss: 'a1_simone_weak' } } },
@@ -25584,7 +25593,7 @@ simone: I\'m asking who he was. That\'s all. Just tell me who he was. Somebody s
     },
     a1_simone_yes: {
       enter: g => { g.flag('simone6', 'told'); g.flag('simone10', 'mended'); g.bond('simone', { trust: 3, respect: 2, affection: 1 }); g.hidden('revenant_drift', -0.5); g.know('teddy_simone', ['sam', 'simone'], 'You told Simone who Teddy Kowal was. Not what happened. Who he was.'); },
-      text: `sam: His name was Teddy. Teddy Kowal. He was twenty. He was from Port Richmond. His mother\'s on dialysis, and he drove her to Jefferson at seven in the morning because he liked the drive. He didn\'t talk. He said *listen* before everything, like you weren\'t going to, and then he\'d say the smartest thing anybody said all day.
+      text: `sam: His name was Teddy. Teddy Kowal. He was twenty. He was from Port Richmond. His mother\'s on dialysis, and he drove her to every appointment and never once let her take the bus. He didn\'t talk. He said *listen* before everything, like you weren\'t going to, and then he\'d say the smartest thing anybody said all day.
 
 You stop. Then you don\'t.
 
@@ -25627,7 +25636,7 @@ She goes back to her sheet music. But she doesn\'t tell you to leave, so you don
     a1_simone_cant: {
       text: `sam: I can\'t, Simone.
 
-She looks at you for a long time. Then she nods.
+She looks at you. Then she nods.
 
 simone: Okay.
 
@@ -25645,31 +25654,31 @@ She goes back to her sheet music. You go.`,
       enter: g => { g.bond('rosa', { affection: 2 }); g.hidden('revenant_drift', -0.5); },
       text: g => `Tuesday is meatball night. Tuesday has always been meatball night.
 
-Ma opens the door before you get to it, the way she always does, the way Nonna does, the DiNardo way, *I knew you\'d come.* She takes your face in both hands and looks at it, hard, the way she looks at a kid in her nurse\'s office who says he fell off the monkey bars.
+Ma opens the door before you get to it. DiNardo timing. *I knew you\'d come.* She takes your face in both hands and looks at it, hard, the way she looks at a kid in her nurse\'s office who says he fell off the monkey bars.
 
-ROSA: You\'re not sleeping.
+rosa: You\'re not sleeping.
 
 sam: I\'m sleeping.
 
-ROSA: You\'re not *eating*.
+rosa: You\'re not *eating*.
 
 sam: I\'m here, aren\'t I?
 
 She lets go of your face and swats you on the back of the head, lightly, and lets you in.
 
-Dinner. Gigi talks for forty minutes about a girl in her class named Ava who is *literally the worst person alive*. Pop eats in silence and then, without looking up, puts the last meatball on your plate. Nonna watches you from the end of the table over her glasses and doesn\'t say anything, which is louder than anything she could say.
+Dinner. Gigi talks for forty minutes about a girl in her class named Ava who is *literally the worst person alive*. Pop eats in silence and then, without looking up, puts the last meatball on your plate. Nonna watches you over her glasses from the end of the table and doesn\'t eat.
 
 After, Ma washes and you dry, the way it\'s been since you were eight.
 
-ROSA: There was a boy who died at the Navy Yard. It was in the Daily News. Port Richmond boy. Twenty years old. Fell in the dry dock.
+rosa: There was a boy who died at the Navy Yard. It was in the Daily News. Port Richmond boy. Twenty years old. Fell in the dry dock.
 
-You dry a plate. You dry it for a long time.
+You dry a plate. You keep drying it.
 
-ROSA: I saw your face when Mikey said it at Sunday dinner. You didn\'t come to Sunday dinner. Mikey came. Mikey said it, and then he looked at his plate, and he didn\'t look up again.
+rosa: Mikey said it at Sunday dinner. You weren\'t at Sunday dinner. Mikey said it, and then he looked at his plate, and he didn\'t look up again. That\'s how I knew.
 
 She hands you a glass.
 
-ROSA: Salvatore. Did you know that boy?
+rosa: Salvatore. Did you know that boy?
 
 The water running. Nonna in the next room with the TV on, *Jeopardy*, too loud. The window over the sink, black, with your face in it and your mother\'s face beside it.
 
@@ -25687,33 +25696,33 @@ You have white in your hair. She\'s been looking at it all night.`,
 
 She doesn\'t ask anything else. She turns the water off. She dries her hands on the dish towel over her shoulder, and she puts her arms around you, standing at the sink, the way she hasn\'t since you were maybe twelve, and holds on.
 
-ROSA: Okay. Okay.
+rosa: Okay. Okay.
 
 She\'s shaking. A little.
 
-ROSA: I\'m going to light a candle for him at St. Monica\'s. What was his name?
+rosa: I\'m going to light a candle for him at St. Monica\'s. What was his name?
 
 sam: Teddy.
 
-ROSA: Teddy.
+rosa: Teddy.
 
-She doesn\'t let go for a long time. When she does, she wipes her eyes with the back of her wrist, and looks at the white in your hair, and doesn\'t say anything about it. Yet.` : `sam: No, Ma.
+She holds on through the whole rest of *Jeopardy*. When she does let go, she wipes her eyes with the back of her wrist, and looks at the white in your hair, and doesn\'t say anything about it. Yet.` : `sam: No, Ma.
 
 You dry the glass. You put it away.
 
 She looks at you. She looks at the white in your hair.
 
-ROSA: Okay.
+rosa: Okay.
 
 She turns the water back on. She washes the pot. She doesn\'t say anything else.
 
 On your way out, Nonna catches your wrist at the door with her small dry hand.
 
-NONNA: Your mother is a DiNardo, Salvatò. She knows when the clocks stop. She has always known. You think you can lie to a woman who knew you were coming before you left the train?
+nonna: Stunad. Your mother is a DiNardo, Salvatò. She knows when the clocks stop. She has always known. You think you can lie to a woman who knew you were coming before you left the train?
 
 She lets go.
 
-NONNA: Soon. Soon she asks you a question you can\'t answer with *no*. Be ready.`}`,
+nonna: Soon. Soon she asks you a question you can\'t answer with *no*. Be ready.`}`,
       next: '@hub'
     }
   }
@@ -25752,13 +25761,13 @@ BRUNO: How many floors.
 
 sam: Mr. Iannucci—
 
-BRUNO: How many floors, how many stairs, how many doors. Where they keep the beds. Who sits in the room with the glass. You were *in* there, Sam. I\'ve had men watching that building for a week, and all they can tell me is the lights go on at night.
+BRUNO: How many floors, how many stairs, how many doors. Where they keep the beds. Who sits up there at night. You were *in* there, Sam. I\'ve had men watching that building for a week, and all they can tell me is the lights go on at night.
 
 He takes a pizzelle and breaks it carefully in half.
 
 BRUNO: This is a job. I want to be clear. It counts. It\'s worth more than an envelope or a fish man on Washington Avenue. ${g.f('bruno_jobs_total') ? 'You\'re at ' + (g.f('bruno_jobs_done') || 0) + ' of ' + g.f('bruno_jobs_total') + '. This makes it ' + ((g.f('bruno_jobs_done') || 0) + 1) + '.' : ''}
 
-You think about twenty-two people in beds on a floor that isn\'t on the drawings. The girl with the rabbit. The old woman, ES-03, who held your hand. *Not tonight, sweetheart.*
+You think about twenty-one people in beds on a floor that isn\'t on the drawings. The girl with the rabbit. The old woman, ES-03, who held your hand. *Not tonight, sweetheart.*
 
 You think about what Bruno\'s men do when they go into a building.
 
@@ -25766,7 +25775,7 @@ Dante is leaning in the doorway, watching you, smiling a little.`,
     choices: [
       { text: 'Tell him. All of it. Eight floors, two stairs, the glass room, the beds. Halcyon killed Teddy. Let Bruno do what Bruno does.', tag: 'Tell him',
         fx: g => { g.flag('building6', 'true'); g.flag('bruno_jobs_done', (g.f('bruno_jobs_done') || 0) + 1); g.bond('vinnie', { tension: 1 }); g.hidden('revenant_drift', 1); g.hidden('halcyon_heat', 1); g.know('bruno_b7', ['sam', 'bruno', 'dante'], 'You gave Bruno Iannucci the layout of Building 7: the eighth floor, both stairs, the glass room, the ward.'); }, go: 'a2_true' },
-      { text: 'Refuse. "There are twenty-two people asleep on that floor. I\'m not drawing you a map to them."', tag: 'Refuse',
+      { text: 'Refuse. "There are twenty-one people asleep on that floor. I\'m not drawing you a map to them."', tag: 'Refuse',
         fx: g => { g.flag('building6', 'refuse'); g.hidden('revenant_drift', -1); }, go: 'a2_refuse' },
       { text: 'Give him a building. Not that one. Seven floors, one stair, no glass room, no beds. Lie to Bruno Iannucci\'s face.', tag: 'A false map',
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Bruno', on: { strong: 'a2_false', weak: 'a2_false_weak', miss: 'a2_false_weak' } },
@@ -25796,17 +25805,18 @@ BRUNO: The people in the beds. I know what you\'re thinking. I\'m not an animal,
 
 He says it like he means it. Maybe he does.
 
-BRUNO: Thank you. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') || 8}. Look at you. Halfway home.`,
+BRUNO: Thank you. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') || 8}. Look at you.`,
     next: 'a2_car'
   },
 
   a2_refuse: {
     loc: 'CIRCOLO SANT\'AGATA · EAST PASSYUNK',
-    text: `sam: There are twenty-two people asleep on that floor. Old people. A kid younger than my sister, with a stuffed rabbit. I\'m not drawing you a map to them.
+    enter: g => { g.know('assunta_bruno', ['sam'], 'In January 1964, Assunta DiNardo pulled six-year-old Bruno Iannucci out of the Schuylkill ice. He told you at the Circolo.'); },
+    text: `sam: There are twenty-one people asleep on that floor. Old people. A kid younger than my sister, with a stuffed rabbit. I\'m not drawing you a map to them.
 
 The back room goes very quiet. In the front room, somebody lays down a card and doesn\'t say anything about it.
 
-Bruno looks at you for a long time over his espresso.
+Bruno looks at you over his espresso. He takes his time.
 
 BRUNO: You think I would hurt a child.
 
@@ -25833,21 +25843,21 @@ BRUNO: Go home. Study. You look tired.`,
     enter: g => { g.flag('false6', 'clean'); g.flag('bruno_jobs_done', (g.f('bruno_jobs_done') || 0) + 1); },
     text: g => `You give him a building.
 
-Seven floors. One stair, the east one. Offices on two through six, a lab on seven with locked doors and a turkey dinner in a room that hasn\'t been cleaned since November. No eighth floor. No beds. The glass room becomes a supply closet. The twenty-two people asleep on the floor that isn\'t on the drawings become nothing at all.
+Seven floors. One stair, the east one. Offices on two through six, a lab on seven with locked doors and a turkey dinner in a room that hasn\'t been cleaned since November. No eighth floor. No beds. The glass room becomes a supply closet. The twenty-one people asleep on the floor that isn\'t on the drawings become nothing at all.
 
-You say it the way you say *I fell asleep in the lounge* to your mother. You don\'t touch your ear. You keep your hands flat on the oilcloth.
+You say it the way you say *I fell asleep in the lounge* to your mother. You keep your hands flat on the oilcloth, where you can see them.
 
 Bruno listens. He nods.
 
 BRUNO: A turkey. Since November.
 
-sam: Thanksgiving. It had a card on it.
+sam: Thanksgiving. Under a silver dome.
 
 BRUNO: Mm. These people. They have no respect for food.
 
 He believes you. You think he believes you. He pushes the pizzelles toward you, and this time you eat one, because a man who\'s lying doesn\'t eat.
 
-BRUNO: Good boy. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') || 8}. Halfway home.`,
+BRUNO: Good boy. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') || 8}.`,
     next: 'a2_car'
   },
 
@@ -25858,7 +25868,7 @@ BRUNO: Good boy. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') || 
 
 Seven floors. One stair. Offices. A lab on seven. A turkey. No eighth floor. No beds.
 
-You\'re good at it. You\'ve been lying to your mother since August. But halfway through, you hear yourself say *one stair*, and you remember that you told him, a minute ago, *we came out the back*.
+You\'re good at it. You\'ve been lying to your mother since August. But halfway through, you hear yourself say *one stair*, and you remember that he said it himself, a minute ago, and you let it stand: *you came out the back*.
 
 Bruno heard it too. You see him hear it. He doesn\'t say anything.
 
@@ -25893,7 +25903,7 @@ DANTE: The blonde.
 
 sam: What?
 
-DANTE: At the funeral. Across the street. Allegheny Avenue. Long coat, no hat, stood there the whole mass like a statue. Never came in. Never came closer. Grandpa noticed her. Grandpa notices everything.
+${g.f('jules_blames5') ? 'DANTE: At the funeral. Across the street. Allegheny Avenue. Long coat, no hat, stood there the whole mass like a statue. Never came in. Never came closer. Grandpa noticed her. Grandpa notices everything.' : 'DANTE: At the funeral. Back pew, next to you. Long coat. Holding your hand under the hymnal like nobody could see. Grandpa could see. Grandpa sees everything.'}
 
 He looks up from his phone.
 
@@ -25905,11 +25915,11 @@ DANTE: Who is she?`,
     choices: [
       { text: '"My girlfriend." It\'s true. Say it like it\'s nothing.', tag: 'My girlfriend',
         fx: g => { g.flag('jules6', 'girlfriend'); g.know('dante_jules', ['sam', 'dante', 'vinnie'], 'You told Dante Iannucci the blonde across the street at Teddy\'s funeral was your girlfriend. He said: "Bring her to Sunday dinner at Grandpa\'s. In March."'); }, go: 'a2_car_gf' },
-      { text: '"No idea. I didn\'t see anybody." Let Vinnie back you up.', tag: 'Nobody',
+      { text: '"No idea. I didn\'t see anybody." Let Vinnie back you up.', tag: 'Nobody', if: g => g.f('jules_blames5'),
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Dante', on: { strong: 'a2_car_nobody', weak: 'a2_car_nobody', miss: 'a2_car_nobody_bad' } },
         fx: g => { g.flag('jules6', 'nobody'); } },
-      { text: '"A reporter. From the Inquirer. She\'s been following me around." Give him somebody he already hates.', tag: 'A reporter',
-        fx: g => { g.flag('jules6', 'reporter'); g.hidden('revenant_drift', 1); g.know('dante_dana', ['sam', 'dante'], 'You told Dante Iannucci the woman across the street at Teddy\'s funeral was a reporter from the Inquirer. He said: "Fiorillo."'); }, go: 'a2_car_reporter' }
+      { text: '"A reporter. From the Inquirer. She\'s been following me around." Give him somebody he already hates.', tag: 'A reporter', if: g => g.f('jules_blames5'),
+        fx: g => { g.flag('jules6', 'reporter'); g.hidden('revenant_drift', 1); g.know('dante_dana', ['sam', 'dante', 'vinnie'], 'You told Dante Iannucci the woman across the street at Teddy\'s funeral was a reporter from the Inquirer. He said: "Fiorillo."'); }, go: 'a2_car_reporter' }
     ]
   },
 
@@ -26023,9 +26033,9 @@ vinnie: Two seconds. I said I needed smokes.
 
 He doesn\'t smoke. He\'s never smoked. He stands in front of you with his back to the Escalade.
 
-vinnie: Sally. Listen to me. ${g.f('jules6') === 'reporter' ? 'That was the dumbest thing I ever heard you say, and I was there for eighth grade. You just put a lady on Dante\'s phone. You know what Dante\'s phone is? It\'s a list.' : g.f('jules6') === 'girlfriend' ? 'Don\'t bring her. In March. Don\'t bring her anywhere near Passyunk. You hear me?' : 'I covered for you. I\'ll always cover for you. But you gotta stop giving him reasons to look.'}
+vinnie: Yo. Sally. Listen to me. ${g.f('jules6') === 'reporter' ? 'That was the dumbest shit I ever heard you say, and I was there for eighth grade. You just put a lady on Dante\'s phone. You know what Dante\'s phone is? It\'s a list.' : g.f('jules6') === 'girlfriend' ? 'Don\'t bring her. In March. Don\'t bring her anywhere near Passyunk. You hear me?' : 'I covered for you. I\'ll always cover for you. But you gotta stop giving him reasons to look.'}
 
-vinnie: I seen how Grandpa looks at things he wants, college. He looked at Teddy like that. At Thanksgiving, he came out of your house and got in the car and said *that boy*, like that. And at the funeral, out the window of the church, I watched him look across the street at that girl like that, for a whole mass.
+vinnie: I seen how Grandpa looks at things he wants, college. He looked at Teddy like that. At Thanksgiving, he came out of your house and got in the car and said *that boy*, like that. And at the funeral, I watched him look at that girl like that, for a whole mass.
 
 He glances back at the Escalade. The light is green. Dante leans on the horn, once.
 
@@ -26041,7 +26051,7 @@ sam: Thanks.
 
 vinnie: Yeah, yeah. You owe me a cheesesteak. Not Pat\'s. Not Geno\'s. *Real* one.
 
-He jogs back to the Escalade. It goes. You stand on the corner and watch it go up Broad, toward nothing, toward Cardone Hall, where a girl in a camel coat has spent all week with no luck, losing on purpose.`,
+He jogs back to the Escalade. It goes. You stand on the corner and watch it go up Broad. Then you turn around and walk the half block to Cardone Hall, where a girl in a camel coat has spent all week with no luck, losing on purpose.`,
     next: 'a3_quiz'
   }
 });
@@ -26060,7 +26070,7 @@ EH.scenes('s02e06', {
 
 Jules is sitting at the big table with a sheet of paper in front of her, face down, and both hands flat on top of it like it might get up and leave.
 
-jules: Monday\'s quiz. Orgo. Dr. Okafor hands them back face down. He thinks it\'s kind.
+jules: Monday\'s quiz. Orgo. Dr. Adeyemi hands them back face down. He thinks it\'s kind.
 
 sam: And?
 
@@ -26114,7 +26124,11 @@ jules: I have never fallen down, Sam. Not once. Not off a bike, not on ice, not 
 
 sam: Penn\'s Landing. The rink. They have skates. Everybody falls down at the rink. It\'s, like, the whole point of the rink.
 
-She looks at you like you\'ve just offered her the moon.
+jules: Everybody falls down.
+
+sam: Everybody.
+
+jules: *(very quietly)* That\'s the nicest thing anyone\'s ever said to me.
 
 jules: Eight o\'clock. Don\'t be late. I won\'t be lucky.`,
     next: 'a3_rink'
@@ -26156,7 +26170,7 @@ sam: You fell down.
 
 jules: *I fell down.*
 
-And she starts to laugh. Sitting on the ice. A kid in a Flyers jersey has to swerve around her. She doesn\'t care. She\'s laughing with her whole body, her head back, her hat falling off, steam coming out of her mouth.
+And she starts to laugh. Sitting on the ice. A kid in a Flyers jersey has to swerve around her. She doesn\'t care. She\'s laughing with her head back, her hat falling off, steam coming out of her mouth.
 
 You hold out your hand to pull her up.`,
     choices: [
@@ -26201,7 +26215,7 @@ She falls down twice more before they close the rink. Both times she lies on the
     enter: g => { g.flag('rink6', 'weak'); },
     text: `You pull her up. She grabs your coat with both mittens. You get about four feet.
 
-Then her left skate goes one way and your right skate goes the other, and you both go down in a pile, your elbow, her knee, a mitten in your mouth, at the exact moment a pack of eighth graders comes around the turn and has to part around you like water around a rock.
+Then her left skate goes one way and your right skate goes the other, and you both go down in a pile, your elbow, her knee, a mitten in your mouth, at the exact moment a pack of eighth graders comes around the turn and has to part around you.
 
 ONE OF THE EIGHTH GRADERS: *Get a room!*
 
@@ -26264,7 +26278,7 @@ You stand at the rail and hold her while she cries. The old couple waltzes past.
     night: true,
     loc: 'PENN\'S LANDING · THE RIVER',
     clock: { time: '11:40 PM' },
-    text: g => `After, you walk along the river. Past the Moshulu, the big old ship with the restaurant in it, all lit up. Past the Seaport Museum. To the end of the pier, where there\'s nothing but a railing and the black Delaware and Camden glittering on the other side.
+    text: g => `After, you walk along the river. Past the Seaport Museum. Past the Moshulu, the big old ship with the restaurant in it, all lit up. To the end of the pier, where there\'s nothing but a railing and the black Delaware and Camden glittering on the other side.
 
 She\'s holding your hand. Your cold hand in her warm one. She doesn\'t mention it anymore. Neither do you.
 
@@ -26294,7 +26308,7 @@ sam: That\'s not—
 
 jules: You don\'t know that. Neither do I. That\'s what\'s unbearable. Nobody knows.
 
-${g.knows('revenant_push', 'jules') ? 'She doesn\'t say *except you*. You both think it. The man on the lip of the dock, the two fingers. You told her. She knows it wasn\'t the house. She\'s afraid of something else now: that a man with your face would do that, for her.' : 'You think about the man across the water, under the dead spotlight, one hand raised, for one frame. You told her you saw him. You told her you don\'t know.'}
+${g.knows('revenant_push', 'jules') ? 'She doesn\'t say *except you*. You both think it. The man on the lip of the dock, the two fingers. You told her. She knows it wasn\'t the house. She\'s afraid of something else now: that a man with your face would do that, for her.' : g.knows('revenant_glimpse5', 'jules') ? 'You think about the man across the water, under the dead spotlight, one hand raised, for one frame. You told her you saw him. You told her you don\'t know.' : 'You think about the man with your face. You never told her about him. She\'s been carrying it as arithmetic for three weeks, because you let her.'}
 
 She\'s quiet for a while.
 
@@ -26306,9 +26320,9 @@ jules: I\'ve been thinking about it all week. Turning it around. *What if it was
 
 She looks out at Camden. At the bridge, blue.
 
-jules: What if it was you, Sam. The man. What if it\'s you, someday. Older. With nobody left.
+jules: What if it was you, Sam. The man. What if it\'s you, someday. Older.
 
-You don\'t say anything. You can feel the note in your wallet like it\'s hot. The index card. Her handwriting: *When I know, you\'ll be the first.* And under it, in yours, a hand you didn\'t write with:
+You don\'t say anything. You can feel the note in your wallet like it\'s hot. The index card. Her handwriting: *When I know, you\'ll be the first.* And under it, in yours, a line you never wrote:
 
 *Don\'t trust the lucky one.*
 
@@ -26317,9 +26331,9 @@ She told you hers. She gave you the last thing. It\'s your turn.
 It\'s 11:59.`,
     choices: [
       { text: 'Give her the card. The last thing. "He wrote this. In my handwriting. Before I ever knew what you were."', tag: 'The card',
-        fx: g => { g.flag('note6', 'told'); g.know('revenant_note', ['jules']); g.know('gran_sam', ['sam']); g.bond('jules', { trust: 2 }); g.hidden('revenant_drift', -1.5); g.hidden('jules_debt', -1); }, go: 'a3_card' },
+        fx: g => { g.flag('note6', 'told'); g.know('revenant_note', ['jules']); g.know('gran_sam', ['sam'], 'Gran: "Some families are lucky. Some are early. The early ones always go in for somebody else. Keep him close, child, and don\'t let the house collect from him."'); g.bond('jules', { trust: 2 }); g.hidden('revenant_drift', -1.5); g.hidden('jules_debt', -1); }, go: 'a3_card' },
       { text: 'Keep it. She just took a weight off her chest. Don\'t put a heavier one there tonight. Kiss her at midnight instead.', tag: 'Keep it',
-        fx: g => { g.flag('note6', 'kept'); g.know('gran_sam', ['sam']); g.hidden('revenant_drift', 0.5); }, go: 'a3_midnight' }
+        fx: g => { g.flag('note6', 'kept'); g.know('gran_sam', ['sam'], 'Gran: "Some families are lucky. Some are early. The early ones always go in for somebody else. Keep him close, child, and don\'t let the house collect from him."'); g.hidden('revenant_drift', 0.5); }, go: 'a3_midnight' }
     ]
   },
 
@@ -26328,7 +26342,7 @@ It\'s 11:59.`,
     clock: { day: 'Sun', date: 'Feb 14', time: '12:00 AM' },
     text: `You take out your wallet. You take out the index card. You hold it out to her.
 
-She knows it. Your pencil on the front, from the study night: *What did you mean?* Her own handwriting on the back: *When I know, you\'ll be the first.* Her face does something soft.
+She knows it. Your pencil on the front, from the study night: *What did you mean?* Her own handwriting on the back: *When I know, you\'ll be the first.* She almost laughs. She remembers writing it.
 
 Then she sees the third line.
 
@@ -26346,7 +26360,7 @@ jules: He doesn\'t trust me.
 
 She says it slowly, working it out.
 
-jules: He watched Teddy fall. Or he did it. And then he goes and sits by girls\' beds and cries. And he doesn\'t trust me.
+jules: He watched Teddy fall. Or he did it. And then he goes and sits by people\'s beds and cries. And he doesn\'t trust me.
 
 She laughs. It\'s not a happy laugh. It\'s not an unhappy one either. It\'s the sound of somebody who has just been handed the last piece of a puzzle, and found that it\'s a different puzzle.
 
@@ -26354,13 +26368,13 @@ jules: Do you?
 
 sam: Yeah.
 
-She looks at you for a long time in the light of somebody\'s backyard fireworks.
+She looks at you in the light of somebody\'s backyard fireworks. Pink. White. Pink.
 
 jules: You\'re not touching your ear.
 
 sam: I know.
 
-She folds the card in half. She doesn\'t give it back. She puts it in the inside pocket of her camel coat, next to her heart, and buttons it.
+She folds the card in half. She doesn\'t give it back. She puts it in the inside pocket of her camel coat and buttons it.
 
 jules: Then he\'s wrong about something. Good. I\'ve been waiting three weeks for somebody to be wrong about something.
 
@@ -26413,7 +26427,7 @@ jules: Sam.
 
 sam: Yeah.
 
-jules: I\'ve been sleeping in your bed for three weeks. In the dark. With my shoes on, half the time. And you haven\'t once—
+jules: I\'ve been sleeping in your bed for three weeks. In the dark. On top of the covers, half the time, like a guest. And you haven\'t once—
 
 She stops. She starts again. She\'s blushing, and she\'s furious about blushing, and she doesn\'t look away.
 
@@ -26421,7 +26435,7 @@ jules: I want you to come in. Not to sleep. I want—
 
 She stops again.
 
-jules: I\'m very bad at this. I\'ve never been bad at anything. I\'ve never had to *ask*. Things just went my way.
+jules: I\'m very bad at this. I\'ve been bad at things all week. I got a seventy-one. I fell down in front of half of Philadelphia. This is worse. I\'ve never had to *ask*. Things just went my way.
 
 jules: I\'m asking.`,
     choices: [
@@ -26438,7 +26452,7 @@ jules: I\'m asking.`,
     enter: g => { g.know('first_night', ['sam', 'jules'], 'Valentine\'s Day, 2027, in 9-04, after the rink. The first time.'); },
     text: `She lets you in.
 
-Her side of the room is exactly what you\'d think. Books in order by height. A desk with nothing on it. The camel coat on a wooden hanger on the back of the closet door, buttoned, with an index card in its inside pocket or without one. Simone\'s side looks like a costume shop exploded in it, sequins on everything, a feather boa on the lamp.
+Her side of the room is exactly what you\'d think. Books in order by height. A desk with nothing on it. The camel coat on a wooden hanger on the back of the closet door, buttoned to the collar, even on a hanger. Simone\'s side looks like a costume shop exploded in it, sequins on everything, a feather boa on the lamp.
 
 Jules turns off the lamp. Then she stops with her hand on it.
 
@@ -26448,9 +26462,15 @@ sam: It\'s your dark. I just live here.
 
 She laughs. Her hand is shaking a little. So is yours.
 
-It isn\'t like a movie. Nobody in movies has a zipper stick on a ski jacket, or bangs a knee on a bed frame and swears, or stops in the middle of a kiss to say, very seriously, *Wait, are you sure*, and then *Yes*, and then *Are YOU sure*, and then laughs so hard the bed shakes.
+Your jacket zipper sticks. She fixes it, frowning, with both hands. Then she starts on the rest of you with exactly the same frown. You bang your knee on the bed frame and say a word you don\'t say in front of Nonna. She stops in the middle of a kiss to say, very seriously, *Wait. Are you sure?* You say *Yes.* She says *Good.* You say *Are YOU sure?* and she laughs so hard the bed knocks the wall, and somebody in 9-06 knocks back.
 
 Her hands are warm. Yours are cold. Every time you touch her she flinches and laughs and says *Kearney, your hands*, and then pulls them back to her, and holds them there, on her skin, until they\'re not cold anymore. It takes a while. She doesn\'t mind the while.
+
+There\'s a bruise coming up on her hip from the ice, the size of a plum. She takes your hand and puts it there. *Feel that,* she says. *That\'s mine.* The first one she\'s ever had. You\'re careful of it. She tells you not to be.
+
+She finds the white at your temple by touch, in the dark, and doesn\'t ask about it. She just keeps her hand there.
+
+You run out of jokes somewhere around then. You don\'t miss them.
 
 At some point, in the dark, she goes very still.
 
@@ -26476,9 +26496,9 @@ sam: Okay.
 
 jules: *Sam*. It\'s just *us*.
 
-And it is.
+And it is. It\'s clumsy, and then it isn\'t. It\'s slow, because she wants to know what everything is and says so, precisely, out loud, and then it isn\'t slow at all, and neither of you is saying anything precise.
 
-After, she lies with her head on your chest, in the dark, in a narrow dorm bed built for one person, with Simone\'s feather boa throwing faint shadows from the window, and traces something on your ribs with one finger. Letters. You can\'t tell what.
+After, she lies with her head on your chest, in the dark, in a narrow dorm bed built for one person, with Simone\'s feather boa throwing faint shadows from the window, and taps on your ribs with one finger. Slow. It takes you a while to understand she\'s counting. She gets to ninety. She stops. Nothing lets go. She doesn\'t seem to mind.
 
 jules: Your heart is very slow.
 
@@ -26497,15 +26517,15 @@ You lie there and listen to her breathe, and for the first time since the bottom
     loc: 'CARDONE HALL · 9-04',
     text: `sam: Not tonight.
 
-Her face starts to close, fast, the way a door closes, and you catch it before it does.
+Her face starts to close. You catch it before it does.
 
 sam: Not because I don\'t want to. God. Jules. Look at me. I want to so bad I can\'t see straight.
 
 She looks at you.
 
-sam: It\'s just—three weeks ago we were on the bottom of a dry dock. And tonight\'s the first night since that\'s been just us. I don\'t want the first time to be the night after the first night we were okay. I want it to be a night that\'s only that. Nothing else in it. No Teddy. No him. Just—that.
+sam: It\'s just—three weeks ago we were at the bottom of a dry dock. Tonight\'s the first night since that\'s been just us. I don\'t want the first time to be the night we finally got okay. I want it to be its own night. Nothing else in it. No Teddy. No him. Just us.
 
-She thinks about it. Seriously, the way she thinks about everything.
+She considers it. You can watch her check the work.
 
 jules: That\'s very annoying.
 
@@ -26548,21 +26568,21 @@ TXT bree: her eval is moved. to APRIL. "scheduling conflict"
 TXT bree: then bruno called. 7:15. he said "its a shame about the schedule halina. these things can change"
 TXT bree: she hung up on him. she HUNG UP on bruno iannucci
 TXT bree: then she cried for an hour
-TXT bree: this is the third thing isnt it. this is what the third thing costs` : g.f('false6') === 'doubted' ? `TXT nik: bro. 6abc. "break-in at navy yard office building overnight, no injuries, halcyon dynamics declined to comment"
+${g.f('did_v6_bree') ? 'TXT bree: this is the third thing isnt it. this is what the third thing costs' : 'TXT bree: wawa what do i do'}` : g.f('false6') === 'doubted' ? `TXT nik: bro. 6abc. "break-in at navy yard office building overnight, no injuries, halcyon dynamics declined to comment"
 TXT nik: building 7
 TXT nik: BRO
 
 And under it, from a number you don\'t have saved:
 
-TXT 267-555-0143: grandpas guys went in last night
-TXT 267-555-0143: theres a second stair sam. and an 8th floor. no number on the door. beds all stripped. empty
-TXT 267-555-0143: grandpa says hes very interested in long hallways
-TXT 267-555-0143: sunday dinner. march. bring the blonde
-TXT 267-555-0143: — D` : `TXT nik: bro. 6abc. "break-in at navy yard office building overnight, no injuries, halcyon dynamics declined to comment"
+TXT Unknown number: grandpas guys went in last night
+TXT Unknown number: theres a second stair sam. and an 8th floor. no number on the door. beds all stripped. empty
+TXT Unknown number: grandpa says hes very interested in long hallways
+${g.f('jules6') === 'reporter' ? 'TXT Unknown number: tell fiorillo the blonde looks good on her' : 'TXT Unknown number: sunday dinner. march. bring the blonde'}
+TXT Unknown number: — D` : `TXT nik: bro. 6abc. "break-in at navy yard office building overnight, no injuries, halcyon dynamics declined to comment"
 TXT nik: building 7
 TXT nik: BRO
 
-${g.f('building6') === 'true' ? 'TXT 267-555-0143: grandpas guys went in last night. 8th floor. all the beds stripped. they moved everybody. grandpa says thanks anyway. it counts\nTXT 267-555-0143: — D' : 'TXT 267-555-0143: grandpas guys went in last night. offices. a lab. a turkey lol. you were right. grandpa says they must have moved the beds somewhere else\nTXT 267-555-0143: — D'}
+${g.f('building6') === 'true' ? 'TXT Unknown number: grandpas guys went in last night. 8th floor. all the beds stripped. they moved everybody. grandpa says thanks anyway. it counts\nTXT Unknown number: — D' : 'TXT Unknown number: grandpas guys went in last night. offices. a lab. a turkey lol. you were right. grandpa says they must have moved the beds somewhere else\nTXT Unknown number: — D'}
 
 And then, twenty minutes later, from Bree:
 
@@ -26572,11 +26592,11 @@ TXT bree: alive. his hair went white. all of it. overnight
 TXT bree: he doesnt know what day it is. he keeps asking what time it is. he keeps saying "eleven fifty one"
 TXT bree: halcyon answered`}
 
-${g.f('false6') === 'clean' ? 'You read Dante\'s text again. *Offices. A lab. A turkey.* They went in on your map. They walked right past a door with no number on it, and the twenty-two people behind it, because you told them there was no door.\n\nYou lied to Bruno Iannucci, and the lie held, and it might have saved twenty-two people. You don\'t know. You\'ll never know.' : ''}
+${g.f('false6') === 'clean' ? 'You read Dante\'s text again. *Offices. A lab. A turkey.* They went in on your map. They walked right past a door with no number on it, and the twenty-one people behind it, because you told them there was no door.\n\nYou lied to Bruno Iannucci, and the lie held, and it might have saved twenty-one people. You don\'t know. You\'ll never know.' : ''}
 
 You sit up.
 
-${g.f('first6') === 'yes' ? 'Jules opens her eyes. She sees your face. She doesn\'t ask if you\'re okay. She can see you\'re not.' : 'Down the hall, a door opens. Jules, in your Temple hoodie, the one she stole in January, with a coffee in each hand, because she always knows. She sees your face in the doorway and stops.'}
+${g.f('first6') === 'yes' ? 'Jules opens her eyes. She sees your face. She doesn\'t ask if you\'re okay. She can see you\'re not.' : 'Down the hall, a door opens. Jules, in your Temple hoodie, the one she stole in January, with a coffee in each hand. Yours is right. She asked you once, in September, and never asked again. She sees your face in the doorway and stops.'}
 
 jules: What happened.`,
     choices: [
@@ -26610,7 +26630,7 @@ jules: Get dressed.
 
 sam: Where are we going?
 
-jules: I don\'t know yet. Edgemont Street, probably. To sit with Bree. Or to Jefferson, to find out who Dr. Feingold is and what he\'s afraid of. Everyone\'s afraid of something. My father taught me that at dinner when I was seven.
+jules: I don\'t know yet. Edgemont Street, probably. To sit with Bree. ${g.f('building6') === 'refuse' ? 'Or to Jefferson, to find out who Dr. Feingold is and what he\'s afraid of.' : 'Or to find out who Sal Russo was, and who\'s waiting for him at home.'} Everyone\'s afraid of something. My father taught me that at dinner when I was seven.
 
 She looks at you.
 
@@ -26618,7 +26638,7 @@ jules: You thought I\'d want one more day. Didn\'t you. You were going to say *n
 
 sam: I thought about it.
 
-jules: I know. I could hear the shape of it.
+jules: I know. I watched you decide.
 
 She puts her hand on your face, warm, and holds it there.
 
@@ -26635,11 +26655,11 @@ You put the phone face down.
 
 She looks at it. Then at you. For a long moment, she doesn\'t say anything.
 
-jules: You touched your ear.
+jules: You didn\'t touch your ear.
 
-sam: I didn\'t.
+sam: See?
 
-jules: You thought about it. You always think about it.
+jules: You turned the phone over instead. That\'s new. I don\'t like that it\'s new.
 
 She ${g.f('first6') === 'yes' ? 'sits up, and pulls the sheet around her, and' : 'puts the coffees down on your desk, and'} looks at you with an expression you haven\'t seen on her since September. Not angry. Careful. Like she\'s standing at a card table, reading a hand.
 
@@ -26651,7 +26671,7 @@ jules: The man with your face doesn\'t tell anyone anything either.
 
 She kisses your forehead and goes to take a shower.
 
-You sit on the edge of the bed with your phone face down in your hand, and you think about that for a long time.`,
+You sit on the edge of the bed with your phone face down in your hand, and you don\'t turn it over.`,
     next: 'tag_wall'
   },
 
@@ -26668,7 +26688,7 @@ One wall is covered with photographs.
 
 Printouts, black and white and color, pinned in neat rows. Security stills. Traffic cameras. A doorbell camera. A dashcam. Each one with a white label in the corner, in Achterberg\'s small clean hand.
 
-*BROAD & SPRING GARDEN · AUG 22 · 11:51:06.* A man across the street in the rain. A finger to his lips.
+*N. BROAD & CECIL B. MOORE · AUG 25 · 01:40:22.* A man across the street in the rain, under a dead marquee. A finger to his lips.
 
 *MIFFLIN ST · DUSK.* A doorbell camera. A streetlight at the end of the block. A man under it.
 
@@ -26676,7 +26696,7 @@ Printouts, black and white and color, pinned in neat rows. Security stills. Traf
 
 *DRY DOCK · JAN 23 · 00:51:04.* A man across the water, one hand raised.
 
-Eleven photographs. Eleven places. The same long coat.
+Eleven photographs. Eleven places. The same man.
 
 Dr. Achterberg is standing in front of the wall with her glasses on her head and a phone at her ear.
 
@@ -26690,7 +26710,11 @@ ACHTERBERG: Each other. Everything. Seventeen and forty-four read their own file
 
 A pause.
 
-WHITNEY: *(on the phone)* Is that bad?
+WHITNEY: *(on the phone)* Is she happy?
+
+ACHTERBERG: Yes.
+
+WHITNEY: *(on the phone)* Then it isn\'t bad. Is it.
 
 ACHTERBERG: It\'s wonderful. A pair is so much more interesting than two singles. Everything she does now, she does near him. Everything he does, he does for her.
 
@@ -26698,9 +26722,7 @@ She hangs up without saying goodbye.
 
 Brannigan is at the end of the conference table with his tea, looking at the wall.
 
-BRANNIGAN: Sal Russo.
-
-ACHTERBERG: An Iannucci soldier was found on the bottom step of the dry dock with his hair gone white. That\'s a story about the Iannuccis. Let them tell it.
+${g.f('building6') !== 'refuse' ? 'BRANNIGAN: Sal Russo.\n\nACHTERBERG: An Iannucci soldier was found on the bottom step of the dry dock with his hair gone white. That\'s a story about the Iannuccis. Let them tell it.' : 'BRANNIGAN: Iannucci still has men on Building 7.\n\nACHTERBERG: Let them watch the lights.'}
 
 She turns back to the wall. To the eleven photographs.
 
@@ -26708,15 +26730,15 @@ ACHTERBERG: Every place seventeen has been, Cole. Every one. *He* was there firs
 
 BRANNIGAN: Or seventeen goes where he\'s been.
 
-Achterberg is quiet for a moment. She takes off her glasses and cleans them on her cardigan. Her hands are steady again.
+Achterberg is quiet for a moment. She takes off her glasses and cleans them on her cardigan.
 
 ACHTERBERG: Get me something with the boy\'s blood on it.
 
-BRANNIGAN: There\'s a handkerchief. White. Monogrammed. *J.L.P.* She gave it to him in August, the night of the light. He bled on it in October, in recitation. He carries it in his left back pocket.
+BRANNIGAN: There\'s a handkerchief. White. Monogrammed. *J.L.P.* He bled on it all fall. He gave it back to her at Thanksgiving, on the wall by the Water Works, under our ambulances. She\'s carried it ever since. Inside pocket. The camel coat.
 
 Achterberg puts her glasses back on.
 
-ACHTERBERG: Of course he does.`,
+ACHTERBERG: Of course she does.`,
     end: true
   }
 });
