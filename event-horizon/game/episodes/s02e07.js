@@ -46,7 +46,7 @@ ACHTERBERG: Is she? Your father tells me you\'ve been keeping score since you we
 
 Hugh doesn\'t say anything. He lines up a shot and misses it.
 
-ACHTERBERG: And then you watched her through the door. In the chapel. With your grandmother\'s die.
+ACHTERBERG: And then, the night after the chapel, you watched her through her bedroom door. With the dice.
 
 He straightens up.
 

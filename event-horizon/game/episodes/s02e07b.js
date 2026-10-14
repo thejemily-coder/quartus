@@ -241,7 +241,7 @@ jules: Friday. Nine o\'clock. Bustleton Avenue.
 
 You remember something. A seat. Row C, nine. Seven-thirty. Friday the twelfth.
 
-${g.f('simone7') === 'promised' ? '*Swear to me.*\n\nYou swore.' : g.f('simone7') === 'try' ? '*If you\'re not in it, I\'ll know something happened to you.*' : 'There\'s a ticket under your door you haven\'t looked at.'}
+${g.f('simone7') === 'promised' ? '*Swear to me.*\n\nYou swore.' : g.f('simone7') === 'try' ? '*If you\'re not in it, I\'ll know something happened to you.*' : 'There\'s a ticket under your door. You never went to find her about it. She put it there anyway.'}
 
 Friday is going to be a bad night to be one person.`,
     next: 'a3_friday'

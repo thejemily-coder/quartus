@@ -55,7 +55,7 @@ You go. You run. You get a cab on Broad.
 
 The second act starts without you. Row C, seat nine, empty, in the middle of the third row, where the whole cast can see it.
 
-${g.f('simone7') === 'promised' ? 'You swore. You swore to her, not to God. You\'re in a cab on the Boulevard, and that\'s the thing you can\'t stop hearing.' : 'You said you\'d try. You did. You\'re in a cab on the Boulevard, and it doesn\'t feel like trying.'}
+${g.f('simone7') === 'promised' ? 'You swore. You swore to her, not to God. You\'re in a cab on the Boulevard, and that\'s the thing you can\'t stop hearing.' : g.f('simone7') === 'try' ? 'You said you\'d try. You did. You\'re in a cab on the Boulevard, and it doesn\'t feel like trying.' : 'You never told her you\'d come. She left you the ticket anyway. You\'re in a cab on the Boulevard, and that\'s the thing you can\'t stop hearing.'}
 
 At 9:12, your phone buzzes.
 
@@ -82,7 +82,7 @@ jules: You came.
 
 sam: I said I would.
 
-jules: You said you\'d be at a musical, too. Simone told me. She tells me everything she\'s angry about. It\'s a long list.
+jules: ${g.f('simone7') ? 'You said you\'d be at a musical, too.' : 'Simone left you a ticket for her musical.'} Simone told me. She tells me everything she\'s angry about. It\'s a long list.
 
 She takes your hand. It\'s cold. Hers, for once.
 
@@ -162,7 +162,7 @@ On the wall behind you, an old Soviet clock with a red second hand, ticking towa
     choices: [
       { text: 'Nod. *Let it go your way.* End it. Free Pop, free Halina, free everybody.', tag: 'Let it go',
         fx: g => { g.flag('game7', 'luck'); g.hidden('jules_debt', 2); g.hidden('jules_open', 1); }, go: 'a3_luck' },
-      { text: 'Read Grisha for her. You\'ve been watching. Find his tell. Give it to her with your eyes. No luck. Just the two of you.', tag: 'Read him',
+      { text: 'Read Grisha for her. Find his tell. Give it to her with your eyes. No luck. Just the two of you.', tag: 'Read him',
         check: { kind: 'move', move: 'Read the Street', attr: 'wits', skill: 'streetwise', label: 'Read Grisha', noLuck: true,
           on: { strong: 'a3_win', weak: 'a3_split', miss: 'a3_loss' } },
         fx: g => { g.flag('game7', 'read'); g.hidden('jules_debt', -1); }, if: g => g.f('friday7') !== 'jules' },
@@ -253,7 +253,7 @@ jules: *(into your ear)* That was us. That was just us. Nobody paid.`,
 
   a3_split: {
     night: true,
-    enter: g => { g.flag('pop7', 'safe'); g.flag('split7'); g.flag('bruno_jobs_done', Math.min(g.f('bruno_jobs_total') || 8, (g.f('bruno_jobs_done') || 0) + 2)); g.hidden('revenant_drift', -0.5); },
+    enter: g => { g.flag('pop7', 'safe'); g.flag('split7'); g.flag('bruno_jobs_done', Math.min((g.f('bruno_jobs_total') || 8) - 1, (g.f('bruno_jobs_done') || 0) + 2)); g.hidden('revenant_drift', -0.5); },
     text: `You watch Grisha. His arms are crossed. He\'s leaning back.
 
 But his foot is going. Under the table. You can see it in the drape of his towel. Tapping.
@@ -303,7 +303,7 @@ jules: Call.
 
 The last card: the king of clubs.
 
-Grisha turns over the other king. Full house. Kings full of nines.
+Grisha turns over a king. Full house. Kings full of nines.
 
 He wasn\'t bluffing. He was *comfortable*.
 

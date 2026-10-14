@@ -224,7 +224,7 @@ Object.assign(EH.episodes.s02e07, {
   onEnd: g => {
     g.recap('Hugh came to Cardone Hall with Callum. He used the bathroom in 9-04.');
     g.recap('Jules played cards for Bruno Iannucci. For Pier 53.');
-    if (g.f('paid7')) g.recap('Pop\'s debt to the Iannuccis is paid. "Your paper\'s clean, Frank."');
+    if (g.f('paid7')) g.recap(g.f('pop7') === 'crash' ? 'Jules won Pier 53 for Bruno. Pop\'s paper is clean.' : 'Pop\'s debt to the Iannuccis is paid. "Your paper\'s clean, Frank."');
     else if (g.f('split7')) g.recap('A split pot. Pop\'s debt is half paid. Bruno wants to see her play again.');
     if (g.f('pop7') === 'crash') g.recap('At 9:51, a box truck hit Pop\'s cab in front of Pier 53. Jules felt it go.');
     else if (g.f('pop7') === 'beaten') g.recap('Somebody paid for the pier. Bruno\'s men broke Pop\'s driving hand.');
