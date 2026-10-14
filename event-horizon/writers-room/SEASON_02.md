@@ -208,3 +208,28 @@ Write each episode to the save. The plan bends; the save doesn't.
     - Rosa and Nonna use lowercase speaker ids.
     - The orgo professor is renamed Adeyemi.
     - Going into E7: `revenant_drift` >= 10, so every Slip Unsticks (the watch is held). Rosa heat is 9 if Sam visited.
+- **S2E7 "Bad Timing"** (Feb 27 – Mar 13) was written for this playthrough's S2E6 save (true map, "girlfriend", card given, first night).
+  - **Cold open:** Achterberg recruits **Hugh** at Ravenscourt (Whitney leaves them alone): "Bring me the handkerchief, and I'll show you." This seeds Hugh's S3 Halcyon turn.
+  - **Act One "March":** Dante's text invites Jules to Sunday dinner at 1610 S. 9th. Jules: "I'm going" (together / Sam's "No" means she goes anyway, angry).
+    - **Hub (2 of 4):**
+      - **Simone:** opening-night ticket, Row C seat 9, Fri Mar 12; promise or "I'll try."
+      - **Bree:** Halina's evaluation moved *up* to Mar 11; Bruno asked "what the Pemberton girl sounds like."
+      - **Nik:** the frame, if not already seen; he hands over the thumb drive.
+      - **Mikey** at the Pen & Pencil: Sal Russo at Friends Hospital, Brannigan's Camry gone; "Don't take her there"; he parks on 9th.
+    - **Hugh and Callum** visit (Thu Mar 4). Hugh uses the 9-04 bathroom: **the theft**. Callum: "Is she happy?"
+  - **Act Two "Sunday Dinner":**
+    - Bruno's house: the 1964 photo; Philomena; 11 courses.
+    - **"Never play cards with a Pemberton"** (Carmine Iannucci lost a Reading Terminal stall to a Pemberton in 1931).
+    - **Briscola:** lose / let her win (Bruno: "There it is") / her call (she counts cards: "That you can't buy").
+    - **The ask:** Friday, Orlov's bathhouse on Bustleton Avenue, one game for **Pier 53**, in exchange for Pop's paper and Halina's surgeon. Jules says yes *in writing* whatever Sam says.
+  - **Act Three "Friday":**
+    - Simone's opening vs. the game: half and half (leave at intermission) / Jules only / **Slip** (the whole show, then 11 miles on the Boulevard).
+    - **The last hand:**
+      - **Luck:** four nines; paid; the house collects at 9:51, and **Pop's cab is T-boned in front of Pier 53**.
+      - **Read the Street** (noLuck): win (paid, nobody pays) / split (half paid; Bruno wants her again) / loss (Pop beaten).
+      - **Fold:** a full house thrown away. Bruno: "Somebody pays for a pier," and Pop's driving hand is broken.
+  - **Act Four "The Coat":**
+    - **Hurt paths:** Jefferson, Trauma Bay 4. Jules reaches for the handkerchief and it's gone (and the card, if given). Rosa: **"Salvatore. Outside. Now."** Nonna: "Ecco. Now it's time."
+    - **Safe paths:** Pop calls at 11:51 ("your paper's clean"), Ma wants him home Sunday, alone, and the coat discovery happens there.
+  - **Tag:** Wawa on City Avenue. Hugh gives Brannigan the handkerchief in a Ziploc. "Anything else in the pocket?" "No." **Hugh keeps the card** ("Don't trust the lucky one") and smiles.
+- **E8 "Ma"** opens on Rosa's question (hospital corridor, or Sunday on Mifflin Street). Rosa heat is 9: make it 10 in-scene (she learns). Nonna: "Now it's time" (the DiNardo women). Hugh holds the card; Halcyon has the blood.
