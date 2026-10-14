@@ -39,7 +39,7 @@ teddy: Listen. Ninety seconds after I let go, it holds. Go. Stair A. I\'ll be ri
 
 sam: Teddy—
 
-teddy: Ninety seconds, Kearney. I counted it on the Parkway. I count it every time.`,
+teddy: Ninety seconds, cold guy. I counted it on the Parkway. I count it every time.`,
     choices: [
       { text: 'Go. Trust him. He knows his own ninety seconds better than you know anything.', tag: 'Trust him',
         fx: g => { g.flag('teddy5', 'trust'); g.bond('teddy', { trust: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_teddy_go' },
@@ -67,7 +67,7 @@ You go.`,
     enter: g => { g.know('teddy_halina', ['sam', 'teddy'], 'On the seventh floor of Building 7, Teddy told you: "My mother thinks I work nights at a warehouse in Bridesburg. She thinks the deposit at Jefferson came from a GoFundMe. I made the page myself. Nineteen people gave. Bruno gave the rest."'); },
     text: `sam: I\'m not leaving you here.
 
-You put your hand on the door next to his. It doesn\'t feel like steel. It doesn\'t feel like anything. It\'s not cold and it\'s not warm. It\'s like touching a photograph of a door.
+You put your hand on the door next to his. It doesn\'t feel like steel. It doesn\'t feel like anything. Not cold, not warm. Your palm just stops.
 
 teddy: Cold guy.
 
@@ -87,7 +87,7 @@ teddy: You were right. On the Parkway. When you said he\'d own me. He doesn\'t e
 
 Then he takes one hand off the door and puts it flat on your chest, gray, and pushes you, gently, back down the hall.
 
-teddy: This is mine, Kearney. You got your own. Go.
+teddy: This is mine, Sam. You got your own. Go.
 
 You go. You run. You look back once from Stair A, and he lifts his fingers off the door and waves them. *Go.*`,
     next: 'a3_yard'
@@ -164,11 +164,11 @@ Not the Slip. The opposite. Everything slow, and warm, and far away. Your legs a
 
 A hand grabs your arm. Jules. Then your other arm. Teddy, gray, with a grip like a vise.
 
-teddy: Up. Up, Kearney. Your cold\'s eating it. I can feel it. Your whole arm\'s like ice. *Walk.*
+teddy: Up. Up, cold guy. Your cold\'s eating it. I can feel it. Your whole arm\'s like ice. *Walk.*
 
 You walk. You can\'t feel your feet. Your nose is bleeding into your mouth. Whatever was in that dart, your body is fighting it the way it fights everything now, with the cold, and the cold is winning, slowly, and it hurts.
 
-jules: Stay with me. Kearney. *Stay with me.*
+jules: Left foot. Now the right. Sam. *Now the right.*
 
 sam: I\'m here. I\'m here.`,
     next: 'a3_dock'
@@ -249,15 +249,15 @@ old_sam: He\'s the one who takes her to Bruno.
 
 He doesn\'t say who. He doesn\'t have to. He looks past you, at Jules, frozen with her hand out, and his face does the thing your face does right before you cry.
 
-old_sam: In March. On a Tuesday. He doesn\'t want to. His mother\'s on the list at Jefferson, and Bruno knows the surgeon\'s name.
+old_sam: In March. He won\'t want to. He\'ll do it anyway.
 
-old_sam: I\'ve watched it four hundred times. Every way I stop it ends in the same place.
+old_sam: Four hundred times. I tried the other ways.
 
-sam: What place?
+sam: And?
 
 He doesn\'t answer.
 
-He takes his left hand out of his coat pocket. There\'s a gap where the ring finger should be. He puts two fingers on Teddy\'s chest, very gently, the way you\'d touch a sleeping kid to see if he\'s breathing.
+He takes his left hand out of his coat pocket. There\'s a gap where the ring finger should be. He puts two fingers on Teddy\'s chest, very gently. Like he\'s done it before.
 
 And pushes.
 
@@ -304,7 +304,7 @@ You\'re standing on the edge of the dry dock holding a coat.`,
     enter: g => { g.flag('heck_darted5'); g.flag('bree_darted5'); },
     text: `You grab him.
 
-Your hand closes on his left wrist. It isn\'t cold. It isn\'t warm. It\'s like grabbing a photograph of a wrist. Four fingers. You can feel the knuckle where the fifth one was.
+Your hand closes on his left wrist. It isn\'t cold. It isn\'t warm. It isn\'t anything. Four fingers. You can feel the knuckle where the fifth one was.
 
 He looks down at your hand on his wrist. Then at you.
 
@@ -314,7 +314,7 @@ His voice is your voice with all the jokes taken out.
 
 old_sam: That\'s the part nobody tells you.
 
-And he\'s gone, and your hand is closed on nothing, and the second closes like a door slamming on your fingers.
+And he\'s gone, and your hand is closed on nothing, and the second closes on your fingers.
 
 Time comes back.
 
@@ -359,7 +359,7 @@ Everybody\'s still standing, except Teddy.`,
     enter: g => { g.know('revenant_glimpse5', ['sam'], 'At the dry dock at 12:51, for one frame, across the water, you saw a gray-haired man with one hand raised, like a man at a window. Then Teddy fell.'); },
     text: g => `You take her hand.
 
-She doesn\'t hold her breath. She lets it go. All of it. You feel it go out of her, through her fingers into yours, like a current. Like the whole world tilting a quarter inch toward the two of you.
+She doesn\'t hold her breath. She lets it go. All of it. You feel it go out of her, through her fingers into yours. The whole world tilts a quarter inch toward the two of you.
 
 The lights on seven go white.
 
@@ -389,9 +389,7 @@ jules: No.
 
 She lets go of you.
 
-jules: No. No, no, no. *Fuck.*
-
-You have never heard her swear. Not once. Not in five months.
+jules: *Fuck.*
 
 jules: Near us. It *collects near us*.`,
     next: 'a3_fall'
@@ -423,9 +421,9 @@ You kneel in the cold on the bottom step.
 
 teddy: Didn\'t slip. I felt it. Something put me down here.
 
-${g.f('dock5') === 'luck' ? 'Above you, at the top of the steps, Jules makes a sound you\'ve never heard a person make.' : 'You don\'t say anything. You can\'t.'}
+${g.f('dock5') === 'luck' ? 'Above you, at the top of the steps, Jules sits down on the granite and doesn\'t get up.' : 'You don\'t say anything. You can\'t.'}
 
-teddy: My mother. Listen. The deposit at Jefferson. She thinks it was the GoFundMe. Nineteen people. Don\'t... don\'t let her find out it was Bruno. Don\'t let her owe him. Tell her I did it. Tell her I saved it. From the warehouse.
+teddy: My mother. Listen. She thinks it was the GoFundMe. Don\'t let her find out it was Bruno. Don\'t let her owe him. Tell her I saved it. From the warehouse.
 
 His eyes are on yours. Gray, all around them, like frost on a window.
 
@@ -443,7 +441,7 @@ teddy: Tell her I was good at something.`,
   a3_teddy: {
     night: true,
     enter: g => { g.flag('teddy_dead'); g.know('teddy_dead', ['sam', 'jules', 'bree', 'heck'], 'Teddy Kowal died at the bottom of the dry dock at the Navy Yard at 12:53 a.m. on January 23. He was twenty.'); },
-    text: g => `${g.f('last5') === 'promise' ? 'sam: I\'ll tell her. You did it. You saved it. Every dollar. I\'ll tell her myself, Teddy. I swear to God.\n\nHe closes his eyes. Opens them.\n\nteddy: Don\'t swear to God. Swear to her.\n\nsam: I swear to her.' : g.f('last5') === 'marisol' ? 'sam: Marisol\'s out. She\'s out, Teddy. Heck\'s got her. She\'s on the grass up there, wrapped in a hospital blanket. You got her out. You held the door. You did that.\n\nSomething in his face lets go.\n\nteddy: Yeah?\n\nsam: Yeah.\n\nteddy: Huh. Okay.' : 'You don\'t say anything.\n\nYou take his hand, the gray one, the one that froze an armored car on Broad Street and a whole parade on the Parkway. It isn\'t cold. It isn\'t warm. It\'s like holding a photograph of a hand.\n\nYou hold it anyway.\n\nHe looks at your hand around his.\n\nteddy: Huh.\n\nThat\'s all. He doesn\'t need anything else. Neither do you.'}
+    text: g => `${g.f('last5') === 'promise' ? 'sam: I\'ll tell her. You did it. You saved it. Every dollar. I\'ll tell her myself, Teddy. I swear to God.\n\nHe closes his eyes. Opens them.\n\nteddy: Don\'t swear to God. Swear to her.\n\nsam: I swear to her.' : g.f('last5') === 'marisol' ? 'sam: Marisol\'s out. She\'s out, Teddy. Heck\'s got her. She\'s on the grass up there, wrapped in a hospital blanket. You got her out. You held the door. You did that.\n\nSomething in his face lets go.\n\nteddy: Yeah?\n\nsam: Yeah.\n\nteddy: Huh. Okay.' : 'You don\'t say anything.\n\nYou take his hand, the gray one, the one that froze an armored car on Broad Street and a whole parade on the Parkway. It isn\'t cold. It isn\'t warm. It\'s like holding a photograph of a hand.\n\nYou hold it anyway.\n\nHe looks at your hand around his.\n\nteddy: Huh.'}
 
 His breathing changes. Slower. Like somebody walking away down a long hall.
 
@@ -467,11 +465,11 @@ You count. You don\'t decide to. You just count, out loud, kneeling on the grani
 
 You get to eighty-nine.
 
-At ninety, the ring in the water lets go, and spreads, and is gone, and the river closes over the place where it was like it was never there.
+At ninety, the ring in the water lets go, and spreads, and is gone, and the river closes over the place where it was.
 
 Up at the top of the steps, somebody screams his name.
 
-It\'s Bree. ${g.f('bree_darted5') ? 'Drugged, on her knees in the grass with Jules holding her up, fighting the dart, she screams it' : 'She screams it'} in a voice you\'ve never heard before, ragged and high and nobody\'s but hers.
+It\'s Bree. ${g.f('bree_darted5') ? 'Drugged, on her knees in the grass with Jules holding her up, fighting the dart, she screams it' : 'She screams it'} in her own voice, ragged and high, nobody\'s but hers.
 
 It came back for that.
 
@@ -485,7 +483,7 @@ Just for that.`,
     clock: { time: '1:04 AM' },
     text: g => `When you climb back up, the truck is pulling away.
 
-No hurry. No lights. It backs up, turns around in the road, and drives off between the buildings toward Broad Street, slowly, like a hearse with nowhere to be. The gray figures are gone. The darts are gone. Even the one in the grass by Heck\'s boot is gone.
+No hurry. No lights. It backs up, turns around in the road, and drives off between the buildings toward Broad Street, slowly. It signals at the corner. There\'s nobody there to signal to. The gray figures are gone. The darts are gone. Even the one in the grass by Heck\'s boot is gone.
 
 Somebody came and picked it up while you were down there. While you were counting.
 
@@ -495,11 +493,11 @@ Heck is sitting on the grass with Marisol across his lap. She\'s stirring. Her e
 
 Bree is beside him, ${g.f('bree_darted5') ? 'slumped against his shoulder, fighting the dart, saying *Teddy* over and over in her own hoarse voice, like she\'s afraid it\'ll go away again if she stops' : 'with her knees pulled up to her chest, saying *Teddy* over and over in her own hoarse voice, like she\'s afraid it\'ll go away again if she stops'}.
 
-Jules is standing a little apart from all of you, on the edge, looking down. Her arms are wrapped around herself. She\'s not crying. She looks like she\'s never going to cry again.
+Jules is standing a little apart from all of you, on the edge, looking down. Her arms are wrapped around herself. She\'s not crying. Jules doesn\'t, in front of people.
 
 Heck lifts his head and looks at you, and then down the steps.
 
-heck: We take him home, papa. We don\'t leave him in the water. He hated the cold.
+heck: Lo llevamos a casa, papa. We take him home. We don\'t leave him in the water. He hated the cold.
 
 ${g.f('call5') === 'mikey' ? 'mikey: Sammy. Listen to me. If he leaves this yard in your arms, there\'s no accident. There\'s a missing kid and a body in somebody\'s car and a homicide detective at your dorm by Tuesday. Leave him. I\'ll call it in. I\'ll be the one who found him. A cop who heard a noise. Let me do this one thing.' : ''}`,
     choices: [

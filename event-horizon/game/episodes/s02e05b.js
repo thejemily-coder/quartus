@@ -25,7 +25,7 @@ Heck sees you first. He gets up off his knees, slowly, like an old man, steam st
 
 heck: *Papa.*
 
-He grabs you and lifts you off the ground and holds you there, and he\'s so hot you can feel it through your coat, and he doesn\'t put you down for a long time.
+He grabs you and lifts you off the ground and holds you there, and he\'s so hot you can feel it through your coat, and he doesn\'t put you down.
 
 heck: You came. Bree said you wouldn\'t. I said you would.
 
@@ -37,7 +37,7 @@ sam: What happened to your arms?
 
 teddy: Eleven fifty-one happened. Whatever that was, it *pulled*. Like the floor had a drain in it and we were the water. I can still use them. I think. They just don\'t feel like mine.
 
-Bree looks up at you. She opens her mouth. And out of it, perfectly, comes your own voice, from a phone call two hours ago, from your own bed:
+Bree looks up at you. She opens her mouth. And out of it, perfectly, comes your own voice, saying her name the way you say it:
 
 *"Bree."*
 
@@ -69,7 +69,7 @@ ${g.f('call5') === 'nik' ? 'nik: Is that Teddy? Tell Teddy I said hi. No. Don\'t
 
 sam: Bree said there were more floors.
 
-teddy: One more. Eight. It\'s not on the drawings and it doesn\'t have a number on the door. Marisol\'s up there, Kearney. She\'s alive. We saw her through the glass. Her and maybe twenty others, in beds, asleep. But that door\'s shut. Card reader. Red light. We looked for two hours for a card and found a bowl of fruit.
+teddy: One more. Eight. It\'s not on the drawings and it doesn\'t have a number on the door. Marisol\'s up there, Sam. She\'s alive. We saw her through the glass. Her and maybe twenty others, in beds, asleep. But that door\'s shut. Card reader. Red light. We looked for two hours for a card and found a bowl of fruit.
 
 He tips his head down the hall. At the far end, the elevator stands open, lit, empty. Waiting.
 
@@ -180,7 +180,7 @@ Jules is standing behind you. You hear her stop breathing.
 
 jules: Forty-four.
 
-She says it the way you\'d read your own name on a gravestone.
+Not a question.
 
 jules: I\'m forty-four. You\'re seventeen. We\'re *numbers*, Sam. Somebody typed us.
 
@@ -206,7 +206,7 @@ jules: Then we have twenty-four minutes. Let\'s not spend them reading about our
     night: true,
     loc: 'BUILDING 7 · THE GLASS ROOM',
     enter: g => { g.flag('badge5'); g.flag('late5'); g.hidden('halcyon_heat', 1); g.know('es_screen', ['sam', 'jules'], 'In the glass room on the seventh floor of Building 7, the screens listed Halcyon\'s subjects by number. ES-17: KEARNEY, SALVATORE. ES-44: PEMBERTON, JULIET. "PRIORITY. DO NOT RECOVER. OBSERVE." A second pulse was scheduled for 00:51:04.'); },
-    text: `The door at the end of the hall has dark glass in it and a lock that doesn\'t want to open. You try a credit card, the way Grace taught the ninth floor in September. It doesn\'t work. You try it again. Heck offers to burn it and you say no, and Teddy says *just let him*, and Bree says, in your own voice, *"Marisol first,"* and you get it open on the fifth try with your hands shaking.
+    text: `The door at the end of the hall has dark glass in it and a lock that doesn\'t want to open. You try a credit card, the way Grace taught the ninth floor in September. It doesn\'t work. You try it again. Heck offers to burn it and you say no, and Teddy says *just let him*, and Bree taps her throat and points at the lock, and you get it open on the fifth try with your hands shaking.
 
 Inside: two chairs, a bank of monitors, a mug of Earl Grey gone cold. The tea bag is folded on a napkin. A white key card hangs from the back of a chair. *HALCYON DYNAMICS · VISITOR.*
 
@@ -232,7 +232,7 @@ sam: Fifteen minutes.
 
 From down the hall, Teddy\'s voice:
 
-teddy: Kearney. The elevator just closed.
+teddy: Cold guy. The elevator just closed.
 
 You look up. Down the hall, the elevator doors are shut. The little arrow above them is lit. *Down.*
 
@@ -257,7 +257,7 @@ She\'s smaller than you expected. Nineteen. Her head is shaved and there are lit
 
 Heck kneels down beside the bed. He doesn\'t touch her. He\'s afraid of his own hands.
 
-heck: Mari. Mari, it\'s me. It\'s Heck. From Lehigh Avenue. You texted me in September. You said come to McPherson.
+heck: Mari. Mari, soy yo. It\'s Heck. From Lehigh Avenue. You texted me in September. You said come to McPherson.
 
 Nothing. The pump sighs.
 
@@ -330,7 +330,7 @@ Jules watches you take it and doesn\'t say anything.
 
 Behind you, Teddy has the line out of Marisol\'s arm, and Heck has her, blanket and all, against his chest.
 
-teddy: Kearney. Ninety seconds was a minute ago.
+teddy: Cold guy. Ninety seconds was a minute ago.
 
 sam: I\'m done.
 
@@ -345,11 +345,11 @@ You think about Dana Fiorillo saying *I\'ll find something I can print.*`,
     enter: g => { g.flag('marisol_out'); g.know('revenant_ward', ['sam', 'jules'], 'On the eighth floor of Building 7, an old woman, ES-03, woke long enough to say: "The old man comes at night. He sits with us. He has your face."'); },
     text: `sam: All of them.
 
-teddy: Kearney—
+teddy: Sam—
 
 sam: *All* of them. Pull the lines. Every one.
 
-You start at the end of the row. Tape, line, thumb. The way Teddy did it. Your hands aren\'t as steady. The man with the beard. The woman in the hijab. The girl with the rabbit. Jules is doing the other row, fast, precise, like she\'s done this, like she grew up in her mother\'s hospital, which she did.
+You start at the end of the row. Tape, line, thumb. The way Teddy did it. Your hands aren\'t as steady. The man with the beard. The woman in the hijab. The girl with the rabbit. Jules is doing the other row, fast and precise. She grew up in her mother\'s hospital.
 
 Nobody wakes up.
 
@@ -373,7 +373,7 @@ Her eyes close.
 
 You stand there holding her hand.
 
-teddy: *Kearney.* We have Marisol. We have to go. Now.
+teddy: *Sam.* We have Marisol. We have to go. Now.
 
 Ten lines out. Ten people who won\'t wake for hours, and who will wake up here, in these beds, with somebody\'s hand on the tape again.
 

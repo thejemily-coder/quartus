@@ -86,7 +86,7 @@ Down at the end of the hall, the elevator dings.
 
 The doors slide open. The car is empty, lit, waiting. The doors don\'t close.
 
-Teddy looks at the open elevator for a long time.
+Teddy looks at the open elevator.
 
 teddy: It\'s not for us.
 
@@ -130,7 +130,7 @@ sam: You\'re not.
 
 She doesn\'t argue. She picks her coffee up off the parapet, looks at it, and pours it out over the edge, very precisely, onto nobody, nine floors down.
 
-jules: An hour ago you told me a man from Halcyon put a dart in my direction on the Parkway and missed four times. You told me a boy you knew walked six miles to your door to tell you something, and they killed him for it. You told me your great-grandmother went in for a child under a trolley and came back older every time.
+jules: ${g.f('roof4') === 'all' ? 'An hour ago you told me a man from Halcyon put a dart in my direction on the Parkway and missed four times. You told me a boy you knew walked six miles to your door to tell you something, and they killed him for it. You told me your great-grandmother\'s brother went into a fire for three children and came back old.' : 'An hour ago you told me the world stops and you don\'t. You told me the true part. I heard what you left out.'}
 
 jules: ${g.knows('gran_sam', 'jules') ? 'My grandmother told me on New Year\'s that some families are early, and the early ones always go in for somebody else. She told me to keep you close. I thought she meant it as a warning. ' : ''}You are not going in there alone. Not tonight. Not the night I *found out*.
 
@@ -347,7 +347,7 @@ sam: I don\'t know. Probably.
 
 The sound of keys.
 
-mikey: Okay. I\'m coming. Not in a car. I\'m coming in my car, I\'m off duty, I\'m a guy with a badge who heard a noise. If anybody stops me, I\'m a guy with a badge who heard a noise. You hear me? You get them out, you come to the gate on Broad, and I\'ll be standing in it.
+mikey: Okay. I\'m coming. Not in a cruiser. I\'m coming in my car, I\'m off duty, I\'m a guy with a badge who heard a noise. If anybody stops me, I\'m a guy with a badge who heard a noise. You hear me? You get them out, you come to the gate on Broad, and I\'ll be standing in it.
 
 sam: Mikey.
 

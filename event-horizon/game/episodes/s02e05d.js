@@ -52,7 +52,7 @@ ${g.f('promise_halina') ? 'You swore. Not to God. To her.' : ''}`,
     loc: 'EDGEMONT STREET · PORT RICHMOND',
     text: g => `${g.f('halina5') === 'his' ? `sam: He said to tell you he saved it. The deposit. At Jefferson. Every dollar. From the warehouse in Bridesburg. Nights. He said to tell you he was good at something.
 
-Halina looks at you for a long time.
+Halina looks at you.
 
 She knows. You can see her know. A mother whose son works nights at a warehouse and comes home in a wool coat that costs more than her car knows. She\'s known since Christmas.
 
@@ -60,7 +60,7 @@ HALINA: Yes. He was very good at it. The warehouse.
 
 She turns the rosary over in her fingers.
 
-HALINA: Thank you for bringing me this.
+HALINA: Dziękuję. Thank you for bringing me this.
 
 And that\'s the deal. The two of you, in her kitchen, agreeing on a story for a boy who isn\'t there to tell it. Upstairs, Bree is asleep. You hope she never has to know you made it.` : `${g.f('broke_promise5') ? 'You promised him. You know you promised him. You do it anyway.\n\n' : ''}sam: He worked for Bruno Iannucci. Not a warehouse. Bruno paid the deposit at Jefferson. Teddy didn\'t want you to know. He wanted you to think it was the GoFundMe.
 
@@ -72,7 +72,7 @@ HALINA: I know who paid. Mr. Iannucci came to see me himself. At Christmas. He b
 
 She looks at the rosary in her hand.
 
-HALINA: Theodore thinks I don\'t know things. All his life. He protects me from things I know already.
+HALINA: Theodore thinks I do not know things. All his life. He protects me from things I know already.
 
 HALINA: Thank you for not doing it too.`}
 
@@ -88,7 +88,7 @@ She has a hoarse little voice, like she hasn\'t used it in months, because she h
 
 MARISOL: There was a man. In the blue room. At night. He sat in the chair by my bed. He never touched anything. He just sat. Sometimes he cried.
 
-The hair on your arms stands up.
+You put your coffee down.
 
 MARISOL: He was old. Older. But he had your face. Exactly your face. When you came in just now, I thought—
 
@@ -102,9 +102,7 @@ MARISOL: I thought it was a dream. I thought he meant I was going to die.
 
 Heck, on the floor, has his big hands over his face.
 
-You sit at the Kowals\' kitchen table with your cold coffee and think: *not you.*
-
-He meant *not you.* He meant somebody else.
+*Not you.* Which means somebody else.
 
 He picked.`,
     next: 'a4_funeral'
@@ -116,7 +114,7 @@ He picked.`,
     enter: g => { g.sleep(5); },
     text: g => `They bury Theodore Kowal on Thursday from St. Adalbert, the big Polish church on Allegheny Avenue with the two green spires you can see from I-95.
 
-The mass is in Polish and English. The choir sings something in Polish that has no English, that nobody needs translated. Halina sits in the front pew in a black coat with her arm in a sling over the fistula, between Bree and an old woman who keeps patting her hand. Heck is a pallbearer. He carries the front left corner and his face is wet the whole way up the aisle and his hands don\'t burn the brass handle, because he doesn\'t let them.
+The mass is in Polish and English. The choir sings something in Polish that has no English, that nobody needs translated. Halina sits in the front pew in a black coat with her arm in a sling over the fistula, between Bree and an old woman who keeps patting her hand. Heck is a pallbearer. He carries the front left corner and his face is wet the whole way up the aisle and his hands don\'t burn the brass handle, because he doesn\'t let them. Bree does the second reading, in her own voice, and gets through all of it. Nobody in St. Adalbert knows that for an hour on Friday night it was gone.
 
 The casket is mahogany. The flowers are white roses, hundreds of them, more flowers than Port Richmond has seen since the old monsignor died. There\'s a wreath on a stand by the altar the size of a truck tire.
 
@@ -126,7 +124,7 @@ You\'re in the back pew. ${g.f('jules_blames5') ? 'Jules is not beside you. She 
 
 After, on the church steps, in the cold, Bruno Iannucci is waiting.
 
-He\'s in a black overcoat with a white scarf, leaning on a cane you\'ve never seen him use. Dante is beside him. Vinnie is a step behind them, in his black cashmere coat, ${g.f('call5') === 'vinnie' ? 'and when your eyes meet his he looks away, at the street, at the traffic on Allegheny, at anything.' : 'with his hands folded in front of him like a man in a photograph.'}
+He\'s in a black overcoat with a white scarf, leaning on a cane you\'ve never seen him use. Dante is beside him. Vinnie is a step behind them, in his black cashmere coat, ${g.f('call5') === 'vinnie' ? 'and when your eyes meet his he looks away, at the street, at the traffic on Allegheny, at anything.' : 'with his hands folded in front of him like a pallbearer nobody asked.'}
 
 BRUNO: Sam. Walk with an old man.
 
@@ -136,11 +134,11 @@ BRUNO: I paid for the box. The flowers. The mass. The lunch after at the Polish 
 
 He stops walking.
 
-BRUNO: Teddy Kowal was mine. He broke my understanding to go into that building, and I would have had something to say to him about that, and now I don\'t get to.
+BRUNO: Teodoro was mine. He broke my understanding to go into that building, and I would have had something to say to him about that, and now I don\'t get to.
 
 He looks at you. Those old wet eyes, kind and terrible.
 
-BRUNO: The police say he fell. Teddy Kowal never fell in his life. Who?`,
+BRUNO: The police say he fell. Teodoro never fell in his life. Who?`,
     choices: [
       { text: '"Halcyon. The building is theirs. The truck was theirs. They left the door open, and they waited."', tag: 'Halcyon',
         fx: g => { g.flag('bruno5', 'halcyon'); g.know('bruno_halcyon5', ['sam', 'bruno'], 'At Teddy\'s funeral, you told Bruno Iannucci that Halcyon left the door open at the Navy Yard and waited. He said: "Then they owe me a boy."'); g.hidden('halcyon_heat', 1); }, go: 'a4_bruno_halcyon' },
@@ -265,7 +263,7 @@ jules: The lights on Broad. Twenty-two of them. ${g.f('door5') === 'luck' ? 'The
 
 She looks at her hands.
 
-jules: My grandmother said the house always collects. Not from us. Near us. Mercutio broke his leg because I let go of the reins. And on Friday night I let go of *everything*, as hard as I could, for as long as I could, and a boy who was standing ten feet from me fell forty feet onto stone.
+jules: My grandmother said the house always collects. Not from us. Near us. Mercutio went lame because I let go of the reins. ${g.f('dock5') === 'luck' ? 'And on Friday night I let go of *everything*, as hard as I could' : 'And on Friday night I let go more than I ever have'}, and a boy who was standing ten feet from me fell forty feet onto stone.
 
 jules: Tell me that\'s not arithmetic, Sam. You\'re good at math now. Tell me.
 
@@ -296,7 +294,7 @@ jules: Why?
 
 You could stop. You don\'t.
 
-sam: He said Teddy\'s the one who takes you to Bruno. In March. On a Tuesday. He said he\'s watched it four hundred times, and every way he stops it ends in the same place.
+sam: He said Teddy\'s the one who takes you to Bruno. In March. He said he\'s done this four hundred times. He said he tried the other ways.
 
 sam: He looked at you when he said it, Jules. Like he was looking at somebody he\'d lost.
 
@@ -352,7 +350,7 @@ ${g.f('dock5') !== 'luck' ? 'You think about two fingers on Teddy\'s chest. A ga
 
 sam: I just do. Trust me.
 
-She looks at you a long time. She hears the shape of it. She always does.
+She hears the shape of it. She always does.
 
 jules: You touched your ear.
 
@@ -396,7 +394,7 @@ You didn\'t tell her the truth either. You don\'t say that. You hold her.`,
 
 You\'re lying on your narrow dorm bed, both of you, on top of the covers, in your clothes. She took her shoes off at some point. Her feet are cold. Your everything is cold. She doesn\'t seem to mind.
 
-The desk lamp is on. It\'s always on when she\'s here. She asked you to leave it on in October and you never asked why. You didn\'t have to. Seven years old, locked in the chapel at Ravenscourt by her brother, all night, in the dark, listening to the house breathe.
+The desk lamp is on. It\'s always on when she\'s here. She asked you to leave it on in October and you never asked why. ${g.knows('jules_chapel') ? 'You didn\'t have to. Seven years old, locked in the chapel at Ravenscourt by her brother, all night, in the dark, listening to the house breathe.' : 'You figured she\'d tell you when she wanted to.'}
 
 jules: Sam.
 
@@ -424,7 +422,7 @@ She doesn\'t ask you to turn it back on.
 
 You lie in the dark with her and think about a boy on the bottom step with his arm in the water, and a circle of river that stopped for ninety seconds after he was gone, and a man in a long coat who sat beside a girl\'s bed every night and cried, and then went down to the dry dock and picked.
 
-*Four hundred times.*
+${g.f('dock5') !== 'luck' ? '*Four hundred times.*' : '*Not you.*'}
 
 ${g.f('assunta_watch') ? 'On the desk, in the dark, Salvatore\'s watch, stopped at 11:51. You can\'t hear it tick. It only ticks in the cold.' : ''}
 
@@ -458,9 +456,7 @@ She advances it one frame.
 
 Teddy Kowal, tipping, past balance, over forty feet of air.
 
-And standing beside him, in exactly one frame, a man.
-
-Long coat. Gray at the temples. His left hand raised, two fingers extended. On the left hand, a gap.
+${g.f('dock5') === 'luck' ? 'And across the dry dock, on the far lip, in exactly one frame, a man.\n\nLong coat. Gray at the temples. His left hand raised, palm out, like a man at a window. On the left hand, a gap.' : 'And standing beside him, in exactly one frame, a man.\n\nLong coat. Gray at the temples. His left hand raised, two fingers extended. On the left hand, a gap.'}
 
 She advances one frame. *00:51:04.* He\'s gone. Teddy is falling.
 
@@ -480,7 +476,7 @@ ACHTERBERG: Pull everything. The Parkway. Broad and Spring Garden in August. Eve
 
 BRANNIGAN: Looking for what?
 
-She puts her glasses back on and looks at the man in the single frame, with his two fingers out and the gap where his ring finger should be.
+She puts her glasses back on and looks at the man in the single frame, at the gap where his ring finger should be.
 
 ACHTERBERG: Him.
 
