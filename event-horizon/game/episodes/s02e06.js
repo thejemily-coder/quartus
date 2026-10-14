@@ -187,7 +187,7 @@ nik: And he was there. When Teddy fell. He was *there*.
 
 sam: Yeah.
 
-nik: Then it wasn\'t her. Bro, you have to tell Jules. It wasn\'t *her*.
+nik: Then it wasn\'t ice. It wasn\'t *nobody*. Bro. Jules was right there. You have to tell Jules.
 
 sam: ${g.knows('revenant_push', 'jules') ? 'I did. I told her everything I saw. She said that\'s worse. She said a stranger she could have hated.' : 'I did. I told her I saw someone. She said that\'s worse. She said now she doesn\'t even get to know.'}
 
@@ -304,7 +304,7 @@ simone: They\'re terrible. Sit down, Salvatore.
 
 You sit on the end of her bed. Sequins stick to your jeans.
 
-simone: Somebody died. Somebody I never heard of. And you came back that morning looking like you\'d been dug up, and Juliet came back looking like she\'d done the digging, and the two of you have been walking around this floor for two weeks like a pair of ghosts holding hands.
+simone: Somebody died. Somebody I never heard of. And you came back from that funeral looking like you\'d been dug up, and Juliet came back looking like she\'d done the digging, and the two of you have been walking around this floor for two weeks like a pair of ghosts holding hands.
 
 simone: I\'m not asking what happened. I learned. You won\'t tell me, and she\'ll lie beautifully, and I\'ll lie awake.
 
@@ -320,7 +320,7 @@ simone: I\'m asking who he was. That\'s all. Just tell me who he was. Somebody w
     },
     a1_simone_yes: {
       enter: g => { g.flag('simone6', 'told'); g.flag('simone10', 'mended'); g.bond('simone', { trust: 3, respect: 2, affection: 1 }); g.hidden('revenant_drift', -0.5); g.know('teddy_simone', ['sam', 'simone'], 'You told Simone who Teddy Kowal was. Not what happened. Who he was.'); },
-      text: `sam: His name was Teddy. Teddy Kowal. He was twenty. He was from Port Richmond. His mother\'s on dialysis, and he drove her to Jefferson at seven in the morning because he liked the drive. He didn\'t talk. He said *listen* before everything, like you weren\'t going to, and then he\'d say the smartest thing anybody said all day.
+      text: `sam: His name was Teddy. Teddy Kowal. He was twenty. He was from Port Richmond. His mother\'s on dialysis, and he drove her to every appointment and never once let her take the bus. He didn\'t talk. He said *listen* before everything, like you weren\'t going to, and then he\'d say the smartest thing anybody said all day.
 
 You stop. Then you don\'t.
 

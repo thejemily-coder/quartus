@@ -19,7 +19,7 @@ TXT bree: her eval is moved. to APRIL. "scheduling conflict"
 TXT bree: then bruno called. 7:15. he said "its a shame about the schedule halina. these things can change"
 TXT bree: she hung up on him. she HUNG UP on bruno iannucci
 TXT bree: then she cried for an hour
-TXT bree: this is the third thing isnt it. this is what the third thing costs` : g.f('false6') === 'doubted' ? `TXT nik: bro. 6abc. "break-in at navy yard office building overnight, no injuries, halcyon dynamics declined to comment"
+${g.f('did_v6_bree') ? 'TXT bree: this is the third thing isnt it. this is what the third thing costs' : 'TXT bree: wawa what do i do'}` : g.f('false6') === 'doubted' ? `TXT nik: bro. 6abc. "break-in at navy yard office building overnight, no injuries, halcyon dynamics declined to comment"
 TXT nik: building 7
 TXT nik: BRO
 
@@ -43,7 +43,7 @@ TXT bree: alive. his hair went white. all of it. overnight
 TXT bree: he doesnt know what day it is. he keeps asking what time it is. he keeps saying "eleven fifty one"
 TXT bree: halcyon answered`}
 
-${g.f('false6') === 'clean' ? 'You read Dante\'s text again. *Offices. A lab. A turkey.* They went in on your map. They walked right past a door with no number on it, and the twenty-two people behind it, because you told them there was no door.\n\nYou lied to Bruno Iannucci, and the lie held, and it might have saved twenty-two people. You don\'t know. You\'ll never know.' : ''}
+${g.f('false6') === 'clean' ? 'You read Dante\'s text again. *Offices. A lab. A turkey.* They went in on your map. They walked right past a door with no number on it, and the twenty-one people behind it, because you told them there was no door.\n\nYou lied to Bruno Iannucci, and the lie held, and it might have saved twenty-one people. You don\'t know. You\'ll never know.' : ''}
 
 You sit up.
 
@@ -81,7 +81,7 @@ jules: Get dressed.
 
 sam: Where are we going?
 
-jules: I don\'t know yet. Edgemont Street, probably. To sit with Bree. Or to Jefferson, to find out who Dr. Feingold is and what he\'s afraid of. Everyone\'s afraid of something. My father taught me that at dinner when I was seven.
+jules: I don\'t know yet. Edgemont Street, probably. To sit with Bree. ${g.f('building6') === 'refuse' ? 'Or to Jefferson, to find out who Dr. Feingold is and what he\'s afraid of.' : 'Or to find out who Sal Russo was, and who\'s waiting for him at home.'} Everyone\'s afraid of something. My father taught me that at dinner when I was seven.
 
 She looks at you.
 
@@ -139,7 +139,7 @@ One wall is covered with photographs.
 
 Printouts, black and white and color, pinned in neat rows. Security stills. Traffic cameras. A doorbell camera. A dashcam. Each one with a white label in the corner, in Achterberg\'s small clean hand.
 
-*BROAD & SPRING GARDEN · AUG 22 · 11:51:06.* A man across the street in the rain. A finger to his lips.
+*N. BROAD & CECIL B. MOORE · AUG 25 · 01:40:22.* A man across the street in the rain, under a dead marquee. A finger to his lips.
 
 *MIFFLIN ST · DUSK.* A doorbell camera. A streetlight at the end of the block. A man under it.
 
@@ -147,7 +147,7 @@ Printouts, black and white and color, pinned in neat rows. Security stills. Traf
 
 *DRY DOCK · JAN 23 · 00:51:04.* A man across the water, one hand raised.
 
-Eleven photographs. Eleven places. The same long coat.
+Eleven photographs. Eleven places. The same man.
 
 Dr. Achterberg is standing in front of the wall with her glasses on her head and a phone at her ear.
 
@@ -173,9 +173,7 @@ She hangs up without saying goodbye.
 
 Brannigan is at the end of the conference table with his tea, looking at the wall.
 
-BRANNIGAN: Sal Russo.
-
-ACHTERBERG: An Iannucci soldier was found on the bottom step of the dry dock with his hair gone white. That\'s a story about the Iannuccis. Let them tell it.
+${g.f('building6') !== 'refuse' ? 'BRANNIGAN: Sal Russo.\n\nACHTERBERG: An Iannucci soldier was found on the bottom step of the dry dock with his hair gone white. That\'s a story about the Iannuccis. Let them tell it.' : 'BRANNIGAN: Iannucci still has men on Building 7.\n\nACHTERBERG: Let them watch the lights.'}
 
 She turns back to the wall. To the eleven photographs.
 
@@ -187,7 +185,7 @@ Achterberg is quiet for a moment. She takes off her glasses and cleans them on h
 
 ACHTERBERG: Get me something with the boy\'s blood on it.
 
-BRANNIGAN: There\'s a handkerchief. White. Monogrammed. *J.L.P.* She gave it to him in August, the night of the light. He bled on it three days later, in recitation. He gave it back to her at Thanksgiving, on the wall by the Water Works. She\'s carried it ever since. Inside pocket. The camel coat.
+BRANNIGAN: There\'s a handkerchief. White. Monogrammed. *J.L.P.* He bled on it all fall. He gave it back to her at Thanksgiving, on the wall by the Water Works, under our ambulances. She\'s carried it ever since. Inside pocket. The camel coat.
 
 Achterberg puts her glasses back on.
 

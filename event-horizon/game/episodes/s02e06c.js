@@ -11,7 +11,7 @@ EH.scenes('s02e06', {
 
 Jules is sitting at the big table with a sheet of paper in front of her, face down, and both hands flat on top of it like it might get up and leave.
 
-jules: Monday\'s quiz. Orgo. Dr. Okafor hands them back face down. He thinks it\'s kind.
+jules: Monday\'s quiz. Orgo. Dr. Adeyemi hands them back face down. He thinks it\'s kind.
 
 sam: And?
 
@@ -219,7 +219,7 @@ You stand at the rail and hold her while she cries. The old couple waltzes past.
     night: true,
     loc: 'PENN\'S LANDING · THE RIVER',
     clock: { time: '11:40 PM' },
-    text: g => `After, you walk along the river. Past the Moshulu, the big old ship with the restaurant in it, all lit up. Past the Seaport Museum. To the end of the pier, where there\'s nothing but a railing and the black Delaware and Camden glittering on the other side.
+    text: g => `After, you walk along the river. Past the Seaport Museum. Past the Moshulu, the big old ship with the restaurant in it, all lit up. To the end of the pier, where there\'s nothing but a railing and the black Delaware and Camden glittering on the other side.
 
 She\'s holding your hand. Your cold hand in her warm one. She doesn\'t mention it anymore. Neither do you.
 
@@ -261,7 +261,7 @@ jules: I\'ve been thinking about it all week. Turning it around. *What if it was
 
 She looks out at Camden. At the bridge, blue.
 
-jules: What if it was you, Sam. The man. What if it\'s you, someday. Older. With nobody left.
+jules: What if it was you, Sam. The man. What if it\'s you, someday. Older.
 
 You don\'t say anything. You can feel the note in your wallet like it\'s hot. The index card. Her handwriting: *When I know, you\'ll be the first.* And under it, in yours, a line you never wrote:
 
@@ -301,7 +301,7 @@ jules: He doesn\'t trust me.
 
 She says it slowly, working it out.
 
-jules: He watched Teddy fall. Or he did it. And then he goes and sits by girls\' beds and cries. And he doesn\'t trust me.
+jules: He watched Teddy fall. Or he did it. And then he goes and sits by people\'s beds and cries. And he doesn\'t trust me.
 
 She laughs. It\'s not a happy laugh. It\'s not an unhappy one either. It\'s the sound of somebody who has just been handed the last piece of a puzzle, and found that it\'s a different puzzle.
 

@@ -30,13 +30,13 @@ BRUNO: How many floors.
 
 sam: Mr. Iannucci—
 
-BRUNO: How many floors, how many stairs, how many doors. Where they keep the beds. Who sits in the room with the glass. You were *in* there, Sam. I\'ve had men watching that building for a week, and all they can tell me is the lights go on at night.
+BRUNO: How many floors, how many stairs, how many doors. Where they keep the beds. Who sits up there at night. You were *in* there, Sam. I\'ve had men watching that building for a week, and all they can tell me is the lights go on at night.
 
 He takes a pizzelle and breaks it carefully in half.
 
 BRUNO: This is a job. I want to be clear. It counts. It\'s worth more than an envelope or a fish man on Washington Avenue. ${g.f('bruno_jobs_total') ? 'You\'re at ' + (g.f('bruno_jobs_done') || 0) + ' of ' + g.f('bruno_jobs_total') + '. This makes it ' + ((g.f('bruno_jobs_done') || 0) + 1) + '.' : ''}
 
-You think about twenty-two people in beds on a floor that isn\'t on the drawings. The girl with the rabbit. The old woman, ES-03, who held your hand. *Not tonight, sweetheart.*
+You think about twenty-one people in beds on a floor that isn\'t on the drawings. The girl with the rabbit. The old woman, ES-03, who held your hand. *Not tonight, sweetheart.*
 
 You think about what Bruno\'s men do when they go into a building.
 
@@ -44,7 +44,7 @@ Dante is leaning in the doorway, watching you, smiling a little.`,
     choices: [
       { text: 'Tell him. All of it. Eight floors, two stairs, the glass room, the beds. Halcyon killed Teddy. Let Bruno do what Bruno does.', tag: 'Tell him',
         fx: g => { g.flag('building6', 'true'); g.flag('bruno_jobs_done', (g.f('bruno_jobs_done') || 0) + 1); g.bond('vinnie', { tension: 1 }); g.hidden('revenant_drift', 1); g.hidden('halcyon_heat', 1); g.know('bruno_b7', ['sam', 'bruno', 'dante'], 'You gave Bruno Iannucci the layout of Building 7: the eighth floor, both stairs, the glass room, the ward.'); }, go: 'a2_true' },
-      { text: 'Refuse. "There are twenty-two people asleep on that floor. I\'m not drawing you a map to them."', tag: 'Refuse',
+      { text: 'Refuse. "There are twenty-one people asleep on that floor. I\'m not drawing you a map to them."', tag: 'Refuse',
         fx: g => { g.flag('building6', 'refuse'); g.hidden('revenant_drift', -1); }, go: 'a2_refuse' },
       { text: 'Give him a building. Not that one. Seven floors, one stair, no glass room, no beds. Lie to Bruno Iannucci\'s face.', tag: 'A false map',
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Bruno', on: { strong: 'a2_false', weak: 'a2_false_weak', miss: 'a2_false_weak' } },
@@ -80,7 +80,8 @@ BRUNO: Thank you. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') ||
 
   a2_refuse: {
     loc: 'CIRCOLO SANT\'AGATA · EAST PASSYUNK',
-    text: `sam: There are twenty-two people asleep on that floor. Old people. A kid younger than my sister, with a stuffed rabbit. I\'m not drawing you a map to them.
+    enter: g => { g.know('assunta_bruno', ['sam'], 'In January 1964, Assunta DiNardo pulled six-year-old Bruno Iannucci out of the Schuylkill ice. He told you at the Circolo.'); },
+    text: `sam: There are twenty-one people asleep on that floor. Old people. A kid younger than my sister, with a stuffed rabbit. I\'m not drawing you a map to them.
 
 The back room goes very quiet. In the front room, somebody lays down a card and doesn\'t say anything about it.
 
@@ -111,7 +112,7 @@ BRUNO: Go home. Study. You look tired.`,
     enter: g => { g.flag('false6', 'clean'); g.flag('bruno_jobs_done', (g.f('bruno_jobs_done') || 0) + 1); },
     text: g => `You give him a building.
 
-Seven floors. One stair, the east one. Offices on two through six, a lab on seven with locked doors and a turkey dinner in a room that hasn\'t been cleaned since November. No eighth floor. No beds. The glass room becomes a supply closet. The twenty-two people asleep on the floor that isn\'t on the drawings become nothing at all.
+Seven floors. One stair, the east one. Offices on two through six, a lab on seven with locked doors and a turkey dinner in a room that hasn\'t been cleaned since November. No eighth floor. No beds. The glass room becomes a supply closet. The twenty-one people asleep on the floor that isn\'t on the drawings become nothing at all.
 
 You say it the way you say *I fell asleep in the lounge* to your mother. You keep your hands flat on the oilcloth, where you can see them.
 
@@ -119,7 +120,7 @@ Bruno listens. He nods.
 
 BRUNO: A turkey. Since November.
 
-sam: Thanksgiving. It had a card on it.
+sam: Thanksgiving. Under a silver dome.
 
 BRUNO: Mm. These people. They have no respect for food.
 
@@ -136,7 +137,7 @@ BRUNO: Good boy. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') || 
 
 Seven floors. One stair. Offices. A lab on seven. A turkey. No eighth floor. No beds.
 
-You\'re good at it. You\'ve been lying to your mother since August. But halfway through, you hear yourself say *one stair*, and you remember that you told him, a minute ago, *we came out the back*.
+You\'re good at it. You\'ve been lying to your mother since August. But halfway through, you hear yourself say *one stair*, and you remember that he said it himself, a minute ago, and you let it stand: *you came out the back*.
 
 Bruno heard it too. You see him hear it. He doesn\'t say anything.
 
@@ -187,7 +188,7 @@ DANTE: Who is she?`,
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Dante', on: { strong: 'a2_car_nobody', weak: 'a2_car_nobody', miss: 'a2_car_nobody_bad' } },
         fx: g => { g.flag('jules6', 'nobody'); } },
       { text: '"A reporter. From the Inquirer. She\'s been following me around." Give him somebody he already hates.', tag: 'A reporter',
-        fx: g => { g.flag('jules6', 'reporter'); g.hidden('revenant_drift', 1); g.know('dante_dana', ['sam', 'dante'], 'You told Dante Iannucci the woman across the street at Teddy\'s funeral was a reporter from the Inquirer. He said: "Fiorillo."'); }, go: 'a2_car_reporter' }
+        fx: g => { g.flag('jules6', 'reporter'); g.hidden('revenant_drift', 1); g.know('dante_dana', ['sam', 'dante', 'vinnie'], 'You told Dante Iannucci the woman across the street at Teddy\'s funeral was a reporter from the Inquirer. He said: "Fiorillo."'); }, go: 'a2_car_reporter' }
     ]
   },
 
