@@ -1,8 +1,8 @@
 {
   "engine": "1.0.0",
-  "ep": "s02e01",
-  "savedAt": "2026-10-14T00:03:51.395Z",
-  "scene": "tag_bruno",
+  "ep": "s02e02",
+  "savedAt": "2026-10-14T01:03:05.301Z",
+  "scene": "tag_list",
   "state": {
     "attrs": {
       "body": 3,
@@ -63,11 +63,11 @@
         "trust": 5
       },
       "gigi": {
-        "affection": 3,
+        "affection": 5,
         "met": true,
         "respect": 0,
         "tension": 0,
-        "trust": 2
+        "trust": 3
       },
       "grace": {
         "affection": 1,
@@ -93,7 +93,7 @@
       "jules": {
         "affection": 10,
         "met": true,
-        "respect": 9,
+        "respect": 10,
         "tension": 10,
         "trust": 10
       },
@@ -130,7 +130,7 @@
         "met": true,
         "respect": -1,
         "tension": 0,
-        "trust": -2
+        "trust": -1
       },
       "teddy": {
         "affection": 0,
@@ -155,9 +155,9 @@
       }
     },
     "clock": {
-      "date": "Dec 18",
+      "date": "Dec 25",
       "day": "Fri",
-      "time": "11:58 PM"
+      "time": "3:00 AM"
     },
     "created": 1791831489674,
     "done": [
@@ -171,9 +171,10 @@
       "s01e08",
       "s01e09",
       "s01e10",
-      "s02e01"
+      "s02e01",
+      "s02e02"
     ],
-    "drift": 4,
+    "drift": 3,
     "entered": {
       "s01e01:a1_arrive": true,
       "s01e01:a1_cab": true,
@@ -527,104 +528,115 @@
       "s02e01:a4_roof_yeah": true,
       "s02e01:a4_study": true,
       "s02e01:cold_open": true,
-      "s02e01:tag_bruno": true
+      "s02e01:tag_bruno": true,
+      "s02e02:a1_gigi": true,
+      "s02e02:a1_simone": true,
+      "s02e02:a1_simone_no": true,
+      "s02e02:a1_vigilia": true,
+      "s02e02:a2_call": true,
+      "s02e02:a2_club": true,
+      "s02e02:a2_gate": true,
+      "s02e02:a2_manila": true,
+      "s02e02:a2_run_good": true,
+      "s02e02:a3_feast": true,
+      "s02e02:a3_mass": true,
+      "s02e02:a3_text": true,
+      "s02e02:a4_him": true,
+      "s02e02:a4_key": true,
+      "s02e02:a4_take": true,
+      "s02e02:a4_watch": true,
+      "s02e02:cold_open": true,
+      "s02e02:tag_list": true
     },
-    "ep": "s02e01",
+    "ep": "s02e02",
     "epLog": [
       {
-        "choice": "Stronger. You carried people. Pop. Teddy. Carmen. Your back remembers every one. (Body +1)",
-        "ep": "s02e01",
-        "scene": "a1_mirror",
-        "t": 1791935595099
+        "choice": "Call Simone in Atlanta. You never fixed it. It's Christmas.",
+        "ep": "s02e02",
+        "hub": true,
+        "scene": "a1_vigilia",
+        "t": 1791939340503
       },
       {
-        "choice": "Tell him. All of it. Under 95. The Parkway. Why Bruno wants you. He already knows. Say it out loud.",
-        "ep": "s02e01",
-        "scene": "a1_breakfast",
-        "t": 1791935626867
-      },
-      {
-        "choice": "Show him the real thing. Slip. You know what's in there now. Show him anyway.",
-        "ep": "s02e01",
-        "scene": "a1_mikey",
-        "t": 1791935688516
-      },
-      {
-        "choice": "Don't say yes to the first thing. \"Five. Five jobs, and the whole thing's gone.\"",
-        "ep": "s02e01",
+        "choice": "Wait. Don't fill the silence. Let her decide.",
+        "ep": "s02e02",
         "roll": {
           "dice": [
-            3,
+            1,
             2
           ],
           "kind": "move",
-          "label": "Haggle with Bruno Iannucci",
+          "label": "Apologize to Simone",
           "nudged": false,
           "rewound": false,
-          "tier": "weak"
+          "tier": "miss"
         },
-        "scene": "a2_club",
-        "t": 1791935793279
+        "scene": "a1_simone",
+        "t": 1791939351929
       },
       {
-        "choice": "Don't say anything. Let Teddy do the job. Look at the photo of Krysia on the register the whole time.",
-        "ep": "s02e01",
-        "scene": "a3_pickup",
-        "t": 1791935963286
-      },
-      {
-        "choice": "Study Calc. Femi's notebook, every page, *outside first*. Do it right.",
-        "ep": "s02e01",
+        "choice": "Gigi needs a present for Ma and has eleven dollars. Take her up Passyunk.",
+        "ep": "s02e02",
         "hub": true,
-        "scene": "a4_finals",
-        "t": 1791936079573
+        "scene": "a1_vigilia",
+        "t": 1791939369609
       },
       {
-        "choice": "Jules is in the lounge at the big table with index cards. There's a chair across from her with nobody in it.",
-        "ep": "s02e01",
-        "hub": true,
-        "scene": "a4_finals",
-        "t": 1791936091900
-      },
-      {
-        "choice": "Nik has been building something on those three monitors since Thanksgiving. He keeps looking at you.",
-        "ep": "s02e01",
-        "hub": true,
-        "scene": "a4_finals",
-        "t": 1791936133869
-      },
-      {
-        "choice": "Set it up first. Then solve. You did this problem in the library under a plastic poinsettia.",
-        "ep": "s02e01",
+        "choice": "Borrow Ciro's e-bike. You know these streets. Ride it.",
+        "ep": "s02e02",
         "roll": {
           "dice": [
-            19
+            4,
+            3,
+            2,
+            7,
+            1,
+            8,
+            3
           ],
-          "kind": "d20",
-          "label": "MATH 1041 final",
+          "kind": "pool",
+          "label": "Twelve envelopes before eight",
           "nudged": false,
           "rewound": false,
           "tier": "success"
         },
-        "scene": "a4_final",
-        "t": 1791936156831
+        "scene": "a2_club",
+        "t": 1791939443073
       },
       {
-        "choice": "\"Yeah. All the time.\" Tell her that much. Nothing more.",
-        "ep": "s02e01",
-        "scene": "a4_roof",
-        "t": 1791936191089
+        "choice": "Don't open it. Don't ask. Deliver it. Get home for the fish.",
+        "ep": "s02e02",
+        "scene": "a2_manila",
+        "t": 1791939489714
+      },
+      {
+        "choice": "Text Jules: \"my grandmother just said a name at grace ive never heard before. i think its mine\"",
+        "ep": "s02e02",
+        "scene": "a3_feast",
+        "t": 1791939567441
+      },
+      {
+        "choice": "\"What happened to him? In the cold? Why couldn't he get out?\"",
+        "ep": "s02e02",
+        "scene": "a4_key",
+        "t": 1791939698750
+      },
+      {
+        "choice": "Take the watch. \"I'll learn, Nonna.\"",
+        "ep": "s02e02",
+        "scene": "a4_watch",
+        "t": 1791939751555
       }
     ],
     "epRolls": [
       {
         "dice": [
-          3,
+          1,
           2
         ],
-        "ep": "s02e01",
+        "ep": "s02e02",
         "kind": "move",
-        "label": "Haggle with Bruno Iannucci",
+        "label": "Apologize to Simone",
         "mod": 3,
         "nudged": false,
         "pushes": {
@@ -634,32 +646,38 @@
           "push": true
         },
         "rewound": false,
-        "scene": "a2_club",
-        "tier": "weak"
+        "scene": "a1_simone",
+        "tier": "miss"
       },
       {
         "dice": [
-          19
+          4,
+          3,
+          2,
+          7,
+          1,
+          8,
+          3
         ],
-        "ep": "s02e01",
-        "kind": "d20",
-        "label": "MATH 1041 final",
-        "mod": 12,
+        "ep": "s02e02",
+        "kind": "pool",
+        "label": "Twelve envelopes before eight",
         "nudged": false,
         "pushes": {
-          "burst": false,
-          "focus": true,
+          "burst": true,
+          "focus": false,
           "grit": false,
           "push": true
         },
         "rewound": false,
-        "scene": "a4_final",
+        "s": 2,
+        "scene": "a2_club",
         "tier": "success"
       }
     ],
     "epStart": {
       "attrs": {
-        "body": 2,
+        "body": 3,
         "charm": 3,
         "heart": 3,
         "nerve": 3,
@@ -713,8 +731,8 @@
           "affection": 4,
           "met": true,
           "respect": 0,
-          "tension": 7,
-          "trust": 2
+          "tension": 4,
+          "trust": 5
         },
         "gigi": {
           "affection": 3,
@@ -756,14 +774,14 @@
           "met": true,
           "respect": 0,
           "tension": 0,
-          "trust": 6
+          "trust": 7
         },
         "nik": {
-          "affection": 8,
+          "affection": 9,
           "met": true,
           "respect": 3,
           "tension": 1,
-          "trust": 9
+          "trust": 10
         },
         "nonna": {
           "affection": 4,
@@ -809,9 +827,9 @@
         }
       },
       "clock": {
-        "date": "Nov 26",
-        "day": "Thu",
-        "time": "11:59 PM"
+        "date": "Dec 18",
+        "day": "Fri",
+        "time": "11:58 PM"
       },
       "created": 1791831489674,
       "done": [
@@ -824,7 +842,8 @@
         "s01e07",
         "s01e08",
         "s01e09",
-        "s01e10"
+        "s01e10",
+        "s02e01"
       ],
       "drift": 4,
       "entered": {
@@ -1158,9 +1177,31 @@
         "s01e10:a4_waterworks": true,
         "s01e10:cold_open": true,
         "s01e10:tag_achterberg": true,
-        "s01e10:tag_steps": true
+        "s01e10:tag_steps": true,
+        "s02e01:a1_breakfast": true,
+        "s02e01:a1_card_told": true,
+        "s02e01:a1_clem_slip": true,
+        "s02e01:a1_mikey": true,
+        "s02e01:a1_mikey_end": true,
+        "s02e01:a1_mirror": true,
+        "s02e01:a2_club": true,
+        "s02e01:a2_deal_eight": true,
+        "s02e01:a2_vinnie": true,
+        "s02e01:a3_dante": true,
+        "s02e01:a3_pickup": true,
+        "s02e01:a3_watch": true,
+        "s02e01:a4_final": true,
+        "s02e01:a4_final_good": true,
+        "s02e01:a4_finals": true,
+        "s02e01:a4_jules": true,
+        "s02e01:a4_nik": true,
+        "s02e01:a4_roof": true,
+        "s02e01:a4_roof_yeah": true,
+        "s02e01:a4_study": true,
+        "s02e01:cold_open": true,
+        "s02e01:tag_bruno": true
       },
-      "ep": "s02e01",
+      "ep": "s02e02",
       "epLog": [],
       "epRolls": [],
       "eps": {
@@ -2358,6 +2399,64 @@
             "rolls": 2
           },
           "title": "Broad Street"
+        },
+        "s02e01": {
+          "finished": "2026-10-14T00:03:51.393Z",
+          "summary": {
+            "bonds": [
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": -3,
+                  "trust": 3
+                },
+                "id": "frank",
+                "now": {
+                  "affection": 4,
+                  "respect": 0,
+                  "tension": 4,
+                  "trust": 5
+                }
+              },
+              {
+                "d": {
+                  "affection": 0,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                },
+                "id": "mikey",
+                "now": {
+                  "affection": 2,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 7
+                }
+              },
+              {
+                "d": {
+                  "affection": 1,
+                  "respect": 0,
+                  "tension": 0,
+                  "trust": 1
+                },
+                "id": "nik",
+                "now": {
+                  "affection": 9,
+                  "respect": 3,
+                  "tension": 1,
+                  "trust": 10
+                }
+              }
+            ],
+            "choices": 10,
+            "crits": 1,
+            "fails": 0,
+            "money": 0,
+            "rolls": 2
+          },
+          "title": "After the Holiday"
         }
       },
       "facts": {
@@ -2967,6 +3066,14 @@
           ],
           "text": "Nik was going to transfer to Rutgers in the spring. He withdrew the application on November 2, so he wouldn't be \"the guy who wasn't here.\""
         },
+        "nik_tracker": {
+          "ep": "s02e01",
+          "knownBy": [
+            "sam",
+            "nik"
+          ],
+          "text": "Nik built a map of every place in the city where people reported \"the cold\" since August. It clusters around Kensington, the Navy Yard, and Mifflin Street, with one odd point in Gladwyne."
+        },
         "nonna_felt": {
           "ep": "s01e02",
           "knownBy": [
@@ -3117,7 +3224,8 @@
             "nonna",
             "vinnie",
             "simone",
-            "mikey"
+            "mikey",
+            "frank"
           ],
           "text": "Your secret: when the world stopped, you didn't.",
           "track": true
@@ -3303,11 +3411,17 @@
         "brannigan_saw": true,
         "broke_nik_rule": true,
         "bruno10": "card",
+        "bruno_deal": "eight",
+        "bruno_jobs_done": 1,
+        "bruno_jobs_total": 8,
+        "calc_final": "good",
+        "calc_study_s2": true,
         "called_mikey10": true,
         "called_vinnie": true,
         "callum6": "true",
         "cannoli": "truth",
         "cap10": false,
+        "card_s2": "told",
         "carmen": "hip",
         "carmen_sorry": true,
         "choice10": "both",
@@ -3330,6 +3444,9 @@
         "did_hub_study": true,
         "did_nap": true,
         "did_party": true,
+        "did_s2f_jules": true,
+        "did_s2f_nik": true,
+        "did_s2f_study": true,
         "did_sat6_callum": true,
         "did_sat6_horse": true,
         "did_sat_nap": true,
@@ -3369,6 +3486,7 @@
         "halcyon_peek": "full",
         "hall6": "normal",
         "hands_won": 3,
+        "heat_max_frank": true,
         "heat_max_mikey": true,
         "heat_max_simone": true,
         "heck_fate": "saved",
@@ -3383,11 +3501,13 @@
         "hugh_hand": "won",
         "ily": "too",
         "jacket": true,
+        "job1": "watched",
         "jules4": "some",
         "jules9": "stay",
         "jules_box": true,
         "jules_covered": true,
         "jules_guess": "love",
+        "jules_s2e1": "study",
         "jules_walked": true,
         "kissed": true,
         "leave": "cant",
@@ -3404,12 +3524,15 @@
         "mikey7": "dante",
         "mikey9": "open",
         "mikey_knows": true,
+        "mikey_s2": "slip",
+        "mikey_slip_s2": true,
         "monday": "hanky",
         "mother6": "defend",
         "night": "brooding",
         "nik9": "thanks",
         "nik_greet": "warning",
         "nik_guy": "reluctant",
+        "nik_map_s2": true,
         "nik_panic": "sent",
         "nik_rule": true,
         "nik_rule_kept": true,
@@ -3428,7 +3551,7 @@
         "pop5": "stayed",
         "pop7": "named",
         "pop9": "lied",
-        "pop_knows": "suspects",
+        "pop_knows": "told",
         "pop_money": "took",
         "pr": "listen",
         "pr2": "shared",
@@ -3441,9 +3564,12 @@
         "roof1": "laugh",
         "roof8": "kiss",
         "roof_end": "lean",
+        "roof_s2e1": "yeah",
         "roof_want": "kept",
         "roof_why": "highness",
+        "rosa_overheard": true,
         "run": "fail",
+        "s2_attr": "body",
         "sat_jules": "talk",
         "show_buzz": true,
         "sim6": "bracelet",
@@ -3462,6 +3588,8 @@
         "skipped_hub_weisz": true,
         "skipped_library": true,
         "skipped_practice": true,
+        "skipped_s2f_grace": true,
+        "skipped_s2f_simone": true,
         "skipped_sat6_hugh": true,
         "skipped_sat_ciro": true,
         "skipped_sat_femi": true,
@@ -3507,6 +3635,7 @@
         "under95": "slip",
         "unstick": true,
         "unstick10": true,
+        "unstick_s2e1": true,
         "video": true,
         "vinnie2": "pop",
         "vinnie5": "slipped",
@@ -3515,18 +3644,18 @@
         "xray_healed": true
       },
       "grades": {
-        "calc": 73,
+        "calc": 82,
         "eng": 70,
         "phl": 67,
         "psy": 64
       },
       "heat": {
-        "frank": 1,
+        "frank": 10,
         "jules": 9,
         "mikey": 10,
         "nik": 0,
         "press": 8,
-        "rosa": 2,
+        "rosa": 8,
         "simone": 10
       },
       "hidden": {
@@ -3535,21 +3664,19 @@
         "jules_debt": 5,
         "jules_luck": 0.35,
         "nudges": 1,
-        "revenant_drift": 21.7
+        "revenant_drift": 23.7
       },
       "hub": null,
       "hubs": {},
       "injuries": [
         {
           "affects": [
-            "body",
-            "reflex",
-            "wits"
+            "reflex"
           ],
           "heal": 1,
-          "id": "unstick10",
-          "name": "Time debt (Unstick)",
-          "pen": 2
+          "id": "cold_s2e1",
+          "name": "Slip-cold (stoop)",
+          "pen": 1
         }
       ],
       "julesBonds": {
@@ -3635,11 +3762,11 @@
       "pools": {
         "focus": 6,
         "nerve": 8,
-        "stamina": 6
+        "stamina": 8
       },
       "powers": {
         "slip": {
-          "mastery": 40,
+          "mastery": 42,
           "nodes": [
             "burst",
             "slip",
@@ -3823,6 +3950,26 @@
         {
           "ep": "s01e10",
           "t": "Dr. Achterberg: \"ES-17 is confirmed.\""
+        },
+        {
+          "ep": "s02e01",
+          "t": "After the Parkway, you have a white hair. Grace says in places your body is thirty."
+        },
+        {
+          "ep": "s02e01",
+          "t": "Bruno Iannucci paid for Teddy's mother's transplant evaluation. Teddy works for him now."
+        },
+        {
+          "ep": "s02e01",
+          "t": "You work for him too. Eight jobs to clear Pop's debt."
+        },
+        {
+          "ep": "s02e01",
+          "t": "Jules: \"When I come back. In January. I ask, you answer.\""
+        },
+        {
+          "ep": "s02e01",
+          "t": "Brannigan sat down with Bruno Iannucci and asked for an understanding."
         }
       ],
       "scene": "cold_open",
@@ -3853,9 +4000,9 @@
         "tech": 0
       },
       "sleepDebt": 3,
-      "updated": 1791925369646,
+      "updated": 1791936231393,
       "v": 1,
-      "xp": 1,
+      "xp": 7,
       "xpSpent": 54
     },
     "eps": {
@@ -5111,6 +5258,64 @@
           "rolls": 2
         },
         "title": "After the Holiday"
+      },
+      "s02e02": {
+        "finished": "2026-10-14T01:02:51.913Z",
+        "summary": {
+          "bonds": [
+            {
+              "d": {
+                "affection": 2,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              },
+              "id": "gigi",
+              "now": {
+                "affection": 5,
+                "respect": 0,
+                "tension": 0,
+                "trust": 3
+              }
+            },
+            {
+              "d": {
+                "affection": 0,
+                "respect": 1,
+                "tension": 0,
+                "trust": 0
+              },
+              "id": "jules",
+              "now": {
+                "affection": 10,
+                "respect": 10,
+                "tension": 10,
+                "trust": 10
+              }
+            },
+            {
+              "d": {
+                "affection": 0,
+                "respect": 0,
+                "tension": 0,
+                "trust": 1
+              },
+              "id": "simone",
+              "now": {
+                "affection": 2,
+                "respect": -1,
+                "tension": 0,
+                "trust": -1
+              }
+            }
+          ],
+          "choices": 8,
+          "crits": 1,
+          "fails": 1,
+          "money": -29,
+          "rolls": 2
+        },
+        "title": "Seven Fishes"
       }
     },
     "facts": {
@@ -5129,6 +5334,14 @@
           "nonna"
         ],
         "text": "Nonna's mother, Assunta DiNardo, \"moved\" once, in 1918, during the Liberty Loan parade. She pulled a child out from under a trolley. Nonna says it runs in the women of the family. Until you."
+      },
+      "assunta_diary": {
+        "ep": "s02e02",
+        "knownBy": [
+          "sam",
+          "nonna"
+        ],
+        "text": "Assunta DiNardo's diary: she did it more than once. Every time she came back a little older. On September 28, 1918, there was a man up the street who moved too, and raised his hand to her like a man at a window."
       },
       "brannigan_face": {
         "ep": "s01e08",
@@ -5829,6 +6042,14 @@
         ],
         "text": "You can rewind on purpose now. You reach for the moment you want back, and pull."
       },
+      "salvatore_dinardo": {
+        "ep": "s02e02",
+        "knownBy": [
+          "sam",
+          "nonna"
+        ],
+        "text": "Nonna's older brother was Salvatore DiNardo (1931–1961). He could do what you do, and he never learned to stop. In December 1961 he went in after three children at a fire on Arch Street and came back an old man. He died on Christmas Eve at 11:51. You are named for him."
+      },
       "sam_at_girard": {
         "ep": "s01e02",
         "knownBy": [
@@ -6021,6 +6242,14 @@
         ],
         "text": "Vinnie drives nights for \"Dante from Passyunk.\" Twelve hundred a week, cash."
       },
+      "watch": {
+        "ep": "s02e02",
+        "knownBy": [
+          "sam",
+          "nonna"
+        ],
+        "text": "Salvatore DiNardo's pocket watch, stopped at 11:51. Nonna says in the Slip it's the only thing that ticks. Hold it, and walk toward it."
+      },
       "wawa_guy": {
         "ep": "s01e01",
         "knownBy": [
@@ -6054,10 +6283,12 @@
       }
     },
     "flags": {
+      "_failxp": 1,
       "achterberg6": "lie",
       "after": "handoff",
       "arrive": "slip",
       "ask": "yes",
+      "assunta_watch": true,
       "bail": "truth",
       "barricade10": true,
       "beat_jules_read": true,
@@ -6066,7 +6297,7 @@
       "broke_nik_rule": true,
       "bruno10": "card",
       "bruno_deal": "eight",
-      "bruno_jobs_done": 1,
+      "bruno_jobs_done": 2,
       "bruno_jobs_total": 8,
       "calc_final": "good",
       "calc_study_s2": true,
@@ -6114,12 +6345,16 @@
       "did_wed_carmen": true,
       "did_wed_ma": true,
       "did_wed_vinnie": true,
+      "did_x2_gigi": true,
+      "did_x2_simone": true,
       "door": "highness",
       "end": "slip",
+      "envelopes": "fast",
       "f1": "slip",
       "f2": "ice",
       "f3": "good",
       "family": "clean",
+      "feast_text": "name",
       "femi4": "maybe",
       "femi_dead_found": true,
       "femi_end": "found",
@@ -6132,6 +6367,7 @@
       "first_voluntary_rewind": true,
       "fri_leave": "promise",
       "fridge": "grabbed",
+      "gigi_passyunk": true,
       "gigi_q": "rescue",
       "grace": "open",
       "grace4": "some",
@@ -6163,6 +6399,8 @@
       "jules_guess": "love",
       "jules_s2e1": "study",
       "jules_walked": true,
+      "key_promise": "learn",
+      "key_q": "him",
       "kissed": true,
       "leave": "cant",
       "light": "trade",
@@ -6171,6 +6409,7 @@
       "lounge": "mock",
       "ma2": "joke",
       "ma5": "lied",
+      "manila": "sealed",
       "met_ciro": true,
       "midterm": "shaky",
       "mikey2": "half",
@@ -6227,6 +6466,7 @@
       "sat_jules": "talk",
       "show_buzz": true,
       "sim6": "bracelet",
+      "simone10": "cool",
       "simone9": "lied",
       "simone_roof": "dodged",
       "skipped_dinner": true,
@@ -6263,6 +6503,9 @@
       "skipped_wed_nap": true,
       "skipped_wed_practice": true,
       "skipped_wed_weisz": true,
+      "skipped_x2_jayden": true,
+      "skipped_x2_ma": true,
+      "skipped_x2_pop": true,
       "slip_did": "mask",
       "stairs_result": "success",
       "stoop": "whatif",
@@ -6318,36 +6561,24 @@
       "jules_debt": 5,
       "jules_luck": 0.35,
       "nudges": 1,
-      "revenant_drift": 23.7
+      "revenant_drift": 22.2
     },
-    "hub": "a4_finals",
+    "hub": "a1_vigilia",
     "hubs": {
-      "a4_finals": {
+      "a1_vigilia": {
         "left": 0,
         "used": [
-          "s2f_study",
-          "s2f_jules",
-          "s2f_nik"
+          "x2_simone",
+          "x2_gigi"
         ]
       }
     },
     "injuries": [
       {
         "affects": [
-          "body",
-          "reflex",
-          "wits"
-        ],
-        "heal": 1,
-        "id": "unstick10",
-        "name": "Time debt (Unstick)",
-        "pen": 2
-      },
-      {
-        "affects": [
           "reflex"
         ],
-        "heal": 2,
+        "heal": 1,
         "id": "cold_s2e1",
         "name": "Slip-cold (stoop)",
         "pen": 1
@@ -6429,21 +6660,21 @@
     },
     "lastRoll": null,
     "marked": {
-      "persuade": true,
-      "study": true
+      "empathy": false,
+      "ride": false
     },
     "money": {
       "bank": 312,
-      "cash": 365
+      "cash": 336
     },
     "pools": {
       "focus": 6,
-      "nerve": 8,
-      "stamina": 8
+      "nerve": 6,
+      "stamina": 7
     },
     "powers": {
       "slip": {
-        "mastery": 42,
+        "mastery": 43,
         "nodes": [
           "burst",
           "slip",
@@ -6647,9 +6878,25 @@
       {
         "ep": "s02e01",
         "t": "Brannigan sat down with Bruno Iannucci and asked for an understanding."
+      },
+      {
+        "ep": "s02e02",
+        "t": "Nonna lied. There was a boy: her brother, Salvatore. In 1961 he came back old, and died at the Feast at 11:51."
+      },
+      {
+        "ep": "s02e02",
+        "t": "You have his watch. Nonna says in the cold it's the only thing that ticks."
+      },
+      {
+        "ep": "s02e02",
+        "t": "Brannigan, at the Navy Yard gate: \"When you get tired of being somebody's errand boy, I'm hiring.\""
+      },
+      {
+        "ep": "s02e02",
+        "t": "At 11:51 on Christmas Eve, the bells at St. Monica's stopped for one second."
       }
     ],
-    "scene": "tag_bruno",
+    "scene": "tag_list",
     "season": 2,
     "settings": {
       "motion": true,
@@ -6661,7 +6908,7 @@
       "banter": 3,
       "brawl": 3,
       "cook": 1,
-      "empathy": 2,
+      "empathy": 3,
       "hustle": 1,
       "intimidate": 0,
       "investigate": 1,
@@ -6670,16 +6917,16 @@
       "parkour": 0,
       "perform": 0,
       "persuade": 3,
-      "ride": 2,
+      "ride": 3,
       "stealth": 0,
       "streetwise": 3,
       "study": 3,
       "tech": 0
     },
-    "sleepDebt": 3,
-    "updated": 1791936231393,
+    "sleepDebt": 2,
+    "updated": 1791939784092,
     "v": 1,
-    "xp": 7,
-    "xpSpent": 54
+    "xp": 1,
+    "xpSpent": 66
   }
 }

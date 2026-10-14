@@ -308,6 +308,7 @@
   // every unclean pool or move is nudged until it's clean, and each save adds to her hidden Debt.
   EH.tryNudge = function (S, c, res) {
     const pov = S.pov === 'jules';
+    if (c.noLuck) return false;
     if (!pov && (!c.near || !c.near.includes('jules'))) return false;
     if (EH.isClean(res.tier)) return false;
     if (!pov) {

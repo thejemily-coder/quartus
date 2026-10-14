@@ -323,14 +323,14 @@
       if (ch.cost.cash && S.money.cash < ch.cost.cash) return 'Needs $' + ch.cost.cash + ' cash';
       for (const p of ['stamina', 'focus', 'nerve']) if (ch.cost[p] && S.pools[p] < ch.cost[p]) return 'Needs ' + ch.cost[p] + ' ' + p;
     }
-    const n = ch.need; if (!n) { if (ch.slip) { if (!g.has('slip')) return 'You can\'t do that. Not yet.'; if (S.pools.focus < 2) return 'Needs 2 Focus'; } return null; }
+    const n = ch.need; if (!n) { if (ch.slip) { if (S.pov) return 'Not yours.'; if (!g.has('slip')) return 'You can\'t do that. Not yet.'; if (S.pools.focus < 2) return 'Needs 2 Focus'; } return null; }
     if (n.attr) for (const k in n.attr) if (S.attrs[k] < n.attr[k]) return 'Needs ' + EH.ATTR_NAMES[k] + ' ' + n.attr[k];
     if (n.skill) for (const k in n.skill) if ((S.skills[k] || 0) < n.skill[k]) return 'Needs ' + EH.SKILLS[k] + ' ' + n.skill[k];
     if (n.cash && S.money.cash < n.cash) return 'Needs $' + n.cash + ' cash';
     if (n.focus && S.pools.focus < n.focus) return 'Needs ' + n.focus + ' Focus';
     if (n.stamina && S.pools.stamina < n.stamina) return 'Needs ' + n.stamina + ' Stamina';
     if (n.nerve && S.pools.nerve < n.nerve) return 'Needs ' + n.nerve + ' Nerve';
-    if (ch.slip) { if (!g.has('slip')) return 'You can\'t do that. Not yet.'; if (S.pools.focus < 2) return 'Needs 2 Focus'; }
+    if (ch.slip) { if (S.pov) return 'Not yours.'; if (!g.has('slip')) return 'You can\'t do that. Not yet.'; if (S.pools.focus < 2) return 'Needs 2 Focus'; }
     return null;
   }
   function checkTags(c) {
@@ -539,7 +539,7 @@
       btns[key] = b; pushes.appendChild(b);
     };
     mkPush('push', 'Push', 'Spend 1 Nerve · ' + (c.kind === 'pool' ? '+1 die' : c.kind === 'move' ? '+1' : '+2'));
-    if (c.kind === 'pool' && c.power && g.has('burst')) mkPush('burst', 'Burst', 'Spend 1 Stamina · +2 dice');
+    if (c.kind === 'pool' && c.power && !S.pov && g.has('burst')) mkPush('burst', 'Burst', 'Spend 1 Stamina · +2 dice');
     if (c.kind === 'pool' && (c.attr === 'body' || c.attr === 'reflex')) mkPush('grit', 'Dig Deep', 'Spend 1 Stamina · reroll every 1');
     if (c.kind === 'd20') mkPush('focus', 'Concentrate', 'Spend 1 Focus · +2');
     refresh(); drawCalc();
