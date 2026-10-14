@@ -61,7 +61,7 @@ BRUNO: We\'ll talk. Eat your sfogliatella.
 
 The nurse calls her name. Halina stands up. She doesn\'t touch the coffee.
 
-When she\'s gone, Bruno sits by the window alone and eats his pastry and watches a barge go down the Delaware, very slowly, toward the Navy Yard.`,
+When she\'s gone, Bruno sits by the window alone and eats his pastry and watches a barge go down the Delaware toward the Navy Yard, taking its time.`,
       next: 'titles'
     },
 
@@ -112,11 +112,11 @@ In the morning, she\'s already gone. She left a note on your desk in her precise
 
 She\'s been doing that for two weeks. Holding her breath through everything. Every quiz, every crosswalk, every coin flip. Losing on purpose. ${g.hv('jules_debt') >= 5 ? 'She had a nosebleed in the lounge on Thursday, and another one in the dining hall on Saturday, and she says it\'s the dry air.' : 'She says it\'s getting easier.'}
 
-It isn\'t getting easier. You can see it in her shoulders. It\'s like watching somebody hold a door shut against the wind.
+It isn\'t getting easier. You can see it in her shoulders.
 
 It\'s Valentine\'s week. The ninth floor has hung a single pink paper heart on the lounge door, and somebody has already written *GRIEF IS A SOCIAL CONSTRUCT* on it in Sharpie. You suspect Devontae.
 
-You have three days before anything else happens. You can feel it coming the way you feel 11:51. Something is coming.`,
+You have three days before anything else happens. You can feel it coming, the way you feel 11:51.`,
       hub: {
         slots: 2, label: 'Valentine\'s week',
         blurb: 'Two things before Wednesday.',
@@ -133,7 +133,7 @@ You have three days before anything else happens. You can feel it coming the way
     a1_nik: {
       loc: 'PALEY LIBRARY · 3RD FLOOR',
       enter: g => { g.know('man_across_street', ['nik']); g.know('nik_frame', ['sam', 'nik'], 'Nik saved the Navy Yard camera feed from 00:51:04. In one frame, across the dry dock, a gray-haired man with his left hand raised. He\'s in no other frame.'); g.bond('nik', { trust: 1, affection: 1 }); g.hidden('revenant_drift', -0.5); },
-      text: g => `He\'s on the third floor of Paley, at a carrel in the back, in the same hoodie he wore to the funeral. He has his laptop open and his headphones on and four empty cans of Celsius lined up on the desk like soldiers.
+      text: g => `He\'s on the third floor of Paley, at a carrel in the back, in the same hoodie he wore to the funeral. He has his laptop open and his headphones on and four empty cans of Celsius lined up on the desk.
 
 He doesn\'t hear you come up. On his screen: grainy black and white. A camera on a light pole. The dry dock.
 
@@ -167,7 +167,7 @@ He zooms in. It goes to mush. A smear of gray. But the hand, raised, the fingers
 
 nik: Who is he.
 
-You look at the frame for a long time.
+You look at the frame. Nik looks at you looking at it.
 
 You tell him. The man across Broad Street in the rain. The one with your face. The finger to his lips.
 
@@ -175,7 +175,7 @@ Nik listens to the whole thing with his hands over his mouth.
 
 nik: Okay. Okay. So, I want to say something, and I want you to know I\'m saying it as your friend and as a man who has seen every episode of *Doctor Who* including the bad years.
 
-nik: That\'s you, bro.
+nik: That\'s you, Salvatore.
 
 sam: You don\'t know that.
 
@@ -189,7 +189,7 @@ sam: Yeah.
 
 nik: Then it wasn\'t her. Bro, you have to tell Jules. It wasn\'t *her*.
 
-sam: I did. I told her I saw someone. She said that\'s worse. She said now she doesn\'t even get to know.
+sam: ${g.knows('revenant_push', 'jules') ? 'I did. I told her everything I saw. She said that\'s worse. She said a stranger she could have hated.' : 'I did. I told her I saw someone. She said that\'s worse. She said now she doesn\'t even get to know.'}
 
 Nik thinks about that.
 
@@ -223,6 +223,12 @@ bree: People still text him. Did you know that? Guys from Bruno\'s. *T where u a
 She sits down across from you.
 
 bree: I keep it charged. I don\'t know why. I think if it dies, he\'s more dead.
+
+bree: Somebody calls it. Every night. Three, three-thirty. It rings on the doily and I let it go to him. *It\'s Teddy. Leave it.*
+
+She looks at you.
+
+bree: I figured it was you. Nobody else is up.
 
 Her voice is her own. Hoarse still, a little, like she\'s getting over a cold. She hasn\'t used anybody else\'s since the dry dock. You notice. She sees you notice.
 
@@ -304,7 +310,7 @@ simone: I\'m not asking what happened. I learned. You won\'t tell me, and she\'l
 
 She caps the highlighter.
 
-simone: I\'m asking who he was. That\'s all. Just tell me who he was. Somebody should know who he was who didn\'t know him.`,
+simone: I\'m asking who he was. That\'s all. Just tell me who he was. Somebody who didn\'t know him should know who he was.`,
       choices: [
         { text: 'Tell her who he was. Not what. Who. "His name was Teddy. He was twenty. He was from Port Richmond. He took care of his mother."', tag: 'Who he was',
           check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', label: 'Tell Simone who Teddy was', on: { strong: 'a1_simone_yes', weak: 'a1_simone_yes', miss: 'a1_simone_weak' } } },
@@ -357,7 +363,7 @@ She goes back to her sheet music. But she doesn\'t tell you to leave, so you don
     a1_simone_cant: {
       text: `sam: I can\'t, Simone.
 
-She looks at you for a long time. Then she nods.
+She looks at you. Then she nods.
 
 simone: Okay.
 
@@ -375,7 +381,7 @@ She goes back to her sheet music. You go.`,
       enter: g => { g.bond('rosa', { affection: 2 }); g.hidden('revenant_drift', -0.5); },
       text: g => `Tuesday is meatball night. Tuesday has always been meatball night.
 
-Ma opens the door before you get to it, the way she always does, the way Nonna does, the DiNardo way, *I knew you\'d come.* She takes your face in both hands and looks at it, hard, the way she looks at a kid in her nurse\'s office who says he fell off the monkey bars.
+Ma opens the door before you get to it. DiNardo timing. *I knew you\'d come.* She takes your face in both hands and looks at it, hard, the way she looks at a kid in her nurse\'s office who says he fell off the monkey bars.
 
 ROSA: You\'re not sleeping.
 
@@ -387,15 +393,15 @@ sam: I\'m here, aren\'t I?
 
 She lets go of your face and swats you on the back of the head, lightly, and lets you in.
 
-Dinner. Gigi talks for forty minutes about a girl in her class named Ava who is *literally the worst person alive*. Pop eats in silence and then, without looking up, puts the last meatball on your plate. Nonna watches you from the end of the table over her glasses and doesn\'t say anything, which is louder than anything she could say.
+Dinner. Gigi talks for forty minutes about a girl in her class named Ava who is *literally the worst person alive*. Pop eats in silence and then, without looking up, puts the last meatball on your plate. Nonna watches you over her glasses from the end of the table and doesn\'t eat.
 
 After, Ma washes and you dry, the way it\'s been since you were eight.
 
 ROSA: There was a boy who died at the Navy Yard. It was in the Daily News. Port Richmond boy. Twenty years old. Fell in the dry dock.
 
-You dry a plate. You dry it for a long time.
+You dry a plate. You keep drying it.
 
-ROSA: I saw your face when Mikey said it at Sunday dinner. You didn\'t come to Sunday dinner. Mikey came. Mikey said it, and then he looked at his plate, and he didn\'t look up again.
+ROSA: Mikey said it at Sunday dinner. You weren\'t at Sunday dinner. Mikey said it, and then he looked at his plate, and he didn\'t look up again. That\'s how I knew.
 
 She hands you a glass.
 
@@ -427,7 +433,7 @@ sam: Teddy.
 
 ROSA: Teddy.
 
-She doesn\'t let go for a long time. When she does, she wipes her eyes with the back of her wrist, and looks at the white in your hair, and doesn\'t say anything about it. Yet.` : `sam: No, Ma.
+She holds on through the whole rest of *Jeopardy*. When she does let go, she wipes her eyes with the back of her wrist, and looks at the white in your hair, and doesn\'t say anything about it. Yet.` : `sam: No, Ma.
 
 You dry the glass. You put it away.
 
@@ -439,7 +445,7 @@ She turns the water back on. She washes the pot. She doesn\'t say anything else.
 
 On your way out, Nonna catches your wrist at the door with her small dry hand.
 
-NONNA: Your mother is a DiNardo, Salvatò. She knows when the clocks stop. She has always known. You think you can lie to a woman who knew you were coming before you left the train?
+NONNA: Stunad. Your mother is a DiNardo, Salvatò. She knows when the clocks stop. She has always known. You think you can lie to a woman who knew you were coming before you left the train?
 
 She lets go.
 

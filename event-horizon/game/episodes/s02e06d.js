@@ -28,7 +28,7 @@ And under it, from a number you don\'t have saved:
 TXT 267-555-0143: grandpas guys went in last night
 TXT 267-555-0143: theres a second stair sam. and an 8th floor. no number on the door. beds all stripped. empty
 TXT 267-555-0143: grandpa says hes very interested in long hallways
-TXT 267-555-0143: sunday dinner. march. bring the blonde
+${g.f('jules6') === 'reporter' ? 'TXT 267-555-0143: tell fiorillo the blonde looks good on her' : 'TXT 267-555-0143: sunday dinner. march. bring the blonde'}
 TXT 267-555-0143: — D` : `TXT nik: bro. 6abc. "break-in at navy yard office building overnight, no injuries, halcyon dynamics declined to comment"
 TXT nik: building 7
 TXT nik: BRO
@@ -47,7 +47,7 @@ ${g.f('false6') === 'clean' ? 'You read Dante\'s text again. *Offices. A lab. A 
 
 You sit up.
 
-${g.f('first6') === 'yes' ? 'Jules opens her eyes. She sees your face. She doesn\'t ask if you\'re okay. She can see you\'re not.' : 'Down the hall, a door opens. Jules, in your Temple hoodie, the one she stole in January, with a coffee in each hand, because she always knows. She sees your face in the doorway and stops.'}
+${g.f('first6') === 'yes' ? 'Jules opens her eyes. She sees your face. She doesn\'t ask if you\'re okay. She can see you\'re not.' : 'Down the hall, a door opens. Jules, in your Temple hoodie, the one she stole in January, with a coffee in each hand. Yours is right. She asked you once, in September, and never asked again. She sees your face in the doorway and stops.'}
 
 jules: What happened.`,
     choices: [
@@ -89,7 +89,7 @@ jules: You thought I\'d want one more day. Didn\'t you. You were going to say *n
 
 sam: I thought about it.
 
-jules: I know. I could hear the shape of it.
+jules: I know. I watched you decide.
 
 She puts her hand on your face, warm, and holds it there.
 
@@ -106,11 +106,11 @@ You put the phone face down.
 
 She looks at it. Then at you. For a long moment, she doesn\'t say anything.
 
-jules: You touched your ear.
+jules: You didn\'t touch your ear.
 
-sam: I didn\'t.
+sam: See?
 
-jules: You thought about it. You always think about it.
+jules: You turned the phone over instead. That\'s new. I don\'t like that it\'s new.
 
 She ${g.f('first6') === 'yes' ? 'sits up, and pulls the sheet around her, and' : 'puts the coffees down on your desk, and'} looks at you with an expression you haven\'t seen on her since September. Not angry. Careful. Like she\'s standing at a card table, reading a hand.
 
@@ -122,7 +122,7 @@ jules: The man with your face doesn\'t tell anyone anything either.
 
 She kisses your forehead and goes to take a shower.
 
-You sit on the edge of the bed with your phone face down in your hand, and you think about that for a long time.`,
+You sit on the edge of the bed with your phone face down in your hand, and you don\'t turn it over.`,
     next: 'tag_wall'
   },
 
@@ -161,7 +161,11 @@ ACHTERBERG: Each other. Everything. Seventeen and forty-four read their own file
 
 A pause.
 
-WHITNEY: *(on the phone)* Is that bad?
+WHITNEY: *(on the phone)* Is she happy?
+
+ACHTERBERG: Yes.
+
+WHITNEY: *(on the phone)* Then it isn\'t bad. Is it.
 
 ACHTERBERG: It\'s wonderful. A pair is so much more interesting than two singles. Everything she does now, she does near him. Everything he does, he does for her.
 
@@ -179,15 +183,15 @@ ACHTERBERG: Every place seventeen has been, Cole. Every one. *He* was there firs
 
 BRANNIGAN: Or seventeen goes where he\'s been.
 
-Achterberg is quiet for a moment. She takes off her glasses and cleans them on her cardigan. Her hands are steady again.
+Achterberg is quiet for a moment. She takes off her glasses and cleans them on her cardigan.
 
 ACHTERBERG: Get me something with the boy\'s blood on it.
 
-BRANNIGAN: There\'s a handkerchief. White. Monogrammed. *J.L.P.* She gave it to him in August, the night of the light. He bled on it in October, in recitation. He carries it in his left back pocket.
+BRANNIGAN: There\'s a handkerchief. White. Monogrammed. *J.L.P.* She gave it to him in August, the night of the light. He bled on it three days later, in recitation. He gave it back to her at Thanksgiving, on the wall by the Water Works. She\'s carried it ever since. Inside pocket. The camel coat.
 
 Achterberg puts her glasses back on.
 
-ACHTERBERG: Of course he does.`,
+ACHTERBERG: Of course she does.`,
     end: true
   }
 });

@@ -74,7 +74,7 @@ BRUNO: The people in the beds. I know what you\'re thinking. I\'m not an animal,
 
 He says it like he means it. Maybe he does.
 
-BRUNO: Thank you. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') || 8}. Look at you. Halfway home.`,
+BRUNO: Thank you. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') || 8}. Look at you.`,
     next: 'a2_car'
   },
 
@@ -84,7 +84,7 @@ BRUNO: Thank you. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') ||
 
 The back room goes very quiet. In the front room, somebody lays down a card and doesn\'t say anything about it.
 
-Bruno looks at you for a long time over his espresso.
+Bruno looks at you over his espresso. He takes his time.
 
 BRUNO: You think I would hurt a child.
 
@@ -113,7 +113,7 @@ BRUNO: Go home. Study. You look tired.`,
 
 Seven floors. One stair, the east one. Offices on two through six, a lab on seven with locked doors and a turkey dinner in a room that hasn\'t been cleaned since November. No eighth floor. No beds. The glass room becomes a supply closet. The twenty-two people asleep on the floor that isn\'t on the drawings become nothing at all.
 
-You say it the way you say *I fell asleep in the lounge* to your mother. You don\'t touch your ear. You keep your hands flat on the oilcloth.
+You say it the way you say *I fell asleep in the lounge* to your mother. You keep your hands flat on the oilcloth, where you can see them.
 
 Bruno listens. He nods.
 
@@ -125,7 +125,7 @@ BRUNO: Mm. These people. They have no respect for food.
 
 He believes you. You think he believes you. He pushes the pizzelles toward you, and this time you eat one, because a man who\'s lying doesn\'t eat.
 
-BRUNO: Good boy. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') || 8}. Halfway home.`,
+BRUNO: Good boy. ${g.f('bruno_jobs_done') || 0} of ${g.f('bruno_jobs_total') || 8}.`,
     next: 'a2_car'
   },
 
@@ -171,7 +171,7 @@ DANTE: The blonde.
 
 sam: What?
 
-DANTE: At the funeral. Across the street. Allegheny Avenue. Long coat, no hat, stood there the whole mass like a statue. Never came in. Never came closer. Grandpa noticed her. Grandpa notices everything.
+${g.f('jules_blames5') ? 'DANTE: At the funeral. Across the street. Allegheny Avenue. Long coat, no hat, stood there the whole mass like a statue. Never came in. Never came closer. Grandpa noticed her. Grandpa notices everything.' : 'DANTE: At the funeral. Back pew, next to you. Long coat. Holding your hand under the hymnal like nobody could see. Grandpa could see. Grandpa sees everything.'}
 
 He looks up from his phone.
 
@@ -183,7 +183,7 @@ DANTE: Who is she?`,
     choices: [
       { text: '"My girlfriend." It\'s true. Say it like it\'s nothing.', tag: 'My girlfriend',
         fx: g => { g.flag('jules6', 'girlfriend'); g.know('dante_jules', ['sam', 'dante', 'vinnie'], 'You told Dante Iannucci the blonde across the street at Teddy\'s funeral was your girlfriend. He said: "Bring her to Sunday dinner at Grandpa\'s. In March."'); }, go: 'a2_car_gf' },
-      { text: '"No idea. I didn\'t see anybody." Let Vinnie back you up.', tag: 'Nobody',
+      { text: '"No idea. I didn\'t see anybody." Let Vinnie back you up.', tag: 'Nobody', if: g => g.f('jules_blames5'),
         check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Dante', on: { strong: 'a2_car_nobody', weak: 'a2_car_nobody', miss: 'a2_car_nobody_bad' } },
         fx: g => { g.flag('jules6', 'nobody'); } },
       { text: '"A reporter. From the Inquirer. She\'s been following me around." Give him somebody he already hates.', tag: 'A reporter',
@@ -301,9 +301,9 @@ vinnie: Two seconds. I said I needed smokes.
 
 He doesn\'t smoke. He\'s never smoked. He stands in front of you with his back to the Escalade.
 
-vinnie: Sally. Listen to me. ${g.f('jules6') === 'reporter' ? 'That was the dumbest thing I ever heard you say, and I was there for eighth grade. You just put a lady on Dante\'s phone. You know what Dante\'s phone is? It\'s a list.' : g.f('jules6') === 'girlfriend' ? 'Don\'t bring her. In March. Don\'t bring her anywhere near Passyunk. You hear me?' : 'I covered for you. I\'ll always cover for you. But you gotta stop giving him reasons to look.'}
+vinnie: Yo. Sally. Listen to me. ${g.f('jules6') === 'reporter' ? 'That was the dumbest shit I ever heard you say, and I was there for eighth grade. You just put a lady on Dante\'s phone. You know what Dante\'s phone is? It\'s a list.' : g.f('jules6') === 'girlfriend' ? 'Don\'t bring her. In March. Don\'t bring her anywhere near Passyunk. You hear me?' : 'I covered for you. I\'ll always cover for you. But you gotta stop giving him reasons to look.'}
 
-vinnie: I seen how Grandpa looks at things he wants, college. He looked at Teddy like that. At Thanksgiving, he came out of your house and got in the car and said *that boy*, like that. And at the funeral, out the window of the church, I watched him look across the street at that girl like that, for a whole mass.
+vinnie: I seen how Grandpa looks at things he wants, college. He looked at Teddy like that. At Thanksgiving, he came out of your house and got in the car and said *that boy*, like that. And at the funeral, I watched him look at that girl like that, for a whole mass.
 
 He glances back at the Escalade. The light is green. Dante leans on the horn, once.
 
@@ -319,7 +319,7 @@ sam: Thanks.
 
 vinnie: Yeah, yeah. You owe me a cheesesteak. Not Pat\'s. Not Geno\'s. *Real* one.
 
-He jogs back to the Escalade. It goes. You stand on the corner and watch it go up Broad, toward nothing, toward Cardone Hall, where a girl in a camel coat has spent all week with no luck, losing on purpose.`,
+He jogs back to the Escalade. It goes. You stand on the corner and watch it go up Broad. Then you turn around and walk the half block to Cardone Hall, where a girl in a camel coat has spent all week with no luck, losing on purpose.`,
     next: 'a3_quiz'
   }
 });

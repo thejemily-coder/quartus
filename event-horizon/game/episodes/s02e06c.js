@@ -65,7 +65,11 @@ jules: I have never fallen down, Sam. Not once. Not off a bike, not on ice, not 
 
 sam: Penn\'s Landing. The rink. They have skates. Everybody falls down at the rink. It\'s, like, the whole point of the rink.
 
-She looks at you like you\'ve just offered her the moon.
+jules: Everybody falls down.
+
+sam: Everybody.
+
+jules: *(very quietly)* That\'s the nicest thing anyone\'s ever said to me.
 
 jules: Eight o\'clock. Don\'t be late. I won\'t be lucky.`,
     next: 'a3_rink'
@@ -107,7 +111,7 @@ sam: You fell down.
 
 jules: *I fell down.*
 
-And she starts to laugh. Sitting on the ice. A kid in a Flyers jersey has to swerve around her. She doesn\'t care. She\'s laughing with her whole body, her head back, her hat falling off, steam coming out of her mouth.
+And she starts to laugh. Sitting on the ice. A kid in a Flyers jersey has to swerve around her. She doesn\'t care. She\'s laughing with her head back, her hat falling off, steam coming out of her mouth.
 
 You hold out your hand to pull her up.`,
     choices: [
@@ -152,7 +156,7 @@ She falls down twice more before they close the rink. Both times she lies on the
     enter: g => { g.flag('rink6', 'weak'); },
     text: `You pull her up. She grabs your coat with both mittens. You get about four feet.
 
-Then her left skate goes one way and your right skate goes the other, and you both go down in a pile, your elbow, her knee, a mitten in your mouth, at the exact moment a pack of eighth graders comes around the turn and has to part around you like water around a rock.
+Then her left skate goes one way and your right skate goes the other, and you both go down in a pile, your elbow, her knee, a mitten in your mouth, at the exact moment a pack of eighth graders comes around the turn and has to part around you.
 
 ONE OF THE EIGHTH GRADERS: *Get a room!*
 
@@ -259,7 +263,7 @@ She looks out at Camden. At the bridge, blue.
 
 jules: What if it was you, Sam. The man. What if it\'s you, someday. Older. With nobody left.
 
-You don\'t say anything. You can feel the note in your wallet like it\'s hot. The index card. Her handwriting: *When I know, you\'ll be the first.* And under it, in yours, a hand you didn\'t write with:
+You don\'t say anything. You can feel the note in your wallet like it\'s hot. The index card. Her handwriting: *When I know, you\'ll be the first.* And under it, in yours, a line you never wrote:
 
 *Don\'t trust the lucky one.*
 
@@ -279,7 +283,7 @@ It\'s 11:59.`,
     clock: { day: 'Sun', date: 'Feb 14', time: '12:00 AM' },
     text: `You take out your wallet. You take out the index card. You hold it out to her.
 
-She knows it. Your pencil on the front, from the study night: *What did you mean?* Her own handwriting on the back: *When I know, you\'ll be the first.* Her face does something soft.
+She knows it. Your pencil on the front, from the study night: *What did you mean?* Her own handwriting on the back: *When I know, you\'ll be the first.* She almost laughs. She remembers writing it.
 
 Then she sees the third line.
 
@@ -305,13 +309,13 @@ jules: Do you?
 
 sam: Yeah.
 
-She looks at you for a long time in the light of somebody\'s backyard fireworks.
+She looks at you in the light of somebody\'s backyard fireworks. Pink. White. Pink.
 
 jules: You\'re not touching your ear.
 
 sam: I know.
 
-She folds the card in half. She doesn\'t give it back. She puts it in the inside pocket of her camel coat, next to her heart, and buttons it.
+She folds the card in half. She doesn\'t give it back. She puts it in the inside pocket of her camel coat and buttons it.
 
 jules: Then he\'s wrong about something. Good. I\'ve been waiting three weeks for somebody to be wrong about something.
 
@@ -364,7 +368,7 @@ jules: Sam.
 
 sam: Yeah.
 
-jules: I\'ve been sleeping in your bed for three weeks. In the dark. With my shoes on, half the time. And you haven\'t once—
+jules: I\'ve been sleeping in your bed for three weeks. In the dark. On top of the covers, half the time, like a guest. And you haven\'t once—
 
 She stops. She starts again. She\'s blushing, and she\'s furious about blushing, and she doesn\'t look away.
 
@@ -372,7 +376,7 @@ jules: I want you to come in. Not to sleep. I want—
 
 She stops again.
 
-jules: I\'m very bad at this. I\'ve never been bad at anything. I\'ve never had to *ask*. Things just went my way.
+jules: I\'m very bad at this. I\'ve been bad at things all week. I got a seventy-one. I fell down in front of half of Philadelphia. This is worse. I\'ve never had to *ask*. Things just went my way.
 
 jules: I\'m asking.`,
     choices: [
@@ -389,7 +393,7 @@ jules: I\'m asking.`,
     enter: g => { g.know('first_night', ['sam', 'jules'], 'Valentine\'s Day, 2027, in 9-04, after the rink. The first time.'); },
     text: `She lets you in.
 
-Her side of the room is exactly what you\'d think. Books in order by height. A desk with nothing on it. The camel coat on a wooden hanger on the back of the closet door, buttoned, with an index card in its inside pocket or without one. Simone\'s side looks like a costume shop exploded in it, sequins on everything, a feather boa on the lamp.
+Her side of the room is exactly what you\'d think. Books in order by height. A desk with nothing on it. The camel coat on a wooden hanger on the back of the closet door, buttoned to the collar, even on a hanger. Simone\'s side looks like a costume shop exploded in it, sequins on everything, a feather boa on the lamp.
 
 Jules turns off the lamp. Then she stops with her hand on it.
 
@@ -399,9 +403,15 @@ sam: It\'s your dark. I just live here.
 
 She laughs. Her hand is shaking a little. So is yours.
 
-It isn\'t like a movie. Nobody in movies has a zipper stick on a ski jacket, or bangs a knee on a bed frame and swears, or stops in the middle of a kiss to say, very seriously, *Wait, are you sure*, and then *Yes*, and then *Are YOU sure*, and then laughs so hard the bed shakes.
+Your jacket zipper sticks. She fixes it, frowning, with both hands. Then she starts on the rest of you with exactly the same frown. You bang your knee on the bed frame and say a word you don\'t say in front of Nonna. She stops in the middle of a kiss to say, very seriously, *Wait. Are you sure?* You say *Yes.* She says *Good.* You say *Are YOU sure?* and she laughs so hard the bed knocks the wall, and somebody in 9-06 knocks back.
 
 Her hands are warm. Yours are cold. Every time you touch her she flinches and laughs and says *Kearney, your hands*, and then pulls them back to her, and holds them there, on her skin, until they\'re not cold anymore. It takes a while. She doesn\'t mind the while.
+
+There\'s a bruise coming up on her hip from the ice, the size of a plum. She takes your hand and puts it there. *Feel that,* she says. *That\'s mine.* The first one she\'s ever had. You\'re careful of it. She tells you not to be.
+
+She finds the white at your temple by touch, in the dark, and doesn\'t ask about it. She just keeps her hand there.
+
+You run out of jokes somewhere around then. You don\'t miss them.
 
 At some point, in the dark, she goes very still.
 
@@ -427,9 +437,9 @@ sam: Okay.
 
 jules: *Sam*. It\'s just *us*.
 
-And it is.
+And it is. It\'s clumsy, and then it isn\'t. It\'s slow, because she wants to know what everything is and says so, precisely, out loud, and then it isn\'t slow at all, and neither of you is saying anything precise.
 
-After, she lies with her head on your chest, in the dark, in a narrow dorm bed built for one person, with Simone\'s feather boa throwing faint shadows from the window, and traces something on your ribs with one finger. Letters. You can\'t tell what.
+After, she lies with her head on your chest, in the dark, in a narrow dorm bed built for one person, with Simone\'s feather boa throwing faint shadows from the window, and taps on your ribs with one finger. Slow. It takes you a while to understand she\'s counting. She gets to ninety. She stops. Nothing lets go. She doesn\'t seem to mind.
 
 jules: Your heart is very slow.
 
@@ -448,15 +458,15 @@ You lie there and listen to her breathe, and for the first time since the bottom
     loc: 'CARDONE HALL · 9-04',
     text: `sam: Not tonight.
 
-Her face starts to close, fast, the way a door closes, and you catch it before it does.
+Her face starts to close. You catch it before it does.
 
 sam: Not because I don\'t want to. God. Jules. Look at me. I want to so bad I can\'t see straight.
 
 She looks at you.
 
-sam: It\'s just—three weeks ago we were on the bottom of a dry dock. And tonight\'s the first night since that\'s been just us. I don\'t want the first time to be the night after the first night we were okay. I want it to be a night that\'s only that. Nothing else in it. No Teddy. No him. Just—that.
+sam: It\'s just—three weeks ago we were at the bottom of a dry dock. Tonight\'s the first night since that\'s been just us. I don\'t want the first time to be the night we finally got okay. I want it to be its own night. Nothing else in it. No Teddy. No him. Just us.
 
-She thinks about it. Seriously, the way she thinks about everything.
+She considers it. You can watch her check the work.
 
 jules: That\'s very annoying.
 
