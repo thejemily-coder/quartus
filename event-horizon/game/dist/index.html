@@ -28089,6 +28089,1120 @@ Object.assign(EH.episodes.s02e07, {
   }
 });
 
+/* s02e08.js */
+/* S2 · E8 · MA, part 1 of 4: meta, cold open, Act One ("Sunday"). */
+EH.episode({
+  id: 's02e08', season: 2, number: 8, title: 'Ma', look: 's2',
+  cast: ['sam', 'rosa', 'nonna', 'frank', 'mikey', 'gigi', 'jules', 'simone', 'vinnie'],
+  start: 'cold_open',
+  xp: 5,
+  previously: g => [
+    'Jules played cards for Bruno Iannucci. For Pier 53.',
+    g.f('paid7') ? 'Pop\'s debt to the Iannuccis is paid.' : g.f('split7') ? 'A split pot. Pop\'s debt is half paid. Bruno wants to see her play again.' : 'Somebody paid for the pier.',
+    'Hugh came to Cardone Hall. Now the handkerchief is gone from Jules\'s coat.' + (g.f('note6') === 'told' ? ' So is the card.' : ''),
+    'Ma has known something was wrong since the fall. She has white in her own hair now, from worrying about the white in yours.',
+    g.f('pop7') === 'safe' ? 'Ma wants you home Sunday. Alone.' : 'At Jefferson, Ma looked at your hair. "Salvatore. Outside. Now."'
+  ],
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      loc: 'BOATHOUSE ROW · THE SCHUYLKILL',
+      clock: { day: 'Sun', date: 'Jan 19, 1964', time: '3:12 PM' },
+      text: `> THE CAMERA.
+
+January 1964. Boathouse Row in black and white, or close to it: gray sky, gray ice, the old boathouses with their gingerbread trim and no lights on them yet, because nobody has thought of that yet.
+
+The river is frozen from bank to bank. Kids are on it. They\'re not supposed to be. There\'s a sign. There\'s always a sign.
+
+On the bank, two women in black coats. One is sixty-one, small, with gray hair under a kerchief and a string bag of oranges from the Italian Market. The other is nineteen, dark, sharp-faced, carrying nothing, with her hands jammed in her pockets against the cold.
+
+TERESA: Mamma, we\'ll miss the trolley.
+
+ASSUNTA: Aspetta.
+
+The older woman has stopped walking. She\'s looking at the ice. At a boy, six or seven, in a heavy wool coat, sliding out toward the middle, toward the dark place where the ice is thin over the current, while his friends yell at him from the bank.
+
+ASSUNTA: *(quietly, in Italian)* Teresa. Count for me.
+
+TERESA: Count what?
+
+The ice opens.
+
+There\'s no crack. No sound. One second the boy is there, and the next there\'s a black hole in the white, and his friends are screaming, and the girl on the bank opens her mouth to scream too—
+
+And the bells stop.
+
+Not church bells. *All* of them. The trolley bell on the Parkway. The bell on the boathouse door. The little bell on the Good Humor truck parked on East River Drive in January for no reason. The wind stops. The scream stops in the girl\'s throat.
+
+Teresa can still move her eyes. Only her eyes. She watches her mother put down the bag of oranges, very carefully, on the frozen grass. Watches her walk out onto the ice, not running, walking, like a woman crossing her own kitchen, to the black hole, and kneel, and put both arms in up to the shoulders.
+
+One. Teresa counts. She doesn\'t know why. Two. Three.
+
+On the road behind them, on East River Drive, a long black car has stopped. A young woman in the back seat with the window down, in a fur collar, blonde, twenty-one or so, is also not moving. Except her eyes. Her eyes are on Assunta.
+
+Nine. Ten.
+
+Assunta comes back across the ice with a boy in her arms, soaking, blue, coughing, and sets him down on the grass beside the oranges.
+
+The bells start.
+
+The friends are still screaming. The girl on the bank finishes her scream. The boy\'s mother is running down from the drive with her arms out.
+
+And Assunta DiNardo is sitting on the frozen grass beside her oranges with her hands bleeding from the ice, and when she looks up at her daughter, Teresa sees it. In one minute, in ten seconds, her mother has gotten older. The lines by her eyes. A new gray at her temple.
+
+ASSUNTA: You counted?
+
+TERESA: Ten.
+
+ASSUNTA: Good. You\'ll always count. That\'s what we do. We count.
+
+She picks up her oranges.
+
+ASSUNTA: The men go in. The women count. Remember that, when it\'s your turn. Remember it when it\'s your daughter\'s turn.
+
+Behind them, on East River Drive, the window of the black car goes up. The car pulls away.`,
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_sunday' },
+
+    /* ================= ACT ONE: SUNDAY ================= */
+    a1_sunday: {
+      card: { kind: 'act', label: 'Act One', title: 'Sunday' },
+      loc: 'MIFFLIN STREET · THE KITCHEN',
+      clock: { day: 'Sun', date: 'Mar 14', time: '2:00 PM' },
+      enter: g => { g.sleep(7); },
+      text: g => `Sunday. Alone, she said. So you come alone.
+
+The house on Mifflin Street smells like gravy. It always smells like gravy on Sunday, from nine in the morning, the pot on the back burner, the wooden spoon standing up in it like a flag.
+
+But nobody else is here.
+
+Pop\'s cab isn\'t out front. Gigi\'s sneakers aren\'t by the door. Nonna\'s chair on the stoop is empty, with her cushion on it. The house is so quiet you can hear the clock over the stove, the one that\'s been five minutes fast since 1998, ticking.
+
+Ma is at the kitchen table. Not at the stove. *At the table*, sitting down, with her hands folded in front of her on the oilcloth, in her good blouse, like she\'s waiting for a parent-teacher conference.
+
+There\'s a second chair pulled out across from her.
+
+rosa: Sit.
+
+You sit.
+
+rosa: I sent your father to the Phillies spring training thing at the Linc with Mikey. I sent Gigi to the Iacobuccis. I sent your grandmother upstairs, and I told her if she comes down I\'ll put her in a home, and she laughed at me, and she went.
+
+She looks at you.
+
+rosa: I\'m going to ask you something, Salvatore. And before I ask, I\'m going to tell you something, so you know what kind of question it is.
+
+The clock over the stove ticks.
+
+rosa: On August twenty-second, at 11:51 at night, I was standing at that sink. Washing the big pot. And the clock stopped. That clock. And the water stopped coming out of the faucet. It hung there. Like glass. For one second.
+
+rosa: And I knew it was you.
+
+She doesn\'t blink.
+
+rosa: I didn\'t know what I knew. I just knew. The way I knew you were coming home from the shore a day early when you were eleven, and I made your bed. The way I knew Mikey was hurt in Afghanistan two days before they called. My mother knows things like that. Her mother knew things like that. We *count*, the women in this family. We always know when the clocks stop.
+
+rosa: Since August, the clocks have stopped in this house eleven times. I wrote them down. Every one. On the calendar from St. Monica\'s.
+
+She takes a folded calendar page out of her blouse pocket and puts it on the oilcloth between you. Little red marks. *Aug 22. Aug 29. Sep 19.* All the way down. *Nov 26.* A red circle around that one, gone over so many times the pen tore the paper.
+
+rosa: Thanksgiving. The parade. You came home with white in your hair.
+
+rosa: So here\'s my question.
+
+She leans forward.
+
+rosa: Are you the Blur?
+
+It\'s not *are you okay*. It\'s not *what\'s going on*. It\'s a question you can only answer two ways.
+
+And you remember Nonna in the doorway, a month ago, with her small dry hand on your wrist: *Soon she asks you a question you can\'t answer with no.*`,
+      choices: [
+        { text: '"Yeah, Ma." Tell her. All of it, from the bus on Broad Street. Look at her while you do it.', tag: 'Tell her',
+          fx: g => { g.flag('ma8', 'told'); g.heat('rosa', 10 - g.h('rosa')); g.know('sam_slip', ['rosa']); g.bond('rosa', { trust: 3 }); g.hidden('revenant_drift', -1.5); }, go: 'a1_told' },
+        { text: 'Don\'t tell her. Show her. Right here. The clock will stop. She\'ll see you move.', tag: 'Show her', slip: true,
+          fx: g => { g.flag('ma8', 'shown'); g.heat('rosa', 10 - g.h('rosa')); g.know('sam_slip', ['rosa']); g.bond('rosa', { trust: 2 }); }, go: 'a1_shown' },
+        { text: '"No, Ma." One more time. You can\'t. Not to her.', tag: 'No',
+          fx: g => { g.flag('ma8', 'lied'); g.heat('rosa', 10 - g.h('rosa')); g.know('sam_slip', ['rosa']); g.bond('rosa', { trust: -3 }); g.hidden('revenant_drift', 1); }, go: 'a1_lied' }
+      ]
+    },
+
+    a1_told: {
+      loc: 'MIFFLIN STREET · THE KITCHEN',
+      text: `sam: Yeah, Ma.
+
+You tell her.
+
+The bus at Broad and Spring Garden. A kid in the street. The cold. Girard and the frost on your sneakers. Kensington, the fire on 15th Street, the Wawa. Under I-95. Pop on his knees and the men with the bat. The Parkway. The darts. Building 7. Teddy, on the bottom step, with his arm in the water.
+
+You don\'t tell her everything. Not the man with your face. Not the card. Not Bruno\'s envelopes, not yet. But you tell her the shape of it, and you tell it looking at her, and she doesn\'t look away once.
+
+When you get to Teddy, she puts her hand over her mouth.
+
+When you stop, the clock over the stove says 3:20. You\'ve been talking for an hour and twenty minutes.
+
+She doesn\'t say anything for a while.
+
+Then she gets up. She goes to the stove. She stirs the gravy. She taps the wooden spoon on the side of the pot, twice, the way she\'s done ten thousand times.
+
+She puts the spoon down.
+
+She comes back around the table and takes your face in both hands, the way she did at the door in February, and looks at the white in your hair.
+
+rosa: You\'re eighteen years old.
+
+sam: I know.
+
+rosa: You\'re eighteen years old and you have gray hair, and a dead friend, and you carried your father out from under a highway.
+
+Her hands are shaking.
+
+rosa: And you did it by yourself. Since August. And you didn\'t tell your *mother*.
+
+And that\'s when she cries. Not before. Not at the bus or the Parkway or Teddy. At *that*.`,
+      next: 'a1_who'
+    },
+
+    a1_shown: {
+      loc: 'MIFFLIN STREET · THE KITCHEN',
+      enter: g => { g.unstick('unstick_s2e8', 'Time debt (the kitchen)'); g.know('rosa_saw', ['sam', 'rosa'], 'You Slipped in the kitchen on Mifflin Street so Ma could see. She watched. She counted to nine.'); },
+      text: g => `You don\'t say anything. You look at the clock over the stove.
+
+Then you step through.
+
+${g.f('assunta_watch') ? 'The cold. The watch in your pocket, ticking, the only sound.' : 'The cold.'} The kitchen, stopped. The steam over the gravy pot hanging in the air like a gray cloth. The clock\'s second hand, frozen between the four and the five.
+
+And Ma.
+
+Ma, frozen at the table, leaning forward, in her good blouse.
+
+Except her eyes.
+
+Her eyes are moving. They\'re *following you.* You stand up from your chair and her eyes come up with you. You walk around the table, and her eyes come around too, the way Teresa\'s did on the riverbank, in a story nobody ever told you.
+
+You stand beside her. You take the wooden spoon out of the gravy and put it in her hand, on the table, and fold her frozen fingers around it.
+
+${g.f('assunta_watch') ? 'You find the door by the sound of the watch, and step back through.' : 'You claw your way out.'}
+
+The clock ticks. The steam moves. Ma looks down at the wooden spoon in her hand, dripping gravy onto the oilcloth.
+
+rosa: Nine.
+
+sam: What?
+
+rosa: I counted. Nine seconds. That\'s how long you were gone.
+
+She looks at the spoon. Then at you. At the blood starting at your nose. ${g.unsticks() ? 'At the frost on your sneakers.' : ''}
+
+rosa: I could see you. I couldn\'t move, and I could see you. My *eyes* could move.
+
+She puts the spoon down very carefully.
+
+rosa: My mother told me about that. When I was a little girl. I thought she was telling me a fairy story.
+
+She takes a dish towel off her shoulder and holds it to your nose, the way she\'s done since you were four and got hit in the face with a wiffle ball.
+
+rosa: Hold that. Tilt your head forward, not back, *forward*, I\'m a nurse, Salvatore.
+
+And then she cries, holding the towel to your face. Not at what she saw. At the blood.`,
+      next: 'a1_who'
+    },
+
+    a1_lied: {
+      loc: 'MIFFLIN STREET · THE KITCHEN',
+      text: `sam: No, Ma.
+
+The clock ticks.
+
+Ma looks at you for a long moment across the oilcloth.
+
+Then she nods. Slowly. She folds the calendar page up again and puts it back in her blouse pocket.
+
+rosa: Okay.
+
+sam: Ma—
+
+rosa: No. That\'s fine. That\'s your answer.
+
+She gets up and goes to the stove and stirs the gravy.
+
+rosa: I know you are, Salvatore. I\'ve known since August. I didn\'t need you to tell me *what*. I needed you to tell me *at all*. I needed to know that if I asked you to your face, at my own table, you would trust your mother.
+
+She taps the spoon on the side of the pot. Twice.
+
+rosa: Now I know.
+
+She doesn\'t turn around.
+
+You sit at the table. The clock over the stove is five minutes fast, and it has been since 1998, and right now you\'d give anything for it to stop.
+
+sam: *(finally)* Yeah, Ma. I\'m the Blur.
+
+She doesn\'t turn around.
+
+rosa: I know you are, baby. I asked you first.`,
+      next: 'a1_who'
+    },
+
+    a1_who: {
+      loc: 'MIFFLIN STREET · THE KITCHEN',
+      clock: { time: '4:10 PM' },
+      text: g => `Later. The gravy\'s on low. She\'s made you eat a meatball standing up at the stove, because you\'re too skinny, because some things don\'t change because your son can stop time.
+
+She\'s washing a pot that doesn\'t need washing.
+
+rosa: Who else knows?
+
+You don\'t answer fast enough.
+
+She turns off the water.
+
+rosa: Salvatore. Who else in this family knows?
+
+${g.f('pop_knows') ? 'Pop knows. You told him, under the highway, or he saw. Mikey knows. Mikey\'s known since the fall. Nonna\'s known since before you did.' : 'Mikey knows. Nonna\'s known since before you did.'}
+
+And Ma is standing at the sink, the last one in the house to be told, with her hands dripping.`,
+      choices: [
+        { text: 'Tell her the truth. All of them. Pop, Mikey, Nonna. She\'s going to find out anyway, and she should hear it from you.', tag: 'All of them',
+          fx: g => { g.flag('who8', 'all'); g.bond('rosa', { trust: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a1_who_all' },
+        { text: '"Just Nonna. She felt it. She always feels it." Keep Pop and Mikey out of it. They kept your secret. Keep theirs.', tag: 'Just Nonna',
+          fx: g => { g.flag('who8', 'nonna'); g.bond('frank', { trust: 1 }); g.bond('mikey', { trust: 1 }); }, go: 'a1_who_nonna' }
+      ]
+    },
+
+    a1_who_all: {
+      loc: 'MIFFLIN STREET',
+      enter: g => { g.know('rosa_family', ['sam', 'rosa', 'frank', 'mikey', 'nonna'], 'Ma knows everyone in the family knew before she did. Pop, Mikey, Nonna. She was the last.'); },
+      text: g => `sam: Pop knows. Mikey knows. Nonna knows. ${g.knows('sam_slip', 'jules') ? 'And Jules.' : ''}
+
+Ma stands at the sink for a long time.
+
+rosa: Your father.
+
+sam: Ma, it\'s not his—
+
+rosa: Your *father*, who can\'t keep a surprise party secret, who told me what he got me for Christmas in 1997 on Christmas *Eve* because he couldn\'t stand it. Your father knew.
+
+She dries her hands on the towel over her shoulder. Very slowly.
+
+At six-thirty, Pop and Mikey come home from the Linc with Gigi, all three of them in red, Gigi with a foam finger. They come in loud.
+
+They stop in the doorway of the kitchen.
+
+Ma is sitting at the table. You\'re sitting across from her. Nonna has come down and is sitting at the end, in her black cardigan, with her hands folded, like the judge.
+
+Pop looks at Ma\'s face. He looks at yours. He takes off his Phillies cap.
+
+frank: Ro.
+
+rosa: Gianna. Go upstairs.
+
+gigi: *What?* Why? What happened? What did Sammy—
+
+rosa: *Upstairs*, Gianna Rose.
+
+Gigi goes. You hear her stop on the third step, the one that creaks, to listen. You hear Mikey say *Gigi* without turning around, and you hear her go the rest of the way.
+
+Mikey stands in the doorway with the foam finger in his hand.
+
+mikey: Ma—
+
+rosa: Since when.
+
+mikey: Since the fall.
+
+rosa: *October.* And you, Francis?
+
+Pop sits down heavily. He looks at his hands.
+
+frank: Under 95. He carried me, Ro. I saw him do it. I didn\'t know what I saw. I didn\'t want to know.
+
+rosa: And you didn\'t tell me.
+
+frank: He asked me not to.
+
+rosa: He\'s *eighteen*.
+
+And for the first time in your whole life, you watch your father put his face in his hands at the kitchen table on Mifflin Street, and not take it out.`,
+      next: 'a2_nonna'
+    },
+
+    a1_who_nonna: {
+      loc: 'MIFFLIN STREET',
+      enter: g => { g.know('rosa_nonna', ['sam', 'rosa', 'nonna'], 'You told Ma that only Nonna knew. You kept Pop and Mikey out of it.'); },
+      text: `sam: Just Nonna. She felt it. She always feels it.
+
+Ma looks at you for a long moment. She knows. You can see she knows. She\'s a school nurse; she has heard ten thousand children say *just me*.
+
+rosa: Okay.
+
+She lets you have it. That\'s worse, somehow, than if she\'d fought.
+
+At six-thirty, Pop and Mikey come home from the Linc with Gigi, all three of them in red, Gigi with a foam finger. They come in loud.
+
+They stop in the doorway of the kitchen.
+
+Ma is at the stove. You\'re at the table. Nonna has come down and is sitting at the end, in her black cardigan, with her hands folded, like the judge.
+
+Pop looks at Ma\'s back. Then at you. At the calendar page on the oilcloth with the red marks.
+
+He takes his Phillies cap off.
+
+frank: Ro.
+
+rosa: Sit down, Frank. Eat. It\'s Sunday.
+
+She doesn\'t turn around. She stirs the gravy.
+
+Dinner is the quietest dinner in the history of the house on Mifflin Street. Gigi talks for a while about the game, and then stops, because nobody answers. Mikey looks at you twice. Pop doesn\'t look at anybody.
+
+Nonna watches all of it from the end of the table, eating her macaroni very slowly, and after dinner, when Ma is at the sink and the men are in front of the TV not watching it, she catches your wrist in the hallway.`,
+      next: 'a2_nonna'
+    }
+  }
+});
+
+/* s02e08b.js */
+/* S2 · E8 · MA, part 2 of 4: Act Two ("The Women Count"). */
+EH.scenes('s02e08', {
+
+  /* ================= ACT TWO: THE WOMEN COUNT ================= */
+  a2_nonna: {
+    card: { kind: 'act', label: 'Act Two', title: 'The Women Count' },
+    night: true,
+    loc: 'MIFFLIN STREET · NONNA\'S ROOM',
+    clock: { time: '9:30 PM' },
+    enter: g => { g.know('dinardo_women', ['sam', 'rosa', 'nonna'], 'Nonna: the DiNardo women count. When the clocks stop, their eyes still move. Assunta. Teresa. Rosa. "The men go in. The women count."'); g.know('constance_1964', ['sam', 'rosa', 'nonna'], 'Nonna: in January 1964, at Boathouse Row, a young blonde woman in a black car on East River Drive watched Assunta go into the ice. Her eyes moved too. "A Pemberton. I found out later."'); },
+    text: g => `Nonna\'s room is at the top of the stairs at the front of the house, over the stoop, so she can hear the street. It smells like Jean Naté and candle wax. There\'s a crucifix, and a picture of Padre Pio, and a picture of Nonno in his Navy uniform, and on the dresser, in a frame, a photograph you\'ve never noticed: a small old woman in a kerchief, on a riverbank, in winter, with a bag of oranges.
+
+Nonna sits on the edge of her bed. Ma sits in the chair by the window. You sit on the floor, the way you did when you were small and she told you stories about the old country that you found out later she\'d made up.
+
+nonna: Now it\'s time.
+
+She says it to Ma. Not to you.
+
+nonna: I told your mother, Rosa. Your grandmother Assunta. I told her I\'d tell you when it was time. You were nine. You had a fever, a bad one, and the clock in the hall stopped, and you sat up in bed and said, *Mamma, the clock.* And I knew.
+
+rosa: I remember the fever.
+
+nonna: You don\'t remember the clock. I made sure.
+
+She folds her hands.
+
+nonna: The DiNardo women count. That\'s all. That\'s what we have. When the clocks stop, our eyes keep moving. We can\'t do anything. We can\'t go in. We can only watch, and count, and remember.
+
+nonna: The men go in.
+
+She looks at you.
+
+nonna: My brother Salvatore went in. Three children out of a fire on Arch Street. He came back old. He went in again. And again. Nobody counted for him. He wouldn\'t let us. He died at the Feast at thirty years old with his hair white, Salvatò, and I was sixteen, and I counted to eleven, and then he didn\'t get up.
+
+The room is very quiet.
+
+nonna: My mother went in once more after that. Only once. In 1964, at the Boathouse, for a little boy in the ice. I counted to ten. She came back older. And she never went in again. Never. She said, *Teresa, I\'m done. Now I count.*
+
+rosa: The little boy.
+
+nonna: Bruno Iannucci.
+
+Ma closes her eyes.
+
+nonna: And there was a car. On the Drive. A black car, with a girl in the back seat. Blonde. Twenty, twenty-one. A fur collar. When the bells stopped, her eyes moved too. She watched my mother the whole way out and the whole way back. I saw her. And she saw me see her.
+
+nonna: I found out later who she was. I made it my business. A Pemberton. From the Main Line.
+
+You stop breathing.
+
+You think about a girl in a camel coat. A grandmother in a chapel with no cross. *Some families are lucky. Some are early.*
+
+rosa: *Pemberton?* Salvatore. The girl. Jules.
+
+sam: Her grandmother. Constance. She\'d be—
+
+nonna: Eighty-four. Yes. I read the society pages, Salvatò. I\'m old, I\'m not dead.
+
+She reaches over and takes your face in her small dry hands, the same way Ma did, the same way, generations of the same hands.
+
+nonna: Ask me what you want to ask me. I\'ll answer one. Then I\'m going to sleep. I\'m eighty-one.`,
+    choices: [
+      { text: '"How do I stop? Before I end up like him?"', tag: 'How to stop',
+        fx: g => { g.flag('nonna8', 'stop'); g.know('nonna_stop', ['sam', 'rosa', 'nonna'], 'Nonna: Assunta stopped going in after 1964. "You stop when you let somebody count for you."'); g.hidden('revenant_drift', -1); }, go: 'a2_answer' },
+      { text: '"The man under the streetlight. The one who cries. Who is he?"', tag: 'The man',
+        fx: g => { g.flag('nonna8', 'man'); g.know('nonna_man', ['sam', 'nonna'], 'Nonna on the man under the streetlight: "He walks like my brother. He walks like you. He stands like a DiNardo man who never let anybody count."'); }, go: 'a2_answer' },
+      { text: '"What happens to me? Honestly."', tag: 'What happens',
+        fx: g => { g.flag('nonna8', 'fate'); g.know('nonna_fate', ['sam', 'rosa', 'nonna'], 'Nonna: Salvatore had his first white hair at twenty-five. "You have it at eighteen. You\'re going faster than he did."'); g.bond('nonna', { trust: 2 }); }, go: 'a2_answer' }
+    ]
+  },
+
+  a2_answer: {
+    night: true,
+    loc: 'MIFFLIN STREET · NONNA\'S ROOM',
+    text: g => `${g.f('nonna8') === 'stop' ? `sam: How do I stop? Before I end up like him?
+
+Nonna looks at you a long moment.
+
+nonna: My mother asked her own grandmother that, in Calabria, in 1912. Her grandmother said: *You stop when you let somebody count for you.*
+
+sam: What does that mean?
+
+nonna: It means Salvatore went in alone. Every time. He never told anybody where he was going or what it cost. He came out and he carried it by himself, and every time he carried it, he got older. My mother, after the river, she let me count. She told me. Every time she *felt* it, every time she wanted to go in, she told me, and I counted with her, and she didn\'t go.
+
+She pats your cheek.
+
+nonna: It\'s not magic, Salvatò. It\'s just a family. You let somebody hold one end.` : g.f('nonna8') === 'man' ? `sam: The man under the streetlight. The one who cries. Who is he?
+
+Nonna doesn\'t answer right away. She looks at the window, at the street, at the streetlight at the end of the block, which is on, and has nobody under it.
+
+nonna: I don\'t know.
+
+She says it simply. You believe her.
+
+nonna: I know he walks like my brother. I know he walks like you. I know he stands the way a DiNardo man stands when he\'s been carrying something too long and doesn\'t know how to put it down.
+
+nonna: I know he cries. I don\'t know who for.
+
+She looks back at you.
+
+nonna: The night after Halloween, I opened the window and I said to him, *Go home.* In Italian. He looked up at me. And he said, *I can\'t, Teresa. I don\'t have one.*
+
+nonna: He knew my name, Salvatò. Nobody has called me Teresa since my mother died.` : `sam: What happens to me? Honestly.
+
+Nonna doesn\'t pretend. She never has.
+
+nonna: Salvatore had his first white hair at twenty-five. I remember. I pulled it out for him at the kitchen table, and he laughed. He was dead at thirty.
+
+She touches your temple.
+
+nonna: You have it at eighteen. You\'re going faster than he did, Salvatò. Much faster.
+
+Ma makes a sound by the window.
+
+nonna: That\'s honest. You asked for honest. Now listen to the rest. He went faster every year because he went *alone*. You don\'t have to. Your mother is sitting right there. She can count. She\'s been counting since August. Let her.`}
+
+Nonna lies back on her pillows. She closes her eyes.
+
+nonna: Now go downstairs, both of you, and fight. I can hear you wanting to. Go.`,
+    next: 'a2_terms'
+  },
+
+  a2_terms: {
+    night: true,
+    loc: 'MIFFLIN STREET · THE STOOP',
+    clock: { time: '10:40 PM' },
+    text: g => `You end up on the stoop, the two of you. Ma in her cardigan with her arms crossed. You on Nonna\'s cushion. The streetlight at the end of the block is on, and there\'s nobody under it.
+
+Mifflin Street at night in March. Somebody\'s TV through a window. Somebody\'s dog. The smell of the Delaware when the wind\'s right.
+
+rosa: I want you to stop.
+
+sam: Ma.
+
+rosa: I\'m not stupid, Salvatore. I know what I\'m asking. I know there are people who\'d be dead. That boy on the Parkway. Your father. I *know*. And I want you to stop anyway, because I\'m your mother, and that\'s my job, to want things I can\'t have.
+
+She looks at the streetlight.
+
+rosa: So tell me what you can promise me. Not what I want. What you can actually *do*.`,
+    choices: [
+      { text: '"I\'ll tell you. Every time. Before, if I can. After, if I can\'t. You count. I\'ll let you count."', tag: 'You count',
+        fx: g => { g.flag('terms8', 'count'); g.bond('rosa', { trust: 3, affection: 2 }); g.hidden('revenant_drift', -2); g.know('rosa_counts', ['sam', 'rosa'], 'You promised Ma: every time you Slip, you tell her. Before if you can, after if you can\'t. She counts.'); }, go: 'a2_terms_end' },
+      { text: '"I\'ll stop. Unless somebody\'s going to die. Only then."', tag: 'Only then',
+        fx: g => { g.flag('terms8', 'only'); g.bond('rosa', { trust: 2 }); g.hidden('revenant_drift', -1); g.know('rosa_only', ['sam', 'rosa'], 'You promised Ma you\'d stop Slipping unless somebody was going to die.'); }, go: 'a2_terms_end' },
+      { text: '"I can\'t promise anything, Ma. I won\'t lie to you again. That\'s all I\'ve got."', tag: 'No promises',
+        fx: g => { g.flag('terms8', 'none'); g.bond('rosa', { respect: 2 }); }, go: 'a2_terms_end' }
+    ]
+  },
+
+  a2_terms_end: {
+    night: true,
+    loc: 'MIFFLIN STREET · THE STOOP',
+    text: g => `${g.f('terms8') === 'count' ? `sam: I\'ll tell you. Every time. Before, if I can. After, if I can\'t. You count. I\'ll let you count.
+
+Ma doesn\'t say anything for a while.
+
+rosa: That\'s what my grandmother made my mother promise.
+
+sam: Yeah?
+
+rosa: And my mother made my *father* promise it, about the shipyard, about the drinking. *You tell me. Every time.* He did, mostly. He lived to be eighty.
+
+She uncrosses her arms.
+
+rosa: Okay. I\'ll take it. I\'ll take it in writing, like your girlfriend. I heard about that.` : g.f('terms8') === 'only' ? `sam: I\'ll stop. Unless somebody\'s going to die. Only then.
+
+rosa: Somebody\'s always going to die, Salvatore. That\'s Philadelphia.
+
+sam: Ma.
+
+rosa: No. I\'ll take it. I know what it is. It\'s a promise with a door in it. Your father\'s whole life is promises with doors in them.
+
+She sighs.
+
+rosa: Just tell me after. When you go through the door. You owe me that.` : `sam: I can\'t promise anything, Ma. I won\'t lie to you again. That\'s all I\'ve got.
+
+She laughs. It surprises both of you.
+
+rosa: That\'s the most DiNardo thing anybody\'s said on this stoop since 1964.
+
+She shakes her head.
+
+rosa: Fine. No lying. That\'s worth something. That\'s worth a lot, from you. You lied to me about a fight in the eighth grade for three *years*.`}
+
+She stands up. She kisses the top of your head, on the white.
+
+rosa: Your father told me about Bruno. ${g.f('who8') === 'all' ? 'At the table, after Gigi went up.' : 'Tonight, in our room, with the door shut.'} All of it, the money, the jobs, the girl with the cards. He cried. I\'ve been married to that man for twenty-eight years and I\'ve seen him cry twice.
+
+rosa: Go back to school. Go to class. Eat something. I\'ll handle Bruno Iannucci.
+
+sam: Ma, you can\'t—
+
+rosa: *(already inside, from the hallway)* Goodnight, Salvatore!`,
+    next: 'a3_ciro'
+  }
+});
+
+/* s02e08c.js */
+/* S2 · E8 · MA, part 3 of 4: Act Three ("Passyunk"). */
+EH.scenes('s02e08', {
+
+  /* ================= ACT THREE: PASSYUNK ================= */
+  a3_ciro: {
+    card: { kind: 'act', label: 'Act Three', title: 'Passyunk' },
+    night: true,
+    loc: 'CIRO\'S · CECIL B. MOORE',
+    clock: { day: 'Thu', date: 'Mar 18', time: '8:10 PM' },
+    enter: g => { g.sleep(7); g.money(90); },
+    text: g => `Thursday. Ciro\'s. You\'re at the oven, because it\'s Thursday and that\'s where you are on Thursdays, and Ciro is telling you, in detail, that you slide a pie into the oven like a man returning a library book he didn\'t read.
+
+Your phone buzzes in your apron.
+
+TXT Unknown number: grandpa says friday. the other half. 9pm. same place
+TXT Unknown number: the girl knows. she said yes
+TXT Unknown number: — D
+
+And then, a second later, Jules.
+
+TXT jules: Dante texted me. I said yes. Before you say anything: I\'m playing it straight. I can do it straight. You saw me.
+TXT jules: It\'s the other half of your father\'s paper, Sam. One more night.
+
+You stand there with the peel in your hand and a pie on it, getting cold.
+
+CIRO: The pie. *The pie*, Kearney. It\'s not a photograph. Put it in the oven.
+
+The bell on the door jingles.
+
+Ma.
+
+In her coat, with her purse, at eight o\'clock on a Thursday night, at Ciro\'s on Cecil B. Moore, four miles of Broad Street Line from Mifflin Street. She\'s never been here. She walks straight up to the counter.
+
+rosa: You\'re Ciro.
+
+CIRO: I am Ciro. Who are you?
+
+rosa: I\'m his mother. Give me a slice of plain, please, and give my son five minutes.
+
+Ciro looks at her. Then at you. Then he takes his apron off, and puts a slice on a paper plate, and goes in the back, and you have never in two years seen Ciro leave the front of the store for anybody.
+
+Ma sits on a stool at the counter. She doesn\'t touch the slice.
+
+rosa: Your phone just buzzed. Twice. Bruno\'s grandson, and the girl.
+
+sam: How do you—
+
+rosa: Salvatore. Please.
+
+She folds her hands on the counter.
+
+rosa: Tomorrow morning, at seven o\'clock, I\'m going to the Circolo Sant\'Agata on East Passyunk Avenue, where no woman has walked in the door since 1951, and I am going to talk to Bruno Iannucci.
+
+rosa: I\'m telling you, because you promised me no more lying, and I\'m not going to do to you what you did to me. I\'m not asking.`,
+    choices: [
+      { text: '"Then I\'m coming with you."', tag: 'With her',
+        fx: g => { g.flag('circolo8', 'with'); g.bond('rosa', { trust: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_circolo' },
+      { text: '"Okay, Ma." Let her go alone. It\'s her family\'s debt too. It\'s her grandmother\'s river.', tag: 'Let her go',
+        fx: g => { g.flag('circolo8', 'alone'); g.bond('rosa', { respect: 2 }); g.hidden('revenant_drift', -1); }, go: 'a3_circolo_alone' },
+      { text: 'Say okay. Then go at six. Get there first. Handle Bruno yourself before she can.', tag: 'Beat her there',
+        fx: g => { g.flag('circolo8', 'first'); g.hidden('revenant_drift', 1); }, go: 'a3_circolo_first' }
+    ]
+  },
+
+  a3_circolo_first: {
+    loc: 'CIRCOLO SANT\'AGATA · EAST PASSYUNK',
+    clock: { day: 'Fri', date: 'Mar 19', time: '6:05 AM' },
+    text: `You take the first Broad Street Line train south at 5:30, in the dark, and walk from Tasker-Morris, and you get to the green-painted windows of the Circolo Sant\'Agata at five past six in the morning.
+
+The door\'s unlocked.
+
+Inside, the card tables are empty. The chairs are up. The espresso machine is hissing. And at the little table in the back room, with the oilcloth, across from Bruno Iannucci in his cardigan, with a cup of coffee and a pizzelle in front of her, is your mother.
+
+She looks up at you.
+
+rosa: Six-oh-five. I said six. You always run five minutes late, Salvatore. Since you were born. You were five minutes late being *born*.
+
+Bruno is laughing so hard he has to put his cup down.
+
+BRUNO: She was here at a quarter to. She knocked on the door until Vincenzo let her in. In her slippers, practically. I said, *Rosa, we open at ten.* She said, *Bruno, I\'ll wait.*
+
+rosa: Sit down. You\'re here now. Sit.
+
+You sit.`,
+    next: 'a3_circolo'
+  },
+
+  a3_circolo_alone: {
+    loc: 'CARDONE HALL · 9-14',
+    clock: { day: 'Fri', date: 'Mar 19', time: '7:42 AM' },
+    text: `You don\'t sleep. You lie in bed in 9-14 and watch the ceiling go from black to gray, and at seven o\'clock exactly, you feel it.
+
+Not the cold. Something else. A tightness, like a held breath, coming from the south. From Passyunk. Like your mother is standing very straight somewhere, and you can feel how straight.
+
+At 7:42, your phone rings. Vinnie.
+
+vinnie: Sally.
+
+sam: What happened.
+
+vinnie: Yo. Your mother just walked into the Circolo. The *Circolo*, Sally. In her church coat. Past the sign. Past Sonny Pugliese at the door, who\'s three hundred pounds and was a cop for twenty years. She looked at him and he moved. I swear to God. He *moved*.
+
+sam: Vin. What did she say. What did *he* say.
+
+vinnie: I don\'t know yet. I\'m in the front. They\'re in the back with the door shut. Hold on. Hold on, I\'m gonna put you on speaker in my pocket and stand by the door. Don\'t make a noise.
+
+A rustle. Muffled voices. Then, through the wall of a social club on East Passyunk Avenue and the wool of Vinnie\'s pocket, faint, your mother.`,
+    next: 'a3_circolo'
+  },
+
+  a3_circolo: {
+    loc: 'CIRCOLO SANT\'AGATA · THE BACK ROOM',
+    clock: { day: 'Fri', date: 'Mar 19', time: '7:00 AM' },
+    enter: g => { g.flag('paid8'); g.flag('even8'); g.flag('bruno_jobs_done', g.f('bruno_jobs_total') || 8); g.know('rosa_bruno', ['sam', 'rosa', 'bruno', 'frank'], 'Rosa went to the Circolo and asked Bruno Iannucci, as Assunta DiNardo\'s granddaughter, for Frank\'s paper, her son, and the Pemberton girl. Bruno said yes. "After today, Rosa, we\'re even. The DiNardos and the Iannuccis."'); g.know('bruno_jules_table', ['sam', 'rosa', 'bruno'], 'Bruno: "The Pembertons always come back to the table."'); },
+    text: g => `${g.f('circolo8') === 'with' ? 'You walk in with her at seven. Past the sign. Past Sonny Pugliese at the door, three hundred pounds, twenty years a cop, who looks at your mother in her church coat and *moves*. Into the back room, where Bruno is at the little table with the oilcloth, in his cardigan, with his espresso, and stands up when he sees her.\n\n' : ''}ROSA: Bruno.
+
+BRUNO: Rosa DiNardo. In my club. My father is turning over in Holy Cross.
+
+rosa: Kearney.
+
+BRUNO: You were a DiNardo before you were a Kearney. Sit. Please. Coffee?
+
+rosa: No.
+
+She doesn\'t sit. She stands across the table from him with her purse in front of her in both hands.
+
+rosa: My grandmother pulled you out of the Schuylkill River in January of 1964. Her hands were bleeding from the ice. My mother counted. Ten seconds.
+
+Bruno doesn\'t say anything.
+
+rosa: Sixty-three years. My grandmother never asked you for anything. My mother never asked you for anything. You came to my house at Thanksgiving with your grandson and sat at my table and ate my food, and threatened my husband with your eyes, and my mother never asked you for anything.
+
+rosa: I\'m asking.
+
+The espresso machine hisses in the front room.
+
+rosa: Frank\'s paper. All of it. Gone. Not the half. All of it. My son: no more envelopes, no more jobs, no more Escalade at the curb. You don\'t call him. Your grandson doesn\'t call him. And the girl. The Pemberton girl. She doesn\'t play tonight. She doesn\'t play for you again.
+
+For a long time Bruno doesn\'t move.
+
+Then he sits back in his chair. He looks old. Older than you\'ve ever seen him. Six years old in a wet coat.
+
+BRUNO: She never asked. Your grandmother. Not once. I went to her funeral in 1981 and I stood in the back of St. Monica\'s and I thought, *she never asked me for anything*. It\'s the only debt I have that I never paid.
+
+BRUNO: You know what you\'re spending, Rosa?
+
+rosa: Yes.
+
+BRUNO: After today, we\'re even. The DiNardos and the Iannuccis. No more debt. No more *understanding*. Your husband\'s kneecaps were never his own luck. They were hers. You understand me?
+
+rosa: I understand you.
+
+Bruno nods slowly.
+
+BRUNO: Then it\'s done. Frank\'s paper. The boy. The girl doesn\'t play tonight.
+
+He picks up his espresso.
+
+BRUNO: But I\'ll tell you something for free, Rosa, because I liked your grandmother. The girl will come back. Not to me. To *a* table. Her kind always does. The Pembertons always come back to the table.
+
+He drinks.
+
+BRUNO: Go home. Tell Frank his paper\'s clean. Tell him from me: *don\'t bet the Eagles.*`,
+    next: 'a3_after'
+  },
+
+  a3_after: {
+    loc: 'PASSYUNK SQUARE',
+    clock: { time: '8:05 AM' },
+    text: g => `${g.f('circolo8') === 'alone' ? 'You take the subway down. You get there at 8:05. She\'s sitting on the edge of the fountain at Passyunk Square, in her church coat, in the cold, with her purse in her lap, alone, watching the water.' : 'Outside, on East Passyunk, in the cold morning, she walks fast, three blocks, without saying anything, to the fountain at Passyunk Square. She sits down on the edge of it in her church coat, with her purse in her lap.'}
+
+You sit down next to her.
+
+Her hands are shaking. Not a little. A lot.
+
+rosa: I just spent my grandmother.
+
+sam: Ma.
+
+rosa: Sixty-three years. She never asked him for anything. She could have. A hundred times. My father\'s shipyard job. Uncle Joey\'s trouble in 1979. She never asked. She saved it. I don\'t know what for. I don\'t think she knew.
+
+She laughs.
+
+rosa: And I just walked in there in my church coat and spent it. On your father\'s gambling. On a girl from the Main Line I\'ve met twice.
+
+She looks at you.
+
+rosa: On you.
+
+The fountain is off. It\'s March. There\'s nothing in it but pennies and a Wawa cup.
+
+${g.f('terms8') === 'count' ? 'ROSA: You promised me I could count. So I\'m counting. That\'s one. That\'s one I did for you, Salvatore. Don\'t make me spend anything else.' : 'ROSA: Don\'t make me spend anything else, Salvatore. I don\'t have anything else. That was it. That was the whole DiNardo bank.'}
+
+You put your arm around your mother on the edge of a dry fountain on a Friday morning in March, and she lets you, and she cries for exactly one minute by your watch and then stops, and wipes her eyes with the back of her wrist, and stands up.
+
+rosa: I have a second-grade field trip to the Franklin Institute at nine-fifteen. Go to class.`,
+    next: 'a3_jules'
+  },
+
+  a3_jules: {
+    loc: 'CARDONE HALL · 9TH FLOOR LOUNGE',
+    clock: { time: '11:30 AM' },
+    text: g => `You find Jules in the lounge at the big table with her orgo book open, not reading it, with her phone face down beside it.
+
+She looks up.
+
+jules: Dante texted. Twenty minutes ago.
+
+She turns the phone over.
+
+TXT Unknown number: tonights off. grandpa says the girl doesnt play. ever. paper is clean
+TXT Unknown number: your boyfriends mother is a scary lady
+TXT Unknown number: — D
+
+jules: What did you do?
+
+sam: Nothing. I didn\'t do anything.
+
+jules: Sam.
+
+sam: My mother did.
+
+You tell her. The Circolo. The river. *I\'m asking.* The whole DiNardo bank, spent in a back room on Passyunk Avenue in one morning.
+
+When you\'re done, Jules sits there for a long time with her hand flat on her orgo book.
+
+jules: Your mother walked into a Mafia social club at seven in the morning and told Bruno Iannucci I don\'t play cards anymore.
+
+sam: Yeah.
+
+jules: For me.
+
+sam: For all of us. But yeah. You were on the list.
+
+Jules closes her eyes.
+
+jules: Nobody has ever—
+
+She stops. She starts again.
+
+jules: My mother has never once walked into a room for me. Not once. Not a parent-teacher conference. Not a horse show. She sends Margaret. Margaret is the house manager.
+
+She opens her eyes. They\'re wet. She doesn\'t cry in front of people. She\'s not crying. She\'s very carefully not crying.
+
+jules: I\'d like to meet her. Properly. Not at a Thanksgiving with Bruno Iannucci at the table. I\'d like to bring her flowers. What kind of flowers does she like?
+
+sam: Carnations. From the Acme. She says roses are for people who don\'t know what anything costs.
+
+jules: *(very quietly)* Oh, I love her.`,
+    next: 'a4_closing'
+  }
+});
+
+/* s02e08d.js */
+/* S2 · E8 · MA, part 4 of 4: Act Four ("Sunday Again"), tag, polls. */
+EH.scenes('s02e08', {
+
+  /* ================= ACT FOUR: SUNDAY AGAIN ================= */
+  a4_closing: {
+    card: { kind: 'act', label: 'Act Four', title: 'Sunday Again' },
+    night: true,
+    loc: 'TOMLINSON THEATER',
+    clock: { day: 'Sat', date: 'Mar 20', time: '7:20 PM' },
+    enter: g => { g.sleep(8); },
+    text: g => `Saturday is closing night of *Mummers: The Musical*.
+
+${g.f('friday7') === 'slip' ? 'You were there on opening night. Every song. She left a heart on your door.' : g.f('friday7') === 'half' ? 'You saw half of it on opening night. She watched you leave at intermission. She hasn\'t said a word to you since that wasn\'t about the weather.' : 'You weren\'t there on opening night. Row C, seat nine, empty, in the middle of the third row, where the whole cast could see it. She hasn\'t said a word to you since.'}
+
+There\'s a box office window at the Tomlinson with a sophomore in it doing calculus homework. You have forty dollars in your pocket from Ciro\'s.
+
+sam: One for tonight. Row C, if you have it. Seat nine.
+
+The sophomore looks it up.
+
+SOPHOMORE: Row C, nine, is held. *Comp. Do not sell.* It\'s been held all run.
+
+sam: Held for who?
+
+He turns the screen around. In the notes field, in all caps, typed by somebody who types like she talks:
+
+*FOR SALVATORE KEARNEY. IF HE EVER SHOWS UP. — S.O.H.*`,
+    choices: [
+      { text: 'Sit in it. Every song. And after, find her backstage, and tell her the true thing you\'ve been afraid to tell her since September.', tag: 'Row C',
+        check: { kind: 'move', move: 'Open Up', attr: 'heart', skill: 'empathy', label: 'Make it right with Simone', on: { strong: 'a4_simone_yes', weak: 'a4_simone_yes', miss: 'a4_simone_partial' } },
+        fx: g => { g.flag('closing8', 'went'); } },
+      { text: 'Sit in it. Every song. Then leave before the lights come up. Let the seat be the apology.', tag: 'Just the seat',
+        fx: g => { g.flag('closing8', 'seat'); g.bond('simone', { trust: 1 }); }, go: 'a4_simone_seat' }
+    ]
+  },
+
+  a4_simone_yes: {
+    night: true,
+    loc: 'TOMLINSON THEATER · BACKSTAGE',
+    enter: g => { g.flag('simone10', 'mended'); g.flag('simone8', 'told'); g.bond('simone', { trust: 4, respect: 2, affection: 2 }); g.hidden('revenant_drift', -1); },
+    text: g => `Backstage after closing is a riot of sequins and crying freshmen and somebody\'s mother with a sheet cake. Kyle is holding the feathered hat over his head like a trophy.
+
+Simone is in the wings in her headset, alone, coiling cable.
+
+She sees you. She doesn\'t stop coiling.
+
+simone: Row C. Nine.
+
+sam: Every song.
+
+simone: I saw.
+
+She coils.
+
+sam: Simone. Opening night, I wasn\'t there because a man from the Mafia asked my girlfriend to play poker for a pier on Columbus Boulevard, and I had to be in the room so she could look at me. That\'s true. It sounds insane. It\'s true.
+
+She stops coiling.
+
+sam: And in September, when you asked me in the theater, and I lied, I lied because I can stop time. Not like a metaphor. When the world stops, I don\'t. It\'s why my hair\'s white. It\'s why Femi came to my door. It\'s why I bleed. ${g.knows('sam_slip', 'simone') ? 'You knew. You figured it out before I ever said it. I know you did. I\'m saying it anyway, because you deserved to hear it from me.' : ''}
+
+The cable is hanging from her hand.
+
+Simone Okonkwo-Hayes, who always has a line, doesn\'t have one.
+
+Then she does.
+
+simone: *Thank* you.
+
+She drops the cable. She puts both her hands on either side of your face, the way your mother did, the way Nonna did.
+
+simone: Salvatore Kearney. That is the first time in seven months anyone on that floor has told me the whole truth. I had it on a *list*. I had it on a list in September and I had to sit with it alone for seven months while two people I love lied to my face.
+
+simone: Do you know what that *does* to a person?
+
+sam: I\'m sorry.
+
+simone: I know you are. You\'ve been sorry since October. Sorry is cheap, baby. *This* is what costs.
+
+She lets go of your face. She picks the cable back up.
+
+simone: Now go away. Grace is taking me for pancakes at the Melrose, and she\'s been waiting by the stage door for twenty minutes in the cold, and that woman *hates* waiting.`,
+    next: 'a4_dinner'
+  },
+
+  a4_simone_partial: {
+    night: true,
+    loc: 'TOMLINSON THEATER · BACKSTAGE',
+    enter: g => { g.flag('simone8', 'tried'); g.bond('simone', { trust: 2 }); },
+    text: `Backstage after closing. Sequins, crying freshmen, a sheet cake. Simone in the wings in her headset, coiling cable.
+
+You open your mouth to tell her.
+
+And it doesn\'t come. The whole true thing, the bus, the cold, the stopped world, it gets as far as the back of your throat and stops there, like the second closing.
+
+sam: I— Simone. I can\'t—
+
+She watches you try. She watches you fail. She doesn\'t rescue you.
+
+simone: You came to closing.
+
+sam: Yeah.
+
+simone: Every song?
+
+sam: Every song.
+
+She coils the cable. She doesn\'t look at you.
+
+simone: That\'s not nothing. I\'m not saying it\'s enough. I\'m saying it\'s not nothing.
+
+She hangs the cable on its hook.
+
+simone: Try again sometime, Salvatore. When it\'ll come out.`,
+    next: 'a4_dinner'
+  },
+
+  a4_simone_seat: {
+    night: true,
+    loc: 'TOMLINSON THEATER',
+    text: `You sit in Row C, seat nine, and watch every song.
+
+The strut. The man in the feathered hat. The second act, about the Mummers captain whose brother died, and the girl in the sequined cape singing alone in a spotlight about a man who went into the cold for somebody and didn\'t come back.
+
+You cry. In Row C. You don\'t try not to.
+
+At the curtain call, before the lights come up, you get up and go.
+
+On Sunday morning, there\'s a Post-it on your door in her handwriting.
+
+*I SAW YOU CRY AT THE CAPTAIN SONG. THAT\'S ONE. — S.*
+
+It\'s not forgiveness. It\'s a receipt.`,
+    next: 'a4_dinner'
+  },
+
+  a4_dinner: {
+    loc: 'MIFFLIN STREET',
+    clock: { day: 'Sun', date: 'Mar 21', time: '3:00 PM' },
+    enter: g => { g.know('constance_1964', ['jules']); g.know('nonna_constance', ['sam', 'jules', 'nonna'], 'Nonna to Jules: "Tell your grandmother Teresa DiNardo says hello. From the Boathouse. She\'ll know."'); g.bond('rosa', { affection: 2 }); g.bond('jules', { affection: 1 }); g.meet('gigi'); },
+    text: g => `Sunday. Mifflin Street. Gravy since nine.
+
+Jules is on the stoop at five to three in a navy dress with sleeves, holding a bouquet of carnations from the Acme on Passyunk, pink and white, eleven dollars and ninety-nine cents. She\'s been standing there for ten minutes, you find out later from Gigi, who watched from the window. She was holding her breath.
+
+Ma opens the door before she knocks.
+
+They look at each other.
+
+rosa: You lied to me. In October. On the phone. *He fell asleep on the lounge couch with his calculus book on his face.*
+
+jules: Yes, Mrs. Kearney.
+
+rosa: You put a blanket on him.
+
+jules: I said I did. There wasn\'t a blanket. He was under I-95.
+
+Ma looks at her a long moment.
+
+rosa: Good. Somebody should have been lying for him. Better you than him. You\'re better at it.
+
+She takes the carnations.
+
+rosa: Carnations. Who told you?
+
+jules: He did. He said roses are for people who don\'t know what anything costs.
+
+rosa: *(over her shoulder, into the house)* Frank! She brought carnations!
+
+frank: *(from the living room)* Good girl!
+
+Dinner is loud. It\'s the loudest dinner on Mifflin Street since Christmas. Gigi asks Jules forty questions about Gladwyne and whether she has a horse, and Jules says she *had* a horse, and something in her face changes, and Gigi, who is thirteen and notices everything, changes the subject to Taylor Swift. Pop, whose paper is clean, eats two plates and talks about the Phillies\' bullpen. Mikey watches Jules the way a cop watches people, and then, halfway through, laughs at something she says and stops watching.
+
+Nonna sits at the end of the table and doesn\'t say anything until the cannoli.
+
+Then she leans over to Jules. Very close. In a voice just for her, and you, sitting between them.
+
+nonna: Your grandmother. Constance.
+
+Jules goes still.
+
+nonna: I saw her once. In 1964. At the Boathouse, on the Drive, in a black car, with a fur collar. When the bells stopped. Her eyes moved. Mine too.
+
+jules: *(barely)* Her eyes—
+
+nonna: You tell her something for me. Tell her Teresa DiNardo says hello. From the Boathouse. She\'ll know.
+
+She pats Jules\'s hand.
+
+nonna: Now eat. You\'re too skinny. All of you are too skinny. Madonna, the young people.
+
+${g.f('terms8') === 'count' ? 'After dinner, on the stoop, in the cold, Ma sits down next to you on Nonna\'s cushion. She doesn\'t say anything. She holds out her hand, palm up, the way she did when you were six and had something in your pocket you weren\'t supposed to have.\n\nROSA: Since Sunday.\n\nsam: None, Ma. I haven\'t gone in once.\n\nShe nods. She closes her hand.\n\nROSA: Zero. Good. I\'m writing it down.' : 'After dinner, on the stoop, in the cold, Ma sits down next to you on Nonna\'s cushion and doesn\'t say anything. Through the window behind you, you can hear Jules and Gigi doing the dishes, and Jules laughing at something, with her whole body.\n\nROSA: She laughs like you.\n\nsam: Yeah?\n\nROSA: Like it costs her something. Like she\'s paying for it.'}`,
+    next: 'tag_lab'
+  },
+
+  /* ================= TAG ================= */
+  tag_lab: {
+    card: { kind: 'tag' },
+    night: true,
+    loc: 'NAVY YARD · BUILDING 10 · THE LAB',
+    clock: { day: 'Mon', date: 'Mar 22', time: '6:00 AM' },
+    text: g => `> THE CAMERA.
+
+A lab. White, cold, humming. A technician in a paper mask is sitting at a screen with a printout in her hand, and Dr. Achterberg is standing behind her, reading over her shoulder.
+
+TECHNICIAN: Two samples on the handkerchief. Same donor. Male. One from late August, maybe. One from late November.
+
+ACHTERBERG: And?
+
+TECHNICIAN: The August sample\'s telomere length is consistent with a man of eighteen or nineteen.
+
+ACHTERBERG: And November?
+
+The technician looks at the printout again. She\'s run it three times. You can see on her face that she\'s run it three times.
+
+TECHNICIAN: Thirty-one.
+
+Achterberg doesn\'t say anything.
+
+TECHNICIAN: Three months. Twelve years of cellular aging in three months. That\'s not— Doctor, that\'s not a thing that happens.
+
+ACHTERBERG: *(quietly)* He\'s spending himself.
+
+She takes the printout. She folds it in half.
+
+ACHTERBERG: Every time he stops the clock, he pays for it in years. Like the old reports. Like the brother in 1961.
+
+She walks to the window. The dry dock below, gray in the dawn.
+
+ACHTERBERG: At this rate he\'ll be forty by Christmas.
+
+> ELSEWHERE.
+
+Ravenscourt. The terrace. Four in the afternoon, the one cigarette.
+
+Constance Pemberton in a camel hair coat older than her grandchildren, at the stone balustrade, looking at the lawn.
+
+Hugh comes out through the French doors with his hands in the pockets of his crew jacket.
+
+hugh: Gran.
+
+constance: Hugh.
+
+${g.f('note6') === 'told' ? 'He takes his hand out of his pocket. He holds out an index card, folded in half, soft at the corners.\n\nhugh: I found this. In Jubilee\'s coat. I wasn\'t— I didn\'t— I just found it.\n\nConstance takes the card without looking at him. She unfolds it. She reads the front. She reads the back.\n\n*Don\'t trust the lucky one.*\n\nShe reads it for a long time. Her cigarette burns down.\n\nhugh: Who wrote it? Is it the boyfriend? It\'s his writing, I think. Is he—\n\nconstance: No.\n\nShe folds the card. She puts it in the pocket of her coat.\n\nconstance: Someone who loved her very much. And was wrong.\n\nhugh: About what?\n\nconstance: About which of us to be afraid of.' : 'He stands beside her at the balustrade. He doesn\'t say anything for a long time.\n\nhugh: Gran. What is she?\n\nConstance doesn\'t look at him.\n\nconstance: Who have you been talking to, Hugh?\n\nHe doesn\'t answer. That\'s an answer.'}
+
+She stubs out the cigarette on the stone.
+
+constance: Go inside. Your father wants you. He always wants you, Hugh. That\'s what you have that she doesn\'t. Try to remember it\'s worth something.
+
+He goes.
+
+She stands alone on the terrace and looks east, toward the city, toward a river, toward a Boathouse sixty-three years ago, and her lips move.
+
+*Teresa.*`,
+    end: true
+  }
+});
+
+Object.assign(EH.episodes.s02e08, {
+  polls: [
+    { q: '"Are you the Blur?"', opts: [
+      { label: 'Told her', pct: 58, if: g => g.f('ma8') === 'told' },
+      { label: 'Showed her', pct: 29, if: g => g.f('ma8') === 'shown' },
+      { label: 'Said no', pct: 13, if: g => g.f('ma8') === 'lied' }
+    ] },
+    { q: 'What you promised Ma', opts: [
+      { label: 'She counts', pct: 54, if: g => g.f('terms8') === 'count' },
+      { label: 'Only if somebody\'s dying', pct: 31, if: g => g.f('terms8') === 'only' },
+      { label: 'No promises', pct: 15, if: g => g.f('terms8') === 'none' }
+    ] },
+    { q: 'The Circolo', opts: [
+      { label: 'Went with her', pct: 49, if: g => g.f('circolo8') === 'with' },
+      { label: 'Let her go alone', pct: 23, if: g => g.f('circolo8') === 'alone' },
+      { label: 'Tried to beat her there', pct: 28, if: g => g.f('circolo8') === 'first' }
+    ] }
+  ],
+  onEnd: g => {
+    g.recap('Ma knows. "Are you the Blur?"');
+    g.recap('The DiNardo women count. When the clocks stop, their eyes still move.');
+    g.recap('Nonna saw a Pemberton girl in a black car at the Boathouse in 1964. Her eyes moved too.');
+    g.recap('Ma walked into the Circolo and spent the DiNardo debt. Pop\'s paper is clean. Jules doesn\'t play. "After today, we\'re even."');
+    if (g.f('simone10') === 'mended') g.recap('You told Simone the whole truth, backstage, on closing night.');
+    g.recap('Halcyon tested your blood. Three months, twelve years.');
+  }
+});
+
 </script>
 <script>
 /* THE EVENT HORIZON: browser engine (UI, sound, saves). Depends on core.js and the episode files. */

@@ -242,3 +242,32 @@ Write each episode to the save. The plan bends; the save doesn't.
     - Nonna's "Now it's time" is saved for E8.
     - The split is capped at total-1.
     - `pop7` now means the S2E7 outcome (the S1E7 value is overwritten).
+- **S2E8 "Ma"** (Mar 14–22) was written for this playthrough's S2E7 save (split pot, Pop safe, "Sunday. Alone.").
+  - **Cold open, Jan 19, 1964, Boathouse Row:** Assunta (61) walks out onto the ice for six-year-old Bruno. Teresa (19) counts to ten. A blonde girl in a black car on East River Drive (Constance, 21) watches; **her eyes move too**. Assunta: "The men go in. The women count."
+  - **Act One "Sunday":** Ma at the kitchen table with the St. Monica's calendar: 11 red marks since Aug 22, Thanksgiving circled. "Are you the Blur?"
+    - Tell / **show** (Slip: her eyes follow him; she counts nine) / lie ("I asked you first").
+    - Every branch sets **heat_max_rosa**.
+    - "Who else knows?" All of them (Pop's face in his hands, Gigi sent upstairs) / just Nonna.
+  - **Act Two "The Women Count":**
+    - Nonna's room: the DiNardo women count. Rosa's fever at nine (the hall clock). Salvatore died at 30; Assunta's last time was 1964. **The Pemberton girl in the car** (`constance_1964`).
+    - One question:
+      - How to stop: "You let somebody count for you."
+      - The streetlight man: "I can't, Teresa. I don't have one." He knew her name.
+      - What happens: "You're going faster than he did."
+    - Rosa's terms: she counts (`terms8` 'count', drift −2) / only if somebody's dying / no promises.
+  - **Act Three "Passyunk":**
+    - Dante: "the other half, Friday." Rosa appears at Ciro's.
+    - Go with her / let her go alone (Vinnie's pocket on speaker) / beat her there (she was there at a quarter to six).
+    - **Rosa spends the DiNardo debt:** Frank's paper is clean, Sam is free, Jules never plays. **"After today, we're even."** The DiNardo protection is gone, which sets up E9 (the war reaches South Philly). "The Pembertons always come back to the table."
+    - The fountain at Passyunk Square: "I just spent my grandmother." Jules: "Oh, I love her" (carnations from the Acme).
+  - **Act Four "Sunday Again":**
+    - Simone's closing night. Row C nine was held all run: *"FOR SALVATORE KEARNEY. IF HE EVER SHOWS UP."* The Open Up roll mends her (the full truth) / the seat alone.
+    - **Jules at Mifflin dinner:** Rosa: "Good. Somebody should have been lying for him." Nonna to Jules: **"Tell her Teresa DiNardo says hello. From the Boathouse."**
+  - **Tag:**
+    - Lab: the handkerchief blood shows telomeres aged 18 in August and **31 in November**. "He's spending himself… forty by Christmas."
+    - Ravenscourt terrace: Hugh gives **Constance** the card. "Someone who loved her very much. And was wrong… About which of us to be afraid of." Her lips: *Teresa.*
+- **E9 "Dollar Night":**
+  - The Iannucci–Halcyon war reaches South Philly with **no DiNardo protection** (`even8`).
+  - Vinnie has to choose.
+  - Constance has the card and a message from Teresa.
+  - Halcyon has the telomere data.
