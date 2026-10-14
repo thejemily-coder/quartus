@@ -18,7 +18,7 @@ EH.episode({
     cold_open: {
       card: { kind: 'cold' },
       night: true,
-      loc: 'THE INQUIRER · 801 MARKET STREET',
+      loc: 'THE INQUIRER · 100 INDEPENDENCE MALL WEST',
       clock: { day: 'Mon', date: 'Jan 18', time: '1:50 AM' },
       text: `> THE CAMERA.
 
@@ -68,7 +68,7 @@ DANA: Not yet.`,
       enter: g => { g.sleep(7); if (g.S.drift > 0) g.drift(-1); },
       text: g => `Spring semester on the ninth floor of Cardone Hall starts the way fall did: with somebody\'s minifridge in the elevator.
 
-Everyone\'s back. Devontae has a mustache he grew over break that nobody has the heart to tell him about. Kyle the T-rex has a girlfriend. Grace has a new clipboard, and a new look on her face, a kind of terrible calm, like someone who has decided to stop wishing for things. There\'s a new sign on the lounge door in her handwriting: *THE STROBE LIGHT IS DEAD. LET IT REST.*
+Everyone\'s back. Devontae has a mustache he grew over break that nobody has the heart to tell him about. Kyle the T-rex has a girlfriend. Grace has a new clipboard, and a new MCAT date, circled on it in red, that she doesn\'t mention to anyone. There\'s a new sign on the lounge door in her handwriting: *THE STROBE LIGHT IS DEAD. LET IT REST.*
 
 Nik is back from Edison with twelve Tupperware containers of his mother\'s food and a new monitor, his fourth, which he has mounted on the wall above his desk with a bracket from Home Depot and a lot of hope.
 
@@ -78,7 +78,7 @@ The map is mostly quiet. A few blue dots. Kensington, faint. The Navy Yard, brig
 
 And Jules.
 
-${g.f('jules_decision') === 'call' ? 'You talked to her on New Year\'s for seven hours and fifty-one minutes. You fell asleep on the phone. You woke up and she was still there, and you could hear her breathing, and you didn\'t hang up for another hour.\n\nYou haven\'t seen her since. She came back Sunday night. She texted one word from the stairwell, the way she did in December.' : 'She came back Sunday night. She texted one word from the stairwell, the way she did in December.'}
+${g.f('jules_decision') === 'call' ? 'You were on the phone with her on New Year\'s for seven hours and fifty-one minutes, most of it asleep. You fell asleep on the phone. You woke up and she was still there, and you could hear her breathing, and you didn\'t hang up.\n\nYou haven\'t seen her since. She came back Sunday night. She texted one word from the stairwell, the way she did in December.' : 'She came back Sunday night. She texted one word from the stairwell, the way she did in December.'}
 
 TXT jules: Kearney.
 
@@ -94,7 +94,7 @@ ${g.f('simone_j3') === 'lied' ? 'Simone is back. She\'s cold to Jules. Not mean,
         slots: 2, label: 'The first week',
         blurb: 'Friday, nine o\'clock, the roof.',
         options: [
-          { id: 'sp4_simone', text: 'Simone. You still haven\'t fixed it. Try again. In person this time.', cost: 1, tag: 'Simone', go: 'a1_simone', if: g => g.f('simone10') !== 'mended' },
+          { id: 'sp4_simone', text: 'Simone. You still haven\'t fixed it. Try again. In person this time.', cost: 1, tag: 'Simone', go: 'a1_simone', if: g => g.f('simone9') === 'lied' && g.f('simone10') !== 'mended' },
           { id: 'sp4_jules', text: 'Jules is in the lounge at the big table. Not Friday. Just lunch. Just to see her.', cost: 1, tag: 'Jules', go: 'a1_jules' },
           { id: 'sp4_nik', text: 'Nik has been staring at his live map for three days. Something on it is bothering him.', cost: 1, tag: 'Nik', go: 'a1_nik' },
           { id: 'sp4_ciro', text: 'Work a double at Ciro\'s. You\'re down to three hundred dollars.', cost: 1, tag: 'Ciro\'s', go: 'a1_ciro' }
@@ -132,7 +132,7 @@ simone: I keep thinking: what\'s so dangerous about the truth that the two peopl
       enter: g => { g.flag('simone10', 'mended'); g.bond('simone', { trust: 3, respect: 2, affection: 1 }); g.hidden('revenant_drift', -0.5); },
       text: `sam: Because it\'s dangerous to know. Not to tell. To *know*. They killed Femi because he knew something and walked six miles to tell me. I don\'t want you to be somebody who knows things, Simone. I want you to be somebody who\'s alive in May.
 
-She looks at you for a long time.
+She doesn\'t say anything. The glue gun drips a thread of silver onto the vest.
 
 simone: That\'s the first true thing you\'ve said to me since the theater.
 
@@ -185,13 +185,13 @@ jules: You look different.
 
 sam: More white hair?
 
-jules: No. Well, yes. Two more, behind your ear. No. You look like you\'ve been carrying something heavy, and you put it down, and you haven\'t picked it back up yet.
+jules: No. Well, yes. One more, behind your ear. No. You look like you\'ve been carrying something heavy, and you put it down, and you haven\'t picked it back up yet.
 
 ${g.f('assunta_watch') ? 'You put your hand in your pocket without meaning to. The watch is there. Cold. You carry it everywhere now.' : ''}
 
 She closes *Middlemarch*.
 
-jules: ${g.f('jules_decision') === 'call' ? 'I fell asleep on the phone with you. I\'ve never fallen asleep on anyone. Not even Callum. Not once in two years. I want you to know that before Friday. I don\'t know why I want you to know. I just do.' : 'I want you to know I\'m frightened of Friday. I\'ve never been frightened of a conversation in my life.'}
+jules: ${g.f('jules_decision') === 'call' ? 'I fell asleep on the phone with you. I\'ve never fallen asleep on anyone. Not even Callum. Two years. I\'m telling you before Friday so you know what Friday costs.' : 'I want you to know I\'m frightened of Friday. I\'ve never been frightened of a conversation in my life.'}
 
 sam: Me too.
 
@@ -205,7 +205,7 @@ jules: Eat this. You look like you haven\'t eaten since Christmas. And don\'t te
 
     a1_nik: {
       enter: g => { g.flag('nik_navy4'); g.bond('nik', { trust: 1 }); g.know('navy_yard_cold', ['sam', 'nik'], 'Nik\'s map: since January 10, the Navy Yard cluster has been getting colder every night at 11:51. Somebody there is running something on a schedule.'); },
-      text: `Nik doesn\'t say anything when you come in. He just points at the fourth monitor.
+      text: g => `Nik doesn\'t say anything when you come in. He just points at the fourth monitor.
 
 The Navy Yard dot.
 
@@ -217,11 +217,11 @@ nik: Every night since January tenth. At 11:51. It flares. Like somebody\'s turn
 
 He zooms in. The flare is centered on a single building by the dry dock.
 
-nik: That\'s Building 7. That\'s Vinnie\'s building. The one with the seventh floor that isn\'t on the drawings.
+${g.knows('building7') ? 'nik: That\'s Building 7. That\'s Vinnie\'s building. The one with the seventh floor that isn\'t on the drawings.' : 'nik: That\'s Building 7. I pulled the Navy Yard leasing map. It\'s Halcyon\'s.'}
 
 He turns his chair around. He looks scared. He looks the way he looked in the stairwell in September.
 
-nik: Bro. I\'m the guy in the chair. The guy in the chair is supposed to tell the hero when the bad guy\'s doing something. The bad guy is doing something. Every night. On a *schedule*.
+nik: Salvatore. I\'m the guy in the chair. The guy in the chair is supposed to tell the hero when the bad guy\'s doing something. The bad guy is doing something. Every night. On a *schedule*.
 
 nik: And I think they\'re doing it so somebody will notice.`,
       next: '@hub'
@@ -247,7 +247,7 @@ ciro: He look at it a long time. Then the Iannucci boy come back, and he stop lo
 
 He throws the rag in the sink.
 
-ciro: Two hundred twenty-five dollar. Go home. Call your friend.`,
+ciro: Two hundred twenty-five dollar. You work the oven like a man who hates bread. Go home. Call your friend.`,
       next: '@hub'
     }
   }

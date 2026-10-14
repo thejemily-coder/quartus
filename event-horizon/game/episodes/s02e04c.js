@@ -9,7 +9,7 @@ EH.scenes('s02e04', {
     enter: g => { g.sleep(7); },
     text: g => `Friday.
 
-You shower. You change your shirt three times. Nik watches from his bed and says nothing, which for Nik is a symphony.
+You shower. You change your shirt three times. Nik watches from his bed and says nothing, which for Nik is a feat of endurance.
 
 At six, your phone rings. Bree.
 
@@ -29,7 +29,7 @@ bree: They\'re going anyway. Nine o\'clock, at the gate on Broad. Teddy\'s not t
 
 She\'s quiet a second.
 
-bree: You promised. In my aunt\'s kitchen. Marisol first. Then whatever. You said you\'d be there for Marisol.
+${g.f('teddy9') === 'marisol' ? 'bree: You promised. In my aunt\'s kitchen.\n\nAnd then it\'s your voice coming out of the phone. Yours, exactly, down to the breath before the last word.\n\nbree: *"Marisol first. Then whatever you want. I\'ll be there for Marisol."*' : 'bree: You were in my aunt\'s kitchen. You heard Heck. You know what tonight is to him.'}
 
 bree: I\'m not asking you to come. I\'m telling you where we\'ll be. Nine o\'clock. Broad and Intrepid.
 
@@ -79,7 +79,7 @@ The city is cold and clear. You can see all the way down Broad, to City Hall wit
 
 You don\'t look at the glow.
 
-She takes a breath. You watch her take it. You watch her decide to be brave, the way you\'d watch somebody decide to jump off a high dive.
+She takes a breath and holds it. Longer than a breath should go. Then she lets it out, slowly, like she\'s set something down.
 
 jules: Here\'s my question. One question. You can only answer it with the truth.
 
@@ -94,17 +94,17 @@ jules: What are you, Sam?`,
       { text: 'Tell her. All of it. August, the bus, the cold, the Slip. Everything. The deal is the deal.', tag: 'All of it',
         fx: g => { g.flag('roof4', 'all'); g.know('sam_slip', ['jules']); g.heat('jules', 10 - g.h('jules')); g.hidden('revenant_drift', -1); }, go: 'a4_reveal' },
       { text: 'Tell her the true part you can say. "When the world stops, I don\'t." And then stop. Let her decide if that\'s enough.', tag: 'The true part',
-        fx: g => { g.flag('roof4', 'part'); g.hidden('revenant_drift', -0.5); }, go: 'a4_part' }
+        fx: g => { g.flag('roof4', 'part'); g.heat('jules', 1); g.hidden('revenant_drift', -0.5); }, go: 'a4_part' }
     ]
   },
   a4_reveal: {
     night: true,
-    enter: g => { g.flag('mutual_reveal'); g.know('jules_changed', ['sam']); g.know('mutual_reveal', ['sam', 'jules'], 'On the roof of Cardone Hall on January 22, you told each other everything.'); },
+    enter: g => { g.flag('mutual_reveal'); g.know('jules_changed', ['sam']); g.know('mutual_reveal', ['sam', 'jules'], 'On the roof of Cardone Hall on January 22, you told each other everything.'); ['josiah_1876', 'luck_cost', 'constance_started', 'jules_die_sixes', 'jules_fall_test'].forEach(k => { if (g.S.facts[k]) g.know(k, ['sam']); }); ['assunta', 'assunta_diary', 'salvatore_dinardo', 'watch', 'femi_halcyon', 'man_across_street', 'bruno'].forEach(k => { if (g.S.facts[k]) g.know(k, ['jules']); }); },
     text: g => `You tell her.
 
-August twenty-second, 11:51:04, Broad and Spring Garden, the bus, the boy, the cold like January, and you moving when nothing moved. Jayden. Carmen\'s hip. The Wawa. The armored car you couldn\'t move. Girard, and the lost minutes, and the frost on your sneakers. Kensington and Heck\'s fists and the bathroom floor where she sewed you up and you lied. The fire on 15th Street. Under 95, and Pop on his knees. Femi, who you could see. The Parkway: you didn\'t run, you *went*. Four minutes. The white hair.
+August twenty-second, 11:51:04, Broad and Spring Garden, the bus, the boy, the cold like January, and you moving when nothing moved. Girard, and the frost on your sneakers. Kensington, and the bathroom floor where she sewed you up while you lied to her face. She nods at that one, once. Under 95, and Pop on his knees. Femi, who you could see. The Parkway: you didn\'t run, you *went*.
 
-The watch. ${g.f('assunta_watch') ? 'You take it out of your pocket and show her. Salvatore\'s watch, stopped at 11:51.' : ''} Your great-grandmother on Broad Street in 1918. Nonna\'s brother, who came back old.
+${g.f('assunta_watch') ? 'The watch. You take it out of your pocket and show her. Salvatore\'s watch, stopped at 11:51. ' : ''}Your great-grandmother on Broad Street in 1918. Nonna\'s brother, who came back old.
 
 Bruno. ${g.f('bruno_jobs_total') ? 'The jobs.' : ''} Teddy\'s hands on a bar in Fishtown.
 
@@ -112,7 +112,7 @@ The man across Broad Street with your face.
 
 You tell her everything except one thing. The note. *Don\'t trust the lucky one.* You keep that. You don\'t know why. You keep it.
 
-It takes an hour. She doesn\'t interrupt you once. She stands at the parapet with her coffee going cold in her hands and listens to all of it, the way she listened to a teacher in October, completely, like she\'s going to be tested on it.
+It takes an hour. She doesn\'t interrupt you once. She stands at the parapet with her coffee going cold in her hands and listens to all of it like it\'s going to be on the final.
 
 When you\'re done, the city is very quiet.
 
@@ -124,38 +124,36 @@ jules: My turn. Deal is a deal.
 
 And she tells you.
 
-The window in August, and every piece of glass missing her. The pool ball that stopped. The sixes, two hundred and twelve of them on a pink marble floor. A horse named Mercutio. A grandmother in a cold chapel with no cross. A clerk named Josiah who stood beside an engine when it stopped and said yes to something that liked him. *The house always collects. Not from us. Near us.* The four darts on the Parkway.
+The window in August, and every piece of glass missing her. The pool ball that stopped. The sixes, two hundred and eleven of them on a pink marble floor. A horse named Mercutio. A grandmother in a cold chapel with no cross. A clerk named Josiah who stood beside an engine when it stopped and said yes to something that liked him. *The house always collects. Not from us. Near us.* The four darts on the Parkway.${g.knows('forty_four', 'jules') ? ' A woman in her father\'s study calling her *forty-four*, and saying *leave the boy to Cole*. The boy is you.' : ''}
 
 And a die, in the chapel, coming up one.
 
-jules: I can turn it off now. Not always. It\'s like holding my breath. But I can lose. On purpose.${g.f('hugh3') === 'lost' ? ' I lost at billiards to Hugh at Christmas. He picked me up and swung me around the room.' : ''}
+jules: I can turn it off now. Not always. It\'s like holding my breath. I held it before I asked you. I didn\'t want to be lucky about this. But I can lose. On purpose.${g.f('hugh3') === 'lost' ? ' I lost at billiards to Hugh at Christmas. He picked me up and swung me around the room.' : ''}
 
 She looks at you.
 
-jules: *Don\'t trust the lucky one.* I know there\'s something you didn\'t say. I could hear the shape of it. You can keep it. I kept something too.
+jules: I know there\'s something you didn\'t say. I could hear the shape of it. You can keep it. I kept something too.
 
-You stand on the roof of Cardone Hall, the two of you, at ten o\'clock on a Friday in January, and you look at each other, and you both know, finally, completely, what the other one is.
+It\'s past ten. Her coffee sits full and cold on the parapet. Down on Broad, a bus kneels at the stop by the Wawa and lets nobody off.
 
 She laughs. Very small. Then not small.
 
-jules: We\'re ridiculous. Do you know that? We\'ve been circling each other on this roof since *September*. With our hands in our pockets.
+jules: We\'re ridiculous. Do you know that? The only two people in this city who could have understood each other. Same floor. Since *September*. Circling. With our hands in our pockets.
 
-sam: Simone said that.
+${g.f('simone_j3') === 'told' ? 'sam: That sounds like Simone.\n\njules: It\'s *verbatim* Simone. She says everything first. It\'s infuriating.' : 'sam: Yeah.\n\njules: Don\'t agree with me. It\'s worse when you agree with me.'}
 
-jules: Simone says everything first. It\'s infuriating.
-
-She reaches over and takes your cold hand in her warm one, and for once, for the first time, neither of you is hiding why.`,
+She takes your cold hand in her warm one, and this time neither of you blames the weather.`,
     next: 'a4_roof_late'
   },
   a4_part: {
     night: true,
-    text: `You look at her. At the city. At your own hands.
+    text: g => `You look at her. At the city. At your own hands.
 
 sam: When the world stops, I don\'t.
 
 That\'s all. You say it, and you stop, and the cold air sits between you.
 
-She doesn\'t say anything for a long time. Then she nods, slowly, like a doctor who\'s been given one symptom and can see the whole disease from it.
+She doesn\'t say anything. Somewhere below, a SEPTA bus sighs at a stop. Then she nods, slowly, like a doctor who\'s been given one symptom and can see the whole disease from it.
 
 jules: Okay.
 
@@ -169,7 +167,7 @@ jules: Then here\'s mine. The same size. *Things go my way.* Always. Everything.
 
 She looks at you.
 
-jules: That\'s the true part I can say. The rest is seven pages long, and it\'s in my coat, and you can have it when you can give me the rest of yours.
+jules: That\'s the true part I can say. ${g.f('jules_decision') === 'tell' ? 'The rest is seven pages long, and it\'s in my coat, and you can have it when you can give me the rest of yours.' : 'You can have the rest when you can give me the rest of yours.'}
 
 sam: That\'s fair.
 
@@ -185,13 +183,13 @@ She puts her shoulder against yours on the parapet, and you stand there in the c
 
 And you feel it.
 
-Down at the bottom of the city, where the Navy Yard is, the faint glow goes white. For one second. Like a camera flash.
+Down at the bottom of the city, where the Navy Yard is, the faint glow goes white. For one second.
 
-The cold comes up out of the roof, through your sneakers. Your nose starts to bleed. Beside you, Jules goes stiff, and grabs your arm, and you know she feels it too, something leaning, very close, from the south.
+The cold comes up out of the roof, through your sneakers. Your nose starts to bleed. Jules goes stiff and grabs your arm, and you know she feels it too, something leaning, very close, from the south.
 
 Then it\'s gone.
 
-Your phone buzzes. Bree.
+Your phone buzzes. Bree. A string of texts stamped 9:40, 9:41, 9:43, all arriving at once, as if they sat somewhere in the Navy Yard\'s dead air for two hours.
 
 TXT bree: were in
 TXT bree: the door on 7 was OPEN wawa. propped. with a fire extinguisher
@@ -224,13 +222,13 @@ At nine o\'clock at Broad and Intrepid, in the dark at the bottom of the city, T
 
 Heck sees you first. His whole face opens.
 
-heck: *Papa.* You came.
+heck: *Papa.* Viniste. You came.
 
 teddy: Cold guy.
 
 He looks at you. He looks tired, and thin, in a nice wool coat that Bruno bought him.
 
-teddy: Bruno finds out I\'m here, I\'m done. Mom\'s done. The transplant list, all of it. You understand? I\'m putting all of that on the table to get a girl out of a room.
+teddy: Listen. Bruno finds out I\'m here, I\'m done. My mother\'s done. The transplant list, all of it. You understand? I\'m putting all of that on the table to get a girl out of a room.
 
 sam: Then why are you here?
 
@@ -244,7 +242,7 @@ They go. You go. Across the dark Navy Yard, past the dry dock with its great sto
 
 Building 7.
 
-You go up the fire stairs. One. Two. Three. Six.
+It takes the better part of two hours to cross the yard, shadow to shadow, waiting out a security truck that circles the dry dock every twenty minutes. At twenty to twelve, you go up the fire stairs. One. Two. Three. Six.
 
 Seven.
 
@@ -265,14 +263,14 @@ Teddy grabs his arm. Heck shakes him off like he\'s nothing.
 Bree is looking at you. Everybody is looking at you.`,
     choices: [
       { text: 'Go in. Behind Heck. Fast. Find 714 before whoever left the door open comes back to close it.', tag: 'Go in',
-        fx: g => { g.flag('navy4', 'in'); g.hidden('halcyon_heat', 1); }, go: 'a4_navy_in' },
+        go: 'a4_navy_in' },
       { text: 'Stop Heck. Hold the line in the doorway. "It\'s a trap. She\'s not here. They want us in there."', tag: 'Hold the door',
         check: { kind: 'move', move: 'Hold the Line', attr: 'nerve', skill: 'persuade', label: 'Stop Heck at the door', on: { strong: 'a4_navy_hold', weak: 'a4_navy_hold_weak', miss: 'a4_navy_in' } } }
     ]
   },
   a4_navy_in: {
     night: true,
-    enter: g => { g.flag('navy4', 'in'); },
+    enter: g => { g.flag('navy4', 'in'); g.hidden('halcyon_heat', 1); },
     text: `You go in.
 
 Down the white hallway behind Heck, past door after door with narrow windows. 701. 702. Empty rooms. Good beds with good sheets. A bowl of fruit nobody has touched. A television on with the sound off, showing a cooking show.
@@ -283,15 +281,15 @@ Every door is open. Every light is on. There\'s nobody here. Nobody at all.
 
 Heck gets there first. He stops in the doorway. You come up behind him.
 
-The room is empty. The bed is made. On the desk, on a tray, under a silver dome, there\'s a turkey dinner. Turkey, stuffing, cranberry sauce, mashed potatoes, a dinner roll. Cold. Gray. It\'s been there since November. A little card on the tray, in neat handwriting: *Happy Thanksgiving, Marisol.*
+The room is empty. The bed is made. On the desk, on a tray, under a silver dome, there\'s a turkey dinner. Turkey, stuffing, cranberry sauce, mashed potatoes, a dinner roll. Cold. Gray. It\'s been there since November, and it doesn\'t smell. It should smell. A little card on the tray, in neat handwriting: *Happy Thanksgiving, Marisol.*
 
 The ceiling light has a new bulb in it.
 
-Heck makes a sound like an animal.
+Heck picks up the little card. His thumb scorches a brown oval into the corner of it, and he doesn\'t notice.
 
 And then, at 11:51, every light on the seventh floor of Building 7 goes white.
 
-You feel it. The cold. Not your cold. *Theirs.* Something in the walls, in the floor, something running, like the Hitch run backward, pulling at you, pulling at the cold inside you like a hand on a rope. Your nose pours. Your knees go. Beside you, Teddy\'s hands go gray to the wrist without him touching anything. Heck starts to smoke. Bree screams, and her scream comes out in a dozen voices at once.
+You feel it. The cold. Not your cold. *Theirs.* Something in the walls, in the floor, something running the Hitch backward, hauling on the cold inside you, hand over hand. Your nose pours. Your knees go. Beside you, Teddy\'s hands go gray to the wrist without him touching anything. Heck starts to smoke. Bree screams, and her scream comes out in a dozen voices at once.
 
 Then it stops. The lights go back to normal.
 
@@ -399,7 +397,7 @@ Brannigan stands behind her with his tea.
 
 ACHTERBERG: ${g.f('friday4') === 'roof' ? 'Seventeen didn\'t come.' : g.f('navy4') === 'held' ? 'He pulled them out.' : 'He came.'}
 
-BRANNIGAN: ${g.f('friday4') === 'roof' ? 'No. He was on a roof on North Broad. With forty-four. The Gladwyne post had them both on thermal at 11:51. One of them very cold. One of them nothing at all.' : g.f('navy4') === 'held' ? 'He did. At the door. He stopped the big one with his hands.' : 'He did. He always does. I told you.'}
+BRANNIGAN: ${g.f('friday4') === 'roof' ? 'No. He was on a roof on North Broad. With forty-four. Our van on Broad had them both on thermal at 11:51. One of them very cold. One of them nothing at all.' : g.f('navy4') === 'held' ? 'He did. At the door. He stopped the big one with his hands.' : 'He did. He always does. I told you.'}
 
 Achterberg is quiet. She takes her glasses down and cleans them on her cardigan.
 
@@ -423,7 +421,7 @@ A pho restaurant on Washington Avenue, dark, the chairs up on the tables. ${g.f(
 
 Dana Fiorillo\'s corkboard at the Inquirer, two in the morning. She\'s moved the masking tape. It doesn\'t say *BLUR = IANNUCCI?* anymore.
 
-${g.f('dana4') === 'halcyon' ? 'It says: *HALCYON. FEMI OJO. FELD. WHO PAID?*' : 'It says: *BLUR + IANNUCCI + ???*'}`,
+${g.f('dana4') === 'halcyon' ? 'It says: *HALCYON. FEMI OJO. FELD. WHO PAID?*' : g.f('heat_max_press') ? 'It says: *BLUR = KEARNEY.* Then she takes the tape down, folds it in half, and puts it in her wallet.' : 'It says: *BLUR + IANNUCCI + ???*'}`,
     end: true
   }
 });
@@ -451,6 +449,6 @@ Object.assign(EH.episodes.s02e04, {
     else g.recap('Dana Fiorillo has a photo of an Iannucci car, and a kid in a hoodie.');
     if (g.f('friday4') === 'roof') g.recap(g.f('roof4') === 'all' ? 'On the roof, on January 22, you and Jules told each other everything.' : 'On the roof, you told Jules the true part: when the world stops, you don\'t. She told you hers.');
     if (g.f('friday4') === 'roof') g.recap('Teddy, Heck, and Bree went into Building 7 without you. The door was open.');
-    else g.recap(g.f('navy4') === 'held' ? 'You stopped Heck at the door of the seventh floor. At 11:51, the floor went white, and the door closed on nothing.' : 'You went into Building 7. Marisol\'s room was empty. At 11:51, the floor went white, and the door closed.');
+    else g.recap(g.f('navy4') === 'held' ? 'You stopped Heck at the door of the seventh floor. At 11:51, the floor went white, and the door closed on nothing.' : g.f('navy4') === 'split' ? 'Heck and Teddy went down the hall on seven. At 11:51, the floor went white, and the door started to close, with you in it.' : 'You went into Building 7. Marisol\'s room was empty. At 11:51, the floor went white, and the door closed.');
   }
 });

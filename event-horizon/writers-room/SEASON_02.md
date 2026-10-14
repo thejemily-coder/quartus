@@ -90,7 +90,7 @@ Write each episode to the save. The plan bends; the save doesn't.
 - **S2E4 "Made Men"** was written for this playthrough's S2E3 save (Jules called Sam; bells "yes"). Shape:
   - **Cold open:** Dana's corkboard: "BLUR = IANNUCCI?" (Girard doorbell cam, Eddie's frostbite ER form).
   - **Spring hub:** Simone, third chance / Jules at lunch / Nik's live map (Navy Yard flares nightly at 11:51 since Jan 10) / Ciro (Vinnie stared at Sam's Polaroid).
-  - **Job 3 at Phở Thanh:** Thomas Nguyen (52, hears through walls; daughter Mai). Talk him in / warn him to run (Vinnie covers for Sam with Dante) / let Dante do it. Vinnie, in a camel coat, is now Dante's right hand. "Every time I say yes to save somebody, I owe him more."
+  - **Job 3 at Phở Thanh:** Thomas Nguyen (52, hears through walls; daughter Mai). Talk him in / warn him to run (Vinnie covers for Sam with Dante) / let Dante do it. Vinnie, in a black cashmere overcoat, is now Dante's right hand. "Every time I say yes to save somebody, I owe him more."
   - **Dana Fiorillo** on Liacouras Walk: lie (press heat) / redirect her to Halcyon, Femi and Feld / walk away.
   - **Friday:** Bree says the raid on Building 7 is tonight; the guard went home "sick." Jules's appointment is the roof at nine. **The roof** (tell all = MUTUAL REVEAL, moved up from E6 if chosen; or the true part) / **the Navy Yard** (the door is propped open; 714 holds only a cold Thanksgiving turkey; the 11:51 pulse; the door shuts).
   - **Tag:** Achterberg: "the experiment worked."
@@ -98,3 +98,34 @@ Write each episode to the save. The plan bends; the save doesn't.
   - **Roof path:** the crew is inside Building 7 without Sam (Bree's texts stop).
   - **Navy Yard path:** `navy4` = in (all four locked on seven) / held (all out) / split (Sam at the closing door).
   - **Revealed path:** with `mutual_reveal` set, E6 "What If It Was" becomes the aftermath, not the reveal.
+- **S2E4 QA (3 passes):**
+  - **Knowledge leaks fixed:**
+    - Jules no longer quotes the Revenant note.
+    - The seven-page letter is gated on `jules_decision==='tell'`.
+    - Nik's Building 7 intel is gated on `knows('building7')`.
+    - Vinnie's slow-heart line is gated on talked plus `knows('nguyen')`.
+    - "Simone said that" is gated on `simone_j3`.
+    - Bree's replay of "Marisol first" is gated on `teddy9==='marisol'`.
+    - "forty-four / leave the boy to Cole" is added to Jules's tell-all when she knows it.
+  - **Mechanics:**
+    - The weak or missed Dana lie (press 10) gets a "she's sure now" line, and the tag corkboard reads BLUR = KEARNEY.
+    - Missing Hold the Line now adds Halcyon heat on entry.
+    - Smashed: Nguyen agrees on Friday ("Done.").
+    - The Simone hub option requires `simone9==='lied'`.
+    - The mutual reveal shares the fact ledger: josiah_1876, luck_cost, constance_started, jules_die_sixes and jules_fall_test go to Sam; assunta, assunta_diary, salvatore_dinardo, watch, femi_halcyon, man_across_street and bruno go to Jules.
+    - "True part" now gives Jules +1 heat, which sets heat_max_jules from 9.
+    - The split recap is fixed.
+    - The double drift drop in a1_spring stays (a quiet episode, −2).
+  - **Canon:**
+    - The Inquirer is at 100 Independence Mall West.
+    - Femi was "a kid I knew" and died at Cardone, not the Navy Yard.
+    - "No anesthetic" is cut.
+    - Halcyon's tag post is "our van on Broad".
+    - Jules's dice count is 211.
+    - Grace counts 12 white hairs.
+  - **Voice:** Nik says "Salvatore" when scared; Ciro gets an insult; Vinnie says "college" and swears; Teddy says "Listen"; Heck says "Viniste"; Nguyen says "I'm fifty-two."
+  - **Open for other saves (not gated yet):**
+    - Simone's "Christmas Eve phone" line needs did_x2_simone.
+    - Simone's "lied beautifully" needs `simone_j3==='lied'`.
+    - Jules's warmth on the distance path.
+    - Dana's frostbite evidence assumes `job1==='watched'`.

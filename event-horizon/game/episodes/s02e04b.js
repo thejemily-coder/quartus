@@ -10,7 +10,7 @@ EH.scenes('s02e04', {
     enter: g => { g.sleep(6); },
     text: g => `The Escalade picks you up on Broad at nine. Vinnie is driving. Dante is in the back with his phone.
 
-Vinnie is wearing a camel coat. Not a peacoat, not a Carhartt. A camel coat, the long kind, with a scarf, and his hair is cut short on the sides like Dante\'s. He looks like somebody dressed him. He looks good. He looks like somebody else.
+Vinnie is wearing a black overcoat. Not a peacoat, not a Carhartt. Cashmere, the long kind, with a scarf, and his hair is cut short on the sides like Dante\'s. He looks like somebody dressed him. He looks good. He looks like somebody else.
 
 vinnie: Sally.
 
@@ -40,7 +40,7 @@ DANTE: You\'re going to help him see it.
 
 The Escalade pulls up on Washington Avenue in front of a narrow storefront with a hand-painted sign. *PHỞ THANH · SINCE 1994.* The lights are on inside. An old man is mopping. A girl about your age is wiping down tables, with earbuds in.
 
-${g.f('manila') === 'sealed' ? 'You carried that list. On Christmas Eve. In a manila envelope, through the snow, to a gray sedan at the Navy Yard gate. *Do not open.* You didn\'t open it.' : 'You know about the list. You know exactly whose names are on it.'}
+${g.f('manila') === 'burned' ? 'You burned that list in the snow on Christmas Eve. Somebody must have typed it again.' : g.f('manila') === 'sealed' ? 'You think you carried that list. On Christmas Eve. In a manila envelope, through the snow, to a gray sedan at the Navy Yard gate. *Do not open.* You didn\'t open it.' : 'You know about the list. You know exactly whose names are on it.'}
 
 Dante gets out. Vinnie gets out. You get out.
 
@@ -54,7 +54,7 @@ MR. NGUYEN: Mai. Go in the back.
 
 The girl takes out her earbuds. She doesn\'t go in the back.`,
     choices: [
-      { text: 'Talk to him. Tell him the truth: the Navy Yard is worse. Much worse. You know a kid who died there.', tag: 'Talk him in',
+      { text: 'Talk to him. Tell him the truth: the Navy Yard is worse. Much worse. You know a kid they killed.', tag: 'Talk him in',
         check: { kind: 'move', move: 'Talk Them Down', attr: 'charm', skill: 'persuade', label: 'Make Mr. Nguyen see it', on: { strong: 'a2_nguyen_strong', weak: 'a2_nguyen_weak', miss: 'a2_nguyen_miss' } } },
       { text: 'Get him alone. In the back, by the stockpots. Tell him to take Mai and leave the city tonight. Tonight.', tag: 'Warn him',
         fx: g => { g.flag('job4', 'warned'); g.hidden('revenant_drift', 0.5); }, go: 'a2_nguyen_warn' },
@@ -66,13 +66,13 @@ The girl takes out her earbuds. She doesn\'t go in the back.`,
     enter: g => { g.flag('job4', 'talked'); g.flag('bruno_jobs_done', (g.f('bruno_jobs_done') || 0) + 1); g.know('nguyen', ['sam'], 'Thomas Nguyen, 52, Phở Thanh on Washington Ave. Hears through walls. He joined Bruno after you told him what happened to Femi. On one condition: his daughter Mai stays out.'); },
     text: `You step past Dante before he can say anything.
 
-sam: Mr. Nguyen. My name\'s Sam. I go to Temple. In October, a kid on my floor named Femi was in a study at the Navy Yard. Paid study. Good money. He couldn\'t be seen. That was his thing. Nobody could see him.
+sam: Mr. Nguyen. My name\'s Sam. I go to Temple. In October, a kid I knew named Femi was in a study at the Navy Yard. Paid study. Good money. He couldn\'t be seen. That was his thing. Nobody could see him.
 
-sam: They put needles in his hip. Three. No anesthetic. He walked six miles to tell me something, and he died at my door.
+sam: They put needles in his hip. Three. He walked six miles to tell me something, and he died at my door.
 
 The old man is very still. Behind him, Mai has her hand over her mouth.
 
-sam: I don\'t like these guys either. I\'m not gonna stand here and tell you Bruno Iannucci is a nice man. But he puts people on payroll. The Navy Yard puts them in beds. Your name\'s on their list now. I\'m sorry. I didn\'t put it there.
+sam: I don\'t like these guys either. I\'m not gonna stand here and tell you Bruno Iannucci is a nice man. But he puts people on payroll. The Navy Yard puts them in beds. Your name\'s on their list now. I\'m sorry.
 
 Mr. Nguyen looks at you. Then at the wall. Listening, maybe, to something none of you can hear.
 
@@ -134,7 +134,9 @@ DANTE: We\'ll come back Friday, Mr. Nguyen. Think about it.
 
 On the way out, you stop and pick up a koi from the floor by the door, orange and white, flopping, and put it in the bucket. Mr. Nguyen looks up at you.
 
-He doesn\'t say anything. He doesn\'t have to.`,
+He takes it from you. He doesn\'t say thank you.
+
+On Friday, Dante comes back alone. Mr. Nguyen says yes. Dante texts you a photo of the empty tank and one word: *Done.*`,
     next: 'a2_car'
   },
   a2_nguyen_warn: {
@@ -147,7 +149,7 @@ You go. In the narrow kitchen behind the swinging door, between the stockpots, h
 
 You talk fast and quiet.
 
-sam: Take your daughter. Leave tonight. Not to a cousin in the city. Out. Jersey, Delaware, Virginia. Your name\'s on a list at the Navy Yard. If you work for Bruno, he owns you. If you don\'t, the Navy Yard takes you. A kid on my floor died there in October. They put needles in his hip.
+sam: Take your daughter. Leave tonight. Not to a cousin in the city. Out. Jersey, Delaware, Virginia. Your name\'s on a list at the Navy Yard. If you work for Bruno, he owns you. If you don\'t, the Navy Yard takes you. A kid I knew was in their study. He died in October. They put needles in his hip.
 
 MR. NGUYEN: Why are you telling me this?
 
@@ -155,7 +157,7 @@ sam: Because I\'m supposed to scare you, and I don\'t want to be the guy who doe
 
 He looks at you. He tilts his head, listening to something.
 
-MR. NGUYEN: Your heart is very slow. Too slow. Like an old man\'s.
+MR. NGUYEN: Your heart is very slow. Slower than mine. I\'m fifty-two.
 
 He nods, once.
 
@@ -169,13 +171,11 @@ Dante looks at you. Then at the kitchen door. Then at Vinnie.
 
 DANTE: Did he.
 
-vinnie: He said it to me too, D. When you were in the car. Guy\'s scared. Let him sleep on it.
+vinnie: He said it to me too, D. Guy\'s scared. Let him sleep on it.
 
 Dante looks at Vinnie. Vinnie looks back, steady, the way he looks at a foreman.
 
 DANTE: Friday, then. Friday, Mr. Nguyen.
-
-On Friday, Phở Thanh is dark. There\'s a sign in the window in Vietnamese and English. *CLOSED FOR FAMILY EMERGENCY.* The koi are gone from the tank.
 
 It doesn\'t count. You know it doesn\'t count. You know Vinnie lied to Dante\'s face for you, and you know what that costs, in a car with Dante.`,
     next: 'a2_car'
@@ -208,7 +208,7 @@ vinnie: You notice anything about Nguyen?
 
 sam: He hears through walls.
 
-vinnie: He\'s scared of *you*. Not Dante. Not me. You. He heard your heart. Said it was slow. Like an old man.
+vinnie: Yo. He was scared of *you*. Not Dante. Not me. You. ${g.f('job4') === 'talked' && g.knows('nguyen') ? 'He heard your heart. Said it was slow.' : 'Whole time, he\'s got his head cocked at you. Listening. Like you were the loud one.'}
 
 He drives.
 
@@ -228,9 +228,9 @@ vinnie: Out where? I\'m eighteen, I got a mother and two brothers and a father a
 
 The light changes. He goes.
 
-vinnie: You\'re the one went to college. You figure it out. Then come tell me.
+vinnie: You\'re the one went to college, *college*. You figure that shit out. Then come tell me.
 
-He drops you at Cardone. He doesn\'t say goodnight. The camel coat looks wrong on him the whole way, like a costume, and then, in the light of the lobby doors, for one second, it doesn\'t.`,
+He drops you at Cardone. He doesn\'t say goodnight. The black coat looks wrong on him the whole way, like a costume, and then, in the light of the lobby doors, for one second, it doesn\'t.`,
     next: 'a3_dana'
   },
 
@@ -274,11 +274,11 @@ DANA: I don\'t think you\'re a bad guy, Sam. I think you\'re a kid in a bad spot
   },
   a3_dana_lie: {
     enter: g => { g.flag('dana4', 'lied'); },
-    text: `sam: I don\'t know what you\'re talking about. I deliver pizza. Ciro\'s, on Cecil B. Moore. Large plain, twelve ninety-nine.
+    text: g => `sam: I don\'t know what you\'re talking about. I deliver pizza. Ciro\'s, on Cecil B. Moore. Large plain, twelve ninety-nine.
 
 It comes out easy. It always comes out easy now.
 
-Dana smiles. Not like she believes you. Like she respects the effort.
+${g.f('heat_max_press') ? 'Dana smiles. Not like she believes you. Like she\'s sure now, and she\'s letting you keep the lie anyway.' : 'Dana smiles. Not like she believes you. Like she respects the effort.'}
 
 DANA: Okay.
 
