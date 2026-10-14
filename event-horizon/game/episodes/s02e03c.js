@@ -14,7 +14,7 @@ It\'s small. Fieldstone, 1891, with a slate roof heavy with snow and a single wi
 
 *TENEO.* I hold.
 
-Inside, it\'s cold. Colder than outside. Colder than it should be. Six pews. An altar of plain stone with nothing on it. No cross. You noticed that at seven, in the dark: no cross, anywhere.
+Inside, it\'s cold. Colder than outside. Colder than it should be. Six pews. An altar of plain stone with nothing on it. No cross. You noticed that in October, by Gran\'s lantern: no cross, anywhere.
 
 Gran lights her cigarette in the chapel. At four o\'clock exactly. She smokes it standing in front of the altar.
 
@@ -50,14 +50,12 @@ constance: Choose carefully. Most people waste the first one.`,
     ]
   },
   a3_where: {
-    enter: g => { g.know('josiah_1876', ['jules', 'constance'], 'Gran: in 1876, at the Centennial, Josiah Pemberton stood beside the great engine when it stopped "for a heartbeat," and something stood beside him. He made an agreement he didn\'t understand. Every Pemberton since has been lucky.'); },
+    enter: g => { g.know('josiah_1876', ['jules', 'constance'], 'Gran: when he was thirty-one, Josiah Pemberton stood beside a great engine when it stopped "for a heartbeat," and something stood beside him. He made an agreement he didn\'t understand. Every Pemberton since has been lucky.'); },
     text: `constance: Ah. The historian. Good.
 
 She smokes.
 
-constance: The Centennial. 1876. Machinery Hall, and the Corliss engine, forty feet tall. Grant turned it on himself.
-
-constance: Josiah was thirty-one. A clerk in a counting house. He was standing beside the engine on the tenth of May, at the opening, when it stopped.
+constance: Josiah was thirty-one. A clerk in a counting house. One spring morning he was standing in a great hall full of machines, beside the biggest of them, when it stopped.
 
 constance: Not broke down. Stopped. For a heartbeat. Nobody else in the hall noticed. Josiah did. It went cold, and nothing moved, and something was standing beside him.
 
@@ -86,23 +84,17 @@ constance: It costs other people.
 
 constance: Not us. Never us. Luck isn\'t made, child. It\'s moved. The house always collects. Not from us. Near us.
 
-You think of the stables. A horse that went lame for a month so you could find out.
-
-jules: Mercutio.
-
-constance: Mercutio.
-
-constance: I let go of the reins once, too. In 1961. Over the same wall. I landed on my feet, just like you. My mare was called Héloïse.
+${g.f('horse6') === 'letgo' ? 'You think of the stables. A horse that went lame for a month so you could find out.\n\njules: Mercutio.\n\nconstance: Mercutio.\n\nconstance: I let go of the reins once, too. In 1961. Over the same wall. I landed on my feet, just like you. My mare was called Héloïse.' : 'constance: I let go of the reins once. In 1961. Over the wall at the end of the long field. Just to see. I landed on my feet. My mare was called Héloïse. She never jumped again.'}
 
 She taps her ash into her palm.
 
-${g.hv('jules_debt') >= 6 ? 'constance: And you\'ve been spending, haven\'t you. Since August. I can feel it on you, like a draft. Every time you let it, somebody near you pays a little. A broken glass. A bad night. A missed train. And it adds up.' : 'constance: You\'ve been careful. I can tell. Not as careful as you\'ll need to be.'}
+${g.hv('jules_debt') >= 5 ? 'constance: And you\'ve been spending, haven\'t you. Since August. I can feel it on you, like a draft. Every time you let it, somebody near you pays a little. A broken glass. A bad night. A missed train. And it adds up.' : 'constance: You\'ve been careful. I can tell. Not as careful as you\'ll need to be.'}
 
 jules: Can it be stopped?
 
 constance: That\'s another question. But I\'ll give you this one, because you asked the right one first.
 
-She drops her cigarette on the stone floor and puts it out under her shoe.
+She looks at the cigarette burning down between her fingers.
 
 constance: You can choose not to. Every time you feel it coming and don\'t let it, every time you lose like a person, the house doesn\'t collect. Not that time. Nobody in this family has ever been any good at it.
 
@@ -110,26 +102,26 @@ constance: That\'s all I have.`,
     next: 'a3_next'
   },
   a3_why: {
-    enter: g => { g.know('why_jules', ['jules', 'constance'], 'Gran: it doesn\'t choose twice in a generation. It chose you, not Hugh, "because you\'re interesting to watch." Since August it\'s louder in you than in anyone since Josiah.'); },
+    enter: g => { g.know('why_jules', ['jules', 'constance'], 'Gran: it doesn\'t choose twice in a generation. It chose you, not Hugh, "because it likes you." Since August it\'s louder in you than in anyone since Josiah.'); },
     text: `constance: Because it doesn\'t choose twice in a generation. It chose your father, in his. It chose me, in mine. It chose you.
 
 jules: But why?
 
-constance: Because you\'re interesting to watch.
+constance: Because it likes you. It never says why.
 
 She says it flat, without any irony at all.
 
-constance: Hugh wants things. He wants them so badly. It isn\'t interesting to watch someone get what they want. You were the one who *didn\'t* want. Who went to Temple to spite your mother. Who looks at a cab driver\'s son from South Philadelphia and not at a Whitford. Who rolls a die two hundred times in a bathroom trying to *lose*.
+constance: Hugh wants things. He wants them so badly. It never cared for people who get what they want. You were the one who *didn\'t* want. Who went to Temple to spite your mother. Who looks at a cab driver\'s son from South Philadelphia and not at a Whitford. Who rolls a die two hundred times in a bathroom trying to *lose*.
 
-constance: You\'re a good story, child. That\'s all it\'s ever wanted. A good story.
+constance: It likes the ones who fight it, child. God knows why. Josiah never found out, and neither have I.
 
 She looks at the window.
 
-constance: And since August, since the night the clocks stopped on Broad Street, it\'s louder in you than it has been in anyone since Josiah. I felt it in this room. I knew it was you before you called.`,
+constance: And since August, since the night the clocks stopped on Broad Street, it\'s louder in you than it has been in anyone since Josiah. I felt it in this room. I knew it was you before you came home.`,
     next: 'a3_next'
   },
   a3_sam: {
-    enter: g => { g.know('gran_sam', ['jules', 'constance'], 'Gran: "Some families are lucky. Some are early. The early ones go into the cold for other people. It costs them years. Keep him close, child, and don\'t let the house collect from him."'); },
+    enter: g => { g.know('gran_sam', ['jules', 'constance'], 'Gran: "Some families are lucky. Some are early. The early ones always go in for somebody else. Keep him close, child, and don\'t let the house collect from him."'); },
     text: `Gran puts her cigarette down on the edge of the altar.
 
 constance: You love him.
@@ -140,7 +132,7 @@ constance: No. It\'s an answer to yours.
 
 She looks at you.
 
-constance: Some families are lucky. Ours. Some families are *early*. They go into the cold, between the seconds, and it costs them years. And they always go in for somebody else.
+constance: Some families are lucky. Ours. Some families are *early*. What they are isn\'t mine to tell. I\'ll tell you one thing they do: they always go in for somebody else.
 
 constance: I knew one, once. A long time ago. On a riverbank. An old woman, soaked to the shoulders, with a child coughing up the Schuylkill on the grass. She looked at me across the snow, and I looked at her, and we both knew exactly what the other one was.
 
@@ -202,9 +194,9 @@ Six. Two. Six. Five. Six. One.
 
 You can do it. Not easily. Not every time. It\'s like holding a muscle you didn\'t know you had, and it aches, and you\'re shaking by the twentieth roll. But you can lose. On purpose.
 
-${g.knows('forty_four') ? 'You think about the servants\' corridor. *Forty-four.* *Seventeen.* Your father\'s glass touching hers.' : g.knows('achterberg_card') ? 'Achterberg\'s card is on the nightstand. *44.* You haven\'t thrown it away.' : ''}
+${g.knows('forty_four') ? 'You think about the servants\' corridor. *Forty-four.* *Leave the boy to Cole.* Your father\'s glass touching hers.' : g.knows('achterberg_card') ? 'Achterberg\'s card is on the nightstand. *44.* You haven\'t thrown it away.' : ''}
 
-${g.knows('gran_sam') ? 'You think about an old woman on a riverbank, soaked to the shoulders. *Some families are early.* The white hair at his temple, in December, that you put your hand on and didn\'t ask about.' : 'You think about the white hair at his temple, in December, that you put your hand on and didn\'t ask about.'}
+${g.knows('gran_sam') ? 'You think about an old woman on a riverbank, soaked to the shoulders. *Some families are early.* The white hair at his temple, after Thanksgiving, that you put your hand on and didn\'t ask about.' : 'You think about the white hair at his temple, after Thanksgiving, that you put your hand on and didn\'t ask about.'}
 
 You think about January. *I ask, you answer. Then you ask, and I answer.*
 
@@ -345,7 +337,7 @@ Dr. Miriam Achterberg has her little black notebook open on her knee and a silve
 
 *1 Jan. 44 entered the chapel with C.P. at 16:00. Remained 52 min.*
 
-*Thermal from the Gladwyne post: chapel interior 4°C below ambient. Consistent with 1876 records.*
+*Thermal from the Gladwyne post: chapel interior 4°C below ambient. Consistent with prior readings.*
 
 *At 16:41, for 0.4 seconds, chapel interior read as nothing at all.*
 
@@ -376,9 +368,9 @@ Object.assign(EH.episodes.s02e03, {
   ],
   onEnd: g => {
     g.recap('At Ravenscourt, Gran took Jules to the chapel and gave her three questions.');
-    if (g.knows('forty_four')) g.recap('Jules heard Dr. Achterberg call her "forty-four." And you, "seventeen."');
+    if (g.knows('forty_four')) g.recap('Jules heard Dr. Achterberg call her "forty-four." Then your name came up.');
     g.recap('In the chapel, Jules rolled a die and didn\'t let it. It came up one.');
-    g.recap(g.f('bells_reply') === 'yes' ? 'At midnight on New Year\'s, the bells stopped for one second, for both of you. You both said so.' : 'At midnight on New Year\'s, the bells stopped for one second. You asked Jules if she felt it. She said Happy New Year.');
+    g.recap(g.f('bells_reply') === 'yes' ? 'At midnight on New Year\'s, the bells stopped for one second, for both of you. You asked if she heard them. She said yes.' : 'At midnight on New Year\'s, the bells stopped for one second. You asked Jules if she heard the bells. She said Happy New Year.');
     if (g.f('jules_decision') === 'tell') g.recap('Jules wrote you a letter. Seven pages. She\'s keeping it for January.');
   }
 });

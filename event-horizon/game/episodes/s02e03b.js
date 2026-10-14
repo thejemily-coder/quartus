@@ -57,21 +57,17 @@ ACHTERBERG: Yes. She\'s also the most significant subject we have. And she\'s yo
 
 whitney: And the Kearney boy?
 
-ACHTERBERG: Seventeen is Cole\'s concern. Not yours. Not hers.
+ACHTERBERG: Leave the boy to Cole. Not yours. Not hers.
 
 A pause.
 
-ACHTERBERG: Your mother is not cooperative.
+ACHTERBERG: And your mother?
 
 whitney: My mother has never been cooperative a day in her life. She\'s eighty-four. She\'ll be dead soon.
 
 He says it lightly. He says it the way he says everything, warm and easy, like a man telling you the weather.
 
-ACHTERBERG: She took the girl to the chapel?
-
-whitney: Tomorrow.
-
-ACHTERBERG: Then tomorrow we learn something. I envy her, you know. I\'d give a great deal to stand in that room.
+ACHTERBERG: Then we wait. I\'m very good at waiting.
 
 The decanter again. Their glasses touch.
 
@@ -83,7 +79,7 @@ You stand in the dark in the servants\' corridor with your hand over your mouth,
 
 You\'re a number.
 
-And Sam is *seventeen*.`,
+And Sam is *Cole\'s concern*.`,
     next: 'a2_midnight'
   },
   a2_achterberg: {
@@ -181,21 +177,21 @@ Then the bells start again. The pendulum swings. The bubbles rise. Two hundred p
 
 Nobody noticed. Nobody but you.
 
-You look at your phone. 12:00. A text, timestamped 11:59.
+You look at your phone. 12:01. A text, timestamped 12:00.
 
 TXT sam: happy new year pemberton
-TXT sam: did the bells just stop for you too
+TXT sam: did you hear the bells
 
 You stare at it.
 
-*For you too.*
+*Did you hear the bells.* Not a joke. Not *pemberton*. Just that.
 
-You don\'t answer. You sit on the stairs while the party sings and the snow comes down outside the tall windows, and you hold the phone in both hands, and you think about a stone wall over the Schuylkill, and *I felt you go*, and Gran on the terrace saying *some families are early*, and you think: *Oh.*
+You don\'t answer. You sit on the stairs while the party sings and the snow comes down outside the tall windows, and you hold the phone in both hands, and you think about a stone wall over the Schuylkill, and *What if it was?*${g.f('gran_terrace') ? ', and Gran on the terrace saying *some families are early*' : ''}, and the thing that was *leaning*, and you think: *It\'s leaning toward him.*
 
 *Oh, Sam.*`,
     choices: [
       { text: 'Text back: "Yes."', tag: 'Yes',
-        fx: g => { g.flag('bells_reply', 'yes'); g.bond('jules', { trust: 1 }); g.know('bells_both', ['jules', 'sam'], 'At midnight on New Year\'s, the bells stopped for one second. You both felt it. You both said so.'); }, go: 'a2_yes' },
+        fx: g => { g.flag('bells_reply', 'yes'); g.bond('jules', { trust: 1 }); g.know('bells_both', ['jules', 'sam'], 'At midnight on New Year\'s, the bells stopped for one second. He asked if you heard the bells. You said yes. Neither of you said what you meant.'); }, go: 'a2_yes' },
       { text: 'Text back: "Happy New Year, Kearney." Nothing else. Not yet. January.', tag: 'Not yet',
         fx: g => { g.flag('bells_reply', 'wait'); }, go: 'a2_wait' }
     ]

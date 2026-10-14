@@ -510,7 +510,7 @@ body[data-look="s2"] .mast{border-bottom-width:5px}
         else if (samBefore) added.filter(w => w !== 'sam' && EH.CAST[w]).forEach(w => note(EH.CAST[w].label + ' now knows: ' + F.text, 'fact'));
         return g;
       },
-      knows(fact, who) { const F = S.facts[fact]; return !!(F && F.knownBy.includes(who || 'sam')); },
+      knows(fact, who) { const F = S.facts[fact]; return !!(F && F.knownBy.includes(who || S.pov || 'sam')); },
       money(n) { S.money.cash += n; note('Cash ' + (n < 0 ? '−$' + (-n) : '+$' + n), 'money', Math.sign(n)); return g; },
       bank(n) { S.money.bank += n; note('Bank ' + (n < 0 ? '−$' + (-n) : '+$' + n), 'money', Math.sign(n)); return g; },
       cash() { return S.money.cash; },
@@ -530,7 +530,7 @@ body[data-look="s2"] .mast{border-bottom-width:5px}
       },
       pool(p, n) { S.pools[p] = clamp(S.pools[p] + n, 0, EH.maxPool(S, p)); if (n) note(p[0].toUpperCase() + p.slice(1) + ' ' + sgn(n), 'stat', Math.sign(n)); return g; },
       drift(n) { S.drift = clamp(S.drift + n, 0, 10); S.hidden.revenant_drift += Math.max(0, n) * 0.5; if (n) note('Drift ' + sgn(n), 'stat', -Math.sign(n)); return g; },
-      hidden(k, n) { S.hidden[k] = (S.hidden[k] || 0) + n; return g; },
+      hidden(k, n) { S.hidden[k] = (S.hidden[k] || 0) + n; if (k === 'jules_debt') S.hidden[k] = clamp(S.hidden[k], 0, 10); return g; },
       hset(k, v) { S.hidden[k] = v; return g; },
       hv(k) { return S.hidden[k] || 0; },
       injure(o) { S.injuries.push(Object.assign({ pen: 1, heal: 1 }, o)); note('Injury · ' + o.name, 'injury', -1); return g; },
@@ -21413,11 +21413,10 @@ Six.
 Your phone is on the bath mat beside you. At 9:14 on Christmas morning he answered your three a.m. texts.
 
 TXT sam: merry christmas pemberton
-TXT sam: i asked her. his name was salvatore. her brother. im named after him
-TXT sam: ill tell you the rest in january
+${g.f('feast_text') === 'name' ? 'TXT sam: i asked her. his name was salvatore. her brother. im named after him\n' : ''}TXT sam: ill tell you the rest in january
 TXT sam: deal is a deal
 
-You\'ve read it eleven times. *I\'ll tell you the rest.* There\'s a rest. There\'s always a rest with him. Bleeding on the bathroom floor at Cardone. The Parkway. *I felt you go.*
+You\'ve read it eleven times. *I\'ll tell you the rest.* There\'s a rest. There\'s always a rest with him. Bleeding on the bathroom floor at Cardone. The Parkway. *What if it was?*
 
 You pick up the die. You hold it in your palm. It\'s warm from your hand. It\'s always warm.
 
@@ -21440,7 +21439,7 @@ Your father is in his study with the door closed, on calls with London and Zuric
 
 And Gran.
 
-Gran is everywhere. In the morning room with the *Inquirer* and black coffee. In the conservatory with the orchids she talks to in French. On the south terrace at exactly four o\'clock every afternoon, in her fur, with her one cigarette of the day, which she smokes with her eyes closed, like a prayer.
+Gran is everywhere, from noon on. In the morning room with the *Inquirer* and black coffee. In the conservatory with the orchids she talks to in French. On the south terrace at exactly four o\'clock every afternoon, in her fur, with her one cigarette of the day, which she smokes with her eyes closed, like a prayer.
 
 She hasn\'t said a word about the chapel since you got home. Not one. Every time you walk into a room she\'s in, she looks at you over her glasses, and smiles, and goes back to what she was doing.
 
@@ -21509,7 +21508,7 @@ hugh: You know what\'s funny, Jubilee? I\'m good at this. I\'m really good. I wo
 
 He hangs his cue on the rack, very carefully.
 
-hugh: Twenty years. I\'ve never once seen you miss a shot that mattered. Do you know what that\'s like? To be the brother of that?
+hugh: I\'ve never seen you miss a shot that mattered. Not once. Not since we were six.
 
 He doesn\'t wait for an answer. He takes his glass and goes.`,
       next: '@hub'
@@ -21518,7 +21517,7 @@ He doesn\'t wait for an answer. He takes his glass and goes.`,
       enter: g => { g.flag('hugh3', 'straight_won'); g.hidden('jules_debt', -1); g.bond('hugh', { respect: 1 }); },
       text: `You don\'t let it happen.
 
-You feel the click getting ready behind your breastbone, and you don\'t let it. You don\'t know how you know how to do that. It\'s like holding your breath underwater: you just don\'t, and it doesn\'t.
+You feel the click getting ready behind your breastbone, and you don\'t let it. It\'s like holding your breath underwater: you just don\'t, and it doesn\'t.
 
 And you shoot. Like a person. You line up the three ball and you think about the angle and the spin and the felt, the way Gran\'s old instructor taught you when you were nine, before you learned you didn\'t need to think.
 
@@ -21555,7 +21554,7 @@ You missed.
 
 You *missed*.
 
-You stand there with the cue in your hands, looking at the seven ball sitting on the lip of the corner pocket, and you feel something you have never once felt at a table in your entire life. It\'s hot, and it\'s in your face, and your stomach drops, and it\'s *wonderful*.
+You stand there with the cue in your hands, looking at the seven ball sitting on the lip of the corner pocket, and you feel something you have never felt at a table. It\'s hot, and it\'s in your face, and your stomach drops, and it\'s *wonderful*.
 
 Hugh takes the table. He clears it. He sinks the eight. He stands there with his cue, looking at the empty table, and then at you, with his mouth open.
 
@@ -21563,7 +21562,7 @@ hugh: I won.
 
 jules: You won.
 
-hugh: Jubilee. I *won*. Twenty years—
+hugh: Jubilee. I *won*. Eighteen years—
 
 And he laughs, really laughs, delighted, like he did when you were small, before he started keeping score, and he comes around the table and picks you up off your feet and swings you around in the billiard room under the painted clouds.
 
@@ -21571,7 +21570,7 @@ hugh: I won! I beat Juliet Pemberton! Somebody *write it down*!
 
 You\'re laughing. You can\'t stop. You owe Father a hundred dollars.
 
-You lost. It\'s the best thing that\'s happened to you all year.`,
+You lost. You would like, very much, to do it again.`,
       next: '@hub'
     },
 
@@ -21601,9 +21600,9 @@ jules: What\'s Halcyon?
 
 She doesn\'t look at the badge. She doesn\'t have to; she knows exactly where it is, the way she knows where every instrument on every tray is.
 
-catherine: A consulting arrangement. Your father\'s firm has an interest. They\'re doing some very promising work on cellular regeneration. I review protocols. Twice a year. It\'s nothing.
+catherine: A consulting arrangement. An energy company needs someone to tell it whether its safety protocols are sound. I review them. Twice a year. It\'s nothing.
 
-jules: A boy on my floor died in one of their studies.
+jules: A boy died on my floor. He was in one of their studies.
 
 That stops her. Just for a second. You see it go through her, the surgeon\'s flinch, the one she\'d never let a patient see.
 
@@ -21613,7 +21612,7 @@ She picks up her bag.
 
 catherine: Come. I\'ll show you the new cardiac wing.
 
-You follow her out. You don\'t look back at the badge. You don\'t have to. You\'ll be seeing it for a long time.`,
+You follow her out. You don\'t look back at the badge.`,
       next: '@hub'
     },
 
@@ -21630,26 +21629,24 @@ simone: Not yet. Listen to me. I\'m in my grandmother\'s car in Decatur, Georgia
 
 You hear her breathe.
 
-simone: I keep lists. On my phone. *Things That Don\'t Add Up.* I had one about Salvatore. That one\'s closed now. You don\'t need to know how. I have one about you. It\'s eleven items long.
+simone: I keep lists. On my phone. *Things That Don\'t Add Up.* I have one about you. It\'s eleven items long.
 
 simone: Number one. The window in August. Every piece of glass missed you. Number four. You\'ve never lost a game of anything. Number seven. The Parkway, Thanksgiving. On my grandmother\'s TV. Four men. Four darts. Ten feet. *Juliet.*
 
-simone: I gave him one chance to tell me himself. He blew it. And then he got a second one, because I\'m weak and I love him, God help me.
-
 simone: You get one. That\'s the rule. That\'s my only rule in this life. This is yours.
 
-The horses shift in their stalls. Mercutio\'s stall at the end, empty since September, with his name still on the brass plate.`,
+The horses shift in their stalls. Mercutio at the end, head over his stall door, watching you with his ears back.`,
       choices: [
         { text: 'Tell her the truth. The part you know. You\'re lucky. Impossibly. It\'s getting worse. You don\'t know what it is.', tag: 'Tell her',
-          fx: g => { g.flag('simone_j3', 'told'); g.bond('simone', { trust: 3, affection: 2 }); g.know('jules_changed', ['simone']); }, go: 'a1_simone_told' },
+          fx: g => { g.flag('simone_j3', 'told'); g.bond('simone', { trust: 3, affection: 2 }); g.know('jules_changed', ['simone']); g.know('jules_told_simone', ['jules', 'simone'], 'From the Ravenscourt stables, Jules told Simone the truth: she\'s impossibly lucky, it\'s getting worse, and she doesn\'t know what it is.'); }, go: 'a1_simone_told' },
         { text: '"I\'m a very lucky person, Simone. Everybody says so." Lie. You\'re very good at it.', tag: 'Lie',
-          check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', noLuck: true, label: 'Lie to Simone', on: { strong: 'a1_simone_lie', weak: 'a1_simone_lie', miss: 'a1_simone_lie' } } }
+          check: { kind: 'move', move: 'Cover Story', attr: 'charm', skill: 'lie', label: 'Lie to Simone', on: { strong: 'a1_simone_lie', weak: 'a1_simone_lie', miss: 'a1_simone_lie' } } }
       ]
     },
     a1_simone_told: {
       text: `You lean your forehead against the cold brass of Mercutio\'s nameplate, and you tell her.
 
-The window. The glass. The cards, the dice, two hundred and eleven sixes in a pink marble bathroom. Mercutio, in September, the wall you let go of the reins at to see what would happen, and how you landed on your feet and he didn\'t. The Parkway, and the click behind your breastbone with every dart.
+The window. The glass. The cards, the dice, two hundred and eleven sixes in a pink marble bathroom. Mercutio, in October, and the reins you let go of to see what would happen, and how you landed on your feet and he didn\'t. The Parkway, and the click behind your breastbone with every dart.
 
 You\'ve never said any of it out loud. Not to anybody. It comes out in order, precise, like a case history. That\'s the only way you know how to say it.
 
@@ -21692,7 +21689,7 @@ simone: I\'m not going to say anything to anybody. I want you to know that. I do
 
 She hangs up.
 
-You stand in the stables with your forehead against Mercutio\'s nameplate for a long time. It was a perfect lie. It always is.
+You stand in the stables with your forehead against the cold brass.
 
 You\'ve never hated being good at something before.`,
       next: '@hub'
@@ -21748,7 +21745,7 @@ She smokes.
 
 constance: Some families are lucky, child. Some families are *early*. Keep him close. It\'s better to have the early ones where you can see them.
 
-She won\'t say anything else. You ask. She smokes her cigarette down to the filter, and puts it out in the little silver dish she brings out for exactly one cigarette a day, and goes inside without another word.`,
+She won\'t say anything else. You ask. She smokes her cigarette exactly halfway, the way she always does, and puts it out in the little silver dish she brings out for exactly one cigarette a day, and goes inside without another word.`,
       next: '@hub'
     },
 
@@ -21770,7 +21767,7 @@ He doesn\'t miss a beat. That\'s the thing about your father. He never misses a 
 
 whitney: Clean energy! Very exciting stuff. Some of the smartest people I\'ve ever met. We have a small position. Why?
 
-jules: A boy on my floor died in one of their studies.
+jules: A boy died on my floor. He was in one of their studies.
 
 whitney: Oh, sweetheart. I heard. I\'m so sorry. That must have been awful for you.
 
@@ -21821,7 +21818,7 @@ Toward his study.`,
       { text: 'Don\'t follow. Wait for her to come back. Then go talk to her yourself.', tag: 'Talk to her',
         fx: g => { g.flag('achterberg3', 'talk'); }, go: 'a2_achterberg' },
       { text: 'Stay with the party. Find a quiet corner. Text Sam. It\'s almost midnight.', tag: 'Text Sam',
-        fx: g => { g.flag('achterberg3', 'none'); g.bond('sam', { affection: 1 }); }, go: 'a2_text' }
+        fx: g => { g.flag('achterberg3', 'none'); g.bond('jules', { affection: 1 }); }, go: 'a2_text' }
     ]
   },
 
@@ -21848,21 +21845,17 @@ ACHTERBERG: Yes. She\'s also the most significant subject we have. And she\'s yo
 
 whitney: And the Kearney boy?
 
-ACHTERBERG: Seventeen is Cole\'s concern. Not yours. Not hers.
+ACHTERBERG: Leave the boy to Cole. Not yours. Not hers.
 
 A pause.
 
-ACHTERBERG: Your mother is not cooperative.
+ACHTERBERG: And your mother?
 
 whitney: My mother has never been cooperative a day in her life. She\'s eighty-four. She\'ll be dead soon.
 
 He says it lightly. He says it the way he says everything, warm and easy, like a man telling you the weather.
 
-ACHTERBERG: She took the girl to the chapel?
-
-whitney: Tomorrow.
-
-ACHTERBERG: Then tomorrow, everything changes. Let\'s hope it\'s for the better.
+ACHTERBERG: Then we wait. I\'m very good at waiting.
 
 The decanter again. Their glasses touch.
 
@@ -21874,7 +21867,7 @@ You stand in the dark in the servants\' corridor with your hand over your mouth,
 
 You\'re a number.
 
-And Sam is *seventeen*.`,
+And Sam is *Cole\'s concern*.`,
     next: 'a2_midnight'
   },
   a2_achterberg: {
@@ -21894,7 +21887,7 @@ She looks out the window at the snow on the lawn, the dark woods, the lights of 
 
 ACHTERBERG: May I ask you something? You don\'t have to answer. Do you ever feel *watched*?
 
-You don\'t answer. You don\'t have to. She sees it.
+You don\'t answer. She sees it anyway.
 
 ACHTERBERG: Yes. I thought so.
 
@@ -21925,7 +21918,7 @@ TXT jules: Except the bassist. The bassist is doing his best.
 
 The dots come right away. He was waiting.
 
-TXT sam: theres 14 people in my nonnas living room watching the mummers on tv and my uncle joey is asleep in a chair with a paper hat on
+TXT sam: theres 14 people in my nonnas living room watching the fireworks countdown on 6abc and my uncle joey is asleep in a chair with a paper hat on
 TXT sam: i would trade you
 TXT jules: You would not.
 TXT sam: youre right. its very warm in here and theres a tray of pizzelles
@@ -21964,7 +21957,7 @@ The clock\'s pendulum stops in the middle of its swing. The champagne bubbles in
 
 You don\'t stop.
 
-You feel it. The cold. Not your cold; you\'ve never had a cold. Someone else\'s. Coming in like a draft under a door, from very far away, from south, from the city. And with it, the feeling. The one you\'ve had your whole life. The room when someone\'s come in behind you.
+You feel it. The cold. Not yours; you\'ve never run cold. Someone else\'s. Coming in like a draft under a door, from very far away, from south, from the city. And with it, the feeling. The one you\'ve had your whole life. The room when someone\'s come in behind you.
 
 It\'s so close now. It\'s *leaning*.
 
@@ -21972,23 +21965,21 @@ Then the bells start again. The pendulum swings. The bubbles rise. Two hundred p
 
 Nobody noticed. Nobody but you.
 
-You look at your phone. 12:00. A text, timestamped 11:59.
+You look at your phone. 12:01. A text, timestamped 12:00.
 
 TXT sam: happy new year pemberton
-TXT sam: did the bells just stop for you too
+TXT sam: did you hear the bells
 
 You stare at it.
 
-*For you too.*
+*Did you hear the bells.* Not a joke. Not *pemberton*. Just that.
 
-You don\'t answer for a long time. You sit on the stairs while the party sings and the snow comes down outside the tall windows, and you hold the phone in both hands, and you think about a stone wall over the Schuylkill, and *I felt you go*, and Gran on the terrace saying *some families are early*, and you think: *Oh.*
-
-*Oh, no.*
+You don\'t answer. You sit on the stairs while the party sings and the snow comes down outside the tall windows, and you hold the phone in both hands, and you think about a stone wall over the Schuylkill, and *What if it was?*${g.f('gran_terrace') ? ', and Gran on the terrace saying *some families are early*' : ''}, and the thing that was *leaning*, and you think: *It\'s leaning toward him.*
 
 *Oh, Sam.*`,
     choices: [
       { text: 'Text back: "Yes."', tag: 'Yes',
-        fx: g => { g.flag('bells_reply', 'yes'); g.bond('sam', { trust: 1 }); g.know('bells_both', ['jules', 'sam'], 'At midnight on New Year\'s, the bells stopped for one second. You both felt it. You both said so.'); }, go: 'a2_yes' },
+        fx: g => { g.flag('bells_reply', 'yes'); g.bond('jules', { trust: 1 }); g.know('bells_both', ['jules', 'sam'], 'At midnight on New Year\'s, the bells stopped for one second. He asked if you heard the bells. You said yes. Neither of you said what you meant.'); }, go: 'a2_yes' },
       { text: 'Text back: "Happy New Year, Kearney." Nothing else. Not yet. January.', tag: 'Not yet',
         fx: g => { g.flag('bells_reply', 'wait'); }, go: 'a2_wait' }
     ]
@@ -22042,19 +22033,19 @@ EH.scenes('s02e03', {
     clock: { day: 'Fri', date: 'Jan 1', time: '4:00 PM' },
     text: g => `At four o\'clock on New Year\'s Day, Gran doesn\'t go to the terrace.
 
-She\'s waiting at the door to the garden in her fur, with her cigarette unlit between two fingers, and when you come down she doesn\'t say anything. She just takes your arm, the way she took it when you were seven and you walked out of this same door in the morning after a night in the dark that you still don\'t talk about, and you walk together down the snowy path through the boxwoods to the chapel no one enters.
+She\'s waiting at the door to the garden in her fur, with her cigarette unlit between two fingers, and when you come down she doesn\'t say anything. She just takes your arm, the way she took it when you were seven and you walked out of this same door in the morning after a night in the dark that you still don\'t talk about, and you walk together down the snowy path through the boxwoods to the chapel nobody else enters.
 
-It\'s small. Fieldstone, 1891, with a slate roof heavy with snow and a single window over the altar, stained glass: a hand, holding a key, and under it, in Latin, one word.
+It\'s small. Fieldstone, 1891, with a slate roof heavy with snow and a single window over the altar, stained glass: a tall figure in white in a doorway, nothing behind it but blue dark, and on a ribbon underneath, one word.
 
 *TENEO.* I hold.
 
-Inside, it\'s cold. Colder than outside. Colder than it should be, like the inside of a refrigerator, like the inside of a held breath. Six pews. An altar of plain stone with nothing on it. No cross. You noticed that at seven, in the dark: no cross, anywhere.
+Inside, it\'s cold. Colder than outside. Colder than it should be. Six pews. An altar of plain stone with nothing on it. No cross. You noticed that in October, by Gran\'s lantern: no cross, anywhere.
 
 Gran lights her cigarette in the chapel. At four o\'clock exactly. She smokes it standing in front of the altar.
 
-constance: Your great-great-great-grandfather built this. Josiah. In 1891, when he was an old man and very rich and very frightened. He built a whole house around it. Ravenscourt is the box. This is what\'s in the box.
+constance: Your great-great-great-grandfather built this. Josiah. In 1891, when he was forty-six and very rich and very frightened. He built a whole house around it. Ravenscourt is the box. This is what\'s in the box.
 
-She takes an ivory die out of her coat. The twin of yours. Older, yellower, worn soft at the corners.
+She takes an ivory die out of her coat. The other half of the pair she gave you at sixteen. The one she kept.
 
 She rolls it on the stone altar without looking.
 
@@ -22084,22 +22075,20 @@ constance: Choose carefully. Most people waste the first one.`,
     ]
   },
   a3_where: {
-    enter: g => { g.know('josiah_1876', ['jules', 'constance'], 'Gran: in 1876, at the Centennial, Josiah Pemberton stood beside the great engine when it stopped "for a heartbeat," and something stood beside him. He made an agreement he didn\'t understand. Every Pemberton since has been lucky.'); },
+    enter: g => { g.know('josiah_1876', ['jules', 'constance'], 'Gran: when he was thirty-one, Josiah Pemberton stood beside a great engine when it stopped "for a heartbeat," and something stood beside him. He made an agreement he didn\'t understand. Every Pemberton since has been lucky.'); },
     text: `constance: Ah. The historian. Good.
 
 She smokes.
 
-constance: In 1876, there was a great exhibition in Fairmount Park. The Centennial. The whole world came. And in the middle of it, in Machinery Hall, the largest steam engine ever built. The Corliss. Forty feet tall. President Grant turned it on himself.
+constance: Josiah was thirty-one. A clerk in a counting house. One spring morning he was standing in a great hall full of machines, beside the biggest of them, when it stopped.
 
-constance: Josiah was thirty-one. A clerk in a counting house. He was standing beside the engine on the tenth of May, at the opening, when it stopped.
-
-constance: Not broke down. Stopped. For a heartbeat. Everyone in the hall says it never happened. Josiah said it did. He said, in that heartbeat, the whole hall was silent and cold, and nothing moved, and something was standing beside him.
+constance: Not broke down. Stopped. For a heartbeat. Nobody else in the hall noticed. Josiah did. It went cold, and nothing moved, and something was standing beside him.
 
 jules: What was it?
 
-constance: That\'s a fourth question.
+constance: That would be another question.
 
-She looks at the window. The hand. The key.
+She looks at the window. The figure in the doorway.
 
 constance: Something that liked him. That\'s all he ever said. *It liked me.* It asked him for something, and he said yes, because he was thirty-one and poor and it was offering him the whole world. He never told anyone what he\'d agreed to. Not even his wife. He wrote it down once, and burned it, and built this chapel over the ashes.
 
@@ -22110,7 +22099,7 @@ constance: That\'s where it came from, child. A clerk said yes to something in a
   },
   a3_cost: {
     enter: g => { g.know('luck_cost', ['jules', 'constance'], 'Gran: the luck costs other people. "The house always collects. Not from us. Near us." Mercutio. Every time it goes your way, it goes someone else\'s way less.'); },
-    text: g => `Gran looks at you for a long time. Then she nods, slowly, like you passed something.
+    text: g => `Gran looks at you. Then she nods, once.
 
 constance: That\'s the right question. That\'s the question I asked, too. My grandmother cried when I asked it.
 
@@ -22118,52 +22107,46 @@ She smokes.
 
 constance: It costs other people.
 
-constance: Not us. Never us. We don\'t fall. We don\'t get hurt. We don\'t lose. But luck isn\'t made, child. It\'s moved. Every time the world arranges itself around you, it has to arrange itself *away* from someone. The house always collects. Not from us. Near us.
+constance: Not us. Never us. Luck isn\'t made, child. It\'s moved. The house always collects. Not from us. Near us.
 
-You think of the stables. A brass nameplate. An empty stall.
-
-jules: Mercutio.
-
-constance: Mercutio.
-
-constance: I let go of the reins once, too. In 1961. Over the same wall. I landed on my feet, just like you. My mare was called Héloïse.
+${g.f('horse6') === 'letgo' ? 'You think of the stables. A horse that went lame for a month so you could find out.\n\njules: Mercutio.\n\nconstance: Mercutio.\n\nconstance: I let go of the reins once, too. In 1961. Over the same wall. I landed on my feet, just like you. My mare was called Héloïse.' : 'constance: I let go of the reins once. In 1961. Over the wall at the end of the long field. Just to see. I landed on my feet. My mare was called Héloïse. She never jumped again.'}
 
 She taps her ash into her palm.
 
-${g.hv('jules_debt') >= 6 ? 'constance: And you\'ve been spending, haven\'t you. Since August. I can feel it on you, like a draft. Every time you let it click, somebody near you pays a little. A broken glass. A bad night. A missed train. And it adds up.' : 'constance: You\'ve been careful. I can tell. Not as careful as you\'ll need to be.'}
+${g.hv('jules_debt') >= 5 ? 'constance: And you\'ve been spending, haven\'t you. Since August. I can feel it on you, like a draft. Every time you let it, somebody near you pays a little. A broken glass. A bad night. A missed train. And it adds up.' : 'constance: You\'ve been careful. I can tell. Not as careful as you\'ll need to be.'}
 
 jules: Can it be stopped?
 
 constance: That\'s another question. But I\'ll give you this one, because you asked the right one first.
 
-She drops her cigarette on the stone floor and puts it out under her shoe.
+She looks at the cigarette burning down between her fingers.
 
-constance: You can choose not to. That\'s the only freedom we have. It\'s small, and it\'s hard, and nobody in this family has ever been very good at it. But every time you feel the click coming, and you don\'t let it, and you lose like a person, the house doesn\'t collect. Not that time.
+constance: You can choose not to. Every time you feel it coming and don\'t let it, every time you lose like a person, the house doesn\'t collect. Not that time. Nobody in this family has ever been any good at it.
 
-constance: You can lose, child. On purpose. That\'s the whole secret. That\'s all I have.`,
+constance: That\'s all I have.`,
     next: 'a3_next'
   },
   a3_why: {
-    enter: g => { g.know('why_jules', ['jules', 'constance'], 'Gran: it doesn\'t choose twice in a generation. It chose you, not Hugh, "because you\'re interesting to watch." Since August it\'s louder in you than in anyone since Josiah.'); },
+    enter: g => { g.know('why_jules', ['jules', 'constance'], 'Gran: it doesn\'t choose twice in a generation. It chose you, not Hugh, "because it likes you." Since August it\'s louder in you than in anyone since Josiah.'); },
     text: `constance: Because it doesn\'t choose twice in a generation. It chose your father, in his. It chose me, in mine. It chose you.
 
 jules: But why?
 
-constance: Because you\'re interesting to watch.
+constance: Because it likes you. It never says why.
 
 She says it flat, without any irony at all.
 
-constance: Hugh wants things. He wants them so badly. It isn\'t interesting to watch someone get what they want. You were the one who *didn\'t* want. Who went to Temple to spite your mother. Who chose a cab driver\'s son from South Philadelphia over a Whitford. Who rolls a die two hundred times in a bathroom trying to *lose*.
+constance: Hugh wants things. He wants them so badly. It never cared for people who get what they want. You were the one who *didn\'t* want. Who went to Temple to spite your mother. Who looks at a cab driver\'s son from South Philadelphia and not at a Whitford. Who rolls a die two hundred times in a bathroom trying to *lose*.
 
-constance: You\'re a good story, child. That\'s all it\'s ever wanted. A good story.
+constance: It likes the ones who fight it, child. God knows why. Josiah never found out, and neither have I.
 
 She looks at the window.
 
-constance: And since August, since the night the clocks stopped on Broad Street, it\'s louder in you than it has been in anyone since Josiah. Something opened that night. Something leaned closer. I felt it here. In this room. On my knees. I knew it was you before you called.`,
+constance: And since August, since the night the clocks stopped on Broad Street, it\'s louder in you than it has been in anyone since Josiah. I felt it in this room. I knew it was you before you came home.`,
     next: 'a3_next'
   },
   a3_sam: {
-    enter: g => { g.know('gran_sam', ['jules', 'constance'], 'Gran: "Some families are lucky. Some are early. The early ones go into the cold for other people. It costs them years. Keep him close, child, and don\'t let the house collect from him."'); },
+    enter: g => { g.know('gran_sam', ['jules', 'constance'], 'Gran: "Some families are lucky. Some are early. The early ones always go in for somebody else. Keep him close, child, and don\'t let the house collect from him."'); },
     text: `Gran puts her cigarette down on the edge of the altar.
 
 constance: You love him.
@@ -22174,7 +22157,7 @@ constance: No. It\'s an answer to yours.
 
 She looks at you.
 
-constance: Some families are lucky. Ours. Some families are *early*. They go into the cold, between the seconds, and they come back out, and it costs them. Years. Literally years, child. Their hair goes. Their hands. Their hearts. They\'re the only ones who can go in there. And they always, always go in for somebody else.
+constance: Some families are lucky. Ours. Some families are *early*. What they are isn\'t mine to tell. I\'ll tell you one thing they do: they always go in for somebody else.
 
 constance: I knew one, once. A long time ago. On a riverbank. An old woman, soaked to the shoulders, with a child coughing up the Schuylkill on the grass. She looked at me across the snow, and I looked at her, and we both knew exactly what the other one was.
 
@@ -22200,7 +22183,7 @@ constance: So keep him close. Close enough that when the house comes to collect,
 
 constance: One more thing. Not an answer. A gift.
 
-She holds it out to you. Hers. Older than yours.
+She holds it out to you. The one she kept.
 
 constance: Roll it. And don\'t let it.
 
@@ -22208,7 +22191,7 @@ You take it. It\'s cold. The first cold die you\'ve ever held.
 
 You hold it over the stone altar. You feel the click coming, behind your breastbone, the way it always comes, like a lock getting ready to turn.
 
-And you don\'t let it. You don\'t know how. You just hold your breath, inside, somewhere you\'ve never held it, and you roll.
+And you don\'t let it. ${g.f("straight_hugh") ? "You did this once, in the billiard room, with a cue to aim. There\'s nothing to aim here." : "You don\'t know how."} You just hold your breath, inside, somewhere you\'ve never held it, and you roll.
 
 The die skitters across the stone. Tumbles. Stops.
 
@@ -22234,22 +22217,22 @@ You roll yours. Six. You roll Gran\'s, and you hold your breath inside, and you 
 
 Six. Two. Six. Five. Six. One.
 
-You can do it. Not easily. Not every time. It\'s like holding a muscle you didn\'t know you had, and it aches, and you\'re shaking by the twentieth roll. But you can lose. On purpose. For the first time in your life.
+You can do it. Not easily. Not every time. It\'s like holding a muscle you didn\'t know you had, and it aches, and you\'re shaking by the twentieth roll. But you can lose. On purpose.
 
-${g.knows('forty_four') ? 'You think about the servants\' corridor. *Forty-four.* *Seventeen.* Your father\'s glass touching hers.' : g.knows('achterberg_card') ? 'Achterberg\'s card is on the nightstand. *44.* You haven\'t thrown it away.' : ''}
+${g.knows('forty_four') ? 'You think about the servants\' corridor. *Forty-four.* *Leave the boy to Cole.* Your father\'s glass touching hers.' : g.knows('achterberg_card') ? 'Achterberg\'s card is on the nightstand. *44.* You haven\'t thrown it away.' : ''}
 
-${g.knows('gran_sam') ? 'You think about an old woman on a riverbank, soaked to the shoulders. *Some families are early.* The white hair at his temple, in December, that you put your hand on and didn\'t ask about.' : 'You think about the white hair at his temple, in December, that you put your hand on and didn\'t ask about.'}
+${g.knows('gran_sam') ? 'You think about an old woman on a riverbank, soaked to the shoulders. *Some families are early.* The white hair at his temple, after Thanksgiving, that you put your hand on and didn\'t ask about.' : 'You think about the white hair at his temple, after Thanksgiving, that you put your hand on and didn\'t ask about.'}
 
 You think about January. *I ask, you answer. Then you ask, and I answer.*
 
 You pick up your phone.`,
     choices: [
       { text: 'Write it all down. Everything Gran told you. A letter, in your own hand, to give him in January. And then give it to him.', tag: 'Tell him',
-        fx: g => { g.flag('jules_decision', 'tell'); g.bond('sam', { trust: 1 }); g.know('jules_letter', ['jules'], 'You wrote Sam a letter on New Year\'s night. Seven pages. Everything. You\'ll give it to him in January.'); }, go: 'a4_letter' },
+        fx: g => { g.flag('jules_decision', 'tell'); g.bond('jules', { trust: 1 }); g.know('jules_letter', ['jules'], 'You wrote Sam a letter on New Year\'s night. Seven pages. Everything. You\'ll give it to him in January.'); }, go: 'a4_letter' },
       { text: 'Keep it. Not because you don\'t trust him. Because the house collects from the people near you, and you want him far enough away that it can\'t.', tag: 'Protect him',
         fx: g => { g.flag('jules_decision', 'distance'); }, go: 'a4_distance' },
       { text: 'Call him. Now. It\'s almost midnight. He said he\'d pick up.', tag: 'Call him',
-        fx: g => { g.flag('jules_decision', 'call'); g.bond('sam', { affection: 1 }); }, go: 'a4_call' }
+        fx: g => { g.flag('jules_decision', 'call'); g.bond('jules', { affection: 1 }); }, go: 'a4_call' }
     ]
   },
   a4_letter: {
@@ -22258,7 +22241,7 @@ You pick up your phone.`,
 
 You write until two in the morning. Seven pages. In your perfect handwriting, which is the only part of you that\'s never been lucky, because you practiced it, every letter, at that desk, when you were eight.
 
-The window in August. The glass. The two hundred and twelve sixes. Mercutio. The Parkway. Josiah, and the engine, and *it liked me*. *Forty-four*, if you heard it. Gran on the riverbank. *Some families are early.*
+The window in August. The glass. The two hundred and twelve sixes. Mercutio. The Parkway. Everything Gran told you in the chapel, in the order she told it, like a case history.
 
 And on the last page, the hardest part, you write the thing you\'ve never written or said or thought in complete sentences:
 
@@ -22278,11 +22261,11 @@ January.`,
     enter: g => { g.hidden('jules_debt', -1); },
     text: `You put the phone down.
 
-You think about Mercutio\'s empty stall. About a boy on the Parkway with blood on his face, standing next to you, and four darts turning away from you and toward somewhere else. About what the house collects, and from whom.
+You think about Mercutio, ears back at you over his stall door. About a boy on the Parkway with blood on his face, standing next to you, and four darts turning away from you and toward somewhere else. About what the house collects, and from whom.
 
 *Near us.*
 
-You love him. Gran said it, and it isn\'t a question, and it isn\'t an answer either. It\'s just the worst thing that\'s ever happened to you.
+You love him. Gran said it, and it isn\'t a question, and it isn\'t an answer either. It\'s just true, which is worse.
 
 And the kindest thing you can do for somebody you love, if you\'re a Pemberton, might be to stand a little farther away.
 
@@ -22321,15 +22304,15 @@ jules: I lost.
 
 sam: What?
 
-jules: I rolled a die. In the chapel. And I lost. I rolled a one. On purpose. For the first time in my whole life, Sam.
+jules: I rolled a die in the chapel and it came up one. I did that, Sam. Not it. Me.
 
-You\'re crying. You didn\'t know you were going to. Jules Pemberton doesn\'t cry in front of people. You\'re not in front of anybody. You\'re in your room in the dark with a phone against your face.
+You\'re crying. You didn\'t know you were going to. There\'s no one in the room to see it. There\'s only him, hearing it.
 
-He doesn\'t say anything. He just stays on the line, breathing, while you cry, for a long time.
+He doesn\'t say anything. He just stays on the line, breathing, while you cry.
 
 sam: That\'s good, right? Losing?
 
-jules: It\'s the best thing that\'s ever happened to me.
+jules: Yes.
 
 sam: Then I\'m glad. I\'m really glad, Jules.
 
@@ -22337,7 +22320,7 @@ jules: January.
 
 sam: January.
 
-You don\'t hang up. Neither does he. You fall asleep at three in the morning with the phone on the pillow, and when you wake up at nine, the call is still connected, four hundred and seventy-one minutes, and you can hear him snoring.`,
+You don\'t hang up. Neither does he. You fall asleep at three in the morning with the phone on the pillow, and when you wake up at half past seven, the call is still connected, four hundred and seventy-one minutes, and you can hear him snoring.`,
     next: 'tag_hugh'
   },
 
@@ -22365,9 +22348,9 @@ Left. Six. Right. Four.
 
 Left. Six. Left. Six. Left. Six.
 
-He stands in the hall with his glass for a long time and watches the left die come up six, and six, and six, and six.
+He stands in the hall with his glass and watches the left die come up six, and six, and six, and six.
 
-${g.f('hugh3') === 'lost' ? 'He thinks about the billiard room. The seven ball, rattling in the jaws of the pocket and stopping. *I won.* Did he?' : 'He thinks about twenty years of tables, and boards, and cards. About never once.'}
+${g.f('hugh3') === 'lost' ? 'He thinks about the billiard room. The seven ball, rattling in the jaws of the pocket and stopping. *I won.* Did he?' : 'He thinks about every table, every board, every hand of cards since they were six.'}
 
 He backs away from the door very quietly, and goes down the hall to his room, and doesn\'t sleep.
 
@@ -22379,7 +22362,7 @@ Dr. Miriam Achterberg has her little black notebook open on her knee and a silve
 
 *1 Jan. 44 entered the chapel with C.P. at 16:00. Remained 52 min.*
 
-*Thermal from the Gladwyne post: chapel interior 4°C below ambient. Consistent with 1876 records.*
+*Thermal from the Gladwyne post: chapel interior 4°C below ambient. Consistent with prior readings.*
 
 *At 16:41, for 0.4 seconds, chapel interior read as nothing at all.*
 
@@ -22398,7 +22381,7 @@ Object.assign(EH.episodes.s02e03, {
       { label: 'Played it straight and lost', pct: 37, if: g => g.f('hugh3') === 'lost' }
     ] },
     { q: 'New Year\'s Eve', opts: [
-      { label: 'Followed them to the study', pct: 46, if: g => g.f('achterberg3') === 'overheard' || g.f('achterberg3') === 'caught' },
+      { label: 'Followed them to the study', pct: 46, if: g => g.f('achterberg3') === 'overheard' },
       { label: 'Talked to Achterberg', pct: 21, if: g => g.f('achterberg3') === 'talk' },
       { label: 'Texted Sam', pct: 33, if: g => g.f('achterberg3') === 'none' }
     ] },
@@ -22410,9 +22393,9 @@ Object.assign(EH.episodes.s02e03, {
   ],
   onEnd: g => {
     g.recap('At Ravenscourt, Gran took Jules to the chapel and gave her three questions.');
-    if (g.knows('forty_four')) g.recap('Jules heard Dr. Achterberg call her "forty-four." And you, "seventeen."');
+    if (g.knows('forty_four')) g.recap('Jules heard Dr. Achterberg call her "forty-four." Then your name came up.');
     g.recap('In the chapel, Jules rolled a die and didn\'t let it. It came up one.');
-    g.recap('At midnight on New Year\'s, the bells stopped for one second, for both of you.');
+    g.recap(g.f('bells_reply') === 'yes' ? 'At midnight on New Year\'s, the bells stopped for one second, for both of you. You asked if she heard them. She said yes.' : 'At midnight on New Year\'s, the bells stopped for one second. You asked Jules if she heard the bells. She said Happy New Year.');
     if (g.f('jules_decision') === 'tell') g.recap('Jules wrote you a letter. Seven pages. She\'s keeping it for January.');
   }
 });
@@ -23118,8 +23101,8 @@ Object.assign(EH.episodes.s02e03, {
       if (!S.done.includes(S.ep)) {
         g.xp(ep.xp ?? 3);
         if (ep.onEnd) ep.onEnd(g);
-        EH.povExit(S);
         const sum = summarize();
+        EH.povExit(S);
         S.eps[S.ep] = { title: ep.title, finished: new Date().toISOString(), summary: sum };
         S.done.push(S.ep);
         clearTimeout(dbTimer); save(); clearTimeout(dbTimer); pushDb(); pushEpisodeDoc(S.ep, sum);

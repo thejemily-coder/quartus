@@ -60,3 +60,30 @@ Write each episode to the save. The plan bends; the save doesn't.
   - Jules's auto-nudge debt is near its cap (5).
   - Decide on the player-facing Nudge.
   - Jules hasn't seen any of the DiNardo facts.
+- **S2E3 "Old Money" (Jules POV)** was written for this playthrough's S2E2 save. Shape:
+  - **Cold open:** 211 sixes in the pink bathroom. Sam's Christmas text about Salvatore (`feast_text` = name).
+  - **Hub:**
+    - Hugh's billiards: luck / **play it straight** (`noLuck`; win or lose; jules_debt −1).
+    - Mother at HUP: Catherine's Halcyon advisory badge.
+    - Simone: "one chance" about her Jules list (tell / lie).
+    - Gran on the terrace: "Some families are lucky. Some are *early*."
+    - Father: "Clean energy! A small position."
+  - **NYE:**
+    - Overhear Achterberg and Whitney: "forty-four… leave the boy to Cole."
+    - Or Achterberg's card (44).
+    - Or text Sam.
+    - At midnight the bells stop for one second. Sam texts "did you hear the bells"; Jules answers "Yes" or "Happy New Year."
+  - **Chapel (Jan 1):**
+    - Three questions: where / cost / why me / Sam. Josiah at 31 by a great engine ("it liked me"), with 1876 and the Corliss kept unnamed. The house collects "near us." Choosing to lose stops it. "It likes you."
+    - The riverbank: Constance saw Assunta in 1964.
+    - Gran's kept die rolls **one**.
+  - **Decision:** letter for January / distance / call (471 minutes).
+  - **Tag:** Hugh watches the dice through the door. Achterberg: "*She can turn it off.*"
+  - **Seal trims:** no Audience thesis, no Centennial name, and the early families' mechanics are not stated. "Seventeen" became "leave the boy to Cole."
+- **Engine changes:**
+  - POV locks Burst and Slip.
+  - `noLuck` checks.
+  - `knows()` defaults to the POV character.
+  - Summarize before `povExit`. The S1E6 episode summary in the save is still polluted, which is harmless.
+  - `jules_debt` is clamped to 0–10.
+- **E4–E5:** the letter (if written) stays undelivered until the E6 reveal.

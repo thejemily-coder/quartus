@@ -36,11 +36,10 @@ Six.
 Your phone is on the bath mat beside you. At 9:14 on Christmas morning he answered your three a.m. texts.
 
 TXT sam: merry christmas pemberton
-TXT sam: i asked her. his name was salvatore. her brother. im named after him
-TXT sam: ill tell you the rest in january
+${g.f('feast_text') === 'name' ? 'TXT sam: i asked her. his name was salvatore. her brother. im named after him\n' : ''}TXT sam: ill tell you the rest in january
 TXT sam: deal is a deal
 
-You\'ve read it eleven times. *I\'ll tell you the rest.* There\'s a rest. There\'s always a rest with him. Bleeding on the bathroom floor at Cardone. The Parkway. *I felt you go.*
+You\'ve read it eleven times. *I\'ll tell you the rest.* There\'s a rest. There\'s always a rest with him. Bleeding on the bathroom floor at Cardone. The Parkway. *What if it was?*
 
 You pick up the die. You hold it in your palm. It\'s warm from your hand. It\'s always warm.
 
@@ -63,7 +62,7 @@ Your father is in his study with the door closed, on calls with London and Zuric
 
 And Gran.
 
-Gran is everywhere. In the morning room with the *Inquirer* and black coffee. In the conservatory with the orchids she talks to in French. On the south terrace at exactly four o\'clock every afternoon, in her fur, with her one cigarette of the day, which she smokes with her eyes closed, like a prayer.
+Gran is everywhere, from noon on. In the morning room with the *Inquirer* and black coffee. In the conservatory with the orchids she talks to in French. On the south terrace at exactly four o\'clock every afternoon, in her fur, with her one cigarette of the day, which she smokes with her eyes closed, like a prayer.
 
 She hasn\'t said a word about the chapel since you got home. Not one. Every time you walk into a room she\'s in, she looks at you over her glasses, and smiles, and goes back to what she was doing.
 
@@ -224,9 +223,9 @@ jules: What\'s Halcyon?
 
 She doesn\'t look at the badge. She doesn\'t have to; she knows exactly where it is, the way she knows where every instrument on every tray is.
 
-catherine: A consulting arrangement. Your father\'s firm has an interest. They\'re doing some very promising work on cellular regeneration. I review protocols. Twice a year. It\'s nothing.
+catherine: A consulting arrangement. An energy company needs someone to tell it whether its safety protocols are sound. I review them. Twice a year. It\'s nothing.
 
-jules: A boy on my floor died in one of their studies.
+jules: A boy died on my floor. He was in one of their studies.
 
 That stops her. Just for a second. You see it go through her, the surgeon\'s flinch, the one she\'d never let a patient see.
 
@@ -253,11 +252,9 @@ simone: Not yet. Listen to me. I\'m in my grandmother\'s car in Decatur, Georgia
 
 You hear her breathe.
 
-simone: I keep lists. On my phone. *Things That Don\'t Add Up.* I had one about Salvatore. That one\'s closed now. You don\'t need to know how. I have one about you. It\'s eleven items long.
+simone: I keep lists. On my phone. *Things That Don\'t Add Up.* I have one about you. It\'s eleven items long.
 
 simone: Number one. The window in August. Every piece of glass missed you. Number four. You\'ve never lost a game of anything. Number seven. The Parkway, Thanksgiving. On my grandmother\'s TV. Four men. Four darts. Ten feet. *Juliet.*
-
-simone: I gave him one chance to tell me himself. He blew it. And then he got a second one, because I\'m weak and I love him, God help me.
 
 simone: You get one. That\'s the rule. That\'s my only rule in this life. This is yours.
 
@@ -371,7 +368,7 @@ She smokes.
 
 constance: Some families are lucky, child. Some families are *early*. Keep him close. It\'s better to have the early ones where you can see them.
 
-She won\'t say anything else. You ask. She smokes her cigarette down to the filter, and puts it out in the little silver dish she brings out for exactly one cigarette a day, and goes inside without another word.`,
+She won\'t say anything else. You ask. She smokes her cigarette exactly halfway, the way she always does, and puts it out in the little silver dish she brings out for exactly one cigarette a day, and goes inside without another word.`,
       next: '@hub'
     },
 
@@ -393,7 +390,7 @@ He doesn\'t miss a beat. That\'s the thing about your father. He never misses a 
 
 whitney: Clean energy! Very exciting stuff. Some of the smartest people I\'ve ever met. We have a small position. Why?
 
-jules: A boy on my floor died in one of their studies.
+jules: A boy died on my floor. He was in one of their studies.
 
 whitney: Oh, sweetheart. I heard. I\'m so sorry. That must have been awful for you.
 
