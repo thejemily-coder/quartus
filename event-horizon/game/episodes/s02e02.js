@@ -137,7 +137,7 @@ rosa: I\'m not asking you. I want you to know I\'m not asking. I\'m telling you 
 rosa: When you want to tell me, I\'m going to be right here. Pulling bones out of a fish. That\'s all.`,
       choices: [
         { text: 'Tell her. Now. Here. With your hands in the salt cod.', tag: 'Tell Ma',
-          fx: g => { g.flag('ma_told', 's2e2'); g.know('sam_slip', ['rosa']); g.heat('rosa', 10 - g.h('rosa')); g.bond('rosa', { trust: 3 }); g.hidden('revenant_drift', -1); }, go: 'a1_ma_told' },
+          fx: g => { g.flag('ma_told', 's2e2'); g.know('sam_slip', ['rosa']); g.know('assunta', ['rosa']); g.know('nonna_key', ['rosa']); g.heat('rosa', 10 - g.h('rosa')); g.bond('rosa', { trust: 3 }); g.hidden('revenant_drift', -1); }, go: 'a1_ma_told' },
         { text: '"I know, Ma." Just that. Keep pulling bones.', tag: 'Not yet',
           fx: g => { g.flag('ma_told', false); g.bond('rosa', { affection: 1 }); }, go: 'a1_ma_notyet' }
       ]

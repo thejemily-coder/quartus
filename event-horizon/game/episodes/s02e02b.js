@@ -20,7 +20,7 @@ DANTE: Come to the club. The envelopes are on the bar. Twelve addresses. The las
 
 He hangs up.
 
-Another job. Another ten percent. You stand in the hallway with the phone in your hand and the whole house smelling like fried smelts.
+Job ${['one', 'two', 'three', 'four'][g.f('bruno_jobs_done') || 0] || 'whatever'} of ${({ 5: 'five', 8: 'eight', 10: 'ten', 12: 'twelve' })[g.f('bruno_jobs_total')] || 'ten'}. You stand in the hallway with the phone in your hand and the whole house smelling like fried smelts.
 
 Ma is looking at you from the kitchen doorway with the wooden spoon in her hand.
 
@@ -73,7 +73,7 @@ vinnie: Yo. Don\'t do the cold thing, Sally. Okay? Just run. Just be fast. You\'
 
 Down Passyunk in the snow, the Christmas lights smeared in it. Snyder Avenue, a rowhouse with an inflatable Santa, a woman in a housecoat who takes the card and says *tell Bruno God bless*. Ritner. Moyamensing. A man in his undershirt at a door on Shunk Street who takes the card without a word and closes the door, and you realize from the cruiser in the driveway that he\'s a police captain. A rectory on Christian Street, where a priest in a cardigan takes it and puts it in his breast pocket and says *Merry Christmas, son*, and doesn\'t ask your name. A councilman\'s office on Broad with a guard who knows you were coming.
 
-Eleven envelopes in two hours and ten minutes, in the snow, on Christmas Eve. You don\'t go into the cold once. You\'re just fast. You\'re a kid who grew up on these blocks, cutting through the alleys and the driveways and the backyards, over the fences, the way you did when you were nine and late for dinner.
+Eleven envelopes in two hours and ten minutes, in the snow, on Christmas Eve. You don\'t step all the way into the cold. Not once. You\'re just fast. You\'re a kid who grew up on these blocks, cutting through the alleys and the driveways and the backyards, over the fences, the way you did when you were nine and late for dinner.
 
 At 6:55, you\'re standing under the streetlight at Broad and Oregon, steaming, with one envelope left. Plain manila. Thin. Sealed with tape.
 
@@ -90,7 +90,7 @@ Down Passyunk in the snow. Snyder. Ritner. On Moyamensing, cutting through an al
 
 You get up. You keep going. A police captain on Shunk who closes the door without a word. A priest on Christian Street who says *Merry Christmas, son* and doesn\'t ask your name. A councilman\'s office on Broad. Your hip is screaming.
 
-Eleven envelopes. Three hours and five minutes. You\'re late on two of them. Somebody\'s going to tell Dante.
+Eleven envelopes. Two hours and forty-five minutes. You\'re late on two of them. Somebody\'s going to tell Dante.
 
 At 7:25, you\'re limping under the streetlight at Broad and Oregon with one envelope left. Plain manila. Thin. Sealed with tape.
 
@@ -247,7 +247,7 @@ He\'s wearing the dark overcoat and a red scarf. There\'s a thermos in the cupho
 
 ${g.f('manila_open') === 'torn' ? 'Then he looks at it. At the torn strip on the flap, where the tape came up with the manila.\n\nHe looks at you.\n\nBRANNIGAN: Hm.\n\nThat\'s all. *Hm.* He doesn\'t say anything else about it. He doesn\'t have to.' : ''}
 
-BRANNIGAN: You made good time. In the snow. ${g.f('slip_s2e2') ? 'Very good time. Our cameras on Broad Street went a little strange about ten minutes ago. Thirty-one degrees on the thermal, a streak a mile long. I imagine you\'re cold.' : 'Mr. Iannucci said you would.'}
+BRANNIGAN: ${g.f('envelopes_late') ? 'Seven fifty-one. Mr. Iannucci said seven forty-five. He counts minutes, Sam. I don\'t. I waited.' : g.f('slip_s2e2') ? 'You made good time. In the snow. Very good time. Our cameras on Broad Street went a little strange about twenty minutes ago. Thirty-one degrees on the thermal, a streak a mile long. I imagine you\'re cold.' : 'You made good time. In the snow. Mr. Iannucci said you would.'}
 
 He takes something out of his coat pocket and holds it out the window. A candy cane. In cellophane.
 
@@ -255,7 +255,7 @@ BRANNIGAN: For your sister.
 
 You don\'t take it. He doesn\'t seem offended. He puts it on the dashboard.
 
-BRANNIGAN: Mr. Iannucci is a businessman. He gives you jobs, and he takes ten percent off a debt, and he tells you he\'s protecting you. And then on Christmas Eve, he sends you to me with an envelope.
+BRANNIGAN: Mr. Iannucci is a businessman. He gives you jobs, and he takes a piece off a debt, and he tells you he\'s protecting you. And then on Christmas Eve, he sends you to me with an envelope.
 
 He taps it, on the seat beside him, without looking down.
 

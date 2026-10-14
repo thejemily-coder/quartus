@@ -37,7 +37,7 @@ TXT jules: Tell me something true about your fish.
 You look at the table. Gigi stealing calamari off Mikey\'s plate. Pop with his arm on the back of Ma\'s chair. Nonna, eating her eel alone, slowly, the way she does every Christmas Eve.`,
     choices: [
       { text: 'Text Jules: "my grandmother just said a name at grace ive never heard before. i think its mine"', tag: 'Jules',
-        fx: g => { g.flag('feast_text', 'name'); g.bond('jules', { trust: 1 }); }, go: 'a3_text' },
+        fx: g => { g.flag('feast_text', 'name'); g.bond('jules', { respect: 1 }); }, go: 'a3_text' },
       { text: 'Go to the bathroom. Call Carmen. Tell her to take Jayden somewhere tonight. Anywhere.', tag: 'Call Carmen',
         if: g => g.f('saw_list'),
         fx: g => { g.flag('feast_text', 'carmen'); g.flag('carmen_warned'); g.bond('carmen', { trust: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_carmen' },
@@ -74,7 +74,7 @@ She picks up on the second ring. Behind her, a TV, a Spanish-language Christmas 
 
 carmen: ¿Mijo?
 
-sam: Carmen. Listen to me. I can\'t explain. Somebody gave Jayden\'s name to the people from the Navy Yard. Tonight. The people from the Parkway. With your address.
+sam: Carmen. Listen to me. I can\'t explain. Somebody wrote Jayden\'s name on a list for the people from the Navy Yard. The people from the Parkway. With your address.
 
 Silence. Then, very calm, the calm of a woman who has buried people:
 
@@ -104,7 +104,7 @@ carmen: He says it\'s getting cold.
 
 sam: I know. Tell him I know.
 
-${g.f('manila') === 'tore_jayden' ? 'You hang up. You take the torn strip of paper out of your pocket. *Torres, Jayden, 8.* You read it twice. Then you flush it.' : 'You hang up and sit on the edge of the tub for a minute, until you can make your face do something normal.'}`,
+${['tore_jayden', 'burned'].includes(g.f('manila')) ? 'You hang up. You take the torn strip of paper out of your pocket. *Torres, Jayden, 8.* You read it twice. Then you flush it.' : 'You hang up and sit on the edge of the tub for a minute, until you can make your face do something normal.'}`,
     next: 'a3_mass'
   },
   a3_here: {
@@ -161,14 +161,14 @@ nonna: Come to my house. Now. ${g.f('ma_told') === 's2e2' ? 'Your mother comes t
     night: true,
     loc: 'NONNA\'S HOUSE · THREE DOORS DOWN',
     clock: { day: 'Fri', date: 'Dec 25', time: '1:10 AM' },
-    enter: g => { g.know('salvatore_dinardo', ['sam', 'nonna'], 'Nonna\'s older brother was Salvatore DiNardo (1931–1961). Once, in 1961, at a fire, it woke in him. He went in after three children and came back an old man. He died on Christmas Eve at 11:51. You are named for him.'); g.know('assunta_diary', ['sam', 'nonna'], 'Assunta DiNardo\'s diary: she did it more than once. Every time she came back a little older. On September 28, 1918, there was a man up the street who moved too, and raised his hand to her like a man at a window.'); },
+    enter: g => { const w = g.f('ma_told') === 's2e2' ? ['sam', 'nonna', 'rosa'] : ['sam', 'nonna']; g.know('salvatore_dinardo', w, 'Nonna\'s older brother was Salvatore DiNardo (1931–1961). Once, in 1961, at a fire, it woke in him. He went in after three children and came back an old man. He died on Christmas Eve at 11:51. You are named for him.'); g.know('assunta_diary', w, 'Assunta DiNardo\'s diary: she did it more than once. Every time she came back a little older. On September 28, 1918, there was a man up the street who moved too, and raised his hand to her like a man at a window.'); },
     text: g => `Nonna\'s house smells like her house: mothballs and gravy and Jean Naté. The plastic is still on the living room couch from 1987. The Sacred Heart on the wall with the little red bulb in front of it, always on. The cedar chest at the foot of her bed, which nobody has ever been allowed to touch, which Mikey once got smacked with a wooden spoon for sitting on.
 
 ${g.f('ma_told') === 's2e2' ? 'Ma sits on the edge of the bed with her coat still on and her hands in her lap. She doesn\'t say anything. She watches her mother.' : ''}
 
 Nonna kneels in front of the chest. She doesn\'t ask for help kneeling. She holds out her hand.
 
-You take the iron key off its ribbon around your neck, where it\'s been since September. You give it to her.
+You take the iron key off its ribbon around your neck, where it\'s been since she gave it to you. You give it to her.
 
 She opens the chest. Old blankets. A wedding dress in a plastic bag. Baby shoes, bronzed. And at the bottom, a tin box, a cookie tin, Danish butter cookies, older than Ma, with a little padlock on it.
 

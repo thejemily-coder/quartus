@@ -128,6 +128,8 @@ Mastery (0–100) grows with use. Nodes unlock by story gate, then cost XP.
 
 Every Drift point Sam takes **also** feeds hidden `revenant_drift` (+0.5 per point, +1 for each forced rewind), and authored choices add more when Sam "fixes" something other people had chosen. *Engine status: thresholds 3+ (visual glitch) and 5+ (−1 die on Wits pools) are implemented. 7+ and 9+ are story events the writers trigger by hand until Season 2.*
 
+**Salvatore's watch (from S2E2; flag `assunta_watch`).** When a Slip would Unstick (Drift 9+ or `revenant_drift` 10+) and Sam holds the watch, he finds the door. The Unstick still happens: the cold still grabs, the scene still plays, and it still costs +1 Drift and +1 hidden `revenant_drift`. But it inflicts **no Time-debt injury**. Authors test with `g.unsticks()` and apply the cost with `g.unstick(id, name)`, which enforces the watch rule; never hand-roll `injure()` for an Unstick. The watch does not lower Drift, does not prevent 7+ lost minutes, and does not affect Rewind. If the story takes the watch away, set `assunta_watch` to false and Unsticks hurt again.
+
 ### Jules: probability (hidden in Season 1)
 - `hidden.jules_luck`: starts at 0.35 and grows with the bond Affection and Trust she has toward Sam (the Audience likes the pairing).
 - In Jules-POV episodes she has her own sheet: Body 2 · Reflex 3 · Wits 4 · Heart 2 · Nerve 3 · Charm 4. Powers: **Luck** (passive rerolls of 1s), **Nudge** (Season 2+), **Jinx**, **Branch**, **Fate**. Backlash meter: **Debt** (0–10). Bad luck comes back around.
@@ -207,6 +209,6 @@ EH.episode({
 - `~~` → a beat break.
 - `*em*`, `**strong**`.
 
-**Effect API (`g`):** `flag(k,v=true)`, `f(k)`, `bond(id,{trust,affection,respect,tension})`, `b(id)`, `meet(id)`, `heat(id,n)`, `know(fact,[who],text)`, `knows(fact,who)`, `money(n)`, `grade(course,n)`, `sleep(h)`, `pool(name,n)`, `drift(n)`, `hidden(k,n)`, `injure({id,name,sev,pen,heal})`, `heal(id)`, `xp(n)`, `unlock(node)`, `mastery(n)`, `attr(k,n)`, `skill(k,n)`, `recap(text)`, `log(text)`, `stat(k)`.
+**Effect API (`g`):** `flag(k,v=true)`, `f(k)`, `bond(id,{trust,affection,respect,tension})`, `b(id)`, `meet(id)`, `heat(id,n)`, `know(fact,[who],text)`, `knows(fact,who)`, `money(n)`, `grade(course,n)`, `sleep(h)`, `pool(name,n)`, `drift(n)`, `hidden(k,n)`, `injure({id,name,sev,pen,heal})`, `heal(id)`, `unsticks()`, `unstick(id,name,opts)`, `xp(n)`, `unlock(node)`, `mastery(n)`, `attr(k,n)`, `skill(k,n)`, `recap(text)`, `log(text)`, `stat(k)`.
 
 Scenes can also return to the current hub with `go:'@hub'`.

@@ -181,6 +181,8 @@
       injure(o) { S.injuries.push(Object.assign({ pen: 1, heal: 1 }, o)); note('Injury · ' + o.name, 'injury', -1); return g; },
       heal(id) { S.injuries = S.injuries.filter(i => i.id !== id); return g; },
       hurt(id) { return S.injuries.some(i => i.id === id); },
+      unsticks() { return S.drift >= 9 || (S.hidden.revenant_drift || 0) >= 10; },
+      unstick(id, name, o) { g.drift(1); g.hidden('revenant_drift', 1); if (S.flags.assunta_watch) { note('The watch ticks. You find the door.', 'power', 1); return g; } return g.injure(Object.assign({ id, name, pen: 1, heal: 2, affects: ['body', 'reflex', 'wits'] }, o)); },
       xp(n) { S.xp += n; note('XP ' + sgn(n), 'stat', 1); return g; },
       unlock(node) { const P = S.powers.slip; if (!P.nodes.includes(node)) { P.nodes.push(node); note('Power unlocked · ' + EH.NODES[node].name, 'power', 1); } return g; },
       has(node) { return S.powers.slip.nodes.includes(node); },
