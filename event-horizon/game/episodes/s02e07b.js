@@ -217,7 +217,7 @@ ${g.f('did_w7_mikey') ? 'Behind you, half a block back, a gray Honda Accord pull
 
 sam: Why.
 
-jules: Your father has paid Bruno Iannucci everything he had, Sam. You\'ve been doing his jobs since December. You told me what they were. And Halina Kowal is on a machine in her living room. I saw it, the morning after.
+jules: Your father has paid Bruno Iannucci everything he had, Sam. You\'ve been doing his jobs since December. You told me what they were. And Halina Kowal is on a machine in her living room. I saw it, on Valentine\'s Day.
 
 jules: One night. I can end all of it in one night.
 

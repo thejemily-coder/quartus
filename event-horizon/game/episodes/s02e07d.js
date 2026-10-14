@@ -75,7 +75,7 @@ She looks at you, and you can see her go back through every day since Valentine\
 
 jules: Someone was in my coat.
 
-You think about a golden boy in a crew jacket, smiling, coming out of the bathroom in 9-04 with his hand in his pocket.
+You think about a golden boy in a crew jacket, smiling, coming out of 9-04 with his hand in his pocket.
 
 Behind you, Ma stands up.
 
@@ -89,7 +89,7 @@ rosa: Outside. Now.
 
 Nonna, in the corner, stops moving her rosary.
 
-nonna: *(very quietly)* Ecco. Now it\'s time.`,
+nonna: *(very quietly)* Ecco.`,
     next: 'tag_hugh'
   },
 
@@ -156,7 +156,7 @@ She looks at you. You can see her going back through every room the coat has bee
 
 jules: Someone was in my coat.
 
-You think about a golden boy in a crew jacket, smiling, coming out of the bathroom in 9-04 with his hand in his pocket.`,
+You think about a golden boy in a crew jacket, smiling, coming out of 9-04 with his hand in his pocket.`,
     next: 'tag_hugh'
   },
 
@@ -198,7 +198,7 @@ The window goes up. The Camry pulls out onto City Avenue and is gone.
 
 Hugh sits in his Volvo with the engine off.
 
-${g.f('note6') === 'told' ? 'After a minute, he takes something out of the inside pocket of his crew jacket. An index card, soft at the corners, folded in half. He unfolds it.\n\nOn the front, in pencil, in a hand he doesn\'t know: *What did you mean?*\n\nOn the back, in his sister\'s handwriting: *I don\'t know yet. When I know, you\'ll be the first.*\n\nAnd under that, in black ballpoint, in the same stranger\'s hand, pressed so hard it tore the card:\n\n*Don\'t trust the lucky one.*\n\nHugh reads it twice, in the light from the Wawa.\n\nThen he smiles. Not a nice smile. He has come second for eighteen years to a sister six minutes younger than he is, and he has just found out he isn\'t the only one who doesn\'t trust her luck.' : 'He sits there, looking at the empty space where the Camry was.\n\nThen he looks at his own hands on the steering wheel. Turns them over. Looks at them, like he\'s waiting for something to happen.\n\nNothing does.'}`,
+${g.f('note6') === 'told' ? 'After a minute, he takes something out of the inside pocket of his crew jacket. An index card, soft at the corners, folded in half. He unfolds it.\n\nOn the front, in pencil, in a hand he doesn\'t know: *What did you mean?*\n\nOn the back, in his sister\'s handwriting: *I don\'t know yet. When I know, you\'ll be the first.*\n\nAnd under that, in black ballpoint, in the same stranger\'s hand, pressed so hard it tore the card:\n\n*Don\'t trust the lucky one.*\n\nHugh reads it twice, in the light from the Wawa.\n\nThen he smiles. Not a nice smile. He has come second for eighteen years to a sister nine minutes younger than he is, and he has just found out he isn\'t the only one who doesn\'t trust her luck.' : 'He sits there, looking at the empty space where the Camry was.\n\nThen he looks at his own hands on the steering wheel. Turns them over. Looks at them, like he\'s waiting for something to happen.\n\nNothing does.'}`,
     end: true
   }
 });
@@ -222,7 +222,7 @@ Object.assign(EH.episodes.s02e07, {
     ] }
   ],
   onEnd: g => {
-    g.recap('Hugh came to Cardone Hall with Callum. He used the bathroom in 9-04.');
+    g.recap('Hugh came to Cardone Hall with Callum. He went into 9-04 alone.');
     g.recap('Jules played cards for Bruno Iannucci. For Pier 53.');
     if (g.f('paid7')) g.recap(g.f('pop7') === 'crash' ? 'Jules won Pier 53 for Bruno. Pop\'s paper is clean.' : 'Pop\'s debt to the Iannuccis is paid. "Your paper\'s clean, Frank."');
     else if (g.f('split7')) g.recap('A split pot. Pop\'s debt is half paid. Bruno wants to see her play again.');

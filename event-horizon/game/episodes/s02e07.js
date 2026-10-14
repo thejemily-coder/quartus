@@ -46,11 +46,11 @@ ACHTERBERG: Is she? Your father tells me you\'ve been keeping score since you we
 
 Hugh doesn\'t say anything. He lines up a shot and misses it.
 
-ACHTERBERG: And then, the night after the chapel, you watched her through her bedroom door. With the dice.
+ACHTERBERG: And then, the night after New Year\'s, at two in the morning, you stood outside her bedroom door for eleven minutes. I have a camera on this house that sees heat, Hugh. Two warm shapes, one on each side of a door.
 
 He straightens up.
 
-ACHTERBERG: Sixes, Hugh. Every time. You counted. I would have counted too.
+ACHTERBERG: I don\'t know what she was doing in there. You do. Whatever it was, you counted. I would have counted too.
 
 hugh: How do you—
 
@@ -83,7 +83,7 @@ ACHTERBERG: Bring me the handkerchief, and I\'ll show you.`,
       card: { kind: 'act', label: 'Act One', title: 'March' },
       loc: 'CARDONE HALL · 9-14',
       clock: { day: 'Mon', date: 'Mar 1', time: '7:20 AM' },
-      enter: g => { g.sleep(7); },
+      enter: g => { g.sleep(7); g.know('dante_jules', ['jules']); g.know('bruno_jefferson', ['jules']); },
       text: g => `March comes in like it\'s angry about something.
 
 Sleet on the windows of 9-14. The radiator knocking. Nik\'s alarm going off for the fourth time across the room, and Nik, under a pile of blankets, saying *no* to it in a calm, reasonable voice, like a man declining a timeshare.
@@ -118,7 +118,7 @@ jules: You told him I was your girlfriend.
 
 sam: He asked.
 
-jules: In a car. In front of Vinnie. And now Bruno Iannucci, who sat next to Teddy\'s mother at Jefferson with a pastry, would like me to come to dinner.
+jules: In a car. In front of Vinnie. And now Bruno Iannucci, who sat next to Teddy\'s mother at Jefferson and told her she didn\'t have to wait five years, would like me to come to dinner.
 
 She puts the phone down on your chest, face down.
 
@@ -325,7 +325,7 @@ nik: I know you wave like that. Like a guy at a window. You do it to Grace acros
 
 He closes the laptop, gently this time.
 
-nik: He was there. When Teddy fell. ${g.f('jules_blames5') ? 'Bro, does Jules know? She thinks it was—' : ''}
+nik: He was there. When Teddy fell. ${g.f('jules_blames5') ? 'Bro, does Jules know? She was right there. She was holding your hand.' : ''}
 
 sam: She knows I saw someone.
 
@@ -345,9 +345,9 @@ nik: It\'s on there. The frame. The whole night. I made you a copy. I don\'t wan
 
 Mikey has a Yuengling and a basket of fries he isn\'t eating.
 
-mikey: There\'s a guy at Friends Hospital. Sal Russo. Fifty-four. Iannucci soldier, been with Bruno since the eighties. Two weeks ago he walked into the Navy Yard on a Saturday night and walked out Sunday morning with white hair. All of it. Like an old man.
+mikey: There\'s a guy at Friends Hospital. Sal Russo. Fifty-four. Iannucci soldier, been with Bruno since the eighties. Two weeks ago he walked into the Navy Yard on a Saturday night and was found Sunday morning on the dry-dock step with white hair. All of it. Like an old man.
 
-${g.knows('sal_white') ? 'You knew. You read it on your phone in Jules\'s bed on Valentine\'s Day. You don\'t say so.' : 'You didn\'t know. You find out you\'re holding the edge of the bar.'}
+${g.knows('sal_white') ? 'You knew. You read it on your phone on Valentine\'s Day. You don\'t say so.' : 'You didn\'t know. You find out you\'re holding the edge of the bar.'}
 
 mikey: He doesn\'t talk. He says one thing. *Eleven fifty-one.* Over and over. Dante told the 3rd District it was a stroke. A stroke doesn\'t turn your hair white overnight, Sammy.
 
@@ -376,7 +376,7 @@ mikey: Then I\'ll be parked on 9th Street. In my own car. Like a guy who likes c
     a1_hugh: {
       loc: 'CARDONE HALL · 9TH FLOOR LOUNGE',
       clock: { day: 'Thu', date: 'Mar 4', time: '7:10 PM' },
-      enter: g => { g.meet('hugh'); g.flag('hugh_coat7'); g.know('hugh_visit', ['sam', 'jules'], 'Hugh Pemberton came to Cardone Hall on March 4 to meet you. He brought Callum. He used the bathroom in 9-04.'); },
+      enter: g => { g.meet('hugh'); g.flag('hugh_coat7'); g.know('hugh_visit', ['sam', 'jules'], 'Hugh Pemberton came to Cardone Hall on March 4 to meet you. He brought Callum. He went into 9-04 alone.'); },
       text: g => `Jules\'s brother is exactly what you expected and also not at all.
 
 He\'s her face, but wider. Her eyes, but warmer and less careful. Golden, the way she\'s silver. A Penn crew jacket, a good haircut, and the easy, unbothered way of standing in a room that you only get from never once being told to leave one.
@@ -385,7 +385,7 @@ hugh: So you\'re the boyfriend.
 
 sam: So you\'re the twin.
 
-hugh: I\'m the *older* twin. By six minutes. She\'s never forgiven me.
+hugh: I\'m the *older* twin. By nine minutes. She\'s never forgiven me.
 
 He shakes your hand. Firm, friendly, a little too long. He\'s looking at your hair. At the white at your temple.
 
@@ -411,7 +411,7 @@ Hugh talks. Hugh is good at talking. Penn, crew, their father\'s new boat, Gran\
 
 Callum doesn\'t talk. Callum eats one donut in very small bites and looks at you, and looks at Jules, and looks at the way she sits with her knee touching yours under the table.
 
-At one point Hugh asks to use the bathroom in 9-04. Jules says *it\'s Simone\'s side too, don\'t touch the feathers*. He\'s gone a while. When he comes back, he\'s smiling.
+At one point Hugh asks to see her room. Jules says *it\'s Simone\'s side too, don\'t touch the feathers*. He\'s gone a while. When he comes back, he\'s smiling.
 
 When they finally go, Callum hangs back. In the hallway, by the elevator, while Hugh is holding the door.
 

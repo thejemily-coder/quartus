@@ -233,3 +233,12 @@ Write each episode to the save. The plan bends; the save doesn't.
     - **Safe paths:** Pop calls at 11:51 ("your paper's clean"), Ma wants him home Sunday, alone, and the coat discovery happens there.
   - **Tag:** Wawa on City Avenue. Hugh gives Brannigan the handkerchief in a Ziploc. "Anything else in the pocket?" "No." **Hugh keeps the card** ("Don't trust the lucky one") and smiles.
 - **E8 "Ma"** opens on Rosa's question (hospital corridor, or Sunday on Mifflin Street). Rosa heat is 9: make it 10 in-scene (she learns). Nonna: "Now it's time" (the DiNardo women). Hugh holds the card; Halcyon has the blood.
+  - **S2E7 QA:**
+    - The split pot now uses a deuce kicker.
+    - Assunta was 60 in the 1964 photo.
+    - Hugh is 9 minutes older.
+    - Hugh stood at her bedroom door (seen on Halcyon thermal), not in the chapel.
+    - The ninth-floor bathroom is communal, so Hugh went into 9-04 alone.
+    - Nonna's "Now it's time" is saved for E8.
+    - The split is capped at total-1.
+    - `pop7` now means the S2E7 outcome (the S1E7 value is overwritten).
