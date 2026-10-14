@@ -663,10 +663,11 @@ body[data-look="s2"] .mast{border-bottom-width:5px}
   // every unclean pool or move is nudged until it's clean, and each save adds to her hidden Debt.
   EH.tryNudge = function (S, c, res) {
     const pov = S.pov === 'jules';
+    const open = c.luck === 'jules'; // Season 2+: Jules nudges for Sam on purpose. Always lands; she pays the Debt.
     if (c.noLuck) return false;
-    if (!pov && (!c.near || !c.near.includes('jules'))) return false;
+    if (!pov && !open && (!c.near || !c.near.includes('jules'))) return false;
     if (EH.isClean(res.tier)) return false;
-    if (!pov) {
+    if (!pov && !open) {
       const jb = S.bonds.jules || { affection: 0, trust: 0 };
       const luck = S.hidden.jules_luck + Math.max(0, jb.affection + jb.trust) * 0.01;
       if (Math.random() >= luck) return false;
@@ -680,16 +681,17 @@ body[data-look="s2"] .mast{border-bottom-width:5px}
       } else if (res.kind === 'move') {
         const idx = res.dice[0] <= res.dice[1] ? 0 : 1; if (res.dice[idx] === 6) return false;
         res.dice[idx] = 6; Object.assign(res, EH.scoreMove(res.dice, res.mod)); gold.push(idx); return true;
-      } else if (res.kind === 'd20' && pov) {
+      } else if (res.kind === 'd20' && (pov || open)) {
         if (res.dice[0] === 20) return false;
         res.dice[0] = 20; Object.assign(res, EH.scoreD20 ? EH.scoreD20(res.dice, res.mod, res.dc) : {}); gold.push(0); return true;
       }
       return false;
     };
-    if (!step() && !pov) return false;
-    if (pov) { while (!EH.isClean(res.tier) && step()); if (!EH.isClean(res.tier)) res.tier = res.kind === 'move' ? 'strong' : 'success'; S.hidden.jules_debt = Math.min(10, (S.hidden.jules_debt || 0) + 1); }
+    if (!step() && !pov && !open) return false;
+    if (pov || open) { while (!EH.isClean(res.tier) && step()); if (!EH.isClean(res.tier)) res.tier = res.kind === 'move' ? 'strong' : 'success'; S.hidden.jules_debt = Math.min(10, (S.hidden.jules_debt || 0) + 1); }
     res.gold = gold;
-    if (!pov) S.hidden.nudges = (S.hidden.nudges || 0) + 1;
+    if (!pov && !open) S.hidden.nudges = (S.hidden.nudges || 0) + 1;
+    if (open) S.hidden.jules_open = (S.hidden.jules_open || 0) + 1;
     res.nudged = true;
     return true;
   };
@@ -23466,6 +23468,1809 @@ Object.assign(EH.episodes.s02e04, {
     if (g.f('friday4') === 'roof') g.recap(g.f('roof4') === 'all' ? 'On the roof, on January 22, you and Jules told each other everything.' : 'On the roof, you told Jules the true part: when the world stops, you don\'t. She told you hers.');
     if (g.f('friday4') === 'roof') g.recap('Teddy, Heck, and Bree went into Building 7 without you. The door was open.');
     else g.recap(g.f('navy4') === 'held' ? 'You stopped Heck at the door of the seventh floor. At 11:51, the floor went white, and the door closed on nothing.' : g.f('navy4') === 'split' ? 'Heck and Teddy went down the hall on seven. At 11:51, the floor went white, and the door started to close, with you in it.' : 'You went into Building 7. Marisol\'s room was empty. At 11:51, the floor went white, and the door closed.');
+  }
+});
+
+/* s02e05.js */
+/* S2 · E5 · THE OPEN DOOR, part 1 of 3: meta, cold open, Act One ("Southbound"). */
+EH.episode({
+  id: 's02e05', season: 2, number: 5, title: 'The Open Door', look: 's2',
+  cast: ['sam', 'jules', 'bree', 'teddy', 'heck', 'nik', 'vinnie', 'mikey'],
+  start: 'cold_open',
+  xp: 5,
+  previously: g => [
+    'Marisol Reyes is alive, in Room 714. You promised Heck: Marisol first.',
+    'Halcyon left the door on the seventh floor of Building 7 open. On purpose.',
+    g.f('roof4') === 'all' ? 'On the roof, on January 22, you and Jules told each other everything.' : 'On the roof, you told Jules the true part. She told you hers.',
+    'Teddy, Heck, and Bree went into Building 7 without you.',
+    'At 11:51, the Navy Yard went white. You felt it from the roof.',
+    'Bree\'s last text: *theres more floors than there should be.*'
+  ],
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      night: true,
+      loc: 'NAVY YARD · BUILDING 7 · STAIR B',
+      clock: { day: 'Fri', date: 'Jan 22', time: '9:44 PM' },
+      text: `> THE CAMERA.
+
+A stairwell. Concrete, new paint, the smell of a building nobody has lived in yet.
+
+Bree Kowal is holding her phone over her head like a lighter at a concert. One bar. None. One. She types with her thumb, fast, and hits send, and watches the little blue line crawl halfway across the top of the screen and stop.
+
+bree: Come on. *Come on.*
+
+Above her, Teddy is reading the numbers stenciled on the landings, the way you\'d read a menu in a language you don\'t speak.
+
+teddy: Six. Seven.
+
+He goes up another flight. Stops.
+
+There\'s no number on this one. Just a steel door with a narrow window, and a card reader with a little red light, and above the door, where the number should be, a clean rectangle of paint a shade whiter than the wall around it. Like somebody took the sign down this afternoon.
+
+teddy: Listen. The drawings say seven floors.
+
+bree: The drawings also said there\'d be a guard.
+
+Heck comes up the stairs past both of them, and puts his face to the narrow window, and goes still.
+
+Through the glass: a hallway lit dark blue, like an aquarium after closing. Beds. Not rooms with beds in them, like seven. Just beds, in two long rows, with curtains on rails between them, half drawn. Machines beside each one, blinking green. Twelve. Fourteen. Bree loses count.
+
+On the third bed on the left, a girl with her head shaved, lying on her back with her hands folded on the blanket like somebody arranged them. On the inside of her right wrist, a tattoo of a lightbulb.
+
+Heck\'s hand is on the door. The paint under his palm starts to bubble.
+
+heck: Mari.
+
+Teddy grabs his wrist. It hisses. Teddy doesn\'t let go.
+
+teddy: Not yet. You burn it, they hear. *Listen* to me. The door on seven was open for a reason. This one\'s shut for a reason.
+
+heck: She\'s *right there*, Teddy.
+
+teddy: I know. So we find a key. We find the room where they sit and watch, and we find a card, and we walk her out like we work here. Okay? Heck. Okay?
+
+A long time. The paint stops bubbling.
+
+heck: Okay.
+
+They go back down to seven.
+
+> 11:51 PM.
+
+They didn\'t find a key. They found locked doors, and a room at the end of the hall with dark glass they couldn\'t see through, and a bowl of fruit nobody had touched.
+
+They\'re standing outside 714 when the lights go white.
+
+When it\'s over, Heck is on his knees in the hallway with steam coming off his back. Teddy is looking at his hands. They\'re gray to the elbow. He opens and closes them like they belong to somebody else.
+
+Bree is sitting against the wall with her mouth open, trying to say something.
+
+Nothing comes out.
+
+She tries again. What comes out is Teddy\'s voice, perfectly, from some other day:
+
+*"Listen."*
+
+She claps both hands over her mouth. Her eyes are huge.
+
+Down at the end of the hall, the elevator dings.
+
+The doors slide open. The car is empty, lit, waiting. The doors don\'t close.
+
+Teddy looks at the open elevator for a long time.
+
+teddy: It\'s not for us.
+
+He sits down on the floor next to his cousin and puts his gray arm around her.
+
+teddy: It\'s for him.`,
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_roof' },
+
+    /* ================= ACT ONE: SOUTHBOUND ================= */
+    a1_roof: {
+      card: { kind: 'act', label: 'Act One', title: 'Southbound' },
+      night: true,
+      loc: 'CARDONE HALL · ROOF',
+      clock: { day: 'Fri', date: 'Jan 22', time: '11:53 PM' },
+      text: g => `You call Bree. It rings eleven times and stops ringing, like the call fell off the edge of something.
+
+You call Teddy. Straight to voicemail. *It\'s Teddy. Leave it.*
+
+You call Heck. Heck doesn\'t have a phone. Heck has never had a phone. You knew that. You call anyway, Bree\'s number again, and listen to it ring into nothing.
+
+Jules is watching you. She hasn\'t let go of your arm.
+
+jules: The girl. Marisol. The one in the room.
+
+sam: She\'s not in the room. Bree says the room\'s empty. They went *up*.
+
+You look south. The glow at the bottom of the city is just a glow again. Like nothing happened. Like a building with the lights on.
+
+sam: I have to go.
+
+jules: I know.
+
+sam: Jules. I mean I have to go *now*. And I can get there faster than anything in this city, and you can\'t, and that\'s not a joke, that\'s the actual—
+
+jules: I\'m coming.
+
+sam: You\'re not.
+
+She doesn\'t argue. She picks her coffee up off the parapet, looks at it, and pours it out over the edge, very precisely, onto nobody, nine floors down.
+
+jules: An hour ago you told me a man from Halcyon put a dart in my direction on the Parkway and missed four times. You told me a boy you knew walked six miles to your door to tell you something, and they killed him for it. You told me your great-grandmother went in for a child under a trolley and came back older every time.
+
+jules: ${g.knows('gran_sam', 'jules') ? 'My grandmother told me on New Year\'s that some families are early, and the early ones always go in for somebody else. She told me to keep you close. I thought she meant it as a warning. ' : ''}You are not going in there alone. Not tonight. Not the night I *found out*.
+
+sam: It\'s a trap.
+
+jules: Then they\'ll be expecting one of us.
+
+She holds out her hand. Not for yours. Palm up, like she\'s asking for your phone.
+
+jules: And things go my way, Sam. Let them.`,
+      choices: [
+        { text: 'Go together. Down to Broad. Let her get the cab, and the lights, and whatever else goes her way tonight.', tag: 'Together',
+          fx: g => { g.flag('ride5', 'cab'); g.hidden('jules_debt', 1); g.hidden('jules_open', 1); g.bond('jules', { trust: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a1_cab' },
+        { text: 'Slip. Be there before she reaches the street. She can follow in a cab. You can\'t make her stay, but you can be first.', tag: 'Slip', slip: true,
+          fx: g => { g.flag('ride5', 'slip'); g.hidden('revenant_drift', 0.5); }, go: 'a1_slip' }
+      ]
+    },
+
+    a1_cab: {
+      night: true,
+      loc: 'NORTH BROAD STREET',
+      clock: { time: '11:58 PM' },
+      text: `It\'s Friday at midnight on North Broad, and there are no cabs. There are never cabs. You have stood on this corner at this hour and watched forty Ubers go by full.
+
+Jules steps off the curb, raises one hand, and a yellow cab pulls out of the bus lane and stops in front of her as if she\'d booked it in October.
+
+The driver has an icon of Saint Volodymyr on the dashboard and a cup of tea in the holder.
+
+jules: The Navy Yard. Broad and Intrepid.
+
+DRIVER: Is closed. Is nothing there at night.
+
+jules: Then it won\'t take long.
+
+He shrugs, and pulls out, and the light at Cecil B. Moore turns green.
+
+Then the light at Girard. Then Fairmount. Spring Garden, where it started, the corner where the bus stopped, green. Vine. City Hall, where Broad splits around Billy Penn, and every light on both sides turns green at once, like the city is clearing its throat.
+
+You look at her.
+
+She\'s sitting very straight with her hands in her lap. She isn\'t holding her breath. She\'s doing the opposite, breathing slow and even, letting it out, letting it *go*, and every time she exhales, another light goes green.
+
+Washington. Ellsworth. Snyder. Oregon. Green, green, green.
+
+There\'s a little blood at the edge of her nostril. She wipes it with her thumb without looking at it, the way you do.
+
+sam: Jules.
+
+jules: I know. It\'s fine.
+
+sam: It\'s not.
+
+jules: No. But it\'s *mine*, for once. I\'m choosing what it\'s for.
+
+The driver is crossing himself.
+
+DRIVER: Twenty-two years. Never. Never one time all green.
+
+jules: It\'s a special night.
+
+Eleven minutes, City Hall to the Navy Yard, at midnight on a Friday. Nobody has ever done it. You take out your phone.`,
+      next: 'a1_calls'
+    },
+
+    a1_slip: {
+      night: true,
+      loc: 'BROAD STREET · SOUTHBOUND',
+      enter: g => { g.unstick('unstick_s2e5a', 'Time debt (Broad Street, southbound)'); g.hidden('jules_debt', 1); g.hidden('jules_open', 1); },
+      text: g => `You step through.
+
+The cold comes the way it always comes now, all at once, like falling through ice. ${g.unsticks() ? 'Thick. Grabbing. The walls of the second start closing before you\'ve gone a block.' : ''}
+
+Broad Street, stopped. A SEPTA bus at Cecil B. Moore with its doors half open and a man half off it. Headlights like pins stuck in the dark. A plastic bag in the air at Girard, hanging there, a jellyfish.
+
+You run.
+
+Four and a half miles. You\'ve never Slipped this far. Past City Hall, where Billy Penn looks down at you with his hat on, past the Avenue of the Arts, past the stadiums, everything gray and blue and still. Your lungs hurt. Your nose is pouring before Washington Avenue.
+
+${g.f('assunta_watch') ? 'In your pocket, the watch is ticking. The only thing in the whole city that moves besides you. *Tick.* You hold it in your fist and run toward the sound of it, and when the cold closes on you at Oregon Avenue, you find the door, right there, by the watch, where Nonna said it would be.' : 'The cold closes on you at Oregon Avenue. You claw your way out.'}
+
+You come out on your knees on the sidewalk at Broad and Pattison, by the stadiums, in the dark.
+
+You look at your phone. 12:04.
+
+Eleven minutes, gone, somewhere between Girard and here. You don\'t remember them. You have frost on your sneakers.
+
+You get up and walk the last half mile to the gate, because you can\'t do anything else.
+
+Your phone buzzes. Jules.
+
+TXT jules: I\'m in a cab. Every light on Broad is green.
+TXT jules: I mean every one.
+TXT jules: Wait for me. Please. Four minutes.
+
+You stand in the shadow of the empty guard shack at Broad and Intrepid with blood on your lip, and you wait for her, and you take out your phone again.`,
+      next: 'a1_calls'
+    },
+
+    a1_calls: {
+      night: true,
+      loc: 'BROAD & INTREPID',
+      clock: { day: 'Sat', date: 'Jan 23', time: '12:10 AM' },
+      text: g => `${g.f('ride5') === 'cab' ? 'The cab drops you at Broad and Intrepid and pulls away fast, the driver still crossing himself.' : 'A cab comes down Broad with every light green ahead of it, and stops at the gate, and Jules gets out, and walks straight up to you and puts her thumb on the blood on your lip.\n\njules: You didn\'t wait.\n\nsam: I waited four minutes.\n\njules: You left the roof eleven minutes before that. I watched you go. You were there, and then you weren\'t, and there was frost on the parapet where you\'d been standing.'}
+
+The guard shack is empty. The striped arm is up. Past it, the Navy Yard is a dark grid of old brick buildings and new glass ones and long empty streets with Navy names, Intrepid, Constitution, Langley, all the way down to the river.
+
+Building 7 is the one with every window on the seventh floor lit.
+
+There\'s nobody here. That\'s the worst part. No guard, no truck, no gray polo shirts. Just an open gate, at midnight, like a door somebody\'s holding for you.
+
+jules: They know you\'re coming.
+
+sam: They know I\'m *here*.
+
+You have your phone in your hand. One call. Maybe two, if you\'re fast. You can feel the minutes going.`,
+      hub: {
+        slots: 1, label: 'One call',
+        blurb: 'Whoever you call is in this now.',
+        options: [
+          { id: 'c5_nik', text: 'Nik. He has the map, the Navy Yard cameras he swore he wasn\'t hacking, and a headset.', cost: 1, tag: 'Nik', go: 'a1_call_nik' },
+          { id: 'c5_vinnie', text: 'Vinnie. He drives for Dante. He counted the beds at the Navy Yard. He has a car nobody stops.', cost: 1, tag: 'Vinnie', go: 'a1_call_vinnie', if: g => g.knows('sam_slip', 'vinnie') },
+          { id: 'c5_mikey', text: 'Mikey. A cop at the gate changes the math. Even a cop they took off the case.', cost: 1, tag: 'Mikey', go: 'a1_call_mikey', if: g => g.f('mikey_knows') }
+        ],
+        done: 'a2_seven'
+      }
+    },
+
+    a1_call_nik: {
+      night: true,
+      enter: g => { g.flag('call5', 'nik'); g.bond('nik', { trust: 1, respect: 1 }); },
+      text: `He picks up before it rings.
+
+nik: I\'m watching it. I\'m watching it, bro, I watched the whole thing, the dot went *white*, it went off the scale, I thought my monitor broke, where are you, tell me you\'re not where I think you are.
+
+sam: Broad and Intrepid.
+
+nik: Salvatore.
+
+sam: I need you in my ear. Can you see the yard?
+
+A sound like Nik putting his face in his hands, and then the sound of him taking his face out of his hands and typing.
+
+nik: Okay. Okay. Okay. The Navy Yard has a hundred and forty security cameras on a municipal network that was installed by the lowest bidder in 2014, and I want to say, for the record, for the *transcript*, that I am not looking at them. I am *aware* of them. Hold on.
+
+nik: Okay. Building 7. Stair B, on the east side, the fire door\'s propped. There\'s a truck. A white box truck, no logo, parked behind Building 10, engine running. Four people in the cab. Bro, they\'re just *sitting* there.
+
+sam: Waiting.
+
+nik: Yeah. I\'ll tell you when they stop waiting. Put your earbud in. I\'m not hanging up. I\'m not hanging up until you\'re back on Broad Street, do you understand me, I don\'t care if it\'s four in the morning.
+
+You put the earbud in. You can hear him breathing. He\'s breathing too fast. He\'s breathing anyway.`,
+      next: '@hub'
+    },
+
+    a1_call_vinnie: {
+      night: true,
+      enter: g => { g.flag('call5', 'vinnie'); g.bond('vinnie', { trust: 2, affection: 1 }); },
+      text: `It rings four times.
+
+vinnie: Sally. It\'s midnight. I\'m outside a club on Delaware Ave holding Dante\'s coat.
+
+sam: I\'m at the Navy Yard.
+
+Silence. Music in the background, bass through a wall.
+
+vinnie: The Navy Yard.
+
+sam: The building with the beds. Some friends of mine went in. They\'re not coming out.
+
+More silence. You can hear him walking, the music getting farther away, a door, the street.
+
+vinnie: Yo. Listen to me. You know what you\'re asking. Dante finds out I took his car to the Navy Yard at midnight for *you*, for a Kowal, for the guy who broke Bruno\'s understanding, I\'m done. I\'m in the river.
+
+sam: I know.
+
+vinnie: So you\'re asking.
+
+sam: I\'m asking.
+
+A long breath.
+
+vinnie: Fifteen minutes. South gate, by the dry dock, not the main one, the main one\'s got cameras. I\'ll be the black Escalade, which, you know. Every car in that lot after midnight is a black Escalade. I\'ll flash twice.
+
+sam: Vin. Are you gonna tell Dante?
+
+vinnie: I\'m not telling nobody. I never told nobody nothing in my life, college. That\'s the only thing I\'m good at.
+
+He hangs up.`,
+      next: '@hub'
+    },
+
+    a1_call_mikey: {
+      night: true,
+      enter: g => { g.flag('call5', 'mikey'); g.bond('mikey', { trust: 2, respect: 1 }); g.heat('police', 1); },
+      text: `He picks up on the first ring, the way he always does, because a cop\'s phone is never off.
+
+mikey: Sammy. What\'s wrong.
+
+sam: I\'m at the Navy Yard. Building 7. Halcyon. Three friends of mine went in at nine, and they\'re not answering, and the gate\'s wide open, and nobody\'s here.
+
+You hear him sit up in bed. You hear the drawer where he keeps his service weapon.
+
+mikey: Don\'t go in.
+
+sam: Mikey.
+
+mikey: Don\'t go in, Sammy, I\'m twenty minutes out, I\'m off the task group, I\'m off *everything*, Brannigan has a guy sitting outside my apartment in a Camry half the nights of the week, and if I show up at the Navy Yard at one in the morning—
+
+He stops.
+
+mikey: Is he there? Brannigan?
+
+sam: I don\'t know. Probably.
+
+The sound of keys.
+
+mikey: Okay. I\'m coming. Not in a car. I\'m coming in my car, I\'m off duty, I\'m a guy with a badge who heard a noise. If anybody stops me, I\'m a guy with a badge who heard a noise. You hear me? You get them out, you come to the gate on Broad, and I\'ll be standing in it.
+
+sam: Mikey.
+
+mikey: What.
+
+sam: Thanks.
+
+mikey: Don\'t thank me. Ma\'s gonna kill both of us.`,
+      next: '@hub'
+    }
+  }
+});
+
+/* s02e05b.js */
+/* S2 · E5 · THE OPEN DOOR, part 2 of 4: Act Two ("Building Seven"). */
+EH.scenes('s02e05', {
+
+  /* ================= ACT TWO: BUILDING SEVEN ================= */
+  a2_seven: {
+    card: { kind: 'act', label: 'Act Two', title: 'Building Seven' },
+    night: true,
+    loc: 'NAVY YARD · BUILDING 7 · SEVENTH FLOOR',
+    clock: { time: '12:22 AM' },
+    text: g => `${g.f('call5') === 'nik' ? 'nik: Left. Left at the anchor. There\'s a giant anchor, you can\'t miss it, it\'s the size of a car. Now straight. The truck\'s still behind Building 10. They haven\'t moved. Nobody\'s moved. Bro, I hate this.' : g.f('call5') === 'vinnie' ? 'Your phone buzzes as you cross the yard. *south gate. 10 min. flashing twice.* A car door, very far off. Vinnie, somewhere in the dark, coming.' : g.f('call5') === 'mikey' ? 'Your phone buzzes as you cross the yard. *on 95. 15 min. DO NOT GO IN.* You put the phone away.' : ''}
+
+You cross the yard, the two of you, past the dry dock with its great stone steps going down into black water, past a giant anchor set in the grass like a monument to something, to a brick building with new windows. Seven rows of them.
+
+Stair B. The fire door on the ground floor is propped open with a folded piece of cardboard. Somebody wanted to make sure you could find it.
+
+You go up. One. Two. Three. Jules is behind you, her hand on the rail, breathing hard and not saying anything. Six.
+
+Seven.
+
+The stair door is propped open with a fire extinguisher, just like Bree said. The hallway is white and lit and smells like a new car.
+
+And on the floor outside 714, three people.
+
+Heck sees you first. He gets up off his knees, slowly, like an old man, steam still coming off his shoulders in the cold hallway.
+
+heck: *Papa.*
+
+He grabs you and lifts you off the ground and holds you there, and he\'s so hot you can feel it through your coat, and he doesn\'t put you down for a long time.
+
+heck: You came. Bree said you wouldn\'t. I said you would.
+
+Teddy doesn\'t get up. He\'s sitting against the wall with his arms on his knees, and his arms are gray from the fingertips to the elbows, the dead flat gray of a pigeon on a statue.
+
+teddy: Cold guy.
+
+sam: What happened to your arms?
+
+teddy: Eleven fifty-one happened. Whatever that was, it *pulled*. Like the floor had a drain in it and we were the water. I can still use them. I think. They just don\'t feel like mine.
+
+Bree looks up at you. She opens her mouth. And out of it, perfectly, comes your own voice, from a phone call two hours ago, from your own bed:
+
+*"Bree."*
+
+She shuts her mouth. She looks at you, furious and terrified, and taps her throat twice.
+
+teddy: Her voice is gone. Hers. She\'s got everybody else\'s. Mine, yours, the guy from the Wawa. Not hers.
+
+Bree types on her phone and holds it up to your face.
+
+*IT TOOK MY VOICE WAWA. IT TOOK THE ONE THAT WAS MINE.*
+
+Then she looks past you, at Jules, standing in the doorway in a camel coat with a dart hole in it, and her eyebrows go all the way up.
+
+Bree opens her mouth, and what comes out is Teddy\'s voice, flat and dry:
+
+*"Who\'s this?"*
+
+sam: Jules.
+
+jules: Hello.
+
+teddy: The girl from the Parkway. The one the darts missed.
+
+He looks at her for a long moment, and then at you, and something in his tired face almost becomes a smile.
+
+teddy: Huh. Okay. That explains some things.
+
+${g.f('call5') === 'nik' ? 'nik: Is that Teddy? Tell Teddy I said hi. No. Don\'t. Tell him nothing. Bro, ask him about the floor.' : ''}
+
+sam: Bree said there were more floors.
+
+teddy: One more. Eight. It\'s not on the drawings and it doesn\'t have a number on the door. Marisol\'s up there, Kearney. She\'s alive. We saw her through the glass. Her and maybe twenty others, in beds, asleep. But that door\'s shut. Card reader. Red light. We looked for two hours for a card and found a bowl of fruit.
+
+He tips his head down the hall. At the far end, the elevator stands open, lit, empty. Waiting.
+
+teddy: And that\'s been open since 11:52. It doesn\'t close. I pushed the button. It doesn\'t go anywhere. It just stands there with its mouth open.
+
+teddy: Listen. It\'s not for us. Nobody wanted us. We\'re the cheese.
+
+sam: Then let\'s get Marisol and go before the mouse shows up.
+
+heck: How? The door\'s locked, papa.
+
+Everybody is looking at you. Jules too.`,
+    choices: [
+      { text: 'Heck burns it. Melt the lock and go. It\'ll be loud. Everything about tonight is loud.', tag: 'Burn it',
+        fx: g => { g.flag('door5', 'burn'); g.hidden('halcyon_heat', 1); g.bond('heck', { trust: 1 }); }, go: 'a2_burn' },
+      { text: 'Look at Jules. She\'s already looking at the card reader.', tag: 'Jules',
+        fx: g => { g.flag('door5', 'luck'); g.hidden('jules_debt', 1); g.hidden('jules_open', 1); }, go: 'a2_luck' },
+      { text: 'The glass room at the end of the hall. Whoever watches this floor sits in there. Whoever watches has a key.', tag: 'The glass room',
+        check: { kind: 'd20', attr: 'wits', skill: 'investigate', dc: 12, label: 'Search the glass room',
+          on: { crit: 'a2_glass', success: 'a2_glass', fail: 'a2_glass_slow', fumble: 'a2_glass_slow' } },
+        fx: g => { g.flag('door5', 'glass'); } }
+    ]
+  },
+
+  a2_burn: {
+    night: true,
+    loc: 'BUILDING 7 · STAIR B · THE EIGHTH LANDING',
+    text: `Heck puts both hands flat on the steel door, one on each side of the card reader, and closes his eyes.
+
+It takes about four seconds for the paint to blister, and ten for it to burn, and then the steel starts to glow. Dull red at first, like a stove coil. Then orange. The heat in the stairwell is so bad you have to back down a flight. Jules covers her face with her sleeve. Teddy stands his ground with his gray arms crossed, watching, and doesn\'t sweat at all.
+
+The card reader melts and runs down the door like candle wax.
+
+Somewhere above you, very quietly, an alarm starts. Not a bell. A tone. Polite. Like an elevator telling you which floor.
+
+Heck pulls the door off its top hinge with one hand, the steel bending like a cookie sheet, and steps through it.
+
+teddy: Well. They know we\'re here.
+
+sam: They knew we were here before we got here.
+
+teddy: Now they know we\'re *rude*.`,
+    next: 'a2_ward'
+  },
+
+  a2_luck: {
+    night: true,
+    loc: 'BUILDING 7 · STAIR B · THE EIGHTH LANDING',
+    text: g => `Jules goes up the last flight ahead of all of you, and stops in front of the steel door with no number, and looks at the card reader the way she looks at a dealer.
+
+jules: I\'ve never done this on purpose.
+
+sam: You just did it to twenty traffic lights.
+
+jules: That was *traffic*. This is a lock.
+
+She doesn\'t touch it. She stands in front of it with her hands at her sides and breathes out. Long and slow. Letting it go. You can see her shoulders come down.
+
+Nothing happens.
+
+She breathes out again.
+
+And somewhere inside the wall there\'s a click, the small soft click of a system rebooting, and the little red light on the card reader blinks, and blinks, and goes green.
+
+The door hisses and swings open an inch.
+
+Behind you, on the landing below, the light fixture on the ceiling pops. Just pops, a sharp little bang, and glass sprinkles down the stairs onto Teddy\'s shoulders. He brushes it off and looks up at the dead bulb, and then at her.
+
+teddy: Huh.
+
+Jules is standing very still with blood on her lip.
+
+jules: Near us. It\'s always near us.
+
+${g.hv('jules_debt') >= 6 ? 'She says it so quietly you\'re not sure she meant to say it out loud. She\'s pale. She looks like someone doing arithmetic and not liking the answer.' : 'She says it like a fact she\'s reminding herself of. Then she pushes the door open.'}`,
+    next: 'a2_ward'
+  },
+
+  a2_glass: {
+    night: true,
+    loc: 'BUILDING 7 · THE GLASS ROOM',
+    enter: g => { g.know('es_screen', ['sam', 'jules'], 'In the glass room on the seventh floor of Building 7, the screens listed Halcyon\'s subjects by number. ES-17: KEARNEY, SALVATORE. ES-44: PEMBERTON, JULIET. "PRIORITY. DO NOT RECOVER. OBSERVE." A second pulse was scheduled for 00:51:04.'); g.flag('badge5'); },
+    text: `The door at the end of the hall has dark glass in it and a lock you could open with a credit card. You open it with a credit card. Grace taught the whole ninth floor in September, for when Devontae locks himself out.
+
+Inside: a small dim room, two chairs, a bank of monitors, a desk. A mug on the desk, still warm. Earl Grey. The tea bag is folded neatly on a napkin beside it.
+
+And on the back of the chair, hanging by its lanyard, like somebody forgot it, or wanted it found: a white key card. *HALCYON DYNAMICS · VISITOR.*
+
+You take it.
+
+Then you look at the monitors.
+
+One of them is thermal: the seventh floor, gray and black, and five shapes in the hallway, three of them blue. Another shows the eighth floor, rows of beds, people in them, still. Another is a list.
+
+A long list, in a small clean font, of numbers and names.
+
+*ES-09 · KOWAL, THEODORE · ACTIVE · DRAW 31%*
+*ES-10 · KOWAL, BRIANNA · ACTIVE · DRAW 40%*
+*ES-17 · KEARNEY, SALVATORE · PRIORITY · NOT PRESENT 23:51*
+*ES-22 · RAMOS, HECTOR · ACTIVE · DRAW 18%*
+*ES-26 · REYES, MARISOL · RESIDENT · 8-03*
+
+And, near the bottom, highlighted in pale yellow:
+
+*ES-44 · PEMBERTON, JULIET · PRIORITY · DO NOT RECOVER · OBSERVE*
+
+Jules is standing behind you. You hear her stop breathing.
+
+jules: Forty-four.
+
+She says it the way you\'d read your own name on a gravestone.
+
+jules: I\'m forty-four. You\'re seventeen. We\'re *numbers*, Sam. Somebody typed us.
+
+At the bottom of the screen, a single line, blinking:
+
+*SECOND DRAW · 00:51:04 · STANDBY*
+
+You look at the clock in the corner of the monitor. 12:27.
+
+sam: Twenty-four minutes.
+
+jules: Until what?
+
+sam: Until it happens again.
+
+She takes the card out of your hand, turns it over, looks at it, and gives it back.
+
+jules: Then we have twenty-four minutes. Let\'s not spend them reading about ourselves.`,
+    next: 'a2_ward'
+  },
+
+  a2_glass_slow: {
+    night: true,
+    loc: 'BUILDING 7 · THE GLASS ROOM',
+    enter: g => { g.flag('badge5'); g.flag('late5'); g.hidden('halcyon_heat', 1); g.know('es_screen', ['sam', 'jules'], 'In the glass room on the seventh floor of Building 7, the screens listed Halcyon\'s subjects by number. ES-17: KEARNEY, SALVATORE. ES-44: PEMBERTON, JULIET. "PRIORITY. DO NOT RECOVER. OBSERVE." A second pulse was scheduled for 00:51:04.'); },
+    text: `The door at the end of the hall has dark glass in it and a lock that doesn\'t want to open. You try a credit card, the way Grace taught the ninth floor in September. It doesn\'t work. You try it again. Heck offers to burn it and you say no, and Teddy says *just let him*, and Bree says, in your own voice, *"Marisol first,"* and you get it open on the fifth try with your hands shaking.
+
+Inside: two chairs, a bank of monitors, a mug of Earl Grey gone cold. The tea bag is folded on a napkin. A white key card hangs from the back of a chair. *HALCYON DYNAMICS · VISITOR.*
+
+You find it on the second pass. You\'d looked right at it. It\'s the kind of thing that\'s easy to miss when somebody wants you to take your time.
+
+On the monitors: a list of names and numbers.
+
+*ES-17 · KEARNEY, SALVATORE · PRIORITY · NOT PRESENT 23:51*
+
+And at the bottom, in pale yellow:
+
+*ES-44 · PEMBERTON, JULIET · PRIORITY · DO NOT RECOVER · OBSERVE*
+
+Jules reads it over your shoulder. She doesn\'t say anything at all. She reaches past you and touches the screen, her own name, with one fingertip, like she\'s checking whether it\'s real.
+
+At the bottom of the screen, blinking:
+
+*SECOND DRAW · 00:51:04 · STANDBY*
+
+The clock in the corner says 12:36.
+
+sam: Fifteen minutes.
+
+From down the hall, Teddy\'s voice:
+
+teddy: Kearney. The elevator just closed.
+
+You look up. Down the hall, the elevator doors are shut. The little arrow above them is lit. *Down.*
+
+teddy: It\'s going to get somebody.`,
+    next: 'a2_ward'
+  },
+
+  a2_ward: {
+    night: true,
+    loc: 'BUILDING 7 · THE EIGHTH FLOOR',
+    text: g => `${g.f('door5') === 'glass' ? 'The card reader on the door with no number takes the visitor card and blinks green, politely, as if you\'re expected. Of course you are.\n\n' : ''}The eighth floor is cold.
+
+Not your cold. Air-conditioning cold, hospital cold, the cold of a place where somebody decided the people in the beds would keep better. The light is dim blue. The machines blink green. Somewhere a pump sighs, every four seconds, like something breathing for somebody.
+
+Twenty-two beds. You count. Twenty-two people, on their backs, with their hands folded on the blankets. Old and young. A man in his seventies with a beard. A girl younger than Gigi. A woman in a hijab with her mouth slightly open. Each one with a whiteboard at the foot of the bed, the kind they have in hospitals, *YOUR NURSE TODAY IS:*, and on each whiteboard, in neat blue marker, a number. *ES-03. ES-14. ES-38.*
+
+Heck is already at the third bed on the left.
+
+She\'s smaller than you expected. Nineteen. Her head is shaved and there are little round marks on her scalp where something was stuck to it. A lightbulb on the inside of her wrist.
+
+*ES-26.*
+
+Heck kneels down beside the bed. He doesn\'t touch her. He\'s afraid of his own hands.
+
+heck: Mari. Mari, it\'s me. It\'s Heck. From Lehigh Avenue. You texted me in September. You said come to McPherson.
+
+Nothing. The pump sighs.
+
+heck: It wasn\'t you that texted. I know it wasn\'t you. I came anyway.
+
+Teddy is at the IV pole. He looks at the bag, at the line, at the tape on her arm.
+
+teddy: Listen. We pull this, she wakes up in an hour, maybe two. Heck carries her. We go down the stairs. That\'s the plan. That\'s the whole plan.
+
+sam: There are twenty-one other people in here, Teddy.
+
+teddy: I can count.
+
+The girl who is younger than Gigi has a stuffed rabbit tucked under her arm. Somebody gave her that. Somebody here.
+
+${g.f('call5') === 'nik' ? 'nik: Bro. The truck. The truck\'s engine just changed. They\'re not idling anymore. I don\'t know what that means. I think it means something.' : ''}
+
+Jules is standing at the foot of an empty bed. On the whiteboard, in the same neat blue marker, a number, and nothing else. No name. No person. Just the bed, made, waiting, with the corner of the blanket turned down.
+
+*ES-44.*
+
+${g.knows('es_screen', 'jules') ? 'She doesn\'t move. She knew already. Knowing doesn\'t help.' : 'She reads it. You watch her read it. You watch her understand what it means, all at once, standing there in her camel coat.\n\njules: Is that—\n\nsam: Yeah.\n\njules: They made my bed.'}`,
+    choices: [
+      { text: 'Marisol. Just Marisol. That\'s the promise. You can\'t carry twenty-two people down seven flights, and you know it, and so does he.', tag: 'Just Marisol',
+        fx: g => { g.flag('ward5', 'one'); g.hidden('revenant_drift', -1); g.bond('teddy', { respect: 1 }); }, go: 'a2_ward_one' },
+      { text: 'Marisol. And every bed, every face, every number, on your phone. Somebody at the Inquirer is waiting for proof.', tag: 'Photograph them',
+        fx: g => { g.flag('ward5', 'photos'); g.flag('late5'); g.hidden('halcyon_heat', 1); }, go: 'a2_ward_photos', if: g => g.f('dana4') === 'halcyon' },
+      { text: 'Everybody. Pull every line. Wake them up. Nobody stays on this floor tonight. Not one.', tag: 'Everybody',
+        fx: g => { g.flag('ward5', 'all'); g.flag('late5'); g.hidden('revenant_drift', 1); }, go: 'a2_ward_all' }
+    ]
+  },
+
+  a2_ward_one: {
+    night: true,
+    enter: g => { g.flag('marisol_out'); },
+    text: `sam: Marisol.
+
+Teddy looks at you, and nods once, like you passed something.
+
+He pulls the tape off her arm with his gray fingers, gently, and slides the line out, and presses his thumb on the place where it was. Heck lifts her off the bed, blanket and all, the way you\'d lift a sleeping kid out of a car, and holds her against his chest.
+
+She weighs nothing. Her head falls against his shoulder.
+
+heck: I got you, Mari. I got you.
+
+You look back once, from the door. Twenty-one people in beds. The girl with the rabbit. The man with the beard.
+
+Jules is looking back too.
+
+jules: We\'ll come back.
+
+sam: Yeah.
+
+Neither of you says it like you believe it. You say it anyway. You have to say something to the beds.`,
+    next: 'a3_elevator'
+  },
+
+  a2_ward_photos: {
+    night: true,
+    enter: g => { g.flag('marisol_out'); g.flag('photos5'); g.know('ward_photos', ['sam', 'jules'], 'You photographed every bed on the eighth floor of Building 7: twenty-two sedated Changed, each with an ES number on a whiteboard. One empty bed was made up for ES-44.'); },
+    text: `sam: Marisol. Go. Give me ninety seconds.
+
+You go down the rows with your phone.
+
+Every bed. Every face. Every whiteboard. *ES-03. ES-14. ES-38.* The old man\'s beard, the woman in the hijab, the girl with the rabbit. The IV bags with their printed labels. The pump on the wall with *HALCYON DYNAMICS · CLINICAL* stamped on its side. The flash goes off every time and lights up a face that doesn\'t flinch.
+
+You do the empty bed last. *ES-44.* The blanket turned down.
+
+Jules watches you take it and doesn\'t say anything.
+
+Behind you, Teddy has the line out of Marisol\'s arm, and Heck has her, blanket and all, against his chest.
+
+teddy: Kearney. Ninety seconds was a minute ago.
+
+sam: I\'m done.
+
+You\'ve got two hundred and six photos. Your hands are shaking so badly half of them are going to be blurry.
+
+You think about Dana Fiorillo saying *I\'ll find something I can print.*`,
+    next: 'a3_elevator'
+  },
+
+  a2_ward_all: {
+    night: true,
+    enter: g => { g.flag('marisol_out'); g.know('revenant_ward', ['sam', 'jules'], 'On the eighth floor of Building 7, an old woman, ES-03, woke long enough to say: "The old man comes at night. He sits with us. He has your face."'); },
+    text: `sam: All of them.
+
+teddy: Kearney—
+
+sam: *All* of them. Pull the lines. Every one.
+
+You start at the end of the row. Tape, line, thumb. The way Teddy did it. Your hands aren\'t as steady. The man with the beard. The woman in the hijab. The girl with the rabbit. Jules is doing the other row, fast, precise, like she\'s done this, like she grew up in her mother\'s hospital, which she did.
+
+Nobody wakes up.
+
+You do six. Eight. Ten. Nobody wakes up. The pump keeps sighing. You can\'t carry ten people down seven flights. You can\'t carry two. You knew that. You know that.
+
+At the eleventh bed, an old woman, eighty if she\'s a day, *ES-03*, opens her eyes.
+
+She looks at you. Her eyes are very clear.
+
+ES-03: Not tonight, sweetheart.
+
+sam: Ma\'am, we\'re getting you out—
+
+ES-03: You can\'t. Not tonight. Tonight you run.
+
+She takes your hand in her dry old hand.
+
+ES-03: The old man comes at night. He sits in that chair. He has your face. He cries, sometimes.
+
+Her eyes close.
+
+You stand there holding her hand.
+
+teddy: *Kearney.* We have Marisol. We have to go. Now.
+
+Ten lines out. Ten people who won\'t wake for hours, and who will wake up here, in these beds, with somebody\'s hand on the tape again.
+
+You did it anyway. You don\'t know if that\'s brave or if it\'s the other thing.`,
+    next: 'a3_elevator'
+  }
+});
+
+/* s02e05c.js */
+/* S2 · E5 · THE OPEN DOOR, part 3 of 4: Act Three ("Somebody Pays"). */
+EH.scenes('s02e05', {
+
+  /* ================= ACT THREE: SOMEBODY PAYS ================= */
+  a3_elevator: {
+    card: { kind: 'act', label: 'Act Three', title: 'Somebody Pays' },
+    night: true,
+    loc: 'BUILDING 7 · STAIR B',
+    clock: { time: '12:42 AM' },
+    text: g => `You\'re on the landing between eight and seven when you hear them.
+
+Boots. A lot of boots, coming up, from far below. Flashlight beams sweeping the stairwell walls, three floors down, four. Not running. Climbing, steady, like people who climb stairs for a living.
+
+And a voice, floating up the stairwell, calm, pleasant, a little winded. A voice you\'ve heard once before, at McPherson Square, telling you about nosebleeds.
+
+BRANNIGAN: Mr. Kearney. Good evening. Please don\'t run. Nobody wants to chase anybody up and down seven flights at this hour. I\'m forty-five. My knees are a matter of record.
+
+Jules\'s hand finds yours in the dark.
+
+BRANNIGAN: Bring Miss Reyes down with you, if you like. We\'ll talk at the bottom. I\'ve got tea.
+
+${g.f('call5') === 'nik' ? 'nik: *Four.* There are four of them in the stairwell. And the truck\'s moving. Bro. Bro, there\'s a Stair A. West end of seven. Go west. GO WEST.' : 'teddy: There\'s another stair. West end of the hall. I saw the sign. Stair A.'}
+
+You go back up to seven, all of you, fast, Heck with Marisol against his chest, Bree with her hand over her own mouth like she\'s afraid of what will come out of it, Jules, you. Out onto the white hallway. The fire extinguisher is still propping the stair door open.
+
+Teddy kicks the extinguisher away.
+
+The door swings shut. He puts both hands flat on it, his gray hands, and leans.
+
+You feel it. Not the cold. The *absence*. The door stops being a door and becomes a fact. A stopped thing. Not in time at all. You could hit it with a truck.
+
+On the other side, boots arrive. Somebody pushes the bar. Nothing. Somebody hits it with a shoulder. Nothing. Not even a rattle.
+
+BRANNIGAN: *(muffled, through the steel)* Ah. Mr. Kowal.
+
+The gray on Teddy\'s arms is climbing. You watch it go past his elbows, toward his shoulders, like water soaking up a sleeve.
+
+teddy: Listen. Ninety seconds after I let go, it holds. Go. Stair A. I\'ll be right behind you.
+
+sam: Teddy—
+
+teddy: Ninety seconds, Kearney. I counted it on the Parkway. I count it every time.`,
+    choices: [
+      { text: 'Go. Trust him. He knows his own ninety seconds better than you know anything.', tag: 'Trust him',
+        fx: g => { g.flag('teddy5', 'trust'); g.bond('teddy', { trust: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_teddy_go' },
+      { text: '"I\'m not leaving you here." Put your hand on the door next to his.', tag: 'Stay',
+        fx: g => { g.flag('teddy5', 'stay'); g.bond('teddy', { affection: 2 }); g.hidden('revenant_drift', 0.5); }, go: 'a3_teddy_stay' }
+    ]
+  },
+
+  a3_teddy_go: {
+    night: true,
+    text: `You go.
+
+Down the white hallway, past the empty rooms, past 714 with its cold turkey under its silver dome, past the glass room and the open elevator, to the sign at the far end: *STAIR A.*
+
+You look back once.
+
+Teddy, alone at the far end of the hall, leaning on the door with both gray hands, his head down, like a man holding up a wall in a dream. He doesn\'t look up. He lifts one hand off the door, just the fingers, and waves them. *Go.*
+
+You go.`,
+    next: 'a3_yard'
+  },
+
+  a3_teddy_stay: {
+    night: true,
+    enter: g => { g.know('teddy_halina', ['sam', 'teddy'], 'On the seventh floor of Building 7, Teddy told you: "My mother thinks I work nights at a warehouse in Bridesburg. She thinks the deposit at Jefferson came from a GoFundMe. I made the page myself. Nineteen people gave. Bruno gave the rest."'); },
+    text: `sam: I\'m not leaving you here.
+
+You put your hand on the door next to his. It doesn\'t feel like steel. It doesn\'t feel like anything. It\'s not cold and it\'s not warm. It\'s like touching a photograph of a door.
+
+teddy: Cold guy.
+
+sam: Yeah.
+
+teddy: You\'re an idiot.
+
+sam: Yeah.
+
+He laughs, once, through his nose.
+
+teddy: Listen. My mother thinks I work nights at a warehouse in Bridesburg. She thinks the deposit at Jefferson came from a GoFundMe. I made the page myself. Nineteen people gave. Bruno gave the rest.
+
+He doesn\'t look at you.
+
+teddy: You were right. On the Parkway. When you said he\'d own me. He doesn\'t even have to ask for anything. He just has to *be there*, every time she goes in to Jefferson.
+
+Then he takes one hand off the door and puts it flat on your chest, gray, and pushes you, gently, back down the hall.
+
+teddy: This is mine, Kearney. You got your own. Go.
+
+You go. You run. You look back once from Stair A, and he lifts his fingers off the door and waves them. *Go.*`,
+    next: 'a3_yard'
+  },
+
+  a3_yard: {
+    night: true,
+    loc: 'NAVY YARD · THE DRY DOCK',
+    clock: { time: '12:47 AM' },
+    text: g => `Stair A lets you out on the west side of Building 7, onto grass, into the cold.
+
+The white truck is coming around the corner of Building 10 with its high beams on, slow, the way a cop car comes down a block. Behind it, two figures on foot, in gray, with long rifles held across their bodies. Not guns. You know what they are. You watched one miss Jules four times.
+
+${g.f('call5') === 'mikey' ? 'Somewhere off toward Broad, a car horn. Three long blasts. Mikey, at the gate, letting them know.' : g.f('call5') === 'vinnie' ? 'Somewhere south, past the dry dock, by the river fence, headlights flash twice. Vinnie.' : g.f('call5') === 'nik' ? 'nik: South. Go south, along the dry dock, there\'s a pedestrian gate by the river, it\'s chained but the chain\'s rusted to garbage. Two hundred meters. You can do two hundred meters. I\'ve seen you do four miles.' : ''}
+
+Between you and every way out is the dry dock. A great stone trench a hundred yards long, forty feet deep, with granite steps going down its sides like the seats of a stadium, all the way to black water at the bottom. The only path runs along its edge.
+
+Heck has Marisol. Bree has your sleeve. Jules is at your shoulder.
+
+And behind you, the door of Stair A bangs open, and Teddy comes out running, gray to the shoulders now, his arms stiff at his sides like he can\'t bend them.
+
+teddy: *Ninety!* Ninety, I let go at the top, *go!*
+
+The truck\'s high beams swing onto you.
+
+Jules is looking at you. Not asking. Waiting.`,
+    choices: [
+      { text: 'Run. Your legs, your call, your people. Get them along the edge of the dock.', tag: 'Run',
+        check: { kind: 'move', move: 'Run the Gauntlet', attr: 'reflex', skill: 'athletics', label: 'Get everyone along the dry dock', near: ['jules'],
+          on: { strong: 'a3_dock', weak: 'a3_yard_weak', miss: 'a3_yard_miss' } },
+        fx: g => { g.flag('yard5', 'run'); }, if: g => g.f('call5') !== 'nik' },
+      { text: 'Run Nik\'s route. He\'s in your ear. He can see what you can\'t.', tag: 'Run (Nik)',
+        check: { kind: 'move', move: 'Run the Gauntlet', attr: 'reflex', skill: 'athletics', label: 'Get everyone along the dry dock', near: ['jules'], bonus: 1, bonusLabel: 'Nik on the cameras',
+          on: { strong: 'a3_dock', weak: 'a3_yard_weak', miss: 'a3_yard_miss' } },
+        fx: g => { g.flag('yard5', 'run'); }, if: g => g.f('call5') === 'nik' },
+      { text: '"Jules." That\'s all you say. You don\'t have to say anything else.', tag: 'Jules\'s luck',
+        check: { kind: 'move', move: 'Her Luck', attr: 'reflex', skill: 'athletics', label: 'Let it go her way', luck: 'jules',
+          on: { strong: 'a3_dock', weak: 'a3_yard_weak', miss: 'a3_yard_miss' } },
+        fx: g => { g.flag('yard5', 'luck'); } }
+    ]
+  },
+
+  a3_yard_weak: {
+    night: true,
+    enter: g => { g.flag('heck_darted5'); },
+    text: `You run.
+
+Along the edge of the dock, single file, the granite lip on one side and the long drop on the other. Heck in front with Marisol. Bree. Jules. You. Teddy coming up behind, stiff-armed, fast.
+
+*Pfft.*
+
+Heck grunts. A dart is sticking out of the back of his neck, a little feathered thing, like a toy.
+
+He doesn\'t stop. He doesn\'t drop her. He just runs hotter. You see it happen, the steam pouring off him, the dart\'s feathers curling and blackening, and he reaches back with one hand and pulls it out and throws it in the dock, and it sizzles in the air on the way down.
+
+heck: Cooked it. Cooked it, papa. Keep going.
+
+He\'s stumbling, a little. He keeps going.`,
+    next: 'a3_dock'
+  },
+
+  a3_yard_miss: {
+    night: true,
+    enter: g => { g.flag('sam_darted5'); g.injure({ id: 'dart_s2e5', name: 'Halcyon sedative (shoulder)', pen: 1, heal: 2, affects: ['reflex', 'wits'] }); },
+    text: `You run.
+
+*Pfft.*
+
+Something bites you in the back of the shoulder. You reach back and pull out a dart, a little feathered thing like a toy, and look at it in your hand, and think, very clearly: *that\'s funny.*
+
+Then the world goes soft at the edges.
+
+Not the Slip. The opposite. Everything slow, and warm, and far away. Your legs are somebody else\'s. The granite lip of the dock tilts.
+
+A hand grabs your arm. Jules. Then your other arm. Teddy, gray, with a grip like a vise.
+
+teddy: Up. Up, Kearney. Your cold\'s eating it. I can feel it. Your whole arm\'s like ice. *Walk.*
+
+You walk. You can\'t feel your feet. Your nose is bleeding into your mouth. Whatever was in that dart, your body is fighting it the way it fights everything now, with the cold, and the cold is winning, slowly, and it hurts.
+
+jules: Stay with me. Kearney. *Stay with me.*
+
+sam: I\'m here. I\'m here.`,
+    next: 'a3_dock'
+  },
+
+  a3_dock: {
+    night: true,
+    loc: 'NAVY YARD · THE DRY DOCK',
+    clock: { time: '12:50 AM' },
+    text: g => `Halfway along the dry dock, the truck stops.
+
+It stops across the path ahead of you, broadside, high beams in your eyes, and the two gray figures on foot come around its back end and kneel, rifles up. Behind you, the door of Stair A bangs open again. More of them.
+
+A loudspeaker on the truck\'s roof crackles. Brannigan, perfectly calm.
+
+BRANNIGAN: That\'s far enough, I think. Mr. Ramos, please put Miss Reyes down on the grass. Gently. She\'s not well.
+
+Nobody moves.
+
+BRANNIGAN: Mr. Kowal.
+
+Teddy stops. He\'s standing at the very edge of the dry dock, on the granite lip, his gray arms stiff at his sides, breathing hard. Forty feet below him, the stone steps go down and down into black water.
+
+BRANNIGAN: Your mother has her appointment at Jefferson on Tuesday at seven. The transplant clinic. Eleventh floor. She asks the nurses about you. She tells them you work nights at a warehouse in Bridesburg.
+
+Teddy\'s face doesn\'t change. His hands do. They close, slowly, into fists.
+
+BRANNIGAN: I mention it only so that you\'ll think, before you do anything heroic.
+
+${g.knows('es_screen') ? 'You look at your phone. 12:51. You know what\'s coming. *SECOND DRAW · 00:51:04.*' : 'You feel it before you see it. The cold, coming up out of the ground. The same as 11:51. The building behind you, all seven rows of windows, starting to glow.'}
+
+The rifles come up.
+
+You see where they\'re pointed. Heck. Bree. Teddy. Marisol in Heck\'s arms.
+
+Not Jules. Not one of them is pointed at Jules.
+
+And not one of them is pointed at you.
+
+The lights on the seventh floor of Building 7 go white.
+
+${g.f('assunta_watch') ? 'In your pocket, the watch is ticking. Loud. Louder than it\'s ever been.' : ''}`,
+    choices: [
+      { text: 'Slip. Now. Into the white. Every dart, every second, yours.', tag: 'Slip', slip: true,
+        fx: g => { g.hidden('revenant_drift', 1); }, go: 'a3_slip' },
+      { text: 'Take Jules\'s hand. She\'s already reaching for yours. Let it all go her way.', tag: 'Her hand',
+        fx: g => { g.flag('dock5', 'luck'); g.flag('jules_blames5'); g.hidden('jules_debt', 2); g.hidden('jules_open', 1); g.bond('jules', { trust: 1 }); }, go: 'a3_luck' }
+    ]
+  },
+
+  a3_slip: {
+    night: true,
+    loc: 'THE DRY DOCK · 00:51:04',
+    enter: g => { g.unstick('unstick_s2e5b', 'Time debt (the dry dock)'); g.know('revenant_push', ['sam'], 'At the dry dock, at 12:51:04, in the Slip, the man with your face put two fingers on Teddy Kowal\'s chest and pushed him off the edge. He said: "He\'s the one who takes her to Bruno. In March." He looked at Jules.'); },
+    text: g => `You step through.
+
+The cold takes you like a fist. ${g.f('assunta_watch') ? 'The watch ticks in your pocket, and you hold onto the sound of it with everything you have.' : 'The walls of the second are already closing.'}
+
+The Navy Yard, stopped.
+
+The high beams frozen in the air like solid things. Four darts hanging over the dry dock in a neat fan, feathers and all, a foot apart, each one going somewhere. Heck, mid-stride, with Marisol. Bree, mouth open. Jules, her hand out toward where your hand was.
+
+And Teddy, on the lip of the dock, gray, still.
+
+And beside Teddy, a man.
+
+He\'s standing on the granite with his hands in the pockets of a long dark coat. Gray at the temples. Old white scars along his jaw. Your face, the way it will look when it\'s been somewhere for a very long time. His breath doesn\'t smoke. He doesn\'t have anything left to smoke.
+
+He\'s not frozen.
+
+He looks at you, and he looks so tired.
+
+old_sam: You came.
+
+sam: Get away from him.
+
+old_sam: He\'s the one who takes her to Bruno.
+
+He doesn\'t say who. He doesn\'t have to. He looks past you, at Jules, frozen with her hand out, and his face does the thing your face does right before you cry.
+
+old_sam: In March. On a Tuesday. He doesn\'t want to. His mother\'s on the list at Jefferson, and Bruno knows the surgeon\'s name.
+
+old_sam: I\'ve watched it four hundred times. Every way I stop it ends in the same place.
+
+sam: What place?
+
+He doesn\'t answer.
+
+He takes his left hand out of his coat pocket. There\'s a gap where the ring finger should be. He puts two fingers on Teddy\'s chest, very gently, the way you\'d touch a sleeping kid to see if he\'s breathing.
+
+And pushes.
+
+Teddy\'s stopped body tips. Past the lip. Past balance. Frozen at an angle no standing man can hold, over forty feet of air.
+
+The cold slams shut around you like a door. You feel *him* do it. He\'s closing the second. He\'s taking it back from you.
+
+You have one move left. Maybe one.`,
+    choices: [
+      { text: 'Teddy. Grab Teddy.', tag: 'Teddy',
+        fx: g => { g.flag('dock5', 'teddy'); g.hidden('revenant_drift', 1); }, go: 'a3_slip_teddy' },
+      { text: 'Him. Grab *him*. Make him look at you.', tag: 'The man',
+        fx: g => { g.flag('dock5', 'revenant'); g.know('revenant_hand', ['sam'], 'You grabbed the Revenant\'s left wrist at the dry dock. It wasn\'t cold or warm. Four fingers. He said: "You\'ll do it too. That\'s the part nobody tells you."'); }, go: 'a3_slip_rev' },
+      { text: 'The darts. All four. Out of the air. Save the ones you can still save.', tag: 'The darts',
+        fx: g => { g.flag('dock5', 'darts'); g.hidden('revenant_drift', -1); }, go: 'a3_slip_darts' }
+    ]
+  },
+
+  a3_slip_teddy: {
+    night: true,
+    enter: g => { g.flag('heck_darted5'); g.flag('bree_darted5'); g.flag('teddy_coat'); },
+    text: `You lunge.
+
+Your hands close on the collar of Teddy\'s coat. The nice wool coat, the one Bruno bought him. You plant your feet on the granite lip and pull, and he doesn\'t come, because he\'s *stopped*, because in the Slip a stopped man weighs as much as the world.
+
+The second closes.
+
+Time comes back like a wave hitting a wall.
+
+The coat comes off in your hands.
+
+Teddy falls.
+
+He doesn\'t make a sound. He goes down past the granite steps, turning, and you hear him hit, once, very far down, a sound you will hear for the rest of your life.
+
+Behind you, *pfft, pfft*. Heck roars and keeps his feet. Bree drops like somebody cut her strings.
+
+You\'re standing on the edge of the dry dock holding a coat.`,
+    next: 'a3_fall'
+  },
+
+  a3_slip_rev: {
+    night: true,
+    enter: g => { g.flag('heck_darted5'); g.flag('bree_darted5'); },
+    text: `You grab him.
+
+Your hand closes on his left wrist. It isn\'t cold. It isn\'t warm. It\'s like grabbing a photograph of a wrist. Four fingers. You can feel the knuckle where the fifth one was.
+
+He looks down at your hand on his wrist. Then at you.
+
+old_sam: You\'ll do it too.
+
+His voice is your voice with all the jokes taken out.
+
+old_sam: That\'s the part nobody tells you.
+
+And he\'s gone, and your hand is closed on nothing, and the second closes like a door slamming on your fingers.
+
+Time comes back.
+
+Teddy falls.
+
+He doesn\'t make a sound. He goes down past the granite steps, turning, and you hear him hit, once, very far down, a sound you will hear for the rest of your life.
+
+Behind you, *pfft, pfft*. Heck roars and keeps his feet. Bree drops like somebody cut her strings.`,
+    next: 'a3_fall'
+  },
+
+  a3_slip_darts: {
+    night: true,
+    text: `The darts.
+
+You go for them. One. Two. Out of the air, feathers and all, like picking flowers. Three, the one for Heck\'s throat. Four, the one for Marisol, a foot from her bare scalp.
+
+You turn around with four darts in your fist.
+
+He\'s watching you. The man with your face. He nods, once, slowly, like you got an answer right that he got wrong a long time ago.
+
+Then he\'s gone.
+
+The second closes.
+
+Time comes back like a wave hitting a wall.
+
+Teddy falls.
+
+He doesn\'t make a sound. He goes down past the granite steps, turning, and you hear him hit, once, very far down, a sound you will hear for the rest of your life.
+
+You open your hand. Four darts. You drop them in the grass.
+
+Heck is still standing. Bree is still standing. Marisol is still asleep in Heck\'s arms.
+
+Everybody\'s still standing, except Teddy.`,
+    next: 'a3_fall'
+  },
+
+  a3_luck: {
+    night: true,
+    enter: g => { g.know('revenant_glimpse5', ['sam'], 'At the dry dock at 12:51, for one frame, across the water, you saw a gray-haired man with one hand raised, like a man at a window. Then Teddy fell.'); },
+    text: g => `You take her hand.
+
+She doesn\'t hold her breath. She lets it go. All of it. You feel it go out of her, through her fingers into yours, like a current. Like the whole world tilting a quarter inch toward the two of you.
+
+The lights on seven go white.
+
+*Pfft. Pfft. Pfft. Pfft.*
+
+Four darts.
+
+The first one hits the truck\'s spotlight and the spotlight explodes. The second one goes into the thigh of the man who fired the third. The third one hits a seagull that wasn\'t there a second ago. The fourth one goes into the grass a foot from Heck\'s boot and stands there quivering.
+
+It\'s ridiculous. It\'s *funny*. Bree makes a sound, in Heck\'s voice, that might be a laugh.
+
+And Teddy, on the lip of the dry dock, takes one step back from the truck\'s lights.
+
+His heel comes down on the granite, on a patch of ice the size of a dinner plate that nobody saw, that wasn\'t there in all the hours they stood around this building tonight, and his foot goes out from under him, and his gray arms, which don\'t bend anymore, don\'t come up.
+
+He goes over.
+
+He doesn\'t make a sound. He goes down past the granite steps, turning, and you hear him hit, once, very far down, a sound you will hear for the rest of your life.
+
+And for one frame, one, across the dry dock, on the far lip, under the dead spotlight, you see a man in a long coat standing in the dark with one hand raised. Like a man at a window.
+
+Then there\'s nobody there.
+
+Jules\'s hand is still in yours. You feel it go cold.
+
+jules: No.
+
+She lets go of you.
+
+jules: No. No, no, no. *Fuck.*
+
+You have never heard her swear. Not once. Not in five months.
+
+jules: Near us. It *collects near us*.`,
+    next: 'a3_fall'
+  },
+
+  a3_fall: {
+    night: true,
+    loc: 'THE DRY DOCK · THE BOTTOM STEP',
+    clock: { time: '12:53 AM' },
+    text: g => `You go down.
+
+You don\'t Slip. You reach for the second and it isn\'t there. It\'s shut. Like something\'s holding it shut from the other side. So you go down the granite steps the way anybody would, fast and stupid, three at a time, slipping, catching yourself, forty feet of stone in the dark${g.f('sam_darted5') ? ', with the sedative still in your arm and your legs like water' : ''}${g.f('teddy_coat') ? ', with his coat still in your fist' : ''}.
+
+He\'s on the bottom step. The one just above the water.
+
+He\'s lying on his side, the way you\'d lie down on a beach, with one arm stretched out over the edge into the black water. The other arm is under him wrong. His head is wrong. There\'s blood on the granite, black in the dark.
+
+He\'s breathing. Barely. Wet.
+
+The gray has gone all the way up. His neck, his jaw. One side of his face.
+
+teddy: Cold guy.
+
+sam: Don\'t. Don\'t talk. Don\'t move. Somebody\'s coming. Somebody\'s—
+
+teddy: Nobody\'s coming. Listen.
+
+You kneel in the cold on the bottom step.
+
+teddy: Didn\'t slip. I felt it. Something put me down here.
+
+${g.f('dock5') === 'luck' ? 'Above you, at the top of the steps, Jules makes a sound you\'ve never heard a person make.' : 'You don\'t say anything. You can\'t.'}
+
+teddy: My mother. Listen. The deposit at Jefferson. She thinks it was the GoFundMe. Nineteen people. Don\'t... don\'t let her find out it was Bruno. Don\'t let her owe him. Tell her I did it. Tell her I saved it. From the warehouse.
+
+His eyes are on yours. Gray, all around them, like frost on a window.
+
+teddy: Tell her I was good at something.`,
+    choices: [
+      { text: '"I\'ll tell her. You did it. You saved it. I\'ll tell her myself."', tag: 'Promise',
+        fx: g => { g.flag('last5', 'promise'); g.flag('promise_halina'); g.hidden('revenant_drift', 0.5); }, go: 'a3_teddy' },
+      { text: '"Marisol\'s out, Teddy. She\'s out. You got her out. You did that."', tag: 'Marisol',
+        fx: g => { g.flag('last5', 'marisol'); g.hidden('revenant_drift', -0.5); }, go: 'a3_teddy' },
+      { text: 'Don\'t say anything. Take his gray hand. Hold it.', tag: 'His hand',
+        fx: g => { g.flag('last5', 'hand'); g.hidden('revenant_drift', -1); }, go: 'a3_teddy' }
+    ]
+  },
+
+  a3_teddy: {
+    night: true,
+    enter: g => { g.flag('teddy_dead'); g.know('teddy_dead', ['sam', 'jules', 'bree', 'heck'], 'Teddy Kowal died at the bottom of the dry dock at the Navy Yard at 12:53 a.m. on January 23. He was twenty.'); },
+    text: g => `${g.f('last5') === 'promise' ? 'sam: I\'ll tell her. You did it. You saved it. Every dollar. I\'ll tell her myself, Teddy. I swear to God.\n\nHe closes his eyes. Opens them.\n\nteddy: Don\'t swear to God. Swear to her.\n\nsam: I swear to her.' : g.f('last5') === 'marisol' ? 'sam: Marisol\'s out. She\'s out, Teddy. Heck\'s got her. She\'s on the grass up there, wrapped in a hospital blanket. You got her out. You held the door. You did that.\n\nSomething in his face lets go.\n\nteddy: Yeah?\n\nsam: Yeah.\n\nteddy: Huh. Okay.' : 'You don\'t say anything.\n\nYou take his hand, the gray one, the one that froze an armored car on Broad Street and a whole parade on the Parkway. It isn\'t cold. It isn\'t warm. It\'s like holding a photograph of a hand.\n\nYou hold it anyway.\n\nHe looks at your hand around his.\n\nteddy: Huh.\n\nThat\'s all. He doesn\'t need anything else. Neither do you.'}
+
+His breathing changes. Slower. Like somebody walking away down a long hall.
+
+teddy: Listen.
+
+And then nothing.
+
+You wait for the next word. You wait a long time. It doesn\'t come.
+
+Teddy Kowal is twenty years old, and he\'s dead, at the bottom of the dry dock at the Navy Yard, at seven minutes to one on a Saturday morning in January, with his arm in the water.
+
+You look at the water.
+
+Where his hand went in, the river has stopped.
+
+A circle of black water around his gray fingers, three feet wide, perfectly still. Not frozen. *Stopped.* A ripple that was spreading from his hand is standing in the water, a little ring, like a ring in glass. Outside the circle, the river moves, laps at the steps, slides. Inside it, nothing moves at all.
+
+*Ninety seconds after I let go, it holds.*
+
+You count. You don\'t decide to. You just count, out loud, kneeling on the granite, the way he did on the Parkway.
+
+You get to eighty-nine.
+
+At ninety, the ring in the water lets go, and spreads, and is gone, and the river closes over the place where it was like it was never there.
+
+Up at the top of the steps, somebody screams his name.
+
+It\'s Bree. ${g.f('bree_darted5') ? 'Drugged, on her knees in the grass with Jules holding her up, fighting the dart, she screams it' : 'She screams it'} in a voice you\'ve never heard before, ragged and high and nobody\'s but hers.
+
+It came back for that.
+
+Just for that.`,
+    next: 'a3_after'
+  },
+
+  a3_after: {
+    night: true,
+    loc: 'NAVY YARD',
+    clock: { time: '1:04 AM' },
+    text: g => `When you climb back up, the truck is pulling away.
+
+No hurry. No lights. It backs up, turns around in the road, and drives off between the buildings toward Broad Street, slowly, like a hearse with nowhere to be. The gray figures are gone. The darts are gone. Even the one in the grass by Heck\'s boot is gone.
+
+Somebody came and picked it up while you were down there. While you were counting.
+
+${g.f('call5') === 'mikey' ? 'And at the top of the steps, out of breath, in a Phillies hoodie and jeans with his badge on a chain around his neck and his service weapon in his hand, pointed at the ground, is your brother.\n\nmikey: Sammy. Sammy. Are you hurt. Look at me. Are you *hurt*.\n\nYou can\'t answer. He looks past you, down the steps, at what\'s at the bottom.\n\nmikey: Oh, Jesus. Oh, Jesus Christ.\n\nHe was the cop at the gate. He was the reason they left. You\'ll understand that later. Right now he\'s just your brother, holding your face in both hands like you\'re six.' : g.f('call5') === 'vinnie' ? 'And at the top of the steps, out of breath, in Dante\'s black cashmere coat with Dante\'s car keys in his fist, is Vinnie.\n\nvinnie: Sally. Yo. Sally, I saw the truck, I flashed the brights at it, I don\'t know, I don\'t know why they left, I just sat on the horn—\n\nHe looks past you, down the steps, at what\'s at the bottom.\n\nvinnie: Oh, no. Oh, no, no, no.' : g.f('call5') === 'nik' ? 'In your ear, Nik is crying. He\'s been crying for a while, you realize. You can hear him trying to stop.\n\nnik: I called 911. I\'m sorry. I called them at 12:52, from the Navy Yard\'s own front desk number, I spoofed it, I said a man fell in the dry dock. That\'s why they\'re leaving. That\'s why the truck\'s leaving. Bro, I\'m sorry, I didn\'t know what else to do. They\'ll be there in six minutes. Sam. Sam, say something.\n\nsam: You did good, Nik.\n\nnik: I didn\'t. I didn\'t. I watched.' : 'There\'s nobody else. Nobody\'s coming. The Navy Yard is dark and empty and enormous around you, and the only sound is Heck breathing.'}
+
+Heck is sitting on the grass with Marisol across his lap. She\'s stirring. Her eyes open and close.
+
+Bree is beside him, ${g.f('bree_darted5') ? 'slumped against his shoulder, fighting the dart, saying *Teddy* over and over in her own hoarse voice, like she\'s afraid it\'ll go away again if she stops' : 'with her knees pulled up to her chest, saying *Teddy* over and over in her own hoarse voice, like she\'s afraid it\'ll go away again if she stops'}.
+
+Jules is standing a little apart from all of you, on the edge, looking down. Her arms are wrapped around herself. She\'s not crying. She looks like she\'s never going to cry again.
+
+Heck lifts his head and looks at you, and then down the steps.
+
+heck: We take him home, papa. We don\'t leave him in the water. He hated the cold.
+
+${g.f('call5') === 'mikey' ? 'mikey: Sammy. Listen to me. If he leaves this yard in your arms, there\'s no accident. There\'s a missing kid and a body in somebody\'s car and a homicide detective at your dorm by Tuesday. Leave him. I\'ll call it in. I\'ll be the one who found him. A cop who heard a noise. Let me do this one thing.' : ''}`,
+    choices: [
+      { text: 'Carry him home. Heck\'s right. Nobody leaves Teddy Kowal in the water.', tag: 'Carry him',
+        fx: g => { g.flag('body5', 'carried'); g.bond('heck', { trust: 2, affection: 1 }); g.bond('bree', { trust: 2 }); g.hidden('halcyon_heat', 1); g.heat('police', 1); }, go: 'a4_saturday' },
+      { text: 'Leave him for the police. It\'s an accident if they find him here. He\'d want his mother to have an accident, not a mystery.', tag: 'Leave him',
+        fx: g => { g.flag('body5', 'left'); g.bond('heck', { trust: -1 }); if (g.f('call5') === 'mikey') g.bond('mikey', { trust: 2 }); }, go: 'a4_saturday' }
+    ]
+  }
+});
+
+/* s02e05d.js */
+/* S2 · E5 · THE OPEN DOOR, part 4 of 4: Act Four ("Port Richmond"), tag, polls. */
+EH.scenes('s02e05', {
+
+  /* ================= ACT FOUR: PORT RICHMOND ================= */
+  a4_saturday: {
+    card: { kind: 'act', label: 'Act Four', title: 'Port Richmond' },
+    loc: 'EDGEMONT STREET · PORT RICHMOND',
+    clock: { day: 'Sat', date: 'Jan 23', time: '9:20 AM' },
+    enter: g => { g.sleep(2); },
+    text: g => `${g.f('body5') === 'carried' ? `You carried him home.
+
+Heck carried him, mostly, the whole length of the yard, with Marisol over his other shoulder like a sack of flour, and wouldn\'t let anybody help. ${g.f('call5') === 'vinnie' ? 'Vinnie drove. He didn\'t say one word from the Navy Yard to Port Richmond. When you got out he stayed in the car with his hands on the wheel, and when you looked back he was crying, and he pulled away before you could see it.' : g.f('call5') === 'mikey' ? 'Mikey drove, because he wouldn\'t let you do it any other way, and swore the whole time, and then stopped swearing on I-95 and didn\'t say anything else.' : 'A cab, at two in the morning, a driver who looked in the mirror once and decided not to look again.'}
+
+At 2:40 a.m., on Edgemont Street, Halina Kowal opened her door in her bathrobe with the dialysis line taped to her arm, and looked at Heck, and at what Heck was carrying, and didn\'t scream. She stood aside. She said, *On the couch. Gently. Gently.* She called 911 herself. She told them her son had come home hurt and died.
+
+The police came at four, and asked questions for two hours. Bree told them the truth, mostly. Trespassing. The Navy Yard. A fall. Kids being stupid. A detective with a mustache wrote it all down and looked at you for a long time, and then at Heck, and then wrote some more.` : `The Navy Yard police found him at 1:12 a.m. ${g.f('call5') === 'mikey' ? 'A Philadelphia police officer, off duty, who said he\'d heard a noise, was standing at the top of the steps when they got there.' : g.f('call5') === 'nik' ? 'A 911 call from the Navy Yard\'s own front desk, which was empty, had told them where to look.' : 'An anonymous call from a pay phone on Oregon Avenue had told them where to look. There aren\'t any pay phones on Oregon Avenue. Nobody followed up.'}
+
+At 5:30 a.m., two officers knocked on a door on Edgemont Street, and Halina Kowal opened it in her bathrobe with the dialysis line taped to her arm, and looked at their faces, and knew.`}
+
+Now it\'s morning.
+
+You haven\'t slept. You\'re sitting at the kitchen table in the Kowals\' rowhouse, where in November there were pierogi and a toddler in a bumblebee costume, and now there\'s a pot of coffee nobody\'s drinking and the plaster Virgin Mary in the front yard has snow on her little knit scarf.
+
+Jules went home at six, in a car service she called from the Kowals\' front step. She didn\'t want to go. You made her. ${g.f('jules_blames5') ? 'She hasn\'t texted. She always texts.' : 'She texted from the Schuylkill Expressway: *I\'m here. Whenever. Whatever time it is.*'}
+
+Bree is asleep upstairs, finally. Heck is on the floor of the living room with his back against the couch, and on the couch, wrapped in Halina\'s crocheted blanket, Marisol Reyes is awake.
+
+She\'s been awake since seven. She doesn\'t remember much. The wellness study. A nice room on seven with a TV. Then the blue room. Then nothing, for months, except one thing.
+
+Halina is in the recliner beside the machine, which hums. She has her rosary. She isn\'t praying. She\'s looking at you.
+
+HALINA: You. Wawa boy. You were with him.
+
+sam: Yes, ma\'am.
+
+HALINA: He said anything? At the end?
+
+She asks it like she\'s asking whether it\'s raining.
+
+HALINA: Theodore never says anything. Twenty years, I get maybe a hundred words. So if he said something, I want it.
+
+${g.f('promise_halina') ? 'You swore. Not to God. To her.' : ''}`,
+    choices: [
+      { text: '"He said to tell you he saved it. The deposit at Jefferson. Every dollar. From the warehouse. He was proud of it."', tag: 'His version',
+        fx: g => { g.flag('halina5', 'his'); g.hidden('revenant_drift', -0.5); g.bond('bree', { trust: 1 }); }, go: 'a4_halina' },
+      { text: 'Tell her the truth. Bruno paid. She should know who she owes, before Bruno tells her himself.', tag: 'The truth',
+        fx: g => { g.flag('halina5', 'truth'); if (g.f('promise_halina')) { g.flag('broke_promise5'); g.hidden('revenant_drift', 1); } g.know('halina_bruno', ['sam', 'bree']); }, go: 'a4_halina' }
+    ]
+  },
+
+  a4_halina: {
+    loc: 'EDGEMONT STREET · PORT RICHMOND',
+    text: g => `${g.f('halina5') === 'his' ? `sam: He said to tell you he saved it. The deposit. At Jefferson. Every dollar. From the warehouse in Bridesburg. Nights. He said to tell you he was good at something.
+
+Halina looks at you for a long time.
+
+She knows. You can see her know. A mother whose son works nights at a warehouse and comes home in a wool coat that costs more than her car knows. She\'s known since Christmas.
+
+HALINA: Yes. He was very good at it. The warehouse.
+
+She turns the rosary over in her fingers.
+
+HALINA: Thank you for bringing me this.
+
+And that\'s the deal. The two of you, in her kitchen, agreeing on a story for a boy who isn\'t there to tell it. Upstairs, Bree is asleep. You hope she never has to know you made it.` : `${g.f('broke_promise5') ? 'You promised him. You know you promised him. You do it anyway.\n\n' : ''}sam: He worked for Bruno Iannucci. Not a warehouse. Bruno paid the deposit at Jefferson. Teddy didn\'t want you to know. He wanted you to think it was the GoFundMe.
+
+The machine hums.
+
+Halina doesn\'t look surprised. She looks tired. She looks exactly like her son.
+
+HALINA: I know who paid. Mr. Iannucci came to see me himself. At Christmas. He brought a ham. He sat in that chair and told me I have a good boy.
+
+She looks at the rosary in her hand.
+
+HALINA: Theodore thinks I don\'t know things. All his life. He protects me from things I know already.
+
+HALINA: Thank you for not doing it too.`}
+
+On the couch, Marisol stirs. She\'s been listening.
+
+MARISOL: You\'re Sam.
+
+sam: Yeah.
+
+MARISOL: Heck says you came for me. He says you promised.
+
+She has a hoarse little voice, like she hasn\'t used it in months, because she hasn\'t.
+
+MARISOL: There was a man. In the blue room. At night. He sat in the chair by my bed. He never touched anything. He just sat. Sometimes he cried.
+
+The hair on your arms stands up.
+
+MARISOL: He was old. Older. But he had your face. Exactly your face. When you came in just now, I thought—
+
+She stops.
+
+MARISOL: Last night. Before they came for us. Before the lights. He leaned over me, and he said, *Not you. You get to go home.*
+
+She pulls the blanket up to her chin.
+
+MARISOL: I thought it was a dream. I thought he meant I was going to die.
+
+Heck, on the floor, has his big hands over his face.
+
+You sit at the Kowals\' kitchen table with your cold coffee and think: *not you.*
+
+He meant *not you.* He meant somebody else.
+
+He picked.`,
+    next: 'a4_funeral'
+  },
+
+  a4_funeral: {
+    loc: 'ST. ADALBERT · ALLEGHENY AVENUE',
+    clock: { day: 'Thu', date: 'Jan 28', time: '11:40 AM' },
+    enter: g => { g.sleep(5); },
+    text: g => `They bury Theodore Kowal on Thursday from St. Adalbert, the big Polish church on Allegheny Avenue with the two green spires you can see from I-95.
+
+The mass is in Polish and English. The choir sings something in Polish that has no English, that nobody needs translated. Halina sits in the front pew in a black coat with her arm in a sling over the fistula, between Bree and an old woman who keeps patting her hand. Heck is a pallbearer. He carries the front left corner and his face is wet the whole way up the aisle and his hands don\'t burn the brass handle, because he doesn\'t let them.
+
+The casket is mahogany. The flowers are white roses, hundreds of them, more flowers than Port Richmond has seen since the old monsignor died. There\'s a wreath on a stand by the altar the size of a truck tire.
+
+The card on the wreath says: *With deepest sympathy. The Iannucci family.*
+
+You\'re in the back pew. ${g.f('jules_blames5') ? 'Jules is not beside you. She texted at nine: *I can\'t. I\'m sorry. I can\'t be near anyone today.*' : 'Jules is beside you, in black, very straight, holding your hand under the hymnal where nobody can see.'} ${g.f('call5') === 'nik' ? 'Nik is on your other side in a suit his mother overnighted from Edison, two sizes too big, and he\'s crying harder than anyone who didn\'t know Teddy has any right to, and you love him for it.' : ''}
+
+After, on the church steps, in the cold, Bruno Iannucci is waiting.
+
+He\'s in a black overcoat with a white scarf, leaning on a cane you\'ve never seen him use. Dante is beside him. Vinnie is a step behind them, in his black cashmere coat, ${g.f('call5') === 'vinnie' ? 'and when your eyes meet his he looks away, at the street, at the traffic on Allegheny, at anything.' : 'with his hands folded in front of him like a man in a photograph.'}
+
+BRUNO: Sam. Walk with an old man.
+
+You walk with him, slowly, down the steps, to the sidewalk, where it\'s just the two of you and the wind.
+
+BRUNO: I paid for the box. The flowers. The mass. The lunch after at the Polish club, which you\'ll come to, and eat, because you\'re too skinny. I paid for the plot at Our Lady of Grace. That\'s what I do, when one of mine dies.
+
+He stops walking.
+
+BRUNO: Teddy Kowal was mine. He broke my understanding to go into that building, and I would have had something to say to him about that, and now I don\'t get to.
+
+He looks at you. Those old wet eyes, kind and terrible.
+
+BRUNO: The police say he fell. Teddy Kowal never fell in his life. Who?`,
+    choices: [
+      { text: '"Halcyon. The building is theirs. The truck was theirs. They left the door open, and they waited."', tag: 'Halcyon',
+        fx: g => { g.flag('bruno5', 'halcyon'); g.know('bruno_halcyon5', ['sam', 'bruno'], 'At Teddy\'s funeral, you told Bruno Iannucci that Halcyon left the door open at the Navy Yard and waited. He said: "Then they owe me a boy."'); g.hidden('halcyon_heat', 1); }, go: 'a4_bruno_halcyon' },
+      { text: '"He fell." Say it like the police say it. Give Bruno nothing.', tag: 'He fell',
+        fx: g => { g.flag('bruno5', 'fell'); }, go: 'a4_bruno_fell' },
+      { text: 'Don\'t answer. Look at him, and don\'t say anything at all.', tag: 'Silence',
+        fx: g => { g.flag('bruno5', 'silent'); g.hidden('revenant_drift', -0.5); }, go: 'a4_bruno_silent' }
+    ]
+  },
+
+  a4_bruno_halcyon: {
+    text: `sam: Halcyon. The building\'s theirs. The truck was theirs. They left the door open on purpose, and they waited for us to walk through it.
+
+Bruno nods slowly, like you\'ve confirmed something he already had on a list.
+
+BRUNO: The doctor\'s people. The ones with the beds.
+
+sam: Yeah.
+
+BRUNO: They took a girl from Fishtown in October. Now they take one of mine.
+
+He puts on a pair of black leather gloves, one finger at a time.
+
+BRUNO: Fifty years I\'ve had an understanding with everybody in this city. The Irish. The Russians. The cops. City Council. Everybody knows where the lines are. Nobody walks into my house and takes a boy off the table.
+
+He pats your cheek with one gloved hand. Gently.
+
+BRUNO: Then they owe me a boy. Go eat, Sam. The pierogi at the Polish club are very good.
+
+He walks back up the steps to Dante, and says something, and Dante looks at you over his grandfather\'s shoulder, and smiles.
+
+You know that smile. You\'ve seen it under I-95. You\'ve just started something, and you don\'t know what it is.`,
+    next: g => g.f('photos5') ? 'a4_photos' : 'a4_jules',
+    nextTargets: ['a4_photos', 'a4_jules']
+  },
+
+  a4_bruno_fell: {
+    text: `sam: He fell.
+
+Bruno looks at you for a long time.
+
+BRUNO: That\'s what the police say.
+
+sam: That\'s what happened.
+
+BRUNO: Mm.
+
+He takes out a pair of black leather gloves and puts them on, one finger at a time.
+
+BRUNO: You know what your great-grandmother told me, Sam? In 1964? When she pulled me out of the river with her hands bleeding? She said, *You didn\'t fall through. The ice opened.* She knew the difference.
+
+He pats your cheek with one gloved hand.
+
+BRUNO: You know the difference too. You\'re just not telling me. That\'s all right. I\'ll find out. I always find out. Go eat.
+
+He walks back up the steps. Dante watches you go.`,
+    next: g => g.f('photos5') ? 'a4_photos' : 'a4_jules',
+    nextTargets: ['a4_photos', 'a4_jules']
+  },
+
+  a4_bruno_silent: {
+    text: `You don\'t say anything.
+
+You look at him, and he looks at you, and the wind comes down Allegheny Avenue off the river and blows his white scarf.
+
+After a while he smiles. A small one. A real one.
+
+BRUNO: That\'s your great-grandmother\'s face. Assunta\'s. You know that? That exact face. She looked at me just like that in 1964, on the bank of the Schuylkill, when I asked her how she did it.
+
+He puts on his gloves, one finger at a time.
+
+BRUNO: She didn\'t tell me either.
+
+He pats your cheek.
+
+BRUNO: All right. A DiNardo keeps his own counsel. I respect that. But a man who keeps quiet at a funeral is a man who knows something. And I don\'t like it when people know things I don\'t, Sam. Not in my city.
+
+He goes back up the steps.`,
+    next: g => g.f('photos5') ? 'a4_photos' : 'a4_jules',
+    nextTargets: ['a4_photos', 'a4_jules']
+  },
+
+  a4_photos: {
+    loc: 'CARDONE HALL · 9-14',
+    clock: { time: '6:15 PM' },
+    text: `That night, you sit on your bed with your phone and scroll.
+
+Two hundred and six photos. Twenty-two beds. *ES-03. ES-14. ES-38.* The man with the beard. The woman in the hijab. The girl with the rabbit. Half of them are blurry. Half of them aren\'t.
+
+The empty bed. *ES-44.* The blanket turned down.
+
+Dana Fiorillo\'s card is in your wallet. *I\'ll find something I can print.*
+
+If you send these, she prints them. And the Inquirer has a lawyer, and Halcyon has more lawyers, and somewhere in the building at 100 Independence Mall West, somebody asks *where did you get these*. And the answer is a kid in a hoodie. And the twenty-one people in those beds are either on the front page or in a different building by Monday.
+
+If you don\'t send them, they\'re in the beds.`,
+    choices: [
+      { text: 'Send them. All of them. Let the city see the beds.', tag: 'Send',
+        fx: g => { g.flag('dana5', 'sent'); g.know('dana_photos', ['sam', 'dana'], 'You sent Dana Fiorillo 206 photos of the eighth floor of Building 7.'); g.heat('press', 1); g.hidden('halcyon_heat', 1); }, go: 'a4_jules' },
+      { text: 'Not yet. Not all of them. Send her one: the empty bed, the number, and nothing else.', tag: 'One photo',
+        fx: g => { g.flag('dana5', 'one'); g.know('dana_photos', ['sam', 'dana'], 'You sent Dana Fiorillo one photo from the eighth floor of Building 7: an empty bed with ES-44 on the whiteboard.'); }, go: 'a4_jules' },
+      { text: 'Keep them. Not until you know what happens to the people in the beds.', tag: 'Keep them',
+        fx: g => { g.flag('dana5', 'held'); }, go: 'a4_jules' }
+    ]
+  },
+
+  a4_jules: {
+    night: true,
+    loc: 'CARDONE HALL · 9-14',
+    clock: { time: '11:20 PM' },
+    text: g => `${g.f('jules_blames5') ? 'At eleven, after a whole day of nothing, there\'s a knock on your door.\n\nIt\'s Jules. Still in the black dress from a funeral she didn\'t go to. She went somewhere else instead, it turns out. She stood across Allegheny Avenue from St. Adalbert, in the cold, for the whole mass, by herself. Near enough to see. Not near enough to *collect*.' : 'At eleven, there\'s a knock on your door. Jules. Still in black from the funeral, with her coat over her arm.'}
+
+${g.f('call5') === 'nik' ? 'Nik went home to Edison after the funeral. His mother came and got him in the Camry, and held his face in the parking lot of the Polish club, and he let her. Before he left he said, *Take the room, bro. Take the whole room. I\'ll be back Sunday.*' : 'Nik is at the library. He texted: *taking the long way home. like, sunday long.* Nik has never in his life taken the long way anywhere.'}
+
+She sits on the end of your bed. She doesn\'t take her shoes off.
+
+jules: I counted.
+
+sam: Counted what?
+
+jules: The lights on Broad. Twenty-two of them. ${g.f('door5') === 'luck' ? 'The door on the eighth floor. ' : ''}${g.f('yard5') === 'luck' ? 'The yard, every dart going wide. ' : ''}${g.f('dock5') === 'luck' ? 'And the last one. The big one. Your hand in mine and the whole Navy Yard going my way at once.' : 'Everything I let go my way in one night, after eighteen years of trying not to.'}
+
+She looks at her hands.
+
+jules: My grandmother said the house always collects. Not from us. Near us. Mercutio broke his leg because I let go of the reins. And on Friday night I let go of *everything*, as hard as I could, for as long as I could, and a boy who was standing ten feet from me fell forty feet onto stone.
+
+jules: Tell me that\'s not arithmetic, Sam. You\'re good at math now. Tell me.
+
+${g.f('dock5') !== 'luck' ? 'You saw what happened at the dry dock. You were *there*, in the second, while she was frozen with her hand out. You saw two fingers on Teddy\'s chest. You heard why.' : 'You saw a man across the dry dock, for one frame, with one hand raised. You don\'t know what you saw. You know what it looked like.'}`,
+    choices: [
+      { text: 'Tell her what you saw. All of it. Whatever it costs.', tag: 'All of it',
+        fx: g => { g.flag('tell5', 'all'); g.hidden('jules_debt', -2); g.bond('jules', { trust: 1 }); g.hidden('revenant_drift', -1); if (g.f('dock5') === 'luck') g.know('revenant_glimpse5', ['jules']); else g.know('revenant_push', ['jules']); }, go: 'a4_tell_all' },
+      { text: 'Tell her it wasn\'t her. Don\'t tell her how you know.', tag: 'Not you',
+        fx: g => { g.flag('tell5', 'part'); g.hidden('jules_debt', -1); }, go: 'a4_tell_part' },
+      { text: 'Don\'t argue with her. She doesn\'t need an answer tonight. She needs you. Hold her.', tag: 'Hold her',
+        fx: g => { g.flag('tell5', 'none'); g.bond('jules', { affection: 1 }); }, go: 'a4_tell_none' }
+    ]
+  },
+
+  a4_tell_all: {
+    night: true,
+    text: g => `${g.f('dock5') !== 'luck' ? `sam: It wasn\'t your luck.
+
+She starts to say something. You keep going.
+
+sam: I was in the Slip. When the lights went white. Everything stopped, you, the darts, Teddy. And *he* was there. The man with my face. Standing next to Teddy on the edge. Not frozen. He was waiting for me.
+
+She\'s very still.
+
+sam: He put two fingers on Teddy\'s chest and pushed him. And then he closed the second on me so I couldn\'t catch him.
+
+jules: Why?
+
+You could stop. You don\'t.
+
+sam: He said Teddy\'s the one who takes you to Bruno. In March. On a Tuesday. He said he\'s watched it four hundred times, and every way he stops it ends in the same place.
+
+sam: He looked at you when he said it, Jules. Like he was looking at somebody he\'d lost.
+
+For a long time she doesn\'t say anything at all.
+
+jules: So he killed Teddy for me.
+
+sam: He killed Teddy for *him*. For whatever he thinks he\'s fixing.
+
+jules: He\'s you.
+
+sam: He\'s not me.
+
+jules: Sam. He has your face, and he went back four hundred times for somebody, and he\'d push a boy off a ledge for her.
+
+She takes your cold hand in both of hers.
+
+jules: That\'s not a stranger. That\'s *you* with nobody left to stop you.` : `sam: I don\'t know if it was your luck.
+
+She looks up.
+
+sam: At the dock. When Teddy went over. For one frame, across the water, under the dead spotlight, there was a man standing there. Long coat. One hand up, like this. Like a man at a window.
+
+jules: The man with your face.
+
+sam: I don\'t know. I think so. He was there and then he wasn\'t.
+
+jules: That doesn\'t mean it wasn\'t me.
+
+sam: No. It means it might not have been.
+
+She sits with that.
+
+jules: That\'s worse. Do you know that\'s worse? Now I don\'t even get to know.
+
+sam: Yeah. Welcome to my whole year.
+
+She laughs. It breaks in the middle. She puts her forehead against your shoulder and leaves it there.`}`,
+    next: 'a4_light'
+  },
+
+  a4_tell_part: {
+    night: true,
+    text: g => `sam: It wasn\'t you.
+
+jules: You don\'t know that.
+
+sam: I do.
+
+jules: How?
+
+${g.f('dock5') !== 'luck' ? 'You think about two fingers on Teddy\'s chest. A gap where a ring finger should be. *He\'s the one who takes her to Bruno.* You think about saying it, and what it would do to her, to know that a man with your face would kill for her.\n\nYou keep it. Like the note. Two things now.' : 'You think about a man across the water with one hand raised. You don\'t know what you saw. You don\'t want to give her a ghost to be afraid of instead of a sum to be sorry for.'}
+
+sam: I just do. Trust me.
+
+She looks at you a long time. She hears the shape of it. She always does.
+
+jules: You touched your ear.
+
+sam: I didn\'t.
+
+jules: You thought about it.
+
+But she lets it go. She lies down on top of the covers in her funeral dress with her shoes still on, and puts her head on your chest, and lets it go.`,
+    next: 'a4_light'
+  },
+
+  a4_tell_none: {
+    night: true,
+    text: `You don\'t argue.
+
+You sit down next to her on the end of the bed and put your arm around her, and she turns into you like a door closing, and stays there.
+
+She doesn\'t cry. She shakes. Like the cold is coming out of her, the way it comes out of you after a Slip.
+
+You hold her until it stops.
+
+jules: You\'re not going to tell me it wasn\'t me.
+
+sam: No.
+
+jules: Good. I\'d know you were lying. You touch your ear.
+
+Her voice is muffled in your shirt.
+
+jules: Thank you for not lying.
+
+You didn\'t tell her the truth either. You don\'t say that. You hold her.`,
+    next: 'a4_light'
+  },
+
+  a4_light: {
+    night: true,
+    clock: { time: '1:10 AM' },
+    enter: g => { g.flag('light_off5'); g.bond('jules', { affection: 1, tension: -2 }); g.hidden('revenant_drift', -0.5); g.know('jules_light_off', ['sam', 'jules'], 'On the night of Teddy\'s funeral, in 9-14, Jules asked you to turn off the desk lamp. She sleeps with a light on. She didn\'t, that night.'); },
+    text: g => `Later. After one.
+
+You\'re lying on your narrow dorm bed, both of you, on top of the covers, in your clothes. She took her shoes off at some point. Her feet are cold. Your everything is cold. She doesn\'t seem to mind.
+
+The desk lamp is on. It\'s always on when she\'s here. She asked you to leave it on in October and you never asked why. You didn\'t have to. Seven years old, locked in the chapel at Ravenscourt by her brother, all night, in the dark, listening to the house breathe.
+
+jules: Sam.
+
+sam: Yeah.
+
+jules: Turn off the light.
+
+You look at her.
+
+jules: I want to try. With you here. I want to see if the dark is different with somebody in it.
+
+You reach over and turn off the lamp.
+
+The dark comes down. Gray light from the window. The radiator ticking. Somebody\'s music, faint, through the wall, three doors down. Broad Street, out there, a bus, a siren very far off.
+
+Her breathing is fast. Then slower. Her hand finds your shirt and holds a fistful of it.
+
+jules: It\'s different.
+
+sam: Good different?
+
+jules: I don\'t know yet.
+
+She doesn\'t ask you to turn it back on.
+
+You lie in the dark with her and think about a boy on the bottom step with his arm in the water, and a circle of river that stopped for ninety seconds after he was gone, and a man in a long coat who sat beside a girl\'s bed every night and cried, and then went down to the dry dock and picked.
+
+*Four hundred times.*
+
+${g.f('assunta_watch') ? 'On the desk, in the dark, Salvatore\'s watch, stopped at 11:51. You can\'t hear it tick. It only ticks in the cold.' : ''}
+
+You don\'t sleep. She does. Eventually. For the first time in her life, in the dark.`,
+    next: 'tag_frame'
+  },
+
+  /* ================= TAG ================= */
+  tag_frame: {
+    card: { kind: 'tag' },
+    night: true,
+    loc: 'NAVY YARD · BUILDING 7 · THE GLASS ROOM',
+    clock: { time: '3:00 AM' },
+    text: g => `> THE CAMERA.
+
+The glass room. The monitors. A fresh mug of Earl Grey, the tea bag folded on its napkin.
+
+Dr. Achterberg is sitting very close to one screen with her glasses pushed up on her head. Brannigan is standing behind her.
+
+On the screen: a grainy black-and-white feed from a camera on a light pole at the edge of the dry dock. The timestamp in the corner reads *00:51:03*.
+
+She advances it one frame.
+
+*00:51:03.*
+
+Teddy Kowal on the lip of the dock, gray to the jaw, facing the truck. ${g.f('dock5') === 'luck' ? 'The girl holding the boy\'s hand. Four darts in the air.' : 'A blur beside him that the camera can only render as a smear of white. Seventeen.'}
+
+She advances it one frame.
+
+*00:51:04.*
+
+Teddy Kowal, tipping, past balance, over forty feet of air.
+
+And standing beside him, in exactly one frame, a man.
+
+Long coat. Gray at the temples. His left hand raised, two fingers extended. On the left hand, a gap.
+
+She advances one frame. *00:51:04.* He\'s gone. Teddy is falling.
+
+She goes back one frame. He\'s there.
+
+Forward. Gone.
+
+Back. There.
+
+BRANNIGAN: Enhance it.
+
+ACHTERBERG: It\'s a forty-dollar camera on a light pole, Cole. There\'s nothing to enhance.
+
+She takes her glasses off and cleans them on her cardigan. Her hands aren\'t quite steady. It\'s the first time you\'ve ever seen them not quite steady.
+
+ACHTERBERG: Pull everything. The Parkway. Broad and Spring Garden in August. Every camera that ever had seventeen in it. Every frame, one at a time.
+
+BRANNIGAN: Looking for what?
+
+She puts her glasses back on and looks at the man in the single frame, with his two fingers out and the gap where his ring finger should be.
+
+ACHTERBERG: Him.
+
+> ELSEWHERE.
+
+The Melrose Diner, Snyder and Passyunk, 4:10 a.m. The counter. The rotating pie case. A waitress in her sixties doing the crossword.
+
+In the last booth, a man sits with his back to the room, in a long coat, with a cup of coffee he hasn\'t touched.
+
+On the paper placemat in front of him, in small careful handwriting, a column of names. Most of them crossed out.
+
+We don\'t see the names.
+
+He takes a pen and draws a line through one more. Neatly. With his left hand.
+
+WAITRESS: Hon? You want a warm-up?
+
+He doesn\'t answer. He\'s looking at the placemat.
+
+When she comes back with the pot, the booth is empty, and the coffee is cold, and there\'s frost on the inside of the window where he was sitting, in the shape of a hand.`,
+    end: true
+  }
+});
+
+Object.assign(EH.episodes.s02e05, {
+  polls: [
+    { q: 'One call', opts: [
+      { label: 'Nik', pct: 46, if: g => g.f('call5') === 'nik' },
+      { label: 'Vinnie', pct: 29, if: g => g.f('call5') === 'vinnie' },
+      { label: 'Mikey', pct: 25, if: g => g.f('call5') === 'mikey' }
+    ] },
+    { q: 'The dry dock, 00:51:04', opts: [
+      { label: 'Slipped', pct: 64, if: g => g.f('dock5') && g.f('dock5') !== 'luck' },
+      { label: 'Took her hand', pct: 36, if: g => g.f('dock5') === 'luck' }
+    ] },
+    { q: 'Teddy', opts: [
+      { label: 'Carried him home', pct: 58, if: g => g.f('body5') === 'carried' },
+      { label: 'Left him for the police', pct: 42, if: g => g.f('body5') === 'left' }
+    ] },
+    { q: 'Bruno asked who', opts: [
+      { label: 'Halcyon', pct: 51, if: g => g.f('bruno5') === 'halcyon' },
+      { label: '"He fell."', pct: 22, if: g => g.f('bruno5') === 'fell' },
+      { label: 'Said nothing', pct: 27, if: g => g.f('bruno5') === 'silent' }
+    ] }
+  ],
+  onEnd: g => {
+    g.recap('Teddy Kowal died at the bottom of the dry dock at the Navy Yard. He was twenty.');
+    g.recap(g.f('dock5') === 'luck' ? 'Jules let it all go her way at the dry dock. Teddy slipped on ice nobody saw. She thinks her luck killed him.' : 'In the Slip, the man with your face pushed Teddy off the edge. "He\'s the one who takes her to Bruno."');
+    g.recap('Marisol Reyes is out. The man with your face sat by her bed every night. "Not you. You get to go home."');
+    g.recap('Jules saw a bed on the eighth floor made up for ES-44.');
+    if (g.f('bruno5') === 'halcyon') g.recap('You told Bruno it was Halcyon. "Then they owe me a boy."');
+    else g.recap('Bruno Iannucci asked you who killed Teddy. You didn\'t tell him.');
+    g.recap('Halcyon has one frame of a man with a missing finger.');
   }
 });
 

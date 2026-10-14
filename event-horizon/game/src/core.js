@@ -308,10 +308,11 @@
   // every unclean pool or move is nudged until it's clean, and each save adds to her hidden Debt.
   EH.tryNudge = function (S, c, res) {
     const pov = S.pov === 'jules';
+    const open = c.luck === 'jules'; // Season 2+: Jules nudges for Sam on purpose. Always lands; she pays the Debt.
     if (c.noLuck) return false;
-    if (!pov && (!c.near || !c.near.includes('jules'))) return false;
+    if (!pov && !open && (!c.near || !c.near.includes('jules'))) return false;
     if (EH.isClean(res.tier)) return false;
-    if (!pov) {
+    if (!pov && !open) {
       const jb = S.bonds.jules || { affection: 0, trust: 0 };
       const luck = S.hidden.jules_luck + Math.max(0, jb.affection + jb.trust) * 0.01;
       if (Math.random() >= luck) return false;
@@ -325,16 +326,17 @@
       } else if (res.kind === 'move') {
         const idx = res.dice[0] <= res.dice[1] ? 0 : 1; if (res.dice[idx] === 6) return false;
         res.dice[idx] = 6; Object.assign(res, EH.scoreMove(res.dice, res.mod)); gold.push(idx); return true;
-      } else if (res.kind === 'd20' && pov) {
+      } else if (res.kind === 'd20' && (pov || open)) {
         if (res.dice[0] === 20) return false;
         res.dice[0] = 20; Object.assign(res, EH.scoreD20 ? EH.scoreD20(res.dice, res.mod, res.dc) : {}); gold.push(0); return true;
       }
       return false;
     };
-    if (!step() && !pov) return false;
-    if (pov) { while (!EH.isClean(res.tier) && step()); if (!EH.isClean(res.tier)) res.tier = res.kind === 'move' ? 'strong' : 'success'; S.hidden.jules_debt = Math.min(10, (S.hidden.jules_debt || 0) + 1); }
+    if (!step() && !pov && !open) return false;
+    if (pov || open) { while (!EH.isClean(res.tier) && step()); if (!EH.isClean(res.tier)) res.tier = res.kind === 'move' ? 'strong' : 'success'; S.hidden.jules_debt = Math.min(10, (S.hidden.jules_debt || 0) + 1); }
     res.gold = gold;
-    if (!pov) S.hidden.nudges = (S.hidden.nudges || 0) + 1;
+    if (!pov && !open) S.hidden.nudges = (S.hidden.nudges || 0) + 1;
+    if (open) S.hidden.jules_open = (S.hidden.jules_open || 0) + 1;
     res.nudged = true;
     return true;
   };
