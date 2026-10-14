@@ -112,7 +112,7 @@ You call Heck. Heck doesn\'t have a phone. Heck has never had a phone. You knew 
 
 Jules is watching you. She hasn\'t let go of your arm.
 
-jules: The girl. Marisol. The one in the room.
+jules: The room. Seven-fourteen. The one Bree said was empty.
 
 sam: She\'s not in the room. Bree says the room\'s empty. They went *up*.
 
@@ -130,9 +130,9 @@ sam: You\'re not.
 
 She doesn\'t argue. She picks her coffee up off the parapet, looks at it, and pours it out over the edge, very precisely, onto nobody, nine floors down.
 
-jules: ${g.f('roof4') === 'all' ? 'An hour ago you told me a man from Halcyon put a dart in my direction on the Parkway and missed four times. You told me a boy you knew walked six miles to your door to tell you something, and they killed him for it. You told me your great-grandmother\'s brother went into a fire for three children and came back old.' : 'An hour ago you told me the world stops and you don\'t. You told me the true part. I heard what you left out.'}
+jules: ${g.f('roof4') === 'all' ? 'An hour ago I told you about four darts on the Parkway, and you told me who was holding the rifles. You told me a boy you knew walked six miles to your door to tell you something, and they killed him for it. You told me your great-grandmother\'s brother went into a fire for three children and came back old.' : 'An hour ago you told me the world stops and you don\'t. You told me the true part. I heard what you left out.'}
 
-jules: ${g.knows('gran_sam', 'jules') ? 'My grandmother told me on New Year\'s that some families are early, and the early ones always go in for somebody else. She told me to keep you close. I thought she meant it as a warning. ' : ''}You are not going in there alone. Not tonight. Not the night I *found out*.
+jules: You are not going in there alone. Not tonight. Not the night I *found out*.
 
 sam: It\'s a trap.
 
@@ -207,7 +207,7 @@ Broad Street, stopped. A SEPTA bus at Cecil B. Moore with its doors half open an
 
 You run.
 
-Four and a half miles. You\'ve never Slipped this far. Past City Hall, where Billy Penn looks down at you with his hat on, past the Avenue of the Arts, past the stadiums, everything gray and blue and still. Your lungs hurt. Your nose is pouring before Washington Avenue.
+Five and a half miles. You\'ve never Slipped this far. Past City Hall, where Billy Penn looks down at you with his hat on, past the Avenue of the Arts, past the stadiums, everything gray and blue and still. Your lungs hurt. Your nose is pouring before Washington Avenue.
 
 ${g.f('assunta_watch') ? 'In your pocket, the watch is ticking. The only thing in the whole city that moves besides you. *Tick.* You hold it in your fist and run toward the sound of it, and when the cold closes on you at Oregon Avenue, you find the door, right there, by the watch, where Nonna said it would be.' : 'The cold closes on you at Oregon Avenue. You claw your way out.'}
 
@@ -245,7 +245,7 @@ jules: They know you\'re coming.
 
 sam: They know I\'m *here*.
 
-You have your phone in your hand. One call. Maybe two, if you\'re fast. You can feel the minutes going.`,
+You have your phone in your hand. One call. You can feel the minutes going.`,
       hub: {
         slots: 1, label: 'One call',
         blurb: 'Whoever you call is in this now.',
@@ -302,7 +302,7 @@ sam: The building with the beds. Some friends of mine went in. They\'re not comi
 
 More silence. You can hear him walking, the music getting farther away, a door, the street.
 
-vinnie: Yo. Listen to me. You know what you\'re asking. Dante finds out I took his car to the Navy Yard at midnight for *you*, for a Kowal, for the guy who broke Bruno\'s understanding, I\'m done. I\'m in the river.
+vinnie: Yo. Listen to me. You know what you\'re asking. Dante finds out I took his car to the Navy Yard at midnight for *you*, into the one place in this city Bruno told everybody to stay out of, I\'m done. I\'m in the river.
 
 sam: I know.
 

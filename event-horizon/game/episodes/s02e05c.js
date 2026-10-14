@@ -11,7 +11,7 @@ EH.scenes('s02e05', {
 
 Boots. A lot of boots, coming up, from far below. Flashlight beams sweeping the stairwell walls, three floors down, four. Not running. Climbing, steady, like people who climb stairs for a living.
 
-And a voice, floating up the stairwell, calm, pleasant, a little winded. A voice you\'ve heard once before, at McPherson Square, telling you about nosebleeds.
+And a voice, floating up the stairwell, calm, pleasant, a little winded. A voice you\'ve heard before. At McPherson Square, telling you about nosebleeds. At Gate 3 on Christmas Eve, wishing you a Merry Christmas.
 
 BRANNIGAN: Mr. Kearney. Good evening. Please don\'t run. Nobody wants to chase anybody up and down seven flights at this hour. I\'m forty-five. My knees are a matter of record.
 
@@ -52,7 +52,7 @@ teddy: Ninety seconds, cold guy. I counted it on the Parkway. I count it every t
     night: true,
     text: `You go.
 
-Down the white hallway, past the empty rooms, past 714 with its cold turkey under its silver dome, past the glass room and the open elevator, to the sign at the far end: *STAIR A.*
+Down the white hallway, past the empty rooms, past 714 with its cold turkey under its silver dome, past the glass room and the elevator, to the sign at the far end: *STAIR A.*
 
 You look back once.
 
@@ -83,7 +83,7 @@ teddy: Listen. My mother thinks I work nights at a warehouse in Bridesburg. She 
 
 He doesn\'t look at you.
 
-teddy: You were right. On the Parkway. When you said he\'d own me. He doesn\'t even have to ask for anything. He just has to *be there*, every time she goes in to Jefferson.
+teddy: You never said it. You didn\'t have to. He owns me. He doesn\'t even have to ask for anything. He just has to *be there*, every time she goes in to Jefferson.
 
 Then he takes one hand off the door and puts it flat on your chest, gray, and pushes you, gently, back down the hall.
 
@@ -235,7 +235,7 @@ And Teddy, on the lip of the dock, gray, still.
 
 And beside Teddy, a man.
 
-He\'s standing on the granite with his hands in the pockets of a long dark coat. Gray at the temples. Old white scars along his jaw. Your face, the way it will look when it\'s been somewhere for a very long time. His breath doesn\'t smoke. He doesn\'t have anything left to smoke.
+He\'s standing on the granite with his hands in the pockets of a long dark coat. Gray at the temples. A scar from the corner of his left eye down into his jaw. Your face. Older. Worn down to something. His breath doesn\'t smoke. He doesn\'t have anything left to smoke.
 
 He\'s not frozen.
 
@@ -251,7 +251,7 @@ He doesn\'t say who. He doesn\'t have to. He looks past you, at Jules, frozen wi
 
 old_sam: In March. He won\'t want to. He\'ll do it anyway.
 
-old_sam: Four hundred times. I tried the other ways.
+old_sam: I tried the other ways.
 
 sam: And?
 
@@ -270,7 +270,7 @@ You have one move left. Maybe one.`,
       { text: 'Teddy. Grab Teddy.', tag: 'Teddy',
         fx: g => { g.flag('dock5', 'teddy'); g.hidden('revenant_drift', 1); }, go: 'a3_slip_teddy' },
       { text: 'Him. Grab *him*. Make him look at you.', tag: 'The man',
-        fx: g => { g.flag('dock5', 'revenant'); g.know('revenant_hand', ['sam'], 'You grabbed the Revenant\'s left wrist at the dry dock. It wasn\'t cold or warm. Four fingers. He said: "You\'ll do it too. That\'s the part nobody tells you."'); }, go: 'a3_slip_rev' },
+        fx: g => { g.flag('dock5', 'revenant'); g.know('revenant_hand', ['sam'], 'You grabbed the Revenant\'s left wrist at the dry dock. It wasn\'t cold or warm. Four fingers. He said: "You still think you can carry all of them."'); }, go: 'a3_slip_rev' },
       { text: 'The darts. All four. Out of the air. Save the ones you can still save.', tag: 'The darts',
         fx: g => { g.flag('dock5', 'darts'); g.hidden('revenant_drift', -1); }, go: 'a3_slip_darts' }
     ]
@@ -308,11 +308,9 @@ Your hand closes on his left wrist. It isn\'t cold. It isn\'t warm. It isn\'t an
 
 He looks down at your hand on his wrist. Then at you.
 
-old_sam: You\'ll do it too.
+old_sam: You still think you can carry all of them.
 
 His voice is your voice with all the jokes taken out.
-
-old_sam: That\'s the part nobody tells you.
 
 And he\'s gone, and your hand is closed on nothing, and the second closes on your fingers.
 
@@ -483,7 +481,7 @@ Just for that.`,
     clock: { time: '1:04 AM' },
     text: g => `When you climb back up, the truck is pulling away.
 
-No hurry. No lights. It backs up, turns around in the road, and drives off between the buildings toward Broad Street, slowly. It signals at the corner. There\'s nobody there to signal to. The gray figures are gone. The darts are gone. Even the one in the grass by Heck\'s boot is gone.
+No hurry. No lights. It backs up, turns around in the road, and drives off between the buildings toward Broad Street, slowly. It signals at the corner. There\'s nobody there to signal to. The gray figures are gone. The darts are gone. Even the ones that ended up in the grass are gone.
 
 Somebody came and picked it up while you were down there. While you were counting.
 

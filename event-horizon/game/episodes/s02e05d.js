@@ -15,7 +15,7 @@ At 2:40 a.m., on Edgemont Street, Halina Kowal opened her door in her bathrobe w
 
 The police came at four, and asked questions for two hours. Bree told them the truth, mostly. Trespassing. The Navy Yard. A fall. Kids being stupid. A detective with a mustache wrote it all down and looked at you for a long time, and then at Heck, and then wrote some more.` : `The Navy Yard police found him at 1:12 a.m. ${g.f('call5') === 'mikey' ? 'A Philadelphia police officer, off duty, who said he\'d heard a noise, was standing at the top of the steps when they got there.' : g.f('call5') === 'nik' ? 'A 911 call from the Navy Yard\'s own front desk, which was empty, had told them where to look.' : 'An anonymous call from a pay phone on Oregon Avenue had told them where to look. There aren\'t any pay phones on Oregon Avenue. Nobody followed up.'}
 
-At 5:30 a.m., two officers knocked on a door on Edgemont Street, and Halina Kowal opened it in her bathrobe with the dialysis line taped to her arm, and looked at their faces, and knew.`}
+At 5:30 a.m., two officers knocked on a door on Edgemont Street, and Halina Kowal opened it in her bathrobe with the dialysis line taped to her arm, and looked at their faces, and didn\'t need them to say it. Bree had been sitting on the stairs behind her since four.`}
 
 Now it\'s morning.
 
@@ -44,7 +44,7 @@ ${g.f('promise_halina') ? 'You swore. Not to God. To her.' : ''}`,
       { text: '"He said to tell you he saved it. The deposit at Jefferson. Every dollar. From the warehouse. He was proud of it."', tag: 'His version',
         fx: g => { g.flag('halina5', 'his'); g.hidden('revenant_drift', -0.5); g.bond('bree', { trust: 1 }); }, go: 'a4_halina' },
       { text: 'Tell her the truth. Bruno paid. She should know who she owes, before Bruno tells her himself.', tag: 'The truth',
-        fx: g => { g.flag('halina5', 'truth'); if (g.f('promise_halina')) { g.flag('broke_promise5'); g.hidden('revenant_drift', 1); } g.know('halina_bruno', ['sam', 'bree']); }, go: 'a4_halina' }
+        fx: g => { g.flag('halina5', 'truth'); if (g.f('promise_halina')) { g.flag('broke_promise5'); g.hidden('revenant_drift', 1); } g.know('halina_bruno', ['sam'], 'Halina Kowal already knew Bruno paid the Jefferson deposit. He came to see her at Christmas and brought a ham.'); }, go: 'a4_halina' }
     ]
   },
 
@@ -143,9 +143,9 @@ BRUNO: The police say he fell. Teodoro never fell in his life. Who?`,
       { text: '"Halcyon. The building is theirs. The truck was theirs. They left the door open, and they waited."', tag: 'Halcyon',
         fx: g => { g.flag('bruno5', 'halcyon'); g.know('bruno_halcyon5', ['sam', 'bruno'], 'At Teddy\'s funeral, you told Bruno Iannucci that Halcyon left the door open at the Navy Yard and waited. He said: "Then they owe me a boy."'); g.hidden('halcyon_heat', 1); }, go: 'a4_bruno_halcyon' },
       { text: '"He fell." Say it like the police say it. Give Bruno nothing.', tag: 'He fell',
-        fx: g => { g.flag('bruno5', 'fell'); }, go: 'a4_bruno_fell' },
+        fx: g => { g.flag('bruno5', 'fell'); g.know('assunta_bruno', ['sam'], 'In January 1964, Assunta DiNardo pulled six-year-old Bruno Iannucci out of the Schuylkill ice. He told you at Teddy\'s funeral.'); }, go: 'a4_bruno_fell' },
       { text: 'Don\'t answer. Look at him, and don\'t say anything at all.', tag: 'Silence',
-        fx: g => { g.flag('bruno5', 'silent'); g.hidden('revenant_drift', -0.5); }, go: 'a4_bruno_silent' }
+        fx: g => { g.flag('bruno5', 'silent'); g.hidden('revenant_drift', -0.5); g.know('assunta_bruno', ['sam'], 'In January 1964, Assunta DiNardo pulled six-year-old Bruno Iannucci out of the Schuylkill ice. He told you at Teddy\'s funeral.'); }, go: 'a4_bruno_silent' }
     ]
   },
 
@@ -259,7 +259,7 @@ jules: I counted.
 
 sam: Counted what?
 
-jules: The lights on Broad. Twenty-two of them. ${g.f('door5') === 'luck' ? 'The door on the eighth floor. ' : ''}${g.f('yard5') === 'luck' ? 'The yard, every dart going wide. ' : ''}${g.f('dock5') === 'luck' ? 'And the last one. The big one. Your hand in mine and the whole Navy Yard going my way at once.' : 'Everything I let go my way in one night, after eighteen years of trying not to.'}
+jules: The lights on Broad. Twenty-two of them. ${g.f('door5') === 'luck' ? 'The door on the eighth floor. ' : ''}${g.f('yard5') === 'luck' ? 'The run along the dock, every step going our way. ' : ''}${g.f('dock5') === 'luck' ? 'And the last one. The big one. Your hand in mine and the whole Navy Yard going my way at once.' : 'Everything I let go my way in one night, after eighteen years of trying not to.'}
 
 She looks at her hands.
 
@@ -294,7 +294,7 @@ jules: Why?
 
 You could stop. You don\'t.
 
-sam: He said Teddy\'s the one who takes you to Bruno. In March. He said he\'s done this four hundred times. He said he tried the other ways.
+sam: He said Teddy\'s the one who takes you to Bruno. In March. He said he tried the other ways.
 
 sam: He looked at you when he said it, Jules. Like he was looking at somebody he\'d lost.
 
@@ -304,15 +304,15 @@ jules: So he killed Teddy for me.
 
 sam: He killed Teddy for *him*. For whatever he thinks he\'s fixing.
 
-jules: He\'s you.
+jules: Who is he, Sam?
 
-sam: He\'s not me.
+sam: I don\'t know.
 
-jules: Sam. He has your face, and he went back four hundred times for somebody, and he\'d push a boy off a ledge for her.
+jules: He has your face. And he\'d push a boy off a ledge for me.
 
 She takes your cold hand in both of hers.
 
-jules: That\'s not a stranger. That\'s *you* with nobody left to stop you.` : `sam: I don\'t know if it was your luck.
+jules: Whoever he is, Sam, he isn\'t a stranger.` : `sam: I don\'t know if it was your luck.
 
 She looks up.
 
@@ -388,7 +388,7 @@ You didn\'t tell her the truth either. You don\'t say that. You hold her.`,
 
   a4_light: {
     night: true,
-    clock: { time: '1:10 AM' },
+    clock: { day: 'Fri', date: 'Jan 29', time: '1:10 AM' },
     enter: g => { g.flag('light_off5'); g.bond('jules', { affection: 1, tension: -2 }); g.hidden('revenant_drift', -0.5); g.know('jules_light_off', ['sam', 'jules'], 'On the night of Teddy\'s funeral, in 9-14, Jules asked you to turn off the desk lamp. She sleeps with a light on. She didn\'t, that night.'); },
     text: g => `Later. After one.
 
@@ -422,7 +422,7 @@ She doesn\'t ask you to turn it back on.
 
 You lie in the dark with her and think about a boy on the bottom step with his arm in the water, and a circle of river that stopped for ninety seconds after he was gone, and a man in a long coat who sat beside a girl\'s bed every night and cried, and then went down to the dry dock and picked.
 
-${g.f('dock5') !== 'luck' ? '*Four hundred times.*' : '*Not you.*'}
+${g.f('dock5') !== 'luck' ? '*I tried the other ways.*' : '*Not you.*'}
 
 ${g.f('assunta_watch') ? 'On the desk, in the dark, Salvatore\'s watch, stopped at 11:51. You can\'t hear it tick. It only ticks in the cold.' : ''}
 
@@ -435,7 +435,7 @@ You don\'t sleep. She does. Eventually. For the first time in her life, in the d
     card: { kind: 'tag' },
     night: true,
     loc: 'NAVY YARD · BUILDING 7 · THE GLASS ROOM',
-    clock: { time: '3:00 AM' },
+    clock: { day: 'Sat', date: 'Jan 23', time: '3:00 AM' },
     text: g => `> THE CAMERA.
 
 The glass room. The monitors. A fresh mug of Earl Grey, the tea bag folded on its napkin.

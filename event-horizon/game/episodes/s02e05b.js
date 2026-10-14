@@ -162,7 +162,7 @@ You take it.
 
 Then you look at the monitors.
 
-One of them is thermal: the seventh floor, gray and black, and five shapes in the hallway, three of them blue. Another shows the eighth floor, rows of beds, people in them, still. Another is a list.
+One of them is thermal: the seventh floor, gray and black. Three blue shapes in the hallway by 714. One more in this room, very blue. Where Jules is standing, nothing at all. Another shows the eighth floor, rows of beds, people in them, still. Another is a list.
 
 A long list, in a small clean font, of numbers and names.
 
@@ -247,7 +247,7 @@ teddy: It\'s going to get somebody.`,
 
 Not your cold. Air-conditioning cold, hospital cold, the cold of a place where somebody decided the people in the beds would keep better. The light is dim blue. The machines blink green. Somewhere a pump sighs, every four seconds, like something breathing for somebody.
 
-Twenty-two beds. You count. Twenty-two people, on their backs, with their hands folded on the blankets. Old and young. A man in his seventies with a beard. A girl younger than Gigi. A woman in a hijab with her mouth slightly open. Each one with a whiteboard at the foot of the bed, the kind they have in hospitals, *YOUR NURSE TODAY IS:*, and on each whiteboard, in neat blue marker, a number. *ES-03. ES-14. ES-38.*
+Twenty-three beds. You count. Twenty-two people, on their backs, with their hands folded on the blankets. Old and young. A man in his seventies with a beard. A girl younger than Gigi. A woman in a hijab with her mouth slightly open. Each one with a whiteboard at the foot of the bed, the kind they have in hospitals, *YOUR NURSE TODAY IS:*, and on each whiteboard, in neat blue marker, a number. *ES-03. ES-14. ES-38.*
 
 Heck is already at the third bed on the left.
 
