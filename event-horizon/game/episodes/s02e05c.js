@@ -162,7 +162,7 @@ Then the world goes soft at the edges.
 
 Not the Slip. The opposite. Everything slow, and warm, and far away. Your legs are somebody else\'s. The granite lip of the dock tilts.
 
-A hand grabs your arm. Jules. Then your other arm. Teddy, gray, with a grip like a vise.
+A hand grabs your arm. Jules. Then your other arm. Teddy, hooking his stiff gray arm under yours like a crowbar.
 
 teddy: Up. Up, cold guy. Your cold\'s eating it. I can feel it. Your whole arm\'s like ice. *Walk.*
 
@@ -178,7 +178,7 @@ sam: I\'m here. I\'m here.`,
     night: true,
     loc: 'NAVY YARD · THE DRY DOCK',
     clock: { time: '12:50 AM' },
-    text: g => `Halfway along the dry dock, the truck stops.
+    text: g => `${g.f('yard5') === 'luck' ? 'You say her name. She breathes out. *Pfft. Pfft.* Two darts go wide in the dark, one into the dry dock, one into the side of the truck. Nobody so much as stumbles on the granite.\n\n' : ''}Halfway along the dry dock, the truck stops.
 
 It stops across the path ahead of you, broadside, high beams in your eyes, and the two gray figures on foot come around its back end and kneel, rifles up. Behind you, the door of Stair A bangs open again. More of them.
 

@@ -346,7 +346,7 @@
       out.push('<span class="tag d20">d20 · ' + esc(EH.ATTR_NAMES[c.attr] + (c.skill ? ' + ' + EH.SKILLS[c.skill] : '')) + '</span>');
       out.push('<span class="tag cost">' + (calc.base >= 0 ? '+' : '') + calc.base + ' vs DC ' + c.dc + '</span>');
     }
-    const p = EH.successChance(c, c.kind === 'pool' ? Math.max(1, calc.base) : calc.base);
+    const p = (c.luck === 'jules' && !c.noLuck) ? 1 : EH.successChance(c, c.kind === 'pool' ? Math.max(1, calc.base) : calc.base);
     out.push('<span class="tag odds">≈' + Math.round(p * 100) + '%</span>');
     return out.join('');
   }
@@ -429,7 +429,7 @@
       } catch (e) { busy = false; console.error(e); toast('Something broke: ' + e.message); }
     };
     if (ch.check) {
-      if (preset) { if (S.pov && !preset.nudged) EH.tryNudge(S, ch.check, preset); resolve(preset); return; }
+      if (preset) { if ((S.pov || ch.check.luck === 'jules') && !preset.nudged) EH.tryNudge(S, ch.check, preset); resolve(preset); return; }
       const idx = (sc.choices || []).indexOf(ch);
       save();
       openTray(ch.check, resolve, res => { S.pending = { scene: id, idx, res: EH.clone(res) }; save(); });
@@ -542,6 +542,7 @@
     if (c.kind === 'pool' && c.power && !S.pov && g.has('burst')) mkPush('burst', 'Burst', 'Spend 1 Stamina · +2 dice');
     if (c.kind === 'pool' && (c.attr === 'body' || c.attr === 'reflex')) mkPush('grit', 'Dig Deep', 'Spend 1 Stamina · reroll every 1');
     if (c.kind === 'd20') mkPush('focus', 'Concentrate', 'Spend 1 Focus · +2');
+    if (c.luck === 'jules' && !c.noLuck) { pushes.innerHTML = ''; Object.keys(btns).forEach(k => delete btns[k]); }
     refresh(); drawCalc();
     const ft = $('#tft', wrap);
     const rollBtn = el('button', 'btn primary', 'Roll'); ft.appendChild(rollBtn);

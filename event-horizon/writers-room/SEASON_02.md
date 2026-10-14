@@ -162,3 +162,13 @@ Write each episode to the save. The plan bends; the save doesn't.
     - Jules's single "Fuck" is unexplained.
     - Bree does the second reading at the funeral.
   - **Tag:** gated on the luck path, the frame shows him across the dock with his hand raised.
+  - **Mechanics:**
+    - Open luck now charges debt even when the raw roll is already clean.
+    - A reload re-applies the open nudge.
+    - The tray shows 100% and offers no Push for `luck:'jules'`.
+    - Funeral week is slept off (`sleep 8/7/7`), so S2E6 starts at sleep debt 3 and Drift is lowered.
+    - Sending all the photos adds no press heat (it's evidence about Halcyon, not suspicion of Sam).
+  - **Going into S2E6:**
+    - jules_debt is 3–9 and `jules_open` is 1–4.
+    - halcyon_heat is 10–15 (unclamped).
+    - Possible injury: `dart_s2e5` on a yard miss.

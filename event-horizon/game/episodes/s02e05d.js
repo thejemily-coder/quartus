@@ -42,7 +42,7 @@ HALINA: Theodore never says anything. Twenty years, I get maybe a hundred words.
 ${g.f('promise_halina') ? 'You swore. Not to God. To her.' : ''}`,
     choices: [
       { text: '"He said to tell you he saved it. The deposit at Jefferson. Every dollar. From the warehouse. He was proud of it."', tag: 'His version',
-        fx: g => { g.flag('halina5', 'his'); g.hidden('revenant_drift', -0.5); g.bond('bree', { trust: 1 }); }, go: 'a4_halina' },
+        fx: g => { g.flag('halina5', 'his'); g.hidden('revenant_drift', -0.5); }, go: 'a4_halina' },
       { text: 'Tell her the truth. Bruno paid. She should know who she owes, before Bruno tells her himself.', tag: 'The truth',
         fx: g => { g.flag('halina5', 'truth'); if (g.f('promise_halina')) { g.flag('broke_promise5'); g.hidden('revenant_drift', 1); } g.know('halina_bruno', ['sam'], 'Halina Kowal already knew Bruno paid the Jefferson deposit. He came to see her at Christmas and brought a ham.'); }, go: 'a4_halina' }
     ]
@@ -111,7 +111,7 @@ He picked.`,
   a4_funeral: {
     loc: 'ST. ADALBERT · ALLEGHENY AVENUE',
     clock: { day: 'Thu', date: 'Jan 28', time: '11:40 AM' },
-    enter: g => { g.sleep(5); },
+    enter: g => { g.sleep(8); g.sleep(7); g.sleep(7); },
     text: g => `They bury Theodore Kowal on Thursday from St. Adalbert, the big Polish church on Allegheny Avenue with the two green spires you can see from I-95.
 
 The mass is in Polish and English. The choir sings something in Polish that has no English, that nobody needs translated. Halina sits in the front pew in a black coat with her arm in a sling over the fistula, between Bree and an old woman who keeps patting her hand. Heck is a pallbearer. He carries the front left corner and his face is wet the whole way up the aisle and his hands don\'t burn the brass handle, because he doesn\'t let them. Bree does the second reading, in her own voice, and gets through all of it. Nobody in St. Adalbert knows that for an hour on Friday night it was gone.
@@ -237,7 +237,7 @@ If you send these, she prints them. And the Inquirer has a lawyer, and Halcyon h
 If you don\'t send them, they\'re in the beds.`,
     choices: [
       { text: 'Send them. All of them. Let the city see the beds.', tag: 'Send',
-        fx: g => { g.flag('dana5', 'sent'); g.know('dana_photos', ['sam', 'dana'], 'You sent Dana Fiorillo 206 photos of the eighth floor of Building 7.'); g.heat('press', 1); g.hidden('halcyon_heat', 1); }, go: 'a4_jules' },
+        fx: g => { g.flag('dana5', 'sent'); g.know('dana_photos', ['sam', 'dana'], 'You sent Dana Fiorillo 206 photos of the eighth floor of Building 7.'); g.hidden('halcyon_heat', 1); }, go: 'a4_jules' },
       { text: 'Not yet. Not all of them. Send her one: the empty bed, the number, and nothing else.', tag: 'One photo',
         fx: g => { g.flag('dana5', 'one'); g.know('dana_photos', ['sam', 'dana'], 'You sent Dana Fiorillo one photo from the eighth floor of Building 7: an empty bed with ES-44 on the whiteboard.'); }, go: 'a4_jules' },
       { text: 'Keep them. Not until you know what happens to the people in the beds.', tag: 'Keep them',
@@ -259,7 +259,7 @@ jules: I counted.
 
 sam: Counted what?
 
-jules: The lights on Broad. Twenty-two of them. ${g.f('door5') === 'luck' ? 'The door on the eighth floor. ' : ''}${g.f('yard5') === 'luck' ? 'The run along the dock, every step going our way. ' : ''}${g.f('dock5') === 'luck' ? 'And the last one. The big one. Your hand in mine and the whole Navy Yard going my way at once.' : 'Everything I let go my way in one night, after eighteen years of trying not to.'}
+jules: The lights on Broad. Twenty-two of them. ${g.f('door5') === 'luck' ? 'The door on the eighth floor. ' : ''}${g.f('yard5') === 'luck' ? 'The darts in the yard. ' : ''}${g.f('dock5') === 'luck' ? 'And the last one. The big one. Your hand in mine and the whole Navy Yard going my way at once.' : 'Everything I let go my way in one night, after eighteen years of trying not to.'}
 
 She looks at her hands.
 

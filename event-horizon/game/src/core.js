@@ -311,7 +311,7 @@
     const open = c.luck === 'jules'; // Season 2+: Jules nudges for Sam on purpose. Always lands; she pays the Debt.
     if (c.noLuck) return false;
     if (!pov && !open && (!c.near || !c.near.includes('jules'))) return false;
-    if (EH.isClean(res.tier)) return false;
+    if (EH.isClean(res.tier)) { if (open) { S.hidden.jules_debt = Math.min(10, (S.hidden.jules_debt || 0) + 1); S.hidden.jules_open = (S.hidden.jules_open || 0) + 1; } return false; }
     if (!pov && !open) {
       const jb = S.bonds.jules || { affection: 0, trust: 0 };
       const luck = S.hidden.jules_luck + Math.max(0, jb.affection + jb.trust) * 0.01;
@@ -320,7 +320,7 @@
     const gold = [];
     const step = () => {
       if (res.kind === 'pool') {
-        let idx = -1, lo = 99; res.dice.forEach((v, i) => { if (v < (pov ? 10 : 7) && v < lo) { lo = v; idx = i; } });
+        let idx = -1, lo = 99; res.dice.forEach((v, i) => { if (v < ((pov || open) ? 10 : 7) && v < lo) { lo = v; idx = i; } });
         if (idx < 0) return false;
         res.dice[idx] = 10; Object.assign(res, EH.scorePool(res.dice, res.diff)); gold.push(idx); return true;
       } else if (res.kind === 'move') {

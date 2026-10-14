@@ -198,6 +198,7 @@ Eleven minutes, City Hall to the Navy Yard, at midnight on a Friday. Nobody has 
     a1_slip: {
       night: true,
       loc: 'BROAD STREET · SOUTHBOUND',
+      clock: { day: 'Sat', date: 'Jan 23', time: '12:04 AM' },
       enter: g => { g.unstick('unstick_s2e5a', 'Time debt (Broad Street, southbound)'); g.hidden('jules_debt', 1); g.hidden('jules_open', 1); },
       text: g => `You step through.
 
