@@ -132,7 +132,7 @@ hugh: You know what\'s funny, Jubilee? I\'m good at this. I\'m really good. I wo
 
 He hangs his cue on the rack, very carefully.
 
-hugh: Twenty years. I\'ve never once seen you miss a shot that mattered. Do you know what that\'s like? To be the brother of that?
+hugh: I\'ve never seen you miss a shot that mattered. Not once. Not since we were six.
 
 He doesn\'t wait for an answer. He takes his glass and goes.`,
       next: '@hub'
@@ -141,7 +141,7 @@ He doesn\'t wait for an answer. He takes his glass and goes.`,
       enter: g => { g.flag('hugh3', 'straight_won'); g.hidden('jules_debt', -1); g.bond('hugh', { respect: 1 }); },
       text: `You don\'t let it happen.
 
-You feel the click getting ready behind your breastbone, and you don\'t let it. You don\'t know how you know how to do that. It\'s like holding your breath underwater: you just don\'t, and it doesn\'t.
+You feel the click getting ready behind your breastbone, and you don\'t let it. It\'s like holding your breath underwater: you just don\'t, and it doesn\'t.
 
 And you shoot. Like a person. You line up the three ball and you think about the angle and the spin and the felt, the way Gran\'s old instructor taught you when you were nine, before you learned you didn\'t need to think.
 
@@ -178,7 +178,7 @@ You missed.
 
 You *missed*.
 
-You stand there with the cue in your hands, looking at the seven ball sitting on the lip of the corner pocket, and you feel something you have never once felt at a table in your entire life. It\'s hot, and it\'s in your face, and your stomach drops, and it\'s *wonderful*.
+You stand there with the cue in your hands, looking at the seven ball sitting on the lip of the corner pocket, and you feel something you have never felt at a table. It\'s hot, and it\'s in your face, and your stomach drops, and it\'s *wonderful*.
 
 Hugh takes the table. He clears it. He sinks the eight. He stands there with his cue, looking at the empty table, and then at you, with his mouth open.
 
@@ -186,7 +186,7 @@ hugh: I won.
 
 jules: You won.
 
-hugh: Jubilee. I *won*. Twenty years—
+hugh: Jubilee. I *won*. Eighteen years—
 
 And he laughs, really laughs, delighted, like he did when you were small, before he started keeping score, and he comes around the table and picks you up off your feet and swings you around in the billiard room under the painted clouds.
 
@@ -194,7 +194,7 @@ hugh: I won! I beat Juliet Pemberton! Somebody *write it down*!
 
 You\'re laughing. You can\'t stop. You owe Father a hundred dollars.
 
-You lost. It\'s the best thing that\'s happened to you all year.`,
+You lost. You would like, very much, to do it again.`,
       next: '@hub'
     },
 
@@ -236,7 +236,7 @@ She picks up her bag.
 
 catherine: Come. I\'ll show you the new cardiac wing.
 
-You follow her out. You don\'t look back at the badge. You don\'t have to. You\'ll be seeing it for a long time.`,
+You follow her out. You don\'t look back at the badge.`,
       next: '@hub'
     },
 
@@ -261,7 +261,7 @@ simone: I gave him one chance to tell me himself. He blew it. And then he got a 
 
 simone: You get one. That\'s the rule. That\'s my only rule in this life. This is yours.
 
-The horses shift in their stalls. Mercutio\'s stall at the end, empty since September, with his name still on the brass plate.`,
+The horses shift in their stalls. Mercutio at the end, head over his stall door, watching you with his ears back.`,
       choices: [
         { text: 'Tell her the truth. The part you know. You\'re lucky. Impossibly. It\'s getting worse. You don\'t know what it is.', tag: 'Tell her',
           fx: g => { g.flag('simone_j3', 'told'); g.bond('simone', { trust: 3, affection: 2 }); g.know('jules_changed', ['simone']); }, go: 'a1_simone_told' },
@@ -272,7 +272,7 @@ The horses shift in their stalls. Mercutio\'s stall at the end, empty since Sept
     a1_simone_told: {
       text: `You lean your forehead against the cold brass of Mercutio\'s nameplate, and you tell her.
 
-The window. The glass. The cards, the dice, two hundred and eleven sixes in a pink marble bathroom. Mercutio, in September, the wall you let go of the reins at to see what would happen, and how you landed on your feet and he didn\'t. The Parkway, and the click behind your breastbone with every dart.
+The window. The glass. The cards, the dice, two hundred and eleven sixes in a pink marble bathroom. Mercutio, in October, and the reins you let go of to see what would happen, and how you landed on your feet and he didn\'t. The Parkway, and the click behind your breastbone with every dart.
 
 You\'ve never said any of it out loud. Not to anybody. It comes out in order, precise, like a case history. That\'s the only way you know how to say it.
 
@@ -315,7 +315,7 @@ simone: I\'m not going to say anything to anybody. I want you to know that. I do
 
 She hangs up.
 
-You stand in the stables with your forehead against Mercutio\'s nameplate for a long time. It was a perfect lie. It always is.
+You stand in the stables with your forehead against the cold brass.
 
 You\'ve never hated being good at something before.`,
       next: '@hub'

@@ -8,19 +8,19 @@ EH.scenes('s02e03', {
     clock: { day: 'Fri', date: 'Jan 1', time: '4:00 PM' },
     text: g => `At four o\'clock on New Year\'s Day, Gran doesn\'t go to the terrace.
 
-She\'s waiting at the door to the garden in her fur, with her cigarette unlit between two fingers, and when you come down she doesn\'t say anything. She just takes your arm, the way she took it when you were seven and you walked out of this same door in the morning after a night in the dark that you still don\'t talk about, and you walk together down the snowy path through the boxwoods to the chapel no one enters.
+She\'s waiting at the door to the garden in her fur, with her cigarette unlit between two fingers, and when you come down she doesn\'t say anything. She just takes your arm, the way she took it when you were seven and you walked out of this same door in the morning after a night in the dark that you still don\'t talk about, and you walk together down the snowy path through the boxwoods to the chapel nobody else enters.
 
-It\'s small. Fieldstone, 1891, with a slate roof heavy with snow and a single window over the altar, stained glass: a hand, holding a key, and under it, in Latin, one word.
+It\'s small. Fieldstone, 1891, with a slate roof heavy with snow and a single window over the altar, stained glass: a tall figure in white in a doorway, nothing behind it but blue dark, and on a ribbon underneath, one word.
 
 *TENEO.* I hold.
 
-Inside, it\'s cold. Colder than outside. Colder than it should be, like the inside of a refrigerator, like the inside of a held breath. Six pews. An altar of plain stone with nothing on it. No cross. You noticed that at seven, in the dark: no cross, anywhere.
+Inside, it\'s cold. Colder than outside. Colder than it should be. Six pews. An altar of plain stone with nothing on it. No cross. You noticed that at seven, in the dark: no cross, anywhere.
 
 Gran lights her cigarette in the chapel. At four o\'clock exactly. She smokes it standing in front of the altar.
 
 constance: Your great-great-great-grandfather built this. Josiah. In 1891, when he was an old man and very rich and very frightened. He built a whole house around it. Ravenscourt is the box. This is what\'s in the box.
 
-She takes an ivory die out of her coat. The twin of yours. Older, yellower, worn soft at the corners.
+She takes an ivory die out of her coat. The other half of the pair she gave you at sixteen. The one she kept.
 
 She rolls it on the stone altar without looking.
 
@@ -55,17 +55,17 @@ constance: Choose carefully. Most people waste the first one.`,
 
 She smokes.
 
-constance: In 1876, there was a great exhibition in Fairmount Park. The Centennial. The whole world came. And in the middle of it, in Machinery Hall, the largest steam engine ever built. The Corliss. Forty feet tall. President Grant turned it on himself.
+constance: The Centennial. 1876. Machinery Hall, and the Corliss engine, forty feet tall. Grant turned it on himself.
 
 constance: Josiah was thirty-one. A clerk in a counting house. He was standing beside the engine on the tenth of May, at the opening, when it stopped.
 
-constance: Not broke down. Stopped. For a heartbeat. Everyone in the hall says it never happened. Josiah said it did. He said, in that heartbeat, the whole hall was silent and cold, and nothing moved, and something was standing beside him.
+constance: Not broke down. Stopped. For a heartbeat. Nobody else in the hall noticed. Josiah did. It went cold, and nothing moved, and something was standing beside him.
 
 jules: What was it?
 
 constance: That\'s a fourth question.
 
-She looks at the window. The hand. The key.
+She looks at the window. The figure in the doorway.
 
 constance: Something that liked him. That\'s all he ever said. *It liked me.* It asked him for something, and he said yes, because he was thirty-one and poor and it was offering him the whole world. He never told anyone what he\'d agreed to. Not even his wife. He wrote it down once, and burned it, and built this chapel over the ashes.
 
@@ -76,7 +76,7 @@ constance: That\'s where it came from, child. A clerk said yes to something in a
   },
   a3_cost: {
     enter: g => { g.know('luck_cost', ['jules', 'constance'], 'Gran: the luck costs other people. "The house always collects. Not from us. Near us." Mercutio. Every time it goes your way, it goes someone else\'s way less.'); },
-    text: g => `Gran looks at you for a long time. Then she nods, slowly, like you passed something.
+    text: g => `Gran looks at you. Then she nods, once.
 
 constance: That\'s the right question. That\'s the question I asked, too. My grandmother cried when I asked it.
 
@@ -84,7 +84,7 @@ She smokes.
 
 constance: It costs other people.
 
-constance: Not us. Never us. We don\'t fall. We don\'t get hurt. We don\'t lose. But luck isn\'t made, child. It\'s moved. Every time the world arranges itself around you, it has to arrange itself *away* from someone. The house always collects. Not from us. Near us.
+constance: Not us. Never us. Luck isn\'t made, child. It\'s moved. The house always collects. Not from us. Near us.
 
 You think of the stables. A brass nameplate. An empty stall.
 
@@ -96,7 +96,7 @@ constance: I let go of the reins once, too. In 1961. Over the same wall. I lande
 
 She taps her ash into her palm.
 
-${g.hv('jules_debt') >= 6 ? 'constance: And you\'ve been spending, haven\'t you. Since August. I can feel it on you, like a draft. Every time you let it click, somebody near you pays a little. A broken glass. A bad night. A missed train. And it adds up.' : 'constance: You\'ve been careful. I can tell. Not as careful as you\'ll need to be.'}
+${g.hv('jules_debt') >= 6 ? 'constance: And you\'ve been spending, haven\'t you. Since August. I can feel it on you, like a draft. Every time you let it, somebody near you pays a little. A broken glass. A bad night. A missed train. And it adds up.' : 'constance: You\'ve been careful. I can tell. Not as careful as you\'ll need to be.'}
 
 jules: Can it be stopped?
 
@@ -104,9 +104,9 @@ constance: That\'s another question. But I\'ll give you this one, because you as
 
 She drops her cigarette on the stone floor and puts it out under her shoe.
 
-constance: You can choose not to. That\'s the only freedom we have. It\'s small, and it\'s hard, and nobody in this family has ever been very good at it. But every time you feel the click coming, and you don\'t let it, and you lose like a person, the house doesn\'t collect. Not that time.
+constance: You can choose not to. Every time you feel it coming and don\'t let it, every time you lose like a person, the house doesn\'t collect. Not that time. Nobody in this family has ever been any good at it.
 
-constance: You can lose, child. On purpose. That\'s the whole secret. That\'s all I have.`,
+constance: That\'s all I have.`,
     next: 'a3_next'
   },
   a3_why: {
@@ -119,13 +119,13 @@ constance: Because you\'re interesting to watch.
 
 She says it flat, without any irony at all.
 
-constance: Hugh wants things. He wants them so badly. It isn\'t interesting to watch someone get what they want. You were the one who *didn\'t* want. Who went to Temple to spite your mother. Who chose a cab driver\'s son from South Philadelphia over a Whitford. Who rolls a die two hundred times in a bathroom trying to *lose*.
+constance: Hugh wants things. He wants them so badly. It isn\'t interesting to watch someone get what they want. You were the one who *didn\'t* want. Who went to Temple to spite your mother. Who looks at a cab driver\'s son from South Philadelphia and not at a Whitford. Who rolls a die two hundred times in a bathroom trying to *lose*.
 
 constance: You\'re a good story, child. That\'s all it\'s ever wanted. A good story.
 
 She looks at the window.
 
-constance: And since August, since the night the clocks stopped on Broad Street, it\'s louder in you than it has been in anyone since Josiah. Something opened that night. Something leaned closer. I felt it here. In this room. On my knees. I knew it was you before you called.`,
+constance: And since August, since the night the clocks stopped on Broad Street, it\'s louder in you than it has been in anyone since Josiah. I felt it in this room. I knew it was you before you called.`,
     next: 'a3_next'
   },
   a3_sam: {
@@ -140,7 +140,7 @@ constance: No. It\'s an answer to yours.
 
 She looks at you.
 
-constance: Some families are lucky. Ours. Some families are *early*. They go into the cold, between the seconds, and they come back out, and it costs them. Years. Literally years, child. Their hair goes. Their hands. Their hearts. They\'re the only ones who can go in there. And they always, always go in for somebody else.
+constance: Some families are lucky. Ours. Some families are *early*. They go into the cold, between the seconds, and it costs them years. And they always go in for somebody else.
 
 constance: I knew one, once. A long time ago. On a riverbank. An old woman, soaked to the shoulders, with a child coughing up the Schuylkill on the grass. She looked at me across the snow, and I looked at her, and we both knew exactly what the other one was.
 
@@ -166,7 +166,7 @@ constance: So keep him close. Close enough that when the house comes to collect,
 
 constance: One more thing. Not an answer. A gift.
 
-She holds it out to you. Hers. Older than yours.
+She holds it out to you. The one she kept.
 
 constance: Roll it. And don\'t let it.
 
@@ -174,7 +174,7 @@ You take it. It\'s cold. The first cold die you\'ve ever held.
 
 You hold it over the stone altar. You feel the click coming, behind your breastbone, the way it always comes, like a lock getting ready to turn.
 
-And you don\'t let it. You don\'t know how. You just hold your breath, inside, somewhere you\'ve never held it, and you roll.
+And you don\'t let it. ${g.f("straight_hugh") ? "You did this once, in the billiard room, with a cue to aim. There\'s nothing to aim here." : "You don\'t know how."} You just hold your breath, inside, somewhere you\'ve never held it, and you roll.
 
 The die skitters across the stone. Tumbles. Stops.
 
@@ -200,7 +200,7 @@ You roll yours. Six. You roll Gran\'s, and you hold your breath inside, and you 
 
 Six. Two. Six. Five. Six. One.
 
-You can do it. Not easily. Not every time. It\'s like holding a muscle you didn\'t know you had, and it aches, and you\'re shaking by the twentieth roll. But you can lose. On purpose. For the first time in your life.
+You can do it. Not easily. Not every time. It\'s like holding a muscle you didn\'t know you had, and it aches, and you\'re shaking by the twentieth roll. But you can lose. On purpose.
 
 ${g.knows('forty_four') ? 'You think about the servants\' corridor. *Forty-four.* *Seventeen.* Your father\'s glass touching hers.' : g.knows('achterberg_card') ? 'Achterberg\'s card is on the nightstand. *44.* You haven\'t thrown it away.' : ''}
 
@@ -224,7 +224,7 @@ You pick up your phone.`,
 
 You write until two in the morning. Seven pages. In your perfect handwriting, which is the only part of you that\'s never been lucky, because you practiced it, every letter, at that desk, when you were eight.
 
-The window in August. The glass. The two hundred and twelve sixes. Mercutio. The Parkway. Josiah, and the engine, and *it liked me*. *Forty-four*, if you heard it. Gran on the riverbank. *Some families are early.*
+The window in August. The glass. The two hundred and twelve sixes. Mercutio. The Parkway. Everything Gran told you in the chapel, in the order she told it, like a case history.
 
 And on the last page, the hardest part, you write the thing you\'ve never written or said or thought in complete sentences:
 
@@ -248,7 +248,7 @@ You think about Mercutio\'s empty stall. About a boy on the Parkway with blood o
 
 *Near us.*
 
-You love him. Gran said it, and it isn\'t a question, and it isn\'t an answer either. It\'s just the worst thing that\'s ever happened to you.
+You love him. Gran said it, and it isn\'t a question, and it isn\'t an answer either. It\'s just true, which is worse.
 
 And the kindest thing you can do for somebody you love, if you\'re a Pemberton, might be to stand a little farther away.
 
@@ -287,15 +287,15 @@ jules: I lost.
 
 sam: What?
 
-jules: I rolled a die. In the chapel. And I lost. I rolled a one. On purpose. For the first time in my whole life, Sam.
+jules: I rolled a die in the chapel and it came up one. I did that, Sam. Not it. Me.
 
-You\'re crying. You didn\'t know you were going to. Jules Pemberton doesn\'t cry in front of people. You\'re not in front of anybody. You\'re in your room in the dark with a phone against your face.
+You\'re crying. You didn\'t know you were going to. There\'s no one in the room to see it. There\'s only him, hearing it.
 
-He doesn\'t say anything. He just stays on the line, breathing, while you cry, for a long time.
+He doesn\'t say anything. He just stays on the line, breathing, while you cry.
 
 sam: That\'s good, right? Losing?
 
-jules: It\'s the best thing that\'s ever happened to me.
+jules: Yes.
 
 sam: Then I\'m glad. I\'m really glad, Jules.
 
@@ -303,7 +303,7 @@ jules: January.
 
 sam: January.
 
-You don\'t hang up. Neither does he. You fall asleep at three in the morning with the phone on the pillow, and when you wake up at nine, the call is still connected, four hundred and seventy-one minutes, and you can hear him snoring.`,
+You don\'t hang up. Neither does he. You fall asleep at three in the morning with the phone on the pillow, and when you wake up at half past seven, the call is still connected, four hundred and seventy-one minutes, and you can hear him snoring.`,
     next: 'tag_hugh'
   },
 
@@ -331,9 +331,9 @@ Left. Six. Right. Four.
 
 Left. Six. Left. Six. Left. Six.
 
-He stands in the hall with his glass for a long time and watches the left die come up six, and six, and six, and six.
+He stands in the hall with his glass and watches the left die come up six, and six, and six, and six.
 
-${g.f('hugh3') === 'lost' ? 'He thinks about the billiard room. The seven ball, rattling in the jaws of the pocket and stopping. *I won.* Did he?' : 'He thinks about twenty years of tables, and boards, and cards. About never once.'}
+${g.f('hugh3') === 'lost' ? 'He thinks about the billiard room. The seven ball, rattling in the jaws of the pocket and stopping. *I won.* Did he?' : 'He thinks about every table, every board, every hand of cards since they were six.'}
 
 He backs away from the door very quietly, and goes down the hall to his room, and doesn\'t sleep.
 

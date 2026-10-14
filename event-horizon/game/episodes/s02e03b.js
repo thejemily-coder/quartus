@@ -71,7 +71,7 @@ ACHTERBERG: She took the girl to the chapel?
 
 whitney: Tomorrow.
 
-ACHTERBERG: Then tomorrow, everything changes. Let\'s hope it\'s for the better.
+ACHTERBERG: Then tomorrow we learn something. I envy her, you know. I\'d give a great deal to stand in that room.
 
 The decanter again. Their glasses touch.
 
@@ -103,7 +103,7 @@ She looks out the window at the snow on the lawn, the dark woods, the lights of 
 
 ACHTERBERG: May I ask you something? You don\'t have to answer. Do you ever feel *watched*?
 
-You don\'t answer. You don\'t have to. She sees it.
+You don\'t answer. She sees it anyway.
 
 ACHTERBERG: Yes. I thought so.
 
@@ -134,7 +134,7 @@ TXT jules: Except the bassist. The bassist is doing his best.
 
 The dots come right away. He was waiting.
 
-TXT sam: theres 14 people in my nonnas living room watching the mummers on tv and my uncle joey is asleep in a chair with a paper hat on
+TXT sam: theres 14 people in my nonnas living room watching the fireworks countdown on 6abc and my uncle joey is asleep in a chair with a paper hat on
 TXT sam: i would trade you
 TXT jules: You would not.
 TXT sam: youre right. its very warm in here and theres a tray of pizzelles
@@ -173,7 +173,7 @@ The clock\'s pendulum stops in the middle of its swing. The champagne bubbles in
 
 You don\'t stop.
 
-You feel it. The cold. Not your cold; you\'ve never had a cold. Someone else\'s. Coming in like a draft under a door, from very far away, from south, from the city. And with it, the feeling. The one you\'ve had your whole life. The room when someone\'s come in behind you.
+You feel it. The cold. Not yours; you\'ve never run cold. Someone else\'s. Coming in like a draft under a door, from very far away, from south, from the city. And with it, the feeling. The one you\'ve had your whole life. The room when someone\'s come in behind you.
 
 It\'s so close now. It\'s *leaning*.
 
@@ -190,9 +190,7 @@ You stare at it.
 
 *For you too.*
 
-You don\'t answer for a long time. You sit on the stairs while the party sings and the snow comes down outside the tall windows, and you hold the phone in both hands, and you think about a stone wall over the Schuylkill, and *I felt you go*, and Gran on the terrace saying *some families are early*, and you think: *Oh.*
-
-*Oh, no.*
+You don\'t answer. You sit on the stairs while the party sings and the snow comes down outside the tall windows, and you hold the phone in both hands, and you think about a stone wall over the Schuylkill, and *I felt you go*, and Gran on the terrace saying *some families are early*, and you think: *Oh.*
 
 *Oh, Sam.*`,
     choices: [
