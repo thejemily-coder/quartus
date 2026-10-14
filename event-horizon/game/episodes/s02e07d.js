@@ -27,11 +27,11 @@ mikey: It\'s Pop.
 
 The rain on the awning.
 
-mikey: ${g.f('pop7') === 'crash' ? 'He\'s alive. He\'s alive, okay? A box truck ran the light on Columbus Boulevard at 9:51 and T-boned the cab. Driver\'s side. Right in front of Pier 53, Sammy, right in front of the pier. Collarbone, three ribs, his head\'s cut open. They took him to Jefferson. Ma\'s on her way. Get there.' : 'He\'s alive. He\'s alive, okay? Two guys came up to the cab at the airport taxi line at ten o\'clock. Pulled him out. They didn\'t take anything. They didn\'t say anything. They broke his right hand, Sammy. His driving hand. With the car door. And they did his face. Jefferson. Ma\'s on her way. Get there.'}
+mikey: ${g.f('pop7') === 'crash' ? 'He\'s alive. He\'s alive, okay? A box truck ran the light on Columbus Boulevard at 9:51 and T-boned the cab. Driver\'s side. Columbus and Washington. Outside one of the piers. Collarbone, three ribs, his head\'s cut open. They took him to Jefferson. Ma\'s on her way. Get there.' : 'He\'s alive. He\'s alive, okay? Two guys came up to the cab at the airport taxi line at ten o\'clock. Pulled him out. They didn\'t take anything. They didn\'t say anything. They broke his right hand, Sammy. His driving hand. With the car door. And they did his face. Jefferson. Ma\'s on her way. Get there.'}
 
 The line goes dead.
 
-You\'re standing on the sidewalk. Jules is looking at you. She heard. ${g.f('pop7') === 'crash' ? 'Her face goes gray. You watch her do the arithmetic. 9:51. The pier.\n\njules: That was me.\n\nsam: Jules—\n\njules: *That was me*, Sam. I felt it go. I felt it go somewhere, and it went to your *father*.' : 'Her face goes white.\n\njules: Bruno.\n\nsam: Bruno.\n\njules: Because I lost. Because I folded. Because we—\n\nsam: Because he said somebody pays for a pier.'}`}`,
+You\'re standing on the sidewalk. Jules is looking at you. She heard. ${g.f('pop7') === 'crash' ? 'Her face goes gray. You watch her do the arithmetic. 9:51. The pier.\n\njules: That was me.\n\nsam: Jules—\n\njules: *That was me*, Sam. I felt it go. I felt it go somewhere, and it went to your *father*.' : 'Her face goes white.\n\njules: Bruno.\n\nsam: Bruno.\n\njules: Because I ' + (g.f('folded7') ? 'folded' : 'called') + '. Because we—\n\nsam: Because he said somebody pays for a pier.'}`}`,
     next: g => g.f('pop7') === 'safe' ? 'a4_quiet' : 'a4_jefferson',
     nextTargets: ['a4_quiet', 'a4_jefferson']
   },
@@ -45,17 +45,21 @@ You\'re standing on the sidewalk. Jules is looking at you. She heard. ${g.f('pop
 
 Pop is in Trauma Bay 4 behind a curtain. ${g.f('pop7') === 'crash' ? 'Neck brace. Arm strapped across his chest. A line of black stitches across his forehead into his hair. He\'s awake. He\'s groggy. He\'s complaining about the cab, which is totaled, which was *paid off*, Rosa, it was *paid off*.' : 'His right hand is in a splint the size of a boxing glove. Both eyes are swollen shut. His lip is split. He\'s awake. He keeps saying he doesn\'t know who they were, and he keeps not looking at anybody when he says it.'}
 
-Ma is sitting beside the bed holding his good hand. Nonna is in the plastic chair in the corner in her black coat, with her rosary. Gigi is asleep across two waiting-room chairs out in the hall with her head on Mikey\'s jacket.
+He hears your voice before the curtain moves.
+
+frank: Kid.
+
+That\'s all. Ma is sitting beside the bed holding his good hand. Nonna is in the plastic chair in the corner in her black coat, with her rosary. Gigi is asleep across two waiting-room chairs out in the hall with her head on Mikey\'s jacket.
 
 Mikey is standing by the curtain. He looks at you when you come in. He looks at Jules behind you. He doesn\'t say anything.
 
 Ma looks up.
 
-She looks at your face. Then at Jules. Then at your hair, at your temple, at the white there. She looks at it the way she looks at a kid in her nurse\'s office who says he fell off the monkey bars.
+She looks at the white at your temple the way she looks at a kid in her nurse\'s office who says he fell off the monkey bars. Then she looks away.
 
 You\'re bleeding. Your nose. You didn\'t notice. ${g.f('friday7') === 'slip' ? 'You never stopped, after the Boulevard.' : 'You don\'t know when it started.'}
 
-Jules sees it. She reaches into the inside pocket of her camel coat, the way she has a hundred times since August, for the handkerchief.
+Jules sees it. She reaches into the inside pocket of her camel coat for the handkerchief. She hasn\'t needed it since Valentine\'s.
 
 Her hand stops.
 
@@ -136,7 +140,7 @@ frank: Goodnight, kid.
 
 He hangs up.
 
-Jules is looking at you. She puts her hand in the inside pocket of her camel coat, the way she does when she\'s thinking, for the handkerchief.
+Jules is looking at you. She puts her hand in the inside pocket of her camel coat, for the handkerchief, to give her hand something to hold.
 
 Her hand stops.
 
@@ -194,7 +198,7 @@ The window goes up. The Camry pulls out onto City Avenue and is gone.
 
 Hugh sits in his Volvo with the engine off.
 
-${g.f('note6') === 'told' ? 'After a minute, he takes something out of the inside pocket of his crew jacket. An index card, soft at the corners, folded in half. He unfolds it.\n\nOn the front, in pencil, in a hand he doesn\'t know: *What did you mean?*\n\nOn the back, in his sister\'s handwriting: *I don\'t know yet. When I know, you\'ll be the first.*\n\nAnd under that, in black ballpoint, pressed so hard it tore the card:\n\n*Don\'t trust the lucky one.*\n\nHugh reads it for a long time, in the light from the Wawa.\n\nThen he smiles. Not a nice smile. The smile of somebody who has been second for eighteen years, by six minutes, and has just found out that somebody else knows it.' : 'He sits there for a long time, looking at the empty space where the Camry was.\n\nThen he looks at his own hands on the steering wheel. Turns them over. Looks at them, like he\'s waiting for something to happen.\n\nNothing does.'}`,
+${g.f('note6') === 'told' ? 'After a minute, he takes something out of the inside pocket of his crew jacket. An index card, soft at the corners, folded in half. He unfolds it.\n\nOn the front, in pencil, in a hand he doesn\'t know: *What did you mean?*\n\nOn the back, in his sister\'s handwriting: *I don\'t know yet. When I know, you\'ll be the first.*\n\nAnd under that, in black ballpoint, in the same stranger\'s hand, pressed so hard it tore the card:\n\n*Don\'t trust the lucky one.*\n\nHugh reads it twice, in the light from the Wawa.\n\nThen he smiles. Not a nice smile. He has come second for eighteen years to a sister six minutes younger than he is, and he has just found out he isn\'t the only one who doesn\'t trust her luck.' : 'He sits there, looking at the empty space where the Camry was.\n\nThen he looks at his own hands on the steering wheel. Turns them over. Looks at them, like he\'s waiting for something to happen.\n\nNothing does.'}`,
     end: true
   }
 });

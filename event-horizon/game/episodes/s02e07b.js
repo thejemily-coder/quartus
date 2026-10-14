@@ -23,7 +23,7 @@ jules: Vincenzo. Hello again.
 
 He blinks. He didn\'t think she\'d remember his name. Nobody remembers his name.
 
-Inside, it\'s 1974. Plastic on the good couch. A crucifix over every door. A wall of framed photographs, weddings and christenings and first communions going back to black and white, and one, near the top, of a boy of about six in a heavy coat on a riverbank in winter, held by a young woman with black hair, both of them soaking wet.
+Inside, it\'s 1974. Plastic on the good couch. A crucifix over every door. A wall of framed photographs, weddings and christenings and first communions going back to black and white, and one, near the top, of a boy of about six in a heavy coat on a riverbank in winter, held by a woman of sixty with her gray hair plastered flat to her skull, both of them soaking wet.
 
 You stop in front of that one.
 
@@ -183,7 +183,7 @@ And Jules, beside you, puts her hand on your arm. Not gently.` : `sam: Me instea
 
 Bruno smiles at you like you\'re a nephew who said something sweet at a wedding.
 
-BRUNO: You\'re fast, Sam. I know you\'re fast. Your great-grandmother was fast. But fast doesn\'t win a card game. She\'s *lucky*. They\'re different things.
+BRUNO: You\'re fast, Sam. I know you\'re fast. Your great-grandmother was fast. But fast doesn\'t win a card game. She does. They\'re different things.
 
 He turns back to Jules.`}
 
@@ -195,9 +195,9 @@ jules: One game. Friday. Pier 53. Sam\'s father\'s debt, all of it, in writing. 
 
 BRUNO: In *writing*?
 
-jules: I\'m a Pemberton, Mr. Iannucci. We don\'t do anything not in writing.
+jules: I\'m a Pemberton, Mr. Iannucci. If it isn\'t in writing, it didn\'t happen.
 
-Bruno stares at her for a long moment. Then he laughs until he coughs, and Philomena has to bring him water.
+Bruno stares at her. Then he laughs until he coughs, and Philomena has to bring him water.
 
 BRUNO: *Madonna.* In writing. Dante, get a pen.
 
@@ -227,9 +227,9 @@ She stops walking.
 
 jules: Yes. It does. Near us.
 
-jules: Unless I don\'t let it go. Unless I play it straight. I *can* play it straight now. You saw me. I beat him straight.
+jules: Unless I don\'t let it go. Unless I play it straight. I *can* play it straight now. ${g.f('briscola7') === 'skill' ? 'You saw me. I beat him straight.' : g.f('briscola7') === 'lost' ? 'You saw me. I lost on purpose and held my breath the whole hand.' : 'Tonight was for him. He wanted to see it, and he saw it. Friday, I hold my breath.'}
 
-${g.f('briscola7') === 'skill' ? 'sam: You beat an eighty-year-old man at briscola.' : 'sam: Jules.'}
+${g.f('briscola7') === 'skill' ? 'sam: You beat an old man at briscola. At his own table.' : 'sam: Jules.'}
 
 jules: And on Friday I\'ll be playing a man from Odessa who owns half the Northeast, for a pier, with Bruno Iannucci watching. I know. I know exactly what I said yes to.
 

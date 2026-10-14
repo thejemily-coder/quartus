@@ -22,7 +22,7 @@ EH.episode({
       clock: { day: 'Sat', date: 'Feb 27', time: '10:40 PM' },
       text: `> THE CAMERA.
 
-The billiard room at Ravenscourt. Green baize, brass lamps, a fire nobody needs. Hugh Pemberton is alone at the table in his shirtsleeves, running the rack by himself, the way he has every Saturday night since Christmas.
+The billiard room at Ravenscourt. Green baize, brass lamps, a fire nobody needs. Hugh Pemberton is alone at the table in his shirtsleeves, running the rack by himself, every Saturday night now.
 
 He sinks the nine. He sets up the rack again.
 
@@ -30,7 +30,7 @@ Since Christmas, he hasn\'t lost a game. He hasn\'t played anyone.
 
 The door opens. His father, in a cardigan, with a glass of Scotch. And behind him, in a gray dress, a small woman with her glasses pushed up on her head.
 
-WHITNEY: Hughie. You remember Dr. Achterberg. From the party.
+whitney: Hughie. You remember Dr. Achterberg. From the party.
 
 hugh: The piano teacher.
 
@@ -42,7 +42,7 @@ ACHTERBERG: I\'m terrible at this. I\'ve always been terrible at this. Your sist
 
 hugh: My sister\'s good at everything.
 
-ACHTERBERG: Is she? You beat her at Christmas. Your father tells me it was the first time in your lives.
+ACHTERBERG: Is she? Your father tells me you\'ve been keeping score since you were six.
 
 Hugh doesn\'t say anything. He lines up a shot and misses it.
 
@@ -60,7 +60,7 @@ She puts the cue back in the rack, very precisely, in its slot.
 
 ACHTERBERG: Your sister carries a handkerchief. White, monogrammed, in the inside pocket of a camel coat. It has someone else\'s blood on it. I\'d like it. That\'s all. Nobody gets hurt by a handkerchief.
 
-hugh: Why would I do that?
+hugh: Sorry—you want me to pick my sister\'s pocket. For a *hankie*. Why on earth would I do that?
 
 ACHTERBERG: Because you\'ve been playing pool by yourself every Saturday for two months, trying to work out what she is. And I\'m the only person in this house who\'ll tell you.
 
@@ -101,7 +101,7 @@ jules: It was face up on your chest. I\'m a reader, Kearney. It\'s not a choice.
 She turns the phone around.
 
 TXT Unknown number: sunday march 7. grandpas house. 1610 s. 9th. 5pm. bring the blonde
-TXT Unknown number: grandpa says shes allergic to nothing he hopes
+TXT Unknown number: grandpa says hope shes not allergic to nothing
 TXT Unknown number: — D
 
 Sleet on the window.
@@ -162,7 +162,7 @@ jules: I heard what Vinnie said. You told me. And you don\'t get to *no* me, Kea
 
 You open your mouth.
 
-jules: Every man in my life has decided where I go. My father. My grandmother. Callum, very politely. I chose Temple. I chose this floor. I chose *you*. I\'m choosing this.
+jules: Everyone in my life has decided where I go. My father. My grandmother. Callum, very politely. I chose Temple. I chose this floor. I chose *you*. I\'m choosing this.
 
 She gets out of bed and starts getting dressed, fast, angry, precise.
 
@@ -187,7 +187,7 @@ You have a week. It goes fast.`,
       clock: { day: 'Tue', date: 'Mar 2', time: '12:00 PM' },
       text: `Midterms in two weeks. Psych, Calc II, a history gen-ed on the Silk Road you have not opened the book for. Ciro has you on three nights. The sleet turns to rain and the rain turns back to sleet.
 
-You have four days before Thursday, when Jules\'s brother is coming up from Penn to *meet the boyfriend*. You have six before Sunday.`,
+You have two days before Thursday, when Jules\'s brother is coming up from Penn to *meet the boyfriend*. You have five before Sunday.`,
       hub: {
         slots: 2, label: 'The first week of March',
         blurb: 'Thursday, Hugh. Sunday, Bruno.',
@@ -268,7 +268,7 @@ bree: Bruno called ten minutes after. He didn\'t say anything about it. He asked
 
 bree: Wawa, if she gets a kidney, I\'m his. That\'s the deal nobody said out loud. I know it. She knows it. She cried for an hour and then she said *we take it*.
 
-She looks at the cigarette like she doesn\'t know how it got there.
+She looks at the cigarette.
 
 bree: And then he asked me something else. On the phone. At the end. Like it was nothing.
 
@@ -278,7 +278,11 @@ The cigarette burns down.
 
 bree: I heard her once. At the Navy Yard. On the seventh floor. *Hello.* That\'s all she said. One word. I could do it right now. I could do it perfect.
 
-bree: I told him I didn\'t remember. He laughed. He said, *Sure, sweetheart.*
+bree: I told him I didn\'t remember. He laughed. He said—
+
+For half a second it\'s Bruno coming out of her mouth, warm and old and amused: *Sure, sweetheart.*
+
+She stops, like she touched a stove.
 
 She drops the cigarette and steps on it.
 
@@ -363,7 +367,7 @@ mikey: Don\'t take her there.
 
 sam: She\'s going whether I take her or not.
 
-Mikey looks at you for a long time.
+Mikey looks at you.
 
 mikey: Then I\'ll be parked on 9th Street. In my own car. Like a guy who likes cannoli.`,
       next: '@hub'
@@ -395,13 +399,13 @@ jules: *Hugh.*
 
 hugh: What? He\'s my roommate\'s best friend. He was coming up anyway. And he wanted to see you were okay. That\'s allowed, Jubilee. People are allowed to want that.
 
-Callum puts the donuts on the big table very carefully, the way you\'d put down something that might go off.
+Callum puts the donuts on the big table like they might go off.
 
 callum: I can go. I should go. I\'ll go.
 
 jules: Sit down, Callum. Have a donut. You brought them.
 
-It\'s the most awkward forty minutes of your life, and you once delivered a pizza to your high school guidance counselor\'s divorce party.
+It\'s the most awkward forty minutes of your life.
 
 Hugh talks. Hugh is good at talking. Penn, crew, their father\'s new boat, Gran\'s birthday in April. He talks to Jules the way you talk to Gigi, half-teasing, half-checking. And every so often, when he thinks nobody\'s looking, he looks at her hands. At what she does with them. Like he\'s waiting for something.
 
@@ -425,7 +429,7 @@ callum: Is she happy?`,
     },
     a1_callum: {
       loc: 'CARDONE HALL · 9TH FLOOR',
-      text: g => `${g.f('callum7') === 'yes' ? 'sam: Yeah. I think so. I think she\'s happy.\n\nCallum nods. Something in his face loosens. He looks relieved and sad and like a guy who rowed four miles on the Schuylkill this morning in the sleet to not think about something, and is going to row four more tomorrow.\n\ncallum: Good. That\'s good. That\'s all I wanted.' : 'sam: I don\'t know. Some days. It\'s been a hard year. You should ask her.\n\nCallum looks at you for a second, surprised.\n\ncallum: Huh. I thought you\'d say yes. Anybody would say yes.\n\nsam: She\'d know I was lying.\n\ncallum: Yeah. She would.\n\nHe almost smiles.'}
+      text: g => `${g.f('callum7') === 'yes' ? 'sam: Yeah. I think so. I think she\'s happy.\n\nCallum nods. Something in his face loosens. He looks like a guy who rowed four miles on the Schuylkill this morning in the sleet to not think about something, and is going to row four more tomorrow.\n\ncallum: Good. That\'s good. That\'s all I wanted.' : 'sam: I don\'t know. Some days. It\'s been a hard year. You should ask her.\n\nCallum looks at you for a second, surprised.\n\ncallum: Huh. I thought you\'d say yes. Anybody would say yes.\n\nsam: She\'d know I was lying.\n\ncallum: Yeah. She would.\n\nHe almost smiles.'}
 
 callum: She never touched my knee under a table. Not once. Two years.
 

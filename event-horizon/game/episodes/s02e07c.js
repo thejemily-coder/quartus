@@ -108,7 +108,7 @@ You see every minute of it. The strut. The song about the man in the feathered h
 
 At the curtain call, you\'re the first one on your feet.
 
-Simone comes out from the booth for the company bow, in her feathered hat, and she sees you standing in Row C, and her face does something you\'ve never seen it do. She puts her hand over her heart. She mouths, *Salvatore Kearney.*
+Simone comes out from the booth for the company bow, in her feathered hat, and she sees you standing in Row C, and for once in her life she doesn\'t have a line. She puts her hand over her heart. She mouths, *Salvatore Kearney.*
 
 You mouth back, *I\'m here.*
 
@@ -124,7 +124,7 @@ Eight minutes gone. Somewhere between Cottman and here.
 
 A black Escalade at the curb. Vinnie leaning on it, smoking a cigarette he doesn\'t inhale. He looks at you on your knees on the sidewalk, bleeding. He doesn\'t ask.
 
-vinnie: She\'s on the last hand, Sally. Get in there.`,
+vinnie: Jesus, Sally. You look like a crime scene. She\'s on the last hand. Get in.`,
     next: 'a3_banya'
   },
 
@@ -136,9 +136,9 @@ vinnie: She\'s on the last hand, Sally. Get in there.`,
 
 ${g.f('friday7') === 'slip' ? 'You come in at the end, bleeding into your sleeve, and nobody looks at you, because nobody in the room is looking at anything but the table.' : g.f('friday7') === 'half' ? 'You come in at 9:15, late, out of breath, and Jules looks up from the table for one half of one second, sees you against the back wall, and goes back to her cards. For the next half hour, you watch.' : 'You\'ve been here since nine, against the back wall, where she can see you. You\'ve watched every hand. You\'ve watched Orlov. You know how he breathes when he has nothing.'}
 
-Pavel Orlov is seventy, bald, enormous, in a terrycloth robe, with a gold cross on his chest and a glass of tea in a silver holder. He looks like somebody\'s grandfather. So does Bruno, at the other end of the table, in a cardigan, with his cane across his knees. So did Teddy\'s mother. In this city, everybody who can hurt you looks like somebody\'s grandparent.
+Pavel Orlov is seventy, bald, enormous, in a terrycloth robe, with a gold cross on his chest and a glass of tea in a silver holder. He looks like somebody\'s grandfather. So does Bruno, at the other end of the table, in a cardigan, with his cane across his knees. In this city, everybody who can hurt you looks like somebody\'s grandparent.
 
-Between them, Jules. In the camel coat, buttoned, in a room where everybody else is in towels.
+Between them, Jules. In the camel coat, buttoned, in a room where everybody else is in towels or wool.
 
 Texas hold\'em. Heads up. Jules against Orlov\'s nephew, Grisha, a pale young man with fast hands who plays like he learned online.
 
@@ -182,7 +182,7 @@ On the wall behind you, an old Soviet clock with a red second hand, ticking towa
 
 She looks back at her cards. She breathes out.
 
-You feel it. The room tilts. The hot wet air leans a quarter inch toward the green felt.
+You feel it. The steam over the drain stops moving, like the room is holding its breath for her, since she won\'t.
 
 jules: Call.
 
@@ -217,7 +217,7 @@ jules: I don\'t know. Somewhere. Near us. I felt it go.`,
     enter: g => { g.flag('paid7'); g.flag('pop7', 'safe'); g.flag('bruno_jobs_done', g.f('bruno_jobs_total') || 8); g.bond('jules', { trust: 1, affection: 1 }); g.hidden('revenant_drift', -1); },
     text: `You watch Grisha.
 
-You\'ve watched him all night. You know what he does with his hands when he\'s got it. He touches his chips. Stacks them, restacks them, lines up the edges. And when he doesn\'t have it, he crosses his arms. Leans back. Big. Like Pop at the kitchen table when he lost at the track.
+Some guys tell you everything in one hand. You know what he does with his hands when he\'s got it. He touches his chips. Stacks them, restacks them, lines up the edges. And when he doesn\'t have it, he crosses his arms. Leans back. Big. Like Pop at the kitchen table when he lost at the track.
 
 His arms are crossed.
 
@@ -233,13 +233,13 @@ jules: Call.
 
 The last card: the two of diamonds. Nothing.
 
-Grisha turns over a seven and an eight. A straight draw that missed. Nothing.
+Grisha turns over a seven and an eight. Not even a draw. He was never anywhere.
 
 Jules turns over the king of diamonds and the ten of spades. Kings and nines. Not luck. Just better.
 
 Orlov laughs, a huge rumble from inside his robe, and claps Grisha on the back of the head hard enough to knock him forward.
 
-Bruno doesn\'t close his eyes. He looks at Jules. Then at you, against the back wall. For a long moment.
+Bruno doesn\'t close his eyes. He looks at Jules. Then at you, against the back wall.
 
 BRUNO: Huh.
 
@@ -268,7 +268,7 @@ The last card: the four of spades.
 
 Grisha turns over a king and a three. Two pair, kings and nines.
 
-Jules turns over a king and a four. Two pair, kings and nines. Fours on the board play for both of them.
+Jules turns over a king and a deuce. Two pair, kings and nines, and the four on the board plays for both of them. Same hand. To the card.
 
 Split pot.
 
@@ -278,7 +278,7 @@ BRUNO: Half a pier.
 
 ORLOV: *(in English, delighted)* Half a pier! Bruno. We can *share*. Like brothers.
 
-Bruno looks at Jules for a long time.
+Bruno looks at Jules.
 
 BRUNO: The paper said one game, Juliet. Half a game is half the paper.
 
@@ -334,7 +334,7 @@ He walks out. Dante follows him. Dante is already on his phone.`,
     enter: g => { g.flag('pop7', 'beaten'); g.flag('folded7'); g.hidden('revenant_drift', -0.5); },
     text: `You touch your ear.
 
-She sees it. She looks at you for one long second. You see her understand: not *I don\'t know*. Not *he\'s bluffing*. *Fold. Lose it. Get out of his pocket.*
+She sees it. She looks at you for one long second. Your tell. The thing you do when something isn\'t true. *This isn\'t true. None of it. Fold. Get out of his pocket.*
 
 She closes her eyes.
 
@@ -348,15 +348,13 @@ Bruno looks at the face-down cards in front of Jules. He reaches out with the ti
 
 The nine of diamonds. The king of spades.
 
-A full house. Nines full of kings. The best hand at the table. She folded it.
+A full house. Nines full of kings, made on the turn. She folded it.
 
 Silence.
 
-Bruno looks at the cards for a long time. Then at Jules. Then, slowly, at you.
+Bruno looks at the cards. Then at Jules. Then, slowly, at you.
 
 BRUNO: She folded a full house.
-
-He knows. He doesn\'t know how, but he knows. You can see it.
 
 BRUNO: She folded a full house because you told her to.
 
