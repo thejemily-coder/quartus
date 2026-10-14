@@ -20,7 +20,7 @@ DANTE: Come to the club. The envelopes are on the bar. Twelve addresses. The las
 
 He hangs up.
 
-That\'s two. Six more after this. You stand in the hallway with the phone in your hand and the whole house smelling like fried smelts.
+Another job. Another ten percent. You stand in the hallway with the phone in your hand and the whole house smelling like fried smelts.
 
 Ma is looking at you from the kitchen doorway with the wooden spoon in her hand.
 
@@ -28,7 +28,7 @@ rosa: Where are you going?
 
 sam: Ciro needs me. Christmas Eve rush. I\'ll be back by eight.
 
-${g.f('ma_told') === 's2e2' ? 'She knows you\'re lying. You told her everything two hours ago. She looks at you, and you look at her, and she says, very quietly: *Be back by eight, Salvatore. Your grandmother is waiting.*' : 'She looks at you for a second too long. Then she nods.\n\nrosa: Eight. Not eight-oh-five. Your grandmother eats at eight.'}`,
+${g.f('ma_told') === 's2e2' ? 'She knows you\'re lying. You told her everything this morning. She looks at you, and you look at her, and she says, very quietly: *Be back by eight, Salvatore. Your grandmother is waiting.*' : 'She looks at you for a second too long. Then she nods.\n\nrosa: Eight. Not eight-oh-five. Your grandmother eats at eight.'}`,
     next: 'a2_club'
   },
 
@@ -57,9 +57,9 @@ vinnie: Then you know what kinda Christmas card that is.
 
 He doesn\'t say anything else. He wipes the bar where there\'s nothing to wipe.
 
-vinnie: It\'s snowing. Roads are a mess. Twelve stops, three hours. Vinnie in the car, it takes four. Bruno wants to see what you can do.
+vinnie: It\'s snowing. Roads are a mess. Twelve stops, three hours. Me in the car, it takes four. Bruno wants to see what you can do.
 
-vinnie: Don\'t do the cold thing, Sally. Okay? Just run. Just be fast. You\'re fast enough.`,
+vinnie: Yo. Don\'t do the cold thing, Sally. Okay? Just run. Just be fast. You\'re fast enough.`,
     choices: [
       { text: 'Run it. Twelve stops in the snow on your own legs. Fast, but human.', tag: 'Run',
         check: { kind: 'pool', attr: 'reflex', skill: 'athletics', diff: 2, label: 'Twelve envelopes before eight', physical: true, power: true, on: { crit: 'a2_run_good', success: 'a2_run_good', partial: 'a2_run_late', fail: 'a2_run_late', botch: 'a2_run_late' } } },
@@ -98,7 +98,7 @@ At 7:25, you\'re limping under the streetlight at Broad and Oregon with one enve
 
 You have twenty minutes to go a mile and a half. On this hip.
 
-You could do it in no time at all. You know you could. You can feel it right there under your skin, the cold, the easiest thing in the world.`,
+You could do it in no time at all. You know you could. It\'s right there under your skin. It always is now.`,
     choices: [
       { text: 'Limp it. Run on the hip. Be late if you\'re late.', tag: 'Limp it',
         fx: g => { g.flag('envelopes_late', true); }, go: 'a2_manila' },
@@ -107,7 +107,7 @@ You could do it in no time at all. You know you could. You can feel it right the
     ]
   },
   a2_slip: {
-    enter: g => { if (g.f('unstick_s2e2')) { g.drift(1); g.hidden('revenant_drift', 1); g.injure({ id: 'unstick_s2e2', name: 'Time debt (Broad Street)', pen: 1, heal: 2, affects: ['body', 'reflex', 'wits'] }); g.know('revenant_watch', ['sam'], 'In the Slip on South Broad Street on Christmas Eve, the man who stands like you was standing at Broad and Federal, a block north. He raised one hand, like a man at a window.'); } },
+    enter: g => { if (g.f('unstick_s2e2')) { g.drift(1); g.hidden('revenant_drift', 1); g.injure({ id: 'unstick_s2e2', name: 'Time debt (Broad Street)', pen: 1, heal: 2, affects: ['body', 'reflex', 'wits'] }); g.know('revenant_watch', ['sam'], 'In the Slip on South Broad Street on Christmas Eve, the man who stands like you was standing in the middle of Broad Street behind you, back at Oregon. He raised one hand, like a man at a window.'); } },
     text: g => `You step through.
 
 It\'s January on South Broad Street. The snow stops in the air, every flake, a whole city of white dots hanging in the orange light like stars somebody spilled. A SEPTA bus is stopped at the light with its wipers mid-sweep. A man in a Santa hat is stopped on the median, mid-step, with a tray of cookies.
@@ -116,7 +116,7 @@ ${g.f('unstick_s2e2') ? `The cold grabs you immediately. Like a river. Like ever
 
 You run anyway. Down Broad, between the frozen flakes, which you break with your face, each one a tiny cold sting.
 
-And at Broad and Federal, a block north, behind you, you feel something, and you turn.
+And behind you, back at Broad and Oregon where you started, you feel something, and you turn.
 
 There\'s a man standing in the middle of Broad Street in the frozen snow. In a long coat. Too far to see his face. He raises one hand to you. Not a wave. Like a man at a window.
 
@@ -161,7 +161,7 @@ You open it anyway. It\'s already open.`,
   a2_list: {
     night: true,
     enter: g => { g.know('bruno_list', ['sam'], 'Bruno\'s Christmas envelope for the Navy Yard: a list of people in Philadelphia who changed in August and aren\'t on his payroll. Names, addresses, what they can do. Jayden Torres was on it. At the bottom, in Bruno\'s handwriting: "DiNardo, T. — Mifflin St. — NO."'); g.flag('saw_list'); },
-    text: g => `Three typed sheets. A list. Names, ages, addresses, and a short note after each one in Dante\'s neat capitals.
+    text: g => `Three typed sheets. A list. Names, ages, addresses, and a short note after each one, typed in capitals.
 
 *Rizzo, Angela, 34 · Morris St · HANDS GET HOT. NOT ON PAYROLL.*
 *Nguyen, Thomas, 52 · Washington Ave · HEARS THROUGH WALLS. DECLINED OFFER.*
@@ -204,13 +204,13 @@ There\'s a trash can on the corner by the bus stop, the city kind, with a fire i
 
 You watch twenty-six names go up in a city trash can on South Broad Street in the snow on Christmas Eve.
 
-You keep Jayden\'s line. You tear it off before the fire gets there. You don\'t know why. You put it in your pocket.
+One line didn\'t go in. *Torres, Jayden, 8.* You tore it off before you struck the match. It\'s in your pocket. You don\'t know why.
 
 Then you call Dante.
 
 sam: I dropped it. The last one. In the snow, on Broad. I went back. It\'s gone. It\'s soaked. I\'m sorry.
 
-There\'s a long silence on the phone.
+Silence on the phone.
 
 DANTE: You dropped it.
 
@@ -255,11 +255,11 @@ BRANNIGAN: For your sister.
 
 You don\'t take it. He doesn\'t seem offended. He puts it on the dashboard.
 
-BRANNIGAN: I want you to know something, Sam, because I think nobody\'s told you, and I think you deserve to be told. Mr. Iannucci is a businessman. He gives you jobs, and he takes ten percent off a debt, and he tells you he\'s protecting you. And then on Christmas Eve, he sends you to me with an envelope.
+BRANNIGAN: Mr. Iannucci is a businessman. He gives you jobs, and he takes ten percent off a debt, and he tells you he\'s protecting you. And then on Christmas Eve, he sends you to me with an envelope.
 
 He taps it, on the seat beside him, without looking down.
 
-BRANNIGAN: When you get tired of being somebody\'s errand boy, I\'m hiring. Real work. Real money. Your father\'s debt gone in a phone call. Your hair stops going white. We can help with that. We\'re the only people in the world who can.
+BRANNIGAN: When you get tired of being somebody\'s errand boy, I\'m hiring. Real work. Real money. Your father\'s debt gone in a phone call. And the hair. We can help with the hair.
 
 He rolls the window up halfway. Stops.
 

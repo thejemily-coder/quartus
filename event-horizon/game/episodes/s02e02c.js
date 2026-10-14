@@ -25,7 +25,7 @@ She doesn\'t explain. She crosses herself and picks up her fork, and the Feast b
 
 It\'s loud. It\'s always loud. Gigi tells the whole table the flounder\'s name was Kevin, and Mikey says *you ate Kevin*, and Gigi screams. Pop tells the story about the year the baccalà went bad in 1999 and Ma made everybody eat it anyway. Ma says that never happened. Pop says she was wearing the green sweater. Ma says she never owned a green sweater. Nonna says *the green sweater from Strawbridge\'s* without looking up from her eel, and Ma puts her face in her hands.
 
-You laugh. It surprises you. You laugh until your eyes water, at your mother\'s table, with the list of twenty-six names in your head and a man in a gray sedan who knows your grandmother eats at eight.
+You laugh. It surprises you. You laugh until your eyes water, at your mother\'s table, ${g.f('saw_list') ? 'with twenty-six names in your head' : 'with your legs still shaking from Broad Street'}${g.f('manila') === 'burned' ? ' and a phone in your pocket that Dante hasn\'t called back.' : ' and a man in a gray sedan who knows your grandmother eats at eight.'}
 
 Your phone buzzes under the table.
 
@@ -34,7 +34,7 @@ TXT jules: Hugh is drunk. Callum\'s parents are here. Callum is not. I am gratef
 TXT jules: Gran just told the table, apropos of nothing, that "the bells will ring again soon, and some of us had better be ready." Nobody knew what to say. My father changed the subject to municipal bonds.
 TXT jules: Tell me something true about your fish.
 
-You look at the table. Gigi stealing calamari off Mikey\'s plate. Pop with his arm on the back of Ma\'s chair. Nonna, eating her eel alone, slowly, the way she has every Christmas Eve for eighty-one years.`,
+You look at the table. Gigi stealing calamari off Mikey\'s plate. Pop with his arm on the back of Ma\'s chair. Nonna, eating her eel alone, slowly, the way she does every Christmas Eve.`,
     choices: [
       { text: 'Text Jules: "my grandmother just said a name at grace ive never heard before. i think its mine"', tag: 'Jules',
         fx: g => { g.flag('feast_text', 'name'); g.bond('jules', { trust: 1 }); }, go: 'a3_text' },
@@ -92,11 +92,11 @@ sam: Then go slow. But go.
 
 Behind her, Jayden stops singing.
 
-JAYDEN: *Abuela? Is it the cold man?*
+jayden: *Abuela? Is it the cold man?*
 
 carmen: Sí, mijo. It\'s the cold man.
 
-JAYDEN: *Tell him it\'s getting cold!*
+jayden: *Tell him it\'s getting cold!*
 
 Carmen is quiet for a moment.
 
@@ -104,7 +104,7 @@ carmen: He says it\'s getting cold.
 
 sam: I know. Tell him I know.
 
-${g.f('manila') === 'tore_jayden' ? 'You hang up. You take the torn strip of paper out of your pocket. *Torres, Jayden, 8.* You look at it a long time. Then you flush it.' : 'You hang up and sit on the edge of the tub for a minute, until you can make your face do something normal.'}`,
+${g.f('manila') === 'tore_jayden' ? 'You hang up. You take the torn strip of paper out of your pocket. *Torres, Jayden, 8.* You read it twice. Then you flush it.' : 'You hang up and sit on the edge of the tub for a minute, until you can make your face do something normal.'}`,
     next: 'a3_mass'
   },
   a3_here: {
@@ -113,7 +113,7 @@ ${g.f('manila') === 'tore_jayden' ? 'You hang up. You take the torn strip of pap
 
 You eat. The smelts, hot and salty, with lemon. The linguine. Ma\'s baccalà salad, which you have never liked and eat two helpings of. You let Gigi steal your calamari. You let Pop tell the story about the year the Eagles won the Super Bowl and he cried in the cab for three hours.
 
-At one point, Ma reaches over and puts her hand on the back of your neck, the way she did when you were small, and leaves it there for a second, and takes it away.
+At one point, Ma reaches over and picks a crumb of smelt batter off your sleeve, and then, since her hand is there anyway, leaves it on your arm for a second, and takes it away.
 
 You don\'t look at your phone for two hours.
 
@@ -143,7 +143,7 @@ Then the bells start again.
 
 Nobody in the church noticed. Nobody.
 
-Except Nonna. Her hand is on your arm. Her cold small hand. Gripping. She\'s looking straight ahead at the altar, and her lips are moving, and she isn\'t praying.
+Except Nonna. Her hand is on your arm. Her small hand, gripping hard enough to hurt. She\'s looking straight ahead at the altar, and her lips are moving, and she isn\'t praying.
 
 nonna: *Ancora. Ancora.* Again.
 
@@ -161,7 +161,7 @@ nonna: Come to my house. Now. ${g.f('ma_told') === 's2e2' ? 'Your mother comes t
     night: true,
     loc: 'NONNA\'S HOUSE · THREE DOORS DOWN',
     clock: { day: 'Fri', date: 'Dec 25', time: '1:10 AM' },
-    enter: g => { g.know('salvatore_dinardo', ['sam', 'nonna'], 'Nonna\'s older brother was Salvatore DiNardo (1931–1961). He could do what you do. In 1961 he went in after children in a fire and came back an old man. He died on Christmas Eve at 11:51. You are named for him.'); g.know('assunta_diary', ['sam', 'nonna'], 'Assunta DiNardo\'s diary: she did it more than once. Every time she came back a little older. On September 28, 1918, there was a man up the street who moved too, and raised his hand to her like a man at a window.'); },
+    enter: g => { g.know('salvatore_dinardo', ['sam', 'nonna'], 'Nonna\'s older brother was Salvatore DiNardo (1931–1961). Once, in 1961, at a fire, it woke in him. He went in after three children and came back an old man. He died on Christmas Eve at 11:51. You are named for him.'); g.know('assunta_diary', ['sam', 'nonna'], 'Assunta DiNardo\'s diary: she did it more than once. Every time she came back a little older. On September 28, 1918, there was a man up the street who moved too, and raised his hand to her like a man at a window.'); },
     text: g => `Nonna\'s house smells like her house: mothballs and gravy and Jean Naté. The plastic is still on the living room couch from 1987. The Sacred Heart on the wall with the little red bulb in front of it, always on. The cedar chest at the foot of her bed, which nobody has ever been allowed to touch, which Mikey once got smacked with a wooden spoon for sitting on.
 
 ${g.f('ma_told') === 's2e2' ? 'Ma sits on the edge of the bed with her coat still on and her hands in her lap. She doesn\'t say anything. She watches her mother.' : ''}
@@ -176,7 +176,7 @@ The key opens the padlock.
 
 Inside: a notebook, a leather diary, cracked, with a ribbon. A pocket watch on a chain. And a photograph.
 
-The photograph is a young man in a suit in front of the Reading Terminal, in black and white, with a cigarette and a grin. Late twenties. Black hair. A nose you know from the mirror. A way of standing, weight on one foot, chin up, that you know from the mirror.
+The photograph is a young man in a suit in front of the Reading Terminal, in black and white, with a cigarette and a grin. Late twenties. Black hair. A nose you know from the mirror. A way of standing, weight on one foot, chin up, that Ma has been yelling at you about since you were twelve.
 
 nonna: My brother. Salvatore.
 
@@ -186,9 +186,11 @@ nonna: I lied to you, Salvatò. In September. In my kitchen. I said it was in th
 
 nonna: There was a boy. There was my brother.
 
+nonna: And my mother. I told you once, never again. Che bugiarda. She did it her whole life.
+
 She opens the diary. The pages are full of a cramped, faded, old-fashioned handwriting, in Italian, in ink that\'s gone brown. She turns to a page near the back and runs her finger along a line and translates, slow, flat, the way you read something you\'ve read a thousand times:
 
-nonna: *December 24, 1961. Salvatore went in after the children at the fire on Arch Street. Three children. He brought them out, all three. He was in the cold a long time. He came back old.*
+nonna: *December 18, 1961. Salvatore went in after the children at the fire on Arch Street. Three children. He brought them out, all three. He was in the cold a long time. He came back old.*
 
 She turns the page.
 
@@ -196,7 +198,7 @@ nonna: *My son came back an old man. Thirty years old, and his hair white as min
 
 She turns the page.
 
-nonna: *He died tonight at the table, at the Feast, in his chair, at 11:51, with the eel on his plate. Teresa was sixteen. She was sitting next to him.*
+nonna: *He died tonight at the table, at the Feast, in his chair, at 11:51, with the eel on his plate. Teresa was sixteen.*
 
 She closes the diary.
 
@@ -204,11 +206,11 @@ nonna: I was sitting next to him.
 
 She picks up the pocket watch. Gold, old, dented. She opens the case. The hands say 11:51. They\'ve said 11:51 for sixty-five years.
 
-nonna: His watch. It stopped when he stopped. Every Christmas Eve, I eat the eel, because he loved it and nobody else does. Every Christmas Eve I say his name at grace in my head. Tonight I said it out loud, because tonight the bells stopped again.
+nonna: His watch. It stopped when he stopped. Every Christmas Eve, I eat the eel, because he loved it and nobody else does. Every Christmas Eve I say his name at grace in my head. Tonight it came out loud. I didn\'t know why. Then the bells stopped, and I knew.
 
 She looks at you.
 
-nonna: I named your mother\'s son for him. Your mother wanted Michael again, for your father\'s father, and I said no, this one is Salvatore. I don\'t know why. I prayed it would skip you. I lit a candle every week for eighteen years that it would skip you.
+nonna: I named you for him. Your father wanted Francis, for himself, and I said no, this one is Salvatore. I don\'t know why. I prayed it would skip you. I lit a candle every week for eighteen years that it would skip you.
 
 nonna: God doesn\'t listen to old women from Mifflin Street.
 
@@ -282,7 +284,7 @@ nonna: When you go in, you hold it. You hold it and you listen. You don\'t go lo
 
 nonna: And Salvatò.
 
-She holds your face in both her cold hands.
+She takes your face in both her hands.
 
 nonna: You don\'t go in so much. You hear me? You don\'t go in for every bus and every fire and every bad man\'s errand. You go in when you have to. Only. My mother learned. My brother never learned. Which one are you?`,
     choices: [
@@ -298,11 +300,11 @@ nonna: You don\'t go in so much. You hear me? You don\'t go in for every bus and
 
 sam: I\'ll learn, Nonna.
 
-She looks at you for a long time. You can see her deciding whether to believe you. You can see her wanting to.
+She looks at you. You can see her deciding whether to believe you. You can see her wanting to.
 
 nonna: Good. Good boy.
 
-She lets go of your face. She puts the diary back in the tin, and the photograph, and closes it, and leaves it open on the floor, unlocked, for the first time in sixty-five years.
+She lets go of your face. She puts the diary back in the tin, and the photograph, and closes the lid, and leaves the padlock open on the floor beside it, for the first time in sixty-five years.
 
 You put the watch in the pocket of your jeans, against your leg. It\'s cold.
 
@@ -321,7 +323,7 @@ nonna: Good. You don\'t lie to me. My brother lied to my mother every time. *I\'
 
 nonna: You don\'t lie. That\'s something. That\'s a start.
 
-She puts the diary back in the tin, and the photograph, and closes it, and leaves it open on the floor, unlocked, for the first time in sixty-five years.
+She puts the diary back in the tin, and the photograph, and closes the lid, and leaves the padlock open on the floor beside it, for the first time in sixty-five years.
 
 You put the watch in your pocket. On the walk home, three doors, in the snow, at two in the morning on Christmas, you put your hand in your pocket and hold it.
 
@@ -353,11 +355,11 @@ BRANNIGAN: Of course. After the holiday.
 
 He hangs up. He sets the phone down on the desk, beside his tablet. On the tablet, a photograph, taken from a parked car on Mifflin Street: an old woman in a black coat on her stoop, sprinkling salt on the top step.
 
-He looks at it for a long time.` : `Brannigan sits alone in the dim room behind the glass on the seventh floor of Building 7 with his tea and three typed sheets of paper spread on the desk.
+He looks at it until the screen goes dark.` : `Brannigan sits alone in the dim room behind the glass on the seventh floor of Building 7 with his tea and three typed sheets of paper spread on the desk.
 
 He reads them slowly. Twenty-six names. He makes small notes in the margins in pencil.
 
-${g.f('manila') === 'tore_jayden' ? 'Halfway down the second page, he stops. There\'s a gap. A line has been torn out, neatly, along a fold. He looks at the tear for a long time. Then he takes out his tablet and calls up the thermal footage from the Parkway, and freezes it on a little boy in a puffy coat beside a wheelchair, and writes, in pencil, in the margin where the torn line was: *Torres?*' : ''}
+${g.f('manila') === 'tore_jayden' ? 'Halfway down the second page, he stops. There\'s a gap. A line has been torn out, neatly, along a fold. He runs his thumb along the tear. Then he takes out his tablet and calls up the thermal footage from the Parkway, and freezes it on a little boy in a puffy coat beside a wheelchair, and writes, in pencil, in the margin where the torn line was: *Torres?*' : ''}
 
 At the bottom of the last page, he comes to the handwritten line in blue fountain pen.
 

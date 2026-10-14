@@ -37,7 +37,7 @@ Not finishes. *Stops.* St. Rita\'s, St. Monica\'s, the Cathedral, the bells at O
 
 The air goes cold. January in September. The flags stop flapping. The band stops. The boy stops, one foot in the air. The trolley stops. A pigeon over Broad Street stops with its wings up.
 
-And Assunta DiNardo, who is sixteen and has never once been brave, steps off the curb.
+And Assunta DiNardo, who is sixteen and has never in her life been brave, steps off the curb.
 
 She walks through the stopped crowd in the cold with her breath smoking. She picks the boy up out of the tracks. He weighs nothing. Nothing weighs anything. She carries him to the curb and sets him down on the cobbles and fixes his collar, because his mother will want his collar fixed.
 
@@ -65,7 +65,7 @@ Then the bells start again.
 
 There are three kinds of fish in the bathtub. You know this because you tried to shower. The baccalà has been soaking in the big blue pot on the back step for three days, changing the water twice a day, and the whole back of the house smells like the bottom of the Delaware. There are smelts in a colander. There are clams in the sink, alive, spitting. Ma is at the stove in her apron with her hair up and a wooden spoon, and she has the look she gets once a year, the look of a general on the morning of a battle.
 
-Seven fishes. Every year. Since before Nonna was born. Baccalà, smelts, calamari, shrimp, clams with linguine, flounder, and the eel, which only Nonna eats, which Nonna has eaten every Christmas Eve for eighty-one years, and which Gigi has been told since birth will put hair on her chest.
+Seven fishes. Every year. Since before Nonna was born. Baccalà, smelts, calamari, shrimp, clams with linguine, flounder, and the eel, which only Nonna eats, which Nonna has eaten every Christmas Eve since 1961, and which Gigi has been told since birth will put hair on her chest.
 
 ${g.f('card_s2') === 'told' ? `Pop has been sleeping on the couch since the day after Thanksgiving.
 
@@ -114,7 +114,7 @@ You have the day before the fish. Time for two things.`,
       enter: g => { g.bond('rosa', { affection: 1, trust: 1 }); g.flag('ma_kitchen'); },
       text: g => `She hands you a knife and a cutting board and a bowl of soaked baccalà without saying anything, and you stand next to her at the counter and pull the bones out of salt cod, the way she taught you when you were nine, with the radio on the oldies station playing Bobby Darin.
 
-For a long time she doesn\'t say anything. Then:
+She doesn\'t say anything for two Bobby Darin songs. Then:
 
 rosa: Your hands are cold.
 
@@ -124,7 +124,7 @@ rosa: It\'s not the fish. Your hands have been cold since August. I\'m a nurse, 
 
 She doesn\'t look up from the cod.
 
-rosa: Your father sleeps on the couch. He talks in his sleep. Twenty-nine years, he never talked in his sleep. Now he talks. You know what he says?
+rosa: Your father talks in his sleep now. Twenty-nine years, he never talked in his sleep. Now he talks. You know what he says?
 
 sam: What?
 
@@ -245,7 +245,7 @@ frank: Twenty-six years I drove a cab in this city. I know every street. I know 
 
 He looks at you, finally. His hands are red and raw from the cold water.
 
-frank: That\'s the first time in my life I ever wanted to be somebody else. Not for me. So I could take it off you.
+frank: First time in my life I ever wanted to be somebody else.
 
 You don\'t know what to say. You pick up the steel wool and the second pot, the one for the linguine, and you scrub it next to him in the cold. He lets you.
 
