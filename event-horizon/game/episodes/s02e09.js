@@ -1,7 +1,7 @@
 /* S2 · E9 · DOLLAR NIGHT, part 1 of 4: meta, cold open, Act One ("April"). */
 EH.episode({
   id: 's02e09', season: 2, number: 9, title: 'Dollar Night', look: 's2',
-  cast: ['sam', 'jules', 'vinnie', 'rosa', 'mikey', 'nik', 'bree', 'grace', 'heck'],
+  cast: ['sam', 'jules', 'vinnie', 'dante', 'nonna', 'constance', 'rosa', 'mikey', 'nik', 'bree', 'grace', 'heck'],
   start: 'cold_open',
   xp: 5,
   previously: g => [
@@ -108,7 +108,7 @@ nik: Bro. Something\'s wrong with the map.`,
         options: [
           { id: 'ap9_nik', text: 'Nik\'s map. Something\'s wrong with it.', cost: 1, tag: 'Nik', go: 'a1_nik' },
           { id: 'ap9_grace', text: 'Grace has been asking to look at your hair for a month. Let her.', cost: 1, tag: 'Grace', go: 'a1_grace' },
-          { id: 'ap9_bree', text: 'Bree. Halina\'s surgery is on the calendar. Bree hasn\'t answered a text in four days.', cost: 1, tag: 'Bree', go: 'a1_bree' },
+          { id: 'ap9_bree', text: 'Bree. She hasn\'t answered a text in four days. Heck either.', cost: 1, tag: 'Bree', go: 'a1_bree' },
           { id: 'ap9_mikey', text: 'Mikey. He left a voicemail that just says *call me* in his cop voice.', cost: 1, tag: 'Mikey', go: 'a1_mikey' }
         ],
         done: 'a2_vinnie'
@@ -138,15 +138,15 @@ nik: One a night. Sometimes two. They don\'t move first. They don\'t go to work,
 
 He looks at you.
 
-nik: The first one was Washington Avenue, bro. The pho place. Where you—
+nik: The first one was Washington Avenue, bro. Some pho place by 7th.
 
-sam: Nguyen.
+sam: Phở Thanh. Thomas Nguyen. I talked him into working for Bruno.
 
-nik: Yeah.
+nik: Oh. Bro.
 
 He scrolls the map. Each dark dot has a little gray ring around it now, where Nik marked it.
 
-nik: I cross-referenced. Every dot that went dark is within two blocks of something with *Iannucci* on the paperwork. A bakery. A car wash. That bathhouse on Bustleton.
+nik: I cross-referenced. Every dot that went dark is within two blocks of something with *Iannucci* on the paperwork. A bakery. A car wash. A body shop on Bustleton.
 
 sam: Bruno\'s people.
 
@@ -182,7 +182,7 @@ heck: Inside, papa. Rápido.
 
 Bree is at the kitchen table with Teddy\'s phone in front of her. It\'s still charged.
 
-bree: The twentieth. Her surgery. Jefferson. April twentieth. Feingold called himself. There\'s a kidney.
+bree: The twentieth. Her surgery. Jefferson. April twentieth. Feingold called himself. There\'s a donor. A living one. Don\'t ask me who found him.
 
 She says it like a weather report.
 
@@ -215,7 +215,7 @@ bree: Teddy would have known what to do.`,
       enter: g => { g.know('mikey_missing9', ['sam', 'mikey'], 'Mikey: four missing-persons reports in South Philly and the Northeast since April 2. All four connected to Iannucci businesses. The 3rd District was told to "let the federal partners handle it."'); g.bond('mikey', { trust: 1 }); },
       text: `Mikey meets you on the stoop on Mifflin Street with two Yuenglings, which he opens with his badge, which he has been doing since the academy and Ma hates.
 
-mikey: Four missing-persons reports since the second. All four connected to the Iannuccis. A guy who owns a pho place. A woman who works at a florist on Frankford that Bruno\'s cousin owns. Two guys from the Northeast.
+mikey: Four missing-persons reports since the second. All four connected to the Iannuccis. A guy who owns a pho place. A woman who works at a florist on Frankford that Bruno\'s cousin owns. A guy from the Northeast. A guy who works a fish stand at the Italian Market.
 
 He drinks.
 
@@ -227,7 +227,7 @@ mikey: There\'s no such thing as a federal partner named Halcyon, Sammy. There\'
 
 He looks down Mifflin Street at the streetlight, which is off, because it\'s daytime.
 
-mikey: It\'s a war. Bruno hit their building, and now they\'re taking his people back, one at a time. And when they run out of his people, they\'re gonna start on his *businesses*, and his businesses are this whole neighborhood. And Ma spent the only thing that kept this house out of it.
+mikey: It\'s a war. Bruno hit their building, and now they\'re taking his people back, one at a time. And when they run out of his people, they\'re gonna start on his *businesses*, and his businesses are this whole neighborhood. And Mifflin Street is four blocks from Passyunk.
 
 He finishes his beer.
 

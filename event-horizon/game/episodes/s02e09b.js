@@ -18,7 +18,7 @@ vinnie: Sally.
 
 sam: Vin. What happened to your hands?
 
-vinnie: The Circolo. Last night. Four guys in gray came in the back at two in the morning. They took Sonny Pugliese. Three hundred pounds, Sally. Twenty years a cop. They walked him out like a dog on a leash, and he went, and he *smiled*.
+vinnie: The Circolo. Tonight. Four guys in gray came in the back at midnight. They took Sonny Pugliese. Three hundred pounds, Sally. Twenty years a cop. They walked him out like a dog on a leash, and he went, and he *smiled*.
 
 He looks at his hands.
 
@@ -34,7 +34,7 @@ vinnie: Shut up and listen, college, because I\'m only gonna say this once, and 
 
 He takes a breath.
 
-vinnie: Wednesday. Dollar Dog Night at the ballpark. The Pemberton Lyle suite, on the Hall of Fame level, behind home plate. It\'s Mr. Pemberton\'s client night. Every year. Bunch of rich jerkoffs eating shrimp with their backs to the field. And this year his guest is a lady doctor in a gray dress. The one with the glasses on her head.
+vinnie: Wednesday. Dollar Dog Night at the ballpark. The Pemberton Lyle suite, on the Hall of Fame level, behind home plate. It\'s Mr. Pemberton\'s client night. Every year. Bunch of rich jerkoffs eating shrimp with their backs to the field. And this year his guest is the Halcyon lady. The boss. Achterberg. Little, gray dress, glasses up on her head. Dante\'s had a guy on her for a month.
 
 You go cold. Not your cold. The other kind.
 
@@ -121,8 +121,8 @@ vinnie: Yeah. I liked her. At the dinner. *In writing.*`}`,
   a2_jules: {
     loc: 'CARDONE HALL · 9-14',
     clock: { day: 'Mon', date: 'Apr 12', time: '7:40 AM' },
-    enter: g => { g.know('dante_plan9', ['jules']); },
-    text: g => `${g.f('plan9') === 'mikey' ? 'At seven, you call Mikey. He picks up on the first ring. He listens to the whole thing without saying a word, and at the end he says, *Okay*, and *Don\'t go*, and then, *You\'re going, aren\'t you*, and then he hangs up to make phone calls.\n\n' : ''}You tell Jules in the morning, sitting on the end of the bed with the sun coming in.
+    enter: g => { g.know('dante_plan9', ['jules']); if (g.f('terms8') === 'count') g.know('rosa_counts', ['jules']); },
+    text: g => `${g.f('plan9') === 'mikey' ? 'At seven, you call Mikey. He picks up on the first ring. He listens to the whole thing without saying a word, and at the end he says, *Okay*, and *Don\'t go*, and then, *You\'re going, aren\'t you*, and then he hangs up to make phone calls.\n\n' : ''}${g.f('plan9') === 'jules' ? '' : 'You were going to keep her out of it. You last until seven-forty. '}You tell Jules in the morning, sitting on the end of the bed with the sun coming in.
 
 She listens to all of it. Dante. The hot dog cart. Lot K. *Pemberton, Juliet.*
 
@@ -136,7 +136,7 @@ jules: And I want to sit across from her, Sam.
 
 sam: Jules.
 
-jules: She has a bed with my number on it. She has a screen with my name on it. She sat at my father\'s party on New Year\'s Eve and lifted her glass at me a quarter of an inch, like a toast. I\'ve never once been in a room with her and *known*.
+jules: Miriam Achterberg. My father\'s physicist. She played cards at his table in October and folded every hand. And she has a bed with my number on it. She has a screen with my name on it. She sat at my father\'s party on New Year\'s Eve and lifted her glass at me a quarter of an inch, like a toast. I\'ve never once been in a room with her and *known*.
 
 She turns back to you.
 
@@ -144,7 +144,7 @@ jules: I\'m going. I\'m going to sit in my father\'s suite and eat cocktail shri
 
 sam: I\'ll be in the hallway.
 
-jules: I know you will. ${g.f('terms8') === 'count' ? 'And you\'ll tell your mother first.' : ''}
+jules: I know you will.${g.f('terms8') === 'count' ? '\n\nsam: I\'ll tell Ma first. I promised her. Every time.\n\njules: Good. Somebody should be counting.' : ''}
 
 She takes your cold hand in her warm one and holds it until it isn\'t cold.`,
     next: 'a3_ballpark'

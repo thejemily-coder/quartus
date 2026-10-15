@@ -24,11 +24,11 @@ ${g.f('plan9') === 'mikey' ? 'At the end of the suite hallway, by the service do
 
 Your phone buzzes.
 
-${g.f('plan9') === 'us' ? 'TXT vinnie: change of plan. D wants me on the cart not the van. he doesnt trust carmines kid. im in the hallway 9:15\nTXT vinnie: dont do nothing stupid\nTXT vinnie: i mean it college' : 'TXT vinnie: D put me on the cart. not the van. 9:15'}
+${g.f('plan9') === 'us' ? 'TXT vinnie: change of plan. D wants me on the cart not the van. he doesnt trust ritchies kid. im in the hallway 9:15\nTXT vinnie: dont do nothing stupid\nTXT vinnie: i mean it college' : 'TXT vinnie: D put me on the cart. not the van. 9:15'}
 
 ${g.f('terms8') === 'count' ? 'And then, a second later:\n\nTXT rosa: count?\n\nYou look at it until the screen goes dark.\n\nTXT sam: zero. so far\nTXT rosa: so far?\nTXT sam: ill tell you. before. i promise' : ''}
 
-The seventh inning starts. The Phillies go down in order. The organist starts playing.
+The Marlins go down in order in the top of the seventh. The organist starts playing.
 
 *Take me out to the ball game.*
 
@@ -115,7 +115,7 @@ The fluorescent lights hum on one held note. Forty thousand people on the other 
 
 Jules in the doorway. Her eyes. Moving.
 
-Following you. ${g.knows('constance_1964') ? 'Nonna said it at dinner, about a blonde girl in a black car in 1964. *Her eyes moved.* You never thought to look.' : 'You never thought to look.'} You don\'t know if they\'ve ever moved before. On the Parkway, you didn\'t look. Tonight they do. Since August, nobody has ever looked back at you in here. You lift a hand. You actually wave, like an idiot, in the middle of five guns.
+Following you. ${g.knows('constance_1964') ? 'Nonna said it at dinner, about a blonde girl in a black car in 1964. *Her eyes moved.* You never thought to look.' : 'You never thought to look.'} You don\'t know if they\'ve ever moved before. On the Parkway, you didn\'t look. Tonight they do. Since August, the only person who ever looked back at you in here was a man with your face. You lift a hand. You actually wave, like an idiot, in the middle of five guns.
 
 ${g.f('slip9') === 'told' ? 'Two miles away, on Mifflin Street, your mother is standing at the sink with her phone in her hand, and her eyes are moving too. Counting. You can almost feel it. One.' : ''}
 
@@ -202,7 +202,7 @@ sam: Hey. *Hey.* Dante. It\'s Sam. From Mifflin Street. It\'s Rosa\'s kid.
 
 Everybody looks at you. Every gun in the hallway thinks about it.
 
-sam: There\'s forty thousand people on the other side of that wall. There\'s a cop at the end of every hallway in this building. You shoot her, you\'re not trading her for anybody. You\'re trading *you* for her, and you\'re going to Phoenix, and your grandfather\'s going to sit through another funeral mass this winter, and this one\'s yours.
+sam: There\'s forty thousand people on the other side of that wall. There\'s a cop at the end of every hallway in this building. You shoot her, you\'re not trading her for anybody. You\'re trading *you* for her, and you\'re going to Phoenix, and your grandfather\'s going to sit through another funeral mass this year, and this one\'s yours.
 
 Dante\'s gun doesn\'t move.
 
@@ -258,7 +258,7 @@ Vinnie is still holding the cart.`,
 
   a3_talk_miss: {
     night: true,
-    enter: g => { g.flag('shot9'); g.know('brannigan_shot9', ['sam', 'jules', 'vinnie'], 'At the ballpark, Dante Iannucci\'s shot hit an usher who wasn\'t an usher. One of Brannigan\'s people. In the shoulder.'); g.hidden('halcyon_heat', 1); },
+    enter: g => { g.flag('shot9'); g.know('brannigan_shot9', ['sam', 'jules', 'vinnie'], 'At the ballpark, Dante Iannucci\'s shot hit an usher who wasn\'t an usher. One of Halcyon\'s people. In the shoulder.'); g.hidden('halcyon_heat', 1); },
     text: `You walk out into the middle of the corridor with your hands up.
 
 sam: Hey. Dante. It\'s Sam—

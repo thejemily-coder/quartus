@@ -13,7 +13,7 @@ Jules finds you by the Mike Schmidt statue at the third-base gate. She walks str
 
 ${g.f('slip9b') === 'jules' ? 'jules: You put me in a *closet*.\n\nsam: It was a coat room.\n\njules: You walked me backward into my father\'s coat room like a *mannequin* and you *closed the door*, Sam.\n\nShe\'s furious. She\'s shaking. She jabs you in the chest with two fingers, once for every word.\n\njules: I saw you do it. I was *in there*. I could see. I watched you walk me in, and close the door, and I couldn\'t do anything but *watch*.\n\nsam: I know.\n\njules: Don\'t ever do that again. Don\'t you ever decide where I stand.\n\nThen she puts her forehead against your chest, in the middle of Pattison Avenue, with half of South Philly walking around you.\n\njules: Thank you. Don\'t ever do it again. Thank you.' : g.f('slip9') === 'talk' ? 'jules: You walked into the middle of five guns with your hands up.\n\nsam: Yeah.\n\njules: And *talked*.\n\nsam: I talk. It\'s my whole thing. Ask anybody.\n\nShe stares at you. ' + (g.f('shot9') ? 'She doesn\'t laugh. Somebody got shot in that hallway, and you both know it. She hooks a finger through the drawstring of your hoodie and doesn\'t let go.' : 'Then she laughs, and it breaks, and she hooks a finger through the drawstring of your hoodie and doesn\'t let go.') + '\n\njules: You didn\'t go in. You could have, and you didn\'t.\n\nsam: There were people to talk to.' : 'jules: Sam.\n\nShe stops in front of you. She doesn\'t say anything for a second, which for Jules is a speech.\n\njules: I saw you.\n\nsam: What?\n\njules: In there. When it stopped. I couldn\'t move, but I could see. I watched you walk down the hallway and take the gun out of Dante\'s hand like you were taking a fork from a toddler. I watched you put it in the *sauerkraut*.\n\nShe\'s shaking.\n\njules: My eyes moved, Sam. Like Gran\'s, in the car. Nonna said—\n\nsam: I know. I saw you see me.\n\nShe puts her hand flat on your chest, over your heart, like she\'s checking it\'s still going at the regular speed.'}
 
-${g.f('jules_saw9') ? '\nAnd you think: *every time*. The Parkway. Every second you ever spent near her, and never once turned around.' : ''}
+${g.f('jules_saw9') ? '\nAnd you think about the Parkway. Her hand out where yours had been, and the man with your face looking right at her. If her eyes had moved that day, she\'d have told you on the roof, with everything else. So this is new. Something changed. In her, or in the cold.' : ''}
 
 Your phone buzzes.
 
@@ -81,7 +81,7 @@ After, on the stoop, he tells you. He drove Dante home Wednesday night and put h
 
 Bruno was sitting at the table. He watched him do it. He didn\'t say a word.
 
-At the door, Bruno said one thing.
+At the door, Bruno spoke.
 
 vinnie: He said, *Vincenzo. Who told you to do this?* I said nobody told me, Grandpa. And he nodded. Like that was the right answer.
 
@@ -116,9 +116,9 @@ ${g.f('slip9b') === 'guns' ? 'Late that night, a text from a number you don\'t h
   /* ================= TAG ================= */
   tag_stoop: {
     card: { kind: 'tag' },
-    night: true,
     loc: 'MIFFLIN STREET',
     clock: { day: 'Mon', date: 'Apr 19', time: '4:00 PM' },
+    enter: g => { g.know('nonna_constance', ['constance']); g.know('constance_1964', ['constance']); },
     text: `> THE CAMERA.
 
 Mifflin Street at four in the afternoon on a Monday. School out. Kids on bikes. A man hosing down his steps.

@@ -312,3 +312,10 @@ Write each episode to the save. The plan bends; the save doesn't.
   - Constance and Teresa: a plan for the grandchildren.
   - Mifflin Street is protected by Bruno's gift (except on the "went" path, where Vinnie asked).
   - Jules's eyes move in the Slip.
+  - **S2E9 QA:**
+    - Vinnie names Achterberg ("the Halcyon lady").
+    - Jules knows her as "my father's physicist".
+    - Jules's eyes moving is **new** this episode (not retroactive to the Parkway): "Something changed. In her, or in the cold."
+    - Halina's kidney comes from a living donor ("Don't ask me who found him").
+    - Constance now knows `nonna_constance` and `constance_1964`.
+    - The hub intro is split from the hub (a1_week9).
