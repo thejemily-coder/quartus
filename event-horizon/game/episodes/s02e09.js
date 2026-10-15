@@ -65,7 +65,11 @@ He looks at the koi.
 
 NGUYEN: Somebody feed them. Tomorrow. Twice a day. Not too much.
 
-They take him out the front door, gently, like an old man going to a doctor\'s appointment.
+One of them reaches for his elbow.
+
+NGUYEN: I\'m fifty-two. I can walk.
+
+They let him. They walk him out the front door on either side, close, like ushers.
 
 The koi turn in the blue light.`,
       next: 'titles'
@@ -83,7 +87,7 @@ The koi turn in the blue light.`,
 
 You wake up at 7:30 to a text.
 
-${g.f('terms8') === 'count' ? 'TXT rosa: count?\nTXT sam: zero\nTXT rosa: good. eat breakfast\n\nEvery morning. Since March. Every morning she asks and every morning you answer, and it\'s been zero for three weeks, and every time you type it you feel something in your chest let go a little, like a knot being worked loose by somebody patient.' : 'TXT rosa: eat breakfast\nTXT rosa: I know you\'re not eating breakfast\n\nEvery morning. Since March.'}
+${g.f('terms8') === 'count' ? 'TXT rosa: count?\nTXT sam: zero\nTXT rosa: good. eat breakfast\n\nEvery morning. Since March. Every morning she asks and every morning you answer, and it\'s been zero for three weeks, and somewhere in there you started looking forward to typing it.' : 'TXT rosa: eat breakfast\nTXT rosa: I know you\'re not eating breakfast\n\nEvery morning. Since March.'}
 
 ${g.hv('revenant_drift') < 10 ? 'Something has changed. You noticed it a week ago, waiting for the light at Broad and Cecil B. Moore, when a car ran the red and a kid on a bike was in the crosswalk, and you felt the second open, the door right there, and you *didn\'t go*. You let the kid see the car. You let him stop. He stopped. Nobody needed you.\n\nAnd the cold, when you reached for it, just to check, just to touch it the way you\'d touch a sore tooth, felt different. Not a river. A pool. Something you could get into, and get out of.' : 'The cold is still there when you reach for it. A river. It still grabs.'}
 
@@ -130,13 +134,13 @@ April third. A dot on Bustleton Avenue. Dark.
 
 April fourth. Two. One by the Italian Market, one in Fishtown.
 
-nik: One a night. Sometimes two. They don\'t move first. They don\'t go to work, they don\'t go home. They just *stop*. Like somebody switched them off.
+nik: One a night. Sometimes two. They don\'t move first. They don\'t go to work, they don\'t go home. They just *stop*. Like somebody\'s logging them out. Server-side.
 
 He looks at you.
 
 nik: The first one was Washington Avenue, bro. The pho place. Where you—
 
-sam: Where I talked a man into working for Bruno.
+sam: Nguyen.
 
 nik: Yeah.
 
@@ -174,7 +178,7 @@ ${g.hv('revenant_drift') < 10 ? 'She sits back. She turns the clicker around and
 
 Bree doesn\'t come to the door. Heck does, filling it, in an apron. He looks at you, and then up and down the street, both ways, the way you look before you cross.
 
-heck: Inside, papa. Quick.
+heck: Inside, papa. Rápido.
 
 Bree is at the kitchen table with Teddy\'s phone in front of her. It\'s still charged.
 

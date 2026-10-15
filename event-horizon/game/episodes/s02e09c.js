@@ -26,7 +26,7 @@ Your phone buzzes.
 
 ${g.f('plan9') === 'us' ? 'TXT vinnie: change of plan. D wants me on the cart not the van. he doesnt trust carmines kid. im in the hallway 9:15\nTXT vinnie: dont do nothing stupid\nTXT vinnie: i mean it college' : 'TXT vinnie: D put me on the cart. not the van. 9:15'}
 
-${g.f('terms8') === 'count' ? 'And then, a second later:\n\nTXT rosa: count?\n\nYou look at it for a long time.\n\nTXT sam: zero. so far\nTXT rosa: so far?\nTXT sam: ill tell you. before. i promise' : ''}
+${g.f('terms8') === 'count' ? 'And then, a second later:\n\nTXT rosa: count?\n\nYou look at it until the screen goes dark.\n\nTXT sam: zero. so far\nTXT rosa: so far?\nTXT sam: ill tell you. before. i promise' : ''}
 
 The seventh inning starts. The Phillies go down in order. The organist starts playing.
 
@@ -115,7 +115,7 @@ The fluorescent lights hum on one held note. Forty thousand people on the other 
 
 Jules in the doorway. Her eyes. Moving.
 
-Her eyes are moving. Following you. ${g.knows('constance_1964') ? 'Nonna said it at dinner, about a blonde girl in a black car in 1964. *Her eyes moved.* You never thought to look.' : 'You never thought to look.'} You don\'t know if they\'ve ever moved before. On the Parkway, you didn\'t look. Tonight they do. You didn\'t know it would feel like this, to be seen in here.
+Following you. ${g.knows('constance_1964') ? 'Nonna said it at dinner, about a blonde girl in a black car in 1964. *Her eyes moved.* You never thought to look.' : 'You never thought to look.'} You don\'t know if they\'ve ever moved before. On the Parkway, you didn\'t look. Tonight they do. Since August, nobody has ever looked back at you in here. You lift a hand. You actually wave, like an idiot, in the middle of five guns.
 
 ${g.f('slip9') === 'told' ? 'Two miles away, on Mifflin Street, your mother is standing at the sink with her phone in her hand, and her eyes are moving too. Counting. You can almost feel it. One.' : ''}
 
@@ -153,7 +153,7 @@ The dart hits Dante in the side of the neck. *Pfft.* He grabs at it.
 
 DANTE: What the—
 
-He sways. He catches himself on the cart. He\'s big and the dose was measured for somebody who wasn\'t holding a gun, and it isn\'t enough, and he stays on his feet.
+He sways. He catches himself on the cart. He\'s big, and the dart was loaded for somebody smaller, and it isn\'t enough, and he stays on his feet.
 
 Achterberg hasn\'t moved. She\'s looking at Dante\'s empty hand. Then, slowly, down the corridor. At you. Standing at the end of it ${g.S.drift >= 5 || g.unsticks() ? 'with your nose bleeding' : 'with your hands empty'}, where you were standing a second ago, and also not.
 
@@ -202,7 +202,7 @@ sam: Hey. *Hey.* Dante. It\'s Sam. From Mifflin Street. It\'s Rosa\'s kid.
 
 Everybody looks at you. Every gun in the hallway thinks about it.
 
-sam: There\'s forty thousand people on the other side of that wall. There\'s a cop at the end of every hallway in this building. You shoot her, you\'re not trading her for anybody. You\'re trading *you* for her, and you\'re going to Phoenix, and your grandfather\'s going to have to bury you, too, next to Teddy.
+sam: There\'s forty thousand people on the other side of that wall. There\'s a cop at the end of every hallway in this building. You shoot her, you\'re not trading her for anybody. You\'re trading *you* for her, and you\'re going to Phoenix, and your grandfather\'s going to sit through another funeral mass this winter, and this one\'s yours.
 
 Dante\'s gun doesn\'t move.
 
@@ -216,7 +216,7 @@ DANTE: *Rosa\'s kid.*
 
 He lowers the gun.
 
-DANTE: Your mother walked into my grandfather\'s club in her church coat. You know that? Sonny moved for her. *Sonny.*
+DANTE: Your mother walked into my grandfather\'s club in her church coat. You know that? Sonny moved for her. *Sonny.* And now they got Sonny.
 
 He puts the gun back in his jacket.
 
@@ -228,7 +228,7 @@ DANTE: Not tonight, Doctor. But you got my people. And I\'m gonna get them back.
 
 ACHTERBERG: I don\'t doubt it, Mr. Iannucci.
 
-The ushers lower their hands. Everybody backs up, slowly, like a film running in reverse. Dante and the catering guys walk back toward the freight elevator.
+The ushers lower their hands. Everybody backs up, slowly, one step at a time, nobody first. Dante and the catering guys walk back toward the freight elevator.
 
 Vinnie is still holding the cart.`,
     next: 'a3_elevator'
@@ -361,7 +361,11 @@ vinnie: Okay.
 
 That\'s all he says. *Okay.*
 
-You stand there. Then you put your arm around him, and he lets you, and his whole body is shaking.`,
+You stand there. Then you put your arm around him, and he lets you, and he\'s shaking, in his undershirt, under the fluorescent light.
+
+vinnie: *(into your shoulder)* Don\'t make it weird, college.
+
+You don\'t let go.`,
     next: 'a4_after'
   },
 
@@ -371,7 +375,7 @@ You stand there. Then you put your arm around him, and he lets you, and his whol
 
 You look at him. You don\'t nod. You don\'t shake your head. You just stand there and let it be his.
 
-He sees you do it. He sees you *not* do it. Something in his face changes, a surprise so big it looks like grief.
+He sees you do it. He sees you *not* do it. His mouth opens. Nothing comes out. For once in his life, Vinnie Russo has nothing to say.
 
 DANTE: *Vin.*
 

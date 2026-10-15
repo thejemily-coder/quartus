@@ -18,11 +18,11 @@ vinnie: Sally.
 
 sam: Vin. What happened to your hands?
 
-vinnie: The Circolo. Last night. Four guys in gray came in the back at two in the morning. They took Sonny Pugliese. Three hundred pounds, Sally. Twenty years a cop. They walked him out like a dog on a leash, and he went, and he *smiled*, like he was dreaming.
+vinnie: The Circolo. Last night. Four guys in gray came in the back at two in the morning. They took Sonny Pugliese. Three hundred pounds, Sally. Twenty years a cop. They walked him out like a dog on a leash, and he went, and he *smiled*.
 
 He looks at his hands.
 
-vinnie: I hit one of \'em. It was like hitting a wall. He didn\'t even look at me.
+vinnie: I hit one of \'em. Yo, I hit him *good*. Best shot I threw since eighth grade. He didn\'t even look at me. Like I was weather.
 
 He sits there. You sit down next to him on the edge of the dock.
 
@@ -34,11 +34,11 @@ vinnie: Shut up and listen, college, because I\'m only gonna say this once, and 
 
 He takes a breath.
 
-vinnie: Wednesday. Dollar Dog Night at the ballpark. The Pemberton Lyle suite, on the Hall of Fame level, behind home plate. It\'s Mr. Pemberton\'s client night. Every year. Fancy people, cocktail shrimp, they don\'t watch the game. And this year his guest is a lady doctor in a gray dress. The one with the glasses on her head.
+vinnie: Wednesday. Dollar Dog Night at the ballpark. The Pemberton Lyle suite, on the Hall of Fame level, behind home plate. It\'s Mr. Pemberton\'s client night. Every year. Bunch of rich jerkoffs eating shrimp with their backs to the field. And this year his guest is a lady doctor in a gray dress. The one with the glasses on her head.
 
 You go cold. Not your cold. The other kind.
 
-vinnie: Dante\'s got a cousin who works catering at the park. Seventh-inning stretch, the lady goes to the bathroom, or takes a call, or whatever, and Dante\'s guys grab her in the service hallway behind the suites, and wheel her out the freight elevator in a hot dog cart. *A hot dog cart*, Sally. On Dollar Dog Night. Dante thinks that\'s the funniest thing he ever heard.
+vinnie: Dante\'s got a cousin who works catering at the park. Seventh-inning stretch, the lady goes to the bathroom, or takes a call, or whatever, and Dante\'s guys grab her in the service hallway behind the suites, and wheel her out the freight elevator in a hot dog cart. *A hot dog cart*, Sally. On Dollar Dog Night. Stuff a lady doctor in with the wieners. I said, D, that\'s not a plan, that\'s a porno. He didn\'t laugh. He thinks *his* version\'s the funniest thing he ever heard.
 
 vinnie: And then they trade her. For Sonny, and the pho guy, and everybody else.
 
@@ -84,13 +84,13 @@ sam: I was a great shortstop.
 
 vinnie: You were *fast*. That\'s not the same thing. You were always fast. I always knew. Since we were nine. You think I didn\'t know?
 
-He puts his towel-wrapped hand on the back of your neck, the way his father used to do to both of you, before Curran-Fromhold.
+He puts his towel-wrapped hand on the back of your neck, the way Mr. Russo used to grab you both after games at FDR, win or lose, back when Mr. Russo came to games.
 
-vinnie: Wednesday. Lot K. I\'ll be the van that says *Dante\'s Catering*. He really did that. He had it painted.` : g.f('plan9') === 'mikey' ? `vinnie: You tell your brother, and Dante sees a cop on that level, and he knows somebody talked.
+vinnie: Wednesday, bol. Lot K. I\'ll be the van that says *Dante\'s Catering*. He really did that. He had it painted.` : g.f('plan9') === 'mikey' ? `vinnie: You tell your brother, and Dante sees a cop on that level, and he knows somebody talked.
 
 sam: Vin—
 
-vinnie: And there\'s six people who knew the plan, Sally. Six. And one of \'em\'s best friends with a cop\'s brother since kindergarten. You think Dante can\'t count to six?
+vinnie: And there\'s six people who knew the plan, Sally. Six. And one of \'em bit a kid named Brendan for a cop\'s brother in kindergarten. You think Dante can\'t count to six?
 
 He stands up.
 
@@ -98,15 +98,15 @@ vinnie: Do what you gotta do. You always do. I just— I wanted you to know wher
 
 He walks off across the parking lot toward Broad Street with his hands in Dante\'s coat, and doesn\'t look back.` : `vinnie: Your girl\'s gonna decide.
 
-sam: It\'s her father\'s suite. It\'s her name on their screen. She\'s not a thing I protect, Vin. She\'s— she gets to know.
+sam: It\'s her father\'s suite. It\'s her number on their screen. She\'s not a thing I protect, Vin. She\'s— she gets to know.
 
-Vinnie looks at you for a long time.
+Vinnie looks at you. Then he looks again.
 
 vinnie: Huh. Okay. That\'s new.
 
 sam: What?
 
-vinnie: You. Not deciding for somebody. Since we were nine, you decided for everybody. Who got picked first, who went in the pool, who fought who. You decided for *me*.
+vinnie: You. Not deciding for somebody. Since kindergarten, you decided for everybody. Who got picked first, who went in the pool, who fought who. Who I bit. You decided for *me*.
 
 He stands up.
 
@@ -128,7 +128,7 @@ She listens to all of it. Dante. The hot dog cart. Lot K. *Pemberton, Juliet.*
 
 When you\'re done, she\'s quiet for a while.
 
-jules: My father has done client night at the ballpark every April since I was eight. I have never once missed it. If I don\'t go, he asks why. If he asks why, she hears him ask.
+jules: My father has done client night at the ballpark every April since I was eight. I have never missed it. If I don\'t go, he asks why. If he asks why, she hears him ask.
 
 She looks at the window.
 
