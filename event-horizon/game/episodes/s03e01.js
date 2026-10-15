@@ -18,7 +18,7 @@ EH.episode({
     cold_open: {
       card: { kind: 'cold' },
       loc: 'CITY HALL · THE MAYOR\'S RECEPTION ROOM',
-      clock: { day: 'Sun', date: 'Aug 22', time: '9:40 AM' },
+      clock: { day: 'Sun', date: 'Aug 22', time: '9:59 AM' },
       text: `> THE CAMERA.
 
 The Mayor\'s Reception Room at City Hall, on a Sunday morning, with the chandeliers on and nobody in it but a makeup artist, a woman in a gray cardigan, and the Chief of Surgery at the Hospital of the University of Pennsylvania.
@@ -93,7 +93,7 @@ You\'re in the bathroom of a sophomore apartment in 1300, the tall one on Broad,
 
 You look in the mirror over the sink.
 
-${g.f('count10') ? 'The white at your temple is still there, the streak from the winter. It hasn\'t spread since the spring. Grace measured it in May and said *same* and looked almost disappointed.' : 'The white at your temple is still there. It hasn\'t spread since the spring.'}
+${g.knows('time_debt2') ? 'The white at your temple is still there, the streak from last fall. It hasn\'t spread since the spring. Grace measured it in May and said *same* and looked almost disappointed.' : 'The white at your temple is still there. It hasn\'t spread since the spring.'}
 
 The rest of you has changed. It took the summer to notice. You\'re a year older, and you look it, and somewhere in there you look like someone who has decided some things.
 
@@ -105,7 +105,7 @@ What did the year make you?`,
           fx: g => { g.attr('reflex', 1); g.flag('s3_attr', 'reflex'); }, go: 'a1_nik' },
         { text: 'Sharper. Femi\'s notebook, read cover to cover over the summer. *Outside first.* You notice the shape of things now. (Wits +1)', tag: 'Wits',
           fx: g => { g.attr('wits', 1); g.flag('s3_attr', 'wits'); }, go: 'a1_nik' },
-        { text: 'Easier with people. A summer of Sunday gravy with Jules at the table, Ma and Nonna and a Pemberton. You learned to talk to anybody. (Charm +1)', tag: 'Charm',
+        { text: 'Easier with people. A summer of Sunday gravy, Ma and Nonna and a Pemberton at the same table. You learned to talk to anybody. (Charm +1)', tag: 'Charm',
           fx: g => { g.attr('charm', 1); g.flag('s3_attr', 'charm'); }, go: 'a1_nik' },
         { text: 'Softer. Ma counting. Vinnie\'s *save this number*. You let more in than you used to. (Heart +1)', tag: 'Heart',
           fx: g => { g.attr('heart', 1); g.flag('s3_attr', 'heart'); }, go: 'a1_nik' },

@@ -4,7 +4,7 @@ EH.scenes('s03e01', {
   /* ================= ACT THREE: WELLNESS CHECK ================= */
   a3_carmen: {
     card: { kind: 'act', label: 'Act Three', title: 'Wellness Check' },
-    loc: 'BROAD STREET',
+    loc: g => g.f('watch1') === 'home' ? 'MIFFLIN STREET · THE KITCHEN' : 'THE BROAD STREET LINE · SOUTHBOUND',
     clock: { day: 'Sun', date: 'Aug 22', time: '2:40 PM' },
     enter: g => { g.meet('carmen'); g.meet('jayden'); },
     text: g => `${g.f('watch1') === 'home' ? 'Gravy is on the table. Ma is serving. Jules is learning, for the eleventh Sunday in a row, that you do not say *no thank you* to Nonna\'s meatballs, you say *just one*, and then you eat four.' : 'You\'re on the Broad Street Line, the two of you, heading south for gravy, forty minutes late for a two o\'clock that Ma considers a legal deadline.'}
@@ -31,7 +31,7 @@ Or less. A lot less. If you go the other way.`,
     choices: [
       { text: 'The subway. With Jules. Twenty minutes. Call Carmen back and tell her to keep the door shut.', tag: 'Subway',
         fx: g => { g.flag('travel1', 'subway'); }, go: 'a3_door' },
-      { text: 'Text Ma. *Counting.* Then go. Two miles in no time. Jules can follow on the train.', tag: 'Tell Ma, then Slip', slip: true, if: g => g.f('terms8') === 'count',
+      { text: g => (g.f('watch1') === 'home' ? 'Catch Ma\'s eye across the table. *Counting.* Then go.' : 'Text Ma. *Counting.* Then go.') + ' Up Broad Street in no time. Jules can follow on the train.', tag: 'Tell Ma, then Slip', slip: true, if: g => g.f('terms8') === 'count',
         fx: g => { g.flag('travel1', 'slip'); g.bond('rosa', { trust: 1 }); g.hidden('halcyon_heat', 1); g.know('rosa_count_s3e1', ['sam', 'rosa'], 'On the anniversary, you texted Ma "counting" and Slipped up Broad Street to Carmen\'s.'); }, go: 'a3_door' },
       { text: 'Slip. Go. Now.', tag: 'Slip', slip: true,
         fx: g => { g.flag('travel1', 'slip'); g.hidden('halcyon_heat', 1); if (g.f('terms8') === 'count') { g.flag('broke_count_s3e1'); g.bond('rosa', { trust: -1 }); g.hidden('revenant_drift', 1); } }, go: 'a3_door' }
@@ -42,7 +42,7 @@ Or less. A lot less. If you go the other way.`,
     loc: 'NORTH 15TH STREET, NEAR LEHIGH',
     clock: { time: '3:05 PM' },
     enter: g => { if (g.f('travel1') === 'slip' && g.unsticks()) g.unstick('unstick_s3e1a', 'Time debt (Broad Street, north)'); g.know('registry_outreach', ['sam', 'jules', 'carmen'], 'Registry outreach came to Carmen Torres\'s door for Jayden on the anniversary: two nurses in navy polos, a city health inspector, a typed letter with his name and birthday, and a white SUV with a man who never got out.'); },
-    text: g => `${g.f('travel1') === 'slip' ? 'You step out of the Slip on the corner of 15th and Lehigh, between a parked car and a hydrant, a little cold, a little out of breath. Jules is still on a train somewhere under Broad Street. That\'s fine. That was the point.' : 'You come up out of the Lehigh station into the heat, and walk fast, Jules half a step ahead of you, which she never is.'}
+    text: g => `${g.f('travel1') === 'slip' ? 'You step out of the Slip on the corner of 15th and Lehigh, between a parked car and a hydrant, a little cold, a little out of breath. Jules is still on a train somewhere under Broad Street. That\'s fine. That was the point.' : 'You come up out of North Philadelphia station into the heat, and walk fast, Jules half a step ahead of you, which she never is.'}
 
 North 15th Street, near Lehigh. A block of rowhouses with awnings, and old men on folding chairs, and a kid with a hose spraying the sidewalk to cool it.
 
@@ -74,7 +74,11 @@ ${g.f('travel1') === 'slip' ? 'You\'re alone on the stoop. Jules is ten minutes 
     choices: [
       { text: 'Go past them, up the stairs. Ask Carmen what *she* wants. Then stand next to her while she says it.', tag: 'Ask Carmen',
         fx: g => { g.flag('wellness1', 'carmen'); g.bond('carmen', { trust: 2, respect: 1 }); g.hidden('revenant_drift', -1); }, go: 'a3_carmen_says' },
-      { text: '"I\'m her grandson\'s friend. He\'s not going anywhere today." Talk them off the stoop.', tag: 'Talk',
+      { text: '"I\'m her grandson\'s friend. He\'s not going anywhere today." Talk them off the stoop.', tag: 'Talk', if: g => g.f('travel1') === 'slip',
+        check: { kind: 'move', move: 'Talk Them Down', attr: 'charm', skill: 'persuade', label: 'Talk the Registry off the stoop',
+          on: { strong: 'a3_talk', weak: 'a3_talk_weak', miss: 'a3_talk_miss' } },
+        fx: g => { g.flag('wellness1', 'talk'); } },
+      { text: '"I\'m her grandson\'s friend. He\'s not going anywhere today." Talk them off the stoop.', tag: 'Talk', if: g => g.f('travel1') !== 'slip',
         check: { kind: 'move', move: 'Talk Them Down', attr: 'charm', skill: 'persuade', label: 'Talk the Registry off the stoop', near: ['jules'],
           on: { strong: 'a3_talk', weak: 'a3_talk_weak', miss: 'a3_talk_miss' } },
         fx: g => { g.flag('wellness1', 'talk'); } },
@@ -244,7 +248,7 @@ TORRES, J. (9). 15th St. ES-38. Fourth on the list.
 
 You keep reading.
 
-KOWAL, B. (23). Port Richmond.
+KOWAL, B. (19). Port Richmond.
 
 RAMOS, H. (24). Kensington.
 
@@ -278,7 +282,7 @@ ${g.f('travel1') === 'slip' ? 'And you\'re still alone on this stoop.' : 'Beside
     enter: g => { g.know('jayden_tonight1', ['sam', 'jayden', 'carmen'], 'Jayden, on the anniversary: "It\'s gonna get cold tonight. Everywhere. At the time."'); g.bond('jayden', { trust: 1, affection: 1 }); },
     text: g => `Carmen\'s living room is the same as every abuela\'s living room in Philadelphia: plastic on the good couch, a San Judas Tadeo candle, a TV the size of a garage door, and a hundred photos of one boy.
 
-${g.f('travel1') === 'slip' && g.f('wellness1') !== 'mikey' ? 'Jules gets there ten minutes behind you, out of breath, and takes one look at you and doesn\'t ask.\n\n' : ''}Jayden is nine now. He\'s grown two inches and lost both front teeth and he is wearing, of course, ${g.f('hero_name') === 'secondhand' ? 'a red SECOND HAND T-shirt' : 'one of the T-shirts'}.
+${g.f('travel1') === 'slip' ? 'Jules gets there ten minutes behind you, out of breath, and takes one look at you and doesn\'t ask.\n\n' : ''}Jayden is nine now. He\'s grown two inches and lost both front teeth and he is wearing, of course, ${g.f('hero_name') === 'secondhand' ? 'a red SECOND HAND T-shirt' : 'one of the T-shirts'}.
 
 He walks right up to you and looks up.
 
@@ -309,7 +313,7 @@ She doesn\'t look up.
 carmen: Five hundred dollars and free doctors. I get eleven hundred a month. The hip took everything. Every month I choose: the light bill or my pills. They said *five hundred dollars*. They said *free*. Maybe I\'m a stupid old woman. Maybe I should call them.`,
     choices: [
       { text: 'Tell her the truth. The beds. The numbers on whiteboards. The man in the SUV. What *free* means.', tag: 'The truth',
-        fx: g => { g.flag('carmen1', 'truth'); g.bond('carmen', { trust: 2 }); g.know('carmen_truth1', ['carmen'], 'Sam told Carmen what the Registry really is: Halcyon\'s beds, the ES numbers, the people who were taken.'); }, go: 'a3_carmen_end' },
+        fx: g => { g.flag('carmen1', 'truth'); g.bond('carmen', { trust: 2 }); g.know('carmen_truth1', ['sam', 'carmen'], 'Sam told Carmen what the Registry really is: Halcyon\'s beds, the ES numbers, the people who were taken.'); }, go: 'a3_carmen_end' },
       { text: 'Give her what\'s in your wallet. Two hundred dollars. It isn\'t five hundred. It isn\'t nothing.', tag: 'The money',
         fx: g => { g.flag('carmen1', 'money'); g.money(-200); g.bond('carmen', { affection: 2, trust: 1 }); g.hidden('revenant_drift', 0.5); }, go: 'a3_carmen_end' },
       { text: '"It\'s your choice, Carmen. Whatever you pick, I\'ll help. I\'ll be there." And mean it.', tag: 'Her choice',

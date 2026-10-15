@@ -37,7 +37,7 @@ He hasn\'t seen you yet.
         fx: g => { g.flag('corner1', 'hand'); g.bond('jules', { affection: 1, trust: 1 }); g.hidden('revenant_drift', -1); }, go: 'a4_minute' },
       { text: 'Walk over to the van. Four minutes is enough time to say something to Hugh Pemberton.', tag: 'Hugh',
         fx: g => { g.flag('corner1', 'hugh'); g.meet('hugh'); }, go: 'a4_hugh' },
-      { text: 'Get ready to Slip at 11:51 exactly. Whatever happens in that second, you want to see it from the inside.', tag: 'Look inside',
+      { text: 'Get ready to Slip at 11:51 exactly. Whatever happens in that second, you want to see it from the inside.', tag: 'Look inside', slip: true,
         fx: g => { g.flag('corner1', 'slip'); g.hidden('revenant_drift', 0.5); }, go: 'a4_minute' }
     ]
   },
@@ -119,7 +119,7 @@ ${g.f('corner1') === 'hand' ? 'Jules felt it too. Her hand jerks in yours, hard,
     night: true,
     loc: 'BROAD & SPRING GARDEN · BETWEEN',
     enter: g => { if (g.unsticks()) g.unstick('unstick_s3e1c', 'Time debt (the anniversary)'); g.flag('saw_seam1'); g.know('seam1', ['sam'], 'In the Slip at 11:51:04 on the anniversary, Sam saw a hairline of white light running down the center of Broad Street, from the corner at Spring Garden south toward City Hall, like a crack in a plate. Across the street, a girl in a black hoodie was not stopped. Her eyes moved. She looked at him.'); g.hidden('halcyon_heat', 1); },
-    text: g => `At 11:51:04, you step through.
+    text: g => `That second, 11:51:04, the one that happened twice: you spent it inside.
 
 ${g.unsticks() ? 'The cold grabs.' : 'The pool. Still.'}
 
@@ -165,10 +165,9 @@ jules: *(very calmly)* Of course there is.`,
     night: true,
     loc: 'BROAD STREET, WALKING NORTH',
     clock: { time: '12:20 AM' },
-    enter: g => { g.recap('One year after the Hitch, at 11:51:04, every clock in North Philadelphia said four twice.'); },
     text: g => `Afterward, the fifteen people on the four corners go home, one at a time, without talking to each other, the way people leave a funeral for somebody they didn\'t know well. A few of them stop at the van for water. Most don\'t.
 
-You and Jules walk north on Broad. A mile. Past the Divine Lorraine, past the Uptown, past the place on Girard that sells the good cheesesteaks, closed now. It\'s hot. Her hand in yours is cold again, her ordinary cold.
+You and Jules walk north on Broad. A mile. Past the Divine Lorraine, past the place on Girard that sells the good cheesesteaks, closed now. It\'s hot. Her hand in yours is cold again, her ordinary cold.
 
 ${g.f('mother1') === 'ask' ? 'jules: I\'m going to start the letter tonight. *Dear Mother.* No. *Mother.* No. I\'ll figure it out. I have four hundred sheets of Crane\'s.' : g.f('mother1') === 'call' ? 'Her phone has buzzed thirty-one times since noon. She hasn\'t turned it over once.\n\njules: She\'s going to come to campus. Tomorrow. I know her. She\'ll come in the car and stand in the lobby of 1300 in her cream jacket and say *Juliet* until I come down.' : 'jules: Tomorrow I\'ll call her. Tomorrow. Today was ours. I wanted one thing to be ours.'}
 
@@ -224,7 +223,7 @@ She closes the laptop very gently. She sits in the lamplight with her hands flat
 
 After a while she gets up, and walks down the long dark hall in her stocking feet, past the portraits, to the door at the end, where there\'s a line of light underneath. She doesn\'t knock.
 
-Constance Pemberton is in a wingback chair in her dressing gown, with a book she isn\'t reading and a glass of something amber. She doesn\'t look surprised. She looks like she\'s been sitting up waiting for this exact knock, for a very long time.
+Constance Pemberton is in a wingback chair in her dressing gown, with a book she isn\'t reading and a glass of something amber. She doesn\'t look surprised. She looks like she\'s been sitting up waiting for this exact door to open, for a very long time.
 
 catherine: Did you know?
 
@@ -273,6 +272,7 @@ Object.assign(EH.episodes.s03e01, {
     g.recap('Registry outreach came to Carmen Torres\'s door for Jayden.' + (g.f('wellness1') === 'carmen' ? ' Carmen told them no herself.' : g.f('wellness1') === 'mikey' ? ' Mikey sent them away. "Next it\'s cops."' : g.f('wellness1') === 'clipboard' ? ' Their route sheet had Bree and Heck on it.' : ''));
     if (g.f('dhs_threat1')) g.recap('The city inspector said he would refer Carmen to DHS.');
     g.recap('Jayden: "It\'s gonna get cold tonight. Everywhere. At the time."');
+    g.recap('One year after the Hitch, at 11:51:04, every clock in North Philadelphia said four twice.');
     if (g.f('saw_seam1')) g.recap('In the Slip, a crack of light ran down the middle of Broad Street. A girl in a black hoodie wasn\'t stopped.');
     g.recap('Catherine Pemberton found ES-44 in the Registry. Handler: H. Pemberton. Constance: "I\'ve known since before she was born."');
   }
