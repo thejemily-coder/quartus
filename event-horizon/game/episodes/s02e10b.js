@@ -36,7 +36,7 @@ vinnie: And Dante\'s gonna be at Tenth and Washington with six guys and a van wh
 
 The light buzzes.
 
-vinnie: Halcyon\'s gonna be there too. The polite guy. Brannigan. He doesn\'t do moves without being there. And there\'s gonna be ten thousand people in the street, Sally. Ladies with strollers. Your mom. *My* mom. Old guys with hips.
+vinnie: Halcyon\'s gonna be there too. The polite guy. Brannigan. He doesn\'t do moves without being there. And the whole neighborhood\'s gonna be in the street, Sally. Ladies with strollers. Your mom. *My* mom. Old guys with hips.
 
 He looks at his hands. The knuckles have healed. One of them healed crooked.
 
@@ -188,7 +188,7 @@ heck: In January, on the eighth floor, they had Marisol in a bed with a number o
 
 He pulls the gloves off with his teeth.
 
-heck: Marisol\'s good now. She\'s back at work at the bakery. She doesn\'t sleep good. She makes me sit in the kitchen until she does.
+heck: Marisol\'s good now, gracias a Dios. She\'s back at work at the bakery. She doesn\'t sleep good. She makes me sit in the kitchen until she does.
 
 heck: A fridge is cold, Wawa. You know what I am.
 
@@ -218,11 +218,11 @@ mikey: That\'s the corner.
 
 He balls up the hoagie paper.
 
-mikey: I can\'t raid a warehouse on a story from Vinnie Russo, Sally. I can\'t put a SWAT team on Tenth Street on festival Sunday because my brother\'s friend\'s cousin can\'t park. You know what I can do?
+mikey: I can\'t raid a warehouse on a story from Vinnie Russo, Sammy. I can\'t put a SWAT team on Tenth Street on festival Sunday because my brother\'s friend\'s cousin can\'t park. You know what I can do?
 
 sam: What?
 
-mikey: I can be standing on that corner. And when that truck pulls out, and Dante\'s van pulls in, I can be a cop in the middle of the street with my hand up. And I can make the sergeant put six more guys on Washington Avenue, because I\'m gonna tell him I got a bad feeling, and I never told him I got a bad feeling in nine years, so he\'ll listen.
+mikey: I can be standing on that corner. And when that truck pulls out, and Dante\'s van pulls in, I can be a cop in the middle of the street with my hand up. And I can make the sergeant put six more guys on Washington Avenue, because I\'m gonna tell him I got a bad feeling, and I never once told him I got a bad feeling, so he\'ll listen.
 
 He looks at you.
 
@@ -245,7 +245,7 @@ Fifty multiple choice. Three short answers.
 
 Short answer two: *Describe the difference between short-term and long-term potentiation, and give an everyday example.*
 
-You look at it for a long time. Somewhere in your head, the professor in February, at the front of this same room, writing it on the board in yellow chalk: *What fires together, wires together.*
+You read it twice. Somewhere in your head, the professor in February, at the front of this same room, writing it on the board in yellow chalk: *What fires together, wires together.*
 
 ${g.knows('aperture_truth') ? 'You think: sixty-one people in a door. You think: what fired together, under Broad Street, for seven-tenths of a second.' : ''}
 
@@ -352,7 +352,7 @@ Somebody has to decide what kind of thing this is going to be.`,
     loc: 'CARDONE HALL · 9-14',
     text: g => `${g.f('plan10') === 'crew' ? `heck: Before two.
 
-sam: Before two. Nik puts Bree on their radio at one-thirty. Brannigan tells everybody to hold position. Heck takes the fire door in the alley and the fridge door after it. I go in first and clear whoever\'s inside. We\'re out the back alley onto 10th Street by one-fifty with eleven people, and they walk into the festival and disappear into ten thousand people eating cannoli.
+sam: Before two. Nik puts Bree on their radio at one-thirty. Brannigan tells everybody to hold position. Heck takes the fire door in the alley and the fridge door after it. I go in first and clear whoever\'s inside. We\'re out the back alley onto 10th Street by one-fifty with eleven people, and they walk into the festival and disappear into a whole festival eating cannoli.
 
 nik: And at two o\'clock, a truck pulls out empty, and Dante hits an empty truck in front of thirty cops.
 
@@ -368,7 +368,7 @@ When you\'re done, he\'s quiet for a long time.
 
 mikey: Okay. Okay. I\'m calling my sergeant. Then I\'m calling the captain at home. Then I\'m getting yelled at. Then we\'re gonna have a lot of cops on Washington Avenue.
 
-mikey: Sally. Thank you.
+mikey: Sammy. Thank you.
 
 sam: For what?
 
@@ -408,7 +408,7 @@ sam: It\'s eleven people, Jules.
 
 jules: It\'s *you*. It\'s you in a bed with a number on it. *Do not recover. Observe.* I\'ve seen the screen.
 
-She doesn\'t cry. She just looks at you, very steadily, for a long time.
+She doesn\'t cry. She just looks at you, very steadily, until you look away first.
 
 jules: I\'ll be where you can see me.`}
 
