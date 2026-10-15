@@ -319,3 +319,38 @@ Write each episode to the save. The plan bends; the save doesn't.
     - Halina's kidney comes from a living donor ("Don't ask me who found him").
     - Constance now knows `nonna_constance` and `constance_1964`.
     - The hub intro is split from the hub (a1_week9).
+
+## S2E10 "The Italian Market" (finale): production notes
+- Written for this playthrough's E9 save (plan9 jules, told Ma then Slipped, took the guns, Vinnie went, `terms8` count, revenant_drift 5.2).
+- **Cold open (Apr 19):** Teresa reads the card. The torn, pressed *t* is "close" to Sam's but pressed like Salvatore's (misdirection: it is the Revenant's hand, worn down). "Somebody in my family has been writing letters from somewhere I can't go." She invites Constance to the festival curb at 9th & Christian.
+- **Act One "May":** Halina's kidney took. The M.A. text: the Giant Heart at the Franklin Institute, Sat May 8.
+  - `institute10`: alone / jules / wired (needs `dana4` halcyon or `dana5`) / none.
+  - **APERTURE revealed** (`aperture_truth`): 11:51:04 on Aug 22, 0.7 s, 61 changed. "We didn't make you. We opened a door."
+  - Achterberg admits signing off on Femi. The offer: come in voluntarily (a lab, not a bed) and Bruno's people go home. Otherwise she moves them Sunday the 16th.
+  - `offer10`: card / first / no.
+- **Act Two "Finals":**
+  - Vinnie (variants by `vinnie9`): the Esposito produce warehouse at 10th & Washington (a Halcyon shell company: Kingfisher, then Larkspur). The truck leaves at 2 PM as Saint Anthony's procession crosses Washington. Bruno carries the front-left pole.
+  - Hub (3 of 6): Nik (`crew_nik10`), Bree (Brannigan's voice; she still works for Bruno), Heck (melts steel; Marisol works at a bakery and is not sleeping well), Mikey (festival detail at 9th & Washington), the Psych final (d20, `psy_final10`; no spring course code exists, so no `grade` call), Jules (practicing her luck; "it costs something after").
+  - `plan10`: crew / cops / public (needs wired or `dana4`) / **deal** (needs `offer10` card or first).
+- **Act Three "The Procession":**
+  - Move-out morning; Frank's cab.
+  - Paths:
+    - **Crew:** Bree on the Halcyon channel. The warehouse guards are cleared by a Slip (told/silent) or by Heck (pool). Only 4 of the 11 are still in the fridge; Brannigan moved the rest up to 1 PM.
+    - **Deal:** the 11 walk out the back; Sam gets into the truck; Dante's van blocks it.
+    - **Cops/Public:** Sam waits on the corner.
+  - Converge at 9th & Washington: Dante plus 5 men, 4 cleaners with dart guns, Brannigan in a festival lanyard, Mikey with his hand up, Bruno holding the saint, Nonna and Constance on the curb at Christian, **the Revenant in the crowd with his hand raised**.
+  - `slip10`: told / silent / luck (Jules, open luck, from the fire escape) / talk (move).
+  - In the Slip: Jules's, Nonna's and Constance's eyes all move. **With revenant_drift < 6, the Revenant lowers his hand and walks away** (`saw_revenant10`).
+  - `slip10b`: guns (everything into Dante's van) / truck (open the doors and move Mikey; Dante's shot hits the saint, `saint_shot10`) / out (deal path).
+  - The captives are freed in public (`freed10`); Brannigan nods and leaves; Vinnie's coat is left on the seat.
+  - `count10`: 2 for a crew Slip, plus 31 for guns or 7 otherwise.
+  - The curb: Constance (21 in 1964): "That little boy." Nonna also saw the old man.
+- **Act Four "Names":**
+  - The fire escape (`escape10`: ask / always / sit).
+  - Gravy: Dante is in a cell and Bruno didn't post bail. Gigi's video and the comment names ("Saint Sonic").
+  - **`hero_name`**: blur / secondhand / wawa / none. The Inquirer A1 headline follows the choice.
+  - Phở Thanh: Bruno says Frank's debt is done: "Now it's a war. Mine." He calls Sam "Salvatore".
+  - Vinnie (`vinnie10` home/away): on the went path he texts from Wildwood.
+  - The roof on Mifflin: Jules is staying the summer and working at the Free Library. Hugh is "in Boston". At 11:51, nothing happens.
+  - `roof10`: **love** (the first "I love you"; Jules: "since the minifridge") / summer / dunno.
+- **Tag:** Building 7 lobby. Hugh, holding the handkerchief, takes a real Halcyon badge. "Luck doesn't run in your family. It runs *through* it. It picks." **"Let's talk about your sister."** END OF SEASON TWO.
