@@ -155,7 +155,7 @@ DANTE: What the—
 
 He sways. He catches himself on the cart. He\'s big and the dose was measured for somebody who wasn\'t holding a gun, and it isn\'t enough, and he stays on his feet.
 
-Achterberg hasn\'t moved. She\'s looking at Dante\'s empty hand. Then, slowly, down the corridor. At you. Standing at the end of it with your nose bleeding, where you were standing a second ago, and also not.
+Achterberg hasn\'t moved. She\'s looking at Dante\'s empty hand. Then, slowly, down the corridor. At you. Standing at the end of it ${g.S.drift >= 5 || g.unsticks() ? 'with your nose bleeding' : 'with your hands empty'}, where you were standing a second ago, and also not.
 
 She smiles.
 

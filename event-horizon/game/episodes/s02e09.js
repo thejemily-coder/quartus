@@ -92,6 +92,12 @@ Jules is asleep in your bed with the lamp off. She sleeps with the lamp off now.
 Across the room Nik is already up, which is unprecedented, in front of his four monitors, eating dry Froot Loops out of the box, frowning.
 
 nik: Bro. Something\'s wrong with the map.`,
+      next: 'a1_week9'
+    },
+
+    a1_week9: {
+      loc: 'CARDONE HALL · 9-14',
+      text: 'One week. Two things you can get to before it\'s gone.',
       hub: {
         slots: 2, label: 'The first week of April',
         blurb: 'Something is happening to Bruno\'s people.',
