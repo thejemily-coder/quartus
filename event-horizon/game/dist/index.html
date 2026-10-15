@@ -31851,7 +31851,7 @@ EH.episode({
     cold_open: {
       card: { kind: 'cold' },
       loc: 'CITY HALL · THE MAYOR\'S RECEPTION ROOM',
-      clock: { day: 'Sun', date: 'Aug 22', time: '9:40 AM' },
+      clock: { day: 'Sun', date: 'Aug 22', time: '9:59 AM' },
       text: `> THE CAMERA.
 
 The Mayor\'s Reception Room at City Hall, on a Sunday morning, with the chandeliers on and nobody in it but a makeup artist, a woman in a gray cardigan, and the Chief of Surgery at the Hospital of the University of Pennsylvania.
@@ -31870,13 +31870,13 @@ She caps the pen.
 
 catherine: Sixty-one patients.
 
-ACHTERBERG: Sixty-one confirmed. There may be more. That\'s rather the point of a registry.
+ACHTERBERG: Sixty-one. Confirmed. That\'s rather the point of a registry.
 
 catherine: Symptoms. Cold extremities. Episodes of lost time. Perceptual anomalies. *(she looks up)* That\'s a very wide net, Miriam.
 
 ACHTERBERG: It was a very strange night.
 
-A door opens at the far end of the room. A young man in a navy polo shirt with a lanyard around his neck, carrying a cardboard tray of coffees, golden, perfectly at ease.
+A door opens at the far end of the room. A young man in a navy polo shirt with a lanyard around his neck, carrying a cardboard tray of coffees like he was born holding one.
 
 The polo shirt says *BROAD STREET REGISTRY · OUTREACH* over the heart.
 
@@ -31926,23 +31926,23 @@ You\'re in the bathroom of a sophomore apartment in 1300, the tall one on Broad,
 
 You look in the mirror over the sink.
 
-${g.f('count10') ? 'The white at your temple is still there, the streak from the winter. It hasn\'t spread since the spring. Grace measured it in May and said *same* and looked almost disappointed.' : 'The white at your temple is still there. It hasn\'t spread since the spring.'}
+${g.knows('time_debt2') ? 'The white at your temple is still there, the streak from last fall. It hasn\'t spread since the spring. Grace measured it in May and said *same* and looked almost disappointed.' : 'The white at your temple is still there. It hasn\'t spread since the spring.'}
 
 The rest of you has changed. It took the summer to notice. You\'re a year older, and you look it, and somewhere in there you look like someone who has decided some things.
 
 What did the year make you?`,
       choices: [
-        { text: 'Stronger. You carried eleven people\'s worth of guns across 9th Street in two armloads. Your back remembers. (Body +1)', tag: 'Body',
+        { text: 'Stronger. A summer of hauling Pop\'s cab parts, Nonna\'s groceries, and Ciro\'s flour. Your back remembers. (Body +1)', tag: 'Body',
           fx: g => { g.attr('body', 1); g.flag('s3_attr', 'body'); }, go: 'a1_nik' },
         { text: 'Faster. Not the Slip. You. Every delivery all summer, Ciro\'s e-bike, Passyunk to Fishtown, beating the app\'s times. (Reflex +1)', tag: 'Reflex',
           fx: g => { g.attr('reflex', 1); g.flag('s3_attr', 'reflex'); }, go: 'a1_nik' },
         { text: 'Sharper. Femi\'s notebook, read cover to cover over the summer. *Outside first.* You notice the shape of things now. (Wits +1)', tag: 'Wits',
           fx: g => { g.attr('wits', 1); g.flag('s3_attr', 'wits'); }, go: 'a1_nik' },
-        { text: 'Easier with people. A summer of Sunday gravy with Jules at the table, Ma and Nonna and a Pemberton. You learned to talk to anybody. (Charm +1)', tag: 'Charm',
+        { text: 'Easier with people. A summer of Sunday gravy, Ma and Nonna and a Pemberton at the same table. You learned to talk to anybody. (Charm +1)', tag: 'Charm',
           fx: g => { g.attr('charm', 1); g.flag('s3_attr', 'charm'); }, go: 'a1_nik' },
-        { text: 'Softer. Ma counting. Vinnie\'s *save this number*. You let more in than you used to. (Heart +1)', tag: 'Heart',
+        { text: g => 'Softer. ' + (g.f('terms8') === 'count' ? 'Ma counting. ' : 'Ma at the kitchen table. ') + (g.f('vinnie9') === 'went' ? 'Vinnie\'s *save this number*. ' : '') + 'You let more in than you used to. (Heart +1)', tag: 'Heart',
           fx: g => { g.attr('heart', 1); g.flag('s3_attr', 'heart'); }, go: 'a1_nik' },
-        { text: 'Steadier. You walked into a truck that was going to Delaware and didn\'t shake. (Nerve +1)', tag: 'Nerve',
+        { text: 'Steadier. You looked Miriam Achterberg in the eye in May and didn\'t shake. (Nerve +1)', tag: 'Nerve',
           fx: g => { g.attr('nerve', 1); g.flag('s3_attr', 'nerve'); }, go: 'a1_nik' }
       ]
     },
@@ -31961,7 +31961,7 @@ nik: It\'s a wedding cake now, technically. Spiritually.
 
 He spins his chair.
 
-nik: Okay. Summer patch notes. Real quick. You missed some of it because you were busy being in love on a roof.
+nik: Okay. Summer patch notes. Real quick. You missed some of it because you were busy ${g.f('roof10') === 'love' ? 'being in love on a roof' : 'being on a roof with Jules'}.
 
 He pulls up a folder.
 
@@ -32006,7 +32006,7 @@ EH.scenes('s03e01', {
     clock: { day: 'Sun', date: 'Aug 22', time: '11:55 AM' },
     text: `The north side of City Hall, under the arch, in the heat. A podium with the city seal on it. Cameras on tripods, six deep. TV trucks double-parked on Penn Square with their masts up. A couple hundred people behind a bike-rack barricade: reporters, staffers, tourists who wandered over from the Love Park fountain to see what the fuss was.
 
-Jules is beside you in sunglasses and a Temple hoodie with the hood up, in August, in ninety degrees. Her hand is in yours and it\'s cold, which it never is.
+Jules is beside you in sunglasses and a Temple hoodie with the hood up, in August, in ninety degrees. Her hand is in yours and it\'s colder than usual, which you didn\'t know it could be.
 
 jules: I told her I was in Maine this weekend.
 
@@ -32034,9 +32034,9 @@ And Jules, beside you on the bad end of the couch, very straight, the way her mo
 
 Gigi looks at the screen, at the empty podium with the city seal on it, at the chyron: *LIVE: CITY HALL ANNOUNCEMENT ON BROAD STREET ANNIVERSARY.*
 
-gigi: Is this about Second Hand? Is it? Sammy, is it about—
+gigi: Is this about ${g.f('hero_name') === 'secondhand' ? 'Second Hand' : g.f('hero_name') === 'wawa' ? 'Wawa' : g.f('hero_name') === 'blur' ? 'the Blur' : 'Saint Sonic'}? Is it? Sam, is it about—
 
-rosa: Gianna. Quiet.
+rosa: Gigi. Quiet.
 
 Ma doesn\'t take her eyes off the screen. Neither does Nonna.
 
@@ -32082,7 +32082,7 @@ Then Achterberg.
 
 ACHTERBERG: Good afternoon. My name is Miriam Achterberg. My company, Halcyon Dynamics, has spent the past year working quietly with the Department of Public Health to understand what happened on Broad Street, and to care for the people it happened to.
 
-ACHTERBERG: Today we know of sixty-one. People who were within roughly half a mile of that intersection, at 11:51 p.m. on August twenty-second of last year. Many of them have had symptoms. Episodes of lost time. Cold hands and feet that don\'t warm. A sense that the world has, very briefly, paused.
+ACHTERBERG: Today we know of sixty-one. People who were within about two miles of that intersection, at 11:51 p.m. on August twenty-second of last year. Many of them have had symptoms. Episodes of lost time. Cold hands and feet that don\'t warm. A sense that the world has, very briefly, paused.
 
 ${g.f('watch1') === 'home' ? 'In the front room on Mifflin Street, nobody breathes. Nonna\'s rosary has stopped moving in her fingers.' : g.f('watch1') === 'lounge' ? 'simone: *(very quietly)* Oh, she\'s good.' : 'Around you, two hundred people are writing it down.'}
 
@@ -32110,7 +32110,7 @@ The cameras swing.
 
 Achterberg considers the question as if it\'s a reasonable one.
 
-ACHTERBERG: Ms. Fiorillo. If that person exists, and if they were on Broad Street that night, then they are one of the sixty-one, and I hope they\'ll call us. *(a beat)* I think they\'d find we have a great deal in common.
+ACHTERBERG: Ms. Fiorillo. I\'m a physicist. I don\'t comment on folklore. *(a beat)* But anyone who was on Broad Street that night, anyone at all, I hope they\'ll call us. I think they\'d find we have a great deal in common.
 
 ${g.f('plan10') === 'deal' ? 'She doesn\'t look at the camera when she says it. She doesn\'t have to. You walked into her truck in May. She told you she\'d remember.' : 'She looks straight down the barrel of the 6abc camera when she says it.'}
 
@@ -32121,7 +32121,7 @@ The Commissioner says *thank you all*, and they walk back inside, the three of t
   a2_after: {
     loc: g => g.f('watch1') === 'hall' ? 'CITY HALL · THE NORTH APRON' : g.f('watch1') === 'home' ? 'MIFFLIN STREET · THE FRONT STEP' : '1300 RESIDENCE HALL · THE STAIRWELL',
     clock: { time: '12:25 PM' },
-    text: g => `${g.f('watch1') === 'hall' ? 'The crowd breaks up. You walk Jules away across the plaza, past the big bronze clothespin, before Hugh can make his way through the bike racks to say something charming.\n\nShe stops on the corner of 15th and Market and leans on a newspaper box and just breathes.' : g.f('watch1') === 'home' ? 'Pop turns off the TV. Nobody says anything. Gigi looks from face to face and, for once in her life, doesn\'t ask.\n\nJules gets up and goes out the front door. You find her sitting on the front step, the one the whole family sits on, with her elbows on her knees.' : 'Simone mutes the TV. Nik closes his laptop very gently, the way you\'d close a door on someone sleeping.\n\nJules gets up and walks out of the lounge. You find her in the stairwell between seven and six, sitting on a step, under the emergency light.'}
+    text: g => `${g.f('watch1') === 'hall' ? 'The crowd breaks up. You walk Jules away across the plaza, past the big steel clothespin, before Hugh can make his way through the bike racks to say something charming.\n\nShe stops on the corner of 15th and Market and leans on a newspaper box and just breathes.' : g.f('watch1') === 'home' ? 'Pop turns off the TV. Nobody says anything. Gigi looks from face to face and, for once in her life, doesn\'t ask.\n\nJules gets up and goes out the front door. You find her sitting on the front step, the one the whole family sits on, with her elbows on her knees.' : 'Simone mutes the TV. Nik closes his laptop without a word.\n\nJules gets up and walks out of the lounge. You find her in the stairwell between seven and six, sitting on a step, under the emergency light.'}
 
 jules: She knew.
 
@@ -32131,7 +32131,7 @@ jules: She said *if your child has been cold for a year.* She said it into the c
 
 She looks at her hands.
 
-jules: Either she knows about me and she said it anyway. Or she doesn\'t know, and she stood next to that woman and said it anyway. I don\'t know which one is worse. I genuinely can\'t tell.
+jules: Either she knows about me and she said it anyway. Or she doesn\'t know, and she stood next to that woman and said it anyway. I don\'t know which one is worse.
 
 ${g.knows('aperture_truth', 'jules') ? 'jules: She opened a door under Broad Street, Sam. We were standing in it. And my mother is helping her take attendance.' : 'jules: That woman has a bed with my number on it. And my mother is helping her take attendance.'}
 
@@ -32208,7 +32208,7 @@ jules: She can have tomorrow.`,
 
 She looks at you. For a second, she looks almost annoyed, like you\'ve handed her something heavy. Then she doesn\'t.
 
-jules: Nobody asks me that. Do you know that? Gran tells me. Mother tells me. Hugh tells me what I *really* want, which is always whatever he wants. You\'re the only one who asks.
+jules: Nobody asks me that. Do you know that? Gran tells me. My mother tells me. Hugh tells me what I *really* want, which is always whatever he wants. You\'re the only one who asks.
 
 She thinks.
 
@@ -32228,12 +32228,12 @@ EH.scenes('s03e01', {
   /* ================= ACT THREE: WELLNESS CHECK ================= */
   a3_carmen: {
     card: { kind: 'act', label: 'Act Three', title: 'Wellness Check' },
-    loc: 'BROAD STREET',
+    loc: g => g.f('watch1') === 'home' ? 'MIFFLIN STREET · THE KITCHEN' : 'THE BROAD STREET LINE · SOUTHBOUND',
     clock: { day: 'Sun', date: 'Aug 22', time: '2:40 PM' },
     enter: g => { g.meet('carmen'); g.meet('jayden'); },
-    text: g => `${g.f('watch1') === 'home' ? 'Gravy is on the table. Ma is serving. Jules is learning, for the eleventh Sunday in a row, that you do not say *no thank you* to Nonna\'s meatballs, you say *just one*, and then you eat four.' : 'You\'re on the Broad Street Line, the two of you, heading south for gravy, because Ma said two o\'clock and Ma\'s two o\'clock is a legal deadline.'}
+    text: g => `${g.f('watch1') === 'home' ? 'Gravy is on the table. Ma is serving. Jules is learning, for the eleventh Sunday in a row, that you do not say *no thank you* to Nonna\'s meatballs, you say *just one*, and then you eat four.' : 'You\'re on the Broad Street Line, the two of you, heading south for gravy, forty minutes late for a two o\'clock that Ma considers a legal deadline.'}
 
-Your phone. A number you saved last fall, after Broad Street, after the bus: *CARMEN TORRES.*
+Your phone. ${g.f('jayden_xmas') ? 'A number you saved at Christmas, in her living room, while she wrote yours inside a cabinet door: *CARMEN TORRES.*' : 'A 215 number you don\'t know. Then a voice you do: Carmen Torres. She called the pizza place on your delivery bag, and Ciro gave her your number, and you will be hearing about that from Ciro.'}
 
 carmen: *(fast, low, in English and then in Spanish and then English again)* Sam. Sam, mijo. There are people at my door. Nurses. Two nurses and a man from the city with a clipboard. They have a letter with Jayden\'s name on it. They know his birthday. They know which school.
 
@@ -32241,7 +32241,7 @@ carmen: They\'re very nice. They keep saying how nice. They want to take him to 
 
 Behind her, a little boy\'s voice:
 
-jayden: *Tell the cold man! Grandma, tell him it\'s getting cold!*
+jayden: *Tell the cold man! Abuela, tell him it\'s getting cold!*
 
 carmen: I told them he\'s sleeping. They\'re waiting on the step. They said they can wait. They said they have all afternoon.
 
@@ -32249,13 +32249,13 @@ Jules is already standing up.
 
 jules: I\'m coming.
 
-It\'s North 15th Street, near Lehigh. Twenty minutes on the subway.
+She gives you the address. North 15th Street, near Lehigh. Twenty minutes on the subway.
 
 Or less. A lot less. If you go the other way.`,
     choices: [
       { text: 'The subway. With Jules. Twenty minutes. Call Carmen back and tell her to keep the door shut.', tag: 'Subway',
         fx: g => { g.flag('travel1', 'subway'); }, go: 'a3_door' },
-      { text: 'Text Ma. *Counting.* Then go. Two miles in no time. Jules can follow on the train.', tag: 'Tell Ma, then Slip', slip: true, if: g => g.f('terms8') === 'count',
+      { text: g => (g.f('watch1') === 'home' ? 'Catch Ma\'s eye across the table. *Counting.* Then go.' : 'Text Ma. *Counting.* Then go.') + ' Up Broad Street in no time. Jules can follow on the train.', tag: 'Tell Ma, then Slip', slip: true, if: g => g.f('terms8') === 'count',
         fx: g => { g.flag('travel1', 'slip'); g.bond('rosa', { trust: 1 }); g.hidden('halcyon_heat', 1); g.know('rosa_count_s3e1', ['sam', 'rosa'], 'On the anniversary, you texted Ma "counting" and Slipped up Broad Street to Carmen\'s.'); }, go: 'a3_door' },
       { text: 'Slip. Go. Now.', tag: 'Slip', slip: true,
         fx: g => { g.flag('travel1', 'slip'); g.hidden('halcyon_heat', 1); if (g.f('terms8') === 'count') { g.flag('broke_count_s3e1'); g.bond('rosa', { trust: -1 }); g.hidden('revenant_drift', 1); } }, go: 'a3_door' }
@@ -32266,7 +32266,7 @@ Or less. A lot less. If you go the other way.`,
     loc: 'NORTH 15TH STREET, NEAR LEHIGH',
     clock: { time: '3:05 PM' },
     enter: g => { if (g.f('travel1') === 'slip' && g.unsticks()) g.unstick('unstick_s3e1a', 'Time debt (Broad Street, north)'); g.know('registry_outreach', ['sam', 'jules', 'carmen'], 'Registry outreach came to Carmen Torres\'s door for Jayden on the anniversary: two nurses in navy polos, a city health inspector, a typed letter with his name and birthday, and a white SUV with a man who never got out.'); },
-    text: g => `${g.f('travel1') === 'slip' ? 'You step out of the Slip on the corner of 15th and Lehigh, between a parked car and a hydrant, a little cold, a little out of breath. Jules is still on a train somewhere under Broad Street. That\'s fine. That was the point.' : 'You come up out of the Lehigh station into the heat, and walk fast, Jules half a step ahead of you, which she never is.'}
+    text: g => `${g.f('travel1') === 'slip' ? 'You step out of the Slip on the corner of 15th and Lehigh, between a parked car and a hydrant, a little cold, a little out of breath. Jules is still on a train somewhere under Broad Street. That\'s fine. That was the point.' : 'You come up out of North Philadelphia station into the heat, and walk fast, Jules half a step ahead of you, which she never is.'}
 
 North 15th Street, near Lehigh. A block of rowhouses with awnings, and old men on folding chairs, and a kid with a hose spraying the sidewalk to cool it.
 
@@ -32298,7 +32298,11 @@ ${g.f('travel1') === 'slip' ? 'You\'re alone on the stoop. Jules is ten minutes 
     choices: [
       { text: 'Go past them, up the stairs. Ask Carmen what *she* wants. Then stand next to her while she says it.', tag: 'Ask Carmen',
         fx: g => { g.flag('wellness1', 'carmen'); g.bond('carmen', { trust: 2, respect: 1 }); g.hidden('revenant_drift', -1); }, go: 'a3_carmen_says' },
-      { text: '"I\'m her grandson\'s friend. He\'s not going anywhere today." Talk them off the stoop.', tag: 'Talk',
+      { text: '"I\'m her grandson\'s friend. He\'s not going anywhere today." Talk them off the stoop.', tag: 'Talk', if: g => g.f('travel1') === 'slip',
+        check: { kind: 'move', move: 'Talk Them Down', attr: 'charm', skill: 'persuade', label: 'Talk the Registry off the stoop',
+          on: { strong: 'a3_talk', weak: 'a3_talk_weak', miss: 'a3_talk_miss' } },
+        fx: g => { g.flag('wellness1', 'talk'); } },
+      { text: '"I\'m her grandson\'s friend. He\'s not going anywhere today." Talk them off the stoop.', tag: 'Talk', if: g => g.f('travel1') !== 'slip',
         check: { kind: 'move', move: 'Talk Them Down', attr: 'charm', skill: 'persuade', label: 'Talk the Registry off the stoop', near: ['jules'],
           on: { strong: 'a3_talk', weak: 'a3_talk_weak', miss: 'a3_talk_miss' } },
         fx: g => { g.flag('wellness1', 'talk'); } },
@@ -32340,7 +32344,7 @@ NURSE: Mrs. Torres, I really think—
 
 carmen: *No.* In English, so you understand. *No.* Not today, not in your car. You leave me your paper. If I want, I call you. That\'s what voluntary means. My grandson\'s friend is a college boy, he looked it up.
 
-On the stoop across the street, an old man in a Phillies cap starts clapping. Slowly. Then a woman in a housecoat. Then the kid with the hose.
+On the stoop across the street, an old man in a Phillies cap yells, *¡Eso, Carmen!* A woman in a housecoat yells it too. The kid with the hose, very casually, turns it on the SUV\'s tires.
 
 The older nurse looks at the clapping neighbors, and at Carmen, and her face does something complicated. She sets a pamphlet on the step. *YOU ARE NOT ALONE.*
 
@@ -32464,11 +32468,11 @@ You take the clipboard out of the inspector\'s sweaty hand.
 
 A route sheet. Today\'s date. *OUTREACH · DAY 1.* Nine addresses. North Philly. Kensington. Port Richmond. South Philly. A name next to each, and an age, and a column headed *ES*.
 
-TORRES, J. (9). 15th St. ES-38. Fourth on the list.
+TORRES, J. (9). 15th St. ES-29. Fourth on the list.
 
 You keep reading.
 
-KOWAL, B. (23). Port Richmond.
+KOWAL, B. (19). Port Richmond.
 
 RAMOS, H. (24). Kensington.
 
@@ -32490,7 +32494,7 @@ ${g.f('travel1') === 'slip' ? 'And you\'re still alone on this stoop.' : 'Beside
     choices: [
       { text: 'Now ask Carmen what she wants. Then stand next to her.', tag: 'Ask Carmen',
         fx: g => { g.bond('carmen', { trust: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_carmen_says' },
-      { text: 'Text Bree and Heck. Right now. *They\'re coming to you today.*', tag: 'Warn Bree and Heck',
+      { text: 'Text Bree. Right now. *They\'re coming to you today. Tell Heck.*', tag: 'Warn Bree and Heck',
         fx: g => { g.flag('warned_crew1'); g.bond('bree', { trust: 2 }); g.bond('heck', { trust: 2 }); g.know('warned_crew1', ['sam', 'bree', 'heck'], 'On the anniversary, Sam texted Bree and Heck that Registry outreach was coming to their doors that day.'); }, go: 'a3_carmen_says' }
     ]
   },
@@ -32500,9 +32504,9 @@ ${g.f('travel1') === 'slip' ? 'And you\'re still alone on this stoop.' : 'Beside
     loc: 'NORTH 15TH STREET · CARMEN\'S LIVING ROOM',
     clock: { time: '4:00 PM' },
     enter: g => { g.know('jayden_tonight1', ['sam', 'jayden', 'carmen'], 'Jayden, on the anniversary: "It\'s gonna get cold tonight. Everywhere. At the time."'); g.bond('jayden', { trust: 1, affection: 1 }); },
-    text: g => `Carmen\'s living room is the same as every abuela\'s living room in Philadelphia: plastic on the good couch, a Virgen de Guadalupe candle, a TV the size of a garage door, and a hundred photos of one boy.
+    text: g => `Carmen\'s living room is the same as every abuela\'s living room in Philadelphia: plastic on the good couch, a San Judas Tadeo candle, a TV the size of a garage door, and a hundred photos of one boy.
 
-${g.f('travel1') === 'slip' && g.f('wellness1') !== 'mikey' ? 'Jules gets there at 3:40, out of breath, and takes one look at you and doesn\'t ask.\n\n' : ''}Jayden is nine now. He\'s grown two inches and lost both front teeth and he is wearing, of course, ${g.f('hero_name') === 'secondhand' ? 'a red SECOND HAND T-shirt' : 'one of the T-shirts'}.
+${g.f('travel1') === 'slip' ? 'Jules gets there ten minutes behind you, out of breath, and takes one look at you and doesn\'t ask.\n\n' : ''}Jayden is nine now. He\'s grown two inches and lost both front teeth and he is wearing, of course, ${g.f('hero_name') === 'secondhand' ? 'a red SECOND HAND T-shirt' : 'one of the T-shirts'}.
 
 He walks right up to you and looks up.
 
@@ -32533,7 +32537,7 @@ She doesn\'t look up.
 carmen: Five hundred dollars and free doctors. I get eleven hundred a month. The hip took everything. Every month I choose: the light bill or my pills. They said *five hundred dollars*. They said *free*. Maybe I\'m a stupid old woman. Maybe I should call them.`,
     choices: [
       { text: 'Tell her the truth. The beds. The numbers on whiteboards. The man in the SUV. What *free* means.', tag: 'The truth',
-        fx: g => { g.flag('carmen1', 'truth'); g.bond('carmen', { trust: 2 }); g.know('carmen_truth1', ['carmen'], 'Sam told Carmen what the Registry really is: Halcyon\'s beds, the ES numbers, the people who were taken.'); }, go: 'a3_carmen_end' },
+        fx: g => { g.flag('carmen1', 'truth'); g.bond('carmen', { trust: 2 }); g.know('carmen_truth1', ['sam', 'carmen'], 'Sam told Carmen what the Registry really is: Halcyon\'s beds, the ES numbers, the people who were taken.'); }, go: 'a3_carmen_end' },
       { text: 'Give her what\'s in your wallet. Two hundred dollars. It isn\'t five hundred. It isn\'t nothing.', tag: 'The money',
         fx: g => { g.flag('carmen1', 'money'); g.money(-200); g.bond('carmen', { affection: 2, trust: 1 }); g.hidden('revenant_drift', 0.5); }, go: 'a3_carmen_end' },
       { text: '"It\'s your choice, Carmen. Whatever you pick, I\'ll help. I\'ll be there." And mean it.', tag: 'Her choice',
@@ -32549,7 +32553,7 @@ Carmen listens to all of it with her hand over her mouth.
 
 When you\'re done, she gets up, slowly, with the cane, and goes into the kitchen. You hear the stove click on. When she comes back, she has the pamphlet, black and curling at the corners.
 
-She drops it in the Virgen de Guadalupe candle and watches it burn.
+She drops it in the San Judas candle and watches it burn.
 
 carmen: *Free.*` : g.f('carmen1') === 'money' ? `You take out your wallet. Two hundred, in twenties, from a summer of deliveries. You put it on the coffee table next to the pamphlet.
 
@@ -32559,15 +32563,15 @@ sam: For the light bill. So you don\'t have to pick.
 
 She looks at the money for a long time.
 
-carmen: You\'re a good boy. Your mother raised a good boy. *(she doesn\'t pick it up, but she doesn\'t give it back either)* You can\'t pay for everybody, mijo. There\'s sixty of us. You can\'t pay for all sixty.
+carmen: You\'re a good boy. Your mother raised a good boy. *(she doesn\'t pick it up, but she doesn\'t give it back either)* You can\'t pay for everybody, mijo. There\'s sixty-one of them. You can\'t pay for all sixty-one.
 
 She puts the pamphlet in a drawer. Not the trash. A drawer.` : `sam: It\'s your choice, Carmen. I mean that. Whatever you pick, I\'ll help. If you go, I\'ll go with you and sit in the waiting room. If you don\'t, I\'ll be on your stoop next time they come.
 
 She looks at you for a long time.
 
-carmen: Everybody tells me what to do since the hip. The doctors, the lady from Medicaid, my sister in Bayamón on the phone. Nobody says *your choice*.
+carmen: Everybody tells me what to do since the hip. The doctors, the lady from Medicaid, my sister in Bayamón on the phone. Everybody has an opinion. Nobody has to live in my house.
 
-She puts the pamphlet on top of the TV, under the Virgin. Not the trash. Not the phone.
+She puts the pamphlet on top of the TV, under San Judas. Not the trash. Not the phone.
 
 carmen: I\'ll think. *(she pats your hand)* I\'m allowed to think.`}
 
@@ -32594,7 +32598,7 @@ EH.scenes('s03e01', {
     clock: { day: 'Sun', date: 'Aug 22', time: '11:40 PM' },
     text: g => `Broad and Spring Garden, at 11:40 on a Sunday night.
 
-The same corner. The bank on one side, with the same clock over the door. The bus shelter, rebuilt; the old one was crushed. The traffic light that was red a year ago and is red now. It\'s not raining. It was raining then.
+The same corner. The bank on one side, with the same clock over the door. The bus shelter. The curb where the 16 skidded into a parked van. The traffic light that was red a year ago and is red now. It\'s not raining. It was raining then.
 
 Jules is next to you with her hands in her hoodie pocket. ${g.f('watch1') === 'lounge' || g.f('watch1') === 'hall' ? 'Nik is in your ear from the seventh floor of 1300, a mile north, with his four monitors.' : 'Nik is in your ear from the seventh floor of 1300, where he\'s been since four, with his four monitors and the rest of the wedding cake.'}
 
@@ -32610,7 +32614,7 @@ jules: *(very quietly)* They\'re cold.
 
 sam: Yeah.
 
-jules: They\'re all cold. They came here because it\'s the anniversary, and they didn\'t know where else to go. Sam. They\'re the *sixty-one*.
+jules: They\'re all cold. They didn\'t know where else to go. *(beat)* Sam. They\'re the *sixty-one*.
 
 Parked at the curb in front of the bank: a white van with the kingfisher on the side and a banner on a frame on the roof. *BROAD STREET REGISTRY · WE\'RE HERE · 24/7.* The side door is open. A folding table. Bottled water. Pamphlets. Hugh, in his navy polo, sitting on the step of the van in the yellow light, with a clipboard on his knee, looking at his phone, golden and bored.
 
@@ -32622,7 +32626,7 @@ He hasn\'t seen you yet.
         fx: g => { g.flag('corner1', 'hand'); g.bond('jules', { affection: 1, trust: 1 }); g.hidden('revenant_drift', -1); }, go: 'a4_minute' },
       { text: 'Walk over to the van. Four minutes is enough time to say something to Hugh Pemberton.', tag: 'Hugh',
         fx: g => { g.flag('corner1', 'hugh'); g.meet('hugh'); }, go: 'a4_hugh' },
-      { text: 'Get ready to Slip at 11:51 exactly. Whatever happens in that second, you want to see it from the inside.', tag: 'Look inside',
+      { text: 'Get ready to Slip at 11:51 exactly. Whatever happens in that second, you want to see it from the inside.', tag: 'Look inside', slip: true,
         fx: g => { g.flag('corner1', 'slip'); g.hidden('revenant_drift', 0.5); }, go: 'a4_minute' }
     ]
   },
@@ -32646,15 +32650,15 @@ jules: You\'re handing out *me*.
 
 Hugh\'s smile doesn\'t move. Something behind it does.
 
-jules: You took my handkerchief out of my coat. You gave it to them in a Ziploc bag. You\'ve been reporting on me since March. Since *before* March. You\'re not handing out water, Hugh. You\'re handing out your sister.
+jules: You came to Cardone Hall in March, and that week my handkerchief went missing out of a buttoned pocket. I\'ve had all summer to think about who goes through my coat. You\'re not handing out water, Hugh. You\'re handing out your sister.
 
-Hugh looks at her for a long moment.
+Hugh looks at her.
 
 hugh: *(lightly)* Somebody has to keep an eye on you, Jubilee. You\'ve been so *lucky* lately.
 
 He looks at you.
 
-hugh: And you. *(he picks up the clipboard, flips a page, doesn\'t read it)* Do you know how many people on these four corners would sell their own mothers to be able to do what you do? I\'ve been doing outreach for six days. Every single one of them, Kearney, asks the same question. *Is there a cure.*
+hugh: And you. *(he picks up the clipboard, flips a page, doesn\'t read it)* I\'ve been doing outreach for eleven hours. Do you know what every single one of them asks me, Kearney? The same question. *Is there a cure.*
 
 hugh: Nobody asks if there\'s a cure for being *lucky*.
 
@@ -32689,13 +32693,13 @@ And it stays stopped. For exactly one second. You watch it hang there on the fou
 
 Every phone on every corner shows the same thing. You look at yours. *11:51:04.* Then *11:51:04.* Twice.
 
-nik: *(in your ear, very quietly)* Bro. Bro, every clock I have just did that. Every one. The traffic cams. The bank. The atomic clock app on my phone, which syncs to *Boulder, Colorado*. They all skipped. Or. Not skipped. *Stuttered.* They all said four twice.
+nik: *(in your ear, barely a voice)* Salvatore. Every clock I have just did that. Every one. The traffic cams. The bank. The atomic clock app on my phone, which syncs to *Boulder, Colorado*. They all skipped. Or. Not skipped. *Stuttered.* They all said four twice.
 
 nik: The seismograph didn\'t move. Nothing *moved*. Time just... hiccuped.
 
-${g.f('corner1') === 'slip' ? '' : 'You felt it. Not cold. Not the Slip. Something under your feet, under the asphalt, under the subway, like a door somewhere far below you took one breath in and one breath out.'}
+${g.f('corner1') === 'slip' ? '' : 'You felt it. Cold, the way Jayden said, everywhere at once. Not the Slip. Something under your feet, under the asphalt, under the subway, like a door somewhere far below you took one breath in and one breath out.'}
 
-${g.f('corner1') === 'hand' ? 'Jules felt it too. Her hand jerks in yours, hard, like something pulled on it.\n\njules: *(barely)* Did you feel that?\n\nsam: Yeah.\n\njules: My luck. It went *that way*. *(she points down, at the street, at the middle of Broad)* All of it. Like a tide going out. Like something down there was pulling on it.\n\nShe holds on with both hands.\n\njules: And then you held on, and it came back.' : g.f('corner1') === 'hugh' ? 'At the van, Hugh is on his feet, staring at his phone, at the two fours. For the first time since you\'ve known him, he looks his age.\n\nJules\'s hand jerks in yours, hard, like something pulled on it.\n\njules: *(barely)* My luck. It went *that way*. Down. Into the street.' : ''}`,
+${g.f('corner1') === 'hand' ? 'Jules felt it too. Her hand jerks in yours, hard, like something pulled on it.\n\njules: *(barely)* Did you feel that?\n\nsam: Yeah.\n\njules: My luck. It went *that way*. *(she points down, at the street, at the middle of Broad)* All of it. Like a tide going out. Like something down there was pulling on it.\n\nShe holds on with both hands.\n\njules: And then you held on, and it came back.' : g.f('corner1') === 'hugh' ? 'At the van, Hugh is on his feet, staring at his phone, at the two fours. For the first time since you\'ve known him, he looks nineteen.\n\nJules\'s hand jerks in yours, hard, like something pulled on it.\n\njules: *(barely)* My luck. It went *that way*. Down. Into the street.' : ''}`,
     next: g => g.f('corner1') === 'slip' ? 'a4_inside' : 'a4_after',
     nextTargets: ['a4_inside', 'a4_after']
   },
@@ -32704,7 +32708,7 @@ ${g.f('corner1') === 'hand' ? 'Jules felt it too. Her hand jerks in yours, hard,
     night: true,
     loc: 'BROAD & SPRING GARDEN · BETWEEN',
     enter: g => { if (g.unsticks()) g.unstick('unstick_s3e1c', 'Time debt (the anniversary)'); g.flag('saw_seam1'); g.know('seam1', ['sam'], 'In the Slip at 11:51:04 on the anniversary, Sam saw a hairline of white light running down the center of Broad Street, from the corner at Spring Garden south toward City Hall, like a crack in a plate. Across the street, a girl in a black hoodie was not stopped. Her eyes moved. She looked at him.'); g.hidden('halcyon_heat', 1); },
-    text: g => `At 11:51:04, you step through.
+    text: g => `That second, 11:51:04, the one that happened twice: you spent it inside.
 
 ${g.unsticks() ? 'The cold grabs.' : 'The pool. Still.'}
 
@@ -32750,10 +32754,9 @@ jules: *(very calmly)* Of course there is.`,
     night: true,
     loc: 'BROAD STREET, WALKING NORTH',
     clock: { time: '12:20 AM' },
-    enter: g => { g.recap('One year after the Hitch, at 11:51:04, every clock in North Philadelphia said four twice.'); },
     text: g => `Afterward, the fifteen people on the four corners go home, one at a time, without talking to each other, the way people leave a funeral for somebody they didn\'t know well. A few of them stop at the van for water. Most don\'t.
 
-You and Jules walk north on Broad. A mile. Past the Divine Lorraine, past the Uptown, past the place on Girard that sells the good cheesesteaks, closed now. It\'s hot. Her hand is warm again.
+You and Jules walk north on Broad. A mile. Past the Divine Lorraine, past the place on Girard that sells the good cheesesteaks, closed now. It\'s hot. Her hand in yours is cold again, her ordinary cold.
 
 ${g.f('mother1') === 'ask' ? 'jules: I\'m going to start the letter tonight. *Dear Mother.* No. *Mother.* No. I\'ll figure it out. I have four hundred sheets of Crane\'s.' : g.f('mother1') === 'call' ? 'Her phone has buzzed thirty-one times since noon. She hasn\'t turned it over once.\n\njules: She\'s going to come to campus. Tomorrow. I know her. She\'ll come in the car and stand in the lobby of 1300 in her cream jacket and say *Juliet* until I come down.' : 'jules: Tomorrow I\'ll call her. Tomorrow. Today was ours. I wanted one thing to be ours.'}
 
@@ -32765,13 +32768,13 @@ jules: One year.
 
 sam: One year.
 
-jules: A year ago, I didn\'t know your name. I thought you were the minifridge boy. *(she almost laughs)* You still are.
+jules: A year ago, I barely knew your name. I thought you were the minifridge boy. *(she almost laughs)* You still are.
 
 ${g.f('roof10') === 'love' ? 'She goes up on her toes and kisses you, on Broad Street, under the T, in front of a bus.\n\njules: I love you. Happy Hitch Day. That\'s what Nik\'s calling it. I\'m afraid it\'s stuck.' : 'She goes up on her toes and kisses you, on Broad Street, under the T, in front of a bus.\n\njules: Happy Hitch Day. That\'s what Nik\'s calling it. I\'m afraid it\'s stuck.'}
 
 Upstairs, on the seventh floor, Nik has left the last slice of wedding cake on a paper plate outside your door, with a Post-it.
 
-*YOU WERE STANDING IN A DOOR. ALSO, I ATE MOST OF THE CAKE. -N*`,
+*HAPPY HITCH DAY. I ATE MOST OF THE CAKE. IT WAS A WEDDING. -N*`,
     next: 'tag_catherine'
   },
 
@@ -32809,7 +32812,7 @@ She closes the laptop very gently. She sits in the lamplight with her hands flat
 
 After a while she gets up, and walks down the long dark hall in her stocking feet, past the portraits, to the door at the end, where there\'s a line of light underneath. She doesn\'t knock.
 
-Constance Pemberton is in a wingback chair in her dressing gown, with a book she isn\'t reading and a glass of something amber. She doesn\'t look surprised. She looks like she\'s been sitting up waiting for this exact knock, for a very long time.
+Constance Pemberton is in a wingback chair in her dressing gown, with a book she isn\'t reading and a glass of something amber. She doesn\'t look surprised. She looks like she\'s been sitting up waiting for this exact door to open, for a very long time.
 
 catherine: Did you know?
 
@@ -32819,7 +32822,7 @@ constance: Sit down, Catherine.
 
 catherine: *Did you know.*
 
-constance: Yes. *(she pours a second glass and holds it out)* I\'ve known since before she was born. Sit down. I\'ve been waiting twenty years to have this conversation with you, and you\'re going to need this.
+constance: Yes. *(she pours a second glass and holds it out)* Since before she was born. Sit. You\'ll want this.
 
 Catherine looks at the glass.
 
@@ -32858,6 +32861,7 @@ Object.assign(EH.episodes.s03e01, {
     g.recap('Registry outreach came to Carmen Torres\'s door for Jayden.' + (g.f('wellness1') === 'carmen' ? ' Carmen told them no herself.' : g.f('wellness1') === 'mikey' ? ' Mikey sent them away. "Next it\'s cops."' : g.f('wellness1') === 'clipboard' ? ' Their route sheet had Bree and Heck on it.' : ''));
     if (g.f('dhs_threat1')) g.recap('The city inspector said he would refer Carmen to DHS.');
     g.recap('Jayden: "It\'s gonna get cold tonight. Everywhere. At the time."');
+    g.recap('One year after the Hitch, at 11:51:04, every clock in North Philadelphia said four twice.');
     if (g.f('saw_seam1')) g.recap('In the Slip, a crack of light ran down the middle of Broad Street. A girl in a black hoodie wasn\'t stopped.');
     g.recap('Catherine Pemberton found ES-44 in the Registry. Handler: H. Pemberton. Constance: "I\'ve known since before she was born."');
   }

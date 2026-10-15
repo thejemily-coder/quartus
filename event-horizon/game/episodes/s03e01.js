@@ -107,7 +107,7 @@ What did the year make you?`,
           fx: g => { g.attr('wits', 1); g.flag('s3_attr', 'wits'); }, go: 'a1_nik' },
         { text: 'Easier with people. A summer of Sunday gravy, Ma and Nonna and a Pemberton at the same table. You learned to talk to anybody. (Charm +1)', tag: 'Charm',
           fx: g => { g.attr('charm', 1); g.flag('s3_attr', 'charm'); }, go: 'a1_nik' },
-        { text: 'Softer. Ma counting. Vinnie\'s *save this number*. You let more in than you used to. (Heart +1)', tag: 'Heart',
+        { text: g => 'Softer. ' + (g.f('terms8') === 'count' ? 'Ma counting. ' : 'Ma at the kitchen table. ') + (g.f('vinnie9') === 'went' ? 'Vinnie\'s *save this number*. ' : '') + 'You let more in than you used to. (Heart +1)', tag: 'Heart',
           fx: g => { g.attr('heart', 1); g.flag('s3_attr', 'heart'); }, go: 'a1_nik' },
         { text: 'Steadier. You looked Miriam Achterberg in the eye in May and didn\'t shake. (Nerve +1)', tag: 'Nerve',
           fx: g => { g.attr('nerve', 1); g.flag('s3_attr', 'nerve'); }, go: 'a1_nik' }
@@ -128,7 +128,7 @@ nik: It\'s a wedding cake now, technically. Spiritually.
 
 He spins his chair.
 
-nik: Okay. Summer patch notes. Real quick. You missed some of it because you were busy being in love on a roof.
+nik: Okay. Summer patch notes. Real quick. You missed some of it because you were busy ${g.f('roof10') === 'love' ? 'being in love on a roof' : 'being on a roof with Jules'}.
 
 He pulls up a folder.
 

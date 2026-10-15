@@ -55,7 +55,7 @@ Write each episode to the save. The plan bends; the save doesn't.
   - **Act One:** 1300 Residence Hall 7-07 with Nik. The season-break +1 attribute (all six offered; `s3_attr`). Summer patch notes. The advisory. `watch1`: hall / home / lounge.
   - **Act Two:** the press conference (Commissioner Dr. Ruth Albano; Achterberg; Catherine: "if your child has been cold for a year"; Dana's question). `mother1`: call ("Are you cold, Juliet?") / wait / ask (a letter).
   - **Act Three:** Carmen calls. `travel1`: subway / Slip. Registry outreach at 15th & Lehigh, with a white SUV and an unseen driver who photographs contacts.
-    - `wellness1`: carmen / talk (miss leads to a DHS referral threat, `dhs_threat1`) / mikey / clipboard (the route sheet: Jayden ES-38, KOWAL B., RAMOS H.; "Photograph contacts"; optional warning, `warned_crew1`).
+    - `wellness1`: carmen / talk (miss leads to a DHS referral threat, `dhs_threat1`) / mikey / clipboard (the route sheet: Jayden ES-29, KOWAL B., RAMOS H.; "Photograph contacts"; optional warning, `warned_crew1`).
     - Jayden: "It's gonna get cold tonight." `carmen1`: truth / money (−$200) / choice.
   - **Act Four:** Broad & Spring Garden. Fifteen of the 61 on the corners. The Registry van, with Hugh.
     - `corner1`: hand / hugh ("You're handing out *me*") / slip.
@@ -63,3 +63,12 @@ Write each episode to the save. The plan bends; the save doesn't.
     - In the Slip (`saw_seam1`): a hairline crack of light down Broad's yellow line, widening. **A girl in a black hoodie isn't stopped** (new S3 character, unnamed).
   - **Tag:** Catherine finds ES-44 in the portal: "HANDLER: H. PEMBERTON." She goes to Constance: "Did you know?" "Yes… since before she was born."
   - New `look: 's3'` (Bronze Age CSS).
+- **S3E1 QA:**
+  - Jules doesn't know about the Ziploc or Hugh's reporting. She only suspects him over the March handkerchief.
+  - On saves without `jayden_xmas`, Carmen got Sam's number from Ciro.
+  - Achterberg doesn't tie the vigilante to the 61 on TV ("I don't comment on folklore").
+  - Jayden is ES-29 (ES-38 is a Building 7 patient). The radius is about two miles.
+  - The 16 skidded into a parked van; no shelter was crushed.
+  - Carmen is Puerto Rican and keeps a San Judas candle.
+  - Gigi isn't in `sam_slip`.
+  - The "Look inside" choice is a Slip.

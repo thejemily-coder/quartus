@@ -9,7 +9,7 @@ EH.scenes('s03e01', {
     enter: g => { g.meet('carmen'); g.meet('jayden'); },
     text: g => `${g.f('watch1') === 'home' ? 'Gravy is on the table. Ma is serving. Jules is learning, for the eleventh Sunday in a row, that you do not say *no thank you* to Nonna\'s meatballs, you say *just one*, and then you eat four.' : 'You\'re on the Broad Street Line, the two of you, heading south for gravy, forty minutes late for a two o\'clock that Ma considers a legal deadline.'}
 
-Your phone. A number you saved last fall, after Broad Street, after the bus: *CARMEN TORRES.*
+Your phone. ${g.f('jayden_xmas') ? 'A number you saved at Christmas, in her living room, while she wrote yours inside a cabinet door: *CARMEN TORRES.*' : 'A 215 number you don\'t know. Then a voice you do: Carmen Torres. She called the pizza place on your delivery bag, and Ciro gave her your number, and you will be hearing about that from Ciro.'}
 
 carmen: *(fast, low, in English and then in Spanish and then English again)* Sam. Sam, mijo. There are people at my door. Nurses. Two nurses and a man from the city with a clipboard. They have a letter with Jayden\'s name on it. They know his birthday. They know which school.
 
@@ -25,7 +25,7 @@ Jules is already standing up.
 
 jules: I\'m coming.
 
-It\'s North 15th Street, near Lehigh. Twenty minutes on the subway.
+She gives you the address. North 15th Street, near Lehigh. Twenty minutes on the subway.
 
 Or less. A lot less. If you go the other way.`,
     choices: [
@@ -244,7 +244,7 @@ You take the clipboard out of the inspector\'s sweaty hand.
 
 A route sheet. Today\'s date. *OUTREACH · DAY 1.* Nine addresses. North Philly. Kensington. Port Richmond. South Philly. A name next to each, and an age, and a column headed *ES*.
 
-TORRES, J. (9). 15th St. ES-38. Fourth on the list.
+TORRES, J. (9). 15th St. ES-29. Fourth on the list.
 
 You keep reading.
 
@@ -270,7 +270,7 @@ ${g.f('travel1') === 'slip' ? 'And you\'re still alone on this stoop.' : 'Beside
     choices: [
       { text: 'Now ask Carmen what she wants. Then stand next to her.', tag: 'Ask Carmen',
         fx: g => { g.bond('carmen', { trust: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a3_carmen_says' },
-      { text: 'Text Bree and Heck. Right now. *They\'re coming to you today.*', tag: 'Warn Bree and Heck',
+      { text: 'Text Bree. Right now. *They\'re coming to you today. Tell Heck.*', tag: 'Warn Bree and Heck',
         fx: g => { g.flag('warned_crew1'); g.bond('bree', { trust: 2 }); g.bond('heck', { trust: 2 }); g.know('warned_crew1', ['sam', 'bree', 'heck'], 'On the anniversary, Sam texted Bree and Heck that Registry outreach was coming to their doors that day.'); }, go: 'a3_carmen_says' }
     ]
   },
@@ -339,7 +339,7 @@ sam: For the light bill. So you don\'t have to pick.
 
 She looks at the money for a long time.
 
-carmen: You\'re a good boy. Your mother raised a good boy. *(she doesn\'t pick it up, but she doesn\'t give it back either)* You can\'t pay for everybody, mijo. There\'s sixty of us. You can\'t pay for all sixty.
+carmen: You\'re a good boy. Your mother raised a good boy. *(she doesn\'t pick it up, but she doesn\'t give it back either)* You can\'t pay for everybody, mijo. There\'s sixty-one of them. You can\'t pay for all sixty-one.
 
 She puts the pamphlet in a drawer. Not the trash. A drawer.` : `sam: It\'s your choice, Carmen. I mean that. Whatever you pick, I\'ll help. If you go, I\'ll go with you and sit in the waiting room. If you don\'t, I\'ll be on your stoop next time they come.
 

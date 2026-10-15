@@ -84,7 +84,7 @@ Then Achterberg.
 
 ACHTERBERG: Good afternoon. My name is Miriam Achterberg. My company, Halcyon Dynamics, has spent the past year working quietly with the Department of Public Health to understand what happened on Broad Street, and to care for the people it happened to.
 
-ACHTERBERG: Today we know of sixty-one. People who were within roughly half a mile of that intersection, at 11:51 p.m. on August twenty-second of last year. Many of them have had symptoms. Episodes of lost time. Cold hands and feet that don\'t warm. A sense that the world has, very briefly, paused.
+ACHTERBERG: Today we know of sixty-one. People who were within about two miles of that intersection, at 11:51 p.m. on August twenty-second of last year. Many of them have had symptoms. Episodes of lost time. Cold hands and feet that don\'t warm. A sense that the world has, very briefly, paused.
 
 ${g.f('watch1') === 'home' ? 'In the front room on Mifflin Street, nobody breathes. Nonna\'s rosary has stopped moving in her fingers.' : g.f('watch1') === 'lounge' ? 'simone: *(very quietly)* Oh, she\'s good.' : 'Around you, two hundred people are writing it down.'}
 
@@ -112,7 +112,7 @@ The cameras swing.
 
 Achterberg considers the question as if it\'s a reasonable one.
 
-ACHTERBERG: Ms. Fiorillo. If that person exists, and if they were on Broad Street that night, then they are one of the sixty-one, and I hope they\'ll call us. *(a beat)* I think they\'d find we have a great deal in common.
+ACHTERBERG: Ms. Fiorillo. I\'m a physicist. I don\'t comment on folklore. *(a beat)* But anyone who was on Broad Street that night, anyone at all, I hope they\'ll call us. I think they\'d find we have a great deal in common.
 
 ${g.f('plan10') === 'deal' ? 'She doesn\'t look at the camera when she says it. She doesn\'t have to. You walked into her truck in May. She told you she\'d remember.' : 'She looks straight down the barrel of the 6abc camera when she says it.'}
 

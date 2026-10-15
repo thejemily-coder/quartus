@@ -9,7 +9,7 @@ EH.scenes('s03e01', {
     clock: { day: 'Sun', date: 'Aug 22', time: '11:40 PM' },
     text: g => `Broad and Spring Garden, at 11:40 on a Sunday night.
 
-The same corner. The bank on one side, with the same clock over the door. The bus shelter, rebuilt; the old one was crushed. The traffic light that was red a year ago and is red now. It\'s not raining. It was raining then.
+The same corner. The bank on one side, with the same clock over the door. The bus shelter. The curb where the 16 skidded into a parked van. The traffic light that was red a year ago and is red now. It\'s not raining. It was raining then.
 
 Jules is next to you with her hands in her hoodie pocket. ${g.f('watch1') === 'lounge' || g.f('watch1') === 'hall' ? 'Nik is in your ear from the seventh floor of 1300, a mile north, with his four monitors.' : 'Nik is in your ear from the seventh floor of 1300, where he\'s been since four, with his four monitors and the rest of the wedding cake.'}
 
@@ -61,7 +61,7 @@ jules: You\'re handing out *me*.
 
 Hugh\'s smile doesn\'t move. Something behind it does.
 
-jules: You took my handkerchief out of my coat. You gave it to them in a Ziploc bag. You\'ve been reporting on me since March. Since *before* March. You\'re not handing out water, Hugh. You\'re handing out your sister.
+jules: You came to Cardone Hall in March, and that week my handkerchief went missing out of a buttoned pocket. I\'ve had all summer to think about who goes through my coat. You\'re not handing out water, Hugh. You\'re handing out your sister.
 
 Hugh looks at her.
 
@@ -179,7 +179,7 @@ jules: One year.
 
 sam: One year.
 
-jules: A year ago, I didn\'t know your name. I thought you were the minifridge boy. *(she almost laughs)* You still are.
+jules: A year ago, I barely knew your name. I thought you were the minifridge boy. *(she almost laughs)* You still are.
 
 ${g.f('roof10') === 'love' ? 'She goes up on her toes and kisses you, on Broad Street, under the T, in front of a bus.\n\njules: I love you. Happy Hitch Day. That\'s what Nik\'s calling it. I\'m afraid it\'s stuck.' : 'She goes up on her toes and kisses you, on Broad Street, under the T, in front of a bus.\n\njules: Happy Hitch Day. That\'s what Nik\'s calling it. I\'m afraid it\'s stuck.'}
 
