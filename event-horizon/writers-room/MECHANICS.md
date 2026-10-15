@@ -214,3 +214,4 @@ EH.episode({
 **Effect API (`g`):** `flag(k,v=true)`, `f(k)`, `bond(id,{trust,affection,respect,tension})`, `b(id)`, `meet(id)`, `heat(id,n)`, `know(fact,[who],text)`, `knows(fact,who)`, `money(n)`, `grade(course,n)`, `sleep(h)`, `pool(name,n)`, `drift(n)`, `hidden(k,n)`, `injure({id,name,sev,pen,heal})`, `heal(id)`, `unsticks()`, `unstick(id,name,opts)`, `xp(n)`, `unlock(node)`, `mastery(n)`, `attr(k,n)`, `skill(k,n)`, `recap(text)`, `log(text)`, `stat(k)`.
 
 Scenes can also return to the current hub with `go:'@hub'`.
+- **Function locations (from S3E1):** a scene's `loc` may be a function `g => '...'`. The renderer resolves it; the episode log omits it.

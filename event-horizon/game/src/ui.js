@@ -286,7 +286,7 @@
     const hasText = sc.text || sc.loc;
     if (hasText) {
       const body = el('div', sc.night ? 'panel-night' : '');
-      if (sc.loc) body.appendChild(el('div', 'slug', '<span>' + esc(sc.loc) + '</span>' + (sc.clock ? '<span class="t">' + esc([sc.clock.day, sc.clock.date, sc.clock.time].filter(Boolean).join(' · ')) + '</span>' : '')));
+      if (sc.loc) body.appendChild(el('div', 'slug', '<span>' + esc(typeof sc.loc === 'function' ? sc.loc(g) : sc.loc) + '</span>' + (sc.clock ? '<span class="t">' + esc([sc.clock.day, sc.clock.date, sc.clock.time].filter(Boolean).join(' · ')) + '</span>' : '')));
       const pr = el('div', 'prose'); EH.viewer = S.pov || 'sam'; pr.innerHTML = EH.markup(EH.text(sc, g)); body.appendChild(pr);
       box.appendChild(body);
     }
@@ -851,7 +851,7 @@
     }
     h += '<div class="sec"><h4>What you know</h4><div class="notelist">' + (facts.filter(k => !S.facts[k].track).map(k => '<div class="it">' + esc(S.facts[k].text) + '</div>').join('') || '<div class="mono">Nothing yet.</div>') + '</div></div>';
     const ep = episode();
-    h += '<div class="sec"><h4>This episode</h4><div class="notelist">' + (S.epLog.filter(e => e.choice).map(e => '<div class="it"><small>' + esc((ep && ep.scenes[e.scene] && ep.scenes[e.scene].loc) || '') + '</small>' + esc(e.choice) + (e.roll ? ' <span class="mono">[' + esc(EH.TIER_NAMES[e.roll.tier]) + ']</span>' : '') + '</div>').join('') || '<div class="mono">No choices yet.</div>') + '</div></div>';
+    h += '<div class="sec"><h4>This episode</h4><div class="notelist">' + (S.epLog.filter(e => e.choice).map(e => '<div class="it"><small>' + esc((ep && ep.scenes[e.scene] && (typeof ep.scenes[e.scene].loc === 'function' ? '' : ep.scenes[e.scene].loc)) || '') + '</small>' + esc(e.choice) + (e.roll ? ' <span class="mono">[' + esc(EH.TIER_NAMES[e.roll.tier]) + ']</span>' : '') + '</div>').join('') || '<div class="mono">No choices yet.</div>') + '</div></div>';
     if (S.recap.length) h += '<div class="sec"><h4>The story so far</h4><div class="notelist">' + S.recap.map(r => '<div class="it"><small>' + esc(EH.episodes[r.ep] ? epCode(EH.episodes[r.ep]) : r.ep) + '</small>' + EH.inline(r.t) + '</div>').join('') + '</div></div>';
     b.innerHTML = h;
   }
