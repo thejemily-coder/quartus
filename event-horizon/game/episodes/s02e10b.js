@@ -337,11 +337,11 @@ ${g.f('mikey10') ? 'Mikey, on the corner, with his hand up. Six more cops on Was
 Somebody has to decide what kind of thing this is going to be.`,
     choices: [
       { text: 'The crew. Get the eleven out of the fridge *before* two. Before the truck. Before Dante. Nobody sees anything.', tag: 'The crew',
-        fx: g => { g.flag('plan10', 'crew'); g.bond('heck', { respect: 1 }); g.bond('bree', { respect: 1 }); g.hidden('revenant_drift', 0.5); }, go: 'a2_plan_end' },
+        fx: g => { g.flag('plan10', 'crew'); g.bond('heck', { respect: 1 }); g.bond('bree', { respect: 1 }); g.hidden('revenant_drift', 0.5); }, go: 'a2_plan_end', if: g => g.f('crew_heck10') && g.f('crew_bree10') },
       { text: 'Mikey. Tell him everything, tonight. Let the cops be in the street. Let Dante see blue and walk away. You just stand next to your brother.', tag: 'Mikey',
         fx: g => { g.flag('plan10', 'cops'); g.bond('mikey', { trust: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a2_plan_end' },
       { text: 'Dana. Send her the tape tonight. Sunday, put her on the corner with a photographer. Halcyon can\'t disappear eleven people in front of a camera and ten thousand people.', tag: 'Make it public',
-        fx: g => { g.flag('plan10', 'public'); g.bond('nik', { respect: 1 }); g.hidden('halcyon_heat', 2); g.hidden('revenant_drift', -0.5); }, go: 'a2_plan_end', if: g => g.f('institute10') === 'wired' || g.f('dana4') === 'halcyon' },
+        fx: g => { g.flag('plan10', 'public'); g.bond('nik', { respect: 1 }); g.hidden('halcyon_heat', 2); g.hidden('revenant_drift', -0.5); }, go: 'a2_plan_end', if: g => g.f('institute10') === 'wired' },
       { text: 'The card. Call the number. *Come in voluntarily, and they all go home.* Walk in at two, and eleven people walk out.', tag: 'The deal',
         fx: g => { g.flag('plan10', 'deal'); g.bond('jules', { tension: 3 }); g.hidden('revenant_drift', 1); g.hidden('halcyon_heat', 3); g.know('deal10', ['sam'], 'You called Achterberg\'s card. "Two o\'clock. The loading door at Tenth and Washington. Come alone. Walk in, and they walk out."'); }, go: 'a2_plan_end', if: g => g.f('offer10') === 'card' || g.f('offer10') === 'first' }
     ]
@@ -414,7 +414,7 @@ jules: I\'ll be where you can see me.`}
 
 You lie down on the bare mattress at one in the morning. Jules lies down next to you with her shoes on. Nobody sleeps much.
 
-Twelve hours.`,
+Thirteen hours.`,
     next: 'a3_morning'
   }
 });

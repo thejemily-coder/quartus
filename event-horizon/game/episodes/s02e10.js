@@ -92,15 +92,15 @@ ${g.f('terms8') === 'count' ? 'TXT rosa: count?\nTXT sam: zero\nTXT rosa: good. 
 
 Halina Kowal\'s new kidney took. Bree sent you a photo on April twenty-second: Halina in a hospital bed at Jefferson, gray, furious, giving the camera the finger. *SHE\'S FINE*, Bree wrote. *SHE\'S FURIOUS. SHE\'S FINE.*
 
-Jules is asleep in your bed with the lamp off. She has an organic chemistry final in nine days and claims she\'s studying in her sleep.
+Jules is asleep in your bed with the lamp off. She has an organic chemistry final in ten days and claims she\'s studying in her sleep.
 
 You haven\'t gone in since the ballpark. You haven\'t needed to. Grace counted your hair on the first of May and said *same* and went back to her desk without another word, which from Grace is a standing ovation.
 
-And at 8:04 on Monday morning, your phone buzzes with a number you saved in April as *M.A. — DON\'T*.
+And at 8:04 on Monday morning, your phone buzzes with a number you saved in April as *M.A. - DON\'T*.
 
-TXT M.A. — DON\'T: Good morning, Mr. Kearney. I hope your finals are going well.
-TXT M.A. — DON\'T: I\'d like to show you something. The Franklin Institute, Saturday, ten a.m. By the Giant Heart. Bring anyone you like.
-TXT M.A. — DON\'T: I promise to tell you the truth. Nobody else in your life can.
+TXT M.A. - DON\'T: Good morning, Mr. Kearney. I hope your finals are going well.
+TXT M.A. - DON\'T: I\'d like to show you something. The Franklin Institute, Saturday, ten a.m. By the Giant Heart. Bring anyone you like.
+TXT M.A. - DON\'T: I promise to tell you the truth. Nobody else in your life can.
 
 You read it four times.
 
@@ -149,7 +149,7 @@ ACHTERBERG: Yes.
 
 sam: You killed him.
 
-ACHTERBERG: Mr. Brannigan\'s people killed him. I signed the paper that let them. I won\'t pretend otherwise. I don\'t lie to people I respect, and I respect you, because at a baseball game last month you took a gun away from a man who was about to shoot me, and you didn\'t have to.
+ACHTERBERG: Mr. Brannigan\'s people killed him. I signed the paper that let them. I won\'t pretend otherwise. I don\'t lie to people I respect, and I respect you${g.f('slip9b') === 'guns' ? ', because at a baseball game last month you took a gun away from a man who was about to shoot me, and you didn\'t have to' : ''}.
 
 She stands. She\'s shorter than you remembered.
 
@@ -185,7 +185,7 @@ And Bruno is going to find out.`,
     },
 
     a1_noinstitute: {
-      loc: 'CARDONE HALL',
+      loc: 'TEMPLE · PALEY LIBRARY',
       clock: { day: 'Sat', date: 'May 8', time: '10:00 AM' },
       text: `You delete the text. You don\'t go.
 
@@ -193,9 +193,9 @@ Saturday at ten you\'re in the basement of Paley Library with Femi\'s green note
 
 At 10:40, your phone buzzes.
 
-TXT M.A. — DON\'T: That\'s all right. I\'ll tell you anyway, since you won\'t come to me.
-TXT M.A. — DON\'T: On August 22 at 11:51:04, we opened a door under Broad Street. Seven-tenths of a second. You happened to be standing in it.
-TXT M.A. — DON\'T: Sunday the 16th I\'m moving Mr. Iannucci\'s people out of the city. I thought you\'d want to know. You\'re the only one who might stop him from doing something foolish.
+TXT M.A. - DON\'T: That\'s all right. I\'ll tell you anyway, since you won\'t come to me.
+TXT M.A. - DON\'T: On August 22 at 11:51:04, we opened a door under Broad Street. Seven-tenths of a second. You happened to be standing in it.
+TXT M.A. - DON\'T: Sunday the 16th I\'m moving Mr. Iannucci\'s people out of the city. I thought you\'d want to know. You\'re the only one who might stop him from doing something foolish.
 
 You look at it for a long time, with Femi\'s handwriting under your other hand.
 

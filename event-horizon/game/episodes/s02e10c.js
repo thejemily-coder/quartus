@@ -292,7 +292,7 @@ He lowers his hand.
 
 He puts it back in his pocket. He turns around and walks away up 9th Street through the stopped crowd, between the stalls, an old man in a heavy coat, and at Carpenter Street he turns the corner and is gone.
 
-You breathe out. It\'s the only sound on 9th Street.` : `He looks at you. Then he looks up at the fire escape, at Jules, for a long time.
+You breathe out. It\'s the only sound on 9th Street.` : `Then he looks up at the fire escape, at Jules, for a long time.
 
 He doesn\'t lower his hand. He doesn\'t use it either. He waits, the way you\'d wait to see what a kid does with a match.`}
 
@@ -312,7 +312,7 @@ You have time. More than you need.`,
     enter: g => { g.know('guns10', ['sam', 'jules'], 'On 9th Street, in the Slip, you took every gun out of every hand: Dante\'s men\'s and Brannigan\'s. You put all of them in the back of Dante\'s van.'); },
     text: g => `It takes a long time. It\'s supposed to.
 
-Dante\'s pistol first. Finger by finger, like at the ballpark. Then his five guys: two pistols, a revolver older than you, a sawed-off under a windbreaker, and a can of Mace, which you also take, on principle.
+Dante\'s pistol first. Finger by finger${g.f('slip9b') === 'guns' ? ', like at the ballpark' : ''}. Then his five guys: two pistols, a revolver older than you, a sawed-off under a windbreaker, and a can of Mace, which you also take, on principle.
 
 The four stapler-guns. Then the darts, one by one, plucked out of the air like you\'re picking cherries, each one tiny and cold, with a little bead of something clear on the tip.
 
@@ -401,7 +401,7 @@ BRUNO: *Dante. Basta.*
 
 Dante lowers the gun.
 
-Mikey\'s on him in a second, and the gun is on the asphalt, and Dante\'s face is on the hood of his own van, and he doesn\'t fight. Across the street, Brannigan looks at you, and at the crowd, and at a man with three cameras around his neck, and makes a small motion with two fingers. His men in gray put their stapler-guns away and step back into the crowd, and are gone.
+Mikey\'s on him in a second, and the gun is on the asphalt, and Dante\'s face is on the hood of his own van, and he doesn\'t fight. Across the street, Brannigan looks at you, and at the crowd${g.f('plan10') === 'public' ? ', and at a man with three cameras around his neck' : ''}, and makes a small motion with two fingers. His men in gray put their stapler-guns away and step back into the crowd, and are gone.
 
 Nobody closes the truck.`,
     next: 'a3_after'
@@ -454,7 +454,7 @@ You lie back on 9th Street and look up at the awnings and the sky, and a dollar 
     enter: g => { g.flag('freed10'); { let n = 0; if (g.f('crew10_slip') === 'told') n += 2; if (g.f('slip10') === 'told') n += (g.f('slip10b') === 'guns' ? 31 : 7); if (n) g.flag('count10', n); } g.know('freed10', ['sam', 'jules', 'mikey', 'nik'], 'On May 16, at 9th and Washington, in front of ten thousand people at the Italian Market festival, Halcyon\'s truck stood open with Bruno\'s people inside it. Halcyon couldn\'t take them back in public. They all went home.'); if (g.f('plan10') === 'public') g.know('photo10', ['sam', 'nik', 'dana'], 'Rodriguez of the Inquirer got the open truck, the gray blankets, and the man in the tan windbreaker walking away.'); },
     text: g => `${g.f('slip10b') === 'guns' ? 'Time comes back all at once.\n\nDante pulls a trigger on nothing. He looks at his hand. His five guys look at theirs. Four men in gray look at theirs. Somebody\'s Mace is gone. Nobody can figure out where anything went, and Mikey, who can, is the first to move. He has Dante against the hood of the van before Dante finishes looking at his empty hand.\n\n' : ''}${g.f('plan10') === 'deal' ? 'And down Washington Avenue, coming out of the alley from Tenth Street into the crowd, eleven people in gray blankets, walking toward the music.' : 'And the people in the truck start getting out.'}
 
-Slowly. In gray blankets. Blinking. ${g.f('plan10') === 'crew' ? '' : 'Sonny Pugliese, enormous. '}A woman with dirt under her nails who did something with plants. A boy, maybe nineteen, holding his own elbows. A small man in a white apron, stepping down carefully onto 9th Street, onto the yellow line, into the sun.
+Slowly. In gray blankets. Blinking. ${g.f('plan10') === 'crew' ? '' : 'Sonny Pugliese, enormous. '}A woman with dirt under her nails who did something with plants. A boy, maybe nineteen, holding his own elbows. A small man in a white apron, ${g.f('plan10') === 'deal' ? 'stepping off the curb' : 'stepping down carefully'} onto 9th Street, onto the yellow line, into the sun.
 
 Thomas Nguyen looks around at the crowd. At the saint. At the cops.
 

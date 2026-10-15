@@ -85,13 +85,13 @@ jules: Take me to your mother\'s. I want gravy. I want to be yelled at by an Ita
 
 Pop is telling the festival story to Jules for the third time, and it\'s gotten better every time; in this version he personally saw the shot and personally ducked. Gigi is telling Jules about a video. Nonna is at the stove, stirring, with Constance Pemberton\'s camel hair coat hanging on the hook by the door, and Constance Pemberton nowhere to be seen, which means she went home in the Bentley and left her coat, which means, Gigi says, that she\'s *coming back*.
 
-${g.f('terms8') === 'count' ? 'On the St. Monica\'s calendar on the side of the fridge, in red pen, in Ma\'s handwriting, in today\'s square: *' + (g.f('broke_count10') ? '?' : String(g.f('count10') || 0)) + '*. And underneath, smaller: *9th St. Saint Anthony.*' : ''}
+${g.f('terms8') === 'count' ? 'On the St. Monica\'s calendar on the side of the fridge, in red pen, in Ma\'s handwriting, in today\'s square: *' + (g.f('broke_count10') ? (g.f('count10') ? g.f('count10') + ' + ?' : '?') : String(g.f('count10') || 0)) + '*. And underneath, smaller: *9th St. Saint Anthony.*' : ''}
 
 ${g.f('broke_count10') ? 'Ma puts a plate in front of you, and stands there.\n\nrosa: There\'s a question mark on my calendar, Sam.\n\nsam: Ma—\n\nrosa: I was at the festival. I was standing on 9th Street. I saw you on the yellow line, next to your brother, and I didn\'t know how many times you\'d been gone, or for how long. I can\'t count what you don\'t tell me.\n\nShe goes back to the stove. She doesn\'t say anything else. She doesn\'t have to.' : 'Ma puts a plate in front of you, and her hand on the back of your neck for a second, and goes back to the stove.'}
 
 Mikey comes in at seven, still in uniform, and sits down without taking off his belt, which Ma would kill anybody else for.
 
-mikey: Dante Iannucci is in a cell at the Third District. Firing a weapon during a religious procession. ${g.f('saint_shot10') ? 'Destruction of a saint.' : 'Attempting to fire a weapon during a religious procession, on account of it jammed, or something happened to it, nobody can say.'} His grandfather came to the desk at five o\'clock. He looked at his grandson through the glass until the desk sergeant looked away. Then he left. He didn\'t post bail.
+mikey: Dante Iannucci is in a cell at the Third District. ${g.f('saint_shot10') ? 'Firing a weapon during a religious procession. Destruction of a saint.' : g.f('talk10') === 'miss' ? 'Firing a weapon during a religious procession.' : g.f('talk10') === 'strong' ? 'Brandishing a firearm during a religious procession.' : 'Attempting to fire a weapon during a religious procession, on account of it jammed, or something happened to it, nobody can say.'} His grandfather came to the desk at five o\'clock. He looked at his grandson through the glass until the desk sergeant looked away. Then he left. He didn\'t post bail.
 
 frank: Bruno Iannucci didn\'t bail out his grandson?
 
@@ -224,7 +224,7 @@ THOMAS: You eat.`,
 TXT Unknown number: its me. new phone
 TXT Unknown number: im ok. im at my aunts in wildwood. dont tell my mom where
 TXT Unknown number: i drove the van sally. i drove it right up to the saint and i stopped and i put it in park and i couldnt do nothing else. i just sat there
-TXT Unknown number: then all the guns were gone. all of em. i was looking right at dantes hand and then it was empty
+${g.f('slip10b') === 'guns' ? 'TXT Unknown number: then all the guns were gone. all of em. i was looking right at dantes hand and then it was empty' : 'TXT Unknown number: and then something happened out there. i was looking right at dante and something happened'}
 TXT Unknown number: that was you
 
 You stand on Washington Avenue with the phone in your hand while the lunch crowd steps around you.` : `Outside Phở Thanh, Vinnie is sitting on a fire hydrant in your old Phillies hoodie, waiting.
