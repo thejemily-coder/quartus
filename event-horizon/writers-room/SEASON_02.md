@@ -280,3 +280,35 @@ Write each episode to the save. The plan bends; the save doesn't.
     - Speaker IDs are lowercase (`rosa`, `ciro`).
     - Sleep costs are now applied on Friday morning.
     - New canon to note: Rosa says Mikey was hurt in Afghanistan.
+- **S2E9 "Dollar Night"** (Apr 2–19) was written for this playthrough's S2E8 save (Ma counts; revenant_drift 6.2, so Slips are clean).
+  - **Cold open:** Halcyon takes Thomas Nguyen from Phở Thanh. He sends Mai out the back, sets out two chairs, offers tea: "Somebody feed them" (the koi).
+  - **Act One "April":**
+    - Daily *count? / zero* texts. **The cold is a pool, not a river** (drift < 10 payoff).
+    - **Hub (2 of 4):**
+      - **Nik:** dots going dark one a night near Iannucci businesses.
+      - **Grace:** the hair count is the same as March ("You stopped").
+      - **Bree:** works for Bruno since March; Halina's transplant is **Apr 20**; Heck sleeps on the couch.
+      - **Mikey:** 4 missing persons; "the federal partners"; "the case is coming to Mifflin Street."
+  - **Act Two "Vincenzo":**
+    - At 2 a.m. Vinnie, his knuckles split from the Circolo raid (Sonny Pugliese taken), tells the plan: Dollar Dog Night, the Pemberton Lyle suite, grab Achterberg in the service corridor, out in a *DANTE'S CATERING* hot dog cart. "*Pemberton, Juliet*" is on the guest list.
+    - Sam: you and me / tell Mikey (Vinnie's "six people") / tell Jules (she goes: "I want to sit across from her").
+  - **Act Three "Seventh-Inning Stretch":** the corridor standoff (Dante's gun at Achterberg's head; Brannigan's people in usher polos; Jules in the doorway).
+    - **Text Ma "counting" then Slip** (only with `terms8` 'count') / Slip silently (breaks the promise) / **Talk** (Charm+Persuade: strong, Dante stands down for "Rosa's kid"; miss, Dante's shot hits a Halcyon usher).
+    - **In the Slip, Jules's eyes move** (`jules_saw9`). Options: take the guns ("Thank you, Mr. Kearney." Achterberg) / walk Jules into the coat room.
+    - **The freight elevator:** "Go" / "Stay" (Dante: "You're done.") / **say nothing, and Vinnie picks by himself** (gives back the coat).
+  - **Act Four "Mifflin Street":**
+    - Jules: "I saw you… My eyes moved." Ma: "4. four seconds. I counted."
+    - Sunday:
+      - **Stayed:** Vinnie on the Kearney couch; Philomena brings pizzelles: "This is not a debt. This is a gift."
+      - **Picked:** the Escalade keys and coat left at the Circolo; Bruno: "Nobody touches Mifflin Street"; Vinnie back to Local 57.
+      - **Went:** "i asked him for you."
+    - The guns path adds a text from M.A.
+  - **Tag:** **Constance comes to Mifflin Street** and sits on Teresa's stoop. "You got old." "So did you. I came anyway." "Our grandchildren." Shelling peas.
+- **E10 finale "The Italian Market":**
+  - Sam picks his own hero name.
+  - Hugh joins Halcyon (S3 hook).
+  - Halina's transplant is Apr 20.
+  - Bruno's war vs. Halcyon continues: Halcyon has Nguyen, Sonny and others.
+  - Constance and Teresa: a plan for the grandchildren.
+  - Mifflin Street is protected by Bruno's gift (except on the "went" path, where Vinnie asked).
+  - Jules's eyes move in the Slip.
