@@ -7,7 +7,7 @@ EH.scenes('s03e01', {
     loc: 'BROAD STREET',
     clock: { day: 'Sun', date: 'Aug 22', time: '2:40 PM' },
     enter: g => { g.meet('carmen'); g.meet('jayden'); },
-    text: g => `${g.f('watch1') === 'home' ? 'Gravy is on the table. Ma is serving. Jules is learning, for the eleventh Sunday in a row, that you do not say *no thank you* to Nonna\'s meatballs, you say *just one*, and then you eat four.' : 'You\'re on the Broad Street Line, the two of you, heading south for gravy, because Ma said two o\'clock and Ma\'s two o\'clock is a legal deadline.'}
+    text: g => `${g.f('watch1') === 'home' ? 'Gravy is on the table. Ma is serving. Jules is learning, for the eleventh Sunday in a row, that you do not say *no thank you* to Nonna\'s meatballs, you say *just one*, and then you eat four.' : 'You\'re on the Broad Street Line, the two of you, heading south for gravy, forty minutes late for a two o\'clock that Ma considers a legal deadline.'}
 
 Your phone. A number you saved last fall, after Broad Street, after the bus: *CARMEN TORRES.*
 
@@ -17,7 +17,7 @@ carmen: They\'re very nice. They keep saying how nice. They want to take him to 
 
 Behind her, a little boy\'s voice:
 
-jayden: *Tell the cold man! Grandma, tell him it\'s getting cold!*
+jayden: *Tell the cold man! Abuela, tell him it\'s getting cold!*
 
 carmen: I told them he\'s sleeping. They\'re waiting on the step. They said they can wait. They said they have all afternoon.
 
@@ -116,7 +116,7 @@ NURSE: Mrs. Torres, I really think—
 
 carmen: *No.* In English, so you understand. *No.* Not today, not in your car. You leave me your paper. If I want, I call you. That\'s what voluntary means. My grandson\'s friend is a college boy, he looked it up.
 
-On the stoop across the street, an old man in a Phillies cap starts clapping. Slowly. Then a woman in a housecoat. Then the kid with the hose.
+On the stoop across the street, an old man in a Phillies cap yells, *¡Eso, Carmen!* A woman in a housecoat yells it too. The kid with the hose, very casually, turns it on the SUV\'s tires.
 
 The older nurse looks at the clapping neighbors, and at Carmen, and her face does something complicated. She sets a pamphlet on the step. *YOU ARE NOT ALONE.*
 
@@ -276,9 +276,9 @@ ${g.f('travel1') === 'slip' ? 'And you\'re still alone on this stoop.' : 'Beside
     loc: 'NORTH 15TH STREET · CARMEN\'S LIVING ROOM',
     clock: { time: '4:00 PM' },
     enter: g => { g.know('jayden_tonight1', ['sam', 'jayden', 'carmen'], 'Jayden, on the anniversary: "It\'s gonna get cold tonight. Everywhere. At the time."'); g.bond('jayden', { trust: 1, affection: 1 }); },
-    text: g => `Carmen\'s living room is the same as every abuela\'s living room in Philadelphia: plastic on the good couch, a Virgen de Guadalupe candle, a TV the size of a garage door, and a hundred photos of one boy.
+    text: g => `Carmen\'s living room is the same as every abuela\'s living room in Philadelphia: plastic on the good couch, a San Judas Tadeo candle, a TV the size of a garage door, and a hundred photos of one boy.
 
-${g.f('travel1') === 'slip' && g.f('wellness1') !== 'mikey' ? 'Jules gets there at 3:40, out of breath, and takes one look at you and doesn\'t ask.\n\n' : ''}Jayden is nine now. He\'s grown two inches and lost both front teeth and he is wearing, of course, ${g.f('hero_name') === 'secondhand' ? 'a red SECOND HAND T-shirt' : 'one of the T-shirts'}.
+${g.f('travel1') === 'slip' && g.f('wellness1') !== 'mikey' ? 'Jules gets there ten minutes behind you, out of breath, and takes one look at you and doesn\'t ask.\n\n' : ''}Jayden is nine now. He\'s grown two inches and lost both front teeth and he is wearing, of course, ${g.f('hero_name') === 'secondhand' ? 'a red SECOND HAND T-shirt' : 'one of the T-shirts'}.
 
 He walks right up to you and looks up.
 
@@ -325,7 +325,7 @@ Carmen listens to all of it with her hand over her mouth.
 
 When you\'re done, she gets up, slowly, with the cane, and goes into the kitchen. You hear the stove click on. When she comes back, she has the pamphlet, black and curling at the corners.
 
-She drops it in the Virgen de Guadalupe candle and watches it burn.
+She drops it in the San Judas candle and watches it burn.
 
 carmen: *Free.*` : g.f('carmen1') === 'money' ? `You take out your wallet. Two hundred, in twenties, from a summer of deliveries. You put it on the coffee table next to the pamphlet.
 
@@ -341,9 +341,9 @@ She puts the pamphlet in a drawer. Not the trash. A drawer.` : `sam: It\'s your 
 
 She looks at you for a long time.
 
-carmen: Everybody tells me what to do since the hip. The doctors, the lady from Medicaid, my sister in Bayamón on the phone. Nobody says *your choice*.
+carmen: Everybody tells me what to do since the hip. The doctors, the lady from Medicaid, my sister in Bayamón on the phone. Everybody has an opinion. Nobody has to live in my house.
 
-She puts the pamphlet on top of the TV, under the Virgin. Not the trash. Not the phone.
+She puts the pamphlet on top of the TV, under San Judas. Not the trash. Not the phone.
 
 carmen: I\'ll think. *(she pats your hand)* I\'m allowed to think.`}
 

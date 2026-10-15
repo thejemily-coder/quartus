@@ -8,7 +8,7 @@ EH.scenes('s03e01', {
     clock: { day: 'Sun', date: 'Aug 22', time: '11:55 AM' },
     text: `The north side of City Hall, under the arch, in the heat. A podium with the city seal on it. Cameras on tripods, six deep. TV trucks double-parked on Penn Square with their masts up. A couple hundred people behind a bike-rack barricade: reporters, staffers, tourists who wandered over from the Love Park fountain to see what the fuss was.
 
-Jules is beside you in sunglasses and a Temple hoodie with the hood up, in August, in ninety degrees. Her hand is in yours and it\'s cold, which it never is.
+Jules is beside you in sunglasses and a Temple hoodie with the hood up, in August, in ninety degrees. Her hand is in yours and it\'s colder than usual, which you didn\'t know it could be.
 
 jules: I told her I was in Maine this weekend.
 
@@ -36,9 +36,9 @@ And Jules, beside you on the bad end of the couch, very straight, the way her mo
 
 Gigi looks at the screen, at the empty podium with the city seal on it, at the chyron: *LIVE: CITY HALL ANNOUNCEMENT ON BROAD STREET ANNIVERSARY.*
 
-gigi: Is this about Second Hand? Is it? Sammy, is it about—
+gigi: Is this about ${g.f('hero_name') === 'secondhand' ? 'Second Hand' : g.f('hero_name') === 'wawa' ? 'Wawa' : g.f('hero_name') === 'blur' ? 'the Blur' : 'Saint Sonic'}? Is it? Sam, is it about—
 
-rosa: Gianna. Quiet.
+rosa: Gigi. Quiet.
 
 Ma doesn\'t take her eyes off the screen. Neither does Nonna.
 
@@ -123,7 +123,7 @@ The Commissioner says *thank you all*, and they walk back inside, the three of t
   a2_after: {
     loc: g => g.f('watch1') === 'hall' ? 'CITY HALL · THE NORTH APRON' : g.f('watch1') === 'home' ? 'MIFFLIN STREET · THE FRONT STEP' : '1300 RESIDENCE HALL · THE STAIRWELL',
     clock: { time: '12:25 PM' },
-    text: g => `${g.f('watch1') === 'hall' ? 'The crowd breaks up. You walk Jules away across the plaza, past the big bronze clothespin, before Hugh can make his way through the bike racks to say something charming.\n\nShe stops on the corner of 15th and Market and leans on a newspaper box and just breathes.' : g.f('watch1') === 'home' ? 'Pop turns off the TV. Nobody says anything. Gigi looks from face to face and, for once in her life, doesn\'t ask.\n\nJules gets up and goes out the front door. You find her sitting on the front step, the one the whole family sits on, with her elbows on her knees.' : 'Simone mutes the TV. Nik closes his laptop very gently, the way you\'d close a door on someone sleeping.\n\nJules gets up and walks out of the lounge. You find her in the stairwell between seven and six, sitting on a step, under the emergency light.'}
+    text: g => `${g.f('watch1') === 'hall' ? 'The crowd breaks up. You walk Jules away across the plaza, past the big bronze clothespin, before Hugh can make his way through the bike racks to say something charming.\n\nShe stops on the corner of 15th and Market and leans on a newspaper box and just breathes.' : g.f('watch1') === 'home' ? 'Pop turns off the TV. Nobody says anything. Gigi looks from face to face and, for once in her life, doesn\'t ask.\n\nJules gets up and goes out the front door. You find her sitting on the front step, the one the whole family sits on, with her elbows on her knees.' : 'Simone mutes the TV. Nik closes his laptop without a word.\n\nJules gets up and walks out of the lounge. You find her in the stairwell between seven and six, sitting on a step, under the emergency light.'}
 
 jules: She knew.
 
@@ -133,7 +133,7 @@ jules: She said *if your child has been cold for a year.* She said it into the c
 
 She looks at her hands.
 
-jules: Either she knows about me and she said it anyway. Or she doesn\'t know, and she stood next to that woman and said it anyway. I don\'t know which one is worse. I genuinely can\'t tell.
+jules: Either she knows about me and she said it anyway. Or she doesn\'t know, and she stood next to that woman and said it anyway. I don\'t know which one is worse.
 
 ${g.knows('aperture_truth', 'jules') ? 'jules: She opened a door under Broad Street, Sam. We were standing in it. And my mother is helping her take attendance.' : 'jules: That woman has a bed with my number on it. And my mother is helping her take attendance.'}
 
@@ -210,7 +210,7 @@ jules: She can have tomorrow.`,
 
 She looks at you. For a second, she looks almost annoyed, like you\'ve handed her something heavy. Then she doesn\'t.
 
-jules: Nobody asks me that. Do you know that? Gran tells me. Mother tells me. Hugh tells me what I *really* want, which is always whatever he wants. You\'re the only one who asks.
+jules: Nobody asks me that. Do you know that? Gran tells me. My mother tells me. Hugh tells me what I *really* want, which is always whatever he wants. You\'re the only one who asks.
 
 She thinks.
 

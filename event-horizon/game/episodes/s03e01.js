@@ -37,13 +37,13 @@ She caps the pen.
 
 catherine: Sixty-one patients.
 
-ACHTERBERG: Sixty-one confirmed. There may be more. That\'s rather the point of a registry.
+ACHTERBERG: Sixty-one. Confirmed. That\'s rather the point of a registry.
 
 catherine: Symptoms. Cold extremities. Episodes of lost time. Perceptual anomalies. *(she looks up)* That\'s a very wide net, Miriam.
 
 ACHTERBERG: It was a very strange night.
 
-A door opens at the far end of the room. A young man in a navy polo shirt with a lanyard around his neck, carrying a cardboard tray of coffees, golden, perfectly at ease.
+A door opens at the far end of the room. A young man in a navy polo shirt with a lanyard around his neck, carrying a cardboard tray of coffees like he was born holding one.
 
 The polo shirt says *BROAD STREET REGISTRY · OUTREACH* over the heart.
 
@@ -99,7 +99,7 @@ The rest of you has changed. It took the summer to notice. You\'re a year older,
 
 What did the year make you?`,
       choices: [
-        { text: 'Stronger. You carried eleven people\'s worth of guns across 9th Street in two armloads. Your back remembers. (Body +1)', tag: 'Body',
+        { text: 'Stronger. A summer of hauling Pop\'s cab parts, Nonna\'s groceries, and Ciro\'s flour. Your back remembers. (Body +1)', tag: 'Body',
           fx: g => { g.attr('body', 1); g.flag('s3_attr', 'body'); }, go: 'a1_nik' },
         { text: 'Faster. Not the Slip. You. Every delivery all summer, Ciro\'s e-bike, Passyunk to Fishtown, beating the app\'s times. (Reflex +1)', tag: 'Reflex',
           fx: g => { g.attr('reflex', 1); g.flag('s3_attr', 'reflex'); }, go: 'a1_nik' },
@@ -109,7 +109,7 @@ What did the year make you?`,
           fx: g => { g.attr('charm', 1); g.flag('s3_attr', 'charm'); }, go: 'a1_nik' },
         { text: 'Softer. Ma counting. Vinnie\'s *save this number*. You let more in than you used to. (Heart +1)', tag: 'Heart',
           fx: g => { g.attr('heart', 1); g.flag('s3_attr', 'heart'); }, go: 'a1_nik' },
-        { text: 'Steadier. You walked into a truck that was going to Delaware and didn\'t shake. (Nerve +1)', tag: 'Nerve',
+        { text: 'Steadier. You looked Miriam Achterberg in the eye in May and didn\'t shake. (Nerve +1)', tag: 'Nerve',
           fx: g => { g.attr('nerve', 1); g.flag('s3_attr', 'nerve'); }, go: 'a1_nik' }
       ]
     },

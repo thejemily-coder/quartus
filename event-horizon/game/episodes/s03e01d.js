@@ -25,7 +25,7 @@ jules: *(very quietly)* They\'re cold.
 
 sam: Yeah.
 
-jules: They\'re all cold. They came here because it\'s the anniversary, and they didn\'t know where else to go. Sam. They\'re the *sixty-one*.
+jules: They\'re all cold. They didn\'t know where else to go. *(beat)* Sam. They\'re the *sixty-one*.
 
 Parked at the curb in front of the bank: a white van with the kingfisher on the side and a banner on a frame on the roof. *BROAD STREET REGISTRY · WE\'RE HERE · 24/7.* The side door is open. A folding table. Bottled water. Pamphlets. Hugh, in his navy polo, sitting on the step of the van in the yellow light, with a clipboard on his knee, looking at his phone, golden and bored.
 
@@ -63,13 +63,13 @@ Hugh\'s smile doesn\'t move. Something behind it does.
 
 jules: You took my handkerchief out of my coat. You gave it to them in a Ziploc bag. You\'ve been reporting on me since March. Since *before* March. You\'re not handing out water, Hugh. You\'re handing out your sister.
 
-Hugh looks at her for a long moment.
+Hugh looks at her.
 
 hugh: *(lightly)* Somebody has to keep an eye on you, Jubilee. You\'ve been so *lucky* lately.
 
 He looks at you.
 
-hugh: And you. *(he picks up the clipboard, flips a page, doesn\'t read it)* Do you know how many people on these four corners would sell their own mothers to be able to do what you do? I\'ve been doing outreach for six days. Every single one of them, Kearney, asks the same question. *Is there a cure.*
+hugh: And you. *(he picks up the clipboard, flips a page, doesn\'t read it)* I\'ve been doing outreach for eleven hours. Do you know what every single one of them asks me, Kearney? The same question. *Is there a cure.*
 
 hugh: Nobody asks if there\'s a cure for being *lucky*.
 
@@ -104,13 +104,13 @@ And it stays stopped. For exactly one second. You watch it hang there on the fou
 
 Every phone on every corner shows the same thing. You look at yours. *11:51:04.* Then *11:51:04.* Twice.
 
-nik: *(in your ear, very quietly)* Bro. Bro, every clock I have just did that. Every one. The traffic cams. The bank. The atomic clock app on my phone, which syncs to *Boulder, Colorado*. They all skipped. Or. Not skipped. *Stuttered.* They all said four twice.
+nik: *(in your ear, barely a voice)* Salvatore. Every clock I have just did that. Every one. The traffic cams. The bank. The atomic clock app on my phone, which syncs to *Boulder, Colorado*. They all skipped. Or. Not skipped. *Stuttered.* They all said four twice.
 
 nik: The seismograph didn\'t move. Nothing *moved*. Time just... hiccuped.
 
-${g.f('corner1') === 'slip' ? '' : 'You felt it. Not cold. Not the Slip. Something under your feet, under the asphalt, under the subway, like a door somewhere far below you took one breath in and one breath out.'}
+${g.f('corner1') === 'slip' ? '' : 'You felt it. Cold, the way Jayden said, everywhere at once. Not the Slip. Something under your feet, under the asphalt, under the subway, like a door somewhere far below you took one breath in and one breath out.'}
 
-${g.f('corner1') === 'hand' ? 'Jules felt it too. Her hand jerks in yours, hard, like something pulled on it.\n\njules: *(barely)* Did you feel that?\n\nsam: Yeah.\n\njules: My luck. It went *that way*. *(she points down, at the street, at the middle of Broad)* All of it. Like a tide going out. Like something down there was pulling on it.\n\nShe holds on with both hands.\n\njules: And then you held on, and it came back.' : g.f('corner1') === 'hugh' ? 'At the van, Hugh is on his feet, staring at his phone, at the two fours. For the first time since you\'ve known him, he looks his age.\n\nJules\'s hand jerks in yours, hard, like something pulled on it.\n\njules: *(barely)* My luck. It went *that way*. Down. Into the street.' : ''}`,
+${g.f('corner1') === 'hand' ? 'Jules felt it too. Her hand jerks in yours, hard, like something pulled on it.\n\njules: *(barely)* Did you feel that?\n\nsam: Yeah.\n\njules: My luck. It went *that way*. *(she points down, at the street, at the middle of Broad)* All of it. Like a tide going out. Like something down there was pulling on it.\n\nShe holds on with both hands.\n\njules: And then you held on, and it came back.' : g.f('corner1') === 'hugh' ? 'At the van, Hugh is on his feet, staring at his phone, at the two fours. For the first time since you\'ve known him, he looks nineteen.\n\nJules\'s hand jerks in yours, hard, like something pulled on it.\n\njules: *(barely)* My luck. It went *that way*. Down. Into the street.' : ''}`,
     next: g => g.f('corner1') === 'slip' ? 'a4_inside' : 'a4_after',
     nextTargets: ['a4_inside', 'a4_after']
   },
@@ -168,7 +168,7 @@ jules: *(very calmly)* Of course there is.`,
     enter: g => { g.recap('One year after the Hitch, at 11:51:04, every clock in North Philadelphia said four twice.'); },
     text: g => `Afterward, the fifteen people on the four corners go home, one at a time, without talking to each other, the way people leave a funeral for somebody they didn\'t know well. A few of them stop at the van for water. Most don\'t.
 
-You and Jules walk north on Broad. A mile. Past the Divine Lorraine, past the Uptown, past the place on Girard that sells the good cheesesteaks, closed now. It\'s hot. Her hand is warm again.
+You and Jules walk north on Broad. A mile. Past the Divine Lorraine, past the Uptown, past the place on Girard that sells the good cheesesteaks, closed now. It\'s hot. Her hand in yours is cold again, her ordinary cold.
 
 ${g.f('mother1') === 'ask' ? 'jules: I\'m going to start the letter tonight. *Dear Mother.* No. *Mother.* No. I\'ll figure it out. I have four hundred sheets of Crane\'s.' : g.f('mother1') === 'call' ? 'Her phone has buzzed thirty-one times since noon. She hasn\'t turned it over once.\n\njules: She\'s going to come to campus. Tomorrow. I know her. She\'ll come in the car and stand in the lobby of 1300 in her cream jacket and say *Juliet* until I come down.' : 'jules: Tomorrow I\'ll call her. Tomorrow. Today was ours. I wanted one thing to be ours.'}
 
@@ -186,7 +186,7 @@ ${g.f('roof10') === 'love' ? 'She goes up on her toes and kisses you, on Broad S
 
 Upstairs, on the seventh floor, Nik has left the last slice of wedding cake on a paper plate outside your door, with a Post-it.
 
-*YOU WERE STANDING IN A DOOR. ALSO, I ATE MOST OF THE CAKE. -N*`,
+*HAPPY HITCH DAY. I ATE MOST OF THE CAKE. IT WAS A WEDDING. -N*`,
     next: 'tag_catherine'
   },
 
@@ -234,7 +234,7 @@ constance: Sit down, Catherine.
 
 catherine: *Did you know.*
 
-constance: Yes. *(she pours a second glass and holds it out)* I\'ve known since before she was born. Sit down. I\'ve been waiting twenty years to have this conversation with you, and you\'re going to need this.
+constance: Yes. *(she pours a second glass and holds it out)* Since before she was born. Sit. You\'ll want this.
 
 Catherine looks at the glass.
 
