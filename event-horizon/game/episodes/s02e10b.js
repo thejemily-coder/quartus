@@ -8,7 +8,7 @@ EH.scenes('s02e10', {
     loc: 'CARDONE HALL · THE LOADING DOCK',
     clock: { day: 'Tue', date: 'May 11', time: '11:50 PM' },
     enter: g => { g.know('dante_plan10', ['sam', 'vinnie'], 'Vinnie: Halcyon is holding Bruno\'s people in the old Esposito produce warehouse at 10th and Washington. Sunday the 16th at two, a white box truck pulls out of the loading door. The saints\' procession crosses Washington at 9th at the same minute. Dante is going to hit the truck there, in front of everybody.'); },
-    text: g => `${g.f('vinnie9') === 'stayed' ? 'Vinnie has been sleeping on the couch in your parents\' living room for three weeks. Tonight he texts you from it.\n\nTXT vinnie: loading dock. 20 min. taking the 17\n\n' : 'Four weeks of nothing. Not a text. Not a like. And then, at 11:31 on a Tuesday night:\n\nTXT vinnie: loading dock. dont bring nobody\n\n'}He\'s on the edge of the loading dock behind Cardone Hall, under the one working light, same spot as April. ${g.f('vinnie9') === 'went' ? 'Dante\'s black cashmere coat again. It fits him better now. That\'s the worst part.' : 'In a Phillies hoodie that used to be yours.'}
+    text: g => `${g.f('vinnie9') === 'stayed' ? 'Vinnie has been sleeping on the couch in your parents\' living room for three weeks. Tonight he texts you from it.\n\nTXT vinnie: loading dock. 20 min. taking the subway\n\n' : 'Four weeks of nothing. Not a text. Not a like. And then, at 11:31 on a Tuesday night:\n\nTXT vinnie: loading dock. dont bring nobody\n\n'}He\'s on the edge of the loading dock behind Cardone Hall, under the one working light, same spot as April. ${g.f('vinnie9') === 'went' ? 'Dante\'s black cashmere coat again. It fits him better now. That\'s the worst part.' : 'In a Phillies hoodie that used to be yours.'}
 
 vinnie: Sally.
 
@@ -226,7 +226,7 @@ mikey: I can be standing on that corner. And when that truck pulls out, and Dant
 
 He looks at you.
 
-mikey: ${g.f('mikey9') === 'open' ? 'And I\'m not gonna ask what you\'re gonna be doing. Because I know what you\'re gonna be doing. And I already know I hate it.' : 'And you\'re gonna be somewhere you shouldn\'t. Right? Don\'t answer that.'}
+mikey: ${g.f('mikey_knows') ? 'And I\'m not gonna ask what you\'re gonna be doing. Because I know what you\'re gonna be doing. And I already know I hate it.' : 'And you\'re gonna be somewhere you shouldn\'t. Right? Don\'t answer that.'}
 
 mikey: Text Ma.
 
@@ -304,11 +304,9 @@ You tell her about Sunday. All of it.
 
 She doesn\'t say *don\'t go*. She doesn\'t say *I\'m coming*. She sits with it, with the quarter in her palm.
 
-jules: In the corridor, at the ballpark. I saw you. Everything was stopped, and you were the only thing moving, and you *waved* at me.
+${g.f('jules_saw9') ? 'jules: In the corridor, at the ballpark. I saw you. Everything was stopped, and you were the only thing moving, and you *waved* at me.' : 'jules: In the corridor, at the ballpark, I stood in a doorway and couldn\'t do a single thing. I\'m done standing in doorways.'}
 
-sam: I didn\'t know what else to do.
-
-jules: It was the nicest thing anyone\'s ever done in front of five guns.
+${g.f('jules_saw9') ? 'sam: I didn\'t know what else to do.\n\njules: It was the nicest thing anyone\'s ever done in front of five guns.' : 'sam: Okay.'}
 
 She closes her hand over the quarter.
 

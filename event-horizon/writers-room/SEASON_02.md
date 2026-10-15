@@ -354,3 +354,14 @@ Write each episode to the save. The plan bends; the save doesn't.
   - The roof on Mifflin: Jules is staying the summer and working at the Free Library. Hugh is "in Boston". At 11:51, nothing happens.
   - `roof10`: **love** (the first "I love you"; Jules: "since the minifridge") / summer / dunno.
 - **Tag:** Building 7 lobby. Hugh, holding the handkerchief, takes a real Halcyon badge. "Luck doesn't run in your family. It runs *through* it. It picks." **"Let's talk about your sister."** END OF SEASON TWO.
+- **S2E10 QA:**
+  - Seals held. Whitney funding APERTURE is NOT revealed (Jules: "She plays cards at my father's table"). "The Audience" is not named.
+  - The handkerchief went to Brannigan in E7. Hugh keeps the empty Ziploc bag.
+  - The cold-open card is gated on `note6` 'told'.
+  - The St. Monica's *t* was taught by "the sisters", for ninety years.
+  - Revenant scar: left eye to jaw.
+  - The M.A. number and Ma's 4 count are gated on E9 flags. `jules_saw9` gates "you waved".
+  - Mikey is gated on `mikey_knows`. The wire is gated on `dana5` sent/one.
+  - Public needs the wire. Crew needs both the Bree and Heck hub visits.
+  - Mikey says "Sammy". Frank says "kid". Nonna says "Salvatò". Jules says "Gran".
+  - Dante's charge varies by path. The calendar shows "N + ?" on a mixed count.

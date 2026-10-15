@@ -30227,13 +30227,13 @@ EH.episode({
       night: true,
       loc: 'MIFFLIN STREET · THE STOOP',
       clock: { day: 'Mon', date: 'Apr 19', time: '7:50 PM' },
-      text: `> THE CAMERA.
+      text: g => `> THE CAMERA.
 
 Later. The streetlights are on. The peas are shelled, the bowl full of green and the paper bag full of empty pods. The Bentley is still halfway down Mifflin Street with its driver standing beside it like he\'s been there since the Korean War.
 
 Two old women on kitchen chairs on a stoop. They have been talking for four hours. Neither of them has raised her voice once.
 
-constance: There\'s one more thing.
+${g.f('note6') === 'told' ? `constance: There\'s one more thing.
 
 She takes something out of the pocket of her camel hair coat. An index card, folded in half, soft at the corners.
 
@@ -30249,11 +30249,11 @@ constance: Hugh thinks it\'s the boy\'s hand. Your grandson.
 
 Teresa doesn\'t answer for a long time.
 
-TERESA: Sister Margaret taught that *t* at St. Monica\'s. To every boy in that school. For fifty years.
+TERESA: The sisters taught that *t* at St. Monica\'s. To every boy in that school. For ninety years.
 
 She holds the card closer to the light.
 
-TERESA: She taught it to my brother.
+TERESA: They taught it to my brother.
 
 Constance looks at her.
 
@@ -30271,7 +30271,7 @@ constance: Teresa. This card is from November.
 
 Teresa folds the card. She doesn\'t give it back. She puts it in the pocket of her black cardigan, next to her rosary.
 
-TERESA: Then somebody in my family has been writing letters from somewhere I can\'t go.
+TERESA: Then somebody in my family has been writing letters from somewhere I can\'t go.` : `Teresa looks up the street at the Kearneys\' front window, where the light just went on.`}
 
 She stands up. She picks up the bowl of peas.
 
@@ -30295,19 +30295,19 @@ TERESA: Because I counted. And something is going to happen on the sixteenth. An
 
 Finals on the twelfth, thirteenth and fourteenth. Move-out on the sixteenth. The ninth floor is half boxes and half panic. Somebody has written *DAYS UNTIL WE ARE FREE* on the lounge whiteboard and is counting down in Sharpie, and somebody else keeps adding a day.
 
-${g.f('terms8') === 'count' ? 'TXT rosa: count?\nTXT sam: zero\nTXT rosa: good. eat breakfast\n\nIt\'s been zero since the ballpark. Ma counted four seconds that night and wrote it on the St. Monica\'s calendar, and that\'s the last red mark.' : 'TXT rosa: eat breakfast'}
+${g.f('terms8') === 'count' ? 'TXT rosa: count?\nTXT sam: zero\nTXT rosa: good. eat breakfast\n\nIt\'s been zero since the ballpark. ' + (g.f('slip9') === 'told' ? 'Ma counted four seconds that night and wrote it on the St. Monica\'s calendar, and that\'s the last red mark.' : 'The St. Monica\'s calendar on the fridge has no new red marks since April.') : 'TXT rosa: eat breakfast'}
 
 Halina Kowal\'s new kidney took. Bree sent you a photo on April twenty-second: Halina in a hospital bed at Jefferson, gray, furious, giving the camera the finger. *SHE\'S FINE*, Bree wrote. *SHE\'S FURIOUS. SHE\'S FINE.*
 
-Jules is asleep in your bed with the lamp off. She has an organic chemistry final in nine days and claims she\'s studying in her sleep.
+Jules is asleep in your bed with the lamp off. She has an organic chemistry final in ten days and claims she\'s studying in her sleep.
 
 You haven\'t gone in since the ballpark. You haven\'t needed to. Grace counted your hair on the first of May and said *same* and went back to her desk without another word, which from Grace is a standing ovation.
 
-And at 8:04 on Monday morning, your phone buzzes with a number you saved in April as *M.A. — DON\'T*.
+And at 8:04 on Monday morning, your phone buzzes with ${g.f('slip9b') === 'guns' ? 'a number you saved in April as *M.A. - DON\'T*' : 'a number you don\'t have. By the second text you\'ve saved it as *M.A. - DON\'T*'}.
 
-TXT M.A. — DON\'T: Good morning, Mr. Kearney. I hope your finals are going well.
-TXT M.A. — DON\'T: I\'d like to show you something. The Franklin Institute, Saturday, ten a.m. By the Giant Heart. Bring anyone you like.
-TXT M.A. — DON\'T: I promise to tell you the truth. Nobody else in your life can.
+TXT M.A. - DON\'T: Good morning, Mr. Kearney. I hope your finals are going well.
+TXT M.A. - DON\'T: I\'d like to show you something. The Franklin Institute, Saturday, ten a.m. By the Giant Heart. Bring anyone you like.
+TXT M.A. - DON\'T: I promise to tell you the truth. Nobody else in your life can.
 
 You read it four times.
 
@@ -30320,7 +30320,7 @@ nik: Bro. Is that her? Is that *her*? Don\'t answer. Your face answered.`,
         { text: 'Go. With Jules. *Bring anyone you like.* Bring the one with the number.', tag: 'With Jules',
           fx: g => { g.flag('institute10', 'jules'); g.bond('jules', { trust: 1 }); }, go: 'a1_institute' },
         { text: 'Go. And let Nik wire you. Every word, for Dana Fiorillo. *The truth*, she said. Let the city have it too.', tag: 'Wired',
-          fx: g => { g.flag('institute10', 'wired'); g.bond('nik', { respect: 2 }); g.hidden('halcyon_heat', 1); }, go: 'a1_institute', if: g => g.f('dana4') === 'halcyon' || g.f('dana5') },
+          fx: g => { g.flag('institute10', 'wired'); g.bond('nik', { respect: 2 }); g.hidden('halcyon_heat', 1); }, go: 'a1_institute', if: g => g.f('dana4') === 'halcyon' || g.f('dana5') === 'sent' || g.f('dana5') === 'one' },
         { text: 'Don\'t go. Delete it. You know what she is.', tag: 'Don\'t go',
           fx: g => { g.flag('institute10', 'none'); }, go: 'a1_noinstitute' }
       ]
@@ -30356,7 +30356,7 @@ ACHTERBERG: Yes.
 
 sam: You killed him.
 
-ACHTERBERG: Mr. Brannigan\'s people killed him. I signed the paper that let them. I won\'t pretend otherwise. I don\'t lie to people I respect, and I respect you, because at a baseball game last month you took a gun away from a man who was about to shoot me, and you didn\'t have to.
+ACHTERBERG: Mr. Brannigan\'s people killed him. I signed the paper that let them. I won\'t pretend otherwise. I don\'t lie to people I respect, and I respect you${g.f('slip9b') === 'guns' ? ', because at a baseball game last month you took a gun away from a man who was about to shoot me, and you didn\'t have to' : ''}.
 
 She stands. She\'s shorter than you remembered.
 
@@ -30381,7 +30381,7 @@ ACHTERBERG: Think about it until Sunday. You have more time than anyone.`,
       loc: 'THE FRANKLIN INSTITUTE',
       text: g => `${g.f('offer10') === 'card' ? 'You take the card. You don\'t say anything. You walk out through the left ventricle, where you threw up in third grade, and the heart beats behind you like it\'s laughing.' : g.f('offer10') === 'first' ? 'sam: Let them go first. All of them. Then we talk.\n\nACHTERBERG: *(smiling)* You\'re your mother\'s son. I\'ve read about her. She walked into a social club in her church coat.\n\nShe puts the card in your hand anyway.\n\nACHTERBERG: No. But I admire the instinct.' : 'sam: No.\n\nA second grader in a yellow T-shirt stops and stares at you. Achterberg doesn\'t flinch.\n\nACHTERBERG: I thought you\'d say that. I\'d have been disappointed if you didn\'t.\n\nShe puts the card on the bench beside her and leaves it there. You don\'t pick it up. On your way out, you look back. A second grader has picked it up and is using it as a fan.'}
 
-${g.f('institute10') === 'wired' ? 'Outside on the steps, by the Ben Franklin statue, Nik is in your ear, hyperventilating.\n\nnik: I got it. I got *all* of it. "We opened a door. You happened to be standing in it." Bro. Bro. That\'s a *front page*. That\'s a Pulitzer. That\'s a *subpoena*.' : g.f('institute10') === 'jules' ? 'Outside on the steps, by the Ben Franklin statue, Jules sits down very suddenly, like her legs have stopped working.\n\njules: We were standing in a door.\n\nsam: Yeah.\n\njules: My father paid for the door, Sam. Pemberton Lyle Capital. I\'ve seen the name on his desk. *Halcyon.* I thought it was a *boat*.' : 'Outside on the steps, by the Ben Franklin statue, you sit down and put your head between your knees and breathe, the way Grace taught you, until the steps stop moving.'}
+${g.f('institute10') === 'wired' ? 'Outside on the steps, by the Ben Franklin statue, Nik is in your ear, hyperventilating.\n\nnik: I got it. I got *all* of it. "We opened a door. You happened to be standing in it." Bro. Bro. That\'s a *front page*. That\'s a Pulitzer. That\'s a *subpoena*.' : g.f('institute10') === 'jules' ? 'Outside on the steps, by the Ben Franklin statue, Jules sits down very suddenly, like her legs have stopped working.\n\njules: We were standing in a door.\n\nsam: Yeah.\n\njules: She plays cards at my father\'s table, Sam. She folds every hand. I thought she was *boring*.' : 'Outside on the steps, by the Ben Franklin statue, you sit down and put your head between your knees and breathe, the way Grace taught you, until the steps stop moving.'}
 
 Sunday the sixteenth. Move-out day. The Italian Market festival.
 
@@ -30392,7 +30392,7 @@ And Bruno is going to find out.`,
     },
 
     a1_noinstitute: {
-      loc: 'CARDONE HALL',
+      loc: 'TEMPLE · PALEY LIBRARY',
       clock: { day: 'Sat', date: 'May 8', time: '10:00 AM' },
       text: `You delete the text. You don\'t go.
 
@@ -30400,9 +30400,9 @@ Saturday at ten you\'re in the basement of Paley Library with Femi\'s green note
 
 At 10:40, your phone buzzes.
 
-TXT M.A. — DON\'T: That\'s all right. I\'ll tell you anyway, since you won\'t come to me.
-TXT M.A. — DON\'T: On August 22 at 11:51:04, we opened a door under Broad Street. Seven-tenths of a second. You happened to be standing in it.
-TXT M.A. — DON\'T: Sunday the 16th I\'m moving Mr. Iannucci\'s people out of the city. I thought you\'d want to know. You\'re the only one who might stop him from doing something foolish.
+TXT M.A. - DON\'T: That\'s all right. I\'ll tell you anyway, since you won\'t come to me.
+TXT M.A. - DON\'T: On August 22 at 11:51:04, we opened a door under Broad Street. Seven-tenths of a second. You happened to be standing in it.
+TXT M.A. - DON\'T: Sunday the 16th I\'m moving Mr. Iannucci\'s people out of the city. I thought you\'d want to know. You\'re the only one who might stop him from doing something foolish.
 
 You look at it for a long time, with Femi\'s handwriting under your other hand.
 
@@ -30424,7 +30424,7 @@ EH.scenes('s02e10', {
     loc: 'CARDONE HALL · THE LOADING DOCK',
     clock: { day: 'Tue', date: 'May 11', time: '11:50 PM' },
     enter: g => { g.know('dante_plan10', ['sam', 'vinnie'], 'Vinnie: Halcyon is holding Bruno\'s people in the old Esposito produce warehouse at 10th and Washington. Sunday the 16th at two, a white box truck pulls out of the loading door. The saints\' procession crosses Washington at 9th at the same minute. Dante is going to hit the truck there, in front of everybody.'); },
-    text: g => `${g.f('vinnie9') === 'stayed' ? 'Vinnie has been sleeping on the couch in your parents\' living room for three weeks. Tonight he texts you from it.\n\nTXT vinnie: loading dock. 20 min. taking the 17\n\n' : 'Four weeks of nothing. Not a text. Not a like. And then, at 11:31 on a Tuesday night:\n\nTXT vinnie: loading dock. dont bring nobody\n\n'}He\'s on the edge of the loading dock behind Cardone Hall, under the one working light, same spot as April. ${g.f('vinnie9') === 'went' ? 'Dante\'s black cashmere coat again. It fits him better now. That\'s the worst part.' : 'In a Phillies hoodie that used to be yours.'}
+    text: g => `${g.f('vinnie9') === 'stayed' ? 'Vinnie has been sleeping on the couch in your parents\' living room for three weeks. Tonight he texts you from it.\n\nTXT vinnie: loading dock. 20 min. taking the subway\n\n' : 'Four weeks of nothing. Not a text. Not a like. And then, at 11:31 on a Tuesday night:\n\nTXT vinnie: loading dock. dont bring nobody\n\n'}He\'s on the edge of the loading dock behind Cardone Hall, under the one working light, same spot as April. ${g.f('vinnie9') === 'went' ? 'Dante\'s black cashmere coat again. It fits him better now. That\'s the worst part.' : 'In a Phillies hoodie that used to be yours.'}
 
 vinnie: Sally.
 
@@ -30452,7 +30452,7 @@ vinnie: And Dante\'s gonna be at Tenth and Washington with six guys and a van wh
 
 The light buzzes.
 
-vinnie: Halcyon\'s gonna be there too. The polite guy. Brannigan. He doesn\'t do moves without being there. And there\'s gonna be ten thousand people in the street, Sally. Ladies with strollers. Your mom. *My* mom. Old guys with hips.
+vinnie: Halcyon\'s gonna be there too. The polite guy. Brannigan. He doesn\'t do moves without being there. And the whole neighborhood\'s gonna be in the street, Sally. Ladies with strollers. Your mom. *My* mom. Old guys with hips.
 
 He looks at his hands. The knuckles have healed. One of them healed crooked.
 
@@ -30604,7 +30604,7 @@ heck: In January, on the eighth floor, they had Marisol in a bed with a number o
 
 He pulls the gloves off with his teeth.
 
-heck: Marisol\'s good now. She\'s back at work at the bakery. She doesn\'t sleep good. She makes me sit in the kitchen until she does.
+heck: Marisol\'s good now, gracias a Dios. She\'s back at work at the bakery. She doesn\'t sleep good. She makes me sit in the kitchen until she does.
 
 heck: A fridge is cold, Wawa. You know what I am.
 
@@ -30634,15 +30634,15 @@ mikey: That\'s the corner.
 
 He balls up the hoagie paper.
 
-mikey: I can\'t raid a warehouse on a story from Vinnie Russo, Sally. I can\'t put a SWAT team on Tenth Street on festival Sunday because my brother\'s friend\'s cousin can\'t park. You know what I can do?
+mikey: I can\'t raid a warehouse on a story from Vinnie Russo, Sammy. I can\'t put a SWAT team on Tenth Street on festival Sunday because my brother\'s friend\'s cousin can\'t park. You know what I can do?
 
 sam: What?
 
-mikey: I can be standing on that corner. And when that truck pulls out, and Dante\'s van pulls in, I can be a cop in the middle of the street with my hand up. And I can make the sergeant put six more guys on Washington Avenue, because I\'m gonna tell him I got a bad feeling, and I never told him I got a bad feeling in nine years, so he\'ll listen.
+mikey: I can be standing on that corner. And when that truck pulls out, and Dante\'s van pulls in, I can be a cop in the middle of the street with my hand up. And I can make the sergeant put six more guys on Washington Avenue, because I\'m gonna tell him I got a bad feeling, and I never once told him I got a bad feeling, so he\'ll listen.
 
 He looks at you.
 
-mikey: ${g.f('mikey9') === 'open' ? 'And I\'m not gonna ask what you\'re gonna be doing. Because I know what you\'re gonna be doing. And I already know I hate it.' : 'And you\'re gonna be somewhere you shouldn\'t. Right? Don\'t answer that.'}
+mikey: ${g.f('mikey_knows') ? 'And I\'m not gonna ask what you\'re gonna be doing. Because I know what you\'re gonna be doing. And I already know I hate it.' : 'And you\'re gonna be somewhere you shouldn\'t. Right? Don\'t answer that.'}
 
 mikey: Text Ma.
 
@@ -30661,7 +30661,7 @@ Fifty multiple choice. Three short answers.
 
 Short answer two: *Describe the difference between short-term and long-term potentiation, and give an everyday example.*
 
-You look at it for a long time. Somewhere in your head, the professor in February, at the front of this same room, writing it on the board in yellow chalk: *What fires together, wires together.*
+You read it twice. Somewhere in your head, the professor in February, at the front of this same room, writing it on the board in yellow chalk: *What fires together, wires together.*
 
 ${g.knows('aperture_truth') ? 'You think: sixty-one people in a door. You think: what fired together, under Broad Street, for seven-tenths of a second.' : ''}
 
@@ -30720,11 +30720,9 @@ You tell her about Sunday. All of it.
 
 She doesn\'t say *don\'t go*. She doesn\'t say *I\'m coming*. She sits with it, with the quarter in her palm.
 
-jules: In the corridor, at the ballpark. I saw you. Everything was stopped, and you were the only thing moving, and you *waved* at me.
+${g.f('jules_saw9') ? 'jules: In the corridor, at the ballpark. I saw you. Everything was stopped, and you were the only thing moving, and you *waved* at me.' : 'jules: In the corridor, at the ballpark, I stood in a doorway and couldn\'t do a single thing. I\'m done standing in doorways.'}
 
-sam: I didn\'t know what else to do.
-
-jules: It was the nicest thing anyone\'s ever done in front of five guns.
+${g.f('jules_saw9') ? 'sam: I didn\'t know what else to do.\n\njules: It was the nicest thing anyone\'s ever done in front of five guns.' : 'sam: Okay.'}
 
 She closes her hand over the quarter.
 
@@ -30753,11 +30751,11 @@ ${g.f('mikey10') ? 'Mikey, on the corner, with his hand up. Six more cops on Was
 Somebody has to decide what kind of thing this is going to be.`,
     choices: [
       { text: 'The crew. Get the eleven out of the fridge *before* two. Before the truck. Before Dante. Nobody sees anything.', tag: 'The crew',
-        fx: g => { g.flag('plan10', 'crew'); g.bond('heck', { respect: 1 }); g.bond('bree', { respect: 1 }); g.hidden('revenant_drift', 0.5); }, go: 'a2_plan_end' },
+        fx: g => { g.flag('plan10', 'crew'); g.bond('heck', { respect: 1 }); g.bond('bree', { respect: 1 }); g.hidden('revenant_drift', 0.5); }, go: 'a2_plan_end', if: g => g.f('crew_heck10') && g.f('crew_bree10') },
       { text: 'Mikey. Tell him everything, tonight. Let the cops be in the street. Let Dante see blue and walk away. You just stand next to your brother.', tag: 'Mikey',
         fx: g => { g.flag('plan10', 'cops'); g.bond('mikey', { trust: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a2_plan_end' },
       { text: 'Dana. Send her the tape tonight. Sunday, put her on the corner with a photographer. Halcyon can\'t disappear eleven people in front of a camera and ten thousand people.', tag: 'Make it public',
-        fx: g => { g.flag('plan10', 'public'); g.bond('nik', { respect: 1 }); g.hidden('halcyon_heat', 2); g.hidden('revenant_drift', -0.5); }, go: 'a2_plan_end', if: g => g.f('institute10') === 'wired' || g.f('dana4') === 'halcyon' },
+        fx: g => { g.flag('plan10', 'public'); g.bond('nik', { respect: 1 }); g.hidden('halcyon_heat', 2); g.hidden('revenant_drift', -0.5); }, go: 'a2_plan_end', if: g => g.f('institute10') === 'wired' },
       { text: 'The card. Call the number. *Come in voluntarily, and they all go home.* Walk in at two, and eleven people walk out.', tag: 'The deal',
         fx: g => { g.flag('plan10', 'deal'); g.bond('jules', { tension: 3 }); g.hidden('revenant_drift', 1); g.hidden('halcyon_heat', 3); g.know('deal10', ['sam'], 'You called Achterberg\'s card. "Two o\'clock. The loading door at Tenth and Washington. Come alone. Walk in, and they walk out."'); }, go: 'a2_plan_end', if: g => g.f('offer10') === 'card' || g.f('offer10') === 'first' }
     ]
@@ -30768,7 +30766,7 @@ Somebody has to decide what kind of thing this is going to be.`,
     loc: 'CARDONE HALL · 9-14',
     text: g => `${g.f('plan10') === 'crew' ? `heck: Before two.
 
-sam: Before two. Nik puts Bree on their radio at one-thirty. Brannigan tells everybody to hold position. Heck takes the fire door in the alley and the fridge door after it. I go in first and clear whoever\'s inside. We\'re out the back alley onto 10th Street by one-fifty with eleven people, and they walk into the festival and disappear into ten thousand people eating cannoli.
+sam: Before two. Nik puts Bree on their radio at one-thirty. Brannigan tells everybody to hold position. Heck takes the fire door in the alley and the fridge door after it. I go in first and clear whoever\'s inside. We\'re out the back alley onto 10th Street by one-fifty with eleven people, and they walk into the festival and disappear into a whole festival eating cannoli.
 
 nik: And at two o\'clock, a truck pulls out empty, and Dante hits an empty truck in front of thirty cops.
 
@@ -30784,7 +30782,7 @@ When you\'re done, he\'s quiet for a long time.
 
 mikey: Okay. Okay. I\'m calling my sergeant. Then I\'m calling the captain at home. Then I\'m getting yelled at. Then we\'re gonna have a lot of cops on Washington Avenue.
 
-mikey: Sally. Thank you.
+mikey: Sammy. Thank you.
 
 sam: For what?
 
@@ -30824,13 +30822,13 @@ sam: It\'s eleven people, Jules.
 
 jules: It\'s *you*. It\'s you in a bed with a number on it. *Do not recover. Observe.* I\'ve seen the screen.
 
-She doesn\'t cry. She just looks at you, very steadily, for a long time.
+She doesn\'t cry. She just looks at you, very steadily, until you look away first.
 
 jules: I\'ll be where you can see me.`}
 
 You lie down on the bare mattress at one in the morning. Jules lies down next to you with her shoes on. Nobody sleeps much.
 
-Twelve hours.`,
+Thirteen hours.`,
     next: 'a3_morning'
   }
 });
@@ -30849,7 +30847,7 @@ EH.scenes('s02e10', {
 
 Broad Street in front of Cardone Hall is double-parked from Montgomery to Cecil B. Moore, minivans and U-Hauls with their flashers on, mothers carrying lamps, fathers carrying nothing and supervising. And in the middle of it, in the bus lane, where he is absolutely not allowed to be, your father\'s cab.
 
-frank: SAL! I got eleven minutes before a cop makes me move! Bring the heavy stuff first!
+frank: KID! I got eleven minutes before a cop makes me move! Bring the heavy stuff first!
 
 Gigi leans out the back window.
 
@@ -30875,9 +30873,9 @@ frank: Nine months. That\'s it? I thought there\'d be more.
 
 He looks up at Cardone Hall for a while.
 
-frank: Proud of you, Sal. I don\'t say it. I\'m saying it.
+frank: Proud of you, kid. I don\'t say it. I\'m saying it.
 
-Then a Temple cop knocks on his window and he says something in Neapolitan that Nonna would slap him for and pulls out into Broad Street, and Gigi waves out the back window until the cab turns at Diamond.
+Then a Temple cop knocks on his window and he says something that Nonna would slap him for and pulls out into Broad Street, and Gigi waves out the back window until the cab turns at Diamond.
 
 It\'s 9:40. The procession steps off at one.`,
     next: g => g.f('plan10') === 'crew' ? 'a3_crew' : g.f('plan10') === 'deal' ? 'a3_deal' : 'a3_corner_wait',
@@ -30980,7 +30978,7 @@ It\'s 1:51.`,
     loc: 'ESPOSITO\'S PRODUCE · THE LOADING DOOR',
     clock: { day: 'Sun', date: 'May 16', time: '1:55 PM' },
     enter: g => { g.flag('deal_kept10'); g.know('deal_walked10', ['sam'], 'At 1:55 on May 16, you walked into the Esposito loading door. Achterberg kept her word: eleven people walked out the back into the festival.'); },
-    text: g => `1:55 p.m. You walk down Washington Avenue alone, against the crowd, with ten thousand people going the other way toward 9th Street, toward the music.
+    text: g => `1:55 p.m. You walk down Washington Avenue alone, against the crowd, with the whole neighborhood going the other way toward 9th Street, toward the music.
 
 The loading door of Esposito\'s is rolled up four feet. You duck under it.
 
@@ -31024,7 +31022,7 @@ It\'s 2:00.`,
 
 The Italian Market festival, end to end. Ninth Street closed from Wharton to Fitzwater, and all of it is people: grandmothers, strollers, guys from the Pennsport clubs in their gold, kids with zeppole sugar on their faces, the cheese guy from DiBruno\'s yelling about provolone, sausage smoke rolling down the block under the awnings like weather. Somebody\'s playing Louis Prima out a second-story window. Ten thousand people, at least.
 
-${g.f('plan10') === 'cops' ? 'And cops. Everywhere. More cops than you have ever seen on 9th Street, which is saying something. Two on every corner of Washington Avenue. A wagon on Tenth. Mikey on the yellow line in the middle of the intersection, in his uniform, in his sunglasses, with his thumbs in his belt, looking like every cop in every movie.\n\nmikey: Sally. Stand next to me. Don\'t do nothing.' : 'Dana Fiorillo on the corner in a Phillies cap with a notebook, and next to her a heavyset guy with three cameras on straps around his neck. Rodriguez. He shot the Pope.\n\ndana: Is it you? Are you *you*?\n\nsam: Who?\n\ndana: Right. Right. Never mind. Two o\'clock?\n\nsam: Two o\'clock.\n\nMikey is on the yellow line in the middle of the intersection in his uniform. He sees you with a reporter and his face does something complicated.'}
+${g.f('plan10') === 'cops' ? 'And cops. Everywhere. More cops than you have ever seen on 9th Street, which is saying something. Two on every corner of Washington Avenue. A wagon on Tenth. Mikey on the yellow line in the middle of the intersection, in his uniform, in his sunglasses, with his thumbs in his belt, looking like every cop in every movie.\n\nmikey: Sammy. Stand next to me. Don\'t do nothing.' : 'Dana Fiorillo on the corner in a Phillies cap with a notebook, and next to her a heavyset guy with three cameras on straps around his neck. Rodriguez. He shot the Pope.\n\ndana: Is it you? Are you *you*?\n\nsam: Who?\n\ndana: Right. Right. Never mind. Two o\'clock?\n\nsam: Two o\'clock.\n\nMikey is on the yellow line in the middle of the intersection in his uniform. He sees you with a reporter and his face does something complicated.'}
 
 ${g.f('mikey10') && g.f('plan10') !== 'cops' ? 'Six extra cops along Washington Avenue. Mikey\'s bad feeling.' : ''}
 
@@ -31047,7 +31045,7 @@ A white van with *DANTE\'S CATERING* painted on the side pulls out of Washington
     loc: '9TH & WASHINGTON',
     clock: { day: 'Sun', date: 'May 16', time: '2:00 PM' },
     enter: g => { g.meet('mikey'); },
-    text: g => `${g.f('plan10') === 'crew' ? 'You come out of the alley onto Washington Avenue at a dead run, with Heck behind you, and turn the corner onto 9th at two o\'clock exactly.\n\n' : g.f('plan10') === 'deal' ? 'You can see it all through the little window in the cab. The van. The saint. The crowd. And then the back doors of the truck open from outside and somebody pulls the man in gray out by his collar, and you\'re looking out the open back of a truck at 9th Street.\n\n' : ''}It all happens at once, and it\'s all happening on 9th Street.
+    text: g => `${g.f('plan10') === 'crew' ? 'You come out of the alley onto Washington Avenue at a dead run, with Heck behind you, and turn the corner onto 9th at two o\'clock exactly.\n\n' : g.f('plan10') === 'deal' ? 'You can see it all through the little window in the cab. The van. The saint. The crowd. And then the back doors of the truck open from outside and the man in gray across from you is half out of his seat, and you\'re looking out the open back of a truck at 9th Street.\n\n' : ''}It all happens at once, and it\'s all happening on 9th Street.
 
 The van\'s side door slides open. Dante Iannucci gets out, in a white shirt with the sleeves rolled, with a pistol held down by his leg. Five guys behind him. ${g.f('vinnie9') === 'went' ? 'Vinnie, behind the wheel of the van, with both hands on it, looking at nothing.' : 'Joey Russo behind the wheel of the van, chewing gum like his life depends on it.'}
 
@@ -31069,7 +31067,7 @@ mikey: POLICE. EVERYBODY PUT IT DOWN. *PUT IT DOWN.*
 
 Dante\'s pistol comes up. Not at Mikey. At the truck. At Brannigan. At all of it.
 
-Two blocks up 9th, at Christian Street, on two kitchen chairs on the curb, two old women in black are sitting very still.
+Two blocks up 9th, at Christian Street, on two kitchen chairs on the curb, two old women are sitting very still.
 
 And in the crowd across the street, between the sausage stand and the fish store, an old man in a gray coat too heavy for May. Gray at the temples. Scars. His left hand, the one missing a finger, coming up out of his pocket.
 
@@ -31118,19 +31116,19 @@ And across the street, between the sausage stand and the fish store, the old man
 
 He isn\'t stopped either.
 
-He has your face. Worn down. Gray at the temples, a scar through one eyebrow. He smells, from forty feet, like ozone and wet pennies. His left hand is up, raised toward the crowd, toward the truck, toward something, and you know without knowing how that whatever that hand is about to do, somebody dies of it.
+He has your face. Worn down. Gray at the temples, a scar from the left eye down to the jaw. He smells, from forty feet, like ozone and wet pennies. His left hand is up, raised toward the crowd, toward the truck, toward something, and you know without knowing how that whatever that hand is about to do, somebody dies of it.
 
 He looks at you.
 
-${g.hv('revenant_drift') < 6 ? `He looks at you for a long time. At you, and up at the fire escape, at Jules. At the two old women on the curb. At the phone in your hand.
+${g.hv('revenant_drift') < 6 ? `He looks at you. At you, and up at the fire escape, at Jules. At the two old women on the curb. At the phone in your hand.
 
 Something in his face changes. You don\'t have a word for it. Like a man doing math and getting a number he didn\'t expect.
 
 He lowers his hand.
 
-He puts it back in his pocket. He turns around and walks away up 9th Street through ten thousand stopped people, between the stalls, an old man in a heavy coat, and at Carpenter Street he turns the corner and is gone.
+He puts it back in his pocket. He turns around and walks away up 9th Street through the stopped crowd, between the stalls, an old man in a heavy coat, and at Carpenter Street he turns the corner and is gone.
 
-You let out a breath you didn\'t know you were holding.` : `He looks at you. Then he looks up at the fire escape, at Jules, for a long time.
+You breathe out. It\'s the only sound on 9th Street.` : `Then he looks up at the fire escape, at Jules, for a long time.
 
 He doesn\'t lower his hand. He doesn\'t use it either. He waits, the way you\'d wait to see what a kid does with a match.`}
 
@@ -31150,7 +31148,7 @@ You have time. More than you need.`,
     enter: g => { g.know('guns10', ['sam', 'jules'], 'On 9th Street, in the Slip, you took every gun out of every hand: Dante\'s men\'s and Brannigan\'s. You put all of them in the back of Dante\'s van.'); },
     text: g => `It takes a long time. It\'s supposed to.
 
-Dante\'s pistol first. Finger by finger, like at the ballpark. Then his five guys: two pistols, a revolver older than you, a sawed-off under a windbreaker, and a can of Mace, which you also take, on principle.
+Dante\'s pistol first. Finger by finger${g.f('slip9b') === 'guns' ? ', like at the ballpark' : ''}. Then his five guys: two pistols, a revolver older than you, a sawed-off under a windbreaker, and a can of Mace, which you also take, on principle.
 
 The four stapler-guns. Then the darts, one by one, plucked out of the air like you\'re picking cherries, each one tiny and cold, with a little bead of something clear on the tip.
 
@@ -31207,7 +31205,7 @@ A pigeon goes up in Brannigan\'s face. He steps back off the curb into the gutte
 
 ${g.f('plan10') === 'deal' ? 'And the man in gray beside you in the truck reaches for your arm and misses, by an inch, by nothing, and you\'re out the open back doors and on the yellow line next to your brother before he finds his balance.' : 'And the back doors of the truck, which the men in gray didn\'t close all the way, swing open on their own in a little breeze off the river. Wide. Both of them.\n\nTen thousand people look at the back of a white box truck, and at the people inside it in gray blankets, blinking in the sun.'}
 
-On the fire escape, Jules opens her eyes. She sits down on the iron steps, very suddenly, like her legs stopped working, and puts her head on her knees.`,
+On the fire escape, Jules opens her eyes. She sits down on the iron steps all at once, like somebody cut a string, and puts her head on her knees.`,
     next: 'a3_after'
   },
 
@@ -31239,7 +31237,7 @@ BRUNO: *Dante. Basta.*
 
 Dante lowers the gun.
 
-Mikey\'s on him in a second, and the gun is on the asphalt, and Dante\'s face is on the hood of his own van, and he doesn\'t fight. Across the street, Brannigan looks at you, and at the crowd, and at a man with three cameras around his neck, and makes a small motion with two fingers. His men in gray put their stapler-guns away and step back into ten thousand people, and are gone.
+Mikey\'s on him in a second, and the gun is on the asphalt, and Dante\'s face is on the hood of his own van, and he doesn\'t fight. Across the street, Brannigan looks at you, and at the crowd${g.f('plan10') === 'public' ? ', and at a man with three cameras around his neck' : ''}, and makes a small motion with two fingers. His men in gray put their stapler-guns away and step back into the crowd, and are gone.
 
 Nobody closes the truck.`,
     next: 'a3_after'
@@ -31289,12 +31287,12 @@ You lie back on 9th Street and look up at the awnings and the sky, and a dollar 
   a3_after: {
     loc: '9TH & WASHINGTON',
     clock: { day: 'Sun', date: 'May 16', time: '2:04 PM' },
-    enter: g => { g.flag('freed10'); { let n = 0; if (g.f('crew10_slip') === 'told') n += 2; if (g.f('slip10') === 'told') n += (g.f('slip10b') === 'guns' ? 31 : 7); if (n) g.flag('count10', n); } g.know('freed10', ['sam', 'jules', 'mikey', 'nik'], 'On May 16, at 9th and Washington, in front of ten thousand people at the Italian Market festival, Halcyon\'s truck stood open with Bruno\'s people inside it. Halcyon couldn\'t take them back in public. They all went home.'); if (g.f('plan10') === 'public') g.know('photo10', ['sam', 'nik', 'dana'], 'Rodriguez of the Inquirer got the open truck, the gray blankets, and the man in the tan windbreaker walking away.'); },
+    enter: g => { g.flag('freed10'); { let n = 0; if (g.f('crew10_slip') === 'told') n += 2; if (g.f('slip10') === 'told') n += (g.f('slip10b') === 'guns' ? 31 : 7); if (n) g.flag('count10', n); } g.know('freed10', ['sam', 'jules', 'mikey', 'nik'], 'On May 16, at 9th and Washington, in front of ten thousand people at the Italian Market festival, Bruno\'s people came out into the street. Halcyon couldn\'t take them back in public. They all went home.'); if (g.f('plan10') === 'public') g.know('photo10', ['sam', 'nik', 'dana'], 'Rodriguez of the Inquirer got the open truck, the gray blankets, and the man in the tan windbreaker walking away.'); },
     text: g => `${g.f('slip10b') === 'guns' ? 'Time comes back all at once.\n\nDante pulls a trigger on nothing. He looks at his hand. His five guys look at theirs. Four men in gray look at theirs. Somebody\'s Mace is gone. Nobody can figure out where anything went, and Mikey, who can, is the first to move. He has Dante against the hood of the van before Dante finishes looking at his empty hand.\n\n' : ''}${g.f('plan10') === 'deal' ? 'And down Washington Avenue, coming out of the alley from Tenth Street into the crowd, eleven people in gray blankets, walking toward the music.' : 'And the people in the truck start getting out.'}
 
-Slowly. In gray blankets. Blinking. ${g.f('plan10') === 'crew' ? '' : 'Sonny Pugliese, enormous. '}A woman with dirt under her nails who did something with plants. A boy, maybe nineteen, holding his own elbows. A small man in a white apron, stepping down carefully onto 9th Street, onto the yellow line, into the sun.
+Slowly. In gray blankets. Blinking. ${g.f('plan10') === 'crew' ? '' : 'Sonny Pugliese, enormous. '}A woman with dirt under her nails who did something with plants. A boy, maybe nineteen, holding his own elbows. A small man in a white apron, ${g.f('plan10') === 'deal' ? 'stepping off the curb' : 'stepping down carefully'} onto 9th Street, onto the yellow line, into the sun.
 
-Thomas Nguyen looks around at ten thousand people. At the saint. At the cops.
+Thomas Nguyen looks around at the crowd. At the saint. At the cops.
 
 Nobody moves for a second.
 
@@ -31308,7 +31306,7 @@ Then he\'s gone.
 
 ${g.f('vinnie9') === 'went' ? 'The van is empty. The driver\'s door is open. Vinnie is gone. On the driver\'s seat, a black cashmere coat, folded.' : 'The van is empty. Joey Russo is gone, running up Washington, leaving a trail of gum.'}
 
-${g.f('plan10') === 'crew' ? 'Heck comes around the corner from Washington with Sonny Pugliese on one arm and the woman in the rowing sweatshirt on the other, and Bree behind him, and when Bree sees the truck open, she puts her hand over her mouth and says, in Teddy\'s voice, *Look at that.*' : g.f('plan10') === 'deal' ? 'You climb down out of the back of the truck that was going to Delaware. Nobody stops you. Somewhere across the intersection, a small woman in a gray cardigan is getting into a black car. She doesn\'t look back. You\'re not sure if that\'s a promise or the opposite of one.' : ''}
+${g.f('plan10') === 'crew' ? 'Heck comes around the corner from Washington with Sonny Pugliese on one arm and the woman in the rowing sweatshirt on the other, and Bree behind him, and when Bree sees the truck open, she puts her hand over her mouth and says, in Teddy\'s voice, *Look at that.*' : g.f('plan10') === 'deal' ? 'Nobody comes for you. Nobody even looks. Somewhere across the intersection, a small woman in a gray cardigan is getting into a black car. She doesn\'t look back. You\'re not sure if that\'s a promise or the opposite of one.' : ''}
 
 ${g.f('count10') ? 'TXT rosa: ok. ok. i see you. youre on the yellow line. i see you.\nTXT rosa: count was ' + g.f('count10') + '. i wrote it down' : ''}`,
     next: 'a3_curb'
@@ -31317,7 +31315,7 @@ ${g.f('count10') ? 'TXT rosa: ok. ok. i see you. youre on the yellow line. i see
   a3_curb: {
     loc: '9TH & CHRISTIAN · THE CURB',
     clock: { day: 'Sun', date: 'May 16', time: '2:30 PM' },
-    enter: g => { g.know('curb10', ['sam', 'nonna', 'constance'], 'Nonna and Constance Pemberton sat on kitchen chairs on the curb at 9th and Christian and watched the whole thing. Both their eyes moved.'); },
+    enter: g => { g.know('curb10', ['sam', 'nonna', 'constance'], 'Nonna and Constance Pemberton sat on kitchen chairs on the curb at 9th and Christian and watched the whole thing.' + (g.f('saw_revenant10') ? ' Both their eyes moved.' : '')); },
     text: g => `Two blocks up 9th Street, at Christian, two kitchen chairs on the curb. Teresa DiNardo, in black, with a paper bag of zeppole in her lap. Constance Pemberton, in a camel hair coat in May, with a cannoli she hasn\'t touched.
 
 The procession has started again behind you. Saint Anthony goes by${g.f('saint_shot10') ? ' with a hole in his chest' : ''}, still covered in money, and the brass band plays the same song it has played since 1926, and Bruno is still carrying.
@@ -31340,7 +31338,7 @@ constance: The first time, I was twenty-one, in the back of my father\'s car on 
 
 She nods down 9th Street, at Saint Anthony, at the front left pole.
 
-constance: That little boy. I\'ve waited sixty-three years to see it again. My whole life, I thought I\'d imagined it.
+constance: That little boy. ${g.f('saw_revenant10') ? 'I\'ve waited sixty-three years to see it again. My whole life, I thought I\'d imagined it.' : 'Today he held his saint up through all of it. Sixty-three years, I thought I\'d imagined the river.'}
 
 She looks at Teresa.
 
@@ -31350,13 +31348,13 @@ nonna: She hadn\'t.
 
 ${g.f('slip10') === 'luck' || g.f('slip10') === 'talk' ? 'nonna: Today you didn\'t even go in. Today you just stood there. I watched you. I thought my heart would stop.\n\nconstance: Mine did. Briefly.' : 'nonna: Today you went in, and you came out, and you didn\'t come out old. I watched your face. I watched your hair. *Niente.* Same boy.'}
 
-Teresa takes your hand. Her fingers are cold, and then they aren\'t.
+Nonna takes your hand. Her fingers are cold, and then they aren\'t.
 
 nonna: The old man in the gray coat.
 
 You go still.
 
-nonna: I saw him too, Sammy. Across the street. With your face.
+nonna: I saw him too, Salvatò. Across the street. With your face.
 
 nonna: ${g.hv('revenant_drift') < 6 ? 'He put his hand down. I saw him put it down. I saw his face when he did it. I\'m not going to tell you what it looked like. Not today.' : 'He didn\'t put his hand down. He just watched you. I\'m going to light a candle for that. Several.'}
 
@@ -31388,7 +31386,7 @@ jules: Hi.
 
 sam: Hi.
 
-jules: ${g.f('slip10') === 'luck' ? 'That was the biggest one. I\'ve never done one that big. The whole street. I felt it land everywhere at once, like a hundred keys.' : g.f('slip10') === 'told' || g.f('slip10') === 'silent' ? 'I watched you. The whole time. You picked up a pigeon\'s worth of darts out of the air like you were picking cherries. You looked at that old man for a long time.' : 'I watched you walk into the middle of the street with your hands up. I\'ve never been so angry at anyone in my life.'}
+jules: ${g.f('slip10') === 'luck' ? 'That was the biggest one. I\'ve never done one that big. The whole street. I felt it land everywhere at once, like a hundred keys.' : g.f('slip10') === 'told' || g.f('slip10') === 'silent' ? 'I watched you. The whole time. You were the only thing moving on 9th Street. And you stopped and looked at that old man like you knew him.' : 'I watched you walk into the middle of the street with your hands up. I\'ve never been so angry at anyone in my life.'}
 
 She takes a breath.
 
@@ -31409,7 +31407,7 @@ jules: ${g.f('slip10') === 'luck' ? 'It\'s heavier now. Whatever it is. I can fe
 
 She looks down at the street.
 
-jules: Achterberg called it *the Audience\'s favor*, once, at New Year\'s. I thought she was being poetic. I don\'t think she was being poetic.
+jules: Gran told me once that it has to go somewhere. I thought she was being poetic. I don\'t think she was being poetic.
 
 sam: We\'ll find out.
 
@@ -31450,24 +31448,24 @@ jules: Take me to your mother\'s. I want gravy. I want to be yelled at by an Ita
   a4_gravy: {
     loc: 'MIFFLIN STREET · THE KITCHEN',
     clock: { day: 'Sun', date: 'May 16', time: '6:30 PM' },
-    enter: g => { g.know('dante_arrested10', ['sam', 'mikey', 'rosa', 'frank'], 'Dante Iannucci was arrested at 9th and Washington by Officer Michael Kearney. Charges pending. Bruno hasn\'t posted bail. Vinnie is missing.'); g.bond('rosa', { affection: 1 }); },
+    enter: g => { g.know('dante_arrested10', ['sam', 'mikey', 'rosa', 'frank'], 'Dante Iannucci was arrested at 9th and Washington by Officer Michael Kearney. Charges pending. Bruno hasn\'t posted bail.'); g.bond('rosa', { affection: 1 }); },
     text: g => `Sunday gravy on Mifflin Street. Eleven people in a kitchen built for four. Everybody talking.
 
 Pop is telling the festival story to Jules for the third time, and it\'s gotten better every time; in this version he personally saw the shot and personally ducked. Gigi is telling Jules about a video. Nonna is at the stove, stirring, with Constance Pemberton\'s camel hair coat hanging on the hook by the door, and Constance Pemberton nowhere to be seen, which means she went home in the Bentley and left her coat, which means, Gigi says, that she\'s *coming back*.
 
-${g.f('terms8') === 'count' ? 'On the St. Monica\'s calendar on the side of the fridge, in red pen, in Ma\'s handwriting, in today\'s square: *' + (g.f('broke_count10') ? '?' : String(g.f('count10') || 0)) + '*. And underneath, smaller: *9th St. Saint Anthony.*' : ''}
+${g.f('terms8') === 'count' ? 'On the St. Monica\'s calendar on the side of the fridge, in red pen, in Ma\'s handwriting, in today\'s square: *' + (g.f('broke_count10') ? (g.f('count10') ? g.f('count10') + ' + ?' : '?') : String(g.f('count10') || 0)) + '*. And underneath, smaller: *9th St. Saint Anthony.*' : ''}
 
-${g.f('broke_count10') ? 'Ma puts a plate in front of you, and stands there.\n\nrosa: There\'s a question mark on my calendar, Sam.\n\nsam: Ma—\n\nrosa: I was at the festival. I was standing on 9th Street. I saw you on the yellow line, next to your brother, and I didn\'t know how long you\'d been gone, or if you\'d been gone. I didn\'t count. Because you didn\'t tell me to.\n\nShe goes back to the stove. She doesn\'t say anything else. She doesn\'t have to.' : 'Ma puts a plate in front of you, and her hand on the back of your neck for a second, and goes back to the stove.'}
+${g.f('broke_count10') ? 'Ma puts a plate in front of you, and stands there.\n\nrosa: There\'s a question mark on my calendar, Sam.\n\nsam: Ma—\n\nrosa: I was at the festival. I was standing on 9th Street. I saw you on the yellow line, next to your brother, and I didn\'t know how many times you\'d been gone, or for how long. I can\'t count what you don\'t tell me.\n\nShe goes back to the stove. She doesn\'t say anything else. She doesn\'t have to.' : 'Ma puts a plate in front of you, and her hand on the back of your neck for a second, and goes back to the stove.'}
 
 Mikey comes in at seven, still in uniform, and sits down without taking off his belt, which Ma would kill anybody else for.
 
-mikey: Dante Iannucci is in a cell at the Third District. Firing a weapon during a religious procession. ${g.f('saint_shot10') ? 'Destruction of a saint.' : 'Attempting to fire a weapon during a religious procession, on account of it jammed, or something happened to it, nobody can say.'} His grandfather came to the desk at five o\'clock. He looked at his grandson through the glass for a long time. Then he left. He didn\'t post bail.
+mikey: Dante Iannucci is in a cell at the Third District. ${g.f('saint_shot10') ? 'Firing a weapon during a religious procession. Destruction of a saint.' : g.f('talk10') === 'miss' ? 'Firing a weapon during a religious procession.' : g.f('talk10') === 'strong' ? 'Brandishing a firearm during a religious procession.' : 'Attempting to fire a weapon during a religious procession, on account of it jammed, or something happened to it, nobody can say.'} His grandfather came to the desk at five o\'clock. He looked at his grandson through the glass until the desk sergeant looked away. Then he left. He didn\'t post bail.
 
 frank: Bruno Iannucci didn\'t bail out his grandson?
 
 mikey: No, Pop.
 
-Pop sits back. He looks, for a second, like a man who owed somebody forty-one thousand dollars for a long time.
+Pop sits back. He looks, for a second, like a man who used to owe somebody forty-one thousand dollars.
 
 frank: Huh.
 
@@ -31536,7 +31534,7 @@ You fall asleep in your clothes on the bottom bunk, and for the first time in ni
     loc: 'WASHINGTON AVENUE · PHỞ THANH',
     clock: { day: 'Mon', date: 'May 17', time: '11:00 AM' },
     enter: g => { g.sleep(10); g.know('bruno_war10', ['sam'], 'Bruno, at Phở Thanh: "That woman came into my neighborhood and took my people out of their beds. Now it\'s a war. Not you. Not your father. Me." Frank\'s debt is done.'); },
-    text: g => `${g.f('hero_name') === 'none' ? 'The Inquirer, Monday morning, A1, above the fold: *WHAT HAPPENED ON 9TH STREET.*' : g.f('hero_name') === 'blur' ? 'The Inquirer, Monday morning, A1, above the fold: *THE BLUR, AND THE TRUCK ON 9TH STREET.*' : g.f('hero_name') === 'secondhand' ? 'The Inquirer, Monday morning, A1, above the fold: *SECOND HAND.* And underneath, smaller: *Eleven Missing South Philadelphians Found In Unmarked Truck At Italian Market Festival.*' : 'The Inquirer, Monday morning, A1, above the fold, in letters an inch high: *WAWA.* And underneath, smaller: *Eleven Missing South Philadelphians Found In Unmarked Truck At Italian Market Festival. A Convenience Store Declined To Comment.*'}
+    text: g => `${g.f('hero_name') === 'none' ? 'The Inquirer, Monday morning, A1, above the fold: *WHAT HAPPENED ON 9TH STREET.*' : g.f('hero_name') === 'blur' ? 'The Inquirer, Monday morning, A1, above the fold: *THE BLUR, AND THE TRUCK ON 9TH STREET.*' : g.f('hero_name') === 'secondhand' ? 'The Inquirer, Monday morning, A1, above the fold: *SECOND HAND.* And underneath, smaller: *Eleven Missing Philadelphians Walk Free At Italian Market Festival.*' : 'The Inquirer, Monday morning, A1, above the fold, in letters an inch high: *WAWA.* And underneath, smaller: *Eleven Missing Philadelphians Walk Free At Italian Market Festival.*'}
 
 By Dana Fiorillo. ${g.f('plan10') === 'public' ? 'Photographs by Luis Rodriguez. The back of a tan windbreaker walking away from an open truck. And a sidebar, a whole page, A6: *"WE OPENED A DOOR": HALCYON CEO ON TAPE.*' : 'And a photo from somebody\'s phone: Saint Anthony, an open truck, and a smear of motion in the middle of the street.'}
 
@@ -31554,7 +31552,7 @@ BRUNO: Sit.
 
 You sit.
 
-BRUNO: My grandson is in a cell. My other grandson is somewhere I don\'t know. My people are home. ${g.f('saint_shot10') ? 'And Saint Anthony has a bullet in him from my family. Ninety-eight years, that statue. My father carried it.' : 'And Saint Anthony made it back to the church without a scratch. Ninety-eight years, that statue. My father carried it.'}
+BRUNO: My grandson is in a cell. My people are home. ${g.f('saint_shot10') ? 'And Saint Anthony has a bullet in him from my family. Ninety-eight years, that statue. My father carried it.' : 'And Saint Anthony made it back to the church without a scratch. Ninety-eight years, that statue. My father carried it.'}
 
 He turns the tea cup a quarter turn on the saucer.
 
@@ -31564,7 +31562,7 @@ sam: Vinnie told me.
 
 BRUNO: Vincenzo. Yeah.
 
-He looks at you for a long time.
+He takes his time looking at you.
 
 BRUNO: Your father\'s debt is done. It was done in March. I\'m telling you now so you hear it from me. The eight jobs, and Sunday. Paid.
 
@@ -31594,10 +31592,10 @@ THOMAS: You eat.`,
 TXT Unknown number: its me. new phone
 TXT Unknown number: im ok. im at my aunts in wildwood. dont tell my mom where
 TXT Unknown number: i drove the van sally. i drove it right up to the saint and i stopped and i put it in park and i couldnt do nothing else. i just sat there
-TXT Unknown number: then all the guns were gone. all of em. i was looking right at dantes hand and then it was empty
+${g.f('slip10b') === 'guns' ? 'TXT Unknown number: then all the guns were gone. all of em. i was looking right at dantes hand and then it was empty' : 'TXT Unknown number: and then something happened out there. i was looking right at dante and something happened'}
 TXT Unknown number: that was you
 
-You stand on Washington Avenue for a long time with the phone in your hand.` : `Outside Phở Thanh, Vinnie is sitting on a fire hydrant in your old Phillies hoodie, waiting.
+You stand on Washington Avenue with the phone in your hand while the lunch crowd steps around you.` : `Outside Phở Thanh, Vinnie is sitting on a fire hydrant in your old Phillies hoodie, waiting.
 
 vinnie: I saw Grandpa go in. I didn\'t go in.
 
@@ -31607,7 +31605,7 @@ vinnie: *(not looking at you)* Yeah? What\'d he say?
 
 sam: He said *Vincenzo*.
 
-Vinnie nods for a long time, like that\'s a whole sentence. For Bruno, it is.`}`,
+Vinnie nods, slow, like that\'s a whole sentence. For Bruno, it is.`}`,
     choices: [
       { text: g => g.f('vinnie9') === 'went' ? 'TXT: *yeah. that was me. come home vin.*' : '"Come on. Ma made too much gravy. She always does."', tag: 'Come home',
         fx: g => { g.flag('vinnie10', 'home'); g.bond('vinnie', { trust: 2, affection: 2 }); g.hidden('revenant_drift', -0.5); }, go: 'a4_vinnie_end' },
@@ -31620,7 +31618,7 @@ Vinnie nods for a long time, like that\'s a whole sentence. For Bruno, it is.`}`
 
   a4_vinnie_end: {
     loc: 'WASHINGTON AVENUE',
-    text: g => `${g.f('vinnie9') === 'went' ? (g.f('vinnie10') === 'home' ? 'TXT sam: yeah. that was me. come home vin\n\nThree dots. For a long time. They go away. They come back.\n\nTXT Unknown number: not yet\nTXT Unknown number: soon\nTXT Unknown number: save this number under vinnie. not "unknown number." i know you\n\nYou save it. *Vinnie.*' : 'TXT sam: stay at your aunts. stay out of it this time. please\n\nThree dots. For a long time.\n\nTXT Unknown number: ok\nTXT Unknown number: you sound like your mom\nTXT Unknown number: save this number under vinnie bol') : (g.f('vinnie10') === 'home' ? 'vinnie: Gravy.\n\nsam: Gravy.\n\nHe gets up off the hydrant. He walks next to you toward Mifflin Street, and halfway there he bumps you with his shoulder, hard, the way he did in Little League, and doesn\'t say anything about it.' : 'Vinnie looks at the door of Phở Thanh for a long time.\n\nThen he gets up off the hydrant and goes in.\n\nThrough the window, you see him stop in front of the back booth. You see Bruno look up. You don\'t see the rest. You walk home. It isn\'t yours.')}`,
+    text: g => `${g.f('vinnie9') === 'went' ? (g.f('vinnie10') === 'home' ? 'TXT sam: yeah. that was me. come home vin\n\nThree dots. For a long time. They go away. They come back.\n\nTXT Unknown number: not yet\nTXT Unknown number: soon\nTXT Unknown number: save this number under vinnie. not "unknown number." i know you\n\nYou save it. *Vinnie.*' : 'TXT sam: stay at your aunts. stay out of it this time. please\n\nThree dots. For a long time.\n\nTXT Unknown number: ok\nTXT Unknown number: you sound like your mom\nTXT Unknown number: save this number under vinnie bol') : (g.f('vinnie10') === 'home' ? 'vinnie: Gravy.\n\nsam: Gravy.\n\nHe gets up off the hydrant. He walks next to you toward Mifflin Street, and halfway there he bumps you with his shoulder, hard, the way he did in Little League, and doesn\'t say anything about it.' : 'Vinnie looks at the door of Phở Thanh.\n\nThen he gets up off the hydrant and goes in.\n\nThrough the window, you see him stop in front of the back booth. You see Bruno look up. You don\'t see the rest. You walk home. It isn\'t yours.')}`,
     next: 'a4_roof'
   },
 
@@ -31644,11 +31642,11 @@ jules: That I\'m spending the summer in Philadelphia. That I\'m not going to the
 
 sam: How\'d that go?
 
-jules: Mother said *Juliet*. In the voice. Father said *Jules-bug, let\'s talk about it*, and I said, *No, I don\'t think we will*, and hung up. ${g.knows('aperture_truth', 'jules') ? 'He paid for the door, Sam. I\'m not going to his island.' : ''}
+jules: Mother said *Juliet*. In the voice. Father said *Jules-bug, let\'s talk about it*, and I said, *No, I don\'t think we will*, and hung up. ${g.knows('aperture_truth', 'jules') ? 'She plays cards at his table, Sam. I\'m not going to his island.' : ''}
 
 She sits down on the tar paper, with her back against the chimney. You sit down next to her.
 
-jules: And Hugh didn\'t come home this weekend. Grandmother says he\'s in Boston. Hugh is never in Boston. Hugh thinks Boston is *derivative*.
+jules: And Hugh didn\'t come home this weekend. Gran says he\'s in Boston. Hugh is never in Boston. Hugh thinks Boston is *derivative*.
 
 You check your phone. 11:50.
 
@@ -31696,11 +31694,11 @@ jules: You *idiot*. You absolute— Sam. I\'ve known since the minifridge.
 
 sam: The *minifridge?*
 
-jules: Nine flights. You didn\'t even ask. You just picked it up. I was on the phone with my mother pretending to be practical, and I watched a boy I\'d never met carry my whole life up nine flights of stairs because the elevator was slow, and I thought, *Oh no.*
+jules: Nine flights. ${g.f('fridge') === 'grabbed' ? 'You didn\'t even ask. You just picked it up.' : g.f('fridge') === 'asked' ? 'You asked Mr. Abernathy instead of me, and then you just picked it up.' : 'You walked away, and then you came back, and you just picked it up.'} I was on the phone with my mother pretending to be practical, and I watched a boy I\'d never met carry my whole life up nine flights of stairs because the elevator was slow, and I thought, *Oh no.*
 
 She puts her hand on your face.
 
-jules: I love you. Obviously. I love you. It\'s the least lucky thing that ever happened to me. I didn\'t have to do anything at all.` : g.f('roof10') === 'summer' ? `sam: Now? Summer. You shelve books. I deliver pizza. Gravy every Sunday, because you\'re never getting out of that now, Ma\'s set you a place. The shore, once, if you can stand Wildwood. And we find out what the tab is. Together.
+jules: I love you. Obviously. I love you. It\'s the only thing that ever happened to me that wasn\'t luck. I didn\'t have to do anything at all.` : g.f('roof10') === 'summer' ? `sam: Now? Summer. You shelve books. I deliver pizza. Gravy every Sunday, because you\'re never getting out of that now, Ma\'s set you a place. The shore, once, if you can stand Wildwood. And we find out what the tab is. Together.
 
 jules: Wildwood.
 
@@ -31718,7 +31716,7 @@ sam: She opened a door. She doesn\'t know what came through it. She\'s just pret
 
 Jules thinks about that.
 
-jules: That\'s the most comforting thing anyone\'s ever said to me.
+jules: Good. That helps. That actually helps.
 
 sam: That nobody knows anything?
 
@@ -31733,7 +31731,6 @@ You stay up there until the TV lights go out, one window at a time, all over Sou
   /* ================= TAG ================= */
   tag_hugh: {
     card: { kind: 'tag' },
-    night: true,
     loc: 'THE NAVY YARD · BUILDING 7',
     clock: { day: 'Tue', date: 'May 18', time: '9:00 AM' },
     text: `> THE CAMERA.
@@ -31742,11 +31739,11 @@ The lobby of Building 7 at the Navy Yard. Glass and steel and a reception desk w
 
 Hugh Pemberton sits in a white leather chair with one ankle on his knee, in a navy blazer, golden, perfectly at ease. He has a white visitor badge clipped to his lapel. *GUEST.*
 
-In his lap, folded in a clean square: a handkerchief, embroidered with a *P*. The one he took from his sister\'s coat in March. He\'s been carrying it ever since.
+In his lap, folded in a clean square: an empty Ziploc bag. In March it held his sister\'s handkerchief, *JLP* in navy thread, and he handed it through a car window in a Wawa lot on City Avenue. He kept the bag.
 
 A door opens. Footsteps on the polished concrete.
 
-ACHTERBERG: Mr. Pemberton. Thank you for coming down from Boston.
+ACHTERBERG: Mr. Pemberton. How was Boston?
 
 hugh: I wasn\'t in Boston.
 
@@ -31754,11 +31751,11 @@ ACHTERBERG: I know.
 
 She sits down across from him. She has a folder. She doesn\'t open it.
 
-hugh: I want to know why. That\'s all. Eighteen years. Every coin. Every game. Every shot. Since we were six. I\'ve never seen anything almost not go for her. And I\'ve been standing next to it my whole life, and nobody ever told me what it *was*.
+hugh: I want to know why. That\'s all. Twelve years. Every coin. Every game. Every shot. Since we were six. I\'ve never seen anything almost not go for her. And I\'ve been standing next to it my whole life, and nobody ever told me what it *was*.
 
 ACHTERBERG: Nobody told her either.
 
-hugh: But she gets to *have* it.
+hugh: But Jubilee gets to *have* it.
 
 Achterberg smiles. A small, kind, terrible smile.
 
@@ -31818,9 +31815,9 @@ Object.assign(EH.episodes.s02e10, {
   onEnd: g => {
     g.recap(g.f('institute10') === 'none' ? 'Achterberg told you anyway: on August 22, Halcyon opened a door under Broad Street. You were standing in it.' : 'At the Giant Heart, Achterberg told you the truth: APERTURE. "We opened a door. You happened to be standing in it."');
     g.recap(g.f('plan10') === 'deal' ? 'You took her deal. Eleven people walked out. You walked in. Dante\'s van stopped the truck.' : g.f('plan10') === 'crew' ? 'The crew hit the warehouse. Four of the eleven were still there. Brannigan had moved the rest.' : g.f('plan10') === 'cops' ? 'You told Mikey everything. There were a lot of cops on 9th Street.' : 'You gave Dana Fiorillo the tape. She brought a photographer.');
-    g.recap('At 9th and Washington, in front of ten thousand people and Saint Anthony, Halcyon\'s truck stood open. Bruno\'s people went home.');
+    g.recap('At 9th and Washington, in front of ten thousand people and Saint Anthony, Bruno\'s people came out into the street. They went home.');
     if (g.f('saw_revenant10')) g.recap(g.hv('revenant_drift') < 6 ? 'In the Slip, the old man with your face lowered his hand, and walked away.' : 'In the Slip, the old man with your face watched you, and waited.');
-    g.recap('Nonna and Constance Pemberton watched from the curb at Christian Street. Both their eyes moved.');
+    g.recap('Nonna and Constance Pemberton watched from the curb at Christian Street.' + (g.f('saw_revenant10') ? ' Both their eyes moved.' : ''));
     g.recap('Dante Iannucci is in a cell. Bruno didn\'t bail him out. "Now it\'s a war. Mine."');
     if (g.f('hero_name') && g.f('hero_name') !== 'none') g.recap('The Inquirer, A1: ' + ({ blur: 'THE BLUR', secondhand: 'SECOND HAND', wawa: 'WAWA' })[g.f('hero_name')] + '.');
     if (g.f('roof10') === 'love') g.recap('On the roof on Mifflin Street, you said it. So did she.');

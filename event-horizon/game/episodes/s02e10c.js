@@ -231,7 +231,7 @@ mikey: POLICE. EVERYBODY PUT IT DOWN. *PUT IT DOWN.*
 
 Dante\'s pistol comes up. Not at Mikey. At the truck. At Brannigan. At all of it.
 
-Two blocks up 9th, at Christian Street, on two kitchen chairs on the curb, two old women in black are sitting very still.
+Two blocks up 9th, at Christian Street, on two kitchen chairs on the curb, two old women are sitting very still.
 
 And in the crowd across the street, between the sausage stand and the fish store, an old man in a gray coat too heavy for May. Gray at the temples. Scars. His left hand, the one missing a finger, coming up out of his pocket.
 
@@ -280,7 +280,7 @@ And across the street, between the sausage stand and the fish store, the old man
 
 He isn\'t stopped either.
 
-He has your face. Worn down. Gray at the temples, a scar through one eyebrow. He smells, from forty feet, like ozone and wet pennies. His left hand is up, raised toward the crowd, toward the truck, toward something, and you know without knowing how that whatever that hand is about to do, somebody dies of it.
+He has your face. Worn down. Gray at the temples, a scar from the left eye down to the jaw. He smells, from forty feet, like ozone and wet pennies. His left hand is up, raised toward the crowd, toward the truck, toward something, and you know without knowing how that whatever that hand is about to do, somebody dies of it.
 
 He looks at you.
 
@@ -451,7 +451,7 @@ You lie back on 9th Street and look up at the awnings and the sky, and a dollar 
   a3_after: {
     loc: '9TH & WASHINGTON',
     clock: { day: 'Sun', date: 'May 16', time: '2:04 PM' },
-    enter: g => { g.flag('freed10'); { let n = 0; if (g.f('crew10_slip') === 'told') n += 2; if (g.f('slip10') === 'told') n += (g.f('slip10b') === 'guns' ? 31 : 7); if (n) g.flag('count10', n); } g.know('freed10', ['sam', 'jules', 'mikey', 'nik'], 'On May 16, at 9th and Washington, in front of ten thousand people at the Italian Market festival, Halcyon\'s truck stood open with Bruno\'s people inside it. Halcyon couldn\'t take them back in public. They all went home.'); if (g.f('plan10') === 'public') g.know('photo10', ['sam', 'nik', 'dana'], 'Rodriguez of the Inquirer got the open truck, the gray blankets, and the man in the tan windbreaker walking away.'); },
+    enter: g => { g.flag('freed10'); { let n = 0; if (g.f('crew10_slip') === 'told') n += 2; if (g.f('slip10') === 'told') n += (g.f('slip10b') === 'guns' ? 31 : 7); if (n) g.flag('count10', n); } g.know('freed10', ['sam', 'jules', 'mikey', 'nik'], 'On May 16, at 9th and Washington, in front of ten thousand people at the Italian Market festival, Bruno\'s people came out into the street. Halcyon couldn\'t take them back in public. They all went home.'); if (g.f('plan10') === 'public') g.know('photo10', ['sam', 'nik', 'dana'], 'Rodriguez of the Inquirer got the open truck, the gray blankets, and the man in the tan windbreaker walking away.'); },
     text: g => `${g.f('slip10b') === 'guns' ? 'Time comes back all at once.\n\nDante pulls a trigger on nothing. He looks at his hand. His five guys look at theirs. Four men in gray look at theirs. Somebody\'s Mace is gone. Nobody can figure out where anything went, and Mikey, who can, is the first to move. He has Dante against the hood of the van before Dante finishes looking at his empty hand.\n\n' : ''}${g.f('plan10') === 'deal' ? 'And down Washington Avenue, coming out of the alley from Tenth Street into the crowd, eleven people in gray blankets, walking toward the music.' : 'And the people in the truck start getting out.'}
 
 Slowly. In gray blankets. Blinking. ${g.f('plan10') === 'crew' ? '' : 'Sonny Pugliese, enormous. '}A woman with dirt under her nails who did something with plants. A boy, maybe nineteen, holding his own elbows. A small man in a white apron, ${g.f('plan10') === 'deal' ? 'stepping off the curb' : 'stepping down carefully'} onto 9th Street, onto the yellow line, into the sun.
@@ -479,7 +479,7 @@ ${g.f('count10') ? 'TXT rosa: ok. ok. i see you. youre on the yellow line. i see
   a3_curb: {
     loc: '9TH & CHRISTIAN · THE CURB',
     clock: { day: 'Sun', date: 'May 16', time: '2:30 PM' },
-    enter: g => { g.know('curb10', ['sam', 'nonna', 'constance'], 'Nonna and Constance Pemberton sat on kitchen chairs on the curb at 9th and Christian and watched the whole thing. Both their eyes moved.'); },
+    enter: g => { g.know('curb10', ['sam', 'nonna', 'constance'], 'Nonna and Constance Pemberton sat on kitchen chairs on the curb at 9th and Christian and watched the whole thing.' + (g.f('saw_revenant10') ? ' Both their eyes moved.' : '')); },
     text: g => `Two blocks up 9th Street, at Christian, two kitchen chairs on the curb. Teresa DiNardo, in black, with a paper bag of zeppole in her lap. Constance Pemberton, in a camel hair coat in May, with a cannoli she hasn\'t touched.
 
 The procession has started again behind you. Saint Anthony goes by${g.f('saint_shot10') ? ' with a hole in his chest' : ''}, still covered in money, and the brass band plays the same song it has played since 1926, and Bruno is still carrying.
@@ -502,7 +502,7 @@ constance: The first time, I was twenty-one, in the back of my father\'s car on 
 
 She nods down 9th Street, at Saint Anthony, at the front left pole.
 
-constance: That little boy. I\'ve waited sixty-three years to see it again. My whole life, I thought I\'d imagined it.
+constance: That little boy. ${g.f('saw_revenant10') ? 'I\'ve waited sixty-three years to see it again. My whole life, I thought I\'d imagined it.' : 'Today he held his saint up through all of it. Sixty-three years, I thought I\'d imagined the river.'}
 
 She looks at Teresa.
 

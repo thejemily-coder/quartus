@@ -39,7 +39,7 @@ jules: ${g.f('slip10') === 'luck' ? 'It\'s heavier now. Whatever it is. I can fe
 
 She looks down at the street.
 
-jules: Achterberg called it *the Audience\'s favor*, once, at New Year\'s. I thought she was being poetic. I don\'t think she was being poetic.
+jules: Gran told me once that it has to go somewhere. I thought she was being poetic. I don\'t think she was being poetic.
 
 sam: We\'ll find out.
 
@@ -166,7 +166,7 @@ You fall asleep in your clothes on the bottom bunk, and for the first time in ni
     loc: 'WASHINGTON AVENUE · PHỞ THANH',
     clock: { day: 'Mon', date: 'May 17', time: '11:00 AM' },
     enter: g => { g.sleep(10); g.know('bruno_war10', ['sam'], 'Bruno, at Phở Thanh: "That woman came into my neighborhood and took my people out of their beds. Now it\'s a war. Not you. Not your father. Me." Frank\'s debt is done.'); },
-    text: g => `${g.f('hero_name') === 'none' ? 'The Inquirer, Monday morning, A1, above the fold: *WHAT HAPPENED ON 9TH STREET.*' : g.f('hero_name') === 'blur' ? 'The Inquirer, Monday morning, A1, above the fold: *THE BLUR, AND THE TRUCK ON 9TH STREET.*' : g.f('hero_name') === 'secondhand' ? 'The Inquirer, Monday morning, A1, above the fold: *SECOND HAND.* And underneath, smaller: *Eleven Missing South Philadelphians Found In Unmarked Truck At Italian Market Festival.*' : 'The Inquirer, Monday morning, A1, above the fold, in letters an inch high: *WAWA.* And underneath, smaller: *Eleven Missing South Philadelphians Found In Unmarked Truck At Italian Market Festival.*'}
+    text: g => `${g.f('hero_name') === 'none' ? 'The Inquirer, Monday morning, A1, above the fold: *WHAT HAPPENED ON 9TH STREET.*' : g.f('hero_name') === 'blur' ? 'The Inquirer, Monday morning, A1, above the fold: *THE BLUR, AND THE TRUCK ON 9TH STREET.*' : g.f('hero_name') === 'secondhand' ? 'The Inquirer, Monday morning, A1, above the fold: *SECOND HAND.* And underneath, smaller: *Eleven Missing Philadelphians Walk Free At Italian Market Festival.*' : 'The Inquirer, Monday morning, A1, above the fold, in letters an inch high: *WAWA.* And underneath, smaller: *Eleven Missing Philadelphians Walk Free At Italian Market Festival.*'}
 
 By Dana Fiorillo. ${g.f('plan10') === 'public' ? 'Photographs by Luis Rodriguez. The back of a tan windbreaker walking away from an open truck. And a sidebar, a whole page, A6: *"WE OPENED A DOOR": HALCYON CEO ON TAPE.*' : 'And a photo from somebody\'s phone: Saint Anthony, an open truck, and a smear of motion in the middle of the street.'}
 
@@ -274,7 +274,7 @@ jules: That I\'m spending the summer in Philadelphia. That I\'m not going to the
 
 sam: How\'d that go?
 
-jules: Mother said *Juliet*. In the voice. Father said *Jules-bug, let\'s talk about it*, and I said, *No, I don\'t think we will*, and hung up. ${g.knows('aperture_truth', 'jules') ? 'He paid for the door, Sam. I\'m not going to his island.' : ''}
+jules: Mother said *Juliet*. In the voice. Father said *Jules-bug, let\'s talk about it*, and I said, *No, I don\'t think we will*, and hung up. ${g.knows('aperture_truth', 'jules') ? 'She plays cards at his table, Sam. I\'m not going to his island.' : ''}
 
 She sits down on the tar paper, with her back against the chimney. You sit down next to her.
 
@@ -326,7 +326,7 @@ jules: You *idiot*. You absolute— Sam. I\'ve known since the minifridge.
 
 sam: The *minifridge?*
 
-jules: Nine flights. You didn\'t even ask. You just picked it up. I was on the phone with my mother pretending to be practical, and I watched a boy I\'d never met carry my whole life up nine flights of stairs because the elevator was slow, and I thought, *Oh no.*
+jules: Nine flights. ${g.f('fridge') === 'grabbed' ? 'You didn\'t even ask. You just picked it up.' : g.f('fridge') === 'asked' ? 'You asked Mr. Abernathy instead of me, and then you just picked it up.' : 'You walked away, and then you came back, and you just picked it up.'} I was on the phone with my mother pretending to be practical, and I watched a boy I\'d never met carry my whole life up nine flights of stairs because the elevator was slow, and I thought, *Oh no.*
 
 She puts her hand on your face.
 
@@ -371,7 +371,7 @@ The lobby of Building 7 at the Navy Yard. Glass and steel and a reception desk w
 
 Hugh Pemberton sits in a white leather chair with one ankle on his knee, in a navy blazer, golden, perfectly at ease. He has a white visitor badge clipped to his lapel. *GUEST.*
 
-In his lap, folded in a clean square: a handkerchief, embroidered with a *P*. The one he took from his sister\'s coat in March. He\'s been carrying it ever since.
+In his lap, folded in a clean square: an empty Ziploc bag. In March it held his sister\'s handkerchief, *JLP* in navy thread, and he handed it through a car window in a Wawa lot on City Avenue. He kept the bag.
 
 A door opens. Footsteps on the polished concrete.
 
@@ -447,9 +447,9 @@ Object.assign(EH.episodes.s02e10, {
   onEnd: g => {
     g.recap(g.f('institute10') === 'none' ? 'Achterberg told you anyway: on August 22, Halcyon opened a door under Broad Street. You were standing in it.' : 'At the Giant Heart, Achterberg told you the truth: APERTURE. "We opened a door. You happened to be standing in it."');
     g.recap(g.f('plan10') === 'deal' ? 'You took her deal. Eleven people walked out. You walked in. Dante\'s van stopped the truck.' : g.f('plan10') === 'crew' ? 'The crew hit the warehouse. Four of the eleven were still there. Brannigan had moved the rest.' : g.f('plan10') === 'cops' ? 'You told Mikey everything. There were a lot of cops on 9th Street.' : 'You gave Dana Fiorillo the tape. She brought a photographer.');
-    g.recap('At 9th and Washington, in front of ten thousand people and Saint Anthony, Halcyon\'s truck stood open. Bruno\'s people went home.');
+    g.recap('At 9th and Washington, in front of ten thousand people and Saint Anthony, Bruno\'s people came out into the street. They went home.');
     if (g.f('saw_revenant10')) g.recap(g.hv('revenant_drift') < 6 ? 'In the Slip, the old man with your face lowered his hand, and walked away.' : 'In the Slip, the old man with your face watched you, and waited.');
-    g.recap('Nonna and Constance Pemberton watched from the curb at Christian Street. Both their eyes moved.');
+    g.recap('Nonna and Constance Pemberton watched from the curb at Christian Street.' + (g.f('saw_revenant10') ? ' Both their eyes moved.' : ''));
     g.recap('Dante Iannucci is in a cell. Bruno didn\'t bail him out. "Now it\'s a war. Mine."');
     if (g.f('hero_name') && g.f('hero_name') !== 'none') g.recap('The Inquirer, A1: ' + ({ blur: 'THE BLUR', secondhand: 'SECOND HAND', wawa: 'WAWA' })[g.f('hero_name')] + '.');
     if (g.f('roof10') === 'love') g.recap('On the roof on Mifflin Street, you said it. So did she.');

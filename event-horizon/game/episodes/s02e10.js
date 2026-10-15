@@ -20,13 +20,13 @@ EH.episode({
       night: true,
       loc: 'MIFFLIN STREET · THE STOOP',
       clock: { day: 'Mon', date: 'Apr 19', time: '7:50 PM' },
-      text: `> THE CAMERA.
+      text: g => `> THE CAMERA.
 
 Later. The streetlights are on. The peas are shelled, the bowl full of green and the paper bag full of empty pods. The Bentley is still halfway down Mifflin Street with its driver standing beside it like he\'s been there since the Korean War.
 
 Two old women on kitchen chairs on a stoop. They have been talking for four hours. Neither of them has raised her voice once.
 
-constance: There\'s one more thing.
+${g.f('note6') === 'told' ? `constance: There\'s one more thing.
 
 She takes something out of the pocket of her camel hair coat. An index card, folded in half, soft at the corners.
 
@@ -42,11 +42,11 @@ constance: Hugh thinks it\'s the boy\'s hand. Your grandson.
 
 Teresa doesn\'t answer for a long time.
 
-TERESA: Sister Margaret taught that *t* at St. Monica\'s. To every boy in that school. For fifty years.
+TERESA: The sisters taught that *t* at St. Monica\'s. To every boy in that school. For ninety years.
 
 She holds the card closer to the light.
 
-TERESA: She taught it to my brother.
+TERESA: They taught it to my brother.
 
 Constance looks at her.
 
@@ -64,7 +64,7 @@ constance: Teresa. This card is from November.
 
 Teresa folds the card. She doesn\'t give it back. She puts it in the pocket of her black cardigan, next to her rosary.
 
-TERESA: Then somebody in my family has been writing letters from somewhere I can\'t go.
+TERESA: Then somebody in my family has been writing letters from somewhere I can\'t go.` : `Teresa looks up the street at the Kearneys\' front window, where the light just went on.`}
 
 She stands up. She picks up the bowl of peas.
 
@@ -88,7 +88,7 @@ TERESA: Because I counted. And something is going to happen on the sixteenth. An
 
 Finals on the twelfth, thirteenth and fourteenth. Move-out on the sixteenth. The ninth floor is half boxes and half panic. Somebody has written *DAYS UNTIL WE ARE FREE* on the lounge whiteboard and is counting down in Sharpie, and somebody else keeps adding a day.
 
-${g.f('terms8') === 'count' ? 'TXT rosa: count?\nTXT sam: zero\nTXT rosa: good. eat breakfast\n\nIt\'s been zero since the ballpark. Ma counted four seconds that night and wrote it on the St. Monica\'s calendar, and that\'s the last red mark.' : 'TXT rosa: eat breakfast'}
+${g.f('terms8') === 'count' ? 'TXT rosa: count?\nTXT sam: zero\nTXT rosa: good. eat breakfast\n\nIt\'s been zero since the ballpark. ' + (g.f('slip9') === 'told' ? 'Ma counted four seconds that night and wrote it on the St. Monica\'s calendar, and that\'s the last red mark.' : 'The St. Monica\'s calendar on the fridge has no new red marks since April.') : 'TXT rosa: eat breakfast'}
 
 Halina Kowal\'s new kidney took. Bree sent you a photo on April twenty-second: Halina in a hospital bed at Jefferson, gray, furious, giving the camera the finger. *SHE\'S FINE*, Bree wrote. *SHE\'S FURIOUS. SHE\'S FINE.*
 
@@ -96,7 +96,7 @@ Jules is asleep in your bed with the lamp off. She has an organic chemistry fina
 
 You haven\'t gone in since the ballpark. You haven\'t needed to. Grace counted your hair on the first of May and said *same* and went back to her desk without another word, which from Grace is a standing ovation.
 
-And at 8:04 on Monday morning, your phone buzzes with a number you saved in April as *M.A. - DON\'T*.
+And at 8:04 on Monday morning, your phone buzzes with ${g.f('slip9b') === 'guns' ? 'a number you saved in April as *M.A. - DON\'T*' : 'a number you don\'t have. By the second text you\'ve saved it as *M.A. - DON\'T*'}.
 
 TXT M.A. - DON\'T: Good morning, Mr. Kearney. I hope your finals are going well.
 TXT M.A. - DON\'T: I\'d like to show you something. The Franklin Institute, Saturday, ten a.m. By the Giant Heart. Bring anyone you like.
@@ -113,7 +113,7 @@ nik: Bro. Is that her? Is that *her*? Don\'t answer. Your face answered.`,
         { text: 'Go. With Jules. *Bring anyone you like.* Bring the one with the number.', tag: 'With Jules',
           fx: g => { g.flag('institute10', 'jules'); g.bond('jules', { trust: 1 }); }, go: 'a1_institute' },
         { text: 'Go. And let Nik wire you. Every word, for Dana Fiorillo. *The truth*, she said. Let the city have it too.', tag: 'Wired',
-          fx: g => { g.flag('institute10', 'wired'); g.bond('nik', { respect: 2 }); g.hidden('halcyon_heat', 1); }, go: 'a1_institute', if: g => g.f('dana4') === 'halcyon' || g.f('dana5') },
+          fx: g => { g.flag('institute10', 'wired'); g.bond('nik', { respect: 2 }); g.hidden('halcyon_heat', 1); }, go: 'a1_institute', if: g => g.f('dana4') === 'halcyon' || g.f('dana5') === 'sent' || g.f('dana5') === 'one' },
         { text: 'Don\'t go. Delete it. You know what she is.', tag: 'Don\'t go',
           fx: g => { g.flag('institute10', 'none'); }, go: 'a1_noinstitute' }
       ]
@@ -174,7 +174,7 @@ ACHTERBERG: Think about it until Sunday. You have more time than anyone.`,
       loc: 'THE FRANKLIN INSTITUTE',
       text: g => `${g.f('offer10') === 'card' ? 'You take the card. You don\'t say anything. You walk out through the left ventricle, where you threw up in third grade, and the heart beats behind you like it\'s laughing.' : g.f('offer10') === 'first' ? 'sam: Let them go first. All of them. Then we talk.\n\nACHTERBERG: *(smiling)* You\'re your mother\'s son. I\'ve read about her. She walked into a social club in her church coat.\n\nShe puts the card in your hand anyway.\n\nACHTERBERG: No. But I admire the instinct.' : 'sam: No.\n\nA second grader in a yellow T-shirt stops and stares at you. Achterberg doesn\'t flinch.\n\nACHTERBERG: I thought you\'d say that. I\'d have been disappointed if you didn\'t.\n\nShe puts the card on the bench beside her and leaves it there. You don\'t pick it up. On your way out, you look back. A second grader has picked it up and is using it as a fan.'}
 
-${g.f('institute10') === 'wired' ? 'Outside on the steps, by the Ben Franklin statue, Nik is in your ear, hyperventilating.\n\nnik: I got it. I got *all* of it. "We opened a door. You happened to be standing in it." Bro. Bro. That\'s a *front page*. That\'s a Pulitzer. That\'s a *subpoena*.' : g.f('institute10') === 'jules' ? 'Outside on the steps, by the Ben Franklin statue, Jules sits down very suddenly, like her legs have stopped working.\n\njules: We were standing in a door.\n\nsam: Yeah.\n\njules: My father paid for the door, Sam. Pemberton Lyle Capital. I\'ve seen the name on his desk. *Halcyon.* I thought it was a *boat*.' : 'Outside on the steps, by the Ben Franklin statue, you sit down and put your head between your knees and breathe, the way Grace taught you, until the steps stop moving.'}
+${g.f('institute10') === 'wired' ? 'Outside on the steps, by the Ben Franklin statue, Nik is in your ear, hyperventilating.\n\nnik: I got it. I got *all* of it. "We opened a door. You happened to be standing in it." Bro. Bro. That\'s a *front page*. That\'s a Pulitzer. That\'s a *subpoena*.' : g.f('institute10') === 'jules' ? 'Outside on the steps, by the Ben Franklin statue, Jules sits down very suddenly, like her legs have stopped working.\n\njules: We were standing in a door.\n\nsam: Yeah.\n\njules: She plays cards at my father\'s table, Sam. She folds every hand. I thought she was *boring*.' : 'Outside on the steps, by the Ben Franklin statue, you sit down and put your head between your knees and breathe, the way Grace taught you, until the steps stop moving.'}
 
 Sunday the sixteenth. Move-out day. The Italian Market festival.
 
