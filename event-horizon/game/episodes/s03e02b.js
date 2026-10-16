@@ -70,14 +70,14 @@ bree: The lady said bring a support person. *(she doesn\'t look at you)* Lots of
 
   a2_bree_end: {
     loc: 'PORT RICHMOND · THE KOWALS\' STOOP',
-    text: g => `${g.f('bree2') === 'come' ? 'bree: *(after a while)* Okay.\n\nShe finally drinks some of the beer.\n\nbree: Teddy would\'ve hated this.\n\nsam: Teddy would\'ve come with you.\n\nbree: Yeah. *(she wipes her nose with her wrist)* Yeah. He would\'ve. In that stupid coat.' : 'bree: *Some other way.* Wawa. With what? With your pizza money? With the two hundred dollars you keep in a sock?\n\nShe stands up.\n\nbree: You don\'t get to tell me don\'t. Nobody gets to tell me don\'t. You never once had to pick between somebody\'s kidney and your own name on a list.\n\nShe goes inside. The screen door bangs. A minute later, the light in the upstairs window goes on. She doesn\'t come back out.\n\nYour phone, ten minutes later, on the El:\n\nTXT bree: 10am saturday. building 1. come or dont'}`,
+    text: g => `${g.f('bree2') === 'come' ? 'bree: *(after a while)* Okay.\n\nShe finally drinks some of the beer.\n\nbree: Teddy would\'ve hated this.\n\nsam: Teddy would\'ve come with you.\n\nbree: Yeah. *(she wipes her nose with her wrist)* Yeah. He would\'ve. In that stupid coat.' : 'bree: *Some other way.* Wawa. With what? With your pizza money? With whatever you keep in a sock?\n\nShe stands up.\n\nbree: You don\'t get to tell me don\'t. Nobody gets to tell me don\'t. You never once had to pick between somebody\'s kidney and your own name on a list.\n\nShe goes inside. The screen door bangs. A minute later, the light in the upstairs window goes on. She doesn\'t come back out.\n\nYour phone, ten minutes later, on the El:\n\nTXT bree: 10am saturday. building 1. come or dont'}`,
     next: '@hub'
   },
 
   a2_carmen: {
     loc: 'NORTH 15TH STREET · CARMEN\'S LIVING ROOM',
     clock: { day: 'Wed', date: 'Sep 8', time: '5:00 PM' },
-    enter: g => { g.bond('carmen', { trust: 1 }); g.bond('jayden', { affection: 1 }); g.know('carmen_waiting2', ['sam', 'carmen'], 'Carmen hasn\'t called the Registry. The pamphlet is still on top of the TV. A Registry nurse came back Tuesday and left a second pamphlet.'); },
+    enter: g => { g.bond('carmen', { trust: 1 }); g.bond('jayden', { affection: 1 }); g.know('carmen_waiting2', ['sam', 'carmen'], 'Carmen hasn\'t called the Registry. A Registry nurse came back Tuesday and left another pamphlet.'); },
     text: g => `Carmen\'s living room. The plastic on the couch squeaks when you sit. ${g.f('carmen1') === 'truth' ? 'The first pamphlet burned in the San Judas candle. There\'s a new one on top of the TV now.' : 'The pamphlet is still on top of the TV under San Judas. There\'s a second one next to it now.'}
 
 carmen: They came back Tuesday. The nice one. She left another one. She said *any time* again. She says *any time* like a person who means *soon*.

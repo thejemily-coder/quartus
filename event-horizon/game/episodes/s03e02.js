@@ -90,7 +90,7 @@ nik: *(barely)* And that\'s live.
 
 You watch it for a while. You don\'t know who number twenty is. Somebody with cold hands. Somebody who needed five hundred dollars more than they needed to not be on a list.
 
-${g.f('mother1') === 'ask' ? 'Your phone buzzes.\n\nTXT jules: she wrote back\nTXT jules: by COURIER. a man in a hat just handed it to simone. simone signed for it like it was a summons\nTXT jules: come up. please. i don\'t want to open it alone. i also don\'t want anyone else to open it. i want you to sit there while i open it' : g.f('mother1') === 'call' ? 'Your phone buzzes.\n\nTXT jules: she came to campus. like i said she would. she stood in the lobby of 1300 in the cream jacket for two hours yesterday. the RA asked her to leave\nTXT jules: she left a card at the desk\nTXT jules: come up. please. i haven\'t opened it' : 'Your phone buzzes.\n\nTXT jules: i called her. like i said i would\nTXT jules: she didn\'t pick up on the second ring. she didn\'t pick up at all. she sent a card by courier instead\nTXT jules: come up. please. i haven\'t opened it'}`,
+${g.f('mother1') === 'ask' ? 'Your phone buzzes.\n\nTXT jules: she wrote back\nTXT jules: by COURIER. a man in a hat just handed it to simone. simone signed for it like it was a summons\nTXT jules: come up. please. i don\'t want to open it alone. i also don\'t want anyone else to open it. i want you to sit there while i open it' : g.f('mother1') === 'call' ? 'Your phone buzzes.\n\nTXT jules: she came to campus. after i hung up on her. she stood in the lobby of 1300 in the cream jacket for two hours yesterday. the RA asked her to leave\nTXT jules: she left a card at the desk\nTXT jules: come up. please. i haven\'t opened it' : 'Your phone buzzes.\n\nTXT jules: i called her. like i said i would\nTXT jules: she didn\'t pick up on the second ring. she didn\'t pick up at all. she sent a card by courier instead\nTXT jules: come up. please. i haven\'t opened it'}`,
       next: 'a1_card'
     },
 
@@ -134,7 +134,7 @@ jules: Well?`,
           fx: g => { g.flag('card2', 'read'); g.bond('jules', { trust: 1 }); }, go: 'a1_card_end' },
         { text: '"She wants you at Ravenscourt with Constance. On her ground. Read it, but read it carefully."', tag: 'Careful',
           fx: g => { g.flag('card2', 'careful'); g.bond('jules', { respect: 1 }); }, go: 'a1_card_end' },
-        { text: 'Hand it back unopened, almost. "I\'m not going to tell you. You\'re going to want to read this one yourself."', tag: 'Hand it back',
+        { text: 'Fold it closed and hand it back. "I\'m not going to tell you. You\'re going to want to read this one yourself."', tag: 'Hand it back',
           fx: g => { g.flag('card2', 'back'); g.bond('jules', { trust: 1, respect: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a1_card_end' }
       ]
     },
@@ -189,7 +189,7 @@ Behind the table: two nurses in navy polos. And a tall, golden, smiling sophomor
 
 Hugh sees you. He taps the folder against the table, twice, and smiles.
 
-You keep walking. ${g.f('talk_s3e1') === 'weak' ? 'You keep walking fast, because one of the nurses has gray hair and a kind face and a tablet, and her name is Linda, and she wrote down a name on Carmen\'s stoop that wasn\'t yours.' : 'You keep walking.'}
+You keep walking. ${g.f('talk_s3e1') === 'weak' ? 'You keep walking fast, because one of the nurses has gray hair and a kind face and a tablet, and her name is Linda, and she wrote down a name on Carmen\'s stoop that wasn\'t yours.' : ''}
 
 You get to the corner of 13th before you let yourself breathe.
 

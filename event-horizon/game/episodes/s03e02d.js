@@ -9,7 +9,7 @@ EH.scenes('s03e02', {
     enter: g => { g.sleep(8); },
     text: g => `Saturday. You have a delivery shift at Ciro\'s at noon.
 
-${g.f('bree2') === 'come' ? 'You told Bree you\'d be there. You put on a clean shirt, like it\'s a job interview, which it sort of is, except you\'re not sure who\'s interviewing whom.' : g.f('bree2') === 'dont' ? 'You told Bree not to go. She\'s going anyway. *come or dont.*' : 'Bree\'s text is still on your screen. *come or dont.* You didn\'t even know she\'d signed until last night.'}
+${g.f('bree2') === 'come' ? 'You told Bree you\'d be there. You put on a clean shirt, like it\'s a job interview, which it sort of is, except you\'re not sure who\'s interviewing whom.' : g.f('bree2') === 'dont' ? 'You told Bree not to go. She\'s going anyway. *come or dont.*' : 'Bree\'s text is still on your screen. *come or dont.* You didn\'t even know she\'d signed until Hugh told you yesterday.'}
 
 ${g.f('hugh2') === 'think' ? 'The folder Hugh gave you is on your desk. *YOU ARE NOT ALONE. Saturday. Front door. -H*' : ''}
 
@@ -23,7 +23,7 @@ The Broad Street Line goes all the way to the Navy Yard now. You could be there 
   },
 
   a4_ciro: {
-    loc: 'CIRO\'S PIZZA · WASHINGTON AVENUE',
+    loc: 'CIRO\'S PIZZA · CECIL B. MOORE AVE',
     clock: { time: '3:40 PM' },
     enter: g => { g.know('bree_intake2', ['sam', 'bree'], 'Bree\'s intake at the Registry clinic: an hour in a soundproof booth. They asked for her own voice, then any voices she could do. She gave them all of them. Including Teddy\'s.'); g.hidden('halcyon_heat', 1); },
     text: `You work your shift. You fold boxes. Ciro tells you a story about his cousin in Avellino that you\'ve heard nine times, and you laugh in the right places.
@@ -185,14 +185,14 @@ Outside, in the parking lot, in the September sun, Bree walks fast to the bus st
 
 bree: ${g.f('booth2') === 'nothing' ? 'A bad Kermit. I gave them a *bad Kermit*, Wawa.\n\nShe starts laughing. She can\'t stop. She laughs so hard she has to sit down on the curb at the bus stop.\n\nbree: My aunt\'s pills are covered and I gave them a bad Kermit.' : g.f('booth2') === 'some' ? 'Gritty. I gave the evil science company Gritty.\n\nShe laughs. It cracks in the middle.\n\nbree: My aunt\'s pills are covered. *(she wipes her eyes with the heel of her hand)* So.' : 'I gave them Brannigan. In his own building.\n\nShe\'s shaking. She\'s grinning.\n\nbree: Teddy would\'ve *loved* that. *(the grin goes)* Teddy would\'ve loved that.'}
 
-${g.f('hugh2') === 'think' ? 'In your backpack, the folder from Hugh. You throw it in the trash can at the bus stop. Then you take it back out, because it has your name on the sticky note, and you tear the sticky note into very small pieces and throw *that* away.' : ''}`,
+${g.f('hugh2') === 'think' ? 'In your backpack, the folder from Hugh. You throw it in the trash can at the bus stop. Then you take it back out, because the tablet code inside could be tied to your name, and you tear the code and the sticky note into very small pieces and throw *that* away.' : ''}`,
     next: 'tag_ghost'
   },
 
   a4_ask: {
     loc: 'BUILDING 1 · THE LOBBY',
     clock: { time: '11:05 AM' },
-    enter: g => { g.know('achterberg_hugh2', ['sam'], 'Achterberg, in the Registry lobby: Hugh has no authority to move Jules off OBSERVE. "Only I can. And I won\'t, Mr. Kearney. Not for a signature. I don\'t trade in people\'s daughters."'); },
+    enter: g => { if (g.f('hugh2') === 'no') g.know('achterberg_jules2', ['sam', 'bree'], 'Achterberg, on why she watches Jules: "Because she\'s the only one who didn\'t change that night. She was already like that. The night just turned the volume up."'); else g.know('achterberg_hugh2', ['sam'], 'Achterberg, in the Registry lobby: Hugh has no authority to move Jules off OBSERVE. "Only I can. And I won\'t, Mr. Kearney. Not for a signature. I don\'t trade in people\'s daughters."'); },
     text: g => `The nurse blinks. Then she goes and makes a call. Two minutes later, the far door opens.
 
 Achterberg has a fresh coffee. She sits down in the chair next to you, by the ferns, as though this is the most natural thing in the world, as though you\'re two people waiting for the same bus.
@@ -327,7 +327,7 @@ Object.assign(EH.episodes.s03e02, {
     g.recap(g.f('hugh2') === 'no' ? 'Hugh offered: register, and he\'d get Jules off the list. You said no.' : 'Hugh offered: register, and he\'d get Jules off the list.');
     if (g.f('intake2') === 'went') g.recap('At the Navy Yard clinic, Achterberg walked past and said, "Mr. Kearney. Welcome."');
     if (g.f('register2') === 'yes') g.recap('You registered. Participant #29. ES-17.');
-    if (g.f('register2') === 'ask') g.recap('Achterberg: "I don\'t trade in people\'s daughters."');
+    if (g.f('register2') === 'ask') g.recap(g.f('hugh2') === 'no' ? 'Achterberg, on Jules: "She was already like that. The night just turned the volume up."' : 'Achterberg: "I don\'t trade in people\'s daughters."');
     g.recap('Brannigan: "There were sixty-two people in that door. Find her."');
   }
 });

@@ -6,7 +6,6 @@ EH.scenes('s03e02', {
     card: { kind: 'act', label: 'Act Three', title: 'The Table' },
     loc: 'LIACOURAS WALK',
     clock: { day: 'Fri', date: 'Sep 10', time: '12:15 PM' },
-    enter: g => { g.know('rae', ['sam'], 'Rae Delgado, a Temple sophomore, one of the 61. When she\'s frightened, lightbulbs near her pop. She was in line at the Registry table on Liacouras Walk on Sep 10.'); },
     text: `Friday. Add/drop ends at five. You cut across Liacouras Walk to get to the registrar before it closes.
 
 The Registry tent is still there between the pancakes and the a cappella. The line is longer. Eleven people.
@@ -84,14 +83,14 @@ The line moves. She\'s next.
 
 She looks at you. She\'s waiting for you to tell her not to. You don\'t.
 
-sam: Then here. *(you take her phone out of her hand, gently, and put your number in it)* Whatever happens in there. Whatever they say. You call me after.
+sam: Then here. *(she holds out her phone, and you take it, and put your number in it)* Whatever happens in there. Whatever they say. You call me after.
 
 She looks at the number. *SAM. COLD TOO.*
 
 She steps up to the tablet. She signs with her finger. The nurse beams.
 
 Nik\'s counter, later that afternoon, will say *27 of 61*. One of those is Rae. She texts you at 4:10: *they were really nice. i have an intake tuesday. thank u for not making me feel stupid*`}`,
-    enter: g => { if (g.f('rae2') === 'ask') { g.flag('rae_registered'); g.know('rae_number', ['sam', 'rae'], 'Rae Delgado registered on Sep 10. She has Sam\'s number, saved as "SAM. COLD TOO." Her intake is Tuesday.'); } },
+    enter: g => { g.know('rae', ['sam'], 'Rae Delgado, a Temple sophomore, one of the 61. When she\'s frightened, lightbulbs near her pop. She was in line at the Registry table on Liacouras Walk on Sep 10.'); if (g.f('rae2') === 'ask') { g.flag('rae_registered'); g.know('rae_number', ['sam', 'rae'], 'Rae Delgado registered on Sep 10. She has Sam\'s number, saved as "SAM. COLD TOO." Her intake is Tuesday.'); } },
     next: 'a3_hugh'
   },
 
@@ -129,7 +128,7 @@ hugh: And I get Jubilee moved off *Observe*. Off the list. Her file goes in a dr
 
 He lets that sit.
 
-hugh: You want her safe. I want her safe. *(something real flickers under it, just for a second)* I\'m her *brother*, Kearney. I\'ve been her brother nine minutes longer than she\'s been alive. You think I like seeing her name on a screen?
+hugh: You want her safe. I want her safe. *(something real flickers under it, just for a second)* I\'m her *brother*, Kearney. I\'m nine minutes older than she is, and I\'ve been her brother every second since. You think I like seeing her name on a screen?
 
 hugh: One signature. Yours, for hers.`,
     choices: [
