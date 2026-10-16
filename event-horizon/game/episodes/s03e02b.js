@@ -35,7 +35,7 @@ Three things. Before Friday.`,
     loc: 'PORT RICHMOND · THE KOWALS\' STOOP',
     clock: { day: 'Wed', date: 'Sep 8', time: '7:30 PM' },
     enter: g => { g.flag('bree2_visit'); g.bond('bree', { trust: 1 }); g.know('bree_registered', ['sam', 'bree'], 'Bree signed up for the Registry on Labor Day. The Registry pays household members\' transplant meds. Bruno stopped paying for Halina\'s pills in June, when his people went to ground. Bree\'s intake is Saturday at ten at the Navy Yard clinic.'); },
-    text: `Bree is on the stoop in Port Richmond with a Yuengling she isn\'t drinking, watching the El go by at the end of the block.
+    text: `Bree is on the stoop in Port Richmond with a Yuengling she isn\'t drinking, watching the trucks go by on Allegheny at the end of the block.
 
 She sees you coming and doesn\'t get up.
 
@@ -45,7 +45,7 @@ sam: You stopped answering.
 
 bree: I stopped answering a lot of people.
 
-You sit down a step below her. The El goes by again. She waits for it to pass.
+You sit down a step below her. A truck goes by on Allegheny. She waits for it to pass.
 
 bree: I signed.
 
@@ -57,7 +57,7 @@ bree: The Registry pays for household meds. If I\'m a participant. So I\'m a par
 
 She turns the bottle in her hands.
 
-bree: Saturday. Ten. The Navy Yard. *(she laughs, not really)* The Navy Yard. Where Teddy died. On the steps of a building I can see from the parking lot.
+bree: Saturday. Ten. The Navy Yard. *(she laughs, not really)* The Navy Yard. Where Teddy died. At the bottom of the dry dock. You can see it from the parking lot.
 
 bree: The lady said bring a support person. *(she doesn\'t look at you)* Lots of people do.`,
     choices: [
@@ -78,7 +78,7 @@ bree: The lady said bring a support person. *(she doesn\'t look at you)* Lots of
     loc: 'NORTH 15TH STREET · CARMEN\'S LIVING ROOM',
     clock: { day: 'Wed', date: 'Sep 8', time: '5:00 PM' },
     enter: g => { g.bond('carmen', { trust: 1 }); g.bond('jayden', { affection: 1 }); g.know('carmen_waiting2', ['sam', 'carmen'], 'Carmen hasn\'t called the Registry. A Registry nurse came back Tuesday and left another pamphlet.'); },
-    text: g => `Carmen\'s living room. The plastic on the couch squeaks when you sit. ${g.f('carmen1') === 'truth' ? 'The first pamphlet burned in the San Judas candle. There\'s a new one on top of the TV now.' : 'The pamphlet is still on top of the TV under San Judas. There\'s a second one next to it now.'}
+    text: g => `Carmen\'s living room. The plastic on the couch squeaks when you sit. ${g.f('carmen1') === 'truth' ? 'The first pamphlet burned in the San Judas candle. There\'s a new one on top of the TV now.' : g.f('carmen1') === 'money' ? 'The first pamphlet is in a drawer somewhere. The new one is on top of the TV, under San Judas.' : 'The pamphlet is still on top of the TV under San Judas. There\'s a second one next to it now.'}
 
 carmen: They came back Tuesday. The nice one. She left another one. She said *any time* again. She says *any time* like a person who means *soon*.
 
@@ -118,30 +118,30 @@ He hands you the paper without a word.
 
 You read it twice.
 
-mikey: That\'s my district. That\'s Carmen\'s district. That\'s Kensington, that\'s Port Richmond. They picked every district one of yours lives in, Sammy. They didn\'t pick Chestnut Hill.
+mikey: That\'s my district. That\'s North Philly. That\'s Kensington, that\'s Port Richmond. They picked every district one of yours lives in, Sammy. They didn\'t pick Chestnut Hill.
 
 He drinks his coffee.
 
-mikey: I told you. Next it\'s cops.
+mikey: Nurses first. Then cops. I coulda told you that.
 
 sam: What are you going to do?
 
-mikey: I don\'t know. That\'s why I\'m here at six in the morning instead of sleeping. *(he looks at you)* If I say no, they move me. Desk. Or the airport. Somewhere I can\'t see nothing. If I say yes, I\'m the cop standing behind the nurse on Carmen\'s stoop.
+mikey: I don\'t know. That\'s why I\'m here at six in the morning instead of sleeping. *(he looks at you)* If I say no, they move me. Desk. Or the airport. Somewhere I can\'t see nothing. If I say yes, I\'m the cop standing behind the nurse on some abuela\'s stoop.
 
 mikey: You tell me. What do you want me to do?`,
     choices: [
       { text: '"Say yes. Be the cop on the stoop. Be the one who makes sure nobody gets taken."', tag: 'Say yes',
-        fx: g => { g.flag('mikey2', 'yes'); g.bond('mikey', { respect: 1 }); g.know('mikey_inside2', ['sam', 'mikey'], 'Mikey will take the Registry wellness-check detail, so he can be on the stoops when it happens.'); }, go: 'a2_mikey_end' },
+        fx: g => { g.flag('mikey_s3e2', 'yes'); g.bond('mikey', { respect: 1 }); g.know('mikey_inside2', ['sam', 'mikey'], 'Mikey will take the Registry wellness-check detail, so he can be on the stoops when it happens.'); }, go: 'a2_mikey_end' },
       { text: '"Say no. Don\'t let them make you that guy. Not for this."', tag: 'Say no',
-        fx: g => { g.flag('mikey2', 'no'); g.bond('mikey', { affection: 1 }); g.hidden('revenant_drift', 0.5); }, go: 'a2_mikey_end' },
+        fx: g => { g.flag('mikey_s3e2', 'no'); g.bond('mikey', { affection: 1 }); g.hidden('revenant_drift', 0.5); }, go: 'a2_mikey_end' },
       { text: '"I can\'t decide that for you, Mikey. You\'re the cop. What do *you* think?"', tag: 'Your call',
-        fx: g => { g.flag('mikey2', 'his'); g.bond('mikey', { respect: 2, trust: 1 }); g.hidden('revenant_drift', -1); }, go: 'a2_mikey_end' }
+        fx: g => { g.flag('mikey_s3e2', 'his'); g.bond('mikey', { respect: 2, trust: 1 }); g.hidden('revenant_drift', -1); }, go: 'a2_mikey_end' }
     ]
   },
 
   a2_mikey_end: {
     loc: 'THE 3RD DISTRICT · 11TH & WHARTON',
-    text: g => `${g.f('mikey2') === 'yes' ? 'mikey: *(slowly)* Yeah. Yeah. Somebody\'s gotta be on the stoop who knows what he\'s looking at. Okay.\n\nHe folds the directive back into quarters.\n\nmikey: You owe me, Sammy. For the rest of your life.' : g.f('mikey2') === 'no' ? 'mikey: *(slowly)* Yeah. Yeah, okay. Desk duty. Ma\'ll be thrilled. She\'s been praying for me to get desk duty since the academy.\n\nHe folds the directive back into quarters.\n\nmikey: Somebody else is gonna be on that stoop, Sammy. You know that. Somebody who doesn\'t know what he\'s looking at.' : 'Mikey looks at you for a long moment, like you said something in another language.\n\nmikey: Huh.\n\nsam: What?\n\nmikey: Nothing. You just never asked me that before. You always know what everybody should do.\n\nHe drinks his coffee. He thinks.\n\nmikey: I think I gotta be on the stoop. I think if I\'m not, I\'m gonna be sitting at a desk at the airport reading about it in the paper, and I\'m gonna hate myself. *(beat)* Yeah. I\'ll do it. My way.'}`,
+    text: g => `${g.f('mikey_s3e2') === 'yes' ? 'mikey: *(slowly)* Yeah. Yeah. Somebody\'s gotta be on the stoop who knows what he\'s looking at. Okay.\n\nHe folds the directive back into quarters.\n\nmikey: You owe me, Sammy. For the rest of your life.' : g.f('mikey_s3e2') === 'no' ? 'mikey: *(slowly)* Yeah. Yeah, okay. Desk duty. Ma\'ll be thrilled. She\'s been praying for me to get desk duty since the academy.\n\nHe folds the directive back into quarters.\n\nmikey: Somebody else is gonna be on that stoop, Sammy. You know that. Somebody who doesn\'t know what he\'s looking at.' : 'Mikey looks at you for a long moment, like you said something in another language.\n\nmikey: Huh.\n\nsam: What?\n\nmikey: Nothing. You just never asked me that before. You always know what everybody should do.\n\nHe drinks his coffee. He thinks.\n\nmikey: I think I gotta be on the stoop. I think if I\'m not, I\'m gonna be sitting at a desk at the airport reading about it in the paper, and I\'m gonna hate myself. *(beat)* Yeah. I\'ll do it. My way.'}`,
     next: '@hub'
   },
 
@@ -161,7 +161,7 @@ grace: Your face said everything. Sit down. Okay.
 
 You sit.
 
-grace: It\'s a scribe job. I type what the doctor says while the doctor says it. It pays nineteen an hour, which is more than the RA job, and it\'s clinical hours, which I need, and it\'s the Navy Yard, which is on the Broad Street Line. That\'s why.
+grace: It\'s a scribe job. I type what the doctor says while the doctor says it. It pays nineteen an hour, which is more than the RA job, and it\'s clinical hours, which I need, and it\'s the Navy Yard, which is the Broad Street Line and a shuttle. That\'s why.
 
 She takes a bite of the granola bar.
 
@@ -171,7 +171,7 @@ sam: What\'s the unofficial why?
 
 She doesn\'t answer for a while.
 
-grace: I measured your hair for a year. I measured your gums. I did the math on your shins with a library textbook and a magnifying glass. And I never got to see a *file*. *(she looks at you)* Now I see files, Sam. Every day. Intake forms. Cold extremities. Lost time. Bone density. They\'re measuring the same things I measured on you. They\'re just better at it.
+grace: I counted your white hairs for a year. I did the math on your x-ray with a library textbook and a magnifying glass. And I never got to see a *file*. *(she looks at you)* Now I see files, Sam. Every day. Intake forms. Cold extremities. Lost time. Bone density. They\'re measuring the same things I measured on you. They\'re just better at it.
 
 grace: And there are things in the files that aren\'t medical. There\'s a column. It\'s just letters. *O*, *R*, and *H*. I asked what they meant. The doctor said *administrative*.
 
@@ -195,7 +195,7 @@ nik: Okay. Okay okay okay. Sit. Watch. Don\'t talk.
 
 The bank camera at Broad and Spring Garden. The anniversary. 11:51:00.
 
-${g.f('corner1') === 'hand' ? 'You can see yourself in the corner of the frame, holding Jules\'s hand.' : 'You can see yourself in the corner of the frame.'}
+${g.f('corner1') === 'hand' ? 'You can see yourself in the corner of the frame, holding Jules\'s hand.' : g.f('corner1') === 'slip' ? 'You can see yourself in the corner of the frame. You already know who he\'s going to show you. You saw her from the inside.' : 'You can see yourself in the corner of the frame.'}
 
 nik: Okay. Here\'s the stutter. The second that happened twice. Every camera I have records it as two frames that are the same. Identical. Pixel for pixel. Because everything was stopped. Right?
 

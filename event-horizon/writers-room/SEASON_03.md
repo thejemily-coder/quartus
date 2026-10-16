@@ -78,7 +78,7 @@ Write each episode to the save. The plan bends; the save doesn't.
   - **Hub (3 of 5):**
     - Bree: she signed; Saturday's intake. `bree2`: come / dont.
     - Carmen: a second pamphlet. Jayden's LEGO Broad Street with **the crack**.
-    - Mikey: PPD Directive 27-14, wellness-check assistance from Oct 1 in the 3rd/22nd/24th/25th/26th. `mikey2`: yes / no / his. On 'his' he takes the detail his way.
+    - Mikey: PPD Directive 27-14, wellness-check assistance from Oct 1 in the 3rd/22nd/24th/25th/26th. `mikey_s3e2`: yes / no / his. On 'his' he takes the detail his way.
     - Grace: a Registry scribe in Building 1. The **O / R / H** column, "administrative".
     - Nik: the ghost girl moved in the stutter and is on no list (`ghost_girl`).
   - **Act Three:** Rae Delgado (sophomore, Morgan Hall, pops lightbulbs). `rae2`: truth (she walks) / ask (she registers and has Sam's number) / walk.
@@ -89,3 +89,13 @@ Write each episode to the save. The plan bends; the save doesn't.
     - The booth, `booth2`: nothing (bad Kermit; ECHO LOW) / hers (everyone but Teddy, plus Brannigan into their mic) / some.
     - `register2`: no / **yes** (needs hugh2 'think'; `registered`, participant #29) / ask (Achterberg: Hugh has no authority; "I don't trade in people's daughters." Otherwise: "She was already like that.").
   - **Tag:** Building 7 Recovery Ops. The ghost girl matches none of the 61. "There were sixty-two people in that door." "Find her."
+- **S3E2 QA:**
+  - Teddy died at the bottom of the dry dock, not on steps.
+  - The Broad Street Line ends at NRG; take the Navy Yard shuttle from there.
+  - The Mikey flag is now `mikey_s3e2`, because `mikey2` is an S1E2 flag.
+  - Mikey hasn't met Carmen on this save.
+  - Grace's exam was hair and x-ray (`time_debt2` unknown here). She is a fifth-year.
+  - Achterberg sends regards to his "family" (no Rosa link).
+  - Jules "changed the least".
+  - Bree's block faces Allegheny, not the El.
+  - Hugh's twin gap is nine minutes everywhere; S1E6 was fixed.

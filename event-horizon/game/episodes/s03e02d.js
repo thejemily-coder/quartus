@@ -13,7 +13,7 @@ ${g.f('bree2') === 'come' ? 'You told Bree you\'d be there. You put on a clean s
 
 ${g.f('hugh2') === 'think' ? 'The folder Hugh gave you is on your desk. *YOU ARE NOT ALONE. Saturday. Front door. -H*' : ''}
 
-The Broad Street Line goes all the way to the Navy Yard now. You could be there by ten.`,
+Broad Street Line to the end of the line at NRG, then the Navy Yard shuttle. You could be there by ten.`,
     choices: [
       { text: 'Go. Support person. Whatever that turns out to mean.', tag: 'Go',
         fx: g => { g.flag('intake2', 'went'); g.bond('bree', { trust: 1 }); }, go: 'a4_clinic' },
@@ -34,7 +34,7 @@ TXT bree: done
 TXT bree: they put me in a booth. soundproof. a guy with headphones. he said say this sentence in your own voice. then he said now any voices you can do
 TXT bree: i did all of them wawa. i dont know why. he was so nice. he kept saying amazing. amazing
 TXT bree: i did teddy
-TXT bree: i did teddy for a man with headphones in a building where you can see the steps
+TXT bree: i did teddy for a man with headphones in a building where you can see the dry dock
 
 You read it standing in the back of Ciro\'s, between the walk-in and the flour.
 
@@ -50,7 +50,7 @@ You don\'t answer. She asked you not to. It turns out you can do that.`,
     enter: g => { g.know('clinic_inside', ['sam', 'bree'], 'The Registry clinic in Building 1 at the Navy Yard: a bright lobby, a children\'s corner, a water feature, nurses who mean it. Achterberg walked through the lobby while Sam was there and greeted him by name.'); g.hidden('halcyon_heat', 1); },
     text: g => `Building 1 at the Navy Yard. Not Building 7. Building 1 is new: glass and pale wood, a lobby with a living wall of ferns and a water feature that sounds like rain. A children\'s corner with a train table. Hydrangeas at the front desk. It smells like a nice hotel.
 
-From the parking lot, if you turn around, you can see the steps of Building 7, a quarter mile away across the yard. You don\'t turn around.
+From the parking lot, if you turn around, you can see the cranes over the dry dock, a quarter mile away across the yard, and the brick of Building 7 beside it. You don\'t turn around.
 
 Bree is in a chair by the ferns with her knees pulled up. ${g.f('bree2') === 'dont' ? 'She sees you come in. Her face doesn\'t change, but her shoulders come down about an inch.\n\nbree: You came.\n\nsam: I came.\n\nbree: I\'m still mad.\n\nsam: I know.' : 'She sees you come in and lets out a breath.\n\nbree: Support person.\n\nsam: Support person.'}
 
@@ -111,7 +111,7 @@ The technician\'s finger is on the record button. He hasn\'t noticed that she\'s
         fx: g => { g.flag('booth2', 'nothing'); g.bond('bree', { trust: 1 }); g.hidden('halcyon_heat', -1); g.hidden('revenant_drift', 0.5); }, go: 'a4_booth_end' },
       { text: 'Don\'t move. Don\'t nod, don\'t shake. It\'s her voice. Let her pick.', tag: 'Let her pick',
         fx: g => { g.flag('booth2', 'hers'); g.bond('bree', { respect: 2, trust: 1 }); g.hidden('revenant_drift', -1); }, go: 'a4_booth_end' },
-      { text: 'Nod. *Give them something. Not everything. Enough to keep the pills coming.*', tag: 'Something',
+      { text: 'Nod. *Give them something. Not everything. Enough to keep them happy.*', tag: 'Something',
         fx: g => { g.flag('booth2', 'some'); g.bond('bree', { trust: 1 }); }, go: 'a4_booth_end' }
     ]
   },
@@ -192,18 +192,18 @@ ${g.f('hugh2') === 'think' ? 'In your backpack, the folder from Hugh. You throw 
   a4_ask: {
     loc: 'BUILDING 1 · THE LOBBY',
     clock: { time: '11:05 AM' },
-    enter: g => { if (g.f('hugh2') === 'no') g.know('achterberg_jules2', ['sam', 'bree'], 'Achterberg, on why she watches Jules: "Because she\'s the only one who didn\'t change that night. She was already like that. The night just turned the volume up."'); else g.know('achterberg_hugh2', ['sam'], 'Achterberg, in the Registry lobby: Hugh has no authority to move Jules off OBSERVE. "Only I can. And I won\'t, Mr. Kearney. Not for a signature. I don\'t trade in people\'s daughters."'); },
+    enter: g => { if (g.f('hugh2') === 'no') g.know('achterberg_jules2', ['sam', 'bree'], 'Achterberg, on why she watches Jules: "Because she changed the least that night. She was already like that. The night just turned the volume up."'); else g.know('achterberg_hugh2', ['sam'], 'Achterberg, in the Registry lobby: Hugh has no authority to move Jules off OBSERVE. "Only I can. And I won\'t, Mr. Kearney. Not for a signature. I don\'t trade in people\'s daughters."'); },
     text: g => `The nurse blinks. Then she goes and makes a call. Two minutes later, the far door opens.
 
 Achterberg has a fresh coffee. She sits down in the chair next to you, by the ferns, as though this is the most natural thing in the world, as though you\'re two people waiting for the same bus.
 
 ACHTERBERG: One question. I\'ll hold you to that.
 
-${g.f('hugh2') === 'think' || g.f('hugh2') === 'jules' ? 'sam: Hugh says if I register, he can get Jules moved off *Observe*.\n\nShe drinks her coffee.\n\nACHTERBERG: Hugh doesn\'t have that authority. Only I do.\n\nsam: And?\n\nACHTERBERG: And I won\'t. Not for a signature. I don\'t trade in people\'s daughters, Mr. Kearney. *(she sets the cup down)* I\'m sorry he told you that. He\'s young, and he wants very badly to be the one who fixes things. You\'d understand that better than anyone.' : 'sam: Why her? Out of sixty-one. Why is Jules the one you watch?\n\nShe drinks her coffee.\n\nACHTERBERG: That\'s two questions.\n\nsam: Same question.\n\nACHTERBERG: *(after a moment)* Because she\'s the only one who didn\'t *change* that night, Mr. Kearney. She was already like that. The night just turned the volume up.\n\nShe lets that land.\n\nACHTERBERG: I\'ve answered honestly. I always will. You might think about why that frightens you more than if I lied.'}
+${g.f('hugh2') === 'think' || g.f('hugh2') === 'jules' ? 'sam: Hugh says if I register, he can get Jules moved off *Observe*.\n\nShe drinks her coffee.\n\nACHTERBERG: Hugh doesn\'t have that authority. Only I do.\n\nsam: And?\n\nACHTERBERG: And I won\'t. Not for a signature. I don\'t trade in people\'s daughters, Mr. Kearney. *(she sets the cup down)* I\'m sorry he told you that. He\'s young, and he wants very badly to be the one who fixes things. You\'d understand that better than anyone.' : 'sam: Why her? Out of sixty-one. Why is Jules the one you watch?\n\nShe drinks her coffee.\n\nACHTERBERG: That\'s two questions.\n\nsam: Same question.\n\nACHTERBERG: *(after a moment)* Because she changed the least that night, Mr. Kearney. She was already like that. The night just turned the volume up.\n\nShe lets that land.\n\nACHTERBERG: I\'ve answered honestly. I always will. You might think about why that frightens you more than if I lied.'}
 
 She stands. She picks up her coffee.
 
-ACHTERBERG: Give my regards to your mother.
+ACHTERBERG: Give my regards to your family.
 
 She goes back through the door.
 
@@ -213,7 +213,7 @@ bree: You just *talked* to her. Like at a bus stop.
 
 sam: She sat down.
 
-bree: Wawa. She knows your *mother*.`,
+bree: Wawa. She knows your *family*.`,
     next: 'tag_ghost'
   },
 
@@ -262,7 +262,7 @@ Cole Brannigan stands in front of the wall with his hands in the pockets of a ta
 
 On the center screen: the bank camera at Broad and Spring Garden. The anniversary. 11:51:04, and 11:51:04 again.
 
-The analyst rocks the two frames back and forth. Back and forth. A girl in a black hoodie on the northwest corner. Looking at the clock. Looking at a boy holding a girl\'s hand.
+The analyst rocks the two frames back and forth. Back and forth. A girl in a black hoodie on the northwest corner. Looking at the clock. Looking at ${g.f('corner1') === 'hand' ? 'a boy holding a girl\'s hand' : 'a boy on the corner'}.
 
 ANALYST: Facial recognition, all sixty-one: no match. DMV: no match. School IDs, the hospitals, SEPTA Key cards: no match. Partial gait match to a figure on the Parkway last Thanksgiving, sixty-one percent confidence, which is basically a coin.
 
@@ -321,7 +321,7 @@ Object.assign(EH.episodes.s03e02, {
   onEnd: g => {
     g.recap('Bree signed up for the Registry. It pays for Halina\'s pills. Bruno stopped in June.');
     g.recap('Catherine Pemberton invited Jules to Ravenscourt on the 19th. She signed it "Catherine," then crossed it out and wrote "Mother."');
-    if (g.f('mikey2')) g.recap(g.f('mikey2') === 'no' ? 'Mikey turned down the Registry detail.' : 'Mikey took the Registry wellness-check detail. It starts October 1.');
+    if (g.f('mikey_s3e2')) g.recap(g.f('mikey_s3e2') === 'no' ? 'Mikey turned down the Registry detail.' : 'Mikey took the Registry wellness-check detail. It starts October 1.');
     if (g.f('grace2')) g.recap('Grace is a scribe at the Registry clinic. There\'s a column in the files: O, R, H.');
     if (g.f('rae2') === 'truth') g.recap('You told Rae Delgado the truth in line. She walked away.'); else if (g.f('rae2') === 'ask') g.recap('Rae Delgado registered. She has your number.');
     g.recap(g.f('hugh2') === 'no' ? 'Hugh offered: register, and he\'d get Jules off the list. You said no.' : 'Hugh offered: register, and he\'d get Jules off the list.');
