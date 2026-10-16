@@ -336,7 +336,7 @@ Two kings.
 
 The flop is already out. King of spades. Four of hearts. Nine of diamonds. Three kings. You can\'t lose this hand. You couldn\'t lose it if you tried.
 
-Hugh is looking at you. Underneath the red face and the tie and the drinks, he\'s eleven minutes older than you and looking at you the way he looked at you when you were seven, on the day Gran first let you play, and he cried because you won all his peppermints.`,
+Hugh is looking at you. Underneath the red face and the tie and the drinks, he\'s nine minutes older than you and looking at you the way he looked at you when you were seven, on the day Gran first let you play, and he cried because you won all his peppermints.`,
     choices: [
       { text: 'Call. Win. It\'s what happens. It\'s what always happens.', tag: 'Call',
         check: { kind: 'pool', attr: 'nerve', skill: 'hustle', diff: 2, label: 'Take it', on: { crit: 'a2_hugh_call', success: 'a2_hugh_call', partial: 'a2_hugh_call', fail: 'a2_hugh_call', botch: 'a2_hugh_call' } } },
@@ -390,7 +390,7 @@ hugh: You never fold to me. You\'ve *never*—
 
 He grabs the pot with both hands like it might disappear. Then he stops, with the chips half pulled toward him, and looks at your cards, face down in the middle of the table, and you watch him think about turning them over.
 
-He doesn\'t. He\'s eleven minutes older, and he knows you, and he doesn\'t turn them over.
+He doesn\'t. He\'s nine minutes older, and he knows you, and he doesn\'t turn them over.
 
 hugh: …Thanks, Jubilee.
 

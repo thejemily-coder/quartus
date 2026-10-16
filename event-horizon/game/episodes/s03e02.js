@@ -58,7 +58,7 @@ Bree signs with her finger. It doesn\'t look like her name. She signs like someo
 
 LINDA: Welcome to the Registry, Bree. Saturday at ten. Bring someone, if you\'d like. A support person. Lots of people do.
 
-She smiles. It\'s a real smile. That\'s still the worst part.`,
+She smiles, and she means it.`,
       next: 'titles'
     },
 
@@ -86,7 +86,7 @@ nik: It was zero on the twenty-second. It\'s gone up every day. Two yesterday. L
 
 He scrolls. The number blinks. *20 of 61.*
 
-nik: *(very quietly)* And that\'s live.
+nik: *(barely)* And that\'s live.
 
 You watch it for a while. You don\'t know who number twenty is. Somebody with cold hands. Somebody who needed five hundred dollars more than they needed to not be on a list.
 
@@ -187,7 +187,7 @@ Not a long one. Six students. Seven. Standing the way people stand in line at th
 
 Behind the table: two nurses in navy polos. And a tall, golden, smiling sophomore from Penn in a Registry polo, who has crossed the city to work a table at Temple, who has a stack of glossy folders and a sign-up tablet, and who is very, very good at this.
 
-Hugh sees you. He lifts a folder a quarter of an inch.
+Hugh sees you. He taps the folder against the table, twice, and smiles.
 
 You keep walking. ${g.f('talk_s3e1') === 'weak' ? 'You keep walking fast, because one of the nurses has gray hair and a kind face and a tablet, and her name is Linda, and she wrote down a name on Carmen\'s stoop that wasn\'t yours.' : 'You keep walking.'}
 

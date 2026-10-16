@@ -24,7 +24,7 @@ Three things. Before Friday.`,
         { id: 'w2_bree', text: 'Port Richmond. Bree hasn\'t answered a text since the anniversary.', cost: 1, tag: 'Bree', go: 'a2_bree' },
         { id: 'w2_carmen', text: 'North 15th Street. Carmen said she\'d think. Jayden said it would get cold, and it did.', cost: 1, tag: 'Carmen', go: 'a2_carmen' },
         { id: 'w2_mikey', text: 'Mikey. He texted *we need to talk* and nothing else, which from Mikey is a siren.', cost: 1, tag: 'Mikey', go: 'a2_mikey' },
-        { id: 'w2_grace', text: 'Grace. She\'s a senior now, and she just posted a photo in scrubs. Navy scrubs.', cost: 1, tag: 'Grace', go: 'a2_grace' },
+        { id: 'w2_grace', text: 'Grace. She\'s back for a fifth year, and she just posted a photo in scrubs. Navy scrubs.', cost: 1, tag: 'Grace', go: 'a2_grace' },
         { id: 'w2_nik', text: 'Nik has been watching anniversary footage for two weeks. He says he found something. "Someone."', cost: 1, tag: 'Nik', go: 'a2_nik' }
       ],
       done: 'a3_table'
@@ -51,7 +51,7 @@ bree: I signed.
 
 You don\'t say anything. She looks at you like she expected you to.
 
-bree: Bruno stopped paying in June. For her pills. Everybody who works for him, all the Changed, they all went under the water when the war started. No calls. Phones off. Heck says the Circolo\'s shut. And the pills are eleven hundred dollars a month, Wawa, and if she misses them, her body kills the kidney. That\'s how it works. That\'s the whole math.
+bree: Bruno stopped paying in June. For her pills. Everybody who works for him, all the Changed, they all went under. Under the water, like my aunt says. No calls. Phones off. Heck says the Circolo\'s shut. And the pills are eleven hundred dollars a month, Wawa, and if she misses them, her body kills the kidney. That\'s how it works. That\'s the whole math.
 
 bree: The Registry pays for household meds. If I\'m a participant. So I\'m a participant.
 
@@ -70,7 +70,7 @@ bree: The lady said bring a support person. *(she doesn\'t look at you)* Lots of
 
   a2_bree_end: {
     loc: 'PORT RICHMOND · THE KOWALS\' STOOP',
-    text: g => `${g.f('bree2') === 'come' ? 'bree: *(after a while)* Okay.\n\nShe finally drinks some of the beer.\n\nbree: Teddy would\'ve hated this.\n\nsam: Teddy would\'ve come with you.\n\nbree: Yeah. *(she wipes her nose with her wrist)* Yeah. He would\'ve. In that stupid coat.' : 'bree: *Some other way.* Wawa. With what? With your pizza money? With the two hundred dollars you keep in a sock?\n\nShe stands up.\n\nbree: You don\'t get to tell me don\'t. Nobody gets to tell me don\'t. You never once had to pick between your aunt\'s kidney and your own name on a list.\n\nShe goes inside. The screen door bangs. A minute later, the light in the upstairs window goes on. She doesn\'t come back out.\n\nYour phone, ten minutes later, on the El:\n\nTXT bree: 10am saturday. building 1. come or dont'}`,
+    text: g => `${g.f('bree2') === 'come' ? 'bree: *(after a while)* Okay.\n\nShe finally drinks some of the beer.\n\nbree: Teddy would\'ve hated this.\n\nsam: Teddy would\'ve come with you.\n\nbree: Yeah. *(she wipes her nose with her wrist)* Yeah. He would\'ve. In that stupid coat.' : 'bree: *Some other way.* Wawa. With what? With your pizza money? With the two hundred dollars you keep in a sock?\n\nShe stands up.\n\nbree: You don\'t get to tell me don\'t. Nobody gets to tell me don\'t. You never once had to pick between somebody\'s kidney and your own name on a list.\n\nShe goes inside. The screen door bangs. A minute later, the light in the upstairs window goes on. She doesn\'t come back out.\n\nYour phone, ten minutes later, on the El:\n\nTXT bree: 10am saturday. building 1. come or dont'}`,
     next: '@hub'
   },
 
@@ -141,7 +141,7 @@ mikey: You tell me. What do you want me to do?`,
 
   a2_mikey_end: {
     loc: 'THE 3RD DISTRICT · 11TH & WHARTON',
-    text: g => `${g.f('mikey2') === 'yes' ? 'mikey: *(slowly)* Yeah. Yeah. Somebody\'s gotta be on the stoop who knows what he\'s looking at. Okay.\n\nHe folds the directive back into quarters.\n\nmikey: You owe me. For the rest of my life. You owe me the rest of my life, Sammy.' : g.f('mikey2') === 'no' ? 'mikey: *(slowly)* Yeah. Yeah, okay. Desk duty. Ma\'ll be thrilled. She\'s been praying for me to get desk duty since the academy.\n\nHe folds the directive back into quarters.\n\nmikey: Somebody else is gonna be on that stoop, Sammy. You know that. Somebody who doesn\'t know what he\'s looking at.' : 'Mikey looks at you for a long moment, like you said something in another language.\n\nmikey: Huh.\n\nsam: What?\n\nmikey: Nothing. You just never asked me that before. You always know what everybody should do.\n\nHe drinks his coffee. He thinks.\n\nmikey: I think I gotta be on the stoop. I think if I\'m not, I\'m gonna be sitting at a desk at the airport reading about it in the paper, and I\'m gonna hate myself. *(beat)* Yeah. I\'ll do it. My way.'}`,
+    text: g => `${g.f('mikey2') === 'yes' ? 'mikey: *(slowly)* Yeah. Yeah. Somebody\'s gotta be on the stoop who knows what he\'s looking at. Okay.\n\nHe folds the directive back into quarters.\n\nmikey: You owe me, Sammy. For the rest of your life.' : g.f('mikey2') === 'no' ? 'mikey: *(slowly)* Yeah. Yeah, okay. Desk duty. Ma\'ll be thrilled. She\'s been praying for me to get desk duty since the academy.\n\nHe folds the directive back into quarters.\n\nmikey: Somebody else is gonna be on that stoop, Sammy. You know that. Somebody who doesn\'t know what he\'s looking at.' : 'Mikey looks at you for a long moment, like you said something in another language.\n\nmikey: Huh.\n\nsam: What?\n\nmikey: Nothing. You just never asked me that before. You always know what everybody should do.\n\nHe drinks his coffee. He thinks.\n\nmikey: I think I gotta be on the stoop. I think if I\'m not, I\'m gonna be sitting at a desk at the airport reading about it in the paper, and I\'m gonna hate myself. *(beat)* Yeah. I\'ll do it. My way.'}`,
     next: '@hub'
   },
 
@@ -181,9 +181,7 @@ grace: I\'m going to find out what *administrative* means. Okay?
 
 sam: Grace—
 
-grace: Okay.
-
-It\'s a full sentence. It always was.`,
+grace: Okay.`,
     next: '@hub'
   },
 
@@ -218,8 +216,6 @@ He pulls up another window. The Registry\'s website. Under the counter, there\'s
 nik: She\'s not on it. And she\'s not in any of the Temple directories, or Drexel, or CCP, and I ran her face through three things that are illegal in Illinois.
 
 nik: Nothing. She doesn\'t exist, Salvatore.
-
-He only calls you that when he\'s scared.
 
 nik: Who stands in a stopped second and looks at you?`,
     next: '@hub'

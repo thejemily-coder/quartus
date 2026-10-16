@@ -38,9 +38,9 @@ TXT bree: i did teddy for a man with headphones in a building where you can see 
 
 You read it standing in the back of Ciro\'s, between the walk-in and the flour.
 
-TXT bree: dont answer. im fine. halinas pills are covered. thats the whole math
+TXT bree: dont answer. im fine. my aunts pills are covered
 
-You don\'t answer. She asked you not to. That\'s the worst part, that you\'re able to do what she asked.`,
+You don\'t answer. She asked you not to. It turns out you can do that.`,
     next: 'tag_ghost'
   },
 
@@ -72,7 +72,7 @@ She keeps walking. Through the opposite door. Gone.
 
 The whole thing took four seconds. You didn\'t need to count them.
 
-bree: *(very quietly)* Was that her?
+bree: *(under her breath)* Was that her?
 
 sam: That was her.
 
@@ -89,7 +89,7 @@ NURSE: Bree Kowal? We\'re ready for you.`,
     clock: { time: '10:20 AM' },
     text: `They let you come as far as the window.
 
-It\'s a recording booth. A real one, like a radio station: foam on the walls, a microphone on a boom, a window of double glass. On your side of the glass, a technician in a fleece vest with big headphones and a mixing board, who is genuinely, boyishly excited, who has clearly never been this excited about anything at work.
+It\'s a recording booth. A real one, like a radio station: foam on the walls, a microphone on a boom, a window of double glass. On your side of the glass, a technician in a fleece vest with big headphones and a mixing board, who is genuinely, boyishly excited.
 
 TECH: Okay, Bree. We\'re going to start easy. Can you read the card in front of you, in your own voice?
 
@@ -119,7 +119,7 @@ The technician\'s finger is on the record button. He hasn\'t noticed that she\'s
   a4_booth_end: {
     loc: 'BUILDING 1 · THE AUDIO SUITE',
     enter: g => { g.know('bree_intake2', ['sam', 'bree'], g.f('booth2') === 'nothing' ? 'At her intake, Bree pretended she could only do bad impressions. The technician was disappointed. She gave them nothing real.' : g.f('booth2') === 'some' ? 'At her intake, Bree gave the Registry a handful of celebrity voices and her own. Not Brannigan. Not Teddy.' : 'At her intake, Bree chose: she gave them everyone but Teddy. Then she did Brannigan, perfectly, into their own microphone, and asked if they recognized him.'); },
-    text: g => `${g.f('booth2') === 'nothing' ? `You shake your head. Barely. A quarter inch.
+    text: g => `${g.f('booth2') === 'nothing' ? `You shake your head. Barely.
 
 Bree looks back at the technician and smiles a big, dumb, embarrassed smile.
 
@@ -127,7 +127,7 @@ bree: Uh. I can do, like, a really bad Kermit?
 
 She does a really bad Kermit. It is genuinely terrible. Then a really bad Christopher Walken. Then she says she\'s sorry, she\'s nervous, she\'s not usually like this.
 
-The technician\'s face falls by degrees, like a kid on Christmas finding socks.
+The technician\'s face falls by degrees.
 
 TECH: No, no, that\'s— that\'s great. Totally normal. Lots of people have, you know. Variable presentation.
 
@@ -141,7 +141,7 @@ TECH: *(beaming, typing)* Amazing. Amazing. That\'s amazing.
 
 On his screen: *ECHO: CONFIRMED. HIGH FIDELITY. RANGE: RETEST.*` : `You don\'t move. You just look back at her.
 
-She looks at you for a long time. Then she nods, once, to herself.
+She holds your eyes. Then she nods, once, to herself.
 
 She does Morgan Freeman. The SEPTA announcer. Her aunt, scolding, in Polish. The technician is practically vibrating.
 
@@ -165,7 +165,7 @@ NURSE: And you\'re the support person? Since you\'re already here: were you near
 
 ${g.f('hugh2') === 'think' ? 'The folder from Hugh is in your backpack. *Front door.*' : ''}
 
-Bree, beside you, goes very still.`,
+Bree, beside you, stops breathing.`,
     choices: [
       { text: '"No, thanks. I was in South Philly that night." It isn\'t true. It doesn\'t have to be.', tag: 'No thanks',
         fx: g => { g.flag('register2', 'no'); }, go: 'a4_lobby_end' },
@@ -183,7 +183,7 @@ Bree, beside you, goes very still.`,
 
 Outside, in the parking lot, in the September sun, Bree walks fast to the bus stop with her hands jammed in her hoodie and doesn\'t talk until you\'re past the gate.
 
-bree: ${g.f('booth2') === 'nothing' ? 'A bad Kermit. I gave them a *bad Kermit*, Wawa.\n\nShe starts laughing. She can\'t stop. She laughs so hard she has to sit down on the curb at the bus stop.\n\nbree: Halina\'s pills are covered and I gave them a bad Kermit.' : g.f('booth2') === 'some' ? 'Gritty. I gave the evil science company Gritty.\n\nShe laughs. It cracks in the middle.\n\nbree: Halina\'s pills are covered. That\'s the whole math.' : 'I gave them Brannigan. In his own building.\n\nShe\'s shaking. She\'s grinning.\n\nbree: Teddy would\'ve *loved* that. *(the grin goes)* Teddy would\'ve loved that.'}
+bree: ${g.f('booth2') === 'nothing' ? 'A bad Kermit. I gave them a *bad Kermit*, Wawa.\n\nShe starts laughing. She can\'t stop. She laughs so hard she has to sit down on the curb at the bus stop.\n\nbree: My aunt\'s pills are covered and I gave them a bad Kermit.' : g.f('booth2') === 'some' ? 'Gritty. I gave the evil science company Gritty.\n\nShe laughs. It cracks in the middle.\n\nbree: My aunt\'s pills are covered. *(she wipes her eyes with the heel of her hand)* So.' : 'I gave them Brannigan. In his own building.\n\nShe\'s shaking. She\'s grinning.\n\nbree: Teddy would\'ve *loved* that. *(the grin goes)* Teddy would\'ve loved that.'}
 
 ${g.f('hugh2') === 'think' ? 'In your backpack, the folder from Hugh. You throw it in the trash can at the bus stop. Then you take it back out, because it has your name on the sticky note, and you tear the sticky note into very small pieces and throw *that* away.' : ''}`,
     next: 'tag_ghost'
@@ -197,7 +197,7 @@ ${g.f('hugh2') === 'think' ? 'In your backpack, the folder from Hugh. You throw 
 
 Achterberg has a fresh coffee. She sits down in the chair next to you, by the ferns, as though this is the most natural thing in the world, as though you\'re two people waiting for the same bus.
 
-ACHTERBERG: One question. I\'m honored.
+ACHTERBERG: One question. I\'ll hold you to that.
 
 ${g.f('hugh2') === 'think' || g.f('hugh2') === 'jules' ? 'sam: Hugh says if I register, he can get Jules moved off *Observe*.\n\nShe drinks her coffee.\n\nACHTERBERG: Hugh doesn\'t have that authority. Only I do.\n\nsam: And?\n\nACHTERBERG: And I won\'t. Not for a signature. I don\'t trade in people\'s daughters, Mr. Kearney. *(she sets the cup down)* I\'m sorry he told you that. He\'s young, and he wants very badly to be the one who fixes things. You\'d understand that better than anyone.' : 'sam: Why her? Out of sixty-one. Why is Jules the one you watch?\n\nShe drinks her coffee.\n\nACHTERBERG: That\'s two questions.\n\nsam: Same question.\n\nACHTERBERG: *(after a moment)* Because she\'s the only one who didn\'t *change* that night, Mr. Kearney. She was already like that. The night just turned the volume up.\n\nShe lets that land.\n\nACHTERBERG: I\'ve answered honestly. I always will. You might think about why that frightens you more than if I lied.'}
 
@@ -270,7 +270,7 @@ BRANNIGAN: She moved in the stutter.
 
 ANALYST: She moved in the stutter. Everyone else on that corner is two identical frames. *(she points at the boy)* Even ES-17. She isn\'t anybody.
 
-Brannigan looks at the frozen girl for a long time.
+Brannigan looks at the frozen girl.
 
 BRANNIGAN: Sixty-two.
 
