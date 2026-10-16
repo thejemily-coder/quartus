@@ -72,3 +72,20 @@ Write each episode to the save. The plan bends; the save doesn't.
   - Carmen is Puerto Rican and keeps a San Judas candle.
   - Gigi isn't in `sam_slip`.
   - The "Look inside" choice is a Slip.
+- **S3E2 "Outreach"** was written for the E1 save (Nerve, home, ask/letter, subway, talk WEAK so Linda has his face, Carmen choice, hand).
+  - **Cold open:** Linda at the Kowals' on Labor Day. Bruno stopped paying for Halina's pills in June, when his people went under. The Registry covers household transplant meds. **Bree signs.**
+  - **Act One:** Nik's public counter (19, then 20 of 61). Catherine's card: Ravenscourt, Sun Sep 19, with Constance. "Catherine" is crossed out and "Mother" written in. `card2`: read / careful / back. Jules: the pull "hasn't stopped." The Registry tent on Liacouras, with Hugh.
+  - **Hub (3 of 5):**
+    - Bree: she signed; Saturday's intake. `bree2`: come / dont.
+    - Carmen: a second pamphlet. Jayden's LEGO Broad Street with **the crack**.
+    - Mikey: PPD Directive 27-14, wellness-check assistance from Oct 1 in the 3rd/22nd/24th/25th/26th. `mikey2`: yes / no / his. On 'his' he takes the detail his way.
+    - Grace: a Registry scribe in Building 1. The **O / R / H** column, "administrative".
+    - Nik: the ghost girl moved in the stutter and is on no list (`ghost_girl`).
+  - **Act Three:** Rae Delgado (sophomore, Morgan Hall, pops lightbulbs). `rae2`: truth (she walks) / ask (she registers and has Sam's number) / walk.
+    - Hugh's offer: register, and he gets Jules off OBSERVE. On WEAK-talk saves **Hugh tells Linda Sam's real name.**
+    - `hugh2`: no ("She said you'd say that") / think (folder) / jules ("Then why hasn't she said anything to me?").
+  - **Act Four:** the Building 1 clinic. `intake2`: went / stayed (Bree gives them everything, including Teddy).
+    - Achterberg: "Mr. Kearney. Welcome."
+    - The booth, `booth2`: nothing (bad Kermit; ECHO LOW) / hers (everyone but Teddy, plus Brannigan into their mic) / some.
+    - `register2`: no / **yes** (needs hugh2 'think'; `registered`, participant #29) / ask (Achterberg: Hugh has no authority; "I don't trade in people's daughters." Otherwise: "She was already like that.").
+  - **Tag:** Building 7 Recovery Ops. The ghost girl matches none of the 61. "There were sixty-two people in that door." "Find her."

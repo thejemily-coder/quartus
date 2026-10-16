@@ -32867,6 +32867,930 @@ Object.assign(EH.episodes.s03e01, {
   }
 });
 
+/* s03e02.js */
+/* S3 · E2 · OUTREACH, part 1 of 4: meta, cold open, Act One ("Add/Drop"). */
+EH.episode({
+  id: 's03e02', season: 3, number: 2, title: 'Outreach', look: 's3',
+  cast: ['sam', 'jules', 'nik', 'bree', 'heck', 'grace', 'mikey', 'carmen', 'jayden', 'hugh', 'simone'],
+  start: 'cold_open',
+  xp: 6,
+  previously: g => [
+    'On the anniversary, the City and Halcyon opened the Broad Street Exposure Registry. Free care. Five hundred dollars. Jules\'s mother stood at the podium.',
+    g.f('wellness1') === 'talk' && g.f('talk_s3e1') === 'weak' ? 'On Carmen\'s stoop, you gave the Registry nurse a fake name. She took your face anyway. "We have a lot of days."' : 'Registry outreach came to Carmen\'s door for Jayden.',
+    g.f('mother1') === 'ask' ? 'Jules decided to write her mother a letter. "She can\'t interrupt a letter."' : g.f('mother1') === 'call' ? 'Jules called her mother. "Are you cold, Juliet?"' : 'Jules didn\'t call her mother. "She can have tomorrow."',
+    'At 11:51:04, one year later, every clock in North Philadelphia said four twice.',
+    'Catherine Pemberton found her daughter in the Registry. Handler: H. Pemberton.'
+  ],
+  scenes: {
+
+    /* ================= COLD OPEN ================= */
+    cold_open: {
+      card: { kind: 'cold' },
+      loc: 'PORT RICHMOND · THE KOWALS\' KITCHEN',
+      clock: { day: 'Mon', date: 'Sep 6', time: '6:15 PM' },
+      text: `> THE CAMERA.
+
+Labor Day in Port Richmond. Somebody on the block is grilling kielbasa. The Kowals\' kitchen has the window open and a fan going and a stack of mail on the table, most of it from Jefferson Hospital, most of it with the word *BALANCE* on it in red.
+
+Halina Kowal sits at the table in a housecoat with her new kidney and her pill organizer. Seven compartments. Morning and night. Fourteen little doors.
+
+Across from her, a gray-haired woman in a navy polo shirt that says *BROAD STREET REGISTRY* over the heart, with a tote bag and a tablet. Her lanyard says *LINDA*. She has been offered tea and accepted it, which in this kitchen is a kind of passport.
+
+LINDA: The medication assistance program covers transplant medications for household members of registered participants. Tacrolimus. Mycophenolate. All of it. No copay.
+
+HALINA: Eleven hundred dollars a month.
+
+LINDA: *(gently)* Not anymore.
+
+Halina looks at the pill organizer. She opens the Monday-night door and closes it again.
+
+HALINA: The Italian was paying. Since the spring. Then in June, he stopped answering. Everybody who works for him, they don\'t answer anymore. Like they all went under the water.
+
+LINDA: I\'m so sorry.
+
+HALINA: Don\'t be sorry. Be specific. What do you want from my niece?
+
+Bree is in the doorway to the living room with her arms folded. She hasn\'t said a word since Linda came in.
+
+LINDA: Just an intake. An hour at the clinic. A few questions. Some tests. Your niece was near Broad Street that night, Mrs. Kowal. We\'d like to make sure she\'s all right.
+
+HALINA: *(to Bree, in Polish, sharp)* Well?
+
+Bree looks at the pill organizer. At the stack of red *BALANCE* envelopes. At the empty square on the linoleum where the dialysis machine used to sit.
+
+She unfolds her arms.
+
+bree: Give me the pen.
+
+LINDA: Oh, it\'s a tablet, honey. You just sign with your finger.
+
+Bree signs with her finger. It doesn\'t look like her name. She signs like someone trying to look like they don\'t care.
+
+LINDA: Welcome to the Registry, Bree. Saturday at ten. Bring someone, if you\'d like. A support person. Lots of people do.
+
+She smiles. It\'s a real smile. That\'s still the worst part.`,
+      next: 'titles'
+    },
+
+    titles: { card: { kind: 'title' }, next: 'a1_tuesday' },
+
+    /* ================= ACT ONE: ADD/DROP ================= */
+    a1_tuesday: {
+      card: { kind: 'act', label: 'Act One', title: 'Add/Drop' },
+      loc: '1300 RESIDENCE HALL · 7-07',
+      clock: { day: 'Tue', date: 'Sep 7', time: '7:40 AM' },
+      enter: g => { g.sleep(8); g.know('registry_counter', ['sam', 'nik'], 'The Registry\'s public website has a live counter: REGISTERED PARTICIPANTS. It started at 0 on Aug 22. By Sep 7 it says 19 of 61.'); },
+      text: g => `The second week of sophomore year. Add/drop ends Friday. You\'ve added nothing and dropped nothing, and your schedule is a list of rooms you can\'t find.
+
+Nik is at the card table with his four monitors, eating dry Cheerios out of a mug, watching a number.
+
+nik: Nineteen.
+
+sam: Nineteen what?
+
+He turns a monitor toward you. The Registry\'s website. Clean, blue, the little kingfisher. A photo of smiling nurses. And in the corner, a counter, like a donation thermometer, like the ones on telethons.
+
+*REGISTERED PARTICIPANTS: 19 of 61.*
+
+nik: It was zero on the twenty-second. It\'s gone up every day. Two yesterday. Labor Day, bro. People spent Labor Day registering.
+
+He scrolls. The number blinks. *20 of 61.*
+
+nik: *(very quietly)* And that\'s live.
+
+You watch it for a while. You don\'t know who number twenty is. Somebody with cold hands. Somebody who needed five hundred dollars more than they needed to not be on a list.
+
+${g.f('mother1') === 'ask' ? 'Your phone buzzes.\n\nTXT jules: she wrote back\nTXT jules: by COURIER. a man in a hat just handed it to simone. simone signed for it like it was a summons\nTXT jules: come up. please. i don\'t want to open it alone. i also don\'t want anyone else to open it. i want you to sit there while i open it' : g.f('mother1') === 'call' ? 'Your phone buzzes.\n\nTXT jules: she came to campus. like i said she would. she stood in the lobby of 1300 in the cream jacket for two hours yesterday. the RA asked her to leave\nTXT jules: she left a card at the desk\nTXT jules: come up. please. i haven\'t opened it' : 'Your phone buzzes.\n\nTXT jules: i called her. like i said i would\nTXT jules: she didn\'t pick up on the second ring. she didn\'t pick up at all. she sent a card by courier instead\nTXT jules: come up. please. i haven\'t opened it'}`,
+      next: 'a1_card'
+    },
+
+    a1_card: {
+      loc: '1300 RESIDENCE HALL · 11-03',
+      clock: { time: '7:55 AM' },
+      enter: g => { g.know('catherine_invite2', ['sam', 'jules'], 'Catherine\'s card to Jules: "I would like to talk. Not about the Registry. About us. Ravenscourt, Sunday the 19th. Your grandmother will be there. I think she should be." Signed "Mother." Under it, crossed out but readable: "Catherine."'); },
+      text: g => `Jules and Simone\'s apartment is on eleven and is already, in two weeks, nicer than anywhere you\'ve ever lived. There are plants. There is a rug. Simone has hung a framed playbill in the bathroom.
+
+simone: *(from the kitchenette, not looking up)* Salvatore. She\'s on the bed. She\'s been holding it for twenty minutes like a live grenade. Do something.
+
+Jules is cross-legged on her bed with a heavy cream envelope in both hands. The handwriting on it is perfect. *Juliet.*
+
+${g.f('mother1') === 'ask' ? 'jules: I sent the letter on the twenty-fourth. Eleven pages. I used both sides. My mother taught me never to use both sides, so I used both sides.' : ''}
+
+She hands it to you.
+
+jules: You open it. You read it first. Then tell me if I should.
+
+You open it. One card. Same perfect hand. Short.
+
+*Juliet,*
+
+*${g.f('mother1') === 'ask' ? 'I have read your letter four times. You were right that I could not interrupt it. I tried.' : 'I have started this card eleven times.'}*
+
+*I would like to talk. Not about the Registry. About us, and about what I did not know, and what I should have known.*
+
+*Ravenscourt. Sunday the 19th. Dinner. Your grandmother will be there. I think she should be.*
+
+*Mother*
+
+And under that, crossed out with a single neat line, but not so hard you can\'t read it: *Catherine.*
+
+She signed her name first. Then she crossed it out and wrote *Mother*.
+
+You look up. Jules is watching your face.
+
+jules: Well?`,
+      choices: [
+        { text: '"Read it. It\'s okay. It\'s... actually okay. She crossed out her own name, Jules."', tag: 'Read it',
+          fx: g => { g.flag('card2', 'read'); g.bond('jules', { trust: 1 }); }, go: 'a1_card_end' },
+        { text: '"She wants you at Ravenscourt with Constance. On her ground. Read it, but read it carefully."', tag: 'Careful',
+          fx: g => { g.flag('card2', 'careful'); g.bond('jules', { respect: 1 }); }, go: 'a1_card_end' },
+        { text: 'Hand it back unopened, almost. "I\'m not going to tell you. You\'re going to want to read this one yourself."', tag: 'Hand it back',
+          fx: g => { g.flag('card2', 'back'); g.bond('jules', { trust: 1, respect: 1 }); g.hidden('revenant_drift', -0.5); }, go: 'a1_card_end' }
+      ]
+    },
+
+    a1_card_end: {
+      loc: '1300 RESIDENCE HALL · 11-03',
+      text: g => `She reads it. Twice. Her thumb stops on the crossed-out *Catherine*.
+
+jules: She\'s never done that. Crossed out. My mother doesn\'t cross out. She writes it right the first time or she throws away the card and starts over. She had a *box* of cards.
+
+jules: She left this one. On purpose. So I\'d see.
+
+She puts the card on her nightstand, standing up, the way you\'d put a photo.
+
+jules: The nineteenth. *(she looks at you)* ${g.f('card2') === 'careful' ? 'You\'re right. It\'s her ground. And Gran\'s. I\'ll go anyway. I\'m going to go and be very, very careful.' : 'I\'m going to go.'}
+
+jules: I don\'t think you can come to this one.
+
+sam: I know.
+
+jules: I want you to. I want you in the car outside like a getaway driver. But I think she has to say whatever she has to say to just me.
+
+From the kitchenette, Simone:
+
+simone: For the record, I\'m available as a getaway driver. I have a learner\'s permit and an enormous amount of confidence.
+
+On your way out, Jules catches your hand at the door.
+
+jules: Sam. Since the corner. Since 11:51. ${g.f('corner1') === 'hand' ? 'The thing that pulled on me. Under the street. It hasn\'t stopped. It\'s just quieter. Like a tide that\'s always going out a little.' : 'Something under the street pulled on me. It hasn\'t stopped. It\'s just quieter.'}
+
+jules: I didn\'t want to put it in a text.
+
+She lets go.`,
+      next: 'a1_walk'
+    },
+
+    a1_walk: {
+      loc: 'LIACOURAS WALK',
+      clock: { time: '10:50 AM' },
+      enter: g => { g.know('registry_table', ['sam'], 'There is a Registry outreach table on Liacouras Walk at Temple, under a blue pop-up tent, between the a cappella group and the club that gives out free pancakes. Students line up for it.'); },
+      text: g => `Liacouras Walk at ten to eleven on a Tuesday. The spine of campus. Every club in the university has a folding table out for the second week, and every one of them is yelling.
+
+Free pancakes. An a cappella group doing a Beyoncé song badly. The Ski Club, in September. The Young Republicans, at a table nobody is standing near.
+
+And between the pancakes and the a cappella, under a blue pop-up tent with a kingfisher on it: *BROAD STREET REGISTRY · WERE YOU ON CAMPUS AUG 22, 2026? YOU MAY BE ELIGIBLE.*
+
+There\'s a line.
+
+Not a long one. Six students. Seven. Standing the way people stand in line at the clinic, not looking at each other. One of them is wearing gloves. It\'s eighty-four degrees.
+
+Behind the table: two nurses in navy polos. And a tall, golden, smiling sophomore from Penn in a Registry polo, who has crossed the city to work a table at Temple, who has a stack of glossy folders and a sign-up tablet, and who is very, very good at this.
+
+Hugh sees you. He lifts a folder a quarter of an inch.
+
+You keep walking. ${g.f('talk_s3e1') === 'weak' ? 'You keep walking fast, because one of the nurses has gray hair and a kind face and a tablet, and her name is Linda, and she wrote down a name on Carmen\'s stoop that wasn\'t yours.' : 'You keep walking.'}
+
+You get to the corner of 13th before you let yourself breathe.
+
+The week has five days in it. You can\'t be everywhere.`,
+      next: 'a2_week'
+    }
+  }
+});
+
+/* s03e02b.js */
+/* S3 · E2 · OUTREACH, part 2 of 4: Act Two ("The Week"). */
+EH.scenes('s03e02', {
+
+  /* ================= ACT TWO: THE WEEK ================= */
+  a2_week: {
+    card: { kind: 'act', label: 'Act Two', title: 'The Week' },
+    loc: '1300 RESIDENCE HALL · 7-07',
+    clock: { day: 'Tue', date: 'Sep 7', time: '9:00 PM' },
+    text: g => `Tuesday night. Nik\'s counter says *22 of 61*.
+
+You have classes. You have a delivery shift at Ciro\'s Thursday and Saturday. You have a girlfriend going to Ravenscourt in twelve days, and a city that is quietly signing its name on a tablet, one cold pair of hands at a time.
+
+Three things. Before Friday.`,
+    next: 'a2_hub'
+  },
+
+  a2_hub: {
+    loc: '1300 RESIDENCE HALL · 7-07',
+    text: 'Wednesday, Thursday, Friday. Three things.',
+    hub: {
+      slots: 3, label: 'The second week',
+      blurb: 'The counter keeps going up.',
+      options: [
+        { id: 'w2_bree', text: 'Port Richmond. Bree hasn\'t answered a text since the anniversary.', cost: 1, tag: 'Bree', go: 'a2_bree' },
+        { id: 'w2_carmen', text: 'North 15th Street. Carmen said she\'d think. Jayden said it would get cold, and it did.', cost: 1, tag: 'Carmen', go: 'a2_carmen' },
+        { id: 'w2_mikey', text: 'Mikey. He texted *we need to talk* and nothing else, which from Mikey is a siren.', cost: 1, tag: 'Mikey', go: 'a2_mikey' },
+        { id: 'w2_grace', text: 'Grace. She\'s a senior now, and she just posted a photo in scrubs. Navy scrubs.', cost: 1, tag: 'Grace', go: 'a2_grace' },
+        { id: 'w2_nik', text: 'Nik has been watching anniversary footage for two weeks. He says he found something. "Someone."', cost: 1, tag: 'Nik', go: 'a2_nik' }
+      ],
+      done: 'a3_table'
+    }
+  },
+
+  a2_bree: {
+    loc: 'PORT RICHMOND · THE KOWALS\' STOOP',
+    clock: { day: 'Wed', date: 'Sep 8', time: '7:30 PM' },
+    enter: g => { g.flag('bree2_visit'); g.bond('bree', { trust: 1 }); g.know('bree_registered', ['sam', 'bree'], 'Bree signed up for the Registry on Labor Day. The Registry pays household members\' transplant meds. Bruno stopped paying for Halina\'s pills in June, when his people went to ground. Bree\'s intake is Saturday at ten at the Navy Yard clinic.'); },
+    text: `Bree is on the stoop in Port Richmond with a Yuengling she isn\'t drinking, watching the El go by at the end of the block.
+
+She sees you coming and doesn\'t get up.
+
+bree: Wawa.
+
+sam: You stopped answering.
+
+bree: I stopped answering a lot of people.
+
+You sit down a step below her. The El goes by again. She waits for it to pass.
+
+bree: I signed.
+
+You don\'t say anything. She looks at you like she expected you to.
+
+bree: Bruno stopped paying in June. For her pills. Everybody who works for him, all the Changed, they all went under the water when the war started. No calls. Phones off. Heck says the Circolo\'s shut. And the pills are eleven hundred dollars a month, Wawa, and if she misses them, her body kills the kidney. That\'s how it works. That\'s the whole math.
+
+bree: The Registry pays for household meds. If I\'m a participant. So I\'m a participant.
+
+She turns the bottle in her hands.
+
+bree: Saturday. Ten. The Navy Yard. *(she laughs, not really)* The Navy Yard. Where Teddy died. On the steps of a building I can see from the parking lot.
+
+bree: The lady said bring a support person. *(she doesn\'t look at you)* Lots of people do.`,
+    choices: [
+      { text: '"I\'ll be there. Ten o\'clock. Support person."', tag: 'I\'ll come',
+        fx: g => { g.flag('bree2', 'come'); g.bond('bree', { affection: 2, trust: 1 }); }, go: 'a2_bree_end' },
+      { text: '"Don\'t go, Bree. We\'ll figure out the money. Some other way."', tag: 'Don\'t go',
+        fx: g => { g.flag('bree2', 'dont'); g.bond('bree', { tension: 2 }); g.hidden('revenant_drift', 0.5); }, go: 'a2_bree_end' }
+    ]
+  },
+
+  a2_bree_end: {
+    loc: 'PORT RICHMOND · THE KOWALS\' STOOP',
+    text: g => `${g.f('bree2') === 'come' ? 'bree: *(after a while)* Okay.\n\nShe finally drinks some of the beer.\n\nbree: Teddy would\'ve hated this.\n\nsam: Teddy would\'ve come with you.\n\nbree: Yeah. *(she wipes her nose with her wrist)* Yeah. He would\'ve. In that stupid coat.' : 'bree: *Some other way.* Wawa. With what? With your pizza money? With the two hundred dollars you keep in a sock?\n\nShe stands up.\n\nbree: You don\'t get to tell me don\'t. Nobody gets to tell me don\'t. You never once had to pick between your aunt\'s kidney and your own name on a list.\n\nShe goes inside. The screen door bangs. A minute later, the light in the upstairs window goes on. She doesn\'t come back out.\n\nYour phone, ten minutes later, on the El:\n\nTXT bree: 10am saturday. building 1. come or dont'}`,
+    next: '@hub'
+  },
+
+  a2_carmen: {
+    loc: 'NORTH 15TH STREET · CARMEN\'S LIVING ROOM',
+    clock: { day: 'Wed', date: 'Sep 8', time: '5:00 PM' },
+    enter: g => { g.bond('carmen', { trust: 1 }); g.bond('jayden', { affection: 1 }); g.know('carmen_waiting2', ['sam', 'carmen'], 'Carmen hasn\'t called the Registry. The pamphlet is still on top of the TV. A Registry nurse came back Tuesday and left a second pamphlet.'); },
+    text: g => `Carmen\'s living room. The plastic on the couch squeaks when you sit. ${g.f('carmen1') === 'truth' ? 'The first pamphlet burned in the San Judas candle. There\'s a new one on top of the TV now.' : 'The pamphlet is still on top of the TV under San Judas. There\'s a second one next to it now.'}
+
+carmen: They came back Tuesday. The nice one. She left another one. She said *any time* again. She says *any time* like a person who means *soon*.
+
+Jayden is on the floor with a box of LEGO, building something long and flat and gray.
+
+sam: What is it, bud?
+
+jayden: Broad Street.
+
+He shows you. A long gray road of flat LEGO tiles, all the way across the rug, with a yellow line down the middle. Little cars. A bus.
+
+Down the yellow line, he has laid a row of clear pieces. Transparent studs, one after another, glinting.
+
+sam: What\'s that?
+
+jayden: *(like it\'s obvious)* The crack.
+
+You go very still.
+
+jayden: It\'s in the middle. It goes all the way down. It\'s got light in it. I can feel it when we drive on Broad. Abuela doesn\'t like when I say.
+
+Carmen crosses herself without looking up from her novela.
+
+jayden: It\'s bigger than last year.`,
+    next: '@hub'
+  },
+
+  a2_mikey: {
+    loc: 'THE 3RD DISTRICT · 11TH & WHARTON',
+    clock: { day: 'Thu', date: 'Sep 9', time: '6:30 AM' },
+    enter: g => { g.know('ppd_registry', ['sam', 'mikey'], 'A PPD directive, effective October 1: patrol officers will "assist Registry outreach staff with wellness checks on request." Mikey\'s district gets the pilot. Mikey has to decide whether he\'ll do it.'); g.bond('mikey', { trust: 1 }); },
+    text: `Mikey meets you in the 3rd District parking lot at 6:30 in the morning, before roll call, with two coffees from the Wawa on Passyunk and a sheet of paper folded in quarters.
+
+He hands you the paper without a word.
+
+*POLICE DEPARTMENT · CITY OF PHILADELPHIA · DIRECTIVE 27-14.* *Effective October 1. Patrol officers will assist Broad Street Registry outreach staff with residential wellness checks upon request. Pilot program: 3rd, 22nd, 24th, 25th, 26th Districts.*
+
+You read it twice.
+
+mikey: That\'s my district. That\'s Carmen\'s district. That\'s Kensington, that\'s Port Richmond. They picked every district one of yours lives in, Sammy. They didn\'t pick Chestnut Hill.
+
+He drinks his coffee.
+
+mikey: I told you. Next it\'s cops.
+
+sam: What are you going to do?
+
+mikey: I don\'t know. That\'s why I\'m here at six in the morning instead of sleeping. *(he looks at you)* If I say no, they move me. Desk. Or the airport. Somewhere I can\'t see nothing. If I say yes, I\'m the cop standing behind the nurse on Carmen\'s stoop.
+
+mikey: You tell me. What do you want me to do?`,
+    choices: [
+      { text: '"Say yes. Be the cop on the stoop. Be the one who makes sure nobody gets taken."', tag: 'Say yes',
+        fx: g => { g.flag('mikey2', 'yes'); g.bond('mikey', { respect: 1 }); g.know('mikey_inside2', ['sam', 'mikey'], 'Mikey will take the Registry wellness-check detail, so he can be on the stoops when it happens.'); }, go: 'a2_mikey_end' },
+      { text: '"Say no. Don\'t let them make you that guy. Not for this."', tag: 'Say no',
+        fx: g => { g.flag('mikey2', 'no'); g.bond('mikey', { affection: 1 }); g.hidden('revenant_drift', 0.5); }, go: 'a2_mikey_end' },
+      { text: '"I can\'t decide that for you, Mikey. You\'re the cop. What do *you* think?"', tag: 'Your call',
+        fx: g => { g.flag('mikey2', 'his'); g.bond('mikey', { respect: 2, trust: 1 }); g.hidden('revenant_drift', -1); }, go: 'a2_mikey_end' }
+    ]
+  },
+
+  a2_mikey_end: {
+    loc: 'THE 3RD DISTRICT · 11TH & WHARTON',
+    text: g => `${g.f('mikey2') === 'yes' ? 'mikey: *(slowly)* Yeah. Yeah. Somebody\'s gotta be on the stoop who knows what he\'s looking at. Okay.\n\nHe folds the directive back into quarters.\n\nmikey: You owe me. For the rest of my life. You owe me the rest of my life, Sammy.' : g.f('mikey2') === 'no' ? 'mikey: *(slowly)* Yeah. Yeah, okay. Desk duty. Ma\'ll be thrilled. She\'s been praying for me to get desk duty since the academy.\n\nHe folds the directive back into quarters.\n\nmikey: Somebody else is gonna be on that stoop, Sammy. You know that. Somebody who doesn\'t know what he\'s looking at.' : 'Mikey looks at you for a long moment, like you said something in another language.\n\nmikey: Huh.\n\nsam: What?\n\nmikey: Nothing. You just never asked me that before. You always know what everybody should do.\n\nHe drinks his coffee. He thinks.\n\nmikey: I think I gotta be on the stoop. I think if I\'m not, I\'m gonna be sitting at a desk at the airport reading about it in the paper, and I\'m gonna hate myself. *(beat)* Yeah. I\'ll do it. My way.'}`,
+    next: '@hub'
+  },
+
+  a2_grace: {
+    loc: 'THE BELL TOWER',
+    clock: { day: 'Thu', date: 'Sep 9', time: '4:00 PM' },
+    enter: g => { g.flag('grace2'); g.bond('grace', { trust: 1, respect: 1 }); g.know('grace_registry', ['sam', 'grace'], 'Grace took a paid job as a medical scribe at the Registry clinic at the Navy Yard, Building 1, three days a week. For her med school applications. She has seen intake files.'); },
+    text: `Grace is sitting on the steps of the Bell Tower in navy scrubs, eating a granola bar, with an MCAT prep book on her knee and the face of someone who has slept four hours a night since 2023.
+
+The scrubs have a little kingfisher over the pocket.
+
+grace: Don\'t.
+
+sam: I didn\'t say anything.
+
+grace: Your face said everything. Sit down. Okay.
+
+You sit.
+
+grace: It\'s a scribe job. I type what the doctor says while the doctor says it. It pays nineteen an hour, which is more than the RA job, and it\'s clinical hours, which I need, and it\'s the Navy Yard, which is on the Broad Street Line. That\'s why.
+
+She takes a bite of the granola bar.
+
+grace: That\'s the official why.
+
+sam: What\'s the unofficial why?
+
+She doesn\'t answer for a while.
+
+grace: I measured your hair for a year. I measured your gums. I did the math on your shins with a library textbook and a magnifying glass. And I never got to see a *file*. *(she looks at you)* Now I see files, Sam. Every day. Intake forms. Cold extremities. Lost time. Bone density. They\'re measuring the same things I measured on you. They\'re just better at it.
+
+grace: And there are things in the files that aren\'t medical. There\'s a column. It\'s just letters. *O*, *R*, and *H*. I asked what they meant. The doctor said *administrative*.
+
+She finishes the granola bar.
+
+grace: I\'m going to find out what *administrative* means. Okay?
+
+sam: Grace—
+
+grace: Okay.
+
+It\'s a full sentence. It always was.`,
+    next: '@hub'
+  },
+
+  a2_nik: {
+    loc: '1300 RESIDENCE HALL · 7-07',
+    clock: { day: 'Fri', date: 'Sep 10', time: '1:00 AM' },
+    enter: g => { g.flag('nik_ghost2'); g.bond('nik', { trust: 1 }); g.know('ghost_girl', ['sam', 'nik'], 'On the anniversary, a girl in a black hoodie stood on the northwest corner of Broad and Spring Garden. Nik\'s footage: at 11:51:04, in the stuttered second, she\'s the only person on any camera who moves. She walked away up Spring Garden. She isn\'t on the Registry counter\'s photo wall.'); },
+    text: g => `One in the morning. Nik hasn\'t slept. Nik has, by your count, consumed four Celsius and a sleeve of Thin Mints from a freezer he isn\'t allowed to have.
+
+nik: Okay. Okay okay okay. Sit. Watch. Don\'t talk.
+
+The bank camera at Broad and Spring Garden. The anniversary. 11:51:00.
+
+${g.f('corner1') === 'hand' ? 'You can see yourself in the corner of the frame, holding Jules\'s hand.' : 'You can see yourself in the corner of the frame.'}
+
+nik: Okay. Here\'s the stutter. The second that happened twice. Every camera I have records it as two frames that are the same. Identical. Pixel for pixel. Because everything was stopped. Right?
+
+He clicks forward one frame. Then back. Then forward.
+
+nik: Except her.
+
+Northwest corner. A girl in a black hoodie, alone, hands out of her pockets.
+
+In the first frame, she\'s looking at the bank clock.
+
+In the second frame, the identical second, she\'s looking at *you*.
+
+nik: She moved, bro. In a second when nobody moved. Nobody. Not even— *(he stops himself)* Not even anybody.
+
+He pulls up another window. The Registry\'s website. Under the counter, there\'s a photo wall: *OUR PARTICIPANTS*, with smiling faces, the ones who agreed to share.
+
+nik: She\'s not on it. And she\'s not in any of the Temple directories, or Drexel, or CCP, and I ran her face through three things that are illegal in Illinois.
+
+nik: Nothing. She doesn\'t exist, Salvatore.
+
+He only calls you that when he\'s scared.
+
+nik: Who stands in a stopped second and looks at you?`,
+    next: '@hub'
+  }
+});
+
+/* s03e02c.js */
+/* S3 · E2 · OUTREACH, part 3 of 4: Act Three ("The Table"). */
+EH.scenes('s03e02', {
+
+  /* ================= ACT THREE: THE TABLE ================= */
+  a3_table: {
+    card: { kind: 'act', label: 'Act Three', title: 'The Table' },
+    loc: 'LIACOURAS WALK',
+    clock: { day: 'Fri', date: 'Sep 10', time: '12:15 PM' },
+    enter: g => { g.know('rae', ['sam'], 'Rae Delgado, a Temple sophomore, one of the 61. When she\'s frightened, lightbulbs near her pop. She was in line at the Registry table on Liacouras Walk on Sep 10.'); },
+    text: `Friday. Add/drop ends at five. You cut across Liacouras Walk to get to the registrar before it closes.
+
+The Registry tent is still there between the pancakes and the a cappella. The line is longer. Eleven people.
+
+Above the pancake table, there\'s a string of cheap white café lights hung from the tent poles, the kind every club buys from the same website.
+
+*Pop.*
+
+One of them goes dark. A little puff of glass, like a soap bubble.
+
+Nobody notices. The pancake kids are flipping pancakes.
+
+You notice, because you\'ve been noticing things for a year.
+
+*Pop.*
+
+Another one. Closer to the Registry tent.
+
+Fourth in line, a girl in a Temple Owls cap and a backpack with a broken zipper, holding her own elbows. Every time the line shuffles forward a step, she flinches. And every time she flinches, a bulb goes.
+
+*Pop.*
+
+She sees it. She looks up at the dead bulbs and then down at her own hands like they belong to someone else, and she pulls her cap down over her eyes.
+
+She\'s two people from the front. The nurse at the tablet is smiling.`,
+    choices: [
+      { text: 'Get in line behind her. Talk to her, quietly. Tell her what you know about where that tablet goes.', tag: 'Tell her',
+        fx: g => { g.flag('rae2', 'truth'); g.know('rae_truth2', ['sam', 'rae'], 'Sam told Rae Delgado, in line, what the Registry really is: Halcyon, beds, numbers.'); g.hidden('halcyon_heat', 1); }, go: 'a3_rae' },
+      { text: 'Get in line behind her. Ask her what she wants. Don\'t tell her what to do.', tag: 'Ask her',
+        fx: g => { g.flag('rae2', 'ask'); g.hidden('revenant_drift', -0.5); }, go: 'a3_rae' },
+      { text: 'Keep walking. It\'s her line. It\'s her name. You can\'t stand in front of every tablet in Philadelphia.', tag: 'Keep walking',
+        fx: g => { g.flag('rae2', 'walk'); }, go: 'a3_hugh' }
+    ]
+  },
+
+  a3_rae: {
+    loc: 'LIACOURAS WALK · THE LINE',
+    text: g => `You get in line behind her. Up close she\'s shaking, a little, a fine tremor in her hands, like she\'s been cold for a year. Because she has.
+
+sam: Hey. The lights.
+
+She turns around so fast her backpack hits you.
+
+RAE: I didn\'t— that wasn\'t—
+
+sam: I know. It\'s okay. *(quieter)* It\'s okay. I\'m cold too.
+
+She looks at your hands. She looks at your face. Something in hers goes loose.
+
+RAE: Rae. Delgado. I live in Morgan. I was at the concert. On the Walk. *(she laughs, horribly)* I went to a *concert*.
+
+${g.f('rae2') === 'truth' ? `You tell her. Fast and low, with the line shuffling forward. Not everything. A building at the Navy Yard. Beds with numbers. People who went in for a checkup and didn\'t come out for months.
+
+Her face goes gray.
+
+RAE: But they\'re *nurses*.
+
+sam: Some of them are real nurses. That\'s the worst part.
+
+The line moves. She\'s next. The nurse at the tablet smiles at her.
+
+*Pop.* A bulb over the Registry tent itself. The nurse looks up, puzzled.
+
+Rae looks at the tablet. Then at you.
+
+Then she steps out of the line and walks away fast, toward Morgan, with her cap down, and doesn\'t look back. Halfway there, she turns around and walks backward three steps and mouths at you: *Thank you.*` : `sam: What do you want?
+
+RAE: *(like nobody\'s ever asked)* I want it to stop. I want to go one week without breaking a light. I broke my mom\'s chandelier at Easter. I want somebody to tell me what\'s *wrong* with me.
+
+sam: And you think they will?
+
+RAE: I think they\'re the only ones offering.
+
+The line moves. She\'s next.
+
+She looks at you. She\'s waiting for you to tell her not to. You don\'t.
+
+sam: Then here. *(you take her phone out of her hand, gently, and put your number in it)* Whatever happens in there. Whatever they say. You call me after.
+
+She looks at the number. *SAM. COLD TOO.*
+
+She steps up to the tablet. She signs with her finger. The nurse beams.
+
+Nik\'s counter, later that afternoon, will say *27 of 61*. One of those is Rae. She texts you at 4:10: *they were really nice. i have an intake tuesday. thank u for not making me feel stupid*`}`,
+    enter: g => { if (g.f('rae2') === 'ask') { g.flag('rae_registered'); g.know('rae_number', ['sam', 'rae'], 'Rae Delgado registered on Sep 10. She has Sam\'s number, saved as "SAM. COLD TOO." Her intake is Tuesday.'); } },
+    next: 'a3_hugh'
+  },
+
+  a3_hugh: {
+    loc: 'LIACOURAS WALK · THE REGISTRY TENT',
+    clock: { time: '12:30 PM' },
+    enter: g => { g.know('hugh_offer2', ['sam', 'hugh'], 'Hugh, at the Registry tent: "Register. Voluntarily. Walk in the front door Saturday. And I get Jubilee moved off OBSERVE. Off the list."'); if (g.f('talk_s3e1') === 'weak') g.know('linda_name', ['sam'], 'Hugh told Nurse Linda Sam\'s real name in front of him: "Kearney. Sam Kearney. He\'s dating my sister."'); },
+    text: g => `${g.f('rae2') === 'walk' ? 'You make it ten steps past the tent.' : 'You step out of the line.'}
+
+hugh: Kearney.
+
+Hugh Pemberton falls into step beside you like you\'d arranged to meet, with a Registry folder under his arm and his sunglasses on top of his head.
+
+${g.f('talk_s3e1') === 'weak' ? `Behind him, at the table, the gray-haired nurse looks up from her tablet, and her face does something. Recognition.
+
+LINDA: Oh! You\'re the young man from 15th Street. Mrs. Torres\'s friend. I\'m sorry, what was the name you gave me? I wrote it down, but it didn\'t come up in—
+
+hugh: *(pleasantly, over his shoulder)* Kearney, Linda. Sam Kearney. He\'s dating my sister.
+
+LINDA: Oh! *(she types)* Thank you, Hugh.
+
+Hugh turns back to you and smiles.
+
+hugh: You\'re welcome.` : 'He smiles like you\'re old friends.'}
+
+He walks you past the pancake table to the edge of the Walk, under a tree, out of the way.
+
+hugh: I\'m going to make you an offer. I\'ve been authorized to make it. It\'s a good offer, and you\'re going to want to hit me, so do that first if you need to and then listen.
+
+You don\'t hit him.
+
+hugh: Saturday. Ten a.m. Your friend Bree has her intake at the Navy Yard. You\'re going to be there anyway, I assume, being *supportive*. *(the word has a little twist in it)* While you\'re there, register. Walk in the front door. Sign the tablet. Ten minutes. No beds, no doors. A participant, like twenty-seven other people.
+
+hugh: And I get Jubilee moved off *Observe*. Off the list. Her file goes in a drawer.
+
+He lets that sit.
+
+hugh: You want her safe. I want her safe. *(something real flickers under it, just for a second)* I\'m her *brother*, Kearney. I\'ve been her brother nine minutes longer than she\'s been alive. You think I like seeing her name on a screen?
+
+hugh: One signature. Yours, for hers.`,
+    choices: [
+      { text: '"No." Then walk away.', tag: 'No',
+        fx: g => { g.flag('hugh2', 'no'); g.hidden('revenant_drift', -0.5); }, go: 'a3_hugh_end' },
+      { text: '"I\'ll think about it."', tag: 'Think about it',
+        fx: g => { g.flag('hugh2', 'think'); g.hidden('revenant_drift', 0.5); }, go: 'a3_hugh_end' },
+      { text: '"Does Jules know you\'re making this offer?"', tag: 'Does she know',
+        fx: g => { g.flag('hugh2', 'jules'); g.bond('jules', { trust: 1 }); }, go: 'a3_hugh_end' }
+    ]
+  },
+
+  a3_hugh_end: {
+    loc: 'LIACOURAS WALK',
+    text: g => `${g.f('hugh2') === 'no' ? 'sam: No.\n\nhugh: *(not surprised)* You haven\'t heard the—\n\nsam: No.\n\nYou walk away. Behind you, after a second, he laughs. Not mean. Almost delighted.\n\nhugh: *(calling after you)* She said you\'d say that! Word for word!\n\nYou don\'t ask who *she* is. You already know which *she* would know you that well, and it isn\'t Jules.' : g.f('hugh2') === 'think' ? 'sam: I\'ll think about it.\n\nhugh: *(warmly)* That\'s all anybody\'s asking.\n\nHe puts a folder in your hand. On the front, in a perfect gold sans serif: *YOU ARE NOT ALONE.* Inside, a tablet code, and a sticky note in Hugh\'s handwriting: *Saturday. Front door. -H*\n\nYou put it in your backpack. You don\'t know why you don\'t throw it away.' : 'sam: Does Jules know you\'re making this offer?\n\nFor the first time since you\'ve known him, Hugh doesn\'t have the next sentence ready.\n\nhugh: She doesn\'t need to.\n\nsam: That\'s a no.\n\nhugh: It\'s a *surprise*. She\'d be off the list. She\'d never even know she was on it.\n\nsam: She knows, Hugh. She\'s known since February. She saw the screen.\n\nHugh\'s face goes very still.\n\nhugh: *(quietly)* Then why hasn\'t she said anything to me?\n\nYou look at him. He actually doesn\'t know.\n\nsam: You\'re standing in a Registry polo, Hugh.\n\nYou leave him under the tree.'}
+
+At 4:58 p.m., you make it to the registrar\'s office and add nothing and drop nothing, and walk out into the late sun on Broad Street with your schedule exactly as it was.
+
+Your phone. Bree.
+
+${g.f('bree2') === 'come' ? 'TXT bree: tomorrow. 10. building 1. dont be late wawa' : 'TXT bree: tomorrow. 10am. building 1. navy yard. come or dont'}`,
+    next: 'a4_saturday'
+  }
+});
+
+/* s03e02d.js */
+/* S3 · E2 · OUTREACH, part 4 of 4: Act Four ("Intake"), tag, polls, recap. */
+EH.scenes('s03e02', {
+
+  /* ================= ACT FOUR: INTAKE ================= */
+  a4_saturday: {
+    card: { kind: 'act', label: 'Act Four', title: 'Intake' },
+    loc: '1300 RESIDENCE HALL · 7-07',
+    clock: { day: 'Sat', date: 'Sep 11', time: '8:30 AM' },
+    enter: g => { g.sleep(8); },
+    text: g => `Saturday. You have a delivery shift at Ciro\'s at noon.
+
+${g.f('bree2') === 'come' ? 'You told Bree you\'d be there. You put on a clean shirt, like it\'s a job interview, which it sort of is, except you\'re not sure who\'s interviewing whom.' : g.f('bree2') === 'dont' ? 'You told Bree not to go. She\'s going anyway. *come or dont.*' : 'Bree\'s text is still on your screen. *come or dont.* You didn\'t even know she\'d signed until last night.'}
+
+${g.f('hugh2') === 'think' ? 'The folder Hugh gave you is on your desk. *YOU ARE NOT ALONE. Saturday. Front door. -H*' : ''}
+
+The Broad Street Line goes all the way to the Navy Yard now. You could be there by ten.`,
+    choices: [
+      { text: 'Go. Support person. Whatever that turns out to mean.', tag: 'Go',
+        fx: g => { g.flag('intake2', 'went'); g.bond('bree', { trust: 1 }); }, go: 'a4_clinic' },
+      { text: 'Don\'t go. You can\'t walk into that building in daylight with your face. Not with Linda\'s tablet. Not this week.', tag: 'Don\'t go', if: g => g.f('bree2') !== 'come',
+        fx: g => { g.flag('intake2', 'stayed'); g.bond('bree', { trust: -1, tension: 2 }); }, go: 'a4_ciro' }
+    ]
+  },
+
+  a4_ciro: {
+    loc: 'CIRO\'S PIZZA · WASHINGTON AVENUE',
+    clock: { time: '3:40 PM' },
+    enter: g => { g.know('bree_intake2', ['sam', 'bree'], 'Bree\'s intake at the Registry clinic: an hour in a soundproof booth. They asked for her own voice, then any voices she could do. She gave them all of them. Including Teddy\'s.'); g.hidden('halcyon_heat', 1); },
+    text: `You work your shift. You fold boxes. Ciro tells you a story about his cousin in Avellino that you\'ve heard nine times, and you laugh in the right places.
+
+At 3:40, between deliveries, your phone.
+
+TXT bree: done
+TXT bree: they put me in a booth. soundproof. a guy with headphones. he said say this sentence in your own voice. then he said now any voices you can do
+TXT bree: i did all of them wawa. i dont know why. he was so nice. he kept saying amazing. amazing
+TXT bree: i did teddy
+TXT bree: i did teddy for a man with headphones in a building where you can see the steps
+
+You read it standing in the back of Ciro\'s, between the walk-in and the flour.
+
+TXT bree: dont answer. im fine. halinas pills are covered. thats the whole math
+
+You don\'t answer. She asked you not to. That\'s the worst part, that you\'re able to do what she asked.`,
+    next: 'tag_ghost'
+  },
+
+  a4_clinic: {
+    loc: 'THE NAVY YARD · BUILDING 1 · REGISTRY CLINIC',
+    clock: { time: '9:55 AM' },
+    enter: g => { g.know('clinic_inside', ['sam', 'bree'], 'The Registry clinic in Building 1 at the Navy Yard: a bright lobby, a children\'s corner, a water feature, nurses who mean it. Achterberg walked through the lobby while Sam was there and greeted him by name.'); g.hidden('halcyon_heat', 1); },
+    text: g => `Building 1 at the Navy Yard. Not Building 7. Building 1 is new: glass and pale wood, a lobby with a living wall of ferns and a water feature that sounds like rain. A children\'s corner with a train table. Hydrangeas at the front desk. It smells like a nice hotel.
+
+From the parking lot, if you turn around, you can see the steps of Building 7, a quarter mile away across the yard. You don\'t turn around.
+
+Bree is in a chair by the ferns with her knees pulled up. ${g.f('bree2') === 'dont' ? 'She sees you come in. Her face doesn\'t change, but her shoulders come down about an inch.\n\nbree: You came.\n\nsam: I came.\n\nbree: I\'m still mad.\n\nsam: I know.' : 'She sees you come in and lets out a breath.\n\nbree: Support person.\n\nsam: Support person.'}
+
+You sit down next to her.
+
+The waiting room has eight other people in it. A man in a FedEx uniform. A mother with a toddler who keeps touching the toddler\'s hands to see if they\'re cold. An old man asleep. They all have the same look: like they\'ve been told it\'s going to be okay so many times that they\'ve started to believe it, and are a little ashamed of believing it.
+
+${g.f('grace2') ? 'Behind the glass of the intake office, at a computer, in navy scrubs, typing: Grace. She sees you. She doesn\'t wave. She looks back at her screen and types something, and you have the feeling that whatever it is, it isn\'t what the doctor said.' : ''}
+
+${g.knows('linda_name') ? 'At the front desk, Linda looks up, sees you, and smiles. *Mr. Kearney.* She says it like you\'re a regular.' : ''}
+
+And then the door at the far end of the lobby opens, and a small woman in a gray cardigan walks through on her way somewhere else, with a coffee and a folder, with her glasses on her head.
+
+She sees you. She doesn\'t stop. She changes course by about four degrees, enough to pass your chair.
+
+ACHTERBERG: Mr. Kearney. Welcome.
+
+She keeps walking. Through the opposite door. Gone.
+
+The whole thing took four seconds. You didn\'t need to count them.
+
+bree: *(very quietly)* Was that her?
+
+sam: That was her.
+
+bree: She\'s *tiny*.
+
+A nurse at the inner door, with a tablet:
+
+NURSE: Bree Kowal? We\'re ready for you.`,
+    next: 'a4_booth'
+  },
+
+  a4_booth: {
+    loc: 'BUILDING 1 · THE AUDIO SUITE',
+    clock: { time: '10:20 AM' },
+    text: `They let you come as far as the window.
+
+It\'s a recording booth. A real one, like a radio station: foam on the walls, a microphone on a boom, a window of double glass. On your side of the glass, a technician in a fleece vest with big headphones and a mixing board, who is genuinely, boyishly excited, who has clearly never been this excited about anything at work.
+
+TECH: Okay, Bree. We\'re going to start easy. Can you read the card in front of you, in your own voice?
+
+Through the glass, Bree reads it. *The quick brown fox.* Her own voice. Flat.
+
+TECH: Amazing. Okay. And now, and this is totally optional, anything you\'re comfortable with: any *other* voices you can do? People you\'ve heard. Famous ones, family, anybody.
+
+Bree looks up from the card. Not at the technician.
+
+At you. Through the glass.
+
+She\'s waiting.
+
+You know what she can do. She can do anyone. Brannigan. Bruno. You. Teddy.
+
+The technician\'s finger is on the record button. He hasn\'t noticed that she\'s looking at you instead of him.`,
+    choices: [
+      { text: 'Shake your head. Small. *Nothing. Give them nothing.*', tag: 'Nothing',
+        fx: g => { g.flag('booth2', 'nothing'); g.bond('bree', { trust: 1 }); g.hidden('halcyon_heat', -1); g.hidden('revenant_drift', 0.5); }, go: 'a4_booth_end' },
+      { text: 'Don\'t move. Don\'t nod, don\'t shake. It\'s her voice. Let her pick.', tag: 'Let her pick',
+        fx: g => { g.flag('booth2', 'hers'); g.bond('bree', { respect: 2, trust: 1 }); g.hidden('revenant_drift', -1); }, go: 'a4_booth_end' },
+      { text: 'Nod. *Give them something. Not everything. Enough to keep the pills coming.*', tag: 'Something',
+        fx: g => { g.flag('booth2', 'some'); g.bond('bree', { trust: 1 }); }, go: 'a4_booth_end' }
+    ]
+  },
+
+  a4_booth_end: {
+    loc: 'BUILDING 1 · THE AUDIO SUITE',
+    enter: g => { g.know('bree_intake2', ['sam', 'bree'], g.f('booth2') === 'nothing' ? 'At her intake, Bree pretended she could only do bad impressions. The technician was disappointed. She gave them nothing real.' : g.f('booth2') === 'some' ? 'At her intake, Bree gave the Registry a handful of celebrity voices and her own. Not Brannigan. Not Teddy.' : 'At her intake, Bree chose: she gave them everyone but Teddy. Then she did Brannigan, perfectly, into their own microphone, and asked if they recognized him.'); },
+    text: g => `${g.f('booth2') === 'nothing' ? `You shake your head. Barely. A quarter inch.
+
+Bree looks back at the technician and smiles a big, dumb, embarrassed smile.
+
+bree: Uh. I can do, like, a really bad Kermit?
+
+She does a really bad Kermit. It is genuinely terrible. Then a really bad Christopher Walken. Then she says she\'s sorry, she\'s nervous, she\'s not usually like this.
+
+The technician\'s face falls by degrees, like a kid on Christmas finding socks.
+
+TECH: No, no, that\'s— that\'s great. Totally normal. Lots of people have, you know. Variable presentation.
+
+He types something. You can see it on his screen. *ECHO: LOW / INCONSISTENT. RETEST?*` : g.f('booth2') === 'some' ? `You nod. Small.
+
+Bree does Morgan Freeman. Then Gritty, which is not a voice so much as a feeling. Then Jim Kenney at a press conference. Then the SEPTA announcer: *The next stop is: Walnut-Locust.* The technician actually claps.
+
+She doesn\'t do Brannigan. She doesn\'t do Bruno. She doesn\'t do Teddy.
+
+TECH: *(beaming, typing)* Amazing. Amazing. That\'s amazing.
+
+On his screen: *ECHO: CONFIRMED. HIGH FIDELITY. RANGE: RETEST.*` : `You don\'t move. You just look back at her.
+
+She looks at you for a long time. Then she nods, once, to herself.
+
+She does Morgan Freeman. The SEPTA announcer. Her aunt, scolding, in Polish. The technician is practically vibrating.
+
+Then she leans into the microphone and says, in a calm, polite, terrible voice that makes the hair stand up on your arms:
+
+bree: *(Brannigan, perfect)* "All units. Hold position."
+
+The technician stops vibrating. He takes off his headphones. He looks at the door like someone might come through it.
+
+bree: *(her own voice, sweetly)* You know who that is?
+
+TECH: *(very carefully)* No.
+
+bree: You should ask around.
+
+She doesn\'t do Teddy. You know she won\'t. She sits back in the chair with her arms folded and waits for him to put his headphones back on.`}
+
+After, in the lobby, the nurse with the tablet comes over to you. Friendly. Efficient.
+
+NURSE: And you\'re the support person? Since you\'re already here: were you near Broad Street that night? It only takes ten minutes. There\'s a stipend.
+
+${g.f('hugh2') === 'think' ? 'The folder from Hugh is in your backpack. *Front door.*' : ''}
+
+Bree, beside you, goes very still.`,
+    choices: [
+      { text: '"No, thanks. I was in South Philly that night." It isn\'t true. It doesn\'t have to be.', tag: 'No thanks',
+        fx: g => { g.flag('register2', 'no'); }, go: 'a4_lobby_end' },
+      { text: 'Register. Ten minutes. Your name on their tablet, for Jules\'s off it. If Hugh was telling the truth.', tag: 'Register', if: g => g.f('hugh2') === 'think',
+        fx: g => { g.flag('register2', 'yes'); g.flag('registered'); g.hidden('halcyon_heat', 3); g.hidden('revenant_drift', 1); g.bond('bree', { tension: 2 }); g.know('sam_registered', ['sam', 'bree', 'hugh'], 'Sam registered with the Broad Street Registry on Sep 11, at the Navy Yard, as ES-17. Participant number 29.'); }, go: 'a4_registered' },
+      { text: '"Actually, is Dr. Achterberg still here? I\'d like to ask her one question."', tag: 'Ask Achterberg',
+        fx: g => { g.flag('register2', 'ask'); g.hidden('halcyon_heat', 1); }, go: 'a4_ask' }
+    ]
+  },
+
+  a4_lobby_end: {
+    loc: 'THE NAVY YARD · THE PARKING LOT',
+    clock: { time: '11:15 AM' },
+    text: g => `NURSE: *(not pushing)* Well, if you ever change your mind. *(she gives you a pamphlet. YOU ARE NOT ALONE.)*
+
+Outside, in the parking lot, in the September sun, Bree walks fast to the bus stop with her hands jammed in her hoodie and doesn\'t talk until you\'re past the gate.
+
+bree: ${g.f('booth2') === 'nothing' ? 'A bad Kermit. I gave them a *bad Kermit*, Wawa.\n\nShe starts laughing. She can\'t stop. She laughs so hard she has to sit down on the curb at the bus stop.\n\nbree: Halina\'s pills are covered and I gave them a bad Kermit.' : g.f('booth2') === 'some' ? 'Gritty. I gave the evil science company Gritty.\n\nShe laughs. It cracks in the middle.\n\nbree: Halina\'s pills are covered. That\'s the whole math.' : 'I gave them Brannigan. In his own building.\n\nShe\'s shaking. She\'s grinning.\n\nbree: Teddy would\'ve *loved* that. *(the grin goes)* Teddy would\'ve loved that.'}
+
+${g.f('hugh2') === 'think' ? 'In your backpack, the folder from Hugh. You throw it in the trash can at the bus stop. Then you take it back out, because it has your name on the sticky note, and you tear the sticky note into very small pieces and throw *that* away.' : ''}`,
+    next: 'tag_ghost'
+  },
+
+  a4_ask: {
+    loc: 'BUILDING 1 · THE LOBBY',
+    clock: { time: '11:05 AM' },
+    enter: g => { g.know('achterberg_hugh2', ['sam'], 'Achterberg, in the Registry lobby: Hugh has no authority to move Jules off OBSERVE. "Only I can. And I won\'t, Mr. Kearney. Not for a signature. I don\'t trade in people\'s daughters."'); },
+    text: g => `The nurse blinks. Then she goes and makes a call. Two minutes later, the far door opens.
+
+Achterberg has a fresh coffee. She sits down in the chair next to you, by the ferns, as though this is the most natural thing in the world, as though you\'re two people waiting for the same bus.
+
+ACHTERBERG: One question. I\'m honored.
+
+${g.f('hugh2') === 'think' || g.f('hugh2') === 'jules' ? 'sam: Hugh says if I register, he can get Jules moved off *Observe*.\n\nShe drinks her coffee.\n\nACHTERBERG: Hugh doesn\'t have that authority. Only I do.\n\nsam: And?\n\nACHTERBERG: And I won\'t. Not for a signature. I don\'t trade in people\'s daughters, Mr. Kearney. *(she sets the cup down)* I\'m sorry he told you that. He\'s young, and he wants very badly to be the one who fixes things. You\'d understand that better than anyone.' : 'sam: Why her? Out of sixty-one. Why is Jules the one you watch?\n\nShe drinks her coffee.\n\nACHTERBERG: That\'s two questions.\n\nsam: Same question.\n\nACHTERBERG: *(after a moment)* Because she\'s the only one who didn\'t *change* that night, Mr. Kearney. She was already like that. The night just turned the volume up.\n\nShe lets that land.\n\nACHTERBERG: I\'ve answered honestly. I always will. You might think about why that frightens you more than if I lied.'}
+
+She stands. She picks up her coffee.
+
+ACHTERBERG: Give my regards to your mother.
+
+She goes back through the door.
+
+Bree is staring at you.
+
+bree: You just *talked* to her. Like at a bus stop.
+
+sam: She sat down.
+
+bree: Wawa. She knows your *mother*.`,
+    next: 'tag_ghost'
+  },
+
+  a4_registered: {
+    loc: 'BUILDING 1 · INTAKE ROOM 4',
+    clock: { time: '11:30 AM' },
+    text: `Ten minutes. She was right about that.
+
+A small bright room with a window. A blood pressure cuff. A questionnaire on a tablet. *Were you within two miles of Broad and Spring Garden at 11:51 p.m. on August 22, 2026? Have you experienced episodes of lost time? Cold extremities? Unexplained healing?*
+
+You answer them. Not all of them truthfully. It doesn\'t matter. You\'ve signed.
+
+The nurse prints a little card for your wallet. Your name. A number.
+
+*PARTICIPANT #29 · ES-17.*
+
+They already had the second number. They\'ve had it for a year. You just signed underneath it.
+
+Out in the lobby, Bree is waiting with her arms folded. She looks at the card in your hand.
+
+bree: Why.
+
+sam: Hugh said he could get Jules off the list.
+
+bree: *Hugh said.*
+
+She looks at you for a long time.
+
+bree: Wawa. You just traded yourself for a rich boy\'s *promise*.
+
+That night, Nik\'s counter says *29 of 61*. He doesn\'t say anything. He doesn\'t have to. He just turns the monitor so you can see it, and then turns it back.`,
+    next: 'tag_ghost'
+  },
+
+  /* ================= TAG ================= */
+  tag_ghost: {
+    card: { kind: 'tag' },
+    night: true,
+    loc: 'THE NAVY YARD · BUILDING 7 · RECOVERY OPERATIONS',
+    clock: { day: 'Sat', date: 'Sep 11', time: '11:50 PM' },
+    text: g => `> THE CAMERA.
+
+A room without windows on the fourth floor of Building 7. A wall of screens. On the big one, the Registry counter: *${g.f('register2') === 'yes' ? '29' : '28'} of 61.* On the others: faces. Sixty-one of them, in a grid. ${g.f('register2') === 'yes' ? 'Twenty-nine of them lit green.' : 'Twenty-eight of them lit green.'}
+
+Cole Brannigan stands in front of the wall with his hands in the pockets of a tan windbreaker. An analyst sits at a desk, a young woman with her hair in a bun, eating almonds out of a bag one at a time.
+
+On the center screen: the bank camera at Broad and Spring Garden. The anniversary. 11:51:04, and 11:51:04 again.
+
+The analyst rocks the two frames back and forth. Back and forth. A girl in a black hoodie on the northwest corner. Looking at the clock. Looking at a boy holding a girl\'s hand.
+
+ANALYST: Facial recognition, all sixty-one: no match. DMV: no match. School IDs, the hospitals, SEPTA Key cards: no match. Partial gait match to a figure on the Parkway last Thanksgiving, sixty-one percent confidence, which is basically a coin.
+
+BRANNIGAN: She moved in the stutter.
+
+ANALYST: She moved in the stutter. Everyone else on that corner is two identical frames. *(she points at the boy)* Even ES-17. She isn\'t anybody.
+
+Brannigan looks at the frozen girl for a long time.
+
+BRANNIGAN: Sixty-two.
+
+ANALYST: Sir?
+
+BRANNIGAN: There were sixty-two people in that door.
+
+He takes out his phone. He dials. It\'s answered on the first ring. He doesn\'t say hello.
+
+BRANNIGAN: Doctor. There\'s one we didn\'t count.
+
+A pause. A small, dry voice on the line, too faint to make out the words.
+
+Brannigan listens. He nods, though she can\'t see him.
+
+BRANNIGAN: Understood.
+
+He hangs up. He looks at the girl on the screen.
+
+BRANNIGAN: *(to the analyst, politely)* Find her.`,
+    end: true
+  }
+});
+
+Object.assign(EH.episodes.s03e02, {
+  polls: [
+    { q: 'Jules\'s card', opts: [
+      { label: '"Read it"', pct: 37, if: g => g.f('card2') === 'read' },
+      { label: '"Read it carefully"', pct: 24, if: g => g.f('card2') === 'careful' },
+      { label: 'Handed it back', pct: 39, if: g => g.f('card2') === 'back' }
+    ] },
+    { q: 'Rae, in line', opts: [
+      { label: 'Told her', pct: 41, if: g => g.f('rae2') === 'truth' },
+      { label: 'Asked her', pct: 36, if: g => g.f('rae2') === 'ask' },
+      { label: 'Kept walking', pct: 23, if: g => g.f('rae2') === 'walk' }
+    ] },
+    { q: 'Hugh\'s offer', opts: [
+      { label: '"No."', pct: 46, if: g => g.f('hugh2') === 'no' },
+      { label: '"I\'ll think about it."', pct: 21, if: g => g.f('hugh2') === 'think' },
+      { label: '"Does Jules know?"', pct: 33, if: g => g.f('hugh2') === 'jules' }
+    ] },
+    { q: 'The booth', opts: [
+      { label: 'Nothing', pct: 28, if: g => g.f('booth2') === 'nothing' },
+      { label: 'Let her pick', pct: 47, if: g => g.f('booth2') === 'hers' },
+      { label: 'Something', pct: 25, if: g => g.f('booth2') === 'some' }
+    ] }
+  ],
+  onEnd: g => {
+    g.recap('Bree signed up for the Registry. It pays for Halina\'s pills. Bruno stopped in June.');
+    g.recap('Catherine Pemberton invited Jules to Ravenscourt on the 19th. She signed it "Catherine," then crossed it out and wrote "Mother."');
+    if (g.f('mikey2')) g.recap(g.f('mikey2') === 'no' ? 'Mikey turned down the Registry detail.' : 'Mikey took the Registry wellness-check detail. It starts October 1.');
+    if (g.f('grace2')) g.recap('Grace is a scribe at the Registry clinic. There\'s a column in the files: O, R, H.');
+    if (g.f('rae2') === 'truth') g.recap('You told Rae Delgado the truth in line. She walked away.'); else if (g.f('rae2') === 'ask') g.recap('Rae Delgado registered. She has your number.');
+    g.recap(g.f('hugh2') === 'no' ? 'Hugh offered: register, and he\'d get Jules off the list. You said no.' : 'Hugh offered: register, and he\'d get Jules off the list.');
+    if (g.f('intake2') === 'went') g.recap('At the Navy Yard clinic, Achterberg walked past and said, "Mr. Kearney. Welcome."');
+    if (g.f('register2') === 'yes') g.recap('You registered. Participant #29. ES-17.');
+    if (g.f('register2') === 'ask') g.recap('Achterberg: "I don\'t trade in people\'s daughters."');
+    g.recap('Brannigan: "There were sixty-two people in that door. Find her."');
+  }
+});
+
 </script>
 <script>
 /* THE EVENT HORIZON: browser engine (UI, sound, saves). Depends on core.js and the episode files. */
