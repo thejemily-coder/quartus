@@ -1,0 +1,500 @@
+<title>__SHOW_TITLE__</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Courier+Prime:wght@400;700&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+/* Layout: a single reading sheet of cream paper set into a tooled-leather frame; brass plates for choices; screenplay slugs for scenes. */
+:root {
+  --leather: #3d2617;      /* frame + header */
+  --leather-2: #2c1a0f;
+  --paper: #f1e6cf;        /* reading sheet */
+  --paper-edge: #e2d2b0;
+  --ink: #2b1d13;
+  --ink-soft: #6b5440;
+  --brass: #a77a2b;
+  --brass-hi: #d9b462;
+  --oxblood: #7d2b1f;
+  --on-leather: #f0e2c4;
+  --bg: #d9c7a3;           /* page ground behind the sheet */
+  --shadow: rgba(43, 29, 19, .28);
+  --f-display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --f-body: "Spectral", "Iowan Old Style", Georgia, serif;
+  --f-slug: "Courier Prime", "Courier New", ui-monospace, monospace;
+  --step--1: .875rem; --step-0: 1.0625rem; --step-1: 1.3rem; --step-2: 1.7rem; --step-3: 2.4rem; --step-4: clamp(2.4rem, 7vw, 4rem);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --leather: #24160d; --leather-2: #170e08; --paper: #2a1f17; --paper-edge: #3a2b1f; --ink: #eadcc0; --ink-soft: #b49d7f;
+  --brass: #c69a48; --brass-hi: #e8c77c; --oxblood: #d0705d; --on-leather: #eadcc0; --bg: #120b06; --shadow: rgba(0,0,0,.5); color-scheme: dark } }
+:root[data-theme="dark"] {
+  --leather: #24160d; --leather-2: #170e08; --paper: #2a1f17; --paper-edge: #3a2b1f; --ink: #eadcc0; --ink-soft: #b49d7f;
+  --brass: #c69a48; --brass-hi: #e8c77c; --oxblood: #d0705d; --on-leather: #eadcc0; --bg: #120b06; --shadow: rgba(0,0,0,.5); color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 400 var(--step-0)/1.7 var(--f-body); min-height: 100% }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--leather) }
+button { font: inherit; color: inherit; cursor: pointer }
+:focus-visible { outline: 2px solid var(--brass-hi); outline-offset: 3px }
+
+/* header band */
+.band { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--leather);
+  background-image: repeating-linear-gradient(90deg, transparent 0 9px, rgba(0,0,0,.08) 9px 10px);
+  color: var(--on-leather); border-bottom: 3px double var(--brass) }
+.band-in { max-width: 56rem; margin: 0 auto; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+.wordmark { font: 700 1.05rem/1 var(--f-display); letter-spacing: .14em; text-transform: uppercase; color: var(--brass-hi); background: none; border: 0; padding: 0 }
+.epchip { font: 400 var(--step--1)/1 var(--f-slug); letter-spacing: .06em; opacity: .85; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.navbtn { background: transparent; border: 1px solid color-mix(in srgb, var(--brass) 60%, transparent); color: var(--on-leather);
+  font: 400 var(--step--1)/1 var(--f-slug); padding: 7px 10px; border-radius: 2px; letter-spacing: .04em }
+.navbtn:hover { border-color: var(--brass-hi); color: var(--brass-hi) }
+.sync { font: 400 .75rem/1 var(--f-slug); opacity: .7 }
+
+/* sheet */
+.wrap { padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+.sheet { max-width: 42rem; margin: 0 auto; background: var(--paper); border: 1px solid var(--paper-edge);
+  box-shadow: 0 1px 0 var(--paper-edge), 0 18px 40px -18px var(--shadow); position: relative; padding: clamp(22px, 5vw, 56px) clamp(18px, 5vw, 60px) }
+.sheet::before { content: ""; position: absolute; inset: 8px; border: 1px dashed color-mix(in srgb, var(--brass) 45%, transparent); pointer-events: none }
+
+/* title card */
+.title-card { text-align: center; display: grid; gap: 18px; padding-block: 24px }
+.presents { font: 400 var(--step--1)/1.4 var(--f-slug); letter-spacing: .3em; text-transform: uppercase; color: var(--ink-soft) }
+.show { font: 700 var(--step-4)/1 var(--f-display); letter-spacing: .06em; text-transform: uppercase; text-wrap: balance; margin: 0;
+  background: linear-gradient(180deg, var(--brass-hi), var(--brass) 55%, color-mix(in srgb, var(--brass) 70%, var(--ink)));
+  -webkit-background-clip: text; background-clip: text; color: transparent }
+.rule { width: 9rem; height: 10px; margin: 0 auto; background:
+  radial-gradient(circle, var(--brass) 2.5px, transparent 3px) center/10px 10px no-repeat,
+  linear-gradient(var(--brass), var(--brass)) left center/42% 1px no-repeat,
+  linear-gradient(var(--brass), var(--brass)) right center/42% 1px no-repeat }
+.ep-label { font: 400 var(--step--1)/1.3 var(--f-slug); letter-spacing: .18em; text-transform: uppercase }
+.ep-title { font: italic 500 var(--step-3)/1.1 var(--f-display); margin: 0; text-wrap: balance }
+.logline { color: var(--ink-soft); max-width: 32rem; margin: 0 auto; font-style: italic }
+.actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 6px }
+
+/* buttons */
+.plate { background: linear-gradient(180deg, color-mix(in srgb, var(--brass-hi) 30%, var(--paper)), color-mix(in srgb, var(--brass) 22%, var(--paper)));
+  border: 1px solid var(--brass); color: var(--ink); padding: 12px 22px; border-radius: 2px;
+  font: 700 var(--step--1)/1 var(--f-slug); letter-spacing: .14em; text-transform: uppercase; box-shadow: inset 0 1px 0 color-mix(in srgb, var(--brass-hi) 50%, transparent) }
+.plate:hover { background: var(--brass); color: var(--paper) }
+.plate.quiet { background: transparent; box-shadow: none }
+.plate.quiet:hover { background: color-mix(in srgb, var(--brass) 15%, transparent); color: var(--ink) }
+
+/* scene */
+.slug { font: 700 var(--step-0)/1.3 var(--f-slug); letter-spacing: .03em; text-transform: uppercase; margin: 0 0 18px;
+  padding-bottom: 8px; border-bottom: 1px solid color-mix(in srgb, var(--brass) 50%, transparent) }
+.slug .cut { display: block; font-weight: 400; font-size: .75rem; letter-spacing: .2em; color: var(--oxblood); margin-bottom: 4px }
+.scene.cutaway .prose { font-style: italic }
+.prose p { margin: 0 0 1.05em; max-width: 65ch; hanging-punctuation: first }
+.prose p:last-child { margin-bottom: 0 }
+.beat { margin-bottom: 34px; padding-bottom: 26px; border-bottom: 1px solid color-mix(in srgb, var(--brass) 30%, transparent) }
+.chosen { font: 400 var(--step--1)/1.5 var(--f-slug); color: var(--ink-soft); margin: 0 0 14px; letter-spacing: .02em }
+.chosen::before { content: "▸ "; color: var(--brass) }
+.cue { font: italic 400 var(--step--1)/1.4 var(--f-body); color: var(--oxblood); margin: 16px 0 0 }
+.choices { display: grid; gap: 10px; margin-top: 30px; padding: 0; list-style: none }
+.choice { width: 100%; text-align: left; background: color-mix(in srgb, var(--brass) 8%, var(--paper)); border: 1px solid color-mix(in srgb, var(--brass) 55%, transparent);
+  border-left: 4px solid var(--brass); padding: 12px 16px; border-radius: 2px; font: 400 var(--step-0)/1.45 var(--f-body); color: var(--ink); transition: background .15s, transform .15s }
+.choice:hover { background: color-mix(in srgb, var(--brass) 22%, var(--paper)); transform: translateX(2px) }
+.continue { margin-top: 30px; display: flex; justify-content: center }
+.fin { text-align: center; font: 400 var(--step--1)/1 var(--f-slug); letter-spacing: .4em; margin-top: 30px; color: var(--ink-soft) }
+
+/* recap */
+.recap h2, .panel h2, .endcard h2 { font: italic 500 var(--step-2)/1.2 var(--f-display); margin: 0 0 18px; text-wrap: balance }
+.recap ul { margin: 0; padding-left: 1.1em; display: grid; gap: 10px }
+.eyebrow { font: 400 .75rem/1 var(--f-slug); letter-spacing: .25em; text-transform: uppercase; color: var(--oxblood); margin: 0 0 10px }
+
+/* end card */
+.endcard { display: grid; gap: 30px }
+.tag { font: italic 400 var(--step-1)/1.45 var(--f-display); text-align: center; margin: 0; text-wrap: balance }
+.ledger { list-style: none; margin: 0; padding: 0; display: grid; gap: 0 }
+.ledger li { padding: 9px 0; border-bottom: 1px dotted color-mix(in srgb, var(--brass) 50%, transparent); display: grid; grid-template-columns: 1.6rem 1fr; gap: 6px }
+.ledger li::before { content: "§"; color: var(--brass); font-family: var(--f-display) }
+.temps { display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 10px }
+.temp { border: 1px solid color-mix(in srgb, var(--brass) 45%, transparent); padding: 10px 12px; display: grid; gap: 2px; min-width: 0 }
+.temp .who { font: 400 var(--step--1)/1.3 var(--f-body); color: var(--ink-soft) }
+.temp .word { font: 700 var(--step-1)/1.1 var(--f-display); letter-spacing: .02em }
+.temp .delta { font: 400 .75rem/1 var(--f-slug); color: var(--ink-soft) }
+.w-hot { color: var(--oxblood) } .w-warm { color: color-mix(in srgb, var(--brass) 75%, var(--ink)) } .w-cold { color: color-mix(in srgb, var(--ink) 55%, #3a5a7a) }
+.pitches { display: grid; gap: 12px }
+.pitch { text-align: left; background: transparent; border: 1px solid color-mix(in srgb, var(--brass) 55%, transparent); padding: 14px 16px; border-radius: 2px; display: grid; gap: 4px; color: var(--ink) }
+.pitch b { font: 700 var(--step-0)/1.3 var(--f-display) }
+.pitch span { color: var(--ink-soft); font-size: var(--step--1); line-height: 1.5 }
+.pitch[aria-pressed="true"] { border: 2px solid var(--oxblood); background: color-mix(in srgb, var(--oxblood) 8%, var(--paper)) }
+.note { font-size: var(--step--1); color: var(--ink-soft) }
+.copybox { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
+.copybox code { font: 400 var(--step--1)/1.4 var(--f-slug); background: color-mix(in srgb, var(--brass) 10%, var(--paper)); padding: 8px 10px; border: 1px dashed var(--brass); flex: 1; min-width: 0; overflow-wrap: anywhere }
+
+/* panels (dossier, story so far, settings) */
+.panel { display: grid; gap: 22px }
+.dossier { display: grid; gap: 18px }
+.file { border-top: 1px solid var(--brass); padding-top: 12px; display: grid; gap: 6px }
+.file h3 { margin: 0; font: 700 var(--step-1)/1.2 var(--f-display) }
+.file .role { font: 400 .8rem/1.3 var(--f-slug); letter-spacing: .08em; text-transform: uppercase; color: var(--oxblood) }
+.file ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px }
+.file .temp-inline { font: 400 .8rem/1 var(--f-slug); color: var(--ink-soft) }
+textarea { width: 100%; min-height: 7rem; font: 400 .8rem/1.4 var(--f-slug); background: var(--paper); color: var(--ink); border: 1px solid var(--brass); padding: 10px }
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center }
+.danger { color: var(--oxblood) }
+
+.toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 20;
+  background: var(--leather); color: var(--on-leather); border: 1px solid var(--brass); padding: 10px 16px; font: italic 400 var(--step--1)/1.4 var(--f-body);
+  max-width: calc(100% - 32px); box-shadow: 0 8px 24px var(--shadow); opacity: 0; transition: opacity .3s; pointer-events: none }
+.toast.on { opacity: 1 }
+
+.fade-in { animation: fade .6s ease both }
+@keyframes fade { from { opacity: .001; transform: translateY(6px) } to { opacity: 1; transform: none } }
+@media (prefers-reduced-motion: reduce) { .fade-in { animation: none } .choice { transition: none } }
+@media (max-width: 520px) { .sync, .epchip { display: none } .band-in { justify-content: space-between } .wordmark { flex-basis: 100%; text-align: center } }
+</style>
+
+<header class="band"><div class="band-in">
+  <button class="wordmark" id="home" type="button">__SHOW_TITLE__</button>
+  <span class="epchip" id="epchip"></span>
+  <span class="sync" id="sync" aria-live="polite"></span>
+  <button class="navbtn" id="nav-dossier" type="button">Dossiers</button>
+  <button class="navbtn" id="nav-story" type="button">Story so far</button>
+  <button class="navbtn" id="nav-settings" type="button">Save</button>
+</div></header>
+<main class="wrap"><article class="sheet" id="sheet" aria-live="polite"></article></main>
+<div class="toast" id="toast" role="status"></div>
+
+<script type="application/json" id="series-data">__SERIES__</script>
+<script type="application/json" id="episode-data">__EPISODE__</script>
+<script>
+(() => {
+const EP = JSON.parse(document.getElementById('episode-data').textContent);
+const SERIES = JSON.parse(document.getElementById('series-data').textContent);
+const LS_KEY = 'dynasty-save-v1';
+const $ = (s) => document.querySelector(s);
+const sheet = $('#sheet');
+const esc = (s) => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const ORD = ['', 'One', 'Two', 'Three', 'Four', 'Five'];
+
+// ---------- state ----------
+function fresh() {
+  return { v: 1, flags: {}, tones: {}, ledger: [], dossier: {}, log: [], completed: [], pitches: {}, episodes: {}, current: null, updatedAt: 0 };
+}
+let S = fresh();
+let db = null, saveRef = null, userId = null, dirty = false, saveTimer = null;
+
+function readLocal() { try { const t = localStorage.getItem(LS_KEY); return t ? JSON.parse(t) : null } catch { return null } }
+function writeLocal() { try { localStorage.setItem(LS_KEY, JSON.stringify(S)) } catch {} }
+function setSync(t) { $('#sync').textContent = t }
+
+function persist() {
+  S.updatedAt = Date.now();
+  writeLocal();
+  dirty = true;
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(flush, 1200);
+}
+let writing = false;
+async function flush() {
+  if (!saveRef || !dirty || writing) return;
+  writing = true; dirty = false;
+  try {
+    await saveRef.set({ ...JSON.parse(JSON.stringify(S)), show: SERIES.showTitle, episodeOnPage: EP.id });
+    setSync('Saved to cloud');
+  } catch (e) {
+    dirty = true;
+    setSync(e && e.code === 'invalid_argument' ? 'Saved on this device' : 'Cloud save pending');
+  } finally { writing = false; if (dirty) { clearTimeout(saveTimer); saveTimer = setTimeout(flush, 3000) } }
+}
+
+async function connect() {
+  try {
+    if (!window.claude || !window.claude.use) { setSync('Saved on this device'); return }
+    const [d, u] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
+    const id = u ? await u.id() : null;
+    if (!d || !id) { setSync('Saved on this device'); return }
+    db = d; userId = id; saveRef = db.doc('saves/' + id);
+    const snap = await saveRef.get();
+    const remote = snap.exists ? snap.data() : null;
+    if (remote && (remote.updatedAt || 0) > (S.updatedAt || 0)) {
+      S = Object.assign(fresh(), JSON.parse(JSON.stringify(remote)));
+      delete S.show; delete S.episodeOnPage;
+      writeLocal();
+      setSync('Loaded cloud save');
+      route();
+    } else if (S.updatedAt) { dirty = true; flush() }
+    else setSync('Cloud save ready');
+  } catch { setSync('Saved on this device') }
+}
+
+// ---------- expressions ----------
+function val(name) {
+  if (name.startsWith('tone.')) return S.tones[name.slice(5)] || 0;
+  const v = S.flags[name];
+  return v === undefined ? false : v;
+}
+function lit(s) {
+  s = s.trim();
+  if (/^-?\d+(\.\d+)?$/.test(s)) return Number(s);
+  if (s === 'true') return true; if (s === 'false') return false;
+  return s.replace(/^["'“”]|["'“”]$/g, '');
+}
+function atom(a) {
+  a = a.trim();
+  const m = a.match(/^(!?)([A-Za-z_][\w.]*)\s*(?:(==|!=|>=|<=|>|<)\s*(.+))?$/);
+  if (!m) return false;
+  let v = val(m[2]);
+  let r;
+  if (!m[3]) r = !!v;
+  else {
+    const L = lit(m[4]);
+    if (typeof L === 'number' && typeof v !== 'number') v = Number(v) || 0;
+    r = m[3] === '==' ? v === L : m[3] === '!=' ? v !== L : m[3] === '>=' ? v >= L : m[3] === '<=' ? v <= L : m[3] === '>' ? v > L : v < L;
+  }
+  return m[1] ? !r : r;
+}
+function test(expr) { return !expr || expr.split('||').some(d => d.split('&&').every(atom)) }
+
+// ---------- effects ----------
+function apply(choice) {
+  for (const [k, v] of Object.entries(choice.set || {})) {
+    if (typeof v === 'string' && /^[+-]\d+$/.test(v)) S.flags[k] = (Number(S.flags[k]) || 0) + Number(v);
+    else S.flags[k] = v;
+  }
+  for (const [k, v] of Object.entries(choice.tone || {})) S.tones[k] = (S.tones[k] || 0) + v;
+  if (choice.ledger) S.ledger.push({ ep: EP.id, text: choice.ledger });
+}
+function addDossier(list) {
+  for (const d of list || []) {
+    if (!test(d.if)) continue;
+    const f = S.dossier[d.id] || (S.dossier[d.id] = { notes: [] });
+    if (!f.notes.includes(d.text)) f.notes.push(d.text);
+  }
+}
+function castInfo() {
+  const map = {};
+  for (const c of EP.cast || []) map[c.id] = c;
+  return map;
+}
+function syncCastIntoDossier() {
+  for (const c of EP.cast || []) {
+    const f = S.dossier[c.id] || (S.dossier[c.id] = { notes: [] });
+    f.name = c.name; f.role = c.role; f.tracked = !!c.tracked;
+  }
+}
+
+// ---------- episode lifecycle ----------
+function startEpisode() {
+  syncCastIntoDossier();
+  S.episodes[EP.id] = { tonesAtStart: { ...S.tones }, ledgerAtStart: S.ledger.length, snapshot: JSON.stringify({ flags: S.flags, tones: S.tones, ledger: S.ledger, dossier: S.dossier }) };
+  addDossier(EP.dossier);
+  S.current = { ep: EP.id, scene: EP.start, last: null, done: false };
+  persist();
+}
+function restartEpisode() {
+  const e = S.episodes[EP.id];
+  if (e && e.snapshot) Object.assign(S, JSON.parse(e.snapshot));
+  S.log = S.log.filter(l => l.ep !== EP.id);
+  S.completed = S.completed.filter(x => x !== EP.id);
+  delete S.pitches[EP.id];
+  startEpisode();
+  view = 'play'; render();
+}
+
+// ---------- rendering ----------
+let view = 'title';
+function epLabel() { return `Season ${ORD[EP.season] || EP.season} · Episode ${EP.episode}` }
+function paras(list) {
+  return (list || []).map(b => {
+    if (typeof b === 'string') return `<p>${esc(b)}</p>`;
+    if (test(b.if)) return `<p>${esc(b.text)}</p>`;
+    return b.else ? `<p>${esc(b.else)}</p>` : '';
+  }).join('');
+}
+function scroll() { window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }) }
+
+function renderTitle() {
+  const cur = S.current && S.current.ep === EP.id;
+  const done = S.completed.includes(EP.id);
+  const hasRecap = (EP.previously || []).some(p => test(p.if));
+  sheet.innerHTML = `<section class="title-card fade-in">
+    <div class="presents">A prestige drama in five seasons</div>
+    <h1 class="show">${esc(EP.showTitle)}</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <div class="ep-label">${epLabel()}</div>
+    <h2 class="ep-title">${esc(EP.title)}</h2>
+    <p class="logline">${esc(EP.logline || '')}</p>
+    <div class="actions">
+      ${done ? `<button class="plate" id="b-end" type="button">View end card</button>`
+        : cur ? `<button class="plate" id="b-continue" type="button">Continue</button>`
+        : `<button class="plate" id="b-begin" type="button">${hasRecap ? 'Previously on…' : 'Begin'}</button>`}
+      ${cur || done ? `<button class="plate quiet" id="b-restart" type="button">Restart episode</button>` : ''}
+    </div>
+    <p class="note" id="confirm-restart" hidden>Restarting rewinds every choice made in this episode. <button class="plate quiet danger" id="b-restart-yes" type="button">Rewind it</button></p>
+  </section>`;
+  const on = (id, fn) => { const el = $(id); if (el) el.onclick = fn };
+  on('#b-begin', () => { if (!S.current || S.current.ep !== EP.id) startEpisode(); view = hasRecap ? 'recap' : 'play'; render() });
+  on('#b-continue', () => { view = 'play'; render() });
+  on('#b-end', () => { view = 'end'; render() });
+  on('#b-restart', () => { $('#confirm-restart').hidden = false });
+  on('#b-restart-yes', restartEpisode);
+}
+
+function renderRecap() {
+  const items = (EP.previously || []).filter(p => test(p.if));
+  sheet.innerHTML = `<section class="recap fade-in">
+    <p class="eyebrow">Previously on</p><h2>${esc(EP.showTitle)}</h2>
+    <ul class="prose">${items.map(p => `<li>${esc(p.text)}</li>`).join('')}</ul>
+    <div class="continue"><button class="plate" id="b-go" type="button">Roll the episode</button></div></section>`;
+  $('#b-go').onclick = () => { view = 'play'; render() };
+}
+
+function renderScene() {
+  const sc = EP.scenes[S.current.scene];
+  if (!sc) { sheet.innerHTML = `<p>Scene “${esc(S.current.scene)}” is missing from this episode. Open Save to restart the episode.</p>`; return }
+  addDossier(sc.dossier);
+  const last = S.current.last;
+  let html = '';
+  if (last) {
+    html += `<div class="beat">${last.text ? `<p class="chosen">${esc(last.text)}</p>` : ''}
+      <div class="prose">${paras(last.response)}</div>${last.cue ? `<p class="cue">${esc(last.cue)}</p>` : ''}</div>`;
+  }
+  html += `<section class="scene${sc.cutaway ? ' cutaway' : ''}">
+    <h2 class="slug">${sc.cutaway ? '<span class="cut">Meanwhile</span>' : ''}${esc(sc.slug)}</h2>
+    <div class="prose">${paras(sc.body)}</div>`;
+  const choices = (sc.choices || []).map((c, i) => ({ c, i })).filter(x => test(x.c.if));
+  if (choices.length) html += `<ul class="choices">${choices.map(x => `<li><button class="choice" type="button" data-i="${x.i}">${esc(x.c.text)}</button></li>`).join('')}</ul>`;
+  else if (sc.end) html += `<p class="fin">— END OF EPISODE —</p><div class="continue"><button class="plate" id="b-finish" type="button">Roll credits</button></div>`;
+  else html += `<div class="continue"><button class="plate" id="b-next" type="button">Continue</button></div>`;
+  html += `</section>`;
+  sheet.innerHTML = `<div class="fade-in">${html}</div>`;
+  sheet.querySelectorAll('.choice').forEach(b => b.onclick = () => choose(sc, Number(b.dataset.i)));
+  const nx = $('#b-next'); if (nx) nx.onclick = () => go(sc.next, null);
+  const fin = $('#b-finish'); if (fin) fin.onclick = finish;
+}
+
+function choose(sc, i) {
+  const c = sc.choices[i];
+  apply(c);
+  S.log.push({ ep: EP.id, scene: S.current.scene, choice: i, text: c.text });
+  if (c.cue) toast(c.cue);
+  go(c.goto, { text: c.text, response: c.response || [], cue: c.cue || '' });
+}
+function go(sceneId, last) {
+  S.current.scene = sceneId; S.current.last = last;
+  persist(); renderScene(); scroll();
+}
+function finish() {
+  if (!S.completed.includes(EP.id)) S.completed.push(EP.id);
+  S.current.done = true;
+  persist(); view = 'end'; render();
+}
+
+const WORDS = [[-99, 'Hostile', 'cold'], [-4, 'Cold', 'cold'], [-2, 'Wary', 'cold'], [-1, 'Guarded', ''], [0, 'Even', ''], [1, 'Warm', 'warm'], [2, 'Fond', 'warm'], [4, 'Close', 'hot'], [6, 'Devoted', 'hot']];
+function word(n) { let w = WORDS[0]; for (const x of WORDS) if (n >= x[0]) w = x; return w }
+function tempCard(id, info, start) {
+  const n = S.tones[id] || 0, w = word(n), d = n - (start || 0);
+  const delta = d > 0 ? 'warmer this episode' : d < 0 ? 'cooler this episode' : 'unchanged';
+  return `<div class="temp"><span class="who">${esc(info.name)}</span><span class="word w-${w[2]}">${w[1]}</span><span class="delta">${delta}</span></div>`;
+}
+
+function renderEnd() {
+  const e = S.episodes[EP.id] || { tonesAtStart: {}, ledgerAtStart: 0 };
+  const ledger = S.ledger.filter(l => l.ep === EP.id);
+  const cast = (EP.cast || []).filter(c => c.tracked);
+  const pick = S.pitches[EP.id];
+  const ask = `Write the next episode of ${EP.showTitle}. Read my save from the game artifact first.`;
+  sheet.innerHTML = `<section class="endcard fade-in">
+    <div class="title-card" style="padding:0"><p class="eyebrow" style="margin:0">${epLabel()} · End card</p><h2 class="ep-title">${esc(EP.title)}</h2></div>
+    ${EP.endCard && EP.endCard.tag ? `<p class="tag">${esc(EP.endCard.tag)}</p>` : ''}
+    <div><p class="eyebrow">The ledger</p><ul class="ledger">${ledger.map(l => `<li><span>${esc(l.text)}</span></li>`).join('') || '<li><span>You kept your hands clean. For now.</span></li>'}</ul></div>
+    <div><p class="eyebrow">Temperature</p><div class="temps">${cast.map(c => tempCard(c.id, c, e.tonesAtStart[c.id])).join('')}</div></div>
+    <div><p class="eyebrow">Next week on ${esc(EP.showTitle)}</p><h2>Pick a direction for the writers' room</h2>
+      <div class="pitches">${(EP.endCard?.pitches || []).map(p => `<button class="pitch" type="button" data-id="${esc(p.id)}" aria-pressed="${pick === p.id}"><b>${esc(p.title)}</b><span>${esc(p.blurb)}</span></button>`).join('')}</div>
+      <p class="note" id="pitch-note" ${pick ? '' : 'hidden'}>Your pick is saved. When you're ready for the next episode, paste this to Claude:</p>
+      <div class="copybox" id="ask" ${pick ? '' : 'hidden'}><code id="ask-text">${esc(ask)}</code><button class="plate quiet" id="b-copy" type="button">Copy</button></div>
+    </div>
+  </section>`;
+  sheet.querySelectorAll('.pitch').forEach(b => b.onclick = () => {
+    S.pitches[EP.id] = b.dataset.id; persist();
+    sheet.querySelectorAll('.pitch').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    $('#pitch-note').hidden = false; $('#ask').hidden = false; toast('The writers’ room has your note.');
+  });
+  $('#b-copy').onclick = () => copy($('#ask-text'));
+}
+
+function renderDossier() {
+  const ids = Object.keys(S.dossier).filter(id => S.dossier[id].name);
+  sheet.innerHTML = `<section class="panel fade-in"><p class="eyebrow">Case files</p><h2>Dossiers</h2>
+    ${ids.length ? `<div class="dossier">${ids.map(id => { const f = S.dossier[id]; const w = word(S.tones[id] || 0);
+      return `<div class="file"><h3>${esc(f.name)}</h3><span class="role">${esc(f.role || '')}</span>
+        ${f.tracked && S.current ? `<span class="temp-inline">Toward you: ${w[1]}</span>` : ''}
+        <ul>${f.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></div>` }).join('')}</div>`
+      : '<p>Your files are empty. Start the episode and the people around you will fill them.</p>'}
+    <div><button class="plate quiet" id="b-back" type="button">Back to the episode</button></div></section>`;
+  $('#b-back').onclick = back;
+}
+
+function renderStory() {
+  const byEp = {};
+  for (const l of S.ledger) (byEp[l.ep] = byEp[l.ep] || []).push(l.text);
+  const eps = SERIES.episodes || [];
+  sheet.innerHTML = `<section class="panel fade-in"><p class="eyebrow">The record</p><h2>Story so far</h2>
+    ${eps.map(e => `<div class="file"><h3>${esc(e.title)}</h3><span class="role">${esc(e.id)}${S.completed.includes(e.id) ? ' · watched' : ''}</span>
+      ${byEp[e.id] ? `<ul>${byEp[e.id].map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : '<p class="note">No choices recorded yet.</p>'}</div>`).join('')}
+    <div><button class="plate quiet" id="b-back" type="button">Back to the episode</button></div></section>`;
+  $('#b-back').onclick = back;
+}
+
+function encodeSave() { return btoa(unescape(encodeURIComponent(JSON.stringify(S)))) }
+function renderSettings() {
+  sheet.innerHTML = `<section class="panel fade-in"><p class="eyebrow">Your save</p><h2>Save &amp; transfer</h2>
+    <p>${saveRef ? 'Your progress saves to your Claude account automatically, so it follows you to any browser where you open this page signed in. Claude reads it from there when writing the next episode.' : 'Cloud save isn’t available in this view, so progress is kept in this browser. Use a save code to move it.'}</p>
+    <div class="file"><h3>Save code</h3><p class="note">Copy this to carry your save by hand, or keep a backup.</p>
+      <textarea id="code-out" readonly>${encodeSave()}</textarea><div class="row"><button class="plate quiet" id="b-copycode" type="button">Copy code</button></div></div>
+    <div class="file"><h3>Load a save code</h3><textarea id="code-in" placeholder="Paste a save code"></textarea>
+      <div class="row"><button class="plate quiet" id="b-load" type="button">Load save</button><span class="note" id="load-msg"></span></div></div>
+    <div class="file"><h3>Start over</h3><p class="note">Erases every episode’s choices on this save.</p>
+      <div class="row"><button class="plate quiet danger" id="b-wipe" type="button">Erase save</button><button class="plate quiet danger" id="b-wipe-yes" type="button" hidden>Yes, erase everything</button></div></div>
+    <div><button class="plate quiet" id="b-back" type="button">Back to the episode</button></div></section>`;
+  $('#b-copycode').onclick = () => copy($('#code-out'));
+  $('#b-load').onclick = () => {
+    try {
+      const data = JSON.parse(decodeURIComponent(escape(atob($('#code-in').value.trim()))));
+      if (!data || data.v !== 1) throw 0;
+      S = Object.assign(fresh(), data); persist(); $('#load-msg').textContent = 'Save loaded.'; view = 'title'; setTimeout(render, 600);
+    } catch { $('#load-msg').textContent = 'That code didn’t read as a save. Copy the whole code and try again.' }
+  };
+  $('#b-wipe').onclick = () => { $('#b-wipe-yes').hidden = false };
+  $('#b-wipe-yes').onclick = () => { S = fresh(); persist(); view = 'title'; render() };
+  $('#b-back').onclick = back;
+}
+
+function copy(el) {
+  const text = el.value !== undefined ? el.value : el.textContent;
+  const sel = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); if (el.select) el.select() };
+  try { navigator.clipboard.writeText(text).then(() => toast('Copied.'), () => { sel(); toast('Selected. Press copy on your keyboard.') }) }
+  catch { sel(); toast('Selected. Press copy on your keyboard.') }
+}
+let tt; function toast(t) { const el = $('#toast'); el.textContent = t; el.classList.add('on'); clearTimeout(tt); tt = setTimeout(() => el.classList.remove('on'), 3200) }
+
+function back() { view = S.current && S.current.ep === EP.id ? (S.completed.includes(EP.id) ? 'end' : 'play') : 'title'; render(); scroll() }
+function route() {
+  if (S.completed.includes(EP.id)) view = view === 'title' ? 'title' : 'end';
+  render();
+}
+function render() {
+  $('#epchip').textContent = `${epLabel()} · ${EP.title}`;
+  if (view === 'recap') renderRecap();
+  else if (view === 'play' && S.current && S.current.ep === EP.id) renderScene();
+  else if (view === 'end') renderEnd();
+  else if (view === 'dossier') renderDossier();
+  else if (view === 'story') renderStory();
+  else if (view === 'settings') renderSettings();
+  else renderTitle();
+}
+
+$('#home').onclick = () => { view = 'title'; render() };
+$('#nav-dossier').onclick = () => { view = 'dossier'; render(); scroll() };
+$('#nav-story').onclick = () => { view = 'story'; render(); scroll() };
+$('#nav-settings').onclick = () => { view = 'settings'; render(); scroll() };
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flush() });
+
+const local = readLocal();
+if (local && local.v === 1) S = Object.assign(fresh(), local);
+render();
+connect();
+})();
+</script>
