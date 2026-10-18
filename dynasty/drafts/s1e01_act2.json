@@ -1,0 +1,475 @@
+{
+ "scenes": {
+  "s06": {
+   "slug": "EXT. THE MERCY BALL TENT — NIGHT",
+   "cutaway": false,
+   "body": [
+    "9:54. Whit comes back in through the west flap with the night still on him. The band is into “San Antonio Rose,” the fiddle doing the work the singer can’t, and three hundred couples who between them own a respectable fraction of the Permian Basin are two-stepping on a floor rented from a company in Dripping Springs. On the forty-foot wall, Colt is interviewing Deacon. “Deacon, real talk. How are we feeling about the Senate?” Deacon is feeling nothing about the Senate. Deacon is eating a succulent out of a hollowed-out Moby-Dick, and the stream’s comment count is climbing the side of the screen like a fever.",
+    "He looks down. There’s caliche on his trouser cuffs: the pale chalk dust of West Texas, the stuff they spread on lease roads by the ton, the stuff that gets into everything and stays. He bends and brushes at it. It smears. He brushes again and makes it worse, a man in a six-thousand-dollar Tom Ford tuxedo slapping at his own ankles beside the dessert table, and he straightens up before anybody can decide it means something.",
+    {
+     "if": "e1_called_tack",
+     "text": "Across the tent the service door opens and Tack comes in from the north, tugging straight a rented tux jacket that was cut for a larger and more confident man. He takes up his post beside the door — same post, same angle, hands folded over his belt buckle — as if he’d never left it. Nobody looks at him. Nobody has looked at Tack at a party in thirty years. It occurs to Whit, for the first time in his life, to wonder whether that’s on purpose."
+    },
+    {
+     "if": "e1_hadley_stalled",
+     "text": "Over by the brisket station Hadley has Soren Vale backed against a carving board and is talking with both hands: acre-feet, drawdown, the drought of the fifties, the Rule of Capture as a concept and as a weapon. Soren is nodding the way a man nods when he’s being shown photographs of a surgery he didn’t consent to. Over Soren’s shoulder Hadley finds Whit and taps her bare wrist where a lesser woman would wear a watch. Nine minutes, Golden. You owe me nine minutes."
+    },
+    "Greer is at his elbow before he’s finished straightening. She doesn’t say anything. She takes a linen napkin off the nearest table — Table Nine, the Ashworths, a hollowed-out Lonesome Dove sprouting an aloe — and kneels. Kneels, in camel silk, on a rented dance floor, in front of six hundred people, and goes at his cuffs herself in short hard strokes, the way you’d buff a boot.",
+    "She talks up at him with a smile aimed at the room. Anyone watching sees a wife fussing over her husband, which is the most flattering thing a Fort Worth wife can be seen doing in public. Bunny Ashworth, two tables over, watches. Bunny hums a little.",
+    {
+     "if": "e1_texted_greer",
+     "text": "“Did you find him?” is the first thing she says, low, under the fiddle, and it’s a real question; for a second she sounds like a person and not a firm. He nods. She nods. She held up her end tonight, he told her where he was going, and so what comes next comes gentler than he deserves. “You were gone nineteen minutes, Whit.” Stroke. Stroke. “So was she.”",
+     "else": "“You were gone nineteen minutes,” she says pleasantly, to his shins. Stroke. Stroke. “So was she.”"
+    },
+    {
+     "if": "e1_followed_paloma",
+     "text": "“Bunny says you left four seconds after her.” Stroke. “Bunny counts.”"
+    },
+    "She folds the napkin over the dirt so the dirt doesn’t show and keeps working. “I don’t care where you put it, Whitaker.” Stroke. “I care who sees you carry it.”",
+    "He has heard her say it once before, years ago, about a different thing, and it does to him now exactly what it did then. It frightens him. And under the fright, shamefully, it’s a comfort: here is a woman who will kneel on a dance floor so that nobody sees him dirty. He has never in his life been so well looked after or so closely watched, and most days he can’t tell the two apart, and most days he doesn’t try.",
+    "She stands. A knee pops; she doesn’t acknowledge it. Behind her a donor in a bolo tie is explaining the ice sculpture to one of Soren’s vice presidents, who is wearing Soren’s exact vest in a smaller size. “Guy from the Ice Hotel in Sweden. Flew him in. He said our heat was a creative challenge.” The R-Bar-M behind them is down to an R, a bar, and a suggestion.",
+    "Greer’s reading glasses come out of her clutch, folded, and she holds them by the hinge like a gavel she hasn’t decided to bring down. “We’re not having a fight,” she says. “We’re having a meeting.” She lets the band finish a phrase. “Where were you.”",
+    "There’s no question mark on it. Greer doesn’t use them after nine p.m. Six hundred yards west there’s a chapel with his index card on the front pew. A couple hundred yards north there’s a barn with his father’s shape pressed into the dirt behind it. His wife is holding her glasses and waiting, the fiddle is waiting, and up on the forty-foot wall Deacon has found a second book."
+   ],
+   "choices": [
+    {
+     "text": "Tell her. Dad fell behind the barn.",
+     "if": "!e1_promised_paloma",
+     "cue": "Greer will use that.",
+     "set": {
+      "e1_told_greer_fall": true
+     },
+     "tone": {
+      "greer": 1
+     },
+     "ledger": "You told Greer your father fell behind the cutting barn.",
+     "response": [
+      "So he tells her. He does it quietly and out of order, the way true things come out of him: the hat in the dirt, the tux gone white with dust, the left hand going like a struck wire. Then the part he hadn’t planned on saying. “He was talking to somebody, Greer. Out at the fence. Telling him to get off the land.” He hears his own voice drop. “There was nobody there.”",
+      "At that, Greer goes still: one second longer than Greer is ever still. The glasses stop halfway to nowhere. He has watched her absorb a CEO’s arrest, a casualty count and her own father’s voice on a voicemail asking for money, and none of it stopped her. This does.",
+      "“Mm.” Then the firm comes back online, all at once, like the lights after a storm. “Take me to him. Now.” She’s already moving, already smiling at Pete Ashworth as they pass his table. “If he’s down, I need to see it with my own eyes before Hadley does.”"
+     ],
+     "goto": "s06b"
+    },
+    {
+     "text": "Tell her. You promised Paloma — tell her anyway.",
+     "if": "e1_promised_paloma",
+     "cue": "Greer will use that.",
+     "set": {
+      "e1_told_greer_fall": true
+     },
+     "tone": {
+      "greer": 1,
+      "paloma": -1
+     },
+     "ledger": "You told Greer about the barn. You’d promised Paloma you wouldn’t.",
+     "response": [
+      "So he tells her, quietly and out of order: the hat in the dirt, the tux gone white, the left hand going like a struck wire. Then the part he hadn’t planned on saying. “He was talking to somebody, Greer. Out at the fence. There was nobody there.” Greer goes still, one second longer than Greer is ever still, and the glasses stop halfway to nowhere.",
+      "The promise is eleven minutes old. He can hear exactly how long it lasted. It lasted one fiddle break.",
+      "“Mm.” Then the firm comes back online, all at once. “Take me to him. Now.” She’s already moving, already smiling at Pete Ashworth as they pass. “If he’s down, I need to see it with my own eyes before Hadley does.”"
+     ],
+     "goto": "s06b"
+    },
+    {
+     "text": "‘The powder room in the Italy. The gold swan one.’",
+     "set": {
+      "e1_lied_swan": true,
+      "lies_to_greer": "+1",
+      "greer_suspicion": "+1"
+     },
+     "ledger": "You told Greer you were in the gold swan powder room.",
+     "response": [
+      "“Powder room in the Italy,” he says. “The gold swan one. I needed a minute alone with the swan.”",
+      "“The swan’s been roped off since four,” Greer says. “Pete Ashworth’s nephew was sick in it. There’s a man from ServiceMaster in there right now with an industrial fan.” She lets that sit. She lets it sit long enough for him to hear the fan.",
+      "“Mm.” And then she takes his hand and squeezes it, a real squeeze, warm and dry and brief, and walks him toward the head table smiling at everyone they pass, as if the lie were a present he’d brought her and she has decided to keep it. For later. In a drawer."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "Tell her about the chapel. Leave out the barn.",
+     "set": {
+      "e1_greer_heard_chapel": true,
+      "greer_suspicion": "+1",
+      "affair_exposure": "+1"
+     },
+     "ledger": "You told Greer you were in the chapel. You didn’t mention the barn.",
+     "response": [
+      "“Rehearsing,” he says. “In the chapel.”",
+      "“In the chapel.”",
+      "“It has great acoustics.”",
+      "Greer doesn’t answer. She turns her phone around. It’s already open — of course it’s already open — to @cuervocountycouture, the anonymous account that everybody from Midland to Highland Park knows is Bunny. Posted 9:15: Paloma on the chapel path in the dark, barefoot, black dress, her shoes hanging from two fingers. Caption: “Somebody’s been to church 🙏🕊️.” Two thousand likes. One of them is Colt. “Mm,” says Greer, and puts the phone away. “Smile. You’re on the wall.”"
+     ],
+     "goto": "s07"
+    }
+   ]
+  },
+  "s06b": {
+   "slug": "INT. THE HOUSE — THE OLD HALL — NIGHT",
+   "cutaway": false,
+   "body": [
+    "9:58. Greer crosses the south lawn in four-inch heels at a speed that would get a horse disqualified. “We have eight minutes,” she says, without looking at her watch, because she is the watch. The grass is wet. It’s the only green lawn in Cuervo County in October, watered every night out of the aquifer the company is about to sell, and it’s soaking the hem of a dress that cost more than the county’s annual library budget, and she doesn’t slow down.",
+    "The House takes them in by the mudroom door, out of the noise. Saddle soap and Pledge, seventy years of boots on the same pine. On the hall wall hangs the framed 1986 Texas Monthly cover: THE VULTURE OF MIDLAND, his father at thirty-six in a hard hat, grinning over a map of everything he bought for pennies the year everyone else went broke. Amon hung it himself. Three separate publicists have asked him to take it down. Two of them no longer work in Texas.",
+    "Greer passes it without a glance. At the old room door she stops, squares her shoulders and knocks: three knocks, evenly spaced, the knock you use on a deposition room when you already know what’s inside.",
+    {
+     "if": "e1_called_tack",
+     "text": "Tack is already in the hall, standing beside the door like a piece of furniture that came with the House, hat in his hands. He doesn’t move when they come in. “Evening, Miss Greer.” “Odell.” She’s the only person alive who calls him that. Greer knows it, Tack knows she knows it, and Whit, standing between them, has the feeling of watching two contractors nod at each other across a job site he doesn’t have a hard hat for."
+    },
+    "The door opens four inches. Paloma. Shoes back on — the invoices — dress smoothed, not a grain of the barn on her anywhere. “Paloma,” Greer says warmly. “Greer,” Paloma says, exactly as warm, and it’s like watching two people hand a cast-iron pan back and forth with no oven mitts and neither one letting on.",
+    "“I’d like to see Amon.”",
+    "“He’s resting.”",
+    "“I’m family,” Greer says.",
+    "“So am I,” says Paloma. “That’s the joke everyone tells.”",
+    "Neither of them raises her voice. Neither of them would. Greer makes her case the way she’d make it to a board: she runs the family office; in eight minutes the chairman is due on a stage in front of six hundred people, a United States Senate candidate, a horse, and a man from California with a three-billion-dollar check; she needs to know, for planning purposes, whether he can stand. “For planning purposes,” Greer repeats, kindly, as if Paloma might not have the vocabulary.",
+    "“He can stand,” Paloma says. “He’s standing.”",
+    "From inside the room, through four inches of door, comes the voice: the lion, or a very good recording of one. “Who’s out there?”",
+    "Nobody answers him. Paloma’s eyes go to Whit and stay there for one second. She knows how Greer knows. She doesn’t say it. She doesn’t need to; it’s right there on his face, where everything he’s ever done has always been posted for public inspection.",
+    {
+     "if": "e1_promised_paloma",
+     "text": "The look isn’t angry. He could survive angry; he grew up in a house built out of it. It’s worse. It’s the look of someone redoing a sum she thought she had right: carrying a number, crossing something out, arriving at a new figure for what he’s worth."
+    },
+    {
+     "if": "e1_asked_whats_wrong",
+     "text": "And it lands on Whit, standing in the hall he grew up in, that his wife is about to get in one minute the answer he couldn’t get in five. He asked. Greer doesn’t ask. Greer knocks."
+    },
+    "Greer’s phone buzzes. She answers it with one thumb, never looking down, her eyes on Paloma the whole time. Whit reads it upside down, a skill nine years of marriage have given him: Kilgore’s campaign manager, all caps, asking where they want Deacon for the speech. Greer types, “Horse out of the tent before the speech. Plus nine is not plus nine if it shits.” Send. She touches one of the heirloom earrings, the pair she bought herself at an estate sale in River Oaks and has let Fort Worth assume came down from a grandmother, and goes on looking at Paloma as if the text never happened.",
+    "Three people in a narrow hall, and behind a door a fourth, who used to fill any room he walked into and is now being argued over like a parking space. Whit is standing exactly between the two women. In one sense or another he has been standing there for eleven months. They’re both waiting for him."
+   ],
+   "choices": [
+    {
+     "text": "Stand with Greer. ‘She’s my wife, Paloma.’",
+     "set": {
+      "e1_sided_greer": true,
+      "e1_greer_saw_amon": true
+     },
+     "tone": {
+      "greer": 1,
+      "paloma": -1
+     },
+     "ledger": "You stood with your wife at your father’s door.",
+     "response": [
+      "“She’s my wife, Paloma.” It comes out gentler than he means and firmer than he expected. Paloma looks at him a moment longer. Then she opens the door all the way.",
+      "Amon is upright in the leather chair beside the Zenith, collar closed, tie retied, the hat back on his head. Magnificent, and the color of ash. He looks straight past his son to Greer and says, “Satisfied, Mrs. Ransome?” The name hangs in the doorway, because there are two Mrs. Ransomes in it and he hasn’t said which.",
+      "Greer is satisfied. She is also, Whit sees, looking at his father’s left hand, which is on the arm of the chair and shaking, until Amon notices her noticing and puts it in his pocket. Whit sees her see it. Paloma sees Whit see it. Out on the lawn, the band starts the next song."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "Stand with Paloma. ‘He said nobody, Greer.’",
+     "cue": "Greer noticed.",
+     "set": {
+      "e1_sided_paloma": true,
+      "greer_suspicion": "+1"
+     },
+     "tone": {
+      "paloma": 1,
+      "greer": -1
+     },
+     "ledger": "You took Paloma’s side against your wife.",
+     "response": [
+      "“He said nobody, Greer.”",
+      "It isn’t quite true. It was Paloma who said nobody, behind the barn, on her knees in the dirt. The second it’s out of his mouth he can hear that everyone in the hall knows exactly whose word he’s keeping.",
+      "Paloma doesn’t thank him. She closes the door gently, the way you’d close it on a sleeping child, and the latch clicks.",
+      "Greer turns to him with the face she wore at the refinery-fire press conference, the face that got two dead men described on the evening news as a tragic exception to an exemplary safety record: composed, sympathetic, unreadable. “Mm.” On the lawn she takes his arm as if nothing has happened, which is how he knows something has."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "Make it a joke and herd everybody back to the party.",
+     "set": {
+      "e1_herded_house": true,
+      "dodges": "+1"
+     },
+     "ledger": "You made a joke at your father’s door and herded everyone back to the Ball.",
+     "response": [
+      "“Ladies.” He spreads his arms, one hand toward each of them, a man herding cattle that outrank him. “Respectfully, and I mean that with love and genuine terror, the man has a speech. Let’s let him put his face on.”",
+      "From inside, the lion bellows and ends it for all of them. “Get out. All of you. I’ll be there when I’m there.” It rattles the Zenith on its shelf. It’s a good voice. It’s the voice that bought half of Midland in 1986.",
+      "Paloma closes the door. Greer has heard him; she hasn’t seen a thing. She takes Whit’s arm on the way out, and he can feel her deciding the voice will do for now, the way you sign for a package you mean to open later, alone, with a knife."
+     ],
+     "goto": "s07"
+    }
+   ]
+  },
+  "s07": {
+   "slug": "EXT. THE MERCY BALL TENT — THE STAGE — NIGHT",
+   "cutaway": false,
+   "body": [
+    "10:06. The lights drop. The band stops in the middle of a bar, which the band has been paid not to mind. A spotlight finds the stage steps, and Amon Ransome walks up them.",
+    "No stiff steps. No hand. No dust. Whit has to look twice to believe it, then a third time, because he can’t find the seam. His father crosses the stage in a clean black tux and the silverbelly Open Road he has worn since 1974 — eleven hats, one hat — with the long, unbothered stride of a man who has never in his life been on the ground behind anything, and the tent rises for him. Six hundred people who paid twenty-five thousand dollars a table to be here stand up like a congregation. Whit stands with them. His knees decide before he does.",
+    "At the side of the stage, in the dark just past the edge of the light, Paloma stands with her hands folded in front of her. She isn’t watching the crowd and she isn’t watching his face. She’s watching his feet. Tack is at the service door. Lorna is at Table Two in her wrap, applauding with two fingers against her palm the way you applaud in a museum. Bunny has her phone up.",
+    {
+     "if": "e1_carried_amon",
+     "text": "Whit watches the left hand. It goes into the trouser pocket at the top of the steps and it stays there. It will stay there, he understands, for the whole speech, and he knows now, having carried the man, what it costs to keep it there. He has never been so proud of his father. He has never been so frightened of him."
+    },
+    {
+     "if": "e1_called_tack",
+     "text": "Whit thinks: twenty minutes ago he was in the dirt. And Tack said that’s all it was, a turn on the gravel, and now look at him. Maybe that is all it was. Whit would very much like that to be all it was. Standing, applauding, he decides that it was."
+    },
+    {
+     "if": "e1_told_greer_fall",
+     "text": "Beside him, Greer isn’t watching the speech. She’s watching his father’s left hand — the pocket, the shape of the fist inside it — with the calm professional attention of someone counting the exits."
+    },
+    {
+     "if": "e1_sided_paloma",
+     "text": "Greer doesn’t touch him. She always touches him during speeches: a hand on his sleeve, a knuckle at the small of his back, small corrections, a jockey’s hands. Tonight she sits a careful inch away and applauds exactly as much as everyone else."
+    },
+    {
+     "if": "e1_lied_swan || e1_greer_heard_chapel",
+     "text": "Greer’s hand finds his knee under the tablecloth, light and proprietary, the way you’d rest a hand on the hood of a car you’ve already paid off."
+    },
+    {
+     "if": "e1_hadley_stalled",
+     "text": "Across the family table Hadley catches his eye and lifts her bourbon a quarter of an inch. You’re welcome. From Hadley, it’s practically a hug."
+    },
+    "“Sit down,” Amon says into the microphone, and they do, and he lets them sit in the quiet longer than is comfortable. Whit has watched his father use silence his whole life: at closings, at funerals, at Whit’s eighth-grade parent-teacher conference, which the vice principal ended early, in tears. Nobody in the tent can tell what the pauses are for. That has always been the trick of them.",
+    "“In 1923,” Amon says, “my grandfather put a bit into this ground a mile from where you’re sitting, and the ground gave him back oil. One month after Santa Rita. He never forgave the University of Texas for beating him by a month.” Warm laughter; the UT regent at Table Six laughs loudest. “He thanked God and kept drilling. That is the whole of the Ransome theology. Thank God and keep drilling.” The pause. “A hundred and three years. When oil went to ten dollars in 1986, we were cattle. When the cattle went to hell in the drought of 2011, we were oil. We have been whatever this state needed, and we have charged it fair.” The pause. “Mostly fair.”",
+    "Bigger laughter. Behind him the LED wall dissolves to the line Ransome Horizon paid an agency in Austin four hundred thousand dollars to write, ENERGY FOR THE NEXT TEXAS, over drone footage of a pronghorn that, Whit happens to know, was rented.",
+    "Then Amon leans on the podium and looks down at the board table — eleven directors, eleven spouses, a retired ExxonMobil executive asleep with his eyes open — and says, mildly, “I have buried better men than this board.”",
+    "The tent roars. Pete Ashworth roars loudest and slaps the table. Whit laughs too. It’s a great line; it has been a great line at every Ransome function since Whit was in diapers, and his father’s timing on it is, as always, perfect.",
+    "“Now.” The laughter thins. “Everybody in this tent came out here tonight to see me name my heir.” He lets it hang. Whit can feel the two index cards in his breast pocket, the third one still face down on a pew six hundred yards west. Greer’s hand, wherever it is, goes still.",
+    "“I’m not going to.”",
+    "Silence. Then the laugh a crowd gives when it hopes it’s being joked with. It isn’t. Amon waits for the laugh to die, and lets it die all the way.",
+    "“I have run cattle for sixty years,” he says. “You don’t buy a yearling for its papers. You put it in the pen and you turn out a cow, and you watch what it does. Does it read the cow. Does it hold. Does it quit.” The pause. “I have two children. I am going to put them in the pen.”",
+    "“For one year, starting Monday, Hadley” — the name in full, struck like a gavel — “and my son” — two words that land on Whit like a demotion with a bow on it — “will each carry the weight of this company. A real piece of it. A piece that can kill them. And at the end of that year I will name the one who earned it, and the other one can go to work for them. Or go to Dallas.” A huge laugh; Dallas always gets a laugh. “Assignments Monday. Fort Worth. Eight a.m. Wear boots you can walk in.”",
+    "Across the table, Hadley has stopped breathing. She is thirty-seven years old. She has carried the weight of this company since she was twenty-four, including the April afternoon in 2020 when oil went to minus thirty-seven dollars a barrel and she ran the whole Permian from the cab of a pickup on a lease road with two phones and a legal pad. She has just been told, in front of six hundred people, that all of it was practice.",
+    "Before anyone can decide what to do with their face, Amon raises his good hand and says, “Now for the good news,” and Soren Vale comes up the steps. Patagonia vest over a tuxedo shirt. Lucchese boots so new they squeak on the stage; the podium mic catches every step, like a dog toy. He shakes Amon’s hand with both of his, the way men from California shake hands with men they’ve read about.",
+    "Project Wellspring. Amon says it like scripture and Soren says it like a launch. Twenty years. Three point one billion dollars. Gas-fired power from Ransome wells, and nine million gallons a day of West Texas groundwater from under the Mercy, piped up the road to Halcyon Compute’s two-gigawatt Lariat Campus, where, Soren explains, glowing, the future will be trained. “We don’t build data centers,” Soren says. “We build cathedrals of inference.” Somebody at Table Fourteen says amen. Soren, who has no idea what to do with that, says, “Exactly.”",
+    "The wall goes a hopeful blue: THE WELLSPRING COMMUNITY PARTNERSHIP, in a font that cost money. Four hundred jobs for Pardee. A new imaging wing for Ransome Memorial. Scholarships. A splash pad.",
+    "Then Pastor Jimmy Don Quick of Lone Star Cathedral, Midland — eleven thousand members and a satellite campus in a former Bass Pro Shop — comes up in a dove-gray suit, and two men from Ransome Midstream carry out a three-foot length of blue pipe tied with a white satin bow. The pastor lays both hands on it and closes his eyes. “Lord,” he says, “bless this pipe, and the water that will flow through it, and the inference it will make possible.” He doesn’t know what inference is either. He blesses it anyway. Six hundred people bow their heads to a pipe.",
+    {
+     "if": "e1_said_dad",
+     "text": "During the applause, for no reason at all, it comes back to him: Stay in the truck. His father’s grip on his wrist, his father’s voice from somewhere far off. Then the band hits a sting and it’s gone, the way a word goes when you reach for it."
+    },
+    "Whit is still applauding when he notices the room has stopped looking at the stage.",
+    "Colt has found him. Of course Colt has found him. Colt has been finding people at their worst since he got his first GoPro at twelve, and Colt loves him, which doesn’t help. The forty-foot wall cuts from the blessed pipe to the family table, and there’s Whit’s face, ten feet high and in perfect focus, at the exact moment his father finishes not choosing him. In the corner of the screen, little hearts float up. 41.2K WATCHING. Six hundred people turn from the stage to the screen to see how he takes it.",
+    "He can see himself seeing himself. It’s the worst mirror ever built. Small, at the far edge of it, his father stands at the podium with one hand in his pocket, waiting like everyone else to see what the boy will do."
+   ],
+   "choices": [
+    {
+     "text": "Make it a joke. Raise your glass: ‘To the Trial. I’ve always tested well.’",
+     "cue": "Hadley won’t forget this.",
+     "set": {
+      "e1_snub_joke": true,
+      "dodges": "+1",
+      "board_support": "+1"
+     },
+     "tone": {
+      "amon": -1,
+      "hadley": -1
+     },
+     "ledger": "Your father passed you over on a forty-foot screen. You got the biggest laugh of the night.",
+     "response": [
+      "He picks up his glass. He finds Colt’s lens like an old friend at a reunion. He raises the glass to the forty-foot version of himself and says, loud enough for the table mics, “To the Trial.” He takes a pause, his father’s trick; he learned it somewhere. “I’ve always tested well.”",
+      "The tent comes apart. It’s the biggest laugh of the night, bigger than buried better men. The two board independents laugh hardest, the ones who go wherever the stock goes, and Whit watches them decide he’s a good sport, which on this board is a kind of currency. Pete Ashworth slaps the table again. Bunny stops humming to laugh.",
+      "Amon, at the podium, doesn’t laugh. Across the table, Hadley’s glass comes down very, very slowly, until it touches the cloth without a sound."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "Stand. Applaud him. Mean some of it.",
+     "set": {
+      "e1_snub_grace": true,
+      "spine": "+1",
+      "board_support": "+1"
+     },
+     "tone": {
+      "amon": 1,
+      "greer": 1
+     },
+     "ledger": "You stood and applauded your father for passing you over.",
+     "response": [
+      "He stands. He doesn’t decide to; he’s simply up, chair pushed back, hands coming together, and for a long second he’s the only person on his feet in a tent of six hundred, applauding the man who has just declined to choose him.",
+      "Then the room follows him up. Table by table: the board, the Ashworths, the Midland money and the Dallas money, Kilgore with his hat over his heart for some reason, until the whole tent is standing because the son stood. On the wall his face is clear and warm and very nearly true. He means about half of it. He’s surprised it’s that much.",
+      "Amon finds him in the light from the podium. Holds there. Then nods once, a short dip of the hat brim: the nod Whit has seen him give a horse that worked, and, until tonight, not once to anybody he’s related to."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "Smile. Leave.",
+     "set": {
+      "e1_snub_walked": true,
+      "dodges": "+1",
+      "board_support": "-1",
+      "press_heat": "+1"
+     },
+     "tone": {
+      "amon": -1,
+      "greer": -1,
+      "lorna": 1
+     },
+     "ledger": "You smiled for the camera and walked out of your father’s speech.",
+     "response": [
+      "He smiles at the camera. It’s a great smile, the one from the Ransome Christmas card, the one with the Bible and the rifle and the Labrador, styled by a woman from Los Angeles who called him “a really giving face.” Ten feet high, it doesn’t flicker.",
+      "Then he stands, buttons his jacket — one button, the way his mother taught him — and walks out. Not fast. Down the side aisle, past the Ashworths, past the ice brand weeping into its tray, past Tack at the service door, who doesn’t move, and out the west flap into the dark.",
+      "Colt’s camera follows him to the edge of the light and loses him there. For three seconds the forty-foot wall shows nothing but a canvas flap swinging. Then it cuts back to the tent, and on the screen six hundred people are watching him go."
+     ],
+     "goto": "s08b"
+    }
+   ]
+  },
+  "s08": {
+   "slug": "EXT. THE MERCY BALL — THE FAR BAR — NIGHT",
+   "cutaway": false,
+   "body": [
+    "10:30. The far bar sits at the very edge of things, where the sailcloth gives out and the string lights carry on alone over the grass, as if they’ve been told the party continues and are too polite to check. It’s the bar for people who want to be found only by people who are looking. The bartender, a man bun from Austin with a Railroad Commission seal tattooed on his forearm that he got, he tells everyone, ironically, is building a forty-dollar Ranch Water: Lalo, lime, Topo Chico, and then, because the events manager is watching, a ceremonial splash of Mercy Ranch Water from the can, so it can go on the card as estate.",
+    "Taped inside the bar where only the bartender can see it is a typed list headed KILGORE — DO NOT SERVE ON CAMERA. Tito’s. Gin. Topo Chico. Water. Anything clear. Underneath, in Sharpie, in the comms girl’s round hand: “Clear reads as vodka. Vodka reads as Austin.”",
+    "Royce Teague is leaving as Whit arrives, which feels arranged and probably was. He’s in a white dinner jacket nobody has worn sincerely since 1962, aviators on at half past ten at night, and his company’s ticker inlaid in turquoise down the shafts of his ostrich boots — TPP, which isn’t listed on any exchange; he had it done anyway, in case. He claps Whit on the shoulder hard enough to count as a contact sport. “Brother.” Whit has never been his brother. “The Lord made oil and the Lord made lawyers, and I thank Him for both.” He winks at Hadley over Whit’s shoulder. Then he walks out from under the string lights into the black pasture like a man with a deed to the dark.",
+    "Hadley stays where she is. Black tux jumpsuit, the Patek she has never once mentioned, a bourbon neat she isn’t drinking so much as consulting. She has bitten the nail of her right index finger down to the pink and started on the next one. She doesn’t look at Whit when he leans on the bar beside her. She looks at the bright heart of the tent, where their father is shaking hands with a line of people that runs out the flap.",
+    {
+     "if": "e1_snub_joke",
+     "text": "“‘I’ve always tested well,’” Hadley says. “That was good, Golden. Really. You tested well at Deerfield, too. They gave you a scar and a diploma.” She isn’t laughing. He tries to remember the last time he saw her laugh at something he said and gets as far as the Clinton administration."
+    },
+    {
+     "if": "e1_snub_grace",
+     "text": "“Nice standing ovation.” She turns her glass a quarter-turn on the bar. “You started it. You know that, right? Dad saw who started it.” It sounds like an accusation, and then, about halfway through, it doesn’t. “It was the right thing. I hate that you did the right thing. I’d have done it if I’d thought of it. I didn’t think of it, because I was busy wanting to set the tent on fire.”"
+    },
+    {
+     "if": "e1_hadley_stalled",
+     "text": "“I bought you nine minutes with Soren,” she says. “Nine minutes of acre-feet. He asked me whether aquifers were renewable, and I watched him find out. You spent those nine minutes somewhere.” She waits. “Where?” Whit doesn’t answer. Hadley doesn’t push, and that’s worse. When Hadley doesn’t push, she’s writing something down."
+    },
+    {
+     "if": "e1_told_greer_fall",
+     "text": "Whit wonders whether Greer has already told her. Greer has had half an hour, and Greer can do a great deal with half an hour. He looks at his sister’s face for the answer and gets nothing. With Hadley, he never can."
+    },
+    "“I’ve run the numbers on your charm, Golden,” she says at last. “It depreciates. Straight-line. You’ve got maybe six years left on it, and then you’re just a tall man at a party.” She drinks, finally. “And you want to know the actual joke? Dad doesn’t want an heir. He wants an audience.”",
+    "She’s furious. Not at him. Whit has been the target of Hadley’s fury often enough to know what it looks like aimed his way, and this isn’t that. She’s furious at a year-long test she has been passing every day of her adult life, and at the man who has just announced, to applause, that he hasn’t been grading.",
+    "Colt drifts by under the string lights, phone on a gimbal, narrating. “Okay, okay, okay, the siblings, at the bar, post-Trial, the vibes are immaculate, we are so back —”",
+    "“Colt,” Hadley says, without turning her head. “Off.”",
+    "Colt goes off. He goes off so fast he walks into a hay bale, and then apologizes to the hay bale, on camera, because he’s Colt.",
+    "Then, out of nowhere, in the voice she’d use to read a production report: “I was twelve. Junior cutting championship, Will Rogers. I’d been on that horse at five every morning for a year. Little sorrel mare named Dolly Parton.” A sip. “I marked a seventy-four. Highest junior score in the state that year. Dad wasn’t there. Dad was here, watching you fall off a pony.” She says it like a stat, like an EBITDA figure. “You were eight. The pony was called Peanut. He sat with you at Ransome Memorial all afternoon. It was a sprained wrist.”",
+    "Whit doesn’t remember the pony. He doesn’t remember the wrist. She remembers the pony’s name.",
+    "For a moment, under the string lights, she’s the girl on the sorrel mare at five in the morning, and he’d like to say something to that girl, if he could think what. Then it’s gone. Hadley finishes the nail. She’s thirty-seven, the chief operating officer, Wall Street’s favorite, and his opponent."
+   ],
+   "choices": [
+    {
+     "text": "Ask her what Teague wanted.",
+     "cue": "Hadley won’t forget you asked.",
+     "set": {
+      "e1_asked_teague": true,
+      "spine": "+1"
+     },
+     "tone": {
+      "hadley": -1
+     },
+     "ledger": "You asked Hadley what Royce Teague wanted.",
+     "response": [
+      "“What did Royce Teague want?” He says it lightly. It doesn’t land lightly. Hadley turns and looks at him, really looks, for the first time since he came to the bar.",
+      "“To be invited,” she says. Smooth. Too smooth. Hadley is never smooth, Hadley is sandpaper, and the smoothness is the only thing in the answer he’s sure of. She finishes the bourbon in one swallow and sets the glass down with a click.",
+      "“He’s a debt-fueled clown with a podcast, Golden. Barrels and Bibles. Last week he had a man on who thinks the Permian is God’s apology for Oklahoma.” She pushes off the bar. “Worry about Monday.”"
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "Tell her Dad fell.",
+     "set": {
+      "e1_told_hadley_fall": true,
+      "board_support": "-1"
+     },
+     "tone": {
+      "hadley": 1
+     },
+     "ledger": "You told Hadley your father fell behind the barn.",
+     "response": [
+      "“Hads.” He keeps his voice down. “Dad fell. Behind the cutting barn, before the speech. He was on the ground. For a second he didn’t know who I was.”",
+      "She goes white under the sunburn. It starts at her collar and climbs, and for one second she’s thirteen. “Gray,” she says. “He was gray at cocktails. I said gray.”",
+      "Then she’s the COO again. He watches it happen: the shoulders coming down, the eyes sliding a little to the left, where she keeps her spreadsheets. He watches her decide what this is worth — to the board, to Monday, to the year. “Thank you,” she says. “I mean that.” She does. That’s the problem."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "Offer a truce. Split it before it splits you.",
+     "set": {
+      "e1_offered_truce": true,
+      "dodges": "+1"
+     },
+     "ledger": "You offered Hadley a truce. She said no.",
+     "response": [
+      "“Here’s the thing,” he says. “What if we don’t? Do the Trial, either of us. What if we just split it? You run it. I wave. Co-heirs. Like the Mavericks, but with an adult in the owner’s box.”",
+      "She actually laughs. It surprises both of them; it comes out of her like a cough, and the bartender looks up. “That is the most Ransome thing you have ever said.” She shakes her head, still laughing, and it isn’t kind, but it isn’t cruel either. It’s worse. It’s accurate. “You’d give away half a company to get out of one fight. You’d give away the whole thing to get out of two.”",
+      "She slides off the stool. “No, Golden.”"
+     ],
+     "goto": "s09"
+    }
+   ]
+  },
+  "s08b": {
+   "slug": "INT. THE ITALY — THE TWELVE-CAR GARAGE — NIGHT",
+   "cutaway": false,
+   "body": [
+    "The twelve-car garage in the Italy has a chandelier. Everyone who sees it for the first time says so, out loud, in the same voice — the garage has a chandelier — and then waits for someone to explain, and nobody ever does. It hangs over the polished concrete like a joke told to the cars: a Bentley Bentayga in a gray the dealer called Glacier; his father’s 1966 Lincoln Continental, black, suicide doors, the car Amon drove to his own first wedding; and Colt’s Raptor, wrapped bumper to bumper in a Mercy Ranch Water decal, MADE WITH SAN ISIDRO SPRING WATER, so that from the side it looks like a $9.99 four-pack with a lift kit.",
+    "Whit sits on the Lincoln’s back bumper with his phone face down on his knee. It buzzes. It buzzes again. Greer, Greer, Greer, a bar of light under his palm each time, like something trying to get out. On a workbench by the door a valet has left his own phone charging, still on Colt’s stream with the sound down to a mosquito: applause, the band, a man laughing, Colt saying something with the word content in it. Through a hundred feet of stucco, the Ball goes on without him, every bit as well.",
+    {
+     "if": "e1_carried_amon || e1_rode_in_bed",
+     "text": "Greer’s napkin got most of the caliche off his cuffs. Not all of it. He looks at what’s left in the chandelier light, a pale chalk ghost on black wool. Six hundred people in that tent tonight, and he’d bet the Lincoln he’s the only one with any dirt on him."
+    },
+    "The side door opens and lets in a slice of noise and a woman. The cane comes first, tapping on concrete, a sound with opinions. Then Lorna Whitaker Ransome: silver chignon, Chanel jacket over jeans, the cream cashmere wrap she wears in all weathers because she has been cold, she says, since 2009. She doesn’t hurry. She has never in her life hurried toward anything she could make come to her.",
+    "“I’ve walked out of better parties, darling,” his mother says. “I walked out of this marriage.” She considers the Bentley, then sits on its hood and arranges the wrap around her, as if it were a bench at MoMA in front of a painting she’d lent them.",
+    "She looks up at the chandelier. “Baccarat,” she says. “I chose it. In a garage.” She sounds faintly pleased with herself, the way you’re pleased with a dog you no longer own. “1998 was a very confident year.”",
+    {
+     "if": "e1_told_greer_fall",
+     "text": "“Greer says your father had a dizzy spell,” she says, examining a nail. So Greer has already called his mother. Somewhere between the old hall and the speech, between Kilgore’s horse and the next thing, Greer found ninety seconds to brief Lorna. Whit files it with everything else he has filed tonight. The drawer is getting full."
+    },
+    "“I’m practicing radical honesty, darling,” she says. “On you.” It has been her favorite line since she got sober; she says it the way other women say bless your heart. “You were right to leave. You were wrong to be seen leaving. Those are two different sins, and only one of them is any of my business, and it’s the second one.”",
+    "“Everyone saw, Mom.”",
+    "“Forty-one thousand people saw, I’m told. Colt texted me the number. With an emoji.” She taps the cane on the concrete once: a period. “Eleven years sober. I can smell a lie on a man the way I used to smell vodka, and I could smell it on that whole tent. Not on you. You’re the only one who left.” She smiles. “That’s the trouble.”",
+    "Then her voice changes. It goes soft and goes back, the voice she uses at parties just before she tells it. “You always were the gentle one.” She reaches over and smooths his hair off his forehead, as if he were nine and running a fever. “You remember. You shot at that coyote and missed it by a mile, and you cried and cried. Your daddy was so mad, because you could have hit the horses. And you never would touch a gun again. Not once.” She smiles at something over his shoulder. “I wasn’t mad. I was relieved. I thought, well. There’s one of them who’ll never be like him.”",
+    "Whit has heard it a hundred times. At Christmas, at the Stock Show, at his own rehearsal dinner, where it got a toast. He smiles at it the way you smile at a framed photo in a hallway you pass every day: fondly, and without really looking.",
+    {
+     "if": "e1_said_dad",
+     "text": "Except that when she says coyote, something else answers, from nowhere: Stay in the truck. His father’s voice. The grip on his wrist behind the barn. He doesn’t know why the two are in the same room in his head. They just are, for a second, side by side, like strangers who’ve stepped into the same elevator. He doesn’t mention it. It goes."
+    },
+    "Lorna lets the story settle. Then, lightly, as if she were recommending a restaurant: “You know about my nine percent.” He knows. Everyone knows. It was the most expensive paragraph in the history of Texas family law: nine percent of Ransome Family Holdings, and with it a veto over any sale or merger. “Nobody sells this family out from under you,” she says. “Nobody merges you into some Midland vulgarian with turquoise on his boots. And nobody gets crowned, darling, without first wondering very hard what I think.” The cane taps. “Let me help you.”",
+    "She doesn’t name a price. She never does. With his mother, not knowing is the price: the bill that arrives years later in an envelope you’d forgotten you were expecting, with her handwriting on it, and a little drawing of a heart."
+   ],
+   "choices": [
+    {
+     "text": "Let her help. Owe her.",
+     "cue": "Your mother will collect.",
+     "set": {
+      "e1_lorna_ally": true,
+      "lorna_debt": "+1"
+     },
+     "tone": {
+      "lorna": 1
+     },
+     "ledger": "You let your mother help. You owe her one.",
+     "response": [
+      "“Okay,” he says. “Help.”",
+      "His mother pats his cheek twice, the way she used to pat it before school pictures. “Good boy. Go back in. Stand next to Soren in the photograph. Look like a man who stepped out to take a call from Austin: somebody important, a little annoying, you’ll tell the story later.”",
+      "She gets up off the Bentley, gathers her wrap and takes his arm for the walk across the lawn, as if he were escorting her and not the other way round. She’ll be in the photograph too, of course. She’s already arranging her face for it."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "Ask her what it costs.",
+     "set": {
+      "e1_asked_lorna_price": true,
+      "spine": "+1"
+     },
+     "ledger": "You asked your mother what her help would cost.",
+     "response": [
+      "“What does it cost?”",
+      "Lorna looks at him with real interest, as if a painting she’d hung years ago had turned its head.",
+      "“A seat at the head table at the futurity,” she says, ticking them off on her rings. “My name back on the Ball. Lorna Whitaker Ransome, founding chair, in the program, above the fold. And to see your father’s face when you win.” She smiles, all honey. “I’m cheap, darling. That’s what the divorce lawyers said. Right up until they weren’t.”"
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "Ask about the coyote. Does she ever tell it when you’re not there?",
+     "set": {
+      "e1_asked_coyote": true
+     },
+     "tone": {
+      "lorna": -1
+     },
+     "ledger": "You asked your mother about the coyote.",
+     "response": [
+      "“Do you ever tell it when I’m not there? The coyote?” He’s teasing her. He means it fondly.",
+      "“Every Christmas,” Lorna says, and laughs, and the laugh is perfect.",
+      "Then she’s quiet. Not for long: a second, maybe, one second too long, fixing the fall of the wrap over her shoulder, smoothing it, smoothing it again though it doesn’t need smoothing. Somewhere in the ductwork the air handler kicks on, and the chandelier ticks faintly overhead.",
+      "“Do you know what they wanted for that thing?” she says, looking up at it. “In 1998? I could have bought a Calder.” And she’s off: the chandelier, the decorator from Houston, the year everybody had money. Whit sits on the bumper of his father’s car and listens to his mother talk about light fixtures, which is something he has done his whole life, and doesn’t think about the coyote again."
+     ],
+     "goto": "s09"
+    }
+   ]
+  }
+ }
+}
