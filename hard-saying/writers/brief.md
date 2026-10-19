@@ -180,3 +180,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - Addiction and overdose (someone may not make it), death and grief, crime and violence (a mystery thread) are all allowed.
 - **Hard lines:** the narrative never mocks the faith (critics can be sharp and right; the story never sneers). No cheap
   villains or secular strawmen; everyone has their reasons. **Jack and Lena never die.**
+
+## Player directives (added in later notes)
+- **Marital submission (reserved conversation).** One of the most meaningful discussions (or arguments, depending on how
+  it unfolds) between Jack and Lena is about marital submission and what it means: Ephesians 5:21–33 ("Be subject to one
+  another out of reverence for Christ"; "Wives, be subject to your husbands"; "Husbands, love your wives, as Christ loved
+  the church and gave himself up for her"), John Paul II's reading of mutual subjection (*Mulieris Dignitatem* §24,
+  the Theology of the Body audiences), the older tradition (*Casti Connubii*), headship as service and sacrifice vs.
+  as authority, and what each of them, given their families and wounds, hears in the word. **It must not happen until
+  they are seriously together**, so it carries maximum weight. It can be a full episode-defining scene and may play as
+  an argument duel. Neither side is a strawman: Lena's position and Jack's should both be intelligent, personal, and
+  surprising (don't assume who takes which side). Margot's critique of the passage can be seeded earlier as setup,
+  but the real conversation belongs to the two of them.

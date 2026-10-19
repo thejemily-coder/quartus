@@ -1856,3 +1856,9 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 | 2026-10-19 | pre-S1E01 | Bible created. Central mystery ("The Point"), secrets, S1 map, romance roadmap, arc registry, Marisol geography established. | Initial build. |
 
 *Append below: after each played episode, note path-driven changes to arcs, schedule shifts, new canon, retired plans.*
+
+### Revision log — player directive (orchestrator)
+- Player directive: reserve the **marital submission / Ephesians 5** conversation for after Jack and Lena are seriously
+  together (see brief, "Player directives"). Showrunner: place it in the arc registry at the right point in the romance
+  roadmap, seed Margot's earlier critique of the passage as setup, and tie it to each of their family wounds so the
+  argument is personal. Do not stage the full conversation earlier.
