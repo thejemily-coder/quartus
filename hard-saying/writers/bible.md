@@ -347,6 +347,14 @@ Best Picture winner (fictional, 2003), on his second marriage (to Brynn, 31, a f
 Ashby Vance**, 50, a former actress (one season of a 1980s nighttime soap), Pasadena old money, lapsed Catholic who had
 Theo baptized "for Grandmother Ashby," now on her third wellness guru and fourth Pomeranian. Divorced 2004. Sister
 **Poppy Vance**, 14, the only person Theo answers the phone for on the first ring.
+**Richard's Malibu house (S1E03):** glass and teak on the sand at Broad Beach, west of Zuma, below the PCH; a pool on a
+deck over the beach stairs; a screening room nobody uses; a chef-stocked refrigerator with labeled containers nobody is
+allowed to eat; the housekeeper (Inés, weekdays) is off for Labor Day. **The Oscar is real** (the producer statuette for the
+fictional 2003 Best Picture, *The Long Field*), kept in the downstairs powder room as a joke Richard tells at dinner parties:
+so of Theo's pilot "two truths and a lie," the Oscar is true and the lie is rehab or love (🔒 undecided; settle by S2 — the
+room leans "never been in love" as the lie). Richard calls Theo **"Teddy"** (only Richard; Theo hates it and never says so).
+Richard's rule of six minutes: he stays anywhere six minutes. Brynn is kind in a way that costs her nothing and is not a
+villain either.
 
 **Public face.** Golden LA prince. Gorgeous, silver-tongued, exhausting, generous to the point of insult. Pays for
 everything. Knows every bouncer. Makes everyone feel like the most interesting person at the party for ninety seconds.
@@ -1074,6 +1082,15 @@ At 6:48 a.m. on August 29, 2009, before the first line of the pilot, these peopl
 walked out on his magazine and a boy who went after her — and attaches the names in S1E02. Theo has seen Lena (the
 Lighthouse stairs) but never spoken to her; Margot has not met Lena; Laney does not know Jack's surname until S1E02.
 
+**Updated after S1E02 (the played path):** Theo has met Lena (the alarm) and knows Jack can't afford LA (the receipt; "I
+can't afford LA, Theo"). Laney knows "Costigan." Margot and Lena have met (PHIL 1) and are at war in the friendly sense.
+Hale attached names to both faces (s02) and knows Jack "got it by kicking" was aimed at him (🔒 the vicar's son; he looked
+at the window). **Evan does NOT know Jack saw him at the driveway** (Jack bummed a cigarette instead); he knows Jack and
+Lena only as the two serious answers in section. Kevin was never asked about Theo and never told Jack "my parents came on a
+boat" (dad-jokes path). Osei has **not** heard Jack's confession (chess path); Nonna's First Friday order is unpaid. Lena
+does **not** know Jack works at the Anchor (no one told her on-page) — she learns it in E03. Nobody at Marisol knows where
+Danny is.
+
 **Pretended first meetings in the pilot:** Theo and Kevin (both pretend). Lena and Kevin (Kevin may half-recognize her;
 he says nothing; she doesn't recognize him). Lena and Osei (*not* pretended — Osei greets her warmly: "Magdalena. You
 came back." She explains to Jack: "Preview weekend. In April." True).
@@ -1082,7 +1099,7 @@ came back." She explains to Jack: "Preview weekend. In April." True).
 
 | Who | Secret | Who else knows at pilot | Player learns (planned) |
 |---|---|---|---|
-| Jack | Threw the punch; Danny took the fall (§17) | Frank, Danny, Nonna (suspects→knows), Carly | Danny in prison: S1E03 (the pilot's two-truths reveal was NOT taken; Theo learns it with the player). The truth: S2E21 (Jack tells Theo, in exchange) — the player has been Jack all along; the narration has *elided*, not lied. See §15 for the elision rule. |
+| Jack | Threw the punch; Danny took the fall (§17) | Frank, Danny, Nonna (suspects→knows), Carly | Danny in prison: S1E03, **Labor Day morning, the Malibu kitchen, on Jack's RAZR** (Maria set up a prepaid inmate-call account on his number); Theo is in the room and learns it with the player, and keeps it. What Jack says about why is Danny's public version, "a fight; a guy got hurt bad" — literally true (🔒 the same fight as the scar's "a fight, a long time ago" to Osei). **Lena learns Danny is in prison:** player-driven, earliest the E06 walk home (her grandmother for his brother), latest E18 Thanksgiving. The truth: S2E21 (Jack tells Theo, in exchange) — the player has been Jack all along; the narration has *elided*, not lied. See §15 for the elision rule. |
 | Lena | Preview Weekend; the test; the lie to police (§18) | Fr. Osei (seal) | That she knew Nora: S1E13. That she was her host: S1E13. The test: S3E18. The confession to Osei: never stated; inferred. |
 | Lena | Grandmère at Memorial (§18) | Celeste; Luc partly | That her grandmother died in the storm: S1E06, from Lena on the walk home (the pilot's HEART branch did not fire). Memorial: S1E18 (phone, Thanksgiving). The full story: adult seasons. |
 | Lena | Wes is slipping | — | S1E19–21 |
@@ -1124,6 +1141,9 @@ Kostelnik, 18, drunk, had Carly Benedetto pinned against a car; Jack, 16, pulled
 Struthers High class ring, and split Jack's left eyebrow; Jack hit him once, with everything; Mikey went down backward and
 his head struck the cinderblock fire ring. Danny, 20, arrived at the run, took one look, took Jack's bloody hand and wiped
 it on his own shirt, and when the Struthers police came said, "It was me."
+**Tellings used on the played path (after S1E02):** Theo — swan; Lena — pierogi, Archbishop; Osei — "a fight, a long
+time ago" (honest, partial); the floor — none. **E03** offers Margot her first (she asks "for the file"); the Pacific one is
+saved for whoever asks in the water.
 **Tellings bank** (each usable once per listener): a hockey puck at a Youngstown Phantoms game; a nun with a ruler (Sr.
 Mary Clement, 3rd grade, "she was aiming for my soul"); a jealous husband in Erie, Pennsylvania; a swan in Mill Creek Park;
 knife-juggling at the St. Anthony's pierogi festival (the Ukrainians did it); a Franciscan who "plays dirty in pickup";
@@ -1357,6 +1377,15 @@ years that her daughter killed herself and her grandchild. In S5, Rosa receives 
   "Nora Calloway · 1 mutual friend (Priya Raman)" (no Lena, Julian or Sloane anywhere on it). Wes: a status about the Army
   Corps of Engineers; a "like" at 3:58 a.m. Central; the first missed 8:04 call. Kevin's smooth lie ("Met him at the floor
   meeting"). Rudy's mother, three buses every other Sunday (🔒 rhymes with Maria and Danny). Doug last out at the alarm.
+- E03 (re-planned after S1E02; Labor Day weekend in Malibu): **Theo keeps the Sunday flowers even from Malibu** — the SL
+  is gone from the drive before dawn Sunday (Margot, who doesn't sleep, saw it leave at 2:40) and back by the end of the
+  8 a.m. Mass, dew on the paint, Theo outside the church with coffees: "I'm a supporter, not a member" (🔒 three hours up,
+  the flowers, three hours back; and he has been inside St. Brendan's exactly once, in July). The pilot's unasked cove
+  question is re-seeded in Theo's idiom when Jack pays him the pie: "Does He take IOUs? Your God. Or is it cash on
+  delivery." Theo hears Danny's call and keeps it — the first secret Theo keeps *for* Jack (🔒 the mirror: the keeper of the
+  worst secret on campus is good at it). Kevin and Theo at opposite ends of the pool at 1 a.m., feet in the water, not
+  talking (one image; no comment). Jack's paperback is *Brideshead Revisited*; Margot: "You know what that book is about."
+  "Grace." "Men in love with each other in a very large house." (Both right; 🔒 Theo.)
 - E04 (Sept 8, Nativity of Mary — Nora's 20th birthday): fresh flowers *and* a birthday balloon at the cross; Lena absent
   from seminar; Julian sings "Fresno" Thursday at Café Bastille; Priya tells Jack Nora's name and that she was her
   roommate. Jack's first real awareness. **Journal: Nora becomes a person card.**
@@ -1415,9 +1444,9 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 3 | Jack's secret (Danny) | RUN | S1E01 | S2E21 told to Theo | S7 to Donna Kostelnik & prosecutor; S8 Danny home | seeded |
 | 4 | Theo's descent and return | RUN | S1E01 | S3 Laney OD | S4 surrender; S8 Confirmation; AD best man | seeded |
 | 5 | Laney & Lena (friendship as love story) | RUN | S1E01 | S3 overdose | S8 Easter Vigil sponsor; AD maid of honor | open |
-| 6 | Wes unravels | SEA | S1E02 | S1E09 beach story | S1E21 breakup (coda S2E07 Mardi Gras; SU2 death) | planned |
+| 6 | Wes unravels | SEA | S1E02 | S1E09 beach story | S1E21 breakup (coda S2E07 Mardi Gras; SU2 death) | seeded |
 | 7 | Jack vs. Hale (the postcard) | MS | S1E02 | S1E14 postcards; S4 the call | S8 commencement; AD Hale's death | seeded |
-| 8 | Lena vs. Hale | MS | S1E02 | S2E16 public debate | S4 the call | planned |
+| 8 | Lena vs. Hale | MS | S1E02 | S2E16 public debate | S4 the call | seeded |
 | 9 | Osei's seal | MS | S1E01 (hidden) | S4E20 | S5E20 contempt & jail | hidden |
 | 10 | Osei & Kwame | MS | S3E06 | S3E12 dinner | AD Kwame at the wedding | planned |
 | 11 | Kevin: faith and identity | RUN | S1E01 | S3 coming out to J&L; S4 testifies | open-ended, accompanied | seeded |
@@ -1429,7 +1458,7 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 17 | Frank, the layoff, Lordstown | RUN | S1E01 | S1E15 drinking; SU1 Cruze line rehires him (2010–11) | AD 2019 plant closes | seeded |
 | 18 | Nonna's decline | MS | S1E01 | S1E18 hospital | S3/S4 death | seeded |
 | 19 | Gina bullied ("convict's sister") | ME | S1E05 | S1E15 | S1E18 Jack at Ursuline | planned |
-| 20 | Becca (Jack's misstep) | ME | S1E02 | S1E08 | S1E10 "homework" | planned |
+| 20 | Becca (Jack's misstep) | ME | S1E02 | S1E08 | S1E10 "homework" | seeded |
 | 21 | Sol (temptation) | MS | S1E12 glimpse | S2E14 dangerous night | S2E19 Chile; S5 return | planned |
 | 22 | Paige (the tryer) | SEA | S1E08 glimpse | S3E10 RCIA inquiry | S3E20 Immaculate Conception ending | planned |
 | 23 | Julian & Lena | MS | S1E01 glimpse | S2E12 together | S3E21 ending; S4 learns the test | seeded |
@@ -1437,11 +1466,11 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 25 | Peter & Kenzie (rival couple) | MS | S1E01 | S3E08 pregnancy | S3E17 wedding; AD divorce | seeded |
 | 26 | Priya & the box | MS | S1E01 | S1E11 box | S2E09 journal opened | seeded |
 | 27 | Rafi & his father | MS | S1E01 | S1E06 cop | S4 Rafi's statement | seeded |
-| 28 | The 3 a.m. fire alarm | SEA | S1E02 | S1E14 Margot's sting fails | S1E20 Doug sleepwalks | planned |
+| 28 | The 3 a.m. fire alarm | SEA | S1E02 | S1E14 Margot's sting fails | S1E20 Doug sleepwalks | seeded |
 | 29 | The cigarette reliquary | RUN | S1E01 | S4 he quits for real | AD wedding gift | seeded |
 | 30 | The scar tellings | RUN | S1E01 | S2E21 truth | AD toast | seeded |
 | 31 | The paperback rotation | RUN | S1E01 | — | — (texture) | seeded |
-| 32 | The Anchor job & pie ratings | SEA→RUN | S1E02 | — | AD rehearsal dinner at the Anchor | planned |
+| 32 | The Anchor job & pie ratings | SEA→RUN | S1E02 | — | AD rehearsal dinner at the Anchor | open |
 | 33 | Money (Jack can't afford Marisol) | MS | S1E01 | S1E15 Rafi's offer | S2 RA job for S3 | seeded |
 | 34 | Station Fire / Theo's mother | EP | S1E01 | — | S1E01 (and a callback S1E13) | seeded |
 | 35 | Clove ban wake | EP | S1E07 | — | S1E07 | planned |
@@ -1450,18 +1479,20 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 38 | Danny's letters ("Professor") | RUN | S1E03 | S2E21 | S8 Danny home | planned |
 | 39 | Hale's Compline | MS | S2E09 | S4 | AD deathbed | planned |
 | 40 | The monarchs in the Grove | RUN (seasonal) | S1E13 | each Nov | AD | planned |
-| 41 | Caleb Hargrove (Hale's acolyte) | MS | S1E02 | S1E14 learns of Lena's card; S2E16 the Forum | open (S8 Vigil, back pew) | planned |
-| 42 | Yusuf, NUMMI and Tariq | SEA→MS | S1E02 | S1E19 Tariq wounded | S2 NUMMI closes (Apr 2010) | planned |
-| 43 | Rudy (the dish pit; Danny's mirror) | MS | S1E02 | S1E15 "I know what an errand is" | S8 Rudy and Danny at the counter | planned |
-| 44 | The popes: Benedict → Francis → Leo XIV | RUN | S1E02 (*Spe Salvi* holy card) | S8E05 resignation (Feb 11, 2013); S8E07 Francis (Mar 13, 2013) | AD May 8, 2025: Leo XIV — rare full agreement, joy | planned |
+| 41 | Caleb Hargrove (Hale's acolyte) | MS | S1E02 | S1E14 learns of Lena's card; S2E16 the Forum | open (S8 Vigil, back pew) | seeded |
+| 42 | Yusuf, NUMMI and Tariq | SEA→MS | S1E02 | S1E19 Tariq wounded | S2 NUMMI closes (Apr 2010) | seeded |
+| 43 | Rudy (the dish pit; Danny's mirror) | MS | S1E02 | S1E15 "I know what an errand is" | S8 Rudy and Danny at the counter | seeded |
+| 44 | The popes: Benedict → Francis → Leo XIV | RUN | S1E02 (*Spe Salvi* holy card) | S8E05 resignation (Feb 11, 2013); S8E07 Francis (Mar 13, 2013) | AD May 8, 2025: Leo XIV — rare full agreement, joy | open |
 | 45 | Bishop Barron / Word on Fire | MS→RUN | S5 (*Catholicism* on PBS, Oct 2011) | AD 2015 auxiliary of LA; Trump years, Lena sours | AD 2022 Winona-Rochester; Jack defends him | planned |
 | 46 | Marital submission (Ephesians 5) — reserved | MS | S1E06 Margot's seed | S3E17 Peter & Kenzie's wedding reading (a look; tabled) | **S7E09 "Subject"** — only once they're seriously together (§24.5) | planned |
-| 47 | The politics map (brief) | RUN | S1E02 (Traficant) | S1E04 "You lie!"; S1E16 Stupak/Manhattan; S7 2012 election | AD Trump years; Dobbs (joy → ash) | planned |
-| 48 | The Saints' 2009 run (Lena's religion within a religion) | SEA | S1E02 (WHO DAT shirt; the chant on the beach) | weekly (§22 Saints ledger) | Dec 19 first loss (Christmas break) → S2 Super Bowl | planned |
+| 47 | The politics map (brief) | RUN | S1E02 (Traficant) | S1E04 "You lie!"; S1E16 Stupak/Manhattan; S7 2012 election | AD Trump years; Dobbs (joy → ash) | open |
+| 48 | The Saints' 2009 run (Lena's religion within a religion) | SEA | S1E02 (WHO DAT shirt; the chant on the beach) | weekly (§22 Saints ledger) | Dec 19 first loss (Christmas break) → S2 Super Bowl | open |
 | 49 | Big Sur road trip (bottle episode on the move) | EP | S1E11 | — | S1E11 | planned |
-| 50 | The paired papers (designated antagonists) | SEA | S1E02 | S1E14 Hale reads their margins aloud at dinner | S1E22 oral exam: each asked the other's best argument | planned |
-| 51 | Theo's secret cinephilia | MS | S1E02 (*The 400 Blows*, 4 a.m.) | S2 a film class under a fake major | S6–S7 the Lordstown documentary | planned |
-| 52 | La Flaca (Rafi's bike) | SEA | S1E02 | — | S1E22 Jack tries to give her back; Rafi: keep her | planned |
+| 50 | The paired papers (designated antagonists) | SEA | S1E02 | S1E14 Hale reads their margins aloud at dinner | S1E22 oral exam: each asked the other's best argument | open |
+| 51 | Theo's secret cinephilia | MS | S1E02 (*The 400 Blows*, 4 a.m.) | S2 a film class under a fake major | S6–S7 the Lordstown documentary | seeded |
+| 52 | La Flaca (Rafi's bike) | SEA | S1E02 | — | S1E22 Jack tries to give her back; Rafi: keep her | seeded |
+| 53 | Richard Vance (Theo's father: the six minutes, the fixer) | MS | S1E03 (six minutes; the hundred) | S1E13 the birthday no-show; S4 the lawyer he sends | S5 Theo refuses the fixer; AD he comes to the wedding and stays the whole time | planned |
+| 54 | Jack's ledger (the pie IOU, the bus fare, Theo's tab, Richard's hundred) | SEA | S1E02 | S1E03 the pie paid; S1E15 the money crisis | S1E22 Theo tears up the tab (Jack lets him, or doesn't) | planned |
 
 **Status after S1E01 (played path):** #1 open — porch near-kiss held; Lena took the cigarette; Jack won the first duel and
 gave her the last word; he let her know he was on the stairs. #2 seeded (all pilot seeds landed; cove seed not seen — Theo's
@@ -1471,6 +1502,21 @@ not met Jack (he followed Lena out); first meeting E02. #13/#14 Margot: "And eve
 "useful idiots" aloud in E02 (whiteboard still E04). #16 seeded (MEMORIAL; "Mama said don't"). #28 starts E02. #29 one
 cigarette in her pocket. #30 tellings: Theo swan; Lena pierogi + Archbishop; Osei "a fight" (honest, partial). #32 Anchor
 (4/10 marionberry) → hired E02.
+
+**Status after S1E02 (played path):** #1 open — the endgame groove is forming early and warm: trust 7, warmth 11, heat 4,
+friction 6. Jack sided with her against Margot, formed a "union" with her against Hale, told her "Bleed on mine," said
+she'd had him worried about her taste (Wes), offered her the whole pack (she refused: one at a time, "off your face"),
+handed her the flask without drinking. Season duel record **2–0 Jack** (E02 RIGOR); her line "I owe you a Sunday, Costigan.
+And I pay my debts" fired — **E03's labor duel is the debt paid: she wins it.** #3 seeded — the Gage flinch landed;
+letter to Danny mailed Thu (arrives ~Tue Sep 8); **Rudy's "every other Sunday" NOT heard** (wit path) — no explicit rhyme
+in E03; Frank knows about the dishes. #4 Theo — the 400 Blows night; the IOU pie on the espresso machine; "I can't afford
+LA" (the receipt) → Theo's 9 a.m. ambush with a full tank. #5 Laney has the Mooney hoodie; Jack told her "They'd be lucky"
+and walked her to Pi Lam; saw the DRP pillbox; Lena saw him see. #7 Hale: "You got it by kicking" — the inheritance press;
+Hale's window. #11 Kevin: dad-jokes rapport only; no lie about Theo on the page. #15 Evan: an American Spirit shared, no
+driveway question (Evan's "roommate" thread NOT started — E12/E19 must build it from scratch). #20 Becca: "Put me down."
+#29 reliquary 1 (tin in E03). #30 no new telling. #32 Anchor marionberry line. #33 books on loan from Theo (a pie). #48
+Who Dat taught. Osei: chess, not the box (First Friday unpaid; Nonna will ask). Wes liked Jack's 2 a.m. wall post within a
+minute (~4 a.m. Central).
 
 ## 22. SEASON 1 — FALL 2009 (22 episodes, Aug 29 – Dec 18, 2009)
 
@@ -1495,26 +1541,46 @@ Facebook: In a Relationship; 🔒 Nora's candle; 🔒 Wes awake at 3:58 a.m. Lan
 Margot and Kevin). The full-moon beach; Lena teaches the Who Dat. Theo's 450SL and the pitch: "Full moon, Costigan. LA is
 three hours. Get in the car." (`e2_la`). Becca invites Jack to the Sept 19 BBQ.
 
-**E03 · "Labor"** · Sat Sep 5 – Mon Sep 7 (Labor Day). Theo takes the floor to his father's Malibu house (Station Fire
-ash still on the deck furniture); Richard Vance appears for six minutes and is magnetic and awful. Jack gets a call on the
-house phone forwarded from his cell: *"This is a prepaid call from… an inmate at Trumbull Correctional Institution."*
-Danny. (The pilot's two-truths reveal was not taken: Theo learns it here, in the room, and handles it beautifully.)
-*(After E02: open per `e2_la` — "tonight": dawn in Malibu, the floor arrives by noon in Kevin's mother's minivan;
-"tomorrow": the convoy, the SL and the minivan; "broke": Theo's nine a.m. ambush with a full tank. The Reliquary tin
-appears — she said she'd need a container. Rudy's "every other Sunday" should rhyme in Jack's head when the call comes.
-Jack's law-and-order politics vs. his father's layoff make the labor duel personal; she wins it.)* Lena's
-and Jack's first real fight about labor: Frank, GM, the bailout, *Caritas in Veritate* §25 (on unions). She wins it.
+**E03 · "Labor"** · Sat Sep 5 – Mon Sep 7 (Labor Day) · 23rd Sunday OT (Is 35; **James 2:1-5**, the rich man with
+the gold ring; Mark 7:31-37, *Ephphatha*). *(Re-planned after S1E02 for the played path — `e2_la=="broke"`; full plan in
+`outlines/s1e03.md`.)* **Player note: Lena lighter and funnier — a breather after E02's ache, so the next ache (E04,
+Nora's birthday) lands harder.** The episode is a comedy weekend with one knife, and the knife is Jack's, not Lena's.
+Theo's nine a.m. ambush with a full tank turns into a **convoy** (the SL; Kevin's mother's Odyssey with Kevin, Margot,
+Laney in the Mooney hoodie, and Lena, who "isn't going"); Jack can afford his share of gas (he tells them about the
+Anchor — Lena's first she's heard of it). Fork: ride in the SL with Theo or the van with everyone. **Pea Soup Andersen's,
+Buellton: the Reliquary tin** (an Altoids tin from the gift shop; the mints poured into Kevin's palm; Saturday's
+cigarette sealed in; Sharpie on the lid). Malibu: Station Fire ash on the deck chairs ("Don't touch the deck chairs.
+That's the mountains."); the fridge nobody may eat from; the Oscar in the powder room. Lena makes groceries and cooks
+(a roux is a vow; Jack stirs while Wes calls on time and she laughs on the deck); **Jack pays Theo his pie** (peach,
+Lena's mother's crust) and Theo asks whether God takes IOUs. Rock Band. Sunday: the 8 a.m. at Our Lady of Malibu — James 2
+in a Malibu church — Lena coaching Laney through her first Mass in whispers; Theo outside with coffees ("a supporter, not
+a member"); Nonna on the phone about First Friday. Fork: **the Getty Villa with Lena (and Margot, who out-Greeks her)**
+or the pool with Theo, Laney and Kevin (Poppy on the first ring). **Richard Vance's six minutes** (Margot times him:
+6:14): magnetic and awful; mistakes Jack at the sink for help and tips him a hundred. **The labor duel** on the deck that
+night, Margot moderating: the just wage, the right of association (*Rerum Novarum*; *Caritas in Veritate* §25), the UAW,
+the bailout, *Laborem Exercens* ("work is for man") — and Frank, laid off since June, said aloud to her for the first
+time. **She wins it** (2–1). Monday, Labor Day, 7:12 a.m.: *"This is a prepaid call from — Danny — an inmate at Trumbull
+Correctional Institution."* Theo in the kitchen; Danny funny and gentle and asking what the ocean looks like; Theo
+handles it beautifully and keeps it. Then Lena on the beach stairs, the tin's first deposit, and a cold swim she dares
+him into without knowing why he needed it. The drive home: Obama at the AFL-CIO picnic in Cincinnati on the radio;
+Gina: dad's in the garage with the radio. Tag: Theo, in the dark: "What's he reading?"
 
 **E04 · "Nativity"** · Tue Sep 8 – Sat Sep 12 · Nativity of Mary (Sept 8) — Nora's birthday. Obama's health-care address
 to Congress (Sept 9; "You lie!"): the lounge erupts — Margot, Lena, Jack, Kevin, Theo (who's only there for the snacks).
 Margot's whiteboard debuts. Lena absent from seminar; balloon and flowers at the cross; Julian sings "Fresno" at Café
 Bastille Thursday; Lena leaves in tears; Priya tells Jack about Nora. *(The grandmother beat
 moves to E06: the pilot's HEART branch didn't fire, and Lena should tell him herself.)* Yusuf is in the lounge for the
-speech.
+speech. *(After E03: Sept 8 is a Tuesday — Lena's empty seat is in row M of PHIL 1, not the seminar; she's back, brittle
+and perfectly polite, for Wednesday's paper swap — hers is the promised injury paper, "A broken statue is still Herakles"
+if she went to the Getty with Jack (`e3_sunday=="getty"`). This is the ache E03 was the breather for: play it against the
+Malibu warmth. Jack's first Tuesday shift after the Danny call: he can't quite look at Rudy (bible §10.12). Theo has kept
+the secret; if `e3_danny_told=="joke"`, Theo has kept even that. Jack's letter reaches Trumbull this week.)*
 
 **E05 · "Moral Luck"** · Sun Sep 13 – Thu Sep 17 · VMAs (Kanye/Taylor, Sept 13); Exaltation of the Cross (Sept 14); Our
 Lady of Sorrows (Sept 15). Hale's seminar on Williams's "Moral Luck": Jack argues with a ferocity no one understands.
-Lena notices. The jean jacket in Theo's duffel ("A girl left it"). Jack mails a money order to "D. Kostelnik." Gina
+Lena notices. The jean jacket in Theo's duffel ("A girl left it"). Jack mails a money order to "D. Kostelnik" (🔒 if
+`e3_hundred=="kept"`, it is $60 of Richard Vance's hundred — never stated; the player sees the hundred and then the money
+order and may do the arithmetic). Gina
 texts that a girl at Ursuline called her "the convict's sister." Pi Lam bid day; Laney gets her bid; Sloane is her big.
 
 **E06 · "Welcome"** · Fri Sep 18 – Sun Sep 20 · 25th Sunday OT (Mark 9:30-37, "the first shall be last"). The Newman
@@ -1522,7 +1588,8 @@ Welcome BBQ and beach cleanup; Becca's first date with Jack (a disaster that's s
 "chastity story" talk; Tyler wants coffee. Rafi's father is a cop (a traffic stop with Ray Ochoa that Rafi talks them
 out of). Laney's bid-day party; Lena as the designated adult; Jack and Lena share the walk home again — first real
 confession-adjacent talk (about home): **Lena tells him her grandmother died in the storm, in '05** (nothing about
-Memorial). At the chastity talk's Q&A, Margot reads Ephesians 5:22–24 aloud and asks Kenzie whether she plans to submit;
+Memorial). *(After E03: Jack may answer with Danny — Trumbull, five years, "a fight; a guy got hurt bad" — a grandmother
+for a brother; player's choice, and Theo's E03 keeping makes it Jack's to give.)* At the chastity talk's Q&A, Margot reads Ephesians 5:22–24 aloud and asks Kenzie whether she plans to submit;
 Kenzie's answer is better than Margot expected, and Peter's isn't (🔒 seed for §24.5).
 
 **E07 · "Cloves"** · Tue Sep 22 – Sat Sep 26 · FDA flavored-cigarette ban takes effect (Sept 22); fall equinox. Margot
@@ -1607,7 +1674,9 @@ try; Lena's resolve is high and her heart is shattered; she stops him gently, or
 either is in the outline.)
 
 **Saints ledger** (brief: Lena's weekly religion within a religion; scores per period sheet, some UNVERIFIED): E02 the WHO
-DAT shirt; the chant on the beach (nine days out) · E05 Sun Sep 13, Detroit, W 45–27 (Sully's — she demands it) · E06 Sep 20
+DAT shirt; the chant on the beach (nine days out) · E03 the countdown in shoe polish on the Odyssey's back window ("WHO
+DAT · 8 DAYS," then 7), the Saturday 53-man cut-down, LSU's opener at Washington on Richard's television with Remy texting
+in capitals (score UNVERIFIED — use only if verified) · E05 Sun Sep 13, Detroit, W 45–27 (Sully's — she demands it) · E06 Sep 20
 at Philadelphia W · E07 Sep 27 at Buffalo W · E08 Oct 4 Jets W (4–0) · E09 bye week (Wes visits; they talk Saints all night)
 · E11 Oct 25 at Miami (the radio in Big Sur) · E13 Mon Nov 2 Atlanta, Monday night, after the Book of the Dead · E15–E16 Nov 8
 / Nov 15 · E17 Nov 22 at Tampa (10–0) · E18 the Thanksgiving call (the Patriots on Monday) · E19 Mon Nov 30 Patriots (11–0) ·
@@ -1882,7 +1951,11 @@ women's bathrooms at each end of each floor). Home to 310 freshmen.
 - **The Marlboros and the Reliquary.** Lena confiscates every cigarette she catches him with — takes it from his mouth or
   hand, stubs it out, and drops it into an Altoids tin she calls "the Reliquary." She keeps count, out loud. (Pilot: the
   first one goes in her cardigan pocket; the tin appears in E03.) 🔒 At the wedding, she gives him the tin: 211 cigarettes,
-  each labeled with a date in her handwriting.
+  each labeled with a date in her handwriting. **The tin (S1E03):** a red-and-white peppermint Altoids tin bought at the
+  gift shop of Pea Soup Andersen's in Buellton on the 101, Sat Sep 5; she pours the mints into Kevin's palm and seals in
+  Saturday's cigarette; on the lid in Sharpie, in her courtroom capitals, RELIQUARY, and inside, on a slip of Andersen's
+  receipt paper, "No. 1 · 8/29/09 · the Lighthouse." Each later deposit gets its own slip. It lives in her cardigan pocket
+  or her boot.
 - **The paperback in the back pocket.** A different book most episodes; the narration always names it; Lena reads his
   margins when he isn't looking; his margins argue with the author ("NO." "Coward." "Okay, fine." "Show Lena"). Pilot:
   Walker Percy, *The Moviegoer* (1961, Vintage, spine cracked white, $3 from a Youngstown library sale) — Hale's postcard as
@@ -1952,8 +2025,10 @@ joke with teeth).
 prayer life (high baseline), Wes (a slow drain S1), Laney (draining), her grief and secrets (deep drain when stirred —
 the Times article, All Souls, the anniversary), exhaustion (finals), alcohol (she drinks moderately; when she drinks to
 forget, it's a signal). Track her value in `continuity.md` at the end of every episode.
-- **Played (S1E01):** ended at **6** (porch 6, Mass 8, Anchor 6). **S1E02 plan:** 7 (the seminar), 8 (daily Mass), 6 (Wes
-  misses the 8:04 call); ends 6.
+- **Played (S1E01):** ended at **6** (porch 6, Mass 8, Anchor 6). **Played (S1E02):** 6 → 7 (seminar) → 8 (daily Mass)
+  → 7 (the steps) → 6 (Wes misses 8:04; the 11:52 text) → **ends 6.** **S1E03 plan (the breather):** 7 (the road, her
+  friends, a kitchen), 8 (Sunday Mass), 8 (she wins the duel; Wes called on time) → **ends 8.** E04 drops her hard (Nora's
+  birthday; the open mic): 8 → 5.
 - Pilot baseline: **7** at move-in; **6** after the party (Laney, the Lighthouse — 🔒 the house itself costs her); **8** after
   Mass; **6** after the diner (the magazine); **6** at the tag (Wes, the article she hasn't read).
 
@@ -2049,3 +2124,14 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 | 2026-10-19 | §24.5 | The Ephesians 5 conversation placed (S7E09 "Subject"), with seeds (S1E06 Margot; the Aug 23, 2009 second reading; S3E17 wedding) and each of their wounds (🔒 Frank's decision; 🔒 Celeste on the stairs). Sides deliberately not fixed. | Player directive. |
 | 2026-10-19 | §8.1, §10.10–10.12, §12, §25, §26 | New canon: Theo's 1979 Mercedes 450SL (two seats) and 4 a.m. films; **Caleb Hargrove**, **Yusuf Noorzai**, **Rudy Salcedo** dossiers; Gloria's pie-ratings of people and Jack's shifts/wage; Sandoval Hall 1 (PHIL 1), Anacapa Commons; motifs: the paired papers, La Flaca, the Benedict holy card. | Player asked for interesting new people; E02 needs a room. |
 | 2026-10-19 | faith check | Reviewed every arc for "bent, never broken": no plan has Jack or Lena stop believing. Lena's S5 anger at God after Wes is fidelity in rage; Jack's S5 exile is from Lena, not God; S6 discernment is real; Wes (not a principal) is the one who loses faith. | Orchestrator directive. |
+
+### Revision log — after S1E02 was played (Showrunner, 2026-10-19)
+| Date | Episode | Change | Why |
+|---|---|---|---|
+| 2026-10-19 | S1E02 played | **Path canon recorded:** alarm — Mooney hoodie to Lena, Laney took it (keeps it); soul duel **RIGOR win for Jack** (Aquinas on universals; the impeded intellect; the "union" with Lena against Hale; Newman and "you got it by kicking") → season record **2–0 Jack**; Lena's "I owe you a Sunday… I pay my debts" fired; "Bleed on mine"; books as a **loan payable in pie** (IOU on the espresso machine); "They'd be lucky" to Laney; sided with Lena against Margot (Bynum vs. Bell); "I've seen your marionberry"; "So I'm in good company" to Rudy (**no** mother-every-other-Sunday); **told Frank about the job**; wrote Danny; Becca "Put me down"; **Osei: the board, not the box** (no confession; First Friday unpaid) and a joke back; Kevin: dad jokes (no Theo question); Evan: bummed an American Spirit (**no** driveway question); Wes: "worried you had bad taste"; **offered her the whole pack** (refused; reliquary stays 1); wall post at 1:58 a.m. (Wes liked it); walked Laney to Pi Lam with Lena; curb: "How long have you known her?"; **handed the flask to Lena** without drinking; **"I can't afford LA, Theo."** Temps: Lena trust 7 / warmth 11 / heat 4 / friction 6; Theo trust 2 / warmth 3; Laney warmth 3; Hale friction 2. Soul grace 1, honesty 6, restraint 1. Resolve Jack 9, Lena 6. Traits: wit 8, candor 8, sincerity 7, charm 6, reckless 4, control 1. | The played episode wins. |
+| 2026-10-19 | §13, §14 | Knowledge after E02 (Evan has no "roommate" thread; Lena doesn't know about the Anchor; Kevin's lie never told). Danny's reveal fixed to **Labor Day morning in the Malibu kitchen on Jack's RAZR** (prepaid inmate account Maria set up), Theo in the room; Lena's learning made player-driven (earliest E06). | Scheduling; the forwarded-house-phone mechanic was needlessly fussy. |
+| 2026-10-19 | §8.1 | New canon for E03: Richard's Broad Beach house; the Oscar is real (so Theo's lie was rehab or love — undecided); "Teddy"; Richard's six minutes; Brynn; Inés off. | E03 needs the house. |
+| 2026-10-19 | §20.7 | E03 seeds: Theo's Sunday flowers kept from Malibu (the SL gone 2:40 a.m., back by Mass); "a supporter, not a member"; the IOU question (re-seeding the pilot's unasked "exchange rate"); Theo keeps Jack's secret (the mirror); Kevin/Theo at the pool; *Brideshead*. | The pilot cove seed was never seen; Theo's Sunday ritual must not lapse just because he's out of town. |
+| 2026-10-19 | §21 | Status-after-S1E02 notes; rows **#53 Richard Vance** and **#54 Jack's ledger**; statuses advanced (alarm, Anchor, Caleb, Yusuf, Rudy, popes, politics, Saints, papers, cinephilia seeded/open). | Registry upkeep. |
+| 2026-10-19 | §22 E03–E06 | **E03 rebuilt for `e2_la=="broke"` and the player's note (Lena lighter and funnier; a breather so the next ache lands harder):** Theo's ambush becomes a convoy; Andersen's tin; the kitchen and the pie; Sunday Mass with Laney; Getty/pool fork; Richard's six minutes and the hundred; the labor duel (Lena wins, 2–1); Danny's call; the cold swim. E04 note: Lena's empty seat is PHIL 1 Tuesday (Sept 8 is a Tuesday), the ache returns; E05 money order may come out of Richard's hundred (🔒, unstated); E06 walk home may trade Danny for the grandmother. | Path + player notes. |
+| 2026-10-19 | §26, §27, §16, Saints ledger | The tin's canon (Altoids, Buellton, RELIQUARY, slips of receipt paper); Lena resolve E02 played (ends 6) and E03 plan (ends 8; E04 drops to 5); tellings used so far; E03 Saints countdown on the van window. | Ledgers. |
