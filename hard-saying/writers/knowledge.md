@@ -202,3 +202,117 @@ Nobody in the core cast has met anybody else on-page. Specifically:
   (all paths) and "he knows."
 - Gina [s21]: relays Nonna.
 
+
+### S1E02 — "The Examined Life"
+> Written for the after-s1e01 save. Prose that assumes E01 forks (all true on this save): replyall (Hale's "replied to
+> *all*", s02; s01 C0 now gated); followed (Hale's "spaniel," Gloria's "after her," s02/s10); walked (Laney's
+> "fireman"); living (the Jell-O-shot flannel, s08; s08b C2 now gated on `e1_met_laney_early`); swan (s08); loves
+> (Margot's "And every father," s09); handshake (Frank's "Good grip," s11); marry joke/told mom ("the veil girl," s11);
+> archbishop (wharf line s07 C1; s01 C3 now gated); coughed (Lena's "You heard me Sunday," s15); `e1_lena_took_cig`
+> (Saturday's cigarette, s15b); not-kitchen (Rafi re-introduces himself, s10c). **The engine must reach S1E02 only from
+> this save.** If a different save ever plays E02, gate those lines first.
+
+#### Jack
+- [s01] Theo was the one who dared the Reply All — Jack already knew; Laney now knows his surname (see Laney).
+- [s02] PHIL 9H roster faces: Caleb (Visalia), Yusuf (Fremont, Ramadan), Palo Alto girl, chemistry kid, San Diego boys;
+  four more unknown. Hale knows Jack's face from the Anchor and remembers the nine pages.
+- [s02 Lena] Lena knows the Williamson affair and Benedict's March letter; she respects Benedict, isn't enthralled.
+- [s07] Yusuf's father works at NUMMI (closing). Caleb wrote Hale four letters, no reply.
+- [s08] Theo is undeclared ("the way Switzerland is undeclared"); watches subtitled films at 4 a.m.; father's card.
+- [s08b] Laney: Pi Lam Friday; did a percentage to two decimals, then "I'm an Aquarius" (Jack doesn't know her birthday).
+- [s09] Margot: Room 305; PHIL 1 is her gen-ed; keeps a folder on him. Lena: registered Democrat; father votes Mary
+  Landrieu; against the death penalty. [C0] Bynum vs. Bell.
+- [s10–s10b] Gloria Mendes (first name only on page: "Gloria"); nephew Hector at Fresno State. Rudy: six years at
+  Soledad. [`e2_rudy_visit`] Rudy's mother visited every other Sunday from Oxnard.
+- [s10c] Rafi: "Rafi. Two-oh-four"; dad lives two blocks up from the wharf; abuela.
+- [s11] Traficant out; Frank's party talk; Nonna's First Friday order.
+- [s12] Becca Lindell: Coeur d'Alene, homeschooled, 7 siblings, ranch; Sept 19 BBQ; asked if he has a girlfriend.
+- [s12a | box] Osei was taught arithmetic by Italian sisters in Kumasi.
+- [s12b | board] Osei: father's highlife record; former doctor (stethoscope); a face-down framed photo (Jack sees, no
+  explanation). [limp] Osei: "You tell me yours, one day, and I'll tell you mine."
+- [s13] Kevin: sister Tina (UOP dental, 4.0), mother "Mẹ," lies about studying; Lena has a boyfriend per Facebook ("Doug
+  checked"); Lena has Greek at 1:00 (Kevin's lab partner). [family] "My parents came on a boat." [theo] Kevin's "Met him
+  at the floor meeting. Same as you" (Jack has no way to know it's false).
+- [s14] Evan Marsh = the driveway man (recognition by sight). [C0] Evan is 29, "doesn't go to parties," rides "out that
+  way." [C2] Evan smokes American Spirits; "they're not better for you."
+- [s15] Wes: Wesley Arceneaux, Tulane civil engineering, the boat at sixteen (from Lena).
+- [s16] Lena's FB: Classics '13; Mardi Gras photo; Tess Fontenot ("mama"); Wes's FB and status. **Nora Calloway** (candle
+  avatar, mutual friend Priya); the name matches the St. Brendan's plaque. [C0 nora] Selma High; brother Mateo ("8 days");
+  aunt Graciela; abuelita lights a candle. [C1 wes] Wes's photos (Jesuit High lacrosse). [C2 wall] Wes liked Jack's post
+  within a minute at ~4 a.m. New Orleans time (Jack does **not** reason about it on the page).
+- [s17] Kevin keeps his mother's Odyssey in the Anacapa lot. Theo has a car (Jack learns what it is at s17a/s17b).
+- [s17a | laney] Theo's 1979 450 SL (grandfather's); Laney's DRP pillbox and pill; Lena's three tries to reach Wes,
+  "He's studying." [C1 pill] "her mother's the reason." [C0] Lena: "Since the day before you."
+- [s17b | margot] Kevin's public-FB census of Pi Lam; Laney took "something" with wine on the side steps. [C0] Laney's
+  speech lagging; "Don't tell Lena."
+- [s18] The 11:52 text Lena hides in her boot (content unknown). [margot] first sign anything is off with Lena's phone.
+  Theo didn't drink from his flask.
+- [s19] Theo's father's Malibu house; mother on the Peninsula; Rolex and SL bought the same week.
+
+#### Lena
+- [s01] Theo's face and role ("The roommate… I dared him anyway"); Theo learns "Broussard" from Jack's mouth.
+- [s01 | beans] Jack knows she made red beans (Laney had told him at the Anchor). [archbishop] the Archbishop joke.
+- [s02] Hale knows she was the girl who left the Anchor; she hears him say so to the seminar.
+- [s03–s06] Jack's arguments per branch; [e2_john668] that Jack tried to leave at sixteen, after Hale's book, and found
+  nowhere to go; [e2_soul_missing] "felt it go missing"; [e2_gage_mother] Jack's Gage's-mother answer.
+- [s05 C3 | e2_lena_jab] Jack used the Anchor against her in front of Hale.
+- [s08b → s17a | e2_laney_pills] Laney told Lena what Jack said Tuesday about the note.
+- [s09] Margot: name, Room 305; Margot's folder on Jack. Margot learned the beans from Laney (elevator).
+- [s13] Jack sat with Kevin at the 12:10 (she left before the recessional; no on-page contact).
+- [s14] Jack is in her PHIL 1 section; Jack's "since I was sixteen" answer.
+- [s15] Jack's red-ink margins; [C3] the apology.
+- [s15b | lit] Jack lit a second cigarette; [evan cigarette] he smoked an American Spirit.
+- [s16 | wall] Jack's 2 a.m. wall post.
+- [s17a | laney] Jack saw Laney's pill; Jack watched her call Wes. [margot] Jack was on Margot's stakeout.
+- [s18] Jack's flask choice; [lena] he handed it to her.
+
+#### Theo
+- [s01] Lena: "Broussard" (Jack/Theo already had "M. Broussard" from the Reply All); meets her. [archbishop] there's a
+  private joke called "Archbishop."
+- [s08] Jack can't afford books (receipt on the desk); [loan] Jack owes him a pie.
+- [s08b] Laney's name and act; sees her catch herself on the percentage.
+- [s13] Sees Jack lunching with Kevin.
+- [s19 | tomorrow] Kevin's Odyssey (from Jack). [broke] Jack can't afford LA. [tonight] Jack said yes.
+
+#### Laney
+- [s01] Jack's surname ("Costigan," from Priya's roll call). Theo by sight (espresso machine). [hoodie] the hoodie.
+- [s08b] Jack's RAZR number (she programmed herself in). Theo's "Sloane." [pills] Jack's "skip the note" line.
+- [s17a | laney] Jack walked her to Pi Lam; Theo's car. [s17b | sat_with_laney] Jack crossed the street and sat with her.
+
+#### Margot
+- [s01] Theo/Laney/Lena by sight. [s09] Lena: name, 217, the mantilla; Lena's politics; [C0] Lena's Bynum; [C1] Jack
+  conceded the hierarchy point.
+- [s17] Jack + Kevin as her "control subjects"; Kevin has the Odyssey.
+- [s17b | margot] Laney's pill-and-wine from the bench.
+
+#### Kevin
+- [s01] Roll call; Laney, Lena by sight. [s13] Jack stares at Lena at Mass; Jack's Ohio food; [theo] Jack asked about
+  Theo. Lena's Greek time (via his lab partner). Lena's relationship status (public FB).
+- [s17b | margot] Pi Lam actives from public FB; Laney's "something" with wine; watched Theo's car.
+- [s18] Laney reached for the flask; he blocked it.
+
+#### Fr. Osei
+- [s12a | box] Jack's confession (sealed; nothing logged). Jack's nonna sent him.
+- [s12b | board] Benedict; pierogi; the brother's jacket ("He's not using it right now"); Hale "called him a spaniel";
+  Theo's espresso machine; the Hobart; Gloria. [limp] Jack asked about the leg.
+- [s13] Jack at Thursday Mass.
+
+#### Prof. Hale
+- [s02] Attaches "Youngstown"/Costigan to Jack's face (Jack's chin came up) and "Miss Broussard" to Lena (she answered
+  about the stove); the Anchor exit. [s04 C3 | e2_hale_jab] Jack saw his Bloody Mary on Sunday. [s06 C0] "you got it by
+  kicking" (no fact about his father; Hale's reaction is his own). [s06 C1 | john668] Jack tried to leave and couldn't.
+
+#### Others
+- Caleb [s02, s07]: Jack's nine pages; Hale answered Jack ("One line. Mostly a dare").
+- Yusuf [s02–s07]: Jack and Lena are Catholics; Jack's dad was an autoworker (implied by Jack; Yusuf names NUMMI).
+- Gloria [s10]: Jack's name (from Laney at the Anchor); [money] he needs the money.
+- Rudy [s10b]: Jack is "mijo"; [visit] Jack's spray-harder reaction (no explanation given).
+- Rafi [s10c]: "Jack" (first time he hears the name); Jack missed the last bus; Jack works at the Anchor.
+- Frank [s11]: [told] Jack washes dishes; Lena is "in my philosophy class." Maria: "the veil girl." Nonna: First Friday.
+- Danny [s11b letter]: the ocean; Theo; Hale; the Anchor/Rudy; a girl from New Orleans in the seminar; [hid] Dad doesn't
+  know about the dishes.
+- Becca [s12]: Jack works Saturday nights [days]; Catholic-school handwriting.
+- Evan [s14]: Jack and Lena's section answers; [C0] Jack saw him at the driveway; went with "my roommate" (no name).
+- Sloane [s17a | laney]: "Theo's roommate. The Catholic." Jack's name.
+- Wes [s16 C2]: sees Jack's wall post on Lena's page (and likes it).
+- Priya: mutual-friend link on Facebook (s01 laminate is the route).

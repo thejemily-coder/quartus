@@ -296,3 +296,213 @@ duel.lipservice.wit<=1`. `duel.lipservice.lena` = 3 base, 4–5 if Jack used Ref
   (s10); man at the end of the driveway (s06); Kevin not laughing at Theo's two truths (s05); Theo/Kevin handshake (s07a).
 - Kennedy: funeral Mass in Boston Aug 29, **burial at Arlington that night** (narration and dialogue now agree).
 
+
+### S1E02 — "The Examined Life" (Mon Aug 31 – Sat Sep 5, 2009, 12:31 a.m.)
+31 nodes. Forks: s12f → s12a box / s12b board → s13 · s17 → s17a laney / s17b margot → s18. Duel `soul` (opponent
+Hale, scored as Jack vs. Lena) runs s03–s06v. Written for the after-s1e01 save (followed · walked · living · replyall ·
+coughed); several prose callbacks assume those E01 forks (see knowledge.md S1E02 note). s01 C0 is gated on
+`e1_email_reply=="replyall"`, s01 C3 on `scar_told_lena_2=="archbishop"`, s08b C2 on `e1_met_laney_early`.
+
+**On-page canon (all paths unless marked)**
+- s01 (Mon 3:07 a.m.): Delgado fire alarm (310 residents); goose-horn alarm, fog, eucalyptus. Gina's text: "is the fire
+  near u. nonna saw california on the news. she says st florian is the fire one" (Station Fire). Priya: Fremont High
+  hoodie, air horn, laminate COVER YOUR COUGH. H1N1…; a second laminate says she has friend-requested the whole 4th floor
+  (route for Priya as Jack's FB friend). Kevin co-runs the roll call with a clipboard. Margot's Moleskine "ALARM 1."
+  Theo: navy silk robe, rescues the espresso machine. Doug Pruitt exits barefoot by the far **east** fire door, wrong end
+  from 420, pillow under his arm (sleepwalker plant; no comment). Laney (sleep mask, pearls, camisole, Lena's oatmeal
+  cardigan) hears "COSTIGAN" from Priya: "Like a cop show." Lena: black WHO DAT Saints T-shirt, Keds. Theo/Lena meet;
+  Theo: "The roommate. The one he abandoned at the Lighthouse. I dared him anyway." All clear 3:31.
+  Hoodie branch: Laney adopts Jack's gray Mooney hoodie (keeps it through E02). Archbishop branch: Lena laughs outright.
+- s02 (Mon 12:51–1:12): Hollis 302, oak table, **fourteen chairs** (Hale + 12 freshmen + 1 spare), knocking radiator,
+  sea window. PHIL 9H = 12 freshmen: Jack, Lena, Caleb (Visalia; Darwin-fish laptop; *Consolations* "molting" with
+  Post-its; read it six times; says "Selah"), Yusuf (Fremont; aerospace; fasting for Ramadan), a Palo Alto girl, a quiet
+  chemistry kid, two unrelated San Diego boys with the same surname, and four more Jack doesn't learn till October.
+  Jack's navy Goodwill blazer ("a lifeguard at a funeral" — Theo). *Spe Salvi* (Ignatius ed.), bought for $2 off the
+  sidewalk cart at **Driftwood Books on Mission, Sunday evening while waiting for the 11 bus**; Benedict holy card as
+  bookmark. Jack on Benedict: Regensburg; *Spe Salvi* §2 "The one who has hope lives differently"; 48 sections after.
+  Lena on Benedict: "follow him into a burning building… wouldn't put him on my wall"; cites the Jan 2009 Williamson
+  excommunication lifting and his written admission (letter to bishops, Mar 2009) that someone could have caught it on
+  the internet; "I'd still have somebody open his mail." Hale arrives 1:07, sets down only the roster; "Prove to me you
+  have a soul. You have ninety minutes and I've had lunch." Identifies Jack when Jack's chin comes up at "Youngstown";
+  names the nine pages and the Reply All; tells the room about the Anchor ("a boy who went after her like a spaniel").
+  Lena: "I'd left something on the stove" (thumb to medal). Syllabus wk 1: Descartes *Med.* II; Ryle ch. 1; *ST* I
+  qq. 75–76. Hale's whiteboard hand "like barbed wire" (Hale's image; not reused for anyone else).
+- s03–s06v duel content: Descartes/Ryle (category mistake, the University); Dennett (Caleb); Yusuf's fasting joke; Lena:
+  soul = form of the body. Phineas Gage (Sept 1848, Cavendish VT; bar 3'7", 13¼ lb; "no longer Gage"; Chile; died in his
+  mother's house). Lena's hotel argument ("If I *am* my body…"). Hale: "I mark commitment, not variety." Hale's
+  inheritance argument (Thebes/Zeus; Riyadh). **Yusuf corrects Hale: from Riyadh you face west; from Fremont nearly due
+  north** ("I have a compass"). Lena: genetic fallacy, Lincoln–Douglas at thirteen; "So is the multiplication table."
+  Hale: "Your mother could show her working." Caleb: "It's true of *me*. I got out." Hale knows John 6:68 ("I was made to
+  learn it") on e2_john668. Whiteboard assignment: TWO PAGES. EVERY WEEK. Prove the thing you least believe you can prove.
+  Swap with your appointed enemy. Annotate in RED. Due Wednesdays. Pairs: Palo Alto girl + chemistry kid; Caleb + Yusuf;
+  two unnamed pairs; the San Diego boys; **Jack + Lena for the semester**. Hale's dog (levels its bowl with papers).
+- s07: Cloister walk; Ferrer Tower carillon (off-key). Caleb learns from Jack that Hale wrote back ("One line. Mostly a
+  dare."); Caleb wrote Hale four letters, no reply. Yusuf: iftar invitation (Islamic Center on Mission); father works at
+  **NUMMI** (closure announced Thu Aug 27): "Load-bearing wall of the house, that job."
+- s08 (Tue 4:10 a.m.): Theo watching *The 400 Blows* (Criterion). Theo: "French cinema… There's a midterm"; **"undeclared
+  the way Switzerland is undeclared"** (first said here). 8:40: Passion Pit "Sleepyhead" on the dock; Jack's good flannel
+  has a lime Jell-O-shot stain over the pocket (from Saturday, living route). Theo's "corsage" line; swan callback. Gina:
+  "mom told nonna ur bringing a nun home 4 thanksgiving. nonna lit a candle" (Gina at Ursuline). UCen books total
+  **$186.40** (PHIL 1 reader, Plato, calculus); St. Brigid's envelope $340 minus shower shoes, extension cord, two packs.
+  Theo's father's card = "the Meridian card." Driftwood Books sign: BOETHIUS AND MRS. DANVERS ARE NOT FOR SALE ($2–4).
+- s08b: Laney at 8:58 with Lena's red beans in Tupperware; Pi Lambda Chi recruitment Friday. Theo plays Sloane; Jack plays
+  "Whitney, Atherton." Laney: 120 girls, 49 bids, "forty point eight three" then **"I'm an Aquarius"** (correct for Feb 14).
+  Laney's contact in Jack's RAZR: "LANEY (FIREMAN'S FAVORITE)." Laney's T-shirt: Highland Park Lacrosse (non-hoodie).
+- s09 (Tue 9:30): PHIL 1 in Sandoval Hall 1 (400 orange seats, 1971), row M. Lena's tote: OCTAVIA BOOKS · NEW ORLEANS;
+  black lace mantilla folded on her books (she does sometimes veil at weekday Mass; bare-headed Thu Sep 3). Hale on the
+  Euthyphro. Margot's folder THE COSTIGAN PROBLEM ("And every father" — E01 loves branch); PHIL 1 is her gen-ed; Margot =
+  305. Lena and Margot meet (handshake). Mantilla/black-clothes exchange; "internalized a two-thousand-year-old men's
+  club." Lena: Aquinas I q.6, neither horn. Margot: "You outsourced him" (Lena has no answer yet). Margot: "useful idiots
+  for Christian nationalism… Goldberg, *Kingdom Coming*." **Lena: registered Democrat; her father has voted for Mary
+  Landrieu three times; the death penalty makes her ill.** Margot: "useful idiot for two parties." C0: Bell *Holy Anorexia*
+  vs. Lena's Bynum *Holy Feast and Holy Fast* (Lena wins that point). `e2_hale_jab`: Hale's "Both of me" from the stage.
+- s10 (Tue 6:50): Bus 11 runs down Mission to the harbor. Jack's résumé (Mooney '09, Latin Club, point guard, St. Brigid's
+  grounds crew). Anchor boards: PIE OF THE DAY: BOYSENBERRY; **JACK'S RATINGS: MARIONBERRY 4/10**. Gloria hires him as
+  dishwasher; Laney ("your redhead friend") told her his name at the Anchor Sunday.
+- s10b: **$8/hr, Tue/Thu/Sat 7 p.m.–1 a.m., tip share; Saturdays start Sep 12** (Gloria's nephew Hector home from Fresno
+  State this weekend). The Hobart. Rudy Salcedo (40s): rosary tattoo on left wrist, Louis L'Amour *Flint* (taped spine),
+  a ballgame on the transistor, calls Jack *mijo*; **did six years at Soledad, washed dishes there**; on e2_rudy_visit his
+  mother visited every other Sunday, three buses from Oxnard. Gloria's "lattice-top" verdict on Jack; Gloria married a
+  fisherman ("smelled like bait"; qc branch).
+- s10c (Wed 1:15 a.m.): Last 11 bus 12:30 a.m. Rafi (204; "had you as fridge guy"; dad's place two blocks up from the
+  wharf; abuela) lends Jack **La Flaca**, a rusted single-speed beach cruiser with a wire basket, coaster brakes, tilting
+  seat, "till Christmas." Jack rides 3 miles home; moon three nights short of full. Glenwood Avenue childhood hill.
+- s11 (Wed 6:15): 4th-floor east stairwell landing has the one cell bar. Rosie's drawing (Priority Mail, postmarked Mon;
+  Hannah Montana in a modest bikini; JACKS CHURCH). Frank home safe; "Good grip. Saturday."; "How's the pelican?";
+  "Costigans don't get the easy ones." **Traficant released Wed Sep 2 (Rochester, MN); Valley welcome party $20.** Frank:
+  "A crook. But he was our crook." Maria: chicken; told the school office he's home for Thanksgiving; "the veil girl."
+  Nonna: "Giacomino. Primo venerdì… You go *and* you go" (First Friday Mass + confession). Gina: "nonna thinks california
+  is in mexico." Jack tells Frank about the job only on `e2_dad_call=="told"`.
+- s11b: Letter to Danny (signed "—the Professor"; "There's a girl from New Orleans… argues like a prosecutor"; "Don't. I
+  know."); P.S. "Dad doesn't know about the dishes" on hid. Letter carried in Danny's Carhartt; mailed Thu at noon.
+- s12 (Wed 8:02): Newman House lounge: 1994 plaid couch, dead ping-pong net, *Da Vinci Code* with Fitch's Post-it "Read
+  CRITICALLY." Osei's rubber boots. **Becca Lindell**: Coeur d'Alene, homeschooled, 7 siblings, ranch, butchers deer;
+  running the **Newman Welcome BBQ & Beach Cleanup, Sat Sep 19**; roommate = nursing major from Spokane. Joey (wants to be
+  a priest). Becca asks if Jack has a girlfriend "for the seating chart." `e2_becca`: yes / days / maybe.
+- s12f: Confessions Wed 8:00 in the converted coat closet ("KNOCK (gently)"). Osei's question: "The box, or the board?"
+- s12a (box): Jack: "My nonna sent me." Closet confessional: kneeler + chair, linen screen. Osei: "God is not a customs
+  officer"; penance a decade + call your grandmother; Italian sisters taught Osei arithmetic in Kumasi. Full absolution
+  formula. Skunk on the bike path. **Jack confesses Wed Sep 2.**
+- s12b (board): Osei's office: highlife (E.T. Mensah & the Tempos; his father's record), stethoscope on a hook, a framed
+  photo **face down in an open drawer** (Osei closes it with his knee on the limp branch), chess set with chipped white
+  queen's bishop. Osei on Benedict: "A shy man made to stand on a balcony." Pierogi. Danny's jacket: "He's not using it
+  right now." Osei's funeral proverb (the man laughing loudest at the funeral is carrying the coffin) — this is the
+  season's one indirect diagnosis of Jack's joking (tic 17); no one else may say it aloud in S1. Twi "Ɛyɛ" (yeah branch).
+- s13 (Thu Sep 3, 12:10): St. Gregory the Great, memorial, white; Col 1:9–14 ("inheritance of the holy ones"), Lk 5:1–11;
+  Osei's homily (Peter → a job; Gregory begged off; "God also usually says no"). **No Creed** (weekday memorial). ~15 at
+  Mass: Mrs. Fitch (lemon bars), old man with cane, Becca, Kevin (Bible saves Jack a seat). Lena bare-headed, Greek
+  grammar; Greek at 1:00 (Kevin's lab partner is in it). Anacapa Commons: Kevin's salad; mother **Mẹ** on the BlackBerry;
+  Kevin tells her he studied ("Gen chem. AP credit — she thinks it covers orgo"); sister **Tina, UOP dental school,
+  4.0**. Kevin: Lena's relationship status is on Facebook, "Doug checked." Theo/Kevin: "Tran." "Vance." Kevin: "My
+  parents came on a boat. I don't get to have a bad semester" (family branch). Kevin: "Met him at the floor meeting"
+  (theo branch).
+- s14 (Thu 4:00): PHIL 1 section, Hollis 108 (basement, ankle-height window, 18 desks). **TA Evan Marsh**: lanky, gray at
+  the temples, ~30 (says 29), wire glasses, tan Carhartt, bike helmet, yellow American Spirits; accent from somewhere up
+  near Canada; "office hours: when I'm not finishing." Jack recognizes him as the man at the end of the Lighthouse
+  driveway. Section: Kierkegaard, will one thing; Marisol Surf hoodie girl; Sigma Rho visor kid. Lena: "Love would be a
+  climate I have." Jack: "Everything I've done since I was sixteen…" C0: Evan "doesn't go to parties… twenty-nine";
+  asks who Jack went with ("My roommate dragged me"; no name).
+- s15 (Thu 4:58): Papers swapped Wed in seminar. Jack's paper "That Faith Is Not an Inheritance" (St. Brigid's baptism;
+  Pascal *cela vous abêtira*; "I stayed because I tried the door"); Lena's red: NO / *Cite me.* / "This sentence is lying."
+  Lena's paper "That the Body Is Not a Rental" ("Hotels don't bleed"; injury objection deferred to next week); Jack's red:
+  "best paragraph I've read this year. I hate it." / Coward. / Okay, fine. Lena on the stairs-overheard call: tells Jack
+  **Wesley Arceneaux, Tulane civil engineering, "build the walls right"; at sixteen took his uncle's boat out four days in
+  the storm pulling people off roofs.**
+- s15b: The Reliquary: on "lit" Lena takes the 2nd cigarette and shows the 1st (Saturday's) from the cardigan pocket;
+  **"I'm going to need a container" plays on every branch** (tin in E03). Laney's ironing for Friday.
+- s16 (Fri 1:52 a.m.): La Flaca chained to the 4th-floor radiator pipe. Jack friend-requested Lena Tue; she accepted
+  1:37 a.m. Wed. Her FB: "Magdalena Broussard · In a Relationship with Wesley Arceneaux · Marisol · Classics '13 · New
+  Orleans, LA"; Mardi Gras photo on St. Charles (Wes, #9 Brees jersey, holding the ladder). Laney's wall post (Jell-O
+  shots, Wed 2:14 a.m.); Tess Fontenot: "call mama." Wes's status Thu 9:52 p.m.: "is so tired of reading about the Army
+  Corps of Engineers." **People You May Know: Nora Calloway (candle avatar), 1 mutual friend Priya Raman**; Jack knows the
+  name from the brass plate under the St. Brendan's votives. C0: Nora's page — Selma High School, Marisol; brother Mateo
+  ("happy early bday sis. 8 days," Mon 9:40 p.m.); aunt Graciela Gutiérrez (abuelita lights a candle every morning).
+  C1: Wes photos (crawfish boil, fleur-de-lis calf tattoo, Jesuit High lacrosse, back row). C2: Jack's wall post "Bus
+  fare: $1.25. Interest accrues. —Youngstown" at ~1:57; **Wes Arceneaux likes it within a minute** (no on-page
+  inference); Lena replies 2:03: "Interest is usury… Aquinas."
+- s17 (Fri 7:12): Theo left at six with unfamiliar keys. Laney's text (FIREMAN!!!…). Margot (peacoat, thermos, brass
+  binoculars) recruits Jack + Kevin as "male control subjects" for a *Tide* piece on recruitment; Aug jobs report 9.7%.
+  **Kevin keeps his mother's Honda Odyssey on campus in the Anacapa lot** (E11 road trip "borrows" it — same car; no
+  conflict). Margot walks: "It's a mile."
+- s17a (laney): Moon rising full over the hills, peach. Laney's white strapless with a scorch under a braided belt (left
+  hip). Theo's **1979 Mercedes 450 SL, champagne gold, cracked oxblood leather, two seats — his grandfather's**. Laney
+  calls him "Theodore" (sanctioned exception: Laney's pageant register; no other character uses it casually in S1 so
+  Jack's first angry "Theodore" lands). Sloane on the Pi Lam steps ("The Catholic"). Laney's silver pillbox engraved
+  **DRP**; dry-swallows a pill; Jack sees, Lena sees him see. Lena's LG: 8:04, 8:06, 8:09 call to voicemail: "He's
+  studying." Lena calls Laney "cher." C1: "I'm not her mother. And her mother's the reason."
+- s17b (margot): Bluff bench across Seacliff from Pi Lam (70 ft above the sea). Margot's clove unlit (ban Sep 22). Kevin
+  knows the actives from their public FB. Lena walks Laney to the steps, leaves alone, clocks the stakeout. Theo's car
+  passes west; Kevin watches it out of sight. Laney on the side steps with white wine and "something out of the clutch"
+  (Kevin: "She weighs maybe a hundred and five"). C0: Laney's speech lags; "Don't tell Lena… tell her… Don't."
+- s18 (Fri 11:40): Campus Point beach fire: Jack, Lena, Laney, Theo, Margot, Kevin, Doug (Bakersfield Drillers
+  blanket); Rafi surfing. Laney: Sloane says she's a "lock." Lena's phone (11:52 text) goes into her boot. **Lena teaches
+  the Who Dat chant** ("five Yankees and a Texan"; Saints lost the preseason finale to Miami 10–7 Thu; "Nine days to
+  Detroit"). Margot's deadpan chant. Theo films it ("Week one"). Theo's *R.V.* flask (Macallan) goes around; **Theo
+  himself does not drink**; Kevin skips it and blocks Laney ("Respectfully, no"), gives her water. Kevin whistles
+  perfectly. Margot drinks once.
+- s19–s20 (Sat 12:22–12:31 a.m.): Lot atop the bluff, one sodium lamp. Rolex (steel) + champagne SL "bought the same
+  week." Cassette adapter. Theo's pitch: Malibu house, pool; Station Fire still burning behind La Cañada; his mother on
+  the Peninsula (Palos Verdes). Tonight: 101 south, top down, needle at 85 past Ventura; Jack texts no one. Tomorrow: Theo
+  learns of Kevin's Odyssey from Jack. Broke: Theo leaves at nine, gas bought.
+
+**Flags introduced (S1E02)**
+`e2_alarm` syllabus/hoodie/beans/archbishop · `e2_laney_knows_surname` · `e2_soul_interior` · `e2_soul_missing` ·
+`e2_gage_mother` · `e2_hale_jab` (s04 C3) · `e2_union` (s05 C2) · `e2_lena_jab` (s05 C3) · `e2_john668` (s06 C1) ·
+`e2_soul_final` press/heart/wit/concede · `e2_pairing` wit/candor/sincere/nod · `e2_books` theo/used/loan ·
+`e2_laney_q` sincere/joke/pills · `e2_laney_pills` · `e2_margot_side` lena/margot/joke · `e2_anchor_ask`
+money/qc/marionberry · `e2_rudy_q` visit/company/silent · `e2_rudy_visit` · `e2_has_bike` · `e2_dad_call`
+told/hid/joked · `e2_told_dad_job` · `e2_wrote_danny` · `e2_becca` yes/days/maybe · `e2_osei` box/board · `e2_osei_q`
+joke/yeah/limp · `e2_asked_limp` · `e2_kevin_q` family/jokes/theo · `e2_asked_kevin_theo` · `e2_evan_q`
+lighthouse/quiet/cigarette · `e2_evan_lighthouse` · `e2_wes_reply` generous/wry/honest/apology · `e2_apologized` ·
+`e2_cig_lena` lit/pocketed/offered · `e2_fb` nora/wes/wall/off · `e2_friday` laney/margot · `e2_curb`
+friend/pill/joke/stayed · `e2_stakeout` laney/why/nature · `e2_sat_with_laney` · `e2_beach` drank/passed/lena ·
+`e2_la` tonight/tomorrow/broke · `e2_texted_nobody` (tonight).
+Duel `soul` verdict macros (s06v; exactly one fires; checked over all 256 sequences): HEART `duel.soul.heart>=3` ·
+RIGOR `rigor>=3 && heart<=2` · WIT `wit>=3 && rigor<=2 && heart<=2` · LENA (no lane at 3, at most one lane at 2):
+`r<=1&&h<=1&&w<=2 || r<=1&&w<=1&&h<=2 || h<=1&&w<=1&&r<=2` · SPLIT (no lane at 3, two lanes at exactly 2):
+`r==2&&h==2&&w<=2 || r==2&&w==2&&h<=1 || h==2&&w==2&&r<=1` (written with `>=2 && <=2`). s07 Lena lines key off the
+same macros. `duel.soul.lena` is set (3 base, +1 on the jab) but not read.
+
+**Choice-dependent facts**
+- The Lena chill: on `e2_lena_jab` Lena calls Jack "Mr. Costigan" in s06v, s07, s09, s14, s15, s15b, s16 C2, s17a,
+  s18 C2 until `e2_apologized` (s15 C3). If he never apologizes, **E03 opens with "Mr. Costigan"** (the thaw belongs to
+  E03). Apology nets trust −1 overall (jab −2, apology +1).
+- Jack's winter/summer: **on `e2_john668` Jack says that at sixteen, after Hale's book, he tried to put the faith down
+  "a whole summer" and stopped going** (summer 2007, before Nov 23, 2007). Canon: Hale's book nearly took his faith that
+  summer; the station-bench prayer that November was where he found "nowhere to go." §17 stands; this is the honest
+  elision of it. Do not contradict in later episodes.
+- Confession: Jack confessed Wed Sep 2 only on `e2_osei=="box"`. **Nonna's First Friday (Mass + confession) and the
+  "call your grandmother" penance are left unpaid on both paths** — deliberate: E03 can have Nonna ask.
+- Danny's letter mailed Thu Sep 3 (all paths). Jack's dad knows about the job only on told.
+- Books: on theo Jack owes nothing but used the Meridian card; on loan Jack owes Theo **one pie (IOU on the espresso
+  machine)**; on used Jack shops at Driftwood.
+- Laney has the Mooney hoodie only on `e2_alarm=="hoodie"`.
+- Evan knows Jack saw him at the driveway only on `e2_evan_lighthouse`.
+- Hale learns about Jack's leaving-and-coming-back only on `e2_john668`.
+- Jack has seen Laney's pill: s17a (laney path, all); on margot path he sees "something" from across the road.
+- Jack knows Kevin's Theo answer only on `e2_asked_kevin_theo`; Osei's "one day I'll tell you mine" only on limp.
+- E03 entry per `e2_la` (tonight: Jack arrives in Malibu at dawn with Theo; tomorrow/broke: the convoy in the SL and
+  Kevin's Odyssey).
+
+**Tallies after S1E02**
+- Scar tellings: no new telling. Hale noted Jack's hand going to the eyebrow during Gage (s04) — no story told.
+- Reliquary: 1 → **2 on `e2_cig_lena=="lit"`**, else 1. Jack's cigs lit on-page: +1 on `e2_evan_q=="cigarette"`
+  (American Spirit), +1 on lit (`jack_cigs`).
+- Lena's resolve at episode end: **6** (s01 6 → s02 7 → s13 8 → s15 7 → s17 6 → s18 6).
+- Duel record: two duels. E02 result per macro: RIGOR = Jack; LENA = Lena; HEART/SPLIT = draw; WIT = no decision.
+- Anchor pie ratings: marionberry 4/10 (now on a board by the register). Boysenberry: unrated.
+- Jack's job: Anchor dishwasher from Tue Sep 1. La Flaca on loan till Christmas.
+- Words per path ≈ 13.1k–13.9k (20,000 random playthroughs on the real save). Jack ends resolve 5–10.
+
+**Notes**
+- Seeds planted (do not over-signal in E03–E06): Doug's wrong-end fire door (s01); Hale's "I was made to learn it"
+  (s06, john668); Hale's look out the window at "by kicking" (s06 C0); Evan = the driveway man (s14); Nora Calloway on
+  FB + the plaque (s16), brother Mateo's "8 days" (posted Mon Aug 31, so Sep 8 by that count — check bible §20 before using); Wes awake at
+  ~4 a.m. Central liking a post (s16 C2) and his Corps of Engineers status; Wes unreachable at 8:04–8:09 Fri and the 11:52
+  text (s17a/s18); Kevin's head-turn after Theo's car (s17b); Osei's face-down photo (s12b); Rudy's "every other Sunday"
+  (s10b visit) to rhyme with the E03 call; Theo not drinking from his own flask (s18) — logged as a choice, not a tell.
+- "Designated adult" stays Kevin's (s13); Hale's whiteboard says "appointed enemy"; the journal card title "Designated
+  antagonists" is Jack's voice.
+- Real figures on the record only: Benedict XVI (Williamson decree Jan 2009; Mar 10, 2009 letter to bishops), Traficant
+  release (Sep 2, 2009), NUMMI closure announcement (Aug 27, 2009), Aug jobs report 9.7% (Sep 4, 2009), Saints–Dolphins
+  preseason 10–7 (Sep 3, 2009).

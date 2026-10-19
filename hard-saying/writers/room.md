@@ -69,6 +69,24 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 19. **Mirror-cadence beats** (S1E01): "it reaches her face the same instant it reaches his." Once per episode.
 20. **Shared stock phrases flattening voices** (S1E01): "God help him/you/them" belongs to Frank; "designated adult" is
    Kevin's; laminating is Priya's; "sugar" is Laney's, "hon" is Gloria's.
+21. **Ranking tags** (S1E02): ", which is worse," "the worst of it," "the dangerous part," "more alarming." Max one per
+   episode. Lena's polite-is-terrifying beat doesn't need the tag at all.
+22. **Voice-delivery openers** (S1E02): "It comes out [quiet/cold/plain]," "His voice comes out…," "the voice that comes out
+   when…." Max one per episode; never open several responses to the same choice this way.
+23. **Acting before deciding** (S1E02): "before he can decide not to," "before he's thought," "before the better part of
+   him…." Max two per episode.
+24. **"Watches her not [X]"** (S1E02): "watches it not help," "watches her not skip it." Max one per episode.
+25. **Comic personification similes** (S1E02): "a goose being audited," "a car wash losing an argument," "a mosquito with a
+   grievance." Each is good; together they flatten the narration into one register of wit. Max four per episode.
+26. **"The way you'd…" similes** (S1E02): the narration's default simile shape. Max three per episode.
+27. **Lena's watched exit** (S1E02): "doesn't look back… she does," "and then she isn't," "then the fog/gold has her."
+   Once per episode, and never from the second-floor landing again.
+28. **Reaction-shot endings** (S1E02): responses ending on "Across the table, Lena…" or "Nobody moves." Max three per
+   episode, especially inside a duel.
+Small repeats to watch (S1E02): Laney's pageant wave is "wrist, wrist, elbow, elbow" (pilot order; spell it once per
+episode); "in installments"; "Of course"; "a real one" for laughs; the fixed-smile-as-mask (Laney's neon sign is hers,
+Kevin's tell is speed); hand-to-heart "as if shot"; "for no reason he could defend"; "no bit" as shorthand for sincerity;
+the lighthouse "with nothing in it" as a closer; weight figures (carry / set down) for confession and grief.
 
 ## Episode pipeline
 1. Orchestrator: read save (`ArtifactData get saves/main`), write `saves/after-<ep>.json`; notes session with the player.
