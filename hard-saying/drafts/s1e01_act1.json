@@ -1,0 +1,299 @@
+{
+  "scenes": {
+    "s01": {
+      "slug": "SATURDAY · 6:52 AM · CALIFORNIA STATE ROUTE 1, NORTH OF MARISOL",
+      "music": "Bruce Springsteen — “Youngstown”",
+      "body": [
+        "The defroster in the Silverado only works on high, so the cab is either a sauna or a meat locker, and for the last four hundred miles Frank Costigan has chosen sauna. The windshield sweats anyway. Beyond it the world has been erased — a white wall of marine fog with the yellow center line running into it like a fuse — and the St. Christopher on the visor clip swings every time the road bends, which on Highway 1 is always.",
+        "They are 2,400 miles from Glenwood Avenue; his father has announced the number at every fill-up since Indiana, the way other men say the rosary. Rust blooms over the rear wheel wells like a rash, and the left blinker has been dead since Bush’s first term, so Frank signals by sticking his arm out the window like a man hailing a cab in 1955. They came down out of Flagstaff in the dark — Barstow, then Bakersfield, gas at $2.99, which Frank took personally — on Folgers from a dented green Thermos, and no, at every exit, Jack could not drive.",
+        "*The Moviegoer* lies face down on Jack’s knee, a postcard from Oxford for a bookmark; he hasn’t turned a page since the mountains. The only CD in the truck is Springsteen, and the song is the one about their town. Now, as the fog thins to gauze, Frank sings along to the part about the furnaces — under his breath, half a step flat, a man who sings Sinatra in the garage and nowhere else on earth. He catches Jack watching, punches the CD out like it insulted his mother, and turns the dial to AM.",
+        "AM is a man in Boston standing in the rain. Crowds outside Mission Church since before dawn, umbrellas three deep, the motorcade on its way; the family, the President, a cardinal; the senator’s funeral Mass. Then the same voice slides without a seam from one sorrow to the next — *…and in New Orleans today, four years after Katrina…* — and Frank turns it down to a murmur. Jack is watching the fog.",
+        "“They’re burying Teddy today,” Frank says. He drives for a while. “He was our guy.” Another mile. “And he was wrong about the babies.”",
+        "That’s the eulogy. That’s the whole of Costigan politics, too — the union and the Church, the JFK picture in Nonna’s hallway next to the Sacred Heart, and the long silence at the kitchen table every November after everybody has voted and nobody will say how. Jack loves him for saying it, and loves him more for being unable to say one thing past it.",
+        "Then the fog tears. It doesn’t lift, it tears, like wet paper, and through the hole there’s a slope of gold grass falling away and below it a band of hammered pewter that goes out to the edge of the world and keeps going. Frank swerves into a gravel turnout without signaling — not that he could —. His father gets out. He leaves the engine running and the door open and the dinger dinging, walks to the guardrail in his UAW Local 1112 windbreaker with his hands in his pockets, and stands there.",
+        "Jack gets out too but stays by the truck. The air tastes of salt and something green and rotten, and there’s the sound nobody warned him about — less a noise than a pressure, the whole Pacific breathing against the rocks below. Jack has never seen an ocean either, but he’s eighteen; he’ll have time. Frank is fifty-one, twenty-six years on the line at Lordstown, and has never stood at the edge of anything this big that wasn’t a layoff. He doesn’t say a word. Jack watches his father look at an ocean, and suspects some of those miles were for this.",
+        "When Frank comes back he doesn’t get in. He leans on the hood and takes an envelope out of the windbreaker — St. Brigid of Kildare School, the parish crest in the corner, gone soft from riding against his chest the whole width of the country — and holds it out.",
+        { "type": "doc", "title": "Envelope, St. Brigid of Kildare School, in Mom’s handwriting", "text": "JACKIE —\nFor BOOKS. Not pizza. Not cigarettes, I wasn’t born yesterday.\nCall Nonna Sunday after Mass. She waits by the phone.\nLove, Mom\n(Nonna says buy a coat.)" },
+        "“Three hundred and forty,” Frank says. “Two hundred’s from your nonna. Hundred’s from your mother. Forty’s from me — don’t tell your mother there’s a forty.”",
+        "Jack counts it anyway, because he is his father’s son: seventeen twenties, soft as cloth. He knows the SUB pay runs out in October. And he knows that behind the bench seat of this truck, where there was nothing at all in Youngstown, there is now a pillow from the hall closet and the brown afghan off the couch, folded small, the way you fold something you don’t want anybody asking about. Nobody has asked.",
+        "Frank looks at the water again. “Your brother wanted me to tell you something.” He takes his time with it. “He said — and I’m quoting — ‘Tell the Professor don’t be a pussy.’”",
+        "He laughs, a big one, and it catches on something halfway up and turns into a cough, and he coughs it into his fist and keeps his eyes on the Pacific like it might try something. Jack’s hand has found the St. Michael medal under his T-shirt. He holds it the way you hold a railing on stairs you can’t see the bottom of. That’s all. The gulls go on without them."
+      ],
+      "journal": [
+        { "kind": "person", "id": "frank", "title": "Dad", "text": "Frank Costigan. Twenty-six years on the line at Lordstown, laid off since June. Drove me 2,400 miles because two plane tickets cost more than the truck is worth. Saw the Pacific for the first time today. Didn’t say anything. That’s how you know." }
+      ],
+      "choices": [
+        {
+          "text": "“Thanks for driving me, Dad. All of it.”",
+          "tag": "Sincerity",
+          "set": { "trait.sincerity": "+1", "soul.honesty": "+1", "e1_dad_thanked": true },
+          "response": [
+            "“It’s a truck,” Frank says. “It drives.” He finds something very interesting about the guardrail.",
+            "Then, not looking at Jack: “Your grandfather would’ve liked this. He’d have hated it. But he’d have liked it.” He gets back in the truck and shuts the door twice, because it takes two."
+          ],
+          "goto": "s02"
+        },
+        {
+          "text": "“It’s just Lake Erie with a tan.”",
+          "tag": "Wit",
+          "set": { "trait.wit": "+1", "e1_dad_joked": true },
+          "response": [
+            "Frank barks — the real laugh, the garage laugh, the one that usually needs a Stroh’s to get it out. “Don’t let your mother hear you. She thinks Erie’s a resort.”",
+            "He wipes his eyes and says the wind out here is really something, and Jack agrees that the wind is really something. The joke lets them both off the hook. That’s what jokes are for, in the Costigan family. It’s what they’ve always been for."
+          ],
+          "goto": "s02"
+        },
+        {
+          "text": "“Take the money back. You need it more than I need California.”",
+          "tag": "Candor",
+          "set": { "trait.candor": "+1", "soul.honesty": "+1", "e1_dad_offered_home": true },
+          "response": [
+            "Frank’s face comes down like a garage door. “Don’t you ever say that.” Low, not loud; Frank Costigan has never once needed loud. “Not after what it — ”",
+            "He stops. Whatever the end of that sentence is, he puts it back wherever he keeps it. He presses the envelope flat against Jack’s chest with two fingers and holds it there until Jack takes it. “You’re here. That’s what it was for. Don’t waste it.”"
+          ],
+          "goto": "s02"
+        }
+      ]
+    },
+    "s02": {
+      "slug": "SATURDAY · 9:20 AM · DELGADO HALL, ANACAPA COMPLEX",
+      "music": "Phoenix — “1901”",
+      "body": [
+        "By nine-twenty the fog is coming off the Lagoon in long white rags, and the egrets standing in the shallows look like they were placed there by the admissions office. The whole campus smells like a cough drop a cat slept on. That’s eucalyptus, an orientation leader in a teal T-shirt informs Jack, unprompted, walking backward; you get used to it. Everyone here walks backward. Everyone here is in a teal T-shirt.",
+        "The Anacapa complex is chaos with a color scheme. A mother sobbing into a Bed Bath & Beyond bag while her son, dying, holds her shower caddy. A father assembling a futon frame upside down with the serene confidence of a man who has never read an instruction in his life. Somebody’s speakers are playing Phoenix out of a third-floor window, that bright, jangling song that’s been on every college station since spring, and it sounds like the first day of something.",
+        "Over all of it, Delgado Hall: five stories of 1967 concrete with a grid of narrow windows facing the water, a building that looks like a parking garage that went to college. Jack loves it on sight. It looks like home.",
+        "Frank noses the Silverado into the loading zone, under a sign that says 15 MINUTES, where two orientation leaders with clipboards are already shaking their heads. He gets out and puts a hand over his heart. “Ladies, I’m from Ohio. I’m going to need you to forgive me in advance.” Jack has seen this work on nuns and on a state trooper outside Erie. It works on OLs.",
+        "The mini-fridge is the problem; it weighs what a mini-fridge weighs, plus the cans of Nonna’s tomatoes his mother hid inside it. They are wrestling it up the front steps, Frank swearing in a low murmur composed mostly of saints, when a kid comes out through the doors — sun-dark, salt-stiff hair, flip-flops, a surfboard under one arm and a skateboard under the other — leans both boards against the wall without a word, and picks up the other end. At the fourth floor he sets it down outside 412, says, “No stress, boss,” and is gone before Frank can get his wallet out. Frank stands in the hallway holding a five, deeply offended by California.",
+        "It’s on the third trip down — Jack with a milk crate of paperbacks, Frank carrying the lamp Nonna bought at Big Lots — that Jack sees her.",
+        "Across the Commons Lawn, much too far to hear a word: a girl in a yellow sundress and beat-up brown cowboy boots, holding a lamp shaped like a pelican, arguing with a campus parking officer beside a car with its hazards blinking. She’s losing. The ticket book is out; the pelican is wobbling. Then — he can’t see what changes. She says something, using the pelican as a visual aid. Her honey-brown hair has come loose and the sun has found the gold in it, and the officer’s pen stops moving. She laughs with her whole head tipped back, the laugh of somebody who has never once been embarrassed by her own laugh, and the officer, God help him, tears the ticket in half. She pats his arm, tucks the pelican under one arm like a football, and walks into the crowd of teal shirts and minivans, and the crowd closes over her, and she’s gone.",
+        "Jack is standing in the middle of the sidewalk holding a milk crate full of dead philosophers.",
+        "Beside him, Frank shifts Nonna’s lamp to his other hand. “Close your mouth,” he says. “You’ll catch flies.”"
+      ],
+      "journal": [
+        { "kind": "note", "id": "pelican", "title": "Pelican girl", "text": "A girl across the quad won an argument with a parking cop while holding a lamp shaped like a pelican. I didn’t catch her name. I didn’t catch anything. Dad says close your mouth." }
+      ],
+      "choices": [
+        {
+          "text": "“I’m going to marry that girl.”",
+          "tag": "Reckless",
+          "set": { "trait.reckless": "+1", "e1_marry_joke": true },
+          "response": [
+            "“Your grandfather said that about your nonna,” Frank says. “At a dance at St. Anthony’s. She threw a shoe at him.”",
+            "“Did he marry her?”",
+            "“She threw the other one at the wedding.” He starts up the steps. “Costigans don’t get the easy ones, Jackie. Get the door.”"
+          ],
+          "goto": "s03"
+        },
+        {
+          "text": "Pick up the next box.",
+          "tag": "Control",
+          "set": { "trait.control": "+1" },
+          "response": [
+            "“Atta boy,” Frank says, in the voice that means *atta boy, don’t*, and Jack carries the crate up the steps and doesn’t look back.",
+            "He does, actually. Once. From the window on the second-floor landing, where there’s nothing left to see but teal shirts and a dad still losing to a futon."
+          ],
+          "goto": "s03"
+        },
+        {
+          "text": "“Nice lamp.”",
+          "tag": "Wit",
+          "set": { "trait.wit": "+1" },
+          "response": [
+            "“That’s a pelican, Jackie.”",
+            "“That’s what makes it nice.”",
+            "Frank considers him with the face he uses for the Browns’ draft picks. Then he looks at the place in the crowd where she used to be, and the corner of his mouth goes. “Get the door, Romeo.”"
+          ],
+          "goto": "s03"
+        }
+      ]
+    },
+    "s03": {
+      "slug": "SATURDAY · 10:05 AM · DELGADO HALL, ROOM 412",
+      "music": "MGMT — “Time to Pretend”",
+      "body": [
+        "Room 412 is already half moved in, by nobody Jack can see. The left side has been done by professionals: a 42-inch flat-screen with its cords zip-tied into a neat braid; an espresso machine the size and color of a small sports car; a bed made with hospital corners in white sheets so heavy they look poured. Over the bed, framed, a movie poster — a man in a suit with a gun, the title in red, *Point Blank*, 1967. On the desk a MacBook Pro, and propped against it a card on stock thick enough to stop a bullet.",
+        { "type": "doc", "title": "Card, heavy cream stock, propped against the laptop", "text": "Theodore Vance arrives approx. 11.\nPlease don’t touch the espresso machine.\n—J. (Mr. Vance’s office)" },
+        "*Theodore Vance, Los Angeles*, said the housing email, and nothing else, and Jack has spent the summer building a Theodore Vance out of that — pale, asthmatic, possibly a cellist. He does his own side in twenty minutes, because there isn’t much of it. Three flannels and the gray Cardinal Mooney hoodie. Danny’s jacket on the hook behind the door, too big in the shoulders. The St. Anthony candle, contraband, rolled in a pair of socks at the back of the closet. Forty-one paperbacks in a milk crate, shelved by argument rather than author. Frank rests his eyes on the bare mattress, boots off the end.",
+        "At ten-forty the door bangs open and a voice says, “I’m early. Nobody panic. I’m as shocked as you are.”",
+        "Theodore Vance is not a cellist. He is tall and tanned and golden in a way Jack has only seen on magazines at the Giant Eagle checkout — blond hair arranged to look slept on, expensively; sunglasses on indoors; an iced coffee the size of a paint can. A gray T-shirt with a hole at the collar that somehow makes the hole look like a decision. Jeans that fit like they were negotiated by lawyers. A heavy steel watch with a black face. Before he’s said hello to anybody he has slotted his iPhone into a speaker dock on the dresser and filled 412 with synthesizers: a song Jack half-knows from somebody’s older brother’s car, bright and doomed, about getting rich and dying young and calling it a plan.",
+        "Then he turns and takes in the milk crate, the flannels, the man sitting up on the mattress, and smiles. Jack understands at once that the smile is a professional instrument and that he is currently being played on it, and finds he doesn’t mind.",
+        "“John Costigan. Youngstown, Ohio.” Theo points at him with the iced coffee. “Only interesting line in the whole housing email. Theo. Nobody calls me Theodore unless I’m in trouble, and I try to keep that to weekends. And you’re going to tell me about the eyebrow. Not yet. I like to save things.” He turns before Jack can answer and puts out his hand. “Mr. Costigan. Sir.”",
+        "Theo asks about the truck — he saw it in the loading zone, the green Silverado, what year, two-twelve on it, *God bless* — and then his eyes drop to the windbreaker. “Local 1112. That’s Lordstown. You build the Cobalt.”",
+        "Frank, who walked into this room prepared to dislike everything in it, says, “Built.”",
+        "“Built,” Theo agrees, and doesn’t flinch, and doesn’t do the sad head-tilt Jack has been getting from strangers since June. “Your local gave back everything they asked for in ’07, and more this spring to keep the doors open, and they laid you off anyway. That’s not a business plan. That’s a mugging with a press release.” He shrugs. “My father runs a studio. I know what a studio does to a union. Same playbook, better catering.”",
+        "Frank studies him. Then he says, “What’s your old man drive?” and Theo says, “A Bentley he’s ashamed of,” and Frank laughs out loud. He nods at the watch. “That a Rolex?” “My grandfather’s,” Theo says, and for once doesn’t elaborate. “He’d have liked you. He hated everybody.” And that’s it, it’s over: Jack has lost his father to Los Angeles in about ninety seconds.",
+        "Theo’s phone buzzes in the dock and the song cuts out mid-swagger. He glances at the screen, and his face goes dark — a light switched off in a back room — and comes back on so fast Jack can’t be sure he saw it. “My mother,” Theo announces, “is in La Cañada, which is currently on fire. I need a witness.” He hands Jack the phone. The screen says *Mom*.",
+        { "type": "sms", "from": "Mom", "text": "the sky is ORANGE. ash in the pool", "time": "10:52 AM" },
+        { "type": "sms", "from": "Mom", "text": "Pierre says we should go. should i take the dogs or the Hockney", "time": "10:52 AM" },
+        "“The dogs,” Theo says, taking the phone back. “Obviously the dogs.” He considers. “Unless it’s the swimming-pool one.”",
+        "He goes to the window to call her, and for a few seconds his voice belongs to somebody else — lower, younger, careful. *Mom. Hey. No — listen to me. Just put them in the car.* A kid’s voice. Jack looks at the floor so as not to be in the room for it. Then Theo says, “Pierre is a life coach, Mother, he is not the fire department,” and he’s back, hanging up, grinning, and the song picks up where it left off.",
+        "Frank, who has had enough of California for one morning, goes down to move the truck before the teal girls change their minds.",
+        "So Jack hangs Nonna’s crucifix: olive wood from a parish pilgrimage to the Holy Land in 1988, the corpus worn pale at the feet where her thumb has touched it since before he was born. He finds a seam between cinderblocks where the mortar gives and drives the nail with his father’s hammer. It isn’t big. It looks big in here, across from the poured sheets and the man with the gun.",
+        "Theo watches it go up. He looks at it longer than Jack expects — not the way people look at a crucifix to make a point, but the way you’d look at somebody across a room when you aren’t sure you know them. Then he takes a long pull of iced coffee.",
+        "“Is he staying?” he says. “He seems like a lot.” And before Jack can answer: “Also. The eyebrow. Now. I’ve been patient for nearly ten minutes, which is a personal best.”"
+      ],
+      "journal": [
+        { "kind": "person", "id": "theo", "title": "Theo Vance", "text": "Roommate. Los Angeles. Arrived with his grandfather’s watch, a movie poster and an espresso machine nobody is allowed to touch. His mom might be on fire. He talked to my dad like he’d known him for years. I can’t tell yet if he’s the best thing that’s going to happen to me here or the worst. Possibly both by Tuesday." }
+      ],
+      "choices": [
+        {
+          "text": "“He stays. He was here first. You can have the wall over your bed for your Kubrick.” Then the eyebrow: a hockey puck.",
+          "tag": "Wit",
+          "set": { "trait.wit": "+1", "rel.theo.warmth": "+1", "scar_told_theo": "puck", "e1_crucifix_up": true },
+          "response": [
+            "“Phantoms game,” Jack says. “Ninth grade. Front row, behind the glass, except there was a gap in the glass.”",
+            "“And the puck hit you.”",
+            "“I was the puck.”",
+            "Theo stares at him for what feels like a full reel. “*Point Blank* is Boorman, Costigan,” he says at last. “But I’ll allow it.” And he takes off his sunglasses for the first time — green eyes, a little bloodshot, older than the rest of his face — and looks at Jack like a director at an audition who has just stopped taking notes."
+          ],
+          "goto": "s04"
+        },
+        {
+          "text": "“He stays. Problem?” Then the eyebrow: Sister Mary Clement.",
+          "tag": "Candor",
+          "set": { "trait.candor": "+1", "rel.theo.trust": "+1", "scar_told_theo": "nun", "e1_crucifix_up": true },
+          "response": [
+            "“Sister Mary Clement,” Jack says. “Third grade. Wooden ruler with a metal edge. She was aiming for my soul.”",
+            "Theo raises the iced coffee to the crucifix like a toast. “No problem. I’ve always wanted a chaperone.” The sunglasses stay pointed at it a little long; Jack can’t see the eyes behind them, only where the lenses are aimed. Then Theo is asking, with total seriousness, whether nuns are still legally allowed to hit people, “because I have a list, and several of them are in the industry.”"
+          ],
+          "goto": "s04"
+        },
+        {
+          "text": "Hang it a little lower, so it’s “not watching your side.” Then the eyebrow: a swan.",
+          "tag": "Charm",
+          "set": { "trait.charm": "+1", "rel.theo.warmth": "+1", "scar_told_theo": "swan", "e1_crucifix_up": true },
+          "response": [
+            "Jack pulls the nail, finds a softer seam lower down, and rehangs it facing the door instead of the poured sheets. “There. Not watching your side.”",
+            "“And the eyebrow?”",
+            "“A swan. Mill Creek Park. Don’t ask.”",
+            "“I have to ask. It’s a moral obligation.”",
+            "“It had a family, Theo. It had *reasons*.”",
+            "Theo laughs with his head back, sunglasses sliding down his nose, then stops and just looks at him. “Costigan,” he says, “I think we’re going to be very happy together.” It sounds like a line. Jack waits for the turn, the topper, and it doesn’t come, and he’s surprised to find it isn’t a joke."
+          ],
+          "goto": "s04"
+        }
+      ]
+    },
+    "s04": {
+      "slug": "SATURDAY · 12:40 PM · DELGADO HALL, LOADING ZONE",
+      "body": [
+        "By twelve-forty the fog has burned off as if it had never been, and the sky over the Lagoon is a blue so clean it looks fake — a blue for a postcard of somewhere nobody actually lives. The Silverado idles in the loading zone with the driver’s door open. Frank has the road atlas spread on the hood, a Rand McNally held together with packing tape, the Ohio page worn soft as an old dollar, and he’s walking Jack through the route home, which is the route here, backward.",
+        "“Forty the whole way to Oklahoma City. Four days, if I don’t dawdle.” He folds the atlas along creases older than Jack. “I’m staying with a guy in Flagstaff.”",
+        "Jack is fairly sure there’s no guy in Flagstaff. He’s seen the pillow and the afghan. He knows his father will sleep in this cab at rest stops from here to Ohio with his boots on and the doors locked, to save the motel money, and will tell Maria on the phone that the guy in Flagstaff says hello. Jack doesn’t say anything. That’s the Costigan way: you know, and you let them have it. Some men don’t have much left that they can still be given.",
+        "“Okay.” Frank has a list. He’s been working on it since Missouri. He delivers it with his eyes on the truck. “Call your mother. Call your nonna — she’s got the phone by the bed now, she’ll pick up, God help you. Go to Mass. Don’t let the Californians make you soft.” He leaves a little room before the last one, the way you’d leave room at a table. “Write your brother. He reads ’em twice.”",
+        "Then he leans into the cab and unclips the St. Christopher from the visor. It has been there since before Jack was born; the enamel is worn clean off the saint’s face, and the child on his shoulder is just a bump. Frank puts it in Jack’s palm and closes Jack’s fingers over it with his own. Then he looks at it there, and opens Jack’s hand again, and takes it back.",
+        "“Never mind,” he says, and clips it back on the visor. “I need him more than you.”",
+        "That’s what finally does it. There’s nothing left on the list. They are standing in a loading zone in California, two Costigan men with the engine running, and they are going to have to do something with their bodies."
+      ],
+      "choices": [
+        {
+          "text": "Hug him. Say it. “I love you, Dad.”",
+          "tag": "Sincerity",
+          "cue": "Frank will remember that.",
+          "key": "You told your father you loved him in a parking lot in California.",
+          "set": { "trait.sincerity": "+1", "soul.honesty": "+1", "e1_hugged_dad": true },
+          "response": [
+            "Jack just steps in and does it — the windbreaker crackling, the smell of Folgers and diesel and the Lava soap his father has scrubbed with every day of Jack’s life. “I love you, Dad.”",
+            "Frank goes still. Then his arms come up, and he holds on a second longer than a Costigan should, one hand flat between Jack’s shoulder blades, and says into Jack’s hair, “Yeah. Okay. Yeah.” He gets in the truck fast.",
+            "The Silverado pulls out onto Lagoon Road with the bad muffler announcing it to every egret on the water, Frank’s arm out the window where the left blinker ought to be. Jack stands in the loading zone with $340 in his pocket until a minivan leans on its horn."
+          ],
+          "goto": "s05"
+        },
+        {
+          "text": "Handshake. Steady. Man to man.",
+          "tag": "Control",
+          "key": "You shook your father’s hand goodbye.",
+          "set": { "trait.control": "+1" },
+          "response": [
+            "Jack puts out his hand and Frank takes it. The calluses. The old ridge of scar across the knuckles from the line accident in ’91, the one Jack used to trace with a fingertip during long homilies. “Good,” Frank says. “Good grip.”",
+            "At the last second he pulls Jack in by the hand and claps him once on the back, hard enough to hurt, hard enough that Jack will feel it under his shirt the rest of the afternoon.",
+            "Then the Silverado pulls out onto Lagoon Road, bad muffler and all, Frank’s arm out the window because the left blinker doesn’t work. Jack stands in the loading zone with $340 in his pocket until a minivan honks at him, twice, the second time with feeling."
+          ],
+          "goto": "s05"
+        },
+        {
+          "text": "“Dad — about Danny — ”",
+          "tag": "Candor",
+          "key": "You tried to talk to your father about Danny.",
+          "set": { "trait.candor": "+1", "soul.honesty": "+1", "e1_asked_about_danny": true },
+          "response": [
+            "Frank’s face shuts. Not slowly — all at once, like a door in wind. “We don’t,” he says. “Not here. That’s done.”",
+            "The minivans go by. Frank looks off at the Lagoon until he’s ready, and when he speaks again it’s softer. “Write him. That’s what you do. You write him.” He hugs Jack then, quick and rough, a hand on the back of his neck, and lets go before either of them can make anything of it.",
+            "The Silverado pulls out onto Lagoon Road, the muffler going, Frank’s arm out the window in place of the left blinker. Jack stands in the loading zone with $340 in his pocket and the word *done* in his ears until a minivan honks at him."
+          ],
+          "goto": "s05"
+        }
+      ]
+    },
+    "s05": {
+      "slug": "SATURDAY · 4:00 PM · DELGADO HALL, 4TH FLOOR LOUNGE",
+      "body": [
+        "Jack’s phone buzzes as he sits down. He has to tilt the RAZR to the light to read it; the screen only works at an angle, like a person.",
+        { "type": "sms", "from": "Gina", "text": "dad called from a gas station he says ur roommate is a movie star?? nonna wants 2 know r there any catholics there i said just u", "time": "3:58 PM" },
+        "The fourth-floor lounge has a whiteboard, a carpet the color of a bruise, and windows onto the Grove that don’t open. Thirty-odd freshmen sit in a horseshoe of orange plastic chairs wearing color-coded name tags. Jack’s says JOHN C. · 412 in bubble letters; he has crossed out JOHN and written JACK, and the RA watched him do it, and he’s fairly sure it’s going in a file.",
+        "The RA’s own tag says PRIYA (RA) · 401 and, smaller, ASK ME ANYTHING (WITHIN REASON). She is small and fast, with a binder on her hip, a laminated agenda in her hand, and an air horn on a lanyard around her neck. “The air horn,” she says, before anyone can ask, “is for emergencies only. Emergencies include fire, flood, and microwaving fish.”",
+        { "type": "doc", "title": "DELGADO 4 · FLOOR MEETING #1 (laminated)", "text": "1. Welcome!!\n2. Community Standards (per the Residential Life Handbook)\n3. Quiet Hours: Sun–Thu 10 PM / Fri–Sat 1 AM\n4. Fire Safety & YOU\n5. Icebreaker: Two Truths and a Lie!\n6. Questions (within reason)" },
+        "Jack takes inventory. Across the horseshoe, a big soft kid in a World of Warcraft T-shirt — DOUG P. · 420 — with a laugh like a leaf blower, who says *duuude* about everything, including the agenda. Beside him, same room: KEVIN T. Compact, gym-built, crew cut, a navy quarter-zip zipped exactly to the sternum, sitting like a team captain at a booster dinner. He has a big easy smile that never quite reaches his eyes. He is the only person in the room who has brought a pen.",
+        "Theo arrives late with a fresh iced coffee and no name tag, says, “Don’t stop on my account,” and lies down flat on the carpet in the middle of the horseshoe with his sunglasses on, like a chalk outline that brought a drink. Priya drops a name tag on his chest without breaking her sentence. It says THEODORE V. He sighs like a man receiving a diagnosis.",
+        "The rules come at speed. No candles — Jack thinks of the St. Anthony candle in its sock and arranges his face into something Presbyterian. No hot plates, no pets, “and a fish is a pet, I don’t care what your mom said.” Quiet hours. The roof: “The door on five says ALARM WILL SOUND. It is alarmed.” A pause. “I know it isn’t alarmed. Pretend.”",
+        "Then she sets the agenda face down and doesn’t look at it again, and the laminate has gone out of her voice. “Last thing. Nobody goes to the Point after dark.” She goes around the horseshoe meeting everybody’s eyes, one at a time, Jack’s included, Theo’s sunglasses included. “That’s not a Res Life rule. That’s mine. I will know.”",
+        "Doug puts his hand up. “What’s the Point?”",
+        "“It’s a cliff,” Priya says. “Next.”",
+        "Next is Two Truths and a Lie. Priya models it — “I’m a biochem major, I have three jobs, I love my job” — and nobody can tell which is the lie, possibly including Priya. Kevin stands up for his, which nobody else has done. “Kevin. San Jose. Okay.” He claps once, like a huddle breaking. “I’m pre-med. I’m an only child. I’ve never been to a party.”",
+        "The room guesses the party, loudly; nobody built like that has never been to a party. Kevin grins and shakes his head. “I’ve got a sister. She’d kill me for that.” He steers the laughter like a man who knows exactly where the brakes are.",
+        "When it comes around to the carpet, Theo doesn’t sit up. “Theo. Los Angeles. My condolences.” He addresses the ceiling tiles. “My father has an Oscar. I’ve been to rehab. I’ve never been in love.”",
+        "A silence; then somebody laughs; then the whole room is laughing, because he said it like a weather report. Priya waits it out. “So which one’s the lie?”",
+        "“I’m not telling.”",
+        "“That’s not how the game works.”",
+        "Theo lifts the iced coffee an inch off his chest, a toast to the acoustic tile. “It’s how *my* game works.”",
+        "The room loves it. Doug is going like a leaf blower; even Priya is laughing, with her mouth shut. Jack laughs too. Across the horseshoe, Kevin Tran is the one person not laughing. He’s looking at his pen.",
+        "“Blue tag,” Priya says, pointing at Jack without consulting anything. “Jack-not-John. Go.”"
+      ],
+      "journal": [
+        { "kind": "person", "id": "kevin", "title": "Kevin Tran", "text": "420, down the hall. Pre-med from San Jose. Smiles like a team captain. Claims he’s never been to a party. Has a sister he’d rather we didn’t know about." },
+        { "kind": "person", "id": "priya", "title": "Priya (RA)", "text": "Laminates things. Owns an air horn. Has one rule she doesn’t laminate." },
+        { "kind": "note", "id": "the_point", "title": "The Point", "text": "A cliff, according to Priya. “Next.” Nobody goes there after dark. Her rule, not the school’s." }
+      ],
+      "choices": [
+        {
+          "text": "“I’ve never seen the ocean before today. I can recite the Baltimore Catechism. I’ve been in a bar fight in Erie, Pennsylvania.”",
+          "tag": "Wit",
+          "set": { "trait.wit": "+1", "rel.kevin.warmth": "+1" },
+          "response": [
+            "The floor votes catechism, overwhelmingly; a girl in a Tegan and Sara shirt says that isn’t a thing a person can physically do. So Jack does it. “Who made you? God made me. Why did God make you?” — and from across the horseshoe, before he can get there, Kevin Tran says it with him, in the sing-song of a kid who had it drilled into him early by somebody who meant it: *God made me to know Him, to love Him, and to serve Him in this world, and to be happy with Him forever in the next.*",
+            "They stop at the same time. They look at each other across a horseshoe of strangers and one guy lying on the carpet, and Jack watches it land on Kevin’s face in the same instant it lands on his own: *oh. You too.*",
+            "“So which one’s the lie?” Priya says.",
+            "“The bar fight,” Jack says. It’s the one he’d rather not have said. Doug looks genuinely let down."
+          ],
+          "goto": "s06"
+        },
+        {
+          "text": "“My dad drove me 2,400 miles in a truck. I’ve never seen the ocean before today. My brother’s in prison.”",
+          "tag": "Candor",
+          "cue": "Theo noticed.",
+          "key": "You told the floor your brother is in prison.",
+          "set": { "trait.candor": "+1", "soul.honesty": "+1", "rel.theo.trust": "+1", "e1_twotruths_danny": true },
+          "response": [
+            "It comes out easier than he meant it to, and the room has no idea what to do with it. A weird little silence, the kind with a hum in it. Then Doug laughs — a big honest bark of relief, because obviously, *duuude*, that’s the lie — and a couple of people laugh with him, not sure why.",
+            "“Which one’s the lie?” Priya asks.",
+            "“The truck,” Jack says. “I flew.”",
+            "Priya writes something on her clipboard. Then she looks at what she wrote, and crosses it out.",
+            "Later, walking back down the hall, Theo falls into step beside him with THEODORE V. still stuck to his shirt. He doesn’t say anything until they’re at the door of 412. “The truck was true, wasn’t it.” It isn’t a question. Jack gets his key out. “All of it was.” Theo nods, and doesn’t make a joke. It’s the first time since ten-forty this morning."
+          ],
+          "goto": "s06"
+        },
+        {
+          "text": "“I’m going to be a priest. I’m going to be a philosopher. I’m going to be extremely good at beer pong.”",
+          "tag": "Charm",
+          "set": { "trait.charm": "+1", "rel.theo.warmth": "+1" },
+          "response": [
+            "The floor votes *priest* as the lie, by acclamation, a girl in the back calling out, “*Look* at him,” which Jack decides to take as a compliment. Priya opens her mouth to rule.",
+            "From the carpet, Theo raises one finger without sitting up. “He’s going to be all three,” he says. “In that order.” He considers the ceiling. “Reversed.”",
+            "And across the horseshoe Kevin Tran laughs — a real one, surprised out of him, a short helpless snort he catches with the back of his hand and can’t quite put away. It isn’t the laugh he gave the room before. Jack hears the difference, doesn’t know yet what to make of it, and decides to like him anyway."
+          ],
+          "goto": "s06"
+        }
+      ]
+    }
+  }
+}

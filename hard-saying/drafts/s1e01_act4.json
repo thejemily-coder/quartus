@@ -1,0 +1,801 @@
+{
+ "scenes": {
+  "s16": {
+   "slug": "SUNDAY · 12:41 PM · ST. BRENDAN THE NAVIGATOR NEWMAN CENTER, COURTYARD",
+   "duel": "lipservice",
+   "set": {
+    "duel.lipservice.lena": "+1",
+    "e1_lena_knows_surname": true,
+    "e1_knows_same_dorm": true
+   },
+   "body": [
+    "Coffee and Donuts happens in the courtyard whether anybody wants it or not: folding tables under the olive tree, Costco donuts sweating in their clamshells, an urn that has been burning the same coffee since the 9:30. The sprinkler Jack held the wrench for is still broken, hissing at the flower bed, and a toddler in a clip-on tie is trying to catch it with his mouth.",
+    "She’s by the olive tree: navy dress with small white flowers, the oatmeal cardigan, the brown boots, the black lace folded over her wrist like a waiter’s towel. She sees him coming and doesn’t pretend she hasn’t.",
+    "“So,” she says. “You’re real.” “You’re *Catholic*.” “*You’re* Catholic.” “I wear a medal.” “*I* wear a medal.” They point their coffees at each other’s throats, a standoff in a very small Western.",
+    "Joey Abruzzo drifts toward them with a maple bar — “Jack! Who’s your —” — and Kevin, without breaking stride or smile, steers him back to the donuts by the elbow.",
+    "Across the courtyard Tyler Brandt cups his hands to his mouth. “COSTIGAN! *OHIO!*” Jack lifts a hand. “Costigan,” she says, reading it off him like the name on a summons.",
+    "“At the door,” he says. “Father Osei. ‘You came back.’” “Preview weekend. In April.” Brisk, a fact handed across a counter. That’s all she gives him.",
+    {
+     "if": "e1_after==\"cove\"",
+     "text": "“Where are they keeping you?” she asks. “Delgado.” She stares at him. “You’re *kidding*.” “Four twelve.” “Two seventeen.” She narrows her eyes as though he arranged it with Housing. “Don’t get ideas. It’s a big building.” It is not a big building."
+    },
+    {
+     "if": "e1_after==\"walked\"",
+     "text": "“Laney says thank you,” she tells him. “Laney also says you smell like eucalyptus, but she was horizontal at the time, so I’m not entering it into the record.”"
+    },
+    "“You were rolling your eyes at the homily.” “I was not —” “I don’t care if you were. Your type loves Mark 7.” She sets the coffee on a folding table and pushes the cardigan sleeves up to her elbows. It’s twelve-forty on a Sunday and she’s rolling up her sleeves.",
+    "“Jesus isn’t against washing your hands, Costigan. He’s against confusing washed hands with a clean heart. Read verse eight. They *disregard* God’s commandment and *cling to* human tradition. The problem isn’t the form. It’s the swap.” She ticks it off on her fingers. “Aristotle, *Ethics*, book two: we become just by doing just things. You don’t feel your way into virtue, you *practice* your way. The heart’s a muscle. It does what it’s trained to do. Your move, Youngstown.”"
+   ],
+   "choices": [
+    {
+     "text": "Isaiah, which Jesus is quoting: “Their hearts are far from me.” He’s worried about people who do the forms perfectly and feel nothing.",
+     "tag": "Press",
+     "set": {
+      "duel.lipservice.rigor": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“He’s quoting Isaiah,” Jack says. “*This people honors me with their lips, but their hearts are far from me.* He’s not worried about people who skip the forms. He’s worried about people who do them perfectly and feel nothing.” A nod at the blazers, the pearls, a man checking a ball score on his BlackBerry. “That’s most of this courtyard.”",
+      "She gives him the citation with a tip of the cup and takes the ground out from under it. “Sure. And the cure for a cold heart is *more* lips, not fewer. You keep praying until the prayer prays you.”"
+     ],
+     "goto": "s17"
+    },
+    {
+     "text": "“Says the girl in the veil.”",
+     "tag": "Riposte",
+     "set": {
+      "duel.lipservice.wit": "+1",
+      "rel.lena.heat": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "She doesn’t blink. She holds up the wrist with the lace folded over it, as if entering it into evidence. “Yes. Says the girl in the veil. Is that your argument, or your opening position on my accessories?”"
+     ],
+     "goto": "s17"
+    },
+    {
+     "text": "“Aristotle’s right. I’d be a worse man without Sunday obligation. I know because I’ve tested it.”",
+     "tag": "Concede",
+     "set": {
+      "duel.lipservice.heart": "+1",
+      "rel.lena.trust": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "He isn’t supposed to give her a point in the first minute. She stops with the cup halfway to her mouth, like a fencer whose opponent has lowered his sword to ask her the time. “Okay,” she says, recalibrating. “Okay, Youngstown.”"
+     ],
+     "goto": "s17"
+    },
+    {
+     "text": "Augustine: *Dilige, et quod vis fac.* Love, and do what you will. Get the love right and the forms follow.",
+     "tag": "Reframe",
+     "set": {
+      "duel.lipservice.rigor": "+1",
+      "duel.lipservice.wit": "+1"
+     },
+     "response": [
+      "“*Dilige, et quod vis fac.* Love, and do what you will. Get the love right and the forms follow.” He’s pleased with the Latin. He shouldn’t be.",
+      "“Augustine said that about *correcting* people,” she says, delighted, “in a homily on First John. It’s about discipline. It is not a permission slip, and you know it.” She leans in an inch. “I can *see* you know it.” He does. She can."
+     ],
+     "goto": "s17"
+    }
+   ]
+  },
+  "s17": {
+   "slug": "SUNDAY · 12:49 PM · ST. BRENDAN THE NAVIGATOR NEWMAN CENTER, COURTYARD",
+   "duel": "lipservice",
+   "set": {
+    "duel.lipservice.lena": "+1"
+   },
+   "body": [
+    "She doesn’t wait for the coffee to cool. “Pascal,” she says. “You know Pascal.” “I know Pascal.” “Then you know what he tells the man who wants to believe and can’t. Go and do what the believers do. Take the holy water. Have Masses said. *Cela vous abêtira.*” The French comes out in a New Orleans accent, which is unfair. “It’ll make you stupid. The good stupid. The body leads; the soul follows.”",
+    "She points the cup at his face. “You came to Mass this morning on no sleep — don’t argue, your eyes look like a pair of bruised peaches —” “Two hours.” “— on two hours of sleep, thank you for the testimony, and your heart was not in that building. I watched you from the sign of peace on. You looked like a man waiting on a bus.”",
+    {
+     "if": "e1_mass_prayer==\"drift\"",
+     "text": "“I’d bet you couldn’t tell me when the second bell rang.” He opens his mouth. He can’t, and she watches him not be able to, like a lawyer who never asks a question she doesn’t know the answer to.",
+     "else": "“But your knees were there. I saw them. That counts.”"
+    },
+    "“That’s not hypocrisy,” she says. “That’s *showing up*. Half of faith is showing up hungover.”",
+    {
+     "if": "!e1_flask && !e1_beerpong && e1_after==\"walked\"",
+     "text": "“I’m not hungover.” “Then you have no excuse for those eyes at all, and I’m counting it double.”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "Kierkegaard: a whole nation baptized and nobody a Christian. “When the form is all you’ve got, you end up with Denmark. Or Boston yesterday.”",
+     "tag": "Press",
+     "set": {
+      "duel.lipservice.rigor": "+1"
+     },
+     "response": [
+      "“Kierkegaard. A whole country baptized, married and buried in church, and he can’t find one Christian in it. When the form is all you’ve got, you end up with Denmark.” He lets it sit. “Or Boston yesterday.”",
+      "Her eyes light up like he’s handed her a match. “Oh, you want to do the funeral? Let’s do the funeral.”"
+     ],
+     "goto": "s18"
+    },
+    {
+     "text": "“So my hangover’s a sacramental now.”",
+     "tag": "Riposte",
+     "set": {
+      "duel.lipservice.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Your hangover is a *penance*, Costigan. Offer it up.” A passing grandmother nods. Then Lena brings up Boston herself, the way you’d bring a bigger knife to the table."
+     ],
+     "goto": "s18"
+    },
+    {
+     "text": "“Fine. I showed up because my body knew the way when I didn’t. That’s — yeah. That’s real.”",
+     "tag": "Concede",
+     "set": {
+      "duel.lipservice.heart": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "He doesn’t take it back. Some mornings in Youngstown his feet walked him to the 6:30 at St. Brigid’s while the rest of him was still arguing.",
+      "When she answers it’s in a different voice, lower, with no performance in it. “That’s the whole thing. That’s all it is, most days.” Then the armor comes back down like a shop gate. “Anyway,” she says. “Boston.”"
+     ],
+     "goto": "s18"
+    },
+    {
+     "text": "“You wear that veil so people will look at you.”",
+     "tag": "Personal",
+     "cue": "Lena will remember that.",
+     "set": {
+      "duel.lipservice.rigor": "+1",
+      "duel.lipservice.wit": "+1",
+      "rel.lena.friction": "+2",
+      "rel.lena.trust": "-1",
+      "e1_duel_personal": true
+     },
+     "response": [
+      "He knows it’s a good shot while it’s still leaving his mouth, and a half second later he knows what kind.",
+      "She isn’t wounded; that’s the frightening part. She looks at him, very level. “People look either way, Jack. This way I decide what they’re looking at.”",
+      "*Jack*, not *Costigan*. It’s colder. Whatever they were doing under the olive tree, it isn’t a game anymore. She folds the mantilla once, twice, and puts it in her bag."
+     ],
+     "goto": "s18"
+    }
+   ]
+  },
+  "s18": {
+   "slug": "SUNDAY · 12:56 PM · ST. BRENDAN THE NAVIGATOR NEWMAN CENTER, COURTYARD, BY THE OLIVE TREE",
+   "duel": "lipservice",
+   "set": {
+    "duel.lipservice.lena": "+1"
+   },
+   "body": [
+    "So they do the funeral, under the olive tree, with the courtyard emptying around them like a theater after the lights come up.",
+    {
+     "if": "e1_duel_personal",
+     "text": "She argues now with her sleeves still pushed up and none of the fun left in her face. “Costigan,” when she uses it, is flat as a tabletop."
+    },
+    "“Here’s my problem with yesterday,” Jack says, and finds out as he says it how much he has one. “A cardinal in the sanctuary. A president at the ambo. Every honor the Church can give a public man, on live television, for a man who voted for decades against what she teaches about the unborn and never took it back where anyone could hear. And we’re told that’s mercy.” His hands are going now, his father’s kitchen-table hands. “Aquinas: scandal is giving somebody the occasion to fall. Canon law even has a line for it — you can refuse a church funeral to a manifest sinner if you can’t give him one without public scandal. It’s in the book. Nobody opened the book. Mercy isn’t a red carpet.”",
+    "She lets him finish. That’s how he knows he’s in trouble.",
+    "“The Church buries sinners, Costigan,” she says. “That’s the *job*. It’s the only club on earth that throws the funeral for the members who failed. The rite isn’t an award. It’s the Church on her knees asking God to do what she can’t.” She turns the cup in her fingers. “We don’t know his heart. He wrote to the Pope.” She leaves that exactly where it is. “My grandmother would’ve said you bury everybody, and you bury them in the good dress.”",
+    "She says the last part plainly, to the coffee, which has gone cold. She drinks it anyway.",
+    "Then he hears it. The forms girl, the practice-your-way-to-virtue girl, arguing that only God can see a heart — and under it, worse, his own voice, the heart man, asking for a bouncer at a funeral. He sees it reach her face the same instant it reaches his. They’ve swapped sides of the courtyard, they both know it, and whoever says so first wins."
+   ],
+   "choices": [
+    {
+     "text": "Spring it first. “You just argued the heart over the form. Welcome to my side of the courtyard.”",
+     "tag": "Press",
+     "set": {
+      "duel.lipservice.rigor": "+2",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "She opens her mouth. She closes it. He watches the whole appellate court convene behind her eyes and rule against her. “Oh, you *jagoff*,” she says, delighted, his own word coming back from the porch with a Louisiana accent and interest."
+     ],
+     "goto": "s19"
+    },
+    {
+     "text": "Give her the funeral. “You bury everybody. My nonna would say the same — and then say one rosary for him and one for the cardinal.”",
+     "tag": "Concede",
+     "set": {
+      "duel.lipservice.heart": "+2",
+      "rel.lena.warmth": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“And she’d make the cardinal’s longer,” Jack adds.",
+      "He can see her holding the trap, spring wound: *so the heart man wants a bouncer*. She could. Instead she sets it down on the flagstones and steps over it, and he sees her do it, and she sees him see."
+     ],
+     "goto": "s19"
+    },
+    {
+     "text": "“So your position is mercy for senators and holy water for my hangover.”",
+     "tag": "Riposte",
+     "set": {
+      "duel.lipservice.wit": "+1",
+      "rel.lena.heat": "+1"
+     },
+     "response": [
+      "“My position,” she says, pushing off the olive tree, “is that you’re *both* sinners, and I’m only obligated to pray for one of you.” She lets him wonder which one all the way to the gate."
+     ],
+     "goto": "s19"
+    },
+    {
+     "text": "Mark 7:21: what comes *out* of a man defiles him. Judge the public act, not the soul. “We’re both right, and we’re both being Pharisees about it.”",
+     "tag": "Reframe",
+     "set": {
+      "duel.lipservice.rigor": "+1",
+      "duel.lipservice.heart": "+1"
+     },
+     "response": [
+      "She gives him a long look, like a painting she walked past twice without noticing. “That’s annoyingly good. Who taught you that?” “My nonna. And Aquinas.” “In that order?” “She’s scarier.”"
+     ],
+     "goto": "s19"
+    },
+    {
+     "text": "Tell her what your father said in the truck yesterday.",
+     "tag": "Sincerity",
+     "if": "trait.sincerity>=2",
+     "set": {
+      "duel.lipservice.rigor": "+1",
+      "duel.lipservice.heart": "+1",
+      "rel.lena.warmth": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“Yesterday morning the radio was doing the funeral,” Jack says, “and my dad drove a mile and said, ‘He was our guy.’ Another mile. ‘And he was wrong about the babies.’ That was the whole eulogy.”",
+      "She laughs, and then she doesn’t. “That’s the whole argument,” she says. “Your daddy did it from the driver’s seat.” “He’d hate that you said *daddy*.” “Tell him a girl from New Orleans says he’s right *and* wrong.” She means it to be delivered, and Jack, God help him, can already hear himself delivering it."
+     ],
+     "goto": "s19"
+    }
+   ]
+  },
+  "s19": {
+   "slug": "SUNDAY · 1:04 PM · OCEAN ROAD, THE 11 BUS TO THE HARBOR",
+   "duel": "lipservice",
+   "music": "Regina Spektor — “Laughing With”",
+   "body": [
+    "Somehow they’re out the gate and at the bus shelter on Ocean Road with the argument still running, like a car neither of them remembered to turn off. Jack coughs, the morning rasp, and she pounces on it like a cat on a moth.",
+    "“And you, Mr. Heart,” she says, “want a bouncer at a funeral. You’re a Pharisee with a smoker’s cough.”",
+    "Her phone buzzes. She reads, closes her eyes long enough to ask God for patience, and holds it out.",
+    {
+     "type": "sms",
+     "from": "Laney",
+     "text": "bring me grease or bury me. the anchor. sloane dropped me. im wearing sunglasses indoors like a celebrity",
+     "time": "1:02 PM"
+    },
+    "The 11 sighs up to the curb. “Where’s the Anchor?” “The harbor. Three miles. Laney says the pancakes raise the dead.” She climbs on. They’re not done, so he climbs on after her and holds out a twenty, which is all he has; the driver looks at it like a dead fish. Lena drops coins in the box for him without turning around. “You owe me bus fare, Youngstown.”",
+    "They take the back bench. Across the aisle a woman with a mesh bag of oranges gives up pretending to look out the window and settles in to listen, like they’re her program.",
+    {
+     "if": "duel.lipservice.rigor>=3",
+     "text": "Lena looks out the window for two stops. Then: “Okay. That was good.” She doesn’t look at him. “Don’t let it go to your head. It’s crowded in there.” She looks furious and thrilled in equal parts, and he’d bet the twenty she’ll be up until two rereading Aquinas on scandal to find where he cheated."
+    },
+    {
+     "if": "duel.lipservice.heart>=3",
+     "text": "“Draw,” she says. “I’m calling it a draw, and if you argue with me I’ll take it back.” He doesn’t argue. The bus stops; nobody gets on. Then, plainly, looking at the oranges and not at him, she says: “My grandmother died in the storm. In ’05.” That’s all. Her hands are in her lap. He doesn’t push. The woman across the aisle, to her eternal credit, looks out the window."
+    },
+    {
+     "if": "duel.lipservice.wit>=2 && duel.lipservice.rigor<=2 && duel.lipservice.heart<=2",
+     "text": "“You argue like a man who’s going to lose a lot of money at cards,” she says. “I argue like a man who’s going to win it back.” “That’s what they all say in New Orleans, Costigan. Right before they sell their car.” The woman with the oranges laughs out loud."
+    },
+    {
+     "if": "duel.lipservice.rigor<=2 && duel.lipservice.heart<=2 && duel.lipservice.wit<=1",
+     "text": "Gracious and merciless: “Better luck next Sunday, Youngstown.” She says it like next Sunday is already written down somewhere. It is, he realizes. It’s written down on his."
+    },
+    {
+     "if": "e1_duel_personal && duel.lipservice.rigor>=3",
+     "text": "Then, still to the window: “Part of it was also cheap. And you know which part I’ll remember.”"
+    },
+    {
+     "if": "e1_duel_personal",
+     "text": "She sits an inch farther away than the bench requires. The mantilla stays folded in her bag."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Ride the rest of the way with her.",
+     "response": [
+      "Mission Street, palms, a Borders with EVERYTHING MUST GO in the window. At the harbor stop he can hear the sea lions before the doors open, like a chorus of old men who’ve all been shortchanged at once."
+     ],
+     "goto": "s20"
+    },
+    {
+     "text": "Give her the last word anyway.",
+     "tag": "Gracious",
+     "if": "duel.lipservice.rigor>=3",
+     "set": {
+      "rel.lena.warmth": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“Fine,” he says. “You were right about Pascal.” “I’m right about everything, Costigan.” She stands as the bus brakes at the harbor. “You were right about *one* thing.” She says it to the door, but she says it."
+     ],
+     "goto": "s20"
+    },
+    {
+     "text": "Don’t say anything. Just sit with it until the harbor.",
+     "tag": "Quiet",
+     "if": "duel.lipservice.heart>=3",
+     "set": {
+      "rel.lena.trust": "+1",
+      "soul.restraint": "+1"
+     },
+     "key": "Lena told you her grandmother died in Katrina, and you let it be.",
+     "response": [
+      "He doesn’t say *I’m sorry*, or *What happened*, or anything with a joke folded into it. He sits with his hands on his knees and lets it be the size it is. Two stops of quiet, and it isn’t empty; it has her in it.",
+      "At the harbor she stands, and at the top of the steps she says, “Thank you,” and doesn’t say for what."
+     ],
+     "goto": "s20"
+    },
+    {
+     "text": "“Rematch. Best of seven. Loser buys the pancakes.”",
+     "tag": "Riposte",
+     "if": "duel.lipservice.wit>=2 && duel.lipservice.rigor<=2 && duel.lipservice.heart<=2",
+     "set": {
+      "rel.lena.heat": "+1"
+     },
+     "response": [
+      "“Best of seven?” She looks at him the way you’d look at a man proposing to swim to Catalina. “You’ll be dead by four.” “I’ll offer it up.” The orange lady pats his arm on her way off, like he’s going to need it."
+     ],
+     "goto": "s20"
+    },
+    {
+     "text": "Tip an imaginary hat. “Next Sunday, Broussard.”",
+     "tag": "Concede",
+     "if": "duel.lipservice.rigor<=2 && duel.lipservice.heart<=2 && duel.lipservice.wit<=1",
+     "set": {
+      "rel.lena.warmth": "+1",
+      "rel.lena.heat": "+1"
+     },
+     "response": [
+      "She tries not to smile at *Broussard*, and fails at one corner, and turns to the window so he won’t see."
+     ],
+     "goto": "s20"
+    },
+    {
+     "text": "Offer to buy Laney’s pancakes “as reparations for Erie.”",
+     "tag": "Charm",
+     "if": "trait.charm>=2",
+     "set": {
+      "rel.lena.warmth": "+1",
+      "rel.laney.warmth": "+1"
+     },
+     "response": [
+      "“I’ll get Laney’s pancakes,” he says. “As reparations for Erie.”",
+      {
+       "if": "scar_told_lena==\"husband\"",
+       "text": "“Erie owes *me*,” she says. “I sat through that husband.” But the corner of her mouth gives her away for a block.",
+       "else": "“What happened in Erie?” “Long story.” He considers. “Possibly a husband.” She decides she’d rather keep wondering."
+      }
+     ],
+     "goto": "s20"
+    }
+   ]
+  },
+  "s20": {
+   "slug": "SUNDAY · 1:31 PM · THE ANCHOR, MARISOL HARBOR",
+   "set": {
+    "resolve.lena": 6
+   },
+   "body": [
+    "The Anchor sits at the end of the wharf past the fish market, a long low diner with windows it has been breathing on for forty years. Red vinyl booths patched with red tape, Formica, chrome stools that spin, a pie case lit up like a jewelry counter. The jukebox is Sinatra, Otis, Patsy Cline, the Eagles and, for no reason anyone has explained, one Mariah Carey. Under the floor the sea lions keep up their complaint.",
+    "The waitress has a pencil in a gray bun, a name tag that says GLORIA, and the look of somebody who’s been on her feet since yesterday. “Sit anywhere, hon.” She looks at Jack the way a jeweler looks at a ring somebody swears is real.",
+    "Laney is in a booth near the back in sunglasses the size of hubcaps, copper hair in a knot that has given up. “Don’t look at me,” she says. “I’m a cautionary tale.”",
+    {
+     "if": "e1_carried_laney",
+     "text": "Then she sees who’s behind Lena and throws both arms in the air. “My *fireman!*”"
+    },
+    {
+     "if": "!e1_carried_laney && e1_met_laney_early",
+     "text": "Then she lowers the sunglasses an inch. “Sad Irish Poem! You found her *again*?”"
+    },
+    {
+     "if": "!e1_carried_laney && !e1_met_laney_early",
+     "text": "Then she lowers the sunglasses an inch and looks Jack up and down. “Lena, who *is* this? Is this the porch one?”"
+    },
+    "“This is Jack,” Lena says. “He’s from Ohio. He’s leaving.” He doesn’t leave.",
+    "The chalkboard by the register says PIE OF THE DAY: MARIONBERRY. Jack studies the slice in the case, the sunken filling, the pale, apologetic crust. “Four out of ten,” he says. “My dad would complain.” Gloria, passing with the coffeepot, looks at him again, and writes something on her pad that is clearly not an order.",
+    "And then he sees the back booth, and stops.",
+    "A tall man alone with the Sunday *New York Times* spread across the table in sections, like a campaign map. Silver hair swept back and too long. A linen jacket with wine on the cuff. Reading glasses pushed up on his head and forgotten. Eggs, half eaten; a Bloody Mary, mostly not. The face is ruddy and broken-veined and still handsome the way a ruined church is still a church, and Jack knows it, because at sixteen he stared at it on the back flap of *The Consolations of Disbelief* for most of an hour, trying to work out how a face could be that sure. Adrian Hale is eating eggs in a diner like anybody else. Jack’s heart does something stupid and athletic.",
+    "Laney’s booth is the one next to his. Lena slides in across from her, facing the back. Jack is still standing in the aisle with a menu, close enough to Hale’s table to read it.",
+    "On the near corner the magazine lies folded back on itself, open to a long article. Lena sees it. She stops moving. All of her stops at once, like a held note cut off. Her hand comes up and finds the medal at her throat and closes around it.",
+    "Jack follows her eyes and catches a word of the headline upside down: MEMORIAL. It means nothing to him. A holiday; a stadium; somebody’s name on a park bench.",
+    "“I’m going to —” Lena says, perfectly normally, and stands. “Laney, I’ll see you at home.” She puts a five on the table for a coffee she never touched and walks out through the jangle of the door into the bright wharf. She doesn’t hurry. That’s the strange part. She walks like someone going to get the mail.",
+    "“Lena?” Laney half stands, sunglasses sliding. “*Lena.*” The door has finished swinging. Laney sits back down. “She told me she does this. Said if she ever walks out of somewhere, she’ll come home in a mood and make red beans.” She picks up her fork. “I thought it was a figure of speech.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Eats eggs at the Anchor on Sundays with a Bloody Mary and the *Times*. Haven’t said a word to him yet."
+    },
+    {
+     "kind": "note",
+     "id": "pie",
+     "title": "The Anchor",
+     "text": "Marionberry: four out of ten. Dad would complain."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Follow her out.",
+     "tag": "Go",
+     "set": {
+      "e1_diner": "followed",
+      "rel.lena.trust": "+1"
+     },
+     "key": "You followed Lena out of the Anchor.",
+     "goto": "s20a"
+    },
+    {
+     "text": "Go introduce yourself to Adrian Hale.",
+     "tag": "Go",
+     "set": {
+      "e1_diner": "hale",
+      "trait.reckless": "+1"
+     },
+     "key": "You walked up to Adrian Hale’s booth.",
+     "goto": "s20b"
+    },
+    {
+     "text": "Stay. Eat. Laney needs a witness.",
+     "tag": "Stay",
+     "set": {
+      "e1_diner": "stayed",
+      "rel.laney.warmth": "+1",
+      "rel.laney.trust": "+1"
+     },
+     "key": "You stayed at the Anchor with Laney.",
+     "goto": "s20b"
+    }
+   ]
+  },
+  "s20a": {
+   "slug": "SUNDAY · 1:38 PM · MARISOL HARBOR, THE WHARF",
+   "body": [
+    "He finds her halfway down the wharf at the railing over the float, where the sea lions are piled up like tourists on a cruise deck, one big bull with his head thrown back, bellowing at nothing. The wind off the water is cold even in the sun. She has her arms crossed over the cardigan, and she doesn’t turn when his footsteps stop beside her.",
+    "“Allergies,” she says, before he can ask anything. “Eucalyptus.” Her fingers go to the medal and hold it, then let it go.",
+    "The wharf smells like diesel and fish scales and wet sea lion. A fishing boat is coming in past the breakwater, gulls hanging off its stern like a bad idea. She watches it all the way in. It’s the quietest he’s seen her, and he has known her less than a day, and he’s already sure it isn’t like her."
+   ],
+   "choices": [
+    {
+     "text": "Don’t ask. Stand next to her. Take out a cigarette — and don’t light it.",
+     "tag": "Control",
+     "set": {
+      "trait.control": "+1",
+      "soul.restraint": "+1",
+      "rel.lena.trust": "+2",
+      "reliquary": "+1"
+     },
+     "journal": [
+      {
+       "kind": "note",
+       "id": "cigarette",
+       "title": "The cigarettes",
+       "text": "She keeps them. The ones she takes off me. She doesn’t smoke."
+      }
+     ],
+     "response": [
+      "He leans on the rail beside her, not too close, shakes out a Marlboro and holds it unlit, the way a man holds a pencil in a waiting room. Neither of them says anything. The boat ties up. Somebody starts hosing down a cooler.",
+      {
+       "if": "e1_lena_took_cig",
+       "text": "After a while she reaches over without looking and takes the cigarette from between his fingers and drops it into her cardigan pocket, with the other one. He realizes she never emptied the pocket.",
+       "else": "After a while she reaches over without looking and takes the cigarette from between his fingers and drops it into her cardigan pocket, all by itself, as if that’s where it was always going."
+      },
+      "“I’m fine, Jack,” she says to the water. “I’m from New Orleans. We’re always fine. That’s the whole problem.”"
+     ],
+     "goto": "s21"
+    },
+    {
+     "text": "“What did you see on that table?”",
+     "tag": "Candor",
+     "set": {
+      "trait.candor": "+1",
+      "rel.lena.friction": "+1",
+      "rel.lena.trust": "-1"
+     },
+     "response": [
+      "She turns, and her face is pleasant, attentive, completely closed: a girl at a cotillion being asked to dance by somebody’s cousin.",
+      "“I don’t know what you mean,” she says. “Thank you for walking me out. I’ll see you around the building.” And she goes, at the same unhurried pace, and he understands that polite is the most frightening thing she does."
+     ],
+     "goto": "s21"
+    },
+    {
+     "text": "Tell her a brand-new, ridiculous scar story to make her laugh.",
+     "tag": "Wit",
+     "set": {
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1",
+      "scar_told_lena_2": "archbishop"
+     },
+     "response": [
+      "“My aunt had a cat named Archbishop,” he says to the sea lions. “Twenty-two pounds. Hated men. Hated Protestants. Hated the Steelers, which was the one thing we had in common. Christmas, 1999, I tried to put a Santa hat on him —” He touches the eyebrow. “He confirmed me. With prejudice.”",
+      "She laughs against her will, a wet, surprised sound, and wipes her eye with the heel of her hand. “That’s the worst one yet.” “I’ve got hundreds.” “I know.” She looks at him sideways, still smiling a little, not all the way. “That’s what worries me.”"
+     ],
+     "goto": "s21"
+    }
+   ]
+  },
+  "s20b": {
+   "slug": "SUNDAY · 1:40 PM · THE ANCHOR, BACK BOOTH",
+   "body": [
+    {
+     "if": "e1_diner==\"hale\"",
+     "text": "Jack crosses the gap before he can think of a reason not to and stands at the end of the back booth like a kid sent to the principal. “Professor Hale.” Hale doesn’t look up from the Week in Review. “That depends who’s asking and how much they want.” The voice from the cable debates: cut glass, with something flatter and northern underneath. “Jack Costigan.” Hale looks up, takes the glasses off his head, and then, slowly, with what looks like real pleasure, smiles. “Youngstown. The nine pages. You came.”",
+     "else": "Laney makes him cut her pancakes — “into squares, sugar, I’m fragile” — and he does it the way he does for Rosie at home. “What’s your last name, Jack? I need it for when I write to the Pope about you.” “Costigan.” A tall shadow falls across the table: the man from the back booth, reaching for their Tabasco. “Jack Costigan,” Laney announces, “you are a *gentleman*.” The hand on the Tabasco stops. “Costigan?” Adrian Hale says. “*Youngstown?* The nine pages?”"
+    },
+    "“Your Chesterton was good,” Hale says, as though they’re resuming a conversation from last week. “Your Aquinas was borrowed. Your anger was the only original thing in it.” He considers Jack the way a trainer looks at a colt’s legs. “Bring that on Monday and leave the rest at home.”",
+    "His eyes go past Jack to the front door. “Your friend left in a hurry. Was it my face or the *Times*?” He folds the magazine closed and tucks it under his arm."
+   ],
+   "choices": [
+    {
+     "text": "“I came to say it to your face.”",
+     "tag": "Candor",
+     "set": {
+      "trait.candor": "+1",
+      "rel.hale.warmth": "+1",
+      "e1_met_hale": true
+     },
+     "journal": [
+      {
+       "kind": "person",
+       "id": "hale",
+       "title": "Prof. Adrian Hale",
+       "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Eats eggs at the Anchor on Sundays with a Bloody Mary and the *Times*. Remembered my letter. Says my anger was the only original thing in it."
+      }
+     ],
+     "response": [
+      "It’s the one line on the postcard, turned around and handed back.",
+      "Hale hears it; Jack watches him hear it. He is delighted and doesn’t smile, which is more alarming than the smile. “Then you’ll need a better face,” he says. “Monday. Hollis 302. Prove to me you have a soul.”",
+      {
+       "if": "e1_diner==\"hale\"",
+       "text": "Hale gathers up the rest of the *Times* and goes. At the register he puts down money for Laney’s pancakes — “Cautionary tale’s covered, hon,” Gloria tells her — and through the steamed glass Jack watches him walk off down the wharf into the sun, a little unsteady, well before two in the afternoon.",
+       "else": "He lays two twenties on the Formica by Laney’s plate. “For the cautionary tale.” Then he walks off down the wharf into the sun, a little unsteady, well before two in the afternoon."
+      }
+     ],
+     "goto": "s21"
+    },
+    {
+     "text": "“You look exactly like your jacket photo. Older. Like it’s been left out in the rain.”",
+     "tag": "Wit",
+     "set": {
+      "trait.wit": "+1",
+      "rel.hale.warmth": "+1",
+      "rel.hale.friction": "+1",
+      "e1_met_hale": true
+     },
+     "journal": [
+      {
+       "kind": "person",
+       "id": "hale",
+       "title": "Prof. Adrian Hale",
+       "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Eats eggs at the Anchor on Sundays with a Bloody Mary and the *Times*. Remembered my letter. Says my anger was the only original thing in it."
+      }
+     ],
+     "response": [
+      "Hale laughs, a bark that turns heads at the counter, and the smile that must once have been devastating turns out to still be. “The rain,” he says, “is the only thing in California that’s honest with me. Monday.”",
+      {
+       "if": "e1_diner==\"hale\"",
+       "text": "Hale gathers up the rest of the *Times* and goes. At the register he puts down money for Laney’s pancakes — “Cautionary tale’s covered, hon,” Gloria tells her — and through the steamed glass Jack watches him walk off down the wharf into the sun, a little unsteady, well before two in the afternoon.",
+       "else": "He lays two twenties on the Formica by Laney’s plate. “For the cautionary tale.” Then he walks off down the wharf into the sun, a little unsteady, well before two in the afternoon."
+      }
+     ],
+     "goto": "s21"
+    },
+    {
+     "text": "“Your book nearly took my faith away. I’m here to thank you for the workout.”",
+     "tag": "Charm",
+     "set": {
+      "trait.charm": "+1",
+      "rel.hale.warmth": "+2",
+      "e1_met_hale": true
+     },
+     "journal": [
+      {
+       "kind": "person",
+       "id": "hale",
+       "title": "Prof. Adrian Hale",
+       "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Eats eggs at the Anchor on Sundays with a Bloody Mary and the *Times*. Remembered my letter. Says my anger was the only original thing in it."
+      }
+     ],
+     "response": [
+      "Something crosses Hale’s face and is gone, too quick to name, like a bird past a window. “Nearly,” he says. “How disappointing. We’ll try harder.”",
+      {
+       "if": "e1_diner==\"hale\"",
+       "text": "Hale gathers up the rest of the *Times* and goes. At the register he puts down money for Laney’s pancakes — “Cautionary tale’s covered, hon,” Gloria tells her — and through the steamed glass Jack watches him walk off down the wharf into the sun, a little unsteady, well before two in the afternoon.",
+       "else": "He lays two twenties on the Formica by Laney’s plate. “For the cautionary tale.” Then he walks off down the wharf into the sun, a little unsteady, well before two in the afternoon."
+      }
+     ],
+     "goto": "s21"
+    }
+   ]
+  },
+  "s22": {
+   "slug": "SUNDAY · 8:04 PM · DELGADO HALL, EAST STAIRWELL",
+   "set": {
+    "e1_heard_wes": true
+   },
+   "body": [
+    "Laundry. A blue basket on his hip and, on top of the pile, an index card in his mother’s handwriting, dictated by Nonna: *Whites in HOT. Darks in COLD. MEDALS OFF.* Underlined twice, because Nonna has safety-pinned a saint inside the lining of half of what he owns, and the Holy Family does not tumble dry.",
+    "He takes the east stairwell down. It’s concrete painted the green of an old hospital, and it carries sound like a church: every footstep comes back a half-second late, a little holier than you sent it. Fog breathes in through the window on each landing.",
+    "Coming down past the third floor, he hears a voice he knows, and stops.",
+    "Softer than he’s heard it. Below him, on the landing between three and two, she sits on the top step of the next flight with her knees up and her back to him, phone to her ear, her other arm around her shins. No boots tonight. Bare feet on the cold concrete.",
+    "“…I know, baby. I miss you too.” A pause. “No. I didn’t read it. Mama said don’t.” Another. “Wes. *Wes.* I’m fine. Tell me about the game.” She listens for a long time, and laughs once, low, at something he can’t hear. “…Say it back.” The stairwell waits with him. “I love you too.”",
+    {
+     "if": "e1_heard_boyfriend",
+     "text": "He knew. She told him last night outside 217, a fact laid on a table. It just didn’t have a name before, or a voice that could make her laugh like that."
+    },
+    {
+     "if": "e1_diner==\"followed\"",
+     "text": "*I’m fine.* He hears the railing at the wharf in it, and *allergies*, in a different key now. He doesn’t know what that means. He doesn’t let himself try."
+    },
+    "Jack stands above her with a basket of dirty laundry and his nonna’s index card, and doesn’t move, because every way out of this stairwell makes a sound."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "text": "New Orleans. Two seventeen. Mass at St. Brendan’s, the mantilla, kneels for Communion; Fr. Osei knew her from April. Has a boyfriend. His name is Wes. She calls him ‘baby’ on the east stairwell at eight. She told him she didn’t read something because her mama said not to."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Back up the stairs. Quietly.",
+     "tag": "Go",
+     "set": {
+      "e1_stairwell": "retreat",
+      "soul.restraint": "+1",
+      "resolve.jack": "-1"
+     },
+     "key": "You heard Lena tell someone named Wes she loved him, and you went back upstairs.",
+     "response": [
+      "He goes up on the outside edges of his sneakers, the way he used to come in after curfew on Glenwood Avenue. Behind him, faint, she’s laughing again.",
+      "He’ll do the laundry at one in the morning instead, when the machines in the basement are the only things awake."
+     ],
+     "goto": "s23"
+    },
+    {
+     "text": "Keep walking down past her.",
+     "tag": "Go",
+     "cue": "Lena saw you.",
+     "set": {
+      "e1_stairwell": "passed",
+      "rel.lena.heat": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "key": "You walked past Lena on the stairs while she was on the phone with Wes.",
+     "response": [
+      "He goes down, and the stairwell gives every step back twice. She looks up as he comes around the landing, the phone at her ear, and their eyes meet, and neither of them looks away.",
+      "Into the phone, not taking her eyes off him, her free hand finding the medal at her throat: “No, nobody. Just a guy from my building.”",
+      "He keeps walking, past her knees and her bare feet, close enough to smell her shampoo. The basement door shuts behind him like a verdict."
+     ],
+     "goto": "s23"
+    },
+    {
+     "text": "Cough. Let her know you’re there.",
+     "tag": "Candor",
+     "set": {
+      "e1_stairwell": "coughed",
+      "trait.candor": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "You let Lena know you were on the stairs.",
+     "response": [
+      "The cough comes back off the concrete like a gunshot in a cathedral. She turns, the phone against her collarbone. “Hi.” “Sorry. Laundry.”",
+      "Her eyes drop to the basket, to the index card on top. “Medals off,” she reads, upside down, from three steps below, and almost smiles. Then, into the phone: “It’s a guy from the fourth floor. He’s doing laundry.” And softer, her hand going up to the medal: “No, baby. Nobody.”",
+      "He goes down past her. *Nobody* follows him all the way to the basement, and he can’t tell which way she meant it."
+     ],
+     "goto": "s23"
+    }
+   ]
+  },
+  "s23": {
+   "slug": "SUNDAY · 11:38 PM · DELGADO HALL, ROOM 412",
+   "music": "Bon Iver — “Re: Stacks”",
+   "set": {
+    "e1_knows_lena_in_seminar": true
+   },
+   "body": [
+    "Room 412 is dark except for Jack’s Dell, a secondhand Inspiron from the Cardinal Mooney tech sale, ninety dollars, with a cardinal sticker on the lid he has never managed to scrape off. Across the room Theo lies on his Frette sheets in the blue light of his iPhone, scrolling a map of the fire. His mother’s neighborhood is a gray grid, and the red line is very close to it.",
+    "“She’s at the Peninsula with the dogs,” Theo says to the ceiling, unprompted. “The Hockney’s in the car. Everyone’s fine.” He scrolls. “Two firefighters died up there today.” A door bangs down the hall; someone laughs. “Everyone’s always fine,” Theo says.",
+    "Jack has nothing equal to that, so he doesn’t try. On Facebook, Theo’s status from the floor meeting is still at the top of the page:",
+    {
+     "type": "fb",
+     "name": "Theo Vance",
+     "text": "is rooming with a Catholic. Pray for me. Preemptively.",
+     "meta": "Saturday at 4:12pm · 9 people like this"
+    },
+    "Then, bolded in his university inbox:",
+    {
+     "type": "doc",
+     "title": "From: Adrian Hale · Subject: PHIL 9H — Monday",
+     "text": "Hollis 302, 1:00 p.m. Come prepared to prove you have a soul. I will be prepared to be unconvinced. —A.H."
+    },
+    "Hale has not used BCC. Hale, Jack suspects, considers BCC American. Every address in the seminar is sitting in the To: line, so Jack scrolls: a line of strangers at marisol.edu, kids he’ll be across a table from tomorrow afternoon — and then:",
+    "*mbroussard@marisol.edu.*",
+    "He looks at it. *Oh, no*, he thinks, and then, with the floor tipping a little: *Of course.*",
+    "Theo is hanging upside down off the end of his bed, blond hair brushing the carpet, reading over Jack’s elbow. “Who’s M. Broussard?” Jack closes the laptop halfway. Theo’s eyes go wide in his upside-down face. “Oh my *God*.”",
+    {
+     "if": "e1_stairwell==\"passed\"",
+     "text": "Somewhere under the noise Theo is making, Jack hears it again, the way she said it on the stairs with her eyes on his: *Just a guy from my building.*"
+    },
+    {
+     "if": "e1_stairwell==\"coughed\"",
+     "text": "Somewhere under the noise Theo is making, Jack hears it again, soft, from three steps down: *Nobody.*"
+    },
+    {
+     "if": "e1_stairwell==\"retreat\"",
+     "text": "Somewhere under the noise Theo is making, Jack hears the stairwell again, every word a half-second late: *I love you too.*"
+    },
+    "Out the window the fog has the Grove, the eucalyptus going in and out of it like swimmers. Past them, through one clear tear in the gray, the old lighthouse stands on the Point, white and dark, keeping watch over nothing."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "seminar",
+     "title": "PHIL 9H",
+     "text": "Hale’s seminar. Monday, 1 p.m., Hollis 302. One of the twelve is M. Broussard."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Reply to Hale only: “I’ll be there. —J.C.”",
+     "set": {
+      "trait.control": "+1",
+      "e1_email_reply": "replied"
+     },
+     "response": [
+      "He types it, deletes it, types it again exactly the same, and sends it. Then he waits, which is ridiculous; it’s nearly midnight and the man was drinking at lunch.",
+      "Four minutes.",
+      {
+       "type": "doc",
+       "title": "From: Adrian Hale · Re: PHIL 9H — Monday",
+       "text": "Of course you will."
+      },
+      "Theo, upside down: “He’s awake. That’s either very good or very bad for you.”"
+     ],
+     "goto": "s24"
+    },
+    {
+     "text": "Let Theo dare you into Reply All: “Looking forward to it. —Jack (Youngstown).”",
+     "tag": "Reckless",
+     "set": {
+      "trait.reckless": "+1",
+      "rel.theo.warmth": "+1",
+      "rel.lena.heat": "+1",
+      "e1_email_reply": "replyall"
+     },
+     "key": "You hit Reply All.",
+     "response": [
+      "“Reply all,” Theo says. “Do it. Costigan. *Costigan.* Be the man your father raised.” “You’ve met my father once.” “And he would want this.”",
+      "His finger hangs over the key long enough for a quick, disreputable Hail Mary. Then he hits it, and Theo screams into a pillow like a girl at a Jonas Brothers concert.",
+      "At 11:51 the Dell chimes.",
+      {
+       "type": "doc",
+       "title": "From: mbroussard@marisol.edu · Re: PHIL 9H — Monday",
+       "text": "Some of us are from New Orleans and are looking forward to it more. —M."
+      },
+      "Jack lies back and laughs at the ceiling, helplessly, until Theo throws a cashmere sock at his head."
+     ],
+     "goto": "s24"
+    },
+    {
+     "text": "Close the laptop.",
+     "set": {
+      "e1_email_reply": "none"
+     },
+     "response": [
+      "The room goes dark except for Theo’s phone, and then not even that.",
+      "Theo, in the dark: “You’re going to be insufferable about this, aren’t you.” “Yes.” A rustle of very expensive sheets. “Good,” Theo says. “I need a hobby.”"
+     ],
+     "goto": "s24"
+    }
+   ]
+  },
+  "s24": {
+   "slug": "MONDAY · 12:04 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "The 2:10 freight is still two hours down the coast, somewhere in the dark with all its cars, and the fog has the window now, a soft gray hand laid flat against the glass. Across the room Theo’s breathing evens out, catches, and evens out again. *The Moviegoer* sits on the desk beside the Dell with the postcard in it, Oxford sticking out of the pages like a tongue. Jack reaches over and turns off the computer, and lies there with his St. Michael in his fist, listening to the building settle, not praying exactly, but not not."
+   ],
+   "end": true
+  }
+ }
+}

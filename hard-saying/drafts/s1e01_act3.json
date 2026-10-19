@@ -1,0 +1,608 @@
+{
+ "scenes": {
+  "s11": {
+   "slug": "SATURDAY · 11:52 PM · THE LIGHTHOUSE, FRONT HALL",
+   "body": [
+    "By midnight the Lighthouse has stopped being a party and become a weather system. The laptop on the coat rack has died in the middle of Miley Cyrus, and on the third stair from the bottom Laney is crying about it. “It’s about *leaving home*,” she explains to a stranger’s knees. Then she’s laughing. Then she’s very still. Then she begins to lean, slowly, in a way Jack recognizes from every wedding reception ever held in the St. Brigid’s parish hall.",
+    "Lena gets there first, and Jack watches her change. The appellate judge from the porch is gone; in her place is somebody he knows from his mother at wakes — brisk, tender, absolutely in charge. A Solo cup under Laney’s chin before Laney knows she needs one, copper hair in one fist, the other hand circling slowly between her shoulder blades. “There you go, cher. That’s the vodka leaving, not you.” Laney apologizes to the cup. “Don’t apologize to the cup. The cup’s seen worse.”",
+    {
+     "if": "e1_route==\"living\"",
+     "text": "Up on the landing the guy with the guitar is still there, playing for nobody now — “Skinny Love” again, slower, softer — and with the laptop dead it carries all the way down the stairs.",
+     "else": "Up on the landing a guy with a guitar is playing for nobody, calm-faced, slower and softer than anything the laptop managed all night: “Skinny Love,” the Bon Iver song Gina played until the CD skipped. With the laptop dead it carries all the way down the stairs."
+    },
+    "Lena stops, Laney halfway up off the step, and listens, her face turned up toward the landing. Jack can’t read it. It isn’t the look girls give guys with guitars. It’s more like somebody across a crowded room has said a name she knows, and she’s waiting to hear if they’ll say it again. The guy glances down, nods politely, and keeps playing. Then Laney says, “Lena, the floor’s *moving*,” and Lena says, “The floor’s fine, baby, it’s you,” and whatever it was is gone.",
+    "Theo arrives like a parade, a bottle of Grey Goose held by the neck like a prize fish and a blonde on his other arm — older, cool, beautiful in a way that looks negotiated by agents. “Costigan. This is Sloane. She runs Pi Lam. She’s going to destroy us all.” From somewhere inside her own hair, Laney says weakly, “My *big*.” “Hi, Laney,” says Sloane. “Drink water.” Theo takes Jack by the front of the Carhartt with both hands. “Bonfire. Shipwreck Cove. Costigan — the *ocean*. At *night*. You came here for this.”",
+    "Behind him Lena has Laney upright and moving, steering for the front door the way a tugboat steers a cruise ship. She doesn’t look at Jack. She doesn’t ask for help. Everything in the set of her shoulders says she isn’t going to."
+   ],
+   "choices": [
+    {
+     "text": "Take Laney’s other arm. Walk them home.",
+     "tag": "Go",
+     "set": {
+      "e1_after": "walked",
+      "rel.lena.trust": "+1",
+      "rel.laney.warmth": "+1",
+      "rel.theo.friction": "+1"
+     },
+     "cue": "Theo will remember that.",
+     "key": "You walked Lena and Laney home.",
+     "response": [
+      "Theo puts a hand over his heart as if he’s been shot through it. “Abandoned. On my first night. By a *Catholic*.” Then he winks — a slow movie-star wink that seems to come with its own lighting — and steers Sloane toward the back of the house and the bluff stairs, and the Grey Goose goes with them."
+     ],
+     "goto": "s12a"
+    },
+    {
+     "text": "Go down to the cove with Theo.",
+     "tag": "Go",
+     "set": {
+      "e1_after": "cove",
+      "rel.theo.trust": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "key": "You followed Theo down to the bonfire.",
+     "response": [
+      "Lena is already at the door. She doesn’t look back. Laney does, over Lena’s shoulder, through a curtain of copper hair, and gives him a pageant wave — slow and sloppy and sweet, wrist, wrist, elbow, elbow — and then the fog takes them both."
+     ],
+     "goto": "s12b"
+    }
+   ]
+  },
+  "s12a": {
+   "slug": "SUNDAY · 12:18 AM · OCEAN ROAD, BETWEEN LAS OLAS AND THE GROVE",
+   "music": "Taylor Swift — “You Belong with Me”",
+   "set": {
+    "e1_knows_same_dorm": true,
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "At the last stop sign in Las Olas, Laney’s legs resign, effective immediately, and she climbs onto Jack’s back. She weighs about as much as a bag of mulch and is much louder, and she has found the chain of his medal and is holding it like reins.",
+    "She is singing Taylor Swift at Lena with full pageant commitment and no relationship to the melody whatsoever. At the T-shirt part she lets go of a rein to point. “*I wear T-shirts* — that’s *you*, Lena. You’re the T-shirt.” “I’m wearing a dress, Delaney.” “Spiritually.”",
+    "Lena walks beside them on the shoulder of Ocean Road, which has no sidewalk, because nobody in California has ever walked anywhere on purpose. She carries Laney’s flats and an empty Dasani bottle and has been hunting a recycling bin for a quarter mile, because she was raised right and California can meet her halfway. The streetlights wear the fog like halos.",
+    "At the edge of the Grove Laney says, “Put me down,” in a different voice, and throws up into a concrete planter of baby eucalyptus with real dignity. Lena is there before her knees touch the curb, hair in one fist. Jack holds Laney’s quilted purse at arm’s length, like something that might wake up. It buzzes. A pink BlackBerry lights up inside: SLOANE K. “Your phone’s ringing,” he tells the planter. “Tell it I died,” says the planter.",
+    "Back aboard, Laney rallies with the loudest stage whisper in the history of the Central Coast. “She’s *taken*, sugar. Don’t even. She’s got a — ” “Delaney. Shh.” “I’m being *supportive*.” The word *taken* walks along beside them for a while, a fourth person on the shoulder of the road.",
+    "Near the Lagoon she goes heavy all at once, like a kid in a back seat, her cheek against his neck. “Kaylee used to — ” she says, to nobody, and stops. Jack waits for the rest. It doesn’t come. Lena’s hand comes up to Laney’s back and stays there. She doesn’t ask, so he doesn’t either.",
+    "At the fork in the Anacapa path, where he means to hand Laney over and go home, Jack turns toward Delgado. So does Lena. They both stop. “You’re in *Delgado*?” “You’re kidding.” “Two seventeen,” she says. “Four twelve.” Laney snores gently between them. “Don’t get ideas. It’s a big building.” It is five floors of concrete and one elevator.",
+    "The desk attendant — MARCUS, says his name tag — is asleep sitting up under an open calculus textbook. The elevator smells like Febreze and regret. On two, Lena takes her. The door of 217 has a whiteboard on it, LANEY ♥ LENA in pink marker and under it, in a small sharp hand, *ora pro nobis*. Laney opens her eyes. “He carried me, Lena,” she says, with enormous feeling. “Like a fireman. Like a *Catholic* fireman.”",
+    "Lena holds the door with her hip and looks at him over Laney’s head, waiting, apparently, to see what he’ll say."
+   ],
+   "choices": [
+    {
+     "text": "“Tell her to drink water. And — goodnight, Lena.”",
+     "tag": "Sincerity",
+     "set": {
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1",
+      "e1_carried_laney": true
+     },
+     "response": [
+      "She looks at him a second longer than she needs to, Laney’s whole weight on her shoulder. “Goodnight, Jack.” Not tested, not tossed off: set down plainly, like something she’s decided to keep in the house. The door shuts, and he stands in the hall a little longer than a man with business there would."
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "“If she asks, I was a Kennedy.”",
+     "tag": "Wit",
+     "set": {
+      "trait.wit": "+1",
+      "rel.lena.heat": "+1",
+      "e1_carried_laney": true
+     },
+     "response": [
+      "“Too soon,” Lena says. “They only buried him tonight.” Then she laughs anyway, a short, startled sound she aims at the ceiling, and Laney lifts her head and demands, “What? What’s funny? Was it me?” and the door closes on the two of them laughing."
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "“Same time next Saturday?”",
+     "tag": "Charm",
+     "set": {
+      "trait.charm": "+1",
+      "rel.lena.heat": "+1",
+      "rel.lena.friction": "+1",
+      "e1_carried_laney": true,
+      "e1_heard_boyfriend": true
+     },
+     "response": [
+      "“I have a boyfriend,” she says. Not sharp, not sorry. Plainly: a fact set down on a table between them, where they can both get a good look at it. “Of course you do,” Jack says. She almost smiles at that. “Goodnight, Jack.” The door closes, and he stands reading *ora pro nobis* until he hears the lock turn."
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "“Are *you* okay? Not her. You.”",
+     "tag": "Candor",
+     "if": "trait.candor>=2",
+     "set": {
+      "trait.candor": "+1",
+      "rel.lena.trust": "+1",
+      "rel.lena.friction": "+1",
+      "e1_carried_laney": true
+     },
+     "response": [
+      "For half a second she almost answers him; he can see it get as far as her mouth. Then Laney sags, and Lena shifts to take the weight, and the half second is over. “I’m the designated adult, Jack. Adults are always okay.” She shuts the door as gently as if there were a sleeping kid behind it."
+     ],
+     "goto": "s13"
+    }
+   ]
+  },
+  "s12b": {
+   "slug": "SUNDAY · 12:18 AM · SHIPWRECK COVE, LAS OLAS",
+   "music": "Fleet Foxes — “White Winter Hymnal”",
+   "body": [
+    "The stairs down to Shipwreck Cove are warped and older than anyone on them, wound with Christmas lights that work on every third step. At the bottom a driftwood bonfire the size of a sedan throws sparks into the fog. Surfers in hoodies; girls in the surfers’ hoodies; a guy who cannot play the guitar, playing it. A phone on a cooler does better: voices stacked on voices, going round like a choir raised in the woods. Past the firelight the ribs of an old wooden ship stick up black out of the wet sand, as if something enormous died here long ago and nobody had the heart to move it.",
+    "Sloane has taken a driftwood log like a throne she finds a little disappointing. “Sloane,” Theo says, “Costigan’s Catholic. Be gentle.” She looks Jack over without hurry. “That’s fine,” she says. “Everybody’s Catholic eventually. Usually around three in the morning, on a bathroom floor.”",
+    "Theo walks him down to the waterline, away from the fire. The Pacific comes up over Jack’s bare feet, colder than Lake Erie in May, and he yelps, and Theo laughs at him — and then stops laughing and looks north, to where the bluff climbs into the fog and becomes the Point, the old lighthouse on top of it white and blind. He looks at it for a while. Jack watches him look.",
+    "“You believe in hell, Costigan?” Theo says, still facing north. “Like, actually.” Jack has a joke loaded. He puts it back. “Yeah. Actually.” Theo nods, as if he was braced for that one. “What about forgiveness. What’s the exchange rate. Like if somebody did something — ” He stops. Starts again. “Something really bad. Not on purpose. Does it — ”",
+    "The water comes in and goes out. When Theo speaks again it’s in the other voice, the one from the floor-meeting carpet. “Never mind. I’m drunk. I get theological. It’s a medical condition.” He pours a long slug of Grey Goose into the red cup Jack forgot he was holding. “For the cold.”"
+   ],
+   "choices": [
+    {
+     "text": "Answer him straight: there’s nothing mercy can’t cover, but you have to ask for it.",
+     "tag": "Sincerity",
+     "set": {
+      "trait.sincerity": "+1",
+      "soul.grace": "+1",
+      "rel.theo.trust": "+2",
+      "resolve.jack": "-1",
+      "e1_theo_forgiveness_talk": true
+     },
+     "key": "You told Theo nothing is too big to be forgiven.",
+     "response": [
+      "So Jack tells him, straight, no bit on it: there’s nothing a man can do that’s bigger than mercy, and there’s no exchange rate. But you have to ask — out loud, to somebody’s face — and that’s the part that kills people. “That’s a hell of a policy,” Theo says. “It’s not a policy,” Jack says. “It’s a person.”",
+      "Theo turns and looks at him, the firelight on one side of his face, as if Jack has said something in a language Theo spoke when he was small and has mostly forgotten. Up the beach Sloane calls his name, and he goes. A wave comes in higher than the rest and soaks Jack to the knees. He drinks the vodka. It tastes like a cold coming on.",
+      "At 1:40 Theo and Sloane go up the wooden stairs together, her hand in his back pocket. On the third step he turns, lit red and green by the Christmas lights. “Don’t wait up, roomie.” He reconsiders. “Actually — don’t go *home* for a bit.” Then the fog has them. Jack eats carnitas from the taco truck on Seacliff standing up in wet jeans and walks back alone through the Grove, and at ten past two the freight train on the bluff leans on its horn for nobody, and he counts the cars until he loses track."
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "“You want to tell me something, Theo?”",
+     "tag": "Candor",
+     "set": {
+      "trait.candor": "+1",
+      "rel.theo.trust": "+1",
+      "rel.theo.friction": "+1",
+      "e1_theo_forgiveness_talk": true
+     },
+     "response": [
+      "The laugh comes instantly: big, practiced, perfect, a laugh you could cut into a trailer. “God, no. I want to tell you *everything*, Costigan. I’m an open book. I’m a *pop-up* book.” He plants both hands on Jack’s chest and shoves, and Jack goes over backward into the surf to the knees, and Theo is already sprinting up the beach toward the fire, whooping, the bottle held high like a torch. Jack stands in the Pacific, soaked, still holding the cup, and pours the vodka into the ocean. It seems like the least he can do for it.",
+      "At 1:40 Theo and Sloane go up the wooden stairs together, her hand in his back pocket. On the third step he turns, lit red and green by the Christmas lights. “Don’t wait up, roomie.” He reconsiders. “Actually — don’t go *home* for a bit.” Then the fog has them. Jack eats carnitas from the taco truck on Seacliff standing up in wet jeans and walks back alone through the Grove, and at ten past two the freight train on the bluff leans on its horn for nobody, and he counts the cars until he loses track."
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "“Exchange rate’s great. Catholic Church is the only bank that never got a bailout.”",
+     "tag": "Wit",
+     "set": {
+      "trait.wit": "+1",
+      "rel.theo.warmth": "+1",
+      "resolve.jack": "-1",
+      "e1_theo_forgiveness_talk": true
+     },
+     "response": [
+      "Theo laughs — really laughs, bent over, hands on his knees. “That’s going on a T-shirt. I’m having it made. I’m having *several* made.” He doesn’t ask again. A wave comes in past their rolled cuffs and soaks them both to the knees, and Theo shrieks like a kid at a public pool, and Jack drinks the vodka, and whatever Theo was about to say has gone back out with the tide.",
+      "At 1:40 Theo and Sloane go up the wooden stairs together, her hand in his back pocket. On the third step he turns, lit red and green by the Christmas lights. “Don’t wait up, roomie.” He reconsiders. “Actually — don’t go *home* for a bit.” Then the fog has them. Jack eats carnitas from the taco truck on Seacliff standing up in wet jeans and walks back alone through the Grove, and at ten past two the freight train on the bluff leans on its horn for nobody, and he counts the cars until he loses track."
+     ],
+     "goto": "s13"
+    }
+   ]
+  },
+  "s13": {
+   "slug": "SUNDAY · 2:51 AM · DELGADO HALL, 4TH FLOOR LOUNGE",
+   "set": {
+    "resolve.jack": "-1",
+    "e1_saw_theo_dawn": true
+   },
+   "body": [
+    {
+     "if": "e1_after==\"walked\"",
+     "text": "He got up to an empty 412 a little after half past twelve and lay with *The Moviegoer* open on his chest, not reading, thinking about an inch of cold railing and the word *taken*. Around one-thirty he gave up and walked the Lagoon path in the fog, twice around, like a man trying to wear something out. Halfway round his phone buzzed. Theo, it turns out, programmed himself into the RAZR today, under a name of his own choosing."
+    },
+    {
+     "if": "e1_after==\"walked\"",
+     "type": "sms",
+     "from": "THEO VANCE (IMPORTANT)",
+     "text": "sock protocol in effect. do not come home. i owe u a kidney",
+     "time": "1:52 AM"
+    },
+    {
+     "if": "e1_after==\"cove\"",
+     "text": "He comes up the stairwell at ten to three, jeans stiff with salt to the knee, smelling of woodsmoke and carnitas."
+    },
+    "And there is a sock on the doorknob of 412.",
+    {
+     "if": "e1_after==\"cove\"",
+     "text": "Gray cashmere: the kind of sock that costs forty dollars and has never been inside a shoe. He watched Sloane go up the cove stairs with her hand in Theo’s back pocket. He doesn’t need a detective."
+    },
+    {
+     "if": "e1_after==\"walked\"",
+     "text": "Through the door a girl laughs, low, and Theo says something, and she laughs again. The last time Jack saw Theo, Sloane was on his arm. He can guess."
+    },
+    "Jack regards the sock the way the Schoolmen regarded angels on the head of a pin. He is fairly confident the Catechism is silent on the sock. He has been awake since a gravel turnout on Highway 1. He walks down to the lounge.",
+    "At three in the morning the fourth-floor lounge is a different room: the blank whiteboard, a couch with a long dent in it like a grave, a vending machine humming one steady note his choir director at Mooney would have called a B-flat. In the corner armchair, under the one lamp, a girl in black is writing in a Moleskine.",
+    {
+     "if": "e1_met_margot_early",
+     "text": "She doesn’t look up. “Data point. You’re back. How was the porch? I sent you, so technically I have a stake.” “It was a porch.” “That’s a deflection with a roof on it.” Now she looks up, over the black frames. “Fine. Keep it. You’ve become relevant. Name.” “Jack Costigan.” “Margot Lindqvist.” She spells it once, flatly, the way a cop reads you your rights. “L-I-N-D-Q-V-I-S-T. There’s no *u* after the *q*. People who put a *u* after the *q* don’t get a second chance.”",
+     "else": "Her eyes go straight to his medal. “St. Michael. Patron saint of what, bouncers?” “He threw the devil out of heaven.” “So, bouncers.” “You smell like a kegger and you’re wearing a saint. Eventually you’ll have to pick one. Margot Lindqvist. Portland. Third floor. I don’t sleep.” She spells the surname once, flatly, the way a cop reads you your rights — L-I-N-D-Q-V-I-S-T — and waits. “Jack Costigan.” “That one I can spell.”"
+    },
+    "“Why are you on four?” “The lounge on three,” Margot says, “is occupied by a couple conducting an experiment in heteronormativity on the couch. Forty minutes so far. The methodology is extremely repetitive.” She tips her pen at the door. “Sock?” “Sock.” “Welcome to the diaspora.”",
+    "So he sits, and they talk the way you only can at three in the morning with somebody you have no reason yet to impress. Why would anybody be Catholic on purpose? Chesterton says the Church is a house with a hundred gates, he tells her, and he came in through the one with the smoking section. Youngstown? Springsteen, the mills, Nonna’s gravy, fast and funny. His father? “Built Chevy Cobalts. Now he builds a very detailed case against General Motors in the garage.”",
+    "Margot caps her pen. “You know you do that. Every time a question gets near anything load-bearing, you do a bit. It’s like watching a man put up drywall while he talks to you over it.” He laughs, which proves her point.",
+    "When he lies back on the couch, shivering in Delgado’s morgue-grade air-conditioning, she drops her black cardigan on his chest. “This is not a kindness. It’s a sociological gesture. Three-oh-five, by noon, or it’s a hostage situation.” Without it she seems exactly as warm as before, which is to say not very.",
+    "Then she caps the pen again, which he is learning means she’s serious. “You’ve quoted Chesterton and Bruce Springsteen at me inside of ten minutes, which is either a disorder or an education.” No joke anywhere in her face. “So explain to me how somebody who can talk like you believes in a sky-dad who hates gay people.” She means it. There seem to be people standing behind the question, and she wants an answer good enough to take back to them."
+   ],
+   "choices": [
+    {
+     "text": "“He doesn’t hate anybody. That’s the problem — He loves everybody and expects things from them.”",
+     "tag": "Candor",
+     "set": {
+      "trait.candor": "+1",
+      "rel.margot.friction": "+1",
+      "rel.margot.trust": "+1"
+     },
+     "journal": [
+      {
+       "kind": "person",
+       "id": "margot",
+       "title": "Margot Lindqvist",
+       "text": "Portland. Third floor. Doesn’t sleep. Lent me her cardigan “as a sociological gesture.” Says she’s going to destroy me over the next four years. I believe her."
+      },
+      {
+       "kind": "note",
+       "id": "theo_dawn",
+       "title": "Theo, 5:20 a.m.",
+       "text": "Barefoot, sand on his feet, wet jeans, smelled like the ocean and jasmine. “Couldn’t sleep.” There was a girl in our room."
+      }
+     ],
+     "response": [
+      "“That’s what every abuser says.” “Yeah,” Jack says. “And every father.” She studies him. Then she writes it down, carefully, like somebody bagging evidence. “I’m going to destroy you over the next four years,” she says pleasantly. “I’m counting on it.”",
+      "He means to stay awake until she leaves. He doesn’t make it. At 5:20 by the RAZR the armchair is empty and the window is the gray of dishwater, and the stairwell door clanks, and Theo comes up the hall barefoot, boots in hand, sand to the ankles, jeans wet to the shin, smelling of salt and kelp and — weirdly — jasmine, like the fences in Las Olas. He sees Jack and stops. “Couldn’t sleep,” he says. “Went to look at the ocean.” “There’s a girl in our room.” “Is there?” Theo considers this. “God, I’m a good host.” He slips into 412 so quietly the door barely clicks.",
+      "At 7:02 Priya is standing over him with the air horn, which she does not use, and a freshly laminated sign, which she tapes above his head: LOUNGE FURNITURE IS NOT A SLEEPING SURFACE. Then she gets a look at his face and comes back with a paper cup of coffee from the RA office, which is terrible, and which he will remember for years. “Per the handbook,” Priya says, “I didn’t see you.”"
+     ],
+     "goto": "s14"
+    },
+    {
+     "text": "“Sky-dad’s a little informal. We call Him ‘Dad’s Dad.’”",
+     "tag": "Wit",
+     "set": {
+      "trait.wit": "+1",
+      "rel.margot.warmth": "+1"
+     },
+     "journal": [
+      {
+       "kind": "person",
+       "id": "margot",
+       "title": "Margot Lindqvist",
+       "text": "Portland. Third floor. Doesn’t sleep. Lent me her cardigan “as a sociological gesture.” Asked me a real question, then a follow-up. I had a bit for the question. I didn’t have one for the follow-up."
+      },
+      {
+       "kind": "note",
+       "id": "theo_dawn",
+       "title": "Theo, 5:20 a.m.",
+       "text": "Barefoot, sand on his feet, wet jeans, smelled like the ocean and jasmine. “Couldn’t sleep.” There was a girl in our room."
+      }
+     ],
+     "response": [
+      "She doesn’t laugh. She does write it down. Then she looks up. “Okay. Dad’s Dad. Last fall his people put Proposition 8 in parish bulletins all over this state. A friend of my mother’s flew down from Portland that summer to get married in San Francisco, and then spent six months waiting for a court to tell her whether it still counted.” She caps the pen. “Is that informal too?” He opens his mouth. Nothing in it is good enough, and they both watch him find that out. Margot nods once, a hypothesis confirmed, and goes back to her notebook.",
+      "He means to stay awake until she leaves. He doesn’t make it. At 5:20 by the RAZR the armchair is empty and the window is the gray of dishwater, and the stairwell door clanks, and Theo comes up the hall barefoot, boots in hand, sand to the ankles, jeans wet to the shin, smelling of salt and kelp and — weirdly — jasmine, like the fences in Las Olas. He sees Jack and stops. “Couldn’t sleep,” he says. “Went to look at the ocean.” “There’s a girl in our room.” “Is there?” Theo considers this. “God, I’m a good host.” He slips into 412 so quietly the door barely clicks.",
+      "At 7:02 Priya is standing over him with the air horn, which she does not use, and a freshly laminated sign, which she tapes above his head: LOUNGE FURNITURE IS NOT A SLEEPING SURFACE. Then she gets a look at his face and comes back with a paper cup of coffee from the RA office, which is terrible, and which he will remember for years. “Per the handbook,” Priya says, “I didn’t see you.”"
+     ],
+     "goto": "s14"
+    },
+    {
+     "text": "“I don’t know how to answer that at three in the morning without lying. Ask me again when I’ve slept.”",
+     "tag": "Sincerity",
+     "set": {
+      "trait.sincerity": "+1",
+      "soul.honesty": "+1",
+      "rel.margot.trust": "+2"
+     },
+     "journal": [
+      {
+       "kind": "person",
+       "id": "margot",
+       "title": "Margot Lindqvist",
+       "text": "Portland. Third floor. Doesn’t sleep. Lent me her cardigan “as a sociological gesture.” Asked me the one question I couldn’t joke my way past, so I didn’t try. She says she’ll ask again. I believe her."
+      },
+      {
+       "kind": "note",
+       "id": "theo_dawn",
+       "title": "Theo, 5:20 a.m.",
+       "text": "Barefoot, sand on his feet, wet jeans, smelled like the ocean and jasmine. “Couldn’t sleep.” There was a girl in our room."
+      }
+     ],
+     "response": [
+      "She looks at him over her glasses long enough for the vending machine to cycle off and on again. “That’s the first honest thing a Christian has said to me since Easter.” “Was Easter good?” “My father brought his girlfriend.” She turns a page, and that’s all of that, apparently. “Go to sleep, Costigan. I’ll ask again. I’m very persistent. It’s in my file.”",
+      "He means to stay awake until she leaves. He doesn’t make it. At 5:20 by the RAZR the armchair is empty and the window is the gray of dishwater, and the stairwell door clanks, and Theo comes up the hall barefoot, boots in hand, sand to the ankles, jeans wet to the shin, smelling of salt and kelp and — weirdly — jasmine, like the fences in Las Olas. He sees Jack and stops. “Couldn’t sleep,” he says. “Went to look at the ocean.” “There’s a girl in our room.” “Is there?” Theo considers this. “God, I’m a good host.” He slips into 412 so quietly the door barely clicks.",
+      "At 7:02 Priya is standing over him with the air horn, which she does not use, and a freshly laminated sign, which she tapes above his head: LOUNGE FURNITURE IS NOT A SLEEPING SURFACE. Then she gets a look at his face and comes back with a paper cup of coffee from the RA office, which is terrible, and which he will remember for years. “Per the handbook,” Priya says, “I didn’t see you.”"
+     ],
+     "goto": "s14"
+    }
+   ]
+  },
+  "s14": {
+   "slug": "SUNDAY · 11:02 AM · ST. BRENDAN THE NAVIGATOR NEWMAN CENTER, COURTYARD",
+   "body": [
+    "By nine the sock was gone, and so was its owner, and Theo was asleep face-down across his white sheets like he’d been dropped from a plane. Now Jack crosses Ocean Road in the navy Goodwill blazer, hair still wet, two hours of sleep in him in installments, Margot’s cardigan left folded outside 305.",
+    "St. Brendan the Navigator sits at the edge of the Grove like a boat dragged up from the beach and flipped over to keep the rain off: a steep A-frame roofed almost to the grass, a band of blue glass, a courtyard with an olive tree gnarled as a grandfather’s hand.",
+    "Under the tree a priest in a black clerical shirt, sleeves rolled, rubber boots, is kneeling in the flower bed with a pipe wrench, losing a fight with a sprinkler; every time he tightens something it spits a fan of water across his collar. A wooden rosary swings from his belt. He says something to the sprinkler in a language Jack doesn’t know, in a tone Jack knows perfectly.",
+    "He looks up. Thin, a graying beard, laugh lines deep enough to hold rain. “You’re early,” he says, in an English that grew up somewhere hot and takes its time, “which means you’re new, or you’re in trouble. Hold this.” Jack is holding the wrench before he can decide which. “Both.” “Ah. Then hold it with both hands.”",
+    "The priest gets to his feet with a hitch in the left leg that he doesn’t mention, and Jack was raised not to. “Gabriel Osei. I am the chaplain here, and the plumber, badly.” “Jack Costigan. Youngstown, Ohio.” Fr. Osei’s whole face lights. “Youngstown! I know Youngstown only from the Springsteen song. Is it as sad as he says?” “Sadder,” Jack says. “Better pierogi.” The laugh comes up from the belly, and a crow leaves the olive tree in protest.",
+    "The door of the parish hall opens on a small old woman in a lavender cardigan with an armful of bulletins. “Fr. Gabriel, you’re *wet*.” “I am aware, Mrs. Fitch.” She turns the full beam of her attention on Jack. “Young man. Are you the new tenor? Please say you sing.” She doesn’t wait for an answer. “We lost our best soprano last spring.”",
+    "Fr. Osei’s face doesn’t change at all. He takes the wrench back and returns to the sprinkler. Mrs. Fitch — Dolores, parish office, since 1979 — gives Jack a bulletin and a lemon bar in a napkin, the way his nonna hands out holy cards.",
+    {
+     "type": "doc",
+     "title": "St. Brendan the Navigator · Twenty-Second Sunday in Ordinary Time · August 30, 2009",
+     "text": "Confession: Sat 3:30–4:45 PM · Wed 8:00 PM · or whenever you knock (Fr. Gabriel)\nYEAR FOR PRIESTS: Please pray for our priests. St. John Vianney, pray for us.\nCOFFEE & DONUTS in the courtyard after the 9:30 and 11:30. The sprinkler is being addressed."
+    },
+    "A man the size of a vending machine crosses the courtyard in a polo with VERITAS stitched over the heart. “Tyler Brandt. Missionary. New guy?” “Jack Costigan. Youngstown.” Tyler’s face does something enormous. “*Ohio?* Brother. Cincinnati. St. X. Linebacker at Miami.” “Mooney.” “*Mooney.* We’d have killed you.” “You’d have tried.” The fist bump is like being fist-bumped by a door. “Brother. *Brother.* Coffee this week. Let’s talk about your prayer life.”",
+    {
+     "if": "e1_route==\"kitchen\"",
+     "text": "At the church doors Joey Abruzzo waves with both arms like he’s landing a plane, and Kevin Tran, in a maroon BELLARMINE quarter-zip, holds up a missalette: *saved*.",
+     "else": "At the church doors a kid in a Yankees cap waves at him with both arms like he’s landing a plane — “Joey! Staten Island!” — the way, Jack suspects, he waves at everybody. Beside him Kevin Tran, in a maroon BELLARMINE quarter-zip, holds up a missalette: *saved*."
+    },
+    "The courtyard is filling. Fr. Osei gets up out of the flower bed and looks at Jack’s eyebrow — not a glance; the frank, unhurried look a mechanic gives a dent, as if he can’t help it. “That was stitched in an emergency room by someone in a hurry,” he says quietly. “I was a doctor.” He tilts his head. “That’s a ring. Or a tooth.”",
+    "Jack has a story ready. He has a dozen."
+   ],
+   "choices": [
+    {
+     "text": "“Nun with a ruler.”",
+     "tag": "Lie",
+     "set": {
+      "soul.honesty": "-1",
+      "rel.osei.warmth": "+1",
+      "scar_told_osei": "nun"
+     },
+     "response": [
+      "“Ah.” Fr. Osei nods gravely. “The Sisters are very strong in Ohio.” He doesn’t believe a word of it. He lets Jack see that he doesn’t, and then lets it go, which is somehow worse. “Confession is Saturday at three-thirty. Or whenever you knock. I am used to being woken.” Overhead the bell begins to ring, and he limps off to vest."
+     ],
+     "goto": "s15"
+    },
+    {
+     "text": "“A fight. A long time ago. Long story.”",
+     "tag": "Candor",
+     "set": {
+      "trait.candor": "+1",
+      "soul.honesty": "+1",
+      "rel.osei.trust": "+2",
+      "scar_told_osei": "fight",
+      "e1_scar_osei_honest": true
+     },
+     "cue": "Fr. Osei noticed.",
+     "key": "You told Fr. Osei the truth about the scar — part of it.",
+     "response": [
+      "Fr. Osei nods slowly, as though Jack has put something heavy in his hands and he is checking the weight. He doesn’t ask a single question, and Jack feels every one he doesn’t ask. “Long stories are the only kind worth telling,” he says. “Saturday at three-thirty. Or whenever you knock.” Then the bell starts, and he touches Jack’s shoulder once on his way past, the way you touch a doorframe in a house you know."
+     ],
+     "goto": "s15"
+    },
+    {
+     "text": "“You should see the other guy.”",
+     "tag": "Wit",
+     "set": {
+      "trait.wit": "+1",
+      "rel.osei.warmth": "+1",
+      "scar_told_osei": "deflect"
+     },
+     "response": [
+      "Fr. Osei laughs, the whole belly laugh again. “I would like to,” he says. “Professionally. I’m curious what you did to him.” The laugh is real. So is the question folded inside it, and they both hear it, standing in the wet grass while the bell starts to ring."
+     ],
+     "goto": "s15"
+    }
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "text": "Newman chaplain. Ghana. Used to be a doctor. Fixes his own sprinkler (badly). Limps and doesn’t mention it. Took one look at my eyebrow and knew more than I’ve told anybody."
+    },
+    {
+     "kind": "note",
+     "id": "soprano",
+     "title": "Mrs. Fitch",
+     "text": "Newman secretary. Lemon bars. “We lost our best soprano last spring.”"
+    }
+   ]
+  },
+  "s15": {
+   "slug": "SUNDAY · 11:30 AM · ST. BRENDAN THE NAVIGATOR NEWMAN CENTER, NAVE",
+   "set": {
+    "resolve.lena": 8,
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "Inside, St. Brendan’s is the inside of a boat: Douglas-fir ribs curving up out of the floor to meet in a long keel overhead, blue light through the glass like light through water, and over the altar a crucifix carved from driftwood, split along the grain — a Christ the sea gave back. Jack has been in a hundred churches. He has never been in one that looked like it might float.",
+    "The 11:30 is the grown-up Mass: families from town, grad students, freshmen pretending they meant to come. Kevin has saved him the end of a pew, Joey on his far side, and when the organ opens up — “Praise to the Lord, the Almighty” — Joey sings it a third too loud and half a measure ahead, as if there’s a prize for finishing first. “The Lord be with you.” “And also with you.” Jack’s mouth knows the words the way his feet know the stairs at home in the dark.",
+    "“Peter Haddad,” Kevin murmurs, as a junior with perfect hair goes up to the ambo. “Newman president. He’s going to be a congressman. He’ll tell you.” Peter reads Deuteronomy like a stump speech and leaves a little room after it, in case of applause. The cantor sings the psalm — *The one who does justice will live in the presence of the Lord* — in a voice that could make a rock cry. “Kenzie Rourke,” Kevin whispers. “His girlfriend. They give a chastity talk in October. There’s a PowerPoint.” His face stays devout. “It has clip art.” Then St. James: *Be doers of the word and not hearers only.*",
+    "They stand for the Gospel. As the Alleluia starts up in the loft, a girl three pews ahead across the aisle turns to look up at the choir. She is wearing a black lace mantilla, the kind of veil that draws looks even here. Under it, honey-brown hair. At her throat, a gold medal on a thin chain.",
+    "It’s Lena.",
+    "His whole body does something at once — stomach, face, the back of his neck — like missing a stair in the dark. *Oh, no.* The Christmas-and-Easter girl. He had her figured. Beside him Kevin follows his look across the aisle, then goes back to his missalette. She hasn’t seen him.",
+    "Fr. Osei reads the Gospel himself, green vestments over the shirt the sprinkler got. *This people honors me with their lips, but their hearts are far from me.* Then he preaches without notes, down at the front of the aisle with his hands folded, like a doctor at the foot of a bed. “I was a doctor for eight years. Doctors know what Jesus is saying today. What kills you is rarely what goes in. It is what is already inside — quietly, for a long time — and we are very good at not looking.”",
+    "A baby fusses somewhere behind Jack; Fr. Osei waits for it, as if the baby has a point. “Yesterday in Boston they buried a man some of you think was a lion and some of you think was a scandal. I am told a priest must have an opinion. Here is mine. I am very glad I am not his judge.” He lets the church be quiet. “And I am terrified that I am mine.”",
+    "“Out there” — a nod at the doors, at Ocean Road and the whole bright campus beyond it — “they will tell you the rules are lip service. In here, some people will tell you the rules are everything. Jesus disappoints both. He wants your hands clean *and* your heart. He will settle for your heart first.” A pause. “He will not settle for your lips.”",
+    "He ends with St. James — in a university, the widows and orphans are the ones sitting alone in the dining hall; you know who they are; go — and sits down. The homily is shorter than the announcements will be.",
+    "Then everyone kneels, and the church goes as quiet as a church can get with a baby in it. Fr. Osei lifts the host over the altar in both hands, small and white against the driftwood, and the bells ring. Three pews up across the aisle, a black lace veil bows. Jack bows his head too. He has about as long as the bells last."
+   ],
+   "choices": [
+    {
+     "text": "Pray for Dad, somewhere in New Mexico, asleep in the truck at a rest stop or driving on four hours of it.",
+     "set": {
+      "soul.grace": "+1",
+      "resolve.jack": "+1",
+      "e1_mass_prayer": "dad"
+     },
+     "key": "At Mass you prayed for your father on the road home.",
+     "response": [
+      "*Keep him awake on the road*, Jack prays. *Keep him asleep when he pulls over.* He can see it: the Silverado in a rest area outside some New Mexico town with one exit, the pillow from the hall closet, the St. Christopher on the visor doing the job Frank took it back for. *He gave me the forty. You saw. Get him home.*",
+      "It isn’t eloquent. It’s how he’d talk to somebody in the next room. And something in his chest loosens a notch, the way it does sometimes, for no reason he could defend to a philosophy department."
+     ],
+     "goto": "s15b"
+    },
+    {
+     "text": "Pray for Danny.",
+     "set": {
+      "soul.grace": "+1",
+      "soul.honesty": "+1",
+      "e1_mass_prayer": "danny"
+     },
+     "key": "At Mass you prayed for Danny.",
+     "response": [
+      "There’s only one prayer for Danny, and it’s short. *Keep him.* Jack says it into his folded hands, and when it runs out he says it again, the same words, like leaning on a door that keeps trying to swing shut. *Keep him. Keep him.*",
+      "That’s all there is of it. He doesn’t go any further in than that. He’s good at not going further in."
+     ],
+     "goto": "s15b"
+    },
+    {
+     "text": "Pray for the girl three pews up — and then for yourself, since you’ve clearly lost your mind.",
+     "set": {
+      "soul.grace": "+1",
+      "rel.lena.heat": "+1",
+      "e1_mass_prayer": "lena"
+     },
+     "key": "At Mass you prayed for the girl three pews up.",
+     "response": [
+      "*Lord*, he begins, *whoever keeps calling that phone she won’t answer* — and stops, because he has no idea; for all he knows it’s her dentist. *Whatever it is. Bless her. Keep her.*",
+      "And then, because it’s the elevation and lying now would be extremely poor form: *And me. Since I’ve clearly lost my mind. I had her down for Christmas and Easter. She’s wearing a mantilla, Lord. You must have enjoyed that.* Kneeling there, he’s nearly sure Somebody did."
+     ],
+     "goto": "s15b"
+    },
+    {
+     "text": "Let your mind drift back to the porch.",
+     "set": {
+      "soul.grace": "-1",
+      "soul.restraint": "-1",
+      "rel.lena.heat": "+1",
+      "e1_mass_prayer": "drift"
+     },
+     "key": "At Mass your mind went back to the porch.",
+     "response": [
+      "He means to pray. He gets as far as bowing his head, and then he’s back on the porch: the light clicking off, the wet rail under his hands, her sleeve an inch from his wrist, jasmine, the sound of her breath going in and holding. He stays there a while. It is very vivid.",
+      "Somewhere a long way off the second bell rings for the chalice, and he hears it the way you hear a phone ringing in somebody else’s apartment, and doesn’t look up."
+     ],
+     "goto": "s15b"
+    }
+   ]
+  },
+  "s15b": {
+   "slug": "SUNDAY · 12:16 PM · ST. BRENDAN THE NAVIGATOR NEWMAN CENTER, NAVE",
+   "body": [
+    "“Let us offer each other the sign of peace.” Jack shakes Kevin’s hand, and Joey’s, which is like being greeted by a golden retriever, and the hand of the woman behind him, who smells like Jergens and says *Peace be with you, honey* exactly the way his nonna does. When he turns back around, Lena is looking straight at him across the aisle, over Kevin’s shoulder. Her mouth makes the exact shape of *oh, no*. She turns, very correctly, and offers peace to the old man beside her, his hand in both of hers. She does not look back.",
+    "She looks back.",
+    "At Communion the choir sings “I Am the Bread of Life,” John 6 and the promise about the last day, and by some failure of planning, or none, Jack ends up in the aisle directly behind her: close enough to see roses in the lace, and a thread pulled loose at the edge. At the front she kneels on the floor in her sundress and receives on the tongue, the old way, and he can feel the looks it draws — curious, a few of them not kind. Then it’s his turn, and he receives standing, in his hand, the way he has since second grade at St. Brigid’s. Two ways of doing the same thing. He notices both.",
+    "“Lift High the Cross,” and Joey going for the high note with real violence. In the slow shuffle toward the doors Lena slips out of line into the side aisle, the mantilla off now and folded over her wrist, and goes to the Marian shrine: a plaster Our Lady in a chipped blue mantle above a rack of red votives. She lights one, kneels about as long as a Hail Mary takes, and slides back into line just ahead of him without once looking at him, which takes some doing.",
+    "As the line carries him past the shrine he sees, under the votive rack, a small brass plate screwed into the wood, the kind parishes put on pews and windows for their dead: NORA GRACE CALLOWAY · 1989–2009 · “LORD, TO WHOM SHALL WE GO?” A student, then. Somebody’s daughter, not much older than he is. Lena’s candle burns right above it, the newest flame in the rack. A sad thing to see on a Sunday morning; then the line moves, and he’s past it.",
+    "Fr. Osei is at the doors in his green vestments, shaking hands, a pump bottle of Purell behind him on a card table, new since the flu. When Lena reaches him he takes her hand in both of his, warmly, as if picking up a conversation in the middle. “Magdalena. You came back.” “I told you I would, Father.” Jack is right behind her. He hears every word. Then she’s out into the courtyard sunlight, and Fr. Osei has Jack’s hand. “The sprinkler thanks you,” he says, and that’s all, and passes him along into the light."
+   ],
+   "next": "s16",
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "text": "New Orleans. Magdalena to her mother and the Holy Ghost. Mass at St. Brendan’s, 11:30. Black lace mantilla. Kneels for Communion. Fr. Osei knew her name: “You came back.” So she’s been here before. So she’s not a cultural Catholic. So I’m an idiot."
+    },
+    {
+     "kind": "clue",
+     "id": "plaque",
+     "title": "A plaque at the shrine",
+     "text": "Small brass plate under the candles: NORA GRACE CALLOWAY, 1989–2009. “Lord, to whom shall we go?” She lit a candle right above it."
+    },
+    {
+     "kind": "note",
+     "id": "newman",
+     "title": "St. Brendan’s",
+     "text": "The roof is an upside-down boat. The lector reads Deuteronomy like he’s running for Congress. The cantor could make a rock cry."
+    }
+   ]
+  },
+  "s21": {
+   "slug": "SUNDAY · 6:15 PM · DELGADO HALL, EAST STAIRWELL, 4TH FLOOR LANDING",
+   "set": {
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "The east stairwell is the only place in Delgado where the RAZR gets more than one bar, which is why it smells like cigarettes and other people’s arguments. The window on the landing opens six inches and not one more; through the gap the fog is coming in over the Grove like a slow white tide. It’s 6:15 here. On Glenwood Avenue it’s 9:15, the dishes done, his mother sitting near the phone and pretending she isn’t.",
+    {
+     "if": "e1_diner==\"followed\"",
+     "text": "Part of him is still down at the wharf: the sea lions heaped on the float, her arms crossed over the cardigan, the way she stood at that railing like somebody waiting on a boat that’s late."
+    },
+    {
+     "if": "e1_met_hale",
+     "text": "And Hale’s *Monday* is still going round in his head like a song off the radio he can’t shake."
+    },
+    "He tilts the phone to the one angle where the screen lights and dials home. It doesn’t finish the first ring. “Did you eat?” his mother says. No hello. “Don’t lie to me. I can hear it in your voice when you haven’t eaten.” “I ate, Ma.” “What did you eat.” “Food. California food. It had avocado on it.” She makes the noise she makes at the *Vindicator*.",
+    {
+     "if": "e1_hugged_dad",
+     "text": "“Your father said you hugged him,” she says. “In public. He told me twice.” She leaves that on the line between them, pleased with both of them."
+    },
+    {
+     "if": "e1_asked_about_danny",
+     "text": "“Your father was quiet on the phone,” she says, carefully. Jack doesn’t ask why. He knows how not to ask. It’s the family trade."
+    },
+    "Frank called from a truck stop outside Amarillo. “He’s making time. He says the truck’s making the noise again.” Jack knows the noise. He knows where his father is sleeping tonight, too — the pillow from the hall closet, the boots up on the dash — and he lets his mother keep the guy in Flagstaff. “And I’m seeing your brother next Sunday,” she says. “He wants to know if the girls in California are as pretty as on TV.”",
+    "Then there’s a clatter and a click and a long confused rustling, which is Nonna picking up the extension by her bed. It takes her three tries; he hears every one. Behind her, small and tinny, her TV is going: a rosary on EWTN, the Glorious Mysteries, because it’s Sunday. “Giacomino.” Her voice is thin and fierce as a wire. “Sei andato a messa?” “Sì, Nonna.” “Bravo.” Then, slyly: “E la ragazza?” “What girl, Nonna?” “There is always a girl. I hear it in your voice.” The TV murmurs *Holy Mary, Mother of God*. “Your nonno had the same voice.”",
+    "Then the line goes thick with breathing, and his sister has wrestled the kitchen phone away from their mother. “Are they all tan?” Gina demands. “Is it true they don’t have winter? I hate you.” And she’s gone, and his mother is back, saying *Regina, give me that* to the kitchen, and then, to him, in the voice of a woman who would also like to know about a girl: “Your nonna asked you something.”"
+   ],
+   "choices": [
+    {
+     "text": "Tell Mom about the girl. A little.",
+     "tag": "Sincerity",
+     "set": {
+      "trait.sincerity": "+1",
+      "e1_told_mom_girl": true
+     },
+     "response": [
+      "“There’s a girl,” he says. “Maybe. I met somebody.” Instantly: “Is she Catholic?” “She wears a veil to Mass, Ma.” A silence so complete he can hear Nonna’s rosary going round down the hall. Then: “Bring her home for Thanksgiving.”",
+      {
+       "if": "e1_heard_boyfriend",
+       "text": "“Ma, she has a — ” He stops. He can still hear the door of 217 closing on it. “I just met her.” “Thanksgiving,” his mother says, like a judge with a gavel, and that’s the end of that.",
+       "else": "“Ma. I just met her.” “Thanksgiving,” his mother says, like a judge with a gavel, and that’s the end of that."
+      },
+      "They hang up a little before half past. Two minutes later the RAZR buzzes in his hand, and he tilts it to the light.",
+      {
+       "type": "sms",
+       "from": "Gina",
+       "text": "nonna says go to confession. i said for what. she said he knows",
+       "time": "6:31 PM"
+      }
+     ],
+     "goto": "s22"
+    },
+    {
+     "text": "“No girls, Ma. Just philosophy.”",
+     "tag": "Control",
+     "set": {
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Mm-hm,” his mother says. Down the hall, perfectly audible, Nonna informs the Blessed Mother on EWTN: “*Sta mentendo.*” He’s lying.",
+      "They hang up a little before half past. Two minutes later the RAZR buzzes in his hand, and he tilts it to the light.",
+      {
+       "type": "sms",
+       "from": "Gina",
+       "text": "nonna says go to confession. i said for what. she said he knows",
+       "time": "6:31 PM"
+      }
+     ],
+     "goto": "s22"
+    },
+    {
+     "text": "“The girls here are tan, Ma, but they’re all Methodists.”",
+     "tag": "Wit",
+     "set": {
+      "trait.wit": "+1"
+     },
+     "response": [
+      "His mother laughs — the real one, the one he doesn’t hear much anymore — and then he hears her cross herself: the small rustle of it, her wedding ring clicking against the receiver.",
+      "They hang up a little before half past. Two minutes later the RAZR buzzes in his hand, and he tilts it to the light.",
+      {
+       "type": "sms",
+       "from": "Gina",
+       "text": "nonna says go to confession. i said for what. she said he knows",
+       "time": "6:31 PM"
+      }
+     ],
+     "goto": "s22"
+    }
+   ]
+  }
+ }
+}

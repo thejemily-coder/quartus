@@ -1,0 +1,591 @@
+{
+  "scenes": {
+    "s06": {
+      "slug": "SATURDAY · 9:48 PM · SEACLIFF ROAD, LAS OLAS",
+      "body": [
+        "Jack had a plan: Percy until his eyes gave out, eight hours on a mattress that crackles like a bag of chips, the 11:30 at St. Brendan’s in the navy blazer. Theo had a counterplan, delivered from the doorway of 412 in a shirt that cost more than the mattress. “Pray for me tonight. Preemptively. Like a flu shot.”",
+        "The moon is up, fat and lopsided, a few days short of full, and the Grove is all creak and menthol, eucalyptus bark hanging off the trunks like shed skin. Then the trees stop and Las Olas starts, like walking out of a church into a carnival: couches on roofs, bikes heaped against fences, jasmine so thick on the chain-link it’s practically a sound. Fog comes in at ankle height, as if the ocean sent it ahead to take names.",
+        "Theo narrates like a tour guide in hell. “On your left, Pi Lambda Chi, best porch on the Central Coast. On your right, Sigma Rho. Lacrosse. Don’t make eye contact. They can smell Ohio.” Jack keeps meaning to like him less and failing, like a diet.",
+        {
+          "type": "sms",
+          "from": "Gina",
+          "text": "dad called from a gas station in arizona. he says ur roommate has a coffee machine ur not allowed to touch. is that a metaphor",
+          "time": "9:41 PM"
+        },
+        "He reads it with the RAZR tilted to the one angle where the screen still lights, and doesn’t answer, because his father is somewhere in Arizona in the dark with a pillow behind the seat.",
+        "Seacliff Road runs west along the bluff until it quits, and the last house before the dark is a shingled two-story gone silver with salt, every window lit, bass coming through the walls like a heartbeat. Beyond it, the black hump of the Point, and on top of that a squat white lighthouse with no light in it. “The Lighthouse,” Theo says. “Californians are a literal people.”",
+        "At the end of the driveway a man stands by the fence, not going in. Older than everybody by a decade: wire glasses, gray at the temples, a Carhartt like Jack’s but worse, a bike leaning on the chain-link. He’s smoking an American Spirit and looking at the house like a math problem he’s been stuck on for months. Jack notices him because he’s the only thing on Seacliff Road not moving. Theo walks a little faster going past, eager for the party. “Keep up, Costigan. They’ll drink it all.”",
+        "On the front steps Theo produces a silver flask engraved *R.V.* “My father’s. He hasn’t noticed it’s gone.” He unscrews the cap and holds it out with a little bow."
+      ],
+      "journal": [
+        {
+          "kind": "note",
+          "id": "driveway",
+          "title": "The guy at the end of the driveway",
+          "text": "Older than everybody. Smoking, watching the house, not going in. A bike against the fence."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Take a pull.",
+          "tag": "Reckless",
+          "set": {
+            "trait.reckless": "+1",
+            "resolve.jack": "-1",
+            "rel.theo.warmth": "+1",
+            "e1_flask": true
+          },
+          "response": [
+            "It goes down like a warm hand on the back of his neck. “That’s Macallan,” Jack says, when he can. “That’s the eighteen. That’s a car payment.” Theo takes it back, delighted with him. “That’s a *Tuesday*.”"
+          ],
+          "goto": "s06f"
+        },
+        {
+          "text": "“I’m good. Somebody has to remember this.”",
+          "tag": "Control",
+          "set": {
+            "trait.control": "+1",
+            "resolve.jack": "+1",
+            "rel.theo.trust": "+1"
+          },
+          "response": [
+            "Theo isn’t offended. If anything he looks moved. “A designated rememberer. I love it. You’ll be my alibi.” He drinks for both of them and doesn’t ask again, which Jack likes him for."
+          ],
+          "goto": "s06f"
+        },
+        {
+          "text": "Light a Marlboro instead.",
+          "set": {
+            "jack_cigs": "+1"
+          },
+          "response": [
+            "Theo watches him cup the flame against the wind off the water. “Oh, you’re *that* kind of Catholic.” “I’m quitting.” “Since when?” Jack blows smoke toward the dead lighthouse. “Since I started.”"
+          ],
+          "goto": "s06f"
+        }
+      ]
+    },
+    "s06f": {
+      "slug": "SATURDAY · 10:02 PM · THE LIGHTHOUSE, FRONT HALL",
+      "body": [
+        {
+          "type": "doc",
+          "title": "Taped to the front door",
+          "text": "THE LIGHTHOUSE · EST. WHENEVER. NO GLASS ON THE DECK. NO PUKING IN THE HYDRANGEAS (THEY HAVE BEEN THROUGH ENOUGH). THE HOT TUB IS DEAD. STOP ASKING. — THE MANAGEMENT"
+        },
+        "Inside, the heat hits like a dryer door. Michael Jackson is coming off a laptop balanced on the coat rack, “Rock with You” on a tribute playlist that sounds like it’s been running since June, and under him the real bass thuds up from deeper in the house, knocking the surf photos crooked. A kid is asleep standing up against the coats, upright as a horse. A girl is crying, happily, into a lime Jell-O mold she holds like a baby. Theo is already gone, a blond head moving toward the kitchen and the hollow pock of a ball hitting a cup.",
+        "Jack stands at the foot of the stairs with the fog still beaded on his jacket. Three ways to go."
+      ],
+      "choices": [
+        {
+          "text": "The kitchen, where Theo went (and the beer pong).",
+          "tag": "Go",
+          "set": {
+            "e1_route": "kitchen"
+          },
+          "goto": "s07a"
+        },
+        {
+          "text": "The living room, where a redhead is dancing on a coffee table.",
+          "tag": "Go",
+          "set": {
+            "e1_route": "living"
+          },
+          "goto": "s07b"
+        },
+        {
+          "text": "Back outside to the front yard, where it’s quieter.",
+          "tag": "Go",
+          "set": {
+            "e1_route": "front"
+          },
+          "goto": "s07c"
+        }
+      ]
+    },
+    "s07a": {
+      "slug": "SATURDAY · 10:06 PM · THE LIGHTHOUSE, KITCHEN",
+      "body": [
+        "The linoleum holds on to his shoes. A keg sweats in a trash can full of ice. At the tap two guys are having the conversation the whole country is having: “Coroner called it a homicide yesterday, man.” “Propofol.” “*Propofol*, man.” Theo has already taken over the beer pong like a man who just bought the casino.",
+        "Cross-legged on the counter by the toaster sits the kid with the surfboard who carried the mini-fridge up this morning, a fishing-tackle box open on his knees. “Fridge guy. Vitamins? Anything to take the edge off, boss. I’m 204. Weed. Addy for midterms. Not Xanax, though.” He closes one tray gently, as if something’s asleep in it. “I don’t do Xanax anymore.” “Anymore?” “Long story, boss. My abuela says the devil’s patient, so be faster.” He holds out a hand. “Rafi.”",
+        "Kevin Tran comes in the back door in his navy quarter-zip, towing a kid in a Yankees cap. “Jack! Joey, this is Jack Costigan, he’s on my floor.” Joey shakes his hand like he’s starting a lawnmower. “Costigan. Irish. Anything else in there?” “My mother’s a Rinaldi.” “RINALDI. Half counts! That’s the good half.”",
+        "Then Theo is there, ping-pong ball in hand. He and Kevin were both at the floor meeting this afternoon, at opposite ends of the room. “Theo.” “Kevin.” The handshake goes a second long. Theo, who has had something to say about everything since 10:40 this morning, says, “Hey.” Then he’s himself again: “Kevin’s my partner. Kevin’s a doctor.” “Pre-med.” “Pre-*fun*.” Jack says, “I thought you’d never been to a party.” Kevin’s smile doesn’t move. “I’m not at one. I’m chaperoning Joey.”"
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "rafi",
+          "title": "Rafi (204)",
+          "text": "Second floor. Surfer. Sells ‘vitamins’ out of a tackle box. Calls everybody boss. Doesn’t do Xanax anymore. ‘Anymore.’"
+        }
+      ],
+      "choices": [
+        {
+          "text": "Play beer pong with Theo.",
+          "tag": "Reckless",
+          "set": {
+            "trait.reckless": "+1",
+            "resolve.jack": "-1",
+            "rel.theo.warmth": "+1",
+            "e1_beerpong": true
+          },
+          "response": [
+            "Point-guard hands turn out to be good for exactly one thing at a party. Theo is a joyful, shameless cheat; he mentions his mother’s backyard is on fire at the precise moment the other team shoots. They win three games running. Jack is two beers in and feels great, and then notices that he feels great, which is the Costigan in him, checking the locks.",
+            "The kitchen is a laundromat now, all heat and elbows, and Jack needs air. Theo, lining up a shot without looking at him: “There’s a back porch. Go be tragic. I’ll find you.”"
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "Ask Kevin if he’s going to Mass tomorrow.",
+          "tag": "Sincerity",
+          "set": {
+            "trait.sincerity": "+1",
+            "rel.kevin.warmth": "+1",
+            "rel.kevin.trust": "+1"
+          },
+          "response": [
+            "Kevin’s eyes go to Theo and away, quick as a blink. Quietly: “11:30. St. Brendan’s. I’m lectoring next week, God help them.” “I’m going to ALL of them,” Joey says. “He’s going to be a priest,” Kevin says. “I’m going to be a priest! Also, is that girl looking at me?” She is not.",
+            "The kitchen is a laundromat now, all heat and elbows, and Jack needs air. Theo, lining up a shot without looking at him: “There’s a back porch. Go be tragic. I’ll find you.”"
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "Ask Rafi what’s in the tackle box for a man who’s quitting smoking.",
+          "tag": "Wit",
+          "set": {
+            "trait.wit": "+1"
+          },
+          "response": [
+            "Rafi considers it with a pharmacist’s gravity. “Gum, boss. Nicorette. I’m a full-service pharmacy.” He actually hands Jack a piece and won’t take a dollar for it. “That’s not a business model. That’s manners.”",
+            "The kitchen is a laundromat now, all heat and elbows, and Jack needs air. Theo, lining up a shot without looking at him: “There’s a back porch. Go be tragic. I’ll find you.”"
+          ],
+          "goto": "s08"
+        }
+      ]
+    },
+    "s07b": {
+      "slug": "SATURDAY · 10:06 PM · THE LIGHTHOUSE, LIVING ROOM",
+      "music": "The Black Eyed Peas — “I Gotta Feeling”",
+      "body": [
+        "The Black Eyed Peas are promising everybody a good night at a volume that makes it a threat, and the room believes them. On the coffee table, in a white sundress and pearls, a redhead is dancing like it’s the last night before they close the bars forever: copper hair, porcelain skin, a laugh that goes through the speakers and out the other side.",
+        "She spots him in the doorway, hops down, gets him by the medal chain, which nobody has ever done, and reels him in. “St. Michael? Honey, you look like a sad Irish poem. Dance with me or I’m calling your mother.” “You don’t have my mother’s number.” “I will by Tuesday. Delaney Price. Highland Park, Texas. Future Pi Lam, current disaster.”",
+        "She chases a small white pill with a Jell-O shot. “Doctor’s orders,” she says, catching him looking. “Literally. I have a note. It’s laminated.” Then, over the bass: “My roommate’s out back. Judging everyone. She’s Catholic.” A look at his medal; a wicked smile. “Y’all would *hate* each other.”",
+        "On the stairs a guy with a guitar is playing “Skinny Love” for three girls on the steps below him, the Bon Iver song Gina played until the CD skipped. Calm face, his own key, six feet above the party. Then the bass rolls over him."
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "laney",
+          "title": "Laney Price",
+          "text": "Highland Park, Texas. Future Pi Lam, current disaster (her words). Has a note for her pills. Danced on a coffee table to the Black Eyed Peas like it was a sacrament. Her roommate is out back, judging everyone."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Dance with her. Badly. Commit.",
+          "tag": "Charm",
+          "set": {
+            "trait.charm": "+1",
+            "rel.laney.warmth": "+2",
+            "e1_met_laney_early": true
+          },
+          "response": [
+            "He dances like a CYO point guard at a cousin’s wedding: all footwork and elbows, nothing a nun couldn’t watch. Laney screams with joy. For two minutes he forgets to be anybody in particular. When the song breaks she takes his face in both hands and kisses his cheek, hard, like a notary’s stamp. “You’re going to be my favorite. Don’t tell anybody, it’ll go to your head.”",
+            "“Go find my roommate,” Laney says, already turning back to her table. “Back porch. Tell her I love her and she’s a coward.”"
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "“What was that you just took?”",
+          "tag": "Candor",
+          "set": {
+            "trait.candor": "+1",
+            "rel.laney.trust": "+1",
+            "rel.laney.friction": "+1",
+            "e1_met_laney_early": true
+          },
+          "response": [
+            "Her smile doesn’t move, which is its own answer. “Sugar, I like you, so I’m going to pretend you didn’t ask me that like my mother.” Then, pageant-bright: “It’s for flying. I’m flying.” She dances off, but she looks back at him once over a stranger’s shoulder, like a judge revising a score.",
+            "A song later she’s at his elbow. She stamps a kiss on his cheek, hard, no explanation, and turns him by the shoulders toward the back of the house. “Go find my roommate,” Laney says, already turning back to her table. “Back porch. Tell her I love her and she’s a coward.”"
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "“I’m not sad. I’m Irish. It’s a different thing.”",
+          "tag": "Wit",
+          "set": {
+            "trait.wit": "+1",
+            "rel.laney.warmth": "+1",
+            "e1_met_laney_early": true
+          },
+          "response": [
+            "“Oh, *you’re* trouble.” She hands him a Jell-O shot like a prize. He doesn’t drink it; he tucks it into his shirt pocket “for later,” and she laughs so hard she has to hold on to the bookcase. Then she stamps a kiss on his cheek, hard, and spins him toward the back of the house.",
+            "“Go find my roommate,” Laney says, already turning back to her table. “Back porch. Tell her I love her and she’s a coward.”"
+          ],
+          "goto": "s08"
+        }
+      ]
+    },
+    "s07c": {
+      "slug": "SATURDAY · 10:06 PM · THE LIGHTHOUSE, FRONT YARD",
+      "body": [
+        "Out front the fog is up to his knees. Cross-legged on the hood of an old Volvo wagon sits a girl in black from collar to boots: white-blonde hair cut blunt at the jaw, glasses thick enough to stop a bullet, a clove cigarette in one hand and a Moleskine in the other.",
+        "She doesn’t look up. “Don’t come any closer. I’m doing an ethnography of the mating rituals of the American undergraduate. You’re a data point. Hold still.” He comes closer anyway. He can read the page upside down.",
+        {
+          "type": "doc",
+          "title": "Moleskine, open on the hood",
+          "text": "FIELD NOTES — 8/29/09 — “THE LIGHTHOUSE,” LAS OLAS. 22:01 Male in pastel polo performs keg stand. Applause sparse but sincere. 22:06 Male, approx. 18. St. Michael medal. Paperback in back pocket (prop?). Approaching."
+        },
+        "Her eyes go to the medal. “St. Michael. Patron saint of what, bouncers?” “Paratroopers. Police. Grocers.” “*Grocers.*” “It’s a big job.” Now she looks at him, top to bottom, like a customs officer with a suitcase. “You’re a Catholic at a kegger. Which one of us is the anthropologist?”",
+        "He asks for a clove. She looks at him like he’s asked for a kidney. “They’re an endangered species. The FDA kills them on September twenty-second. I’m rationing.” She exhales a smell like Christmas on fire. “Margot. Portland. Third floor of Delgado. You’re fourth; you got in the elevator this morning with a crucifix sticking out of a milk crate. Don’t tell me your name. I’ll learn it if you become relevant.”",
+        "Down at the end of the driveway, the man by the fence is gone, and so is the bike."
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "margot",
+          "title": "Margot",
+          "text": "Portland. Third floor, Delgado. All black, Doc Martens, cloves. Doing an ‘ethnography’ of the party. Called me a data point. Says the dangerous Catholics are the fun ones."
+        }
+      ],
+      "choices": [
+        {
+          "text": "“You’re doing an ethnography in Doc Martens. I think you’re the one in costume.”",
+          "tag": "Wit",
+          "set": {
+            "trait.wit": "+1",
+            "rel.margot.warmth": "+1",
+            "rel.margot.friction": "+1",
+            "e1_met_margot_early": true
+          },
+          "response": [
+            "Without looking up she writes something down. “Noted.” He reads it upside down: *funny; dangerous.* She underlines *dangerous*.",
+            "“You’re going to be one of those Catholics who’s fun,” Margot says. “Those are the dangerous ones.” She tips her head at the side of the house. “Go around back. I did the porch at nine-thirty. There’s a girl out there who’s as unimpressed as you are. You’ll either kill each other or I’ll get a chapter out of it.”"
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "“The Church invented the university. You’re welcome.”",
+          "tag": "Candor",
+          "set": {
+            "trait.candor": "+1",
+            "rel.margot.friction": "+2",
+            "rel.margot.trust": "+1",
+            "e1_met_margot_early": true
+          },
+          "response": [
+            "“And then burned the people who did science in it.” “Bruno was burned for theology, not astronomy.” “Oh, good. Say that slowly so I can quote you.” “Nobody burned Galileo.” “No. They made an old man kneel and swear the Earth doesn’t move, then kept him under house arrest until he died. Your institution made a genius lie on his knees. I’d call that worse.” Jack opens his mouth and finds nothing in it he’s proud of. She’s enjoying this and hiding it badly.",
+            "“You’re going to be one of those Catholics who’s fun,” Margot says. “Those are the dangerous ones.” She tips her head at the side of the house. “Go around back. I did the porch at nine-thirty. There’s a girl out there who’s as unimpressed as you are. You’ll either kill each other or I’ll get a chapter out of it.”"
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "Sit on the bumper and ask what she’s found so far.",
+          "tag": "Sincerity",
+          "set": {
+            "trait.sincerity": "+1",
+            "rel.margot.warmth": "+1",
+            "rel.margot.trust": "+1",
+            "e1_met_margot_early": true
+          },
+          "response": [
+            "She checks the question for traps, then flips back a page and reads in a nature-documentary voice. “Male, nineteen, has said ‘bro’ more often than he has blinked; appears to be in love with the keg. Female, eighteen, has told several men she’s ‘not usually like this.’ All of them believed her.” Jack laughs out loud, the real one, the one that embarrasses him. Margot almost smiles, then puts it away fast, like something she caught herself doing in public.",
+            "“You’re going to be one of those Catholics who’s fun,” Margot says. “Those are the dangerous ones.” She tips her head at the side of the house. “Go around back. I did the porch at nine-thirty. There’s a girl out there who’s as unimpressed as you are. You’ll either kill each other or I’ll get a chapter out of it.”"
+          ],
+          "goto": "s08"
+        }
+      ]
+    },
+    "s08": {
+      "slug": "SATURDAY · 10:31 PM · THE LIGHTHOUSE, BACK PORCH",
+      "music": "Grizzly Bear — “Two Weeks”",
+      "set": {
+        "resolve.lena": 6
+      },
+      "body": [
+        "The back deck has survived thirty years of parties and looks it: boards gone soft as driftwood, a hot tub under a blue tarp, chili-pepper lights with half the peppers dead. Past the rail, ice plant runs out to a chain-link fence, and past the fence there is only fog and the ocean working at the foot of the bluff. North, the Point is a black shoulder, the old light on top white and blind. Somebody inside has changed the music. Through the slider it comes thinned and lovely and wrong for a keg party: a piano knocking politely on the same bright chords, falsettos rising over it like birds off a wire.",
+        {
+          "if": "e1_route==\"kitchen\"",
+          "text": "He’s holding a Natty Light he doesn’t want, and behind him through the glass Theo’s laugh goes off like a car alarm."
+        },
+        {
+          "if": "e1_beerpong",
+          "text": "Two beers sit warm in his chest. He feels terrific, and he’s keeping an eye on that."
+        },
+        {
+          "if": "e1_route==\"living\"",
+          "text": "His cheek still stings where Laney stamped it, and he has a message to deliver."
+        },
+        {
+          "if": "e1_route==\"front\"",
+          "text": "His jacket smells like cloves, like he’s come from a very strange Christmas."
+        },
+        "He finds the rail. The girl is already on it.",
+        "She’s up with her back to a post and her boots crossed at the ankle, brown cowboy boots beat up soft as gloves, and it takes him a second to understand he’s seen those boots before. Blue sundress tonight. An oatmeal cardigan against the fog, worn through at the elbows. Honey-brown hair coming loose in the wet air. A red cup she isn’t drinking so much as supervising. At her throat, a gold medal rubbed almost smooth. The pelican girl. His body knows it before his brain does.",
+        "She doesn’t look at him. “If you’re going to throw up, the hydrangeas have suffered enough.” “I read the sign,” Jack says. “I’m a rule follower.” “You’re at a keg party on a cliff.” “I didn’t say which rules.”",
+        {
+          "if": "e1_route==\"living\"",
+          "text": "“Your roommate says she loves you,” he tells her, “and you’re a coward.” She closes her eyes. “Laney found you.” “Laney found me.” “Laney finds everybody. It’s like being found by weather.” Her eyes go to his cheek, stay a second, come away. He can’t tell what she’s decided."
+        },
+        {
+          "if": "e1_route==\"front\"",
+          "text": "“Margot sent me.” “I don’t know a Margot.” “All black. Cloves. Ethnography.” “Oh, the *Swede*. She asked me to rate the party on a scale of one to Gomorrah.”"
+        },
+        {
+          "if": "e1_flask",
+          "text": "She sniffs once without turning her head. “Single malt. Not yours.” “How do you know?” “Nobody who owns that jacket buys that scotch. It’s too big for you in the shoulders.” Jack doesn’t say anything about the jacket. She lets him not say it."
+        },
+        "Through the slider the party is an aquarium nobody’s cleaning. She nods at it. “Pastel polo. By the fridge.” They’re making it up; that’s the game, and neither of them has to explain it. “Sigma Rho legacy,” Jack says. “Two DUIs. His mother calls him ‘my prince.’” “His *father* calls him ‘the prince,’” she says, “and means it as an insult.” “He’s going to run for Congress.” “And lose to a woman and never get over it.” “What a jagoff.” She turns her head, finally. “A *what*?” “Technical term. Western Pennsylvania and points west.” She tries it in her mouth, “jagoff,” like a sommelier with a wine she can’t place, and keeps it.",
+        "After that it goes fast. The Jell-O girl, still crying, now spoon-feeding it to a boy. (“Most romantic thing I’ve seen in California.” “It’s lime. Nobody’s ever loved anybody over lime.”) The philosophy major on the couch explaining Nietzsche to a girl visibly composing a grocery list. (“Eggs,” the girl on the rail murmurs, doing her face. “Paper towels. A new life.” “He’s on eternal recurrence.” “Lord. He’s going to recur all night.”)",
+        {
+          "if": "e1_met_laney_early",
+          "text": "Laney on the coffee table, conducting the room with a Jell-O shot. (“Is she always —” “Yes. We’ve been roommates about a day and it’s been a *decade*.”) She says it the way you talk about weather you love.",
+          "else": "Jack opens his mouth about the redhead on the coffee table and the girl says, without looking, “Careful. That’s my roommate.” He closes it. She lets him sweat exactly as long as it’s funny."
+        },
+        "Then two kids who clearly met tonight are kissing against the refrigerator with the grim efficiency of people filling out a form, and for once neither of them has a joke ready. “That’s not even fun,” she says finally. “That’s paperwork.” “Somebody has to file it in the morning.” “Nobody files it,” she tells her cup. “That’s the whole point. It just gets lost.” Then her boot is tapping the post again in time to the falsettos. She’s going to dance with her roommate later, she informs him, and he is not invited.",
+        "Something buzzes in her cardigan pocket. She takes out a phone, the kind that slides open on a little keyboard, looks at the screen, silences it and sets it face-down on the rail. She doesn’t explain. He doesn’t ask. The ocean fills the space where somebody would.",
+        "Then she turns the scalpel on him, slowly, a long look from his shoes up, the way his nonna inspects a chicken at the butcher’s. “Rust Belt. Parish school. Point guard — no, don’t tell me. Good with your hands, terrible with your feelings. Paperback in your back pocket so people will ask what you’re reading. You’re hoping I’ll ask.” “Are you going to?” “Absolutely not.” “Youngstown,” he says. “Ohio. You were close.” “Youngstown.” She says it back slowly, tasting it, like a dish she isn’t sure she’d order again.",
+        "The phone buzzes against the wood. She doesn’t look at it.",
+        "He gets one back. “You were arguing with a parking cop this morning. Holding a lamp.” “You were *watching*?” “Everybody was watching. It was shaped like a pelican.” “I won.” “I know. I was there.” Something in her face says she likes having been seen winning, and hates that he was the one who saw.",
+        "Her eyes go to his eyebrow and stay there. “And that. What’s the story?”"
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "lena",
+          "title": "The girl on the porch",
+          "text": "Back porch of the Lighthouse. Judges a party like a federal appellate court. Gold medal on a chain. Hasn’t told me her name. (The pelican girl? The pelican girl.)"
+        }
+      ],
+      "choices": [
+        {
+          "text": "“Jealous husband. Erie, Pennsylvania.”",
+          "tag": "Wit",
+          "set": {
+            "trait.wit": "+1",
+            "rel.lena.heat": "+1",
+            "rel.lena.warmth": "+1",
+            "scar_told_lena": "husband"
+          },
+          "response": [
+            "“*Erie.*” “You know Erie?” “I know it’s not a place anybody’s husband would be jealous *in*.” She’s laughing, a low helpless sound she tries to push back down into the cup, and she is visibly furious about it."
+          ],
+          "goto": "s09"
+        },
+        {
+          "text": "“Knife-juggling at the St. Anthony’s pierogi festival. The Ukrainians did it.”",
+          "tag": "Charm",
+          "set": {
+            "trait.charm": "+1",
+            "rel.lena.warmth": "+1",
+            "rel.lena.heat": "+1",
+            "scar_told_lena": "pierogi"
+          },
+          "response": [
+            "“Pierogi aren’t even Italian.” “That’s what makes it a tragedy.” She looks at him the way a cat looks at a laser pointer, offended and interested in equal parts, and laughs anyway."
+          ],
+          "goto": "s09"
+        },
+        {
+          "text": "“I don’t tell that one on a first date.”",
+          "tag": "Candor",
+          "cue": "Lena noticed.",
+          "set": {
+            "trait.candor": "+1",
+            "rel.lena.trust": "+1",
+            "rel.lena.heat": "+1",
+            "scar_told_lena": "refused"
+          },
+          "response": [
+            "“This isn’t a date.” “Then I definitely don’t tell it.” She studies him, and for a second she isn’t performing anything either: the appellate judge goes away and there’s just a girl on a railing in a cardigan with holes in the elbows, looking at somebody with a thing he doesn’t say. “Okay,” she says. “Keep it.”"
+          ],
+          "goto": "s09"
+        },
+        {
+          "text": "“Honestly? It’s not a good story. Ask me something else.”",
+          "tag": "Sincerity",
+          "set": {
+            "trait.sincerity": "+1",
+            "rel.lena.trust": "+1",
+            "rel.lena.warmth": "+1",
+            "scar_told_lena": "refused"
+          },
+          "response": [
+            "She looks at him properly for the first time. Surprise, and then something like a door closing, politely, so as not to wake anyone. “Okay. What are you reading?” “You said you weren’t going to ask.” “I lied. Hand it over.”"
+          ],
+          "goto": "s09"
+        }
+      ]
+    },
+    "s09": {
+      "slug": "SATURDAY · 10:49 PM · THE LIGHTHOUSE, BACK PORCH",
+      "set": {
+        "e1_postcard_seen": true
+      },
+      "body": [
+        "The Percy ends up in her hands, and later Jack won’t be able to say whether he gave it to her or she took it. He’s on the rail beside her now, a foot of wet wood between them. She turns the book over in the porch light: Walker Percy, *The Moviegoer*, Vintage, the spine cracked white so many times it’s mostly crack, a three-dollar library-sale sticker on the back, every margin crowded with his handwriting.",
+        "“Oh, no,” she says. “Oh, no, no. You brought a New Orleans novel to California. That’s either a pickup line or a cry for help, and I need to know which before I decide how to be disappointed.” “It’s a good book.” “I know it’s a good book. I’m *from* New Orleans. I grew up with boys who think they’re in it.” She’s already flipping. “Binx. The search. Everydayness.” She says *everydayness* the way only somebody from Louisiana could, like the word has a screened porch on the back.",
+        "She stops on a page and reads his margin aloud in a flat, nasal voice that is apparently supposed to be his: “‘NO. Coward.’” She looks up. “You’re yelling at Binx.” “Binx deserves it.” “Binx sells stocks in *Gentilly*. He has enough problems.” But she’s laughing, and she keeps reading, and Jack has the strange experience of hearing the inside of his own head in somebody else’s accent.",
+        "Something slips from between the pages and she traps it against her knee before it can go over the rail. A postcard: a domed building the color of old bread, sun on stone, the Radcliffe Camera, Oxford. She turns it over.",
+        "She reads the back. Then she reads it again. Jack doesn’t need to look; he knows the one line on it by heart, and the initials under it. So he watches her face, and something in it goes still. Not blank. Still, the way water goes still before you can see what’s under it. The bass thumps through the wall. She hands the card back between two fingers, lightly, as if it’s nothing she cares about.",
+        "“Who’s A.H.?” Her hand goes up to the medal at her throat and closes around it."
+      ],
+      "journal": [
+        {
+          "kind": "clue",
+          "id": "postcard",
+          "title": "The postcard",
+          "text": "She read the back of my postcard twice. Asked who A.H. was like she didn’t care. She cared."
+        }
+      ],
+      "choices": [
+        {
+          "text": "“My uncle. Andrew Hennessey. He sends postcards from everywhere.”",
+          "tag": "Lie",
+          "set": {
+            "soul.honesty": "-1",
+            "rel.lena.heat": "+1",
+            "e1_postcard_lie": true
+          },
+          "response": [
+            "“Your uncle,” she says, “has very confident handwriting.” “He was a Jesuit for a while. It never wore off.” “Mm.” Neither of them believes a word the other has said since he walked out here, and it’s the most fun he’s had in months.",
+            "He tucks the card away. Her eyes drop to the St. Michael swinging loose from his shirt. “Nice medal.” “My nonna makes me wear it.” She tips her chin at her own. “My grandmother’s dead and she still makes me wear it.” It takes him half a second to laugh, and her half a second to let him. He has her figured now: a Christmas-and-Easter girl with a grandmother’s necklace. From the way she’s eyeing his, he’d bet she’s figured him the same. Neither of them says the word *Mass*."
+          ],
+          "goto": "s10"
+        },
+        {
+          "text": "“A man I came here to argue with.”",
+          "tag": "Candor",
+          "set": {
+            "trait.candor": "+1",
+            "soul.honesty": "+1",
+            "rel.lena.trust": "+1"
+          },
+          "key": "You told the girl on the porch you came to Marisol to argue with someone.",
+          "response": [
+            "She looks at him, at him and not the card, with an expression he can’t get to the bottom of. “Huh,” she says. That’s all. She takes a sip of the beer, finally, and looks out at the fog like it owes her money.",
+            "He tucks the card away. Her eyes drop to the St. Michael swinging loose from his shirt. “Nice medal.” “My nonna makes me wear it.” She tips her chin at her own. “My grandmother’s dead and she still makes me wear it.” It takes him half a second to laugh, and her half a second to let him. He has her figured now: a Christmas-and-Easter girl with a grandmother’s necklace. From the way she’s eyeing his, he’d bet she’s figured him the same. Neither of them says the word *Mass*."
+          ],
+          "goto": "s10"
+        },
+        {
+          "text": "“That’s classified.”",
+          "tag": "Wit",
+          "set": {
+            "trait.wit": "+1",
+            "rel.lena.friction": "+1"
+          },
+          "response": [
+            "“Everything about you is classified.” “Not everything. The scar’s public record. It’s just that the record keeps changing.” “That’s called lying, Youngstown.” “In Ohio we call it oral tradition.”",
+            "He tucks the card away. Her eyes drop to the St. Michael swinging loose from his shirt. “Nice medal.” “My nonna makes me wear it.” She tips her chin at her own. “My grandmother’s dead and she still makes me wear it.” It takes him half a second to laugh, and her half a second to let him. He has her figured now: a Christmas-and-Easter girl with a grandmother’s necklace. From the way she’s eyeing his, he’d bet she’s figured him the same. Neither of them says the word *Mass*."
+          ],
+          "goto": "s10"
+        }
+      ]
+    },
+    "s10": {
+      "slug": "SATURDAY · 11:14 PM · THE LIGHTHOUSE, BACK PORCH",
+      "set": {
+        "e1_knows_lena_name": true
+      },
+      "body": [
+        "Around eleven the party gets louder and worse inside and quieter out here, the way it does at the edges of things. Jack’s hand goes into his jacket and finds the Marlboros the way it does when he’s nervous and pretending not to be, and stays there, turning the pack over with his thumb.",
+        "At the back of the lot, where one fence post has rotted at the base, there’s a gap in the chain-link you could walk through without turning sideways. Beyond it a dirt path runs pale along the lip of the bluff toward the Point and the dead white light. “Bet you can see the whole coast from out there,” he says. “We should —”",
+        "“There’s a path behind the fence.” It comes out too fast, before he’s finished. “Don’t take it at night.” He looks at her. “You moved in this morning. I watched you do it. With a pelican.” “Laney’s sorority friend told me.” Her fingers have found the medal again; she holds it while she says it, then lets it go.",
+        {
+          "if": "e1_met_laney_early",
+          "text": "“Laney has a sorority friend already?” “Laney has a sorority *family* already. She’s been here a day.”",
+          "else": "“Who’s Laney?” “My roommate. The coffee table. Everybody meets Laney eventually; it’s like jury duty.”"
+        },
+        "Then the porch light clicks off. It’s on a motion sensor, and they’ve been sitting too still, two people on a rail not touching, and the house has decided nobody’s out here. The dark comes down all at once. The only light left is the blue glow through the slider and, to the north, the old lighthouse giving back the moon like a bad mirror.",
+        "In the dark she’s closer than she was. He doesn’t know if she moved or he did, or if it’s only that with the light gone there’s nothing to measure by. The rail is cold and wet under his palms. Her cardigan sleeve is an inch from his wrist; he can feel the inch, the way you feel the heat off a burner you haven’t touched. He can smell her: beer, and the jasmine off the fences that has gotten into everything, and under it the sea, and under that something warmer that is just her skin. He can hear her breathing, and that it isn’t quite even.",
+        "He wants to kiss her. There’s no better way to say it; it’s the least complicated thing that has happened to him in California. He wants to put his hand over the inch and close it, to know what her mouth tastes like after she’s been right about everything for most of an hour. He knows exactly where her face is without seeing it. And he doesn’t, and it isn’t fear, or not only. It’s that he doesn’t know her name. It’s a stubborn, unfashionable idea his nonna and the Church and a lot of cold Sunday mornings put into him, and he has never managed to get out: that if this is anything, it’s worth too much to spend in the dark on a stranger’s porch like loose change. So he holds still. It’s the hardest thing he’s done all day, and today he watched his father drive away. His hands ache from the rail.",
+        "She doesn’t move either. He hears her breath go in, and hold, and go out, and later, lying awake, he’ll wonder whether she was holding still for the same reason he was, or only waiting to see what he would do.",
+        "The slider bangs open. The porch light snaps on like a cop’s flashlight. In the doorway, radiant and wrecked, a Jell-O shot in each hand and her pearls on backward, stands the redhead from the coffee table. “MAGDALENA BROUSSARD,” she announces to the porch, the Point and possibly Hawaii, “the Jell-O shots are sentient and they’re asking for you.”",
+        "The girl on the rail closes her eyes. “Magdalena,” Jack says. She opens them. “Lena. Only my mother and the Holy Ghost call me Magdalena.” “Jack.” He watches her take it, turn it over once, and put it away somewhere, like a coin she might spend later.",
+        {
+          "if": "e1_met_laney_early",
+          "text": "“Oh my *God*, you found her!” Laney shrieks. “Sad Irish Poem found you!” Lena turns her head very slowly. “*Sad Irish Poem?*” “Well, look at him. Lena, Sloane’s here, my future big, she’s a *goddess*, she’s in the hot tub.” Lena looks at the blue tarp. “*That* hot tub?” “The front one, sugar. It’s a kiddie pool. Sloane makes it work.”",
+          "else": "Laney looks Jack over like a used car she’s thinking of buying for a friend. “Well, *hello*. Lena, who’s your friend? Never mind. I’ll find out.”"
+        },
+        "She backs inside, aiming a Jell-O shot at them like a derringer. “Two minutes, Magdalena, or I’m drinking yours.” The slider rumbles shut. The light stays on now. Whatever was about to happen in the dark goes back to being a porch.",
+        {
+          "if": "e1_route==\"living\"",
+          "text": "“Also,” Lena says, not looking at him, “you’ve had my roommate’s mouth on your face since you walked out here.” His hand comes away from his cheek with a smear of red. “You let me sit here for an hour with —” “I was judging you. That’s what the porch is for.”"
+        },
+        "A minute left, maybe two. The fog has come up over the lip of the bluff and filled in the path behind the fence as if it was never there."
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "lena",
+          "title": "Lena Broussard",
+          "text": "New Orleans. *Magdalena*, but only her mother and the Holy Ghost call her that. Knows Walker Percy cold. Warned me off the path behind the fence like she’d been told twice. Roommate: Laney."
+        },
+        {
+          "kind": "note",
+          "id": "fence",
+          "title": "The path",
+          "text": "A gap in the fence behind the Lighthouse; a path along the bluff to the Point. Two people today told me not to go there. Neither would say why."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Light a Marlboro. Offer her one.",
+          "tag": "Reckless",
+          "set": {
+            "trait.reckless": "+1",
+            "jack_cigs": "+1",
+            "rel.lena.heat": "+1",
+            "rel.lena.friction": "+1",
+            "e1_lit_cig_porch": true,
+            "e1_lena_took_cig": true,
+            "reliquary": "+1"
+          },
+          "key": "Lena took the cigarette out of your mouth.",
+          "journal": [
+            {
+              "kind": "note",
+              "id": "cigarette",
+              "title": "The first cigarette",
+              "text": "She took it out of my mouth and put it in her pocket. Who keeps a cigarette butt?"
+            }
+          ],
+          "response": [
+            "He lights one off a Bic cupped against the wind and holds the pack out to her. She ignores the pack. Before he can get a second drag she reaches over and takes the cigarette out of his mouth, two fingers, the way you’d take a pencil from behind somebody’s ear, stubs it out on the rail with a neat little twist, and drops the butt into her cardigan pocket.",
+            "“Those’ll kill you.” “That’s the plan. Slowly. Like a Catholic.” “Littering’s a sin, Jack.” She says his name like she’s checking whether it will hold her weight, and then pats the pocket once, as if there’s something in it worth keeping."
+          ],
+          "goto": "s11"
+        },
+        {
+          "text": "Don’t light it. Put the pack away.",
+          "tag": "Control",
+          "set": {
+            "trait.control": "+1",
+            "soul.restraint": "+1",
+            "rel.lena.trust": "+1"
+          },
+          "key": "You put the cigarettes away in front of Lena.",
+          "response": [
+            "His hand comes out of his jacket empty. She saw it: the pack, and then no pack. “Quitting?” “Tapering. Like a saint, but with Marlboros.” She laughs before she can stop it, a real one, and covers her mouth with the back of her wrist like she’s been caught at something. “Lord have mercy,” she says through it. “You’re going to be a problem, Jack.”"
+          ],
+          "goto": "s11"
+        },
+        {
+          "text": "“What’s out there? At the end of the path.”",
+          "tag": "Sincerity",
+          "set": {
+            "trait.sincerity": "+1",
+            "rel.lena.friction": "+1"
+          },
+          "key": "You asked Lena what was at the end of the path.",
+          "response": [
+            "She looks at the fence. “A cliff,” she says. “A lighthouse that doesn’t work.” Then, too brightly, in a tour-guide voice: “Rocks. Seals. Fog. California.” She slides down off the rail and brushes off the back of her dress.",
+            "That’s twice today somebody has answered that question with *a cliff*: the RA at the floor meeting, and now her. He doesn’t know why he notices, and before he can work it out Laney is drumming on the glass with both palms and the two minutes are up."
+          ],
+          "goto": "s11"
+        }
+      ]
+    }
+  }
+}
