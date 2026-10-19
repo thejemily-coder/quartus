@@ -1,0 +1,548 @@
+<title>The Hard Saying</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Barlow+Condensed:wght@400;500;600&family=VT323&display=swap">
+<style>
+/* Layout: one reading column under a thin broadcast bar; full-bleed night for title cards; period artifacts as inset objects. */
+:root {
+  --night: #12151c;      /* fog at 2 a.m. */
+  --night-2: #1a1f29;
+  --ink: #e8e1d3;        /* lamplit page */
+  --ink-dim: #a39b8c;
+  --rule: #2c3240;
+  --votive: #d8a54a;     /* candle / sodium porch light */
+  --votive-dim: #8a6a33;
+  --wound: #c0605a;
+  --fb-blue: #3b5998; --fb-bg: #ffffff; --fb-ink: #333333; --fb-meta: #7f7f7f; --fb-line: #d8dfea;
+  --aim-bg: #fff8c9; --aim-ink: #2b2b2b; --aim-bar: #1f4fa3; --aim-bar-ink: #ffffff;
+  --lcd-bg: #b8c9a6; --lcd-ink: #1e2a16; --phone: #2a2d33; --phone-ink: #d9dde3;
+  --paper: #f3ecdc; --paper-ink: #2c261c;
+  --display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --body: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --util: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  --lcd: "VT323", "Courier New", monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --night: #f2eee6; --night-2: #e8e2d6; --ink: #1f1c18; --ink-dim: #6b6458; --rule: #d3cbbb;
+  --votive: #9a6a14; --votive-dim: #c9a868; --wound: #a3423c; color-scheme: light } }
+:root[data-theme="light"] {
+  --night: #f2eee6; --night-2: #e8e2d6; --ink: #1f1c18; --ink-dim: #6b6458; --rule: #d3cbbb;
+  --votive: #9a6a14; --votive-dim: #c9a868; --wound: #a3423c; color-scheme: light }
+
+* { box-sizing: border-box }
+html, body { background: var(--night); color: var(--ink) }
+body { font-family: var(--body); font-size: 1.12rem; line-height: 1.62; min-height: 100%;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--night) }
+button { font: inherit; color: inherit; cursor: pointer }
+:focus-visible { outline: 2px solid var(--votive); outline-offset: 3px }
+em { font-style: italic }
+
+/* Broadcast bar */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--night) 92%, transparent);
+  backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+.bar-in { max-width: 44rem; margin: 0 auto; display: flex; align-items: center; gap: 12px; min-height: 48px }
+.bug { font-family: var(--display); font-style: italic; font-size: 1.05rem; letter-spacing: .01em; white-space: nowrap; background: none; border: 0; padding: 0 }
+.bug b { font-style: normal; font-weight: 600 }
+.ep-label { font-family: var(--util); text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; color: var(--ink-dim);
+  flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.bar-btn { font-family: var(--util); text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; background: none;
+  border: 1px solid var(--rule); border-radius: 2px; padding: 5px 10px; color: var(--ink) }
+.bar-btn:hover { border-color: var(--votive); color: var(--votive) }
+
+/* Duel HUD */
+.duel { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 49px); z-index: 4; background: var(--night-2); border-bottom: 1px solid var(--votive-dim);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+.duel-in { max-width: 44rem; margin: 0 auto; padding-block: 8px; display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: center }
+.duel-title { font-family: var(--util); text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; color: var(--votive); flex: 1 1 100%; }
+.duel-title span { color: var(--ink-dim) }
+.meter { display: flex; align-items: center; gap: 8px; font-family: var(--util); text-transform: uppercase; letter-spacing: .12em; font-size: .75rem; color: var(--ink-dim) }
+.pips { display: flex; gap: 3px }
+.pip { width: 14px; height: 6px; border: 1px solid var(--votive-dim) }
+.pip.on { background: var(--votive); border-color: var(--votive) }
+
+/* Stage */
+main { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 96px }
+.col { max-width: 38rem; margin: 0 auto }
+.fade { animation: fade .45s ease both }
+@keyframes fade { from { opacity: .25; transform: translateY(4px) } to { opacity: 1; transform: none } }
+@media (prefers-reduced-motion: reduce) { .fade, .whisper { animation: none !important } }
+
+.chyron { font-family: var(--util); text-transform: uppercase; letter-spacing: .2em; font-size: .82rem; font-weight: 500;
+  color: var(--ink-dim); display: flex; gap: 10px; align-items: baseline; margin: 6px 0 22px }
+.chyron::before { content: ""; width: 26px; height: 2px; background: var(--votive); flex: none; transform: translateY(-3px) }
+.cue { font-family: var(--util); text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; color: var(--votive);
+  margin: -10px 0 22px; display: flex; gap: 8px; align-items: center }
+.cue::before { content: "♪"; font-size: 1rem; letter-spacing: 0 }
+.prose p { margin: 0 0 1.05em; hyphens: auto; text-wrap: pretty }
+.prose p:first-child::first-letter { }
+.response { border-left: 2px solid var(--votive-dim); padding-left: 16px; margin: 6px 0 1em }
+.chosen { font-family: var(--util); text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; color: var(--votive); margin: 1.4em 0 .7em }
+.whisper { font-family: var(--display); font-style: italic; color: var(--votive); font-size: 1.05rem; margin: .4em 0 1.1em;
+  display: flex; gap: 10px; align-items: center; animation: glow 2.4s ease both }
+.whisper::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--votive); box-shadow: 0 0 10px var(--votive); flex: none }
+@keyframes glow { 0% { opacity: 0 } 30% { opacity: 1 } 100% { opacity: .85 } }
+.brk { text-align: center; color: var(--votive-dim); letter-spacing: 1em; margin: 1.6em 0; font-size: .9rem }
+
+/* Choices */
+.choices { display: grid; gap: 10px; margin-top: 1.6em }
+.choice { text-align: left; background: transparent; border: 1px solid var(--rule); border-radius: 2px; padding: 12px 16px;
+  font-family: var(--body); font-size: 1.04rem; line-height: 1.45; display: flex; gap: 12px; align-items: baseline; transition: border-color .15s, background .15s }
+.choice:hover { border-color: var(--votive); background: color-mix(in srgb, var(--votive) 7%, transparent) }
+.choice .tag { font-family: var(--util); text-transform: uppercase; letter-spacing: .14em; font-size: .72rem; color: var(--votive);
+  border: 1px solid var(--votive-dim); padding: 1px 6px; border-radius: 2px; flex: none; transform: translateY(-1px) }
+.go { margin-top: 1.6em; background: var(--votive); color: var(--night); border: 0; border-radius: 2px; padding: 11px 22px;
+  font-family: var(--util); text-transform: uppercase; letter-spacing: .18em; font-size: .9rem; font-weight: 600 }
+.go:hover { filter: brightness(1.08) }
+.ghost { background: none; border: 1px solid var(--rule); color: var(--ink); border-radius: 2px; padding: 10px 18px;
+  font-family: var(--util); text-transform: uppercase; letter-spacing: .16em; font-size: .85rem }
+.ghost:hover { border-color: var(--votive); color: var(--votive) }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center }
+
+/* Period inserts */
+.ins { margin: 1.4em 0 }
+.phone { background: var(--phone); color: var(--phone-ink); border-radius: 18px; padding: 12px 12px 14px; max-width: 18rem; box-shadow: 0 6px 18px rgba(0,0,0,.35) }
+.phone-top { display: flex; justify-content: space-between; font-family: var(--util); letter-spacing: .1em; font-size: .72rem; text-transform: uppercase; padding: 0 4px 8px; opacity: .8 }
+.lcd { background: var(--lcd-bg); color: var(--lcd-ink); font-family: var(--lcd); font-size: 1.32rem; line-height: 1.15; padding: 10px 12px; border-radius: 4px;
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.18); overflow-wrap: anywhere }
+.lcd .from { display: block; border-bottom: 1px dashed currentColor; margin-bottom: 6px; padding-bottom: 2px; opacity: .85 }
+.fb { background: var(--fb-bg); color: var(--fb-ink); font-family: "Lucida Grande", Tahoma, Verdana, sans-serif; font-size: .82rem; line-height: 1.4;
+  border: 1px solid var(--fb-line); border-top: 22px solid var(--fb-blue); padding: 10px 12px; max-width: 28rem; position: relative }
+.fb::before { content: "facebook"; position: absolute; top: -20px; left: 10px; color: #fff; font-weight: bold; font-size: .85rem; letter-spacing: -.02em }
+.fb .nm { color: var(--fb-blue); font-weight: bold }
+.fb .meta { color: var(--fb-meta); font-size: .74rem; margin-top: 4px }
+.aim { background: var(--aim-bg); color: var(--aim-ink); font-family: Tahoma, Verdana, sans-serif; font-size: .85rem; max-width: 24rem; border: 1px solid #8a8a8a }
+.aim .tb { background: linear-gradient(var(--aim-bar), #173d80); color: var(--aim-bar-ink); font-size: .75rem; padding: 3px 8px; font-weight: bold }
+.aim .bd { padding: 10px 12px; white-space: pre-wrap }
+.doc { background: var(--paper); color: var(--paper-ink); padding: 16px 18px; max-width: 30rem; font-size: .98rem; box-shadow: 0 4px 14px rgba(0,0,0,.28); transform: rotate(-.4deg) }
+.doc h4 { margin: 0 0 8px; font-family: var(--util); text-transform: uppercase; letter-spacing: .14em; font-size: .8rem }
+.doc div { white-space: pre-wrap }
+
+/* Title, cards */
+.title-screen { text-align: center; padding-block: 8vh 4vh }
+.show { font-family: var(--display); font-weight: 400; font-size: clamp(2.6rem, 9vw, 5.2rem); line-height: .95; letter-spacing: -.01em; margin: 0; text-wrap: balance }
+.show i { font-style: italic; color: var(--votive) }
+.verse { font-family: var(--body); font-style: italic; color: var(--ink-dim); margin: 18px auto 0; max-width: 26rem; font-size: 1rem }
+.verse small { display: block; font-style: normal; font-family: var(--util); letter-spacing: .2em; text-transform: uppercase; font-size: .72rem; margin-top: 6px }
+.kicker { font-family: var(--util); text-transform: uppercase; letter-spacing: .24em; font-size: .78rem; color: var(--votive) }
+.menu { display: grid; gap: 10px; justify-items: center; margin-top: 36px }
+.eplist { margin: 44px auto 0; max-width: 30rem; text-align: left; border-top: 1px solid var(--rule) }
+.eprow { display: flex; gap: 14px; align-items: baseline; padding: 10px 2px; border-bottom: 1px solid var(--rule) }
+.eprow .n { font-family: var(--util); letter-spacing: .12em; color: var(--ink-dim); font-size: .85rem; width: 4.2em; flex: none; font-variant-numeric: tabular-nums }
+.eprow .t { flex: 1; min-width: 0; font-family: var(--display); font-style: italic }
+.eprow .s { font-family: var(--util); text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; color: var(--ink-dim) }
+.eprow .s.done { color: var(--votive) }
+.sync { margin-top: 26px; font-family: var(--util); letter-spacing: .12em; text-transform: uppercase; font-size: .72rem; color: var(--ink-dim) }
+.card { min-height: 62vh; display: grid; place-content: center; text-align: center; gap: 14px }
+.card .epno { font-family: var(--util); letter-spacing: .3em; text-transform: uppercase; font-size: .82rem; color: var(--ink-dim) }
+.card .eptitle { font-family: var(--display); font-style: italic; font-size: clamp(2rem, 7vw, 3.4rem); line-height: 1.05; margin: 0; text-wrap: balance }
+.card .dates { font-family: var(--util); letter-spacing: .14em; text-transform: uppercase; font-size: .8rem; color: var(--votive) }
+.card .log { max-width: 28rem; margin: 6px auto 0; color: var(--ink-dim); font-style: italic }
+.prev h2, .endc h2 { font-family: var(--display); font-weight: 400; font-style: italic; font-size: 2rem; margin: 0 0 18px }
+.prev ul, .endc ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px }
+.prev li { padding-left: 18px; border-left: 2px solid var(--votive-dim) }
+.endc li { display: flex; gap: 12px; align-items: baseline }
+.endc li::before { content: ""; width: 7px; height: 7px; background: var(--votive); flex: none; transform: translateY(-2px) }
+.next-time { margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--rule) }
+.next-time p { font-family: var(--display); font-style: italic; margin: 0 0 .5em; color: var(--ink-dim) }
+.tagline { font-family: var(--display); font-style: italic; font-size: 1.3rem; margin: 28px 0 }
+.note { color: var(--ink-dim); font-size: .95rem }
+
+/* Drawer */
+.scrim { position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 20 }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(30rem, 100%); background: var(--night-2); z-index: 21; overflow-y: auto;
+  border-left: 1px solid var(--rule); padding: calc(18px + env(safe-area-inset-top, 0px)) max(18px, env(safe-area-inset-right, 0px)) calc(28px + env(safe-area-inset-bottom, 0px)) 18px }
+.drawer h3 { font-family: var(--display); font-style: italic; font-weight: 400; font-size: 1.7rem; margin: 0 }
+.dhead { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 14px }
+.tabs { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 16px; border-bottom: 1px solid var(--rule) }
+.tab { background: none; border: 0; border-bottom: 2px solid transparent; padding: 6px 10px; font-family: var(--util); text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; color: var(--ink-dim) }
+.tab[aria-selected="true"] { color: var(--votive); border-color: var(--votive) }
+.entry { padding: 12px 0; border-bottom: 1px solid var(--rule) }
+.entry h4 { margin: 0 0 4px; font-family: var(--util); text-transform: uppercase; letter-spacing: .1em; font-size: .9rem; font-weight: 600 }
+.entry .src { font-family: var(--util); letter-spacing: .1em; font-size: .7rem; color: var(--ink-dim); text-transform: uppercase }
+.entry p { margin: 4px 0 0; font-size: 1rem }
+.empty { color: var(--ink-dim); font-style: italic }
+.confirm { border: 1px solid var(--wound); padding: 14px; margin-top: 12px }
+.confirm p { margin: 0 0 10px }
+textarea { width: 100%; min-height: 7rem; background: var(--night); color: var(--ink); border: 1px solid var(--rule); font-family: var(--lcd); font-size: 1rem; padding: 8px }
+.sect { margin-top: 26px }
+.sect h5 { font-family: var(--util); text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; color: var(--votive); margin: 0 0 8px }
+</style>
+
+<header class="bar" id="bar">
+  <div class="bar-in">
+    <button class="bug" id="home" aria-label="Back to title screen"><b>The Hard</b> Saying</button>
+    <div class="ep-label" id="eplabel"></div>
+    <button class="bar-btn" id="jbtn">Journal</button>
+    <button class="bar-btn" id="mbtn">Menu</button>
+  </div>
+</header>
+<div class="duel" id="duel" hidden></div>
+<main><div class="col" id="stage"></div></main>
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Journal and menu"></aside>
+
+<script>
+const EPISODES = __EPISODES__;
+const LS_KEY = 'hard-saying-save-v1', LS_THEME = 'hard-saying-theme';
+const SEASON_WORDS = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+const EP_WORDS = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen', 'Twenty', 'Twenty-One', 'Twenty-Two'];
+const DEFAULTS = { 'resolve.jack': 7, 'resolve.lena': 7 };
+const $ = id => document.getElementById(id);
+const clone = o => JSON.parse(JSON.stringify(o));
+const EP = Object.fromEntries(EPISODES.map(e => [e.id, e]));
+
+function fresh() {
+  return { v: 1, updatedAt: 0, vars: {}, journal: {}, keys: [], log: [], logs: {}, completed: [], cur: null, checkpoint: null, started: null };
+}
+let S = fresh();
+let ui = { drawer: null, tab: 'person', confirm: null, whisper: null };
+
+/* ---------- state helpers ---------- */
+function get(name) { return name in S.vars ? S.vars[name] : (name in DEFAULTS ? DEFAULTS[name] : 0) }
+function applySet(set) {
+  for (const [k, v] of Object.entries(set || {})) {
+    if (typeof v === 'string' && /^[+-]\d+$/.test(v)) {
+      let n = (Number(get(k)) || 0) + parseInt(v, 10);
+      if (k.startsWith('resolve.')) n = Math.max(0, Math.min(10, n));
+      S.vars[k] = n;
+    } else S.vars[k] = v;
+  }
+}
+function lit(s) {
+  s = s.trim();
+  if (/^-?\d+(\.\d+)?$/.test(s)) return Number(s);
+  if (s === 'true') return true; if (s === 'false') return false;
+  return s.replace(/^["'“”]|["'“”]$/g, '');
+}
+function atom(a) {
+  a = a.trim();
+  const m = a.match(/^(!?)([A-Za-z_][\w.]*)\s*(?:(==|!=|>=|<=|>|<)\s*(.+))?$/);
+  if (!m) return false;
+  const v = get(m[2]);
+  if (!m[3]) return m[1] ? !v : !!v;
+  const r = lit(m[4]);
+  switch (m[3]) { case '==': return v == r; case '!=': return v != r; case '>=': return v >= r; case '<=': return v <= r; case '>': return v > r; case '<': return v < r }
+}
+function test(expr) { if (!expr) return true; return expr.split('||').some(d => d.split('&&').every(atom)) }
+
+function addJournal(list, epId) {
+  for (const j of list || []) {
+    if (!test(j.if)) continue;
+    const key = j.kind + ':' + (j.id || j.title);
+    const prev = S.journal[key];
+    S.journal[key] = { kind: j.kind, title: j.title, text: j.text, ep: epId, t: prev ? prev.t : Date.now(), u: Date.now() };
+  }
+}
+
+/* ---------- text ---------- */
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])) }
+function fmt(s) { return esc(s).replace(/\*([^*\n]+)\*/g, '<em>$1</em>') }
+function renderItems(items) {
+  let h = '';
+  for (const b of items || []) {
+    if (typeof b === 'string') { h += `<p>${fmt(b)}</p>`; continue }
+    if (!b || typeof b !== 'object') continue;
+    if (!b.type) { const ok = test(b.if); const t = ok ? b.text : b.else; if (t) h += `<p>${fmt(t)}</p>`; continue }
+    if (b.if && !test(b.if)) continue;
+    if (b.type === 'break') h += `<div class="brk" aria-hidden="true">· · ·</div>`;
+    else if (b.type === 'sms') h += `<div class="ins"><div class="phone" role="figure" aria-label="Text message"><div class="phone-top"><span>Inbox</span><span>${esc(b.time || '')}</span></div><div class="lcd"><span class="from">${esc(b.from)}:</span>${esc(b.text)}</div></div></div>`;
+    else if (b.type === 'fb') h += `<div class="ins"><div class="fb" role="figure" aria-label="Facebook post"><span class="nm">${esc(b.name)}</span> ${fmt(b.text)}${b.meta ? `<div class="meta">${esc(b.meta)}</div>` : ''}</div></div>`;
+    else if (b.type === 'aim') h += `<div class="ins"><div class="aim" role="figure" aria-label="AIM away message"><div class="tb">Away Message — ${esc(b.name)}</div><div class="bd">${fmt(b.text)}</div></div></div>`;
+    else if (b.type === 'doc') h += `<div class="ins"><div class="doc" role="figure">${b.title ? `<h4>${esc(b.title)}</h4>` : ''}<div>${fmt(b.text)}</div></div></div>`;
+  }
+  return h;
+}
+
+/* ---------- persistence ---------- */
+const sync = { db: null, ref: null, mode: 'local', busy: false, dirty: false, timer: null };
+function readLocal() { try { const t = localStorage.getItem(LS_KEY); return t ? JSON.parse(t) : null } catch { return null } }
+function writeLocal() { try { localStorage.setItem(LS_KEY, JSON.stringify(S)) } catch {} }
+function save() { S.updatedAt = Date.now(); writeLocal(); queueRemote() }
+function queueRemote() { if (!sync.ref) return; clearTimeout(sync.timer); sync.timer = setTimeout(pushRemote, 700) }
+function remoteBody() {
+  const cur = S.cur && EP[S.cur.ep];
+  return {
+    updatedAt: S.updatedAt,
+    summary: { current: S.cur ? { ep: S.cur.ep, scene: S.cur.scene, stage: S.cur.stage, title: cur ? cur.title : '' } : null, completed: S.completed },
+    state: S
+  };
+}
+async function pushRemote() {
+  if (!sync.ref) return;
+  if (sync.busy) { sync.dirty = true; return }
+  sync.busy = true; sync.dirty = false;
+  try { await sync.ref.set(remoteBody()); setSync('account') }
+  catch (e) {
+    if (e && e.code === 'invalid_argument') { sync.ref = null; setSync('local') }
+    else if (e && e.code === 'unavailable') { sync.dirty = true }
+    else setSync('error');
+  }
+  sync.busy = false;
+  if (sync.dirty && sync.ref) setTimeout(pushRemote, 1200);
+}
+async function archiveLog(epId, entries) {
+  if (!sync.ref) return;
+  try { await sync.db.doc('saves/main/log/' + epId).set({ ep: epId, entries, updatedAt: Date.now() }) } catch {}
+}
+function setSync(m) { sync.mode = m; const el = $('syncline'); if (el) el.textContent = syncText() }
+function syncText() {
+  return { account: 'Saved to your Claude account · follows you across browsers', local: 'Saved in this browser only', error: 'Account save failed · saved in this browser', checking: 'Connecting to your save…' }[sync.mode];
+}
+async function initRemote() {
+  if (!window.claude || !window.claude.use) { setSync('local'); return }
+  setSync('checking');
+  try {
+    const db = await window.claude.use('db');
+    if (!db) { setSync('local'); return }
+    sync.db = db;
+    const ref = db.doc('saves/main');
+    const snap = await ref.get();
+    sync.ref = ref;
+    if (snap.exists) {
+      const r = snap.data();
+      if (r && r.state && (r.updatedAt || 0) > (S.updatedAt || 0)) { S = Object.assign(fresh(), clone(r.state)); writeLocal(); render() }
+      else if ((S.updatedAt || 0) > (r.updatedAt || 0)) pushRemote();
+      setSync('account');
+    } else if (S.updatedAt) { await pushRemote() } else setSync('account');
+  } catch (e) { sync.ref = null; setSync('local') }
+}
+
+/* ---------- flow ---------- */
+function epIndex(id) { return EPISODES.findIndex(e => e.id === id) }
+function nextEpisode() { return EPISODES.find(e => !S.completed.includes(e.id)) }
+function inProgress() { return S.cur && !S.completed.includes(S.cur.ep) && EP[S.cur.ep] ? S.cur : null }
+
+function startEpisode(id) {
+  const ep = EP[id];
+  S.checkpoint = { ep: id, vars: clone(S.vars), journal: clone(S.journal), keys: clone(S.keys), log: clone(S.log) };
+  const prev = (ep.previously || []).filter(p => test(p.if));
+  S.cur = { ep: id, stage: prev.length ? 'previously' : 'card', scene: null, applied: null, choice: null };
+  if (!S.started) S.started = Date.now();
+  save(); render(true);
+}
+function restartEpisode() {
+  const c = S.checkpoint; if (!c || !S.cur || c.ep !== S.cur.ep) return;
+  S.vars = c.vars; S.journal = c.journal; S.keys = c.keys; S.log = c.log;
+  S.cur = null; ui.confirm = null; closeDrawer(); startEpisode(c.ep);
+}
+function enterScene(id) {
+  const ep = EP[S.cur.ep], sc = ep.scenes[id];
+  S.cur.scene = id; S.cur.stage = 'scene'; S.cur.choice = null;
+  if (S.cur.applied !== id) { applySet(sc.set); addJournal(sc.journal, ep.id); S.cur.applied = id }
+  ui.whisper = null;
+  save(); render(true);
+}
+function choose(i) {
+  const ep = EP[S.cur.ep], sc = ep.scenes[S.cur.scene], c = visibleChoices(sc)[i];
+  if (!c) return;
+  applySet(c.set); addJournal(c.journal, ep.id);
+  S.log.push({ ep: ep.id, scene: S.cur.scene, choice: c.text, key: c.key || null, t: Date.now() });
+  if (c.key) S.keys.push({ ep: ep.id, text: c.key });
+  if (!c.response || !c.response.length) { enterScene(c.goto); if (c.cue) { ui.whisper = c.cue; render(false) } return }
+  S.cur.stage = 'response'; S.cur.choice = { text: c.text, response: c.response, cue: c.cue || null, goto: c.goto };
+  ui.whisper = c.cue || null;
+  save(); render(false);
+  const r = $('resp'); if (r) r.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+}
+function visibleChoices(sc) { return (sc.choices || []).filter(c => test(c.if)) }
+function endEpisode() {
+  const id = S.cur.ep;
+  if (!S.completed.includes(id)) S.completed.push(id);
+  const entries = S.log.filter(l => l.ep === id);
+  S.logs[id] = entries; S.log = S.log.filter(l => l.ep !== id);
+  S.checkpoint = null; S.cur.stage = 'end';
+  save(); archiveLog(id, entries); render(true);
+}
+
+/* ---------- render ---------- */
+function epTag(ep) { return `S${ep.season} · E${ep.episode}` }
+function render(top) {
+  closeDrawerIfStale();
+  const st = $('stage'), cur = inProgress() || (S.cur && S.cur.stage === 'end' ? S.cur : null);
+  $('duel').hidden = true;
+  if (!ui.view && cur) ui.view = 'play';
+  if (ui.view !== 'play' || !cur) { $('eplabel').textContent = ''; st.innerHTML = titleScreen(); bindTitle(); if (top) scrollTo(0, 0); return }
+  const ep = EP[cur.ep];
+  $('eplabel').textContent = `${epTag(ep)} — ${ep.title}`;
+  if (cur.stage === 'previously') st.innerHTML = previously(ep);
+  else if (cur.stage === 'card') st.innerHTML = titleCard(ep);
+  else if (cur.stage === 'end') st.innerHTML = endCard(ep);
+  else { ui.anim = !!top; st.innerHTML = sceneView(ep, cur) }
+  bindStage();
+  if (top) scrollTo(0, 0);
+}
+function titleScreen() {
+  const ip = inProgress(), nx = nextEpisode();
+  let btns = '';
+  if (ip) btns += `<button class="go" data-a="resume">Continue · ${epTag(EP[ip.ep])}</button>`;
+  else if (nx) btns += `<button class="go" data-a="start" data-ep="${nx.id}">${S.completed.length ? 'Play' : 'Begin'} · ${epTag(nx)} “${esc(nx.title)}”</button>`;
+  else btns += `<p class="note">You’re caught up. The writers’ room is working on the next episode — tell Claude when you’re ready for it.</p>`;
+  const rows = EPISODES.map(e => {
+    const done = S.completed.includes(e.id), now = ip && ip.ep === e.id;
+    return `<div class="eprow"><span class="n">${epTag(e)}</span><span class="t">${esc(e.title)}</span><span class="s ${done ? 'done' : ''}">${done ? 'Watched' : now ? 'In progress' : 'New'}</span></div>`;
+  }).join('');
+  return `<section class="title-screen fade">
+    <div class="kicker">A drama in episodes · Fall 2009</div>
+    <h1 class="show" style="margin-top:18px">The Hard <i>Saying</i></h1>
+    <p class="verse">“This is a hard saying; who can listen to it?”<small>John 6:60</small></p>
+    <div class="menu">${btns}</div>
+    <div class="eplist">${rows}</div>
+    <div class="sync" id="syncline">${syncText()}</div>
+  </section>`;
+}
+function previously(ep) {
+  const lines = (ep.previously || []).filter(p => test(p.if));
+  return `<section class="prev fade"><div class="kicker">Previously on</div><h2>The Hard Saying</h2>
+    <ul>${lines.map(l => `<li>${fmt(l.text)}</li>`).join('')}</ul>
+    <button class="go" data-a="card">Continue</button></section>`;
+}
+function titleCard(ep) {
+  return `<section class="card fade">
+    <div class="epno">Season ${SEASON_WORDS[ep.season] || ep.season} · Episode ${EP_WORDS[ep.episode] || ep.episode}</div>
+    <h2 class="eptitle">${esc(ep.title)}</h2>
+    <div class="dates">${esc(ep.dates || '')}</div>
+    <p class="log">${fmt(ep.logline || '')}</p>
+    <div><button class="go" data-a="begin">Roll episode</button></div></section>`;
+}
+function duelHud(ep, sc) {
+  const d = sc.duel && ep.duels && ep.duels[sc.duel];
+  const el = $('duel');
+  if (!d) { el.hidden = true; return }
+  const pips = n => { n = Math.max(0, Math.min(5, Number(n) || 0)); return Array.from({ length: 5 }, (_, i) => `<span class="pip ${i < n ? 'on' : ''}"></span>`).join('') };
+  el.innerHTML = `<div class="duel-in"><div class="duel-title">Argument · ${esc(d.title)} <span>— ${esc(d.topic || '')}</span></div>
+    ${['rigor', 'wit', 'heart'].map(a => `<div class="meter">${a}<span class="pips" aria-label="${a} ${get('duel.' + sc.duel + '.' + a)}">${pips(get('duel.' + sc.duel + '.' + a))}</span></div>`).join('')}</div>`;
+  el.hidden = false;
+}
+function sceneView(ep, cur) {
+  const sc = ep.scenes[cur.scene];
+  if (!sc) return `<p class="empty">This scene is missing. Open the menu to restart the episode.</p>`;
+  duelHud(ep, sc);
+  let h = `<article class="${ui.anim ? 'fade' : ''}"><div class="chyron">${esc(sc.slug)}</div>`;
+  if (sc.music) h += `<div class="cue">${esc(sc.music)}</div>`;
+  h += `<div class="prose">${renderItems(sc.body)}</div>`;
+  if (cur.stage === 'response' && cur.choice) {
+    h += `<div id="resp" class="${ui.anim ? '' : 'fade'}"><div class="chosen">${esc(cur.choice.text)}</div>`;
+    if (ui.whisper) h += `<div class="whisper">${esc(ui.whisper)}</div>`;
+    h += `<div class="prose response">${renderItems(cur.choice.response)}</div>`;
+    h += `<button class="go" data-a="goto">Continue</button></div>`;
+  } else {
+    if (ui.whisper) h += `<div class="whisper">${esc(ui.whisper)}</div>`;
+    const ch = visibleChoices(sc);
+    if (ch.length) h += `<div class="choices" role="group" aria-label="What does Jack do?">${ch.map((c, i) => `<button class="choice" data-a="choose" data-i="${i}">${c.tag ? `<span class="tag">${esc(c.tag)}</span>` : ''}<span>${fmt(c.text)}</span></button>`).join('')}</div>`;
+    else if (sc.end) h += `<button class="go" data-a="end">End of episode</button>`;
+    else if (sc.next) h += `<button class="go" data-a="next">Continue</button>`;
+  }
+  return h + `</article>`;
+}
+function endCard(ep) {
+  const keys = (S.logs[ep.id] || []).filter(l => l.key);
+  const nx = nextEpisode();
+  return `<section class="endc fade">
+    <div class="kicker">${epTag(ep)} · End of episode</div>
+    <h2 style="margin-top:10px">${esc(ep.title)}</h2>
+    ${keys.length ? `<div class="sect"><h5>What you chose</h5><ul>${keys.map(k => `<li><span>${fmt(k.key)}</span></li>`).join('')}</ul></div>` : ''}
+    ${ep.endCard && ep.endCard.tag ? `<p class="tagline">${fmt(ep.endCard.tag)}</p>` : ''}
+    ${ep.endCard && ep.endCard.nextTime && ep.endCard.nextTime.length ? `<div class="next-time"><div class="kicker" style="margin-bottom:12px">Next time on The Hard Saying</div>${ep.endCard.nextTime.map(t => `<p>${fmt(t)}</p>`).join('')}</div>` : ''}
+    <div class="sect"><p class="note">This episode is locked in. ${nx ? '' : 'When you’re ready for the next one, tell Claude: the writers’ room will read your save and build the next episode on the path you took.'}</p>
+    <div class="row">${nx ? `<button class="go" data-a="start" data-ep="${nx.id}">Play ${epTag(nx)}</button>` : ''}<button class="ghost" data-a="title">Title screen</button><button class="ghost" data-a="journal">Open journal</button></div></div>
+  </section>`;
+}
+function bindTitle() {
+  $('stage').querySelectorAll('[data-a]').forEach(b => b.onclick = () => {
+    const a = b.dataset.a;
+    if (a === 'resume') { ui.view = 'play'; render(true) }
+    if (a === 'start') { ui.view = 'play'; startEpisode(b.dataset.ep) }
+  });
+}
+function bindStage() {
+  $('stage').querySelectorAll('[data-a]').forEach(b => b.onclick = () => {
+    const a = b.dataset.a, ep = EP[S.cur.ep];
+    if (a === 'card') { S.cur.stage = 'card'; save(); render(true) }
+    else if (a === 'begin') enterScene(ep.start);
+    else if (a === 'choose') choose(Number(b.dataset.i));
+    else if (a === 'goto') { const g = S.cur.choice.goto; enterScene(g) }
+    else if (a === 'next') enterScene(ep.scenes[S.cur.scene].next);
+    else if (a === 'end') endEpisode();
+    else if (a === 'start') { ui.view = 'play'; startEpisode(b.dataset.ep) }
+    else if (a === 'title') { ui.view = 'title'; render(true) }
+    else if (a === 'journal') openDrawer('journal');
+  });
+}
+
+/* ---------- drawer: journal + menu ---------- */
+function openDrawer(kind) { ui.drawer = kind; ui.confirm = null; drawDrawer(); $('drawer').hidden = false; $('scrim').hidden = false; $('drawer').focus?.() }
+function closeDrawer() { ui.drawer = null; $('drawer').hidden = true; $('scrim').hidden = true }
+function closeDrawerIfStale() { if (ui.drawer) drawDrawer() }
+function drawDrawer() {
+  const d = $('drawer');
+  if (ui.drawer === 'journal') {
+    const tabs = [['person', 'People'], ['clue', 'Clues'], ['note', 'Notes'], ['story', 'Story so far']];
+    let body = '';
+    if (ui.tab === 'story') {
+      const byEp = {};
+      for (const k of S.keys) (byEp[k.ep] = byEp[k.ep] || []).push(k.text);
+      body = Object.keys(byEp).length ? Object.entries(byEp).map(([e, ks]) => `<div class="sect"><h5>${EP[e] ? epTag(EP[e]) + ' · ' + esc(EP[e].title) : esc(e)}</h5>${ks.map(t => `<div class="entry"><p>${fmt(t)}</p></div>`).join('')}</div>`).join('') : `<p class="empty">Nothing yet. Your biggest choices collect here.</p>`;
+    } else {
+      const items = Object.values(S.journal).filter(j => j.kind === ui.tab).sort((a, b) => b.u - a.u);
+      body = items.length ? items.map(j => `<div class="entry"><h4>${esc(j.title)}</h4><div class="src">${EP[j.ep] ? epTag(EP[j.ep]) : ''}</div><p>${fmt(j.text)}</p></div>`).join('') : `<p class="empty">${{ person: 'No one yet. People Jack meets get a page here.', clue: 'No clues yet. Keep your eyes open.', note: 'No notes yet.' }[ui.tab]}</p>`;
+    }
+    d.innerHTML = `<div class="dhead"><h3>Jack’s Journal</h3><button class="bar-btn" data-d="close">Close</button></div>
+      <div class="tabs" role="tablist">${tabs.map(([k, l]) => `<button class="tab" role="tab" aria-selected="${ui.tab === k}" data-tab="${k}">${l}</button>`).join('')}</div>${body}`;
+  } else {
+    const ip = inProgress();
+    const canRestart = ip && S.checkpoint && S.checkpoint.ep === ip.ep;
+    d.innerHTML = `<div class="dhead"><h3>Menu</h3><button class="bar-btn" data-d="close">Close</button></div>
+      <div class="sect"><h5>Display</h5><div class="row"><button class="ghost" data-d="theme" data-v="dark">Dark</button><button class="ghost" data-d="theme" data-v="light">Light</button><button class="ghost" data-d="theme" data-v="">Match device</button></div></div>
+      <div class="sect"><h5>Episode</h5>${canRestart ? `<p class="note">You can replay ${epTag(EP[ip.ep])} from its beginning until you finish it. Once it ends, it’s locked.</p>
+        ${ui.confirm === 'restart' ? `<div class="confirm"><p>Restart ${epTag(EP[ip.ep])}? Everything you chose in this episode is undone.</p><div class="row"><button class="go" style="margin:0" data-d="restart-yes">Restart episode</button><button class="ghost" data-d="cancel">Keep playing</button></div></div>` : `<button class="ghost" data-d="restart">Restart this episode</button>`}` : `<p class="note">No episode in progress. Finished episodes are locked.</p>`}</div>
+      <div class="sect"><h5>Save</h5><p class="note" id="syncline2">${syncText()}</p>
+        <p class="note">Backup code: copy it to move your save by hand if your account save is unavailable.</p>
+        <div class="row"><button class="ghost" data-d="copy">Copy save code</button><button class="ghost" data-d="import">Paste a save code</button></div>
+        ${ui.confirm === 'import' ? `<div class="confirm"><p>Paste a save code. It replaces your current progress.</p><textarea id="impcode" aria-label="Save code"></textarea><div class="row" style="margin-top:8px"><button class="go" style="margin:0" data-d="import-yes">Load save</button><button class="ghost" data-d="cancel">Cancel</button></div><p class="note" id="impmsg"></p></div>` : ''}
+        ${ui.confirm === 'copied' ? `<p class="note">Copied.</p>` : ''}${ui.confirm === 'copyfail' ? `<textarea readonly aria-label="Save code">${esc(saveCode())}</textarea>` : ''}</div>`;
+  }
+  d.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { ui.tab = b.dataset.tab; drawDrawer() });
+  d.querySelectorAll('[data-d]').forEach(b => b.onclick = () => {
+    const a = b.dataset.d;
+    if (a === 'close') closeDrawer();
+    else if (a === 'theme') { setTheme(b.dataset.v) }
+    else if (a === 'restart') { ui.confirm = 'restart'; drawDrawer() }
+    else if (a === 'restart-yes') restartEpisode();
+    else if (a === 'cancel') { ui.confirm = null; drawDrawer() }
+    else if (a === 'copy') { navigator.clipboard.writeText(saveCode()).then(() => { ui.confirm = 'copied'; drawDrawer() }, () => { ui.confirm = 'copyfail'; drawDrawer() }) }
+    else if (a === 'import') { ui.confirm = 'import'; drawDrawer() }
+    else if (a === 'import-yes') {
+      try { const s = JSON.parse(decodeURIComponent(escape(atob($('impcode').value.trim())))); if (!s || s.v !== 1) throw 0; S = Object.assign(fresh(), s); save(); ui.view = 'title'; closeDrawer(); render(true) }
+      catch { $('impmsg').textContent = 'That code didn’t load. Copy the whole code and try again.' }
+    }
+  });
+}
+function saveCode() { return btoa(unescape(encodeURIComponent(JSON.stringify(S)))) }
+function setTheme(v) {
+  if (v) document.documentElement.setAttribute('data-theme', v); else document.documentElement.removeAttribute('data-theme');
+  try { localStorage.setItem(LS_THEME, v) } catch {}
+}
+
+$('home').onclick = () => { ui.view = 'title'; closeDrawer(); render(true) };
+$('jbtn').onclick = () => ui.drawer === 'journal' ? closeDrawer() : openDrawer('journal');
+$('mbtn').onclick = () => ui.drawer === 'menu' ? closeDrawer() : openDrawer('menu');
+$('scrim').onclick = closeDrawer;
+addEventListener('keydown', e => { if (e.key === 'Escape' && ui.drawer) closeDrawer() });
+
+function start(data) {
+  try { const t = localStorage.getItem(LS_THEME); if (t === null) setTheme('dark'); else if (t) setTheme(t) } catch { setTheme('dark') }
+  const local = readLocal();
+  if (data && data.S) S = Object.assign(fresh(), data.S);
+  else if (local) S = Object.assign(fresh(), local);
+  ui.view = 'title';
+  render(true);
+  initRemote();
+}
+const hot = window.claude && window.claude.hot;
+if (hot && hot.snapshot) { try { hot.snapshot(() => ({ S })) } catch {} }
+if (hot && hot.ready) hot.ready(start); else start((hot && hot.data) || {});
+</script>
