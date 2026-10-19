@@ -1,0 +1,599 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "MONDAY · 3:07 AM · DELGADO HALL, THE LAWN BY THE LAGOON",
+   "set": {
+    "resolve.lena": 6,
+    "e2_laney_knows_surname": true
+   },
+   "body": [
+    "The alarm doesn’t ring so much as happen to the building: a horn like a goose being audited, a strobe stuttering in every hallway, and three hundred and ten freshmen pouring down the stairwells in whatever they sleep in. Out on the lawn, Delgado blinks white over the Lagoon like a ship in trouble. Fog to the knees. The eucalyptus drips on everybody with real commitment, and the grass squeaks.",
+    "Jack is barefoot, in basketball shorts and the gray Cardinal Mooney hoodie, the RAZR in his fist out of pure habit. It buzzes.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "r u on fire. nonna saw california on the news. she says st florian is the fire one dont forget",
+     "time": "3:09 AM"
+    },
+    "On the lobby steps Priya, in a Fremont High hoodie, uses the air horn for the first time in recorded history — one flat, enormous blast — and three hundred people shut up. A fresh laminate is taped to the glass door behind her: COVER YOUR COUGH. H1N1 DOES NOT CARE ABOUT YOUR FEELINGS. “FOURTH FLOOR! PRUITT! TRAN! VANCE! *COSTIGAN!*” Kevin Tran is at her elbow with a second clipboard, quarter-zip zipped to the sternum at three in the morning. Nobody has to tell Jack he volunteered.",
+    "“*Costigan*,” says a Texan voice twenty feet off, trying it on. “Like a cop show.”",
+    "The floor, in its natural habitat. Margot, fully dressed in black down to the Docs and visibly not cold, writing in her Moleskine by strobe light; she turns the page to show him — ALARM 1., underlined. “I’m establishing a baseline.” Theo in a navy silk robe, carrying the espresso machine like an infant out of a burning village. “I saved what mattered.” And last out of the building, Doug Pruitt: barefoot, out the fire door at the far east end, the wrong end of the hall from 420, with a pillow under his arm like a football. He looks down at the pillow as if somebody handed it to him on the way out.",
+    "The cop-show voice is Laney: sleep mask pushed up into her copper hair like a tiara, pearls, a camisole, and over it an oatmeal cardigan with holes at the elbows that Jack last saw on a porch. She throws both arms up. “My *fireman*.”",
+    "Beside her, arms crossed hard against the cold, is Lena: a faded black Saints T-shirt, the fleur-de-lis cracked from washing and WHO DAT across the chest, pajama pants, Keds with the laces dragging in the wet, her hair in a knot she clearly did in the dark and hasn’t forgiven.",
+    "“Youngstown,” she says.",
+    "“Broussard.”",
+    "Theo materializes at his shoulder, machine and all. “*Broussard*. *M.* Broussard. In the flesh.” Lena takes in the robe, the machine, the hair. “And you are?” “The roommate. I dared him.” “Then I blame you.” Theo turns to Jack and doesn’t lower his voice at all. “I like her. She’s mean.”"
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "alarm",
+     "title": "Fire alarm, 3:07 a.m.",
+     "text": "Everybody on the lawn in what they sleep in. Theo saved the espresso machine. Margot wrote ‘ALARM 1’ like it was a case number."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Some of us read the syllabus in July.”",
+     "tag": "Wit",
+     "set": {
+      "e2_alarm": "syllabus",
+      "trait.wit": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "She doesn’t miss a step. “Some of us read it *twice*. Bring a pen, Youngstown. I’ve seen your margins.” She has, on the porch, for most of an hour. Laney leans in like she’s passing a stock tip. “She has a highlighter system. It’s color-coded by *sin*.”",
+      "At 3:31 the strobes die and three hundred and ten people squeak back inside. Lena takes the east stairs two at a time and doesn’t look back. On the second-floor landing, she does."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "Pull off the Mooney hoodie and hold it out to her.",
+     "tag": "Sincerity",
+     "set": {
+      "e2_alarm": "hoodie",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1",
+      "rel.laney.warmth": "+1"
+     },
+     "response": [
+      "He’s out of it before he’s thought about it. Lena doesn’t take it. “I’ve got a cardigan. Laney’s wearing it.” Laney takes the hoodie instead and is inside it before anybody can object. It comes to her knees. She reads CARDINAL MOONEY upside down off her own chest and declares herself a cardinal. Jack stands there in a Browns T-shirt, getting rained on by a tree. Lena watches him be cold and says nothing about it, and the nothing carries.",
+      "At 3:31 the strobes die and three hundred and ten people squeak back inside, Jack in his T-shirt with his arms wrapped around himself. Lena takes the east stairs two at a time and doesn’t look back. On the second-floor landing, she does."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“How were the red beans?”",
+     "tag": "Candor",
+     "set": {
+      "e2_alarm": "beans",
+      "trait.candor": "+1",
+      "rel.lena.friction": "+1",
+      "rel.laney.warmth": "+1"
+     },
+     "response": [
+      "For half a second she’s slower than he has ever seen her, and he’d bet she’s finding the Anchor in it. Then: “Somebody had to feed this building.” Laney groans into the cardigan collar. “She made a *vat*. At eleven p.m. On a *Sunday*. The whole second floor smells like a Baptist potluck.”",
+      "At 3:31 the strobes die and three hundred and ten people squeak back inside. Lena takes the east stairs two at a time and doesn’t look back. On the second-floor landing, she does."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“How’s Archbishop?”",
+     "tag": "Charm",
+     "if": "trait.charm>=2",
+     "set": {
+      "e2_alarm": "archbishop",
+      "trait.charm": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "She laughs before she can stop it, a short undignified honk into the fog, and claps a hand over it, furious — at him, at the laugh, at the hour. “Pray for him. He confirmed a child.” Theo looks from one to the other. “Who’s Archbishop?” “Nobody,” they say together. Theo looks like a man who has found a conspiracy and means to be inside it by breakfast.",
+      "At 3:31 the strobes die and three hundred and ten people squeak back inside. Lena takes the east stairs two at a time and doesn’t look back. On the second-floor landing, she does."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "MONDAY · 12:51 PM · HOLLIS HALL, ROOM 302",
+   "set": {
+    "resolve.lena": 7
+   },
+   "body": [
+    "By noon the fog has burned off as if it had never been invented. The cloister walk along Hollis is red tile and arches, the bougainvillea dropping magenta faster than anybody could sweep it. Room 302: a long oak table scarred with other people’s initials, twelve chairs, a radiator that knocks in September for no reason anyone has found, and a window full of sea.",
+    "Jack is in the navy Goodwill blazer — a lifeguard at a funeral, per Theo. In his back pocket: Benedict XVI, *Spe Salvi*, the Ignatius edition, thin as a parish pamphlet, two dollars off the cart outside Driftwood Books on Sunday. For a bookmark, a holy card of the man himself, white cassock, both hands raised, a grandfather who has read everything you have and remembers it better.",
+    "Lena is already there. Of course she is: the chair at the head’s right hand, a faded green sundress, brown Justins crossed at the ankle, the syllabus annotated in three colors of ink, a fountain pen uncapped beside it like a drawn weapon. Jack takes the chair directly across from her. There is no other chair. There are nine other chairs.",
+    {
+     "type": "doc",
+     "title": "PHIL 9H · THE EXAMINED LIFE · Prof. A. C. Hale",
+     "text": "Week 1. Is anybody in there? Descartes, *Meditations* II; Ryle, *The Concept of Mind*, ch. 1; Aquinas, *Summa Theologiae* I, qq. 75–76.\nAttendance is compulsory. Agreement is not."
+    },
+    "A boy with a Central Valley twang drops in beside Jack with a Darwin-fish laptop and a copy of *The Consolations of Disbelief* so stuffed with Post-its it looks like it’s molting. “Caleb. Visalia. I’ve read it six times. I’m not proud.” He looks proud.",
+    "Jack sets *Spe Salvi* on the oak and the holy card slides half out. Lena’s eyes go to it like a cat’s to a moth. “You carry the Pope in your back pocket. Like a ticket stub.”",
+    "“I carry *this* Pope.” He means to stop there, and doesn’t. “Smartest man alive who’s also in charge of anything. Regensburg — best lecture anybody’s given in a university in fifty years, and nobody read past the part they were angry about. And this.” He taps it. “Section two. ‘The one who has hope lives differently.’ He put my whole religion in a sentence and then wrote forty-nine more sections to be polite.”",
+    "“I’d follow him into a burning building,” Lena says. “I just wouldn’t put him on my wall. His shoes are Prada.” “That’s a myth. The Vatican paper denied it, in print. They’re papal red. It’s *martyrs’* red.” She stares at him, pen suspended. “Lord. You’ve researched his *shoes*.” Beside him Caleb murmurs “Selah” — by reflex, the way another kid would say *touché* — and looks appalled at himself.",
+    "The rest come too fast to learn. A lean kid in a Mission San Jose sweatshirt, no water bottle on a warm day — “Yusuf. Fremont. Aerospace. It’s Ramadan, so if I pass out, put me on my side” — takes in the holy card and the fountain pen and says to nobody, “Oh, good. The Catholics are here.” A Palo Alto girl who has read the whole syllabus and resents everyone who hasn’t. A quiet kid hiding a chemistry textbook. Two lanky boys from San Diego with the same surname, haircut and hoodie, who are not related and are tired of saying so.",
+    "At 1:07 Adrian Hale comes in without hurrying, which is louder than hurrying. The linen jacket; the wine on the cuff, the same stain as yesterday, Jack would swear; reading glasses pushed up into the silver hair and forgotten. He sits at the head of the table, sets down nothing, and looks at no one.",
+    "“Prove to me you have a soul. You have ninety minutes and I’ve had lunch.”",
+    "Then he looks round the table, slowly, chair by chair. “Which of you is Youngstown? No —” His eyes stop on Jack’s left eyebrow. “— there you are. The nine pages. And you replied to *all*, Mr. Costigan. Brave or careless; we’ll find out. Miss Broussard replied to all of us to correct you, which I enjoyed rather more.”",
+    "He laces his fingers over his stomach. “We’ve met, the three of us, after a fashion. Yesterday, at the Anchor. A girl who left as though I’d set fire to her coffee, and a boy who went after her like a spaniel. I do love a roster.”",
+    "“I’d remembered something I left on the stove,” Lena says evenly, and her hand goes to the gold medal at her throat and closes on it.",
+    "Hale lets it go, with open pleasure, the way a man lets a fish run when he’s in no hurry at all. Under the window, the radiator knocks once."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Knew my face from the Anchor before he knew my name. Called me a spaniel."
+    },
+    {
+     "kind": "person",
+     "id": "caleb",
+     "title": "Caleb (PHIL 9H)",
+     "text": "Visalia. Has Hale’s book with forty Post-its in it. Says ‘Selah’ when he means ‘touché.’"
+    },
+    {
+     "kind": "person",
+     "id": "yusuf",
+     "title": "Yusuf (PHIL 9H)",
+     "text": "Fremont. Engineer. Fasting for Ramadan through a ninety-minute seminar and funnier than all of us."
+    }
+   ],
+   "next": "s03"
+  },
+  "s03": {
+   "slug": "MONDAY · 1:12 PM · HOLLIS HALL, ROOM 302",
+   "duel": "soul",
+   "set": {
+    "duel.soul.lena": "+1"
+   },
+   "body": [
+    "Hale doesn’t lecture; he gossips about the dead. “Descartes shut himself in a stove-heated room in Germany one winter and came out with two kinds of stuff: the body, which is a machine, and the mind, which is a ghost inside it pulling the levers. Very tidy. Nobody since has explained how a ghost pulls a lever.”",
+    "“Then Ryle, 1949. *The Concept of Mind*. ‘The dogma of the Ghost in the Machine.’ A visitor to Oxford is shown the colleges, the libraries, the playing fields, the laboratories, and at the end of the day he asks: yes, lovely, but where is the *University*?” He spreads his hands. “I spent a decade being the University and never once ran into it. That’s a category mistake, and you make it every time you say *soul*. So. Show me where it’s kept.”",
+    "Caleb goes first, Post-its fluttering. “Dennett. *Consciousness Explained*. There’s no theater in the head, no little guy watching the screen —” “Or explained *away*,” Hale murmurs, approving, as if a retriever had come back proudly with the wrong stick.",
+    "Yusuf, hands folded on the oak: “I’m fasting, Professor. My soul is the only part of me that isn’t hungry.” The table laughs, and Hale laughs with it, head back, a real laugh with Yorkshire somewhere under the Oxford, and writes it down.",
+    "“Nobody at this table believes in your ghost, Professor,” Lena says. “Aquinas says the soul is the *form* of the body. Not a passenger — the shape matter takes because it’s alive. Ryle spent a whole book beating up a Frenchman.”",
+    "Hale regards her over the glasses he isn’t wearing. Then he turns, unhurried. “And Youngstown? A ghost man or a form man?”"
+   ],
+   "choices": [
+    {
+     "text": "Side with her and push further: the intellect holds *triangle* and *justice*, which no organ can. Aquinas, *ST* I q.75 a.2.",
+     "tag": "Press",
+     "set": {
+      "duel.soul.rigor": "+1",
+      "rel.lena.warmth": "+1",
+      "rel.hale.friction": "+1"
+     },
+     "response": [
+      "“Form,” Jack says. “And she’s underselling it. I can hold *triangle* in my head — not this one or that one — and *justice*, which nobody’s ever weighed. No organ holds a universal. Aquinas, question seventy-five: the intellect has an act of its own. Call it what you like. It isn’t a ghost.”",
+      "“Two Thomists,” Hale says. “*Christ*.” Lena doesn’t look at Jack; her pen taps the table twice, which might be applause. “Universals are a grammar, Mr. Costigan, not a ghost. But it was nicely parsed.”"
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“You asked where it’s kept. Same place as your manners, Professor.”",
+     "tag": "Riposte",
+     "set": {
+      "duel.soul.wit": "+1",
+      "rel.hale.warmth": "+1"
+     },
+     "response": [
+      "“Nobody’s ever seen them,” Jack says, “but we’re assured they exist.” The room goes off like a dropped tray; Caleb laughs and then looks betrayed by it. Hale inclines his head a quarter inch, a fencer conceding the touch. “Ten minutes in and he’s gone for the man. Good. It saves time.”"
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "Augustine, *Confessions* X: he went looking inside his own memory and found palaces too big for his head.",
+     "tag": "Reframe",
+     "set": {
+      "duel.soul.rigor": "+1",
+      "rel.lena.friction": "+1",
+      "e2_soul_interior": true
+     },
+     "response": [
+      "“Neither. Augustine, *Confessions*, book ten. He goes looking for God in his own memory and gets lost in there — fields, caves, ‘spacious palaces,’ more rooms than any skull could hold. ‘I have become a question to myself.’ You want to know where it’s kept? It’s an inside with no floor plan.”",
+      "Hale’s eyebrows rise against what looks like his better judgment. “Rooms. How very Protestant of a Catholic.” Across the table Lena’s head has turned. It isn’t her answer. He watches her draw a neat line through something on her syllabus, in green."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“I can’t show you where it’s kept. I can tell you I’ve felt it go missing.”",
+     "tag": "Concede",
+     "set": {
+      "duel.soul.heart": "+1",
+      "rel.hale.trust": "+1",
+      "e2_soul_missing": true
+     },
+     "response": [
+      "Hale stops. It lasts about one second, which in Hale is a long time. “I can’t do a thing with that, Mr. Costigan.” The radiator knocks. “But it’s the first true thing anybody’s said today.” Lena looks at Jack across the table, a short straight look, and she’s the one who ends it."
+     ],
+     "goto": "s04"
+    }
+   ]
+  },
+  "s04": {
+   "slug": "MONDAY · 1:31 PM · HOLLIS HALL, ROOM 302",
+   "duel": "soul",
+   "body": [
+    "Hale goes to the window and tells the next part to the Pacific, low and confiding, the way you’d tell a ghost story to children you were fond of.",
+    "“Vermont. September 1848. The Rutland and Burlington Railroad is blasting a cut through rock near Cavendish, and the foreman is a capable, well-liked young man named Phineas Gage. He’s tamping powder into a drill hole with an iron bar — three feet seven inches, thirteen and a quarter pounds. The powder goes off.” He turns around. “The bar goes in under his left cheekbone, out through the top of his skull, and lands in the dirt yards behind him, greasy with what used to be the front of his brain.”",
+    "The Palo Alto girl makes a small noise. “He sits up in the oxcart. He *talks*. He greets the doctor: ‘Doctor, here is business enough for you.’ He lives. And afterwards —” He comes back to his chair and folds his hands. “His doctor wrote that his friends said he was ‘no longer Gage.’ Fitful. Profane. Impossible. Damage the brain, change the man. A soul that can be knocked out of a man with a railroad spike is not much of a soul.”",
+    "Jack’s hand has gone to his left eyebrow. He finds it there, his thumb on the white line, and takes it down and lays it flat on the oak.",
+    "The table has gone quiet in a different way. Across from him Lena is looking at his hand, not his face."
+   ],
+   "choices": [
+    {
+     "text": "Smash the piano and you haven’t disproved the pianist. Aquinas got there first: injure the organ and understanding is *impeded*.",
+     "tag": "Press",
+     "set": {
+      "duel.soul.rigor": "+1"
+     },
+     "response": [
+      "His voice comes out plainer than he means it to. “You break the piano, you haven’t disproved the pianist. You just don’t get music.” He keeps going. “And Aquinas beat your railroad to it. In this life the intellect works through images, and if the organ of the imagination is hurt, understanding is impeded. He names frenzy. Impeded isn’t gone.”",
+      "Hale looks delighted to be handed Aquinas against himself. “A soul that survives every injury by declining to do anything. Marvelous. The perfect civil servant.” Jack’s answer is hanging on by one hand. “Question eighty-four,” Lena says quietly, before he can find it. “Article seven.” He lets her."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“Then somebody still had to love whoever Gage was afterward.”",
+     "tag": "Heart",
+     "set": {
+      "duel.soul.heart": "+1",
+      "rel.lena.trust": "+1",
+      "e2_gage_mother": true
+     },
+     "response": [
+      "It comes out quiet and plain, in a voice he hasn’t used at this table. “Then whoever Gage was afterward, somebody still had to love that guy. His mother didn’t stop. If there was nothing left of him, what was she loving?”",
+      "Hale looks at him a while. “Her memory, Mr. Costigan.” And then, unexpectedly: “She didn’t stop, as it happens. He died in her house.” It doesn’t sound like a point for either of them. Across the table, Lena has stopped writing."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "Afterward Gage drove six-horse stagecoaches over the mountains in Chile. “I’ve seen Browns quarterbacks take less and retire.”",
+     "tag": "Riposte",
+     "set": {
+      "duel.soul.wit": "+1",
+      "rel.hale.warmth": "+1"
+     },
+     "response": [
+      "It’s a joke, mostly; it just comes out quieter than a joke should. “He went to Chile. Drove a six-horse coach over the mountains for years. I’ve seen Browns quarterbacks take less and retire.” The room laughs, glad to. “There’s a man in Melbourne who’s written an entire book agreeing with you about Chile,” Hale says, “which I find irritating. The Browns I’ll take on faith.”"
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“You were drinking a Bloody Mary at one-thirty on Sunday. When you order the second one, is that you or the vodka?”",
+     "tag": "Personal",
+     "cue": "Hale will remember that.",
+     "set": {
+      "duel.soul.wit": "+1",
+      "rel.hale.warmth": "+1",
+      "rel.hale.trust": "-1",
+      "e2_hale_jab": true
+     },
+     "response": [
+      "It comes out cold, which surprises Jack more than anybody. Hale’s smile arrives and stays, delighted and freezing at once. “Both, Mr. Costigan. And the second is always better company.”",
+      "Nobody moves. Caleb appears to have stopped breathing. Lena, under her breath, to the oak: “Lord.” Hale writes something in the margin of the roster, beside what Jack has to assume is his name, and doesn’t say what."
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s05": {
+   "slug": "MONDAY · 1:52 PM · HOLLIS HALL, ROOM 302",
+   "duel": "soul",
+   "set": {
+    "duel.soul.lena": "+1"
+   },
+   "body": [
+    "Hale pours himself water from a carafe nobody saw him bring, regards it with disappointment, and drinks it anyway. Then he sets the two of them on each other.",
+    {
+     "if": "e2_soul_interior",
+     "text": "“Miss Broussard says the soul is the body’s form. Mr. Costigan has rooms in his. A tenant, then, in a house too big for it.”"
+    },
+    {
+     "if": "e2_soul_missing && !e2_soul_interior",
+     "text": "“Miss Broussard says the soul is the body’s form. But Mr. Costigan’s goes missing. A thing that can leave is a tenant.”"
+    },
+    {
+     "if": "!e2_soul_interior && !e2_soul_missing",
+     "text": "“Mr. Costigan either agrees with Miss Broussard, which is cowardice, or has been too busy being charming to say, which is worse. Let me help. Mr. Costigan, you’ll defend the tenant — Aquinas lets the soul outlive its body; there’s your lease. Miss Broussard, evict him.” Lena lights up like somebody has tossed her a ball she’s been catching since grade school."
+    },
+    "“You can’t both be right,” Hale says. “Settle it. I’ll hold your coats.”",
+    "Lena turns to face Jack square, and he can see the rematch arrive in her at last. She reaches for cardigan sleeves she isn’t wearing and settles for squaring her syllabus against the oak.",
+    "“If the soul’s a tenant, the body’s a rental. And you know what people do with rentals. That’s how you get a whole culture that treats bodies like hotel rooms: check in, trash it, leave the key on the dresser.” This to Hale as much as to Jack. “I have nothing against anybody having a good time in a hotel, Professor. I’m against pretending nobody lives there. If I *am* my body, then what happens to it happens to *me*. Every time.” Back to Jack. “Your tenant’s a Cartesian, Costigan. Evict him or I will.”"
+   ],
+   "choices": [
+    {
+     "text": "“Then what survives death? Aquinas needs the soul to subsist on its own. He’s half on my side.”",
+     "tag": "Press",
+     "set": {
+      "duel.soul.rigor": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“Then what survives death? Aquinas needs the soul to subsist without the body, or there’s nobody home after the funeral. He’s half on my side.”",
+      "She doesn’t let him land. “Subsists *incomplete*. It wants the body back — it’s ‘naturally apt’ for it, his phrase. That’s why it’s the resurrection of the *body*, Costigan. We say so every time we start a rosary.” “Point to the lady,” Hale says. “Rigor to the gentleman. I’m enjoying this far more than my doctor would like.”"
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“She’s right. My side gets you Descartes, and Descartes gets you a body you can rent out.”",
+     "tag": "Concede",
+     "set": {
+      "duel.soul.heart": "+1",
+      "rel.lena.trust": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "Lena stops mid-breath. She had three more paragraphs loaded; he could see them stacked behind her teeth. She looks at him as though he’s slid something across the table that she now has to decide whether to keep. “Disappointing,” Hale says. “Do go on, Miss Broussard. He’s given you the floor.” She doesn’t use it right away."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“We’re both right, and he’s counting on us not to notice.” Turn on Hale together.",
+     "tag": "Alliance",
+     "set": {
+      "duel.soul.rigor": "+1",
+      "duel.soul.heart": "+1",
+      "rel.lena.warmth": "+1",
+      "rel.hale.warmth": "+1",
+      "e2_union": true
+     },
+     "response": [
+      "“Augustine’s rooms are in Aquinas’s house.” Lena takes it without a hitch — “The interior *is* the form, seen from inside” — and for ninety seconds they don’t fight each other at all: she hands him the *Summa*, he hands her book ten, she finishes his Augustine and he finishes her Aristotle, and Hale watches, chin on his fist, as two freshmen build something at him. “Oh, they’ve formed a *union*.”",
+      "Jack thinks, for no reason he could defend in this room, of his father’s Local 1112 jacket on the hook by the back door."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“Says the girl who walked out of the Anchor the second she saw a magazine. Was that your soul leaving, or just your body?”",
+     "tag": "Personal",
+     "cue": "Lena will remember that.",
+     "key": "You used the Anchor against Lena in front of Hale.",
+     "set": {
+      "duel.soul.wit": "+1",
+      "duel.soul.lena": "+1",
+      "rel.lena.friction": "+2",
+      "rel.lena.trust": "-2",
+      "resolve.jack": "-1",
+      "e2_lena_jab": true
+     },
+     "response": [
+      "It’s out before he’s finished deciding to say it. Lena goes still, and then polite, which is worse than anything she could have thrown. “I’d forgotten something on the stove, Mr. Costigan,” she says pleasantly, and her fingers find the medal at her throat and close on it.",
+      "The room’s sympathy comes about and fills on her side of the table like a sail. Hale, very softly: “Ah.” In the quiet Jack hears his own line again and wants it back more than he has wanted most things."
+     ],
+     "goto": "s06"
+    }
+   ]
+  },
+  "s06": {
+   "slug": "MONDAY · 2:09 PM · HOLLIS HALL, ROOM 302",
+   "duel": "soul",
+   "set": {
+    "duel.soul.lena": "+1"
+   },
+   "body": [
+    "Hale takes the glasses down off his head at last and pockets them, and somehow that’s how they know this is the one he came to make. His voice drops. It isn’t unkind, which is the worst of it.",
+    "“Every one of you who believes in a soul was told to by somebody who loved you before you could read. Your mother. Your grandmother. A nun with a felt board. That isn’t a proof. It’s an inheritance. Born in Thebes, you’d be on your knees to Zeus. Born in Riyadh — forgive me, Mr. Noorzai —” “You’re forgiven, Professor. It’s Fremont.” “— you’d face east. Your souls are *addresses*. I don’t say it to be cruel. I say it because not one of you chose, and you’re old enough now to notice.”",
+    {
+     "if": "e2_lena_jab",
+     "text": "Lena answers him without once looking down the table toward Jack."
+    },
+    "“That’s the genetic fallacy, Professor,” Lena says. “Where a belief comes from says nothing about whether it’s true. They teach it in Lincoln–Douglas. I was thirteen.” “And yet,” Hale says gently, “it’s true of you.” “It’s true of *me*,” Caleb says, too loud, red to the ears. “I got out.”",
+    "Nobody answers that. Then, one by one, as rooms do, they look at Jack."
+   ],
+   "choices": [
+    {
+     "text": "Newman: how a belief got into you says nothing about whether it’s true. And Hale got his from somebody too.",
+     "tag": "Press",
+     "key": "You told Hale he’d inherited his atheism too.",
+     "set": {
+      "duel.soul.rigor": "+1",
+      "rel.hale.friction": "+1",
+      "e2_soul_final": "press"
+     },
+     "response": [
+      "“Newman, *Grammar of Assent*. We believe most things the way you know there’s a coastline in the fog: a thousand small signs converging, not one proof. None of that cares where you first heard it.” Then, because it’s sitting right there: “I’d bet you got your atheism from your father too, Professor. You just got it by kicking.”",
+      "Hale stops. He looks at the window for exactly as long as it takes the radiator to knock twice. Then he’s brisk, all at once, a man gathering papers he hasn’t got. “The genetic fallacy cuts both ways. Well done. We’ll bleed it out on Wednesday.”"
+     ],
+     "goto": "s06v"
+    },
+    {
+     "text": "Tell him the truth: at sixteen, after his book, you tried to put it down.",
+     "tag": "Heart",
+     "cue": "Lena heard that.",
+     "key": "You told Hale that when you tried to leave, there was nowhere to go.",
+     "set": {
+      "duel.soul.heart": "+2",
+      "soul.grace": "+1",
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1",
+      "e2_john668": true,
+      "e2_soul_final": "heart"
+     },
+     "response": [
+      "Jack doesn’t make it clever. He hasn’t got clever in him right now.",
+      "“I didn’t get it from my parents,” he says. “I mean, I did. And at sixteen, after your book, I tried to put it down. A whole winter. I did everything right. I stopped going. I read you twice. And there was nowhere to go. Not a feeling — I’m not telling you about a feeling. I looked around for somewhere else to stand, and there wasn’t anywhere.”",
+      "Nobody moves. Out the window a gull hangs in the updraft off the cliff without flapping, as if it’s waiting too. When Hale speaks it’s quietly, and not to the room. “‘Lord, to whom shall we go.’ Yes. I know it. I was made to learn it.”",
+      "Across the table Lena has gone very still. She isn’t looking at Hale. She’s looking at Jack."
+     ],
+     "goto": "s06v"
+    },
+    {
+     "text": "“I was born in Youngstown, Professor. If I picked gods by geography, I’d have picked one with weather.”",
+     "tag": "Riposte",
+     "key": "You answered Hale’s best argument with a joke about the weather in Youngstown.",
+     "set": {
+      "duel.soul.wit": "+1",
+      "rel.hale.warmth": "+1",
+      "e2_soul_final": "wit"
+     },
+     "response": [
+      "The biggest laugh of the afternoon. Yusuf actually applauds, two flat claps, and the San Diego boys high-five across the Palo Alto girl. Hale smiles the book-jacket smile, devastating and unhurried, and says nothing at all, and it takes Jack a second too long to understand that he’s just lost the round."
+     ],
+     "goto": "s06v"
+    },
+    {
+     "text": "“That’s the best argument you’ve made. I don’t have an answer today.”",
+     "tag": "Concede",
+     "key": "You admitted Hale had made an argument you couldn’t answer — yet.",
+     "set": {
+      "duel.soul.heart": "+1",
+      "rel.hale.trust": "+1",
+      "soul.honesty": "+1",
+      "e2_soul_final": "concede"
+     },
+     "response": [
+      "Hale considers him. “Honesty. How disappointing. Wednesday, then.” But for the rest of the hour there’s something new in how he looks at Jack: the look of a man who has just been handed a real opponent. Under the table Lena’s boot finds his and kicks it, once. A reprimand or a salute; he can’t tell. From her face, she hasn’t decided either."
+     ],
+     "goto": "s06v"
+    }
+   ]
+  },
+  "s06v": {
+   "slug": "MONDAY · 2:24 PM · HOLLIS HALL, ROOM 302",
+   "duel": "soul",
+   "body": [
+    {
+     "if": "duel.soul.heart>=3",
+     "text": "Hale looks out at the sea until the quiet in the room starts to belong to it. Then he caps his pen. “Go away,” he says. “All of you. In a minute. First, your homework.”"
+    },
+    {
+     "if": "duel.soul.rigor>=3 && duel.soul.heart<=2",
+     "text": "“Mr. Costigan,” Hale says, “that was very nearly an argument.” From Hale it lands like a medal pinned on with a thumbtack. Across the table Lena’s chin comes up and stays up. She writes something in red across the top of her syllabus and underlines it twice, hard enough that he hears the nib. She was owed this one, and the set of her mouth says she knows it."
+    },
+    {
+     "if": "duel.soul.wit>=3 && duel.soul.rigor<=2 && duel.soul.heart<=2",
+     "text": "“Mr. Costigan has won the room and lost the point,” Hale says. “He’ll go into politics.” The room laughs again — at Jack this time, which is a different sound. Lena doesn’t laugh."
+    },
+    {
+     "if": "duel.soul.rigor<=2 && duel.soul.heart<=2 && duel.soul.wit<=2",
+     "text": "“Miss Broussard has won,” Hale says. “Mr. Costigan has *attended*.” Lena doesn’t smile. She caps her fountain pen with one small precise click, like a woman who expected exactly this and was raised too well to enjoy it in public. Jack finds he doesn’t mind losing to her nearly as much as he ought to."
+    },
+    "Hale stands, which is apparently the only warning they’ll ever get, and writes on the whiteboard in a hand like barbed wire.",
+    {
+     "type": "doc",
+     "title": "PHIL 9H — the whiteboard",
+     "text": "TWO PAGES. EVERY WEEK.\nProve the thing you least believe you can prove.\nSwap with your designated antagonist. Annotate each other in RED.\nI grade the annotations.\nDue at the start of class. Wednesday."
+    },
+    "“The papers themselves,” he says, capping the marker, “I mostly use to level the dog’s bowl.” He pairs them off without looking at the roster. The Palo Alto girl with the chemistry kid. “Mr. Hargrove, Mr. Noorzai. Heaven help you both.” A deconvert with forty Post-its and a man nine hours into a fast regard each other across the oak. The San Diego boys with each other, “as a mercy.” “We’re not —” “I know.”",
+    "He doesn’t turn his head for the last one. “Mr. Costigan. Miss Broussard. You’ve already found each other.”",
+    {
+     "if": "e2_lena_jab",
+     "text": "“I’m sure Mr. Costigan will be thorough,” Lena says — to Hale, not to Jack."
+    },
+    {
+     "if": "duel.soul.heart>=3",
+     "text": "Nobody moves until Yusuf does. Then it’s chairs and bags and the door, early, and the room empties out around the oak. Lena stays in her seat a second longer than anyone, looking at the table."
+    }
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "assignment",
+     "title": "Designated antagonists",
+     "text": "Hale paired us. Two pages a week, swapped, bled on in red. For the whole semester. I’m going to need more pens."
+    }
+   ],
+   "next": "s07"
+  },
+  "s07": {
+   "slug": "MONDAY · 2:31 PM · HOLLIS HALL, CLOISTER WALK",
+   "body": [
+    "On the cloister walk the heat comes up off the red tile as if it has been saving it. Across the Commons the Ferrer Tower’s carillon stumbles through the half hour, off-key, with the confidence of a man singing in the shower.",
+    "Caleb catches him at the arches, his book clutched to his chest. “He wrote you *back*? He knew the nine pages. I wrote him four letters. *Four.* I used a thesaurus on the third one. He never —” He laughs, to show it’s funny. It doesn’t come off. “One line,” Jack says. “Mostly a dare.” Which is true, and no help, and he watches it not help.",
+    "Lena is two steps away under the next arch, her syllabus against her chest. She says nothing. Her hands are still. She’s watching a bee work the bougainvillea, and the carillon finishes, and nobody fills the space after it.",
+    "Yusuf saves them, passing with his backpack on one shoulder. “Costigan. Iftar at the Islamic Center on Mission, any night this month. You Catholics like a long meal. We start at sunset and end when the dates run out.” Then, dry as a forecast: “My dad’s plant is closing, by the way. NUMMI. Toyota announced it last Thursday.” He goes off to find a quiet stairwell for the midday prayer he sat through Hale to keep. Two sons of auto workers at one oak table: Jack notices it the way you notice somebody from your own parish in an airport.",
+    "Caleb trails after him. Then it’s the two of them.",
+    {
+     "if": "e2_lena_jab",
+     "text": "“Mr. Costigan,” Lena says. Formal, a nod. She waits for whatever he’s going to say the way you wait for a bus you didn’t want."
+    },
+    {
+     "if": "e2_john668 && !e2_lena_jab",
+     "text": "“You said that like you meant it,” Lena says. “I did.” “Good.” Her hands stay where they are, nowhere near the medal. She looks at him a second longer than she has to, and then, brisk, as if somebody might be grading her on it: “Wednesday, Costigan.”"
+    },
+    {
+     "if": "!e2_lena_jab && !e2_john668 && duel.soul.rigor>=3 || !e2_lena_jab && !e2_john668 && duel.soul.heart>=3 || !e2_lena_jab && !e2_john668 && duel.soul.wit>=3",
+     "text": "Lena turns to him with her syllabus held like a shield she intends to hit him with. “I owe you a Sunday, Costigan. And I pay my debts.”"
+    },
+    {
+     "if": "!e2_lena_jab && !e2_john668 && duel.soul.rigor<=2 && duel.soul.heart<=2 && duel.soul.wit<=2",
+     "text": "Lena turns to him with her syllabus held like a shield she intends to hit him with. “That’s one apiece, Costigan. I’d like it noted that I was gracious.”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“I’ll go easy on your margins.”",
+     "tag": "Wit",
+     "set": {
+      "e2_pairing": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      {
+       "if": "!e2_lena_jab",
+       "text": "“Don’t you *dare*.” She says it like a blessing with a knife in it and goes off under the arches, and he can hear her boots on the tile all the way to the stairs.",
+       "else": "“Please don’t, Mr. Costigan. I’d hate to have to grade you for mercy.” She goes off under the arches without hurrying and doesn’t look back."
+      }
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "“Bleed on mine. I can take it.”",
+     "tag": "Candor",
+     "set": {
+      "e2_pairing": "candor",
+      "trait.candor": "+1",
+      "rel.lena.trust": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      {
+       "if": "!e2_lena_jab",
+       "text": "“Oh, I know you can.” She’s said the next part to him before, on a wharf, and from her look she knows it and says it anyway. “That’s what worries me.”",
+       "else": "“I don’t doubt it,” she says, and leaves him standing in the bougainvillea with that."
+      }
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "“I’m glad it’s you.”",
+     "tag": "Sincerity",
+     "key": "You told Lena you were glad Hale paired you with her.",
+     "set": {
+      "e2_pairing": "sincere",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      {
+       "if": "!e2_lena_jab",
+       "text": "He means respect, and he watches her hear it that way. “Me too,” she says. Then, before it can turn into anything else: “Now stop being nice to me, Costigan. I can’t sharpen anything on it.”",
+       "else": "A pause, long enough for the carillon to strike again if it were going to. “Noted,” she says: not forgiveness, an entry in a ledger."
+      }
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "Just nod. “Wednesday, then.”",
+     "tag": "Control",
+     "set": {
+      "e2_pairing": "nod",
+      "trait.control": "+1"
+     },
+     "response": [
+      {
+       "if": "!e2_lena_jab",
+       "text": "She nods back, the same nod, returned in its original packaging, and walks off under the arches with her syllabus against her chest. He watches her go. Then he makes himself stop.",
+       "else": "She nods back, a degree shallower than his, and walks off under the arches with her syllabus against her chest. He watches her go. Then he makes himself stop."
+      }
+     ],
+     "goto": "s08"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,513 @@
+{
+  "scenes": {
+    "s12": {
+      "slug": "WEDNESDAY · 8:02 PM · ST. BRENDAN’S, NEWMAN HOUSE LOUNGE",
+      "body": [
+        "He chains La Flaca to the Newman house railing at 8:01, the letter to Danny crackling in the jacket’s inside pocket; he’ll mail it tomorrow. The lounge smells of burnt coffee: a plaid couch from 1994 that sags like a hammock, a ping-pong table with a dead net, a shelf of donated books — three copies of *Mere Christianity* and one *Da Vinci Code* wearing a Post-it in a hand like barbed wire: *Read CRITICALLY. —D. Fitch.* Fr. Osei’s rubber boots stand by the door, still damp, as if they’ve just stepped out of him.",
+        "At a folding table a girl is lettering a poster with her tongue between her teeth — NEWMAN WELCOME BBQ & BEACH CLEANUP — SATURDAY, SEPTEMBER 19 — and the second B is listing badly to port. Sunburn along the part in her hair, a braid as thick as a bell rope, forearms that have done things to hay. She holds out a hand with marker on every knuckle. “Becca. Lindell. Coeur d’Alene, Idaho — it’s a lake, people think it’s a cheese. Homeschooled. Seven siblings. A ranch.” She regards the poster as though it has personally let her down. “I can butcher a deer, but I can’t letter a poster, so this is humbling.”",
+        "Joey Abruzzo is helping, which in Joey’s case means a Yankees cap, masking tape worn as a bracelet, and volume. “JACK. Jack, we’re making a *list*.” Becca mentions her roommate is coming, a nursing major from Spokane. Joey lowers the RSVP sheet. “I’m going to be a priest,” he says, with tremendous dignity. “Is she single? I’m asking for the *seating chart*.” “It’s a beach, Joey. There’s no seating chart.” Joey considers this. “Then what am I asking for?”",
+        "Becca puts a Sharpie in Jack’s hand. “You letter. You have very Catholic-school handwriting.” “You haven’t seen my handwriting.” “I can tell from how you stand.” So he does the second poster in the Palmer method the sisters put into his wrist, every capital leaning the same way, and Becca watches the S in SEPTEMBER come out right and makes a small sound of grief. Then, bent over the beach umbrella she has been failing to draw for ten minutes, not looking up: “Do you have a girlfriend?” Joey stops taping. Becca adds a stripe to the umbrella. “For the seating chart.”"
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "becca",
+          "title": "Becca (Newman)",
+          "text": "Coeur d’Alene. Seven siblings. Can butcher a deer. Running the Sept 19 BBQ like a cattle drive. Asked if I had a girlfriend. For the seating chart."
+        }
+      ],
+      "choices": [
+        {
+          "text": "“Put me down.”",
+          "tag": "Charm",
+          "set": {
+            "e2_becca": "yes",
+            "trait.charm": "+1",
+            "rel.becca.warmth": "+1"
+          },
+          "response": [
+            "Becca writes JACK C. on the list in letters a little too neat. She adds a smiley face. Then she crosses out the smiley face, twice, which is worse than the smiley face. Joey says, “*Wow*.”"
+          ],
+          "goto": "s12f"
+        },
+        {
+          "text": "“I work Saturday nights. The day, sure.”",
+          "tag": "Candor",
+          "set": {
+            "e2_becca": "yes",
+            "trait.candor": "+1",
+            "rel.becca.trust": "+1"
+          },
+          "response": [
+            "“A working man,” Becca says, and gives him one short nod, a rancher’s nod. “My dad would like you.” She means it as information, not flirtation — he’s almost sure — which is somehow more alarming. She writes JACK C. (DAYS) and underlines DAYS."
+          ],
+          "goto": "s12f"
+        },
+        {
+          "text": "“Is there a seating chart?”",
+          "tag": "Wit",
+          "set": {
+            "e2_becca": "maybe",
+            "trait.wit": "+1",
+            "rel.becca.warmth": "+1"
+          },
+          "response": [
+            "“There is now,” Becca says, and draws a rectangle on the back of the RSVP sheet with enormous authority. Joey leans in. “Put me next to anyone with a pulse and a rosary.” She writes JOEY in one corner, very small, as far from everyone as the paper allows."
+          ],
+          "goto": "s12f"
+        }
+      ]
+    },
+    "s12f": {
+      "slug": "WEDNESDAY · 8:09 PM · ST. BRENDAN’S, NEWMAN HOUSE HALLWAY",
+      "body": [
+        "At the end of the hallway a door stands half open on a highlife guitar going around and around like it has nowhere better to be. Across from it, printer paper is taped to the coat-closet door: CONFESSIONS WED 8:00 — KNOCK. Underneath, in pencil, somebody has added *(gently)*.",
+        "Fr. Osei leans in his doorway, reading glasses on their cord, sleeves rolled, as if he has been expecting the next person and it happens to be Jack. “Mr. Costigan.” He tips his head at the closet door. Then, over his shoulder, at the chessboard on his desk, the pieces set up and waiting. “The box, or the board?” Jack came because an eighty-four-year-old woman in Ohio told him to. Nobody mentioned there’d be a choice."
+      ],
+      "choices": [
+        {
+          "text": "“The box.”",
+          "tag": "Go",
+          "set": {
+            "e2_osei": "box"
+          },
+          "key": "You went to confession on Wednesday night.",
+          "goto": "s12a"
+        },
+        {
+          "text": "“The board.”",
+          "tag": "Go",
+          "set": {
+            "e2_osei": "board"
+          },
+          "key": "You played chess with Fr. Osei instead of going to confession.",
+          "goto": "s12b"
+        }
+      ]
+    },
+    "s12a": {
+      "slug": "WEDNESDAY · 8:10 PM · ST. BRENDAN’S, THE CONFESSIONAL",
+      "set": {
+        "resolve.jack": "+2",
+        "soul.grace": "+1"
+      },
+      "body": [
+        "“My grandmother sent me,” Jack says at the closet door; it seems only fair to name the responsible party. “First Friday’s this week.” Osei nods gravely. “Then we are both under orders.” He goes in first. After a moment his voice says, “Come.”",
+        "It used to be a coat closet, and under the lemon polish there’s still an old smell of wool and mothballs, fifty years of winters Marisol never had. A kneeler with cracked maroon vinyl; a folding chair beside it, so you can choose. A linen screen on a wooden frame with a lamp behind it, so that Osei is a shape and not a face. Jack kneels. He always kneels. The chair creaks; there’s the small business of a man arranging a leg that doesn’t fold the way it used to; then just his breathing, unhurried, the patience of somebody who used to listen to chests for a living.",
+        "“Bless me, Father, for I have sinned. It’s been — ” He says how long. Then he talks.",
+        "The vinyl is cold through his jeans, and then it isn’t. He holds his own hands the way he has since he was seven, thumbs crossed. The St. Michael medal swings out of his collar when he leans in. On Ocean Road a car goes by with a song in it, and is gone. Behind the linen Osei says nothing; he listens the way the closet does, with the whole room. It takes as long as it takes.",
+        "When Jack is finished, the shape behind the screen leans closer. “God is not a customs officer, Jack,” Osei says. “He is not looking for what you failed to declare. He is waiting at the door with the car running.” For a penance, a decade of the rosary — “any decade; I am not particular, and neither is He” — “and call your grandmother. The sisters who taught me arithmetic in Kumasi were Italian. I know who outranks me.”",
+        "Jack says the Act of Contrition, every word where he left it. On the linen the shadow of a hand lifts. “God, the Father of mercies, through the death and resurrection of his Son has reconciled the world to himself and sent the Holy Spirit among us for the forgiveness of sins; through the ministry of the Church may God give you pardon and peace, and I absolve you from your sins in the name of the Father, and of the Son, and of the Holy Spirit.” “Amen.” “Give thanks to the Lord, for he is good.” “His mercy endures forever.”",
+        {
+          "type": "break"
+        },
+        "In the courtyard the sprinkler is still hissing at the flower bed. Jack stands under the olive tree with his hands in his brother’s pockets and feels — *light* is the only word, and it’s the wrong word, and it’s the one there is. He couldn’t defend it in Hollis 302; Hale would have it in pieces in four minutes, and Lena would supply the article number. He doesn’t try. He stands in it a while.",
+        "He says the decade on La Flaca on the way home, a Hail Mary every few dozen turns of the pedals. On the eighth, by the Grove, a skunk walks out onto the bike path as if it has an appointment, and Jack swerves into the ice plant — *Holy Mary, Mother of God* — and the skunk, unbothered, finishes crossing at the stately pace of a monsignor in a procession. Jack picks up where he left off. He doesn’t lose count."
+      ],
+      "next": "s13"
+    },
+    "s12b": {
+      "slug": "WEDNESDAY · 8:10 PM · ST. BRENDAN’S, FR. OSEI’S OFFICE",
+      "music": "E.T. Mensah & the Tempos — “All for You”",
+      "set": {
+        "resolve.jack": "+1"
+      },
+      "body": [
+        "Fr. Osei’s office is the size of a parking space, and he has filled it with sound: a silver stereo on the filing cabinet plays highlife at a volume the neighbors would have opinions about, horns as bright as new doorknobs, a guitar circling one figure like a man dancing with somebody’s aunt at a wedding. Books stacked sideways on books. A stethoscope on a hook, as though he might still be paged. One desk drawer stands open, and in it a framed photograph lies face down, felt backing to the ceiling. The chessboard sits on the blotter: an old wooden set, the white queen’s bishop chipped at the miter.",
+        "“E.T. Mensah and the Tempos,” Osei says, easing into his chair and the left leg out under the desk. “The king of highlife. My father played this record until you could read the newspaper through it.” He turns the board so the white pieces face Jack. “White moves first. I like to see what a man does with an advantage.” What Jack does with it is bring his queen out on the fourth move, like a guy starting something in a parking lot. “Ah,” says Osei, pleased. “Youngstown.” He plays slowly and wins slowly, and Jack has the strong impression he is being allowed to think it’s close.",
+        "Osei nods at the *Spe Salvi* in Jack’s back pocket, the holy card sticking out of it, so Jack tells him between moves: the theologian-pope, Regensburg, a man who writes as if you can keep up and won’t slow down if you can’t. Osei listens with his chin on his fist. “A shy man,” he says, “made to stand on a balcony. I like him for that.” He takes a knight. “And Youngstown. You told me it was sadder than Springsteen says. Better pierogi. I have been thinking about these pierogi for four days.” “Potato and cheese. Old ladies in church basements make nine thousand of them every Lent.” “And they are good?” “They’re the only reason the Valley still has a population.” Osei writes something on an envelope. Jack is fairly sure it says *pierogi*.",
+        "Osei moves a pawn and nods at the Carhartt hanging off the back of Jack’s chair, too big in the shoulders even with nobody in it. “That is a serious coat, for a place that isn’t cold.” “It’s my brother’s.” “He let you take it?” “He’s not using it right now.”",
+        "Jack takes the pawn. Then he’s talking: about Hale, who called him a spaniel in front of the whole seminar; about Theo’s espresso machine, which has its own typed sign and better health insurance than Frank; about the Hobart, which is possessed, and could Osei look into that, professionally; about Gloria, who rates human beings like pie. Osei laughs at the Hobart and the pie. After the fourth thing he turns a knight in his fingers a while, sets it down on a square that ends something, and says it once, mildly, without looking up. “When a man jokes that much, it is because the truth is heavy and he is carrying it alone.” On the stereo the trumpet climbs and climbs and doesn’t come down."
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "osei",
+          "title": "Fr. Gabriel Osei",
+          "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Said when a man jokes that much, the truth is heavy. I didn’t have a comeback."
+        }
+      ],
+      "choices": [
+        {
+          "text": "One more joke. “Is that a proverb, or did you make it up just now?”",
+          "tag": "Wit",
+          "set": {
+            "e2_osei_q": "joke",
+            "trait.wit": "+1",
+            "rel.osei.warmth": "+1"
+          },
+          "response": [
+            "Osei laughs from the belly, the glasses jumping on their cord. “In Kumasi we say a proverb is only a joke that has paid its taxes.” He moves his bishop. Mate in four. He folds his hands on his stomach and lets Jack find it."
+          ],
+          "goto": "s13"
+        },
+        {
+          "text": "“Yeah.” Just that.",
+          "tag": "Sincerity",
+          "set": {
+            "e2_osei_q": "yeah",
+            "trait.sincerity": "+1",
+            "rel.osei.trust": "+1",
+            "soul.honesty": "+1"
+          },
+          "response": [
+            "Osei doesn’t push. He resets the board, piece by piece. “Next Wednesday, then,” he says. “Bring your brother’s jacket. It plays better chess than you do.”"
+          ],
+          "goto": "s13"
+        },
+        {
+          "text": "Turn it around: “What happened to your leg, Father?”",
+          "tag": "Candor",
+          "if": "trait.candor>=2",
+          "set": {
+            "e2_osei_q": "limp",
+            "e2_asked_limp": true,
+            "trait.candor": "+1",
+            "rel.osei.trust": "+1",
+            "rel.osei.warmth": "+1"
+          },
+          "cue": "Fr. Osei will remember that.",
+          "response": [
+            "Osei smiles, not offended in the least, as if Jack has finally made a move worth the board. “A long story,” he says. “You tell me yours, one day, and I’ll tell you mine.” Without looking, he closes the open drawer with his knee."
+          ],
+          "goto": "s13"
+        }
+      ]
+    },
+    "s17": {
+      "slug": "FRIDAY · 7:12 PM · DELGADO HALL, 4TH FLOOR",
+      "body": [
+        "Friday comes in gold. The sun slants through the Grove into 412, and the fourth floor smells of hair spray and hot flat irons; all evening girls have been going down the east stairwell in white, two by two, holding their hems off the concrete like brides late for something. Theo left at six, whistling, spinning a set of keys Jack has never seen. Jack is on his bed with *Spe Salvi* face down on his chest when the RAZR goes off.",
+        {
+          "type": "sms",
+          "from": "LANEY (FIREMAN’S FAVORITE)",
+          "text": "fireman. escort me 2 pi lam 730. lena says ur not allowed. so come",
+          "time": "7:12 PM"
+        },
+        "He’s still working out how to type *escort* on T9 without it coming out as something worse when Margot knocks: black peacoat, a thermos, small brass binoculars around her neck. Behind her, in a gray quarter-zip, Kevin wears the expression of a man who has been told what he’s for. “Costigan. I’m doing a piece for the *Tide* on recruitment as a ritual of female commodification. I need male control subjects.” She jerks her chin over her shoulder. “Kevin’s the other one. Bring a jacket.”",
+        "“Why do you need — ”",
+        "“The jobs report came out this morning,” Margot says. “Unemployment is nine-point-seven percent, the highest since 1983, and two hundred girls just bought white dresses. I need to watch that.” Kevin raises a hand. “She needs a ride. I’ve got my mom’s Odyssey in the Anacapa lot. I’m a subject *and* infrastructure.” “We’re walking,” Margot says. “It’s a mile. I wanted to see if you’d offer.” Jack looks at the phone. He looks at the binoculars."
+      ],
+      "choices": [
+        {
+          "text": "Walk Laney to the open house.",
+          "tag": "Go",
+          "set": {
+            "e2_friday": "laney"
+          },
+          "key": "You walked Laney to Pi Lam with Lena.",
+          "goto": "s17a"
+        },
+        {
+          "text": "The stakeout with Margot and Kevin.",
+          "tag": "Go",
+          "set": {
+            "e2_friday": "margot"
+          },
+          "key": "You went on Margot’s stakeout of Pi Lam with Kevin.",
+          "goto": "s17b"
+        }
+      ]
+    },
+    "s17a": {
+      "slug": "FRIDAY · 7:31 PM · SEACLIFF ROAD, PI LAMBDA CHI",
+      "music": "Lady Gaga — “Paparazzi”",
+      "set": {
+        "resolve.lena": 6
+      },
+      "body": [
+        "Seacliff Road at dusk is jasmine on the fences and the sea loud at the end of every cross street, and behind them, over the brown hills, the moon is coming up full and enormous, the color of a peach left on a windowsill. Laney walks between them in a white strapless dress she and Lena ironed last night, badly, which is why a wide braided belt rides low over the scorched triangle on her left hip. “Nobody look at my hip.” Nobody can stop.",
+        {
+          "if": "e2_alarm==\"hoodie\"",
+          "text": "She wears the Mooney hoodie over the dress until the last block, then peels it off without breaking stride and hands it to Jack like a coat check. He carries it over his arm like a butler.",
+          "else": "She carries her heels until the last block, then steps into them with a hand on Jack’s shoulder, as though he were a banister that came with the neighborhood."
+        },
+        {
+          "if": "e2_lena_jab && !e2_apologized",
+          "text": "Lena walks on Laney’s other side in a green sundress and her boots. Since Delgado she has spoken to Jack exactly twice, and both times he was Mr. Costigan.",
+          "else": "Lena walks on Laney’s other side in a green sundress and her boots, narrating Greek row like a parade. “Kappa Alpha Delta. Lovely porch. No soul.” When Jack mentions he was told he wasn’t allowed, she doesn’t look at him. “I said you weren’t *invited*. She heard ‘allowed.’ That’s on her.”"
+        },
+        "A horn — two notes, an old-money chord — and a champagne-gold convertible slides up alongside at walking pace, top down, cracked oxblood leather, Theo at the wheel in sunglasses he has no business wearing at this hour. Jack didn’t know Theo had a car. Jack didn’t know Theo had a car this specific. “Four-fifty SL, 1979. My grandfather’s. Two seats, ladies. Laney sits on the Catholic.” Laney doesn’t turn her head. “A girl *arrives* on foot, Theodore. She *leaves* in somebody’s car.” Theo claps a hand to his heart as if she’s shot him somewhere expensive, and pulls away west toward the end of Seacliff and the Point.",
+        "Pi Lambda Chi has the best porch on Seacliff and knows it: white colonial, black shutters, “Paparazzi” pouring out of every open window, a row of girls in white clapping a chant with Laney’s name folded into it, all wearing the same smile, a paper-doll chain cut from a single fold. Sloane — the blonde from the Lighthouse — stands on the steps with a clipboard and looks down at Jack with mild, glossy interest. “Theo’s roommate,” she says. “The Catholic.” “Jack.” “Mm.” She doesn’t write it down. Laney gives the porch the pageant wave, elbow, elbow, wrist, wrist, and the porch screams.",
+        "At the foot of the walk Laney takes a little silver pillbox engraved *DRP* out of her clutch and dry-swallows a small white pill with a tilt of the chin, like the last beat of a curtsy. She catches Jack watching, and her smile goes up a watt. Beside him, Lena has seen him see it. Then Laney goes up the steps into the white and the noise, passed hand to hand, and is gone.",
+        "Lena sits on the curb across the street, boots in the gutter, and Jack sits a body’s width away. The moon clears the roofs. At 8:04 she takes the LG out of her cardigan pocket and opens it. At 8:06 she opens it again. At 8:09 she calls, and Jack can hear it ring, small and far off, and then a recorded woman who belongs to the phone company. Lena closes it. “He’s studying,” she says, brightly, and puts the phone face down on her knee, and leaves her hand flat on top of it."
+      ],
+      "choices": [
+        {
+          "text": "“How long have you known her?”",
+          "tag": "Sincerity",
+          "set": {
+            "e2_curb": "friend",
+            "trait.sincerity": "+1",
+            "rel.lena.trust": "+1"
+          },
+          "response": [
+            "“A day and a half longer than you.” Lena watches a flash of copper go past a lit window. “I’d walk into traffic for her.” She waits for a car to pass, as if it might be listening. “Don’t tell her. She’d want it in writing.”"
+          ],
+          "goto": "s18"
+        },
+        {
+          "text": "“The pill.”",
+          "tag": "Candor",
+          "set": {
+            "e2_curb": "pill",
+            "trait.candor": "+1",
+            "rel.lena.trust": "+1",
+            "rel.lena.friction": "+1"
+          },
+          "response": [
+            "She doesn’t pretend not to know what he means. “I saw it,” she says, level, to the porch. “I’m not her mother. And her mother’s the reason.” It comes out whole, and she closes it in the same breath.",
+            {
+              "if": "e2_laney_pills",
+              "text": "Then she does turn. “And don’t you dare say it to her again. She told me what you said Tuesday. She liked you less for an hour.”"
+            }
+          ],
+          "goto": "s18"
+        },
+        {
+          "text": "Sororities are cloistered orders with better lighting. Prove it.",
+          "tag": "Wit",
+          "set": {
+            "e2_curb": "joke",
+            "trait.wit": "+1",
+            "rel.lena.warmth": "+1"
+          },
+          "response": [
+            "“Postulants in white,” Jack says. “A novitiate. A habit, a Rule, a Mother Superior with a clipboard. The Rule of St. Sloane.” Lena laughs out loud and doesn’t bother hiding it. “The Poor Clares would never let her in with that belt.” “She’ll be discalced by eleven.” “Lord, by *nine*.” For a minute they both just breathe, and the phone stays face down on her knee."
+          ],
+          "goto": "s18"
+        }
+      ]
+    },
+    "s17b": {
+      "slug": "FRIDAY · 7:31 PM · SEACLIFF ROAD, THE BLUFF BENCH ACROSS FROM PI LAMBDA CHI",
+      "music": "Lady Gaga — “Paparazzi”",
+      "set": {
+        "resolve.lena": 6
+      },
+      "body": [
+        "The bench sits on the bluff side of Seacliff, square across from Pi Lambda Chi, the sea working at the rocks seventy feet below. Margot lays out her kit like a surgeon: the thermos, the Moleskine, a clove she holds and does not light — rationing until the ban on the twenty-second — and the brass binoculars. “Opera glasses. I’m not a pervert. I’m a journalist.” The moon is coming up out of the hills behind them, full and enormous, and across the road “Paparazzi” spills out of every window, thinned by distance into something tinny, a song in another girl’s room.",
+        "Kevin knows everybody on the porch by name, major and hometown, delivered quietly as they come out to clap. “Caroline, communications, Newport Beach. Hadley, econ, Highland Park. Brooke, undeclared, semester at sea.” Margot lowers the binoculars. “How.” “Facebook. Their chapter page is public. Their photos are public.” He shrugs. “Respectfully, everything about that porch is public.” “You’re a terrifying man.” Kevin beams. “I’m *thorough*.”",
+        "At 7:40 Laney comes down Seacliff on foot, in white, with Lena beside her in a green sundress and boots.",
+        {
+          "if": "e2_alarm==\"hoodie\"",
+          "text": "Laney wears the Mooney hoodie over the dress until the last block, then peels it off and slings it at Lena, who catches it without looking."
+        },
+        "At the corner Lena’s eyes find the bench — the binoculars, Margot, Kevin, Jack — and rest on Jack exactly long enough to send him a bill he’ll be paying off in red ink for weeks. She walks Laney to the steps, says something into her hair, and goes back the way she came, alone.",
+        "A horn, two notes, and a convertible slides past behind them with the top down, a long gold blur under the streetlights, a blond head at the wheel and one hand raised. Theo. Jack lifts a hand back. The car goes on west toward the end of Seacliff and the Point. Kevin’s head turns with it and stays turned until the taillights are gone. Then he looks down at his BlackBerry.",
+        "Margot narrates the porch as though she’s paid by the insult. “The handshake signals confidence without competence. Note the hair. The hair has been negotiated.” Then Laney gives the porch her pageant wave, elbow, elbow, wrist, wrist, and the porch screams, and Margot keeps the glasses on her a while after everybody else has gone back to clapping. When she speaks again it’s in a different voice. “She’s auditioning for a part they cast in June.”",
+        "Half an hour later Laney slips out alone onto the side steps, out of the porch light, with a plastic cup of white wine, takes something from her clutch and drinks it down. Kevin, quietly: “Xanax and chardonnay. Respectfully, that’s a textbook case of a long night.”",
+        {
+          "if": "e2_laney_pills",
+          "text": "On Tuesday Jack told her to skip it. He watches her not skip it."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Cross the street and sit with Laney on the side steps.",
+          "tag": "Sincerity",
+          "set": {
+            "e2_stakeout": "laney",
+            "e2_sat_with_laney": true,
+            "trait.sincerity": "+1",
+            "rel.laney.trust": "+1",
+            "rel.laney.warmth": "+1"
+          },
+          "response": [
+            "She doesn’t ask what took him so long. Her shoes are off; the cup sweats in her hand. She shows him the brown triangle under the belt — “Lena and I ironed it. *Geometry*.” For a few minutes she’s just a girl from Dallas with her feet on cold brick, telling him the porch smells like Bath & Body Works and fear. Then: “Don’t tell Lena.” She thinks about it. “I mean tell her.” She thinks some more. “Don’t.”",
+            "A sister calls her name from the door, bright as a dinner bell. Laney stands, smooths the scorched triangle under the belt, and puts the pageant smile back on the way you’d straighten a crown before walking back out."
+          ],
+          "goto": "s18"
+        },
+        {
+          "text": "Ask Margot why she’s really here.",
+          "tag": "Candor",
+          "set": {
+            "e2_stakeout": "why",
+            "trait.candor": "+1",
+            "rel.margot.trust": "+1"
+          },
+          "response": [
+            "Margot doesn’t lower the binoculars. “Somebody should be watching who isn’t grading.” Kevin glances at her, and then, very carefully, at the sea."
+          ],
+          "goto": "s18"
+        },
+        {
+          "text": "Narrate the porch like a nature documentary.",
+          "tag": "Wit",
+          "set": {
+            "e2_stakeout": "nature",
+            "trait.wit": "+1",
+            "rel.margot.warmth": "+1",
+            "rel.kevin.warmth": "+1"
+          },
+          "response": [
+            "Jack drops to a hush. “Here, on the coast of California, the young female gathers at dusk — ” and Margot takes it without a flicker, in a reverent BBC murmur: “Not every candidate will survive the night. Those who do will be given a letter, a T-shirt and a new mother.” Jack does the music, strings swelling over the Serengeti.",
+            "And Kevin laughs, a real one — the second Jack has ever heard out of him; the first was at the floor meeting, at Theo’s *in that order — reversed*. A short, helpless snort he shoves down into the collar of his quarter-zip, chin tucked, shoulders going."
+          ],
+          "goto": "s18"
+        }
+      ]
+    },
+    "s18": {
+      "slug": "FRIDAY · 11:40 PM · CAMPUS POINT, THE BEACH BELOW THE BLUFF",
+      "music": "Edward Sharpe & the Magnetic Zeros — “Home”",
+      "set": {
+        "resolve.jack": "+1",
+        "resolve.lena": 6
+      },
+      "body": [
+        "By a quarter to midnight the moon has climbed high and gone from peach to bone, and the beach below the bluff is lit like a stage after the audience has gone home. The sand is cold and squeaks. Somebody else built a driftwood fire and abandoned it; they’ve adopted it, and it spits blue where the salt gets in. Theo’s iPhone sits in a red Solo cup on a rock — “for the acoustics; it’s a known technique” — playing a song like a commune that learned to sing in a church basement: stomping, hand claps, a whistled tune over the top like somebody walking home in a good mood.",
+        "Laney is barefoot and victorious, the hem of the white dress dark with seawater, informing the moon that Sloane says she’s a *lock*. She has told everyone eleven times. Every time is a premiere.",
+        {
+          "if": "e2_alarm==\"hoodie\"",
+          "text": "She’s back in the Mooney hoodie, hood up over the copper hair, a cardinal at a beach party."
+        },
+        "Theo lies flat with his hands behind his head, the gold car parked up top under the lot’s one light, where he can see it. Margot sits bolt upright on a log with the thermos between her boots and no visible need for a blanket. Kevin carried a case of Arrowhead down the bluff stairs by himself and hands out bottles like orange slices at halftime. Doug, in a Bakersfield Drillers blanket, wants to know if the moon is always this big in California. “In Bakersfield it’s, like, half this.” Past the break Rafi is the only one in the water, a black shape rising on the bright swell and dropping out of it, whooping. And last, after the first and longest edition of Laney’s debrief, Lena comes down the bluff stairs barefoot, boots in her hand.",
+        {
+          "if": "e2_friday==\"laney\"",
+          "text": "Jack knows about 8:04. He watches her not look at her phone, which takes, as far as he can tell, everything she’s got."
+        },
+        {
+          "if": "e2_friday==\"margot\"",
+          "text": "She drops the boots by the fire and looks at Jack across it. “Binoculars.” Later, at the waterline, with her back to everyone, she takes the LG out of her cardigan, holds it open in its blue light a while, and closes it. It’s the first Jack knows that anything is off."
+        },
+        {
+          "if": "e2_sat_with_laney",
+          "text": "Laney drops into the sand beside Jack, bumps his shoulder with hers, and says nothing at all, which from Laney is a speech."
+        },
+        "At 11:52 the phone lights up in Lena’s hand. She reads it. Her face does one thing and then another, neither of them anything Jack has seen it do, and then she closes the phone and slides it down inside one of her boots like a letter into a mailbox and stands the boots upright in the sand.",
+        "Then she gets to her feet, dusts off her hands and announces to the beach that y’all don’t know the chant. Nine days to Detroit. The Saints lost to Miami last night, ten to seven, but Brees didn’t even play, and preseason doesn’t count — nothing counts till Detroit — and nobody here is going to embarrass her in front of the Lord and the Superdome. She teaches it like catechism, call and response. *Who dat. Who dat. Who dat say dey gonna beat dem Saints.*",
+        "Laney gets it wrong at full volume — *who dat say dey gonna EAT dem Saints* — and refuses correction on the grounds that hers is better. Theo plucks the iPhone out of its cup, killing the song, and films it: “Night five. The Catholics have begun their rituals.” Kevin bellows it like a team captain. Doug does it twice, because he started late. Margot declines on principle. “I don’t chant. Chanting is how fascism warms up.” Lena points at her. Everybody points at her. Margot sighs through her nose, sets down the thermos, and says it exactly once, at a normal speaking volume, with no inflection whatsoever, like a parking ordinance read into a microphone: “Who dat say dey gonna beat dem Saints.” It is the funniest thing that has happened all week. The beach comes apart, and Lena has to sit down in the sand.",
+        "Theo puts the song back on. When the whistling part comes around everybody tries it and everybody is bad at it, except Kevin, who whistles like a teakettle with perfect pitch and looks embarrassed. Then Theo produces the flask — silver, *R.V.* on the side, the Macallan inside — and starts it around the fire. Margot takes a mouthful “for the ethnography” and makes the face of a woman insulted in Gaelic. Kevin passes it on without drinking, and smoothly, without a word, right over Laney’s outstretched hand too. “Respectfully, no.” He puts a water in her hand instead, and she lets him. Then the flask is in Jack’s hand, cold."
+      ],
+      "choices": [
+        {
+          "text": "Drink.",
+          "tag": "Reckless",
+          "set": {
+            "e2_beach": "drank",
+            "trait.reckless": "+1",
+            "resolve.jack": "-1",
+            "rel.theo.warmth": "+1"
+          },
+          "response": [
+            "Smoke and honey and peat, and the taste in scotch of a man Jack knows only as two initials on a flask. It goes down warm and stays there. The moon gets a little louder.",
+            "Later, with the fire down to coals, Jack lies back in the cold sand and counts them the way he counts freight cars: seven people around a dying fire, himself included; one surfer out on the moon-road; and Laney, at intervals, still informing the Pacific who dat."
+          ],
+          "goto": "s19"
+        },
+        {
+          "text": "Pass.",
+          "tag": "Control",
+          "set": {
+            "e2_beach": "passed",
+            "trait.control": "+1",
+            "resolve.jack": "+1"
+          },
+          "response": [
+            "He hands it back. “My designated rememberer,” Theo says, fondly, and toasts him with it. Across the fire Kevin raises his water bottle in solidarity.",
+            "Later, with the fire down to coals, Jack lies back in the cold sand and counts them the way he counts freight cars: seven people around a dying fire, himself included; one surfer out on the moon-road; and Laney, at intervals, still informing the Pacific who dat."
+          ],
+          "goto": "s19"
+        },
+        {
+          "text": "Take it, and hand it to Lena without drinking.",
+          "tag": "Charm",
+          "set": {
+            "e2_beach": "lena",
+            "trait.charm": "+1",
+            "rel.lena.warmth": "+1"
+          },
+          "response": [
+            "She looks at the flask, and at him. Then she takes one swallow, shivers once, and hands it back.",
+            {
+              "if": "e2_lena_jab && !e2_apologized",
+              "text": "“Thank you, Mr. Costigan.” The *Mister* is still there. Something under it has thawed a degree.",
+              "else": "“Thank you, Youngstown.” Not heat — nothing in it you could hold up to the light. Just one friend passing another the salt."
+            },
+            "Later, with the fire down to coals, Jack lies back in the cold sand and counts them the way he counts freight cars: seven people around a dying fire, himself included; one surfer out on the moon-road; and Laney, at intervals, still informing the Pacific who dat."
+          ],
+          "goto": "s19"
+        }
+      ]
+    },
+    "s19": {
+      "slug": "SATURDAY · 12:22 AM · CAMPUS POINT, THE BLUFF-TOP LOT",
+      "music": "Phoenix — “Lisztomania”",
+      "body": [
+        "A little after midnight the party breaks the way beach parties do, all at once and without a vote. Lena walks Laney home along the lagoon path, arm in arm. Kevin shoulders the empty case and herds Margot and Doug down the sand toward the campus stairs. Rafi is still out in the water. Theo walks Jack up the bluff stairs to the lot, singing under his breath in no particular language.",
+        {
+          "if": "e2_friday==\"margot\"",
+          "text": "Up close, under the moon and the lot’s one sodium lamp, the car is something out of one of Theo’s movies: champagne paint beaded with dew, chrome, oxblood leather cracked as fine as an old man’s hands. Theo lays his wrist along the wheel, his grandfather’s Rolex against the paint, gold on gold. “The watch’s twin.”",
+          "else": "Up close, under the moon and the lot’s one sodium lamp, the car from Seacliff is somehow more: dew on the champagne paint, oxblood leather cracked as fine as an old man’s hands. Theo lays his wrist along the wheel, his grandfather’s Rolex against the paint, gold on gold. “The watch’s twin.”"
+        },
+        "He turns the key one click, not enough to start it, and the dash comes up amber. A cassette adapter in the tape deck runs a cord to the iPhone, and Phoenix comes out of the old speakers bright and clattering, a song in a hurry. Theo is lit, and he’s sincere, and with Theo that’s the dangerous combination. “Full moon, Costigan. LA is three hours. Get in the car.”",
+        "He lays it out like a pitch. His father’s house in Malibu, this weekend: a pool facing the ocean, a refrigerator full of things nobody is allowed to eat. The fire on the ridge behind La Cañada is still burning; his mother called from the Peninsula to say the sky is the color of a Creamsicle. “I want you to see it,” he says, and for once there’s no bit underneath. “I want you to see what it looks like when the mountains are on fire and nobody cancels brunch.” He pats the passenger seat. Two seats. One of them is empty."
+      ],
+      "choices": [
+        {
+          "text": "“Get in.”",
+          "tag": "Reckless",
+          "set": {
+            "e2_la": "tonight",
+            "trait.reckless": "+1",
+            "resolve.jack": "-1",
+            "rel.theo.warmth": "+1",
+            "rel.theo.trust": "+1"
+          },
+          "cue": "Theo will remember that.",
+          "key": "You got in Theo’s car at half past midnight and said yes to Los Angeles.",
+          "response": [
+            "Theo whoops at the moon. The engine catches with a rich old cough, the headlights find the ice plant, and Jack drops into the passenger seat and pulls the door shut. He texts Priya nothing, and Lena nothing, and his mother nothing."
+          ],
+          "goto": "s20"
+        },
+        {
+          "text": "“Tomorrow. In daylight. And we bring people.”",
+          "tag": "Control",
+          "set": {
+            "e2_la": "tomorrow",
+            "trait.control": "+1",
+            "rel.theo.warmth": "+1"
+          },
+          "key": "You told Theo you’d go to Los Angeles — tomorrow, in daylight, with everybody.",
+          "response": [
+            "Theo stares at him. Then his whole face opens, delighted, as if Jack has invented something. “A *floor* trip.” He’s already pulled the iPhone off the cord, cutting Phoenix off mid-chorus, and is scrolling. “Tran. Tran. How many people fit in an Odyssey? No — *legally*.”"
+          ],
+          "goto": "s20"
+        },
+        {
+          "text": "“I can’t afford LA, Theo.”",
+          "tag": "Candor",
+          "set": {
+            "e2_la": "broke",
+            "soul.honesty": "+1",
+            "trait.candor": "+1",
+            "rel.theo.trust": "+1"
+          },
+          "key": "You told Theo you couldn’t afford Los Angeles.",
+          "response": [
+            "Theo doesn’t laugh. “Nobody’s asking you to afford it,” he says. “That’s the whole point of my father.” Jack starts in on the thing Frank would say about owing people, and Theo, who has seen the receipt on Jack’s desk, lets him get halfway and doesn’t push. He just says he’s leaving at nine, with or without, and he already bought gas. “And gas is non-refundable.”",
+            {
+              "if": "e2_books==\"loan\"",
+              "text": "“Put it on my tab,” he adds. “Under the pie.”"
+            }
+          ],
+          "goto": "s20"
+        }
+      ]
+    },
+    "s20": {
+      "slug": "SATURDAY · 12:31 AM · CAMPUS POINT",
+      "body": [
+        {
+          "if": "e2_la==\"tonight\"",
+          "text": "Then the 101, southbound, top down. The Pacific is a black sheet on the right and the moon keeps pace across it, patient, as though it means to see them all the way to Los Angeles. The wind is cold and loud and smells of kelp and then, for a mile, of oranges. “Lisztomania” comes around a second time, and Theo doesn’t skip it. Jack puts his hand out over the door into the cold and opens his fingers and lets the night go through them.",
+          "else": "The lot is quiet. The car sits with its top down and its engine off, and below the bluff the moon has laid itself flat on the sea. West, up the coast, past the dark roofs of Seacliff, the old light stands on the Point with nothing in it. Theo keeps his hands on the wheel at ten and two, like somebody’s grandfather, and doesn’t start it. He doesn’t say anything, and Jack doesn’t either. They sit there a while, the two of them, in a car that isn’t going anywhere yet, and watch the water."
+        }
+      ],
+      "end": true
+    }
+  }
+}

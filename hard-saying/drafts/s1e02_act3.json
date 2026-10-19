@@ -1,0 +1,525 @@
+{
+  "scenes": {
+    "s13": {
+      "slug": "THURSDAY · 12:10 PM · ST. BRENDAN’S",
+      "set": {
+        "resolve.lena": 8,
+        "resolve.jack": "+1"
+      },
+      "body": [
+        "Danny’s letter goes into the blue mailbox on Ocean Road with a tin clank, and Jack goes in out of the noon glare. St. Brendan’s is cool and smells of beeswax. Fifteen people in a church built for six hundred, scattered under the upside-down hull of the roof like survivors of a wreck who’d rather not crowd each other.",
+        "Mrs. Fitch, with a Tupperware of lemon bars on the pew beside her like a guest she brought. An old man with a cane, praying or asleep; at his age it may be the same skill. Becca from last night, fingers still blue from poster marker. And Kevin Tran in a navy quarter-zip, who has saved Jack a seat by laying his Bible on it, the spine gone soft, tabbed in four colors. “Saw you on the steps. Figured.”",
+        "Three rows up is Lena: the oatmeal cardigan over a yellow sundress, bare-headed, her hair twisted up with a pencil through it. Jack spends the entrance antiphon not looking at the back of her neck, and does about as well at it as he does at most things he attempts in church.",
+        {
+          "if": "e2_osei==\"box\"",
+          "text": "Last night is still on him: a lightness he couldn’t defend to anybody in Hollis Hall, and has stopped trying to. He keeps expecting it to wear off. It keeps not.",
+          "else": "Through the open sacristy door Fr. Osei, halfway into a white chasuble, catches Jack’s eye and moves an invisible knight."
+        },
+        "White, for Gregory the Great. Mrs. Fitch reads Colossians in a voice meant for a much fuller church: “…giving thanks to the Father, who has made you fit to share in the inheritance of the holy ones in light.” *Inheritance.* Jack hears it in Yorkshire-under-Oxford and has to look at his shoes.",
+        "Then Luke, and the boats. *Master, we have worked hard all night and have caught nothing* — a working man’s line, tired and put out and doing it anyway. The nets fill and tear. And Simon Peter goes down on his knees in all that thrashing silver and says: *Depart from me, Lord, for I am a sinful man.*",
+        "For the homily Osei comes down into the aisle with his weight on the good leg, like a man at a bus stop who has news. “Peter tells Jesus to go away because he is a sinner. Jesus does not argue with him. He gives him a job.” He lets it sit in the cool air. “And Gregory, whose day it is, did not want his job either. He begged the emperor to let him off. The emperor said no.” The laugh lines deepen. “In my experience, God also usually says no.” He sits. The homily was shorter than the Gospel.",
+        "Jack holds on to it through the Creed and the bells. It doesn’t get lighter. He doesn’t set it down.",
+        "Lena goes before the recessional with a Greek grammar under her arm, genuflecting fast, the cardigan sliding off one shoulder, and then she’s a shape in the bright doorway, and then she isn’t. “Greek at one,” Kevin murmurs. “Tuesday too.”",
+        {
+          "type": "break"
+        },
+        "At Anacapa Commons Kevin goes through the salad bar like a pharmacist filling a prescription — grilled chicken, egg whites, spinach — and sighs at the waffle line. He takes a paper boat of fries “for morale” and doesn’t touch them.",
+        "His BlackBerry buzzes face-up on the tray: MẸ. He sits up straighter for a woman two hundred miles north. “Dạ, Mẹ. Dạ… dạ… dạ.” Then, smooth as a hotel front desk: “Con học rồi.” He hangs up. “Told her I already studied. Orgo. AP credit — she thinks it makes me a genius.” He spears an egg white. “The book’s still in the shrink-wrap. My sister’s at UOP, dental school. Tina. Four-point-oh. Flossed in the womb.” Jack looks at him. “Your sister.” Kevin grins, the big floor-meeting grin. “The ‘only child’ thing? Rhetorical.”",
+        "Then he points a forkful of egg white across the table. “Respectfully, bro. You stared at her through the whole Gospel on Sunday. Today you stared at her through *Colossians*, which nobody does. She has a boyfriend. It’s on her Facebook. Everybody checked.” “Everybody?” “Doug checked.” He chews. “I’m just saying. As your designated adult.”",
+        "Behind them Theo drifts past with a tray holding a single espresso and half a grapefruit, a man between engagements. “Tran.” “Vance.” Like two boxers touching gloves before the bell. Theo lifts the grapefruit to Jack in salute and keeps walking, and Kevin goes back to his chicken."
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "kevin",
+          "title": "Kevin Tran",
+          "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school — ‘only child’ was rhetorical. Lies to his mom about orgo in Vietnamese."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Ask about his family.",
+          "tag": "Sincerity",
+          "set": {
+            "e2_kevin_q": "family",
+            "trait.sincerity": "+1",
+            "rel.kevin.trust": "+1"
+          },
+          "response": [
+            "“What are they like? Your parents.” Kevin sets his fork down, and for a second there’s no bit ready. “My parents came on a boat,” he says. “I don’t get to have a bad semester.”",
+            "Then it’s folded up and put away, and he’s leaning across the table with real urgency. “Wait. Does Ohio have In-N-Out?” “No.” “Then what do you people *eat*?” “Pierogi. Sorrow.” “Respectfully,” Kevin says, “that’s a cry for help.”"
+          ],
+          "goto": "s14"
+        },
+        {
+          "text": "Match his dad jokes: “Why did the pre-med cross the road?”",
+          "tag": "Wit",
+          "set": {
+            "e2_kevin_q": "jokes",
+            "trait.wit": "+1",
+            "rel.kevin.warmth": "+1"
+          },
+          "response": [
+            "Kevin doesn’t blink. “To shadow a surgeon on the other side.” He lights up like a scoreboard. “What do you call a philosophy major in four years?” “Go on.” “*Waiter.*” “How many Thomists does it take to change a lightbulb?” “How many?” “*Distinguo.*” Kevin has no idea what it means and wheezes anyway, openly, both palms flat on the table.",
+            "They keep it up, two grown men being terrible on purpose, until the girl at the next table picks up her tray and her calculus and relocates to another zip code."
+          ],
+          "goto": "s14"
+        },
+        {
+          "text": "“What’s with you and Theo?”",
+          "tag": "Candor",
+          "if": "trait.candor>=2",
+          "set": {
+            "e2_kevin_q": "theo",
+            "e2_asked_kevin_theo": true,
+            "trait.candor": "+1",
+            "rel.kevin.friction": "+1"
+          },
+          "response": [
+            "Kevin’s smile stays exactly where it was. “Nothing. Met him at the floor meeting. Same as you.” He pushes the paper boat of fries across the table. “You want these? I only take them for morale.”"
+          ],
+          "goto": "s14"
+        }
+      ]
+    },
+    "s14": {
+      "slug": "THURSDAY · 4:00 PM · HOLLIS HALL, ROOM 108",
+      "body": [
+        "Hollis 108 is a basement with one window, at exactly ankle height to the world, so the hour comes with a parade of feet: Keds, flip-flops, a dog that stops, considers the window, and moves on. Eighteen desks. Dry-erase marker and somebody’s orange.",
+        "The TA writes his name on the board in square capitals — EVAN MARSH — and under it, smaller: *office hours: when I’m not finishing.* He’s lanky and gray at the temples, though he can’t be much past thirty, with wire glasses and a stained tan Carhartt over the back of his chair. On the desk, a bike helmet and a pack of American Spirits, the yellow kind.",
+        "Jack knows him. It takes a second, and then it doesn’t take anything: the glasses, the gray, the bike. The man at the end of the Lighthouse driveway on Saturday night, smoking in the dark, watching the house and not going in. Evan Marsh takes attendance with his eyes, and they go over Jack the way they go over everybody: once, and on.",
+        {
+          "if": "e2_lena_jab",
+          "text": "At 4:01 Lena stops dead in the doorway with a Greek grammar against her chest. Her face finds him and goes polite. “Mr. Costigan. You’re in *this* section.” A breath. “Of course you are.”",
+          "else": "At 4:01 Lena stops dead in the doorway with a Greek grammar against her chest. “You’re in *this* section?” She shuts her eyes briefly, a woman taking up her schedule with a higher power. “Of course you’re in this section.”"
+        },
+        "She sits one desk away from him, which in a room of eighteen is a kind of diplomacy.",
+        "Evan sits on the front edge of the desk. “Professor Hale asked you to prove you have a soul.” Minnesota, flat and exact. “I want something harder. Suppose you found out tonight that you don’t. Kierkegaard says purity of heart is to will one thing — so tell me what your one thing is. What would it cost you?”",
+        "A girl by the window in a Marisol Surf hoodie says, going red, that she thinks she’d be relieved. Nobody keeping score. Evan doesn’t smile and doesn’t correct her. “That’s honest. Kierkegaard would say you just told me what you’re afraid of. Keep it.” She looks like somebody handed her a coat.",
+        "A Sigma Rho kid with his visor on backwards tips his chair onto two legs. “Nothing, bro. I’d still be me.” “Then nothing you’ve ever done was done by anybody,” Evan says pleasantly. “Your mother raised a complicated puddle. Serious people believe that. They don’t say *bro* while they believe it. They lose sleep.” The kid turns it over. “Thanks, man,” he says, and means it.",
+        "Lena doesn’t raise her hand. She waits until the room is quiet enough to deserve it, and then she answers like a closing argument, each sentence laid on the one before. “Everything I love would turn into chemistry. My mother’s kitchen. My brothers. The Saints. Receptors and salt. And here’s the problem: I’d still love it, exactly the same. Only it would be a fact about *me*, not about any of them. Love would be a climate I have, with nobody on the other end of it.” She sits back. “That’s what it would cost. Everybody.”",
+        "Evan’s eyes come to Jack. Jack hadn’t planned to say anything, and then he does, quietly, in the voice that comes out when there isn’t time to make it funny. “Everything I’ve done since I was sixteen would just be stuff a body did. Nobody to answer for it.” He hears it land in the low room and keeps going. “That sounds like relief. It isn’t.”",
+        "Evan looks at the two of them a second longer than he has looked at anybody, then turns back to the window girl and asks what exactly she meant by *score*.",
+        {
+          "type": "break"
+        },
+        "At ten to five the Hollis steps are warm as a griddle and empty except for Evan, lighting an American Spirit off a Bic with his hand cupped against the wind off the Commons. Lena has gone back in for her pen."
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "evan",
+          "title": "Evan Marsh (TA)",
+          "text": "Thursday section, Hollis 108. Kierkegaard. Kind to the scared ones, murder on the lazy ones. Smokes American Spirits. Rides a bike."
+        },
+        {
+          "kind": "note",
+          "id": "driveway",
+          "title": "The guy at the end of the driveway",
+          "text": "The guy at the end of the driveway is my TA."
+        }
+      ],
+      "choices": [
+        {
+          "text": "“I saw you Saturday. End of the driveway at the Lighthouse.”",
+          "tag": "Candor",
+          "cue": "Evan will remember that.",
+          "key": "You told Evan you’d seen him at the end of the Lighthouse driveway.",
+          "set": {
+            "e2_evan_q": "lighthouse",
+            "e2_evan_lighthouse": true,
+            "trait.candor": "+1",
+            "rel.evan.friction": "+1"
+          },
+          "response": [
+            "Evan doesn’t look at him right away. He takes a pull on the cigarette and lets the smoke go — a pause long enough to smoke in, and he smokes in it. “I ride out that way,” he says. “I don’t go to parties. I’m twenty-nine.” Then, still to the Commons: “Who’d you go with?”",
+            "“My roommate dragged me.”",
+            "Evan nods. He asks nothing else. He grinds the cigarette out under his heel, clips on the helmet, and goes down to the rack, and Jack watches him ride off across the grass, upright and unhurried."
+          ],
+          "journal": [
+            {
+              "kind": "note",
+              "id": "driveway",
+              "title": "The guy at the end of the driveway",
+              "text": "The guy at the end of the driveway is my TA. Says he doesn’t go to parties. Asked who I went with. Nothing else."
+            }
+          ],
+          "goto": "s15"
+        },
+        {
+          "text": "Keep it to yourself.",
+          "tag": "Control",
+          "set": {
+            "e2_evan_q": "quiet",
+            "trait.control": "+1"
+          },
+          "response": [
+            "Jack says nothing. Evan finishes the cigarette in no hurry at all. “Good answer in there,” he says — about the section, not looking at him. “Don’t get used to it.” He goes down to the rack and unlocks his bike."
+          ],
+          "goto": "s15"
+        },
+        {
+          "text": "Bum a cigarette: “American Spirit. You *are* a grad student.”",
+          "tag": "Wit",
+          "if": "trait.wit>=2",
+          "set": {
+            "e2_evan_q": "cigarette",
+            "jack_cigs": "+1",
+            "trait.wit": "+1",
+            "rel.evan.warmth": "+1"
+          },
+          "response": [
+            "Evan shakes one out without comment and lights it for him, the Bic cupped between both their hands against the wind. It burns slower than a Marlboro and tastes like burnt toast and good intentions. The two of them stand on the steps of a philosophy building smoking and saying nothing, which seems to be how Evan likes his company. “They’re not better for you,” he says finally. “People think they are.” Then he clips on the helmet and rides off across the grass."
+          ],
+          "goto": "s15"
+        }
+      ]
+    },
+    "s15": {
+      "slug": "THURSDAY · 5:05 PM · HOLLIS HALL, FRONT STEPS",
+      "music": "Dirty Projectors — “Two Doves”",
+      "set": {
+        "resolve.lena": 7
+      },
+      "body": [
+        "By five the light over the Commons has gone long and gold, and past the lawn the sea has gone to hammered brass. The bougainvillea has been letting go on the Hollis steps all afternoon, so Jack sits in a drift of magenta like somebody a flower girl gave up on.",
+        "Lena comes out with her pen and sits two steps above him, because she likes the height. Yesterday, across Hale’s oak, they slid their pages at each other without eye contact, like a hostage exchange. This is the first he’s seen of what she did to his.",
+        {
+          "if": "e2_lena_jab",
+          "text": "“Mr. Costigan.” She holds it out between two fingers. “Your paper.”",
+          "else": "“Costigan.” She holds it out between two fingers. “Your paper. Brace yourself.”"
+        },
+        {
+          "type": "doc",
+          "title": "“That Faith Is Not an Inheritance” — J. Costigan",
+          "text": "Professor Hale says my faith is an address. Fine: I was baptized at St. Brigid’s before I could object. But an inheritance is something you can refuse, and nobody refuses a thing they’ve never had to pick back up. Pascal tells the man who can’t believe to do what believers do — holy water, Masses — and belief will come: *cela vous abêtira*. Hale reads that as proof that faith is a habit. I read it as proof that faith is a decision you keep making with your knees until your head catches up. I didn’t stay because I was told to. I stayed because I tried the door.\n\nIN RED, IN THE MARGINS —\nbeside “nobody refuses a thing they’ve never had to pick back up”: NO.\nbeside the Pascal: You quoted Pascal at me. I taught you Pascal on Sunday. *Cite me.*\nunder the last line: This sentence is lying and you know it."
+        },
+        "He laughs out loud. “You quoted Pascal at me *once*.” “On the Lord’s Day, in front of God and a coffee urn. That’s a lecture. I’ll expect a footnote.” He reads his last line again, the one with the door in it, and finds he doesn’t want to fight her on it, which is worse than losing. From the way she watches him read, she knows it too.",
+        "He hands hers back.",
+        {
+          "type": "doc",
+          "title": "“That the Body Is Not a Rental” — M. Broussard",
+          "text": "Descartes parked the body at the curb with the keys in it, and we act surprised that nobody brings it back with a full tank. Aquinas won’t let us off so easy: the soul is the form of the body, so there is no *me* standing safely behind my skin, lending it out. What is done to the body is done to the person, every time. That is why the Creed says the resurrection of the *body* and not of some tasteful vapor. The objection from injury — that a body can be broken and the person goes on — I will take up next week. For now: a thing that can be wounded is *someone*. Hotels don’t bleed.\n\nIN RED, IN THE MARGINS, HIS HAND —\nacross the top: This is the best paragraph I’ve read this year. I hate it.\nbeside “I will take up next week”: Coward.\nunder “Hotels don’t bleed”: Okay, fine."
+        },
+        {
+          "if": "e2_lena_jab",
+          "text": "She reads his red aloud, perfectly courteous, like a hostess reading out a toast somebody else wrote.",
+          "else": "She reads his red aloud in her Ohio voice, the flat one she’s been working on since Saturday."
+        },
+        "“‘This is the best paragraph I’ve read this year. I hate it.’ It’s the third of September.” “It’s been a long year.” “And *coward*? Next to my deferral?” “It was a deferral.” “It was a *promise*. I keep mine.” She finds *Okay, fine* under her last line and doesn’t read that one aloud. She looks at it for a while, though, with the pen between her teeth.",
+        "Down on the Commons a dog goes after a Frisbee with its entire life. Lena folds her paper in half, creases it with a thumbnail, and says, to the sea more than to him: “You heard me Sunday. On the stairs.”",
+        "“Medals off,” Jack says.",
+        "She almost smiles. “I don’t like a thing sitting on a table between two people where nobody will touch it. It goes bad.” She holds the folded paper flat on her knees against the breeze. “His name is Wes. Wesley Arceneaux. Tulane, civil engineering. He wants to build the walls right.” She says *the walls* the way Jack’s father says *the plant*, as if there has only ever been the one.",
+        "“In the storm he took his uncle’s boat out. He was sixteen. Four days, back and forth, pulling people off roofs.” She doesn’t dress it up. She doesn’t have to. She sets it on the step between them and lets it be true there, and the plainness is its own kind of pride."
+      ],
+      "choices": [
+        {
+          "text": "“He sounds like a good man.”",
+          "tag": "Control",
+          "key": "You told Lena her boyfriend sounded like a good man.",
+          "set": {
+            "e2_wes_reply": "generous",
+            "trait.control": "+1",
+            "rel.lena.trust": "+1",
+            "rel.lena.heat": "-1"
+          },
+          "response": [
+            "She looks at him like she’s revising a grade upward and resents having to. “He is,” she says. Then, quieter, to the paper on her knees: “He is.”"
+          ],
+          "goto": "s15b"
+        },
+        {
+          "text": "“So I’m up against a man with a boat.”",
+          "tag": "Wit",
+          "key": "You told Lena you were up against a man with a boat.",
+          "set": {
+            "e2_wes_reply": "wry",
+            "trait.wit": "+1",
+            "rel.lena.heat": "+1",
+            "rel.lena.friction": "+1"
+          },
+          "response": [
+            {
+              "if": "e2_lena_jab",
+              "text": "“You’re not up against anybody, Mr. Costigan.”",
+              "else": "“You’re not up against anybody, Youngstown.”"
+            },
+            "“I know,” he says, lightly. Then he finds the dog on the Commons very interesting."
+          ],
+          "goto": "s15b"
+        },
+        {
+          "text": "“Good. I was starting to worry you had bad taste.”",
+          "tag": "Candor",
+          "key": "You told Lena you’d been worried she had bad taste.",
+          "set": {
+            "e2_wes_reply": "honest",
+            "trait.candor": "+1",
+            "rel.lena.trust": "+1",
+            "rel.lena.friction": "+1"
+          },
+          "response": [
+            {
+              "if": "e2_lena_jab",
+              "text": "“My taste is impeccable, Mr. Costigan. Ask anyone. Ask the boots.”",
+              "else": "“My taste is impeccable. Ask anyone. Ask the boots.”"
+            },
+            "She stretches one brown Justin down onto his step for inspection: resoled twice, scuffed pale at the toe, a boot that has been to Mass and to Jazz Fest and possibly to war."
+          ],
+          "goto": "s15b"
+        },
+        {
+          "text": "“What I said Monday was cheap. I’m sorry.”",
+          "tag": "Sincerity",
+          "if": "e2_lena_jab",
+          "key": "You apologized to Lena for what you said in Hale’s seminar.",
+          "set": {
+            "e2_wes_reply": "apology",
+            "e2_apologized": true,
+            "trait.sincerity": "+1",
+            "soul.honesty": "+1",
+            "rel.lena.trust": "+2",
+            "rel.lena.friction": "-1"
+          },
+          "response": [
+            "He says it plain, no bit, no exit line, and she takes it the way she’d take a correction to a citation: looks at it, checks it, accepts it. “Noted.”",
+            "Above them the carillon works through the quarter hour. A minute goes by with nothing in it but gulls. Then, to the sea: “It *was* cheap, Costigan.” The surname is back. The formality is gone."
+          ],
+          "goto": "s15b"
+        }
+      ]
+    },
+    "s15b": {
+      "slug": "THURSDAY · 5:41 PM · HOLLIS HALL, FRONT STEPS",
+      "body": [
+        "The carillon fumbles the three-quarter chime, and Jack finds the Marlboros in his hand. They come out every time he’s nervous; he’s holding the pack before he’s decided anything, turning it over with his thumb.",
+        {
+          "if": "e2_evan_q==\"cigarette\"",
+          "text": "Lena leans down from her step and sniffs at his collar without apology. “You smell like a barn.” She sits back, appalled. “You’re cheating on Marlboro *already*?”",
+          "else": "Lena watches the pack. She doesn’t say anything. She has a pocket for this."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Light it.",
+          "tag": "Reckless",
+          "set": {
+            "e2_cig_lena": "lit",
+            "reliquary": "+1",
+            "jack_cigs": "+1",
+            "trait.reckless": "+1",
+            "rel.lena.friction": "+1"
+          },
+          "response": [
+            "He gets one drag, the good one that goes all the way down, before she leans from her step and takes it out of his mouth with two fingers. Second time; she’s practiced now. She stubs it out on the stone beside her boot, reaches into the cardigan pocket, and comes out with the first one: Saturday’s, bent and a little flattened, still there. Laney wore this cardigan to a fire alarm and never noticed. Lena holds the two of them together on her open palm like a pair of relics. “I’m going to need a container.”",
+            "At six she stands. Laney needs her for Friday: “She’s ironing a dress that cost more than my first car, and she has never ironed *anything*.”",
+            {
+              "if": "e2_lena_jab && !e2_apologized",
+              "text": "“Mr. Costigan,” she says, by way of goodbye, with a nod you could level a shelf by.",
+              "else": "“Wednesday,” she says, by way of goodbye. “Bring a red pen you’re not afraid of.”"
+            },
+            "Then she’s out across the Commons with her shadow going on ahead of her. He wants her. He says it to himself plainly, because she’d know if he dressed it up. She has someone, a good someone with a boat, and Jack is going to sit here until the wanting is something he can carry three miles on a bicycle. Halfway across she pulls the cardigan closed against a wind that isn’t there yet, and then she’s one figure among many at the far edge of the lawn, and then the gold has her."
+          ],
+          "goto": "s16"
+        },
+        {
+          "text": "Put it back unlit.",
+          "tag": "Control",
+          "set": {
+            "e2_cig_lena": "pocketed",
+            "trait.control": "+1",
+            "soul.restraint": "+1",
+            "resolve.jack": "+1"
+          },
+          "response": [
+            "He puts the pack back in his jacket and zips the pocket shut for good measure. “Tapering?” she says. “Like a saint.” She pats the cardigan pocket anyway, twice, the way you’d pat a dog for being good; he can see the small bent shape of Saturday’s through the knit. “When you slip — and you will — I’m going to need a container.”",
+            "At six she stands. Laney needs her for Friday: “She’s ironing a dress that cost more than my first car, and she has never ironed *anything*.”",
+            {
+              "if": "e2_lena_jab && !e2_apologized",
+              "text": "“Mr. Costigan,” she says, by way of goodbye, with a nod you could level a shelf by.",
+              "else": "“Wednesday,” she says, by way of goodbye. “Bring a red pen you’re not afraid of.”"
+            },
+            "Then she’s out across the Commons with her shadow going on ahead of her. He wants her. He says it to himself plainly, because she’d know if he dressed it up. She has someone, a good someone with a boat, and Jack is going to sit here until the wanting is something he can carry three miles on a bicycle. Halfway across she pulls the cardigan closed against a wind that isn’t there yet, and then she’s one figure among many at the far edge of the lawn, and then the gold has her."
+          ],
+          "goto": "s16"
+        },
+        {
+          "text": "Hold out the whole pack: “Save us both the trouble.”",
+          "tag": "Charm",
+          "set": {
+            "e2_cig_lena": "offered",
+            "trait.charm": "+1",
+            "rel.lena.warmth": "+1"
+          },
+          "response": [
+            "She pushes it back at him, flat against his chest, and lets go so he has to catch it. “Oh, no. I collect them one at a time, off your face. Where’s the sport?” Then she looks down at her cardigan pocket, where Saturday’s is still riding, and does some arithmetic. “Although at this rate I’m going to need a container.”",
+            "At six she stands. Laney needs her for Friday: “She’s ironing a dress that cost more than my first car, and she has never ironed *anything*.”",
+            {
+              "if": "e2_lena_jab && !e2_apologized",
+              "text": "“Mr. Costigan,” she says, by way of goodbye, with a nod you could level a shelf by.",
+              "else": "“Wednesday,” she says, by way of goodbye. “Bring a red pen you’re not afraid of.”"
+            },
+            "Then she’s out across the Commons with her shadow going on ahead of her. He wants her. He says it to himself plainly, because she’d know if he dressed it up. She has someone, a good someone with a boat, and Jack is going to sit here until the wanting is something he can carry three miles on a bicycle. Halfway across she pulls the cardigan closed against a wind that isn’t there yet, and then she’s one figure among many at the far edge of the lawn, and then the gold has her."
+          ],
+          "goto": "s16"
+        }
+      ]
+    },
+    "s16": {
+      "slug": "FRIDAY · 1:52 AM · DELGADO HALL, ROOM 412",
+      "body": [
+        "By 1:52 La Flaca is chained to the radiator pipe in the fourth-floor hall, where Priya will have something to say about it in laminate by breakfast, and Jack is at his desk in the dark with his hands still pruned from the Hobart and boysenberry under his nails that no soap in Delgado is going to reach. The secondhand Dell’s fan whines like a mosquito with a grievance.",
+        "He friend-requested her on Tuesday. She accepted at 1:37 Wednesday morning, because of course she was up. He hasn’t looked at her page since. He looks now. It loads the way everything loads on the Dell, in installments, as if it has to be talked into each part.",
+        {
+          "type": "fb",
+          "name": "Magdalena Broussard",
+          "text": "In a Relationship with Wesley Arceneaux",
+          "meta": "New Orleans, LA · Marisol"
+        },
+        "Her photos. He tells himself this is research. February, St. Charles Avenue, a wall of people under a sky of thrown beads: Lena on a stepladder above the crowd, purple and gold to the elbows, both arms up and her mouth open on a shout. Holding the ladder steady with both hands and laughing up at her, a tall sunburned guy in a number nine Brees jersey, who isn’t watching the parade at all.",
+        "Her wall. Laney, inevitably:",
+        {
+          "type": "fb",
+          "name": "Laney Price",
+          "text": "MAGDALENA. THE JELLO SHOTS ARE STILL SENTIENT.",
+          "meta": "Wednesday at 2:14am · 4 people like this"
+        },
+        "And somebody named Tess Fontenot, who writes *mama* like a job title:",
+        {
+          "type": "fb",
+          "name": "Tess Fontenot",
+          "text": "call mama she says u didnt call",
+          "meta": "Thursday at 6:02pm"
+        },
+        "The name in the relationship line is a link. He clicks it before he can decide not to, and Wes Arceneaux’s page assembles itself: the same sunburned guy, squinting into some other sun, and under his name the latest thing he’s told the world.",
+        {
+          "type": "fb",
+          "name": "Wes Arceneaux",
+          "text": "is so tired of reading about the Army Corps of Engineers.",
+          "meta": "Thursday at 9:52pm"
+        },
+        "He backs out to his own home page, as if that’s where he lives. In the right-hand column, under PEOPLE YOU MAY KNOW, there’s a candle where a face should be.",
+        {
+          "type": "fb",
+          "name": "Nora Calloway",
+          "text": "1 mutual friend: Priya Raman",
+          "meta": "People You May Know · Add as Friend"
+        },
+        "He knows the name. It’s on the brass plate under the votives at St. Brendan’s.",
+        "Across the room Theo is awake too, propped against the headboard with his earbuds in and the MacBook lighting his face from below, watching another film with subtitles. He doesn’t look over. Neither does Jack."
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "lena",
+          "title": "Lena Broussard",
+          "text": "Lena Broussard. New Orleans. Two seventeen. Classics. Hale paired us for the semester. Boyfriend: Wes Arceneaux — Tulane, civil engineering, took a boat out in the storm at sixteen. It’s on Facebook. Everybody checked. I checked."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Click the candle.",
+          "tag": "Sincerity",
+          "set": {
+            "e2_fb": "nora"
+          },
+          "response": [
+            "Her page is mostly bare. Selma High School. Marisol. No pictures but the candle. And a wall that runs from April into August, all of it family, plain and unbearable:",
+            {
+              "type": "fb",
+              "name": "Mateo Calloway",
+              "text": "happy early bday sis. 8 days.",
+              "meta": "Monday at 9:40pm"
+            },
+            "And from an aunt, in Spanish:",
+            {
+              "type": "fb",
+              "name": "Graciela Gutiérrez",
+              "text": "Mija, tu abuelita te prende una vela cada mañana. Te queremos para siempre.",
+              "meta": "August 15 at 7:02pm"
+            },
+            "Rafi’s abuela gets him *abuelita*. Four years of Latin get him *siempre*. It’s plenty. He closes the laptop and sits in the dark with his hand flat on the lid."
+          ],
+          "journal": [
+            {
+              "kind": "clue",
+              "id": "candle",
+              "title": "A candle where a face should be",
+              "text": "Nora Calloway. One mutual friend: Priya. The name on the plaque under the candles at St. Brendan’s. Her brother wished her an early happy birthday. Eight days."
+            }
+          ],
+          "goto": "s17"
+        },
+        {
+          "text": "Go back to Wes. Look at his photos.",
+          "tag": "Candor",
+          "set": {
+            "e2_fb": "wes"
+          },
+          "response": [
+            "Wes Arceneaux, in installments. A crawfish boil on a folding table in somebody’s driveway, newspaper spread, a red mountain steaming in the middle. A fleur-de-lis inked on a calf. A Jesuit High lacrosse team in blue and gold, rows of boys squinting into the sun, and him in the back row, a head taller than the rest. The same easy grin in every frame, as if a camera were just another friend who’d shown up. Jack looks for something to dislike, can’t find it, and dislikes that."
+          ],
+          "journal": [
+            {
+              "kind": "person",
+              "id": "wes",
+              "title": "Wes Arceneaux",
+              "text": "Tulane, civil engineering. Took his uncle’s boat out in the storm at sixteen. Crawfish, lacrosse, a fleur-de-lis on his calf. I looked for something to hate. Nothing."
+            }
+          ],
+          "goto": "s17"
+        },
+        {
+          "text": "Write on her wall: “Bus fare: $1.25. Interest accrues. —Youngstown”",
+          "tag": "Reckless",
+          "key": "You wrote on Lena’s wall at two in the morning.",
+          "set": {
+            "e2_fb": "wall",
+            "trait.reckless": "+1",
+            "rel.lena.heat": "+1",
+            "rel.lena.friction": "+1"
+          },
+          "response": [
+            "He types it before the better part of him can get its shoes on.",
+            {
+              "type": "fb",
+              "name": "Jack Costigan",
+              "text": "Bus fare: $1.25. Interest accrues. —Youngstown",
+              "meta": "about a minute ago · Wes Arceneaux likes this."
+            },
+            "The Dell’s clock says 1:58. Jack does the arithmetic: New Orleans is two hours ahead. Four in the morning there, near enough.",
+            "At 2:03:",
+            {
+              "type": "fb",
+              "name": "Magdalena Broussard",
+              "text": "Interest is usury, Mr. Costigan. Look it up. Aquinas.",
+              "meta": "2:03am",
+              "if": "e2_lena_jab && !e2_apologized"
+            },
+            {
+              "type": "fb",
+              "name": "Magdalena Broussard",
+              "text": "Interest is usury, Costigan. Look it up. Aquinas.",
+              "meta": "2:03am",
+              "if": "!e2_lena_jab || e2_apologized"
+            },
+            "He shuts the laptop before he can answer it and lies awake anyway, listening to the fan wind down."
+          ],
+          "goto": "s17"
+        },
+        {
+          "text": "Log off.",
+          "tag": "Control",
+          "set": {
+            "e2_fb": "off",
+            "trait.control": "+1"
+          },
+          "response": [
+            "He shuts the Dell. The dark comes back, all but Theo’s screen across the room, blue and flickering in somebody else’s language. At 2:10 the freight horn comes up off the bluff, long and low, and Jack lies on his back and counts the cars."
+          ],
+          "goto": "s17"
+        }
+      ]
+    }
+  }
+}

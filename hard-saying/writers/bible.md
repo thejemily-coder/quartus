@@ -171,14 +171,23 @@ episode still has a scene where someone eats pie and is ridiculous.
   the facts get personal** — that's where the best duels live.
 - **The arguments are flirtation and also real.** Every duel has a moment where it stops being a game. Winning isn't
   always good. Conceding the right point at the right moment is the most romantic thing either of them can do.
-- **Politics:** both are traditionalists "to an extent." Lena is a pro-life Louisiana Democrat in her bones — union
-  fishermen, Charity Hospital, the levees, the death penalty (against), immigrants (for), Katrina as proof that the state
-  abandons the poor — and she's ferocious about abortion and euthanasia. Jack is a Youngstown Catholic whose father is a
-  Kennedy Democrat and whose own instincts run more conservative on culture and more radical on labor; he distrusts the
-  government *and* the market and reads Distributism with a cigarette. Neither is a party hack. They fight about the
-  health-care bill and Stupak, about Notre Dame giving Obama an honorary degree (May 2009), about Ted Kennedy's funeral,
-  about the death penalty, about immigration, about whether the bishops are cowards or courageous about the abuse
-  scandal (they agree the bishops failed; they disagree about what that means for obedience).
+- **Politics (reconciled with the brief's map after S1E01):** both are *nearly* politically homeless, both deeply
+  pro-life, both convinced that both parties betray the Church, and each thinks the other is wrong for leaning where they
+  lean. **Lena** is a Catholic Worker type (Dorothy Day), a pro-life Louisiana Democrat in her bones — union fishermen,
+  Charity Hospital, the levees, the death penalty (against), immigrants (for), Katrina as proof the state abandons the
+  poor — and ferocious about abortion and euthanasia. **Jack** is more comfortable on the right: a law-and-order Rust Belt
+  conservative raised in a Kennedy-Democrat union house (Frank) who broke with it at the kitchen table. Labor is still in
+  his blood (his father's layoff is personal) and he distrusts the market's mercy as much as the government's, but his
+  instincts run to order, crime and punishment and the culture war, and he votes like it. 🔒 The irony the show never
+  states: the law-and-order boy is the reason his brother is in prison. **Over the run (brief):** Lena's struggle deepens
+  as the Democrats harden on abortion and as the LGBT movement shifts, in her view, from human dignity to remaking sex and
+  the family; Jack keeps hearing racial overtones inside what he considers reasonable disagreements with Obama; the Trump
+  years are very hard on Jack (immigration enforcement turning, as he sees it, into dehumanization); Dobbs (2022) is joy
+  for both, then ash (mailed pills backed by Republicans too, IVF's expansion); both grow disgusted with the whole system.
+  These are convictions written from inside; Margot, Theo, Hale, Kevin, Julian and Yusuf get their best arguments. They
+  fight about the health-care bill and Stupak, Notre Dame and Obama (May 2009), Ted Kennedy's funeral, the death penalty,
+  immigration, Traficant (Jack: a crook; Frank: *our* crook), and whether the bishops are cowards or courageous about the
+  abuse scandal (they agree the bishops failed; they disagree about what that means for obedience).
 
 ### 4.7 How comedy works
 - **Character comedy, never mockery.** The funniest people are funny on purpose (Lena, Theo, Laney, Margot) and the
@@ -236,6 +245,12 @@ of him wants to lose.
 **Want vs. need.** *Want:* to be worth what it cost. *Need:* to accept that he can't be, and that grace is not a payment
 plan.
 
+**Convictions (brief).** Law-and-order Rust Belt conservative (§4.6). **Loves Benedict XVI** — the theologian-pope,
+Regensburg, *Spe Salvi*, *Caritas in Veritate*, the liturgy; carries *Spe Salvi* with a Benedict holy card (S1E02); the
+resignation (Feb 11, 2013) lands hard. **Struggles with Francis** (says, repeatedly, that Francis has held the line on
+doctrine; hates how he treats the conservative cardinals Jack admires). **Adores Leo XIV** (2025). Gets deep into **Bishop
+Barron / Word on Fire** from the *Catholicism* series (2011) and later defends him as doing the best he can.
+
 **Voice.** Wry, allusive, Rust Belt blunt. Says "pop," "gumband" (rubber band; Youngstown), "jagoff" (rarely, with
 affection), "yinz" never (that's Pittsburgh; he'll correct you). Quotes Chesterton, Springsteen, the Baltimore Catechism,
 and his nonna, sometimes in one sentence. Jokes as deflection — when someone gets close, he gets funnier. Under real
@@ -283,6 +298,11 @@ brief — but Jack doesn't, and the player never knows *what* she's lying about.
 
 **Wound.** 🔒 Katrina, and the question of what her mother did or didn't do on the fourth day. Also: the dead girl whose
 bed she slept beside.
+
+**Convictions (brief).** Catholic Worker, Dorothy Day, pro-life Democrat (§4.6). **Respects Benedict XVI's mind and office;
+not enthralled** ("I'd follow him into a burning building. I wouldn't put him on my wall"). **Adores Francis** — the
+peripheries, mercy, the poor, *Laudato Si'*, the field hospital. **Adores Leo XIV.** Likes Barron quite a bit; grows
+dissatisfied with him in the Trump years.
 
 **Want vs. need.** *Want:* to be right — to have argued every case so well that nothing can be her fault. *Need:* to be
 forgiven for something she can't argue her way out of, and to let someone carry it with her.
@@ -361,6 +381,9 @@ gets short.
 **Look (brief).** Golden LA prince. Tall, tanned, artfully messy blond hair, green eyes, very expensive clothes worn like
 they're cheap (a $400 gray T-shirt with a hole in it, Rag & Bone jeans, Visvim boots, a vintage Rolex Submariner that was
 his grandfather's). Looks like a Calvin Klein ad and knows it. **Phone:** iPhone 3GS (June 2009), black, cracked.
+**Car:** his grandfather's champagne-gold 1979 Mercedes-Benz 450SL convertible — two seats, the Rolex's twin — parked in
+the Anacapa lot on a permit he didn't buy (first seen S1E02). Up all hours with foreign films and subtitles on the MacBook
+(*The 400 Blows* at 4 a.m., S1E02); tells people it's "for a class." He is undeclared.
 
 **Arc.** S1: the best friend with a hole in him; the jean jacket in his closet; Evan circling. S2: rushes Sigma Rho,
 spirals; the anniversary; in the S2 finale tells Jack the truth on the cliff. S3: tries to get clean; a dangerous romance
@@ -907,6 +930,53 @@ crawl. Family business: **Broussard's Seafood**, a market on Banks Street.
 - **Mémère — Odile Broussard, 88.** Tony's mother, Breaux Bridge, speaks Cajun French first, makes the best gumbo in
   Louisiana, thinks Jack is "un bon garçon mais trop maigre."
 
+### 10.10 CALEB HARGROVE — Hale's acolyte (added after S1E01)
+Born **March 3, 1991** — 18. Visalia (Tulare County). Homeschooled until tenth grade, then Redwood High '09. Philosophy.
+PHIL 9H. Portolá Hall.
+**Who he is.** A Pentecostal (Assemblies of God) pastor's son, raised on tongues and the King James ("Selah," "verily," by
+reflex). Deconverted at sixteen reading *The Consolations of Disbelief*; now Hale's most devoted reader — forty Post-its, a
+signed copy, a Darwin fish on his laptop. Fast, funny, a little desperate, generous like a puppy; does tongues at parties as
+a bit and looks sick afterward. 🔒 **Why he left:** at fifteen his father's church collapsed when the treasurer emptied the
+building fund; the congregation scattered; his father's faith stayed untouched and serene, and Caleb could not forgive the
+serenity (Hale's own wound a generation down; Hale will recognize it and use it). 🔒 He wrote Hale **four letters of
+devotion; Hale never answered** — Hale writes only to believers who fight him. Caleb learns in S1E02 that Hale answered
+Jack, and in S1E14 that he answered Lena. **Arc (MS):** S1 the boy Hale's book worked on, Jack's comic shadow; S2 Lena beats
+Hale at the Forum and something in Caleb cracks; S3 he turns up at Laney's hospital room with a deck of cards; S8 (open) the
+Easter Vigil — a back pew, gone before the Gloria. Never a strawman: his unbelief is honest grief, and he's right that his
+father's church was a con for some of the people in it.
+**Voice.** Central Valley twang, rapid, King James cadence used ironically; self-deprecating; "dude" in moments of terror.
+- *"He wrote you back? I wrote him four letters. Four. I used a thesaurus on the third one."*
+
+### 10.11 YUSUF NOORZAI — the third believer at the table (added after S1E01)
+Born **November 12, 1990** — 18. Fremont, California (Little Kabul). Mission San Jose High '09. Aerospace engineering; PHIL
+9H as his honors GE. Cabrillo Hall. Afghan-American, Sunni, devout and unshowy: finds a quiet stairwell for the prayers,
+fasts Ramadan (Aug 22 – Sept 19, 2009 — he's fasting through Hale's first seminar), doesn't drink, plays cricket on the
+Commons with grad students on Sundays. Dry, kind, precise; calls Jack and Lena "the Catholics"; Margot calls the three of
+them "the Abrahamic bloc." Father **Ahmad**, a 1985 refugee by way of Peshawar, works the line at **NUMMI**, the GM–Toyota
+plant in Fremont: GM pulled out in June 2009 and Toyota announced in late August it would close the plant in spring 2010
+(Researcher to verify). Two sons of auto workers at Hale's table. Mother **Farida** runs a home daycare. Older brother
+**Tariq**, 24, is a contract interpreter with the US Army in Helmand. 🔒 Tariq is wounded by an IED in late November 2009;
+Yusuf gets the call the week of the West Point speech (S1E19). **Arc (SEA→MS):** S1 a friend at the table; E04 the
+health-care night; E19 Tariq; S2 NUMMI closes (April 2010). The only arguments in the show where three people agree on
+the first premise. Never a token: his own jokes, his own doubts (angrier at the Taliban than at God, and at America for
+leaving the first time).
+**Voice.** Bay Area understatement; deadpan; "inshallah" only when he means it; engineering metaphors ("load-bearing,"
+"factor of safety"); a running bit about Catholic potlucks.
+- *"I'm fasting, Professor. My soul is the only part of me that isn't hungry."*
+
+### 10.12 RUDY SALCEDO — the Anchor's line cook (added after S1E01)
+Born **March 30, 1966** — 43. Oxnard, then Marisol's Westside. Six years at Soledad (Correctional Training Facility) for
+the armed robbery of a liquor store at nineteen (1985–1991; a starter pistol, a pint of Bacardi in him, nobody hurt).
+Sober since 1994 (AA, Tuesday nights in St. Brendan's parish hall). Gloria hired him in 1995 when nobody would. Nights on
+the line. A rosary tattooed around his left wrist (done inside); Vin Scully on a transistor; Louis L'Amour paperbacks in
+his apron; the 9:30 at St. Brendan's, back row (he nods to Ray Ochoa; they don't talk). Gentle, slow, deadpan about the
+dish machine ("Hobart. Older than you, meaner than Gloria"). Never volunteers prison, never hides it. His mother rode three
+buses from Oxnard every other Sunday for six years. 🔒 **Role:** Jack's mirror for Danny; after E03 Jack can't look at
+him for a while. E15: "I know what an errand is, mijo" (Rafi's offer). S8: Danny visits for graduation and he and Rudy talk
+at the counter for an hour about nothing. Not a saint: a temper he manages like a stove.
+**Voice.** Soft, unhurried, Westside Chicano; "mijo"; never raises it.
+- *"First time I washed dishes was at Soledad. Six years. Best job in the building — it's warm, and nobody bothers the dish man."*
+
 ---
 
 ## 11. THE NEWMAN CENTER CAST (St. Brendan the Navigator)
@@ -956,8 +1026,9 @@ crawl. Family business: **Broussard's Seafood**, a market on Banks Street.
   Calloways' request.
 - **Brooks Callahan** (b. July 4, 1988), senior, Sigma Rho, Newport Beach, lacrosse, Catholic-on-paper (Mater Dei), Lena's
   S2 rebound. Charming, entitled, not evil; wants what he wants; ends badly at the Sigma Rho winter formal (Feb 2010).
-- **Gloria Mendes**, 63, night waitress at the Anchor diner for 30 years. Rates customers like pies. Gives Jack the
-  dishwasher job (S1E02).
+- **Gloria Mendes**, 63, night waitress at the Anchor diner for 30 years. Rates customers like pies (Jack: "Lattice-top.
+  Pretty on top. Everything's leaking underneath."). Hires Jack as night dishwasher (S1E02: "Four out of ten? Hon, you're
+  hired."): Tue/Thu/Sat, 7 p.m.–1 a.m., $8.00/hr (California minimum, 2009) plus a share of tips.
 - **Tom and Rosa (Gutiérrez) Calloway**, Nora's parents, raisin farmers near Selma (Fresno County). 🔒 Their parish in
   Selma whispered suicide. Rosa has not been to Communion since — she believes she failed her daughter. Appear S4–S5.
 - **Carly Benedetto**, 19, Youngstown, Jack's friend from Mooney, at Youngstown State. 🔒 The girl Jack hit Mikey
@@ -999,6 +1070,10 @@ At 6:48 a.m. on August 29, 2009, before the first line of the pilot, these peopl
 - **Sloane** knows: Nora; that Nora was "seeing someone older"; that Nora left the party around 10:50 p.m. upset.
 - **Margot, Laney, Jack**: know none of these people and nothing about Nora.
 
+**Updated after S1E01 (the played path):** Hale has now seen both faces — at the Anchor, Aug 30, ~1:35 p.m., a girl who
+walked out on his magazine and a boy who went after her — and attaches the names in S1E02. Theo has seen Lena (the
+Lighthouse stairs) but never spoken to her; Margot has not met Lena; Laney does not know Jack's surname until S1E02.
+
 **Pretended first meetings in the pilot:** Theo and Kevin (both pretend). Lena and Kevin (Kevin may half-recognize her;
 he says nothing; she doesn't recognize him). Lena and Osei (*not* pretended — Osei greets her warmly: "Magdalena. You
 came back." She explains to Jack: "Preview weekend. In April." True).
@@ -1007,9 +1082,9 @@ came back." She explains to Jack: "Preview weekend. In April." True).
 
 | Who | Secret | Who else knows at pilot | Player learns (planned) |
 |---|---|---|---|
-| Jack | Threw the punch; Danny took the fall (§17) | Frank, Danny, Nonna (suspects→knows), Carly | Danny in prison: S1E03 (or pilot, by choice). The truth: S2E21 (Jack tells Theo, in exchange) — the player has been Jack all along; the narration has *elided*, not lied. See §15 for the elision rule. |
+| Jack | Threw the punch; Danny took the fall (§17) | Frank, Danny, Nonna (suspects→knows), Carly | Danny in prison: S1E03 (the pilot's two-truths reveal was NOT taken; Theo learns it with the player). The truth: S2E21 (Jack tells Theo, in exchange) — the player has been Jack all along; the narration has *elided*, not lied. See §15 for the elision rule. |
 | Lena | Preview Weekend; the test; the lie to police (§18) | Fr. Osei (seal) | That she knew Nora: S1E13. That she was her host: S1E13. The test: S3E18. The confession to Osei: never stated; inferred. |
-| Lena | Grandmère at Memorial (§18) | Celeste; Luc partly | That her grandmother died in the storm: S1E04ish. Memorial: S1E18 (phone, Thanksgiving). The full story: adult seasons. |
+| Lena | Grandmère at Memorial (§18) | Celeste; Luc partly | That her grandmother died in the storm: S1E06, from Lena on the walk home (the pilot's HEART branch did not fire). Memorial: S1E18 (phone, Thanksgiving). The full story: adult seasons. |
 | Lena | Wes is slipping | — | S1E19–21 |
 | Theo | The Point (§20) | Fr. Osei (seal); Kevin (partial) | S2E22 |
 | Kevin | Gay; Preview night with Theo | Margot (from S1E07) | Gay: S3 (to Jack directly); the Theo night: S4 |
@@ -1026,6 +1101,9 @@ came back." She explains to Jack: "Preview weekend. In April." True).
 | Celeste | Memorial | — | Adult seasons |
 | Wes | The attic; losing God | — | S1E09 (Jack hears it on the beach) |
 | Doug | Sleepwalking fire-alarm | — | S1E20 (comic) |
+| Caleb | Why he left; Hale never answered his letters | — | Hale's silence: S1E02 (on the page); why he left: S2 |
+| Yusuf | (nothing hidden yet) — Tariq's wounding is future | — | S1E19 |
+| Rudy | (not secret) six years in Soledad | everyone at the Anchor | S1E02 |
 
 ## 15. The elision rule (how close third keeps Jack's secret honestly)
 
@@ -1271,8 +1349,14 @@ years that her daughter killed herself and her grandchild. In S5, Rosa receives 
 - 🔒 It is Sunday morning. He was leaving the flowers.
 
 **S1 seeds and turns:**
-- E02: Jack Facebook-stalks; Nora's memorial page shows up in "People You May Know" via Priya (a candle icon). Hale's first
-  seminar.
+- E02 (re-planned after S1E01): Hale's first seminar — Phineas Gage ("Gage was no longer Gage"; Jack's hand goes to the
+  eyebrow; 🔒 Mikey); if Jack's heart answer, John 6:68 aloud (the plaque's words; Hale: "I was made to learn it"). Caleb:
+  "He wrote you *back*? I wrote him four letters" — Lena silent beside them. Hale recognizes the girl who fled the Anchor
+  (Lena's medal lie: "something on the stove"). Evan is the driveway man and the Thursday TA; if Jack mentions the
+  Lighthouse, Evan says he doesn't go to parties and asks only who Jack came with. Facebook "People You May Know": a candle,
+  "Nora Calloway · 1 mutual friend (Priya Raman)" (no Lena, Julian or Sloane anywhere on it). Wes: a status about the Army
+  Corps of Engineers; a "like" at 3:58 a.m. Central; the first missed 8:04 call. Kevin's smooth lie ("Met him at the floor
+  meeting"). Rudy's mother, three buses every other Sunday (🔒 rhymes with Maria and Danny). Doug last out at the alarm.
 - E04 (Sept 8, Nativity of Mary — Nora's 20th birthday): fresh flowers *and* a birthday balloon at the cross; Lena absent
   from seminar; Julian sings "Fresno" Thursday at Café Bastille; Priya tells Jack Nora's name and that she was her
   roommate. Jack's first real awareness. **Journal: Nora becomes a person card.**
@@ -1366,6 +1450,27 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 38 | Danny's letters ("Professor") | RUN | S1E03 | S2E21 | S8 Danny home | planned |
 | 39 | Hale's Compline | MS | S2E09 | S4 | AD deathbed | planned |
 | 40 | The monarchs in the Grove | RUN (seasonal) | S1E13 | each Nov | AD | planned |
+| 41 | Caleb Hargrove (Hale's acolyte) | MS | S1E02 | S1E14 learns of Lena's card; S2E16 the Forum | open (S8 Vigil, back pew) | planned |
+| 42 | Yusuf, NUMMI and Tariq | SEA→MS | S1E02 | S1E19 Tariq wounded | S2 NUMMI closes (Apr 2010) | planned |
+| 43 | Rudy (the dish pit; Danny's mirror) | MS | S1E02 | S1E15 "I know what an errand is" | S8 Rudy and Danny at the counter | planned |
+| 44 | The popes: Benedict → Francis → Leo XIV | RUN | S1E02 (*Spe Salvi* holy card) | S8E05 resignation (Feb 11, 2013); S8E07 Francis (Mar 13, 2013) | AD May 8, 2025: Leo XIV — rare full agreement, joy | planned |
+| 45 | Bishop Barron / Word on Fire | MS→RUN | S5 (*Catholicism* on PBS, Oct 2011) | AD 2015 auxiliary of LA; Trump years, Lena sours | AD 2022 Winona-Rochester; Jack defends him | planned |
+| 46 | Marital submission (Ephesians 5) — reserved | MS | S1E06 Margot's seed | S3E17 Peter & Kenzie's wedding reading (a look; tabled) | **S7E09 "Subject"** — only once they're seriously together (§24.5) | planned |
+| 47 | The politics map (brief) | RUN | S1E02 (Traficant) | S1E04 "You lie!"; S1E16 Stupak/Manhattan; S7 2012 election | AD Trump years; Dobbs (joy → ash) | planned |
+| 48 | The Saints' 2009 run (Lena's religion within a religion) | SEA | S1E02 (WHO DAT shirt; the chant on the beach) | weekly (§22 Saints ledger) | Dec 19 first loss (Christmas break) → S2 Super Bowl | planned |
+| 49 | Big Sur road trip (bottle episode on the move) | EP | S1E11 | — | S1E11 | planned |
+| 50 | The paired papers (designated antagonists) | SEA | S1E02 | S1E14 Hale reads their margins aloud at dinner | S1E22 oral exam: each asked the other's best argument | planned |
+| 51 | Theo's secret cinephilia | MS | S1E02 (*The 400 Blows*, 4 a.m.) | S2 a film class under a fake major | S6–S7 the Lordstown documentary | planned |
+| 52 | La Flaca (Rafi's bike) | SEA | S1E02 | — | S1E22 Jack tries to give her back; Rafi: keep her | planned |
+
+**Status after S1E01 (played path):** #1 open — porch near-kiss held; Lena took the cigarette; Jack won the first duel and
+gave her the last word; he let her know he was on the stairs. #2 seeded (all pilot seeds landed; cove seed not seen — Theo's
+"exchange rate" question unasked on this path, re-seed it in E03 or E12). #3 seeded — Danny **not** named at Marisol.
+#4 seeded ("Abandoner": Jack chose Lena and Laney over the cove). #5 open (Jack carried Laney). #6 starts E02. #7 Hale has
+not met Jack (he followed Lena out); first meeting E02. #13/#14 Margot: "And every father" — she's opened a file; she coins
+"useful idiots" aloud in E02 (whiteboard still E04). #16 seeded (MEMORIAL; "Mama said don't"). #28 starts E02. #29 one
+cigarette in her pocket. #30 tellings: Theo swan; Lena pierogi + Archbishop; Osei "a fight" (honest, partial). #32 Anchor
+(4/10 marionberry) → hired E02.
 
 ## 22. SEASON 1 — FALL 2009 (22 episodes, Aug 29 – Dec 18, 2009)
 
@@ -1376,23 +1481,36 @@ Aug 31; Labor Day Sept 7; Thanksgiving break Nov 25–29; finals Dec 14–18.*
 Station Fire above La Cañada; Frank sees the Pacific. Move-in, Theo, the floor meeting; the Lighthouse party; the back
 porch; Mass at St. Brendan's; the first duel; Hale in a diner booth; the stairwell call ("Wes"); sand on Theo's feet.
 
-**E02 · "The Examined Life"** · Mon Aug 31 – Fri Sep 4 · Feast of St. Gregory the Great (Sept 3); full moon Fri Sept 4.
-First week of classes. Hale's PHIL 9H opens: "Prove to me you have a soul." Jack and Lena both in it — and in Evan's
-Thursday section. Hale pits them against each other within ten minutes. Jack gets the dishwasher job at the Anchor (Gloria).
-Facebook: "In a Relationship with Wesley Arceneaux." Becca invites Jack to the Newman Welcome BBQ. Laney's Pi Lam
-recruitment begins. Full-moon beach night: Theo's first drive-to-LA pitch. The 3 a.m. fire alarm, first of many.
+**E02 · "The Examined Life"** · Mon Aug 31 – Fri Sep 4 · St. Gregory the Great (Thu Sept 3; weekday Gospel Luke 5:1–11,
+"Depart from me, Lord, for I am a sinful man"); Ramadan; full moon Fri Sept 4. *(Re-planned after S1E01; full plan in
+`outlines/s1e02.md`.)* Cold open: the first 3 a.m. fire alarm, the whole floor on the lawn; Theo meets Lena ("I like her.
+She's mean"). Hale's PHIL 9H: "Prove to me you have a soul" — a four-move duel **against Hale**, Lena as rival and ally
+(Ryle's ghost; 🔒 Phineas Gage; Lena vs. Jack on form vs. interior; the genetic debunking); Hale pairs Jack and Lena as
+**designated antagonists** for the semester (weekly papers, annotated in each other's margins). New at the table: Caleb
+Hargrove, Yusuf Noorzai. Margot meets Lena in PHIL 1 and says "useful idiots" aloud. Gloria hires Jack ("Four out of ten?
+Hon, you're hired"); Rudy Salcedo; Rafi lends him La Flaca. Frank home ("How's the pelican?"); Traficant; the letter to
+Danny (elided). Osei: "the box or the board" (fork). Daily Mass; Kevin's lunch (a smooth lie about Theo). Evan's Thursday
+section — the driveway man. Lena names Wes to Jack's face; the second cigarette ("I'm going to need a container").
+Facebook: In a Relationship; 🔒 Nora's candle; 🔒 Wes awake at 3:58 a.m. Laney's Pi Lam open house (fork: with Lena / with
+Margot and Kevin). The full-moon beach; Lena teaches the Who Dat. Theo's 450SL and the pitch: "Full moon, Costigan. LA is
+three hours. Get in the car." (`e2_la`). Becca invites Jack to the Sept 19 BBQ.
 
 **E03 · "Labor"** · Sat Sep 5 – Mon Sep 7 (Labor Day). Theo takes the floor to his father's Malibu house (Station Fire
 ash still on the deck furniture); Richard Vance appears for six minutes and is magnetic and awful. Jack gets a call on the
 house phone forwarded from his cell: *"This is a prepaid call from… an inmate at Trumbull Correctional Institution."*
-Danny. (If the player revealed Danny in the pilot's two-truths, Theo already knows and handles it beautifully.) Lena's
+Danny. (The pilot's two-truths reveal was not taken: Theo learns it here, in the room, and handles it beautifully.)
+*(After E02: open per `e2_la` — "tonight": dawn in Malibu, the floor arrives by noon in Kevin's mother's minivan;
+"tomorrow": the convoy, the SL and the minivan; "broke": Theo's nine a.m. ambush with a full tank. The Reliquary tin
+appears — she said she'd need a container. Rudy's "every other Sunday" should rhyme in Jack's head when the call comes.
+Jack's law-and-order politics vs. his father's layoff make the labor duel personal; she wins it.)* Lena's
 and Jack's first real fight about labor: Frank, GM, the bailout, *Caritas in Veritate* §25 (on unions). She wins it.
 
 **E04 · "Nativity"** · Tue Sep 8 – Sat Sep 12 · Nativity of Mary (Sept 8) — Nora's birthday. Obama's health-care address
 to Congress (Sept 9; "You lie!"): the lounge erupts — Margot, Lena, Jack, Kevin, Theo (who's only there for the snacks).
 Margot's whiteboard debuts. Lena absent from seminar; balloon and flowers at the cross; Julian sings "Fresno" at Café
-Bastille Thursday; Lena leaves in tears; Priya tells Jack about Nora. Jack learns Lena's grandmother died in Katrina
-(nothing more).
+Bastille Thursday; Lena leaves in tears; Priya tells Jack about Nora. *(The grandmother beat
+moves to E06: the pilot's HEART branch didn't fire, and Lena should tell him herself.)* Yusuf is in the lounge for the
+speech.
 
 **E05 · "Moral Luck"** · Sun Sep 13 – Thu Sep 17 · VMAs (Kanye/Taylor, Sept 13); Exaltation of the Cross (Sept 14); Our
 Lady of Sorrows (Sept 15). Hale's seminar on Williams's "Moral Luck": Jack argues with a ferocity no one understands.
@@ -1403,7 +1521,9 @@ texts that a girl at Ursuline called her "the convict's sister." Pi Lam bid day;
 Welcome BBQ and beach cleanup; Becca's first date with Jack (a disaster that's sort of charming); Peter & Kenzie's
 "chastity story" talk; Tyler wants coffee. Rafi's father is a cop (a traffic stop with Ray Ochoa that Rafi talks them
 out of). Laney's bid-day party; Lena as the designated adult; Jack and Lena share the walk home again — first real
-confession-adjacent talk (about home).
+confession-adjacent talk (about home): **Lena tells him her grandmother died in the storm, in '05** (nothing about
+Memorial). At the chastity talk's Q&A, Margot reads Ephesians 5:22–24 aloud and asks Kenzie whether she plans to submit;
+Kenzie's answer is better than Margot expected, and Peter's isn't (🔒 seed for §24.5).
 
 **E07 · "Cloves"** · Tue Sep 22 – Sat Sep 26 · FDA flavored-cigarette ban takes effect (Sept 22); fall equinox. Margot
 holds a wake for clove cigarettes on the Delgado roof. Margot's episode: she and Lena argue abortion at 2 a.m. and it
@@ -1422,14 +1542,19 @@ her." Lena sees Jack and Wes come back at dawn arm in arm and doesn't know what 
 
 **E10 · "Midterms"** · Tue Oct 13 – Sat Oct 17 · "Balloon Boy" (Oct 15). The library all-nighter: Jack and Lena, the
 eighth floor of Pacifica Library, 4 a.m., restraint-is-the-fire scene #1 (her head on his shoulder; he doesn't move for an
-hour; his arm dies; he doesn't move). Laney's Xanax and a pledge event; Lena and Laney's first real fight; Laney tells
+hour; his arm dies; he doesn't move). Priya's breakdown over orgo: she shows Jack Nora's box in the RA
+storage closet and won't open the journal (moved from E11). Laney's Xanax and a pledge event; Lena and Laney's first real fight; Laney tells
 Jack about Kaylee, drunk, on the Delgado steps. Becca ends it: "You look at me like I'm homework."
 
-**E11 · "Ordinariate"** · Sun Oct 18 – Sat Oct 24 · Vatican announces the personal ordinariates for Anglicans (Oct 20):
-Jack and Lena argue it (she's thrilled; he's suspicious of "converts by the busload" — then concedes, or not). Priya's
-breakdown over orgo; she shows Jack Nora's box in the storage closet and won't open the journal. Theo, Rafi and a drive to
-Tijuana Jack refuses or doesn't (fork). Evan's section: a quiet scene where Evan reads Kierkegaard aloud and his voice
-goes.
+**E11 · "Big Sur"** · Tue Oct 20 – Sun Oct 25 · The Vatican announces the personal ordinariates for Anglicans (Oct 20).
+**The road-trip episode** (brief, Season 1 wish; a bottle episode on the move). Theo's 450SL holds two, so Kevin borrows his
+mother's Odyssey: Jack, Lena, Laney, Theo, Margot and Kevin go up Highway 1 on Saturday — Bixby Bridge, Nepenthe, the New
+Camaldoli Hermitage (Lena wants the monks' fruitcake and Vespers; Margot wants to see "a functioning patriarchy in its
+natural habitat"), a breakdown near Gorda, a motel with one working heater. The ordinariate argument happens in the car
+(she's thrilled; he's suspicious of "converts by the busload" — then concedes, or not). Sunday Oct 25: the Saints, down
+24–3 at Miami, come back to win 46–34 on an AM station fading in and out through the canyons — Lena screaming at a radio
+on the coast road. Opens Thursday with Evan reading Kierkegaard aloud in section until his voice goes. (Theo/Rafi Tijuana
+fork cut; the box moved to E10.)
 
 **E12 · "All Hallows' Eve"** · Fri Oct 30 – Sat Oct 31. Las Olas Halloween: 30,000 people in costume on the bluffs. Jack
 and Lena end up in accidentally complementary costumes (he's Binx Bolling — no one gets it — she's Flannery O'Connor with
@@ -1481,6 +1606,14 @@ mariachi. That night, the east stairwell: Wes ends it. Jack sits with her until 
 try; Lena's resolve is high and her heart is shattered; she stops him gently, or he stops himself; the cost and grace of
 either is in the outline.)
 
+**Saints ledger** (brief: Lena's weekly religion within a religion; scores per period sheet, some UNVERIFIED): E02 the WHO
+DAT shirt; the chant on the beach (nine days out) · E05 Sun Sep 13, Detroit, W 45–27 (Sully's — she demands it) · E06 Sep 20
+at Philadelphia W · E07 Sep 27 at Buffalo W · E08 Oct 4 Jets W (4–0) · E09 bye week (Wes visits; they talk Saints all night)
+· E11 Oct 25 at Miami (the radio in Big Sur) · E13 Mon Nov 2 Atlanta, Monday night, after the Book of the Dead · E15–E16 Nov 8
+/ Nov 15 · E17 Nov 22 at Tampa (10–0) · E18 the Thanksgiving call (the Patriots on Monday) · E19 Mon Nov 30 Patriots (11–0) ·
+E20 Dec 6 Washington in overtime (12–0) · E22 Dec 13 at Atlanta (13–0, Gaudete Sunday) · Sat Dec 19 Dallas, the first loss
+(Christmas break; she texts Jack one word).
+
 **E22 · "Gaudete"** · Sun Dec 13 – Fri Dec 18 · Gaudete Sunday (rose vestments); finals. Hale's oral exam (Jack and Lena,
 back to back; Hale asks each of them the other's best argument). The Newman Christmas party. Margot lights a candle "for
 research." The last night: Lena's laptop, the photo of Nora in the jean jacket. "They never found it." **Smash to black.**
@@ -1523,7 +1656,8 @@ Kenny's speech (July 20) make the seal of confession front-page news. **Aug 29, 
 a.m. for the first time since April. He gets on a plane.
 
 **S5 — Fall 2011 (Aug 29 – Dec 16).** Juniors. Wes's funeral (S5E01) in New Orleans. The seal on trial: Fr. Osei
-subpoenaed; contempt; five nights in county jail. Margot vs. Jack: the war. Theo's plea. Rosa Calloway at Communion.
+subpoenaed; contempt; five nights in county jail. Margot vs. Jack: the war. Theo's plea. Rosa Calloway at Communion. Barron's *Catholicism* airs on PBS (from Oct 2011): Jack watches it in the
+Newman lounge every week; Lena comes for the Chartres episode and stays.
 Danny's judicial release (Nov 2011) if Jack's path supports it. Sol returns with a film. Lena dates a law-school-bound
 Jesuit-educated guy who's perfect on paper (Andrew) — another person who wants something else.
 
@@ -1536,7 +1670,8 @@ eyes open.
 the Broussards as Lena's boyfriend, officially; Tony and Jack go fishing; Celeste and Jack talk in the kitchen. Lena meets
 Danny out of prison (if released).
 
-**S7 — Fall 2012 (Aug – Dec).** Seniors. The 2012 election (Nov 6): the duel to end all duels. Jack tells Donna
+**S7 — Fall 2012 (Aug – Dec).** Seniors. **S7E09 "Subject": the Ephesians 5 conversation** (§24.5). The 2012 election
+(Nov 6): the duel to end all duels. Jack tells Donna
 Kostelnik the truth; then the prosecutor. The dangerous nights are possible again — they're in love, they're adults,
 they're exhausted. Whatever happened earlier is part of who they are now.
 
@@ -1549,7 +1684,9 @@ the Point, or at the Anchor — player's choice.
 New Orleans at Holy Rosary (summer 2014 or 2015 by path), Osei presiding, Theo best man, Laney maid of honor, Julian
 playing, Margot as "witness for the prosecution," Kwame in the back. Hale's death (2015). Celeste's confession at the
 rehearsal dinner. Children; money; Danny as godfather; the closing of Lordstown (March 2019) and Theo's film about it;
-Frank's last day.
+Frank's last day. The Trump years are hard on Jack (immigration); Lena sours on Barron and Jack defends him. **Dobbs
+(June 24, 2022)**: joy for both, then ash. **May 8, 2025: Leo XIV** — both of them, for once, in complete agreement; play it
+as joy and relief, maybe a reconciliation.
 
 ## 24. THE ROMANCE ROADMAP — restraint is the fire
 
@@ -1607,6 +1744,22 @@ honest that waiting had costs too.
   resolve dips through Theo instead); Paige (player can decline — then Jack's S3 is about Theo's secret alone, and the
   first kiss comes sooner and worse).
 
+### 24.5 The Ephesians 5 conversation (reserved; brief directive)
+- **When:** S7E09 "Subject" (late Oct 2012), not before they are seriously together. It can play as a full duel and define
+  the episode.
+- **Seeds only before then:** S1E06 Margot reads Eph 5:22–24 at the chastity talk Q&A; the Sunday before the pilot (Aug 23,
+  2009) had Eph 5:21–32 as the second reading, so both heard it at home the week they left — a callback either can spring;
+  S3E17 Peter and Kenzie's wedding uses the reading and Jack and Lena exchange a look and table it.
+- **Texts:** Eph 5:21–33 ("Be subject to one another out of reverence for Christ"; "Husbands, love your wives, as Christ
+  loved the church and gave himself up for her"); *Mulieris Dignitatem* §24 (mutual subjection); John Paul II's Theology of
+  the Body audiences on Ephesians 5 (1982); *Casti Connubii* (1930); headship as service and sacrifice vs. as authority.
+- **What each of them hears (don't assume sides):** 🔒 Jack's father exercised headship once that mattered — he decided,
+  alone, that Danny would carry Jack's cross. Jack may argue against authority-headship from inside that wound, or defend it
+  as the terrible cost of being the one who decides. 🔒 Lena's mother followed orders onto a boat and left her own mother
+  upstairs; at home Tony's loud headship is warm theater and Celeste runs everything in a whisper. Lena may argue mutual
+  subjection as the only safe kind, or argue that she wants a man who will carry a decision so she never has to be the
+  woman on the stairs. Both intelligent, personal, surprising. Margot's critique is setup only; the conversation is theirs.
+
 ---
 
 # PART IV — THE WORLD
@@ -1639,6 +1792,10 @@ practicing Catholics; Newman's Sunday attendance is about 600 across five Masses
   bougainvillea; Philosophy, Classics, Religious Studies. **Hale's office: Hollis 314** (third floor, a window on the sea,
   a carpet with a wine stain shaped like Italy). Seminar room **Hollis 302** (PHIL 9H; long oak table, twelve chairs,
   a radiator that knocks). **Hollis 108** (Evan's section; a basement room with one window at ankle height).
+- **Sandoval Hall 1** (east of the Commons): a 1971 lecture hall, 400 orange flip-down seats, a stage, a wireless mic Hale
+  refuses to clip on. PHIL 1 lectures Tue/Thu 9:30–10:45.
+- **Anacapa Commons** (the freshman dining hall, between Delgado and Serra): salad bar, a waffle iron with a line, Kevin's
+  protein ratios.
 - **Pacifica Library** ("the Brick"; south side of the Commons): eight-story brutalist tower; the 8th floor is silent
   study with a view of the Channel Islands on clear days; the 24-hour study room in the basement during finals.
 - **Sciences** (east): the Chem building where Kevin lives in his head; the **Marine Lab** on the beach below the east
@@ -1704,7 +1861,8 @@ women's bathrooms at each end of each floor). Home to 310 freshmen.
 - **Old Mission Nuestra Señora del Mar** (fictional, 1790s adobe): Christmas Midnight Mass, Holy Week, weddings.
 - **The Anchor:** a 24-hour diner on the harbor wharf; Formica, red vinyl booths, a counter with spinning stools, a pie
   case, a jukebox with Sinatra, Otis, Patsy Cline, the Eagles, and inexplicably one Mariah Carey. Gloria Mendes runs the
-  night shift. Jack washes dishes there from S1E02. Pie of the day on a chalkboard; Jack rates them (marionberry 4/10,
+  night shift; Rudy Salcedo works the line. Jack washes dishes there from S1E02 (Tue/Thu/Sat, 7 p.m.–1 a.m.; the Hobart
+  dish machine). The 11 bus stops at 12:30 a.m.; Jack rides home three miles on La Flaca. Pie of the day on a chalkboard; Jack rates them (marionberry 4/10,
   "Dad would complain"; olallieberry 9/10).
 - **Café Bastille:** indie coffee on Mission; mismatched chairs, French posters, Thursday open mic (Julian), a barista with
   a Che tattoo who argues with Lena about Che.
@@ -1763,6 +1921,12 @@ women's bathrooms at each end of each floor). Home to 310 freshmen.
 - **The Anchor pie ratings.** Jack's chalkboard rankings, which Gloria posts by the register.
 - **Gina's texts.** All lowercase, no punctuation, devastating: "nonna asked if u have a girlfriend i said yes shes a nun".
 - **Jack's flip phone**: the cracked hinge; the T9; the screen that only lights at an angle.
+- **The paired papers.** From S1E02, Hale's designated antagonists: every week Jack and Lena swap two-page papers and
+  annotate each other in red. Her margins: "NO." "Cite me." His: "This is the best paragraph I've read this year. I hate
+  it." The margins are where they say what they can't say out loud. (Payoff: E14, E22.)
+- **La Flaca.** Rafi's rusted single-speed beach cruiser with coaster brakes, lent to Jack "till Christmas" (S1E02): "Not
+  stolen. Abandoned. My abuela says there's about a week's difference."
+- **The Benedict holy card.** Jack's bookmark in *Spe Salvi* (S1E02); it migrates from book to book all season.
 - **Lena's boots.** Brown Justins, resoled twice. When she's wearing Keds, she's happy. When she's barefoot, something's
   wrong.
 
@@ -1788,6 +1952,8 @@ joke with teeth).
 prayer life (high baseline), Wes (a slow drain S1), Laney (draining), her grief and secrets (deep drain when stirred —
 the Times article, All Souls, the anniversary), exhaustion (finals), alcohol (she drinks moderately; when she drinks to
 forget, it's a signal). Track her value in `continuity.md` at the end of every episode.
+- **Played (S1E01):** ended at **6** (porch 6, Mass 8, Anchor 6). **S1E02 plan:** 7 (the seminar), 8 (daily Mass), 6 (Wes
+  misses the 8:04 call); ends 6.
 - Pilot baseline: **7** at move-in; **6** after the party (Laney, the Lighthouse — 🔒 the house itself costs her); **8** after
   Mass; **6** after the diner (the magazine); **6** at the tag (Wes, the article she hasn't read).
 
@@ -1870,3 +2036,16 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
   over the run (see brief). Benedict is the reigning pope in S1: use it now (Jack's love, Lena's respect without
   enthrallment). Showrunner: add Benedict's resignation and Francis's election (Feb–Mar 2013), the *Catholicism* series
   (2011) and Word on Fire's rise, and the long-range Francis and Barron arguments to the arc registry.
+
+### Revision log — after S1E01 was played (Showrunner, 2026-10-19)
+| Date | Episode | Change | Why |
+|---|---|---|---|
+| 2026-10-19 | S1E01 played | **Path canon recorded:** living room route (Laney, "Sad Irish Poem"; the Jell-O shot in the flannel pocket); porch: pierogi, "classified," Lena took the cigarette (`reliquary` 1); walked Lena and Laney home (no cove; Theo's "exchange rate" question unasked; "Abandoner"); Margot "loves everybody and expects things" / "And every father"; Osei got "a fight" (honest, partial); prayed for Lena at Mass; **duel RIGOR win for Jack**, then gave her the last word (season duel record 1–0 Jack); followed Lena out of the Anchor (Archbishop) — **Hale has not met Jack**; told Mom about the girl; coughed on the stairwell (Lena knows he heard Wes); Reply All (Lena replied). Danny was **not** named at the floor meeting. | The played episode wins. |
+| 2026-10-19 | §14, §22 E03/E04/E06 | Danny's prison reveal stays in **E03** (the Trumbull call; Theo learns it with the player). Lena's grandmother ("died in the storm, in '05") moves from the pilot's HEART branch/E04 to **E06's walk home**, told by Lena herself. | Pilot scheduling flags: the icebreaker reveal and the HEART result did not fire. |
+| 2026-10-19 | §13 | Hale has now seen Jack's and Lena's faces (the Anchor) without names; Theo has never spoken to Lena; Margot hasn't met Lena; Laney doesn't know "Costigan." | Knowledge from the played path. |
+| 2026-10-19 | §4.6, §6, §7 | **Politics reconciled with the brief:** Jack is a law-and-order Rust Belt conservative raised in Frank's Kennedy-Democrat union house (labor still in his blood); Lena a Catholic Worker / Dorothy Day pro-life Democrat. Long-run beats from the brief (Obama-era racial overtones Jack hears; Lena's deepening homelessness; Trump-era immigration; Dobbs, joy then ash) folded in. Popes and Barron convictions added to both dossiers. | Orchestrator directives (pending since pre-S1E01). |
+| 2026-10-19 | §21, §23 | Registry rows 41–52: Caleb, Yusuf/NUMMI/Tariq, Rudy, the popes (Benedict → Francis → Leo XIV), Barron/Word on Fire, **Ephesians 5 (reserved for S7E09)**, the politics map, the Saints 2009 run, the Big Sur road trip, the paired papers, Theo's cinephilia, La Flaca. Status-after-S1E01 notes added. | Directives + new canon. |
+| 2026-10-19 | §22 | **Season 1 wishes scheduled:** Halloween (E12, unchanged); Thanksgiving in Youngstown (E18, unchanged — whether someone comes home with him stays path-driven); **road trip → E11 "Big Sur"** (Oct 20–25; the Saints' comeback at Miami on a fading AM radio); Priya's box moved to E10; a **Saints ledger** for the weekly thread. | Brief's Season 1 wishes. |
+| 2026-10-19 | §24.5 | The Ephesians 5 conversation placed (S7E09 "Subject"), with seeds (S1E06 Margot; the Aug 23, 2009 second reading; S3E17 wedding) and each of their wounds (🔒 Frank's decision; 🔒 Celeste on the stairs). Sides deliberately not fixed. | Player directive. |
+| 2026-10-19 | §8.1, §10.10–10.12, §12, §25, §26 | New canon: Theo's 1979 Mercedes 450SL (two seats) and 4 a.m. films; **Caleb Hargrove**, **Yusuf Noorzai**, **Rudy Salcedo** dossiers; Gloria's pie-ratings of people and Jack's shifts/wage; Sandoval Hall 1 (PHIL 1), Anacapa Commons; motifs: the paired papers, La Flaca, the Benedict holy card. | Player asked for interesting new people; E02 needs a room. |
+| 2026-10-19 | faith check | Reviewed every arc for "bent, never broken": no plan has Jack or Lena stop believing. Lena's S5 anger at God after Wes is fidelity in rage; Jack's S5 exile is from Lena, not God; S6 discernment is real; Wes (not a principal) is the one who loses faith. | Orchestrator directive. |

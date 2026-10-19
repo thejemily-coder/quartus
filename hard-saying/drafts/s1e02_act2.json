@@ -1,0 +1,454 @@
+{
+  "scenes": {
+    "s08": {
+      "slug": "TUESDAY · 4:10 AM · DELGADO HALL, ROOM 412",
+      "music": "Passion Pit — “Sleepyhead”",
+      "body": [
+        "Jack wakes because the room is blue: a cold laptop glow from Theo’s side of 412, the Grove still black in the window. Theo is sitting up against the headboard in sheets that cost more than the Silverado’s last transmission, earbuds in, a Criterion case open on the blanket: *The 400 Blows*. On the screen, small and black-and-white, a boy is running.",
+        "He runs along a fence, down through scrub, across a gray beach and into the edge of the sea, where there’s nowhere left to go. He turns in the shallows and looks straight into the camera, and the picture stops on his face and stays there, looking at Jack across eleven feet of dorm room and fifty years.",
+        "Theo thumbs out an earbud. “Couldn’t sleep.” “Is it for a class?” “It’s for a class. French cinema. Very rigorous. There’s a midterm.” This from a man who told the floor meeting he was undeclared “the way Switzerland is undeclared.” The RAZR says 4:10. Jack rolls toward the wall. The trackpad clicks, and somewhere in France the boy begins to run again.",
+        {
+          "type": "break"
+        },
+        "At 8:40 Theo is fresh as a commercial for himself, hair wet, no sign on him that he has ever seen four in the morning. Passion Pit pours out of the iPhone dock — a falsetto chopped into bright pieces, a music box having the best day of its life — and Jack is at the sink with his good flannel, scrubbing. The Jell-O shot he tucked in the pocket “for later” on Saturday went through Sunday’s wash. Later has arrived: a lime-green stain over the pocket in the shape of a heart, if you’re generous, and the soap is making it more generous.",
+        "“That’s not a stain, Costigan,” Theo says. “That’s a corsage.” He tilts his head. “Or did the swan come back for the other eyebrow? Has the family released a statement?”",
+        {
+          "type": "sms",
+          "from": "Gina",
+          "text": "mom told nonna ur bringing a nun home 4 thanksgiving. nonna lit a candle",
+          "time": "8:44 AM"
+        },
+        "Lunch period at Ursuline. Gina has never typed a word she didn’t enjoy.",
+        "The receipt is still on his desk, which is the trouble with receipts. Monday after Hale he carried a stack to the UCen register — the PHIL 1 reader, the Plato, a calculus text heavy enough to prop a fire door — and watched the total come up green: $186.40. He said he’d be back. The cashier printed it anyway, a souvenir of the books he couldn’t afford. The St. Brigid’s envelope had $340 in it on Saturday. Shower shoes, an extension cord and two packs of the Marlboros he’s quitting have been at it since.",
+        "Theo doesn’t look up from the espresso machine. “Put it on the Meridian card. My father will think I’m reading.”"
+      ],
+      "choices": [
+        {
+          "text": "Take the card. “Tell your father I’m enjoying Boethius.”",
+          "tag": "Charm",
+          "set": {
+            "e2_books": "theo",
+            "trait.charm": "+1",
+            "rel.theo.warmth": "+1"
+          },
+          "key": "You let Theo put your books on his father’s card.",
+          "response": [
+            "Theo is genuinely pleased, which is the dangerous part. He holds out a black card between two fingers, like a valet ticket, without turning around. “See? Painless. Money’s just a rumor my father started.”"
+          ],
+          "goto": "s08b"
+        },
+        {
+          "text": "“I’ll find them used.”",
+          "tag": "Control",
+          "set": {
+            "e2_books": "used",
+            "trait.control": "+1"
+          },
+          "key": "You told Theo you’d buy your books used.",
+          "response": [
+            "Theo shrugs, mildly wounded and mildly impressed. Jack already knows where: Driftwood Books on Mission, passed on the bus Sunday, with a hand-lettered sign in the window — BOETHIUS AND MRS. DANVERS ARE NOT FOR SALE. THE BOOKS ARE. Two to four dollars a spine. “You’re going to smell like a library sale for four years,” Theo says. “It suits you.”"
+          ],
+          "goto": "s08b"
+        },
+        {
+          "text": "“A loan. With interest. I’ll pay you in pie.”",
+          "tag": "Candor",
+          "set": {
+            "e2_books": "loan",
+            "soul.honesty": "+1",
+            "trait.candor": "+1",
+            "rel.theo.trust": "+1"
+          },
+          "key": "You took Theo’s money as a loan, payable in pie.",
+          "response": [
+            "“I’ve never been owed pie,” Theo says, with something like wonder. “I accept the terms.” He writes it on a Post-it in a surprisingly neat hand — *IOU 1 PIE (TBD) —J.C.* — and sticks it to the espresso machine, the one place in the room Jack isn’t allowed to touch."
+          ],
+          "goto": "s08b"
+        }
+      ]
+    },
+    "s08b": {
+      "slug": "TUESDAY · 8:58 AM · DELGADO HALL, ROOM 412",
+      "body": [
+        "The song runs out under a knock with choreography — shave-and-a-haircut, then two more for emphasis — and Jack opens the door on Laney Price at 8:58 in the morning, fully made up, holding a Tupperware like a pageant bouquet.",
+        {
+          "if": "e2_alarm==\"hoodie\"",
+          "text": "She is wearing his Cardinal Mooney hoodie as a dress, sleeves rolled four times, pearls over the drawstrings. “It’s mine now,” she says, before he can so much as look at it. “It’s been adopted. There was paperwork.”",
+          "else": "She’s in a Highland Park Lacrosse T-shirt knotted at the hip, and pearls, which is apparently a look."
+        },
+        "She puts the Tupperware in his hands, still faintly warm. “Lena’s red beans. Don’t ask her why she made them. Just eat. Sunday they’re beans; by Tuesday they’re theology.”",
+        {
+          "if": "e2_alarm==\"beans\"",
+          "text": "A pink fingernail lands on his chest. “*Now* you can ask how were the red beans.”"
+        },
+        "The emergency is Friday: Pi Lambda Chi opens its doors for recruitment, and Laney needs to practice conversations. “It’s a job interview where the job is being yourself,” she says, “and I have never once done that sober.” She points at Theo, whom she has seen exactly once, at the Lighthouse, at Sloane’s elbow. “You. You’re Sloane.”",
+        "Theo is flawless, and terrifying. He perches on the desk, lets his whole face go bored in an expensive way, and says from an octave down inside his own indifference, “Tell me about your *philanthropy*, Delaney.” “Well, Sloane, I believe every child deserves — ” “That’s what the Kappas say.” Laney clutches her heart as if shot. Jack is cast as Whitney, a Kappa legacy from Atherton. “Whitney. Atherton. We summer.” “Where?” “Yes.” Laney points at him with her whole arm. “Oh, she’s *good*. I hate her.”",
+        "Sloane wants to know if Delaney knows her odds. Laney doesn’t blink. “A hundred and twenty girls through the door last fall, forty-nine bids. So forty-one percent — well, forty point eight three — ” She hears herself. The smile comes on like stadium lights. “Or whatever. I’m a Gemini.” For one second Theo stops being Sloane, and the two of them look at each other across 412: two people who perform for a living, catching each other at it, delighted. Then he’s Sloane again, examining a cuticle.",
+        "On her way out she takes Jack’s RAZR out of his hand without asking — “This is like holding a clam that gave up” — curses T9 in a very Christian way, texts herself, and hands it back. It buzzes before it reaches his pocket.",
+        {
+          "type": "sms",
+          "from": "LANEY (FIREMAN’S FAVORITE)",
+          "text": "hiii fireman!! its me. dont lose me ;)",
+          "time": "9:04 AM"
+        },
+        "At the door she stops, one hand on the frame, and says it lightly, almost to the hallway. “Be honest, fireman. Would *you* bid me?”"
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "laney",
+          "title": "Laney Price",
+          "text": "Laney Price. Practicing for Pi Lam like it’s the Olympics. Did a percentage in her head to two decimals and then claimed to be a Gemini. Programmed herself into my phone. (Hoodie status: hers.)",
+          "if": "e2_alarm==\"hoodie\""
+        },
+        {
+          "kind": "person",
+          "id": "laney",
+          "title": "Laney Price",
+          "text": "Laney Price. Practicing for Pi Lam like it’s the Olympics. Did a percentage in her head to two decimals and then claimed to be a Gemini. Programmed herself into my phone.",
+          "if": "e2_alarm!=\"hoodie\""
+        }
+      ],
+      "choices": [
+        {
+          "text": "“They’d be lucky.”",
+          "tag": "Sincerity",
+          "set": {
+            "e2_laney_q": "sincere",
+            "trait.sincerity": "+1",
+            "rel.laney.trust": "+1"
+          },
+          "response": [
+            "Laney gives him the pageant wave — elbow, elbow, wrist, wrist — but it comes half a second late, and for that half second she just stands in the doorway of 412 being told something, with nothing ready to do with her face."
+          ],
+          "goto": "s09"
+        },
+        {
+          "text": "Stay in character: Whitney from Atherton blackballs her for wearing pearls before Labor Day.",
+          "tag": "Wit",
+          "set": {
+            "e2_laney_q": "joke",
+            "trait.wit": "+1",
+            "rel.laney.warmth": "+1"
+          },
+          "response": [
+            "Laney laughs — the laugh you can hear across a party, at nine in the morning, in a cinderblock room. Somewhere down the hall Doug pounds on a wall, not necessarily theirs. “Whitney,” Laney says, wiping under her eyes without touching the mascara, “is going to *hell*, and I’m going to sit right next to her.”"
+          ],
+          "goto": "s09"
+        },
+        {
+          "text": "“Maybe skip the note on Friday.”",
+          "tag": "Candor",
+          "if": "trait.candor>=2",
+          "set": {
+            "e2_laney_q": "pills",
+            "e2_laney_pills": true,
+            "trait.candor": "+1",
+            "rel.laney.trust": "+1",
+            "rel.laney.friction": "+1"
+          },
+          "cue": "Laney will remember that.",
+          "key": "You told Laney to skip the pill on Friday.",
+          "response": [
+            "Her smile doesn’t move at all. It stays exactly where it is, bright and level, a neon sign over a place that has closed for the night. Then: “Sugar, you’re sweet.” She pats his cheek twice, not hard. “Don’t do that again.”",
+            "She leaves the Tupperware."
+          ],
+          "goto": "s09"
+        }
+      ]
+    },
+    "s09": {
+      "slug": "TUESDAY · 9:30 AM · SANDOVAL HALL 1",
+      "body": [
+        "Sandoval Hall 1 is four hundred orange flip-down seats raked toward a stage, poured in 1971 by somebody who believed in concrete. It smells of coffee and sunscreen. Jack comes in at 9:31 and finds row M by finding her.",
+        "Lena has her boots up on the seat in front and a highlighter in her teeth. Her canvas tote — OCTAVIA BOOKS · NEW ORLEANS — is on the seat beside her. She watches him come down the row, looks at the tote, and moves it to the floor, which leaves an empty seat between them that is now nobody’s fault. Folded on top of her books is a square of black lace. The 12:10 at St. Brendan’s, he’d bet. “You’re late, Youngstown.” “I was at a sorority.” “At nine in the morning?” “It was a practice sorority.”",
+        "Onstage, Adrian Hale has no notes and no intention of clipping on the wireless mic; he holds it between two fingers like a cigarette and conducts with it. “Socrates,” he says, “barefoot, unwashed, not long from being put to death by his own city for asking exactly this sort of question, meets a young man named Euthyphro, who is so certain what the gods want that he’s turning in his own father for the death of a hired man. And Socrates — nobody’s fool and everybody’s nuisance — asks him one question. Write it down. Some of you will spend your lives running from it.” Four hundred eighteen-year-olds who came for a general-ed requirement go quiet without knowing why. “Is the good loved by the gods because it is good? Or is it good because the gods love it? Plato says ‘pious.’ I’m saying ‘good,’ because none of you know what pious means, and the ones who do are lying.”",
+        "Something black lands in the empty seat: Margot Lindqvist, oxblood boots, a manila folder on her knees labeled in block capitals THE COSTIGAN PROBLEM. PHIL 1 is her gen-ed. “I said I’d destroy you,” she says, at a volume that does not acknowledge the lecture. “I’m methodical.” At the top of the first page, in a small sharp hand, are his own words from the fourth-floor lounge at three in the morning. “‘And every father.’ I’ve been thinking about it for two days.” A look over the black frames. “I resent that.”",
+        "Lena leans past her and puts out a hand. “Lena. Broussard. Two-seventeen.” Margot shakes it once, like signing for a package. “Margot. Lindqvist. Three-oh-five. You’re the one who made the beans. The whole stairwell smelled like pork fat and the Counter-Reformation.” Her eyes drop to the folded lace and stay there. “You wear a *mantilla*. In 2009. At a public university.” “You wear all black every day of your life,” Lena says pleasantly. “We’re both telling people how to look at us.” “Mine says *don’t*.” “So does mine. Mine just says it in Spanish.” “Lena, I say this with love,” Margot says, flat as a diagnosis: “you’ve internalized a two-thousand-year-old men’s club and you call it a personality.”",
+        "Down on the stage Hale has gone after the other horn and is having a wonderful time. “If the good is good because God commands it, then God could command cruelty on Thursday and you’d all be kicking dogs by Friday. Ethics by tantrum. A toddler with thunderbolts, and the lot of you obliged to call him Father.” Four hundred people laugh. Jack feels it go through the hall like a draft, and past him, and on the far side of Margot, Lena has stopped highlighting.",
+        "She leans across Margot and whispers, fierce, as if the three of them were in a pew and the homily had gone wrong. “It’s a false choice, and he knows it. The good isn’t a rule God has to obey, and it isn’t something He makes up on a Thursday. It’s what He *is*. The commands come out of His nature like light off the sun. Aquinas, first part, question six. Neither horn.” Jack had the same answer half built in his head. She has built it, painted it and moved in.",
+        "Margot does not whisper. “Fine. The good is God’s nature. Lovely. And who tells you what God’s nature requires? Men. In Rome. In very good hats. So in practice your third horn is held by a hierarchy that won’t let a woman anywhere near the microphone.” A nod at the stage, where a man is waving one around. “You didn’t escape Euthyphro. You outsourced him.”",
+        "Lena opens her mouth, and closes it. Jack has known her since Saturday and has never seen that. She’ll have an answer by tomorrow — a long one, with citations — but she doesn’t have it now, and all three of them know it.",
+        "Margot writes something in the folder and underlines it twice. “You’re useful idiots for Christian nationalism. Both of you. Goldberg, *Kingdom Coming*, 2006 — look it up.” She caps the pen. “It’s actually sweet.”"
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "margot",
+          "title": "Margot Lindqvist",
+          "text": "Margot Lindqvist. Has a folder on me. Called Lena and me useful idiots for Christian nationalism in front of four hundred people. Made a point about the Euthyphro I still can’t answer. Possibly my friend."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Side with Lena: “The Church made a dyer’s daughter from Siena a Doctor of the Church. She told a pope to go back to Rome, and he went. Try again.”",
+          "tag": "Candor",
+          "set": {
+            "e2_margot_side": "lena",
+            "trait.candor": "+1",
+            "rel.lena.warmth": "+1",
+            "rel.margot.friction": "+1"
+          },
+          "response": [
+            "“Catherine of Siena starved herself to death at thirty-three,” Margot says without looking up. “Rudolph Bell, *Holy Anorexia*, 1985. Your exemplar is an eating disorder with a feast day.”",
+            "Lena turns in her seat with her whole body, thrilled to be fighting on two fronts before ten in the morning. “Oh, *Margot*,” she says, the way you’d greet a cousin you’ve been dying to fight with all through the wedding Mass, and Jack sits between their elbows and watches a friendship begin in the form of a war."
+          ],
+          "goto": "s10"
+        },
+        {
+          "text": "Give Margot the point she earned: “That’s a real problem. I don’t have an answer this morning.”",
+          "tag": "Sincerity",
+          "set": {
+            "e2_margot_side": "margot",
+            "trait.sincerity": "+1",
+            "rel.margot.trust": "+1",
+            "rel.lena.friction": "+1"
+          },
+          "response": [
+            "“*Traitor*,” Lena hisses across the folder — and from the way she says it, she’s pleased. He has the distinct impression there is red ink in his future and she is looking forward to spending it.",
+            "Margot writes something down. Then for a second she just sits there with the pen above the page, like someone who braced for a step that wasn’t there."
+          ],
+          "goto": "s10"
+        },
+        {
+          "text": "Defuse it: “Can we be useful idiots for something with better snacks?”",
+          "tag": "Wit",
+          "set": {
+            "e2_margot_side": "joke",
+            "trait.wit": "+1",
+            "rel.margot.warmth": "+1"
+          },
+          "response": [
+            "“You’re a useful idiot *twice*,” Margot says. “Once for the patriarchy and once for comic relief.” She writes that down too.",
+            "From the stage, without looking up, Hale says into the mic, “The three of you in row M will stop flirting or start charging admission,” and four hundred heads turn around."
+          ],
+          "goto": "s10"
+        }
+      ]
+    },
+    "s10": {
+      "slug": "TUESDAY · 6:50 PM · THE ANCHOR, MARISOL HARBOR",
+      "music": "Otis Redding — “(Sittin’ On) The Dock of the Bay”",
+      "body": [
+        "The 11 bus runs down Mission to the water, and Jack rides it with a résumé on his knee, printed on the good paper he bought for college applications: Cardinal Mooney ’09. Latin Club. Point guard. *Summer: St. Brigid’s grounds crew.* Under SKILLS, after a long war with himself, *Hardworking.* He would like to die.",
+        "The harbor at seven is sea lions barking off the floats like a bad night at the union hall, diesel and frying oil, the sun going down orange behind the breakwater. Inside the Anchor somebody feeds the jukebox a quarter and Otis Redding is sitting on the dock of the bay, which down here is less a song than a job description.",
+        "The chalkboard by the register says PIE OF THE DAY: BOYSENBERRY. Beside it hangs a second board, new, the chalk still bright: JACK’S RATINGS: MARIONBERRY 4/10. Gloria is counting the drawer, pencil through the gray bun, and doesn’t look up. “Four out of ten. Your friend said your name was Jack and you were leaving. Then you left. After her.” The drawer shuts. “What do you want, Jack?” He puts the résumé on the counter. She doesn’t look at that either."
+      ],
+      "choices": [
+        {
+          "text": "“I need the money.”",
+          "tag": "Candor",
+          "set": {
+            "e2_anchor_ask": "money",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "response": [
+            "That gets her to look up — a long gray look at the hair that needs cutting and the good paper and the plain fact of him standing there saying it. “Plain,” she says, the way somebody else would say *apple*.",
+            "“Four out of ten?” She slides the résumé back to him unread. “Hon, you’re hired. Dishwasher quit at six. Apron’s on the hook.”"
+          ],
+          "goto": "s10b"
+        },
+        {
+          "text": "“I’m your quality control.”",
+          "tag": "Charm",
+          "set": {
+            "e2_anchor_ask": "qc",
+            "trait.charm": "+1"
+          },
+          "response": [
+            "“I’ve heard better lines from men who smelled like bait,” Gloria says, still counting. “I married one.”",
+            "“Four out of ten?” She slides the résumé back to him unread. “Hon, you’re hired. Dishwasher quit at six. Apron’s on the hook.”"
+          ],
+          "goto": "s10b"
+        },
+        {
+          "text": "“I’ve seen your marionberry. You need me.”",
+          "tag": "Wit",
+          "set": {
+            "e2_anchor_ask": "marionberry",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "Gloria very nearly smiles. It gets as far as the pencil: out of the bun, a look at the point, back in.",
+            "“Four out of ten?” She slides the résumé back to him unread. “Hon, you’re hired. Dishwasher quit at six. Apron’s on the hook.”"
+          ],
+          "goto": "s10b"
+        }
+      ]
+    },
+    "s10b": {
+      "slug": "TUESDAY · 9:40 PM · THE ANCHOR, KITCHEN",
+      "body": [
+        "Eight dollars an hour, Tuesdays, Thursdays and Saturdays, seven to one, a share of tips. Saturdays start the twelfth, Gloria said, already walking away: this weekend her nephew Hector is home from Fresno State, “and he owes me.”",
+        "By 9:40 the dish pit has taught Jack everything it knows, which is steam. The Hobart is a steel box with a hood that drops like a guillotine and a cycle that sounds like a car wash losing an argument; the spray nozzle bucks on its spring over the slop sink like something alive; his fingers have pruned to the second knuckle. Through the pass-through, from the jukebox, Patsy Cline is heartbroken in a key the Hobart keeps interrupting.",
+        "The man on the line said “Rudy” at seven and offered a wrist instead of a greasy hand. He’s somewhere in his forties and does everything slowly, which turns out not to be the same as slow: three tickets on the flattop at once and none of them burning. A rosary is tattooed around his left wrist, the beads gone soft and blue. A transistor over the grill has Vin Scully walking the Dodgers through the late innings, and a Louis L’Amour — *Flint*, its spine mended with masking tape — rides in Rudy’s apron pocket. He introduced the machine before anything else — “Hobart. Older than you, meaner than Gloria” — and by the second rack Jack was *mijo*.",
+        "Gloria sweeps through with an armload of plates, sets them in Jack’s window, and says to Rudy, as though Jack were something in the pie case: “Lattice-top. Pretty on top. Everything’s leaking underneath.” Rudy considers him over the grill. “Hm.” “I’m standing right here,” Jack says. “I know where you’re standing, hon,” Gloria says, leaving. “I hired you.”",
+        "He loads the next rack wrong. Rudy leans over without a word, turns two plates with two fingers so the water can get at them, and goes back to his burgers. “First time I washed dishes was at Soledad,” he says, the way you’d say where you went to high school. “Six years. Best job in the building — it’s warm, and nobody bothers the dish man.” He flips a patty. Nothing in his face asks Jack to do anything with that. Nothing in it is hiding, either."
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "rudy",
+          "title": "Rudy (the Anchor)",
+          "text": "Line cook. Rosary on his wrist, Vin Scully on the radio, Louis L’Amour in his apron. Did six years at Soledad. Says the dish pit is the best job in any building."
+        },
+        {
+          "kind": "person",
+          "id": "gloria",
+          "title": "Gloria (the Anchor)",
+          "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask."
+        },
+        {
+          "kind": "note",
+          "id": "pie",
+          "title": "The Anchor",
+          "text": "Marionberry: 4/10 (now on a board by the register). I work here now. Tue/Thu/Sat, seven to one, $8 an hour."
+        }
+      ],
+      "choices": [
+        {
+          "text": "“Did anybody visit?”",
+          "tag": "Sincerity",
+          "set": {
+            "e2_rudy_q": "visit",
+            "e2_rudy_visit": true,
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "Rudy flips a burger without looking at it. “My mother. Every other Sunday. Three buses from Oxnard.”",
+            "Jack turns the spray on the next rack harder than any rack has ever needed. Water drums off the plates onto his apron and his shoes and the rubber mat. Out of the corner of his eye he sees Rudy look at the rack, and then at him, and then back down at the grill. Rudy doesn’t say anything. On the radio Vin Scully says it’s a beautiful night for baseball, and somewhere it probably is."
+          ],
+          "goto": "s10c"
+        },
+        {
+          "text": "“So I’m in good company.”",
+          "tag": "Wit",
+          "set": {
+            "e2_rudy_q": "company",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "Rudy laughs — a real one, from somewhere low down, like it had to climb a ladder to get out. “Best company in California, mijo. Ask Gloria.” From the floor, without breaking stride: “*Don’t* ask Gloria.”"
+          ],
+          "goto": "s10c"
+        },
+        {
+          "text": "Say nothing. Work.",
+          "tag": "Control",
+          "set": {
+            "e2_rudy_q": "silent",
+            "trait.control": "+1"
+          },
+          "response": [
+            "Jack says nothing and works: two hours of racks and steam and the slop sink, which he will not describe to anyone as long as he lives. At eleven a grilled cheese comes across the pass on a plate he washed himself, cut corner to corner, unasked for. “You’ll do,” Rudy says, and turns the radio up a notch."
+          ],
+          "goto": "s10c"
+        }
+      ]
+    },
+    "s10c": {
+      "slug": "WEDNESDAY · 1:15 AM · THE ANCHOR, THE WHARF",
+      "set": {
+        "e2_has_bike": true
+      },
+      "body": [
+        "He comes out the back door at 1:15 smelling of Hobart steam and boysenberry, his hands white and ridged as a washboard, eleven dollars of tip-share folded in his jeans, and reads the schedule in the bus shelter twice. The last 11 left at 12:30. Under the planks the sea lions are still arguing.",
+        "A rusted single-speed beach cruiser comes ticking up the wharf out of the dark, a dented wire basket on the front. Its rider is sun-dark and salt-haired, with a laundry bag over one shoulder and a skateboard strapped to the bag, and Jack knows him before he knows from where: the other end of Saturday’s mini-fridge.",
+        "“Boss.” One flip-flop comes down. “Bus quit at twelve-thirty. Nobody told you?” “Nobody told me.” “Nobody tells anybody. Rafi. Two-oh-four. I had you as fridge guy.” “Jack.” Rafi is on his way to his dad’s place, two blocks up, to do laundry — “dorm machines eat quarters and socks; my dad’s only eat socks.”",
+        "He takes in Jack’s pruned hands, gets off the bike and holds it out by the handlebars. “Take her. Till Christmas.” Jack starts to say he can’t. Rafi talks over him, courteous and final. “She’s called La Flaca. Not stolen. Abandoned. My abuela says there’s about a week’s difference.” Coaster brakes — pedal backward; he demonstrates — and a seat that tilts like a barber’s chair. Then he drops the skateboard on the planks and rolls off up the wharf, wheels rumbling over the boards. “No stress, boss,” floats back: the same thing he said on Saturday over the fridge.",
+        "So Jack rides three miles home along the harbor road on a bicycle named for being skinny. The water is on his left, black and breathing, and the moon hangs over it three nights short of full, lopsided and bright enough to throw his shadow across the road beside him, a long thin Jack on a long thin bike. The chain clanks. The basket rattles at every seam in the asphalt. Nobody is asking him to prove anything — not his soul, not his pie, not his margins — and at the Grove he stands on the pedals up the last hill and comes down the far side with his feet off them, the way he used to come down Glenwood Avenue at eleven, all the way to the bottom, not braking once."
+      ],
+      "journal": [
+        {
+          "kind": "note",
+          "id": "la_flaca",
+          "title": "La Flaca",
+          "text": "Rafi’s bike, lent till Christmas. Not stolen. Abandoned. (A week’s difference, per his abuela.)"
+        },
+        {
+          "kind": "person",
+          "id": "rafi",
+          "title": "Rafi (204)",
+          "text": "Second floor. Carried my fridge up four flights on Saturday and was gone before Dad could tip him. Calls everybody boss. Lent me his bike on the wharf at one in the morning like it was nothing."
+        }
+      ],
+      "next": "s11"
+    },
+    "s11": {
+      "slug": "WEDNESDAY · 6:15 PM · DELGADO HALL, EAST STAIRWELL, 4TH FLOOR LANDING",
+      "body": [
+        "The padded envelope in his mailbox is in his mother’s careful Palmer loops. Inside, between two pieces of shirt cardboard: Rosie. Jack in crayon on a yellow beach under a palm tree the size of a skyscraper. Beside him Hannah Montana, in a bikini drawn with great modesty — it reaches her knees and has sleeves. In the sand a cross, an arrow, and JACKS CHURCH. He’ll tape it over his desk tonight. For now he holds it on his knee on the fourth-floor landing of the east stairwell, where the one bar lives, while somebody a floor down smokes a clove and the whole stairwell smells like a Christmas candle that has taken up crime.",
+        "His father answers, which never happens. He made it home last night. The guy in Flagstaff says hello; Jack lets him. Then there’s a pause with the garage in it — the space heater ticking though it’s September, the radio low on the workbench — and Frank says, as if he’s carried it across half the country looking for a place to set it down: “Good grip. Saturday.” The handshake. Jack looks at his own hand. “Thanks, Dad.” “How’s the pelican?”",
+        "He remembers. Of course he remembers. “She’s in my philosophy class.” A mile of silence, then two thousand more. “What’d I tell you. Costigans don’t get the easy ones.”",
+        "Behind his father the radio says the name before Frank does. WKBN: Jim Traficant walked out of federal prison this morning in Rochester, Minnesota, in a gray T-shirt and white knee socks and folded himself into a cab, and the whole Valley watched him do it. “They’re throwing him a party,” Frank says. “Twenty bucks a ticket. Skinny ties and bell-bottoms.” Not proud, exactly; next door to proud. “A crook. But he was our crook.” “He took bribes, Dad.” “He took them for *us*.” Jack opens his mouth, and Frank says, “Here’s your mother.”",
+        "“What did you have for dinner?” “Chicken.” “What kind of chicken?” “Dining hall.” “Jackie. Dining hall is where it happened to the chicken.” She has already told the whole school office he’s coming for Thanksgiving. “And the veil girl?” “Ma.” “I’m allowed to ask. I’m your mother, it’s in the Catechism.”",
+        "Then the click and fumble of the extension in Nonna’s room, three tries, EWTN murmuring behind her. “Giacomino.” It’s the voice she uses on saints who are running late. “Primo venerdì. This Friday. You go *and* you go” — which in Nonna means Mass and confession both — and she hangs up on herself by accident.",
+        "Gina gets hold of the kitchen phone long enough to say, in exactly the voice she texts in, flat and lowercase with no punctuation anywhere, “nonna thinks california is in mexico i didnt correct her bye,” and is gone.",
+        "Then it’s his father again, clearing his throat, which for Frank is the sound of a phone call ending. There’s just room, before he hangs up, to tell him about the Anchor."
+      ],
+      "choices": [
+        {
+          "text": "Tell him about the job.",
+          "tag": "Sincerity",
+          "set": {
+            "e2_dad_call": "told",
+            "e2_told_dad_job": true,
+            "trait.sincerity": "+1",
+            "soul.honesty": "+1",
+            "resolve.jack": "+1"
+          },
+          "key": "You told your father you’d taken a job washing dishes.",
+          "response": [
+            "“I got a job, Dad. Washing dishes. A diner on the harbor, nights.” A long pause. He can hear the radio in it, and the space heater, and his father breathing. “Good,” Frank says. “Work.” Another pause. “Don’t let it eat the reading.” It’s the most his father has said about his future since the driveway."
+          ],
+          "goto": "s11b"
+        },
+        {
+          "text": "Don’t. He’d say you’re there to study — and he’d drive back out to say it.",
+          "tag": "Control",
+          "set": {
+            "e2_dad_call": "hid",
+            "trait.control": "+1",
+            "soul.honesty": "-1"
+          },
+          "response": [
+            "So Jack doesn’t. He lets his father keep believing whatever lets him sleep, the same way his father keeps the guy in Flagstaff for his mother."
+          ],
+          "goto": "s11b"
+        },
+        {
+          "text": "“I’m interning in the restaurant industry.”",
+          "tag": "Wit",
+          "set": {
+            "e2_dad_call": "joked",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“Don’t get smart.” Frank lets it go. Jack lets it go. The job stays where it is, unsaid, a pan left in the sink to soak."
+          ],
+          "goto": "s11b"
+        }
+      ]
+    },
+    "s11b": {
+      "slug": "WEDNESDAY · 6:40 PM · DELGADO HALL, EAST STAIRWELL, 4TH FLOOR LANDING",
+      "set": {
+        "e2_wrote_danny": true
+      },
+      "body": [
+        "“You write your brother yet?” his father says, at the end. “Doing it now.” “He reads ’em twice.” And the line goes dead the way it always does with Frank, no goodbye, as though goodbye were a waste of long distance. Jack doesn’t go back to the room. He stays on the landing with a yellow pad against his knee, under a fluorescent tube that buzzes and flickers and refuses to die, and writes the way he always writes to Danny: fast, no drafts, before he can turn it into anything.",
+        {
+          "type": "doc",
+          "text": "Danny —\n\nThe ocean is real. It’s cold, which nobody tells you.\n\nMy roommate owns a silk robe and an espresso machine and I’m not allowed to touch either. The professor drinks at lunch and is better than his book, which I’m not telling him.\n\nI wash dishes now, Tuesday Thursday Saturday, a machine called Hobart that hates me. The cook’s name is Rudy. He reads Louis L’Amour and calls me mijo.\n\nThere’s a girl from New Orleans in my seminar who argues like a prosecutor and wins like one.\n\nDon’t. I know.\n\n—the Professor"
+        },
+        {
+          "if": "e2_dad_call==\"hid\"",
+          "text": "Under the signature, smaller, he adds: *P.S. Dad doesn’t know about the dishes.* He looks at that line for a while and leaves it."
+        },
+        "He addresses the envelope from memory. He doesn’t seal it until he’s read the letter twice, the way Danny will. Then he presses the flap shut with the side of his fist and puts it in the inside pocket of Danny’s jacket, where it crackles when he breathes. Through the six-inch window the fog is coming in over the Grove. It’s nearly seven, and he has somewhere to be at eight."
+      ],
+      "next": "s12"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "S1E02",
+  "season": 1,
+  "episode": 2,
+  "showTitle": "The Hard Saying",
+  "title": "The Examined Life",
+  "dates": "Monday, August 31 – Friday, September 4, 2009",
+  "logline": "First week of classes: a famous atheist demands proof of a soul, a harbor diner needs a dishwasher, and the girl from the porch turns out to be the other half of the assignment.",
+  "previously": [
+    { "text": "Your father drove you 2,400 miles and saw the Pacific for the first time." },
+    { "text": "On the back porch of the Lighthouse, a girl from New Orleans judged a party with you — and then judged you." },
+    { "text": "She took the cigarette out of your mouth and kept it.", "if": "e1_lena_took_cig" },
+    { "text": "At Mass she wore a mantilla. Afterward you argued about lip service, and you won.", "if": "duel.lipservice.rigor>=3" },
+    { "text": "On the stairwell she told someone named Wes she loved him. Then she told him you were nobody.", "if": "e1_stairwell==\"coughed\"" },
+    { "text": "Adrian Hale emailed the seminar: come prepared to prove you have a soul. You hit Reply All.", "if": "e1_email_reply==\"replyall\"" }
+  ],
+  "cast": [
+    { "id": "lena", "name": "Lena Broussard", "role": "The girl on the porch", "tracked": true },
+    { "id": "theo", "name": "Theo Vance", "role": "Roommate, Room 412", "tracked": true },
+    { "id": "laney", "name": "Laney Price", "role": "Lena’s roommate", "tracked": true },
+    { "id": "margot", "name": "Margot Lindqvist", "role": "Third floor, Delgado", "tracked": true },
+    { "id": "kevin", "name": "Kevin Tran", "role": "Down the hall, Room 420", "tracked": true },
+    { "id": "osei", "name": "Fr. Gabriel Osei", "role": "Newman Center chaplain", "tracked": true },
+    { "id": "hale", "name": "Prof. Adrian Hale", "role": "Philosophy, Marisol", "tracked": true },
+    { "id": "julian", "name": "Julian Park-Ellis", "role": "A guy with a guitar", "tracked": true },
+    { "id": "evan", "name": "Evan Marsh", "role": "TA, PHIL 1, Thursday section", "tracked": true },
+    { "id": "becca", "name": "Becca Lindell", "role": "Newman regular", "tracked": true },
+    { "id": "frank", "name": "Frank Costigan", "role": "Jack’s father", "tracked": false },
+    { "id": "maria", "name": "Maria Costigan", "role": "Jack’s mother", "tracked": false },
+    { "id": "nonna", "name": "Carmela Rinaldi", "role": "Jack’s grandmother", "tracked": false },
+    { "id": "gina", "name": "Gina Costigan", "role": "Jack’s sister", "tracked": false },
+    { "id": "rosie", "name": "Rosie Costigan", "role": "Jack’s sister", "tracked": false },
+    { "id": "priya", "name": "Priya Raman", "role": "4th-floor RA", "tracked": false },
+    { "id": "rafi", "name": "Rafi Ochoa", "role": "Second floor", "tracked": false },
+    { "id": "doug", "name": "Doug Pruitt", "role": "Room 420", "tracked": false },
+    { "id": "joey", "name": "Joey Abruzzo", "role": "Newman regular", "tracked": false },
+    { "id": "tyler", "name": "Tyler Brandt", "role": "Newman missionary", "tracked": false },
+    { "id": "fitch", "name": "Dolores Fitch", "role": "Newman secretary", "tracked": false },
+    { "id": "sloane", "name": "Sloane Kittredge", "role": "Pi Lambda Chi", "tracked": false },
+    { "id": "gloria", "name": "Gloria Mendes", "role": "The Anchor, nights", "tracked": false },
+    { "id": "rudy", "name": "Rudy Salcedo", "role": "Line cook, the Anchor", "tracked": false },
+    { "id": "caleb", "name": "Caleb Hargrove", "role": "PHIL 9H", "tracked": false },
+    { "id": "yusuf", "name": "Yusuf Noorzai", "role": "PHIL 9H", "tracked": false },
+    { "id": "wes", "name": "Wes Arceneaux", "role": "Lena’s boyfriend, Tulane", "tracked": false },
+    { "id": "tess", "name": "Tess Fontenot", "role": "Lena’s sister", "tracked": false }
+  ],
+  "duels": {
+    "soul": {
+      "title": "On the Soul",
+      "opponent": "hale",
+      "topic": "Whether anyone can prove they have a soul — or whether believing in one is just an inheritance."
+    }
+  },
+  "start": "s01",
+  "endCard": {
+    "tag": "Cite me.",
+    "nextTime": [
+      "“Malibu, Costigan. Bring a swimsuit and lowered expectations.”",
+      "“My father stays anywhere for six minutes. Time him.”",
+      "“Will you accept the charges?”",
+      "“You want to explain the dignity of labor to *me*? On Labor Day?”"
+    ]
+  }
+}
