@@ -192,3 +192,30 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   an argument duel. Neither side is a strawman: Lena's position and Jack's should both be intelligent, personal, and
   surprising (don't assume who takes which side). Margot's critique of the passage can be seeded earlier as setup,
   but the real conversation belongs to the two of them.
+- **Politics: the map for the whole run.** Both are *nearly* politically homeless, and both are deeply pro-life. Both
+  believe both parties betray the Church, and each thinks the other is wrong for aligning with the side they lean toward.
+  - **Jack** is more comfortable with the right: a law-and-order Rust Belt conservative.
+  - **Lena** is a Catholic Worker type (Dorothy Day), more comfortable with the left.
+  - **Over the years:**
+    - **Lena's struggle deepens** as the Democrats become more radically pro-abortion and as the LGBT movement shifts,
+      in her view, from treating people like her as fellow human beings to more radical ideas about sex and the family.
+    - **Jack struggles** with the racial overtones he keeps hearing inside what he considers otherwise reasonable
+      disagreements with the Obama administration.
+    - Later (if the run gets there), the **Trump years are very hard for Jack** when immigration changes, as he sees it,
+      from enforcement to dehumanization.
+    - **Dobbs (2022)**, and the justices appointed to make it possible, is a huge, joyous moment for both of them. It
+      turns to ash in their mouths in the years after, as abortions expand, particularly through mailed abortion pills
+      supported by Republicans as well, and as IVF expands.
+    - Both reach new levels of disgust with the American government and political system as the years pass.
+  - These are the characters' convictions, written from inside. Other characters (Margot, Theo, Hale, Kevin, Julian)
+    still get their best arguments and are never strawmen.
+- **Faith tests: bent, never broken.** Grief, scandal and argument shake both of them, but neither ever truly stops
+  believing. The tests are about *living* it (fidelity, temptation, anger at God, the Church's failures), not whether it's
+  true.
+- **Cadence: the player binges.** Keep "Previously on" light (4–6 lines) and callbacks dense. Trust the player's memory.
+- **Season 1 wishes** (schedule these in Fall 2009):
+  - a **Halloween party episode** (costumes, masks, what people do when they're someone else for a night);
+  - **Thanksgiving in Youngstown** (Jack brings someone home, or goes home alone and something breaks);
+  - a **road trip episode** (LA, Big Sur or Tijuana; a bottle episode on the move);
+  - the **2009 Saints' unbeaten run as a running thread**, Lena's weekly religion-within-a-religion (they don't lose
+    until Dec 19).

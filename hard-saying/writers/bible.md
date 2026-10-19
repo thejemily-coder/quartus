@@ -1862,3 +1862,7 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
   together (see brief, "Player directives"). Showrunner: place it in the arc registry at the right point in the romance
   roadmap, seed Margot's earlier critique of the passage as setup, and tie it to each of their family wounds so the
   argument is personal. Do not stage the full conversation earlier.
+- Player directives (orchestrator): political map for the run, "bent, never broken" faith, binge cadence, and Season 1
+  wishes (Halloween party, Thanksgiving in Youngstown, road trip, Saints thread) added to the brief under "Player
+  directives." Showrunner: fold them into the arc registry and the Season 1 map at the next planning pass; reconcile any
+  existing plan that has either of them truly losing faith.
