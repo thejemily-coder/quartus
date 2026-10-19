@@ -237,3 +237,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - As with politics, these are the characters' convictions written from inside. Real public figures are portrayed
     only through their real, public words and actions (homilies, documents, interviews, news), never with invented
     private scenes or fabricated quotes.
+- **After the pilot (player feedback).** Lena was "spectacular" (she is absolutely the main draw); the player loves Laney
+  and Theo; Margot was next best. The move-in dragged a little but built anticipation: keep the slow build, but trim fat.
+  Romance pacing: rivals first, building steadily; no hurry. **Season 1 ends on a strong moment between them, not with
+  them together.** Other people and plots may crowd in and make the player miss her, but never cut Lena back too much;
+  Theo, Laney, Margot and interesting new people fill her absences. The player likes more duels (e.g., Hale's
+  seminar), more Kevin, Jack's family, and more Hale & Osei, but trusts the room's judgment on mix.
