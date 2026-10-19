@@ -149,4 +149,150 @@ Format:
 - Lena's resolve at end: …
 ```
 
-*(S1E01 to be appended by the Head Writer after the pilot is finalized.)*
+### S1E01 — "Lip Service" (Sat Aug 29 – Sun Aug 30, 2009; tag runs to Mon Aug 31, 12:04 a.m.)
+33 nodes (27–29 visited per path). Forks: s06f → s07a kitchen / s07b living / s07c front → s08 · s11 → s12a walked /
+s12b→s12c cove → s13 · s20 → s20a followed / s20b (hale | stayed) → s21. Shared codas live in no-choice nodes s12c (cove,
+1:40 a.m.) and s13b (lounge, 5:20 a.m.).
+
+**On-page canon (all paths unless marked)**
+- s01: Drive came I-40/Flagstaff → Barstow → Bakersfield → Hwy 1; gas $2.99 in CA. Frank sings "Youngstown" under his
+  breath; AM radio: Kennedy funeral in the Boston rain, Katrina 4th anniversary. Frank: "He was our guy. And he was wrong
+  about the babies." Frank's first sight of the Pacific (turnout on Hwy 1). Envelope from St. Brigid's: $340 (Nonna $200,
+  Mom $100, Frank $40, "don't tell your mother there's a forty"). Mom's note: books not pizza; call Nonna Sunday after Mass;
+  "Nonna says buy a coat." Frank sleeps in the cab (pillow + brown afghan behind the bench seat); SUB pay runs out in
+  October. Danny's message: "Tell the Professor don't be a pussy." *The Moviegoer* (Vintage, $3 library-sale sticker,
+  margins full) with the Hale postcard (Radcliffe Camera) as bookmark. Frank's knuckle scar from a 1991 line accident (s04 C1).
+- s02: Rafi (unnamed here) carries the mini-fridge to 412 ("No stress, boss"). Lena seen across the Commons Lawn: yellow
+  sundress, brown cowboy boots, pelican lamp, talks a parking officer out of a ticket. Nonna's lamp from Big Lots;
+  cans of Nonna's tomatoes in the fridge.
+- s03: Theo's side of 412: 42" TV, espresso machine (card: "Please don't touch the espresso machine. —J. (Mr. Vance's
+  office)"), white Frette sheets, *Point Blank* (1967) poster, MacBook Pro, iPhone dock, grandfather's Rolex. Theo
+  arrived 10:40; "looked up Youngstown after the housing email." Theo's mother in La Cañada (Station Fire), a life
+  coach named Pierre, dogs and "the Hockney." Nonna's olive-wood crucifix (Holy Land pilgrimage 1988) hung over Jack's bed
+  (C2: lower, facing the door). Jack's side: three flannels, gray Mooney hoodie, Danny's jacket on the door hook, St.
+  Anthony candle (contraband) in a sock, 41 paperbacks in a milk crate.
+- s04: Frank's route home: I-40 to Oklahoma City, "a guy in Flagstaff" (cover story; Jack knows). Frank's list: call
+  your mother, call Nonna (phone by her bed now), go to Mass, don't go soft, "Write your brother. He reads 'em twice."
+  Frank offers then takes back the St. Christopher ("I need him more than you").
+- s05: Floor meeting, 4th-floor lounge. Name tag JOHN C. · 412, JOHN crossed out → JACK. Priya: air horn, laminates,
+  "Nobody goes to the Point after dark… That's mine." Kevin Tran (stood up: "Kevin Tran. San Jose."): pre-med, only
+  child (claimed) / "never been to a party" (claimed lie: has a sister). Theo's two truths: father has an Oscar / been to
+  rehab / never been in love — refuses to say which is the lie. Doug P., WoW shirt, "duuude."
+- s06: Seacliff Road runs west along the bluff; the Lighthouse is the last house; the Point to its **north** (porch faces
+  it). Man at the end of the driveway (unnamed; wire glasses, gray at temples, Carhartt, bike, American Spirit). Theo's
+  flask engraved *R.V.* (Macallan 18). Theo programmed himself into Jack's RAZR as "THEO VANCE (IMPORTANT)."
+- s07a (kitchen): Rafi, Room 204, tackle-box "vitamins," "I don't do Xanax anymore," abuela; Joey Abruzzo, Staten Island,
+  Yankees cap; Kevin "chaperoning Joey… designated adult"; Kevin signed up to lector next week (C1). Theo/Kevin handshake
+  runs a second long.
+- s07b (living): Laney (white sundress, pearls) dances on the coffee table to BEP; takes a pill with a Jell-O shot
+  ("I have a note. It's notarized."); calls Jack "Sad Irish Poem"; "Y'all would hate each other." Guitar guy on the
+  stairs (warm brown skin, short dark hair, gray cardigan) plays "Skinny Love" — unnamed.
+- s07c (front): Margot on a Volvo hood; Moleskine "FIELD NOTES — 8/29/09"; cloves rationed until the Sept 22 ban; she saw
+  Jack's crucifix in the elevator.
+- s08: Lena on the porch: blue sundress, oatmeal cardigan worn at the elbows, brown boots, amber eyes, gold Miraculous
+  Medal; LG enV2 (opens like a book) buzzes repeatedly, silenced. "Jagoff" (Jack → Lena; she keeps it). Lena's read:
+  Rust Belt, parish school, black hair needing a cut, broken nose. Jack's scar is in the **left** eyebrow (stated s08).
+- s09: Lena reads the postcard twice, asks "Who's A.H.?" (medal touch). "My grandmother's dead and she still makes me
+  wear it." Lena: from New Orleans; "In Louisiana he'd win" (s08).
+- s10: Gap in the back fence; bluff path to the Point; Lena: "Don't take it at night… Laney's sorority friend told me"
+  (medal touch). Porch light on a motion sensor goes off; the near-kiss; Jack holds still. Laney shouts "MAGDALENA
+  BROUSSARD." Lena: "Only my mother, the Holy Ghost, and Laney when she wants something call me Magdalena." Sloane is
+  "Laney's future big" (living route: "in the hot tub," i.e., the front kiddie pool).
+- s11: Laney sick on the stairs at midnight; Lena holds her hair ("cher"; "That's the vodka leaving, not you"). Lena
+  listens to "Skinny Love" with an unreadable look. Sloane Kittredge introduced by Theo (Pi Lam rush chair). Grey Goose.
+- s12a (walked): Laney rides piggyback singing "You Belong with Me"; Laney: "She's *taken*… she's got a — "; "Kaylee
+  used to — " (no context). Same dorm discovered: 217 / 412. Desk attendant MARCUS. 217 door whiteboard: LANEY ♥ LENA,
+  *ora pro nobis*. C2: Lena: "I have a boyfriend."
+- s12b/s12c (cove): Shipwreck Cove (stairs with Christmas lights, schooner ribs, driftwood fire). Sloane: "Everybody's
+  Catholic eventually." Theo looks north at the Point; asks about hell and "the exchange rate" on forgiveness ("if
+  somebody did something — something really bad"). Theo and Sloane leave 1:40; carnitas from Lupe's; 2:10 freight.
+- s13: Sock (gray cashmere) on 412's door. Margot in the 4th-floor lounge at 3 a.m.; spells L-I-N-D-Q-V-I-S-T; lends Jack
+  her black cardigan (returned folded outside 305 by morning, s14). Margot's diagnosis: "you do a bit… drywall."
+  Walked path: Theo's text 2:14 a.m. "Sock protocol… Abandoner. —T."
+- s13b: Theo comes in at 5:20 a.m. barefoot, sand, wet jeans, smelling of salt, kelp and jasmine: "Couldn't sleep. Went to
+  look at the ocean." (The girl in 412 is gone by nine.) Priya at 7:02: laminated sign, terrible RA-office coffee.
+- s14: St. Brendan's courtyard; broken sprinkler; Fr. Osei (Kumasi, Ghana, "by way of a great many hospitals"; former
+  doctor; limp, left leg; rubber boots; wooden rosary): "That's a ring. Or a tooth." Mrs. Fitch: lavender cardigan,
+  bulletins, lemon bars, "We lost our best soprano last spring." Tyler Brandt (Veritas; Cincinnati, St. X, Miami
+  linebacker; "Brother"). Bulletin: Year for Priests; confession Sat 3:30–4:45, Wed 8:00, "or whenever you knock."
+- s15: 11:30 Mass, 22nd Sunday OT Year B (Deut 4; Ps 15; Jas 1; Mark 7), old translation. Organ: "Praise to the Lord,
+  the Almighty"; Communion "I Am the Bread of Life"; recessional "Lift High the Cross." Peter Haddad lectors (Facebook:
+  "future congressman"); Kenzie Rourke cantors; chastity talk "in a few weeks" (Newman FB page, Joey printed it). Osei's
+  homily: Kennedy funeral Mass yesterday; "I am very glad I am not his judge… I am less glad that I have the same one."
+  Lena in a black lace mantilla, kneels and receives on the tongue; Jack receives in the hand.
+- s15b: Diocesan flu memo says bow at the Peace; nobody does; Purell at the doors. Marian shrine plaque: NORA GRACE
+  CALLOWAY · 1989–2009 · "LORD, TO WHOM SHALL WE GO?" Lena lights a candle above it. Osei: "Magdalena. You came back." —
+  "I told you I would, Father." Lena: preview weekend in April (s16; true, no medal touch).
+- s16–s19 duel `lipservice` (see flags). Lena's sources: Mark 7:8, Aristotle NE II, Pascal *cela vous abêtira*; Jack's:
+  Isaiah, Augustine (Tractate 7.8 — corrected by Lena), Kierkegaard, Aquinas on scandal, canon 1184. Lena: "My
+  grandmother would've said you bury everybody, and you bury them in the good dress." Lena pays Jack's bus fare
+  ("You owe me bus fare, Youngstown"). The 11 bus to the harbor; the orange lady.
+- s20: The Anchor (red vinyl, pie case, jukebox with one Mariah Carey); Gloria (GLORIA tag, pencil in a gray bun).
+  Marionberry pie: Jack rates it 4/10. Hale alone in the back booth with the Sunday *Times* and a Bloody Mary. The
+  Aug 30 NYT Magazine (Memorial) on Hale's table; Lena sees it, touches the medal, leaves calmly; leaves a five. Laney:
+  Lena warned her she walks out of places "and makes red beans." Laney introduces herself pageant-style.
+- s20a (followed): wharf railing, sea lions; Lena: "Allergies. Eucalyptus." (lie, medal touch). "Fine is what we do."
+- s20b (hale | stayed): Hale remembers "the nine pages"; "Your Chesterton was good. Your Aquinas was borrowed. Your anger
+  was the only original thing in it." Calls him "Mr. Costigan." Pays for Laney's pancakes ("For the cautionary tale").
+  Leaves unsteady before 2 p.m. Hale "folds the magazine closed and tucks it under his arm."
+- s21: Maria: "I'm seeing your brother next Sunday." Frank called from outside Amarillo. Nonna on the bedroom extension,
+  EWTN on, her own rosary (Glorious Mysteries); "E la ragazza?" Gina: "nonna says go to confession. i said for what. she
+  said he knows." (all paths)
+- s22: Nonna's laundry card: *Whites in HOT. Darks in COLD. MEDALS OFF.* Lena on the east stairwell (between 3 and 2),
+  barefoot, nightly call from Wes (8:04 PT): "I didn't read it. Mama said don't." "I love you too."
+- s23: Hale's email (no BCC) "Come prepared to prove you have a soul." Lena's address mbroussard@marisol.edu visible to
+  all. Two firefighters died in the Station Fire today; Theo's mother at the Peninsula with the dogs; the Hockney's in
+  the car. Theo's FB status: "is rooming with a Catholic. Taking bets on who converts whom."
+- Music cues (all on the period sheet): s01 Springsteen "Youngstown"; s02 Phoenix "1901"; s03 MGMT "Time to Pretend";
+  s07b BEP "I Gotta Feeling"; s08 Grizzly Bear "Two Weeks"; s12a Taylor Swift "You Belong with Me"; s12b Fleet Foxes
+  "White Winter Hymnal"; s19 Regina Spektor "Laughing With"; s23 Bon Iver "Re: Stacks". Diegetic: MJ "Rock with You,"
+  "Skinny Love," Miley "Party in the U.S.A."
+
+**Flags introduced (S1E01)** — strings in quotes; † = always true on every path (kept as markers, carry no path info)
+`e1_dad_thanked` · `e1_dad_joked` · `e1_offered_money_back` (renamed from `e1_dad_offered_home`) · `e1_marry_joke` ·
+`e1_crucifix_up`† · `scar_told_theo` "puck"/"nun"/"swan" · `e1_hugged_dad` · `e1_asked_about_danny` ·
+`e1_catechism_kevin` (s05 C0) · `e1_twotruths_danny` · `e1_flask` · `jack_cigs` (counter) · `e1_route`
+"kitchen"/"living"/"front" · `e1_beerpong` · `e1_met_laney_early` (= living) · `e1_met_margot_early` (= front) ·
+`scar_told_lena` "husband"/"pierogi"/"refused"(Candor)/"honest_no"(Sincerity) · `e1_postcard_seen`† · `e1_postcard_lie` ·
+`e1_knows_lena_name`† · `e1_lit_cig_porch` · `e1_lena_took_cig` · `reliquary` (long-arc counter) · `e1_after`
+"walked"/"cove" · `e1_carried_laney` (= walked) · `e1_knows_same_dorm`† · `e1_heard_boyfriend` (now = walked: heard
+Laney's "taken") · `e1_asked_lena_out` (s12a C2: she said "I have a boyfriend") · `e1_theo_forgiveness_talk`
+"mercy"/"pressed"/"joked" (cove only) · `e1_vodka` (cove, drank Theo's vodka: s12b Sincerity/Wit) · `e1_margot_q`
+"loves"/"joke"/"later" · `e1_saw_theo_dawn`† · `scar_told_osei` "nun"/"fight"/"deflect" · `e1_scar_osei_honest` ·
+`e1_mass_prayer` "dad"/"danny"/"lena"/"drift" · `e1_lena_knows_surname`† · `e1_duel_personal` · `e1_diner`
+"followed"/"hale"/"stayed" · `e1_asked_about_table` (s20a C1) · `scar_told_lena_2` "archbishop" · `e1_met_hale`
+(hale|stayed) · `e1_told_mom_girl` · `e1_heard_wes`† · `e1_stairwell` "retreat"/"passed"/"coughed" ·
+`e1_knows_lena_in_seminar`† · `e1_email_reply` "replied"/"replyall"/"none".
+Duel result macros (exclusive and exhaustive; verified by enumeration):
+RIGOR `duel.lipservice.rigor>=3` · HEART `duel.lipservice.heart>=3` · WIT `duel.lipservice.wit>=2 &&
+duel.lipservice.rigor<=2 && duel.lipservice.heart<=2` · DRAW (new) `duel.lipservice.rigor>=2 && duel.lipservice.rigor<=2
+&& duel.lipservice.heart>=2 && duel.lipservice.heart<=2 && duel.lipservice.wit<=1` · LENA `duel.lipservice.rigor<=1 &&
+duel.lipservice.heart<=2 && duel.lipservice.wit<=1 || duel.lipservice.rigor<=2 && duel.lipservice.heart<=1 &&
+duel.lipservice.wit<=1`. `duel.lipservice.lena` = 3 base, 4–5 if Jack used Reframe (s16) and/or Personal (s17).
+
+**Choice-dependent facts**
+- Danny in prison is said aloud to the floor only if `e1_twotruths_danny` (the choice text no longer says "prison").
+- Lena's grandmother "died in the storm, in '05" is told to Jack only if HEART (`duel.lipservice.heart>=3`). Bible §14
+  had this for E04: E04 must test the macro.
+- Lena's "I have a boyfriend" only if `e1_asked_lena_out`; "taken" heard on every walked path; "Wes" on all paths at s22.
+- Hale has met Jack and seen his face only if `e1_met_hale` (hale or stayed). Followed path: Hale has not met him.
+- The scar: version per listener in the flags above; Fr. Osei saw it was "a ring. Or a tooth" (all paths).
+- Laney's surname "Price" heard by Jack at s07b (living) or s20 (all paths, her pageant intro).
+
+**Tallies after S1E01**
+- Scar tellings: Theo → `scar_told_theo`; Lena → `scar_told_lena` (+ `scar_told_lena_2` "archbishop" if s20a C2);
+  Osei → `scar_told_osei`. Floor (s05 C0) heard "bar fight in Erie" as the lie.
+- Reliquary: 0–2 (`reliquary`: s10 Reckless, s20a Control). Jack's cigs lit on-page: 0–2 (`jack_cigs`: s06, s10).
+- Lena's resolve at episode end: **6** (s08 → 6, s15 → 8, s20 → 6).
+- Duel record: one duel; result per macro (RIGOR = Jack, LENA = Lena, HEART/DRAW = draw, WIT = no decision).
+- Anchor pie ratings: marionberry 4/10.
+
+**Notes**
+- `cast[].name` carries full names Jack hasn't heard (Julian Park-Ellis, Priya Raman, etc.). The engine does not render
+  `cast`; it must never feed a player-facing People list. Journal cards use only names heard on the page.
+- Seeds planted and logged (do not over-signal in E02–E03): Nonna "he knows" (s21); Frank "Not after what it — "
+  (s01 C2); "We don't. Not here. That's done." (s04 C2); "Kaylee used to — " (s12a); Theo north/forgiveness (s12b);
+  Theo 5:20 a.m. jasmine (s13b); plaque + candle (s15b); MEMORIAL (s20); "Mama said don't" (s22); Lena's path warning
+  (s10); man at the end of the driveway (s06); Kevin not laughing at Theo's two truths (s05); Theo/Kevin handshake (s07a).
+- Kennedy: funeral Mass in Boston Aug 29, **burial at Arlington that night** (narration and dialogue now agree).
+

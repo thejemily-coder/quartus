@@ -48,6 +48,27 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 7. **Ending scenes on a one-line paragraph zinger** every time. Vary scene endings.
 8. **Anachronisms:** smartphones in common use (the iPhone exists in 2009 but isn't universal; Jack has a flip phone),
    "texting" slang later than 2009, apps, memes, songs or events after the scene's date.
+9. **Expert-appraisal similes** (added S1E01): "looks at him the way a [jeweler/customs officer/trainer/mechanic] looks at
+   [object]." Max two per episode, and never two in the same act.
+10. **"That's not X. That's Y." reversals** (S1E01): max one per episode outside a character's signature line (Theo owns
+   this shape; Lena's duel thesis "That's not hypocrisy. That's showing up" is the sanctioned exception for S1E01).
+11. **Courtroom imagery** (S1E01): appellate, verdict, evidence, summons, judge, gavel, the record. It is Lena's motif
+   (future public defender). Max three uses per episode in prose and dialogue (journal excluded), and only around Lena.
+12. **Summing-up closers** (S1E01): "That's all." / "That's the whole X." ending a beat. Max two per episode.
+13. **Clue-flag tags** (S1E01): narration pointing at its own plants ("He doesn't know why he notices," "It means nothing to
+   him," "He doesn't know what that means. He doesn't let himself try."). Cut them; show the object and move on.
+14. **The suppressed laugh** (S1E01): someone laughs against their will, is furious about laughing, hides it in a cup or
+   behind a hand. Once per character per episode.
+15. **"…for nobody / at nothing" melancholy cadence** (S1E01). Once per episode.
+16. **"[Body part] does something [adjective]"** ("his face does something enormous"). Once per episode.
+17. **Narrating the theme** (S1E01): the narration explaining Jack's habits ("That's the Costigan way," "It's the family
+   trade," "He's good at not going further in"). Show it. One character may diagnose it aloud per season.
+18. **Same image twice in one episode** (S1E01): "thick enough to stop a bullet," "stairs in the dark," the lighthouse
+   "white and blind," coin/pencil for the cigarette, door/shutter for a face closing. One use per image per episode;
+   give each character their own figures (Frank's garage door, Lena's tablecloth).
+19. **Mirror-cadence beats** (S1E01): "it reaches her face the same instant it reaches his." Once per episode.
+20. **Shared stock phrases flattening voices** (S1E01): "God help him/you/them" belongs to Frank; "designated adult" is
+   Kevin's; laminating is Priya's; "sugar" is Laney's, "hon" is Gloria's.
 
 ## Episode pipeline
 1. Orchestrator: read save (`ArtifactData get saves/main`), write `saves/after-<ep>.json`; notes session with the player.
