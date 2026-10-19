@@ -219,3 +219,21 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - a **road trip episode** (LA, Big Sur or Tijuana; a bottle episode on the move);
   - the **2009 Saints' unbeaten run as a running thread**, Lena's weekly religion-within-a-religion (they don't lose
     until Dec 19).
+- **The popes and Bishop Barron (long-range).** Their attitudes to these real Church figures over the years:
+  - **Benedict XVI (pope through Feb 2013):** **Jack loves him**: the theologian-pope, Regensburg, *Spe Salvi*,
+    *Caritas in Veritate*, the liturgy. **Lena respects his mind and his office but is not enthralled.** In Fall 2009 he
+    is the reigning pope, so this is live material from the pilot season on. His resignation (Feb 11, 2013) lands hard
+    on Jack.
+  - **Francis (elected Mar 13, 2013):** **Lena absolutely adores him**: the peripheries, mercy, the poor, *Laudato Si'*,
+    the field hospital. **Jack struggles.** He likes Francis and says repeatedly that Francis has held the line on
+    doctrine despite the off-the-cuff remarks and various actions, but he really dislikes how Francis treats many of the
+    more conservative cardinals Jack admires. A durable, affectionate, sometimes heated argument between them.
+  - **Leo XIV (elected May 8, 2025):** **both of them absolutely adore him.** A rare moment of full agreement; play
+    it as joy and relief, maybe reconciliation.
+  - **Bishop Robert Barron / Word on Fire:** **Jack gets really into Barron** as Word on Fire starts up and takes off
+    (the *Catholicism* series aired in 2011; Barron became an auxiliary bishop of Los Angeles in 2015 and Bishop of
+    Winona-Rochester in 2022). **Lena likes him quite a bit, but grows dissatisfied with him during the Trump years;
+    Jack defends him as just doing the best he can.**
+  - As with politics, these are the characters' convictions written from inside. Real public figures are portrayed
+    only through their real, public words and actions (homilies, documents, interviews, news), never with invented
+    private scenes or fabricated quotes.

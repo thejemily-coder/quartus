@@ -1866,3 +1866,7 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
   wishes (Halloween party, Thanksgiving in Youngstown, road trip, Saints thread) added to the brief under "Player
   directives." Showrunner: fold them into the arc registry and the Season 1 map at the next planning pass; reconcile any
   existing plan that has either of them truly losing faith.
+- Player directive (orchestrator): Jack's and Lena's attitudes toward Benedict XVI, Francis, Leo XIV and Bishop Barron
+  over the run (see brief). Benedict is the reigning pope in S1: use it now (Jack's love, Lena's respect without
+  enthrallment). Showrunner: add Benedict's resignation and Francis's election (Feb–Mar 2013), the *Catholicism* series
+  (2011) and Word on Fire's rise, and the long-range Francis and Barron arguments to the arc registry.
