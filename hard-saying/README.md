@@ -6,7 +6,7 @@ A choice-driven prestige-TV college drama, played in episodes. Fall 2009, Califo
 and `episodes/` contain hidden canon and unplayed story. Reading them spoils the show. `writers/brief.md` (your own
 decisions), `writers/room.md` and `writers/schema.md` are safe.
 
-Game artifact: ARTIFACT_URL
+Game artifact: https://claude.ai/artifact/3MQUVCyw8UxRfXjX7fr9bH
 
 ## Making the next episode (for Claude)
 1. **Read the save.** `ArtifactData get` on doc `saves/main` of the artifact above (the page writes the whole game state
