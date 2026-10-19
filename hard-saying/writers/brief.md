@@ -243,3 +243,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   them together.** Other people and plots may crowd in and make the player miss her, but never cut Lena back too much;
   Theo, Laney, Margot and interesting new people fill her absences. The player likes more duels (e.g., Hale's
   seminar), more Kevin, Jack's family, and more Hale & Osei, but trusts the room's judgment on mix.
+- **After S1E02 (player feedback).** "A little bit of ache with the spark and sweetness for Lena this time" — loved it;
+  Lena still the standout; Laney, Theo and Margot remain great. For E03: **lighter and funnier with Lena** (a breather
+  after the ache, so the next ache lands harder). Ensemble mix: room decides. No other notes.
