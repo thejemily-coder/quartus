@@ -582,3 +582,97 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - Dale [s02 | dale] Jack's father is Lordstown, 26 years (from Lena or Jack).
 - Sloane [s13 | sloane] "The Catholic" again (E02 s17a).
 - Wes: nothing new about Jack. Luc: nothing about Jack.
+
+### S1E06 — "Welcome"
+> Written for the after-s1e05 save only (see continuity.md S1E06 for the save-locked flag list). Branch tags are
+> `[scene | condition]`. On this save: `danny_met_lena`, `e5_wed=="pref"` (Kevin's ER story and his "asleep" lie are **not**
+> known to Jack), `e4_rudy=="asked"` (Jack knows Rudy did six years at Soledad; Lena does not), `e4_wed=="iftar"`.
+
+#### Jack
+- [s01] Becca's wall post (public). Margot is keeping an alarm log (alarm 2 = eighteen days).
+- [s02] Hale's office (Hollis 314; the leash, no dog); Hale's own copy of Williams's *Moral Luck*, his margins. [s02b] **Lena
+  was in Hale's office Friday at two**; her paper is "the best thing a freshman has handed me in ten years" (Hale; Jack is
+  not to tell her). Margot's Portland number (503) 555-0193.
+- [s03a | theo] Theo's WEEK ONE cut and the fleur-de-lis footage; Theo's barn invitation from Sloane.
+- [s03a/s03b, all] **Gina said Danny's name back to the girl; the girl looked away first, then laughed with Kelsey anyway.**
+- [s03b | margot] The clove ban (Tue Sep 22); Margot's Tuesday roof wake; **Margot's father observes Rosh Hashanah "as a
+  seminar."**
+- [s04] Peter and Kenzie's public story (Steubenville 2007; Disneyland; the cousin's wedding); Bridget's first name; Kenzie's
+  Eph 5:25 answer; Peter "makes the call." [fall] Peter: "we haven't had to find out." [s06 | fall] Kenzie: "Good question."
+- [s05] Becca: seven siblings (five brothers, two sisters; Eli lost a tooth to a Benedictine [franciscan]); a ranch on the
+  Rathdrum road; the calf; seven or nine kids; the Glory Be. Kevin brought six pairs of gloves.
+- [s06] **Becca told her mother the cleanup was a date** (said aloud at Mrs. Fitch's table). Osei will say Nonna's Mass Tue
+  12:10. [s06b] Becca's second-date ask; FRIDAY? on the clipboard.
+- [s07] **Danny's letter** (text exact in continuity.md S1E06 s07); Reggie wants to know if the Pacific smells. Jack *guesses*
+  "it ain't hers to carry" was the cut-off sentence (hedged, never confirmed). Ohio State 38–0; Frank's "Good. Don't waste
+  it." Black Monday candle. **Nonna asked "E la ragazza?" twice, five minutes apart** (Maria: "She's tired").
+- [s07c] Rudy knows Jack wrote someone (from E04's advice) and that "he wrote back."
+- [s08] **Det. Sgt. Ray Ochoa, Marisol PD** (badge wallet; name, rank, Rafi's father; Tuesdays at the Anchor counter, nods to
+  Rudy). La Flaca was reported abandoned at the harbor in 2007. [s08b] **Rafi sells weed, Adderall around midterms; "Not
+  bars… anymore"** (`knows_rafi_deals`). Ray let "vitamins" go and gave him a light.
+- [s09] Laney took one of her pills at eleven and drank vodka after (Lena, aloud to Theo). Sloane: "She's ours now."
+- [s09b] Laney does Lena's eyeliner every morning.
+- [s10] Lena's account of Pi Lam taking Laney. [s10w] **Wes missed 8:04 Sat; called 9:40 from somewhere loud; Luc in the
+  background — Luc is Lena's brother**; "I've decided not to notice." [told] **Wes at sixteen, his uncle's flatboat, four
+  days, Gentilly; carried Jude and Josie (twins, nine in '05) out of a neighbor's second-floor window.**
+- [s10b] **Luc is NOPD, three years**; Mémère exists (a rosary). Lena's medal-touch at "Ochoa" (observed only; no meaning
+  given). [s10n] **Lena chose Marisol for money (ND gave half)**; she went to tell Hale "he was wrong about who gets to
+  forgive." Hale made Lena buy her own book. [told] **Mémère, 88, Breaux Bridge; calls Lena "Claudine" (Tony's sister, 61,
+  State Farm, Lafayette).**
+- [s10c] Lena's Aquinas on magnanimity. [s11] Theo "runs now" (barefoot, wet hems at 6:10; Jack doesn't believe it). Laney
+  woke at four asking for a waffle and her mother (Theo).
+- [s11b] Yusuf's Eid invitation. [s12a | sullys] the 48–22 win; Dale "the loud one." [s12b | eid] Tariq's Eid call;
+  zakat al-fitr. [s13] Browns lost 27–6 (Kevin). Jack *infers* Kevin coached Joey (saw him mouthing the reading).
+
+#### Lena
+- [s01] Becca's wall post (FB friends with Jack).
+- [s04] Jack's question [fall]; Jack's "Father Bruno skipped the homily."
+- [s05] Becca and the condom (she saw it from thirty yards). [s06] **Becca told her mother "date"** (at the table).
+- [s09 | rescue] Jack's "is this a rescue."
+- [s09b | mother] Jack's read on Laney's mother (she already knew the voicemail).
+- [s10] Jack's answer on Becca: [right] "the right thing to want"; [lovely] "I don't know what I'm doing"; [becca=="date",
+  right|lovely] **Jack told Becca it was a date**; [writing] her own line back.
+- [s10w | told] **Jack's three Wes tells: the ~4 a.m. Central wall-post like (E02), the 2 a.m.-his-time party call (E04),
+  the misspelled Dome capitals (E05).** [joke] Jack's capitals joke. [red] Reliquary No. 4.
+- [s10b] **Ray's name, "Ochoa," that he's Rafi's father, a detective, and that he was kind** (gave Jack a light) — from Jack,
+  all paths. [mouth|candor|charm|quiet] how Jack handled the stop. [read] **Danny's lines: "Tell Gina it ain't hers to carry. I
+  got it." + the veil-girl lines**; [her] only the veil-girl lines; [kept] only "He wrote."
+- [s10n] Theo's 3:17 text (Laney asleep on her side). [told] **Nonna asked Jack the same question twice**, and how Jack
+  answered [same/asked/ma]. [nun] Nonna wants to know if she's a nun. [good] Jack's "Everybody's good."
+- [s10c] "Danny's last." Rudy's rule (Jack does **not** tell her about Soledad).
+- [s12a | sullys] nothing new. [s13] Laney's apology.
+- Still does NOT know: what Danny's fight was; the money order; Rudy's prison; Hale at the Anchor; Ashley's name; that Jack
+  told Hale about Danny; that Margot saw Gina's text.
+
+#### Theo
+- [s03a | theo] **Gina said Danny's name back; "the nun" is Nonna's word and the same girl as the veil girl; Lena met Danny
+  Thursday on the bench ("She said hi").** [dontknow] Jack doesn't know what he's doing; [taken] "She's taken"; [star].
+- [s09] Laney's pill and vodka (from Lena's instructions). [s11 | quiet] infers Jack walked Lena home.
+
+#### Margot
+- [s03b | margot] **Read Gina's text upside down off Jack's RAZR: "danny," a girl at school, "looked away first," "tell the
+  nun." No context (no prison, no relationship).** She says nothing; later scenes may not use it unless gated on
+  `e6_fri=="margot"`. [case] Jack's real case; [cant] "Half the time I don't know if I can"; [joke].
+- [s04] Kenzie's answer; Peter's "I make the call"; Kevin's smile at "your future wife" (she watched him). [s04b] Lena's
+  *Gaudium et spes* rebuttal ("I'm quoting you").
+
+#### Hale
+- [s02 | danny] **Danny is in prison: the public version (a fight, a guy hurt bad, five years, pleaded); Jack sends a book a
+  month and has to erase the margins.** [shift] **Frank laid off since June.** [wit|side] nothing.
+- [s02] Jack's O'Connor margins.
+
+#### Kenzie / Peter / Becca / Osei / Gina / Danny / others
+- Kenzie [s04 | fall] Jack's question. Peter [s04 | fall] same.
+- Becca [s05] the scar telling per `scar_told_becca`; [s06b] **Jack washes dishes Saturdays 7–1 at the Anchor**; Jack's
+  answer per `e6_becca`.
+- Osei [s06 | gina] Gina's school fight; that Jack has a brother (and that the taunt was about him). [wit|good] nothing.
+- Gina [s07b | lena] **the nun's name: Lena.**
+- Danny: nothing new until Jack's reply mails Monday (it will tell him Gina's line, the veil girl's thanks or her question,
+  [gina_name] her name, OSU, the Pacific).
+- Nonna/Maria: Maria heard Jack ate hot dogs a priest grilled; Nonna heard the nun said hi to Danny.
+- Ray [s08] **Jack's full name (John Anthony Costigan), Youngstown, the Ohio license; Jack is Gloria's dish man**; [candor]
+  Jack owned the light; [mouth] Jack's mouth. 🔒 nothing about Lena on page.
+- Rafi [s08b] Jack didn't rat; [cop] Jack named his father a cop.
+- Kevin [s12a | sullys] nothing new. Laney [s13 | laney] Jack's "doing beautifully."
+- Yusuf [s12b | eid] Jack came to Eid; Lena's 2–0 text (shown).
+- Dale [s12a | sullys] nothing new (still not Lordstown).

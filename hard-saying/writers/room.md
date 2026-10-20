@@ -112,6 +112,21 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    cost," "like a man late for his own wedding." Max two per episode (tic #41 covers "the X of a man who").
 45. **"Lets the room / lets that [wait / land / picture it]" timing tags** (S1E05). Max one per episode.
 46. **Rereading as an emotion tag** (S1E05): "reads it again," "reads it twice," "then she reads it again." Max one per episode.
+47. **"Between them"** (S1E06; 10 in E05, 13 in E06): the default spatial tag for every two-person beat. Max two per episode;
+   keep the one that earns it (E06: "a whole person's worth of bench between them").
+48. **"He can hear (that) X" interpretation tags** (S1E06; 8–9 an episode since E03): the narration hears the subtext, then names
+   it ("It's respect; Jack can hear that much"). Max two per episode; let the dialogue carry it.
+49. **Superlative verdicts** (S1E06): "the most tact Jack has ever seen," "the first real question of the night," "the longest
+   train he has ever heard." Max two in narration per episode; dialogue gets its own budget of three (Hale, Margot, Lena).
+50. **Measuring the Jack–Lena gap** (S1E06): "eight inches of folding-chair gap," "a foot of splintered boards," "a careful foot
+   apart." One measured distance per episode; prefer unmeasured.
+51. **Speaking while looking away from him** (S1E06): "She doesn't look at him to say it," "looks at the fog instead of at him."
+   Max two per episode; never the "doesn't look at him to [verb] it" frame twice.
+52. **"In the voice of a [profession]"** (S1E06): "the voice of a funeral director," "a flight attendant doing the exits,"
+   "bulletin voice." Max two per episode; profession similes for the cast ("a candidate working a county fair," "like a
+   maître d'") count toward it.
+53. **"Plain / plainly" as a sincerity tag** (S1E06; 4–7 an episode): "He says it plainly," "plain as a handshake." Max two per
+   episode; let the line itself be plain.
 Small repeats to watch (S1E02): Laney's pageant wave is "wrist, wrist, elbow, elbow" (pilot order; spell it once per
 episode); "in installments"; "Of course"; "a real one" for laughs; the fixed-smile-as-mask (Laney's neon sign is hers,
 Kevin's tell is speed); hand-to-heart "as if shot"; "for no reason he could defend"; "no bit" as shorthand for sincerity;
@@ -125,6 +140,12 @@ Kevin all "allowed" in one draft); "face down" for phones and books; "comes up i
 hands" (keep one, the holy one); Hale's wine-stained cuff (once an episode unless it changes); Hale's 1:07 entrance; Yusuf's
 head on/off his arms; the radiator knock as a beat; "spine still white"; "squared up for October"; the stalled ship;
 "for a while"; Lincoln–Douglas-at-thirteen; the Greek-participle simile for Lena studying Jack (one per episode).
+Small repeats to watch (S1E06): the freight beat (E04, E05, E06 — rebuild from new parts or skip it; never "two long, one
+short, one long," "steel on steel," "a share of the weight," "since he was six," "thins"); Lena's head/chin "on her knees"
+(stage a pose once); the vocative "Costigan" in Lena's mouth (fight register, the VERBATIM lines and the tag only — "Jack"
+when it matters, "Youngstown" for flirting); a sensory anchor used as a beat marker (the tower shutter: establish it, use it
+once more); "the Williams" as the back-pocket inventory; "exactly"; "fireman" (two a scene) and "sugar" for Laney (give her
+fresh lines in her pageant-host register); weather similes (Danny's "like I'm the weather" owns the image in E06).
 Small repeats to watch (S1E04): Lena's thank-yous (spend "thank you" sparingly in her mouth; save the plain one); the
 voice-stripped-to-sincerity figure ("all the New Orleans goes out of her voice," "the Oxford worn off it," "the voice with
 nothing on it" — once per episode); Margot looking "over the black frames"; "goes still / not a flinch" for Lena; the
