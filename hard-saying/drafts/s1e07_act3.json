@@ -1,0 +1,557 @@
+{
+ "scenes": {
+  "s07": {
+   "slug": "WEDNESDAY · 4:10 AM · DELGADO HALL, THE ROOF",
+   "music": "The xx — “Intro”",
+   "body": [
+    "The cold comes up through the gravel first. It comes through the tar under the gravel and the seat of his jeans, a dry cold, the hills’ cold and not the ocean’s, with no wet in it anywhere. The Lagoon lies black and still below the parapet. Over the hills the stars have started, very slightly, to fade.",
+    "Lena has moved to the elevator housing. She sits with her back to the cinderblock and Margot’s black peacoat around her shoulders over the oatmeal cardigan, the coat’s empty sleeves hanging. She works her boots off, the left and then the right, and stands them up together on the gravel, the two brown Justins, resoled twice, like a pair of altar boys waiting to be told where to go. Then she folds her bare feet under her and sits on them.",
+    "Jack sits down against the housing too. The block still holds a little of Tuesday’s sun, for about an inch, and then it’s only block. Down on the Commons the sprinklers come on, one zone and then the next, a hiss he can just make out from five floors up, and somewhere past the Lagoon the surf on Campus Point keeps up its long, even noise.",
+    "She isn’t crying now. An hour ago she was, with all of New Orleans in it, for a boy named Anders who was never born, and Margot cried beside her without a sound, and neither of them conceded a thing. Now Lena’s face is washed clean and quiet in the starlight, and her hair is coming down out of whatever she did to it at sundown, and she is looking at the hills.",
+    "“We cry at weddings and wakes,” she says. “That was both.”",
+    "He looks for the wedding in it, and finds it: two women on a roof who wouldn’t give an inch, saying the same name."
+   ],
+   "choices": [
+    {
+     "text": "“You argued that like it was yours.”",
+     "tag": "Candor",
+     "set": {
+      "e7_yours": "yours",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“You argued that like it was yours,” he says.",
+      "It’s her line. She gave it to him across the oak in Hollis 302 the Monday he beat her, low, packing up, and it has been riding around with him ever since. Her hand comes up out of the peacoat to the medal at her throat, the worn gold on its thin chain, and closes on it. “It’s everybody’s, Costigan.” Then she lets go.",
+      "“Mine was about my brother,” he says.",
+      "“I know,” Lena says. She was there, in the cloister, the afternoon he told her."
+     ],
+     "goto": "s07b"
+    },
+    {
+     "text": "“Are you okay?”",
+     "tag": "Sincerity",
+     "set": {
+      "e7_yours": "okay",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Are you okay?”",
+      "“No,” she says, right away, as if she’s been waiting all night for somebody to ask so she could get it over with. “Ask me Thursday.”",
+      "He nods. She turns her head against the cinderblock to look at him, to make sure he’s taken it as an appointment and not a dismissal. “I’ll be okay Thursday.”"
+     ],
+     "goto": "s07b"
+    },
+    {
+     "text": "Hand her the last of the pie.",
+     "tag": "Control",
+     "set": {
+      "e7_yours": "pie",
+      "rel.lena.warmth": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      {
+       "if": "e7_pie==\"olallie\"",
+       "text": "He reaches over for the Anchor’s box and holds it out: one wedge left in the foil tin, the purple gone nearly black in the cold. Lena eats it with her fingers, straight out of the tin, like a girl raised on boiled crab, without apology. “It’s an eight,” she says, and licks her thumb. “It’s a nine.” “It’s an eight at four in the morning.”"
+      },
+      {
+       "if": "e7_pie==\"pecan\"",
+       "text": "He reaches over for the Anchor’s box and holds it out: the last wedge of pecan in the foil, the glaze gone hard in the cold. Lena eats it with her fingers, slowly, the top cracking under her teeth like the sugar on a crème brûlée. He knows what Gloria called her across the counter two weeks ago. She knows he knows. Neither of them says the word, and she finishes it, and licks her thumb."
+      },
+      {
+       "if": "e7_pie==\"rhubarb\"",
+       "text": "He reaches over for the Anchor’s box and holds it out. One slice of rhubarb is left in the foil, pink and sour and cold. Lena looks at it for a while. “Margot’s pie,” she says. “Margot’s pie,” Jack says. Neither of them takes it. He sets the box on the gravel at their feet with the lid open, and it sits there the rest of the night like a chaperone."
+      }
+     ],
+     "goto": "s07b"
+    }
+   ]
+  },
+  "s07b": {
+   "slug": "WEDNESDAY · 6:20 AM · DELGADO HALL, THE ROOF",
+   "set": {
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "They talk about the Saints in Buffalo on Sunday, and about whether Augustine was any kind of son to Monica, and about what a po’boy would cost in California if anybody here knew how to make one, and then they don’t talk, and at some point she is asleep against the housing with her chin down in Margot’s collar, and at some point so is he.",
+    "At 6:20 he wakes with gravel printed into his left palm and no feeling at all in his left foot. The stars are gone, all but one low over the hills, too steady to be a star. The sky over the ridges has gone from black to a deep cold blue and is getting lighter while he watches, like water getting lighter as you come up through it. A groundskeeper’s cart whines along the path below with its headlights still on. The Grove is giving off its morning eucalyptus, sharp as a cough drop, and the gulls are up.",
+    "Lena is awake. She hasn’t moved. She is sitting on her feet with the coat pulled around her, watching the hills come up out of the dark one ridge at a time.",
+    "“Yesterday the sun crossed the equator,” she says, when she sees he’s awake. “Twelve and twelve.”",
+    "“And now?”",
+    "“Now the nights get longer.” She pulls the coat in tighter. “Every day a little, till Christmas.”",
+    "Jack thinks of Youngstown at Christmas: dark by five, the snow gone gray by noon, his father’s truck idling in the drive with the heater on high and the left blinker still out. He knows where he’ll be for the longest night of the year. He doesn’t know where she’ll be, and he finds that he would like to.",
+    "Her shoulder is near his against the cinderblock, near enough that he can feel the warmth of her through Margot’s wool, and he wants her — not the argument, not the idea of her, her: the weight of her against his side, her head down on his shoulder, her mouth — and he keeps still, and keeping still takes every muscle he owns, one at a time.",
+    "“Sunday, at the tower,” Lena says. “I didn’t finish a sentence.”"
+   ],
+   "choices": [
+    {
+     "text": "“You don’t have to finish it.”",
+     "if": "trait.sincerity>=40",
+     "tag": "Sincerity",
+     "cue": "Lena will remember that.",
+     "set": {
+      "e7_sentence": "dont",
+      "rel.lena.trust": "+1",
+      "rel.lena.heat": "+1",
+      "soul.restraint": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "On the roof at dawn Lena said she hadn’t finished a sentence. You told her she didn’t have to.",
+     "response": [
+      "“You don’t have to finish it,” he says.",
+      "She turns her head on the block and looks at him as if he has said the one thing she came up here without an answer for. The hills go on getting light behind her. It’s a while before she speaks.",
+      "“I’m not going to finish it,” she says. “Not on a roof at six in the morning in Margot’s coat.”",
+      "And he lets her."
+     ],
+     "goto": "s07c"
+    },
+    {
+     "text": "“I noticed.”",
+     "tag": "Candor",
+     "set": {
+      "e7_sentence": "noticed",
+      "trait.candor": "+1"
+     },
+     "key": "On the roof at dawn Lena said she hadn’t finished a sentence. You told her you’d noticed.",
+     "response": [
+      "“I noticed,” he says.",
+      "“Of course you did.” She pulls Margot’s collar up to her chin. “You notice everything you’re not supposed to.”",
+      "“I’m not going to finish it,” she says. “Not on a roof at six in the morning in Margot’s coat.”",
+      "And he lets her."
+     ],
+     "goto": "s07c"
+    },
+    {
+     "text": "“I could finish it for you.”",
+     "if": "trait.reckless>=8",
+     "tag": "Reckless",
+     "set": {
+      "e7_sentence": "finish",
+      "rel.lena.heat": "+1",
+      "rel.lena.friction": "+1",
+      "resolve.jack": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "On the roof at dawn Lena said she hadn’t finished a sentence. You offered to finish it for her.",
+     "response": [
+      "“I could finish it for you.”",
+      "“Don’t you dare, Costigan.” She nearly laughs. She shuts her mouth on it instead and looks at him with her eyes very bright, and for a second the whole roof is too small to hold the two of them.",
+      "“I’m not going to finish it,” she says. “Not on a roof at six in the morning in Margot’s coat.”",
+      "And he lets her."
+     ],
+     "goto": "s07c"
+    },
+    {
+     "text": "Say nothing. Wait.",
+     "tag": "Control",
+     "set": {
+      "e7_sentence": "wait",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "On the roof at dawn Lena said she hadn’t finished a sentence. You said nothing, and waited.",
+     "response": [
+      "He waits.",
+      "So does she. A gull goes over low, complaining. The hills get a shade bluer. Down on the path the groundskeeper’s cart stops, and starts again, and stops. It’s the longest he has ever let a silence run with her, and neither of them moves to end it.",
+      "“I’m not going to finish it,” Lena says finally. “Not on a roof at six in the morning in Margot’s coat.”",
+      "And he lets her."
+     ],
+     "goto": "s07c"
+    }
+   ]
+  },
+  "s07c": {
+   "slug": "WEDNESDAY · 6:41 AM · DELGADO HALL, THE ROOF",
+   "set": {
+    "wes_visit_known": true
+   },
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Bought a ticket for Columbus Day weekend; wants to see the Pacific. She told him it’s a threat. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Came to Marisol for the money, she says. Stayed on the roof till the chimes. There’s a sentence she hasn’t finished."
+    }
+   ],
+   "body": [
+    "The top of the ridge catches first, one long stretch of it, a line of gold laid along the brush, and then the light starts down the hills toward the town. The Lagoon goes from gray to pewter. Somebody on the third floor opens a window and shuts it again.",
+    "“Wes called at eight-oh-four,” Lena says. “Last night. On the dot.” She took it on the east stairs, she says, before she came up. From his room, not from anywhere loud. He sounded tired. “He bought a ticket,” she says. “Columbus Day weekend. He wants to see the Pacific.” She looks at the gold coming down the hills. “I told him it’s a threat.”",
+    "Columbus Day weekend is two weeks from Friday. Jack has the arithmetic done before she’s finished saying it, and he would give a good deal not to have.",
+    "“You’ll like him,” Lena says. “Everybody does.”"
+   ],
+   "choices": [
+    {
+     "text": "“I’d like to meet him.”",
+     "tag": "Sincerity",
+     "set": {
+      "e7_wes": "meet",
+      "trait.sincerity": "+1"
+     },
+     "key": "When Lena told you Wes is coming for Columbus Day, you said you’d like to meet him.",
+     "response": [
+      "“I’d like to meet him,” Jack says, and finds that he means it, which is no help to anybody.",
+      "She looks at him for a long while, there against the block with the sun finally on her face. “I know you would,” she says. “That’s the worst thing about you.”",
+      "At seven Ferrer Tower starts the day’s chimes across the Commons, one bell flat the way it always is, and the sound reaches the roof a little late, off the water. Lena gets up. She gathers the boots by their pull-straps, carried and not worn, and Margot’s coat over her arm, and picks her way across the gravel to the stairhead. “Seminar’s at one,” she says. “Don’t be late, Youngstown.”",
+      {
+       "if": "e7_sentence==\"dont\"",
+       "text": "On the top step she stops with one hand on the doorframe, as if there were something else, and he waits. Either there isn’t, or she keeps it. Then she goes on down into the building, and the door eases shut on its closer against the popsicle stick, and Jack has the roof and the sun to himself.",
+       "else": "Then she goes down into the building, and the door eases shut on its closer against the popsicle stick, and Jack has the roof and the sun to himself."
+      }
+     ],
+     "goto": "s07d"
+    },
+    {
+     "text": "“Bring him to the Anchor. Gloria’ll rate him.”",
+     "tag": "Wit",
+     "set": {
+      "e7_wes": "anchor",
+      "trait.wit": "+1"
+     },
+     "key": "When Lena told you Wes is coming for Columbus Day, you told her to bring him to the Anchor so Gloria could rate him.",
+     "response": [
+      "“Bring him to the Anchor,” Jack says. “Gloria’ll rate him.”",
+      "Lena considers it seriously, head tipped, a hostess doing the guest list. “She’ll say peach,” she says. “Everybody’s peach to Gloria at first.”",
+      "At seven Ferrer Tower starts the day’s chimes across the Commons, one bell flat the way it always is, and the sound reaches the roof a little late, off the water. Lena gets up. She gathers the boots by their pull-straps, carried and not worn, and Margot’s coat over her arm, and picks her way across the gravel to the stairhead. “Seminar’s at one,” she says. “Don’t be late, Youngstown.”",
+      {
+       "if": "e7_sentence==\"dont\"",
+       "text": "On the top step she stops with one hand on the doorframe, as if there were something else, and he waits. Either there isn’t, or she keeps it. Then she goes on down into the building, and the door eases shut on its closer against the popsicle stick, and Jack has the roof and the sun to himself.",
+       "else": "Then she goes down into the building, and the door eases shut on its closer against the popsicle stick, and Jack has the roof and the sun to himself."
+      }
+     ],
+     "goto": "s07d"
+    },
+    {
+     "text": "“Okay.”",
+     "tag": "Control",
+     "set": {
+      "e7_wes": "okay",
+      "trait.control": "+1"
+     },
+     "key": "When Lena told you Wes is coming for Columbus Day, you said okay.",
+     "response": [
+      "“Okay,” he says.",
+      "She nods, slowly, as if okay were the answer to some other question, one she asked a long time ago and he’s only now getting around to.",
+      "At seven Ferrer Tower starts the day’s chimes across the Commons, one bell flat the way it always is, and the sound reaches the roof a little late, off the water. Lena gets up. She gathers the boots by their pull-straps, carried and not worn, and Margot’s coat over her arm, and picks her way across the gravel to the stairhead. “Seminar’s at one,” she says. “Don’t be late, Youngstown.”",
+      {
+       "if": "e7_sentence==\"dont\"",
+       "text": "On the top step she stops with one hand on the doorframe, as if there were something else, and he waits. Either there isn’t, or she keeps it. Then she goes on down into the building, and the door eases shut on its closer against the popsicle stick, and Jack has the roof and the sun to himself.",
+       "else": "Then she goes down into the building, and the door eases shut on its closer against the popsicle stick, and Jack has the roof and the sun to himself."
+      }
+     ],
+     "goto": "s07d"
+    }
+   ]
+  },
+  "s07d": {
+   "slug": "WEDNESDAY · 7:04 AM · DELGADO HALL, 4TH-FLOOR LOUNGE",
+   "journal": [
+    {
+     "kind": "note",
+     "id": "whiteboard",
+     "title": "The whiteboard",
+     "text": "Margot’s, by annexation: USEFUL IDIOTS FOR CHRISTIAN NATIONALISM, COSTIGAN | BROUSSARD. Sully’s made the board: liturgical football, idolatry, my outfit. Now the chastity talk is up there too: both of us, voluntarily. Kenzie Rourke got her own line. C 6, B 5. The morning after the wake, under the total: TUESDAY — NO SCORE. (BEREAVEMENT.) First time she’s ever stopped counting."
+    }
+   ],
+   "body": [
+    "The fourth-floor lounge is full of sun. It lies across the carpet in long bright panels and climbs the side of the Zenith on its cart, and somebody’s Cup Noodles from last night is on the windowsill with the fork still standing in it. Margot’s capitals have been up on the whiteboard since sometime after four.",
+    {
+     "type": "doc",
+     "title": "The 4th-floor whiteboard",
+     "text": "USEFUL IDIOTS FOR CHRISTIAN NATIONALISM\nCOSTIGAN | BROUSSARD\n…\nKENZIE ROURKE — Eph. 5:25. Better than the text deserves. (Not an idiot. Category pending.)\nTOTAL — C 6 · B 5\n\nTUESDAY — NO SCORE. (BEREAVEMENT.)"
+    },
+    "Jack reads it from the doorway and leaves it the way it is. In 412 he lies down on top of the blanket in his clothes, with the gravel still in the seams of his jeans, and sleeps till noon."
+   ],
+   "next": "s08"
+  },
+  "s08": {
+   "slug": "WEDNESDAY · 12:58 PM · HOLLIS 302",
+   "duel": "friend",
+   "set": {
+    "duel.friend.lena": 1
+   },
+   "body": [
+    "Hollis 302 at two minutes to one: the long oak table, the fourteen chairs, the window full of sea. It’s the first full day of fall and it doesn’t look it. The light is high and white, and the Pacific lies flat as hammered tin all the way out to where it stops.",
+    "Jack is on four hours’ sleep in yesterday’s jeans and the cleanest shirt he could find, the Augustine in his back pocket. Across the table Lena has on a yellow sundress and the oatmeal cardigan, her hair still wet from the shower and combed straight back, no makeup; nobody did her eyeliner this morning. They haven’t said a word to each other since the chimes. When she sits down she gives him a nod, a seminar nod, the one she gives the Palo Alto girl.",
+    "Caleb has his *Consolations* out, molting Post-its from every edge. Yusuf is drawing small load arrows in the margin of his Lewis. The Palo Alto girl keeps her Montaigne in a Ziploc bag, for reasons she has never shared.",
+    "Hale is late, which for Hale is on time. He comes in with the roster and nothing else and sits. “St. Pius of Pietrelcina,” he announces, “whom his own Church investigated for years for bleeding too convincingly. My sort of saint: under suspicion.” Then his eye travels down the table to the two of them, to Jack’s unshaved jaw and Lena’s wet hair, and something in his ruined handsome face lights like a boy’s at a bonfire. “Mr. Costigan. Miss Broussard. You look like the morning after the Diet of Worms.”",
+    "Monday he gave them friendship. Aristotle, the *Ethics*, books eight and nine; Montaigne, “Of Friendship”; Lewis, *The Four Loves*, chapter four, “so the believers at this table have a Christian to hide behind.” One question on the whiteboard, CAN A MAN AND A WOMAN BE FRIENDS?, and the house rule as ever: argue the side you least believe you can prove. Jack wrote his Monday night at the desk in 412 between eleven and two, and read the Lewis chapter through twice, and didn’t ask her which side she was taking. She didn’t ask him.",
+    "The papers go across the table at the top of the hour, the way they always do. Hers lands in front of him, two pages stapled at the corner. His is in her hands.",
+    "“State your theses,” Hale says.",
+    "“That a Man and a Woman Can Be Friends,” Jack says.",
+    "“That They Can’t,” says Lena.",
+    "There’s a small quiet at the table, the kind a room makes when it hears something before the people saying it do. The Palo Alto girl looks from one of them to the other. Caleb puts down his pen. “Are we sure,” Caleb says, “this is about Aristotle?”",
+    "“Prove the thing you least believe you can prove,” Hale says, with enormous satisfaction. “I see you were both listening.”",
+    "Lena goes first. Lena always goes first. “Aristotle,” she says, “wants a friendship between a man and a woman, and he can find only one place to put it. Book eight, chapter twelve: husband and wife. It can be a friendship of virtue, he says, *if they are good* — but it’s in the part about running a household. He shelves us under marriage. Montaigne goes further.” She turns a page of her Montaigne, which is flagged in red. “Women, says Michel de Montaigne, haven’t got souls firm enough to bear the strain of so tight and lasting a knot. I’d like that entered as the stupidest thing a Frenchman ever wrote” — the table laughs — “and also as my evidence. And then there’s Lewis.”",
+    "She has the Lewis open, and she reads it aloud like a lector at a Sunday Mass, every consonant paid for. “Friendship between a man and a woman *will very easily pass — may pass in the first half-hour — into erotic love.*”",
+    "She stops there, and closes the book on her finger. Lewis keeps going after that, as Jack well knows. Nobody in the room reads the rest of it aloud."
+   ],
+   "choices": [
+    {
+     "text": "Aristotle back at her: a friend is another self. You want his good for his sake.",
+     "tag": "Press",
+     "set": {
+      "duel.friend.rigor": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“Book nine, chapter four,” Jack says. “A friend is another self. And book eight, chapter three: the friendship of the good wishes the other one’s good *for the other one’s sake*. Not for what it gets. Eros wants to have. A friend wants you to flourish.”",
+      "“That’s Aristotle on two men at a gymnasium,” Lena says. “Put a woman in the room.” She is pleased with him, he can see it, and she is furious about being pleased."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "“Then nobody turn their head. I’ve been practicing.”",
+     "tag": "Riposte",
+     "set": {
+      "duel.friend.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Then nobody turn their head,” Jack says. “I’ve been practicing.”",
+      "The table goes up. The San Diego boys laugh in harmony. Caleb lifts a palm to heaven and says “Selah.” Lena looks at Jack across the oak. “Practicing on whom?” she says, and from her face she’d like it back the second it’s out. Nobody answers. Hale, enjoying himself, waves them on."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "“Lewis is right about the half-hour.”",
+     "tag": "Concede",
+     "set": {
+      "duel.friend.heart": "+1",
+      "rel.lena.warmth": "+1",
+      "e7_halfhour": true
+     },
+     "response": [
+      "“Lewis is right about the half-hour,” Jack says.",
+      "Somewhere down the table there’s a sound like a dropped fork. Yusuf studies the ceiling. Lena, for once, has no next line ready, and picks up her coffee and drinks some of it instead.",
+      "“The gentleman from Ohio concedes the half-hour,” Hale says. “We’ll none of us ask which one.”"
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "Augustine, Book Four: the danger isn’t eros. It’s loving somebody mortal as if she’ll never die.",
+     "tag": "Reframe",
+     "set": {
+      "duel.friend.rigor": "+1",
+      "rel.hale.warmth": "+1"
+     },
+     "response": [
+      "He doesn’t need to take the Augustine out of his pocket; he knows the page. “Book Four,” he says. “Augustine has a friend, and loves him as if neither of them would ever die. Then the friend dies. The danger Augustine sees isn’t eros. It’s loving somebody mortal as if she’ll never die. That’s what wrecks you. Not the half-hour. The forever.”",
+      "Hale sits up. “The bishop of Hippo,” he says, “before lunch. Miss Broussard?”",
+      "Lena looks at Jack across the table. “Don’t bring Book Four to a seminar,” she says, “unless you mean it.”"
+     ],
+     "goto": "s08b"
+    }
+   ]
+  },
+  "s08b": {
+   "slug": "WEDNESDAY · 1:31 PM · HOLLIS 302",
+   "duel": "friend",
+   "set": {
+    "duel.friend.lena": "+1"
+   },
+   "body": [
+    "Half an hour in, Lena breaks her own paper.",
+    "“Except,” she says, and sets down her pen, and Jack watches her walk away from two pages she spent Monday night on. “Except Thomas. *Secunda secundae*, question twenty-three, article one. Charity — the highest love there is, the one we’re commanded to — *is* a friendship. Friendship with God. He gets it from John: *I no longer call you servants. I have called you friends.*” She isn’t arguing the assignment anymore; anybody at the table can see that. Her voice has dropped into the one she uses for the responses at Mass. “If the highest love there is is a friendship, then friendship can’t be the thing eros ruins. It’s the thing eros is *for*.”",
+    "Hale takes his reading glasses off the top of his head and folds them, slowly, a man whose horse has come in. “Miss Broussard,” he says, “has just proved Mr. Costigan’s paper.” He turns. “Mr. Costigan — defend hers.”",
+    "So Jack has her two pages under his hand and her side to argue, and across the table she has his, and the side she believes. She doesn’t wait for him to find his feet.",
+    "He turns over her first page for something to stand on. Aristotle, Montaigne, Lewis, laid down in her order and tamped flat, the whole thing built like a levee. It’s a good paper for a side she doesn’t hold, and now it’s his.",
+    "“A friend,” Lena says, “wants your good even when your good is somebody else.”",
+    "She says it straight down the oak at him, and she means it. Neither of them says a name."
+   ],
+   "choices": [
+    {
+     "text": "Aristotle’s best case has a vow in it.",
+     "tag": "Press",
+     "set": {
+      "duel.friend.rigor": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“Then explain your own Aristotle,” Jack says. “Book eight, chapter twelve. When the Philosopher goes looking for a friendship of virtue between a man and a woman, the only one he can find has a wedding in it. He couldn’t picture it without the vow. Neither could anybody else for two thousand years.”",
+      "“Then the Philosopher,” Lena says, “needed to get out more.”"
+     ],
+     "goto": "s08c"
+    },
+    {
+     "text": "“Lewis had already married his friend when he wrote that.”",
+     "tag": "Reframe",
+     "cue": "Lena will remember that.",
+     "set": {
+      "duel.friend.rigor": "+1",
+      "rel.lena.heat": "+1",
+      "e7_lewis": true
+     },
+     "key": "In Hale’s seminar you said C.S. Lewis had already married his friend when he wrote the friendship chapter.",
+     "response": [
+      "“Lewis had already married his friend when he wrote that,” Jack says.",
+      "The table looks at him. “Joy Davidman,” he says. “She wrote him letters for years before she ever crossed the ocean. His friend. He married her in a registry office in ’56 so she could stay in England, and then again, properly, at her bedside in a hospital in ’57, when they thought she was dying. He gave the talks the book came out of in ’58. When Lewis says it may pass in the first half-hour, he isn’t guessing.”",
+      "Lena goes quiet — the real quiet, not the polite one, and he has only seen it a few times.",
+      "“Point to Mr. Costigan,” Hale says softly, “and I believe a casualty.”"
+     ],
+     "goto": "s08c"
+    },
+    {
+     "text": "“Yeah. It does.”",
+     "tag": "Concede",
+     "set": {
+      "duel.friend.heart": "+1",
+      "rel.lena.trust": "+1",
+      "e7_friend_concede": true
+     },
+     "response": [
+      "Jack looks down at her pages under his hand, and up at her. “Yeah,” he says. “It does.”",
+      "He’s supposed to be arguing Can’t. He has just given her Can, outright, in front of the whole table and a man who wrote a bestseller against God.",
+      "“Mr. Costigan,” Hale says, “has defected to his own paper.”",
+      "Lena looks at him across the oak like a girl reading somebody’s margins while he’s out of the room."
+     ],
+     "goto": "s08c"
+    },
+    {
+     "text": "“Miss Broussard has proved my paper. I’d like it noted I wrote it first.”",
+     "tag": "Riposte",
+     "set": {
+      "duel.friend.wit": "+1"
+     },
+     "response": [
+      "“Miss Broussard has proved my paper,” Jack says. “I’d like it noted I wrote it first.”",
+      "“Noted,” says Hale, “and irrelevant.”",
+      "“Plagiarism of the future,” says Lena. “It’s a Jesuit thing.”"
+     ],
+     "goto": "s08c"
+    }
+   ]
+  },
+  "s08c": {
+   "slug": "WEDNESDAY · 1:58 PM · HOLLIS 302",
+   "duel": "friend",
+   "set": {
+    "duel.friend.lena": "+1"
+   },
+   "body": [
+    "By two the assignment has been left somewhere behind them on the table with the coffee cups, and nobody goes back for it. Lena has her elbows on the oak and her hands loose in front of her, and she isn’t reading from anything.",
+    "“Augustine,” she says, “grieved his friend for one book and spent the rest of it on a God who couldn’t die on him.”",
+    "She says it to the window as much as to the table, to the white glare on the water. The room is quieter than a seminar ought to be. Yusuf has stopped drawing load arrows in his margin. Caleb sits with his hand flat on his *Consolations*. Hale has his chin on his fist and isn’t refereeing anything; he’s listening.",
+    "Jack’s own pencil is thickest in that book, in the margins of the chapters where the friend dies. He has never shown those margins to anybody."
+   ],
+   "choices": [
+    {
+     "text": "Book Four, chapter nine: you only lose the friends you didn’t love in God.",
+     "tag": "Press",
+     "set": {
+      "duel.friend.rigor": "+1"
+     },
+     "response": [
+      "“Chapter nine,” Jack says. He doesn’t take the book out. “*Blessed are those who love you, and love their friends in you.* They’re the only ones who never lose anybody dear to them, he says, because they love them in the one who can’t be lost.” He waits until she looks at him. “He didn’t trade his friend for God, Lena. He found the only place you don’t lose one.”",
+      "She has nothing for that, and she doesn’t pretend to. She looks at him, and then down at her hands on the oak."
+     ],
+     "goto": "s08v"
+    },
+    {
+     "text": "“He never got over it. Nobody’s supposed to.”",
+     "tag": "Concede",
+     "set": {
+      "duel.friend.heart": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“He never got over it,” Jack says. “Nobody’s supposed to.”",
+      "She looks at him. Then she looks down at the table, at a knot in the grain of the oak. “No,” she says. “Nobody is.”"
+     ],
+     "goto": "s08v"
+    },
+    {
+     "text": "“That’s a long rebound.”",
+     "tag": "Riposte",
+     "set": {
+      "duel.friend.wit": "+1"
+     },
+     "response": [
+      "“That,” Jack says, “is a long rebound.”",
+      "The room breaks. The San Diego boys lose it; even the Palo Alto girl laughs into her Ziploc bag. “Augustine’s rebound,” Hale says, wiping one eye. “I’m putting it on the final.” And Lena laughs, once, short and out loud, caught off guard, and while it lasts the whole table is warm again."
+     ],
+     "goto": "s08v"
+    },
+    {
+     "text": "Montaigne wrote the whole essay because his friend died.",
+     "tag": "Reframe",
+     "set": {
+      "duel.friend.rigor": "+1"
+     },
+     "response": [
+      "“Your Frenchman,” Jack says. “Montaigne. He wrote ‘Of Friendship’ about La Boétie, years after La Boétie was dead. *Because it was he, because it was I.*” He taps her pages. “Everybody writes about friendship afterward, Lena. You only get the essay if you had the friend.”",
+      "It’s her own Montaigne, turned around on her. She looks for the hole in it, and he watches her look, and she can’t find one."
+     ],
+     "goto": "s08v"
+    }
+   ]
+  },
+  "s08v": {
+   "slug": "WEDNESDAY · 2:24 PM · HOLLIS 302",
+   "duel": "friend",
+   "journal": [
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "e7_friend_concede && duel.friend.heart>=2",
+     "text": "Three–one, and a draw. Friendship: nobody’s. I gave her the true point while I was supposed to be arguing against it, and she gave the room something true back: Wes was her brother’s best friend first."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "duel.friend.rigor>=3",
+     "text": "Four–one. Friendship: mine, arguing both sides. She says she’ll never forgive me."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e7_friend_concede && duel.friend.rigor<=2 && duel.friend.wit>=2 || duel.friend.heart<=1 && duel.friend.rigor<=2 && duel.friend.wit>=2",
+     "text": "Three–one, and a no-decision. Friendship. Hale called it a Christmas cracker."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e7_friend_concede && duel.friend.rigor<=2 && duel.friend.wit<=1 || duel.friend.heart<=1 && duel.friend.rigor<=2 && duel.friend.wit<=1",
+     "text": "Three–two. Friendship: hers, on points, and on the Frenchman."
+    },
+    {
+     "kind": "note",
+     "id": "assignment",
+     "title": "The paired papers",
+     "text": "Two pages a week, bled on in red. Week two, hers: “That a Broken Statue Is Still Herakles,” with my sentence on page two. Mine: “That God Is the One Who Pays.” She kept it. Hale’s rule: prove the thing you least believe you can prove. Moral luck — mine: “That the Lucky Man Owes Nothing.” Hers: “That There Is Such a Thing as Luck.” Her red on mine: “You don’t believe a word of this. It’s your best paper.” This week, friendship. Mine: “That a Man and a Woman Can Be Friends.” Hers: “That They Can’t.” Caleb asked if we were sure it was about Aristotle. She kept mine."
+    }
+   ],
+   "body": [
+    "Hale lets the quiet run a while. Then he sits back in his chair, sets his reading glasses up on his head, and looks down the table at the two of them.",
+    {
+     "if": "e7_friend_concede && duel.friend.heart>=2",
+     "text": "Nobody wins it. Hale has his mouth open to give it to somebody when Lena speaks first, and not to Jack. To the room. “Wes was my brother’s best friend before he was anything to me,” she says. “Since T-ball. I’ve seen it go the one way.” She closes her notebook. “I’ve never seen it go back.” Hale doesn’t say anything for a second, and then he does, gently for him. “A draw,” he says, “and a confession. I’ll take both.” Three–one on the season, and a draw, and Jack couldn’t say who won what."
+    },
+    {
+     "if": "duel.friend.rigor>=3 && e7_lewis",
+     "text": "Hale gives it to Jack. “Mr. Costigan,” he says, “on points — both sets.” Four–one on the season. Across the oak Lena is already packing up, and she says it low, for him and nobody else, with her eyes on the zipper of her bag: “You argued my side better than I did. I’ll never forgive you.”"
+    },
+    {
+     "if": "duel.friend.rigor>=3 && !e7_lewis",
+     "text": "Hale gives it to Jack. “Mr. Costigan,” he says, “on points — both sets.” Four–one on the season. Across the oak Lena is already packing up, and she says it low, for him and nobody else: “You argued my side better than I did. I’ll never forgive you.”"
+    },
+    {
+     "if": "!e7_friend_concede && duel.friend.rigor<=2 && duel.friend.wit>=2 || duel.friend.heart<=1 && duel.friend.rigor<=2 && duel.friend.wit>=2",
+     "text": "Hale declines to score it. “I’ve had more rigor out of a Christmas cracker,” he says. “Delightful. Worthless.” No decision; three–one on the season, still, and Caleb is still laughing at something from round two."
+    },
+    {
+     "if": "!e7_friend_concede && duel.friend.rigor<=2 && duel.friend.wit<=1 || duel.friend.heart<=1 && duel.friend.rigor<=2 && duel.friend.wit<=1",
+     "text": "Hale doesn’t make them wait. “Miss Broussard,” he says, “on points, and on the Frenchman.” Lena takes it with a nod and no flourish. Three–two on the season, and Jack finds he doesn’t mind it the way he ought to."
+    },
+    "Then Hale folds his hands on the roster and regards the pair of them with deep contentment. “One of you has proved the other’s thesis,” he says. “I’ll leave you to work out which.”",
+    "Chairs scrape. The San Diego boys go out arguing about something else entirely. Lena squares her papers into a stack on the oak with two taps, and his two pages are on top, and she keeps them; she’s through the door with them before Jack has got his chair out from the table. Her two pages are still under his hand.",
+    "He stands. From the end of the table, without looking up, Hale lifts one finger at him: stay."
+   ],
+   "next": "s08x"
+  }
+ }
+}

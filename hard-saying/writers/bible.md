@@ -133,7 +133,7 @@ episode still has a scene where someone eats pie and is ridiculous.
   the narration; consequences come from character, not from the author's thumb.
 - Everyone in sexual content is **18 or older** (see §9 birthdays).
 - **HARD RULE (brief): Jack and Lena sleep only with each other, ever.** Neither has slept with anyone before the series,
-  and neither sleeps with anyone else during it: not Wes, not Becca, not Paige, not Sol, not Julian, not Gideon, not a
+  and neither sleeps with anyone else during it: not Wes, not Becca, not Sol, not Julian, not Gideon, not a
   stranger at a party. Their first time, whenever and however the player's choices bring it, is with each other. With
   other people the ceiling is **kissing, making out, real physical temptation and the near-miss** — charged, on the page,
   costing resolve — and then the line holds: an interruption, her stop, his stop, a door, a phone, a confession of the
@@ -283,9 +283,9 @@ a gray Cardinal Mooney Cardinals hoodie, one good navy blazer from the Goodwill 
 junior year, which ended in the winter after November 2007 when he went "quiet" and she couldn't find the door — and has
 never slept with anyone. He is not naive and not scandalized; he is waiting on purpose and it is not easy.
 
-**Arc (full run).** From penance-as-performance to mercy received. S1: the charming rival who can't be honest; Becca, then
-the tryer (Paige) — who arrives as Wes is quietly ending, so that when Lena is free, Jack isn't. S2: Paige, who does
-everything right, and the sad ending; the knowledge of Theo's secret lands on him. S3: the pull of the world (Sol, from
+**Arc (full run).** From penance-as-performance to mercy received. S1: the charming rival who can't be honest; Becca, the
+tryer — dating him from the beach cleanup on, while Wes is quietly ending, so that when Lena is free, Jack isn't. S2: Becca,
+who does everything right, and the sad ending; the knowledge of Theo's secret lands on him. S3: the pull of the world (Sol, from
 Theo's LA orbit); holding Theo's secret while asking everyone else for truth. S4: Lena, at last, and the lie that blows it up. S5: exile, Wes's funeral, the seal on
 trial. S6: repair. S7–S8: the truth about Danny, told to the people who are owed it; Benedict resigns, Francis arrives;
 graduation. Adulthood: he goes home. 🔒 Endgame Jack becomes a high-school theology and philosophy teacher at Cardinal
@@ -476,7 +476,7 @@ party. Petite, all hips and attitude. Wardrobe: sundresses that cost more than J
 monogrammed everything, pearls with a Ramones shirt. **Phone:** BlackBerry Curve, pink.
 
 **The alliance (brief).** Theo's co-conspirator. On **Jack's** girls and dates she is openly rude to every one of them
-(Becca first, from E07; Paige "on principle"); Lena tells her to stop and be nice to all of them *except Sol*, whom Lena
+(Becca, the tryer, from E07, "on principle"); Lena tells her to stop and be nice to all of them *except Sol*, whom Lena
 can't stand either — and Laney, rude to Sol in public, privately and begrudgingly likes her (cigarettes on the Pi Lam roof;
 never admitted). On **Lena's** boyfriends after Wes she is perfectly polite in the open and privately Team Jack, passing
 Theo information. Kevin tells them both to leave it alone; both refuse.
@@ -534,6 +534,15 @@ is right, and it costs Jack and Lena everything for a while. (She likes Julian a
 Lena's life — S3, and means it.) S5: the seal story; she and Jack fight about the confessional
 like it's a war. She never converts. Adulthood: an investigative reporter (ProPublica-type); godmother to one of Jack
 and Lena's children, at her insistence, "as a hedge."
+**Anders, as she tells it (E07 plan — the Delgado roof, Wed Sep 23, ~3 a.m., to Lena, Jack and Kevin; 🔒 until then).**
+Spring 2000; Margot was nine. Her mother was forty-one; an amniocentesis at about sixteen weeks; trisomy 21. Her parents
+decided at the kitchen table and told Margot the same night "in age-appropriate language" (her father's phrase, which she
+quotes like a diagnosis). They had already picked the name: Anders. The procedure was on **March 15, 2000** — "the ides; my
+father pointed that out; he thought it was interesting." She has defended her mother's choice in every forum since, and
+means it; she keeps the date alone every year, and nobody has said his name aloud since 2000 but her. **Never a strawman
+in either direction:** she is not converted, softened or "won"; she grieves a brother and defends her mother in the same
+breath, and the show holds both. **The same night, after Kevin walks her down, Kevin comes out to her** — the first person he
+has ever told (🔒 off-page; Jack sees them leave the roof together and reads it as a romance).
 
 ### 8.4 KEVIN TRAN
 **Full name:** Kevin Minh Tran (Vietnamese name Trần Minh Khang). Born **February 15, 1991** (Tết, the Year of the
@@ -577,13 +586,23 @@ gray, Bellarmine maroon, Stanford-Medicine-summer-program cardinal), a big easy 
 **The alliance.** Kevin is the one who tries to get Theo and Laney to leave Jack and Lena alone ("Respectfully, this is
 a hostage situation"); both refuse; he keeps trying, every season, and is in on the joke at the reveal.
 
-**Arc.** No easy answers either way. S1: the mask; a stairwell fight with Theo Jack half-hears (E16). S2: Newman VP;
-pressure from Peter Haddad; Margot as confessor. S3: comes out to Jack and Lena. S4: when the Nora case reopens, his
-night with Theo becomes evidence — he must decide whether to be a witness and out himself to his family; he does. S5:
-his father stops speaking to him; Bà Nội does not. He tries celibacy and the sacraments in earnest. S6–S7: a
-relationship with a man (Andrés, a med student), and a year away from Mass. S8: he comes back to sit in the back pew on
-Holy Thursday 2013. The show does not resolve him; it accompanies him. Adulthood: an ER doctor (Osei's vocation,
-inherited).
+**Arc (revised for the player's directive: a long struggle, shaped heavily by his friendship with Jack and Lena, with real
+back-and-forth — brief departures from the Church, a same-sex relationship or two, other lapses, a sad attempt with a girl —
+before he finally settles as a celibate gay Catholic. Full cost, compassion, no easy answers either way, no mouthpieces.)**
+S1: the mask; **out to Margot the night of the clove wake (E07; off-page; Jack misreads them as a couple and teases them
+both)**; a stairwell fight with Theo Jack half-hears (E16). S2: Newman VP; pressure from Peter Haddad; Margot as confessor;
+**the sad, sincere attempt with a girl** (a Newman sophomore, Clare Dominguez, S2E05–E09 — she deserved better and knew it
+within a month; nobody is a villain). S3: comes out to Jack and Lena (they love him, and say the hard true thing, and stay;
+Margot is loudly offended on his behalf — at the teaching, and at them). S4: when the Nora case reopens, his night with Theo
+becomes evidence — he must decide whether to be a witness and out himself to his family; he does. S5: his father stops
+speaking to him; Bà Nội does not. He tries celibacy and the sacraments in earnest, and it doesn't hold yet. S6–S7: a
+relationship with a man (Andrés, a med student — kind, serious, not a villain) and a year away from Mass (a semester at the
+Episcopal parish in Las Olas). S8: he comes back to sit in the back pew on Holy Thursday 2013. Adulthood: a second
+relationship ends; he settles — by his own decision, at full cost — as a celibate gay Catholic; an ER doctor (Osei's
+vocation, inherited); godfather to one of Jack and Lena's children. He tells them they are the reason he could imagine it.
+**Margot** never accepts the teaching and says so at every table for twenty years, and comes to accept and respect that Jack
+and Lena genuinely love him ("I hate that it's real. It's real."). The show accompanies him; it never pretends the cost is
+small, and never pretends the life is a defeat.
 
 ### 8.5 FR. GABRIEL OSEI
 **Full name:** Rev. Gabriel Kofi Osei. Born **May 2, 1964**, Kumasi, Ghana — 45 at the pilot. MB ChB, University of Ghana
@@ -671,6 +690,9 @@ when drunk. Quotes Larkin, Housman, Hume and the Book of Common Prayer — the l
 **Look (brief).** Rumpled Oxford rake. Tall, silver hair swept back too long, a linen jacket with wine on the cuff, a
 once-beautiful face gone ruddy and broken-veined. Still devastating when he smiles. Reading glasses he loses on his head.
 
+**(E07 plan, `e6_hale_danny`:)** after the friendship duel he gives Jack a pocket *A Shropshire Lad* (a wartime
+edition, foxed) "for the brother. No margins. They'd only erase them." 🔒 Kindness when no one is looking, and a leash: the
+brother goes into the S3 book.
 **Arc.** S1: the seduction of two minds; the postcard discovery (E14); the dinner party where he's magnificent and then
 vile. S2: debates Lena publicly at the Marisol Forum and loses; loves her more for it. S3: writes a book on moral luck
 using his students as unnamed examples; Jack finds himself in a footnote. S4: the forty-one seconds come out; disgrace;
@@ -742,7 +764,6 @@ All freshmen are 18 or older on move-in day, **Saturday, August 29, 2009**.
 | Joey Abruzzo | Jan 17, 1991 | 18 | Freshman |
 | Doug Pruitt | Aug 3, 1991 | 18 | Freshman |
 | Julian Park-Ellis | Jan 9, 1990 | 19 | Sophomore |
-| Paige Sato-Whitman | Apr 2, 1990 | 19 | Sophomore |
 | Sol Arriagada Holm | Sep 11, 1989 | 19 (20 on Sep 11) | NYU sophomore in S1–S2; Marisol transfer junior from S3 |
 | Gideon Strand | Mar 1, 1986 | 23 | History MA student / union organizer (from S2) |
 | Priya Raman (RA) | Oct 14, 1988 | 20 | Junior |
@@ -783,7 +804,8 @@ water and the knocking was just a woman and there was no one listening to either
 September. He doesn't tell Lena. He drinks a little more each week. He keeps calling her every night at 10 Central / 8
 Pacific, sweet and funny, and she keeps not noticing, because she doesn't want to.
 
-**Jack and Wes.** Wes visits Marisol Columbus Day weekend (S1E09). Jack expects to hate him and doesn't. They end up on the
+**Jack and Wes.** **(E07:)** at dawn on the Delgado roof Lena tells Jack that Wes has bought a ticket — Columbus Day
+weekend, "He wants to see the Pacific. I told him it's a threat." Wes visits Marisol Columbus Day weekend (S1E09). Jack expects to hate him and doesn't. They end up on the
 beach at 2 a.m. with a bottle of Jameson; Wes tells Jack the attic story — the one he's never told Lena — because Jack is
 a stranger, and you can tell a stranger. **(Revised for the timing tragedy:)** Wes tells it in the *past tense*, as a
 wound that healed — "I couldn't kneel for a year after. Then she came along and I could" — and shows Jack a photo of
@@ -791,7 +813,7 @@ Mémère Odile's ring on his phone: he's going to ask Tony after Lena graduates.
 himself. Wes says: "Take care of her. She thinks she's the one doing the carrying." Jack (and the player) come away
 believing Wes is solid and the thing is forever; Jack knows something about Lena's boyfriend that Lena doesn't (the attic,
 the ring), and it is the beach, the ring and that sentence that make him stop waiting — which is why, by Advent, he has
-said yes to Paige. Neither Jack nor the player is shown that it's winding down until E21.
+said yes to Becca. Neither Jack nor the player is shown that it's winding down until E21.
 
 **The end (S1E21, Dec 12, 2009, Our Lady of Guadalupe).** On the east stairwell phone, Wes breaks up with her — gently,
 devastatingly. Not because there's someone else. Because he can't kneel anymore, and he won't let her marry a man who
@@ -829,7 +851,7 @@ apart to see how they work, and she's very kind about it."* — and stays, as al
 and 16mm; reads Neruda, Bataille, Duras, and Simone Weil (the last one secretly, and that's her crack). Sexually frank and
 unashamed — not a party girl, an adult in a room of children. **Respectful of Jack's faith and mildly curious, but not
 really interested in it**: she'll come to the 9 p.m. Mass once "for the light," and mean it about the light. Her flaws sit
-exactly where Paige's strengths are: she won't try with his faith, won't go to Mass for him, won't pretend. Her mother,
+exactly where Becca's strengths are: she won't try with his faith, won't go to Mass for him, won't pretend. Her mother,
 **Isidora Arriagada**, a poet, was detained at Villa Grimaldi in 1975; the Catholic Church's Vicaría de la Solidaridad
 got her out and to Sweden, where she met Lars. So Sol cannot dismiss the Church, and that maddens her.
 
@@ -860,76 +882,78 @@ the morning ("I don't sleep with men who'll confess me on Saturday"), or he does
 Ends **S3E19** when she takes a second-unit job on her father's film in Chile — or when Jack ends it, depending on path.
 Returns, a filmmaker, in S5, and once more in adulthood as a friend. Never a villain; she's right about how afraid Jack is.
 
-### 10.3 PAIGE SATO-WHITMAN — Jack's "tryer" 🔒
-*(Rebuilt to the player's design, brief "Jack's two girls": a sincere, shallow cradle Catholic met at Newman; the faith
-and the effort without the fire. **She is the first of Jack's two girls, in the timing-tragedy slot.**)*
-**Full name:** Paige Hanako Sato-Whitman. Born **April 2, 1990**. Bainbridge Island, Washington. Marine Biology
-(sophomore in S1). Works the 6 a.m. shift at the Marisol Marine Lab's touch tank; volunteers at the hospice. Newman
-hospitality committee: she runs Coffee & Donuts after the 9:30 and knows everyone's order by the second week.
+### 10.3 PAIGE SATO-WHITMAN — RETIRED (after S1E06; folded into Becca, §10.4)
+*(The tryer passes to Becca Lindell. The player met Becca on the page in E02 and E06 and responded to her as exactly the
+tryer's blend — "sweet, faithful and without fire." Paige never reached the page. Her best pieces move to Becca: Coffee &
+Donuts and knowing everyone's order; the color-coded Aquinas; the Five Ways learned by heart; the question that makes Osei
+laugh; the hermit crab at the Blessing of the Animals; and a grandmother's rosary as a quiet mirror to Lena's never-asked
+question (Becca's is the Sunshine Mine, not Manzanar). Do not use the name Paige Sato-Whitman for anyone.)*
 
-**Who she is.** The nicest girl at Newman, and everyone says so; everyone thinks she and Jack are perfect together. Cute,
-sweet, warm, great in so many ways — "the girl you bring home to mama." A **sincere, shallow cradle Catholic**: Mass every
-Sunday since she was born, her parish on the island, the Newman community she loves like a family, and her grandmother's
-rosary, which she prays every night — but she has never wrestled with any of it. Jack's arguments delight her and slide
-off. Her family: father **Tom Whitman**, a wooden-boat builder who converted to marry and goes to the 8 a.m. to keep the
-peace; mother **June Sato-Whitman**, an ICU nurse at Harrison in Bremerton, practical, devout without a single question.
-🔒 **The rosary** is her grandmother's — **Teresa Sato**, born on Bainbridge in 1925 to Catholic emigrants from Nagasaki's
-Urakami parish, removed with the island's Japanese Americans to Manzanar in 1942, where a Maryknoll priest blessed it.
-Paige has never asked her grandmother one question about Manzanar. (A quiet mirror: Lena has never asked her mother about
-Memorial. Paige's not-asking is sweetness; Lena's is a wound. Jack sees both.)
-
-**How she tries.** With his faith *and* his intellectual rigor: reads Aquinas with color-coded sticky notes, asks him to
-teach her the Five Ways and learns them by heart without ever being bothered by them, comes to Hale's public lecture in
-her nicest cardigan, reads O'Connor and hates it, reads Percy and loves it, asks Fr. Osei a question so good he laughs
-for a full minute (she has no idea why it was good). She respects his line and does not test it; she is waiting too.
-**Hard rule:** they never sleep together. There is kissing, warmth, her head on his shoulder at the 9 p.m. Mass — and
-nothing deeper there. That is the whole tragedy. **Never a placeholder** (brief): Jack already knows how he feels about
-Lena, so Paige must have real gravitational weight of her own — she is the whole good life everyone wants for him, and on
-some nights he wants it too; the player must be able to love her.
-
-**The friends.** **Laney hates her on principle** (and is rude about it); **Lena tells Laney to be nice** — and means it,
-which is worse; **Theo is always polite and always Team Lena.** Margot can't find anything to object to and finds that
-suspicious. 🔒 She sang alto in the Newman choir beside Nora for a year and remembers her only as "so nice."
-
-**The sad ending (S2E15, Lent 2010).** It ends because she did everything right. After the Stations on a Friday in Lent
-she tells him she loves him; he can't say it back; she sees — without cruelty, because she is never cruel — that he has
-been loving her a little in order not to love someone else, and she names it: *"I did everything right. I know I did. It
-just isn't the thing, is it."* He has no argument. It's the saddest scene in S2 because nobody is wrong.
-
-**Look.** Small, strong, sun-browned, short black hair she cuts herself, sea-glass green eyes (her father's), a scar on her
-palm from an octopus (true story, and she'll tell it straight every time — the opposite of Jack's eyebrow). Rain shell,
-XtraTufs, a hospice volunteer lanyard, the rosary wrapped twice around her wrist at Mass.
-
-**Voice.** Plain, warm, Pacific Northwest understatement, scientific precision about feelings ("I'd like more data on
-that"). Never sarcastic. Funny in a dry, delighted way.
-- *"Okay. So the bread is actually him. I mean — I knew that. I've always known that. I just never thought about it
-  before. Is that bad? You look like that's bad."*
-
-**Arc.** **S1E08:** the Blessing of the Animals — she brings a hermit crab from the touch tank in a Tupperware to be blessed
-(Osei obliges); the Newman table says "you two" before Jack has learned her last name. E10–E14: Coffee & Donuts, his order
-remembered; E16 the first date (the *New Moon* night Laney forces on the floor — Paige comes, and loves it, sincerely).
-**E19 (Advent): official** — "Can I call you my boyfriend when my mom asks?" — after Lena couldn't come to Youngstown and
-went home to Wes, and after Wes's ring. **E21:** Wes ends it with Lena; Jack has had a girlfriend for two weeks. S2
-(Jan–Mar 2010): the relationship; the trying; Lena's Gideon spring; the ending (S2E15). Later: a friend who comes to the
-wedding with her husband (a Newman boy everyone said was perfect for her too, and was) and their twins.
-
-### 10.4 BECCA LINDELL — Jack's S1 misstep
-Freshman, b. May 31, 1991. Homeschooled in Coeur d'Alene, Idaho; seven siblings; a Newman regular from day one; wants to be
-married by twenty-one and says so on the second date. Sweet, earnest, unexpectedly funny, much tougher than she looks
-(raised on a ranch; can butcher a deer). Jack goes on four dates with her in S1 (E06–E10) because it seems like the right
-thing to want. It ends when she says, kindly, "You look at me like I'm homework." Comedy, then genuine hurt; she becomes a
-friend and, in S3, marries a Veritas missionary at twenty, which Margot considers a hate crime.
-**(After S1E05, schedule on the played path — `e2_becca=="yes"`, "Put me down":)** **Date #1 is the E06 beach cleanup,
-retroactively**: Lena tells Jack at 3 a.m. it is not a date; Becca tells the lemon-bar table she told her mother it was, then
-asks Jack, at the BBQ, "Was it?" — and asks for a second ("You can think about it. I'm patient. We had a whole talk.").
-Date #2 lands in E07 or off-page (Fri Sep 25) unless Jack declined outright (then E07 is her re-ask, plainly); **#3 is E08**
-(Michaelmas); **E10 "homework."** Her voice on a date: frank, unembarrassed questions (how many children — "Seven. Or nine.
-Odd numbers, so there's a tiebreaker"), ranch competence as comedy ("I've pulled a calf. Give it here"), never a joke at
-her faith. She is the first Newman girl to ask Jack about the scar; the Pacific telling ("whoever asks in the water") is
-banked for her. Keep her kind and quick; the hurt in E10 has to be earned by her being lovely.
-**Alliance evidence (brief):** Becca is the first date Laney is openly rude to (from E07: "Is she Amish or just
-punctual?"); Lena tells her to stop and be nice; Theo is flawlessly polite to Becca and texts Laney her schedule. Nobody
-says why. Becca is dates only — not one of Jack's two girls — and, per the hard rule, kisses at most.
+### 10.4 BECCA LINDELL — Jack's "tryer" 🔒 (promoted after S1E06)
+*(Brief, "Jack's two girls": the tryer, "the girl you bring home to mama"; a sincere, shallow cradle Catholic met at Newman,
+the nicest girl there; the faith and the effort without the fire. **She is the first of Jack's two girls, in the
+timing-tragedy slot.** Player note after S1E06: the player *assumes* Becca is the tryer and calls her "the exact blend we
+were looking for of sweet, faithful and without fire." **Never confirm or deny it to the player; keep exactly that blend.**)*
+**Full name:** Rebecca Anne Lindell. Born **May 31, 1991** (the Visitation) — 18. A cattle-and-hay ranch on the Rathdrum
+road outside Coeur d'Alene, Idaho ("it's a lake, people think it's a cheese"). Homeschooled through twelfth grade (a parish
+co-op at St. Pius X; 4-H; the county fair). Freshman, Biology, pre-vet ("large animal. Cows don't lie to you"). Portolá
+Hall; her roommate is a nursing major from Spokane. Drives her brother Eli's red 1994 Ford Ranger with Idaho plates and a
+Rathdrum feed-store sticker (she and her father drove it down in August).
+**Family.** Father **Karl Lindell**, rancher, Knights of Columbus, says grace like he's reading a contract; mother **Marie**,
+who ran the house and the homeschool and lights candles for everything (E06: "She's lighting a candle in Coeur d'Alene").
+Seven siblings — five brothers, two sisters; ten at dinner; no TV; the oldest sister is the one you'd be scared of; Eli lost
+a front tooth to a Benedictine, Father Anselm, at a church-picnic volleyball game. 🔒 **The rosary** she prays every night,
+wrapped twice around her wrist at Mass, was her grandmother's — **Agnes Lindell**, whose husband Walt died in the **Sunshine
+Mine fire at Kellogg, Idaho (May 2, 1972; ninety-one men)**. Agnes prayed it at the mine gate for the eight days it took,
+and on the eighth day they brought two men up alive, and neither one was Walt. Becca tells this, when she tells it (S2E03),
+as a sweet fact about a rosary; she has never asked her grandmother one question about those eight days. (A quiet mirror:
+Lena has never asked her mother about Memorial; Nonno's Black Monday is a candle on Glenwood Avenue. Becca's not-asking is
+sweetness; Lena's is a wound. Jack sees both, and the narration never says so.)
+**Who she is.** Cute, sweet, warm, frank, funny in a dry, delighted way, much tougher than she looks — pulled a calf at
+twelve, can butcher a deer, whistles a herd off a county road with no hands. Wants to be married by twenty-one and says so on
+the second date; wants seven or nine children ("Odd numbers, so there's a tiebreaker"). Everyone at Newman thinks she and
+Jack are perfect together; Mrs. Fitch, Tyler and the Coffee & Donuts table say "you two" by October. **A sincere, shallow
+cradle Catholic:** Mass every Sunday of her life, the Glory Be when a cow is kicking her, her grandmother's rosary, Newman
+like a family — and she has never wrestled with any of it. "I don't need it to be complicated. I need it to be true. It's
+true. So."
+**How she tries** (with his faith *and* his rigor): asks him to teach her the Five Ways and learns them by heart on a set of
+bleachers, delighted and untroubled (E07); reads Aquinas with color-coded tabs from her clipboard; reads *Caritas in
+Veritate* because he quoted it on a beach; comes to Hale's public lecture in her nicest cardigan; reads O'Connor and hates it
+("Why is everybody so *mean*?"), reads Percy and loves it; asks Osei a question so good he laughs for a full minute (she has
+no idea why it was good). Jack's arguments delight her and slide off. Asked if she ever thinks it might not be true: "No," —
+honestly puzzled — "Do you?" She respects his line and does not test it; she is waiting too.
+**Hard rule:** they never sleep together. Kissing, warmth, her head on his shoulder at the 9 p.m. Mass — and nothing deeper
+there. That is the whole tragedy. **Never a placeholder** (brief): Jack already knows how he feels about Lena, so Becca must
+have real gravitational weight of her own — she is the whole good life everyone wants for him (his mother, sight unseen:
+"Seven! Catholic?"), and on some nights he wants it too; the player must be able to love her.
+**The friends (brief).** **Laney hates her on principle** and is openly rude ("Is she Amish or just punctual?" — E07);
+**Lena tells Laney to be nice — and means it, which is worse**; **Theo is flawlessly polite to her face and texts Laney her
+schedule** (always Team Lena). Margot can't find anything to object to and finds that suspicious. Kevin likes her and tells
+Theo and Laney to leave it alone.
+**Look.** Five-seven, strong, sun-browned, a dark-blond braid as thick as a bell rope, sunburn along the part, freckles she
+doesn't cover, forearms that have done things to hay, marker on her knuckles from lettering posters; Wranglers, Ropers, a
+Carhartt vest, a spiral planner and the clipboard. Her scar story about anybody is the straight one.
+**Voice.** Frank, unembarrassed, practical; ranch competence as comedy; scientific about feelings; never sarcastic; never a
+joke at her faith.
+- *"I've pulled a calf. Give it here."* · *"You can think about it. I'm patient. We had a whole talk."* · *"Glory Be. You can
+  get through it while a cow's kicking you."*
+**Arc.** E02 "Put me down" (the BBQ poster). **E06 date #1, retroactively** (the cleanup; on the played path Jack told her it
+was "a beach cleanup *and* a date"; FRIDAY? on the clipboard; the Franciscan scar telling). **E07 date #2** (Fri Sep 25):
+Marisol High's Friday-night football game in the Ranger; the First Way on the bleachers; "Do you ever think it might not be
+true?"; a kiss on the cheek "so there's no confusion"; Laney's first rudeness in the Fishbowl. **E08 date #3** (Michaelmas
+weekend; at the Blessing of the Animals she brings a hermit crab borrowed from the Marine Lab touch tank in a Tupperware —
+Laney: "Who brings a *crab*."). **E10 the first crack:** "You look at me like I'm homework." — and instead of ending it, she
+stays: "Then do your homework, Jack. I'll wait." (The tryer tries; it makes it worse later.) E13–E14 Coffee & Donuts, his
+order remembered. **E16** the *New Moon* night Laney forces on the floor — Becca loves it, sincerely; Laney is rude on
+principle; Lena, in the row behind, tells Laney to be nice. **E19 (Advent): official** — "My mom's been calling you my
+boyfriend since September. Can I tell her she's right?" — after Lena can't come to Youngstown and after Wes's ring. **E21:**
+Wes ends it with Lena; Jack has had a girlfriend for two weeks. **S2 (Jan–Mar 2010):** the trying; the Sunshine Mine rosary
+told as a sweet fact (S2E03); Lena's Gideon spring; **S2E15 (Lent):** after the Stations she tells him she loves him; he
+can't say it back; she sees — without cruelty, because she is never cruel — that he has been loving her a little in order not
+to love someone else, and names it: *"I did everything right. I know I did. It just isn't the thing, is it."* He has no
+argument. Nobody is wrong. **After:** a friend; marries in the summer of 2011, at twenty — by twenty-one, as she said — a
+Veritas missionary (room's call: Tyler Brandt is available), which Margot considers a hate crime; comes to Jack and Lena's
+wedding (AD) with twins.
 
 ### 10.5 PRIYA RAMAN — the junior RA
 **Born October 14, 1988.** Fremont, California. Junior, Biochemistry. Delgado Hall 4th-floor RA (Room 401). Three jobs
@@ -1034,7 +1058,11 @@ Frank keeps a space heater, a radio and a Stroh's fridge. Parish: **St. Brigid o
   expert on the imprisoned; the room laughs; the teacher says "Ladies" and moves on. Ashley's father got a DUI last
   Christmas (South Side gossip; nobody was hurt — 🔒 the lucky driver). Smart-mouthed, Facebook-native,
   texts Jack constantly in lowercase. Bullied at school as "the convict's sister" (S1 subplot). Jack's favorite person to
-  argue with.
+  argue with. **(E07 plan:)** knowing the nun's name since E06, she friend-requests "Magdalena Broussard" on Facebook; Lena
+  accepts and writes on Gina's wall (signed —L.); Gina finds Lena's "In a Relationship with Wesley Arceneaux" and Becca's
+  two-exclamation-point post on Jack's wall, and says the obvious in lowercase. She does not tell Nonna. **Maria (E07, the
+  Saturday call):** learns "Idaho" from Gina (Gina showed her Becca's profile picture) and is delighted ("Seven!"); then asks
+  after the veil girl.
 - **Rosaria "Rosie" Costigan, 7** (b. Oct 7, 2001 — Our Lady of the Rosary). Makes Jack drawings and mails them. Thinks
   California is made of beaches and Hannah Montana.
 - **Nonna — Carmela (Ferraro) Rinaldi, 84.** Born in San Giovanni in Fiore, Calabria; came over 1951. Widow of Nonno
@@ -1348,6 +1376,33 @@ as healed, with a ring — the timing tragedy needs Jack to believe Wes is solid
 telling. Gina may learn "the nun's" name (Jack's choice in s07). Margot is seen watching Kevin at the talk (🔒 E07); Jack
 draws no conclusion.
 
+**Updated after S1E06 (the played path):** Played on the **going · danny · theo · taken · whisper · franciscan · gina ·
+both · same · lena · way · candor · cop · boots · first · arm · lovely · fine · read · told · magdalena · wit · sullys ·
+wave** path. **Hale knows Danny's public version** (`e6_hale_danny`: a fight, a guy hurt bad, five years, pleaded; the erased
+margins) — 🔒 it goes in his S3 book. **Theo knows** Gina said Danny's name back, that "the nun" is Nonna's word for the veil
+girl, and that Lena met Danny ("She said hi"); he heard Jack say "She's taken, Theo. I'm not doing anything." **Margot never
+saw Gina's text and was never asked to be pallbearer** (theo fork): she has no Friday with Jack and **no wake invitation went
+to him** — E07's card is his first; she watched Kevin at the talk. **Lena knows** Danny's letter lines ("Tell Gina it ain't
+hers to carry. I got it." and the veil-girl thanks — `e6_letter=="read"`), that Nonna asked the same question twice (and
+told Jack about Mémère and "Claudine"), Ray Ochoa's name (from Jack; her medal), Jack's "She's lovely. I don't know what I'm
+doing" about Becca, and his arm at the creek. She was **not** told what Jack has noticed about Wes (`e6_wes=="fine"`): she
+heard "You don't have to be fine with me" and said "I know. That's the problem, Jack… If I stop being fine with you, I don't
+know how I'm supposed to — " and did not finish. Peter's "we haven't had to find out" was **not** said (no "fall" question).
+**Gina knows the nun's name is Lena** (`e6_gina_name`); Danny will learn it from Jack's letter (mailed Mon Sep 21, arrives
+~Thu Sep 24). **Becca** heard the Franciscan telling and "a beach cleanup *and* a date"; she knows Jack washes dishes
+Saturdays. Kevin has still never been told a scar story or about Danny. Osei knows Gina's fight and that Jack has a brother
+(`e6_osei=="gina"`). Jack knows Ray (Det. Sgt., Rafi's father) and that Rafi deals ("Not bars"). Lena's resolve ended 7;
+Jack's 9.
+
+**Planned after S1E07 (Showrunner, pending play):** Jack, Lena and Kevin learn **Anders** from Margot (the roof, Wed ~3 a.m.).
+**Kevin comes out to Margot** after walking her down (🔒 off-page; Jack misreads them as a couple; the player is not told).
+**Gina and Lena are Facebook friends**; Gina has seen Lena's relationship status and Becca's wall post. **Lena tells Jack
+Wes has bought a ticket for Columbus Day** (E09). **Hale gives Jack a Housman for Danny** (only on `e6_hale_danny`). **Maria**
+learns about "Idaho" (Becca) from Gina; may hear from Jack that the veil girl "has a boyfriend." **Becca** learns the First
+Way, and (path) that Jack sometimes doubts at two in the morning. **Tyler** has his coffee. Ray at the Anchor counter learns
+nothing about Lena (🔒 never juxtaposed). Lena's red on Jack's friendship paper is one word — "Defense." — next to his
+unnamed friend "who argues like a prosecutor" (🔒 she knows it's Jack's phrase for her: Danny quoted it on the bench, E05).
+
 **Pretended first meetings in the pilot:** Theo and Kevin (both pretend). Lena and Kevin (Kevin may half-recognize her;
 he says nothing; she doesn't recognize him). Lena and Osei (*not* pretended — Osei greets her warmly: "Magdalena. You
 came back." She explains to Jack: "Preview weekend. In April." True).
@@ -1361,7 +1416,7 @@ came back." She explains to Jack: "Preview weekend. In April." True).
 | Lena | Grandmère at Memorial (§18) | Celeste; Luc partly | That her grandmother died in the storm: **S1E04**, from Lena at the end of the harbor pier (moved up from E06; the pilot's HEART branch did not fire). With it: the medal came back "in a plastic bag, in February," and she has never asked her mother one question (🔒 Memorial seed; no hospital named). Memorial: S1E18 (phone, Thanksgiving). The full story: adult seasons. |
 | Lena | Wes is slipping | — | S1E19–21 (E06: she names his loud late calls and "decided not to notice" — the partying only; faith stays hidden) |
 | Theo | The Point (§20) | Fr. Osei (seal); Kevin (partial) | S2E22 |
-| Kevin | Gay; Preview night with Theo | Margot (from S1E07) | Gay: S3 (to Jack directly); the Theo night: S4 |
+| Kevin | Gay; Preview night with Theo | Margot (from S1E07, the night of the wake — off-page) | Gay: S3 (to Jack directly); the Theo night: S4 |
 | Hale | Postcards; Compline; the 41 seconds | — | Postcards: S1E14. Compline: S2. The call: S4. |
 | Osei | Abena, Esi, Kwame; the limp | his bishop | Kwame exists: S3. Abena and the crash: S6. |
 | Laney | Kaylee; the 800 Math | Lena (Kaylee, from S1E10) | Kaylee: S1E10 (to Jack, drunk, if path). Math: S2, comic. |
@@ -1376,7 +1431,7 @@ came back." She explains to Jack: "Preview weekend. In April." True).
 | Wes | The attic; losing God | — | The attic: S1E09 (Jack hears it on the beach, told as healed; the ring). Losing God: S1E21 (the breakup). |
 | Theo & Laney | The alliance (pro-Jack-and-Lena) | — (everyone can see it) | Visible from S1E07; never said aloud; the reveal S4E03 ("We know.") |
 | Sol | Theo's oldest LA friend; her mother and the Vicaría | Theo | Glimpse S1E12; S3 |
-| Paige | Her grandmother's rosary (Manzanar) | — | S2 (she tells it as a sweet fact; Jack hears the rest) |
+| Becca | Her grandmother's rosary (the Sunshine Mine, 1972) | — | S2E03 (she tells it as a sweet fact; Jack hears the rest) |
 | Doug | Sleepwalking fire-alarm | — | S1E20 (comic) |
 | Caleb | Why he left; Hale never answered his letters | — | Hale's silence: S1E02 (on the page); why he left: S2 |
 | Yusuf | (nothing hidden yet) — Tariq's wounding is future | — | S1E19 |
@@ -1417,6 +1472,12 @@ fight, a long time ago" (Osei's version; Kevin is the second person to get it). 
 the cleanup — **"I walked into the Pacific Ocean"** is finally the one for whoever asks in the water; also the Franciscan
 (charm), Gina's controller, or the honest partial "a fight, a long time ago" (Becca would be the second to get it, after
 Osei). Kevin's first remains banked.
+**After S1E06:** Becca → **the Franciscan** (`scar_told_becca=="franciscan"`; Eli and Father Anselm — "It's always the monks").
+The Pacific is still banked for whoever asks in the water. **E07** offers no telling (nobody asks; the misread week is not
+Kevin's week). Still unused with Lena: the hockey puck, the husband, the swan, the Franciscan, the Pacific, Gina's controller.
+🔒 **The hand (for the elision):** Jack is right-handed; the punch was his right. When Mark 9:43 is read (Sun Sep 27, 2009 —
+"If your hand causes you to sin, cut it off"), the narration may let his right hand do one small thing and say nothing about
+why.
 **Tellings bank** (each usable once per listener): a hockey puck at a Youngstown Phantoms game; a nun with a ruler (Sr.
 Mary Clement, 3rd grade, "she was aiming for my soul"); a jealous husband in Erie, Pennsylvania; a swan in Mill Creek Park;
 knife-juggling at the St. Anthony's pierogi festival (the Ukrainians did it); a Franciscan who "plays dirty in pickup";
@@ -1504,6 +1565,10 @@ notice.
 | Laney Price | — | Overdose S3 (Nov 2010) — **survives** | Canon intent: she lives |
 | Theo Vance | — | **Lives.** Never kill Theo. | Canon intent |
 | Jack, Lena | — | **Never die** (brief) | Hard line |
+
+**Directive (player, binding):** the core eight — Jack, Lena, Theo, Laney, Margot, Kevin, Fr. Osei, Prof. Hale — **survive the
+college years** (through May 2013). After college a real, earned loss is allowed if the story calls for it (Hale, 2015, stays
+planned). Losses during college fall on family, guests and the wider cast (Wes; Nonna).
 
 ---
 
@@ -1707,6 +1772,22 @@ years that her daughter killed herself and her grandchild. In S5, Rosa receives 
   she went "to tell him he was wrong about who gets to forgive" (🔒 Nora) and no more. Peter: "we haven't had to find out"
   (🔒 Peter & Kenzie). Margot watching Kevin at "your future wife" (🔒 E07). Nora's name is not spoken in E06; Priya appears
   only as a laminate.
+- E06 **played as planned** on this path except: the Pallbearer fork was not taken (Margot's Friday and Gina's text read
+  upside down unseen; Jack heard no wake invitation — E07's funeral card is his first); no "What do you do when you fall?"
+  (Peter's lie unheard; Kenzie's "Good question" unseen); Wes's three tells not named (`e6_wes=="fine"`). Landed: Theo's two
+  bags; Ray and the unopened bag; "Not bars"; Lena's medal at "Ochoa"; the creek mouth; "Money"; "Miss Broussard was here at
+  two" / "who gets to forgive"; "I run now."
+- E07 (re-planned after S1E06; full plan in `outlines/s1e07.md`): **Theo keeps away from the parapet** all night on the roof
+  (films from the elevator housing; never within a body's length of the edge — 🔒 the wall; no gloss). **Theo hands Kevin the
+  5D** to hold while he lifts Laney; Kevin holds it as if it were hot (🔒 April; one image, no comment). **Kevin in a plain gray
+  T-shirt** — no quarter-zip (the motif: something is very wrong; 🔒 he is about to tell Margot). **Lena counts the pills in
+  Laney's DRP pillbox** while Laney sleeps and puts it back (🔒 S3; Jack sees; no gloss). **Margot's committal "to the deep"**
+  (she reads the Prayer Book's burial at sea over a Mason jar "for the prose") — Theo lowers the camera; no gloss (🔒). **Lena's
+  too-specific line** in the argument — when a girl decides to keep it, "everybody has an opinion and nobody has a crib" —
+  medal (🔒 Nora: "I'm keeping it"). At dawn **"You argued that like it was yours"** (Jack turns her own E05 line) → medal;
+  "It's everybody's" (🔒 a lie-shaped truth). **Evan on Kierkegaard's preferential love** ("the self loved twice") in section
+  (🔒 Nora; no gloss). **Mark 9:43, Sunday** — Jack's right hand (🔒 the punch; elision). **Nora's name is not spoken in E07**;
+  no plaque business beyond Lena lighting a candle for Nonna at the shrine.
 - E09: Wes and Jack on the beach. Not the mystery — but the theme (the knocking no one answered).
 - E11: Priya shows Jack the box; he sees the journal; she won't open it.
 - E12 (Halloween): Evan sees Theo for the first time at the Las Olas chaos; goes white. Laney's pledge "Point walk" rumor;
@@ -1759,23 +1840,23 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 3 | Jack's secret (Danny) | RUN | S1E01 | S2E21 told to Theo | S7 to Donna Kostelnik & prosecutor; S8 Danny home | seeded |
 | 4 | Theo's descent and return | RUN | S1E01 | S3 Laney OD | S4 surrender; S8 Confirmation; AD best man | seeded |
 | 5 | Laney & Lena (friendship as love story) | RUN | S1E01 | S3 overdose | S8 Easter Vigil sponsor; AD maid of honor | open |
-| 6 | Wes unravels | SEA | S1E02 | S1E09 beach story (told as healed; the ring — Jack believes it's forever) | S1E21 breakup, two weeks after Jack says yes to Paige (coda S2E07 Mardi Gras; SU2 death) | seeded |
+| 6 | Wes unravels | SEA | S1E02 | S1E09 beach story (told as healed; the ring — Jack believes it's forever) | S1E21 breakup, two weeks after Jack says yes to Becca (coda S2E07 Mardi Gras; SU2 death) | seeded |
 | 7 | Jack vs. Hale (the postcard) | MS | S1E02 | S1E14 postcards; S4 the call | S8 commencement; AD Hale's death | seeded |
 | 8 | Lena vs. Hale | MS | S1E02 | S2E16 public debate | S4 the call | seeded |
 | 9 | Osei's seal | MS | S1E01 (hidden) | S4E20 | S5E20 contempt & jail | hidden |
 | 10 | Osei & Kwame | MS | S3E06 | S3E12 dinner | AD Kwame at the wedding | planned |
-| 11 | Kevin: faith and identity | RUN | S1E01 | S3 coming out to J&L; S4 testifies | open-ended, accompanied | seeded |
+| 11 | Kevin: faith and identity (directive: a long struggle → a celibate gay Catholic, shaped by J&L) | RUN | S1E01 | S1E07 out to Margot (off-page); S2 the sad attempt with a girl; S3 coming out to J&L; S4 testifies; S6–S7 Andrés, a year away | AD settles, by his own decision and at full cost, as a celibate gay Catholic; Margot's acceptance | seeded → turns E07 |
 | 12 | Margot: the investigator | MS | S1E07 | S3 Evan; S4 publishes | S5 the seal war | planned |
-| 13 | Margot & Anders | SEA | S1E07 | S1E07 2 a.m. | S1E22 (she lights a candle at Newman "for research") | planned |
+| 13 | Margot & Anders | SEA | S1E07 | S1E07 ~3 a.m., the Delgado roof ("This stopped being a game an hour ago"; Lena says his name) | S1E22 (she lights a candle at Newman "for research") | E07 |
 | 14 | Margot's whiteboard (useful idiots) | RUN | S1E04 | — | S8E22 final score; AD framed at wedding | planned |
 | 15 | Evan Marsh | MS | S1E01 (glimpse) | S2E18 anniversary | S4 tells the truth | seeded |
 | 16 | Lena's Memorial secret | RUN | S1E01 (text) | S1E18 phone; S3 Thanksgiving in NOLA | AD rehearsal dinner | seeded |
 | 17 | Frank, the layoff, Lordstown | RUN | S1E01 | S1E15 drinking; SU1 Cruze line rehires him (2010–11) | AD 2019 plant closes | seeded |
 | 18 | Nonna's decline | MS | S1E01 | S1E18 hospital | S3/S4 death | seeded |
 | 19 | Gina bullied ("convict's sister") | ME | S1E05 (Ashley Vrabel, religion class, "visit the imprisoned") | S1E15 | S1E18 Jack at Ursuline | open — E06 she said his name; Ashley looked away first (and laughed with Kelsey anyway) |
-| 20 | Becca (Jack's misstep) | ME | S1E02 | S1E08 | S1E10 "homework" | E06 date #1 (the cleanup, retroactively); #2 E07/off-page; #3 E08 |
+| 20 | **Becca — the tryer** (Jack's first girl, timing-tragedy slot; promoted after S1E06, Paige retired) | MS | S1E02 "Put me down"; S1E06 date #1 (`e6_becca=="both"`) | S1E07 date #2 (football; the First Way); S1E08 #3 (the crab); S1E10 "homework" — the crack she outlasts; S1E16 *New Moon*; S1E19 official; S1E21 Jack unavailable when Lena is free | S2E15 Lent ("I did everything right"); SU2 she marries at twenty | E07 |
 | 21 | Sol (Jack's magnetic girl; Theo's LA orbit) | MS | S1E12 glimpse (Halloween, filming; Theo: "Soledad. Don't.") | S3 transfer; S3E09 proxy fight #2; S3E14 near-miss (never sex) | S3E19 Chile or Jack ends it; S5 return | planned |
-| 22 | Paige (the tryer; Jack's first girl, timing-tragedy slot) | MS | S1E08 Blessing of the Animals (the hermit crab) | S1E16 first date; S1E19 official; S1E21 Jack unavailable when Lena is free | S2E15 Lent ending ("I did everything right") | planned |
+| 22 | ~~Paige~~ — **retired after S1E06** (folded into #20 Becca) | — | — | — | — | retired |
 | 23 | Julian & Lena | MS | S1E01 glimpse; S1E04 "Fresno" (she leaves in the chorus) | S2E15 together; S3E12 Jack tells Theo to stop | S3E21 ending ("You've never once told me I was wrong"); S4 learns the test | seeded (Jack and Julian not yet met on this path; next "Fresno" ~Oct 8) |
 | 24 | Gideon (Lena's magnetic guy; replaces Brooks) | ME | S2E02 Harbor Inn picket | S2E08 proxy fight #1; S2E10 near-miss (never sex) | S2E12 she ends it at the line | planned |
 | 25 | Peter & Kenzie (rival couple) | MS | S1E01 | S3E08 pregnancy | S3E17 wedding; AD divorce | seeded |
@@ -1788,7 +1869,7 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 32 | The Anchor job & pie ratings | SEA→RUN | S1E02 | — | AD rehearsal dinner at the Anchor | open |
 | 33 | Money (Jack can't afford Marisol) | MS | S1E01 | S1E15 Rafi's offer | S2 RA job for S3 | seeded |
 | 34 | Station Fire / Theo's mother | EP | S1E01 | — | S1E01 (and a callback S1E13) | seeded |
-| 35 | Clove ban wake | EP | S1E07 | — | S1E07 | planned |
+| 35 | Clove ban wake | EP | S1E07 (the funeral card) | the eulogy's "my own body" → the argument | S1E07 dawn (TUESDAY — NO SCORE. BEREAVEMENT.) | E07 |
 | 36 | Wes's death & the funeral | ME | SU2 | SU2E01 | S5E01 | planned |
 | 37 | Rosa Calloway | MS | S4E18 | S5E10 | S5E21 Communion | planned |
 | 38 | Danny's letters ("Professor") | RUN | S1E03 | S2E21 | S8 Danny home | open — first Danny letter on page E06 ("It ain't hers to carry. I got it.") |
@@ -1810,13 +1891,15 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 54 | Jack's ledger (the pie IOU, the bus fare, Theo's tab, Richard's hundred) | SEA | S1E02 | S1E03 the pie paid; S1E15 the money crisis | S1E22 Theo tears up the tab (Jack lets him, or doesn't) | open |
 | 55 | Hale's nights at the Anchor (the back booth; Housman; Gloria's cab) | MS | S1E04 (Nora's birthday night) | S2E18 the anniversary night; S4 the call comes out | AD Gloria at Hale's funeral | planned |
 | 56 | Lena's grief year (yelled at God; daily Mass "so He'd have to look at me"); the question she's never asked her mother | RUN | S1E04 the pier | S1E18 "My mama worked at Memorial"; S3 Thanksgiving | AD rehearsal dinner (§10.9) | planned |
-| 57 | **The secret alliance** (Theo & Laney, pro-Jack-and-Lena; mirrored: Laney rude to Jack's girls / Theo polite and Team Lena; Theo rude to Lena's men after Wes / Laney polite and Team Jack; Kevin objects; Margot likes Julian) | MS | S1E07 (Laney rude to Becca; Theo texts Laney Becca's schedule) | S1E16–E21 Paige ("on principle"; Lena: "be nice"); S2 Gideon (Theo rude; Jack's quiet thanks); S3E12 Jack stops Theo on Julian; S3 Sol (Laney rude in public, likes her in private) | #58 the reveal | planned — visible, never acknowledged aloud |
+| 57 | **The secret alliance** (Theo & Laney, pro-Jack-and-Lena; mirrored: Laney rude to Jack's girls / Theo polite and Team Lena; Theo rude to Lena's men after Wes / Laney polite and Team Jack; Kevin objects; Margot likes Julian) | MS | S1E07 (Laney rude to Becca; Theo texts Laney Becca's schedule) | S1E16–E21 Becca ("on principle"; Lena: "be nice"); S2 Gideon (Theo rude; Jack's quiet thanks); S3E12 Jack stops Theo on Julian; S3 Sol (Laney rude in public, likes her in private) | #58 the reveal | planned — visible, never acknowledged aloud |
 | 58 | **The alliance reveal** (reserved; brief) | EP | — | — | **S4E03**, the first ensemble setpiece after Jack and Lena are together (Super Bowl XLV party, Sun Feb 6, 2011): Theo and Laney toast themselves (champagne; Laney, newly sober, with sparkling cider) and learn everyone knew. Lines kept verbatim: "We know." / "Everyone knows." / "People outside of California know." / "It was obvious after five minutes." (suggested: Jack / Lena / Margot / Kevin) | reserved |
 | 59 | **The proxy fights** (reserved, recurring; §24.6) | MS | S2E08 #1 (Lena with Gideon; ostensibly Dorothy Day and the strike) | S3E09 #2 (Jack with Sol; ostensibly Greene's *The End of the Affair*) | S4E06 one of them names what the fights were really about | reserved |
 | 60 | **Thanksgiving in Youngstown (S1)** — Jack invites Lena; she can't; Theo goes | ME | S1E14 Jack asks Lena (after Hale's dinner) | S1E16 she can't (Wes at the airport; Tess due; "Mama asked. She never asks.") → Jack invites Theo; S1E17 Nonna's fall, Theo buys two tickets | S1E18 Theo at Glenwood Avenue (Frank's garage; Maria feeds him; Gina; the Trumbull lot with Frank); Theo hands Jack the phone for the Dupre Street call and leaves the room | planned |
 | 61 | **2012 election comedy** (brief) | SEA | S6 (HHS mandate, Jan 2012; **Ohio primary on Super Tuesday, Mar 6, 2012** — Jack's absentee ballot for **Santorum**, room's pick, a Youngstown phone-call episode; Gingrich's marriages as Lena's material) | SU3 Fortnight for Freedom; Ryan named VP (Aug 11, 2012) — subsidiarity vs. solidarity duel; S7 **Biden–Ryan debate watch party (Oct 11, 2012)** | S7 election night (Nov 6): **Jack votes Romney** and is the most hated man at the party; **Lena reluctantly votes Obama** | planned |
 | 62 | **2016 and after** (brief) | AD | AD 2016 primaries | Nov 8, 2016: probably the **last time Jack votes Republican and Lena votes Democrat** — a marriage-scale fight with shame underneath, madder at themselves than each other | After: both politically homeless (third party, write-ins, local races); disgust deepens | planned |
 | 63 | **Hard-rule ledger** (brief): neither Jack nor Lena sleeps with anyone but the other; no sexual assault in their backgrounds or happening to them | RUN | — | every other-relationship arc capped at the near-miss (§24.8) | their first time is with each other (path decides when) | binding |
+| 64 | **Youngstown Christmas** (brief: follow Jack home for the breaks) | EP→ME | S1E22 (the tin goes home with him) | **S2E01 "Christmas"** (Dec 24, 2009 – Jan 3, 2010): Glenwood Avenue, Midnight Mass at St. Brigid's, the Trumbull visiting room on the 27th, Nonna's bad and good days, Gina; the Saints' first loss Dec 19 (Lena's one-word text); Lena godmother to baby Lucille in New Orleans; phone calls; Becca's Christmas card from Idaho | S2E02 back to Marisol | planned |
+| 65 | **The Delgado roof — equal night to longest night** (S1 bookends) | SEA | S1E07 (the equinox wake; dawn; the unfinished sentence) | — | **S1E22**, a week before the solstice: the season's strong, bittersweet moment on the same roof (brief: every reason for hope, a real sting; not together) | E07 |
 
 **Status after S1E01 (played path):** #1 open — porch near-kiss held; Lena took the cigarette; Jack won the first duel and
 gave her the last word; he let her know he was on the stairs. #2 seeded (all pilot seeds landed; cove seed not seen — Theo's
@@ -1882,6 +1965,27 @@ Mass "in thanksgiving"; the altar society. #19 Gina — started. #29 reliquary *
 #50 "That the Lucky Man Owes Nothing" / "That There Is Such a Thing as Luck"; her red: "It's your best paper." Soul **grace 9 ·
 honesty 12** · restraint 0. Traits **sincerity 31 · candor 19 · wit 15** · charm 9 · reckless 8 · control 3. Resolve Jack
 **10** · Lena 7. Osei trust 3 · warmth 1. Evan warmth 1. Becca warmth 1. Julian: not met.
+
+**Status after S1E06 (played path):** #1 open — **trust 26 · warmth 24 · heat 8 · friction 9** (heat +2: the creek arm and
+the second "Goodnight, Magdalena" — "That's twice, Youngstown. I keep a tin for less."). Path: "Are you going?"; **told Hale
+about Danny** (`e6_hale_danny`, whisper); Theo's cut → "She's taken, Theo. I'm not doing anything."; the talk — the whisper
+("Margot's going to need a bigger whiteboard"; Lena's powdered-sugar laugh; no "fall" question); Becca — the Franciscan;
+**"a beach cleanup *and* a date. I'm efficient."** (`e6_becca=="both"`; FRIDAY?); Osei — Gina's fight ("Ɛyɛ"); Nonna — the
+second time like the first; texted Gina "lena"; Ray — "That's on me"; "Your dad's a cop, Rafi." ("He's a good one. That's
+the problem."); took her boots; "She ran to you first"; **offered his arm at the creek**; "She's lovely. I don't know what I'm
+doing."; **"You don't have to be fine with me."** → "I know. That's the problem, Jack… If I stop being fine with you, I don't
+know how I'm supposed to — " (unfinished; `e6_wes=="fine"`; the Wes tells never named); **read her Danny's letter**; told her
+Nonna repeated herself; "Goodnight, Magdalena"; "For the lymphatic system"; Sully's (2–0); waved back at Becca. **Trust and
+warmth are saturated for S1. E07 spends on heat (≤ +2, through restraint, never contact) and on the precipice — words
+withheld, not lines crossed** (the unfinished sentence; the friendship papers; "Defense."). #3 — Hale has Danny's public
+version (🔒; E07 his Housman for Danny); Danny's letter read to Lena; Jack's reply mailed Mon Sep 21 ("The veil girl says
+you're welcome… Gina knows her name now. Lena."). #4 Theo trust 6 · warmth 8 · friction 1. #5 Laney trust 3 · warmth 8 (the
+first crack, repaired at Mass). #7 Hale warmth 5 · friction 2 (the Williams; one pencil *No.*). #11 Kevin warmth 3. #12/#13
+**Margot trust 1 · warmth 1 · friction 2 — the coldest of the core on this path** (no pallbearer, no Friday): E07 is hers; build
+from cold. #14 whiteboard **C 6 · B 5**. #18 Nonna — the first repeat. #20 Becca warmth 4. #27 Ray turned; `knows_rafi_deals`.
+#29 reliquary **3**, `jack_cigs` 5. #30 Becca — the Franciscan. #48 **2–0**. Soul **grace 11 · honesty 14 · restraint 0**
+(restraint has never moved: E07 offers it on the roof and on the bleachers). Traits **sincerity 46** · candor 22 · wit 17 ·
+charm 11 · reckless 8 · control 3. Resolve Jack **9** · Lena **7**. Osei trust 4 · warmth 2. Evan warmth 1. Julian: not met.
 
 ## 22. SEASON 1 — FALL 2009 (22 episodes, Aug 29 – Dec 18, 2009)
 
@@ -2019,24 +2123,37 @@ and they were silent"; Laney at her second Mass in her Pi Lam letters under Lena
 Lena's resolve 7 → 6 (the party) → 5 (Wes named) → 7 (Mass). *(Supersedes the earlier E06 notes: the grandmother and the Danny
 exchange were spent in E04–E05; Lena already knows Danny and has spoken to him.)*
 
-**E07 · "Cloves"** · Tue Sep 22 – Sat Sep 26 · FDA flavored-cigarette ban takes effect (Sept 22); fall equinox. Margot
-holds a wake for clove cigarettes on the Delgado roof. Margot's episode: she and Lena argue abortion at 2 a.m. and it
-stops being a game; Margot tells them about Anders; neither concedes; both cry; Jack brings Anchor pie. Kevin comes out to
-Margot (off-screen; Jack sees them leave the roof together and assumes something else — a comic misread). *(After S1E06:
-E06's `nextTime` promises E07 four things — Margot's eulogy for a cigarette ("Dearly beloved…"), the roof door that says ALARM
-WILL SOUND and doesn't, "Bring pie. The good pie, Costigan," and "This stopped being a game an hour ago." Becca's date #2 lands
-here or off-page Fri Sep 25 per `e6_becca`. Margot saw Kevin's face at the chastity talk; that is why she is watching him on
-the roof.)* **Alliance, first visible evidence:** Laney is openly rude to Becca ("Is she Amish or just punctual?"); Lena
-tells her to be nice; Theo is flawless to Becca's face and texts Laney something; Kevin: "Leave it alone." Nobody says
-what "it" is.
+**E07 · "Cloves"** · Tue Sep 22 – Sun Sep 27 (extended through Sunday so the Saints at Buffalo and the 26th Sunday land in
+an episode; E08 opens Tue Sep 29) · FDA flavored-cigarette ban (Tue); the equinox (Tue 2:18 p.m. PDT); Padre Pio (Wed); the
+G-20 in Pittsburgh (Thu–Fri; Qom announced Fri); **Ohio State 30–0 Illinois** (Sat); **Saints 27–7 at Buffalo (3–0)**; 26th
+Sunday OT B (Num 11:25–29; Jas 5:1–6; **Mark 9:38–48** — "if your hand causes you to sin"). *(Re-planned after S1E06 for the
+played path and the notes — full plan in `outlines/s1e07.md`. **Player: lean in on the precipice** — the realization a little
+closer, nothing crossed, Wes still there, slow burn; no two-hander owed (E08); Lena central; Becca keeps her blend.)* Cold open:
+**Margot's funeral card** under 412's door (this path's first invitation: "Bring pie. The good pie, Costigan."). **Nonna's
+Mass** at the 12:10 (Luke 8:19–21, "my mother and my brothers"), Lena beside him; Becca: "Friday. Six. I'll drive." **Gina
+friends Lena on Facebook** — and finds the relationship status, and Becca's wall post. The Anchor: Ray at the counter; Gloria's
+pie for a funeral. **The wake on the Delgado roof** (ALARM WILL SOUND — *it won't*): **"Dearly beloved. We are gathered here
+today to bury a cigarette."**; the eulogy's "my own body" turns into **the 2 a.m. argument** (Margot vs. Lena, Kevin and Jack
+at the table) — **"This stopped being a game an hour ago."** — **Anders**; neither concedes; both cry; Lena asks his name. Kevin
+walks Margot down (🔒 he comes out to her; Jack misreads them as a couple). **Jack and Lena alone on the roof till sunrise**
+(~1,800 words; not a full two-hander): "You argued that like it was yours"; the sentence she didn't finish at the tower — she
+still won't; **Wes has bought a ticket for Columbus Day**. Margot's whiteboard: TUESDAY — NO SCORE. (BEREAVEMENT.)
+**Wednesday, no sleep: the friendship duel** in Hale's seminar — their papers, "That a Man and a Woman Can Be Friends" (Jack)
+and "That They Can't" (Lena); Lena favored; Hale: one of them has proved the other's thesis. Hale's Housman for Danny (gated).
+Tyler's coffee. Thursday: Kevin or Margot (the misread); section (Evan, Kierkegaard); Lena keeps his paper: "Sunday."
+**Friday: Becca date #2** — the Fishbowl (Laney: "Is she Amish or just punctual?"; Lena: "Laney. Be nice."; Theo flawless,
+texting; Kevin: "Leave it alone.") — Marisol High football in her brother's Ranger; the First Way on the bleachers; a kiss on
+the cheek "so there's no confusion." Saturday: the call home ("Who's Idaho?" — "And the veil girl?"). Sunday fork: Sully's with
+Lena and Dale (3–0) or the 9:30 and Coffee & Donuts with Becca; Osei on the hand. **Tag: her red ink, under the door —
+"Defense."** Lena's resolve 7 → 8 → 6 → **5** → 6. No danger window. Duel record 3–1 → 3–2 on the default (Lena) result.
 
 **E08 · "Michaelmas"** · Tue Sep 29 – Sun Oct 4 · St. Michael (Sept 29, Jack's confirmation saint); St. Thérèse (Oct 1,
 Lena's middle name); Guardian Angels (Oct 2); Blessing of the Animals (Sat Oct 3): Hale brings Bishop Berkeley to be
 blessed "to annoy the Ghanaian," and Osei and Hale meet on-screen for the first time — two masters fencing over a deaf
-greyhound. Jack's Becca date #3. **Paige introduced** (🔒 Jack's first girl): the nicest girl at Newman brings a hermit
-crab from the Marine Lab touch tank in a Tupperware to be blessed; Osei obliges; the Newman table says "you two" before Jack
-knows her last name. (Laney, later: "Who brings a *crab*.") Lena's Thérèse-day: Jack gives her a
-paperback *Story of a Soul* with his margins in it. Huge mistake. Huge success.
+greyhound. **Becca date #3** (🔒 the tryer): she brings a hermit crab borrowed from the Marine Lab touch tank in a Tupperware
+to be blessed; Osei obliges; the Newman table says "you two." (Laney, later: "Who brings a *crab*.") Lena's Thérèse-day: Jack
+gives her a paperback *Story of a Soul* with his margins in it. Huge mistake. Huge success. **The owed two-hander** (standing
+rule) — the room's call: Thérèse night. (E07's `nextTime` promises are the E08 Showrunner's contract.)
 
 **E09 · "Columbus"** · Fri Oct 9 – Mon Oct 12 · Obama wins the Nobel Peace Prize (Oct 9); Columbus Day. **Wes visits.**
 Jack expects to hate him and doesn't. Saints are 4–0. The beach at 2 a.m., the Jameson, the attic story — **told as
@@ -2048,7 +2165,8 @@ her." (🔒 Timing tragedy: Jack walks off the beach believing it's forever and 
 eighth floor of Pacifica Library, 4 a.m., restraint-is-the-fire scene #1 (her head on his shoulder; he doesn't move for an
 hour; his arm dies; he doesn't move). Priya's breakdown over orgo: she shows Jack Nora's box in the RA
 storage closet and won't open the journal (moved from E11). Laney's Xanax and a pledge event; Lena and Laney's first real fight; Laney tells
-Jack about Kaylee, drunk, on the Delgado steps. Becca ends it: "You look at me like I'm homework."
+Jack about Kaylee, drunk, on the Delgado steps. **Becca's first crack:** "You look at me like I'm homework." — and she
+doesn't end it: "Then do your homework, Jack. I'll wait." (The tryer tries.)
 
 **E11 · "Big Sur"** · Tue Oct 20 – Sun Oct 25 · The Vatican announces the personal ordinariates for Anglicans (Oct 20).
 **The road-trip episode** (brief, Season 1 wish; a bottle episode on the move). Theo's 450SL holds two, so Kevin borrows his
@@ -2089,8 +2207,8 @@ Declaration (Nov 20; Lena signs online; Jack argues about it, or signs too). Kev
 orgo study group; Jack half-hears the stairwell fight between Kevin and Theo: "You said you'd never—" "I haven't."
 **Lena can't come to Youngstown** ("Mama asked. She never asks."; Wes is meeting her at Louis Armstrong) — **Jack invites
 Theo**, who says yes before Jack finishes the sentence ("I'll bring a hostess gift. What do you people drink, Folgers?").
-**Paige's first date with Jack** is the *New Moon* night Laney forces on the floor — Paige loves it, sincerely; Laney is
-rude to her on principle; Lena, in the row behind, tells Laney to be nice.
+**Becca comes to the *New Moon* night** Laney forces on the floor — Becca loves it, sincerely; Laney is rude to her on
+principle; Lena, in the row behind, tells Laney to be nice.
 
 **E17 · "Christ the King"** · Sun Nov 22 – Wed Nov 25 · Christ the King (Nov 22). Nonna is in St. Elizabeth's after a fall;
 Jack has to go home now, not by Greyhound; he can't afford the flight; Theo buys **two** tickets over Jack's objection
@@ -2110,8 +2228,8 @@ worked at Memorial." Nothing more. Tiger Woods' car crash on the TV the next mor
 
 **E19 · "Advent"** · Mon Nov 30 – Sat Dec 5 · Obama's West Point speech (Dec 1: 30,000 troops to Afghanistan). Back at
 Marisol. Wes stops answering (🔒; Jack reads it as finals). Lena is brittle. Evan, after section: "Your roommate — was he
-at Preview Weekend last April?" **Paige becomes Jack's girlfriend** ("Can I call you my boyfriend when my mom asks?") —
-the Newman table cheers; Theo is polite; Laney is not; Lena is lovely to Paige, which is unbearable. *Jersey Shore* premieres (Dec 3); Theo loves it with a terrible sincerity.
+at Preview Weekend last April?" **Becca becomes Jack's girlfriend** ("My mom's been calling you my boyfriend since September. Can I tell her she's
+right?") — the Newman table cheers; Theo is polite; Laney is not; Lena is lovely to Becca, which is unbearable. *Jersey Shore* premieres (Dec 3); Theo loves it with a terrible sincerity.
 
 **E20 · "Immaculate"** · Sun Dec 6 – Tue Dec 8 · Immaculate Conception (Tues, holy day of obligation). Restraint scene #2:
 the rain, the Newman courtyard, an inch — and now Jack has a girlfriend, so the inch is fidelity too. The jacket again: the Fresno Fair pin. Doug Pruitt caught sleepwalking to the
@@ -2119,8 +2237,8 @@ fire alarm (comic payoff; everyone owes Margot five dollars).
 
 **E21 · "Guadalupe"** · Wed Dec 9 – Sat Dec 12 · Our Lady of Guadalupe (Sat): the dawn *Mañanitas* at St. Brendan's with
 mariachi. That night, the east stairwell: Wes ends it. Jack sits with her until dawn. He does not kiss her. **The tragedy of
-timing:** she is free for the first time since the porch, and Jack has had a girlfriend for two weeks (Paige, who did
-nothing wrong). (The player can try — it would be a betrayal of Paige, and the outline prices it; Lena's resolve is high
+timing:** she is free for the first time since the porch, and Jack has had a girlfriend for two weeks (Becca, who did
+nothing wrong). (The player can try — it would be a betrayal of Becca, and the outline prices it; Lena's resolve is high
 and her heart is shattered; she stops him gently — "You have a girl, Jack. A nice one." — or he stops himself.)
 
 **Saints ledger** (brief: Lena's weekly religion within a religion; scores per period sheet, some UNVERIFIED): E02 the WHO
@@ -2136,19 +2254,28 @@ E20 Dec 6 Washington in overtime (12–0) · E22 Dec 13 at Atlanta (13–0, Gaud
 
 **E22 · "Gaudete"** · Sun Dec 13 – Fri Dec 18 · Gaudete Sunday (rose vestments); finals. Hale's oral exam (Jack and Lena,
 back to back; Hale asks each of them the other's best argument). The Newman Christmas party. Margot lights a candle "for
-research." The last night: Lena's laptop, the photo of Nora in the jean jacket. "They never found it." **Smash to black.**
+research." **The season's strong moment (brief: bittersweet — a big moment between them, every reason for hope, a real sting
+that it's not going to work right now; not together):** after the party, **the Delgado roof again** (E07's roof; the solstice
+— the longest night — is next week, on Margot's birthday): Lena, free and six days out of Wes; Jack, Becca's boyfriend of
+three weeks. The sentence she left unfinished at the lifeguard tower and on the roof in September is finished — by her, or by
+him, per path — or so nearly finished that it doesn't matter, and they agree, out loud, that it is not now. She gives him the
+Reliquary to keep over Christmas ("Count them. If there's one more when I get back, I'll know."). Then, the last night, her
+laptop: the photo of Nora in the jean jacket. "They never found it." **Smash to black.**
 
 ## 23. SUMMER AND LATER SEASONS (broad strokes)
 
 **S2 — Spring 2010 (Jan 11 – May 14).** *Title theme: "Do you also wish to go away?"* Haiti (Jan 12). Jack checks the
-closet: the duffel is gone. **Jack and Paige** (the trying; Laney's principled rudeness; Lena being nice). **Lena's rebound
+closet: the duffel is gone. **S2E01 is the Youngstown Christmas** (brief; Dec 24, 2009 – Jan 3, 2010; arc #64): Glenwood
+Avenue, Midnight Mass at St. Brigid's, the Trumbull visiting room on the 27th, Nonna's good and bad days; the tin in Jack's
+pocket; Lena on the phone from Dupre Street (the Saints' first loss Dec 19; baby Lucille's baptism). **Jack and Becca** (the
+trying; Laney's principled rudeness; Lena being nice). **Lena's rebound
 is Gideon** (S2E02–E12, her magnetic guy; Theo openly rude, Jack's quiet thanks, Laney polite and feeding Theo) —
 **proxy fight #1 (S2E08)**; the near-miss and the end at the line (E10, E12). **Saints win Super Bowl XLIV (Feb 7)** — the
 floor watches in the Fishbowl; Lena on a table; Laney in a borrowed Brees jersey; **Mardi Gras in New Orleans (Feb
-12–16)**: Jack, Lena, Laney and Theo stay with the Broussards (Paige home on the island for the long weekend; Gideon on a
+12–16)**: Jack, Lena, Laney and Theo stay with the Broussards (Becca home in Idaho for the long weekend; Gideon on a
 picket); Celeste adopts Laney; Tony takes Jack's measure with a crawfish boil and a Sazerac; Wes at the Zulu parade, kind
 and lost; Ash Wednesday (Feb 17) at Holy Rosary. Chile quake (Feb 27) — Sol on the news via Theo (her mother's family in
-Concepción). **Paige ends it (S2E15, Lent: "I did everything right").** The Affordable Care Act signed (Mar 23); **Lena
+Concepción). **Becca ends it (S2E15, Lent: "I did everything right").** The Affordable Care Act signed (Mar 23); **Lena
 and Julian begin (S2E15–E16).** Lena debates Hale publicly at the Marisol Forum and wins (E16). Easter Vigil (Apr 3).
 Priya opens the journal. The one-year anniversary at the Point (Apr 25–26, Good Shepherd Sunday): Evan confronts Theo
 before dawn. Deepwater Horizon (Apr 20) — Lena's uncle's shrimp boat in Plaquemines. **E21:** Jack tells Theo about
@@ -2182,7 +2309,8 @@ Kevin decides. **Easter Sunday Apr 24**; **Apr 26: Theo surrenders.** Lena learn
 player's path made it so, the dangerous night (their first time, with each other) that happened (or didn't) the week
 before, now weaponized by guilt. Hale's forty-one seconds come out. Breakup at the Point (E22).
 
-**SU2 — Summer 2011 (5 episodes).** Apart. Jack in Youngstown, Lena in New Orleans. The Cloyne Report (July 13) and Enda
+**SU2 — Summer 2011 (5 episodes).** Apart. (Becca marries her Veritas missionary in Coeur d'Alene in June, at
+twenty; Jack is invited and goes, or sends a gift — path.) Jack in Youngstown, Lena in New Orleans. The Cloyne Report (July 13) and Enda
 Kenny's speech (July 20) make the seal of confession front-page news. **Aug 29, 2011: Wes dies.** Lena calls Jack at 3
 a.m. for the first time since April. He gets on a plane.
 
@@ -2240,11 +2368,11 @@ as joy and relief, maybe a reconciliation.
 ### 24.1 Shape
 - **S1:** rivals → friends → the two people who stay. She's taken; he's honorable; the heat is all proximity and argument.
   Two restraint scenes (E10 library, E20 courtyard) and one test (E21 stairwell). **No kiss.** Late in the season Jack
-  says yes to Paige (E19), believing Wes is forever — so when Wes ends it (E21), Jack is unavailable: **the tragedy of
+  says yes to Becca (E19), believing Wes is forever — so when Wes ends it (E21), Jack is unavailable: **the tragedy of
   timing** (brief).
-- **S2:** apart in other arms. Jack + Paige (the tryer: faith and effort, no fire); Lena + Gideon (her magnetic guy: fire,
+- **S2:** apart in other arms. Jack + Becca (the tryer: faith and effort, no fire); Lena + Gideon (her magnetic guy: fire,
   no faith), then Julian. Jealousy as POV; **proxy fight #1** (E08); Mardi Gras, a near-miss on Fat Tuesday night in the
-  Broussards' back courtyard (E07: neither moves; Wes's voice in the front room). Paige's sad ending (E15).
+  Broussards' back courtyard (E07: neither moves; Wes's voice in the front room). Becca's sad ending (E15).
 - **S3:** the mirror season. Jack + Sol (fire without faith); Lena + Julian (faith-respect without fire). **Proxy fight
   #2** (E09). The kiss at the end, after both endings. Only Lena has both; only Jack has both.
 - **S4:** together. The honeymoon (weeks of argument and kissing and fear); the line held in public and tested in
@@ -2255,7 +2383,8 @@ as joy and relief, maybe a reconciliation.
 - **AD:** marriage — the show does not end at the wedding; married love is the hardest saying.
 - **S1 cadence (player's standing rule after S1E04):** an **extended Jack/Lena two-hander roughly every other episode** —
   E04 (the harbor, played), **E06** (the long way home from Pi Lam's barn party: the beach, the creek mouth, the lifeguard
-tower, the Lagoon bench — planned after S1E05), **E08** (Thérèse day, *Story of a Soul*), **E10** (the
+tower, the Lagoon bench — played), *E07 (no two-hander; the Delgado roof at dawn after Margot's wake, ~1,800 words, and the
+friendship duel — Lena central)*, **E08** (Thérèse day, *Story of a Soul*), **E10** (the
   library at 4 a.m., restraint #1), **E12/E13** (shift by one around the Halloween setpiece: All Souls, "She was my host"),
   **E14** (the postcards, after Hale's dinner), **E16**, **E18** (the Thanksgiving phone call, Dupre Street to Glenwood
   Avenue), **E20** (the courtyard, restraint #2), **E21** (the stairwell until dawn). **Ensemble setpieces as punctuation**:
@@ -2266,7 +2395,7 @@ tower, the Lagoon bench — planned after S1E05), **E08** (Thérèse day, *Story
 | Season | Jack's resolve tendency | Lena's resolve (writer-set baseline) | Who holds |
 |---|---|---|---|
 | S1 | Mid (party, Theo, smoking) | High (7–8), with dips: E09 Wes leaves (6), E21 breakup (4) | **Lena** — and in E21 she's low, so **Jack** must |
-| S2 | Mid (Paige keeps him steady; Theo drags; guilt) | **Low-mid** after Wes (4–6; Gideon drains her; Mardi Gras 5) | **Jack** (and Lena herself at the Gideon line, E10) |
+| S2 | Mid (Becca keeps him steady; Theo drags; guilt) | **Low-mid** after Wes (4–6; Gideon drains her; Mardi Gras 5) | **Jack** (and Lena herself at the Gideon line, E10) |
 | S3 | **Low** (Sol, Theo's secret) | Mid (Julian steady; Laney's OD drops her to 3 for two episodes) | **Lena**, then neither (E16) |
 | S4 | Mid → low (secret, Nonna's death) | **Low** (guilt, love, Laney's rehab) — 3–4 in E10–E19 | **Neither, at times** — the danger windows |
 | S5 | Variable | Very low after Wes; then rising | Apart |
@@ -2276,7 +2405,7 @@ tower, the Lagoon bench — planned after S1E05), **E08** (Thérèse day, *Story
 1. **S3E16** (the week after Laney's overdose, Nov 2010 — they're with other people; if it happens it's a betrayal of
    Julian and Sol, and the show treats it that way). Lena's resolve is written at 3–4 here; the player can only reach the
    window if Jack's resolve has cratered *and* the writers drop Lena's in-episode. Default: not reachable.
-**Hard rule (brief):** every dangerous night is between Jack and Lena. With anyone else (Paige, Sol, Gideon, Julian,
+**Hard rule (brief):** every dangerous night is between Jack and Lena. With anyone else (Becca, Sol, Gideon, Julian,
 anyone) the ceiling is the near-miss, regardless of resolve: low resolve changes how close it gets and what it costs,
 never whether the line holds (§24.8).
 2. **S4E12** (Nonna's funeral, Youngstown, the Costigan basement, after the wake's whiskey). Lena at 3. The likeliest.
@@ -2301,9 +2430,8 @@ honest that waiting had costs too.
   repair is faster); **`soul.restraint`** governs the danger windows and Sol.
 - **Lena's other relationships** run regardless of the player; Jack's choices color them (a jealous Jack makes Julian's
   arc sadder; a generous Jack becomes Julian's friend, and Julian's ending is cleaner).
-- **Jack's other relationships**: Becca (fixed, short); **Paige** (S1E08–S2E15; fixed in shape like Becca — the player
-  shapes how warm, how honest and how it ends, not whether it happens, because the brief's timing tragedy needs her in
-  place by E21); **Sol** (S3; the player can keep it at flirtation — then S3 is lonelier and his resolve dips through
+- **Jack's other relationships**: **Becca** (S1E06–S2E15, the tryer; fixed in shape — the player shapes how warm, how honest
+  and how it ends, not whether it happens, because the brief's timing tragedy needs her in place by E21); **Sol** (S3; the player can keep it at flirtation — then S3 is lonelier and his resolve dips through
   Theo and Theo's secret instead — but she arrives and the pull is real). Neither ever goes past the near-miss.
 
 ### 24.5 The Ephesians 5 conversation (reserved; brief directive)
@@ -2329,7 +2457,7 @@ else, and neither can say it.** Vicious, specific, personal; the subtext obvious
 (who exchange looks and say nothing — alliance discipline); the real reason **never spoken** by either during the period.
 Play as argument duels where *winning the stated argument is the wrong thing to win* (a Press/Personal win costs trust and
 raises friction; a Concede is the only move that helps, and it doesn't feel like it).
-1. **S2E08 (late Feb 2010, first week of Lent; Lena with Gideon, Jack with Paige):** ostensibly Dorothy Day and the Harbor
+1. **S2E08 (late Feb 2010, first week of Lent; Lena with Gideon, Jack with Becca):** ostensibly Dorothy Day and the Harbor
    Inn strike — Jack calls her "a tourist in the class war"; she calls him "a company man for the company that laid off
    his father." Frank is used as a weapon. Both say the cruelest true thing they know. Margot, after: "Well. That wasn't
    about the housekeepers."
@@ -2354,8 +2482,7 @@ know." / "It was obvious after five minutes." (player's lines; keep them verbati
 | Who | With | When | Ceiling | How the line holds |
 |---|---|---|---|---|
 | Lena | Wes | before–S1E21 | kissing | they hold it together (his idea as much as hers) |
-| Jack | Becca | S1E06–E10 | a kiss at most | "homework" |
-| Jack | Paige | S1E19–S2E15 | kissing, warmth | she's waiting too; nothing deeper there |
+| Jack | Becca | S1E06–S2E15 | kissing, warmth | she's waiting too; nothing deeper there ("I did everything right") |
 | Lena | Gideon | S2E04–E12 | making out; the near-miss (E10) | she stops; "Then what are we doing, Counselor?" |
 | Lena | Julian | S2E15–S3E21 | kissing | he never asks; that's the problem and the grace |
 | Jack | Sol | S3 | making out; the darkroom near-miss (E14) | she stops it, or he does; resolve sets *how* |
@@ -2401,7 +2528,7 @@ practicing Catholics; Newman's Sunday attendance is about 600 across five Masses
 - **Pacifica Library** ("the Brick"; south side of the Commons): eight-story brutalist tower; the 8th floor is silent
   study with a view of the Channel Islands on clear days; the 24-hour study room in the basement during finals.
 - **Sciences** (east): the Chem building where Kevin lives in his head; the **Marine Lab** on the beach below the east
-  bluff with the touch tank (Paige).
+  bluff with the touch tank (Becca borrows a hermit crab from it, E08).
 - **The Student Union** ("the UCen"): a Panda Express, a Jamba Juice, the *Marisol Tide* newsroom upstairs (Margot).
 - **Campus Point** (south): the beach below the bluff; a surf break for beginners; the bluff-top bench where Jack smokes.
 - **The Grove** (west, between campus and Las Olas): a eucalyptus forest; the bike path cuts through it; monarchs in
@@ -2561,6 +2688,18 @@ women's bathrooms at each end of each floor). Home to 310 freshmen.
 - **Ray's light.** The clip-on bike light from Ray Ochoa's trunk (E06), on La Flaca's handlebar from then on.
 - **Danny's letters.** Lined paper, block-capital addresses, "Professor," signed "—D." Jack keeps them in the milk crate
   inside the Hopkins until the Hopkins ships, then inside whatever replaces it.
+- **The paperback, E07:** Augustine, *Confessions* (Penguin Classics, Pine-Coffin), CARDINAL MOONEY H.S. LIBRARY — DISCARD,
+  bought for a dime ("Augustine for a dime" — Lena, E04); Jack's margins thickest in Book IV (the friend who died). Hale's
+  Williams moves to the desk (one pencil *No.* so far — owed back with margins); the Benedict holy card moves into Augustine.
+- **The roof door.** Delgado's fifth floor: EMERGENCY EXIT ONLY · ALARM WILL SOUND, and under it, in a Sharpie gone brown,
+  *(it won't)*; a popsicle stick in the strike since 1998. The roof: tar and gravel, the elevator housing, two HVAC boxes, a
+  parapet to the hip; the Lagoon one way, the hills the other. **E07 (the equinox) and E22 (a week before the solstice) are
+  its two big nights** — equal night, longest night (arc #65).
+- **Margot's whiteboard, E07:** "TUESDAY — NO SCORE. (BEREAVEMENT.)" — the first time she suspends the tally. Never explained.
+- **Hale's Housman for Danny** (E07, `e6_hale_danny`): a wartime pocket *A Shropshire Lad*, foxed, no margins — "They'd only
+  erase them." 🔒 kindness and leash.
+- **Gloria's people-ratings, E07:** Margot, sight unseen, from Jack's description: "Rhubarb. Tart, and nobody can decide if
+  it's a fruit." (It's a vegetable. That's the point.)
 
 ---
 
@@ -2580,7 +2719,7 @@ night alone after bad news (−1); a fight with Lena (−1) or with Theo (−1);
 someone who trusts him (−1); skipping Mass (−1); bad news from home (−1); sleeping on a couch after being sexiled (−1, a
 joke with teeth).
 **Hard rule in mechanics:** with anyone but Lena, no option ever leads past the near-miss, at any resolve. Low resolve
-with Paige or Sol (or Lena with Gideon) makes the scene closer, longer and costlier (−1 to −2, a confession owed), and the
+with Becca or Sol (or Lena with Gideon) makes the scene closer, longer and costlier (−1 to −2, a confession owed), and the
 line still holds — an exit is always on the menu, and if the player won't take it, the other person or the world does.
 
 **Lena's resolve (writer-set).** Writers set it via scene `set` at the top of key scenes, based on her canon life: her
@@ -2596,7 +2735,11 @@ forget, it's a signal). Track her value in `continuity.md` at the end of every e
   Personal path) → 7 (Bid Day; Danny's call) → **ends 7** (played as planned; not the Personal path). **S1E06 plan:** 7 (the
   alarm; the talk; the cleanup) → **6** (s09, the Pi Lam steps: sober, dismissed by the house, Wes's 9:40 call from somewhere
   loud) → **5** (the lifeguard tower: Wes named, "I've decided not to notice") → 5 (the bench) → **7** (Sunday Mass) → **ends 7.**
-  Nothing dangerous: Jack enters at 10.
+  Nothing dangerous: Jack enters at 10. **S1E06 played as planned** (6 → 5 → 7; ends 7; Jack ends 9). **S1E07 plan:** **8**
+  (Tue 12:10, Nonna's Mass) → 7 (the wake, late; one plastic cup of Two-Buck Chuck) → **6** (the argument — 🔒 the girl who
+  was keeping hers) → **5** (Anders; the roof till dawn; the unfinished sentence; Wes's ticket) → 5 (the seminar on no sleep;
+  Friday in the Fishbowl watching Becca collect him) → **6** (Sunday: the 3–0 and Mass) → **ends 6.** Jack enters 9; nothing
+  dangerous (both must be ≤3).
 - Pilot baseline: **7** at move-in; **6** after the party (Laney, the Lighthouse — 🔒 the house itself costs her); **8** after
   Mass; **6** after the diner (the magazine); **6** at the tag (Wes, the article she hasn't read).
 
@@ -2633,7 +2776,7 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
   thing first; they call him at 3 a.m.; they let him see them ugly.
 - **Warmth** — how much they like him. Low: politeness, last names, no teasing. High: nicknames, teasing, food, touch on
   the arm, being saved a seat.
-- **Heat** — romantic/sexual charge (Lena primarily; Paige and Sol up to the near-miss, never past it; Becca and Laney
+- **Heat** — romantic/sexual charge (Lena primarily; Becca and Sol up to the near-miss, never past it; Laney
   flirt-only). Low: banter without charge.
   High: silences that mean something; physical awareness in the prose; she stands closer; the duels get personal.
 - **Friction** — the productive or destructive grit. Low: easy, maybe boring. Mid: sparring, which for Jack and Lena is
@@ -2648,7 +2791,7 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 - **Outcomes** branch on scores: rigor-led win (she respects him; friction up), wit-led win (warmth and heat up), heart-led
   (trust up; she tells him something true), Personal (a win that costs trust; she remembers).
 - Duel topics in S1: Lip service (E01), whether Hale's soul argument is circular (E02), labor and the bailout (E03), moral
-  luck (E05), the Anglican ordinariates (E11), Flannery O'Connor's violence (E12), postcards and pride (E14), the Manhattan
+  luck (E05), friendship — "Another Self" (E07), the Anglican ordinariates (E11), Flannery O'Connor's violence (E12), postcards and pride (E14), the Manhattan
   Declaration (E16), Advent vs. Christmas creep (E19), Hale's oral exam (E22).
 
 ## 32. Journal / clue board rules
@@ -2767,3 +2910,13 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
   Margot's arc of acceptance); the core eight survive college; the S1 finale is bittersweet with hope and sting; a
   Youngstown Christmas plus the summer season at home. Showrunner: fold into the arc registry and season maps at the
   next planning pass.
+
+### Revision log — after S1E06 was played (Showrunner, 2026-10-20)
+| Date | Section | Change | Why |
+|---|---|---|---|
+| 2026-10-20 | S1E06 played | **Path canon recorded** (§13, §21 status): "Are you going?"; told Hale about Danny (`e6_hale_danny`); "She's taken, Theo"; the whisper at the talk (no "fall" question); the Franciscan for Becca; **"a beach cleanup *and* a date"** (`e6_becca=="both"`); Osei/Gina; Nonna answered twice; "lena" to Gina; Ray — candor; boots; **the arm at the creek**; "She's lovely. I don't know what I'm doing."; **"You don't have to be fine with me"** → Lena's unfinished sentence (`e6_wes=="fine"`; the Wes tells never named); read her Danny's letter; Nonna told; "Goodnight, Magdalena" (twice); Sully's 2–0; waved at Becca. Temps: Lena trust 26 / warmth 24 / heat 8 / friction 9; Theo 6 / 8 / 1; Laney 3 / 8; Margot 1 / 1 / 2; Hale warmth 5 / friction 2; Kevin warmth 3; Osei 4 / 2; Becca warmth 4. Soul grace 11, honesty 14, restraint 0. Traits sincerity 46, candor 22, wit 17, charm 11, reckless 8, control 3. Resolve Jack 9, Lena 7. | The played episode wins. |
+| 2026-10-20 | §10.3, §10.4, §6, §8.2, §9, §10.1, §10.2, §14, §21 #20/#22/#57, §22 E08–E21, §23 S2/SU2, §24.1–24.8, §25.1, §27, §30 | **Becca promoted to the tryer; Paige retired** (never on the page). Becca keeps every on-page fact (Coeur d'Alene, the ranch, seven siblings, the calf, seven-or-nine, the Glory Be, "Put me down," FRIDAY?) and gains the tryer's design: sincere, shallow cradle Catholic; tries with his faith and his rigor (the Five Ways on the bleachers); Laney rude on principle / Lena "be nice" / Theo polite and Team Lena; first girl in the timing-tragedy slot (date #2 E07, #3 E08, **E10 "homework" becomes the crack she outlasts**, official E19, E21 two weeks, S2E15 "I did everything right"; SU2 she marries at twenty). New canon for her: Rebecca Anne; pre-vet; Portolá; Eli's 1994 Ranger; parents Karl and Marie; the grandmother's rosary from the **Sunshine Mine fire, Kellogg, May 2, 1972** (Researcher: verify date and toll) as the quiet mirror once planned for Paige. The hermit crab moves to Becca (E08). | Player note after S1E06: the player assumes Becca is the tryer and calls her "the exact blend … sweet, faithful and without fire." A second sweet Newman girl arriving in E08 would read as a swap; the room makes her the tryer and keeps exactly that blend. **Never confirm or deny it to the player.** |
+| 2026-10-20 | §22 E07, §20.7, §13, §16, §26, §27, §31 | **E07 rebuilt** for the path and the notes (full plan `outlines/s1e07.md`): extended to Sun Sep 27; Margot's funeral card (this path never heard the Friday invitation); Nonna's Mass; Gina friends Lena; the roof wake, the argument, Anders; Jack and Lena on the roof till dawn (the unfinished sentence, still unfinished; Wes's Columbus Day ticket); the friendship duel (their papers' titles); Hale's Housman for Danny; Becca date #2 (football, the First Way); the call home ("Who's Idaho?"); Sunday fork (Sully's 3–0 / the 9:30 with Becca); tag "Defense." Seeds: Theo and the parapet; Kevin and the camera; Kevin's plain T-shirt; Lena counts Laney's pills; the committal "to the deep"; "nobody has a crib" (medal); "You argued that like it was yours" (medal); Evan's preferential love; Mark 9:43 and Jack's right hand. | Player notes: lean in on the precipice, nothing crossed, Wes still there; no two-hander owed; Lena central. |
+| 2026-10-20 | §8.3 Margot, §8.4 Kevin, §14 | **Anders** fixed for the page (forty-one; amnio ~16 weeks; trisomy 21; March 15, 2000, "the ides"; the name; "age-appropriate language"). **Kevin's long arc** rewritten to the player's directive (out to Margot E07; the sad attempt with a girl S2; J&L S3; testifies S4; Andrés and a year away S6–S7; back pew S8; AD settles as a celibate gay Catholic, shaped by J&L; Margot's acceptance of their love without accepting the teaching). | Player directive (Kevin's arc), pending since the hard-rule audit. |
+| 2026-10-20 | §19, §21 #64–65, §22 E22, §23 S2E01 | **Core eight survive college** written into the death register. **S1 finale** given its bittersweet strong moment (the Delgado roof again, a week before the solstice: the sentence finished or nearly, "not now" said aloud, the tin kept over Christmas) before the Nora-photo cliffhanger. **Youngstown Christmas** placed as S2E01 (Dec 24 – Jan 3). New registry rows #64 (Christmas) and #65 (the roof bookends). | Player directives (finale; breaks; deaths), pending since the hard-rule audit. |
+| 2026-10-20 | §10.1 Wes, §8.6 Hale, §10.8 Gina/Maria, §16 | Wes's visit announced in E07 (the ticket). Hale's Housman for Danny (gated). Gina and Lena on Facebook; Maria and "Idaho." Jack is right-handed; the punch was his right (for Mark 9:43's elision). | E07 needs them. |

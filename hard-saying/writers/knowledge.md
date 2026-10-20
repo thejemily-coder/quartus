@@ -676,3 +676,85 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - Kevin [s12a | sullys] nothing new. Laney [s13 | laney] Jack's "doing beautifully."
 - Yusuf [s12b | eid] Jack came to Eid; Lena's 2–0 text (shown).
 - Dale [s12a | sullys] nothing new (still not Lordstown).
+
+### S1E07 — "Cloves"
+> Written for the after-s1e06 save only (see continuity.md S1E07 for the save-locked flag list). Branch tags are
+> `[scene | condition]`.
+
+#### Jack
+- [s01] The wake (card); Becca's Friday post. He does **not** know where Friday is until s10 (Becca announces football).
+- [s02] Osei said Nonna's Mass and gave a card; Becca has her brother Eli's Ranger; Lena's card also says "Bring the other
+  Catholic."
+- [s03] Lena and Gina are FB friends; Lena's wall reply ("Proud of you"); Gina has seen Lena's relationship status.
+- [s04] Gloria's rhubarb rating for Margot; Ray's Tuesday meatloaf confirmed.
+- [s05] Margot knew from Lena that Jack gets off at one (Margot says so). **Lena counts Laney's pills** (observed; no
+  explanation given). [smoke] Reliquary No. 4.
+- [s06b] **Anders** (all paths): Margot's mother was 41; amnio ~16 weeks, trisomy 21; decided at the kitchen table; told "in
+  age-appropriate language"; **March 15, 2000**; the name Anders; Margot takes every March 15 off. (`knows_anders`)
+- [s06c] Jack *guesses* "Kevin and Margot" (wrong; his inference only).
+- [s07c] **Wes called Tue 8:04 from his room; bought a ticket for Columbus Day weekend** (`wes_visit_known`).
+- [s08v | duel.friend.heart>=2] **Wes was Luc's best friend first; "followed Luc around since he could walk."** Not known on
+  other verdicts.
+- [s08x | e6_hale_danny] Hale's Housman for Danny ("a man who doesn't sleep" on `e7_housman=="sleep"`).
+- [s09a | kevin] Kevin laughs off "Margot and me"; [drop] orgo B-plus, the highlighter named Gregory (Kevin told him).
+- [s09b | margot] the *Tide* faith-page memo; **Lena brought Margot a coffee at nine with BLACK. NO SUGAR. NO ARGUMENT.**
+- [s09c] Kierkegaard and Regine Olsen (Evan).
+- [s10] Becca's date is Marisol High football (Becca, aloud in the Fishbowl). [s10c] **Becca lives in Portolá.**
+- [s10d] Lena on the east stairs with Wes (Laney); [stairs] seen and heard.
+- [s11] Frank's union-hall meeting Tuesday; Nonna's card on the fridge; Gina told Ma "Idaho."
+- [s12a | sullys] Lions end a 19-game streak (Dale). [s12b | becca] Mrs. Fitch's "you two."
+- [s13] Lena's red on his paper, and "*Defense.*"
+
+#### Lena
+- [s02] Osei's intention for Carmela (heard); Becca's truck and Friday at six. [nice] Jack thinks Becca's nice; [football] Jack's
+  joke about explaining football.
+- [s03] Gina's "she looked away first" (her wall post); Lena replied.
+- [s05] [pecan] Gloria chose pecan for the wake (implied by the pie; Lena already knew her own rating from E04 s13).
+- [s06b] **Anders** (all paths). [s06a | lena] Jack stopped her by name.
+- [s07] [yours] Jack recognized her E05 line; [okay] "Ask me Thursday." [s07b] Jack's answer per `e7_sentence`. [s07c] Jack's
+  answer about Wes per `e7_wes`.
+- [s08–s08v] Jack's Augustine/Lewis/Montaigne moves; [e7_lewis] **Joy Davidman**; [e7_halfhour] Jack conceded the half-hour.
+  She has Jack's paper (takes it home; returns it s13).
+- [s09c] Jack's red on her paper per `e7_red`.
+- [s10] Becca's date is football (Becca, aloud). [wait] "Don't wait up."
+- [s10d | stairs] "football *and* a date" (from Jack).
+- [s11c | becca] **Jack's 9:15 text: 9:30 Mass with Becca, Becca on donuts** → her 1:14 "Tell Becca hi."
+- [s12a | sullys] Becca's 10:41 "Missed you!" (saw the screen).
+- Does NOT know: the Housman; Margot's Thursday with Jack; what Jack told his mother; Becca's 2 a.m. question.
+
+#### Margot
+- [s05] Jack's shift ends at one (from Lena — on page). [s05/s09b] the pie per `e7_pie` ([rhubarb] "Gloria says that's the
+  point" — she hears the name Gloria, not who she is).
+- [s06] Jack's move per `e7_arg`; [mom] Jack asked about her mother.
+- [s06b] Jack and Lena and Kevin now know Anders; Lena said his name; Kevin said it too (Jack heard; Margot's reaction implies
+  she did).
+- [s09b | margot] Jack's faith-page quote; Jack thinks she and Kevin are a thing ("exactly as advertised"); [neither] Jack has
+  been trying to "classify" Lena since August.
+- [s12a | sullys] at the 9 p.m. Mass "for the *Tide*."
+
+#### Kevin
+- [s06b] Anders (said the name). [s09a | kevin] Jack thinks Kevin and Margot are a thing. Becca's wall post (all Delgado).
+  🔒 nothing on page about Kevin himself beyond what Jack sees.
+
+#### Becca
+- [s02] Lena's name (she says "Hi, Lena!"). [s10] the Fishbowl crowd (Laney, Theo, Kevin, Doug; Lena on the couch arm).
+- [s10b] Jack knows the Five Ways; [twoam] **Jack wonders at 2 a.m. whether he's any good at it** (not doubt of truth);
+  [browns] the Browns on her prayer list.
+- [s10c] Jack's answer per `e7_cheek`. [s12b | becca] Jack came for the maple bar; Tyler's "woman with a plan" was not said to her.
+
+#### Theo / Laney
+- Theo [s01] Becca's Facebook photos and post; she can butcher a deer (from Jack). [s10] meets Becca ("Elk too"); texts Laney
+  (the alliance; never named on page).
+- Laney [s10] Becca is "Idaho," it's football (Becca said so); [s10d] Jack's answer per `e7_doubt`; [kiss] the cheek kiss.
+
+#### Others
+- Gina [s03] Lena's FB (relationship status: Wes), Becca's wall post; [friend] Jack says Lena's his friend and Becca won't say
+  where; Gina tells Ma "Idaho" and that "she drives."
+- Maria [s11] "Idaho" (from Gina); Gina showed her Becca's picture [nobody]; [becca] Becca's name, seven siblings, a ranch,
+  "Very" Catholic; [s11b | boyfriend] **the veil girl has a boyfriend.**
+- Frank [s11] nothing new (OSU score).
+- Hale [s08–s08v] the duel; [e6_hale_danny] gave the Housman. Learns nothing new about Jack.
+- Osei [s02] nothing new. Tyler [s12b | becca] Jack was asleep Wednesday.
+- Gloria [s04] Margot exists (all black, Portland, whiteboard, "upholds the patriarchy"); "the other Catholic."
+- Ray [s04] La Flaca's light works.
+- Dale [s12a | sullys] Jack is from Ohio (Browns); still not Lordstown.

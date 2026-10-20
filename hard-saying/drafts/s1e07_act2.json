@@ -1,0 +1,400 @@
+{
+ "scenes": {
+  "s05": {
+   "slug": "WEDNESDAY · 1:35 AM · DELGADO HALL, THE ROOF",
+   "music": "The Smiths — “There Is a Light That Never Goes Out”",
+   "set": {
+    "resolve.lena": 7
+   },
+   "body": [
+    "At the east end of the fifth floor, past the last door and the smell of somebody’s microwave popcorn, the stairs go up one more half-flight to a steel door painted institutional beige. Red on white, at eye level: EMERGENCY EXIT ONLY · ALARM WILL SOUND. Under it, in Sharpie gone brown, in a small and patient hand: *(it won’t)*. A popsicle stick, gray from a decade of thumbs, is wedged in the strike plate.",
+    {
+     "type": "sms",
+     "from": "THEO VANCE (IMPORTANT)",
+     "text": "The widow is asking after her pie. I told her you were detained at the border.",
+     "time": "1:24 AM"
+    },
+    "Jack has the Anchor’s white pie box flat on one palm and the rest of him smells like the Hobart: steam, bleach, the last of the chowder in the cuffs of his flannel. He puts his hip to the bar and braces for the whole building: three hundred and ten freshmen on the lawn in towels, Priya’s air horn. The door swings out onto the night. Nothing happens. Nothing at all.",
+    "Tar and gravel shift under his work shoes. The elevator housing stands up in the middle of the roof like a little concrete chapel, two HVAC boxes hum, and a parapet runs around the edge at hip height. The Lagoon lies flat and black one way with the Anacapa lights laid in it; the hills are a darker black the other way, with the stars starting right where they stop. No moon. Clear and dry and cold enough to want the flannel. There are more stars over Marisol than Youngstown has had even since the mills went and took the smoke with them.",
+    "Margot presides. All black, the oxblood Docs, a Mason jar on the gravel with a candle burning low inside it, and beside it an oxblood Doc Martens shoebox with the lid off: the casket. One pack of Djarum Black lies inside on a fold of black tissue paper. On a cooler: a magnum of Charles Shaw, a sleeve of plastic cups, and a white iPod dock the size of a toaster, out of which the Smiths are playing just loud enough not to reach the fifth floor.",
+    "Lena is cross-legged on a Saints beach towel, black and gold with a fleur-de-lis the size of a hubcap, in the oatmeal cardigan and the boots, a plastic cup of red resting on her knee. Laney is asleep in a folding lawn chair under Margot’s black peacoat, a pink Pi Lam bandana tied over her hair and one Tory Burch flat lying on the gravel where it fell. Pledge line-up ran till midnight, Lena says, and she made it up the stairs on spite. Theo is on top of the elevator housing with the 5D at his eye, in a black tuxedo jacket over a T-shirt — black tie optional; he opted for half — filming the wake from the high ground. All night he never comes within a body’s length of the parapet, though the parapet is the shot. Kevin sits against the near HVAC box with a steel thermos, in a plain gray T-shirt.",
+    "“I’m here in a medical capacity,” Kevin says, and lifts the thermos. “Somebody at a funeral for a cigarette should know CPR.”",
+    "“Costigan,” Theo calls down. “Don’t look at the lens. Look at the casket.”",
+    "Margot doesn’t look at her watch. “You’re late,” she says. “That was the point.”",
+    "Jack sets the box on the cooler and opens it.",
+    {
+     "if": "e7_pie==\"olallie\"",
+     "text": "Margot leans over it with her hands clasped behind her back. Deep purple, the lattice gone dark at the edges, the juice already through the bottom of the box. “This is the good pie?” “It’s a nine,” Jack says. Margot straightens. “From you,” she says, “that’s a sonnet.”"
+    },
+    {
+     "if": "e7_pie==\"pecan\"",
+     "text": "Lena is up on her knees before Margot can get to it. She takes the plastic knife out of the sleeve, cuts the first slice without asking anybody, and looks at it on the paper plate — the dark top, the glaze, the pecans laid in rings. “Pecan,” she says. Then she looks at Jack, once. “Sweet all the way through. I’ve been told.” Margot looks from one of them to the other, decides not to ask, and takes the second slice."
+    },
+    {
+     "if": "e7_pie==\"rhubarb\"",
+     "text": "Margot looks at the pink, sour-smelling inside of it for a while. “Rhubarb is a vegetable,” she says. “Gloria says that’s the point.” Margot opens her mouth to ask who Gloria is and doesn’t. She cuts a slice, very straight, and holds the paper plate on her flat palm and says nothing at all, and Lena, watching her, smiles at her knees."
+    },
+    "Margot pours him a cup of Charles Shaw, the house red of the bereaved, and Jack takes it and decides it’s going to last him all night. Lena shifts over on the towel and gives him the end with the fleur-de-lis on it.",
+    "In the lawn chair Laney sighs and turns her face into the peacoat collar. Lena reaches over without getting up. She lifts the edge of the coat, slides her hand into the pocket of Laney’s pink cardigan, and takes out the little silver pillbox with DRP on the lid. She opens it with her thumbnail. She counts with one finger, touching each pill. She closes it, puts it back, and smooths the coat down over Laney’s shoulder. Then she looks up, and Jack is watching her. She looks back at him, level, for as long as it takes him to understand there’s no explanation coming. Then she picks up her wine, and the Smiths keep going on the cooler.",
+    "Margot stands over him with a fresh pack, the black paper and the gold band, the cellophane already off. The smell comes up out of the pack like a spice cabinet on fire. She holds one out to him, filter first. “It’s a wake,” she says. “Everybody takes one.”"
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "roof",
+     "title": "The roof",
+     "text": "Fifth floor: EMERGENCY EXIT ONLY · ALARM WILL SOUND, and under it, in Sharpie gone brown: (it won’t). It doesn’t. A popsicle stick in the strike. Tar, gravel, the elevator housing, a parapet to the hip. The Lagoon one way, the hills the other."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Light it. It’s a wake.",
+     "if": "trait.reckless>=8",
+     "tag": "Reckless",
+     "set": {
+      "e7_clove": "smoke",
+      "reliquary": "+1",
+      "jack_cigs": "+1",
+      "resolve.jack": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "On the roof Lena took a clove out of your mouth. Reliquary No. 4 — by dispensation.",
+     "response": [
+      "Margot holds the lighter for him herself. The clove catches and crackles like a fire in a wet log, little snaps all along the paper, and the smoke is sweet, sweeter than it has any right to be, and goes straight to the back of his head on top of the wine.",
+      "He gets two drags. On the third Lena leans across the fleur-de-lis, takes it out of his mouth by the filter, and holds it up to the candle. There follows a theological pause. Then she pinches it out against the Mason jar, digs the Altoids tin out of her boot, tears a strip off the bottom of her own funeral card and writes on it against her knee with Margot’s pen: *No. 4 · 9/23/09 · the Delgado roof · a clove, by dispensation.* The slip goes in. The lid goes on.",
+      "“That’s desecration,” Margot says.",
+      "“That’s *veneration*,” says Lena, and puts the tin back in her boot."
+     ],
+     "journal": [
+      {
+       "kind": "note",
+       "id": "cigarette",
+       "title": "The Reliquary",
+       "text": "An Altoids tin from a pea-soup restaurant in Buellton. RELIQUARY on the lid. No. 1: the Lighthouse. No. 2: Malibu, before breakfast. No. 3: the harbor — she smoked half of it first. No. 4: a clove, on the Delgado roof, at a wake. By dispensation. Do not ask."
+      }
+     ],
+     "goto": "s05b"
+    },
+    {
+     "text": "Hold it, unlit, for the length of the service.",
+     "tag": "Sincerity",
+     "set": {
+      "e7_clove": "hold",
+      "rel.margot.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He takes it and doesn’t ask for the lighter. He holds it upright between finger and thumb, filter down, like a taper at the Easter Vigil at St. Brigid’s the year he was nine and terrified of setting Mrs. Iannucci’s hair on fire.",
+      "Margot looks at it, and at him. “Correct,” she says, and goes back to the candle."
+     ],
+     "goto": "s05b"
+    },
+    {
+     "text": "“I’m quitting the other kind.”",
+     "tag": "Control",
+     "set": {
+      "e7_clove": "decline",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Margot draws the clove back and returns it to the pack with exaggerated care, and keeps the pack in her hand where he can see it. “Puritan,” she says.",
+      "On the towel Lena leans back on her hands and looks up at the stars as if somebody had just told her a secret about them."
+     ],
+     "goto": "s05b"
+    }
+   ]
+  },
+  "s05b": {
+   "slug": "WEDNESDAY · 1:46 AM · DELGADO HALL, THE ROOF",
+   "body": [
+    "The song ends. Margot doesn’t touch the iPod. The silence comes in after it — the hum of the HVAC, a car out on Ocean Road, the eucalyptus in the Grove ticking in the breeze — and keeps coming until it has become part of the service. Then she stands up by the candle with an index card in her hand. She never once looks at it.",
+    "“Dearly beloved. We are gathered here today to bury a cigarette.”",
+    "Up on the elevator housing the 5D’s little red light is on.",
+    "“She was born in Kudus, in Central Java, in 1951, to a family firm called Djarum, which means *needle*. She came to Portland by way of a head shop on Hawthorne Boulevard, where a man named Dez sold her to me at sixteen with no questions asked — the only liberty I have ever been offered without a reading list.”",
+    "Lena makes a small sound into her wine. Margot waits for it to finish.",
+    "“She crackled. People assume that’s a metaphor. It’s eugenol — clove oil — boiling in the shreds. She was the only thing I owned that announced herself.",
+    "“She was sweet. She was bad for me. She was *mine*.",
+    "“On the twenty-second of June the President signed the Family Smoking Prevention and Tobacco Control Act, and as of yesterday she is contraband. The Commissioner of Food and Drugs explained that flavored cigarettes are a gateway for children. I was a child. I went through the gateway. On the other side was a roof. You may assess the outcome.”",
+    "Kevin, against the HVAC box, raises his thermos an inch, to the outcome.",
+    "“Strawberry is dead. Chocolate is dead. Vanilla, cinnamon, clove: dead. Menthol was spared. Which is to say the cigarette Black America was sold for fifty years was spared, because Congress knows who has a lobby and who has a funeral.”",
+    "Nobody on the roof moves for that one. Jack has been to a lot of funerals — the South Side of Youngstown buries somebody every Saturday and feeds everybody after — and he has heard monsignors say less in twenty minutes.",
+    "“It’s Padre Pio’s day,” Lena says from the towel, quietly — it’s after midnight, so it is. “He took snuff, they say. You’d have gotten along.”",
+    "Margot doesn’t break stride. “Put him in the program.” She turns the index card over, which is the only thing she does with it. “She is survived by a carton in my closet, which I will smoke at the rate of one per grief, and by the Djarum Black cigarillo, a legal loophole I consider unworthy of her.”",
+    "“From the Book of Common Prayer,” she says. “Burial at sea. I chose it for the prose.” She kneels on the gravel. She takes the last pack out of its tissue paper, slides one cigarette out, lays it alone in the shoebox, and puts the lid on. Her hand stays flat on the lid while she says the rest of it, and her voice doesn’t change at all.",
+    "“We therefore commit this body to the deep, to be turned into corruption.”",
+    "Up on the housing, Theo lowers the camera. He doesn’t raise it again.",
+    "Margot stops. The candle leans in the jar and straightens. “The rest of the sentence is for believers,” she says. “I’m told it’s beautiful.” Jack can guess where the rest of it goes — the sea giving up her dead; Revelation is Revelation in anybody’s prayer book — and Lena, by her face, can guess too, and neither of them says it.",
+    "She stands and brushes the gravel off her knees. Then, to the roof at large, in the same voice she used for the strawberries: “Today the state decided what I may put into my own body. It will not be the last time.”",
+    "Lena sets her cup down on the towel very slowly. “Oh, Margot,” she says. “You did *not*.”",
+    "In the lawn chair Laney opens her eyes. She takes in the candle, the shoebox, Margot standing over it in black, and her face crumples all at once, like a pageant runner-up’s, magnificently. “It’s so *sad*,” she sobs, and starts to applaud — big, slow, Miss-Congeniality applause — and is asleep again before her hands have finished the second clap. They come to rest on the peacoat, a few inches apart, mid-applause.",
+    "Theo comes down off the elevator housing by the steel ladder on the far side, one-handed, the camera held up and away from the rungs. “She needs her bed,” he says. He holds the 5D out to Kevin. Kevin takes it by the strap and holds it away from his body, at the end of his arm, as if it were hot.",
+    "Theo slides his arms under Laney and lifts her out of the lawn chair and out from under the peacoat, which stays behind on the chair in the shape of her. The bandana comes loose. She gets a fistful of his tuxedo lapel without waking up. “Theodore,” she says, into it.",
+    "“Delaney.”",
+    "Lena is half up off the towel. “On her side — ”",
+    "“I know,” Theo says.",
+    "Kevin steps in and hangs the camera around Theo’s neck by the strap, settling it against Laney’s shoulder, and steps back without a word. Jack picks up the Tory Burch flat off the gravel and lays it on Laney’s stomach. Then Theo carries her through the propped door and down, and the stairwell takes the sound of his footsteps one floor at a time, and it is ten after two, and there are four of them on the roof."
+   ],
+   "next": "s06"
+  },
+  "s06": {
+   "slug": "WEDNESDAY · 2:20 AM · DELGADO HALL, THE ROOF",
+   "set": {
+    "resolve.lena": 6
+   },
+   "body": [
+    "Margot, Lena, Kevin, Jack. The candle in its jar, the magnum two-thirds down, what’s left of the pie in its tin on the cooler. Margot has not sat down since the committal, and it starts the way these things start, as sport — the two best arguers in Delgado who aren’t Jack, a bottle of Two-Buck Chuck, nowhere to be until one o’clock this afternoon, which doesn’t feel like the same day. Margot’s last line at the service was the opening bell, and both of them heard it ring.",
+    "“I’m serious,” Margot says. “If the state can take my cloves for my own good, it can take anything for my own good. You people should be terrified. You’re next.”",
+    "“Margot, we’ve been next since Nero,” Lena says. “It’s practically a liturgical season.”",
+    "Margot gives her that much with one nod and goes straight past it. Judith Jarvis Thomson, 1971: you wake up in a hospital bed, back to back with a famous violinist who is unconscious, and the Society of Music Lovers has plugged his kidneys into yours because you alone have the right blood type. Nine months, and he’ll recover. Unplug, and he dies. “Are you obliged to stay plugged in?”",
+    "“I’d stay,” Lena says. “And then I’d sue the Society of Music Lovers for kidnapping. It’s a beautiful argument, Margot, for a world where babies get in by burglary.”",
+    "“And when it *is* burglary?”",
+    "Lena doesn’t answer fast. Her thumb goes around the rim of the cup once. “Then it’s the hardest case there is,” she says. “And the child still didn’t break in.” Kevin looks down into his thermos. Margot lets that one go by without a reply, and the argument moves on.",
+    "Lena comes back with Don Marquis, 1989, and she says it like something she’s known by heart since she was fourteen. “What makes it wrong to kill you or me isn’t that we’re clever. It’s that it takes everything we were going to have. A baby has more future than anybody on this roof.” A flick of the wrist. “John Paul says the same thing with more Latin.”",
+    "“Then let’s talk about who pays for the future.” Margot counts it off on her fingers without hurrying, the candlelight going up the lenses of her glasses. “The woman. Nine months, a body that doesn’t go back, the job she loses, a state that won’t fund the crib, a Church that won’t hand out a condom, and men who legislate and leave.”",
+    "“Yes,” Lena says.",
+    "Margot waits for the *but*. It doesn’t come. Lena has given her all of it, every item on the list, and she leans forward on the towel. “So the answer isn’t a sign outside a clinic. It’s a house. The Catholic Worker answer to a hard pregnancy is a room and a crib and somebody to drive you to the checkup. I’m a pro-life Democrat, Margot. Both parties will sell that girl. One before the election and one after.”",
+    "“Your Dorothy Day had one,” Margot says. “Before she was Dorothy Day.”",
+    "“And spent the rest of her life on the other side of it.” Lena is going faster now, the drawl coming up under the words. “When a girl decides to keep it, everybody has an opinion and nobody has a crib.” Her hand is at the medal before the words are out — the small gold oval at her collarbone, her thumb over it — and holds it while she looks at Margot, and then she takes it away and picks up her wine.",
+    "Margot tops off her own cup. “And when we’re done with this, we’re doing Ephesians.”",
+    "“Not tonight,” say Jack and Lena, together.",
+    "“You can’t keep saying that.”",
+    "“We can,” Lena says. “It’s a liturgical response.”",
+    "Kevin has been quiet so long that when he talks the other three turn to look at him. He has the thermos cap in his hand and he’s turning it. “Trời sinh voi, trời sinh cỏ,” he says. “My Bà Nội says it. Every time somebody at church is pregnant again. Heaven makes the elephant, heaven makes the grass.” He screws the cap down. “Like — if God sends the kid, God sends what the kid eats.”",
+    "Margot considers him with real interest. “That’s beautiful,” she says, “and it isn’t an argument.”",
+    "“I know,” Kevin says, and smiles at her, the big one.",
+    "“Grass doesn’t feel anything,” Margot says, turning back to Lena. “Neither does a fetus at ten weeks. There’s nobody home yet. You can’t take a future from nobody.” And then, because he’s been sitting there on the end of the towel with the same cup of wine for forty minutes: “Costigan. You’ve been nursing that cup like it’s going to be taken up in the second collection. Contribute.”"
+   ],
+   "choices": [
+    {
+     "text": "Press her: “Then what makes killing anybody wrong? Not that they’re awake. People sleep.”",
+     "tag": "Candor",
+     "set": {
+      "e7_arg": "press",
+      "rel.margot.friction": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "He says it, and adds that Doug Pruitt sleeps fourteen hours a day and nobody’s ever tried to unplug him. Kevin, who lives with Doug Pruitt, raises the thermos in agreement.",
+      "Margot takes the hit; he can see it land, and she doesn’t pretend it didn’t. “Fair,” she says. “Then you’ll be wanting to fund the future, Costigan. Every crib. I’ll send you the bill.”",
+      "“He will,” Lena says. “He’s from Ohio. They pay.”"
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "Something about the wine.",
+     "tag": "Wit",
+     "set": {
+      "e7_arg": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He holds the cup up to the candle so the light comes through it, thin and purple. “This,” he says, “is the best argument for natural law I’ve ever tasted. Something in here is clearly being violated.”",
+      "Margot makes a sound. She gets the plastic cup to her mouth in time to put most of it in there, and holds it there, and glares at him over the rim with genuine hatred while her shoulders go. Lena doesn’t bother hiding anything; she tips over sideways on the towel and laughs at the stars. “Charles Shaw,” she says when she can, “Doctor of the Church.”"
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "“What does your mom think?”",
+     "tag": "Sincerity",
+     "set": {
+      "e7_arg": "mom",
+      "rel.margot.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Margot looks at him long enough that he can’t tell whether he’s about to be insulted or thanked.",
+      "“My mother thinks I should have been a Classicist,” she says. “On this she agrees with Lena.” And she turns back to the argument, and the argument closes over the question."
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "Stay out of it. Keep the candle lit.",
+     "tag": "Control",
+     "set": {
+      "e7_arg": "quiet",
+      "rel.kevin.warmth": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Abstaining,” Jack says, and reaches over and cups his hand around the mouth of the Mason jar, where a breeze off the Lagoon has started to lay the flame down flat. It stands back up.",
+      "Kevin leans across the gravel and puts the thermos in his free hand, unprompted. The tea is hot and so sweet it makes his back teeth ache. “Bà Nội’s recipe,” Kevin says. “Too much sugar. On purpose.”"
+     ],
+     "goto": "s06a"
+    }
+   ]
+  },
+  "s06a": {
+   "slug": "WEDNESDAY · 3:02 AM · DELGADO HALL, THE ROOF",
+   "body": [
+    "Forty minutes later the magnum is down to the label, Orion has come up sideways over the hills the way he does in the fall, and Lena has pushed the sleeves of the oatmeal cardigan up past her elbows. Jack has watched her do that in Hollis 302 since the first week. It means she’s about to win.",
+    "She reaches for the strongest thing she has. “You want to talk about who pays? Look at who doesn’t get to. Nine in ten, Margot. When the test comes back with an extra chromosome, nine in ten of them never get born. Somebody decided who gets counted, and it was a lab.”",
+    "Margot doesn’t move. No pen, no clove, no comeback — and Margot has had a comeback for everything since the first week of school, including the fire alarm. She sits with her cup in her lap and her eyes on the candle and her face doesn’t do anything at all.",
+    "Against the HVAC box, Kevin sets his thermos down on the gravel. Carefully, so it won’t make a sound.",
+    "Jack sees it a half second before Lena does. Lena has already taken the breath to go on."
+   ],
+   "choices": [
+    {
+     "text": "“Lena.” — just her name.",
+     "if": "trait.candor>=20",
+     "tag": "Candor",
+     "cue": "Margot will remember that.",
+     "set": {
+      "e7_stop": "lena",
+      "rel.lena.trust": "+1",
+      "rel.lena.friction": "+2",
+      "rel.margot.trust": "+2",
+      "trait.candor": "+1"
+     },
+     "key": "Mid-argument on the roof, you said Lena’s name to stop her.",
+     "response": [
+      "He doesn’t raise his voice. He doesn’t have to. Lena stops as if he had put his hand over her mouth — he hasn’t; he hasn’t moved — and she turns on him with her whole body, the sleeves up, ready to take his head off for it, her mouth already open on *Excuse me* —",
+      "And then she sees Margot, and her mouth closes.",
+      "Margot, not loud: “This stopped being a game an hour ago.”"
+     ],
+     "goto": "s06b"
+    },
+    {
+     "text": "“Margot?”",
+     "tag": "Sincerity",
+     "set": {
+      "e7_stop": "margot",
+      "rel.margot.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Margot doesn’t answer him. She doesn’t look up from the candle.",
+      "Lena stops in the middle of a word and looks at Jack, and then at where he’s looking.",
+      "Margot, not loud: “This stopped being a game an hour ago.”"
+     ],
+     "goto": "s06b"
+    },
+    {
+     "text": "Say nothing.",
+     "tag": "Control",
+     "set": {
+      "e7_stop": "quiet",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He keeps his mouth shut, and Lena finishes. “— and it wasn’t a mother, it was a man in a white coat, with a pamphlet.”",
+      "Then the quiet comes in by itself. Nobody stops her; nothing answers her; the HVAC hums. She hears it arrive. Jack watches her hear it — the sleeves, the open hand, the next point dying in her chest — and turn, slowly, to Margot.",
+      "Margot, not loud: “This stopped being a game an hour ago.”"
+     ],
+     "goto": "s06b"
+    }
+   ]
+  },
+  "s06b": {
+   "slug": "WEDNESDAY · 3:05 AM · DELGADO HALL, THE ROOF",
+   "set": {
+    "resolve.lena": 5,
+    "knows_anders": true,
+    "rel.margot.trust": "+1"
+   },
+   "body": [
+    "Margot takes off her glasses. Jack has never seen her without them; her face looks unfinished, younger, the bridge of her nose marked pink where they sit. She folds them and holds them in her lap and says it without any music in it at all.",
+    "“Spring of 2000. I was nine. My mother was forty-one. They did an amnio at about sixteen weeks. Trisomy twenty-one.”",
+    "Down in the Anacapa lot a car alarm chirps twice and gives up.",
+    "“They decided at the kitchen table, and they told me the same night.” She sets the next part off by itself, like a diagnosis. “*In age-appropriate language.* That was my father’s phrase. He was very proud of it.” She turns the glasses over. “They’d already picked a name. March fifteenth. The ides. My father pointed that out. He thought it was interesting.”",
+    "Lena has a hand over her mouth.",
+    "“I have defended her in every room I’ve ever been in,” Margot says. “I’m going to defend her in this one.” She looks at Lena now, straight at her, with her naked, unfinished face. “I’m not telling you so you’ll be sorry for him. I’m telling you so you’ll know I’m not doing a bit.”",
+    "Lena gets as far as “Margot, I didn’t — ” and Margot lifts one hand off the glasses, an inch, and Lena stops.",
+    "“I know you didn’t. You couldn’t have.” There’s no edge on it. “That’s what a statistic is for. Nobody in it has a name.” She looks back down at the candle. “Every March fifteenth I take the day. I don’t go to class. I don’t tell anybody what it’s for. Last year I sat in Laurelhurst Park until it got dark. This year I’ll have a roof.”",
+    "Jack sits very still on the end of the towel with the cold of the gravel coming up through his jeans. He has a hundred things he could say and every one of them is an argument, and he can feel all of them in his mouth, ready, and none of them is any use to anybody on this roof. Kevin has moved. Jack didn’t see him do it; he’s on the gravel beside Margot now, his knees up, the thermos left behind against the HVAC box.",
+    "The breeze comes over the parapet off the Lagoon, colder now. Jack’s mother was past forty when Rosie came. He leaves the thought where it is.",
+    "Lena takes her hand down. Her voice, when it comes, is wrecked and still entirely hers. “What was his name?”",
+    "Margot takes long enough that Jack thinks she isn’t going to answer.",
+    "“They’d picked Anders.”",
+    "“Anders,” Lena says. Not fast. She says it like a name, and not like a word in an argument.",
+    "Beside Margot, Kevin says it too, under his breath, the way people at Mass repeat a name when the priest reads it out in the intentions. Jack only catches it because the HVAC picks that second to cut out.",
+    "Margot’s chin moves once. “Nobody’s said that out loud since 2000,” she says, “but me.”",
+    "Then they’re both crying. Margot does it without making a sound — the tears simply arrive and go down her face and off her jaw onto the black, and she doesn’t wipe them, and she doesn’t look away. Lena does it with all of New Orleans in it: her shoulders, her breath, a hand flat on her own chest, the sound of a girl at a jazz funeral who knew the man. Her eyeliner goes first, in two dark tracks. She wipes at it with the cuff of the cardigan, and the sleeves are still shoved up past her elbows from when she was winning. Neither of them moves to the other. Neither of them gives an inch.",
+    "“She was right,” Margot says.",
+    "“I think she was wrong.” Lena’s voice breaks and she goes on through it. “And I think she loved him. And I don’t know what to do with both.”",
+    "Margot puts her glasses back on. “Welcome to my kitchen.”",
+    "She reaches past the candle for the pack on the cooler, shakes out one clove, and lights it off the flame in the jar, bending close, her hair falling forward. One per grief. It crackles, and the sweet smoke goes up straight in the cold and then leans off toward the Grove. Lena, who has never yet let a cigarette burn in her presence without confiscating it, watches it go up and lets it burn. Margot smokes it slowly, all the way down, and grinds it out on the gravel, and puts the filter in her own pocket.",
+    "Kevin doesn’t say anything else. His hand is flat on the gravel beside Margot’s hip, palm down, close and not touching her, the way you’d keep a hand near a glass on the edge of a table. Above them the stars go on doing what they do over the hills, and the candle burns down another quarter inch in the jar, and nobody on the roof is keeping score of anything."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "margot",
+     "title": "Margot Lindqvist",
+     "text": "Margot Lindqvist. Has a folder on me. Called Lena and me useful idiots for Christian nationalism in front of four hundred people. Made a point about the Euthyphro I still can’t answer. Her mother teaches Classics at Reed. Held a wake for a cigarette on the roof and buried it at sea, for the prose. Had a brother. Her mother was forty-one; the test came back; they’d already picked the name. Anders. March 15, 2000. She’s defended her mother in every room since, and she defended her on the roof. Lena said his name. Doesn’t sleep. My friend."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Thank you for telling us.”",
+     "tag": "Sincerity",
+     "set": {
+      "e7_anders": "thanks",
+      "rel.margot.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "When Margot told you about Anders, you thanked her for telling you.",
+     "response": [
+      "Margot looks at him. Her face is still wet, and she still doesn’t wipe it. Behind the black frames her eyes have gone red at the rims, which in August he wouldn’t have bet a dollar was possible.",
+      "“Don’t make it a thing, Costigan,” she says. It’s already a thing, and she lets it be one, and reaches for her cup, and drinks."
+     ],
+     "goto": "s06c"
+    },
+    {
+     "text": "Pray, silently, in the next room: *Anders. Margot. Her mother.*",
+     "tag": "Pray",
+     "set": {
+      "e7_anders": "pray",
+      "soul.grace": "+1"
+     },
+     "key": "On the roof you prayed for Anders, for Margot, and for her mother, and didn’t say so.",
+     "response": [
+      "He doesn’t close his eyes. He doesn’t move his hands. He talks to the next room the way he always does, like somebody just through the doorway with the radio on.",
+      "*Okay. Anders. He’s yours; I’m told I’m allowed to hope that, so I’m hoping it, hard. Margot, who’s been carrying the other end of this by herself since she was nine. Her mother. Her mother too. Her mother at the kitchen table. Lord, have mercy. Christ, have mercy.*",
+      "Across the candle, Kevin’s eyes are closed and his lips are moving. Jack watches them a while and can’t make out the language. Neither of them says so."
+     ],
+     "goto": "s06c"
+    },
+    {
+     "text": "Give Margot your flannel. Say nothing.",
+     "tag": "Control",
+     "set": {
+      "e7_anders": "flannel",
+      "rel.margot.warmth": "+1",
+      "trait.control": "+1"
+     },
+     "key": "You gave Margot your flannel and didn’t say anything.",
+     "response": [
+      "He shrugs out of the flannel — still warm, still smelling of the Hobart — and holds it out across the gravel in his T-shirt in the cold.",
+      "Margot takes it without looking at it. She puts it on over the black, both arms, rolls the cuffs back twice so her hands come out, and pulls it shut across her chest with one fist, and that’s the thank-you he gets."
+     ],
+     "goto": "s06c"
+    }
+   ]
+  },
+  "s06c": {
+   "slug": "WEDNESDAY · 3:51 AM · DELGADO HALL, THE ROOF",
+   "body": [
+    "At ten to four Kevin gets up off the gravel and collects his thermos from beside the HVAC box. “I’ll walk you down,” he says to Margot. Not a question.",
+    "Margot stands. She lifts the black peacoat off Laney’s empty lawn chair, shakes it out once, and drops it over Lena’s shoulders.",
+    {
+     "if": "e7_anders==\"flannel\"",
+     "text": "Lena reaches up to hand it back. “Keep it,” Margot says, buttoning one button of Jack’s flannel. “I’m wearing a Catholic.”",
+     "else": "Lena reaches up to hand it back. “Keep it,” Margot says. “I’m not cold. I’m Scandinavian.”"
+    },
+    "She steps over the shoebox and goes through the propped door, and Kevin goes after her, the thermos under his arm. Through the gap Jack can see the first landing under its caged bulb. On the landing Kevin puts his hand at the small of Margot’s back — just there, lightly, as if there were a crowd to get her through — and they go round the corner like that and drop out of sight, and their footsteps go down together, slow, and then he can’t hear them.",
+    "*Kevin and Margot,* Jack thinks. *Huh.*",
+    "The candle in the Mason jar is drowning in its own wax; it gutters, catches, gutters. Then it’s the two of them on the roof, and the roof is a different place."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "kevin",
+     "title": "Kevin Tran",
+     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning."
+    }
+   ],
+   "next": "s07"
+  }
+ }
+}

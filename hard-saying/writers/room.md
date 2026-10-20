@@ -127,6 +127,17 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    maître d'") count toward it.
 53. **"Plain / plainly" as a sincerity tag** (S1E06; 4–7 an episode): "He says it plainly," "plain as a handshake." Max two per
    episode; let the line itself be plain.
+54. **"Neither of them [verb]"** (S1E07; 10 in one draft, 11 in E01): the default button for shared restraint ("Neither of them
+   says so," "neither of them moves to end it"). Max two per episode; let the scene show it.
+55. **Glasses business as a beat marker** (S1E07; ~10 an episode since E01): Osei's reading glasses on/off the cord, Margot's
+   frames off / turned over / cleaned / back on, Hale's glasses up on his head, Evan rubbing the marks. One glasses gesture per
+   character per episode, and only where it earns it (E07: Margot's glasses off on the roof).
+56. **Inch-sized gestures** (S1E07): "raises his thermos an inch," "lifts his coffee an inch," "lowers the phone an inch," "chin
+   a quarter inch." Max two per episode. Dale's coffee-inch (E05–E07) is retired.
+57. **"Finds (that) he…" discovery tags** (S1E07): "he finds that he would like to," "finds that he means it," "Jack finds he
+   doesn't mind." Once per episode.
+58. **"Don't know what to do with"** (S1E07): once per season unless it is a deliberate callback (E07: Lena's "I don't know what
+   to do with both" on the roof).
 Small repeats to watch (S1E02): Laney's pageant wave is "wrist, wrist, elbow, elbow" (pilot order; spell it once per
 episode); "in installments"; "Of course"; "a real one" for laughs; the fixed-smile-as-mask (Laney's neon sign is hers,
 Kevin's tell is speed); hand-to-heart "as if shot"; "for no reason he could defend"; "no bit" as shorthand for sincerity;
@@ -146,6 +157,12 @@ short, one long," "steel on steel," "a share of the weight," "since he was six,"
 when it matters, "Youngstown" for flirting); a sensory anchor used as a beat marker (the tower shutter: establish it, use it
 once more); "the Williams" as the back-pocket inventory; "exactly"; "fireman" (two a scene) and "sugar" for Laney (give her
 fresh lines in her pageant-host register); weather similes (Danny's "like I'm the weather" owns the image in E06).
+Small repeats to watch (S1E07): Becca's "rosary wound twice around her wrist" and the braid description in every Becca
+scene (once each per episode; never "thick as a bell rope" again); Laney's "fireman"/"sugar" (one each per episode); "the
+same words in the same order" claims (quote the earlier episode exactly or don't claim it); "would give a good deal";
+"without any music in it" (the voice-stripped figure); the same exit gesture ("one hand on the doorframe/frame") across
+episodes; "a second longer"; "on top of the blanket in his clothes" as the sleep shot; stairwell footsteps fading as a scene
+ending; profession voices for Lena reading ("like a lector").
 Small repeats to watch (S1E04): Lena's thank-yous (spend "thank you" sparingly in her mouth; save the plain one); the
 voice-stripped-to-sincerity figure ("all the New Orleans goes out of her voice," "the Oxford worn off it," "the voice with
 nothing on it" — once per episode); Margot looking "over the black frames"; "goes still / not a flinch" for Lena; the
