@@ -252,3 +252,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **After S1E04 (player feedback).** "Little ache, lot of tenderness, more ache. The Lena-Jack extended two-person scene
   was fantastic." Standing rule: **an extended Jack/Lena two-hander roughly every other episode** (E06, E08, …; the
   room may shift by one when the story demands). For E05: tone and mix per the room's plan; no other notes.
+- **After S1E05 (player feedback).** "Great episode; Lena, Theo, and Laney were the standouts. Good stuff from Margot and
+  Hale as usual. Danny and Gina too." Keep investing in Danny and Gina (Jack's family is landing). E06 carries the
+  scheduled extended Jack/Lena two-hander.
