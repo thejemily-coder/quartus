@@ -351,3 +351,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   slept with anyone before the series. **No sexual assault or rape in either of their backgrounds** (or happening to
   them during the series). Other serious wounds are fine: family rupture, grief, violence, addiction in the family,
   crime, illness, emotional or other non-sexual harm from a past relationship, faith crises, and so on.
+- **After S1E06 (player feedback).** "Bittersweet that Becca pops in as Lena and Jack seem to be on the precipice of
+  realizing some things. Very good for the overall story." Lena again the standout; Theo and Laney good. The player
+  *assumes* Becca is the tryer and says she's "the exact blend we were looking for of sweet, faithful and without
+  fire." (Do not confirm or deny to the player; if she is, keep exactly that blend.)
