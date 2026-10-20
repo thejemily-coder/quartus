@@ -406,3 +406,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   other one *isn't* immediately breaking up with whoever they're with to chase after them. It escalates each time and
   pairs with the timing tragedy. The first instance is likely when Lena and Wes end while Jack is with someone. Pays
   off in the champagne at the alliance reveal.
+- **Later Jack/Lena conversation (while Jack is still with Becca; after E08).** Jack tells Lena that Becca asked him to
+  explain the first of Aquinas's Five Ways (the argument from motion) **during a football game**. "Aquinas and football,
+  that's the dream girl right there," Jack says, **not realizing until later he has just described Lena**. Lena
+  notices, **without comment** (Jack sees something cross her face, or realizes it himself hours later). Then he says it
+  was just empty: Becca was relentlessly happy he'd told her, with no engagement with it at all. This is the stage
+  where **Jack knows he shouldn't be with Becca** (the progression: E08 "she's so nice and sweet" → this → the end).
+  Fit to their voices, not verbatim.
