@@ -452,3 +452,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     - **Becca either doesn't notice or trusts Jack wholeheartedly, perhaps both** (the guilt knife).
     - Hard rules apply (nobody sleeps with anyone; the visit keeps Wes in a hotel, with a friend, or on someone's floor;
       room's call).
+- **Season 2 centerpiece: the NOLA road trip (player's choice).** The ensemble goes to New Orleans for **Super Bowl
+  XLIV (Sun Feb 7, 2010; the Saints beat the Colts 31–17 in Miami, and New Orleans erupts)**, staying through
+  **Mardi Gras (Tue Feb 16, 2010)** and Ash Wednesday (Feb 17). It includes the Broussards at home, the watch party,
+  the streets after the win, a second line, parades, and Ash Wednesday Mass with a hangover. It's a multi-episode
+  set piece. (The game was in Miami; they watch it in New Orleans.) It must fit the availability-windows rule and the
+  hard rules; Lena's family and home finally on screen. Verify all dates and scores with the Period Researcher.
+- **Christmas (winter break).** **Default:** Lena is in New Orleans. Long calls, a mailed gift, a Facebook message at
+  midnight Mass. **A visit** (her to Youngstown, or him to New Orleans) is possible only if she didn't come for
+  Thanksgiving *and* Lena and Wes have broken up by then. The Columbus Day weekend with Wes makes a Thanksgiving visit
+  unlikely unless they've broken up first. The room decides, consistent with the availability-windows rule (Jack is
+  still with Becca).
+- **Hale long-term:** room decides (he survives college).
