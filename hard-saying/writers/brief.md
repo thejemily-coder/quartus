@@ -329,3 +329,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
       Theo for planning, and they maneuver together.
     - **Margot** likes Julian and tells Jack he's the healthiest thing in Lena's life.
     - **Kevin** tries to get Theo and Laney to leave it alone; both refuse.
+- **The alliance reveal (reserved payoff).** In the **first ensemble set-piece episode after Jack and Lena finally get
+  together**, Theo and Laney openly reveal their secret alliance, toasting themselves with champagne for pulling it
+  off, and discover **everyone already knew**, Jack and Lena included. The beat (the player's lines; keep them):
+  "We know." / "Everyone knows." / "People outside of California know." / "It was obvious after five minutes."
+  Until then, the alliance's maneuvering should be visible to the player and to the ensemble but never acknowledged
+  aloud, so the reveal pays off years of comic evidence.
