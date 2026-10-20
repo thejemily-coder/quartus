@@ -309,3 +309,17 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     it; play it as a marriage-scale fight with shame underneath, not a cartoon.)
   - After 2016: both are politically homeless voters (third party, write-ins, abstention, local races only, etc.).
     Consistent with the politics map, their disgust with the system deepens over time.
+- **Lena's romantic interests (player directives).**
+  - **Julian's fatal gap: both.** He respects her faith without ever believing it (he stands lovingly outside the
+    church door; no sacramental marriage is possible), *and* he's too easy: gentle and deferential, he never fights her,
+    and she realizes she needs to be argued with. Perfect on paper and wrong in the bones; the ending is sad.
+  - **Lena's temptation: room builds him.** He mirrors Jack's magnetic girl: someone with real pull (charming,
+    dangerous or brilliant) whose flaws sit where Julian's strengths are, indifferent to her faith. Jack has to watch.
+  - **On screen through Jack's eyes:** couples at parties, hands held at Mass, a door closing. Jealousy as POV.
+  - **The friends: the secret alliance.** Theo and Laney form a secret pro-Jack-and-Lena alliance.
+    - **Laney** openly dislikes every one of Jack's girlfriends and dates. With the magnetic girl, that's open hostility
+      on principle masking a grudging liking; with the tryer, it's real dislike.
+    - **Theo** is openly, impeccably polite to Lena's boyfriends and dates while privately despising them; he's Team
+      Jack to the bone.
+    - **Margot** likes Julian and tells Jack he's the healthiest thing in Lena's life.
+    - **Kevin** tries to get Theo and Laney to leave it alone; both refuse.
