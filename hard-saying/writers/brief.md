@@ -413,3 +413,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   was just empty: Becca was relentlessly happy he'd told her, with no engagement with it at all. This is the stage
   where **Jack knows he shouldn't be with Becca** (the progression: E08 "she's so nice and sweet" → this → the end).
   Fit to their voices, not verbatim.
+- **Structural rule: availability windows.** Whenever Jack or Lena leaves a relationship while the other is free, they
+  would realistically just get together; neither could start something new with someone else while the other is
+  openly available. So **every breakup with a "nice" partner (Becca, Julian, Wes) must coincide with a real reason
+  Jack and Lena don't get together right then**: most often the other is now in a relationship (e.g., Jack ends things
+  with Becca just as Lena starts with Julian or someone new), or another concrete block (distance, summer, a fight).
+  **The magnetic periods are the exception:** with Jack's magnetic girl or Lena's magnetic guy, one can genuinely be
+  *angry* at the other for a while, and that anger (plus the proxy fights) can keep them apart even when both are
+  technically free. Plan every breakup's timing against this rule; it drives the timing tragedies and the alliance's
+  false dawns.
