@@ -2865,7 +2865,8 @@ women's bathrooms at each end of each floor). Home to 310 freshmen.
 - **Gloria's people-ratings, E07:** Margot, sight unseen, from Jack's description: "Rhubarb. Tart, and nobody can decide if
   it's a fruit." (It's a vegetable. That's the point.)
 - **The paperback, E08: Thérèse of Lisieux, *Story of a Soul*** (ICS Publications, John Clarke's translation — Researcher to confirm
-  the edition and page wording), $3 off the Driftwood cart Monday Sep 28, read Monday and Tuesday nights **in pencil** (his margins
+  the edition and page wording), $3 off the Driftwood cart **Tuesday Sep 29** — the afternoon he hears her tell Mrs. Fitch "She's my
+  middle name" — read Tuesday night after the Anchor and Wednesday morning **in pencil** (his margins
   are always pencil — the prison taught him erasable). Margins: *Easy for you.* beside the elevator ("too little to climb the rough
   stairway of perfection"); *NO.*; *She'd have hated Hale.*; *Okay, fine.* beside the trial of faith and the table of sinners; and,
   beside her two missionary "brothers," *Can a man and a woman be friends? Ask L.* He gives it to Lena at midnight on her feast;

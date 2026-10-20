@@ -758,3 +758,114 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - Gloria [s04] Margot exists (all black, Portland, whiteboard, "upholds the patriarchy"); "the other Catholic."
 - Ray [s04] La Flaca's light works.
 - Dale [s12a | sullys] Jack is from Ohio (Browns); still not Lordstown.
+
+### S1E08 — "The Little Way"
+> Written for the after-s1e07 save only (see continuity.md S1E08 for the save-locked flag list). Branch tags are
+> `[scene | condition]`.
+
+#### Jack
+- [s01] Lena's "Good afternoon, Jack" (Monday); the lying papers' titles; Becca's surprise guest post.
+- [s02] **Lena's middle name is Thérèse; Oct 1 is her feast** (overheard: Lena to Mrs. Fitch) (`knows_therese`). Mrs. Fitch's Peace
+  roses since 1979.
+- [s03] Danny's Michaelmas letter: Reggie; the C.O. and *Brideshead*; Gina told Danny "the veil girl has a boyfriend"; "Tell Lena
+  hey"; "That's an order." Nonna lit candles for him and Danny (Gina).
+- [s04] Yusuf's hadith. Hale's policemen line (heard; Jack sees Lena's hand go to the medal and Hale look at the window — no
+  interpretation on page).
+- [s05] Lena lit a candle for the tsunami dead. [s05b] **Grandmère's midnight Little Flower prayer; Lena's alarm; Tess is also
+  Thérèse.** [s05d | Press] Thérèse's "forgiven more than Mary Magdalene, in advance" (Lena). [s05f] the Act of Oblation.
+- [s06] Lupe calls Lena "Reina." [s06b] **Laney says there are Friday bonfires at Shipwreck Cove** (Lena, aloud). Lena's Mémère is
+  from Breaux Bridge; "Jolie Blonde."
+- [s06c] **Lena's relief at "nice… sweet"** — observed only (shoulders, sleeve, she sees that he saw); [named] she denies it.
+- [s06d] **Lena declined to walk toward the far rocks / the Point; gave no reason** (Jack's guess at the view, not knowledge).
+- [s07] **Laney (sms 4:41): Lena knelt by her bed 40 minutes at 4 a.m.**
+- [s08b] **Lena's care package to Wes (jar of the Pacific, See's, sweatshirt) and Wes's street address (Zimple St.)** — seen over
+  two shoulders; Lena did not see Jack.
+- [s09] Lena on the phone with someone (Luc's name; "I called *you*"); Evan cancelled Thursday section.
+- [s11a | sauce] Becca keeps meatless Friday all year. [s11b | seals] Becca's elephant-seal knowledge. [s11c | horses] Becca rides.
+- [s11d] [twoam] Becca has prayed "for two in the morning" every night since the bleachers.
+- [s12] Margot's trial faith column; **Hale told PHIL 1 he'd bring his dog (Margot told Jack; Jack slept through it).** Margot
+  shuts down the Kevin joke and explains nothing; Jack sees Kevin's smile arrive early (observation only).
+- [s12b] **Hale's dog Bishop Berkeley; Hale and Osei meet.** Hale mouths "And with thy spirit" (Jack notices only that the words are
+  old and wrong). Theo shuts his eyes under the aspergillum (observed).
+- [s12c] **Wes got the box; Luc was there; "Wes says it smells like me"** (Lena).
+- [s13] **Frank on a recall list (the Cruze, Lordstown, "next year, maybe"); 9.8% unemployment**; Nonna's "E l'altra?"; [sauce]
+  Nonna repeats herself (Thursday and Saturday). Maria asks if Idaho goes home for Thanksgiving.
+- [s13b | conf] Sees Lena leaving St. Brendan's courtyard at ~3:30 Saturday (does not know why; the page doesn't say). Osei's
+  counsel and penance.
+- [s15a | sullys] **Wes calls him "the Ohio guy"** (Wes's text, shown by Lena). [s15b | becca] the game by Lena's texts.
+- [s16] Lena's "Five days" on the phone to New Orleans (overheard).
+
+#### Lena
+- [s02] It's Jack's saint's day (the medal outside his shirt). [feast] Jack overheard her middle name.
+- [s04] [midwives] Jack's Shiphrah argument. [agree] Jack conceded the midwives.
+- [s05] **Hale gave Jack a Housman for Danny ("Hale did")** — so Lena now knows **Hale knows Danny is in prison**. (All paths.
+  Watch this in seminar and in any Hale/Lena scene.) **The Hopkins ships Thursday through Driftwood.** She erased *Show Lena* herself.
+  The index card (Nonna's laundry rules).
+- [s05b–s06] **Jack's margins in *Story of a Soul*** (Easy for you / NO / She'd have hated Hale / Okay, fine / Ask L.). Per `e8_gift`;
+  [magdalena] Jack used both her names. [personal] Jack's "a saint who never had to lie"; [apology] he apologized.
+- [s06] [askl] what "Ask L." meant (counts / written / forget).
+- [s06b] [waltz] he bounces; [cig] No. 5. Jack had never been to the cove (implied by his not knowing the stairs; not stated to her).
+- [s06c] **Jack doesn't know what he's doing with Becca; he called Becca "nice… sweet."** [named] He said she looked relieved.
+  [answer] He asked for the right answer ("Ask me in daylight").
+- [s06d] Jack's guess about the light from the far rocks (she said no). [metoo] Jack said "me too" to "terrible thing to be glad
+  about."
+- [s12] Becca's crab Thomas. **Lena does not know the details of Friday's date** (nobody tells her on page). Jack's Kevin joke
+  happens in Margot's patch of shade — treat as not heard by Lena.
+- [s12c] [seals && told] Becca learned "who dat" from Jack (Becca says it at once); else Jack teaches Becca in front of her.
+- [s15a | sullys] Jack said "who dat" to Wes. [s15b | becca] [kept] Jack's donut-table texts (Becca yelled who dat; Mrs. Fitch;
+  Tyler and the toddler).
+- **Does NOT know:** that Jack stood behind her at the UCen post office (s08b); what Jack wrote Danny (`e8_danny`), including the
+  "hey back" lie; that Jack saw her leave the courtyard Saturday (s13b); Laney's 4:41 text to Jack; Jack's confession; Becca's 2 a.m.
+  prayer; the Saturday call home ("E l'altra?").
+
+#### Becca
+- [s09] Jack asked her out for Friday, asked and paid ("Nobody's ever planned a thing for me").
+- [s11a | sauce] [told] Nonna remembered Friday ("Tell her a girl in California loves her"); **[lie] believes Jack remembered Friday
+  abstinence for her.**
+- [s11b | seals] [told] the 3–0 is Lena's Saints record; "who dat." **[lie] believes 3–0 is "a Kevin thing"** (then hears "who dat" at
+  s12c from Jack; never told the glass is Lena's).
+- [s11c | horses] [told] his first time near a horse; **[lie] "second" (Biscuit disagrees).**
+- [s11d] Jack's answer per `e8_becca_end` (kiss / "do this right" / forehead). Jack had no answer to "Is it working?"
+- [s12] Lena and Laney by name; Theo, Margot (*Tide*), Hale's dog. [s12b] the Knox limerick (Jack explained); Osei's laugh.
+- [s14/s15] [sullys] Jack at Sully's "w kevin n lena for the saints"; [becca] Jack texting Lena during Coffee & Donuts (she asks if it's
+  the Saints). [s16] Jack's reply per `e8_reply` ([true] "thank u for praying for me. i needed it").
+
+#### Danny
+- [s08] Jack's letter: the Hopkins (start with "Felix Randal"), the Housman "from a man who doesn't sleep," LIV, "Order received."
+  [told] Jack hasn't told Lena his "hey" yet. **[lie] Danny now believes Lena said "hey back." LIVE FALSE BELIEF: no later scene may
+  have Danny and Lena talk (phone, letter, visit) about "hey" without paying this off or catching it.** [out] California fish.
+
+#### Hale
+- [s04] Jack and Lena agreeing; [midwives/lent/agree/quiet] per path. [s12b] **Met Osei; Osei blessed his deaf dog; the limerick.**
+  Jack told him the Housman shipped Thursday.
+
+#### Osei
+- [s12b] **Met Hale** (has read *Consolations* twice). Becca's crab question. [s13b | conf] **Jack's confession (sealed):** the beach
+  night, Becca's prayers, [lie] the letter. Osei never speaks of it; his counsel derives only from it. He does not connect it to
+  Lena's (off-page) confession.
+
+#### Margot / Kevin
+- Margot [s12] Hale's dog announcement (heard in PHIL 1); the Blessing for the column; [angle] Jack's side-by-side idea; quotes from
+  both men. Hears the Kevin joke for the second time (first was the *Tide* office).
+- Kevin [s12] **hears the Kevin/Margot joke for the first time**; [retire] Jack retired it for good; [sorry] Jack apologized.
+
+#### Theo / Laney
+- Theo [s01] Becca's post; [s07] Jack came in at 4 with sand; "Did it come clean?"; [s11a/b/c] Friday's plan (receipt / van / horses).
+  Texts someone each time (the alliance; never named on page).
+- Laney [s05] (via Lena) her whites were washed; [s07] **Lena knelt 40 minutes at 4 a.m. (her own observation)**; [laney] Jack's
+  "laundry." [s12] Becca's crab.
+
+#### Wes
+- [s12c] Got the box (jar, See's, sweatshirt); Luc saw it. [s15a] **Knows of Jack as "the Ohio guy" who watches the Saints with Lena**
+  (from Lena, off-page; his text shows it). Knows nothing else about Jack.
+
+#### Others
+- Gloria [s13c] Friday per `e8_date`; Becca's calf, the crab, "Idaho"; rates Becca apple sight unseen; per `e8_pecan` Jack's answer
+  about the pecan ([boyfriend] Lena has a boyfriend).
+- Maria / Nonna / Frank [s11a | sauce] Jack cooked for "Idaho" on a Friday; [s13] Becca's date; Nonna asks about "l'altra"; Maria
+  "Is Idaho going home for Thanksgiving?" Nonna and Maria know only that the veil girl has a *fidanzato* — not Wes's name.
+- Gina [s03] Becca drove Jack Friday ([wit/candor] football; [candor] "she explained it").
+- Rosie [s08] a crab drawing is coming (Maria tells her, s13).
+- Mrs. Fitch [s02] Lena's middle name; [s11a] chaperoned the sauce date; "You two" (s12b; s15b).
+- Lupe [s06] Jack and Lena say they're friends.
+- Dale [s15a] Jack is from Ohio (Browns); still not Lordstown.

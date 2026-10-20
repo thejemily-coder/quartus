@@ -138,6 +138,23 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    doesn't mind." Once per episode.
 58. **"Don't know what to do with"** (S1E07): once per season unless it is a deliberate callback (E07: Lena's "I don't know what
    to do with both" on the roof).
+59. **Theo's thumbs on the iPhone as a scene button** (S1E08; five in one draft): the alliance tell. Max two per episode; show the
+   alliance other ways (he photographs a receipt, asks a time too casually, a phone lit face-up with a text Jack can't read).
+60. **"As if / as though" clauses** (S1E08; 32 in one draft, 31 in E04): max twelve per episode, never two in one paragraph.
+61. **Time-fillers "(after) a while" and "all the way"** (S1E08; 12 and 13 in one draft): max three each per episode.
+62. **"She looks at X. She looks at him."** (S1E08): the look-then-look double beat. Once per episode (Osei's crab double take was
+   E08's). "Considers" counts toward it when stacked on the same character in one scene.
+63. **"…the trouble" closers** (S1E08; three in one draft): count under #12 summing-up closers. E08 keeps Lena's "It's been a very
+   good one. That's the trouble."
+64. **One character's figure given to another** (S1E08): Lena's E04 "the way she does everything, all the way" handed to Becca twice.
+   Character-defining figures stay with their owner; Becca and Lena never share a simile (the brief depends on the difference).
+Small repeats to watch (S1E08): the landing window "opens its six inches" (spend once an episode); the RAZR "buzzes itself toward
+the edge"; "the one angle where the screen lights" (E01's phrase; once an episode); Lena's laugh "coming up the concrete" (E07 owns
+it); stairwell door bangs as a scene ending (retired with the footsteps); the Driftwood cats (once an episode, give them a new
+action); a stranger's highlighter (one joke); "pink to the hairline" (E03 Laney, E06, E08 — retire); Gloria's role-naming glosses
+("the one you bring home to your mother" is the brief's own tag — never in a character's mouth); ranch-comedy similes at Becca's
+devotion ("as if a cow had been sold at a fair price") — her goodness is the knife, never the joke; Lupe's gold tooth (once); Becca's
+"Okay! Yes! *Okay.*" (once per scene); "Jack knows where the margin is" (spend the suspense once); "exactly" (max five).
 Small repeats to watch (S1E02): Laney's pageant wave is "wrist, wrist, elbow, elbow" (pilot order; spell it once per
 episode); "in installments"; "Of course"; "a real one" for laughs; the fixed-smile-as-mask (Laney's neon sign is hers,
 Kevin's tell is speed); hand-to-heart "as if shot"; "for no reason he could defend"; "no bit" as shorthand for sincerity;

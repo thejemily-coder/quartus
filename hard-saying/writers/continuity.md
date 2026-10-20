@@ -1522,3 +1522,217 @@ Payoffs owed: `e7_sentence` (E08+ Lena), `e7_doubt` (Becca), `e7_cheek`, `wes_vi
 - Rosie's mailed crab drawing is on Jack's wall in 412, not the Glenwood refrigerator.
 - Margot's Anders date is the day of the procedure: **March 15, 2000** (16-week amnio, early winter 2000).
 - Becca's dorm: Portolá Hall (first on page s10c).
+
+### S1E08 — "The Little Way" (Tue Sep 29 – Sun Oct 4, 2009; tag Sun 10:55 p.m.)
+34 scenes. Forks: s09 → s11a sauce / s11b seals / s11c horses → s11d · s13 → s13b confession / s13c (sleep) · s14 → s15a sullys /
+s15b becca → s16 → **s16b (end; new node added in revision)**. Duel **little** ("On the Little Way," s05d–s05v; Lena's feast,
+unofficial). Per path ≈12.7k–14.1k words (validator total ~19.3k counts every branch); 24–25 choices per path; keys 6–12;
+Lena whispers ≤2 per path (twin choice at s06c); 8 whispers placed. Jack's resolve enters 9, ends **7–10** (engine clamps at 10).
+Lena's resolve ends **6**. No dangerous window.
+**Save-locked:** written for `saves/after-s1e07.json` only. Ungated lines that assume this save: `e6_hale_danny` (s05 "Hale gave
+me that one. For Danny"; s08 the Housman ships; s12b "Has it gone?"), `e7_housman=="sleep"` (s08 letter "a man who doesn't
+sleep"), `e7_stairs=="stairs"` (s09 "Last Friday he took those stairs up past her"), `e7_veil=="boyfriend"` (s13 Maria
+"She has a *fidanzato*"), `e7_thu=="margot"` (s12 "since the *Tide* office last week"), `e4/e6_goodnight=="magdalena"` (s05b C2
+"He has said *Magdalena* to her twice before"), `wes_visit_known` (s02 countdown "Ten days", s05 "Nine days", s15a "5 DAYS"),
+`e7_sun=="sullys"` (s14 "Since last Sunday he also owns… gold Mardi Gras beads"), `reliquary==4` (s06b C2 is No. 5),
+`e7_doubt=="twoam"` is gated where it appears in prose but **ungated in the s12c Becca journal card** ("She's been praying for
+two in the morning"), trait gates (sincerity 50, candor 25, reckless 10, wit 18 — all open on this save). Gate before any other
+save reaches E08.
+
+**On-page canon (all paths unless marked)**
+- s01 (Tue 7:38, 412): one marine-layer morning (the only fog of the week). Monday's seminar (off-page, recalled): Lena's
+  **"Good afternoon, Jack"** — first time she has called him Jack across Hale's table; the week is **lying** (Augustine *De
+  mendacio*; Kant's murderer at the door; ST II-II q.110). **Papers: Jack "That a Lie Can Be a Kindness"; Lena "That Every Lie Is
+  a Sin."** Michaelmas: **Nonna's rule — on your saint's day the St. Michael medal goes outside the shirt, *così vede*.** Theo:
+  "Does he catch anybody? Or just throw?" (🔒 seed). **Becca FB wall post Tue 6:52 a.m.: "Blessing of the Animals SATURDAY 10am!!
+  Bringing a surprise guest. DO NOT ASK :)"**; four comments, one Joey Abruzzo guessing horse. [e8_cold] wit / pray (the Leonine
+  prayer) / ask.
+- s02 (Tue 12:10): Michaelmas Mass (Rev 12; John 1:47–51, "no duplicity"/"guile"); St. Michael prayer after the dismissal. **Lena
+  sits with Mrs. Fitch (pew by the shrine).** Mrs. Fitch: Peace roses for the Little Flower every year since 1979; **Lena: "She's my
+  middle name"** (`knows_therese`). Lena: "Happy feast day, Jack." "Ten days till Columbus Day weekend." Becca: "Don't ask!
+  Saturday." Becca is a 12:10 regular between labs. [e8_mass] okay ("We're fine, Jack.") / feast / guile / quiet.
+- s03 (Tue 5:10, east stairwell 4th-floor landing): **Driftwood at two: *Story of a Soul*, ICS ed., John Clarke tr., $3 in pencil;
+  a stranger's yellow highlighter to about p. 60.** Ray's light still on La Flaca. **Danny's Michaelmas letter (doc): "Happy St.
+  Mike's, Professor"; Reggie decided the Pacific smells like money and fish; *Brideshead* still with the C.O. ("that's what a house
+  is"); "Gina says on the phone the veil girl has a boyfriend… Tell Lena hey anyway. Lena. I like knowing it."; "Is the poems book
+  coming or what"; "You sound happy out there. Don't feel bad about it… That's an order."** Gina sms 5:14–5:16 (Nonna lit candles
+  for Jack and Danny for St. Michael; Becca's surprise guest; "where did idaho drive u friday"). [e8_gina] wit / candor ("she
+  EXPLAINED it?? ur in college") / control. Anchor Tue 7–1.
+- s04 (Wed 1:00, Hollis 302): Hale seated before 1:00 for the first time. St. Jerome and Paula. Papers exchanged. Thomas on the
+  Hebrew midwives (Exodus 1). **Hale: "Somebody fetch a priest. The Catholics are agreeing."** Lena: "I forgive you, by the way.
+  For last week." **Yusuf's hadith (Umm Kulthum, Sahih Muslim: war, peacemaking, spouses); Caleb "Marriage is a war"; Yusuf "Then
+  you're covered twice."** **Hale (VERBATIM): "The commonest lie in the world is not told to murderers at doors. It's told to
+  policemen, about the dead, by people who loved them."** Lena's hand to the medal; Hale looks at the window (🔒 seed; medal touch
+  1 of 3). "Monday, the next one. Lie to me convincingly." [e8_seminar] midwives (Shiphrah; Lena "That's fair") / lent ("Lent is a
+  lie told to the stomach") / agree / quiet.
+- s05 (Wed 10:14 p.m.–11:59, **the Delgado laundry room**, basement): 8 washers, 6 dryers (they buzz), upright piano with a dead F;
+  P. Raman's sign (hours 7 a.m.–11 p.m.). Laney's pledge whites (Pi Lam wants white Friday; white dress, shoes, can opener).
+  **Nonna's laundry card: *Whites in HOT. Darks in COLD. MEDALS OFF.*** Lena's SACRED HEART DEBATE shirt. Samoa (Tue) and Padang
+  (Wed) earthquakes; **Lena lit a candle "for the water ones."** "How's Becca?" "Great. How's Wes?" "Great." "Nine days." **Lena
+  helps erase the Hopkins for Danny ("Friends help") and erases *Show Lena* herself** ("There. He can have it."). Jack copies his
+  margins onto a sheet headed DANNY before erasing. **Jack tells Lena Hale gave him the Housman for Danny** ("Hale did"). Danny's
+  previous letter moves from the Hopkins into Hale's Williams. [e8_laundry] thanks / didnt / wit / quiet.
+- s05b (Thu 12:00 a.m.): **Lena's midnight alarm for her feast — Grandmère said the Little Flower's prayer at midnight on Oct 1
+  every year at the kitchen counter, radio off.** Thérèse died Sept 30, 1897, ~7 p.m. **Tess (her sister) is also Thérèse; "Tess got
+  it first. I got it second."** Jack gives her the book. [e8_gift] feast / used / magdalena [sincerity≥50] (first time both names) /
+  slide.
+- s05c–s05f (12:02–12:44, duel **little**): Lena won't let him erase his margins ("Magdalena Thérèse is going to read every last one
+  of these out loud"). **Jack's margins in *Story of a Soul*: *Easy for you.* (the elevator, Ms C, "too small to climb the rough
+  stairway"); *NO.* (Léonie's basket, "I choose all!"); *She'd have hated Hale.*; *Okay, fine.* (the table of sinners); *Can a man and
+  a woman be friends? Ask L.* (the two missionary brothers).** Lena: "She prayed a murderer onto a crucifix at fourteen" (Pranzini).
+  s05d Lena's thesis: the elevator is for those who can't climb, "the only door in the building low enough for you." [Press] **Fr.
+  Pichon's "never a mortal sin" vs. Augustine; Lena: Thérèse says He forgave her more than Mary Magdalene, in advance — the father
+  who moves the stone.** [Riposte, wit≥18] Leo XIII, carried out by guards. Chesterton (Reframe). s05e the trial of faith ("bread of
+  sorrow"); [Personal] "You picked a saint who never had to lie to anybody" → "Mr. Costigan," medal (touch 2), `e8_little_personal`.
+  s05f **the Act of Oblation ("empty hands"; "All our justice is stained"); "You keep trying to show up with a receipt, Costigan."**
+  [Apologize] on personal path only. **Verdicts (s05v, score-only; revised thresholds):** personal+apology → "You still forfeit" /
+  personal → "You forfeit," cold / heart≥2 → Lena's ("On my feast? Obviously.") and **she writes *Empty hands. —L.* under *Easy for
+  you.* in his pencil** / **rigor≥2** → Jack's ("I'm appealing to a higher court") / wit≥2 → no decision / else → "Thérèse, on
+  points." They fold; **both baskets left on the dryers** (still there at 4 a.m.).
+- s06 (1:02, **Lupe's truck**, Las Olas end of Seacliff; chile lights; dash radio): Lupe (gold tooth) calls Lena "Reina"; a third
+  horchata "Para los novios"; **"We're friends," both at once** (#19 spent here). Carnitas; they pay separately. "Volver, Volver."
+  [e8_askl] counts (Thérèse met one brother once, through a grille) / written ("Every day. With citations.") / forget.
+- s06b (1:34, **Shipwreck Cove**, foot of Del Playa; switchback wooden stairs; dead Christmas lights; fire ring): **first time either
+  has been down; Jack walked Laney home the other way on the pilot night. Laney (per Lena) says there are bonfires every Friday.** The
+  schooner's ribs; moon three nights short of full. Lena reads Ms B ("MY VOCATION IS LOVE!"; *ma vocation, c'est l'Amour*); looks
+  at his scar, doesn't ask. **Harry Choates, "Jolie Blonde" (1946), from her LG; Mémère is from Breaux Bridge.** [e8_dance] waltz
+  ("Long, short, short. Cajuns don't bounce."; "Sweet suffering Saint Sebastian"; the one what-it-costs sentence, the hand at her
+  back) / watched / cig [reckless≥10] (**Reliquary No. 5: "No. 5 · 10/1/09 · Shipwreck Cove · on my feast day, Costigan,
+  really."** strip of Lupe's paper boat; the tin from the top of her left boot).
+- s06c (2:04, waterline): "The Gulf is a bath. This is a threat." Lake Erie: "a puddle with a Coast Guard"; "Lazarus Erie."
+  **"Do you know what you're doing yet?" "No. I don't know, Lena." "She's so nice. She's — sweet." Lena's laugh; "Come up with a
+  better answer before somebody else asks you, Youngstown. That is the worst thing you can say about a person in this
+  situation."** Jack sees her shoulders come down, her hand on his sleeve; she sees that he saw. [twoam] 2:04 on her LG — Becca's
+  promised prayer. [e8_relief] named [candor≥25; twin] ("I'm not relieved," medal touch 3) / answer ("Ask me in daylight") / let /
+  workshop ("Bring it back to me with footnotes… Do *not* workshop it with Theo").
+- s06d (3:58, lobby): on the ribs till after three. **Jack guesses you could see the old light on the Point from around the far
+  rocks; Lena says no, doesn't say why** (🔒 seed). Marcus asleep on orgo. **Lena (VERBATIM, endCard tag): "That was a terrible
+  thing to be glad about."** [e8_glad] metoo ("Don't agree with me at four in the morning.") / feast ("It's been a very good one.
+  That's the trouble.") / stairs [reckless≥10] ("Go to bed, Jack." at the 2nd-floor door) / elevator.
+- s07 (4:02, 412): Theo awake with the wake footage (Margot's candle). Jack carries his sneakers; sand. "Did it come clean?" Theo
+  texts (alliance). **Laney sms 4:41: Lena came in at 4 and went straight to her knees by the bed, 40 minutes, "not asking.
+  (asking)."** [e8_dawn] pray (for Becca by name; resolve +1) / laney ("laundry" / "LIAR. xo") / quiet.
+- s08 (Thu 12:20, Driftwood): Jack slept through PHIL 1 (Thu). The pencil dent under *Thou art indeed just*. **Hopkins + Housman
+  wrapped and shipped by the owner as seller, media mail $2.77.** Rosie's birthday card (a whale; Jack's crab drawing, "THIS IS A
+  CRAB"); **Rosie turns eight Wed Oct 7.** **Jack's letter to Danny (doc): start with "Felix Randal"; Housman "from a man who doesn't
+  sleep"; LIV; "Order received. I ate. Tell Ma."** Margin notes on a separate sheet. [e8_danny] told ("I haven't told her yet. I
+  will.") / **lie ("Lena says hey back."; resolve −1)** / out (a paragraph of California fish).
+- s08b (1:05, the UCen post office): **Lena, three ahead in line, unaware of Jack: Mrs. Fitch's Peace rose in a cup; black mantilla
+  (her feast-day 12:10); a Mason jar of seawater, sand and kelp, taped in black electrical tape, lid "THE PACIFIC. (A PREVIEW.)" in
+  RELIQUARY capitals; a 1-lb box of See's; a gray MARISOL sweatshirt; Anacapa napkins. Label: WESLEY ARCENEAUX / Zimple St. / New
+  Orleans, LA (Wes's address — Uptown, near Tulane; on page only the street). She recites USPS Publication 52; Priority, 2–3
+  days.** The clerk: heavy, USPS sweater vest, push-broom mustache. Jack leaves without being seen; mails Danny and Rosie at the
+  blue box by the bike racks.
+- s09 (2:15, landing): **Lena on the phone two floors or so below, mid-afternoon (4:15 CT): "I called *you*… Tell Luc I called
+  first."** **Evan cancelled Thursday section (conference).** Jack calls Becca at the Marine Lab: **"I'm asking. And I'm paying."**
+  Becca: "Nobody's ever planned a thing for me. I'm the one who plans the thing." [e8_date] sauce / seals / horses [reckless≥10].
+- s11a [sauce] (Fri; slug ST. BRENDAN'S, THE PARISH KITCHEN — the Newman kitchen): Theo, "Wear the blue. Not for her. For me." (Jack's
+  Goodwill blue oxford); receipt $34 (anchovies, capers, San Marzanos, spaghetti, lemon, oil); Theo photographs it. **Nonna's
+  Friday sauce by phone Thu 5:40 (EWTN behind): garlic *mai marrone*, anchovies *finché spariscono*, capers, tomatoes *con le mani,
+  Giacomino*, pasta water, no cheese, *la mollica* (toasted breadcrumbs). Nonna asked who it was for twice, two minutes apart; Maria
+  on the kitchen extension: "Idaho?"** Osei's key ring; Mrs. Fitch chaperones (crossword; YOUR MOTHER DOES NOT WORK HERE. PLEASE
+  DRY.). **Becca keeps meatless Friday all year, "because my family does."** [e8_date_truth] told ("Then I love your nonna") / lie
+  (resolve −1).
+- s11b [seals]: Kevin lends the Odyssey ("Sixty-five. Not sixty-six."; Bellarmine lanyard); Hwy 1 via Morro Bay and Cambria; 3–0
+  on the back glass read in the mirror. **Piedras Blancas juveniles (Becca: 400–500 lb, bulls in December, two tons); sunset 6:45.**
+  Cambria fish place; Becca orders halibut (Friday) without comment; ~$60, Jack pays. [told] Becca learns "who dat" / [lie] "a Kevin
+  thing" (resolve −1).
+- s11c [horses]: Theo wants to film ("the last ten minutes of a Western"); the Ranger; a stable in the dunes south of town, $45 a
+  horse; **Biscuit (sorrel), Becca on a gray mare; she whistles Biscuit back; "You picked my thing."** Jack fills her tank; ~$100
+  total. [told] / [lie] "Second." (resolve −1).
+- s11d (Fri 10:05, **Portolá front steps**; pizza box in the door; Dave Matthews): [twoam] **Becca: "I've been praying for two in the
+  morning. Every night. Since the bleachers. Is it working?"** Jack has nothing ready. "You're always somewhere else a little…
+  My dad's like that in calving season." [e8_becca_end] kiss (first real kiss; "like she says grace") / right ("I want to do this
+  right") / forehead.
+- s12 (Sat 9:56, **Blessing of the Animals**, St. Brendan's courtyard): Osei in a white stole and rubber boots; the sprinkler by the
+  hedge still broken (a lake under the olive tree). The organist (big gray man, foghorn voice) on a borrowed keyboard. Tortoise the
+  size of a hubcap; Mrs. Fitch's dust-colored old cat; Tyler minding a parish kid's hamster ("Brother"). **Joey Abruzzo's goldfish
+  Pius (the Twelfth) in a Mason jar.** **Becca's surprise guest: Thomas, a hermit crab in a borrowed whelk shell, signed out of the
+  Marine Lab touch tank, due back by noon; named for the First Way.** Lena (yellow sundress, Justins, cardigan at the waist) with
+  Laney (sunglasses, hungover from Pi Lam's white night): **"Good morning, Jack."**; "Hello, Thomas." Laney: "Who brings a *crab*."
+  Theo shoots Thomas ("option him… Back end"). **Margot's *Tide* faith column, trial basis (red Dymo TIDE badge); Kevin with Osei's
+  clipboard. Hale announced in PHIL 1 Thursday he'd bring his dog "to annoy the Ghanaian" (Margot tells Jack).** Jack's Kevin/Margot
+  joke, second telling (first in Kevin's hearing): **"Costigan. Retire it."** Kevin's smile arrives early. [e8_joke] retire (Kevin's
+  spare pen) / again ("that's a mortgage") / sorry / angle (Margot: "That is not boring").
+- s12b (10:01): **Hale and Osei meet for the first time on page.** Hale's greyhound **Bishop Berkeley** (old, gray-muzzled, deaf;
+  the leash from his office-door hook). Osei read *Consolations* "twice; the second time for the footnotes"; Hale: homilies
+  "secondhand, from students. Which is how the Gospels arrived." **Hale's lips: "And with thy spirit"** (🔒 seed). **"He's deaf,
+  Father. You'll have to bless him louder." / "Then I will bless him where he can hear it"** (palm on the ribs). *Esse est
+  percipi*; Knox's limerick (Hale) and the reply (Osei); **Jack and Lena both mouth "Yours faithfully, God," catch each other, and lose
+  it — the freeze ends (~5 min after "Good morning, Jack").** Becca laughs along; Jack explains the limerick ("So God's the one
+  looking at the tree"). Lena's asides: tortoise "Bless his heart. He's going to outlive the sprinkler."; Pius "Lord have mercy on
+  that child. He will be *beaten*." Aspergillum; **Theo lets the water hit him and shuts his eyes** (🔒 seed). Becca: "whose blessing
+  is it — mine, or the state of California's?" — Osei laughs a full minute. Mrs. Fitch: "You two." **Hale to Jack: "Has it gone?"
+  "Thursday."** [e8_bless] lena ("That dog is in a state of grace"; Laney "Sugar. I am *fragile*") / becca ("*Specimen returned in
+  a state of grace*") / watch.
+- s12c (11:40): **Wes got the box Saturday morning, first delivery; Luc was over ("Luc is always over"); "Luc says it smells like
+  bait. Wes says it smells like me."** Becca invites Lena to Coffee & Donuts; "Saints." Becca: "Who dat!"; **Lena says "Who dat" back
+  to her** (the week's one generous gesture). Laney: brunch. **Lena's resolve set to 7 (her Sat 3:30 confession, off-page).**
+- s13 (Sat 12:52, landing; 3:52 ET): **Frank is on a recall list from the union hall (Tuesday) — "the small car for Lordstown, the
+  Cruze. Next year, maybe."; Ohio unemployment 9.8% ("Highest since 1983").** Frank: "Indiana tonight." Rosie wants a live crab;
+  one's "in the mail" (the drawing). **Nonna: "E la ragazza?" / Maria: "She has a *fidanzato*." / "Peccato." / "E l'altra?"** [sauce]
+  "Ha mangiato? Le è piaciuto?" repeated five minutes later, new. Maria: "Is Idaho going home for Thanksgiving?" [e8_sat] conf /
+  sleep (resolve +1).
+- s13b [conf] (3:31, the coat-closet confessional, KNOCK (gently)): **Lena seen leaving the courtyard toward Ocean Road, face
+  scrubbed (she does not see Jack).** Jack confesses the beach night, Becca's prayers, [lie] the letter. **Osei: "Be truthful with
+  the one you're with. Truthful is not the same as cruel… A good man can do a great deal of harm being careful." Penance: a decade
+  "and something small and true, for the one who is praying for you… Small is important."**
+- s13c (Sat 11:40 p.m., the Anchor): PIE OF THE DAY: CHERRY; Bobby Darin on the jukebox; Gloria: "a man with a secret and a
+  stomachache." **Gloria rates Becca sight unseen: "Apple. Honest crust. Nobody ever lost a night's sleep over an apple, hon."**
+  Rudy per date (anchovies / blanket / "It knew"). The Folgers can under the Hobart: $34 / ~$60 / ~$100 out; Saturday's split ~$26
+  back. **"What happened to the pecan?"** [e8_pecan] boyfriend / nothing ("That's what I was afraid of, hon.") / wit ("Pecan's
+  forever.") / pie.
+- s14 (Sun 9:12): Lena 9:12 "Sully's. Ten. Jets. Dale's saving the booth. Black and gold or don't come. —L."; Becca 9:14 (9:30 +
+  hospitality, maple bar). [e8_sun] sullys (Jack texts Becca first) / becca ("text me every play").
+- s15a [sullys]: Kevin drives (49ers cap). **Saints 24–10 over the Jets at the Dome (10:00 PT kickoff): Sharper's 99-yd pick-six
+  (first snap of Q2; Lena screams in Jack's right ear), Ayodele's end-zone fumble recovery, 17–3 at the half, Pierre Thomas 1-yd TD
+  with six left; 4–0 for the first time since 1993; Lena rings Sully's bell.** Lions lose 48–24 at Chicago (Dale: "I've seen a win").
+  **Browns lose 23–20 in OT to Cincinnati (0–4).** **Wes sms 1:12 (from the Dome): "WHO DAT 4-0!!! 5 DAYS. TELL THE OHIO GUY WHO
+  DAT."** — **Wes knows Jack as "the Ohio guy."** Odyssey glass → **4–0** (wiped with her WHO DAT sleeve). 9 p.m. Mass (Gen 2:18–24;
+  Mark 10:2–16): Osei "Alone." **Laney's third Mass**, in Lena's cardigan.
+- s15b [becca]: 9:30 with Becca; same readings and homily; Becca on hospitality; maple bar; Mrs. Fitch "You two"; Lena's play-by-play
+  texts 10:22–11:14; Becca shouts "WHO DAT!" at each score. [e8_texts] away / kept. Lena 1:12: "4–0. First time since 1993. I rang the
+  bell. —L."
+- s16 (Sun 10:52 p.m., landing): moon a night past full. **Lena on the phone below to New Orleans (12:52 a.m. CT): "Five days."**
+  Becca 10:51: "Goodnight Jack :) Friday was the best night." **[e8_reply] true ("goodnight becca. thank u for praying for me. i needed
+  it" — on `e8_conf` it is the penance) / smile / wait.** s16b: Jack writes his first margin beside Hale's *Bernard, really* in the
+  Williams.
+
+**Choice-dependent facts**
+- Lena knows Jack named her relief only on `e8_relief=="named"` (she denied it). Becca hears "who dat" from Jack on Friday only on
+  `e8_date=="seals" && e8_date_truth=="told"`; otherwise at s12c.
+- Becca's beliefs on `e8_date_truth=="lie"`: [sauce] Jack remembered Friday abstinence himself; [seals] 3–0 is "a Kevin thing" (she
+  then hears "who dat" at s12c from Jack); [horses] it was his second time on a horse.
+- **Danny on `e8_danny=="lie"` believes Lena said hey back (a live false belief — see knowledge.md).**
+- Reliquary No. 5 and Jack's 7th on-page cigarette only on `e8_dance=="cig"`.
+- First real kiss with Becca only on `e8_becca_end=="kiss"` (Becca heat +1).
+
+**Flags introduced**
+`e8_cold` (wit/pray/ask) · `knows_therese` · `e8_mass` (okay/feast/guile/quiet) · `e8_gina` (wit/candor/control) · `e8_seminar`
+(midwives/lent/agree/quiet) · `e8_laundry` (thanks/didnt/wit/quiet) · `e8_gift` (feast/used/magdalena/slide) · `e8_little_personal` ·
+`e8_little_apology` · `e8_askl` (counts/written/forget) · `e8_dance` (waltz/watched/cig) · `e8_relief` (named/answer/let/workshop) ·
+`e8_glad` (metoo/feast/stairs/elevator) · `e8_dawn` (pray/laney/quiet) · `e8_danny` (told/lie/out) · `e8_date` (sauce/seals/horses) ·
+`e8_date_truth` (told/lie) · `e8_becca_end` (kiss/right/forehead) · `e8_joke` (retire/again/sorry/angle) · `e8_bless`
+(lena/becca/watch) · `e8_sat` (conf/sleep) · `e8_conf` · `e8_pecan` (boyfriend/nothing/wit/pie) · `e8_sun` (sullys/becca) ·
+`e8_texts` (away/kept) · **`e8_reply` (true/smile/wait; new in revision)**. Counters: `reliquary` +1, `jack_cigs` +1 on cig.
+Payoffs owed: `e8_danny=="lie"` (Danny/Lena), `e8_relief=="named"`, `e8_relief=="answer"` ("Ask me in daylight"), `e8_becca_end`,
+`e8_date_truth=="lie"`, `e8_glad`, `e8_reply`, the Mason jar (Wes brings it back, E09), the Williams margins Jack owes Hale, Rosie's
+birthday (Wed Oct 7), Frank's recall list.
+
+**Tallies after S1E08**
+- Reliquary: 4 → **5 on `e8_dance=="cig"`**. Jack's cigarettes lit on-page: 6 → 7 on cig.
+- Duel record: little is **unofficial** (no referee); journal "record" card logs it per verdict. Official record unchanged.
+- Odyssey glass: **4–0**.
+- Anchor ratings: Gloria rates Becca **apple** (sight unseen). Pie of the day Sat: cherry.
+- Lena's medal touches: 3 max per path (s04; s05e Personal; s06c "I'm not relieved").
+- Lena's "Costigan": duel/fight register (s05c, s05d, s05e, s05f, s05v, the tin); "Jack" s01/s02/s06d; "Youngstown" s06c.
+- Lena's resolve: s02 7 → s04 6 → s05b 5 → s06b 4 → s08 5 → s12c 7 → s15a/b **6** (ends 6). Jack's ends 7–10.
+- Becca: warmth up to +4 on one path; heat +1 only on the kiss.
+
+**Ledger housekeeping (from the S1E08 review)**
+- Lena's stairwell phone spot: E07 between one and two; E08 "a floor or two down" / "two floors down" from the 4th — keep vague.
+- The Newman kitchen is the St. Brendan's parish kitchen (slug fixed); nobody calls the A-frame "Newman House."
+- Saints/Jets kickoff: page uses 10:00 PT (standard 1 p.m. ET window); period sheet corrected.
+- Wes's address: Zimple St. (Uptown, near Tulane) — student rental; Luc "always over."
+- The "elevator" passage is Manuscript C (1897); "My vocation is love" is Manuscript B. Clarke reads "too small."
+- Lena's sister Tess is also Thérèse (continuity §1.4); not "everybody."

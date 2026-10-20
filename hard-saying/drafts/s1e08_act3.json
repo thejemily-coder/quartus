@@ -1,0 +1,311 @@
+{
+ "scenes": {
+  "s07": {
+   "slug": "THURSDAY · 4:02 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "Room 412 is dark except for the MacBook. Theo is sitting up against the wall in the blue of it with his knees drawn up and his headphones down around his neck, wide awake. On the screen the wake is paused on a frame Jack hasn’t seen before: Margot’s candle in its jar on the tar of the roof, the flame laid over sideways by a breeze that blew a week ago, guttering, held there.",
+    { "if": "e8_glad==\"stairs\"", "text": "Jack did the last two flights alone, and the stairwell is still ringing in his ears." },
+    "Theo doesn’t look away from the screen. “Where’s the laundry?” “Dryer.” “Long wash.” “Delicate cycle.”",
+    "Theo turns his head then and takes in the rest of him: the boots in one hand, the jeans dark to the shin, the sand coming off him onto the carpet a grain at a time. “Did it come clean?” He doesn’t wait for an answer. The iPhone is already lit on his knee, and his thumbs are going.",
+    "Jack gets out of the jeans and into bed, and the sheet goes gritty at once: Shipwreck Cove in his socks, in his cuffs, in the seam of the back pocket where a book rode for two days and doesn’t anymore.",
+    { "if": "e7_doubt==\"twoam\"", "text": "Becca’s post is still up on his wall, DO NOT ASK and the two exclamation points, and at two o’clock this morning, in Portolá, a rosary was going round in the dark for him. He turns over. The sand turns over with him.", "else": "Becca’s post is still up on his wall, DO NOT ASK and the two exclamation points, and Saturday is two days off. He turns over. The sand turns over with him." },
+    "At 4:41 the RAZR goes off on the desk and buzzes itself toward the edge. He catches it going over.",
+    { "type": "sms", "from": "Laney Price", "text": "she came in at 4 and went straight to her knees. on the floor by the bed. its been 40 min. like PRAYING. what did u do. not asking. (asking)", "time": "4:41 AM" }
+   ],
+   "choices": [
+    {
+     "text": "Pray for Becca, by name.",
+     "tag": "Pray",
+     "set": { "e8_dawn": "pray", "soul.grace": "+1", "resolve.jack": "+1" },
+     "response": [
+      "He prays the way he always has, like talking to somebody through a wall. *Look after Becca. Becca Lindell, in Portolá. You know which window. She’s been asking You about me every night. Whatever she’s been asking for, let her have it.* He says her name twice, to be sure it got through. Across the room Theo’s keys go on clicking in the blue, steady as rain on a roof."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "Text Laney: laundry",
+     "tag": "Wit",
+     "set": { "e8_dawn": "laney", "rel.laney.warmth": "+1", "trait.wit": "+1" },
+     "response": [
+      { "type": "sms", "from": "Jack", "text": "laundry", "time": "4:42 AM" },
+      { "type": "sms", "from": "Laney Price", "text": "LIAR. xo", "time": "4:43 AM" },
+      "He falls asleep with the phone open on his chest and the screen going dark on its own."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "Shut the phone. Lie there till the window goes gray.",
+     "tag": "Control",
+     "set": { "e8_dawn": "quiet", "trait.control": "+1" },
+     "response": [
+      "He shuts the phone and lies on his back, and the window over the Grove goes from black to charcoal to the gray of dishwater, and the gulls start up over the Lagoon. Somewhere around six he’s asleep, without having decided anything."
+     ],
+     "goto": "s08"
+    }
+   ]
+  },
+  "s08": {
+   "slug": "THURSDAY · 12:20 PM · DRIFTWOOD BOOKS, MISSION STREET",
+   "set": { "resolve.lena": 5 },
+   "body": [
+    "He slept through PHIL 1, and his alarm, and the whole of the morning, and woke at eleven with the bed full of beach. Now he’s three miles down Mission Street on La Flaca with the Hopkins and the Housman in his bag and a dry wind at his back that smells of sage off the hills.",
+    "Driftwood is cool and brown after the street: glue, dust, old paper going sweet. Boethius is asleep on the register in a slab of sun, belly up. Mrs. Danvers watches from the top of Biography, disapproving. The owner, glasses on their beaded chain, holds out her hand for the books.",
+    "He checks the page first. He can’t help it. *Thou art indeed just, Lord, if I contend / With thee* — and beside it, nothing, a clean margin. Only when he tilts the book to the window does the paper give anything up: the dent his pencil left, faint as a watermark, legible only if you already knew what it said. He shuts it.",
+    "She wraps the Hopkins and Hale’s little Housman together in brown paper, as she did *Brideshead*, and ships them from Driftwood, as the seller, because that is the only way a book gets through the gate at Trumbull. Jack gives her Danny’s number from memory. Media mail, two dollars and seventy-seven cents, out of Tuesday’s tips, in quarters and one soft dollar.",
+    "On the spinner rack by the register there’s a birthday card with a whale on it, because there are no crabs. Rosie turns eight on Wednesday, and the crab she drew him in September, red, under a sun in sunglasses, is still taped over his desk; so he draws her one back with the Driftwood pencil. It comes out like a spider that has been in an accident. Under it he prints THIS IS A CRAB, and HAPPY 8TH ROSIE, and LOVE JACK.",
+    "Then the letter, at the end of the counter, on spiral paper with the fringe torn off. His notes on the Hopkins go on a second sheet, by page number, since the book can’t carry them. The first sheet is just him.",
+    { "type": "doc", "title": "Spiral paper, the fringe torn off", "text": "D —\n\nHere’s the poems book. He’s a Jesuit. Start with “Felix Randal,” it’s about a blacksmith, then go back to the front and fight with the rest. My notes are on the other sheet by page, since the book can’t have them.\n\nThe little one is Housman. It’s from a man who doesn’t sleep. Don’t ask me. LIV is the one Mrs. Pagliarulo made us learn.\n\nTell Reggie money and fish is right. Tell the C.O. it’s about a family.\n\nOrder received.\n\nI ate. Tell Ma." },
+    "There’s room at the bottom of the sheet for one more line. Danny’s was *Tell Lena hey anyway.*"
+   ],
+   "choices": [
+    {
+     "text": "Write: I haven’t told her yet. I will.",
+     "tag": "Candor",
+     "set": { "e8_danny": "told", "soul.honesty": "+1", "trait.candor": "+1" },
+     "response": [
+      "*I haven’t told her yet. I will.* He writes it, folds both sheets in thirds and seals the envelope before he can improve it."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "Write: Lena says hey back.",
+     "tag": "Lie",
+     "cue": "Danny will remember that.",
+     "set": { "e8_danny": "lie", "soul.honesty": "-1" },
+     "key": "In your letter to Danny you wrote that Lena says hey back. She doesn’t know he said it.",
+     "response": [
+      "*Lena says hey back.* He looks at it a while, the pencil still in his hand. It’s a kindness. Danny will like it. He folds the sheets in thirds and seals the envelope."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "Leave her out of it. Write about Reggie and the fish.",
+     "tag": "Control",
+     "set": { "e8_danny": "out", "trait.control": "+1" },
+     "response": [
+      "He leaves her out. He writes about fish instead: the halibut on ice at the harbor market with both eyes on one side of their heads, the sea lions barking for the scraps, a rockfish as red as a fire truck. A whole paragraph of California fish, every one of them unarguably fish. He seals it."
+     ],
+     "goto": "s08b"
+    }
+   ]
+  },
+  "s08b": {
+   "slug": "THURSDAY · 1:05 PM · THE UCEN, THE POST OFFICE COUNTER",
+   "body": [
+    "The post office in the UCen is a counter and a window at the end of a hall that smells of Jamba Juice, past a bulletin board three flyers deep. At five past one there are seven people in line and one clerk. Jack is the seventh, with Danny’s letter in one hand and Rosie’s whale in the other.",
+    "Lena is three people ahead of him.",
+    "She must have come straight across Ocean Road from her feast-day 12:10. The black mantilla is folded into the top of her tote, and in one hand she has a Styrofoam cup with a single rose in it, cream going pink at the edges: Mrs. Fitch’s Peace rose, as promised. Under her other arm is a box, and in the crook of that elbow, held against her the whole time, a Mason jar.",
+    "It’s full of seawater, gray-green and not quite clear, with an inch of sand settled in the bottom and a scrap of kelp that turns over slowly whenever the line moves up. The lid is taped round and round with black electrical tape. On top, in Sharpie, in the same capitals that say RELIQUARY on the tin:",
+    { "type": "doc", "title": "On the lid, in her capitals", "text": "THE PACIFIC.\n(A PREVIEW.)" },
+    "When it’s her turn she sets the rose down out of harm’s way and lays everything out on the counter in order: a one-pound box of See’s; a gray MARISOL sweatshirt, which she wraps three times around the jar; a wad of Anacapa Commons napkins, which she packs into every corner of the box around it. Then she uncaps the Sharpie and writes the label on the flap, and over two shoulders Jack can read every word.",
+    { "type": "doc", "title": "The label", "text": "WESLEY ARCENEAUX\nZimple St.\nNew Orleans, LA" },
+    "The clerk is a big gray man in a USPS sweater vest. He looks at the jar. “Any liquids?”",
+    "“It’s an ocean,” Lena says. “Not a liquid.”",
+    "The clerk looks at the jar some more, and at her, and becomes, by visible stages, a hostile witness. Saltwater, he says. Glass. Liquids have rules. “Publication 52,” Lena says, pleasantly, and she has it by heart, which means she sat up with it. “Hazardous, Restricted, and Perishable Mail. Nonhazardous liquids are mailable in a sealed, leakproof primary container” — she taps the electrical tape — “with sufficient cushioning” — the sweatshirt — “and enough absorbent material to take up the entire contents if it breaks.” The napkins. “It won’t break. It was taped by a Broussard.” “So it’s a liquid,” the clerk says. “In California,” says Lena. “In New Orleans it’s an ocean.”",
+    "The man in front of Jack has taken his earbuds out to listen. The clerk weighs the box and sighs through his nose and gives up: Priority, two to three days, a sticker. She counts it out onto the counter in exact change, and she’s funny, and she’s magnificent, and every word of it is going to Zimple Street.",
+    "She hasn’t seen him. Before she can turn around with her receipt and her rose, Jack steps out of line and goes back down the hall and out into the sun, where there’s a blue mailbox by the bike racks. Danny’s letter goes in. Rosie’s whale goes in after it. When he turns around, through the post office window, the clerk is lifting her box off the scale, carefully, as if it might slosh, and setting it down in a canvas bin stenciled PRIORITY."
+   ],
+   "next": "s09"
+  },
+  "s09": {
+   "slug": "THURSDAY · 2:15 PM · DELGADO HALL, EAST STAIRWELL, 4TH-FLOOR LANDING",
+   "body": [
+    "The east stairwell gets exactly one good bar, on the fourth-floor landing, if you stand with your shoulder against the window where it opens its six inches onto the Lagoon. Jack stands there with the RAZR open, and two floors down he hears her before he can make out a word: the laugh first, low and long, coming up the concrete.",
+    "Lena is on the landing between two and three, where she always is. He can’t see her and doesn’t need to. It’s a quarter past four in New Orleans. Wes calls at 8:04, on the dot, every night; this is the middle of a Thursday afternoon. “I called *you*,” she’s saying. “Write it down. Tell Luc.” And the laugh again, all the way up.",
+    "Last Friday he went down those stairs to her. Today he turns his back on them and looks out at the Lagoon, where an egret is standing on one leg in the shallows as if it had all afternoon, and calls Becca.",
+    "She picks up on the second ring, outdoors, wind in the phone. “Jack! Hi! I’m at the Marine Lab, I smell like a tide pool. Hi.”",
+    "“Friday,” he says. “Tomorrow. You said next time I could.” There are gulls on her end, and somebody calling out a number. “I’m asking. And I’m paying.”",
+    "A pause, with the wind in it. “Asking *what*?”"
+   ],
+   "choices": [
+    {
+     "text": "“My nonna’s sauce. I’ll cook.”",
+     "tag": "Sincerity",
+     "cue": "Becca will remember that.",
+     "set": { "e8_date": "sauce", "rel.becca.warmth": "+1", "trait.sincerity": "+1" },
+     "key": "You asked Becca out for Friday: you’d cook her your nonna’s sauce. You asked, and you’re paying.",
+     "response": [
+      "“My nonna’s sauce,” he says. “I’ll cook.”",
+      "“You *cook*?” And then, as if it were a separate and better piece of news: “It’s *Friday*.”",
+      "He hadn’t thought. He thinks now — Friday, and a girl who says the Glory Be on fourth and one — and says, “My nonna will know what to do,” and Becca doesn’t ask what that means, because she is already saying, “Okay! Yes! *Okay*,” loud enough that somebody at the Marine Lab says something back. Then, quieter, honest: “Nobody’s ever planned a thing for me. I’m the one who plans the thing.”",
+      "He shuts the phone. Evan’s email this morning said no section this week — he’s reading a paper at a conference, and the lying papers will keep — so there’s nowhere he has to be at four, and no table to sit across. Below him Lena laughs once more at something in New Orleans. Then a door bangs, and the stairwell is only concrete."
+     ],
+     "goto": "s11a"
+    },
+    {
+     "text": "“Elephant seals. Sunset. I’m driving.”",
+     "tag": "Charm",
+     "cue": "Becca will remember that.",
+     "set": { "e8_date": "seals", "rel.becca.warmth": "+1", "trait.charm": "+1" },
+     "key": "You asked Becca out for Friday: the elephant seals at Piedras Blancas at sunset. You asked, and you’re paying.",
+     "response": [
+      "“Elephant seals,” he says. “Piedras Blancas. Sunset. I’m driving.”",
+      "“You don’t have a car.”",
+      "“I have a Kevin.”",
+      "Becca laughs straight into the wind. “Okay! Yes! *Okay.*” Then, when she’s finished laughing, quieter, honest: “Nobody’s ever planned a thing for me. I’m the one who plans the thing.”",
+      "He shuts the phone. There’s no section this week — Evan emailed this morning from somewhere with a conference in it; the lying papers can wait — so four o’clock is free. Below him the laugh comes up the stairwell one more time, and a door bangs, and then it’s only concrete."
+     ],
+     "goto": "s11b"
+    },
+    {
+     "text": "“Horses. On the beach.”",
+     "if": "trait.reckless>=10",
+     "tag": "Reckless",
+     "cue": "Becca will remember that.",
+     "set": { "e8_date": "horses", "rel.becca.warmth": "+1", "trait.reckless": "+1" },
+     "key": "You asked Becca out for Friday: two horses on the dunes at sunset. You asked, and you’re paying.",
+     "response": [
+      "“Horses,” he says. “On the beach.”",
+      "The wind cuts out of the phone, as if she’s put her hand over it. “Jack. Have you ever been on a horse?”",
+      "“I’ve been near one.”",
+      "“Okay! Yes! *Okay.*” He has to hold the RAZR away from his ear. Then, quieter, honest, so that he has to bring it back: “Nobody’s ever planned a thing for me. I’m the one who plans the thing.”",
+      "He shuts the phone. Evan’s email this morning cancelled section — a conference; the lying papers will keep — so there’s nowhere he has to be at four. Down the stairwell Lena is laughing again at somebody two thousand miles off. A door bangs. Then it’s only concrete."
+     ],
+     "goto": "s11c"
+    }
+   ]
+  },
+  "s11a": {
+   "slug": "FRIDAY · 6:30 PM · NEWMAN HOUSE, THE KITCHEN",
+   "body": [
+    "At ten past four on Friday Theo is standing in the middle of 412 holding up a shirt nobody asked him to hold up: Jack’s blue oxford, the Goodwill one, the only thing in the closet that isn’t flannel or Mooney gray. “Wear the blue,” Theo says. “Not for her. For me.”",
+    "Two grocery bags from the Mission Street market are on Theo’s desk, where Jack set them down to unlock the door, and Theo has already found the receipt and is reading it aloud like a screenplay. “Anchovies. Capers. San Marzano tomatoes — imported, *Costigan*. A box of spaghetti. One lemon. Olive oil, the good one. I’m proud of you.” He turns it over, looking for the second act. “Thirty-four dollars.” Jack tells him the plan: his grandmother’s Friday sauce, the Newman kitchen, Becca, Mrs. Fitch in the doorway. Theo lowers the receipt. “A chaperone,” he says, with real reverence. “You’ve written a period piece.” By the time Jack has the bags back in his arms, Theo’s thumbs are going on the iPhone.",
+    "He got the sauce Thursday at twenty to six, on the landing, from the bedroom extension on Glenwood Avenue with EWTN going low behind it. He said *Friday*, and Nonna said, “Venerdì! Niente carne!” as if he’d been about to put a pork chop in it. Then she gave it to him in order, every step, perfect: the garlic in the oil till it goes soft, *mai marrone*, never brown; the anchovies in after it, stirred till they melt away, *finché spariscono*; the capers; the San Marzanos crushed in by hand, *con le mani, Giacomino*; a ladle of the pasta water. No cheese — “*Formaggio!* On fish!” — but breadcrumbs, toasted gold in a pan with a little oil: *la mollica*. The poor man’s parmigiano. Then she asked who it was for. He told her. Two minutes later, between the capers and the crumbs, she asked again, new. On the kitchen extension, where she had evidently been the whole time, his mother said, “Idaho?”",
+    "At six Osei let him into the Newman kitchen with a key off a ring the size of a tambourine. “Mrs. Fitch will chaperone,” he said. “She has been waiting thirty years for a reason.” Mrs. Fitch has a folding chair in the doorway and the Friday crossword and a pen, and the kitchen is a parish kitchen anywhere: a six-burner range older than Osei, a coffee urn the size of a fire hydrant, a card over the sink in Mrs. Fitch’s hand that says YOUR MOTHER DOES NOT WORK HERE. PLEASE DRY. The garlic goes soft. The anchovies go in and vanish, and the whole house smells like Glenwood Avenue on a Friday in Lent.",
+    "Becca comes at 6:30 on the dot, which for her is late, in a clean Carhartt vest over a church blouse. She says grace before he’s sat down, *Bless us, O Lord*, like she’s signing a contract: every clause, both initials. Then she eats like one of eight children, elbows out, two plates and the heel of the bread run round the bottom of the second, and wants the recipe for her mother. “What’s the crunchy?” “Breadcrumbs. *La mollica*.” “*Breadcrumbs.* Instead of cheese?” She sits back, amazed. “I have never heard of that in my life.”",
+    "Then she sets her fork down and looks at the pan, and at him, and lights up from the collar. “We don’t do meat on Fridays,” she says. “Not just Lent. Every Friday, all year. Because my family does.” She points the fork at him. “You *remembered* it’s Friday.”"
+   ],
+   "choices": [
+    {
+     "text": "“My nonna remembered. I didn’t.”",
+     "tag": "Candor",
+     "set": { "e8_date_truth": "told", "soul.honesty": "+1", "trait.candor": "+1" },
+     "response": [
+      "“My nonna remembered,” Jack says. “I didn’t.”",
+      "“Then I love your nonna,” Becca says, delighted anyway, and takes the last of the bread. “Tell her. Tell her a girl in California loves her.” In the doorway Mrs. Fitch writes something into the crossword that is probably not the answer."
+     ],
+     "goto": "s11d"
+    },
+    {
+     "text": "Let her think it.",
+     "tag": "Charm",
+     "set": { "e8_date_truth": "lie", "soul.honesty": "-1", "trait.charm": "+1" },
+     "response": [
+      "He lets her think it. She glows at him across the folding table, all of her, as though he had remembered something about her in particular. In the doorway Mrs. Fitch looks up from 14-Across, and considers him over the top of the paper for a while, and looks down again."
+     ],
+     "goto": "s11d"
+    }
+   ]
+  },
+  "s11b": {
+   "slug": "FRIDAY · 6:35 PM · PIEDRAS BLANCAS, THE ELEPHANT SEAL VIEWPOINT",
+   "body": [
+    "At ten past four on Friday Theo is standing in the middle of 412 with Jack’s blue oxford held up on its Goodwill hanger, unasked. “Wear the blue,” he says. “Not for her. For me.” Kevin is in the doorway in a gray quarter-zip with the Odyssey keys on a Bellarmine lanyard swinging off one finger. He drops them into Jack’s palm and folds Jack’s fingers shut over them. “Sixty-five,” Kevin says. “Not sixty-six.” Jack tells Theo the plan — Piedras Blancas, the elephant seals, sunset, fish in Cambria — and Theo considers it from the bed. “You’re taking a rancher to look at livestock,” he says. “It’s either very romantic or a site visit.” His thumbs are on the iPhone before the door shuts.",
+    "Up the 101 to San Luis, then Highway 1 north along the water: Morro Bay with its big rock standing in the harbor, Cambria, the castle on its hill, the sun getting lower on the left, Becca in the passenger seat with her Ropers up on Kevin’s dash explaining what her brother Eli did to the 4-H steer that won. And on the back glass, the whole way, 3–0. Lena wrote it in white La Vang polish for the world behind them to read, so from inside it runs backward, and every time Jack checks the mirror the mirror turns it the right way round again and shows it to him. Sixty-five. He checks the mirror a great deal.",
+    "Below the boardwalk at Piedras Blancas the beach is paved with elephant seals. Hundreds of them, gray and brown and bigger than anything has a right to be that lies around all day, heaped on one another in the sand, sleeping, belching, groaning like the pipes in an old building, flicking sand onto their own backs with their front flippers to keep cool. One lifts its head and lays it back down on its neighbor.",
+    "Becca has both elbows on the rail and knows exactly what she’s looking at. “Juveniles,” she says. “One and two years old. Four, five hundred pounds apiece. They come in to rest. They’ve been out since spring, some of them clear up past Alaska. The bulls don’t come till December, and they’re two tons, and you don’t want to be standing where we’re standing in December.” A young one rolls over with a noise like a tuba falling downstairs, and Becca laughs out loud. “Large animal,” she says, happy. “Cows don’t lie to you. Neither do these. Look at him. He’s exactly as tired as he looks.” At a quarter to seven the sun goes straight down into the Pacific, and every seal on the beach turns orange, and then gray, and goes on sleeping.",
+    "In Cambria there’s a fish place on Main Street with nets on the ceiling and a candle in a red jar on every table. Becca orders the halibut without reading past it to the steaks, and doesn’t say why, and Jack notices. Gas and dinner come to about sixty dollars, the Folgers can by way of his wallet, and he pays before she can get a hand into her vest.",
+    "In the lot after, under the one tall light, she stops at the back of the van and tilts her head at the glass. “Jack,” she says. “What’s three–oh?”"
+   ],
+   "choices": [
+    {
+     "text": "“Lena’s. The Saints are three and oh.”",
+     "tag": "Candor",
+     "set": { "e8_date_truth": "told", "soul.honesty": "+1", "trait.candor": "+1" },
+     "response": [
+      "“Lena’s,” he says. “The Saints are three and oh. She writes the record on Kevin’s glass after every game. You’re supposed to say *who dat*.”",
+      "“Who dat!” Becca says, trying it out under the parking-lot light like a new word she likes. She says it again on Highway 1, and once more at the Morro Bay exit, to see if it still works."
+     ],
+     "goto": "s11d"
+    },
+    {
+     "text": "“It’s a Kevin thing.”",
+     "tag": "Charm",
+     "set": { "e8_date_truth": "lie", "soul.honesty": "-1", "trait.charm": "+1" },
+     "response": [
+      "“It’s a Kevin thing,” Jack says.",
+      "“Go Kevin!” says Becca, and waves at the back glass, at the 3–0, as if Kevin might be somewhere behind it waving back. She’s still pleased about it at the Morro Bay exit."
+     ],
+     "goto": "s11d"
+    }
+   ]
+  },
+  "s11c": {
+   "slug": "FRIDAY · 5:40 PM · THE DUNES SOUTH OF TOWN, A STABLE",
+   "body": [
+    "At ten past four on Friday Theo is standing in the middle of 412 with Jack’s blue oxford on its Goodwill hanger, held up, unasked. “Wear the blue,” he says. “Not for her. For me.” Jack tells him the plan, and Theo sits all the way up. “Horses. At sunset. On the dunes.” He’s already reaching for the closet shelf. “I’ll drive you. I’ll bring the 5D. For the footage.” “No.” “A man on a horse at sunset is the last ten minutes of a Western, Costigan. Somebody has to cover it.” “No.” Theo lies back down with the iPhone, wounded, and his thumbs start going before Jack has the shirt buttoned. At 4:28 the Ranger is in the fire lane.",
+    "Becca drives, south a few exits on the 101 and then out a sand road between the dunes, St. Isidore turning on the visor and both windows down. Jack fills her tank at the Chevron by the off-ramp. The stable is a barn, a pipe corral and a hand-painted sign on a sheet of plywood — HORSES · BY THE HOUR · SUNSET RIDES — and a girl in a straw hat who takes forty-five dollars a horse. He counts ninety out of the envelope that was a week of the Folgers can, and ten more for the girl, and that’s before the tacos.",
+    "His horse is a sorrel named Biscuit who has carried, by the look of him, every tourist on the Central Coast. Becca’s is a gray mare. Becca goes up into the saddle in one motion, as if somebody had lifted her, and sits there like she was born up there. Jack gets on at the third try and holds on. Biscuit knows. Biscuit knows everything.",
+    "They go down through a cut in the dunes to the hard sand at the edge of the surf, the sun low and gold over the water, and Becca tries to teach him to post. “We don’t post at home, we sit the jog, but you can’t sit anything. Up, down. Up with his outside shoulder. Up — no. *Jack.* Let him do it.” Biscuit, given the chance, wanders off toward a clump of ice plant with Jack on him. Becca whistles, no hands, two notes, and Biscuit stops, turns around, and walks back to her with Jack on top like a delivery. She is thrilled. She keeps saying so, into the wind. “You picked *horses*. You picked my thing.” The surf comes up white around the horses’ legs and slides back, and the sun goes into the sea.",
+    "At the barn, in the last of the light, she has the cinch undone on the mare before he’s found his on Biscuit. She swings the saddle off onto her hip and looks at him over the horse’s back. “Was that your first time on a horse?”"
+   ],
+   "choices": [
+    {
+     "text": "“First time on one. First time near one, honestly.”",
+     "tag": "Candor",
+     "set": { "e8_date_truth": "told", "soul.honesty": "+1", "trait.candor": "+1" },
+     "response": [
+      "“First time on one,” Jack says. “First time near one, honestly.”",
+      "Becca laughs until she has to lean on the mare, her forehead against the gray neck and the saddle sliding off her hip into the straw, and the mare goes on eating."
+     ],
+     "goto": "s11d"
+    },
+    {
+     "text": "“Second.”",
+     "tag": "Charm",
+     "set": { "e8_date_truth": "lie", "soul.honesty": "-1", "trait.charm": "+1" },
+     "response": [
+      "“Second,” Jack says.",
+      "“Your horse disagrees,” says Becca. Biscuit, as if he’d been asked, sets one hoof down on Jack’s sneaker and leaves it there a while. Becca is delighted anyway. She is delighted all the way to the fish-taco stand."
+     ],
+     "goto": "s11d"
+    }
+   ]
+  },
+  "s11d": {
+   "slug": "FRIDAY · 10:05 PM · PORTOLÁ HALL, THE FRONT STEPS",
+   "body": [
+    { "if": "e8_date==\"sauce\"", "text": "They walked back across Ocean Road from Newman under the streetlights, the leftovers in a Cool Whip tub from the parish freezer knocking against his knee, and Mrs. Fitch watched them from the courtyard gate until the light changed." },
+    { "if": "e8_date==\"seals\"", "text": "The Odyssey is back in the Anacapa lot with a hundred and eighty more miles on it than Kevin left it with and Piedras Blancas on the floor mats, and they walked over past the dark tennis courts, Becca still doing the noise the tuba seal made." },
+    { "if": "e8_date==\"horses\"", "text": "The Ranger is parked crooked in the Portolá lot, two wheels over the line, fish-taco foil balled up on the dash, and Jack can feel Biscuit in his thighs with every step up the walk." },
+    "Portolá at five past ten is lit window by window, Dave Matthews coming down from somewhere on the third floor, a pizza box propped in the front door to keep it from locking. Becca sits on the second step and pats the concrete beside her, and Jack sits.",
+    { "if": "e7_doubt==\"twoam\"", "text": "“I’ve been praying for two in the morning,” Becca says. “Every night. Since the bleachers.” She bumps his knee with hers. “Is it working?”", "else": "“I’ve been praying for you,” Becca says. “Every night.” She bumps his knee with hers." },
+    "He doesn’t have anything ready. He looks at the pizza box in the door. Becca doesn’t seem to need him to; she leaves her knee where it is and waits, with the porch light on her freckles, as patient as she was on the phone.",
+    "“You’re always somewhere else a little,” she says. There’s no edge on it anywhere. “That’s okay. My dad’s like that in calving season.”",
+    "Then she leans in."
+   ],
+   "choices": [
+    {
+     "text": "Kiss her.",
+     "tag": "Sincerity",
+     "set": { "e8_becca_end": "kiss", "rel.becca.heat": "+1", "trait.sincerity": "+1" },
+     "key": "Friday night on the Portolá steps, you kissed Becca.",
+     "response": [
+      "He kisses her. She kisses him back the way she does everything, all the way and without apology, one hand flat on his chest, warm and sure and unembarrassed. When she sits back she’s pink to the hairline. “Okay,” she says. “*Okay.*” She goes up the steps two at a time and turns at the top and gives him the pasture wave, the whole arm, big enough to turn a herd, and then the door bangs on the pizza box and she’s inside, still waving through the glass."
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "“I want to do this right, Becca.”",
+     "tag": "Candor",
+     "set": { "e8_becca_end": "right", "rel.becca.trust": "+1", "soul.restraint": "+1", "soul.honesty": "+1", "trait.candor": "+1" },
+     "key": "Friday night you told Becca you want to do this right.",
+     "response": [
+      "“I want to do this right, Becca.”",
+      "She studies him a moment under the porch light. Then she smiles, all the way. “You are,” she says, as if it were already written in her planner. She squeezes his knee once, gets up, and goes up the steps, and at the top she turns and gives him the pasture wave, the whole arm, big enough to turn a herd, and goes in past the pizza box glowing."
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "Kiss her forehead.",
+     "tag": "Control",
+     "set": { "e8_becca_end": "forehead", "rel.becca.warmth": "+1", "trait.control": "+1" },
+     "response": [
+      "He kisses her forehead, at the hairline, where the sunburn is. She shuts her eyes for it like it’s a blessing, and keeps them shut a moment after. Then she’s on her feet and up the steps, and at the top she turns and gives him the pasture wave, the whole arm, big enough to turn a herd, and goes in, thrilled, nearly kicking the pizza box over on her way."
+     ],
+     "goto": "s12"
+    }
+   ]
+  }
+ }
+}
