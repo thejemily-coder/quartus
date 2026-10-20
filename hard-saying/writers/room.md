@@ -95,6 +95,15 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 35. **Negation inventories for restraint** (S1E03): "doesn't touch it, doesn't top it," "doesn't add anything." Say it once,
    then show.
 36. **"Lets it sit (there)"** (S1E03). Max one per episode.
+37. **Negative-action buttons** (S1E04): ending a beat on something a character *doesn't* do ("doesn't write it down,"
+   "doesn't say so," "for once, doesn't rate anything"). Max three per episode.
+38. **The hollow or aborted laugh** (S1E04): laughs or smiles with nothing in them, or that don't arrive ("the laugh doesn't
+   arrive," "the place where a laugh would go," "she laughs, with no laugh in it"). Max two per episode.
+39. **"Which from X is Y" verdicts** (S1E04): the narrator grading a minimal gesture as big for that character ("which from
+   Priya is a signed permission slip," "on a warmer person would be pride"). Max one per episode.
+40. **"…and stay(s) there"** (S1E04; heavy in E01–E02 too): a look, a question, a number or a name that goes somewhere and
+   "stays there." Once per episode.
+41. **"The [face/look/laugh/pleasure] of a man/somebody who…"** (S1E04; twelve in one draft). Max three per episode.
 Small repeats to watch (S1E02): Laney's pageant wave is "wrist, wrist, elbow, elbow" (pilot order; spell it once per
 episode); "in installments"; "Of course"; "a real one" for laughs; the fixed-smile-as-mask (Laney's neon sign is hers,
 Kevin's tell is speed); hand-to-heart "as if shot"; "for no reason he could defend"; "no bit" as shorthand for sincerity;
@@ -103,6 +112,12 @@ Small repeats to watch (S1E03): the near-touch restraint beat (one "what it cost
 "first try"; "informs"; "in that order"; "delighted" for Lena (find a specific verb); "flat and white"; the surf "coming in
 and going out"; "has never been so [adj]"; "without being asked"; the fixed-pleasant mask for Theo ("perfectly pleasant");
 Lena laughing "head back"; "a real one" for laughs; the tin ticking in her pocket (once or twice an episode).
+Small repeats to watch (S1E04): Lena's thank-yous (spend "thank you" sparingly in her mouth; save the plain one); the
+voice-stripped-to-sincerity figure ("all the New Orleans goes out of her voice," "the Oxford worn off it," "the voice with
+nothing on it" — once per episode); Margot looking "over the black frames"; "goes still / not a flinch" for Lena; the
+"owes him money" simile; "reading somebody else's mail"; tide similes; the quarter-turn of a glass; Priya's bureaucracy
+figures in the narration (let her own lines carry it); "doesn't say anything" as the default reaction; medal touches beyond
+the budgeted thinking/lying beats; "dark kitchen" for the Anchor seen from the pier.
 
 ## Episode pipeline
 1. Orchestrator: read save (`ArtifactData get saves/main`), write `saves/after-<ep>.json`; notes session with the player.

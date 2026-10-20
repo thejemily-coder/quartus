@@ -666,3 +666,217 @@ heart<=2` (all non-personal ones `!e3_duel_personal`). `duel.labor.lena` set (3 
   options at the save's standout levels, not at 3–4.
 - Real figures on the record: Benedict XVI (*CiV*), John Paul II (*LE*, *CA*), Leo XIII, Pius XI; Obama at the AFL-CIO
   Labor Day picnic, Cincinnati, Sep 7 (paraphrase only); Brian Rolle; Trent Toliver (via Remy).
+
+### S1E04 — "Nativity" (Tue Sep 8 – Sat Sep 12, 2009; tag runs to Sun Sep 13, 12:28 a.m.)
+28 scenes. Forks: s06b → s07a point / s07b iftar → s08 · s09b → s10 now / s09c stayed → s10s → s10b. No duel (the
+yelling-at-God argument is conversation, s10d2). Written for the after-s1e03 save. Gated on E01–E03 vars: `e1_mass_prayer`,
+`e2_alarm` (hoodie), `e2_curb` (friend), `scar_told_margot=="nun"`, `e3_tin` (class), `e3_lena_monday` (family),
+`e3_told_lena_frank` (and `!e3_duel_personal`), `e3_danny_told`, `e3_nonna`, `e3_getty`, `reliquary`. The two-hander
+(s10/s10s–s10f) is ≥4.0k words on every path (4.0k–4.6k).
+
+**On-page canon (all paths unless marked)**
+- s01 (Tue 9:41, Sandoval 1, Row M): fog off the Lagoon. Odyssey glass WHO DAT · 6 DAYS. **The Hopkins**: Penguin *Poems
+  and Prose* ed. W. H. Gardner, CARDINAL MOONEY H.S. LIBRARY — DISCARD in purple on the page edges, a quarter off the
+  discard cart junior spring, came west in the milk crate; it now rides in Jack's back pocket with the Benedict holy card;
+  *Brideshead* squared up on the desk for Danny. Margot in Row M; **Lena's aisle seat (on Margot's far side) empty** —
+  "both lectures to date." Hale (wine on the cuff, hair wet) declines the clip-on, carries the handheld, never uses it;
+  Obama school-speech joke; Hume *Dialogues* X, Epicurus; **"The problem of evil is a bill… Someone always pays it, and it
+  is never the theologian."** Jack has had Lena's number since Saturday (Kevin's card). [e4_text] wit sms / plain "u ok" /
+  notes (two pages of Hume in Mooney cursive).
+- s02 (Tue 12:10, St. Brendan's, Nativity of Mary): Lena sms 11:58 "I’m fine. —L." [wit/plain only]. ~25 people; Mrs.
+  Fitch sets **one white rose in a bud vase beside the brass plate** and moves it a quarter inch (plant; untagged). Kevin
+  saves Jack a seat with a Bible open to Micah. The organist (still unnamed to Jack) plays; lector stumbles on Ephrathah;
+  Osei reads the whole genealogy; homily: Tamar, Rahab, Ruth, "the wife of Uriah" — "God is not ashamed of his family."
+  Lena receives kneeling on the bare floor; lights a candle above the plate and the rose; Osei: "Magdalena." Jack: "Happy
+  birthday to her." → Lena: "To who?" (medal; lace stops moving) → monsignor smile; "I’ll see you Wednesday. Bring yours."
+  [e4_shrine] candle (Jack's $1; Lena's "Thank you") / kneel (Hail Mary; `e1_mass_prayer=="lena"` callback) / joke ("Not
+  today, Youngstown," said kindly; sleeve touch).
+- s03 (Tue 9:20, dish pit): Vin Scully on the transistor; half-price chowder Tuesdays. **Gloria: Thursday Sep 10 the
+  kitchen is dark — hood cleaners, once a year; pie & coffee only.** Jack loses ~$48 + tip share; no windfall (Richard's
+  hundred went into the pool, `e3_hundred=="theo"`). Board: LEMON MERINGUE; MARIONBERRY 4/10. Otis "Dock of the Bay";
+  **Frank's story: Otis whistled the fade, died three days later in a Wisconsin lake.** [e4_rudy] asked → **Rudy: six years
+  at Soledad; his mother every other Sunday, three buses from Oxnard; Louis L’Amour; "Whoever you got — write him."** /
+  hobart ("Soledad's was meaner"; fries) / head_down (eggs, rye; "Dish man eats first. Soledad rule.").
+- s03b (Wed 12:38, back booth): **Hale drinks alone in the Anchor's back booth some nights** (Gloria: "Professor from up
+  the hill"); lemon meringue untouched; "The spaniel washes dishes." Recites **Housman, *A Shropshire Lad* LIV**, first
+  stanza, to the window, in a northern voice. **Fixed wording, every branch: "Go home, Mr. Costigan. You’re sober and
+  you’re boring me."** A fifty for an $11 check; Gloria: "He tips like he’s apologizing." Cab, Marisol Yellow.
+  [e4_hale] housman (Jack finishes the stanza; Mrs. Pagliarulo, Mooney junior English; "darling") / home / water.
+- s04 (Wed 1:46, 4th-floor lounge): Priya alone, Fremont High hoodie, Safeway cupcake, one white candle, HAPPY BIRTHDAY
+  mylar balloon (its twin tied at the cross). **Nora Calloway (Jack's knowledge, from Priya):** freshman roommate, Delgado
+  222; from Selma (raisins; a five-pound bag); philosophy; soprano, Newman choir; sang the Memorare in the shower; moved to
+  Serra sophomore year; fell at the Point end of April; **Sept 8 would have been her 20th**; "Accidental" on the form;
+  Facebook PYMK because Priya friended the floor. Priya: Hindu, has never been inside St. Brendan's. Jack tells her about
+  the plate. [e4_priya] what (argued with **professors** in office hours — no name; fitted sheet; harmony on Happy
+  Birthday) / how (the seaward side of the wall, legs over, "where she went to argue"; police closed it in a week) /
+  candle (Marlboro lighter; "Happy birthday, Nora"; "not tell anyone about the cupcake").
+- s05 (Wed 12:58, Hollis 302): radiator; Caleb's molting *Consolations*; Yusuf fasting. Lena swaps papers: "‘The One Who
+  Pays.’ Bold. I’ll be cruel about it by Thursday." **Her page two: "Objection: A statue doesn’t feel the arm go.
+  (Costigan)"** + reply. Hale sober, no wine on the cuff. Locke prince/cobbler; Reid's brave officer; Yusuf's 747 joke;
+  Caleb "Amen." Lena: "Memory’s a bad criterion. You can forget a thing you did, and it’s still done." [e4_seminar] same /
+  weekends / gage. [e4_text=="notes"] she keeps his Hume notes flat in the tote.
+- s06 (Wed 5:24): Priya's laminate THE LOUNGE CLOSES AT 2 A.M. **Margot's whiteboard** (doc insert; C 4 · B 1) —
+  **"It’s a whiteboard, Costigan. I’ll be updating it hourly."** (E03 teaser paid verbatim; the outline's "not a
+  whiteboard… scoreboard" wording was cut.) **Yusuf came because Jack invited him after seminar** (first on-page
+  Margot–Yusuf meeting). Doug Pruitt (WoW), Kevin (carrots), Theo (cheese board, manchego), Laney [hoodie: Jack's Mooney
+  hoodie, foundation on the cuffs]. Joint session; Wilson's "You lie!" (the name is never said on page). Theo: "I’d cast
+  him." **Kevin's mother is a Walgreens pharmacist in San Jose**; the uninsured man puts his insulin back and buys Doritos
+  up front. Yusuf: "Funny, who gets called a liar to his face." [e4_lounge] manners (Margot's marker hovers, nothing
+  written) / policy (COSTIGAN +1; "everybody’s lying, but differently"; "The bishops always have a letter") / nun.
+- s06b (Wed 6:01): Kennedy letter; Kevin: "His funeral was move-in day." Lena in the doorway (Justins): "He’s right that
+  it’s a lie. He just picked the wrong one." BROUSSARD +1; "I’m too tired to argue with a whiteboard." Laney to Jack:
+  Lena weird since Monday night, in bed by ten, praying more, not answering her phone; **"Somebody has to be her person
+  this week. And she won’t let it be me."** Margot: open mic Thursday, Bastille, she reviews for the *Tide*. Yusuf's iftar
+  invitation (second ask).
+- s07a [point] (6:48): the cross — plain white wood, NORA burned into the crossbar; brown jasmine tied with kitchen string
+  (no gloss); Priya's balloon with a laminated card *N. — P.* The wall: knee-high landward, 70 ft seaward; light dark since
+  1967. **Julian** (warm brown skin, gray cardigan, cheap steel Timex, old Peugeot ten-speed) recognizes Jack from the
+  Lighthouse landing; names exchanged; Nora sat on the wrong side "yelling at God," he played on the right side; hymns,
+  Neil Young; "I play Bastille Thursdays. There’s one I only do once a month" (new in E04). [e4_point] yell / silent /
+  priya ("Tell Priya the balloon’s holding up").
+- s07b [iftar] (7:12): Islamic Center of Marisol, ex-KESSLER SHOES storefront on Mission. Maghrib 7:12 (CD player). Dates,
+  water, lentil soup, qabili palau, bolani. **Yusuf's father on the NUMMI line since ’85 (via Peshawar), plant closing;
+  brother Tariq, 24, Army contract interpreter in Helmand, calls Sundays.** "Nine kinds of potato salad." (No resolve bump
+  in the revision.) [e4_iftar] tariq / potluck (JaMarcus Russell) / frank (Jack tells Yusuf about Lordstown).
+- s08 (Thu 4:02, Hollis 108): **Evan's note: SECTION CANCELLED TODAY — PERSONAL. Kierkegaard, *Works of Love*.** Lena:
+  "Must be nice," to the door (no medal). Worst small talk; red showing through his paper; "I’m not done bleeding on it."
+  Gina 4:09: Ursuline didn't show Obama's speech. Jack: "hows dad" (no answer).
+- s09 (Thu 8:31, Café Bastille): Jack and Margot on the 8:10 bus; Margot's Dymo press badge; drip $1.50 out of Tuesday's
+  tip share. Board: Dana R. / Caleb H. / **Julian** / Ted & Ted. **The Che-tattoo barista** ("The Saints girl… Last week
+  she… Tonight she paid and said thank you"). Lena alone at the back table under *Les Quatre Cents Coups*, tea, Jack's
+  paper and a red pen. [e4_bastille] lena / margot ("Restraint. I’ll allow it.") / coffee (cortado, $2.75 he'd saved for
+  postage; "That’s a Theo move").
+- s09b (9:14): Dana's poem (patriarchy/malarkey; Margot writes it down — the one tic-30 button); Caleb's Assemblies of
+  God set and "*Selah*"; Lena claps for him alone. Julian: "Between the Bars," then **"Fresno"** (lines on page: "You sang
+  the high part in a borrowed robe"; chorus "You said the wall was where you yelled at God / I never heard Him yell back";
+  second verse the Point; **third verse never sung**). Barista: "He only plays that one once a month." Lena leaves in the
+  second chorus, paper and red pen left behind. Margot: [margot] "Go. I’ll review the absence." / else she points her pen
+  at the door (no SMS). [e4_followed] now / stayed (Julian's voice goes on the third verse: "That’s as far as that one
+  goes.").
+- s09c [stayed] (9:52): Ted & Ted's Decemberists. Julian at the bar: "Your friend left in the second chorus. People do… I
+  think it’s the chorus." [iftar] names exchanged here. [point && e4_point=="priya"] "Did you tell Priya the balloon’s
+  holding up?" Jack: "Lena." "From here people go to the harbor… It’s downhill."
+- s10 [now] (9:36, Mission Street): Borders (*The Lost Symbol* Tuesday), Blockbuster. Lena at the Anacapa Street curb,
+  face wet: "Bastille was hot. I needed air." (medal = lie). [e4_air] okay / sixty / sealions.
+- s10s [stayed] (10:09): same street; the pier gate and the corrected sea-lion sign; Lena at the chain under the lamp;
+  same lie (medal). [e4_air] stood / homework ("I abandoned it… it’s moral") / julian ("Julian should finish his song…
+  He’s very good. That’s the problem.").
+- s10b (10:18, end of the pier): sea lions; bell buoy; the Anchor across the harbor, CLOSED FOR CLEANING — PIE & COFFEE
+  ONLY. "That’s my night off." Lena: the Vigil Mass in Metairie with a guitar choir. **Jack: the $48 was for "books"**
+  (true, elided; she lets it go). Lena barefoot, legs over a 15-ft drop: "I can swim… I grew up below sea level." The Reds
+  in the Carhartt's inside pocket. [e4_pier_cig] lit (**Lena smokes half; slip No. 3 · 9/10/09 · the harbor · "confiscated
+  and partially consumed by the Reliquarian"**; [e3_tin=="class"] "Fourth-class… I can amend it") / sat ("Good." — no
+  thank-you) / held (pack in her cardigan pocket against the tin).
+- s10c (10:41): Lena takes the Hopkins; margin *Show Lena*; reads "Thou art indeed just, Lord" aloud (voice goes on
+  *friend*; last line aloud); the DISCARD stamp ("Augustine for a dime and Hopkins for a quarter"); "*Show Lena*… Well.
+  You did." "Do you ever yell at Him?" [e4_yell] once ("Sixteen… finding out somebody was in the room") / browns (dodge) /
+  you ("Do you?" → "Yes").
+- s10c2 (10:49) — **every path now**: **Grandmère, Lucille Guidry**: died in the storm, ’05; five foot nothing; gumbo on a
+  step stool; rosary in Cajun French; "Water. Heat. Four days." "It doesn’t matter how." **Buried in November, in the good
+  dress.** **The medal came back to her mother in a plastic bag in February; her mother put it in her hand at fifteen
+  without a word; Lena has never asked her one question.** The parking officer (E01). The year after, at fourteen, Mass
+  every morning "so He’d have to look at me"; it stopped being a fight. No hospital, no boat, no Memorial on page.
+  [e4_grief] quiet / gumbo (**dark roux, okra or filé never both, never tomatoes — "for Creoles and Yankees"; she makes it
+  wrong in the same place**) / sorry ("The whole country was sorry for about a month").
+- s10c3 (10:58): her marks (*No.*; *source?*); red ink last page: **"You keep writing ‘we’ when you mean ‘I.’ Who are you
+  paying for, Costigan?"** [e3_lena_monday=="family"] she takes back "mostly." [e3_told_lena_frank && !e3_duel_personal]
+  "You told me your daddy’s good. Is he?" Pie case "like a votive rack." [e4_lena_danny] told (Trumbull, five years, a
+  fight, a guy hurt bad, pleaded, three more maybe less; the one book a month, margins erased; "What’s his name?" "Danny";
+  **"Then you can love him. You can’t pay for anybody… Read your own paper."**; on frank: "He’s not good… the garage… the
+  truck in the driveway with nowhere to be"; her shoulder against his arm) / partial ("I can’t yet." "When you can.";
+  "Mostly") / story (Lake Glacier doughnuts in the Silverado, Jack 14, Danny 18; "God help the both of you"; "You love
+  him." "Yeah."; "Don’t ask me about my dad tonight") / everybody ("We pay for everybody. It’s in the brochure"; "And my
+  dad’s good").
+- s10d (Fri 12:29): **Lena lets the last 11 go** ("I don’t want to be in a lit box with people"); three miles of Ocean
+  Road in fog; barefoot the first mile ("They’ve been through worse than California"). **The Carhartt goes on her**; the
+  collar (the episode's one restraint sentence). [told] "It’s his." / else "too big on you, too." **Pie talk: she learns
+  Gloria's name and the marionberry 4 ("A pie is a seven or it’s a declaration of war").** **Home: Dupre Street,
+  Mid-City; the shotgun her daddy and his brothers rebuilt over two years of weekends; 4½ ft of water, the line still on
+  the shed; her daddy (season tickets since 1981) sat on the gutted porch with a radio every Sunday of the 2005 season
+  (San Antonio / Baton Rouge / the Meadowlands; 3–13): "the best season he ever had."** **Wes called early, before
+  Bastille; "I told him I was fine… I’m extremely good at fine."** [e4_wes] silent / asked ("You tell each other the parts
+  that travel… He’s a good man. Don’t.") / fine ("Don’t let it go to your head, Youngstown").
+- s10d2 (1:04): Lena: "Aquinas didn’t get me to the early Mass. Being furious did." Jack defends Job's friends (seven
+  days silent). **Lena wins: Job 42:7 — the friends rebuked, Job "spoke rightly"; Aquinas's literal commentary as a
+  disputation ("God *likes* the argument").** [e4_walk] whirlwind (**the Minnesota group: Catholics, with a priest who’d
+  never seen a crawfish; "He held one up like a relic"** — consistent with E03 s11) / empty_room ("Nobody yells at an empty
+  room." "Say that again.") / mother (gated candor ≥12; "…Maybe at Thanksgiving." `e4_ask_mother`).
+- s10e (2:08, Delgado steps): Marcus asleep under the calculus textbook. Freight horn 2:10 (two long, one short, one
+  long). They count together: **63 (Jack) / 65 (Lena: two engines)**; "counting the priest in the attendance." **Why Jack
+  counts: Frank on second shift when Jack was six, home ~1 a.m.; a freight across the South Side ~12:45; the truck in the
+  drive at the end of it.** **Lena: her daddy gets up at three for the boats; "People who listen for trucks."** "I’m warm
+  for the first time since Monday." [bastille] lena/margot/coffee: "I noticed." **"Thank you, Jack."** (the episode's only
+  warm thank-you on the pier/steps). [e4_goodnight] magdalena (gated sincerity ≥9 && restraint ≥0 — hidden on lit) / text /
+  broussard.
+- s10f (2:16): Lena crosses the lobby in Danny's jacket; elevator to 2 (the one watched exit). [text] "I’m there. Go to
+  sleep, Youngstown. —L." **Laney 2:19: "she just walked in wearing ur jacket. not asking. thank u FIREMAN. xo"**
+  (contact: LANEY (FIREMAN’S FAVORITE)).
+- s11 (Fri 2:30): Odyssey glass 2 DAYS (Lena caught it up at seven in Jack's jacket — Theo). Jack erased *Brideshead*
+  Wednesday night (Pink Pearl). **Driftwood Books: cats Boethius and Mrs. Danvers; the owner ships books to prisons as the
+  seller (for a woman whose son is at Soledad); media mail $2.38 out of the last of Tuesday's tips; mailer free.** **Theo
+  buys Jack an Everyman's Library *Brideshead* — "Not on the tab."** Post office flag at half-staff (9/11); 44¢ stamp;
+  letter written Friday 4 a.m. [e4_rudy=="asked"] Rudy's "write him" is why. Letter: the ocean described; [told] "I told
+  the veil girl about you… She asked your name." / else "Your jacket walked a girl home Thursday"; Hopkins next month.
+  **9/11: Jack in fifth grade at St. Brigid's, Sister Rose's TV cart; Maria at the back, a month from Rosie; Frank came
+  home from Lordstown at noon and sat in the truck till three. Theo: his parents still married; Richard at TIFF, drove home
+  in a rented Lincoln with two producers, four days.** [e4_driftwood] thanks / joke ("two pictures and a lawsuit") / where
+  (Theo turned off the TV for Poppy, 6; his mother turned it back on).
+- s12 (Sat 3:25, courtyard): Osei vs. the sprinkler (1962 brass head), E.T. Mensah on the office record player; Mrs.
+  Fitch's board CONFESSIONS SAT 3:30–4:45 · WED 8:00 · OR WHENEVER YOU KNOCK; KNOCK (gently) on the coat-closet
+  confessional; "A grandmother is not an opinion. She is a diagnosis." [e4_confession] box (**confession Sat Sep 12**;
+  content sealed; counsel: the patients who wouldn't let the nurses lift them tore something — "Letting yourself be lifted
+  is also humility"; penance: call Nonna + a decade; Nonna: "Bravo, Giacomino") / sprinkler (lemon bar; Jack never knocks)
+  / limp ("You tell me yours, one day, and I’ll tell you mine"; Jack lifts his hand at the door and doesn't knock).
+- s13 (Sat 11:48, the Anchor; Jack's first Saturday): Gina 8:44 "18-15 usc. dad turned the radio OFF"; Jack 8:47 "turn it
+  back on. low." **Olallieberry 9/10** ("Dad would eat two pieces and complain about the second"). Lena returns the
+  Carhartt ("Laney said… she’d wear it to rush"; [told] "Tell your brother his jacket walked a girl home"). **The Reds:**
+  [lit] one short in the pocket / [sat] untouched / [held] she slides the pack back: "Held. Every one. Count them."
+  **Gloria rates Lena: "Pecan. Sweet all the way through, and it’ll break your teeth if you’re not careful."** Gloria
+  remembers the August five on a two-dollar coffee. Lena (to the fishermen): "Y’all. Does the diocese know?"; rates the
+  olallieberry 8; **"WHO DAT. One day. Ten a.m., Sully’s. Black and gold or don’t come."** **Wes calls 12:04 a.m. PT from a
+  party: the Saints will win "today"; "He sounded happy."** [e4_wes_happy] glad / joke / racks.
+- s13b (Sun 12:20): Gloria refills, rates nothing. Lena runs for the last 11 at 12:28 ([magdalena] "Goodnight, Jack" /
+  else "Goodnight, Costigan"). The jacket smells faintly of her shampoo; Rudy: dish man eats.
+
+**Ledger housekeeping (from the S1E04 review)**
+- Lena's grandmother (Lucille Guidry; buried in November in the good dress; the medal in a bag in February; never asked
+  her mother) is now **every-path canon from E04 s10c2**, no longer HEART-only. Jack's journal card carries it.
+- E03 teaser "It’s a whiteboard, Costigan. I’ll be updating it hourly." is paid verbatim in s06. Julian's "once a month"
+  line is new in E04 (E03 never teased it).
+- Names Jack still has not heard on page: the organist (Gus Ferreira), Joe Wilson. Marcus is known from his E01 name tag.
+- Kevin's mother: Walgreens pharmacist, San Jose (E02's "AP credit covers orgo" line stands; don't repeat it).
+- Jack's cash: no windfall; Tuesday's tip share pays the Bastille coffee(s) and the $2.38 postage. The lost Thursday is
+  ~$48 + tips.
+- Lena doesn't learn Rudy beyond the name (s10d). She now knows Gloria's name and the 4/10.
+
+**Flags introduced**
+`e4_text` (wit/plain/notes) · `e4_shrine` (candle/kneel/joke) · `e4_rudy` (asked/hobart/head_down) · `e4_hale`
+(housman/home/water) · `knows_nora` · `e4_priya` (what/how/candle) · `e4_seminar` (same/weekends/gage) · `e4_lounge`
+(manners/policy/nun) · `e4_wed` (point/iftar) · `e4_julian_met` · `e4_point` (yell/silent/priya) · `e4_iftar`
+(tariq/potluck/frank) · `e4_bastille` (lena/margot/coffee) · `e4_followed` (now/stayed) · `e4_air` (now: okay/sixty/
+sealions; stayed: stood/homework/julian) · `e4_pier_cig` (lit/sat/held) · `e4_yell` (once/browns/you) · `e4_grief`
+(quiet/gumbo/sorry) · `e4_lena_danny` (told/partial/story/everybody) · `lena_knows_danny` · `e4_wes` (silent/asked/fine) ·
+`e4_walk` (whirlwind/empty_room/mother) · `e4_ask_mother` · `e4_goodnight` (magdalena/text/broussard) · `e4_driftwood`
+(thanks/joke/where) · `e4_confession` (box/sprinkler/limp) · `e4_wes_happy` (glad/joke/racks).
+
+**Tallies after S1E04**
+- Reliquary: 2 → **3 on lit** (No. 3, the harbor, half-smoked by Lena). Jack's cigarettes lit on-page: +1 on lit.
+- Margot's whiteboard (Useful Idiots): **C 4 · B 1**, then [policy] COSTIGAN +1 and BROUSSARD +1 (s06b) on screen.
+- Anchor pie ratings: marionberry 4/10; **olallieberry 9/10** (Lena: 8). Gloria's people ratings: Lena = pecan.
+- Freight count: 63 (Jack) / 65 (Lena).
+- Lena's resolve: s02 5 → s05 5 → s09b **4** → s10e 5 → s13 **5**.
+- Jack's resolve ends 6–10 (mean 8.3; Mass +1, s04 −1, sat +1, told +1, box +1; lit −1, everybody −1). The iftar no
+  longer adds resolve.
+- Lena meters this episode (random play on the real save): trust +0..+12, warmth −1..+10, heat 0..+2, friction −1..+4.
+- Words per path ≈ 14.3k–15.6k (mean 14.9k; validator total ~21.0k counts every branch). 22 choices per path; keys 6–11;
+  whispers 0–7. Two-hander 4.0k–4.6k on both forks.
+
+**Notes / handoffs**
+- E05: Sully's 10 a.m. Sunday (black and gold); Saints 45–27 Lions. If `lena_knows_danny`, Lena watches the moral-luck
+  seminar knowing. If not told, E06 collects ("You owe me a brother"). `e4_ask_mother` → Thanksgiving. Nonna asks about
+  confession (box: she knows; else she asks). The Reds/Reliquary state per `e4_pier_cig`. Lena now knows the 4/10 and
+  Gloria. The jacket in Theo's duffel — never on a Nora day. "Fresno" next ~Oct 8.
+- Seeds placed (do not over-signal): Mrs. Fitch's rose; Hale's Housman and the fixed "Go home" line (S4 must quote it
+  verbatim); the third verse unsung; the jasmine at the cross (no gloss); Evan's "PERSONAL."
+- nextTime: Sully's line; Hale's two-drivers moral-luck hypothetical (E05 must pose exactly this); "Who dat, Costigan. Say
+  it like you mean it." (replaces "A girl left it," which pre-quoted the hidden jacket beat); Laney's Bid Day.

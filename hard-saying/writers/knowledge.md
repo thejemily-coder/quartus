@@ -394,3 +394,101 @@ Nobody in the core cast has met anybody else on-page. Specifically:
   veil girl.
 - Nonna [s08]: `e3_nonna` truth (chess, no confession) / thursday (Mass Thursday; "October") / lie (thinks he went).
 - Frank [s14 | called]: Jack called on Labor Day; works Tuesday seven to one. [texted] Gina relays "happy labor day."
+
+### S1E04 — "Nativity"
+> Written for the after-s1e03 save. Branch tags are `[scene | condition]`. Journals in s03b, s04, s05, s07a, s07b, s10c2
+> and s11 are attached to the choices (they land after the reveal, not on scene entry).
+
+#### Jack
+- [s01] Hale's "the problem of evil is a bill… never the theologian." Lena's seat empty (she skipped).
+- [s02] Mrs. Fitch's rose beside the brass plate (seen, not understood). Osei's homily (the wife of Uriah). Lena's "To who?"
+  and the medal. **The organist is still unnamed to Jack** (Gus Ferreira not heard).
+- [s03 | asked] Rudy did six years at Soledad; his mother came every other Sunday from Oxnard; "write him." Rudy infers
+  "somebody" inside; Jack confirms nothing. [all] Thursday the kitchen is dark (Gloria).
+- [s03b] Hale drinks alone at the Anchor some nights (Gloria: "Professor from up the hill"), says Housman to the window,
+  tips like he's apologizing; the exact "Go home, Mr. Costigan" line. [housman] Hale learns Mrs. Pagliarulo taught Jack.
+- [s04] **Nora (from Priya):** roommate, Delgado 222, Selma/raisins, philosophy, soprano, the Memorare, Serra sophomore
+  year, fell end of April, Sept 8 birthday (20), "Accidental"; the Facebook PYMK cause. Priya is Hindu, never inside St.
+  Brendan's. [what] Nora argued with **professors** in office hours (no name — Hale and Nora are never linked on page this
+  episode); fitted sheet; harmony. [how] the seaward side of the wall, "where she went to argue"; police closed it in a
+  week. `knows_nora` set on all paths.
+- [s05] Lena's page two (his objection, her reply). Hale sober.
+- [s06] Kevin's mother: Walgreens pharmacist, San Jose; the insulin man. Yusuf's "who gets called a liar." The congressman's
+  name is not said. [s06b] Laney: Lena weird since Monday night, in bed by ten, praying, not answering; "she won't let it
+  be me." Margot reviews the open mic for the *Tide*.
+- [s07a | point] The cross (NORA), the jasmine, Priya's laminated card *N. — P.*; **Julian's name**; Nora sat seaward and
+  "yelled at God," Julian played landward; Bastille Thursdays; one song once a month. [point && priya] "Tell Priya the
+  balloon's holding up."
+- [s07b | iftar] Yusuf's father at NUMMI since ’85 via Peshawar, plant closing; Tariq, 24, interpreter in Helmand, calls
+  Sundays. [frank] Yusuf now knows Frank's layoff.
+- [s08] Evan's note: cancelled, PERSONAL (Jack does not connect it to anything).
+- [s09] The barista knows Lena as "the Saints girl" who argues about Che (she came in last Thursday).
+- [s09b] "Fresno" (lyrics as heard; the Selma and choir details may be Jack hearing Priya in it). [iftar] Julian's full name
+  from the barista. [stayed] the third verse breaks.
+- [s09c | stayed] Julian's harbor line. [iftar] names exchanged here.
+- [s10b] Lena can swim ("below sea level").
+- [s10c2, all] **Lena's grandmother: Lucille Guidry, "Grandmère"**; died in the storm ’05; "Water. Heat. Four days." (no
+  hospital/boat/Memorial on page); buried November in the good dress; the medal returned to her mother in a plastic bag in
+  February; given to Lena at fifteen without a word; Lena has never asked her mother one question; daily Mass at fourteen
+  to yell at God. [gumbo] her grandmother's rules (dark roux; okra or filé; no tomatoes).
+- [s10c3] Lena's red-ink question (who are you paying for). [frank && !personal] she remembers "your daddy's good."
+- [s10d, all] Dupre Street, Mid-City; the rebuilt shotgun; 4½ ft of water; the line on the shed; her father's season
+  tickets since 1981 and the 2005 season on the porch. Wes called early on Thursday; she told him she was fine. [asked]
+  "the parts that travel."
+- [s10d2] Job 42:7; Aquinas's commentary (from Lena).
+- [s10e] Her father gets up at three for the boats.
+- [s11] Driftwood's owner ships to prisons as the seller, for a Soledad mother. Theo's 9/11 (Richard at TIFF, the Lincoln,
+  four days). [where] Theo turned off the TV for Poppy; his mother turned it back on.
+- [s12 | box] confession made (content sealed). [limp] Osei's "You tell me yours."
+- [s13] Gina: Frank turned the radio off after the OSU loss. Gloria's "Pecan." Wes called Lena from a party at 2 a.m.
+  Central; "He sounded happy."
+
+#### Lena
+- [s01 | wit/plain] Jack's text. [s02] Jack's "Happy birthday to her" (she knows he means Our Lady).
+- [s05 | notes] Jack took Hume notes for her.
+- [s08] Evan's note (she does **not** know Evan beyond section; her "Must be nice" is about her own week).
+- [s10b] Jack's lost shift is ~$48 + tips; it was for "books" (she does not know for whom). The Anchor kitchen is dark
+  Thursdays once a year.
+- [s10c] Jack's margin *Show Lena* in the Hopkins; the Mooney DISCARD stamp. [once] Jack "yelled" once, at sixteen
+  ("finding out somebody was in the room"; no more). [browns] nothing.
+- [s10c3 | told] **`lena_knows_danny`**: Danny, Trumbull Correctional (state prison outside Warren, half an hour from the
+  house), five years, a fight, a guy hurt bad, pleaded, three more maybe less; one used book a month, margins erased. Not
+  what the fight was. [told && frank && !personal] Frank is "not good": the garage, the radio, the truck. [partial] there is
+  a brother Jack can't talk about yet. [story] Danny's name and the Lake Glacier story; Frank's "God help the both of you."
+  [everybody] nothing true.
+- [s10d | told] the Carhartt is Danny's. [all] **Gloria's name, the pie ratings, the marionberry 4/10; Rudy's name**
+  (Jack's description; she does not know Soledad). [s10e] Frank worked second shift when Jack was six; the freight and the
+  truck.
+- [s13] Gloria rates her "pecan"; the olallieberry 9.
+
+#### Priya
+- [s04] Jack knows about Nora's birthday and the cupcake; St. Brendan's has a plate with Nora's name. [candle] Jack lit the
+  candle with a lighter (she lets it go).
+
+#### Julian
+- [s07a | point] Jack's name; Jack's RA is Priya; Priya still has the rule (laminated). [priya] Jack didn't know Nora.
+- [s09c | stayed] Jack's name ([iftar]); **the name "Lena"** for the girl who left (from Jack). Julian does not connect her
+  to Nora.
+
+#### Hale
+- [s03b] Jack washes dishes at the Anchor. [housman] Jack knows Housman (Mrs. Pagliarulo). [home] Jack told him to go
+  home.
+
+#### Margot
+- [s06] Yusuf (first meeting, the lounge; Jack invited him). Jack's lounge lines per `e4_lounge`. [s09] Lena at Bastille
+  alone; [margot] Jack left her the table.
+
+#### Kevin / Theo / Laney / Yusuf / others
+- Kevin [s06] Jack's lounge line on manners/policy.
+- Theo [s06] the Wilson shout; [s11] Lena came down at seven in Jack's jacket (he saw it); the Everyman *Brideshead*;
+  [thanks/where] per branch. Theo still does not know whether Jack told Lena about Danny.
+- Laney [s06b] asks Jack to be Lena's person; [s10f] Lena came in at 2:19 in Jack's jacket; "not asking."
+- Yusuf [s06] Jack's lounge line ([manners] he looks over); [s07b | iftar] Jack's Tariq question / the sacramental joke /
+  [frank] Lordstown.
+- Rudy [s03 | asked] infers Jack has someone inside.
+- Gloria [s13] Lena is "the one he went after" (she saw it in August); rates her pecan.
+- Osei [s12 | box] confession (sealed); [limp] Jack asked about the leg; [sprinkler] nothing.
+- Nonna [s12 | box] Jack went to confession (phone call).
+- Gina [s08/s13] Jack's texts ("hows dad"; "turn it back on").
+- Danny [s11] the ocean letter; [told] Jack told "the veil girl" about him; [else] his jacket walked a girl home.
+- Wes [s13] nothing new about Jack.
