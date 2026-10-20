@@ -401,3 +401,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   gesture. Her answer is **hilariously terrible**, and it is **deliberately sabotage** (secret-alliance work). Laney
   confirms this later, ideally at or near the alliance reveal. After that, **Jack never asks Laney for girl advice
   again**, and it becomes a callback.
+- **Running bit: the alliance's false dawns.** Every time Jack or Lena gets out of a relationship, **Theo and Laney are
+  absolutely pumped** (celebrations, plans, maybe premature champagne) and then **deeply bummed** when they realize the
+  other one *isn't* immediately breaking up with whoever they're with to chase after them. It escalates each time and
+  pairs with the timing tragedy. The first instance is likely when Lena and Wes end while Jack is with someone. Pays
+  off in the champagne at the alliance reveal.
