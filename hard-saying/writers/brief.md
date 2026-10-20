@@ -284,3 +284,21 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     **Jack meets her at the Newman Center**, the nicest girl there; everyone thinks they're perfect together. The
     magnetic girl comes from **Theo's LA orbit** (an actress, a director's daughter or similar: sharp, glamorous), and
     Theo knows exactly what she is. **Which girl comes first** (in the timing-tragedy slot): room decides.
+- **2012 election comedy (long-range, likely Season 6–7, Spring–Fall 2012).** Jack supports **Romney** in the general,
+  and Lena (and most of campus) is infuriated: considerable comedy, with real stakes underneath. Primary is open (the
+  player didn't pick). Natural fits for Jack, for the room to weigh:
+  - **Rick Santorum**: Catholic, pro-life, Pennsylvania, blue-collar Rust Belt message. Romney narrowly beat him in
+    the **Ohio primary on Super Tuesday, March 6, 2012**, a ready-made Youngstown episode beat.
+  - **Newt Gingrich**: a Catholic convert (2009), which gives Lena endless material on his marriages.
+  - Others in the field: Ron Paul, Rick Perry, Michele Bachmann, Herman Cain, Jon Huntsman; Tim Pawlenty dropped out in
+    August 2011.
+- **Rich Catholic material in 2012** for both of them:
+  - The **HHS contraceptive mandate** (announced January 2012) and the bishops' "Fortnight for Freedom" (June–July
+    2012) unite them against the administration, and that should rattle Lena's left lean.
+  - **Paul Ryan**, Catholic, as VP nominee (August 2012). His budget was publicly criticized by some bishops and by
+    Georgetown faculty on Catholic social teaching grounds (subsidiarity vs. solidarity), a perfect Jack-vs-Lena duel.
+  - The **Biden–Ryan VP debate (October 11, 2012)**, two Catholics on abortion, worth an episode watch-party.
+  - Lena (Catholic Worker, pro-life) may vote third party, write someone in, or agonize her way to a choice. The room
+    decides, consistent with the politics map. Margot and the campus are firmly Obama, and Jack is the most hated man
+    at the election-night party.
+  - Real public figures appear only through their real public words and actions.
