@@ -1,0 +1,258 @@
+{
+  "scenes": {
+    "s06": {
+      "slug": "WEDNESDAY · 5:24 PM · DELGADO HALL, 4TH-FLOOR LOUNGE",
+      "body": [
+        "Priya’s newest laminate is taped to the lounge door at eye level: THE LOUNGE CLOSES AT 2 A.M. (THIS MEANS YOU.) (THIS ALSO MEANS ME.) Inside, the balloon is gone from the chair, and so is the paper towel with its one unlit candle. It’s five-twenty-four in Marisol and eight-twenty-four in the Capitol, and the light coming in low off the Lagoon is so gold that the President of the United States, on the boxy Zenith on its rolling cart, is addressing a joint session of Congress through a glare.",
+        "Margot has annexed the whiteboard. COVER YOUR COUGH is gone — wiped, though the ghost of H1N1 still shows gray through the white if you tilt your head — and in its place, in black capitals so even they look typeset, the season to date, transcribed out of the Moleskine:",
+        { "type": "doc", "title": "The 4th-floor whiteboard", "text": "USEFUL IDIOTS FOR CHRISTIAN NATIONALISM\nCOSTIGAN | BROUSSARD\nC — “And every father.” (8/30, 3 a.m., this lounge) · 1\nB — Mantilla, in a public lecture hall (9/1) · 1\nB — “Neither horn.” (Aquinas, borrowed) · 1\nC — Took Broussard’s side against me (9/1). Chivalry is a tell. · 1\nB — Taught five Yankees and a Texan a chant to a football team. Liturgical. · 1\nC — “He’s the one who pays.” Substitutionary atonement at a dinner party. · 1\nC — Sister Mary Clement, a ruler. Corporal punishment. Predictable. · 1\nB — Bailout: “I’m *for* it.” Deduction for compassion. · −1\nB — “She’s right.” (US-101 N, 9/7.) Deduction. Witnessed. Unrepeatable. · −1\nTOTAL — C 4 · B 1" },
+        "Jack reads it top to bottom. It is accurate in every particular, which is the most upsetting thing about it. “She loses points for agreeing with me?” “Broussard is penalized for lapses into reason. It’s a handicap system. Like golf, or the Senate.” Margot caps the marker, uncaps it, and regards him over the black frames with something that on a warmer person would be pride. “It’s not a whiteboard, Costigan. It’s a scoreboard. I’ll be updating it hourly.”",
+        "The lounge has filled up. Kevin is perched on the arm of the couch in the navy quarter-zip with a Costco bag of baby carrots, which he offers around like a host. Doug Pruitt is at the table with World of Warcraft open on his laptop and a headset around his neck, keeping one eye on a raid and the other on the leader of the free world. Yusuf came over from Cabrillo because Margot promised him a television and an argument; he has the good armchair and a single date in his shirt pocket, which he pats when he catches Jack looking. “For seven-twelve.” He hasn’t eaten or drunk since before dawn, and he looks more rested than anybody in the room.",
+        "Theo arrives with a wooden board from the cheese place on Mission that sells eleven-dollar crackers — figs, a wedge of something with a rind like an old church door — and takes the middle of the couch as if the couch had been holding it for him. “I’m here for the catering.” He holds the board out to Yusuf first. “I’ll take a rain check,” Yusuf says. “At seven-twelve.” “I’ll guard the manchego with my life.”",
+        { "if": "e2_alarm==\"hoodie\"", "text": "Laney comes in last, in Jack’s gray Mooney hoodie — hers now, by every law but the written one; there’s foundation on the cuffs — with her knees pulled up inside it so she’s a hood and a fall of copper hair. She drops onto the couch on Theo’s other side and takes a fig off his board without asking. “I’m here for the cheese and Theodore. Not in that order.”", "else": "Laney comes in last, in a Pi Lam rush T-shirt knotted at the hip, and drops onto the couch on Theo’s other side and takes a fig off his board without asking. “I’m here for the cheese and Theodore. Not in that order.”" },
+        "On the screen the President has been at it for twenty minutes, Biden and Pelosi behind him at the rostrum like bookends. Around five-thirty he gets to the claim that it would insure people who are in the country illegally, and says it wouldn’t — the reforms wouldn’t apply to anyone here illegally — and from the floor, from the Republican side, a man’s voice cuts across him, high and furious and perfectly clear.",
+        "“You lie!”",
+        "The chamber groans, and there are boos under the groan. The President stops, looks toward the sound, and goes on. In the lounge Doug takes off his headset. “Duuude.” Laney has a fig halfway to her mouth. Theo leans back into the couch with the expression of a man watching dailies. “He just made the most-watched mistake of his life,” he says. “I’d cast him.”",
+        "Kevin laughs, because Kevin laughs, and takes a carrot. “My mom’s a pharmacist,” he says, sunny, to the room at large. “Walgreens, in San Jose. There’s a guy who comes in every week, gets to the counter, sees what his insulin costs, and puts it back.” He crunches the carrot. “She rings up his Doritos.” He smiles at everybody, and for a second nobody can find anything to do with their face.",
+        "In the good armchair Yusuf hasn’t moved. “Funny,” he says quietly, eyes on the screen, “who gets called a liar to his face.”",
+        "Jack grew up in a house where men yelled at the television every night of the week, and on the bill he’d have yelled right along with them — but under this shout there is something else, in who it was thrown at and how sure the man was that he could throw it there, that Jack doesn’t like and can’t argue his way out of."
+      ],
+      "choices": [
+        {
+          "text": "“He can disagree all he wants. He doesn’t get to call that man a liar in that room.”",
+          "tag": "Candor",
+          "cue": "Yusuf noticed.",
+          "set": { "e4_lounge": "manners", "trait.candor": "+1" },
+          "key": "You told the lounge Joe Wilson had no right to call that man a liar.",
+          "response": [
+            "He hears where the weight falls — *that man* — and he hears himself mean more by it than manners, and he leaves it where it fell. In the armchair Yusuf looks over at him, once, and then back at the screen.",
+            "Margot’s marker goes up to the board and hovers over COSTIGAN. It stays there through a whole paragraph of the speech. Then she caps it without writing anything. Theo passes Jack the cheese board without a word, which from Theo is practically an editorial."
+          ],
+          "goto": "s06b"
+        },
+        {
+          "text": "“He’s wrong about the immigrants. Wait for the abortion line — that’s the one I don’t believe.”",
+          "tag": "Press",
+          "set": { "e4_lounge": "policy", "trait.candor": "+1" },
+          "response": [
+            "It comes inside a minute, as if he’d cued it: no federal dollars for abortion, the President says, more or less, and the conscience laws stay where they are. “There,” Jack says. “That one.”",
+            "The marker squeaks. COSTIGAN +1. “Pro-immigrant and anti-abortion in a single breath,” Margot says, still writing. “Your bishops will be thrilled.” “The bishops have a letter about this,” Kevin offers, helpfully, around a carrot. “The bishops always have a letter.”"
+          ],
+          "goto": "s06b"
+        },
+        {
+          "text": "“Somewhere in South Carolina a nun is reaching for a ruler.”",
+          "if": "trait.wit>=10 && scar_told_margot==\"nun\"",
+          "tag": "Wit",
+          "set": { "e4_lounge": "nun", "trait.wit": "+1", "rel.margot.warmth": "+1" },
+          "response": [
+            "Margot doesn’t turn around. “Sister Mary Clement,” she says flatly. “I have her on file.” She taps the board, third line from the bottom, without looking.",
+            { "if": "e2_alarm==\"hoodie\"", "text": "Laney snorts into the hoodie’s sleeve and has to pull the hood all the way up. Theo looks from face to face. “Who?” Nobody explains. Theo settles back with the wounded dignity of a man left out of a franchise.", "else": "Laney snorts into her fist and has to turn her face into the couch. Theo looks from face to face. “Who?” Nobody explains. Theo settles back with the wounded dignity of a man left out of a franchise." }
+          ],
+          "goto": "s06b"
+        }
+      ],
+      "journal": [
+        { "kind": "note", "id": "whiteboard", "title": "The scoreboard", "text": "Margot annexed Priya’s whiteboard: USEFUL IDIOTS FOR CHRISTIAN NATIONALISM, COSTIGAN | BROUSSARD, season to date out of her Moleskine. Not a whiteboard. A scoreboard. She’s updating it hourly." }
+      ]
+    },
+    "s06b": {
+      "slug": "WEDNESDAY · 6:01 PM · DELGADO HALL, 4TH-FLOOR LOUNGE",
+      "body": [
+        "The speech runs on past the shout — no federal money for abortions, a public option, not a dime added to the deficit — while the light in the window goes from gold to orange. He ends on a letter Ted Kennedy wrote him in the spring, to be delivered after he died. The chamber stands. In the lounge Kevin says, quietly, not sunny at all: “His funeral was move-in day.”",
+        "When Jack looks up, Lena is in the doorway. The OCTAVIA tote on her shoulder; the oatmeal cardigan with the sleeves pulled down over her wrists; the Justins, not the Keds. She watched downstairs in the Fishbowl, and Laney has her key, because eventually Laney has everybody’s key. Lena looks composed in a way that has been ironed.",
+        "“Broussard.” Margot turns from the board with the marker up like a microphone. “Weigh in. Your party, your president, your abortion.” Lena considers the television, where the senators are still on their feet. “He’s right that it’s a lie,” she says. “He just picked the wrong one.”",
+        "BROUSSARD +1 goes up with a squeak, and Margot lays out the rest of the fight like a table setting, every fork where Lena likes it: when the bishops sink the whole bill over one line, will Broussard cheer, or call them cowards? Lena takes her key out of Laney’s hand. “Put me down for whatever you want, Margot,” she says. “I’m too tired to argue with a whiteboard.” She’s gone before anybody thinks of an answer. The fight she didn’t have stays in the lounge, louder than the television, and Margot, the marker still in the air, looks from the empty doorway to Jack and watches him see it.",
+        "Laney follows Jack into the hall with the hoodie sleeves pulled over her hands, and when the lounge door sighs shut she sets the pageant down like a tray. “Okay. Fireman. Serious face.” It’s alarming on her. Lena’s been weird since Monday night. In bed by ten. Praying more — “which for Lena is like saying the ocean got wetter.” Her phone face-down on the desk, ringing, and Lena letting it. And she won’t say why, and Laney has asked nice and asked not nice. “She tells me everything except the things she doesn’t.” Her chin comes up the way it must have come up on a hundred stages, and her eyes don’t go with it. “Somebody has to be her person this week. And she won’t let it be me.”",
+        { "if": "e2_curb==\"friend\"", "text": "It lands somewhere under his ribs: the curb outside Pi Lam last Friday, Lena watching Laney go up the steps — *Somebody out here has to be her person.* Laney was on the steps by then. She has no idea she’s quoting anyone." },
+        "“Okay,” Jack says. Laney nods as if they’ve both signed something, pushes the sleeves up, becomes Laney again, and goes back in for the cheese.",
+        "Margot comes out a minute later, capping the marker. “Open mic’s Thursday. Café Bastille. I’m reviewing it for the *Tide*. Bring a pen.”",
+        "At six-twenty-five Yusuf comes out with his bag on his shoulder. “Iftar,” he says. “The Islamic Center, on Mission. My mother sent food with a cousin. There’s too much. There’s always too much.” He asked once already, the first week. He doesn’t say *again*. He waits.",
+        "Out past the Grove is the Point, and on the Point, since yesterday morning, a balloon tied to a cross. Priya’s rule is about after dark. There’s an hour of light left."
+      ],
+      "choices": [
+        {
+          "text": "Ride out to the Point before the light goes.",
+          "tag": "Go",
+          "set": { "e4_wed": "point" },
+          "key": "You rode out to the Point to see the cross.",
+          "response": [
+            "La Flaca comes off the radiator pipe with a clank that brings Priya’s door open an inch and closed again; then the east stairwell, three flights, the bike on his shoulder; then the lot, and the sun already low and orange over the eucalyptus."
+          ],
+          "goto": "s07a"
+        },
+        {
+          "text": "Break the fast with Yusuf.",
+          "tag": "Go",
+          "set": { "e4_wed": "iftar" },
+          "key": "You broke the fast with Yusuf.",
+          "response": [
+            "Yusuf nods as if he’d calculated the odds and they’d held. “Bring nothing,” he says, starting down the stairs. “If you bring potato salad I’ll know.”"
+          ],
+          "goto": "s07b"
+        }
+      ]
+    },
+    "s07a": {
+      "slug": "WEDNESDAY · 6:48 PM · MARISOL POINT",
+      "music": "The Antlers — “Kettering”",
+      "set": { "e4_julian_met": true },
+      "body": [
+        "La Flaca rattles west through Las Olas with the sun full in Jack’s face: past Lupe’s truck, shuttered till ten; past the surf rentals with wetsuits drying on the fences; along Seacliff, where the Greek houses are getting ready for the weekend with a garden hose and a keg dolly. The Lighthouse is the last house on the road. He sees the gap in its back fence, and the bluff path through it that Lena told him not to take at night, and it isn’t night, and he takes the road around to the dirt lot anyway.",
+        "Then there’s nothing but the Point. Golden hour, and wind enough to lean on; ice plant gone red at the tips; below, out of sight on the rocks, sea lions barking. The old light stands at the end of it all, squat and white, a county sign on its locked door — dark since 1967. And the wall: knee-high on the side where Jack is standing, the kind of wall you sit on to tie a shoe. On the other side, nothing. Air, seventy feet of it, and then the water.",
+        "The cross is plain white wood set into the dirt at the wall, and somebody has burned NORA into the crossbar, carefully, in capitals. At its foot a bundle of jasmine gone brown, tied with kitchen string — the kind that grows on every fence in Las Olas. And Priya’s balloon. He’d know it anywhere now, the lounge balloon’s twin, HAPPY BIRTHDAY in pink and silver, half its helium gone, bowing in the wind and coming back up and bowing again. A square of index card hangs from its ribbon. It is, of course, laminated. *N. — P.*",
+        "He isn’t alone. On the land side of the wall a guy is sitting with a guitar case at his feet that he hasn’t opened: warm brown skin, short dark hair, a gray cardigan too warm for the afternoon and right for the wind, a cheap steel Timex. An old Peugeot ten-speed lies in the grass behind him with its back wheel still ticking round. He looks at Jack, and keeps looking, as if he’s trying to remember the key something was in. “You’re the guy from the Lighthouse stairs,” he says. “You were with the girl who listened.”",
+        "And Jack places him: the party, the stairs, a boy in a cardigan playing “Skinny Love” to a stairwell full of drunks, and Lena with Laney’s hair in her hands, gone very quiet. “Julian,” the guy says. “Jack.” Julian tips his head at the balloon. “Priya’s?” “My RA.” “She still has the rule?” “Laminated.” That gets something out of him — not a laugh, the place where a laugh would go. “She would.”",
+        "Jack doesn’t know how else to stand there, so he asks if he knew her. Julian looks at the wall instead of at him. Nora sat there, he says. On the wrong side. Legs over the drop, heels against the stone, like it was the end of a dock. “Yelling at God, she said.” And Julian sat where he’s sitting now, on the right side, and played whatever she asked for. Hymns, then Neil Young, then hymns. She sang harmony on everything, including songs that didn’t want any. He says all of it plainly, as if giving directions. “I play Bastille Thursdays,” he says, after a while. “There’s one I only do once a month.”"
+      ],
+      "choices": [
+        {
+          "text": "“Did He ever yell back?”",
+          "tag": "Sincerity",
+          "set": { "e4_point": "yell", "trait.sincerity": "+1", "rel.julian.warmth": "+1" },
+          "response": [
+            "Julian smiles, and there isn’t much in it. “That’s the song.” He doesn’t say which.",
+            "The sun touches the water, flattens, and goes, all at once, the way it does out here, and the cold comes up off the sea before the light has even finished leaving. Julian stands and picks up the case. “Priya’s rule,” he says. They walk the bikes out across the dirt lot to the road together, the Peugeot ticking, La Flaca squealing, neither of them in any hurry."
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "Stand there with him till the sun’s down. Don’t talk.",
+          "tag": "Control",
+          "set": { "e4_point": "silent", "trait.control": "+1", "rel.julian.trust": "+1" },
+          "response": [
+            "Jack puts his hands in the Carhartt pockets and stands. Julian leaves the case shut. Below them the sea lions keep up their argument; the balloon bows and rights itself; the sun goes into the water red, then orange, then a line, then nothing, and neither of them says anything through any of it.",
+            "When it’s over Julian looks up at him and nods once, as though something has been settled that neither of them brought up. “Priya’s rule.” They walk the bikes out to the road side by side in the blue dark, and at Seacliff Julian lifts a hand and rides east without looking back."
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "“I didn’t know her. My RA did.”",
+          "tag": "Candor",
+          "set": { "e4_point": "priya", "trait.candor": "+1", "rel.julian.trust": "+1" },
+          "response": [
+            "“Most people who come out here didn’t know her,” Julian says. “They come anyway.” He watches the balloon dip and recover. “Tell Priya the balloon’s holding up.”",
+            "The last of the sun goes under while Jack is still deciding whether he will. Julian gets up, brushes off the cardigan, and hoists the case. “Priya’s rule,” he says, and they walk the bikes out to the road together with the wind at their backs and the light fading out of the ice plant."
+          ],
+          "goto": "s08"
+        }
+      ],
+      "journal": [
+        { "kind": "person", "id": "julian", "title": "Julian", "text": "The guitar guy from the Lighthouse stairs. Used to sit at the wall with Nora — she sat on the wrong side and yelled at God, he sat on the right side and played whatever she asked. Plays Bastille Thursdays. One song only once a month." }
+      ]
+    },
+    "s07b": {
+      "slug": "WEDNESDAY · 7:12 PM · ISLAMIC CENTER OF MARISOL, MISSION STREET",
+      "set": { "resolve.jack": "+1" },
+      "body": [
+        "The Islamic Center of Marisol is a converted storefront on Mission Street between a laundromat and a vacuum-repair shop, with a green awning and the old tenant’s name still ghosted in gold on the transom: KESSLER SHOES. Inside the door, wire racks of shoes — sneakers, loafers, a pair of tiny pink sandals that light up — and Jack unlaces his boots and discovers a hole over his left big toe, which nobody notices except Yusuf, who notices everything. “It’s fine,” Yusuf says. “God has seen your feet.”",
+        "Carpet patterned in rows, folding tables along the back wall under butcher paper, a whiteboard with the Ramadan timetable in a careful hand. Forty people, maybe: engineering grad students, a Pakistani pediatrician still in scrubs, small kids running laps between the tables, an uncle — everybody’s uncle — in a Raiders cap. At seven-twelve somebody presses play on a CD player by the window, and the call to prayer comes out of two speakers into the room, one man’s voice going up and up and holding there, and the room goes still under it.",
+        "Dates and water first. Yusuf puts a date in Jack’s palm — fat, dark, sticky — “Medjool; my mother doesn’t trust the dates down here” — eats his own with his eyes shut, drinks a whole bottle of water without stopping, and opens his eyes with his color back. Then the men line up on the carpet for the sunset prayer, shoulder to shoulder, and Jack, who was told *sit, stand, whatever*, sits on a folding chair by the wall with his hands on his knees and prays his own way, silently. What comes is what his hands know at a table: *Bless us, O Lord, and these thy gifts.* Across the room forty foreheads go to the carpet together. The only sounds are the ceiling fan and somebody’s baby, and he couldn’t say what the stillness is, only that he has stood in it before, at the 12:10, under the hull.",
+        "Then lentil soup in Styrofoam cups. Then the foil pans from Fremont, carried in two at a time by a cousin in a Cal hoodie: qabili palau, the rice dark with stock and heaped with carrots cut fine as matchsticks and fat golden raisins, lamb underneath; bolani; a yogurt sauce with mint in it. The pediatrician asks Jack where he’s from and, told, says he did a rotation in Cleveland in 1998 and hasn’t been warm since.",
+        "Yusuf eats like an engineer, methodically, and talks between bites. His father has been on the line at NUMMI since ’85, by way of Peshawar — twenty-four years of Corollas — and in August Toyota announced the plant closes in the spring. “He says he’s going to retire. He’s fifty-four. He says it like a man announcing he’s going to take up the cello.” His brother Tariq is twenty-four, a contract interpreter with the Army in Helmand, the villages’ Pashto into the lieutenants’ English and back again, all day in the heat. “He calls Sundays. If he doesn’t call Sunday, my mother doesn’t sleep till Monday.” He says it lightly, and then he takes a second helping of rice he plainly doesn’t want, and Jack knows the move. He has made it at his own mother’s table.",
+        "Then, wiping his hands, Yusuf delivers the bit he has clearly been holding since the cloister walk. He went to a First Communion party in Fremont in third grade; he counted. “This is a real potluck. You people bring nine kinds of potato salad and call it a sacrament.”"
+      ],
+      "choices": [
+        {
+          "text": "Ask about Tariq.",
+          "tag": "Sincerity",
+          "set": { "e4_iftar": "tariq", "trait.sincerity": "+1" },
+          "response": [
+            "Jack asks what he’s like, not what he does, and Yusuf thinks about it honestly, which is how he thinks about everything. Tariq was the funny one. Tariq taught him cricket with a tennis ball in the Safeway lot. Tariq signed up in ’07 because he could do the job and most people couldn’t, and their mother cried for a month and then ironed his shirts for the flight.",
+            "“People ask if I’m angry at God,” Yusuf says. “I’m angrier at the Taliban than at God. And at America, for leaving the first time.” He tears a piece of bolani in half and gives Jack the bigger piece. “Don’t tell Hale. He’ll make it a seminar.”"
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "“Potato salad is a sacramental, not a sacrament. Get it right.”",
+          "tag": "Wit",
+          "set": { "e4_iftar": "potluck", "trait.wit": "+1" },
+          "response": [
+            "The corner of Yusuf’s mouth goes. He leans across the table and translates for the uncle in the Raiders cap — Pashto, fast, with a hand gesture for *sacramental* Jack would pay money to have explained — and the uncle listens gravely, nods, and then points a plastic fork at Jack and demands a ruling on JaMarcus Russell instead.",
+            "“He’s going to make you pick one,” Yusuf says. “Pick wrong; it’s a mercy. Then he gets to be right all season.”"
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "Tell him about your father. Lordstown. June.",
+          "tag": "Candor",
+          "set": { "e4_iftar": "frank", "trait.candor": "+1" },
+          "response": [
+            "Jack tells him: Lordstown, twenty-six years, the letter in June, the Silverado parked in the drive with nowhere to drive it. Yusuf doesn’t interrupt. When it’s done he lifts his water bottle an inch off the butcher paper, which could be a toast or the opposite of one.",
+            "“Two sons of autoworkers at Hale’s table,” he says. “He’d hate that we’re a demographic.”"
+          ],
+          "goto": "s08"
+        }
+      ],
+      "journal": [
+        { "kind": "person", "id": "yusuf", "title": "Yusuf (PHIL 9H)", "text": "Fremont. Engineer. Fasting for Ramadan through a ninety-minute seminar and funnier than all of us. Broke the fast with his people on Mission Street and fed me till I couldn’t stand. Father on the NUMMI line since ’85. Brother Tariq interprets for the Army in Helmand and calls on Sundays." }
+      ]
+    },
+    "s08": {
+      "slug": "THURSDAY · 4:02 PM · HOLLIS 108",
+      "body": [
+        "Hollis 108 is the basement, and the basement door has a note on it: one typed sheet, one strip of Scotch tape across the top, the bottom corners lifting in the draft from the stairwell.",
+        { "type": "doc", "title": "Taped to the door of Hollis 108", "text": "SECTION CANCELLED TODAY — PERSONAL.\nRead Kierkegaard, *Works of Love*, “Our Duty to Love the People We See.”\n—E. Marsh" },
+        "The girl in the Marisol Surf hoodie reads it, says “Oh my God, *yes*,” and takes the stairs back up two at a time with a free hour in her hands like a twenty found in last winter’s coat.",
+        "Lena comes down behind Jack in the brown Justins and the cardigan, the tote on her shoulder. She reads the note. She reads it again. Her hand goes to the medal at her throat and closes on it. “Personal,” she says, to the door.",
+        "Then she turns, and they climb back up into the light together, and it’s the worst small talk of Jack’s life. The Kierkegaard: she’s read it; of course she has. The fog: late today. The Saints: she doesn’t bring them up, and that’s how he knows how bad it is. At the top of the stairs she shifts the tote and he sees his own paper inside it, “That God Is the One Who Pays,” the corner curled, red showing faintly through the back of page two — not much red. “I’m not done bleeding on it,” she says, as though he’d asked. She doesn’t mention tonight. Neither does he. “Costigan,” she says, and turns left toward the Brick, and he goes right.",
+        { "type": "sms", "from": "Gina", "text": "they wouldnt let us watch obama at school tues. sr said parents called. we watched a movie about plate tectonics", "time": "4:09 PM" },
+        "He thumbs a reply on the steps of Hollis with the RAZR tipped against the glare, T9 fighting him for every word.",
+        { "type": "sms", "from": "Jack", "text": "sr is right. tectonics on the test. obama isnt. hows dad", "time": "4:13 PM" },
+        "No answer. He closes the phone. Across the quad the sprinklers on the Commons come on all at once, and a dozen people on the grass get up shrieking and gather their books, and the water goes on swinging back and forth over the empty grass."
+      ],
+      "next": "s09"
+    },
+    "s12": {
+      "slug": "SATURDAY · 3:25 PM · ST. BRENDAN’S COURTYARD",
+      "music": "E.T. Mensah & the Tempos — “All for You”",
+      "body": [
+        "St. Brendan’s courtyard at three-twenty-five on a Saturday is empty except for the olive tree and Fr. Osei, who is on his knees in the flower bed in a black clerical shirt with the sleeves rolled and a pair of rubber boots, losing to the sprinkler. Out of his office window comes his father’s record, the one Jack heard over the chessboard, loud enough to annoy the olive tree. The sprinkler head is hissing sideways. Osei has a wrench on it. Every time he tightens it, it finds a new direction, and the newest direction is his face.",
+        "On the board by the Newman house door, in Mrs. Fitch’s hand: CONFESSIONS SATURDAY 3:30–4:45 · WEDNESDAY 8:00 · OR WHENEVER YOU KNOCK.",
+        "Jack is here because an eighty-four-year-old woman on Glenwood Avenue, with EWTN on in the next room, told him *Go next week*. He walked the long way around the Grove to leave room to change his mind, changed it twice, and came anyway.",
+        "Osei sits back on his heels, wipes his face with his sleeve, and looks up with water in his beard and the pleasure of a man who has just been handed an excuse. “Jack. You have come to knock?” He gestures with the wrench at the sprinkler, which hisses at both of them. “Or to watch a doctor lose to a sprinkler?” Last time it was the box or the board, and Jack took the board and was mated in four. Osei remembers; it’s in his face.",
+        "“My nonna said go next week,” Jack says. “It’s next week.” Osei’s eyebrows climb, slowly, all the way. “A grandmother,” he says, “is not an opinion. She is a diagnosis.” He checks the watch on his wet wrist. “I open at three-thirty. You have four minutes to decide if you are a penitent or a plumber.”"
+      ],
+      "choices": [
+        {
+          "text": "Knock.",
+          "tag": "Go",
+          "set": { "e4_confession": "box", "resolve.jack": "+2", "soul.grace": "+1", "rel.osei.trust": "+1" },
+          "key": "You went to confession, like Nonna said.",
+          "response": [
+            "Osei gets up with the olive tree for a handrail, the left leg brought along after, and squelches across the flagstones to the converted coat closet with KNOCK (gently) on the door. After a minute: “Come.” Lemon polish over old wool; a kneeler and a folding chair, so you can choose; a linen screen with a lamp behind it. Jack takes the kneeler. On the other side the rubber boots creak.",
+            "“Bless me, Father, for I have sinned.” He says how long it’s been. He says what he came to say. It takes longer than he planned.",
+            "When he’s finished, Osei says — and it could be said to anyone who ever knelt there — that some men carry things for other people because they believe it is the price of being allowed to stay in the room. “It can be a good thing to carry. But let somebody carry something for you, sometime. That is also humility.” For a penance: “Call your grandmother and tell her you went. And a decade.” Jack says the Act of Contrition. On the linen the shadow of a hand lifts. “God, the Father of mercies, through the death and resurrection of his Son has reconciled the world to himself and sent the Holy Spirit among us for the forgiveness of sins; through the ministry of the Church may God give you pardon and peace, and I absolve you from your sins in the name of the Father, and of the Son, and of the Holy Spirit.” “Amen.”",
+            "Outside, Jack sits on the bench under the olive tree, damp from the sprinkler’s last word, and opens the RAZR. It’s ten to seven on Glenwood Avenue. Nonna picks up with EWTN going behind her, and he tells her he went. The line is quiet, full of her breathing. “Bravo, Giacomino,” she says. “*Bravo.*” Thirty seconds, start to finish, and she hangs up on herself, the receiver clattering into its cradle on the nightstand. He sits with the closed phone in his hand and the decade still to say, and starts it."
+          ],
+          "goto": "s13"
+        },
+        {
+          "text": "Help him with the sprinkler instead.",
+          "tag": "Control",
+          "set": { "e4_confession": "sprinkler", "trait.control": "+1", "rel.osei.warmth": "+1" },
+          "key": "You helped Fr. Osei lose to his sprinkler instead of going to confession.",
+          "response": [
+            "“Give me the wrench.” Jack kneels in the wet bed beside him, and for four minutes they bring a medical degree and a third of a philosophy education to bear on a brass sprinkler head from 1962 and fix nothing. It gets Jack in the ear and Osei down the collar. At one point it stops dead, and they both sit back in triumph, and it comes on again full blast and soaks them to the skin. Osei ends up flat on his back on the flagstones under the olive tree, boots in the marigolds, laughing from the belly. “The box will keep,” he says, without lifting his head. “Grandmothers do not.”",
+            "Then he gets up, wrings out his sleeve, limps off to the closet at three-thirty on the dot, and leaves the door ajar. Jack stays with the sprinkler. A grad student knocks, goes in, and comes out walking differently. Mrs. Fitch sets a lemon bar on a napkin by his knee and goes back inside. At a quarter to five the closet door closes, gently, from the inside, and Jack is still kneeling in the mud with the wrench in his hand."
+          ],
+          "goto": "s13"
+        },
+        {
+          "text": "Ask about the limp.",
+          "tag": "Candor",
+          "set": { "e4_confession": "limp", "trait.candor": "+1" },
+          "key": "You asked Fr. Osei about his limp, and didn’t knock.",
+          "response": [
+            "“Does it hurt? The leg.” Osei doesn’t answer right away. His eyes go, not to Jack’s face, but to Jack’s left eyebrow, to the scar, and stay there, friendly and professional, the look of the man who once told him it was a ring, or a tooth. “You tell me yours, one day,” he says, “and I’ll tell you mine.” He hands Jack the wrench and squelches off toward the closet. At the door he turns. “The door is open till quarter to five.”",
+            "At four o’clock Jack sets the wrench on the bench and goes and stands at the closet door. KNOCK (gently). He lifts his hand. He stands there with it up, close enough to see the brush marks in the varnish, and on the other side a man is waiting, as patiently as he waited at the chessboard. Jack puts the hand in his pocket. He walks out to Ocean Road with rust from the wrench still on his fingers and waits for the bus, and when it comes he gets on."
+          ],
+          "journal": [
+            { "kind": "person", "id": "osei", "title": "Fr. Gabriel Osei", "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Asked about the leg: “You tell me yours, one day, and I’ll tell you mine.”" }
+          ],
+          "goto": "s13"
+        }
+      ]
+    }
+  }
+}

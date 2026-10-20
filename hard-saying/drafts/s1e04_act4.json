@@ -1,0 +1,445 @@
+{
+ "scenes": {
+  "s02": {
+   "slug": "TUESDAY · 12:10 PM · ST. BRENDAN’S, THE MARIAN SHRINE",
+   "set": {
+    "resolve.lena": 5,
+    "resolve.jack": "+1"
+   },
+   "body": [
+    {
+     "if": "e4_text==\"wit\" || e4_text==\"plain\"",
+     "text": "At 11:58, halfway across Ocean Road with the Grove still dripping from the morning fog, the RAZR goes off in his pocket. He gets it open on the median, tipped to the one angle where the cracked screen will light, while a Prius waits to see what he’s going to do.",
+     "else": "At 11:58 Jack crosses Ocean Road with the Grove still dripping from the morning fog and two pages of Hume folded in his flannel pocket for somebody who wasn’t there to take them."
+    },
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "I'm fine. Thank you. —L.",
+     "time": "11:58 AM",
+     "if": "e4_text==\"wit\" || e4_text==\"plain\""
+    },
+    {
+     "if": "e4_text==\"wit\" || e4_text==\"plain\"",
+     "text": "A period after *fine*, set down like a cup on its saucer."
+    },
+    "St. Brendan’s at ten past noon on a Tuesday is the overturned hull, the blue glass, and about twenty-five people scattered under the ribs: grad students on their lunch, two old women in cardigans, a man in a FedEx uniform, Mrs. Fitch. White vestments for the feast. The Nativity of the Blessed Virgin Mary — the bulletin board says so, in somebody’s bubble capitals, with a cake drawn on it.",
+    "Lena is in the back row. Alone, at the end of the pew by the side aisle, in the black lace mantilla, a missal shut on her knee. Not in Row M this morning, and not, from the look of her, saying why. She doesn’t look up when he passes. He doesn’t make her.",
+    "Kevin is halfway up on the left in a gray quarter-zip, and there’s a Bible on the seat beside him holding Jack’s place like a towel on a deck chair. “Saved you a seat,” Kevin whispers. “Full service. I even opened it to Micah.”",
+    "Before the bell, Mrs. Fitch gets up out of her pew in her lavender cardigan and goes up the side aisle carrying a bud vase with one white rose in it, the stem cut on a slant. She sets it on the ledge of the Marian shrine, beside the small brass plate under the votive rack. She moves it a quarter of an inch. She goes back to her pew and kneels. Jack sees it. Then the bell goes, and everybody stands.",
+    "It’s a feast, so there’s a Gloria, Gus Ferreira hauling it out of the organ in his foghorn baritone. A grad-student lector reads Micah — *But you, Bethlehem-Ephrathah, too small to be among the clans of Judah* — and comes apart on *Ephrathah*, and goes back, and gets it, and the old women nod at her as if she’s done something brave. *With delight I rejoice in the Lord.* Then Osei takes the long Gospel, the whole genealogy, and doesn’t hurry a single name. He reads Amminadab and Shealtiel and Zerubbabel as if each had been introduced to him personally and turned out to be good company.",
+    "The homily is short, the way his are. “Matthew had an editor’s choice,” Osei says. “Every family has relatives it leaves off the Christmas card. He could have left them off. Tamar. Rahab. Ruth, who was a foreigner.” He waits. “And the wife of Uriah.” He doesn’t say her name. He says whose wife she was, and lets twenty-five people work out the rest for themselves. “He put them in on purpose. God is not ashamed of his family.”",
+    "Jack hears it.",
+    "At Communion the last of the line is Lena. She goes down on both knees on the bare floor in front of Osei, the scalloped edge of the lace sliding forward along her cheek, and receives on the tongue, and goes back to her pew without looking at anyone. Gus plays them out on “Immaculate Mary,” the *Ave, Ave* coming round like a tide, and the noon takes the congregation one and two at a time.",
+    "Lena doesn’t go. She takes a taper at the Marian shrine and lights a candle in the top row of the rack, above the brass plate and Mrs. Fitch’s rose, and stands with the taper burning in her fingers until she remembers to shake it out. Osei comes past on his way to the sacristy, the limp a little worse at the end of a feast. “Magdalena,” he says, and nods, the way he says it every time, and keeps going.",
+    "Jack comes up beside her at the rack. Red glass, two dozen small flames leaning one way in the draft from the door. Our Lady above them in plaster and blue, holding out her hands. He means it the way it sounds. “Happy birthday to her.”",
+    "Lena goes still. Not a flinch; the opposite of one. “To who?” Her hand has gone to the medal at her throat and closed on it.",
+    "“Our Lady,” he says. “It’s the Nativity.”",
+    "“Right. Yes. It is.” She lets go of the medal. She smiles at him beautifully, from about a mile away — the smile, he’d bet, that the nuns in New Orleans teach girls for visiting monsignors. “Costigan.” She picks up the OCTAVIA tote from the end of the pew. “I’ll see you Wednesday. Bring yours.”"
+   ],
+   "choices": [
+    {
+     "text": "Light a candle beside hers. Say nothing.",
+     "tag": "Sincerity",
+     "set": {
+      "e4_shrine": "candle",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "He leans a taper into her flame and carries it down one row and lights his own. He puts a dollar in the brass slot, which is all he has in that pocket.",
+      "She looks at his candle. Then she looks at him, and keeps looking, until the new wick has stopped guttering and stands up straight on its own. “Thank you,” she says — low, careful, as if it cost exactly what she had on her. Then she puts the tote on her shoulder and goes out the side door into the courtyard, and he stays with the two candles, one above the other, until the draft from the door settles."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "Kneel at the rail beside her a minute.",
+     "tag": "Control",
+     "set": {
+      "e4_shrine": "kneel",
+      "soul.grace": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He goes down on the kneeler at the shrine rail and folds his hands. After a moment she sets the tote back down and kneels at the other end of it, an arm’s length of worn red vinyl between them.",
+      {
+       "if": "e1_mass_prayer==\"lena\"",
+       "text": "The first Sunday, at the 11:30, three pews behind a mantilla, he prayed for a girl whose name he didn’t know. He knows it now. It doesn’t make it easier to know what to ask for. He says a Hail Mary, plain, the one Nonna taught him before he could tie his shoes, and means every word of it for the girl at the other end of the rail.",
+       "else": "He doesn’t know what to ask for, so he says a Hail Mary, plain, the one Nonna taught him before he could tie his shoes, and means every word of it for the girl at the other end of the rail."
+      },
+      "When he gets up, she’s still kneeling, her forehead almost on her folded hands, the lace gone still. He leaves her there."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“She doesn’t look a day over two thousand.”",
+     "tag": "Wit",
+     "set": {
+      "e4_shrine": "joke",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He watches her try. The corner of her mouth goes, the way it does a half second before she takes a man apart for sport — and then nothing comes after it. The laugh doesn’t arrive. She looks almost puzzled that it hasn’t.",
+      "“Not today, Youngstown.” It isn’t cruel. It’s just not today. She touches his sleeve once on her way past, barely, with the back of her hand, and goes out the side door into the courtyard with the mantilla still on."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s05": {
+   "slug": "WEDNESDAY · 12:58 PM · HOLLIS 302",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "Hollis 302 at two minutes to one: the long oak table and the fourteen chairs, the radiator knocking away at nothing on a seventy-degree day, the sea window full of white sky. Caleb is unpacking his copy of *The Consolations of Disbelief*, which has acquired more Post-its since last week and now looks like a bird in the middle of a molt. Yusuf has his head down on his folded arms, fasting, conserving.",
+    "Lena is already in her chair. She’s here, which yesterday morning in Sandoval she wasn’t, and she’s perfect: hair up, the OCTAVIA tote at her feet, the oatmeal cardigan with its sleeves pulled all the way down to her knuckles. She pushes those sleeves up when she’s about to win. They stay down.",
+    "She has his paper out before he’s sat, and hers. She slides “That a Broken Statue Is Still Herakles” across the oak to him and takes “That God Is the One Who Pays” out of his hand and puts it in the tote without looking at the first page. “Thank you,” she says, as if he were a waiter who had brought the right thing.",
+    {
+     "if": "e4_text==\"notes\"",
+     "text": "He has Tuesday’s notes too, folded in thirds: two pages of Hume in the cursive the Sisters at St. Brigid’s beat into him, Epicurus boxed. He lays them on top of her tote. She looks down at them a while — the closed loops, the tall capitals, the box. “You took notes for me.” She doesn’t say anything else. She doesn’t have to; he watches the pages go into the tote flat, between the books, where they won’t crease."
+    },
+    "Page two. He finds it before Caleb has finished with his Post-its.",
+    {
+     "type": "doc",
+     "title": "“That a Broken Statue Is Still Herakles,” page two",
+     "text": "Objection: *A statue doesn’t feel the arm go.* (Costigan)\n\nReply: Correct, and it is the best objection I have been given. But the argument was never that Herakles feels nothing. It is that what can be lost is not what makes him Herakles. Gage felt the bar go through. He was still the one feeling it. Pain is not proof that you have become someone else. It is proof that someone is still there to mind."
+    },
+    "He reads it twice. Then he looks up, and she’s looking at the sea window as if somebody out there owes her money.",
+    "At 1:07 Hale comes in, sets down the roster and nothing else, and sits. He’s wearing the linen jacket, and there’s no wine on the cuff. He’s quieter than Tuesday’s man in Sandoval, the voice pitched for the table instead of the back of a hall, and when Caleb starts in on psychological continuity and won’t stop, Hale lets him go on, and on, and only lifts one finger when Caleb gets to a third example.",
+    "Week two: personal identity. Locke’s prince and cobbler — the soul of a prince, carrying all its memories, wakes up in a cobbler’s body, and Locke says it’s the prince, accountable only for the prince’s actions; memory makes the man. Then Reid, against Locke: the brave officer. A boy flogged at school for robbing an orchard. The young officer who takes an enemy standard in his first campaign, and remembers the flogging. The old general who remembers the standard and has forgotten the orchard entirely. By Locke, the general is the officer and the officer is the boy, and the general is not the boy. Hale writes it on the board in his barbed-wire hand, three names and two arrows and a gap.",
+    "Yusuf lifts his head for the Ship of Theseus. “Replace every plank, it’s the same ship,” he says. “Replace every rivet on a 747 and it’s a maintenance violation.” The room laughs. Caleb says, “Selah,” and the San Diego boys look at each other.",
+    "“The faithful are very quiet today,” Hale says, to nobody in particular, and then to Yusuf: “Mr. Noorzai, I expect it of you; you’re fasting.”",
+    "Lena speaks then — first time all hour, without putting up a hand, without pushing up a sleeve. “Memory’s a bad criterion. You can forget a thing you did, and it’s still done.”",
+    "Hale doesn’t answer. He looks at her down the length of the oak, and the radiator knocks twice, and somebody’s pen rolls off the table and nobody picks it up. Then he turns back to the board and taps the gap between the boy and the general.",
+    "“Mr. Costigan. Is the general the boy?”"
+   ],
+   "choices": [
+    {
+     "text": "“Yes. He doesn’t remember it and he did it anyway. You don’t get out of a thing by forgetting it.”",
+     "tag": "Press",
+     "set": {
+      "e4_seminar": "same",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "He hears how hard he’s said it only after it’s out. Lena looks at him across the oak — not her winning look, not her red-pen look; the look of somebody who has just heard her own sentence come back from a long way off.",
+      "Hale takes in the pair of them. “Two Catholics agreeing about guilt,” he says. “Somebody fetch a priest; it’s practically a sacrament.” The room laughs. Lena doesn’t, and neither does Jack, and Hale notices that, and moves on to Parfit."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“Only on weekends.”",
+     "tag": "Riposte",
+     "set": {
+      "e4_seminar": "weekends",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "The room goes up — Caleb loudest, slapping the oak, the San Diego boys half a second behind him. Even Yusuf grins into his arms. Hale gives it a small dry nod, a point for form.",
+      "Lena doesn’t laugh. She doesn’t frown either. She looks at the gap on the whiteboard between the boy and the general, and Jack notices, and the laugh in the room goes on a little past where he’d like it to stop."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“Ask Gage.”",
+     "tag": "Candor",
+     "set": {
+      "e4_seminar": "gage",
+      "trait.candor": "+1",
+      "rel.hale.warmth": "+1"
+     },
+     "response": [
+      "“Gage is unavailable for comment,” Hale says. “That was rather the point.” Something of the man from the first day crosses his face — the pleasure of being fought — and goes again, and he’s back at the board.",
+      "Across the oak, Lena almost smiles, and doesn’t, and pulls her sleeves down further over her hands."
+     ],
+     "goto": "s06"
+    }
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "assignment",
+     "title": "Designated antagonists",
+     "text": "Two pages a week, bled on in red. Hers: “That a Broken Statue Is Still Herakles.” My sentence is on page two with my name after it. Mine: “That God Is the One Who Pays.” She has it now."
+    }
+   ]
+  },
+  "s09": {
+   "slug": "THURSDAY · 8:31 PM · CAFÉ BASTILLE, MISSION STREET",
+   "body": [
+    "Thursday is supposed to be a shift. A few blocks downhill, at the bottom of Mission Street, the Anchor’s kitchen is dark tonight and belongs to the hood guys, and the forty-eight dollars Jack isn’t making is sitting in his chest like a stone he swallowed on Tuesday. So he and Margot came in on the 8:10 bus, La Flaca left chained to the radiator pipe at Delgado, and he is about to spend a dollar fifty of money he doesn’t have on a cup of drip coffee.",
+    "Margot isn’t spending anything. Pinned to her black wool, on a safety pin, is a press badge she made herself on a Dymo labeler: MARISOL TIDE · PRESS, raised white letters on red tape. She shows it to the barista. The barista looks at it for a long time, and then at her, and then gives her a coffee. “The *Tide* wants eight column inches on the local scene,” she tells Jack, uncapping her pen. “There is no local scene. I’m going to describe its absence.”",
+    "Café Bastille is a room that has decided to be in Paris: mismatched chairs, every one from a different decade, a tin ceiling painted the color of a smoker’s teeth, French posters curling at the corners. One is *Les Quatre Cents Coups*, the boy on the beach at the end — Jack has seen that boy run toward the sea on Theo’s laptop at four in the morning. At the front, a mic on a stand, a PA with two mics and a lot of tape, a pickle jar for tips. By the register, the sign-up.",
+    {
+     "type": "doc",
+     "title": "Chalkboard by the register",
+     "text": "OPEN MIC — THURSDAYS — 8:30\n3 SONGS OR 5 MINUTES. TIP YOUR BARISTA.\nNO “WONDERWALL.” WE MEAN IT.\n1. Dana R. — poems\n2. Caleb H. — ???\n3. Ted & Ted\n4. Julian"
+    },
+    "Jack’s eyes go past the chalkboard to the back of the room, and stop. The barista follows them. He has a Che Guevara tattooed on the inside of his forearm, the famous one, beret and star, and the face of a man with a grievance. “The Saints girl,” he says. “She with you?”",
+    "“Sort of.”",
+    "“She didn’t fight me about Che.” He sets down the drip. “Two weeks she comes in here and tells me he shot people in a fortress and I’m wearing a war criminal on my arm like a Hello Kitty. Tonight she paid and said thank you.” He looks at the back of the room again. “Is she sick?”",
+    "Lena is alone at the back table under the Truffaut poster, in the Justins and the cardigan, a pot of tea in front of her gone cold enough that the bag is still in it. She has his paper flat under her left hand and a red pen in her right, uncapped, not moving. She looks up and sees him, and for a second she has the face of somebody caught somewhere she didn’t tell anyone she’d be. Beside Jack, Margot, who knows the floor’s movements to the quarter hour and logs them, stops with the free coffee halfway to her mouth. “Broussard,” she says, very quietly, as if she’d seen a fox in the quad."
+   ],
+   "choices": [
+    {
+     "text": "Sit with her.",
+     "tag": "Go",
+     "set": {
+      "e4_bastille": "lena",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "He goes back between the tables with the coffee. She looks at him the whole way and doesn’t say anything, and when he gets there she lifts the OCTAVIA tote off the chair beside her and puts it on the floor between her boots. Then she turns his paper face down, and caps the pen, and sets it on top.",
+      "He sits. She pours herself a cup of the cold tea and drinks it as if it were hot, and he doesn’t say anything about that either."
+     ],
+     "goto": "s09b"
+    },
+    {
+     "text": "Sit with Margot. Leave her the table.",
+     "tag": "Control",
+     "set": {
+      "e4_bastille": "margot",
+      "trait.control": "+1",
+      "rel.lena.trust": "+1",
+      "rel.margot.warmth": "+1"
+     },
+     "response": [
+      "He lifts a hand across the room. Lena looks at it, and at him, and lifts the red pen an inch off his paper, which is as much of a wave as she has in her tonight. Then she goes back to not writing anything.",
+      "He takes the chair at Margot’s table near the PA. Margot looks at him over the black frames. “Restraint,” she says. “I’ll allow it.” Her pen is right there over the Moleskine. She doesn’t write it down."
+     ],
+     "goto": "s09b"
+    },
+    {
+     "text": "Bring her a cortado she didn’t order.",
+     "if": "trait.charm>=8",
+     "tag": "Charm",
+     "set": {
+      "e4_bastille": "coffee",
+      "trait.charm": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "He leaves the drip on the counter and spends another two-seventy-five he hasn’t got on a cortado, the little glass one, the way Theo makes them at nine in the morning as if he were doing you a favor, and carries it back between the tables and sets it down beside the cold tea.",
+      "Lena looks at the glass. Then at him. “That’s a Theo move.” “I learned from the best.” She looks at it a moment more, and then she picks it up in both hands and drinks, and moves the tote off the other chair with her boot. He sits."
+     ],
+     "goto": "s09b"
+    }
+   ]
+  },
+  "s09b": {
+   "slug": "THURSDAY · 9:14 PM · CAFÉ BASTILLE",
+   "music": "Elliott Smith — “Between the Bars”",
+   "set": {
+    "resolve.lena": 4
+   },
+   "body": [
+    "Dana R. is a sophomore in a beret, and her poem is about the patriarchy, and somewhere in the second stanza she rhymes *patriarchy* with *malarkey* and goes on as if nothing has happened. Margot writes it down. Jack, from where he is, can see her face as she does it: it is the happiest he has seen Margot Lindqvist all week, possibly ever, the pen moving fast and the corners of her mouth fighting a losing war.",
+    "Then Caleb H., in his Darwin-fish T-shirt, does four minutes of Assemblies of God — the Visalia twang dropped an octave, the King James, a whole Wednesday-night service in miniature — and then tongues, a rolling torrent of it, eyes shut, one hand up, and the room loses its mind. Ted, of Ted & Ted, is slapping a table. Caleb takes it all the way out, says “*Selah*,” bows, and goes and sits down in the corner by the bathroom with his hands between his knees and his face the color of putty, and doesn’t look up for the next act. Everybody stops clapping. Lena doesn’t, not for a while; she claps for him alone, steadily, after everyone else is done, until he lifts his head and finds out who it is.",
+    {
+     "if": "e4_wed==\"point\"",
+     "text": "The barista with the Che tattoo leans into the mic. “Julian.” And it’s him, the cardigan, the Timex, the case he didn’t open at the wall; he sits on the stool and tunes, and his eyes come up and find Jack once across the room, and go back to the strings.",
+     "else": "The barista with the Che tattoo leans into the mic like a man introducing a prizefighter. “Ladies and gentlemen, Julian Park-Ellis.” And Jack knows him: the gray cardigan, the warm brown face, the boy on the Lighthouse stairs in August playing “Skinny Love” to a stairwell full of drunks while Lena held Laney’s hair and went very quiet. He sits on the stool and tunes, and doesn’t look at anybody."
+    },
+    "He does a cover first, Elliott Smith, “Between the Bars,” almost in a whisper, and Bastille does a thing Jack didn’t think a room on Mission Street could do: it shuts up. The espresso machine stops. A girl at the window puts her phone face down. It’s a song about loving somebody at the bottom of a glass, and Julian sings it as if he’s sorry for both of them.",
+    "Then he retunes a string, slowly, and says into the mic, “This one’s called ‘Fresno.’” Behind the counter the barista picks up a rag and starts wiping down the steam wand, though it’s clean. “He only plays that one once a month,” he says, to Jack, to nobody.",
+    "There is no lyric sheet; there’s only what comes through the PA. A girl from a town where the raisins dry on paper in the rows. *You sang the high part in a borrowed robe.* A choir; a five-pound bag of something at Thanksgiving, or maybe Jack only hears that because Priya said it on Tuesday at a quarter to two. Then the chorus, and Julian’s voice opening up for it, plain as a hand:",
+    "*You said the wall was where you yelled at God / I never heard Him yell back.*",
+    {
+     "if": "e4_bastille==\"margot\"",
+     "text": "Across the room, at the back table, Lena goes still. Not a flinch. The opposite, as if somebody had told her not to move and she meant to be very good about it.",
+     "else": "Beside him, Lena goes still. Not a flinch. The opposite, as if somebody had told her not to move and she meant to be very good about it. He can feel it through the arm of the chair."
+    },
+    {
+     "if": "e4_wed==\"point\"",
+     "text": "The second verse is the Point. Jack would know it with his eyes shut now: the dirt lot, the low wall, the drop on the other side, a voice going out over the water at night with nothing to stop it.",
+     "else": "The second verse is the Point. Jack has only ever seen it from the Lighthouse porch, a dark headland with a dead light on it, but the song puts him there: a wall, the drop on the other side, a voice going out over the water at night with nothing to stop it."
+    },
+    "He hears Selma in the song and Priya’s rule in it, and the name on the brass plate under the votives, and he has the strange tilted feeling of reading somebody else’s mail.",
+    "The second chorus comes round. *You said the wall —* and Lena gets up. Tote, cardigan, quietly, the chair lifted back so it won’t scrape. She goes between the tables with her head down, and the bell over the door rings once, and the door swings shut on Mission Street. His paper is still on the table, face down, the red pen lying on it.",
+    {
+     "if": "e4_bastille==\"margot\"",
+     "text": "From across the room he has watched all of it, and hasn’t moved.",
+     "else": "Her chair is still warm beside him."
+    },
+    {
+     "if": "e4_bastille==\"margot\"",
+     "text": "Margot doesn’t look up from the Moleskine. “Go,” she says. “I’ll review the absence.”",
+     "else": "In his pocket, the RAZR goes. He gets it open under the table."
+    },
+    {
+     "type": "sms",
+     "from": "Margot",
+     "text": "Go. I’ll review the absence. —M.",
+     "time": "9:31 PM",
+     "if": "e4_bastille!=\"margot\""
+    }
+   ],
+   "choices": [
+    {
+     "text": "Grab the paper and go after her now.",
+     "tag": "Go",
+     "key": "You went after Lena in the middle of the song.",
+     "set": {
+      "e4_followed": "now",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He takes the paper and the pen and goes, between the tables, Julian still singing behind him, and the bell over the door rings a second time."
+     ],
+     "journal": [
+      {
+       "kind": "clue",
+       "id": "fresno",
+       "title": "“Fresno”",
+       "text": "Julian’s song. He only plays it once a month. “You said the wall was where you yelled at God / I never heard Him yell back.” Lena left in the second chorus. So did I."
+      },
+      {
+       "kind": "person",
+       "id": "julian",
+       "title": "Julian",
+       "text": "The guitar guy from the Lighthouse stairs. Plays Bastille Thursdays. Wrote a song called “Fresno.” Plays it once a month.",
+       "if": "e4_wed==\"iftar\""
+      },
+      {
+       "kind": "person",
+       "id": "julian",
+       "title": "Julian",
+       "text": "The guitar guy from the Lighthouse stairs. Used to sit at the wall with Nora — she sat on the wrong side and yelled at God, he sat on the right side and played whatever she asked. Wrote a song about it called “Fresno.” Plays it once a month.",
+       "if": "e4_wed==\"point\""
+      }
+     ],
+     "goto": "s10"
+    },
+    {
+     "text": "Stay till he’s finished. Then go.",
+     "tag": "Go",
+     "key": "You stayed till Julian stopped, then went after Lena.",
+     "set": {
+      "e4_followed": "stayed",
+      "trait.control": "+1",
+      "rel.julian.warmth": "+1"
+     },
+     "response": [
+      "He stays. Julian gets through the chorus, and the bridge, and starts the third verse, and his voice goes on the first line — just goes, the note breaking up like a radio losing the station. He stops. The guitar rings on alone a moment and he puts his palm flat on the strings. “That’s —” He looks at the floor. “That’s as far as that one goes.”",
+      "The room claps for a song that didn’t end. Jack claps too."
+     ],
+     "journal": [
+      {
+       "kind": "clue",
+       "id": "fresno",
+       "title": "“Fresno”",
+       "text": "Julian’s song. He only plays it once a month. “You said the wall was where you yelled at God / I never heard Him yell back.” His voice went before the last verse. Lena left in the second chorus."
+      },
+      {
+       "kind": "person",
+       "id": "julian",
+       "title": "Julian",
+       "text": "The guitar guy from the Lighthouse stairs. Plays Bastille Thursdays. Wrote a song called “Fresno.” Couldn’t finish it.",
+       "if": "e4_wed==\"iftar\""
+      },
+      {
+       "kind": "person",
+       "id": "julian",
+       "title": "Julian",
+       "text": "The guitar guy from the Lighthouse stairs. Used to sit at the wall with Nora — she sat on the wrong side and yelled at God, he sat on the right side and played whatever she asked. Wrote a song about it called “Fresno.” Can’t finish it.",
+       "if": "e4_wed==\"point\""
+      }
+     ],
+     "goto": "s09c"
+    }
+   ]
+  },
+  "s09c": {
+   "slug": "THURSDAY · 9:52 PM · CAFÉ BASTILLE, THE BAR",
+   "set": {
+    "e4_julian_met": true
+   },
+   "body": [
+    "Ted & Ted are doing something to a Decemberists song that the Decemberists will never have to know about. Jack collects his paper and the red pen from the back table — the teapot cold, the cup still half full — and on the way to the door he passes the end of the bar, where Julian is sitting by himself with a glass of water and the guitar case standing between his feet like a dog that knows the drill.",
+    "Julian sees him, and sees the paper. “Your friend left in the second chorus,” he says. “People do.” He turns the glass a quarter turn on the bar. “I think it’s the chorus.”",
+    {
+     "if": "e4_wed==\"point\"",
+     "text": "Then, as if it had only now reached him: “You came.” “Margot’s reviewing the local scene.” “Is there one?” “She says no.” Julian smiles at the water glass.",
+     "else": "“You were on the Lighthouse stairs,” he says. “In August. With her.” He holds out a hand with calluses on the fingertips like a row of small coins. “Julian.” “Jack.”"
+    },
+    "“Lena,” Jack says. He doesn’t know why he says it; to give her a name in the room, maybe, after the way she went out of it. Julian takes it the way he took the barista’s introduction — politely, a word without any music in it yet — and nods.",
+    "“Is she okay?”",
+    "Jack opens his mouth and finds out he doesn’t know. “I don’t know.”",
+    "Julian looks at the door, at the dark glass with Mission Street sliding down beyond it toward the water. “From here people go to the harbor,” he says. “When they’ve got a song in them they didn’t ask for.” He picks up the water. “It’s downhill. That’s most of the reason.”",
+    "Jack folds the paper into his back pocket against the Hopkins, and the bell rings over the door, and Mission Street takes him downhill."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "julian",
+     "title": "Julian",
+     "text": "The guitar guy from the Lighthouse stairs. Plays Bastille Thursdays. Wrote a song called “Fresno” and can’t finish it. Told me where people go after it.",
+     "if": "e4_wed==\"iftar\""
+    }
+   ],
+   "next": "s10b"
+  },
+  "s13": {
+   "slug": "SATURDAY · 11:48 PM · THE ANCHOR",
+   "music": "Patsy Cline — “Walkin’ After Midnight”",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "Jack’s first Saturday at the Anchor is a different animal from a Tuesday. By eleven the booths are full of Las Olas kids sobering up on hash browns, two fishermen at the counter are eating pie with the slow seriousness of men who get up at four, and Rudy is on the line flipping eggs for people who will not remember eating them. Somebody keeps feeding the jukebox Patsy Cline, and Gloria keeps letting them.",
+    "At a quarter to nine the RAZR went in his apron pocket, and he read it with wet hands at the back door.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "18-15 usc. dad turned the radio OFF. he never turns it off",
+     "time": "8:44 PM"
+    },
+    "He stood a minute in the smell of the dumpster and thumbed back the only thing he could think of.",
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "turn it back on. low. he wont say anything",
+     "time": "8:47 PM"
+    },
+    "Nothing since. Out front the chalkboard says PIE OF THE DAY: OLALLIEBERRY, and at half past eleven Gloria comes through the swinging door with a fork and a sliver on a saucer and holds both out at him until he dries his hands. “Hon. You rated my marionberry a four in front of God and the register. You’re gonna rate this one.”",
+    "He eats it standing at the Hobart: nearly black, tart and then not, the crust shattering the right way. He takes a second bite to be sure, which is a mistake, because now he’s sure. “Nine.” Gloria waits. “Dad would eat two pieces and complain about the second.” Gloria nods as if that is precisely the kind of thing a person should say about a pie, and goes out and chalks it on the board under the marionberry.",
+    {
+     "type": "doc",
+     "title": "The board by the register",
+     "text": "PIE OF THE DAY: OLALLIEBERRY\nJACK’S RATINGS:\nMARIONBERRY 4/10\nOLALLIEBERRY 9/10"
+    },
+    "At 11:48 the last-but-one 11 bus sighs at the wharf stop, and through the window over the Hobart he sees who gets off it. Then the bell over the front door, and Gloria’s voice: “Dish man. You got a visitor.”",
+    "Lena is just inside the door in Keds and a sundress and the cardigan, his jacket folded over her arm — Danny’s Carhartt, the canvas pale at the seams. She’s looking at the back booth, where in August she saw a magazine on a table and walked out. Then she stops looking at it, and looks at him coming out of the kitchen with his sleeves wet to the elbow.",
+    "“Laney said if I didn’t bring it back she’d wear it to rush.” She holds the jacket out. He takes it. It’s warm from her arm.",
+    {
+     "if": "e4_lena_danny==\"told\"",
+     "text": "“Tell your brother his jacket walked a girl home,” she says, quieter, just for him. He hangs it on the hook by the walk-in, where he can see it.",
+     "else": "“It did three miles in the fog,” she says. “It’s earned a night off.” He hangs it on the hook by the walk-in, where he can see it."
+    },
+    "She takes a stool at the counter. Gloria comes down the counter with the coffee pot and stops in front of her and looks her over, top to bottom, the gray bun tilted, the pencil in it like a pin through a butterfly. “You walked out on me in August. Left a five on a two-dollar coffee.” Lena opens her mouth, all New Orleans manners, to apologize. “You’re the one he went after.” Gloria pours without looking at the cup. “Pecan,” she says. “Sweet all the way through, and it’ll break your teeth if you’re not careful.”",
+    "One of the fishermen laughs into his pie. Lena takes this in, and decides — he can watch her decide it — to be flattered. Then she sees the board by the register, and she pounces on it. “*Nine?* Costigan gave something a *nine*? Does the diocese know? Has anybody called Rome?” She turns on the stool. “Ma’am, I’ll have whatever made Youngstown give out a nine.”",
+    "Gloria brings it. Lena eats it the way she does everything, all the way, and points her fork at him through the pass. “Eight. I’m taking one off for you being right.” And then, with a mouthful, dead serious: “WHO DAT. One day. Ten a.m., Sully’s. Black and gold or don’t come.” He doesn’t own anything black and gold, and she has to know it. She’s smiling at him like that’s his problem to solve, and it’s the first time all week the smile has been close enough to touch.",
+    "At 12:04 the LG goes off on the counter by her saucer. She looks at the screen, and something comes up in her face that has been missing since Monday, and she says, “Excuse me,” to Gloria, and takes it out through the front door onto the wharf. Midnight here. Two in the morning in New Orleans.",
+    "Jack goes back to the Hobart, because there are racks. Through the window over the machine he can see her at the railing under the sodium light, the harbor black behind her — one arm wrapped around herself, the phone at her ear, laughing. Then not laughing. Then laughing again. He sends a rack through, and the steam fogs the glass, and when it clears she’s still listening.",
+    "She comes back in at 12:19 with the phone folded in her hand and sits back down on the stool. Jack is drying his hands in the pass. “Wes,” she says. “He’s at a party. He wanted to tell me the Saints are going to win tomorrow.” She tucks a five under the saucer, square. “He sounded happy.”",
+    "Gloria refills her coffee and, for once, doesn’t rate anything.",
+    {
+     "if": "e4_goodnight==\"magdalena\"",
+     "text": "At 12:28 the last 11 shows its lights at the end of the wharf and she’s off the stool at a run, the cardigan flying, the bell over the door. “Goodnight, Jack,” she calls back, already gone into it, and he’s already turning back toward the kitchen.",
+     "else": "At 12:28 the last 11 shows its lights at the end of the wharf and she’s off the stool at a run, the cardigan flying, the bell over the door. “Goodnight, Costigan,” she calls back, already gone into it, and he’s already turning back toward the kitchen."
+    },
+    "When he goes past the hook by the walk-in with a bus tub on his hip, the jacket smells of the harbor, and of the fog on Ocean Road, and faintly of somebody else’s shampoo. Rudy, without looking up, slides a plate of eggs onto the pass: dish man eats. Patsy Cline starts over. Jack sets the tub down by the Hobart and pulls the door, and the steam comes up."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "pie",
+     "title": "The Anchor",
+     "text": "Marionberry: 4/10. Olallieberry: 9/10 — Dad would eat two pieces and complain about the second. Gloria rated Lena: pecan. I work here Tue/Thu/Sat, seven to one. Once a year the kitchen goes dark on a Thursday."
+    }
+   ],
+   "end": true
+  }
+ }
+}
