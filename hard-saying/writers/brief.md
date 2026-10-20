@@ -267,3 +267,20 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Thanksgiving (S1).** Jack invites Lena to Youngstown. She wants to go, but it's a long shot (Wes; her own family).
   The room decides whether she can. **If she doesn't go, Theo does: Jack invites him.**
 - **No "never" notes after five episodes.** It's all working.
+- **Jack's two girls: player's design (binding).**
+  - **The tryer** ("the girl you bring home to mama"): cute, sweet, warm, great in so many ways. She genuinely tries
+    with his faith *and* his intellectual rigor. But she doesn't have the allure over him that Lena and the magnetic
+    girl do: it's nice, it's warm, and there's nothing deeper there. Likely Catholic too, either less devout, or devout
+    but without depth. The ending is sad because she did everything right. **Laney hates her on principle; Lena tells
+    Laney to be nice; Theo is always polite but always Team Lena.**
+  - **The magnetic girl**: her flaws sit exactly where the tryer's strengths are. She's respectful of his faith and
+    mildly curious, but not really interested in it. She's fierce, intelligent, funny, sexy and utterly compelling: a
+    real temptation that truly draws Jack in (resolve and restraint are tested). **Laney begrudgingly likes her; Lena
+    can't stand her; Theo knows her (from before or from his world) and, as always, remains Team Lena.**
+  - Design principle: the tryer has the faith and the effort without the fire; the magnetic girl has the fire without
+    the faith. Only Lena has both. Neither girl is a strawman, and each must be someone the player could love.
+  - **Refinements:** the tryer is a **sincere, shallow cradle Catholic**. She goes to Mass, prays her grandmother's
+    rosary and loves the community, but has never wrestled with any of it; Jack's arguments delight her and slide off.
+    **Jack meets her at the Newman Center**, the nicest girl there; everyone thinks they're perfect together. The
+    magnetic girl comes from **Theo's LA orbit** (an actress, a director's daughter or similar: sharp, glamorous), and
+    Theo knows exactly what she is. **Which girl comes first** (in the timing-tragedy slot): room decides.

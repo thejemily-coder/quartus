@@ -1,0 +1,571 @@
+{
+ "scenes": {
+  "s09": {
+   "slug": "SUNDAY · 1:52 AM · SEACLIFF ROAD, PI LAMBDA CHI, THE PORCH STEPS",
+   "music": "Kid Cudi — “Day ’n’ Nite”",
+   "set": {
+    "resolve.lena": 6
+   },
+   "body": [
+    "Pi Lambda Chi at ten to two in the morning: the white colonial with the black shutters and the best porch on Seacliff Road, the porch strung with Christmas lights and stacked with hay bales, a bedsheet banner — PI LAM RODEO — sagging off the second-floor rail. Kid Cudi is coming out the open front door, and the bass comes with him, down through the porch boards and the steps and up through the soles of Jack’s shoes. Two Sigma Rho boys in borrowed straw hats are trying to rope a plastic lawn flamingo with a phone charger. The whole house smells of hay, Natty Light and the jasmine on the neighbor’s fence. Jack locks La Flaca to the porch rail and clicks Ray’s light off to save the battery.",
+    "Lena is on the bottom step in a blue cotton dress and the oatmeal cardigan, barefoot, the brown Justins standing side by side on the step beside her like two people waiting for a ride. She has a red Solo cup, and when she sees him she lifts it an inch. Water. Proof, or a toast.",
+    "Through the doorway he can see the stairs. Laney is going up them, more or less, steered at each elbow by a sister in a bandana, with Sloane Kittredge one step behind and a hand flat between her shoulder blades: clipboard energy at two in the morning, no clipboard required. The pink hat is gone. There’s hay in Laney’s hair and her mascara has started south and she has never looked more like herself. She finds Jack over the banister. “*FIREMAN.*” The sisters keep steering. “I’m not a mess, sugar,” she calls down. “I’m a *destination*.” Then her arm comes over the banister, and one finger, aimed at the bottom step. “Take her home, fireman. She’s being a *mother*.” She says it laughing. It comes down the stairs anyway and lands on the step, and Lena looks at the water in her cup. Sloane leans over the rail, kind and entirely final. “We’ve got her,” she tells Lena. “She’s ours now.” Then the landing takes the three of them, and a door upstairs shuts on the music.",
+    "Theo is leaning in the doorway in black cashmere with hay all over it. Sloane’s hand was on his arm until she went up the stairs, and then it wasn’t. He looks up the stairwell after them. “I’ll stay,” he says. Then, to Lena, easily, as if it were nothing: “I’m up anyway.”",
+    "Lena is on her feet. She gives it to him fast and exact, one item at a time, the way she reads out a citation. “On her side. Not her back — her *side*. Water by the bed, and make her drink half of it before she sleeps. She had one of her pills at eleven — *one*, she says — and vodka after. If her breathing — ”",
+    "“I know what to look for,” Theo says. He goes in and takes the stairs two at a time.",
+    "Then it’s just the porch light and the hay and the bass in the boards. Lena stands on the step and looks at the empty doorway until the song changes.",
+    {
+     "if": "e6_reply==\"rescue\"",
+     "text": "Then she turns around and looks at him. “I said *request*.”"
+    },
+    "She bends and picks the boots up by their pull-straps and doesn’t put them on. “Walk me home, Costigan,” she says. “The long way.” And she turns east."
+   ],
+   "choices": [
+    {
+     "text": "Take her boots.",
+     "tag": "Sincerity",
+     "set": {
+      "e6_porch": "boots",
+      "rel.lena.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He holds out his hand. She looks at it, and at him, and gives them over: two old brown Justins, resoled twice, warm from the step and heavier than they look. He hooks both pull-straps over his fingers, and that’s how he carries them, from here on, all the way."
+     ],
+     "goto": "s09b"
+    },
+    {
+     "text": "“The long way’s west.”",
+     "tag": "Wit",
+     "set": {
+      "e6_porch": "west",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Not tonight it isn’t,” Lena says. She is already walking east, the boots swinging from one hand, and he goes after her."
+     ],
+     "goto": "s09b"
+    },
+    {
+     "text": "Just walk.",
+     "tag": "Control",
+     "set": {
+      "e6_porch": "walk",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He falls in beside her. She swings the boots by their straps as she walks, in time with the bass until the bass is a block behind them, and then in time with the surf coming up at the end of the street."
+     ],
+     "goto": "s09b"
+    }
+   ]
+  },
+  "s09b": {
+   "slug": "SUNDAY · 2:06 AM · THE BEACH BELOW LAS OLAS",
+   "music": "The National — “Slow Show”",
+   "body": [
+    "The bluff stairs go down from Seacliff below the bench where she said hi to his brother on Thursday: wooden treads with sand on every one, a handrail furred with salt, a hundred-odd steps into the dark. Then the beach. It’s two nights past the new moon and there is no moon at all. The stars go clear down to the water, more of them than Youngstown has ever been allowed, and offshore the whole glow of the town lies smeared orange across a fog bank that hasn’t made up its mind to come in. The sand at the wash line is packed hard and cold enough to ache. Lena walks down in the wash, where it’s wettest, and lets the Pacific come up as far as it likes.",
+    "At 2:10 the horn comes off the bluff right over their heads. Two long, one short, one long. Then the freight itself, so close above them in the dark that the sand under Jack’s shoes takes a share of the weight: car after car after car, steel on steel up there past the lip of the bluff. He knows how this goes. The number starts on its own, one car into the next, the way it has since he was six. He doesn’t let it. Beside him in the wash Lena’s mouth is still. Neither of them counts. It is the longest train he has ever heard, and it goes over them uncounted, every car of it, and thins away north up the coast, and the surf comes back up the beach to fill the place where it was.",
+    "“She has sisters now,” Lena says.",
+    "She walks a few more yards. “Thursday she ran across Seacliff to me first. Across the whole street, in a hat, through sixty girls screaming. I watched her pick me out.” The wash runs up white and slides back. “Tonight she didn’t need anybody to run to. Which is good. Which is what she wanted, and it’s good.” She kicks at the foam. “I’m not her mother.”"
+   ],
+   "choices": [
+    {
+     "text": "“She ran to you first. That’s not a Thursday thing.”",
+     "tag": "Sincerity",
+     "set": {
+      "e6_laney_lena": "first",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Lena walks on that for the length of three waves, and when she does say something, it’s about the water. “It’s colder than the Gulf,” she says. “The Gulf in September is a bathtub somebody forgot to drain.” But she’s walking a foot nearer to him than she was."
+     ],
+     "goto": "s09c"
+    },
+    {
+     "text": "“She called you a mother because hers is the one she’s scared of.”",
+     "tag": "Candor",
+     "set": {
+      "e6_laney_lena": "mother",
+      "rel.lena.friction": "+1",
+      "rel.lena.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Lena stops in the wash. The water goes out around her and pulls the sand from under her, and she lets it. She heard the voicemail too, on Wednesday, on the floor of 217: *Delaney Rose. Posture, sweetheart.* “I know,” she says. “That’s why it worked.”"
+     ],
+     "goto": "s09c"
+    },
+    {
+     "text": "“I was adored, sugar. Professionally.”",
+     "tag": "Wit",
+     "set": {
+      "e6_laney_lena": "adored",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He does Laney: the Dallas vowels, the hip, one hand on top of a hat that isn’t there. Lena laughs out loud, a bark that goes off down the empty beach and startles something in the kelp, and she points at him. “*Don’t* do her,” she says. “You do her better than I do.”"
+     ],
+     "goto": "s09c"
+    }
+   ]
+  },
+  "s09c": {
+   "slug": "SUNDAY · 2:18 AM · THE CREEK MOUTH, BELOW THE GROVE",
+   "body": [
+    "They hear it before they see it: a low, steady tearing in the dark ahead, louder than the surf and nothing like it. Then it’s at their feet — the Lagoon’s outlet coming out from under the Grove, black and moving and full of broken starlight, spread across the beach in a sheet that braids and unbraids on its way to the sea. The air off it is ten degrees colder and smells of eucalyptus and mud. The noise of it fills up the place where talking was.",
+    {
+     "if": "e6_porch==\"boots\"",
+     "text": "Her boots hang from his left hand by their straps.",
+     "else": "She has the boots in her left hand by their straps."
+    },
+    "He doesn’t bother with his shoes. They’re Anchor shoes; they’ve been wetter. He rolls his jeans to the shin, and she gathers the blue dress up at the knee in her free hand, and the two of them stand on the edge and look at the water, and the water goes on not caring."
+   ],
+   "choices": [
+    {
+     "text": "Offer your arm.",
+     "tag": "Sincerity",
+     "set": {
+      "e6_creek": "arm",
+      "rel.lena.heat": "+1",
+      "resolve.jack": "-1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At the creek mouth you offered Lena your arm, and she took it.",
+     "response": [
+      "He crooks his right arm and holds it out, an usher at a wedding. She looks at it. Then she puts her hand on his forearm, and they go in.",
+      "The cold takes him at the shins like a dropped wrench. Her fingers close through the flannel on the first step and don’t let go, and she tests every stone before she trusts it, and halfway over one rolls under her and her grip goes hard, and for two steps all her weight is on his arm and the whole warm side of her is against him — hay, salt, her hair at his jaw — and keeping his arm an arm, and not letting it become a hand at her waist, costs him exactly everything he carried into the water. Then the far bank. She lets go. She shakes the creek off one leg like a cat and walks on up the sand."
+     ],
+     "goto": "s10"
+    },
+    {
+     "text": "Go first. Don’t look back.",
+     "tag": "Control",
+     "set": {
+      "e6_creek": "first",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "At the creek mouth you went first and didn’t look back. She took your sleeve anyway.",
+     "response": [
+      "He goes in first. The cold takes him at the shins and climbs. He doesn’t look back; he listens to her come in behind him — the splash, the hiss through her teeth, a word in French that no nun ever taught anybody — and keeps his eyes on the far bank.",
+      "Halfway, her fingers close on his sleeve from behind, a fistful of flannel at the elbow, and hold on. Not turning around costs him more than he would have believed eleven inches of water could charge: to keep facing the dark bank with her hand knotted in his sleeve and her breath at his shoulder blade, and walk, and keep walking. On the far bank she lets go of the sleeve as though she never had it."
+     ],
+     "goto": "s10"
+    },
+    {
+     "text": "Offer to carry her across.",
+     "if": "trait.reckless>=8",
+     "tag": "Reckless",
+     "set": {
+      "e6_creek": "carry",
+      "rel.lena.friction": "+1",
+      "trait.reckless": "+1"
+     },
+     "key": "You offered to carry Lena across the creek. She declined, with threats.",
+     "response": [
+      "“Costigan,” she says, “I *will* drown you in eleven inches of water.”",
+      "She wades. He goes in a yard downstream of her to make a point, and the channel shelves off under him and takes him to the knee, and the cold goes up the denim like bad news. On the far bank she reaches out and steadies herself on his shoulder for the one step up out of the soft sand, her whole palm flat on him through the flannel, and he stands as still as a fence post and lets himself be a fence post, and it costs him more than the water did. Then she gets a look at his jeans, black to the knee and streaming, and laughs at them all the way up the beach."
+     ],
+     "goto": "s10"
+    }
+   ]
+  },
+  "s10": {
+   "slug": "SUNDAY · 2:31 AM · CAMPUS POINT, THE LIFEGUARD TOWER",
+   "body": [
+    "The lifeguard tower at Campus Point has been closed since Labor Day. It stands up on the sand on its pilings like a shed somebody forgot to take home: a plywood shutter chained across the window, a sun-bleached sign — NO LIFEGUARD ON DUTY — and a wooden ramp down to the beach, where they sit, a foot of splintered gray boards between them. The wind off the water works at the shutter, and the chain lets it go an inch and catches it, over and over, a small dry knock behind their heads. Out past the sand the beginner break folds over in the dark, pale where it breaks, and then not.",
+    {
+     "if": "e6_creek==\"carry\"",
+     "text": "His jeans squeak when he sits. Lena listens to them with enormous interest. “You *squeak*, Costigan.” She is nowhere near done enjoying it."
+    },
+    "She pulls the cardigan down over her knees. Then, conversationally, like the weather: “Becca Lindell told my lemon bar she told her mother.” He waits. “She’s lighting a candle in Coeur d’Alene, Costigan. There is a woman in Idaho on her knees about you.”",
+    {
+     "if": "e6_alarm==\"notdate\"",
+     "text": "“I told you at three in the morning it wasn’t a date,” she says, “and you agreed with me. I’d like to know which of us was wrong.”"
+    },
+    "She turns her head on her knees and looks at him. “Was it?”"
+   ],
+   "choices": [
+    {
+     "text": "“It seemed like the right thing to want.”",
+     "tag": "Candor",
+     "set": {
+      "e6_becca_lena": "right",
+      "rel.lena.friction": "+1",
+      "rel.lena.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“That’s the worst reason I’ve ever heard, Costigan,” Lena says, “and I’ve heard you defend the Browns.” The shutter knocks twice. Then, lower, and not for her own sake — he can hear whose sake it’s for: “She told a whole table the truth on the first date. In front of Mrs. Fitch. Do you know how rare that is? That’s okra in California.” She looks at him straight. “Don’t be careless with her.”"
+     ],
+     "goto": "s10w"
+    },
+    {
+     "text": "“She’s lovely. I don’t know what I’m doing.”",
+     "tag": "Sincerity",
+     "set": {
+      "e6_becca_lena": "lovely",
+      "rel.lena.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“She *is* lovely,” Lena says, and means every word. “She pulled a calf at twelve and told me about it like it was a recipe.” She works a splinter loose from the ramp and flicks it into the dark. “Then find out what you’re doing. Before she does.” And, plainer: “Don’t be careless with her.”"
+     ],
+     "goto": "s10w"
+    },
+    {
+     "text": "“It was a beach cleanup. I have it in writing. From you.”",
+     "tag": "Wit",
+     "set": {
+      "e6_becca_lena": "writing",
+      "rel.lena.friction": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“I said it wasn’t a date,” Lena says. “I didn’t say I was right.” She tips her head at him on her knees, pleased with herself, and he has nothing, and the shutter knocks, and she waits, very politely, while he looks for something, and the shutter knocks again, and the round is hers."
+     ],
+     "goto": "s10w"
+    }
+   ]
+  },
+  "s10w": {
+   "slug": "SUNDAY · 2:44 AM · CAMPUS POINT, THE LIFEGUARD TOWER",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "She turns it herself. She doesn’t look at him to do it.",
+    "“Wes missed eight-oh-four.”",
+    "The shutter knocks on its chain.",
+    "“My phone was in my tote in a barn with a mechanical bull in it, and at eight-oh-four it didn’t ring. Eight-thirty, nothing. Nine. I went out and stood by the mailbox on Seacliff like a war bride. At nine-forty it rang. From somewhere loud. Music, a lot of people, my brother Luc in the back yelling something about a cab. He said he loved me. Twice.” She picks at the hem of the cardigan. “Once for me, and I’m not sure who the other one was for.”",
+    "Out on the break a set comes through, three in a row, with nobody to ride them.",
+    "“He calls from somewhere loud a lot,” she says. “Lately.”",
+    "She pulls her knees up under the cardigan and sets her chin on them, and says it plainly, a thing decided before she ever sat down: “I’ve decided not to notice.”",
+    "The chain lets the shutter go, and catches it.",
+    "Jack has three things. He’s had them for weeks without knowing he was keeping them, and here they are, all three, in his mouth: a wall post liked from New Orleans in the dead middle of the night, a phone call from a party, a text in capitals from the Dome with the letters missing."
+   ],
+   "choices": [
+    {
+     "text": "“You don’t have to be fine with me.”",
+     "if": "trait.sincerity>=25",
+     "tag": "Sincerity",
+     "set": {
+      "e6_wes": "fine",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "When Lena said she’d decided not to notice, you told her she doesn’t have to be fine with you.",
+     "response": [
+      "It’s his Ocean Road line, and she knows it the second it’s out; he watches her know it. “I know,” Lena says, chin on her knees. “That’s the problem, Youngstown.” Then, quieter: “If I stop being fine with you, I don’t know how I’m supposed to — ” She doesn’t finish. The shutter knocks, and that is the end of the sentence."
+     ],
+     "goto": "s10b"
+    },
+    {
+     "text": "Tell her what you’ve seen.",
+     "if": "trait.candor>=18",
+     "tag": "Candor",
+     "cue": "Lena will remember that.",
+     "set": {
+      "e6_wes": "told",
+      "e6_told_wes": true,
+      "rel.lena.trust": "+1",
+      "rel.lena.friction": "+2",
+      "resolve.jack": "-1",
+      "soul.honesty": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "You told Lena what you’ve noticed about Wes: the four a.m. like, the party call, the spelling.",
+     "response": [
+      "So he tells her. Not much, and not dressed up. The first week of school, his wall post, liked from New Orleans at four in the morning Wes’s time. The night before the opener, at the Anchor, a call from a party at two in the morning Wes’s time — *He sounded happy*, she said. Last Sunday, from the Dome, the capitals and the missing letters. He lays the three things down on the boards between them and stops.",
+      "Lena is on her feet before he’s finished. “He was *sixteen*.” Her voice carries; there’s nobody out here to hear it but the tower. “His uncle’s boat. Aluminum, flat-bottomed, a motor you start with a rope. Four days. Gentilly, the edge of the Ninth Ward, people on roofs, people in attics with no water. He took my brother and my sister out a second-floor window next door — Jude and Josie, they were *nine* — one and then the other. He was sixteen years old.” She stands over him on the ramp with her arms wrapped around herself in the cardigan. “He’s a good man. Don’t.”",
+      "Then she sits back down, not close, and it’s worse, because it’s quiet. “You noticed,” she says. “Of course you noticed. You notice everything you’re not supposed to.”"
+     ],
+     "goto": "s10b"
+    },
+    {
+     "text": "“Okay.”",
+     "tag": "Control",
+     "set": {
+      "e6_wes": "okay",
+      "rel.lena.warmth": "+1",
+      "trait.control": "+1"
+     },
+     "key": "When Lena said she’d decided not to notice, you said okay, and let her.",
+     "response": [
+      "“Okay,” he says.",
+      "She waits to see if there’s more, and there isn’t. The four in the morning and the two in the morning and the capitals go back down where he keeps things, and he keeps them. The shutter knocks. After a while she bumps his arm once with her shoulder, the knock of somebody in the next room letting you know they’re still in the house, and sits back."
+     ],
+     "goto": "s10b"
+    },
+    {
+     "text": "Make a joke about Luc’s spelling.",
+     "tag": "Wit",
+     "set": {
+      "e6_wes": "joke",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "You made a joke about Wes, and Lena asked you not to be funny. You stayed.",
+     "response": [
+      "“Was Luc yelling in capitals too?”",
+      "It’s a good line. He can hear how good it is as it goes. Lena doesn’t laugh. She turns her face on her knees and looks at him, and her voice is very low. “Don’t. Don’t be funny right now. Just stay.”",
+      "So he stays. He sits on the ramp beside her with his hands between his knees while the shutter knocks and the break comes in pale out of the dark, and he says nothing at all, and he stays."
+     ],
+     "goto": "s10b"
+    },
+    {
+     "text": "Light a Red instead of answering.",
+     "if": "trait.reckless>=8",
+     "tag": "Reckless",
+     "set": {
+      "e6_wes": "red",
+      "reliquary": "+1",
+      "jack_cigs": "+1",
+      "trait.reckless": "+1"
+     },
+     "key": "When Lena talked about Wes, you lit a cigarette instead of answering. She took it.",
+     "response": [
+      "He doesn’t answer. He gets the Reds out of his back pocket, the pack crushed flat against the Williams, and lights one with his back to the wind. He gets exactly one drag. Lena reaches over without looking, takes it out of his mouth, puts it out in the sand beside the ramp, and has the Altoids tin out of her cardigan pocket and open before the smoke has cleared. She tears a strip off the bottom of a PI LAM RODEO flyer and writes on her knee by the light of her LG.",
+      {
+       "type": "doc",
+       "title": "The Reliquary, slip No. 4",
+       "text": "No. 4 · 9/20/09 · Campus Point · in lieu of an answer"
+      },
+      "“That’s four, Costigan.” She snaps the tin shut."
+     ],
+     "goto": "s10b"
+    }
+   ]
+  },
+  "s10b": {
+   "slug": "SUNDAY · 3:08 AM · THE MARINE LAB STAIRS",
+   "body": [
+    "The Marine Lab sits dark at the foot of the bluff with its back to the sea, and the stairs go up beside it: concrete, a pipe rail beaded wet, a caged bulb on every landing. Behind a steel door on the first landing something electric hums, low and steady — the touch-tank pump, moving the ocean around in the dark for the anemones all night, whether anybody comes to look or not.",
+    {
+     "if": "e6_wes==\"told\"",
+     "text": "For the first flight she is formal. “Mind the step, Mr. Costigan.” He minds it. Then the second flight is long, and he has a story, and the comedy wins back half of her before the landing."
+    },
+    "He tells her about Ocean Road, and he tells it for laughs, because it is one. La Flaca with no light. Rafi on his skateboard holding onto the basket and getting towed. A gray Crown Victoria coming up behind them slow as a hearse with a light going on the dash, and a man in a windbreaker leaning out the window: *License and registration.* To a bicycle. “And I gave it to him.” “You did *not*.” “My Ohio driver’s license. I handed it in the window.” Lena stops on the step and holds the rail. “He read it out loud. *John Anthony Costigan. Youngstown.*” And then Rafi coasting up out of the fog — *Pop.* The Vehicle Code by heart, a white lamp visible from three hundred feet. The bike reported abandoned at the harbor in 2007. *Your abuela is not a court.*",
+    {
+     "if": "e6_ray==\"mouth\"",
+     "text": "“And then I asked him if it was about the light or the bike.” “Oh, you *didn’t*.” “He said it was about my mouth.”"
+    },
+    {
+     "if": "e6_ray==\"candor\"",
+     "text": "“I told him it was on me. No light. My fault.” “Of course you did,” she says, as if she’d have bet the house on it."
+    },
+    {
+     "if": "e6_ray==\"charm\"",
+     "text": "“I said, *Evening, Officer.*” “Oh, no.” “*Detective*,” Jack says, in the man’s voice, flat as a parking ticket."
+    },
+    {
+     "if": "e6_ray==\"quiet\"",
+     "text": "“I put my hands on the bars and didn’t say a word. He told Rafi I know how to get pulled over. He said Rafi could learn.”"
+    },
+    "She laughs, properly, there on the stairs, her head down over the cold rail, and it comes back to them off the side of the lab. “What *is* he, Highway Patrol?”",
+    "“Rafi’s dad. Detective. Ochoa — like Rafi.”",
+    "Her hand goes to the medal at her collarbone. Two steps up, her thumb is still on the worn gold. “Was he kind to you?” she says. It’s a practical question, and she asks it like one.",
+    "“He gave me a light. Out of his trunk. *Found property*.” He tells her how the man got out and clipped it to the handlebar himself and clicked it on, white on the fog. “Good,” Lena says, and lets go of the medal.",
+    "On the next landing, under the caged bulb, she says, “On Monday you argued like he was in the room.” Not Ray. He knows who she means. “Did you ever find out what he was going to tell Gina?”",
+    "The letter is in his back pocket, folded in thirds against the Williams."
+   ],
+   "choices": [
+    {
+     "text": "Read her the line about Gina, and the one about her.",
+     "tag": "Sincerity",
+     "set": {
+      "e6_letter": "read",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "You read Lena your brother’s letter: ‘Tell Gina it ain’t hers to carry. I got it.’",
+     "response": [
+      "Under the bulb he takes it out and unfolds it — lined paper, pencil, both sides — and finds the place. “*Tell Gina it ain’t hers to carry. I got it.*” And lower down: “*Tell the veil girl thanks for asking my name. Nobody out there asks it anymore. They ask Ma how I’m doing like I’m the weather.*”",
+      "The pump hums behind the steel door. Then Lena says, “He sounds like somebody who’s used to carrying.” It’s kindly meant; he can hear that it is. Jack folds the letter back along its creases, thirds, and puts it away against the Williams. “Tell him he’s welcome,” she says."
+     ],
+     "goto": "s10n"
+    },
+    {
+     "text": "Tell her what he wrote about her. Keep Gina’s line.",
+     "tag": "Candor",
+     "set": {
+      "e6_letter": "her",
+      "rel.lena.warmth": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "You told Lena your brother thanked her for asking his name.",
+     "response": [
+      "He leaves the letter where it is. He has the line by heart already. “He says to tell the veil girl thanks for asking his name. *Nobody out there asks it anymore. They ask Ma how I’m doing like I’m the weather.*”",
+      "Lena is quiet up three steps. Then: “Tell him he’s welcome.”"
+     ],
+     "goto": "s10n"
+    },
+    {
+     "text": "“Yeah. He wrote.” Keep it.",
+     "tag": "Control",
+     "set": {
+      "e6_letter": "kept",
+      "trait.control": "+1"
+     },
+     "key": "You kept Danny’s letter to yourself.",
+     "response": [
+      "“Yeah,” he says. “He wrote.” And leaves it there.",
+      "She doesn’t push. A flight later she asks only, “You okay?” and he says, “Yeah,” and she takes it, for now. He can hear the *for now*."
+     ],
+     "goto": "s10n"
+    }
+   ]
+  },
+  "s10n": {
+   "slug": "SUNDAY · 3:19 AM · THE COMMONS LAWN",
+   "body": [
+    "The Commons at 3:19 is a whole dark field with nobody on it. The sprinklers have been and gone; the lawn is soaked and cold and shines under the path lamps, and every step on it makes a small wet sound. Ferrer Tower stands over the middle of it, dark in the louvers, the clock face lit and every bell shut up for the night. It quit at ten. It won’t say a word till seven.",
+    "The RAZR goes off in his pocket. He tips the screen to the angle where it lights.",
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "Asleep. On her side, per instructions. Breathing like a Vienna choirboy. Sloane has issued me a pillow shaped like a cowboy boot. —T.V.",
+     "time": "3:17 AM"
+    },
+    "He holds it out. Lena reads it and shuts her eyes for one step, then opens them, and walks on easier.",
+    "Halfway across, he asks the thing he’s wondered since August. “Why Marisol?”",
+    "“Money,” she says. “Notre Dame gave me half. Marisol gave me all of it.” Her hand finds the medal. “My daddy sells shrimp.” The hand comes down. “Why’d you?”",
+    "“You know why,” he says. “A.H.”",
+    "“*Come and say it to his face.*” She read his postcard on a porch in August, and she has it by heart.",
+    "“He said you were in his office Friday,” Jack says. “At two.”",
+    "She walks a few wet steps. “I went to tell him he was wrong about who gets to forgive.” That’s all. He waits for the rest of it across twenty yards of grass, and there isn’t any. Then she turns it, neatly: “How’s your nonna?”"
+   ],
+   "choices": [
+    {
+     "text": "“She asked me the same question twice. Five minutes apart.”",
+     "tag": "Sincerity",
+     "set": {
+      "e6_nonna_told": true,
+      "e6_nonna_lena": "told",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      {
+       "if": "e6_nonna==\"same\"",
+       "text": "“I answered her again,” he says. “Same jokes. Same order. She laughed in the same places.”"
+      },
+      {
+       "if": "e6_nonna==\"asked\"",
+       "text": "“I told her she’d asked,” he says. “I shouldn’t have.”"
+      },
+      {
+       "if": "e6_nonna==\"ma\"",
+       "text": "“I asked for my mother,” he says."
+      },
+      "Lena doesn’t tell him she’s sorry. She walks beside him on the wet grass without saying anything. “My Mémère’s eighty-eight,” she says. “Breaux Bridge. Half the time now she calls me Claudine — that’s my daddy’s sister, who is sixty-one and sells State Farm in Lafayette — and I answer to it.” She shrugs inside the cardigan. “You answer to whatever name they’ve got left.”"
+     ],
+     "goto": "s10c"
+    },
+    {
+     "text": "“She wants to know if you’re a nun. Officially.”",
+     "tag": "Wit",
+     "set": {
+      "e6_nonna_lena": "nun",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Lena gives it real consideration, a hand on her chin, walking. “Tell her I’m considering it,” she says. “Tell her it depends on the pension.”"
+     ],
+     "goto": "s10c"
+    },
+    {
+     "text": "“She’s good. Everybody’s good. Ohio State won.”",
+     "tag": "Control",
+     "set": {
+      "e6_nonna_lena": "good",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Lena looks at him sidelong across the dark. “‘Good,’” she says. “You said that about your daddy once, in Malibu. I let you keep it.” They walk a little way on the grass. “I’m keeping a list now.”"
+     ],
+     "goto": "s10c"
+    }
+   ]
+  },
+  "s10c": {
+   "slug": "SUNDAY · 3:34 AM · THE LAGOON FOOTPATH, THE BENCH",
+   "music": "Wilco feat. Feist — “You and I”",
+   "body": [
+    "The Lagoon smells like the bottom of a vase: salt and rot and something sweet under both. The footpath runs along the water on packed dirt, and out in the reeds something white moves and resettles and complains about it — an egret asleep on one leg, annoyed to be reminded. Across the water Delgado is a grid of dark windows with one or two still lit. Halfway along the path, under a pepper tree, there’s the bench. It faces the Lagoon. People have carved their initials into the back slat, and in a couple of places somebody has carved them out again.",
+    "Lena sits down on it. Jack sits at the other end. There’s a whole person’s worth of bench between them, and he keeps it. He wants to put his arm along the back slat. He wants a great deal more than that, plainly, and has since a porch in August, and he sits with his elbows on his knees and looks at the egret.",
+    "“Laney says this is where people come to break up,” Lena says.",
+    "“Are we breaking up?”",
+    "“We’d have to be something first, Costigan.”",
+    "She says it lightly. The egret settles. She’s already on to the next thing. “Have you read it? Tomorrow’s?”",
+    "He has. Mark nine. “Seventeen hours and twenty-six minutes,” Lena says, “not that anybody’s counting.” On the road the disciples argue about which of them is the greatest, and when they get to the house He asks them what they were arguing about on the way, and nobody says a word. “Because they were embarrassed,” Jack says. “Because they were *men*, Costigan. Twelve grown men, and not one of them would stand up and say, *Me, Lord. I said me.*” *If anyone wishes to be first, he shall be the last of all and the servant of all.*",
+    "“So who’s last this week?”",
+    "She holds up a finger. “Laney’s first. Laney has *sisters*.” “Becca’s kids are last,” Jack says. “All seven of them.” “Seven?” “Or nine. Odd numbers. So there’s a tiebreaker.” Lena puts her face in her hands. “Lord have mercy. She’s going to run a parish council out of a farmhouse.”",
+    "He looks at the water. “Danny’s last.”",
+    "The egret mutters in the reeds. Lena takes her face out of her hands and doesn’t make it into anything; she just says it, as though it’s posted on a sign by the door. “Then he’s first.”",
+    "He can’t leave that sitting there on the bench between them, so he gives her Rudy instead. “The dish man eats first. Soledad rule.”",
+    "“Then go eat something, dish man,” Lena says. “You look like a coat on a hanger.” And that’s the last word, and it’s hers.",
+    "At 3:52 Delgado’s basement laundry door is propped open with a folded *Marisol Tide*, RITES OF PASSAGE face up under Margot’s byline, the warm chemical sweetness of the dryers breathing out into the cold.",
+    {
+     "if": "e6_porch==\"boots\"",
+     "text": "At the door he gives her back the boots. She takes them by the straps and holds them against her hip."
+    },
+    "The elevator is down here by the vending machines, and it smells of detergent and somebody’s pizza. She presses 2. He presses 4. The doors close on the two of them and the car goes up, slow, the cables ticking, and neither of them looks at the other except in the scratched steel of the doors, which shows them anyway: a girl in a cardigan holding a pair of boots, a man with sand on his jeans, standing a careful foot apart.",
+    "At two the car stops. The doors open on the dark second-floor hall, the exit sign red at the far end of it. She steps out. Then she turns around."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately. She’s decided not to notice. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Goodnight, Magdalena.”",
+     "if": "e4_goodnight==\"magdalena\" && trait.sincerity>=25",
+     "tag": "Sincerity",
+     "cue": "Lena will remember that.",
+     "set": {
+      "e6_goodnight": "magdalena",
+      "rel.lena.heat": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At the elevator you said, “Goodnight, Magdalena.” Twice now.",
+     "response": [
+      "She holds the boots against her and looks at him from the hall. “That’s twice, Youngstown,” Lena says. “I keep a tin for less.” Then the doors come together on her — the cardigan, the boots, her face last, a line of light, gone — and the car goes on up to four with him in it."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "“Goodnight, Lena.”",
+     "set": {
+      "e6_goodnight": "lena"
+     },
+     "response": [
+      "“Goodnight, Jack,” she says. The doors slide shut between them, steel on steel, and the last of her he sees is a cardigan sleeve and a hand coming up, and then the car takes him the rest of the way up."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "“Same time next fire alarm.”",
+     "tag": "Wit",
+     "set": {
+      "e6_goodnight": "alarm",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Go to sleep, Costigan,” she says, smiling at the elevator buttons instead of at him. The doors close on the smile, and the car goes up with him and whatever’s left of it."
+     ],
+     "goto": "s11"
+    }
+   ]
+  }
+ }
+}
