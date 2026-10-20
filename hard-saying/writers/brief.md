@@ -440,3 +440,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Never a strawman: he should be right about a lot, and his good work is real.
 - **After S1E08 (player feedback).** "A really good episode. Lena and Jack's moments were legitimately great.
   Everything with Becca was so bittersweet." The player's two-hander design worked.
+- **Next episodes (player notes after S1E08).**
+  - **Becca must outlast Wes** (Jack/Becca continues past Lena/Wes's end; fits the availability-windows rule).
+    So: **more Jack and Becca** in E09, plus **a little more on the strange threads**.
+  - **Columbus Day weekend (Sat Oct 10 – Mon Oct 12, 2009) is the ensemble set piece, and Wes visits in person.** Lena
+    brings Wes; Jack brings Becca. If the weekend falls in E09, open with a little Jack-and-Becca before the
+    ensemble; otherwise it's E10.
+    - **Theo and Laney work overtime** and are truly awful: comedy, not cruelty.
+    - **Wes is a good guy.** He and Jack hit it off at first (the room decides whether Lena likes that or not), but as
+      the weekend goes on, **Wes clearly does not like the vibes between Jack and Lena**.
+    - **Becca either doesn't notice or trusts Jack wholeheartedly, perhaps both** (the guilt knife).
+    - Hard rules apply (nobody sleeps with anyone; the visit keeps Wes in a hotel, with a friend, or on someone's floor;
+      room's call).
