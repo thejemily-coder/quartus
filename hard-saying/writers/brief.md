@@ -438,3 +438,5 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   trade the Church for the cause. **Jack hates him** (and quietly thanks Theo for being openly rude). He gives Jack and
   Lena's politics fights (Jack right-leaning, Lena Catholic Worker) a live wire, and the proxy fights should crackle.
   Never a strawman: he should be right about a lot, and his good work is real.
+- **After S1E08 (player feedback).** "A really good episode. Lena and Jack's moments were legitimately great.
+  Everything with Becca was so bittersweet." The player's two-hander design worked.
