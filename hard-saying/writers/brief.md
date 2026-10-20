@@ -246,3 +246,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **After S1E02 (player feedback).** "A little bit of ache with the spark and sweetness for Lena this time" — loved it;
   Lena still the standout; Laney, Theo and Margot remain great. For E03: **lighter and funnier with Lena** (a breather
   after the ache, so the next ache lands harder). Ensemble mix: room decides. No other notes.
+- **After S1E03 (player feedback).** "Lots of fun, sweetness, with bittersweet moments mixed in. Good ensemble
+  setpiece." For E04: tone per the room's plan; **ensemble setpieces every few episodes** as punctuation (not every
+  episode); **more Lena one-on-one** — a long two-hander scene, just Jack and Lena.
