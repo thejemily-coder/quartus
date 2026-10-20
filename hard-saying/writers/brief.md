@@ -355,3 +355,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   realizing some things. Very good for the overall story." Lena again the standout; Theo and Laney good. The player
   *assumes* Becca is the tryer and says she's "the exact blend we were looking for of sweet, faithful and without
   fire." (Do not confirm or deny to the player; if she is, keep exactly that blend.)
+- **What's working (S1E06 chastity talk).** The player loved the Newman chastity-talk scene "every bit of it": the
+  tongue-in-cheek humor, and **taking the concept seriously while not taking the approach seriously** (Lena's aside to
+  Jack summed it up). Their **mutual agreement not to discuss marital submission** got a big laugh. Keep it as a running
+  bit: they visibly, comically keep avoiding Ephesians 5 until the reserved conversation finally arrives (see "Marital
+  submission"). This register (sincere about the faith, satirical about Catholic-subculture packaging) is a model for
+  faith scenes going forward.
