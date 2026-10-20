@@ -422,3 +422,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   *angry* at the other for a while, and that anger (plus the proxy fights) can keep them apart even when both are
   technically free. Plan every breakup's timing against this rule; it drives the timing tragedies and the alliance's
   false dawns.
+- **Theo's darkness: mostly hidden.** It stays under the charm, glimpsed rather than shown (the 5:20 a.m. returns, the
+  forgiveness question, the Point), until a late reveal. No public collapse.
+- **Laney: mostly fun.** The pills and rush darkness stays an undertow; she is the comic engine. No overdose scare.
+- **Halloween episode (late Oct 2009) wishes:** Jack and Lena in **accidentally matching or complementary costumes**
+  (to Becca's and Wes's confusion, or whoever is around); **Theo throws the party**, extravagantly (LA money, a theme,
+  chaos); and **All Saints Mass the next morning** (Sunday, Nov 1, 2009), echoing the pilot's party-then-Mass rhythm.
