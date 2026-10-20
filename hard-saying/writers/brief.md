@@ -335,3 +335,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   "We know." / "Everyone knows." / "People outside of California know." / "It was obvious after five minutes."
   Until then, the alliance's maneuvering should be visible to the player and to the ensemble but never acknowledged
   aloud, so the reveal pays off years of comic evidence.
+- **The proxy fights (reserved, recurring).** While either magnetic relationship or attraction is going on (Jack's
+  magnetic girl, Lena's magnetic guy), Jack and Lena have a **serious fight with each other** that is **100% about the
+  other person being with someone else, and neither can say it**. If the two periods don't overlap, it happens at least
+  once in each. The fight is ostensibly about something else: a philosophy point, a slight, politics, a friend, a
+  forgotten promise, how the other is "changing." It is vicious, specific and personal, and the subtext is obvious to
+  the player (and to Theo, Laney and Margot), but the real reason is **never spoken** aloud by either of them during
+  that period. These can play as argument duels where "winning" the stated argument is the wrong thing to win.
+  Payoff: later (likely after they're together), one of them finally names what those fights were really about.
