@@ -275,7 +275,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     Laney to be nice; Theo is always polite but always Team Lena.**
   - **The magnetic girl**: her flaws sit exactly where the tryer's strengths are. She's respectful of his faith and
     mildly curious, but not really interested in it. She's fierce, intelligent, funny, sexy and utterly compelling: a
-    real temptation that truly draws Jack in (resolve and restraint are tested). **Laney begrudgingly likes her; Lena
+    real temptation that truly draws Jack in (resolve and restraint are tested). **Laney is openly rude to her like all the others, but privately, begrudgingly likes her; Lena
     can't stand her; Theo knows her (from before or from his world) and, as always, remains Team Lena.**
   - Design principle: the tryer has the faith and the effort without the fire; the magnetic girl has the fire without
     the faith. Only Lena has both. Neither girl is a strawman, and each must be someone the player could love.
