@@ -379,3 +379,20 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   guilty the entire time through Jack** (exactly right: keep that guilt alive while Becca's in the picture). Loved the
   twist of heartache at the end with the paper, and **the little knife of Lena telling Jack to eat the maple bar Becca
   saved for him** (small, generous, devastating gestures from Lena land hard; use them sparingly).
+- **S1E08 two-hander (player's design; fit to their voices, not verbatim).**
+  - They start **scrupulously "just friends"**: awkward and painful. Neither can stand to let it stay that way, so
+    **roughly a third to halfway into the night there's a crack**, and it turns into **one of the best nights they've
+    had together yet**.
+  - At some point Lena asks if he knows what he's doing yet (with Becca). Jack starts to come up with something and
+    can't; he admits he really doesn't know. Then he says something about Becca being so nice and sweet. **Lena can't
+    suppress a laugh**: come up with a better answer before someone else asks, because that's literally the worst
+    thing you can say about someone in this situation. **She can't really hide her relief**, and Jack sees it.
+  - **Both feel guilty afterward**, when they finally part (probably not until back at Delgado, late night or early
+    dark morning). Lena feels guilty not only about Becca but about **her relief that it isn't that deep for Jack**.
+    **POV rule:** Jack can only observe or infer this, or Lena can let some of it slip; never narrate her inner state as fact.
+  - From the guilt: **Jack plans a third date with Becca for very soon, with real effort; he asks and he pays**.
+    **Lena turns more attention to Wes** (seen through Jack's eyes: phone calls, the stairwell, a care package).
+    **Becca and Wes are both thrilled.**
+  - **Neither resolve takes.** The next time Jack and Lena are around each other, the retreat lasts about five minutes,
+    because they can't do the awkward-and-painful thing, and they end up right back at guilty fun. (This can land in
+    E08's tag or early E09; room decides.)
