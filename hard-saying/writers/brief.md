@@ -302,3 +302,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     decides, consistent with the politics map. Margot and the campus are firmly Obama, and Jack is the most hated man
     at the election-night party.
   - Real public figures appear only through their real public words and actions.
+- **Votes over the run (player's best guess; the characters may yet surprise).**
+  - **2012:** Lena **reluctantly votes Obama**; Jack votes Romney.
+  - **2016:** probably **the last time Jack votes Republican and the last time Lena votes Democrat**. Both are mad at
+    each other over it, and madder at themselves for who they voted for. (By then they're likely married or close to
+    it; play it as a marriage-scale fight with shame underneath, not a cartoon.)
+  - After 2016: both are politically homeless voters (third party, write-ins, abstention, local races only, etc.).
+    Consistent with the politics map, their disgust with the system deepens over time.
