@@ -249,3 +249,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **After S1E03 (player feedback).** "Lots of fun, sweetness, with bittersweet moments mixed in. Good ensemble
   setpiece." For E04: tone per the room's plan; **ensemble setpieces every few episodes** as punctuation (not every
   episode); **more Lena one-on-one** — a long two-hander scene, just Jack and Lena.
+- **After S1E04 (player feedback).** "Little ache, lot of tenderness, more ache. The Lena-Jack extended two-person scene
+  was fantastic." Standing rule: **an extended Jack/Lena two-hander roughly every other episode** (E06, E08, …; the
+  room may shift by one when the story demands). For E05: tone and mix per the room's plan; no other notes.
