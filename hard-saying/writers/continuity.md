@@ -880,3 +880,204 @@ sealions; stayed: stood/homework/julian) · `e4_pier_cig` (lit/sat/held) · `e4_
   verbatim); the third verse unsung; the jasmine at the cross (no gloss); Evan's "PERSONAL."
 - nextTime: Sully's line; Hale's two-drivers moral-luck hypothetical (E05 must pose exactly this); "Who dat, Costigan. Say
   it like you mean it." (replaces "A girl left it," which pre-quoted the hidden jacket beat); Laney's Bid Day.
+
+### S1E05 — "Moral Luck" (Sun Sep 13 – Fri Sep 18, 2009; tag Fri 2:16 a.m.)
+28 scenes. Forks: s09 → s10a pref / s10b brick → s11 · s13b → s13c stay / s13d walk → s13e. Duel `luck` (s04–s05v, six
+scenes). No extended two-hander (per the standing every-other-episode rule; E06 owes one). Ensemble setpiece: Sully's
+(s02–s02c) and Bid Day (s13). Written for the after-s1e04 save; gated on earlier vars: `e2_friday`, `e3_told_lena_frank`,
+`e3_lena_monday`, `e4_followed` (the Personal option), `e4_seminar`, `e4_walk`, `lena_knows_danny`, `reliquary`. The
+Lordstown "Twenty-six years" line in Lena's mouth (s02 C1) assumes the E03 s11c C0 / s11d wording, which is true on this
+save. Per-path ≈ 12.1k–13.1k words (mean 12.5k; validator total ~20.4k counts every branch). 22 choices per path; keys 6–12;
+whispers 0–5 (6 placed).
+
+**On-page canon (all paths unless marked)**
+- s01 (Sun 9:21, 412): Theo's espresso Post-it now reads only *+ 1 MALIBU —T.V.* Jack's closet: three flannels (red, green,
+  faded blue), the Goodwill navy blazer (Market Street), Danny's Carhartt on the door hook; **the Reds moved to Jack's back
+  pocket.** No Mooney hoodie (it lives in 217). Odyssey back glass: WHO DAT · TODAY (Lena, 1 a.m., flashlight in her
+  teeth; Theo saw her). **The Hopkins stays squared on the desk "till October and a mailer"**; the O'Connor (*A Good Man Is
+  Hard to Find*, Harvest pb, Mooney castoff) rides in Jack's back pocket with the Benedict holy card. Theo knows the "ten
+  a.m., black and gold" line because Jack told him Saturday night. [e5_outfit] margot (Sleater-Kinney tee from Portland,
+  "return it unwashed and I'll know"; Margot comes "as an anthropologist") / theo (black tee + Theo's grandfather's gold
+  cufflinks; Theo in black cashmere) / flannel.
+- s02 (Sun 9:58, **Sully's, Mission Street**): green awning, shamrock neon one leaf out, NFL SUNDAY TICKET · DOORS 9 AM ·
+  BLOODY MARY BAR; the owner (big, pink, Sully's polo) rings a brass ship's bell per Saints TD; Lena's iPod on his aux
+  "until kickoff" (Rebirth Brass Band). Lena at the door with gold beads (packed in July), black WHO DAT shirt, black jeans,
+  white Keds. Abita root beer → Coke with lime. Laney in gold sequins ("daywear"), Margot in black ("a cult with nachos";
+  "Hegemonic, but with celery"), Kevin in a 49ers cap, fries and waters, "Designated adult"; Theo "neutral… like
+  Switzerland, or Kevin." Laney to Lena: **"Bid Day, sugar. Wear something you can cry in."** **Dale Wisniewski**, 50s,
+  Barry Sanders jersey, "Warren. Michigan. Not the other one." Browns–Vikings on the corner TV (at Cleveland;
+  Favre in purple; the Packers table in mourning). [lena_knows_danny] "Lena knows it now too" (Warren, Ohio). [e5_sullys] smoke
+  (**Reliquary No. 4: a Sully's napkin, "No. 4 · 9/13/09 · Sully's · in mourning for Cleveland"**; "a reliquary for the
+  reliquary") / dale (27 yrs Warren Truck, Dodge Rams, laid off spring; daughter's spare room since July; Lena: "the Lions
+  are the Aints of the North"; [e3_told_lena_frank] Lena says "His daddy's Lordstown. Twenty-six years." / else Jack says
+  it) / heckle (three Favre lines; the Packers table adopts him; foam-cheese woman buys a Coke; Lena: "The sneezing one was
+  good"). Lena's lips move every snap — "the down and distance… or a Hail Mary" (no Memorare: that prayer stays Nora's).
+- s02b (11:31, halftime 28–10): **Lena paints a gold fleur-de-lis on Jack's left cheekbone** with Laney's $30 gold eyeliner
+  ("Laney Price. That is a thirty-dollar pencil"); her hand along his jaw, thumb at the corner of his mouth. **Wes texts
+  11:32 a.m. PT: "WHO DATTT. BREES IS THE TRUTH AND THE LIGHT. LUC SAYS WHERE YATT"** + a second, same misspellings; Jack
+  reads it off her screen. Jack knows only "somebody called Luc." Lena: "He's spelling like Laney." Phone into the tote.
+  **"I'm not fine, Costigan. I'm *ecstatic*. Note the difference."** Laney's BlackBerry takes a photo (fake shutter, no
+  flash). [e5_paint] still ("Now you're ours") / cheek ("That's Matthew five, and no") / meaning (Louis, Joan on Decatur,
+  the tarps and FEMA trailers: "It means home… It means we came back").
+- s02c (12:58, final 45–27; Evans the sixth TD; Delmas fumble return 65 yds; Stafford 3 INT; Browns 20–34 Vikings): Theo
+  films ("Week one"); Margot chants deadpan; Kevin whistles; Laney on the table. **Theo pays the whole tab on his father's
+  black card ("Meridian laid off two hundred and twelve people this year… It can buy six Cokes").** Dale leaves a column of
+  quarters, "Next week, kid." Lena rewrites the Odyssey glass **1–0** ("It's the Lord's car today"). [e5_whodat] loud (the
+  Raiders guys join) / latin (*Quis dat dicit se Sanctos victurum?*; Margot: two verbs; Lena: "It's *liturgical*"; Margot's
+  laugh) / quiet (just to her). Journals (ledger, Dale) now attach on the choices.
+- s03 (Sun 9:00 p.m., St. Brendan's college Mass): VMA Facebook statuses (Laney ×2, Doug). Theo wishes him "a very holy
+  Mass" (knowing). Readings: Isaiah 50, Ps 116, James 2, **Mark 8:27–35**; cantor **Kenzie Rourke**, lector **Peter
+  Haddad**. **Osei: "Peter gets the answer right. Four verses later, Jesus calls him Satan… Same man. Same afternoon. He did
+  not trade him in."** Lena (mantilla) sees the gold at the sign of peace and laughs through the Lamb of God behind the lace.
+  "You received the Body of Christ in my fleur-de-lis." "Your roommate is a serpent, and I respect him." **Mrs. Fitch's
+  WHILE YOU WERE OUT: Nonna phoned the rectory — one Mass in thanksgiving for "my grandson's good confession," $10 by mail,
+  *good* underlined; "whether you are eating."** Osei: "I can neither confirm nor deny… Your grandmother can confirm it to
+  the state of Ohio" (laughs). Lena hears it all. [e5_mass] candor ("Then God bless Nonna") / sincere ("Good") / wit. Then
+  "Nobody yells at an empty room, Costigan" ([e4_walk==empty_room] tagged as his Ocean Road line). "Goodnight, Jack."
+- s04 (Mon 12:58, Hollis 302): Yusuf, day 24 of Ramadan; **Tariq called from Helmand (complains about food = fine).** Lena
+  from the 12:10 (**Exaltation of the Cross: Numbers 21, the bronze serpent, Osei in red**); one strand of Sully's beads under
+  the cardigan. Gold left in Jack's eyebrow (Theo's face soap). Hale: wine back on the cuff; "Week three. Williams, 'Moral
+  Luck.' Nagel, 'Moral Luck.'" Caleb: Hale wrote his doctorate on moral luck. **The two drivers** (same party, four drinks,
+  same bend; a child and a red ball). Caleb: luck all the way down (Eccl 9:11, *Selah*); **Yusuf: *diya*, blood money, or
+  fast two months.** Lena: same sin; "The child is the second man's grief. It isn't his sin." Jack: **"He's worse."**
+  "Designated antagonists… Win me something."
+- s05a–s05d (duel): Lena's Kant (the jewel, Gregor wording), Aquinas I-II q.18 (moral species), q.20 a.5 (*per accidens*;
+  "nobody gets luckier into heaven…"), the weather-report line; Jack's moves per choice (law/Hammurabi; Williams's lorry
+  driver and agent-regret; *ut in pluribus*; the Misfit [wit≥14]; Epicurus/Hume turned on her; "the theologian or the one
+  who pays" → Lena: "He's the one who pays. You wrote it. Page one"). Lena stops (s05c), medal: **"Then what does he owe…
+  and to whom, and for how long?"** Lena's last move: "There's no luck, Professor. There's providence, and there's mercy, and
+  both drivers need the second one." **Hale: "Forgiven by whom, Miss Broussard? The child is dead. The only one with
+  standing to forgive is the one who can't."** Lena: "That's why it has to be God… the only one who can speak for the dead."
+  [s05d Press] Lena: "I already beat you with [Job] once, on Ocean Road." Yusuf: "Certified mail. Return receipt
+  requested" (Riposte) / "Factor of safety" (Concede).
+- s05v: results (exactly one per path): **RIGOR** (Jack 3–1; "dragged Thomas Aquinas onto Market Street by his habit";
+  Lena: "You argued that like it was yours") · **HEART** (draw; Lena refuses the round; "Two Catholics agreeing about
+  mercy") · **WIT** (no decision; "a revue") · **LENA** (2–2, "by a weather report") · **PERSONAL** (2–2; Hale docks it:
+  "A point taken off the person and not the argument goes to the other side. House rules"; "fetch the spaniel a mop").
+  Assignment: **"Two pages. Prove the thing you least believe you can prove."** Alone: **"Do you think the lucky one sleeps,
+  Mr. Costigan?"** [e5_sleep] no / trains ("Do you," Hale says) / you ("Like a baby, as the senator said… Up every two
+  hours, crying").
+- s06 (cloister): Ferrer Tower carillon, one bell flat; bougainvillea. Lena's opener by result ([HEART] "I was arguing for
+  everybody I love who's ever going to need the second one. What were you arguing for?"). [e5_cloister] brother / me
+  ("Because you got out, and he didn't… He owes him letters") / winning / sorry [personal only] ("Apology noted, Costigan" —
+  no mister).
+- s06b (2:39): **Gina sms: "a girl in religion said im the class expert on visiting the imprisoned. bc of danny…"**
+  [e5_gina_text] show/tell → **Lena's advice: say his name, *Danny*, and look at the girl until she looks away; "Make her
+  hear it's a person"** (`e5_gina_lena`) / later ([e3_lena_monday==family] "I took 'mostly' back off you on a pier").
+- s07 (Mon 7:40, east stairwell): **Priya's laminate: THIS WHITEBOARD IS THE PROPERTY OF RESIDENTIAL LIFE. (IT IS NOT A
+  NEWSPAPER.)** Whiteboard (doc). Gina by phone under the covers (lowercase even aloud): **Mrs. D, religion, corporal works
+  of mercy; Ashley Vrabel (color guard; her dad's DUI last Christmas, "all over St. Brigid's"); Kelsey laughed.** Dad turned
+  the radio back on, low. **Nonna told the altar society about the confession ("like it was Fatima"); Mrs. Iannucci cried.**
+  "is the nun real." `gina_bullied`. [e5_gina_advice] nun (Gina: "The nun is *real*?") / name / dui [reckless≥6] / sowhat
+  ("you sound like dad. when he had a job.") / mom.
+- s07b (Tue 2:52 a.m.): Becca's FB invite: **BBQ + beach cleanup Saturday (Sep 19), bring gloves.** Swayze died Mon Sep 14
+  (pancreatic cancer, 57). Theo watches *Point Break*; **Poppy (14) texts 12:02 a.m.** Freight at 2:10. Theo: **"Utah lets
+  him go. That's the nicest thing anybody does in the whole movie."** [e5_theo] told (`theo_knows_lena_knows`; "Good for
+  you, Costigan") / bit (Pappas) / watch.
+- s08 (Tue 3:40, Mission St post office): **Jack buys a $20.00 USPS money order ($21.10 with the fee), PAY TO: D.
+  KOSTELNIK, STRUTHERS, OH, address from memory, FROM blank; stub behind his Mooney ID; slot OUT OF TOWN.** (No gloss, no
+  journal, no key. Jack's tip share; singles, a soft five, quarters.) That night: the Anchor, half-price chowder; the TV
+  replays the House rebuking Wilson; Rudy's fries.
+- s09 (Wed 1:00, 302, fog): Yusuf four days from Eid; Caleb's *The Lost Symbol* ("For research"). **Paper titles: Jack,
+  "That the Lucky Man Owes Nothing"; Lena, "That There Is Such a Thing as Luck" (SCG III.74).** Papers swapped at the top of
+  class and taken home; red comes back Thursday in section. Hale on **Williams's Gauguin** ("a shit with a steamer ticket");
+  Lena: syphilis; "Miss Broussard has located the clap"; "a man who owes a woman in Copenhagen five children's worth of
+  letters." Laney 2:31 (pref tonight, 217 at 11, bring Lupe's); **Kevin 2:33: "Orgo quiz Fri."**
+- s10a [pref] (Wed 11:04, 217): Lupe's (white truck, Las Olas end of Seacliff; $6; Lupe is real, gold tooth). "You Belong
+  with Me" on repeat. Laney's pref dress (white eyelet). **Pref Night: Laney laughed at a sister's grandmother's mood ring;
+  Sloane's look.** **Laney's mother's voicemail, 4:02 p.m.: "Delaney Rose… Posture, sweetheart."** The DRP pillbox, one
+  dry ("Doctor's orders. I have a note"). Glow stars. "What if… they see." [e5_laney] lucky ("You said that before") / bit /
+  pill [candor≥12] ("Flying") / stay. All: "Don't leave. I'm not anything. But don't." Lena: "Cher."
+- s10b [brick] (Wed 10:20, Pacifica Library 8th floor): Kevin's **orgo** cards (nomenclature, chirality, R/S, Markovnikov,
+  Cahn–Ingold–Prelog); B-plus on the first quiz; BELLARMINE quarter-zip; the green highlighter is "Gregory." **Summer:
+  Stanford pre-med program, nights shadowing in a San Jose county ER (OBSERVER badge; a retractor for eleven seconds); a July
+  crash on Story Road (drunk pickup vs. a minivan; the dad; the girl okay; the driver asking if he was in trouble).**
+  [scar_told_kevin] puck / franciscan [charm≥8] / fight ("the short, true version") / (control: nothing). 11:58 Kevin's mom:
+  "Dạ, con đi ngủ rồi, Mẹ." **Lena sms 12:47 a.m.: "Laney asleep on the floor in her pref dress. 31 pins. Ask me about the
+  mood ring tomorrow. —L."**
+- s11 (Thu 1:10, 412): Jack's charger is at the Anchor. **The black bag on the top shelf: a small women's Levi's jacket with
+  a hand-embroidered Our Lady of Guadalupe on the back** (patch only; no pin, pockets or name on page). Theo takes it:
+  "Brentwood girl. Marymount… in Prague… the palace is closed." Mini-USB from the gray bag. `e5_duffel`. [e5_jacket] quiet /
+  prague / mail.
+- s12 (Thu 4:02, Hollis 108): Evan back, grayer; bike clip; *Works of Love*. Papers returned: [personal & !apologized] her
+  only red on his page: **"Fine."** / else **"You don't believe a word of this. It's your best paper." + *coward***. His red on
+  her page two: *You proved it. I don't think you were trying to.* Lena: "We read it… It was good." Hale's Sandoval line
+  (Thu a.m.): **"The bill arrives at the wrong address. It always has."** Lena: worse *off*, not worse. **Evan: "You've left
+  out a driver. The one who stops, looks, sees nothing, and drives home."** "Go love the people you see." [okay] "Section's
+  over, Mr. Costigan" / [owe] "Purity of heart is to will one thing. I've never managed two."
+- s13 (Thu 5:04, Seacliff, Bid Day): "Single Ladies" on the porch. Margot on the bluff bench ([e2_friday==margot] her
+  stakeout bench; else "the sequel to the stakeout he skipped"). **The *Tide*, Thu Sep 17, p. 3: "RITES OF PASSAGE" by Margot
+  Lindqvist** (recruitment budget > philanthropy; the control subjects: "Both are Catholic"; [!margot] one defected to escort
+  duty). Lena in a blue sundress with white flowers, waterproof mascara. **PI LAM RODEO** (pink tees, bandanas, cowboy hats);
+  Sloane on the steps with the clipboard. **Laney gets Pi Lam**, runs back across Seacliff to Lena first, then Jack
+  ("FIREMAN"). [pref] "You stayed till I slept." / [brick] "Where were you last night?" Laney: "Sugar, I *am* the record."
+  Lena: "She's going to be insufferable." Theo drives past west in the SL. [e5_bidday] wave / adored / sloane [charm≥8]
+  (Sloane: "The Catholic").
+- s13b–s13e (5:20–~6:20): **Danny calls collect from Trumbull (prepaid; the recording; his own voice saying "Danny").** He
+  got the ocean letter ("Sixty-six degrees. Green on top and gray underneath"), read it to **Reggie (next bunk, from
+  Portsmouth)**; "Somebody tell you to?" "A guy at work." *Brideshead* in the mailroom, a C.O. reading it. "Where are you, a
+  zoo?" Danny called the house Wednesday night; Gina picked up. **"Is the veil girl there?"** [stay] `danny_met_lena`: Lena
+  says "Hi, Danny"; "Oh, she's *real*"; "So you're the one who asked my name"; Danny infers from her accent she's "the New
+  Orleans one" from the letter, "argues like a prosecutor" → **Lena: "Defense, actually. I'm going to be defense."**; "Gina
+  says Nonna's got you down as a nun"; Lena: "The *veil girl*… I've been called worse in Latin." [walk] (bluff stairs) **Jack
+  tells Danny about Gina and the class-expert line**; Danny: "She shouldn't have to carry me to school… Tell her she did good.
+  Going back in the next day" (`e5_danny_gina`); Gina-advice echoes per branch; "Tell her I said hey"; pretzel line. **Cut
+  off at "tell Gina — ".** [personal & !apologized & stay] "Then you ask him next time, **Jack**" (first "Jack" since Sunday);
+  [personal & walk] still "Mr. Costigan," gentler. Jack leaves ~6:20 for the Thursday shift.
+- s14 (Fri 2:10 a.m., Delgado steps): Thursday shift out at 1:20; **Gloria rates a trucker "lemon meringue — all air"**;
+  Rudy's eggs; Gloria's foil slice in La Flaca's basket; charger recovered. Marcus asleep over orgo. **Freight 2:10: Jack
+  counts 60; Lena texts 2:14 "Sixty-one. No second engine tonight. Goodnight, Jack. —L."**; one second-floor window open.
+  [e5_freight] 61 / engines ("They do in New Orleans. —L.") / listen. s14b: O'Connor on the desk beside the Hopkins; RAZR open
+  to her text; Theo asleep.
+
+**Choice-dependent facts**
+- Personal path (`e5_duel_personal`, s05b C2, needs `e4_followed=="now"`): Lena is "Mr. Costigan" cold until the apology
+  (`e5_apologized`, s06 C3) or, unapologized, until Danny meets her on the bench (s13e). Unapologized + walk: still "Mr.
+  Costigan" at episode end. Her red on his paper is "Fine." Hale awards her the round on the forfeit rule.
+- `e5_luck_mercy` (s05c Concede): Lena's "That's the first thing you've said all hour I believe"; feeds the HEART text.
+- `e5_ferocity` (s05c Press): Jack's "nobody gets to take it for him" — Hale looks at him "without any wit."
+- Who knows Gina is being bullied: Jack (all); Lena (`e5_gina_lena`); Danny (`e5_danny_gina`, walk path only).
+- Danny has met Lena (`danny_met_lena`) only on the stay path.
+
+**Ledger housekeeping (from the S1E05 review)**
+- Kevin takes **orgo**, not gen chem (E02 AP-credit line stands). Lena–Wes duration is never stated on page; bible §10.1
+  (dating since Mardi Gras Feb 2009) governs. Jack has now seen the name **Luc** (on Wes's text) without knowing who he is.
+- The Memorare is not Lena's on page yet (E04's only Memorare is Nora's, via Priya). Save it for S1E13.
+- Margot's *Tide* piece corrects to "Both are Catholic."
+- Hale's journal card now reads "Saw my face at the Anchor before he could put it to the nine pages."
+- Paper cadence holds: swapped Wednesday, red returned Thursday in section.
+- Thursday shift 7 p.m.–1 a.m. (out 1:20 this week); Seacliff → the Anchor is farther than Anchor → Delgado.
+
+**Flags introduced**
+`e5_outfit` (margot/theo/flannel) · `e5_sullys` (smoke/dale/heckle) · `e5_paint` (still/cheek/meaning) · `e5_whodat`
+(loud/latin/quiet) · `e5_mass` (candor/sincere/wit) · `e5_duel_personal` · `e5_ferocity` · `e5_luck_mercy` · `e5_sleep`
+(no/trains/you) · `e5_cloister` (brother/me/winning/sorry) · `e5_apologized` · `e5_gina_text` (show/tell/later) ·
+`e5_gina_lena` · `gina_bullied` · `e5_gina_advice` (nun/name/dui/sowhat/mom) · `e5_gina_dui` (held for E15) · `e5_theo`
+(told/bit/watch) · `theo_knows_lena_knows` · `e5_wed` (pref/brick) · `e5_laney` (lucky/bit/pill/stay) · `scar_told_kevin`
+(puck/franciscan/fight) · `e5_duffel` · `e5_jacket` (quiet/prague/mail) · `e5_evan` (okay/owe/go) · `e5_bidday`
+(wave/adored/sloane) · `e5_call` (stay/walk) · `e5_danny` (hand/between/here · bench/which/yeah) · `danny_met_lena` ·
+`e5_danny_gina` · `e5_freight` (61/engines/listen). Duel vars `duel.luck.{rigor,wit,heart,lena}`.
+
+**Tallies after S1E05**
+- Reliquary: 3 → **4 on smoke** (No. 4, Sully's napkin). Jack's cigarettes lit on-page: +1 on smoke.
+- Duel record: 2–1 → **3–1** (RIGOR) / **2–1 + a draw** (HEART) / **2–1, no decision** (WIT) / **2–2** (LENA, PERSONAL).
+- Margot's whiteboard: **C 5 · B 4** (flannel: **C 4 · B 4**).
+- Scar tellings: Kevin → puck / Franciscan / fight (short, true) / none.
+- Anchor ratings: Gloria rates a trucker lemon meringue, "all air."
+- Freight count: **60 (Jack) / 61 (Lena, one engine)**.
+- Lena's resolve: s02 6 → s02c 7 → s03 8 → s04 7 → (personal −1, apology +1) → ends **7** (6 on personal unapologized).
+- Jack's resolve ends 6–10 (mean 9.2): Mass Sincerity +1, s05b Personal −1, s05c Press −1, s06 "I like winning" −1, apology
+  +1, s07 −1, s07b told +1, s10a/s10b +1, s13b walk +1.
+- Lena meters (random play on the real save): trust 18–25, warmth 15–24, heat 6–8, friction 7–15.
+
+**Notes / handoffs**
+- E06: the extended Jack/Lena two-hander is due. Saturday Sep 19 beach cleanup + BBQ (Becca; gloves). Saints at Eagles Sun
+  Sep 20; Eid al-Fitr Sun Sep 20. Jack owes Gina Danny's "you did good" ([walk]) and the cut-off "tell Gina —" on all paths.
+  Lena has met Danny on the phone ([stay]). The money order to D. Kostelnik, Struthers — unexplained; never gloss early.
+  The Guadalupe jacket is back in Theo's black bag. The O'Connor and the Hopkins are on the desk; the Hopkins ships "in
+  October."
+- Seeds placed (do not over-signal): Hale's "Forgiven by whom?"; Evan's third driver; Theo's "Utah lets him go"; Kevin's
+  Story Road driver; Laney's mother's voicemail; Ashley Vrabel's father's DUI (`e5_gina_dui` → E15); Wes's misspelled
+  capitals.
+- nextTime: "Love Is Patient: Our Chastity Story." · "License and registration." · the beach cleanup line · "Walk me home,
+  Costigan. The long way."

@@ -492,3 +492,93 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - Gina [s08/s13] Jack's texts ("hows dad"; "turn it back on").
 - Danny [s11] the ocean letter; [told] Jack told "the veil girl" about him; [else] his jacket walked a girl home.
 - Wes [s13] nothing new about Jack.
+
+### S1E05 — "Moral Luck"
+> Written for the after-s1e04 save. Branch tags are `[scene | condition]`. Journals in s02c, s10b are attached to the
+> choices (they land after the reveal). The assignment card moved to s12 (papers return Thursday). Every dependency on an
+> earlier fork is gated: `e4_walk`, `e4_seminar`, `e3_lena_monday`, `e3_told_lena_frank`, `lena_knows_danny`, `e2_friday`.
+
+#### Jack
+- [s01] WHO DAT · TODAY on the Odyssey (Theo saw Lena write it at 1 a.m.).
+- [s02] Dale Wisniewski: Warren, *Michigan*. [dale] 27 years Warren Truck, laid off spring, daughter's spare room since July.
+- [s02b] **Wes's text** (read off Lena's screen, his face held where she put it): "WHO DATTT. BREES IS THE TRUTH AND THE
+  LIGHT. LUC SAYS WHERE YATT." Jack knows the name **Luc** only as "somebody called Luc" (not that he's her brother or Wes's
+  friend). Wes = the boy who held the stepladder in her Mardi Gras pictures (E02 s16). No duration of Lena–Wes known.
+- [s02c] Theo paid Sully's on Richard's card; Meridian laid off 212 this year (Theo).
+- [s03] Nonna phoned the rectory: a Mass in thanksgiving for his "good confession" (Mrs. Fitch, aloud; Lena and Osei hear).
+  Kenzie Rourke (cantor) and Peter Haddad (lector) are known to Jack since E01 s15.
+- [s04] Tariq called Yusuf from Helmand. Hale wrote his doctorate on moral luck (Caleb). The two-drivers hypothetical.
+- [s05b–s05d] Lena's Aquinas (q.18, q.20 a.5), Kant; Hale's "Forgiven by whom?" [Personal] Hale's forfeit rule.
+- [s05v] "Do you think the lucky one sleeps?" [you] Hale "sleeps like a baby… up every two hours, crying."
+- [s06b/s07] **Gina is being bullied: Ashley Vrabel (color guard), "class expert on visiting the imprisoned"; Mrs. D; Kelsey
+  laughed; Ashley's dad's DUI last Christmas (from Gina).** Frank turned the radio back on, low. Nonna told the altar
+  society; Mrs. Iannucci cried.
+- [s07b] Swayze died (Facebook/floor). Poppy is 14 and texts Theo at midnight (Theo shows him). Becca's beach cleanup Sat.
+- [s08] (Jack's own act, no gloss) the money order to D. Kostelnik, Struthers. Jack knows the address by heart.
+- [s09] Lena's paper and its SCG III.74 argument. [s10b | brick] Kevin's ER summer and the Story Road crash; Kevin's mom
+  thinks he's asleep; **Lena's 12:47 a.m. text (Laney asleep, 31 pins, the mood ring)**. [s10a | pref] Laney's pref-night mood
+  ring; her mother's voicemail ("Delaney Rose… Posture"); the DRP pill "doctor's orders… a note."
+- [s11] The Guadalupe jacket in Theo's black bag; Theo's Prague/Marymount story (Jack does not know it's a lie; no name).
+- [s12] Hale's Sandoval line "The bill arrives at the wrong address." Evan's third driver. [owe] "Purity of heart…"
+- [s13] Margot's *Tide* piece. [e2_friday!="margot"] Jack learns the stakeout went on without him (the article). Laney got
+  Pi Lam. Sloane calls him "The Catholic" [sloane].
+- [s13b–e] Danny got the ocean letter; Reggie (next bunk, Portsmouth); *Brideshead* in the mailroom; Danny called the house
+  Wednesday. [walk] Danny's reaction to Gina's bullying; "tell her she did good." All: cut off at "tell Gina — ."
+- [s14] Lena counted 61 (one engine).
+
+#### Lena
+- [s02 | lena_knows_danny] Warren, Ohio = near Trumbull (she connects Dale's "not the other one"). [dale &&
+  e3_told_lena_frank] repeats Frank's "Lordstown, twenty-six years" (from E03 s11c); [dale && !told] hears it from Jack here.
+- [s02b] Jack saw Wes's text (she knows his face was under the screen).
+- [s03] **Jack went to confession** (Mrs. Fitch's slip, read aloud; Nonna's Mass; "good confession"). [candor] on Saturday,
+  because Nonna told him to. [sincere] "It helped."
+- [s05a | Press] Jack's "Nobody in Youngstown ever got sentenced for his will" (she reacts at *sentenced*).
+- [s05b | Personal] Jack used her walking out (Bastille, the Anchor) against her in front of the seminar.
+- [s05c | Press] Jack's "nobody gets to take it for him." [Concede] "He owes the mother the truth."
+- [s06] [brother] the argument was about Danny; [me] about Jack ("Because you got out"); [winning] nothing true; [sorry]
+  the apology.
+- [s06b | show/tell] **Gina, 15, Ursuline; the "class expert on visiting the imprisoned" taunt** (`e5_gina_lena`). [later]
+  nothing.
+- [s07] (not present) — on `e5_gina_advice=="nun"` Gina now believes in "the nun" (Lena does not know this).
+- [s10a | pref] Laney's pill again ([pill] Jack asked; Laney: "Flying"). Laney's mother's voicemail.
+- [s12] Jack's red on her paper; [personal & !apologized] she wrote him only "Fine."
+- [s13b] **Danny calls from Trumbull** — she hears the recording (his name, the prison) on both forks.
+- [s13c | stay] **Danny's voice; he calls her "the veil girl" (Jack's family's name for her); "you're the one who asked my
+  name"; Gina says Nonna has her down as a nun; Jack wrote that she "argues like a prosecutor"** (`danny_met_lena`). She
+  tells Danny she's going to be defense. [walk] only "He says hey" and the cut-off.
+- [s13e] "tell Gina — " cut off (Jack tells her on walk; she hears it on stay).
+- [s14] Jack counted 60 [61/engines] (his reply).
+
+#### Theo
+- [s01] Jack's "ten a.m., black and gold" (Jack told him Saturday night).
+- [s02b] watched the fleur-de-lis being painted; [s03] watched Jack leave for Mass with it.
+- [s07b | told] **Lena knows about Danny** (`theo_knows_lena_knows`).
+- [s11] Jack has seen the jacket (the Guadalupe back). [quiet] Jack asked nothing; [prague] Jack played along; [mail] Jack
+  told him to mail it.
+
+#### Danny
+- [s13b–e, all] Jack got his letter read; the ocean letter arrived; "a guy at work" told Jack to write. Jack is at "a
+  sorority thing." [stay] **Lena is real; she is the New Orleans girl from the seminar letter (inferred from her accent) and
+  the veil girl; she's going to be defense.** [walk] **Gina's bullying (Ashley Vrabel, the class-expert line)** and Jack's
+  advice per `e5_gina_advice` (`e5_danny_gina`). [bench/which/yeah] the veil girl was up on the bench.
+- From Gina (off-page, Wed night call): [nun] Gina asked whether "the nun" is real; [all] Nonna "has [the girl] down as a
+  nun."
+
+#### Gina
+- [s07] Jack's advice per `e5_gina_advice`; [nun] **"the nun" (Lena) is real** and gave the advice. [dui] the DUI comeback.
+  [mom] she promised to tell Ma ("fine").
+
+#### Margot / Laney / Kevin / Hale / Evan / others
+- Margot [s01 | margot] Jack borrowed her Sleater-Kinney shirt. [s02c | latin] Jack's Latin. Her whiteboard logs Sully's.
+- Laney [s02b] took the photo of the painting. [s09 | brick] Jack skipped Pref Night ("Where were you last night?").
+  [s10a] Jack "said that before" (lucky); "You stayed till I slept" [pref]. [s13 | sloane] Jack blew Sloane a kiss.
+- Kevin [s10b] [fight] the scar came from "a fight, a long time ago" (Osei also has "fight"); [puck]/[franciscan] the
+  stories. Kevin has never been told about Danny.
+- Hale [s05v] Jack's answer to "Does the lucky one sleep?" per `e5_sleep`. [Personal] Jack's hit on Lena (he laughed, then
+  docked it).
+- Evan [s12 | okay] Jack asked if he's okay; [owe] what the third driver owes.
+- Osei [s03] Nonna's Mass intention (he keeps the seal; Fitch and Nonna carry the news).
+- Yusuf [s04] Jack's "Good" about Tariq.
+- Dale [s02 | dale] Jack's father is Lordstown, 26 years (from Lena or Jack).
+- Sloane [s13 | sloane] "The Catholic" again (E02 s17a).
+- Wes: nothing new about Jack. Luc: nothing about Jack.

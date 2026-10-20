@@ -1,0 +1,331 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "SUNDAY · 9:21 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "By twenty past nine the fog over the Lagoon has gone thin, a gauze the sun is working on from the far side. Theo is at the espresso machine in a black cashmere sweater with the sleeves shoved up. The machine woke Jack at five, and Theo has been at it since. The Post-it on its flank is torn down to its bottom half, which still says, in Theo’s neat hand, *+ 1 MALIBU —T.*",
+    "Jack takes inventory of his half of the closet against Lena’s instructions. Three flannels: red, green, and a blue so faded it’s more of a rumor. No Mooney hoodie; the hoodie lives in 217 now. One navy blazer from the Goodwill on Market Street, for Mass and for Hale. Danny’s Carhartt on the door hook. Nothing black. Nothing gold. Nobody in Youngstown has ever dressed for somebody else’s team.",
+    "Down in the Anacapa lot, Kevin’s Odyssey is nosed in by the dumpsters, and across its back glass, in white La Vang car-wash polish, it says WHO DAT · TODAY. “She did that at one,” Theo says, without turning around. “I was coming in from the lot. She had a flashlight in her teeth and she was spelling it out loud.”",
+    "The Hopkins is squared up on the corner of the desk, where it will stay till October and a mailer. Into the back pocket goes Flannery O’Connor, *A Good Man Is Hard to Find and Other Stories*, a Harvest paperback with a spine still white: a Mooney senior-English castoff out of the milk crate. He moves the Benedict holy card over into the first story, where the grandmother is already arguing about the route.",
+    "Theo puts an espresso in his hand that he didn’t ask for and looks at the flannel he’s wearing. “Ten a.m. Black and gold. She said it in front of a waitress and two fishermen, Costigan. In Louisiana that’s a sacrament.”"
+   ],
+   "choices": [
+    {
+     "text": "Knock on 305.",
+     "tag": "Go",
+     "set": {
+      "e5_outfit": "margot",
+      "rel.margot.warmth": "+1"
+     },
+     "response": [
+      "Margot opens on the first knock, dressed, the Moleskine already in her hand; as far as Jack can establish, she doesn’t sleep so much as pause. She takes in the flannel, the stubble, the whole regional problem of him, and comes back from inside with the only color she owns, which is black: a Sleater-Kinney T-shirt, washed soft, that fits him across the shoulders like a dare. “It’s from Portland. Return it unwashed and I’ll know.” She picks up her keys. “I’m coming. As an anthropologist.”",
+      "Kevin has the Odyssey running in the lot, the La Vang rosary swinging from the mirror. Laney and Lena went ahead at nine to hold a booth."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "Raid Theo’s side of the closet.",
+     "if": "trait.charm>=8",
+     "tag": "Charm",
+     "set": {
+      "e5_outfit": "theo",
+      "rel.theo.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "Theo lights up like Christmas. He puts Jack in a plain black T-shirt that cost more than La Flaca, then pins his grandfather’s gold cufflinks through the short sleeves, one each side, like a general’s. “I own one gold thing. Two. They’re cuffs.” For himself: the black cashmere, gray jeans, nothing gold anywhere. “Neutral.”",
+      "Margot is already in the way-back of the Odyssey when they get down to the lot, Moleskine open, observing. Laney and Lena went ahead at nine to hold a booth."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "Go as you are. Flannel. Take what’s coming at the door.",
+     "tag": "Candor",
+     "set": {
+      "e5_outfit": "flannel",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Theo looks at the flannel and says nothing, so loudly that Jack can still hear it on the stairs.",
+      "Margot is already in the way-back of the Odyssey when they get down to the lot, Moleskine open, observing. Laney and Lena went ahead at nine to hold a booth."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "SUNDAY · 9:58 AM · SULLY’S, MISSION STREET",
+   "music": "Rebirth Brass Band — “Feel Like Funkin’ It Up”",
+   "set": {
+    "resolve.lena": 6
+   },
+   "body": [
+    {
+     "type": "sms",
+     "from": "LANEY (FIREMAN’S FAVORITE)",
+     "text": "booth secured. lena is handing out beads at the door like a bishop. BLACK AND GOLD fireman i mean it. xo",
+     "time": "9:46 AM"
+    },
+    "Sully’s is Mission Street’s idea of a sports bar: a green awning, a neon shamrock with one leaf out, a chalkboard on the sidewalk that says NFL SUNDAY TICKET · DOORS 9 AM · BLOODY MARY BAR. A brass band is coming out of it at two minutes to ten in the morning, tuba first, Bourbon Street dropped on a California sidewalk. And on the door, where a bouncer would be if Sully’s ran to one, is Lena Broussard with a fistful of gold beads.",
+    "She’s in the black WHO DAT shirt from the fire drill, black jeans and white Keds, hair up off her neck, checking everybody who comes through like the door of a second line. She packed the beads in July, she tells Kevin, “because I am a planner, and the Lord rewards planning.” The music is hers too: her iPod, the owner’s aux cord, a deal she negotiated “until kickoff, and then we’ll see.”",
+    {
+     "if": "e5_outfit==\"margot\"",
+     "text": "She stops Jack with one hand flat on his chest and reads the shirt. “That is a riot grrrl band.” “It’s black.” “It’s *Portland*.” She weighs his soul for a second. Then two strands of gold go over his head, and behind him Margot looks pleased in a way she will deny to the grave."
+    },
+    {
+     "if": "e5_outfit==\"theo\"",
+     "text": "She stops Jack with a fingertip on one cufflink, turns it to the light, turns the other one, looks up at Theo, who is in black cashmere and visibly expecting to be beaded. She doesn’t bead him. “Gold is gold,” she allows, and puts two strands over Jack’s head instead."
+    },
+    {
+     "if": "e5_outfit==\"flannel\"",
+     "text": "She looks at the flannel. Then she puts four strands of beads around his neck, one after another, unhurried, and out of the tote — Laney packed it “for emergencies” — comes a gold sequin shrug, which she works up his arms and settles on his shoulders. “Black and gold, I said. That’s the first quarter. You can earn the flannel back.”"
+    },
+    "Inside it’s one big projection screen and five tube TVs bolted up in the corners, and the room has sorted itself by exile: a Packers table in foam cheese, a Steelers table whose team played Thursday and who came anyway, on principle, and two Raiders guys at the rail who have been arguing with each other since the doors opened. There’s a Bloody Mary bar with a forest of celery. Lena asks the bartender for an Abita root beer. He considers it honestly. “Is that a cheese?” She takes a Coke with lime and a look that means somebody will be getting a letter. Jack gets a Coke, because he’s eighteen and broke and it’s ten in the morning.",
+    "Laney has the big corner booth under the projection screen and is dressed for it: gold sequins from collarbone to hip at 10:02 a.m., copper hair tied up in a black ribbon. “Game day in Texas, sugar. This is *daywear*.” Margot slides in across from her in black — “I’m always in uniform” — and opens the Moleskine to a clean page. “I’m here to observe a cult with nachos.” She writes that down, and underlines *nachos*.",
+    "Kevin, who drove, is in a 49ers cap with the Odyssey key on a carabiner at his belt, ordering fries and waters for the table before anyone can stop him. “Designated adult.” Theo takes the end of the booth. Lena, in off the door to bead the table, points out that he is wearing black. “It’s cashmere,” Theo says. “Cashmere doesn’t take sides. I’m here as a neutral party. Like Switzerland, or Kevin.”",
+    "Laney catches Lena by the wrist as she goes by. “Bid Day, sugar. Wear something you can cry in.” “I’m not rushing.” “You’re not rushing. You’re *supporting*.”",
+    "At the far end of the bar, alone under the corner TV, a heavy man in his fifties in a Honolulu-blue Barry Sanders jersey is eating eggs slowly, like somebody counting what they cost. Lena beaded him at the door. “He’s the enemy,” she tells the booth, “and he’s by himself. Those are two different questions.” She walks Jack down the bar to meet him. “Mr. Dale, this one’s from Ohio. Be gentle, he’s a Browns fan.” The man wipes his hand on a napkin and puts it out, and it’s a hand that has spent a long time on a line. “Dale Wisniewski. Warren.” Jack opens his mouth. “Michigan,” Dale says. “Not the other one.”",
+    "Jack knows the other one. Half an hour up the road from Glenwood Avenue, two fences, a county road. Lena knows it now too. She glances at him, and away, and asks Dale whether he wants hot sauce on those eggs, which he doesn’t, which she takes personally.",
+    "Over Dale’s head the corner TV has the Browns at home against Brett Favre in a purple jersey, which the Packers table is treating as a death in the family. Then the big screen kicks off, the brass band stops mid-phrase — the owner, keeping his end of the deal — and the room turns into Superdome noise. Brees walks the Saints down the field like it’s his own driveway, and when they score, the owner, a big pink man in a Sully’s polo, rings the brass ship’s bell over the register, once, a little shyly. Lena is up on the booth seat before it stops swinging. “Sir. That is a *touchdown*.” He rings it again, properly. It is going to be a long morning for that bell."
+   ],
+   "choices": [
+    {
+     "text": "Step outside for a smoke. The Browns are the Browns.",
+     "tag": "Reckless",
+     "set": {
+      "e5_sullys": "smoke",
+      "reliquary": "+1",
+      "jack_cigs": "+1",
+      "soul.restraint": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "Lena confiscated a fourth relic, outside Sully’s.",
+     "response": [
+      "Mission Street is bright and Sunday-empty. He has a Red out of the pack and the lighter going when the door opens behind him and Lena takes it from between his lips before it’s properly caught and puts it out on Sully’s brick. Then she produces a napkin and a pen, turns him around by the shoulder, and writes against his back.",
+      {
+       "type": "doc",
+       "title": "A Sully’s napkin",
+       "text": "No. 4 · 9/13/09 · Sully’s · in mourning for Cleveland"
+      },
+      "The napkin goes around the cigarette, and both go into the tin. “At this rate I need a reliquary for the reliquary.” Inside, the bell goes for the second touchdown, and she’s through the door before it’s done. When he gets back to the booth her eyes are on the screen and her lips are moving with every snap, and it could be the down and distance and it could be the Memorare."
+     ],
+     "journal": [
+      {
+       "kind": "note",
+       "id": "cigarette",
+       "title": "The Reliquary",
+       "text": "An Altoids tin from a pea-soup restaurant in Buellton. RELIQUARY on the lid. No. 1: the Lighthouse. No. 2: Malibu, before breakfast. No. 3: the harbor — she smoked half of it first. Do not ask. No. 4: Sully’s, on a napkin, in mourning for Cleveland."
+      }
+     ],
+     "goto": "s02b"
+    },
+    {
+     "text": "Take the stool next to the Lions fan.",
+     "tag": "Sincerity",
+     "set": {
+      "e5_sullys": "dale",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "Dale moves his plate over. Twenty-seven years at Warren Truck, Dodge Rams; laid off in the spring when Chrysler went under; his daughter’s spare room out here since July. “Lions went oh and sixteen last year,” he says, “so this is a recovery program.” Jack means to say Lordstown and can’t find the place to put it, and Lena comes down the bar with the hot sauce Dale didn’t want and says it for him. “His daddy’s Lordstown. Twenty-six years.”",
+      "Dale looks at Jack and nods slowly, the nod of a man hearing his own town’s name in a foreign country. Lena hooks her arm through his. “Mr. Dale, the Lions are the Aints of the North, and you are welcome in this booth.” He brings his eggs. All through the first quarter her eyes stay on the screen and her lips move with every snap, and it could be the down and distance and it could be the Memorare."
+     ],
+     "goto": "s02b"
+    },
+    {
+     "text": "Heckle Favre for the Packers table.",
+     "if": "trait.wit>=12",
+     "tag": "Wit",
+     "set": {
+      "e5_sullys": "heckle",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He gives the Packers table three lines about Brett Favre: that the man retires as often as other people sneeze; that Minnesota caught him like a cold, from a stranger, in August; and that somewhere in Green Bay a grown man is crying into a jersey he can’t return. The Packers table adopts him on the spot. A woman in a foam cheese buys him a Coke.",
+      "Lena doesn’t look away from the big screen. “Don’t make friends during the Saints, Costigan.” Her lips are moving with every snap, and it could be the down and distance and it could be the Memorare."
+     ],
+     "goto": "s02b"
+    }
+   ]
+  },
+  "s02c": {
+   "slug": "SUNDAY · 12:58 PM · SULLY’S, MISSION STREET",
+   "music": "Louis Armstrong — “When the Saints Go Marching In”",
+   "set": {
+    "resolve.lena": 7
+   },
+   "body": [
+    "The fleur-de-lis is still on his cheekbone, and he has stopped knowing it’s there except when somebody looks at it, which in Sully’s is everybody. The second half is the Saints doing whatever they like. Brees throws and throws. Shockey catches his second and does something in the end zone the Steelers table calls excessive. Mike Bell runs like a man late for his own wedding. By the fourth quarter the owner rings the bell with his whole shoulder and has stopped smiling while he does it.",
+    {
+     "if": "e5_outfit==\"flannel\"",
+     "text": "Jack earned the flannel back at the end of the first quarter. Laney has her shrug. The beads stayed."
+    },
+    "The Lions get some back — a fumble picked up by a rookie safety and run sixty-five yards the other way, a couple of late scores — and the rookie quarterback throws his third interception. Dale watches the kid walk off with his helmet in his hand. “The kid’s going to be good,” he says, and goes back to his coffee.",
+    "Then the last one: a little screen pass out to the fullback, Heath Evans, who looks honestly surprised to be included and walks it in. Six touchdowns. Lena is standing on the booth seat in her Keds with both arms over her head and the beads swinging.",
+    "The corner TV is a different country. Adrian Peterson has spent the morning going through the Browns like a screen door, and at the end it says VIKINGS 34 · BROWNS 20. Somewhere on Glenwood Avenue the radio in the garage is saying the same numbers, low, or it’s off. From here Jack can’t tell which.",
+    "Final, forty-five to twenty-seven. The owner puts on his record, Louis Armstrong, scratchy, and Lena allows it. Then it starts in the booth. Margot does the chant deadpan, every syllable at the same pitch, like a hostage reading a prepared statement. Kevin puts his fingers in his mouth and whistles, perfectly. Theo has the iPhone up, filming: “Week two.” Laney is up on the table in her sequins, against every rule Sully’s has.",
+    "Lena turns on the booth seat with the beads still swinging and points at him. “Who dat, Costigan. Say it like you mean it.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "dale",
+     "title": "Dale (Sully’s)",
+     "if": "e5_sullys==\"dale\"",
+     "text": "Dale Wisniewski. Warren, Michigan — not the other one. Twenty-seven years at Warren Truck, laid off in the spring. Barry Sanders jersey; tips in quarters. Lena told him about Dad. She says the Lions are the Aints of the North and he’s welcome in the booth."
+    },
+    {
+     "kind": "person",
+     "id": "dale",
+     "title": "Dale (Sully’s)",
+     "if": "e5_sullys!=\"dale\"",
+     "text": "Dale Wisniewski. A Lions fan alone at the end of Sully’s bar in a Barry Sanders jersey. Warren, Michigan — not the other one. Tips in quarters. Said the rookie’s going to be good."
+    },
+    {
+     "kind": "note",
+     "id": "ledger",
+     "title": "The ledger",
+     "text": "Pie: paid. Bus fare: paid, with compliments. Richard Vance’s hundred: Theo’s, for the gas. A new *Brideshead*, cloth, with a ribbon: “Not on the tab.” Postage to Trumbull: $2.38, out of tips. Sully’s: a booth’s worth of nachos and my Cokes, on Meridian Pictures. Theo says Meridian can afford it."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Full Mooney gym voice.",
+     "tag": "Reckless",
+     "set": {
+      "e5_whodat": "loud",
+      "rel.lena.friction": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "You said Who Dat at full Mooney gym volume, and the Raiders guys joined in.",
+     "response": [
+      "He gives it the whole Mooney student section, the voice that used to carry from the top row of the bleachers to the far baseline — *WHO DAT SAY DEY GONNA BEAT DEM SAINTS* — and at the rail the two Raiders guys stop fighting each other for the first time all day to join in. The owner rings the bell on his own. Lena comes in on the second *who dat* like a choir.",
+      "Dale goes out past the booth, leaves a column of quarters on the bar, and raps the table on his way by. “Next week, kid.” Theo has already handed the waitress a black card with his father’s name on it for all of it — nachos, fries, Laney’s orange juice, six Cokes — and is writing it on the Post-it in his head, out loud: “Plus Sully’s.” Jack starts to object. “Meridian laid off two hundred and twelve people this year, Costigan. It can buy six Cokes.”",
+      "In the lot Lena wipes TODAY off the Odyssey’s back glass with the heel of her hand and the hem of her shirt, digs the polish out of her tote, and writes, big: 1–0. Kevin, keys out: “That’s my mom’s car.” Lena caps the bottle. “It’s the Lord’s car today.”"
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "In Latin.",
+     "tag": "Wit",
+     "set": {
+      "e5_whodat": "latin",
+      "rel.lena.friction": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "You said Who Dat in Latin. She called it liturgical.",
+     "response": [
+      "Four years of Mooney Latin Club rise up in him. “*Quis dat dicit se Sanctos victurum?*” Margot sets down her water. Her mother teaches Classics at Reed, and it shows. “That’s not even grammatical. You have two verbs. *Dat* means *gives*.” Lena, from the booth seat, with total authority: “It’s *liturgical*.”",
+      "Margot laughs into her ice water, once, hard, and comes up furious about it, and spends the rest of the chant glaring at the ice.",
+      "Dale goes out past the booth, leaves a column of quarters on the bar, and raps the table on his way by. “Next week, kid.” Theo has already handed the waitress a black card with his father’s name on it for all of it — nachos, fries, Laney’s orange juice, six Cokes — and is writing it on the Post-it in his head, out loud: “Plus Sully’s.” Jack starts to object. “Meridian laid off two hundred and twelve people this year, Costigan. It can buy six Cokes.”",
+      "In the lot Lena wipes TODAY off the Odyssey’s back glass with the heel of her hand and the hem of her shirt, digs the polish out of her tote, and writes, big: 1–0. Kevin, keys out: “That’s my mom’s car.” Lena caps the bottle. “It’s the Lord’s car today.”"
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "Quietly. Just to her. Like you mean it.",
+     "tag": "Sincerity",
+     "set": {
+      "e5_whodat": "quiet",
+      "rel.lena.heat": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "You said Who Dat quietly, just to her, like you meant it.",
+     "response": [
+      "He leans in under the noise and says it to her, just to her, low, the whole ridiculous sentence, like he means it, which he does. She stops shouting to hear it. Then she starts again, louder, for both of them.",
+      "Dale goes out past the booth, leaves a column of quarters on the bar, and raps the table on his way by. “Next week, kid.” Theo has already handed the waitress a black card with his father’s name on it for all of it — nachos, fries, Laney’s orange juice, six Cokes — and is writing it on the Post-it in his head, out loud: “Plus Sully’s.” Jack starts to object. “Meridian laid off two hundred and twelve people this year, Costigan. It can buy six Cokes.”",
+      "In the lot Lena wipes TODAY off the Odyssey’s back glass with the heel of her hand and the hem of her shirt, digs the polish out of her tote, and writes, big: 1–0. Kevin, keys out: “That’s my mom’s car.” Lena caps the bottle. “It’s the Lord’s car today.”"
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s13": {
+   "slug": "THURSDAY · 5:04 PM · SEACLIFF ROAD, ACROSS FROM PI LAMBDA CHI",
+   "music": "Beyoncé — “Single Ladies (Put a Ring on It)”",
+   "body": [
+    "At five o’clock on Bid Day, Seacliff Road sounds like a stadium somebody has told is a sorority. Pi Lambda Chi has every window open and two speakers wired to the porch rail playing the Beyoncé song Kanye took the microphone for on Sunday, and by the look of the actives it has been playing since Sunday. Forty women in white are on the lawn, screaming at nothing yet. Across the road, on the bluff side, seventy feet above the rocks, is the bench where Margot ran her stakeout two weeks ago, and Margot is on it again.",
+    "She has a stack of today’s *Tide* on her knee, folded open to page three.",
+    {
+     "type": "doc",
+     "title": "The Marisol Tide · Thursday, September 17, 2009 · Page 3",
+     "text": "RITES OF PASSAGE\nA week inside sorority recruitment on Seacliff Road, where the dress code is a test and the test is a dress\nBy Margot Lindqvist\n\n…The chapter’s philanthropy is children’s literacy. Its recruitment budget exceeds its philanthropy budget by a factor this reporter is still confirming.\n\n…Two male control subjects, observed from a public bench, could not name a single shade of pink between them. One is Catholic. This reporter does not believe that is a coincidence."
+    },
+    "She has the Moleskine out for the follow-up, and on the porch an active in a headset, with a clipboard of her own, has been glaring at her across Seacliff for ten minutes with a pure, professional hatred. Margot looks right back, and writes the glare down.",
+    "Lena is at the other end of the bench, in a blue sundress with small white flowers on it — “I can cry in this one, I tested it” — and her mascara, she wants him to know, is waterproof. “Laney said wear something you can cry in. I extended it to the face.” She has her boots planted and her hands knotted in her lap, and she is watching the top of the road as if something is coming in off the Gulf.",
+    "At nine minutes past five a whoop goes up from the far end of Seacliff and the new members come down the road at a dead run: sixty girls in matching pink T-shirts that say PI LAM RODEO, bandanas at their throats, cowboy hats, boots that have never been introduced to a horse. Laney, who is from Texas, has been telling everyone who would hold still since Tuesday that the theme is cultural theft. She is out in front anyway in a pink straw cowboy hat, copper hair coming loose behind her. On the porch steps Sloane Kittredge has the clipboard and is calling names like a ring announcer.",
+    "Laney hits the porch and screams, and is screamed at, and screams back, and is passed hand to hand across a crush of white dresses — and then she turns around, finds the bench, and comes straight back across Seacliff at a sprint in wedge heels, through a gap between a Jetta and a surf van, holding the hat on with one hand. She goes into Lena first. They’re both crying at once, Lena’s waterproof holding up, Laney’s not, Laney saying “I *know*, I *know*” into Lena’s hair as though Lena had said anything. Then she lets go and gets Jack around the neck. “FIREMAN.”",
+    {
+     "if": "e5_wed==\"pref\"",
+     "text": "Into his collar, quieter, before she lets go: “You stayed till I slept.”",
+     "else": "She pulls back and smacks him on the chest. “Where were you last night? I needed a man to hold the carnitas.”"
+    },
+    "Margot has the pen up. “On the record?” Laney puts the hat back on and squares it. “Sugar, I *am* the record.” Two actives come across the road and take her back by the elbows, lifeguards bringing in a swimmer who didn’t want saving, and Laney goes, waving over her shoulder with the hand that isn’t holding her hat on.",
+    "Behind them a champagne-gold convertible comes down Seacliff slow with the top down. Theo lifts one hand off the wheel without turning his head, and keeps going west."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "laney",
+     "title": "Laney Price",
+     "if": "e5_wed==\"pref\"",
+     "text": "Laney Price. Pi Lam, as of Thursday: ran back across Seacliff in a pink cowboy hat to Lena first. The night before, on the floor of 217 in a white dress, she asked what happens if they look at her and see. First Catholic Mass: arms crossed like a Baptist, came back from the blessing pink and quiet. Programmed herself into my phone. (Hoodie status: hers.)"
+    },
+    {
+     "kind": "person",
+     "id": "laney",
+     "title": "Laney Price",
+     "if": "e5_wed!=\"pref\"",
+     "text": "Laney Price. Pi Lam, as of Thursday: ran back across Seacliff in a pink cowboy hat to Lena first. First Catholic Mass: arms crossed like a Baptist, came back from the blessing pink and quiet. Programmed herself into my phone. (Hoodie status: hers.)"
+    }
+   ],
+   "choices": [
+    {
+     "text": "The pageant wave back. Wrist, wrist, elbow, elbow.",
+     "tag": "Wit",
+     "set": {
+      "e5_bidday": "wave",
+      "rel.laney.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He gives it to her across Seacliff, the full Miss Teen Dallas County, every count of it. On the porch Laney stops dead in the crush, turns, and returns it perfectly, with the hat, and holds the smile at him until a sister pulls her inside.",
+      "Margot caps her pen, squares the stack of *Tides* under her arm, and leaves for deadline without saying goodbye, which is how she says it. Then it’s just Jack and Lena on the bench, with the sea working at the rocks below and the porch across the road still screaming."
+     ],
+     "goto": "s13b"
+    },
+    {
+     "text": "“Go be adored, Price.”",
+     "tag": "Sincerity",
+     "set": {
+      "e5_bidday": "adored",
+      "rel.laney.warmth": "+1",
+      "rel.laney.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He has to shout it across the road. She hears it anyway. From the top step Laney swings round and points at him with her whole arm, a game-show host with the contestant who just won the car, and keeps pointing till the door takes her.",
+      "Margot caps her pen, squares the stack of *Tides* under her arm, and leaves for deadline without saying goodbye, which is how she says it. Then it’s just Jack and Lena on the bench, with the sea working at the rocks below and the porch across the road still screaming."
+     ],
+     "goto": "s13b"
+    },
+    {
+     "text": "Blow Sloane a kiss on Laney’s behalf.",
+     "if": "trait.charm>=8",
+     "tag": "Charm",
+     "set": {
+      "e5_bidday": "sloane",
+      "rel.laney.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "He kisses his palm and sends it across Seacliff to the steps. Sloane Kittredge doesn’t look up from the clipboard. “The Catholic,” she says, in a voice that carries, and checks something off. Laney, three feet from her, puts both hands over her face and screams into them, mortified and thrilled in exactly equal parts.",
+      "Margot caps her pen, squares the stack of *Tides* under her arm, and leaves for deadline without saying goodbye, which is how she says it. Then it’s just Jack and Lena on the bench, with the sea working at the rocks below and the porch across the road still screaming."
+     ],
+     "goto": "s13b"
+    }
+   ]
+  }
+ }
+}

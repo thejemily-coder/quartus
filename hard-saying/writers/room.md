@@ -104,6 +104,14 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 40. **"…and stay(s) there"** (S1E04; heavy in E01–E02 too): a look, a question, a number or a name that goes somewhere and
    "stays there." Once per episode.
 41. **"The [face/look/laugh/pleasure] of a man/somebody who…"** (S1E04; twelve in one draft). Max three per episode.
+42. **Hale's scorekeeping as the button** (S1E05): roster marks, whiteboard underlines, a lifted finger, "makes no mark at all"
+   ending a duel response. Max two per duel (same rule as Margot's notebook, #30). End duel beats on the combatants.
+43. **Give-and-take figures for dialogue** (S1E05; ~ten in one draft): lines "handed back," "banked," "signed for," given back
+   "like change," folded "like a receipt," taken "like a letter somebody forwarded," "filed." Max two per episode.
+44. **"Like a man / like somebody [verb]-ing" similes** (S1E05): "like a man laying bricks," "like somebody counting what they
+   cost," "like a man late for his own wedding." Max two per episode (tic #41 covers "the X of a man who").
+45. **"Lets the room / lets that [wait / land / picture it]" timing tags** (S1E05). Max one per episode.
+46. **Rereading as an emotion tag** (S1E05): "reads it again," "reads it twice," "then she reads it again." Max one per episode.
 Small repeats to watch (S1E02): Laney's pageant wave is "wrist, wrist, elbow, elbow" (pilot order; spell it once per
 episode); "in installments"; "Of course"; "a real one" for laughs; the fixed-smile-as-mask (Laney's neon sign is hers,
 Kevin's tell is speed); hand-to-heart "as if shot"; "for no reason he could defend"; "no bit" as shorthand for sincerity;
@@ -112,6 +120,11 @@ Small repeats to watch (S1E03): the near-touch restraint beat (one "what it cost
 "first try"; "informs"; "in that order"; "delighted" for Lena (find a specific verb); "flat and white"; the surf "coming in
 and going out"; "has never been so [adj]"; "without being asked"; the fixed-pleasant mask for Theo ("perfectly pleasant");
 Lena laughing "head back"; "a real one" for laughs; the tin ticking in her pocket (once or twice an episode).
+Small repeats to watch (S1E05): "Noted" as Lena's crutch (spend it once, ideally as a callback); "allows it" (Lena, Laney,
+Kevin all "allowed" in one draft); "face down" for phones and books; "comes up into her face"; Lena taking things "in both
+hands" (keep one, the holy one); Hale's wine-stained cuff (once an episode unless it changes); Hale's 1:07 entrance; Yusuf's
+head on/off his arms; the radiator knock as a beat; "spine still white"; "squared up for October"; the stalled ship;
+"for a while"; Lincoln–Douglas-at-thirteen; the Greek-participle simile for Lena studying Jack (one per episode).
 Small repeats to watch (S1E04): Lena's thank-yous (spend "thank you" sparingly in her mouth; save the plain one); the
 voice-stripped-to-sincerity figure ("all the New Orleans goes out of her voice," "the Oxford worn off it," "the voice with
 nothing on it" — once per episode); Margot looking "over the black frames"; "goes still / not a flinch" for Lena; the
