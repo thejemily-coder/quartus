@@ -396,3 +396,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Neither resolve takes.** The next time Jack and Lena are around each other, the retreat lasts about five minutes,
     because they can't do the awkward-and-painful thing, and they end up right back at guilty fun. (This can land in
     E08's tag or early E09; room decides.)
+- **Running bit: never ask Laney for girl advice.** At some point (this third date, a later date with Becca, or a date
+  or gesture for the magnetic girl; room's choice of when and for whom), Jack asks Laney for an idea for a date or
+  gesture. Her answer is **hilariously terrible**, and it is **deliberately sabotage** (secret-alliance work). Laney
+  confirms this later, ideally at or near the alliance reveal. After that, **Jack never asks Laney for girl advice
+  again**, and it becomes a callback.
