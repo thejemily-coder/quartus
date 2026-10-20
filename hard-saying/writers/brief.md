@@ -316,10 +316,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Lena's temptation: room builds him.** He mirrors Jack's magnetic girl: someone with real pull (charming,
     dangerous or brilliant) whose flaws sit where Julian's strengths are, indifferent to her faith. Jack has to watch.
   - **On screen through Jack's eyes:** couples at parties, hands held at Mass, a door closing. Jealousy as POV.
-  - **The friends: the secret alliance.** Theo and Laney form a secret pro-Jack-and-Lena alliance.
-    - **Laney** openly dislikes every one of Jack's girlfriends and dates. With the magnetic girl, that's open hostility
-      on principle masking a grudging liking; with the tryer, it's real dislike.
-    - **Theo** is openly, impeccably polite to Lena's boyfriends and dates while privately despising them; he's Team
-      Jack to the bone.
+  - **The friends: the secret alliance (player's exact design; supersedes earlier notes).** Theo and Laney run a
+    covert pro-Jack-and-Lena alliance, and they mirror each other:
+    - **On Jack's girlfriends and dates:** **Laney openly hates them and is rude** to every one of them. **Lena tells
+      her to stop and be nice** to all of them *except the magnetic girl*, whom Lena can't stand either. **Theo is
+      perfectly polite in the open** but privately Team Lena: he passes information to Laney for planning, and they
+      maneuver together.
+    - **On Lena's boyfriends and dates (after Wes):** **Theo openly hates them and is rude** to every one of them, and
+      **Jack mostly doesn't stop him**. With **Julian**, Jack eventually tells Theo to stop: he can tell it isn't going
+      to work out, and it's turning mean for no reason. With **Lena's magnetic guy**, Jack hates him too and quietly
+      thanks Theo for it. **Laney is perfectly polite in the open** but privately Team Jack: she passes information to
+      Theo for planning, and they maneuver together.
     - **Margot** likes Julian and tells Jack he's the healthiest thing in Lena's life.
     - **Kevin** tries to get Theo and Laney to leave it alone; both refuse.
