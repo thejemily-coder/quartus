@@ -1,0 +1,313 @@
+{
+ "scenes": {
+  "s04": {
+   "slug": "FRIDAY · 7:30 PM · NEWMAN HOUSE, THE LOUNGE",
+   "music": "Jason Mraz & Colbie Caillat — “Lucky”",
+   "body": [
+    "Newman House smells like burnt coffee and powdered sugar. Forty folding chairs face a bedsheet thumbtacked over the shelves of donated books, and a borrowed projector balanced on the ping-pong table — net still dead — throws the title slide up onto it, slightly purple at the edges: LOVE IS PATIENT: OUR CHASTITY STORY, and under that, in a cursive font somebody chose on purpose, *Love is patient and kind. — 1 Cor 13:4.* The 1994 plaid couch has been shoved against the wall to make room. Mrs. Fitch’s lemon bars sit by the door on a paper doily, each one squared off to the next.",
+    "Tyler Brandt works the door with a linebacker’s receiving line: a fist bump, a shoulder squeeze, a name. “Brother.” He keeps Jack’s fist a second to make sure it took. “Bridget’s on tech. Sit anywhere. Sit close.” Bridget is a soft-spoken woman in a Franciscan University sweatshirt at the laptop, clicking a test slide forward and back with the concentration of somebody defusing it.",
+    {
+     "if": "e6_fri==\"margot\"",
+     "text": "Margot came in with him. She takes the aisle seat two down from Kevin Tran with her canvas tote on her lap and the carton of Djarum Blacks inside it, her hands folded on top, like the bereaved in the front pew.",
+     "else": "Margot arrives at 7:34, alone, in the black peacoat, with a reporter’s notebook and a pen she clicks once in the doorway — “For the *Tide*” — and takes the aisle seat two down from Kevin Tran as if it had her name on it."
+    },
+    "Lena is in the back row in the oatmeal cardigan, two lemon bars on a napkin on her knee. She moves her bag off the chair beside her without looking up, and Jack sits in it.",
+    "Peter Haddad tells it in his lector voice, in a polo shirt, the clicker in one hand and the other in his pocket, already a congressman. Kenzie Rourke stands beside him, kind, pretty, tired around the eyes in a way the projector isn’t kind to. A Steubenville youth conference, summer 2007: two thousand teenagers and a praise band in a gym in a town Jack has driven through, which is hard to picture anybody falling in love in. Peter saw her across the gym during adoration. “I knew,” he says. “And we chose to wait.” Bridget clicks. Disneyland: the two of them in front of the castle in mouse ears, sunburned and younger, and up through the laptop speakers come Jason Mraz and Colbie Caillat, harmonizing about how lucky they are. Somebody in the third row says *aww* without irony. Kenzie’s cousin’s wedding: Kenzie in sage chiffon, Peter in a rented vest. Peter explains custody of the eyes. He demonstrates it, looking at the floor.",
+    "Joey Abruzzo’s hand has been up since the castle. “Is it a sin to think about a girl in a mantilla?” A pause, in which Joey’s face reaches for precision. “*Generally.*” Two rows up a guy in a Cabrillo Hall shirt turns around in his chair to look at Lena. Lena looks back at him until he faces front.",
+    "Becca Lindell is front and center with a spiral notebook, a braid down her back as thick as a bell rope. “How do you stay friends with your own body?” she asks. “I grew up around animals. Bodies aren’t the enemy. I don’t want to treat mine like it is.” It is the first real question of the night, and Kenzie knows it — she answers before Peter can, and well: you feed it and you rest it and you thank it, and you tell it no sometimes, the way you tell anybody you love no. Then Peter lifts the clicker. “And guys —” he points it out at the room like a remote — “your future wife is out there *right now*.”",
+    "Kevin smiles all the way through that, the whole big smile. Two seats down from him, Margot isn’t looking at the bedsheet. She’s looking at Kevin.",
+    "Lena leans an inch toward Jack and says, low, out of the side of her mouth, “It’s true, and they’re selling it like a timeshare.” “Two nights in Orlando,” Jack says, “if you sit through the presentation.”",
+    "Q&A. Margot stands. She crosses to the shelf, takes down the lounge’s donated Bible — an Ignatius RSV with a Newman bookplate inside the cover — finds the page without hunting for it, and reads aloud in the voice of a flight attendant doing the exits. “*Wives, be subject to your husbands, as to the Lord. For the husband is the head of the wife as Christ is the head of the church… As the church is subject to Christ, so let wives also be subject in everything to their husbands.*” She keeps a finger in the page. “Kenzie. Do you plan to submit?”",
+    "The room makes a sound like a held breath at a free throw. Kenzie crosses the carpet, takes the Bible from Margot — gently, the way you’d take a baby from a stranger — and reads back up the page. “*Be subject to one another out of reverence for Christ.*” Then down it. “*Husbands, love your wives, as Christ loved the church and gave himself up for her.*” She closes it on her own finger. “So yes. I’ll submit to a man exactly as far as he’s already laying his life down for me. And I’ll know how far that is, because he’ll have been doing it every day before anybody asked me.” Margot looks at her for a while. “That’s a better answer than the text deserves,” she says, and sits.",
+    "Peter steps in to close it, warm and practical; he has fielded this at three Newman retreats. “Practically? When we can’t agree, I make the call. Prayerfully.”",
+    "Kenzie’s smile holds exactly where it is. Her eyes go to the carpet. The silence after that is the long, specific silence of forty Catholics who have all heard the same thing, and it goes on until Kevin Tran is on his feet with Mrs. Fitch’s plate from the door. “Okay! Who’d like to submit to a lemon bar?” The room breaks, grateful, and the plate goes down the row.",
+    "Lena turns her head. Jack is already looking at her. The Sunday before either of them left home, August twenty-third, every Catholic church in the country read the same second reading, and it was this one. “Back home,” Jack says, “Father Bruno skipped the homily on it.” “Ours didn’t,” Lena says. They look at each other across eight inches of folding-chair gap and an argument with no floor in it. “Not tonight,” she says. “Not tonight,” he says. Up front, Tyler claps once. “Time for one more!”"
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "talk",
+     "title": "Love Is Patient",
+     "text": "Peter Haddad and Kenzie Rourke, Newman’s it couple, tell their chastity story with a slideshow: Steubenville, 2007; Disneyland; a cousin’s wedding. Margot read them Ephesians. Kenzie answered with verse 25, better than the text deserved. Peter makes the call. Prayerfully."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Raise your hand. “What do you do when you fall?”",
+     "if": "trait.candor>=18",
+     "tag": "Candor",
+     "cue": "Kenzie will remember that.",
+     "set": {
+      "e6_talk": "fall",
+      "e6_asked_fall": true,
+      "rel.lena.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "At the chastity talk you asked Peter and Kenzie what they do when they fall.",
+     "journal": [
+      {
+       "kind": "note",
+       "id": "talk",
+       "title": "Love Is Patient",
+       "text": "Peter Haddad and Kenzie Rourke, Newman’s it couple, tell their chastity story with a slideshow: Steubenville, 2007; Disneyland; a cousin’s wedding. Margot read them Ephesians. Kenzie answered with verse 25, better than the text deserved. Peter makes the call. Prayerfully. I asked what they do when they fall. Peter said they haven’t had to find out. Kenzie looked at her hands."
+      }
+     ],
+     "response": [
+      "He puts his hand up from the back row and asks it plainly: what do you do when you fall. Every folding chair in the room creaks around to look at him.",
+      "Peter doesn’t need a second. He smiles, warm, immediate, the clicker easy in his hand. “By God’s grace, we haven’t had to find out.” Beside him Kenzie looks down at her hands.",
+      "When Jack faces front again Lena is studying him from eight inches away. There is respect in it, plain as a handshake, and something under the respect he doesn’t have a word for yet. Tyler is already thanking everybody for coming."
+     ],
+     "goto": "s04b"
+    },
+    {
+     "text": "Lean over. “Margot’s going to need a bigger whiteboard.”",
+     "tag": "Wit",
+     "set": {
+      "e6_talk": "whisper",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Lena has just taken a bite of lemon bar. She makes a small sound through her nose and folds forward over the napkin with her whole body, shoulders going, eyes squeezed shut, while powdered sugar comes down the front of the oatmeal cardigan like a light snow. She gets one hand flat over her mouth and with the other hits Jack in the arm, hard, and keeps her face turned away from him so he can’t see what it’s doing.",
+      "Up front, Joey’s index card is getting answered over the top of her. “Is CatholicMatch like a —” “No,” says Peter. When Lena finally sits up she brushes at the cardigan in short, furious strokes and doesn’t look at Jack for the rest of the evening, and the sugar is still in the cable knit when Tyler starts stacking chairs."
+     ],
+     "goto": "s04b"
+    },
+    {
+     "text": "Watch Kenzie while Peter takes the last question.",
+     "tag": "Sincerity",
+     "set": {
+      "e6_talk": "kenzie",
+      "soul.grace": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "The last question is Joey’s, off an index card. “Is CatholicMatch like a —” “No,” says Peter, and gets a laugh, and runs with it.",
+      "Jack watches Kenzie instead. She stands a half step behind Peter with the Bible still closed on her finger, smiling when the room laughs, and between laughs her face empties out the way a face does at the end of a double shift. She keeps the smile ready for the next laugh, and it comes, and she puts the smile on for it, and she is so tired that for a second Jack has to look at the bedsheet instead."
+     ],
+     "goto": "s04b"
+    }
+   ]
+  },
+  "s04b": {
+   "slug": "FRIDAY · 9:04 PM · NEWMAN HOUSE, THE FRONT STEPS",
+   "body": [
+    "Becca catches him in the doorway with the spiral notebook against her chest and a pen behind her ear. “Nine a.m. Campus Point. You’re on my team.” She taps the notebook where his name presumably is. “I put you down.” And she’s gone back inside to help Bridget wind up the extension cord before he can tell her he owns no gloves.",
+    "Out on the steps the Grove is all creak and menthol in the dark. Margot lights a clove — four days left of legal — and points it at Lena. “My problem isn’t the theology. The theology I can at least footnote. My problem is that every slide was about a girl as a present. Wrapped. Kept nice. Handed to the right man on the right day so he can open her. Which means the girls who don’t make it to the day are damaged goods, and you know who pays for that? Not Peter. Peter gets forgiven by the third slide. And the one sentence they aimed at the boys was about a girl. *Your future wife is out there.* Not one slide about what the boys do.”",
+    "“You’re right about the boys,” Lena says at once. “And you’re right about who pays. I went to an all-girls school, Margot, I watched who paid.” She comes down a step to be level with her. “You’re wrong about the present. Nobody *unwraps* you. A gift is given. The one giving it does it, when she decides to, because it’s hers — that’s the whole point of calling it a gift. The slideshow got that wrong, and you took the slideshow’s word for it.” Margot exhales clove at the eucalyptus. “I’m quoting you.” “Spell Broussard right.”",
+    {
+     "if": "e6_fri==\"margot\"",
+     "text": "Margot reaches into the tote and lays the carton across Jack’s forearms. “Pallbearer duties resume Tuesday.” Then she and Lena go down the steps together toward Ocean Road, still at it, the clove smoke going on ahead of them, and Jack stands under the porch light holding twenty packs of contraband like a folded flag.",
+     "else": "Then she and Lena go down the steps together toward Ocean Road, still at it, the clove smoke going on ahead of them. Behind Jack, Mrs. Fitch turns off the lounge lights one switch at a time and asks Bridget whether anybody has seen her doily."
+    }
+   ],
+   "next": "s05"
+  },
+  "s05": {
+   "slug": "SATURDAY · 8:52 AM · CAMPUS POINT, THE BEACH",
+   "music": "Kings of Leon — “Use Somebody”",
+   "set": {
+    "rel.kevin.warmth": "+1"
+   },
+   "body": [
+    "The marine layer sits on Campus Point like a lid. Low tide has pulled the water back a long way and left a wrack line the length of the beach: kelp in brown ropes, sand fleas going up off it in little bursts, bottle caps, a pink flip-flop, a snarl of fishing line with the hook still in it, and cigarette butts by the hundred, ground into the sand like seeds. Some of them are Reds. Jack picks those up first.",
+    "Forty volunteers in matching gray shirts — ST. BRENDAN’S · CARE FOR CREATION — stand around five-gallon buckets with trash grabbers, and somewhere in one of the buckets Joey Abruzzo’s iPod speaker is playing Kings of Leon, the bucket making it sound like a stadium in a cave. It’s the state’s Coastal Cleanup Day too; Becca registered the site, and the tally card is clipped to her clipboard under the sign-in sheet.",
+    "Becca has the clipboard and a whistle she does with her teeth and her tongue, no hands, that could move a herd off a county road. Before she can get to Jack with the spare gloves, Kevin Tran is in front of him holding out a pair of gray canvas work gloves, new, the price sticker still on the cuff. “I brought six,” Kevin says. “I’m a planner.” Becca arrives a step behind with a pink pair held out. “Next time,” she says, and makes a note.",
+    "She does the pairings off the clipboard. Kevin with Bridget, who has her sleeves rolled and a bucket on each arm. Lena with Joey, thirty yards down the sand. Becca with Jack. “Seating chart,” she says, without a blush.",
+    "So he works beside Becca Lindell for two hours, and it is not a date, and she treats it like one with total, cheerful frankness. She asks how many kids he wants, and when he says he’s never thought about a number she tells him hers. “Seven. Or nine.” She bags a Styrofoam cup. “Odd numbers, so there’s a tiebreaker.” “What are they voting on?” “Everything. Dinner. Names. Whether Dad gets to sell the truck.” Five brothers and a sister, and the sister’s the one you’d be scared of. A ranch on the Rathdrum road. A calf she pulled at twelve, in February, in the dark, by flashlight, her arm in to the shoulder and her father holding the light and saying *pull* and *wait* and *pull*. She tells it the way other girls tell the plot of a movie. Then she asks him about his prayer life, and she asks it like a person, not like Tyler. “What do you pray when you can’t think?” “Hail Mary,” Jack says. “It runs on its own.” Becca nods. “Glory Be, for me. It’s short. You can get through it while a cow’s kicking you.”",
+    "Thirty yards down, Joey’s voice carries without trying: Dunwoodie, a girl from Cabrillo with a nose ring, Dunwoodie again. Lena is in sight the whole time, a fixed point in the long gray morning, bending, straightening, her hair tied up in a cotton scarf against the damp.",
+    "Near the bluff, in the kelp, something small and clear catches the light — collapsed, glistening, the size of a fist. Jack has been reading about the moon jellies that wash up after a spring tide. He gets it with the grabber, carefully, so as not to tear it, and lifts it up to show her.",
+    "It is not a jellyfish. It is, unmistakably, Friday night on Las Olas.",
+    "Becca looks at it on the end of his grabber. Then she reaches over, takes it off the jaws with her gloved hand, and drops it in her bag. “I’ve pulled a calf,” she says. “Give it here.” Thirty yards down the beach, Lena, who saw the whole thing, sits straight down in the wet sand and laughs out loud, head on her knees, while Joey asks what’s funny at a volume that reaches the Marine Lab.",
+    "Later she comes up the beach toward the buckets with a full bag over her shoulder and sand on the seat of her jeans, and doesn’t slow down. “*Caritas in Veritate,* forty-eight,” she says, passing. “The Pope says the beach is a gift.” “Forty-eight through fifty-one,” says Jack, who has the encyclical in a milk crate under his bed. Lena considers the grabber in his hand, and what it was holding an hour ago. “He’s right about the beach,” she says. “I’ll give him the beach.” She keeps going.",
+    "At noon the fog starts to lift and Becca blows the whistle. They rinse the grabbers at the waterline, shin-deep, the Pacific so cold it aches in the ankle bones, sand going out from under their heels with every wave. Becca wrings out the hem of her shirt and looks at him sideways with the water around them. “How’d you get the scar?”",
+    "He’s been saving one for exactly this."
+   ],
+   "choices": [
+    {
+     "text": "“I walked into the Pacific Ocean.”",
+     "tag": "Wit",
+     "set": {
+      "scar_told_becca": "pacific",
+      "rel.becca.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "You told Becca the scar came from walking into the Pacific.",
+     "response": [
+      "Becca looks down at the Pacific Ocean, which is currently around both their shins. She looks at his eyebrow. She looks at the Pacific again.",
+      "“That’s a lie,” she says. “Is it a nice lie?” She lets a wave go past. “Because I don’t mind a nice one, as long as I get the real one later.”"
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "The Franciscan who plays dirty in pickup.",
+     "if": "trait.charm>=9",
+     "tag": "Charm",
+     "set": {
+      "scar_told_becca": "franciscan",
+      "rel.becca.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "key": "You told Becca a Franciscan gave you the scar in a pickup game.",
+     "response": [
+      "He gives her the friar: a brown habit hiked up into a rope belt, sandals on blacktop, an elbow he never saw coming. Becca’s whole face opens.",
+      "“My brother Eli lost a front tooth to a Benedictine,” she says. “Church picnic. Volleyball. Father Anselm. He still says he was going for the ball.” She shakes water off the grabber. “It’s always the monks. Nobody warns you about the monks.”"
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“A fight. A long time ago.”",
+     "tag": "Candor",
+     "set": {
+      "scar_told_becca": "fight",
+      "rel.becca.trust": "+1",
+      "soul.honesty": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "You told Becca part of the truth: a fight, a long time ago.",
+     "response": [
+      "She takes it straight, like everything else this morning. She nods once, a short ranch nod, and rinses the grabber jaws in the next wave.",
+      "“Okay,” Becca says. They walk up out of the water with their jeans dark to the knee, and she bumps his shoulder with hers, once, going up the sand."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“Long story.”",
+     "tag": "Control",
+     "set": {
+      "scar_told_becca": "none",
+      "trait.control": "+1"
+     },
+     "key": "Becca asked about the scar. You said it was a long story.",
+     "response": [
+      "Becca isn’t put off in the slightest. She tucks the clipboard under her arm, out of the spray.",
+      "“I like long stories,” she says. “I grew up with no TV and ten people at dinner. Later.” And she writes something on the back of the tally card that he can’t read from where he’s standing."
+     ],
+     "goto": "s06"
+    }
+   ]
+  },
+  "s06": {
+   "slug": "SATURDAY · 12:40 PM · ST. BRENDAN’S COURTYARD",
+   "body": [
+    "The Welcome BBQ is a rented propane grill, a folding table of hot dogs and burgers and veggie patties sweating in their plastic, two watermelons, a Costco sheet cake that says WELCOME HOME in blue gel, lemonade in orange coolers, and name tags on masking tape. In the shade of the olive tree a sophomore with a guitar is working through “All Are Welcome” for the third time, with feeling.",
+    "Fr. Osei has the grill, clerical shirt, sleeves rolled, the rubber boots on. He raises the tongs for silence and begins the grace, and halfway through it the 1962 sprinkler under the olive tree coughs twice and comes on full, and soaks the potato salad, the guitarist and the front of the line. Osei finishes the grace without hurrying. Then he looks at the sprinkler with great affection. “Even the sprinkler is Catholic,” he says. “It could not wait for the Amen.”",
+    "Tyler finds Jack in the line, wet to the elbow. “Coffee. This week. Your prayer life.” “Wednesday,” Jack says, and Tyler fist-bumps him like Jack has signed with his team.",
+    "Mrs. Fitch has a table of her own by the rectory steps, the lemon bars in rows, and when Jack comes around the end of the line with two hot dogs she has company: Lena with a paper plate, Bridget, a pair of nursing girls, and Becca, sunburned along the part of her hair, with her back to him. “I told my mother this was a date,” Becca is telling the table, cheerfully, cutting a lemon bar in half with a plastic knife. “She’s very happy. She’s lighting a candle in Coeur d’Alene.” Mrs. Fitch says *how lovely* in her bulletin voice. Across the table Lena looks down at her lemon bar and cuts it into very small pieces. Becca, her back to Jack the whole time, is already asking who wants the corner piece.",
+    {
+     "if": "e6_asked_fall",
+     "text": "He takes his plate to the low wall by the shrine. A minute later Kenzie Rourke sits down at the other end of it and sets a second plate beside him — a burger, potato salad from the dry side. She looks at the courtyard, not at him. “Good question,” she says quietly. “Nobody asks that one.” Then she gets up and goes back to the cake table. Across the courtyard Peter is laughing with a circle of juniors, his back squarely to the shrine wall, for as long as it takes Jack to eat.",
+     "else": "He takes his plate to the low wall by the shrine. Peter Haddad comes by on his way to the cake, humming along with the guitar — *all are welcome, all are welcome* — and claps Jack on the shoulder going past, a candidate working a county fair."
+    },
+    "When the line thins, Osei waves him over to the grill. He turns burgers without saying anything, the fat spitting, the reading glasses down on their cord. “Your grandmother’s Mass is Tuesday at twelve-ten,” he says. “I will say it myself.” He flips one. Then he puts the glasses on and looks at Jack over them, a doctor’s look, unhurried, the look that goes straight past the patient’s account of himself to the chart. “You are carrying something heavier than a trash bag this week.”"
+   ],
+   "choices": [
+    {
+     "text": "“My sister. She won a fight this week.”",
+     "tag": "Sincerity",
+     "set": {
+      "e6_osei": "gina",
+      "rel.osei.warmth": "+1",
+      "rel.osei.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Osei sets the spatula down. “How?”",
+      "So Jack tells him, with the grill hissing between them: a girl at Gina’s school who said something about his brother, in front of the class; and Gina, fifteen, saying his name back to her; and the other girl looking away first. Osei listens as if there were nothing else on the grill.",
+      "“Good,” he says at last. He picks up the spatula. “Then we will pray for the other girl too. She will need it more.”"
+     ],
+     "goto": "s06b"
+    },
+    {
+     "text": "“Becca’s clipboard.”",
+     "tag": "Wit",
+     "set": {
+      "e6_osei": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Osei laughs from the belly, head back, the tongs held up out of the way. Two of the nursing girls look over from Mrs. Fitch’s table to see what’s funny.",
+      "“Ah,” he says, wiping his eye with his wrist. “That too.” And he goes back to the burgers, still smiling at them, and asks Jack whether Ohio people put ketchup on a hot dog, because he has heard terrible things."
+     ],
+     "goto": "s06b"
+    },
+    {
+     "text": "“I’m good, Father.”",
+     "tag": "Control",
+     "set": {
+      "e6_osei": "good",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Good,” Osei says. He flips a burger. It lands right where it was. “Tuesday, twelve-ten.”",
+      "He slides a cheeseburger onto Jack’s empty plate without asking whether he wants one, and turns to the next person in line."
+     ],
+     "goto": "s06b"
+    }
+   ]
+  },
+  "s06b": {
+   "slug": "SATURDAY · 3:50 PM · ST. BRENDAN’S COURTYARD, THE OLIVE TREE",
+   "body": [
+    "The cleanup of the cleanup. The courtyard is down to paper plates in the hedges and a Costco cake with one corner left. The coat-closet door in the church has been shut since three-thirty, a line of four on the bench outside it. Jack and Becca fold the last tables in the shade of the olive tree, his end and her end, the legs snapping in with a sound like a staple gun.",
+    "She leans the table against the trunk. Then she says it, plainly, with no lead-in, to his face. “I told my mother this was a date. She’s very happy.” She wipes her hands on her jeans. “Was it?”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer; has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wants a second. Wrote FRIDAY? on her clipboard."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Yeah. It was.”",
+     "tag": "Sincerity",
+     "cue": "Becca will remember that.",
+     "set": {
+      "e6_becca": "date",
+      "rel.becca.heat": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "Becca asked if the cleanup was a date. You said yes.",
+     "response": [
+      "Becca smiles, all at once, the sunburn going pinker at the cheekbones. “Good,” she says. “Then I’d like a second one.” And before he can answer: “You can think about it. I’m patient. We had a whole talk.”",
+      "He tells her he can’t do Saturday nights; he washes dishes at the Anchor, seven to one. She didn’t know. She turns the clipboard over and writes on the back of it, in big rancher capitals, FRIDAY? — and goes back and adds the question mark again, darker, so he can see it’s a real question. At 4:45 he leaves her stacking chairs, to shower before work, with a paper plate of cake she insisted on."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“It was a beach cleanup *and* a date. I’m efficient.”",
+     "tag": "Charm",
+     "set": {
+      "e6_becca": "both",
+      "rel.becca.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "key": "Becca asked if the cleanup was a date. You said it was both.",
+     "response": [
+      "Becca laughs, surprised into it, one hand on the folded table. “Efficient,” she says. “My dad would like you. My mom would like you more.” Then, still smiling: “I’d like a second one. You can think about it. I’m patient. We had a whole talk.”",
+      "He tells her he can’t do Saturday nights; he washes dishes at the Anchor, seven to one. She didn’t know. She turns the clipboard over and writes on the back of it, in big rancher capitals, FRIDAY? — and goes back and adds the question mark again, darker, so he can see it’s a real question. At 4:45 he leaves her stacking chairs, to shower before work, with a paper plate of cake she insisted on."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“I don’t know yet.”",
+     "tag": "Candor",
+     "set": {
+      "e6_becca": "dontknow",
+      "rel.becca.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "Becca asked if the cleanup was a date. You said you didn’t know yet.",
+     "response": [
+      "Becca takes that in without flinching, the way she took the condom. “That’s fair,” she says. “Find out. I’ll ask again.” A second. “Actually, I’ll ask now. I’d like a second one. You can think about it. I’m patient. We had a whole talk.”",
+      "He tells her he can’t do Saturday nights; he washes dishes at the Anchor, seven to one. She didn’t know. She turns the clipboard over and writes on the back of it, in big rancher capitals, FRIDAY? — and goes back and adds the question mark again, darker, so he can see it’s a real question. At 4:45 he leaves her stacking chairs, to shower before work, with a paper plate of cake she insisted on."
+     ],
+     "goto": "s07"
+    }
+   ]
+  }
+ }
+}

@@ -255,3 +255,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **After S1E05 (player feedback).** "Great episode; Lena, Theo, and Laney were the standouts. Good stuff from Margot and
   Hale as usual. Danny and Gina too." Keep investing in Danny and Gina (Jack's family is landing). E06 carries the
   scheduled extended Jack/Lena two-hander.
+- **Jack's first girlfriend: timing (player directive).** The first of Jack's two (the magnetic girl or the tryer;
+  room's choice) arrives **as Lena's relationship with Wes is winding down but not yet over**. Neither Jack nor the
+  player knows it's winding down. The result is a **tragedy of timing**: when Lena and Wes break up, Jack is now
+  unavailable. Because Jack already knows how he feels about Lena, the girl must have real gravitational weight of her
+  own; she is never a placeholder. The room may refine the exact timing.
+- **Explicitness, refined.** "As set, dialed up": frank, literary, on the page when the story calls for it, a notch
+  more than so far. **POV stays Jack-only** (confirmed: no other POV has been used). Never cut to another character's
+  POV just for a sex scene. The ensemble's sex lives appear as Jack witnesses, hears, or lives the before and after,
+  and in Jack's own scenes when they come.
+- **Thanksgiving (S1).** Jack invites Lena to Youngstown. She wants to go, but it's a long shot (Wes; her own family).
+  The room decides whether she can. **If she doesn't go, Theo does: Jack invites him.**
+- **No "never" notes after five episodes.** It's all working.
