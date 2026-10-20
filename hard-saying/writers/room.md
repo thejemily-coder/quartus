@@ -83,10 +83,26 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    Once per episode, and never from the second-floor landing again.
 28. **Reaction-shot endings** (S1E02): responses ending on "Across the table, Lena…" or "Nobody moves." Max three per
    episode, especially inside a duel.
+29. **"…, and is." twist endings** (S1E03): "looks around to see if she's doing it right, and is." Max one per episode.
+30. **Margot writes it down as the button** (S1E03): Margot noting, underlining or timing a beat as its ending. Max two per
+   episode; once in a while let her not write.
+31. **Gesture words "two fingers" and "ceremony/ceremonially"** (S1E03). Max two each per episode (Richard's two-finger tuck
+   is the sanctioned one in E03).
+32. **Speech addressed to an object or room** (S1E03): "to the oven," "asks the pie," "informs the kitchen," "to the
+   windshield." Max three per episode.
+33. **"A second longer than [X] needs/has to"** (S1E03; seven uses by E03). Max one per episode.
+34. **"Nobody X. Everybody Y." pairs** (S1E03). Max one per episode.
+35. **Negation inventories for restraint** (S1E03): "doesn't touch it, doesn't top it," "doesn't add anything." Say it once,
+   then show.
+36. **"Lets it sit (there)"** (S1E03). Max one per episode.
 Small repeats to watch (S1E02): Laney's pageant wave is "wrist, wrist, elbow, elbow" (pilot order; spell it once per
 episode); "in installments"; "Of course"; "a real one" for laughs; the fixed-smile-as-mask (Laney's neon sign is hers,
 Kevin's tell is speed); hand-to-heart "as if shot"; "for no reason he could defend"; "no bit" as shorthand for sincerity;
 the lighthouse "with nothing in it" as a closer; weight figures (carry / set down) for confession and grief.
+Small repeats to watch (S1E03): the near-touch restraint beat (one "what it costs" sentence per episode); "first ring" /
+"first try"; "informs"; "in that order"; "delighted" for Lena (find a specific verb); "flat and white"; the surf "coming in
+and going out"; "has never been so [adj]"; "without being asked"; the fixed-pleasant mask for Theo ("perfectly pleasant");
+Lena laughing "head back"; "a real one" for laughs; the tin ticking in her pocket (once or twice an episode).
 
 ## Episode pipeline
 1. Orchestrator: read save (`ArtifactData get saves/main`), write `saves/after-<ep>.json`; notes session with the player.

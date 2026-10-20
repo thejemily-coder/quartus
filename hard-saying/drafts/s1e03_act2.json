@@ -1,0 +1,342 @@
+{
+  "scenes": {
+    "s02b": {
+      "slug": "SATURDAY · 9:38 AM · US-101 SOUTH, THE ODYSSEY",
+      "music": "Journey — “Don’t Stop Believin’”",
+      "body": [
+        "South of Los Alamos the 101 runs through oak country gone blond for the summer, vineyards combed up the hills, the sky come in hard and blue. Kevin drives his mother’s Odyssey at exactly sixty-five, hands at ten and two. The van smells of Tiger Balm and Hawaiian Aloha Febreze, and the La Vang rosary on the mirror swings out on every curve and clicks against the windshield coming back. Somewhere up ahead, Theo is doing whatever Theo does to a speed limit.",
+        "Margot rides shotgun. Laney has the back bench and two of her three suitcases. Jack and Lena have the middle captain’s chairs, with an aisle of gray carpet between them about the width of a missal.",
+        {
+          "if": "e2_alarm==\"hoodie\"",
+          "text": "Laney is in Jack’s gray Mooney hoodie, sleeves down past her fingertips, wearing it as if he’d only ever been keeping it warm for her."
+        },
+        {
+          "if": "e2_kevin_q==\"jokes\"",
+          "text": "Since Thursday’s lunch Kevin has decided Jack is his audience. At the Los Alamos exit he finds him in the rearview. “Costigan. What did the ocean say to the beach?” “Kevin.” “Nothing. It just *waved*.” Lena turns all the way around to give Kevin a look of deep pastoral concern, and Kevin, thrilled, does the wheeze he laughs with when he’s the only one laughing.",
+          "else": "At the Los Alamos exit Kevin reads the itinerary card aloud, times included, and nobody has the heart to stop him."
+        },
+        "Through the back window Lena’s shoe polish reads backwards against the road unspooling behind them — SYAD 8 · TAD OHW. She twists around every few miles to check on it, in case it’s been converted.",
+        "Then the station out of Santa Barbara puts on the piano — that piano, the one every American under forty was issued at birth — and the van sings whether it wants to or not. Laney sings like she’s auditioning. Kevin knows every word and delivers each one at precisely the speed limit. Lena takes *streetlight people* with the lungs of a girl raised on parade routes, slapping time on her armrest, and on *hold on to that feeling* she looks across the carpet at Jack, and it would be a sin not to sing.",
+        "Margot doesn’t sing and is somehow the loudest person in the van. “Note the collective effervescence,” she tells her Moleskine. “Durkheim. Five members of the aspiring professional class performing working-class longing in a vehicle with a DVD player. Also, south of Detroit is Canada.” “It is *not*,” says Kevin, who has seen *8 Mile*. Nobody checks a map. Everybody sings louder.",
+        "When Journey lets go of them, Laney declares a game: impressions, and nobody leaves the van till everybody’s done one. She does Sloane — chin tucked, eyes enormous, a hand landing light as a moth on an invisible forearm: “Tell me about your *philanthropy*.” Kevin does Priya without taking his eyes off the road: “Per my email.”",
+        "Then Lena does Hale, and it is devastating. She skips the accent and does the boredom: slumps into her chair like a man sinking into a club armchair after a long lunch, lets an invisible roster drop from two fingers, and addresses a point six inches above everyone’s head in cut glass. “Prove to me you have a soul. You have ninety minutes, and I’ve had *lunch*.” She was in Hollis 302 for the original. So was Jack. Hers is better. Kevin drifts onto the rumble strip and back.",
+        "Margot, without turning around, does Lena in PHIL 1: the index finger up, the vowels a half step too warm and a whole step too fast. “Aquinas, *Summa*, first part, question six — *neither horn*.” Lena gasps as if struck with a glove. “I do *not* sound like that.” “You sound exactly like that,” says the van. Lena is outraged. Lena is delighted. “I am going to *get* you, Lindqvist,” she tells the back of Margot’s head, in the voice other people save for *I love you*.",
+        "Then the van turns to Jack."
+      ],
+      "choices": [
+        {
+          "text": "Do Hale: the spaniel.",
+          "tag": "Wit",
+          "set": {
+            "trait.wit": "+1",
+            "rel.lena.warmth": "+1",
+            "e3_impression": "hale"
+          },
+          "response": [
+            "Jack lets his chin sink, finds a drawl soaked in contempt, and gives them Hale on the first day: *a girl who left as though I’d set fire to her coffee, and a boy who went after her like a spaniel*. Lena laughs with her head thrown back against the seat, and then, because she has never once left a thing alone, she does it better. “More contempt, Costigan. He says *spaniel* like it’s a diagnosis.” She does it again. It is worse. It is about him. He can’t stop grinning."
+          ],
+          "goto": "s03"
+        },
+        {
+          "text": "Do Lena.",
+          "tag": "Reckless",
+          "if": "trait.reckless>=3",
+          "set": {
+            "trait.reckless": "+1",
+            "rel.lena.heat": "+1",
+            "rel.lena.friction": "+1",
+            "e3_impression": "lena"
+          },
+          "response": [
+            "He pushes his sleeves up to the elbow. That’s all it takes; the van knows. The chin, the finger, the Lincoln-Douglas cadence, the sentence that builds and breaks on its last word: “*Cite* me.” The van dies. Lena stares at him with her mouth open, and then she retaliates. She pats her own back pocket for a paperback that isn’t there, says “Chesterton says —” and lets it hang, and then, with a squint and the whole flat width of Ohio: “I’m *good*.” It’s so exact he feels it in his back teeth: she has been watching him closely enough to have it. She doesn’t do the eyebrow. Laney, from the back: “Y’all need a chaperone.” Kevin, eyes on the road: “I’m right here.”"
+          ],
+          "goto": "s03"
+        },
+        {
+          "text": "Do Frank: “Close your mouth. You’ll catch flies.”",
+          "tag": "Sincerity",
+          "set": {
+            "trait.sincerity": "+1",
+            "rel.lena.trust": "+1",
+            "e3_impression": "frank"
+          },
+          "response": [
+            "He folds his arms, fixes his eyes on a horizon two thousand miles east of the windshield, and lets his face go as still as his father’s in the cab of the Silverado. “Close your mouth. You’ll catch flies.” Nobody in this van has met Frank Costigan; they laugh anyway, because it’s plainly true. Lena only smiles at him across the carpet, quietly pleased, as if he’s shown her something out of his wallet. “Your daddy sounds like mine with the volume turned down.” Up front, Margot writes *Close your mouth* in the Moleskine and underlines it once."
+          ],
+          "goto": "s03"
+        }
+      ]
+    },
+    "s03": {
+      "slug": "SATURDAY · 10:04 AM · PEA SOUP ANDERSEN’S, BUELLTON",
+      "body": [
+        "At four minutes past ten a windmill rises out of the flats beside the Buellton exit, white sails turning slowly over a parking lot full of RVs. On the big sign two cartoon chefs in toques — Hap-Pea and Pea-Wee, according to the placemats — are splitting a single pea with a mallet and a chisel, which is either the joke of the whole enterprise or its theology.",
+        {
+          "if": "e3_ride==\"sl\"",
+          "text": "The SL got there first, Theo taking the exit at a speed the exit hadn’t planned for, and by the time the Odyssey noses into the lot he has a booth under a wall of blue Danish plates and is on his second bowl.",
+          "else": "The champagne SL is already in the lot, parked across two spaces at an angle that says its driver had somewhere to be, which was here. Inside, under a wall of blue Danish plates, Theo has a booth and is on his second bowl."
+        },
+        "Bottomless split pea, at ten in the morning. “Ironically,” Theo says, when Laney points this out. He has three bowls. Somewhere in the third the irony goes out of it, and he is simply a beautiful man eating soup with his eyes closed. Laney buys a souvenir spoon with a tiny windmill on the handle “for my hope chest.” Kevin reads the history of the restaurant off the back of the menu to anyone who’ll listen, which turns out to be Margot, who is taking notes on the Danes.",
+        "At the gift-shop register, between a pyramid of pea-soup cans and a rack of wooden clogs nobody has ever bought, Lena buys a red-and-white tin of peppermint Altoids. Jack doesn’t understand why until she turns to Kevin and says, “Hand.” Kevin holds out his palm. She pours the whole tin into it. Kevin looks down at a small white heap of mints. “Is this —” “Don’t you *dare*.” Kevin closes his fist over the mints and asks nothing further.",
+        "Then she reaches into her cardigan pocket and comes out with Saturday’s cigarette. It has been riding in the oatmeal wool for a week — through a fire alarm, a seminar, a rush, a beach — and it shows: bent, flattened, gone soft at the filter. She lays it in the empty tin on its bed of white paper, gently, like a priest setting a relic into an altar stone. She borrows the cashier’s Sharpie and prints on the lid, in the courtroom capitals she saves for the parts of his margins she means most, RELIQUARY. Then she tears a strip off the register tape, writes on it in her small slanted hand, and folds it into the lid.",
+        {
+          "type": "doc",
+          "title": "A strip of Andersen’s register tape, folded into the lid",
+          "text": "No. 1 · 8/29/09 · the Lighthouse."
+        },
+        "“I said I’d need a container.”",
+        {
+          "if": "e2_cig_lena==\"offered\"",
+          "text": "She snaps the lid shut and points the tin at him. “And you tried to hand me the whole pack like a *coward*.”"
+        },
+        {
+          "if": "e3_ride==\"sl\"",
+          "text": "Theo watches the entire ceremony from the end of the counter, soup bowl in both hands, like a man at a premiere who has money in the picture."
+        }
+      ],
+      "journal": [
+        {
+          "kind": "note",
+          "id": "cigarette",
+          "title": "The Reliquary",
+          "text": "An Altoids tin from a pea-soup restaurant in Buellton. RELIQUARY on the lid. No. 1: the Lighthouse, 8/29. She’s keeping count."
+        }
+      ],
+      "choices": [
+        {
+          "text": "“First-, second-, third-class relics. What class is a Marlboro?”",
+          "tag": "Wit",
+          "set": {
+            "trait.wit": "+1",
+            "rel.lena.warmth": "+1",
+            "e3_tin": "class"
+          },
+          "response": [
+            "She doesn’t look up from the lid. “Fourth. I’m founding it.” She blows on the Sharpie to dry it, which does nothing for Sharpie, and which she knows, and which she does anyway, because it is a ceremony and ceremonies have steps."
+          ],
+          "goto": "s04"
+        },
+        {
+          "text": "“Technically, that’s my property.”",
+          "tag": "Candor",
+          "set": {
+            "trait.candor": "+1",
+            "rel.lena.friction": "+1",
+            "e3_tin": "mine"
+          },
+          "response": [
+            "“You abandoned it at the scene.” She says it with perfect serenity and closes the lid on him. Not stolen: abandoned. Jack hears Rafi’s abuela in it, and her week’s difference, and keeps that to himself, because she’s already winning and he doesn’t want to arm her."
+          ],
+          "goto": "s04"
+        },
+        {
+          "text": "“Okay. Keep count.”",
+          "tag": "Sincerity",
+          "set": {
+            "trait.sincerity": "+1",
+            "rel.lena.trust": "+1",
+            "e3_tin": "count"
+          },
+          "response": [
+            "“Oh, I intend to.” The lid snaps. The tin goes into the cardigan pocket where one cigarette used to ride alone, and for the rest of the weekend Jack hears it when she walks: a small dry tick against her hip, like a rosary in a coat."
+          ],
+          "goto": "s04"
+        }
+      ]
+    },
+    "s05": {
+      "slug": "SATURDAY · 5:30 PM · POINT DUME, THEN THE VANCE HOUSE KITCHEN",
+      "music": "The Meters — “Cissy Strut”",
+      "body": [
+        "At half past five Lena opens Richard Vance’s refrigerator: steel, taller than Jack, lit like a museum case, and stacked with a chef’s plastic containers, each labeled in the same black marker: *R.V. — MON — DO NOT*. She reads one. She reads another. She shuts the door with her hip.",
+        "“Nobody eats a stranger’s labeled food in my presence,” she informs the kitchen. “That’s a sin against hospitality. I’m cooking.” From the white couch, without lifting his head, Theo lobs the SL keys across the room. They hit Jack in the sternum. “Don’t kill the car.”",
+        "So Jack Costigan of Glenwood Avenue drives a champagne-gold 1979 Mercedes convertible down the Pacific Coast Highway with Lena Broussard in the passenger seat, the top down, smoke haze turning the low sun the color of a peach. Her hair is everywhere — across her face, in her mouth, a honey-colored riot she holds down with both hands and loses anyway, laughing at it, laughing at him for driving like his father, at the speed limit, in a car built to be driven badly. He would drive her to Oregon. She tells him to turn left at the light.",
+        "The market at Point Dume employs a man whose only job is misting the lettuce. Lena goes up and down the aisles appalled and delighted by turns. Okra, $7.99 a pound: “In Louisiana you can’t *give* okra away. People leave it on your porch like a threat.” No andouille, so she weighs a link of chorizo in her palm. “This is going to have to repent.” At the seafood case she reads the card on the shrimp — *farm-raised, product of Thailand* — and lays her hand flat on the glass. “My daddy sells Gulf shrimp for a living. Broussard’s Seafood, Banks Street. I’m going to call him and tell him about this, and he is going to *cry*.” She buys two pounds anyway, with chicken thighs and the vegetables and rice, and apologizes to the shrimp under her breath. From the bottom of the OCTAVIA tote she produces a can of Tony Chachere’s. “For somebody who wasn’t coming,” Jack says, “you packed Tony Chachere’s.” “A Catholic packs for the possibility of grace.”",
+        {
+          "if": "e2_books==\"loan\"",
+          "text": "Jack peels off for the pie he owes Theo: four peaches that smell like August, butter, flour. He pays for those himself, tip money from the Anchor jar, folded the way Gloria folds it. “A debt you pay with somebody else’s peaches isn’t paid.” “You can’t bake.” “I can wash a pie.” She regards him with pity and something like respect. “My mama’s crust. You’ll cut the butter in with two knives, because there is no pastry cutter in a house with an *Oscar*.”",
+          "else": "Jack drifts toward the peaches, because somebody ought to make a pie and it might as well be a man who never has: four that smell like August, butter, flour, paid for with tip money from the Anchor jar. “You can’t bake.” “I can wash a pie.” She regards him with pity and something like respect. “My mama’s crust. You’ll cut the butter in with two knives, because there is no pastry cutter in a house with an *Oscar*.”"
+        },
+        "Everything else she pays for, moving him out of the way with a hand flat on his chest. “My kitchen, my tab.”",
+        {
+          "type": "break"
+        },
+        "Back at the house she plugs her iPod into the speakers in Richard’s ceiling, and the Meters come down out of the plaster: a drum break, a bassline in no hurry, a guitar that’s been up since Thursday. Lena ties her hair back with a rubber band from the junk drawer and drapes her cardigan over a stool, and her Ked squeaks on the tile where the Pacific got into it this afternoon.",
+        "Crust first. He cuts cold butter into flour with two of Richard’s steak knives while she corrects his technique without touching him, miming it in the air an inch above his knuckles. “Smaller. Peas, Costigan, not dice.” Ice water by the spoonful. They find a porcelain pie dish with the price sticker still on it, and he lays in the crust and the peaches and the lid, crimps the edge with his thumb as she shows him, and slides it into the oven feeling absurdly like a father.",
+        "Then the roux. Oil and flour in the heaviest pot in the house, a medium flame, and she puts a wooden spoon in his hand and holds on to the other end of it a moment, so it’s a handoff and not a toss.",
+        "“A roux is a vow, Costigan. Flour and fat and forty-five minutes. You don’t stop stirring, you don’t walk away. Peanut butter, then a penny, then a Hershey bar. You burn it, you start over and you tell nobody.”",
+        {
+          "if": "e2_beach==\"lena\"",
+          "text": "She lets go of the spoon. “You handed me a flask like a gentleman Friday. I’m handing you a spoon. Don’t make me regret it.”"
+        },
+        "Jack has renewed his baptismal promises in front of a bishop. Nobody handed him a spoon. He stirs.",
+        "She does the onions, celery and pepper beside him, the knife going fast enough to worry an insurance company. “The holy trinity. Make one joke about Sabellius and I’ll put you in the pot.” While she chops, she diagnoses the refrigerator. Gluttony, per Gregory the Great by way of Aquinas, has five ways — she rattles off the Latin like a jump-rope rhyme, *praepropere, laute, nimis, ardenter, studiose*: too soon, too expensively, too much, too eagerly, too daintily. She points the knife at the steel door. “*Laute* and *studiose*. Expensive and fussy. It’s a confessional with a freezer.” Theo, passing through with an orange: “Take the wine with the ugliest label. It’s the expensive one.” She does. A splash goes in the pot later; one glass sits at her elbow, and she drinks it slowly.",
+        "Somewhere around peanut butter Jack sees it: a streak of flour high on her left cheekbone, left over from the crust, bright as chalk on the gold of her skin. He can’t take his hand off the spoon, so he points at his own face with his chin. She wipes the right cheek. Wrong one. She lifts her eyebrows: better? It is not better. The easy thing would be to reach over with his thumb. He knows exactly how far it is, about the length of his forearm, and he knows what her cheek would feel like under it, and that knowledge is very specific and very present in a hot kitchen with the Meters going. He wants to. He keeps his hand on the spoon. The spoon is a vow, and for once in his life he’s grateful somebody handed him one. The roux goes from peanut butter toward copper, and he keeps his eyes on it.",
+        "She bends to check the pie through the oven door, meets herself in the black glass, and finds the flour. She wipes it off with the back of her wrist. She doesn’t turn around. “Okay, *fine*,” she says, dry, to the oven. His own red ink, returned with interest.",
+        "At 8:04 by the stove clock the LG goes off in the cardigan on the stool, and she lights up — there is no other word for it — wipes her hands down her dress, and is out the glass door to the deck with the phone at her ear. Eight-oh-four on the dot. Over her shoulder: “Don’t you *dare* stop.”"
+      ],
+      "journal": [
+        {
+          "kind": "person",
+          "id": "lena",
+          "title": "Lena Broussard",
+          "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp. Boyfriend: Wes, Tulane — called at 8:04 on the dot."
+        }
+      ],
+      "choices": [
+        {
+          "text": "Keep stirring. Don’t look.",
+          "tag": "Control",
+          "key": "You kept stirring Lena’s roux while she took Wes’s call.",
+          "set": {
+            "trait.control": "+1",
+            "rel.lena.trust": "+1",
+            "e3_roux": "stirred"
+          },
+          "response": [
+            "He keeps stirring and doesn’t look at the glass. Copper, then darker, the smell going nutty and deep, the spoon dragging figure eights across the bottom of the pot. At 8:19 she comes back in with the phone folded in her hand and leans over the stove. The roux is the color of a Hershey bar.",
+            "“Well,” she says. “Look at you.” No joke attached, nothing to hide behind: plain admiration, handed over straight, and he has to look at the pot to take it."
+          ],
+          "goto": "s06"
+        },
+        {
+          "text": "Stir, and listen to her laugh through the glass.",
+          "tag": "Sincerity",
+          "set": {
+            "trait.sincerity": "+1",
+            "e3_roux": "listened"
+          },
+          "response": [
+            "He stirs and lets himself listen. Through the glass he can’t make out a word, only her laugh, coming and going under the surf. Wes is making her laugh, and making her laugh well. Jack is glad. He is honestly glad, and it costs something, and he keeps stirring, and the two facts ride along side by side in him like strangers on a bus.",
+            "At 8:19 she comes back and looks in the pot. “Milk chocolate with ambition.”"
+          ],
+          "goto": "s06"
+        },
+        {
+          "text": "Turn the Meters up and make the stirring a show for Laney’s BlackBerry.",
+          "tag": "Wit",
+          "set": {
+            "trait.wit": "+1",
+            "rel.laney.warmth": "+1",
+            "e3_roux": "show"
+          },
+          "response": [
+            "He cranks the Meters. Laney has the pink BlackBerry up inside a second — “Y’all. He’s *stirring*” — and Jack stirs like he’s conducting the Cleveland Orchestra, free arm swooping on the upbeat, spoon never once leaving the pot. Kevin dances with a dish towel. Margot times it on the Nokia. “Minute nine. The subject continues to perform domestic labor for a female audience.” Laney turns the screen around: she’s already posted about it.",
+            {
+              "type": "fb",
+              "name": "Laney Price",
+              "text": "is in MALIBU watching a Catholic stir a roux for Jesus. 9 minutes and counting. he has not looked up ONCE",
+              "meta": "Saturday at 8:13pm via Facebook for BlackBerry · Theo Vance likes this"
+            },
+            "The roux survives. At 8:19 Lena comes back, looks in the pot, looks at Laney’s screen, looks at Jack. “Milk chocolate. Acceptable. Barely.”"
+          ],
+          "goto": "s06"
+        }
+      ]
+    },
+    "s06": {
+      "slug": "SATURDAY · 9:40 PM · THE VANCE HOUSE, THE DECK",
+      "body": [
+        "The gumbo takes an hour, and then it takes the deck. By twenty to ten they’re all out at Richard’s long teak table — Kevin hosed the ash off the chairs at sundown, without being asked — with citronella going in hurricane glasses, the surf heavy and invisible under the boards, and the glass house lit up behind them. Six bowls of gumbo over rice, dark as strong coffee and smelling like a kitchen in a city Jack has never seen.",
+        "Lena stands for grace, because she was raised in a house where whoever cooked says it. “Bless us, O Lord, and these thy gifts, which we are about to receive from thy bounty, through Christ our Lord.” Jack and Kevin say the Amen with her and cross themselves at the same speed, parish-school speed. Laney bows so extravagantly a strand of copper lands in her bowl. Margot does not bow. Margot eats two bowls. “Colonial,” she pronounces, at the bottom of the second, “but correct.” Kevin estimates the protein aloud — “Shrimp, chicken, the chorizo, that’s like fifty grams, Lena, that’s a recovery meal” — and Theo eats slowly and says nothing at all, which, from a man with opinions about the typeface on a menu, is a review.",
+        "Through the glass, on a television about as wide as a pool table, LSU is playing Washington on ESPN with the sound off: two teams that both chose purple and gold, under the lights in Seattle. Lena has turned her chair to keep it in view. Her LG lights every few minutes, and she reads the texts aloud with the capitals intact, in a voice like a moose with a scholarship. “Remy. My brother. He’s at LSU, which is a decision he makes again every morning.” She turns the phone around so the table can see.",
+        {
+          "type": "sms",
+          "from": "Remy",
+          "text": "TOLIVER!!!!",
+          "time": "9:47 PM"
+        },
+        {
+          "type": "sms",
+          "from": "Remy",
+          "text": "TELL YOUR CALIFORNIA PEOPLE GEAUX TIGERS",
+          "time": "9:49 PM"
+        },
+        "“Tell him the California people say *geaux*,” says Laney. “I’m not his people,” says Margot. Lena thumbs out a reply in complete sentences with punctuation, which takes long enough that Washington scores.",
+        {
+          "if": "e2_books==\"loan\"",
+          "text": "Then Jack goes inside and comes back with the pie. The crust has browned to the color of a church pew and the peaches have bubbled up through the vents and burned a little at the edges, and Lena leans over to inspect her mother’s crust in a stranger’s dish and declares it “not a disgrace,” which in her family is a standing ovation. He sets it down in front of Theo with a knife beside it. Theo looks at the pie for a while. “People owe me,” he says. “Nobody pays.” Then he picks up the knife and cuts into it, and without looking up from the cutting: “Does He take IOUs? Your God. Or is it cash on delivery?”",
+          "else": "Then Jack goes inside and comes back with the pie. The crust has browned to the color of a church pew and the peaches have bubbled up through the vents and burned a little at the edges, and Lena leans over to inspect her mother’s crust in a stranger’s dish and declares it “not a disgrace,” which in her family is a standing ovation. He sets it down in front of Theo with a knife beside it. Theo looks at it a while, and then he cuts into it, and without looking up from the cutting, he asks the pie, “Does He take IOUs? Your God. Or is it cash on delivery?”"
+        },
+        "Down the table Lena has gone still with her fork halfway, the way she does in seminar when somebody says the interesting thing by accident. The question is not for her. She leaves it on the table where Theo put it."
+      ],
+      "journal": [
+        {
+          "kind": "note",
+          "id": "pie",
+          "title": "Pie",
+          "text": "Paid Theo one peach pie, Lena’s mother’s crust. Marionberry still 4/10. I work at the Anchor Tue/Thu, Saturdays from the 12th.",
+          "if": "e2_books==\"loan\""
+        }
+      ],
+      "choices": [
+        {
+          "text": "“He’s the one who pays. That’s the whole scandal.”",
+          "tag": "Sincerity",
+          "cue": "Theo will remember that.",
+          "key": "You told Theo God is the one who pays.",
+          "set": {
+            "trait.sincerity": "+1",
+            "soul.grace": "+1",
+            "rel.theo.trust": "+1",
+            "e3_theo_iou": "mercy"
+          },
+          "response": [
+            "Theo looks at him across the citronella. “Huh.” He cuts a second slice and puts it on his plate beside the first and doesn’t eat it. He just sits with it, the knife across the plate, while under the deck the tide comes in and goes out and comes in."
+          ],
+          "goto": "s06b"
+        },
+        {
+          "text": "“Depends what’s on the IOU.”",
+          "tag": "Candor",
+          "set": {
+            "trait.candor": "+1",
+            "rel.theo.friction": "+1",
+            "e3_theo_iou": "pressed"
+          },
+          "response": [
+            "Theo turns the knife over in his hand. “Hypothetically?” He considers the blade. “A lot.” Then Kevin comes out through the glass with a stack of plates and a carton of Häagen-Dazs he found behind the R.V. containers, unlabeled, which Lena says is fair game, and the subject goes back wherever Theo keeps it."
+          ],
+          "goto": "s06b"
+        },
+        {
+          "text": "“Cash only. He’s been known to accept pie.”",
+          "tag": "Wit",
+          "set": {
+            "trait.wit": "+1",
+            "rel.theo.warmth": "+1",
+            "e3_theo_iou": "joked"
+          },
+          "response": [
+            "Theo takes the joke and the biggest slice. “Then I’m covered through Lent.” He eats it with his fingers, crust and all, and holds out his plate for more before anybody else has been served, which is as close as Theo comes to saying a thing was good."
+          ],
+          "goto": "s06b"
+        }
+      ]
+    },
+    "s06b": {
+      "slug": "SATURDAY · 11:50 PM · THE VANCE HOUSE, THE DEN",
+      "music": "Bon Jovi — “Livin’ on a Prayer”",
+      "body": [
+        "The den has a couch as long as a lifeboat, a rug with camels on it, and an Xbox 360 with a plastic drum kit and two plastic guitars.",
+        {
+          "if": "e3_ride==\"sl\"",
+          "text": "“He bought it for Poppy,” Theo says, from the couch. “She’s played it once.”",
+          "else": "“He bought it for my sister,” Theo says, from the couch. “Poppy. She’s fourteen. She’s played it once.”"
+        },
+        "Lena takes the drums. She puts her hair up with a pencil stabbed through it, sets one Ked on the kick pedal, and plays Bon Jovi on Hard like Bon Jovi has wronged her family. Margot takes the bass and stands perfectly motionless while her fingers work. “I’m performing alienation.” Kevin sings it — every note, the key change, the impossible top of the chorus — perfectly, and apologizes between verses. Laney is the crowd; she stands on the couch and screams at the right moments and several wrong ones. Theo stays where he is, an arm along the back of the couch, and watches, and doesn’t play.",
+        "Jack takes guitar on Easy and fails out twice. Both times his lane goes gray and the digital crowd boos, and both times Lena hits a fill and brings him back from the dead with Overdrive, which in Rock Band is a thing the drummer can do. The second time she doesn’t even look over. “That’s two, Youngstown. I’m keeping count.”",
+        "Between songs her phone lights on the arm of the couch. She reads it standing on the drum throne, stick raised: “Thirty-one twenty-three, TIGERS.” At half past twelve Margot hands the bass to Theo, who lays it on the rug without playing a note, and goes off to the room with no mirrors with a book and no evident plan to sleep.",
+        "At one o’clock Jack goes to the den window for air. Below, the pool is lit from underneath, a long blue room in the dark. Kevin sits at one end with his feet in the water. Theo sits at the other end with his. Neither of them is talking. After a while Kevin takes his feet out, picks up his sandals, and goes inside.",
+        {
+          "if": "e2_alarm==\"hoodie\"",
+          "text": "When Jack turns around, Laney is asleep on the chaise by the glass doors in the Mooney hoodie, her BlackBerry face-down on her chest, rising and falling.",
+          "else": "When Jack turns around, Laney is asleep on the chaise by the glass doors, her BlackBerry face-down on her chest, rising and falling."
+        },
+        "Lena finds a striped beach towel in the basket by the door, and they lay it over her together, Jack at the feet, Lena tucking it under Laney’s chin with two fingers. “She’ll say she wasn’t asleep.” She pulls the pencil out of her hair and the hair comes down, and she stands a second in the blue light off the pool with a drumstick still in her other hand. “Goodnight, Youngstown.” She goes off down the hall toward the ocean suite, the tin ticking in her cardigan pocket, until a door closes at the end of it.",
+        "Jack shuts off the Xbox. The plastic drum pads are scuffed white where she hit them. Under the towel Laney says, very clearly, “I’m not asleep,” and is."
+      ],
+      "next": "s07"
+    }
+  }
+}

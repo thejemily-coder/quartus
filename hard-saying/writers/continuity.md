@@ -506,3 +506,163 @@ same macros. `duel.soul.lena` is set (3 base, +1 on the jab) but not read.
 - Real figures on the record only: Benedict XVI (Williamson decree Jan 2009; Mar 10, 2009 letter to bishops), Traficant
   release (Sep 2, 2009), NUMMI closure announcement (Aug 27, 2009), Aug jobs report 9.7% (Sep 4, 2009), Saints–Dolphins
   preseason 10–7 (Sep 3, 2009).
+
+### S1E03 — "Labor" (Sat Sep 5 – Mon Sep 7, 2009; tag Mon 11:52 p.m.)
+30 scenes. Forks: s01b → s02a sl / s02b van → s03 · s09 → s09a getty / s09b pool → s10. Duel `labor` (Lena) runs
+s11–s11v. Written for the after-s1e02 save. Prose that assumes E02 forks: **s01 opens on `e2_la=="broke"`** ("You told me
+you couldn't afford LA"); the tin assumes `e2_cig_lena!="lit"` (s03 slip No. 1 only; s13 slip "No. 2"; key "second
+relic"); hoodie, loan, wall, friend, honest, candor, board, union, has_bike, told_dad_job, wrote_danny, swan, becca yes are
+all gated. **The engine must reach S1E03 only from this save.**
+
+**On-page canon (all paths unless marked)**
+- s01 (Sat 8:58): Theo's first-ever cortado for Jack ("I'm making an exception"). Gina 8:59: OSU–Navy "today" (noon ET
+  kickoff, verified). Theo's pitch: Price (217, sleep mask) → **Margot** (up at eight) → Tran (van); Pruitt has a raid.
+  Theo already bought the SL's gas. "Bring a swimsuit and lowered expectations." Terms: gas (Jack pays Kevin) · tab
+  (Post-it gets **+ 1 MALIBU —T.V.** under the pie IOU) · labor (Jack does the dishes; **housekeeper Inés off till
+  Tuesday**) · wit (Theo's Post-it map, *NOT LA (LEGALLY)*).
+- s01b (9:14, Anacapa lot): Kevin's Odyssey — La Vang rosary (crowned Madonna and child) on the mirror, TRAN first-aid kit,
+  Arrowhead case, cooler. **Kevin's laminated itinerary card** (9:00 depart, 10:00 Andersen's, 2:00 Malibu, "SPEED: 65.
+  NOT 66."), **numbers on the back, the missing ones taken off Laney's phone** (route for Lena having Jack's number and
+  vice versa). Margot: oxblood Docs, *Nickel and Dimed*, "here as an observer." Laney: three suitcases ("one's just
+  shoes"). Lena: Keds, OCTAVIA BOOKS tote, Greek grammar, "I'm not going" (packed twice). **Shoe-polish Saints countdown
+  on the Odyssey's back glass: WHO DAT · 8 DAYS (Sat), 7 DAYS (Sun), 6 DAYS (Mon)**, from the La Vang car-wash polish in
+  the glove box. Gas math on a St. Brendan's bulletin: 310 mi round trip, 19 mpg, $2.99, $48.78 ÷ 5 = **$9.76** each
+  (Theo exempt: "I don't do math on sin"). **Jack tells Lena he washes dishes at the Anchor, Tue/Thu, Saturdays from
+  Sep 12.** He pays $10.25 ("And bus fare"); she returns 24¢ from a Ziploc. Jack saves her number.
+- s02a (sl): By Los Alamos. Lena sms 9:51. Theo: "He'll come by tomorrow… six minutes. Time him." **Caroline Ashby Vance**
+  by speaker (Peninsula; Pomeranian, the Hockney "riding shotgun"; La Cañada sky "the color of a Creamsicle"; "Mrs. Vance
+  lives in Malibu now, and she's thirty-one"; "I'm from Pasadena"; "Theo's Catholic"; St. Joseph). **Poppy** calls on
+  call-waiting ("Pops"; Theo's real voice); she skipped something "because the mountains were on fire"; "I'll ask him."
+- s02b (van): Journey sing-along; Margot's Durkheim note. Impressions: Laney→Sloane ("philanthropy"), Kevin→Priya ("Per
+  my email"), **Lena→Hale** ("Prove to me you have a soul. You have ninety minutes, and I've had *lunch*"), Margot→Lena
+  ("neither horn"); Lena: "Oh, Magdalena is *going* to say something." Jack: hale (spaniel) · lena (gated reckless;
+  "*Cite* me" — she retaliates with his margin "*Coward*" and the porch "What a *jagoff*") · frank ("Close your mouth";
+  "Your daddy sounds like mine with the volume turned down").
+- s03 (10:04, Pea Soup Andersen's, Buellton): Hap-Pea and Pea-Wee; Theo three bowls; Laney's windmill spoon. **The
+  Reliquary: a red-and-white peppermint Altoids tin; mints poured into Kevin's palm; RELIQUARY on the lid in the cashier's
+  Sharpie; slip on register tape "No. 1 · 8/29/09 · the Lighthouse."** Lena keeps it in her cardigan pocket (it ticks).
+  tin: class ("Fourth. I'm founding it") / mine ("You abandoned it at the scene") / count.
+- s04 (2:20, Broad Beach): Southbound 101 comes **down through Gaviota Pass (no tunnel; the tunnel is northbound only —
+  s14)**. Gina 12:41: 31–27, Rolle's 2-point pick. **The Vance house: glass and teak on the sand at Broad Beach, west of
+  Zuma, gate/garage/ruler-cut hedge on the PCH side; Station Fire ash on every surface ("That's the mountains").** The
+  Oscar (producer's Best Picture statuette for *The Long Field*) in the downstairs powder room; Kevin: "So it was rehab or
+  love." Theo: "Next question." Rooms: Lena + Laney ocean suite (Laney: "Or start one"); Margot, room with no mirrors;
+  Kevin, far end; Jack in Theo's room (*Point Break*, *The Third Man*, Criterion shelf, guest twin). Pool heated. Lena in
+  the Pacific in her Keds: "Sweet suffering Saint Sebastian… The Gulf is a *bath*. This is a *threat*." [theo] the unused
+  40-seat screening room.
+- s05 (5:30–8:19): Fridge of chef's containers labeled **R.V. — MON — DO NOT**. Jack drives Lena in the SL to the Point
+  Dume market ("Making groceries, Costigan"): okra $7.99/lb, chorizo for andouille, Thai farm shrimp, **Broussard's
+  Seafood, Banks Street** (her father sells Gulf shrimp), Tony Chachere's from the tote. Peach pie with **her mama's
+  crust** (two steak knives, porcelain dish with sticker). "A roux is a vow… peanut butter, then a penny, then a Hershey
+  bar." Holy trinity / Sabellius; gluttony's five ways (*ST* II-II q.148 a.4). Theo: wine "with the ugliest label"; Lena
+  has one glass. Flour on her left cheekbone — he doesn't touch it. **Wes calls 8:04 on the dot; she's back 8:19.**
+- s06 (9:40, deck): Gumbo for six; Lena says grace; Margot "Colonial, but correct"; Kevin's protein count. LSU 31–23
+  Washington on ESPN (Remy's texts: TOLIVER; GEAUX TIGERS). Pie to Theo ("not a disgrace"); [loan] "People owe me. Nobody
+  pays." Theo: "Does He take IOUs? Your God."
+- s06b (11:50, den): Rock Band ("Livin' on a Prayer"): Lena drums on Hard (pencil in her hair), Margot bass, Kevin vocals,
+  Laney the crowd, Jack guitar on Easy (fails twice, saved by Overdrive — "That's two, Youngstown"). **Theo bought it for
+  Poppy; doesn't play; offers Jack the SL keys for a midnight PCH run — declined.** 1 a.m.: Kevin and Theo at opposite
+  ends of the lit pool, feet in, silent. Towel over Laney; "Goodnight, Youngstown"; "I'm not asleep."
+- s07 (Sun 5:50): Theo's bed empty; **the SL left at 2:40 (Margot)**. Margot hasn't slept; Brideshead (Back Bay ed., $3
+  off the Driftwood cart; holy card moved from *Spe Salvi*). Margot: "Every house like this has a room nobody uses. In
+  ours it was my parents' marriage." (Only Margot-family beat before E07.)
+- s08 (9:00, Our Lady of Malibu): Irish supply priest; Isaiah 35, James 2 (gold rings), Mark 7 (*Ephphatha*); one-line
+  homily. **Laney's first Mass**: Lena's bulletin note ("You are doing beautifully. —L."), "a kneeler, not a footrest,"
+  arms crossed "like a *Baptist*," blessed. Theo outside at 10:05 with four coffees ("supporter, not a member"); SL
+  windshield salt-filmed. Nonna (EWTN; "Your mother is with your brother"); First Friday asked.
+- s09 (11:15): Getty Villa timed tickets ("Meridian has a relationship with antiquities"). **Margot's mother teaches
+  Classics at Reed.**
+- s09a (getty): Lena drives the Odyssey (seafood truck on Banks Street since fifteen). Grave stele, *chaire*; **Margot
+  corrects her to the restored pronunciation (χαῖρε)** and Lena drills it on the spot. Getty never visited the Villa.
+  **Lansdowne Herakles: club over his left shoulder, lion skin in his right hand; found 1790 near Hadrian's villa.**
+  **Lena's paper thesis: "A broken statue is still Herakles" (Gage).** Fountain: she leans on Jack's shoulder like a
+  banister. Left the Villa at 4:30.
+- s09b (pool): Laney on the swan with a mimosa; [swan] Theo: "They go for the eyebrow… He has a history." **Laney's DRP
+  pillbox, one pill at noon with the mimosa; Kevin swaps the flute for orange juice without a word.** Laney's father calls
+  on her birthday from a different area code each year. Poppy: **"Confirmation class. Grandmother Ashby's project. I got
+  out of mine" (Theo)**; Poppy missed class Sun Aug 30 and Sun Sep 6 (evacuation; families sleeping in the parish hall);
+  Mrs. Alvarado's clipboard; "So does God? Take attendance?" Lena sms 1:50 ("Margot corrected my Greek…").
+- s10 (5:52, kitchen): Kid Charlemagne from the car. **Richard Vance**: tan, linen, reading glasses in silver-blond hair,
+  BlackBerry; calls Theo **"Teddy"**. **Brynn** (~30, white jeans, white iPhone; takes Lena's gumbo recipe; "Inés will
+  make it"). Richard learns Lena (mistakes her for the Conti Street restaurant Broussards; "Real people"), Laney, Kevin
+  (Hội An, '02), Margot (**Meridian laid off 212; kept 900; Denise Okafor, Story Department, 19 years**, "Then I went to
+  lunch"). "Call Marty. Marty fixes it." "We're due in the Colony." Takes Jack for the caterer's help; tucks a $100 in his
+  flannel pocket: "For putting up with my son." **Never learns Jack's name.**
+- s10b: 6 min 14 s (Margot's Moleskine: "Guests' names learned: 4 of 5"). Range Rover. Laney shoves Theo into the pool;
+  he floats in his clothes; Kevin leaves a towel.
+- s11–s11v (9:10–9:38, gas fire pit): Margot moderates (Nokia), Laney ring girl (pool noodle, Arrowhead cardboard), Kevin
+  scores (BlackBerry). Lena's citations: *RN* §45 (and §20 via Jack), *CiV* §36/§6, §25, *QA* §79 (Jack), *LE* §6,
+  *Centesimus Annus* §48 (Jack, s11d C2). New minor canon: **Mr. Alcide**, a Banks Street oyster shucker, 41 years, no
+  union, "a ham at Christmas." A Minnesota parish youth group were the first on Banks Street after Katrina. Broussard's
+  shuckers are paid over scale and eat at the family table Christmas Eve. [personal] **Broussard's took five feet of
+  water; her father and his brothers rebuilt it, and the house.** Lena wins on every path: **duel record 2–1 (Jack–Lena)**.
+- s12 (Mon 7:12): **Danny's prepaid call from Trumbull Correctional Institution** on the RAZR, Theo three feet away
+  (`knows_danny_theo`). Danny: "Professor"; Maria visited Sunday with the gray wool socks; "a veil girl"; [told_dad_job]
+  "Dad told her"; [wrote_danny] the letter hasn't come.
+- s12c: Theo makes Jack an espresso on his father's machine ("You can touch this one"). To Laney: "His bookie." **Laney
+  does not know who called.**
+- s13–s13c: Lena in a navy one-piece; [lit] slip **"No. 2 · 9/7/09 · Malibu · before breakfast, on a holiday."**;
+  [offered] "Donations aren't relics. They're *tithes*." Kevin looked up the water: 66°. "The Gulf's mean cousin." Saint
+  Frigidaire. The wave; **he lets go first**. Lena rates the Pacific 4/10; Frank "gives everything a three."
+- s14 (Mon noon–1:31): Laney rides home in the SL. KNX: Obama at the AFL-CIO picnic in Cincinnati (paraphrase only).
+  Springsteen, "Factory." **Kevin's father: two nail-salon supply stores in San Jose, open on Labor Day; "Labor Day is
+  for people with bosses"; thinks Springsteen is a Republican.** Margot's best argument (the Church fights unions in its
+  own hospitals and schools); Lena: "She's right." Gina 11:02. Northbound through the Gaviota tunnel.
+- s15 (11:52, 412): La Flaca (in the 4th-floor hall) laminated: BICYCLES ARE NOT RESIDENTS. Pie IOU folded into Theo's
+  wallet ("Paid"); [tab] **+ 1 MALIBU stays on the machine ("Open")**. Jack sends Danny **one used book a month, margins
+  erased, notes on a separate sheet**; *Brideshead* will go to Danny (Theo: "I'll buy you another").
+
+**Flags introduced (S1E03)**
+`e3_terms` gas/tab/labor/wit · `e3_ride` sl/van · `e3_sl` poppy/voice/quiet · `e3_impression` hale/lena/frank ·
+`e3_tin` class/mine/count · `e3_arrive` lena/laney/theo · `e3_roux` stirred/listened/show · `e3_theo_iou`
+mercy/pressed/joked · `scar_told_margot` nun/husband/refused · `e3_nonna` truth/thursday/lie · `e3_sunday` getty/pool ·
+`e3_getty` paper/press/joke · `e3_poppy` kind/nun/brief · `e3_hundred` returned/kept/theo/two · `e3_told_lena_frank` ·
+`e3_duel_personal` · `e3_apologized_personal` (s13b C3, personal path only) · `knows_danny_theo` · `e3_danny`
+ocean/funny/theo_hi · `e3_danny_told` plain/joke/keep · `e3_stairs` lit/pocketed/offered · `e3_lena_monday`
+family/browns/race · `e3_labor_call` called/texted/none. Counters: `reliquary` +1 and `jack_cigs` +1 on lit.
+Duel `labor` verdicts (s11v; exactly one fires, checked over 20,000 playthroughs): PERSONAL `e3_duel_personal` · HEART
+`heart>=3` · RIGOR `rigor>=3 && heart<=2` · WIT `wit>=2 && rigor<=2 && heart<=2` · LENA `wit<=1 && rigor<=2 &&
+heart<=2` (all non-personal ones `!e3_duel_personal`). `duel.labor.lena` set (3 base, +1 on several moves), not read.
+
+**Choice-dependent facts**
+- Frank's layoff reaches Lena (and everyone at the fire: Theo, Laney, Margot, Kevin) on `e3_told_lena_frank` (s11c C0–C2
+  or s11d C1). "Lordstown" is said by Jack only on s11c C0 (as his father's plant) and s11d C2 (as the plant, not tied to
+  Frank). s11c C1 adds the 2,400-mile drive to see the Pacific; s11d C0 adds "Sunday gravy, a garage you could eat off
+  of." s11v "Is he okay?" / s13c "give the whole Pacific a three" fire only when told and not personal (s13c also on
+  personal + apology).
+- Personal (s11d C4/C5): Lena is "perfectly pleasant to Mr. Costigan" that night; towel at midnight; Monday morning she
+  calls him nothing until **s13b C3 apology** ("Apology noted, Mr. Costigan… Costigan. Get in."). Her s15 text is curt
+  ("Wednesday, as assigned") on personal; the "thank you for stirring" text needs stirred and (not personal or apologized).
+- Richard's hundred: returned (Richard laughs: "First friend he's had I couldn't tip") · kept (folded in *Brideshead*,
+  Theo watched; it goes to Danny inside the book unless Jack takes it out) · theo (into Theo's jeans, through the pool) ·
+  two ($200; "This one I like"; Theo trust −1).
+- Theo knows Danny is in Trumbull on all paths; [plain] five years, a fight, a man hurt badly, pleaded, three more years
+  maybe less (Maria's public version); [joke] "a very exclusive school in Ohio"; [keep] Jack asked him to keep it.
+  [theo_hi] Theo spoke to Danny ("He's a menace." / "Look out for him").
+- Nonna: truth ("Go next week") · thursday ("October," written on the funeral-home calendar) · lie (candle "counts
+  double"; whisper "Nonna will remember that" — **owed a payoff in E04–E06**).
+- Lena's s15 text: getty "On Wednesday it's Herakles against Gage…" / pool "On Wednesday I bleed on Gage…".
+- Poppy knows "the Catholic"; on nun she knows "Sister Jack."
+
+**Tallies after S1E03**
+- Scar tellings: Margot ← nun ("Sister Mary Clement, third grade, a ruler") / husband ("A jealous husband. Erie,
+  Pennsylvania") / refused (none). Laney hears Theo's swan version on `e3_sunday=="pool"`.
+- Reliquary: on this save 1 → **2 on lit** (else 1). Jack's cigarettes lit on-page: +1 on lit.
+- Lena's resolve: s01b 7 → s08 8 → s11v **8**. (E04 drops her to 5.)
+- Duel record: three duels; **Jack 2 – Lena 1** (Lena's "Two–one" card). Margot's whiteboard: seeded (LENA verdict,
+  teaser); debuts E04.
+- Ratings: the Pacific 4/10 (Lena); Frank "would give it a three."
+- Jack's resolve ends 6–10 (mean 8.7). Theo trust ends 1–8.
+- Words per path ≈ 13.9k–14.8k (mean 14.3k; 20,000 random playthroughs on the real save; validator total ~20.4k counts
+  every branch). 21 choices per path; keys 6–12; whispers 0–6.
+
+**Notes / handoffs**
+- Seeds (do not over-signal): Theo's 2:40 drive (Margot's line + one empty-concrete image in s07; salt film on the SL,
+  s08); Kevin and Theo silent at the pool at 1 a.m. (s06b); Laney's DRP pill at noon with a mimosa (s09b, pool only);
+  Margot's parents' marriage (s07).
+- E04: Nonna's First Friday (thursday → October; lie → the candle); Frank's reply if `e3_labor_call=="called"`; Theo's
+  IOU question (`e3_theo_iou`); money on kept/two; personal/apology temperature; Lena's injury paper on getty.
+- Mechanics: trait gates should scale to this save from E04 (wit 8, candor 8+, sincerity 7, reckless 4): gate earned
+  options at the save's standout levels, not at 3–4.
+- Real figures on the record: Benedict XVI (*CiV*), John Paul II (*LE*, *CA*), Leo XIII, Pius XI; Obama at the AFL-CIO
+  Labor Day picnic, Cincinnati, Sep 7 (paraphrase only); Brian Rolle; Trent Toliver (via Remy).

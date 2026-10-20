@@ -1,0 +1,286 @@
+{
+  "scenes": {
+    "s08": {
+      "slug": "SUNDAY · 9:00 AM · OUR LADY OF MALIBU",
+      "set": { "resolve.lena": 8, "resolve.jack": "+1" },
+      "body": [
+        "Kevin drives, because it’s his mother’s van and because nobody else was asked. The Odyssey goes up the PCH at the speed limit with the windows down and the 7 DAYS on the back glass still tacky. Lena has the captain’s chair across the aisle from Jack, in the green dress with sleeves she calls her church one and the white Keds, her black lace mantilla folded on her knee. Margot is finally asleep. Where the SL lives in the drive there is still an empty square of concrete.",
+        { "if": "e2_alarm==\"hoodie\"", "text": "Laney has the back bench to herself, in Jack’s Mooney hoodie over a yellow sundress, sunglasses on, sitting very straight with her hands folded in her lap like a girl waiting to be called up at a recital. “I’ve never been to a Catholic one,” she announces. “Is it like a wedding without the bar?”", "else": "Laney has the back bench to herself, in a yellow sundress and a cardigan buttoned to the neck, sunglasses on, sitting very straight with her hands folded in her lap like a girl waiting to be called up at a recital. “I’ve never been to a Catholic one,” she announces. “Is it like a wedding without the bar?”" },
+        "“It’s exactly like a wedding, cher,” Lena says. “Same groom every week.” Kevin finds her in the rearview. “Theologically sound.” “I know it is, Kevin. I’m from New Orleans. We don’t joke about the groom.”",
+        "Our Lady of Malibu is cool inside after the glare and smells of beeswax and good sunscreen. The congregation is in linen: linen shirts, linen trousers, a linen sundress on a woman with a linen baby. A man in the pew ahead has a sweater knotted over his shoulders in September in Malibu, which seems to Jack an act of faith in its own right. Lena shakes out the mantilla and puts it on without ceremony, and two linen heads turn, and she lets them. The celebrant, the bulletin says, is a priest on supply for the month, Irish, sunburned along the part in his hair. *The Lord be with you. And also with you.*",
+        "Lena runs Laney through the Mass in whispers, her mouth an inch from Laney’s ear. Stand. Sit. Stand. During the Gloria she slides the bulletin into Laney’s lap. She has written on the back of it.",
+        { "type": "doc", "title": "Back of the Our Lady of Malibu bulletin, Lena’s hand", "text": "STAND when he stands.\nSIT for the readings.\nKNEEL at the bells.\nAt Communion: ARMS CROSSED. You’ll get a blessing.\nDo NOT take the cup.\nYou are doing beautifully. —L." },
+        "The first reading is Isaiah, the ears of the deaf cleared, the lame leaping like a stag. Then a lector in a seersucker jacket gets up and reads James to a church full of gold rings. *For if a man with gold rings and fine clothes comes into your assembly, and a poor person in shabby clothes also comes in, and you say to the one in fine clothes, Sit here, please, while you say to the poor one, Stand there —* Lena’s eyebrow goes up and stays up. Jack studies his shoes, which are the only shoes in the building that came from a Payless. Kevin, at the end of the pew, very carefully does not look at anyone. The man with the sweater turns his wedding ring around his finger once, all the way, and leaves it.",
+        "The Gospel is Mark, the deaf man brought to Jesus, and Jesus taking him off by himself, away from the crowd. He puts his finger into the man’s ears. He says *Ephphatha* — be opened — and Lena’s lips make the Aramaic along with the priest, soundlessly, as if mouthing a song she loves. The homily is short. The priest comes down one step and says only this, in a brogue: “He puts his fingers in the man’s ears. He doesn’t shout at him from across the road.” Then he sits down, and the church sits there with it.",
+        "At the bells Laney braces her Tory Burch flats on the padded rail, and Lena puts a hand on her knee and leans in: “That’s a kneeler, cher, not a footrest.” Laney kneels, wobbling, looks around to see if she’s doing it right, and is. At Communion Lena leans over once more, close, the mantilla brushing Laney’s copper hair. “Cross your arms over your chest and he’ll bless you.” Laney crosses them experimentally. “Like a vampire?” “Like a *Baptist*.” Laney goes up the aisle between Lena and Jack, arms crossed, chin up, and the Irish priest lays his hand on her copper head and says something to her nobody else can hear. She comes back down the side aisle pink to the hairline and very quiet, and kneels when Lena kneels, and stays down a while after Lena has sat back.",
+        { "type": "break" },
+        "At five past ten they come out into the glare and the SL is at the curb. Fog has run down the windshield in the night; the wipers have drawn two clean fans through it, and there’s a fine film of dried salt everywhere the wipers didn’t reach. Theo is leaning against the champagne door in sunglasses and yesterday’s jeans, holding a cardboard tray with four coffees in it.",
+        "“I don’t go in,” he says, before anyone has said anything. “I’m a supporter, not a member.” He hands out the coffees, black for Jack, something with foam for Laney, a cortado for Lena that she didn’t order and is correct, Kevin’s with a sleeve on it. Laney holds her cup in both hands. “Theodore. I got *blessed*.” Theo looks at her over the sunglasses. “I can see that. You’re luminous. It’s upsetting.” Nobody asks him where he’s been since two-forty.",
+        "Jack walks down the steps with his coffee to where the one bar lives on the RAZR. The note his mother tucked in with the envelope from St. Brigid’s is still in his wallet: *call Nonna Sunday after Mass.* It’s after one o’clock on Glenwood Avenue. The extension in Nonna’s room picks up on the fourth ring, fumbles, and EWTN comes on behind her like a radiator. “Giacomino.” He asks for his mother. “Your mother is with your brother,” Nonna says, which is all she says about that, and Jack says “Okay,” and looks at the ocean across the highway for a second, and doesn’t ask anything else.",
+        { "if": "e2_osei==\"board\"", "text": "Then the voice she saves for saints who are late: “Giacomino. Primo venerdì.” A pause he could drive the Silverado through. “You went?”", "else": "Then the voice she saves for saints who are late: “You went to Mass today?” “I’m on the steps right now, Nonna.” “Bravo.” A pause he could drive the Silverado through. “And Friday? Primo venerdì. You went?”" }
+      ],
+      "choices": [
+        {
+          "text": "“No, Nonna. I played chess with the priest.”",
+          "tag": "Candor",
+          "set": { "trait.candor": "+1", "soul.honesty": "+1", "e3_nonna": "truth" },
+          "key": "You told Nonna you played chess with the priest instead of going to confession.",
+          "response": [
+            "“Chess!” Two thousand miles of static can’t hide what she does with her face; he can hear it. “*Madonna.*” Then, considering: “Did you win?” “No.” “Good,” says Nonna. “Go next week.” And she hangs up on herself, three tries to find the cradle, and he stands on the steps of a church in Malibu with the dial tone and the coffee and the distinct sense that he’s been given a penance by an eighty-four-year-old woman with a remote control."
+          ],
+          "goto": "s09"
+        },
+        {
+          "text": "“I went to Mass Thursday.”",
+          "tag": "Charm",
+          "set": { "trait.charm": "+1", "e3_nonna": "thursday" },
+          "response": [
+            "“Thursday is not Friday, Giacomino.” A sigh comes all the way from Glenwood Avenue, through Pennsylvania and the plains and the desert, and arrives intact. “October,” she says. “I write it on the calendar.” He can hear her doing it, the pen from the drawer by the bed, the calendar from the funeral home with the Sacred Heart on it. She hangs up before he can promise."
+          ],
+          "goto": "s09"
+        },
+        {
+          "text": "“I went.”",
+          "tag": "Lie",
+          "cue": "Nonna will know.",
+          "set": { "soul.honesty": "-1", "soul.grace": "-1", "resolve.jack": "-1", "e3_nonna": "lie" },
+          "response": [
+            "“Bravo,” Nonna says, and she sounds so pleased. She tells him she lit a candle for it already, just in case, and now it counts double. Standing in the sun on the church steps with Theo’s coffee going cold in his hand, Jack wishes she didn’t sound pleased, and she says “Ciao, bello,” and finds the cradle on the first try."
+          ],
+          "goto": "s09"
+        }
+      ]
+    },
+    "s10": {
+      "slug": "SUNDAY · 5:52 PM · THE VANCE HOUSE, KITCHEN",
+      "music": "Steely Dan — “Kid Charlemagne”",
+      "body": [
+        { "if": "e3_sunday==\"getty\"", "text": "The Villa closes at five. Lena brought Kevin’s van back up the PCH at a speed Kevin will not be told about, and by ten to six everybody is in the kitchen, sunburned and salt-stiff, Lena still holding the folded museum map like a ticket stub, Laney and Theo damp from the pool.", "else": "The Villa closes at five. At twenty to six the Odyssey comes down the drive with Lena at the wheel and Margot in the back seat holding the door handle, and by ten to six everybody is in the kitchen, Lena describing Herakles to Laney with both hands and no regard for the dignity of marble." },
+        { "if": "e3_terms==\"labor\"", "text": "Jack is at the sink with the gumbo pot. It has been soaking since last night, the roux baked to a dark ring an inch below the rim, and under the terms negotiated in 412 at nine o’clock yesterday morning it is his. He has his sleeves pushed up and his hands in gray water to the wrist.", "else": "Jack is at the sink with the gumbo pot. It has been soaking since last night, the roux baked to a dark ring an inch below the rim, and nobody asked him to; the Hobart has ruined him. He can’t sit in a kitchen with a dirty pot in it. He has his sleeves pushed up and his hands in gray water to the wrist." },
+        "The car arrives before the man does. Up on the drive, behind the hedge, somebody has a stereo turned up loud enough to come down through the house: Steely Dan, glossy and sinister, Donald Fagen wanting to know if there’s gas in the car. Theo is at the island peeling an orange in one long spiral. He stops peeling. He looks at the clock on the stove. “That’s him,” he says pleasantly. “Six minutes. Somebody time him.” Margot already has the Nokia out. Her thumb comes down. It beeps.",
+        "Richard Vance comes in through the garage door talking. He is tan in the way of a man who has never once been sunburned against his will, in a linen shirt the color of sand, reading glasses pushed up into silver-blond hair, a BlackBerry in one hand and the other free for whoever’s next. Behind him comes a woman in white jeans and gold sandals: thirty, maybe, pretty in a way that looks like it takes discipline. “*Teddy!*” Richard gets an arm around Theo’s shoulders and squeezes and reads his BlackBerry over the top of Theo’s head while he does it. Theo stands in the hug holding the orange. His smile doesn’t go anywhere at all. “Hi, Dad. Hi, Brynn.”",
+        "Then Richard does the room. He goes around the island with his hand out — “Richard” — and each of them says a name, and he hands each name straight back, once, warm, like a good tip.",
+        "“Lena Broussard.” “*Broussard.* Like the restaurant on Conti? Best turtle soup in the Quarter. We made a picture down there after the storm. The tax credits were *obscene*.” Lena gives him the smile Jack saw her give a parking officer on the Commons Lawn the day he first laid eyes on her. “Different Broussards, sir. We’re the seafood ones. Banks Street.” “Even better,” says Richard Vance. “Real people.” Brynn has lifted the lid on the leftover gumbo on the back burner and is breathing it in with her eyes shut. “Did *you* make this? Will you give me the recipe?” Lena gives it to her, roux and all, forty-five minutes, don’t walk away, and Brynn thumbs every word into a white iPhone and says, “Rich. We’re making this.” “Inés will make it,” Richard says, already on to Laney.",
+        { "if": "e2_alarm==\"hoodie\"", "text": "He reads the front of the hoodie. “Cardinal Mooney. Is that a band?” “It’s a *lifestyle*, sir.” Richard points at her, delighted, like he might cast her in something.", "else": "He reads the front of her T-shirt. “Highland Park Lacrosse. You play?” “I *dated* it, sir.” Richard points at her, delighted, like he might cast her in something." },
+        "“Kevin Tran.” “Tran. We shot a picture in Vietnam — Hội An, oh-two. The river at night, the lanterns. Gorgeous country.” Kevin gives him the full floor-meeting smile. “I’ve heard it’s beautiful, sir. I’ve never been.”",
+        "“Margot Lindqvist.” She doesn’t take the hand; she has the Nokia in it. “How many people did Meridian lay off this year?” Richard doesn’t blink. “Two hundred and twelve. I kept nine hundred employed through a writers’ strike and the worst year since ’82. What’s your number?” “Name one,” says Margot. And for the first time since he came through the door Richard Vance slows down. “Denise Okafor. Story department. Nineteen years. I told her myself, in my office.” He holds Margot’s eye. “Then I went to lunch, because I had a lunch.” Margot writes it down, both halves, and doesn’t say anything, and neither does he.",
+        "“Dad,” Theo says, “and this is — ” The BlackBerry goes. Richard lifts one finger and answers it in the middle of Theo’s sentence. “No. No. Don’t call legal. Call Marty. Marty fixes it.” He hangs up. Theo’s hand, flat on the counter beside the orange peel, has stopped where it was.",
+        "Richard checks the time on the BlackBerry. “We’re due in the Colony.” And on his way back toward the garage he sees Jack — sleeves up, gray water to the wrists, the Brillo in one hand — and his face brightens: one more thing he can take care of. “The caterer send you?” Richard has a silver money clip open before Jack’s hands are out of the water. He peels off a hundred and tucks it into the breast pocket of Jack’s flannel with two fingers. He pats it flat. “For putting up with my son.” Across the island Lena has set down the wooden spoon she was tasting from. Theo’s face is perfectly pleasant. It’s the face he wears at the end of a party, when the lights come up. Richard is already halfway to the door, thumb on the trackball."
+      ],
+      "choices": [
+        {
+          "text": "Hand it back: “I’m Theo’s friend, sir. Not the help.”",
+          "tag": "Candor",
+          "cue": "Theo noticed.",
+          "key": "You handed Richard Vance his hundred back.",
+          "set": { "trait.candor": "+1", "soul.honesty": "+1", "rel.theo.trust": "+1", "e3_hundred": "returned" },
+          "response": [
+            "Jack dries his hand on his jeans, takes the bill out of his pocket, and holds it out. “I’m Theo’s friend, sir. Not the help.” Richard turns around in the doorway and looks at him properly for the first time — the black hair, the broken nose, the hand held out steady with a hundred dollars in it — and laughs, really laughs, from the stomach. “First friend he’s had I couldn’t tip.” He takes it back and pockets it. At the island Theo has started peeling the orange again, very slowly, as if it requires all his attention."
+          ],
+          "goto": "s10b"
+        },
+        {
+          "text": "“Thank you, sir.” Keep it.",
+          "tag": "Control",
+          "key": "You kept Richard Vance’s hundred.",
+          "set": { "trait.control": "+1", "e3_hundred": "kept" },
+          "response": [
+            "“Thank you, sir.” Richard is already gone. Jack dries his hands, takes *Brideshead* out of his back pocket, and folds the hundred into it a few pages past the holy card. A hundred dollars is twelve and a half hours at the Hobart. He puts the book back in his pocket. Theo is studying the countertop, which is Carrara marble and has never been so interesting."
+          ],
+          "goto": "s10b"
+        },
+        {
+          "text": "Hand it straight to Theo: “For the gas.”",
+          "tag": "Charm",
+          "key": "You gave Richard Vance’s hundred to Theo for the gas.",
+          "set": { "trait.charm": "+1", "rel.theo.warmth": "+1", "e3_hundred": "theo" },
+          "response": [
+            "Jack takes the bill out of his pocket and holds it across the island to Theo. “For the gas.” Theo looks at it, and at Jack, and takes it between two fingers and slides it into the front pocket of his jeans. “Under the pie,” he says. In the doorway Richard is reading something on the BlackBerry and laughing at it, and doesn’t notice that his money has gone around the kitchen and come back to his son, and that’s the joke, and it’s also the other thing."
+          ],
+          "goto": "s10b"
+        },
+        {
+          "text": "“Make it two and I’ll do the windows.”",
+          "if": "trait.reckless>=3",
+          "tag": "Reckless",
+          "key": "You talked Richard Vance up to two hundred.",
+          "set": { "trait.reckless": "+1", "e3_hundred": "two" },
+          "response": [
+            "“Make it two,” Jack says, “and I’ll do the windows.” The kitchen goes very still. Richard turns in the doorway with his eyebrows up, and then he laughs, pointing at Jack with the BlackBerry. “This one I like.” He comes back, peels a second hundred off the clip, and tucks it in on top of the first. Jack has two hundred dollars in his shirt pocket and a problem, and the problem is standing at the island holding half an orange and not looking at him."
+          ],
+          "goto": "s10b"
+        }
+      ]
+    },
+    "s10b": {
+      "slug": "SUNDAY · 5:58 PM · THE VANCE HOUSE, THE DECK",
+      "body": [
+        "They all end up out on the deck to see him off, as if he were a relative. The Range Rover backs up the drive with Steely Dan coming out of it again. Brynn waves from the passenger side with her whole arm, a real wave, and Lena waves back. Richard doesn’t look up from the BlackBerry. The hedge closes behind them. The dinner is in the Colony.",
+        "Margot looks at the Nokia. “Six minutes, fourteen seconds.” Theo nods, his hands in his pockets, his eyes on the empty drive. “He’s slipping.”",
+        { "type": "doc", "title": "Margot’s Moleskine, open on the rail", "text": "R. VANCE. Arr. 5:52. Dep. 5:58.\n6:14.\nCalls son: Teddy.\nGuests’ names learned: 4 of 5. Used: 4.\nOne (1) attempt to tip a guest.\nDenise Okafor, Story Dept., 19 yrs." },
+        "Then Laney walks up behind Theo, puts both hands flat between his shoulder blades, and shoves him into the pool in his four-hundred-dollar T-shirt.",
+        { "if": "e3_hundred==\"theo\"", "text": "He goes in sideways and enormous, and Richard Vance’s hundred goes in with him, in the front pocket of his jeans.", "else": "He goes in sideways and enormous, sunglasses and all." },
+        "He comes up laughing — a real laugh, all the way out, water streaming off his hair — and then he stops swimming and turns over and floats on his back in the middle of the pool with his arms out, in his clothes, looking straight up at the sky, smoke-yellow, one plane crossing it very high. He stays there. Nobody calls to him. The pump hums. The sea comes in under the deck.",
+        "“Somebody had to,” Laney says, to no one, and sits down on the edge with her feet in the water.",
+        "Nobody else says anything. Kevin goes inside and comes back with a towel, a big one, white, and folds it once and leaves it on the coping at the shallow end, where Theo will find it when he wants it, and goes back in."
+      ],
+      "journal": [
+        { "kind": "person", "id": "richard", "title": "Richard Vance", "text": "Theo’s father. Learned all our names in one pass. Calls him Teddy. Stayed six minutes, fourteen seconds. Margot timed it." }
+      ],
+      "next": "s11"
+    },
+    "s12": {
+      "slug": "MONDAY · 7:12 AM · THE VANCE HOUSE, KITCHEN",
+      "set": { "resolve.jack": "-1", "knows_danny_theo": true },
+      "body": [
+        "Labor Day comes in gray. The marine layer has the beach again, flat and white against the glass, and the house is quiet enough that Jack can hear the refrigerator’s compressor and, under it, the surf. He’s at the sink with last night’s glasses, because there are glasses and there is a sink: wine glasses from the fire pit with a red line dried in the bottom of each, a coffee mug of Margot’s, two Arrowhead bottles, a pool noodle someone left on the counter in the night for reasons of their own.",
+        "Theo is at the island in the navy silk robe from the fire alarm, with an espresso and his hair flattened on one side. He has picked up a dish towel from somewhere and is drying one wine glass, slowly, turning it in the towel as if he’s read about this. “I slept,” he says, though Jack hasn’t asked. “Eleven-forty to six-fifty. Left side. I dreamed about Rossellini.” Jack doesn’t say anything. Theo turns the glass.",
+        "The RAZR buzzes on the counter by the coffee, rattling against the marble. A number Jack doesn’t have saved, long, out of state. The screen only lights when he tips it. He dries his hand on his jeans and opens it, and it isn’t a person. It’s a recording, a woman’s voice, flat and loud in the quiet kitchen: “This is a prepaid call from — ” and then a gap, and into the gap a voice Jack knows better than his own, saying its own name: “*Danny.*” And the woman again: “ — an inmate at Trumbull Correctional Institution. This call is from a correctional facility and is subject to monitoring and recording. To accept this call, press — ”",
+        "Theo is three feet away with the towel in one hand and the glass in the other. Jack presses the key.",
+        "“*Professor.*” There it is: Glenwood Avenue in a voice, gravel and laughing, a little out of breath like he just came in from somewhere. “You up? It’s ten o’clock. Ma put money on it, so don’t make me talk to myself.” Jack says, “I’m up,” and his voice works. Behind Danny there’s a room full of other men’s voices and a television and a door that buzzes and bangs. “Ma came yesterday. Brought the good socks. The gray ones, the wool. Spent ten minutes at the desk telling the C.O. they’re not contraband, they’re *socks*. She won.” A laugh. “She says there’s a veil girl.” “There’s a girl in my class who wears a veil to Mass.” “That’s what I said, Professor. A veil girl.”",
+        { "if": "e2_told_dad_job", "text": "“And you wash dishes. Dad told her. *Dad* told her.” Danny lets that sit, so Jack can hear how big it is. “Dad don’t tell her nothing. So he’s proud. So don’t be a pussy about it.”" },
+        { "if": "e2_wrote_danny", "text": "“Dad says you wrote. It ain’t come.” “Thursday. I mailed it Thursday.” “Mail’s slow in here. They read it first. Some guy in the mailroom’s gonna know your business before me.”" },
+        "The tap is still running. Jack doesn’t turn it off. His free hand has found the St. Michael medal through his T-shirt and is holding it, the edge of it pressing into his thumb. “Where are you?” Danny says. “It sounds like money.” Jack looks at the kitchen: the steel, the glass, the Carrara, the gray ocean past the glass, Theo standing in all of it in a silk robe drying one glass forever. “Malibu.” “Get *out*.” A whoop, and somebody on Danny’s end tells him to keep it down, and he says something back Jack can’t hear. Then he’s close to the phone again, and quieter. “Describe it.”"
+      ],
+      "choices": [
+        {
+          "text": "Describe the ocean, plainly.",
+          "tag": "Sincerity",
+          "set": { "trait.sincerity": "+1", "soul.grace": "+1", "e3_danny": "ocean" },
+          "response": [
+            "So he does. He turns to the glass and tells his brother what’s there. It’s gray right now, with fog lying on it low. Under the fog it’s green close in and blue farther out, and there’s a line where it meets the sky that you can’t find, you keep looking and you can’t. It’s cold, colder than Lake Glacier in May. The house is right on top of it, and all night you can hear it under the floor, coming in and going out, like somebody breathing in the next room.",
+            "On the other end nobody says anything. The television, the door buzzing. Then Danny, quiet: “Okay. Okay.” A breath. “Keep that one.”"
+          ],
+          "goto": "s12b"
+        },
+        {
+          "text": "Describe Malibu as a crime scene: the labeled fridge, the Oscar by the toilet.",
+          "tag": "Wit",
+          "set": { "trait.wit": "+1", "e3_danny": "funny" },
+          "response": [
+            "“Okay. Victim’s a refrigerator. Every container in it labeled, same handwriting: R.V., Monday, Do Not. Do not *what*, Danny. It doesn’t say. We have no suspects. Then you go down the hall to take a leak, and there’s an Academy Award on the shelf next to the hand towels. A real one. I picked it up. It weighs about what a kid’s bowling ball weighs.”",
+            "And Danny is laughing — the big one, from the stomach, the one that used to come up the stairs on Glenwood at two in the morning when he thought everybody was asleep, the one Jack hasn’t heard since — and Jack keeps talking so it won’t stop. The Oscar has a little gold sword. The man who owns the Oscar has a hedge cut with a ruler. Danny laughs until somebody on his end tells him to shut up, and he tells them to shut up, and keeps laughing."
+          ],
+          "goto": "s12b"
+        },
+        {
+          "text": "Hand the phone to Theo: “Say hi to my brother.”",
+          "tag": "Charm",
+          "key": "You let Theo talk to Danny.",
+          "set": { "trait.charm": "+1", "rel.theo.trust": "+1", "rel.theo.warmth": "+1", "e3_danny": "theo_hi" },
+          "response": [
+            "Jack holds the RAZR out across the counter. “Say hi to my brother.” Theo looks at the phone. Then he puts the glass down and takes it, dish towel and all, and puts it to his ear, and the earpiece is loud enough in the quiet kitchen that Jack hears both halves.",
+            "“Who’s this?” “The roommate.” “He any good?” Theo looks at Jack over the phone for a second. “He’s a menace.” Danny laughs, low. “Yeah. He is.” Then, in a different voice, the one he used to use at the top of the driveway when Jack was nine and going somewhere on a bike: “Look out for him.” Theo doesn’t say anything clever. He hands the phone back."
+          ],
+          "goto": "s12b"
+        }
+      ]
+    },
+    "s12b": {
+      "slug": "MONDAY · 7:31 AM · THE VANCE HOUSE, KITCHEN",
+      "body": [
+        "The recorded woman cuts in over whatever Danny is saying: “You have one minute remaining.” Danny talks faster. “Go to Mass. Eat something. Don’t be a pussy, Professor. Tell the veil girl I said — ”",
+        "And then it’s a dial tone, steady and stupid, in a kitchen in Malibu. Jack holds the RAZR to his ear until the dial tone becomes the other noise, the one that tells you to hang up, and then he closes it. He reaches over and turns off the tap.",
+        "Theo hasn’t moved. Jack has watched Theo fill every silence on the fourth floor of Delgado Hall for a week — with a pitch, a logline, a story about a director, a bottle — and he doesn’t fill this one. He doesn’t ask what Danny did. He stands at the island in the silk robe with the gray light on him and waits, which Jack has never once seen him do.",
+        { "if": "e3_danny==\"theo_hi\"", "text": "He’s still holding the dish towel he took the phone with." }
+      ],
+      "choices": [
+        {
+          "text": "Tell it plain: “He’s in Trumbull. Five years. A fight — a guy got hurt bad. Three more to go, maybe less.”",
+          "tag": "Candor",
+          "key": "You told Theo where your brother is.",
+          "set": { "trait.candor": "+1", "soul.honesty": "+1", "rel.theo.trust": "+1", "e3_danny_told": "plain" },
+          "response": [
+            "“He’s in Trumbull,” Jack says. “It’s a state prison, outside Warren. Five years. A fight — a guy got hurt bad. He pleaded. Three more to go, maybe less.” It’s what his mother says at St. Brigid’s when anybody asks, and he says it the same way she does, and stops.",
+            "Theo asks one question. “What does he read?” “Whatever I send.” Theo nods, as if that answers something he’d been wondering about for a while, and folds the dish towel in thirds and lays it on the counter."
+          ],
+          "goto": "s12c"
+        },
+        {
+          "text": "“He’s at a very exclusive school in Ohio.”",
+          "tag": "Wit",
+          "key": "You told Theo your brother was at a very exclusive school in Ohio.",
+          "set": { "trait.wit": "+1", "e3_danny_told": "joke" },
+          "response": [
+            "“He’s at a very exclusive school in Ohio,” Jack says. “Hard to get into. Harder to get out of.” Theo lets the joke stand there between them, doesn’t touch it, doesn’t top it. “Then I’ll send an application fee.” And then, short, with nothing on it: “I heard the recording, Costigan. It’s okay. I’m nobody.”"
+          ],
+          "goto": "s12c"
+        },
+        {
+          "text": "“Don’t tell anybody. Not yet.”",
+          "tag": "Sincerity",
+          "cue": "Theo will remember that.",
+          "key": "You asked Theo to keep it.",
+          "set": { "trait.sincerity": "+1", "rel.theo.trust": "+2", "e3_danny_told": "keep" },
+          "response": [
+            "“Don’t tell anybody,” Jack says. “Not yet.” Theo looks at him across the island. “I’m good at that.” He lets it sit there, and the surf comes in under the floor and goes out again. “Better than you’d think.” He doesn’t add anything. He picks up his espresso, finds it cold, and drinks it anyway."
+          ],
+          "goto": "s12c"
+        }
+      ],
+      "journal": [
+        { "kind": "person", "id": "danny", "title": "Danny", "text": "My brother. Trumbull Correctional. Calls me Professor. Ma brought him the good socks." }
+      ]
+    },
+    "s12c": {
+      "slug": "MONDAY · 7:40 AM · THE VANCE HOUSE, KITCHEN",
+      "body": [
+        "Theo goes to the machine on the back counter, the big steel one with two dials and a pressure gauge, the one in his father’s kitchen, and makes an espresso the way he does everything with his hands: fast, exact, without looking. Grind, tamp, the hiss. He sets the cup down in front of Jack on its saucer. “You can touch this one,” he says. “It’s my father’s.”",
+        { "if": "e2_alarm==\"hoodie\"", "text": "Laney yawns into the kitchen in the Mooney hoodie and bare feet, a pink satin sleep mask pushed up on her forehead, her hair in a copper knot. “Who called so early, fireman? I heard a phone. I was *dreaming*.”", "else": "Laney yawns into the kitchen in a camisole and bare feet, a pink satin sleep mask pushed up on her forehead, her hair in a copper knot. “Who called so early, fireman? I heard a phone. I was *dreaming*.”" },
+        "Theo answers before Jack can open his mouth. “His bookie. The Browns are a long-term investment.” “Aw,” says Laney, with real sympathy. “Sugar.” She pats Jack’s arm on her way past, opens the refrigerator, considers the R.V. containers, closes it, and takes a peach from the bowl instead, satisfied in every particular.",
+        "Jack takes the cup. He takes the Marlboros out of the Carhartt on the back of the stool. He goes out through the glass door and across the deck, past the pool with the towel still folded on the coping, to the top of the beach stairs, where the fog is starting to come apart."
+      ],
+      "journal": [
+        { "kind": "person", "id": "theo", "title": "Theo Vance", "text": "Roommate. Drives his grandfather’s car like it owes him money. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask." }
+      ],
+      "next": "s13"
+    },
+    "s14": {
+      "slug": "MONDAY · 1:10 PM · US-101 NORTH, THE ODYSSEY",
+      "music": "Bruce Springsteen — “Factory”",
+      "body": [
+        "They left Broad Beach at noon. Everyone is in the van except Theo, who is in the SL, and Laney, who at the bottom of the drive handed Kevin her three suitcases one by one and climbed into the two-seater beside Theo. “A girl can arrive in a minivan, sugar,” she told Kevin, tying a scarf over her hair. “She *leaves* in somebody’s car.” On the back glass of the Odyssey, in shoe polish, the countdown says 6 DAYS. Lena did it in the drive this morning with her wet hair dripping on the bumper.",
+        "At one o’clock Kevin switched over to KNX for the news, and they all heard it: the President in Cincinnati this morning, at the AFL-CIO’s Labor Day picnic, talking about health care and the unions and the dignity of work, and a crowd behind him that sounded, through the static at Point Mugu, like a parish festival when the band comes on. Then Kevin plugged in his iPod and put on Springsteen: the early-morning whistle, the men walking out in the morning light. “My dad likes the Boss,” Kevin says now, eyes on the road, ten and two. “He thinks he’s a Republican.”",
+        "Jack laughs, and Kevin looks pleased, and then, still watching the road: “My dad’s stores are open today. He has two. Nail-salon supply, in San Jose — polish, acetone, the chairs. He’s never had a Labor Day.” Kevin shrugs with one shoulder. “He says Labor Day is for people with bosses.” It’s the most Kevin has ever said about his father, and he says it the way he says everything, sunny, at sixty-five miles an hour, and then he changes lanes.",
+        { "type": "sms", "from": "LANEY (FIREMAN’S FAVORITE)", "text": "FIREMAN!!! there is a CASSETTE in this car. theodore says its an adapter. i am being kidnapped by 1985 ;) tell kevin i love him xoxo", "time": "1:14 PM" },
+        "Margot rides shotgun with the Moleskine on her knee and *Nickel and Dimed* face-down on the dash. She has been quiet since Malibu, which for Margot is a kind of buildup. Somewhere past Oxnard she turns around in her seat. “Here’s what I can’t get past. Your Church loves unions in its encyclicals. Leo, Pius, John Paul — workers’ associations are a natural right, honoured even more than in the past, very moving. And then it fights them in its own hospitals and its own schools. Nurses. Teachers. Janitors. In writing it’s Dorothy Day. In the parking lot it’s management.”",
+        "Jack opens his mouth. Across the aisle, Lena, who has been half asleep against the window with her cardigan pulled up to her chin, doesn’t open her eyes. “She’s right,” Lena says. “Write that down, Margot. It’ll never happen again.” Margot writes it down. Lena is asleep before Margot has finished underlining it, her head against the glass, the tin making its small dry sound in her cardigan pocket every time Kevin takes a curve, her Keds crossed on the back of Margot’s seat.",
+        { "type": "sms", "from": "Gina", "text": "obama was on the radio from cincinnati. dad yelled at it but nicely. hes still in the garage. happy labor day i guess", "time": "11:02 AM" },
+        "He reads it now, two hours late, with the screen tipped to catch the light. It’s after four on Glenwood Avenue, and Jack can see it from here: the Silverado is in the drive because there’s nowhere to drive it. The garage door is up, the radio on the workbench, his father on the stool with his hands empty. Kevin’s iPod has gone around and started the song over. Springsteen is singing about his father walking through the factory gates in the rain."
+      ],
+      "choices": [
+        {
+          "text": "Call Dad.",
+          "tag": "Sincerity",
+          "cue": "Your father will remember that.",
+          "key": "You called your father on Labor Day.",
+          "set": { "trait.sincerity": "+1", "resolve.jack": "+1", "e3_labor_call": "called" },
+          "response": [
+            "Frank picks up on the fourth ring. Jack can hear the garage before he hears his father: the radio low, a ballgame, the scrape of the stool. “Yeah.” “Happy Labor Day, Dad.” “Don’t.” A pause with the radio in it, a long one, the length of an at-bat. Jack waits it out. He learned that in the cab of the Silverado, across twenty-four hundred miles.",
+            "“You working tomorrow?” his father says finally. “Tuesday. Seven to one.” “Good.” And Frank hangs up first, the way he always does, as though long distance were still a dollar a minute. Jack holds the phone in his lap with the screen gone dark and the Boss still going, and doesn’t mind."
+          ],
+          "goto": "s15"
+        },
+        {
+          "text": "Text Gina: tell him happy Labor Day.",
+          "tag": "Candor",
+          "set": { "trait.candor": "+1", "e3_labor_call": "texted" },
+          "response": [
+            "T9 fights him for every word. *tell dad happy labor day. from me.* He sends it and closes the phone and watches Oxnard go by, the strawberry fields in their long rows with the pickers bent over them, out in the sun on the holiday.",
+            { "type": "sms", "from": "Gina", "text": "he said dont. then he said tell him good", "time": "1:31 PM" }
+          ],
+          "goto": "s15"
+        },
+        {
+          "text": "Put the phone away and watch the coast.",
+          "tag": "Control",
+          "set": { "trait.control": "+1", "e3_labor_call": "none" },
+          "response": [
+            "He closes the RAZR and puts it in the Carhartt and watches the coast come back to them: Ventura, the Rincon, Santa Barbara in its haze. At Gaviota they go into the tunnel the other direction and come out into gold hills, and in the middle row Lena sleeps through all of it, the tin ticking in her pocket on the curves."
+          ],
+          "goto": "s15"
+        }
+      ]
+    }
+  }
+}

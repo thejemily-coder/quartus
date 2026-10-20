@@ -316,3 +316,81 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - Sloane [s17a | laney]: "Theo's roommate. The Catholic." Jack's name.
 - Wes [s16 C2]: sees Jack's wall post on Lena's page (and likes it).
 - Priya: mutual-friend link on Facebook (s01 laminate is the route).
+
+### S1E03 — "Labor"
+> Written for the after-s1e02 save (broke · offered · loan · hoodie · wall · friend · honest · candor · board · union ·
+> swan). Branch tags below are `[scene | condition]`.
+
+#### Jack
+- [s01 | labor] The Vance housekeeper is Inés, off till Tuesday (from Theo's iPhone). Otherwise "Inés" first from Richard
+  (s10, all paths).
+- [s01b] Kevin's card carries everyone's numbers (the missing ones from Laney's phone); Lena's number.
+- [s02a | sl] Caroline Ashby Vance (name from her own "*Caroline*"): Peninsula, Pasadena, the Hockney, the Pomeranian;
+  "Mrs. Vance… thirty-one" (Richard's new wife, not yet named). Poppy: name, fourteen, "Pops." The six-minute rule.
+- [s06b | van] Poppy's name and age (from Theo, Rock Band). [s06b] Theo bought Rock Band for her.
+- [s04] The Oscar; the R.V. fridge; [theo] the screening room ("He watches everything on a laptop in bed").
+- [s05] Broussard's Seafood, Banks Street; her mama's crust; [listened] Wes's 8:04 call (Jack's inference; no words heard).
+- [s07] The SL left at 2:40 (Margot). Margot's parents' marriage line. [husband] Margot's father is a sociologist.
+- [s08] "Your mother is with your brother" (Nonna).
+- [s09] Margot's mother teaches Classics at Reed.
+- [s09a | getty] Lena's paper thesis; Margot's restored pronunciation; Lena drove a seafood truck from fifteen.
+- [s09b | pool] Laney's DRP pill at noon with a mimosa; Kevin's orange-juice swap; Laney's father's area codes; Poppy's
+  missed confirmation classes and Mrs. Alvarado; **Theo was baptized but not confirmed ("Grandmother Ashby's project. I
+  got out of mine")**.
+- [s10] Richard and Brynn (both introduced on page), "Teddy," Meridian's 212 layoffs and Denise Okafor, "Marty," the
+  Colony.
+- [s11] Mr. Alcide; the Minnesota youth group; Broussard's shuckers; [personal] Broussard's took five feet of water.
+- [s12] Danny: Ma visited Sunday with socks; "veil girl"; [told_dad_job] Dad told Ma about the dishes; [wrote_danny] the
+  letter hasn't arrived.
+- [s14] Kevin's father's two San Jose stores; Obama on KNX.
+
+#### Lena
+- [s01b] **Jack washes dishes at the Anchor (Tue/Thu; Saturdays from Sep 12)** — all paths. Jack's number (Kevin's card).
+- [s02b | van] [frank] Frank's "Close your mouth." [lena] Jack's impression of her. Her impression of Jack uses only
+  witnessed material ("*Coward*," his E02 margin; "What a jagoff," the E01 porch).
+- [s09] Margot's mother teaches Classics at Reed.
+- [s10] Richard tipped Jack as "the caterer's"; Richard's Broussard confusion; per `e3_hundred`.
+- [s11c C0–C2 / s11d C1] **Frank laid off since June** (`e3_told_lena_frank`). C0: Lordstown, twenty-six years, a letter.
+  C1: drove Jack 2,400 miles to see the Pacific. C2: built the Cobalt. s11d C1: Cobalts, twenty-six years. s11d C0: Sunday
+  gravy, the garage. **On the Control path (s11c C3) she knows none of it** unless s11d C1.
+- [s13c] Frank "gives everything a three" (all paths).
+- [s11d personal] Jack's "family business" jab; [s13b C3] his apology (`e3_apologized_personal`).
+- Lena does **not** know: anything about Danny; Theo's 2:40 drive; Laney's pill at the pool (she was at the Getty or on
+  the road); Inés.
+
+#### Theo
+- [s01] Jack's terms (`e3_terms`). [s06] Jack's IOU answer (`e3_theo_iou`).
+- [s09b | pool] Jack talked to Poppy (`e3_poppy`).
+- [s10] Where the hundred went; [kept] watched it go into *Brideshead*; [two] Jack talked his father up.
+- [s11] Frank's layoff on `e3_told_lena_frank` (present at the fire), Lordstown on s11c C0.
+- [s12] **Danny is at Trumbull Correctional (the recording) — all paths** (`knows_danny_theo`); Danny's voice, "Professor,"
+  the socks, the veil girl; [told_dad_job] Jack's dad knows about the job. [theo_hi] spoke to Danny. [s12b plain] five
+  years, a fight, a man hurt badly, pleaded, three more maybe less. [joke] the "exclusive school." [keep] asked to keep it.
+- [s15] Jack sends Danny a used book a month, margins erased.
+
+#### Laney
+- [s09b | pool & swan] Theo's swan version of Jack's scar ("Swans. He has a history"). Richard's six minutes (Theo).
+  [nun] heard Poppy shriek.
+- [s10] Richard; [s11] Frank's layoff on told.
+- [s12c] **Does not know who called** (Theo: "His bookie").
+
+#### Margot
+- [s07] Theo's 2:40 departure (she saw it). Scar: [nun] / [husband] tellings; [refused] none (she wrote nothing).
+- [s09a | getty] Lena's paper. [s10] Richard's answers; Richard took Jack for the caterer's help; "4 of 5." [s11] Frank on
+  told. [s14] Lena concedes her point.
+
+#### Kevin
+- [s01b] Everyone's numbers (via Laney's phone). [s06b] sat silently with Theo at the pool, 1 a.m.
+- [s09b | pool] Laney's pill with the mimosa (he swapped it). [s10] Richard. [s11] Frank on told. [s13b] looked up the
+  water for Lena. [s14] told the van about his father's stores.
+
+#### Others
+- Richard [s10]: Lena, Laney, Kevin, Margot by name; **not Jack's** (thought he came with the caterer). [returned] "Theo's
+  friend"; [two] "This one I like."
+- Brynn [s10]: Lena's gumbo recipe.
+- Caroline [s02a | sl]: "Theo's Catholic," who prays.
+- Poppy: [sl] Theo has a Catholic in the car; [pool] talked with "the Catholic"; [nun] "Sister Jack."
+- Danny [s12]: Jack is in Malibu; [theo_hi] "the roommate"; [ocean]/[funny] Jack's descriptions. Maria told him about the
+  veil girl.
+- Nonna [s08]: `e3_nonna` truth (chess, no confession) / thursday (Mass Thursday; "October") / lie (thinks he went).
+- Frank [s14 | called]: Jack called on Labor Day; works Tuesday seven to one. [texted] Gina relays "happy labor day."
