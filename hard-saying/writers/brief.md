@@ -361,3 +361,17 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   bit: they visibly, comically keep avoiding Ephesians 5 until the reserved conversation finally arrives (see "Marital
   submission"). This register (sincere about the faith, satirical about Catholic-subculture packaging) is a model for
   faith scenes going forward.
+- **Kevin's arc (player directive, long-range).** A **long struggle** whose outcome is shaped heavily by his friendship
+  with Jack and Lena. Lots of back and forth: brief departures from the Church, probably a same-sex relationship or two,
+  other lapses, maybe even a sad attempt at a relationship with a girl, before **he finally settles as a celibate gay
+  Catholic**. Write it with compassion and full cost, no easy answers, and no character a mouthpiece. **Margot** is
+  frequently offended on his behalf and disagrees loudly with Jack, Lena and Kevin over the Church's teaching, but she
+  comes to accept and respect that Jack and Lena genuinely love him.
+- **Deaths.** **The core eight survive the college years** (Jack, Lena, Theo, Laney, Margot, Kevin, Fr. Osei,
+  Prof. Hale). After college a real, earned loss is allowed if the story calls for it (by then the cast around Jack and
+  Lena may be quite different). Losses during college may fall on family, guests and the wider cast.
+- **Season 1 finale (mid-December 2009, finals and Advent).** **Bittersweet**: a big moment between them, clearly every
+  reason for hope, but a real sting that it's not going to work right now. (Not together.)
+- **Breaks.** Follow Jack home for both: a **Youngstown Christmas** (winter break, between Seasons 1 and 2; one or more
+  episodes, or the opening of Season 2) and the **summer season** at home. Lena reaches him by phone, letters, Facebook,
+  maybe a visit.
