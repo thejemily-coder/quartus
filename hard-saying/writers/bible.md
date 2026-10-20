@@ -2093,6 +2093,31 @@ from cold. #14 whiteboard **C 6 · B 5**. #18 Nonna — the first repeat. #20 Be
 (restraint has never moved: E07 offers it on the roof and on the bleachers). Traits **sincerity 46** · candor 22 · wit 17 ·
 charm 11 · reckless 8 · control 3. Resolve Jack **9** · Lena **7**. Osei trust 4 · warmth 2. Evan warmth 1. Julian: not met.
 
+**Status after S1E07 (played path):** #1 open — **trust 28 · warmth 26 · heat 9 · friction 14** (friction +5, the biggest jump of
+the season: "Lena." on the roof, the friendship duel won RIGOR on both sets with Lewis and Joy Davidman, "Okay." to Wes's ticket;
+heat +1 only, from Lewis). Path: "Who's 'the other Catholic'?"; "Are you coming tonight?"; texted Gina the plain truth (Lena's a
+friend, her boyfriend's at Tulane, Becca's driving him somewhere); **let Gloria pick the funeral pie — pecan** ("Sweet all the way
+through. I've been told."); **lit the clove; Reliquary No. 4, by dispensation**; pressed Margot ("People sleep"); **"Lena." —
+stopped her by name** (Margot will remember that); **gave Margot his flannel**; "You argued that like it was yours." → "It's
+everybody's, Costigan." (medal); **"I noticed." / "I know you did."**; **"Okay."** to Wes's Columbus Day ticket; duel **RIGOR, Jack
+4–1** ("You argued my side better than I did. I'll never forgive you."); **Hale's Housman — "a man who doesn't sleep"**; the
+*Tide* (the faith-page quote; "your powers of observation…"; BLACK. NO SUGAR. NO ARGUMENT.); *Cite me.* on her paper; Becca —
+**"Not whether it's true. Whether I'm any good at it. At two in the morning."** ("Then I'll pray for two in the morning." — Becca
+will remember that); **kissed her cheek back**; took the east stairs ("Two-for-one"); told Ma "Becca… seven… a ranch"; **"She has a
+boyfriend, Ma."** ("Oh, honey."); **Sully's, 3–0** — Becca's "Saved you a maple bar anyway," Lena's "Then go eat it, dish man";
+he stayed; Mark 9:43 at the 9 p.m. Mass; tag: "Defense." **Player notes after E07:** loved it; Lena the standout; Becca sweet and
+the player felt guilty "the entire time" through Jack (keep that guilt alive); loved the paper's heartache and the maple-bar knife
+(small generous devastating Lena gestures — sparingly). **E08 carries the two-hander, designed by the player** (brief, "S1E08
+two-hander"). #3 — Danny has Lena's name (Sept 21 letter); the Housman and Hopkins ship in October (E08). #4 Theo 6 · 8 · 1. #5
+Laney 3 · 8 (the debrief; "Idaho on your face"). #11 Kevin warmth 3 — out to Margot (🔒); Jack's misread joked once, to Margot only.
+#12/#13 **Margot trust 5 · warmth 3 · friction 3** (from 1 · 1 · 2: the roof did it). #14 whiteboard C 6 · B 5 + BEREAVEMENT. #20
+Becca **warmth 6**. #29 reliquary **4**, `jack_cigs` 6. #48 **3–0**. Soul **grace 11 · honesty 15 · restraint −1** (restraint's first
+move was *down*: the clove; this Jack takes the dare when it's offered). Traits **sincerity 51** · candor 29 · wit 19 · charm 13 ·
+reckless 10 · control 4. Resolve Jack **9** · Lena **6**. Hale warmth 7 · friction 2. Osei trust 5 · warmth 2. Evan warmth 1.
+Julian: not met. **E08 spends:** heat ≤ +2 (the gift; the cove), friction on a fight she enjoys (the Thérèse duel), trust on
+the relief he sees and what he does with it; restraint gets two honest chances (the two-step on the sand; the stairs at the
+parting); Becca warmth up and guilt up together.
+
 ## 22. SEASON 1 — FALL 2009 (22 episodes, Aug 29 – Dec 18, 2009)
 
 *Liturgical year B through Christ the King (Nov 22); Year C from the First Sunday of Advent (Nov 29). Classes begin Mon
@@ -2253,26 +2278,54 @@ the cheek "so there's no confusion." Saturday: the call home ("Who's Idaho?" —
 Lena and Dale (3–0) or the 9:30 and Coffee & Donuts with Becca; Osei on the hand. **Tag: her red ink, under the door —
 "Defense."** Lena's resolve 7 → 8 → 6 → **5** → 6. No danger window. Duel record 3–1 → 3–2 on the default (Lena) result.
 
-**E08 · "Michaelmas"** · Tue Sep 29 – Sun Oct 4 · St. Michael (Sept 29, Jack's confirmation saint); St. Thérèse (Oct 1,
-Lena's middle name); Guardian Angels (Oct 2); Blessing of the Animals (Sat Oct 3): Hale brings Bishop Berkeley to be
-blessed "to annoy the Ghanaian," and Osei and Hale meet on-screen for the first time — two masters fencing over a deaf
-greyhound. **Becca date #3** (🔒 the tryer): she brings a hermit crab borrowed from the Marine Lab touch tank in a Tupperware
-to be blessed; Osei obliges; the Newman table says "you two." (Laney, later: "Who brings a *crab*.") Lena's Thérèse-day: Jack
-gives her a paperback *Story of a Soul* with his margins in it. Huge mistake. Huge success. **The owed two-hander** (standing
-rule) — the room's call: Thérèse night. (E07's `nextTime` promises are the E08 Showrunner's contract.)
+**E08 · "The Little Way"** · Tue Sep 29 – Sun Oct 4 · Michaelmas (Tue; Jack's confirmation saint); St. Jerome (Wed); **St.
+Thérèse (Thu Oct 1; Lena's middle name)**; Guardian Angels (Fri); the Blessing of the Animals (Sat Oct 3, a day before Francis);
+27th Sunday B (Gen 2:18 "It is not good for the man to be alone"; Mark 10:2–16); the Samoa tsunami and the Padang quake on the
+Fishbowl TV; Chicago loses the Olympics (Fri); OSU 33–14 at Indiana; **Saints 24–10 Jets (4–0)**; Browns lose in OT (0–4).
+*(Re-planned after S1E07 — retitled from "Michaelmas"; full plan in `outlines/s1e08.md`. **The two-hander is the player's own
+design** (brief, "S1E08 two-hander") and the episode is built around it.)* Since "Defense." they have been **scrupulously just
+friends** — Monday's seminar ("Good afternoon, Jack"), Tuesday's Michaelmas 12:10 ("Happy feast day, Jack"; "We're fine, Jack"),
+Wednesday's seminar on lying, where they agree with each other all hour and Hale is appalled. Tuesday: **Danny's Michaelmas
+letter** ("Happy St. Mike's, Professor… Tell Lena hey… Don't feel bad about it… That's an order."); Theo: **"Does he catch
+anybody? Or just throw?"** (🔒). Wednesday night, **THE TWO-HANDER** (~4,500; the Romance chunk): the Delgado laundry room at
+ten — Jack erasing the Hopkins for Trumbull; Lena with two baskets; awkward, painful, polite ("How's Becca?" "Great." "How's
+Wes?" "Great." "Nine days."); **she erases *Show Lena* herself** ("Friends help."). Midnight is her feast: he gives her a used
+*Story of a Soul* with his pencil margins in it — **"You wrote in it. You *wrote in it*, Costigan."** — he reaches for the eraser;
+"Don't you dare." **The crack** (a third of the way into the night): an unofficial duel on the Little Way, no referee ("Easy for
+you." / the table of sinners / *empty hands*); Lupe's at one ("Para los novios." "We're friends." "Claro."); **Shipwreck Cove under
+a gibbous moon going down into the Pacific** — Thérèse read aloud by moonlight, a Cajun two-step on the hard sand (or not),
+**"Do you know what you're doing yet?"** — he starts, can't, admits he doesn't know, and says Becca is so nice, so sweet; **Lena
+laughs before she can stop it** ("Come up with a better answer before somebody else asks you, Youngstown. That is the worst thing
+you can say about a person in this situation.") **and can't hide her relief; he sees it.** At two, Becca is praying for him (her
+promise). They walk back guilty; at the Delgado elevator, ~4 a.m.: **"That was a terrible thing to be glad about."** Laney, 4:41:
+she came in and went straight to her knees, "not asking. (asking)"; Theo: "Did it come clean?" **From the guilt:** Thursday Jack
+ships the Hopkins and Hale's Housman, stands behind Lena at the UCen counter while she argues a jar of the Pacific into the mail
+for Wes, and from the east stairwell **asks Becca out for Friday — he plans it, he pays** (Friday sauce / elephant seals /
+horses); Gloria rates Idaho sight unseen ("Apple. That's the one you bring home to your mother.") and asks after the pecan.
+Friday, **date #3: Becca thrilled** ("Nobody's ever planned a thing for me"; "I've been praying for two in the morning"). **Lena
+turns to Wes** (calls she makes; the stairwell laugh; the jar; Wes thrilled). Saturday, **the Blessing of the Animals** (the
+ensemble setpiece): Thomas the crab ("Who brings a *crab*."); Hale and Bishop Berkeley ("He's deaf, Father. You'll have to bless
+him louder."); Osei's hand on the dog's ribs; Berkeley and Knox's limerick; **neither resolve takes — the freeze lasts about five
+minutes** and Jack and Lena are laughing together in front of Becca; Becca's question makes Osei laugh for a full minute; Mrs.
+Fitch's "you two"; Margot's trial faith column; Jack's last Kevin-and-Margot joke, shut down, and he stops. Call home ("E
+l'altra?"); optional confession (Lena coming out of the coat closet as he goes in). Sunday fork: Sully's (Sharper's 99 yards; the
+bell; Wes from the Dome, "TELL THE OHIO GUY WHO DAT") or the 9:30 with Becca (Lena's play-by-play texts under the table). Osei on
+Genesis 2: the first thing in the Bible that is not good is loneliness. Tag: the full moon in the six-inch window, Lena's laugh
+on the stairs ("Five days"), Becca's "Friday was the best night." Lena's resolve 6 → 7 → 6 → 5 → **4** (the cove) → 5 → 7
+(confession, Sat) → **6**. No danger window (Lena never drops below 4; both must be ≤3).
 
 **E09 · "Columbus"** · Fri Oct 9 – Mon Oct 12 · Obama wins the Nobel Peace Prize (Oct 9); Columbus Day. **Wes visits.**
 Jack expects to hate him and doesn't. Saints are 4–0. The beach at 2 a.m., the Jameson, the attic story — **told as
 healed** ("Then she came along and I could") — and **the ring** on his phone (Mémère Odile's; he'll ask Tony after she
 graduates). "Take care of
-her." (🔒 Timing tragedy: Jack walks off the beach believing it's forever and stops waiting.) Lena sees Jack and Wes come back at dawn arm in arm and doesn't know what to do with her face.
+her." (🔒 Timing tragedy: Jack walks off the beach believing it's forever and stops waiting.) Lena sees Jack and Wes come back at dawn arm in arm and doesn't know what to do with her face. **(After E08:)** Wes arrives having opened the jar (he brings it back, empty, as a joke — "I drank it"); Lena is attentive to him in a way Jack recognizes as the week's resolve; Jack, guilty, is generous to Wes, and that generosity is what makes Wes trust him on the beach. The retreat-that-never-takes (#66) pauses for the weekend: with Wes in the room there is nothing to retreat from.
 
 **E10 · "Midterms"** · Tue Oct 13 – Sat Oct 17 · "Balloon Boy" (Oct 15). The library all-nighter: Jack and Lena, the
 eighth floor of Pacifica Library, 4 a.m., restraint-is-the-fire scene #1 (her head on his shoulder; he doesn't move for an
 hour; his arm dies; he doesn't move). Priya's breakdown over orgo: she shows Jack Nora's box in the RA
 storage closet and won't open the journal (moved from E11). Laney's Xanax and a pledge event; Lena and Laney's first real fight; Laney tells
 Jack about Kaylee, drunk, on the Delgado steps. **Becca's first crack:** "You look at me like I'm homework." — and she
-doesn't end it: "Then do your homework, Jack. I'll wait." (The tryer tries.)
+doesn't end it: "Then do your homework, Jack. I'll wait." (The tryer tries.) **(After E08:)** the crack lands harder after date #3: he planned and paid for a beautiful night out of guilt, and she felt the effort and, under it, the somewhere-else (E08: "You're always somewhere else a little").
 
 **E11 · "Big Sur"** · Tue Oct 20 – Sun Oct 25 · The Vatican announces the personal ordinariates for Anglicans (Oct 20).
 **The road-trip episode** (brief, Season 1 wish; a bottle episode on the move). Theo's 450SL holds two, so Kevin borrows his
@@ -2490,12 +2543,17 @@ as joy and relief, maybe a reconciliation.
 - **S1 cadence (player's standing rule after S1E04):** an **extended Jack/Lena two-hander roughly every other episode** —
   E04 (the harbor, played), **E06** (the long way home from Pi Lam's barn party: the beach, the creek mouth, the lifeguard
 tower, the Lagoon bench — played), *E07 (no two-hander; the Delgado roof at dawn after Margot's wake, ~1,800 words, and the
-friendship duel — Lena central)*, **E08** (Thérèse day, *Story of a Soul*), **E10** (the
+friendship duel — Lena central)*, **E08** (the player's own design: the Thérèse night, Wed–Thu — the laundry room, *Story of a Soul*, Lupe's, Shipwreck Cove under a setting moon; scrupulous friends → the crack → one of their best nights → "nice… sweet" → her relief → guilt at the Delgado elevator; the retreat that never takes, #66), **E10** (the
   library at 4 a.m., restraint #1), **E12/E13** (shift by one around the Halloween setpiece: All Souls, "She was my host"),
   **E14** (the postcards, after Hale's dinner), **E16**, **E18** (the Thanksgiving phone call, Dupre Street to Glenwood
   Avenue), **E20** (the courtyard, restraint #2), **E21** (the stairwell until dawn). **Ensemble setpieces as punctuation**:
   E03 (convoy), **E05 (Sully's)**, E08 (Blessing of the Animals: Osei meets Hale), E11 (Big Sur), E12 (Halloween), E14 (Hale's
   dinner party), E17/E18, E22 (Newman Christmas party). Lena central every week regardless.
+- **The S1 rhythm after E08 (player's design):** every big near is followed by a retreat — scrupulous, polite, painful — that
+  fails faster each time (E08 a few days, then about five minutes), into *guilty fun*: their best hours together cost Becca and
+  Wes something neither is told. Jack's guilt is the S1 engine the player feels most; keep it alive whenever Becca is in a scene
+  (her goodness is the knife, never her foolishness). The retreat only takes once it is too late (E19, Becca official) — the
+  timing tragedy, felt from the inside.
 
 ### 24.2 Who holds the line, when (Lena's resolve is set by writers)
 | Season | Jack's resolve tendency | Lena's resolve (writer-set baseline) | Who holds |
@@ -2806,6 +2864,28 @@ women's bathrooms at each end of each floor). Home to 310 freshmen.
   erase them." 🔒 kindness and leash.
 - **Gloria's people-ratings, E07:** Margot, sight unseen, from Jack's description: "Rhubarb. Tart, and nobody can decide if
   it's a fruit." (It's a vegetable. That's the point.)
+- **The paperback, E08: Thérèse of Lisieux, *Story of a Soul*** (ICS Publications, John Clarke's translation — Researcher to confirm
+  the edition and page wording), $3 off the Driftwood cart Monday Sep 28, read Monday and Tuesday nights **in pencil** (his margins
+  are always pencil — the prison taught him erasable). Margins: *Easy for you.* beside the elevator ("too little to climb the rough
+  stairway of perfection"); *NO.*; *She'd have hated Hale.*; *Okay, fine.* beside the trial of faith and the table of sinners; and,
+  beside her two missionary "brothers," *Can a man and a woman be friends? Ask L.* He gives it to Lena at midnight on her feast;
+  she will not let him erase a word ("Don't you dare"); on the duel's HEART path she writes back under *Easy for you.*: *Empty
+  hands. —L.* (the Act of Oblation). **She keeps it.** After E08 Jack carries Hale's Williams again (margins still owed).
+- **The Hopkins, erased.** Before it ships to Trumbull (Thu Oct 1, through Driftwood, with Hale's Housman), every margin comes out
+  with the Pink Pearl — and **Lena erases *Show Lena* herself**, in the laundry room, in the freeze: "There. He can have it." (The
+  small generous devastating gesture of E08; spend no other.) Danny's first letter, which lived inside it in the milk crate, moves
+  into the Williams.
+- **The Delgado laundry room** (basement): eight washers, three working; the dryers buzz like a game-show loss; the piano nobody
+  admits to playing; Priya's laminate: LAUNDRY ROOM HOURS 7 A.M.–11 P.M. (THIS MEANS YOU.). Nonna's card in Jack's basket: *Whites
+  in HOT. Darks in COLD. MEDALS OFF.* (E01) — Lena reads it and nearly laughs, in the freeze, and doesn't.
+- **Lupe's "para los novios."** Lupe gives free horchata to couples; she gives Jack and Lena two; they say "We're friends" at the
+  same time; "Claro."
+- **Thomas the crab** (E08): a *Pagurus* hermit crab on loan from the Marine Lab touch tank, in a Tupperware of seawater, named for
+  the First Way. Back in the tank by noon Saturday.
+- **Gloria's people-ratings, E08:** Becca, sight unseen, from Jack's description: **"Apple. That's the one you bring home to your
+  mother."** Then: "What happened to the pecan?" "She has a boyfriend." "Hm."
+- **Bishop Berkeley** (Hale's deaf greyhound, named for the idealist: *esse est percipi*) on page at last (E08, the Blessing); the
+  frayed leash from Hale's office door.
 
 ---
 
@@ -2845,7 +2925,12 @@ forget, it's a signal). Track her value in `continuity.md` at the end of every e
   (Tue 12:10, Nonna's Mass) → 7 (the wake, late; one plastic cup of Two-Buck Chuck) → **6** (the argument — 🔒 the girl who
   was keeping hers) → **5** (Anders; the roof till dawn; the unfinished sentence; Wes's ticket) → 5 (the seminar on no sleep;
   Friday in the Fishbowl watching Becca collect him) → **6** (Sunday: the 3–0 and Mass) → **ends 6.** Jack enters 9; nothing
-  dangerous (both must be ≤3).
+  dangerous (both must be ≤3). **S1E07 played as planned** (8 → 7 → 6 → 5 → 6; ends 6; Jack ends 9). **S1E08 plan:** 6 at entry → **7** (Tue,
+  the Michaelmas 12:10) → 6 (Wed seminar; the freeze costs her) → 6 (the laundry room) → **5** (midnight: the book, the crack) →
+  **4** (Shipwreck Cove: the two-step if he takes it, the question, the relief she can't hide) → 4 (the elevator; "a terrible thing
+  to be glad about") → 5 (Thu, her feast-day Mass, off-page) → **7** (Sat 3:30 confession — she goes whether or not Jack sees her;
+  set at the Blessing's end) → 6 (Sunday: guilty fun at Sully's or by text; the 9 p.m. Mass) → **ends 6.** Jack enters 9 and loses
+  sleep and a charged night (−2 or so); the danger window stays shut (Lena never ≤3).
 - Pilot baseline: **7** at move-in; **6** after the party (Laney, the Lighthouse — 🔒 the house itself costs her); **8** after
   Mass; **6** after the diner (the magazine); **6** at the tag (Wes, the article she hasn't read).
 
@@ -3029,3 +3114,5 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 - Player structural rule (orchestrator): availability windows (see brief). Showrunner: re-check every planned breakup
   (Wes, Becca, Julian, both magnetic arcs) so that, except during the magnetic/anger periods, no breakup leaves both
   Jack and Lena free at once without a concrete block.
+- Player directive (orchestrator): Lena's magnetic guy is THE ORGANIZER (see brief). Showrunner: replace any prior
+  design; keep the availability-windows rule and the anger/proxy-fight dynamic; he is never a strawman.

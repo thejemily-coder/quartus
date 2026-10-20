@@ -428,3 +428,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Halloween episode (late Oct 2009) wishes:** Jack and Lena in **accidentally matching or complementary costumes**
   (to Becca's and Wes's confusion, or whoever is around); **Theo throws the party**, extravagantly (LA money, a theme,
   chaos); and **All Saints Mass the next morning** (Sunday, Nov 1, 2009), echoing the pilot's party-then-Mass rhythm.
+- **Lena's magnetic guy: THE ORGANIZER (player's choice; supersedes "room builds him").** The player rejected the
+  stock types (bad boy, older intellectual, golden boy): Lena would dislike and distrust them all. Instead: a **secular
+  activist** (labor, immigration, the poor), a Dorothy Day type without the God. He **shares her politics and her
+  fire**, **argues with her brilliantly** (he fights her, which Julian never does), and **lives what she preaches**:
+  he's in the soup line and on the picket line, and that undercuts Lena. **His flaw:** faith is just a means to justice
+  for him, and **he's quietly certain he can talk her out of the rest**. He isn't contemptuous, just patient and sure.
+  The temptation for Lena is real and specific: he makes her feel her convictions are fully *lived*, and he wants her to
+  trade the Church for the cause. **Jack hates him** (and quietly thanks Theo for being openly rude). He gives Jack and
+  Lena's politics fights (Jack right-leaning, Lena Catholic Worker) a live wire, and the proxy fights should crackle.
+  Never a strawman: he should be right about a lot, and his good work is real.
