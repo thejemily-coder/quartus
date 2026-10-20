@@ -348,4 +348,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   are finally together: their first time (whenever and however the player's choices make it happen) is with each
   other. Kissing, making out, real physical temptation and near-misses with others are allowed and can be charged; the
   line holds short of sex, and the resolve system should make it cost something. No backstory sex either: neither has
-  slept with anyone before the series (any past-relationship wound must not involve consensual sex they chose).
+  slept with anyone before the series. **No sexual assault or rape in either of their backgrounds** (or happening to
+  them during the series). Other serious wounds are fine: family rupture, grief, violence, addiction in the family,
+  crime, illness, emotional or other non-sexual harm from a past relationship, faith crises, and so on.

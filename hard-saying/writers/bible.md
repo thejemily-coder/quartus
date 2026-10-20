@@ -2486,3 +2486,6 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 - Player HARD RULE (orchestrator): neither Jack nor Lena ever sleeps with anyone else, before or during the series (see
   brief). Showrunner: audit the bible (secrets, wounds, Wes, Julian, both magnetic arcs, the tryer, every season map) and
   revise anything that contradicts this, keeping each arc's power through near-misses and restraint instead.
+- Player HARD RULE (orchestrator): no sexual assault or rape in Jack's or Lena's backgrounds or happening to them
+  (see brief). Showrunner: audit their secrets/wounds and replace any such element with another serious non-sexual wound
+  of equal weight, keeping its links to the mystery and arcs intact.
