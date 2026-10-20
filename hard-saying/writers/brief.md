@@ -375,3 +375,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Breaks.** Follow Jack home for both: a **Youngstown Christmas** (winter break, between Seasons 1 and 2; one or more
   episodes, or the opening of Season 2) and the **summer season** at home. Lena reaches him by phone, letters, Facebook,
   maybe a visit.
+- **After S1E07 (player feedback).** "Such a good episode!" Lena the standout. Becca was sweet and **the player felt
+  guilty the entire time through Jack** (exactly right: keep that guilt alive while Becca's in the picture). Loved the
+  twist of heartache at the end with the paper, and **the little knife of Lena telling Jack to eat the maple bar Becca
+  saved for him** (small, generous, devastating gestures from Lena land hard; use them sparingly).
