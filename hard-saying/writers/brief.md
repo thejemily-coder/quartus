@@ -343,3 +343,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   the player (and to Theo, Laney and Margot), but the real reason is **never spoken** aloud by either of them during
   that period. These can play as argument duels where "winning" the stated argument is the wrong thing to win.
   Payoff: later (likely after they're together), one of them finally names what those fights were really about.
+- **HARD RULE: neither Jack nor Lena ever sleeps with anyone else.** Not with Wes, Julian, the tryer, the magnetic girl,
+  the magnetic guy, or anyone. Sleeping with someone else would undermine the entire premarital-temptation arc when they
+  are finally together: their first time (whenever and however the player's choices make it happen) is with each
+  other. Kissing, making out, real physical temptation and near-misses with others are allowed and can be charged; the
+  line holds short of sex, and the resolve system should make it cost something. No backstory sex either: neither has
+  slept with anyone before the series (any past-relationship wound must not involve consensual sex they chose).

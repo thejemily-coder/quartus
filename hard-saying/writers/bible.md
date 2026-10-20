@@ -2483,3 +2483,6 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
   any existing bible plans for the temptation girl and the tryer with that design: the tryer is a sweet, shallow cradle
   Catholic from Newman; the magnetic girl is from Theo's LA orbit. Keep the first one's arrival in the Wes-winding-down
   window (timing tragedy). Seed both early, invisibly if possible.
+- Player HARD RULE (orchestrator): neither Jack nor Lena ever sleeps with anyone else, before or during the series (see
+  brief). Showrunner: audit the bible (secrets, wounds, Wes, Julian, both magnetic arcs, the tryer, every season map) and
+  revise anything that contradicts this, keeping each arc's power through near-misses and restraint instead.
