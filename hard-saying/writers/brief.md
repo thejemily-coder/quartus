@@ -844,3 +844,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     returning is part of the "true and hard" faith.
   - Lena knows or suspects enough to be furious (through Jack's eyes only), and later this becomes part of Jack's
     honesty with her.
+- **Skye's Facebook (player).** Skye isn't a modest dresser and happily shares photos of her and Jack on Facebook.
+  **Jack gets tagged in something that sets tongues wagging** (a beach or pool shot, a hotel-balcony morning, Jack
+  shirtless with Skye in a bikini wrapped around him, an LA party; suggestive, not explicit). The ripple runs through
+  everyone: Laney screenshots it in disgust; Theo "likes" it politely; Margot sends a sociological comment; Kevin winces;
+  **Lena** sees it (off Jack's screen; he catches the aftermath); **the Newman crowd** notices (Tyler, Kenzie, Mrs. Fitch
+  via a grandchild); **the Costigans** (Gina first, then Maria, then Nonna via rosary); maybe Fr. Osei raises an
+  eyebrow at the next confession. Jack untags himself too late. Period note: Facebook tagging and the "untag" option
+  exist in 2009–10; the photo spreads via the News Feed.
