@@ -561,3 +561,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   her arms around his waist on a parade route, her head on his shoulder in the car, hands found in a crowd). Theo,
   Laney, Margot and Kevin notice everything. This builds to the **extremely-near-miss kiss**, followed by the planned
   full, honest conversation without letting go, and Lena pulling away.
+- **Distance around their relationships (completes "the hurt chain").** Otherwise it isn't believable that they
+  don't get together. While each is seriously with someone (Becca, Julian, the magnetic girl), **they spend
+  noticeably less one-on-one time together**: the partners take real time; Jack and Lena keep some honorable
+  boundaries (fewer all-nighters, fewer reckless nights alone; group settings more often); and the unspoken hurt adds
+  coolness and missed connections (unreturned calls, plans that fall through, seeing each other across rooms). When
+  they *are* together, the closeness is still instant and real (no fake estrangement), but it's rarer and more
+  charged, and it costs something. The every-other-episode two-hander continues but can become shorter, interrupted,
+  or circumstantial during these stretches (a stranded night, a shared crisis), not engineered dates. New Orleans
+  breaks the dam precisely because it's the first long stretch together in months.
