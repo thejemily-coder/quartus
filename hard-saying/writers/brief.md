@@ -606,3 +606,20 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   It's scary and wonderful. **It's not perfect agreement by any stretch**, but **they agree on what matters**. Afterward
   **Jack just holds her** while she's relieved but still shaking. (A centerpiece two-hander; fit to their voices.)
   The comic Ephesians-avoidance running bit pays off here.
+- **THE MAGNETIC GIRL: player co-design (binding; her arrival timing stays per the re-plan).**
+  - **World:** a **working actress**, about nineteen, already working (a recurring role on a cable show), taking time
+    at Marisol to "be normal"; famous enough to be recognized at the Anchor. From Theo's LA orbit.
+  - **Look:** **sun-gold LA**: long sun-streaked hair, tan, freckles, cutoffs, effortless. California made flesh
+    (nothing like Lena).
+  - **Her pull on Jack:** **she dares him** (the reckless Costigan comes alive), **she out-argues him** (not philosophy:
+    people; she reads rooms the way he reads books), and **she sees him**. That means a lot, but it isn't Lena's kind
+    of seeing. Lena shares the faith, so she almost always knows *what* she's seeing; the magnetic girl sees Jack but,
+    missing that fundamental piece of him, **doesn't always interpret it right**.
+  - **Faith:** she can understand his prayer life to an extent (she likens it to yoga and meditation); she can follow
+    his view of God as philosophy, which genuinely attracts her; but **she never truly gets it**. She gets the logic
+    on paper, never the thing itself. That's why they never click at the deepest level.
+  - **Physical:** **Jack goes farther with her than with anyone ever** (frank, charged, on the page within the brief's
+    literary standard), **but he never sleeps with her** (HARD RULE), and **it drives her crazy**; **at times she
+    legitimately tries to seduce him**. This is the real test of his resolve and restraint (the resolve system must make
+    it cost). Lena knows or suspects enough to be furious. Later, with Lena, it becomes part of Jack's own guilt and
+    honesty.
