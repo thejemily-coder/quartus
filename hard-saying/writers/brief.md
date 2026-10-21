@@ -706,3 +706,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     Lena**. **Staging (player): the next day in the Delgado lounge (or similar), with Jack present. Laney is on
     Facebook on her laptop, sees the photo, and gags theatrically; Lena tries to hide the laugh and can't.** Jack sees
     all of it.
+- **The Costigans on Skye (player directive).** They never meet her (no chance between January and the NOLA trip), but
+  when Jack's family finds out about her, **especially once they see her Facebook and who she is** (the TV show, the
+  photos), **they're all the way out on Skye**: Maria, Frank, Nonna, Gina, each in their own register (Nonna by rosary
+  and dark Italian, Gina mortified and thrilled about the famous part, Maria and Frank worried about "that kind of
+  girl," and all of them asking about Lena). **Except Danny, who thinks it's hilarious and that Jack must have tricked
+  her somehow.** (Danny is in prison with no Facebook: he hears about it on the phone or in letters, maybe from Gina,
+  who describes the photos in detail.)
