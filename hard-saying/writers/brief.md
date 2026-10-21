@@ -528,3 +528,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Magnetic girl specifics:** room builds her within the player's design.
   - **Physical arc pacing:** slow erosion, as originally designed.
 - **After S1E11 (player feedback).** "Lena fantastic but still bittersweet. Laney continues to crack me up."
+- **Becca's breakup reaction:** room decides.
+- **NOLA trip crew (Feb 2010): Jack, Lena, Theo, Laney, Margot, Kevin. The dates (magnetic girl, Julian) do NOT go.**
+  The trip's key beat (player's design): Jack and Lena are all over each other and get **within a hair's breadth of
+  kissing**. They stop and, **without letting go of each other**, have their **full, honest conversation and admission**
+  until they agree on what comes next (end the other relationships honestly, not start as anyone's "other"). **Lena is
+  the one who finally pulls away.** No kiss on the trip: the first kiss waits for after they're both free (the room
+  decides exactly when: the "do it properly" asking or a date after).
+- **Wedding: New Orleans, summer 2012**: her parish, a second line out of the church, the Broussards in full force, the
+  Costigans out of their depth.
+- **The proposal (junior year; player's design):** Jack gets Lena into an argument while they're walking; she's too
+  invested to notice where they're going. **They arrive at the Lighthouse back porch** (where they first met), and she
+  realizes it just as he **goes down on one knee and proposes as his closing argument**. (It's an argument duel that
+  ends in a proposal.)
