@@ -1,0 +1,2469 @@
+{
+ "id": "S1E13",
+ "season": 1,
+ "episode": 13,
+ "showTitle": "The Hard Saying",
+ "title": "The Book of the Dead",
+ "dates": "Sunday, November 1 – Tuesday, November 3, 2009",
+ "logline": "On All Souls the dead get their names written down, the Saints go seven and oh, and a phone call to New Orleans keeps two people on a stairwell until it gets light.",
+ "previously": [
+  {
+   "text": "On the beach at Campus Point, Wes showed you a ring on his phone. “Don’t say nothing to her.” He asked you to take care of her. You drank instead of answering — and you told her so.",
+   "if": "knows_wes_ring && e10_cor_truth"
+  },
+  {
+   "text": "On the porch above Lucia: “Not to be the one who wrecks anything.” “Me neither.”",
+   "if": "e11_decided==\"wreck\""
+  },
+  {
+   "text": "When the party chanted American Gothic, you brought Becca up the stairs yourself. “I’m with Maria.”",
+   "if": "e12_stairs==\"becca\""
+  },
+  {
+   "text": "At the Point, Theo at the wall: “Don’t. Okay? Just — not there.” Then Lena asked if anybody was up there. You said just the cross.",
+   "if": "saw_theo_wall && e12_told==\"cross\""
+  },
+  {
+   "text": "Under a streetlight on Seacliff: “If God has to push me off a cliff to save me, I don’t want it that way. I want to be *asked*.”"
+  },
+  {
+   "text": "In the last minute of the extra hour you took off the hat. She put it back on your head. “It’s two o’clock.”",
+   "if": "e12_hat==\"off\""
+  }
+ ],
+ "cast": [
+  {
+   "id": "lena",
+   "name": "Lena Broussard",
+   "role": "The girl on the porch",
+   "tracked": true
+  },
+  {
+   "id": "theo",
+   "name": "Theo Vance",
+   "role": "Roommate, Room 412",
+   "tracked": true
+  },
+  {
+   "id": "laney",
+   "name": "Laney Price",
+   "role": "Lena’s roommate",
+   "tracked": true
+  },
+  {
+   "id": "margot",
+   "name": "Margot Lindqvist",
+   "role": "Third floor, Delgado",
+   "tracked": true
+  },
+  {
+   "id": "kevin",
+   "name": "Kevin Tran",
+   "role": "Down the hall, Room 420",
+   "tracked": true
+  },
+  {
+   "id": "osei",
+   "name": "Fr. Gabriel Osei",
+   "role": "Newman Center chaplain",
+   "tracked": true
+  },
+  {
+   "id": "hale",
+   "name": "Prof. Adrian Hale",
+   "role": "Philosophy, Marisol",
+   "tracked": true
+  },
+  {
+   "id": "julian",
+   "name": "Julian Park-Ellis",
+   "role": "Plays Bastille on Thursdays",
+   "tracked": true
+  },
+  {
+   "id": "evan",
+   "name": "Evan Marsh",
+   "role": "TA, PHIL 1, Thursday section",
+   "tracked": true
+  },
+  {
+   "id": "becca",
+   "name": "Becca Lindell",
+   "role": "Newman regular",
+   "tracked": true
+  },
+  {
+   "id": "frank",
+   "name": "Frank Costigan",
+   "role": "Jack’s father",
+   "tracked": false
+  },
+  {
+   "id": "maria",
+   "name": "Maria Costigan",
+   "role": "Jack’s mother",
+   "tracked": false
+  },
+  {
+   "id": "nonna",
+   "name": "Carmela Rinaldi",
+   "role": "Jack’s grandmother",
+   "tracked": false
+  },
+  {
+   "id": "gina",
+   "name": "Gina Costigan",
+   "role": "Jack’s sister",
+   "tracked": false
+  },
+  {
+   "id": "rosie",
+   "name": "Rosie Costigan",
+   "role": "Jack’s sister",
+   "tracked": false
+  },
+  {
+   "id": "priya",
+   "name": "Priya Raman",
+   "role": "4th-floor RA",
+   "tracked": false
+  },
+  {
+   "id": "rafi",
+   "name": "Rafi Ochoa",
+   "role": "Second floor",
+   "tracked": false
+  },
+  {
+   "id": "doug",
+   "name": "Doug Pruitt",
+   "role": "Room 420",
+   "tracked": false
+  },
+  {
+   "id": "joey",
+   "name": "Joey Abruzzo",
+   "role": "Newman regular",
+   "tracked": false
+  },
+  {
+   "id": "tyler",
+   "name": "Tyler Brandt",
+   "role": "Newman missionary",
+   "tracked": false
+  },
+  {
+   "id": "fitch",
+   "name": "Dolores Fitch",
+   "role": "Newman secretary",
+   "tracked": false
+  },
+  {
+   "id": "sloane",
+   "name": "Sloane Kittredge",
+   "role": "Pi Lambda Chi",
+   "tracked": false
+  },
+  {
+   "id": "gloria",
+   "name": "Gloria Mendes",
+   "role": "The Anchor, nights",
+   "tracked": false
+  },
+  {
+   "id": "rudy",
+   "name": "Rudy Salcedo",
+   "role": "Line cook, the Anchor",
+   "tracked": false
+  },
+  {
+   "id": "caleb",
+   "name": "Caleb Hargrove",
+   "role": "PHIL 9H",
+   "tracked": false
+  },
+  {
+   "id": "yusuf",
+   "name": "Yusuf Noorzai",
+   "role": "PHIL 9H",
+   "tracked": false
+  },
+  {
+   "id": "wes",
+   "name": "Wes Arceneaux",
+   "role": "Lena’s boyfriend, Tulane",
+   "tracked": true
+  },
+  {
+   "id": "tess",
+   "name": "Tess Fontenot",
+   "role": "Lena’s sister",
+   "tracked": false
+  },
+  {
+   "id": "richard",
+   "name": "Richard Vance",
+   "role": "Theo’s father",
+   "tracked": false
+  },
+  {
+   "id": "brynn",
+   "name": "Brynn Vance",
+   "role": "Richard’s wife",
+   "tracked": false
+  },
+  {
+   "id": "caroline",
+   "name": "Caroline Ashby Vance",
+   "role": "Theo’s mother",
+   "tracked": false
+  },
+  {
+   "id": "poppy",
+   "name": "Poppy Vance",
+   "role": "Theo’s sister",
+   "tracked": false
+  },
+  {
+   "id": "danny",
+   "name": "Danny Costigan",
+   "role": "Jack’s brother",
+   "tracked": false
+  },
+  {
+   "id": "remy",
+   "name": "Remy Broussard",
+   "role": "Lena’s brother",
+   "tracked": false
+  },
+  {
+   "id": "nora",
+   "name": "Nora Calloway",
+   "role": "Name on a brass plate",
+   "tracked": false
+  },
+  {
+   "id": "dale",
+   "name": "Dale Wisniewski",
+   "role": "A Lions fan at Sully’s",
+   "tracked": false
+  },
+  {
+   "id": "peter",
+   "name": "Peter Haddad",
+   "role": "Newman president",
+   "tracked": false
+  },
+  {
+   "id": "kenzie",
+   "name": "Kenzie Rourke",
+   "role": "Newman cantor",
+   "tracked": false
+  },
+  {
+   "id": "bridget",
+   "name": "Bridget McNulty",
+   "role": "Newman missionary",
+   "tracked": false
+  },
+  {
+   "id": "ray",
+   "name": "Ray Ochoa",
+   "role": "Rafi’s father",
+   "tracked": false
+  },
+  {
+   "id": "lupe",
+   "name": "Lupe",
+   "role": "Taco truck, Seacliff Road",
+   "tracked": false
+  },
+  {
+   "id": "merle",
+   "name": "Merle",
+   "role": "A fisherman at the Anchor counter",
+   "tracked": false
+  },
+  {
+   "id": "dulce",
+   "name": "Dulce",
+   "role": "Harbor Inn housekeeping",
+   "tracked": false
+  },
+  {
+   "id": "rosario",
+   "name": "Rosario",
+   "role": "Harbor Inn housekeeping",
+   "tracked": false
+  },
+  {
+   "id": "kaylee",
+   "name": "Kaylee Whitmore",
+   "role": "Laney’s friend, Dallas",
+   "tracked": false
+  },
+  {
+   "id": "tony",
+   "name": "Tony Broussard",
+   "role": "Lena’s father, by phone",
+   "tracked": false
+  },
+  {
+   "id": "verna",
+   "name": "Verna",
+   "role": "Motel keeper, Lucia",
+   "tracked": false
+  },
+  {
+   "id": "bede",
+   "name": "Father Bede",
+   "role": "Camaldolese monk",
+   "tracked": false
+  },
+  {
+   "id": "luc",
+   "name": "Luc Broussard",
+   "role": "Lena’s brother",
+   "tracked": false
+  },
+  {
+   "id": "josie",
+   "name": "Josie Broussard",
+   "role": "Lena’s sister",
+   "tracked": false
+  },
+  {
+   "id": "brooks",
+   "name": "Brooks Callahan",
+   "role": "Sigma Rho",
+   "tracked": false
+  },
+  {
+   "id": "planner",
+   "name": "Delphine",
+   "role": "Party planner, Silver Lake",
+   "tracked": false
+  },
+  {
+   "id": "sol",
+   "name": "Soledad",
+   "role": "A girl with an old camera",
+   "tracked": false
+  },
+  {
+   "id": "odile",
+   "name": "Odile Broussard",
+   "role": "Lena’s Mémère, Breaux Bridge",
+   "tracked": false
+  }
+ ],
+ "duels": {
+  "souls": {
+   "title": "The Souls of the Just",
+   "opponent": "lena",
+   "topic": "Whether the dead can be wronged"
+  }
+ },
+ "start": "s01",
+ "endCard": {
+  "tag": "“He went somewhere I can’t follow, and he won’t come back where I am.”",
+  "nextTime": [
+   "“Can I tell her she’s right?”",
+   "A dinner party at the edge of a cliff.",
+   "Two postcards. One handwriting.",
+   "Come where nobody knows his name."
+  ]
+ },
+ "scenes": {
+  "s01": {
+   "slug": "SUNDAY · 4:40 PM · DELGADO HALL, THE KITCHEN OFF THE FISHBOWL",
+   "music": "Allen Toussaint — “Southern Nights”",
+   "body": [
+    "At twenty to five the window over the sink has already gone blue, a deep early blue with the Lagoon going out under it, because the clocks went back last night and the afternoon quits now an hour before anybody agreed to it. The tube light over the stove hums. The Newman stockpot sits on the big burner with its dent turned to the wall, and Lena’s iPod lies in a Delgado coffee mug on the counter, which is how she gets a speaker out of nothing, so that Allen Toussaint comes up out of the mug a little tinny and a long way from home.",
+    {
+     "type": "doc",
+     "title": "Above the stove (laminated)",
+     "text": "THIS KITCHEN IS NOT A RESTAURANT.\n—P. RAMAN, RA (401)\n\nOn a sticky note under it, in Lena’s capitals: IT IS A SOUP KITCHEN, PRIYA. SEE MATTHEW 25."
+    },
+    {
+     "if": "knows_harbor_soup",
+     "text": "It’s chicken and sausage again, thirty bowls for the Harbor Inn night shift: Dulce, Rosario, whoever else is on tonight.",
+     "else": "It’s chicken and sausage again, thirty bowls for somebody she hasn’t named."
+    },
+    "Lena is at the stove in the oatmeal cardigan with the sleeves shoved past her elbows, and Jack is at the cutting board she assigned him, with three yellow onions and the knife she told him was the good one. They have been at it half an hour and talked about nothing that matters: Osei’s two-sentence homily and the boy in the vampire cape who said *Dang* out loud; the Grove, which neither of them has gotten over; Laney, asleep since noon on top of her covers in the mitre. “I put a blanket on the Pope,” Lena says. “She told me she forgives me.”",
+    "Her LG lies face up beside his cutting board. It has buzzed twice since he came down, and twice she has told it “Later” without looking, and gone on stirring.",
+    "Theo comes in at a quarter to five in the navy silk robe, belted, barefoot, his hair arranged by a pillow into something a stylist would charge for. He has the gold tin of Illy from his desk under one arm. He takes a Newman saucepan off the drying rack, fills it at the tap, and sets it on the burner beside Lena’s pot, where it has no business being, and when the water boils he tips in two spoonfuls of espresso and stirs it with the handle of a fork. This is an act of protest, he explains, against the Mr. Coffee by the microwave, whose carafe has a ring baked into it like a tree’s. “That machine has been making the same pot since the first Bush. I won’t be party to it.”",
+    "He strains it through a paper towel into a mug. Then he turns around with the mug in both hands and the steam going up past his face, rested, golden, in a better mood than anybody has a right to at a quarter to five on a Sunday.",
+    "“Somebody took off my shoes in the night,” he says. “Both of them. Unlaced, Costigan, and set side by side on yesterday’s *Tide* like slippers outside a temple. I’ve given it a great deal of thought since about four o’clock, and I’ve decided it was an angel.” He sips. “It’s their busy weekend. All Saints. It’s their Super Bowl.”",
+    {
+     "if": "e12_wall==\"path\"",
+     "text": "Jack, at the cutting board, knows how far Theo came away from the wall last night on his own two feet, and the robe is a good robe, and he lets it be the robe."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“The angel says you’re welcome.”",
+     "tag": "Wit",
+     "set": {
+      "e13_angel": "welcome",
+      "rel.theo.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Theo regards him over the rim, gravely, and with no change of expression takes a clean Delgado mug down off the hook, the one with the chipped handle and the sea lion on it, and pours half his saucepan into it.",
+      "“The angel may have an espresso,” he says, and presents it across the counter with both hands, the way the Magi must have done it if one of them had been from Brentwood."
+     ],
+     "goto": "s01a"
+    },
+    {
+     "text": "“It was me. The laces were wet.”",
+     "tag": "Sincerity",
+     "set": {
+      "e13_angel": "me",
+      "rel.theo.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Theo looks at him over the mug for exactly as long as it takes to decide not to.",
+      "“Then you’re the angel, Costigan,” he says. “It’s a step down for you.” And he drinks his coffee, and asks Lena whether that’s andouille, and Lena asks him what else it would be."
+     ],
+     "goto": "s01a"
+    },
+    {
+     "text": "Let him have the angel.",
+     "tag": "Control",
+     "set": {
+      "e13_angel": "sacrament",
+      "trait.control": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "Jack quarters an onion and says nothing, and Theo, who has never in his life let a silence go to waste, turns to the stove and bows over Lena’s pot with the mug held out of harm’s way.",
+      "“Miss Broussard, your soup is a sacrament.”",
+      "“It’s chicken and sausage.”",
+      "“So was the Last Supper, probably.”",
+      "“It was *not*.” She points the spoon at him and laughs, out loud, with her head down over the pot, and Theo looks as pleased with himself as a man can look in a bathrobe."
+     ],
+     "goto": "s01a"
+    },
+    {
+     "text": "“Theo. About last night —”",
+     "tag": "Candor",
+     "set": {
+      "e13_angel": "wall",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Theo is rinsing his saucepan, and he doesn’t look up from it, and he doesn’t stop. “Nothing that happened when I was eighteen is admissible,” he says pleasantly. “I’m nineteen on Tuesday. I’m starting fresh. I’ve already told my publicist.”",
+      "From the stove, without turning around, Lena says, “Then Laney needs the same deal. There’s a shepherd’s crook in our shower, and I didn’t ask.”",
+      "“Granted,” Theo says. “Retroactive to the Council of Trent.” He sets the saucepan in the rack to drip, and that is the end of last night."
+     ],
+     "goto": "s01a"
+    }
+   ]
+  },
+  "s01a": {
+   "slug": "SUNDAY · 4:52 PM · DELGADO HALL, THE KITCHEN OFF THE FISHBOWL",
+   "body": [
+    "At 4:52 the LG buzzes a third time on the Formica, and the outer screen says JOSIE. Josie is the little sister, thirteen, one of the twins. Lena wipes her hands down the front of the cardigan and opens it.",
+    "It’s a long text. She scrolls it with her thumb. Then there’s another, and she reads that, and then a third, and she reads that too, standing at the stove with the spoon still in the pot and the steam coming up past her. Then she closes the phone and lays it face down on the counter and leaves her hand flat on the back of it, as if it might buzz again and she would rather feel it first. She stands like that. She doesn’t say who it was.",
+    "Theo looks up from his mug, and looks at her hand on the phone, and with great tact takes his saucepan, his tin and his coffee out into the Fishbowl, where somebody has the Yankees on.",
+    "“Salt it for me,” Lena says.",
+    "Jack finds the round blue box behind the oil and salts it, and she doesn’t taste it after him. She watches the pot.",
+    "“It’s All Saints,” she tells the soup. “They do the tombs.”",
+    {
+     "if": "knows_wes_ring",
+     "text": "There’s no reason for it to go where it goes. It goes anyway: a small stone lit from underneath by a phone’s screen, held out to him at three in the morning on a lifeguard tower’s ramp, the band worn thin on an old woman’s hand. Jack puts the knife through the last onion."
+    },
+    "Lena takes her hand off the phone and puts the phone in her cardigan pocket. She says she’ll take the soup down to the Harbor Inn herself tonight. He says it’s thirty bowls; he’ll carry it.",
+    "“I want the bus,” she says.",
+    "She puts the lid on the stockpot and turns the flame down to the lowest blue ring it has. In the coffee mug by the sink the song ends, and the iPod, which she left on repeat, starts it again from the top."
+   ],
+   "next": "s02"
+  },
+  "s02": {
+   "slug": "MONDAY · 9:10 AM · DELGADO HALL, THE LOBBY MAILBOXES",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "All Souls comes up clear and cold, cold for Marisol, which means the bottom corners of the lobby glass are fogged white from the night and the girl at the front desk is wearing a scarf indoors over the mail she’s sorting. Outside, the palms stand dead still in a sky with nothing in it, scrubbed, the hard bright blue of the first real cold. Jack came down in a flannel and is sorry.",
+    {
+     "if": "e12_gina==\"proud\"",
+     "text": "He called Gina after Mass yesterday, the way he said he would. She said proud of you too, somehow in lowercase, and hung up fast."
+    },
+    "His RAZR has a text from Gina, waiting since before nine, sent from her lunch at Ursuline.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "ashley sat next to me in religion. didnt say anything. kelsey either. weird",
+     "time": "8:52 AM"
+    },
+    "His box has a Newman flyer for the Book of the Dead (WRITE THE NAMES OF YOUR BELOVED DEAD · ALL NOVEMBER · THE MARIAN SHRINE), a card for JOHN COSTIGAN offering him credit, and the envelope: block capitals, DANIEL F. COSTIGAN and the number after it, the institution’s return address, a Leavittsburg postmark from Friday. He opens it at the mailboxes.",
+    {
+     "type": "doc",
+     "title": "TRUMBULL CORRECTIONAL INSTITUTION",
+     "text": "PROFESSOR,\nThursday night for Halloween a C.O. did count on our range in a rubber gorilla mask. Nobody laughed. Dead quiet the whole tier like church. Then Reggie lost it and then everybody did, the gorilla too, and he didn’t write up nobody, so that’s the best Halloween I had since I was twelve and you were a Ninja Turtle. The wrong one.\nBrowns 1-7. Pop says they’re gonna fire somebody. They should fire the Browns.\nMa says Idaho writes her back. On stationery with cows on it.\nMa says every church got a book in November. Ma’s getting Nonno a Mass at St. Brigid’s. Put him in that book they got at your church. I can’t get to one. I’d put mine in but I don’t got anybody dead. I got the other kind.\nPush-ups 150.\n—D."
+    },
+    "Jack’s right hand closes on the letter and creases it down the middle. He stands at the mailboxes with it.",
+    {
+     "if": "e9_hey==\"given\"",
+     "text": "Up the margin, sideways, in pencil, squeezed in after the D, the way Danny adds things once he’s signed: ABOUT TIME. WHAT’D SHE SAY BACK."
+    },
+    "The RAZR buzzes in his other hand.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "they fired the gm. dad laughed. first time since june",
+     "time": "9:14 AM"
+    },
+    "He can see it from here: the garage on Glenwood, the space heater ticking, the radio on WKBN, and Frank Costigan on the stool by the Stroh’s fridge with his head back, laughing at the Cleveland Browns the way he used to laugh at everything before June.",
+    "It’s too cold for the flannel. He goes back up four flights for the Carhartt, and Danny’s letter goes into the inside pocket, the one with the button, folded twice. On the way back down he passes the fourth-floor lounge, where the whiteboard has been updated over the weekend in Margot’s square capitals.",
+    {
+     "type": "doc",
+     "title": "The 4th-floor whiteboard",
+     "text": "USEFUL IDIOTS FOR CHRISTIAN NATIONALISM\nCOSTIGAN | BROUSSARD\n…\nHALLOWEEN — AMERICAN GOTHIC (UNPLANNED) · BOTH\nTOTAL — C 7 · B 6"
+    },
+    "The old total has been wiped out with a thumb. In the corner somebody has drawn a pitchfork in pink marker, tines up, with a bow on it. Pink narrows it to one person on four floors."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "danny",
+     "title": "Danny Costigan",
+     "text": "My brother. Trumbull Correctional. Calls me Professor. Ma brought him the good socks. *Brideshead* went to him through Driftwood, margins erased; the C.O. reading it first says it’s about a house. The ocean letter got there; Reggie, from Portsmouth, decided on his own the Pacific smells like money and fish. Lena knows. She asked his name. On the bluff bench she said hi to him and told him she’s going to be defense, and he laughed like he used to. The system cut him off at ‘tell Gina — .’ He wrote the rest down: tell Gina it ain’t hers to carry. He’s got it. On Michaelmas he wrote: Tell Lena hey. I like knowing it. You sound happy out there. Don’t feel bad about it. That’s an order. Lena says hey back. She said it herself. The Saints are four and oh, and she expects him to know that. Third letter, after Columbus Day: the Hopkins got there. He read Ma “Felix Randal” on the phone and she cried; he says he’s telling me so I know he read it, not so I feel bad. The Housman made Reggie cry. Ma told him about Becca. He wants to know if I told Lena hey, or does he have to come out here. I did. He doesn’t know yet. Push-ups: 140. Fourth letter, All Souls: Halloween at Trumbull, a guard in a rubber mask. Ma’s getting Nonno a Mass at St. Brigid’s; he wants me to put Nonno in the book here. He says he’d put his in, but he doesn’t have anybody dead. He has the other kind."
+    },
+    {
+     "kind": "person",
+     "id": "gina",
+     "title": "Gina",
+     "text": "My sister. Fifteen, a sophomore at Ursuline. Texts in lowercase like punctuation costs extra. A girl in religion class called her the class expert on visiting the imprisoned. Dad turned the radio back on. Nonna told the altar society I went to confession. Said Danny’s name back to the girl. The girl looked away first. Then laughed with Kelsey anyway. Gina wants the first part on the record. She wanted to know if the nun was real. Now they’re Facebook friends, and Lena signs her wall posts like letters. Gina found the boyfriend in about four minutes. Didn’t tell Nonna. Ashley Vrabel is going to Halloween as a prisoner. Orange jumpsuit. A tribute, she says. Lena read it once and gave me a line for her. Halloween: went as a nun, obviously. Ashley wore the jumpsuit. Gina said it — visit, not dress up as — and Kelsey laughed at Ashley for once. Ashley says she’s dead Monday. Ashley sat next to her in religion and didn’t say anything. Kelsey either. They fired the GM. Dad laughed. First time since June."
+    },
+    {
+     "kind": "note",
+     "id": "whiteboard",
+     "title": "The whiteboard",
+     "text": "Margot’s, by annexation: USEFUL IDIOTS FOR CHRISTIAN NATIONALISM, COSTIGAN | BROUSSARD. Sully’s made the board: liturgical football, idolatry, my outfit. Margot wasn’t even there when I read it. She didn’t need to be. Now the chastity talk is up there too: both of us, voluntarily. Kenzie Rourke got her own line. Margot thinks she might not be an idiot. Category pending. C 6, B 5. The morning after the wake, under the total: TUESDAY — NO SCORE. (BEREAVEMENT.) October 9th, top of the board: LEIF ERIKSON DAY (OBSERVED). Columbus: see attached. Then: FERRER TOWER · THU 5:00 A.M. · “WHEN THE SAINTS GO MARCHING IN.” Suspects: a Catholic; a different Catholic. Laney added the Holy Ghost. Margot wrote it up for the Tide and didn’t name anybody. Halloween: AMERICAN GOTHIC (UNPLANNED). Both. C 7, B 6. Somebody drew a pitchfork."
+    }
+   ],
+   "next": "s03"
+  },
+  "s03": {
+   "slug": "MONDAY · 1:00 PM · HOLLIS HALL, ROOM 302",
+   "duel": "souls",
+   "set": {
+    "duel.souls.lena": 1
+   },
+   "body": [
+    "The clock over the door of Hollis 302 has a tick you can only hear when twelve freshmen stop talking, and at one o’clock they stop, because Hale is already in his chair. It’s the fourth time this term. The seminar has stopped remarking on it; Yusuf just takes his seat and uncaps his pen, and Caleb, coming in last, looks at the clock, and at Hale, and sits down slowly, suspicious of the whole arrangement. Hale is sober and freshly shaved and enjoying himself before anybody has said a word, and it isn’t yet clear at whose expense. The linen jacket is on the back of his chair.",
+    {
+     "type": "doc",
+     "title": "PHIL 9H — the whiteboard",
+     "text": "ALL SOULS\n“DEATH IS NOTHING TO US” (EPICURUS, *LETTER TO MENOECEUS*)\nNAGEL, “DEATH” (1970)\nARISTOTLE, *NE* I.10–11"
+    },
+    "“The Church prays for the dead today,” Hale says. “The question for the afternoon is whether there is anybody there to receive it.” He turns the marker end over end. “Mr. Costigan won the last one by arguing for leaving. Today he’ll argue there’s nobody left to leave. Epicurus, Mr. Costigan. The dead are beyond harm, and so beyond help. Miss Broussard: that they can be wronged, and therefore helped. You both know my rule.” The thing you least believe. Ten minutes a side, the floor may heckle, and it’s official.",
+    "Jack goes first and gives them Epicurus, because he was told to. The letter to Menoeceus, in the old Hicks translation out of the library Loeb: *Death, therefore, the most awful of evils, is nothing to us, seeing that, when we are, death is not come, and, when death is come, we are not.* Good and evil live in sensation, and death is the end of sensation, so a dead man has nothing left to be harmed with and nobody left to be harmed. Lucretius adds the mirror: nobody mourns the ages before he was born. Where death is, I am not. The flowers and the names and the whole November apparatus are consolations for the people left standing, and that’s no small thing, but they belong to the living. The dead are out of reach of all of it, the bad and the good.",
+    "It’s a clean case. He’s pleased with it for about four seconds.",
+    "Lena has typed notes. She never has notes. She has pushed her sleeves to the elbow before he’s finished his first sentence, and when she starts she starts fast, sharper than a seminar needs, every citation already open at her elbow.",
+    "“Aristotle won’t say it,” she says. “Book one. He asks whether what happens to a man’s children after he’s dead can touch him, and he wants to say no, and he can’t make himself. In Ross’s English, it would be *a very unfriendly doctrine*.” A page turns. “And Nagel. A man betrayed behind his back, ridiculed by the friends he trusted, despised by people who smile at him to his face. He never finds out. He dies happy. He was still harmed, and every one of us at this table knows it.” She looks down the oak at Jack. “A harm doesn’t need a witness, Mr. Costigan. It needs an interest. And interests outlive the people who had them.”"
+   ],
+   "choices": [
+    {
+     "text": "“Where death is, I am not. A harm needs somebody to land on. Name him.”",
+     "tag": "Press",
+     "set": {
+      "duel.souls.rigor": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Hector,” Lena says, without looking anything up. “Book twenty-four. Achilles drags him three times round Patroclus’s tomb every morning for twelve days, and Apollo keeps the body from tearing, and the gods are disgusted. Not because Hector can feel it, Mr. Costigan. Because it’s *Hector*.” She taps the table once, on the word.",
+      "At the head of the table Hale has put his chin in his hand to watch, which is how he applauds."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“If the dead can be wronged, Professor, every eulogy in Ohio is actionable.”",
+     "if": "trait.wit>=36",
+     "tag": "Riposte",
+     "set": {
+      "duel.souls.wit": "+1",
+      "duel.souls.rigor": "+1",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Hale makes a small sound in the back of his nose, dry and short and entirely involuntary, the one noise of pleasure he’ll allow himself all afternoon.",
+      "“In Ohio,” Lena says, “*living* is actionable.”"
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“The betrayed man’s harmed. I’ll give you Nagel.”",
+     "tag": "Concede",
+     "set": {
+      "duel.souls.heart": "+1",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "She takes it without gloating. She doesn’t even mark it. She just moves on to the next page faster than she needs to, as though it cost her something to be handed it and she’d rather not stand there holding it."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“You need the dead to be owed something. You’ve got somebody you think is owed.”",
+     "tag": "Personal",
+     "set": {
+      "duel.souls.rigor": "+1",
+      "e13_souls_personal": true,
+      "rel.lena.trust": "-2",
+      "rel.lena.friction": "+2",
+      "rel.hale.friction": "+1",
+      "resolve.jack": "-1",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "He means the storm. He means a woman named Lucille Guidry and four days of water and heat, and he knows it the second it’s out.",
+      "Lena’s pen stops. “Mr. Costigan,” she says. Nothing else.",
+      "Caleb writes something down. Yusuf looks at the table, at the grain of it, as though it had said something rude."
+     ],
+     "goto": "s03a"
+    }
+   ]
+  },
+  "s03a": {
+   "slug": "MONDAY · 1:22 PM · HOLLIS HALL, ROOM 302",
+   "duel": "souls",
+   "set": {
+    "duel.souls.lena": "+1"
+   },
+   "body": [
+    "Her second move is a woman dying at a window.",
+    "“Ostia,” Lena says. “Augustine’s mother. They’re on their way home to Africa, and she takes a fever, and she knows. And her sons are fretting about where to bury her, because she always wanted to lie next to her husband, and she tells them.” She reads it from the paperback with the Oxford spine. “*Put this body anywhere. Do not let care of it cause you any concern. One thing only I ask of you, that you remember me at the altar of the Lord wherever you may be.*”",
+    "She lets the book close on her finger. Augustine knew better than anybody that the dead feel nothing of their funerals; he wrote a whole treatise saying so, that the pomp is for the comfort of the living. “And he remembered her at the altar anyway. For the rest of his life. What the dead are owed isn’t flowers, Professor. It’s being *asked for*.”",
+    "Then she gets up, which she doesn’t do, takes the marker out of Hale’s tray and writes under his list in her own round capitals: 2 MACC. 12:46. Judas Maccabeus, the battlefield, the dead with the amulets under their tunics, the collection sent up to Jerusalem for a sacrifice. She reads it off the board in the Douay. “*It is therefore a holy and wholesome thought to pray for the dead, that they may be loosed from sins.*” She sits back down with the marker still in her hand.",
+    {
+     "if": "e13_souls_personal",
+     "text": "She says all of it to Hale."
+    },
+    "“We pray for them too,” Yusuf says, from the floor. “We’re not allowed to stop.”",
+    "Caleb has his chair tipped back and his arms folded, and for once there’s no bit coming. “In my dad’s church, when somebody died, they were gone to be with the Lord. Done. Saved, sealed, above our pay grade.” He shrugs. “So they were the only people in the building nobody prayed for.” He says it like a joke, and it doesn’t come out like one, and he looks at the board a while after."
+   ],
+   "choices": [
+    {
+     "text": "“*De cura* — the funeral’s for the living. Your own witness says so.”",
+     "tag": "Press",
+     "set": {
+      "duel.souls.rigor": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“The *funeral*,” Lena says. “Not the altar.” She doesn’t raise her voice. She doesn’t need to; the distinction does it for her.",
+      "Hale draws a short line on his roster beside her name, and then, after consideration, a short line beside Jack’s."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "“Then they can’t be wronged. *We* can be wrong about them. That’s what the book’s for.”",
+     "tag": "Reframe",
+     "set": {
+      "duel.souls.rigor": "+1",
+      "duel.souls.heart": "+1",
+      "rel.lena.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "The book at St. Brendan’s has been in the bulletin all week, and everybody at this table who goes there knows which book he means.",
+      "Lena looks at him. Then she looks at her notes. When she goes on she goes on a little less sharp, the edge off it, and he can’t tell if he’s won something or been let in."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "“Then remember her.”",
+     "tag": "Concede",
+     "set": {
+      "duel.souls.heart": "+1",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "She doesn’t answer it. She turns the page, and when she starts on her third move her voice has come down, low enough that Yusuf leans in to hear it."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "“That was cheap. Your grandmother isn’t a premise.”",
+     "if": "e13_souls_personal",
+     "tag": "Apologize",
+     "set": {
+      "duel.souls.heart": "+1",
+      "e13_souls_apology": true,
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“No,” Lena says. “She isn’t.”",
+      "The point stays where it fell, on her side of the table."
+     ],
+     "goto": "s03b"
+    }
+   ]
+  },
+  "s03b": {
+   "slug": "MONDAY · 1:41 PM · HOLLIS HALL, ROOM 302",
+   "duel": "souls",
+   "set": {
+    "duel.souls.lena": "+1"
+   },
+   "body": [
+    "Her third move isn’t in the notes. She turns them over.",
+    "“They gave my mother her medal back in a plastic bag in February,” Lena says. “If the dead can’t be wronged, then nothing anybody did that week was wrong — and I knew her, and I won’t sit in Hollis Hall and say so.”",
+    "Her hands are on the table, one on top of the other. She doesn’t touch anything.",
+    "Hollis 302 goes quiet the way rooms do when somebody has put something real on the table in front of strangers. The clock over the door ticks. Yusuf has stopped writing. Hale doesn’t say anything. Outside the sea window a gull comes down on the cloister tiles, walks to the end of them, thinks better of it and goes, and in here it is still Jack’s turn."
+   ],
+   "choices": [
+    {
+     "text": "“Then it’s the living who were wronged. Your mother. You. The dead are out of it.”",
+     "tag": "Press",
+     "set": {
+      "duel.souls.rigor": "+1",
+      "duel.souls.lena": "+1",
+      "rel.lena.friction": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“That’s *worse*, Costigan,” she says, and it lands, and it’s hers.",
+      "Jack’s right hand is on the table. It stays there."
+     ],
+     "goto": "s03v"
+    },
+    {
+     "text": "“She was wronged.”",
+     "tag": "Concede",
+     "set": {
+      "duel.souls.heart": "+1",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Lena nods, once, and is done, and squares her notes against the edge of the oak."
+     ],
+     "goto": "s03v"
+    },
+    {
+     "text": "“Epicurus never met a Cajun grandmother.”",
+     "if": "trait.wit>=36",
+     "tag": "Riposte",
+     "set": {
+      "duel.souls.wit": "+1",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "It gets out of her before she can stop it, one hard bark of a laugh through her nose, and she claps the back of her wrist over her mouth and glares at him over it, furious, with her eyes wet.",
+      "“She’d have *fed* him, Costigan,” she says, when she can. “And then she’d have won.”"
+     ],
+     "goto": "s03v"
+    }
+   ]
+  },
+  "s03v": {
+   "slug": "MONDAY · 2:12 PM · HOLLIS HALL, ROOM 302",
+   "duel": "souls",
+   "body": [
+    "The floor gets its half hour, the swerve and the atoms and whether Lucretius was a happy man, and at twelve past two Hale caps his marker and gives his decision.",
+    {
+     "if": "e13_souls_personal && !e13_souls_apology",
+     "text": "“Miss Broussard,” Hale says. “On points and on manners.” Five–two. Lena packs her notes square into her tote and does not look at Jack. She is the first one standing."
+    },
+    {
+     "if": "e13_souls_personal && e13_souls_apology",
+     "text": "“An apology isn’t an argument, Mr. Costigan,” Hale says. “It’s better. It still isn’t one. Miss Broussard.” Five–two. When the room breaks Jack is nearest the door, and holds it, and Lena lets him."
+    },
+    {
+     "if": "!e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart>=2",
+     "text": "“Miss Broussard,” Hale says, “on Monica.” Five–two. Then Lena, across the table, in front of all of them, does a thing she has never done: she gives him the last word. “Go on, Costigan. Something Epicurean.” He has one. The Romans cut it on their gravestones so often they abbreviated it, *non fui, fui, non sum, non curo* — I was not, I was, I am not, I don’t care. He keeps it. “You have it,” he says."
+    },
+    {
+     "if": "!e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart<=1 && duel.souls.rigor<=2",
+     "text": "“Miss Broussard,” Hale says, “on the plastic bag. Mr. Costigan, Epicurus would be proud of you. He never finished anything either.” Five–two. Caleb, under his breath: “Same.”"
+    },
+    {
+     "if": "!e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart<=1 && duel.souls.rigor>=3",
+     "text": "Hale considers the pair of them. “Mr. Costigan argued Epicurus like a man who has never lost anyone. Miss Broussard argued like a woman who has. I’m giving it to the bereaved.” Five–two. Jack takes his right hand off the table and puts it in his lap."
+    },
+    {
+     "if": "!e13_souls_personal && duel.souls.wit>=2",
+     "text": "“No decision,” Hale says. “Well-argued and badly behaved, the pair of you.” Five–one, and one no decision. Caleb’s pen stops in the middle of whatever it was writing."
+    },
+    "Then, packing his satchel, not to the room, Hale says: “They can be wronged, Miss Broussard. That’s the trouble with them. You can’t apologize to them.”",
+    "He looks at the window. Then chairs scrape, and the room stands up.",
+    "Lena is first out of 302 and fast down the corridor, her tote on her shoulder, and at the head of the stairs she stops and looks at her hand. The whiteboard marker is still in it, capped. She turns around and comes back the length of the corridor, past Jack in the doorway, sets it in the tray under the board, and goes out again without a word to anybody and down the stairs."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "e13_souls_personal && !e13_souls_apology",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to. Unofficial, Seacliff Road, Halloween, the hour that happened twice, no referee — on grace: hers. She wants to be asked. Official, Hale’s seminar, All Souls — whether the dead can be wronged: hers, by forfeit. I said a thing about her grandmother I can’t take back. Five–two."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "e13_souls_personal && e13_souls_apology",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to. Unofficial, Seacliff Road, Halloween, the hour that happened twice, no referee — on grace: hers. She wants to be asked. Official, Hale’s seminar, All Souls — whether the dead can be wronged: hers, by forfeit. I took it back. Hale says an apology’s better than an argument and still isn’t one. Five–two."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart>=2 || !e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart<=1 && duel.souls.rigor<=2",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to. Unofficial, Seacliff Road, Halloween, the hour that happened twice, no referee — on grace: hers. She wants to be asked. Official, Hale’s seminar, All Souls — whether the dead can be wronged: hers. Monica asked to be remembered at the altar, and she was. Five–two."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart<=1 && duel.souls.rigor>=3",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to. Unofficial, Seacliff Road, Halloween, the hour that happened twice, no referee — on grace: hers. She wants to be asked. Official, Hale’s seminar, All Souls — whether the dead can be wronged: hers. Hale gave it to the bereaved. Five–two."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e13_souls_personal && duel.souls.wit>=2",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to. Unofficial, Seacliff Road, Halloween, the hour that happened twice, no referee — on grace: hers. She wants to be asked. Official, Hale’s seminar, All Souls — whether the dead can be wronged: no decision. Well-argued and badly behaved, the pair of us. Five–one–one."
+    }
+   ],
+   "next": "s04"
+  },
+  "s04": {
+   "slug": "MONDAY · 4:20 PM · ST. BRENDAN’S, THE MARIAN SHRINE",
+   "music": "The St. Brendan’s Choir — “In Paradisum” (Fauré, *Requiem*)",
+   "set": {
+    "resolve.lena": 6,
+    "resolve.jack": "+1",
+    "soul.grace": "+1",
+    "knows_lena_nora_host": true
+   },
+   "body": [
+    "At twenty past four the sun is low enough to come in sideways through the blue glass on the west wall, and it lies down the side aisle of St. Brendan’s in long slabs, blue where the glass is and gold where the lead is, with the dust standing still in it. Up in the loft the choir is rehearsing for the 5:15, a dozen voices and the organ, and every few bars the organist stops them all with one big gray hand and the foghorn voice — “Altos. *Paradisum*. Not *paradise-um*. We are not selling timeshares.” — and they go back to the top. *In paradisum deducant te angeli.* May the angels lead you into paradise.",
+    "The Book of the Dead stands on a wooden lectern beside the Marian shrine: a red cloth-bound ledger as big as a parish register, open to the middle, with Mrs. Fitch’s ballpoint tied to the lectern on a length of white cord and the cord taped down with masking tape, in case anybody in a Newman Center was thinking of stealing a pen. Beside it is a stack of printed cards, ETERNAL REST GRANT UNTO THEM, O LORD, AND LET PERPETUAL LIGHT SHINE UPON THEM on the front and the November Mass times on the back. By twenty past four on the first day the pages are already crowded: ballpoint and felt-tip, a child’s capitals, an old woman’s cursive leaning into a headwind, a whole family on one line held together with ampersands.",
+    {
+     "type": "doc",
+     "title": "St. Brendan’s — the Book of the Dead",
+     "text": "ALL SOULS · NOVEMBER 2009\nThe names written here are remembered at every Mass this month.\n\nMargaret “Peg” Dwyer\nAbuelita Rosa & Abuelo Chuy Ortega\nFr. Patrick Kelleher, S.J.\nCapt. Joe Silva, F/V *Marisol Rose*, lost at sea 1981\nThe deceased of the Haddad family\nBuster (dog) — *see me.* D.F."
+    },
+    "Jack has come to do what Danny asked. The letter is in the Carhartt’s inside pocket, folded in three the way it came.",
+    {
+     "if": "e12_candle_q==\"brother\"",
+     "text": "The votive rack is beside the lectern, three tiers of red glass in the blue light. Yesterday Laney lit one at the end of Lena’s row and asked him whose his had been, at the monks, and he told her."
+    },
+    "Lena is already here. She’s kneeling at the rail in front of the shrine in the oatmeal cardigan, no mantilla on a Monday, the black and gold of a Saints shirt showing at the neck, and if she heard the door she doesn’t turn for it. When she gets up she lights a votive from the box of matches and shakes the match out. Then she takes one of the printed cards off the stack and puts it in her cardigan pocket, and picks up the pen.",
+    "She writes *Lucille Guidry*. Jack knows the name. Under it, in the same hand, without stopping, she writes *Nora Calloway*.",
+    "He reads it upside down. He knows that one three ways: a brass plate under the candles eight feet from where he’s standing, a banker’s box in Priya’s room, a white cross at the end of a path. Here it’s ballpoint on a ruled line. Mrs. Fitch’s pen skips on the *y*, and Lena goes back over it.",
+    "She sees him see it. “She was my host at Preview Weekend,” she says. “In April. Two days. She showed me the campus.” She lets go of the pen, and it swings out on its cord and knocks twice against the lectern and hangs.",
+    "Fr. Osei comes down out of the sanctuary with a stack of missalettes against his chest and a white stole over one shoulder, and takes the step a little more carefully than he did in September. He doesn’t stop. “Write them all,” he says, going past the book toward the back pews. “He has a large book and a long memory.”",
+    "In the loft the altos get *paradisum* right. Lena holds the pen out to Jack by its cord."
+   ],
+   "choices": [
+    {
+     "text": "Write *Antonio Rinaldi*.",
+     "tag": "Sincerity",
+     "set": {
+      "e13_book": "nonno",
+      "trait.sincerity": "+1"
+     },
+     "key": "On All Souls you wrote your grandfather’s name in the Book of the Dead.",
+     "response": [
+      "He writes it on the line under hers. Nonno carried a lunch bucket into the Campbell Works for Youngstown Sheet & Tube until Black Monday, 1977, and by every account at Nonna’s table he never really set it down after. Jack writes him in the Palmer hand the sisters at St. Brigid’s school put into him one loop at a time, the capital *R* with its little kick.",
+      "Across the lectern Lena reads it upside down, the way he read hers."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "text": "Write *Antonio Rinaldi* — and start another line.",
+     "tag": "Candor",
+     "set": {
+      "e13_book": "blank",
+      "soul.honesty": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "On All Souls you wrote your grandfather’s name in the Book of the Dead, and started another line, and left it.",
+     "response": [
+      "He writes *Antonio Rinaldi*. Then the pen goes down to the next line, and he lets it, and it stops there at the end of the cord’s slack. The point rests on the paper long enough to leave a dot, small and blue at the margin of an empty line, and he lifts it off.",
+      "Lena sees the pen stop. She doesn’t ask."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "text": "Write *Antonio Rinaldi*, and light a candle beside hers instead of a word.",
+     "tag": "Control",
+     "set": {
+      "e13_book": "candle",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "On All Souls you wrote your grandfather’s name in the Book of the Dead and lit a candle beside hers.",
+     "response": [
+      "He writes *Antonio Rinaldi* and lets the pen go on its cord. Then he takes a match from the box and lights the votive in the glass next to hers. The two flames stand side by side in the blue rack, hers a few minutes taller.",
+      "Lena looks at the candles, not at him."
+     ],
+     "goto": "s04a"
+    }
+   ]
+  },
+  "s04a": {
+   "slug": "MONDAY · 4:35 PM · ST. BRENDAN’S, THE MARIAN SHRINE",
+   "set": {
+    "knows_julian": true
+   },
+   "body": [
+    "The side door opens and lets in the cold off the courtyard, and a guitar case comes through it first.",
+    "Jack knows him before he knows from where: the guy on the Lighthouse stairs the first night, with the guitar; the stool at Bastille. Julian. Medium height, short dark hair, warm brown skin, a gray cardigan cut for somebody broader in the shoulders, a cheap steel watch. He comes up the side aisle with a visitor’s care, reading the place as he goes, and leans the case against the end of the front pew, and goes to the book, and finds the line he came to write already written in a hand that isn’t his.",
+    "He picks up the pen anyway and writes it again underneath — *Nora Calloway* — in small square capitals, the *N* made in one stroke. “Because she would have,” he says. He says it to the page. Then he sees that Lena is standing right there with her hands in her cardigan pockets, and he says it to her. “She prayed for people out of the newspaper. Strangers. Mostly the obituaries.”",
+    "“She would have,” Lena says.",
+    "She reads his capitals under her cursive. “You knew her.”",
+    "“Freshman year.” Julian looks at the two lines of the one name, his and hers. “We sang together. She had the high part. I had the guitar and a lot of opinions about the guitar.” And the song Jack walked out of in the second chorus, one Thursday in September, turns out to have had somebody in it the whole time.",
+    "“She was my host,” Lena says. “Preview Weekend.”",
+    "Julian looks at her then, properly, the way he looked at the page: the vowels, the cardigan, the Saints shirt. “She mentioned you,” he says.",
+    "He doesn’t ask anything. He waits, in case she wants to say something more, and when she doesn’t, he takes that for an answer. Lena’s hand has gone up to the medal at her collarbone.",
+    "“I’m glad somebody from that weekend came,” Julian says, and from his face he means exactly that and nothing else.",
+    "Then he turns to Jack and puts out his hand. “Julian.” His grip is dry and brief, with calluses across the fingertips. “You left in the second chorus.”",
+    "“So did she,” Jack says.",
+    "“Everybody does.” Julian seems to find this interesting rather than sad, and not especially about him. “I should cut it.” He picks the case up by its handle and lets it hang against his leg. “I’m doing something new Thursday. Not that one.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "julian",
+     "title": "Julian Park-Ellis",
+     "text": "Julian Park-Ellis. The guitar guy from the Lighthouse stairs. Plays Bastille Thursdays. Wrote a song called “Fresno.” Plays it once a month. All Souls: came to St. Brendan’s to write Nora Calloway’s name in the book. She was his friend. They sang together. He saw us leave in the second chorus. Something new Thursday. A handshake you’d trust with anything."
+    },
+    {
+     "kind": "person",
+     "id": "nora",
+     "title": "Nora Calloway",
+     "text": "The name on the plaque. Priya’s freshman roommate, Delgado 222. From Selma — raisins. Sang soprano; sang the Memorare in the shower. Philosophy. Fell at the Point at the end of April. September 8th would have been her twentieth birthday. Facebook won’t stop suggesting her. Her things are in a box in Priya’s room now. On the inside cover of her journal she promised whoever found it a song. All Souls: Lena wrote her name in the book. Nora was her host at Preview Weekend, in April. Julian wrote it too."
+    },
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“It’s a good song. I just couldn’t stay for it.”",
+     "tag": "Sincerity",
+     "set": {
+      "e13_julian": "song",
+      "rel.julian.warmth": "+1",
+      "rel.julian.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He gives his name with it, and Julian tips his head at the line the way you’d tip it at a chord you hadn’t thought to try. “That’s the nicest review it’s had,” he says. He means that too.",
+      "He nods at the black and gold under Lena’s cardigan. “I don’t really —” he says, apologetic, “— football.”",
+      "“Nobody’s asking you to, Julian,” Lena says.",
+      "He smiles at that and goes out the side door with the case, into what’s left of the gold, and the door eases shut on its closer. Lena watches him go. Jack watches her do it, about as long as she does. Up in the loft the organ starts *In Paradisum* again from the top."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“I’ll stay to the end next time.”",
+     "tag": "Charm",
+     "set": {
+      "e13_julian": "stay",
+      "rel.julian.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "He gives his name with it, and Julian says it back once — “Jack” — to keep it. “I’ll hold you to that.”",
+      "He nods at the black and gold under Lena’s cardigan. “I don’t really —” he says, apologetic, “— football.”",
+      "“Nobody’s asking you to, Julian,” Lena says.",
+      "He smiles at that and goes out the side door with the case, into what’s left of the gold, and the door eases shut on its closer. Lena watches him go. Jack watches her do it, about as long as she does. Up in the loft the organ starts *In Paradisum* again from the top."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“Jack. Delgado.” The handshake, and nothing else.",
+     "tag": "Control",
+     "set": {
+      "e13_julian": "delgado",
+      "rel.julian.trust": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Julian hears it as if Delgado were a key he could play in. “Delgado,” he says. “Nora lived there. Freshman year.”",
+      "Two twenty-two; Priya’s old room. “I know,” Jack says. At the rail, Lena hears it.",
+      "Julian nods at the black and gold under her cardigan. “I don’t really —” he says, apologetic, “— football.”",
+      "“Nobody’s asking you to, Julian,” Lena says.",
+      "He smiles at that and goes out the side door with the case, into what’s left of the gold, and the door eases shut on its closer. Lena watches him go. Jack watches her do it, about as long as she does. Up in the loft the organ starts *In Paradisum* again from the top."
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s05": {
+   "slug": "MONDAY · 5:30 PM · SULLY’S, MISSION STREET",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "Sully’s on a Monday night is a roar with a brass bell hung in the middle of it. The Superdome is on the big projection screen over the pool table and on four of the five tube TVs along the bar; the fifth has the World Series, and the World Series has the far end of the bar to itself, three men over fifty in Phillies caps keeping their joy down out of respect for the room. The owner stands under the ship’s bell, big and pink in his Sully’s polo, with the rope wrapped once around his fist.",
+    "Dale has saved them the booth. He’s on his stool at the end of the bar in the Barry Sanders jersey, his Lions one and six and freshly beaten by the Rams, and when Lena comes in he lifts his beer to her and she points at him, which is the entire exchange, every week.",
+    "She’s in the black WHO DAT shirt under the oatmeal cardigan, and she didn’t bring the paint; no one gets a fleur-de-lis tonight, and no one asks for one. Kevin drove, and has fries and a water. Laney is in gold. Margot is in black at the open end of the booth, “for the anthropology,” with a Diet Coke she appears to be running as a control.",
+    "Theo has been studying. The first time the Saints score and the owner rings the bell, the bar does the Who Dat, and Theo does it with them, every syllable correct and every vowel from Brentwood: *Who dat say dey gonna beat dem Saints*, in an accent that has ordered a great many cortados. At the end of the bar Dale winces. “I had a dialect coach,” Theo tells the booth. “YouTube.” Then he buys the bar a round of root beer. “It’s a school night,” he explains to the bartender, “and I’m told I’m a role model.”",
+    "“It’s a responsorial psalm,” Margot says, watching the bar answer itself. “With a point spread.”",
+    "By the half he has bet Dale a root beer on the Phillies, and Dale has taken New York out of some Michigan grievance he declines to explain. On the fifth TV Chase Utley hits his second home run of the night, the Phillies hang on to win it eight to six, and a root beer comes sliding down the bar to Theo with no comment attached.",
+    "Brees throws for three hundred and eight; the graphic says so twice. Pierre Thomas scores, and later scores again, and the bell goes every time, and the bar does the Who Dat, and Lena shouts it with everybody. Kevin watches Michael Turner run for a hundred and fifty-one yards against the Saints defense with a medical man’s detachment. “That’s not a running back,” he says. “That’s a hemorrhage.”",
+    "Then Elam kicks a field goal to make it thirty-five to twenty-seven with twenty-eight seconds left, and Atlanta lines up to kick it short. The bar is on its feet, shouting at the screen. Lena is sitting with both hands around her Abita root beer, not shouting. Dale leans over from his stool, just to Jack. “Your girl’s quiet.”",
+    "Jack doesn’t correct him.",
+    "The kick goes short, and when the pile comes apart a Falcon is holding the ball. Sully’s goes silent all the way down to the Phillies caps. Laney takes the pen Kevin keeps clipped to his quarter-zip, writes on two cocktail napkins and holds them up over the table like a judge at a figure-skating final. “Poise: zero,” she says. “*Hands*: zero.” Kevin takes his pen back and holds up a third napkin for the Falcons’ kicker: 9. “On technical merit.”",
+    "Twenty-eight seconds. Matt Ryan drops back and throws, and Darren Sharper is under it with three seconds on the clock, and he has it, and Sully’s comes apart. Seven and oh. The owner unwinds the rope from his fist and holds it out across the bar, and Lena is out of the booth and up on the brass rail ringing the bell herself, hard, five times, six, and screaming with everybody — *WHO DAT* — with Laney hanging off her neck and Theo ordering another round of root beer for people who haven’t finished the first.",
+    "Then she sits down and looks at her phone. It’s been buzzing on the table under the napkins since the interception, and it goes on buzzing, and every time it lights, Jack can read the outer screen upside down.",
+    {
+     "if": "e11_comeback==\"whodat\"",
+     "text": "LUC. REMY. TESS. JOSIE. JUDE. LUC again. DADDY.",
+     "else": "LUC. REMY. TESS. JOSIE. JUDE. LUC again."
+    },
+    "No WES. Lena watches it until it stops, and then she turns it over."
+   ],
+   "choices": [
+    {
+     "text": "Start the Who Dat yourself, standing on the booth.",
+     "tag": "Reckless",
+     "set": {
+      "e13_whodat": "booth",
+      "rel.lena.warmth": "+1",
+      "trait.reckless": "+1",
+      "soul.restraint": "-1"
+     },
+     "response": [
+      "He climbs up onto the booth seat in his boots. “WHO DAT —” and the bar, which has been waiting all night for somebody to be an idiot first, comes in under him like a congregation: *SAY DEY GONNA BEAT DEM SAINTS*. Theo arrives a half-beat late in perfect Brentwood. Lena laughs, out loud, up at him, and comes in on the second line with everybody — and stops before the end, and sits with her mouth closed while the bar finishes it without her. The owner rings the bell anyway, on general principle.",
+      "They walk to the Odyssey under the Mission Street palms with somebody outside the Wharf Rat still shouting WHO DAT at the traffic. Halfway down the block Lena says, “I’m going to call him when we get back,” and nothing else.",
+      "At the van door Laney catches her sleeve. “Lena.”",
+      "“Go on, cher,” Lena says. “I’m fine.” She gets in first and takes the back row."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "Say nothing. Stand where she can see you.",
+     "tag": "Sincerity",
+     "set": {
+      "e13_whodat": "stand",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He gets up for napkins. At the bar he takes a stack out of the dispenser, and when he comes back he doesn’t sit; he stands at the end of the booth with the napkins in his hand, where she’d see him if she looked up. On the next commercial she looks up. She finds him there and goes on looking a moment, and then she takes one napkin off the top of the stack and folds it into a small square and keeps it.",
+      "They walk to the Odyssey under the Mission Street palms with somebody outside the Wharf Rat still shouting WHO DAT at the traffic. Halfway down the block Lena says, “I’m going to call him when we get back,” and nothing else.",
+      "At the van door Laney catches her sleeve. “Lena.”",
+      "“Go on, cher,” Lena says. “I’m fine.” She gets in first and takes the back row."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“He’s probably on Bourbon with a tuba.”",
+     "tag": "Wit",
+     "set": {
+      "e13_whodat": "tuba",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Lena looks at the back of the phone. “Probably,” she says. She smiles at it, which is generous of her.",
+      "They walk to the Odyssey under the Mission Street palms with somebody outside the Wharf Rat still shouting WHO DAT at the traffic. Halfway down the block Lena says, “I’m going to call him when we get back,” and nothing else.",
+      "At the van door Laney catches her sleeve. “Lena.”",
+      "“Go on, cher,” Lena says. “I’m fine.” She gets in first and takes the back row."
+     ],
+     "goto": "s06"
+    }
+   ]
+  },
+  "s06": {
+   "slug": "MONDAY · 9:30 PM · DELGADO HALL, EAST STAIRWELL, 2ND-FLOOR LANDING",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "The moon is up over the hills, full, and high enough now to come in at the landing window and lay a white square on the concrete, with the wire in the glass printed across it like graph paper. The window is open its six inches. The first real cold of the year comes in at the gap and sits on the stairs.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "East stairs, second floor. Will you come sit with me while I call him? —L.",
+     "time": "9:24 PM"
+    },
+    "There was no eight-oh-four tonight. Jack was in the booth at Sully’s when eight-oh-four came and went, with the game on all five screens and her LG face up by the hot sauce, dark.",
+    "He comes down from 412 in the Carhartt and his socks, two flights. She’s on the landing in the oatmeal cardigan with the phone shut in both hands, holding it the way you hold a bird you’ve caught and don’t know what to do with. She watches him come down the last flight and doesn’t try to smile at him, which is a kind of trust.",
+    "“Sit on the stairs,” she says. “Don’t listen.”"
+   ],
+   "choices": [
+    {
+     "tag": "Control",
+     "text": "Sit where she says, on the stairs above the landing.",
+     "set": {
+      "e13_landing": "landing",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He sits three steps up with his back to the cinderblock and his knees up, and puts his hands in the Carhartt’s pockets so they’ll have somewhere to be. Lena nods, once. She opens the phone and dials without looking at the keys."
+     ],
+     "goto": "s06a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“I’m going to listen, Lena.”",
+     "set": {
+      "e13_landing": "listen",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“I know,” she says. “Sit anyway.”",
+      "He sits on the stairs above the landing. She opens the phone and dials without looking at the keys."
+     ],
+     "goto": "s06a"
+    },
+    {
+     "tag": "Wit",
+     "text": "Go up one more flight, like that’ll help.",
+     "set": {
+      "e13_landing": "flight",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He gets as far as the turn.",
+      "“That’s not far enough to help,” Lena says from below, “and you know it.”",
+      "He comes back down and sits on the first step above the landing, close enough to touch the rail she’s standing by. She dials."
+     ],
+     "goto": "s06a"
+    }
+   ]
+  },
+  "s06a": {
+   "slug": "MONDAY · 9:34 PM · DELGADO HALL, EAST STAIRWELL, 2ND-FLOOR LANDING",
+   "set": {
+    "lena_wes_over": true,
+    "knows_wes_faith": true
+   },
+   "body": [
+    "It’s half past eleven in New Orleans. Jack can hear it ring, small and far off, out of the phone at her ear.",
+    "“Hey,” Lena says. “— Did you see it? — Seven and oh.”",
+    "Whatever comes back is short. She laughs, a little, and stops, and walks to the window and back with her free hand shut in her cardigan pocket.",
+    "“Wes,” she says. “When did you last go to Mass?”",
+    "The silence goes on so long that Jack can hear the building: a dryer turning over two floors down in the basement, a bass line through somebody’s door on three, the cold ticking in the window frame. Lena stands in the white square on the landing and waits.",
+    "“September,” she says. Then again, not as a question. “September.”",
+    "She listens a long time. She slides down the wall under the window until she’s sitting on the concrete with her knees up and the phone against her ear, and Jack, on the stairs, looks at his own hands.",
+    "“Pauger Street,” she says.",
+    {
+     "if": "knows_wes_attic",
+     "text": "Jack knows the street. He heard it on the ramp of a lifeguard tower at two in the morning, told to him as something that was over."
+    },
+    "“… A woman.” And then, so quietly he almost doesn’t get it: “In the *attic*, Wes?”",
+    "There’s more. She says one piece of it back to him — “A little” — and her mouth makes clear what she thinks of *a little*. Then she says, “A ring.”",
+    {
+     "if": "knows_wes_ring",
+     "text": "Jack knows about the ring."
+    },
+    "Then she’s on her feet. “Don’t you tell me what I’d do, Wesley Arceneaux — ”",
+    "Whatever he says stops her. She stands in the square of light with the heel of her hand against one eye.",
+    "“You’d marry me anyway,” she says. It’s a question. Then, flat and exact, it isn’t. “You’d marry me anyway.”",
+    "After that she argues, and it goes on for forty minutes, and Jack tells the time by the white square, which slides off the concrete while she talks and climbs the wall. It’s the best arguing he has ever heard her do. Loyalty. Ruth on the road out of Moab: *your people shall be my people, and your God my God* — “That’s the *verse*, Wes, that’s the whole — ” Peter, who had nowhere else to go. “You don’t get to decide that by yourself, on a Monday, mad at God — ” “You stay. You stay, and you make it tell the truth.” Once she says, “Then pray with me. Right now, on the phone, I’ll start it,” and whatever he says to that, she doesn’t argue with it. Jack has lost to her across Hale’s table enough times to know what she sounds like winning, and this isn’t it. You can’t argue a man into faith. Her sentences get shorter. Her free hand goes flat against the cinderblock.",
+    "He can’t make out anything from New Orleans. He can hear how long the pauses are that she leaves for him, and they aren’t a coward’s pauses. They sound like a man who has made up his mind and stays on the line anyway, to take every bit of it, and it’s as brave as anything Jack has heard of anybody doing since a sixteen-year-old took his uncle’s flatboat out into the water.",
+    "“Okay,” Lena says. And then: “Okay, Wes.”",
+    "A long time.",
+    "“I love you too.”",
+    "She closes the phone. She comes down off the landing to the top step of the flight going down, and sits, with her back to him."
+   ],
+   "next": "s07"
+  },
+  "s07": {
+   "slug": "MONDAY · 10:15 PM · DELGADO HALL, EAST STAIRWELL",
+   "set": {
+    "resolve.lena": 7
+   },
+   "body": [
+    "He gives her ten minutes by the RAZR. Then he comes down past the landing, where the light has thinned to a stripe high on the wall, to the top of the flight going down.",
+    "She doesn’t turn around. She’s sitting with her elbows on her knees and the LG shut in one hand, looking down the stairs at the ground-floor door, where the EXIT sign turns the last of the concrete pink.",
+    "“Sit down,” she says. “Don’t say anything wise. I’ll push you.”"
+   ],
+   "choices": [
+    {
+     "tag": "Control",
+     "text": "A step below her, so she has the higher ground.",
+     "set": {
+      "e13_sit": "below",
+      "soul.restraint": "+1",
+      "rel.lena.trust": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He goes down past her and sits on the next step, sideways, with his shoulder to the wall, so she has the high ground and he has to look up to see her. She looks down at him from it. Her eyes are dry, and her face around them is raw, as if she’s been out in a wind. She lets him stay down there."
+     ],
+     "goto": "s07t"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "Beside her, on the same step.",
+     "set": {
+      "e13_sit": "beside",
+      "rel.lena.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "The step is narrow. It was built for one person on the way to somewhere else. He sits on it anyway, and his shoulder ends up against hers, the cardigan’s wool against the Carhartt’s canvas, and he leaves it, and so does she. It’s a shoulder. It’s what the step has room for."
+     ],
+     "goto": "s07t"
+    },
+    {
+     "tag": "Charm",
+     "text": "The Carhartt off and around her shoulders first.",
+     "set": {
+      "e13_sit": "carhartt",
+      "rel.lena.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "He shrugs it off and puts it around her from behind. It comes down over her to the elbows; it was always too big for Jack in the shoulders, and on her it’s a tent.",
+      "“It’s Danny’s,” he says.",
+      "“I know whose it is, Jack.” She pulls it shut at her throat with the hand that isn’t holding the phone. He sits down beside her in his flannel. Danny’s letter is still in the inside pocket, against her ribs, and he lets it ride there."
+     ],
+     "goto": "s07t"
+    }
+   ]
+  },
+  "s07a": {
+   "slug": "TUESDAY · 1:10 AM · DELGADO HALL, EAST STAIRWELL",
+   "body": [
+    "At ten past one the sprinklers come on in the dark under the window, a long hiss and then the tick, tick, tick working its way around the Anacapa lawn, and every floor of the building is asleep above and below them.",
+    "She is funny now, which is how Jack knows how bad it is.",
+    "“She’s eighty-eight,” Lena says. “She’s four foot ten. She drives herself to Mass in Breaux Bridge in a Buick as long as a pew, and every All Saints she comes into town and checks the family tombs with a carpenter’s level. And she’s standing there with the brush, dripping, in front of my mother’s entire side of the family, and she asks him in *French*, so the Guidrys won’t follow it — and every Guidry over forty speaks French. Somebody had a camcorder going, Jack.”",
+    "“And now I have to mail her a *fruitcake*. The monks’. It’s sitting in my closet. And she’s going to open it and call me and want to know why I’m still sending her fruitcake like nothing happened, and I’m going to have to explain it to an eighty-eight-year-old woman on a telephone with a cord — Jesus, Mary, Joseph and the *donkey*.” She laughs at that, an awful sound, and it’s still a laugh.",
+    "“You know there’s a Saint Odilo? Of Cluny. An abbot. He’s the one who started All Souls, nine hundred and something. I looked him up in the eighth grade so I’d have something on her.” She puts her chin on her knees. “I’m going to write him a letter.”",
+    {
+     "if": "e13_souls_personal || duel.souls.wit<=1",
+     "text": "“I won one today, anyway,” she says.",
+     "else": "“I couldn’t even win one today,” she says."
+    },
+    "Then she stops being funny.",
+    {
+     "if": "e4_walk==\"empty_room\"",
+     "text": "“I knew in September,” she says. “He stopped yelling. You told me nobody yells at an empty room. He used to yell at God — about the water, about the Corps, about the walls they built wrong. And in September he stopped, and I should have known what that meant, and I decided not to notice.” She turns the LG over. “I’m good at it.”",
+     "else": "“I knew in September,” she says. “He stopped yelling. He used to yell at God — about the water, about the Corps, about the walls they built wrong. And in September he stopped, and I should have known what that meant, and I decided not to notice.” She turns the LG over. “I’m good at it.”"
+    },
+    "“After Hale’s,” she says. “The leaving one. I told you it was a good argument. I said I hoped you’d never use it.”",
+    "“I remember.”",
+    "“He used it.”",
+    "Jack won that one in Hollis 302, twelve days ago, and Hale gave it to him, and tonight a man in New Orleans made the same argument on the telephone without a single citation and made it better.",
+    {
+     "if": "e10_cor_truth",
+     "text": "“He asked you to take care of me,” Lena says. “On the beach. You didn’t say yes — you drank. Wes told me, and then you told me.”",
+     "else": "“He asked you to take care of me,” Lena says. “On the beach. Wes told me you said yes.”"
+    },
+    {
+     "if": "e10_cor_truth",
+     "text": "“I did.”"
+    },
+    "“Is that what this is?” She looks at him for the first time since the phone. “You saying yes now?”"
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“No.”",
+     "set": {
+      "e13_care": "no",
+      "rel.lena.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“Okay,” she says.",
+      "It’s true. It isn’t why he’s here. Why he’s here is the one thing on this stairwell he can’t say tonight, so he doesn’t try to say anything around it."
+     ],
+     "goto": "s07b"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“Partly. He asked. I’d have come anyway.”",
+     "set": {
+      "e13_care": "partly",
+      "rel.lena.trust": "+1",
+      "rel.lena.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Anyway,” Lena says back to him, quietly, once, and doesn’t do anything else with it."
+     ],
+     "goto": "s07b"
+    },
+    {
+     "tag": "Wit",
+     "text": "“I don’t take orders from Tulane.”",
+     "set": {
+      "e13_care": "tulane",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Don’t,” she says. “Don’t be funny right now. Just stay.”",
+      "“Okay.”",
+      "He stays."
+     ],
+     "goto": "s07b"
+    }
+   ]
+  },
+  "s07b": {
+   "slug": "TUESDAY · 3:40 AM · DELGADO HALL, EAST STAIRWELL",
+   "body": [
+    "By twenty to four the white is gone off the wall and the landing both, and the window over the landing is only a window again, black, with the cold coming in at its gap. Her teeth have started going, a little, when she isn’t talking.",
+    {
+     "if": "e13_sit==\"carhartt\"",
+     "text": "She’s inside the Carhartt with her knees drawn up under it, all of her gone into the canvas but her face and the toes of her Keds.",
+     "else": "She has her knees drawn up and the cardigan pulled down over them, and her hands pulled up into her sleeves."
+    },
+    "At three she asked him what time it was in Youngstown, and he said six, and Nonna would be up, and she said good, somebody should be. Since then she hasn’t said anything.",
+    "“Tell me something true,” she says now. “Not about him. Anything.”"
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "Tell her about Nonno.",
+     "set": {
+      "e13_true": "nonno",
+      "rel.lena.trust": "+1",
+      "rel.lena.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“My grandfather,” he says. “Antonio Rinaldi. The name I wrote in the book. He was a Sheet and Tube man, the Campbell Works. September nineteenth, 1977, they shut it in one morning, five thousand guys. Youngstown calls it Black Monday like it’s in the Bible. He never worked again.” He looks at his hands. “I never knew him enough to quote him. Nonna quotes him. She says he used to say the mill was the only church that ever laid him off.”",
+      "Lena thinks about that. “Does she still talk to him?”",
+      "“Every morning. At the stove, in Calabrese. She tells him what the Browns did.” He hasn’t told anybody that, ever, and it comes out easy. “I think he’s the only one in the family who isn’t mad at the Browns.”",
+      "She listens to all of it, and asks for nothing else, and it’s enough."
+     ],
+     "goto": "s07c"
+    },
+    {
+     "tag": "Candor",
+     "text": "Tell her who was at the wall on Halloween.",
+     "if": "e12_told==\"cross\"",
+     "set": {
+      "e13_true": "theo",
+      "e13_told_theo_wall": true,
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+2",
+      "trait.candor": "+1"
+     },
+     "key": "On the stairs you told Lena that Theo had been at the wall on Halloween.",
+     "response": [
+      "“Halloween,” he says. “At the Point. You asked me if anybody was up there. Theo was. Drunk, at the wall. I talked him down. He came away on his own.”",
+      "Lena looks at the black window.",
+      "“He shouldn’t be up there,” she says."
+     ],
+     "goto": "s07c"
+    },
+    {
+     "tag": "Trust",
+     "text": "Read her a line of Danny’s letter.",
+     "set": {
+      "e13_true": "danny",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      {
+       "if": "e13_sit==\"carhartt\"",
+       "text": "“Inside pocket,” he says. “The one with the button.” She finds it under her own arm and hands it to him, folded twice, warm from her.",
+       "else": "He takes it out of the Carhartt’s inside pocket, the one with the button, folded twice the way it came."
+      },
+      "He doesn’t read her the gorilla, or the Browns. He reads her one line, in the block capitals he can hear his brother’s voice in: “*I’d put mine in but I don’t got anybody dead. I got the other kind.*”",
+      "Lena doesn’t ask what it means.",
+      {
+       "if": "danny_met_lena",
+       "text": "She has heard that voice once, out of Jack’s phone on the bench above the beach. “He writes like you talk when you’re tired,” she says.",
+       "else": "“He writes like you talk when you’re tired,” she says."
+      }
+     ],
+     "goto": "s07c"
+    }
+   ]
+  },
+  "s07c": {
+   "slug": "TUESDAY · 4:30 AM · DELGADO HALL, EAST STAIRWELL",
+   "body": [
+    "At half past four she holds out her hand to him, palm up, without looking.",
+    "“Give me one.”",
+    {
+     "if": "e4_pier_cig==\"lit\"",
+     "text": "She has smoked half of exactly one Red in her life, at the end of the harbor pier in September."
+    },
+    {
+     "if": "e12_occasion==\"lit\"",
+     "text": "The tin is in her cardigan pocket with No. 7 in it, and the All Souls card she took off the stack by the book yesterday afternoon. The Reds are in his shirt pocket. She knows exactly which one.",
+     "else": "The tin is in her cardigan pocket, and the All Souls card she took off the stack by the book yesterday afternoon. The Reds are in his shirt pocket. She knows exactly which one."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Reckless",
+     "text": "Give her one and light it.",
+     "set": {
+      "e13_cig": "give",
+      "reliquary": "+1",
+      "jack_cigs": "+1",
+      "soul.restraint": "-1",
+      "resolve.jack": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "At half past four on the stairs she asked you for one. Reliquary No. 8.",
+     "journal": [
+      {
+       "kind": "note",
+       "id": "cigarette",
+       "title": "The Reliquary",
+       "text": "An Altoids tin from a pea-soup restaurant in Buellton. RELIQUARY on the lid. No. 1: the Lighthouse. No. 2: Malibu, before breakfast. No. 3: the harbor — she smoked half of it first. No. 4: a clove, on the Delgado roof, at a wake. By dispensation. Do not ask. No. 5: the Ferrer Tower, in the bells. No. 6: Lucia, a motel porch, under the stars — on the back of the receipt. No. 7: Del Playa, on the widow’s walk, on the back of a HALO OR HORNS card. All Hallows — the occasion. No. 8: the east stairs, before light, the morning after All Souls. She smoked half. On the back of an All Souls card — she wrote All Souls anyway."
+      }
+     ],
+     "response": [
+      "He lights it for her, cupped, and she holds it out toward the window’s gap between drags as though the smoke is the part that should be ashamed. She smokes half. She coughs once, hard, and hands him the rest without a word, and he finishes it.",
+      "Then she takes the All Souls card out of her pocket, and a pen, and writes on the back of it, braced on her knee. It’s the third. She writes All Souls anyway.",
+      {
+       "type": "doc",
+       "title": "On the back of an All Souls card",
+       "text": "No. 8 · 11/3/09 · the east stairs · All Souls"
+      },
+      "She takes the dead Red from him, folds it into the card, and puts the card in the tin, and shuts the lid with her thumb."
+     ],
+     "goto": "s07d"
+    },
+    {
+     "tag": "Control",
+     "text": "“No.”",
+     "set": {
+      "e13_cig": "no",
+      "soul.restraint": "+1",
+      "resolve.jack": "+1",
+      "rel.lena.trust": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“No?”",
+      "“Not tonight. You’d hate it.”",
+      "She thinks about it with her hand still out. “… I would.”",
+      "She keeps it out anyway. After a while he puts his in it, palm to palm, and they sit like that while a dryer down in the basement finishes whatever somebody is washing at half past four in the morning. It isn’t that kind of holding. It’s a hand, on a cold night, and it’s warm."
+     ],
+     "goto": "s07d"
+    },
+    {
+     "tag": "Wit",
+     "text": "Hand her the whole pack. “Reliquary’s open late.”",
+     "set": {
+      "e13_cig": "pack",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "She weighs it in her palm and puts it in her cardigan pocket beside the tin, unlit.",
+      "“Confiscated,” she says. “Pending review.”"
+     ],
+     "goto": "s07d"
+    }
+   ]
+  },
+  "s07d": {
+   "slug": "TUESDAY · 5:50 AM · DELGADO HALL, EAST STAIRWELL — THE DAWN",
+   "set": {
+    "resolve.lena": 7,
+    "resolve.jack": "-1",
+    "soul.grace": "+1",
+    "rel.lena.heat": "+1",
+    "e13_heat": 1
+   },
+   "body": [
+    "At ten to six the window over the landing begins to come up gray — a newsprint gray, the black going out of it like ink out of a wet page — and then, low along the hills behind the Lagoon, a color Jack doesn’t have a word for, the color of the inside of an apricot, coming up the glass a line at a time.",
+    "She hasn’t cried all night. Not on the landing, not for the attic, not for Mémère with the brush. When the light changes, she does. It isn’t pretty. Her nose runs and she wipes it on the cardigan sleeve, and then on the other sleeve, and the sound that comes out of her is low and stuck, from somewhere under the ribs, a sound he didn’t know she had in her. She doesn’t try to talk through it. She bends over her knees and shakes.",
+    "Then, with her face still wet, she starts the Salve Regina. Not sung. Said, in English, into her knees.",
+    "“*Hail, holy Queen, Mother of mercy, our life, our sweetness and our hope.*” She gets it out in pieces. “*To thee do we cry, poor banished children of Eve. To thee do we send up our sighs, mourning and weeping in this valley of* — ” and she stops on the tears and can’t get past them.",
+    "Jack picks it up. “*Turn then, most gracious advocate* — ” and she comes in with him on *thine eyes of mercy toward us*, and they say the rest of it together, low, on the stairs, the way it has been said at the end of things for a thousand years by people too tired to sing it.",
+    {
+     "if": "e13_sit==\"below\"",
+     "text": "Somewhere in the middle of it she leans down off her step and puts her forehead against his shoulder, and leaves it there, and goes on praying into the canvas.",
+     "else": "Somewhere in the middle of it she puts her head down on his shoulder, and leaves it there, and goes on praying into his collar."
+    },
+    {
+     "if": "e13_sit==\"carhartt\"",
+     "text": "She’s still inside Danny’s jacket. He can feel her shivering through it."
+    },
+    "This is the closest he has been to her since a porch above Lucia, and it’s closer than that was. Her hair is against his jaw and still has Sully’s fryer in it. Her face is wet against his neck where his collar stops, salt, and she is heavy the honest way, the weight of somebody who has been awake for twenty-four hours and has quit holding herself up. The prayer is still in both their mouths. *O clement, O loving, O sweet Virgin Mary.*",
+    "He wants her. Nothing in him is confused about it and nothing in him is ashamed of it. He wants her mouth and her weight and her arguments and the rest of his life, in no particular order, at ten to six in the morning on a stairwell in Delgado Hall with her nose running on his shirt. He could turn his head. It would take nothing at all.",
+    {
+     "if": "e12_hat==\"off\"",
+     "text": "On Halloween, in the last minute of the extra hour, she was the one who put the hat back on. This morning it’s his turn."
+    },
+    "He doesn’t turn his head. He knows why, the way he knows the Act of Contrition: all of it at once, in order, without having to look.",
+    "A man held a door open tonight. Wes Arceneaux sat on the other end of a phone in New Orleans at half past eleven and ended it so she wouldn’t marry a man who can’t kneel, and whoever walks through that door this week walks through another man’s worst night. Jack won’t. On the beach Wes asked him to take care of her and he drank instead of answering, and she knows it, so here is the answer, three weeks late: taking care of her means taking nothing. Under a streetlight on Seacliff she told him she doesn’t want to be pushed off a cliff. She wants to be *asked*. You don’t ask a woman the night her house falls down. Tonight she’d say yes to anything that held still, and he wants a yes from somebody who could have said no. On a porch above Lucia he told her he’d decided not to be the one who wrecks anything. Wes has done the wrecking himself. The only thing left on this stairwell to wreck is her.",
+    "And Becca. Becca sewed him a saint out of a feed sack on one machine for eight kids, and he reached down and brought her up a staircase and said *I’m with Maria* in front of a houseful of halos and horns, and she is not going to be the girl he left the minute somebody else came free. Lena is not going to be the reason anybody got left. He’ll end it with Becca, honestly, when it’s about Becca and not about this stairwell. In due course.",
+    "The last one he says only to himself, because it’s the one that’s true about him. If he walks out of Becca’s life this week there is nothing between him and Lena’s door but Jack Costigan, and he has met Jack Costigan. He took off a hat at a minute to two in the morning on the same night Becca kissed him at the foot of a staircase in a gold halo. Free, he’d be on these stairs every night until grief said yes for her. Becca is the fence he can see.",
+    "So: wait. Decently. It may be the most decent thing he has ever decided, and there’s one catch in it, and he sees the catch and takes it anyway. To tell her what he’s waiting for would be to ask her. So he can’t tell her.",
+    "The stairwell is very quiet after that. The sprinklers are done. The building hasn’t started. The light comes down the concrete from the window, a step at a time, and finds her face on his shoulder: the salt dried in two tracks, her eyes open, looking at nothing he can see, her lips still moving a little on the end of the prayer, and then not moving."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "She wants to be asked. Not tonight.",
+     "set": {
+      "e13_reason": "asked",
+      "soul.grace": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At dawn on the stairs you decided not to be the rebound. She wants to be asked — not the night her house fell.",
+     "response": [
+      "He’ll ask her. Not tonight, and not this week, with a ring still in a drawer on Zimple Street and an old woman’s question still hanging over a tomb. In daylight, with nothing fallen down, when she could look straight at him and say no, so that whatever she said would be hers. He can wait for that. He can wait a long time for that."
+     ],
+     "goto": "s07e"
+    },
+    {
+     "tag": "Control",
+     "text": "Take care of her. Take nothing.",
+     "set": {
+      "e13_reason": "care",
+      "soul.restraint": "+1",
+      "resolve.jack": "+1",
+      "trait.control": "+1"
+     },
+     "key": "At dawn on the stairs you decided not to be the rebound. Taking care of her meant taking nothing.",
+     "response": [
+      "He keeps his hands where they are, one on the step and one on his own knee. It isn’t much to look at. It’s what a man from Glenwood Avenue has to give when somebody asks him to take care of a girl, and he gives her all of it, and sits there."
+     ],
+     "goto": "s07e"
+    },
+    {
+     "tag": "Candor",
+     "text": "Because free, he wouldn’t wait. He knows his own hands.",
+     "set": {
+      "e13_reason": "fence",
+      "soul.honesty": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "At dawn on the stairs you decided not to be the rebound — because if you were free, you didn’t trust yourself to wait.",
+     "response": [
+      "He makes himself look at the least flattering one on the list and keep looking. If he were free this morning he wouldn’t wait. He’d be at 217 by Thursday with some excuse about notes for Hale, and she’d let him in because she’d be too tired not to, and he’d call it love, and it would be, and it would still be stealing."
+     ],
+     "goto": "s07e"
+    },
+    {
+     "tag": "Decency",
+     "text": "Becca gets left for Becca’s sake. Not for this.",
+     "set": {
+      "e13_reason": "becca",
+      "soul.restraint": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At dawn on the stairs you decided not to be the rebound. When you leave Becca, it’ll be for Becca’s sake.",
+     "response": [
+      "He thinks of the feed sack, and the two brass grommets she set herself for the rope belt, and a gold-sprayed halo she won by acclamation and couldn’t believe. Becca gets an ending that’s about Becca. On a day that’s about her, with nothing of this stairwell on it."
+     ],
+     "goto": "s07e"
+    }
+   ]
+  },
+  "s07e": {
+   "slug": "TUESDAY · 6:05 AM · DELGADO HALL, EAST STAIRWELL",
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t. On a motel porch above Lucia at three in the morning she told me I can’t say her name like that. She asked what I decided. Not to be the one who wrecks anything, I said. She said okay. Then: me neither. Bought her Mémère a fruitcake from the monks, in exact change. ‘A girl writes the thing she wants first, Youngstown.’ Halloween: Flannery O’Connor, with a stuffed peacock tagged 57. Andalusia. She wouldn’t go past the last house on Seacliff, not even for Laney. ‘I came as her. I never said she was right.’ In the last minute of the extra hour, she put my hat back on. All Souls: she wrote her grandmother’s name in the book, and Nora Calloway’s. Nora was her host at Preview Weekend, in April. That night Wes ended it, on the phone, on the east stairs. He stopped going to Mass in September. There’s a ring. She knew something in September and decided not to notice — she says she’s good at it. At six in the morning she asked me what I’m going to do."
+    }
+   ],
+   "body": [
+    "At five past six somebody comes down from four. It’s Priya, in a fleece and running tights, with her orgo text hugged to her chest and her keys already out, on her way to an early lab. She comes around the landing and sees them and stops.",
+    "She doesn’t say anything. She comes down the flight on the rail side, one careful step at a time around their feet, and on the step beside Jack she sets down a granola bar, Nature Valley, Oats ’n Honey, the kind that comes two to a green packet and gets everywhere. Then she goes on down and out the ground-floor door, and it sighs shut behind her.",
+    "At twelve past six the sun clears the hills. It comes in the east window flat and gold and lies down the stairs over both of them, warm before anything else in the building is warm.",
+    "Lena lifts her head off his shoulder. One side of her face is creased from his collar. She looks at the window, and then at him, in the gold.",
+    "“Jack,” she says. “What are you going to do?”"
+   ],
+   "choices": [
+    {
+     "tag": "Control",
+     "text": "“Nothing. Not today.”",
+     "set": {
+      "e13_dawn": "nothing",
+      "soul.restraint": "+1",
+      "resolve.jack": "+1",
+      "trait.control": "+1"
+     },
+     "cue": "Lena will remember that.",
+     "key": "At dawn she asked what you were going to do. “Nothing. Not today.”",
+     "response": [
+      "“Nothing,” he says. “Not today.”",
+      "“Okay,” Lena says. She doesn’t say anything else.",
+      "At twenty past six Lena stands up.",
+      {
+       "if": "e13_sit==\"carhartt\"",
+       "text": "She takes off the Carhartt and folds it once over her arm and hands it back to him, warm from her."
+      },
+      "She goes up the few steps to the second-floor landing, into the sun, and puts her hand on the door. “Goodnight, Jack,” she says.",
+      "“It’s morning.”",
+      "The door.",
+      "He sits on the step with the granola bar in his hand. The sun has come all the way down the flight by now and is lying on the ground-floor door, and the EXIT sign over it has gone pale and silly in the daylight, the way lit signs do once nobody needs them."
+     ],
+     "goto": "s08"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“Whatever you need.”",
+     "set": {
+      "e13_dawn": "need",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "cue": "Lena will remember that.",
+     "key": "At dawn she asked what you were going to do. “Whatever you need.”",
+     "response": [
+      "“Whatever you need.”",
+      "“I know,” Lena says, to the window. “You always do.”",
+      "At twenty past six Lena stands up.",
+      {
+       "if": "e13_sit==\"carhartt\"",
+       "text": "She takes off the Carhartt and folds it once over her arm and hands it back to him, warm from her."
+      },
+      "She goes up the few steps to the second-floor landing, into the sun, and puts her hand on the door. “Goodnight, Jack,” she says.",
+      "“It’s morning.”",
+      "The door.",
+      "He sits on the step with the granola bar in his hand. The sun has come all the way down the flight by now and is lying on the ground-floor door, and the EXIT sign over it has gone pale and silly in the daylight, the way lit signs do once nobody needs them."
+     ],
+     "goto": "s08"
+    },
+    {
+     "tag": "Charm",
+     "text": "“Get you a coffee. Then the 12:10.”",
+     "set": {
+      "e13_dawn": "coffee",
+      "rel.lena.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "cue": "Lena will remember that.",
+     "key": "At dawn she asked what you were going to do. “Coffee. Then the 12:10.”",
+     "response": [
+      "“Get you a coffee,” he says. “Then the 12:10.”",
+      "She puts her head back against the cinderblock. “Go to the 12:10, Jack.”",
+      "At twenty past six Lena stands up.",
+      {
+       "if": "e13_sit==\"carhartt\"",
+       "text": "She takes off the Carhartt and folds it once over her arm and hands it back to him, warm from her."
+      },
+      "She goes up the few steps to the second-floor landing, into the sun, and puts her hand on the door. “Goodnight, Jack,” she says.",
+      "“It’s morning.”",
+      "The door.",
+      "He sits on the step with the granola bar in his hand. The sun has come all the way down the flight by now and is lying on the ground-floor door, and the EXIT sign over it has gone pale and silly in the daylight, the way lit signs do once nobody needs them."
+     ],
+     "goto": "s08"
+    },
+    {
+     "tag": "Candor",
+     "text": "“I’m going to wait.”",
+     "if": "trait.candor>=53",
+     "set": {
+      "e13_dawn": "wait",
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "cue": "Lena will remember that.",
+     "key": "At dawn she asked what you were going to do. “I’m going to wait.”",
+     "response": [
+      "“I’m going to wait.”",
+      "“For what?”",
+      "“For you to be okay.”",
+      "She looks at him in the light off the window, with the salt dried on her face. “… Okay.”",
+      "At twenty past six Lena stands up.",
+      {
+       "if": "e13_sit==\"carhartt\"",
+       "text": "She takes off the Carhartt and folds it once over her arm and hands it back to him, warm from her."
+      },
+      "She goes up the few steps to the second-floor landing, into the sun, and puts her hand on the door. “Goodnight, Jack,” she says.",
+      "“It’s morning.”",
+      "The door.",
+      "He sits on the step with the granola bar in his hand. The sun has come all the way down the flight by now and is lying on the ground-floor door, and the EXIT sign over it has gone pale and silly in the daylight, the way lit signs do once nobody needs them."
+     ],
+     "goto": "s08"
+    }
+   ]
+  },
+  "s07r": {
+   "slug": "MONDAY · 10:52 PM · DELGADO HALL, EAST STAIRWELL",
+   "body": [
+    "For a full minute Lena is polite.",
+    "She folds her hands on her knees and sits up straight, the way a girl sits at somebody’s good table on Esplanade Avenue, and looks up at him on the step, pleasantly.",
+    "“You knew there was a ring,” she says, “and you let me find out from a thirteen-year-old.”",
+    "“Yes.”",
+    "“When?”",
+    "He tells her. The lifeguard tower at Campus Point, Columbus Day weekend, the middle of the night; a picture on a flip phone; *Don’t say nothing to her. I’m asking her daddy first.*",
+    "“That was considerate of you both,” Lena says.",
+    "“I thought — ”",
+    "“I’m sure you did.” She considers the stairs below her. “Did he show you a picture?”",
+    "“Yes.”",
+    "“Was it pretty?”",
+    "“Yes.”",
+    "“Good,” Lena says. “It should be. She wore it every day of my life.” She nods to him, the way you nod to a man who has given you directions. “Thank you for telling me now. I do appreciate it.”",
+    "Somewhere above them a door opens, and somebody’s flip-flops slap the length of the third-floor hall to the bathroom, and slap back, and the door shuts. Lena keeps her eyes on the stairs below her. He stays standing.",
+    "“Sit down, Jack,” she says. “You’re making the stairs nervous.”",
+    "He sits where he was. She lets him."
+   ],
+   "next": "s07a"
+  },
+  "s07t": {
+   "slug": "MONDAY · 10:40 PM · DELGADO HALL, EAST STAIRWELL",
+   "body": [
+    "At twenty to eleven she starts talking, and she tells it in order, the way she’d lay out a case she lost: the dates, then the facts, then what the other side said, every word of it, as if somebody is going to make her say it again.",
+    "“September,” she says. “He stopped going in September. The week after Labor Day. And he called me every night at eight-oh-four and told me about his classes and the Saints and what Luc did, and he never said. Every night, Jack. I need you to understand how many nights that is.”",
+    "“Then the boat. The fourth day. There was a house on Pauger Street with the water up to the gutters, and somebody knocking under the roof. A woman. He could hear her. He had his uncle’s axe and he couldn’t get it through the rafters — they’re cypress, they built them out of cypress, they last forever — and the water was still coming, and his uncle made him go on to the next house because there were kids on the next roof. And in the morning they came back.” She stops. “It was quiet in the morning.”",
+    "She looks at the step between her feet. “Four years. He never told anybody. He never told *me*.”",
+    {
+     "if": "knows_wes_attic",
+     "text": "Jack heard it in October, told the other way: *I couldn’t kneel for a year after. Then she came along and I could.* He keeps his face where it is."
+    },
+    "“And he drinks,” Lena says. “A little.” She holds *a little* out at arm’s length, like something the cat dragged in.",
+    "“And there’s a ring. Mémère’s. She gave it to him at Easter. *For when.* It’s in his desk drawer on Zimple Street. And yesterday — we do the tombs on All Saints, everybody does, the whitewash and the brushes and the mums, and Grandmère’s there, at St. Louis Number Three — yesterday at the tomb, in front of the Guidrys and the Broussards and God, Mémère looked up at him with a whitewash brush in her hand and said, *Et la bague, Wesley? Quand?*” She does the old woman exactly, eighty-eight years of Breaux Bridge in it, and then she quits doing it. “The ring, Wesley. When. And Josie texted me. In capitals.”",
+    "So that was the kitchen.",
+    "“So tonight I asked him. And he told me all of it, and then he said, *You’d do it. You’d marry me anyway. That’s why I can’t let you.*” She turns the LG over in her hands. “He said he won’t stand at the back of the church at our children’s baptisms with his hands in his pockets. He said he won’t do that to me. He said it like he’d already seen it.”",
+    "Lena is quiet. The building ticks around them in the cold.",
+    "“He went somewhere I can’t follow,” she says, “and he won’t come back where I am.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "wes",
+     "title": "Wes Arceneaux",
+     "text": "Lena’s boyfriend. Tulane, civil engineering; the boat at sixteen. Six-two, a chipped front tooth, a Saints cap he’s been bending since 2006. Calls me the Ohio guy. Says she called me a jagoff and that means she likes me; he’s known her since she had a retainer. Drank the Pacific: the jar came back empty. Theo fetched him from the airport alone, in a two-seater, with a sign, and cancelled his motel. Bedbugs, Theo says. He’s on Theo’s new air mattress in our room, three nights. The Corps built the walls wrong; he’s going to build them right. I like him. Saturday night on the beach at Campus Point he waded into the Pacific to the knees. At sixteen he pulled people off roofs for four days in his uncle’s boat. There was one he couldn’t get to — a woman in an attic on Pauger Street; the axe wouldn’t go through. He couldn’t kneel for a year after. Then she came along, he says, and he could. Her Mémère gave him a ring at Easter, for when. He’s going to ask her father after she graduates. He asked me not to say anything to her. He asked me to take care of her. He stopped going to Mass in September. The attic wasn’t over. Mémère asked him about the ring at the tomb on All Saints. He ended it on All Souls, on the phone: she’d marry him anyway, he said, so he couldn’t let her."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Control",
+     "text": "Keep Wes’s confidence. Say nothing.",
+     "set": {
+      "e13_ring": "kept",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He doesn’t say anything. A man on a lifeguard tower’s ramp asked him not to, and the asking is over now and the silence is still his to keep, so he keeps it, and it’s loyalty and it’s silence, both, sitting on the step with them in the cold."
+     ],
+     "goto": "s07a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“He loves you. That part’s true.”",
+     "set": {
+      "e13_ring": "kept",
+      "rel.lena.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“I know he does,” Lena says. “That’s the whole problem.”"
+     ],
+     "goto": "s07a"
+    },
+    {
+     "tag": "Candor",
+     "text": "“He told me. At the tower, in October. The attic — like it was over. And the ring.”",
+     "if": "soul.honesty>=22",
+     "set": {
+      "e13_ring": "told",
+      "lena_knows_jack_knew_ring": true,
+      "soul.honesty": "+1",
+      "rel.lena.trust": "-1",
+      "rel.lena.friction": "+2",
+      "trait.candor": "+1"
+     },
+     "cue": "Lena will remember that.",
+     "key": "On the stairs you told Lena that Wes had told you about the attic and the ring, in October.",
+     "response": [
+      "He stands up to say it. It seems to need standing."
+     ],
+     "goto": "s07r"
+    }
+   ]
+  },
+  "s08": {
+   "slug": "TUESDAY · 11:40 AM · DELGADO HALL, ROOM 412",
+   "music": "Owl City — “Fireflies”",
+   "body": [
+    "He came in at twenty-five past six, and Theo was already up — dressed, shaved, at his desk with the lamp on, a man who had decided to meet his birthday at the door. “Nineteen, Costigan,” Theo said. “Where have you been?”",
+    "“The stairs.” Theo looked at him once and didn’t ask. “Happy birthday,” Jack said, from the bed, already most of the way under.",
+    {
+     "if": "e3_sl==\"poppy\"",
+     "text": "At seven the iPhone rang and Theo had it before the second ring. “Pops.” It was the voice Jack had heard once before, in a car with no back seat on the 101, the one he had never heard Theo use on anybody else. Jack fell asleep to it.",
+     "else": "At seven the iPhone rang and Theo had it before the second ring. “Pops.” It was a voice Jack had never heard him use on anybody else. Jack fell asleep to it."
+    },
+    "He wakes at twenty to twelve into an operation. Laney is cross-legged on the Aerobed under the window in her PI LAM LITTLE shirt and sunglasses, a pink highlighter in her fist and her BlackBerry face up on the blanket singing about fireflies. Theo is at his desk with a calligraphy pen and a fan of cream place cards with a little blue anchor printed in one corner, the Harbor Inn’s own, which he has evidently decided were a first draft. The mini-fridge is standing open. Inside it, between Theo’s Pellegrino and Laney’s yogurt, a bottle of Martinelli’s sparkling cider is wearing a gold bow.",
+    "When Jack sits up, Theo’s forearm sweeps the place cards face down in one motion. They’re quick. Jack has been awake for eight seconds, and he’s quicker. Upside down, side by side at the end of the fan, in Theo’s best hand:",
+    {
+     "type": "doc",
+     "title": "Two place cards, Theo’s calligraphy",
+     "text": "COSTIGAN · BROUSSARD"
+    },
+    "“Don’t look at the fridge,” Laney says, without lowering the highlighter. “It’s resting.” Then she caps the highlighter. “She told me at six-thirty. Then she went to sleep. I put a towel under the door so the light wouldn’t —” She doesn’t finish it. “I told this one at nine. He went to *Vons*.”",
+    "“Real champagne is for when it’s *official*, Theodore,” she adds.",
+    "Theo doesn’t look up from the card he’s lettering. “Then why is there a bow on it.”",
+    "“The *bow*,” Laney says, “is for *hope*.”",
+    "Kevin is in the doorway in his navy quarter-zip with his backpack on one shoulder, on his way to lab, and has heard all of it. He looks at the fridge, and the bow, and the fan of face-down cards. “Respectfully,” he says, “her boyfriend broke up with her thirteen hours ago.”",
+    "“Thirteen and a half,” Theo says, writing.",
+    "“You’re *counting*.” Kevin hitches the backpack higher and goes to lab.",
+    "Jack sits on the edge of the bed with his feet on the cold linoleum and looks at the backs of the cards; he could reach across and turn two of them over and slide one down to the far end of the desk, and that would be a thing he had said, and at six this morning he decided not to say anything for a while, so he leaves them where they are.",
+    "Theo’s present has been in Jack’s desk since Friday."
+   ],
+   "choices": [
+    {
+     "text": "A used *Great Gatsby* from Driftwood, inscribed *old sport*.",
+     "tag": "Wit",
+     "set": {
+      "e13_gift": "gatsby",
+      "rel.theo.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "It’s the paperback with the eyes on the cover, Driftwood’s two-dollar sticker still on the back and one of the cats’ hairs still in the spine. Theo opens it to the flyleaf, where Jack has written two words in pencil, and reads them, and shuts it.",
+      "“You’ve given me my own costume,” he says. “That’s either love or a review.” He stands it upright on the desk, cover out, like a statuette. Then he uncaps the pen, and on a fresh card, in his very best hand, he writes BECCA LINDELL, and sets it beside CAROLINE ASHBY VANCE. On the Aerobed Laney reaches over and turns the song up."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "Your own copy of *The Moviegoer*, margins and all.",
+     "tag": "Sincerity",
+     "cue": "Theo will remember that.",
+     "set": {
+      "e13_gift": "moviegoer",
+      "rel.theo.warmth": "+2",
+      "rel.theo.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "For Theo’s nineteenth you gave him your own copy of *The Moviegoer*, margins and all.",
+     "response": [
+      "It comes out of the milk crate with its spine cracked white and the three-dollar library-sale sticker from Youngstown still on it. Jack slides the bookmark out first — Hale’s postcard, the one that got him to California — and puts it in his desk drawer, and hands Theo the rest, every margin of it.",
+      "Theo opens it in the middle, to a page where Jack has written NO in capitals beside Binx Bolling, and closes it. “You never lend your books.”",
+      "“I’m not lending it.”",
+      "Theo looks at him for a second. Then he gets up and puts it in the gray camera bag on the corner of his desk, and zips the bag, and sits back down, and on a fresh card, in his very best hand, he writes BECCA LINDELL and sets it beside CAROLINE ASHBY VANCE. On the Aerobed Laney reaches over and turns the song up."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "A whole shoofly pie from the Anchor, rated by Gloria on the box lid.",
+     "tag": "Charm",
+     "set": {
+      "e13_gift": "pie",
+      "rel.theo.warmth": "+1",
+      "rel.laney.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "It comes out of the bottom drawer in a white bakery box tied with red-and-white twine. Gloria boxed it Friday at the end of his shift and swore molasses keeps till Advent. On the lid, in her black Sharpie: BAKED ALASKA (DAY-OLD).",
+      "“She’s never even seen me,” Theo says.",
+      "“She’s heard you.”",
+      "Theo holds the lid out at arm’s length, like a review he intends to have framed, and decides to be pleased about it. At noon Laney eats a slice straight off the box with her fingers, sitting on the Aerobed with the sunglasses pushed up into her hair, and pronounces it “sinful, in a *Baptist* way,” while Theo, on a fresh card, in his very best hand, writes BECCA LINDELL and sets it beside CAROLINE ASHBY VANCE. Laney licks her thumb and turns the song up."
+     ],
+     "goto": "s09"
+    }
+   ]
+  },
+  "s09": {
+   "slug": "TUESDAY · 2:30 PM · THE ANACAPA LOT",
+   "set": {
+    "resolve.lena": 6
+   },
+   "body": [
+    "Tuesday afternoon comes up clear and hard and blue over the Anacapa lot, the November kind of light that turns every windshield into a mirror. Five hours of sleep sits behind Jack’s eyes like sand.",
+    "Lena is at the back of Kevin’s Odyssey in a gray sweatshirt, with the monks’ fruitcake under her arm in a Ralphs bag and the La Vang polish out of the glove box in her hand.",
+    "The back glass still says 6–0. She does it the morning after every game, before class, before coffee, every time. It’s half past two.",
+    "She stands at the glass with the bottle in her hand and doesn’t uncap it.",
+    {
+     "if": "e11_glass==\"hold\"",
+     "text": "He has held that bottle for her before."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "Hold out your hand for the polish.",
+     "set": {
+      "e13_glass": "wrote",
+      "rel.lena.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "Tuesday you wrote 7–0 on the Odyssey’s glass in her polish.",
+     "response": [
+      "She puts the bottle in his hand. He takes her six off with a thumb and the remover out of the glove box, and writes a seven in its place, his first number on that glass, and puts a flag on it the way she does.",
+      "Lena studies it with her head on one side.",
+      "“Your sevens are terrible,” she says."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "tag": "Control",
+     "text": "Hold the polish for her while she does it.",
+     "set": {
+      "e13_glass": "held",
+      "rel.lena.trust": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He takes the bottle and uncaps it and holds it at her elbow, and she takes the six off with the remover and dips the brush and writes. Her hand isn’t right on the seven. By the zero it’s steady."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“They don’t stop because you did.”",
+     "set": {
+      "e13_glass": "stop",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "She looks at him. Then she uncaps the bottle and does it fast, the six gone under a fat white seven, the flag in two strokes, and caps it hard.",
+      "“Neither do I,” she says."
+     ],
+     "goto": "s09a"
+    }
+   ]
+  },
+  "s09a": {
+   "slug": "TUESDAY · 3:05 PM · U.S. POST OFFICE, MISSION STREET",
+   "body": [
+    "They ride the 11 into town with the fruitcake on her knees. The post office on Mission Street has its two windows open and a line of six, and the clerk at the second window, who has sold Jack money orders and knows his face, lifts his chin at him the way men do in Youngstown.",
+    "In line Lena tells him what Mémère will do with it: cut it in slices thin enough to read the *Teche News* through, and serve it to the priest on Sunday, and tell him the monks in California send it to her personally. “Which is going to be true by Friday,” she says. “Hold this, Youngstown.” He holds the tin.",
+    "At the counter she buys a flat-rate box and builds it by the forms, with the monks’ tin in it and the *Tide* stuffed around it for padding, and addresses it in her capitals.",
+    {
+     "type": "doc",
+     "title": "The box, in Lena’s capitals",
+     "text": "MME. ODILE BROUSSARD\nBREAUX BRIDGE, LA 70517\n\nTHIS SIDE UP. THIS IS A FRUITCAKE.\nBE NOT AFRAID."
+    },
+    "“She asked the question I didn’t,” Lena says, taping it. “She just asked. I’m not mad at her.” She bites the tape off the roll. “I’m mad at everybody else for not asking it first.”",
+    "The clerk weighs it and reads off the litany without looking up. “Anything liquid, fragile, perishable or potentially hazardous?”",
+    "“It’s a fruitcake, sir,” Lena says. “It’s a solid in the eyes of God.”",
+    "The clerk looks at her over his glasses, decides he’d rather not, and runs the postage. While the machine thinks about it she leans on the counter, and her shoulder comes to rest against Jack’s, sweatshirt against flannel, and she lets it rest there for the price of the stamps.",
+    "Outside on the steps she puts her sunglasses on. Mission Street is bright and ordinary, a bus going by, a man hosing the sidewalk in front of Giorgio’s.",
+    "“Is Becca coming tonight?” she says.",
+    "“Theo invited her.”",
+    "“Good,” she says. “She’ll like his mama.”",
+    "Then she hands him the receipt to hold and checks the time on the LG. She has to get to Driftwood for Theo’s present. “I’ve got an idea and an hour,” she says, and goes up Mission Street toward it. Jack stands on the post office steps with the receipt — Friday, the clerk said, Saturday at the outside — and puts it in *Big Sur* to keep his place."
+   ],
+   "next": "s10"
+  },
+  "s10": {
+   "slug": "TUESDAY · 6:05 PM · PORTOLÁ HALL, THE FRONT STEPS",
+   "music": "Jay-Z feat. Alicia Keys — “Empire State of Mind”",
+   "body": [
+    "Inside, the stretch Lincoln is lit by one strip of blue tube light down the length of its ceiling, the blue of a motel pool after midnight, and under it everybody looks like their own driver’s license photo. Outside the tinted glass the dusk is almost done with Portolá’s lawn. The path lamps have come on, and a girl carrying a laundry basket has stopped dead on the walk to stare.",
+    "It was waiting in the Anacapa lot at a quarter to six, white, parked across eleven spaces, with a driver in a black cap holding the back door open and, on the leather of the back seat, a cream card on Meridian Pictures stock. Theo knew the handwriting from the curb. “Dana,” he said. “My father’s assistant. She has lovely capitals.”",
+    {
+     "type": "doc",
+     "title": "On the back seat (Meridian Pictures)",
+     "text": "Happy 19th, Teddy!\nEnjoy the evening.\n—R."
+    },
+    "He read it aloud on the curb — “Happy nineteenth, *Theodore*. Enjoy the evening” — and put it in the inside pocket of his jacket and buttoned the jacket over it. “My father,” he said, “has confused my birthday with a prom.”",
+    "Laney was already in, in green silk with her shoes in her hand. She put her head back out the door. “Is this a *prom*? Did somebody *ask* me?”",
+    "Now Theo rides up front, because Theo has never once sat where he was put, interviewing the driver. The driver’s name is Ernesto. He’s from Lompoc, and he has been driving limousines for nineteen years as of this April, which Theo has decided is a sign. “We’re the same age, Ernesto. Professionally.” Theo asked him the strangest thing anybody has ever done back here, and Ernesto said he had signed a paper about that, sir, and went on driving.",
+    "In the back Kevin has found the four crystal decanters in their brass collars and unstoppered each one and smelled it. “Iced tea,” he reports. “All four. Somebody at this company has a liability lawyer and a heart.” Margot sits against the far window in her black coat with her forehead nearly on the tint, watching Portolá’s residents stop on the paths to look at them. “They think we’re somebody,” she says. “I’ve never been so ashamed of a feeling.” The Lincoln takes the Portolá turnaround in three points, like a cruise ship docking at a lake.",
+    "Theo has made Ernesto turn the radio up. It’s Jay-Z, and when the chorus comes round Laney comes in on Alicia Keys’s half with her eyes shut and one arm up through the sunroof, in tune, every note, up to the high part and over it, a thing nobody in Delgado knew she could do and which she will not be taking questions about.",
+    "Becca is waiting on the front steps in her good blue cardigan, the one with the pearl buttons she saves for the 9:30, her braid brought forward over one shoulder, holding a jar out in front of her in both hands. She answered Theo’s invitation — *Mr. Costigan and Miss Lindell*, on Meridian letterhead, in October — by card, the day it came. The jar is a pint Ball jar of huckleberry jam with a square of red gingham tied over the lid, and when Ernesto gets out to open her door she goes past him and hands it straight in through the front window.",
+    "“It’s the *Idaho* gift,” she tells Theo. “Everybody gets one. My mom picked them in August.”",
+    "Theo holds it up to the blue light and turns it, purple-black and full to the shoulder. “Miss Lindell,” he says, “I’m going to put this on everything I own.”",
+    "She slides in next to Jack, bringing the cold in with her and the smell of somebody’s good hand soap, and gets her first proper look at him under the strip light.",
+    "“You look *tired*!”"
+   ],
+   "choices": [
+    {
+     "text": "Tell her the truth. “I was up all night on the stairs with Lena. Wes broke up with her.”",
+     "tag": "Candor",
+     "cue": "Becca will remember that.",
+     "set": {
+      "e13_becca_car": "truth",
+      "soul.honesty": "+1",
+      "rel.becca.trust": "+1",
+      "rel.becca.warmth": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "In the car Becca said you looked tired. You told her the truth: all night, on the stairs, with Lena.",
+     "response": [
+      "Becca’s hands are empty now, and both of them go over his on the seat.",
+      "“Oh, *Jack*,” she says. “I’m so glad she had you.”",
+      "She means every word; there isn’t any other way for her to mean a thing. And because there is already a page on her clipboard with Wes Arceneaux’s name at the top of it, the next thing out of her is practical. “I’m going to pray for both of them.”",
+      "Across the Lincoln, under the blue strip, Laney stops singing and looks up at the roof, and goes on looking at it down Ocean Road."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "Give her part of it. “Long night. Lena got some bad news.”",
+     "tag": "Sincerity",
+     "set": {
+      "e13_becca_car": "partial",
+      "rel.becca.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Oh, no.” She turns to him on the seat. “Is she okay?”",
+      "“She will be.”",
+      "“I’ll pray for her.”",
+      "That’s all she asks. In two months she has never once asked him for more than he handed her; she takes the piece he gives her and says thank you for it. She leans forward instead to ask Ernesto whether the tea is sweet, and Ernesto says it’s Arnold Palmer, miss, half and half, and Becca says that’s how her dad takes it, and Ernesto, who has said maybe nine words since Delgado, tells her about his daughter at Cal Poly all the way down Ocean Road."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "“Studying.”",
+     "tag": "Charm",
+     "set": {
+      "e13_becca_car": "lie",
+      "e13_lied_becca": true,
+      "soul.honesty": "-1",
+      "resolve.jack": "-1",
+      "rel.becca.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "key": "In the car Becca said you looked tired. You told her you’d been studying.",
+     "response": [
+      "“You work too *hard*.” She finds his hand on the leather and takes it, a ranch grip, warm and dry, and settles back against the seat with it in her lap beside the space the jar left.",
+      "She holds on to it down Ocean Road, through Jay-Z and Alicia Keys and Laney, who has her eyes open now and is singing the chorus straight at the back of Theo’s head."
+     ],
+     "goto": "s11"
+    }
+   ]
+  },
+  "s11": {
+   "slug": "TUESDAY · 6:35 PM · THE HARBOR INN, THE DINING ROOM",
+   "music": "Jerome Kern — “The Way You Look Tonight” (the Harbor Inn’s piano)",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "The first thing the Harbor Inn’s dining room sounds like is a piano. An old man in a dinner jacket at the baby grand by the windows is working his way through Jerome Kern with a brandy snifter of folded dollars on the lid, and under the window wall, down on their float, the sea lions bark into every rest he leaves them. The room runs the length of the second floor over the wharf, white tablecloths in a long row under brass lamps. At the far end there’s a bar with a TV over it, the sound off and the election on: Virginia called for McDonnell before anybody sat down, New Jersey still too early, Bloomberg ahead in New York by less than anybody expected, and a box for Maine’s Question 1 with two numbers in it too close together to call.",
+    "Caroline Ashby Vance has the head of the table. She’s fifty, in cream silk, with Theo’s green eyes and a tan that has been maintained rather than acquired, and under her chair in a quilted bag the Hockney puts his small orange head out every time the bread goes by. She drove up from La Cañada this afternoon. “The hills behind the house are still black,” she says, because Kevin asked about the drive. “The county put up those concrete things. I’m from Pasadena, originally. In Pasadena we didn’t have fires. We had the *Rose Parade*.” She orders the halibut with no butter, because her man in Ojai says butter is a decision.",
+    "Kevin regards the bag under her chair. “That dog’s resting heart rate,” he tells Jack, very low, “is a cry for help.”",
+    "Poppy is fourteen and in braces, out of school today, Caroline says, for a cold, which she doesn’t have, with a red Sidekick she swivels open to photograph the bread, the Hockney, the harbor and her brother, in that order. She sits as close to Theo as the chairs allow. When he talks to her his voice changes, and he talks to her a good deal.",
+    {
+     "if": "e3_sl==\"poppy\"",
+     "text": "She studies Jack across the bread basket. “You’re the *Catholic*.”\n\n“The one who *prays*,” Caroline says, pleased to have placed him.",
+     "else": "She studies Jack across the bread basket. “Are you the roommate?”\n\n“I’m the roommate.”\n\n“He said you were tall.” She considers him. “I guess you’re sitting down.”"
+    },
+    "The place cards are the Harbor Inn’s own, cream, a little blue anchor in one corner, every name redone in Theo’s calligraphy. Becca finds hers at Caroline’s right hand and turns around to Jack with it held up.",
+    "“I’m next to his *mom*!”",
+    "Caroline looks her over, once, top to bottom: the blue cardigan buttoned to the throat, the poster marker still on her knuckles from some Newman sign, the jar of jam she has carried in from the car and set down by Theo’s plate in its gingham. “You’re like a *Western*,” Caroline says, and it is evidently the highest thing she knows how to say.",
+    "“We do have a ranch,” says Becca.",
+    "“Of *course* you do.”",
+    "Jack’s card puts him on the window side, between Poppy and an empty chair, and the card in front of the empty chair says BROUSSARD. Margot is across from him. Inside four minutes she has learned that Caroline Ashby Vance spent the winter of 1985 as Vivienne Sterling on *Arroyo*, thirteen episodes, Thursdays at ten, and she is interviewing her about it as a text. “Vivienne pushes the first wife into the pool in the pilot,” Margot says, “and the series spends twelve episodes making her sorry. I’d argue the pool is the show’s actual moral authority.”",
+    "“The pool was *freezing*,” Caroline says, enchanted. “It was February. They wouldn’t heat it.” She puts a hand on Margot’s wrist. “Darling. I have waited twenty-four years for somebody to *read* it.”",
+    "At ten to seven Lena comes up the main stairs from the wharf with a book in Driftwood’s brown paper under her arm. She’s in a dark dress Jack has never seen, the kind that waits at the back of a closet for some other occasion, with the Keds and the oatmeal cardigan over it. She goes round the table before she sits: Theo’s cheek, Caroline’s hand, Poppy’s braces admired on sight, Becca’s hug returned, Margot’s nod returned, Kevin’s fist bumped, Laney’s hair put back behind her ear in passing. Then she sits down where Theo put her, in the chair beside Jack, and shakes out her napkin.",
+    "Laney is eyeing the jam by Theo’s plate. “Is that *preserves*?” she says. “At a *birthday*?”",
+    "“It’s jam,” Becca says. “Preserves have chunks.”",
+    "“Laney,” Lena says. “Be nice.”",
+    "The bread goes round again. Caroline’s eyes come down the table and stop on the two of them, side by side under the brass lamp the way her son arranged them, Jack’s elbow and Lena’s shoulder, the BROUSSARD card still propped against her water glass. She smiles at them with all her warm, expensive face.",
+    "“And how long have you two been together?”",
+    "Jack has about a second, and he spends it the way he decided to at six this morning on the stairs. Nothing changes in front of anybody, not tonight, not tomorrow. Becca doesn’t get corrected at a birthday table. Lena doesn’t get made the reason for anything, the day after. And the true answer is the simple one."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "poppy",
+     "title": "Poppy",
+     "if": "e3_sl==\"poppy\"",
+     "text": "Theo’s sister. Fourteen. He always picks up. Braces and a camera phone. Called me the Catholic."
+    },
+    {
+     "kind": "person",
+     "id": "poppy",
+     "title": "Poppy",
+     "if": "e3_sl!=\"poppy\"",
+     "text": "Theo’s sister. Fourteen. He always picks up. Braces and a camera phone."
+    },
+    {
+     "kind": "person",
+     "id": "caroline",
+     "title": "Caroline Ashby Vance",
+     "text": "Theo’s mother. Pasadena, she says, and La Cañada now; the hills behind her house are still black. One season of a TV show in the eighties. A Pomeranian named after a painter. Called Becca a Western, and meant it."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“We’re not — Becca’s with me.”",
+     "tag": "Sincerity",
+     "set": {
+      "e13_caroline": "becca",
+      "rel.becca.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At Theo’s birthday Caroline asked how long you and Lena had been together. “We’re not. Becca’s with me.”",
+     "response": [
+      "“We’re not —” He puts his hand out across the tablecloth, palm up, past the bread and the candles, toward Caroline’s right hand and the girl beside it. “Becca’s with me.”"
+     ],
+     "goto": "s11a"
+    },
+    {
+     "text": "Let Lena answer.",
+     "tag": "Control",
+     "set": {
+      "e13_caroline": "lena",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "At Theo’s birthday Caroline asked how long you and Lena had been together. You let Lena answer.",
+     "response": [
+      "He lets the second go by. Lena takes it, light, at once.",
+      "“Oh, he’s spoken for, Mrs. Vance. That’s his saint, there, with the jam.”",
+      "She says it beautifully, with a little lift of her water glass toward the far side of the table, and Caroline turns to look where it points."
+     ],
+     "goto": "s11a"
+    },
+    {
+     "text": "“We’re American Gothic, Mrs. Vance. It’s a long-standing arrangement.”",
+     "tag": "Wit",
+     "set": {
+      "e13_caroline": "gothic",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "At Theo’s birthday Caroline asked how long you and Lena had been together. “We’re American Gothic, Mrs. Vance.”",
+     "response": [
+      "The table goes up. Laney inhales a piece of roll and has to be struck between the shoulder blades by Kevin, twice, with clinical precision. Theo puts his face in his napkin. Caroline doesn’t get it and loves it; she claps her hands together once over her plate. “Oh, I *adore* that. Is that a band?”"
+     ],
+     "goto": "s11a"
+    }
+   ]
+  },
+  "s11a": {
+   "slug": "TUESDAY · 6:58 PM · THE HARBOR INN, THE DINING ROOM",
+   "body": [
+    "Becca has both hands up over the bread basket, the candlelight in her hair.",
+    "“He’s *mine*!” she tells Caroline. “Since the beach cleanup!”",
+    "Caroline is charmed all over again. She turns the smile down the table to Lena. “Oh! Then whose are *you*, darling?”",
+    "“Nobody’s, as of last night, Mrs. Vance.”",
+    "The pianist is coming up on the bridge. He plays it through, unhurried, into nine people not saying anything, and a sea lion under the window puts in a bar of its own, and the old man goes on into the last chorus as if that had been the arrangement all along.",
+    "Becca leans across Caroline’s bread plate. “Oh, Lena. I’m so sorry. I’ve had Wes on my page since September.”",
+    "“Thank you, Becca. He’d like that.”",
+    {
+     "if": "e13_becca_car==\"truth\"",
+     "text": "“Jack sat up with you all night — I’m *so* glad.”\n\n“He’s a good friend.”\n\n“He’s the *best*.”"
+    },
+    {
+     "if": "e13_lied_becca",
+     "text": "Becca’s hand finds Jack’s across the corner of the tablecloth and squeezes it once, for Lena’s sake, and *studying* sits in his mouth like a stone."
+    },
+    {
+     "if": "e13_caroline==\"lena\"",
+     "text": "Margot leans in across the table under cover of the piano, just to him. “Gallantry by abstention, Costigan. Still a system for deciding things on other people’s behalf.”",
+     "else": "Margot leans in across the table under cover of the piano, just to him. “That was very gallant, Costigan. Gallantry is a system for deciding things on other people’s behalf.”"
+    },
+    "She sits back and picks up her fork. Jack picks up his water.",
+    "Diagonally across, Laney tears a roll in half, slowly. “Sugar,” she says. “In front of his *mother*.”",
+    "“It’s not *his* mother,” Kevin says.",
+    "“It’s *somebody’s* mother.”",
+    "Lena has turned to Poppy. She asks to see the braces properly, and Poppy bares them for her, and Lena wants to know what color the bands are this month and why she picked that one, and listens to the answer, which is long and turns out to involve a boy named Tanner, through the rest of the soup."
+   ],
+   "next": "s11b"
+  },
+  "s11b": {
+   "slug": "TUESDAY · 7:06 PM · THE HARBOR INN, THE DINING ROOM",
+   "body": [
+    "At six minutes past seven Theo’s iPhone lights up on the tablecloth beside his bread plate. He turns his wrist and checks the Submariner against the screen, and seems satisfied with both. “Excuse me,” he tells the table. “It’s the studio.”",
+    "He takes it standing at the window wall with his back to the harbor, the boats and the wharf lamps behind him, one hand in his trouser pocket, and laughs in all the right places, a producer’s son hearing out a producer. By the clock over the bar it takes four minutes.",
+    "Theo comes back across the dining room with the host’s face on, and sits, and lifts his napkin back into his lap. “My father sends his love,” he says. “It’s being couriered.”",
+    "“He *tried*, darling,” Caroline says.",
+    "“Four minutes.” Theo raises his water glass to her. “It’s a personal best.”",
+    "Poppy laughs, and he lets her, and reaches over and steals the cherry tomato off her salad, and she stabs at his hand with her fork, and misses, and laughs harder.",
+    "The plates go. While the table waits on dessert, Lena stands up with the parcel in Driftwood paper and sets it in front of Theo. He undoes the tape with a thumbnail. It’s *Hitchcock/Truffaut*, a used paperback with a soft cracked spine and somebody’s 1980s price in pencil inside the cover.",
+    "“Because you talk in loglines,” Lena says.",
+    "Theo turns it over in his hands, and opens it to the middle, to Hitchcock in a white shirt with his hands up framing something, and closes it. “I’ve wanted this since I was twelve,” he says. “Thank you, Lena.”",
+    "She hugs Poppy, braces and all. She thanks Caroline for having her. She says she has to go — “Hale’s paper is due tomorrow” — and her hand goes to the medal at her collar.",
+    "Under the table Laney’s foot finds Jack’s shin, hard. He looks across at her. She’s cutting her halibut into very small pieces."
+   ],
+   "choices": [
+    {
+     "text": "Follow her out.",
+     "tag": "Sincerity",
+     "set": {
+      "e13_hall": "follow",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "When Lena left Theo’s birthday early, you followed her out.",
+     "response": [
+      "“Excuse me, Mrs. Vance.” He puts his napkin on the chair and goes after her, out through the double doors into the hall."
+     ],
+     "goto": "s11h"
+    },
+    {
+     "text": "Stay. It’s Theo’s birthday.",
+     "tag": "Control",
+     "set": {
+      "e13_hall": "stay",
+      "rel.becca.warmth": "+1",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "When Lena left Theo’s birthday early, you stayed. It was Theo’s birthday.",
+     "response": [
+      "He stays in his chair. The double doors swing shut on their felt behind her, and the pianist starts something by Gershwin, and under the tablecloth Becca’s hand finds his and holds on."
+     ],
+     "goto": "s11w"
+    },
+    {
+     "text": "Go, because Laney kicked you.",
+     "tag": "Reckless",
+     "set": {
+      "e13_hall": "kicked",
+      "rel.laney.warmth": "+1",
+      "trait.reckless": "+1"
+     },
+     "key": "When Lena left Theo’s birthday early, Laney kicked you under the table, and you went.",
+     "response": [
+      "Laney doesn’t look up from the halibut. “*Go*,” she says.",
+      "He goes."
+     ],
+     "goto": "s11h"
+    }
+   ]
+  },
+  "s11h": {
+   "slug": "TUESDAY · 7:44 PM · THE HARBOR INN, THE UPSTAIRS HALL",
+   "body": [
+    "The upstairs hall runs on past the dining room toward the guest rooms under a red runner worn pink down the middle by eighty years of luggage. Halfway along it, by the linen closet, there’s a housekeeping cart with a bucket of tiny shampoos, and beside the cart is Dulce in her gray Harbor Inn smock, the night shift just starting, and Lena with her back to him, folding a twenty small and then smaller and closing Dulce’s fingers over it. They’re talking in Spanish, fast and low. Jack catches *domingo* and nothing else.",
+    "Dulce sees him over Lena’s shoulder. They’ve met once, at the Anchor counter on the night of the gale, with Rudy translating. She says something to Lena, quick, with her chin lifted in his direction, and he doesn’t catch any of it. Lena shakes her head. Then she turns around.",
+    "“I’ll walk you to the bus,” Jack says.",
+    "“Go back in, Jack.” She says it pleasantly. “It’s his birthday.”",
+    "He doesn’t move. She looks at him there under the wall sconce, the cardigan held closed at her throat with one hand.",
+    "“Thank you for last night,” she says. “Truly.”",
+    "She goes past him to the head of the main stairs and starts down, one hand on the brass rail, the Keds quiet on the carpet. He watches her as far as the landing where the stairs turn toward the lobby. At the turn the banister takes her out of his sight, and a few seconds later, below, the lobby door sighs on its closer.",
+    "Behind him Dulce’s cart squeaks on down the hall. He goes back in to the birthday.",
+    {
+     "if": "e13_hall==\"kicked\"",
+     "text": "When he sits down Laney keeps her eyes on her plate and pushes the bread basket across the tablecloth until it bumps his."
+    }
+   ],
+   "next": "s12"
+  },
+  "s11w": {
+   "slug": "TUESDAY · 7:44 PM · THE HARBOR INN, THE DINING ROOM WINDOW",
+   "body": [
+    "Poppy has gone to the window wall with her Sidekick to photograph the sea lions, and after a minute she comes back for him. “There’s a really fat one,” she says. “Come look. You’re the only one who isn’t talking.”",
+    "He goes with her to the glass. From up here the wharf is a long lit plank laid out over black water, the boats nosed in along it under their riding lights, the sea lions heaped on the float below, complaining. Poppy finds the fat one for him.",
+    "And Lena is down there on the boards in her cardigan, walking toward Mission Street under the lamps, toward the shelter where the 11 stops, at an ordinary pace. Halfway along she stops at the rail and looks out at the harbor for a while with her hands in her cardigan pockets. Then she goes on, lamp to lamp, and he watches her as far as the head of the wharf and the lit glass of the bus shelter.",
+    "Poppy is watching him in the window. “Is she your girlfriend?”",
+    "“No.”",
+    "“Is it the one with the jam?”",
+    "“That’s Becca.”",
+    "Poppy thinks about that, braces resting on her lower lip. “Then why’d you watch her go?”",
+    "She doesn’t wait for him to answer it. She holds the Sidekick up to the glass and takes a picture of the harbor — the lamps, the float, the dark water, and in the corner of it, faint on the window, his own reflection, still looking."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "poppy",
+     "title": "Poppy",
+     "if": "e3_sl==\"poppy\"",
+     "text": "Theo’s sister. Fourteen. He always picks up. Braces and a camera phone. Called me the Catholic. Asked if Lena was my girlfriend, and then asked why I watched her go."
+    },
+    {
+     "kind": "person",
+     "id": "poppy",
+     "title": "Poppy",
+     "if": "e3_sl!=\"poppy\"",
+     "text": "Theo’s sister. Fourteen. He always picks up. Braces and a camera phone. Asked if Lena was my girlfriend, and then asked why I watched her go."
+    }
+   ],
+   "next": "s12"
+  },
+  "s12": {
+   "slug": "TUESDAY · 8:05 PM · THE HARBOR INN, THE DINING ROOM",
+   "body": [
+    "The cake comes out at five past eight on a cart pushed by two waiters: the kitchen’s chocolate, three layers, which Caroline insisted on by phone from La Cañada over her son’s objections, with nineteen candles stuck in it in two uneven rings. The waitstaff sing. The pianist comes in under them a half step off and stays there, out of loyalty to the key he started in.",
+    "Theo leans over the cake and blows out all nineteen in one breath, cleanly, without appearing to try. “Nineteen,” he announces through the smoke. “Still no Oscar.”",
+    "Then Becca asks Caroline if she may say something, and Caroline says *please*, and Becca stands up at her place with her water glass.",
+    "“Today’s St. Martin de Porres! He had a dog and a cat and a mouse eat out of the same bowl and nobody fought.” She looks round at every one of them, the empty chair included. “That’s *us*! That’s this *table*!”",
+    "It shouldn’t work. It works. Theo, at the foot of the table, is moved against his will, again, and lifts his water glass to her with the cake knife still in his other hand.",
+    "While everybody is watching Becca sit back down, Laney reaches across the empty chair, slides the BROUSSARD card out of its little silver holder, and puts it in her clutch.",
+    "Kevin is at the end of the table, facing the bar. The TV over it has gone to Maine — QUESTION 1, two numbers a point apart, TOO CLOSE TO CALL — and Kevin has stopped with a bite of cake halfway up on his fork and is watching the box, and keeps watching it until the network cuts away to a ballroom somewhere in New Jersey. Margot, beside him, watches Kevin watch it. Then he eats the cake.",
+    "Caroline orders champagne for the table. The waiter brings it in a silver bucket, looks round at the faces — braces, a crew cut, a girl from Idaho in a cardigan with pearl buttons — and pours one glass, for Caroline, and leaves the bottle in the ice. Theo waits until the man’s back is turned. Then he lifts the bottle out of the bucket and goes round below the edge of the tablecloth, glass by glass, topping up water glasses with something that isn’t water, and arrives at Jack’s."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "theo",
+     "title": "Theo Vance",
+     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath."
+    },
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Drink it.",
+     "tag": "Reckless",
+     "set": {
+      "e13_glass_tue": "drink",
+      "resolve.jack": "-1",
+      "soul.restraint": "-1",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "It’s cold and very good, small hard bubbles, the first thing all day that hasn’t asked him anything, and it goes straight to the four hours he slept on top of his covers this morning and sits down there. He finishes it. Theo, passing behind his chair with the bottle, refills it on the way by."
+     ],
+     "goto": "s12a"
+    },
+    {
+     "text": "Water.",
+     "tag": "Control",
+     "set": {
+      "e13_glass_tue": "water",
+      "resolve.jack": "+1",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He puts his hand over the glass. Theo, without breaking stride, moves on to Laney’s.",
+      "Across the table Margot notices. Her hand goes to the place at her elbow where the notebook would be, and finds a butter knife, and she puts the knife down again and eats her cake."
+     ],
+     "goto": "s12a"
+    },
+    {
+     "text": "Pour yours into Laney’s.",
+     "tag": "Charm",
+     "set": {
+      "e13_glass_tue": "laney",
+      "rel.laney.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "He waits for Theo to move on and tips his glass into Laney’s under the edge of the tablecloth, the champagne going in fizzing on top of her own.",
+      "Laney looks down at the level in her glass, and over at him. “You’re a *gentleman*.”",
+      "“I’m a dishwasher. I’m due at nine.”"
+     ],
+     "goto": "s12a"
+    }
+   ]
+  },
+  "s12a": {
+   "slug": "TUESDAY · 8:45 PM · THE HARBOR INN, THE TOP OF THE STAIRS",
+   "body": [
+    "At a quarter to nine he has to go. Gloria said nine instead of seven tonight, two hours’ pay he doesn’t have, and he took them without arguing.",
+    "Becca gets up with him and walks him out to the top of the main stairs, where Caroline has come out into the hall to take a phone call and is standing by the brass rail with the Hockney under one arm. Becca kisses him there in front of her, brisk and sure, a hand on his chest, and turns him around by the shoulders to face the stairs.",
+    "“Go *wash* things!”",
+    "Caroline, with the phone at her ear, says “*Oh*,” into it.",
+    {
+     "if": "e13_gift==\"moviegoer\"",
+     "text": "Theo comes out after them with his napkin still in his hand and the corner of *The Moviegoer* showing over the edge of his inside pocket, its cracked white spine.",
+     "else": "Theo comes out after them with his napkin still in his hand."
+    },
+    "“Costigan,” he says, in the host’s voice. “You’re leaving my birthday for a dish machine. Sterilize something in my honor.”",
+    "“Happy birthday, Theo.”",
+    "He goes down the stairs and out across the lobby onto the wharf, and the cold off the water is waiting for him at the door."
+   ],
+   "next": "s13"
+  },
+  "s13": {
+   "slug": "WEDNESDAY · 12:50 AM · THE ANCHOR, THE DISH PIT",
+   "music": "Gillian Welch — “Look at Miss Ohio”",
+   "body": [
+    "The dish pit smells of the Hobart’s steam and of bleach, and of the coffee on the back warmer, which has been cooking down since ten o’clock and has gone to tar. The harbor has fogged the window over the dish station from the outside; the wharf lamps beyond it are soft yellow rings.",
+    "Rudy has the transistor on the shelf over the pass tuned to KNX out of Los Angeles, which comes in this late off the sky. New Jersey went to Christie hours ago. Bloomberg has his third term. The man has moved on to Maine when Rudy reaches up and turns him off in the middle of a county, and rolls the dial down through a mile of static until he finds the college station doing its overnight show, a girl with a sleepy voice and a stack of records, and leaves it there.",
+    "“Enough,” Rudy says, and goes back to scraping the flat-top.",
+    "At ten to one the Anchor is three truckers, a couple from the college splitting fries in a booth without speaking, and Merle at the counter over a slice of something with a lattice top. Gloria comes down the counter with the pot, the pencil through her bun, and stops at the end of it by the dish station, where she can keep the room in one eye and Jack in the other.",
+    {
+     "if": "e12_ray==\"maria\"",
+     "text": "“So,” she says. “The girl you’re *seeing*. The apple.”",
+     "else": "“So,” she says. “The apple.”"
+    },
+    "He runs a rack of coffee cups into the Hobart and pulls the door down.",
+    "“And the pecan?”"
+   ],
+   "choices": [
+    {
+     "text": "“Her boyfriend let her go last night. I’m not going to be the next guy at the door.”",
+     "tag": "Sincerity",
+     "set": {
+      "e13_gloria": "door",
+      "soul.honesty": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At the Anchor you told Gloria you won’t be the next guy at the door.",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "gloria",
+       "title": "Gloria (the Anchor)",
+       "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it."
+      }
+     ],
+     "response": [
+      "It’s out before he has decided whether to tell anybody, here in the steam with the cups, and once it’s out the rest of it comes along behind. “When I ask her,” he says, “she’s going to be able to say no.”",
+      "Gloria looks at him a long time over the pot. Long enough for a trucker down the counter to lift his empty cup at her and put it down again.",
+      "“Hon,” she says, “nobody holds a door that long without somebody else walking through it.”",
+      "Then she rates him, which is how Gloria ends a conversation. “Shoofly,” she says. “Still.” And she goes on down the counter with the pot to the trucker."
+     ],
+     "goto": "s13a"
+    },
+    {
+     "text": "“I’m seeing somebody, Gloria. You heard me.”",
+     "tag": "Control",
+     "set": {
+      "e13_gloria": "seeing",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "At the Anchor Gloria asked about the pecan. You told her you’re seeing somebody.",
+     "response": [
+      "“*Seeing*.” Gloria turns the word over. “Hm.”",
+      "She takes the pot on down the counter. On her way past Merle she says, a good deal louder than she needs to, “He’s *seeing* somebody, Merle. Says it like he’s reading a bus schedule.”",
+      "Merle, who has not been known to look up from a pie for anything short of a fire on the wharf, looks up."
+     ],
+     "goto": "s13a"
+    },
+    {
+     "text": "“Rate the shoofly.”",
+     "tag": "Wit",
+     "set": {
+      "e13_gloria": "pie",
+      "trait.wit": "+1"
+     },
+     "key": "At the Anchor Gloria asked about the pecan. You asked her to rate the shoofly instead.",
+     "response": [
+      "“Day-old,” Gloria says, at once.",
+      "She fills his water glass from the pitcher on the pass and sets it down by the soap rack. Then she takes the pot on down the counter, and over her shoulder, to the room: “Still good. Won’t be Thursday.”"
+     ],
+     "goto": "s13a"
+    }
+   ]
+  },
+  "s13a": {
+   "slug": "WEDNESDAY · 12:58 AM · THE ANCHOR, THE DISH PIT",
+   "body": [
+    "At two minutes to one the Hobart is on its last cycle of the night and Rudy has the flat-top scraped down to silver. The song is still going on the transistor. Jack dries his hands on the front of the apron and picks the RAZR up off the steel by the soap rack, where it has been lying face up since nine, and tilts it to the one angle where the screen lights.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Theo says you went to work. Go home after, Jack. Sleep. —L.",
+     "time": "11:58 PM"
+    },
+    "He reads it standing at the sink, in the apron, with his sleeves wet to the elbow. Before he can thumb his way into an answer the phone buzzes in his hand again: a text that left Portolá at 12:49 and has taken its time getting across town.",
+    {
+     "type": "sms",
+     "from": "Becca",
+     "text": "Can we talk tomorrow? Good talk!! :)",
+     "time": "12:49 AM"
+    },
+    "Down at the counter Gloria is counting the tip jar into her apron. The Hobart finishes its cycle, and its door comes up, and it lets the steam out."
+   ],
+   "end": true
+  }
+ }
+}
