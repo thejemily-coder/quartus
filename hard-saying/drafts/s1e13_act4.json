@@ -1,0 +1,511 @@
+{
+ "scenes": {
+  "s10": {
+   "slug": "TUESDAY · 6:05 PM · PORTOLÁ HALL, THE FRONT STEPS",
+   "music": "Jay-Z feat. Alicia Keys — “Empire State of Mind”",
+   "body": [
+    "Inside, the stretch Lincoln is lit by one strip of blue tube light down the length of its ceiling, the blue of a motel pool after midnight, and under it everybody looks like their own driver’s license photo. Outside the tinted glass the dusk is almost done with Portolá’s lawn. The path lamps have come on, and a girl carrying a laundry basket has stopped dead on the walk to stare.",
+    "It was waiting in the Anacapa lot at a quarter to six, white, parked across eleven spaces, with a driver in a black cap holding the back door open and, on the leather of the back seat, a cream card on Meridian Pictures stock. Theo knew the handwriting from the curb. “Dana,” he said. “My father’s assistant. She has lovely capitals.”",
+    {
+     "type": "doc",
+     "title": "On the back seat (Meridian Pictures)",
+     "text": "Happy 19th, Teddy!\nEnjoy the evening.\n—R."
+    },
+    "He read it aloud to the five of them — “Happy nineteenth, *Theodore*. Enjoy the evening” — and put it in the inside pocket of his jacket and buttoned the jacket over it. “My father,” he said, “has confused my birthday with a prom.”",
+    "Laney was already in, in green silk with her shoes in her hand. She put her head back out the door. “Is this a *prom*? Did somebody *ask* me?”",
+    "Now Theo rides up front, because Theo has never once sat where he was put, interviewing the driver. The driver’s name is Ernesto. He’s from Lompoc, and he has been driving limousines for nineteen years as of this April, which Theo has decided is a sign. “We’re the same age, Ernesto. Professionally.” Theo asked him the strangest thing anybody has ever done back here, and Ernesto said he had signed a paper about that, sir, and went on driving.",
+    "In the back Kevin has found the four crystal decanters in their brass collars and unstoppered each one and smelled it. “Iced tea,” he reports. “All four. Somebody at this company has a liability lawyer and a heart.” Margot sits against the far window in her black coat with her forehead nearly on the tint, watching Portolá’s residents stop on the paths to look at them. “They think we’re somebody,” she says. “I’ve never been so ashamed of a feeling.” The Lincoln takes the Portolá turnaround in three points, like a cruise ship docking at a lake.",
+    "Theo has made Ernesto turn the radio up. It’s Jay-Z, and when the chorus comes round Laney comes in on Alicia Keys’s half with her eyes shut and one arm up through the sunroof, in tune, every note, up to the high part and over it, a thing nobody in Delgado knew she could do and which she will not be taking questions about.",
+    "Becca is waiting on the front steps in her good blue cardigan, the one with the pearl buttons she saves for the 9:30, her braid brought forward over one shoulder, holding a jar out in front of her in both hands. She answered Theo’s invitation — *Mr. Costigan and Miss Lindell*, on Meridian letterhead, in October — by card, the day it came. The jar is a pint Ball jar of huckleberry jam with a square of red gingham tied over the lid, and when Ernesto gets out to open her door she goes past him and hands it straight in through the front window.",
+    "“It’s the *Idaho* gift,” she tells Theo. “Everybody gets one. My mom picked them in August.”",
+    "Theo holds it up to the blue light and turns it, purple-black and full to the shoulder. “Miss Lindell,” he says, “I’m going to put this on everything I own.”",
+    "She slides in next to Jack, bringing the cold in with her and the smell of somebody’s good hand soap, and gets her first proper look at him under the strip light.",
+    "“You look *tired*!”"
+   ],
+   "choices": [
+    {
+     "text": "Tell her the truth. “I was up all night on the stairs with Lena. Wes broke up with her.”",
+     "tag": "Candor",
+     "cue": "Becca will remember that.",
+     "set": {
+      "e13_becca_car": "truth",
+      "soul.honesty": "+1",
+      "rel.becca.trust": "+1",
+      "rel.becca.warmth": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "In the car Becca said you looked tired. You told her the truth: all night, on the stairs, with Lena.",
+     "response": [
+      "Becca’s hands are empty now, and both of them go over his on the seat.",
+      "“Oh, *Jack*,” she says. “I’m so glad she had you.”",
+      "She means it all the way down; there isn’t any other way for her to mean a thing. And because there is already a page on her clipboard with Wes Arceneaux’s name at the top of it, the next thing out of her is practical. “I’m going to pray for both of them.”",
+      "Across the Lincoln, under the blue strip, Laney stops singing and looks up at the roof, and goes on looking at it down Ocean Road."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "Give her part of it. “Long night. Lena got some bad news.”",
+     "tag": "Sincerity",
+     "set": {
+      "e13_becca_car": "partial",
+      "rel.becca.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Oh, no.” She turns to him on the seat. “Is she okay?”",
+      "“She will be.”",
+      "“I’ll pray for her.”",
+      "That’s all she asks. In two months she has never once asked him for more than he handed her; she takes the piece he gives her and says thank you for it. She leans forward instead to ask Ernesto whether the tea is sweet, and Ernesto says it’s Arnold Palmer, miss, half and half, and Becca says that’s how her dad takes it, and Ernesto, who has said maybe nine words since Delgado, tells her about his daughter at Cal Poly all the way down Ocean Road."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "“Studying.”",
+     "tag": "Charm",
+     "set": {
+      "e13_becca_car": "lie",
+      "e13_lied_becca": true,
+      "soul.honesty": "-1",
+      "resolve.jack": "-1",
+      "rel.becca.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "key": "In the car Becca said you looked tired. You told her you’d been studying.",
+     "response": [
+      "“You work too *hard*.” She finds his hand on the leather and takes it, a ranch grip, warm and dry, and settles back against the seat with it in her lap beside the space the jar left.",
+      "She holds on to it down Ocean Road, through Jay-Z and Alicia Keys and Laney, who has her eyes open now and is singing the chorus straight at the back of Theo’s head."
+     ],
+     "goto": "s11"
+    }
+   ]
+  },
+  "s11": {
+   "slug": "TUESDAY · 6:35 PM · THE HARBOR INN, THE DINING ROOM",
+   "music": "Jerome Kern — “The Way You Look Tonight” (the Harbor Inn’s piano)",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "The first thing the Harbor Inn’s dining room sounds like is a piano. An old man in a dinner jacket at the baby grand by the windows is working his way through Jerome Kern with a brandy snifter of folded dollars on the lid, and under the window wall, down on their float, the sea lions bark into every rest he leaves them. The room runs the length of the second floor over the wharf, white tablecloths in a long row under brass lamps. At the far end there’s a bar with a TV over it, the sound off and the election on: Virginia called for McDonnell before anybody sat down, New Jersey still too early, Bloomberg ahead in New York by less than anybody expected, and a box for Maine’s Question 1 with two numbers in it too close together to call.",
+    "Caroline Ashby Vance has the head of the table. She’s fifty, in cream silk, with Theo’s green eyes and a tan that has been maintained rather than acquired, and under her chair in a quilted bag the Hockney puts his small orange head out every time the bread goes by. She drove up from La Cañada this afternoon. “The hills behind the house are still black,” she says, because Kevin asked about the drive. “The county put up those concrete things. I’m from Pasadena, originally. In Pasadena we didn’t have fires. We had the *Rose Parade*.” She orders the halibut with no butter, because her man in Ojai says butter is a decision.",
+    "Kevin regards the bag under her chair. “That dog’s resting heart rate,” he tells Jack, very low, “is a cry for help.”",
+    "Poppy is fourteen and in braces, out of school today for a cold she doesn’t have, with a red Sidekick she swivels open to photograph the bread, the Hockney, the harbor and her brother, in that order. She sits as close to Theo as the chairs allow. When he talks to her his voice changes, and he talks to her a good deal.",
+    {
+     "if": "e3_sl==\"poppy\"",
+     "text": "She studies Jack across the bread basket. “You’re the *Catholic*.”\n\n“The one who *prays*,” Caroline says, pleased to have placed him.",
+     "else": "She studies Jack across the bread basket. “Are you the roommate?”\n\n“I’m the roommate.”\n\n“He said you were tall.” She considers him. “I guess you’re sitting down.”"
+    },
+    "The place cards are the Harbor Inn’s own, cream, a little blue anchor in one corner, every name redone in Theo’s calligraphy. Becca finds hers at Caroline’s right hand and turns around to Jack with it held up.",
+    "“I’m next to his *mom*!”",
+    "Caroline looks her over, once, top to bottom: the blue cardigan buttoned to the throat, the poster marker still on her knuckles from some Newman sign, the jar of jam she has carried in from the car and set down by Theo’s plate in its gingham. “You’re like a *Western*,” Caroline says, and it is evidently the highest thing she knows how to say.",
+    "“We do have a ranch,” says Becca.",
+    "“Of *course* you do.”",
+    "Jack’s card puts him on the window side, between Poppy and an empty chair, and the card in front of the empty chair says BROUSSARD. Margot is across from him. Inside four minutes she has learned that Caroline Ashby Vance spent the winter of 1985 as Vivienne Sterling on *Arroyo*, thirteen episodes, Thursdays at ten, and she is interviewing her about it as a text. “Vivienne pushes the first wife into the pool in the pilot,” Margot says, “and the series spends twelve episodes making her sorry. I’d argue the pool is the show’s actual moral authority.”",
+    "“The pool was *freezing*,” Caroline says, enchanted. “It was February. They wouldn’t heat it.” She puts a hand on Margot’s wrist. “Darling. I have waited twenty-four years for somebody to *read* it.”",
+    "At ten to seven Lena comes up the main stairs from the wharf with a book in Driftwood’s brown paper under her arm. She’s in a dark dress Jack has never seen, the kind that waits at the back of a closet for some other occasion, with the Keds and the oatmeal cardigan over it. She goes round the table before she sits: Theo’s cheek, Caroline’s hand, Poppy’s braces admired on sight, Becca’s hug returned, Margot’s nod returned, Kevin’s fist bumped, Laney’s hair put back behind her ear in passing. Then she sits down where Theo put her, in the chair beside Jack, and shakes out her napkin.",
+    "Laney is eyeing the jam by Theo’s plate. “Is that *preserves*?” she says. “At a *birthday*?”",
+    "“It’s jam,” Becca says. “Preserves have chunks.”",
+    "“Laney,” Lena says. “Be nice.”",
+    "The bread goes round again. Caroline’s eyes come down the table and stop on the two of them, side by side under the brass lamp the way her son arranged them, Jack’s elbow and Lena’s shoulder, the BROUSSARD card between their water glasses. She smiles at them with all her warm, expensive face.",
+    "“And how long have you two been together?”",
+    "Jack has about a second, and he spends it the way he decided to at six this morning on the stairs. Nothing changes in front of anybody, not tonight, not tomorrow. Becca doesn’t get corrected at a birthday table. Lena doesn’t get made the reason for anything, the day after. And the true answer is the simple one."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "poppy",
+     "title": "Poppy",
+     "if": "e3_sl==\"poppy\"",
+     "text": "Theo’s sister. Fourteen. He always picks up. Braces and a camera phone. Called me the Catholic."
+    },
+    {
+     "kind": "person",
+     "id": "poppy",
+     "title": "Poppy",
+     "if": "e3_sl!=\"poppy\"",
+     "text": "Theo’s sister. Fourteen. He always picks up. Braces and a camera phone."
+    },
+    {
+     "kind": "person",
+     "id": "caroline",
+     "title": "Caroline Ashby Vance",
+     "text": "Theo’s mother. Pasadena, she says, and La Cañada now; the hills behind her house are still black. One season of a TV show in the eighties. A Pomeranian named after a painter. Called Becca a Western, and meant it."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“We’re not — Becca’s with me.”",
+     "tag": "Sincerity",
+     "set": {
+      "e13_caroline": "becca",
+      "rel.becca.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At Theo’s birthday Caroline asked how long you and Lena had been together. “We’re not. Becca’s with me.”",
+     "response": [
+      "“We’re not —” He puts his hand out across the tablecloth, palm up, past the bread and the candles, toward Caroline’s right hand and the girl beside it. “Becca’s with me.”"
+     ],
+     "goto": "s11a"
+    },
+    {
+     "text": "Let Lena answer.",
+     "tag": "Control",
+     "set": {
+      "e13_caroline": "lena",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "At Theo’s birthday Caroline asked how long you and Lena had been together. You let Lena answer.",
+     "response": [
+      "He lets the second go by. Lena takes it, light, at once.",
+      "“Oh, he’s spoken for, Mrs. Vance. That’s his saint, there, with the jam.”",
+      "She says it beautifully, with a little lift of her water glass toward the far side of the table, and Caroline turns to look where it points."
+     ],
+     "goto": "s11a"
+    },
+    {
+     "text": "“We’re American Gothic, Mrs. Vance. It’s a long-standing arrangement.”",
+     "tag": "Wit",
+     "set": {
+      "e13_caroline": "gothic",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "At Theo’s birthday Caroline asked how long you and Lena had been together. “We’re American Gothic, Mrs. Vance.”",
+     "response": [
+      "The table goes up. Laney inhales a piece of roll and has to be struck between the shoulder blades by Kevin, twice, with clinical precision. Theo puts his face in his napkin. Caroline doesn’t get it and loves it; she claps her hands together once over her plate. “Oh, I *adore* that. Is that a band?”"
+     ],
+     "goto": "s11a"
+    }
+   ]
+  },
+  "s11a": {
+   "slug": "TUESDAY · 6:58 PM · THE HARBOR INN, THE DINING ROOM",
+   "body": [
+    "Becca has both hands up over the bread basket, the candlelight in her hair.",
+    "“He’s *mine*!” she tells Caroline. “Since the beach cleanup!”",
+    "Caroline is charmed all over again. She turns the smile down the table to Lena. “Oh! Then whose are *you*, darling?”",
+    "“Nobody’s, as of last night, Mrs. Vance.”",
+    "The pianist is coming up on the bridge. He plays it through, unhurried, into nine people not saying anything, and a sea lion under the window puts in a bar of its own, and the old man goes on into the last chorus as if that had been the arrangement all along.",
+    "Becca leans across Caroline’s bread plate. “Oh, Lena. I’m so sorry. I’ve had Wes on my page since September.”",
+    "“Thank you, Becca. He’d like that.”",
+    {
+     "if": "e13_becca_car==\"truth\"",
+     "text": "“Jack sat up with you all night — I’m *so* glad.”\n\n“He’s a good friend.”\n\n“He’s the *best*.”"
+    },
+    {
+     "if": "e13_lied_becca",
+     "text": "Becca’s hand finds Jack’s across the corner of the tablecloth and squeezes it once, for Lena’s sake, and *studying* sits in his mouth like a stone."
+    },
+    {
+     "if": "e13_caroline==\"lena\"",
+     "text": "Margot leans in across the table under cover of the piano, just to him. “Gallantry by abstention, Costigan. Still a system for deciding things on other people’s behalf.”",
+     "else": "Margot leans in across the table under cover of the piano, just to him. “That was very gallant, Costigan. Gallantry is a system for deciding things on other people’s behalf.”"
+    },
+    "She sits back and picks up her fork. Jack picks up his water.",
+    "Two seats down, Laney tears a roll in half, slowly. “Sugar,” she says. “In front of his *mother*.”",
+    "“It’s not *his* mother,” Kevin says.",
+    "“It’s *somebody’s* mother.”",
+    "Lena has turned to Poppy. She asks to see the braces properly, and Poppy bares them for her, and Lena wants to know what color the bands are this month and why she picked that one, and listens to the answer, which is long and turns out to involve a boy named Tanner, all the way through the soup."
+   ],
+   "next": "s11b"
+  },
+  "s11b": {
+   "slug": "TUESDAY · 7:06 PM · THE HARBOR INN, THE DINING ROOM",
+   "body": [
+    "At six minutes past seven Theo’s iPhone lights up on the tablecloth beside his bread plate. He turns his wrist and checks the Submariner against the screen, and seems satisfied with both. “Excuse me,” he tells the table. “It’s the studio.”",
+    "He takes it standing at the window wall with his back to the harbor, the boats and the wharf lamps behind him, one hand in his trouser pocket, and laughs in all the right places, a producer’s son hearing out a producer. By the clock over the bar it takes four minutes.",
+    "Theo comes back across the dining room with the host’s face on, and sits, and lifts his napkin back into his lap. “My father sends his love,” he says. “It’s being couriered.”",
+    "“He *tried*, darling,” Caroline says.",
+    "“Four minutes.” Theo raises his water glass to her. “It’s a personal best.”",
+    "Poppy laughs, and he lets her, and reaches over and steals the cherry tomato off her salad, and she stabs at his hand with her fork, and misses, and laughs harder.",
+    "The plates go. While the table waits on dessert, Lena stands up with the parcel in Driftwood paper and sets it in front of Theo. He undoes the tape with a thumbnail. It’s *Hitchcock/Truffaut*, a used paperback with a soft cracked spine and somebody’s 1980s price in pencil inside the cover.",
+    "“Because you talk in loglines,” Lena says.",
+    "Theo turns it over in his hands, and opens it to the middle, to Hitchcock in a white shirt with his hands up framing something, and closes it. “I’ve wanted this since I was twelve,” he says. “Thank you, Lena.”",
+    "She hugs Poppy, braces and all. She thanks Caroline for having her. She says she has to go — “Hale’s paper is due tomorrow” — and her hand goes to the medal at her collar.",
+    "Under the table Laney’s foot finds Jack’s shin, hard. He looks across at her. She’s cutting her halibut into very small pieces."
+   ],
+   "choices": [
+    {
+     "text": "Follow her out.",
+     "tag": "Sincerity",
+     "set": {
+      "e13_hall": "follow",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "When Lena left Theo’s birthday early, you followed her out.",
+     "response": [
+      "“Excuse me, Mrs. Vance.” He puts his napkin on the chair and goes after her, out through the double doors into the hall."
+     ],
+     "goto": "s11h"
+    },
+    {
+     "text": "Stay. It’s Theo’s birthday.",
+     "tag": "Control",
+     "set": {
+      "e13_hall": "stay",
+      "rel.becca.warmth": "+1",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "When Lena left Theo’s birthday early, you stayed. It was Theo’s birthday.",
+     "response": [
+      "He stays in his chair. The double doors swing shut on their felt behind her, and the pianist starts something by Gershwin, and under the tablecloth Becca’s hand finds his and holds on."
+     ],
+     "goto": "s11w"
+    },
+    {
+     "text": "Go, because Laney kicked you.",
+     "tag": "Reckless",
+     "set": {
+      "e13_hall": "kicked",
+      "rel.laney.warmth": "+1",
+      "trait.reckless": "+1"
+     },
+     "key": "When Lena left Theo’s birthday early, Laney kicked you under the table, and you went.",
+     "response": [
+      "Laney doesn’t look up from the halibut. “*Go*,” she says.",
+      "He goes."
+     ],
+     "goto": "s11h"
+    }
+   ]
+  },
+  "s11h": {
+   "slug": "TUESDAY · 7:44 PM · THE HARBOR INN, THE UPSTAIRS HALL",
+   "body": [
+    "The upstairs hall runs on past the dining room toward the guest rooms under a red runner worn pink down the middle by eighty years of luggage. Halfway along it, by the linen closet, there’s a housekeeping cart with a bucket of tiny shampoos, and beside the cart is Dulce in her gray Harbor Inn smock, the night shift just starting, and Lena with her back to him, folding a twenty small and then smaller and closing Dulce’s fingers over it. They’re talking in Spanish, fast and low. Jack catches *domingo* and nothing else.",
+    "Dulce sees him over Lena’s shoulder. She knows his face from the Anchor counter on the night of the gale. She says something to Lena, quick, with her chin lifted in his direction, and he doesn’t catch any of it. Lena shakes her head. Then she turns around.",
+    "“I’ll walk you to the bus,” Jack says.",
+    "“Go back in, Jack.” She says it pleasantly. “It’s his birthday.”",
+    "He doesn’t move, and she looks at him there under the wall sconce a second longer, the cardigan held closed at her throat with one hand.",
+    "“Thank you for last night,” she says. “Truly.”",
+    "She goes past him to the head of the main stairs and starts down, one hand on the brass rail, the Keds quiet on the carpet. He watches her as far as the landing where the stairs turn toward the lobby. At the turn the banister takes her out of his sight, and a few seconds later, below, the lobby door sighs on its closer.",
+    "Behind him Dulce’s cart squeaks on down the hall. He goes back in to the birthday.",
+    {
+     "if": "e13_hall==\"kicked\"",
+     "text": "When he sits down Laney doesn’t look at him. She pushes the bread basket across the tablecloth until it bumps his plate, and leaves it there."
+    }
+   ],
+   "next": "s12"
+  },
+  "s11w": {
+   "slug": "TUESDAY · 7:44 PM · THE HARBOR INN, THE DINING ROOM WINDOW",
+   "body": [
+    "Poppy has gone to the window wall with her Sidekick to photograph the sea lions, and after a minute she comes back for him. “There’s a really fat one,” she says. “Come look. You’re the only one who isn’t talking.”",
+    "He goes with her to the glass. From up here the wharf is a long lit plank laid out over black water, the boats nosed in along it under their riding lights, the sea lions heaped on the float below, complaining. Poppy finds the fat one for him.",
+    "And Lena is down there on the boards in her cardigan, walking toward Mission Street under the lamps, toward the shelter where the 11 stops, at an ordinary pace. Halfway along she stops at the rail and looks out at the harbor for a while with her hands in her cardigan pockets. Then she goes on, lamp to lamp, and he watches her as far as the head of the wharf and the lit glass of the bus shelter.",
+    "Poppy is watching him in the window. “Is she your girlfriend?”",
+    "“No.”",
+    "“Is it the one with the jam?”",
+    "“That’s Becca.”",
+    "Poppy thinks about that, braces resting on her lower lip. “Then why’d you watch her go?”",
+    "She doesn’t wait for him to answer it. She holds the Sidekick up to the glass and takes a picture of the harbor — the lamps, the float, the dark water, and in the corner of it, faint on the window, his own reflection, still looking."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "poppy",
+     "title": "Poppy",
+     "if": "e3_sl==\"poppy\"",
+     "text": "Theo’s sister. Fourteen. He always picks up. Braces and a camera phone. Called me the Catholic. Asked if Lena was my girlfriend, and then asked why I watched her go."
+    },
+    {
+     "kind": "person",
+     "id": "poppy",
+     "title": "Poppy",
+     "if": "e3_sl!=\"poppy\"",
+     "text": "Theo’s sister. Fourteen. He always picks up. Braces and a camera phone. Asked if Lena was my girlfriend, and then asked why I watched her go."
+    }
+   ],
+   "next": "s12"
+  },
+  "s12": {
+   "slug": "TUESDAY · 8:05 PM · THE HARBOR INN, THE DINING ROOM",
+   "body": [
+    "The cake comes out at five past eight on a cart pushed by two waiters: the kitchen’s chocolate, three layers, which Caroline insisted on by phone from La Cañada over her son’s objections, with nineteen candles stuck in it in two uneven rings. The waitstaff sing. The pianist comes in under them a half step off and stays there, out of loyalty to the key he started in.",
+    "Theo leans over the cake and blows out all nineteen in one breath, cleanly, without appearing to try. “Nineteen,” he announces through the smoke. “Still no Oscar.”",
+    "Then Becca asks Caroline if she may say something, and Caroline says *please*, and Becca stands up at her place with her water glass.",
+    "“Today’s St. Martin de Porres! He had a dog and a cat and a mouse eat out of the same bowl and nobody fought.” She looks round at every one of them, the empty chair included. “That’s *us*! That’s this *table*!”",
+    "It shouldn’t work. It works. Theo, at the foot of the table, is moved against his will, again, and lifts his water glass to her with the cake knife still in his other hand.",
+    "While everybody is watching Becca sit back down, Laney reaches across the empty chair, slides the BROUSSARD card out of its little silver holder, and puts it in her clutch.",
+    "Kevin is at the end of the table, facing the bar. The TV over it has gone to Maine — QUESTION 1, two numbers a point apart, TOO CLOSE TO CALL — and Kevin has stopped with a bite of cake halfway up on his fork and is watching the box, and keeps watching it until the network cuts away to a ballroom somewhere in New Jersey. Margot, beside him, watches Kevin watch it. Then he eats the cake.",
+    "Caroline orders champagne for the table. The waiter brings it in a silver bucket, looks round at the faces — braces, a crew cut, a girl from Idaho in a cardigan with pearl buttons — and pours one glass, for Caroline, and leaves the bottle in the ice. Theo waits until the man’s back is turned. Then he lifts the bottle out of the bucket and goes round below the edge of the tablecloth, glass by glass, topping up water glasses with something that isn’t water, and arrives at Jack’s."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "theo",
+     "title": "Theo Vance",
+     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath."
+    },
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Drink it.",
+     "tag": "Reckless",
+     "set": {
+      "e13_glass_tue": "drink",
+      "resolve.jack": "-1",
+      "soul.restraint": "-1",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "It’s cold and very good, small hard bubbles, the first thing all day that hasn’t asked him anything, and it goes straight to the four hours he slept on top of his covers this morning and sits down there. He finishes it. Theo, passing behind his chair with the bottle, refills it on the way by."
+     ],
+     "goto": "s12a"
+    },
+    {
+     "text": "Water.",
+     "tag": "Control",
+     "set": {
+      "e13_glass_tue": "water",
+      "resolve.jack": "+1",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He puts his hand over the glass. Theo, without breaking stride, moves on to Laney’s.",
+      "Across the table Margot notices. Her hand goes to the place at her elbow where the notebook would be, and finds a butter knife, and she puts the knife down again and eats her cake."
+     ],
+     "goto": "s12a"
+    },
+    {
+     "text": "Pour yours into Laney’s.",
+     "tag": "Charm",
+     "set": {
+      "e13_glass_tue": "laney",
+      "rel.laney.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "He waits for Theo to move on and tips his glass into Laney’s under the edge of the tablecloth, the champagne going in fizzing on top of her own.",
+      "Laney looks down at the level in her glass, and over at him. “You’re a *gentleman*.”",
+      "“I’m a dishwasher. I’m due at nine.”"
+     ],
+     "goto": "s12a"
+    }
+   ]
+  },
+  "s12a": {
+   "slug": "TUESDAY · 8:45 PM · THE HARBOR INN, THE TOP OF THE STAIRS",
+   "body": [
+    "At a quarter to nine he has to go. Gloria said nine instead of seven tonight, two hours’ pay he doesn’t have, and he took them without arguing.",
+    "Becca gets up with him and walks him out to the top of the main stairs, where Caroline has come out into the hall to take a call from her man in Ojai and is standing by the brass rail with the Hockney under one arm. Becca kisses him there in front of her, brisk and sure, a hand on his chest, and turns him around by the shoulders to face the stairs.",
+    "“Go *wash* things!”",
+    "Caroline, with the phone at her ear, says “*Oh*,” to Ojai.",
+    {
+     "if": "e13_gift==\"moviegoer\"",
+     "text": "Theo comes out after them with his napkin still in his hand and the corner of *The Moviegoer* showing over the edge of his inside pocket, its cracked white spine.",
+     "else": "Theo comes out after them with his napkin still in his hand."
+    },
+    "“Costigan,” he says, in the host’s voice. “You’re leaving my birthday for a dish machine. Sterilize something in my honor.”",
+    "“Happy birthday, Theo.”",
+    "He goes down the stairs and out across the lobby onto the wharf, and the cold off the water is waiting for him at the door."
+   ],
+   "next": "s13"
+  },
+  "s13": {
+   "slug": "WEDNESDAY · 12:50 AM · THE ANCHOR, THE DISH PIT",
+   "music": "Gillian Welch — “Look at Miss Ohio”",
+   "body": [
+    "The dish pit smells of the Hobart’s steam and of bleach, and of the coffee on the back warmer, which has been cooking down since ten o’clock and has gone to tar. The harbor has fogged the window over the dish station from the outside; the wharf lamps beyond it are soft yellow rings.",
+    "Rudy has the transistor on the shelf over the pass tuned to KNX out of Los Angeles, which comes in this late off the sky. New Jersey went to Christie hours ago. Bloomberg has his third term. The man has moved on to Maine when Rudy reaches up and turns him off in the middle of a county, and rolls the dial down through a mile of static until he finds the college station doing its overnight show, a girl with a sleepy voice and a stack of records, and leaves it there.",
+    "“Enough,” Rudy says, and goes back to scraping the flat-top.",
+    "At ten to one the Anchor is three truckers, a couple from the college splitting fries in a booth without speaking, and Merle at the counter over a slice of something with a lattice top. Gloria comes down the counter with the pot, the pencil through her bun, and stops at the end of it by the dish station, where she can keep the room in one eye and Jack in the other.",
+    {
+     "if": "e12_ray==\"maria\"",
+     "text": "“So,” she says. “The girl you’re *seeing*. The apple.”",
+     "else": "“So,” she says. “The apple.”"
+    },
+    "He runs a rack of coffee cups into the Hobart and pulls the door down.",
+    "“And the pecan?”"
+   ],
+   "choices": [
+    {
+     "text": "“Her boyfriend let her go last night. I’m not going to be the next guy at the door.”",
+     "tag": "Sincerity",
+     "set": {
+      "e13_gloria": "door",
+      "soul.honesty": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At the Anchor you told Gloria you won’t be the next guy at the door.",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "gloria",
+       "title": "Gloria (the Anchor)",
+       "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it."
+      }
+     ],
+     "response": [
+      "It’s out before he has decided whether to tell anybody, here in the steam with the cups, and once it’s out the rest of it comes along behind. “When I ask her,” he says, “she’s going to be able to say no.”",
+      "Gloria looks at him a long time over the pot. Long enough for a trucker down the counter to lift his empty cup at her and put it down again.",
+      "“Hon,” she says, “nobody holds a door that long without somebody else walking through it.”",
+      "Then she rates him, which is how Gloria ends a conversation. “Shoofly,” she says. “Still.” And she goes on down the counter with the pot to the trucker."
+     ],
+     "goto": "s13a"
+    },
+    {
+     "text": "“I’m seeing somebody, Gloria. You heard me.”",
+     "tag": "Control",
+     "set": {
+      "e13_gloria": "seeing",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "At the Anchor Gloria asked about the pecan. You told her you’re seeing somebody.",
+     "response": [
+      "“*Seeing*.” Gloria turns the word over. “Hm.”",
+      "She takes the pot on down the counter. On her way past Merle she says, a good deal louder than she needs to, “He’s *seeing* somebody, Merle. Says it like he’s reading a bus schedule.”",
+      "Merle, who has not been known to look up from a pie for anything short of a fire on the wharf, looks up."
+     ],
+     "goto": "s13a"
+    },
+    {
+     "text": "“Rate the shoofly.”",
+     "tag": "Wit",
+     "set": {
+      "e13_gloria": "pie",
+      "trait.wit": "+1"
+     },
+     "key": "At the Anchor Gloria asked about the pecan. You asked her to rate the shoofly instead.",
+     "response": [
+      "“Day-old,” Gloria says, at once.",
+      "She fills his water glass from the pitcher on the pass and sets it down by the soap rack. Then she takes the pot on down the counter, and over her shoulder, to the room: “Still good. Won’t be Thursday.”"
+     ],
+     "goto": "s13a"
+    }
+   ]
+  },
+  "s13a": {
+   "slug": "WEDNESDAY · 12:58 AM · THE ANCHOR, THE DISH PIT",
+   "body": [
+    "At two minutes to one the Hobart is on its last cycle of the night and Rudy has the flat-top scraped down to silver. The song is still going on the transistor. Jack dries his hands on the front of the apron and picks the RAZR up off the steel by the soap rack, where it has been lying face up since nine, and tilts it to the one angle where the screen lights.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Theo says you went to work. Go home after, Jack. Sleep. —L.",
+     "time": "11:58 PM"
+    },
+    "He reads it standing at the sink, in the apron, with his sleeves wet to the elbow. Before he can thumb his way into an answer the phone buzzes in his hand again: a text that left Portolá at 12:49 and has taken its time getting down the hill.",
+    {
+     "type": "sms",
+     "from": "Becca",
+     "text": "Can we talk tomorrow? Good talk!! :)",
+     "time": "12:49 AM"
+    },
+    "Down at the counter Gloria is counting the tip jar into her apron. The Hobart finishes its cycle, and its door comes up, and it lets the steam out."
+   ],
+   "end": true
+  }
+ }
+}
