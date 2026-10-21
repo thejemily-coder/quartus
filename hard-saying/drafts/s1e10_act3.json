@@ -1,0 +1,913 @@
+{
+ "scenes": {
+  "s10": {
+   "slug": "THURSDAY · 4:00 AM · PACIFICA LIBRARY, EIGHTH FLOOR",
+   "duel": "cor",
+   "set": {
+    "duel.cor.lena": 1
+   },
+   "body": [
+    "Four in the morning is the hour nobody built the Brick for. The heat gave up around two. Every table on the eighth floor is empty but his, hers, and the grad student’s at the far end, where the coat has risen and fallen on the same slow breath since midnight. The storm took the clouds with it. Out past the glass there are stars over the water and no moon, so the windows give back only the room: two lamps, a guy in his brother’s Carhartt with a red pen, and down at the end a girl in a green sweatshirt under an oatmeal cardigan who hasn’t looked up since one.",
+    "Then she does. She caps her pen, picks his paper up off her table and comes up the carpet with it, and puts it down in front of him open past the title page. Beside his first sentence — *A man knows his own heart by what he says yes to* — in red, in capitals, hard enough to dent the page:",
+    {
+     "type": "doc",
+     "title": "In red, beside his first sentence",
+     "text": "THEN WHAT DID YOU TELL HIM?"
+    },
+    "He slides hers back across the table. She goes to the last page without looking for it, and there is his red beside her last line: *Which are you?* She reads it standing. She doesn’t sit.",
+    "She bends to say it, because it’s a silent floor and she was raised right. “First Corinthians four. *I am not aware of anything against myself, but I am not thereby acquitted.*” Her finger comes down on his sentence, on the word *yes*. “The man who wrote half the New Testament wouldn’t take his own heart’s word for it in his own defense. And you’d take yours.” He can smell the chicory from her thermos on her. “You’d take yours on a *beach*.”"
+   ],
+   "choices": [
+    {
+     "text": "“Augustine filled ten books with his heart. For a man who said he couldn’t know it.”",
+     "tag": "Press",
+     "set": {
+      "duel.cor.rigor": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“Augustine filled ten books with his heart,” Jack whispers back. “For a man who said he couldn’t know it.”",
+      "“And spent the tenth one telling God he’d become a question to himself.” She reaches across him and taps *mihi quaestio factus sum* in her own notes with the cap of her pen. “Footnote eleven. You underlined it.”",
+      "At the far end the grad student stirs under his coat. Lena straightens. “Outside,” she says, and heads for the north stairs."
+     ],
+     "goto": "s10b"
+    },
+    {
+     "text": "“Paul also told the Corinthians to quit suing each other. Counselor.”",
+     "if": "trait.wit>=25",
+     "tag": "Riposte",
+     "set": {
+      "duel.cor.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Paul also told the Corinthians to quit suing each other,” Jack whispers. “Counselor.”",
+      "The corner of her mouth goes. She puts it back where it was, with effort. “First Corinthians six,” she whispers. “Don’t you *dare*.”",
+      "At the far end the grad student stirs under his coat. Lena straightens. “Outside,” she says, and heads for the north stairs."
+     ],
+     "goto": "s10b"
+    },
+    {
+     "text": "“Nobody knows his own heart at four in the morning.”",
+     "tag": "Concede",
+     "set": {
+      "duel.cor.heart": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“Nobody knows his own heart at four in the morning,” Jack says, low.",
+      "It takes the air out of her. For a second she has nothing loaded, and she has to go looking for the next thing. “Then don’t write that you do.”",
+      "At the far end the grad student stirs under his coat. Lena straightens. “Outside,” she says, and heads for the north stairs."
+     ],
+     "goto": "s10b"
+    },
+    {
+     "text": "“We talked about the Saints.”",
+     "tag": "Deflect",
+     "set": {
+      "duel.cor.lena": "+1",
+      "e10_cor_dodge": true,
+      "soul.honesty": "-1",
+      "rel.lena.trust": "-1",
+      "rel.lena.friction": "+2"
+     },
+     "key": "At four in the morning Lena asked what you told Wes. You said the Saints, again.",
+     "response": [
+      "“We talked about the Saints.”",
+      "“Mostly the secondary,” Lena says — in his voice. His vowels, his Ohio, the little shrug he put on it Sunday on the stairs, exactly. He would rather she’d shouted.",
+      "At the far end the grad student stirs under his coat. Lena straightens. “Outside,” she says, and heads for the north stairs."
+     ],
+     "goto": "s10b"
+    }
+   ]
+  },
+  "s10b": {
+   "slug": "THURSDAY · 4:06 AM · PACIFICA LIBRARY, NORTH STAIRWELL, EIGHTH-FLOOR LANDING",
+   "duel": "cor",
+   "set": {
+    "duel.cor.lena": "+1"
+   },
+   "body": [
+    "The north stairwell is concrete and cold: a steel rail painted the green of every public building in America, a landing the size of a confessional, the EXIT sign over the door humming red. The closer sighs the door shut behind them. It’s a stairwell, like theirs, and that goes unsaid with everything else.",
+    "Out here she doesn’t whisper. The shaft takes her voice down eight floors and sends it back up, changed.",
+    {
+     "if": "e10_cor_dodge",
+     "text": "“Wes told me,” Lena says. “All of it. He said y’all talked about the Saints for about four minutes.”",
+     "else": "“Wes told me,” Lena says."
+    },
+    "“He asked you to take care of me, and you said yes with a *bottle*.” She has one hand on the green rail, and she isn’t holding it for balance. “Y’all don’t get to *assign* me, Costigan. I’m not a parish.”",
+    "Then, quieter, sideways, the thing she brought out here with her: “And you told him about Danny. On a beach. In a night. For a bottle of Jameson.” And to his face: “It took me a pier.”"
+   ],
+   "choices": [
+    {
+     "text": "“He asked me. What was I supposed to do, lie to your boyfriend?”",
+     "tag": "Press",
+     "set": {
+      "duel.cor.rigor": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“He asked me,” Jack says. “What was I supposed to do, lie to your boyfriend?”",
+      "“You could’ve *said* something. You’re so good at saying things.”"
+     ],
+     "goto": "s10c"
+    },
+    {
+     "text": "“I didn’t say yes. I drank. He took it for a yes.”",
+     "if": "trait.candor>=40",
+     "tag": "Confess",
+     "set": {
+      "duel.cor.heart": "+1",
+      "e10_cor_truth": true,
+      "soul.honesty": "+1",
+      "trait.candor": "+1",
+      "rel.lena.trust": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "key": "In the stairwell at four in the morning you told Lena the truth about the beach: you drank, and Wes took it for a yes.",
+     "response": [
+      "“I didn’t say yes,” Jack says. “I drank. He took it for a yes.”",
+      "She wasn’t ready for the truth. The only place it shows is her hand on the rail, the knuckles going pale around the green. “That’s worse,” she says. “You know that’s worse.”"
+     ],
+     "goto": "s10c"
+    },
+    {
+     "text": "“You can tell a stranger. That’s all it was.”",
+     "tag": "Reframe",
+     "set": {
+      "duel.cor.heart": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“You can tell a stranger,” Jack says. “That’s all it was.”",
+      "“He’s not a stranger. He’s *Wes*.” Then, quieter, the truth of it: “To you he was.”"
+     ],
+     "goto": "s10c"
+    },
+    {
+     "text": "“You want to talk about what people don’t say? You won’t walk past the last house on Seacliff.”",
+     "if": "e9_point==\"walk\"",
+     "tag": "Personal",
+     "cue": "Lena will remember that.",
+     "set": {
+      "duel.cor.rigor": "+1",
+      "e10_cor_personal": true,
+      "rel.lena.trust": "-2",
+      "rel.lena.friction": "+2"
+     },
+     "key": "In the stairwell you threw the last house on Seacliff at her.",
+     "response": [
+      "“You want to talk about what people don’t say?” Jack says. “You won’t walk past the last house on Seacliff.”",
+      "Lena goes completely still. Her hand stays where it is on the rail, and the rest of her stops, the way a house stops when the power goes. Over the door the EXIT sign hums.",
+      "“Mr. Costigan,” she says, formally, and leaves it there, with nothing after it.",
+      "He doesn’t know why it lands as hard as it does."
+     ],
+     "goto": "s10c"
+    },
+    {
+     "text": "“You want to talk about what people don’t say? You decided not to notice. Your words.”",
+     "if": "e9_point!=\"walk\"",
+     "tag": "Personal",
+     "cue": "Lena will remember that.",
+     "set": {
+      "duel.cor.rigor": "+1",
+      "e10_cor_personal": true,
+      "rel.lena.trust": "-2",
+      "rel.lena.friction": "+2"
+     },
+     "key": "In the stairwell you threw her own words at her: she decided not to notice.",
+     "response": [
+      "“You want to talk about what people don’t say?” Jack says. “You decided not to notice. Your words.”",
+      "Lena goes completely still. Her hand stays where it is on the rail, and the rest of her stops, the way a house stops when the power goes. Over the door the EXIT sign hums.",
+      "“Mr. Costigan,” she says, formally, and leaves it there, with nothing after it."
+     ],
+     "goto": "s10c"
+    }
+   ]
+  },
+  "s10c": {
+   "slug": "THURSDAY · 4:12 AM · PACIFICA LIBRARY, NORTH STAIRWELL, EIGHTH-FLOOR LANDING",
+   "duel": "cor",
+   "set": {
+    "duel.cor.lena": "+1"
+   },
+   "body": [
+    {
+     "if": "e10_cor_personal",
+     "text": "She makes her move anyway. She has gone up two steps, so she’s above him, and she does it in the cold voice, and never once raises it."
+    },
+    {
+     "if": "e10_cor_truth",
+     "text": "“And now you tell me,” she says. “In a stairwell.”"
+    },
+    {
+     "if": "e9_waltz==\"lena\"",
+     "text": "“You’re so honest, Costigan. You’re honest *at* people. You told her I taught you to waltz, with him standing right there. You told him your brother. You tell everybody the truth and you leave them holding it.” She’s breathing hard, and so is he, and they haven’t climbed a step. “And then a nice girl says you’re the most honest person she knows, and you *let* her.”",
+     "else": "“You’re so honest, Costigan. You’re honest *at* people. You read her a poem on one knee with him standing right there. You told him your brother. You tell everybody the truth and you leave them holding it.” She’s breathing hard, and so is he, and they haven’t climbed a step. “And then a nice girl says you’re the most honest person she knows, and you *let* her.”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Would you rather I lied to her?”",
+     "tag": "Press",
+     "set": {
+      "duel.cor.rigor": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“Would you rather I lied to her?”",
+      "“I’d rather you didn’t make her *carry* it.” Then nothing; she has run out of breath before she’s run out of things to say."
+     ],
+     "goto": "s10v"
+    },
+    {
+     "text": "“Yeah. I do that.”",
+     "tag": "Concede",
+     "set": {
+      "duel.cor.heart": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“Yeah,” Jack says. “I do that.”",
+      "She has nowhere to go with it. She sits down on the step behind her, hard, in the green sweatshirt and the cardigan, and that surprises them both."
+     ],
+     "goto": "s10v"
+    },
+    {
+     "text": "“You’re quoting my girlfriend at me. In a stairwell. At four in the morning.”",
+     "if": "!e10_cor_personal",
+     "tag": "Riposte",
+     "set": {
+      "duel.cor.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“You’re quoting my girlfriend at me,” Jack says. “In a stairwell. At four in the morning.”",
+      "“She’s *quotable*.” She says it too fast to call back, and it’s almost funny, and that doesn’t help either of them."
+     ],
+     "goto": "s10v"
+    },
+    {
+     "text": "“He’s a stranger. You’re not.”",
+     "tag": "Reframe",
+     "set": {
+      "duel.cor.heart": "+1",
+      "e10_cor_stranger": true
+     },
+     "key": "In the stairwell you told her: “He’s a stranger. You’re not.”",
+     "response": [
+      "“He’s a stranger,” Jack says. “You’re not.”",
+      "She looks at him, and doesn’t answer, not yet. Her mouth opens on something and closes on it again."
+     ],
+     "goto": "s10v"
+    },
+    {
+     "text": "“I shouldn’t have said that. About Seacliff. I’m sorry.”",
+     "if": "e10_cor_personal && e9_point==\"walk\"",
+     "tag": "Apologize",
+     "set": {
+      "duel.cor.heart": "+1",
+      "e10_cor_apology": true,
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+2"
+     },
+     "key": "In the stairwell you took back Seacliff. She let you.",
+     "response": [
+      "“I shouldn’t have said that,” Jack says. “About Seacliff. I’m sorry.”",
+      "She takes a long breath through her nose and lets it go. “Okay,” she says. It’s the sound of a door being left unlocked."
+     ],
+     "goto": "s10v"
+    },
+    {
+     "text": "“I shouldn’t have said that. About what I said. I’m sorry.”",
+     "if": "e10_cor_personal && e9_point!=\"walk\"",
+     "tag": "Apologize",
+     "set": {
+      "duel.cor.heart": "+1",
+      "e10_cor_apology": true,
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+2"
+     },
+     "key": "In the stairwell you took back what you said. She let you.",
+     "response": [
+      "“I shouldn’t have said that,” Jack says. “About what I said. I’m sorry.”",
+      "She takes a long breath through her nose and lets it go. “Okay,” she says. It’s the sound of a door being left unlocked."
+     ],
+     "goto": "s10v"
+    }
+   ]
+  },
+  "s10v": {
+   "slug": "THURSDAY · 4:16 AM · PACIFICA LIBRARY, NORTH STAIRWELL, EIGHTH-FLOOR LANDING",
+   "duel": "cor",
+   "set": {
+    "rel.lena.friction": "+1",
+    "resolve.jack": "-1"
+   },
+   "body": [
+    {
+     "if": "e10_cor_personal && !e10_cor_apology",
+     "text": "“You win, Mr. Costigan,” Lena says. Cold, not loud. “Write it down.” She goes back through the door to the eighth floor ahead of him, and the closer sighs it shut in his face, and he stands on the landing with the EXIT sign and what he won."
+    },
+    {
+     "if": "e10_cor_personal && e10_cor_apology",
+     "text": "“You still forfeit,” Lena says. She looks down the well, at eight floors of green rail going around into the dark, and when she says the rest it’s very quiet. “Seacliff’s mine.” He doesn’t ask. She holds the door for him. Only the door."
+    },
+    {
+     "if": "!e10_cor_personal && duel.cor.heart>=2 && e10_cor_stranger",
+     "text": "“Then what am I?”"
+    },
+    {
+     "if": "!e10_cor_personal && duel.cor.heart>=2 && e10_cor_stranger",
+     "text": "The EXIT sign hums. She looks at him, and he doesn’t look away. The question goes down the shaft, eight floors of concrete, and none of it comes back up. They stand on the landing with it. Then, very carefully: “I have a midterm at nine-thirty.” “Same one,” Jack says."
+    },
+    {
+     "if": "!e10_cor_personal && duel.cor.heart>=2 && !e10_cor_stranger",
+     "text": "She’s quiet a moment. Then: “Then we’re both lying, some days.” It’s Sunday’s line from the stove, turned over, and she says it knowing he’ll know it. Then, very carefully: “I have a midterm at nine-thirty.” “Same one,” Jack says."
+    },
+    {
+     "if": "!e10_cor_personal && duel.cor.heart<=1 && duel.cor.rigor>=2",
+     "text": "“Fine,” Lena says. “Your paper wins.” She lets that stand on the landing long enough to hurt. Then, formal, not cold: “It’s still wrong.”"
+    },
+    {
+     "if": "!e10_cor_personal && duel.cor.heart<=1 && duel.cor.rigor<=1 && duel.cor.wit>=2",
+     "text": "The fire door opens. The grad student from the far end stands in it in his coat, hair flat on one side, the seam of a table printed down his cheek. “Some of us,” he says, “are failing quals.” The closer sighs the door shut on him. They’re laughing before it’s latched, out loud, both of them, helplessly, at four in the morning on a fire stair."
+    },
+    {
+     "if": "!e10_cor_personal && duel.cor.heart<=1 && duel.cor.rigor<=1 && duel.cor.wit<=1",
+     "text": "“A man can’t know his own heart,” Lena says. She’s above him on the stairs, and she looks down at him and lets him look back. “Exhibit A.”"
+    },
+    "On the eighth floor the grad student is asleep again, or doing a good impression. They get their things: her thermos, *The Habit of Being*; his Williams and *The Moviegoer*, the legal pad, the Ziploc with Becca’s marker on the masking tape. The clementine is still on her table, unpeeled. She looks at it, and puts it in her cardigan pocket. Then the elevator, because it’s eight floors and neither of them is taking the stairs again tonight."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "e10_cor_personal",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: I won. She told me to write it down."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e10_cor_personal && duel.cor.heart>=2",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Nobody said what it was about."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e10_cor_personal && duel.cor.heart<=1 && duel.cor.rigor>=2",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: my paper, on points. She says it’s still wrong."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e10_cor_personal && duel.cor.heart<=1 && duel.cor.rigor<=1 && duel.cor.wit>=2",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: called on account of a grad student."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e10_cor_personal && duel.cor.heart<=1 && duel.cor.rigor<=1 && duel.cor.wit<=1",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: hers. Exhibit A."
+    }
+   ],
+   "next": "s11"
+  },
+  "s11": {
+   "slug": "THURSDAY · 4:19 AM · THE COMMONS",
+   "body": [
+    {
+     "if": "e10_cor_personal && !e10_cor_apology",
+     "text": "The elevator is mirrored on three sides, so there are a lot of them in it, not talking. Eight. Seven. Six. Somewhere around four Jack says, “We’re fine.” “We *are* fine,” says Lena. It comes out as a correction of his.",
+     "else": "The elevator is mirrored on three sides, so there are a lot of them in it, not talking. Eight. Seven. Six. Somewhere around four Jack says, “We’re fine.” “We’re fine,” says Lena."
+    },
+    "On the ground floor Priya is at the overnight desk with her cheek down on an orgo textbook. Her midterm was yesterday; this is her third job. She sleeps on as they pass.",
+    "Then the doors, and the cold. The Commons at 4:24 looks like the storm threw a party on it and left before the cleanup: eucalyptus bark peeled across the wet lawn in long pale strips like shed skin, a palm frond jammed in the bike rack, somebody’s green plastic lawn chair sitting in the fountain up to its seat, very composed about it. Over the hills there are stars, the first in two days, and no moon. Their breath shows.",
+    "They walk the same way because they live in the same building. Side by side, not touching, past the foot of the Ferrer Tower, its clock face lit, its bells shut up until seven. Facilities has wound yellow tape around the base — FACILITIES · DO NOT ENTER, snapping in the wind — and behind the tape the steel door, swollen with two days of rain, sits a finger’s width off the jamb. It won’t latch."
+   ],
+   "choices": [
+    {
+     "text": "Say nothing.",
+     "tag": "Control",
+     "set": {
+      "e10_five": "quiet",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He says nothing, and she says nothing back, and the silence walks with them past the fountain. It’s miserable and companionable at once, like sharing an umbrella with somebody you’re furious at.",
+      "Then the wind comes across the Commons, catches the tower door, and bangs it back against its frame, loud as a shot in all that quiet. They both stop."
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "“Goodnight, Lena.”",
+     "if": "!e10_cor_personal || e10_cor_apology",
+     "tag": "Sincerity",
+     "set": {
+      "e10_five": "goodnight",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Goodnight, Lena.”",
+      "“It’s morning.”",
+      "“Good morning, then.”",
+      "Her mouth starts on it — *good* — and goes no further.",
+      "Then the wind comes across the Commons, catches the tower door, and bangs it back against its frame, loud as a shot in all that quiet. They both stop."
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "“Eight floors. New record for not talking.”",
+     "if": "!e10_cor_personal || e10_cor_apology",
+     "tag": "Wit",
+     "set": {
+      "e10_five": "record",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Eight floors,” Jack says. “New record for not talking.”",
+      "“Seven,” Lena says. “You said ‘fine’ on four.”",
+      "Then the wind comes across the Commons, catches the tower door, and bangs it back against its frame, loud as a shot in all that quiet. They both stop."
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "“I’m sorry. About Seacliff.”",
+     "if": "e10_cor_personal && !e10_cor_apology && e9_point==\"walk\"",
+     "tag": "Apologize",
+     "set": {
+      "e10_five": "sorry",
+      "e10_cor_apology": true,
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“I’m sorry,” Jack says. “About Seacliff.”",
+      "She keeps walking. “I heard you.”",
+      "Then the wind comes across the Commons, catches the tower door, and bangs it back against its frame, loud as a shot in all that quiet. They both stop."
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "“I’m sorry. About what I said.”",
+     "if": "e10_cor_personal && !e10_cor_apology && e9_point!=\"walk\"",
+     "tag": "Apologize",
+     "set": {
+      "e10_five": "sorry",
+      "e10_cor_apology": true,
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“I’m sorry,” Jack says. “About what I said.”",
+      "She keeps walking. “I heard you.”",
+      "Then the wind comes across the Commons, catches the tower door, and bangs it back against its frame, loud as a shot in all that quiet. They both stop."
+     ],
+     "goto": "s12"
+    }
+   ]
+  },
+  "s12": {
+   "slug": "THURSDAY · 4:26 AM · THE FERRER TOWER, THE STAIRS",
+   "body": [
+    "“Don’t,” Lena says.",
+    "“I wasn’t going to.”",
+    "She’s under the tape before he’s finished saying it.",
+    "The door is heavier than it looks, and colder. Inside, the dark smells of wet concrete and pigeons and machine oil. Her LG comes on in her hand, the keyboard glowing blue, and there are the stairs: a square shaft of board-formed concrete going up and around out of sight, the grain of the 1966 forms printed in the walls, a steel rail beaded with cold, and at every turn a slit of window with the night in it. Far above, the wind is working at the louvers. She goes up first. He goes up after the light.",
+    "Four flights in, still mad, out of breath: “Just so we’re clear, I’m not anybody’s to *assign*.”",
+    "“I didn’t —”",
+    "“And if you quote Ephesians at me in a bell tower, Costigan, I will push you down every step in this tower.”",
+    "“We agreed.”",
+    "“We *agreed*.”",
+    "And that does it. Something in his chest lets go, and he hears it go in her too, a sound that starts out halfway to a sob and turns out, by the next flight, to be a laugh. They climb laughing, breathless, still furious, her light swinging over the concrete, his hand squeaking on the wet rail. The five minutes are over.",
+    "Halfway up there’s a landing with a window slit, and she stops at it to breathe, and he stops a step below. Through the slit is the campus, wet and asleep: Delgado’s grid of dark windows, the fountain lit, the Brick with one floor burning."
+   ],
+   "choices": [
+    {
+     "text": "Light a Marlboro in the window slit.",
+     "if": "trait.reckless>=12",
+     "tag": "Reckless",
+     "set": {
+      "e10_climb": "cig",
+      "e10_cig": true,
+      "reliquary": "+1",
+      "jack_cigs": "+1",
+      "soul.restraint": "-1",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "It’s been a night. He gets a Red out of the pack in the Carhartt’s inside pocket and gets it lit on the third try, cupping the lighter against the wind coming in through the slit, and takes one long pull with his eyes shut.",
+      "Two steps up she turns around and takes it out of his mouth.",
+      {
+       "if": "e9_tin==\"quit\"",
+       "text": "“You told my boyfriend I’m going to make you quit,” Lena says. “Don’t make a liar of me.”",
+       "else": "“Give it here, Costigan.”"
+      },
+      "She climbs on with it held up and burning in her fingers, not smoking it, like a candle in a procession, up to the hatch at the top, and the cabin, and the cold."
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "Stay behind her, below the light.",
+     "tag": "Control",
+     "set": {
+      "e10_climb": "light",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He stays a step behind her, below the light, in the dark she leaves. A flight later she notices. Without a word she holds the LG back over her shoulder so it falls on his steps instead of hers, and climbs the second half in her own dark, one hand on the rail, up to the hatch at the top, and the cabin, and the cold."
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "“Eighty-one. I’ve been counting.”",
+     "tag": "Wit",
+     "set": {
+      "e10_climb": "count",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Eighty-one,” Jack says. “I’ve been counting.”",
+      "“Of course you have.”",
+      "At the top he says, “A hundred and sixty,” and she says, “I didn’t ask,” and she is laughing again when she shoulders up the hatch into the cabin, and the cold."
+     ],
+     "goto": "s13"
+    }
+   ]
+  },
+  "s13": {
+   "slug": "THURSDAY · 4:40 AM · THE FERRER TOWER, THE PLAYING CABIN",
+   "set": {
+    "knows_lena_piano": true
+   },
+   "body": [
+    "At the top of a hundred and sixty steps there is a playing cabin, glassed on three sides, tucked under the open bell chamber like a lookout’s box under a mast. The louvers overhead are open to the weather, and the wind comes straight down through them. A bench worn pale. In front of it a keyboard like a giant’s piano: two rows of oak batons, rounded by forty years of hands, and under them a pedalboard of longer keys for the feet. From every baton a wire runs up through the ceiling into the dark where the bells are. An electric clock in a wire cage. On the wall, a sign:",
+    {
+     "type": "doc",
+     "title": "FACILITIES",
+     "text": "AUTOMATIC SYSTEM ENGAGED 7 AM–10 PM · DO NOT OPERATE CLAVIER"
+    },
+    "Below the glass, all of Anacapa: Delgado’s grid with three windows lit, the Lagoon black, the Commons. Past it the hills to the east, blacker than the sky, and over the hills nothing yet but stars.",
+    "Lena is shaking, arms crossed over the green sweatshirt, the cardigan no use against the wind. Jack takes off Danny’s Carhartt and puts it on her. She doesn’t argue.",
+    "A steel ladder goes up the wall to a hatch. She climbs it with the LG in her teeth, and he follows her into the frame. The bells hang in the dark in rows, small to enormous, bronze gone green-black, the clappers still. The biggest is taller than she is. She puts the light on its waist, where letters stand up out of the metal:",
+    {
+     "type": "doc",
+     "title": "Cast in the bronze",
+     "text": "VIVOS VOCO · MORTUOS PLANGO · FULGURA FRANGO"
+    },
+    "She doesn’t have to think about it. “I call the living,” Lena says. “I mourn the dead. I break the lightning.” Her voice goes somewhere on *mortuos*, and comes back on *fulgura*.",
+    "“Two days after a storm,” Jack says.",
+    "“Only the lightning’s been up here since.” She lays her palm flat on the bronze, and takes it away, and they climb back down into the cabin.",
+    "From the west glass there’s the Grove, and Las Olas beyond it, a few porch lights, and out at the end of the land the old light on the Point, dark, a thumb of black against the stars. Lena sits down on the cabin floor in his brother’s jacket with her back to that window and her knees up.",
+    {
+     "if": "e10_cig",
+     "text": "The cigarette has burned down nearly to her fingers. She pinches it out on the concrete, digs the tin out of her cardigan pocket and a Pacifica Library call slip out of the other, and writes on her knee by the LG’s light, with his red pen, which she has apparently had since the eighth floor:"
+    },
+    {
+     "if": "e10_cig",
+     "type": "doc",
+     "title": "Reliquary No. 5",
+     "text": "No. 5 · 10/15/09 · Ferrer Tower · in the bells"
+    },
+    {
+     "if": "e10_cig",
+     "text": "Into the tin it goes, with the stub, and the tin goes back in her pocket."
+    },
+    "Jack sits on the bench. The batons are cold and smooth under his hand, like the rungs of a ladder in January. “Do you play?”",
+    "The look she gives him from the floor could strip a pew. “Who do you think plays the piano in the basement?”",
+    "“Nobody admits to playing the piano in the basement.”",
+    "“Exactly.”",
+    "Two years of lessons at the Rosary, she says, with a nun who hit the music stand with a ruler and never once the child — “which was worse, because you knew she *could*.” She plays around the dead F. She has since August, after midnight, when the dryers cover it.",
+    "At two minutes to five she gets up off the floor and comes to stand at the batons, in his brother’s jacket, and looks down at them the way she looks at Hale just before she wins. Her hand goes to the medal at her throat. Sunday the Giants come into the Dome five and oh. The Saints are four and oh. She says it like a dare, and like a prayer.",
+    "“Who dat.”"
+   ],
+   "choices": [
+    {
+     "text": "Take the low batons.",
+     "tag": "Reckless",
+     "set": {
+      "e10_play": "low",
+      "trait.reckless": "+1"
+     },
+     "key": "At five in the morning Lena played the Saints on the Ferrer Tower, and you took the low notes.",
+     "response": [
+      "He moves down to the bass end of the bench. She shows him the pedals, and four batons at his end, fat as rolling pins. “On my count,” she says. “Hit them like they owe you money.”",
+      "She raises her fists over the batons. On the wall over the clavier the old clock that runs the chimes clicks, and its minute hand stands straight up."
+     ],
+     "goto": "s13p"
+    },
+    {
+     "text": "Keep watch at the hatch.",
+     "tag": "Control",
+     "set": {
+      "e10_play": "watch",
+      "trait.control": "+1"
+     },
+     "key": "At five in the morning Lena played the Saints on the Ferrer Tower, and you kept watch.",
+     "response": [
+      "He takes the top of the stairs, where the hatch looks down the shaft and the south glass looks down on the Commons, the tape, the door that won’t latch.",
+      "“Lookout,” she says. “Good. You’ve got the face for it.” She raises her fists over the batons. On the wall over the clavier the old clock that runs the chimes clicks, and its minute hand stands straight up."
+     ],
+     "goto": "s13p"
+    },
+    {
+     "text": "Count her in. “On four.”",
+     "tag": "Wit",
+     "set": {
+      "e10_play": "count",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "At five in the morning Lena played the Saints on the Ferrer Tower, and you counted her in.",
+     "response": [
+      "“On four,” Jack says, and lifts a hand to conduct.",
+      "“In New Orleans,” Lena says, “we come in on the *and*.” She raises her fists over the batons. On the wall over the clavier the old clock that runs the chimes clicks, and its minute hand stands straight up."
+     ],
+     "goto": "s13p"
+    }
+   ]
+  },
+  "s13p": {
+   "slug": "THURSDAY · 5:00 AM · THE FERRER TOWER, THE PLAYING CABIN",
+   "set": {
+    "ferrer_bells": true
+   },
+   "body": [
+    "At five o’clock in the morning, two days after the first storm of the fall, Magdalena Broussard brings her fists down on the oak, and the Ferrer Tower plays “When the Saints Go Marching In” to the sleeping campus.",
+    "Badly. Magnificently. The bells come down through the louvers and the glass and the soles of his shoes, so loud up here it’s less a sound than a weather, bronze going off over their heads in the dark. She plays with her fists, both of them, loosely closed, forearms and all — and the first time she reaches for the bass he understands that that’s how the thing is meant to be played. Either she knew or she guessed right. Either way she’s right.",
+    {
+     "if": "e10_play==\"low\"",
+     "text": "Under her, on the low batons, he’s late on every downbeat, and then late on fewer of them, and by the second chorus he’s on it, the big bells going off under his fists like a load of scrap hitting the bed of a truck."
+    },
+    {
+     "if": "e10_play==\"watch\"",
+     "text": "From the hatch he hears it come down the tower around him. The steel rail under his hand hums with every note, up from his palm and into his teeth."
+    },
+    {
+     "if": "e10_play==\"count\"",
+     "text": "She came in on the *and*. He’s still counting, out loud, uselessly, under it, and grinning like an idiot."
+    },
+    "On the third of the scale — the note the song lives on — one bell is flat. Not a little. It sags every time she hits it, like a bad step on a staircase you know by heart, and she doesn’t stop for it once. “That’s not flat,” she shouts over it. “That’s *New Orleans*.”",
+    "Across the Commons the lights start coming on. Delgado first, then Cabrillo, then Portolá, window after window, the dark grid of Anacapa filling in square by square like somebody doing the crossword in pen. From a fourth-floor window in Delgado somebody hollers it back across the lawn — WHO DAT — and is never identified. On the oak beside the batons the RAZR buzzes in a little circle.",
+    {
+     "type": "sms",
+     "from": "THEO VANCE (IMPORTANT)",
+     "time": "5:01 AM",
+     "text": "Costigan. Is that the Saints."
+    },
+    "He holds it up to her. She reads it and has to stop playing, because she’s laughing too hard to hit anything, bent over the batons in his brother’s jacket while the last flat note goes out over the lawn by itself.",
+    "Then a white light comes sweeping across the Commons. A campus-police cruiser bumps up over the curb by the fountain onto the wet grass, no siren, its spotlight swinging, and rolls toward the foot of the tower, toward the tape and the door that won’t latch."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "ferrer",
+     "title": "The Ferrer Tower",
+     "text": "A hundred and sixty steps. VIVOS VOCO · MORTUOS PLANGO · FULGURA FRANGO, around the biggest bell. I call the living, I mourn the dead, I break the lightning. One bell is flat. She says it isn’t. Thursday at five in the morning we played the Saints on it. Half of Anacapa turned its lights on. Nobody knows who."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Up. Behind the great bell.",
+     "tag": "Go",
+     "set": {
+      "e10_escape": "hide"
+     },
+     "key": "When the police came, you hid behind the great bell with her until they gave up.",
+     "response": [
+      "“Up,” he says. She’s on the ladder before he is."
+     ],
+     "goto": "s13a"
+    },
+    {
+     "text": "Down. Run for the Brick.",
+     "tag": "Go",
+     "set": {
+      "e10_escape": "run"
+     },
+     "key": "When the police came, you ran for the library with her, laughing.",
+     "response": [
+      "“Run,” she says, and she’s through the hatch and gone down into the dark with the light, and he’s after her."
+     ],
+     "goto": "s13b"
+    }
+   ]
+  },
+  "s13a": {
+   "slug": "THURSDAY · 5:06 AM · THE FERRER TOWER, BEHIND THE GREAT BELL",
+   "set": {
+    "rel.lena.heat": "+1"
+   },
+   "body": [
+    "Up the ladder into the bell frame, the hatch let down behind them as quietly as a steel hatch goes, and into the dark behind the great bell, where a steel walkway runs along the wall with just room to crouch on it. The bronze is still humming from her last note. He can feel it in his teeth.",
+    "Below them, the tower door. A voice. Then a flashlight beam coming up the shaft, slowly, flight by flight, stopping at each window slit to have a look out.",
+    "Lena is crouched against the wall with her knees up and her breath going white. Jack has his hand flat on the cold bronze beside her head to keep his balance and doesn’t move it. She’s in Wes’s green sweatshirt, and over it, because she was cold at the top, his brother’s Carhartt.",
+    "The beam comes up into the cabin under them. Through the gaps in the frame he watches it go over the batons, the bench, the laminated sign, and hold there, while a radio on somebody’s shoulder crackles to itself.",
+    "“Nobody’s dumb enough,” the cop tells the radio, and goes back down.",
+    "They stay crouched until the cruiser’s engine starts on the lawn, and until it backs off the grass, and until its taillights have gone out of the Commons. Jack has to put his forehead against the bronze to keep from laughing. Lena doesn’t laugh at all. She glares at him over the corduroy collar, fierce and wet-eyed, one finger up — *don’t you dare* — and keeping still under that look is harder than keeping still for the cop was.",
+    "At twenty to six they go down the stairs in the dark and out under the tape and across the Commons at a walk, like two people with every right. Over the hills the moon has come up, a fingernail of it, and under it one hard bright star. Then the Brick’s doors, and the warm, and the overnight desk, where Priya doesn’t lift her head from the orgo text.",
+    "“I didn’t see you,” she says. “The scanner’s been broken since two.”",
+    {
+     "if": "e10_priya==\"never\"",
+     "text": "Then, still not looking up: “Go up. It’s warm.”"
+    }
+   ],
+   "next": "s14"
+  },
+  "s13b": {
+   "slug": "THURSDAY · 5:03 AM · THE COMMONS",
+   "music": "Arcade Fire — “Wake Up”",
+   "body": [
+    "Down the stairs in the dark, faster than anybody should take concrete, her light swinging ahead of them over the board marks, her boots slapping every step, his hand burning down the cold rail, and once, at the halfway landing, when she misjudges the turn, his hand on her elbow — and then off it. Out the door. Under the tape.",
+    "Then there’s nothing for it but the Commons in the open, the cruiser’s spotlight swinging back toward the tower door behind them, and they run. Wet grass. Bark slick underfoot. The lawn chair in the fountain going by. Lena is laughing so hard she can’t run straight; she runs a long drunk curve across the lawn in his brother’s jacket, sober as Lent. Behind them a cop’s voice — “Hey —” — at two backs, and that’s as much as he gets of them. Jack hauls the Brick’s door open and they fall through it into the warm.",
+    "At the overnight desk Priya doesn’t lift her head from the orgo text. “I didn’t see you,” she says. “The scanner’s been broken since two.”",
+    {
+     "if": "e10_priya==\"never\"",
+     "text": "Then, still not looking up: “Go up. It’s warm.”"
+    },
+    "They go up eight floors in the elevator gasping, holding the rail, not looking at each other, because if they look at each other they’ll lose it again, and the doors open on silence."
+   ],
+   "next": "s14"
+  },
+  "s14": {
+   "slug": "THURSDAY · 5:50 AM · PACIFICA LIBRARY, EIGHTH FLOOR",
+   "music": "Explosions in the Sky — “First Breath After Coma”",
+   "set": {
+    "resolve.jack": "-1"
+   },
+   "body": [
+    {
+     "if": "e10_escape==\"hide\"",
+     "text": "They’ve been back five minutes. Her hands still smell like bronze; she keeps lifting them to her face and smelling them, mystified, like a kid in from the monkey bars.",
+     "else": "At ten to six she’s still getting her breath back, one hand flat on her breastbone, her hair everywhere."
+    },
+    "It’s the same table they fought at. The grad student is gone, coat and all, his chair left pushed out at an angle. Somewhere in the walls the heat has come back on with a clank.",
+    "Lena takes the clementine out of her cardigan pocket, from under the Carhartt, and peels it in one long spiral, a Christmas-morning skill, and pulls it in two, and sets half on his side of the table without a word. He knows whose clementine it is. So does she. He eats it.",
+    "Out the windows the black is going, by degrees, to the blue at the bottom of a gas flame. Down on the Commons a Facilities pickup has pulled onto the lawn at the foot of the tower, and a man in a reflective vest is wrapping a chain through the door’s handle with a flashlight in his teeth. They watch him like a movie. He drops the padlock once in the wet grass. “Oh, *no*,” Lena says, with real feeling.",
+    "“Dulce says your soup needs salt,” Jack says. “Rudy translated.”",
+    "Her head comes around. “Dulce has no palate.” Then she goes back to watching the man with the chain, with a smile tucked in one cheek that she can’t do anything about.",
+    "The padlock clicks. The man stands back from his door to admire it.",
+    "“Does she argue with you?” Lena says.",
+    "It’s Becca’s own line, from the stool by the stove on Sunday — *I love that he has somebody to argue with. I’m no good at it* — and Lena was right there for it.",
+    "“She asked me to explain the First Way,” Jack says. “At a football game. On the bleachers at Mariner Field, with mustard on my thumb, Mariners on the twenty. Motion. The cold pan and the hot pan, the whole thing.” He shakes his head at the window. “Aquinas and football. That’s the dream girl right there.”",
+    "He doesn’t hear it. Something crosses her face that he doesn’t have a word for, and it’s gone before he can try for one.",
+    "“And?” she says.",
+    "Then the true part. “And it was nothing. She was so happy I’d told her. She said it back perfectly. And it just — sat there. Nothing came back.”"
+   ],
+   "choices": [
+    {
+     "text": "“She’s good, Lena. She’s just — good.”",
+     "tag": "Sincerity",
+     "set": {
+      "e10_football": "good",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“She’s good, Lena,” Jack says. “She’s just — good.”",
+      "“I know she is.” She means that too; there’s nothing on it at all. She eats a segment of the clementine as if it were the end of a sentence she’d rather not finish."
+     ],
+     "goto": "s15"
+    },
+    {
+     "text": "“I don’t know what I’m doing. Still.”",
+     "tag": "Candor",
+     "set": {
+      "e10_football": "still",
+      "rel.lena.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“I don’t know what I’m doing,” Jack says. “Still.”",
+      "“I know,” Lena says, kindly.",
+      {
+       "if": "e8_relief==\"named\"",
+       "text": "She doesn’t laugh this time."
+      }
+     ],
+     "goto": "s15"
+    },
+    {
+     "text": "Say nothing. Watch the islands come up.",
+     "tag": "Control",
+     "set": {
+      "e10_football": "islands",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He says nothing. Out past the campus the dark on the water is coming apart from the dark over it, and the first thing out of it is the long back of Santa Cruz, more a guess than an island. They watch it get surer. She watches it with him, chin in the corduroy, the peel curled on the table by her hand."
+     ],
+     "goto": "s15"
+    }
+   ]
+  },
+  "s15": {
+   "slug": "THURSDAY · 6:02 AM · PACIFICA LIBRARY, EIGHTH FLOOR",
+   "set": {
+    "resolve.lena": 4,
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "The heat ticks in the walls. Lena has her chin down in the Carhartt’s collar, and she says it to the window. “Wes doesn’t argue either. He says he out-waits me.”",
+    "Jack thinks of a velvet box open on a lace runner, on a grainy screen held out to him on a beach, and a man grinning that he was good at waiting.",
+    "A minute later her head comes down on his shoulder.",
+    "He goes still the way you go still when a bird lands on you. She’s under before he has worked out what to do with his breathing. At 6:02 her LG, face-up on the table by the clementine peel, lights: WES. Only the name on the little outer screen, and then an envelope blinking under it every few minutes, patient as a buoy.",
+    "The hour goes by stages. His arm — the one she’s on — goes from his to hers to nobody’s: pins, then needles, then a dead thing in a flannel sleeve that happens to be attached to him. Her breath is slow and warm through his shirt. There’s a crease from the corduroy collar printed on her cheek and a strand of her hair caught in his stubble, and he leaves it. The windows go from gas flame to pewter, and the islands come out of nothing one at a time, Anacapa last, in its three broken pieces. He watches them arrive without moving his head.",
+    "At 6:41 the RAZR goes off in his shirt pocket, buzzing against her ear. She sleeps through it. He gets it out left-handed and thumbs it open.",
+    {
+     "type": "sms",
+     "from": "Becca",
+     "time": "6:41 AM",
+     "text": "good morning!! prayed for u at 2 like always :) good luck on ur midterm!!"
+    },
+    "He closes it. *Lord Jesus Christ, Son of God,* he starts, the way he’d talk to somebody in the next room, *have mercy on* — and he doesn’t know whose name goes at the end of it, so he leaves it open.",
+    "At seven the Ferrer Tower starts up on its own across the Commons, the Westminster quarters, automatic, and the flat bell right where it always is, sagging on the third. Then the hour. One. She wakes on the first stroke.",
+    "She lifts her head off his shoulder and doesn’t lift it far. Two. Her face is right there: the crease on her cheek, her eyes heavy and amber in the gray light and then not heavy at all, clementine on her breath. Three. He wants her. Not as an idea, not as a paper topic; he wants to bring his dead hand up to her face and close what’s left of the distance her waking made, and he wants it with all of him that’s awake at seven in the morning after no sleep, which is every part. Four. Staying where he is costs him something he’ll feel all day, in the arm and everywhere else, and he pays it one stroke at a time. Five."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Stay perfectly still.",
+     "tag": "Control",
+     "cue": "Lena will remember that.",
+     "set": {
+      "e10_dawn": "still",
+      "soul.restraint": "+1",
+      "rel.lena.heat": "+1",
+      "trait.control": "+1"
+     },
+     "key": "At seven the bells woke her on your shoulder. You didn’t move.",
+     "response": [
+      "He stays perfectly still. Under it, unsaid, there’s a beach and a man in a Saints cap, wet to the thigh — *Take care of her, Jack* — and it holds him better than his own arm could.",
+      "“You didn’t move,” Lena says. “No.” “Your arm’s dead, isn’t it.” “Since six.” Six. Seven. He’s the one who sits back.",
+      "She shrugs out of the Carhartt and lays it over the chair beside him, and gathers up the peel, her paper, the thermos, *The Habit of Being*.",
+      {
+       "if": "e10_cor_personal && !e10_cor_apology",
+       "text": "“Midterm, Costigan.” “Same one.” “Sit somewhere else.”",
+       "else": "“Midterm, Youngstown.” “Same one.” “Sit somewhere else.”"
+      }
+     ],
+     "goto": "s16"
+    },
+    {
+     "text": "“Your face is doing the thing from the beach.”",
+     "if": "e9_face==\"beach\"",
+     "tag": "Candor",
+     "set": {
+      "e10_dawn": "face",
+      "rel.lena.heat": "+1",
+      "rel.lena.friction": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "At seven the bells woke her on your shoulder. You told her what her face was doing.",
+     "response": [
+      "“Your face,” Jack says, “is doing the thing from the beach.”",
+      "“Then don’t look at it.” He doesn’t stop. Six. Seven. She’s the one who sits back.",
+      "She shrugs out of the Carhartt and lays it over the chair beside him, and gathers up the peel, her paper, the thermos, *The Habit of Being*.",
+      {
+       "if": "e10_cor_personal && !e10_cor_apology",
+       "text": "“Midterm, Costigan.” “Same one.” “Sit somewhere else.”",
+       "else": "“Midterm, Youngstown.” “Same one.” “Sit somewhere else.”"
+      }
+     ],
+     "goto": "s16"
+    },
+    {
+     "text": "“Magdalena.”",
+     "tag": "Reckless",
+     "set": {
+      "e10_dawn": "magdalena",
+      "rel.lena.heat": "+1",
+      "soul.restraint": "-1",
+      "resolve.jack": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "At seven the bells woke her on your shoulder. You said her name.",
+     "response": [
+      "“Magdalena,” he says. At seven in the morning, close enough to feel the name arrive.",
+      "She holds. Her eyes go past him, to the table, to the LG with WES still blinking on its little screen, and she sits up, and says nothing at all while the bells do six and seven.",
+      "She shrugs out of the Carhartt and lays it over the chair beside him, and gathers up the peel, her paper, the thermos, *The Habit of Being*.",
+      {
+       "if": "e10_cor_personal && !e10_cor_apology",
+       "text": "“Midterm, Costigan.” “Same one.” “Sit somewhere else.”",
+       "else": "“Midterm, Youngstown.” “Same one.” “Sit somewhere else.”"
+      }
+     ],
+     "goto": "s16"
+    }
+   ]
+  }
+ }
+}

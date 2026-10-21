@@ -1931,3 +1931,162 @@ trait gates reckless≥11, candor≥33, sincerity≥55, wit≥21 — all open on
 - Becca's Marine Lab hours stay Thu p.m. / Fri 6–8 a.m.; Monday Oct 12 was a traded shift.
 - Wes's whereabouts: 412 Aerobed Fri/Sat/Sun nights; Sat night/Sun morning on the beach with Jack (never slept in 412 that night).
 - St. Brendan's glass is blue (E01, E08, E09).
+
+### S1E10 — "I Call the Living" (Tue Oct 13 – Sat Oct 17, 2009; tag Sat 6:01 p.m.)
+37 scenes. Forks: s13p → s13a hide / s13b run → s14 · s16b → s17a mass (→ s17c) / s17b fishbowl → s18. Duel **cor** ("On the Heart,"
+s10–s10v; the Brick, eighth floor and north stairwell, 4:00–4:16 a.m., unofficial, no referee). Per path ≈13.6k–14.3k words
+(validator total ~19.9k counts every branch). 8 whispers placed (s04 Priya "never"; s10b Confess; s10b Personal ×2 variants; s15
+still; s19 stay; s19 pillbox; s21 Becca "I don't know if I'm —"); Lena ≤2 per path. Jack's resolve enters 8, ends **6–10** (clamped).
+Lena's resolve ends **5–6** (6 only on `e10_dawn=="still"`). No dangerous window. **Save-locked:** written for
+`saves/after-s1e09.json` (`e9_take=="drink"`, `e9_talk=="saints"`, `e9_point=="walk"`, `e9_waltz=="lena"`, `e9_poem=="knee"`,
+`e9_fisher=="wit"`, `e9_wes_danny=="told"`, `e9_tank=="anemone"`, `e9_face=="beach"`, `e9_tin=="quit"`; gates candor≥40, wit≥25,
+reckless≥12 — all open). Lena's s10b accusation and Confess are gated on `e9_take=="drink"`; s03 Gloria has a `said` branch.
+
+**On-page canon (all paths unless marked)**
+- s01 (Tue 3:20 a.m., Delgado overhang): **Alarm 3, Tue Oct 13, 3:20, in the first storm of the fall; all-clear 3:41.** Margot: 25
+  days; "Either he's irregular or he's two people." Doug barefoot with his pillow through the puddle (no comment). Laney in a Hefty bag
+  and pearls under Theo's golf umbrella; Theo carried both bags (gray and black). **Lena and Laney not speaking** (since Monday, the
+  Madonna Inn tin). Lena in Wes's green Tulane sweatshirt (left behind), "Morning, Jack." Laney: "I've been *exiled*. From my own
+  *room*. Over a *tin*." **Laney sleeps on the 412 Aerobed Mon–Thu nights** (in Theo's navy silk; Theo in the black Meridian robe).
+- s02 (Tue 3:50 p.m., lobby mailboxes): no mail Monday (Columbus). **Danny's third letter** (Leavittsburg postmark Fri Oct 9): the
+  Hopkins came; read "Felix Randal" to Ma; Housman LIV made Reggie cry; Ma told him about Becca; "Did you tell Lena hey or do I got to
+  come out there"; "I told him I don't wish. I decided. It's different."; push-ups 140; Browns 0–4 (sic, per Danny). **Second money
+  order** 4:35 p.m., post office on Mission: $20.00 ($21.10 with fee) to D. KOSTELNIK, STRUTHERS, OH; FROM blank; stub behind the
+  Mooney ID with the first. The day attendant (not Marcus) at the desk.
+- s03 (Tue 9:15 p.m., the Anchor): empty in the gale; Gloria plays Sinatra "Summer Wind" on the jukebox. **Dulce (50s) and Rosario
+  (~25), Harbor Inn housekeeping,** waiting on a 7 bus; Gloria feeds them free. **Rudy translates: Lena brings soup Sundays to the Harbor
+  Inn for the night shift; Dulce says it needs salt.** Jack didn't know (`knows_harbor_soup`). Gloria on Merle per `e9_fisher`. Last 11
+  bus 12:40, Dulce and Rosario asleep on it.
+- s04 (Wed 1:40–2:20 a.m., basement laundry): storm water in RA STORAGE; **the banker's box CALLOWAY · 222 · HOLD FOR FAMILY** (Serra
+  sent it to Delgado in May because 222 was the address on file; Priya signed for it; there since April). Contents: SELMA HIGH
+  sweatshirt, CDs, mug, photo of Nora and Priya (bangs) in a dorm window, composition book: "Nora Calloway · Delgado 222 · If found,
+  please return. Reward: I'll sing you something." Priya has never read past the cover. **Priya: failing orgo (she tutors it); parents
+  run a motel in Fremont; library overnight shift Wed midnight–8.** **Oct 14 is Priya's 21st birthday:** her mother's ("Amma")
+  midnight text arrives at the dryers; she doesn't answer it. New laminate: BASEMENT FLOODED · DRYERS 1–3 ONLY. The box now lives in
+  401 under the window. The basement piano: dead F, "nobody in Delgado admits to playing."
+- s05 (Wed 3:05, 412): Jack's first sentence: *A man knows his own heart by what he says yes to.* Aristotle NE II, James 2:18, Binx,
+  Augustine's ten books. Theo awake with a French film.
+- s06 (Wed 8:10, 412): Laney plays Jay Sean "Down" for 217 ("an olive branch with a beat"). **Theo and Laney's yellow pad: HALLOWEEN /
+  SEATING** (turned face down; "No," in harmony). Laney's FB: "political refugee on the fourth floor." Kevin: "a fire code violation and
+  a cry for help." Laney's account: the Madonna Inn pink booth, she took the tin from the cardigan "in front of *him*." Laney's
+  Halloween ideas for Idaho: "No."
+- s07 (Wed 1:00, Hollis 302): **"Good afternoon, Mr. Costigan."** Hale: "Mr. Costigan has been demoted." Jer 17:9–10; Yusuf, Al-Anfal
+  8:24. Papers swapped; rebuttals Monday; Hale's PHIL 1 midterm Thursday. **Lena's paper "That He Cannot":** Jer 17:9; 1 Cor 4:4;
+  *mihi quaestio factus sum*; ST I-II q.112 a.5; Mark 14:29; O'Connor's letters; last line: "A woman who says she knows her own heart
+  is either a saint or lying."
+- s08 (Wed 6:20, Anacapa Commons): **Dow closes 10,015.86** (first time over 10k in a year). Theo's Martinelli's toast; Jack: "Tell
+  Lordstown." Lena and Margot share waffles; Margot catches Jack looking.
+- s09 (Wed 9:05, the Brick, 8th floor, open 24 hours for midterms): Lena at the window table, Jack mid-floor, twenty yards of carpet.
+  Jack in Danny's Carhartt. **Becca's MIDTERM SURVIVAL — JACK bag** (granola bars, clementine, earplugs, Glory Be holy card, "You'll do
+  great! I prayed. —B"); a second clementine for Lena; kiss on the cheek; "Ranch hours."
+- s09b (Thu 12:20): Jack writes *Which are you?* beside her last line. Kevin: "So is a different floor." Priya on the overnight desk.
+  **Rafi offers "Focus? Midterm special."** in the lot; Jack declines on every path.
+- s10–s10v (Thu 4:00–4:16, duel **cor**): her red **THEN WHAT DID YOU TELL HIM?** beside his first sentence; 1 Cor 4:4. **Lena: "Wes
+  told me."** She knows: Wes asked Jack to take care of her; [e9_take=="drink"] Jack "said yes with a bottle"; Jack told Wes about Danny
+  ("It took me a pier"). "Y'all don't get to *assign* me… I'm not a parish." Peter, Mark 14:29. She does **not** know the ring or the
+  attic. Verdicts per duel macros (see journal "record" card). Lena keeps Becca's clementine in her cardigan pocket.
+- s11 (4:19): elevator: "We're good." / "We're *fine*." **Ferrer Tower: Facilities tape, the swollen steel door won't latch.** Lawn
+  chair in the fountain.
+- s12/s12s (4:26): "Don't." "I wasn't going to." **Lena goes under the tape first.** 160 steps (Jack counts on `e10_climb=="count"`).
+  Ephesians running joke ("say a decade for you at the bottom").
+- s13 (4:40, the playing cabin): Facilities sign AUTOMATIC SYSTEM ENGAGED 7 AM–10 PM · DO NOT OPERATE CLAVIER. **Jack gives Lena Danny's
+  Carhartt** (she wears it through 7 a.m.). **The great bell: VIVOS VOCO · MORTUOS PLANGO · FULGURA FRANGO** (Lena translates). **Lena
+  plays the basement piano** — at three in the morning since August, badly on purpose — two years of lessons at the Rosary (the nun and
+  the ruler). Giants 5–0 at the Dome Sunday; Saints 4–0. "Who dat."
+- s13p (Thu 5:00): **Lena plays "When the Saints Go Marching In" on the Ferrer carillon with her fists; one bell is flat on the third
+  ("That's not flat. That's *New Orleans*.").** Anacapa's lights come on; someone in Delgado hollers WHO DAT. Theo sms 5:01 "Costigan.
+  Is that the Saints." Campus police cruiser onto the lawn. `ferrer_bells`.
+- s13a [hide]: behind the great bell; cop: "Nobody's dumb enough." Out at 5:40; fingernail moon rising. s13b [run]: across the Commons
+  ("Hey —" at two backs unless `e10_play=="watch"`). Priya at the desk: "I didn't see you. The scanner's been broken since two."
+  [e10_priya=="never"] "Go up. It's warm."
+- s14 (5:50, 8th floor): still full night over the water. **Facilities chains and padlocks the tower door.** Lena gives Jack half
+  of Becca's clementine. "Dulce has no palate." **Jack describes the First Way at Mariner Field at halftime — "Aquinas and football.
+  That's the dream girl right there" — and doesn't hear that he has described Lena.**
+- s15 (6:02–7:00): "Wes doesn't argue either. He says he out-waits me." **Lena asleep on Jack's shoulder 6:03–7:00.** Her LG lights
+  WES at 6:09. Becca sms 6:41 "prayed for u at 2 like always." Jack's Jesus Prayer, unfinished. **At 7:00 the chimes wake her; the
+  near-miss; Jack does not kiss her on any path.** Then "Midterm, Youngstown/Costigan." "Same one." "Sit somewhere else."
+- s16 (Thu 9:30, Sandoval Hall 1): PHIL 1 midterm, essay: "Aquinas's First Way. State it; then break it." Hale: "the first thing that
+  tower has done that I've enjoyed." **In the exam Jack hears what he said at dawn.** Lena in the aisle seat of Row M, Jack Row P.
+- s16b (10:50): Becca sms 10:51 "12:10?? saving u a seat"; Theo sms 10:53 balloon; Kevin with his BlackBerry.
+- s17a/s17c [mass]: memorial of St. Teresa of Ávila; Osei's "no wonder You have so few"; Lena beside Mrs. Fitch in the front pew, laughs.
+  Becca: "Is Teresa the one with the angel?" Lena: first woman Doctor of the Church (1970). Becca's bat ray.
+- s17b [fishbowl]: **Balloon Boy, Oct 15** (Fort Collins; down 12:35 PT near Platteville); Laney's pageant-host commentary; Theo's
+  logline; Kevin stops his own bit; Margot: "too calm to have a child in it." Lena reads the crawl: **Obama in New Orleans** (UNO town
+  hall). Laney moves her bag off the cushion; Lena doesn't sit.
+- s18 (2:15, Fishbowl): the boy found in the attic over the garage. Laney's "defective" mascara. Jack thinks of Pauger Street. Evan's
+  section out early; the Anchor Thursday 7–1.
+- s19 (Fri 1:25 a.m., Delgado front steps): **Laney's Big/Little: Sloane Kittredge is her Big.** Paddle (LANEY / SLOANE / PI LAM LOVE).
+  Pi Lam lore: pledges used to walk the Point wall at midnight on the outside — "They don't anymore. Since." (Sloane wouldn't say.)
+  **Kaylee Whitmore** (see knowledge.md). The DRP pillbox. "I went in her *pocket*."
+- s19c (1:52): Lena comes down barefoot; "Whose tin do you think that is?"; "I've got her, Jack." **Laney moves back to 217 Fri ~2 a.m.**
+- s20 (Fri 12:30, 4th-floor lounge): **Tide Fri Oct 16 p.3, by Margot**: carillon story; Facilities "not amused"; **Hale quoted
+  ("bad, and the first thing that tower has done I've enjoyed")**; the door chained. Whiteboard: SUSPECTS 1. A CATHOLIC 2. A DIFFERENT
+  CATHOLIC 3. THE HOLY GHOST (Laney, pink). Margot names nobody. Lena carries Laney's things back to 217.
+- s21 (Fri 9:40 p.m., Rialto, Becca's Ranger): *Where the Wild Things Are* (opened Oct 16); Becca cried twice; "And it was still hot."
+  **Maria Costigan's thank-you note to Becca** on St. Brigid letterhead (Rosie's crab on the fridge by her grandmother's Mass card;
+  Palmer method). [poem=knee] "Not yet." **WE SHOULD MATCH!!** list (Isidore & Maria; Max & a Wild Thing, 4-H lamb ears; cowboy & cow
+  crossed out; ask Jack); Jack: "Joachim and Anne." **"You look at me like I'm homework." "I'll wait." "Due Halloween."**
+- s22 (Sat 1:15 p.m.): **SAINTS & SINNERS invitation, Sat Oct 31, the Ferrante house, Del Playa Lane, halo or horns, "In honor of
+  whoever played the Saints on the Ferrer Tower" —T.A.V.** Theo's over-specific denial (last year *Eyes Wide Shut*). Laney's FB "217
+  4ever." **Purdue beat Ohio State Sat Oct 17;** Gina: "dad turned the radio OFF." Frank: "Purdue." "Thirteen-point favorite." **Nonna
+  on the extension calls Jack "Danny," then knows him; "E la ragazza del granchio?"** Priya's HAPPY DIWALI laminate; a battery diya on
+  Nora's box.
+- s23/s23b (Sat 6:00): new brass padlock and AUTHORIZED PERSONNEL ONLY sign on the tower; the flat bell on the hour. Lena on the Brick
+  steps in a blue sundress, five fingers: *Tomorrow.* (Sunday Saints–Giants.)
+
+**Choice-dependent facts**
+- s10b Confess (`e10_cor_truth`): Lena knows Jack didn't say yes — he drank and Wes took it for one. Personal (`e10_cor_personal`):
+  Jack threw the last house on Seacliff at her; she goes formal ("Mr. Costigan"); without apology (`!e10_cor_apology`) the stairs climb
+  in silence, she calls him "Costigan" at seven, and "Jack. Not Mr. Costigan." on the steps Friday.
+- s17a Becca (`e10_becca_q`): seven (true, partial) / lena (Becca knows Lena was at the Brick all night with Jack, fighting about papers;
+  she's glad) / two (`e10_lied_becca`: Jack told Becca he left the library at two — **a live lie**).
+- s16b `e10_noon=="fishbowl"`: Jack stood Becca up at the 12:10; she mentions the saved seat at the Rialto (becca.trust −1).
+- s19b Text: Jack texted Lena "steps. laney." / Wait: Lena heard Laney's laugh up the stairwell.
+- s19 `e10_kaylee=="pillbox"`: Jack took Laney's DRP pillbox; it went into Lena's cardigan pocket against the tin.
+- s13p run without lookout (`e10_seen_running`): a campus cop saw two backs running for the Brick; Margot quotes the police log ("One of
+  them was laughing"). Hide or lookout-run leaves no police trace.
+- s12s cigarette (`e10_cig`): **Reliquary No. 5 · 10/15/09 · Ferrer Tower · in the bells** (written on a Pacifica call slip with Jack's
+  red pen).
+- s15 `e10_dawn`: still (Jack holds; he sits back) / face (she sits back) / magdalena (he said her full name; she sits up, cold at s16).
+
+**Flags introduced**
+`e10_alarm` (rain/tuesday/laney) · `e10_letter` (again/percy/williams) · `e10_gloria` (worked/shouldnt/quiet) · `e10_priya`
+(never/read/upstairs) · `e10_hq` (aisle/talk/robe) · `e10_seminar` (books/steal/assigned/want) · `e10_bag` (thanks/label/far) ·
+`e10_rafi` (sleep/suffering/tonight) · duel: `e10_cor_dodge`, `e10_cor_truth`, `e10_cor_personal`, `e10_cor_apology`,
+`e10_cor_stranger` · `e10_five` (quiet/goodnight/record/sorry) · `e10_tape` (follow/look/lena) · `e10_climb` (cig/light/count) ·
+`e10_cig` · `e10_play` (low/watch/count) · `e10_escape` (hide/run) · `e10_seen_running` · `e10_football` (good/still/islands) ·
+`e10_dawn` (still/face/magdalena) · `e10_exam` (defend/break/fast) · `e10_noon` (mass/fishbowl) · `e10_becca_q` (seven/lena/two) ·
+`e10_lied_becca` · `e10_kaylee` (stay/pillbox/royalty) · `e10_lena_text` (text/wait) · `e10_suspects` (baptists/quiet/priya) ·
+`e10_homework` (finish/not/ontime/hand) · `e10_nonna` (bene/ma/good) · `e10_wave` (hand/five/walk) · long-arc: **`ferrer_bells`,
+`knows_harbor_soup`, `knows_nora_box`, `knows_lena_piano`, `knows_kaylee`**.
+
+**Payoffs owed (E11+)**
+- `e10_lied_becca` → the lie is live (Becca believes Jack left the Brick at two); `e10_becca_q=="lena"` → Becca knows they were together.
+- `e10_cor_personal && !e10_cor_apology` → Lena's temperature entering E11 (the Big Sur trip).
+- `e10_seen_running` → the Halloween party loose thread (Theo's invitation names the tower).
+- `e10_kaylee=="pillbox"` → Lena holds Laney's pillbox. `e10_dawn=="magdalena"` → the name has been spent once at dawn.
+- `e10_noon=="fishbowl"` → the empty seat (paid lightly in s21; can echo). `e10_exam=="break"` → Hale's grade on the midterm.
+- Halloween: Theo's SAINTS & SINNERS (Oct 31, Ferrante house); Becca's list "Due Halloween"; All Saints Mass Nov 1.
+- Nora's box in 401 (Priya hasn't read past the cover). The Pi Lam Point-wall "Since." Lena's Harbor Inn soup (Gideon seed).
+
+**Tallies after S1E10**
+- Reliquary: 4 → **5 only on `e10_cig`** (No. 5, the Ferrer Tower). Jack's cigarettes lit on-page: +1 on `e10_cig`.
+- Duel record: cor is **unofficial** (no referee); logged on the "record" journal card per verdict. Official record unchanged.
+- Alarms: 3 (Aug 31 3:07; Sep 18 3:12; Oct 13 3:20). Margot's log: 18 days, then 25.
+- Whiteboard: C 6 · B 5 unchanged; new FERRER TOWER case.
+- Money orders to D. Kostelnik: **2** (stubs behind the Mooney ID).
+- Danny's letters to Jack: **3**. Push-ups 140.
+- Lena's "Mr. Costigan": s07 (all paths), s10b Personal, s10v "You win, Mr. Costigan," s12 "Lena" (cold path). "Youngstown": s12 "Lena"
+  (warm), s15 (non-cold). Lena's medal touch: 1 (s13).
+- Lena's resolve: s01 5 → s07 5 → s09 4 → s15 4 → s15 still 5 → s19c +1 (ends **5–6**).
+- Anchor: no pie ratings this week.
+
+**Ledger housekeeping (from the S1E10 review)**
+- Marcus is the overnight desk attendant only; daytime desk is "the day attendant."
+- The First Way lesson was at Mariner Field at **halftime**, Miley Cyrus on the PA (E07); never the fourth quarter.
+- Wes **flew** in (Phoenix → SBA). Wes waded in to the knees on the beach (E09 s08).
+- Jack owns more than one pair of jeans ("his one clean pair").
+- No Wednesday 9:30 class for Jack (PHIL 9H Mon/Wed 1:00; PHIL 1 Tue/Thu 9:30 lecture; Thursday 4:00 section).
+- Nora's birthday: Tuesday Sept 8 (journal card corrected).
+- Becca is not Jack's girlfriend (until E19); Jack never calls her that.
+- 217 is one floor up from the front steps, two floors down from 412.

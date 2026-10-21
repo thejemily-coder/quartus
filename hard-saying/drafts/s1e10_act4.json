@@ -1,0 +1,674 @@
+{
+ "scenes": {
+  "s16": {
+   "slug": "THURSDAY · 9:30 AM · SANDOVAL HALL 1",
+   "body": [
+    "Sandoval Hall 1 at half past nine on a midterm morning smells like four hundred people who didn’t sleep: burnt coffee, Red Bull, wet hair, floor wax the storm tracked back up the aisles. Four hundred orange flip-down seats; four hundred blue books going down the rows hand to hand.",
+    "Row M. Margot on the inside, all in black, three sharpened pencils laid side by side on the fold-down desk in order of length. Lena in the aisle seat. She has showered; her hair is still wet, combed back with her fingers, darkening the shoulders of the green sweatshirt. The tote is at her feet with the mantilla folded on top of everything, black lace, ready for the 12:10. Jack sits in Row P, as instructed.",
+    {
+     "if": "e10_dawn==\"magdalena\"",
+     "text": "She hasn’t turned her head once since she sat down."
+    },
+    "Hale is at the lectern with his hair wet too and wine on the cuff of the linen jacket, holding the wireless microphone in one hand as if somebody has asked him to dispose of it.",
+    "“Somebody played a gospel number on the Ferrer carillon at five o’clock this morning,” he says. “Badly. I was awake; I’m always awake. In eleven years it is the first thing that tower has done that I’ve enjoyed.” He surveys four hundred faces and none of them in particular. “One bell is still flat. You have seventy-five minutes. Begin.”",
+    "Four hundred blue books open. In Row M, Margot turns her head and looks at Lena, and keeps looking at her. Lena writes her name.",
+    {
+     "type": "doc",
+     "title": "PHIL 1 · Midterm · Essay (40 points)",
+     "text": "Aquinas’s First Way. State it; then break it."
+    },
+    "Jack writes *The argument from motion* across the top of the first page, and under it the shape he could draw in his sleep. Some things in the world are in motion. Whatever is moved is moved by another. It can’t go back forever, or nothing would be moving now. So there is a first mover, moved by nothing, and this everyone understands to be God. He has written it a dozen times. He explained it on the aluminum bleachers at Marisol High in the fourth quarter, with the band doing “Hey Baby” behind him, to a girl in a Carhartt vest who said it back to him perfectly, and —",
+    "The pen stops. *Aquinas and football. That’s the dream girl right there.* He said it on the eighth floor of the Brick with the islands coming up out of the dark, and he didn’t hear it. He hears it now. A girl who can give you the *Summa* by question and article without looking anything up. A girl who made the owner of Sully’s surrender the bell over his own bar. He described Lena Broussard to Lena Broussard, on a library floor, at six in the morning, with half of her clementine in his hand.",
+    "He looks down to Row M. She’s writing fast, left hand flat on the blue book, head down, the wet hair over one shoulder. Her pen doesn’t stop."
+   ],
+   "choices": [
+    {
+     "text": "State it and defend it. Write it like it’s true.",
+     "tag": "Sincerity",
+     "set": {
+      "e10_exam": "defend",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "It is true, so he writes it that way: the motion, the mover, the chain that can’t hang from nothing. Six pages in a borrowed confidence that feels, for six pages, like his own.",
+      "At 10:45 Hale says “Pens down,” and the blue books go hand over hand down the rows to the aisles, and his goes with them."
+     ],
+     "goto": "s16b"
+    },
+    {
+     "text": "Break it honestly — Hume, the regress, all of it.",
+     "tag": "Candor",
+     "set": {
+      "e10_exam": "break",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "He gives the objection everything it has — why not a chain with no first link, why not the universe as its own mover — and then answers it, and the answer is thinner than the objection, and he says so. In ink. To an atheist.",
+      "At 10:45 Hale says “Pens down,” and the blue books go hand over hand down the rows to the aisles, and his goes with them."
+     ],
+     "goto": "s16b"
+    },
+    {
+     "text": "Write the First Way and nothing else, fast. Don’t look down Row M again.",
+     "tag": "Control",
+     "set": {
+      "e10_exam": "fast",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He doesn’t look. He writes it clean in twenty minutes and sits for forty more with his hands flat on the desk, studying the graffiti carved into the seat back in front of him, and it costs him something every minute.",
+      "At 10:45 Hale says “Pens down,” and the blue books go hand over hand down the rows to the aisles, and his goes with them."
+     ],
+     "goto": "s16b"
+    }
+   ]
+  },
+  "s16b": {
+   "slug": "THURSDAY · 10:50 AM · SANDOVAL HALL, THE FRONT STEPS",
+   "body": [
+    "Four hundred people come out onto the Sandoval steps into a washed, glittering sun, the storm gone east over the hills and the sky above the Commons scrubbed a blue so new it looks wet. Everyone is comparing answers. Everyone got the regress wrong. Down on the path Lena is already going, the tote on her shoulder and the green sweatshirt bright against the grass, off toward Ocean Road and St. Brendan’s, and she doesn’t look for him on the steps. She told him to sit somewhere else.",
+    "The RAZR goes twice in his pocket.",
+    {
+     "type": "sms",
+     "from": "Becca",
+     "text": "12:10?? between labs :) saving u a seat",
+     "time": "10:51 AM"
+    },
+    {
+     "type": "sms",
+     "from": "THEO VANCE (IMPORTANT)",
+     "text": "There is a child in a balloon. Fishbowl. Now.",
+     "time": "10:53 AM"
+    },
+    "Kevin comes down the steps past him, gray to the lips from his orgo midterm, the rubber bands from his flashcards still around one wrist, and stops a step below with his BlackBerry held out at arm’s length, screen first. “There’s a kid in a *balloon*?”"
+   ],
+   "choices": [
+    {
+     "text": "The 12:10. Becca’s saving a seat.",
+     "tag": "Go",
+     "set": {
+      "e10_noon": "mass"
+     },
+     "key": "Thursday you went to the 12:10 with Becca. Lena was in the front pew.",
+     "response": [
+      "He goes down the steps and across the Commons toward Ocean Road, the way Lena went, ten minutes behind her."
+     ],
+     "goto": "s17a"
+    },
+    {
+     "text": "The Fishbowl.",
+     "tag": "Go",
+     "set": {
+      "e10_noon": "fishbowl"
+     },
+     "key": "Thursday you watched the balloon in the Fishbowl. Lena watched the news crawl under it.",
+     "response": [
+      "Kevin is already walking. Jack falls in beside him, and Kevin estimates the balloon’s volume, unprompted, the length of the Commons."
+     ],
+     "goto": "s17b"
+    }
+   ]
+  },
+  "s17a": {
+   "slug": "THURSDAY · 12:10 PM · ST. BRENDAN’S",
+   "set": {
+    "resolve.jack": "+1",
+    "resolve.lena": 5,
+    "soul.grace": "+1"
+   },
+   "body": [
+    "The memorial of St. Teresa of Ávila, and Osei in white. About twenty-five people are scattered under the upturned hull of the ceiling, and the noon sun comes through the blue glass and lays itself over the pews in pieces. The 12:10 is the Mass of people with a lab at one: grad students, two nurses in scrubs, a man in a Caltrans vest with his hard hat on the kneeler. Mrs. Fitch has the front pew on the shrine side, as she has every weekday since the Carter administration, and beside her, in the black mantilla, is Lena.",
+    "Becca slides in next to Jack during the first reading, out of breath, in the Carhartt vest, smelling of seawater and squid. She looks at him sideways and her whisper is pure alarm. “You look *exhausted*. Were you at the library all night?”",
+    "“Till seven.”",
+    "It’s true. Every word of it is true. She squeezes his hand on the pew. “I prayed at two,” she whispers, as news. He knows. He read it at 6:41 this morning on the eighth floor, with the phone in his shirt pocket and Lena asleep against his arm.",
+    "Osei keeps the homily to three sentences, which is two more than he sometimes uses. Teresa was on the road to found a convent, the story goes, when her cart went over into a river and put her in it, habit and all, and climbing out soaked she told the Lord what she thought of Him. “‘If this is how You treat Your friends,’” Osei says, “‘no wonder You have so few.’” He folds his hands on the ambo. “She is a Doctor of the Church. She was also correct.”",
+    "In the front pew Lena laughs out loud, once, the sound bright and unembarrassed in the quiet church, and Mrs. Fitch turns to look at her, and Lena doesn’t care at all.",
+    "At Communion Jack goes up behind Becca and comes back and kneels, and for the length of the thanksgiving nothing in him is arguing with anything. He has had no sleep, and the blue book is still in his hand somewhere, and the bleachers, and the eighth floor; and for a minute or so none of it is in charge. He couldn’t tell anyone where that comes from.",
+    "After, on the steps in the sun, Lena comes out with Mrs. Fitch on her arm and the mantilla coming off in one pull. Becca goes straight to her. “Is Teresa the one with the angel? With the arrow?”",
+    {
+     "if": "e9_saint==\"catherine\"",
+     "text": "“That’s her.” Lena folds the lace into a square, then a smaller square. “First woman Doctor of the Church. Paul the Sixth, 1970. Catherine got hers a week later and has never gotten over it.”",
+     "else": "“That’s her.” Lena folds the lace into a square, then a smaller square. “First woman Doctor of the Church. Paul the Sixth, 1970. Catherine had to wait a week.”"
+    },
+    "“I *love* that!” Becca says.",
+    "Jack stands on the step below the two of them, two nights’ sleep short, with the sun in his eyes. Lena’s eyes come to him and stay as long as manners allow, which in New Orleans is a precise amount of time, and then go back to Becca, and she says something kind about the vest. Then she takes Mrs. Fitch down the steps and off toward the parking lot, the folded lace showing at the top of the tote.",
+    "Becca puts her arm through his. She has an hour before the touch tank and she has a plan for them. “You’re eating,” she says. “Then I’m feeding a bat ray.”"
+   ],
+   "next": "s18"
+  },
+  "s17b": {
+   "slug": "THURSDAY · 11:40 AM · DELGADO HALL, THE FISHBOWL",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "The Fishbowl at twenty to twelve: every couch taken, the arms of every couch taken, people cross-legged on the carpet and two deep against the glass with their backpacks still on. On the TV bolted in the corner, CNN, and on CNN a silver balloon the shape of a Jiffy Pop lid, sliding across a brown Colorado sky in a long helicopter shot. A six-year-old boy may be inside, the banner says. The anchors have put on their serious voices and keep having to take them off to say the word *balloon*.",
+    "Laney is on the middle couch in Theo’s navy silk robe over jeans, the exile’s uniform, both feet tucked under her. She has been calling it since eleven. “And our next contestant,” she says, “is a *weather event*. She hails from Fort Collins. She enjoys altitude and long drifts on the jet stream, and her talent tonight is —”",
+    "“Option it,” Theo says from the arm of the couch.",
+    "Kevin is on the floor with his back against the couch and the orgo midterm still visible in his face. “Okay, so at seven thousand feet ambient’s maybe forty degrees, and if it climbs to ten, fifteen thousand, the partial pressure of oxygen drops off a cliff, and a kid that size, with that surface area —” He stops. It has stopped being a bit, and he’s the one who stopped it. He puts his chin on his knees.",
+    "Margot stands at the glass with her arms folded and her coat still buttoned. “That balloon,” she says, “is too calm to have a child in it.” A girl from the third floor shushes her. Margot accepts the shush without any change of expression and goes on watching the balloon with the expression she uses on footnotes. On the far couch Doug Pruitt wakes, looks at the screen, says “Huh,” and goes back to sleep.",
+    "Theo moves his feet off the coffee table so Jack can sit on it, and hands him half of a cold breakfast burrito in its foil, and asks him, pleasantly, what he thinks of the weather.",
+    "At 12:35 it comes down. A field northeast of Denver, the silver skin folding in on itself like a dropped umbrella, men running at it from a truck, and the little compartment under it empty. Then somebody on CNN says a deputy thinks he saw something fall, back near a town called Platteville. Laney stops calling it. She pulls a throw pillow into her stomach and holds it there, and the room goes quiet under the TV.",
+    "At ten to one Lena comes in from the 12:10. The mantilla is folded in the tote. She doesn’t sit; she stands behind the middle couch with the tote on her shoulder, and she doesn’t look at the empty balloon in the field. She’s reading the crawl under it.",
+    {
+     "type": "doc",
+     "title": "The CNN crawl",
+     "text": "OBAMA IN NEW ORLEANS · FIRST VISIT AS PRESIDENT · TOWN HALL AT UNIVERSITY OF NEW ORLEANS · STOPS AT LOWER NINTH WARD SCHOOL"
+    },
+    "Her city, and her president, on a strip of type under a field in Colorado. Jack sees what she’s reading. Her face doesn’t make a speech about it either way. On the couch, without turning around, Laney moves her bag off the cushion beside her. Lena stays where she is, standing, and the crawl comes around to New Orleans again, white letters going right to left under the men walking the field in a line."
+   ],
+   "next": "s18"
+  },
+  "s18": {
+   "slug": "THURSDAY · 2:15 PM · DELGADO HALL, THE FISHBOWL",
+   "body": [
+    {
+     "if": "e10_noon==\"mass\"",
+     "text": "Jack has been in the Fishbowl since twenty to two, when Becca squeezed his arm in the lobby and went down the bluff to the Marine Lab. He came in on an empty balloon in a field, a deputy who thinks he saw something fall, and Laney with a throw pillow held against her stomach."
+    },
+    {
+     "if": "e10_noon==\"fishbowl\"",
+     "text": "Lena went upstairs to sleep a little after one, without a word to anybody. Laney watched her go in the reflection on the glass."
+    },
+    "On CNN, deputies walk a field in a line with their heads down. Kevin is on his feet now, pacing behind the couch with his hands laced on top of his crew cut. Then the sheriff of Larimer County at a podium in a parking lot, and the Fishbowl holds still: the boy is at home. He’s fine. He was found hiding in a cardboard box in the attic above the garage.",
+    "The room comes apart. A cheer goes up loud enough to bring Marcus out from behind the front desk, somebody hugs a stranger, Doug sits up for it. Laney cries a little and points at her own face. “This is the *mascara*. It’s defective. I’m writing to Lancôme.” Kevin sits down on the carpet, hard, and laughs at the ceiling.",
+    "Jack doesn’t cheer. Pauger Street: water up to the gutters, a woman under the roofline knocking on the wood from inside, *like she’d been at it for days and meant to keep on*, and an axe coming back off hundred-year-old cypress. *In the morning we went back. And it had stopped.* He sits on the coffee table with his hands between his knees while the Fishbowl cheers a boy in a box, and he says nothing.",
+    "Then the day takes him. Evan lets the four o’clock section out of Hollis 108 at twenty past, because nobody in it has a voice left. La Flaca comes out of its chain behind Delgado with the seat still wet. The Anchor, seven to one, every stool taken, the Thursday crowd back after the storm, the Hobart, the steam, Gloria’s pencil, a Thursday."
+   ],
+   "next": "s19"
+  },
+  "s19": {
+   "slug": "FRIDAY · 1:25 AM · DELGADO HALL, THE FRONT STEPS",
+   "set": {
+    "knows_kaylee": true,
+    "rel.laney.warmth": "+1",
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "The night after the storm is cold and scoured and moonless, and the Anchor is still on Jack’s hands: bleach, Hobart steam, the fryer. He coasts La Flaca into the Delgado fire lane at twenty-five past one with Ray’s light throwing a small shaking circle ahead of the front wheel, and in it, on the top step under the lobby light, there is Laney.",
+    "She’s in a pink T-shirt that says PI LAM LITTLE in Greek letters and then in English, in case, pulled on over a black party dress with sequins at the hem. She’s barefoot. Her flats are lined up beside her like a pair of patient dogs. A pink balloon is tied to her wrist with curling ribbon and rides above her head in no wind at all, and in her lap is a wicker basket of Pi Lam swag: koozies, a monogrammed tumbler, a picture frame spelling LITTLE in glitter, a wooden paddle. She has had white wine, and her note. She takes the little silver pillbox with DRP on the lid out of the pocket of the party dress (“It has *pockets*, Jack, this dress has *pockets*”), shakes it once like a maraca, and puts it back.",
+    "“It was *Big/Little*,” she says, before he’s off the bike. “You have to hear all of it. It’s the law.”",
+    "He hears all of it. Clues in her mailbox all week: a Ziploc of Red Hots, a tiny Texas flag, a cassette single of “Kiss Me” because her big was apparently *very* specific. Tonight the scavenger hunt, up and down Seacliff in a blindfold with a sister on each elbow, the porch, a living room full of candles nobody had a permit for, and when the blindfold came off it was Sloane Kittredge holding the paddle. Laney holds it up for him. LANEY in pink glitter. SLOANE in gold. PI LAM LOVE across the bottom, the M running out of room.",
+    "“Sloane. The *rush chair*.” Laney puts a hand to her sternum. “I’m *royalty*. I’m Pi Lam royalty. I’m going to need to be addressed differently.”",
+    "Then the family lore, because a Big gives you the family lore, and Sloane’s goes back to 1992. Her big’s big’s big was thrown out of Cabo. “And the pledges used to walk the Point wall,” Laney says. “At midnight. On the *outside*.” She walks her fingertips along the rim of the basket and lets them lurch. “They don’t anymore. Since.”",
+    "“Since what?”",
+    "“She didn’t say. She looked at her drink.” Laney’s already digging in the basket. “Anyway there’s a *koozie* —”",
+    "Then the balloon dips on its ribbon and bumps her on the head, and she bats it away and says to it, laughing, “Kaylee would’ve lost her *mind* —” and hears it, and stops.",
+    {
+     "if": "e1_after==\"walked\"",
+     "text": "He has heard the name once before, in August, with Laney asleep on his back by the Lagoon and her cheek against his neck. *Kaylee used to — .* Lena’s hand on her back. It never got finished."
+    },
+    "Laney looks at the balloon. Then at the street.",
+    "“Kaylee Whitmore,” she says, first name and last, like roll call. “We were fifteen. Brownies together. Matching everything — we had matching *retainers*, Jack, on purpose. She drove. She had her permit. That’s a joke, a permit.” She smiles at the joke so it’ll know she got it. “There was a party in Preston Hollow, and she’d been drinking and so had I, and I let her. I was in charge of the radio. Preston Road.” She stops. “There’s a culvert.”",
+    "The balloon turns on its ribbon. She holds up the wrist it’s tied to, the left one, and turns it in the lobby light like a bracelet she’s showing off.",
+    "“Cast for six weeks. Pink. Everybody in the tenth grade signed it.” Her voice doesn’t change at all. “Everybody signed it, and she was dead.”",
+    "A truck goes by out on the Anacapa loop with its high beams on, and lights up the Lagoon, and takes the light away again.",
+    "“A month later a doctor wrote me a note. For flying.” She laughs, and the laugh is wet. “I’d never been on a plane.”",
+    "She tucks her feet under the party dress. “Lena’s the only one who knows. Lena’s the *only* one.” She looks up, at the lobby glass and the floors above it, at the second floor, where she can’t see anything from here. “And I went in her *pocket*.”",
+    "Whatever the reason was, it doesn’t come out. Jack watches her go looking for it and come back without it. She looks at him instead, her mascara run to the jaw, holding on to the paddle with both hands.",
+    "“Don’t leave,” Laney says. “I’m not drunk. I mean I am. But don’t.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "laney",
+     "title": "Laney Price",
+     "text": "Laney Price. Pi Lam, as of Thursday: ran back across Seacliff in a pink cowboy hat to Lena first. The night before, on the floor of 217 in a white dress, she asked what happens if they look at her and see. First Catholic Mass: arms crossed like a Baptist, came back from the blessing pink and quiet. Programmed herself into my phone. (Hoodie status: hers.) Pi Lam’s barn party: carried upstairs by her new sisters, glorious and wrecked. Called Lena a mother over the banister. Said sorry at the sign of peace, at her second Mass. Big/Little: Sloane is her big. On the front steps at one in the morning, in a PI LAM LITTLE shirt, with a balloon on her wrist, she told me about Kaylee Whitmore. Fifteen; Kaylee drove; they’d both been drinking and Laney let her. Preston Road. A culvert. A cast for six weeks that everybody signed. A month later, a doctor’s note for flying; she’d never been on a plane. Lena’s the only other one who knows."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Sit down beside her and stay.",
+     "tag": "Sincerity",
+     "set": {
+      "e10_kaylee": "stay",
+      "rel.laney.trust": "+2",
+      "trait.sincerity": "+1"
+     },
+     "cue": "Laney will remember that.",
+     "key": "On the Delgado steps at one in the morning, Laney told you about Kaylee.",
+     "response": [
+      "He leans La Flaca on the rail and sits down on the cold step beside her. She puts her head on his shoulder like it’s a place she’s been before. The balloon comes down on its ribbon and bumps him in the ear, and she laughs at that, wet, into the sleeve that smells like the Anchor’s dish pit, and doesn’t lift her head."
+     ],
+     "goto": "s19b"
+    },
+    {
+     "text": "“Give me the pillbox, Laney. Just till morning.”",
+     "tag": "Control",
+     "set": {
+      "e10_kaylee": "pillbox",
+      "rel.laney.trust": "+1",
+      "trait.control": "+1"
+     },
+     "key": "On the Delgado steps at one in the morning, Laney told you about Kaylee.",
+     "response": [
+      "She looks at his open hand. Then at the dress pocket. Then she takes the pillbox out and puts it in his palm. It’s warm from being next to her.",
+      "“You sound like her,” Laney says."
+     ],
+     "goto": "s19b"
+    },
+    {
+     "text": "“So you’re royalty now.”",
+     "tag": "Wit",
+     "set": {
+      "e10_kaylee": "royalty",
+      "rel.laney.trust": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "On the Delgado steps at one in the morning, Laney told you about Kaylee.",
+     "response": [
+      "She laughs properly, from the stomach, and gives the sleeping lobby the wave — wrist, wrist, elbow, elbow — and tells him the rest of the paddle story anyway: the glitter, the hot glue, a sophomore who glued her own palm to the M and had to go to Student Health with it. Then she runs out of story, and goes quiet, and the balloon turns over her head."
+     ],
+     "goto": "s19b"
+    }
+   ]
+  },
+  "s19b": {
+   "slug": "FRIDAY · 1:48 AM · DELGADO HALL, THE FRONT STEPS",
+   "body": [
+    "Laney is quiet now with her knees pulled up under the party dress, the balloon nodding over her head on its ribbon. Somewhere above them, two floors up and around the east side of the building, Lena has had 217 to herself for three nights."
+   ],
+   "choices": [
+    {
+     "text": "Text Lena: *steps. laney.*",
+     "tag": "Text",
+     "set": {
+      "e10_lena_text": "text"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "steps. laney.",
+       "time": "1:48 AM"
+      },
+      "Sent. No reply. He closes the phone."
+     ],
+     "goto": "s19c"
+    },
+    {
+     "text": "Don’t. She’ll come.",
+     "tag": "Wait",
+     "set": {
+      "e10_lena_text": "wait"
+     },
+     "response": [
+      "He leaves the phone where it is. Laney finds a koozie at the bottom of the basket that says PI LAM: WE’RE KIND OF A BIG DEAL and laughs at it, loud, the laugh you can hear across a party, loud enough to carry up a stairwell."
+     ],
+     "goto": "s19c"
+    }
+   ]
+  },
+  "s19c": {
+   "slug": "FRIDAY · 1:52 AM · DELGADO HALL, THE FRONT STEPS",
+   "set": {
+    "resolve.lena": 6
+   },
+   "body": [
+    "The push bar on the lobby door goes, and Lena comes out: the oatmeal cardigan over the green sweatshirt, sleep shorts, her hair down. She’s barefoot on the cold concrete.",
+    {
+     "if": "e10_lena_text==\"text\"",
+     "text": "Her LG is in her hand, still open, his text still lit on it.",
+     "else": "“I heard you laugh,” she says to Laney. “Through two doors.”"
+    },
+    "She sits down on Laney’s other side, close, the cardigan against the PI LAM LITTLE shirt.",
+    {
+     "if": "e10_kaylee==\"pillbox\"",
+     "text": "Jack holds out the pillbox. Lena takes it without a word, and it goes into her cardigan pocket, and he hears it touch the tin in there, small, metal on metal."
+    },
+    "Laney doesn’t look at her. She looks at the paddle. “I’m sorry about your tin.”",
+    "“It’s not my tin, cher.” Lena puts an arm around her, and Laney’s head goes down onto her shoulder, where it fits. “It’s his.”",
+    "Then, over the top of Laney’s head, to Jack: “I’ve got her, Jack.”",
+    {
+     "if": "e10_cor_personal && !e10_cor_apology",
+     "text": "*Jack.* Not *Costigan*. He notices that."
+    },
+    "He gets up. He takes La Flaca around to the rack and chains it, and comes back up past the two of them on the steps, and goes in. In the lobby Marcus is asleep on his forearms over the orgo. The elevator takes its time coming down, and when it comes he rides it up four floors and lets himself into 412 in the dark. Theo’s screen is lit, a subtitled film, Theo’s back to the room. The Aerobed is still out on the floor, made up tight with somebody’s pageant-grade hospital corners, and empty."
+   ],
+   "next": "s20"
+  },
+  "s20": {
+   "slug": "FRIDAY · 12:30 PM · DELGADO HALL, THE 4TH-FLOOR LOUNGE",
+   "body": [
+    "Friday’s *Tide* is lying on the lounge couch folded open to page three, in the way of a paper that somebody wanted found.",
+    {
+     "type": "doc",
+     "title": "The Marisol Tide · Friday, Oct. 16 · p. 3",
+     "text": "CARILLON PLAYED AT DAWN; CAMPUS POLICE ‘LOOKING INTO IT’\nBy Margot Lindqvist\nAt approximately 5 a.m. Thursday, an unknown person or persons played ‘When the Saints Go Marching In’ on the Ferrer Tower carillon, which Facilities had closed after Tuesday’s storm. A Facilities spokesperson said the department is ‘not amused.’ No suspects have been identified. A Portolá resident, who asked not to be named, said: ‘Honestly? It was kind of epic.’ The tower’s door has been chained."
+    },
+    "On the whiteboard, under the season’s tally and LEIF ERIKSON DAY (OBSERVED), there’s a new case in Margot’s block capitals.",
+    {
+     "type": "doc",
+     "title": "The whiteboard",
+     "text": "FERRER TOWER · THU 5:00 A.M. · “WHEN THE SAINTS GO MARCHING IN”\nSUSPECTS:\n1. A CATHOLIC\n2. A DIFFERENT CATHOLIC\n3. THE HOLY GHOST"
+    },
+    "The third suspect is in pink marker, in bubble letters, with a star after it. Laney has been back in 217 since two this morning.",
+    "Margot is at the lounge table with her laptop, typing, the Moleskine closed beside it. She doesn’t look up. “Somebody on this campus,” she says, “loves a football team enough to commit a misdemeanor at five in the morning.” Type, type. “I wonder who.” The Moleskine stays shut by her elbow, and her hands stay on the keys.",
+    "Lena goes past the lounge door with an empty laundry basket on her hip, headed down the hall toward 412, and thirty seconds later goes back the other way with the basket full of Laney: a hair dryer, a curling iron, two bottles of concealer, a pink BlackBerry charger, one Tory Burch flat. She goes by at the same speed both ways."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "whiteboard",
+     "title": "The whiteboard",
+     "text": "Margot’s, by annexation: USEFUL IDIOTS FOR CHRISTIAN NATIONALISM, COSTIGAN | BROUSSARD. Sully’s made the board: liturgical football, idolatry, my outfit. Margot wasn’t even there when I read it. She didn’t need to be. Now the chastity talk is up there too: both of us, voluntarily. Kenzie Rourke got her own line. Margot thinks she might not be an idiot. Category pending. C 6, B 5. The morning after the wake, under the total: TUESDAY — NO SCORE. (BEREAVEMENT.) October 9th, top of the board: LEIF ERIKSON DAY (OBSERVED). Columbus: see attached. Then: FERRER TOWER · THU 5:00 A.M. · “WHEN THE SAINTS GO MARCHING IN.” Suspects: a Catholic; a different Catholic. Laney added the Holy Ghost. Margot wrote it up for the Tide and didn’t name anybody."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Could’ve been Baptists.”",
+     "tag": "Wit",
+     "set": {
+      "e10_suspects": "baptists",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Hale’s theory,” Margot says. She hits return. “He’s wrong too.”"
+     ],
+     "goto": "s21"
+    },
+    {
+     "text": "Say nothing.",
+     "tag": "Control",
+     "set": {
+      "e10_suspects": "quiet",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Margot types for a minute in the silence he’s left her. “Hale told the *Tide* it was played badly,” she says. “Hale has never played anything.” She still hasn’t looked up."
+     ],
+     "goto": "s21"
+    },
+    {
+     "text": "Add “4. PRIYA” to the board.",
+     "tag": "Charm",
+     "set": {
+      "e10_suspects": "priya",
+      "rel.margot.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "He uncaps the black marker and adds it under the Holy Ghost. Margot gets up, crosses the lounge, and erases it with the side of her fist. “Priya,” she says, “would have laminated it.” She sits back down. It’s the closest she has come all semester to smiling at him, and she conducts it entirely with her eyebrows."
+     ],
+     "goto": "s21"
+    }
+   ]
+  },
+  "s21": {
+   "slug": "FRIDAY · 9:40 PM · MISSION STREET, BECCA’S RANGER OUTSIDE THE RIALTO",
+   "music": "Taylor Swift — “Fifteen”",
+   "body": [
+    "The Rialto on Mission was a single screen in 1934 and got cut into four in 1987, and the marquee hasn’t been touched since. Tonight it says W ERE THE WILD THI GS ARE, two teeth out, and under that PARANORMAL ACTIVITY, with a line around the corner past the dying Blockbuster. Becca bought their tickets Tuesday, by phone, during the storm. “I’m the one who plans the thing,” she said.",
+    "She cried twice in theater three, once when the boy’s mother wouldn’t look up from her work and once at the end, in the boat, and both times she turned to him in the dark to make sure he saw she didn’t know why. Now she sits behind the Ranger’s wheel in the lot with the heater going and her hands at ten and two on a parked truck. St. Isidore rides the visor. The radio is low on KSLY, and she knows every word of the song and doesn’t sing one.",
+    "“Why is everybody so *sad*?” she says. She read the book to her brothers a hundred times — “a hundred and fifty; Eli made me do the voices, and the voices have to *roar*” — and her favorite line is the last one. She says it now with her chin on the top of the wheel, slowly, savoring it. “*And it was still hot.*”",
+    "Then she sits up. “Okay. I have to show you something and you have to be normal about it.” From under the clipboard on the bench seat she takes an envelope, and from the envelope a single sheet of letterhead Jack has known all his life. His mother types on it eight hours a day.",
+    {
+     "type": "doc",
+     "title": "St. Brigid of Kildare Parish School",
+     "text": "Dear Becca,\nThank you for Rosie’s crab. She has it on the refrigerator next to her grandmother’s Mass card. You have lovely penmanship. God bless you and your family.\nMaria Costigan"
+    },
+    "“She used the return address,” Becca says. She is holding the letter by the very edges, the way you’d hold a photograph that isn’t dry. “Your mom has *beautiful* handwriting. It’s Palmer method. Only my grandma and nuns still do Palmer method.” She points out the line about penmanship, in case he missed it, and puts the letter back in the envelope, and the envelope back under the clipboard, flat.",
+    {
+     "if": "e9_poem==\"knee\"",
+     "text": "“My mom asked if I said yes at the bonfire,” she says. “I told her, ‘*Not yet*.’” She laughs. “It’s a joke.” Then she looks at the windshield, and the laugh is done before she is."
+    },
+    "Then the clipboard itself, because there is always the clipboard, and on it, under a page of salinity readings, a page that is his.",
+    {
+     "type": "doc",
+     "title": "WE SHOULD MATCH!!",
+     "text": "1. St. Isidore & St. Maria (farmers!! married!! the only married couple who are both saints)\n2. Max & a Wild Thing (I have ears from 4-H)\n3. (crossed out) a cowboy & a cow\n4. ask Jack"
+    },
+    "He reads it like a problem set. He checks her premises. “Joachim and Anne,” he says.",
+    "“Oh!” She looks at the page, betrayed by it. “They’re *older*.”",
+    "He asks a clarifying question about the ears. They’re lamb ears, from a 4-H skit about wool, but in low light they could be anything; she demonstrates, hands up on either side of her head. He says they’re good ears. He sits with the list on his knee and can’t pick between a farmer and a Wild Thing, and she waits while he doesn’t, and the song on the radio gets to the part about being fifteen.",
+    "“You look at me like I’m homework,” Becca says.",
+    "She isn’t hurt. She says it the way she reads the salinity off the refractometer: what’s there is what’s there. “It’s okay. I know you do. You’re always somewhere else a little.” She takes the clipboard back off his knee. “I don’t mind homework. I’m good at homework.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Becca — I don’t know if I’m —”",
+     "tag": "Candor",
+     "set": {
+      "e10_homework": "finish",
+      "rel.becca.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "cue": "Becca will remember that.",
+     "key": "After *Where the Wild Things Are*, Becca said you look at her like homework. She said she’ll wait.",
+     "response": [
+      "She puts one hand up, flat, and stops him. She knows what the sentence is. “Nope,” she says, kindly. “Not in a parking lot.” “Then do your homework, Jack. I’ll wait.” She tears the page off the clipboard along the top, clean, and folds it once and puts it in his hand. “Due Halloween.”",
+      "At Portolá she kisses his cheek on the steps and goes in. He walks home the long way, out along Ocean Road under the eucalyptus, with the list in his pocket. He knows what he knew in Sandoval Hall with the pen stopped on the page, and he stays. A velvet box on a lace runner is why.",
+      {
+       "if": "e9_tank==\"anemone\"",
+       "text": "*It holds on. That’s different.*"
+      }
+     ],
+     "goto": "s22"
+    },
+    {
+     "text": "“You’re not homework.”",
+     "tag": "Sincerity",
+     "set": {
+      "e10_homework": "not",
+      "rel.becca.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "After *Where the Wild Things Are*, Becca said you look at her like homework. She said she’ll wait.",
+     "response": [
+      "She smiles at him. She doesn’t believe it, and she doesn’t need to. “Then do your homework, Jack. I’ll wait.” She tears the page off the clipboard along the top, clean, and folds it once and puts it in his hand. “Due Halloween.”",
+      "At Portolá she kisses his cheek on the steps and goes in. He walks home the long way, out along Ocean Road under the eucalyptus, with the list in his pocket. He knows what he knew in Sandoval Hall with the pen stopped on the page, and he stays. A velvet box on a lace runner is why.",
+      {
+       "if": "e9_tank==\"anemone\"",
+       "text": "*It holds on. That’s different.*"
+      }
+     ],
+     "goto": "s22"
+    },
+    {
+     "text": "“You’re the only homework I do on time.”",
+     "tag": "Charm",
+     "set": {
+      "e10_homework": "ontime",
+      "rel.becca.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "key": "After *Where the Wild Things Are*, Becca said you look at her like homework. She said she’ll wait.",
+     "response": [
+      "She laughs and smacks his arm with the back of her hand, the way her brothers taught her. “Then do your homework, Jack. I’ll wait.” She tears the page off the clipboard along the top, clean, and folds it once and puts it in his hand. “Due Halloween.”",
+      "At Portolá she kisses his cheek on the steps and goes in. He walks home the long way, out along Ocean Road under the eucalyptus, with the list in his pocket. He knows what he knew in Sandoval Hall with the pen stopped on the page, and he stays. A velvet box on a lace runner is why.",
+      {
+       "if": "e9_tank==\"anemone\"",
+       "text": "*It holds on. That’s different.*"
+      }
+     ],
+     "goto": "s22"
+    },
+    {
+     "text": "Say nothing. Take her hand.",
+     "tag": "Control",
+     "set": {
+      "e10_homework": "hand",
+      "rel.becca.warmth": "+1",
+      "trait.control": "+1"
+     },
+     "key": "After *Where the Wild Things Are*, Becca said you look at her like homework. She said she’ll wait.",
+     "response": [
+      "Her hand is rough at the base of the fingers, a ranch hand’s, and warm from the heater. She lets him hold it through the last chorus. “Then do your homework, Jack. I’ll wait.” She tears the page off the clipboard along the top, clean, and folds it once and puts it in his hand. “Due Halloween.”",
+      "At Portolá she kisses his cheek on the steps and goes in. He walks home the long way, out along Ocean Road under the eucalyptus, with the list in his pocket. He knows what he knew in Sandoval Hall with the pen stopped on the page, and he stays. A velvet box on a lace runner is why.",
+      {
+       "if": "e9_tank==\"anemone\"",
+       "text": "*It holds on. That’s different.*"
+      }
+     ],
+     "goto": "s22"
+    }
+   ]
+  },
+  "s22": {
+   "slug": "SATURDAY · 1:15 PM · DELGADO HALL, 4TH FLOOR",
+   "set": {
+    "rel.theo.warmth": "+1"
+   },
+   "body": [
+    "Saturday comes up gorgeous: eighty-three in San Luis Obispo, says KCBX, the Grove steaming in the sun, the Lagoon so blue and still it looks staged. Overnight an envelope came under every door on the fourth floor, heavy cream stock, and 412’s is on the floor by Jack’s shoes.",
+    {
+     "type": "doc",
+     "title": "Meridian Pictures",
+     "text": "SAINTS & SINNERS\nSaturday, October 31\nthe Ferrante house, Del Playa Lane\nCostume mandatory · Halo or horns\nIn honor of whoever played the Saints on the Ferrer Tower\n—T.A.V."
+    },
+    "Theo is at his desk in the black Meridian robe with an espresso and the MacBook, entirely bland. “It’s a *theme*, Costigan.”",
+    "The Aerobed is back in its box in the closet. The navy silk robe is folded square on the end of Theo’s bed, and on top of it is a Post-it with nothing on it but a lipstick kiss. On the MacBook, Facebook is open to somebody’s wall, and Theo doesn’t close it.",
+    {
+     "type": "fb",
+     "name": "Laney Price",
+     "text": "is home. 217 4ever. Theodore, the robe is on the bed.",
+     "meta": "Friday at 2:11am · Theo Vance and Lena Broussard like this"
+    },
+    "Jack takes the RAZR out to the east stairwell, where the reception is, because Gina got there first.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "purdue. dad turned the radio OFF",
+     "time": "12:58 PM"
+    },
+    "His father answers on the second ring, which means he was sitting next to the phone. “Purdue,” Frank says.",
+    "“I know.”",
+    "“Thirteen-point favorite.” That is the call. There’s a silence on the line with no radio in it, and in the silence Jack can see the garage on Glenwood Avenue, the space heater, the Stroh’s fridge, the radio on the workbench switched off, which it never is. Then his father says, “Here’s your mother,” and is gone.",
+    "Ma is brisk, a woman with a pot on. How was the test. Is he sleeping. Then a click on the line, the upstairs extension, and somebody breathing into it carefully, the way his grandmother holds a phone, like a seashell.",
+    "“Danny?” Nonna says.",
+    "The stairwell is very quiet. “No, Nonna. È Giacomino.”",
+    "A pause, long enough for the line to hiss in it. Then, warm, unbothered, entirely herself: “Giacomino. Sì. Lo so.” And sharp as a tack, about the one thing: “E la ragazza del granchio?”"
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "nonna",
+     "title": "Nonna",
+     "text": "Asked me about the girl. Laughed. Five minutes later she asked me again, the same words, like it was the first time. Ma says she’s tired. That was the nineteenth of September. Michaelmas she lit one for me and one for Danny. Saturday: ‘E la ragazza?’ Ma told her the girl has a boyfriend. ‘Peccato.’ Then, sharp: ‘E l’altra?’ Purdue Saturday. Dad said ‘Purdue’ and that was the call. Nonna got on the extension and called me Danny. Then she knew me. Then she asked about the crab girl."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Sono io, Nonna. Ti voglio bene.”",
+     "tag": "Sincerity",
+     "set": {
+      "e10_nonna": "bene",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Anch’io, Giacomino.” Then his mother’s voice, gentle, taking the extension back from her: “She’s tired, honey.”",
+      "On his way back down the hall the door of 401 is propped open with a doorstop shaped like a frog, and taped to it at eye level is a laminate.",
+      {
+       "type": "doc",
+       "title": "401",
+       "text": "HAPPY DIWALI · ELECTRIC DIYAS ONLY · FIRE CODE · —P. RAMAN, RA"
+      },
+      "Inside, on the floor under the window, one battery diya glows orange on the lid of a banker’s box he would know anywhere."
+     ],
+     "goto": "s23"
+    },
+    {
+     "text": "Let Ma take the phone.",
+     "tag": "Control",
+     "set": {
+      "e10_nonna": "ma",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“She’s tired, honey,” Ma says, and the extension clicks off. Ma asks again whether he’s eating, really eating, and he says yes, which is about two-thirds true.",
+      "On his way back down the hall the door of 401 is propped open with a doorstop shaped like a frog, and taped to it at eye level is a laminate.",
+      {
+       "type": "doc",
+       "title": "401",
+       "text": "HAPPY DIWALI · ELECTRIC DIYAS ONLY · FIRE CODE · —P. RAMAN, RA"
+      },
+      "Inside, on the floor under the window, one battery diya glows orange on the lid of a banker’s box he would know anywhere."
+     ],
+     "goto": "s23"
+    },
+    {
+     "text": "“She’s good, Nonna.”",
+     "tag": "Candor",
+     "set": {
+      "e10_nonna": "good",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“Brava,” Nonna says, about Becca, satisfied, and asks him nothing else, and Ma takes the phone.",
+      "On his way back down the hall the door of 401 is propped open with a doorstop shaped like a frog, and taped to it at eye level is a laminate.",
+      {
+       "type": "doc",
+       "title": "401",
+       "text": "HAPPY DIWALI · ELECTRIC DIYAS ONLY · FIRE CODE · —P. RAMAN, RA"
+      },
+      "Inside, on the floor under the window, one battery diya glows orange on the lid of a banker’s box he would know anywhere."
+     ],
+     "goto": "s23"
+    }
+   ]
+  },
+  "s23": {
+   "slug": "SATURDAY · 6:00 PM · THE COMMONS",
+   "body": [
+    "The light goes gold and long across the Commons at six, and Jack crosses it toward the 6:10 bus and his Saturday shift. The Ferrer Tower stands in the last of the sun with its concrete gone the color of a peach. The caution tape is gone. There’s a new padlock on the steel door, bright brass, and a new Facilities sign zip-tied to the handle, laminated, AUTHORIZED PERSONNEL ONLY, in the font of a department that is not amused.",
+    "Up in the open chamber the chimes start on their own, on the hour, the way they have since 1966, and the flat bell comes in right where it always does in the phrase, a little low and a little sorry. Then the first of six.",
+    "Lena is on the Brick’s front steps with *The Habit of Being* on her knees and a yellow highlighter in her teeth. Her hair is up with a pencil through it. She’s in a sundress for the first warm day in a week, blue with small white flowers, and Keds. On the flat note her head comes up toward the tower; then she finds him, across the grass."
+   ],
+   "choices": [
+    {
+     "text": "Lift a hand.",
+     "tag": "Sincerity",
+     "set": {
+      "e10_wave": "hand",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He lifts his hand. She takes the highlighter out of her mouth and holds up five fingers, spread, and over the bell she mouths it: *Tomorrow.*"
+     ],
+     "goto": "s23b"
+    },
+    {
+     "text": "Hold up five fingers first.",
+     "tag": "Wit",
+     "set": {
+      "e10_wave": "five",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He holds up five, spread, before she can. She’s offended — a full second of real outrage on the library steps, that he got there first — and then she holds up five right back at him, and mouths it over the bell: *Tomorrow.*"
+     ],
+     "goto": "s23b"
+    },
+    {
+     "text": "Keep walking.",
+     "tag": "Control",
+     "set": {
+      "e10_wave": "walk",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He’s already turned toward the bus stop. He sees it in the bus shelter’s glass instead, small and backward: a girl on the library steps in a blue dress, one hand up, five fingers, and her mouth making the word. *Tomorrow.*"
+     ],
+     "goto": "s23b"
+    }
+   ]
+  },
+  "s23b": {
+   "slug": "SATURDAY · 6:01 PM · THE COMMONS",
+   "body": [
+    "The sixth stroke goes out over the Commons and the Lagoon and the roofs of Anacapa and hangs over the water until it isn’t there. The 11 is already idling at the curb on the loop road, nine minutes early, with its doors folded open. Jack gets on and shows his ID and takes a seat on the side facing campus.",
+    "As the bus pulls out, the sun is all the way down on the lawn but not yet off the top of the tower. For a minute more it holds there, on the open chamber and the bells hanging dark inside it, one of them flat, all of them gold."
+   ],
+   "end": true
+  }
+ }
+}

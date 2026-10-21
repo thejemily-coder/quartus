@@ -954,3 +954,71 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - Mrs. Fitch [s01b] told Coffee and Donuts about Wes's visit; [mass] "You two… And *you* two!"
 - Rudy [s07] Wes's uncle's flatboat. Dale [s10b | sullys] none new.
 - Priya: Wes registered Fri/Sat/Sun (front desk).
+
+### S1E10 — "I Call the Living"
+> Written for the after-s1e09 save only (see continuity.md S1E10). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01] Lena and Laney aren't speaking (cause not told until s06). Margot's alarm theory: irregular or two people.
+- [s02] Danny's third letter: the Hopkins and Housman arrived; Ma told Danny about Becca; Danny "decided," doesn't wish.
+- [s03] **Lena brings soup Sundays to the Harbor Inn night shift** (route: Dulce and Rosario, in Spanish, translated by Rudy; Gloria
+  introduced them as knowing "your New Orleans girl"). Dulce says it needs salt.
+- [s04] **Nora's box** (CALLOWAY · 222 · HOLD FOR FAMILY), its contents and the inside cover of her journal — seen with Priya. Serra
+  sent it over in May; the Calloways never came (Priya). Priya is failing orgo; her parents run a motel; **Oct 14 is her 21st
+  birthday** (her mother's text lit up beside her on the dryer). The basement piano has a dead F and nobody admits to playing it
+  (Delgado lore since E08: "somebody plays, badly, at three in the morning").
+- [s06] Laney's account of the tin (the Madonna Inn booth, the cardigan pocket, "in front of him"). Theo and Laney have a HALLOWEEN /
+  SEATING pad (two words read upside down; both deny). [talk] Laney: "She wants to be mad at somebody, and I was closest."
+- [s07 / s09b] Lena's paper and its last line. [s10] **Lena knows what Wes told her** (below).
+- [s13] **Lena plays the basement piano** (she says so; three in the morning since August; badly on purpose; two years at the Rosary).
+  The great bell's inscription and its translation (Lena).
+- [s14] **Jack describes Lena to Lena** ("Aquinas and football… the dream girl") without hearing it; [s16] he hears it in the exam.
+  He does not tell anyone.
+- [s15] Wes "out-waits" Lena (Lena). Wes's 6:09 call/text: only the name WES seen on her LG's outer screen; Jack never reads it.
+- [s17b | fishbowl] Lena read the CNN crawl: Obama in New Orleans.
+- [s19] **Kaylee Whitmore** (Laney, on the steps): fifteen, Brownies, matching retainers; a party in Preston Hollow; Kaylee drove on a
+  permit, both had been drinking, Laney "let her"; Preston Road, a culvert; Laney's left wrist in a pink cast six weeks; a doctor's
+  note for flying a month later. "Lena's the only one who knows." [e1_after=="walked"] Jack connects it to "Kaylee used to — ." Pi Lam
+  pledges used to walk the Point wall on the outside; "Since." (Sloane didn't say since what.)
+- [s21] Maria's note to Becca (Becca shows it). Becca's WE SHOULD MATCH!! list; "You look at me like homework"; "I'll wait."
+- [s22] Theo's Halloween party; Nonna called him Danny, then knew him.
+
+#### Lena
+- [s10b] **From Wes (off-page, by phone, after Monday):** that Wes asked Jack to take care of her; [e9_take=="drink"] that Jack "said
+  yes with a bottle" (Wes's reading); that Jack told Wes about Danny on the beach. [e10_cor_dodge] Wes said they talked about the Saints
+  "about four minutes." **She does NOT know the ring or the attic** (guardrail holds; Jack's narration checks for it on the dodge
+  path).
+- [s10b | Confess] Jack didn't say yes; he drank and Wes took it for a yes. [Personal, walk] Jack threw the last house on Seacliff at
+  her; [apology] he took it back (s10c or s11).
+- [s10c] Uses Becca's "most honest person I know" (E09 s11c, heard) and [waltz=lena] Jack telling Becca she taught him the waltz.
+- [s14] Dulce's verdict on her soup (from Jack, via Rudy). Jack's First Way account of Becca at the game, and "the dream girl" line.
+- [s14 | still/good] Jack's "She's good"; [still] "I don't know what I'm doing. Still."
+- [s15] Jack stayed still / said her face was doing the thing from the beach / said "Magdalena," per `e10_dawn`.
+- [s19c] Laney told Jack about Kaylee (Lena sees them on the steps; Laney's state; Laney apologizes for the tin). [text] Jack's text
+  "steps. laney." [pillbox] Jack took Laney's pillbox.
+
+#### Becca
+- [s09] Jack's floor at the Brick (his text "8th floor"). She gives Lena a clementine; Lena thanks her.
+- [s17a | lena] **Lena was at the Brick with Jack until seven, fighting about their papers** (from Jack). [two] **False: that Jack left
+  the library at two** (`e10_lied_becca`). [seven] only that Jack was at the library till seven.
+- [s17c | mass] Lena's Teresa facts. Still does **not** know about Danny, the beach drink, the tower, or the shoulder.
+- [s21 | fishbowl] Jack didn't come to the 12:10 (she saved a seat). Maria Costigan wrote to her (Jack sees the note).
+
+#### Laney
+- [s01/s06] Exiled herself to 412 (Mon–Thu); tells Kevin, Theo and Jack her side of the tin. [s19] Told Jack about Kaylee (the second
+  person after Lena). [s19c] Back to 217 Friday night.
+
+#### Theo
+- [s13p] Texted Jack 5:01 "Costigan. Is that the Saints." — a question; Theo knows nothing on-page. [s22] His invitation names the
+  tower; Jack draws no conclusion on-page. Alliance with Laney (HALLOWEEN / SEATING pad) seen, denied, never named.
+
+#### Others
+- Priya [s13a/s13b] "I didn't see you" (inference: she saw them come in at 5 a.m.; scanner broken). [s04 | never] Jack told her she
+  never has to open the journal. She knows Jack saw Nora's box.
+- Margot [s20] reported the carillon for the Tide; names nobody. [e10_seen_running] cites the police log ("two individuals… one of them
+  was laughing"). No on-page knowledge that it was Lena and Jack.
+- Hale [s16] knows only that someone played; quoted in the Tide.
+- Gloria / Rudy / Dulce / Rosario [s03] know Jack is Lena's friend (Gloria's introduction).
+- Kevin [s09b] saw Jack and Lena on the 8th floor at midnight ("So is a different floor").
+- Danny [s02] knows about Becca (from Ma); still asks whether Jack told Lena hey (his letter was written before Jack's reply).
+- Nonna [s22] asks after "la ragazza del granchio" (Becca); [good] Jack said she's good.

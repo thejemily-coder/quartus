@@ -393,6 +393,11 @@ In the SL he asks Wes, the boy with the boat, whether you ever get one you can't
 and is given no reason to think about it). Sunday before dawn he takes the SL west and turns back into the Anacapa lot at 6:20
 with sand on the mats and wet hems: "I drive to where I run. It's very Los Angeles." (🔒) He announces Halloween: his, at a
 rented house (E12).
+**(E10 plan:)** At Tuesday's 3 a.m. storm alarm he carries both bags off the top shelf again (one clause; 🔒) and grants Laney
+**asylum** in 412 ("Granted.") — two nights on the Aerobed bought for Wes, in his navy silk robe, the alliance's war council conducted
+over a legal pad he flips face down when Jack walks in (HALLOWEEN, SEATING, upside down). Thursday 5:01 a.m. he's awake (he doesn't
+sleep — one image) and texts Jack in the bell tower: "Costigan. Is that the Saints." Saturday his Halloween invitation goes under every
+door on Meridian letterhead — **SAINTS & SINNERS**, "in honor of whoever played the Saints on the Ferrer Tower." Never acknowledged.
 
 **Public face.** Golden LA prince. Gorgeous, silver-tongued, exhausting, generous to the point of insult. Pays for
 everything. Knows every bouncer. Makes everyone feel like the most interesting person at the party for ninety seconds.
@@ -497,6 +502,18 @@ asking her for an idea for Becca (brief; registry #69): a poem, out loud, at the
 sugar, one knee" — deliberate sabotage, and it backfires. She hosts the Newlywed Game in a pink booth at the Madonna Inn with a
 cake knife for a microphone and finds the Reliquary in the pocket of the cardigan she borrowed from Lena. Rude to Becca on
 principle ("She labeled the marshmallows"); polite to Wes (the rude/polite mirror on Lena's men begins *after* Wes).
+**(E10 plan:)** **The first real fight with Lena** — over the tin she pulled out of Lena's cardigan at the Madonna Inn ("You went in my
+*pocket*, Delaney. In front of him." / "It was a *game*.") — exiles her from 217 Monday night. At Tuesday's 3 a.m. storm alarm she claims
+**asylum in 412** in a Hefty-bag poncho ("I'm a *refugee*"; Theo: "Granted."), sleeps two nights on the Aerobed bought for Wes in Theo's
+navy silk robe, does her face to Jay Sean at Theo's mirror, narrates Balloon Boy like a pageant host, and runs the alliance from Theo's
+desk. She never says why she did it. Running bit #69 callback: "For Halloween, sugar, I have *ideas* —" "No." Thursday is Pi Lam's
+**Big/Little reveal — Sloane is her big**; among Sloane's "family lore," a story that pledges once walked the Point wall at midnight, "before"
+(🔒 red herring #5 for E12; Sloane says no more). At 1:25 a.m. Friday on the Delgado steps (PI LAM LITTLE shirt, a balloon on her wrist,
+floaty on wine and her "note" — one rattle of the DRP pillbox; undertow, no scare) **she tells Jack about Kaylee**: fifteen; Kaylee drove;
+they'd both been drinking and Laney let her; Preston Road; the culvert; Laney's wrist in a cast six weeks "and everybody signed it, and she
+was dead"; the note "for flying" a month later ("I'd never been on a plane"); "**Lena's the only one who knows.**" Lena comes down the stairs
+barefoot in her cardigan and sits on Laney's other side — "It's not my tin, cher. It's his." / to Jack: "**I've got her, Jack.**" The fight
+ends without either of them saying what it was about. She's back in 217 Friday morning.
 
 **Arc (revised after S1E08 for the brief: "Laney: mostly fun. The pills and rush darkness stays an undertow; she is the
 comic engine. No overdose scare.").** S1: rush, bid day, the Pi Lam world; the Xanax an undertow (Lena counts the pills, E07);
@@ -730,6 +747,12 @@ Jack and Lena, scrupulously friends, agree with each other all hour; Hale is app
 agreeing"). 🔒 His one unguarded line: **"The commonest lie in the world is not told to murderers at doors. It's told to
 policemen, about the dead, by people who loved them."** (His own forty-one seconds; Lena's statement; the Costigans' plea — he knows
 only the first.) He looks at the window after it. Sat Oct 3: the Blessing (see Osei, §8.5).
+**(E10 plan:)** Wed Oct 14, midterm week, no antagonists' duel: the papers ("That a Man Can Know His Own Heart" / "That He Cannot") are
+swapped across the table and the corpses are due Monday. Lena calls Jack "Mr. Costigan"; Hale: "Mr. Costigan has been demoted. How
+interesting." On Jeremiah 17:9–10: "The only one in the text who claims to know it is the one I don't believe in. Mr. Costigan, you have
+been asked to steal His job." Thu Oct 15, proctoring his PHIL 1 midterm (the essay: the First Way — "state it; then break it"): "Somebody
+played a gospel number on the Ferrer carillon at five o'clock this morning. Badly. I was awake; I'm always awake. In eleven years it is the
+first thing that tower has done that I've enjoyed. One bell is still flat. Begin." He never learns who.
 **Arc.** S1: the seduction of two minds; the postcard discovery (E14); the dinner party where he's magnificent and then
 vile. S2: debates Lena publicly at the Marisol Forum and loses; loves her more for it. S3: writes a book on moral luck
 using his students as unnamed examples; Jack finds himself in a footnote. S4: the forty-one seconds come out; disgrace;
@@ -878,6 +901,16 @@ on the stairwell phone, Lena (overheard): **"He's my friend, Wes."** 🔒 Nothin
 beside her at the 9:30 (path) and Jack takes it as proof. 🔒 **Jack knows about the ring when Wes ends it in E21, and never tells
 her.** **Becca doesn't notice.** **Tracked from E09** (`wes`: warmth, trust, friction) so Mardi Gras (S2) and the funeral (S5) can
 read the weekend.
+
+**(After S1E09 — room canon for the calls; 🔒, never quoted on page beyond Lena's side):** Monday's 8:04 (E09 s13b; Lena's side
+overheard — "He's my friend, Wes." / "I know you did." / "Goodnight.") went, on Wes's side: *I like him, dawlin'. I do. … He's in love with
+you. You know that, right?* → "He's my friend, Wes." → *I told him to take care of you anyway.* → "I know you did." Tuesday's 8:04 (Jack at
+the Anchor; off-page) he tells everything for five minutes — Sully's, the Browns, the beach: "Your Ohio guy told me about his brother.
+Prison." and "He drank to it. Where I'm from that's a yes." **From E10 Lena knows that Wes asked Jack to take care of her, that Jack "said
+yes" with the bottle, and that Jack told Wes about Danny in one night.** She never learns the ring or the attic. She never repeats "He's in
+love with you." Wes left his **green Tulane sweatshirt** with her (she wears it all through E10). Thu Oct 15, 6:02 a.m. PT, he texts her
+(ordinary; Obama is in New Orleans that day) — Jack sees only WES on the lit screen. Nothing about faith or drinking reaches the page; the
+unraveling stays off until E19.
 
 **The end (S1E21, Dec 12, 2009, Our Lady of Guadalupe).** On the east stairwell phone, Wes breaks up with her — gently,
 devastatingly. Not because there's someone else. Because he can't kneel anymore, and he won't let her marry a man who
@@ -1044,6 +1077,18 @@ Newlywed Game, cheerfully, "He studies me like a test and still fails." **E10** 
 him explain the First Way at a football game — "Aquinas and football, that's the dream girl right there" — and doesn't hear himself
 describe Lena; then: it was empty. From there Jack knows he shouldn't be with her, and stays (E09's ring is why). **Becca outlasts
 Wes** (E21; S2E15) — never a placeholder; her goodness is the knife, never the joke.
+**(E10 plan, after S1E09:)** Wed night, the eighth floor of the Brick: a gallon Ziploc labeled **MIDTERM SURVIVAL — JACK** (granola bars, a
+clementine, earplugs, a Glory Be card, *You'll do great! I prayed. —B*) and a clementine for Lena out of her own pocket ("Hi, Lena! Good
+luck!"); asleep by ten ("Farmer."). **She prays for two in the morning "like always"** — her 6:41 a.m. text, read on the eighth floor with
+Lena asleep on his shoulder. Thu 12:10 (fork): "You look *exhausted*. Were you at the library all night?" "Till seven." (true). Fri Oct 16,
+***Where the Wild Things Are*** opening night at **the Rialto on Mission** (new: a 1930s single screen cut into four in 1987): she read the
+book to her brothers a hundred times; her favorite line is the last one, *and it was still hot* (never glossed). **Maria wrote her a
+thank-you note** for Rosie's crab on St. Brigid's stationery (the card's return address). Her **"Not yet"** joke (`e9_poem=="knee"` — her
+mother asked if she said yes) isn't one. Her clipboard page **WE SHOULD MATCH!!** — St. Isidore & St. Maria de la Cabeza ("the only married
+couple who are both saints" — Jack: Joachim and Anne), Max & a Wild Thing ("I have ears from 4-H"), ~~a cowboy & a cow~~, *ask Jack*. He reads
+it like a problem set. **"You look at me like I'm homework."** She doesn't end it: **"Then do your homework, Jack. I'll wait."** She tears off
+the page: "**Due Halloween.**" (E12: he goes as Binx; she is cheerfully confused.) After the PHIL 1 midterm's First Way question Jack knows
+he described Lena when he described "the dream girl"; from here he knows he shouldn't be with Becca, and stays (the ring is why).
 
 ### 10.5 PRIYA RAMAN — the junior RA
 **Born October 14, 1988.** Fremont, California. Junior, Biochemistry. Delgado Hall 4th-floor RA (Room 401). Three jobs
@@ -1066,6 +1111,15 @@ Handbook." "I'm going to need you to not." When she breaks, she breaks completel
 
 **Arc.** S1: comic relief who becomes a source (she tells Jack Nora's name, E04; shows him the box, E11). S2: opens the
 journal. Later seasons: switches to public health, tells her parents (Diwali episode, S5).
+**(E10 plan — the box moves up from E11:)** Tuesday's storm floods the **RA storage closet in the Delgado basement** (beside the laundry; RA
+STORAGE — NOT A STUDY ROOM). At 1:40 a.m. Wednesday, studying for her 8 a.m. orgo midterm in the warm laundry room, Priya unlocks it and Jack
+helps save the boxes: **CALLOWAY · 222 · HOLD FOR FAMILY**, HOLD underlined twice, the bottom corner soaked. Inside: a Selma High sweatshirt,
+CDs, a mug, a photo of two girls laughing in a dorm window (one is Priya), and a black-and-white composition book — **Nora's journal**. She
+opens the cover only: *Nora Calloway · Delgado 222 · If found, please return. Reward: I'll sing you something.* She has never gotten past it.
+She breaks ("I *tutor* organic chemistry. I'm *failing* organic chemistry.") and re-laminates (BASEMENT FLOODED · DRYERS 1–3 ONLY). **The box
+lives in 401 from now on.** Wednesday night she works the Brick's overnight circulation desk; near dawn she "didn't see" Jack and Lena ("The
+scanner's been broken since two"). Saturday is Diwali: a battery diya on top of the box (HAPPY DIWALI · ELECTRIC DIYAS ONLY · FIRE CODE). 🔒
+Nothing in the box points at Hale, Evan, the jacket or Lena; the April 23 entry waits for S2.
 
 ### 10.6 RAFI OCHOA — the floor dealer
 **Rafael Ignacio Ochoa.** Born **June 2, 1991**. Marisol townie (the Westside, near the harbor). Freshman, Environmental
@@ -1181,6 +1235,16 @@ Frank keeps a space heater, a radio and a Stroh's fridge. Parish: **St. Brigid o
   the one thing: **"E l'altra?"** — and the other one? (Idaho.) Her memory for the Church calendar is perfect while the rest
   slips: on the Friday-sauce path she gives Jack the meatless *sugo* for a Friday ("Venerdì! Niente carne!") step by step, then
   asks who it's for, twice.
+  **(E10 plan:)** **Danny's third letter** (in the box Tue Oct 13; no mail Columbus Day): the Hopkins came — "Felix Randal," Ma cried when he
+  read it to her at the visit, "I'm telling you so you know I read it. Not so you feel bad"; the Housman — "tell your man who don't sleep that
+  nobody in here does either. LIV made Reggie cry and Reggie is from Portsmouth"; "Ma says Idaho sent Rosie a crab. Ma says she's a nice girl.
+  Ma says it how she says the Browns got a nice stadium."; "Did you tell Lena hey or do I got to come out there." (written before the curb); the
+  sentence that stops Jack cold: **"Reggie asked me do I ever wish I did it different. I told him I don't wish. I decided. It's different."**
+  (🔒 Danny chose to take it. Never glossed; Jack writes his paper's first sentence two hours later — "A man knows his own heart by what he says
+  yes to" — and the page never connects them.) The **second money order** to D. Kostelnik ($20, the Mission Street post office, in the rain).
+  **Maria** writes Becca a thank-you note for the crab (St. Brigid's stationery). Sat Oct 17: **Purdue 26, Ohio State 18** — Frank: "Purdue."
+  "Thirteen-point favorite." That's the call. **Nonna on the extension: "Danny?" — "No, Nonna. È Giacomino." — "Giacomino. Sì. Lo so."** (🔒 *I
+  know*; the step after E06/E08's repeats; never glossed) — then, sharp: "E la ragazza del granchio?"
 
 ### 10.9 LENA'S FAMILY — the Broussards of New Orleans
 Home: a raised double shotgun converted to a single on **N. Dupre Street, Mid-City**, near Bayou St. John. Took 4½ feet
@@ -1317,7 +1381,7 @@ was born.
 - *"I'm not asking you to stop believing. I'm asking what you'll do when believing and the housekeepers want different things."*
 - *"I'll be on the line Thursday. Bring the good bread. Bring your arguments."*
 
-**Arc.** **S1 seed** (optional, E10–E15): Lena's Sunday-night soup for the Harbor Inn housekeepers at the Anchor counter (Gloria
+**Arc.** **S1 seed** (placed E10 — the storm night at the Anchor: Dulce and Rosario, housekeepers at the Harbor Inn, at the counter waiting out the rain; Rudy translates that "the New Orleans girl" brings soup Sundays and it needs salt; optional, E10–E15): Lena's Sunday-night soup for the Harbor Inn housekeepers at the Anchor counter (Gloria
 knows them). **S2E02** (Jan 2010) the Harbor Inn picket, where Lena brings coffee and finds him already pouring it; **S2E04**
 together; **proxy fight #1** with Jack (S2E08, §24.6); the near-miss (S2E10); **S2E12** the end, at the line. Returns SU3/S7 as a
 name on a 2012 campaign masthead; Lena reads it and closes the laptop.
@@ -1590,6 +1654,31 @@ night (not what), [walk fork] that Jack won't ask why she won't go to the Point.
 Jack to waltz. **Gloria** meets Becca and Wes. Nothing about Wes and Mass/faith, the drinking beyond what one weekend shows, Theo and
 the Point, Kevin and Theo, Lena and Nora, Memorial, the test, Danny's fight, or the money orders reaches the page.
 
+**Updated after S1E09 (the played path):** Played on the **what · anemone · own · given · whodat · browns · lena · knee · catherine · quit ·
+walk · beach · wit · controller · told · drink · saints · mass · show · camel HEART (Press / Reframe / Concede "both the sad one") · teacher ·
+whodat · true** path. **Wes** knows: Jack's face and name; Becca; the tin and all four slips (No. 1: Lena took Jack's cigarette the night they
+met); that Lena taught Jack the waltz (Jack told Becca in his hearing); that Jack knew Lena's saint before he answered; Danny is in Trumbull,
+five years (not what for); the scar → Gina's controller; that Jack drank instead of answering "Take care of her" ("That's a yes where I'm
+from"); that Lena wouldn't go to the Point and Jack walked her back without asking; the spoon; Becca's "most honest person I know." **Jack**
+knows: the attic (as healed), the ring, "Take care of her," Theo's question in the SL (secondhand), "I drive to where I run," Becca's eyes
+(gray), Rosie's card, Lena's saint (her card: Catherine), and — overheard — "He's my friend, Wes." / "I know you did." He has **not** seen the
+Point or the cross (walk fork). **Lena** knows: Danny's "hey" (the curb); Becca's luckiest-girl status; "Lena taught me"; the poem and the
+knee; "Catherine"; "The thing it did on the beach" (she didn't deny it); "The Saints. Mostly the secondary."; Becca's "most honest" line.
+Nothing of the attic or the ring. **Becca** knows: Jack smokes and Lena confiscates; Lena taught him to waltz; the poem; Gloria's "Apple";
+nothing of the beach. **Gloria** heard Jack get a laugh out of Merle (wit). Lena's resolve ended **5**; Jack's **8**.
+
+**Planned after S1E10 (Showrunner, pending play):** **Lena learns from Wes (Mon/Tue calls, off-page; §10.1)** that Wes asked Jack to take care
+of her, that Jack "said yes" with the bottle, and that Jack told Wes about Danny — and says "Wes told me" at 4 a.m. **Jack learns**: Danny's "I
+decided" (🔒); Lena's Sunday soup at the Harbor Inn (Dulce, Rosario; Rudy translating — if kept); Nora's box and the journal's first page
+(Priya); that Lena plays the basement piano (two years at the Rosary); the great bell's inscription and its translation; Kaylee (Laney, the
+steps; "Lena's the only one who knows"); Sloane's Point-wall lore (🔒 red herring; secondhand, drunk); that Becca prays at two "like always";
+Maria's note to Becca; Becca's costume list; Nonna's "Danny?" (🔒). **Lena learns**: Jack's margin *Which are you?*; on the truthful path that
+he drank instead of answering; on the Personal path that he noticed Seacliff and will use it; the football story and the dream-girl line (she
+notices; he works it out at the midterm); "He says he out-waits me" is hers to him; on Control, that he didn't move for an hour. **Theo, Laney,
+Margot** infer the carillon; nobody says it. **Hale** heard it; doesn't know who. **Priya** "didn't see" them. **Campus police** identify no one.
+Nothing about Theo and the Point, Kevin and Theo, Lena and Nora, Memorial, the test, Danny's fight, the money orders' meaning, the ring or the
+attic (to Lena), or Wes's faith reaches the page.
+
 **Pretended first meetings in the pilot:** Theo and Kevin (both pretend). Lena and Kevin (Kevin may half-recognize her;
 he says nothing; she doesn't recognize him). Lena and Osei (*not* pretended — Osei greets her warmly: "Magdalena. You
 came back." She explains to Jack: "Preview weekend. In April." True).
@@ -1606,7 +1695,7 @@ came back." She explains to Jack: "Preview weekend. In April." True).
 | Kevin | Gay; Preview night with Theo | Margot (from S1E07, the night of the wake — off-page) | Gay: S3 (to Jack directly); the Theo night: S4 |
 | Hale | Postcards; Compline; the 41 seconds | — | Postcards: S1E14. Compline: S2. The call: S4. |
 | Osei | Abena, Esi, Kwame; the limp | his bishop | Kwame exists: S3. Abena and the crash: S6. |
-| Laney | Kaylee; the 800 Math | Lena (Kaylee, from S1E10) | Kaylee: S1E10 (to Jack, drunk, if path). Math: S2, comic. |
+| Laney | Kaylee; the 800 Math | Lena (Kaylee, from S1E10) | Kaylee: **S1E10 — told to Jack on the Delgado steps, every path** (Lena already knew). Math: S2, comic. |
 | Margot | Anders; bisexual | — | Anders: S1E07 (2 a.m. argument). Bi: S3. |
 | Evan | Nora's boyfriend; the text; the blond boy | — | S2E18 (anniversary) partial; S3 Margot; S4 full. |
 | Priya | Nora's roommate; the box; failing orgo | — | Roommate: S1E04. Box: S1E11. |
@@ -1668,6 +1757,9 @@ not ask (one clause, if anywhere) — the next telling she gets should be later 
 **After S1E08:** no telling (as planned). **E09** offers **Wes** his first, *in the water* at Campus Point at 2 a.m. — "I walked
 into the Pacific Ocean" at last finds its listener (the man who came to see the Pacific); also Gina's controller or the hockey puck.
 **Never "a fight, a long time ago" in a scene where Danny is mentioned** (elision: the scar and Danny's fight never sit side by side).
+**After S1E09:** Wes → **Gina's N64 controller** (`scar_told_wes=="controller"`; "I'd believe it of any sister"). The Pacific is
+**still** banked for whoever asks in the water. **E10** offers no telling (a fight, a bell tower; nobody asks). Kevin's first stays banked
+(S1E16).
 🔒 **The hand (for the elision):** Jack is right-handed; the punch was his right. When Mark 9:43 is read (Sun Sep 27, 2009 —
 "If your hand causes you to sin, cut it off"), the narration may let his right hand do one small thing and say nothing about
 why.
@@ -2009,7 +2101,16 @@ years that her daughter killed herself and her grandchild. In S5, Rosa receives 
   dawn: Theo's SL turns in off Ocean Road from the west, sand on the mats, wet hems — "I drive to where I run. It's very Los
   Angeles."** And the theme, not the mystery: **the knocking no one answered** (Wes's attic), told as healed. Nora's name is spoken only
   on the Point fork (read off the cross).
-- E11: Priya shows Jack the box; he sees the journal; she won't open it.
+- E09 **played as planned** on this path except: the **walk fork** (the cross and Becca's prayer at the wall not seen; Jack has still never
+  seen the Point). Landed: Margot's "Again."; Theo's question in the SL; the Lighthouse refusal (medal); "I drive to where I run"; Wes kneeling.
+- E10 (re-planned after S1E09; full plan in `outlines/s1e10.md`) — none glossed: (1) **Priya's box** (Tuesday's storm floods the RA storage
+  closet; CALLOWAY · 222 · HOLD FOR FAMILY; the journal's first page only — *Reward: I'll sing you something*; the box moves to 401). (2)
+  **Sloane's Point-wall lore**, via Laney drunk on the steps (pledges walked the wall at midnight "before"; 🔒 red herring #5 for E12). (3)
+  **From the Ferrer Tower the Point light is a dark thumb to the west; Lena sits with her back to it** (one clause). (4) [Personal path]
+  **Jack throws the Point at her** in the 4 a.m. fight ("You won't walk past the last house on Seacliff") — "Mr. Costigan." He doesn't know why
+  it lands so hard. (5) **The great bell — VIVOS VOCO · MORTUOS PLANGO · FULGURA FRANGO** — her voice goes on *mortuos* (no gloss). (6) **Theo
+  at the storm alarm** with both bags again (one clause). (7) **Balloon Boy "found hiding in the attic"** — Jack thinks of Pauger Street (his
+  knowledge; 🔒 the rhyme with Wes stays the bible's). Nora's name appears only on the box label and the journal's first page.
 - E12 (Halloween): Evan sees Theo for the first time at the Las Olas chaos; goes white. Laney's pledge "Point walk" rumor;
   Jack finds Theo at the Point wall at 2 a.m., drunk, looking down. "Don't. Okay? Just — not there."
 - E13 (All Souls): the Book of the Dead: Lena writes *Lucille Guidry* and *Nora Calloway*. Jack sees. "She was my host at
@@ -2079,7 +2180,7 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 23 | Julian & Lena | MS | S1E01 glimpse; S1E04 "Fresno" (she leaves in the chorus) | S2E15 together; S3E12 Jack tells Theo to stop | S3E21 ending ("You've never once told me I was wrong"); S4 learns the test | seeded (Jack and Julian not yet met on this path; next "Fresno" ~Oct 8) |
 | 24 | Gideon — **THE ORGANIZER** (Lena's magnetic guy; brief; rebuilt after S1E08) | ME | S2E02 Harbor Inn picket | S2E08 proxy fight #1; S2E10 near-miss (never sex) | S2E12 she ends it at the line | planned |
 | 25 | Peter & Kenzie (rival couple) | MS | S1E01 | S3E08 pregnancy | S3E17 wedding; AD divorce | seeded |
-| 26 | Priya & the box | MS | S1E01; S1E04 tells Jack about Nora (cupcake, balloon) | S1E10 box | S2E09 journal opened | seeded |
+| 26 | Priya & the box | MS | S1E01; S1E04 tells Jack about Nora (cupcake, balloon) | S1E10 box | S2E09 journal opened | seeded → **fires E10** (the storm floods the closet; the first page only; the box moves to 401) |
 | 27 | Rafi & his father | MS | S1E01 | S1E06 cop (Ocean Road; the unopened bag) | S4 Rafi's statement | turn E06 |
 | 28 | The 3 a.m. fire alarm | SEA | S1E02 | S1E14 Margot's sting fails | S1E20 Doug sleepwalks | alarm 2 E06 (Fri 3:12 a.m.); Margot's log opens; her 18-day theory misses Tue Oct 6 (E09: "Either the theory's wrong or he's on vacation") |
 | 29 | The cigarette reliquary | RUN | S1E01 | S4 he quits for real | AD wedding gift | seeded |
@@ -2103,7 +2204,7 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 47 | The politics map (brief) | RUN | S1E02 (Traficant) | S1E04 "You lie!"; S1E16 Stupak/Manhattan; S6 HHS mandate; S7 2012 election (#61); AD 2016 (#62) | AD Trump years (immigration, Jack); Dobbs (joy → ash); both politically homeless | open |
 | 48 | The Saints' 2009 run (Lena's religion within a religion) | SEA | S1E02 (WHO DAT shirt; the chant on the beach) | weekly (§22 Saints ledger) | Dec 19 first loss (Christmas break) → S2 Super Bowl | open — 3–0 (E07, Buffalo); E08 Jets 24–10, **4–0** (Sharper's 99-yard pick-six; Ayodele); E09 **bye** (Wes visits; Jack's Browns win 6–3 at Buffalo — Researcher verify) |
 | 49 | Big Sur road trip (bottle episode on the move) | EP | S1E11 | — | S1E11 | planned |
-| 50 | The paired papers (designated antagonists) | SEA | S1E02 | S1E14 Hale reads their margins aloud at dinner | S1E22 oral exam: each asked the other's best argument | open — E07 friendship papers ("Defense."); E08 lying papers swapped politely, no red word (the freeze); the margins move into a gift (*Story of a Soul*); E09 Hale's Columbus Day email: "That a Man Can Know His Own Heart" (Jack) / "That He Cannot" (Lena) → E10's seminar duel |
+| 50 | The paired papers (designated antagonists) | SEA | S1E02 | S1E14 Hale reads their margins aloud at dinner | S1E22 oral exam: each asked the other's best argument | open — E07 friendship papers ("Defense."); E08 lying papers swapped politely, no red word (the freeze); the margins move into a gift (*Story of a Soul*); E09 Hale's Columbus Day email: "That a Man Can Know His Own Heart" (Jack) / "That He Cannot" (Lena) → **E10: the duel moves off Hale's table** (midterm week; the papers swapped Wednesday, corpses Monday) **to the Brick's eighth floor at 4 a.m. — `cor`, "On the Heart," unofficial: the first sideways fight** (margins: *Then what did you tell him?* / *Which are you?*) |
 | 51 | Theo's secret cinephilia | MS | S1E02 (*The 400 Blows*, 4 a.m.) | S2 a film class under a fake major | S6–S7 the Lordstown documentary | seeded |
 | 52 | La Flaca (Rafi's bike) | SEA | S1E02 | E06 Ray: "reported abandoned at the harbor in 2007"; a clip-on light | S1E22 Jack tries to give her back; Rafi: keep her | open |
 | 53 | Richard Vance (Theo's father: the six minutes, the fixer) | MS | S1E03 (six minutes; the hundred) | S1E13 the birthday no-show; S4 the lawyer he sends | S5 Theo refuses the fixer; AD he comes to the wedding and stays the whole time | planned |
@@ -2124,6 +2225,7 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | 68 | **The alliance's false dawns** (brief running bit; §24.7) | SEA→MS | S1E22 #1 (Wes ends it; Martinelli's in Laney's mini-fridge; Jack is still Becca's) | S2E12 #2 (Gideon ends; bigger); S2E15 #3 (Becca ends it the week Lena says yes to Julian — real champagne, which Theo has to drink with Kevin); S3E19 #4 (Sol ends; Lena with Julian) | S4E03: the champagne is finally for something | planned |
 | 69 | **Never ask Laney for girl advice** (brief running bit) | RUN | **S1E09** the bonfire poem ("about her eyes… and then, sugar, one knee") | callbacks: E16 *New Moon* (Laney offers; "No."); S3 Sol ("I've seen your work, Price") | S4E03 Laney confirms it was sabotage | **fires E09** |
 | 70 | **Availability windows** (brief structural rule; §24.9) | RUN | — | every breakup with a "nice" partner coincides with a concrete block | the magnetic periods are the exception (anger; the proxy fights) | binding |
+| 71 | **The Ferrer Tower** (the 5 a.m. Saints; the flat bell; VIVOS VOCO · MORTUOS PLANGO · FULGURA FRANGO) — the reckless night that's theirs (player's E10 design) | SEA→MS | **S1E10** (Thu Oct 15, 5:00 a.m.: Lena plays "When the Saints Go Marching In" on the carillon; Jack [low notes / watch / count]; hide or run; nobody identified) | E10–E14 the campus mystery (Hale enjoyed it; the *Tide* brief; Margot's suspects list — she knows and writes nothing; Theo's SAINTS & SINNERS dedication) | **S1E22** the last day of finals, the tower's "Hotel California" (tradition): a look across the Commons; **S4** (together) they go back up, or Margot finally says "A different Catholic" — room's call | seeded E10 (`ferrer_bells`) |
 
 **Status after S1E01 (played path):** #1 open — porch near-kiss held; Lena took the cigarette; Jack won the first duel and
 gave her the last word; he let her know he was on the stairs. #2 seeded (all pilot seeds landed; cove seed not seen — Theo's
@@ -2256,6 +2358,26 @@ reckless 11 · control 4. Resolve Jack **10** · Lena **6**. Osei trust 6 · war
 Lena heat ≤ +1 (Wes is in the room); friction on the stove duel; trust on what Jack keeps (Wes's confidence — honesty and loyalty
 pulling the same way for once); Becca warmth up (≤ +4) with the guilt; Wes tracked from zero (warmth up Friday–Saturday, friction up
 Saturday–Sunday); restraint gets the Jameson and the spoon.
+
+**Status after S1E09 (played path):** #1 open — **trust 33 · warmth 31 · heat 11 · friction 19** (heat flat: Wes was in every room; friction
++2: the waltz answer in front of him, "The thing it did on the beach"). Path: "For what?"; the anemone; "I'll think of something myself" — and
+then the poem on one knee anyway (**Becca: "Not yet, Jack Costigan."**, the kiss; whisper); **"Danny says hey"** on the curb (paid); "Who dat"
+(lifted); "eyeholes"; **"Lena taught me"** (Wes heard); **"Catherine"**; **"She's going to make me quit"**; **walked her back from the Lighthouse**
+(no cross; "Don't ask me." / "I wasn't going to." / "That's why I let you come." / "The thing it did on the beach"); the Browns joke to Merle
+(wit — "isn't proud of how well it works"); scar → **Gina's controller**; **told Wes about Danny**; **the ring; drank instead of answering —
+"That's a yes where I'm from"**; "The Saints. Mostly the secondary."; the 9:30 (Damien; Wes kneeling); Gina's "ma cried" shown to Becca; **the
+stove duel HEART** ("He looked at him and loved him"; "Today's not one of mine"); "She's a good teacher." / "She is."; "Who dat" back from Wes;
+"thank u for praying for him"; **"He's my friend, Wes."** overheard. **Player notes after E09:** "fun that was deeply uncomfortable"; Laney
+hilarious. **E10 carries the player's own two-hander design** (brief, "S1E10 two-hander"). #3 — Danny's hey delivered; Wes knows Danny is in
+Trumbull. #4 Theo 6 · 8 · 1 (the SL question; the dawn drive). #5 Laney 3 · 9 (the tin — E10's fight). #6 **Wes warmth 4 · trust 2 · friction
+4** (warm → wary, as designed; "See you, Ohio"; the ring; the call). #7 Hale 9 · 2 (the email). #11 Kevin warmth 4. #12/#13 Margot 5 · 3 · 3
+("Again."; "Structurally, he's sound. I hate that."). #20 **Becca warmth 12 · trust 1 · heat 2** (the knee kiss; she trusts; "most honest").
+#29 reliquary **4** (exposed to Wes and Becca), `jack_cigs` 6. #30 Wes → controller. #48 **bye; 4–0**; Browns 6–3 at Buffalo (Frank: "Good.").
+#57 overtime, never acknowledged. #69 **fired** (and backfired: the knee). Soul **grace 13 · honesty 21 · restraint −4** (the knee, the bottle).
+Traits **sincerity 63** · candor 41 · wit 28 · charm 15 · **reckless 14** · control 4. Resolve Jack **8** · Lena **5**. Osei 6 · 2. Evan 1. Julian:
+not met. **E10 spends:** friction on the sideways fight (+2…+4); trust on what Jack admits (the bottle) or throws (Seacliff, −2); heat ≤ +2 (the
+bells; the 7:00 near-miss); restraint gets the tower (−) and the dawn (+); Becca warmth up with the guilt (the bag, *Wild Things*) and the
+crack she outlasts; Laney trust up (Kaylee).
 
 ## 22. SEASON 1 — FALL 2009 (22 episodes, Aug 29 – Dec 18, 2009)
 
@@ -2498,19 +2620,39 @@ generous devastating gesture). Monday: the Anacapa lot at 8:20 — Becca's banan
 Orleans: **"He's my friend, Wes."** Lena's resolve 6 → 7 → 6 → 5 → 7 → 6 → **5**. No danger window. The retreat that never takes (#66) is
 suspended (nothing to retreat from with Wes in the room); guilty fun (#67) turns into generosity, and Wes's trust is built on it.
 
-**E10 · "Midterms"** · Tue Oct 13 – Sat Oct 17 · "Balloon Boy" (Oct 15). The library all-nighter: Jack and Lena, the
-eighth floor of Pacifica Library, 4 a.m., restraint-is-the-fire scene #1 (her head on his shoulder; he doesn't move for an
-hour; his arm dies; he doesn't move). Priya's breakdown over orgo: she shows Jack Nora's box in the RA
-storage closet and won't open the journal (moved from E11). Laney's Xanax and a pledge event; Lena and Laney's first real fight; Laney tells
-Jack about Kaylee, drunk, on the Delgado steps. **Becca's first crack:** "You look at me like I'm homework." — and she
-doesn't end it: "Then do your homework, Jack. I'll wait." (The tryer tries.) **(After E08:)** the crack lands harder after date #3: he planned and paid for a beautiful night out of guilt, and she felt the effort and, under it, the somewhere-else (E08: "You're always somewhere else a little"). **(Added after S1E08 — brief and E09 handoffs:)** the library two-hander carries the brief's **Aquinas-and-football conversation**
-(Jack tells Lena that Becca had him explain the First Way at a football game; "Aquinas and football — that's the dream girl right there";
-he doesn't hear himself describe Lena; she does, and says nothing — he sees something cross her face, or works it out hours later;
-then he says it was empty: Becca was relentlessly happy and didn't engage at all). From here Jack knows he shouldn't be with Becca and
-stays (E09's ring is why). The first big storm of the season, Tue Oct 13 (remnants of Typhoon Melor — Researcher verify for the Central
-Coast). Danny's reply to the Hopkins and the Housman lands Tuesday (no mail on Columbus Day). The money order to D. Kostelnik
-(unexplained). The papers from Hale's Columbus Day email — "That a Man Can Know His Own Heart" (Jack) / "That He Cannot" (Lena) — make
-Wednesday's seminar a duel (E09 has only the stove duel). Lena comes in with resolve 5 and "He's my friend, Wes" behind her.
+**E10 · "I Call the Living"** · Tue Oct 13 – Sat Oct 17 · *(retitled from "Midterms"; the English of the Ferrer Tower's *Vivos voco*)* · the
+first big storm of the season (Tue; Typhoon Melor's remnants — 50-mph gusts, 1–1.5 in/hr on the coast [V]); Dow 10,000 (Wed); St. Teresa of
+Ávila, Balloon Boy and **Obama in New Orleans** (Thu); *Where the Wild Things Are* (Fri); Purdue 26, Ohio State 18, Diwali and the new moon
+(Sat). Saints 4–0, idle till Sunday's unbeaten Giants (off-page). *(Re-planned after S1E09 for the played path and **the player's own two-hander
+design** (brief, "S1E10 two-hander") — full plan in `outlines/s1e10.md`.)* **Cold open:** fire alarm 3, Tue ~3:20 a.m., in the storm (Margot:
+"Twenty-five."; Doug through a puddle asleep; Theo's two bags 🔒); Lena alone at the far end of the overhang in **Wes's green Tulane
+sweatshirt**, "Morning, Jack."; Lena and Laney not speaking (the tin) — **Laney claims asylum in 412** ("Granted."). Tuesday: **Danny's letter**
+("I don't wish. I decided." 🔒); the second money order; the Anchor in the gale (Gloria: "Lots of things work, hon."; Dulce and Rosario — Lena's
+Sunday soup, Gideon seed); **Priya unlocks the flooded RA storage closet — Nora's box, the journal's first page; the box goes to 401**; Jack's
+thesis at 3 a.m.: "A man knows his own heart by what he says yes to." Wednesday: the war council in 412 ("For Halloween, sugar —" "No."); **Hale's
+seminar** — no duel (midterm week; papers swapped, corpses Monday): "Good afternoon, Mr. Costigan." / "Mr. Costigan has been demoted." /
+Jeremiah 17:10, "you have been asked to steal His job"; Lena's last line: *A woman who says she knows her own heart is either a saint or lying*;
+the Brick's eighth floor (24 hours, midterm week): **Becca's MIDTERM SURVIVAL bag and a clementine for Lena**; Jack's margin: *Which are you?*
+**THE TWO-HANDER (the Romance chunk, ~4,800; Wed night → Thu 7:10 a.m.)** in the player's three movements: **raw and sideways** — 4:00 a.m., the
+eighth floor, her margin *Then what did you tell him?* beside his thesis; the duel **`cor`, "On the Heart"** (unofficial; Paul's "not thereby
+acquitted"; "Wes told me" — he asked you to take care of me and you said yes with a *bottle*; "Y'all don't get to *assign* me"; **"It took me a
+pier"**; "You're honest *at* people"; Jack's Personal option — Seacliff; HEART: **"Then what am I?"** unanswered); **five minutes of
+pretending** (the elevator; "We're fine."); **the reckless night** — the Ferrer Tower's storm-warped door under caution tape (**"Don't." "I
+wasn't going to."**), a hundred and sixty steps, the Ephesians bit on the stairs, **VIVOS VOCO · MORTUOS PLANGO · FULGURA FRANGO**, her back to
+the west 🔒, Reliquary No. 5 (path), "Who do you think plays the piano in the basement?", and **at 5:00 a.m. Lena plays "When the Saints Go
+Marching In" on the carillon** with her fists, one bell flat ("That's not flat. That's *New Orleans*."); Theo: "Costigan. Is that the Saints.";
+a campus cruiser; **hide behind the great bell / run for the Brick** (Priya: "I didn't see you."); the same table at dawn — **Aquinas and
+football** ("that's the dream girl right there"; "it was nothing"), "He says he out-waits me" (the ring, unsaid), **restraint scene #1** (her
+head on his shoulder; an hour; his arm), WES at 6:02, Becca's "prayed for u at 2 like always" at 6:41, **the 7:00 chimes and the near-miss**
+(who holds is the player's; no kiss); "Midterm, Youngstown." / "Sit somewhere else." Thursday: Hale's midterm ("the first thing that tower has
+done that I've enjoyed") and **the realization** (the First Way question: he described Lena); **fork:** the 12:10 with Becca (Teresa; Lena on
+Catherine) / the Fishbowl (Balloon Boy; Lena reads the crawl — Obama in her city); the boy found in the attic (Jack: Pauger Street).
+**Friday 1:25 a.m., the steps: Laney, Big/Little (Sloane), Sloane's Point-wall lore 🔒, Kaylee; Lena comes down — "I've got her, Jack."**
+Friday: Margot's suspects (1. A CATHOLIC 2. A DIFFERENT CATHOLIC 3. THE HOLY GHOST); ***Wild Things*** with Becca ("and it was still hot"),
+Maria's note, "Not yet," the costume list, **"You look at me like I'm homework." / "Then do your homework, Jack. I'll wait." / "Due
+Halloween."** Saturday: Theo's **SAINTS & SINNERS** invitation; "Purdue."; **Nonna: "Danny?"** 🔒; Priya's diya on the box. **Tag:** the six o'clock
+chime, a new padlock on the tower, Lena on the Brick's steps holding up five fingers — "Tomorrow." Lena's resolve 5 → 4 (the Brick) → 4 (the
+night) → 5 (Thu) → **6** (the steps). Jack 8 → ends ~6–9. No danger window. **Not this week:** the Delgado roof (#65), postcards (E14), the cross.
 
 **E11 · "Big Sur"** · Tue Oct 20 – Sun Oct 25 · The Vatican announces the personal ordinariates for Anglicans (Oct 20).
 **The road-trip episode** (brief, Season 1 wish; a bottle episode on the move). Theo's 450SL holds two, so Kevin borrows his
@@ -2522,10 +2664,14 @@ natural habitat"), a breakdown near Gorda, a motel with one working heater. The 
 on the coast road. Opens Thursday with Evan reading Kierkegaard aloud in section until his voice goes. (Theo/Rafi Tijuana
 fork cut; the box moved to E10.)
 
+*(E11 note after the E10 plan:)* Monday Oct 19 off-page: the corpses to Hale; Saints 48–27 Giants (**5–0** — the glass reads it Tuesday;
+Lena's five fingers paid); the balloon a hoax (Margot was right, and says so once). After the bells **no retreat** (#66 fails before it starts);
+guilty fun runs all the way up Highway 1; the slopes are wet from Tuesday's 15 inches in the Santa Lucias (mud; no committed closure). Becca's
+"Due Halloween" list in Jack's pocket, unpicked.
+
 **E12 · "All Hallows' Eve"** · Fri Oct 30 – Sun Nov 1, morning · *(Revised after S1E08 for the brief's Halloween wishes.)*
 **Theo throws the party** — extravagantly: LA money, a rented house (the old Ferrante place on Del Playa, three stories and a widow's
-walk), a party planner from Silver Lake, a theme on Meridian letterhead (room's suggestion: SAINTS & SINNERS, "in honor of my roommate
-and his religion's football team"), a DJ, his LA crowd up for the night — and chaos (the Las Olas street party, thousands in costume on
+walk), a party planner from Silver Lake, a theme on Meridian letterhead (**SAINTS & SINNERS** — announced E10 "in honor of whoever played the Saints on the Ferrer Tower"), a DJ, his LA crowd up for the night — and chaos (the Las Olas street party, thousands in costume on
 the bluffs, spills in). **Jack and Lena arrive in accidentally complementary costumes:** he's Binx Bolling from *The Moviegoer* (gray
 flannel suit, hat, a ticket stub — Gentilly, 1961, Wes's neighborhood; the pilot's paperback; nobody gets it), she's Flannery O'Connor
 (cat-eye glasses, a 1950s shirtwaist, a stuffed peacock under one arm) — two mid-century Southern Catholic novelists' worlds walking in
@@ -2738,8 +2884,8 @@ as joy and relief, maybe a reconciliation.
 - **S1 cadence (player's standing rule after S1E04):** an **extended Jack/Lena two-hander roughly every other episode** —
   E04 (the harbor, played), **E06** (the long way home from Pi Lam's barn party: the beach, the creek mouth, the lifeguard
 tower, the Lagoon bench — played), *E07 (no two-hander; the Delgado roof at dawn after Margot's wake, ~1,800 words, and the
-friendship duel — Lena central)*, **E08** (the player's own design: the Thérèse night, Wed–Thu — the laundry room, *Story of a Soul*, Lupe's, Shipwreck Cove under a setting moon; scrupulous friends → the crack → one of their best nights → "nice… sweet" → her relief → guilt at the Delgado elevator; the retreat that never takes, #66), **E10** (the
-  library at 4 a.m., restraint #1), **E12/E13** (shift by one around the Halloween setpiece: All Souls, "She was my host"),
+friendship duel — Lena central)*, **E08** (the player's own design: the Thérèse night, Wed–Thu — the laundry room, *Story of a Soul*, Lupe's, Shipwreck Cove under a setting moon; scrupulous friends → the crack → one of their best nights → "nice… sweet" → her relief → guilt at the Delgado elevator; the retreat that never takes, #66), **E10** (the player's own design: the Wes-weekend aftermath raw and sideways at 4 a.m. on the Brick's eighth floor → five minutes
+  of pretending → the Ferrer Tower and the Saints at five → the same table at dawn, restraint #1 — the Romance chunk), **E12/E13** (shift by one around the Halloween setpiece: All Souls, "She was my host"),
   **E14** (the postcards, after Hale's dinner), **E16**, **E18** (the Thanksgiving phone call, Dupre Street to Glenwood
   Avenue), **E20** (the courtyard, restraint #2), **E21** (the stairwell until dawn). **Ensemble setpieces as punctuation**:
   E03 (convoy), **E05 (Sully's)**, E08 (Blessing of the Animals: Osei meets Hale), E11 (Big Sur), E12 (Halloween), E14 (Hale's
@@ -2824,6 +2970,10 @@ raises friction; a Concede is the only move that helps, and it doesn't feel like
    seminar (literature as moral test: is Sarah's sanctity real or a writer's alibi for adultery?) — Lena savages the book,
    Jack defends it; it turns into how he's "changing" (the skipped Mass for a dawn shoot) and whether she's dating a man who
    agrees with her because she can't stand to lose. Laney, to Theo: "Sugar, that was not about a *book*."
+**Rehearsal (S1E10 — not a proxy fight; there is no magnetic partner yet):** the first sideways fight, at 4 a.m. on the Brick's eighth
+floor, as the duel `cor` ("On the Heart"). Stated subject: Hale's papers, honesty, Danny told to a stranger, being "assigned" between two men on a
+beach. Real subject: the weekend. Same rules — winning the stated argument is the wrong thing to win; the real reason is never spoken (on HEART,
+"Then what am I?" is asked and not answered). It is the muscle the S2/S3 fights will use.
 **Payoff:** S4E06, once they're together, one of them finally names what those fights were (default Lena: "It was never
 Greene. It was never the housekeepers."). Path may hand the line to Jack, or slide it to S6's repair.
 
@@ -2911,6 +3061,13 @@ practicing Catholics; Newman's Sunday attendance is about 600 across five Masses
 - **The Commons Lawn** (center): the quad. Big lawn, Frisbees, sunbathers, protest tables, the **Ferrer Tower** (a 1966
   carillon tower that plays the Westminster chimes off-key on the quarter hour and "Hotel California" on the last day of
   finals by tradition).
+  - **Ferrer Tower (E10 canon):** ~130 ft of 1966 board-formed concrete; a steel door at the base (warped by the Oct 13 storm; Facilities'
+    caution tape; a new padlock by Saturday); **a hundred and sixty steps** in a square shaft with a cold steel rail and window slits; at the
+    top a glassed **playing cabin** with a wooden-baton keyboard and pedalboard (laminate: AUTOMATIC SYSTEM ENGAGED 7 AM–10 PM · DO NOT OPERATE
+    CLAVIER) under the open bell chamber; the bells cast in Holland, 1965 (Researcher: a plausible count ≥23). **The great bell's inscription:
+    VIVOS VOCO · MORTUOS PLANGO · FULGURA FRANGO** ("I call the living, I mourn the dead, I break the lightning"). **One bell flat** — on the third
+    of the scale; Lena: a blue note. From the cabin: Delgado's grid, the Lagoon, the hills east, and west past the Grove the dead light on the
+    Point. Chimes 7 a.m.–10 p.m.
 - **Hollis Hall** (west side of the Commons): the only 1920s building, Spanish Revival, red tile, a cloister walk with
   bougainvillea; Philosophy, Classics, Religious Studies. **Hale's office: Hollis 314** (third floor, a window on the sea,
   a carpet with a wine stain shaped like Italy). Seminar room **Hollis 302** (PHIL 9H; long oak table, twelve chairs,
@@ -3125,6 +3282,16 @@ women's bathrooms at each end of each floor). Home to 310 freshmen.
 - **The air mattress in 412** (E09): an Aerobed Theo bought Friday "for guests"; Wes made it with hospital corners.
 - **Wes's flip phone:** scuffed, black, a grainy camera; the photo of Mémère's ring (🔒 E21: Jack knows about the ring when Wes ends it,
   and never tells her).
+- **Wes's green Tulane sweatshirt** (E09 dawn; left behind): on Lena all of E10, under the oatmeal cardigan; once, in the tower, under Jack's
+  Carhartt (one image; never glossed).
+- **The Ferrer bells** (E10): the 5 a.m. Saints; the flat bell ("That's not flat. That's *New Orleans*."); the six o'clock chime; registry #71.
+- **The basement piano** (Delgado, the dead F): Lena is the one who plays it and doesn't admit it — "Who do you think plays the piano in the
+  basement?" (E10). Two years of piano at the Rosary.
+- **The paperback, E10:** Walker Percy, ***The Moviegoer*** again — the pilot's copy out of the milk crate for the heart paper (Binx's "search");
+  seeds E12's costume. **No postcard falls out** (E14). Lena's book: Flannery O'Connor's letters, ***The Habit of Being*** (seeds hers). Hale's
+  Williams on the desk, margins still owed.
+- **Becca's survival bags and lists** (E10): MIDTERM SURVIVAL — JACK; WE SHOULD MATCH!! torn off and handed over: "Due Halloween."
+- **Reliquary No. 5** (E10, Reckless path only): *No. 5 · 10/15/09 · Ferrer Tower · in the bells*, on a Pacifica Library call slip.
 - **Becca's card for Rosie** (E09): Thomas the crab drawn in ballpoint, six true facts about hermit crabs on the back; it goes on the
   Glenwood refrigerator next to Nonna's Mass card.
 
@@ -3176,7 +3343,11 @@ forget, it's a signal). Track her value in `continuity.md` at the end of every e
   Newlywed Game: the tin) → **5** (Seacliff at five: she won't walk past the Lighthouse — 🔒) → 5 (dawn on the steps) → **7** (the 9:30,
   both forks — she goes with Becca on the Sully's fork) → **6** (the stove: the vibes; she hands Becca the spoon) → 6 (Wes leaves) → **5**
   (the call: "He's my friend, Wes") → **ends 5.** Jack enters 10; the Jameson and a night without sleep cost him (−1 to −3); Sunday Mass
-  +1. No danger window (Lena never ≤3).
+  +1. No danger window (Lena never ≤3). **S1E09 played as planned** (ends 5; Jack ends 8). **S1E10 plan:** 5 at entry → 5 (the storm
+  alarm) → 5 (Wed seminar, "Mr. Costigan") → **4** (the Brick at nine: Becca's clementine) → 4 (the fight; never lower) → 4 (the tower, the
+  bells — joy doesn't raise it; the night does cost) → 4 (dawn; she can still hold, and on the Reckless path she does) → **5** (Thu 12:10, both
+  forks) → **6** (the steps: Laney back) → **ends 6.** Jack enters 8; the fight, no sleep and the 7:00 near-miss cost him (−3); Priya, the 12:10
+  (fork) and Laney earn some back. No danger window.
 - Pilot baseline: **7** at move-in; **6** after the party (Laney, the Lighthouse — 🔒 the house itself costs her); **8** after
   Mass; **6** after the diner (the magazine); **6** at the tag (Wes, the article she hasn't read).
 
@@ -3384,3 +3555,15 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 | 2026-10-20 | §22 E12–E13, §10.2 | **Halloween rebuilt:** Theo throws it (rented house, theme, LA crowd); Jack as Binx Bolling and Lena as Flannery O'Connor, accidentally complementary; Becca confused; All Saints Mass Sunday morning is E12's tag; E13 starts Sunday afternoon; Sol glimpsed at Theo's party. | Brief: Halloween wishes. |
 | 2026-10-20 | §22 E10 | E10 gains the brief's Aquinas-and-football conversation (library), Danny's Tuesday letter, the Oct 13 storm, the papers duel. | Brief + E09 handoffs. |
 | 2026-10-20 | §13, §14, §16, §20.7, §27 | Knowledge after E08 and planned after E09; Wes's secrets row; E09 offers Wes a scar telling in the water (never "a fight" beside Danny); E09's five strange-thread beats; Lena resolve E08 played (6) and E09 plan (→ 5). | Ledgers; Knowledge Auditor. |
+
+### Revision log — after S1E09 was played (Showrunner, 2026-10-21)
+| Date | Section | Change | Why |
+|---|---|---|---|
+| 2026-10-21 | S1E09 played | **Path canon recorded** (§13 updated after S1E09; §21 status): what · anemone · own · given · whodat · browns · **lena** (waltz) · **knee** (whisper) · catherine · quit · **walk** (no cross) · beach · wit (Merle) · controller · **told** (Danny to Wes) · **drink** ("That's a yes where I'm from") · saints · mass · show · camel **HEART** · teacher · whodat · true. Temps: Lena 33 / 31 / 11 / 19; Becca warmth 12 · trust 1 · heat 2; **Wes 4 / 2 / 4**; Hale 9 / 2. Soul 13 / 21 / **−4**. Traits sincerity 63, candor 41, wit 28, charm 15, reckless 14, control 4. Resolve Jack 8, Lena 5. | The played episode wins. |
+| 2026-10-21 | §10.1 Wes | **Room canon for Monday's and Tuesday's calls** (Wes's side; 🔒): he told Lena he'd asked Jack to take care of her, that Jack "drank to it," and that Jack told him about Danny. **From E10 Lena knows those three things** (route on page: "Wes told me"). The green Tulane sweatshirt left behind; Thursday's 6:02 text. | E09's overheard "I know you did" needed a Wes side; the player's E10 design needs the weekend to come out raw and sideways, and this is what she has to come out with. |
+| 2026-10-21 | §22 E10, §24.1, §24.6, §21 #50 | **E10 rebuilt to the player's own two-hander design** (brief, "S1E10 two-hander") and **retitled "I Call the Living."** The raw, sideways fight is the duel **`cor`, "On the Heart," unofficial, at 4 a.m. on the Brick's eighth floor** (E09's `nextTime`); **the papers duel moves off Hale's Wednesday table** (midterm week; papers swapped, corpses Monday) so the fight can be theirs alone — a seminar duel would put it in front of ten people and Hale, which neither of them would ever do. Five minutes of pretending; the reckless night is **the Ferrer Tower** (trespass; the 5 a.m. Saints on the carillon; hide/run); the dawn on the eighth floor keeps restraint scene #1 and adds the 7:00 near-miss. The brief's Aquinas-and-football conversation lands at dawn; Jack's realization at Thursday's midterm. §24.6 gains the "rehearsal" note. | Player's design: raw and sideways → five minutes → a reckless night that's just theirs; reckless in deed, not physical crossing; no kiss; Wes and Becca still in the picture. |
+| 2026-10-21 | §8.2, §8.1, §8.6, §10.4, §10.5, §10.8, §10.13 | New canon for E10: **Laney's exile and asylum in 412**, Big/Little (**Sloane her big**), **Kaylee told to Jack** on the steps (every path), Lena's "I've got her, Jack."; Theo's war council, the 5:01 text, **SAINTS & SINNERS** "in honor of whoever played the Saints"; Hale's seminar and midterm lines; **Becca**'s survival bag, *Wild Things* at the Rialto ("and it was still hot"), Maria's note, "Not yet," the WE SHOULD MATCH!! list (St. Isidore & St. Maria de la Cabeza), **"homework" / "I'll wait" / "Due Halloween"**; **Priya's flooded closet** (the box label and contents; the journal's first page; the box now in 401; the overnight desk; Diwali); **Danny's third letter** ("I decided" 🔒), the second money order, Maria's note, Purdue, **Nonna's "Danny?"** 🔒; the Harbor Inn housekeepers (Dulce, Rosario) — Gideon's S1 seed placed. | E10 needs them; the box moves up from E11 (bible §22 had already moved it); Kaylee per §14 (S1E10). |
+| 2026-10-21 | §25.1, §26, §21 #71 | **Ferrer Tower canon** (the warped door; 160 steps; the cabin and clavier; VIVOS VOCO · MORTUOS PLANGO · FULGURA FRANGO; one flat bell). Lena plays the Delgado basement piano nobody admits to playing (two years at the Rosary). Motifs: the green sweatshirt, the Ferrer bells, *The Moviegoer* re-read and *The Habit of Being* (E12 costume seeds), Becca's lists, Reliquary No. 5 (path). **New registry row #71** (the Ferrer Tower; payoff E22's "Hotel California"). | The reckless night needs a place nobody should be; the tower was already on the map with a flat bell and a finals tradition. |
+| 2026-10-21 | §13, §14, §16, §20.7, §27 | Knowledge updated after S1E09 and planned after S1E10; §14 Laney row (Kaylee: S1E10, every path; Lena already knew); scar tellings after E09 (Wes → controller; E10 none); E09 seeds marked played (walk fork: no cross) and E10's 🔒 seeds placed (the box; Sloane's lore; her back to the west; the Personal option; the bell's *mortuos*; Theo's bags; the attic on CNN); Lena's resolve E09 played (5) and E10 plan (→ 4 → **6**). | Ledgers; Knowledge Auditor. |
+| 2026-10-21 | period sheets | **Flag for the Researcher:** the E09 and E10 period sheets call Wes "a Seattle kid" / a Seahawks fan / home in Seattle — **wrong**: Wes is from Gentilly, New Orleans (Jesuit High, Tulane). The E10 sheet's "Lena on the phone to her mother or Nonna" should read **Mémère** (Nonna is Jack's). Writers follow the bible. | Continuity. |
+

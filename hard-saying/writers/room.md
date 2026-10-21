@@ -157,6 +157,22 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 68. **"Somebody has to"** (S1E09; 24 uses E01–E09). Max one per episode.
 69. **"Whole" as an intensifier** (S1E09; ~20 per path in one draft: "her whole face," "the whole cove," "the whole Grove"). Max six per
    episode. **"For once"**: max one per episode.
+70. **Transit codas** (S1E10; about half the scenes in one draft): a scene ending on Jack's logistics to the next place (the bus, the
+   elevator, the stairs, "he walks home the long way"). Max three per episode. **"Then the [noun]." sentence fragments** ("Then the 11
+   bus." "Then the doors, and the cold."): max five per episode (~17 per path in one draft against 3–10 in E01–E09).
+71. **Smell-inventory openers** (S1E10; 3–7 every episode since E01): "[Room] smells like/of [list]" in a scene's first or second
+   sentence. Max three per episode, never two scenes in a row; rotate the opener among light, weather and smell (bible §4.2).
+72. **"Then, quieter,"** as a dialogue lead-in (S1E10; E02, E04, E05, E06, E08 ×2, E09, E10 ×2). Max one per episode.
+73. **Callback glosses** (S1E10): narration identifying where a quoted line came from ("It's Becca's own line, from the stool by the
+   stove on Sunday," "her own line, from the laundry room"). Max one per episode; the player binges — trust their memory.
+Small repeats to watch (S1E10): dawn colors "pewter" (E01, E03, E06, E07, E09, E10) and "the blue at the bottom of a gas flame" (E09,
+E10) — find new dawns; "something crosses her face" (retired after E10); "with her whole body" (once a season); "hands at ten and two"
+(retired); the prayer "like a man talking to someone in the next room" (the bible's description — retired from prose); eucalyptus
+(two a scene, max); "Lena's green sweatshirt under the oatmeal cardigan" as a formula (once an episode); "on its slow arm" for doors
+(once); Priya "over the orgo text" and Marcus "asleep over orgo" (once each); "Ziploc" (spend it); stacked teeth-holds (LG, flashlight,
+highlighter in the teeth — one per episode); "his brother's jacket" as an epithet (name the Carhartt once, then "the Carhartt" or
+nothing); "kindly" as a delivery tag shared by Lena and Becca (never both in one episode); "four hundred" (twice a scene); Theo's
+"option it" (once an episode; give him loglines and pitches; he lies at length, tells the truth short).
 Small repeats to watch (S1E09): the moon laying a road on the water (once an episode); "in no hurry" (Wes's vowels own it); "the real
 one / her real smile / a real one" as a sincerity stamp; "the four of them"; Hale's Williams in the back pocket (the inventory epithet
 — once or twice an episode, where it pays); "scuffed (black) flip phone" (once); Wes's chipped tooth (introduce, then farewell only);
