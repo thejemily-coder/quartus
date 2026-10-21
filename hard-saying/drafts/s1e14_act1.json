@@ -1,0 +1,420 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "WEDNESDAY · 12:05 PM · PORTOLÁ HALL, THE FRONT STEPS",
+   "music": "Train — “Hey, Soul Sister”",
+   "set": {
+    "resolve.lena": 5,
+    "knows_becca_spokane": true
+   },
+   "body": [
+    "Noon comes straight down on Portolá Hall, white and total, the kind of November light California hands out for free and Jack, on five hours of sleep for the second night running, would like to give back. Behind the front steps the lounge window is propped open on a phone book, and somebody’s laptop on the sill is playing the song with the ukulele that has been coming out of every window on campus since August — a little too much of it, and sweet, and hard to hold a grudge against. Through the glass the lounge TV is already on ESPN, warming up for tonight’s Game Six. In Youngstown the Yankees are something that happens to other people. Jack keeps up the family position.",
+    "Becca is on the top step with her knees up and her clipboard across them, ten minutes early because she is always ten minutes early. Beside her on the concrete are two coffees from the Portolá dining hall and a maple bar in wax paper: his order, memorized for Coffee & Donuts since the bleachers. Her braid is over one shoulder. The rosary on her wrist ticks against the paper cup when she hands him his.",
+    "The spiral planner is clipped on top, open to the week, and in the corner of today she has penciled *St. Charles Borromeo*. “Patron of catechists,” she says, “and *plague*. Which is honestly a lot for one guy.”",
+    "The coffee is too welcome. He drinks a third of it on his feet, and then he sits down on the step beside her, because she has moved her bag to make the room.",
+    {
+     "if": "e13_caroline==\"becca\"",
+     "text": "She doesn’t warm up to it. She has never warmed up to anything in her life. “You told Theo’s *mom* I’m with you,” she says. “In front of *everybody*. With the good forks.” She has been carrying it since last night, and it’s all over her face. “So — my mom’s been calling you my boyfriend since September. Can I tell her she’s right?”",
+     "else": "She doesn’t warm up to it. She has never warmed up to anything in her life. “My mom’s been calling you my boyfriend since September,” she says. “Can I tell her she’s right?”"
+    },
+    "Then, because there is a procedure for everything and she is generally the one who wrote it, she holds up a finger. “My mom first. Then Facebook. That’s the order.”",
+    "The rest of the plan comes with it: she flies home the Wednesday before Thanksgiving, Santa Barbara to Spokane through Seattle, and her dad will drive over from Coeur d’Alene to get her with the dog in the truck, and her mother has already named the turkey. “Gerald.” She says it gravely. “We don’t name the ones we eat. Mom says this is a teaching moment.”",
+    "The sun is on her clipboard and on St. Charles in pencil and on her face, which is turned up to him with everything in it out where he can see it, nothing kept back for later. In the window the song gets to the part where it says the same thing over again. Jack holds the coffee. It’s hot through the paper, and he holds it."
+   ],
+   "choices": [
+    {
+     "text": "“Yes. Tell her.”",
+     "tag": "Sincerity",
+     "cue": "Becca will remember that.",
+     "set": {
+      "e14_ask": "yes",
+      "becca_official": true,
+      "trait.sincerity": "+1",
+      "rel.becca.warmth": "+2"
+     },
+     "key": "On the Portolá steps Becca asked if she could tell her mom you’re her boyfriend. You said yes.",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "becca",
+       "title": "Becca Lindell",
+       "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey."
+      }
+     ],
+     "response": [
+      "“Okay! *Yes!*” The phone is out of her vest pocket and dialing Coeur d’Alene while the ukulele is still going. “It’s noon there too,” she tells him with it at her ear. “North Idaho’s Pacific. People never believe me. — Mom. *Mom.* He said yes.”",
+      "Out of the little phone, small and clear, comes a woman’s voice: “Is that *him*? Put him on.” Becca holds it out. Jack takes it and says hello to a woman who has been calling him her daughter’s boyfriend since September, and Mrs. Lindell tells him she has had him on her list since the beach cleanup and wants to know if he’s eating, and he says yes, ma’am, and beside him on the step Becca puts her forehead down on the clipboard and laughs into St. Charles Borromeo."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“Yes.”",
+     "tag": "Decency",
+     "cue": "Becca will remember that.",
+     "set": {
+      "e14_ask": "weight",
+      "becca_official": true,
+      "soul.grace": "+1",
+      "soul.honesty": "-1",
+      "rel.becca.warmth": "+1",
+      "rel.becca.trust": "+1"
+     },
+     "key": "On the Portolá steps Becca asked if she could tell her mom you’re her boyfriend. You said yes, and meant to mean it.",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "becca",
+       "title": "Becca Lindell",
+       "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey."
+      }
+     ],
+     "response": [
+      "He says it carefully, and sets out to deserve it.",
+      "Becca hears the yes. She puts her hand into his on the warm concrete — a square, strong hand with a nick across one knuckle from something that had hooves — and holds on through the rest of the song and into the next one. Jack looks down at it on the step. His other hand has the coffee in it, and the coffee is still hot."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“Can we keep it ours till Thanksgiving?”",
+     "tag": "Control",
+     "cue": "Becca will remember that.",
+     "set": {
+      "e14_ask": "hedge",
+      "becca_official": true,
+      "trait.control": "+1",
+      "soul.honesty": "-1",
+      "rel.becca.warmth": "+1"
+     },
+     "key": "On the Portolá steps Becca asked if she could tell her mom you’re her boyfriend. You asked to keep it yours and hers till Thanksgiving. She heard yes.",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "becca",
+       "title": "Becca Lindell",
+       "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I asked to keep it ours till Thanksgiving. She heard yes. She flies home to Spokane the Wednesday before. Her mother has named the turkey."
+      }
+     ],
+     "response": [
+      "“*Ours!*” She tries the word out loud and likes it so much she says it again, to herself. “Okay! No Facebook.” She draws a line through something in the planner, firmly, a decision made in pencil. “Mom doesn’t count. She’s not *on* Facebook. She thinks it’s a kind of mail.”",
+      "Jack says that seems fair. Becca unwraps the maple bar, breaks it in two, and gives him the bigger half."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“I’m not good at this.”",
+     "if": "trait.wit>=38",
+     "tag": "Wit",
+     "cue": "Becca will remember that.",
+     "set": {
+      "e14_ask": "good",
+      "becca_official": true,
+      "trait.charm": "+1",
+      "trait.wit": "+1",
+      "rel.becca.warmth": "+2"
+     },
+     "key": "On the Portolá steps Becca asked if she could tell her mom you’re her boyfriend. You told her you’re not good at this. She said you’re good at her.",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "becca",
+       "title": "Becca Lindell",
+       "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey."
+      }
+     ],
+     "response": [
+      "Becca considers it honestly, as data, for about the length of the chorus.",
+      "“You’re good at *me*,” she says. It isn’t a compliment; it’s a finding. Then she waits, and when the yes comes she nods once and taps the planner with the eraser end of her pencil. “Mom first. Then Facebook.”"
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "WEDNESDAY · 1:00 PM · HOLLIS HALL, ROOM 302",
+   "body": [
+    "Room 302 sounds like a Wednesday: twelve chairs dragged across eighty-year-old oak, Caleb’s highlighter squeaking down a page of his *Consolation of Philosophy*, which has been molting since the glue gave out somewhere in Book Three, and Yusuf capping and uncapping his pen in a rhythm only he can hear. Hale comes in at one o’clock exactly, his fifth punctual arrival of the term, and he is in a good mood. He says good afternoon to each of them by surname, all the way around the table, and the table goes careful.",
+    "Two seats down, in the cardigan, Lena takes one of the San Diego boys apart over whether Lady Philosophy is a woman or a device. It’s a small point. She goes at it with more than it needs, sleeves shoved up, and has it won in three moves, and Hale sits back with his hands laced on his stomach and lets her.",
+    "Under Jack’s notebook are her two pages from Monday, on Monica and on Lucille and the medal that came back in a plastic bag, red all through from Monday night and most of Tuesday, his handwriting getting smaller as the white ran out. One margin left: beside her last paragraph, where Monica at Ostia asks to be remembered at the altar and Lena’s grandmother comes into the argument by the side door, unannounced. Hale wants them by two. At ten to, with the San Diego boy still examining his injuries, Jack uncaps the red pen."
+   ],
+   "choices": [
+    {
+     "text": "*Monica asked to be remembered at the altar. So did Lucille. You did it.*",
+     "tag": "Sincerity",
+     "set": {
+      "e14_margin": "remember",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "He writes it small, in the last of the white beside her last line, and doesn’t cross anything out. At two the papers go up the table hand to hand, and his comes up from Lena’s end with one page’s corner folded down — a dog-ear, small and square and made on purpose. Hale knocks it into the stack without looking. That is all Jack is going to see of whatever she wrote under it.",
+      {
+       "type": "doc",
+       "title": "Hale’s whiteboard, 2:10 p.m.",
+       "text": "FRIDAY · 7 P.M. · THE CLIFF END OF DEL PLAYA · ONE GUEST EACH · BRING SOMEONE WHO’LL EMBARRASS YOU."
+      },
+      "“Dress as though you respect me,” Hale says, capping the marker. “I’ll be reading your marginalia aloud over the pudding. It’s the only honest writing any of you do.” Caleb writes it down. Jack sits looking at *embarrass*. Two seats down, Lena zips her bag."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "*You were owed. Consider it paid.*",
+     "tag": "Wit",
+     "set": {
+      "e14_margin": "paid",
+      "trait.wit": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "He writes it in red beside her last paragraph and puts one line under *paid*. At two the papers go up the table hand to hand, and his comes up from Lena’s end with one page’s corner folded down — a dog-ear, small and square and made on purpose. Hale knocks it into the stack without looking. That is all Jack is going to see of whatever she wrote under it.",
+      {
+       "type": "doc",
+       "title": "Hale’s whiteboard, 2:10 p.m.",
+       "text": "FRIDAY · 7 P.M. · THE CLIFF END OF DEL PLAYA · ONE GUEST EACH · BRING SOMEONE WHO’LL EMBARRASS YOU."
+      },
+      "“Dress as though you respect me,” Hale says, capping the marker. “I’ll be reading your marginalia aloud over the pudding. It’s the only honest writing any of you do.” Caleb writes it down. Jack sits looking at *embarrass*. Two seats down, Lena zips her bag."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "*I argued Epicurus. I don’t believe a word of him. Neither did you.*",
+     "tag": "Candor",
+     "set": {
+      "e14_margin": "epicurus",
+      "trait.candor": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "It takes the margin and turns the corner along the bottom edge, and he lets it. At two the papers go up the table hand to hand, and his comes up from Lena’s end with one page’s corner folded down — a dog-ear, small and square and made on purpose. Hale knocks it into the stack without looking. That is all Jack is going to see of whatever she wrote under it.",
+      {
+       "type": "doc",
+       "title": "Hale’s whiteboard, 2:10 p.m.",
+       "text": "FRIDAY · 7 P.M. · THE CLIFF END OF DEL PLAYA · ONE GUEST EACH · BRING SOMEONE WHO’LL EMBARRASS YOU."
+      },
+      "“Dress as though you respect me,” Hale says, capping the marker. “I’ll be reading your marginalia aloud over the pudding. It’s the only honest writing any of you do.” Caleb writes it down. Jack sits looking at *embarrass*. Two seats down, Lena zips her bag."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s03": {
+   "slug": "WEDNESDAY · 4:30 PM · DELGADO HALL, ROOM 412",
+   "body": [
+    {
+     "type": "fb",
+     "name": "Becca Lindell",
+     "text": "is in a relationship with Jack Costigan.",
+     "meta": "Wednesday at 4:12pm · 31 people like this",
+     "if": "e14_ask!=\"hedge\""
+    },
+    {
+     "if": "e14_ask!=\"hedge\"",
+     "text": "He approved it at 4:11, standing at his desk with his bag still on his shoulder. At 4:12 it went out to everyone either of them has ever met. One of the thirty-one people who like this is Theo Vance, and Theo Vance is in the room.",
+     "else": "The Dell shows his PHIL 1 reading and nothing else. It doesn’t matter. Laney was in the Portolá dining hall at a quarter past twelve when Becca came in off the steps and hugged the woman at the register. “She hugged *Dining Services*, Jack,” is all Laney says about it. Theo looks at him. Jack nods."
+    },
+    "412 is a war room the afternoon after the war. Laney is on her knees by the window in her PI LAM LITTLE shirt with the Martinelli’s out of the mini-fridge, gold bow and all, working the foil off the neck. In the corner stands the silk ficus Delphine left behind after the party, collecting dust in its pot since Saturday. Laney tips the bottle over the fake moss and pours.",
+    "“It’s dead anyway,” she says.",
+    "“It’s *silk*, Laney,” says Theo, from his desk.",
+    "“Then it can take it.” The cider fizzes down into the moss with a sound like applause in another building. Laney looks up at Jack over the bottle. “The judges,” she informs him, “have some notes on your interview.” Then she goes back to watering.",
+    "Theo has the fan of cream place cards from Tuesday morning on his blotter, the Harbor Inn’s, a little blue anchor in every corner — the first draft, with COSTIGAN · BROUSSARD side by side at the end of it — and he is tearing them up. Halves, then quarters, then eighths, laid in a neat white drift. When he has finished he brushes off his palms, stands, crosses the room and shakes Jack’s hand, perfectly.",
+    "“Congratulations, Costigan. She’s a wonderful girl.”",
+    "Jack looks at the ficus. It looks wet.",
+    "Kevin is in the doorway in the navy quarter-zip, zipped to the chin, backpack on one shoulder, taking it in: the cider in the moss, the snow on Theo’s blotter. “Respectfully,” he says. “Leave it alone.” Behind him Margot comes down the hall from the lounge in black with a paper cup of coffee in each hand, and on her way by she puts one of them into Kevin’s hand without stopping or saying a word, and goes on toward the stairs with the other.",
+    "Kevin stands there holding it, the steam going up past his collar, until Theo hooks the spare desk chair out with his foot, still looking at his blotter, and Kevin comes in and sits."
+   ],
+   "next": "s04"
+  },
+  "s04": {
+   "slug": "WEDNESDAY · 8:04 PM · DELGADO HALL, EAST STAIRWELL, 2ND-FLOOR LANDING",
+   "set": {
+    "resolve.lena": 4
+   },
+   "body": [
+    "The east stairwell runs on one caged bulb to a landing, a yellow like weak tea, and at the second floor the window is open its six inches onto the dark and the cold off the Lagoon.",
+    "Lena is on the step above the landing in sweatpants and the cardigan, with her LG closed in her lap. She looks up when he comes around the turn of the stair.",
+    "“I know,” she says. “It’s stupid.”",
+    "Jack sits one step below her, on the wall side, and puts his back against the cinderblock and says nothing. The phone stays shut in her lap. At 8:05 somebody on the third floor flushes, and the pipe in the wall behind Jack’s shoulder carries it all the way down to the basement, unhurried, like a man reading the minutes. Then 8:06. A moth has found the gap at the bottom of the window and is working out what to do about it. Everything Jack has to say is either wise or funny, and she has told him this week what to do with both. He stays where he is, which is the only other thing he has.",
+    "She says it once, at seven past. “He’d have called from the boat. He always said the boat had the best reception in Orleans Parish.” She turns the phone over in her lap. “It didn’t.”",
+    "Down on the ground floor a door bangs, and somebody laughs, and the laugh goes off into the lobby. She has moved the phone off her lap onto the step beside her, and she sits with her arms around her shins in the yellow light, eighteen years old and from a long way off, and Jack sits with her.",
+    "Some time after that, out of nowhere, she tells him she hasn’t opened her laptop since Monday. It’s been on her desk with the lid shut for two days. “Everybody I’ve ever met is on there being sorry.”",
+    "Jack still has the Portolá steps on him, the coffee and the noon sun, and a question he carried down two flights."
+   ],
+   "choices": [
+    {
+     "text": "“Becca asked me something today. I said yes.”",
+     "tag": "Candor",
+     "set": {
+      "e14_told": "told",
+      "trait.candor": "+1",
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "On the landing at 8:04, the hour that used to be Wes’s, you told Lena about Becca yourself.",
+     "response": [
+      "“I’m happy for you, Jack.” Her hand goes to the medal at her collar. “I mean it.”",
+      "Then, lightly, she asks whether Becca brought the maple bar.",
+      "“She did.”",
+      "“Good.” At twenty past she gets up and goes in through the second-floor door. Jack stays on his step with his back to the wall, and somewhere behind the cinderblock the building goes on with its plumbing."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "Not tonight. Sit with her till she’s ready to go in.",
+     "tag": "Control",
+     "set": {
+      "e14_told": "later",
+      "trait.control": "+1",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "Becca’s question stays where it is, and so does he.",
+      "Lena talks about the fruitcake instead. It gets to Breaux Bridge on Friday, in the flat-rate box she wrote BE NOT AFRAID on in marker, and she would like to know whether the Breaux Bridge post office will take that as a threat, and whether Mémère will call to complain about the monks’ brandy or save it up to complain in person. Jack laughs where there’s room for it, and once where there isn’t, and she points at him for it. By the end she has the phone back in her lap with her hand over it, holding it shut.",
+      "At eight-thirty she stands and puts the phone in the cardigan pocket. “Thank you for sitting through it,” she says, and goes in."
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s05": {
+   "slug": "THURSDAY · 1:12 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "412 is dark except for the ceiling. Jack is on his back under the blanket with his eyes open, and the room smells faintly of apple, which is the ficus.",
+    "Across the room Theo is a long shape under his duvet with his iPhone face up on his chest, and the screen throws a blue-white square onto the ceiling over his bed, over the water stain Jack has never mentioned to him. The overhead went off at midnight and nobody has said anything since. Down the hall, through two walls, Doug Pruitt is calling for a healer, louder and then louder, and then he stops.",
+    "On Jack’s desk the RAZR is shut, with the last thing it said still in it. He read it at a quarter to twelve, lying exactly like this.",
+    {
+     "type": "sms",
+     "from": "Becca",
+     "text": "goodnight boyfriend!! :) see u at the 12:10",
+     "time": "11:46 PM"
+    },
+    "He wrote back *night becca* on T9, a letter at a time, and sent it, and shut the phone.",
+    "Then, from the other bed, with no setup at all:",
+    "“Costigan. Are you happy?”"
+   ],
+   "choices": [
+    {
+     "text": "“Yes.”",
+     "tag": "Charm",
+     "set": {
+      "e14_happy": "yes",
+      "soul.honesty": "-1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "“Okay,” Theo says. He turns the phone over on his chest, and the ceiling goes dark."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“I’m decent.”",
+     "tag": "Sincerity",
+     "set": {
+      "e14_happy": "decent",
+      "soul.honesty": "+1",
+      "trait.sincerity": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "response": [
+      "“That’s not what I asked.”",
+      "Jack doesn’t have another answer. The square of light stays where it is on the ceiling. Out on Ocean Road a car goes by with its stereo up, and then down, and then gone, and after that there is only the Lagoon working at the bank.",
+      "“Goodnight, Costigan.”"
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“Ask me after Thanksgiving.”",
+     "tag": "Candor",
+     "set": {
+      "e14_happy": "after",
+      "trait.candor": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "response": [
+      "“I’ll put it in my calendar,” Theo says.",
+      "And he does. The square on the ceiling brightens; his thumb taps once; the light goes out."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“Are you?”",
+     "tag": "Wit",
+     "set": {
+      "e14_happy": "you",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Go to sleep, Costigan.”",
+      "The screen on his chest stays lit a minute longer, and then it times out on its own."
+     ],
+     "goto": "s06"
+    }
+   ]
+  },
+  "s06": {
+   "slug": "THURSDAY · 12:10 PM · ST. BRENDAN’S → THE COURTYARD",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "At the 12:10 the blue glass turns noon into something underwater, and there are maybe fifteen people in a church built for three hundred: Mrs. Fitch in her pew by the shrine; an old man with a cane; two nursing students in scrubs; Joey Abruzzo in the second row, praying out loud by accident; Kenzie, who cantors the psalm like it costs her nothing; and in the fourth pew Becca, then Jack, then Lena. Osei says the Mass with his sleeves rolled under the vestments and preaches for two sentences.",
+    "Mrs. Fitch catches them in the vestibule after, by the holy water, in the lavender cardigan, and takes Becca by one arm and Jack by the other and squeezes. “*You two!*”",
+    {
+     "if": "e14_ask!=\"hedge\"",
+     "text": "Becca told her yesterday afternoon, it turns out, when she stopped in to drop off the hospitality key and couldn’t keep it in. Mrs. Fitch has been pleased about it for twenty hours and isn’t close to done.",
+     "else": "Becca goes scarlet. “I didn’t tell her! She *guessed*!” “I’ve been guessing since 1979,” says Mrs. Fitch."
+    },
+    {
+     "if": "e14_told==\"later\"",
+     "text": "Lena is right there, holding the door for the old man with the cane. She lets it go when he’s through and turns around. “I’m happy for you, Jack.” Her hand goes to the medal. “I mean it.”",
+     "else": "Lena holds the door for the old man with the cane and lets Mrs. Fitch have her moment."
+    },
+    "Then Lena turns to Becca and is lovely to her. “You’ll come to Sully’s Sunday? I’ll teach you the Who Dat.”",
+    "Becca lights up. “I’m making you a hotdish!”",
+    "“A what?”",
+    "“A *hotdish*. When somebody’s sad, everybody brings one, and then you have eleven.”",
+    "The courtyard at ten to one is olive shade and the broken sprinkler ticking in the planter, and Joey is under the tree with his flip phone held out at arm’s length. His father in Staten Island has been texting him. Joey reads it out at the volume he does everything at: a shooting at Fort Hood, the Army base in Texas, soldiers dead. “They keep changing the number,” he says. “It keeps going up.” Then he stops talking, which Jack has never once seen him do.",
+    "Osei comes out the side door with the stole still around his neck, gets it off Joey’s face before he gets it from Joey, and holds the door open behind him. “Come,” he says. “We’ll do this on our knees and read about it after.”",
+    "So they go back in, eight of them, and kneel in the front pew in the blue, and Kenzie starts the decade. Joey’s voice is too loud even when he whispers. The old man with the cane can’t kneel, so he stands at the end of the pew with one hand on the wood and says every word a half-beat behind everybody else. Jack gets through the first three Hail Marys on the words alone, and at the fourth he thinks of Yusuf’s brother, who interprets for the Army in Helmand and calls home on Sundays.",
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "u ok? tariq ok?",
+     "time": "1:02 PM"
+    },
+    "Nothing comes back for an hour. He checks at the bus shelter, and in line at the UCen, and on the steps of Hollis, and at 2:14, on the bench outside, it buzzes against his leg.",
+    {
+     "type": "sms",
+     "from": "YUSUF (9H)",
+     "text": "He’s not in Texas, Jack. He’s fine. He said don’t watch the news. Ask me tomorrow.",
+     "time": "2:14 PM"
+    },
+    "Jack puts the phone away. He does what he’s told, and leaves the news alone."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "yusuf",
+     "title": "Yusuf (PHIL 9H)",
+     "text": "Fremont. Engineer. Fasting for Ramadan through a ninety-minute seminar and funnier than all of us. Broke the fast with his people on Mission Street and fed me till I couldn’t stand. Father on the NUMMI line since ’85. Brother Tariq interprets for the Army in Helmand and calls on Sundays. The day of Fort Hood I asked if Tariq was okay. He’s not in Texas. He’s fine. He said don’t watch the news. Ask me tomorrow."
+    }
+   ],
+   "next": "s07"
+  },
+  "s07": {
+   "slug": "THURSDAY · 6:20 PM · DELGADO HALL, 217’S DOOR",
+   "body": [
+    "The second-floor hall is loud with dinner — doors propped, somebody’s *Office* rerun, a microwave finishing somebody else’s popcorn — and Jack is carrying a Pyrex dish down the middle of it in a dish towel, at arm’s length, like something that could go off. It’s Becca’s mother’s Pyrex, which came down from Idaho in the Ranger in August against exactly this kind of emergency, LINDELL on a strip of masking tape across the lid, and the tater-tot hotdish inside is still warm through the towel from the Newman House oven. Becca walks beside him carrying the serving spoon. She knocks on 217 three times, briskly.",
+    "Laney opens the door in a green clay face mask and takes in the dish. “Is that a *casserole*?” she says. “Did somebody *die*?”",
+    "“Kind of!” says Becca.",
+    "Lena comes up behind Laney in her socks. She takes the dish from Jack in both hands, towel and all, and holds it against her. “Thank you, Becca.”",
+    "Jack, relieved of the dish, has nothing to do with his hands. He puts them in the pockets of the Carhartt.",
+    "“It’s better tomorrow,” Becca tells her. “Everything with cream of mushroom is.”",
+    "Laney is not finished. She explains to Becca, through the mask, that a hotdish at a time like this is a talent-portion violation — it is the baton-twirling of grief — and that Miss Congeniality is a fraud category, she has said so since she was nine years old; it’s the sash they give the girl who brought everybody a casserole.",
+    "“Laney,” says Lena. “Be nice.”",
+    "“This *is* my nice.”",
+    "Becca turns to Jack with her face lit. “She’s *funny*.”",
+    "And then, since nobody has told her this isn’t the moment, she starts in on the tots — you put them on top in rows, that’s the trick, rows, and you don’t crowd them or they steam — and Lena stands in the open doorway with the warm dish held against her and listens to every word, and Laney, green to the eyes, leans on the door and holds it wide."
+   ],
+   "next": "s08"
+  }
+ }
+}
