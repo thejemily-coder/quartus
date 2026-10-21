@@ -854,3 +854,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   via a grandchild); **the Costigans** (Gina first, then Maria, then Nonna via rosary); maybe Fr. Osei raises an
   eyebrow at the next confession. Jack untags himself too late. Period note: Facebook tagging and the "untag" option
   exist in 2009–10; the photo spreads via the News Feed.
+- **The Skye meet as an extended set piece (player).** The first meeting gets its own big sequence: **the event itself**
+  (wherever it is, and **how Jack ended up there** are part of the set piece; e.g., a party he was dragged to, or one he
+  went to alone right after Becca, room's choice), then **a conversation that goes on a long time** (it starts with the
+  annotated book), and they **end up somewhere else** together (the beach, a rooftop, her car, an all-night diner, the
+  bluff; room's choice). They **kiss for a little while**, and then **she gives him her number and leaves** (her exit,
+  her timing; very Skye). It's a centerpiece of its episode, after Jack and Becca have ended, before Thanksgiving.
