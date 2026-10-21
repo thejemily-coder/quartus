@@ -578,3 +578,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   in the middle of it, and Margot and Kevin comment from the sidelines. The partners (Becca, Julian, the magnetic girl)
   are never punchlines; the comedy is in Jack and Lena. The ache underneath is real: they're closer and more honest
   with each other than with the people they're with.
+- **The New Orleans conversation must include this (player's design; fully honest from both).** Jack explains that he
+  didn't want to hurt Becca, **but the real reason he didn't come for Lena after she and Wes broke up** was that he
+  didn't want to swoop in while she was hurting from something that big, **and he didn't think he'd be able to keep
+  himself from doing it if he were single too.** Staying with Becca was a guardrail against himself. Lena answers
+  with equal honesty: how she read it (that he'd chosen Becca), the hurt, why Julian, and why she couldn't leave Julian
+  once the magnetic girl appeared. Jack owns his side too (the magnetic girl, his hurt that she didn't wait). The proxy
+  war gets named and laughed at, painfully. This is the payoff of the misreading chain, said without letting go of each
+  other, before Lena pulls away. (Fit to their voices; not verbatim.)
