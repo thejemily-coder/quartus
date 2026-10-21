@@ -466,3 +466,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Hale long-term:** room decides (he survives college).
 - **After S1E09 (player feedback).** "Fun that was deeply uncomfortable. Laney was hilarious." The Columbus Day
   weekend landed as designed.
+- **S1E10 two-hander (player's design).** The **aftermath of the Wes weekend comes out raw and sideways** (a fight or
+  near-fight about something else, the proxy-fight muscle starting to form). Afterwards they **pretend it didn't
+  happen for all of five minutes (again)**, and it turns into **a reckless night that's just theirs**. "Reckless"
+  means reckless in deed: somewhere they shouldn't be, something they shouldn't do, out past curfew and good sense,
+  thrilling. It is not physical crossing. The slow burn holds (charged near-miss allowed; no kiss this early unless
+  the Showrunner's plan has truly earned it; Wes and Becca are both still in the picture). Hard rules apply.
