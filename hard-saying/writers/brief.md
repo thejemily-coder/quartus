@@ -563,3 +563,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   her arms around his waist on a parade route, her head on his shoulder in the car, hands found in a crowd). Theo,
   Laney, Margot and Kevin notice everything. This builds to the **extremely-near-miss kiss**, followed by the planned
   full, honest conversation without letting go, and Lena pulling away.
+- **Why Jack stays with Becca when Lena is single (player's choice): he won't be the rebound.** Not cowardice. Lena's
+  breakup is fresh and painful (and Wes had a ring), and Jack refuses to swoop in on her grief: she deserves time, and
+  he won't be the guy waiting at the door. **He means to wait, decently**, and to end things with Becca honestly in due
+  course. **Lena reads it as him choosing Becca.** That misreading is the first link of the hurt chain (she goes to
+  Julian). Jack's reason should be legible to the player through his narration and choices, and genuinely admirable
+  and genuinely wrong at once. When Lena starts with Julian, the waiting turns into Jack's own hurt ("she didn't wait").
+  It all comes out in New Orleans: he was waiting *for* her; she thought he'd chosen.
