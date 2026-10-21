@@ -1,0 +1,749 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "TUESDAY · 8:52 AM · THE ANACAPA LOT",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "The fog is coming off the Lagoon in strips and going to pieces over the Anacapa lot, so the sun gets through in bars and lights the wet asphalt one stall at a time. Kevin’s Odyssey is nosed in by the dumpsters where it lives. Lena is kneeling on its rear bumper in a blue sundress, the oatmeal cardigan and her Keds, wiping last week off the back glass with her sleeve.",
+    "The 4–0 goes in three swipes. She digs the white La Vang polish out of her tote, shakes it hard, and writes the new number big enough for the 101 to read: 5–0. Sunday the Saints beat the unbeaten Giants forty-eight to twenty-seven in the Dome; Monday she had Hale’s corpses due; so the glass has waited till Tuesday, and the 5 gets a little flag on top for its patience.",
+    {
+     "if": "e10_wave==\"hand\"",
+     "text": "Saturday evening on the Brick steps she held up five fingers at him across the quad and didn’t say what for. This is what for."
+    },
+    "Jack is crossing the lot to Sandoval Hall and the nine-thirty lecture. He is on the far side of the row, the eucalyptus side, which is the long way by about forty feet, and he has his eyes on the eucalyptus, which this morning have nothing to offer but menthol and one crow. Since Thursday he has gotten good at the long way.",
+    "“Good morning,” Lena says to the glass.",
+    "She hasn’t turned around. The Odyssey’s side mirror has him anyway, forty feet out and halfway past."
+   ],
+   "choices": [
+    {
+     "text": "Say “Morning, Lena.” Keep walking.",
+     "tag": "Control",
+     "set": {
+      "e11_glass": "walk",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Morning, Lena.” He doesn’t break stride.",
+      "Behind him, without turning around: “Morning, Jack.” When he looks back from the crosswalk the zero has come out a little crooked, an egg with a lean. She’s capping the bottle. She has left it that way."
+     ],
+     "goto": "s01b"
+    },
+    {
+     "text": "Hold the bottle for her.",
+     "tag": "Sincerity",
+     "set": {
+      "e11_glass": "hold",
+      "rel.lena.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He crosses the row and holds out his hand, and she puts the bottle in it without looking up. It sweats polish, and by the time she’s put in the dash his fingers are white to the second knuckle.",
+      "She sits back on her heels and checks the zero. “You’re getting good at this.”",
+      "“I’m from Ohio. We hold things.”",
+      "She takes the bottle back. At the end of the nine-thirty his fingers are still white, and he hasn’t wiped them."
+     ],
+     "goto": "s01b"
+    },
+    {
+     "text": "“Five and oh. Somebody’s going to have to tell the Giants.”",
+     "tag": "Wit",
+     "set": {
+      "e11_glass": "giants",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Somebody did.” She puts in the dash with a flourish and leans back to admire it. “Sunday. *Loudly.*”",
+      "Then she goes back to the zero, which wants a second coat, and gives it one."
+     ],
+     "goto": "s01b"
+    }
+   ]
+  },
+  "s01b": {
+   "slug": "TUESDAY · 8:55 AM · THE ANACAPA LOT",
+   "body": [
+    "Theo comes across the lot from Delgado in the black Meridian robe over jeans and the Visvim boots, a binder clip of letterhead in one hand and a cup from the Commons in the other. It is the robe he had on at two this morning, when Jack fell asleep to something French on the MacBook.",
+    "He unclips three sheets without breaking stride. One goes under the Odyssey’s wiper, one into Jack’s hand, and one to Kevin, arriving from the other direction with a protein shake the color of wet cement, who reads it walking and stops walking.",
+    "“It’s my *mother’s* van.”",
+    "“And she’ll be credited,” Theo says.",
+    {
+     "type": "doc",
+     "title": "MERIDIAN PICTURES · INTEROFFICE",
+     "text": "THE BIG SUR EXPEDITION\nSATURDAY 24 OCTOBER · 0700\nVEHICLE: MRS. TRAN’S ODYSSEY\nDESTINATIONS: BIXBY · NEPENTHE · THE MONKS\nREQUIRED READING: KEROUAC, *BIG SUR* (1962) — COPIES PROVIDED\nREQUIRED LISTENING: PROVIDED\nDRESS: LAYERS. IT IS NOT LOS ANGELES.\n—T.A.V."
+    },
+    "Lena climbs down off the bumper, slides the sheet from under the wiper and goes down it with the face she uses on Hale’s handouts, and stops at the only word on it she wants. “The monks,” she says. “Vespers. *Fruitcake.*”",
+    "“Margot’s already in,” Theo says. “As an observer.”",
+    "“I work Saturdays,” Jack says.",
+    "“Not this one,” Theo says pleasantly. “I called the Anchor. A woman named Gloria said Hector’s home from Fresno State, and then she rated me.”",
+    "“What’d she give you?”",
+    "“Baked Alaska. Fancy, and somebody’s going to set it on fire.” He drinks his coffee. He has not decided yet whether to be offended; it’s on his list for later.",
+    "So Jack’s Saturday has been handled before he had the chance to use it, and nobody mentions it. Kevin looks at Theo for exactly as long as it takes to drink a third of a protein shake.",
+    "Then a paperback, out of the robe’s pocket: a used Bantam *Big Sur* with a Borders USED sticker over the price and the spine gone soft. “I bought six at the Borders on Mission,” Theo says, “which is dying. I’m keeping it alive one Beat at a time.” Jack puts it in his back pocket, because that’s where books go. That night the Benedict holy card moves into it, and the Percy goes back to the milk crate under his bed.",
+    "Lena has slid her copy back under the wiper, for the van’s information. The wind off the Lagoon lifts it and lets it down, lifts it and lets it down, like it has something to add."
+   ],
+   "next": "s02"
+  },
+  "s02": {
+   "slug": "TUESDAY · 1:10 PM · DELGADO HALL, THE FISHBOWL",
+   "body": [
+    "CNN has the Fishbowl to itself, two notches louder than anybody wants. Along the bottom a crawl is still finishing off Colorado — the sheriff said Sunday the balloon was a hoax — and Margot watches it go by from the armchair with her boots on the coffee table.",
+    {
+     "if": "e10_noon==\"fishbowl\"",
+     "text": "“I said it was too calm,” she tells Jack, who was there.",
+     "else": "“I said it was too calm,” she tells the room."
+    },
+    "Then the real news. Rome, the anchor says, will receive whole groups of Anglicans into the Catholic Church with a structure of their own: their own parishes, their own prayer book, what Rome is calling their patrimony. Married former Anglican priests may be ordained Catholic priests; the bishops will have to be celibate. A cardinal named Levada at a podium in Rome. In London, the Catholic Archbishop of Westminster, Vincent Nichols, and the Archbishop of Canterbury, Rowan Williams, side by side behind a joint statement, being very gracious at each other. It’s an announcement, the anchor says. The paperwork’s coming.",
+    "Jack has stopped in the doorway, grinning, and can’t do anything about it. “Newman’s people,” he says. “The Oxford Movement, a hundred and seventy years late, coming in with their hymnals. This is the most Benedict thing Benedict has ever done.”",
+    "Margot doesn’t take her eyes off the screen. “Read the fine print, Costigan. The Church of England has been ordaining women for fifteen years, and now it’s working up to women bishops, and there is a certain kind of English vicar who would sooner swim the Tiber than take communion from one. Rome just opened a branch office for him.” She turns her head. “Welcome to the club, gentlemen. The dues are paid by the women.”",
+    "It’s a good argument. The worst thing about Margot’s good arguments is that she makes them sitting down.",
+    "Lena, on the arm of the couch with a Commons coffee balanced on her knee, isn’t cheering either. She is watching Rowan Williams’s eyebrows. “You don’t come home because you’re mad at the neighbors,” she says.",
+    "Kevin looks up from his flashcards at the card table, interested. “Wait. So the priests can be married? Like, already married? They bring the wife?”",
+    "“They bring the wife,” Jack says.",
+    "Kevin nods and goes back to his flashcards, a man whose logistical question has been answered.",
+    "On the far couch Laney has one foot up on the cushion and is doing her toenails a red called Thrill of Brazil. She doesn’t look up from the little toe. “Are they *cute*?”"
+   ],
+   "choices": [
+    {
+     "text": "“It’s Benedict holding the door open. I’m allowed to like that.”",
+     "tag": "Sincerity",
+     "set": {
+      "e11_anglicans": "benedict",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Hold it open,” Lena says. “Hold it open all day, I’ll stand there with you. Just don’t throw a parade for every man who comes through it mad.” She drinks her coffee. “Mad’s not a vocation.”"
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“Margot’s right about who’s coming. That doesn’t make the door wrong.”",
+     "tag": "Candor",
+     "set": {
+      "e11_anglicans": "margot",
+      "trait.candor": "+1",
+      "rel.margot.warmth": "+1"
+     },
+     "response": [
+      "Margot turns all the way around in the armchair to look at him. “Kevin. Note that Costigan conceded a premise.”",
+      "“I’m not your secretary.”",
+      "“You’d be a terrible one,” Margot says. “You’d put in exclamation points.”"
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“Newman would be insufferable about this.”",
+     "tag": "Wit",
+     "set": {
+      "e11_anglicans": "newman",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Newman’s been insufferable about this since 1845,” Lena says, without taking her eyes off the screen."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s03": {
+   "slug": "TUESDAY · 9:40 PM · THE ANCHOR",
+   "body": [
+    "Rudy’s transistor is on the shelf over the pass, turned low, tuned to a call-in show out of Los Angeles where grown men are still taking Monday night personally: Philadelphia, the bottom of the ninth, Jimmy Rollins and a double into the gap in right-center and two runs home, and the Dodgers down three games to one. Rudy flips a patty and listens to them go over it again as though it might come out different this time. He is grim about it at a low simmer, the way he is grim about the Hobart.",
+    "Tuesday is half-price chowder, and tonight it’s moving: a booth of harbor guys still in their boots, two nurses off a shift, and on the far stool Ray Ochoa with his meatloaf, who lifts his chin at Rudy through the pass and gets one back.",
+    "Jack is unloading a rack of bowls when Gloria comes down the counter with the pencil through her bun and sets a cup of coffee by the dish machine that he did not ask for.",
+    "“Some rich boy called about your Saturday.”",
+    {
+     "if": "e10_gloria==\"shouldnt\"",
+     "text": "She leans on the counter. “You told me it shouldn’t have worked. I liked that. Go see the ocean from the top for once, hon.”",
+     "else": "She leans on the counter. “You made Merle laugh. Go see the ocean from the top for once, hon.”"
+    },
+    "“He tell you what I gave him?”",
+    "“Baked Alaska.”",
+    "“He didn’t like it.”",
+    "“No.”",
+    "Gloria takes the pencil out of her bun and puts it back in. “He liked it.”",
+    "On the back of a dead ticket Jack does the arithmetic anyway: six hours at eight dollars, plus his cut of Saturday out of the Folgers can under the Hobart, which on a decent Saturday runs twenty-six in ones and quarters, comes to seventy-four dollars he isn’t going to have."
+   ],
+   "choices": [
+    {
+     "text": "“Thanks, Gloria.”",
+     "tag": "Sincerity",
+     "set": {
+      "e11_saturday": "thanks",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Thank Baked Alaska.” She picks up the pot. “Bring me back something I can’t eat.”"
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“Can I work Sunday night instead? I need the hours.”",
+     "tag": "Candor",
+     "set": {
+      "e11_saturday": "ask",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "She sees the ticket before he can turn it over, and reads it upside down, down to the total. “Hector needs them more,” she says. “Go.”",
+      "Ten minutes later a slice of lattice-top comes down the counter on a saucer to the dish station, sent by no one in particular. “Don’t make it a thing.”"
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“Rate him again. He’ll want a second opinion.”",
+     "tag": "Wit",
+     "set": {
+      "e11_saturday": "rate",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Baked Alaska’s my final offer.” She tops off the coffee he didn’t want. “You want to know what you are this week?”",
+      "“No.”",
+      "“Good,” Gloria says, and takes the pot down to the nurses."
+     ],
+     "goto": "s04"
+    }
+   ]
+  },
+  "s04": {
+   "slug": "WEDNESDAY · 1:00 PM · HOLLIS 302",
+   "duel": "exit",
+   "set": {
+    "resolve.lena": 5,
+    "duel.exit.lena": 1
+   },
+   "body": [
+    "The storm is a week gone and the sea window in Hollis 302 has been scrubbed to a hard, clean blue, with the kelp beds lying on it in dark rafts. Hale is in his chair before one o’clock. It is the third time this term, and the seminar has started to keep count: Caleb checks the time on his phone coming through the door and looks betrayed by it.",
+    "Behind Hale, on the whiteboard, in the barbed-wire capitals he uses for anything he means: EXIT · VOICE · LOYALTY (HIRSCHMAN, 1970). Under it, smaller: THE ANGLICANS ARE COMING.",
+    "“You’ll have seen the news,” Hale says. “Rome has lowered a lifeboat over the side of the Church of England, and it comes with its own deckchairs.” He turns his marker end over end. “They’re bringing the Prayer Book, I’m told. Cranmer’s English. The finest prose ever written by a man who was later burned for it.”",
+    "He looks at the window.",
+    "Then, briskly, Hirschman: when a firm or a church declines, its members can leave or stay and complain. “Loyalty is what makes them complain instead of leaving,” Hale says, “and also what makes them stay too long. Your papers are your mouths today.”",
+    "“Mr. Costigan — EXIT. *That a Man Must Leave What He Loves When It Isn’t True.* Miss Broussard — LOYALTY. *That He Must Stay and Make It Tell the Truth.*” Ten minutes a side. Mr. Noorzai and Mr. Hargrove are the floor, and the floor may heckle.",
+    {
+     "if": "e10_dawn==\"magdalena\"",
+     "text": "Lena is in the chair at the far end of the table, which has been her chair since Thursday."
+    },
+    "She goes first. She doesn’t stand; she never does. She opens her Bible at a ribbon that’s already there. “John six. They’ve just heard the hard saying, Professor, and they do what people do. *After this many of his disciples drew back and no longer went about with him. Jesus said to the twelve, ‘Will you also go away?’ Simon Peter answered him, ‘Lord, to whom shall we go? You have the words of eternal life.’*” She closes the book on her finger.",
+    "“Peter didn’t stay because he understood. He stayed because there was nowhere else to go. That’s not a weak reason, Professor. It’s the only one that’s ever held.”",
+    "Hale looks pleased, which is bad news for somebody. “Mr. Costigan. Leave something.”"
+   ],
+   "choices": [
+    {
+     "text": "“Ten thousand difficulties don’t make one doubt. Newman said that, and he still walked out of Oxford.”",
+     "tag": "Press",
+     "set": {
+      "duel.exit.rigor": "+1"
+     },
+     "response": [
+      "Jack makes his case to Hale, and past Hale to the window, where it’s safer. A man can carry ten thousand difficulties and stay; then one day it’s a doubt, and he goes. Littlemore, the twenty-fifth of September, 1843: Newman’s last sermon as an Anglican, “The Parting of Friends,” everyone he loved in the pews in tears. He said goodbye from the pulpit and walked out of the most beautiful thing in England because it wasn’t true.",
+      "Hale has his chin on his fist and is enjoying himself enormously.",
+      "“He didn’t leave a church, Costigan,” Lena says. “He left a mistake. The Church is where he went.”"
+     ],
+     "goto": "s04b"
+    },
+    {
+     "text": "“Newman’s toast: to Conscience first, and to the Pope afterwards.”",
+     "if": "trait.wit>=30",
+     "tag": "Riposte",
+     "set": {
+      "duel.exit.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "Jack gives Hale the toast, from the letter to the Duke of Norfolk: “*I shall drink to the Pope, if you please — still, to Conscience first, and to the Pope afterwards.*”",
+      "“Don’t you quote the toast at me, Costigan.” Lena points her pen at his back pocket. “Not with Benedict on your bookmark.”",
+      "“Selah,” says Caleb."
+     ],
+     "goto": "s04b"
+    },
+    {
+     "text": "“I’m not touching Peter. Peter’s the best thing in the book.”",
+     "tag": "Concede",
+     "set": {
+      "duel.exit.heart": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "Her pen stops in the middle of a word. Whatever she had ready for him, she sets it down.",
+      "“My sister Tess cried through her whole wedding Mass,” she says. “Ugly. Mascara. Beau holding the Kleenex for her at the altar. Mama said that’s how you know it’s real. You’re scared, and you stay.”"
+     ],
+     "goto": "s04b"
+    }
+   ]
+  },
+  "s04b": {
+   "slug": "WEDNESDAY · 1:22 PM · HOLLIS 302",
+   "duel": "exit",
+   "set": {
+    "duel.exit.lena": "+1"
+   },
+   "body": [
+    "Hale opens the floor.",
+    "Yusuf goes first, and there’s no joke in him today. “Three years ago a court in Kabul talked about killing a man for walking out the other door,” he says. “Abdul Rahman. He became a Christian. The whole world had to lean on them before they let him go, and he had to leave the country to keep his head.” He looks at Lena, not unkindly. “Loyalty with a rope on it has a different name. Hostage.”",
+    "Caleb has been waiting. He puts both hands flat on the oak. “I left,” he says, grinning, “and nobody built me a *structure*.” Hale looks at him half a second too long.",
+    "Then Hale turns to Jack, who for twenty minutes has made his case to the professor, the whiteboard and the blue square of the window, to everything in Hollis 302 but the one person he’s arguing with.",
+    "“Mr. Costigan,” Hale says, “she’s over there.”",
+    "Caleb laughs. Nobody else does.",
+    "Lena takes it from there, and she doesn’t look at him either. “Josiah Royce, *The Philosophy of Loyalty*, 1908. A Harvard Protestant, so y’all can trust him.” You are never loyal to a proposition, Royce says; you’re loyal to a person, a people, a cause with a face; and when you can’t find the face, to loyalty itself. She turns to the place without hunting for it. “Ruth. A Moabite widow with nothing to stay for. Her mother-in-law tells her go home. *Entreat me not to leave you or to return from following you; for where you go I will go, and where you lodge I will lodge; your people shall be my people, and your God my God.*” She leaves the book open. “She went to a country that hated her people, Professor, with an old woman who had nothing. You don’t do that for a syllogism.”"
+   ],
+   "choices": [
+    {
+     "text": "“Then take your own saint. Dorothy Day loved Forster Batterham and left him to be baptized.”",
+     "tag": "Press",
+     "set": {
+      "duel.exit.rigor": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "The cottage on Staten Island, the man who wouldn’t marry and wouldn’t believe, the baby; Dorothy Day had the baby baptized, and then herself, and Forster Batterham was the price.",
+      "Lena’s hand goes up to the medal at her collarbone and turns it once on its chain.",
+      "“She didn’t leave him,” she says. “She went *toward* something, and he wouldn’t come.”"
+     ],
+     "goto": "s04c"
+    },
+    {
+     "text": "“Ruth also lay down at a man’s feet on a threshing floor, Broussard. Let’s not make her the patron saint of staying put.”",
+     "if": "trait.wit>=30",
+     "tag": "Riposte",
+     "set": {
+      "duel.exit.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "Caleb whoops. Hale puts a hand over his eyes, delighted with both of them and not troubling to hide it.",
+      "Lena doesn’t blink. “She *uncovered his feet*, Costigan. Read it in the Hebrew before you blush in English.”"
+     ],
+     "goto": "s04c"
+    },
+    {
+     "text": "“Where you go I will go. I can’t argue with a vow.”",
+     "tag": "Concede",
+     "set": {
+      "duel.exit.heart": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“You could,” Lena says. “You just didn’t.”",
+      "She says it warm, in front of Hale and Yusuf and Caleb and God, and then squares her Bible to the edge of the table, as though the Bible had said it."
+     ],
+     "goto": "s04c"
+    },
+    {
+     "text": "“You’d stay on a sinking boat if the right man built it.”",
+     "tag": "Personal",
+     "cue": "Lena will remember that.",
+     "set": {
+      "duel.exit.rigor": "+1",
+      "duel.exit.lena": "+1",
+      "e11_exit_personal": true,
+      "rel.lena.trust": "-2",
+      "rel.lena.friction": "+2",
+      "rel.hale.friction": "+1",
+      "resolve.jack": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "In Hale’s seminar you told Lena she’d stay on a sinking boat if the right man built it.",
+     "response": [
+      "Hollis 302 goes quiet fast enough that Jack can hear the gulls working the cloister roof.",
+      "Lena puts her pen down. “Mr. Costigan,” she says, very politely, and nothing else.",
+      "Hale doesn’t raise his voice. “A point taken off the person and not the argument goes to the other side.”",
+      "Caleb’s grin goes. Yusuf studies his bridge. The boat sits on the oak where Jack put it, and the only other person at the table who knows whose it is has turned to a clean page."
+     ],
+     "goto": "s04c"
+    }
+   ]
+  },
+  "s04c": {
+   "slug": "WEDNESDAY · 1:38 PM · HOLLIS 302",
+   "duel": "exit",
+   "set": {
+    "duel.exit.lena": "+1"
+   },
+   "body": [
+    "Her third move is the quiet one.",
+    "“Thomas,” Lena says. “The *Secunda Secundae*, question a hundred and one. Piety. What we owe the ones who made us, our parents and our country, that we can’t pay back if we live to be ninety. You don’t walk out on a debt like that because the people you owe got old and difficult.” She looks up at the board, at the middle word. “And Hirschman’s *voice*, Professor. You don’t get to leave a thing because it disappoints you. You leave it when it lies to you. Until then you stay, and you make it tell the truth.”",
+    {
+     "if": "e11_exit_personal",
+     "text": "She says all of it to Hale. Not a word of it comes down the table to Jack."
+    },
+    "Hale uncaps his marker. “Mr. Costigan. Last word.”"
+   ],
+   "choices": [
+    {
+     "text": "“And when it lies? Newman decided it had. He didn’t stay to fix Oxford. He went down the hill to Littlemore and knelt.”",
+     "tag": "Press",
+     "set": {
+      "duel.exit.rigor": "+1"
+     },
+     "response": [
+      "“For two years,” Lena says. “On his knees at Littlemore, before he was sure. They received him on the ninth of October, 1845.” She caps her pen. “Give me two years on my knees, Costigan, and I’ll let you leave anything you want.”"
+     ],
+     "goto": "s04v"
+    },
+    {
+     "text": "“Sometimes it isn’t the thing that’s lying. It’s you, staying.”",
+     "if": "trait.candor>=45",
+     "tag": "Candor",
+     "set": {
+      "duel.exit.rigor": "+1",
+      "duel.exit.heart": "+1",
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "He has stopped arguing with the window. Yusuf stops writing. Caleb brings his chair down onto all four legs.",
+      "Lena looks at him, at him and not away, down the length of the oak, and when she answers she answers him. “That’s not an argument for leaving, Costigan. That’s a confession.”",
+      "What it was a confession of, she doesn’t say. He doesn’t ask."
+     ],
+     "goto": "s04v"
+    },
+    {
+     "text": "“Then I’d want to be the one who stays and makes it tell the truth.”",
+     "tag": "Concede",
+     "set": {
+      "duel.exit.heart": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "Lena considers him over the top of her Bible.",
+      "“You’d be good at it,” she says. “You never let anything lie.”"
+     ],
+     "goto": "s04v"
+    },
+    {
+     "text": "“That was cheap. The boat. I’m sorry.”",
+     "if": "e11_exit_personal",
+     "tag": "Apologize",
+     "set": {
+      "duel.exit.heart": "+1",
+      "e11_exit_apology": true,
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+2"
+     },
+     "response": [
+      "Lena writes something at the top of her page and underlines it.",
+      "“Noted, Mr. Costigan.”",
+      "Then she looks at him, for the first time since the boat."
+     ],
+     "goto": "s04v"
+    }
+   ]
+  },
+  "s04v": {
+   "slug": "WEDNESDAY · 1:52 PM · HOLLIS 302",
+   "duel": "exit",
+   "body": [
+    {
+     "if": "e11_exit_personal && !e11_exit_apology",
+     "text": "“Miss Broussard,” Hale says, “by forfeit.” He reaches for the cap of his marker. By the time it clicks on, Lena’s Bible is in her tote and her chair is pushed in square to the table and the cloister door is easing shut on its closer. Four–two."
+    },
+    {
+     "if": "e11_exit_personal && e11_exit_apology",
+     "text": "“Miss Broussard, by forfeit,” Hale says. “An apology is a lovely thing, Mr. Costigan. It isn’t a point.” Four–two. Lena packs up when the rest of them pack up, not before, and waits her turn at the door behind Yusuf like anybody."
+    },
+    {
+     "if": "!e11_exit_personal && duel.exit.heart>=2",
+     "text": "Hale drops his marker on the roster. “A draw,” he says, the way another man might say *the clap*. “I loathe a draw.” And Lena, quietly, to the table: “Then we’d both stay.” Jack hears it. He leaves it where it fell, and so does she. Four–one, and a draw."
+    },
+    {
+     "if": "!e11_exit_personal && duel.exit.heart<=1 && duel.exit.rigor>=3",
+     "text": "Hale sits back. “Mr. Costigan argued for leaving like a man who’s never been allowed to.” Five–one. Lena caps her pen and looks down the oak at Jack, formal as a handshake. “It’s a good argument,” she says. “I hope you never use it.”"
+    },
+    {
+     "if": "!e11_exit_personal && duel.exit.heart<=1 && duel.exit.rigor<=2 && duel.exit.wit>=2",
+     "text": "Hale regards the pair of them. “Bollocks, but well-dressed bollocks. No decision.” It stays four–one. Caleb writes *well-dressed bollocks* on a Post-it and sticks it inside the cover of his *Consolations*. Lena studies the ceiling, and Jack the window."
+    },
+    {
+     "if": "!e11_exit_personal && duel.exit.heart<=1 && duel.exit.rigor<=2 && duel.exit.wit<=1",
+     "text": "“Miss Broussard,” Hale says. “On Peter. Nowhere else to go has always been a perfectly respectable reason to stay.” Four–two. She takes it without looking at Jack, which is how she has taken everything this week."
+    },
+    "The seminar runs on to half past without the duel in it: Hirschman, the Anglicans, Yusuf on load-bearing walls. When it breaks there are bags and chairs, and on the way out Caleb, last as always, wipes THE ANGLICANS ARE COMING off the whiteboard with the sleeve of his hoodie and leaves EXIT · VOICE · LOYALTY for the two-thirty to wonder about."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "e11_exit_personal && !e11_exit_apology",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: hers, by forfeit. I said the boat. Four–two."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "e11_exit_personal && e11_exit_apology",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: hers, by forfeit. I said the boat, and took it back. Still forfeit. Four–two."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e11_exit_personal && duel.exit.heart>=2",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: a draw. Hale loathes a draw. She said: Then we’d both stay. Four–one and a draw."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e11_exit_personal && duel.exit.heart<=1 && duel.exit.rigor>=3",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e11_exit_personal && duel.exit.heart<=1 && duel.exit.rigor<=2 && duel.exit.wit>=2",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: no decision. Well-dressed, Hale says. Still four–one."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e11_exit_personal && duel.exit.heart<=1 && duel.exit.rigor<=2 && duel.exit.wit<=1",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: hers, on Peter. Four–two."
+    }
+   ],
+   "next": "s04x"
+  },
+  "s04x": {
+   "slug": "WEDNESDAY · 2:31 PM · HOLLIS HALL, THE THIRD-FLOOR CORRIDOR",
+   "body": [
+    "At the end of the third-floor corridor there’s a tall window with the sea in it, set in the plaster like a painting nobody meant to hang. Jack is standing at it for no good reason when Hale comes out of 302 with his satchel, and stops beside him, and looks at the water too, his hands in the pockets of the linen jacket.",
+    "“When you leave something, Mr. Costigan, look at it. Newman did. It’s the only decent thing about leaving.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Did you?”",
+     "tag": "Candor",
+     "set": {
+      "e11_hale": "did",
+      "rel.hale.warmth": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Hale smiles at the sea, the full devastating smile, wasted on it. “I’ve never left anything in my life, Mr. Costigan. I’ve been thrown out of several.”",
+      "He goes."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“Yes, sir.”",
+     "tag": "Control",
+     "set": {
+      "e11_hale": "sir",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Hale nods once and is already moving off down the corridor. “And I still want my Williams back,” he says over his shoulder. “With your margins in it. Don’t imagine I’ve forgotten.”"
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“I gave the window my best stuff.”",
+     "tag": "Wit",
+     "set": {
+      "e11_hale": "window",
+      "rel.hale.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“The window was unmoved, Mr. Costigan.” Hale hitches the satchel up his shoulder. “They generally are.”"
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s05": {
+   "slug": "THURSDAY · 12:10 PM · ST. BRENDAN’S",
+   "set": {
+    "resolve.jack": "+1",
+    "soul.grace": "+1"
+   },
+   "body": [
+    "The noon sun comes through the blue glass and lies along the pews in long cold panes, so the thirty people at the 12:10 sit in it like the anemones in Becca’s tank.",
+    "Becca is halfway up on the left with her Carhartt vest on the pew beside her, holding a place. When Jack comes up the side aisle she lifts it off.",
+    {
+     "if": "e10_noon==\"fishbowl\"",
+     "text": "“You came!” she whispers, like he’s brought her something.",
+     "else": "“Hi,” she whispers, and moves the vest."
+    },
+    "Her grandmother’s rosary is wound twice around her wrist, the beads worn smooth as creek stones. Up in the front pew, beside Mrs. Fitch, is the back of Lena’s head, her hair up with a pencil through it. Jack looks at the crucifix.",
+    "The Gospel is Luke, and it isn’t gentle. *I came to cast fire upon the earth.* Not peace but division: a house of five split three against two, father against son and son against father, mother against daughter. Fr. Osei leans on the ambo to take the weight off the bad leg and preaches one sentence on it.",
+    "“He did not come to keep the peace in our houses. He came to keep the peace in us, and sometimes the house pays for it.”",
+    "He sits, and the quiet is the rest of the homily.",
+    "After the dismissal Lena lights a candle at the Marian shrine and goes out the side door. At the main door Mrs. Fitch is writing on the parish calendar in her round convent hand.",
+    {
+     "type": "doc",
+     "title": "St. Brendan’s · the calendar by the door",
+     "text": "SAT 24 OCT\n7:00 AM — BLESSING — TRAN VAN (Anacapa lot) — Fr. O.\n3:30 PM — CONFESSIONS\n5:00 PM — VIGIL MASS"
+    },
+    "“Miss Broussard asked Father on Tuesday,” Mrs. Fitch tells them both, capping her pen. “For the *road*.” She says it like a road is a brand-new and touching idea.",
+    "Outside, under the olive tree, Becca shades her eyes against the sun and waits for him to get to whatever he’s working up to."
+   ],
+   "choices": [
+    {
+     "text": "“Come with us Saturday. Big Sur.”",
+     "tag": "Sincerity",
+     "cue": "Becca will remember that.",
+     "set": {
+      "e11_becca_invite": "ask",
+      "rel.becca.warmth": "+1",
+      "rel.becca.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "You asked Becca to come to Big Sur. She couldn’t: Thomas needs her.",
+     "response": [
+      "She lights up, and then, just as fast, she’s sorry. “Jack. I *can’t*. Ugh.”",
+      "The Marine Lab’s weekend volunteer has the swine flu and the tech is at a conference in Monterey, so it’s her on the touch tank Saturday and Sunday mornings both: the feeding, the salinity, the pump that sticks. She counts it off on her fingers like chores before school.",
+      "“Thomas needs me.” She points at Jack. “Don’t tell him I said that. He’ll get a big head.”"
+     ],
+     "goto": "s05b"
+    },
+    {
+     "text": "“We’re going to Big Sur Saturday. Theo’s thing. Lena, Laney, everybody.”",
+     "tag": "Candor",
+     "set": {
+      "e11_becca_invite": "told",
+      "soul.honesty": "+1",
+      "rel.becca.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "You told Becca about Big Sur — Lena, Laney, everybody.",
+     "response": [
+      "“Oh, that’s *wonderful*. I’d —” and then she remembers, and her face falls. The weekend volunteer at the Marine Lab has the swine flu, and the tech’s at a conference in Monterey, so she’s on the touch tank Saturday morning and Sunday morning both.",
+      "“But I’m glad you told me.” She squints up at him in the sun, and there’s nothing in it but that. “You tell me things. I like that about you.”"
+     ],
+     "goto": "s05b"
+    },
+    {
+     "text": "Say nothing. Let it be Theo’s trip.",
+     "tag": "Control",
+     "set": {
+      "e11_becca_invite": "quiet",
+      "soul.honesty": "-1",
+      "rel.becca.trust": "-1",
+      "trait.control": "+1"
+     },
+     "key": "You didn’t tell Becca about Big Sur. Mrs. Fitch did.",
+     "response": [
+      "He lets it be Theo’s trip. It makes no difference; Becca read the calendar. “Father’s blessing your *van*!” She’s cheerful about all of it; she’d be so jealous, she says, except she’s on the touch tank all weekend — the volunteer’s got the swine flu, the tech’s in Monterey — so there’s nothing left over to be jealous with.",
+      "That settles it, for her."
+     ],
+     "goto": "s05b"
+    }
+   ]
+  },
+  "s05b": {
+   "slug": "THURSDAY · 12:34 PM · ST. BRENDAN’S COURTYARD",
+   "body": [
+    "She has turned to go when she remembers, and comes back, and takes hold of his sleeve.",
+    "“Bring me a fruitcake. The monks make one. Grandma Agnes orders it every Christmas — she says it’s the only honest fruitcake in America.”",
+    "“An honest fruitcake,” Jack says.",
+    "“That’s what she says. She says the rest of them lie about what’s in them.”",
+    {
+     "if": "e10_homework==\"not\"",
+     "text": "She lets go of the sleeve. “You said I’m not homework. So I’m not asking about the list.” She smiles up at him, the sunburn bright along the part in her hair. “I’m *not* asking.”"
+    },
+    "Then she’s off across the courtyard toward Portolá at her ranch walk, the clipboard swinging, and halfway to the gate she turns and walks backward a few steps to wave, because she always does, and she never trips."
+   ],
+   "next": "s06"
+  },
+  "s06": {
+   "slug": "THURSDAY · 4:00 PM · HOLLIS 108",
+   "body": [
+    "Hollis 108 is half underground, its windows at ankle height, so section happens to a frieze of passing shoes. Evan Marsh comes in at four with his bike helmet still on and the midterms in a rubber-banded brick, and walks the table setting each one, turned over, at each person’s elbow, as though a grade were a private matter between two people.",
+    "Jack turns his over.",
+    {
+     "if": "e10_exam==\"defend\"",
+     "type": "doc",
+     "title": "PHIL 1 MIDTERM — COSTIGAN, J.",
+     "text": "A–. Defended, not broken. —E.M.\n\nHe wrote it as though it were true. Irritating. —A.H."
+    },
+    {
+     "if": "e10_exam==\"break\"",
+     "type": "doc",
+     "title": "PHIL 1 MIDTERM — COSTIGAN, J.",
+     "text": "A. Broken honestly. —E.M.\n\nHe broke it as though it hurt. Good. —A.H."
+    },
+    {
+     "if": "e10_exam!=\"defend\" && e10_exam!=\"break\"",
+     "type": "doc",
+     "title": "PHIL 1 MIDTERM — COSTIGAN, J.",
+     "text": "B+. Fast. —E.M."
+    },
+    {
+     "if": "e10_exam==\"defend\" || e10_exam==\"break\"",
+     "text": "The second line is in fountain pen, in a hand Jack has had on a postcard since he was seventeen."
+    },
+    "Then Evan takes the helmet off and opens a paperback read soft: ten minutes on something that isn’t on the syllabus. Kierkegaard, *Works of Love*. The chapter on the work of love in recollecting one who is dead.",
+    "He reads it aloud in the flat Duluth voice, and the gist of the first paragraph would fit in a blue book: the dead can’t pay you back. Not a word, not a look, not a thank-you. So if you want to know what your love is made of, watch how you love someone who can’t return any of it. It’s the freest love there is, Kierkegaard says, and the most faithful, because nothing holds it in place but you.",
+    "He starts the second paragraph. Partway through the first sentence his voice goes.",
+    "It doesn’t break. It stops, mid-word, and doesn’t come back. Evan stands with the book open in his hand and his eyes on the page, and the shoes go by in the windows, and nobody in Hollis 108 so much as shifts a chair. At 4:31 he closes the book and nods at the door. He doesn’t say why.",
+    "Lena hasn’t moved since he began, her hands flat on either side of her blue book, and at the nod she’s the first one out, before the chairs have finished scraping. Jack is watching Evan, who stands with the closed book against his chest. When he looks for her she’s in the ankle-height window: the Keds, going up the outside steps fast."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "evan",
+     "title": "Evan Marsh (TA)",
+     "text": "Thursday section, Hollis 108. Kierkegaard. Kind to the scared ones, murder on the lazy ones. Smokes American Spirits. Rides a bike. Came back from PERSONAL grayer. Told us we’d left out a driver. Says Kierkegaard was engaged once, gave back the ring, and wrote about her for the rest of his life. Gave back the midterms, then read us Kierkegaard on recollecting the dead — the freest love, because they can’t pay you back. Couldn’t finish the paragraph. Let us out at 4:31."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Wait until the room’s empty.",
+     "tag": "Sincerity",
+     "set": {
+      "e11_evan": "wait",
+      "rel.evan.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He takes his time with his bag. When it’s just the two of them Evan still hasn’t looked up from the table.",
+      "“Go on, Mr. Costigan,” he says, Minnesota-flat. “It’s a nice day for it.”",
+      "The Anchor is seven to one, Thursday, and the Hobart doesn’t care what anybody read aloud."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "Go.",
+     "tag": "Control",
+     "set": {
+      "e11_evan": "go",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He goes up the steps into the light. By the top she’s gone — the Commons, the Grove, wherever she goes.",
+      "The Anchor is seven to one, Thursday, and the Hobart doesn’t care what anybody read aloud."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“Thanks for the A–.”",
+     "tag": "Wit",
+     "set": {
+      "e11_evan": "thanks",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Evan looks up from the table as though from a long way down. “Don’t thank me for the minus, Mr. Costigan,” he says. “It’s the only honest part.”",
+      "The Anchor is seven to one, Thursday, and the Hobart doesn’t care what anybody read aloud."
+     ],
+     "goto": "s07"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,601 @@
+{
+ "scenes": {
+  "s07": {
+   "slug": "SATURDAY · 6:58 AM · THE ANACAPA LOT",
+   "set": {
+    "resolve.lena": 6
+   },
+   "body": [
+    "The marine layer is down on the Lagoon, low enough to take the tops off the eucalyptus, and at two minutes to seven the Anacapa lot is a gray room with the streetlights still on in it. Kevin’s mother’s Odyssey sits under the one sodium lamp with all five doors open, 5–0 on the back glass, the La Vang rosary hanging dead still from the mirror. Kevin has been here since six. He has vacuumed a minivan in the dark.",
+    "Priya got here first, in her Fremont High hoodie with a clipboard against her chest, checking them off as they come out of the fog.",
+    {
+     "type": "doc",
+     "title": "Laminated",
+     "text": "OVERNIGHT TRIPS · SIGN OUT WITH YOUR RA · DESTINATION · EMERGENCY CONTACT · BACK BY SUNDAY 10 PM · —P. RAMAN, RA (401)"
+    },
+    {
+     "if": "e10_priya==\"never\"",
+     "text": "Jack writes BIG SUR and his mother’s number, and Priya initials it. Then she looks up and says it low, to him, as if he were the only one she’s telling: “Big Sur has a lot of points. Stay off all of them after dark.” It isn’t a joke. She moves on to Laney.",
+     "else": "Jack writes BIG SUR and his mother’s number, and Priya initials it and tells all of them, not as a joke, “Big Sur has a lot of points. Stay off all of them after dark.”"
+    },
+    "Laney has two Louis Vuitton duffels for one night. When Kevin asks about the second she says, “Shoes. It’s just shoes. I’m not an *animal*, Kevin.” Kevin hands out cards.",
+    {
+     "type": "doc",
+     "title": "Kevin’s card (laminated)",
+     "text": "TRAN FAMILY ODYSSEY — BIG SUR\n7:00 DEPART\n9:00 CAMBRIA (COFFEE, BATHROOMS)\n11:00 GORDA (GAS)\n1:00 BIXBY (TURN AROUND)\nSPEED: 55 ON HWY 1. NOT 56.\nNO FEET ON DASH (LANEY)"
+    },
+    "Laney reads hers to the bottom. “I feel *targeted*.” “You were targeted,” Kevin says.",
+    "Margot, at the hatch in a black peacoat with a steel thermos and the Moleskine, announces to nobody in particular, “I’m here for the monks. A functioning patriarchy in its natural habitat.”",
+    "Lena is at the front fender with Fr. Osei, who came across from St. Brendan’s at seven on the dot in rubber boots and a white stole, a bottle of holy water in his fist, because she asked him after Tuesday’s 12:10. She’s in jeans and the Justins and the oatmeal cardigan, O’Connor in one pocket and the Altoids tin in the other, telling him something with both hands, and he laughs from the belly at it. They’re waiting on Theo.",
+    "Theo arrives at 7:14, on foot, in cream cashmere, the gray camera bag on his shoulder and a Borders bag in his hand. His letterhead said 0700. Kevin looks at his watch and at his card, which says 7:00 DEPART, and says nothing, at length. Laney looks past Theo at the empty lot. “Where’s the *car*?”",
+    "“It’s a two-seater,” Theo says. “I’m not choosing.” He hands round the rest of his used Bantams, one apiece. Margot doesn’t open hers. “I’ve read it. He cries in a cabin for two hundred pages.” “Spoilers,” Theo says.",
+    "Then Fr. Osei uncaps the bottle. He shakes holy water across the hood in three long arcs and in at the open doors onto Kevin’s vacuuming, and last he lays his palm flat on the fender over the front wheel, where the engine is warm, and keeps it there through the prayer the way he’d hold a wrist. Theo has drifted to the far side of the next parking space with his hands in his pockets.",
+    "Osei caps the bottle. “I blessed a crab two weeks ago,” he tells Kevin. “A Honda is no trouble.” “It’s a *Honda*, Father,” Kevin says. “It’s already pretty blessed.”",
+    "In the way-back, on the seat next to Lena’s thermos, somebody has stuck a Post-it in Laney’s pink: RESERVED, with a heart. Laney is studying the sky with great interest. Kevin is in the driver’s seat adjusting a mirror that doesn’t need it. “I’m the driver,” Kevin says. “I’m Switzerland. Switzerland has a *seating policy*.” He doesn’t say what it is."
+   ],
+   "choices": [
+    {
+     "text": "Shotgun, with Kevin and the map.",
+     "tag": "Control",
+     "set": {
+      "e11_seat": "shotgun",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "You took shotgun.",
+     "response": [
+      "He takes the front seat and the Triple-A map of the Central Coast off the dash, folded wrong, and Kevin hands him the card too, in case. From the way-back, behind him, Lena: “Navigator. Good. You’ve got the face for it.”",
+      "Laney peels the Post-it off the empty seat and, as Theo ducks past her into the way-back, sticks it to the middle of his forehead. Theo sits down beside Lena, RESERVED, and leaves it there."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "The seat with the Post-it.",
+     "tag": "Reckless",
+     "set": {
+      "e11_seat": "reserved",
+      "rel.lena.heat": "+1",
+      "e11_heat": "+1",
+      "soul.restraint": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "You took the seat Laney reserved beside Lena.",
+     "response": [
+      "He climbs over the middle row into the way-back. Laney turns round in her seat, all sweetness: “Oh, is that *taken*?”",
+      "In front, Theo has the iPhone out with his thumbs going, and a second later Laney’s BlackBerry buzzes in her lap. She doesn’t look at it. She just smiles. Lena moves the cooler down onto the floor on her side so his knees fit."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "The middle row, between Margot and Laney.",
+     "tag": "Wit",
+     "set": {
+      "e11_seat": "middle",
+      "rel.laney.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "You took the middle row, between Margot and Laney.",
+     "response": [
+      "He takes the jump seat in the middle row, Margot’s elbow on one side and Laney’s pearls on the other.",
+      {
+       "if": "e10_kaylee==\"stay\"",
+       "text": "Before Kevin has them on the 101, Laney has put her head on his shoulder without asking, settling in like somebody back at her usual table, and she’s asleep by the merge and stays asleep to Cambria, the pearls going up and down.",
+       "else": "Before Kevin has them on the 101, Laney has put her head on his shoulder, and she’s asleep by the merge and stays asleep to Cambria, the pearls going up and down."
+      },
+      "Behind him, Lena has the way-back to herself: the cooler, the blanket, O’Connor."
+     ],
+     "goto": "s08"
+    }
+   ]
+  },
+  "s08": {
+   "slug": "SATURDAY · 9:40 AM · HIGHWAY 1, NORTH OF CAMBRIA",
+   "music": "Jay Farrar & Benjamin Gibbard — “One Fast Move or I’m Gone”",
+   "body": [
+    "North of Cambria the pines thin out and the hills go blond and bare down to the edge, and then the edge is the Pacific, laid out to the left of the van as far as there is, with the sun on it so bright it hurts to look left. The CD is Theo’s, burned, the disc Sharpied BIG SUR — REQUIRED LISTENING, and on it two men are singing lines out of the book over a slow guitar, which Theo says is the genius of it and Margot says is the problem.",
+    "Kevin is doing fifty-five. A Winnebago with Alberta plates has been on his bumper since Harmony, and Kevin signals into every turnout to let it by, and it never goes by, because, as Kevin explains, he is doing the speed limit, and the Winnebago is free to make its own choices.",
+    "Laney has been awake since the coffee stop and a large mocha. She leans forward, takes Kevin’s card off the dash, rolls it into a microphone and addresses the van. “And our next contestant,” she says, “is the Pacific Ocean. She hails from everywhere. Her talent is *being enormous*.”",
+    "Margot uncaps her pen. “For the *Tide*,” she says. “A follow-up. The carillon. I’m establishing everyone’s whereabouts at five a.m. Thursday.” She goes round the van in order. Theo, without turning: “Asleep.” “You’ve never been asleep in your life.” Laney: “I was in *exile*.” Kevin: “Asleep. Like a normal person.”",
+    {
+     "if": "e10_suspects==\"baptists\"",
+     "text": "“Costigan suggested Baptists,” Margot says. “I’ve noted it.”"
+    },
+    {
+     "if": "e10_seen_running",
+     "text": "“The officer’s log says one of them was laughing.” She looks at nobody."
+    },
+    {
+     "if": "e10_play==\"low\"",
+     "text": "“Also, the bass came in late twice. Then it was fine.” She was up. Margot is always up; 305 hears everything."
+    },
+    "The pen arrives at the last two. “Costigan. Broussard.”"
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "ferrer",
+     "title": "The Ferrer Tower",
+     "if": "e10_seen_running && e10_play==\"low\"",
+     "text": "A hundred and sixty steps. VIVOS VOCO · MORTUOS PLANGO · FULGURA FRANGO, around the biggest bell. I call the living, I mourn the dead, I break the lightning. One bell is flat. She says it isn’t. Thursday at five in the morning we played the Saints on it. Half of Anacapa turned its lights on. Nobody knows who. Margot’s following up for the *Tide*, from a minivan: the police log says one of them was laughing; the bass came in late twice. Nobody confessed."
+    },
+    {
+     "kind": "note",
+     "id": "ferrer",
+     "title": "The Ferrer Tower",
+     "if": "!e10_seen_running || e10_play!=\"low\"",
+     "text": "A hundred and sixty steps. VIVOS VOCO · MORTUOS PLANGO · FULGURA FRANGO, around the biggest bell. I call the living, I mourn the dead, I break the lightning. One bell is flat. She says it isn’t. Thursday at five in the morning we played the Saints on it. Half of Anacapa turned its lights on. Nobody knows who. Margot’s following up for the *Tide*, from a minivan. Nobody confessed."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“The library.”",
+     "tag": "Alibi",
+     "set": {
+      "e11_alibi": "library",
+      "rel.lena.warmth": "+1",
+      "soul.honesty": "-1"
+     },
+     "response": [
+      "“The library,” Jack says, and Lena says it with him, at the same instant, in the same key: “The library.”",
+      "It’s out of both of them before either can stop it, and then they’re laughing, the two of them, hopelessly, for the first time all week. Laney turns round in her seat to look from one to the other. Margot holds the pen over the page, and writes nothing."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "“Ask the Holy Ghost.”",
+     "tag": "Wit",
+     "set": {
+      "e11_alibi": "ghost",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Laney’s whiteboard already did,” Margot says. “He declined to comment.” Lena laughs and loses O’Connor into the footwell."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "Say nothing.",
+     "tag": "Control",
+     "set": {
+      "e11_alibi": "quiet",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Lena says “The library” by herself, and then nothing else, into the gap where his answer was supposed to go. Margot looks at Jack for a mile of coastline, and writes nothing."
+     ],
+     "goto": "s08b"
+    }
+   ]
+  },
+  "s08b": {
+   "slug": "SATURDAY · 10:05 AM · HIGHWAY 1, SAN SIMEON",
+   "body": [
+    "Past San Simeon the road comes down nearly to the beach and runs along it, and the van fills up with Lena reading.",
+    "She has *The Habit of Being* open on her knees, Flannery O’Connor’s letters with the cover gone soft, and she has found the peacocks. O’Connor kept them on the farm in Georgia and wrote her friends about them the way other people write about in-laws: the cock who screamed all night, the hens in her mother’s flowers, her mother’s views, and O’Connor’s answer to every complaint, which was to order more birds. Lena does it in a Georgia accent that keeps sliding back toward the river. Three letters in, she can’t go on. She laughs until she has to shut the book on her thumb and wipe her eyes on the cardigan cuff, and Kevin laughs because she is.",
+    "In the middle row Laney isn’t laughing. Laney is listening with her head on one side and her eyes narrowed, committing it to memory for somebody.",
+    "Theo takes the silence as an opening. “Picture it. 1960. A Catholic boy from Lowell — altar boy, football scholarship, lives with his mother — writes the most famous book in America and can’t survive it. He drinks his way to a borrowed cabin in a canyon we’ll be standing over by lunch and has the most spectacular crack-up in American letters. The ocean won’t shut up. The cat dies. It’s *The Lost Weekend* with redwoods.”",
+    "Jack’s copy has been in his back pocket since Tuesday, the Benedict holy card for a bookmark, and his pencil has been fighting it since page nine. Beside a paragraph on page forty where the narrator explains at length why it’s fine, he has written: *Go to confession, Jack.*",
+    {
+     "if": "e11_seat==\"shotgun\"",
+     "text": "Kevin asks what he’s writing over there, and Jack reads it out, and from the way-back Lena answers."
+    },
+    {
+     "if": "e11_seat==\"reserved\"",
+     "text": "Lena reads it over his arm."
+    },
+    {
+     "if": "e11_seat==\"middle\"",
+     "text": "Lena reads it over the back of the jump seat."
+    },
+    "“Two Catholic boys named Jack, and neither one of you can sit still.”",
+    "“He was a genius,” Theo says. “He was a mama’s boy with a typewriter,” Lena says, warmly. “I’d have fed him and hidden his car keys.”",
+    "Then the tin, the red-and-white Altoids one with RELIQUARY on the lid, rattling no differently than it did a week ago.",
+    {
+     "if": "e11_seat==\"shotgun\"",
+     "text": "She reaches it forward from the way-back, past Margot’s shoulder, and shakes it beside his ear."
+    },
+    {
+     "if": "e11_seat==\"reserved\"",
+     "text": "She shakes it once against his knee."
+    },
+    {
+     "if": "e11_seat==\"middle\"",
+     "text": "She leans over the jump seat and shakes it beside his ear."
+    },
+    {
+     "if": "e10_cig",
+     "text": "“You haven’t given me one since the bells.”",
+     "else": "“You haven’t given me one since the roof.”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“I’m quitting.”",
+     "tag": "Sincerity",
+     "set": {
+      "e11_tin": "quitting",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Liar,” Lena says, fond, and puts the tin away.",
+      "Laney swings round in the middle row. “Y’all have *pet names*.”"
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "“Saving them for an occasion.”",
+     "tag": "Wit",
+     "set": {
+      "e11_tin": "occasion",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“What occasion?”",
+      "“I’ll know it when I see it.”",
+      "She considers that, and him, and turns a page."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "“I know.”",
+     "tag": "Candor",
+     "set": {
+      "e11_tin": "know",
+      "rel.lena.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "She puts the tin back in her pocket and lets it sit, past the elephant seals on the beach at Piedras Blancas, past the lighthouse, past anything anybody says, to Ragged Point."
+     ],
+     "goto": "s09"
+    }
+   ]
+  },
+  "s09": {
+   "slug": "SATURDAY · 10:40 AM · HIGHWAY 1, RAGGED POINT TO GORDA",
+   "body": [
+    "At Ragged Point the road quits running beside the mountains and goes out onto the face of one: a shelf cut into the Santa Lucias, the hill on the right and nothing on the left but air and, a long way below the air, the water going white around the rocks. Last week’s storm is still on the shoulder, red mud fanned across the lane, an oak limb dragged to the edge, a slope sheared raw. A flagger in an orange vest and a straw cowboy hat turns her paddle to STOP, and they sit six minutes with the engine ticking and the Winnebago, at last, directly behind them.",
+    "Somewhere past the flagger the last bar goes. It goes van-wide, one phone after another: Laney’s pink BlackBerry, Kevin’s Bold, Theo’s iPhone, which he holds up to the window as if to show it the view, the RAZR on Jack’s knee. Lena’s LG goes last. She looks at it once and puts it in the cardigan pocket with the tin.",
+    "Over Salmon Creek, Laney sees a condor. Everybody sees it: black, enormous, rocking on the wind over the canyon mouth, and the whole van leans toward that window. Margot doesn’t look up from her thermos. “That’s a turkey vulture. Condors have numbers on their wings.”",
+    "Ten minutes on, Kevin sees one, and he’s sure, and slows to fifty, and Theo applauds. “Turkey vulture,” Margot says. “You didn’t even *look*.” “No number.”",
+    "Gorda is a gas station and a store on a ledge of the mountain with the Pacific for a front yard. “This is the most expensive gas in America,” Margot says, reading the pump. Theo’s card is in before anyone finds a wallet. “I don’t do math on sin.” Kevin, who planned Gorda for eleven, pulls in at eleven and is quietly fulfilled.",
+    "While Kevin pumps, Laney reaches over, takes the RAZR off Jack’s knee and flips it open. His last text is still on the screen from before the holy water.",
+    {
+     "type": "sms",
+     "from": "Becca",
+     "text": "fed thomas!! have fun!! see a condor for me",
+     "time": "6:12 AM"
+    },
+    "“Is she *tagging* you?” Laney holds it up for the van. “She’s tagging you, sugar. Like a *bird*.”",
+    "“Laney,” Lena says. “Be nice.” It isn’t a joke, and Laney shuts the phone and hands it back to him without one of her own.",
+    "There is one bar of signal in Gorda, and it lives next to the ice machine, and Theo has found it. He’s pressed against the machine, on with the party planner in Los Angeles about Halloween. “No — the *staircase* is the centerpiece, the staircase is the entire — hello? Hello.” He looks at the phone like it has sold a story about him to the trades, and holds it higher.",
+    "North of Gorda, at a place called Lucia, a sign says NEW CAMALDOLI HERMITAGE, and beside it a road goes up the mountain like it means it, straight up into the scrub and gone. Jack has a fruitcake to buy up there, for a grandmother in Idaho he’s never met, who says it’s the only honest one in America.",
+    "Lena has her face to the window. “Vespers on the way back,” she says. “Promise me, Theodore.”",
+    "“I promise,” Theo says, at once. Since Cambria he has promised Kevin Bixby by one, Laney a mirror with good light at Nepenthe, and Margot a monk who will say something quotable and sexist."
+   ],
+   "next": "s10"
+  },
+  "s10": {
+   "slug": "SATURDAY · 12:40 PM · BIXBY BRIDGE",
+   "body": [
+    "At Bixby the wind comes up out of the canyon and takes Laney’s sunglasses off her head and very nearly over the side. The bridge is a single arch of 1932 concrete gone the color of old bone, one leap from cliff to cliff, and under it, a long way under, the creek comes out of the redwood dark of the canyon and spreads itself thin over a fan of gravel into the sea. That’s the canyon from the required reading. From up here it gives nothing away.",
+    "Kevin parks in the north turnout twenty minutes ahead of his card and checks the tires with a gauge from the glovebox. Margot reads the plaque. Laney takes nine pictures of herself with the bridge. Lena goes straight to the rail and stands at it with her hands flat on the concrete and the wind in the cardigan.",
+    "Theo has the camera out of the gray bag. He films all of it, the arch and the canyon and the girls at the rail with their hair going sideways, and he does it from the back of the turnout, with the van at his back."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "theo",
+     "title": "Theo Vance",
+     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six copies of Kerouac from a dying Borders."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Stand at the rail beside her.",
+     "tag": "Go",
+     "set": {
+      "e11_bixby": "rail",
+      "rel.lena.heat": "+1",
+      "e11_heat": "+1",
+      "soul.restraint": "-1"
+     },
+     "response": [
+      "He goes and stands at the rail beside her. The concrete is warm from the sun. The drop is right there under their hands, the creek mouth and the white seam of the surf so far down they make no sound at all.",
+      "“He came out here to dry out,” Lena says, of the canyon, “and wrote a book about failing to.” The wind lays her hair across her mouth and she leaves it.",
+      "He would like to be standing closer to her than he is. He keeps his hands where they are, on the warm concrete, and doesn’t move them until Kevin taps the horn."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "Stay back with Theo.",
+     "tag": "Control",
+     "set": {
+      "e11_bixby": "theo",
+      "soul.restraint": "+1",
+      "trait.control": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "response": [
+      "He goes back and leans on the van beside Theo. Theo keeps filming, the little screen full of Lena at the rail with her hair blowing.",
+      "“Light’s better at the rail,” Jack says.",
+      "Theo doesn’t lower the camera. “I don’t do edges, Costigan. It’s an LA thing.” He goes on filming from where he is."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "Take the camera so Theo can be in one.",
+     "tag": "Charm",
+     "set": {
+      "e11_bixby": "camera",
+      "trait.charm": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "response": [
+      "“Give it here. You’re never in any of them.”",
+      "Theo looks at him. “No.” Then he hands it over anyway, strap and all, a camera that cost more than Frank’s truck, and walks to the very back of the frame and stands against the van with his hands in his pockets and his sunglasses on, the rail and the canyon and the girls all out in front of him. In the little screen he looks like an ad for something nobody can afford."
+     ],
+     "goto": "s11"
+    }
+   ]
+  },
+  "s11": {
+   "slug": "SATURDAY · 1:45 PM · NEPENTHE",
+   "body": [
+    "Nepenthe’s terrace hangs eight hundred feet over the sea, and at a quarter to two the light on it is so clean the umbrellas throw shadows you could pick up off the flagstones. Theo got the table by the wall in ninety seconds of conversation with the hostess. While they wait he tells them about the land: Orson Welles bought it in 1944 for Rita Hayworth, a cabin on the cliff, and the two of them never spent a single night here. “Or they spent one,” Theo says. “Depends who’s selling the hamburgers.”",
+    "Margot considers the view. “He bought her a view and never stayed for it,” she says. “That’s the most honest thing a man has ever done for a woman.”",
+    {
+     "if": "e11_seat==\"shotgun\"",
+     "text": "Jack has ended up across from Lena and next to Kevin, as far down the table as the table goes. She notices where he’s sitting. She passes him the bread anyway."
+    },
+    {
+     "if": "e11_seat==\"reserved\"",
+     "text": "Jack is beside Lena, the way he has been since seven, and when she wants the salt it’s past him."
+    },
+    {
+     "if": "e11_seat==\"middle\"",
+     "text": "Jack is between Laney and Margot again. “The jump seat follows you,” Margot says."
+    },
+    "The food comes. Laney has a glass of white wine, which the waiter brought without asking anybody anything and which Laney accepts as her due. Kevin has the Ambrosiaburger and explains the sauce. Lena has the soup. She tastes it and puts the spoon down. “It needs salt.”",
+    {
+     "if": "knows_harbor_soup",
+     "text": "Dulce said that at the Anchor, about Lena’s, in Spanish, with Rudy translating. It’s halfway out of Jack’s mouth to tell her it’s going around. He eats a fry instead."
+    },
+    "Lena takes her soup to the terrace wall to eat it looking at the water, twenty feet off, the cardigan pulled round her and the bowl held up under her chin.",
+    "Laney comes back from the ladies’ room the long way, past the wall, stops a minute beside Lena, and arrives at the table with her eyes wide. “She’s going as a *bird*, Theodore.”",
+    "“What bird?”",
+    "“She was laughing too hard to say.”",
+    "Theo turns to Jack, buttering a roll, much too casually. “What’s Idaho going as?”"
+   ],
+   "choices": [
+    {
+     "text": "“Classified, Theo.”",
+     "tag": "Control",
+     "set": {
+      "e11_intel": "classified",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“I respect that,” Theo says, and goes on buttering. “I’ll find out.” “He’ll find out,” Laney says.",
+      "Lena comes back from the wall with the bowl empty and sets it down. “Still needed salt,” she says, and takes one of Kevin’s fries without asking."
+     ],
+     "goto": "s11f"
+    },
+    {
+     "text": "Tell him the list.",
+     "tag": "Candor",
+     "set": {
+      "e11_intel": "list",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“Isidore and Maria,” Jack says. “Max and a Wild Thing. A cowboy and a cow, crossed out.”",
+      "Theo writes it down on a Nepenthe napkin in a neat producer’s hand and slides it under the bread basket. Laney reads it upside down. “Nothing on here is a *bird*, Theodore.” “Farmers have birds.” “*Theodore*.”",
+      "Lena comes back from the wall with the bowl empty and sets it down. “Still needed salt,” she says, and takes one of Kevin’s fries without asking."
+     ],
+     "goto": "s11f"
+    },
+    {
+     "text": "“Ask Laney. She has ideas.”",
+     "tag": "Wit",
+     "set": {
+      "e11_intel": "laney",
+      "trait.wit": "+1"
+     },
+     "journal": [
+      {
+       "kind": "note",
+       "id": "laney_advice",
+       "title": "Laney’s advice",
+       "text": "Laney Price, on romance: a poem, out loud, at a bonfire, about her eyes. It has to rhyme. And then — this is the important part — one knee. Not asking her again. I did the knee. Becca said: Not yet. Halloween: No. Halloween, again: No. Unanimous."
+      }
+     ],
+     "response": [
+      "“I *do* —” Laney begins, and Theo, Margot, Kevin and Jack say “No” together, at the same volume, without looking at one another.",
+      "Lena comes back from the wall with the bowl empty and sets it down. “Still needed salt,” she says, and takes one of Kevin’s fries without asking."
+     ],
+     "goto": "s11f"
+    }
+   ]
+  },
+  "s11f": {
+   "slug": "SATURDAY · 2:50 PM · NEPENTHE, THE LOT",
+   "body": [
+    "In the lot there’s an hour to kill and three opinions. Theo wants the Henry Miller Library, down the highway, where they show films on the lawn in summer. Margot wants to hate Henry Miller in person. Laney wants the purple sand at Pfeiffer Beach, which she has chosen to believe in. Kevin will drive the beach party down the canyon and come back for the walkers at four. Lena is already in the van."
+   ],
+   "choices": [
+    {
+     "text": "Walk down to the Henry Miller Library with Theo and Margot.",
+     "tag": "Go",
+     "set": {
+      "e11_split": "library",
+      "trait.control": "+1"
+     },
+     "key": "At Big Sur you walked down to the Henry Miller Library with Theo and Margot.",
+     "response": [
+      "He goes with Theo and Margot, single file along the shoulder with the trucks going by. What he has in front of his eyes the first hundred yards isn’t the highway. It’s a picture on Wes’s phone: a velvet box on a lace runner."
+     ],
+     "goto": "s11a"
+    },
+    {
+     "text": "Pfeiffer Beach with Lena, Laney and Kevin.",
+     "tag": "Go",
+     "set": {
+      "e11_split": "beach"
+     },
+     "key": "At Big Sur you went down to Pfeiffer Beach with Lena, Laney and Kevin.",
+     "response": [
+      "He gets in. Laney pats the seat beside her, then the one beside Lena, then gives up and pats both."
+     ],
+     "goto": "s11b"
+    }
+   ]
+  },
+  "s11a": {
+   "slug": "SATURDAY · 3:05 PM · THE HENRY MILLER LIBRARY",
+   "set": {
+    "rel.margot.warmth": "+1"
+   },
+   "body": [
+    "Under the redwoods the afternoon goes green and dim all at once and ten degrees colder, and the highway goes soft behind them as if somebody has shut a door on it.",
+    {
+     "type": "doc",
+     "title": "Hand-painted, at the gate",
+     "text": "HENRY MILLER MEMORIAL LIBRARY\nWHERE NOTHING HAPPENS"
+    },
+    "It’s a wooden house on a slope with books on every flat surface, a woodstove, a piano with paperbacks stacked on the lid, and out on the lawn among the trunks a white screen for summer movies. A typed card by the door says Miller’s friend Emil White started the place in 1981.",
+    "Margot finds the shelf of Miller in the front room and runs a finger along the spines without taking any of them down. “A man who thought a woman was a landscape,” she says. “Then he moved to an actual landscape. I assume he was hurt when it didn’t want to sleep with him.”",
+    "Theo stands on the grass in front of the empty screen with his arms out, presenting it. “Summer nights. Blankets. *The Third Man* on a bedsheet in the redwoods.” He turns to them. “I’d show something with no plot. In honor of the sign.”",
+    "Margot sits down on the deck steps with her thermos and says to Theo, out of nowhere, in the voice she uses for whereabouts: “You leave every Sunday before dawn.”",
+    "“I run.”",
+    "“You don’t. I don’t sleep, and the Anacapa lot is very well lit.” She unscrews the cup. “Malibu. Two-forty.”",
+    "“I drive to where I run.”",
+    "“Where?”",
+    "Theo smiles at her with everything he has. “Zuma,” he says. “The lifeguard tower at Westward. Five-fifteen, the sky going pink at the bottom over the Santa Monicas and the water still black. There was a girl who sold boards out of a VW on the PCH, she had a dog called Kahuna, she charged me forty dollars to teach me to read a set. Seven waves, Margot. You let the first ones go by. You count. I paddle like a rich kid, she said. She was right. I still go. I go and I count.”",
+    "Margot looks up into the redwoods, where the light comes down in pieces, and lets it go. The Moleskine stays in her coat."
+   ],
+   "choices": [
+    {
+     "text": "“He runs. I’ve seen the sand.”",
+     "tag": "Charm",
+     "set": {
+      "e11_margot": "cover",
+      "trait.charm": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "cue": "Margot will remember that.",
+     "response": [
+      "Margot doesn’t take her eyes off the trees. “So have I.”",
+      "On the shoulder of the highway at four, waiting for the van, Theo falls in beside Jack and says, under the noise of a passing truck, “I owe you a kidney.”"
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "Say nothing. Look at the redwoods.",
+     "tag": "Control",
+     "set": {
+      "e11_margot": "quiet",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He sits down on the step below her and looks at the redwoods too. After a minute Margot says, “Nothing happens.” She tips her head toward the gate. “It’s on the sign.”"
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "“Where do you go, Theo?”",
+     "tag": "Candor",
+     "set": {
+      "e11_margot": "ask",
+      "trait.candor": "+1",
+      "rel.theo.friction": "+1"
+     },
+     "response": [
+      "Theo turns, and for a second there’s no pitch in him at all. “Away, Costigan.”",
+      "Then the lights come back up, and he’s off about the light at that hour, how it comes in flat off the water and gets into everything, how nobody in Los Angeles has ever seen it because nobody in Los Angeles is up, and by the end of it he’s laughing, and Margot is drinking her coffee and watching him do it."
+     ],
+     "goto": "s12"
+    }
+   ]
+  },
+  "s11b": {
+   "slug": "SATURDAY · 3:10 PM · PFEIFFER BEACH",
+   "body": [
+    "There’s no sign for Pfeiffer Beach, just a road off the highway that drops into Sycamore Canyon, one lane under the sycamores, hairpin after hairpin past mailboxes and a horse looking over a fence, and Kevin takes every yard of it in first gear, leaning over the wheel.",
+    "The beach is through a gap in the cypress. The sand is purple — really purple, in long bruised streaks where the backwash has sorted it — and Kevin crouches, pinches some up and lets it run off his palm. “Garnet,” he says. “Manganese garnet. It washes down out of the hills.” “Kevin,” Laney says, “you are a *treasure*.”",
+    "Offshore there’s a great rock with a hole worn clean through it, and every wave comes through the keyhole in a white rush and goes back out again. Laney is in the water before anybody can stop her, in to the knees, her sundress bunched up in both fists, shrieking at the cold. Her flats are at the waterline where she kicked them off, and the tide is coming for them, and Kevin goes down after the shoes with the face of a man defusing something.",
+    "Jack rolls his jeans to the knee and goes in after her. The cold starts at the ankles and arrives in the teeth.",
+    {
+     "if": "e10_lena_text==\"text\"",
+     "text": "Behind him Lena, who was halfway down the sand herself, sits down where she is, pulls her boots off, and stays sitting.",
+     "else": "Lena stays up the beach in the dry sand, with her boots off and O’Connor on her knees."
+    },
+    "Laney spins in the water with the keyhole behind her and the next wave coming through it, and looks straight at his eyebrow. “What’s the eyebrow, fireman? The real one.”"
+   ],
+   "choices": [
+    {
+     "text": "“I walked into the Pacific Ocean.”",
+     "tag": "Wit",
+     "set": {
+      "scar_told_laney": "pacific",
+      "rel.laney.trust": "+1",
+      "trait.wit": "+1"
+     },
+     "cue": "Laney will remember that.",
+     "key": "In the water at Pfeiffer Beach, Laney asked about the eyebrow. You told her: the Pacific Ocean.",
+     "response": [
+      "He says it standing in it to the shins, with his jeans soaked dark past the roll.",
+      "Laney looks from the ocean to him and back. “*Liar*,” she says, with enormous satisfaction, and up on the sand Lena laughs out loud, the big one, the one that carries over surf."
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "“A swan.”",
+     "tag": "Charm",
+     "set": {
+      "scar_told_laney": "swan",
+      "soul.honesty": "-1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      {
+       "if": "e3_sunday==\"pool\"",
+       "text": "“That’s *Theo’s*,” Laney says. “He told it at the pool.” She kicks water at him for plagiarism.",
+       "else": "“That’s *Theo’s*,” Laney says. “He told me on the Aerobed at three in the morning. He does the hiss.” She does the hiss. Then she kicks water at him for plagiarism."
+      }
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "“Ask Lena. She’s got two.”",
+     "tag": "Wit",
+     "set": {
+      "scar_told_laney": "lena",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He calls it up the beach. Lena doesn’t even get up. “Pierogi,” she calls back. “And a cat named Archbishop.”",
+      "“Y’all have a *system*,” Laney says."
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "“A fight. A long time ago.”",
+     "tag": "Candor",
+     "set": {
+      "scar_told_laney": "fight",
+      "soul.honesty": "+1",
+      "rel.laney.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Laney looks at him for a second with the water pulling at her knees, and doesn’t make it into a joke. “Okay,” she says.",
+      "Then she splashes him, hard, and runs for the sand shrieking."
+     ],
+     "goto": "s12"
+    }
+   ]
+  }
+ }
+}
