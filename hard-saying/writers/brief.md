@@ -428,7 +428,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Halloween episode (late Oct 2009) wishes:** Jack and Lena in **accidentally matching or complementary costumes**
   (to Becca's and Wes's confusion, or whoever is around); **Theo throws the party**, extravagantly (LA money, a theme,
   chaos); and **All Saints Mass the next morning** (Sunday, Nov 1, 2009), echoing the pilot's party-then-Mass rhythm.
-- **Lena's magnetic guy: THE ORGANIZER (player's choice; supersedes "room builds him").** The player rejected the
+- **[DROPPED by later re-plan; kept for history] Lena's magnetic guy: THE ORGANIZER.** The player rejected the
   stock types (bad boy, older intellectual, golden boy): Lena would dislike and distrust them all. Instead: a **secular
   activist** (labor, immigration, the poor), a Dorothy Day type without the God. He **shares her politics and her
   fire**, **argues with her brilliantly** (he fights her, which Julian never does), and **lives what she preaches**:
@@ -478,3 +478,23 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   the player's understanding of where things stand. Honor it: Jack's motive for staying (and for staying away) is the
   ring, and both relationships are now visibly running on borrowed time. Keep the availability-windows rule in mind for
   how each one ends.
+- **MAJOR RE-PLAN (player directive, supersedes earlier timing): Jack and Lena get together in Spring 2010.**
+  - **The New Orleans trip (Super Bowl XLIV, Feb 7, through Mardi Gras, Feb 16, 2010) is the death knell** for their
+    other relationships. On the trip they are **completely honest with each other about what they want**, and they
+    agree they're **not starting this with one or both of them as "the other" something in someone else's story**.
+    **Both are free within a week** (they end their other relationships themselves, honestly).
+  - **Jack asks her. Lena says no with a straight face, then cracks up**, and tells him to **do it properly**. So they
+    actually have **a few real dates** and are **together officially before summer** (by the end of Season 2).
+  - **The road there (Fall 2009 → Feb 2010), compressed:** Jack: **Becca**, then **the magnetic girl** (from Theo's
+    LA orbit). Lena: **Wes**, then **Julian** (Lena's version of Becca: sweet, secular, tries, no fire, too easy).
+    The availability-windows rule still governs every handoff. Becca still outlasts Wes. Likely shape, room's call:
+    Lena/Wes end around Christmas, Lena starts Julian; Jack ends Becca as Lena starts Julian (the timing tragedy and
+    false dawn), then the magnetic girl. By New Orleans, Jack is with the magnetic girl and Lena is with Julian.
+  - **The organizer is DROPPED.** Lena has no magnetic guy.
+  - **The proxy fight(s)** now come during Jack's magnetic-girl period. **Lena is infuriated by the magnetic girl**,
+    and **in their later relationship Lena brings her up as a running joke, a cheap fallback argument**.
+  - **The S1 finale** stays bittersweet and not together (every reason for hope, a sting that it can't work yet).
+  - **After they're together:** the long "restraint is the fire" arc as a couple (resolve, near-misses, who holds the
+    line, the dangerous night, Ephesians 5, marriage) carries the later seasons. The alliance reveal comes at the
+    first ensemble set piece after they're official (likely late Spring 2010 or Summer). Later turbulence (a fight, a
+    rupture, a devastating season) remains possible, but no more "other relationships" for either of them.

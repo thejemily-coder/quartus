@@ -3567,3 +3567,7 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 | 2026-10-21 | §13, §14, §16, §20.7, §27 | Knowledge updated after S1E09 and planned after S1E10; §14 Laney row (Kaylee: S1E10, every path; Lena already knew); scar tellings after E09 (Wes → controller; E10 none); E09 seeds marked played (walk fork: no cross) and E10's 🔒 seeds placed (the box; Sloane's lore; her back to the west; the Personal option; the bell's *mortuos*; Theo's bags; the attic on CNN); Lena's resolve E09 played (5) and E10 plan (→ 4 → **6**). | Ledgers; Knowledge Auditor. |
 | 2026-10-21 | period sheets | **Flag for the Researcher:** the E09 and E10 period sheets call Wes "a Seattle kid" / a Seahawks fan / home in Seattle — **wrong**: Wes is from Gentilly, New Orleans (Jesuit High, Tulane). The E10 sheet's "Lena on the phone to her mother or Nonna" should read **Mémère** (Nonna is Jack's). Writers follow the bible. | Continuity. |
 
+- PLAYER MAJOR RE-PLAN (orchestrator; see brief "MAJOR RE-PLAN"): Jack and Lena get together in Spring 2010 (NOLA trip
+  ends both other relationships within a week; Jack asks, Lena makes him do it properly; official before summer).
+  Organizer dropped. Compress Becca → magnetic girl (Jack) and Wes → Julian (Lena) into Fall 2009–Feb 2010 under the
+  availability-windows rule. Re-plan the Season 1 remainder, Season 2, the arc registry and the romance roadmap.
