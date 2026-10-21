@@ -689,3 +689,18 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
      is not permission** for either of them. She wants them to **give each other themselves fully for the first time as
      husband and wife, without any guilt in the way**. This raises the stakes of the dangerous night (resolve system):
      any premarital crossing carries real possibility of pregnancy, and the room must honor that consequence if it happens.
+- **Held scene for Season 2 (Skye; player's design): the fundraiser.** It shows both Skye's difference from Jack and
+  her pull on him.
+  - Skye asks Jack to come with her to a fundraiser one night (**Theo gets him dressed properly**). She doesn't mention
+    what it's for, not to hide it, but because it's never occurred to her anyone would object. It turns out to be a
+    **Democratic or liberal cause fundraiser** (room picks something real and period-plausible for early 2010).
+  - After a couple of rounds **she sees instantly that he's uncomfortable** and asks what's up, with a smile. He
+    doesn't want to be rude and tries to play it off; **she asks again, softer**. He tells her.
+  - **She takes his arm instantly and they walk out.** Half-joking, she conditions it on him **explaining his politics
+    while they walk and listening to her tell him why he's wrong**. They go somewhere local to eat and **keep talking
+    for hours**.
+  - She takes a picture of the two of them (period-correct: an arm's-length shot on her iPhone 3GS or a digital camera;
+    front cameras arrive mid-2010; don't use the word "selfie") and **asks if she can post it on her Facebook instead of
+    the planned fundraiser photo**: **she doesn't want to post anything implying he supports something he doesn't.**
+  - **Lots of likes, including a polite one from Theo.** **Laney gags at it, which gets a much-needed laugh out of
+    Lena** (seen through Jack's eyes: Laney tells him, or he's there, or the room finds a Jack-POV route).
