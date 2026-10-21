@@ -860,3 +860,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   annotated book), and they **end up somewhere else** together (the beach, a rooftop, her car, an all-night diner, the
   bluff; room's choice). They **kiss for a little while**, and then **she gives him her number and leaves** (her exit,
   her timing; very Skye). It's a centerpiece of its episode, after Jack and Becca have ended, before Thanksgiving.
+- **The secret stretch (Thanksgiving → Christmas 2009; player).** Everyone notices, **especially Lena**: Jack is
+  **texting "no one" a lot** (he tilts the RAZR away; "Who's that?" "No one."), and he's **gone at random times**. He
+  **disappears from parties and hangouts around midnight** but **isn't at the dorm**, and he **misses a middle-of-the-night
+  fire alarm** (the running Delgado alarm gag: Priya's roll call with Jack absent, Theo covering badly, Lena noticing the
+  empty space on the lawn). Skye has a **career and industry events on top of school**, so their secret time happens at
+  **strange hours**: late-night drives, 1 a.m. diners, her place after an LA event, a dawn beach. Jack-only POV: we see
+  the others noticing through their questions, looks and Theo's needling; Lena's noticing is shown in what she asks and
+  what she stops asking. Feeds Theo and Laney's suspicion and Lena's January hurt.
