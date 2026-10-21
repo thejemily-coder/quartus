@@ -677,3 +677,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Both summers before marriage (summer 2010 and summer 2011): they trade visits** (Jack to New Orleans, Lena to
     Youngstown) inside the summer seasons; most of each summer is apart at home, with phone, letters and Facebook.
   - Summer 2012 is the New Orleans wedding.
+- **Two conversations Lena initiates, both scary for her to say out loud (player's design; after the sophomore
+  "conversation").**
+  1. **NFP plan (junior year, after they're engaged):** Lena says she wants to **use NFP to avoid pregnancy at least
+     through the end of school**; after that she'd be ready to **intentionally try when he is**. (Discernment, timing,
+     and openness to life all in play; Jack's honest response is the room's to write; they may not fully agree.)
+  2. **No contraception, ever, as a line (best placed right after their first real temptation to sleep together;
+     can be earlier):** they **never get condoms or birth control**. **They're not making it easier to sin, and not
+     stacking sins on top of each other.** If they ever give in, **they give in with the full consequences**: if they
+     engage in the marital act before they're married, **they don't get to deny its fruit**. Lena is clear that **this
+     is not permission** for either of them. She wants them to **give each other themselves fully for the first time as
+     husband and wife, without any guilt in the way**. This raises the stakes of the dangerous night (resolve system):
+     any premarital crossing carries real possibility of pregnancy, and the room must honor that consequence if it happens.
