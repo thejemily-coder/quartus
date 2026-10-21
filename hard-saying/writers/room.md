@@ -165,6 +165,22 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 72. **"Then, quieter,"** as a dialogue lead-in (S1E10; E02, E04, E05, E06, E08 ×2, E09, E10 ×2). Max one per episode.
 73. **Callback glosses** (S1E10): narration identifying where a quoted line came from ("It's Becca's own line, from the stool by the
    stove on Sunday," "her own line, from the laundry room"). Max one per episode; the player binges — trust their memory.
+74. **"Chin on his fist" as the listening pose** (S1E11; E02, E05, E06, E07 ×2, E11). Max one per episode.
+75. **"Hands / palm flat on [surface]"** as the default steadying gesture (S1E11; 3–5 every episode since E02). Max two per episode.
+76. **Indifferent-world codas** (S1E11; 8–14 "goes on / keeps on" per episode since E04): "the sea keeps on," "the stars go on doing
+   what they do," "the zebras go on grazing," "keeps coming onto the sand." Max two as scene endings per episode.
+77. **"Like a girl at [event]" similes** (S1E11; E01 Jonas Brothers, E03 prizefight, E11 Wimbledon, cut). Once a season.
+78. **Ring / velvet-box callbacks** (S1E11): Wes's ring as Jack's motive is narration only, once or twice per episode, each time a new
+   image; never the E09/E10 "velvet box on a lace runner" wording again, never aloud, never named to Lena.
+79. **"A rumor" for something obscured** (S1E11; E02, E05, E10, E11). Once a season.
+80. **Superlatives with a geography tag** ("in America," "in California," "in American letters"; S1E11 had six): count under #49,
+   max one per episode outside a character's signature line (Becca's "only honest fruitcake in America" is E11's).
+Small repeats to watch (S1E11): weekday shorthand across a weekend ("Thursday" on a Sunday means three days ago — anchor to the event:
+"the bells," "the library"); Caleb's "Selah" (E10) and "looks betrayed by it" (E02) — give him new reflexes; the candle flame leaning
+in a draft as a closer (E04, E11 cut); the heater/radiator/shutter tick as a beat marker (establish once, use once more); "the six of
+them" (once); Kevin "leaning over the wheel" (once); a meteor "comes loose" (one per sky); "Theodore" is Laney's (Lena says "Theo");
+"Costigan" is not Laney's word ("fireman," "sugar," "Jack"); "It isn't a joke" sincerity tags; Margot not writing as a button (spend it
+once, as the payoff); "Then [noun]." fragments still drift high; "the long way" (E10 tic #70, seven in one E11 draft).
 Small repeats to watch (S1E10): dawn colors "pewter" (E01, E03, E06, E07, E09, E10) and "the blue at the bottom of a gas flame" (E09,
 E10) — find new dawns; "something crosses her face" (retired after E10); "with her whole body" (once a season); "hands at ten and two"
 (retired); the prayer "like a man talking to someone in the next room" (the bible's description — retired from prose); eucalyptus

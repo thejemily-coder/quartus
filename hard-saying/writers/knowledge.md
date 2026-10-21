@@ -1022,3 +1022,95 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - Kevin [s09b] saw Jack and Lena on the 8th floor at midnight ("So is a different floor").
 - Danny [s02] knows about Becca (from Ma); still asks whether Jack told Lena hey (his letter was written before Jack's reply).
 - Nonna [s22] asks after "la ragazza del granchio" (Becca); [good] Jack said she's good.
+
+### S1E11 — "Lucia"
+> Written for the after-s1e10 save only (see continuity.md S1E11). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01b] Theo had Jack's Saturday covered by calling Gloria; Gloria rated Theo "Baked Alaska." [s03] Gloria confirms it.
+- [s04b] Yusuf on Abdul Rahman; Caleb left a church ("nobody built me a structure"). [s04x] Hale: "When you leave something, look at
+  it." [did] Hale has "been thrown out of several."
+- [s05] The van blessing is on the parish calendar; Mrs. Fitch: Lena asked Father on Tuesday "for the road." The rosary on Becca's wrist
+  (owner NOT stated; the grandmother/Sunshine Mine provenance stays hidden). Becca's tank weekend (volunteer with swine flu; tech in
+  Monterey). [s05b] Grandma Agnes orders the monks' fruitcake every Christmas; Becca isn't asking about the list.
+- [s06] His midterm grade and Hale's fountain-pen line (the postcard hand). Evan read Kierkegaard on the dead and couldn't finish;
+  Jack does not know why (🔒).
+- [s07] Priya's "points" warning (🔒; Jack draws nothing from it). Osei blessed a crab three weeks ago.
+- [s09] Theo is planning Halloween with a planner (heard: "Tell the planner … the staircase is the centerpiece"; the party itself from the
+  E10 invitation).
+- [s11 | knows_harbor_soup] Jack recognizes "it needs salt" (Dulce's line) and doesn't say so. Laney: Lena is "going as a *bird*"; the
+  bird is unknown to everyone but Lena.
+- [s11a | library] Margot has watched Theo leave the Anacapa lot before dawn on Sundays and says "Malibu. Two-forty." Theo's Zuma story
+  (Jack hears it; it doesn't add up and nobody says so). [cover] Margot: "So have I" (seen the sand).
+- [s11b | swan] Theo told Laney the swan (Aerobed, 3 a.m.; at the pool on `e3_sunday=="pool"`).
+- [s13] Verna, the Santa Lucia Motor Court, one heater. Kevin and Theo's simultaneous line is just a line to Jack.
+- [s14] Jack overhears Lena's side of the 8:03 payphone call (Vespers or the waterfall; turkey vultures; "Yell at Brees for me"; "I love
+  you" first, a wait, something comes back; the quarters run out; she doesn't feed more). He never hears Wes.
+- [s15] Lena's three (L-D champion / piano / not cold); [knows_lena_piano] he knows the piano is true and keeps quiet. Theo's three
+  (as in August). Laney's unfinished cherry-stem line.
+- [s16d] Theo came up the path from the water at dawn, sand to the elbows ("Couldn't sleep"). Journal now lists Sept 20, Oct 11, Oct 25.
+  Jack draws no conclusion on the page.
+- [s18] Fr. Bede's name (typed Mass card inside the chapel door).
+- [s19] Gina: Ashley Vrabel's orange-jumpsuit "tribute"; OSU 38–7; Dad smiled. Lena's family texts (names read aloud by Lena).
+- [s20] **Tony Broussard's voice; Tony knows of "the Ohio boy" and that he's a Browns fan — from Wes.** Packers 21–3 at the half (Tony,
+  off the radio). Laney's full pageant name and title.
+- [s22 | condor==becca] Becca looked up condor 57 (a she).
+- [s23 | knows_harbor_soup] The soup is for the Harbor Inn night shift. Lena's side of the 8:04: "Did you see it? … We came back. …
+  Wes? … No. It's okay. Go to sleep."
+
+#### Lena
+- [s01–s23] Learns nothing about the ring or the attic (guardrail holds). Jack's ring motive is narration only ([s16b C0 |
+  knows_wes_ring], [s22 | knows_wes_ring]); never spoken.
+- [s04b | Personal] Jack's "sinking boat if the right man built it" (Wes's boat at sixteen); [s04c | Apologize] he took it back.
+- [s04c | Candor] Jack: "Sometimes it isn't the thing that's lying. It's you, staying." She calls it a confession.
+- [s08 | library] Jack gave the same alibi she did (the library). [s08b] Jack's margin: *Go to confession, Jack.*
+- [s10 | rail] Jack stood beside her at Bixby.
+- [s11b | lena] Jack sent Laney to her for the eyebrow; she gave the pierogi and the cat named Archbishop. [pacific] heard "the Pacific
+  Ocean" and laughed. [fight] said low in the surf to Laney: **not heard by Lena** (she is up the beach in the dry sand).
+- [s12] Jack's vote (Vespers or Theo's light).
+- [s14 | okay/coke/roll] Jack saw the quarters run out (he was on the step); she knows he was there.
+- [s15] Jack's three (point guard / butter knife / swan — Margot called the swan a lie).
+- [s16b] **Danny "doesn't wish. He decides."** (from Jack; first time she hears Danny's line). Jack's answer per `e11_decided`:
+  wreck ("Not to be the one who wrecks anything") / **homework ("Whose?" "Becca's." — Lena now knows Jack calls it homework and that it
+  is Becca's; she does not know the list's contents)** / sleep / know (she stopped him before he said it).
+  [porch_cig==lit] Jack smoked on the porch; Reliquary No. 6.
+- [s19 | gina==lena] Gina's text: **Ashley Vrabel's name and her prisoner costume**; [!e5_gina_lena] Jack tells her the original
+  taunt here. (On this save she already knew the taunt from E05/E06.)
+- [s19b] **Jack's fruitcake is for Becca's grandmother in Idaho** (Jack tells her). **Becca gave Jack "a list"** for a costume (Jack);
+  she does not ask what's on it.
+- [s19b | condor==becca] Jack texted Becca the condor.
+- [s20] Tony has spoken to Jack; Laney charmed him. [hold/whodat/letgo] how Jack answered the grab.
+- [s23] Jack said "Salt." Jack heard her side of the 8:04.
+
+#### Becca
+- [s05 | ask] Jack invited her to Big Sur; [told] Jack told her who was going (Lena, Laney, everybody); [quiet] she learned the trip from
+  the parish calendar (Mrs. Fitch), not from Jack.
+- [s09/s19] Jack's texts: [s19b | condor==becca] "condor. 57 on the wing. margot certified. yes its beautiful."
+- [s22] The fruitcake; **Jack's costume answer** per `e11_costume` (isidore / wildthing / moviegoer — Binx and Kate, from Jack's book;
+  she has never heard of it). [quiet] Mrs. Fitch told her Father blessed the van in his boots. She knows nothing of the motel night,
+  the porch, the payphone, or the comeback grab.
+
+#### Theo
+- [s11 | intel==list] **Becca's list** (Isidore & Maria; Max & a Wild Thing; cowboy & cow crossed out) on a Nepenthe napkin.
+- [s11] Laney's report: Lena is going as "a bird" — nothing more (reconnaissance fails).
+- [s11a | library] Margot knows about his Sunday drives ("Malibu. Two-forty."); [cover] Jack covered for him; [ask] Jack asked where he
+  goes ("Away").
+- [s13] Jack paid his own share of cabin 5 in Anchor singles.
+
+#### Laney
+- [s08b] Heard Lena read the peafowl letters (no conclusion drawn on the page). [s09] Read Becca's 6:12 text on Jack's RAZR.
+- [s11 | intel==list] **Read Becca's list upside down** — a live route from Becca's list to Lena (E12 may use it or must avoid it).
+- [s11b] Jack's eyebrow per `scar_told_laney` (pacific / swan — knows it's Theo's / lena / **fight: "a fight, a long time ago"**).
+- [s20] Tony (on speaker). [s18] Lit her first votive; Lena taught her.
+
+#### Margot
+- [s08] Everyone's stated alibis for 5 a.m. on Oct 15 (library ×2 on `alibi==library`); no on-page knowledge that it was Lena and Jack.
+- [s11a | library] Confronted Theo with "Malibu. Two-forty"; heard the Zuma story. [s15] Jack's swan is a lie (her call, not knowledge).
+
+#### Others
+- **Tony** [s20]: from Wes, "the Ohio boy" is a Browns fan; Kevin drives at 55 and is careful; Laney (Highland Park, first runner-up).
+- **Gloria** [s03 | ask] Jack's Sunday-night ask and the ticket total ($74).
+- **Verna** [s13]: six kids from the college with a boiled-over van; names unknown.
+- **Kevin** [s14] handed Lena the quarters unasked; [s15] Theo's "Same three as August."
+- **Fr. Osei** [s05/s07]: Lena asked him to bless the van "for the road."
+- **Gina** [s19]: [lena] Lena's line about the work of mercy; [advice] Jack's advice; [away] no answer yet.

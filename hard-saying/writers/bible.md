@@ -722,7 +722,7 @@ clause; no gloss; Compline stays S2). Neither man wins. Both enjoy it more than 
 wary respect (S2 the Forum; S4 the call; AD the deathbed).
 **(E11 plan:)** Thu Oct 22, the 12:10 (Luke 12:49–53, Researcher), one sentence: "He did not come to keep the peace in our houses. He came to keep the
 peace in us, and sometimes the house pays for it." (🔒 Frank; never glossed.) Sat Oct 24, 7 a.m., the Anacapa lot, rubber boots, at Lena's request: **he
-blesses Kevin's mother's Odyssey** — "I blessed a crab two weeks ago. A Honda is no trouble."
+blesses Kevin's mother's Odyssey** — "I blessed a crab three weeks ago. A Honda is no trouble."
 
 **Arc.** S1: the anchor, quietly watching his two penitents circle the boy he cannot warn. S2: the anniversary Mass at the
 Point; Hale's public debate. S3: Kwame comes to Marisol (a conference) and refuses to see him; Jack brokers a dinner. S4:

@@ -2090,3 +2090,187 @@ reckless≥12 — all open). Lena's s10b accusation and Confess are gated on `e9
 - Nora's birthday: Tuesday Sept 8 (journal card corrected).
 - Becca is not Jack's girlfriend (until E19); Jack never calls her that.
 - 217 is one floor up from the front steps, two floors down from 412.
+
+### S1E11 — "Lucia" (Tue Oct 20 – Sun Oct 25, 2009; tag Sun 8:04 p.m.)
+40 scenes. Forks: s11f → s11a Henry Miller Library (`e11_split=="library"`) / s11b Pfeiffer Beach (`beach`) → s12 · s12 vote →
+s12a Vespers at the Hermitage / s12b McWay Falls → s13. Duel **exit** ("On Leaving," s04–s04v, Hollis 302, official, Hale referee;
+Lena argues LOYALTY, Jack EXIT). Per path ≈13.7k–14.7k words, 25 choices (validator total ~19.3k counts every branch). 10 whispers
+placed (s04b Personal; s11b Pacific; **every s16b porch option** "Lena will remember that."; **every s22 costume option** "Becca will
+remember that."): 2–4 per path, Lena ≤2. Jack's resolve enters 8, ends **5–10** (mean ≈8.7). Lena's resolve ends **4 on
+`e11_comeback=="hold"`, 5 otherwise**. Lena heat +0 to +2 (`e11_heat` counter caps it). No dangerous window. **Halloween is E12**
+(Theo's SAINTS & SINNERS, Sat Oct 31; All Saints Mass Sun Nov 1); E11 builds to it. **Save-locked:** written for
+`saves/after-s1e10.json` (`e10_dawn=="magdalena"`, `e10_football=="still"`, `e10_five=="goodnight"`, `knows_wes_ring`, `e10_cig`,
+`e5_gina_lena`, `e3_sunday=="getty"`, `e10_kaylee=="stay"`, `e10_lena_text=="text"`, `e10_wave=="hand"`, `e10_homework=="not"`,
+`e10_noon=="fishbowl"`, `e10_exam=="defend"`, `e10_priya=="never"`, `knows_harbor_soup`, `knows_lena_piano`). The s19b Lena journal
+card says "she told me I can't say her name like that" on every `e11_decided` variant: true only on `e10_dawn=="magdalena"` (this save).
+Gates: Riposte trait.wit≥32 (s04, s04b), Candor trait.candor≥47 (s04c), porch "You know what I decided" trait.reckless≥19 — earned
+in-episode, not open on entry.
+
+**On-page canon (all paths unless marked)**
+- s01 (Tue 8:52 a.m., Anacapa lot): **5–0** on the Odyssey's back glass (Saints 48–27 over the unbeaten Giants, Sun Oct 18, the Dome),
+  white La Vang polish; a flag on the 5. Lena in a blue sundress, oatmeal cardigan, Keds. Jack walks the far (eucalyptus) side of the row.
+  [e10_wave=="hand"] Saturday she mouthed *Tomorrow* from the Brick steps.
+- s01b: **Theo's MERIDIAN PICTURES interoffice: THE BIG SUR EXPEDITION, Sat 24 Oct 0700, Mrs. Tran's Odyssey, Bixby · Nepenthe · the
+  monks, required reading Kerouac *Big Sur* (1962) —T.A.V.** Theo called the Anchor and got Jack's Saturday covered (Hector home from
+  Fresno State); **Gloria rated Theo "Baked Alaska."** **Six used Bantam *Big Sur*s off the cart at Driftwood** (not Borders). The Benedict
+  holy card moves into Jack's *Big Sur*; the Percy goes back to the milk crate. Margot is coming "as an observer."
+- s02 (Tue 1:10 p.m., Fishbowl): CNN, **Oct 20, 2009: Rome announces a structure for groups of Anglicans (Levada; Nichols and Rowan
+  Williams joint statement; married former Anglican priests may be ordained, bishops celibate)**; the balloon-boy hoax crawl. Margot:
+  "ecclesiology of grievance … The dues are paid by the women." Lena: "You don't come home because you're mad at the neighbors."
+  Laney's toenails: OPI Cajun Shrimp.
+- s03 (Tue 9:40 p.m., Anchor): Rudy's transistor: Phillies over the Dodgers, Rollins's walk-off double Mon Oct 19 (NLCS 3–1). Ray Ochoa
+  at the counter. Jack's math: six hours at $8 + ~$26 Saturday tip cut = $74 he won't have.
+- s04–s04x (Wed 1:00–2:31, Hollis 302): Hale in his chair before one (third time this term). **Whiteboard: EXIT · VOICE · LOYALTY
+  (HIRSCHMAN, 1970) / THE ANGLICANS ARE COMING.** Hale on Cranmer's English ("the finest prose ever written by a man who was later
+  burned for it"). Lena: John 6:66–68 (Peter: "It's the one that holds"); Royce, *The Philosophy of Loyalty* (1908); Ruth 1:16; ST II-II
+  q.101 piety; Hirschman's voice; "you don't get to decide that alone, on a Wednesday, mad at the neighbors." Jack: Newman's
+  ten thousand difficulties, Littlemore, "The Parting of Friends" (Sept 25, 1843); [Riposte] the Norfolk toast; Ruth at the threshing
+  floor ("Read it in the Septuagint"); Dorothy Day / Forster Batterham. Newman received Oct 9, 1845. Yusuf: Abdul Rahman (Kabul, 2006).
+  Caleb: "nobody built me a *structure*." **Hale: "Mr. Costigan, she's over there."** s04x corridor: **"When you leave something, look
+  at it. Newman did."** [did] "I've never left anything in my life. I've been thrown out of several."
+- s05 (Thu 12:10, St. Brendan's): Luke 12:49–53 (NAB "I have come to set the earth on fire"); **Osei's one-sentence homily: "He did not
+  come to keep the peace in our houses but in us, and sometimes the house pays for it."** Becca saved Jack a seat (vest). **The parish
+  calendar: SAT 24 OCT 7:00 AM — BLESSING — TRAN VAN (Anacapa lot) — Fr. O.** Mrs. Fitch: Lena asked Father on Tuesday, "for the road."
+  **Becca can't come either way: the Marine Lab weekend volunteer has the swine flu and the tech is at a conference in Monterey; she's on
+  the touch tank Sat and Sun mornings.**
+- s05b: **Becca asks for the New Camaldoli fruitcake for Grandma Agnes ("the only honest fruitcake in America").** [e10_homework=="not"]
+  "I'm *not* asking about the list."
+- s06 (Thu 4:00, Hollis 108): **Midterm grades** per `e10_exam` (this save: A–, "Defended, not broken. —E.M." / "He wrote it as though
+  it were true. Irritating. —A.H."). **Evan reads Kierkegaard, *Works of Love*, "the work of love in recollecting one who is dead";
+  his voice stops mid-sentence in the second paragraph; dismisses at 4:31** (🔒 seed; not in the journal). Lena out first.
+- s07 (Sat 6:58 a.m., Anacapa lot): marine layer. Priya signs them out (laminate: BACK BY SUNDAY 10 PM) and says **"Big Sur has a lot of
+  points. Stay off all of them after dark"** (🔒). Laney: two LV duffels. **Kevin's laminated card** (7:00 depart, Cambria 9, Gorda 11,
+  Bixby 1, 55 not 56, NO FEET ON DASH (LANEY)). Margot: "a functioning patriarchy in its natural habitat." **Fr. Osei blesses the van at
+  7:00 (rubber boots, white stole, palm on the fender): "I blessed a crab three weeks ago. A Honda is no trouble."** Theo arrives 7:14 on
+  foot (the two-seater stays home). Theo stands off at the next space during the blessing. Laney's RESERVED Post-it beside Lena.
+- s08 (Sat 9:40, north of Cambria): Theo's burned CD (Farrar & Gibbard, *One Fast Move or I'm Gone*). Alberta Winnebago. **Margot's
+  *Tide* Ferrer follow-up: alibis "at five a.m. on the fifteenth"**; Theo "Asleep," Laney "in exile," Kevin "Asleep."
+- s08b (San Simeon): **Lena reads O'Connor's peafowl letters (*The Habit of Being*) aloud** (🔒 E12 costume). Laney listens, lips moving.
+  Theo's Kerouac pitch. Jack's margin on p. 40: *Go to confession, Jack.* Lena: "Two Catholic boys named Jack, and neither one of you can
+  sit still." The tin: "You haven't given me one since the bells."
+- s09: Ragged Point flagger (six minutes, storm debris); **no signal from past the flagger to the Hermitage hilltop** (Gorda has one bar by
+  the ice machine). Two turkey vultures ("Condors have numbers on their wings"). **Gorda: "the most expensive gas in America"; Theo pays.**
+  Laney reads Becca's 6:12 a.m. text ("see a condor for me"); "Laney. Be nice." **Theo on the phone at Gorda: "Tell the planner … the
+  *staircase* is the centerpiece."** Hermitage sign at Lucia. Lena: "Promise me, Theo." Theo promises everyone everything.
+- s10 (12:40, Bixby Bridge, 1932): Kevin twenty minutes early; Laney nine selfies; Lena at the rail. **Theo films from the back of the
+  turnout, the van at his back** (🔒 the edge image; [camera] "No." then hands it over; [theo] "I don't do edges. It's an LA thing.").
+- s11 (1:45, Nepenthe): Welles/Hayworth (1944). Margot: "Honest, at least." Laney's white wine; Kevin moves the bread to her. **Lena: the
+  soup "needs salt."** [knows_harbor_soup] Jack nearly says Dulce said it. Laney: "She's going as a *bird*, Theodore." / "She was laughing
+  too hard to say." **Theo: "What's Idaho going as?"** — the alliance's failed reconnaissance.
+- s11f (2:50, Nepenthe lot): split. Kevin drives the beach party, returns for the walkers at 4.
+- s11a [library]: HENRY MILLER MEMORIAL LIBRARY · WHERE NOTHING HAPPENS; Emil White (1981). **Margot to Theo: "You leave every Sunday
+  before dawn … Malibu. Two-forty."** Theo: Zuma, Westward tower, 5:15, the VW board girl with a dog named Kahuna, "Seven waves … I go and
+  I count" (a lie told at length; the geography does not work — intentional).
+- s11b [beach]: Sycamore Canyon Road; purple manganese garnet sand (Kevin); the keyhole rock; Laney in to the knees; **Laney asks about
+  the eyebrow** (`scar_told_laney`).
+- s12 (4:40): the vote, 2–2 (Lena, Margot: monks; Theo, Laney: sunset; Kevin: Switzerland). Theo's sunset pitch: "a little after six."
+- s12a [vespers] (5:30): the Hermitage road two miles up from Lucia; round chapel; white-habited monks, psalms antiphonal across the
+  floor; Lena knows the Magnificat by heart; Laney sleeps on her feet, then stays awake; **Margot's arms unfold by the second psalm; after:
+  "It's still an all-male institution. The singing was very good."** Bookstore shut; a monk: "Tomorrow." Jack: *I'm doing it.*
+- s12b [sunset] (5:50, McWay Falls overlook): sunset ~6:10. Theo films from the back of the path. Lena: "It's beautiful, Theo." / "Mass,
+  then. Tomorrow. At the monks. Promise me."
+- s13 (6:55, turnout south of Lucia): **the Odyssey boils over — upper radiator hose clamp backed off a quarter turn; Jack snugs it
+  (Frank's radiator rule); overflow near dry.** Heater on full. **The Santa Lucia Motor Court: six cabins, Verna (70s, unlit cigarette,
+  NO CHECKS, muted TV: the swine flu national emergency, declared that weekend). Cabins 4 and 5, $40 each; one heater (in 4).** Jack pays his share
+  of 5 in fourteen Anchor singles; Verna keeps the change. **Verna's receipt goes into Lena's cardigan pocket.** Laney's pink register-pad
+  rooming chart (4: Laney, Lena, Margot; 5: Theo + Kevin, Jack on the floor). Kevin "I'll take the floor" / Theo "I'll take the van"
+  simultaneously, never touched again. Jack gets the bed.
+- s14 (8:04, payphone): **Lena calls Wes on quarters from Kevin's $10 roll; says "I love you" first and waits; something comes
+  back; the line cuts at "please deposit seventy-five cents"; she doesn't feed it.** [okay] "Everything's fine" + medal touch.
+- s15 (11:40–12:20): cabin 5 at 45°F (Kevin's key-ring thermometer). Laney fetches them to cabin 4 ("slumber party"). Margot reads
+  Dorothy Day's *The Long Loneliness* (Lena's copy, "for the column"), the last-page line. **Two Truths and a Lie:** Kevin (only child /
+  party; Theo: "Tina would like a word"); Theo (Oscar / rehab / never in love — "Same three as August"); **Lena (Lincoln-Douglas champion /
+  piano / not cold)**; Jack (point guard at Mooney / oil change with a butter knife / the swan — Margot: "Lie."); Laney falls asleep
+  mid-list. Jack sleeps on the floor along Lena's side of the bed.
+- s16–s16c (Sun 2:50–3:31 a.m., cabin 4 porch): no moon; the Milky Way; Orion SE; a meteor. **Lena: "You've been careful since the bells."**
+  [magdalena] "You can't say my name like that, Jack." / "I know, Lena." **Jack: "My brother says he doesn't wish. He decides." Lena:
+  "Smart man."** [e10_football=="still"] "That night you said you didn't know … Neither did I." **"What did you decide?"** (`e11_decided`).
+  Jack does not put his arm around her while she shivers. [e10_five=="goodnight"] "Good morning, then."
+- s16d (6:30): Jack wakes in Verna's lawn chair. **Theo comes up the path from the water, sand to the elbows, jeans wet to the shin:
+  "Couldn't sleep. Went to look at the ocean."** (Sunday pattern: Sept 20, Oct 11, Oct 25 on the journal; 🔒 S2E22.)
+- s17 (8:10): Verna's percolator; **Verna sells Kevin one gallon of coolant for $22** ("the most expensive water in America"). Clamp holding.
+  Lena with the black mantilla. **Margot: "I'm not writing anything down."**
+- s18 (9:30, Mass at New Camaldoli, 30th Sunday B): Jer 31:7–9; Ps 126; Heb 5:1–6; Mark 10:46–52 (Bartimaeus). **Homilist Fr. Bede, O.S.B.
+  Cam. (typed card inside the door): "He wanted to hear him say it."** Theo on a bench outside ("Supporter. Not a member."). Laney's fourth
+  Mass. Kickoff at 10:00 PT. Jack's Jesus Prayer with the name kept back. **Laney lights her first votive (Lena guides her wrist):
+  "Don't you dare."** (`e11_candle`).
+- s19 (10:40, the lot, one bar): **Gina Sat 7:16 p.m.: "ashley vrabel says shes going to halloween as a prisoner. orange jumpsuit. she said
+  its a TRIBUTE"**; Gina 9:02: "osu 38 minn 7. dad smiled." Becca 9:40 p.m. and 7:02 a.m. Lena's texts from Luc, Remy, Tess, Josie (noon
+  Mass, from the pew): Miami 14–3.
+- s19b (10:52, bookstore): date-nut fruitcake in brandy. **Jack buys Becca's grandmother's tin with Anchor singles (most of a Thursday's
+  tips) and tells Lena it's for her; Lena buys one for Mémère in exact change from a crawfish coin purse. "A girl writes the thing she
+  wants first, Youngstown."** **Condor No. 57** over the lot; Margot: "That's a condor."
+- s20 (11:20–~1:15, turnouts on the coast road): **Saints 46, Dolphins 34 at Miami (Oct 25): down 24–3, TD before half 24–10, Brees three
+  INTs, 34–24 after three; Brees's QB sneak takes the lead; Tracy Porter's 54-yard pick-six.** Ricky Williams's 68-yard run. **Tony
+  Broussard on speaker (WWL beside him): "Is that the Ohio boy? Wes says y'all got a Browns fan out there." "Browns? Lord, son. You need
+  us more than we need you."** Packers 21, Browns 3 at the half (final 31–3). Tony's two seats for 28 years, "I wore the bag." **Laney:
+  "Delaney Rose Price, Highland Park, Texas. Miss Teen Dallas County 2007, first runner-up"** (lost to a fire-twirler); Tony asks for the
+  redhead first thereafter. Margot converts on third and long. **On the pick, Lena grabs Jack in front of everyone** (`e11_comeback`).
+  Saints 6–0.
+- s20b (2:10, San Simeon): Rebirth Brass Band, "Do Whatcha Wanna," via Theo's FM transmitter; **the Hearst zebras.**
+- s21 (5:20, Anacapa lot): **6–0** on the glass; polish in Jack's knuckles.
+- s22 (6:30, Portolá steps): Becca after the evening tank check, Ivory soap and squid. The fruitcake ("It's *honest*!"). **Jack hands in
+  his homework: WE SHOULD MATCH!! answered six days early** (`e11_costume`). **Becca kisses him on the mouth, quick.** Jack walks home
+  out Ocean Road. [knows_wes_ring] His reason is Wes on the beach holding out the phone (the ring is never named aloud).
+- s23 (7:58–8:04, Delgado kitchen): the Newman stockpot; chicken and sausage for the Harbor Inn night shift. **Lena salts it while
+  looking at Jack.** Priya's laminate + Lena's sticky note IT IS TONIGHT. **8:04: Wes. "Did you see it? … We came back." … "Wes?" … "No.
+  It's okay. Go to sleep."**
+
+**Choice-dependent facts**
+- s01 `e11_glass` walk/hold/giants (pays s21). s02 `e11_anglicans`. s03 `e11_saturday`: [ask] Gloria read Jack's ticket math; "Hector
+  needs them more"; free pie. s04x `e11_hale`.
+- Duel exit verdicts (s04v): Personal without apology → Lena by forfeit, 4–2, she packs and leaves; Personal + Apologize → forfeit stands,
+  4–2, she stays; heart≥2 → **draw** ("Then we'd both stay"), 4–1–1; rigor≥3 & heart≤1 → **Jack**, 5–1 ("argued for leaving like a man
+  who's never been allowed to"; Lena: "I hope you never use it"); wit≥2 → **no decision** ("well-dressed bollocks," Caleb's Post-it in
+  his *Consolations*), 4–1; else **Lena on Peter**, 4–2.
+- s05 `e11_becca_invite`: ask (Becca: "Thomas needs me") / told / quiet (`soul.honesty −1`; Becca read the calendar). s06 `e11_evan`.
+- s07 `e11_seat`: shotgun (Theo wears the RESERVED Post-it beside Lena) / reserved (beside Lena all day; Lena moves the cooler) / middle
+  (Laney asleep on Jack's shoulder to Cambria). Seat drives s08b, s11, s12, s12a, s12b, s20 staging.
+- s08 `e11_alibi`: library (both say it at once) / ghost / quiet. s08b `e11_tin`. s10 `e11_bixby`: rail / theo / camera.
+- s11 `e11_intel`: classified / **list (Jack told Theo Becca's list; Theo's Nepenthe napkin; Laney read it upside down)** / laney.
+- s11a `e11_margot`: cover ("He runs. I've seen the sand." Margot: "So have I." Theo: "I owe you a kidney.") / quiet / ask ("Away,
+  Costigan."). s11b `scar_told_laney`: pacific / swan (Laney: it's Theo's; "He told me on the Aerobed," getty save) / lena (pierogi and a
+  cat named Archbishop) / fight (Laney: "Okay.").
+- s12 `e11_vote` vespers/sunset. s14 `e11_quarters`: okay / coke / roll.
+- s16 `e11_porch_cig`: lit → **Reliquary No. 6 · 10/25/09 · Lucia · under the stars, Costigan, really** (on the back of Verna's receipt;
+  the dead Red folded inside) / no.
+- s16b `e11_decided`: **wreck ("Not to be the one who wrecks anything." Lena: "Me neither. I decided at seven. About one minute after.")**
+  / homework ("Whose?" "Becca's." "She's going to give you an A." "I've got an 8:04 tomorrow. I'm going to be standing right there.") /
+  sleep (she stays; "I decided too. Don't ask me what.") / know (she stops him: "Not out here. Not tonight." "Don't make me do it twice.").
+- s18 `e11_candle`: floor / light (Jack lights one, says for no one) / didnt. s19 `e11_gina`: lena (Lena dictates: "the work of mercy is
+  *visit* the imprisoned … you'll lend her the address") / advice / away. s19b `e11_condor`: becca (Jack texts "condor. 57 on the wing";
+  Becca looked her up: a she) / watch / lena.
+- s20 `e11_comeback`: hold / whodat (Tony yells it back) / letgo ("Six and oh.").
+- s22 `e11_costume`: **isidore (St. Isidore & St. Maria — her first) / wildthing (Max & a Wild Thing; she has the ears) / moviegoer (Binx
+  Bolling & Kate Cutrer; Jack promises her a Driftwood copy; BINX + KATE on her hand).** Every option answers Lena's O'Connor in E12.
+
+**Flags introduced**
+`e11_glass` · `e11_anglicans` · `e11_saturday` · duel: `e11_exit_personal`, `e11_exit_apology` · `e11_hale` · `e11_becca_invite` ·
+`e11_evan` · `e11_seat` · `e11_heat` (counter, Lena heat cap) · `e11_alibi` · `e11_tin` · `e11_bixby` · `e11_intel` · `e11_split` ·
+`e11_margot` · `e11_vote` · `e11_quarters` · `e11_porch_cig` · `e11_decided` · `e11_candle` · `e11_gina` · `e11_condor` · `e11_comeback` ·
+`e11_costume` · long-arc: **`scar_told_laney`** (pacific/swan/lena/fight), **`knows_tony`**; `reliquary` +1 and `jack_cigs` +1 on `lit`.
+
+**Payoffs owed (E12+)**
+- `e11_costume` → Halloween at the Ferrante house (Lena as Flannery O'Connor, stuffed peacock); every answer matches hers.
+- `e11_intel=="list"` → Theo and Laney hold Becca's list (napkin) — a live route to Lena via Laney; E12 may use it or must account for it.
+- `e11_decided` → the porch decision; `e11_comeback=="hold"` → Lena enters E12 at resolve 4. Lena's 8:04 with Wes went to "Go to sleep."
+- Gina/Ashley Vrabel's orange jumpsuit → E15. `e11_saturday=="ask"` → Jack's money (Gloria saw the ticket). Condor 57 (Becca's page).
+- Theo's Sunday dawns (Margot now has "Malibu. Two-forty." on the library path). Evan's 4:31 (🔒). Priya's "points" (🔒).
+- Kevin/Theo simultaneous line (s13; never touched again, 🔒 S4).
+
+**Tallies after S1E11**
+- Reliquary: 5 → **6 on `e11_porch_cig=="lit"`** (No. 6, Lucia). Jack's cigarettes lit on-page +1 on `lit`.
+- Duel record (official): see verdicts above (enters 4–1; exits 4–2, 4–1–1, 5–1, or 4–1 no decision).
+- Saints 6–0 on the glass. Scar tellings: Laney now has one (`scar_told_laney`); Margot heard "a swan" as a Lie in Two Truths (all paths).
+- Lena's "Costigan" in fight register (duel), "Jack" on the porch, "Youngstown" at s19b and s23. Lena's medal touch: s04b (Dorothy Day,
+  Press), s14 (okay).
+- Lena's resolve: s01 5 → s04 5 → s07 6 → s14 5 → s16 4 → s18 6 → [hold −1] → s23 −1 (ends **4 or 5**).
+- Anchor pie ratings: Gloria rated Theo "Baked Alaska" (by phone).
+
+**Ledger housekeeping (from the S1E11 review)**
+- Weekday anchors: on Oct 24–25 "Thursday" means Oct 22. The dawn in the library is "the bells" / "the library" / "the fifteenth."
+- The Blessing of the Animals was Sat Oct 3; Oct 24 is three weeks later (bible §8.5 corrected).
+- Borders is never shown dying in 2009 (liquidation 2011); used books come from Driftwood.
+- McWay sunset Oct 24 ≈6:10 p.m. PDT; civil twilight ends ≈6:38; Oct 25 sunrise 7:12, nautical twilight ≈6:15.
+- Becca's rosary's owner (her grandmother; Sunshine Mine) is NOT on the page; never narrate it before S2E03.
+- Lena's scriptural languages are Latin and Greek (Septuagint), not Hebrew.
