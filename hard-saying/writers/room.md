@@ -148,6 +148,21 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    good one. That's the trouble."
 64. **One character's figure given to another** (S1E08): Lena's E04 "the way she does everything, all the way" handed to Becca twice.
    Character-defining figures stay with their owner; Becca and Lena never share a simile (the brief depends on the difference).
+65. **Reaction adverbs on Becca** (S1E09; "delighted" 35× and "thrilled" 16× across E01–E09): "says Becca, delighted," "thrilled with
+   him," "happily," "overjoyed," "glowing." Max two per episode; let her lines carry the joy. Her goodness is the knife, never the tag.
+66. **"Jack can't read Lena's face"** (S1E09; four in one draft): "Her face doesn't do anything Jack has a word for," "he couldn't say
+   what it's doing," "too quick to name." Once per episode; otherwise give her an action.
+67. **Dialogue that opens on "Nobody…"** (S1E09; 45 openers E01–E09): every character's universal-negative aphorism ("Nobody saw it
+   coming," "Nobody drives my grandfather's car," "Nobody threads that needle"). Max three per episode, narration included.
+68. **"Somebody has to"** (S1E09; 24 uses E01–E09). Max one per episode.
+69. **"Whole" as an intensifier** (S1E09; ~20 per path in one draft: "her whole face," "the whole cove," "the whole Grove"). Max six per
+   episode. **"For once"**: max one per episode.
+Small repeats to watch (S1E09): the moon laying a road on the water (once an episode); "in no hurry" (Wes's vowels own it); "the real
+one / her real smile / a real one" as a sincerity stamp; "the four of them"; Hale's Williams in the back pocket (the inventory epithet
+— once or twice an episode, where it pays); "scuffed (black) flip phone" (once); Wes's chipped tooth (introduce, then farewell only);
+Wes's "Ohio" (~8 a path), "podna" and "dawlin'" (≤4 each) — spend them where they land; feet that stop swinging (one per path); Kevin's
+napkin as the scoring button (one); "pageant" as Laney's label (give her the register instead); "Lena goes still"; "the kitchen /
+booth / room" as addressee (#32 covers it).
 Small repeats to watch (S1E08): the landing window "opens its six inches" (spend once an episode); the RAZR "buzzes itself toward
 the edge"; "the one angle where the screen lights" (E01's phrase; once an episode); Lena's laugh "coming up the concrete" (E07 owns
 it); stairwell door bangs as a scene ending (retired with the footsteps); the Driftwood cats (once an episode, give them a new

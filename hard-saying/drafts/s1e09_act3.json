@@ -1,0 +1,557 @@
+{
+ "scenes": {
+  "s06": {
+   "slug": "SATURDAY · 5:05 PM · SEACLIFF ROAD, THE LAST HOUSE",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "The van gets back from San Luis Obispo at twenty to five, and by five Becca has the clipboard out of her tote on the Delgado steps. “The old lighthouse!” She taps the page. “It’s on Wes’s list.” There it is, under *horses??*, in her square capitals: THE OLD LIGHTHOUSE (POINT). Wes reads it over her shoulder and nods, as gravely as he has nodded at every list she’s shown him since last night. “I like a lighthouse,” he says.",
+    "Laney has gone up to 217 to lie face down until the cake wears off. Theo is “editing,” which means the 412 door is shut and something French is playing behind it. Kevin and Margot have gone to the *Tide*, Margot to file and Kevin, he says, to make sure she eats a vegetable. So it’s the four of them who walk out Seacliff Road, Wes and Lena in front, Becca and Jack behind, west, straight into the sun. At five in October it sits low at the end of the road and fills it, and they walk with their hands up at their eyebrows like a squad of bad salutes. Past Pi Lambda Chi, where a sister in a lawn chair waves at Lena with her whole arm. Past the surf rentals, the couches on the roofs, a wetsuit drying on a fence with its arms out.",
+    "Then the road runs out at the Lighthouse: the last house, shingled and salt-gray, the deck, the back porch looking north to the Point, the chain-link fence behind it with the gap where the post rotted. Jack hasn’t been back since the night he met her on that porch. Past the gap a dirt path goes on along the bluff, gold in this light, toward the squat white shape of the old light at the end of the land.",
+    "Lena stops at the fence. “I’m going back.”",
+    "Wes turns around, grinning, walking backward a step. “Since when are you scared of a cliff, dawlin’?”",
+    "“Since never.” Her hand goes to the medal at her collarbone. “I’m cold.”",
+    "“It’s so *warm*!” Becca says, delighted on Lena’s behalf, as if the weather were a present somebody had brought her. It is warm. It’s seventy-five degrees, and the sun is on all four of their faces.",
+    "Wes looks at Lena for a second, and then past her, at Jack, and Jack is the only one of the four of them who hasn’t said a word."
+   ],
+   "choices": [
+    {
+     "text": "“I’ll walk you back.”",
+     "tag": "Sincerity",
+     "set": {
+      "e9_point": "walk",
+      "rel.wes.friction": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At the last house on Seacliff, Lena wouldn’t go on to the Point. You walked her back.",
+     "response": [
+      "“Good idea!” Becca says. “Walk her back, Jack! We’ll bring you a picture!” She already has the camera out of her tote, a yellow cardboard disposable, and is winding it with her thumb.",
+      "Wes takes a moment. Then: “Yeah. Go on, Ohio.”"
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "“Come on, Wes. I’ve never seen it either.”",
+     "tag": "Go",
+     "set": {
+      "e9_point": "point"
+     },
+     "key": "At the last house on Seacliff, Lena wouldn’t go on to the Point. You went on with Wes and Becca.",
+     "response": [
+      "Lena is already turning. “Bring me a picture,” she says, to all three of them.",
+      "Jack looks at the road behind her instead: the long gold street, the porches, a kid on a beach cruiser riding no-handed with a board under one arm, a dog asleep across a driveway in the last of the heat."
+     ],
+     "goto": "s06b"
+    }
+   ]
+  },
+  "s06a": {
+   "slug": "SATURDAY · 5:12 PM · SEACLIFF ROAD",
+   "body": [
+    "They walk back east with the sun behind them now, warm on the backs of their necks, their two shadows going on ahead of them up Seacliff, long as telephone poles. Side by side. Nobody touching anybody. The Greek houses come back one at a time. A sprinkler ticks across a Kappa lawn and wets the sidewalk in front of them in a slow arc, and they both step around it without discussing it. Somewhere down a side street a skateboard rolls over the seams in the concrete, clack, clack, clack, and then a long hiss, and then nothing.",
+    "Seacliff at this hour belongs to everybody who slept till two. A Sigma Rho on the porch roof is working a grill with a pair of salad tongs and a can of Tecate. Somebody’s radio in an upstairs window has Kings of Leon going, the one everybody has had going since June. The jasmine on the fences has had all day in the sun and smells like it. Lena’s boots knock along the sidewalk, the Justins, resoled twice, a sound he’d know in the dark.",
+    "She doesn’t say anything for a whole block. He doesn’t fill it.",
+    "Past Pi Lam, where the lawn chair is empty now, Lena says, “Don’t ask me, Jack.”",
+    "“I wasn’t going to.”",
+    "“I know.” She walks a few more steps. “That’s why I let you come.”",
+    {
+     "if": "e8_relief==\"named\"",
+     "text": "Then she looks over at him, sideways, chin up, the way she used to come at him across Hale’s table back before either of them was being careful. “Go ahead,” she says. “Tell me what my face is doing.”",
+     "else": "Then she looks over at him, sideways, chin up, the way she used to come at him across Hale’s table back before either of them was being careful. “Go ahead,” she says. “Look at me like that, then.”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“I’m not looking at it.”",
+     "tag": "Control",
+     "cue": "Lena will remember that.",
+     "set": {
+      "e9_face": "notlooking",
+      "rel.lena.trust": "+1",
+      "rel.lena.heat": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "One low laugh comes out of her, the real kind, and she doesn’t do a thing to hide it. “Liar.”",
+      "“Mostly,” he says.",
+      "And the next block is easier. She tells him, at length and with exhibits, what she thought of the pink champagne cake, which was a crime against the state of Louisiana, and by Sigma Rho she is nearly herself. She does Laney with the cake knife for a microphone. She does Theo in the passenger seat of his own grandfather’s car, hands folded in his lap, being driven to his own funeral by a girl from Idaho, and Jack has to stop walking.",
+      "Where Seacliff gives out at the Grove she stops at the top of the bike path, under the first of the eucalyptus. “Go wash dishes, dish man. I’ll be at the Anchor at eleven with my boyfriend and your girlfriend, and we’ll all be very nice.”",
+      "She takes the path up toward Delgado. Jack goes the long way, around by the Lagoon, to get La Flaca. Over the path the eucalyptus are letting go of their bark in long pale strips, and the whole Grove smells of menthol and dust and something sweeter underneath it, going warm in the last of the sun."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“The thing it did on the beach.”",
+     "if": "e8_relief==\"named\"",
+     "tag": "Candor",
+     "set": {
+      "e9_face": "beach",
+      "rel.lena.friction": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "She doesn’t deny it this time. She doesn’t answer it, either. They walk the whole next block of Seacliff with it said out loud, past the lacrosse nets on the Sigma Rho lawn and a pickup with four surfboards in the bed, and she doesn’t take it back, and he doesn’t either.",
+      "Where Seacliff gives out at the Grove she stops at the top of the bike path, under the first of the eucalyptus. “Go wash dishes, dish man. I’ll be at the Anchor at eleven with my boyfriend and your girlfriend, and we’ll all be very nice.”",
+      "She takes the path up toward Delgado. Jack goes the long way, around by the Lagoon, to get La Flaca. Over the path the eucalyptus are letting go of their bark in long pale strips, and the whole Grove smells of menthol and dust and something sweeter underneath it, going warm in the last of the sun."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“Being cold. In seventy-five degrees.”",
+     "tag": "Wit",
+     "set": {
+      "e9_face": "cold",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "She nearly laughs. It gets as far as the corner of her mouth.",
+      "“It’s a dry cold,” she says, with tremendous dignity, and folds her arms over her sundress in the last real heat of the day, and that is her story, and she is sticking to it for two more blocks.",
+      "Where Seacliff gives out at the Grove she stops at the top of the bike path, under the first of the eucalyptus. “Go wash dishes, dish man. I’ll be at the Anchor at eleven with my boyfriend and your girlfriend, and we’ll all be very nice.”",
+      "She takes the path up toward Delgado. Jack goes the long way, around by the Lagoon, to get La Flaca. Over the path the eucalyptus are letting go of their bark in long pale strips, and the whole Grove smells of menthol and dust and something sweeter underneath it, going warm in the last of the sun."
+     ],
+     "goto": "s07"
+    }
+   ]
+  },
+  "s06b": {
+   "slug": "SATURDAY · 5:31 PM · MARISOL POINT",
+   "set": {
+    "saw_point_cross": true
+   },
+   "body": [
+    "Through the gap in the fence the path runs along the bluff for a quarter mile, through ice plant and dry foxtails that get in Becca’s socks, and then the land just stops. There’s a little dirt lot off the end of Seacliff, tire ruts baked hard into it, and a county sign nobody has read in years. There’s the old Point Marisol Light, squat and white and locked, its lamp room dark since 1967. And there’s the wall: fieldstone, knee-high on this side, the kind of wall you could sit on with a sandwich. On the other side of it there is nothing for seventy feet, and then the reef, and the white water working over it, and the sound of that coming up a little late.",
+    "The sun is low now, and the wall throws its shadow back across the lot at them, long and blue. Wes walks once around the old light with his hands in his pockets, looking at the base of it, and comes back satisfied. “Somebody poured that right,” he says. “Eighteen-ninety. They knew what they were standing on.” Becca takes a picture of it with a yellow disposable camera out of her tote, for Lena, since Lena’s cold, and winds it on with her thumb.",
+    "The cross is at the wall, a little to the left of where the path comes in. White wood, the paint going chalky in the salt. Somebody has burned letters into the crossbar with something hot, carefully, each stroke gone over twice: NORA. At the foot of it, against the stones, there’s a bunch of white flowers gone brown, tied around the stems with kitchen string.",
+    "Becca goes down on her knees in the ice plant, Wranglers and all, and folds her hands on the top of the wall. “Eternal rest grant unto her, O Lord,” she says, for a girl she never met, by the name on the crossbar. And Jack, standing behind her, says, “…and let perpetual light shine upon her,” because that’s how it goes, because somebody has to say the second half.",
+    "Wes reads it off the wood. “Nora.”",
+    "Jack knows the name: it’s on the brass plate under the votive candles at St. Brendan’s, and it was in Priya’s mouth at two in the morning in the fourth-floor lounge over a Safeway cupcake, *fell at the Point, end of April*, and the other balloon got tied out here somewhere, in daylight, because the rule is about after dark.",
+    "Wes has gone to the wall. He sets one boot on the bottom course of stones and looks over, down, at the rocks and the white water. “That’s a long way down,” he says. Then he turns around. “What’s she scared of up here, Ohio?”"
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "the_point",
+     "title": "The Point",
+     "text": "A cliff, according to Priya. Nobody goes there after dark. Her rule, not the school’s. Now I know whose rule it is. Saturday the 10th, before dark, with Wes and Becca: the old light, locked; a stone wall to the knee, and then nothing; seventy feet down, rocks. A white cross at the wall with NORA burned into the crossbar — the name on the plaque. Somebody’s flowers at the foot of it, gone brown, tied with kitchen string. Becca knelt and prayed for her. Lena wouldn’t come past the last house. She said she was cold."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“I don’t know.”",
+     "tag": "Candor",
+     "set": {
+      "e9_scared": "dontknow",
+      "rel.wes.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Wes nods slowly, as if that were the right answer, and maybe the only one he’d have taken.",
+      "Wes keeps his eyes on the water. “I’ve known her since she had a retainer,” he says. “She’s scared of something.”",
+      "The sun is getting down near the sea, and they start back along the bluff path before it goes. Becca brushes the ice plant off her knees. “Isn’t there a rule? Somebody at Portolá said there’s a rule about up here.” So Jack gives her Priya’s: nobody goes to the Point after dark. Becca hadn’t heard it. She looks up at the sky, which is pink and orange and nowhere near dark, and is satisfied. “It’s not dark yet!”",
+      "Jack is going to be late for work."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“She’s not scared of anything. She’s cold.”",
+     "tag": "Wit",
+     "set": {
+      "e9_scared": "cold",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Wes turns his head and looks at him, not unkindly. “It’s seventy-five degrees, podna.”",
+      "Wes keeps his eyes on the water. “I’ve known her since she had a retainer,” he says. “She’s scared of something.”",
+      "The sun is getting down near the sea, and they start back along the bluff path before it goes. Becca brushes the ice plant off her knees. “Isn’t there a rule? Somebody at Portolá said there’s a rule about up here.” So Jack gives her Priya’s: nobody goes to the Point after dark. Becca hadn’t heard it. She looks up at the sky, which is pink and orange and nowhere near dark, and is satisfied. “It’s not dark yet!”",
+      "Jack is going to be late for work."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“Ask her.”",
+     "tag": "Control",
+     "set": {
+      "e9_scared": "ask",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Yeah,” Wes says. Nothing about when.",
+      "Wes keeps his eyes on the water. “I’ve known her since she had a retainer,” he says. “She’s scared of something.”",
+      "The sun is getting down near the sea, and they start back along the bluff path before it goes. Becca brushes the ice plant off her knees. “Isn’t there a rule? Somebody at Portolá said there’s a rule about up here.” So Jack gives her Priya’s: nobody goes to the Point after dark. Becca hadn’t heard it. She looks up at the sky, which is pink and orange and nowhere near dark, and is satisfied. “It’s not dark yet!”",
+      "Jack is going to be late for work."
+     ],
+     "goto": "s07"
+    }
+   ]
+  },
+  "s07": {
+   "slug": "SATURDAY · 11:20 PM · THE ANCHOR",
+   "music": "Sam Cooke — “Bring It On Home to Me”",
+   "body": [
+    {
+     "if": "e9_point==\"point\"",
+     "text": "Jack has been at the Hobart since 7:12. He came in with ice plant still stuck in the cuffs of his jeans, and Gloria looked at the clock over the pie case, and then at him, and went back to her tickets.",
+     "else": "Jack has been at the Hobart since seven."
+    },
+    "Four hours of Saturday: plates, cups, bus tubs, the racks going in dirty and coming out scalding, the steam coming up into his face every time the door lifts. Rudy’s transistor on the shelf is still talking about the Dodgers, who swept St. Louis today. Somebody else’s quarter has Sam Cooke going on the jukebox, and the chalkboard over the register says PIE OF THE DAY: PEACH.",
+    "From the pass he can see the big round booth in the window, the one nobody gets unless Gloria likes them: Lena and Wes on the inside, then Laney, then Kevin at the end with the van keys already out on the table, and Margot with her back to the wall like a gunfighter. Theo is at Delgado, editing.",
+    "Becca comes straight back to the pass before she even sits down, because she has never seen a commercial dish machine up close and wants to know the cycle time. Jack tells her ninety seconds. She tells him the dairy down the road from them runs its bulk-tank wash on a timer, and asks what the rinse temperature is, and is so interested in the answer that Gloria, coming by with the coffee pot, stops to look at her. One look, from the Ropers up. Then Gloria turns to Jack. “Apple,” she says. “Told you, hon.”",
+    "“Thank you!” Becca says, and goes back to the booth glowing, with no idea what she’s been called.",
+    "Gloria takes the pot around the booth, filling cups, and stops at Wes. She looks at him. The pencil through her gray bun doesn’t move. Wes, who was halfway into a story about a crawfish boil, notices that he’s being looked at and stops, and smiles up at her with the chipped tooth, and waits; he was raised by somebody; he knows how this goes. Gloria takes her time.",
+    "“Peach,” she says.",
+    "Wes asks Lena with his eyebrows, gets nothing, and asks Gloria. “Is that good?”",
+    "“Everybody likes a peach, hon.”",
+    "Lena orders him the peach. Jack runs a rack he has already run. The last peach pie he saw was in Malibu, in a porcelain dish with the sticker still on the bottom, under her mother’s crust.",
+    "At the counter two men in orange Grundens bibs are eating chili with their elbows out, harbor regulars off the night boats. The one with the white beard has had the Nobel on his mind since he sat down; Jack has been getting it in pieces over the Hobart all night. Now it comes out all at once, loud enough for the window booth. “Affirmative-action prize. Nine months. Give his kind a microphone and Norway falls over.” His friend laughs into the chili.",
+    {
+     "if": "e9_nobel==\"what\"",
+     "text": "Jack said *For what?* himself, yesterday at six in the morning in Becca’s truck, and meant it, and it was not this.",
+     "else": "Yesterday at six in the morning Becca called it a ribbon at the fair before the calf’s done anything, and it was not this."
+    }
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "pie",
+     "title": "The Anchor",
+     "text": "Marionberry: 4/10. Olallieberry: 9/10 — Dad would eat two pieces and complain about the second. Gloria rated Lena: pecan. She rated Margot without meeting her: rhubarb — tart, and nobody can decide if it’s a fruit. She rated Becca without meeting her: apple. Honest crust. Nobody loses sleep over an apple. Then she asked what happened to the pecan. A whole pie for a funeral is half price. I work here Tue/Thu/Sat, seven to one. Once a year the kitchen goes dark on a Thursday. Saturday the 10th Gloria met Becca: ‘Apple. Told you, hon.’ She looked at Wes a long time. ‘Peach.’ Everybody likes a peach, she says."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Say that again. I didn’t catch it.”",
+     "if": "trait.candor>=33",
+     "tag": "Candor",
+     "cue": "Gloria will remember that.",
+     "set": {
+      "e9_fisher": "said",
+      "soul.honesty": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "He says it from the pass, not loud, with a rack of wet cups still in his hands. The counter goes quiet. The white beard turns on his stool and looks at the dishwasher, the apron, the eighteen years of him, and doesn’t say it again.",
+      "Gloria doesn’t look up from the register. “Pie or the door, Merle.”",
+      "Merle looks at the door. He picks pie. In the window booth Lena has stopped in the middle of a sentence. She saw the whole thing.",
+      "At twenty past twelve the booth breaks up. Kevin stands jingling the Odyssey keys. Margot leaves a tip calculated to the cent, as a position. Laney takes a toothpick out of the jar by the register for each of them, like party favors, and Becca hugs Gloria, who permits it.",
+      "Wes stays on the stool at the end of the counter where he moved half an hour ago. “I’ll ride back with Ohio,” he tells Lena, and after a second she says all right. There’s a bottle in the inside pocket of his jacket, and when he leans on the counter the label shows: Jameson, the green one.",
+      "Rudy, scraping down the flattop, asks him did he ever fish. Rudy’s uncle had a skiff out of Oxnard. Wes’s uncle had a flatboat. “Aluminum,” Wes says. “Sixteen foot.” He stops there, and Rudy, who knows where a man stops, goes back to his grill."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "Let Gloria handle it.",
+     "tag": "Control",
+     "set": {
+      "e9_fisher": "gloria",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He keeps his hands in the rack. Gloria handles it. She doesn’t even look up from the register. “Pie or the door, Merle.”",
+      "Merle considers the door, which is glass, and has the harbor on the other side of it, and the harbor is cold. He picks pie. Jack slides the rack in and pulls the door down, and the steam comes up into his face, and for once he’s grateful for it.",
+      "At twenty past twelve the booth breaks up. Kevin stands jingling the Odyssey keys. Margot leaves a tip calculated to the cent, as a position. Laney takes a toothpick out of the jar by the register for each of them, like party favors, and Becca hugs Gloria, who permits it.",
+      "Wes stays on the stool at the end of the counter where he moved half an hour ago. “I’ll ride back with Ohio,” he tells Lena, and after a second she says all right. There’s a bottle in the inside pocket of his jacket, and when he leans on the counter the label shows: Jameson, the green one.",
+      "Rudy, scraping down the flattop, asks him did he ever fish. Rudy’s uncle had a skiff out of Oxnard. Wes’s uncle had a flatboat. “Aluminum,” Wes says. “Sixteen foot.” He stops there, and Rudy, who knows where a man stops, goes back to his grill."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "“He’s been president nine months. Even the Browns get a season.”",
+     "tag": "Wit",
+     "set": {
+      "e9_fisher": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He says it over the pass in his best Youngstown, loud enough for the counter, and the counter laughs, both fishermen and the woman with the crossword and Rudy at the flattop, and the white beard shuts his mouth and eats his chili. It works. Jack isn’t proud of how well it works. He goes back to the racks.",
+      "At twenty past twelve the booth breaks up. Kevin stands jingling the Odyssey keys. Margot leaves a tip calculated to the cent, as a position. Laney takes a toothpick out of the jar by the register for each of them, like party favors, and Becca hugs Gloria, who permits it.",
+      "Wes stays on the stool at the end of the counter where he moved half an hour ago. “I’ll ride back with Ohio,” he tells Lena, and after a second she says all right. There’s a bottle in the inside pocket of his jacket, and when he leans on the counter the label shows: Jameson, the green one.",
+      "Rudy, scraping down the flattop, asks him did he ever fish. Rudy’s uncle had a skiff out of Oxnard. Wes’s uncle had a flatboat. “Aluminum,” Wes says. “Sixteen foot.” He stops there, and Rudy, who knows where a man stops, goes back to his grill."
+     ],
+     "goto": "s08"
+    }
+   ]
+  },
+  "s08": {
+   "slug": "SUNDAY · 1:58 AM · CAMPUS POINT",
+   "body": [
+    "They walk the three miles back from the wharf with La Flaca between them, Wes pushing her by the handlebars because he has never walked a bicycle with a name before and wants the full experience. Ray’s clip-on light throws its white circle up Ocean Road ahead of them, and something on the fender ticks against the spokes every turn of the wheel. At Campus Point they chain her to the rail at the top of the Marine Lab stairs and go down to the sand.",
+    "The beach at two in the morning is enormous and empty and the color of pewter. The lifeguard tower stands on its pilings with its shutter chained, where in September Lena sat on that ramp and didn’t finish a sentence; Wes walks straight past it. Up over the hills to the east the moon is out, half of it, cut clean down the middle, and it lays a gray road across the water.",
+    "Wes takes the bottle out of his jacket. “Your roommate gave it to me in the car,” he says. “Welcome gift. He said a lot of things.” He cracks the seal and drinks and hands it to Jack. Then he sits down in the sand and unlaces his sneakers and stuffs his socks in them and rolls his jeans to the knee, which accomplishes nothing, and stands up and walks into the Pacific.",
+    "“I came to see it,” he says over his shoulder. “I’m gonna touch it.”",
+    "Jack stands on the wet sand holding the bottle for about four seconds. Then he sets it down above the tide line, kicks off his shoes, and goes in after him.",
+    "The water is October cold, sixty degrees if that, and it hurts the bones of his feet. They stand in it to their knees with their jeans soaking black, and the little waves come in and slap their shins and go out again pulling the sand from under their heels. Wes holds his hands out low at his sides, palms down, touching the tops of the waves as they go by. He laughs once, at the cold. Then he looks over at Jack, at his face, at the left eyebrow, in that light. “Where’d you get that?”"
+   ],
+   "choices": [
+    {
+     "text": "“I walked into the Pacific Ocean.”",
+     "tag": "Wit",
+     "set": {
+      "scar_told_wes": "pacific",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Wes looks out at the ocean, which is going on being enormous all around their knees, and then back at Jack. “Well,” he says. “Here we are, podna.”",
+      "A bigger one comes in and soaks them both to the thigh, and they retreat up the sand to the tower ramp swearing, Wes scooping up the bottle on the way."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "“My sister. A Nintendo 64 controller.”",
+     "tag": "Charm",
+     "set": {
+      "scar_told_wes": "controller",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "“Which sister?”",
+      "“Gina.”",
+      "Wes gives this serious thought. “I’d believe it of any sister.” Then a set comes in bigger than the rest and soaks them to the thigh, and they give up and go back up the sand to the tower ramp, Wes rescuing the bottle on the way."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "“Hockey puck. Youngstown Phantoms.”",
+     "tag": "Control",
+     "set": {
+      "scar_told_wes": "puck",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Hockey,” Wes says. “In Ohio.”",
+      "“We have ice.”",
+      "“Y’all have *everything*.” A wave comes in bigger than the others and soaks them both to the thigh, and they go back up the sand to the tower ramp, and Wes picks up the bottle on the way."
+     ],
+     "goto": "s08b"
+    }
+   ]
+  },
+  "s08b": {
+   "slug": "SUNDAY · 2:31 AM · CAMPUS POINT, THE LIFEGUARD TOWER",
+   "music": "Iron & Wine — “Naked as We Came”",
+   "set": {
+    "knows_wes_attic": true
+   },
+   "body": [
+    "They sit on the tower ramp with their jeans going stiff and cold, the boards splintered under them, NO LIFEGUARD ON DUTY on the sign over their heads. Behind them the wind works at the shutter, and the chain gives it a little play, and it knocks once against the frame and is still. The bottle goes from Wes to Jack and back. Jack takes it in small sips, enough to be in it with him. For twenty minutes they talk about the Saints’ secondary, because Wes has an opinion about every man in it and wants Jack’s on Tracy Porter’s footwork, which Jack doesn’t have and makes up, and Wes takes it seriously and argues with it, and it is a very good twenty minutes.",
+    "Wes passes him the bottle. “You wrote on her wall at two in the morning, that first week,” he says. “I liked it at four.”",
+    "“I saw.”",
+    "“I was up.”",
+    "Down at the waterline the small waves fold over, pale, and slide back. Wes turns the bottle around in his hands by the neck.",
+    "“Your roommate asked me the strangest thing in the car,” he says. “Coming up from the airport, top down. We’re talking about the Saints, his car, nothing, and out of nowhere he asks me if you ever get one you can’t reach.” He drinks. “I told him no. I told him I got everybody.”",
+    "He’s quiet so long that Jack thinks that’s the end of it.",
+    "“I didn’t,” Wes says.",
+    {
+     "if": "e9_fri_wes==\"boat\"",
+     "text": "He looks over at Jack, and almost smiles. “Told you. Another night.”"
+    },
+    "“Fourth day,” he says. “Me and my uncle, in his flatboat. We’d been running people out to the overpass, off roofs, out of windows. You stop smelling it after the first day. You stop hearing the dogs.” He gives Jack the bottle and doesn’t ask for it back. “We come up behind a house on Pauger Street. Water’s up to the gutters. And I hear knocking. Under the roofline. Somebody in the attic, knocking on the wood from inside. Not crazy. Steady. Like she’d been at it for days and meant to keep on. A woman. I could hear her saying something. I never did make out what.”",
+    "The shutter knocks once behind them in the wind. Wes doesn’t turn around.",
+    "“Everybody old in New Orleans keeps a axe in the attic. Since Betsy, in sixty-five. People drowned in their attics in Betsy. We had a axe in the boat.” He holds up his right hand and looks at the palm of it. “So I got up on the edge of the roof and I went at it. And it wouldn’t go through. Old house. Cypress rafters, a hundred years old, that wood’s like iron, podna. I’d hit it and the axe would come back at me. And she’s knocking. And I’m chopping. And the water’s still coming up. It was still coming up on the fourth day. Nobody tells you that part.”",
+    "He puts the hand down on his knee. “It was hot. Nobody remembers that either. Ninety-something every day, and the water was warm as dishwater, and it smelled like a refrigerator somebody unplugged a month ago, the whole city.”",
+    "“And my uncle says we got to go. There’s people on the next house, on the roof, we can see ’em. There’s kids.” A long pause. “And he was right. He was right. So we went to the next house.”",
+    "The water folds over, and slides back.",
+    "“In the morning we went back,” Wes says. “And it had stopped.”",
+    "Jack holds the bottle and doesn’t drink.",
+    "“Never told nobody that,” Wes says. “Not my uncle. We never talked about it, not once, him and me, and we still fish together every other Saturday off the Lakefront. Not her.” He shrugs, the big shoulders. “You can tell a stranger, I guess. That’s what strangers are for.”",
+    "“I couldn’t kneel for a year after.” Then Wes does smile, a real one, with the tooth in it. “Then she came along and I could.”",
+    "Jack believes it the second he hears it. Of course it was her.",
+    "Then, after the water has had a turn: “You got brothers, Ohio?”"
+   ],
+   "choices": [
+    {
+     "text": "“One. He’s in prison. Trumbull. Five years.”",
+     "tag": "Candor",
+     "set": {
+      "e9_wes_danny": "told",
+      "soul.honesty": "+1",
+      "rel.wes.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "On the beach at two in the morning you told Wes your brother’s in prison.",
+     "response": [
+      "Wes doesn’t ask what for. He takes the bottle back and holds it on his knee, and the surf keeps at it, small and patient, and Jack waits for the question until he understands it isn’t coming.",
+      "“Bet he’s proud of you,” Wes says.",
+      "Jack looks at the water."
+     ],
+     "goto": "s08c"
+    },
+    {
+     "text": "“One. Older. He’s in Ohio.”",
+     "tag": "Control",
+     "set": {
+      "e9_wes_danny": "ohio",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Always Ohio with you people,” Wes says, and laughs, and passes him the bottle, and Jack takes a sip so he won’t have to add anything. It’s true, as far as it goes. It’s as far as he can make it go on a beach at two in the morning, and Wes doesn’t push."
+     ],
+     "goto": "s08c"
+    },
+    {
+     "text": "“One. He’s the good one.”",
+     "tag": "Wit",
+     "set": {
+      "e9_wes_danny": "good",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Wes laughs, the big one, the one he saves for Drew Brees, and says his brother’s the good one too, back home, ask anybody, ask his mama. “And that’s how you know we’re both lying, podna.”",
+      "Jack laughs with him. It goes out over the water and doesn’t come back."
+     ],
+     "goto": "s08c"
+    }
+   ]
+  },
+  "s08c": {
+   "slug": "SUNDAY · 3:10 AM · CAMPUS POINT, THE LIFEGUARD TOWER",
+   "set": {
+    "knows_wes_ring": true
+   },
+   "body": [
+    "At ten past three Wes takes out his phone, the scuffed black flip phone, and opens it and thumbs through something with his tongue in the corner of his mouth. Then he turns it around and holds it out, and Jack has to lean in to find the one angle where the screen lights.",
+    "It’s a picture, grainy, the flash too close: a little velvet box, open, on a dresser with a lace runner. In it an old ring, a small stone set up high, the band worn thin on one side by somebody else’s hand.",
+    "“Mémère’s,” Wes says. “Lena’s mémère. Odile gave it to me at Easter, in her kitchen. Put it in my hand and closed my hand up on it. Said, *For when.*” He looks at the picture himself before he shuts the phone. “I’m gonna ask Tony after she graduates. I’m not stupid, Ohio. She’s got four years and a law school in her. I’ll wait.” He grins. “I’m good at waiting.” He turns the phone over in his hand. “Odile’s eighty-eight. She don’t trust a man who can’t two-step and she don’t trust a man who can’t fix a outboard. I can do both. Odile only has the two questions.”",
+    {
+     "if": "e9_poem==\"knee\"",
+     "text": "Then, still grinning: “That wasn’t a proposal last night, podna. *This* is.”"
+    },
+    "He puts the phone in his pocket. “Don’t say nothing to her. I’m asking her daddy first.”",
+    "Then he sits looking out at the water, wet to the thigh, bare feet in the sand, the cap pushed back on his head. “Take care of her,” he says. “She thinks she’s the one doing the carrying.”",
+    "The tide has gone out some, while they weren’t watching. The sand it left is wet and flat and shining, and the moon has climbed up over the hills and laid itself down in it."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "wes",
+     "title": "Wes Arceneaux",
+     "text": "Lena’s boyfriend. Tulane, civil engineering; the boat at sixteen. Six-two, a chipped front tooth, a Saints cap he’s been bending since 2006. Calls me the Ohio guy. Says she called me a jagoff and that means she likes me; he’s known her since she had a retainer. Drank the Pacific: the jar came back empty. Theo fetched him from the airport alone, in a two-seater, with a sign, and cancelled his motel. Bedbugs, Theo says. He’s on Theo’s new air mattress in our room, three nights. The Corps built the walls wrong; he’s going to build them right. I like him. Saturday night on the beach at Campus Point he waded into the Pacific to the knees. At sixteen he pulled people off roofs for four days in his uncle’s boat. There was one he couldn’t get to — a woman in an attic on Pauger Street; the axe wouldn’t go through. He couldn’t kneel for a year after. Then she came along, he says, and he could. Her Mémère gave him a ring at Easter, for when. He’s going to ask her father after she graduates. He asked me not to say anything to her. I won’t. He asked me to take care of her."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“I will.”",
+     "if": "trait.sincerity>=55",
+     "tag": "Sincerity",
+     "cue": "Wes will remember that.",
+     "set": {
+      "e9_take": "will",
+      "rel.wes.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "On the beach Wes showed you a picture of a ring and asked you to take care of her. You said you would.",
+     "response": [
+      "Wes nods, once, and holds out his hand for the bottle, and Jack gives it to him, and that’s the end of it.",
+      "After that they sit. The cold comes up out of the sand into their wet jeans. A little before six, when the black behind the hills has started to go gray at the bottom, Wes tips his cap down over his face and leans back against the tower post and is asleep, just like that, breathing slow. He sleeps twenty minutes. Jack sits beside him with his arms on his knees, and takes the RAZR out of his pocket, and opens it, and reads Becca’s text from after the Anchor again.",
+      {
+       "type": "sms",
+       "from": "Becca",
+       "time": "12:41 AM",
+       "text": "home! gloria called me an APPLE. is that good?? wes is so nice. goodnight jack :)"
+      },
+      "He closes the phone and puts it back in his pocket and keeps his hand over it until Wes wakes up."
+     ],
+     "goto": "s08d"
+    },
+    {
+     "text": "“She doesn’t need taking care of, Wes. She needs you to call at 8:04.”",
+     "tag": "Candor",
+     "set": {
+      "e9_take": "call",
+      "rel.wes.warmth": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "On the beach Wes showed you a picture of a ring and asked you to take care of her. You told him she needs him to call at 8:04.",
+     "response": [
+      "Wes looks at him. Then he does laugh, from the belly, and scrubs his face with both hands. “Yeah you right,” he says. “Yeah you right, podna. Eight-oh-four.”",
+      "After that they sit. The cold comes up out of the sand into their wet jeans. A little before six, when the black behind the hills has started to go gray at the bottom, Wes tips his cap down over his face and leans back against the tower post and is asleep, just like that, breathing slow. He sleeps twenty minutes. Jack sits beside him with his arms on his knees, and takes the RAZR out of his pocket, and opens it, and reads Becca’s text from after the Anchor again.",
+      {
+       "type": "sms",
+       "from": "Becca",
+       "time": "12:41 AM",
+       "text": "home! gloria called me an APPLE. is that good?? wes is so nice. goodnight jack :)"
+      },
+      "He closes the phone and puts it back in his pocket and keeps his hand over it until Wes wakes up."
+     ],
+     "goto": "s08d"
+    },
+    {
+     "text": "Take the bottle and drink instead of answering.",
+     "if": "trait.reckless>=11",
+     "tag": "Reckless",
+     "set": {
+      "e9_take": "drink",
+      "resolve.jack": "-1",
+      "soul.restraint": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "On the beach Wes showed you a picture of a ring and asked you to take care of her. You drank instead of answering. He took it for a yes.",
+     "response": [
+      "Jack takes the bottle out of his hand and drinks, a real one this time, and it goes down like a lit match. Wes watches him do it. Then he takes the bottle back. “That’s a yes where I’m from.”",
+      "After that they sit. The cold comes up out of the sand into their wet jeans. A little before six, when the black behind the hills has started to go gray at the bottom, Wes tips his cap down over his face and leans back against the tower post and is asleep, just like that, breathing slow. He sleeps twenty minutes. Jack sits beside him with his arms on his knees, and takes the RAZR out of his pocket, and opens it, and reads Becca’s text from after the Anchor again.",
+      {
+       "type": "sms",
+       "from": "Becca",
+       "time": "12:41 AM",
+       "text": "home! gloria called me an APPLE. is that good?? wes is so nice. goodnight jack :)"
+      },
+      "He closes the phone and puts it back in his pocket and keeps his hand over it until Wes wakes up."
+     ],
+     "goto": "s08d"
+    },
+    {
+     "text": "Nod. Give him back the bottle.",
+     "tag": "Control",
+     "set": {
+      "e9_take": "nod",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "On the beach Wes showed you a picture of a ring and asked you to take care of her. You nodded and gave him back the bottle.",
+     "response": [
+      "Jack nods and gives him the bottle. Wes screws the cap down, sets it in the sand at the foot of the ramp, and doesn’t open it again.",
+      "After that they sit. The cold comes up out of the sand into their wet jeans. A little before six, when the black behind the hills has started to go gray at the bottom, Wes tips his cap down over his face and leans back against the tower post and is asleep, just like that, breathing slow. He sleeps twenty minutes. Jack sits beside him with his arms on his knees, and takes the RAZR out of his pocket, and opens it, and reads Becca’s text from after the Anchor again.",
+      {
+       "type": "sms",
+       "from": "Becca",
+       "time": "12:41 AM",
+       "text": "home! gloria called me an APPLE. is that good?? wes is so nice. goodnight jack :)"
+      },
+      "He closes the phone and puts it back in his pocket and keeps his hand over it until Wes wakes up."
+     ],
+     "goto": "s08d"
+    }
+   ]
+  },
+  "s08d": {
+   "slug": "SUNDAY · 6:18 AM · THE ANACAPA LOT",
+   "set": {
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "They go up the Marine Lab stairs before it’s light, sand to the knees, past the steel door where the pump is humming along by itself, and unchain La Flaca at the top. The sun is still a long way under the hills. Over them the sky has gone the blue of a gas flame, and the hills are black against it, flat as paper. Wes has his arm across Jack’s shoulders, the way men walk home from weddings on the South Side, and Jack walks the bicycle with one hand and lets him.",
+    "The Commons is gray and empty and wet. Nobody is up. The eucalyptus along the path are dripping the marine layer down on them, one fat cold drop at a time, on the back of Jack’s neck, on the brim of Wes’s cap.",
+    "They’re crossing the Anacapa lot when a car turns in off Ocean Road from the west, from the Las Olas end, with its top down. It’s the SL. Theo is driving, alone, in a cream fisherman’s sweater that costs more than La Flaca. When he pulls into his space and opens the door his jeans are wet to the shin, and there’s sand on the floor mats, sand on the pedals.",
+    "Wes takes his arm back to point. “You surf?”",
+    "“I run,” Theo says.",
+    "“In a car?”",
+    "Theo shuts the door with his hip. “I drive to where I run,” he says. “It’s very Los Angeles.” He looks at the two of them, sandy, red-eyed, soaked to the thigh, Wes’s arm already back across Jack’s shoulders, and says only, “Gentlemen.” Then he goes up the walk ahead of them with his keys.",
+    "Lena is on the top step of Delgado in Wes’s Tulane sweatshirt, the green one, the sleeves down over her hands and her knees pulled up inside it, the LG in her fist. “I’ve been out here since five,” she says, before anybody can ask. Wes digs out his flip phone, black and dead, and holds it up in evidence. She is watching the two of them come up the walk together, and Jack can see her face, and he couldn’t say what it’s doing.",
+    "“Where have y’all *been*?”",
+    "“Talking Saints, dawlin’.” Wes takes the steps two at a time, kisses the top of her head through her hair, and goes in to shower, leaving sand on every step.",
+    "Then it’s the two of them on the steps, for one breath. Lena looks up at him from inside the sweatshirt. There’s a question in her; he can see it from here. She holds on to it.",
+    "Jack goes in."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "theo_dawn",
+     "title": "Theo, before light",
+     "text": "Came in barefoot at 5:20, sand and wet jeans. ‘Couldn’t sleep.’ There was a girl in our room. Sunday the 20th, 6:10, wet to the shins and hay on his sweater: he says he runs now. Four miles. Barefoot. Sunday the 11th, before light: the SL coming in off Ocean Road from the west, top down, sand on the mats, wet to the shins. He drives to where he runs."
+    }
+   ],
+   "next": "s09"
+  }
+ }
+}

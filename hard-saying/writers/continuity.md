@@ -1736,3 +1736,198 @@ birthday (Wed Oct 7), Frank's recall list.
 - Wes's address: Zimple St. (Uptown, near Tulane) — student rental; Luc "always over."
 - The "elevator" passage is Manuscript C (1897); "My vocation is love" is Manuscript B. Clarke reads "too small."
 - Lena's sister Tess is also Thérèse (continuity §1.4); not "everybody."
+
+### S1E09 — "Landfall" (Fri Oct 9 – Mon Oct 12, 2009; tag Mon 8:04 p.m.)
+31 scenes. Forks: s06 → s06a walk (Seacliff two-hander) / s06b point → s07 · s09b → s10a mass / s10b sullys → s11. Duel **camel**
+("On the Rich Young Man," s11b–s11v; the Delgado kitchen, unofficial, no referee). Per path ≈13.7k–14.4k words (validator total
+~21.8k counts every branch); 25 choices per path; duel ≈1.13k–1.39k words per path. 6 whispers placed (s04c knee, s04c "Laney, no",
+s06a not-looking, s07 fisher-said, s08c "I will", s11b Personal). Jack's resolve enters 10, ends **6–9**. Lena's resolve ends **5**.
+No dangerous window. **Save-locked:** written for `saves/after-s1e08.json` (`e8_dance=="waltz"`, `e8_danny=="told"`,
+`e8_becca_end=="kiss"`, `e8_relief=="named"`, `e8_reply=="true"`, `e2_margot_side=="lena"`, `e3_roux=="show"`, `e4_wed=="iftar"`;
+trait gates reckless≥11, candor≥33, sincerity≥55, wit≥21 — all open on this save). Gate before any other save reaches E09.
+
+**On-page canon (all paths unless marked)**
+- s01 (Fri 6:04, Becca's Ranger): Nobel Peace Prize to Obama heard on KCBX *Morning Edition*. Becca's coffees from Portolá dining
+  hall ("I asked them to" open at 5:45). Moon waning gibbous, high in the west, going pale. Becca: "Like a ribbon at the fair before
+  the calf's done anything, so it'll walk right." [e9_nobel] what / browns / earn.
+- s01b (6:21, Marine Lab touch tank): **Becca's work-study: Thursday afternoons and Friday 6–8 a.m.**; key on a 4-H lanyard; paper
+  time sheet (IN 6:19, OUT 7:58); salinity 33, 58°F; squid Tupperware. Thomas is home (chip in his whelk shell). **Becca mailed Rosie
+  a birthday card (Thomas drawn in ballpoint, six true hermit-crab facts on the back) on Wednesday Oct 7, Rosie's birthday, to the
+  address Jack gave for her Christmas cards ("I do them in October").** Route: Jack said at the Blessing (E08 s08) that Rosie drew him
+  a crab and turns eight Wednesday. Jack's own card went Thu Oct 1 (whale, ballpoint crab, THIS IS A CRAB). [e8_reply=="true"] Becca
+  "showed my mom" Jack's thank-you. **Clipboard page: WES — THINGS HE MIGHT LIKE (Saints / boats? / horses?? / the old lighthouse
+  (Point) / ask Jack).** Becca heard of Wes via Lena → Mrs. Fitch (12:10) → Coffee and Donuts. Becca has prayed for Lena and Wes since
+  September. [e9_tank] anemone (key) / bite / watch.
+- s02 (12:40, Fishbowl): CNN loop; Obama Rose Garden "a call to action." **Margot keeps Leif Erikson Day (presidential proclamation
+  every Oct 9 since LBJ) "instead of the other one."** Whiteboard: LEIF ERIKSON DAY (OBSERVED) / COLUMBUS: SEE ATTACHED / USEFUL IDIOTS
+  C 6 · B 5 / NOBEL: C — PENDING · B — PENDING. Margot's alarm log: no alarm Tuesday Oct 6. **Julian played "Fresno" Thu Oct 8 at
+  Bastille; Lena by the window, alone, left in the second chorus (Margot).** Laney: Lena ironing pillowcases "to take to a *motel*"
+  (the Sandpiper was still the plan at 12:40). **Laney's advice: a poem, out loud, at the bonfire, about her eyes, rhyming, then one
+  knee.** Jack can't say what color Becca's eyes are. Theo texting during the pitch (alliance; unnamed). Kevin: "Don't." [e9_laney]
+  poem / own / insane.
+- s03 (3:45, Anacapa lot): **Odyssey's front passenger tire let down; the valve cap left upright on the hood (Theo, never stated).**
+  Plan was 3:45 departure for Wes's 5:25 arrival at SBA from Phoenix. Theo fetches Wes alone in the SL (two seats) with a calligraphy
+  sign ARCENEAUX. Jack changes the tire (Frank's Silverado lesson, Glenwood Ave). Kevin pockets the lug nuts. Lena in a blue sundress,
+  Justins, oatmeal cardigan (the tin in its pocket). "He's never been west of Houston." **Lena on the Nobel: "Infant baptism."**
+  [e8_becca_end=="kiss"] Becca's status: luckiest girl in Portolá; Lena: "I'm glad, Jack." Theo sms 5:41: "Package acquired. He's
+  taken my Wayfarers. I like him." [e9_hey] given (Danny's hey delivered on the curb; key) / later.
+- s03b (6:20): SL arrives with Yeah Yeah Yeahs "Zero" on the cassette adapter. **Wes drank the Pacific (the Mason jar came back
+  empty, tape cut and re-taped).** Kevin pockets the valve cap. **Wes called the SL "ma'am" at a stoplight in Goleta.** Lena to Theo:
+  "Oh, Magdalena is *going* to say something… At *Mass*." Theo: "I owe you a kidney." **Wes: 6'2", sunburn to the T-shirt sleeve,
+  sandy hair cut short, chip off one front tooth, Saints cap bent since '06; vowels "slower, further back"; calls Lena "dawlin'";
+  "You look like Easter." "You're the Ohio guy. She said you were a jagoff… I've known her since she had a retainer."** No bottle in
+  the duffel (the Jameson is Theo's in-car gift, first seen s07). [e9_welcome] whodat (Wes lifts Jack) / pacific / outtalk ("I
+  out-*wait* her").
+- s04 (9:10, Shipwreck Cove): **7 p.m. at the front desk Theo announced the Sandpiper had bedbugs ("I called"); Wes stays in 412 on
+  an Aerobed bought that afternoon; Priya's laminate: OVERNIGHT GUESTS REGISTER BY 10 P.M., THREE NIGHTS MAXIMUM; Wes signed for
+  Fri/Sat/Sun.** Laney's Friday fire; no moon at 9:10. Becca's labeled s'mores Ziplocs. Lena: "Laney. Be nice." **Wes was in the Dome
+  Oct 4 (Sharper's 99-yard return); 1980: his daddy and Tony Broussard in paper bags (1–15); his daddy still has the bag. Wes's daddy
+  has welded hulls at Avondale for 30 years; Wes's mama in Gentilly (London Avenue Canal broke two blocks from her house).** Jack tells
+  Wes about Frank (26 years, Cavaliers then Cobalts, laid off since June, the recall list) — **Becca and Margot hear it.** Margot on
+  the Corps; **Lena's Corps speech: "a system in name only" (IPET), Flood Control Act of 1928 §3 "no liability of any kind."** Margot:
+  "Structurally, he's sound. I hate that." Becca and Wes: both the one who plans the thing. [e8_date_truth=="told"] Becca's WHO DAT
+  from the log. [e9_fri_wes] levees (I-walls on sheet pile, "a wall's only as good as what it's standing in") / browns / boat
+  ("Another night, Ohio").
+- s04b (9:52): **"Jolie Blonde" off Wes's flip phone; "Lena's Mémère makes everybody learn it"; Wes waltzes Lena (he bounces).**
+  [e8_dance=="waltz"] Becca waltzes Jack; he knows it (learned from Lena nine nights earlier). Wes watches. [e9_waltz] lena ("She
+  taught me too. Tenth grade. I bounce.") / weddings (the Nowaks at St. Pius) / youtube (Eli's carburetor) / quiet.
+- s04c (10:35): Laney's Maglite; Theo films on the 5D, Laney on the BlackBerry. **The poem: "Glory be to God for freckled things —"
+  on a Fishbowl napkin, both sides, in the shape of "Pied Beauty."** **Becca's eyes are gray** (all paths learn it). Theo announces
+  Halloween: "Mine. I've rented a house." Becca: "We should *match*!" Moon up near midnight over the hills. **Wes sleeps on the Aerobed
+  in Theo's Meridian Pictures robe** (the black monogrammed one, not E06's navy silk). "She's good people. Your Becca." [e9_poem] knee
+  (Becca: "Not yet, Jack Costigan," and a quick kiss on the mouth; Wes "Ohio, you're a madman") / stand (Wes claps first; Becca
+  buttons the napkin into her Carhartt vest pocket) / no ("Your eyes are gray," napkin unread).
+- s05 (Sat 12:25, Madonna Inn): Wes made the Aerobed with hospital corners; Rosie's drawing (sun in sunglasses, red crab) — "Who drew
+  the spider?" Kevin had the tire refilled at the Chevron on Mission (75¢ of air; "nothing wrong with it"). **Theo's itinerary on
+  Meridian letterhead: 11:00 departure, 11:50 Landfall, 12:30 pink champagne cake, 2:00 Entertainment (Miss Price), 4:00 return; —T.A.V.**
+  Laney's unwritten seating chart (Wes up front; Laney and Margot middle; Jack and Lena the way back; Laney takes Lena's cardigan).
+  **Becca drives the SL ('79 450SL, V8); Theo: "My grandfather's car. You, once, at Malibu. Her, today. That's the list."** 50
+  minutes Marisol↔SLO each way (van back 4:50). Gold Rush Steak House, pink booths, gold tree, the waterfall urinal ("Somebody
+  stamped the drawings"). **Theo's grandmother brought him every summer; "vulgar"; two pieces.**
+- s05b (2:05): Newlywed game. Becca knows Hale's *Moral Luck* is in Jack's pocket (told at Cambria). Becca's favorite animal: HORSES.
+  Laney: "Bless her heart… Like a scale at the feed store." **Lena's favorite saint: CATHERINE OF SIENA (her card); Wes said Thérèse.**
+  **Lena's best-thing-he's-eaten story: Mémère's gumbo, Christmas Eve 2007; Wes at fifteen ate Lena's first gumbo and asked his mama
+  for a ham sandwich; Mémère lit a candle.** [e9_saint] catherine (Jack mutters it; Kevin docks OHIO −1) / quiet.
+- s05c (2:31): Wes: Lena's rosary in her pocket since tenth grade. **Laney produces the Reliquary from Lena's cardigan; Becca, Wes,
+  Kevin, Theo, Margot and Laney all see the four slips (wording as E03/E04/E07). Becca learns Jack smokes and that Lena confiscates
+  them.** Wes: "Ten years I been trying to get her to label something of mine." Kevin: "Time of death of her personality, two
+  thirty-three p.m." (on tax). **Wes quit dip in tenth grade at Lena's insistence** (on quit). Lena keeps the tin in her dress pocket.
+  [e9_tin] tax / quit / becca ("I'll get a bigger tin!") / quiet.
+- s06 (5:05, Seacliff, the last house): Becca's clipboard: THE OLD LIGHTHOUSE (POINT). **Lena refuses at the Lighthouse fence ("I'm
+  going back… I'm cold") — 75°F; hand to the medal.** Laney napping in 217, Theo "editing," Kevin and Margot at the *Tide*.
+  [e9_point] walk / point.
+- s06a [walk] (5:12): "Don't ask me, Jack." "I wasn't going to." "That's why I let you come." [e8_relief=="named"] "Tell me what my
+  face is doing." [e9_face] notlooking (cake verdict; Lena's Laney and Theo impressions) / beach / cold ("a dry cold"). "Go wash
+  dishes, Youngstown. I'll be at the Anchor at eleven with my boyfriend and your girlfriend."
+- s06b [point] (5:31): **County sign: POINT MARISOL LIGHT, 1890. DECOMMISSIONED 1967.** Fieldstone wall knee-high; 70-foot drop to
+  the reef. **The white cross with NORA burned into the crossbar; brown white flowers tied with kitchen string** (no jasmine named).
+  **Becca kneels: "Eternal rest…"; Jack answers.** Becca's yellow disposable photographs the light. Wes: "What's she scared of up
+  here?" / "She's scared of something." Becca hears Priya's rule from Jack. Jack clocks in at 7:12 with ice plant in his cuffs.
+  `saw_point_cross` (Jack, Wes, Becca). [e9_scared] dontknow / cold / ask.
+- s07 (11:20, the Anchor): Dodgers swept St. Louis (Oct 10). **PIE OF THE DAY: PEACH. Gloria meets Becca: "Apple. Told you, hon."
+  Gloria rates Wes: "Peach." "Everybody likes a peach, hon."** Booth: Lena, Wes, Laney, Kevin, Margot; Theo at Delgado. **Merle (white
+  beard, Grundens bibs, night boats) on the Nobel: "Affirmative-action prize… Give his kind a microphone"; his friend does not laugh.**
+  Gloria: "Pie or the door, Merle." Lena half out of the booth on gloria/wit. **Wes rides back with Jack; Jameson (green label) in his
+  jacket. Wes's uncle's flatboat: "Aluminum. Sixteen foot." Rudy's uncle had a skiff out of Oxnard.** Booth breaks up 12:20; Becca hugs
+  Gloria. [e9_fisher] said (Margot: "First useful thing a man has said in this restaurant") / gloria / wit.
+- s08 (Sun 1:58, Campus Point): walk back from the wharf, Wes pushing La Flaca; half moon (last quarter) over the eastern hills.
+  **Theo gave Wes the Jameson "in the car. Welcome gift."** Wes wades in to the knees: "I came to see it. I'm gonna touch it."
+  [scar_told_wes] pacific / controller (Gina, volunteered) / puck (Youngstown Phantoms).
+- s08b (2:31, tower ramp): Wes liked Jack's 2 a.m. wall post at 4. **Theo asked Wes in the SL "if you ever get one you can't reach"
+  (Wes: "He knew about the boat — Lena tells everybody, I guess").** **The attic: fourth day, Wes and his uncle in the flatboat; a
+  house on Pauger Street, water to the gutters; a woman knocking in the attic; the axe wouldn't go through cypress rafters; they left
+  for kids on the next roof; next morning the knocking had stopped. Never told anyone — not his uncle (they still fish every other
+  Saturday off the Lakefront), not Lena. "I couldn't kneel for a year after. Then she came along and I could."** `knows_wes_attic`.
+  [e9_wes_danny] told (Trumbull, five years; "Bet he's proud of you") / ohio / good.
+- s08c (3:10): **Wes's phone photo of Mémère Odile's ring (velvet box, lace runner, small high stone, band worn thin); Odile gave it at
+  Easter 2009 "For when"; Wes will ask Tony after Lena graduates; Odile is 88; her two questions (two-step, outboard). "Don't say
+  nothing to her. I'm asking her daddy first." "Take care of her, Jack. She thinks she's the one doing the carrying."**
+  `knows_wes_ring`. [e9_poem=="knee"] "That wasn't a proposal last night, podna. *This* is." Becca sms 12:41 a.m. Wes sleeps 20 minutes
+  before six. [e9_take] will / call (8:04) / drink ("That's a yes where I'm from") / nod.
+- s08d (6:18): **Theo arrives in the SL from the west (Las Olas end), top down, alone, cream fisherman's sweater, jeans wet to the
+  shin, sand on mats and pedals: "I drive to where I run."** Lena on the Delgado steps since five in Wes's green Tulane sweatshirt;
+  Wes's phone dead. Jack has not slept (resolve −1).
+- s09 (8:52, 2nd-floor landing): Lena in a dark green dress with the black mantilla. "What did y'all talk about all night?"
+  [e9_talk] saints / loves / ask ("He said Saints") / his (candor) / hey (Danny's hey on the stairs, if owed).
+- s09b: Becca invited them to the 9:30 and Coffee and Donuts. Wes in Theo's black Meridian robe: "Where do they show the Browns?"
+- s10a [mass] (9:30, St. Brendan's): 28th Sunday OT (Wis 7:7–11; Heb 4:12–13; Mark 10:17–30). **Damien of Molokai canonized that
+  morning (Rome); Osei: "He stayed… *We lepers.*"** Blue-and-gold light. Wes kneels beside Lena. Becca's maple bar (JACK napkin) → Wes;
+  "he shares." Mrs. Fitch: "You two… And *you* two!" Tyler fist-bumps Wes ("Brother"). [point] Becca tells the table she prayed for
+  the girl at the cross again; Lena's stir stick stops. **Gina sms 11:14–11:19 (Browns 3–0; Becca's card on the fridge next to Nonna's
+  Mass card; Ma cried; "is idaho ur gf now"; "is that lenas bf in lenas pics").** 1:21 "6-3 BROWNS WIN. dad said good." [e9_gina]
+  show / crab ("she has 2. urs is worse") / notgf ("does SHE know that"). Wes naps on the Fishbowl couch till five.
+- s10b [sullys] (10:02): Kevin drives (49ers cap). **Lions–Steelers 20–28 (Dale: "Close."). Browns 6, Bills 3 at Buffalo in wind;
+  Cundiff 24 and 18 (0:23 left); Anderson 2-for-17, 23 yds, 1 INT.** Wes adopts the Browns; two Bloody Marys before noon; "like watching
+  a levee hold." Becca sms 11:02 (maple bar saved). Lena arrives at halftime from the 9:30: "Y'all are *friends* now." **Frank calls
+  first: "Six to three… Good."; Gina on the extension about the card.** [e9_frank] whodat (Frank, Gina, Maria learn "a guy from New
+  Orleans") / list ("Next year, maybe") / good.
+- s11 (5:40, the kitchen off the Fishbowl): Priya's laminate THIS KITCHEN IS NOT A RESTAURANT. **Gumbo: chicken and andouille (Jacob's,
+  LaPlace, in Wes's checked bag), Mémère's filé from Breaux Bridge — no okra when there's filé. Red beans are Monday.** Becca's
+  cornbread (her mother's, a little sugar) in a Newman cast iron. Professor Longhair "Tipitina" on Wes's phone. Theo pours Lena her one
+  glass. **The spoon: Lena hands Jack the roux spoon; one second of fingers on the handle** (resolve −1). [e3_roux=="show"] Wes saw
+  Laney's Malibu post (Laney tagged Lena); Laney: "Malibu, *Idaho*." Duel camel: Antony (Athanasius, 300 arouras), Francis, Dorothy
+  Day; Mark has no "if" (Matt 19:21 does); Mark's "a man"; the leper and Bartimaeus; ST II-II q.184; the camel-rope (*kamilos*) and the
+  needle gate; Clement's *Quis dives salvetur*; "everything but fathers" (Mark 10:30); John 21:3. **Becca to Wes: "Jack's the most
+  honest person I know."** Wes doesn't answer.
+- s11v (6:31): Lena hands the spoon to Becca and teaches her the colors and the trinity. Wes: "Y'all should charge admission." Gumbo
+  in the Fishbowl at seven; Doug wakes for it; Priya eats standing. [sullys] 9 p.m. college Mass (Damien homily); Wes kneels beside
+  Lena. [mass] Wes asleep by ten.
+- s12 (Mon 8:20, Anacapa lot): **Columbus Day: Hale cancelled his own seminar; campus otherwise open; Becca traded for the holiday
+  tank shift.** Lena drives Wes to SBA in the Odyssey (Kevin: "Sixty-five. Not sixty-six."). Becca's banana bread for the plane. Wes:
+  "Don't let him get away with nothing." **Wes shakes Jack's hand instead of hugging: "See you, Ohio… Remember what I said."** Becca:
+  "They're so good together. Like my parents." **Hale's email 9:12 a.m.: Wednesday papers — Jack "That a Man Can Know His Own Heart";
+  Lena "That He Cannot"; Jer 17:9; *Confessions* X.** [e9_bye] remember / whodat / safe.
+- s13 / s13b (8:01–8:04 p.m., 4th-floor landing): Becca sms 8:01 "Did Wes land ok? I prayed for his flight :)" [e9_reply] true / best
+  / wait. **Lena on the 2nd-floor landing at 8:04 (10:04 CT): "You're home… Good." "He's my friend, Wes." "I know you did."
+  "Goodnight."** Jack hears only her side.
+
+**Choice-dependent facts**
+- Danny's "hey" is delivered on `e9_hey=="given"` (s03 C0 or s09 C4). **On `e9_hey=="later"` with no s09 C4, the hey is still owed
+  going into E10.**
+- Wes knows Danny is in Trumbull, five years, only on `e9_wes_danny=="told"`.
+- Becca kissed Jack on the mouth only on `e9_poem=="knee"` (heat +1). Becca has the napkin only on `e9_poem=="stand"`.
+- Jack, Wes and Becca saw the NORA cross only on `e9_point=="point"`; Becca prayed there again Sunday only on point + mass.
+- Lena's "Today's not one of mine" (sad-one concession) only on non-Personal Concede.
+- Personal path (`e9_camel_personal`): the roux burned and was remade; Lena cold the rest of the night; apology (`e9_camel_apology`)
+  gets "It was," "Stir," and "Start the onions, Costigan."
+
+**Flags introduced**
+`e9_nobel` (what/browns/earn) · `e9_tank` (anemone/bite/watch) · `e9_laney` (poem/own/insane) · `e9_hey` (given/later) ·
+`e9_welcome` (whodat/pacific/outtalk) · `e9_fri_wes` (levees/browns/boat) · `e9_waltz` (lena/weddings/youtube/quiet) · `e9_poem`
+(knee/stand/no) · `e9_saint` (catherine/quiet) · `e9_tin` (tax/quit/becca/quiet) · `e9_point` (walk/point) · `e9_face`
+(notlooking/beach/cold) · `e9_scared` (dontknow/cold/ask) · `e9_fisher` (said/gloria/wit) · `scar_told_wes`
+(pacific/controller/puck) · `e9_wes_danny` (told/ohio/good) · `e9_take` (will/call/drink/nod) · `e9_talk` (saints/loves/ask/his/hey)
+· `e9_sun` (mass/sullys) · `e9_gina` (show/crab/notgf) · `e9_frank` (whodat/list/good; new in revision) · `e9_camel_personal` ·
+`e9_camel_apology` · `e9_spoon` (teacher/plates/pie) · `e9_bye` (remember/whodat/safe) · `e9_reply` (true/best/wait) · long-arc:
+**`knows_wes_attic`, `knows_wes_ring`, `saw_point_cross`**. (`e9_becca_said` was cut in revision.)
+
+**Payoffs owed (E10 Showrunner: read these)**
+- `e9_take`, `e9_talk`, `e9_point`, `e9_poem`, `e9_wes_danny` (the blueprint's handoff).
+- `e9_fisher=="said"` → Gloria remembers (a free slice, a better rating, or "pie or the door" echoed in Jack's favor).
+- `e9_face=="notlooking"` → Lena remembers ("Liar." / "Mostly." callback, e.g. the E10 library).
+- `e9_hey=="later"` and not given → the owed hey (Jack tells her in the library, or she asks after Danny).
+- `e9_camel_personal` (+/− `e9_camel_apology`) → Lena's temperature entering E10; the "seafood market" line.
+- `e9_frank=="whodat"` → the Costigans know "a guy from New Orleans" exists (Gina will ask).
+- Halloween: Theo has rented a house; Becca wants to match (all paths). The Wednesday papers (Hale's email).
+- The ring and the attic are Jack's alone; **never let them reach Lena through Jack** unless a future choice is offered.
+
+**Tallies after S1E09**
+- Reliquary: unchanged (4 on this save; 5 only on `e8_dance=="cig"`). Jack's cigarettes lit on-page: unchanged (none in E09).
+- Duel record: camel is **unofficial** (no referee); the "record" journal card logs it per verdict. Official record unchanged.
+- Odyssey glass: still **4–0** (Monday).
+- Anchor ratings: Becca **apple** (confirmed in person), Wes **peach**. Pie of the day Sat Oct 10: peach.
+- Useful Idiots whiteboard: C 6 · B 5; NOBEL pending both.
+- Scar tellings: Wes → per `scar_told_wes`.
+- Lena's resolve: s03 6 → s03b 7 → s05c 6 → s06 5 → s10a/b 7 → s11v 6 → s13b **5** (ends 5). Jack's ends 6–9.
+- Lena's medal touches: 1 (s06, at the fence).
+- Lena's "Costigan": fight register in the duel and s11; "Jack" at s06a, s03 "I'm glad, Jack," and the duel's last question;
+  "Youngstown" s06a.
+- Wes's terms: "Ohio" ≈8–10 per path (last before Monday is Sunday morning/Sully's; Monday "See you, Ohio"); "podna" ≤4; "dawlin'" ≤4.
+  Wes calls Jack "Jack" once: s08c "Take care of her, Jack."
+
+**Ledger housekeeping (from the S1E09 review)**
+- Wes's grip "has lifted things for a living" is spent (s03b). Wes's chipped tooth: intro (s03b) and farewell (s12) only.
+- Theo owns two robes: navy silk (E06) and the black monogrammed Meridian Pictures robe (E09).
+- Becca's Marine Lab hours stay Thu p.m. / Fri 6–8 a.m.; Monday Oct 12 was a traded shift.
+- Wes's whereabouts: 412 Aerobed Fri/Sat/Sun nights; Sat night/Sun morning on the beach with Jack (never slept in 412 that night).
+- St. Brendan's glass is blue (E01, E08, E09).

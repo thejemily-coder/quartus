@@ -869,3 +869,88 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - Mrs. Fitch [s02] Lena's middle name; [s11a] chaperoned the sauce date; "You two" (s12b; s15b).
 - Lupe [s06] Jack and Lena say they're friends.
 - Dale [s15a] Jack is from Ohio (Browns); still not Lordstown.
+
+### S1E09 — "Landfall"
+> Written for the after-s1e08 save only (see continuity.md S1E09 for the save-locked list). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01b] Becca's Marine Lab hours (Thu p.m., Fri 6–8); she mailed Rosie the Thomas card Wednesday (route: Jack told her at the Blessing
+  that Rosie drew him a crab and turns eight Wednesday; the address from her Christmas-card list). Becca has prayed for Lena and Wes
+  since September; her WES clipboard page.
+- [s02] Julian played "Fresno" Thursday; Lena left in the second chorus (Margot). Laney's poem-and-knee advice. Lena was ironing
+  pillowcases for the motel (Laney).
+- [s03] Lena: "He's never been west of Houston"; the Nobel as infant baptism. [kiss] Becca's luckiest-girl status (Lena tells him).
+- [s03b] Wes in person: "the Ohio guy," "jagoff," "since she had a retainer"; the jar came back empty.
+- [s04] Theo cancelled the Sandpiper ("bedbugs"); Wes on the 412 Aerobed three nights. Wes's daddy (Avondale, 30 years), mama in
+  Gentilly, the 1980 paper bags. Lena's Corps facts (IPET; 1928 Act). [levees] the I-wall failure. [boat] "Another night."
+- [s04c] **Becca's eyes are gray** (all paths). Theo's Halloween house.
+- [s05] Theo's grandmother and the Madonna Inn. [s05b] **Lena's card says Catherine of Siena** (Jack had bet on it from E02 s09, where
+  he raised the dyer's daughter and Lena fought for her). Lena's ham-sandwich story. [s05c] Wes quit dip in tenth grade for Lena
+  [quit]. Wes's rosary answer.
+- [s06] Lena refused the Point at the Lighthouse fence ("I'm cold"); no reason given. [s06b | point] **the NORA cross**; the county
+  sign's dates (1890; dark since 1967) — Jack's first visit to the Point on this save (`e4_wed=="iftar"`).
+- [s07] Gloria's peach for Wes; Merle; Wes's uncle's aluminum sixteen-foot flatboat.
+- [s08b] **Wes's attic story (Pauger Street; the axe; the knocking that stopped); Theo asked Wes in the SL if he ever got one he
+  couldn't reach, and knew about the boat (Wes guesses Lena told him); Wes never told his uncle or Lena; couldn't kneel for a year.**
+  Wes liked Jack's 2 a.m. wall post at 4.
+- [s08c] **Odile's ring (photo), Easter, "For when"; Wes will ask Tony after Lena graduates; Odile's two questions; "Don't say
+  nothing to her"; "Take care of her, Jack."**
+- [s08d] Theo in the SL from the west at 6:18, wet to the shin, sand on the mats: "I drive to where I run."
+- [s10a | mass] Damien canonized; Becca's maple bar; [point] Becca prayed again for the girl at the cross. Gina: Becca's card is on the
+  fridge; Ma cried; Ma wants to know if Idaho is his girlfriend; Gina has seen Wes in Lena's pictures.
+- [s10b | sullys] Frank's call ("Good."); [list] "Next year, maybe."
+- [s11] [e3_roux=="show"] Wes saw Laney's Malibu post because Laney tagged Lena. [s11b | Personal] Broussard's Seafood reopened on
+  Banks Street in 2006 with the waterline still on the walls (Lena).
+- [s11c] **Becca, to Wes, in Jack's hearing: "Jack's the most honest person I know."**
+- [s12] Hale's Wednesday paper titles. Becca traded for the Monday tank shift.
+- [s13b] Lena to Wes on the phone: "He's my friend, Wes." "I know you did." (one side only; Jack doesn't know what Wes said).
+
+#### Lena
+- [s03 | e9_hey=="given"] or [s09 | C4] Danny's hey (from Jack). Lena does not learn anything of the attic or the ring.
+- [s03b] Jack’s welcome to Wes per `e9_welcome` (all public).
+- [s04b] [lena] Jack told Becca that Lena taught him the waltz; [weddings]/[youtube] she heard the lie.
+- [s05b | catherine] Jack knew (or bet) her saint — she heard him say it.
+- [s06a | walk] Jack didn't ask why she wouldn't go on; [notlooking]/[beach]/[cold] per `e9_face`. [s06 | point] Jack, Wes and Becca
+  went on to the Point; **she has not been told what they saw** (Becca says "the girl at the cross" at Coffee and Donuts only on
+  point + mass — Lena hears that much and no more).
+- [s09 | his] Wes "told [Jack] some things; they're his." [ask/saints] Wes and Jack both said "Saints."
+- [s11] Wes saw Laney's Malibu post (Wes says so in the kitchen, all present). [s11b | Personal] Jack's "seafood market" jab;
+  [apology] his apology.
+- [s11c] Becca's "most honest person I know" (said not nearly quietly enough — assume Lena heard).
+
+#### Wes
+- Enters knowing Jack only as "the Ohio guy" who watches the Saints with Lena, "a jagoff" (Lena's word), and the liked 2 a.m. wall post.
+- [s03] Theo (in the SL): never stated what Theo told him; Theo asked if he "ever got one he couldn't reach" and knew about the boat.
+  Theo gave him the Jameson.
+- [s04] Frank's layoff and the recall list (with Becca and Margot). [s04b] how Jack learned the waltz per `e9_waltz`.
+- [s05b] Lena's saint is Catherine (her card). [s05c] **The Reliquary: four dated slips, including No. 1, the Lighthouse, 8/29 — that
+  Lena took Jack's cigarette the night they met; No. 2 Malibu; No. 3 the harbor; No. 4 the roof.**
+- [s06b | point] the NORA cross; Lena's refusal; Jack's answer per `e9_scared`.
+- [s08 | scar_told_wes] Jack's scar version. [s08b | told] **Danny is in Trumbull, five years** (not what for).
+- [s11] Laney's Malibu post (Jack stirring a roux "for Jesus" on Labor Day; tagged to Lena). [s11c] Becca's "most honest" line.
+- [s08c] Jack's answer to "Take care of her" per `e9_take`. Wes does not know Becca doesn't know about Danny.
+
+#### Becca
+- [s04] Frank's layoff and the recall list. [s04c] Jack doesn't know her eye color until tonight (on knee/stand she sees him find it).
+- [s05c] **Jack smokes; Lena confiscates and labels the cigarettes ("I am curing him").**
+- [s06b | point] the NORA cross; Priya's rule (from Jack). [s05b | catherine] only that Jack said "Catherine."
+- [s04b] where Jack learned the waltz per `e9_waltz` ([weddings]/[youtube] a live false belief).
+- Still does **not** know about Danny. Believes Jack is "the most honest person I know."
+- [s13] [true/best] Jack's reply; [wait] no reply.
+
+#### Theo / Laney / Kevin / Margot
+- Theo [s03] fetched Wes alone; [s08d] seen by Jack and Wes returning at dawn from the west (says only "I run," "I drive to where I run").
+  Halloween house. Alliance never named on page.
+- Laney [s02] Jack can't name Becca's eye color; [s05c] carried the Reliquary in Lena's cardigan and produced it; [s11] tagged Lena in
+  the Malibu post. Laney's Halloween/advice running bit ("Not asking her again" in Jack's journal; S4E03 payoff).
+- Kevin [s03] the tire had nothing wrong with it; pocketed the valve cap (evidence, unexplained).
+- Margot [s02] "Fresno" Thursday; [s04] Frank's layoff; Wes's Corps answers; [s07 | said] Jack confronted Merle.
+
+#### Others
+- Gloria [s07] meets Becca (apple) and Wes (peach); [said] Jack spoke up to Merle.
+- Gina / Maria / Frank [s10a] Becca's card arrived; Gina has seen Wes in Lena's photos (FB friend of Lena since E07); [s10b | whodat]
+  "a guy from New Orleans" (Frank, with Gina and Maria in earshot).
+- Rosie: has two crab cards (Becca's and Jack's).
+- Mrs. Fitch [s01b] told Coffee and Donuts about Wes's visit; [mass] "You two… And *you* two!"
+- Rudy [s07] Wes's uncle's flatboat. Dale [s10b | sullys] none new.
+- Priya: Wes registered Fri/Sat/Sun (front desk).

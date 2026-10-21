@@ -1,0 +1,410 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "FRIDAY · 6:04 AM · OCEAN ROAD, BECCA’S RANGER",
+   "body": [
+    {
+     "type": "sms",
+     "from": "Becca Lindell",
+     "text": "6am fire lane! Dress warm. Don’t eat. It’s a surprise (it’s a small one)",
+     "time": "9:02 PM"
+    },
+    "That came in last night at 9:02, and it is the whole reason Jack is standing in the Delgado fire lane at two minutes to six on a Friday in full dark, in the Carhartt over the Mooney hoodie, with nothing in his stomach. The red Ranger is already there, idling, because she is always early and it’s a ranch thing. Idaho plates. The Rathdrum feed-store sticker. St. Isidore on the visor with his plow and his angel, keeping an eye on the road.",
+    "Two coffees ride on the bench seat in a cardboard tray from the Portolá dining hall. “It opens at six,” Becca says, handing him one as he climbs in. “It opened at a quarter to. I asked them to.” Jack looks at her for some sign of whether that’s a joke and gets nothing; she’s checking her mirror. The cab smells like coffee and hay and the inside of a work glove. There’s a Rathdrum Feed & Seed receipt curling on the dash, a Glory Be card rubber-banded to the visor under St. Isidore, and her Ropers working the clutch like she learned on a hay truck.",
+    "Over the Lagoon, high in the west, the moon is still up, six days past full and lopsided, bright enough to lay a white road across the black water toward the Delgado windows.",
+    "She takes Ocean Road toward Campus Point with the heater roaring and the radio on low. KCBX, 90.1, out of San Luis Obispo: *Morning Edition*, and a reporter in Oslo, where it is already the middle of the afternoon, saying the Norwegian Nobel Committee has decided to award the Peace Prize for 2009 to President Barack Obama. The radio reads the citation: *for his extraordinary efforts to strengthen international diplomacy and cooperation between peoples.* The coffee is too hot to drink. Jack holds it on his knee and hasn’t had a sip.",
+    "“Oh!” Becca says to the dark windshield, delighted. “Good for him!” Then she glances over to see what he thinks."
+   ],
+   "choices": [
+    {
+     "text": "“For what? He’s been president nine months.”",
+     "tag": "Candor",
+     "set": {
+      "e9_nobel": "what",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Becca thinks about it honestly for a quarter of a mile, both hands on the wheel, the turn signal ticking for Campus Point. Then she brightens, pleased to have an answer. “Maybe it’s in advance,” she says. “Like a ribbon at the fair before the calf’s done anything, so it’ll walk right.”",
+      "At the light by the Marine Lab turnoff Jack takes his first sip."
+     ],
+     "goto": "s01b"
+    },
+    {
+     "text": "“Next year they’ll give one to the Browns. For nonviolence.”",
+     "tag": "Wit",
+     "set": {
+      "e9_nobel": "browns",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "She laughs so hard the Ranger drifts onto the shoulder and the gravel comes up loud under the tires. “They’re oh and *four*, Jack.” She steers them back, wiping her eye with the back of her wrist, and goes right on with what she was going to say. “Maybe it’s in advance. Like a ribbon at the fair before the calf’s done anything, so it’ll walk right.”",
+      "Jack takes his first sip. It burns the whole way down."
+     ],
+     "goto": "s01b"
+    },
+    {
+     "text": "“I hope he earns it.”",
+     "tag": "Sincerity",
+     "set": {
+      "e9_nobel": "earn",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“That’s what I *said*!” She takes a hand off the wheel to point at him. “In advance!” And then, as proof: “Like a ribbon at the fair before the calf’s done anything, so it’ll walk right.”",
+      "Jack takes his first sip and lets her have the point."
+     ],
+     "goto": "s01b"
+    }
+   ]
+  },
+  "s01b": {
+   "slug": "FRIDAY · 6:21 AM · THE MARINE LAB, THE TOUCH TANK",
+   "body": [
+    "The Marine Lab sits low at the root of Campus Point with its back to the bluff, and out here before dawn the only sounds are the surf below and the pump behind a steel door marked AUTHORIZED PERSONNEL, a hum Jack can feel in his fillings. Becca lets them in with a key on a 4-H lanyard and writes 6:19 on a paper time sheet tacked by the light switch, in block numerals, in the IN column.",
+    "Inside is one low cinderblock room that smells like salt and the bottom of a bait bucket, and a concrete tank built like a tide pool at knee height. Giant green anemones open like something spilled. Ochre stars, purple and orange, clamped to the rock in no hurry. Turban snails. At the far end a bat ray drifts and turns, slow as a dropped scarf, and everywhere along the bottom the hermit crabs go about their business in their borrowed houses.",
+    "“Thursday afternoons and Friday six to eight,” Becca says. “Work-study. That’s how I could sign Thomas out.” She puts a drop of tank water on the glass of a little refractometer, holds it up to the fluorescent tube, squints. “Thirty-three.” Then the thermometer: fifty-eight degrees. Both go on the clipboard. Then a Tupperware labeled SQUID — FRI in marker.",
+    "Jack watches her be good at something. The marker on her knuckles from lettering somebody’s poster. The braid down her back, still damp. The freckles she doesn’t cover, the sunburn along the part in her hair. She goes down the tank on a folded towel, a piece of squid to every star.",
+    "She finds Thomas by the chip in his borrowed whelk shell and lifts him out on her palm, where he pulls everything in at once. “Everybody,” she tells the room, “this is Thomas. He’s been to church.” She sets him back down by the rock and he unfolds and walks off about his business.",
+    "“You said at the Blessing your sister wanted a crab for her birthday,” she says. “So I sent her Thomas.” Ballpoint, on a card, every leg; and on the back six true facts about hermit crabs, of which she recites two. “They aren’t true crabs. And when a big shell washes up they line up by size, biggest to littlest, and everybody moves up one. Like my brothers with jeans.”",
+    "Jack asks how she had the address. “You gave me your address for my Christmas cards. I do them in October.” She mailed it Wednesday, on Rosie’s birthday, though it would get there late. “Birthdays count for a week at our house.” Jack had no idea. His own card went last Thursday: a whale, and his ballpoint crab, and THIS IS A CRAB under it. “Now she has two,” he says. “Mine’s the bad one.” “Yours has a *caption*.”",
+    {
+     "if": "e8_reply==\"true\"",
+     "text": "She drops a piece of squid in front of the biggest star and watches it decide. “Nobody ever thanks you for praying for them,” she says. “They thank you for the casserole. I showed my mom.”"
+    },
+    "By twenty to seven the high window has gone gray. She tips the clipboard so he can read the page under the tank log.",
+    {
+     "type": "doc",
+     "title": "Becca’s clipboard, the weekend page",
+     "text": "WES — THINGS HE MIGHT LIKE\nSaints\nboats?\nhorses??\nthe old lighthouse (Point)\nask Jack"
+    },
+    "“Lena told Mrs. Fitch at the 12:10,” Becca says, “and Mrs. Fitch told Coffee and Donuts, and Coffee and Donuts told me.” She can’t wait to meet him. “I’ve been praying for them since September. Lena and Wes.” She looks up from the squid. “Is that weird?” She holds out the Tupperware before he can answer, and the anemone nearest him opens a little wider."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Put your finger in the anemone.",
+     "tag": "Sincerity",
+     "set": {
+      "e9_tank": "anemone",
+      "rel.becca.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At dawn in the Marine Lab, Becca showed you how an anemone holds on.",
+     "response": [
+      "The tentacles close on his fingertip all at once, sticky and soft and insistent, a hundred small pulls asking him to stay. “It *holds on*,” Becca says, delighted for him. “That’s different from biting.” She puts her hand over his and shows him how gently to take it back, a little at a time, so it lets go on its own.",
+      "At 7:58 she writes the time in the OUT column, and the Ranger takes him back down Ocean Road to the Delgado fire lane. She leans across the bench seat to say it through his window: “Tonight! Laney’s bonfire! I’m bringing s’mores.”"
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“Does it bite?”",
+     "tag": "Charm",
+     "set": {
+      "e9_tank": "bite",
+      "rel.becca.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "“Does it *bite*.” She sits back on her heels, thrilled with him. “It holds on. That’s different.” He keeps his hand on the lip of the tank, so she puts her own finger in for him, and the anemone closes on it like a fist made of rubber bands, and she laughs out loud at the cinderblock ceiling.",
+      "At 7:58 she signs out on the paper sheet, and the Ranger runs him back to the Delgado fire lane with the heater still going. Through the window, as he shuts the door: “Tonight! Laney’s bonfire! I’m bringing s’mores.”"
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "Watch her work.",
+     "tag": "Control",
+     "set": {
+      "e9_tank": "watch",
+      "trait.control": "+1"
+     },
+     "response": [
+      "She narrates it to him as she goes, salinity and temperature and who ate, like a letter home: number four ate, number six is thinking about it, the bat ray is sulking and she’ll let him. When she catches him watching she isn’t shy about it for a second. “You can watch,” she says. “I’m good at this.”",
+      "At 7:58 she writes the time in the OUT column, and the Ranger takes him back to the Delgado fire lane. She leans across the seat as he gets out: “Tonight! Laney’s bonfire! I’m bringing s’mores.”"
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "FRIDAY · 12:40 PM · DELGADO HALL, THE FISHBOWL",
+   "body": [
+    "By lunch the Fishbowl TV has been saying the same thing for ten hours. CNN, on a loop: the committee in Oslo, the stunned man at the podium, and the President in the Rose Garden at the top of the morning, calling it “a call to action,” and back to Oslo. On the long couch Doug Pruitt is asleep under a thermodynamics textbook open across his face like a pup tent.",
+    "Theo is on the arm of the other couch eating a pomegranate with a spoon, and has been delighted since breakfast. “Nobody saw it coming,” he says. “Including him. That’s not a prize, Lindqvist. That’s a cliffhanger.”",
+    "Margot is at the far end with the *Tide* laptop on her knees and the red Dymo badge on her lapel, TIDE, and her Docs on the coffee table. She observes Leif Erikson Day. It has been a presidential proclamation every October ninth since Lyndon Johnson, she tells Jack, and she keeps it instead of the other one. Jack has already seen. He came down past the fourth-floor lounge, where the whiteboard has been annexed again.",
+    {
+     "type": "doc",
+     "title": "The 4th-floor lounge whiteboard",
+     "text": "LEIF ERIKSON DAY (OBSERVED)\nCOLUMBUS: SEE ATTACHED\n\nUSEFUL IDIOTS — C 6 · B 5\nNOBEL: C — PENDING · B — PENDING"
+    },
+    "“It’s a prize for not being the last guy,” Margot says of the Nobel, typing. “The most reasonable thing a Norwegian’s done since Ibsen.”",
+    {
+     "if": "e9_nobel==\"what\"",
+     "text": "“For what?” Jack says. It’s out of him again, the same as at six in the morning. Margot stops typing. “Costigan agrees with the *Wall Street Journal* editorial page,” she announces to the Fishbowl. “Somebody write it down.” Nobody does. Under the textbook, Doug snores once."
+    },
+    "Then, unprompted, for the log: “No alarm Tuesday. Either the theory’s wrong or he’s on vacation.”",
+    "She types another line. Without looking up from the screen she says, “Park-Ellis played his song last night at Bastille. Once a month, like a medication. Your friend Broussard was by the window. Alone. She left in the second chorus.”",
+    "“Again,” Jack says.",
+    "“Again.” Margot goes on typing. She writes nothing down.",
+    "The stairwell door bangs and Laney comes down from 217 in a pageant-host mood, sunglasses pushed up into the copper, pink BlackBerry held up like a cue card. “Live from the second floor,” she says. “Magdalena Broussard is ironing *pillowcases*. For a man who’ll be sleeping two floors up from her. She has changed her dress three times and she is not *done*.”",
+    "Since LIAR. xo at 4:43 on a Thursday morning last week, Laney has become the person he texts. That is the only excuse Jack will ever have for what he does next. He tells her Becca’s coming to everything this weekend. He wants her to have a good time. He wants to *do* something, not just stand there. Does Laney have an idea.",
+    "Laney lights up like a runway. “Sugar,” she says. “A girl like that has never had a *poem* in her life.” Out loud. Tonight, at the bonfire. In front of God and everybody. About her eyes, and it has to rhyme. “And when you get to the end — this is the important part — you go down on one knee.”",
+    "“Laney.”",
+    "“It’s *poetic posture*. Ask any pageant.” She sits down on the coffee table across from him, knee to knee, and asks it sweetly. “What color are they?”",
+    "Jack opens his mouth. Nothing is in it.",
+    "“Uh-huh,” Laney says.",
+    "Her glance goes over his shoulder to the arm of the couch, quick as a pageant smile. On the arm of the couch Theo has put down the pomegranate, and his thumbs are going on the iPhone. Kevin comes through from the laundry with a basket of folded quarter-zips on his hip and doesn’t break stride. “Don’t,” he says, to all three of them, and keeps walking."
+   ],
+   "journal": [
+    {
+     "kind": "clue",
+     "id": "fresno",
+     "title": "“Fresno”",
+     "text": "Julian’s song. He only plays it once a month. “You said the wall was where you yelled at God / I never heard Him yell back.” Lena left in the second chorus. So did I. Thursday the 8th, Margot was there. Lena by the window, alone. She left in the second chorus again."
+    },
+    {
+     "kind": "note",
+     "id": "alarm",
+     "title": "The 3 a.m. alarm",
+     "text": "Alarm 1, Monday the 31st, 3:07: everybody on the lawn in what they sleep in; Theo saved the espresso machine; Margot wrote ‘ALARM 1’ like it was a case number. Alarm 2, Friday the 18th, 3:12: eighteen days. Margot says that’s not a schedule, it’s a person. She’s keeping a log. Tuesday the 6th, nothing. Either the theory’s wrong or he’s on vacation."
+    },
+    {
+     "kind": "note",
+     "id": "whiteboard",
+     "title": "The whiteboard",
+     "text": "Margot’s, by annexation: USEFUL IDIOTS FOR CHRISTIAN NATIONALISM, COSTIGAN | BROUSSARD. Sully’s made the board: liturgical football, idolatry, my outfit. Margot wasn’t even there when I read it. She didn’t need to be. Now the chastity talk is up there too: both of us, voluntarily. Kenzie Rourke got her own line. Margot thinks she might not be an idiot. Category pending. C 6, B 5. The morning after the wake, under the total: TUESDAY — NO SCORE. (BEREAVEMENT.) October 9th, top of the board: LEIF ERIKSON DAY (OBSERVED). Columbus: see attached."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Okay. A poem.”",
+     "if": "trait.reckless>=11",
+     "tag": "Reckless",
+     "set": {
+      "e9_laney": "poem",
+      "rel.laney.warmth": "+1",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "Laney puts both hands on her heart. “You are going to make that girl *cry*.” She produces a pen from somewhere in her hair and a Fishbowl napkin from the pizza stack, and presses them into his hand.",
+      "The napkin goes into his back pocket against Hale’s Williams, and all afternoon it rides there, blank, and all afternoon he tries, and he cannot for the life of him say what color Becca’s eyes are."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“I’ll think of something myself.”",
+     "tag": "Sincerity",
+     "set": {
+      "e9_laney": "own",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Course you will,” Laney says, enormously kind about it. She hands him a pen and a Fishbowl napkin anyway. “For when you don’t.”",
+      "He folds the napkin into his back pocket against Hale’s Williams. It follows him around all afternoon, and so does the question, and he cannot for the life of him say what color Becca’s eyes are."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“Laney, that’s insane.”",
+     "tag": "Wit",
+     "set": {
+      "e9_laney": "insane",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“That’s *romance*,” Laney says. “Insane is just the delivery system.” And there are the napkin and the pen, held out, until he takes them.",
+      "The napkin goes in his back pocket against Hale’s Williams. He means to throw it out. All afternoon he doesn’t, and all afternoon he can’t say what color Becca’s eyes are."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s03": {
+   "slug": "FRIDAY · 3:45 PM · THE ANACAPA LOT",
+   "set": {
+    "resolve.lena": 6
+   },
+   "body": [
+    "The plan was Kevin’s Odyssey: Kevin driving, Lena up front, Jack in the back to lift whatever Wes brought, fifty-five minutes to Santa Barbara for a 5:25 out of Phoenix, leaving at a quarter to four to be early, because Lena. The plan is sitting on its front passenger rim. The tire has gone down flat and puddled out onto the asphalt, and on the hood, set upright at the base of the windshield, is the valve cap, like a tip.",
+    "On the back glass, in Lena’s white La Vang polish, it still says 4–0.",
+    "Kevin walks once around the van and comes back to the tire. “Who lets the air out of a *minivan*?”",
+    "Theo arrives across the lot jingling the SL keys, carrying a sheet of foam board under one arm. On it, hand-lettered in black calligraphy with swashes on the capitals: ARCENEAUX. He takes in the tire with real sorrow. “Tragic,” he says. “Take mine —” He looks two rows over at the champagne-gold 450SL, as if seeing it for the first time. “Oh. Two seats.” He pauses, and enjoys the pause. “I’ll go. I’ll bring him to you with a bow on.”",
+    "“Theodore,” Lena says.",
+    "The SL is out of the lot and gone up Ocean Road before she gets to the second syllable.",
+    "So: the spare, from under the van floor, a donut that has never been out in daylight. The scissor jack. Jack learned this on the Silverado in the driveway on Glenwood Avenue with his father standing over him with a coffee: lefty-loosey, and don’t strip it, because we’re not buying another one. He breaks the lug nuts loose with his foot on the wrench. Kevin takes them one at a time and zips them into the pocket of his quarter-zip and keeps a hand over the pocket, an usher with the collection. When the tire comes off, Kevin runs his palm around the tread, looking for a nail. There’s no nail. There’s no cut. “There’s nothing wrong with it,” Kevin says. He goes around the tread again. “There’s nothing *wrong* with it.”",
+    "Lena is on the curb in a blue sundress and the Justins, with the oatmeal cardigan, which she keeps taking off and putting back on; when she sets it down beside her something small and metal in the pocket clicks against the concrete. Jack has seen her take Hale apart across a seminar table and ring the bell at Sully’s till the owner surrendered. He has never seen her nervous. She gets up twice to check her face in the van’s side window and sits back down.",
+    "“He’s never been west of Houston,” she says.",
+    "Somebody has to say something, so Jack asks about the Nobel. She has a take; she always has a take. “Infant baptism,” Lena says. “You give the grace first and pray the child grows into it.” She tucks her hair behind her ear and untucks it. “The Norwegians are Lutherans. They’d hate the comparison.”",
+    {
+     "if": "e8_becca_end==\"kiss\"",
+     "text": "Jack is on his knees at the wheel, getting the donut onto the studs, when she says, to the top of his head, “Becca’s status says she’s the luckiest girl in Portolá.” He keeps threading the first nut. A pause. “I’m glad, Jack.” When he looks up she’s looking right at him."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Danny says hey.”",
+     "if": "e8_danny==\"told\"",
+     "tag": "Candor",
+     "set": {
+      "e9_hey": "given",
+      "rel.lena.trust": "+1",
+      "soul.honesty": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "On the curb you finally gave Lena your brother’s message. “Hey back,” she said. “I said it myself.”",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "danny",
+       "title": "Danny Costigan",
+       "text": "My brother. Trumbull Correctional. Calls me Professor. Ma brought him the good socks. *Brideshead* went to him through Driftwood, margins erased; the C.O. reading it first says it’s about a house. The ocean letter got there; Reggie, from Portsmouth, decided on his own the Pacific smells like money and fish. Lena knows. She asked his name. On the bluff bench she said hi to him and told him she’s going to be defense, and he laughed like he used to. The system cut him off at ‘tell Gina — .’ He wrote the rest down: tell Gina it ain’t hers to carry. He’s got it. On Michaelmas he wrote: Tell Lena hey. I like knowing it. You sound happy out there. Don’t feel bad about it. That’s an order. Lena says hey back. She said it herself. The Saints are four and oh, and she expects him to know that."
+      }
+     ],
+     "response": [
+      "Kevin has gone around to the back of the van with the flat. Jack says it to the lug nut. “Danny says hey. He put it in his last letter.”",
+      "Lena stops with the cardigan halfway onto one arm. “Hey back,” she says. “Tell him the Saints are four and oh and I expect him to know that. Tell him I said it myself.” And there it is, her real smile, the first one of the weekend, and it isn’t for the parking lot.",
+      {
+       "type": "break"
+      },
+      "By 4:25 the donut is on, the flat is in the back, and Theo, Kevin calculates, has forty minutes’ start and a V8. So they wait. Lena won’t go inside. “If I go inside I’ll change my dress again.”",
+      {
+       "type": "sms",
+       "from": "THEO VANCE (IMPORTANT)",
+       "text": "Package acquired. He’s taken my Wayfarers. I like him. Inconvenient.",
+       "time": "5:41 PM"
+      },
+      "At 6:15 she is still on the curb, the cardigan on, and the sun is going down orange behind the eucalyptus."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "“Becca said that this morning. About the prize.”",
+     "tag": "Candor",
+     "set": {
+      "e9_hey": "later",
+      "e9_becca_said": true,
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“Becca said that this morning,” he says. “About the prize. More or less. With a calf.”",
+      "“Then Becca’s right,” Lena says. It’s generous. There’s nothing sharp in it; whatever is sharp is on his side of the wheel. Danny’s hey stays in his pocket.",
+      {
+       "type": "break"
+      },
+      "By 4:25 the donut is on, the flat is in the back, and Theo, Kevin calculates, has forty minutes’ start and a V8. So they wait. Lena won’t go inside. “If I go inside I’ll change my dress again.”",
+      {
+       "type": "sms",
+       "from": "THEO VANCE (IMPORTANT)",
+       "text": "Package acquired. He’s taken my Wayfarers. I like him. Inconvenient.",
+       "time": "5:41 PM"
+      },
+      "At 6:15 she is still on the curb, the cardigan on, and the sun is going down orange behind the eucalyptus."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "Keep working the lug nuts.",
+     "tag": "Control",
+     "set": {
+      "e9_hey": "later",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He keeps working the lug nuts, star pattern, the way his father taught him, and doesn’t say anything. After a minute Lena gets up and goes back to the van window and her face in it. The hey stays in his pocket with the napkin.",
+      {
+       "type": "break"
+      },
+      "By 4:25 the donut is on, the flat is in the back, and Theo, Kevin calculates, has forty minutes’ start and a V8. So they wait. Lena won’t go inside. “If I go inside I’ll change my dress again.”",
+      {
+       "type": "sms",
+       "from": "THEO VANCE (IMPORTANT)",
+       "text": "Package acquired. He’s taken my Wayfarers. I like him. Inconvenient.",
+       "time": "5:41 PM"
+      },
+      "At 6:15 she is still on the curb, the cardigan on, and the sun is going down orange behind the eucalyptus."
+     ],
+     "goto": "s03b"
+    }
+   ]
+  },
+  "s03b": {
+   "slug": "FRIDAY · 6:20 PM · THE ANACAPA LOT",
+   "music": "Yeah Yeah Yeahs — “Zero”",
+   "set": {
+    "resolve.lena": 7
+   },
+   "body": [
+    "They hear it before they see it: Karen O, coming up Ocean Road out of a 1979 dashboard that was never built for her, through the cord of the cassette adapter Theo runs his iPod into. Then the SL turns in off the road with the top down and the sign wedged behind the seats, Theo driving with one wrist, and in the passenger seat, in Theo’s Wayfarers, a big sunburned man holding a Mason jar up over the windshield like a trophy. The jar is empty. The electrical tape on the lid has been cut and taped back down, and THE PACIFIC. (A PREVIEW.) is still on it in Lena’s capitals.",
+    "“I drank it,” Wes says.",
+    "Lena runs. She runs the length of three parking spaces in the Justins and he is out of the car before it has finished stopping, and they meet by the SL’s back fender and kiss hello in the lot, his hand flat between her shoulder blades, the jar held out of the way behind her.",
+    "The jack is still lying in the open back of the Odyssey with the lug wrench beside it. Jack looks at the lug wrench. He looks at the jack. He looks at Kevin. Kevin is looking at the jack too.",
+    "Theo lifts a green duffel out of the trunk, with the neck of a bottle riding in its end pocket, carries it to the curb like a bellhop, sets it down, and stands beside it as if expecting a tip. “He called my car *ma’am* at a stoplight in Goleta,” Theo tells Kevin. “I’ve never been so moved.”",
+    "Wes is six-two and easy in all of it, with shoulders that look like they have pulled a boat through something, a sunburn that stops at the sleeve of his T-shirt, sandy hair cut short. When he grins there’s a chip off one front tooth. His Saints cap has a brim bent so long it’s nearly a tube; Lena touches it as she goes by. “He’s been bending that since oh-six.” He pushes Theo’s Wayfarers up onto the cap and looks around him at all of it: the eucalyptus, the dry gold hills going pink, the Lagoon. “October,” he says, “and nobody’s sweating.” Then he looks at Lena, the whole of her, from the boots up. “Look at you,” he says. “You look like Easter, dawlin’.” His vowels are New Orleans but not hers — slower, further back, in no hurry at all.",
+    "Lena keeps his hand in hers and brings him the last ten feet. “This is Jack.”",
+    "“You’re the Ohio guy.” Wes puts out his hand. “She said you were a jagoff. That means she likes you. I’ve known her since she had a retainer.” His grip has lifted things for a living, and the chipped tooth shows the whole time he’s saying it."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "wes",
+     "title": "Wes Arceneaux",
+     "text": "Lena’s boyfriend. Tulane, civil engineering; the boat at sixteen. Six-two, a chipped front tooth, a Saints cap he’s been bending since 2006. Calls me the Ohio guy. Says she called me a jagoff and that means she likes me; he’s known her since she had a retainer. Drank the Pacific: the jar came back empty. Theo fetched him from the airport alone, in a two-seater, with a sign."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Who dat.”",
+     "tag": "Wit",
+     "set": {
+      "e9_welcome": "whodat",
+      "rel.wes.warmth": "+2",
+      "trait.wit": "+1"
+     },
+     "key": "In the Anacapa lot you said “Who dat” to Wes Arceneaux. He picked you up off the asphalt.",
+     "response": [
+      "“WHO DAT!” Wes says, at a volume that turns heads at the bike racks, and hugs him, and lifts him clean off the ground, six feet of Youngstown hanging in the air over the Anacapa lot. He sets him down and claps him twice on the back. Kevin, from the van’s bumper: “He’s been told.”",
+      "Then the four of them start up the walk toward Delgado, and Theo behind them with the sign, Wes’s arm across Lena’s shoulders and the empty jar swinging from his other hand."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“Welcome to the Pacific.”",
+     "tag": "Sincerity",
+     "set": {
+      "e9_welcome": "pacific",
+      "rel.wes.warmth": "+1",
+      "rel.wes.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "You welcomed Wes Arceneaux to the Pacific. He wanted to know where it was. He wanted to touch it.",
+     "response": [
+      "Wes takes that seriously. He looks past Jack, past Delgado, toward the sound beyond the Lagoon. “Where’s it at?” he says. “I want to touch it.” “Tomorrow,” Lena says, pulling him by the hand. “It’s a *threat*, Wesley.”",
+      "Then they start up the walk toward Delgado, the four of them and Theo trailing with the sign, Wes’s arm across Lena’s shoulders, his head turned toward the sound of the water."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“She’s the only person I can’t out-talk.”",
+     "tag": "Charm",
+     "set": {
+      "e9_welcome": "outtalk",
+      "rel.wes.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "key": "You told Wes she’s the only person you can’t out-talk. “I out-wait her,” he said.",
+     "response": [
+      "Wes laughs, a big unhurried laugh with the tooth in it. “Nobody can out-talk her, podna,” he says. “I out-*wait* her.” Lena hits him with the cardigan, and he catches the sleeve and keeps it.",
+      "Then they walk up toward Delgado, the four of them, Theo bringing up the rear with the duffel and the sign, Wes’s arm back across Lena’s shoulders where it was."
+     ],
+     "goto": "s04"
+    }
+   ]
+  }
+ }
+}
