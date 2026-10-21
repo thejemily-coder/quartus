@@ -787,3 +787,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Orleans, he flies to Youngstown, and his phone buzzes: Skye. Every reason for hope, and a real sting that it can't
   work right now. (Skye is secret at this point; Lena is with Julian and has not yet resolved to leave him; that
   resolution forms over the Christmas calls.)
+- **Length exception for the Skye episodes (player).** The episodes that carry Jack and Skye (from their meeting
+  through Season 2's New Orleans trip) **may run longer than the 12–18k range, up to about 22k words per path**, so
+  there is plenty of Jack-and-Skye on the page **without losing the ensemble** (Lena stays central, and Theo, Laney,
+  Margot, Kevin, Becca or Julian keep their beats). Use the extra length for Jack/Skye scenes; don't pad. The Mechanics
+  reviewer should treat ~22k as within budget for these episodes.
