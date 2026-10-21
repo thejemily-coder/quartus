@@ -736,3 +736,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
      the fundraiser; New Orleans in February.
   (This aligns Jack's timeline earlier: Becca ends pre-Thanksgiving rather than right after it. The "lie bordering on
   cruel" Thanksgiving realization now happens *before* Thanksgiving, triggered by Julian.)
+- **Accelerated sequence, details (player).**
+  - **Thanksgiving:** Jack had been planning to ask Lena home, but **doesn't once she tells him about Julian**. **Theo
+    comes home to Youngstown with him.** Theo comments that Jack is texting a lot; Jack says nothing.
+  - **Theo and Laney:** crushed by Lena's new boyfriend (a false dawn), then **in a frenzy that both Jack and Lena are
+    dating other people again**. Both are **suspicious of Jack for the rest of the semester** (his unexplained absences
+    from Thanksgiving to Christmas).
+  - **Christmas break:** **Theo runs into Skye** (in LA). **Skye tells Jack** (Facebook message, text or phone call)
+    that his roommate was being extremely odd, even for him. **The larger part of that conversation is how Jack learns
+    that Theo knows Skye** (childhood friends) **and suspects them.** The meeting confirmed Theo's suspicions: **Theo
+    and Laney return from Christmas break well-prepared** for their planning (alliance ops ready for Season 2).
