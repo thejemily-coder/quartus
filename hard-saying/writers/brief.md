@@ -792,3 +792,21 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   there is plenty of Jack-and-Skye on the page **without losing the ensemble** (Lena stays central, and Theo, Laney,
   Margot, Kevin, Becca or Julian keep their beats). Use the extra length for Jack/Skye scenes; don't pad. The Mechanics
   reviewer should treat ~22k as within budget for these episodes.
+- **SKYE: the meet and the magnetism (player co-design, round 3).**
+  - **Jack approaches her himself.** This is the first time in the series Jack crosses a room on his own initiative to
+    start something (until now Theo and Laney drove nearly every new connection). Mark it in his narration.
+  - **What pulls him across the room:** at a loud party (or the Anchor, or the quad; room's choice), the most beautiful
+    person there is **alone in a corner, ignoring everyone, furiously annotating a paperback**, and **annotating it
+    wrong**. He can't help himself. (This is the book conversation: he corrects her without knowing who she is.)
+  - **Her distinct magnetism (all four; distinctly Skye, never Lena):**
+    - **Total presence:** an actor's attention turned all the way up; when she looks at you nothing else exists. Jack
+      feels seen *in the moment*. Lena sees him *through time*; Skye sees him *right now*.
+    - **Unafraid of want:** she says what she wants out loud, plainly, without shame ("I'd like to kiss you now"), which
+      is alien and thrilling to a Catholic boy.
+    - **Play as a way of life:** everything becomes a game, a scene, a bit; she pulls him into improvising, and he gets
+      funnier and looser around her.
+    - **Physical ease:** at home in her body, outdoors, barefoot everywhere, in the ocean at night, driving fast,
+      surfing. She wakes up the reckless Costigan.
+  - **The mark she leaves on him: saying it out loud.** Jack gets better at saying what he feels and wants, plainly.
+    **Lena benefits from it later** (in New Orleans and after). It's Skye's real gift to him, and Lena knows where it
+    came from, which is both a joke and a sore spot.
