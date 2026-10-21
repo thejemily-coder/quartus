@@ -714,3 +714,25 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   her somehow.** (Danny is in prison with no Facebook: he hears about it on the phone or in letters, maybe from Gina,
   who describes the photos in detail.)
 - **After S1E13 (player feedback).** "Aching sweetness throughout."
+- **ACCELERATED SEQUENCE (player directive; supersedes steps 3–5 of "Re-plan, exact sequence").**
+  1. **Jack finds out about Julian** (Lena has started seeing him).
+  2. **Jack and Becca end BEFORE Thanksgiving**, after Jack learns about Julian, when he realizes **he doesn't want to
+     take Becca home to meet his family even with Lena no longer available**. (Thanksgiving in Youngstown: Theo still
+     goes with Jack per the earlier directive, unless the room finds a better fit; Lena is unavailable.)
+  3. **Before Jack goes home for Thanksgiving, he meets Skye** (on campus or at a party) and **has zero clue who she
+     is** (he doesn't watch TV). They get talking about **something he knows**, there's **a little spark**, and they
+     **exchange numbers**.
+  4. **They text throughout Thanksgiving break.** **She adds him on Facebook, which is how he finds out who she is.**
+  5. **Back at Marisol, between Thanksgiving and Christmas break, they hang out regularly**, and **Jack doesn't tell
+     his friends where he's going**.
+  6. **Theo has suspicions** (he's Skye's childhood friend): he notices on Facebook which two of his friends just
+     became friends and are **liking an unreasonable amount of each other's things**.
+  7. **Things accelerate with mild physicality** (kissing, making out, within the HARD RULES). **Theo asks him one night,
+     when he comes back to the dorm at an unreasonable hour, why he looks like he just went through a warzone.**
+  8. **They decide to be dating when they get back after the break.** In Skye's voice: not before, because Christmas
+     and New Year's put too much pressure on new things. Over Christmas break in Youngstown they keep texting and
+     Facebooking (and the Costigans find her Facebook; see "The Costigans on Skye").
+  9. January 2010: officially dating; Lena finds out (the hurt chain's third link) and stays with Julian; proxy war;
+     the fundraiser; New Orleans in February.
+  (This aligns Jack's timeline earlier: Becca ends pre-Thanksgiving rather than right after it. The "lie bordering on
+  cruel" Thanksgiving realization now happens *before* Thanksgiving, triggered by Julian.)
