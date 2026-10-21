@@ -868,3 +868,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   **strange hours**: late-night drives, 1 a.m. diners, her place after an LA event, a dawn beach. Jack-only POV: we see
   the others noticing through their questions, looks and Theo's needling; Lena's noticing is shown in what she asks and
   what she stops asking. Feeds Theo and Laney's suspicion and Lena's January hurt.
+- **Skye's first vulnerability (player's design; during the secret stretch).** After **Jack turns down sex for the first
+  time**, Skye asks him why: his faith, all of it, out of real curiosity. They talk for a long time, as they always do.
+  Then, **for the first time, she's suddenly more reserved**, but because she's still Skye she says what's on her mind:
+  **she's scared he thinks she's a whore or something**, because **she genuinely likes him a lot and already cares what
+  he thinks, which she also says is rare** for her. The performer drops the act. Jack's answer is the player's choice
+  (several tones, all honest; none can be cruel or preachy), and it shapes their relationship (trust, warmth,
+  heat). It's a key humanizing beat: the child-star wound under the play, and the first sign that his "no" lands on her
+  as possible judgment. The room should make his best answer genuinely good: Catholic teaching on her dignity, not
+  condemnation.
