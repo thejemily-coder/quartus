@@ -1,0 +1,266 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "FRIDAY · 3:40 PM · ST. BRENDAN’S, THE COURTYARD",
+   "body": [
+    "By twenty to four the sun comes in sideways under the olive tree and lays the leaves’ shadows across a blue tarp, and on the tarp, in pieces, is the courtyard sprinkler: a brass head from 1962, three lengths of pipe, a coupling gone green at the threads. Fr. Osei kneels beside it in rubber boots with his sleeves rolled and a pipe wrench in his fist, the wooden rosary swinging off his belt. The sprinkler has been broken as long as Jack has known it, and Osei has never once looked anything but glad to see it.",
+    "Jack is here for a hoe. Becca told him to borrow one, and it is not obvious how you ask a priest for a hoe.",
+    "“The shed,” Osei says, before he has to; Becca asked him Wednesday, and told him what for. He points the wrench at the Newman house. “Two nails, beside the Christmas lights. Bring it back. The sprinkler needs it.”",
+    "Jack looks at the sprinkler, which has no dirt in it anywhere. Osei is already back at work, entirely serene, and Jack decides it isn’t his department.",
+    "In the shed the hoe hangs where he was told, its handle gone silver with age, a strip of masking tape around its neck in Mrs. Fitch’s capitals: NEWMAN · GARDEN · RETURN.",
+    "“You know about Isidore?” Osei calls across the courtyard. “He went to Mass every morning and came late to the field, and the other laborers complained to the master, so the master hid in the hedge to catch him.” He sits back on his heels to enjoy what comes next. “And there were angels at the plow. White oxen, the furrows going in straight as a rule, and Isidore on his knees at the end of the row.”",
+    "“In 1622,” he goes on, “Gregory the Fifteenth canonized him on the same day as Ignatius, Francis Xavier, Teresa of Ávila and Philip Neri, and the Romans said —” the laugh gets there ahead of him — “the Romans said the Pope had canonized four Spaniards and a saint.” He wipes his eyes on his wrist. “Four Spaniards, and a *saint*. Neri was a Roman, you see. Four Spaniards and a saint.”",
+    "“So I’m one of the Spaniards.”",
+    "“You are the Spaniard who let the angels do his plowing. For a student, I think, a very sound choice.”",
+    {
+     "if": "e2_osei==\"board\"",
+     "text": "“The board is still set up in my office,” Osei adds, with a nod at his window over the courtyard, “from the night you chose me over the confessional. We will finish the game when the sprinkler is fixed.” He regards the sprinkler with great tenderness."
+    },
+    "Becca comes out of the Newman house at a quarter to four for a four o’clock, which for Becca is cutting it fine. Something is folded over her forearm with her own straw hat riding on top of it, the hat that lives on the Ranger’s dash. A white lace mantilla hangs over her shoulder, and a little clay water jug swings from one finger.",
+    "“Mrs. Fitch let me pick from her basket,” she says, of the mantilla. “She remembers whose it was. She wouldn’t tell me, so it was somebody *interesting*.” She lifts the jug. “Maria de la Cabeza. She was Isidore’s wife. She carried water out to the hired men, and when the Jarama flooded she spread her shawl on it and walked across.” She considers the mantilla. “I can’t do that part.”",
+    "Osei, from the tarp, breaks it to her gently, a doctor with a chart: strictly, Maria was never canonized. Beatified. Rome confirmed her cult in 1697 and left it there.",
+    "Becca’s face falls, and for one second the courtyard is a sad place. Then it comes back up. “She’s a saint to *me*.”",
+    "Osei laughs from the belly, the wrench across his knees and the rosary rattling on his belt.",
+    "The side door of the Newman house bangs and Lena comes out, done with some form for Mrs. Fitch, a Goodwill garment bag zipped to the top over her shoulder. Laney trails her in enormous sunglasses with a Starbucks iced coffee sweating through its sleeve.",
+    "“Lena!” Becca waves the jug. “What are you going as?”",
+    "“It’s a surprise, Becca. Happy Halloween.”",
+    "Laney takes the straw out of her mouth. “It’s a *bird*.”",
+    "“Laney.”",
+    "Lena’s eyes pass over the hoe on Jack’s shoulder and the hat on Becca’s arm — a garden tool at a church with a garden, a hat she has seen on a dashboard — and then the gate clangs behind them.",
+    "Becca shakes out what’s on her arm like a sheet off the line, and it’s a feed sack: heavy cotton, cut and hemmed into a smock with holes for the arms, RATHDRUM FEED & SEED across the back in red gone the color of an old barn, and a length of rope for a belt, run through two brass grommets she set herself.",
+    "Jack has been riding under St. Isidore on the Ranger’s sun visor since the night of the football game.",
+    "“Well?” Becca holds it up against him by the shoulders to check the length."
+   ],
+   "choices": [
+    {
+     "text": "“You made this.”",
+     "tag": "Sincerity",
+     "set": {
+      "e12_tunic": "made",
+      "rel.becca.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“I *make* things, Jack.” She turns up the hem to show him the inside seam, folded back on itself and stitched down so not one raw thread shows, because she can’t help it. “Eight kids, one sewing machine. You learn to finish a seam or you wear your brother’s.”",
+      "She folds the sack back into its square, sets the hat on top and the stack in his arms, and hangs the jug on his finger for good measure. Behind her Osei is back on his knees on the tarp, humming, threading a washer onto the brass."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "Put it on over your flannel, right there.",
+     "tag": "Charm",
+     "set": {
+      "e12_tunic": "on",
+      "rel.becca.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "He leans the hoe on the olive tree and pulls the sack over his head on the spot, over the flannel, while the jacket he came in lies on the bench where he dropped it. The smock comes to his knees. Becca steps in with the rope, cinches it, and ties it off hard, a hay-bale knot with a yank at the end that rocks him on his heels.",
+      "Osei glances up from the tarp at the farmer, and past him at the brown canvas on the bench. “Saint Isidore of the Carhartt.”",
+      "Becca walks once around him, tugging the shoulders square, then reaches up and sets her straw hat on his head and tips the brim back with a knuckle, to see his face."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“Rathdrum Feed & Seed. Finally, a saint with a sponsor.”",
+     "tag": "Wit",
+     "set": {
+      "e12_tunic": "sponsor",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Becca takes this seriously. “They *are* very generous. Mr. Hollister gives the 4-H every empty sack he has, every spring. We made a *quilt*.”",
+      "Osei has to get up off the tarp and sit down on the olive-tree bench with the wrench in his lap until it passes.",
+      "Becca folds the sack back into its square with the red letters facing out, so everybody can see who’s paying."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "FRIDAY · 5:30 PM · DELGADO HALL, ROOM 412",
+   "body": [
+    "“The *staircase*, Delphine.” Theo is bent over his desk on both fists, talking down at his iPhone, which lies on its back on the blotter with a woman in Silver Lake coming out of it at a volume meant for a much larger room. “No. I said *Somerton*. — Lilies up the left rail. Roses down the right. Saints ascend; sinners descend; nobody uses the middle.”",
+    "Delphine says something about the fire code.",
+    "Room 412 has become a war room. The Ferrante house, three floors of it drawn out on Meridian Pictures letterhead, is taped to the closet door with blue painter’s tape, the staircase circled in red Sharpie so many times the paper has gone soft. By the door sit two cardboard boxes marked HALOS (300) and HORNS (300), and beside them a crate of Venetian masks, white and gold and black, with a Post-it on the slats: FOR THE SHY. Theo’s operation has annexed Jack’s side of the room as far as the crucifix.",
+    "“Tell him the cake goes on the *devil’s* side of the table,” Theo says. “He refuses to waste it. Fine. It can work.” Delphine wants to know which side is the devil’s side. Theo closes his eyes.",
+    "Laney is cross-legged on the Aerobed under the window in her PI LAM LITTLE shirt with a yellow legal pad on her knee, and when the door opens she flips the pad over against her thigh. Not fast enough. Upside down, in Laney’s round capitals, with a box drawn around it: STAIRCASE · 11:00 · COUPLES.",
+    "“And our next contestant,” Laney announces, “did not *knock*.”",
+    {
+     "if": "e11_intel==\"list\"",
+     "text": "Under Theo’s espresso cup lies a Nepenthe napkin with three couples on it in Theo’s handwriting, the cowboy and the cow crossed out twice, and Jack recognizes his own intelligence work and keeps his mouth shut."
+    },
+    "“What are you going as?” Jack asks.",
+    "“The host,” Theo says, without looking up from Delphine.",
+    "“That’s not a costume.”",
+    "“It is if you do it correctly.”",
+    "“Laney?”",
+    "Laney caps her pen with great dignity. “Margot gave me a *footnote*.”",
+    "“What’s the footnote?”",
+    "“A lady never reveals her sources, Jack. That’s *journalism*.”",
+    "Kevin is in the doorway in his navy quarter-zip, holding a flyer by one corner, out from his body, a specimen he’d rather not have touched.",
+    {
+     "type": "doc",
+     "title": "Student Health, the bulletin board",
+     "text": "H1N1 VACCINE · LIMITED SUPPLY\nPRIORITY GROUPS ONLY:\n· pregnant women\n· parents and caregivers of infants under 6 months\n· health-care workers with direct patient contact\n· students with asthma, diabetes or other chronic conditions\nALL OTHERS: wash your hands · cover your cough · stay home if sick"
+    },
+    "“Health-care workers,” Kevin says. “I am a *future* health-care worker. Every pre-med in Sandoval is a future health-care worker. We are, I’m told, civilians. Doug is practicing a cough.”",
+    "Then he takes in the legal pad against Laney’s thigh, and Laney’s face above it, and Theo’s, bent over the phone, and his smile doesn’t move at all. “Respectfully,” Kevin says, “this is a hostage situation.”",
+    "Laney examines the end of her pen. Theo tells Delphine that the roses are to be dethorned, every one, this is not a Passion play.",
+    "Then he puts her on hold, mid-word, and turns around for the first time. “Costigan. Tomorrow, four o’clock, the Ferrante house. I have three hundred candles and no one I’d trust with a lighter, and you are the only man I know who can carry a thing without commenting on it.”",
+    "“I’m free. I swapped with Hector. He takes Saturday, I work tonight.” Last Saturday, the one he gave up for Big Sur, is still a hole in his month; this one he’s only lending.",
+    "“Hector,” Theo says warmly, an old and dear friend of the production, and takes Delphine off hold. “Delphine. I asked for Somerton, and they gave me Del Playa.”",
+    "In the doorway Kevin opens his mouth, looks at the floor plan with its worn red circle, and appears to decide that whatever Somerton is, he can live without it. He folds the flyer in half and in half again, puts it in the pocket of his quarter-zip, and goes."
+   ],
+   "next": "s03"
+  },
+  "s03": {
+   "slug": "FRIDAY · 9:40 PM · THE ANCHOR",
+   "body": [
+    "The Hobart opens on a rack of coffee cups and lets go a cloud of steam that comes straight up into Jack’s face and fogs the window over the dish station, so that for a few seconds the harbor lights are smears on the glass. Friday is not his night. He took it off Hector, who wanted Saturday, and Friday turns out to be a different restaurant: louder and younger, a booth of girls in cat ears from some pregame demanding fries, two of the harbor guys at the counter already arguing about where they’ll park their trucks tomorrow when the costumes come down the wharf.",
+    "Rudy has the transistor on the shelf over the pass, turned low. The World Series is one game apiece — Philadelphia took the opener Wednesday, the Yankees took last night’s three to one — and tomorrow it’s Game 3 in Philadelphia, and tonight, with no game to talk about, a call-in show out of Los Angeles is talking about it anyway. Rudy lays three patties on the flat-top and listens to a man from Encino explain the Yankees’ payroll.",
+    "“Bought team,” Rudy says, and flips the patties, and that’s his position on the matter.",
+    "Ray Ochoa is at the counter, and this isn’t his night either: no meatloaf, a windbreaker zipped to the throat, a coffee to go with the lid already on it, a man on his way somewhere who has stopped for one minute to be still.",
+    "Gloria comes down the counter with the pot and the pencil through her bun and stops at the end by the dish station, where she can see the room and him. “So. Tomorrow. What are you going as?”",
+    "“St. Isidore the Farmer.” Jack sets the rack down on the steel. “A feed sack, a straw hat and a hoe. A girl from Newman sewed it.”",
+    "Down the counter, Ray’s head comes up at *farmer*.",
+    "Gloria looks Jack over, the steam and the apron and the wet sleeves, and rates him where he stands. “Shoofly,” she says. “Plain, and somebody’s grandmother swears by it.”",
+    "“Thanks.”",
+    "“What’s the pecan going as?”",
+    "“She won’t say.”",
+    "Gloria tops off a trucker’s cup on her way past. “Then she’s going as something that’ll ruin you.”",
+    {
+     "if": "e11_saturday==\"thanks\"",
+     "text": "She comes back with the pot. “You owe Hector a Saturday.” “I’m paying him one.”"
+    },
+    "Ray gets up off the stool with the coffee and turns to face the dish station. “Saint Isidore.” Dry and Westside and tired. “Tomorrow night Marisol PD has every officer it owns on Del Playa and Seacliff, and the county’s lending us deputies. Barricades go up at six-thirty. Four thousand kids, and two hundred of them dressed as Michael Jackson.” He zips the windbreaker to the chin. “Stay off the bluff edges, Saint Isidore. Every Halloween somebody goes off one in Las Olas, and I’m the one who calls the mother.”"
+   ],
+   "choices": [
+    {
+     "text": "“The girl I’m seeing is St. Maria. She’ll keep me off the edges.”",
+     "tag": "Candor",
+     "set": {
+      "e12_ray": "maria",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“Good,” Ray says. “Listen to her.”",
+      "Two stools down, Gloria is refilling a sugar dispenser, and the pour stops. “*Seeing*,” she says. She gives Jack one look over the top of the dispenser, screws the cap back on, and that’s all she has to say about it tonight.",
+      "Ray leaves a dollar by the register and goes out, and when the door opens the sea lions under the wharf are going at it in the dark like a bar at last call."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“Isidore’s a farmer, Sergeant. We don’t do cliffs.”",
+     "tag": "Wit",
+     "set": {
+      "e12_ray": "farmer",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Farmers fall off everything,” Ray says. “Tractors. Barns. Their own roofs.”",
+      "He leaves a dollar on the counter for a coffee that cost a dollar, squares it with one finger, and goes.",
+      "Gloria picks up the dollar, writes SHOOFLY on the back of a dead ticket in capitals, and tapes it to the glass of the pie case at the height of Jack’s eyes, where he’ll have to look at it every time he comes out with a rack."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“Yes, sir.”",
+     "tag": "Control",
+     "set": {
+      "e12_ray": "sir",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Ray studies him over the coffee lid while the Hobart runs out its cycle and clunks open. Then he nods. “That’s the right answer. You’d be surprised how few people give it.”",
+      "He goes out with his coffee into the cold, and the door sighs shut on its closer, and Rudy turns the transistor up a notch so the kitchen can hear the man from Encino lose his argument."
+     ],
+     "goto": "s04"
+    }
+   ]
+  },
+  "s04": {
+   "slug": "SATURDAY · 1:40 AM · DELGADO HALL, THE LAUNDRY ROOM",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "He hears the upright before he’s off the bottom stair. Somebody in the basement at twenty to two is playing “Just a Closer Walk with Thee,” slow, at the pace of a brass band going to the cemetery, and every time the tune wants the F there’s a soft wooden knock where the note should be, and the tune steps over the hole and goes on.",
+    "Jack has the last bus in his legs, the Hobart in his hair and a pillowcase of dish-pit clothes over his shoulder.",
+    {
+     "if": "knows_lena_piano",
+     "text": "He knows whose hands those are.",
+     "else": "Officially, no one in Delgado plays that piano."
+    },
+    "By the time he comes around the end of the dryers the playing has stopped and the bench is pushed back crooked. Lena is at the laundry room’s ironing board, which has one short leg and rocks at every stroke, with the oatmeal cardigan shoved to her elbows and the iron hissing. On the board is something inside out under a bath towel, for security, and the only part of it out in the air is one sleeve, hanging off the end. Blue. She is ironing the sleeve badly, in short hard strokes, arguing with every wrinkle.",
+    "She sees him and whips the towel over the sleeve, and then throws herself across the towel for good measure, the iron held up and away like a torch. “Don’t you *dare* look.”",
+    "“I didn’t see anything.”",
+    "“You saw a sleeve.”",
+    "“I saw blue.”",
+    "“Lord have mercy.” She straightens up and pulls the towel square. “It’s a shirtwaist. Nineteen fifty-four. That’s all you get. And if you tell Laney you saw the sleeve, I will know.”",
+    "His mother has a picture of Nonna in a shirtwaist, on the porch on Glenwood the summer Eisenhower was president, squinting at whoever held the camera.",
+    "They are good at this now. Almost. It has been a week since the porch, and they have a way of doing it: she keeps to her side of the folding table and he keeps to his. He tips the pillowcase into a washer. When he reaches past the can of spray starch for the detergent she pushes the starch across to him by its bottom rim, so there’s no reason for her fingers to meet his.",
+    {
+     "if": "e11_porch_cig==\"lit\"",
+     "text": "When she leans over the board the tin in her cardigan pocket knocks once against the edge of the table."
+    },
+    "“It’s Halloween already,” Lena says. “Back home it’s twenty to four and nobody’s gone to bed. Frenchmen Street’s all skeletons. The Marigny. Voodoo Fest has City Park — that’s a mile from our house; you can hear the bass on the porch on Dupre Street if the wind’s right, and Mama shuts the windows and prays the rosary louder.” She runs the iron down a seam and back. “Wes’ll call me from somewhere loud.”",
+    {
+     "if": "e11_comeback==\"whodat\"",
+     "text": "She sets the iron on its heel. “Daddy asked about you. ‘The one who yells.’” “I yell with respect.” “He knows. That’s why he asked.”"
+    },
+    "She looks at the clock above the door, which says a quarter to two and means a quarter to four, and goes back to the seam.",
+    "“We’re doing good,” she says.",
+    "“We are.”",
+    "And because it’s true, and because tonight she’ll see it anyway, he starts to tell her what he’s going as —"
+   ],
+   "choices": [
+    {
+     "text": "“I’m going as —”",
+     "tag": "Candor",
+     "set": {
+      "e12_laundry": "salve",
+      "trait.candor": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "She is singing before he gets to the noun. Full voice, Rosary choir, Latin she had before she could spell: “*Salve, Regina, Mater misericordiae* —” He tries again, louder, and she goes louder, the iron raised for emphasis — “*vita, dulcedo, et spes nostra, salve* —” until he quits and leans on the dryer laughing, and she sings on through the valley of tears without mercy. A dryer buzzes right in the middle of *Eia ergo*, and she sings straight through that too.",
+      "“I don’t want to know what she picked.” She points the iron at him. “Don’t you *tell* me.”",
+      "She gathers the dress up inside the towel, still inside out, posts it into a dry cleaner’s plastic bag without giving him so much as the other cuff, and drapes it over her arm. Passing the upright she plays a bar with her free hand, and the last note is the dead F, and it knocks. “Goodnight, Jack.” She has left the iron on, standing on its heel on the board with its little orange light lit. He pulls the plug out of the wall and stands there with the cord in his hand while the iron ticks, cooling."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“It’s her first one.”",
+     "tag": "Sincerity",
+     "set": {
+      "e12_laundry": "first",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "He says that instead.",
+      "Lena sets the iron on its heel. For a second the only sound is the washer filling. Then she smooths the towel down over the dress, corner to corner, and says it to the shirtwaist: “Then you did it right.” She doesn’t ask what it is.",
+      "She gathers the dress up inside the towel, still inside out, posts it into a dry cleaner’s plastic bag without giving him so much as the other cuff, and drapes it over her arm. Passing the upright she plays a bar with her free hand, and the last note is the dead F, and it knocks. “Goodnight, Jack.” She has left the iron on, standing on its heel on the board with its little orange light lit. He pulls the plug out of the wall and stands there with the cord in his hand while the iron ticks, cooling."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "Say nothing. Take the other end of the ironing board so it stops wobbling.",
+     "tag": "Control",
+     "set": {
+      "e12_laundry": "board",
+      "trait.control": "+1",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "He doesn’t finish it. He comes around the end of the folding table and takes hold of the far end of the ironing board, where the short leg is, and leans his weight on it until it stops rocking.",
+      "Lena lets him. She irons the rest of it a hand’s width at a time, folding back the towel only as far as the iron needs and keeping her shoulder to him, and without the wobble the iron goes faster, the steam coming up off the cotton close enough to his hands to feel. She works her way down the whole of it under the towel’s edge, and he holds the board, and the washer fills and churns, and for ten minutes the only talk in the laundry room is the iron hissing when she sets it down. She does the collar last, twice.",
+      "She gathers the dress up inside the towel, still inside out, posts it into a dry cleaner’s plastic bag without giving him so much as the other cuff, and drapes it over her arm. Passing the upright she plays a bar with her free hand, and the last note is the dead F, and it knocks. “Goodnight, Jack.” She has left the iron on, standing on its heel on the board with its little orange light lit. He pulls the plug out of the wall and stands there with the cord in his hand while the iron ticks, cooling."
+     ],
+     "goto": "s05"
+    }
+   ]
+  }
+ }
+}

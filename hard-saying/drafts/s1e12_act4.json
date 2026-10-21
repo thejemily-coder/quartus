@@ -1,0 +1,337 @@
+{
+ "scenes": {
+  "s17": {
+   "slug": "SUNDAY · 2:10 AM · LUPE’S, SEACLIFF ROAD",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "Lupe’s smells of carnitas going crisp on the flat-top, of onions and lime and the gas generator chugging under the back bumper, and the string of chile lights along the serving window turns the line a little red. Three Pi Lam pledges stand in it in drugstore nun habits with cat ears pinned over the wimples, sharing one order of chips, perfectly serene.",
+    "Laney is on the curb beside the white truck in the Pope Joan mitre, the halo still riding on top of it, her satin hitched up over her knees and a carnitas burrito the size of a forearm in her lap, peeled halfway out of its foil. Kevin sits beside her in his scrubs and the white mask, holding her crook upright for her.",
+    "Lena doesn’t say anything at all. She goes straight across the asphalt in her bare feet with a saddle shoe in each fist, and Laney gets halfway up off the curb to say something and doesn’t get to, because Lena has hold of her, hard, mitre and pearls and all, and Laney has to hold the burrito out at arm’s length behind Lena’s back to save it.",
+    "“Magdalena Broussard,” Laney says into her hair, “where are your *shoes*?”",
+    "Lena holds them up behind Laney’s shoulders, one in each hand, and doesn’t let go. “I called you eleven times.”",
+    "“It died at twenty to one, and so did I.” Laney frowns up at the chile lights, doing the arithmetic. “Which twenty to one, I couldn’t tell you.”",
+    "Lena lets go of her at last and holds her off by the shoulders to look at her. “You went off with three girls in *wimples* to walk the *wall*, Delaney.”",
+    "“I’m not *stupid*, sugar. I’m *hungry*.” Laney points the burrito at the pledges, who wave. “Sloane told a story at the pregame. People used to walk it on Halloween, *before*.”",
+    "“Before what?” Jack says.",
+    "“She didn’t *say*. She just said *before*, like that, with her eyebrows, and these three got all spiritual about it.” The pledges nod in their wimples. “And I said, ladies. Nobody walks a wall on an empty stomach. We went for *provisions*.” She lifts the burrito up into the chile lights. “And then the provisions were *very good*.”",
+    "“Patient was found alert, oriented and fourth in line,” Kevin says through the mask. “She’d already ordered. I let her finish.”",
+    "Up in the window Lupe leans out over the ledge with two tall cups of horchata, cinnamon floating on the ice, and sets them down in front of Jack and Lena. “Para los novios.”",
+    "“We’re friends,” they say, both of them, at once.",
+    "“Claro,” says Lupe, and goes back to her flat-top.",
+    {
+     "if": "scar_told_laney==\"swan\"",
+     "text": "Laney licks carnitas off her thumb and looks Jack over: the feed sack, the rope belt, the hat. “Saint Swan of the Feed Sack,” she says, and takes another bite before he can answer."
+    },
+    "Kevin turns the white mask up toward Jack. “Where’s Theo?”",
+    {
+     "if": "e12_theo_lie==\"carry\"",
+     "text": "“Looking for Laney,” Jack says. Kevin keeps the eyeholes on him, steady, the paper-white face giving nothing away, and then turns it back toward the truck."
+    },
+    {
+     "if": "e12_theo_lie!=\"carry\"",
+     "text": "“Went back to his party,” Jack says. Kevin nods, and the mask nods with him."
+    },
+    {
+     "if": "e12_told==\"nobody\"",
+     "text": "Lena is a step away with her horchata. She hears it. She drinks."
+    },
+    "They walk home through the Grove at twenty to three, the pledges gone back up Seacliff in a flock. Laney goes first with the rest of the burrito in its foil, humming “Tomorrow” from *Annie* under her breath; Kevin carries her crook; Lena walks barefoot on the cold asphalt of the bike path with her shoes in her hand; and Jack comes last with the hoe over his shoulder like a man coming in from a field. The moon is one night short of full and so bright in the gaps of the eucalyptus that each of them has a shadow, and the shadows are in costume too.",
+    "At Delgado’s front door Kevin reaches up and takes off the white mask, hooks its elastic over his wrist, and holds the door.",
+    "Priya is behind the front desk on Halloween duty with her hood up, a clipboard, a highlighter and the air horn lined up square in front of her, and taped to the counter where nobody coming in can miss it:",
+    {
+     "type": "doc",
+     "title": "Laminated, the front desk",
+     "text": "HALLOWEEN\nYOU ARE RESPONSIBLE FOR YOUR OWN CHOICES\nAND YOUR ROOMMATE’S\n—P. RAMAN, RA (401)"
+    },
+    "“Four,” Priya says, and makes four marks. “Thank you. Where’s Vance?”",
+    {
+     "if": "e12_theo_lie==\"carry\"",
+     "text": "“Looking for Laney.” Priya writes it down. She looks at the clipboard, not at him."
+    },
+    {
+     "if": "e12_theo_lie!=\"carry\"",
+     "text": "“Still at his party.” Priya writes it down."
+    },
+    "Laney takes her crook back from Kevin and blesses the front desk on her way to the elevator, clipboard, air horn and all. Priya keeps writing. “I’m going to need you to not.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "laney",
+     "title": "Laney Price",
+     "if": "e12_where==\"roof\"",
+     "text": "Laney Price. Pi Lam, as of Thursday: ran back across Seacliff in a pink cowboy hat to Lena first. The night before, on the floor of 217 in a white dress, she asked what happens if they look at her and see. First Catholic Mass: arms crossed like a Baptist, came back from the blessing pink and quiet. Programmed herself into my phone. (Hoodie status: hers.) Pi Lam’s barn party: carried upstairs by her new sisters, glorious and wrecked. Called Lena a mother over the banister. Said sorry at the sign of peace, at her second Mass. Big/Little: Sloane is her big. On the front steps at one in the morning, in a PI LAM LITTLE shirt, with a balloon on her wrist, she told me about Kaylee Whitmore. Fifteen; Kaylee drove; they’d both been drinking and Laney let her. Preston Road. A culvert. A cast for six weeks that everybody signed. A month later, a doctor’s note for flying; she’d never been on a plane. Lena’s the only other one who knows. In the water at Pfeiffer Beach she caught my swan. It’s Theo’s. Her fourth Mass, up a mountain with the monks. Asked Lena how you light a candle, and lit one. Don’t you dare, she said. Halloween: Pope Joan, in a cardboard mitre with gold rickrack. Blessed Del Playa from the widow’s walk until Rafi’s father asked her to come down. Over a bullhorn. Best Couple, with Margot. Went missing for twenty minutes with three pledges; we found her at Lupe’s with a burrito. She’s not stupid. She’s hungry."
+    },
+    {
+     "kind": "person",
+     "id": "laney",
+     "title": "Laney Price",
+     "if": "e12_where!=\"roof\"",
+     "text": "Laney Price. Pi Lam, as of Thursday: ran back across Seacliff in a pink cowboy hat to Lena first. The night before, on the floor of 217 in a white dress, she asked what happens if they look at her and see. First Catholic Mass: arms crossed like a Baptist, came back from the blessing pink and quiet. Programmed herself into my phone. (Hoodie status: hers.) Pi Lam’s barn party: carried upstairs by her new sisters, glorious and wrecked. Called Lena a mother over the banister. Said sorry at the sign of peace, at her second Mass. Big/Little: Sloane is her big. On the front steps at one in the morning, in a PI LAM LITTLE shirt, with a balloon on her wrist, she told me about Kaylee Whitmore. Fifteen; Kaylee drove; they’d both been drinking and Laney let her. Preston Road. A culvert. A cast for six weeks that everybody signed. A month later, a doctor’s note for flying; she’d never been on a plane. Lena’s the only other one who knows. In the water at Pfeiffer Beach she caught my swan. It’s Theo’s. Her fourth Mass, up a mountain with the monks. Asked Lena how you light a candle, and lit one. Don’t you dare, she said. Halloween: Pope Joan, in a cardboard mitre with gold rickrack. Best Couple, with Margot. Went missing for twenty minutes with three pledges; we found her at Lupe’s with a burrito. She’s not stupid. She’s hungry."
+    },
+    {
+     "kind": "person",
+     "id": "kevin",
+     "title": "Kevin Tran",
+     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. He kept the mask on until our front door."
+    }
+   ],
+   "next": "s18"
+  },
+  "s18": {
+   "slug": "SUNDAY · 7:10 AM · DELGADO HALL, ROOM 412",
+   "set": {
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "He wakes at ten past seven because his body thinks it’s ten past eight and that he’s late for something. The light in 412 isn’t anything yet, only early, lying across Theo’s desk and the floor without much color in it. The RAZR on the floor by his bed has the time right; it fixed itself in the night. Every clock in Delgado that isn’t a phone is an hour fast this morning, and the microwave in the fourth-floor lounge will say 8:10 until somebody figures out its buttons, which on this floor could be Thanksgiving.",
+    "Theo is asleep across the room on his made bed in the white dinner jacket. He didn’t get under anything. He’s on his back with one arm hanging off the edge and his patent shoes still on and still laced, and from the knees down his trousers are dark and stiff with sand, packed into the weave, the hems wet through and leaving a damp print on the duvet. The black tie is gone. The gray camera bag sits on his desk with its strap trailing to the floor. Jack didn’t hear him come in.",
+    "He gets up and crosses the room in his socks and unlaces Theo’s shoes. The laces are wet and the knots have pulled tight, and he has to work them loose with his thumbnail. Theo doesn’t stir. When Jack eases the left shoe off, sand pours out of it onto the linoleum in a small pale heap, more than a shoe ought to hold. He takes off the right one too and sets the two of them side by side on yesterday’s *Marisol Tide* on the desk, where they can’t shed any more.",
+    "His RAZR has four texts he never heard over the DJ, from last night, Ohio time.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "went as a nun. obviously",
+     "time": "Sat 7:12 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "she wore it. the jumpsuit. i said the thing. VISIT not dress up as. kelsey laughed at HER. first time ever",
+     "time": "Sat 9:41 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "ashley says im dead monday lol",
+     "time": "Sat 10:06 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "osu 45 nmsu 0. dad said who scheduled that",
+     "time": "Sat 10:30 PM"
+    }
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "theo_dawn",
+     "title": "Theo, before light",
+     "text": "Came in barefoot at 5:20, sand and wet jeans. ‘Couldn’t sleep.’ There was a girl in our room. Sunday, Sept. 20, 6:10, wet to the shins and hay on his sweater: he says he runs now. Four miles. Barefoot. Sunday, Oct. 11, before light: wet to the shins again. He drives to where he runs. Sunday, Oct. 25, before light, at a motel above Lucia: up the path from the water, wet to the shin, sand on the cashmere. ‘Couldn’t sleep. Went to look at the ocean.’ Sunday, Nov. 1, Halloween’s morning after: asleep on his covers in the dinner jacket at seven, shoes on, sand to the knees, the hems wet. I didn’t hear him come in."
+    },
+    {
+     "kind": "person",
+     "id": "gina",
+     "title": "Gina",
+     "text": "My sister. Fifteen, a sophomore at Ursuline. Texts in lowercase like punctuation costs extra. A girl in religion class called her the class expert on visiting the imprisoned. Dad turned the radio back on. Nonna told the altar society I went to confession. Said Danny’s name back to the girl. The girl looked away first. Then laughed with Kelsey anyway. Gina wants the first part on the record. She wanted to know if the nun was real. Now they’re Facebook friends, and Lena signs her wall posts like letters. Gina found the boyfriend in about four minutes. Didn’t tell Nonna. Ashley Vrabel is going to Halloween as a prisoner. Orange jumpsuit. A tribute, she says. Lena read it once and gave me a line for her. Halloween: went as a nun, obviously. Ashley wore the jumpsuit. Gina said it — visit, not dress up as — and Kelsey laughed at Ashley for once. Ashley says she’s dead Monday."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Text back: “proud of u. call u after mass”",
+     "tag": "Sincerity",
+     "set": {
+      "e12_gina": "proud",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "proud of u. call u after mass",
+       "time": "7:13 AM"
+      },
+      "Nothing comes back. In Youngstown it’s after ten on a Sunday morning, and she’s either in a pew at St. Brigid’s next to Nonna or under the covers pretending nobody’s home. He leaves the phone on the desk next to Theo’s shoes."
+     ],
+     "goto": "s19"
+    },
+    {
+     "text": "Forward the second one to Lena.",
+     "tag": "Candor",
+     "set": {
+      "e12_gina": "lena",
+      "rel.lena.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "He forwards it to Lena without a word of his own on it. It’s a quarter past seven on the morning after Halloween, and nothing comes back. He leaves the phone on the desk next to Theo’s shoes."
+     ],
+     "goto": "s19"
+    },
+    {
+     "text": "Text back: “dead monday is not a thing. tell ashley the nun says hi”",
+     "tag": "Wit",
+     "set": {
+      "e12_gina": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "dead monday is not a thing. tell ashley the nun says hi",
+       "time": "7:13 AM"
+      },
+      {
+       "type": "sms",
+       "from": "Gina",
+       "text": "lol ok fine",
+       "time": "7:14 AM"
+      },
+      "She’s awake after all. Across the room Theo sighs in his sleep and turns his face into the pillow, and the sand on his trousers cracks."
+     ],
+     "goto": "s19"
+    }
+   ]
+  },
+  "s19": {
+   "slug": "SUNDAY · 9:30 AM · ST. BRENDAN’S — ALL SAINTS",
+   "music": "The St. Brendan’s Choir — “For All the Saints”",
+   "set": {
+    "resolve.jack": "+1",
+    "resolve.lena": 6
+   },
+   "body": [
+    "The marine layer is still sitting on the Grove at half past nine, and what light gets through it comes into St. Brendan’s blue, through the glass, and goes up into the ribs of the ceiling, so that the A-frame is the inside of an overturned boat with the sea somewhere on top of it. It’s full. All Saints has taken the Sunday for itself and brought everybody: Peter and Kenzie in their pew, the old man with the cane, Tyler Brandt on the aisle with a smear of last night’s green paint at his hairline that he has fought and lost to. Tyler holds out a fist as Jack goes by. “Brother.” There’s glitter worked into the grain of the pews where somebody’s halo shed on the way in, and in the rack in front of Jack’s seat, wedged between two missalettes, a pair of red plastic horns somebody wore to Mass and thought better of.",
+    "By yesterday’s clock it’s half past ten. Becca has saved him a seat with her Carhartt vest spread on the pew, the gold halo sticking up out of the tote at her feet and the white mantilla folded square on her lap to go back to Mrs. Fitch. “Thomas ate,” she reports, as he sits. “Everybody ate. It was a really good tank.”",
+    "Lena is in the front pew in the black mantilla, the lace down past her shoulders, as though last night happened to somebody in cat-eye glasses. Laney is beside her in enormous sunglasses, indoors, sitting up very straight with her hands folded in her lap. Margot isn’t here.",
+    "Then the organ, and the big gray organist leans into the first chords as if he’s bringing a boat in against the tide, and the choir comes down the aisle singing *For all the saints, who from their labors rest*, and the A-frame stands and sings it back at them, Becca beside him in a clear alto with every word of every verse.",
+    "The first reading is the crowd nobody could count, every nation and tongue, standing before the throne in white. *Who are these wearing white robes, and where did they come from?* Jack thinks of Del Playa at midnight and decides that isn’t what John meant. Kenzie sings the psalm from the music stand by the shrine, *Lord, this is the people that longs to see your face*, and the people include, three rows from the back, the boy from the third floor who went as a Wild Thing, with the suit’s furry hood pushed down and his eyes shut. Kevin reads the second. He comes up out of the third pew in his Bellarmine maroon quarter-zip, bare-faced and freshly shaved, and reads it to the back wall, every consonant: *Beloved, we are God’s children now; what we shall be has not yet been revealed.*",
+    "Osei reads the Beatitudes in white, and at *Blessed are the clean of heart, for they will see God* Jack studies the horns in the hymnal rack.",
+    "The homily is two sentences. Osei looks out at the glitter and the face paint and the full pews of people who slept four hours, and he is enjoying every one of them. “What we shall be has not yet been revealed. Last night every one of you tried on a guess — and this morning you came as yourselves, which is the only costume He has ever asked of you.” He goes back to his chair and sits, and it takes the congregation a second to understand he’s finished, and somewhere behind Jack a boy still in the vampire cape he slept in says “*Dang*” out loud and gets shushed by his date.",
+    "At Communion Jack goes up the center aisle behind Becca, and passing the front pew he sees Lena’s LG lying face-down on the wood beside her missal. She receives on the tongue with her hands folded, the lace falling forward along her cheek.",
+    "After the last verse Becca goes off down the side aisle with the mantilla to find Mrs. Fitch, and the Marian shrine has a line. Lena lights one quickly, match to wick, shakes the match out and crosses herself, and goes out the side door into the courtyard. Jack keeps his eyes on the flame and off the small brass plate underneath.",
+    "Then Laney, in the sunglasses, takes a match out of the box herself, strikes it on the first try and lights one at the end of Lena’s row, and holds the dead match until it’s cool before she drops it in the sand.",
+    {
+     "if": "e11_candle==\"light\"",
+     "text": "She turns around and catches him watching, again. This time she doesn’t tell him not to dare. “The monks,” she says, low, for a church. “You lit one too. Who was yours for?”",
+     "else": "She turns around and catches him watching, again. “You never light one,” she says, low, for a church. “Who would yours be for?”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Nobody.”",
+     "tag": "Wit",
+     "set": {
+      "e12_candle_q": "nobody",
+      "trait.wit": "+1"
+     },
+     "key": "Laney asked who your candle at the monks was for. You said nobody.",
+     "response": [
+      "Laney pulls the sunglasses down her nose and looks at him over them. “Liar.” She pushes them back up, indoors, at the Marian shrine, and goes out past him into the courtyard to find a donut."
+     ],
+     "goto": "s19b"
+    },
+    {
+     "text": "“My brother.”",
+     "tag": "Sincerity",
+     "set": {
+      "e12_candle_q": "brother",
+      "rel.laney.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "Laney asked who your candle at the monks was for. You said your brother.",
+     "response": [
+      "Laney looks at him through the dark lenses for a second. “Okay,” she says. On the way out she holds the side door for him."
+     ],
+     "goto": "s19b"
+    },
+    {
+     "text": "“Somebody who’s alive.”",
+     "tag": "Candor",
+     "cue": "Laney will remember that.",
+     "set": {
+      "e12_candle_q": "alive",
+      "rel.laney.trust": "+2",
+      "soul.honesty": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "Laney asked who your candle at the monks was for. “Somebody who’s alive.”",
+     "response": [
+      "Laney is quiet. Behind her, Lena’s candle and hers are burning side by side at the end of the row.",
+      "“…Okay, fireman,” she says. She doesn’t ask. She goes out ahead of him into the courtyard and leaves the door open behind her."
+     ],
+     "goto": "s19b"
+    }
+   ]
+  },
+  "s19b": {
+   "slug": "SUNDAY · 10:40 AM · ST. BRENDAN’S, THE COURTYARD",
+   "body": [
+    "Coffee & Donuts is out on the folding tables under the olive tree: two urns, a sleeve of paper cups, six pink boxes, and Mrs. Fitch’s lemon bars on a doily at a table of their own. The sprinkler is still in pieces on its blue tarp by the bench, the brass head set on top of the pipe like a paperweight, exactly where it lay when he borrowed the hoe.",
+    "Jack takes the hoe back to the shed first and hangs it on its two nails beside the Christmas lights with the masking tape facing out. Crossing back, he meets Osei coming the other way with a paper cup, who nods past him at the shed. “The sprinkler thanks you.”",
+    "Becca has a maple bar waiting for him on a napkin with JACK on it in her marker capitals. “Did you stay late?” she asks, while he eats it.",
+    "“Till about two.”",
+    "“Which two?” Becca says, and laughs, because it’s a good question. “My dad hates the time change. The cows don’t change their clocks. You milk an hour different for a week and they look at you like you’ve lost your mind.”",
+    "Jack eats the maple bar. The mantilla is already back in Mrs. Fitch’s basket, folded, and now Becca has the gold halo out of the tote and is holding it up for Mrs. Fitch at the lemon-bar table.",
+    "At the next table, Laney’s BlackBerry has come back from the dead. She thumbs it open and holds it out to him across the gap, screen first, like a Pope offering a ring.",
+    {
+     "type": "fb",
+     "name": "Laney Price",
+     "text": "added 64 photos to the album SAINTS & SINNERS!!!!",
+     "meta": "Sunday at 3:12am via Facebook for BlackBerry · 23 people like this"
+    },
+    "She has it open to number thirty-one. It’s the staircase from below, flash-white: a farmer in a straw hat on the second stair and a woman in cat-eye glasses on the third with a peacock under her arm, both of them laughing at something outside the frame. Laney has tagged them both. Underneath she has written *american gothic???*, and under that, the first comment:",
+    {
+     "type": "fb",
+     "name": "Becca Lindell",
+     "text": "we were St. Isidore and St. Maria!! :) BEST SAINT!!!",
+     "meta": "Sunday at 7:14am · 4 people like this"
+    },
+    "At seven-fourteen she was at the Marine Lab with the touch tank. She must have done it between checks, with wet sleeves.",
+    "“And our first comment,” Laney murmurs, taking the phone back, “comes to us at seven-fourteen in the *morning*, from a contestant who went to bed at *eleven-forty*. Her talent is *being awake*.”",
+    {
+     "if": "e12_gina==\"lena\"",
+     "text": "His RAZR buzzes in his pocket."
+    },
+    {
+     "if": "e12_gina==\"lena\"",
+     "type": "sms",
+     "from": "Lena",
+     "text": "Tell her I said she’s a natural. Tell her the nun said so.",
+     "time": "10:46 AM"
+    },
+    {
+     "if": "e12_gina==\"lena\"",
+     "text": "It came from the next table. Lena hasn’t looked up from her coffee."
+    },
+    "“Best Saint,” Becca is telling Mrs. Fitch. “Out of four thousand people. I’ve never won anything that —”",
+    "“Wasn’t a heifer,” Laney supplies, from the next table, without looking up from her BlackBerry.",
+    "Becca turns around. “You *remembered*!”",
+    "Mrs. Fitch looks from the halo to Becca, and from Becca to Jack with his maple bar, and puts it together with enormous satisfaction. “St. Isidore and St. Maria!” she says. “*You two!*”",
+    "At the next table Lena lifts her paper cup to Becca, across the lemon bars, and Becca lifts the gold halo back at her, high, so the whole courtyard can see it."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "halloween",
+     "title": "Saints & Sinners",
+     "text": "Theo’s party, on Del Playa. A staircase. Halo or horns. Four hundred Michael Jacksons. Laney was the Pope. Becca was the best saint in Las Olas. Everybody kept calling us American Gothic."
+    }
+   ],
+   "next": "s20"
+  },
+  "s20": {
+   "slug": "SUNDAY · 11:40 AM · THE GROVE",
+   "music": "Iron & Wine — “The Trapeze Swinger”",
+   "body": [
+    "The low cloud burns off by twenty to twelve, all at once, the way it does here, and the Grove fills with sun coming down in long slats between the trunks and lying across the bike path in stripes. Becca peels off at the fork toward Portolá with the gold halo, walking backward three steps to keep waving it at them over her head, and then turns and breaks into a run to catch Kenzie at the crosswalk, the halo flashing.",
+    "Jack walks on toward Delgado with Lena and Laney, his hands empty for the first time all weekend.",
+    "“I’d like y’all to know,” Laney says, “that as Popes go, I was *very* well received.”",
+    "“You were Pope for one night,” Jack says, “and they sent the police.”",
+    "“Benedict’s never been asked to come down off *anything*.”",
+    "“Benedict’s never been up on anything.”",
+    "“That’s his whole *problem*, Jack.”",
+    "“Leave the Holy Father alone, cher,” Lena says. “He’s had a month. He let the Anglicans in.”",
+    "Up in the high branches of the eucalyptus there are clumps of something brown hanging from the ends of the leaves, papery and still, a tree’s worth of dead leaves that haven’t fallen; Jack has walked under them all week without looking up. Then the sun clears the top of the stand and reaches them, and the nearest clump opens. It’s orange. It’s a hundred orange things opening at once, and then the clump beside it, and the next, until the air over the bike path is full of monarchs letting go into the light and settling again and lifting, hundreds of them, and then more than he can count, with a sound he wouldn’t have believed if he hadn’t heard it, a faint dry riffling overhead, like old pages, a long way off.",
+    "Laney stops in the middle of the path with her mouth still open on whatever she was going to say next, and takes off her sunglasses.",
+    "Lena has stopped beside her with the black mantilla balled up in one fist and her face turned up into it. In her cardigan pocket the LG buzzes. It buzzes again. She doesn’t take it out. “Later,” she tells it, and goes on watching the butterflies.",
+    "Jack could look at the monarchs; he looks at her, at her face tipped back into all that slow orange with the sun on it and last night’s glitter still caught at her hairline, until she lifts her free hand without looking and points, so he’ll see the one that has come down onto the bike path at her feet and is opening and closing its wings there on the warm asphalt, taking its time, and then he looks up too, and the three of them stand on the path in their church clothes under a tree that has turned out to be made of wings."
+   ],
+   "end": true
+  }
+ }
+}

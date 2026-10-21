@@ -175,6 +175,26 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 79. **"A rumor" for something obscured** (S1E11; E02, E05, E10, E11). Once a season.
 80. **Superlatives with a geography tag** ("in America," "in California," "in American letters"; S1E11 had six): count under #49,
    max one per episode outside a character's signature line (Becca's "only honest fruitcake in America" is E11's).
+81. **The costume look-over** (S1E12; seven in one draft): a character inspecting Jack (or anyone) head to toe, item by item ("looks him
+   over: the feed sack, the rope belt, the hat," "takes them in: hat and hoe, glasses and bird"). Max two per episode; let the line land.
+82. **"With great / enormous [noun]" comic gravitas** (S1E12; "with great tenderness," "with great dignity," "with enormous care"). Max two
+   per episode. Laney's sunglasses get one adjective per episode, or none.
+83. **"Before X can" pre-emption** (S1E12; seven in one draft): "before Jack can ask," "before he has to," "takes another bite before he
+   can answer." Max two per episode (Lena's are hers to spend); counts with #23.
+84. **"Walks [a distance] with / on it"** as the processing beat (S1E12; four in one duel): "walks three steps with it," "walks half a
+   block on it," "walks the next block with it." Once per episode.
+85. **The laugh that startles a bystander** (S1E12): Lena laughs out loud and a costumed stranger turns, wakes, sits up. Once per episode.
+86. **Osei's delight tags** (S1E12; #65 applied to him): "entirely serene," "to enjoy what comes next," "enjoying every one of them,"
+   "never once looked anything but glad." Max two per episode; let his lines carry the joy.
+Small repeats to watch (S1E12): the clock — **2:00 a.m. happens once** at a DST fall-back; only the 1 o'clock hour repeats (never "the
+second two o'clock"); Lupe's "Para los novios" / "We're friends" / "Claro" (E08 — a callback must move); Lena's untouched champagne
+(observe it once, pay it once); the Act Three tableau (barefoot, saddle shoes in hand, the yellow line — establish, spend once more);
+Theo's "says, short" (#22 — the short register shows in the line, not the tag); "considers / regards / surveys" (#62); Laney's pageant
+formula ("And our next contestant," "Her talent is *being X*" — retired for a few episodes; use the judges, the sash, Miss Congeniality,
+the swimsuit round); "Between [the pair], [one combined thing]" epigrams (#47 — one per episode); Laney's blessing gag (two blessings an
+episode, never a narrator simile that makes the rite the joke); ranch/county-fair similes at Becca's joy (her own lines only); Kevin's
+white mask (one image — point at it twice, not eleven times); "sugar" (one per episode) and "fireman" (one); the "It's true" sincerity
+tag (once); callback glosses (#73).
 Small repeats to watch (S1E11): weekday shorthand across a weekend ("Thursday" on a Sunday means three days ago — anchor to the event:
 "the bells," "the library"); Caleb's "Selah" (E10) and "looks betrayed by it" (E02) — give him new reflexes; the candle flame leaning
 in a draft as a closer (E04, E11 cut); the heater/radiator/shutter tick as a beat marker (establish once, use once more); "the six of

@@ -1,0 +1,614 @@
+{
+ "scenes": {
+  "s05": {
+   "slug": "SATURDAY · 7:30 PM · DELGADO HALL, ROOM 412",
+   "music": "Michael Jackson — “Thriller”",
+   "body": [
+    "Somebody down the hall has propped a door open and put on “Thriller” for the third time since seven, and every time Vincent Price starts laughing a girl in the corridor screams back at him on purpose. In 412 the overhead light is doing its worst. Jack stands in front of Theo’s mirror in a feed sack.",
+    "It’s a good feed sack. Becca hemmed it to the knee, and with the rope belt cinched and her straw hat on he looks like a page torn off a seed-company calendar, some month nobody turns to. He reaches back out of habit to put the Kerouac in his pocket, and there isn’t one; St. Isidore had no pockets, so *Big Sur* stays on the desk.",
+    "Theo comes out from behind the closet door in a white dinner jacket with the black tie undone on purpose, his hair arranged to suggest he slept on a yacht and didn’t mind. “Jay Gatsby,” he says, before Jack can ask. “The patron saint of hosts.” He shoots one cuff, then the other. “Also a bootlegger.” He considers Jack in the mirror from the hat down to the rope belt and approves of all of it. “You look wonderful, old sport. You look like a harvest.”",
+    "Margot is in the doorway as Joan of Arc: a breastplate of cardboard and silver duct tape over her usual black, a wooden sword through her belt, and her own white-blonde hair, blunt at the jaw, which turns out to have been Joan’s haircut all along. “Burned as a heretic in 1431,” she says, “canonized in 1920. I’m both categories. So was the Church.”",
+    {
+     "if": "e11_anglicans==\"margot\"",
+     "text": "She says she has come to collect Laney. Then she sits down on the end of Jack’s bed with the sword across her knees, because she knows what Laney is going as and she would like to be present when Jack finds out.",
+     "else": "She says she has come to collect Laney, and stays in the doorway with the sword on her shoulder so that it’s clear she isn’t staying."
+    },
+    "Kevin edges in around her in green scrubs from his summer program, a halo off the top of Theo’s box of three hundred, and a plain white mask, the full-face drugstore kind with nothing painted on it at all. “All Saints,” he says through it. “Every one nobody’s heard of. It’s tomorrow; I’m early.”",
+    "Laney has been behind the other closet door for forty minutes, using it as a dressing screen, because Lena locked her out of 217 to change “like it’s the *Manhattan Project*.” The door swings back. Pope Joan: white satin to the floor, three strands of pearls, a cardboard mitre with gold rickrack glued around every edge, and a shepherd’s crook from the Spirit Halloween that moved into the dead Circuit City on Mission. She spreads her arms so the satin hangs. “Margot gave me a footnote, sugar, and I made it a *lifestyle*.”",
+    "“There was no Pope Joan,” Jack says, from under the hat.",
+    "“There were thirteenth-century chroniclers who said there was,” Margot says.",
+    "“There were thirteenth-century chroniclers who said a lot of things.”",
+    "Laney raps the crook on the linoleum, twice, for order. “Y’all can fight about it at my *coronation*.”",
+    {
+     "type": "sms",
+     "from": "Becca",
+     "text": "here!! in the lot. mantilla is on the dash so it doesnt wrinkle on the WAY to being a saint",
+     "time": "7:44 PM"
+    },
+    "A second later the Ranger’s horn comes up four floors from the Anacapa lot, two polite taps. Laney gets to the window first. She leans out into the dark with the crook and blesses the lot, the Ranger, the Odyssey, and a boy from the third floor in a Wild Thing suit who happens to be crossing it, and who stops, and takes it."
+   ],
+   "next": "s06"
+  },
+  "s06": {
+   "slug": "SATURDAY · 8:00 PM · THE FERRANTE HOUSE, DEL PLAYA LANE",
+   "music": "Lady Gaga — “Bad Romance”",
+   "body": [
+    "The Ferrante house is lit like a liner. Floodlights are staked in the bluff-side lawn and every window on three stories is blazing, and up on top the widow’s walk wears an iron rail strung with white bulbs somebody from Silver Lake was paid to string. Somebody’s grandfather built it in 1926 out of white stucco and red tile, and nobody since has been able to heat it.",
+    "Inside it smells of lilies and fog-machine glycol. The staircase is the point: one white sweep from the front hall up to a gallery, lilies wired up the left rail and roses down the right, and under it a fog machine breathing a low sweet cloud across the first steps. There’s a girl in black with a clipboard on the landing. There’s a champagne tower under the gallery, five tiers, and a DJ in what used to be the library putting Lady Gaga through the walls. Flanking the door to the rest of the house stand an angel and a devil carved out of ice, each the size of a seventh-grader. The devil is already sweating at the horns. Theo, at the gallery rail in his white jacket, has decided to take this as a review.",
+    "At the door two caterers in black hold out two silver bowls, one heaped with glittered halos and one with glittered horns, the plastic-headband kind. On the table behind the bowls is a stack of heavy cream cards, the twins of the one that came under every door in Delgado.",
+    {
+     "type": "doc",
+     "title": "A card on the table by the door",
+     "text": "SAINTS & SINNERS\nHALO OR HORNS\nTHE FERRANTE HOUSE · ALL HALLOWS’ EVE"
+    },
+    "On an easel beside the table the planner has propped a sign in white calligraphy, LAST CALL · 2 A.M. · BOTH OF THEM, which has not been explained to anybody.",
+    "Becca takes a halo, of course, and settles it on top of the mantilla with the clay jug under her other arm. Kevin already has one. Margot takes the horns. “The 1431 edition.” Laney takes a halo and sets it on top of the mitre. “Two hats.” The caterer with the halos looks at the hoe on Jack’s shoulder, and then at Jack, and holds the bowl a little higher."
+   ],
+   "choices": [
+    {
+     "text": "Take a halo.",
+     "tag": "Halo",
+     "set": {
+      "e12_door": "halo",
+      "rel.becca.warmth": "+1"
+     },
+     "key": "At Theo’s door you took a halo.",
+     "response": [
+      "Becca fits it over the crown of the straw hat for him, her tongue between her teeth, and gets it straight on the second try. Then she steps back to look at the two of them in the black glass of the front window, a farmer and his wife with matching halos, and nods once, the way you’d nod at a gate that finally hangs right."
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "Take the horns.",
+     "tag": "Reckless",
+     "set": {
+      "e12_door": "horns",
+      "trait.reckless": "+1",
+      "soul.restraint": "-1"
+     },
+     "key": "At Theo’s door you took the horns.",
+     "response": [
+      "They go on over the hat brim and stick up through the straw. Margot taps one of them with the flat of her sword, approving.",
+      "Becca looks at him, and at the horns, and at the feed sack she sewed. “Isidore had a *temper*?”",
+      "“He does now.”"
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "Take one of each.",
+     "tag": "Wit",
+     "set": {
+      "e12_door": "both",
+      "trait.wit": "+1"
+     },
+     "key": "At Theo’s door you took a halo and the horns.",
+     "response": [
+      "He gets the halo over the hat and wedges a horn through the straw on either side of it, and the caterers look at each other.",
+      "From the gallery Theo raises his glass to him. “Undecided,” he calls down. “Like my major.”"
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "Take neither.",
+     "tag": "Control",
+     "set": {
+      "e12_door": "neither",
+      "trait.control": "+1",
+      "soul.restraint": "+1"
+     },
+     "key": "At Theo’s door you took neither.",
+     "response": [
+      "“Isidore had a hat,” Jack tells the caterer, and touches the brim.",
+      "The caterer with the halos looks at him with something close to respect, and lowers the bowl for the next saint in line."
+     ],
+     "goto": "s06a"
+    }
+   ]
+  },
+  "s06a": {
+   "slug": "SATURDAY · 8:01 PM · THE FERRANTE HOUSE, THE FRONT HALL",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "Lena comes in last, alone, at 8:01, out of the dark between the floodlights, and a front hall that has watched a hundred people walk through that door turns around to watch her.",
+    "She’s Flannery O’Connor. Black cat-eye glasses that make her eyes enormous. The shirtwaist, which is blue, the blue of the one sleeve in the laundry room, and which fits. The oatmeal cardigan over it, buttoned once at the throat. A stiff little handbag on her wrist, and saddle shoes from the Goodwill half a size too big, which give her walk a careful, churchgoing hitch. Under one arm she has a plush peacock, blue and green, its tail feathers squashed, with a paper tag on a string around its neck that says 57.",
+    {
+     "if": "e11_condor==\"lena\"",
+     "text": "Jack gets the tag before he gets anything else. He was the one who pointed at the sky.",
+     "else": "It takes Jack a second, and then he has it: the condor, over the Hermitage lot."
+    },
+    "He’s the only one in the hall who gets it.",
+    "At the table she takes a card instead of a headband and drops it in the handbag. Theo leans over the gallery rail. “Miss Broussard. You have to choose.”",
+    "“I’m a Southern novelist, Theo. I’m both.”",
+    "Then she sees Laney, mitre and crook and pearls, and looks her up and down. “Pope Joan is a thirteenth-century Dominican with a deadline, cher.”",
+    "“She had a *hat*.”",
+    "Then she sees Jack. He’s at the foot of the stairs with the hoe, in the feed sack and the straw hat, and Becca is at his elbow in white lace with a clay water jug, and Lena stops in the middle of the front hall with the peacock under her arm.",
+    "“Andalusia,” she says.",
+    "“That’s in Spain.”",
+    "“It’s in Milledgeville, Youngstown.”",
+    "And he has it, all at once, the peacock letters she read aloud in the van past San Simeon and the dairy farm in Georgia where the birds were and *whatever she wrote first*: he did exactly what Lena told him to do, and it walked him here, to the bottom of a staircase in a sack, matching her.",
+    "Margot, at his other shoulder in her armor, considers the two of them from under the horns. “Between the two of them,” she says, “there’s one functioning farm.”",
+    {
+     "if": "e11_intel==\"list\"",
+     "text": "Theo has come down to the third stair to be a host at Lena, and Laney has drifted up beside him, and she says it low, not quite low enough, with Lena across the hall and out of range: “Farmers have birds.” Theo looks at the peacock. Then he raises both palms and says nothing at all.",
+     "else": "Theo has come down to the third stair to be a host at Lena, and Laney has drifted up beside him. She doesn’t say anything. She just looks at him, and Theo raises both palms."
+    },
+    "A stranger dressed as Kanye West, shutter shades and all, backs into the middle of the hall with a Canon point-and-shoot and takes their picture, flash and everything. “American *Gothic*! Yo, that’s *sick*.”",
+    "Becca blinks off the flash, laughing, and leans in under Jack’s hat brim. “Who’s she?”"
+   ],
+   "choices": [
+    {
+     "text": "“Flannery O’Connor. A Catholic writer from Georgia.”",
+     "tag": "Candor",
+     "set": {
+      "e12_whos": "writer",
+      "trait.candor": "+1",
+      "rel.becca.trust": "+1"
+     },
+     "key": "Becca asked who Lena was being. You told her: a Catholic writer from Georgia.",
+     "response": [
+      "“Is she a saint?” Becca asks.",
+      "Lena, from the middle of the hall, before Jack can answer: “Not yet. She was mean as a snake.”",
+      "“Then she’s a *sinner*!” Becca lifts her jug to Lena across the hall like a toast, and Lena lifts the peacock back. “That’s the *theme*!”"
+     ],
+     "goto": "s06b"
+    },
+    {
+     "text": "“A farmer.”",
+     "tag": "Wit",
+     "set": {
+      "e12_whos": "farmer",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "Becca asked who Lena was being. You said a farmer.",
+     "response": [
+      "Lena doesn’t miss a step. “A *dairy* farmer. Get it right.”",
+      "Becca laughs without getting it. She laughs because the two of them are laughing and she is glad to be standing where the joke is, and she doesn’t ask what it was. It’s a generous thing to do, and she does it without seeming to notice she has."
+     ],
+     "goto": "s06b"
+    },
+    {
+     "text": "“Lena.”",
+     "tag": "Sincerity",
+     "set": {
+      "e12_whos": "lena",
+      "rel.lena.heat": "+1",
+      "e12_heat": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "Becca asked who Lena was being. You said her name.",
+     "response": [
+      "It’s just her name. He says it the wrong way for a room with Becca in it.",
+      "“I *know* it’s Lena, silly,” Becca says. “Who’s she *being*?”",
+      "So Lena tells her, kindly, peafowl and all: Georgia, the farm, a writer on crutches with forty peacocks in the yard who wrote stories about murderers and grandmothers. She tells it to Becca, every word, and she doesn’t look at Jack again until the phone rings."
+     ],
+     "goto": "s06b"
+    }
+   ]
+  },
+  "s06b": {
+   "slug": "SATURDAY · 8:04 PM · THE FERRANTE HOUSE, THE STAIRS",
+   "body": [
+    "At 8:04 the LG goes off in the handbag. Lena digs it out from under the card, says, “That’s Wes,” and takes it four steps up the staircase between the lilies with a finger in her other ear and the peacock clamped under her arm. Becca has gone off with Kevin to find out whether the jug will hold actual water. Jack stays at the bottom with one hand on the newel post, on a carved wooden pineapple, with nowhere else he has to be.",
+    "“Where *are* you?” Lena says. “Frenchmen? Is that a *tuba*?” She laughs and turns her face into the lilies, away from the DJ. “I’m Flannery O’Connor. … No, *Flannery*. Not a Saintsation, Wesley. The *peacocks*.” And she explains Flannery O’Connor to a boy on Frenchmen Street, Georgia and the farm and the birds and the stories where somebody always gets shot, and she’s funny about it, and she’s happy. “You’d love it,” she says. “Everybody’s somebody.”",
+    {
+     "if": "e11_comeback==\"whodat\"",
+     "text": "“Who dat, baby,” she says into the phone, and laughs at whatever comes back."
+    },
+    {
+     "if": "knows_wes_ring",
+     "text": "Jack looks at the roses on the other rail. He thinks, without wanting to, about where a ring spends Halloween: in a drawer somewhere in New Orleans, or riding around Frenchmen Street in a boy’s front pocket, a small hard knot against his leg every time he dances. He gives the thought to the tuba."
+    },
+    "“I love you too,” Lena says, right on top of him, still laughing. “Go dance.”",
+    "She hangs up, her glasses crooked, and comes back down the stairs with the peacock slipping, and drops the phone into the handbag beside the card, and snaps it shut."
+   ],
+   "next": "s07"
+  },
+  "s07": {
+   "slug": "SATURDAY · 9:40 PM · THE FERRANTE HOUSE, THE GALLERY",
+   "body": [
+    "By twenty to ten the house is full and the street is coming in the front door in costume, uninvited and unstoppable, and the girl with the clipboard has given up and is dancing. Theo’s people from Los Angeles were due at half past and aren’t here yet. Laney finds Jack on the gallery and takes hold of the feed sack with the hand that isn’t holding the crook. “Roof. *Now*. I’m fixing to bless something.”",
+    "Below them the kitchen’s swinging door swings, and in the second it’s open Jack sees Becca and Lena at the caterers’ steel counter, the white mantilla bent toward the cat-eye glasses, their heads together. Then the door swings shut on them."
+   ],
+   "choices": [
+    {
+     "text": "Up to the roof with Laney.",
+     "tag": "Go",
+     "set": {
+      "e12_where": "roof"
+     },
+     "goto": "s07a"
+    },
+    {
+     "text": "Down to the kitchen.",
+     "tag": "Go",
+     "set": {
+      "e12_where": "kitchen"
+     },
+     "goto": "s07b"
+    }
+   ]
+  },
+  "s07a": {
+   "slug": "SATURDAY · 9:50 PM · THE FERRANTE HOUSE, THE WIDOW’S WALK",
+   "body": [
+    "The moon is two nights short of full and high over the water to the southeast, so bright the iron rail throws a shadow on the boards. Up here the wind comes straight in off the water. Down there Del Playa is packed from curb to curb, thousands of people under the streetlights, every one of them somebody else.",
+    "Margot is already up, leaning on the rail with her sword. Theo comes up behind them with a bottle of something French by the neck. Laney climbs onto the built-in bench along the street side, gathers her satin, raises the crook over Del Playa Lane, and in a voice that has been trained to reach the back row of a convention center in Arlington, Texas, she says, “*Urbi et orbi*, y’all!”",
+    "The street goes up like a stadium. Several hundred people in the road drop to one knee as a joke, a Batman, a bride, and a man in a cardboard box, and Laney gives them the pageant wave, wrist, wrist, elbow, elbow, and they roar.",
+    "Two black cars nose through the barricade at the end of the street, where a deputy checks a list against a wristband and waves them on, and they slide up below the house. Theo’s people. Doors open; somebody gets out in a gold dress; somebody else gets out in a cape. Theo looks down at them, and his face goes smooth and pleasant and ten years older, the face Jack saw at his father’s house in Malibu. Laney sees it too. She stops in the middle of a wave with her hand up in the air and looks at Theo, and doesn’t say anything.",
+    "Then a bullhorn goes off below, from a gray car at the curb with a light on its dash: “Your Holiness. Please come down off the roof.”",
+    "Laney turns all the way around on the bench. “Is that a *cop* or a *cardinal*?”",
+    {
+     "if": "knows_ray",
+     "text": "Jack knows the voice from the Anchor counter last night. “That’s Rafi’s dad.”",
+     "else": "“That’s a cop, Laney.”"
+    },
+    "Theo has gone to the west rail. He’s looking past the last houses on Seacliff to the Point, where the old light stands up against the moonlit sea like a dark thumb. Margot goes over and looks where he’s looking.",
+    "“Gatsby,” she says. “A man who throws parties for a light across the water.”",
+    "“It’s not lit, Margot,” Theo says. “Look.”"
+   ],
+   "choices": [
+    {
+     "text": "Help Laney down off the bench.",
+     "tag": "Charm",
+     "set": {
+      "e12_roof": "laney",
+      "rel.laney.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "He offers her a hand and she takes both of his shoulders instead and comes down off the bench as if it were a float at the Rose Parade, satin first, and blesses him on the way. “Go in peace, farmer.”",
+      "Down on the street the gray car’s bullhorn clicks off. Behind them Theo has already gone down the roof stairs to his guests."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "Wave at Ray.",
+     "tag": "Wit",
+     "set": {
+      "e12_roof": "wave",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Jack leans over the rail and waves. Down at the curb Ray Ochoa, in a windbreaker, waves back with one finger, tired, and lowers the bullhorn and gets back in the car.",
+      "“He *likes* me,” Laney says. Behind them Theo has already gone down the roof stairs to his guests."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "Go stand at the west rail beside Theo.",
+     "tag": "Sincerity",
+     "set": {
+      "e12_roof": "theo",
+      "rel.theo.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Margot goes to deal with Laney. Jack goes and stands at the west rail beside Theo, and they stand there, the two of them, with the street roaring behind them and the bottle hanging from Theo’s hand.",
+      "After a while Theo says, “Best view in Las Olas. You can see the whole —”",
+      "“Ocean.”",
+      "“Ocean,” Theo agrees. He hands Jack the bottle, and goes down the roof stairs to greet his guests with the other face back on."
+     ],
+     "goto": "s08"
+    }
+   ]
+  },
+  "s07b": {
+   "slug": "SATURDAY · 9:50 PM · THE FERRANTE HOUSE, THE KITCHEN",
+   "body": [
+    "The caterers’ kitchen is the only warm room in the Ferrante house: steel counters under fluorescent tubes, eight burners, a radio on top of the refrigerator nobody is listening to, and the devil’s food cake the caterer refused to waste, all of it, cut into squares on four sheet pans on the steel.",
+    {
+     "if": "e12_whos==\"farmer\"",
+     "text": "Becca has Lena pinned against the counter, nicely. “Okay. Who is she *really*?”",
+     "else": "Becca has Lena pinned against the counter, nicely. “Okay. Tell me the rest of her.”"
+    },
+    "So Lena tells her. The peacocks, forty of them and then more, and the geese and a pair of swans. The mother who ran the farm and never quite knew what her daughter was writing in the front room. The crutches. The stories. “Everybody in them is mean,” Lena says, “and God shows up anyway.”",
+    "Becca thinks about that, hard. “Does Jack know her? He reads *everybody*.”",
+    "“He has her stories,” Lena says. Jack is standing right there, by the swinging door. She doesn’t look at him.",
+    "“You’d love ‘Revelation,’” Lena tells Becca, and means it. “There’s a woman with a hog farm, very proud of herself, very proud of her hogs, and she’s sitting in a doctor’s waiting room, and a girl throws a book at her head and tells her the truth about herself.”",
+    "Laney comes through the swinging door for ice, crook first, sees the white lace, and stops. “Is that a *tablecloth*?”",
+    "“Laney,” Lena says. “Be nice.”",
+    "Laney opens her mouth, shuts it, fills a red cup with ice from the caterers’ cooler, and goes back out and up toward the roof with the crook over her shoulder.",
+    "At the sink, under the window, Kevin is washing champagne glasses in his mask with his scrub sleeves pushed up. The caterers didn’t ask him to; they keep stepping around him. Through the window over the sink a man’s voice comes in off the street, flattened by a bullhorn, “Your Holiness —” and the rest of it goes under the DJ. Lena glances up at the window, and back at Becca."
+   ],
+   "choices": [
+    {
+     "text": "“She would, Becca. It’s got a hog farm.”",
+     "tag": "Sincerity",
+     "set": {
+      "e12_kitchen": "revelation",
+      "rel.becca.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "It’s true, and Becca knows it’s true; she has opinions about hogs. She wants the title so she won’t forget it and holds out the back of her hand. Lena takes the ballpoint out of the handbag, holds Becca’s wrist steady against the steel counter, and writes REVELATION across her knuckles in capitals."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "“Lena reads her better than I do.”",
+     "tag": "Candor",
+     "set": {
+      "e12_kitchen": "reads",
+      "rel.lena.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“You two and your *books*,” Becca says, and bumps Jack with the jug.",
+      "Lena looks at the cake."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "Go help Kevin with the glasses.",
+     "tag": "Control",
+     "set": {
+      "e12_kitchen": "kevin",
+      "rel.kevin.warmth": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Jack takes a caterer’s towel off the oven door and stands beside him at the sink. Kevin washes and Jack dries, glass after glass, a dozen, two dozen, the champagne flutes squeaking in the towel.",
+      "Somewhere in the second dozen, through the mask, not looking up from the water, Kevin says, “I’m fine.” Jack hadn’t asked. Kevin hands him the next glass."
+     ],
+     "goto": "s08"
+    }
+   ]
+  },
+  "s08": {
+   "slug": "SATURDAY · 11:00 PM · THE FERRANTE HOUSE, THE STAIRCASE",
+   "set": {
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "By eleven the champagne tower is down to its last two tiers, and Jack has had two glasses out of it, which went down like nothing and weren’t. The front hall is packed to the doors.",
+    {
+     "if": "e12_where==\"roof\"",
+     "text": "He came down from the roof with Laney, who has been talked off the bench and has stationed herself at the gallery rail to bless people coming up the stairs, one at a time, a hand on each head.",
+     "else": "He came out of the kitchen with Becca and Lena into a crowd so thick the three of them get separated in the first ten feet and pushed back together in the next ten."
+    },
+    "The girl with the clipboard has a wireless mic now. She climbs to the landing and announces three categories, to be decided by noise.",
+    "Best Sinner goes first and isn’t close. A Sigma Rho senior in an orange jumpsuit, with a placard around his neck that says MADOFF and a briefcase leaking Monopoly money, climbs to the fifth stair with both fists up; the girl reads his name off her card, Brooks Callahan, and the hall roars until the lilies shake. Jack looks at the ice devil instead, the water running off its chin. Brooks works his way up the stairs collecting high fives and stops at the top to flirt with Pope Joan at the gallery rail, and from a few feet down the same rail Theo watches him do it.",
+    "Then the girl says, “Best Couple —” and the hall has decided before she gets to the word.",
+    "“AMERICAN GOTHIC!”",
+    "It means the farmer with the hoe and the woman in the glasses, who are not a couple, who are standing on the second and third stairs because that is where the crowd has pushed them. Lena has the peacock under one arm and in the other hand the flute of Theo’s champagne she has been carrying since nine and hasn’t gotten any lower. Becca is at the bottom of the stairs with her jug, laughing, clapping along with the chant, with no idea what she’s clapping for. On the gallery Laney has both hands over her mouth. Theo hasn’t moved at all.",
+    "In a gap in the chant Jack hears a small mechanical whir from the landing above him, a clockwork sound. A tall girl with long black hair is up there with a boxy old movie camera, BOLEX in chrome script along its side, and she isn’t filming the staircase. She’s filming him: the straw hat. She winds a little crank on the side and lifts it to her eye again.",
+    "From the gallery, Theo, not loud: “Soledad. Don’t.”",
+    "She lowers the camera, smiling, and the hall goes on chanting."
+   ],
+   "choices": [
+    {
+     "text": "Step down off the stairs.",
+     "tag": "Control",
+     "set": {
+      "e12_stairs": "down",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "When the party chanted American Gothic, you stepped down off the stairs.",
+     "response": [
+      "He steps down into the crowd. The hall groans, loud, and keeps right on chanting, at Lena alone on the third stair with her peacock.",
+      "She looks out at them for a second. Then she sets her champagne down on the stair, comes down, takes Becca by the hand and Jack by the feed sack, and puts the two of them up where she was, side by side, the hat and the mantilla. She steps down herself and turns to the hall.",
+      "“That’s his Maria,” she says. “I’m just a novelist who wandered in.”"
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "Reach down for Becca and bring her up yourself.",
+     "tag": "Sincerity",
+     "set": {
+      "e12_stairs": "becca",
+      "rel.becca.warmth": "+2",
+      "trait.sincerity": "+1"
+     },
+     "cue": "Becca will remember that.",
+     "key": "When the party chanted American Gothic, you brought Becca up the stairs yourself. “I’m with Maria.”",
+     "response": [
+      "He reaches down over the newel post and holds out his hand. “She’s Maria,” he says, loud enough for the hall. “I’m with Maria.”",
+      "Becca comes up the stairs to him with the jug held out in front of her like a lantern, the mantilla slipping, both of them laughing.",
+      "Lena is already stepping down. She sets her champagne on the stair and starts the applause herself, and when Jack finds her face in the crowd she mouths something at him that could be *Good*."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "text": "Stay where you are, beside Lena.",
+     "tag": "Reckless",
+     "set": {
+      "e12_stairs": "stay",
+      "rel.lena.heat": "+1",
+      "e12_heat": "+1",
+      "soul.restraint": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "When the party chanted American Gothic, you stayed on the stairs beside Lena until she moved.",
+     "response": [
+      "He doesn’t move. Her sleeve is against the feed sack, blue cotton against burlap, and the hall chants it at the two of them, and he stays, and it’s one breath too long and then another, and he knows exactly how long it is.",
+      "Lena is the one who moves. She sets her champagne down on the stair, comes down, takes Becca by the hand, brings her up to Jack’s side, and steps down herself to the floor of the hall.",
+      "“That’s his Maria,” she says. “I’m just a novelist who wandered in.”"
+     ],
+     "goto": "s08b"
+    }
+   ]
+  },
+  "s08b": {
+   "slug": "SATURDAY · 11:15 PM · THE FERRANTE HOUSE, THE STAIRCASE",
+   "set": {
+    "resolve.lena": 4
+   },
+   "body": [
+    "It turns out the hall has never seen a sincere ranch girl in white lace with a water jug before, and it can’t get enough of her. The girl with the mic tries twice to get back to Best Couple and can’t be heard over them, and gives up, and asks for Best Saint instead, and the hall answers her with the name it learned two minutes ago.",
+    "“MARIA! MARIA!”",
+    "The planner comes up the stairs, a woman in black with a headset whom Jack has only ever heard through Theo’s speakerphone, and puts a halo spray-painted gold into Becca’s hands. Becca holds it over her head with both hands like a buckle at the county fair.",
+    "“I’ve never won anything that wasn’t a heifer!”",
+    "The hall loses its mind. Lena, down on the floor of it, applauds harder than anybody in the house; she has to clamp the peacock under her chin to do it.",
+    {
+     "if": "e12_stairs==\"becca\"",
+     "text": "Becca turns on the stair and kisses Jack’s cheek with the gold halo still up in her other hand.",
+     "else": "On her way down Becca hugs Lena, jug and all, and Lena lets her, and hugs her back with the peacock in the way."
+    },
+    "Best Couple goes, by the hall’s second instinct, to the Joans: Pope Joan and Joan of Arc, side by side at the gallery rail with a crook and a wooden sword. Laney receives it like a coronation, blowing kisses down at the hall with both hands. Margot is appalled. “This is a category error,” she says into the mic the girl holds up to her, and then a laugh gets out of her, a short one, and she shoves it back into her duct-tape gauntlet and glares down at the crowd as if the crowd had done it.",
+    "Then Theo raises his glass at the rail beside them, in the white jacket, and the hall goes quiet for him the way rooms always do.",
+    "“Can’t repeat the past?” Theo says. “Tonight, at two o’clock, you can. Once.”",
+    {
+     "if": "ferrer_bells",
+     "text": "He tips the glass toward the windows and the dark campus somewhere past them. “And in honor of whoever played the Saints on the Ferrer Tower —” and the DJ drops Louis Armstrong, “When the Saints Go Marching In,” and the hall goes up again.",
+     "else": "He drinks, and the DJ drops Louis Armstrong, “When the Saints Go Marching In,” and the hall goes up again."
+    },
+    "Lena has her champagne back from the stair. Across the staircase her eyes find Jack’s and hold them for two bars of the trumpet, and then go somewhere else.",
+    "Margot’s notebook is somewhere under the armor. She leaves it there.",
+    {
+     "if": "e10_seen_running",
+     "text": "Under her breath, to nobody, she says, “One of them was laughing.”"
+    },
+    "Laney comes down off the gallery leading the song with her crook, and half the hall falls in behind her, the Madoff and a lobster and a girl dressed as a traffic cone, and she takes them out the front door into Del Playa Lane at a strut, and the ice devil drips on the tile."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "margot",
+     "title": "Margot Lindqvist",
+     "text": "Margot Lindqvist. Has a folder on me. Called Lena and me useful idiots for Christian nationalism in front of four hundred people. Made a point about the Euthyphro I still can’t answer. Her mother teaches Classics at Reed. Held a wake for a cigarette on the roof and buried it at sea, for the prose. Had a brother. Her mother was forty-one; the test came back; they’d already picked the name. Anders. March 15, 2000. She’s defended her mother in every room since, and she defended her on the roof. Lena said his name. Doesn’t sleep. My friend. She has a faith column now, in the *Tide*, on a trial basis. If it’s boring they’ll kill it. She told me not to be boring. Came to Big Sur as an observer, for the monks — a functioning patriarchy in its natural habitat. Ran the *Tide*’s Ferrer follow-up from a minivan and wrote nothing down. Sunday at the coffee urn: ‘I’m not writing anything down.’ Halloween: Joan of Arc in duct tape, with her own haircut. Best Couple, with Pope Joan. She called it a category error and laughed anyway."
+    }
+   ],
+   "next": "s09"
+  },
+  "s09": {
+   "slug": "SATURDAY · 11:40 PM · THE FERRANTE HOUSE, THE FRONT HALL",
+   "body": [
+    "At twenty to twelve Becca finds him at the foot of the staircase with the gold halo in one hand and the mantilla folded over her arm, the jug hooked on one finger. The touch tank is at six. Thomas and his neighbors don’t feed themselves.",
+    "“Farmer,” she says, about herself, and shrugs, and isn’t sorry.",
+    "She kisses him goodnight right there at the bottom of the stairs, quick and certain, in front of everybody: the Madoff, the DJ, two caterers, a Pope, and a Georgia novelist sitting on the fourth stair with a stuffed peacock in her lap, who looks at the ice angel. The devil beside it is half gone."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank. ‘Farmer.’"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“I’ll walk you to the truck.”",
+     "tag": "Sincerity",
+     "if": "e12_stairs!=\"becca\"",
+     "set": {
+      "e12_becca": "walk",
+      "rel.becca.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "cue": "Becca will remember that.",
+     "goto": "s09a"
+    },
+    {
+     "text": "“I’ll walk you to the truck.”",
+     "tag": "Sincerity",
+     "if": "e12_stairs==\"becca\"",
+     "set": {
+      "e12_becca": "walk",
+      "rel.becca.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "goto": "s09a"
+    },
+    {
+     "text": "“Goodnight, Maria.”",
+     "tag": "Control",
+     "set": {
+      "e12_becca": "door",
+      "trait.control": "+1"
+     },
+     "goto": "s09b"
+    }
+   ]
+  },
+  "s09a": {
+   "slug": "SATURDAY · 11:45 PM · OCEAN ROAD",
+   "body": [
+    "She has parked the Ranger out on Ocean Road, past the barricade, nose out under a streetlight, “like a *grown-up*,” by which she means legally. Del Playa’s noise drops behind them a block at a time until it’s just the bass, and then just the bass in the soles of his feet. The moon stands high over the Grove and has whitened the tops of the eucalyptus.",
+    "She opens the driver’s door and the dome light comes on, and there on the visor is St. Isidore, a holy card in a plastic sleeve gone pale on the sun side, a man in a brown tunic with a hoe and two angels doing his plowing behind him.",
+    "“He’s been on there since August,” Becca says. “I’ve wanted this one all along.”",
+    "Jack stands with his hand on the warm roof of the cab while she finds her keys, in the sack she cut and hemmed for him on the Newman machine, with the rope belt through the grommets she set herself, and there isn’t one true thing in him he could say to her out loud.",
+    {
+     "if": "e11_becca_invite==\"ask\"",
+     "text": "She buckles the jug into the passenger seat. “Thomas says hi,” she says. “Thomas doesn’t know it’s Halloween.”",
+     "else": "She buckles the jug into the passenger seat, and the gold halo after it."
+    },
+    "“Tomorrow, the 9:30? I’ll save you a seat.”",
+    "The Ranger’s taillights go off down Ocean Road toward Portolá, and Jack turns around and walks back toward the noise."
+   ],
+   "next": "s10"
+  },
+  "s09b": {
+   "slug": "SATURDAY · 11:45 PM · THE FERRANTE HOUSE, THE FRONT STEPS",
+   "body": [
+    "She won’t let him walk her. “It’s two blocks, Jack. I’ve walked cows farther.” She squeezes his hand on the top step, once, hard, a ranch handshake, and goes down into Del Playa.",
+    "He watches her from the front steps of the Ferrante house in the feed sack she made him. White lace and a gold halo bob away up the street over a sea of Michael Jacksons, steady, the jug up out of the crush. Once she turns, walking backward, and calls something he can’t hear and then can: “Nine-thirty! I’ll save you a seat!” Then she turns forward again, and the lace gets smaller, and at the corner of Ocean Road he loses her among the costumes and goes on looking at the place anyway."
+   ],
+   "next": "s10"
+  },
+  "s10": {
+   "slug": "SATURDAY · 11:55 PM · DEL PLAYA LANE",
+   "body": [
+    {
+     "if": "e12_becca==\"walk\"",
+     "text": "He’s halfway back down Del Playa from Ocean Road, threading the crowd with the hoe held upright so it doesn’t take anybody’s eye out, when he sees him.",
+     "else": "He’s still on the front steps, with the hoe across his knees, when he sees him."
+    },
+    "On the far sidewalk, against the flow, a man in no costume at all is walking a bicycle through the crowd: a stained canvas work jacket, wire glasses, an American Spirit going in the corner of his mouth. Evan Marsh. Jack’s TA. He has stopped dead in the middle of the sidewalk with people breaking around him on both sides, and he’s looking up at the porch of the Ferrante house, where Theo stands under the floodlights in the white dinner jacket, tall and blond and laughing at something one of his LA people has said.",
+    "Evan’s face has gone white, the white of the cigarette paper.",
+    "“Evan?”",
+    "For a second Evan doesn’t hear him. The cigarette has burned down to the filter. Then, without taking his eyes off the porch:",
+    {
+     "if": "e11_evan==\"wait\"",
+     "text": "“Mr. Costigan.”",
+     "else": "“Costigan.”"
+    },
+    "And then: “Who is that?”"
+   ],
+   "choices": [
+    {
+     "text": "“My roommate. Theo. It’s his party.”",
+     "tag": "Candor",
+     "set": {
+      "e12_evan": "roommate",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Evan nods, slowly, still looking at the porch, as though Jack has told him the time and he needs to work out what it means for his train. “Theo,” he says. He drops the cigarette and steps on it.",
+      "Evan swings a leg over the bike and pushes off, west, toward Seacliff, through the crowd and the cops and the cups, and is gone into the costumes. Jack looks back up at the porch. Theo has gone inside. Somebody in a gorilla suit hands Jack a beer he didn’t ask for, and the bass comes up through the steps, and the party takes him back."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "“Jay Gatsby. It’s his party.”",
+     "tag": "Wit",
+     "set": {
+      "e12_evan": "gatsby",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Evan doesn’t smile. “Right,” he says. He drops the cigarette and steps on it, looking at the porch the whole time.",
+      "Evan swings a leg over the bike and pushes off, west, toward Seacliff, through the crowd and the cops and the cups, and is gone into the costumes. Jack looks back up at the porch. Theo has gone inside. Somebody in a gorilla suit hands Jack a beer he didn’t ask for, and the bass comes up through the steps, and the party takes him back."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "“Why?”",
+     "tag": "Control",
+     "set": {
+      "e12_evan": "why",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Evan looks at him then, for the first time, and something in his face closes up like a hand. “No reason,” he says.",
+      "Evan swings a leg over the bike and pushes off, west, toward Seacliff, through the crowd and the cops and the cups, and is gone into the costumes. Jack looks back up at the porch. Theo has gone inside. Somebody in a gorilla suit hands Jack a beer he didn’t ask for, and the bass comes up through the steps, and the party takes him back."
+     ],
+     "goto": "s11"
+    }
+   ]
+  }
+ }
+}

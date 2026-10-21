@@ -2274,3 +2274,174 @@ in-episode, not open on entry.
 - McWay sunset Oct 24 ≈6:10 p.m. PDT; civil twilight ends ≈6:38; Oct 25 sunrise 7:12, nautical twilight ≈6:15.
 - Becca's rosary's owner (her grandmother; Sunshine Mine) is NOT on the page; never narrate it before S2E03.
 - Lena's scriptural languages are Latin and Greek (Septuagint), not Hebrew.
+
+### S1E12 — "All Hallows’ Eve" (Fri Oct 30 – Sun Nov 1, 2009; tag Sun 11:40 a.m. PST)
+33 scenes. Forks: s07 → s07a widow's walk (`e12_where=="roof"`) / s07b caterers' kitchen (`kitchen`) → s08 · s09 → s09a Ocean Road
+(`e12_becca=="walk"`) / s09b front steps (`door`) → s10. Duel **grace** ("A Good Man," s15a–s15v, Seacliff Road walking east,
+**unofficial, no referee**; Lena, dressed as O'Connor, argues AGAINST violent grace — Thomist: *gratia non tollit naturam sed perficit* —
+Jack FOR it — Augustine X.27, Matt 11:12 Douay). Extended Jack/Lena two-hander = Act Three (s11–s16). Per path ≈13.3k–14.2k words
+(mean ≈13.7k; Act Three ≈3.8k–4.3k), 21 choices, 8–12 keys, 0–5 whispers (Lena ≤2, Becca/Theo/Laney ≤1; a pure-Control path gets the
+s16 "Keep it on" whisper). Jack's resolve enters 10, ends **5–10**. Lena's resolve: s04 5 → s06a 5 → s08b 4 → s11 4 → s13 4 → s16 4 →
+s17 5 → s19 **6 (ends 6)**. No dangerous window. **Save-locked:** written for `saves/after-s1e11.json` (`e11_costume=="isidore"`,
+`e11_intel=="list"`, `e11_condor=="lena"`, `e11_decided=="wreck"`, `e11_comeback=="whodat"`, `e11_porch_cig=="lit"`, `e11_tin=="occasion"`,
+`e11_candle=="light"`, `e11_anglicans=="margot"`, `e11_hale=="did"`, `e11_bixby=="rail"`, `e11_evan=="wait"`, `e11_saturday=="thanks"`,
+`e11_becca_invite=="ask"`, `scar_told_laney=="swan"`, `e2_osei=="board"`, `e5_wed=="pref"` (Jack does NOT know Kevin's ER summer),
+`e8_sun=="sullys"` (Jack never got Lena's E08 caps texts), `knows_nora`, `knows_ray`, `knows_wes_ring`, `knows_wes_attic`,
+`knows_lena_piano`, `ferrer_bells`, `e10_seen_running`). Gates: s14 "Sit up on the wall" `trait.reckless>=22` (save 20; needs two of
+horns/stay/light, ≈29% of paths); s15a Riposte `trait.wit>=36` (save 34; ≈66%); s15c Confess `soul.honesty>=22` (save 22; ≈68%).
+
+**Clock (binding for every later reference).** DST ends 2:00 a.m. PDT Sun Nov 1: **1:00–1:59 happens twice; 2:00 happens ONCE.** Slugs in
+the repeated hour carry "(AGAIN)". Never write "the second two o'clock." The planner's sign: **LAST CALL · 1 A.M. · BOTH OF THEM.** Theo's
+toast: "Tonight, at two o'clock, you can. Once." Moon ≈97% waxing gibbous Oct 31 ("two nights short of full," s07a), full Mon Nov 2.
+Sunrise Nov 1 ≈6:10 a.m. PST; marine layer in until ≈11:40.
+
+**On-page canon (all paths unless marked)**
+- s01 (Fri 3:40 p.m., St. Brendan's courtyard): the 1962 courtyard sprinkler is in pieces on a blue tarp; Osei fixes it in rubber boots.
+  The **Newman garden hoe** (shed, two nails beside the Christmas lights; Mrs. Fitch's tape: NEWMAN · GARDEN · RETURN). Osei's Isidore:
+  angels at the plow; 1622 canonization with Ignatius, Xavier, Teresa, Neri — "four Spaniards and a saint" (Neri a Florentine whom Rome
+  kept sixty years). **Maria de la Cabeza is beatified, not canonized** (cult confirmed 1697); Becca: "She's a saint to *me*." Becca's
+  costume: **St. Maria de la Cabeza** — Mrs. Fitch's white lace mantilla (Mrs. Fitch knows whose it was; won't say), a little clay water
+  jug, her own straw hat (lives on the Ranger's dash). Jack's: **a RATHDRUM FEED & SEED sack (Mr. Hollister gives 4-H his empties) cut
+  into a knee-length smock, rope belt through two brass grommets Becca set, her straw hat, the Newman hoe.** "Eight kids, one sewing
+  machine." [e2_osei=="board"] the chessboard is still set up in Osei's office. Lena (Goodwill garment bag) has sworn Laney to silence
+  "on her mama's pageant sash"; Laney: "It's a *bird*." [tunic=="on"] "Saint Isidore of the Carhartt"; Becca hands the Carhartt back.
+- s02 (Fri 5:30 p.m., 412): Theo's planner **Delphine** (Silver Lake; worries about the fire code); the Ferrante house floor plan on
+  Meridian Pictures letterhead; HALOS (300) / HORNS (300) boxes; Venetian masks FOR THE SHY; "Somerton" vs. Del Playa. Laney's pad:
+  STAIRCASE · 11:00 · COUPLES. Theo: "The host." Laney: "A lady doesn't do previews, Jack. Buy a *ticket*." Kevin's flyer: H1N1 campus
+  clinic priority list (future health-care workers excluded; "Doug is practicing a cough"). **Jack swapped with Hector: works Fri, off Sat.**
+  Theo asked Jack to light 300 candles Sat at four (Jack did: s06, blister on his thumb). [intel==list] Theo's Nepenthe napkin.
+- s03 (Fri 9:40 p.m., the Anchor): World Series 1–1 (Phillies Game 1 Wed, Yankees Game 2 Thu 3–1); Rudy: "Bought team." **Ray Ochoa**
+  (windbreaker, coffee to go): MPD has everyone on Del Playa and Seacliff, county deputies, barricades at 6:30, "every Halloween somebody
+  goes off one in Las Olas, and I'm the one who calls the mother." Gloria rates Jack **"Shoofly"**; Lena "something that'll ruin you."
+  `e12_ray`: maria ("The girl I'm seeing is St. Maria" — Gloria: "*Seeing*.") / farmer (SHOOFLY ticket taped to the pie case) / sir.
+- s04 (Sat 1:40 a.m., Delgado laundry): Jack rode La Flaca home from the Anchor. Lena on the upright ("Just a Closer Walk," the dead F),
+  then ironing **a 1954 blue shirtwaist** under a towel. Voodoo Fest a mile from Dupre Street. [whodat] "Daddy asked about you. 'The one who
+  yells.'" `e12_laundry`: salve (Lena sings the Salve Regina over him; "Don't you *tell* me") / first ("It's her first one." "Then you did
+  it right.") / board (Jack holds the wobbling board; no talk; she does the collar twice). She leaves the iron on; he unplugs it.
+- s05 (Sat 7:30 p.m., 412): costumes — **Theo: Jay Gatsby** (white dinner jacket, black tie undone); **Margot: Joan of Arc** (cardboard and
+  duct-tape breastplate, wooden sword, her own hair; "The Church couldn't decide either"); **Kevin: All Saints** (green scrubs, a halo, a
+  plain white full-face drugstore mask; origin of the scrubs unstated on this save); **Laney: Pope Joan** (white satin, three strands of
+  pearls, cardboard mitre with gold rickrack, crook from the Spirit Halloween in the dead Circuit City on Mission; "Margot gave me a
+  footnote, and I made it a *lifestyle*"). Jack: "There was no Pope Joan." Becca's 7:44 text.
+- s06 (8:00 p.m., **the Ferrante house**, Del Playa, 1926 white stucco and red tile, three stories, widow's walk): lilies up the left rail,
+  roses down the right, fog machine, Theo's 300 candles in jars, five-tier champagne tower, DJ in the library, ice angel and ice devil,
+  devil's food cake. Door: halo or horns bowls; the cream SAINTS & SINNERS card. Margot: "Madonna or whore, sorted at the door, in plastic.
+  Your roommate has reinvented the Church Fathers with an open bar." Laney to Becca: "Two hats. We match. I'm the *fun* one." "You *are*!"
+  `e12_door`: halo / horns / both ("Undecided. Like my major.") / neither (no keys).
+- s06a (8:01): **Lena as Flannery O'Connor** — black cat-eye glasses, the blue shirtwaist, oatmeal cardigan buttoned once, stiff handbag,
+  Goodwill saddle shoes half a size big, **a plush peacock tagged 57** (the condor's wing number). Takes a card, not a headband: "I'm a
+  Southern novelist, Theo. I'm both." "Andalusia." / "That's in Spain." / "It's in Milledgeville, Youngstown." Margot: "Between the two of
+  you, there's one functioning farm." Theo greets Becca: "Miss Lindell. The house is honored." [intel==list] Laney: "Farmers have birds."
+  A stranger dressed as Kanye: "American *Gothic*!" `e12_whos`: writer ("Not yet. She was mean as a snake.") / farmer ("A *dairy*
+  farmer.") / lena (heat).
+- s06b (8:04): Wes calls on the dot from Frenchmen Street (a tuba); "I love you too … Go dance." [whodat] "Who dat, baby."
+  [knows_wes_ring] Jack's one ring thought (narration only).
+- s07a [roof] (9:50): Laney's "*Urbi et orbi*, y'all!"; the street kneels; **Theo's LA people arrive in two black cars; Theo's face goes
+  "smooth and pleasant and ten years older"**; Ray on a bullhorn: "Your Holiness. Please come down off the roof." [knows_ray] Jack names
+  him. Theo at the far rail looking at the Point; Margot: "A man who throws parties for a light across the water." Theo: "It's not lit."
+  `e12_roof`: laney / wave / theo ("Ocean.").
+- s07b [kitchen] (9:50): Lena tells Becca O'Connor ("Everybody in them is mean, and God shows up anyway"; "Revelation" and the hog farm);
+  Laney: "Is that a *tablecloth*?" Lena: "Laney. Be nice." Kevin washing flutes in his mask. `e12_kitchen`: revelation (REVELATION in
+  ballpoint on Becca's knuckles) / reads / kevin ("I'm fine.").
+- s08 (11:00, the staircase): Jack's two glasses of champagne. Best Sinner: **Brooks Callahan** (Sigma Rho senior, MADOFF jumpsuit); he
+  flirts with Pope Joan; Theo watches. The hall chants **"AMERICAN GOTHIC!"** at Jack and Lena on the 2nd/3rd stairs. **Soledad** (tall,
+  long black hair, a chrome BOLEX) films Jack's straw hat; Theo: "Soledad. Don't." [kitchen] Laney tells the house a policeman called her
+  Your Holiness. `e12_stairs`: down (Lena: "That's his Maria. I'm just a novelist who wandered in.") / becca ("I'm with Maria.") / stay.
+- s08b (11:15): **Becca wins Best Saint by acclamation ("MARIA!") — a gold-sprayed halo from Delphine; "I've never won anything that
+  wasn't a heifer!"** Best Couple: **the Joans** (Margot: "category error," laughs). Theo's toast; [ferrer_bells] "whoever played the Saints
+  on the Ferrer Tower"; Louis Armstrong. Laney leads a Saints parade out the front door. [e10_seen_running] Margot: "One of them was laughing."
+- s09 (11:40): Becca leaves for the 6 a.m. Sunday touch tank (**the swine-flu volunteer is still out**); kisses Jack at the foot of the
+  stairs in front of everybody. s09a [walk]: the Ranger on Ocean Road; St. Isidore on the visor "since August — I've wanted this one all
+  along." s09b [door]: "It's two blocks to the truck … I've walked cows farther."
+- s10 (11:55): **Evan Marsh**, no costume, walking a bike, sees Theo on the Ferrante porch and goes white: "Who is that?" `e12_evan`:
+  roommate (Evan has "Theo") / gatsby / why ("No reason."). Evan rides west toward Seacliff. (🔒 E19 reads `e12_evan`.)
+- s11 (12:35 a.m. PDT, widow's walk): Margot: **"Your host left his own party at twelve-thirty. Out the back gate. Toward Seacliff."**
+  [roof] "And Kevin hasn't taken that mask off since Delgado." Lena alone with the untouched champagne flute (only drink she holds all
+  night; never drinks). Reds and the Bic in the hat band. `e12_occasion`: lit → **Reliquary No. 7 · 10/31/09 · Del Playa · All Hallows —
+  the occasion** (on the back of the HALO OR HORNS card; [porch_cig==lit] "Two in a week, Youngstown") / kept ("Not yet.").
+- s12 (12:55, Del Playa): *This Is It* opened Wed; Michael Jacksons, Balloon Boys, Kanye/Taylor, Snuggies, the swine flu. The **Mr.
+  Isidore / Miss O'Connor** street game (Isidore's union angels, "Local Eleven-Twelve"; "I have a correspondent. He calls at eight-oh-four."
+  "I have a Maria. She crosses rivers."). The walk takes an hour. **Hale's bungalow** (dark porch, canvas chair, Berkeley the greyhound):
+  "the Counter-Reformation and the Confederacy, out for a walk"; [hale==did] he drinks to Jack. Shipwreck Cove stairs: **1:59 → 1:00** on
+  both phones. `e12_mask`: character / lena (key) / arm.
+- s13 (1:05 AGAIN, Seacliff): Kevin calls Lena: **Laney left the party at the first 1:40 with three Pi Lam pledges "to walk the wall"
+  (Sloane's lore: "before"); her BlackBerry died at 1:40 (first).** They run west to the Lighthouse; Lena kicks off the saddle shoes.
+  **Lena stops at the fence gap and will not go past it (medal touch #1).** "Go. Please, Jack." "I'm not asking." "I know."
+- s14 (1:20 AGAIN): **Jack's first time at the Point** (`knows_point`). Point Marisol Light, 1890, decommissioned 1967, padlock gone orange.
+  The low wall; **the white cross: NORA; flowers two weeks dead on kitchen string** (no fresh flowers this Sunday). **Theo at the wall,
+  both hands flat on the stones, a Krug mostly gone (`saw_theo_wall`): "Don't. Okay? Just — not there."** `e12_wall`: path ("You're
+  babbling, Costigan." "Keep going.") / beside ("Come away from there, Costigan.") / sit (Theo hauls Jack off by the feed sack; they go
+  down in the ice plant; his hands shake; "Don't do that.") / ground (back to the wall, facing inland; "Lupe's.").
+- s14b (1:28 AGAIN): Lena's text in caps, unsigned ("No —L. on it"). **Theo leaves the Krug at the foot of the cross.** "Tell them I was
+  looking for Laney." Theo leaves through the dark lot next door toward Del Playa (Lena under the streetlight doesn't see him); Jack watches
+  him to a porch light, walking steady. `e12_theo_lie`: carry / called ("…Did I." "Don't, Costigan.") / lupes ("Allegedly.").
+- s15 (1:35 AGAIN): Lena called Laney eleven times, Kevin twice, said the Memorare twice. `e12_told`: theo (`e12_lena_knows_theo_drunk`;
+  "He shouldn't be up there drunk") / cross / **nobody (`e12_lied_lena` — Jack's first outright lie to Lena; she believes him)**.
+- Duel s15a–s15c: Lena's moves — the megaphone (*Mystery and Manners*), **Aquinas ST I q.1 a.8 ad 2**, the Misfit, her grandmother
+  ("good on a Tuesday … in the checkout line at Schwegmann's"), **Bartimaeus** (last Sunday's Gospel at the monks). [Press s15a] Monica's
+  seventeen years. **s15c medal touch #2: "No. I never have."** (🔒 the lie). The turn line: [apology or heart≥2] "Have you ever been up
+  there?" / else "You've never stood up there…" [personal && !apology] "the second cut." [Confess] **"I was asked once. I didn't answer.
+  He came anyway."** (`e12_asked`; she doesn't ask). **Endcard tag: "I came as her. I never said she was right."**
+- s15v verdicts: **V1** personal && !apology → Lena by forfeit, she walks a block ahead; **V2** personal && apology → Lena by forfeit
+  ("An apology isn't a point"); **V3** !personal && heart≥2 → Lena ("Then we're both waiting to be asked"; "I'm scared of a lot of things
+  tonight"); **V4** !personal && heart≤1 && rigor≥3 → Jack ("You argued that like somebody who's been hit"); **V5** !personal && heart≤1 &&
+  rigor≤2 → Lena on Bartimaeus. Unofficial — the official record is unchanged.
+- s16 (1:59 AGAIN, Seacliff, a block short of Lupe's): Lena takes off Flannery's glasses. [resolve.jack≤7] "*Help*." [soul.restraint≥−7] he
+  can see the line. `e12_hat`: off (she puts the hat back on his head with both hands: "Put your hat back on, Isidore. It's two o'clock.";
+  [V1] she does it without a word) / on ("Thank you, Mr. Isidore.") / third ("The same thing. That's how you know.") / **sorry [V1 only]:
+  Jack apologizes for the path ("You picked the right minute for it"; sets `e12_grace_apology`)**. 2:00 PST comes once. No touch beyond
+  the hat; no kiss.
+- s17 (2:10, Lupe's): Laney on the curb with a carnitas burrito, Kevin holding her crook; three pledges in nun habits and cat ears.
+  "I'm not *stupid*, sugar. I'm *hungry*." Lupe: "Para los novios." / "Sí, sí. Amigos." [swan] "Saint Swan of the Feed Sack." Kevin:
+  "Where's Theo?" [carry] "Looking for Laney" / else "Went back to his party." [nobody] Lena hears it. Home through the Grove at 2:40;
+  **Kevin takes the mask off at Delgado's door.** Priya's laminated sign; "Where's Vance?" [carry] "Looking for Laney." / else "Back at the
+  house." Laney raises the crook over the desk: "I'm going to need you to not."
+- s18 (7:10 a.m. PST, 412): **Theo asleep on his made bed in the dinner jacket, patent shoes on and laced, trousers sanded to the knee, hems
+  wet; the black tie gone; the gray camera bag on his desk.** Jack unlaces the shoes (sand pours out). Gina's texts (Ohio time, during the
+  party): went as a nun; Ashley wore the jumpsuit, Gina said "visit, not dress up as," Kelsey laughed at Ashley; "dead monday"; OSU 45 NMSU
+  0. `e12_gina`: proud / lena (forwarded; s19b Lena: "Tell her the nun said so.") / wit ("lol ok fine," 7:16).
+- s19 (9:30, All Saints): Rev 7, Ps 24, 1 John 3:1–3 (Kevin reads, bare-faced), Beatitudes; Osei's two-sentence homily ("…only He has seen
+  the finished face"). Lena in the black mantilla; LG face-down; receives on the tongue. **Lena lights a votive at the Marian shrine; Laney
+  lights one at the end of her row.** [candle==light] Laney: "You lit one too. Who was yours for?" `e12_candle_q`: nobody ("Liar.") /
+  brother / **alive ("Somebody who's alive." — Laney doesn't ask)**.
+- s19b (10:40, courtyard): Jack returns the hoe. Laney's album SAINTS & SINNERS (64 photos, 3:12 a.m.); photo #31 of the stairs, tagged,
+  *american gothic???*; **Becca's 7:14 a.m. comment from the Marine Lab: "we were St. Isidore and St. Maria!! :) BEST SAINT!!!"** Mrs. Fitch:
+  "St. Isidore and St. Maria! *You two!*" Laney: "Wasn't a heifer." Becca: "You *remembered*!"
+- s20 (11:40, the Grove): Benedict (*Spe Salvi*; "big fortnight … He let the Anglicans in"); **the monarchs open in the eucalyptus**; Lena
+  lets the LG buzz ("Later").
+
+**Flags introduced**
+`e12_tunic` · `e12_ray` · `e12_laundry` · `e12_door` · `e12_whos` · `e12_heat` (counter; Lena heat cap 2) · `e12_where` · `e12_roof` ·
+`e12_kitchen` · `e12_stairs` · `e12_becca` · `e12_evan` · `e12_occasion` · `e12_mask` · `e12_wall` · `e12_theo_lie` · `e12_told` ·
+`e12_lied_lena` · `e12_lena_knows_theo_drunk` · duel `grace`: `e12_grace_personal`, `e12_grace_apology`, `e12_asked` · `e12_hat`
+(off/on/third/sorry) · `e12_gina` · `e12_candle_q` · long-arc: **`knows_point`**, **`saw_theo_wall`**; `reliquary` +1 and `jack_cigs` +1
+on `lit`. **Derived (no flag; compute when needed): `e12_lena_caught` ≡ `e12_theo_lie=="carry" && e12_told=="nobody"`** — Lena heard Jack
+tell Kevin "Looking for Laney" one step away after he told her "Nobody" (s17); E13+ may pay or defer it deliberately.
+
+**Payoffs owed (E13+)**
+- `e12_lied_lena` / `e12_lena_caught` → the "Nobody." lie costs when it lands. `e12_lena_knows_theo_drunk` → Theo's birthday (E13).
+- `e12_theo_lie` (carry: Kevin's look and Priya's "Looking for Laney" are on the record; called: Theo knows Jack has the times).
+- `e12_wall=="sit"` → Theo will remember it; never glossed. `saw_theo_wall` + the Krug at the cross + the sanded dinner jacket (dawn card).
+- `e12_evan` → E19. Soledad and her Bolex filmed Jack's hat (🔒). Brooks Callahan exists. Becca's Best Saint halo.
+- `e12_asked` → Lena has Jack's "I was asked once"; she didn't ask. `e12_candle_q=="alive"` → Laney.
+- `e12_hat` → the hat moment; `e12_grace_personal` (and whether he apologized, s15b or s16).
+
+**Tallies after S1E12**
+- Reliquary: 6 → **7 on `e12_occasion=="lit"`** (No. 7, Del Playa, the HALO OR HORNS card). Jack's cigarettes lit on-page +1 on `lit`.
+- Duel record (official): **unchanged** (grace is unofficial; logged on the record card per verdict; Lena is owed at E14 and E16).
+- Lena's medal: s13 (the fence gap), s15c ("No. I never have."). Lena's "Costigan": duel only (s15a Riposte, s15v V2); "Mr. Costigan"
+  (Personal, V1); "Youngstown" (s06a, s11, s12).
+- Anchor pie ratings: **Jack = "Shoofly"** (Gloria).
+- Lena's resolve ends **6**.
+
+**Ledger housekeeping (from the S1E12 review)**
+- **2:00 a.m. happens once** on Nov 1, 2009; only 1:00–1:59 repeats. Keys/journals anchor the hat to "the last minute of the extra hour."
+- Transit: the last 11 bus is 12:30 a.m.; after a 1:00 Anchor close Jack rides La Flaca.
+- Gina's Saturday-night texts are stamped Eastern (11:12 PM – 12:30 AM ET = 8:12–9:30 PM PT, during the party).
+- Becca's touch-tank shifts are Thu afternoon + Fri 6 a.m.; she worked **Sun Nov 1 at 6 a.m.** only because the swine-flu volunteer is still out.
+- Geography: Seacliff's Greek row (Pi Lam easternmost) is the Grove end; the Lighthouse is the west end; the Point is north of the
+  Lighthouse porch. From Del Playa's cliff end you do not pass Pi Lam heading to the Lighthouse. Avoid compass words for the Point from
+  the Ferrante roof ("the far rail").
+- Philip Neri: Florentine by birth, "Apostle of Rome." The Anglican plan was announced Oct 20 (a fortnight before Nov 1); the apostolic
+  constitution is Nov 4/9 — not yet.
+- Sandoval Hall 1 is the lecture hall, not a residence.

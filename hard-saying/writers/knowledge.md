@@ -1114,3 +1114,91 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Kevin** [s14] handed Lena the quarters unasked; [s15] Theo's "Same three as August."
 - **Fr. Osei** [s05/s07]: Lena asked him to bless the van "for the road."
 - **Gina** [s19]: [lena] Lena's line about the work of mercy; [advice] Jack's advice; [away] no answer yet.
+
+### S1E12 — "All Hallows’ Eve"
+> Written for the after-s1e11 save only (see continuity.md S1E12). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01] Osei's Isidore lore (angels at the plow; 1622, "four Spaniards and a saint"); Maria de la Cabeza is beatified, not canonized.
+  Mrs. Fitch's mantilla belonged to "somebody interesting" (she won't say whom; Jack doesn't know). Becca sewed his costume.
+- [s02] Theo's planner is **Delphine** (voice only; Jack recognizes her voice at s08b). Theo is "the host." Laney's costume is withheld.
+  Kevin: H1N1 priority list. **Jack still does NOT know Kevin's ER summer (`e5_wed=="pref"`); the scrubs are "from God knows where."**
+- [s03] Ray: MPD and county deputies on Del Playa and Seacliff; "every Halloween somebody goes off one in Las Olas." Gloria: "Shoofly."
+- [s04] Lena's costume involves a 1954 blue shirtwaist (one sleeve seen). [whodat] Tony asked about "the one who yells."
+- [s05] Pope Joan was Margot's "footnote"; costumes of Theo, Margot, Kevin, Laney.
+- [s06a] Lena is Flannery O'Connor with a peacock tagged 57 (the condor's number, E11). Jack recognizes Andalusia/the peacock letters
+  (E11 van) — he did what she told him ("whatever she wrote first"). [intel==list] Overhears Laney's "Farmers have birds" (Lena out of range).
+- [s06b] Wes on Frenchmen Street; "I love you too." [knows_wes_ring] ring thought, narration only.
+- [s07a | roof] Theo's face at his LA guests (Malibu face). [knows_ray] the bullhorn is Ray. Theo at the far rail: "It's not lit."
+- [s07b | kitchen] Lena's account of O'Connor (to Becca, in Jack's hearing). [kevin] Kevin: "I'm fine" (unasked).
+- [s08] **Soledad** — Theo says the name aloud ("Soledad. Don't."); a tall girl with a Bolex filmed Jack's hat. **Name only; no journal
+  card, no key.** Brooks Callahan's name (read from a card). [s08b] Delphine in person (by her voice).
+- [s10] **Evan saw Theo on the porch and went white; asked "Who is that?"** Jack draws nothing from it on the page (🔒). No card, no key.
+- [s11] **Margot: Theo left at 12:30 by the back gate toward Seacliff.** [roof] Kevin's mask since Delgado.
+- [s12] Hale's bungalow on Del Playa (dark porch; Berkeley); Hale overheard the Isidore/O'Connor game.
+- [s13] From Kevin via Lena: Laney left at the first 1:40 with three pledges "to walk the wall" ("tradition," via a sophomore nun).
+- [s14] **The Point (`knows_point`): the light, the wall, the NORA cross, two-week-dead flowers on kitchen string.** [knows_nora] he
+  connects the name to the brass plate and Priya. **Theo drunk at the wall (`saw_theo_wall`)**: "Don't. Okay? Just — not there." Jack knows
+  nothing of why (🔒 never glossed). [sit] Theo hauled him off and shook; "Don't do that." [beside] Theo can't let Jack stand there.
+- [s14b] Theo left the Krug at the foot of the cross (seen, not glossed). Theo asked him to say "looking for Laney."
+- [s15c] Lena says she has never stood at the wall (a lie; Jack can't know — 🔒 she walked it with Nora Apr 24).
+- [s17] Sloane's "before" (no object; nobody says Nora). Laney's phone died at the first 1:40.
+- [s18] Theo came in after Jack slept, sand to the knee, hems wet, camera bag on the desk. Gina's Halloween (Ashley's jumpsuit; Gina
+  said "visit"; Kelsey laughed at Ashley).
+- [s19b] Becca's 7:14 Facebook comment; Laney's 64 photos.
+
+#### Lena
+- [s01] Saw the hoe and the hat on Becca's arm (no inference on the page). **She does not know Jack's costume before 8:01.**
+- [s04 | salve] Jack tried to tell her his costume; she sang over it. [first] "It's her first one" (Becca's first). [board] nothing said.
+- [s06a] Jack and Becca as Isidore and Maria (by sight); [farmer] Jack's "A farmer" joke. [lena] Jack said her name "the wrong way."
+- [s07b | reads] Jack: "Lena reads her better than I do." [s08 | stairs] how Jack stood (down / brought Becca up / stayed beside her).
+- [s11] [lit] Reliquary No. 7; [kept] "Not yet. I'll know it when I see it."
+- [s12] the Isidore game; [lena] Jack dropped the voice to say her name.
+- [s13] Laney gone to the wall (from Kevin). **She would not pass the fence gap; Jack saw her stop.**
+- [s15 | theo] **Theo was at the wall, drunk ("He's had a bottle")** (`e12_lena_knows_theo_drunk`); [carry] plus "looking for Laney."
+  [cross] only the cross. **[nobody] Jack said nobody was up there — she believes it (live false belief, `e12_lied_lena`).**
+  [s17 | nobody && carry] she then hears Jack tell Kevin "Looking for Laney" from a step away (derived `e12_lena_caught`; she says
+  nothing on the page).
+- [s15a | Personal] "You won't even walk up a path." (Jack used the Point.) [s15b | Apologize] / [s16 | sorry] he took it back.
+- [s15c] [Confess] **"I was asked once. I didn't answer. He came anyway."** She doesn't ask what he means. [Press] "Sometimes He doesn't ask."
+- [s16] [off] Jack took off the hat; [on] kept it; [third] asked about a third hour.
+- [s18 | gina==lena] Gina's second text (Ashley's jumpsuit; Gina said "visit"). Lena replies to Jack at 10:46 (s19b).
+- **Guardrails held:** Lena does not learn the ring, the attic, Becca's list, the napkin, or Theo's 12:30 exit time (unless Jack says
+  "Theo. At the wall," which gives place, not time). Nobody says Nora's name aloud.
+
+#### Becca
+- [s01] Jack's reaction to the sack per `e12_tunic`. [s06a] [writer] "a Catholic writer from Georgia"; [farmer] a joke she didn't ask
+  about; [lena] Lena told her O'Connor (peacocks, crutches, murderers and grandmothers). [s07b | kitchen] Lena's O'Connor; "Revelation."
+- [s06] Laney's "I'm the *fun* one" (Becca agrees). Theo: "Miss Lindell. The house is honored."
+- [s08] [becca] Jack: "I'm with Maria." [down/stay] Lena put her on the stairs. **Best Saint.**
+- [s09a | walk] / [s09b | door]. **Becca knows nothing of the Point, Theo at the wall, the duel, the hat, or Lupe's.** [s19b] "Till about two."
+- Mrs. Fitch [s19b]: the costumes, from Becca ("St. Isidore and St. Maria! *You two!*").
+
+#### Theo
+- [s05] Jack's costume (as Isidore; he approves). [s06a | intel==list] Laney's "Farmers have birds."
+- [s14] **Jack saw him at the wall** (every path). [sit] Jack sat on it; Theo pulled him off.
+- [s14b | called] **Jack knows he left at 12:30, before Laney (Margot's sighting; Theo hears "Margot saw you go out the back gate").**
+  [carry] Jack agreed to cover. [lupes] Jack asked him to Lupe's.
+- [s18] Nothing on the page: asleep; does not know Jack unlaced his shoes.
+
+#### Laney
+- [s13/s17] Lena called her eleven times; Lena hugged her. [s17 | swan] "Saint Swan" (she already had the swan).
+- [s19] [nobody] Jack's "Nobody" ("Liar."); **[brother] Jack's candle was for his brother**; **[alive] "Somebody who's alive"** (she
+  doesn't ask). [s19b] Becca left the party before midnight (inferred from the night); Becca's 7:14 comment.
+
+#### Margot
+- [s11] Saw Theo leave at 12:30 by the back gate toward Seacliff; tells Jack (unprompted). [roof] Kevin's mask.
+- [s06a] Jack and Lena match ("one functioning farm").
+
+#### Kevin
+- [s13] From a sophomore nun: Laney's pledges were "walking the wall." [s17] Found Laney at Lupe's. [carry] Jack: Theo is "Looking for
+  Laney" (Kevin's look is held, not glossed); [else] "Went back to his party."
+
+#### Others
+- **Ray Ochoa** [s03]: Jack's costume (Isidore); [maria] Jack is "seeing" a girl dressed as St. Maria. Gloria heard "*Seeing*."
+- **Gloria** [s03]: Jack's costume; [maria] "Seeing."
+- **Evan** [s10]: [roommate] the host is Jack's roommate, Theo; [gatsby] "Jay Gatsby"; [why] nothing.
+- **Hale** [s12]: Jack and Lena in costume as Isidore/O'Connor; overheard the game.
+- **Priya** [s17]: four back; Vance [carry] "Looking for Laney" / [else] "Back at the house" — written on her clipboard.
+- **Gina** [s18]: [proud] / [wit] Jack's text; [lena] nothing yet (Lena's line goes to Jack).
+- **Soledad**: filmed Jack's hat; Theo told her not to (🔒).
