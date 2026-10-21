@@ -828,3 +828,19 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Christmas break opens Season 2** (S1 ends on the finale's airport sting), and **at least one entire episode** is
     devoted to the break itself: Youngstown, the constant calls with Lena, Skye's texts, the Costigans finding Skye's
     Facebook, Theo running into Skye in LA, and Lena privately deciding to leave Julian (off-screen).
+- **Skye: the game's first near-explicit intimacy (player directive).** Skye's arc is the first time the game goes to
+  **near-explicit intimacy scenes**: **no sex**, but everything else on the table, raw and hungry, written frankly
+  with real sensory and emotional detail at the brief's literary standard (HBO/literary fiction, the specific
+  people, never pornographic mechanics). Both are adults (18+).
+  - **She keeps trying to get him to have sex**: seduction, plain asking ("unafraid of want"), escalation. **Jack is
+    pushed to the brink often.** The resolve system bites hard here (Jack's resolve drops; choices let the player hold
+    or slide right up to the line; the line itself never breaks, per HARD RULE).
+  - **Consent stays clean:** she pushes with desire and persuasion, never coercion; his "no" (or "not that") is always
+    heard, even when it frustrates her. Her frustration is real and part of her arc (the first "no" that isn't a
+    negotiation).
+  - **Confession:** Jack confesses to **Fr. Osei** that he **keeps putting himself in the near occasion of mortal sin**.
+    Osei's counsel is real pastoral wisdom (the seal holds; he works only from what Jack confesses), not a scolding; it
+    gives the player real choices about whether Jack changes anything. This recurs: the cycle of falling, confessing and
+    returning is part of the "true and hard" faith.
+  - Lena knows or suspects enough to be furious (through Jack's eyes only), and later this becomes part of Jack's
+    honesty with her.
