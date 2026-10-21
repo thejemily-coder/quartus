@@ -591,13 +591,14 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   events**, and **the growth of their relationship**. The story shifts from *them finding each other* to *them
   learning each other in the world and growing together with everything else going on around them*. (Restraint, the
   dangerous night, the proposal and the wedding remain the relationship spine across sophomore and junior years.)
-- **"The conversation" (late Spring 2010, S2; player's design).** Late in the spring semester **Lena brings it up**:
+- **"The conversation" (late Spring 2011: SOPHOMORE year, Season 4 or its spring equivalent, after they've been together
+  roughly a year; player's correction; player's design).** Late in the spring semester **Lena brings it up**:
   she feels incredibly vulnerable saying it first, on her own, but she thinks it's really important that they talk
   about what they want for each other (marriage, kids, everything), because she's so happy and so loved with him and
   can't bear finding out too late something they should have talked about. **She stresses she's only asking for a
   conversation right now**, and she's scared enough of that; in fact **he'd better not do anything else yet or she'll
   tell his mother on him.** Jack is taken aback. They have a **deep, wide-ranging conversation**:
-  - **the long-awaited marital submission / Ephesians 5 discussion** (THIS is where it lands, superseding the earlier
+  - **the long-awaited marital submission / Ephesians 5 discussion** (THIS is where it lands, late spring of sophomore year, superseding the earlier
     "junior year" placement; all the brief's requirements for it still apply: Eph 5:21–33, mutual subjection, *Mulieris
     Dignitatem*, *Casti Connubii*, headship as service, both sides intelligent and personal, their family wounds);
   - **marriage** itself; **kids** (how many, always open to life per the Catechism; how to raise them); **contraception

@@ -4508,5 +4508,5 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 - Next: the E13 blueprint (Architect) from `outlines/s1e13.md`; the period sheet `period/s1e13-nov1-3-2009.md` is already written.
 - Player directive (orchestrator): (1) post-together, the show shifts to mystery, life intrusions, real-world events
   and relationship growth; (2) "the conversation" (marriage, kids, NFP, life, where, AND the Ephesians 5 discussion)
-  happens late Spring 2010, initiated by Lena. It SUPERSEDES the junior-year placement of Ephesians 5. Re-place in the
+  happens late Spring 2011 (SOPHOMORE year, ~a year into the relationship; player correction), initiated by Lena. It SUPERSEDES the junior-year placement of Ephesians 5. Re-place in the
   arc registry and S2 map.
