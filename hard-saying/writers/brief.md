@@ -527,3 +527,4 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     resignation and Francis's election in Feb–Mar 2013; graduation in spring 2013).
   - **Magnetic girl specifics:** room builds her within the player's design.
   - **Physical arc pacing:** slow erosion, as originally designed.
+- **After S1E11 (player feedback).** "Lena fantastic but still bittersweet. Laney continues to crack me up."
