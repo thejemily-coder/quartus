@@ -775,3 +775,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
       while starting something with someone else. Play the calls as warm and charged on Jack's side of the screen (the
       player should feel how much they mean); the dramatic irony is that neither says what they mean. Payoff in New
       Orleans.
+- **A proxy fight beat (player's design; Lena's voice, not verbatim).** During one of their sideways fights in the
+  Skye period, in the middle of a larger conflict about something else, Lena yells some version of: "If we're such
+  'good friends,' how come I had to find out about your girlfriend from a Facebook status when we talked every single
+  day for weeks leading up to it?" It's the closest the proxy war comes to the truth before New Orleans: she says the
+  grievance, never the reason. Jack has no good answer (he never told her because telling her would have meant saying
+  why it mattered). The fight then veers back to its ostensible subject, and neither names the real one.
