@@ -4513,3 +4513,4 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 - Player co-design of the magnetic girl (orchestrator): SKYE CALLENDER (see brief, "THE MAGNETIC GIRL"). Showrunner:
   replace any prior design with this one in full; keep the arrival timing per the re-plan (meets Jack before Christmas
   2009; FB and texts over break; dating from Jan 2010).
+- Player co-design of Julian (orchestrator): see brief, "JULIAN PARK-ELLIS". Showrunner: replace any prior design.

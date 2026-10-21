@@ -657,3 +657,14 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     quite understanding.
   - **Fatal gap (unchanged):** respect without belief, and too easy: he never fights her, and she needs to be argued
     with. Perfect on paper, wrong in the bones.
+  - **The song:** he plays it for **Lena privately first** (she realizes she can't love him back the way the song
+    deserves), **then publicly at an open mic**; Lena watches Jack hear it. It's genuinely good, which is the worst part.
+  - **What he gets right:** **her grief.** He's gentle with her Katrina grief in a way Jack (who argues) sometimes
+    isn't; he lets her be sad without making it an argument. (Jack should notice this and learn from it later.)
+  - **He knows about Jack and says nothing.** He sees it early and quietly hopes he's wrong. When it ends, he isn't
+    surprised, which is heartbreaking.
+  - **After New Orleans: graceful, and stays a friend.** He takes it like the good man he is, remains in the wider
+    circle, and (room's option) plays at their wedding.
+  - **The alliance on Julian:** Theo is openly rude to him (as to all Lena's boyfriends) until Jack tells Theo to stop
+    because it's turning mean; Laney is polite to his face and feeds Theo intel; Margot likes him and tells Jack he's the
+    healthiest thing in Lena's life.
