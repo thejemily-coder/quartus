@@ -713,3 +713,4 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   girl," and all of them asking about Lena). **Except Danny, who thinks it's hilarious and that Jack must have tricked
   her somehow.** (Danny is in prison with no Facebook: he hears about it on the phone or in letters, maybe from Gina,
   who describes the photos in detail.)
+- **After S1E13 (player feedback).** "Aching sweetness throughout."
