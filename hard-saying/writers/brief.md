@@ -703,4 +703,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     front cameras arrive mid-2010; don't use the word "selfie") and **asks if she can post it on her Facebook instead of
     the planned fundraiser photo**: **she doesn't want to post anything implying he supports something he doesn't.**
   - **Lots of likes, including a polite one from Theo.** **Laney gags at it, which gets a much-needed laugh out of
-    Lena** (seen through Jack's eyes: Laney tells him, or he's there, or the room finds a Jack-POV route).
+    Lena**. **Staging (player): the next day in the Delgado lounge (or similar), with Jack present. Laney is on
+    Facebook on her laptop, sees the photo, and gags theatrically; Lena tries to hide the laugh and can't.** Jack sees
+    all of it.
