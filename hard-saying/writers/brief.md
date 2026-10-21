@@ -514,3 +514,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   7. **The New Orleans trip (Feb 7–16, 2010)** breaks it all open: honesty, no "other" stories, both free within a
      week. Jack asks; Lena says no with a straight face, cracks up, and makes him do it properly; dates; official
      before summer.
+- **Long-range relationship timeline (player directive).**
+  - **Wes's ending:** room decides who ends it and how (the ring is in play).
+  - **Freshman spring (S2, 2010):** they get together (see the re-plan); official before summer.
+  - **Sophomore year (2010–11):** primarily **them as a couple**, with **restraint gradually becoming a thing**.
+  - **Junior year (2011–12):** the predominant relationship threads are **the restraint arc at its height** (slow
+    erosion; they trade who holds; the dangerous night's outcome is the culmination of the player's choices), **the
+    proposal**, and **wedding planning**. The reserved **Ephesians 5 / marital submission conversation** belongs here
+    (engaged, or about to be).
+  - **They marry the summer between junior and senior year (summer 2012).**
+  - **Senior year (2012–13): they live together as a married couple** (the 2012 election lands here; Benedict's
+    resignation and Francis's election in Feb–Mar 2013; graduation in spring 2013).
+  - **Magnetic girl specifics:** room builds her within the player's design.
+  - **Physical arc pacing:** slow erosion, as originally designed.
