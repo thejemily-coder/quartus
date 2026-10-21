@@ -623,3 +623,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     legitimately tries to seduce him**. This is the real test of his resolve and restraint (the resolve system must make
     it cost). Lena knows or suspects enough to be furious. Later, with Lena, it becomes part of Jack's own guilt and
     honesty.
+  - **Name: Skye Callender**, a stage name that stuck; her real name is something plain she never uses (room picks it;
+    reveal it late, as an intimacy).
+  - **Theo:** **childhood friends**. They grew up on the same sets and at the same parties, practically siblings who've
+    seen each other at their worst. He knows exactly what she is, loves her anyway, and stays Team Lena (polite to her
+    face per the alliance rules, feeding intel to Laney).
+  - **Her wound: the child-star machine.** Working since eleven, a stage mother, no childhood, everyone wanting
+    something. Jack is the first person who wants nothing from her career, and **his refusal to sleep with her is the
+    first "no" she's ever met that isn't a negotiation**. That's part of why it drives her crazy, and part of why she
+    falls for him. Never trauma-as-decoration.
+  - **On Lena: she clocks it instantly.** She knows on day one that Jack is in love with Lena and decides to win anyway.
+    Gracious to Lena's face, never once fooled. (Lena can't stand her; Laney is openly rude, privately grudgingly likes
+    her.)
