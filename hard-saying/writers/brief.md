@@ -642,3 +642,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **How it ends (after New Orleans):** the room decides what fits her character best when we get there.
   - **After:** **she stays in their orbit through Theo** (parties, LA trips, an awkward and eventually warm friendship).
     Lena's running joke about her (the cheap fallback argument) has a real face attached.
+  - **Laney's first sighting (player's line; keep verbatim).** The first time Laney sees Skye and Jack together (the
+    sun-streaked hair and the fire read as a copy of Lena), she says to Lena: **"Oh my God, he found a California you.
+    Excuse me, while I go be a bitch on your behalf."** Then she goes and does it (alliance rules: Laney openly rude to
+    Jack's girls). Lena's reaction is the knife: she hates that Laney's right.
