@@ -835,9 +835,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **She keeps trying to get him to have sex**: seduction, plain asking ("unafraid of want"), escalation. **Jack is
     pushed to the brink often.** The resolve system bites hard here (Jack's resolve drops; choices let the player hold
     or slide right up to the line; the line itself never breaks, per HARD RULE).
-  - **Consent stays clean:** she pushes with desire and persuasion, never coercion; his "no" (or "not that") is always
-    heard, even when it frustrates her. Her frustration is real and part of her arc (the first "no" that isn't a
-    negotiation).
+  - **Consent stays clean, and she keeps trying (player):** she never coerces; in the moment his "no" (or "not that")
+    stops things. But **she never takes the no as final**: another night she tries again, persuasive, playful and
+    sometimes less clothed, because **being refused frustrates her and she kind of enjoys it** (the first "no" she's
+    ever met that isn't a negotiation becomes a game she can't stop playing). Her persistence is the pressure on Jack's
+    resolve; it is desire and play, never force or guilt-tripping.
   - **Confession:** Jack confesses to **Fr. Osei** that he **keeps putting himself in the near occasion of mortal sin**.
     Osei's counsel is real pastoral wisdom (the seal holds; he works only from what Jack confesses), not a scolding; it
     gives the player real choices about whether Jack changes anything. This recurs: the cycle of falling, confessing and
