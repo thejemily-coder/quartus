@@ -767,3 +767,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
       laptop's in my closet…", "…don't you dare tell him…"). They stop or change the subject when he walks in. Plant
       them so they click into place in New Orleans when Lena tells him she'd decided to leave Julian. The Knowledge
       Auditor must ensure Jack never infers the full meaning early.
+    - **Christmas break calls (player):** Jack and Lena **talk constantly over Christmas break** (Youngstown ↔ New
+      Orleans: long late-night phone calls, Facebook messages, texts at midnight Mass), and **it feels really meaningful
+      to both**. To Lena, it's part of why she decides to leave Julian. To Jack it is just as meaningful, but she's with
+      Julian, so he reads it as friendship he mustn't push, all while he's also texting Skye. **When Lena sees the
+      Skye status in January, the betrayal is sharpened by those calls**: he was talking to her like *that* all break
+      while starting something with someone else. Play the calls as warm and charged on Jack's side of the screen (the
+      player should feel how much they mean); the dramatic irony is that neither says what they mean. Payoff in New
+      Orleans.
