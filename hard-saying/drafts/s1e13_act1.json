@@ -1,0 +1,469 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "SUNDAY · 4:40 PM · DELGADO HALL, THE KITCHEN OFF THE FISHBOWL",
+   "music": "Allen Toussaint — “Southern Nights”",
+   "body": [
+    "At twenty to five the window over the sink has already gone blue, a deep early blue with the Lagoon going out under it, because the clocks went back last night and the afternoon quits now an hour before anybody agreed to it. The tube light over the stove hums. The Newman stockpot sits on the big burner with its dent turned to the wall, and Lena’s iPod lies in a Delgado coffee mug on the counter, which is how she gets a speaker out of nothing, so that Allen Toussaint comes up out of the mug a little tinny and a long way from home.",
+    {
+     "type": "doc",
+     "title": "Above the stove (laminated)",
+     "text": "THIS KITCHEN IS NOT A RESTAURANT.\n—P. RAMAN, RA (401)\n\nOn a sticky note under it, in Lena’s capitals: IT IS A SOUP KITCHEN, PRIYA. SEE MATTHEW 25."
+    },
+    {
+     "if": "knows_harbor_soup",
+     "text": "It’s chicken and sausage again, thirty bowls for the Harbor Inn night shift: Dulce, Rosario, whoever else is on tonight.",
+     "else": "It’s chicken and sausage again, thirty bowls for somebody she hasn’t named."
+    },
+    "Lena is at the stove in the oatmeal cardigan with the sleeves shoved past her elbows, and Jack is at the cutting board she assigned him, with three yellow onions and the knife she told him was the good one. They have been at it half an hour and talked about nothing that matters: Osei’s two-sentence homily and the boy in the vampire cape who said *Dang* out loud; the Grove, which neither of them has gotten over; Laney, asleep since noon on top of her covers in the mitre. “I put a blanket on the Pope,” Lena says. “She told me she forgives me.”",
+    "Her LG lies face up beside his cutting board. It has buzzed twice since he came down, and twice she has told it “Later” without looking, and gone on stirring.",
+    "Theo comes in at a quarter to five in the navy silk robe, belted, barefoot, his hair arranged by a pillow into something a stylist would charge for. He has the gold tin of Illy from his desk under one arm. He takes a Newman saucepan off the drying rack, fills it at the tap, and sets it on the burner beside Lena’s pot, where it has no business being, and when the water boils he tips in two spoonfuls of espresso and stirs it with the handle of a fork. This is an act of protest, he explains, against the Mr. Coffee by the microwave, whose carafe has a ring baked into it like a tree’s. “That machine has been making the same pot since the first Bush. I won’t be party to it.”",
+    "He strains it through a paper towel into a mug. Then he turns around with the mug in both hands and the steam going up past his face, rested, golden, in a better mood than anybody has a right to at a quarter to five on a Sunday.",
+    "“Somebody took off my shoes in the night,” he says. “Both of them. Unlaced, Costigan, and set side by side on yesterday’s *Tide* like slippers outside a temple. I’ve given it a great deal of thought since about four o’clock, and I’ve decided it was an angel.” He sips. “It’s their busy weekend. All Saints. It’s their Super Bowl.”",
+    {
+     "if": "e12_wall==\"path\"",
+     "text": "Jack, at the cutting board, knows how far Theo came away from the wall last night on his own two feet, and the robe is a good robe, and he lets it be the robe."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“The angel says you’re welcome.”",
+     "tag": "Wit",
+     "set": {
+      "e13_angel": "welcome",
+      "rel.theo.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Theo regards him over the rim, gravely, and with no change of expression takes a clean Delgado mug down off the hook, the one with the chipped handle and the sea lion on it, and pours half his saucepan into it.",
+      "“The angel may have an espresso,” he says, and presents it across the counter with both hands, the way the Magi must have done it if one of them had been from Brentwood."
+     ],
+     "goto": "s01a"
+    },
+    {
+     "text": "“It was me. The laces were wet.”",
+     "tag": "Sincerity",
+     "set": {
+      "e13_angel": "me",
+      "rel.theo.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Theo looks at him over the mug for exactly as long as it takes to decide not to.",
+      "“Then you’re the angel, Costigan,” he says. “It’s a step down for you.” And he drinks his coffee, and asks Lena whether that’s andouille, and Lena asks him what else it would be."
+     ],
+     "goto": "s01a"
+    },
+    {
+     "text": "Let him have the angel.",
+     "tag": "Control",
+     "set": {
+      "e13_angel": "sacrament",
+      "trait.control": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "Jack quarters an onion and says nothing, and Theo, who has never in his life let a silence go to waste, turns to the stove and bows over Lena’s pot with the mug held out of harm’s way.",
+      "“Miss Broussard, your soup is a sacrament.”",
+      "“It’s chicken and sausage.”",
+      "“So was the Last Supper, probably.”",
+      "“It was *not*.” She points the spoon at him and laughs, out loud, with her head down over the pot, and Theo looks as pleased with himself as a man can look in a bathrobe."
+     ],
+     "goto": "s01a"
+    },
+    {
+     "text": "“Theo. About last night —”",
+     "tag": "Candor",
+     "set": {
+      "e13_angel": "wall",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Theo is rinsing his saucepan, and he doesn’t look up from it, and he doesn’t stop. “Nothing that happened when I was eighteen is admissible,” he says pleasantly. “I’m nineteen on Tuesday. I’m starting fresh. I’ve already told my publicist.”",
+      "From the stove, without turning around, Lena says, “Then Laney needs the same deal. There’s a shepherd’s crook in our shower, and I didn’t ask.”",
+      "“Granted,” Theo says. “Retroactive to the Council of Trent.” He sets the saucepan in the rack to drip, and that is the end of last night."
+     ],
+     "goto": "s01a"
+    }
+   ]
+  },
+  "s01a": {
+   "slug": "SUNDAY · 4:52 PM · DELGADO HALL, THE KITCHEN OFF THE FISHBOWL",
+   "body": [
+    "At 4:52 the LG buzzes a third time on the Formica, and the outer screen says JOSIE. Josie is the little sister, thirteen, one of the twins. Lena wipes her hands down the front of the cardigan and opens it.",
+    "It’s a long text. She scrolls it with her thumb. Then there’s another, and she reads that, and then a third, and she reads that too, standing at the stove with the spoon still in the pot and the steam coming up past her. Then she closes the phone and lays it face down on the counter and leaves her hand flat on the back of it, as if it might buzz again and she would rather feel it first. She stands like that. She doesn’t say who it was.",
+    "Theo looks up from his mug, and looks at her hand on the phone, and with great tact takes his saucepan, his tin and his coffee out into the Fishbowl, where somebody has the Yankees on.",
+    "“Salt it for me,” Lena says.",
+    "Jack finds the round blue box behind the oil and salts it, and she doesn’t taste it after him. She watches the pot.",
+    "“It’s All Saints,” she tells the soup. “They do the tombs.”",
+    {
+     "if": "knows_wes_ring",
+     "text": "There’s no reason for it to go where it goes. It goes anyway: a small stone lit from underneath by a phone’s screen, held out to him at three in the morning on a lifeguard tower’s ramp, the band worn thin on an old woman’s hand. Jack puts the knife through the last onion."
+    },
+    "Lena takes her hand off the phone and puts the phone in her cardigan pocket. She says she’ll take the soup down to the Harbor Inn herself tonight. He says it’s thirty bowls; he’ll carry it.",
+    "“I want the bus,” she says.",
+    "She puts the lid on the stockpot and turns the flame down to the lowest blue ring it has. In the coffee mug by the sink the song ends, and the iPod, which she left on repeat, starts it again from the top."
+   ],
+   "next": "s02"
+  },
+  "s02": {
+   "slug": "MONDAY · 9:10 AM · DELGADO HALL, THE LOBBY MAILBOXES",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "All Souls comes up clear and cold, cold for Marisol, which means the bottom corners of the lobby glass are fogged white from the night and the girl at the front desk is wearing a scarf indoors over the mail she’s sorting. Outside, the palms stand dead still in a sky with nothing in it, scrubbed, the hard bright blue of the first real cold. Jack came down in a flannel and is sorry.",
+    {
+     "if": "e12_gina==\"proud\"",
+     "text": "He called Gina after Mass yesterday, the way he said he would. She said proud of you too, somehow in lowercase, and hung up fast."
+    },
+    "His RAZR has a text from Gina, waiting since before nine, sent from her lunch at Ursuline.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "ashley sat next to me in religion. didnt say anything. kelsey either. weird",
+     "time": "8:52 AM"
+    },
+    "His box has a Newman flyer for the Book of the Dead (WRITE THE NAMES OF YOUR BELOVED DEAD · ALL NOVEMBER · THE MARIAN SHRINE), a card for JOHN COSTIGAN offering him credit, and the envelope: block capitals, DANIEL F. COSTIGAN and the number after it, the institution’s return address, a Leavittsburg postmark from Friday. He opens it at the mailboxes.",
+    {
+     "type": "doc",
+     "title": "TRUMBULL CORRECTIONAL INSTITUTION",
+     "text": "PROFESSOR,\nThursday night for Halloween a C.O. did count on our range in a rubber gorilla mask. Nobody laughed. Dead quiet the whole tier like church. Then Reggie lost it and then everybody did, the gorilla too, and he didn’t write up nobody, so that’s the best Halloween I had since I was twelve and you were a Ninja Turtle. The wrong one.\nBrowns 1-7. Pop says they’re gonna fire somebody. They should fire the Browns.\nMa says Idaho writes her back. On stationery with cows on it.\nMa says every church got a book in November. Ma’s getting Nonno a Mass at St. Brigid’s. Put him in that book they got at your church. I can’t get to one. I’d put mine in but I don’t got anybody dead. I got the other kind.\nPush-ups 150.\n—D."
+    },
+    "Jack’s right hand closes on the letter and creases it down the middle. He stands at the mailboxes with it.",
+    {
+     "if": "e9_hey==\"given\"",
+     "text": "Up the margin, sideways, in pencil, squeezed in after the D, the way Danny adds things once he’s signed: ABOUT TIME. WHAT’D SHE SAY BACK."
+    },
+    "The RAZR buzzes in his other hand.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "they fired the gm. dad laughed. first time since june",
+     "time": "9:14 AM"
+    },
+    "He can see it from here: the garage on Glenwood, the space heater ticking, the radio on WKBN, and Frank Costigan on the stool by the Stroh’s fridge with his head back, laughing at the Cleveland Browns the way he used to laugh at everything before June.",
+    "It’s too cold for the flannel. He goes back up four flights for the Carhartt, and Danny’s letter goes into the inside pocket, the one with the button, folded twice. On the way back down he passes the fourth-floor lounge, where the whiteboard has been updated over the weekend in Margot’s square capitals.",
+    {
+     "type": "doc",
+     "title": "The 4th-floor whiteboard",
+     "text": "USEFUL IDIOTS FOR CHRISTIAN NATIONALISM\nCOSTIGAN | BROUSSARD\n…\nHALLOWEEN — AMERICAN GOTHIC (UNPLANNED) · BOTH\nTOTAL — C 7 · B 6"
+    },
+    "The old total has been wiped out with a thumb. In the corner somebody has drawn a pitchfork in pink marker, tines up, with a bow on it. Pink narrows it to one person on four floors."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "danny",
+     "title": "Danny Costigan",
+     "text": "My brother. Trumbull Correctional. Calls me Professor. Ma brought him the good socks. *Brideshead* went to him through Driftwood, margins erased; the C.O. reading it first says it’s about a house. The ocean letter got there; Reggie, from Portsmouth, decided on his own the Pacific smells like money and fish. Lena knows. She asked his name. On the bluff bench she said hi to him and told him she’s going to be defense, and he laughed like he used to. The system cut him off at ‘tell Gina — .’ He wrote the rest down: tell Gina it ain’t hers to carry. He’s got it. On Michaelmas he wrote: Tell Lena hey. I like knowing it. You sound happy out there. Don’t feel bad about it. That’s an order. Lena says hey back. She said it herself. The Saints are four and oh, and she expects him to know that. Third letter, after Columbus Day: the Hopkins got there. He read Ma “Felix Randal” on the phone and she cried; he says he’s telling me so I know he read it, not so I feel bad. The Housman made Reggie cry. Ma told him about Becca. He wants to know if I told Lena hey, or does he have to come out here. I did. He doesn’t know yet. Push-ups: 140. Fourth letter, All Souls: Halloween at Trumbull, a guard in a rubber mask. Ma’s getting Nonno a Mass at St. Brigid’s; he wants me to put Nonno in the book here. He says he’d put his in, but he doesn’t have anybody dead. He has the other kind."
+    },
+    {
+     "kind": "person",
+     "id": "gina",
+     "title": "Gina",
+     "text": "My sister. Fifteen, a sophomore at Ursuline. Texts in lowercase like punctuation costs extra. A girl in religion class called her the class expert on visiting the imprisoned. Dad turned the radio back on. Nonna told the altar society I went to confession. Said Danny’s name back to the girl. The girl looked away first. Then laughed with Kelsey anyway. Gina wants the first part on the record. She wanted to know if the nun was real. Now they’re Facebook friends, and Lena signs her wall posts like letters. Gina found the boyfriend in about four minutes. Didn’t tell Nonna. Ashley Vrabel is going to Halloween as a prisoner. Orange jumpsuit. A tribute, she says. Lena read it once and gave me a line for her. Halloween: went as a nun, obviously. Ashley wore the jumpsuit. Gina said it — visit, not dress up as — and Kelsey laughed at Ashley for once. Ashley says she’s dead Monday. Ashley sat next to her in religion and didn’t say anything. Kelsey either. They fired the GM. Dad laughed. First time since June."
+    },
+    {
+     "kind": "note",
+     "id": "whiteboard",
+     "title": "The whiteboard",
+     "text": "Margot’s, by annexation: USEFUL IDIOTS FOR CHRISTIAN NATIONALISM, COSTIGAN | BROUSSARD. Sully’s made the board: liturgical football, idolatry, my outfit. Margot wasn’t even there when I read it. She didn’t need to be. Now the chastity talk is up there too: both of us, voluntarily. Kenzie Rourke got her own line. Margot thinks she might not be an idiot. Category pending. C 6, B 5. The morning after the wake, under the total: TUESDAY — NO SCORE. (BEREAVEMENT.) October 9th, top of the board: LEIF ERIKSON DAY (OBSERVED). Columbus: see attached. Then: FERRER TOWER · THU 5:00 A.M. · “WHEN THE SAINTS GO MARCHING IN.” Suspects: a Catholic; a different Catholic. Laney added the Holy Ghost. Margot wrote it up for the Tide and didn’t name anybody. Halloween: AMERICAN GOTHIC (UNPLANNED). Both. C 7, B 6. Somebody drew a pitchfork."
+    }
+   ],
+   "next": "s03"
+  },
+  "s03": {
+   "slug": "MONDAY · 1:00 PM · HOLLIS HALL, ROOM 302",
+   "duel": "souls",
+   "set": {
+    "duel.souls.lena": 1
+   },
+   "body": [
+    "The clock over the door of Hollis 302 has a tick you can only hear when twelve freshmen stop talking, and at one o’clock they stop, because Hale is already in his chair. It’s the fourth time this term. The seminar has stopped remarking on it; Yusuf just takes his seat and uncaps his pen, and Caleb, coming in last, looks at the clock, and at Hale, and sits down slowly, suspicious of the whole arrangement. Hale is sober and freshly shaved and enjoying himself before anybody has said a word, and it isn’t yet clear at whose expense. The linen jacket is on the back of his chair.",
+    {
+     "type": "doc",
+     "title": "PHIL 9H — the whiteboard",
+     "text": "ALL SOULS\n“DEATH IS NOTHING TO US” (EPICURUS, *LETTER TO MENOECEUS*)\nNAGEL, “DEATH” (1970)\nARISTOTLE, *NE* I.10–11"
+    },
+    "“The Church prays for the dead today,” Hale says. “The question for the afternoon is whether there is anybody there to receive it.” He turns the marker end over end. “Mr. Costigan won the last one by arguing for leaving. Today he’ll argue there’s nobody left to leave. Epicurus, Mr. Costigan. The dead are beyond harm, and so beyond help. Miss Broussard: that they can be wronged, and therefore helped. You both know my rule.” The thing you least believe. Ten minutes a side, the floor may heckle, and it’s official.",
+    "Jack goes first and gives them Epicurus, because he was told to. The letter to Menoeceus, in the old Hicks translation out of the library Loeb: *Death, therefore, the most awful of evils, is nothing to us, seeing that, when we are, death is not come, and, when death is come, we are not.* Good and evil live in sensation, and death is the end of sensation, so a dead man has nothing left to be harmed with and nobody left to be harmed. Lucretius adds the mirror: nobody mourns the ages before he was born. Where death is, I am not. The flowers and the names and the whole November apparatus are consolations for the people left standing, and that’s no small thing, but they belong to the living. The dead are out of reach of all of it, the bad and the good.",
+    "It’s a clean case. He’s pleased with it for about four seconds.",
+    "Lena has typed notes. She never has notes. She has pushed her sleeves to the elbow before he’s finished his first sentence, and when she starts she starts fast, sharper than a seminar needs, every citation already open at her elbow.",
+    "“Aristotle won’t say it,” she says. “Book one. He asks whether what happens to a man’s children after he’s dead can touch him, and he wants to say no, and he can’t make himself. In Ross’s English, it would be *a very unfriendly doctrine*.” A page turns. “And Nagel. A man betrayed behind his back, ridiculed by the friends he trusted, despised by people who smile at him to his face. He never finds out. He dies happy. He was still harmed, and every one of us at this table knows it.” She looks down the oak at Jack. “A harm doesn’t need a witness, Mr. Costigan. It needs an interest. And interests outlive the people who had them.”"
+   ],
+   "choices": [
+    {
+     "text": "“Where death is, I am not. A harm needs somebody to land on. Name him.”",
+     "tag": "Press",
+     "set": {
+      "duel.souls.rigor": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Hector,” Lena says, without looking anything up. “Book twenty-four. Achilles drags him three times round Patroclus’s tomb every morning for twelve days, and Apollo keeps the body from tearing, and the gods are disgusted. Not because Hector can feel it, Mr. Costigan. Because it’s *Hector*.” She taps the table once, on the word.",
+      "At the head of the table Hale has put his chin in his hand to watch, which is how he applauds."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“If the dead can be wronged, Professor, every eulogy in Ohio is actionable.”",
+     "if": "trait.wit>=36",
+     "tag": "Riposte",
+     "set": {
+      "duel.souls.wit": "+1",
+      "duel.souls.rigor": "+1",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Hale makes a small sound in the back of his nose, dry and short and entirely involuntary, the one noise of pleasure he’ll allow himself all afternoon.",
+      "“In Ohio,” Lena says, “*living* is actionable.”"
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“The betrayed man’s harmed. I’ll give you Nagel.”",
+     "tag": "Concede",
+     "set": {
+      "duel.souls.heart": "+1",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "She takes it without gloating. She doesn’t even mark it. She just moves on to the next page faster than she needs to, as though it cost her something to be handed it and she’d rather not stand there holding it."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“You need the dead to be owed something. You’ve got somebody you think is owed.”",
+     "tag": "Personal",
+     "set": {
+      "duel.souls.rigor": "+1",
+      "e13_souls_personal": true,
+      "rel.lena.trust": "-2",
+      "rel.lena.friction": "+2",
+      "rel.hale.friction": "+1",
+      "resolve.jack": "-1",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "He means the storm. He means a woman named Lucille Guidry and four days of water and heat, and he knows it the second it’s out.",
+      "Lena’s pen stops. “Mr. Costigan,” she says. Nothing else.",
+      "Caleb writes something down. Yusuf looks at the table, at the grain of it, as though it had said something rude."
+     ],
+     "goto": "s03a"
+    }
+   ]
+  },
+  "s03a": {
+   "slug": "MONDAY · 1:22 PM · HOLLIS HALL, ROOM 302",
+   "duel": "souls",
+   "set": {
+    "duel.souls.lena": "+1"
+   },
+   "body": [
+    "Her second move is a woman dying at a window.",
+    "“Ostia,” Lena says. “Augustine’s mother. They’re on their way home to Africa, and she takes a fever, and she knows. And her sons are fretting about where to bury her, because she always wanted to lie next to her husband, and she tells them.” She reads it from the paperback with the Oxford spine. “*Put this body anywhere. Do not let care of it cause you any concern. One thing only I ask of you, that you remember me at the altar of the Lord wherever you may be.*”",
+    "She lets the book close on her finger. Augustine knew better than anybody that the dead feel nothing of their funerals; he wrote a whole treatise saying so, that the pomp is for the comfort of the living. “And he remembered her at the altar anyway. For the rest of his life. What the dead are owed isn’t flowers, Professor. It’s being *asked for*.”",
+    "Then she gets up, which she doesn’t do, takes the marker out of Hale’s tray and writes under his list in her own round capitals: 2 MACC. 12:46. Judas Maccabeus, the battlefield, the dead with the amulets under their tunics, the collection sent up to Jerusalem for a sacrifice. She reads it off the board in the Douay. “*It is therefore a holy and wholesome thought to pray for the dead, that they may be loosed from sins.*” She sits back down with the marker still in her hand.",
+    {
+     "if": "e13_souls_personal",
+     "text": "She says all of it to Hale."
+    },
+    "“We pray for them too,” Yusuf says, from the floor. “We’re not allowed to stop.”",
+    "Caleb has his chair tipped back and his arms folded, and for once there’s no bit coming. “In my dad’s church, when somebody died, they were gone to be with the Lord. Done. Saved, sealed, above our pay grade.” He shrugs. “So they were the only people in the building nobody prayed for.” He says it like a joke, and it doesn’t come out like one, and he looks at the board a while after."
+   ],
+   "choices": [
+    {
+     "text": "“*De cura* — the funeral’s for the living. Your own witness says so.”",
+     "tag": "Press",
+     "set": {
+      "duel.souls.rigor": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“The *funeral*,” Lena says. “Not the altar.” She doesn’t raise her voice. She doesn’t need to; the distinction does it for her.",
+      "Hale draws a short line on his roster beside her name, and then, after consideration, a short line beside Jack’s."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "“Then they can’t be wronged. *We* can be wrong about them. That’s what the book’s for.”",
+     "tag": "Reframe",
+     "set": {
+      "duel.souls.rigor": "+1",
+      "duel.souls.heart": "+1",
+      "rel.lena.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "The book at St. Brendan’s has been in the bulletin all week, and everybody at this table who goes there knows which book he means.",
+      "Lena looks at him. Then she looks at her notes. When she goes on she goes on a little less sharp, the edge off it, and he can’t tell if he’s won something or been let in."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "“Then remember her.”",
+     "tag": "Concede",
+     "set": {
+      "duel.souls.heart": "+1",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "She doesn’t answer it. She turns the page, and when she starts on her third move her voice has come down, low enough that Yusuf leans in to hear it."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "“That was cheap. Your grandmother isn’t a premise.”",
+     "if": "e13_souls_personal",
+     "tag": "Apologize",
+     "set": {
+      "duel.souls.heart": "+1",
+      "e13_souls_apology": true,
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“No,” Lena says. “She isn’t.”",
+      "The point stays where it fell, on her side of the table."
+     ],
+     "goto": "s03b"
+    }
+   ]
+  },
+  "s03b": {
+   "slug": "MONDAY · 1:41 PM · HOLLIS HALL, ROOM 302",
+   "duel": "souls",
+   "set": {
+    "duel.souls.lena": "+1"
+   },
+   "body": [
+    "Her third move isn’t in the notes. She turns them over.",
+    "“They gave my mother her medal back in a plastic bag in February,” Lena says. “If the dead can’t be wronged, then nothing anybody did that week was wrong — and I knew her, and I won’t sit in Hollis Hall and say so.”",
+    "Her hands are on the table, one on top of the other. She doesn’t touch anything.",
+    "Hollis 302 goes quiet the way rooms do when somebody has put something real on the table in front of strangers. The clock over the door ticks. Yusuf has stopped writing. Hale doesn’t say anything. Outside the sea window a gull comes down on the cloister tiles, walks to the end of them, thinks better of it and goes, and in here it is still Jack’s turn."
+   ],
+   "choices": [
+    {
+     "text": "“Then it’s the living who were wronged. Your mother. You. The dead are out of it.”",
+     "tag": "Press",
+     "set": {
+      "duel.souls.rigor": "+1",
+      "duel.souls.lena": "+1",
+      "rel.lena.friction": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“That’s *worse*, Costigan,” she says, and it lands, and it’s hers.",
+      "Jack’s right hand is on the table. It stays there."
+     ],
+     "goto": "s03v"
+    },
+    {
+     "text": "“She was wronged.”",
+     "tag": "Concede",
+     "set": {
+      "duel.souls.heart": "+1",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Lena nods, once, and is done, and squares her notes against the edge of the oak."
+     ],
+     "goto": "s03v"
+    },
+    {
+     "text": "“Epicurus never met a Cajun grandmother.”",
+     "if": "trait.wit>=36",
+     "tag": "Riposte",
+     "set": {
+      "duel.souls.wit": "+1",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "It gets out of her before she can stop it, one hard bark of a laugh through her nose, and she claps the back of her wrist over her mouth and glares at him over it, furious, with her eyes wet.",
+      "“She’d have *fed* him, Costigan,” she says, when she can. “And then she’d have won.”"
+     ],
+     "goto": "s03v"
+    }
+   ]
+  },
+  "s03v": {
+   "slug": "MONDAY · 2:12 PM · HOLLIS HALL, ROOM 302",
+   "duel": "souls",
+   "body": [
+    "The floor gets its half hour, the swerve and the atoms and whether Lucretius was a happy man, and at twelve past two Hale caps his marker and gives his decision.",
+    {
+     "if": "e13_souls_personal && !e13_souls_apology",
+     "text": "“Miss Broussard,” Hale says. “On points and on manners.” Five–two. Lena packs her notes square into her tote and does not look at Jack. She is the first one standing."
+    },
+    {
+     "if": "e13_souls_personal && e13_souls_apology",
+     "text": "“An apology isn’t an argument, Mr. Costigan,” Hale says. “It’s better. It still isn’t one. Miss Broussard.” Five–two. When the room breaks Jack is nearest the door, and holds it, and Lena lets him."
+    },
+    {
+     "if": "!e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart>=2",
+     "text": "“Miss Broussard,” Hale says, “on Monica.” Five–two. Then Lena, across the table, in front of all of them, does a thing she has never done: she gives him the last word. “Go on, Costigan. Something Epicurean.” He has one. The Romans cut it on their gravestones so often they abbreviated it, *non fui, fui, non sum, non curo* — I was not, I was, I am not, I don’t care. He keeps it. “You have it,” he says."
+    },
+    {
+     "if": "!e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart<=1 && duel.souls.rigor<=2",
+     "text": "“Miss Broussard,” Hale says, “on the plastic bag. Mr. Costigan, Epicurus would be proud of you. He never finished anything either.” Five–two. Caleb, under his breath: “Same.”"
+    },
+    {
+     "if": "!e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart<=1 && duel.souls.rigor>=3",
+     "text": "Hale considers the pair of them. “Mr. Costigan argued Epicurus like a man who has never lost anyone. Miss Broussard argued like a woman who has. I’m giving it to the bereaved.” Five–two. Jack takes his right hand off the table and puts it in his lap."
+    },
+    {
+     "if": "!e13_souls_personal && duel.souls.wit>=2",
+     "text": "“No decision,” Hale says. “Well-argued and badly behaved, the pair of you.” Five–one, and one no decision. Caleb’s pen stops in the middle of whatever it was writing."
+    },
+    "Then, packing his satchel, not to the room, Hale says: “They can be wronged, Miss Broussard. That’s the trouble with them. You can’t apologize to them.”",
+    "He looks at the window. Then chairs scrape, and the room stands up.",
+    "Lena is first out of 302 and fast down the corridor, her tote on her shoulder, and at the head of the stairs she stops and looks at her hand. The whiteboard marker is still in it, capped. She turns around and comes back the length of the corridor, past Jack in the doorway, sets it in the tray under the board, and goes out again without a word to anybody and down the stairs."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "e13_souls_personal && !e13_souls_apology",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to. Unofficial, Seacliff Road, Halloween, the hour that happened twice, no referee — on grace: hers. She wants to be asked. Official, Hale’s seminar, All Souls — whether the dead can be wronged: hers, by forfeit. I said a thing about her grandmother I can’t take back. Five–two."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "e13_souls_personal && e13_souls_apology",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to. Unofficial, Seacliff Road, Halloween, the hour that happened twice, no referee — on grace: hers. She wants to be asked. Official, Hale’s seminar, All Souls — whether the dead can be wronged: hers, by forfeit. I took it back. Hale says an apology’s better than an argument and still isn’t one. Five–two."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart>=2 || !e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart<=1 && duel.souls.rigor<=2",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to. Unofficial, Seacliff Road, Halloween, the hour that happened twice, no referee — on grace: hers. She wants to be asked. Official, Hale’s seminar, All Souls — whether the dead can be wronged: hers. Monica asked to be remembered at the altar, and she was. Five–two."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e13_souls_personal && duel.souls.wit<=1 && duel.souls.heart<=1 && duel.souls.rigor>=3",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to. Unofficial, Seacliff Road, Halloween, the hour that happened twice, no referee — on grace: hers. She wants to be asked. Official, Hale’s seminar, All Souls — whether the dead can be wronged: hers. Hale gave it to the bereaved. Five–two."
+    },
+    {
+     "kind": "note",
+     "id": "record",
+     "title": "Duels with Lena",
+     "if": "!e13_souls_personal && duel.souls.wit>=2",
+     "text": "Two–one after Labor Day; she paid her Sunday. Three–one after moral luck: mine; she said I argued it like it was mine. Now four–one. Friendship: mine, arguing both sides. She said she’d never forgive me. Wednesday she said she forgives me. I’d rather she hadn’t. Unofficial, the laundry room, midnight on her feast, no referee — the Little Way: Thérèse, on points. Unofficial, the Delgado kitchen, a Sunday, no referee — the rich young man: nobody won. She said: He looked at him and loved him. The roux came out perfect. Unofficial, the Brick, four in the morning, no referee — on the heart: nobody won. Official, Hale’s seminar, the day after the Anglicans — on leaving: mine. Five–one. Hale says I argued for leaving like a man who’s never been allowed to. Unofficial, Seacliff Road, Halloween, the hour that happened twice, no referee — on grace: hers. She wants to be asked. Official, Hale’s seminar, All Souls — whether the dead can be wronged: no decision. Well-argued and badly behaved, the pair of us. Five–one–one."
+    }
+   ],
+   "next": "s04"
+  }
+ }
+}

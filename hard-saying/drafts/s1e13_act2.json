@@ -1,0 +1,330 @@
+{
+ "scenes": {
+  "s04": {
+   "slug": "MONDAY · 4:20 PM · ST. BRENDAN’S, THE MARIAN SHRINE",
+   "music": "The St. Brendan’s Choir — “In Paradisum” (Fauré, *Requiem*)",
+   "set": {
+    "resolve.lena": 6,
+    "resolve.jack": "+1",
+    "soul.grace": "+1",
+    "knows_lena_nora_host": true
+   },
+   "body": [
+    "At twenty past four the sun is low enough to come in sideways through the blue glass on the west wall, and it lies down the side aisle of St. Brendan’s in long slabs, blue where the glass is and gold where the lead is, with the dust standing still in it. Up in the loft the choir is rehearsing for the 5:15, a dozen voices and the organ, and every few bars the organist stops them all with one big gray hand and the foghorn voice — “Altos. *Paradisum*. Not *paradise-um*. We are not selling timeshares.” — and they go back to the top. *In paradisum deducant te angeli.* May the angels lead you into paradise.",
+    "The Book of the Dead stands on a wooden lectern beside the Marian shrine: a red cloth-bound ledger as big as a parish register, open to the middle, with Mrs. Fitch’s ballpoint tied to the lectern on a length of white cord and the cord taped down with masking tape, in case anybody in a Newman Center was thinking of stealing a pen. Beside it is a stack of printed cards, ETERNAL REST GRANT UNTO THEM, O LORD, AND LET PERPETUAL LIGHT SHINE UPON THEM on the front and the November Mass times on the back. By twenty past four on the first day the pages are already crowded: ballpoint and felt-tip, a child’s capitals, an old woman’s cursive leaning into a headwind, a whole family on one line held together with ampersands.",
+    {
+     "type": "doc",
+     "title": "St. Brendan’s — the Book of the Dead",
+     "text": "ALL SOULS · NOVEMBER 2009\nThe names written here are remembered at every Mass this month.\n\nMargaret “Peg” Dwyer\nAbuelita Rosa & Abuelo Chuy Ortega\nFr. Patrick Kelleher, S.J.\nCapt. Joe Silva, F/V *Marisol Rose*, lost at sea 1981\nThe deceased of the Haddad family\nBuster (dog) — *see me.* D.F."
+    },
+    "Jack has come to do what Danny asked. The letter is in the Carhartt’s inside pocket, folded in three the way it came.",
+    {
+     "if": "e12_candle_q==\"brother\"",
+     "text": "The votive rack is beside the lectern, three tiers of red glass in the blue light. Yesterday Laney lit one at the end of Lena’s row and asked him whose his had been, at the monks, and he told her."
+    },
+    "Lena is already here. She’s kneeling at the rail in front of the shrine in the oatmeal cardigan, no mantilla on a Monday, the black and gold of a Saints shirt showing at the neck, and if she heard the door she doesn’t turn for it. When she gets up she lights a votive from the box of matches and shakes the match out. Then she takes one of the printed cards off the stack and puts it in her cardigan pocket, and picks up the pen.",
+    "She writes *Lucille Guidry*. Jack knows the name. Under it, in the same hand, without stopping, she writes *Nora Calloway*.",
+    "He reads it upside down. He knows that one three ways: a brass plate under the candles eight feet from where he’s standing, a banker’s box in Priya’s room, a white cross at the end of a path. Here it’s ballpoint on a ruled line. Mrs. Fitch’s pen skips on the *y*, and Lena goes back over it.",
+    "She sees him see it. “She was my host at Preview Weekend,” she says. “In April. Two days. She showed me the campus.” She lets go of the pen, and it swings out on its cord and knocks twice against the lectern and hangs.",
+    "Fr. Osei comes down out of the sanctuary with a stack of missalettes against his chest and a white stole over one shoulder, and takes the step a little more carefully than he did in September. He doesn’t stop. “Write them all,” he says, going past the book. “He has a large book and a long memory.” The sacristy door closes behind him.",
+    "In the loft the altos get *paradisum* right. Lena holds the pen out to Jack by its cord."
+   ],
+   "choices": [
+    {
+     "text": "Write *Antonio Rinaldi*.",
+     "tag": "Sincerity",
+     "set": {
+      "e13_book": "nonno",
+      "trait.sincerity": "+1"
+     },
+     "key": "On All Souls you wrote your grandfather’s name in the Book of the Dead.",
+     "response": [
+      "He writes it on the line under hers. Nonno carried a lunch bucket into the Campbell Works for Youngstown Sheet & Tube until Black Monday, 1977, and by every account at Nonna’s table he never really set it down after. Jack writes him in the Palmer hand the sisters at St. Brigid’s school put into him one loop at a time, the capital *R* with its little kick.",
+      "Across the lectern Lena reads it upside down, the way he read hers."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "text": "Write *Antonio Rinaldi* — and start another line.",
+     "tag": "Candor",
+     "set": {
+      "e13_book": "blank",
+      "soul.honesty": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "On All Souls you wrote your grandfather’s name in the Book of the Dead, and started another line, and left it.",
+     "response": [
+      "He writes *Antonio Rinaldi*. Then the pen goes down to the next line, and he lets it, and it stops there at the end of the cord’s slack. The point rests on the paper long enough to leave a dot, small and blue at the margin of an empty line, and he lifts it off.",
+      "Lena sees the pen stop. She doesn’t ask."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "text": "Write *Antonio Rinaldi*, and light a candle beside hers instead of a word.",
+     "tag": "Control",
+     "set": {
+      "e13_book": "candle",
+      "soul.restraint": "+1",
+      "trait.control": "+1"
+     },
+     "key": "On All Souls you wrote your grandfather’s name in the Book of the Dead and lit a candle beside hers.",
+     "response": [
+      "He writes *Antonio Rinaldi* and lets the pen go on its cord. Then he takes a match from the box and lights the empty glass next to hers. The two flames stand side by side in the blue rack, hers a few minutes taller.",
+      "Lena looks at the candles, not at him."
+     ],
+     "goto": "s04a"
+    }
+   ]
+  },
+  "s04a": {
+   "slug": "MONDAY · 4:35 PM · ST. BRENDAN’S, THE MARIAN SHRINE",
+   "set": {
+    "knows_julian": true
+   },
+   "body": [
+    "The side door opens and lets in the cold off the courtyard, and a guitar case comes through it first.",
+    "Jack knows him before he knows from where: the guy on the Lighthouse stairs the first night, with the guitar; the stool at Bastille. Julian. Medium height, short dark hair, warm brown skin, a gray cardigan cut for somebody broader in the shoulders, a cheap steel watch. He comes up the side aisle with a visitor’s care, reading the place as he goes, and leans the case against the end of the front pew, and goes to the book, and finds the line he came to write already written in a hand that isn’t his.",
+    "He picks up the pen anyway and writes it again underneath — *Nora Calloway* — in small square capitals, the *N* made in one stroke. “Because she would have,” he says. He says it to the page. Then he sees that Lena is standing right there with her hands in her cardigan pockets, and he says it to her. “She prayed for people out of the newspaper. Strangers. Mostly the obituaries.”",
+    "“She would have,” Lena says.",
+    "She reads his capitals under her cursive. “You knew her.”",
+    "“Freshman year.” Julian looks at the two lines of the one name, his and hers. “We sang together. She had the high part. I had the guitar and a lot of opinions about the guitar.” And the song Jack walked out of in the second chorus, one Thursday in September, turns out to have had somebody in it the whole time.",
+    "“She was my host,” Lena says. “Preview Weekend.”",
+    "Julian looks at her then, properly, the way he looked at the page: the vowels, the cardigan, the Saints shirt. “She mentioned you,” he says.",
+    "He doesn’t ask anything. He waits, in case she wants to say something more, and when she doesn’t, he takes that for an answer. Lena’s hand has gone up to the medal at her collarbone.",
+    "“I’m glad somebody from that weekend came,” Julian says, and from his face he means exactly that and nothing else.",
+    "Then he turns to Jack and puts out his hand. “Julian.” His grip is dry and brief, with calluses across the fingertips. “You left in the second chorus.”",
+    "“So did she,” Jack says.",
+    "“Everybody does.” Julian seems to find this interesting rather than sad, and not especially about him. “I should cut it.” He picks the case up by its handle and lets it hang against his leg. “I’m doing something new Thursday. Not that one.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "julian",
+     "title": "Julian Park-Ellis",
+     "text": "Julian Park-Ellis. The guitar guy from the Lighthouse stairs. Plays Bastille Thursdays. Wrote a song called “Fresno.” Plays it once a month. All Souls: came to St. Brendan’s to write Nora Calloway’s name in the book. She was his friend. They sang together. He saw us leave in the second chorus. Something new Thursday. A handshake you’d trust with anything."
+    },
+    {
+     "kind": "person",
+     "id": "nora",
+     "title": "Nora Calloway",
+     "text": "The name on the plaque. Priya’s freshman roommate, Delgado 222. From Selma — raisins. Sang soprano; sang the Memorare in the shower. Philosophy. Fell at the Point at the end of April. September 8th would have been her twentieth birthday. Facebook won’t stop suggesting her. Her things are in a box in Priya’s room now. On the inside cover of her journal she promised whoever found it a song. All Souls: Lena wrote her name in the book. Nora was her host at Preview Weekend, in April. Julian wrote it too."
+    },
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“It’s a good song. I just couldn’t stay for it.”",
+     "tag": "Sincerity",
+     "set": {
+      "e13_julian": "song",
+      "rel.julian.warmth": "+1",
+      "rel.julian.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He gives his name with it, and Julian tips his head at the line the way you’d tip it at a chord you hadn’t thought to try. “That’s the nicest review it’s had,” he says. He means that too.",
+      "He nods at the black and gold under Lena’s cardigan. “I don’t really —” he says, apologetic, “— football.”",
+      "“Nobody’s asking you to, Julian,” Lena says.",
+      "He smiles at that and goes out the side door with the case, into what’s left of the gold, and the door eases shut on its closer. Lena watches him go. Jack watches her do it, about as long as she does. Up in the loft the organ starts *In Paradisum* again from the top."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“I’ll stay to the end next time.”",
+     "tag": "Charm",
+     "set": {
+      "e13_julian": "stay",
+      "rel.julian.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "He gives his name with it, and Julian says it back once — “Jack” — to keep it. “I’ll hold you to that.”",
+      "He nods at the black and gold under Lena’s cardigan. “I don’t really —” he says, apologetic, “— football.”",
+      "“Nobody’s asking you to, Julian,” Lena says.",
+      "He smiles at that and goes out the side door with the case, into what’s left of the gold, and the door eases shut on its closer. Lena watches him go. Jack watches her do it, about as long as she does. Up in the loft the organ starts *In Paradisum* again from the top."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“Jack. Delgado.” The handshake, and nothing else.",
+     "tag": "Control",
+     "set": {
+      "e13_julian": "delgado",
+      "rel.julian.trust": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Julian nods as if Delgado were a key he could play in. “Delgado,” he says. “Nora lived there. Freshman year.”",
+      "Two twenty-two; Priya’s old room. “I know,” Jack says. At the rail, Lena hears it.",
+      "Julian nods at the black and gold under her cardigan. “I don’t really —” he says, apologetic, “— football.”",
+      "“Nobody’s asking you to, Julian,” Lena says.",
+      "He smiles at that and goes out the side door with the case, into what’s left of the gold, and the door eases shut on its closer. Lena watches him go. Jack watches her do it, about as long as she does. Up in the loft the organ starts *In Paradisum* again from the top."
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s05": {
+   "slug": "MONDAY · 5:30 PM · SULLY’S, MISSION STREET",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "Sully’s on a Monday night is a roar with a brass bell hung in the middle of it. The Superdome is on the big projection screen over the pool table and on four of the five tube TVs along the bar; the fifth has the World Series, and the World Series has the far end of the bar to itself, three men over fifty in Phillies caps keeping their joy down out of respect for the room. The owner stands under the ship’s bell, big and pink in his Sully’s polo, with the rope wrapped once around his fist.",
+    "Dale has saved them the booth. He’s on his stool at the end of the bar in the Barry Sanders jersey, his Lions one and six and freshly beaten by the Rams, and when Lena comes in he lifts his beer to her and she points at him, which is the entire exchange, every week.",
+    "She’s in the black WHO DAT shirt under the oatmeal cardigan, and she didn’t bring the paint; no one gets a fleur-de-lis tonight, and no one asks for one. Kevin drove, and has fries and a water. Laney is in gold. Margot is in black at the open end of the booth, “for the anthropology,” with a Diet Coke she appears to be running as a control.",
+    "Theo has been studying. The first time the Saints score and the owner rings the bell, the bar does the Who Dat, and Theo does it with them, every syllable correct and every vowel from Brentwood: *Who dat say dey gonna beat dem Saints*, in an accent that has ordered a great many cortados. At the end of the bar Dale winces. “I had a dialect coach,” Theo tells the booth. “YouTube.” Then he buys the bar a round of root beer. “It’s a school night,” he explains to the bartender, “and I’m told I’m a role model.”",
+    "“It’s a responsorial psalm,” Margot says, watching the bar answer itself. “With a point spread.”",
+    "By the half he has bet Dale a root beer on the Phillies, and Dale has taken New York out of some Michigan grievance he declines to explain. On the fifth TV Chase Utley hits his second home run of the night, the Phillies hang on to win it eight to six, and a root beer comes sliding down the bar to Theo with no comment attached.",
+    "Brees throws for three hundred and eight; the graphic says so twice. Pierre Thomas scores, and later scores again, and the bell goes every time, and the bar does the Who Dat, and Lena shouts it with everybody. Kevin watches Michael Turner run for a hundred and fifty-one yards against the Saints defense with a medical man’s detachment. “That’s not a running back,” he says. “That’s a hemorrhage.”",
+    "Then Elam kicks a field goal to make it thirty-five to twenty-seven with twenty-eight seconds left, and Atlanta lines up to kick it short. The bar is on its feet, shouting at the screen. Lena is sitting with both hands around her Abita root beer, not shouting. Dale leans over from his stool, just to Jack. “Your girl’s quiet.”",
+    "Jack doesn’t correct him.",
+    "The kick goes short, and when the pile comes apart a Falcon is holding the ball. Sully’s goes silent all the way down to the Phillies caps. Laney takes Kevin’s pen out of his shirt pocket, writes on two cocktail napkins and holds them up over the table like a judge at a figure-skating final. “Poise: zero,” she says. “*Hands*: zero.” Kevin takes his pen back and holds up a third napkin for the Falcons’ kicker: 9. “On technical merit.”",
+    "Twenty-eight seconds. Matt Ryan drops back and throws, and Darren Sharper is under it with three seconds on the clock, and he has it, and Sully’s comes apart. Seven and oh. The owner unwinds the rope from his fist and holds it out across the bar to Lena, and she stands up on the brass rail and rings the bell herself, hard, five times, six, and screams with everybody — *WHO DAT* — with Laney hanging off her neck and Theo ordering another round of root beer for people who haven’t finished the first.",
+    "Then she sits down and looks at her phone. It’s been buzzing on the table under the napkins since the interception, and it goes on buzzing, and every time it lights, Jack can read the outer screen upside down.",
+    {
+     "if": "e11_comeback==\"whodat\"",
+     "text": "LUC. REMY. TESS. JOSIE. JUDE. LUC again. DADDY.",
+     "else": "LUC. REMY. TESS. JOSIE. JUDE. LUC again."
+    },
+    "No WES. Lena watches it until it stops, and then she turns it over."
+   ],
+   "choices": [
+    {
+     "text": "Start the Who Dat yourself, standing on the booth.",
+     "tag": "Reckless",
+     "set": {
+      "e13_whodat": "booth",
+      "rel.lena.warmth": "+1",
+      "trait.reckless": "+1",
+      "soul.restraint": "-1"
+     },
+     "response": [
+      "He climbs up onto the booth seat in his boots. “WHO DAT —” and the bar, which has been waiting all night for somebody to be an idiot first, comes in under him like a congregation: *SAY DEY GONNA BEAT DEM SAINTS*. Theo arrives a half-beat late in perfect Brentwood. Lena laughs, out loud, up at him, and comes in on the second line with everybody — and stops before the end, and sits with her mouth closed while the bar finishes it without her. The owner rings the bell anyway, on general principle.",
+      "They walk to the Odyssey under the Mission Street palms with somebody outside the Wharf Rat still shouting WHO DAT at the traffic. Halfway down the block Lena says, “I’m going to call him when we get back,” and nothing else.",
+      "At the van door Laney catches her sleeve. “Lena.”",
+      "“Go on, cher,” Lena says. “I’m fine.” She gets in first and takes the back row."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "Say nothing. Stand where she can see you.",
+     "tag": "Sincerity",
+     "set": {
+      "e13_whodat": "stand",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He gets up for napkins. At the bar he takes a stack out of the dispenser, and when he comes back he doesn’t sit; he stands at the end of the booth with the napkins in his hand, where she’d see him if she looked up. On the next commercial she looks up. She finds him there and goes on looking a moment, and then she takes one napkin off the top of the stack and folds it into a small square and keeps it.",
+      "They walk to the Odyssey under the Mission Street palms with somebody outside the Wharf Rat still shouting WHO DAT at the traffic. Halfway down the block Lena says, “I’m going to call him when we get back,” and nothing else.",
+      "At the van door Laney catches her sleeve. “Lena.”",
+      "“Go on, cher,” Lena says. “I’m fine.” She gets in first and takes the back row."
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "“He’s probably on Bourbon with a tuba.”",
+     "tag": "Wit",
+     "set": {
+      "e13_whodat": "tuba",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Lena looks at the back of the phone. “Probably,” she says. She smiles at it, which is generous of her.",
+      "They walk to the Odyssey under the Mission Street palms with somebody outside the Wharf Rat still shouting WHO DAT at the traffic. Halfway down the block Lena says, “I’m going to call him when we get back,” and nothing else.",
+      "At the van door Laney catches her sleeve. “Lena.”",
+      "“Go on, cher,” Lena says. “I’m fine.” She gets in first and takes the back row."
+     ],
+     "goto": "s06"
+    }
+   ]
+  },
+  "s08": {
+   "slug": "TUESDAY · 11:40 AM · DELGADO HALL, ROOM 412",
+   "music": "Owl City — “Fireflies”",
+   "body": [
+    "He came in at twenty-five past six, and Theo was already up — dressed, shaved, at his desk with the lamp on, a man who had decided to meet his birthday at the door. “Nineteen, Costigan,” Theo said. “Where have you been?”",
+    "“The stairs.” Theo looked at him once and didn’t ask. “Happy birthday,” Jack said, from the bed, already most of the way under.",
+    {
+     "if": "e3_sl==\"poppy\"",
+     "text": "At seven the iPhone rang and Theo had it before the second ring. “Pops.” It was the voice Jack had heard once before, in a car with no back seat on the 101, the one he has never heard Theo use on anybody else. Jack fell asleep to it.",
+     "else": "At seven the iPhone rang and Theo had it before the second ring. “Pops.” It was a voice Jack had never heard him use on anybody else. Jack fell asleep to it."
+    },
+    "He wakes at twenty to twelve into an operation. Laney is cross-legged on the Aerobed under the window in her PI LAM LITTLE shirt and sunglasses, a pink highlighter in her fist and her BlackBerry face up on the blanket singing about fireflies. Theo is at his desk with a calligraphy pen and a fan of cream place cards with a little blue anchor printed in one corner, the Harbor Inn’s own, which he has evidently decided were a first draft. The mini-fridge is standing open. Inside it, between Theo’s Pellegrino and Laney’s yogurt, a bottle of Martinelli’s sparkling cider is wearing a gold bow.",
+    "When Jack sits up, Theo’s forearm sweeps the place cards face down in one motion. They’re quick. Jack has been awake for eight seconds, and he’s quicker. Upside down, side by side at the end of the fan, in Theo’s best hand:",
+    {
+     "type": "doc",
+     "title": "Two place cards, Theo’s calligraphy",
+     "text": "COSTIGAN · BROUSSARD"
+    },
+    "“Don’t look at the fridge,” Laney says, without lowering the highlighter. “It’s resting.” Then she caps the highlighter. “She told me at six-thirty. Then she went to sleep. I put a towel under the door so the light wouldn’t —” She doesn’t finish it. “I told this one at nine. He went to *Vons*.”",
+    "“Real champagne is for when it’s *official*, Theodore,” she adds, to the room.",
+    "Theo doesn’t look up from the card he’s lettering. “Then why is there a bow on it.”",
+    "“The *bow*,” Laney says, “is for *hope*.”",
+    "Kevin is in the doorway in his navy quarter-zip with his backpack on one shoulder, on his way to lab, and has heard all of it. He looks at the fridge, and the bow, and the fan of face-down cards. “Respectfully,” he says, “her boyfriend broke up with her thirteen hours ago.”",
+    "“Thirteen and a half,” Theo says, writing.",
+    "“You’re *counting*.” Kevin hitches the backpack higher and goes to lab.",
+    "Jack sits on the edge of the bed with his feet on the cold linoleum and looks at the backs of the cards; he could reach across and turn two of them over and slide one down to the far end of the desk, and that would be a thing he had said, and at six this morning he decided not to say anything for a while, so he leaves them where they are.",
+    "Theo’s present has been in Jack’s desk since Friday."
+   ],
+   "choices": [
+    {
+     "text": "A used *Great Gatsby* from Driftwood, inscribed *old sport*.",
+     "tag": "Wit",
+     "set": {
+      "e13_gift": "gatsby",
+      "rel.theo.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "It’s the paperback with the eyes on the cover, Driftwood’s two-dollar sticker still on the back and one of the cats’ hairs still in the spine. Theo opens it to the flyleaf, where Jack has written two words in pencil, and reads them, and shuts it.",
+      "“You’ve given me my own costume,” he says. “That’s either love or a review.” He stands it upright on the desk, cover out, like a statuette. Then he uncaps the pen, and on a fresh card, in his very best hand, he writes BECCA LINDELL, and sets it beside CAROLINE ASHBY VANCE. On the Aerobed Laney reaches over and turns the song up."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "Your own copy of *The Moviegoer*, margins and all.",
+     "tag": "Sincerity",
+     "cue": "Theo will remember that.",
+     "set": {
+      "e13_gift": "moviegoer",
+      "rel.theo.warmth": "+2",
+      "rel.theo.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "For Theo’s nineteenth you gave him your own copy of *The Moviegoer*, margins and all.",
+     "response": [
+      "It comes out of the milk crate with its spine cracked white and the three-dollar library-sale sticker from Youngstown still on it. Jack slides the bookmark out first — Hale’s postcard, the one that got him to California — and puts it in his desk drawer, and hands Theo the rest, every margin of it.",
+      "Theo opens it in the middle, to a page where Jack has written NO in capitals beside Binx Bolling, and closes it. “You never lend your books.”",
+      "“I’m not lending it.”",
+      "Theo looks at him for a second. Then he gets up and puts it in the gray camera bag on the corner of his desk, and zips the bag, and sits back down, and on a fresh card, in his very best hand, he writes BECCA LINDELL and sets it beside CAROLINE ASHBY VANCE. On the Aerobed Laney reaches over and turns the song up."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "A whole shoofly pie from the Anchor, rated by Gloria on the box lid.",
+     "tag": "Charm",
+     "set": {
+      "e13_gift": "pie",
+      "rel.theo.warmth": "+1",
+      "rel.laney.warmth": "+1",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "It comes out of the bottom drawer in a white bakery box tied with red-and-white twine. Gloria boxed it Friday at the end of his shift and swore molasses keeps till Advent. On the lid, in her black Sharpie: BAKED ALASKA (DAY-OLD).",
+      "“She’s never even seen me,” Theo says.",
+      "“She’s heard you.”",
+      "Theo holds the lid out at arm’s length, like a review he intends to have framed, and decides to be pleased about it. At noon Laney eats a slice straight off the box with her fingers, sitting on the Aerobed with the sunglasses pushed up into her hair, and pronounces it “sinful, in a *Baptist* way,” while Theo, on a fresh card, in his very best hand, writes BECCA LINDELL and sets it beside CAROLINE ASHBY VANCE. Laney licks her thumb and turns the song up."
+     ],
+     "goto": "s09"
+    }
+   ]
+  }
+ }
+}
