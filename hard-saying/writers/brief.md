@@ -586,3 +586,22 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   once the magnetic girl appeared. Jack owns his side too (the magnetic girl, his hurt that she didn't wait). The proxy
   war gets named and laughed at, painfully. This is the payoff of the misreading chain, said without letting go of each
   other, before Lena pulls away. (Fit to their voices; not verbatim.)
+- **After they get together: the show's shift (player directive).** The plot turns from will-they/won't-they to
+  **the mystery beats**, **the intrusions of normal relationship life, college and family**, **the effects of real-world
+  events**, and **the growth of their relationship**. The story shifts from *them finding each other* to *them
+  learning each other in the world and growing together with everything else going on around them*. (Restraint, the
+  dangerous night, the proposal and the wedding remain the relationship spine across sophomore and junior years.)
+- **"The conversation" (late Spring 2010, S2; player's design).** Late in the spring semester **Lena brings it up**:
+  she feels incredibly vulnerable saying it first, on her own, but she thinks it's really important that they talk
+  about what they want for each other (marriage, kids, everything), because she's so happy and so loved with him and
+  can't bear finding out too late something they should have talked about. **She stresses she's only asking for a
+  conversation right now**, and she's scared enough of that; in fact **he'd better not do anything else yet or she'll
+  tell his mother on him.** Jack is taken aback. They have a **deep, wide-ranging conversation**:
+  - **the long-awaited marital submission / Ephesians 5 discussion** (THIS is where it lands, superseding the earlier
+    "junior year" placement; all the brief's requirements for it still apply: Eph 5:21–33, mutual subjection, *Mulieris
+    Dignitatem*, *Casti Connubii*, headship as service, both sides intelligent and personal, their family wounds);
+  - **marriage** itself; **kids** (how many, always open to life per the Catechism; how to raise them); **contraception
+    and NFP**; what they'd each want to do with their lives; **where** they'd want those lives to be.
+  It's scary and wonderful. **It's not perfect agreement by any stretch**, but **they agree on what matters**. Afterward
+  **Jack just holds her** while she's relieved but still shaking. (A centerpiece two-hander; fit to their voices.)
+  The comic Ephesians-avoidance running bit pays off here.
