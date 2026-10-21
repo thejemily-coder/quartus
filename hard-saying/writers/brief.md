@@ -746,3 +746,19 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     that his roommate was being extremely odd, even for him. **The larger part of that conversation is how Jack learns
     that Theo knows Skye** (childhood friends) **and suspects them.** The meeting confirmed Theo's suspicions: **Theo
     and Laney return from Christmas break well-prepared** for their planning (alliance ops ready for Season 2).
+- **Open questions resolved (player).**
+  - **Lena's reaction when Jack ends it with Becca (pre-Thanksgiving): quiet devastation.** She says the right
+    supportive things, then goes back to her room. Jack sees nothing; Laney sees everything. It confirms her misreading:
+    he waited until she was taken.
+  - **Jack and Skye's first conversation: a book.** She's reading something for a role (e.g., Flannery O'Connor or
+    Dostoevsky) and has it wrong. He corrects her without knowing who she is, and she loves that he doesn't care.
+  - **Lena and Julian started simply: he asked, gently, the week after Wes, and she said yes.**
+  - **How Lena learns about Skye (January 2010):** Lena had **privately resolved over Christmas to break up with Julian**
+    because there was nothing there. Then **she sees the Facebook status** ("In a Relationship with Skye Callender")
+    and keeps veering between devastated, furious and sick. **Laney physically takes the laptop away**, then looks
+    through the pictures and interactions herself **and gets mad too**. Lena does NOT break up with Julian (the hurt
+    chain).
+    - **POV rule:** this happens off Jack's screen. Jack learns pieces later (Laney's cold fury, Lena's sudden
+      formality, Theo's report); the **full story, including that Lena had decided to end it with Julian over Christmas,
+      comes out in the New Orleans conversation**, where it lands as the cruelest near-miss of the whole misreading
+      chain.
