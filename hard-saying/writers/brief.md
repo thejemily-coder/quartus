@@ -498,3 +498,19 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     line, the dangerous night, Ephesians 5, marriage) carries the later seasons. The alliance reveal comes at the
     first ensemble set piece after they're official (likely late Spring 2010 or Summer). Later turbulence (a fight, a
     rupture, a devastating season) remains possible, but no more "other relationships" for either of them.
+- **Re-plan, exact sequence (player directive; refines the MAJOR RE-PLAN).**
+  1. **Lena and Wes end very soon** (within the next few episodes). Jack is still with Becca, so there's no window
+     (Theo and Laney get a false dawn).
+  2. **Lena starts dating Julian while Jack is still with Becca.**
+  3. **Jack ends things with Becca right after Thanksgiving (late Nov 2009)**, specifically because he realizes he
+     doesn't want to invite her home to Youngstown: it would all be a lie bordering on cruel. (Thanksgiving itself: Jack
+     invites Lena, who can't come since she's with Julian, so **Theo goes**, per the earlier directive; the Becca
+     realization is the knife.) Lena is with Julian, so there's no window.
+  4. **Jack meets the magnetic girl before going home for Christmas** (mid-Dec 2009, around finals or the S1 finale).
+     They **exchange Facebook messages and texts over the break** (shown through Jack's RAZR and the Dell in Youngstown).
+  5. **They start dating at the beginning of Season 2 (January 2010).** **Lena hates every minute of it.**
+  6. **Lena does with Julian exactly what Jack did with Becca** (stays in something that's nice and empty), and **can't
+     end it because she's so mad at Jack over the magnetic girl**. The proxy fight(s) live here.
+  7. **The New Orleans trip (Feb 7–16, 2010)** breaks it all open: honesty, no "other" stories, both free within a
+     week. Jack asks; Lena says no with a straight face, cracks up, and makes him do it properly; dates; official
+     before summer.
