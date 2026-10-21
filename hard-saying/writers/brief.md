@@ -781,3 +781,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   day for weeks leading up to it?" It's the closest the proxy war comes to the truth before New Orleans: she says the
   grievance, never the reason. Jack has no good answer (he never told her because telling her would have meant saying
   why it mattered). The fight then veers back to its ostensible subject, and neither names the real one.
+- **Season 1 finale shape (player's choice; S1E22, mid-December 2009).** **The last night before break.** Finals are
+  over and the campus is emptying; Jack and Lena spend one last night together before the airport, and it's the best
+  night of the semester (the extended two-hander as the finale's heart). **Both nearly say it.** Then she flies to New
+  Orleans, he flies to Youngstown, and his phone buzzes: Skye. Every reason for hope, and a real sting that it can't
+  work right now. (Skye is secret at this point; Lena is with Julian and has not yet resolved to leave him; that
+  resolution forms over the Christmas calls.)

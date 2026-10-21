@@ -3659,8 +3659,8 @@ is gracious (`e15_julian`); **the hurt chain's link 2 starts on his face** — s
 the lie he tells best. 412: Theo already knows (Laney, 10:41 p.m.) and says nothing at all, which is how Jack knows. Theo's rudeness to Julian
 begins at once ("the vampire who asks permission"). No two-hander (E14, E16).
 
-**E16 · "Stairwell"** · Mon Nov 16 – Sat Nov 21 · the Browns shut out 16–0 by Baltimore on Monday Night Football (Frank: "Good." — the bit
-inverted: he's glad Jack wasn't home to see it); *Going Rogue* (Tue Nov 17); the UC Regents' fee-hike protests up the coast (Nov 18–20 [verify]);
+**E16 · "Stairwell"** · Mon Nov 16 – Sat Nov 21 · the Browns shut out 16–0 by Baltimore on Monday Night Football (Brady Quinn
+back; Frank on the phone, one word); *Going Rogue* (Tue Nov 17); the UC Regents' fee-hike protests up the coast (Nov 18–20 [verify]);
 *New Moon* (midnight shows Thu Nov 19 → Fri Nov 20; Laney forces the floor); the Manhattan Declaration (Fri Nov 20; Lena signs online; Jack signs
 too or argues — #47). *(Re-planned after S1E13 for the **ACCELERATED SEQUENCE**: **step 2 — Jack and Becca end before Thanksgiving.**)* **The
 realization (Mon–Tue):** Maria on the phone Monday night, pressing — "So? Christmas? Idaho?" — and Tuesday at Coffee & Donuts Becca, shining: her
@@ -4147,10 +4147,10 @@ choosing Becca — the hurt chain);
 - **S1 cadence (player's standing rule after S1E04):** an **extended Jack/Lena two-hander roughly every other episode** — E04 (the
   harbor), E06 (the long way home), *E07 (the roof at dawn, ~1,800)*, E08 (the Thérèse night — the player's design), E10 (the Brick →
   the Ferrer Tower → dawn — the player's design), **E12** (Halloween: the hour that happens twice), **E13** (the stairwell till dawn —
-  shifted up by one: Wes's end), **E14** (the postcards; the Thanksgiving invitation), **E16** (she can't come — Julian), **E18** (the
+  shifted up by one: Wes's end), **E14** (the postcards; the Thanksgiving invitation), **E16** (the night Becca ends — "Ask me again in a week," returned; accelerated after S1E13), **E18** (the
   Thanksgiving call, Dupre Street to Glenwood Avenue), **E20** (the courtyard, restraint #2 — her fidelity), **E22** (the roof).
   **Ensemble setpieces as punctuation:** E03 (convoy), E05 (Sully's), E08 (the Blessing), E09 (the Wes weekend), E11 (Big Sur), **E12
-  (Halloween)**, **E14 (Hale's dinner)**, **E17/E18 (the airport; Youngstown)**, **E22 (the Newman Christmas party)**. Lena central every
+  (Halloween)**, **E14 (Hale's dinner)**, **E17/E18 (the airport; Youngstown)** (E17 also carries the Skye meeting on Ocean Road — a two-person scene, not a setpiece), **E22 (the Newman Christmas party)**. Lena central every
   week regardless.
 - **The S1 rhythm after E08 (player's design):** every big near is followed by a retreat — scrupulous, polite, painful — that fails
   faster each time, into *guilty fun*: their best hours together cost Becca and Wes something neither is told. Jack's guilt is the S1
