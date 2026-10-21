@@ -810,3 +810,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The mark she leaves on him: saying it out loud.** Jack gets better at saying what he feels and wants, plainly.
     **Lena benefits from it later** (in New Orleans and after). It's Skye's real gift to him, and Lena knows where it
     came from, which is both a joke and a sore spot.
+- **Lena's coffee with Skye (reserved reveal; player's design).** At some point in **Fall 2010 (sophomore year)**,
+  Lena quietly gets coffee with Skye and **thanks her** for teaching Jack to say things out loud. **Jack doesn't know.**
+  Lena only admits it **after they're married (or at least engaged)**, adding that **she still doesn't like her**.
+  Keep it entirely off Jack's screen until the confession (no hints the Knowledge Auditor would flag). Skye may make
+  one tiny, inexplicable remark to Jack in that period that only makes sense in hindsight (optional, room's call).
