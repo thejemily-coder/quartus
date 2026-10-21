@@ -668,3 +668,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The alliance on Julian:** Theo is openly rude to him (as to all Lena's boyfriends) until Jack tells Theo to stop
     because it's turning mean; Laney is polite to his face and feeds Theo intel; Margot likes him and tells Jack he's the
     healthiest thing in Lena's life.
+- **Holidays and summers as a couple (player directive).**
+  - **Sophomore year (2010–11) and junior year (2011–12): they alternate Thanksgiving and Christmas between
+    Youngstown and New Orleans**, together. For example, sophomore year has Thanksgiving in one city and Christmas in the
+    other, and junior year flips it (room picks the order). Holiday episodes become family set pieces: the Costigans
+    and the Broussards each meeting the other's world, Danny (visits, letters, release timing per the bible), Nonna,
+    Gina, the Broussard brothers, Lucille's absence.
+  - **Both summers before marriage (summer 2010 and summer 2011): they trade visits** (Jack to New Orleans, Lena to
+    Youngstown) inside the summer seasons; most of each summer is apart at home, with phone, letters and Facebook.
+  - Summer 2012 is the New Orleans wedding.
