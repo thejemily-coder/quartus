@@ -646,3 +646,14 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     sun-streaked hair and the fire read as a copy of Lena), she says to Lena: **"Oh my God, he found a California you.
     Excuse me, while I go be a bitch on your behalf."** Then she goes and does it (alliance rules: Laney openly rude to
     Jack's girls). Lena's reaction is the knife: she hates that Laney's right.
+- **JULIAN PARK-ELLIS: player co-design (binding).** Lena's version of Becca. Sophomore; warm brown skin, short dark
+  hair, quietly handsome, calm (looks as already established; "Skinny Love" on the stairs in the pilot).
+  - **Music:** a **singer-songwriter**: open mics, a guitar, quiet earnest songs. **He writes a song about Lena.**
+  - **His unbelief: never had it.** Raised by kind, secular, ethical, unchurched parents. No hostility, no wound, he
+    simply never felt the need. He **finds Lena's faith beautiful, like music he can't play**.
+  - **How he tries:** he **comes to Mass every Sunday**, sits respectfully, doesn't receive, and learns the responses
+    and the music; he **reads for her** (Augustine, O'Connor, Percy) and has thoughtful responses but **never a
+    counterargument**; he **respects her line** (chastity) with patience and no complaint, never pressure, and never
+    quite understanding.
+  - **Fatal gap (unchanged):** respect without belief, and too easy: he never fights her, and she needs to be argued
+    with. Perfect on paper, wrong in the bones.
