@@ -2588,3 +2588,194 @@ Journal: note **`wait`** ("The wait", per `e13_reason`); Lena card variants on `
 - Theo's own espresso machine (E03) lives in 412. Margot's notebook stays under the armor at this dinner (no notebook gag).
 - Delgado: ground to 4th = three flights; 412 to the 2nd-floor landing = two. Kevin's breakup clock = thirteen hours (not eleven).
 - The Wit line "Don't be funny right now" (E06) was not reused; E13's is "Not tonight, Jack. Funny later. Stay now."
+
+### S1E14 — "Say It to My Face" (Wed Nov 4 – Sun Nov 8, 2009; tag Sun 11:52 p.m. PST)
+36 scenes (33 per path). Forks: s12 → s13a Caleb on the Shipwreck Cove stairs (`e14_vile=="caleb"`) / s13b "That's enough, Professor." (`hale`) /
+s13c Hale's deck with Lena and Berkeley (`deck`) → s14 · s17a → s18a the Old Mission wedding (`e14_day=="mission"`) / s18b the harbor fish market
+(`harbor`) → s19. Duel **face** ("Say It to My Face," s09–s11v, **official, Hale's table, Hale referees**; Jack = GO (Paul in Athens, Acts 17;
+John 17:15), Lena = COME AWAY (Benedict per Gregory's *Dialogues*; MacIntyre's last line; Acts 17:32; Matthew 10:14)). **The scheduled extended
+two-hander** (s15–s23, Fri 10:50 p.m. → Sun 2:25 a.m.): friendship only, **no heat set anywhere**. Per path ≈13.1k–14.1k words (mean ≈13.6k;
+all branches ≈18.0k), 23 choices, 6–12 keys, 1–6 whispers. Lena's resolve: s01 5 → s04 4 → s06 5 → s08 5 → s12 4 → s15 5 → s17 6 → s19 7 →
+s20 7 → s23 6 → s27 6 (**ends 6**). Jack's resolve enters 4, ends 4–9 (mean ≈7.2). No dangerous window. **Save-locked:** written for
+`saves/after-s1e13.json` (`lena_wes_over`, `e13_reason=="asked"`, `e13_dawn=="need"`, `e13_caroline=="becca"`, `e13_ring` kept, `e13_julian=="stay"`,
+`e13_gift=="moviegoer"`, `e13_glass=="wrote"`, `e9_hey=="given"`, `e11_vote=="vespers"`, `e4/e6_goodnight=="magdalena"`). Gates: Ripostes and s21/s22
+[Wit] `trait.wit>=38` (save 38: visible); s15 candor branch and s22 [Candor] `trait.candor>=54` (save 53; s04 "told" +1 opens it); **s10 Personal
+`e14_wine=="all" || trait.reckless>=28`** (save reckless 26 → only a Jack drinking Hale's claret sees it); s11 Apologize `e14_face_personal`.
+
+**Clock (binding).** Wed Nov 4 noon Portolá steps (St. Charles Borromeo; WS Game Six that night); 1:00–2:10 seminar (papers up at 2; whiteboard
+at 2:10); FB status 4:11/4:12 [not hedge]; 8:04–8:30 east stairs, 2nd-floor landing (no call; the hour that was Wes's). Thu Nov 5 1:12 a.m. Theo's
+"Are you happy?"; 12:10 Mass; **Fort Hood** known by ~12:50 (Joey's father; "the number keeps going up"); rosary in the front pew; Jack's 1:02 text
+to Yusuf, reply 2:14 (**Tariq hadn't called yet**); 6:20 p.m. the hotdish at 217. Fri Nov 6: **unemployment 10.2% (highest since 1983)** on the
+Fishbowl TV in the morning; Jack doesn't call his father; Yusuf's brother called Friday morning; Hale's dinner 6:40 (sit-down 7:30; duel 8:10–8:55;
+margins 9:20; forks 9:38; Becca leaves 10:45 for the 6 a.m. tank with Laney [and Caleb]); the walk 10:50 (moon four nights past full); Delgado front
+desk 12:40 a.m. Sat Nov 7: 7:12 Mémère (9:12 in Breaux Bridge, home from St. Bernard's 8 o'clock); 7:40 "I need to not be in this building today";
+11:00 the Old Mission wedding [mission] / 10:30 the harbor [harbor]; 3:30 confession (Lena eleven minutes); 5:00 vigil (32nd Sunday B: 1 Kgs 17:10–16;
+Mark 12:38–44); 7:40 the Anchor; **Stupak 240–194, then the bill 220–215, Cao the only Republican yes** (after eight on KNX); LSU lost at Alabama;
+Ohio State won at Penn State (Gina: PRYOR!!!); Margot's call at ten. Sun Nov 8: the last 11 bus left 12:30 a.m.; the three-mile walk; Delgado front
+door **2:25 a.m.**; **Alarm 4 at 3:11** (east stair); Margot's laptop 3:40; Sully's 10:50 (**Saints 30, Panthers 20 → 8–0**: down 14–0 after one,
+17–6 at the half, 20–13 in the third, Meachem 54-yd TD, Anthony Hargrove's 1-yd fumble return = the defense's 7th TD; late FG); Anacapa lot 1:20;
+Maria 4:30 p.m. (7:30 Glenwood); 9 p.m. Mass (Kevin lector; Prayers of the Faithful from the Book of the Dead); courtyard wall 10:05; Danny letter
+11:40; Lena's text **11:51 p.m.**
+
+**On-page canon (all paths unless marked)**
+- s01: Portolá front steps; "Hey, Soul Sister" from a laptop on the lounge sill. Becca's planner (St. Charles Borromeo: catechists and plague).
+  **Becca's question:** "My mom's been calling you my boyfriend since September. Can I tell her she's right?" [e13_caroline becca] "You told Theo's
+  *mom* I'm with you." Procedure: "My mom first. Then Facebook." **Becca flies SBA → Seattle → Spokane the Wednesday before Thanksgiving** (her dad
+  drives from Coeur d'Alene with the dog); **the turkey is named Gerald**. **Jack is taking the Greyhound home, 2½–3 days** (Becca writes BUS?? in her
+  planner). `e14_ask`: yes (she phones her mother; Mrs. Lindell: "Is that *him*?") / weight ("Yes," meant to mean it; her hand, a nick on one knuckle
+  "from something that had hooves") / hedge ("ours till Thanksgiving"; "No Facebook. Mom doesn't count… She thinks it's a kind of mail"; maple bar
+  halved) / good ("You're good at *me*"). `becca_official` on every path.
+- s02: Hollis 302, fourteen chairs; Caleb's Boethius and his molting *Consolations of Disbelief*. Lena wins "Lady Philosophy: woman or device" in three
+  moves. Jack's red margin on Lena's All Souls paper (Monica; Lucille; the medal), written in the small hours of Wednesday after the Anchor: `e14_margin`
+  remember / paid / epicurus. **Lena's paper comes back to him dog-eared** (he never sees her margin). Whiteboard: FRIDAY · 7 P.M. · THE CLIFF END OF
+  DEL PLAYA · ONE GUEST EACH · BRING SOMEONE WHO'LL EMBARRASS YOU. "I'll be reading your marginalia aloud over the pudding."
+- s03: [not hedge] FB "Becca Lindell is in a relationship with Jack Costigan" (4:12, 31 likes incl. Theo). [hedge] Laney saw Becca hug the Portolá
+  cashier. Laney waters Delphine's silk ficus with the Martinelli's; "The judges have some notes on your interview." **Theo tears up the Harbor Inn
+  place cards (COSTIGAN · BROUSSARD) and shakes Jack's hand: "Congratulations, Costigan. She's a wonderful girl."** Kevin: "Respectfully. Leave it
+  alone." **Margot hands Kevin a coffee without a word**; Theo hooks the spare chair out for him.
+- s04: east stairs 2nd-floor landing at 8:04, LG shut in her lap. "He'd have called from the boat… the best reception in Orleans Parish." Laptop shut
+  since Monday ("Everybody I've ever met is on there being sorry"). `e14_told`: told ("I'm happy for you, Jack… I mean it." / the maple bar) / later
+  (the BE NOT AFRAID fruitcake box to Breaux Bridge; "Goodnight, Jack.").
+- s05: 1:12 a.m.; Becca's 11:46 sms "goodnight boyfriend!! :)"; Jack's *night becca*; Doug calling for a healer through two walls. **Theo: "Costigan.
+  Are you happy?"** (`e14_happy` yes / decent / **after — "Ask me after Thanksgiving." "I'll put it in my calendar."** / you). Staged to rhyme with E21.
+- s06: 12:10 (≈15 present; Mrs. Fitch, Joey, Kenzie, an old man with a cane). Fitch: "*You two!*" [not hedge] Becca told her Wednesday; [hedge] Fitch
+  saw them on the Portolá steps from the 11 bus, sharing a maple bar. [later] Lena's "I'm happy for you, Jack." here. **Lena invites Becca to Sully's
+  Sunday**; Becca promises a hotdish ("then you have eleven"). **Fort Hood** via Joey's father; Osei: "We'll do this on our knees and read about it
+  after" — a decade in the front pew. Yusuf's brother **Tariq** (Army interpreter, Helmand; calls Sundays): "He's not in Texas… He hasn't called yet."
+- s07: the tater-tot hotdish in Mrs. Lindell's Pyrex (LINDELL on masking tape; Newman House oven). Laney in a green clay mask: hotdish = "the
+  baton-twirling of grief"; Miss Congeniality a fraud category. Lena: "Thank you, Becca." / "Lord have mercy. Laney. Be nice." / "This *is* my nice."
+- s08: **Hale's house**: last lot, cliff end of Del Playa; silver board-and-batten bungalow; books to the ceiling; woodstove; **Bishop Berkeley**
+  (deaf greyhound) on a Turkish rug; **the table is a six-panel door on trestles**; deck over the bluff; Billie Holiday. Menu card: standing rib, Yorkshire
+  puddings (his mother's tin), roast potatoes, real horseradish, sticky toffee pudding, "Claret. Behave." Hale is **54**. Guests: Graham Fisk (senior,
+  Patagonia vest; the Palo Alto girl's), the San Diego boys (each other), Caleb alone (screw-top red, banished to the fridge top), Yusuf (his mother's
+  dates), **Becca as Jack's** (blue pearl-button cardigan; the second huckleberry jar: "for your *toast*"), **Laney as Lena's** (green silk, pearls,
+  Veuve). Becca: "Do I embarrass you?" "No." Graham asks Yusuf about Fort Hood; Hale: "Mr. Noorzai is not a spokesman… He's a guest. Pass him the
+  horseradish." Yusuf: "I'd like one week where nobody asks." Hale on Becca: "believes in God without needing me to be wrong… It's unbearable."
+  Beef from "a man in Lompoc who swears at it." `e14_wine`: all (resolve −1) / one / water ("I've got a shift tomorrow." — "A temperance man at my table").
+- s09–s11v duel: Hale's motion: "Mr. Costigan, who won in October by arguing for leaving and lost on Monday by arguing for nothing at all, will tonight
+  argue for *going*." Jack keeps a **holy card of Benedict XVI in the back of his *Big Sur***. Moves: [Press] Benedict built a better world in a cave /
+  [Riposte] twelve monasteries / [Concede] the barbarians came to him / [Reframe] **Regensburg (Sept 2006) — Lena answers with La Sapienza (Jan 2008,
+  the visit cancelled, the speech read without him): "He came away… and he left the door open."** / [Reframe] Paul's tents in Corinth (Becca: "*Tents!*"
+  on her napkin). s10: Acts 17:32, "bless your heart"; [vespers] Lucia. Becca: "She means you can't make people come." [Press] Dionysius and Damaris /
+  [Riposte] "Athens hasn't had a good century since." — "Neither has Youngstown." / [Concede] "That's the part I can't prove." / **[Personal, drinkers
+  only] "You'd know. You never ask anybody the question you're scared of."** (Lena, level, to Hale: Monica prayed seventeen years and let Ambrose do
+  the talking). s11: Matthew 10:14 (Lena cites only Matthew's "no bag, no second tunic"). **"Some people you can't follow. You let them go, and you pray
+  at a distance, and you leave the light on."** [Concede] "Leave the light on, then. You're still going. Just slower." (`e14_face_light`) / [Press] "The
+  dust is for the town…" — "Tell that to the people in it." — "I'm telling *you*." / [Riposte] Gentile country; "Then pass the dust." / [Apologize].
+  **Verdicts** (record before: 5–2): V1 personal → Lena 5–3 ("The point goes where the cost is") / V2 personal+apology → Lena 5–3 ("Retreat with honor
+  is still retreat") / V3a light → Lena 5–3 ("Mr. Costigan conceded the only point worth having"; the cream jug) / V3a′ heart≥2 without the light →
+  Lena 5–3 ("gave ground twice, and graciously") / V5 wit → **draw**, 5–2–1 / V4 rigor≥3 → **Jack 6–2** ("He went, and he came back with two") /
+  V6 → Lena on points, 5–3.
+- s12: Hale's Yorkshire coming up; the marginalia recited (Jack's first week "best paragraph… I hate it"; *Coward.*; Lena's *Cite me.*, *Defense.*);
+  this week's margins; **Hale stops in the middle of Lena's margin** — "*You started another name on Monday and stopped. Whoever it is —*" — "Ah,"
+  folds it away; "Illegible." **The postcards revealed:** "Two people at this table wrote to me before they ever sat in my seminar… A postcard each —
+  same card, same line… I buy them at Blackwell's by the hundred. **I've used three.** Mr. Costigan's nine pages, from Ohio. Miss Broussard's
+  twelve, from New Orleans." Caleb: "I wrote you four letters." Hale: "I keep them… I don't answer devotion, Mr. Hargrove. It doesn't need me."
+  Caleb leaves **without his coat**; Hale to his glass: "Bloody boy" (Barnsley vowel). Lena to the deck with Berkeley. Becca: "Is he always like this?"
+- s13a [caleb]: Shipwreck Cove stairs (unlit Christmas lights on the rail); Caleb's four letters: thanks (eleven pages), questions (footnotes), **his
+  dad's church — what happened to it**, "did you get the third one." "My dad never answered either. He just *smiled*." / s13b [hale]: "That's enough,
+  Professor." — "Yes. It is." … "You'll do, Mr. Costigan." Yusuf: "Factor of safety." / s13c [deck]: the bench, Berkeley between them; "He's the only
+  one at this party with any sense."
+- s14: Becca drives Laney (and [caleb] Caleb) home in the Ranger; [not caleb] **Becca takes Caleb's corduroy to find him**. Becca: "Walk Lena home?
+  She shouldn't walk by herself." Hale at the door: **"I wrote to you both because you were the only ones who wrote *at* me like you meant it."**
+  [hale] "Even you. *Especially*." He looks west toward the Point.
+- s15 the walk: [personal && !apology] Lena courteous and one degree colder, walks with him anyway. [wine all] "You're tilting." "Ships list." "Ships
+  have keels." Jack takes the street side (Frank's rule). **"You're being very careful with me, Costigan."** **Lena's postcard, behind her driver's
+  license, soft as cloth.** "I asked you who A.H. was." "You read it twice." "I read it *once*. Then I read mine, in my head." **Lena wrote Hale twelve
+  pages in spring '08, two years after the year she went to Mass every morning to yell at God (2005–06).** Jack: [candor≥54] the summer at sixteen he
+  read Hale in three nights and quit Mass; drove Maria to St. Brigid's in the Silverado and sat in the lot; "Something happened that fall. I started
+  again." (elided, unasked) / [else] "I was seventeen. I'd read him at sixteen and thought I'd found a hole." "He wrote back. That's a hole."
+  **The Zimple Street house** (shotgun, fig tree, For Sale since the storm; the grandmother's sewing table; haint blue porch ceiling; babies at Holy
+  Rosary; Mémère's ring; Sunday dinners on Dupre Street). `e14_grief`: press (**"Don't argue me out of it, Costigan. I'm not a case."**) / house
+  (room by room; the Singer; books on all walls; the dog **Boudreaux** under the kitchen table; the claw-foot tub on the back porch under the fig:
+  "It's *Uptown*. They've seen worse.") / quiet (her hand through his arm in the dark of the Grove).
+- s16: Delgado front desk 12:40. **The two cards side by side**: Radcliffe Camera, BLACKWELL'S · OXFORD; *Come and say it to my face. —A.H.*; his to
+  Glenwood Avenue, hers to North Dupre Street; both MARISOL CA 2008 — **hers March (26¢), his June (27¢, after the May rate rise)**; his has a Folgers
+  half-ring. [moviegoer] Jack's card lives in his desk drawer since *The Moviegoer* went to Theo [else: *The Moviegoer* on his desk]. **Laney's 11:20
+  sms: "she sang hymns the WHOLE way. i know all the words to be not afraid now. i hate it here"** (the ride home with Becca). `e14_cards`: swap (till
+  Sunday; hers goes into *Big Sur*) / own / both (she keeps both overnight). "Goodnight, Jack."
+- s17: 7:12 Delgado kitchen; **Lena picks chickens in the Newman stockpot for Sunday's soup (Harbor Inn night shift)**. **Mémère by phone** (speaker):
+  the fruitcake came Friday, *trop sec*, a slice each morning thin enough to read the *Teche News* through; a candle for Wesley at St. Bernard's: "*C'est
+  un bon garçon. Le Bon Dieu a pas fini avec lui.*" Then: *Quelqu'un devait demander* (untranslated; Jack thinks he knows what). "*Et le garçon de
+  l'Ohio?*… Wesley said you're skinny." `e14_memere`: oui ("He has manners. Feed him, Magdalena.") / browns (1–7; the bye; "they fired the general
+  manager on Monday"; "*Pauvre garçon*" — "the highest honor we have") / french (Mrs. Kovach, the language lab; "*Je suis… maigre?*").
+- s17a: "I need to not be in this building today." "You pick. I'll go."
+- s18a [mission]: **Old Mission Nuestra Señora del Mar**, a wedding mariachi on the steps; program: **Yesenia Montoya & Rubén Salazar, 7 de noviembre de
+  2009**; the four-year-old ring bearer eats the pillow fringe (Lena laughs out loud in church); the arras (13 coins) and the lazo; **Lena cries at the
+  lazo**; Jack's Anchor napkin (she keeps it); "In New Orleans we'd have a second line out the door"; out at the Lamb of God. / s18b [harbor]: sea lions
+  (eleven) on the float; the fish market shed; Daddy's rules (clear eyes, red gills, smells of the sea); Lena haggles a red rockfish down a dollar a
+  pound plus heads ("Lagniappe"); **the rockfish is for a Monday court-bouillon for Dulce and Rosario** (stored in Rudy's walk-in: LENA'S. MONDAY. FOR
+  THE HARBOR INN.); Wes worked her father's counter at seventeen the summer after the storm, hopeless at filleting. "You can tell a man by how he holds a
+  fish." She carries it herself.
+- s19: confession line (Joey's laminated card from his grandmother; four minutes); **Lena eleven minutes**; Jack prays a decade for her. `e14_conf` go
+  (Osei: **"Your penance is to let somebody help you this week."**) / pew.
+- s20: vigil; Becca saves three seats (Becca, Jack, Lena); Peter Haddad reads Kings; Osei: "Jesus does not say she was sensible. He says she gave more
+  than all of them." Becca holds Jack's hand at the Our Father; Lena's stay folded. **The second collection (St. Vincent de Paul) at the doors, Mrs.
+  Fitch's basket.** `e14_mite` tips (the ANCHOR envelope, all of it) / five / pocket (bus fare too; Lena pays both fares on the 11; La Flaca on the rack).
+  Becca: "Lena, go to the Anchor with him! Gloria will feed you!"
+- s21: the Anchor; Rudy's transistor on KNX; Lena on the stool by the dish station with Hale's Monday packet and buttermilk pie. **Gloria: "So this is
+  waiting."** (the only line naming the wait); Gloria takes his apron at nine. **Lena's speech:** Charity shut since the storm; her father's shrimpers
+  uninsured; **"my congressman" (Cao: a former Jesuit seminarian, New Orleans East) voted yes because the amendment kept the money off abortion; "Both,
+  Jack. In one bill."** Remy: LSU lost in Tuscaloosa ("in mourning till Easter"). **Margot's argument** (exchange plans can't cover abortion; insurers
+  won't write two policies; riders) — Lena: "She *may* be right about the private plans. She's wrong about the baby." `e14_bill`: lena ("Write it down.
+  Margot's going to want it for the board.") / margot ("Tell Costigan he's on the board.") / cao ("I have a congressman.").
+- s22: 12:55 a.m., the three-mile walk with La Flaca (past the dark Borders and Blockbuster, Giorgio's). **Wes will be at the Broussard Thanksgiving
+  table (every year since 2005; Luc's best friend); he carried the twins out of a second-floor window — Jude and Josie, nine then, Josie (13 now) bit
+  him** (`knows_broussard_twins`, `knows_wes_thanksgiving`). Lena rides the rack down Ocean Road; **the Brick's second floor lit all night** (the E17
+  plant). **"I'd go anywhere on the twenty-sixth. Anywhere nobody knows his name." / "Is Becca going home with you? To Youngstown?" / "She's going home
+  to Idaho. Her mom named the turkey." / "Right. Of course she is."** Jack holds *Then come to Youngstown* a week so it won't be a consolation prize
+  (`jack_plans_ask_lena`). `e14_invite`: lupes (carnitas; "the pig is the most Catholic animal there is, because nothing on it goes to waste") /
+  costigans (lasagna beside the turkey; Nonna's fried cardoons; Rosie's hand-turkey place cards; the Lions; **Danny's chair, set every year**) / quiet.
+  "Are you going to be okay? At that table?" "I'll let you know."
+- s23: Delgado front door 2:25 a.m., the red card-reader light. **"You've been a very good friend to me this week, Jack."** (endCard tag). `e14_door`
+  job / magdalena / hold.
+- s24: **Alarm 4, Sun Nov 8, 3:11, east stair (not the lounge), 26 days**; Margot staked out the 4th-floor lounge pull station with Theo's camera and Gold
+  Bond; **she fell asleep 2:50–3:11 (first documented instance)**; footage: at 3:09 a bare heel and a pillow corner cross the frame (the only tell;
+  unremarked). Laney: "Tell me I meet a dark stranger. Tell me he has a boat." Theo: "One woman. One camera… Wrong *stairwell*." Kevin: "That's REM."
+- s25 Sully's: Dale (Barry Sanders jersey as a vigil; Lions 1–6); **Theo's seating napkin (COSTIGAN · BROUSSARD) redrawn by Lena** ("Becca goes by
+  Jack… I want Margot"); Theo's courtesy to Becca ("the good seat"); Margot: "a potlatch." Becca came from the 6 a.m. touch tank. **Lena teaches Becca the
+  Who Dat** ("You're not asking anybody, Becca. You're telling the room."); Becca: "It's a *holler*. We have one for the cows." **Becca's WHO DAT half a
+  second early on the Meachem TD**; Kevin's napkin 10 *(early)*; Laney: "won the swimsuit round in a *Carhartt vest*." Lena rings the bell for the
+  defense's seventh TD. No WHO DAT text from Wes. **The *Sweetwater* promo on the fifth TV (unnamed, "something bright and blue with water in it");
+  Theo: "God. They're still running that."** Jack doesn't look. Becca: "Are you really doing three days on a Greyhound by yourself?" `e14_becca_tg`:
+  told (**Jack tells Becca he means to ask Lena to Youngstown; Becca zips her lips: "It's yours to ask. I'm not *allowed*."**; `becca_knows_lena_ask`)
+  / bus (BUS — JACK on her napkin; a survival bag promised).
+- s25a: the Odyssey's back glass WHO DAT · 7–0 in La Vang polish → `e14_glass` wrote (Jack's leaning 8) / becca (Becca rewrites it all, WHO DAT · 8–0;
+  Lena hands her the remover to keep).
+- s26: Maria (picks up before the first ring ends): "Idaho! Your *girlfriend*!" [not hedge] Gina saw the FB status Wednesday [hedge] **Becca's card on
+  the cow stationery — a thank-you for Maria's thank-you note, signed *Love, Becca*** ("A girl doesn't write *love* to the mother unless"). "Nonna wants to
+  see the girl who writes on cows." **"Then Christmas! Bring her at Christmas. I'll make the cardoons."** (`maria_wants_becca_xmas`); the bus, three days.
+  Nonna on the extension: "E la ragazza?" **"Your father's in the garage a lot."** `e14_ma`: see / **lena** ("The veil girl? Gina's friend, from the
+  Facebook? Doesn't she have a *fidanzato*?" "Not anymore, Ma." — "Then I want both… One at a time, like a civilized family."; `maria_knows_lena_maybe`)
+  / nonna (*Chi lascia la via vecchia per la nuova…*; "Giacomino").
+- s27: 9 p.m. Mass; Becca (early lab Monday) and Lena either side; the Sunday soup went to the Harbor Inn at seven in Kevin's Odyssey. **Kevin, lector,
+  reads the November names from the Book of the Dead** (Margaret Dwyer; Abuelita Rosa and Abuelo Chuy Ortega; Fr. Patrick Kelleher; Capt. Joe Silva of
+  the *Marisol Rose*; Lucille Guidry; Nora Calloway; **Antonio Rinaldi**; Nora Calloway again). **Julian Park-Ellis stands inside the doors with his
+  guitar case at the first Nora, and is gone by Communion.** "Be Not Afraid": Becca every verse from memory; Lena the alto.
+- s27a: courtyard wall 10:05 (sprinkler shut off at the valve). **Julian found Lena on Facebook Tuesday; she opened her laptop this morning; he asked her
+  to Bastille Thursday Nov 12 to hear the new song — it wasn't ready Nov 5, he pushed it a week — "He said you promised to stay to the end."**
+  (`lena_julian_bastille`). [swap/both] the cards go home. `e14_bastille` there ("He thinks everybody leaves in the second chorus") / becca ("clapping on
+  one and three") / go ("I think I will.").
+- s28: Danny letter on a legal pad (Saints 8–0; "Browns had the bye. I'm told it went well."; **Nonno's name read aloud — "That one was yours."**);
+  [e9_hey] ABOUT TIME margin. `e14_danny` hey ("That's all you get, jagoff." — Danny's word first) / truth ("Her boyfriend broke up with her. I'm with
+  Becca now. Officially. I'm doing it right, D.") / pushups.
+- s28a: **11:51 p.m. Lena: "Ask me again in a week. —L."** (answers "Are you going to be okay? At that table?"); Jack: *i will*.
+
+**New flags:** `becca_official`, `knows_becca_spokane`, `knows_lena_postcard`, `knows_hale_three`, `lena_knows_jack_postcard`, `spoke_to_memere`,
+`jack_plans_ask_lena`, `knows_broussard_twins`, `knows_wes_thanksgiving`, `maria_wants_becca_xmas`, `lena_julian_bastille`, `becca_knows_lena_ask`
+[told], `maria_knows_lena_maybe` [ma lena]; path flags `e14_ask`, `e14_margin`, `e14_told`, `e14_happy`, `e14_wine`, `e14_face_personal`,
+`e14_face_apology`, `e14_face_light`, `e14_vile`, `e14_grief`, `e14_cards`, `e14_memere`, `e14_day`, `e14_conf`, `e14_mite`, `e14_bill`, `e14_invite`,
+`e14_door`, `e14_becca_tg`, `e14_glass`, `e14_ma`, `e14_bastille`, `e14_danny`.
+
+**Owed payoffs (flag → episode):** `e14_mite=="tips"` → E15 (the housing deposit is short by a week's tips) · `e14_happy=="after"` → Theo's
+calendar reminder after Thanksgiving (E18/E19; rhymes with E21's warzone) · `e14_bastille` → E15 (**Jack attends Bastille on every value**) ·
+`e14_invite` colours the E15 tag (lupes: the joke he almost makes; costigans: the sentence he stopped before; quiet: the week he kept) · `e14_ask` and
+`becca_knows_lena_ask` → E15–E16 (Becca must not tell Lena; she may ask Jack "Did you ask her yet?" only out of Lena's hearing) · `maria_wants_becca_xmas`
+→ E16 (Maria writes Becca directly) · `maria_knows_lena_maybe` → E15–E16 (Maria's E16 call: "And the friend? Lena?") · `e14_becca_tg=="bus"` → E17 SBA
+(the survival bag, for a plane) · `e14_danny` → E18 (Trumbull) · `e14_conf=="go"` → Osei's penance ("let somebody help you this week": E15's money
+fork) · `e14_cards=="swap"` → closed in s27a.
+
+**Continuity notes.** The Benedict holy card now lives in *Big Sur* (s09). Jack's Hale postcard: desk drawer [moviegoer path]. Hale has used **three**
+cards (the third's owner is not named or counted on the page). Lena's yelling year = 2005–06; her letter = spring 2008. Becca's tank shifts: Thu
+afternoon, Fri 6 a.m., plus the flu volunteer's weekend (Sat/Sun 6 a.m.); Monday = an early lab. The Brick's reading room is lit all night (E17's
+meeting place). Journal cards for Becca, Lena, Danny and the duel record are duplicated per choice — any correction must be made in every copy.

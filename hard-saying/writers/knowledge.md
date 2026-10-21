@@ -1287,3 +1287,93 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Dulce** [s11h]: Lena's twenty; *domingo*.
 - **Priya** [s07e]: Jack and Lena on the east stairs at 6:05 a.m. (granola bar; no words).
 - **Danny** [s02 via letter]: Lena said hey back [e9_hey given]. **Ma** knows Idaho (Becca) writes her.
+
+### S1E14 — "Say It to My Face"
+> Written for the after-s1e13 save only (see continuity.md S1E14). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01] Becca flies SBA–Seattle–Spokane the Wednesday before Thanksgiving; her dad drives from Coeur d'Alene; the turkey is Gerald (`knows_becca_spokane`).
+  He told Becca he's taking the Greyhound (2½–3 days). [ask yes] Mrs. Lindell on the phone. [hedge] Becca: "No Facebook. Mom doesn't count."
+- [s03] Theo liked the status [not hedge]; Theo tore up the Harbor Inn place cards (COSTIGAN · BROUSSARD) — Jack sees the cards torn, **not** the alliance.
+  [hedge] Laney: Becca hugged the Portolá cashier. Margot gave Kevin a coffee (seen; no meaning attached).
+- [s04] Lena's laptop shut since Monday; Wes used to call from the boat.
+- [s05] Theo asked if he's happy. [after] Theo put a reminder in his calendar.
+- [s06] Fort Hood (Joey's father's texts; the number rising). Yusuf's brother **Tariq** interprets for the Army in Helmand; Thursday 2:14: not in Texas,
+  hasn't called yet. [s08] Friday: Tariq called; fine; "don't watch the news"; Yusuf watched it. [hedge] Mrs. Fitch saw Jack and Becca on the steps from
+  the 11 bus.
+- [s08] Hale's house, Berkeley, the menu; Hale is 54; Graham Fisk; Yusuf's "one week where nobody asks." The 10.2% unemployment number (he didn't call Frank).
+- [s09–s11v] Lena's duel citations (Gregory's *Dialogues*, MacIntyre, Acts 17:32, Matt 10:14). [Regensburg] Lena knows La Sapienza. [Personal] he named the
+  question she never asked Wes (from E13's stairs; nothing new learned). The duel result per verdict (record card).
+- [s12] **Hale's margin on Lena's paper began "You started another name on Monday and stopped. Whoever it is —" and Hale stopped** (Jack sees him stop and
+  fold it away; he does **not** learn the rest, or that it's about Danny; Lena saw Jack write a second name in the Book on Monday, E13). **Lena wrote Hale
+  twelve pages from New Orleans and has the same postcard** (`knows_lena_postcard`); **Hale has used three cards** (`knows_hale_three`) — Jack does not
+  learn, wonder aloud about or count the third. Caleb wrote Hale four letters; Hale keeps them; doesn't answer devotion.
+- [s13a | caleb] Caleb's four letters (the third was about his dad's church, "what happened to it" — not what); his dad "just smiled."
+- [s14] Hale: "the only ones who wrote *at* me like you meant it." [hale] "Even you. *Especially*."
+- [s15] **Lena has known Jack's card since the porch on the first night** ("I read it once. Then I read mine, in my head"). She wrote in **spring 2008, two
+  years after her year of yelling at God**. The Zimple Street house (fig, haint blue, sewing table, Holy Rosary, Mémère's ring, Dupre Street Sundays).
+  [house] the dog Boudreaux; the tub under the fig. [press] "I'm not a case." [personal && !apology] she's one degree colder (he sees courtesy only).
+- [s16] The two cards side by side (hers March 2008, 26¢; his June, 27¢). Laney's 11:20 text: Becca sang hymns all the way home.
+- [s17] Mémère (88; Breaux Bridge; St. Bernard's): the fruitcake is *trop sec*; she lit a candle for Wesley; **she said *Quelqu'un devait demander*** — Jack
+  understands the words himself (Cardinal Mooney French); Lena didn't translate it; Jack *thinks* it is about the ring and her question at the tomb (his
+  inference, from E09/E13 knowledge — never confirmed). **Wes told Mémère Jack is skinny** (so Wes talked about Jack to her).
+- [s18b | harbor] Wes worked Broussard's Seafood counter at seventeen the summer after the storm; hopeless at filleting; Tony pretended not to watch.
+- [s19 | go] Osei: "Your penance is to let somebody help you this week." (Jack's own confession; content elided.)
+- [s21] Stupak 240–194, the bill 220–215, Cao the only Republican yes (radio). Lena: Charity closed since the storm; her father's shrimpers uninsured; Cao a
+  former Jesuit seminarian. Remy: LSU lost. Gina: PRYOR!!! Margot's argument about riders and private plans.
+- [s22] **Wes at the Broussard Thanksgiving table every year since 2005 (Luc's best friend)**; **he carried the twins Jude and Josie (nine then) out of a
+  second-floor window into the boat; Josie bit him; Josie is 13** (`knows_broussard_twins`, `knows_wes_thanksgiving` — this resolves E13's note that Jack
+  didn't know the twins were twins). Lena would go "anywhere nobody knows his name" on the 26th; asked whether Becca is going to Youngstown.
+- [s24] Alarm 4 footage (the heel and pillow at 3:09 — seen; **Jack draws no conclusion**; no one names Doug); Margot fell asleep 2:50.
+- [s25] Theo's "They're still running that" about a promo (Jack never looks at the screen; no show name, no face). No WHO DAT text from Wes (he notices the absence).
+- [s26] Maria wants Becca at Christmas; Frank "in the garage a lot." [hedge] Becca's thank-you card to Maria. [ma lena] Maria knows "the veil girl" had a
+  fidanzato; Jack told her: not anymore.
+- [s27] Antonio Rinaldi read aloud. **Julian stood inside the doors at the first Nora and left before Communion** (seen; no meaning attached).
+- [s27a] **Julian messaged Lena on Facebook Tuesday and asked her to Bastille Thursday Nov 12 to hear the new song (postponed from Nov 5); Julian told Lena
+  Jack promised to stay to the end** (`lena_julian_bastille`). Jack does **not** know Julian is interested in her; he sees an invitation to a gig.
+- [s28a] Lena: "Ask me again in a week." (about the table).
+
+#### Lena
+- [s01 → s06/s04] Jack and Becca are official: [told] from Jack on the landing at 8:04 / [later] from Mrs. Fitch in the vestibule Thursday; FB [not hedge].
+- [s12] **Jack wrote Hale nine pages from Ohio and has the same card**; Hale has used three. **Hale read the start of her own margin aloud and stopped**
+  (she knows what it said; she saw Jack start a second name Monday).
+- [s15] Why Jack wrote: [candor≥54] the summer at sixteen he quit Mass and "something happened that fall" (no more) / [else] he read Hale at sixteen, wrote at
+  seventeen. (`lena_knows_jack_postcard` — mutual knowledge now spoken.)
+- [s16] The cards' postmarks and the Folgers ring.
+- [s17] [french/oui/browns] Jack's Mooney French/manners/Browns. **She does not know Jack understood *Quelqu'un devait demander*.**
+- [s19] [go] Jack went to confession after her. [pew] he stayed in the pew for her.
+- [s20] [tips/pocket] Jack's gift to the basket (seen).
+- [s22] Jack is going home for Thanksgiving; Becca is going to Idaho. [costigans] Glenwood Thanksgiving incl. Danny's chair (she doesn't ask); she sees him stop
+  before a sentence and does not know what it was. **She does NOT know Jack plans to ask her to Youngstown** (on every path).
+- [s25] Becca learns the Who Dat from her; sees Becca's early WHO DAT.
+- [s27a] She tells Jack about Julian's Bastille invitation; [go] Jack told her to go; [becca] Jack will bring Becca.
+
+#### Becca
+- [s01] Jack said yes (all variants; [hedge] "ours till Thanksgiving," which she honors on Facebook). Jack's Greyhound plan.
+- [s06] [not hedge] told Mrs. Fitch Wednesday. [s08] Hale's verdict on her faith. [s12] the postcards; Caleb's letters.
+- [s25 | told] **Jack means to ask Lena to Youngstown for Thanksgiving** (`becca_knows_lena_ask`). She zips her lips: "It's yours to ask. I'm not *allowed*."
+  **LIVE RISK for E15–E16:** Becca must not tell Lena; she may ask Jack "Did you ask her yet?" only out of Lena's earshot. On this path, E16's breakup scene
+  may have her name it ("You were going to bring *her*.") — the room's call; never as a gotcha.
+- [s25 | bus] the Greyhound; she'll pack a survival bag (E17 SBA).
+- [s26] Maria's Christmas invitation: **Becca does not know yet** — E16 route: Maria writes her directly (as in October).
+
+#### Others
+- **Theo** [s03] the status; [s05] Jack's answer to "Are you happy?" (`e14_happy`); [s25] his seating napkin redrawn by Lena; he recognizes the promo (🔒
+  Skye's show; he says nothing more). Holds everything; says nothing.
+- **Laney** [s03 | hedge] saw Becca hug the cashier; [s11] saw Lena's "leave the light on" land (white under her freckles); [s16] rode home with Becca and Caleb
+  [caleb]. Knows everything Lena tells her (Julian's message: assume yes by Monday).
+- **Margot** [s21] Jack's position on Stupak (`e14_bill`); [s24] she fell asleep on her own stakeout (Theo, Kevin, Jack saw the footage).
+- **Kevin** [s24] the footage; [s25a] Odyssey glass.
+- **Hale** [s12] Jack's and Lena's letters (he always knew); Lena's margin (he read and elided it). [s13b | hale] Jack told him that was enough.
+- **Caleb** [s12] Hale answered Jack and Lena, not him. [s13a | caleb] told Jack about the four letters.
+- **Yusuf** [s08] Jack asked after Tariq on Thursday.
+- **Mrs. Fitch** [s06] Jack and Becca are together.
+- **Mémère** [s17] Jack exists, is "le garçon de l'Ohio," is skinny (via Wes); [oui/browns/french] his manners, the Browns, his French.
+- **Maria** [s26] Becca is Jack's girlfriend (Gina via Facebook [not hedge] / Becca's card, inferred [hedge]); Becca goes to Idaho for Thanksgiving; Jack takes
+  the bus. [ma lena] **A friend from school, Lena ("the veil girl"), might come for Thanksgiving; her fidanzato is over** (`maria_knows_lena_maybe`). **LIVE
+  RISK:** Gina is Lena's Facebook friend — E15 must gate any Gina–Lena contact so Lena does not hear of the invitation before E15's tag. E16's Maria call
+  branches: "And the friend? Lena?"
+- **Nonna** [s26] "E la ragazza?" (unanswered).
+- **Danny** [s28] per `e14_danny`: hey / the truth (Lena single; Jack with Becca, "doing it right") / push-ups. Nonno's name was read (all paths).
+- **Julian** [s27a] Lena opened his message Sunday; he knows (from E13) that Jack promised to stay to the end.
+- **Gloria** [s21] Lena on the end stool Saturday night: "So this is waiting."

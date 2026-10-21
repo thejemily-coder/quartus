@@ -197,6 +197,17 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 90. **Decision recaps** (S1E13): once Jack has decided something on the page, later scenes re-explain it ("he spends it the way he
    decided to at six this morning," "at six this morning he decided not to say anything"). Trust the player who watched him decide; a
    later scene may show the decision acting, never restate it (a character may quote it back, once).
+91. **Trailing "which…" commentary clauses** (S1E14; ~14 per path in one draft: "which costs her," "which Jack gathers is rare," "which means she
+   was sitting beside it"): the narration glossing an action and stopping there. Max four per episode (#87's "which is how X" counts here too).
+92. **"Lightly" as a delivery tag** (S1E14; six in one draft, "Then, lightly," twice — a cousin of #72). Max two per episode; keep it for the line
+   where the lightness *is* the hurt.
+93. **"Never once" / "has never once seen him do that"** (S1E14; four in one draft, two of them a talker going quiet). Max one per episode.
+94. **"Stays where he/she/it is"** (S1E14; four in one draft; 3–4 in E02, E04, E10, E12). Max one per episode.
+95. **Becca's "has never [X] in her life"** characterization (S1E14 ×3, E08 ×3, E09 ×2, E13). Max one per episode.
+96. **"And goes in" as the exit button** (S1E14 ×4, E10 ×5). Counts with #88 door-closer exits (max two combined per episode).
+97. **"Ask me [tomorrow / after X / again in a week]" deferrals** (S1E14 ×3 in draft). Max two per episode, kept for the lines that matter (E14 keeps Theo's "Ask me after Thanksgiving" and Lena's text).
+98. **Phone-call silence beats** ("a silence on the line," "a pause in Breaux Bridge," "a silence on Glenwood Avenue"; S1E14 ×4). Max one per episode.
+99. **"A sound like…" similes and "inside a minute"** (S1E14 ×3 each). Max one each per episode.
 Small repeats to watch (S1E13): Lena's hand to the medal (budget it to the lie-tell; nine straight episodes of "her hand goes to the
 medal"); "the oatmeal cardigan" (name it once, then "the cardigan"); "the one angle where the screen lights" (retired after E13);
 "for exactly as long as it takes to" (E02, E04, E11, E13 — retired); Gloria "comes down the counter with the pot" (E04, E11, E12, E13 —
