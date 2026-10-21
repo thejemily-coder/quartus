@@ -762,3 +762,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
       formality, Theo's report); the **full story, including that Lena had decided to end it with Julian over Christmas,
       comes out in the New Orleans conversation**, where it lands as the cruelest near-miss of the whole misreading
       chain.
+    - **Overheard fragments (player):** in January–February 2010, Jack also **catches fragments of Theo and Laney
+      talking about it** that **don't make sense out of context** ("…she'd *decided*, Theo…", "…over Christmas…", "…the
+      laptop's in my closet…", "…don't you dare tell him…"). They stop or change the subject when he walks in. Plant
+      them so they click into place in New Orleans when Lena tells him she'd decided to leave Julian. The Knowledge
+      Auditor must ensure Jack never infers the full meaning early.
