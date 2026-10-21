@@ -4295,3 +4295,7 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 | 2026-10-21 | §16, §27, §21 #72 | Tellings after E11 (Laney → swan, caught; the Pacific still banked; E12 none); Lena resolve E11 played (5) and E12 plan (→ 4 → **6**); #72 marked `isidore`. | Ledgers. |
 | 2026-10-21 | open flags for the room | (1) `e12_told=="nobody"` would be Jack's first outright lie to Lena — E13+ should price it when it lands (room's call when). (2) Laney's Facebook *american gothic???* may reach Wes — **never his reason** (E13: God and the ring). (3) The duel tally: tilt E14 (postcards) and E16 (Manhattan Declaration) toward Lena. | Room's discretion preserved. |
 - Next: the E12 blueprint (Architect) from `outlines/s1e12.md`; Period Researcher: `period/s1e12-oct30-nov1-2009.md`.
+- Player directive (orchestrator): the hurt chain (Lena hurt Jack stayed with Becca → Julian; Jack hurt she didn't
+  wait → magnetic-girl Christmas texting while still talking to Lena as much as ever; Lena hurt he didn't wait → stays
+  with Julian, furious about the magnetic girl), all unspoken until NOLA; NOLA's physical register (constant unnoticed
+  affectionate touching → near-miss kiss → conversation). Showrunner: thread through E13 onward.

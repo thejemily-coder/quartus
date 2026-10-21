@@ -544,3 +544,20 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **After S1E12 (player feedback).** Theo "very good and sad"; Laney hilarious; Lena wonderful. **Loved the conversation
   as Lena and Jack move closer to honesty about themselves.** Becca remains so sweet that the player feels guilty in
   every scene (keep it).
+- **The hurt chain (player directive; the emotional engine of the re-plan).** There must be a little more *separation*
+  between Jack and Lena: not distance in their friendship (every attempted freeze collapses within minutes; keep that),
+  but **unspoken hurt about each other's choices** that drives each next relationship:
+  1. **Lena is single (Wes ends) and Jack doesn't break up with Becca.** Lena is **hurt but says nothing** (Jack sees
+     only traces). That hurt **leads her to Julian**.
+  2. **Jack is hurt that she didn't wait.** That hurt feeds **his Christmas-break conversations with the magnetic girl**
+     (Facebook, texts). **He still talks to Lena as much as ever** over the break; both threads run at once.
+  3. **When Lena finds out about the magnetic girl** (early S2), she's **hurt that *he* didn't wait** and
+     **increasingly mad at Jack about her**, and she **won't end it with Julian even though she knows it's a dead end**.
+  Neither ever says the hurt aloud until New Orleans. It comes out sideways (proxy fights, coolness with others,
+  overcorrections) while the friendship itself stays close.
+- **The New Orleans trip, physical register (refines the earlier beat).** Throughout the trip they keep finding
+  themselves **all over each other**: not making out or kissing, but **always together, with constant affectionate
+  touching they don't notice until it's happening, and neither wants to stop** (his arm around her at the watch party,
+  her arms around his waist on a parade route, her head on his shoulder in the car, hands found in a crowd). Theo,
+  Laney, Margot and Kevin notice everything. This builds to the **extremely-near-miss kiss**, followed by the planned
+  full, honest conversation without letting go, and Lena pulling away.
