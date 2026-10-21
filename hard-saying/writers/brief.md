@@ -570,3 +570,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Julian). Jack's reason should be legible to the player through his narration and choices, and genuinely admirable
   and genuinely wrong at once. When Lena starts with Julian, the waiting turns into Jack's own hurt ("she didn't wait").
   It all comes out in New Orleans: he was waiting *for* her; she thought he'd chosen.
+- **Tone of the stretch (Nov 2009 – Feb 2010): a proxy war.** The next several months of their separate relationships
+  are **functionally a proxy war between a couple that hasn't gotten together yet**, played as **darkly funny while
+  sad**. Each new relationship move reads (to the player, the alliance, and eventually them) as a volley at the other:
+  dates scheduled where the other will see, Julian and the magnetic girl unknowingly drafted as combatants, competitive
+  happiness on Facebook, escalating politeness, holiday-gift arms races. Theo and Laney run their mirrored covert ops
+  in the middle of it, and Margot and Kevin comment from the sidelines. The partners (Becca, Julian, the magnetic girl)
+  are never punchlines; the comedy is in Jack and Lena. The ache underneath is real: they're closer and more honest
+  with each other than with the people they're with.
