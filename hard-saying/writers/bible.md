@@ -4299,3 +4299,6 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
   wait → magnetic-girl Christmas texting while still talking to Lena as much as ever; Lena hurt he didn't wait → stays
   with Julian, furious about the magnetic girl), all unspoken until NOLA; NOLA's physical register (constant unnoticed
   affectionate touching → near-miss kiss → conversation). Showrunner: thread through E13 onward.
+- Player CLARIFICATION (orchestrator): the hurt chain does NOT mean distance. Jack and Lena stay just as close and keep
+  getting closer and more honest; the unspoken hurt about each other's relationship choices is what keeps them apart
+  and makes it believable. (A brief "distance around their relationships" note was written and withdrawn; ignore it.)

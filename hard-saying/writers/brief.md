@@ -544,9 +544,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **After S1E12 (player feedback).** Theo "very good and sad"; Laney hilarious; Lena wonderful. **Loved the conversation
   as Lena and Jack move closer to honesty about themselves.** Becca remains so sweet that the player feels guilty in
   every scene (keep it).
-- **The hurt chain (player directive; the emotional engine of the re-plan).** There must be a little more *separation*
-  between Jack and Lena: not distance in their friendship (every attempted freeze collapses within minutes; keep that),
-  but **unspoken hurt about each other's choices** that drives each next relationship:
+- **The hurt chain (player directive; the emotional engine of the re-plan).** **Clarified by the player: Jack and Lena
+  stay just as close as they've been, and keep getting closer and more honest.** No distance in the friendship, no
+  reduced time together, no cooling. The *hurt* each one's relationship choices cause the other is what makes it
+  believable that they don't simply get together: each keeps being wounded, silently, by the other's choices, and acts
+  out of that hurt (staying, starting something new), even as the friendship deepens. The sequence:
   1. **Lena is single (Wes ends) and Jack doesn't break up with Becca.** Lena is **hurt but says nothing** (Jack sees
      only traces). That hurt **leads her to Julian**.
   2. **Jack is hurt that she didn't wait.** That hurt feeds **his Christmas-break conversations with the magnetic girl**
@@ -561,12 +563,3 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   her arms around his waist on a parade route, her head on his shoulder in the car, hands found in a crowd). Theo,
   Laney, Margot and Kevin notice everything. This builds to the **extremely-near-miss kiss**, followed by the planned
   full, honest conversation without letting go, and Lena pulling away.
-- **Distance around their relationships (completes "the hurt chain").** Otherwise it isn't believable that they
-  don't get together. While each is seriously with someone (Becca, Julian, the magnetic girl), **they spend
-  noticeably less one-on-one time together**: the partners take real time; Jack and Lena keep some honorable
-  boundaries (fewer all-nighters, fewer reckless nights alone; group settings more often); and the unspoken hurt adds
-  coolness and missed connections (unreturned calls, plans that fall through, seeing each other across rooms). When
-  they *are* together, the closeness is still instant and real (no fake estrangement), but it's rarer and more
-  charged, and it costs something. The every-other-episode two-hander continues but can become shorter, interrupted,
-  or circumstantial during these stretches (a stranded night, a shared crisis), not engineered dates. New Orleans
-  breaks the dam precisely because it's the first long stretch together in months.
