@@ -2445,3 +2445,146 @@ tell Kevin "Looking for Laney" one step away after he told her "Nobody" (s17); E
 - Philip Neri: Florentine by birth, "Apostle of Rome." The Anglican plan was announced Oct 20 (a fortnight before Nov 1); the apostolic
   constitution is Nov 4/9 — not yet.
 - Sandoval Hall 1 is the lecture hall, not a residence.
+
+### S1E13 — "The Book of the Dead" (Sun Nov 1 – Wed Nov 4, 2009; tag Wed 12:58 a.m. PST)
+33 scenes. Forks: s07 → s07t (ring told or kept) → s07r (`e13_ring=="told"`) / s07a · s11b → s11h hall (`e13_hall` follow/kicked) /
+s11w window (`stay`) → s12. Duel **souls** ("The Souls of the Just," s03–s03v, **official**, Hale referees; Jack = Epicurus, Lena = the dead
+can be wronged). No two-hander (E14 per the every-other rule); Lena central. Per path ≈13.2k–14.1k words (mean ≈13.7k), 22 choices,
+6–12 keys, 1–4 whispers. Lena's resolve: s02 5 → s04 6 → s05 5 → s06 5 → s07 7 → s07d 7 → s09 6 → s11 **5 (ends 5)**. Jack's resolve
+ends 2–10. No dangerous window. Heat: one near-miss (s07d, `e13_heat`=1, no kiss, no "I want you" aloud). **Save-locked:** written for
+`saves/after-s1e12.json` (`e9_hey=="given"`, `e10_cor_truth`, `e11_decided=="wreck"`, `e11_glass=="hold"`, `e11_comeback=="whodat"`,
+`e12_stairs=="becca"`, `e12_hat=="off"`, `e12_told=="cross"`, `e12_wall=="path"`, `e12_ray=="maria"`, `e12_candle_q=="brother"`,
+`e12_occasion=="lit"`, `e3_sl=="poppy"`, `e4_walk=="empty_room"`, `e4_pier_cig=="lit"`, **`e6_wes=="fine"` (Jack does NOT know Josie's
+age or that the twins are twins)**, `knows_wes_ring`, `knows_wes_attic`, `danny_met_lena`, `saw_theo_wall`). The s07d reasoning passage is
+gated clause by clause (`e10_cor_truth`, `e11_decided`, `e12_stairs`, `e12_hat`) with neutral else-text. Gates: duel Ripostes
+`trait.wit>=35` (save 35: visible); s07e "I'm going to wait" `trait.candor>=53 || e13_reason=="asked"`; s07t Candor ungated (was honesty>=22).
+
+**Clock (binding).** Sun Nov 1 4:40 p.m. (dark early: DST ended that morning). Mon Nov 2 All Souls: full moon (11:14 a.m.); Hale emailed the
+duel sides **Sunday night**; seminar 1:00–2:12; the book 4:20; Sully's 5:30 kickoff. **Saints 35, Falcons 27 → 7–0** (Elam FG with :28,
+onside recovered by ATL, Sharper INT). **WS G5 Phillies 8, Yankees 6** (Utley two HR; the bar learns the final AFTER Sharper). Lena's 9:24
+text; the call 9:34 (11:34 p.m. CT) → **Wes ends it ≈10:10 p.m. PT** after half an hour of argument. s07 10:20; s07t 10:40; s07r 10:52;
+1:10, 3:40, 4:30, 5:50 (dawn), sunrise **6:12**; Priya 6:05; Lena up 6:20; Jack in 412 6:25, asleep by ~7, up 11:40 (**five hours' sleep**).
+Laney knew at 6:30 a.m.; told Theo at 9, Kevin in the hall. Kevin at 11:40: "thirteen hours"; Theo: "Thirteen and a half." Tue Nov 3:
+Theo's 19th (born Nov 3, 1990); Odyssey glass 2:30; post office 3:05; the Lincoln 5:45 / Portolá 6:05; Harbor Inn 6:35–8:45 (Lena leaves
+≈7:40); Anchor shift 9:00 p.m.–1:00 a.m.; Lena's text 11:58 p.m.; Becca's 12:49 a.m. Election night on TVs/radio: McDonnell (VA), Christie
+(NJ), Bloomberg third term; **Maine Question 1 left unresolved on the page**.
+
+**On-page canon (all paths unless marked)**
+- s01: Delgado kitchen; Newman stockpot (dent to the wall); Priya's laminated KITCHEN IS NOT A RESTAURANT + Lena's sticky note (MATTHEW 25).
+  Soup for the Harbor Inn night shift [knows_harbor_soup]. Laney slept since noon in the mitre ("I put a blanket on the Pope"). Theo's
+  saucepan espresso (his father's machine is upstairs in 412; he declined the stairs), the Mr. Coffee with the ringed carafe. Theo's shoes
+  unlaced "by an angel" (Jack did it; `e13_angel`: welcome/me/sacrament/wall). **Theo back under: no cracks.** [wall] "Nothing that happened
+  when I was eighteen counts… I'm nineteen on Tuesday." Lena: shepherd's crook in the 217 shower.
+- s01a: 4:52 JOSIE texts (three); Lena goes still, says nothing; "It's All Saints. They do the tombs." She takes the soup down by bus.
+- s02: Gina 8:52 a.m. (Ashley and Kelsey said nothing in religion); 9:14 "ma just texted. radio says theyre firing the gm. dad laughed.
+  first time since june." **Danny's fourth letter** (Friday Leavittsburg postmark): the C.O. in a gorilla mask, Reggie; **Browns 1-6**; "Ma
+  says Idaho writes her back. On stationery with cows on it."; Nonno's Mass at St. Brigid's; "I don't got anybody dead. I got the other
+  kind."; push-ups 150; [e9_hey given] margin: ABOUT TIME. WHAT'D SHE SAY BACK. Letter kept in the Carhartt's inside (button) pocket,
+  folded twice. Whiteboard: HALLOWEEN — AMERICAN GOTHIC (UNPLANNED) · BOTH; C 7 · B 6; pink pitchfork with a bow (Laney).
+- s03 duel: Hale on time (fourth time this term), sober, linen jacket on the chair; whiteboard (Epicurus *Menoeceus*, Nagel "Death" 1970,
+  *NE* I.10–11). Rule restated: **"The thing you least believe you can prove."** Lena has typed notes. Lena's moves: Aristotle/Ross "a very
+  unfriendly doctrine," Nagel's betrayed man; Monica at Ostia ("Put this body anywhere…," unattributed translation); 2 Macc 12:46 Douay
+  written on the board; "They gave my mother her medal back in a plastic bag in February." [Press] Hector, the antemortem person ("You
+  can wrong him backward"). Yusuf: "We pray for them too. We're not allowed to stop." Caleb: in his dad's church the dead were the only
+  people nobody prayed for. Verdicts V1–V5 (see record card). Hale, packing: "They can be wronged… You can't apologize to them." Lena
+  carries the marker out and brings it back. V3b line now: "Lucretius would be proud of you. He never finished either."
+- s04: St. Brendan's **Book of the Dead** (red ledger, Mrs. Fitch's pen on a cord, masking tape; ETERNAL REST cards with November Mass
+  times; "Buster (dog) — see me. D.F."). Choir rehearses Fauré *In Paradisum* for the 5:15 (organist: "We are not selling timeshares").
+  Lena writes *Lucille Guidry* and **Nora Calloway** ("She was my host at Preview Weekend. In April. Two days."). Osei: "Write them all.
+  He has a large book and a long memory." Jack writes **Antonio Rinaldi** (`e13_book`: nonno/blank — a dot on an empty line/candle).
+  [personal && !apology] Lena silent to him since Hollis Hall; she offers the pen anyway.
+- s04a: **Julian Park-Ellis meets Jack and Lena** (Jack's name given; Julian already knew his face from Bastille). Julian writes Nora's name
+  again in square capitals; "She prayed for people out of the newspaper." Sang with her freshman year (she had the high part). "She
+  mentioned you." (to Lena). "You left in the second chorus." / "So did she." / "Everybody does. I should cut it." Something new Thursday.
+  "I don't really — football." / "Nobody's asking you to, Julian." No narrator gloss linking "Fresno" to Nora.
+- s05 Sully's: Dale (Barry Sanders jersey; Lions 1-6, beaten by the Rams Sun Nov 1). Lena went to the 12:10 for All Souls. Theo's Who Dat
+  ("dialect coach — YouTube"), root beer for the bar; Margot: "a responsorial psalm with a point spread." Kevin: "a hemorrhage with a
+  jersey number." Laney/Kevin napkin scores. Lena rings the bell five or six times. Phone: LUC, REMY, TESS, JOSIE, JUDE, LUC [whodat]
+  DADDY. **No WES.** "I'm going to call him when we get back." "Go on, cher. I'm fine."
+- s06/s06a: east stairwell, 2nd-floor landing; window open six inches; full moon square on the concrete. **No 8:04 call tonight.** Lena:
+  "Sit on the stairs. Don't listen." The call: Mass since **September**; Pauger Street; the attic; "A little" (drinking); "A ring." "You'd
+  marry me anyway." Ruth, Peter, "pray with me." "I love you too." **Wes ends it** (`lena_wes_over`).
+- s07/s07t/s07r: "Don't say anything wise. I'll push you." Lena tells it in order: stopped in September; 8:04 every night; the woman in
+  the attic, cypress rafters, the uncle's axe; four years untold; drinks "a little"; **Mémère's ring** (given Easter, "for when," in his
+  desk drawer on Zimple Street); at the tomb on All Saints (St. Louis No. 3), Mémère: *Et la bague, Wesley? Quand?*; Josie texted in
+  capitals. Wes: "You'd marry me anyway. That's why I can't let you." Won't stand at the back of the church at their children's baptisms.
+  "He went somewhere I can't follow, and he won't come back where I am." (endCard tag). [ring told] s07r: "you let me find out from a
+  thirteen-year-old"; "Was it pretty?" "It should be. She wore it every day of my life." "Thank you for telling me now."
+- s07a: Mémère is 88, 4'10", a Buick "as long as a pew," checks tombs with a carpenter's level; the camcorder; the monks' fruitcake in
+  her closet; St. Odilo of Cluny. "I knew in September. He stopped yelling." [empty_room] callback. "He used it." (the leaving argument).
+  [cor_truth] "You didn't say yes — you drank." "I drank. I told you." "You saying yes now?" (`e13_care`). [tulane] "Not tonight, Jack.
+  Funny later. Stay now."
+- s07b: at three, Youngstown time/Nonna. "Tell me something true." (`e13_true`): Nonno (Sheet & Tube, Campbell Works, Black Monday Sept 19,
+  1977; "the mill was the only church that ever laid him off"; Nonna tells him the Browns at the stove in Calabrese) / [cross] **Theo at
+  the wall** ("He shouldn't be up there.") / Danny's line.
+- s07c: 4:30 "Give me one." [give] **Reliquary No. 8**: the east stairs, 11/3/09, on the back of an All Souls card ("All Souls" anyway);
+  she smokes half. [no] palm to palm. [pack] "Confiscated. Pending review."
+- s07d **the dawn (the player's question, answered):** she cries at first light; the Salve Regina said, not sung; Jack picks it up at
+  "Turn then"; her head on his shoulder; her fist in his shirt. He wants her and does not turn his head. **Why Jack stays with Becca:**
+  (1) Wes held a door open; whoever walks through walks through another man's worst night; (2) "take care of her" = take nothing;
+  (3) she wants to be *asked*, and you don't ask the night her house falls down; Jack is *sure* (his belief, not fact) she'd say yes to
+  anything that held still, and he wants a yes from someone who could say no; (4) Becca will not be the girl left the minute somebody came
+  free, and Lena will not be the reason anybody got left; he'll end it with Becca honestly, in due course; (5) the private one: free, he'd
+  be on those stairs every night; Becca is "the fence he can see." **The catch:** to tell her what he's waiting for would be to ask her,
+  so he can't tell her. Choice `e13_reason` (asked/care/fence/becca) + journal note "The wait."
+- s07e: Priya at 6:05 (fleece, orgo, early lab) leaves a Nature Valley Oats 'n Honey bar. Sun 6:12. "Jack. What are you going to do?"
+  (`e13_dawn`: nothing/need/coffee/[candor or asked] **wait — "For you to be okay."**). Exit: "Goodnight, Jack." / **"Good morning,
+  Lena."** (completes E11's pair).
+- s08: Theo dressed and shaved by 6:25; Poppy calls at 7 ("Pops"). Laney's Martinelli's with a gold bow ("Real champagne is for when it's
+  official, Theodore." "The bow is for hope."); Theo's place cards COSTIGAN · BROUSSARD, then BECCA LINDELL beside CAROLINE ASHBY VANCE.
+  Gift `e13_gift`: Gatsby (*old sport*) / **The Moviegoer** (Jack's own; Hale's postcard moved to his desk drawer; Theo zips it into the
+  gray camera bag) / shoofly pie, Gloria's lid: BAKED ALASKA (DAY-OLD); Laney: "sinful, in a Baptist way."
+- s09/s09a: Odyssey glass 6–0 → 7–0 (`e13_glass`). 11 bus to the Mission Street post office; flat-rate box to MME. ODILE BROUSSARD, BREAUX
+  BRIDGE, LA 70517 ("THIS SIDE UP. THIS IS A FRUITCAKE. BE NOT AFRAID."); "a solid in the eyes of God." Lena: "Is Becca coming tonight?"
+  "Theo invited her." **"Good. She should be."** Lena buys Theo's present at Driftwood. Receipt in *Big Sur*.
+- s10: Richard's white stretch Lincoln (driver **Ernesto**, Lompoc, 19 years); card on Meridian stock "Happy 19th, Teddy! —R." in his
+  assistant **Carys**'s capitals; Theo read it aloud as "Theodore," buttoned it into his blazer. Iced tea in the decanters. Laney sings
+  Alicia Keys's part through the sunroof. Becca's blue pearl-button cardigan; huckleberry jam (Ball pint, red gingham) — "the Idaho gift."
+  `e13_becca_car`: truth / partial / lie ("Studying." → `e13_lied_becca`).
+- s11: Harbor Inn dining room (2nd floor over the wharf; Kern on the piano; sea lions). **Caroline Ashby Vance** (fifty or so; Pasadena,
+  now La Cañada; hills still black; Hockney the Pomeranian; *Arroyo*, 1985, Vivienne Sterling, 13 episodes). **Poppy** (14, braces, red
+  Sidekick; [poppy] "You're the Catholic."). Caroline to Becca: "You're like a Western." / "We do have a ranch." Lena in a dark dress with
+  the Keds. Caroline: "how long have you two been together?" (`e13_caroline`: becca / lena — "he's taken… Best Saint, by acclamation" /
+  gothic). s11a: Becca "He's mine! Since the beach cleanup!"; **Lena: "Nobody's, as of last night, Mrs. Vance."**; Becca has had Wes on
+  her page since September. Margot: [becca] "Gallantry is a system for deciding things on other people's behalf." / [lena] "Gallantry by
+  abstention." / [gothic] "Very deft… Now nobody at this table knows anything." Laney: "In front of his *mother*." Poppy's bands and Tanner.
+- s11b: Richard calls at 7:06, four minutes ("a personal best"). Lena's gift: *Hitchcock/Truffaut* ("Because you talk in loglines"). Lena
+  leaves: "Hale's paper is due tomorrow" — **hand to the medal (the lie-tell)**. Laney kicks Jack. [hall] Dulce, a folded twenty, *domingo*;
+  "Go back in, Jack. It's his birthday." "Thank you for last night. Truly." (hand on his arm). [window] Poppy: "Then why'd you watch her go?"
+- s12: cake (three layers, 19 candles, one breath, "Still no Oscar"); Becca's toast: **St. Martin de Porres** (Nov 3; dog, cat, mouse, one
+  bowl). Laney pockets the BROUSSARD card (silver holder). **Kevin watches Maine Question 1, TOO CLOSE TO CALL** (🔒 one image; Margot
+  watches him; never glossed). Champagne: Theo tops up water glasses, **skipping Poppy**. `e13_glass_tue`.
+- s12a: Becca kisses Jack at the top of the stairs in front of Caroline ("Go wash things."). Gloria moved his shift to 9.
+- s13/s13a: KNX election → college station. Gloria: [maria] "The girl you're *seeing*. The apple." "And the pecan?" (`e13_gloria`: door —
+  reason-specific line, then "nobody holds a door that long without somebody else walking through it." / seeing / pie "Day-old"). Lena 11:58:
+  "Theo says you went to work. Go home after, Jack. Sleep. —L." **Becca 12:49: "Can we talk tomorrow? Nothing bad!! Good thing. :)"**
+
+**New flags.** `e13_angel` · `e13_souls_personal` · `e13_souls_apology` · `e13_book` · `e13_julian` · `e13_whodat` · `e13_landing` · `e13_sit`
+· `e13_ring` (kept/told) · `e13_care` · `e13_true` · `e13_told_theo_wall` · `e13_cig` · `e13_heat` · **`e13_reason`** (asked/care/fence/
+becca) · **`e13_dawn`** (nothing/need/coffee/wait) · `e13_gift` · `e13_glass` · `e13_becca_car` · `e13_lied_becca` · `e13_caroline` ·
+`e13_hall` · `e13_glass_tue` · `e13_gloria`. Long-arc: **`lena_wes_over`**, `knows_wes_faith`, `knows_julian`, `knows_lena_nora_host`,
+`lena_knows_jack_knew_ring` (on `e13_ring=="told"`), **`lena_read_wait`** (s11a, every path: Lena has read Jack's wait as him choosing
+Becca — writer-side only, never narrated; hurt chain link 1 → Julian; pays at S2E10). `reliquary` +1 and `jack_cigs` +1 on `give`.
+Journal: note **`wait`** ("The wait", per `e13_reason`); Lena card variants on `e13_ring` × `e13_told_theo_wall`; Danny card variant on
+`e9_hey`; record card per verdict.
+
+**Payoffs owed (E14+)**
+- `e13_reason` → the New Orleans conversation (he was waiting *for* her). `e13_dawn=="wait"` ("For you to be okay") is the line S2E10 pays.
+- `lena_read_wait` → Lena to Julian; she says nothing. Traces only (polite register, the medal), never distance or cooling.
+- `e13_told_theo_wall` → **live risk**: Theo asked Jack not to tell; if Theo learns Lena knows, it lands (no crack in E13).
+- Becca's "Good thing" talk (E14). Danny's "the other kind" and "Ma says Idaho writes her back" (E18). Hale's window line. Kevin/Maine.
+- `e13_lied_becca` ("Studying") sits in Jack's mouth. `e13_gift=="moviegoer"`: Hale's postcard is in Jack's desk drawer now.
+
+**Tallies after S1E13**
+- Reliquary: 7 → **8 on `e13_cig=="give"`** (No. 8, the east stairs, All Souls card). Lena smoked half.
+- Duel record (official): Lena wins V1–V4 (five–two); V5 no decision (five–one–one).
+- Lena's medal: s03b (the plastic bag, spoken), s11b (the lie-tell). Lena's "Costigan": duel lines and s03b Riposte only.
+- Saints 7–0; the Odyssey glass says 7–0. Anchor ratings: Jack still "Shoofly." Lena's resolve ends **5**.
+
+**Ledger housekeeping (from the S1E13 review)**
+- Browns were **1-6** until Sun Nov 1 (L 30-6 at Chicago); a Friday letter cannot say 1-7. Kokinis's exit hour Mon Nov 2 is unverified —
+  Gina's text is secondhand ("radio says").
+- E11 already spent "Goodnight, Jack." / "It's morning." / "Good morning, then." on this save; E13 completes it ("Good morning, Lena.").
+- Theo's own espresso machine (E03) lives in 412. Margot's notebook stays under the armor at this dinner (no notebook gag).
+- Delgado: ground to 4th = three flights; 412 to the 2nd-floor landing = two. Kevin's breakup clock = thirteen hours (not eleven).
+- The Wit line "Don't be funny right now" (E06) was not reused; E13's is "Not tonight, Jack. Funny later. Stay now."

@@ -1202,3 +1202,88 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Priya** [s17]: four back; Vance [carry] "Looking for Laney" / [else] "Back at the house" — written on her clipboard.
 - **Gina** [s18]: [proud] / [wit] Jack's text; [lena] nothing yet (Lena's line goes to Jack).
 - **Soledad**: filmed Jack's hat; Theo told her not to (🔒).
+
+### S1E13 — "The Book of the Dead"
+> Written for the after-s1e12 save only (see continuity.md S1E13). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01a] A JOSIE text (three) made Lena go still; he knows the name only (heard at Big Sur, E11). **Does NOT know Josie's age or that she is
+  a twin until Lena says "a thirteen-year-old" [s07r | ring told]** (`e6_wes=="fine"`). [knows_wes_ring] ring image, narration only.
+- [s02] Danny's fourth letter (Browns 1-6; Ma and Idaho; Nonno in the book; "the other kind"); [e9_hey given] Danny knows Lena said hey back
+  and wants to know what she said. Gina: Ashley/Kelsey silent; Ma says Dad laughed at the GM news (radio).
+- [s03] Hale emailed the sides Sunday night. Lena's citations (Ross, Nagel, Monica, 2 Macc, Hector). Yusuf: Muslims pray for the dead.
+  Caleb: in his father's church nobody prayed for the dead.
+- [s04] Lena's grandmother's name in the book; **Nora Calloway was Lena's host at Preview Weekend, April** (`knows_lena_nora_host`).
+- [s04a] **Julian Park-Ellis** by name (`knows_julian`): he and Nora sang together freshman year (she had the high part); Nora prayed for
+  strangers out of the obituaries; Julian "mentioned" — Nora mentioned Lena to him. [delgado] Nora lived in Delgado (Jack knew: 222).
+  Jack does not *know* "Fresno" is about Nora (no gloss).
+- [s05] Lena went to the 12:10 for All Souls. No call from Wes during the game.
+- [s06a/s07t] **Wes ended it** (`lena_wes_over`): stopped Mass in September (`knows_wes_faith`); Pauger Street attic, cypress rafters, the
+  uncle's axe, never told anyone; drinks "a little"; Mémère's ring (Easter, "for when," Zimple Street drawer); Mémère's question at the
+  tomb on All Saints; Josie texted Lena in capitals; Wes: "You'd marry me anyway. That's why I can't let you."; won't stand at the back at
+  baptisms. Lena: "He went somewhere I can't follow."
+- [s07a] Mémère: 88, 4'10", the Buick, the level, French at the tombs, a camcorder; St. Odilo; Lena "decided not to notice" in September.
+  [cor_truth] Lena knows Jack drank instead of answering Wes; [else] Lena believes Wes's "you said yes."
+- [s08] Laney: Lena told her at 6:30 a.m.; the breakup was "ten after ten last night." Laney told Theo at nine and Kevin (who asked).
+  Theo and Laney's Martinelli's and the COSTIGAN · BROUSSARD cards (the alliance; Jack sees two cards upside down).
+- [s10] Richard's Lincoln; the card in his assistant **Carys**'s hand; driver Ernesto (Lompoc; daughter at Cal Poly [partial]).
+- [s11] Caroline: Pasadena/La Cañada; *Arroyo* 1985 (via Margot); the Pomeranian Hockney. Poppy, 14. Caroline's question.
+  Lena: "Nobody's, as of last night." [s11b] Lena's Hale-paper excuse (medal touched — Jack sees the gesture, not its meaning).
+- [s11h | follow/kicked] Lena and Dulce, a folded twenty, *domingo* (nothing else understood). [s11w | stay] Poppy's question.
+- [s12] Kevin watching Maine (Jack sees it; no meaning attached). Margot watching Kevin.
+- [s13] Gloria's door line [door]. [s13a] Lena's 11:58 text (Theo told her Jack went to work); Becca wants to talk — "Good thing."
+
+#### Lena
+- [s01a] Josie's texts (Mémère's question at the tomb, the ring) — the first she hears of the ring.
+- [s06a] From Wes: September; the attic; the drinking; the ring; his reasons.
+- [s07t → s07r | `e13_ring=="told"`] **Jack has known about the attic and the ring since the tower on Columbus Day weekend**; Wes asked him
+  not to tell (`lena_knows_jack_knew_ring`). [`e13_ring=="kept"`] She does not know Jack knew.
+- [s07a] (already knew, E10) Wes asked Jack to take care of her; [`e13_care`] Jack's answer: no / partly ("I'd have come anyway") / joke.
+- [s07b | `e13_true=="nonno"`] Nonno: Sheet & Tube, Black Monday, "the only church that ever laid him off," Nonna at the stove.
+  [**`e13_told_theo_wall`**] **Theo was drunk at the wall at the Point on Halloween; Jack talked him down; he came away on his own** (she
+  says only "He shouldn't be up there."). [`danny`] Danny's line, "I got the other kind" (she doesn't ask what it means).
+- [s07d] Nothing of Jack's reasoning. [s07e] Only the spoken answer: `e13_dawn` (nothing / whatever you need / coffee, the 12:10 /
+  **"I'm going to wait." "For what?" "For you to be okay."**). She does NOT know what he is waiting for.
+- [s09a] Becca is coming to Theo's dinner (Theo invited her).
+- [s10 via s11a | `e13_becca_car=="truth"`] Becca knows Jack sat up all night with her (Becca says so at the table).
+- [s11/s11a] Caroline's question and Jack's public answer [`e13_caroline`]; **Becca: "He's mine."** → `lena_read_wait` (writer-side: she reads
+  the wait as Jack choosing Becca; she says nothing).
+- [s11b] Theo's father called for four minutes.
+
+#### Theo
+- [s01] Jack's answer about the shoes [`e13_angel`]; [wall] Jack tried to raise last night; Theo closed it. **Theo does NOT know Jack told
+  Lena about the wall** (`e13_told_theo_wall` is a live risk).
+- [s08] Lena and Wes are over (from Laney, 9 a.m.; the time ≈10:10). Jack was on "the stairs" all night (asked nothing).
+  [moviegoer] Jack's own copy, margins and all ("You never lend your books").
+- [s13a] Jack went to work (he told Lena).
+
+#### Laney
+- [s08] Lena told her at 6:30 a.m. [s10 | truth] hears Jack tell Becca he was up all night with Lena. [s11b] kicks Jack.
+  [s11h | kicked] he went. [s12 | laney] Jack's champagne in her glass. Pockets the BROUSSARD card.
+
+#### Kevin
+- [s08] The breakup and its time (from Laney, in the hall, because he asked). [s12] Maine (🔒; nothing on the page explains it).
+
+#### Becca
+- [s10] `e13_becca_car`: [truth] **Jack was up all night on the stairs with Lena; Wes broke up with her** / [partial] Lena got bad news /
+  [lie] Jack was "studying." [s11a] Lena: "Nobody's, as of last night." [s11 | becca] Jack's "Becca's with me." [s12a] Jack's shift at nine.
+  **Becca knows nothing of the ring, the attic, Theo at the wall, or Jack's reasons.**
+
+#### Margot
+- [s11] Caroline's *Arroyo* (she researched it on the spot). [s11a] Jack's answer to Caroline [`e13_caroline`]. [s12] Kevin and Maine (she
+  watches; no line). [s12 | water] Jack refused the champagne.
+
+#### Julian
+- [s04a] Jack's face (Bastille, left in the second chorus) and now **Jack's name**; [delgado] that Jack lives in Delgado. Lena's name only
+  as "She was my host" context — he knew of her from Nora ("She mentioned you"). **Julian learns nothing about Wes.**
+
+#### Others
+- **Hale** [s03]: Lena's mother's medal in a plastic bag (said in seminar); [personal] Jack's jab about her grandmother.
+- **Caleb, Yusuf** [s03]: the same. **Osei** [s04]: Lena and Jack at the book.
+- **Gloria** [s13 | door]: Jack won't be "the next guy at the door"; Lena's boyfriend let her go Monday; one reason per `e13_reason` (asked:
+  she'll be able to say no / care / fence: "If I were free I'd be at her door by Thursday" / becca: the girl he's seeing gets her own
+  ending). [seeing] "Seeing." Merle heard it. [pie] nothing.
+- **Caroline, Poppy** [s11]: Becca is Jack's ("He's mine"); Lena is "Nobody's, as of last night." [s11w] Poppy saw Jack watch Lena go.
+- **Dulce** [s11h]: Lena's twenty; *domingo*.
+- **Priya** [s07e]: Jack and Lena on the east stairs at 6:05 a.m. (granola bar; no words).
+- **Danny** [s02 via letter]: Lena said hey back [e9_hey given]. **Ma** knows Idaho (Becca) writes her.

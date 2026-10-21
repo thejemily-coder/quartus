@@ -1544,8 +1544,8 @@ Frank keeps a space heater, a radio and a Stroh's fridge. Parish: **St. Brigid o
   the party, a Sigma Rho won Best Sinner as Madoff in an orange jumpsuit and Jack looked at the ice devil instead (🔒 Danny; the two jumpsuits never
   joined on the page).
   **(E13 plan:)** **Danny's fourth letter** (in the Delgado box Mon Nov 2; it answers Jack's letter after Columbus Day, "I told her hey"): "About
-  time. What'd she say back."; Halloween at Trumbull (a C.O. in a rubber mask; nobody laughed, then everybody did); the Browns at 1–7 — "Pop says
-  they're gonna fire somebody. They should fire the Browns." (they fire the GM that same Monday; Gina: *they fired the gm. dad laughed. first
+  time. What'd she say back."; Halloween at Trumbull (a C.O. in a rubber mask; nobody laughed, then everybody did); the Browns at 1–6 (Friday postmark; 1–7 only after Chicago, Sun Nov 1) — "Pop says
+  they're gonna fire somebody. They should fire the Browns." (the GM is out that same Monday; Gina, secondhand from Ma: *ma just texted. radio says theyre firing the gm. dad laughed. first
   time since june*); **"Ma says Idaho writes her back. On stationery with cows on it."** (the knife — E18's "Next time you bring Idaho"); and
   the sentence that stops Jack cold: **"Ma's getting Nonno a Mass at St. Brigid's. Put him in that book they got at your church. I can't get to
   one. I'd put mine in but I don't got anybody dead. I got the other kind."** (🔒 Mikey lives; never glossed.) Gina, Mon 7:40 a.m. ET: *ashley
@@ -3244,9 +3244,9 @@ wants a yes from someone who could; Becca will not be the girl he left the minut
 he'll wait, decently, and end it with Becca honestly, in due course). **"Jack. What are you going to do?"** — every true answer is misheard
 (`e13_dawn`: "Nothing. Not today." / "Whatever you need." / "Coffee. Then the 12:10." / [candor] **"I'm going to wait." "For what?"
 "For you to be okay."**) — the line New Orleans pays (S2E10: he was waiting *for* her; she thought he'd chosen). "Goodnight, Jack." /
-"It's morning." **Tue:** Laney knows by nine (the walls of 217); **the alliance's first false dawn** — Martinelli's in the mini-fridge
+"Good morning, Lena." (completes E11's "It's morning" / "Good morning, then" pair; not a first reversal) **Tue:** Laney knows by nine (the walls of 217); **the alliance's first false dawn** — Martinelli's in the mini-fridge
 ("Real champagne is for when it's *official*, Theodore"), Theo's redone place cards for the Harbor Inn, COSTIGAN beside BROUSSARD; Kevin:
-"Respectfully — her boyfriend broke up with her eleven hours ago." **Theo's 19th, back under** (Poppy on the first ring at seven; Jack's
+"Respectfully — her boyfriend broke up with her thirteen hours ago." (Theo: "Thirteen and a half." Breakup ≈10:10 p.m. Mon) **Theo's 19th, back under** (Poppy on the first ring at seven; Jack's
 gift, `e13_gift`). **2:30, the Anacapa lot → the Mission Street post office:** the Odyssey glass still says 6–0 (she didn't update it —
 the trace); Jack writes 7–0 with her La Vang polish (path); Lena mails Mémère the monks' fruitcake to Breaux Bridge ("She asked the
 question I didn't." / "It's a fruitcake, sir. It's a solid in the eyes of God.") — close, funny, honest; one trace: "Is Becca coming

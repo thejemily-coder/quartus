@@ -186,6 +186,22 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 85. **The laugh that startles a bystander** (S1E12): Lena laughs out loud and a costumed stranger turns, wakes, sits up. Once per episode.
 86. **Osei's delight tags** (S1E12; #65 applied to him): "entirely serene," "to enjoy what comes next," "enjoying every one of them,"
    "never once looked anything but glad." Max two per episode; let his lines carry the joy.
+87. **"Which is how X" glosses** (S1E13; seven in one draft, plus E04 ×2, E05 ×2, E07, E09): the narration explaining a gesture and
+   buttoning on it ("which is how he applauds," "which is how Gloria ends a conversation," "which is a kind of trust," "which is generous of
+   her"). Max one per episode (E13 keeps Lena's "She is funny now, which is how Jack knows how bad it is").
+88. **Door-closer exits** (S1E13; E07 had twelve "on its closer"): a door that "sighs shut," "eases shut on its closer," "swings shut on
+   its felt" as the button on somebody leaving. Max two per episode; let the person go without the hardware.
+89. **Reductive glosses on touch** (S1E13): "It's a shoulder. It's what the step has room for." / "It isn't that kind of holding. It's a
+   hand." / "It isn't much to look at. It's what a man… has to give." The #10 "not X, it's Y" shape aimed at intimacy. Once per episode;
+   the touch is enough.
+90. **Decision recaps** (S1E13): once Jack has decided something on the page, later scenes re-explain it ("he spends it the way he
+   decided to at six this morning," "at six this morning he decided not to say anything"). Trust the player who watched him decide; a
+   later scene may show the decision acting, never restate it (a character may quote it back, once).
+Small repeats to watch (S1E13): Lena's hand to the medal (budget it to the lie-tell; nine straight episodes of "her hand goes to the
+medal"); "the oatmeal cardigan" (name it once, then "the cardigan"); "the one angle where the screen lights" (retired after E13);
+"for exactly as long as it takes to" (E02, E04, E11, E13 — retired); Gloria "comes down the counter with the pot" (E04, E11, E12, E13 —
+give her a new entrance); sunlight that "lies down" a long room; "warm from her" (once an episode); "the first real cold" (once); the
+suppressed laugh built from stock parts (#14: "before she can stop it," "the back of her wrist," "when she can").
 Small repeats to watch (S1E12): the clock — **2:00 a.m. happens once** at a DST fall-back; only the 1 o'clock hour repeats (never "the
 second two o'clock"); Lupe's "Para los novios" / "We're friends" / "Claro" (E08 — a callback must move); Lena's untouched champagne
 (observe it once, pay it once); the Act Three tableau (barefoot, saddle shoes in hand, the yellow line — establish, spend once more);
