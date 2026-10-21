@@ -815,3 +815,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Lena only admits it **after they're married (or at least engaged)**, adding that **she still doesn't like her**.
   Keep it entirely off Jack's screen until the confession (no hints the Knowledge Auditor would flag). Skye may make
   one tiny, inexplicable remark to Jack in that period that only makes sense in hindsight (optional, room's call).
+- **Skye and Christmas details (player).**
+  - **Skye's show:** a **CW-style prep-school teen soap** where she plays **the sweet, virginal good girl everyone
+    protects**, the opposite of who she is. She finds it hilarious that Jack's family knows her as "the nice one" (play
+    against the Costigans' alarm: Nonna and Maria clocked the Facebook photos, not the character).
+  - **Skye's real name: Mary Katherine** (Callender), baptized Catholic, named for a grandmother she barely knew. The
+    irony isn't lost on Jack. A late intimacy when she tells him.
+  - **The Broussard Christmas (heard through Lena's calls and messages):** **bonfires on the levee** on Christmas Eve to
+    light the way for Papa Noël; **Réveillon** after midnight Mass (Lena describes every dish); **the empty chair**
+    (Lucille, lost in the storm in 2005; still raw at Christmas years later); and **Saints fever** (the first loss came
+    Dec 19, 2009; the family is losing its mind heading into the playoffs; verify the remaining 2009 results).
+  - **Christmas break opens Season 2** (S1 ends on the finale's airport sting), and **at least one entire episode** is
+    devoted to the break itself: Youngstown, the constant calls with Lena, Skye's texts, the Costigans finding Skye's
+    Facebook, Theo running into Skye in LA, and Lena privately deciding to leave Julian (off-screen).
