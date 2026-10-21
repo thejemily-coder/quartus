@@ -472,3 +472,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   means reckless in deed: somewhere they shouldn't be, something they shouldn't do, out past curfew and good sense,
   thrilling. It is not physical crossing. The slow burn holds (charged near-miss allowed; no kiss this early unless
   the Showrunner's plan has truly earned it; Wes and Becca are both still in the picture). Hard rules apply.
+- **After S1E10 (player feedback).** "So much bittersweet everywhere. Laney was the standout." The player reads the
+  two-hander as having **put expiration dates on both relationships** (Jack/Becca and Lena/Wes), with **Jack choosing
+  to push through anyway because of the engagement ring Wes showed him** (he won't be the one to wreck that). That is
+  the player's understanding of where things stand. Honor it: Jack's motive for staying (and for staying away) is the
+  ring, and both relationships are now visibly running on borrowed time. Keep the availability-windows rule in mind for
+  how each one ends.
