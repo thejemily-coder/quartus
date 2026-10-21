@@ -541,3 +541,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   invested to notice where they're going. **They arrive at the Lighthouse back porch** (where they first met), and she
   realizes it just as he **goes down on one knee and proposes as his closing argument**. (It's an argument duel that
   ends in a proposal.)
+- **After S1E12 (player feedback).** Theo "very good and sad"; Laney hilarious; Lena wonderful. **Loved the conversation
+  as Lena and Jack move closer to honesty about themselves.** Becca remains so sweet that the player feels guilty in
+  every scene (keep it).
