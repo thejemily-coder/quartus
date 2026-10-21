@@ -464,3 +464,5 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   unlikely unless they've broken up first. The room decides, consistent with the availability-windows rule (Jack is
   still with Becca).
 - **Hale long-term:** room decides (he survives college).
+- **After S1E09 (player feedback).** "Fun that was deeply uncomfortable. Laney was hilarious." The Columbus Day
+  weekend landed as designed.
