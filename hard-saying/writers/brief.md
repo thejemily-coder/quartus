@@ -635,3 +635,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **On Lena: she clocks it instantly.** She knows on day one that Jack is in love with Lena and decides to win anyway.
     Gracious to Lena's face, never once fooled. (Lena can't stand her; Laney is openly rude, privately grudgingly likes
     her.)
+  - **Voice: playful and performative.** She's always a little "on": voices, bits, characters, banter like a scene
+    partner. You never quite know when she's being real, and **when she drops it, it's devastating**. Her humor
+    register must be distinct from Laney's (Laney is Southern pageant chaos; Skye is a professional's improv) and from
+    Theo's (Theo lies by over-specifying; Skye performs).
+  - **How it ends (after New Orleans):** the room decides what fits her character best when we get there.
+  - **After:** **she stays in their orbit through Theo** (parties, LA trips, an awkward and eventually warm friendship).
+    Lena's running joke about her (the cheap fallback argument) has a real face attached.

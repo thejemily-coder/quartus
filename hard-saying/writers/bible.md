@@ -4510,3 +4510,6 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
   and relationship growth; (2) "the conversation" (marriage, kids, NFP, life, where, AND the Ephesians 5 discussion)
   happens late Spring 2011 (SOPHOMORE year, ~a year into the relationship; player correction), initiated by Lena. It SUPERSEDES the junior-year placement of Ephesians 5. Re-place in the
   arc registry and S2 map.
+- Player co-design of the magnetic girl (orchestrator): SKYE CALLENDER (see brief, "THE MAGNETIC GIRL"). Showrunner:
+  replace any prior design with this one in full; keep the arrival timing per the re-plan (meets Jack before Christmas
+  2009; FB and texts over break; dating from Jan 2010).
