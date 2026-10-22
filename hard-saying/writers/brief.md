@@ -1020,3 +1020,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   down yet (she can't bear to, or hasn't told her parents). It comes down later (room's call: Becca removes it over or
   after Thanksgiving, and Jack sees the notification, or it vanishes quietly). Alliance and Lena reactions to the stale
   status are available too. Land the texts at the opening of E18 (Thanksgiving texting) if E17 is already locked.
+- **E19–E22 design round (player).**
+  - **December ensemble set piece (E19–E21): Fr. Osei's Newman Christmas/Advent party**: white elephant, a terrible
+    choir, Laney spiking the punch; Jack shows up late from Skye; Lena brings Julian; everyone's there.
+  - **Julian's song lands in E20** (mid-December, Bastille): Lena hears it privately first, then publicly with Jack in
+    the room, right before the finale.
+  - **Finale (E22) last night: they walk the empty campus.** Everyone else has gone home; they walk every place from the
+    semester (the Lighthouse porch, the Point path, St. Brendan's, the Delgado lounge, the Anchor, the Lagoon bench),
+    talking until the airport shuttle. Both nearly say it. Then her flight to New Orleans, his to Youngstown, and his
+    phone buzzes: Skye.
