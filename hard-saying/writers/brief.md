@@ -957,3 +957,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     Skye makes him laugh and talk, that they have their own jokes and arguments. Play the gap: Lena attacks the surface;
     the player and Jack (eventually) understand she's hurt by the depth. Jack defends Skye on the substance, which only
     makes it worse. Payoff in New Orleans (Lena admits it was never the photos).
+- **Jack and Skye: politics becomes part of their argument life (player).** After the fundraiser, politics joins books
+  and people in their running intellectual sparring. Skye is an LA liberal by upbringing and industry, sharper and more
+  self-aware than Jack expects (she knows the hypocrisies of her world firsthand). Jack is the right-leaning Rust Belt
+  Catholic of the politics map. Topics fitting Jan–Feb 2010: health care (the bill's fate after Scott Brown wins
+  Massachusetts, Jan 19), *Citizens United* (Jan 21), the State of the Union (Jan 27), abortion and the Stupak fight,
+  unions and the auto bailout (Frank, Lordstown), immigration, Hollywood and money. They genuinely enjoy it; she
+  argues to win and to learn, and her "explain it to me while we walk" rule continues. It contrasts with Jack and
+  Lena's arguments: with Skye politics is a game between people who differ; with Lena it's family (same faith,
+  different conclusions), which is why Lena's version cuts deeper. Verify dates with the Period Researcher.
