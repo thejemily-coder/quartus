@@ -1,0 +1,496 @@
+{
+ "scenes": {
+  "s04": {
+   "slug": "FRIDAY · 8:20 PM · NEWMAN HOUSE",
+   "music": "The St. Brendan’s Choir — “Joy to the World”",
+   "set": {
+    "resolve.jack": "+1",
+    "resolve.lena": 4
+   },
+   "body": [
+    "The carol meets him on the steps before he’s got a hand on the door: an old upright played from the shoulders, a man’s voice on the melody big enough to bring boats in, and twenty more half a bar behind it and gaining. *Joy to the world.* Advent has thirteen days left to run. Inside, they’ve started without it.",
+    "Father Osei has the door, in a gray cardigan over the clerical shirt, with a stack of coats over one arm. He looks at Jack’s hands before he looks at Jack.",
+    "“You look like a man who has pushed a car.”",
+    "“I did.”",
+    "“There’s Lava under the kitchen sink.” He stands aside, and the carol goes out past the two of them into the dark, and Jack goes the other way, in.",
+    "The front room and the kitchen are one long noise tonight. The plaid couch has been shoved back against the ping-pong table and its dead net; in the corner a Fraser fir carries an angel tipped sideways, listening for something; on the mantel the Advent wreath has its two violet candles going and the rose one waiting. Folding chairs, in rows that held for about a verse. Under the front window the white-elephant table, heaped in paper, with Becca’s clipboard on top. And in the pass-through to the kitchen, in Mrs. Fitch’s cut-glass bowl, the punch — pink, with a crowd around it.",
+    "The organist is at the upright in a sweater with a ship’s wheel knitted into the front, bringing his hands down on the chords like he means to be heard in Monterey. Mrs. Fitch is at his shoulder with a cup of punch and the descant. “Gus,” she says, between lines, “you’re *dragging*.” He doesn’t speed up. Gus. A semester of Sundays, and the voice has a name.",
+    "The Lava is where the priest said, behind the Comet, a gray bar worn down to the shape of somebody’s grip. Jack runs the tap as hot as it goes and does one hand at a time. The left waits its turn over the front pocket of his jeans, over the RAZR, black to the wrist, leaving a print on the denim. Through the pass-through Laney, at the punch bowl, finds the hand with her eyes and keeps them on it while she drinks. Behind her, coming in from the porch with Julian, Lena follows Laney’s eyes to it.",
+    {
+     "if": "left_second_chorus",
+     "text": "Lena gets to the pass-through first. She’s in the cardigan, with a red ribbon in her hair, and she ladles a cup of punch and holds it out across the counter to him with her eyes on the bowl. “Good evening, Jack.” Kind, and formal, and finished. He takes the cup in his clean hand."
+    },
+    {
+     "if": "left_second_chorus && e21_reply==\"wit\"",
+     "text": "“Through the glass,” she says, and nothing more."
+    },
+    {
+     "if": "left_second_chorus && e21_reply==\"candor\"",
+     "text": "She looks at him over her own cup, once, and drinks."
+    },
+    {
+     "if": "left_second_chorus",
+     "text": "Julian, at her elbow, is decent anyway. “You missed the bridge,” he says. “It’s the best part. I’ll play it for you sometime.”"
+    },
+    {
+     "if": "!left_second_chorus && e21_reply==\"restraint\" && julian_she_wanted",
+     "text": "Julian reaches across the counter first and shakes his hand, black and all, warm, and doesn’t look at his own afterward."
+    },
+    {
+     "if": "!left_second_chorus && e21_reply==\"restraint\"",
+     "text": "Lena ladles herself a cup on the other side of the counter. She’s in the cardigan, with a red ribbon in her hair. “You didn’t answer me.” “I know.” “I know you know.” She drinks, and her face changes at the punch."
+    },
+    {
+     "if": "!left_second_chorus && e21_reply!=\"restraint\" && julian_she_wanted",
+     "text": "Julian reaches across the counter first and takes his hand, black to the wrist, and shakes it as if it were clean. “Gus needs a bass,” he says. Lena, ladling, in the cardigan and a red ribbon, says “Youngstown,” over the counter, and drinks, and her face changes at the punch."
+    },
+    {
+     "if": "!left_second_chorus && e21_reply!=\"restraint\" && !julian_she_wanted",
+     "text": "Lena, ladling, in the cardigan and a red ribbon, says “Youngstown,” over the counter, and drinks, and her face changes at the punch. Julian lifts his cup to him from her elbow."
+    },
+    "Jack turns the tap back on and goes to work on the other hand. He scrubs till the water runs gray and stays gray. The black comes off the backs of his hands; under the nails it stays, and will, he can tell, for days. When he looks up again the pass-through is full of other people.",
+    {
+     "if": "e20_mass==\"noon\"",
+     "text": "Becca comes around into the kitchen with the clipboard on her hip and finds him at the sink. “Line three! You *came*.” She shows him: COSTIGAN, in her block capitals. “Ten dollars, nothing that eats. Mrs. Fitch is checking.”"
+    },
+    {
+     "if": "e20_mass!=\"noon\"",
+     "text": "Becca comes around into the kitchen with the clipboard on her hip and finds him at the sink. “You’re on my list anyway,” she says, and shows him: COSTIGAN, in block capitals. “Line three. Kevin vouched. Ten dollars, nothing that eats — Mrs. Fitch is checking.”"
+    },
+    "Tyler Brandt comes in for punch and stays for the sink, a hand like a catcher’s mitt on Jack’s shoulder. “Brother. Brian Kelly.” He looks down into the Lava. “He left an *undefeated* team. In the *night*. For Notre *Dame*. I’m from Cincinnati. I don’t know whether to pray for him or *at* him.”",
+    "Bridget McNulty is at the coffee urn by the back door, filling it from a can of Folgers, and she’s the only one tonight who looks at his face instead of his hands. She puts a dish towel over his shoulder on her way past and doesn’t say anything about it.",
+    "In the front room Joey Abruzzo is explaining to two sophomores from the choir, at volume, that four of Mrs. Fitch’s lemon bars count as one if they’re touching. Peter Haddad is up a stepladder straightening the angel with Kenzie holding the ladder for him; he gets the angel upright and lets go, and the angel leans again.",
+    "Theo comes in off the porch in a black cashmere turtleneck and takes up a place against the refrigerator beside Laney, who is in black velvet to the knee. “You match,” Jack says, scrubbing.",
+    "“We’re in mourning,” Laney says.",
+    "“For what?”",
+    "“Advent,” says Theo.",
+    "Margot has the step stool in the corner by the back door and a Moleskine open on her knee. “For the column,” she says, when he looks at the notebook. “Field notes on a Catholic Christmas party, held, I’m informed, in Advent.”",
+    {
+     "if": "e20_doug==\"candor\"",
+     "text": "“My whiteboard still has an unexplained witness, Costigan.” She turns a page. “It’s my only open case.”"
+    },
+    {
+     "if": "e20_doug!=\"candor\"",
+     "text": "“Six-ten this morning,” she says, writing. 305 has the front walk. “I’ve stopped counting. It was getting sad.”"
+    },
+    "Kevin is by the refrigerator in a green sweater with a white snowflake across the chest that his mother mailed from San Jose, worn, he has told everybody, out of love and under protest.",
+    {
+     "if": "e20_doug==\"control\"",
+     "text": "“The bell works,” he tells Jack, low. “Doug got as far as the hall Wednesday. I walked him back.” He tastes the punch, and looks at Laney."
+    },
+    {
+     "if": "e20_doug!=\"control\"",
+     "text": "Kevin tastes the punch, and looks at Laney."
+    },
+    "The punch is peppermint schnapps and something clear that Laney, asked, calls “a Texas thing,” and it has been working on Mrs. Fitch for three cups. On the second verse she comes in a third above everybody, high and sure and gloriously in tune, and Gus turns half around on the bench to see where it’s coming from. Father Osei comes through with the coats put away, takes a cup, tastes it, and holds it up to the light over the stove. Laney is studying the angel. Osei sets the cup down, lifts the whole bowl off the pass-through in both arms, and puts it on top of the refrigerator next to the fire extinguisher. “Gaudete is Sunday, Miss Price,” he says. “You’re early.”",
+    "Kevin reaches into the black velvet clutch under Laney’s arm and comes out with a silver flask the size of a prayer book. “Respectfully,” he says, and it goes into his own back pocket.",
+    "By the tree Theo has his iPhone out, and he reads off it, for everybody, in his voice for the intentions at the twelve-ten, grave and even, as if he were asking prayers for the sick: “…*an indefinite break from professional golf.*”",
+    "Mrs. Fitch, between verses, not turning around: “Good. He should go home.”",
+    "Laney was in the front room getting out of her coat when the priest said it at the door. She leans on the pass-through on both elbows and considers his hands in the sink. “Fireman. Whose car did you *push*?”"
+   ],
+   "choices": [
+    {
+     "text": "“Kevin’s.”",
+     "tag": "Lie",
+     "set": {
+      "e21_hands": "lie",
+      "soul.honesty": "-1"
+     },
+     "response": [
+      "“Kevin’s.”",
+      "Kevin, from the refrigerator, not looking up from Laney’s flask: “My mother’s car is a Honda. Hondas start.”",
+      "By the tree Theo has put his phone away and is watching Jack’s hands."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“The Pope’s.”",
+     "tag": "Wit",
+     "set": {
+      "e21_hands": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“The Pope’s.”",
+      "“The Pope has a *driver*, fireman.” She takes a sip of what’s left in her cup, sorrowfully, since it’s the last of it.",
+      "By the tree Theo has put his phone away and is watching Jack’s hands."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“A friend’s.”",
+     "tag": "Candor",
+     "set": {
+      "e21_hands": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“A friend’s.”",
+      "Laney looks at him over the rim of her cup for longer than she looks at anybody, and lets it go by, and drinks.",
+      "By the tree Theo has put his phone away and is watching Jack’s hands."
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s05": {
+   "slug": "FRIDAY · 9:05 PM · NEWMAN HOUSE, THE WHITE ELEPHANT",
+   "body": [
+    "At five past nine the folding chairs come back into rows, and Becca stands in front of the white-elephant table with the clipboard in one hand and Mrs. Fitch’s Advent-candle box in the other — the long white one the tapers came in, full now of folded slips — and waits for quiet until she has it.",
+    "Jack takes the last folding chair in the back row, by the kitchen door. The room is in front of him and the tree is at the far end of it, and Lena is up there by the tree on a folding chair next to Julian’s. He keeps it that way.",
+    "“Okay! My uncle calls the cattle auction at the Kootenai County Fair, and I’ve been listening to him since I was four, so we’re doing this right. You draw a number. When it’s your number you open something or you steal something. Three steals and it’s frozen. No crying, Joey.”",
+    "She unfolds the first slip and goes into her uncle’s chant with no warning at all, level and fast, the numbers running together into something you could almost sing — *one-one-who’s-got-a-one-I-got-a-one-one-one* — and Bridget McNulty, who has the one, goes up to the table laughing with both hands over her face.",
+    "It goes fast. Theo’s gift is an unopened can of spray tan, still in its cellophane; Father Osei draws four and opens it in front of everybody and reads the label all the way down to *streak-free*. “I shall treasure it,” he says. “In a drawer.” Julian’s is a mix CD in a sleeve he lettered by hand, and it goes to Kevin, and Julian lifts a hand from beside the tree: “Nothing of mine. I’m not that guy.” Laney’s is a foam koozie with SUGAR across it in rhinestones; it goes to Tyler, who fits it onto his punch cup at once and wears it the rest of the night. Peter Haddad draws a flat box that turns out to be Bridget’s, a Theology of the Body workbook for teens with a sunset on the cover, and holds it up for the room, and Kenzie goes very still beside him, and Peter says, “Great. *Great*,” and puts it under his chair. Between numbers Becca tells the room that Thomas flies to Idaho next week, in his Tupperware, under the seat in front of her, because it’s on her mind.",
+    "Jack’s number comes up early. He goes to the table and takes the heaviest thing on it, a brick done up in brown grocery-bag paper and kitchen string, and the room has watched him pick it before he’s got the string off: a can of Café du Monde, orange and yellow, and a pound of Community Coffee in the red bag. The tag is a strip of index card, punched and tied on, in a hand he knows.",
+    "*FOR WHOEVER. BREW IT STRONG. —L.*"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "if": "e20_mass==\"noon\"",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey. She asked how I’m getting home. Greyhound. She frowned. Her mother sent a box: socks, cookies, two jars of huckleberry — JACK, and FOR THE CATHOLIC ROOMMATE. She offered me Daisy’s money. Six hundred and twelve dollars. It’s there, she says. Daisy doesn’t mind. Saturday, Ohio State in overtime: she gave me a photograph of the elephant seals in a frame she painted, every seal labeled with what it weighs. She’ll call during her dad’s grace on Thanksgiving so I can hear it. She wants to watch Michigan here, with me. ‘Someday I want to see your house. Is that okay to say?’ Ma wrote her. Three days after Christmas. Pittsburgh’s cheaper than Cleveland. She looked. Wednesday, in Eli’s truck, I told her. She said she did everything right, and she did. ‘It just isn’t the thing, is it.’ She asked me to leave it up on Facebook till she’s told her mom at the table. Thursday at two she texted. Still praying for me — not a girlfriend thing, she says. At the twelve-ten she turned around across the aisle at the sign of peace and held out her hand. Then she held it out to Lena. At the airport, a week to the day: St. Raphael, for Nonna. Father Osei read the name at the twelve-ten, and she heard. Thanksgiving: told her mom at the table. Texted me first — happy Thanksgiving, praying for Nonna, taking it down now. Then she did. The Immaculate Conception, on the steps after the 12:10: white elephant, ten dollars, nothing that eats. Thomas is going home to Idaho in a Tupperware to see snow. The Advent party: ran the white elephant like a cattle auction. Three steals and it’s frozen."
+    },
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "if": "e20_mass!=\"noon\"",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey. She asked how I’m getting home. Greyhound. She frowned. Her mother sent a box: socks, cookies, two jars of huckleberry — JACK, and FOR THE CATHOLIC ROOMMATE. She offered me Daisy’s money. Six hundred and twelve dollars. It’s there, she says. Daisy doesn’t mind. Saturday, Ohio State in overtime: she gave me a photograph of the elephant seals in a frame she painted, every seal labeled with what it weighs. She’ll call during her dad’s grace on Thanksgiving so I can hear it. She wants to watch Michigan here, with me. ‘Someday I want to see your house. Is that okay to say?’ Ma wrote her. Three days after Christmas. Pittsburgh’s cheaper than Cleveland. She looked. Wednesday, in Eli’s truck, I told her. She said she did everything right, and she did. ‘It just isn’t the thing, is it.’ She asked me to leave it up on Facebook till she’s told her mom at the table. Thursday at two she texted. Still praying for me — not a girlfriend thing, she says. At the twelve-ten she turned around across the aisle at the sign of peace and held out her hand. Then she held it out to Lena. At the airport, a week to the day: St. Raphael, for Nonna. Father Osei read the name at the twelve-ten, and she heard. Thanksgiving: told her mom at the table. Texted me first — happy Thanksgiving, praying for Nonna, taking it down now. Then she did. The Advent party: ran the white elephant like a cattle auction. Three steals and it’s frozen."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Look across the room at her.",
+     "tag": "Sincerity",
+     "set": {
+      "e21_coffee": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "He looks for her. She’s on a folding chair by the tree beside Julian, and she isn’t looking at him — she’s looking at the can in his hands, at the orange label, the way somebody looks at a thing from home on a shelf in a strange store. She turns and says something to Julian, and Julian laughs.",
+      "Jack sits down with the coffee on his knees, and after a while he puts it under his chair."
+     ],
+     "goto": "s05a"
+    },
+    {
+     "text": "“Who brings coffee to a white elephant?”",
+     "tag": "Wit",
+     "set": {
+      "e21_coffee": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Who brings coffee to a white elephant?” he says.",
+      "Lena answers from her folding chair by the tree, loud enough for everybody. “A woman from New Orleans. We bring coffee to *funerals*.”",
+      "Somebody laughs, and Becca’s already chanting the next number."
+     ],
+     "goto": "s05a"
+    },
+    {
+     "text": "Keep it. Say nothing.",
+     "tag": "Restraint",
+     "set": {
+      "e21_coffee": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He puts it under his folding chair, tag side down, and sits on the chair over it."
+     ],
+     "goto": "s05a"
+    }
+   ]
+  },
+  "s05a": {
+   "slug": "FRIDAY · 9:20 PM · NEWMAN HOUSE, THE WHITE ELEPHANT",
+   "set": {
+    "jack_has_lena_coffee": true,
+    "lena_has_8ball": true
+   },
+   "body": [
+    "Joey Abruzzo has number nine and goes for the 8-Ball like it called his name: a white plastic bag with a big red bow stuck on the outside. He gets the box out and holds it over his head in both hands, and Becca reads the tag off the side of it for the room.",
+    {
+     "if": "e21_tag==\"candor\"",
+     "text": "“*From Jack!*”"
+    },
+    {
+     "if": "e21_tag==\"nicholas\"",
+     "text": "“*From St. Nicholas!*” — and across the room, Lena’s head comes up."
+    },
+    {
+     "if": "e21_tag!=\"candor\" && e21_tag!=\"nicholas\"",
+     "text": "“From… nobody, it’s blank, that’s okay!”"
+    },
+    "Joey gets the ball out of the box and shuts his eyes and holds it against his chest. “Will I,” he says, to the whole of Newman House, “be a *priest*?” He shakes it once, hard, and turns it over, and opens his eyes, and reads it in the little window.",
+    "*It is decidedly so.*",
+    "Newman House loses its mind. Joey is on his feet with the ball over his head — “IT’S *DECIDED*” — and Tyler comes across two rows of folding chairs to bump his fist, and Gus plays a chord on the upright that might be a fanfare. At the back Father Osei raises his cup to the boy.",
+    "Three numbers later it’s Lena’s. She gets up from beside Julian, crosses the front of the room to Joey’s chair, and holds out her hand. “I need it for Hale’s oral.”",
+    "“That’s my *vocation*.”",
+    "“That’s one steal!” Becca makes a mark. Joey stands and takes the ball back out of Lena’s hand, politely — “Two!” — and Lena, without sitting down, takes it back out of his. “*Three!*” Becca’s pen comes down on the clipboard. “Frozen! She keeps it!” Joey sits back down and looks at his empty hands, and then at Tyler, entirely at peace. “It’s fine,” he says. “It already told me.”",
+    "Lena turns away from all of them to the front window with it. Her back is to the room; her elbow moves once; she stands there reading something, in the ball or in the black glass of the window, Jack can’t tell which. Then it goes into the pocket of her cardigan, and she comes back and sits down beside Julian with her hand over the pocket, and doesn’t show anybody.",
+    {
+     "if": "e21_tag==\"candor\"",
+     "text": "When the next number has been called and the noise has moved on, she says it to him across the room, over everybody’s heads. “Thank you, Jack.” “It was Joey’s.” “It was *yours*.”"
+    },
+    {
+     "if": "e21_tag==\"nicholas\"",
+     "text": "She looks across the room at Jack, once, over everybody’s heads, and leaves it with the saint."
+    },
+    "Mrs. Fitch draws thirteen and opens a glow-in-the-dark rosary, which is Kenzie’s, and says it’s lovely and she has nine. Margot draws fourteen and steals it off her — “For the column” — and holds it up under the lamp to charge it, and sits back down with it glowing faintly green in her lap while she writes. “That’s a steal!” Becca says, and makes her mark, so happy about the rules working that Mrs. Fitch can’t mind.",
+    "Becca unfolds the next slip and the chant starts up again, *fifteen-fifteen-who’s-got-fifteen*, and under Jack’s chair the coffee is where his heel can find it."
+   ],
+   "next": "s06"
+  },
+  "s06": {
+   "slug": "FRIDAY · 9:40 PM · NEWMAN HOUSE, THE UPRIGHT",
+   "body": [
+    "At twenty to ten Gus gets the choir back up, and it is all voices welcome, and they’ve come. Gus on the melody, wide and flat and immovable. Mrs. Fitch’s descant, a third over the top, three cups to the good. Joey half a step under everybody and proud of it. Kenzie Rourke with the one gorgeous voice in the room, so that every time she comes in the carol gets better around her. And under all of it, from back by the refrigerator, a real bass — low and warm and dead on the note — and it’s Kevin.",
+    "“Seven years of Vietnamese choir in San Jose,” Kevin says, when the verse is over and Jack is staring at him. “My mother made me.”",
+    {
+     "if": "julian_she_wanted",
+     "text": "By the tree Julian raises his cup to Gus. Gus raises his eyebrows back."
+    },
+    "Jack has been in the kitchen since he came in. The Lava came off his hands an hour ago and he’s found reasons since — the cups, the trash, Mrs. Fitch’s lemon-bar pans soaking in the sink — and from the kitchen door the front room is a long gold box with the upright at the far end of it, and Lena at the far end of the upright, and the width of a whole party in the way. That’s where he has kept it all night.",
+    "Father Osei’s rule is on an index card taped to the music stand since Thanksgiving — ADVENT HYMNS UNTIL DEC. 24. THANK YOU. G.O. — and Mrs. Fitch has just started “Joy to the World” again from the top, by herself, and Gus has gone after her, because he always does.",
+    "Jack, in the kitchen door with a dish towel over his shoulder, says it to Becca, but it carries. “It’s Advent. You don’t cut the cake at the engagement party.”",
+    "Becca, beside him, considers it. “At my cousin’s engagement party they *did* cut the cake,” she says. “It was a sheet cake. It said CONGRATS.”",
+    "From the far end of the upright, where she’s been standing with a hymnal she doesn’t need, Lena answers without turning around. “On the river they start the levee bonfires the week after Thanksgiving. Logs and cane, a whole cabin out of wood, every half mile up the levee in St. James Parish, all of it for one night. Nobody down there says it’s cheating on Christmas Eve. The building *is* Advent.” Then she turns. “And ‘Joy to the World’ isn’t a Christmas carol, Youngstown. Isaac Watts wrote it about the Second Coming. It’s Psalm Ninety-Eight. It’s the most Advent song in the hymnal.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "kevin",
+     "title": "Kevin Tran",
+     "if": "e20_doug==\"control\"",
+     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Tuesday at four I woke him for Doug. A chair under the knob, then a bell. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’ Sings bass. A real one. Seven years of Vietnamese choir in San Jose — his mother made him."
+    },
+    {
+     "kind": "person",
+     "id": "kevin",
+     "title": "Kevin Tran",
+     "if": "e20_doug!=\"control\"",
+     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’ Sings bass. A real one. Seven years of Vietnamese choir in San Jose — his mother made him."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“‘The Lord *is* come.’ Past tense. Watts was hedging.”",
+     "tag": "Press",
+     "set": {
+      "e21_carol": "press",
+      "trait.wit": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“‘The Lord *is* come,’” Jack says, the length of the room. “Past tense. Watts was hedging.”",
+      "“Watts was a *Congregationalist*, Jack. He hedged for a living.”",
+      "Father Osei passes the upright with a tray of lemon bars, at no particular speed. “Miss Broussard is correct, it is still Advent, and Mrs. Fitch is seventy-one. Sing.”",
+      "Gus brings his hands down. Jack sings it from the kitchen door with the towel on his shoulder — *Joy to the world, the Lord is come* — and at the far end of the upright Lena sings it louder, and he sings it louder than that, the two of them hauling against each other across the room with the choir in the middle and Mrs. Fitch sailing over the top of everybody. At the end of the verse he goes back into the kitchen."
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "“…Watts. Fine.”",
+     "tag": "Concede",
+     "set": {
+      "e21_carol": "concede",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“…Watts,” Jack says. “Fine.”",
+      "“Say it louder. Mrs. Fitch can’t hear you.”",
+      "Father Osei passes the upright with a tray of lemon bars, at no particular speed. “Miss Broussard is correct, it is still Advent, and Mrs. Fitch is seventy-one. Sing.”",
+      "Gus brings his hands down. Jack sings it from the kitchen door with the towel on his shoulder — *Joy to the world, the Lord is come* — and at the far end of the upright Lena sings it louder, and he sings it louder than that, the two of them hauling against each other across the room with the choir in the middle and Mrs. Fitch sailing over the top of everybody. At the end of the verse he goes back into the kitchen."
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "“Then Mrs. Fitch is a prophet.”",
+     "tag": "Wit",
+     "set": {
+      "e21_carol": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Then Mrs. Fitch is a prophet.”",
+      "Lena laughs before she means to, and puts the hymnal up in front of her mouth, and glares at him over the top of it for making her.",
+      "Father Osei passes the upright with a tray of lemon bars, at no particular speed. “Miss Broussard is correct, it is still Advent, and Mrs. Fitch is seventy-one. Sing.”",
+      "Gus brings his hands down. Jack sings it from the kitchen door with the towel on his shoulder — *Joy to the world, the Lord is come* — and at the far end of the upright Lena sings it louder, and he sings it louder than that, the two of them hauling against each other across the room with the choir in the middle and Mrs. Fitch sailing over the top of everybody. At the end of the verse he goes back into the kitchen."
+     ],
+     "goto": "s06a"
+    }
+   ]
+  },
+  "s06a": {
+   "slug": "FRIDAY · 10:00 PM · NEWMAN HOUSE, THE UPRIGHT",
+   "body": [
+    "Gus plays the last chord, and holds it, and lets it go, and gets up off the bench working his fingers. They’re a fisherman’s hands, thick through every knuckle, with a white seam across the back of the left where a line ran through it once. He looks around for his punch. His punch is on top of the refrigerator. “Somebody spell me,” he says. “Does anybody play?” The room looks at its shoes.",
+    "Joey’s hand goes up. “I can do ‘Heart and Soul.’”",
+    "“Joey,” says Becca, “it’s *Advent*.”",
+    "Kenzie looks at Peter, and Peter looks at the tree. Gus waits with his fingers laced, cracking them one at a time.",
+    "Mrs. Fitch says she would, but she’s had three, and she knows it, and the Lord knows it.",
+    "Margot, from the step stool, still writing: “Six years of Suzuki. I won’t be taking questions.”",
+    "On the arm of the plaid couch, where she went when the singing stopped, Lena doesn’t move. Her hands are in her cardigan pockets, and one of them is around the 8-Ball.",
+    "Jack has heard her play. The basement upright in Delgado, properly, around its dead F, at one in the morning with the dryers going — her left hand stepping over the hole in the keyboard every time it came, the way you’d step over a board you knew was loose — and he has heard her say why she doesn’t where people can hear. If you play well, people ask you to play.",
+    "Across the room her thumb is moving on the 8-Ball inside the pocket, around and around; he can see the shape of it working through the wool."
+   ],
+   "choices": [
+    {
+     "text": "Say nothing.",
+     "tag": "Restraint",
+     "set": {
+      "e21_keys": "restraint",
+      "kept_lena_piano": true,
+      "trait.control": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "cue": "Lena noticed.",
+     "key": "At the Newman party Gus asked if anybody plays. You know Lena does. You said nothing.",
+     "response": [
+      "He keeps his mouth shut and his eyes on Gus. At the edge of things the red ribbon turns on the arm of the couch — she’s looking across the room at him, at him not saying it — and he lets her, and keeps looking at Gus.",
+      "Then Julian, by the tree, says he can play a little."
+     ],
+     "goto": "s06m"
+    },
+    {
+     "text": "“Julian plays.”",
+     "tag": "Wit",
+     "set": {
+      "e21_keys": "wit",
+      "kept_lena_piano": true,
+      "rel.julian.warmth": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "At the Newman party Gus asked if anybody plays. You know Lena does. You said Julian plays.",
+     "response": [
+      "“Julian plays,” Jack says.",
+      "Julian, surprised and then pleased, puts his cup down on the mantel and goes to the bench. On the arm of the couch Lena turns her head and looks at Jack for as long as it takes Julian to cross the room. Jack finds something to do with the dish towel."
+     ],
+     "goto": "s06m"
+    },
+    {
+     "text": "“I’ll turn pages.”",
+     "tag": "Sincerity",
+     "set": {
+      "e21_keys": "sincerity",
+      "kept_lena_piano": true,
+      "trait.sincerity": "+1"
+     },
+     "key": "At the Newman party Gus asked if anybody plays. You know Lena does. You offered to turn pages.",
+     "response": [
+      "“I’ll turn pages,” Jack says.",
+      "“There are no pages, son,” says Gus. “It’s Advent. We go by ear.”",
+      "And Julian, who has come up from the tree to stand beside him, sits down on the bench."
+     ],
+     "goto": "s06m"
+    }
+   ]
+  },
+  "s06m": {
+   "slug": "FRIDAY · 10:10 PM · NEWMAN HOUSE, THE KITCHEN DOOR",
+   "body": [
+    "Julian plays by ear. He takes Gus’s tempo for a verse and then, kindly, a better one; he finds a key Kevin can sit at the bottom of and leaves the floor of it open for him; he gives Father Osei “O Come, O Come, Emmanuel” in a minor so plain it sounds older than the house, and then, without stopping, lifts it into “Joy to the World” for Mrs. Fitch, who puts down her cup; when her descant goes up, his left hand goes down an octave to hold the floor under her. He doesn’t look at his hands. Lena stands at his shoulder with her palm on the piano’s lid and sings alto, and where Julian’s voice won’t go, hers goes.",
+    "Jack watches it from the kitchen door, leaning on the jamb, with the dish towel.",
+    "“Costigan. Move.” Theo has a kitchen chair. Jack moves a step back into the kitchen, and Theo climbs up on the chair in his loafers and tapes a sprig of something green with white berries to the top of the doorframe, tearing the Scotch tape with his teeth. “Picture it,” he says. “A doorway. Two Catholics. A plant with a record.” The plant is contraband: FR. OSEI REQUESTS NO MISTLETOE is on the flyer on the corkboard, three feet away, in capitals. Out in the front room Laney, awake for the purpose, has a hand on Lena’s elbow the minute the carol ends — “Magdalena, come help me with the cups, I am *so* drunk” — and Theo gets down off the chair and takes Jack by the sleeve.",
+    "Kevin comes through with a stack of paper plates and says it low, to both of them. “Leave it alone.”",
+    "Theo doesn’t let go of the sleeve. Laney doesn’t let go of the elbow.",
+    "It doesn’t matter. Julian is up from the bench with a paper cup of water from the bathroom tap, because Lena has sung herself dry, and he gets to the kitchen door when she does, and stops there because she has, and looks up, because Theo’s tape is shining in the light. He smiles. He kisses her cheek, gently, with his free hand under the cup so it won’t spill.",
+    "Jack sees it from four feet away. He has been looking at her since Julian sat down at the piano, and he’s still looking when she comes up from under it with the cup in her hand and finds him over Julian’s shoulder, and sees his face before he’s done anything to it. She doesn’t look away. Her lips part, the way they do before she says his name, and don’t get there. He’s the one who turns back to the sink.",
+    "Theo, in retreat, climbs back on the chair to get the evidence down, and comes off it into the doorway at the same moment as Tyler Brandt with a tray of empty cups. They both look up.",
+    "“Brother,” says Tyler.",
+    "“*Absolutely* not,” says Theo.",
+    "Father Osei crosses the front room, limping a little, reaches up past both of them, and takes the mistletoe down with two fingers and great dignity, tape and all. “I requested,” he says, and carries it into the kitchen held out in front of him like something he has removed from a patient."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "julian",
+     "title": "Julian Park-Ellis",
+     "if": "julian_she_wanted",
+     "text": "Julian Park-Ellis. The guitar guy from the Lighthouse stairs. Plays Bastille Thursdays. Wrote a song called “Fresno.” Plays it once a month. All Souls: came to St. Brendan’s to write Nora Calloway’s name in the book. She was his friend. They sang together. He saw us leave in the second chorus. Something new Thursday. A handshake you’d trust with anything. Sunday he came to the nine o’clock with Lena. Didn’t receive. Had the Sanctus by ear by the end. Picked Lena up at twenty to twelve for the vampires, straight from Bastille. Friday he brought her juk in his mother’s thermos and asked her what she’d go to jail for, and listened to all of it. Drove down from Oakland for the nine o’clock; his brother Daniel’s home from the Navy. Two coffees on the wall. Asked me to stay to the end of the new one. Thursday at Bastille: it’s called ‘Magdalena.’ It’s good. ‘You stayed. She wanted you here.’ The Advent party: plays piano too, by ear. Under contraband mistletoe he kissed her cheek."
+    },
+    {
+     "kind": "person",
+     "id": "julian",
+     "title": "Julian Park-Ellis",
+     "if": "!julian_she_wanted",
+     "text": "Julian Park-Ellis. The guitar guy from the Lighthouse stairs. Plays Bastille Thursdays. Wrote a song called “Fresno.” Plays it once a month. All Souls: came to St. Brendan’s to write Nora Calloway’s name in the book. She was his friend. They sang together. He saw us leave in the second chorus. Something new Thursday. A handshake you’d trust with anything. Sunday he came to the nine o’clock with Lena. Didn’t receive. Had the Sanctus by ear by the end. Picked Lena up at twenty to twelve for the vampires, straight from Bastille. Friday he brought her juk in his mother’s thermos and asked her what she’d go to jail for, and listened to all of it. Drove down from Oakland for the nine o’clock; his brother Daniel’s home from the Navy. Two coffees on the wall. Asked me to stay to the end of the new one. Thursday at Bastille: it’s called ‘Magdalena.’ It’s good. The Advent party: plays piano too, by ear. Under contraband mistletoe he kissed her cheek."
+    }
+   ],
+   "next": "s06b"
+  },
+  "s06c": {
+   "slug": "FRIDAY · 10:45 PM · NEWMAN HOUSE, THE STEPS → OCEAN ROAD",
+   "body": [
+    "By a quarter to eleven Newman House is coming apart the ordinary way. Becca and Mrs. Fitch are carrying folding chairs back into the hall closet by twos and counting them against each other. Gus is playing something with no words to the emptying room. At the bottom of the steps a pair of headlights swings across the olive tree: Julian, bringing the car around. Laney is asleep upright on the porch swing in her black velvet, with the clutch in her lap and her mouth a little open.",
+    "Theo went at half past ten, back toward Delgado, with a lemon bar in a napkin and the turtleneck up to his ears. Kevin carries Laney’s coat down to the curb and stands there with it over his arm, waiting for Julian’s car.",
+    "“She made it, she drank it,” Lena says. “She’s a closed system.”",
+    "Becca comes out with a folding chair under each arm and stops beside Jack on her way to the closet. “You got the coffee!” she says. “That was the best one. I *wanted* that one.” She goes on with the chairs. Behind him, at the swing, Lena’s hand has stopped in Laney’s hair.",
+    "Margot comes out past him buttoning her coat and stops beside Jack on the top step. Under the porch light she writes one more line in the Moleskine, and then, this once, turns it around and holds it out to him.",
+    "*The punch was the only thing in the room that wasn’t waiting.*",
+    "She doesn’t underline it. She shuts the book and goes down the steps with her hands in her pockets.",
+    "Lena has got Laney off the swing and down onto the top step, where Laney sits with her head on Lena’s shoulder and is asleep again inside a minute. The 8-Ball is in Lena’s cardigan pocket; it pulls the cardigan down on that side. Julian’s headlights come up the drive and stop, and Julian comes up the steps for Laney’s shoes, which are under the swing, and carries them back down by the straps. On the way past he touches Jack’s arm. “Good night, Jack. Merry Christmas, if I don’t see you before.”",
+    "“Ride with us?” Lena says. “There’s room if Laney lies down.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "laney",
+     "title": "Laney Price",
+     "text": "Laney Price. Pi Lam, as of Thursday: ran back across Seacliff in a pink cowboy hat to Lena first. The night before, on the floor of 217 in a white dress, she asked what happens if they look at her and see. First Catholic Mass: arms crossed like a Baptist, came back from the blessing pink and quiet. Programmed herself into my phone. (Hoodie status: hers.) Pi Lam’s barn party: carried upstairs by her new sisters, glorious and wrecked. Called Lena a mother over the banister. Said sorry at the sign of peace, at her second Mass. Big/Little: Sloane is her big. On the front steps at one in the morning, in a PI LAM LITTLE shirt, with a balloon on her wrist, she told me about Kaylee Whitmore. Fifteen; Kaylee drove; they’d both been drinking and Laney let her. Preston Road. A culvert. A cast for six weeks that everybody signed. A month later, a doctor’s note for flying; she’d never been on a plane. Lena’s the only other one who knows. In the water at Pfeiffer Beach she caught my swan. It’s Theo’s. Her fourth Mass, up a mountain with the monks. Asked Lena how you light a candle, and lit one. Don’t you dare, she said. Halloween: Pope Joan, in a cardboard mitre with gold rickrack. Blessed Del Playa from the widow’s walk until Rafi’s father asked her to come down. Over a bullhorn. Best Couple, with Margot. Went missing with three pledges for most of the extra hour; Kevin found her at Lupe’s with a burrito. She’s not stupid. She’s hungry. Friday at the Situation Room: ‘Who’s that?’ ‘No one.’ Alarm Five: ‘Fireman. You’re dressed.’ Saturday on the laundry table with Theo and a legal pad, discussing finals. Somebody put an orange in her Ugg. She’s crying. The Advent party: black velvet, in mourning for Advent. A Texas thing in the punch; Kevin took her flask. Asleep on the porch swing by a quarter to eleven."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“I’m going to the library.”",
+     "tag": "Lie",
+     "set": {
+      "e21_ride": "lie",
+      "soul.honesty": "-1"
+     },
+     "response": [
+      "“I’m going to the library.”",
+      "“On the last Friday.” She lets it go. “Take a sweater.”",
+      "He goes down the steps and turns west on Ocean Road, away from Delgado, with his hands in the Carhartt. At the first streetlight he looks back once. She’s still on the top step with Laney asleep on her shoulder and Julian’s headlights on the both of them, watching him go the wrong way.",
+      "At the Marine Lab turnout the Saab is idling at the chain with the top down and the heater going full on the floor, the dash lit green in the dark. He takes the RAZR out of his pocket and turns it off, and gets in."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“I’m meeting somebody.”",
+     "tag": "Candor",
+     "set": {
+      "e21_ride": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“I’m meeting somebody.”",
+      "“Okay,” Lena says, and moves Laney’s hair off Laney’s face with one finger.",
+      "He goes down the steps and turns west on Ocean Road, away from Delgado, with his hands in the Carhartt. At the first streetlight he looks back once. She’s still on the top step with Laney asleep on her shoulder and Julian’s headlights on the both of them, watching him go the wrong way.",
+      "At the Marine Lab turnout the Saab is idling at the chain with the top down and the heater going full on the floor, the dash lit green in the dark. He takes the RAZR out of his pocket and turns it off, and gets in."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“I’ll walk.”",
+     "tag": "Restraint",
+     "set": {
+      "e21_ride": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“I’ll walk.”",
+      "“It’s the other way.”",
+      "“I know.”",
+      "He goes down the steps and turns west on Ocean Road, away from Delgado, with his hands in the Carhartt. At the first streetlight he looks back once. She’s still on the top step with Laney asleep on her shoulder and Julian’s headlights on the both of them, watching him go the wrong way.",
+      "At the Marine Lab turnout the Saab is idling at the chain with the top down and the heater going full on the floor, the dash lit green in the dark. He takes the RAZR out of his pocket and turns it off, and gets in."
+     ],
+     "goto": "s07"
+    }
+   ]
+  }
+ }
+}

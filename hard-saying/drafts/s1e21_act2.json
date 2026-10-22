@@ -1,0 +1,156 @@
+{
+ "scenes": {
+  "s03": {
+   "slug": "FRIDAY · 6:40 PM · A DRUGSTORE IN BUELLTON, OFF THE 101",
+   "music": "Vince Guaraldi Trio — “Christmas Time Is Here”",
+   "body": [
+    "Somewhere up in the ceiling a choir of children is singing that Christmas time is here, slow, over a piano and a brushed snare, like kids who were promised snow and got told the truth in the car. The drugstore sits off the freeway in Buellton, inland, lit end to end in fluorescent white, and there’s nobody in it but a clerk reading a paperback under the cigarettes and the two of them. The seasonal aisle is a canyon of wrapping paper — candy canes, tartan, a reindeer with a lit nose, a gold foil marked down twice — ending in a cap of the things people buy when they’ve been told to spend ten dollars on somebody they barely know.",
+    "Skye has a red plastic basket on her arm, a man’s flannel over a T-shirt from a 10K she didn’t run, and her hair wound up on her head with a Sharpie through the knot, and she is taking meetings.",
+    "A snow globe first: a church, three houses, a girl skating on a pond the size of a nickel. She shakes it and holds it up and watches the snow come down on the girl until it’s done. “Too sad.” She sets it back exactly where it was. “Snow globes are for people who left.”",
+    "A rubber fish on a plaque, which, when she presses the button, turns its head out from the board and sings at them with its mouth half a second behind the words. She lets it finish the verse. “I’ve worked with him,” she says, low, to Jack. “He’s difficult.”",
+    "A Chia Pet, the ram. “You said nothing that eats.” “It drinks.” She holds the ram out at arm’s length and gives it back to the shelf. A blanket with sleeves, in a box with a family of four on the front, all of them wearing one on a couch and smiling like hostages. “That family needs help,” she says, and puts it back.",
+    "On the bottom shelf, behind a bin of yo-yos, a Magic 8-Ball in a window box. She has it out of the box in the middle of the aisle and shakes it in both hands, and she’s a fortune teller on a pier, all eyelids and vowels, one palm passing slow over the black plastic: “*It is certain.*”",
+    "Shake. An agent driving with his knee, the ball pinned under his ear like a car phone: “Babe. Babe. *Cannot predict now.* I’m going into a canyon.”",
+    "Shake. A mother on the folding chair by the door of every audition room in Los Angeles, a ballpoint clicking, mouthing the words a half-second ahead: “*Concentrate.* And *ask again.*”",
+    "One more, slower, and her face goes kind and sorry: a priest at the church door after the last Mass, holding your hand in both of his because he can see you came in carrying something, wishing for your sake he had better news. “*Reply hazy,*” she says gently, and pats the back of Jack’s hand with the ball. “*Try again.*” Jack has had his hand held exactly like that on the steps of St. Brigid’s since he was tall enough to reach. He laughs.",
+    "She tips the ball so the little window catches the light, and the blue triangle swims up out of the dark and settles. “Every answer’s a line reading,” she says. “It’s the only honest toy in the store.” She turns the box over for the sticker. “Nine ninety-nine. Under budget. You’re a natural.”",
+    "“It’s a twenty-sided die floating in blue dye.”",
+    "“So is everybody I’ve ever read for.” She shakes it once more and doesn’t look. “Ten yeses, five maybes, five nos. Show me a producer with those numbers.”",
+    "In the candy aisle, on the way up front, she wants the room. “Tell me who’s there.”",
+    "“Church people. A white elephant. A choir.”",
+    "“Good choir?”",
+    "“The sign-up sheet says *all voices welcome*. They took it personally.” He picks a roll of Life Savers off the rack for her basket. “And a priest who requests no mistletoe.”",
+    "“*Requests.*”",
+    "“On the flyer. In capitals.”",
+    "“The casserole people,” she says. She drops the Life Savers in with the 8-Ball. “Will they hate me?”",
+    "“They won’t meet you.”",
+    "“Good.” She adds a second roll, butterscotch, for balance. “I hate being hated on a Friday.”",
+    "At the register she lifts the big red bow off the top of a pyramid of boxed candles — the display’s own — and sets it on the counter beside the 8-Ball. The clerk looks at the bow, and at the pyramid without it, and rings it up as a bag of bows. “Separately,” Skye says, and pays for it out of her back pocket while Jack pays for the ball. “The bow’s from me. I want a credit. Small. After the caterer.”",
+    "She peels a stick-on tag off a card by the register — TO: and FROM: in red script under a sprig of holly — and presses it onto the box with her thumb. Then she pulls the Sharpie out of her hair, and her hair comes down, and she holds the pen out to him cap first. “You’re the giver,” she says. “Sign it.”"
+   ],
+   "choices": [
+    {
+     "text": "Write FROM JACK.",
+     "tag": "Candor",
+     "set": {
+      "e21_tag": "candor",
+      "ball_from_jack": true,
+      "trait.candor": "+1"
+     },
+     "response": [
+      "He writes it in capitals on the countertop, JACK, and the Sharpie squeaks on the last letter.",
+      "She reads it upside down. “Brave,” she says. “What if somebody hates it?”",
+      "“It’s a white elephant. Somebody’s supposed to.”"
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "Write FROM ST. NICHOLAS.",
+     "tag": "Wit",
+     "set": {
+      "e21_tag": "nicholas",
+      "ball_from_nicholas": true,
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He writes it small, to fit, and runs out of tag on the last S and puts it around the corner.",
+      "“Is he in town?”",
+      "“He was last Sunday.”",
+      "“The one who broke into your dorm?” She takes the box and holds it at arm’s length, the way people hold a headshot. “I like him. He has range.”"
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "Leave it blank.",
+     "tag": "Restraint",
+     "set": {
+      "e21_tag": "blank",
+      "ball_anonymous": true,
+      "trait.control": "+1"
+     },
+     "response": [
+      "He caps the Sharpie and gives it back to her with the FROM: line empty.",
+      "She looks at the empty line, and at him. “Anonymous,” she says. “Very Catholic.”",
+      "“Matthew six. Don’t let your left hand know.”",
+      "“My left hand knows everything.” She winds her hair back up and stabs the Sharpie through it. “It’s a terrible gossip.”"
+     ],
+     "goto": "s03a"
+    }
+   ]
+  },
+  "s03a": {
+   "slug": "FRIDAY · 7:15 PM · THE DRUGSTORE LOT → A SIDE STREET IN BUELLTON",
+   "body": [
+    "Out in the lot the Saab gets one click out of the key and nothing else. She turns it again. Click. The dash lights come up brown and faint and sink back. She tries a third time with her eyes shut, as a courtesy to the car, and gets the click.",
+    "He gets the hood up under the lot light. The battery terminals are furred over with a crust, white and green, thick as frost on a Youngstown windshield. He goes at the worst one with the key to the back door on Glenwood Avenue, which still rides on his ring next to the key to 412, and it flakes off in scabs and gets under his nails, and it isn’t enough. Skye goes back into the store. She comes out with a toothbrush already out of its package, held up in front of her like an award.",
+    "“I’m a producer now,” she says.",
+    "He scrubs. The crust comes away in white dust and black paste. She holds the white iPhone over the engine with its screen turned down for light, and watches him work.",
+    "“Where’d you learn this?”",
+    "“My dad’s Silverado. Every February, in the driveway, with a kettle.”",
+    "“A kettle of what?”",
+    "“Hot water. You pour it on the posts.”",
+    "She looks back at the drugstore. “I could buy a kettle.”",
+    "By the time the posts show dull gray his hands are black to the wrists and there’s a smear across the knee of his jeans where he wiped them without thinking. She tries the key. Click.",
+    {
+     "if": "stood_in_rain",
+     "text": "She gets out and leans on the fender beside him in the lot light with her arms folded, and looks at his hands, and up at him. “You stood in my rain,” she says. “Now push my car.”"
+    },
+    "Past the end of the lot a side street runs off between dark houses and tips, just barely, toward the river bottom."
+   ],
+   "choices": [
+    {
+     "text": "“I’ll push. You pop the clutch.”",
+     "tag": "Reckless",
+     "set": {
+      "e21_push": "reckless",
+      "trait.reckless": "+1",
+      "rel.skye.heat": "+1"
+     },
+     "response": [
+      "She’s in the seat before he’s done saying it, in second with the clutch on the floor, and he walks the Saab out of the lot and onto the side street and gets it rolling, and then running, his black hands on the trunk lid and his boots slapping, the car getting away from him a little more every step under the streetlights — and she lets the clutch out, and the Saab bucks and coughs and catches, and her whoop comes up out of the open top and goes on down the street ahead of her.",
+      "She holds it there at the bottom of the street with her foot in it while he walks down to her, wiping his hands on his jeans and making both of them worse. In the front window of the house beside the car there’s a menorah with its first candle burning next to the tall one. She looks at it from the driver’s seat. “Somebody’s starting something,” she says.",
+      "She doesn’t let the engine drop below a growl the whole way back — not at the light by the on-ramp, not anywhere. At the Marine Lab turnout, at ten past eight, she pulls up to the chain across the service drive and sits looking at the key. She turns it off, to see. In the quiet the engine ticks as it cools, small and even, a watch somebody left running under the hood. They both look at the key. She turns it. It catches.",
+      "When he opens his door the dome light comes on, and she sees his hands in it — black past the knuckles, the crust packed under every nail, one thumbprint on her door handle — and she laughs at them, and at him, and can’t stop. Then she takes his face in both hands and kisses him, long and slow, while he holds his black hands up off her and out of it, a surgeon after the scrub. She lets go. “Go be late to church.”",
+      "He switches the RAZR back on halfway up the service road. Down at the chain the Saab honks twice, short, and goes, with her arm up out of the open top."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“We should call somebody.”",
+     "tag": "Control",
+     "set": {
+      "e21_push": "control",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“It’s an *orphan*, Ohio.” She’s already in the seat, already in second. “Nobody comes.”",
+      "He pushes anyway, out of the lot and down the side street with his black hands on the trunk lid, and on the slope it starts to get away from him, and she lets the clutch out, and it catches on the first try.",
+      "She holds it there at the bottom of the street with her foot in it while he walks down to her, wiping his hands on his jeans and making both of them worse. In the front window of the house beside the car there’s a menorah with its first candle burning next to the tall one. She looks at it from the driver’s seat. “Somebody’s starting something,” she says.",
+      "She doesn’t let the engine drop below a growl the whole way back — not at the light by the on-ramp, not anywhere. At the Marine Lab turnout, at ten past eight, she pulls up to the chain across the service drive and sits looking at the key. She turns it off, to see. In the quiet the engine ticks as it cools, small and even, a watch somebody left running under the hood. They both look at the key. She turns it. It catches.",
+      "When he opens his door the dome light comes on, and she sees his hands in it — black past the knuckles, the crust packed under every nail, one thumbprint on her door handle — and she laughs at them, and at him, and can’t stop. Then she takes his face in both hands and kisses him, long and slow, while he holds his black hands up off her and out of it, a surgeon after the scrub. She lets go. “Go be late to church.”",
+      "He switches the RAZR back on halfway up the service road. Down at the chain the Saab honks twice, short, and goes, with her arm up out of the open top."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“Does it respond to prayer?”",
+     "tag": "Wit",
+     "set": {
+      "e21_push": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“It responds to *physics*,” she says, and puts it in second.",
+      "He pushes. It doesn’t catch on the first try, or the second, and on the third, near the bottom of the slope, with him blowing like a horse, it does, and she leans out and bangs the flat of her hand on the outside of her door, twice, which is applause.",
+      "She holds it there at the bottom of the street with her foot in it while he walks down to her, wiping his hands on his jeans and making both of them worse. In the front window of the house beside the car there’s a menorah with its first candle burning next to the tall one. She looks at it from the driver’s seat. “Somebody’s starting something,” she says.",
+      "She doesn’t let the engine drop below a growl the whole way back — not at the light by the on-ramp, not anywhere. At the Marine Lab turnout, at ten past eight, she pulls up to the chain across the service drive and sits looking at the key. She turns it off, to see. In the quiet the engine ticks as it cools, small and even, a watch somebody left running under the hood. They both look at the key. She turns it. It catches.",
+      "When he opens his door the dome light comes on, and she sees his hands in it — black past the knuckles, the crust packed under every nail, one thumbprint on her door handle — and she laughs at them, and at him, and can’t stop. Then she takes his face in both hands and kisses him, long and slow, while he holds his black hands up off her and out of it, a surgeon after the scrub. She lets go. “Go be late to church.”",
+      "He switches the RAZR back on halfway up the service road. Down at the chain the Saab honks twice, short, and goes, with her arm up out of the open top."
+     ],
+     "goto": "s04"
+    }
+   ]
+  }
+ }
+}

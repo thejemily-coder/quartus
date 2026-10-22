@@ -1,0 +1,766 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "FRIDAY · 6:10 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "The hall comes in with him. For as long as the door is open it lays a slab of fluorescent light across the carpet and both beds, and shows the room whatever there is to see of Jack Costigan at ten past six on the last day of classes: rain beaded on the shoulders of the Carhartt, the Carhartt zipped to the throat, his hair, his mouth, a face that has been up all night and wasn’t trying to sleep. On the far bed a head comes up off the pillow toward the door. Jack gets the door shut behind him with his heel. After that the only light in 412 is on the ceiling.",
+    "It comes from Theo’s side, a square of blue-white thrown up onto the tiles by the iPhone lying face up on Theo’s chest. The rest of Theo is a long shape under the duvet, and the square doesn’t waver. Whatever Theo does under it at this hour, it isn’t sleep; Jack has shared a room with him since August and has yet to catch him at it. Over his desk Rosie’s two princes have gone gray in the dark, and the clementine against the lamp has dried hard as a golf ball.",
+    "Eighteen minutes from the corner of Del Playa, through the Grove in the first of the rain, and not all of him has caught up. His jeans are wet to the shin from the long grass along the Grove path, and his back still has the clothes rack in it. His mouth doesn’t feel like his own yet, and his hands are cold to the wrist from the walk, and the rest of him hasn’t heard about it. He sits down on the edge of his own bed in the dark and goes to work on a boot. The laces are soaked and the knot has swelled shut, and he works at it one-handed, because the other hand has the RAZR in it and doesn’t want to put it down. He has been carrying it since the corner. Its outer screen glows up at him from his palm: 6:10. Inside it is the one text from 11:41 last night that he read at the corner and closed and hasn’t answered. The song is in there too, somewhere under the night, and he isn’t going near it.",
+    "Over his own bed Nonna’s olive-wood crucifix is a darker shape on the dark wall, about where his head goes. He looks at the boot.",
+    "The question comes out of the other bed with nothing in front of it.",
+    "“Costigan. Why do you look like you just went through a warzone?”"
+   ],
+   "choices": [
+    {
+     "text": "“Couldn’t sleep. Went to look at the ocean.”",
+     "tag": "Mirror",
+     "cue": "Theo will remember that.",
+     "set": {
+      "e21_warzone": "mirror",
+      "trait.wit": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "key": "At ten past six Theo asked why you look like you’ve been through a warzone. You gave him his own line: couldn’t sleep, went to look at the ocean.",
+     "response": [
+      "“Couldn’t sleep,” Jack says. “Went to look at the ocean.”",
+      "Theo lies there with it. The square of light holds still on the ceiling. Down the hall the ice machine drops a load into its bin with a noise like a small avalanche, and two floors down a toilet runs and quits, and Theo goes on lying there through both.",
+      "“Okay,” Theo says.",
+      "He lifts the phone off his chest and holds it up over his face, and it lights him from underneath, chin and cheekbones, somebody about to tell a ghost story. His eyes go once to the RAZR in Jack’s hand, to its little lit screen, and come back up to his own.",
+      "The knot gives at last. The boot comes off in Jack’s hand, heavy with the Grove, and he sets it down on the carpet as quietly as a boot can be set down."
+     ],
+     "goto": "s01a"
+    },
+    {
+     "text": "“Library.”",
+     "tag": "Lie",
+     "set": {
+      "e21_warzone": "lie",
+      "soul.honesty": "-1"
+     },
+     "key": "At ten past six Theo asked why you look like you’ve been through a warzone. You told him the library.",
+     "response": [
+      "“Library.”",
+      "“Nobody comes back from the library without a book, Costigan.” The square on the ceiling holds perfectly still. “I’ve tried.”",
+      "His eyes come down off the ceiling once, to the RAZR in Jack’s hand with its little screen lit, and go back up.",
+      "The knot gives at last. The boot comes off in Jack’s hand, heavy with the Grove, and he sets it down on the carpet as quietly as a boot can be set down."
+     ],
+     "goto": "s01a"
+    },
+    {
+     "text": "“I was out.”",
+     "tag": "Candor",
+     "set": {
+      "e21_warzone": "candor",
+      "soul.honesty": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "key": "At ten past six Theo asked why you look like you’ve been through a warzone. You told him you were out.",
+     "response": [
+      "“I was out.”",
+      "Theo’s eyes go once to the RAZR in Jack’s hand, to the time on its little screen, and come back.",
+      "“I know you were out.”",
+      "The iPhone turns face down on his chest, and the ceiling goes dark.",
+      "In the dark Jack finds the knot by feel and picks at it till it gives, and sets the boot down on the carpet as quietly as a boot can be set down."
+     ],
+     "goto": "s01a"
+    }
+   ]
+  },
+  "s01a": {
+   "slug": "FRIDAY · 6:25 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "By twenty-five past six the window has started to come up gray behind the blind, a slat at a time, from the bottom. Jack has the second boot off and has got no further than that. He sits on the edge of the bed in the Carhartt with his socks on the carpet and the boots side by side in front of him, dark to the ankle with wet, like somebody else’s. The rain is still at the glass, small and steady. Out on Ocean Road the first bus of the morning goes by empty and lit up inside, and lays a long bar of light across the ceiling, and takes it away with it.",
+    "Delgado is starting up around them: a shower on the far side of the wall, somebody’s alarm going off down the hall and getting hit, and going off again. Somewhere between now and tonight there’s an email to Hale, and the last class of the semester, and sleep, and Jack can’t get any of them to stand still in a line.",
+    "Across the room Theo is on his back with the phone dark under his folded hands, looking up at the place where its light was.",
+    "“It’s after Thanksgiving,” Theo says.",
+    "“I know.”",
+    "“I had something in my calendar.”",
+    "“It’s been in there since November,” he says after a minute. “It’s very patient. It’s the only thing in my calendar that is.”",
+    "In the first gray Theo’s face on the pillow looks younger than nineteen, and very tired. Jack knows which question. He’s the one who put it there."
+   ],
+   "choices": [
+    {
+     "text": "“Ask me.”",
+     "tag": "Candor",
+     "set": {
+      "e21_calendar": "candor",
+      "trait.candor": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "response": [
+      "“Ask me.”",
+      "“Not at six in the morning,” Theo says. “You’d tell me.” The phone lights under his hands; a thumb taps the glass once; the light goes.",
+      "Jack lies back in his clothes with the RAZR shut on his chest and the Carhartt still zipped. The last thing he hears is the rain at the window, and under it, across the room, Theo breathing too evenly to be asleep."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“Move it to Christmas.”",
+     "tag": "Wit",
+     "set": {
+      "e21_calendar": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Move it to Christmas.”",
+      "“I’m moving it to Easter.” The phone lights under his hands, and something gets typed into it. “Easter’s very big with you people.”",
+      "Jack lies back in his clothes with the RAZR shut on his chest and the Carhartt still zipped. The last thing he hears is the rain at the window, and under it, across the room, Theo breathing too evenly to be asleep."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "Say nothing.",
+     "tag": "Restraint",
+     "set": {
+      "e21_calendar": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Jack looks at his boots.",
+      "“I’m moving it,” Theo says, and something taps on the screen.",
+      "Jack lies back in his clothes with the RAZR shut on his chest and the Carhartt still zipped. The last thing he hears is the rain at the window, and under it, across the room, Theo breathing too evenly to be asleep."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "FRIDAY · 11:50 AM · DELGADO HALL, ROOM 412 → THE EAST STAIRWELL",
+   "body": [
+    "Noon gets in around the edges of the blind, white, and lies along the sill. Theo’s bed is empty and made the way Theo makes a bed, with the duvet thrown at the pillow from across the room. The rain has quit. The gutter outside is still working through what’s left of it, a drop at a time onto the ledge, and Jack lies on his back and listens to it and understands, slowly, that he has slept through the last class of the semester and that the semester is not going to come looking for him.",
+    "On his desk, where his Dell would be if the Dell had lived past November, Theo’s MacBook sits open with a yellow Post-it stuck across the top of the screen.",
+    {
+     "type": "doc",
+     "title": "A Post-it",
+     "text": "USE IT. DON’T READ MY MAIL. —T."
+    },
+    "Behind the Post-it the desktop is a black-and-white still of a boy on a beach, and the mail program is already open, because Theo assumed.",
+    "Hale wants it today. Jack sits down in his undershirt and opens a new message and keeps it short, because Hale has opinions about length, and sends it at fourteen minutes past twelve.",
+    {
+     "type": "doc",
+     "title": "To: Prof. Adrian Hale · Subject: PHIL 9H oral",
+     "if": "e20_best==\"sincerity\"",
+     "text": "Professor Hale,\n\nI’ll defend Miss Broussard’s argument that a promise is made to a person, not to a reason.\n\nJack Costigan"
+    },
+    {
+     "type": "doc",
+     "title": "To: Prof. Adrian Hale · Subject: PHIL 9H oral",
+     "if": "e20_best==\"grace\"",
+     "text": "Professor Hale,\n\nI’ll defend Miss Broussard’s argument that the dead can be wronged, and therefore helped.\n\nJack Costigan"
+    },
+    {
+     "type": "doc",
+     "title": "To: Prof. Adrian Hale · Subject: PHIL 9H oral",
+     "if": "e20_best==\"candor\"",
+     "text": "Professor Hale,\n\nI’ll defend Miss Broussard’s argument that some people you let go, and pray for at a distance, and leave the light on. She said it at your table. It isn’t written down anywhere.\n\nJack Costigan"
+    },
+    {
+     "type": "doc",
+     "title": "To: Prof. Adrian Hale · Subject: PHIL 9H oral",
+     "if": "e20_best==\"wit\"",
+     "text": "Professor Hale,\n\nI’ll defend Miss Broussard’s argument that it isn’t hypocrisy to show up. She said it in a church courtyard in August, the day after we met. I’ve been losing to it since.\n\nJack Costigan"
+    },
+    {
+     "type": "doc",
+     "title": "To: Prof. Adrian Hale · Subject: PHIL 9H oral",
+     "if": "e20_best!=\"sincerity\" && e20_best!=\"grace\" && e20_best!=\"candor\" && e20_best!=\"wit\"",
+     "text": "Professor Hale,\n\nI’ll defend Miss Broussard’s YES paper.\n\nJack Costigan"
+    },
+    {
+     "if": "e20_best_weak",
+     "text": "He sits with it a minute before he sends it."
+    },
+    "In 412 the RAZR has one bar on a good day, and this morning it didn’t have that. He takes it out to the east stairwell, and on the landing it finds its bar and remembers everything at once: one new voicemail, 7:12 AM, HOME.",
+    "His father left it at ten past ten, Glenwood Avenue time. Jack puts it to his ear.",
+    "“Jack. It’s your father.” A cough, turned away from the phone. Behind him the radio on top of the refrigerator has the morning guys still going about it. “Browns beat Pittsburgh. Last night. Thirteen–six.” That gets a stretch of tape to itself. “Eight sacks.”",
+    "There’s a pause then, long enough to hear a spoon go around a cup and one of the radio guys laugh at the other one.",
+    "“Thought you’d want to know.”",
+    {
+     "if": "e20_bill==\"candor\"",
+     "text": "Paper, close to the mouthpiece. “Your mother left a list by the phone. ‘Ask him about the girl.’” The paper goes down. “I’m not asking you about the girl.”"
+    },
+    {
+     "if": "e20_bill==\"control\"",
+     "text": "Paper, close to the mouthpiece. “Your mother left a list by the phone. ‘Ask him about Theo’s phone.’” The paper goes down. “I’m not asking you about Theo’s phone.”"
+    },
+    {
+     "if": "e20_bill!=\"candor\" && e20_bill!=\"control\"",
+     "text": "Paper, close to the mouthpiece. “Your mother left a list by the phone. ‘Ask him is he eating.’” The paper goes down. “You’re eating.”"
+    },
+    "“Your mother says call.” Then the click, and the woman who lives in the phone asking what he’d like to do with this message.",
+    "Jack stands on the landing with the phone still at his ear, grinning at nothing he could point to. It’s twenty past three in Youngstown. His mother is at the school till four, and his father will have gone out to the garage by now, to the space heater and the radio and the Stroh’s fridge, and if Jack called back the phone would ring in an empty kitchen. He can see his father in the recliner last night counting them off on his fingers at the television, all eight, and Nonna telling him to sit down.",
+    "He saves it. Out the landing window, open its six inches, the Lagoon lies flat under a low white sky, and an egret stands out in it on one leg with its back to Delgado.",
+    "Under the voicemail, at the top of the inbox where he left it at the corner six hours ago, the other one is waiting.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "You left in the second chorus.",
+     "time": "11:41 PM",
+     "if": "lena_unsigned"
+    },
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Thank you for staying. He said you told him. —L.",
+     "time": "11:41 PM",
+     "if": "!lena_unsigned && julian_she_wanted"
+    },
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Thank you for staying. —L.",
+     "time": "11:41 PM",
+     "if": "!lena_unsigned && !julian_she_wanted"
+    },
+    {
+     "if": "lena_unsigned",
+     "text": "No *—L.* She signs everything. She signed the one about Book Nine at twelve past ten on Tuesday morning, coming out of a Greek final, with the line number in it."
+    },
+    {
+     "if": "!lena_unsigned",
+     "text": "He stayed to the end of the song. Then he was out Bastille’s door before ten with his hands in the Carhartt, and when Laney asked where, in front of the table, what he gave her was *Out*."
+    },
+    "It’s the last day of classes. Tonight there’s a party at Newman House, ten-dollar limit, carols with the choir, all voices welcome, and everybody he knows will be at it."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "frank",
+     "title": "Dad",
+     "text": "Frank Costigan. Twenty-six years on the line at Lordstown, laid off since June. Drove me 2,400 miles because two plane tickets cost more than the truck is worth. Saw the Pacific for the first time today. Didn’t say anything. That’s how you know. Monday the 9th: the SUB pay’s done. He went to the bar for the Steelers and didn’t come home. Sat in the employee lot at Lordstown to see if the lights were on. Hit the trash can pulling in at ten to five. Ma called me at one. Nobody was hurt. Saturday he called about Ohio State. Overtime. Pasadena. First time since September. Thanksgiving: sober. Washed the truck. Picked us up at Pittsburgh and talked to Theo the whole way home. Guest says grace — his rule. Told Theo to come back. You don’t call first. Friday morning, a voicemail: Browns beat Pittsburgh. Thirteen–six. Eight sacks. Thought I’d want to know."
+    }
+   ],
+   "choices": [
+    {
+     "text": "*i know. im sorry. it was good, lena*",
+     "tag": "Candor",
+     "if": "lena_unsigned",
+     "set": {
+      "e21_reply": "candor",
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "Lena’s text from the night of the song was still waiting at noon — you left in the second chorus. You told her you know, you’re sorry, and it was good.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "i know. im sorry. it was good, lena",
+       "time": "12:22 PM"
+      },
+      "He stays out on the landing with the phone shut in his hand. It takes her nine minutes.",
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "It was. —L.",
+       "time": "12:31 PM"
+      },
+      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "whats your afternoon",
+       "time": "12:40 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars. nothing that eats",
+       "time": "12:43 PM",
+       "if": "e20_mass==\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars",
+       "time": "12:43 PM",
+       "if": "e20_mass!=\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
+       "time": "12:44 PM"
+      },
+      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "*i heard the bridge through the glass. it was good*",
+     "tag": "Wit",
+     "if": "lena_unsigned",
+     "set": {
+      "e21_reply": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "Lena’s text from the night of the song was still waiting at noon — you left in the second chorus. You told her you heard the bridge through the glass.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "i heard the bridge through the glass. it was good",
+       "time": "12:22 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "Through the glass doesn’t count, Youngstown. —L.",
+       "time": "12:30 PM"
+      },
+      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "whats your afternoon",
+       "time": "12:40 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars. nothing that eats",
+       "time": "12:43 PM",
+       "if": "e20_mass==\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars",
+       "time": "12:43 PM",
+       "if": "e20_mass!=\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
+       "time": "12:44 PM"
+      },
+      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "*he should play it again. tell him*",
+     "tag": "Sincerity",
+     "if": "!lena_unsigned && julian_she_wanted",
+     "set": {
+      "e21_reply": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.julian.warmth": "+1"
+     },
+     "key": "Lena thanked you for staying, by text. You told her Julian should play it again.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "he should play it again. tell him",
+       "time": "12:22 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "I’ll tell him. —L.",
+       "time": "12:26 PM"
+      },
+      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "whats your afternoon",
+       "time": "12:40 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars. nothing that eats",
+       "time": "12:43 PM",
+       "if": "e20_mass==\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars",
+       "time": "12:43 PM",
+       "if": "e20_mass!=\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
+       "time": "12:44 PM"
+      },
+      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "*i meant it. its good*",
+     "tag": "Candor",
+     "if": "!lena_unsigned && julian_she_wanted",
+     "set": {
+      "e21_reply": "candor",
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "Lena thanked you for staying, by text. You told her you meant it.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "i meant it. its good",
+       "time": "12:22 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "He knows. He told me twice. —L.",
+       "time": "12:27 PM"
+      },
+      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "whats your afternoon",
+       "time": "12:40 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars. nothing that eats",
+       "time": "12:43 PM",
+       "if": "e20_mass==\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars",
+       "time": "12:43 PM",
+       "if": "e20_mass!=\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
+       "time": "12:44 PM"
+      },
+      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "*it was really good*",
+     "tag": "Sincerity",
+     "if": "!lena_unsigned && !julian_she_wanted",
+     "set": {
+      "e21_reply": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "Lena thanked you for staying, by text. You told her it was really good.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "it was really good",
+       "time": "12:22 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "I know. —L.",
+       "time": "12:29 PM"
+      },
+      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "whats your afternoon",
+       "time": "12:40 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars. nothing that eats",
+       "time": "12:43 PM",
+       "if": "e20_mass==\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars",
+       "time": "12:43 PM",
+       "if": "e20_mass!=\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
+       "time": "12:44 PM"
+      },
+      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "*i stayed through the bridge. nobody leaves during a bridge*",
+     "tag": "Wit",
+     "if": "!lena_unsigned && !julian_she_wanted && e20_julian==\"wit\"",
+     "set": {
+      "e21_reply": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "Lena thanked you for staying, by text. You told her nobody leaves during a bridge.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "i stayed through the bridge. nobody leaves during a bridge",
+       "time": "12:22 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "People leave during bridges. —L.",
+       "time": "12:28 PM"
+      },
+      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "whats your afternoon",
+       "time": "12:40 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars. nothing that eats",
+       "time": "12:43 PM",
+       "if": "e20_mass==\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars",
+       "time": "12:43 PM",
+       "if": "e20_mass!=\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
+       "time": "12:44 PM"
+      },
+      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "*julian can sing. dont tell him i said so*",
+     "tag": "Wit",
+     "if": "!lena_unsigned && !julian_she_wanted && e20_julian!=\"wit\"",
+     "set": {
+      "e21_reply": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "Lena thanked you for staying, by text. You told her Julian can sing, and not to tell him you said so.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "julian can sing. dont tell him i said so",
+       "time": "12:22 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "I’m telling him you said so. —L.",
+       "time": "12:28 PM"
+      },
+      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "whats your afternoon",
+       "time": "12:40 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars. nothing that eats",
+       "time": "12:43 PM",
+       "if": "e20_mass==\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars",
+       "time": "12:43 PM",
+       "if": "e20_mass!=\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
+       "time": "12:44 PM"
+      },
+      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "Don’t answer.",
+     "tag": "Restraint",
+     "set": {
+      "e21_reply": "restraint",
+      "trait.control": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "key": "Lena’s text from the night of the song was still waiting at noon. You didn’t answer it.",
+     "response": [
+      "He shuts the phone on it and stands a minute longer on the landing, watching the egret out on the Lagoon on its one leg.",
+      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "whats your afternoon",
+       "time": "12:40 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars. nothing that eats",
+       "time": "12:43 PM",
+       "if": "e20_mass==\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "church party. white elephant. 10 dollars",
+       "time": "12:43 PM",
+       "if": "e20_mass!=\"noon\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
+       "time": "12:44 PM"
+      },
+      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s11": {
+   "slug": "SATURDAY · 5:30 PM · DELGADO HALL, ROOM 412",
+   "body": [
+    "Down the hall somebody has the Heisman on with the door open, and it comes along the corridor in pieces: an orchestra, applause, a man in a tuxedo in New York saying *finalist*. The window is already dark. Theo is at his desk in the navy robe with the lamp on and his back to the room, under Rosie’s princes, and the MacBook has gone home to his side with the Post-it still on it.",
+    "Jack sits down on his bed in his jacket. His right hand is in the pocket of it, and has been since Ocean Road.",
+    "“You have mail,” Theo says, without turning around. “I didn’t read it. I read who it’s from and who else it’s to. Postmen are allowed that much.” He tips the screen a few degrees toward the room. “Miss Broussard is on the To: line. Hale doesn’t BCC. It’s the most attractive thing about him.”",
+    "Jack gets up and reads it over his shoulder.",
+    {
+     "type": "doc",
+     "title": "From: Adrian Hale · To: Jack Costigan; Magdalena Broussard · Re: PHIL 9H oral",
+     "text": "Received, both. Mr. Costigan at 12:14 today, Miss Broussard at seven on Thursday morning, in Latin, for reasons she will no doubt explain. I am not surprised and I am not disappointed, which at my age is the same thing as joy.\n\nWednesday, two o’clock. Come as you are.\n\n—A.H."
+    },
+    "Hale sent it yesterday at two minutes past five. Jack would very much like to see the Latin.",
+    "Theo waits until he’s finished. “‘The same thing as joy,’” he says. “I want that on my headstone. Under the name, in a smaller font.” He scrolls. “You slept from seven till three in your jacket,” he says. “I tiptoed. It was very moving. I’ve never tiptoed for anyone.”",
+    "“You could have woken me up.”",
+    "“I considered it. It seemed unsporting. You were in a jacket.”",
+    "Theo goes back to the screen. “She knocked last night,” he says. “Twelve-thirty. I said the library.”",
+    "“She told me.”",
+    "“Of course she did.”",
+    {
+     "if": "e21_warzone==\"lie\"",
+     "text": "Theo straightens the Post-it on the screen with one finger. “It was your library. I borrowed it.”",
+     "else": "Theo straightens the Post-it on the screen with one finger. “It has eight floors. You could have been on any of them.”"
+    },
+    "“She was in the cardigan, with her hand in the pocket of it the whole time. She had that toy from the party in there.” He clicks something shut. “She said to tell you she came by. I’m telling you.”",
+    "“Thanks.”",
+    "“Don’t. I lied to a woman in a cardigan at half past twelve. It goes on the tab.”",
+    "Jack goes back and sits on his own bed. Down the hall the orchestra comes up again, and the applause with it, for somebody in New York.",
+    "Theo swivels the desk chair round to face the room, for the first time since Jack came in, and considers the pocket of Jack’s jacket.",
+    "“Your pocket has been looking at me since you came in, Costigan.”",
+    "Jack takes his hand out of it. The pocket goes on being a pocket.",
+    "“The stairwell has a bar,” Theo says, and turns back around to the lamp. “Go and be private somewhere with reception.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are."
+    }
+   ],
+   "next": "s11a"
+  },
+  "s13b": {
+   "slug": "SUNDAY · 1:25 AM · DELGADO HALL, ROOM 412",
+   "set": {
+    "resolve.jack": "+1",
+    "heard_theo_dawn_dec13": true
+   },
+   "body": [
+    "Theo is asleep, or doing it well. He is a long shape under the duvet with his face to the wall, and his phone lies dark on the desk beside the lamp. Jack gets his boots off without the lamp and lies down with his hands under his head.",
+    "He smells of the Anchor’s fryer and the cold off the wharf, and a little of her. On the desk the outer screen of the RAZR says 1:31, and later 2:40, and later 3:52. Some time after three he starts a decade on his knuckles and loses count in the fourth Hail Mary and starts it over, and loses it again in the same place, and lets that be the prayer. In a few hours there’s a beach, and her, and a board he has never stood on, and lying here doesn’t bring any of it closer.",
+    "At half past five Theo gets up. He does it in the dark, without the lamp: the duvet, the closet door on its track, a sweater going over his head, a zipper. Something gets knocked off the desk and caught before it lands, and there’s a long quiet after the catch, as if he’s listening to see whether the room woke up. Nothing on his feet. He opens the door to the hall, and the light comes in along the carpet as far as the foot of Jack’s bed, and Theo stands in the doorway in it with his back to the room, and stays, long enough that Jack, lying there with his eyes shut, starts to believe he has changed his mind.",
+    "He hasn’t. He goes, barefoot, and draws the door to behind him without a sound, and his good loafers are still standing just inside it, side by side, toes to the hall.",
+    "Jack gets up and bends one slat of the blind. Down on Ocean Road, under the streetlight, Theo crosses the empty road toward the dark of the Grove with his hands in the pockets of the sweater, walking on the cold asphalt as if it were carpet, and is in the trees.",
+    "At ten to six Jack goes too. He steps around the loafers on his way out. Downstairs on the walk he laces his boots on the curb and turns east, toward the Marine Lab and the bluff, with the cold coming up through the soles and the sky over the hills not yet anything at all. Two of them out of one room before light on a Sunday, both of them going to the water, opposite ways."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "theo_dawn",
+     "title": "Theo, before light",
+     "text": "Came in barefoot at 5:20, sand and wet jeans. ‘Couldn’t sleep.’ There was a girl in our room. Sunday, Sept. 20, 6:10, wet to the shins and hay on his sweater: he says he runs now. Four miles. Barefoot. Sunday, Oct. 11, before light: wet to the shins again. He drives to where he runs. Sunday, Oct. 25, before light, at a motel above Lucia: up the path from the water, wet to the shin, sand on the cashmere. ‘Couldn’t sleep. Went to look at the ocean.’ Sunday, Nov. 1, Halloween’s morning after: asleep on his covers in the dinner jacket at seven, shoes on, sand to the knees, the hems wet. Sunday, Dec. 6, St. Nicholas: at half past five I heard him stand in the open door a long time, and go barefoot. Back at 6:40, wet to the shin and sand above it, with a gas-station coffee and his loafers in his hand. Sunday, Dec. 13: half past five, barefoot again. I went at ten to six, the other way."
+    }
+   ],
+   "next": "s14"
+  },
+  "s15c": {
+   "slug": "SUNDAY · 4:30 PM · DELGADO HALL, ROOM 412",
+   "set": {
+    "knows_sol_shoes": true
+   },
+   "body": [
+    "At half past four the sun is twenty minutes off the water and comes through the blind in bars, and in the middle of 412, on her knees on the carpet in the gold of them, a tall girl with long black hair is filming Theo’s shoes. She works barefoot, in black, with the hair wound up out of the way and a pencil through it. The camera is a boxy chrome thing with BOLEX in script along its side. When she winds it by its little crank it makes the sound of a music box being wound, and when she lets it run it hums.",
+    "Theo made the introduction from the doorway when they came in, with the girl already looking at the room through the viewfinder. “Soledad is making a short about rich boys’ shoes. I’m the rich boy. Those are the shoes. Don’t look at the lens, Costigan. She hates that.”",
+    "So Jack is at his desk with his back mostly to it, and the legal pad from the Brick in front of him with Wednesday’s argument a few pages in, and the RAZR beside it, on and quiet. He has stopped pretending to write.",
+    "The shoes are on the carpet in a line from the door to the window, heel to toe: loafers in three colors, a pair of driving moccasins, boots that cost more than his father’s truck, a pair of brogues, the good cordovans, and at the end by the window a pair of white Keds with flowers painted on the toes in nail polish. Theo is on his bed in the navy robe with his ankles crossed, doing the voice-over.",
+    "“Ferragamo,” he says, as the lens comes down the line. “Rodeo Drive. A gift from my father’s second wife on my seventeenth birthday, a half size small, which I have chosen to believe was an accident.” The camera moves on. “Sperry. A boat in Cabo. My father’s idea of a conversation.” It moves on. “Visvim. Tokyo, by mail. They have never touched grass. Grass is for other people’s shoes.” At the brogues: “Church’s. I wore them to Mass once, as a joke. It didn’t take.”",
+    "The girl doesn’t answer any of it. Once the lens comes around to the desk and rests on the back of Jack’s neck, long enough that he feels it there, and goes back to the floor.",
+    "At the Keds Theo quits the voice-over. “Poppy,” he says. “Leave those in.” The girl stays on them, and he lets her.",
+    "When she gets to the window she stands up, still filming, and turns, and lets the lens go up the open closet: the hangers, the shirts that cost what shirts cost on Theo’s side of the room, the top shelf. The gray camera bag. The black duffel. She stops there.",
+    "“What’s in the black one?”",
+    "“Shoes,” says Theo, whose shoes are all on the floor.",
+    "The camera runs three seconds more on the shelf. She lowers it and lets the spring wind down.",
+    "She doesn’t pack anything. The Bolex goes on her hip by its strap, and she steps over the line of shoes without touching one, and on her way to the door she comes past Jack’s desk and looks down at him.",
+    "“Hi, hat,” she says.",
+    "Jack isn’t wearing one. By the time he’s worked that out she’s in the hall.",
+    "“Soledad doesn’t talk,” Theo says, uncrossing his ankles. “She *frames*.”",
+    "He gets up and starts putting the shoes back in the closet by pairs, in the order they came out of it, and Jack goes back to Wednesday."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "theo",
+     "title": "Theo Vance",
+     "if": "!left_second_chorus",
+     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath. Sunday night, to the ceiling: Laney says he asked if he could ask. ‘Like a vampire. They have to be invited in.’ He’s known since Friday. Wednesday I said I ended it. He opened his jar and gave me a spoon. Friday he took me to a party in Montecito so I wouldn’t meet anybody, and lost me in three minutes. Saturday at six he was on his bed in his coat. He’d called me nine times. At halftime of Michigan I asked him home for Thanksgiving. He said yes before I finished, and bought two tickets to Pittsburgh. ‘Guests bring something.’ Looked up St. Elizabeth’s visiting hours before I asked. Thanksgiving: came to Youngstown in Dad’s Browns parka over the camel coat. Dad said that’s not a coat. Speaks Italian from a movie, wrong. Rolled Nonna’s crust and made his own peach pie. Dad asked him to say grace. He did. Nonna asked who prays for him; he said nobody. Met Danny — Danny liked him in a minute. Didn’t talk the whole way home. Kept Rosie’s prince. Nonna gave him a twenty. Back at Marisol he reads me the News Feed in the morning like the intentions at the twelve-ten. Wants to know if I *like* things now. Says I’m fast. Says I’ve started sleeping with my phone. Played the Fishbowl a voicemail off the internet and ran one sentence of it twice: take your name off your phone. Timed my pocket with his stopwatch. Didn’t say the number. Taped Rosie’s princes over his desk; Nonna’s twenty is in the frame of his mirror. Covered for me at Alarm Five: I was in the shower. Sat on a dryer with Laney, discussing finals. Sunday at twenty to seven: back from somewhere. I asked him home for Christmas; so did Pop, in the garage. He has things in LA. ‘Tell your father I heard him.’ Put his cashmere on me Sunday. Said I was holding my phone like a rosary. Lent me the Burberry in the storm. Tried to heckle Julian’s song and couldn’t. Watched me go through Bastille’s window. Six in the morning on the last day of classes he asked why I look like I’ve been through a war. He had a question in his calendar for after Thanksgiving; he’s moved it. Sunday he filmed his shoes with a girl named Soledad."
+    },
+    {
+     "kind": "person",
+     "id": "theo",
+     "title": "Theo Vance",
+     "if": "left_second_chorus",
+     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath. Sunday night, to the ceiling: Laney says he asked if he could ask. ‘Like a vampire. They have to be invited in.’ He’s known since Friday. Wednesday I said I ended it. He opened his jar and gave me a spoon. Friday he took me to a party in Montecito so I wouldn’t meet anybody, and lost me in three minutes. Saturday at six he was on his bed in his coat. He’d called me nine times. At halftime of Michigan I asked him home for Thanksgiving. He said yes before I finished, and bought two tickets to Pittsburgh. ‘Guests bring something.’ Looked up St. Elizabeth’s visiting hours before I asked. Thanksgiving: came to Youngstown in Dad’s Browns parka over the camel coat. Dad said that’s not a coat. Speaks Italian from a movie, wrong. Rolled Nonna’s crust and made his own peach pie. Dad asked him to say grace. He did. Nonna asked who prays for him; he said nobody. Met Danny — Danny liked him in a minute. Didn’t talk the whole way home. Kept Rosie’s prince. Nonna gave him a twenty. Back at Marisol he reads me the News Feed in the morning like the intentions at the twelve-ten. Wants to know if I *like* things now. Says I’m fast. Says I’ve started sleeping with my phone. Played the Fishbowl a voicemail off the internet and ran one sentence of it twice: take your name off your phone. Timed my pocket with his stopwatch. Didn’t say the number. Taped Rosie’s princes over his desk; Nonna’s twenty is in the frame of his mirror. Covered for me at Alarm Five: I was in the shower. Sat on a dryer with Laney, discussing finals. Sunday at twenty to seven: back from somewhere. I asked him home for Christmas; so did Pop, in the garage. He has things in LA. ‘Tell your father I heard him.’ Put his cashmere on me Sunday. Said I was holding my phone like a rosary. Lent me the Burberry in the storm. Tried to heckle Julian’s song and couldn’t. Turned around at the counter when I left in the second chorus. Six in the morning on the last day of classes he asked why I look like I’ve been through a war. He had a question in his calendar for after Thanksgiving; he’s moved it. Sunday he filmed his shoes with a girl named Soledad."
+    }
+   ],
+   "next": "s16"
+  }
+ }
+}

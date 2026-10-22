@@ -1289,7 +1289,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Skye's second attempt: the argument.** She out-argues him (takes his own "right now" apart; persuasive, funny,
     less clothed while she does it). **When he says no, she stops only the further escalation** and keeps going **as
     they were before she started whatever he said no to** (the first "to the letter" in practice).
-  - **Osei's arc across confessions.** E21: **tender**, speaking to Jack's **loneliness more than the sin**, because
+  - **Osei's arc across confessions.** E21: **tender** (CORRECTED below: not loneliness), speaking more to what's good in it than to the sin, because
     Jack stopped it and had a real conversation with her about it. **As Jack keeps putting himself in that position,
     Osei becomes gentle but pointed** ("you're not avoiding the occasion, you're scheduling it"), **then eventually
     bracing.** Never a scolding.
@@ -1325,3 +1325,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     she was **worried what he thought of her**, and that **she said she'd meet him in daylight, teach him to surf**.
     It all sounds hopeful, and it's part of **why Osei is tender this time** (alongside Jack having stopped and
     talked it through). Osei can gently take up the daylight (his own "keep her in the daylight" counsel, answered).
+  - **CORRECTION: Jack is not lonely (player).** He loves Lena and is hurt he can't be with her, but **Skye is
+    entirely different from Becca: Jack *wants* to be with Skye.** He enjoys her company, enjoys doing things with
+    her, and enjoys **learning about her, body and mind**. Never write Skye as a consolation or a cure for loneliness.
+    **Osei's tenderness in E21 speaks to that**: he hears a young man who genuinely delights in this girl and is
+    trying to do right by her, and speaks to the real good in it (love wills the good of the other) more than to the
+    sin, which is exactly why the occasion is so dangerous.
