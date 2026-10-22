@@ -1,0 +1,528 @@
+{
+ "scenes": {
+  "s21": {
+   "slug": "SATURDAY · 1:10 AM · THE SAAB, CAMINO ALTO → OCEAN ROAD",
+   "music": "Fleetwood Mac — “Dreams”",
+   "body": [
+    "The car is parked on the shoulder below the turnaround, nose downhill, under a jacaranda that has dropped a season’s worth of seed pods on it, and the only light it gets is the blue that comes up out of Wyatt Halloran’s pool and spills over the edge of the canyon. It’s a Saab 900 convertible. It was red once — a red the sun has been working on for eighteen years, gone pink along the tops of the fenders. There’s a dent in the passenger door about the size of a hip. One taillight is out. The canvas top is folded down behind the seats, and somebody has mended a split seam in it with silver duct tape.",
+    "She drops her boots in the back and the O’Connor on the dash, where it slides into the corner of the windshield and rides there, and swings in barefoot. Jack watches her lean down and put the key in the floor between the seats, where there is no earthly reason for a key to go.",
+    "“It goes in the *floor*?”",
+    "“It’s Swedish,” she says, as if that settles it, and turns it.",
+    "The tape deck wakes up in the middle of a song — Fleetwood Mac, Stevie Nicks going soft and level over a drum that never hurries — and she doesn’t touch it. “It’s stuck. It’s been playing *Rumours* since August. I’ve made my peace.” She leaves the top down and puts the heater on full, and it roars at his shins.",
+    "“It’s November,” Jack says.",
+    "“You heat your feet and freeze your face. It’s the only way to drive in November.”",
+    "Before she takes the brake off he asks the thing you ask in Youngstown before anybody drives you anywhere after midnight. “You have anything tonight?”",
+    "“I don’t drink where there are phones.” She says it like a rule of grammar, and pulls out.",
+    "Theo took these switchbacks up with the top down and Randy Newman on. She takes them down faster, and better: one hand low on the wheel and the bare foot doing all the thinking — brake late, turn in, back on the gas before the apex — and the little car leans into every hairpin and comes up out of it like it was the car’s idea. The cold pours over the windshield and takes his face clean off. Below them the town is pulling itself back together into streets. Somewhere around the fourth hairpin Jack laughs out loud, at nothing — at the cold, at the size of the sky — with one hand braced on the dash, and she laughs because he did and takes the next one faster. She never comes near the edge. He checks.",
+    "At the bottom Mission Street is empty, every light on it blinking yellow, and she takes the length of it in third with her hair going everywhere. There’s a badge in the middle of the steering wheel. She catches him reading it and pats the dash.",
+    "“Swedish,” she says again. “Like a sauna. Like a very long, very sad film.”",
+    "“It’s GM.”",
+    "She looks over at him. “Excuse me.”",
+    "“GM bought half of Saab in 1990,” Jack says. “The rest in 2000. What year is this?”",
+    "“Ninety-one. My mother hates it.”",
+    "“Then it’s half GM. And GM’s trying to sell the rest of it, and nobody wants it.”",
+    "“How do you *know* that?”",
+    "So he tells her. Not the business page — the rest of it. That GM went bankrupt on the first of June and the Mahoning Valley watched it on the news like a ballgame they’d bet the house on. That there’s a plant in Lordstown, Ohio, twenty-five minutes from his house in Youngstown, a mile long, where his father put Cavaliers together for twenty-two years and then Cobalts — twenty-six years on the line, Local 1112 — and that he’s been laid off since June. She drives and listens. She listens the way she argued about the grandmother, all of her pointed at it, and when he stops she asks the next question, and then the one after that, and every one of them is the right one.",
+    "“And now?” she says. “What does he do all day, now?”"
+   ],
+   "choices": [
+    {
+     "text": "Tell her about the Monday night in the Lordstown lot.",
+     "tag": "Candor",
+     "set": {
+      "e16_dad": "candor",
+      "told_skye_frank": true,
+      "rel.skye.trust": "+2",
+      "soul.honesty": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "In her car you told her about your father’s night in the Lordstown lot.",
+     "response": [
+      "He tells her about Monday before last. The last check came and went, and his father drove down to the bar on Midlothian to watch the Steelers, who he doesn’t even like. The bar closed at two-thirty Ohio time. At one in the morning here Jack was on a stairwell in his socks with his mother on the phone, and at nine minutes to two he heard the truck take out the trash can at the curb on Glenwood Avenue. Then he heard the storm door, and his mother came back on to tell him where his father had been all night: in the employee lot at Lordstown, with the engine off. To see if the lights were on.",
+      {
+       "if": "lena_knows_frank_night",
+       "text": "He has told it once before, on a bench above Campus Point, to Lena.",
+       "else": "He hasn’t told it to anybody who wasn’t in the house that night."
+      },
+      "She doesn’t say anything through two curves. She doesn’t put on a face for it, either. She drives, and he can see her keeping it."
+     ],
+     "goto": "s21a"
+    },
+    {
+     "text": "The line, the layoff, the garage with the radio. Not the lot.",
+     "tag": "Control",
+     "set": {
+      "e16_dad": "control",
+      "rel.skye.trust": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He gives her the line — the Cavaliers, the Cobalts, the union hall where somebody reads out a recall list and the name is never on it — and the garage on Glenwood Avenue: the space heater, the radio turned low, the Stroh’s fridge, the folding chair where his father listens to Ohio State now that there’s no shift to be at. How every phone call out of that garage ends the same way: *Go Bucks*, and the click.",
+      "He leaves the lot where it is, at the other end of the turnpike, with the engine off.",
+      "She drives and listens, and when he’s done she lets the quiet be quiet."
+     ],
+     "goto": "s21a"
+    }
+   ]
+  },
+  "s21a": {
+   "slug": "SATURDAY · 1:30 AM · THE SAAB, OCEAN ROAD",
+   "body": [
+    "Ocean Road runs west out of town with nothing on it but the two of them and the reflectors. She drives a mile without talking. He’s starting to understand she doesn’t do that by accident.",
+    {
+     "if": "e16_dad==\"candor\"",
+     "text": "Then she tucks her chin and turns into a man sitting in a pickup with the engine off. Her shoulders come down. Her hands go heavy at the bottom of the wheel. “Lights are on,” she says, from the bottom of her chest, in Jack’s own vowels flattened by another thirty years of Ohio. A stop, the length of a man deciding whether there’s a second sentence. “So somebody’s working.”",
+     "else": "Then she tucks her chin and turns into a man in a folding chair. Her shoulders come down and settle, and one hand goes out to the side to turn down a radio that isn’t there. “Everything’s fine here,” she says, from the bottom of her chest, in Jack’s own vowels flattened by another thirty years of Ohio. A stop, the length of a man deciding whether there’s a second sentence. “Go Bucks.” And she clicks her tongue for the hang-up, right on the last word, where his father puts it."
+    },
+    "It isn’t an impression. Gina does their father at the supper table sometimes, all eyebrows and grievance, and it’s funny. This isn’t funny. She has never heard Frank Costigan’s voice in her life; she has twenty minutes of Jack talking in a convertible, and out of that she has built the one thing he can’t stand to hear from anybody but the man himself — the stop before the second sentence, the weight a sentence has when it’s the only one coming. The back of Jack’s neck goes cold, and the wind has nothing to do with it.",
+    "And then she drops it. All of it — the chin, the shoulders, the vowels. What’s left is a girl driving a car with both hands, and she says it short, to the road:",
+    "“Nobody’s ever told me about their dad without wanting me to *do* something with it.”",
+    "She doesn’t explain. Jack watches the road: the white line coming at them out of the dark, the campus going by on the left with three windows lit in it, the eucalyptus at the Lagoon standing up black against the stars and then gone behind them. He gives her the next mile and asks her for nothing in it.",
+    "Past the last of the campus Ocean Road gives up being Ocean Road and turns into the old coast highway, two lanes and no lights. At the stop sign where it changes she comes to a full and ostentatious stop, looks left and right at a road with nobody on it for miles, and leans out over her door to ask the dark, “Anybody?” Nobody. She’s back. She takes off with the tape rolling into the next song and tells him he looked very handsome back there, worrying about her driving, like a dad in a minivan commercial. Jack is thinking that his father would like her, and would never say so as long as he lived."
+   ],
+   "next": "s22"
+  },
+  "s22": {
+   "slug": "SATURDAY · 1:45 AM · ELLERY BEACH, THE OLD OIL-PIER PILINGS",
+   "body": [
+    "Ellery Beach smells of tar and black sage and kelp gone cold on the sand. There’s no sign for it — a dirt turnout four miles up the coast from the Lagoon, a gap in a wire fence, a surfers’ path going down through the coyote brush — and at the bottom, standing out into the surf in two crooked rows, the black stumps of a pier somebody built in the twenties to pump oil out of the sea. Farther out, on the horizon, the platforms are lit up like a town that decided to stay at sea. There’s no moon. There are more stars over the water than Youngstown has ever had.",
+    "His phone goes off in his pocket as he gets out of the car.",
+    {
+     "if": "e16_theo==\"control\"",
+     "type": "sms",
+     "from": "Theo",
+     "text": "Costigan. You're a grown man. Text me if you're dead.",
+     "time": "1:40 AM"
+    },
+    {
+     "if": "e16_theo==\"reckless\"",
+     "type": "sms",
+     "from": "Theo",
+     "text": "where are you",
+     "time": "1:40 AM"
+    },
+    "He puts it away. By the time he has his door shut she’s already gone — down the path barefoot in the dark with the flannel flying open behind her — and by the time he gets to the bottom she’s in the water to her knees in her cutoffs and her black tights. A wave comes in and takes her to the thigh. She gasps like she’s been slapped, and then she laughs, and turns around in the dark with her arms out wide to show him the size of it.",
+    "“Come in,” she calls.",
+    "“It’s November.”",
+    "“It’s fifty-seven degrees. That’s warmer than the air. I checked.” She backs up a step, deeper, and the hem of the flannel goes dark. “I dare you. In your clothes.”",
+    "“Why in my clothes?”",
+    "“Because anybody can do it in their underwear.” Another step back. The sea is at her waist now, and she isn’t shivering yet, or she’s acting like she isn’t. “Clothes is a commitment, Jack.”",
+    "He’s standing on the wet sand in a charcoal shirt that belongs to somebody else. *By the end of the night it’ll be yours.* Out past her the platforms burn on the horizon, and the stumps of the old pier go out into the black in their two rows, and the girl in the water holds out one hand to him and waits."
+   ],
+   "choices": [
+    {
+     "text": "Go in after her, clothes and all.",
+     "tag": "Reckless",
+     "set": {
+      "e16_water": "reckless",
+      "trait.reckless": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "He throws the RAZR and his wallet up the beach onto her boots in one motion, already running, and goes in the way he went into Lake Milton at eleven: no testing it, straight out until the bottom drops away, and then under.",
+      "The cold is total. It closes over his head and squeezes every thought he owns down to one, which is *cold*, and he comes up spitting salt with his hair in his eyes and the air knocked out of him, and somewhere close by in the dark she is whooping like he just hit a three at the buzzer."
+     ],
+     "goto": "s22a"
+    },
+    {
+     "text": "Empty your pockets onto her boots. Then walk in.",
+     "tag": "Control",
+     "set": {
+      "e16_water": "control",
+      "trait.control": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "He sets the RAZR on her boots, and his wallet, and his keys, and pulls off his boots and stands them side by side next to hers. Then he walks into the Pacific Ocean in his jeans and Theo’s shirt one step at a time, deliberate as the procession at a Good Friday service, until it’s at his waist and every nerve he has is shouting at him to stop.",
+      "“Coat check,” she calls from the deeper water, and that’s his name now."
+     ],
+     "goto": "s22a"
+    },
+    {
+     "text": "“You first. All the way under.”",
+     "tag": "Wit",
+     "set": {
+      "e16_water": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“You first,” he says. “All the way under. Then we’ll talk.”",
+      "She doesn’t even pretend to think about it. She turns around, takes two steps into the next wave, and is gone — a flash of pale foot, and then nothing but black water with the platforms burning on it. Long enough that he takes a step in after her. She comes up three yards off with her hair plastered flat and her mouth open on a shriek, and points straight at him. “Rules,” she says, through her teeth. “You made them.”",
+      "He drops the RAZR and his wallet on her boots and goes, and the Pacific closes over his head and takes every thought he has but one."
+     ],
+     "goto": "s22a"
+    }
+   ]
+  },
+  "s22a": {
+   "slug": "SATURDAY · 1:55 AM · ELLERY BEACH, THE WATERLINE",
+   "body": [
+    {
+     "if": "e16_water==\"reckless\"",
+     "text": "Out past the break the water is up to his ribs and moves him around like it’s making up its mind about something. He can’t feel his feet. His jeans weigh about what he does."
+    },
+    {
+     "if": "e16_water==\"control\"",
+     "text": "He’s in to his waist, exactly where he decided to stop, and it costs every bit as much as running would have. He can’t feel his feet. The shirt has gone heavy and cold against his back."
+    },
+    {
+     "if": "e16_water==\"wit\"",
+     "text": "He came up unable to feel his face, and now the water is up to his ribs and moves him around like it’s making up its mind about something. His jeans weigh about what he does."
+    },
+    "For a minute she lies back on the water with her arms out and her hair fanned around her, looking straight up, and lets the swells carry her past him and back. High in the south Orion is standing over the water, enormous, belt and sword, and up and west of him there’s the little smudged knot of the Pleiades.",
+    "“Do you know them?” she says to the sky.",
+    "“That one’s Orion. The little bunch is the Seven Sisters.” He has to stop and get his jaw under control. “That’s all I’ve got. The rest of them I make up.”",
+    "“Me too.” She points at random. “That’s Gary. That’s Gary’s ex-wife. They share the dog.”",
+    "She stands up again, streaming, and wades over until she’s close enough that the same swell lifts them both and sets them down. In the light off the platforms her face is all planes and wet freckles, and her teeth have started going, and she doesn’t seem to mind that either. She reaches up and puts her wet thumb on his eyebrow, on the scar, and runs it along the line where the hair never grew back.",
+    "“Tell me the scar,” she says. “Tell it like it’s true.”"
+   ],
+   "choices": [
+    {
+     "text": "“I walked into the Pacific Ocean.”",
+     "tag": "Wit",
+     "set": {
+      "e16_scar": "pacific",
+      "scar_told_skye": "pacific",
+      "trait.wit": "+1"
+     },
+     "key": "In the water at Ellery Beach she asked about the scar. You told her you walked into the Pacific Ocean.",
+     "response": [
+      "“I walked into the Pacific Ocean.”",
+      "She glances down at the black water around the two of them. “Liar.”",
+      "“I’m standing in it.”",
+      "“Good liar,” she says. “Not that one. Do another.”",
+      "He doesn’t do another, and she lets him off without a fight, which he wasn’t expecting from her."
+     ],
+     "goto": "s22b"
+    },
+    {
+     "text": "“A jealous husband in Erie, Pennsylvania.”",
+     "tag": "Charm",
+     "set": {
+      "e16_scar": "husband",
+      "scar_told_skye": "husband",
+      "trait.charm": "+1"
+     },
+     "key": "In the water at Ellery Beach she asked about the scar. You told her a jealous husband in Erie, Pennsylvania.",
+     "response": [
+      "“A jealous husband in Erie, Pennsylvania.”",
+      "That gets her. She does the husband right there in the surf — a man home early with his lunch pail, blinking at a bedroom door: “*Marlene?*” — and then Marlene, in a housecoat, very sorry, not that sorry; and then, he can’t believe it, Jack himself, going out a bathroom window with one shoe. Three people he’s never met, all of them true to life, in water up to her ribs.",
+      "Then she stops, and she’s herself, and her teeth are chattering. “No,” she says. “Not that one.”"
+     ],
+     "goto": "s22b"
+    },
+    {
+     "text": "“A fight. A long time ago.”",
+     "tag": "Candor",
+     "set": {
+      "e16_scar": "fight",
+      "scar_told_skye": "fight",
+      "trait.candor": "+1",
+      "soul.honesty": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "In the water at Ellery Beach she asked about the scar. You told her the start of the truth: a fight, a long time ago.",
+     "response": [
+      "“A fight,” he says. “A long time ago.”",
+      "He waits for her to push. She doesn’t push. She doesn’t do anybody, either — no voice, no bit. She takes her thumb off his eyebrow.",
+      "“Okay,” she says. “Keep it.”",
+      "Of everything she’s done tonight, that’s the thing he notices."
+     ],
+     "goto": "s22b"
+    }
+   ]
+  },
+  "s22b": {
+   "slug": "SATURDAY · 2:05 AM · ELLERY BEACH, ABOVE THE TIDE LINE",
+   "body": [
+    "They come out of the water like the survivors of a shipwreck; from the inside, that’s how it feels. She runs up the path ahead of him, barefoot over the coyote brush, swearing inventively the whole way, and comes back down with a blanket out of the trunk — a Mexican one, striped, that smells of surf wax and somebody’s dog.",
+    "They sit in it at the top of the beach where the sand is dry, backs against the cut bank under the brush, wrapped in the one blanket with their wet clothes on, shaking. His phone and his wallet are back off her boots and in his lap. The platforms sit on the horizon. The pilings go out into the dark. She pulls her feet up out of the sand and pushes them, frozen solid, under his thigh, without asking.",
+    "“You’re warm,” she says.",
+    "“I’m soaked.”",
+    "“You’re warm *and* soaked. It’s a natural resource.”",
+    "“Where I’m from, that’s called stealing.”",
+    "“Where I’m from, it’s called a first date.” She wiggles her toes, which are blocks of ice, deeper under him. “Don’t worry. I’ll give you a credit.”",
+    {
+     "if": "e16_water==\"control\"",
+     "text": "And then, settling her heels: “Coat check. I’m checking these.”"
+    },
+    "She looks at him sidelong in the light off the sea.",
+    "“You have a hat face,” she says.",
+    "“I had a hat. Halloween.”",
+    "“I bet.”",
+    {
+     "if": "e16_theo==\"reckless\"",
+     "type": "sms",
+     "from": "Theo",
+     "text": "Costigan. You're a grown man. Text me if you're dead.",
+     "time": "2:20 AM"
+    },
+    {
+     "if": "e16_theo==\"reckless\"",
+     "text": "He turns the phone face down on the sand."
+    },
+    "The St. Michael has worked its way out of his collar in the water and lies on the wet shirt. She finds it with one finger and lifts it off his chest, and tilts it to catch the light from the platforms.",
+    "“Who’s that?”",
+    "“St. Michael.”",
+    "“The one with the sword.” She knows that much. “Does he work?”",
+    "“He’s my confirmation saint. You get to pick.”",
+    "“And you picked the one with the sword.”",
+    "“I picked the one who wins the fight.”",
+    "“Naturally.” She turns the medal over to look at the back, which is worn smooth. “What do you do with him?”",
+    "“There’s a prayer. You say it on the bad nights.” He gives her the first of it, not all. “*Defend us in battle. Be our defense against the wickedness and snares of the devil.*”",
+    "“Snares,” she says, trying it in her mouth. “People don’t say *snares* anymore. That’s a beautiful word.” She says it again, to herself, the way she must learn a line she likes.",
+    "She holds the medal a little longer, and then lays it back on his shirt, carefully, like something she borrowed. She isn’t making fun. He would know.",
+    "“You sit still and listen for something,” she says. “I do that. I just don’t expect anybody to answer.”"
+   ],
+   "choices": [
+    {
+     "text": "“Most nights nobody does. You go anyway.”",
+     "tag": "Sincerity",
+     "set": {
+      "e16_faith": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.warmth": "+1",
+      "soul.grace": "+1"
+     },
+     "response": [
+      "“Most nights nobody does,” Jack says. “You go anyway.”",
+      "She looks at him like that’s a terrible business plan and she might want in on it.",
+      "She turns that over for a minute under the blanket. “I was baptized,” she says. “Allegedly. There are pictures. A lot of lace.”",
+      "He waits to see if there’s more about that. There isn’t.",
+      "“Here’s what I want,” she says instead, and counts it off on her fingers under the blanket where he can feel her doing it. “I want to be someplace warmer. I want to know what you’re like when you’re not sad. And I want —”",
+      "She stops there, and doesn’t finish it."
+     ],
+     "goto": "s23"
+    },
+    {
+     "text": "“I expect it. That’s the whole problem.”",
+     "tag": "Candor",
+     "set": {
+      "e16_faith": "candor",
+      "trait.candor": "+1",
+      "rel.skye.trust": "+1",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“I expect it,” he says. “That’s the whole problem.”",
+      "“You *expect* an answer.” She comes up a little out of the blanket to look at him properly. “Like a voice?”",
+      "“No. Like — somebody’s on the other end. Most nights He doesn’t say anything. I still expect it.”",
+      "She studies that like a line she has to say tomorrow, and can’t find the trick in it.",
+      "She turns that over for a minute under the blanket. “I was baptized,” she says. “Allegedly. There are pictures. A lot of lace.”",
+      "He waits to see if there’s more about that. There isn’t.",
+      "“Here’s what I want,” she says instead, and counts it off on her fingers under the blanket where he can feel her doing it. “I want to be someplace warmer. I want to know what you’re like when you’re not sad. And I want —”",
+      "She stops there, and doesn’t finish it."
+     ],
+     "goto": "s23"
+    },
+    {
+     "text": "“He answers. He’s from Ohio. He takes his time.”",
+     "tag": "Wit",
+     "set": {
+      "e16_faith": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“He answers,” Jack says. “He’s from Ohio. He takes his time.”",
+      "That gets the laugh that surprises her, not the one she’s been handing out all night. “I’ve had agents like that,” she says.",
+      "She turns that over for a minute under the blanket. “I was baptized,” she says. “Allegedly. There are pictures. A lot of lace.”",
+      "He waits to see if there’s more about that. There isn’t.",
+      "“Here’s what I want,” she says instead, and counts it off on her fingers under the blanket where he can feel her doing it. “I want to be someplace warmer. I want to know what you’re like when you’re not sad. And I want —”",
+      "She stops there, and doesn’t finish it."
+     ],
+     "goto": "s23"
+    }
+   ]
+  },
+  "s23": {
+   "slug": "SATURDAY · 2:25 AM · ELLERY BEACH, ABOVE THE TIDE LINE",
+   "body": [
+    "For a few minutes there’s only the shaking. His jaw has its own ideas; her teeth are going like a sewing machine, and she laughs at them, and that makes it worse. The blanket isn’t big enough for two people trying to keep any distance, so they’ve given up trying. Her shoulder is against his arm. Her hair is a wet weight that smells of the sea, and some of it is on him. The platforms burn on the horizon, smeared gold through the salt in his eyelashes.",
+    "“You stopped being sad,” she says, when her teeth let her. “About ten minutes ago. In the water.”",
+    "“Did I?”",
+    "“I was watching. It was the first thing I was going to check.”",
+    "Then she turns in the blanket and looks at him.",
+    "He’s been looked at all night — across the den, across a gearshift, across the water — but not like this. She isn’t looking at what he might say next, or at whatever he walked into that house carrying, or at where he’d rather be. She’s looking at him: here, wet, shaking, on a beach in the middle of the night, now. There isn’t anything else she’s looking at.",
+    "“I’d like to kiss you now,” she says.",
+    "In eighteen years he has never had it said to him straight out — in a sentence, with a subject and a verb. She isn’t asking whether she’s allowed to want it; that part she’s already settled, by herself, without any apology at all. She’s only asking him. His heart is going harder than the cold can account for.",
+    "He hasn’t moved. So she starts on the next sentence, easy, leaving him a door — “You can tell me —”"
+   ],
+   "choices": [
+    {
+     "text": "“Yes.”",
+     "tag": "Candor",
+     "cue": "Skye noticed.",
+     "set": {
+      "e16_kiss": "candor",
+      "said_it_plain": true,
+      "trait.candor": "+1",
+      "soul.honesty": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "Soaking wet on the sand at Ellery Beach, she said, “I’d like to kiss you now.” You said, “Yes.”",
+     "response": [
+      "“Yes,” he says.",
+      "Just the word. No joke in front of it, nothing after it to walk it back. It’s out in the cold air where they can both see it, and he doesn’t want it back.",
+      "She looks at him as if he’s just done a trick she didn’t know he had. “Look at you,” she says. “Just saying it.”"
+     ],
+     "goto": "s23k"
+    },
+    {
+     "text": "Kiss her before she’s finished the sentence.",
+     "tag": "Reckless",
+     "if": "trait.reckless>=28",
+     "set": {
+      "e16_kiss": "reckless",
+      "trait.reckless": "+1",
+      "soul.restraint": "-1"
+     },
+     "key": "Soaking wet on the sand at Ellery Beach, she said, “I’d like to kiss you now.” You kissed her before she finished.",
+     "response": [
+      "He doesn’t let her get to the end of it.",
+      "She laughs into his mouth, startled, once — and then she isn’t laughing."
+     ],
+     "goto": "s23k"
+    },
+    {
+     "text": "“You’re supposed to ask.”",
+     "tag": "Wit",
+     "set": {
+      "e16_kiss": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "Soaking wet on the sand at Ellery Beach, she said, “I’d like to kiss you now.” You told her she was supposed to ask. She had.",
+     "response": [
+      "“You’re supposed to ask,” he says.",
+      "“I just did.”",
+      "“Oh.”",
+      "She’s grinning at him under the blanket, pleased with the both of them. “Do you want me to do it slower?”",
+      "“…Yes.”",
+      "“I would like,” she says, very slowly, and very close, “to kiss you. Now.”"
+     ],
+     "goto": "s23k"
+    }
+   ]
+  },
+  "s23k": {
+   "slug": "SATURDAY · 2:28 AM · ELLERY BEACH, THE SAND",
+   "set": {
+    "kissed_skye": true,
+    "resolve.jack": "-1",
+    "rel.skye.heat": "+2"
+   },
+   "body": [
+    "Her mouth tastes of salt. That’s the first thing — salt, and cold, and then not cold, because she’s warm inside it and she isn’t careful about anything. Her hands come up out of the blanket and find the back of his neck, and they’re freezing, both of them, two shocks right where his hair is wet; and then they aren’t, because she leaves them there and his neck warms them, and somehow the warming is the part that undoes him.",
+    "He gets a hand into her hair. There’s so much of it — heavy and wet, full of the sea and a little sand, cold at the ends and warm at the roots — and she makes a sound against his mouth when he does, low and pleased, and comes closer, and the blanket slides off one of his shoulders and lets the night in down his back. He doesn’t care. The wet flannel under his other hand is cold, and she isn’t, under it.",
+    "She kisses him the way she’s done everything else tonight, as though it’s the only thing happening anywhere and she has decided to be there for it. She doesn’t hurry. Once she laughs, right against his mouth, at something — at them, at the cold, at his jaw still going — and the laugh goes straight through him, and she kisses him again with the laugh still in it.",
+    "Once she pulls back just far enough to see him, and looks, as if checking he’s still the same person, and says, “Hi,” and he says, “Hi,” and she comes back while he’s still saying it.",
+    "His body has no opinion about any of this except *more*. He’s eighteen and freezing and has been single since Wednesday and has spent two days carrying something he wouldn’t name to anybody, and all of that is somewhere up the beach with her boots. There’s only this: her cold nose against his cheek and her warm mouth, the sand working into everything, the wet denim, the weight of her leaning in. He wants this. He isn’t going to lie to himself that he doesn’t.",
+    "Something in him that has sat very still all fall, with its hands folded, gets up. She catches his lower lip between hers and lets it go, and he hears himself laugh, low, and doesn’t recognize the sound, and kisses her harder for it, and she lets him, and gives it back.",
+    "Under it — not a voice, nothing like a sermon — is one simple physical fact he keeps coming back to: he is exactly here. Ellery Beach, half past two in the morning, four miles up the coast from everything he knows, kissing a girl whose last name he doesn’t have, whose hands he could pick out of a crowd now and whose house he couldn’t find with a map. It is very strange, and it isn’t strange at all, and he keeps kissing her through both.",
+    "At some point they go over sideways into the sand, still tangled in the blanket, and she ends up half on top of him, up on one elbow, her hair coming down around both their faces like a tent with the stars at its edges. She kisses him from there for a little while. Slower. Then not slower.",
+    "The tide has turned somewhere without telling them. A wave runs farther up the sand than the others and finds the bottom of his jeans, and the cold of it goes up his leg and straight through him. She lifts her head. Her mouth is right there. Her eyes are right there, and so is everything in them.",
+    "One of them is going to have to stop. It’s a fact about tonight, like the tide."
+   ],
+   "choices": [
+    {
+     "text": "Be the one who stops.",
+     "tag": "Restraint",
+     "set": {
+      "e16_stop": "restraint",
+      "jack_stopped_first": true,
+      "soul.restraint": "+1"
+     },
+     "key": "On the sand at Ellery Beach you were the one who stopped.",
+     "goto": "s23a"
+    },
+    {
+     "text": "Don’t be the one.",
+     "tag": "Reckless",
+     "set": {
+      "e16_stop": "reckless",
+      "soul.restraint": "-1",
+      "resolve.jack": "-1"
+     },
+     "key": "On the sand at Ellery Beach she was the one who stopped.",
+     "goto": "s23b"
+    }
+   ]
+  },
+  "s23a": {
+   "slug": "SATURDAY · 2:40 AM · THE SAAB, THE WINDOWS FOGGED",
+   "body": [
+    "He’s the one. He gets an elbow under himself and comes up out from under her hair, and the cold rushes in everywhere she was.",
+    "“That’s —” he says. “I should —”",
+    "He doesn’t know the end of either sentence. She sits back on her heels in the blanket and looks at him, wet and interested. He looks for hurt in her face, and it isn’t there.",
+    "“Huh,” she says.",
+    "He waits for the bit. There isn’t one.",
+    "“You stop,” she says. “Okay.” She says it like a note she’s making in a margin, to come back to. Then: “Car. I can’t feel my *legs*.”",
+    "In the Saab with the top up and the heater roaring at their shins, their clothes start to steam. The windows fog from the bottom up until the platforms are a gold smear and then not even that, and the tape turns itself over every forty minutes or so and starts the side again, so that the same song comes around, and comes around, until it stops being a song and turns into the weather.",
+    "And they talk. She takes Youngstown off him a piece at a time — Nonna’s gravy, the snow that’s gray by noon, Gina who texts in lowercase, Rosie who mails him crabs — and he gets Studio City, which is, she says, “an apartment my mother rented for the commute,” and nothing more. She tells him the worst callback she ever had — twelve years old, a juice commercial, falling in love with a juice box in front of eleven men eating sandwiches — and does all eleven men. He tells her the best paperback he ever found for two dollars, a *Moviegoer* off a church rummage table with a stranger’s fights with Walker Percy running down every margin in green ink. She wants to know who won. The margins, mostly, he tells her, and she says that’s how it ought to be.",
+    "It goes on for three hours. Afterward he won’t be able to say what most of it was about.",
+    "Then the glass starts to change. A gray comes up behind the fog, and he only notices it because her face has begun to come out of the dark beside him a little at a time, freckles first."
+   ],
+   "next": "s24"
+  },
+  "s23b": {
+   "slug": "SATURDAY · 2:40 AM · ELLERY BEACH, THE SAAB, TOP DOWN",
+   "body": [
+    "He doesn’t stop. She does.",
+    "She lifts her head, and he sees it arrive before she opens her mouth: the chin tucks, the eyebrows go up under the brim of a hat that isn’t there, and she is the grandmother — Georgia to the bone, a navy straw sailor with white violets on it.",
+    "“That’s enough for a first night,” she says. “In case of an accident, everyone should know I’m a lady.”",
+    "He laughs so hard he gets sand in his mouth.",
+    "Then she’s herself again, grinning down at him, out of breath. “Car,” she says. “I can’t feel my *legs*.”",
+    "She puts the top down. It’s the only way to drive in November, she reminds him, and they aren’t driving, but the rule stands: heater on full, the blanket pulled over both of them up to the chin, the canvas folded back, and every star over the Pacific right there overhead.",
+    "And they talk. She gets Youngstown out of him a piece at a time — the snow that’s gray by noon, Nonna’s gravy, Gina who texts in lowercase, Rosie who mails him crabs — and he gets Studio City, which is “an apartment my mother rented for the commute,” and nothing more. She tells him the worst callback she ever had: twelve years old, a juice commercial, falling in love with a juice box in front of eleven men eating sandwiches. She does all eleven men. He tells her about the best paperback he ever found for two dollars, a *Moviegoer* off a church rummage table with a stranger’s fights with Walker Percy down every margin in green ink, and she wants to know who won. The margins, mostly, he says. She says that’s how it ought to be.",
+    "It goes on for three hours. The tape in the deck turns itself over every forty minutes or so, and the same song keeps coming around under the stars.",
+    "Somewhere near the end of it the stars over the water start thinning from the east, and the sky lets go of the sea along a line of gray at the bottom of everything, where an hour ago there wasn’t any line at all."
+   ],
+   "next": "s24"
+  },
+  "s24": {
+   "slug": "SATURDAY · 5:50 AM · THE ANACAPA LOT",
+   "set": {
+    "skye_has_number": true
+   },
+   "body": [
+    "She drives him back down the coast with the top up and nobody talking. It’s new for both of them, and he isn’t going to be the one to spoil it. The old highway turns back into Ocean Road. The campus comes up out of the dark on the right, every window black. St. Brendan’s goes by across the road, the A-frame and its blue glass still holding the night, and he looks at it, and then at the road again.",
+    "At the light by the Anacapa turn she yawns for the first time all night, hugely, without covering it. “I have a thing at nine,” she says. “In a different county.” She doesn’t say what the thing is.",
+    "The Anacapa lot at ten to six: the sodium lights still buzzing on their poles and going pale, a sky over the hills that has started to have a color without deciding which one, the eucalyptus along the Lagoon black against it. Delgado is dark from top to bottom except for one window on the fourth floor.",
+    "His jeans are still wet at the seams and heavy as a pair of waders. Theo’s shirt has dried stiff with salt at the cuffs. There’s sand in places he’d rather not think about, and he can’t stop grinning, and he’s given up trying.",
+    "She puts it in park and leaves the engine running. The tape has come around to the same song again.",
+    "“Will I —” he starts.",
+    "“Yes,” she says. “Obviously. Don’t be a dad about it.” She holds out her hand. “Phone.”",
+    "He gives her the RAZR. She flips it open, finds the contacts on the second try, starts typing, stops, and stares at the screen.",
+    "“It’s *guessing*,” she says, outraged. “I didn’t ask it to guess.”",
+    "“It’s T9.”",
+    "“It’s a *liar*.” She finds the setting that makes it stop helping and does it the long way, letter by letter, swearing at the 9, and turns the little screen around to show him: SKYE (MISFIT).",
+    "Then she presses call. In the pocket of her flannel a phone lights up white through the damp cotton and starts to buzz. She takes it out — an iPhone, white, his number across the screen — and reads it, satisfied.",
+    "“Three-three-oh,” she says. “Ohio. Now I have you.”",
+    "“What’s your last name?”",
+    "“Out.”",
+    "She leans across him — salt, wet hair, warm — and opens his door.",
+    "Then he’s standing in the lot with the door shut and the Saab already moving, one taillight, the tape still going, and the sound of it gets smaller down the road toward Las Olas until there’s nothing in the road at all but the gulls coming in off the Lagoon.",
+    "He turns around. Theo’s SL is in its space, nose out, the top up, dew on the hood."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "skye",
+     "title": "Skye",
+     "if": "e16_stop==\"restraint\"",
+     "text": "Skye. No last name — she said *Out*. Reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Doesn’t go here. Not yet, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. I was the one who stopped; she said okay like it was interesting. Typed herself into my phone as SKYE (MISFIT), and called herself from it."
+    },
+    {
+     "kind": "person",
+     "id": "skye",
+     "title": "Skye",
+     "if": "e16_stop==\"reckless\"",
+     "text": "Skye. No last name — she said *Out*. Reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Doesn’t go here. Not yet, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. She was the one who stopped, in the grandmother’s voice. Typed herself into my phone as SKYE (MISFIT), and called herself from it."
+    }
+   ],
+   "next": "s25"
+  }
+ }
+}
