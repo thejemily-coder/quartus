@@ -1046,3 +1046,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     Theo's arrival and first collision with Nonna, Gina interrogating Jack about Skye in secret, the status quietly
     coming down, or Lena's first texts of the weekend). Skye's Thanksgiving texting continues, building from where E17
     left it.
+- **E18 design answers (player).**
+  - **Opening = both:** Frank picks Jack and Theo up at Pittsburgh airport in the Silverado (Theo in the camel coat;
+    the Frank–Theo bond starts in the truck; Jack texting the whole drive), then **Gina's ambush** at the Glenwood
+    Avenue door: a secret debrief, "SHE'S ON TV."
+  - **Becca messages first:** before her status comes down, a kind message ("Happy Thanksgiving, Jack. Taking it down
+    now."-style). Grace on her side; a small knife on his.
+  - **Skye in E18 = constant:** texts all weekend, plus **one hours-long late-night call** from the cold garage or the
+    porch.
+- **No consent beats unless needed (player, standing).** Going forward, **don't write explicit consent beats** (asking
+  permission, checking in, "is this okay," narrated pauses for consent) **unless the situation would otherwise read
+  as sexual assault.** Desire, mutual escalation and Jack's "no" stopping things remain as written; it's the
+  procedural check-ins that go. Supersedes any earlier "consent guard" phrasing that called for on-page beats; the
+  hard rules (no coercion, no assault, the line never breaks) are unchanged.

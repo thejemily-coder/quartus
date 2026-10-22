@@ -15,7 +15,7 @@ const D = '/home/user/quartus/hard-saying'
 const A = args
 const COMMON = `You are part of the writers' room for "The Hard Saying", an interactive prestige-TV college drama game. Project folder: ${D}.
 Binding docs: ${D}/writers/brief.md (the player's creative brief: every line is a player decision), ${D}/writers/room.md (roles, knowledge rules, TIC REGISTRY), ${D}/writers/schema.md (episode JSON format and state variables). Hidden canon: ${D}/writers/bible.md. Canon ledgers: ${D}/writers/continuity.md, ${D}/writers/knowledge.md. Period facts: ${D}/writers/period/.
-Content standards (from the brief): frank, unflinching, literary — sex, desire, drugs, violence and grief written with real sensory detail at the level of literary fiction/HBO, never pornographic mechanics; everyone in sexual content is 18+; assault never titillating; the narrative never mocks the faith; no strawmen; Jack and Lena never die. Neither Jack nor Lena is ever prudish or preachy.
+Content standards (from the brief): frank, unflinching, literary — sex, desire, drugs, violence and grief written with real sensory detail at the level of literary fiction/HBO, never pornographic mechanics; everyone in sexual content is 18+; assault never titillating; the narrative never mocks the faith; no strawmen; Jack and Lena never die. Neither Jack nor Lena is ever prudish or preachy. No procedural consent beats or check-ins unless the scene would otherwise read as assault.
 Do not touch anything outside ${D}. Do not run git.`
 const PLAYER = A.save
   ? `The player's save after ${A.prev} is ${D}/${A.save} (vars: flags, rel.*, soul.*, trait.*, resolve.*, duel.*; journal; keys; full choice logs per episode). Player notes for this episode: ${A.notes || '(none)'}.`
