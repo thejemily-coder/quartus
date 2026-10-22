@@ -1285,3 +1285,23 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **After S1E20 (player feedback).** "Gutwrenching on so many levels. Fantastic episode." Between sitting through
   Julian's "Magdalena" and Skye being even more wonderful than he could have hoped for, **Jack withdraws hard into
   Skye until his last night with Lena before they go home** (the player confirms the withdrawal design).
+- **E21 design answers (player).**
+  - **Skye's second attempt: the argument.** She out-argues him (takes his own "right now" apart; persuasive, funny,
+    less clothed while she does it). **When he says no, she stops only the further escalation** and keeps going **as
+    they were before she started whatever he said no to** (the first "to the letter" in practice).
+  - **Osei's arc across confessions.** E21: **tender**, speaking to Jack's **loneliness more than the sin**, because
+    Jack stopped it and had a real conversation with her about it. **As Jack keeps putting himself in that position,
+    Osei becomes gentle but pointed** ("you're not avoiding the occasion, you're scheduling it"), **then eventually
+    bracing.** Never a scolding.
+  - **The Newman party: Jack avoids Lena; the distance is the scene.** One **stolen glance later in the evening**, which
+    **Lena clocks immediately and correctly as hurt**. That glance is **her opening for their extended night in E22**
+    and **the start of her considering breaking up with Julian**, which she decides over Christmas. (POV: Jack gets
+    none of this until the New Orleans conversation.)
+    - **The January chain from it:** when Lena learns about Skye, **she decides she imagined the glance** (she saw
+      what she wanted to see). So when Laney reports basically the same thing in Jack's own words (the January
+      aside), Lena is **upset and angry**: she believes Jack is now **lying to play games or to hurt her**, or at best
+      Laney misunderstood, because there's no way the man in increasingly intimate pictures with a blonde starlet
+      could feel that about her. **January and early February are really bad for Jack and Lena.**
+  - **Pictures:** **a notch up when they're apart for consecutive days** (E21). **E22: a big jump** in the picture
+    she sends as he's about to head home (her voice, not verbatim: "so you have something to look forward to in
+    January…"). That's the finale's buzz.
