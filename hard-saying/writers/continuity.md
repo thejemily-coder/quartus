@@ -2779,3 +2779,148 @@ fork) · `e14_cards=="swap"` → closed in s27a.
 cards (the third's owner is not named or counted on the page). Lena's yelling year = 2005–06; her letter = spring 2008. Becca's tank shifts: Thu
 afternoon, Fri 6 a.m., plus the flu volunteer's weekend (Sat/Sun 6 a.m.); Monday = an early lab. The Brick's reading room is lit all night (E17's
 meeting place). Journal cards for Becca, Lena, Danny and the duel record are duplicated per choice — any correction must be made in every copy.
+
+### S1E15 — "Due Course" (Mon Nov 9 – Thu Nov 19, 2009, 12:25 a.m. PST)
+> Written for the after-s1e14 save (wit 40, candor 56, reckless 28, sincerity 104; `e14_conf=="go"`, `e14_mite=="tips"`, `e14_day=="harbor"`, `e7_doubt=="twoam"`,
+> `e8_date=="seals"`). Branch tags are `[scene | condition]`. Final per-path length 16.3k–17.4k words; 24–25 choices per path.
+
+- s01 Mon 8:50 a.m., Delgado front desk: CNN, Berlin dominoes (1.5 km chain, Reichstag → Potsdamer Platz; **Wałęsa pushes the first at the Potsdamer Platz end; the chain
+  runs toward and finishes at the lit Brandenburg Gate**). **Priya's pink notice: RESIDENTIAL SERVICES — NOTICE OF BALANCE DUE, SPRING 2010 HOUSING, COSTIGAN, JOHN A.,
+  DELGADO 412, $340.00 after aid; REGISTRATION HOLD; due Fri Nov 13, 5:00 p.m.** **Residential Services** is the billing window (Housing/Residential Life's cashier office;
+  distinct from Residential Life, which sends RAs the hold list). Freshman registration Mon Nov 16, 7 a.m.; Hale's spring seminar fills by 7:05. The Brick's circulation
+  desk lost two overnight workers to swine flu: midnight–6, **$8.40/hr**. Margot wiped the 4th-floor whiteboard **all but one corner** (the useful-idiots tally lives in the
+  corner: [bill lena] **C 8 · B 7**, STUPAK: SAME SIDE (BOTH) — E13 and E14 each added a point to E12's C 7 · B 6). The envelope lives in Hale's reader (Hume, miracles).
+- s02 4:30 p.m.: Becca's FB wall post (box at the Newman desk). Theo knocks the envelope out of the reader; "I spend that on *parking*"; "very Steinbeck"; **"The offer
+  has no expiration date."**
+- s03–s04v **Duel `wall` "On the Wall" (unofficial; the Hale record card is NOT changed).** Whiteboard columns GORBACHEV (LINDQVIST) · THE POPE (COSTIGAN) · A UNION
+  (BROUSSARD) · HASSELHOFF (VANCE). [harbor] Lena's court-bouillon in the Newman stockpot (LENA'S. MONDAY. FOR THE HARBOR INN.). Margot: Gorbachev "declined to do
+  something catastrophic"; "Neither the Pope nor the electrician had an army. Gorbachev had one, and he kept it home." Jack: Warsaw June 1979. Lena: Gdańsk Aug 1980,
+  **Wałęsa (fired from the Lenin Shipyard in 1976) climbs *in***; ten million in a country of 35 million. Lena's golden arches in yellow highlighter. [told_lena_frank]
+  "ask your daddy who won. GM took a bailout and he took a pink slip." Moves: Press (altar at every gate; "the market never needed one") / Riposte (trendsetter; "Write
+  down 'both'") / Concede (Frank would've joined; the Browns) / Reframe (Leipzig Oct 9, 70,000 candles; Sindermann "candles and prayers" — "*Source.*") / Personal
+  ("Leave my father out of it", `e15_wall_personal`) / Apologize (`e15_wall_apology`). Lena's close: "prayer *and* bread. That's the whole Church." **Verdicts on Margot's
+  board** per `e15_wall` (both / jack / lena) and the scores; [personal && !apology] "Night, Costigan." (not *Youngstown*) — one night only; Lena repairs it herself in s09.
+  The verdict stays on the board through Wed Nov 18 (the orgo group uses the other half).
+- s05 Tue 1:02–1:51 a.m. PST (4:02–4:51 EST): Maria calls; **the SUB pay ended last week; Frank went to the bar on Midlothian for MNF (Steelers at Denver), bar closed 2:30,
+  truck not back; cell on the counter by the toaster**. Nonna dizzy on the stairs Sunday, sleeping in the front-room chair since. Gina on the landing. "I'm not calling the
+  police on your father, Jack. I'm calling you." `e15_one_am` pray (Sorrowful Mysteries; Nonna in Italian) / talk (Rosie's crab in a hat; the cardoons; Becca's cow letter
+  in the drawer with the good scissors) / candor (**"Don't wait up."** — "Twenty-six years… never said that to me"). **4:51 EST the Silverado hits the trash can; Frank sat
+  in the Lordstown employee lot "to see if the lights were on."** "The spring thing. For your room." "I've got it, Ma." Theo lifted his head when the phone lit and put it
+  back down (`knows_frank_drinking`). s05a 2:06: the landing window; **four Reds left**.
+- s06 Tue 3:40 p.m., Mission Street P.O. (Fort Hood memorial on the radio): **money order No. 3 to D. KOSTELNIK, STRUTHERS, OH, $20 (+$1.10 fee), FROM blank**. Rafi
+  (box to his other abuela in OXNARD — "a cold war"): "Pink's money"; **one ride, Thursday, $200**; "Vitamins, boss. Not bars." Rafi's number on the back of the receipt
+  (Jack keeps three money-order stubs behind his Mooney ID). Marcus Aurelius "meant rent."
+- s07 Tue 5:30, Newman lounge: **Mrs. Lindell's box** (Coeur d'Alene postmark): letter on the cow stationery ("Becca tells me you are her boyfriend now, which we knew");
+  molasses cookies; **gray wool "North Idaho socks"**; **two jars of huckleberry jam: JACK and FOR THE CATHOLIC ROOMMATE**. Becca sees the pink notice: **Daisy's money,
+  $612** (sold at the Kootenai County Fair, Aug 2008; credit union in Coeur d'Alene) (`becca_offered_daisy`). `e15_daisy` gently / joke / truth. Theo shelves his jar beside
+  the espresso machine next to the birthday jar ("a supporter, not a member").
+- s08 Tue 9:40, the Anchor: Rudy on KNX: "I know what an errand is, mijo." Gloria: "I can front you against December, hon" — refused. **Gina 10:02–10:19 p.m.: said Ashley
+  Vrabel's father's DUI in religion; Ashley cried; Mrs. D (her teacher) gave detention and called Maria; "i heard the truck hit the can"** (`knows_gina_detention`).
+  `e15_gina` sincerity / wit / candor ("ur not carrying it g") / control (3:50 alarm; calls her at 6:50 EST over Cheerios).
+- s09 **Wed Nov 11 (Veterans Day; St. Martin of Tours), 11:20 a.m., the bench above Campus Point** (by the Marine Lab flagpole — NOT the Seacliff "bluff bench" across
+  from Pi Lam). **Reliquary No. 9: "No. 9 · Campus Point · 11/11/09 · Veterans Day"** on the back of the 12:10 worship aid. St. Martin's cloak ("everybody forgets the
+  beggar took it"); geese. `e15_bench` frank (**Tony Broussard gutted houses after the storm, not drank: "Some men drink and some men gut houses. Yours hasn't got a house to
+  gut, Jack."**; "Call him Saturday… talk about that"; Jack shows her the hold; "I've got forty dollars" [harbor] "and a court-bouillon"; `lena_knows_frank_night`) / gina
+  (Lena reads Tuesday's thread only; Sister Mary Margaret, Courtney Dugas, the Louisiana Purchase) / thursday (Wes nine days; she still sits on the east stairs at 8:04;
+  [memere oui] Mémère called Sunday; "He thinks everybody leaves"). **Jack works Hector's Wednesday so Hector works his Thursday** (Jack free for Bastille).
+- s10 Thu 1:10 a.m., under the Hobart: the Folgers can — [tips] **$154** / [else] well short. [conf go] the penance. `e15_money` rafi / theo / priya.
+  - s11a [rafi] Thu 2:00 behind Delgado → 2:15 the harbor: a Vans shoebox in blue painter's tape on La Flaca; **Ray Ochoa outside the Anchor: "Saint Isidore. New
+  shoes?" — he doesn't look in the box**; the Wharf Rat's back door (a man in a Raiders cap; "Rafi says gracias"); **$200 in twenties**; 3:55 Residential Services
+  window ($140 from the can + $200), **Jack cuts Evan's Thursday section** (`jack_ran_errand`).
+  - s11b [theo] 9:05: Theo in a navy blazer (Poppy's recital in La Cañada at two, dinner after); the ugly card; "One of them has a ferret"; **receipt reverse: $340.00 + 1 PIE
+  (PEACH) —T.A.V.** (`theo_paid_deposit`).
+  - s11c [priya] 9:00: **Hardship extension RS-12 (Section 4.2), laminated; due date moved to Dec 1 pending payroll; Jack fills in his mother's maiden name RINALDI**;
+  **night desk at the Brick Thu and Fri this week, midnight–6, $8.40/hr; "Eight shifts, after withholding"** (`jack_brick_desk`). Priya buys sleeves at the Staples on Mission.
+- s12 Thu 8:10, Café Bastille: Laney's napkin judging (TALENT / POISE / EVENING WEAR); Theo in La Cañada (sent Jack a photo of his blazer at six). **Yusuf's 19th birthday**
+  (his friend announced it); Lena leads "Happy Birthday"; "a Catholic potluck in *café* form"; Yusuf watched the Fort Hood memorial standing up. **Julian ninth on the board;
+  the song with no second chorus** (C string tuned down; the 51B at midnight). Lena's coffee goes cold. Jack stays to the end. "You stayed." "I said I would."
+  `e15_stayed` good / cut ("a repeat sign") / she ("I saw").
+- s13 10:32: Julian: "Can I walk you back?" "Yes." Laney: "Lovely set, Julian." The 11 (guitar case in the aisle). At the Anacapa stop Lena and Julian go in at Delgado's
+  door; **Laney walks Jack round the far side of the Lagoon: "Walk me home, fireman. Apparently I'm available."** `e15_laney` escort (Miss Dallas County, baton,
+  "literacy. And revenge.") / ask ("I am Miss Congeniality. I have the sash.") / quiet. [priya] the Brick, 11:55, the night desk.
+- s14 **Fri Nov 13, 12:40 p.m., the Grove: Lena tells Jack, mid-sentence about monarchs, that Julian asked her to dinner (Saturday; tablecloths; "He asked if he could ask
+  me something first. Then he asked.")** (`knows_lena_julian`). Lena knocks on wood and crosses herself; Philip the Fair, Fri 13 Oct 1307. The first monarch on a low branch.
+  Jack: John 21:18 as grace; Lena: "Augustine with the cough taken out." Cousin Vinnie came back from Phoenix. All Souls = 11 days before. "The shape of the word *wait*."
+  `e15_julian` charm / sincerity / wit (nickel package) / candor ("Are you happy?" — "I'm — Yes." + medal) / restraint ("I knew you'd be happy for me").
+- s15 Fri 4:35, the Lighthouse back porch (Washed Out, *Life of Leisure*, Sept 2009): keg FRIDAY THE 13TH; Jack's bits (Templars; the keg as sacramental, toasted not blessed;
+  the Youngstown liturgical year; St. Christopher off the calendar 1969). **Theo: "That's three bits in a row. You don't do three."** **Julian alone at the Point wall by
+  the white cross, guitar case open** (unexplained). Theo's Corona; Jack leaves it on the rail.
+- s16 Fri 10:15, 4th-floor lounge: orgo group (Priya's 2007 flashcards); LDA = St. Jerome, Grignards = Jesuits. **Garrett (Bio 1A, Visalia): "I think Maine got it right.
+  Marriage is for kids." Kevin: "Biology doesn't vote, Garrett. People do."** Kevin's smile back crooked; "Getting water." `e15_kevin` follow → s16a: **Kevin to Theo by the
+  roof door: "You said you'd never —" / "I haven't."**; Theo: "We were discussing Doug's raid schedule. He's a Tauren druid."; Kevin's hand on Jack's shoulder / stay →
+  s16b: Jack turns the room (himself as a Grignard; Garrett's comeback); 11:05 he calls Glenwood (machine, recorded the year Rosie was born); hears the same two lines from
+  the stairwell. **"Doug sleepwalks" stays unspoken (E20).**
+- s17 **Sat Nov 14, 3:35, the lounge: OSU 27, Iowa 24 (OT; Barclay 39-yd FG; Vandenberg); Rose Bowl.** Becca in Jack's Mooney hoodie. **Becca's gift: the Piedras Blancas
+  photo [seals: Becca's arm's-length shot; else: the bleachers, taken by a dad in the row behind], printed at the Walgreens on Mission, in a Goodwill frame she painted with
+  elephant seals and their weights (4,500 LBS; 1,600 LBS; 75 LBS (A PUP)) — now on Jack's desk by the window.** Gerald the turkey comes when called; Becca will phone at 2 p.m.
+  PT on Thanksgiving during her dad's eleven-minute grace (every cow); Michigan next Saturday "here, with you"; **"Someday I want to see your house. Is that okay to say?"**
+  Laney: "Deductions for excessive personality"; "Amen." **Margot: "That's surface acting." Hochschild, *The Managed Heart* (1983), chapter three.** `e15_margot` wit /
+  becca / candor / concede. Laney squeezes the back of Jack's neck.
+- s18 4:10: **Frank calls (first time since September)**: "Overtime"; garage (space heater, Stroh's fridge, pegboard). `e15_frank` rose / monday ("We don't. Not here. That's
+  done.") / okay ("I sat in the lot. Lights were on."). "Your mother says you needed money." per `e15_money`. "Go Bucks." Gina 4:19.
+- s19 Sun 12:50 a.m., the Anchor: Gloria, back to him: "How's the pecan, hon?" — "She's seeing somebody. He's nice." — **"Lattice-top."** [rafi] the tip-out into the can.
+- s20 Sun Nov 15, 11:15, Sully's: **Saints 28, Rams 23 (9–0)**; Roby 97-yd kickoff return; Brees–Meachem 27 yds. Present: Becca (6 a.m. tank; three cow hollers; Laney:
+  "Hollering is not a talent, Miss Idaho"), Kevin (drove), **Theo (sunglasses)**, Laney (**fake Louisiana license: Bernadette Thibodeaux, 24**; a mimosa she doesn't
+  drink), Lena (the bell chair), Dale. **At the Bloody Mary bar, out of Lena's earshot, Becca: "Did you ask her yet?"** `e15_whodat` booth (Lena puts the bell rope in Jack's
+  hand) / becca. The Odyssey glass: **Lena writes the 9 herself**.
+- s21 Sun 9:00 p.m. Mass: Becca saves three seats; **Lena brings Julian** (his first full Mass on the page; doesn't receive; has the Sanctus by ear). Gospel Mark 13:24–32
+  (the fig tree); Osei: "He doesn't say *you* will." [grief house] the claw-foot tub under the fig.
+- s22 10:05, the courtyard wall: Jupiter. Becca gone at 10:02 (8 a.m. lab). Julian: "Take your time." **"So. The table." — Lena: "Wes will sit where he sits, Josie will
+  bite somebody, Daddy will carve. Julian says call him from the bathroom."** "You were nice about Friday." The Greyhound (Denver, Chicago; Nebraska's cow). Julian's coffee
+  in the Newman mugs (white, the little leather boat). `e15_coffee` take / good / chorus.
+- s23 11:10, 412: Theo: **"Laney told me Friday." "Laney says he asked if he could ask." "Like a vampire."** (`theo_knows_lena_julian`). Gina 10:12 ("ma bought a second
+  pie"), Becca 10:58 ("did u ask her?? praying she says yes!!"). `e15_reply` busy (the truth to Becca) / notyet (lie) / justme (to Gina) / none.
+- s24 Mon Nov 16, 5:40, Sully's: Ravens 16, Browns 0 (Quinn 13/31, 99 yds, 2 INT; Landry 48-yd INT TD). Lena's St. Jude card; Dale: "the Lions have had that man on retainer
+  since 1957"; the Lions host the Browns Sunday. Lena's 2005 Saints ("the Babylonian Captivity"). `e15_jude` grace (the last petition, for a man in a garage on Glenwood; Lena
+  says the amen) / wit / sincerity ("I'm with Julian, Jack. I'm not *dead*.").
+- s24a 8:40, the 11 shelter: **Maria calls; Jack takes it round the corner past the laundromat, out of Lena's earshot. Maria wrote Becca "last week" on the parish stationery;
+  "And the friend? Lena?" [justme: "Gina says the nun's not coming"] — "She's got a boyfriend, Ma." — "*Again?* Madonna. Well. Idaho, then."** Frank on the extension: "Zero."
+  He watched it in the garage. Nonna still in the chair.
+- s25 Tue Nov 17, 12:05, Portolá steps: **Maria's letter (St. Brigid of Kildare stationery): Becca invited Dec 27–30; Spokane–Denver–Pittsburgh flights printed ("cheaper than
+  Cleveland"); Mr. Lindell said "*Pittsburgh?*" like *coyote***; planner page OHIO!! (ROSIE — crab book; NONNA — ???; GINA — ???); the Thomas crab book. [notyet] Mrs. Fitch
+  told Becca Lena brought "her young man" (held her coat); Becca works out "not yet" and lets it go. `e15_ohio` charm / control (Maria's line "He'll want to talk to me first") /
+  restraint (PIT? / BACK? in pencil) (`knows_becca_ohio`).
+- s26 **Wed Nov 18, 2:05 a.m., the kitchen off the Fishbowl** (the stockpot still in the rack): toast and the JACK jar; the imagined Christmas on Glenwood (Nonna's Hail Mary in
+  Calabrese; Danny's chair). The papers by the window: nothing moves. **"He still can't take Becca home."** `e15_two_am` grace (gated `soul.grace>=20`) / reckless (a Red at the
+  landing window, `jack_cigs` +1) / candor (pencil in the reader beside Kant's murderer at the door). 7:02 "can we talk tonight" — 7:04 "ok!! ranger at 6? :)".
+- s27 1:00, Hollis 302: Jack skipped the 12:10 (first in weeks). **Hale's last paired paper: WHETHER A PROMISE BINDS WHEN ITS REASON IS GONE (Costigan: NO; Broussard: YES);
+  Mon Nov 23, 9 a.m., his pigeonhole, eight pages.** Spring seminar roster typed COSTIGAN · BROUSSARD.
+- s28–s28c **6:00–6:52 p.m., Portolá lot, Eli's red '94 Ranger (Idaho plates; Pendleton over the bench seat; St. Isidore): Jack ends it with Becca** (`becca_over`). Hazelnut
+  coffee ("tastes like a candle"); the planner closed before he speaks. `e15_reason` candor / sincerity / control. **"You were going to bring *her*."** (she put it in with two
+  in the morning). `e15_her` yes / still / notabout. **"I did everything right… It just isn't the thing, is it."** "You looked at me like homework." Arby's napkins. **"Can you
+  leave it up on Facebook? Till I'm home? Mom first."** (`becca_fb_up`: status stays until she tells her mother at Thanksgiving.) "Eli… says it gets in the upholstery." Theo
+  keeps his jar. Daisy's money still there for the bus (per `e15_daisy`; [gently] "You held my hand about it. I remember."). She turns his collar down halfway. `e15_last` pray /
+  door / bless. The dome light on, then off.
+- s29 7:05, 412: "I ended it." **Theo opens FOR THE CATHOLIC ROOMMATE; two spoons** (Theo texts someone at 7:05 — unseen). [happy after] "I'm going to let it wait." [theo]
+  receipt: **+ 1 JAR (HUCKLEBERRY). FORGIVEN.** `e15_conf` go → s29a (8:00, St. Brendan's confessional, the old coat closet: "I let her love me so I wouldn't have to decide
+  anything"; Osei's grandmother's proverb; "She carried you all fall"; **penance: pray for Becca by name every day until Advent**) / stay → s29b (a French film never started;
+  "She's a wonderful girl.").
+- s30–s30a 10:40, the lounge: **Lena in socks, crawfish pajama pants, the Community Coffee mug: "Are you okay?" — "Ask me again in a week."** `e15_lounge` candor (`lena_knows_why_becca`)
+  / sincerity / **unguarded** (gated `trait.sincerity>=100`: "I hurt somebody good tonight. On purpose. Because the other thing was worse." — her hand palm up on the couch back) /
+  restraint ("She's owed that."). Mémère's praline. [not restraint] "Did you do it to her face?" — "Most people do it on the phone." She'll tell Laney to be nice to Becca; the
+  12:10 tomorrow. **"I'm fine. Thank you for asking, Jack."** + the medal (lie-tell). "Get some sleep. That isn't a suggestion." Her untouched mug.
+- s31 Thu 12:02 a.m.: Jack rinses the mug in the 2nd-floor kitchenette by the elevator; **217's door open four inches; Laney in her PI LAM LITTLE shirt looks back into the room,
+  sees Jack and the mug, closes the door** (`saw_laney_door`). He leaves the mug on the linoleum by the door, handle out.
+- s32 12:25, 412: **Theo's voicemail to the Harbor Inn: two, Saturday (Nov 21) at eight, under COSTIGAN, the window by the piano** (`theo_booked_harbor`). Cover story: his mother
+  is coming up, "has discovered rockfish," won't sit where she can't see a piano, hasn't given her own name to a restaurant "since an incident in Ojai." The jam jar with two
+  spoons; Becca's frame on Jack's desk.
+
+**New flags:** `knows_frank_drinking`, `becca_offered_daisy`, `knows_gina_detention`, `lena_knows_frank_night` [frank], `jack_ran_errand` [rafi], `theo_paid_deposit` [theo],
+`jack_brick_desk` [priya], `knows_lena_julian`, `theo_knows_lena_julian`, `knows_becca_ohio`, `becca_over`, `becca_fb_up`, `lena_knows_becca_over`, `lena_knows_why_becca`
+[candor], `saw_laney_door`, `theo_booked_harbor`; counters `reliquary` 9, `jack_cigs` +1 [reckless]. Path flags: `e15_wall`, `e15_wall_personal`, `e15_wall_apology`,
+`e15_one_am`, `e15_daisy`, `e15_gina`, `e15_bench`, `e15_money`, `e15_stayed`, **`e15_laney` (new: escort/ask/quiet)**, `e15_julian`, `e15_kevin`, `e15_margot` (**adds
+`concede`**), `e15_frank`, `e15_whodat`, `e15_coffee`, `e15_reply`, `e15_jude`, `e15_ohio`, `e15_two_am`, `e15_reason`, `e15_her`, `e15_last`, `e15_conf`, `e15_lounge`
+(**adds `unguarded`**). `e15_theo1` and `e15_notyet` do not exist.
+
+**Owed payoffs (flag → episode):** `theo_booked_harbor` → E16 (the table dies Friday) · `becca_fb_up` → Thanksgiving (Becca tells her mother at the table, then the status comes
+down) · `e15_conf=="go"` → the penance runs to Advent (Nov 29) · `jack_brick_desk` → six more night-desk shifts by Dec 1 · `theo_paid_deposit` → the peach pie (still owed) ·
+`e15_lounge`/`lena_knows_why_becca` → E16 · `saw_laney_door` → E16 (Laney knows it's about Lena) · Hale's paired paper → Mon Nov 23 · Becca's Michigan plan (Sat Nov 21) →
+E16 · `e15_daisy=="gently"` was paid in s28b · `e14_mite`, `e14_bastille`, `e14_invite` (s22), `e14_conf` (s10), `maria_knows_lena_maybe` (s24a) all paid.
+
+**Continuity notes.** Money orders to D. Kostelnik: **three**. Reliquary **No. 9**. Saints 9–0; the Odyssey's glass reads WHO DAT · 9–0 in Lena's hand. Julian and Lena's first
+dinner Sat Nov 14 (off-page; tablecloths). Laney knew Thu night; Theo Fri ~1:30 (from Laney); Lena learned of the breakup ~10:15 p.m. Wed (the Theo → Laney route is never on
+the page). **Julian knows Wes will be at the Broussard Thanksgiving table** (from Lena, off-page, by Sun Nov 15). Jack's PHIL 1 section (Thu 4:00, Hollis 108, Evan) was cut
+only on the rafi path. The Newman stockpot is still in the Fishbowl kitchen. Delgado halls are linoleum on every floor; the 2nd floor has a kitchenette by the elevator.
+Minor inventions to keep: Garrett (Bio 1A, Visalia, sunburned); Mrs. D (Gina's religion teacher at Ursuline); Brick night desk $8.40/hr; Becca's touch-tank Sunday 6 a.m. shift
+(flu cover); Laney's fake ID (Bernadette Thibodeaux — **not** Mary Catherine, which is reserved); the Ranger's Arby's napkins. Journal cards for Becca, Lena, Frank, Theo and the
+money note are duplicated per choice — any correction must be made in every copy.

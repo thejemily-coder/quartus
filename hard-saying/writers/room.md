@@ -208,6 +208,24 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 97. **"Ask me [tomorrow / after X / again in a week]" deferrals** (S1E14 ×3 in draft). Max two per episode, kept for the lines that matter (E14 keeps Theo's "Ask me after Thanksgiving" and Lena's text).
 98. **Phone-call silence beats** ("a silence on the line," "a pause in Breaux Bridge," "a silence on Glenwood Avenue"; S1E14 ×4). Max one per episode.
 99. **"A sound like…" similes and "inside a minute"** (S1E14 ×3 each). Max one each per episode.
+100. **"Doesn't ask" as the all-purpose tact marker** (S1E15; 9 in one draft, ~54 across E01–E15): "and doesn't ask what Jack is doing," "hasn't asked since,"
+   "she doesn't ask him what's wrong," usually with a gloss after it. Max two per episode, kept where the not-asking is the point (E15: Lena at the bus shelter, Lena
+   about Thanksgiving).
+101. **Physical laughter overflow as the button** (S1E15; six or more per path in one draft): Lena grabs the rope to stay on the chair, holds on to the wall, puts her
+   forehead on the table, slaps the table so the saint falls over. Max two per episode; otherwise let her top the bit in her own register.
+102. **Light-goes-out endings** (S1E15): "the line goes out," the seals "go gray and then go out," a falling star "and out," "the dome light goes off," "the screen goes
+   dark." Max two per episode (E15 keeps Delgado's door in s13 and the Ranger's dome light in s28c).
+103. **"The voice [X] uses for [Y]" / named voices** (S1E15; a cousin of #52): "the voice she uses to call cattle," "the voice she uses for procedure, the voice from the
+   beach cleanup," "his dinner-party voice," "his brightest voice." Max two per episode; never with an appositive second voice.
+104. **"Out loud" as an intensifier** (S1E15; 10 in one draft; "laughs out loud" 17× across E01–E15). Max three per episode, kept where the volume is the point (a Glory Be
+   at the TV, a deadpan prayer that carries to the pool table).
+Small repeats to watch (S1E15): the untouched drink (Lena's Bastille coffee, the Corona, Laney's mimosa, Lena's mug — one is the trace; the others must not be "full"); the
+heater/toaster/espresso tick (one source per episode, established once and used once more — E15 gives it to the Ranger); "twenty-four hundred miles" (once an episode);
+"one degree" cooler/off (once); ranch figures in the narration at Becca's joy or grief (her own lines only — "farm hand's grip," the calf's ear tag and the feed bill were
+cut); "Hale's reader" as the full epithet (name it once, then "the reader"); the pink envelope sliding out by accident (once); "homework" figures in the narration ahead of
+Becca's own line (none); "perfectly courteous/friendly" for a fixed-pleasant mask; "not X, it's Y" in Lena's facts ("It isn't superstition, it's French history" — cut);
+recaps of a decision already shown (#90: "He did that honest… in a truck with the heater running" — cut); a falling star as a sign from heaven (cut; one per sky, and not
+at a decision).
 Small repeats to watch (S1E13): Lena's hand to the medal (budget it to the lie-tell; nine straight episodes of "her hand goes to the
 medal"); "the oatmeal cardigan" (name it once, then "the cardigan"); "the one angle where the screen lights" (retired after E13);
 "for exactly as long as it takes to" (E02, E04, E11, E13 — retired); Gloria "comes down the counter with the pot" (E04, E11, E12, E13 —

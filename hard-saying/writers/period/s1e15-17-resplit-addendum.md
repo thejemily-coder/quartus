@@ -48,7 +48,7 @@ locations are superseded by the outlines.**
 - Spent in S1 already (do not reuse): Fleet Foxes (E01, E05, E11), Iron & Wine (E05, E09, E12), Bon Iver, Grizzly Bear, Phoenix, Vampire Weekend, The xx, Wilco, Sufjan
   Stevens, Springsteen's "Youngstown," the Avett Brothers.
 - Assigned by the re-split outlines (all released before their dates): Bowie "Heroes" (1977), Springsteen "My Father's House" (1982), Washed Out "Feel It All Around"
-  (*Life of Leisure*, 2009 — **month UNVERIFIED**; fallback Neon Indian "Deadbeat Summer," Oct 2009), "Soon and Very Soon" (Crouch, 1976), The National "About Today"
+  (*Life of Leisure*, Mexican Summer, **Sept 2009 — confirmed by the S1E15 continuity review, Wikipedia plus one other source**; the Neon Indian fallback is retired), "Soon and Very Soon" (Crouch, 1976), The National "About Today"
   (2004) — E15; Debussy "Clair de lune" (1905), Lykke Li "Possibility" (*New Moon* OST, Oct 20, 2009), Passion Pit "Little Secrets" (May 2009), Fleetwood Mac "Dreams"
   (1977) — E16; "To Jesus Christ, Our Sovereign King" (1941), Mazzy Star "Fade Into You" (1993), Death Cab "Transatlanticism" (2003) — E17.
 

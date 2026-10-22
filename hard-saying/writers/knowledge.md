@@ -1377,3 +1377,79 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Danny** [s28] per `e14_danny`: hey / the truth (Lena single; Jack with Becca, "doing it right") / push-ups. Nonno's name was read (all paths).
 - **Julian** [s27a] Lena opened his message Sunday; he knows (from E13) that Jack promised to stay to the end.
 - **Gloria** [s21] Lena on the end stool Saturday night: "So this is waiting."
+
+### S1E15 — "Due Course"
+> Written for the after-s1e14 save (see continuity.md S1E15). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01] The hold: $340 after aid, due Fri Nov 13, 5 p.m.; registration Mon Nov 16, 7 a.m.; the Brick's night desk exists (Priya). Berlin dominoes (TV).
+- [s02] Theo knows about the hold and offered; Jack refused.
+- [s05] **The SUB pay is over; Frank went to the bar on Midlothian, didn't come home till 4:51 EST, hit the trash can, sat in the Lordstown employee lot "to see if the
+  lights were on"** (`knows_frank_drinking`). Nonna dizzy Sunday, sleeping in the chair. [candor] "Don't wait up." He saw Theo lift his head when the phone lit.
+- [s06] Rafi saw Priya hand him the pink; Rafi's errand ($200, one ride, Thursday, "vitamins"). [s07] Becca's $612 Daisy money; Mrs. Lindell's box and letter. [s08] Gloria's
+  offer; Rudy knows what an errand is; **Gina's detention and that she heard the truck** (`knows_gina_detention`).
+- [s09 | frank] Tony Broussard gutted houses after the storm. [thursday] Lena still sits on the east stairs at 8:04; Wes nine days. St. Martin (all paths).
+- [s10] The can's total. [s11a | rafi] the Wharf Rat drop; Ray Ochoa saw the box on La Flaca and asked "New shoes?" (Jack doesn't know what Ray concluded). [s11b | theo] Theo
+  paid; the tab. [s11c | priya] the extension; eight shifts.
+- [s12] Yusuf is 19 (his friend announced it); Yusuf watched the memorial standing up. Theo is at Poppy's recital (Theo's text of his blazer). Julian's song; Lena stayed.
+- [s13] Julian walked Lena back; Jack saw two shapes in Delgado's door. Laney: "Apparently I'm available."
+- [s14] **Lena is going to dinner with Julian on Saturday; Julian asked if he could ask first** (`knows_lena_julian`). [candor] Lena said "Yes" to "Are you happy?" and touched
+  the medal (Jack sees the touch; he does **not** know it's her lie-tell).
+- [s15] Julian alone at the Point wall (seen; unexplained). Theo: "You don't do three."
+- [s16 | follow] Kevin to Theo: "You said you'd never —" / "I haven't." (heard; **no meaning drawn**); Theo's cover: Doug's raid schedule. [stay] he hears the same two lines from
+  below. **Jack infers nothing about Kevin or Theo.**
+- [s17] Becca's gift and plans; "Someday I want to see your house." Margot's "surface acting" (behaviour only). Laney's "Amen" and the neck squeeze.
+- [s18] Frank: Pasadena; [monday] "We don't. Not here."; [okay] "I sat in the lot. Lights were on." Gina's 4:19 text.
+- [s19] Gloria: "Lattice-top." [s20] Becca: "Did you ask her yet?" (out of Lena's earshot). [s21] Julian at the 9 p.m. with Lena; doesn't receive; learned the Sanctus.
+- [s22] Lena will be okay at the Thanksgiving table; Julian told her to call him from the bathroom. **Jack still has not asked her to Youngstown and never does in E15.**
+- [s23] **Theo has known since Friday, from Laney** ("Laney told me Friday"; "he asked if he could ask") — the route is on the page.
+- [s24a] **Maria wrote Becca last week; Maria now knows Lena "has a boyfriend… *again*."**
+- [s25] Becca is invited Dec 27–30 and has flights (`knows_becca_ohio`). [notyet] Becca learned of Julian from Mrs. Fitch and worked out that "not yet" was false.
+- [s27] Hale's prompt; the spring roster.
+- [s28] **Becca knew he meant to bring Lena; she prayed Lena would say yes.** Whatever `e15_her` says.
+- [s29] Theo's 7:05 text (Jack sees light on the ceiling, not words). [go] Osei's penance.
+- [s30–s30a] Lena came up to ask if he's okay; the praline. **He sees the medal touch at "I'm fine. Thank you for asking, Jack." and does not know what it means.**
+- [s31] Laney's face at 217's door (no meaning). [s32] Theo's Harbor Inn booking under Costigan; the "mother" story (Jack notices it doesn't make sense; draws no conclusion).
+- **He does NOT learn:** that Lena read his wait as a choice; that Lena is devastated; that Laney told Lena; what Theo texted; that the Harbor Inn table is meant for him and
+  Lena; what Kevin and Theo meant; Becca's rosary's owner; anything about Skye.
+
+#### Lena
+- [s03–s04] [personal] Jack's father is still sore ground; [apology] Jack's apology.
+- [s09 | frank] **Frank's night in the lot** (`lena_knows_frank_night`) and the $340 hold. [gina] **Gina's Tuesday texts only** (detention; the truck) — not Sunday's "is the nun
+  coming" (arrives s23, after). [thursday] nothing new about Jack.
+- [s12] Jack kept his promise to stay to the end. [s14] Jack's reaction to Julian (as she reads it: happy for her). [s22] Jack is taking the Greyhound; his Nebraska cow.
+- [s24] [frank] it's Monday for him. **She hears nothing of Maria's call** (round the corner).
+- [s30] **The breakup** (from Laney ~10:15 p.m. Wed via Theo's 7:05 text — the route is never on the page) (`lena_knows_becca_over`). [candor] **why: Maria wanted Becca at Christmas;
+  he couldn't take her home** (`lena_knows_why_becca`). [unguarded] he hurt someone good on purpose "because the other thing was worse" (not what the other thing was). [not
+  restraint] he did it to Becca's face. **She never learns he meant to ask her to Youngstown (all paths).**
+
+#### Becca
+- [s07] The hold; Jack's refusal of Daisy's money (per `e15_daisy`).
+- [s21] Lena brought "somebody" (she takes him for a friend at first). [s23 | busy] Lena is seeing Julian (Jack's text). [s25 | notyet/justme/none] from Mrs. Fitch (Tue):
+  Lena's "young man" held her coat. [notyet] Jack's "not yet" was false (unspoken).
+- [s25] Maria's letter and invitation (from Maria, directly).
+- [s28] It's over and why (per `e15_reason`); "You were going to bring *her*." (her own inference from Jack's E14 Sully's confidence). **She tells no one about the invitation,
+  ever, through S2E10.** She will tell her mother at the Thanksgiving table before the FB status comes down.
+
+#### Others
+- **Theo** [s02] the hold. [s11b | theo] paid it. [s15] Jack doing bits. [s16a | follow] Jack heard the stairwell line (Theo saw him); [stay] Theo doesn't know Jack heard.
+  **Lena + Julian from Laney, Fri ~1:30, incl. "he asked if he could ask."** [s29] **"I ended it."** (from Jack) — and texts at 7:05 (🔒 to Laney). [s32] books the Harbor Inn.
+- **Laney** knew about Julian from Lena by Thu night. [s13] walked round the Lagoon with Jack (per `e15_laney`). [s17] sees through the bits ("excessive personality"). 🔒 Theo's
+  7:05 text; tells Lena ~10:15. [s31] sees Jack with Lena's mug at 12:02 a.m.
+- **Margot** [s16] was at the vending machine Friday night; [s17] names "surface acting" — the behaviour, never the cause; knows nothing of Lena and Julian on the page.
+- **Kevin** [s16] Garrett's Maine line; [s16a | follow] Jack heard him with Theo. 🔒 nothing on the page explains it.
+- **Rafi** [s06] Priya gave Jack the pink. [s11a | rafi] Jack ran the errand. **Ray** [s11a] saw a taped Vans box in La Flaca's basket; did not look.
+- **Rudy** [s08] the errand offer; [s10 | rafi] Jack called Rafi in his hearing; [s19 | rafi] the tip-out into the can.
+- **Gloria** [s08] the pink (she read the corner); [s19] "She's seeing somebody. He's nice."
+- **Priya** [s11c | priya] Jack's hardship; Maria's maiden name (Jack wrote it). [else] only that she gave him the notice.
+- **Yusuf** [s12] Jack was there for his birthday; told Jack about the memorial.
+- **Julian** [s12] Jack stayed to the end. [s22] Jack is going home by bus; **Julian knows (from Lena, off-page, by Sun Nov 15) that Wes will be at the Broussard table.** He
+  offers Jack his coffee; he says nothing about Jack.
+- **Maria** [s05] Jack knows; "I've got it." [s24a] Jack "has it"; Lena "has a boyfriend"; [justme] Gina says the nun's not coming. **Nothing about the breakup** (E17).
+- **Frank** [s18 | monday] Jack knows about Monday; [okay] Jack asked; per `e15_money` how Jack got the money. **Gina** [s08 | candor] Jack knows about Dad; [s23 | justme] the nun
+  isn't coming. **Nonna** nothing new.
+- **Mrs. Fitch** [s25] told Becca (Tue) that Lena brought her young man to the 9 p.m.
+- **Osei** [s29a | go] Jack's confession (content: letting Becca love him so he wouldn't decide). Sacramental seal.
+- **Hale** nothing new about either of them beyond the roster order.
+- **LIVE RISKS carried:** Becca and Gina must never tell Lena about the invitation (through S2E10); Maria's s24a call happened out of Lena's earshot; Theo → Laney → Lena stays
+  unstated; Becca's rosary's owner stays off the page until S2E03 at the earliest (S1E15 s26 now says only "a rosary wound twice around her wrist").
