@@ -913,3 +913,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     she is comes during Thanksgiving break (E18).
 - **After S1E15 (player feedback).** "Lots of bittersweet hurt across the board. Excited for the Skye Era. Theo was
   great this past episode."
+- **E16 design round (player).** **The party: an LA-kid house party at someone's parents' empty Montecito house**
+  (pool, view, money, people from Theo's world; explains why Skye is there). **Where they end up: the ocean at night.**
+  She dares him into the cold Pacific in their clothes, and they kiss soaking wet on the sand. **The next morning Theo
+  is confused for both reasons**: he lost Jack at the party and spent the night worried, Jack strolls in at dawn soaked
+  and glowing, humming, and won't explain. Theo is baffled, then suspicious. (Jack invites him to Thanksgiving that day.)
