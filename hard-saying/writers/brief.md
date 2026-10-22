@@ -1186,3 +1186,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     Football over the Patriots; Lena's joy), and the **Jersey Shore premiere** (Dec 3; Laney and Theo hate-watching).
   - **Theo: pointed but silent.** Notices everything and needles sideways (the News Feed read aloud, timing how fast the
     phone hits a pocket), never confronts, and covers for Jack when it counts.
+- **Episode length from S1E19 on (player; raises the Skye-episode allowance).** Episodes run **longer from S1E19
+  onward**: Skye needs a **ton of screentime without cutting into Lena or the ensemble**. Her time is **added on top**,
+  not taken from theirs. **Working target: ~22–26k words per path** (no padding; every added scene earns its place).
+  - **From the New Orleans trip on, Skye's extra time transfers to Lena**: from that week Lena becomes even more a
+    part of Jack's life, so the episodes stay long and the extra share is hers.
