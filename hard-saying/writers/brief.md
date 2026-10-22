@@ -946,3 +946,14 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Lena in December (through Jack's eyes): both.** She's visibly trying with Julian by day (his gig, Mass together,
     the song), and she's seeking Jack out by night, almost testing, and he's never there (midnight disappearances;
     "Where do you go?").
+- **Skye Era balance, Jan–Feb 2010 (player directive).** Skye's public side (gratuitous Facebook posting, immodest
+  style, suggestive posing, antics; comic and scandalous) must be **balanced with the intellectual spark** that drew
+  Jack in from the first conversation and **the rare vulnerabilities that deepened it**. **January and February are a
+  real, meaningful relationship**, not a fling and not a cautionary tale. They argue books and people for hours, play,
+  confide, and she's genuinely good for him in ways (saying it out loud, daring, being seen in the moment) even as the
+  faith gap and the physical pressure persist.
+  - **Lena's sideways fights target the antics** (the photos, the clothes, the posting, the publicity) **because that's
+    easier to criticize**. **What actually bothers her far more is that it's real**: she can see Jack is happy, that
+    Skye makes him laugh and talk, that they have their own jokes and arguments. Play the gap: Lena attacks the surface;
+    the player and Jack (eventually) understand she's hurt by the depth. Jack defends Skye on the substance, which only
+    makes it worse. Payoff in New Orleans (Lena admits it was never the photos).
