@@ -1364,3 +1364,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     early February), each a step past the last, short of sex (HARD RULE).
   - Showrunner and Voice Editor track the ladder per episode (no two scenes the same beat; each step named in the
     outline).
+  - **Supersedes `outlines/s1e22.md`'s "E22 does not escalate."** The finale's Skye scenes (the Tuesday to-the-letter
+    beat; the Thursday "what are we" goodbye) must also step up past E21, kept proportionate so the night with Lena
+    stays the episode's heart.
