@@ -2924,3 +2924,141 @@ only on the rafi path. The Newman stockpot is still in the Fishbowl kitchen. Del
 Minor inventions to keep: Garrett (Bio 1A, Visalia, sunburned); Mrs. D (Gina's religion teacher at Ursuline); Brick night desk $8.40/hr; Becca's touch-tank Sunday 6 a.m. shift
 (flu cover); Laney's fake ID (Bernadette Thibodeaux — **not** Mary Catherine, which is reserved); the Ranger's Arby's napkins. Journal cards for Becca, Lena, Frank, Theo and the
 money note are duplicated per choice — any correction must be made in every copy.
+
+### S1E16 — "A Good Man" (Thu Nov 19 – Sat Nov 21, 2009; tag Sat 5:45 p.m. PST)
+> Written for the after-s1e15 save (wit 41, reckless 29, sincerity 112, candor 59; `e15_her=="yes"`, `e15_conf=="go"`, `e15_frank=="rose"`, `e14_invite=="lupes"`,
+> `e12_whos=="writer"`, `e13_caroline=="becca"`, `e15_coffee=="chorus"`, `theo_paid_deposit`). Branch tags are `[scene | condition]`. Final per-path length 19.0k–19.6k
+> words (Skye ceiling ~22k); 25 choices per path; 7 whispers in the file. Player's E16 design round honored (Montecito party; the Pacific dare; the kiss soaking wet on
+> the sand; a confused Theo at dawn; the invitation that day).
+
+- s01 Thu 2:00 a.m., 412: Becca's 2 a.m. text ("its 2. praying for u like always. thats not a girlfriend thing."); [daisy gently] "daisy says hi btw. shes staying put."
+  [go] Jack says *Becca* into the dark — the penance (every day till Advent, Nov 29). FB still *In a Relationship with Becca Lindell*; Joey's FINALLY BRO. [two_am reckless]
+  three Reds left in the Carhartt. The clean mug outside 217, handle out.
+- s01b 12:10, St. Brendan's: Maccabees; Luke 19:41–44 (Jesus weeps over the city); Osei ninety seconds ("the way a doctor cries in his car"; "Later is also an hour").
+  Lena saves the 4th pew right with her bag. [go] Becca's name inside the Our Father. **Sign of peace: Becca crosses the aisle to Jack; [her yes] then to Lena.** Becca
+  to the touch tank (Thursdays).
+- s02 1:15 p.m., the Fishbowl: CNN Karzai inauguration (Nov 19); UC Regents fee hike (32%) at UCLA. Hale's prompt: WHETHER A PROMISE BINDS WHEN ITS REASON IS GONE;
+  COSTIGAN: NO; eight pages, Mon 9 a.m. Laney: "lost Miss Teen Dallas to a baton twirler"; `e16_laney` becca/quiet/wit; her open Diet Coke; "instructed to be nice to
+  Becca. Effective today." Theo on the Anacapa lawn watching through the glass.
+- s03 7:20 p.m., the Anchor: Gloria unties his apron and sends him home (lost six hours at $8); pecan slice in a to-go box.
+- s04 8:50: Theo's TEAM JACOB tee under a wet-sand cashmere ("Delaney's orders. For deniability."); lobby 11:40.
+- s05–s09r **The two-hander, Thu 9:00–11:40 p.m., the Delgado basement laundry.** The upright (dead F; "Dead since before Priya"); Priya's CLEAN THE LINT TRAP sign; 8
+  washers, 6 dryers, vending machines, the clock in a wire cage. Lena: gray Rosary sweatshirt; Laney's *New Moon* (TEAM JACOB in silver Sharpie; Post-its pink = swoon,
+  yellow = problematic, green = Lena objecting); page 400; "reading it out of spite"; "Leviticus had more plot." Julian plays Bastille till 11, picks her up 11:40.
+  **Jack read Gina all four Twilight books on the Glenwood porch the summer after Danny went in** (Gina 14 then; *Breaking Dawn* midnight release at a Boardman strip
+  mall; Frank: "That's not how you turn a double play"; Gina's first laugh since January). Jack's favorite: *Eclipse*, the tent. Gina is Team Edward ("Jacob is literally
+  a dog"). **Duel `twilight` "Team Edward" (unofficial; Lena scores, lena pips 1→3).** Lena's thesis: the boy says no; "Decide for her and call it love"; Sister Agnes
+  (Team Charlie) confiscated eleven copies. Verdict `e16_twilight` both (DRAW, in her capitals inside Laney's cover) / jack / lena ("A joke's a forfeit, Youngstown").
+  [Concede s07a] "He should have asked her." (`told_lena_should_have_asked`). The Press line is about Edward ("He thinks he's the danger"), **not** Jack's own reason
+  (reserved for S2E10). s08a **Lena plays "Clair de lune" properly, around the dead F** (`knows_lena_piano_played`); "If you play well, people ask you to play"; the
+  last time she played it right in front of anybody was a November four years ago (🔒 Lucille's funeral). [e14_grief house] Jack thinks of Zimple Street. s09 the dead
+  F bit ("Carnegie Hall"); their fingers on the same key. `e16_bench` restraint ("Heart and Soul," bass half) / candor ("This was a good night." — whisper) / **reckless
+  (s09r: her fingers on his; she draws the fallboard down; resolve.lena → 4, which now carries — s09j/s11 no longer reset it)**. s09j 11:40 Julian at the top of the
+  stairs (cardigan, car keys, BART-sticker guitar case). Her dryer empty.
+- s10 Fri 12:01 a.m., the Rialto (Mission St.; the big house, old proscenium): NEW MOON 12:01 · SOLD OUT (an O borrowed from a 6). Laney's head counts; Theo, Margot
+  ("a fertility rite"), Doug, Kevin (drove: "the designated adult"), Jack. Laney's song-title list folded in her clutch (from Julian's set). Theo: "Edward, with a capo."
+  `e16_capo`. s10a Lykke Li "Possibility"; **Lena's head on Julian's shoulder around December**; Laney grips Jack's arm; out 2:20 a.m.; [chorus] Julian put the second
+  chorus back. **Jack walks home down Mission Street, three miles, 2:30 a.m.**
+- s11 Fri 5:10 p.m., 217: Gina's TEAM EDWARD text (12:40 p.m.); Laney's 3:12 text ("lena is DYING"). **Lena has a cold (99.something)**; H1N1 flyer on the door.
+  **Two soups: Julian's mother's juk in a dented steel thermos; Gloria's chicken and rice (PECAN on masking tape) goes on the sill "for tomorrow."** **The Manhattan
+  Declaration (released Fri Nov 20): Lena signed online, "for the last part" (religious liberty).** Margot: "drafted by men with chancery offices and very good lawyers";
+  the marriage section in the same document, under the same pledge, as the unborn child; "coalition maintenance dressed up as moral philosophy." Julian: "What would you
+  go to jail for?" Lena: the Claiborne overpass; a girl keeping her baby; a nurse; "Not for a bishop's feelings." `e16_decl` sign (`jack_signed_manhattan`) / press /
+  concede (signed; `jack_signed_manhattan`).
+- s12 5:50: Julian leaves 5:45 (rehearsal; back at nine with tea); touches Lena's hair. 217's latch doesn't catch. **Through the door, Lena to Laney: "—Laney, he
+  *ended* it. People are sad when they end things."** Margot on the east stairs: **"He's the healthiest thing in her life, Costigan."** (`knows_margot_julian`).
+- s13 9:40 p.m., 412: **Theo cancels the Harbor Inn table (Sat 8:00, COSTIGAN)** — "My mother can't come up." (`harbor_cancelled`; false dawn #2 dead). Theo's charcoal
+  shirt (Japanese label). The pitch: Montecito, parents in London, "I'm *forbidding* it." Laney: learn a girl's name and "I will have you killed, fireman, and I will wear
+  white to the service." "She feels you're fragile." Laney takes the lotion Kleenex to Lena. Jack is eighteen ("Details").
+- s14 **9:55 p.m. (corrected from the blueprint's 10:40)**: the SL down the 101 south, top down, Randy Newman "I Love L.A." via cassette adapter; the better part of an
+  hour along the ocean; past Santa Barbara; Montecito hedges, gates, call boxes. **Wyatt Halloran** (Harvard-Westlake, two years ahead of Theo; "Most Likely to Own a
+  Boat"); his father produced three bad films for Richard's company (the company is **not** named on the page); the house the second one built (a golden retriever in
+  the Senate). Two black cars with LA dealer frames, drivers in them.
+- s15 10:55, the Halloran house pool deck: glass and board-formed concrete over a canyon; the Channel view; Passion Pit "Little Secrets"; ~40 people. Theo lost in three
+  minutes (Jordan's callback; Wyatt and the neighbor's noise call — "Wyatt, I'm nineteen."; a fedora's vampire-in-finance pitch). "Don't talk to anybody with a headshot."
+  "Who reps you?" "The Diocese of Youngstown." Theo holds one full bourbon all night (driving). `e16_drink` reckless (Wyatt's Patrón) / control (one Pacifico) / restraint
+  (a Coke; "You're very *Midwestern*").
+- s16 11:50, the den: two Marisol sophomores on the stairs — "it's *Cassidy*" (one stranger's mention; never glossed). Den: beige carpet, a sectional, a TV with a score
+  crawl, a birch-stacked fireplace, floor-to-ceiling glass over the canyon, a window seat. **Skye: man's flannel, cutoffs over black tights, barefoot, braided anklet, boots
+  standing by the seat, sun-streaked salt hair, freckles, Sharpie in her teeth, the Harvest paperback of *A Good Man Is Hard to Find*, LIAR ×3 beside the grandmother.**
+  No drink. **Jack crosses the room himself** (`e16_cross`; first time in the series).
+- s17–s19v **Duel `misfit` "The Misfit" (unofficial; Skye the opponent; no Hale record card).** 11:55 p.m.–12:40 a.m. (`met_skye`). She is reading for a preacher's
+  daughter (17; a tent; forgives a collection-plate thief in the rain; "very O'Connor," the director says; shoots in about a month). Her margins: LIAR; "only honest man in
+  it"; LAST CARD. SHE'S BEGGING. PLAY IT AS A CON. Pitty Sing, Red Sammy's monkey, the navy straw sailor hat with white violets. Her bits: librarian, the grandmother,
+  director in a scarf, the Misfit, a tent preacher (Reframe), "Swedish" at a guy in a visor; verdicts as a ring announcer / weather girl / museum audio guide. "I listen
+  to how people breathe." Jack: "Like a thing that happened to me once." [writer] "I came as her. I never said she was right." `e16_misfit` jack_heart ("Nothing. That's
+  the point." — she strikes CON, and [heart>=3] writes something small he can't read) / jack (cites O'Connor's essay; `jack_cited_oconnor`) / draw / skye. MISFIT boxed
+  inside her front cover. Intermission: she reads the sectional (the couple who broke up an hour ago).
+- s20 12:45: **"Jack Costigan" — she has his whole name (`skye_knows_surname`); she gives "Skye. Just the one."** "Do you go to Marisol?" "Not yet." **"I act. I've been
+  working since I was eleven."** (`knows_skye_acts`) — braces at "In what?"; **"I don't have a TV, so it won't mean anything."** (her real laugh, through the nose). The
+  back-pocket book habit ("You've done it four times"). The dumped-somebody face; "Wednesday." "She's the nicest person I've ever met." "Then you did it for her." [writer]
+  "*a friend of mine* like it was in italics" (`skye_clocked_lena`). `e16_friend` control ("She's a friend." — "You're a terrible actor, Jack.") / candor ("She's seeing
+  somebody.") / wit (O'Connor's been dead since 1964).
+- s20a 1:00: a long coat passes on the upper deck in the reflection (🔒 Theo); she turns her face to the canyon. "Too many people I went to middle school with." "Do you
+  want to leave?" `e16_theo` control (**text to Theo 1:04 a.m.: "got a ride. dont wait"**) / reckless (no text). Out through a door behind the bar fridge, the garage
+  stairs, Wyatt's father's second car under a cover.
+- s21 1:10, **the Saab: a 1991 900 convertible, red sunned pink, a hip-sized dent in the passenger door, one taillight out, duct-taped top; key in the floor; the deck stuck
+  on *Rumours* since August (Fleetwood Mac "Dreams"); top down, heater full ("You heat your feet and freeze your face").** "I don't drink where there are phones." "It's
+  GM." (GM 50% 1990, rest 2000; **the Koenigsegg sale pending — "nobody back home thinks it'll go through"**; it collapses Tue Nov 24, E17). Lordstown, Local 1112,
+  Cavaliers then Cobalts, laid off since June. `e16_dad` candor (the Monday-before-last lot night; `told_skye_frank`; whisper) / control (the garage, *Go Bucks*).
+- s21a 1:35, the 101 north past Goleta: **her voice for Frank ("Lights are on. So somebody's working." / "Everything's fine here. Go Bucks.") — then she drops it: "Nobody's
+  ever told me about their dad without wanting me to *do* something with it."** The Marisol exit; Ocean Road west past campus; the old coast highway; "Anybody?"
+- s22 **2:15 a.m., Ellery Beach** (a dirt turnout four miles up the coast from the Lagoon, a gap in a wire fence, a surfers' path, the black stumps of a 1920s oil pier
+  in two rows, the platforms lit offshore). **She names it: "Ellery. Surfers and me. The pier was for oil, in the twenties. Now it's for me."** Theo's 2:15 text [control]
+  "Costigan. You're a grown man. Text me if you're dead." / [reckless] "where are you". She carries her boots down and leaves them at the foot of the path. **The dare:
+  "It's fifty-seven degrees… I dare you. In your clothes." "Clothes is a commitment, Jack."** `e16_water` reckless (Lake Milton at eleven) / control ("Coat check") / wit
+  (she goes under first). No moon; Orion high in the south, the Pleiades.
+- s22a 2:30: Gary and Gary's ex-wife (made-up constellations). **She asks the scar in the water ("Tell it like it's true")**: `e16_scar`/`scar_told_skye` pacific / husband
+  (Erie; Marlene) / fight ("Keep it.").
+- s22b 2:40: the striped Mexican blanket from her trunk (surf wax, somebody's dog); [reckless] Theo's 2:50 text arrives on her boots while she is up at the car — **Skye
+  never sees THEO on his screen.** Feet under his thigh ("a first date"; "I'll give you a credit"). "You have a hat face." **The St. Michael medal; the prayer's first
+  line; "Snares… That's a beautiful word."** "I was baptized. Allegedly. There are pictures. A lot of lace." `e16_faith`.
+- s23 3:00: **"I'd like to kiss you now."** — out loud. `e16_kiss` candor ("Yes."; `said_it_plain`; whisper) / reckless (before she finishes; her hands find his collar) /
+  wit ("You're supposed to ask." — she repeats it in a stage whisper "for the people in the back"; **E21's "Say no again. Slower." is not spent**).
+- s23k **3:03, the kiss, soaking wet on the sand** (`kissed_skye`; resolve.jack −1; skye heat +2): salt, her cold hands on his neck, "Hi." / "Hi."; over sideways into
+  the sand; the tide finds his jeans. Kissing only. `e16_stop` **restraint (s23a: Jack stops — the St. Michael cold at his throat; "You stop. Okay."; `jack_stopped_first`;
+  the Saab with the top put up by hand, windows fogged)** / **reckless (s23b: she stops, as the grandmother — "In case of an accident, everyone should know I'm a lady."; top
+  left down, the blanket, the stars)**. Both: the talk till gray, **two hours** (Nonna's gravy, gray snow, Gina, Rosie's crabs ↔ Studio City "an apartment my mother rented
+  for the commute"; the juice-commercial callback at twelve; the two-dollar *Moviegoer* with green-ink margins); the stuck tape turns over about every twenty minutes.
+- s24 5:50, a second wade at first gray (RAZR left on the dash; "That's how you know you meant the first one"); [reckless] she puts the top up by hand ("Rules have
+  exceptions. You're one."). Back down Ocean Road past St. Brendan's; **Jack tells her Delgado, the lot past the Lagoon.** "I have a thing at nine. In a different
+  county." The Anacapa lot at ten to six. **SKYE (MISFIT)** typed into his RAZR the long way (T9 off); she calls herself — **her phone: a white iPhone**; "Three-three-oh.
+  Ohio. Now I have you." "What's your last name?" "Out." (`skye_has_number`) The Saab goes toward Las Olas. Theo's SL in its space, dew on the hood.
+- s25 6:05, 412: **Theo on his bed in the camel coat, shoes on. Theo home 4:10 a.m.** after searching Wyatt's house, the pool house, the garage, the neighbor's koi pond
+  (a heron), every lane in Montecito twice; **nine calls**; by his car in Wyatt's turnaround till three; the neighbor's sheriff nephew stayed for a drink. [control] "*Got a
+  ride.* From whom, Costigan?" **Jack comes in humming the Saab's song, wet to the waist, salt on Theo's shirt cuffs, sand in his boots.** "Why are you *wet*?" "Long story."
+  `e16_where` control ("Walked home." → "From *Montecito*. Sixty miles. Through the ocean, apparently."; `jack_lied_theo_skye`; whisper) / candor ("Argued about a book till
+  it got light." — no "somebody") / wit ("Where'd *you* go?"). Theo baffled, then narrower than baffled.
+- s26 9:00 a.m., the Fishbowl: **Ohio State at Michigan** (noon ET kickoff); Pryor; Tate Forcier's picks; Tressel's sweater vest; Woody, Bo, John Cooper (10 losses in 13).
+  Theo in his navy silk robe. Laney (sweatpants, full makeup) and Theo confer ("why is he *humming*" / "There was a heron"). [control] "Most of it's downhill." "How's
+  Becca?" "She flies home Wednesday." "Lena's still sick… a *foghorn*." "Tell her to eat the soup." Theo: a safety "sounds like a tax." **Halftime: "Come to Youngstown
+  for Thanks—" "Yes."** (`theo_youngstown`); the Greyhound, two and a half days; "In Prague. It was an art project." [deposit] the receipt: + 1 THANKSGIVING (YOUNGSTOWN).
+  PAYABLE IN PIE. `e16_invite` sincerity (whisper) / wit (a real coat; "Yours are *decorative*") / candor ("I was going to ask somebody else." "I know." — Laney in the shot,
+  silent).
+- s27 12:40 p.m., the 4th-floor east landing: **OSU 21, Michigan 10; 251 rushing yards; six straight.** [frank rose/okay] Frank calls: "Six straight." [rose] "Still
+  Pasadena." "The rich one?" "Your mother'll feed him." **Theo has bought two tickets: Santa Barbara → Pittsburgh, Wednesday morning, one change, seats together**
+  (`theo_paid_flights`); Jack's Greyhound (left Monday night) becomes a voucher. "Glenwood," on the back of his hand; no lilies. **Theo's Thanksgiving otherwise: his
+  mother in La Cañada with her life coach and a Pomeranian in a sweater; his father in Cabo with his wife (Brynn); Poppy with whichever loses.** `e16_tickets`; [control +
+  deposit] + 2 TICKETS (PIT). GUESTS BRING SOMETHING. Peach pie still owed.
+- s28 5:45 p.m.: the charcoal shirt back on Theo's closet door, salt on the cuffs. Theo to Laney: "No *girls*. I checked every room. Twice… Because I *would* have seen."
+  "Bring me fries." Lady Gaga "Bad Romance" through a door. Jack types *misfit* the old way and deletes it. [go] *Becca* under the hair dryer, every day since Thursday.
+  To the Anchor for the 7:00.
+
+**New flags:** `told_lena_should_have_asked`, `knows_lena_piano_played`, `jack_signed_manhattan` [sign/concede], `knows_margot_julian`, `harbor_cancelled`, `met_skye`,
+`jack_cited_oconnor` [press], `skye_knows_surname`, `knows_skye_acts`, `skye_clocked_lena`, `told_skye_frank` [candor], `scar_told_skye`, `said_it_plain` [candor],
+`kissed_skye`, `jack_stopped_first` [restraint], `skye_has_number`, `jack_lied_theo_skye` [control], `theo_youngstown`, `theo_paid_flights`. Path flags: `e16_laney`,
+`e16_twilight`, `e16_play`, `e16_bench`, `e16_capo`, `e16_decl`, `e16_go`, `e16_drink`, `e16_cross`, `e16_misfit`, `e16_friend`, `e16_theo`, `e16_dad`, `e16_water`,
+`e16_scar`, `e16_faith`, `e16_kiss`, `e16_stop`, `e16_where`, `e16_invite`, `e16_tickets`. **Resolve:** Lena 5, or **4 on `e16_bench=="reckless"`** (no later reset in
+E16); Jack 5–8 on this save. Skye heat 2–4.
+
+**Owed payoffs:** `skye_has_number` → E17's thought-over text (Sun) · `e15_conf=="go"` → the penance to Advent (Nov 29) · `becca_fb_up` → Thanksgiving · the peach pie
+(`theo_paid_deposit`, now plus two tickets) · Jack's Greyhound voucher (call Monday) · Hale's paired paper Mon Nov 23 · Lena's soup on the sill (Sat) · `nextTime`
+"Somebody's grandmother takes the stairs" → Nonna's fall, Mon Nov 23 (E17, every path) · the Koenigsegg collapse Tue Nov 24 (E17's orphan text) · Skye's "thing at nine in
+a different county" (🔒) · her preacher's-daughter movie shoots in about a month.
+
+**Continuity notes.** Montecito is ≈1 hr 5 min south of Marisol; Ellery Beach four miles north of the Lagoon on the old coast highway (Skye ground; never Jack/Lena ground).
+The Halloran parents are in London. Wyatt's father's company is never named on the page (Meridian; Jack would know it). Jack is eighteen. Theo's charcoal shirt is now
+"Jack's" by Theo's rule. Theo's SL: the Becker deck with a cassette adapter. Skye's car is a '91 Saab 900 (her mother hates it); her phone a white iPhone; her number is in
+Jack's RAZR as SKYE (MISFIT); she has his 330 number. She has never seen THEO on his screen and never heard Theo's name from Jack; Jack never mentioned Danny to her. Theo
+never saw her. Lena heard only her own half through 217's door. "Cassidy" was said once, by a stranger, unexplained. Becca flies to Spokane Wed Nov 25; Theo and Jack fly
+SBA → PIT Wed morning.

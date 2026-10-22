@@ -219,6 +219,25 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    beach cleanup," "his dinner-party voice," "his brightest voice." Max two per episode; never with an appositive second voice.
 104. **"Out loud" as an intensifier** (S1E15; 10 in one draft; "laughs out loud" 17× across E01–E15). Max three per episode, kept where the volume is the point (a Glory Be
    at the TV, a deadpan prayer that carries to the pool table).
+105. **Waits for more — "There isn't."** (S1E16; 8 "There isn't" buttons and 10 "waits for / waits to see" in one draft, against 0–2 per episode in E01–E15): "He
+   waits for the bit. There isn't one." / "She waits to see if there's more. There isn't." Max one per episode (E16 keeps s19's "and she lets there not be").
+106. **"X nobody Y" emptiness inventories** (S1E16; rising since E11): "a pool nobody swims in," "two ovens nobody has ever turned on," "a rowing machine and nobody rowing,"
+   "a fireplace nobody has lit." Max two per episode; give rich rooms positive details instead (the plastic still on the dials, birch stacked for looks).
+107. **Essence glosses — "because she's [Name]" / "because she can't help it" / "because of course she does"** (S1E16 ×4, E15 ×3; a cousin of #72). Max one per episode,
+   never as a dialogue lead-in ("And then, because she's Lena:").
+108. **"For a second"** (S1E16; 7–8 per path in one draft, three in one scene; E01–E15 ran 1–5). Max two per episode.
+109. **The act-drop announced** (S1E16; Skye): negation inventories that tell the reader she has stopped performing — "She doesn't do a voice for it, or a face, or a
+   joke," "no bit, no voice of any kind," "not the anchor, not the host," "it isn't any of the laughs she's been doing tonight." Six to eight a path in one draft. Skye's
+   real drop is spent at most once an episode (E16: s21a, "And then she drops it"); everywhere else show an action (she caps the Sharpie, takes her thumb off his eyebrow)
+   and never grade a laugh or grin against "the earlier ones."
+Small repeats to watch (S1E16): Skye's "Okay" as her default turn (three per episode, on acceptances); "looks at him like [comic simile]" for Skye (two per episode — her
+reactions are things she does); Skye trying a line in her mouth (establish once, pay once — E16 keeps s16 and "snares"); one character per bit (the game-show host was
+spent four times in one draft — rotate: librarian, tent preacher, ring announcer, weather girl, audio guide; never a judge, which is Lena's, or a pageant host, Laney's);
+"pageant" figures in the narration for Laney (one per episode — E16 keeps s10's director; give her glamour threats in her own mouth); Lena's "Don't you dare / don't tell
+Laney" (once an episode — the clap); the platforms "burning" on the horizon (twice a beach); "There's no moon" (once); the heater "roaring at their shins" (one car per
+episode — the rule is Skye's); the cold down the back of Jack's neck (once, where it's earned); "the color of wet sand" and "soft as a dish towel/dishrag" (one fabric
+figure each); speech addressed to the ceiling (Laney's, once); "as if / like it's" substitutes count under #60; Theo's "with no irony at all" (the bible's short list only:
+*Point Break*, the Madonna Inn, Poppy); consecutive scenes repeating an inventory (Jack's soaked clothes: once, in the room where someone sees them).
 Small repeats to watch (S1E15): the untouched drink (Lena's Bastille coffee, the Corona, Laney's mimosa, Lena's mug — one is the trace; the others must not be "full"); the
 heater/toaster/espresso tick (one source per episode, established once and used once more — E15 gives it to the Ranger); "twenty-four hundred miles" (once an episode);
 "one degree" cooler/off (once); ranch figures in the narration at Becca's joy or grief (her own lines only — "farm hand's grip," the calf's ear tag and the feed bill were

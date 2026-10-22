@@ -1453,3 +1453,68 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Hale** nothing new about either of them beyond the roster order.
 - **LIVE RISKS carried:** Becca and Gina must never tell Lena about the invitation (through S2E10); Maria's s24a call happened out of Lena's earshot; Theo → Laney → Lena stays
   unstated; Becca's rosary's owner stays off the page until S2E03 at the earliest (S1E15 s26 now says only "a rosary wound twice around her wrist").
+
+### S1E16 — "A Good Man"
+> Written for the after-s1e15 save (see continuity.md S1E16). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01] Becca still prays for him at two ("not a girlfriend thing"). [s01b | her yes] Becca gave Lena the peace.
+- [s02] Laney sees through "It's Becca"; she's been "instructed to be nice to Becca." Theo watched him through the Fishbowl glass.
+- [s05–s09] Lena plays the basement piano properly ("Clair de lune," around the dead F); the last time she played it right in front of anybody was a November four years
+  ago (he does **not** know where — 🔒 Lucille's funeral; [grief house] he only thinks of Zimple Street). Julian picks her up at 11:40. [s07a | concede] Lena agreed: "He
+  should have asked her." [s09r | reckless] her hand stayed on his; she closed the fallboard.
+- [s10a] Lena's head on Julian's shoulder at *New Moon*. [chorus] Julian put the second chorus back.
+- [s11] Two soups; Lena ate Julian's. Lena signed the Manhattan Declaration. Julian asked what she'd go to jail for, and listened. [s12] **Through 217's door, Lena to Laney:
+  "he *ended* it. People are sad when they end things."** (He hears only Lena's half; he does not hear what Laney said.) **Margot: Julian is "the healthiest thing in her
+  life."**
+- [s13] Theo cancelled the Harbor Inn table (his cover: his mother can't come up — **Jack still does not know the table was meant for him and Lena**). Laney's threat about
+  learning a girl's name; "She feels you're fragile."
+- [s14] Wyatt Halloran; his father works for Richard's company (Jack knows the company is Meridian; nobody says it).
+- [s16] Two sophomores said "*Cassidy*" on the stairs — means nothing to him.
+- [s17–s20] **Skye: first name only ("Just the one"); acts, working since eleven; reading for a preacher's daughter in a movie; doesn't go to Marisol ("Not yet"); "too many
+  people I went to middle school with" at the party; Studio City ("an apartment my mother rented for the commute").** He told her "I don't have a TV." **He does NOT know her
+  surname, her real name, her show, that she is famous, that she knows Theo, or that she saw him on Sol's footage.** He saw a long coat pass in the window reflection and drew
+  nothing from it; he saw her turn her face toward the canyon and drew nothing from it.
+- [s21] Her car is a '91 Saab (half GM); she doesn't drink where there are phones. [s22] **She named the beach: Ellery; the pier was for oil in the twenties.**
+- [s22b] She was baptized ("Allegedly"); she sits still and listens for something and expects no answer.
+- [s23–s24] She asked out loud to kiss him. [restraint] he stopped; [reckless] she stopped. "I have a thing at nine. In a different county." Her phone is a white iPhone. Her
+  last name: "Out."
+- [s25] **Theo searched all night, called nine times (Theo's word; Jack never looked), got home 4:10.** [control] Theo questioned "a ride." [s26] Laney: Lena still sick.
+- [s27] Theo bought two SBA → PIT tickets; Theo's mother is in La Cañada for Thanksgiving, his father in Cabo, Poppy with whichever loses. [rose] Frank: "Still Pasadena";
+  "Your mother'll feed him."
+
+#### Lena
+- [s01b] Becca's peace [her yes]. [s05] Jack knows Becca prays for him at two. [lena_knows_why_becca] his mother doesn't know yet.
+- [s06] **Jack read Gina all four Twilight books on the porch the summer after Danny went in** (she already knew where Danny is).
+- [s07–s09] per path: [concede] "He should have asked her"; [press] Jack's point is about Edward only. Jack heard her play properly (she let him). [bench] per `e16_bench`.
+- [s11] [sign/concede] Jack signed the Declaration; [press] he wouldn't promise a website. Jack brought Gloria's soup.
+- **She does NOT learn:** anything about the party, Skye, Ellery Beach, the kiss, or that Jack was out all night (Laney's "foghorn" report goes only one way); what Margot
+  said on the stairs; that Jack heard her through the door.
+
+#### Skye
+- [s17–s24] **Jack's whole name ("Jack Costigan")**; Irish and Calabrese, "Catholic twice"; philosophy; Youngstown (his 330 number: "Ohio"); he ended something Wednesday
+  with "the nicest person I've ever met"; [writer] a friend who went as Flannery O'Connor for Halloween, "in italics"; [friend] per `e16_friend` (control: "a friend";
+  candor: "she's seeing somebody"); his father — Lordstown, Local 1112, laid off since June; [dad candor] the Monday-before-last night in the employee lot; his scar per
+  `e16_scar` (pacific / husband / "a fight, a long time ago"); St. Michael (confirmation saint) and the prayer's first line; that he expects an answer [faith candor];
+  he has no TV; he came with "my roommate" [control] — **never the roommate's name**; where he lives (Delgado, the lot past the Lagoon — he told her in s24).
+- **She does NOT learn from Jack:** Theo's name, Danny, Lena's name, Becca's name. She never saw THEO on his phone (the 2:50 text came while she was at the car).
+  🔒 She already knows his face from Sol's footage and that he arrived with Theo; she says nothing.
+
+#### Others
+- **Theo** [s02] watched Jack Thursday; [s13] cancelled the Harbor Inn (with Laney's look); [s15] lost Jack in three minutes; **never saw Skye.** [s20a] (🔒 the long coat on
+  the upper deck.) [s22 | control] "got a ride. dont wait" (1:04 a.m.); [reckless] no word. Searched till 3, home 4:10. [s25] Jack came in at 6:05 wet and humming; per
+  `e16_where` — control "Walked home" (a lie; `jack_lied_theo_skye`) / candor "argued about a book" / wit, nothing. [s28] to Laney: "No girls… I would have seen." Baffled,
+  then suspicious — **he has no name, no face, no car.** [s26 | candor] "I was going to ask somebody else." "I know."
+- **Laney** [s02] sees through it; [s12] said something to Lena behind 217's door (Jack hears only Lena's answer); [s26] knows Jack was out all night, came in wet, is humming,
+  and said "Tell her to eat the soup." She tells Lena none of it on the page (LIVE RISK: Theo → Laney → Lena stays unstated).
+- **Margot** [s10] the Rialto; [s11] Lena's and (per path) Jack's signatures; [s12] her verdict on Julian, to Jack alone.
+- **Julian** [s09j] Jack was in the basement with Lena; [s10a | chorus] told Jack about the second chorus; [s11] Jack walked home from the Rialto; Jack brought Gloria's soup.
+- **Kevin, Doug** [s10] the Rialto; Kevin offered Jack a ride and let him walk.
+- **Gloria** [s03] sent Jack home Thursday ("Is it the apple?"); [s11] her soup "for the pecan."
+- **Frank** [s27 | rose/okay] Theo is coming for Thanksgiving ("The rich one?"). **Maria** (via Frank) knows the bus; **still nothing about the breakup** (E17).
+- **Gina** [s11] Jack agreed: Jacob is a dog.
+- **Becca** [s01b] gave Jack (and [her yes] Lena) the peace; nothing new about Jack.
+- **Wyatt Halloran** never met Jack by name ("Welcome, man" [drink reckless]).
+- **LIVE RISKS carried:** Theo must not learn Skye's name or that Jack met anyone (suspicion only, until Christmas); Skye must not hear Theo's name from Jack or see it on his
+  phone; Lena learns nothing of the night; "Cassidy" stays unglossed; Becca and Gina still never tell Lena about the invitation (through S2E10); Theo → Laney → Lena stays
+  unstated.
