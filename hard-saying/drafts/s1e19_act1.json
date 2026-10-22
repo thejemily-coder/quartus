@@ -1,0 +1,759 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "MONDAY · 7:40 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "The blind lets the first gray into 412 in slats and keeps the rest of it out. Jack has had five hours. The flight into Santa Barbara came in forty minutes late, Theo drove the SL up out of long-term parking with the top up, and at ten past one they carried the Giant Eagle bag up four flights by a handle each, like two men with a stretcher. Theo put COOKIES — DON’T on the top shelf of his closet, behind a shoebox, and went to bed in his coat.",
+    "Some things on Theo’s side are new since Thanksgiving. Over his desk, taped at all four corners, two crayon princes: yellow hair, a crown, a red car, and on the second one a coat to the knees in orange and brown. Tucked into the frame of his mirror, folded small enough to hide under a thumb, a twenty.",
+    "Theo is up already, at the MacBook in the navy robe, with a gas-station coffee going cold by the trackpad, and he is reading his News Feed aloud to the room. He reads it the way Father Osei reads the intentions at the twelve-ten — unhurried, with a little rest after each one for the people to answer — in a voice of perfect and terrible innocence.",
+    "“*Skye Callender,*” Theo reads, “*likes Jack Costigan’s profile picture.*”",
+    "Jack’s profile picture is the one Gina took on the porch on Glenwood in August, the week before he and his father drove out: the gray Mooney hoodie, squinting, because she said *one more* eleven times. He lies still under the blanket and studies the ceiling tiles. The ceiling tiles have nothing to offer him.",
+    "“*Jack Costigan likes Skye Callender’s photo.*” A sip of the coffee. “*Jack Costigan likes Skye Callender’s* other *photo.*” Another sip. “*Kevin Tran is studying. Do not text. This means you, Doug.*” A pause. “*Doug Pruitt commented: k.*” Theo lets that one go by in respectful silence. Then: “*Skye Callender likes Jack Costigan’s note.*”",
+    "Theo stops. He turns the desk chair all the way around on its casters. “You have *notes*?”",
+    "He has one. It’s from February, a snow day, Gina standing behind the desk chair at the basement Dell with her arms folded until he got to twenty-five. Theo has already swiveled back, clicked, and tipped the MacBook’s screen toward Jack’s bed so the room can share.",
+    {
+     "type": "fb",
+     "name": "Jack Costigan",
+     "text": "25 Random Things About Me",
+     "meta": "Notes · February 3 at 4:12pm · Skye Callender likes this."
+    },
+    "“Number four,” Theo reads. “*My sister is making me do this.*” He scrolls. “Number nine. *I have read the Summa in its entirety twice and I’m not sorry.*” He scrolls again, and stops, and sits back with the coffee on his knee.",
+    {
+     "if": "e17_theo==\"wit\"",
+     "text": "“Costigan,” he says gently, to the screen. “Do you *run* now? Or do you just *like*?”",
+     "else": "“Costigan,” he says gently, to the screen. “Do you *like* things now?”"
+    },
+    {
+     "if": "e18_cannoli==\"candor\"",
+     "text": "He scrolls on. “You were going to say something on Sunday,” he adds. “Over the cannoli.” He keeps scrolling, and he leaves no room in it for an answer."
+    },
+    {
+     "if": "e18_cannoli==\"wit\"",
+     "text": "He scrolls on. “How’s Nonna’s guy?”"
+    },
+    "On the desk by Jack’s head the RAZR buzzes once against the wood. By the second buzz it’s in the pocket of the hoodie he slept in, with his hand in there on top of it.",
+    "Theo doesn’t look up from the MacBook. “Fast,” he says, and scrolls."
+   ],
+   "choices": [
+    {
+     "text": "Say nothing. Get dressed.",
+     "tag": "Restraint",
+     "set": {
+      "e19_feed": "restraint",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "Jack gets up. Jeans off the chair, a flannel off the floor, the towel off the hook on the door, and the phone from the hoodie to the jeans without once coming out into the light.",
+      "As he pulls the door to behind him he hears Theo read one more, in the same voice, to the room and the two princes: “*Skye Callender likes this.*”"
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“I like lots of things. I liked your grace.”",
+     "tag": "Wit",
+     "set": {
+      "e19_feed": "wit",
+      "trait.wit": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "response": [
+      "“I like lots of things,” Jack says. “I liked your grace.”",
+      "“That was a one-time engagement.” Theo scrolls. The tops of his ears have gone pink, and he goes on scrolling, with great attention, until Jack has taken his towel and gone down the hall."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“You know her?”",
+     "tag": "Candor",
+     "set": {
+      "e19_feed": "candor",
+      "trait.candor": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "response": [
+      "“You know her?”",
+      "Theo doesn’t turn around. “I know eleven hundred people, Costigan. I know a man in Ojai who sells hats for horses. Little straw ones, with holes cut for the ears. He has a waiting list.” He clicks on to the next story in the Feed — a girl from his high school, and her dachshund in a Santa hat — and likes it."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "MONDAY · 5:25 PM · SULLY’S, MISSION STREET",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "Sully’s is a noise before it’s a room. The *Monday Night Football* music is coming out of every set at once — the big screen over the bar, the tube in the corner, the one over the dartboard — and under it forty people are talking at the top of their lungs about a football team most of them couldn’t have found on a map in August. It’s full on a Monday because Lena told the Newman Center, and the Newman Center came: Peter and Kenzie in a booth with a pitcher of root beer, two of the Veritas missionaries, and Joey Abruzzo, who is a Giants fan from Staten Island, in a borrowed Saints cap he keeps taking off to argue with.",
+    "Lena has the chair under the brass bell, in black and gold, and her voice is back. A week ago it was a gravel road. Tonight it’s all of New Orleans again, and she’s spending it on a referee.",
+    "Julian is on the stool beside her in a cardigan, with a pencil behind his ear and a ginger ale. Under the ginger ale there’s a bar napkin with five lines ruled across it in ballpoint, very straight, and some marks sitting on the lines. Every so often he slides it out of the wet ring, looks at it, and puts it back.",
+    "Kevin keeps score on a napkin of his own with a golf pencil, two neat columns, and up the margin, in a box, the day’s other news: WEIS — FIRED. Laney, in a Pi Lam sweatshirt with her hair up in a clip, gives the screen her pageant wave when the Saints come out of the tunnel — wrist, wrist, elbow, elbow — and then sits down and starts on Lena’s fries.",
+    "“Theodore doesn’t do Mondays,” she reports. “He said it like it was a diagnosis.”",
+    "“He told me Mondays are a social construct,” Kevin says, without looking up from the napkin. “I told him so is orgo. He said *exactly*.”",
+    "Then Brees gets the ball, and keeps getting it. Every time the Saints score, the owner unties the rope from its cleat and Lena goes up on the rung of her chair and rings the bell until the glasses on the shelf behind the bar start answering it.",
+    "On the third touchdown she takes the rope from the owner, turns around on the rung, and holds it down to Julian.",
+    "He looks at it. Then he stands and takes it and rings it carefully, the way you’d ring a church bell — three strokes, each one a count behind where the room wants it. Lena laughs at him, at the bell, at the whole bar, and does the WHO DAT for both of them. Jack, across the table, watches the rope go back to its cleat.",
+    "When the Patriots get the ball back she points every bit of the voice at their sideline. “Look at him,” she tells Julian. “That man dresses like he’s been asked to leave a bowling alley. That man cut the sleeves off his own sweatshirt on purpose, in front of God and the network.”",
+    "Julian looks. “It’s a hoodie.”",
+    "“It’s a *cry for help*, cher.” She takes a fry back from Laney without looking. “And don’t start me on the quarterback. He married a supermodel in February and he still looks *surprised* about it.”",
+    "Julian writes something on the napkin that isn’t football.",
+    "Halftime empties the place toward the bathrooms and fills it back up. Lena leans across the table to him while the band plays. “You’re quiet. You’re never quiet at halftime. You do the Browns’ whole season at halftime like it’s the Stations of the Cross.”",
+    "“They lost to the Bengals. Sixteen to seven.”",
+    "“And did you do the Stations?”",
+    "“In the garage. With my father. He did the fourteenth by himself.”",
+    "She laughs at him and turns back for the second half. In the third quarter the game stops being a contest and turns into a parade, and Joey starts a chant nobody else knows the words to.",
+    "At two minutes past seven the RAZR goes against his thigh. He opens it under the table, below the edge, and tips the screen down toward his knee.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "harbor. the far side. the boat ramp. 845. i have two hours",
+     "time": "7:02 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "bring nothing. not even a book",
+     "time": "7:03 PM"
+    },
+    "Lena has turned from the game. She isn’t looking at the phone — she can’t see the phone — but at the angle of it, at his wrist bent to keep it there under the table’s edge. She looks at that for about as long as a Patriots huddle. Then the Patriots break the huddle, and she turns back to the screen.",
+    "Jack shuts the RAZR against his leg and puts it away and drinks some of his pop.",
+    "With two minutes left in the fourth quarter, the game long decided and the bar at full roar, he gets up and takes the Carhartt off the back of his chair.",
+    "Lena keeps her eyes on the screen. “You don’t work Mondays, Youngstown.”"
+   ],
+   "choices": [
+    {
+     "text": "“Gloria’s short. She called.”",
+     "tag": "Lie",
+     "cue": "Lena noticed.",
+     "set": {
+      "e19_exit": "control",
+      "soul.honesty": "-1",
+      "rel.lena.friction": "+1"
+     },
+     "key": "At Sully’s, at the two-minute warning, you told Lena Gloria had called you in. She hadn’t.",
+     "response": [
+      "“Gloria’s short,” Jack says, shrugging into the jacket. “She called.”",
+      "Lena looks up at him from the chair, once, for the length of a breath. Then the screen. “Tell Gloria eleven and oh.”",
+      "Julian half-stands off his stool to let him by, napkin and all. “You’re leaving? They’re about to be eleven and oh.” At the end of the table Kevin, without looking up, writes in neat capitals under the score: COSTIGAN — LEFT 4Q, 2:00. Then Jack is out the door into the cold on Mission Street, with the bell going behind him and Lena watching the game."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“I’ve got somewhere to be.”",
+     "tag": "Candor",
+     "set": {
+      "e19_exit": "candor",
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "At Sully’s you left at the two-minute warning and told Lena only that you had somewhere to be.",
+     "response": [
+      "“I’ve got somewhere to be.”",
+      "“At the two-minute warning,” Lena says, to Drew Brees, “of an eleven-and-oh game.”",
+      "“Yeah.”",
+      "The bar goes up around them about something on a replay. “…Go, then.”",
+      "Julian half-stands off his stool to let him by, napkin and all. “You’re leaving? They’re about to be eleven and oh.” At the end of the table Kevin, without looking up, writes in neat capitals under the score: COSTIGAN — LEFT 4Q, 2:00. Then Jack is out the door into the cold on Mission Street, with the bell going behind him and Lena watching the game."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“It’s a blowout. I’ve seen how it ends.”",
+     "tag": "Wit",
+     "set": {
+      "e19_exit": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "At Sully’s you left an eleven-and-oh game at the two-minute warning. “I’ve seen how it ends.”",
+     "response": [
+      "“It’s a blowout,” Jack says. “I’ve seen how it ends.”",
+      "“That is *exactly* the part you stay for.” She turns back to the screen and puts her fist up for a third-down stop that doesn’t need her.",
+      "Julian half-stands off his stool to let him by, napkin and all. “You’re leaving? They’re about to be eleven and oh.” At the end of the table Kevin, without looking up, writes in neat capitals under the score: COSTIGAN — LEFT 4Q, 2:00. Then Jack is out the door into the cold on Mission Street, with the bell going behind him and Lena watching the game."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s04": {
+   "slug": "TUESDAY · 4:55 PM · DELGADO HALL, THE FISHBOWL",
+   "body": [
+    "The sun went down behind the Grove ten minutes ago, and the Lagoon outside the Fishbowl glass has kept what was left of it: copper on the near water, slate at the far side. In the corner the television has West Point — a hall full of cadets in gray, row after row, waiting on a President at eight o’clock Eastern. Along the bottom of the screen CNN has had the number since lunch.",
+    "Yusuf came over from Cabrillo for it. “The Abrahamic bloc watches together,” he said in the door, and took the end of the couch. Margot has the armchair and a legal pad. Kevin is on the floor with his back to the couch and the orgo text open on his knees. Lena is on the couch with Julian beside her; he walked over from the UCen with a tea for her, honey in it, the tag hanging over the side of the cup on its string. Laney is painting her nails at the table in the back, uninterested on principle. Jack is standing behind the couch in the Carhartt, with an hour and change before the 6:20 bus and a shift at the end of it.",
+    "It starts before the President does, with the number.",
+    "“Thirty thousand,” Kevin reads off the crawl.",
+    "“Then send thirty thousand,” Jack says. “If you’re going to go, go. You don’t walk off a job half done.” It’s his father’s sentence, from the garage. “Augustine wrote a Roman general a letter about it. *We don’t look for peace so we can make war. We make war so we can have peace.* Be a peacemaker, he says, even while you’re fighting.”",
+    "Lena turns around on the couch to look at him over the back of it. “Augustine also says the intention has to be right, and you can’t see a man’s intention on CNN. And Dorothy Day would be standing outside that gate tonight with a sign,” she says, “and she’d be right, and nobody would listen to her, and she’d go back tomorrow and stand there again.”",
+    "“And the girls in Kandahar who want to go to school,” Jack says. “Dorothy Day hands them a sign?”",
+    "“Dorothy Day hands them *soup*, Costigan, and then she sits down and eats it with them, and that’s more than a Predator drone has ever done for anybody’s daughter.”",
+    "“Y’all are going to make me miss the cadets,” Laney says from the back, blowing on a thumbnail. “I came for the cadets.”",
+    "Julian has been listening with his whole face. “Would you go?” he asks Jack. It isn’t a dare; he wants to know. “If you think somebody should.”",
+    "“If they asked.”",
+    "“They’re asking,” says Margot. “That’s what this is.”",
+    "She doesn’t look up from the pad. “Thirty thousand nineteen-year-olds,” “she says, “from towns like yours, Costigan. So that a man in a good suit can say a date with a straight face.”",
+    "“Towns like mine send them either way.”",
+    "“Yes,” says Margot. “That’s my point.”",
+    "Yusuf has been sitting at the end of the couch with his hands between his knees, watching the cadets. “You left the first time,” he says. He doesn’t look at any of them. “My father watched you leave. If you’re going to come, stay.”",
+    "The Fishbowl has nothing to put after that. Margot looks at him. “I don’t have an answer for that,” she says, and puts the cap back on her pen. At the back table Laney’s brush has stopped over her thumbnail. It stays stopped for exactly that one sentence, and goes on.",
+    "At a minute past five the President comes out to the lectern, and the room goes quiet on its own. Kevin reaches up behind him for the remote and turns it up two bars. It takes some time to get there — the towers, the eight years, the families — and then it comes, level, with the cadets not moving: “I have determined that it is in our vital national interest to send an additional thirty thousand U.S. troops to Afghanistan.” And the next sentence, right on its heels: “After eighteen months, our troops will begin to come home.”",
+    "“That’s a lot of beds somewhere,” Kevin says quietly, from the floor.",
+    "Jack thinks of his father in the garage, who would say *good* to the first sentence and nothing at all to the second. Lena has the tea in her lap with both hands around it. Yusuf, at the end of the couch, says one word under his breath that Jack doesn’t know.",
+    "On the coffee table, beside Lena’s tea, Yusuf’s phone lights up and starts walking on the wood. FREMONT — HOME.",
+    "Yusuf looks at it for one ring, with the President still talking over it. Then he picks it up and goes out into the hall with it, and the Fishbowl door drifts shut behind him on the President."
+   ],
+   "choices": [
+    {
+     "text": "Go after him.",
+     "tag": "Go",
+     "cue": "Yusuf will remember that.",
+     "set": {
+      "e19_yusuf": "go",
+      "soul.grace": "+1"
+     },
+     "key": "When Yusuf’s phone lit up FREMONT — HOME during the speech, you went after him.",
+     "goto": "s04a"
+    },
+    {
+     "text": "Let him have the hall.",
+     "tag": "Stay",
+     "set": {
+      "e19_yusuf": "stay",
+      "soul.restraint": "+1"
+     },
+     "key": "When Yusuf’s phone lit up during the speech, you let him have the hall. Lena went.",
+     "goto": "s04b"
+    }
+   ]
+  },
+  "s04a": {
+   "slug": "TUESDAY · 5:20 PM · DELGADO HALL, EAST STAIRWELL",
+   "set": {
+    "knows_tariq": true,
+    "rel.lena.warmth": "+1"
+   },
+   "body": [
+    "Jack finds him by his voice. It comes down the east stairwell from the landing between three and four, low and fast, in a language Jack doesn’t have a word of, with the name *Tariq* in it over and over, like a handhold.",
+    "Yusuf is at the landing window with the phone at his ear and his other hand flat on the glass, where the window has been pushed out its six inches and the cold is coming in under his palm. He sees Jack come round the turn below. Jack sits down on the stairs a flight under him, back to the wall, where Yusuf can see him and doesn’t have to talk to him. He has the whole Carhartt on and his shift in an hour, and he lets the 6:20 go out of his head.",
+    "It goes on a long time. Once Yusuf laughs, short, at something his mother says, and puts his forehead against the glass. The window goes from blue to black. Up on four somebody’s door opens on the President and shuts again.",
+    "When it’s over Yusuf comes down and sits two stairs above him, the phone held in both hands, and for a while he only sits, and Jack leaves him to it.",
+    "“Tariq,” he says. “An IED. Helmand. He’s alive.”",
+    "“Where is he?”",
+    "“They flew him to Germany. Landstuhl.” He says it carefully, a word he learned an hour ago. “My mother says they’ll fly him home.” He turns the phone over. “My father’s still at work. NUMMI doesn’t stop for my brother.”",
+    "He looks at the dark window. “He had a ticket for Christmas. He sent my mother a picture of the ticket. She has it on the refrigerator.” The short laugh again. “Well. He’s coming home for Christmas.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "yusuf",
+     "title": "Yusuf (PHIL 9H)",
+     "text": "Fremont. Engineer. Fasting for Ramadan through a ninety-minute seminar and funnier than all of us. Broke the fast with his people on Mission Street and fed me till I couldn’t stand. Father on the NUMMI line since ’85. Brother Tariq interprets for the Army in Helmand and calls on Sundays. The day of Fort Hood I asked if Tariq was okay. He’s not in Texas. Friday morning he called: he’s fine, and he said don’t watch the news. Yusuf watched the news. At Hale’s table a man asked him what Muslims think. He’d like one week where nobody asks. His nineteenth, at Bastille, with a candle in a scone. He watched the memorial Tuesday. Standing up. I didn’t ask. The night of the West Point speech: ‘You left the first time. My father watched you leave. If you’re going to come, stay.’ His brother Tariq — an IED in Helmand. Alive. Germany. I went after him. We sat on the east stairs."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Can I pray with you?”",
+     "tag": "Grace",
+     "set": {
+      "e19_pray": "grace",
+      "soul.grace": "+1",
+      "resolve.jack": "+1"
+     },
+     "response": [
+      "“Can I pray with you?”",
+      "Yusuf looks at him. “Pray however you pray,” he says. “I’m going to.”",
+      "So they do it side by side on the east stairs, two ways at once: Yusuf with his palms turned up on his knees and his lips moving, Jack with his elbows on his knees and a Hail Mary going, and then another, for a man in a bed in Germany he has never met. Above them the landing window has gone all the way dark.",
+      "Feet on the flight below: Lena, with Yusuf’s gray fleece over her arm, the one he left on the couch. She doesn’t come up. She holds it up over the rail, and Jack reaches down and takes it and passes it up, and Yusuf puts it on. “Kevin’s taking you to the airport at six,” Lena tells him. “First flight north. He already looked it up.”",
+      "Jack makes the 6:20 with a minute in hand and rides it into town with his head against the cold window."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "Sit with him. Say nothing.",
+     "tag": "Sincerity",
+     "set": {
+      "e19_pray": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Jack sits. Yusuf sits. The stairwell light hums. Somebody comes up past them with a laundry basket on her hip and says *sorry* for no reason and keeps going.",
+      "Then Yusuf says, “Did you know a Catholic potluck has never run out of food?” — because he has to say something — and Jack laughs, because he has to.",
+      "Feet on the flight below: Lena, with Yusuf’s gray fleece over her arm, the one he left on the couch. She doesn’t come up. She holds it up over the rail, and Jack reaches down and takes it and passes it up, and Yusuf puts it on. “Kevin’s taking you to the airport at six,” Lena tells him. “First flight north. He already looked it up.”",
+      "Jack makes the 6:20 with a minute in hand and rides it into town with his head against the cold window."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“Kevin’ll take you to the airport. I’ll ask him.”",
+     "tag": "Control",
+     "set": {
+      "e19_pray": "control",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Kevin’ll take you to the airport,” Jack says. “Tonight, tomorrow, whenever there’s a seat. I’ll ask him.”",
+      "Yusuf turns that over. “Factor of safety,” he says, and almost smiles.",
+      "Feet on the flight below: Lena, with Yusuf’s gray fleece over her arm, the one he left on the couch. She doesn’t come up. She holds it up over the rail, and Jack reaches down and takes it and passes it up, and Yusuf puts it on. “Kevin says yes,” Lena says. “I asked him too. He’s very asked. Six o’clock, first flight north.”",
+      "Jack makes the 6:20 with a minute in hand and rides it into town with his head against the cold window."
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s04b": {
+   "slug": "TUESDAY · 5:20 PM · DELGADO HALL, THE FISHBOWL",
+   "set": {
+    "knows_tariq": true
+   },
+   "body": [
+    "Lena is up off the couch before the door has finished closing, with Yusuf’s gray fleece off the arm of it. Julian half-rises to come with her. She puts a hand on his shoulder going past, and he sits back down.",
+    "On the screen the President goes on. Margot gets up, takes the remote from Kevin without asking anybody, and turns the sound down until the cadets are only gray. At the back table Laney caps the bottle and sits with her wet nails spread out on the wood in front of her. Julian holds Lena’s tea in both hands, keeping it warm for her, and looks at the door. “Should somebody —”",
+    "“Somebody did,” says Kevin.",
+    "Jack stands behind the couch in his jacket and watches a man talk about the rest of the war with no sound coming out. Laney comes up from the back table and sits on the arm of the couch where Lena was, holding her wet nails up in front of her, and has nothing to say about anything. Out on the Lagoon the last of the copper goes.",
+    "Lena comes back at twenty to six without the fleece. She sits down by Julian and takes the tea back from him, and Julian moves his knee over against hers and leaves it there. Margot turns the sound back up, one bar.",
+    "“His brother,” she says, to all of them. “An IED. He’s alive. They flew him to Germany.” She turns the cup a little in her hands. “His daddy’s still at work. He said the plant doesn’t stop for his brother.”",
+    "Kevin shuts the orgo book on his finger.",
+    "At quarter to six Jack has to go. Lena catches him at the Fishbowl door. “He didn’t want anybody at first,” she says. “So I sat on the stairs a flight down till he did.” She tucks her hair back. “Kevin’s taking him to the airport at six in the morning,” she says. “First flight north.” She tips her head at the phone in his hand. “Text him something, Jack.”",
+    "He opens it on the Anacapa path, under the eucalyptus, walking."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "yusuf",
+     "title": "Yusuf (PHIL 9H)",
+     "text": "Fremont. Engineer. Fasting for Ramadan through a ninety-minute seminar and funnier than all of us. Broke the fast with his people on Mission Street and fed me till I couldn’t stand. Father on the NUMMI line since ’85. Brother Tariq interprets for the Army in Helmand and calls on Sundays. The day of Fort Hood I asked if Tariq was okay. He’s not in Texas. Friday morning he called: he’s fine, and he said don’t watch the news. Yusuf watched the news. At Hale’s table a man asked him what Muslims think. He’d like one week where nobody asks. His nineteenth, at Bastille, with a candle in a scone. He watched the memorial Tuesday. Standing up. I didn’t ask. The night of the West Point speech: ‘You left the first time. My father watched you leave. If you’re going to come, stay.’ His brother Tariq — an IED in Helmand. Alive. Germany. Lena went after him."
+    }
+   ],
+   "choices": [
+    {
+     "text": "*praying for tariq. for all of you*",
+     "tag": "Sincerity",
+     "set": {
+      "e19_sms": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "praying for tariq. for all of you",
+       "time": "5:49 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Yusuf",
+       "text": "Thank you. Inshallah.",
+       "time": "5:51 PM"
+      },
+      "Jack reads it under the streetlight at the bus stop, and puts the phone in his pocket, and keeps his hand on it till the 6:20 comes."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "*should have come after you. sorry. praying*",
+     "tag": "Candor",
+     "set": {
+      "e19_sms": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "should have come after you. sorry. praying",
+       "time": "5:49 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Yusuf",
+       "text": "You did fine. Lena came.",
+       "time": "5:52 PM"
+      },
+      "Jack reads it under the streetlight at the bus stop, and puts the phone in his pocket, and keeps his hand on it till the 6:20 comes."
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "*kevin at 6. anything you need from here, say*",
+     "tag": "Control",
+     "set": {
+      "e19_sms": "control",
+      "trait.control": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "kevin at 6. anything you need from here, say",
+       "time": "5:49 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Yusuf",
+       "text": "Factor of safety.",
+       "time": "5:51 PM"
+      },
+      "Jack reads it under the streetlight at the bus stop, and puts the phone in his pocket, and keeps his hand on it till the 6:20 comes."
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s06": {
+   "slug": "WEDNESDAY · 1:00 PM · HOLLIS HALL, ROOM 302",
+   "set": {
+    "knows_hale_oral": true
+   },
+   "body": [
+    "Yusuf’s chair is the third one down on the window side, and by the time Hale comes in, Caleb Hargrove has put his messenger bag on it.",
+    "Hale doesn’t sit. He sets down his coffee and says, before anything else, “Mr. Noorzai has gone home. His brother. We will keep his chair, and I’ll thank you not to put your bags on it.”",
+    "Caleb takes his bag off it.",
+    "Then Hale lifts a stack out of his satchel — the November promise papers, collected at the door, each with somebody else’s ink down its margins — and reads one aloud from every pair, as is his cruelty. Caleb’s margin on somebody else’s paper turns out to be *Cf. Hale,* Consolations, *p. 212*, and Hale reads it out, page number and all. “Mr. Hargrove. I don’t answer devotion, and I won’t be cited by it either.”",
+    {
+     "if": "e17_margin==\"wit\"",
+     "text": "He gets to Lena’s eight pages and turns to the last one. “*Persuasive. Unfortunately also correct.*” He reads it in his own voice, which is the voice Jack wrote it in. “My own voice,” Hale says. “I’ve never been so flattered or so threatened.”"
+    },
+    "Then Jack’s title page, with the red across it. “*Best thing you’ve written for him.* For me, one assumes. *You don’t believe one sentence of it. He’ll know.*” He glances down the table. “He does. *Neither do I.*” He lowers the page. “Neither do you what, Miss Broussard?”",
+    "“Believe it,” says Lena.",
+    "“Splendid. A seminar of unbelievers.”",
+    "He puts the stack away. “Your final,” he says, “will be oral. Wednesday the sixteenth, in this room. Two of you at a time, back to back, twenty minutes each. Each of you will defend your opponent’s best argument.” He picks up his coffee again. “I will be the opponent.”",
+    "Somebody at the far end says, “Twenty minutes *each*?” and Hale says, “I find I have the time.”",
+    "Down the table eleven people look at whoever he paired them with in September. Lena looks across at Jack, and finds him already looking.",
+    "At the door Hale stops him with two fingers on the sleeve of the Carhartt and looks him over — the stubble, the eyes, the paperback in the back pocket that hasn’t been opened since Ohio. “Mr. Costigan,” he says. “You look like Augustine before the garden.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair."
+    }
+   ],
+   "next": "s07"
+  },
+  "s07": {
+   "slug": "THURSDAY · 11:50 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "The RAZR goes off under his pillow at ten to twelve: the alarm he set last night for the twelve-ten, St. Francis Xavier. His body has an opinion about the week so far, and it states it at length, from the neck down. The outer screen on the phone shows the time and the battery and nothing else. Through the blind it’s bright, cold noon, and somebody down the hall is microwaving popcorn for lunch. Across the room Theo’s bed is empty and made with hospital corners. Theo can’t do a hospital corner."
+   ],
+   "choices": [
+    {
+     "text": "Get up. Go.",
+     "tag": "Grace",
+     "set": {
+      "e19_mass": "grace",
+      "soul.grace": "+1"
+     },
+     "goto": "s07a"
+    },
+    {
+     "text": "Ten more minutes.",
+     "tag": "Drift",
+     "set": {
+      "e19_mass": "drift",
+      "soul.grace": "-1"
+     },
+     "goto": "s07b"
+    }
+   ]
+  },
+  "s07a": {
+   "slug": "THURSDAY · 12:10 PM · ST. BRENDAN’S → THE STEPS",
+   "set": {
+    "resolve.jack": "+1",
+    "knows_advent_party": true
+   },
+   "body": [
+    "Noon comes through the blue glass and falls in panes across the floor under the ribs of the overturned hull, and Father Osei stands in the middle of it in white, for Francis Xavier.",
+    "By the ambo the Advent wreath has its first violet candle going. Kevin is in the fourth pew on the right, with a Bible on the end of it holding the seat. He moves the Bible when Jack genuflects. “Third day,” he whispers. “The Bible was lonely.”",
+    "Across the aisle Becca kneels beside Joey Abruzzo, her braid down the back of her barn jacket.",
+    "Osei gives the saint one sentence before the Collect, and then a second. “Francis Xavier died on an island within sight of China, waiting for a boat that didn’t come.” He looks out at the twenty of them in the blue. “Most of us die within sight of what we came for. He went anyway.”",
+    "At the intentions Jack puts Tariq in, under his breath, and Yusuf’s mother, and Yusuf on his plane. Going up the step to the altar Osei favors the bad leg a little.",
+    "After the dismissal Kevin slides the Bible back into its rack. “Tomorrow’s First Friday,” he says. “The Bible has expectations.” He goes off to orgo at a jog.",
+    "In the vestibule on the way out the bulletin board has a new sheet, thumbtacked dead center over the lost-and-found box, in three of Mrs. Fitch’s fonts:",
+    {
+     "type": "doc",
+     "title": "Vestibule bulletin board",
+     "text": "ST. BRENDAN’S ADVENT PARTY\nFRIDAY, DECEMBER 11 · 7 P.M. · NEWMAN HOUSE\nWHITE ELEPHANT ($10 LIMIT)\nCAROLS WITH THE CHOIR (ALL VOICES WELCOME) · PUNCH\nFR. OSEI REQUESTS NO MISTLETOE."
+    },
+    "Becca is at the bottom of the steps with her clipboard on her hip, waiting for him. Her status came down on Thanksgiving, by her own hand, after she told her mother at the table, and she hasn’t said a word about it since, and he isn’t going to be the one.",
+    "“You came to the twelve-ten,” she says.",
+    "“Kevin’s Bible was lonely.”",
+    "“I know. It told me.” She hugs the clipboard. “How was Theo? In Ohio?”",
+    "“He said grace at the table.”",
+    "Becca’s face opens. “He *did*?”",
+    "“My grandmother’s praying for him now. She told him so.”",
+    "“Well, *good*,” Becca says, and that seems to settle something for her. “Did my saint get there?”",
+    "“She kept it,” Jack says. “In her pocketbook.”",
+    "“How’s her wrist?”",
+    "“In a cast to the elbow. She crimped a pie with the other hand.”",
+    "“Good,” Becca says. “You can do a lot one-handed if you’re mad enough.”",
+    "Becca nods. “That’s where the important ones go.” She looks down at the clipboard and back up at him. “Mom says you’re still on the Christmas card list. Daisy’s in the picture this year — all of us on the porch in our coats, and Daisy in front, because she’s the only one who holds still.” A breath. “Is that okay?”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey. She asked how I’m getting home. Greyhound. She frowned. Her mother sent a box: socks, cookies, two jars of huckleberry — JACK, and FOR THE CATHOLIC ROOMMATE. She offered me Daisy’s money. Six hundred and twelve dollars. It’s there, she says. Daisy doesn’t mind. Saturday, Ohio State in overtime: she gave me a photograph of the elephant seals in a frame she painted, every seal labeled with what it weighs. She’ll call during her dad’s grace on Thanksgiving so I can hear it. She wants to watch Michigan here, with me. ‘Someday I want to see your house. Is that okay to say?’ Ma wrote her. Three days after Christmas. Pittsburgh’s cheaper than Cleveland. She looked. Wednesday, in Eli’s truck, I told her. She said she did everything right, and she did. ‘It just isn’t the thing, is it.’ She asked me to leave it up on Facebook till she’s told her mom at the table. Thursday at two she texted. Still praying for me — not a girlfriend thing, she says. At the twelve-ten she turned around across the aisle at the sign of peace and held out her hand. Then she held it out to Lena. At the airport, a week to the day: St. Raphael, for Nonna. Father Osei read the name at the twelve-ten, and she heard. Thanksgiving: told her mom at the table. Texted me first — happy Thanksgiving, praying for Nonna, taking it down now. Then she did. December 3rd, Xavier’s day, on the steps after the twelve-ten: asked if her saint got there. Pocketbook — where the important ones go. I’m still on the Christmas card list. Daisy’s in the picture."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“I’d like that.”",
+     "tag": "Sincerity",
+     "set": {
+      "e19_becca": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.becca.warmth": "+1"
+     },
+     "response": [
+      "“I’d like that,” Jack says.",
+      "“Good. She’s wearing a bow.”",
+      "Becca tucks the clipboard under her arm and looks up at him properly. “You look like you haven’t slept since Ohio.” It isn’t a question, and she doesn’t stay for an answer. It’s Thursday; she heads off down Ocean Road toward the Marine Lab and the touch tank."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "“You don’t have to.”",
+     "tag": "Restraint",
+     "set": {
+      "e19_becca": "restraint",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "“You don’t have to,” Jack says.",
+      "“I know,” Becca says. “I want to.”",
+      "She tucks the clipboard under her arm and looks up at him properly. “You look like you haven’t slept since Ohio.” It isn’t a question, and she doesn’t stay for an answer. It’s Thursday; she heads off down Ocean Road toward the Marine Lab and the touch tank."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "“Is Daisy wearing a hat?”",
+     "tag": "Wit",
+     "set": {
+      "e19_becca": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Is Daisy wearing a hat?”",
+      "“She’s a *heifer*, Jack.” And Becca laughs, all at once, the way she does when a joke gets past her guard.",
+      "She tucks the clipboard under her arm and looks up at him properly. “You look like you haven’t slept since Ohio.” It isn’t a question, and she doesn’t stay for an answer. It’s Thursday; she heads off down Ocean Road toward the Marine Lab and the touch tank."
+     ],
+     "goto": "s08"
+    }
+   ]
+  },
+  "s07b": {
+   "slug": "THURSDAY · 12:40 PM · DELGADO HALL, ROOM 412",
+   "set": {
+    "knows_advent_party": true
+   },
+   "body": [
+    "Ten more minutes is fifty. He wakes at twenty to one with the pillowcase printed into his cheek and the RAZR under it holding two texts.",
+    {
+     "type": "sms",
+     "from": "Kevin",
+     "text": "Seat saved. Third day. The Bible is concerned. -K",
+     "time": "12:22 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "my mother booked me a lunch about my future. theres a man here who says brand like its a prayer",
+     "time": "12:31 PM"
+    },
+    "Theo’s bed across the room is still made, corners and all. Jack lies there with the phone open over his face, Kevin’s on top and hers under it. Across Ocean Road the twelve-ten will be at the Gospel by now, with Kevin in the fourth pew on the right and a Bible beside him for company. In Los Angeles there’s a tablecloth, and a man saying *brand*, and her across from him. He reads hers again with the pillow folded under his neck, and laughs once at the ceiling. Then he lies there deciding which of them to answer first, the way you decide which hand to take out of a fire."
+   ],
+   "choices": [
+    {
+     "text": "*tell the bible i overslept*",
+     "tag": "Wit",
+     "set": {
+      "e19_kev": "wit",
+      "trait.wit": "+1",
+      "rel.kevin.warmth": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "tell the bible i overslept",
+       "time": "12:42 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Kevin",
+       "text": "The Bible accepts. I’m still processing. -K",
+       "time": "12:43 PM"
+      },
+      "At a quarter to four, cutting across to Hollis, he passes the bulletin board by the Ocean Road gate at St. Brendan’s. Mrs. Fitch has been at it with the thumbtacks.",
+      {
+       "type": "doc",
+       "title": "Bulletin board, Ocean Road gate",
+       "text": "ST. BRENDAN’S ADVENT PARTY\nFRIDAY, DECEMBER 11 · 7 P.M. · NEWMAN HOUSE\nWHITE ELEPHANT ($10 LIMIT)\nCAROLS WITH THE CHOIR (ALL VOICES WELCOME) · PUNCH\nFR. OSEI REQUESTS NO MISTLETOE."
+      }
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "*overslept. three days. sorry*",
+     "tag": "Candor",
+     "set": {
+      "e19_kev": "candor",
+      "soul.honesty": "+1",
+      "rel.kevin.trust": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "overslept. three days. sorry",
+       "time": "12:42 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Kevin",
+       "text": "Tomorrow then. First Friday. -K",
+       "time": "12:43 PM"
+      },
+      "At a quarter to four, cutting across to Hollis, he passes the bulletin board by the Ocean Road gate at St. Brendan’s. Mrs. Fitch has been at it with the thumbtacks.",
+      {
+       "type": "doc",
+       "title": "Bulletin board, Ocean Road gate",
+       "text": "ST. BRENDAN’S ADVENT PARTY\nFRIDAY, DECEMBER 11 · 7 P.M. · NEWMAN HOUSE\nWHITE ELEPHANT ($10 LIMIT)\nCAROLS WITH THE CHOIR (ALL VOICES WELCOME) · PUNCH\nFR. OSEI REQUESTS NO MISTLETOE."
+      }
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "Skye first. *say grace at him*",
+     "tag": "Reckless",
+     "set": {
+      "e19_kev": "skye",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "say grace at him",
+       "time": "12:42 PM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "i did. he thinks its a bit. it IS a bit",
+       "time": "12:44 PM"
+      },
+      "Kevin’s text sits under hers in the inbox, unanswered.",
+      "At a quarter to four, cutting across to Hollis, he passes the bulletin board by the Ocean Road gate at St. Brendan’s. Mrs. Fitch has been at it with the thumbtacks.",
+      {
+       "type": "doc",
+       "title": "Bulletin board, Ocean Road gate",
+       "text": "ST. BRENDAN’S ADVENT PARTY\nFRIDAY, DECEMBER 11 · 7 P.M. · NEWMAN HOUSE\nWHITE ELEPHANT ($10 LIMIT)\nCAROLS WITH THE CHOIR (ALL VOICES WELCOME) · PUNCH\nFR. OSEI REQUESTS NO MISTLETOE."
+      }
+     ],
+     "goto": "s08"
+    }
+   ]
+  },
+  "s08": {
+   "slug": "THURSDAY · 4:50 PM · HOLLIS HALL, ROOM 108",
+   "body": [
+    "Room 108 is half underground, and its windows start at bike-wheel height, so the last of the afternoon comes in sideways through spokes and ankles and the bottoms of backpacks going by. The last PHIL 1 section before finals let out ten minutes ago, and everybody else has gone up the stairs into the light. Jack is still getting the paperback into his bag. Evan Marsh is erasing the board.",
+    "It was Kierkegaard to the end: *Fear and Trembling*, Abraham going up the mountain with the knife and the wood and the boy, and saying nothing to Sarah, nothing to the servant, nothing to Isaac. Evan didn’t make anybody defend him. He asked whether you could keep a thing from the people you love for their own good, and when a kid in a Raiders hoodie said *obviously*, Evan wrote OBVIOUSLY? on the board and left it up for the rest of the hour.",
+    "He erases all of it, every corner, down to the ledge. OBVIOUSLY? goes last, in long gray swipes. Then he stands there with the eraser in his hand and his back to the room.",
+    "“Mr. Costigan.” He holds out a sheet of paper without looking: Jack’s last response, on Abraham and the silence. Under it, in Evan’s small square pencil: *You answered for Abraham. Who answers for Isaac? —E.M.*",
+    "Jack takes it. Evan still has his back to the room. He has looked like this since he came back from PERSONAL in October — grayer, thinner inside the canvas jacket, the American Spirits in the breast pocket, unlit.",
+    {
+     "if": "e12_evan==\"gatsby\"",
+     "text": "“The man in the white jacket,” Evan says. “Halloween. You know him.”",
+     "else": "“Your roommate,” Evan says. “At the party on Halloween. You know him.”"
+    },
+    "It isn’t a question. He sets the eraser on the ledge and turns around, and behind the wire glasses his face is perfectly still."
+   ],
+   "choices": [
+    {
+     "text": "“My roommate. Theo Vance.”",
+     "tag": "Candor",
+     "set": {
+      "e19_evan": "candor",
+      "evan_knows_roommate": true,
+      "evan_knows_theo_name": true,
+      "trait.candor": "+1"
+     },
+     "key": "After section Evan asked about the man in the white jacket. You gave him a name: Theo Vance.",
+     "response": [
+      "“My roommate,” Jack says. “Theo Vance.”",
+      "Evan writes nothing down. He says the name once, under his breath, to himself.",
+      "“Was he at Preview Weekend?” Evan says. “Last April?”",
+      "“I don’t know. I wasn’t here.”",
+      "“No,” Evan says. “You weren’t.” He caps the marker he never used. “Don’t tell him I asked.” He takes his canvas jacket off the back of the chair and his bike off the radiator, where he keeps it locked, and walks it out past Jack and up the stairs, the back tire bumping on every step."
+     ],
+     "journal": [
+      {
+       "kind": "person",
+       "id": "evan",
+       "title": "Evan Marsh (TA)",
+       "text": "Thursday section, Hollis 108. Kierkegaard. Kind to the scared ones, murder on the lazy ones. Smokes American Spirits. Rides a bike. Came back from PERSONAL grayer. Told us we’d left out a driver. Says Kierkegaard was engaged once, gave back the ring, and wrote about her for the rest of his life. Gave back the midterms, then read us Kierkegaard on recollecting the dead — the freest love, because they can’t pay you back. Couldn’t finish the paragraph. After the last section: the man in the white jacket. Was he at Preview Weekend last April? I don’t know. Don’t tell him I asked. I gave him Theo’s name."
+      }
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "“Why?”",
+     "tag": "Control",
+     "set": {
+      "e19_evan": "control",
+      "evan_knows_roommate": true,
+      "trait.control": "+1"
+     },
+     "key": "After section Evan asked about the man in the white jacket. You asked him why.",
+     "response": [
+      "“Why?”",
+      "“He looked like someone I —” Evan stops, and starts again, flatter. “It was his party. You knew whose party it was.” A pause. “Your roommate?”",
+      "Jack’s face answers it for him.",
+      "“Was he at Preview Weekend?” Evan says. “Last April?”",
+      "“I don’t know. I wasn’t here.”",
+      "“No,” Evan says. “You weren’t.” He caps the marker he never used. “Don’t tell him I asked.” He takes his canvas jacket off the back of the chair and his bike off the radiator, where he keeps it locked, and walks it out past Jack and up the stairs, the back tire bumping on every step."
+     ],
+     "journal": [
+      {
+       "kind": "person",
+       "id": "evan",
+       "title": "Evan Marsh (TA)",
+       "text": "Thursday section, Hollis 108. Kierkegaard. Kind to the scared ones, murder on the lazy ones. Smokes American Spirits. Rides a bike. Came back from PERSONAL grayer. Told us we’d left out a driver. Says Kierkegaard was engaged once, gave back the ring, and wrote about her for the rest of his life. Gave back the midterms, then read us Kierkegaard on recollecting the dead — the freest love, because they can’t pay you back. Couldn’t finish the paragraph. After the last section: the man in the white jacket. Was he at Preview Weekend last April? I don’t know. Don’t tell him I asked."
+      }
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "“Gatsby? He’s in English.”",
+     "tag": "Wit",
+     "set": {
+      "e19_evan": "wit",
+      "evan_knows_roommate": true,
+      "trait.wit": "+1"
+     },
+     "key": "After section Evan asked about the man in the white jacket. You made a joke. He didn’t laugh.",
+     "response": [
+      "“Gatsby?” Jack says. “He’s in English. Different building.”",
+      "Evan doesn’t smile. He waits until the joke has gone all the way up the stairs after the others. “Your roommate?”",
+      "Jack’s face answers it for him.",
+      "“Was he at Preview Weekend?” Evan says. “Last April?”",
+      "“I don’t know. I wasn’t here.”",
+      "“No,” Evan says. “You weren’t.” He caps the marker he never used. “Don’t tell him I asked.” He takes his canvas jacket off the back of the chair and his bike off the radiator, where he keeps it locked, and walks it out past Jack and up the stairs, the back tire bumping on every step."
+     ],
+     "journal": [
+      {
+       "kind": "person",
+       "id": "evan",
+       "title": "Evan Marsh (TA)",
+       "text": "Thursday section, Hollis 108. Kierkegaard. Kind to the scared ones, murder on the lazy ones. Smokes American Spirits. Rides a bike. Came back from PERSONAL grayer. Told us we’d left out a driver. Says Kierkegaard was engaged once, gave back the ring, and wrote about her for the rest of his life. Gave back the midterms, then read us Kierkegaard on recollecting the dead — the freest love, because they can’t pay you back. Couldn’t finish the paragraph. After the last section: the man in the white jacket. Was he at Preview Weekend last April? I don’t know. Don’t tell him I asked."
+      }
+     ],
+     "goto": "s09"
+    }
+   ]
+  }
+ }
+}

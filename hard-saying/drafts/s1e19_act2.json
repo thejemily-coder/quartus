@@ -1,0 +1,685 @@
+{
+ "scenes": {
+  "s03": {
+   "slug": "MONDAY · 8:50 PM · THE HARBOR, THE LAUNCH-RAMP LOT",
+   "body": [
+    "The far side of the harbor is all noise and no light. Sea lions on the bait dock, arguing in the dark about who gets the edge. The water slapping at the foot of the launch ramp. And out in the slips, a hundred halyards ticking against a hundred aluminum masts in a wind too small to feel on his face, like a room full of people tapping pencils during a test. Across the black water the Anchor is a row of yellow windows on the wrong side of everything. Gloria couldn’t see this lot with binoculars.",
+    "The Saab is parked under the one sodium lamp with the top down at thirty-nine degrees and the heater going full on the floor. Skye is behind the wheel with her bare feet on the pedals and her chin on her hands on top of the wheel, in something somebody else chose for her: black, strapless, built up stiff from the waist like a wedding cake, with a man’s tuxedo jacket over it that isn’t hers either.",
+    "“Don’t look at it,” she says. “It’s a dress with opinions. I came straight from a fitting in Burbank. They wanted to see how it moves. It doesn’t.”",
+    "She drove up after: two hours and ten minutes, she says, and she has to be back in the chair for a six o’clock call. “A magazine. I’m not telling you which. You’d look it up.”",
+    "He has had nearly three hours of her voice in his ear on his father’s porch and nothing of her face since a parking lot six days ago. The voice is the same one, low, with the day worn into the bottom of it. The face is better than he kept it. Before he’s reached the car she leans across and shoves the passenger door open from inside, and he ends up standing in it with one hand on the top of the frame.",
+    {
+     "if": "e18_text==\"candor\"",
+     "text": "“‘Your mouth,’” she says. “That’s what I got out of you. Two in the morning in your father’s basement, and I get *your mouth*.” She taps the clock on the dash with one finger. “I said no clock. I lied. I have two hours.”"
+    },
+    {
+     "if": "e18_text==\"reckless\"",
+     "text": "“You wrote me a *paragraph*, Ohio.” Her hand is already up in the collar of the Carhartt, her fingers hooked in the corduroy, and nothing else about her has moved. “I said the jacket. I meant the jacket.”"
+    },
+    {
+     "if": "e18_text!=\"candor\" && e18_text!=\"reckless\"",
+     "text": "“*Physics*,” she says. “I drove two hours for *physics*.” “You said you’d get it out of me in person,” Jack says. “I’m here, aren’t I.”"
+    },
+    "“Where were you? You smell like a bar.”",
+    "“Sully’s. The Saints. I left at the two-minute warning.”",
+    "She looks at him over the wheel. “You left a football game early. For me. Where you’re from that’s a proposal.”",
+    {
+     "if": "e17_miss==\"wit\"",
+     "text": "Then she holds out her hand, palm up. “Receipts.” He has them. Somewhere over Indiana on Sunday night, on the back of his boarding-pass stub from Pittsburgh, he made five tallies and started a sixth, and the beverage cart came before he finished it. She tilts the stub to the lamp. “What’s the half?” “Turbulence.” She considers it, folds it once, and puts it away down the front of the dress with opinions, where it apparently lives now."
+    },
+    {
+     "if": "e18_watch==\"wit\"",
+     "text": "“Do you still like her?” she says. “Cassidy.” “She’s very nice.” “I’ll kill her.”"
+    },
+    "The heater roars at their feet. The halyards tick. He’s still standing in her open door."
+   ],
+   "choices": [
+    {
+     "text": "Get in and kiss her before the door’s shut.",
+     "tag": "Reckless",
+     "set": {
+      "e19_harbor": "reckless",
+      "trait.reckless": "+1",
+      "rel.skye.heat": "+1"
+     },
+     "response": [
+      "He gets in and kisses her with one knee still on the seat and the door swinging wide behind him on its hinge, and she laughs into it, and reaches past him without looking and hauls the door shut by the armrest."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“I missed you. A reasonable amount.”",
+     "tag": "Candor",
+     "set": {
+      "e19_harbor": "candor",
+      "said_it_plain": true,
+      "said_it_plain_n": "+1",
+      "trait.candor": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“I missed you,” he says. “A reasonable amount.”",
+      "She goes still for a breath, her hands on the wheel, looking at him in the lamp. “Get in,” she says."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“You drove two hours for forty minutes.”",
+     "tag": "Wit",
+     "set": {
+      "e19_harbor": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“You drove two hours for forty minutes.”",
+      "“Two hours and ten,” she says. “And you’re wasting them. Get in.”"
+     ],
+     "goto": "s03a"
+    }
+   ]
+  },
+  "s03a": {
+   "slug": "MONDAY · 9:05 PM · THE SAAB, THE LAUNCH-RAMP LOT",
+   "set": {
+    "resolve.jack": "-1",
+    "rel.skye.heat": "+1"
+   },
+   "body": [
+    "It isn’t slow. Whatever she spent in the lot six days ago, she doesn’t spend it here. She has him by the Carhartt before he’s settled in the seat, the gearshift is in the way and then it isn’t, and she comes up over the console onto her knees with the dress creaking like a saddle. She tastes of cinnamon, some mint out of a bowl in Burbank, and under that of two hours of road. She kisses him with one eye on the clock on the dash, and then with neither.",
+    "His hand goes into her hair and comes back with a sound. It has been set for a camera and sprayed into place, and it crunches. She laughs against his teeth. “Don’t. That’s six hundred dollars of somebody’s afternoon.” He does it anyway, until it gives and comes down around his wrist.",
+    {
+     "if": "e18_text==\"candor\"",
+     "text": "“Say it,” she says into his mouth. “What you typed. Not in T9 this time.” He says it, *your mouth*, against hers, and it is easier said in a car with her in it than typed in a basement under his grandmother."
+    },
+    {
+     "if": "e18_text==\"reckless\"",
+     "text": "“You said my name once and you didn’t answer,” she says against his jaw. His own paragraph, back at him in the dark. “Because you forgot how.” Then she says it. “Jack.” This time he answers."
+    },
+    {
+     "if": "e18_text!=\"candor\" && e18_text!=\"reckless\"",
+     "text": "“Physics,” she says, between one kiss and the next. “Go on. Explain it to me.” “Equal and opposite.” She pushes; he pushes back; she laughs into his mouth. “Show your work.”"
+    },
+    "The tuxedo jacket goes over the back of her seat. The Carhartt comes off one of his shoulders and stays caught on the other. His hands go where the dress lets them, and the dress lets them almost nowhere: from her ribs to the top of it she is built in, laced and boned, some engineer’s idea of a girl standing still under lights. It’s like holding her through a fence. She feels him find that out and laughs. “I *told* you. It has opinions.” So his palms go flat on the stiff satin at her sides, and above the satin there is her, bare shoulders and the back of her neck, warm, salt and hairspray, and he puts his mouth there instead and she stops laughing. His hands are cold from the walk across the lot, and when they find the back of her neck she gasps and catches them there with her own and holds them, to warm them or to keep them, he can’t tell which.",
+    "On the bait dock the sea lions bark in a row like a heckling section. The windshield has fogged at the bottom corners even with the top down, two gray fans climbing the glass from the dash. Her knee is on the parking brake. The parking brake will live.",
+    "Somewhere in it she stops long enough to talk, with her forehead on his and both his ears in her hands. “I thought about this for six days. In traffic. In hair. In the middle of a sentence to my mother.” Her breath on his mouth. “I want you to know that’s what this is.”",
+    "He is eighteen, and six days of her in his ear have been going straight into him, and his body says so against all that engineering; she feels it, and makes a low sound in her throat that isn’t a bit. Somewhere at the back of him, in the place that keeps time on Saturdays, a sentence starts with *Bless me, Father*, and the sea lions shout it down.",
+    "At twenty to eleven a marimba starts up on the dash. The white iPhone lies lit beside the gearshift, playing a cheerful little tune to the harbor.",
+    "“That’s my mother,” she says, into his neck. She lifts her head and looks at it. “No, it isn’t. That’s the alarm I set so I’d leave.” She shuts it off with her thumb and stays where she is a moment longer, breathing. “I’m extremely responsible. Don’t tell anyone.”",
+    {
+     "if": "e17_stop==\"reckless\"",
+     "text": "“And I’m not the one stopping this time. I want that in writing. My phone is.”"
+    },
+    "She shrugs the tuxedo jacket back on over the dress and looks at herself in the rearview with her hair standing up. “Six o’clock call,” she says. “And this is what they get.”",
+    "“You fell asleep on me,” he says. “Saturday.”",
+    "“I know. In the middle of your Madonna.” She puts the car in gear. “I dreamed about a bathtub. Standing up in a yard. I woke up at noon and thought I’d made it up.”",
+    "“You didn’t.”",
+    "“I know. That’s the part I liked.”",
+    "She drives him back around the harbor with the heater on their feet and her hair standing up on one side where he ruined it, and she doesn’t take him to the Anacapa lot. She pulls in at the Marine Lab turnout on Ocean Road instead, where the road bends along the bluff and there’s nothing but a chain across a service drive and a sign about the tide pools.",
+    "At the turnout she leaves the engine running and turns to him with one knee up on the seat. “What did you tell them? Your friends at the bar.”",
+    {
+     "if": "e19_exit==\"control\"",
+     "text": "“That my boss called me in.” “Did she?” “No.” “You lied for me,” Skye says. She sounds delighted, and a little sorry about it, and then mostly delighted."
+    },
+    {
+     "if": "e19_exit==\"candor\"",
+     "text": "“That I had somewhere to be.” “You did,” she says. “You had here.”"
+    },
+    {
+     "if": "e19_exit!=\"control\" && e19_exit!=\"candor\"",
+     "text": "“That I’d seen how it ends.” She looks at him a moment in the dash light. “Have you?” He hasn’t got an answer for that, and she seems to like that too."
+    },
+    "“Not your lot,” she says. “Somebody’ll see a pink car and want to know.” And with the engine still running: “Friday. Midnight. Bring a jacket.” She looks at the Carhartt. “That jacket. We’re going nowhere.”",
+    "The one taillight goes east along Ocean Road toward the freeway and Burbank and a six o’clock call, and he walks back toward Anacapa with cinnamon in his mouth and his collar still half off his shoulder.",
+    "At ten past eleven the Odyssey is under the lamp at the end of the row where Kevin always leaves it, and the back glass has been rewritten in white shoe polish: WHO DAT · 11–0, the 11 in a clean composer’s hand.",
+    {
+     "if": "e17_glass==\"sincerity\"",
+     "text": "His own ten from last Sunday, the one that leaned, has been wiped off to make room."
+    },
+    "In 412 Theo is at the MacBook with his back to the door.",
+    "“Thirty-eight seventeen,” Theo says, without turning around.",
+    "“Yeah.”",
+    "“Who scored last?”",
+    "Jack doesn’t know. Theo says, “Hm,” and scrolls."
+   ],
+   "next": "s04"
+  },
+  "s05": {
+   "slug": "WEDNESDAY · 1:05 AM · THE WHARF, THE RAIL PAST THE BAIT SHACK",
+   "body": [
+    "The full moon is straight overhead, and the wharf planks are white under it, every nail head lit, his own shadow a short black puddle around his boots. He’s off at one. His fingertips are still pruned from six hours of the Hobart, ridged like walnut meat, and the cold gets into them.",
+    "The RAZR rings before he’s past the Wharf Rat. The outer screen says SKYE (MISFIT), and under it, *calling*. He answers it walking.",
+    "“I’m not falling asleep on you this time,” she says. “I had a Diet Coke. I had two. I can hear my own hair.”",
+    "She’s on her mother’s balcony in Studio City, she tells him, wrapped in a comforter, with a five a.m. call; she can’t sleep the night before a call and never could, not since she was eleven, and she wanted — she stops. “I wanted your voice. I’m not going to dress it up.” Behind her, inside the apartment, the parrot says its word once to the dark.",
+    "He goes out past the bait shack to the rail at the end, where the Anchor’s windows don’t reach, and leans on it. Below him the harbor has the moon in it. Out in the slips the masts are ticking, the same small racket as Monday, from this side now.",
+    "“What’s the magazine?”",
+    "“I told you. You’d look it up.”",
+    "“I don’t have the internet.”",
+    "“You have *Gina*. Gina would have it framed by lunch.”",
+    "From her mother’s balcony, she tells him, she can see a piece of the 101 between two apartment buildings, red going one way and white going the other, even now. “It goes all the way to you,” she says. “I checked. It’s the same road.”",
+    "“I watched your President today,” she says.",
+    "“He’s your President too.”",
+    "“I watched him with the sound off. In the trailer. They had CNN on the little TV over the mirror with the captions on, and the captions run about two seconds behind his mouth. So you get the face first.” Something rustles; she’s pulling the comforter up. “He didn’t want to say the number. You could see him get to it. And then he said the date to leave in the same breath, like he was paying for the first thing with the other hand. That’s a man who’s already sorry.”",
+    "Jack has the speech in his head the way it came out of the Fishbowl TV, with the cadets in gray. He gives it to her anyway. You don’t tell the other side what day you’re leaving; you’ve just told them how long to wait. Augustine says the peace you fight for is the tranquillity of order, and you don’t get order on a timetable. His father would say you don’t walk off the line with the car half built. Somewhere in the middle of it he thinks of his father in the recliner on Glenwood Avenue at eight o’clock Eastern with the *Vindicator* on his knee, watching the same face with the sound up, saying nothing at all. He goes on longer than he means to, on a wharf, at one in the morning, to a girl on a balcony.",
+    "She lets him finish. She doesn’t argue the policy at all.",
+    "“I don’t know anything about Afghanistan, Jack. I know about faces.” A car goes by below her window in Studio City; he hears it pass. “You want him to be *sure*.” The halyards tick. “You want somebody to be sure.”",
+    "He doesn’t have anything for that. So he tells her about the phone on the coffee table.",
+    {
+     "if": "e19_yusuf==\"go\"",
+     "text": "A guy in his seminar. Halfway through the speech the guy’s phone lit up FREMONT — HOME, and he took it out to the stairwell, and Jack went and sat a flight below him while he talked to his mother in a language Jack didn’t know. An IED. Helmand. Alive. Germany.",
+     "else": "A guy in his seminar. Halfway through the speech the guy’s phone lit up FREMONT — HOME, and he took it out to the hall. A friend went after him and came back into the lounge with it before Jack’s bus. An IED. Helmand. Alive. Germany."
+    },
+    "“What’s his name?” Skye says. “The brother.”",
+    "“Tariq.”",
+    "“Tariq,” she says back, carefully, the way you say a name you mean to keep.",
+    "“What did his face do?” she says. “Your guy. When he came off the phone.”",
+    "Jack thinks about it. “Nothing. It didn’t do anything.”",
+    "“Then he’s holding it for his mother,” she says. “He’ll be fine till the plane lands. It’s after they land. Somebody should be around when they land.”",
+    "At 1:48 the phone buzzes against his ear in the middle of her next sentence: a text, landing on top of her voice.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Up? I keep thinking about Yusuf’s mother. —L.",
+     "time": "1:48 AM"
+    },
+    "“Somebody’s very awake,” Skye says."
+   ],
+   "choices": [
+    {
+     "text": "“Hang on.” Answer Lena now.",
+     "tag": "Sincerity",
+     "set": {
+      "e19_two": "sincerity",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Hang on,” he says, and takes the phone down from his ear and types with his thumb in the moonlight while the call runs on in his palm.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "im up. kevins taking him at 6. praying for his mom",
+       "time": "1:50 AM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "Me too. Goodnight, Youngstown. —L.",
+       "time": "1:51 AM"
+      },
+      "When he puts the phone back to his ear, Skye is humming: the Merle Haggard off the Starlite’s jukebox, the one about the silver wings. She finishes the line before she says anything, and then she picks up her sentence exactly where she left it.",
+      "They go on till twenty to three. When the masts are the loudest thing left on the line, she yawns into the phone, enormously, and blames him for it.",
+      "“Go to bed, Ohio.”",
+      "“You go to bed.”",
+      "“I’m in hair at five. I’ll send you proof.”",
+      "“Proof of what?”",
+      "“That five exists.” Click.",
+      "He walks home the three miles up Mission at a quarter to three with the full moon on the road and his hands in the Carhartt, past the dark Walgreens and the dark Sully’s, the traffic lights going through their colors over an empty street."
+     ],
+     "goto": "s05a"
+    },
+    {
+     "text": "Answer her after.",
+     "tag": "Restraint",
+     "set": {
+      "e19_two": "restraint",
+      "soul.honesty": "-1"
+     },
+     "response": [
+      "He leaves it where it is, in the phone against his ear. “Go on,” he says, and she does.",
+      "They go on till twenty to three. When the masts are the loudest thing left on the line, she yawns into the phone, enormously, and blames him for it.",
+      "“Go to bed, Ohio.”",
+      "“You go to bed.”",
+      "“I’m in hair at five. I’ll send you proof.”",
+      "“Proof of what?”",
+      "“That five exists.” Click.",
+      "At 2:44, still at the rail with the moon going over, he opens the text.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "sorry just saw this. same",
+       "time": "2:44 AM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "Goodnight, Youngstown. —L.",
+       "time": "2:46 AM"
+      },
+      "He walks home the three miles up Mission at a quarter to three with the full moon on the road and his hands in the Carhartt, past the dark Walgreens and the dark Sully’s, the traffic lights going through their colors over an empty street."
+     ],
+     "goto": "s05a"
+    },
+    {
+     "text": "Answer Lena now, honestly.",
+     "tag": "Candor",
+     "set": {
+      "e19_two": "candor",
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“One second.” He takes the phone down and types with the call running in his hand.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "still up. on the phone. is she ok",
+       "time": "1:50 AM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "She will be. Go to bed. —L.",
+       "time": "1:51 AM"
+      },
+      "*On the phone* sits in the thread above her answer, where he put it.",
+      "They go on till twenty to three. When the masts are the loudest thing left on the line, she yawns into the phone, enormously, and blames him for it.",
+      "“Go to bed, Ohio.”",
+      "“You go to bed.”",
+      "“I’m in hair at five. I’ll send you proof.”",
+      "“Proof of what?”",
+      "“That five exists.” Click.",
+      "He walks home the three miles up Mission at a quarter to three with the full moon on the road and his hands in the Carhartt, past the dark Walgreens and the dark Sully’s, the traffic lights going through their colors over an empty street."
+     ],
+     "goto": "s05a"
+    }
+   ]
+  },
+  "s05a": {
+   "slug": "WEDNESDAY · 8:10 AM · DELGADO HALL, ROOM 412 → THE EAST STAIRWELL",
+   "set": {
+    "skye_pics": "+1"
+   },
+   "body": [
+    "He sleeps three hours with the RAZR under his pillow, and at ten past eight it’s still there, warm, with a little envelope glowing on the outer screen beside the time. Inside: *1 New Picture Msg*. SKYE (MISFIT). 5:12 AM.",
+    "In 412 the phone has one bar on a good day. He opens the message, and a download bar starts filling in from the left, and about a third of the way along it stops and thinks it over.",
+    "Theo is at the MacBook in the navy robe with a gas-station coffee, and doesn’t turn around. “You’ve started sleeping with it.”",
+    "Jack goes out in his socks.",
+    "The east stairwell has the best reception in Delgado; everybody on four knows which landing. He stands on it with the phone held up to the window, and the bar crawls the rest of the way across, and the picture comes up the size of a postage stamp, dim. He has to tilt it to the gray morning coming in at the landing window before it will hold still and be anything.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "*Picture Msg* · proof of five",
+     "time": "5:12 AM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "my phone learned this in september. im still not over it",
+     "time": "5:13 AM"
+    },
+    "A mirror ringed with bulbs, half of them lit. Skye in a makeup chair in a white terry robe, her hair wound up on hot rollers, her face scrubbed bare so the freckles show across her nose. The robe has slipped off her left shoulder and she hasn’t fixed it: the bare shoulder, the long line of her collarbone, and right at the end of it, held up in her own hand, the white iPhone, in the frame where he can see it taking the picture. Her mouth, not smiling yet. Her eyes half shut, half asleep, and the other half a dare.",
+    "It goes through him before he’s finished tilting it, standing on the landing in his socks. He knows what his mother would call it, and what Fr. Osei would, and that they’d both be right, and he tilts it to the window again anyway — a quarter, he figures, on a family plan that comes to Glenwood Avenue every month for his mother to go down line by line at the kitchen table with a pen.",
+    "Below him the stairwell door opens, and Kevin comes up from the lobby in a quarter-zip with the Odyssey keys on his finger, back from the airport. Jack shuts the phone against his chest with the snap a RAZR makes.",
+    "“Morning,” Kevin says. “He’s on the plane.”",
+    "His eyes go to the phone against Jack’s chest, to Jack’s socks, up to Jack’s face: a chart, read top to bottom. He keeps going up."
+   ],
+   "choices": [
+    {
+     "text": "*you look tired. you look good. both*",
+     "tag": "Candor",
+     "set": {
+      "e19_pic": "candor",
+      "said_it_plain": true,
+      "said_it_plain_n": "+1",
+      "trait.candor": "+1",
+      "rel.skye.trust": "+1",
+      "rel.skye.heat": "+1"
+     },
+     "key": "At five in the morning she sent you a picture from a makeup chair. You told her she looked tired, and good.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "you look tired. you look good. both",
+       "time": "8:19 AM"
+      },
+      "He sends it from the landing without making it any cleverer, and goes back up in his socks with the phone in his fist.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "both is correct",
+       "time": "8:31 AM"
+      }
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "*proof received. 25 cents well spent. send proof of breakfast*",
+     "tag": "Wit",
+     "set": {
+      "e19_pic": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "At five in the morning she sent you a picture from a makeup chair. You thanked her for the quarter.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "proof received. 25 cents well spent. send proof of breakfast",
+       "time": "8:20 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "breakfast is a black coffee and a man with a lint roller. no",
+       "time": "8:31 AM"
+      }
+     ],
+     "goto": "s06"
+    },
+    {
+     "text": "Close it. Then find *Erase?* and press Yes.",
+     "tag": "Restraint",
+     "set": {
+      "e19_pic": "restraint",
+      "pic1_erased": true,
+      "soul.restraint": "+1",
+      "resolve.jack": "+1"
+     },
+     "key": "At five in the morning she sent you a picture from a makeup chair. You erased it.",
+     "response": [
+      "He closes it. He opens it again and goes into the menu and finds *Erase?*, and presses Yes, and the phone thinks about that too before it says *Erased*. It’s gone from the phone. He stands on the landing a while longer with the window going white.",
+      "He doesn’t answer it. At noon he texts her something about the dining commons and the Wednesday chili, and she answers about the chili, and at 12:40:",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "did my picture get lost",
+       "time": "12:40 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "it got there",
+       "time": "12:44 PM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "ok",
+       "time": "12:44 PM"
+      }
+     ],
+     "goto": "s06"
+    }
+   ]
+  },
+  "s10": {
+   "slug": "SATURDAY · 12:05 AM · THE SAAB, OCEAN ROAD → THE COAST HIGHWAY NORTH",
+   "music": "Bruce Springsteen — “Thunder Road”",
+   "body": [
+    "At five past midnight there’s dew on the chain across the Marine Lab service drive, and the cold has gotten into the knuckles of his hands before it’s gotten anywhere else. The Saab is idling in the turnout with the top down anyway and the heater blasting the floor. She’s in a man’s flannel, red and black, and a gray knit cap pulled down to her eyebrows, and nothing on her feet.",
+    "“Jacket?”",
+    "He holds open the Carhartt.",
+    "“Good,” Skye says. “We’re going nowhere.”",
+    "He gets in. The heater is roaring at his boots and the air above his knees is December, and she watches him find that out with real satisfaction. She has a thermos wedged by the handbrake that turns out to be hot chocolate from a packet, and she makes him drink first, and won’t say where she’s been since Wednesday except *places with call sheets*.",
+    "She takes the old coast road north along the bluffs, past the dark mouth of the Ellery turnoff without slowing. “Not tonight,” she says, when he looks. “Tonight’s nowhere.” Then the on-ramp, and the highway, and the long climb where the ocean drops away on the left and the hills on the right go black and big. She drives slow for her, in the right lane with the trucks, one hand on the wheel and the other out in the cold.",
+    "At the first pothole on the grade the tape deck makes a noise like a sneeze and spits *Rumours* into her lap. Four months of the same side of the same album, and it lets go all at once.",
+    "“*Finally*,” Skye says. She holds the cassette up to the dash lights. “I’ve been in a relationship with that tape since August.” She throws it over her shoulder into the back seat like a bouquet and turns on the radio.",
+    "It’s a classic-rock station out of Santa Barbara, fraying at the edges, and the first thing on it is a harmonica and a piano, and Jack knows it by the second bar. “Thunder Road.” He knows every word. So, it turns out, does she. She sings it louder than he does and much worse, with her cap pulled down and her free hand conducting the hills, and he sings it anyway, on a highway in California at the top of his lungs with a girl who is on television, and the clock on the dash turns over to one. When the long last part comes she misses the high note by a mile and holds it anyway, past where the song does, into the dark over the passenger seat, and when the harmonica takes it out she lets go of the wheel for one terrible second to applaud.",
+    "There are a lot of trucks on the grade at one in the morning, and she gives every one she passes a whole life in three sentences, done before she’s by the cab. A Sysco truck: “Duane. Married twenty-two years to a woman who thinks he’s in Fresno. He is in Fresno, spiritually.” A moving van: “Somebody’s divorce. The good couch. She let him have it so she could say she let him have it.”",
+    {
+     "if": "e17_play==\"reckless\"",
+     "text": "“Your turn, salesman.”",
+     "else": "“Your turn, Ohio.”"
+    },
+    "A flatbed of hay bales comes up in the headlights. “That’s Stosh,” Jack says. “Drove for Sheet & Tube till it closed, then drove for whoever. Hasn’t taken the Browns hat off the dash since they moved to Baltimore.” She laughs, and passes him, and points at a tanker. “A guy named Rich,” Jack says. “Goes to the six-thirty Mass in whatever town he wakes up in, so he’s never late for anything else.”",
+    "“That’s not a life, that’s a saint.”",
+    "A milk tanker labors past them uphill, and she makes him start it, and takes it away from him halfway. “That’s Arlene,” Jack says. “Thirty years on the dairy run —” “— and she’s never tasted the milk,” Skye says, “because she’s lactose intolerant, and she’s never told the dairy, and it’s eating her alive.” “That’s not a life. That’s a secret.” “That’s every life, Jack. Keep up.”",
+    "“Youngstown’s full of them. They all drive.”",
+    "A car carrier comes up on the right, two decks of new compacts nose to tail under the sodium lights of an overpass, and she points at it, and opens her mouth, and Jack says, “Cobalts. Lordstown builds those. My father’s plant.”",
+    "She looks at the carrier for a long time as she passes it, every car on it, the top deck and the bottom. She doesn’t give it a life. She gives it nothing, and passes it, and lets the next truck have the next joke.",
+    {
+     "if": "e18_bit==\"wit\"",
+     "text": "When a sedan in the left lane sits at fifty-two in front of them for a mile, she drops her voice into her chest, flat, out of the side of her mouth. “*Close your mouth.* You’ll catch flies.” It’s still nothing like his father. She has added the fork."
+    },
+    {
+     "if": "e18_bit==\"sincerity\"",
+     "text": "Between trucks she says, “How’s the best one?” He knows who she means. “Home,” he says. “Bossing.” “Good.”"
+    },
+    {
+     "if": "e18_bit!=\"wit\" && e18_bit!=\"sincerity\"",
+     "text": "At an off-ramp a gas station is asleep under its own lights, every pump lit and empty, and as they pass it she rises half out of her seat with one hand on the wheel and screams “*JACK. SHE’S ON TV.*” at it, in Gina’s exact pitch. The gas station takes it well."
+    },
+    "On an empty stretch of the grade a little after one, with nothing ahead of them but reflectors, she looks over at him.",
+    "“Look at you. Awake when it counts.”",
+    "“That’s not how I said it.”",
+    "“I told you I’d remember it wrong.”",
+    "He is, though: awake, at one in the morning on a grade in the dark, with every reason to be asleep and the cold in his ears and the moon coming up over the hills behind them, lopsided, three nights past full. He is very, very awake.",
+    {
+     "if": "e18_gap==\"candor\"",
+     "text": "Later, on a straight, with her eyes on the road: “You said *sometime*. It isn’t sometime. I’m just telling you I remember.” And she drives."
+    },
+    {
+     "if": "e18_gap==\"control\"",
+     "text": "Later, on a straight: “Your family thing,” she says. “Was it all right?” “Yeah.” “Good.”"
+    },
+    {
+     "if": "e18_gap!=\"candor\" && e18_gap!=\"control\"",
+     "text": "Later, on a straight: “How was the cult?” “They let me go.” “Lucky.”"
+    },
+    {
+     "if": "e17_faith==\"sincerity\"",
+     "text": "“Did you get known?” she says, a mile on. “In Ohio.” He thinks about a kitchen table with an extra chair at it. “Some,” he says."
+    },
+    "Up near the top of the grade she turns the radio down to a murmur.",
+    "“Tomorrow night,” she says. “Tonight. Tonight-tomorrow. Saturday. LA. The network has a holiday thing at a hotel, and there’s a piano floating in the pool. I’m not making that up. Somebody had a meeting about it.”",
+    "“A piano.”",
+    "“A white one. In the pool. Do you own a blazer?”",
+    "“One.”",
+    "“Wear it. You’ll hate it. I want to watch you hate it.”",
+    "“Why?”",
+    "She takes most of a mile to answer. “Because everybody in that room is going to want something from me. A meeting. A picture. A favor for a nephew.” The reflectors come at them and go by. “And you’ll be standing there in a blazer wanting nothing. I want to see what that looks like in a room.”",
+    {
+     "if": "e18_tv==\"sincerity\"",
+     "text": "She keeps her eyes on the road. “You said the part you know is the grandmother. Come meet the other part.”"
+    },
+    {
+     "if": "e18_tv==\"candor\"",
+     "text": "She keeps her eyes on the road. “You said it matters a little. Come see how little.”"
+    },
+    {
+     "if": "e18_tv!=\"sincerity\" && e18_tv!=\"candor\"",
+     "text": "She keeps her eyes on the road. “You said you’d only watch if I made you. I’m making you.”"
+    },
+    "He wants to go. He can see it whole and he wants it: the white piano going around in the blue water, and her in it somewhere, in a dress with worse opinions, wanting him to hate it.",
+    "Saturday night he’s on at the Anchor, seven to one. He thinks of a white piano going around and around in a swimming pool in Los Angeles, and of himself in the Goodwill blazer beside it, and of Gloria flipping the sign at one."
+   ],
+   "choices": [
+    {
+     "text": "“I want to. I work Saturday. I’m not calling in.”",
+     "tag": "Candor",
+     "cue": "Skye will remember that.",
+     "set": {
+      "e19_la": "candor",
+      "skye_invited_la": true,
+      "said_it_plain": true,
+      "said_it_plain_n": "+1",
+      "trait.candor": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "Up the coast at one in the morning she asked you to LA. You said you wanted to, and that you work Saturdays.",
+     "response": [
+      "“I want to,” he says. “I work Saturday. I’m not calling in.”",
+      "She watches the road for a mile. “Okay,” she says. And then, with the corner of her mouth going up: “Next time I’ll ask somewhere worse.”",
+      "Somewhere near the top of the grade she swings them around in a truck pullout, no reason given, and comes back down the way they came, and a few miles on takes a ranch road off the highway without signaling, west, toward where the coast turns the corner."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "“I don’t own a TV. I’m not going to a party for one.”",
+     "tag": "Wit",
+     "set": {
+      "e19_la": "wit",
+      "skye_invited_la": true,
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "Up the coast at one in the morning she asked you to LA. You told her you don’t own a TV.",
+     "response": [
+      "“I don’t own a TV,” he says. “I’m not going to a party for one.”",
+      "She laughs so hard the Saab drifts onto the rumble strip and she has to haul it back. “That’s the best no I’ve ever gotten,” she says. “I’m writing it down.”",
+      "Somewhere near the top of the grade she swings them around in a truck pullout, no reason given, and comes back down the way they came, and a few miles on takes a ranch road off the highway without signaling, west, toward where the coast turns the corner."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "“Ask me again. Somewhere I can’t say no.”",
+     "tag": "Sincerity",
+     "set": {
+      "e19_la": "sincerity",
+      "skye_invited_la": true,
+      "trait.sincerity": "+1",
+      "rel.skye.heat": "+1"
+     },
+     "key": "Up the coast at one in the morning she asked you to LA. You told her to ask again somewhere you couldn’t say no.",
+     "response": [
+      "“Ask me again,” he says. “Somewhere I can’t say no.”",
+      "She takes her eyes off the road to look at him, longer than the road would like. “Careful, Jack,” she says.",
+      "Somewhere near the top of the grade she swings them around in a truck pullout, no reason given, and comes back down the way they came, and a few miles on takes a ranch road off the highway without signaling, west, toward where the coast turns the corner."
+     ],
+     "goto": "s11"
+    }
+   ]
+  },
+  "s11": {
+   "slug": "SATURDAY · 1:50 AM · A TURNOUT WHERE THE COAST TURNS THE CORNER",
+   "set": {
+    "resolve.jack": "-1",
+    "rel.skye.heat": "+2"
+   },
+   "body": [
+    "The ranch road gives out in a dirt turnout on the lip of a bluff, a cattle guard rattling behind them and nothing ahead but the drop and the Pacific. The moon is three nights past full and high in the south, and it lays a road across the water straight to the foot of the bluff, white and broken, so bright the dark on either side of it looks deliberate. Below, a beach without a footprint on it. Down the coast, where the land turns its corner and goes east, there’s a lighthouse that works: a light that comes around, and goes, and comes around.",
+    "She turns the engine off, and the quiet comes in from all sides at once: no surf this high up, only the wind in the dry grass along the bluff and, far below, the sea working at the beach like somebody breathing in their sleep. Away from the moon the stars go all the way down to the water. The heater gives up its last warm breath on their feet. She leaves the radio on, low, a slide guitar from the station out of Santa Barbara, coming and going.",
+    "She gets out, barefoot on the cold dirt, and comes back from the trunk with the striped Mexican blanket that still smells of surf wax and somebody’s dog. She doesn’t go around to her side. She opens his door and climbs in over him, blanket and all, and settles in his lap with it around the both of them like a tent. It takes some doing. Her elbow finds the window crank and his ear; the blanket gets caught on the door lock and has to be negotiated with; her cap comes down over her eyes and she leaves it there and kisses him blind, laughing, until he pushes it back up with one finger and finds her looking at him.",
+    "The Saab’s passenger seat was not built for this. His knee is jammed against the glovebox and her back is against the dash, and when she reaches down past his hip and finds the seat lever and pulls it, the seat drops back two notches with a crack like a starter’s pistol, and she laughs into his neck. “That’s the most exciting thing that’s ever happened to this car.” “I doubt that.” “You’d be amazed. It’s a very Lutheran car.”",
+    "The flannel comes off over her head in the cold, knocking her cap off with it, and she laughs again at the cold on her bare arms — there’s a thin gray camisole under it, and gooseflesh, and the moon on her shoulders. She does his shirt buttons from the bottom up, fast, and pushes it open, and puts both her hands in flat against his chest over his heart. They leave cold prints that warm. His hands go under the hem of the camisole to her bare back: the long muscles either side of her spine, the knobs of it, the cage of her ribs going in and out under his palms with her breathing. Her skin is hot where the blanket is and cold where it isn’t, and he can feel the line between.",
+    "Her mouth goes to his collarbone. She finds the St. Michael there on its chain, warm from him, and lifts it off his chest with one finger and looks at it in the moonlight — the saint with his sword up and his foot on the devil — and lays it over his shoulder, down his back, out of the way.",
+    "“Excuse us,” she tells it.",
+    "Something in him flinches for the saint and is overruled. The medal lies cold against his spine under the blanket. Her thumb comes up and finds the scar through his eyebrow and runs along it, once, in the dark. “Still not buying Erie,” she says, and kisses it.",
+    "She kisses him with her hands in his open shirt and her bare foot braced on the dash, and the windshield fogs around her heel. It isn’t the harbor, fast and funny with a clock on it. It’s slower than that and hungrier, her teeth at his lower lip, his mouth at the side of her neck below her ear where her hair is still flat from the cap, her hips settling down onto him under the blanket, her bare feet cold as river stones against his shins where his jeans have ridden up. He learns her back with his hands, the warm hollow at the base of it, the two dimples there, the place between her shoulder blades where she shivers when he finds it and tells him not to stop finding it. There is no hiding anything in a Saab with her in his lap, and his body isn’t trying; she knows, and settles closer, and laughs low in her throat when his breath goes.",
+    "She stops long enough to say it, with her mouth an inch from his and her hand flat on his chest.",
+    "“I want this,” she says. “You. Here. More of it. I haven’t wanted anything this much since I was fifteen and wanted a part.” She takes one of his hands off her back and moves it around and puts it flat on her bare stomach under the camisole, and holds it there with her own. “That. I want that.”",
+    "On the radio the slide guitar has given way to a man in Santa Barbara with a voice like a bedroom, telling the Central Coast it’s two in the morning and he’s still here if they are. Down the coast the light comes around."
+   ],
+   "choices": [
+    {
+     "text": "Be the one who slows it.",
+     "tag": "Restraint",
+     "set": {
+      "e19_moon": "restraint",
+      "soul.restraint": "+1",
+      "resolve.jack": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "In a turnout where the coast turns, with the blanket around you both, you were the one who slowed it.",
+     "response": [
+      "He slows it. His hands go still on her, his mouth slow at hers, and he stays there, and doesn’t go anywhere else.",
+      "She laughs against his mouth. “You’re doing it again. The slow thing. It’s *infuriating*.” She sits back in his lap with the blanket on her shoulders and the moon behind her and shoves her hair off her face with both hands, and says it as one of her rules, the same as where she won’t drink: “Not in a car. I’m not seventeen.”"
+     ],
+     "goto": "s11a"
+    },
+    {
+     "text": "Let her lead.",
+     "tag": "Reckless",
+     "set": {
+      "e19_moon": "reckless",
+      "soul.restraint": "-1",
+      "resolve.jack": "-1",
+      "trait.reckless": "+1",
+      "rel.skye.heat": "+1"
+     },
+     "key": "In a turnout where the coast turns, you let her lead.",
+     "response": [
+      "He lets her lead, and she leads further. The camisole goes the way of the flannel, over her head and somewhere onto the floor of the Saab, and there is her skin and the moon on it and the gooseflesh coming up under his hands, and his mouth at the place where her collarbone ends, and her hands under his open shirt at the small of his back, pulling him up into her. The cold doesn’t seem to apply to her. Her heart is going hard enough that he can feel it in his own mouth.",
+      "When she says it — “Not in a car. I’m not seventeen.” — it’s into his hair, to herself as much as to him, and it takes her two tries to make it sound like a rule."
+     ],
+     "goto": "s11a"
+    },
+    {
+     "text": "Tell her out loud what you want.",
+     "tag": "Candor",
+     "set": {
+      "e19_moon": "candor",
+      "said_it_plain": true,
+      "said_it_plain_n": "+1",
+      "soul.honesty": "+1",
+      "rel.skye.trust": "+1",
+      "rel.skye.heat": "+1"
+     },
+     "key": "In a turnout where the coast turns, you told her out loud what you want.",
+     "response": [
+      "So he tells her. Her. This. That he thinks about it at the sink with his arms in the Hobart to the elbow, and on his father’s porch in his grandmother’s afghan, and at the 12:10 Mass, which he isn’t proud of. That he wanted it in the lot six days ago and on the plane and on the ramp at the harbor, and that he wants it now.",
+      "She takes his face in both her hands and looks at him in the moonlight, a long time, with the light coming around behind her down the coast. Then she kisses him once, hard, for saying it.",
+      "“Not in a car,” she says against his mouth. “I’m not seventeen.”"
+     ],
+     "goto": "s11a"
+    }
+   ]
+  },
+  "s11a": {
+   "slug": "SATURDAY · 2:45 AM · A TURNOUT WHERE THE COAST TURNS THE CORNER",
+   "set": {
+    "skye_no_home": true
+   },
+   "body": [
+    "After that it’s quieter. She stays in his lap with her forehead against his, and her hands stop moving on him. They lie still on his chest where she left them. She pulls the blanket up over both their shoulders, all the way, like there’s weather coming.",
+    "“I don’t take people home,” she says.",
+    "She leaves it at that. So he asks. “Why?”",
+    "“I’ve never wanted to yet.”",
+    "*Yet*, he hears. She leaves it in.",
+    "The light down the coast comes around and goes. It comes to him, with her weight on him and her breath on his face, that he doesn’t know where she sleeps when she’s up here.",
+    "They sit like that with the radio murmuring and the blanket over their heads, talking about nothing, the way they did on the porch. Whether sea lions have names for each other (“One name. They all just yell it.”). Whether there’s a keeper in the lighthouse (“Not since they automated it. It’s a machine now.” “That’s the saddest thing you’ve ever told me.”). What the Starlite’s lemon meringue would be if it were a person (“Bev.” “Bev *is* a person.” “Bev is a pie, Jack. Look at her.”). Eventually she lifts her head.",
+    "“How many candles now?” she says into his neck. “On your wreath.”",
+    "“One. Two tomorrow. Sunday.”",
+    "“So you’re halfway.”",
+    "“A quarter.”",
+    "“Don’t do math at me at three in the morning.” She thinks. “What do you do with the waiting, in between? Just — wait?”",
+    "“Mostly,” he says. “You’re supposed to stay awake.”",
+    "“You’re doing great,” she says.",
+    "Under the blanket she finds the St. Michael again, on its chain down his back, and brings it around to look at. “Who is he? Really.”",
+    "“The archangel. Michael. He threw the devil out of heaven.”",
+    "“Is he mad at me?”",
+    "“He’s seen worse.”",
+    "“That’s not a no,” she says, and lays it back where she put it.",
+    "“Say something in Italian.”",
+    "“I don’t speak Italian. I speak my grandmother.”",
+    "“Say something in your grandmother.”",
+    "He says the first thing that comes, the thing Nonna has said to every Costigan going out her storm door in his lifetime. “*Copriti.*”",
+    "“What’s it mean?”",
+    "“Put a sweater on.”",
+    "She looks down at herself, at what the blanket is and isn’t covering, and laughs until the seat creaks.",
+    "At 3:12 the Carhartt buzzes on the floor of the Saab. It buzzes again, and again. He fishes it out from under her flannel with her still against him, and opens it, and by reflex tilts it away from her toward the door. She doesn’t see the screen. She sees his face. “That’s a bad face,” she says. “Is somebody dead?”",
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "fire alarm. priya is taking roll",
+     "time": "3:12 AM"
+    },
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "i said you were in the shower",
+     "time": "3:13 AM"
+    },
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "she said the building is on fire theo",
+     "time": "3:14 AM"
+    },
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "i said youre very devout about showers. where ARE you",
+     "time": "3:15 AM"
+    },
+    "“Somebody’s on fire. The building. Fire alarm,” he says. “My RA takes roll.”",
+    "Skye is already climbing back over the gearshift into her own seat, pulling the flannel on over her head inside out. “A getaway,” she says, delighted. “I’ve always wanted to do a getaway.”",
+    "She drives the coast back like a scene she’s waited her whole career to play: top down, radio off, both hands on the wheel at last, the Saab complaining on the grades in a voice he has never heard it use, her cap gone somewhere under the seat, her flannel inside out, stone sober and grinning at the road. She takes the cattle guard at forty and the ranch road’s dust goes up white behind them in the moon. On the highway she passes Duane, or somebody very like him, and gives him a two-tap on the horn. At the top of the grade she reaches over without looking and puts her cold hand flat inside his open shirt, over his heart, and leaves it there for a mile, driving one-handed, like she’s checking it’s still going.",
+    "Somewhere past Ellery his back goes cold in one small place, and he reaches over his shoulder for the St. Michael where she put it, and brings it around on its chain, and settles it back where it goes."
+   ],
+   "next": "s12"
+  }
+ }
+}

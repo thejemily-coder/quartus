@@ -1151,3 +1151,18 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     - **FLAG FOR THE ROOM (player likes it; room decides):** consider making this a player choice (open it, or delete
       it unopened), with stat and resolve effects. **The room decides whether it fits, how his response plays given his
       arc at that point, and whether Lena is watching.**
+- **Living the liturgical year together (player; after they've been together a while, i.e., sophomore year on).** Jack
+  and Lena start keeping the liturgical seasons **together and communally**: Lent, Easter, Hallowtide (Halloween, All
+  Saints, All Souls), Advent, Christmas and the major feasts (which they keep anyway), **plus older customs no longer
+  required**: St. Michael's Lent (Aug 15 – Sep 29), Ember Days, and the like. Extends "future Lents: a whole plan
+  together."
+  - **Period accuracy (2010–2013):** this existed but was **niche**: traditionalist circles after *Summorum Pontificum*
+    (2007), the Fish Eaters website, early Catholic family blogs. The phrase "liturgical living," the Instagram scene,
+    and the big Ember Days and St. Michael's Lent revivals are **late 2010s** (Ember Days surged after the 2018 abuse
+    crisis). **Don't use the phrase "liturgical living" or treat it as a trend.** They find it the 2010 way: **Jack
+    reads his way in** (Weiser's *Handbook of Christian Feasts and Customs*, 1958; Maria von Trapp's *Around the Year
+    with the Trapp Family*, 1955; Fish Eaters), and the ensemble finds it eccentric.
+  - **Living traditions they bring with them:** Lena's **New Orleans** (Twelfth Night and king cake, St. Joseph's
+    altars on Mar 19, whitewashing and visiting the family tombs on All Saints, the Good Friday walk to nine churches)
+    and Jack's **Youngstown** Italian/Slavic Catholicism (Nonna's Feast of the Seven Fishes, a St. Joseph's table,
+    Christmas Eve customs). These carry the older practices, which they half-rediscover in books.
