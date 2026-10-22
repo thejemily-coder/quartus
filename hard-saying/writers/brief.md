@@ -1367,3 +1367,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Supersedes `outlines/s1e22.md`'s "E22 does not escalate."** The finale's Skye scenes (the Tuesday to-the-letter
     beat; the Thursday "what are we" goodbye) must also step up past E21, kept proportionate so the night with Lena
     stays the episode's heart.
+  - **The heat stays after the no (player).** A no doesn't cool the scene: the heat continues at full intensity,
+    **confined to the limit set** (to the letter), rather than ending or fading out. (Except the first no, which
+    stopped everything because she needed to understand.)
