@@ -1,0 +1,349 @@
+{
+ "scenes": {
+  "s09": {
+   "slug": "SATURDAY · 5:00 AM · OLD MISSION NUESTRA SEÑORA DEL MAR, MISSION STREET",
+   "music": "A parish mariachi — “Las Mañanitas”",
+   "set": {
+    "resolve.jack": "+1",
+    "resolve.lena": 5
+   },
+   "body": [
+    "Every door in the long white front of the Mission is open, and the light comes out of them onto Mission Street gold and unsteady, from more candles than Jack has ever seen in one place: tall glass ones with saints painted on them, along the sills, up the steps, in rows at the foot of the walls. Down the grade toward the harbor the town is still black. Families go up the steps out of the dark in coats and blankets, grandmothers on their sons’ arms, little kids in pajama pants under their parkas, carrying roses upright in their fists with the stems wrapped in wet paper towel.",
+    "Inside it’s standing room. At the head of the aisle, on an easel under a canopy of gold cloth, Our Lady of Guadalupe stands in her starred mantle with the sunburst all around her, and the roses are banked up to her hem — in buckets, in coffee cans wrapped in foil, loose in heaps on the altar steps — so red in the candlelight they’re nearly black. Under the choir loft a mariachi in black charro suits with silver down the legs is tuning in the cold that comes in the doors: two trumpets, three violins, a guitar, and a guitarrón with a belly on it like a wine barrel. On a card table just inside, two women are ladling champurrado out of a stockpot into paper cups and handing tamales out of a cooler, and nobody is paying for anything.",
+    "Rudy is halfway up on the left in a white shirt buttoned to the collar, his hair still wet from the comb, beside a small woman in a gray rebozo with her hands folded on the back of the pew in front. On Tuesday, over the Hobart’s steam, Rudy asked him: *Saturday, five in the morning, the Mission. My mother’s coming up from Oxnard. Come hear her sing.* Rudy sees him at the door and lifts his chin. His mother’s eyes are already shut, though nobody is singing yet.",
+    "In the last pew, in a black overcoat with the collar showing at his throat, a long way from his own altar, Father Osei lifts a hand to Jack and goes back to the hymn sheet.",
+    "Lena is at the end of a pew by the side aisle, in her coat, with the black lace mantilla over her hair. Julian is beside her with a cup of champurrado held under his chin for the warmth, leaning out over the end of the pew to ask the guitarrón player something about his tuning pegs, and the guitarrón player is showing him, one peg at a time. Lena turns when Jack comes in off the street alone. She takes in the hour, and the jacket he had on at the party.",
+    "“You’re up early, Youngstown.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "rudy",
+     "title": "Rudy (the Anchor)",
+     "text": "Line cook. Rosary on his wrist, a ballgame on the radio, Louis L’Amour in his apron. Did six years at Soledad. His mother came every other Sunday — three buses from Oxnard. Says: write him, even when there’s nothing to say. I told him about Rafi’s errand like a joke. ‘I know what an errand is, mijo.’ Opened the walk-in on me Tuesday. ‘Mijo. Lettuce.’ Took the lettuce himself. Saturday, five in the morning, the Mission: his mother came up from Oxnard for the Virgin and sang every verse with her eyes shut."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Never went to bed.”",
+     "tag": "Candor",
+     "set": {
+      "e21_early": "candor",
+      "soul.honesty": "+1",
+      "knows_lena_knocked": true
+     },
+     "key": "Under the roses at five in the morning Lena said you were up early. You told her you never went to bed. She said Theo told her you were at the library.",
+     "response": [
+      "“Never went to bed.”",
+      "“I know,” Lena says. “I knocked.” Down the pew Julian laughs at something the guitarrón player has told him. “Theo said you were at the library.”",
+      "She looks at the roses.",
+      {
+       "if": "e21_ride==\"lie\"",
+       "text": "“So did you.”"
+      },
+      "Up under the loft the first trumpet finds its note, and the guitarrón comes in beneath it, and the church gets up off its knees all at once."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "text": "“Couldn’t sleep.”",
+     "tag": "Lie",
+     "set": {
+      "e21_early": "lie",
+      "soul.honesty": "-1",
+      "knows_lena_knocked": true
+     },
+     "key": "Under the roses at five in the morning Lena said you were up early. You told her you couldn’t sleep. She said Theo told her you were at the library, at half past twelve.",
+     "response": [
+      "“Couldn’t sleep.”",
+      "“Theo said you were at the library,” Lena says. “At twelve-thirty.”",
+      {
+       "if": "e21_ride==\"lie\"",
+       "text": "She settles the mantilla where the draft from the door has moved it. “You said so too. At a quarter to eleven.”"
+      },
+      "She looks at the roses.",
+      "Up under the loft the first trumpet finds its note, and the guitarrón comes in beneath it, and the church gets up off its knees all at once."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "text": "“I never miss Our Lady.”",
+     "tag": "Wit",
+     "set": {
+      "e21_early": "wit",
+      "trait.wit": "+1",
+      "knows_lena_knocked": true
+     },
+     "key": "Under the roses at five in the morning Lena said you were up early. You told her you never miss Our Lady. She said Theo told her you were at the library.",
+     "response": [
+      "“I never miss Our Lady.”",
+      {
+       "if": "missed_holy_day",
+       "text": "“You missed her Tuesday.”"
+      },
+      {
+       "if": "e20_mass==\"dusk\"",
+       "text": "“You were two rows behind me Tuesday. You sang.”"
+      },
+      {
+       "if": "!missed_holy_day && e20_mass!=\"dusk\"",
+       "text": "“Mm.”"
+      },
+      "She turns back to the roses. “Theo said you were at the library.”",
+      "Up under the loft the first trumpet finds its note, and the guitarrón comes in beneath it, and the church gets up off its knees all at once."
+     ],
+     "goto": "s09a"
+    }
+   ]
+  },
+  "s09a": {
+   "slug": "SATURDAY · 5:40 AM · OLD MISSION, THE COURTYARD",
+   "set": {
+    "knows_juan_diego": true
+   },
+   "body": [
+    "By twenty to six there’s no room left inside, and the mariachi has come out onto the top step so the courtyard can have the song too, with the doors open behind them on the candles and the roses and the people kneeling on the stone. *Estas son las mañanitas*, the trumpets begin, and the courtyard takes it up in Spanish — the birthday song, the one you sing under somebody’s window before they’re awake. The cold comes up out of the flagstones through the soles of Jack’s shoes.",
+    "Rudy has brought his mother out onto the steps on his arm, and she sings every verse of it with her eyes shut. Her voice comes up out of the crowd thin and certain and a little sharp, over the violins. By the sound of it she has sung this every December of her life, and she isn’t about to start reading the words now. Rudy doesn’t sing. He stands a step below her with his hands behind his back and his head down, and leaves the song to her.",
+    "Lena sings it in Spanish with the families, badly, with her whole heart, getting about one word in three and singing the other two anyway. Beside her Julian has nothing to read off — no sheet, nobody’s shoulder — and by the second verse he has the tune, every turn of it, by ear, and is singing it under her in his easy baritone, a hair behind the words. Through the open doors Jack can see Father Osei in his pew, singing too, loudly, in a key that belongs to nobody else.",
+    "Over the harbor the dark has started, barely, to come apart from the hills.",
+    "Afterward the courtyard fills with steam and paper cups. Julian goes back to the card table for tamales, because the woman ladling called him *mijo* and he can’t get over it. Lena stands with Jack by the dry fountain with her champurrado and watches the doors.",
+    "“Everybody tells the roses,” she says, low. “Mama tells the roses. The nuns at the Rosary did the roses every December on a flannel board. I like the part before.”",
+    "“He was supposed to go back up the hill and see her. He said he would. And his uncle got sick — the fever that was killing everybody that year — so he stayed home and nursed him, and missed her. And then the uncle was dying, and Juan Diego went running for a priest in the dark, and he got to the hill, and he was late, and he was ashamed he hadn’t come back like he promised.” She turns her cup by the rim. “So he took the long way around. The far side of the hill. So she wouldn’t see him go by.”",
+    "On the steps the trumpets start another verse for the people still coming in off the street.",
+    "“And she came down the hill anyway,” Lena says. “Stood in his road.” She points with the cup at the banner over the doors, a bedsheet lettered by hand in red paint, the last words crowded together where whoever painted it ran short of sheet: ¿NO ESTOY YO AQUÍ, QUE SOY TU MADRE?",
+    "“*Am I not here? I, who am your mother?*” She drinks. “That’s what she said to a man taking the long way around. Then she told him his uncle was already well, and sent him up the hill for the roses. Everybody skips straight to the roses.”",
+    "The champurrado has gone cold in Jack’s hand, and the hand has started, very slightly, to shake, so he sets the cup down on the lip of the fountain and puts the hand in his pocket.",
+    "Julian comes back across the flagstones with three tamales on a paper plate. “Did you know the guitarrón has six strings,” he says, “and he tunes it by *ear*?”",
+    "Lena takes a tamale and peels the husk back with her thumbs and tells him she did know, and Julian says somebody might have told *him*, and over the courtyard the Mission’s bell starts in for the six o’clock."
+   ],
+   "next": "s10"
+  },
+  "s10": {
+   "slug": "SATURDAY · 3:35 PM · ST. BRENDAN’S, THE CONFESSION LINE",
+   "set": {
+    "resolve.lena": 6,
+    "skye_pics": "+1"
+   },
+   "body": [
+    "At twenty-five to four the sun is low over Las Olas and comes in sideways through the blue panes of St. Brendan’s, and lays a long blue light down the side aisle and over six folding chairs set in a row outside the coat closet. On the closet door, in capitals, on an index card: KNOCK (GENTLY). Mrs. Fitch has a card table beside it with the crossword and a plate of lemon bars under plastic wrap, and she is herself again — recovered from the punch, she tells the grandmother at the head of the line, by the grace of God and two aspirin.",
+    "Jack slept from seven to three in the Carhartt, and came across Ocean Road with his hair still flat on one side.",
+    {
+     "if": "e20_skip==\"candor\"",
+     "text": "Lena is in the second chair, and her cardigan is on the third. She lifts it off and hangs it over the back of her own. “I said I’d save you a place.” He sits in it."
+    },
+    {
+     "if": "e20_skip!=\"candor\"",
+     "text": "Lena is three chairs ahead, and turns around at the sound of the side door. “Youngstown.” He sits."
+    },
+    {
+     "if": "lena_unsigned && e20_skip!=\"candor\"",
+     "text": "The line moves up a chair, and then another, and she doesn’t turn around again."
+    },
+    "Halfway through the wait the 8-Ball comes out of Lena’s pocket. She shuts her eyes and holds it to her chest and asks it, under her breath but not far enough under, “Will I get a decade?” She shakes it once and turns it up to the blue light. *Signs point to yes.*",
+    "Mrs. Fitch, with her pencil on fourteen down: “Not in line, Miss Broussard.”",
+    "“Yes, ma’am.” It goes back in the pocket.",
+    "At three forty-one the RAZR goes off inside the Carhartt, against his ribs — twice, short, the double buzz of a picture message. He tips the pocket open far enough to see the outer screen: the little envelope. He doesn’t open it.",
+    "Mrs. Fitch fills in a square. “Nor you, Mr. Costigan.”",
+    "His hand goes over the pocket and keeps it there.",
+    "Lena’s eyes go to the hand. They stay on it while the closet door opens and a graduate student comes out with his hands jammed in his pockets and his face carefully arranged, and then they go to the door, and it’s her turn. She knocks, gently, and goes in.",
+    "She’s in there six minutes by the clock over the choir loft. When she comes out she’s pink around the eyes and very straight in the back, and she goes past the line to the Marian shrine in the side aisle, and puts a folded dollar in the box, and lights a votive off one that’s already burning, and kneels on the step in front of the rack with her hands folded on the rail.",
+    "The closet door is standing open. It’s his turn."
+   ],
+   "choices": [
+    {
+     "text": "Go in.",
+     "tag": "Grace",
+     "set": {
+      "e21_conf": "grace",
+      "soul.grace": "+1"
+     },
+     "key": "On Saturday you went into the box and told Father Osei about a week of her, and the door you left open.",
+     "goto": "s10a"
+    },
+    {
+     "text": "Step out of the line.",
+     "tag": "Drift",
+     "set": {
+      "e21_conf": "drift",
+      "soul.grace": "-1",
+      "resolve.jack": "-1"
+     },
+     "key": "On Saturday, with her picture in your pocket, you stepped out of the confession line.",
+     "goto": "s10b"
+    }
+   ]
+  },
+  "s15a": {
+   "slug": "SUNDAY · 10:20 AM · SULLY’S, MISSION STREET",
+   "set": {
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "Sully’s on a Saints morning is every television in the place talking at once, the brass bell over the corner table, and the end of the first quarter going to commercial as Jack comes in out of the cold at twenty past ten. The table under the bell is Lena’s. She is up on the rung of her chair in black and gold with the cardigan knotted around her waist and the rope already off its cleat. Beside her Julian has a ginger ale and is learning a second religion, patiently. Joey Abruzzo is across from them in somebody’s Saints cap two sizes too small for him. Kevin has the end of the table, the napkin squared in front of him and the golf pencil beside it.",
+    "Laney has her forehead on the table and her enormous sunglasses on top of her head. “I am in mourning,” she tells the tabletop, “and I am in pain. It’s a lot.”",
+    "At the end of the bar Dale Wisniewski is on his stool in the Barry Sanders jersey, and the owner has put the Lions on the set over the dartboard, in Baltimore, where it is going the way it usually goes.",
+    "Jack has salt dried white in his hair and sand still in the creases of his knuckles, and the cold of the water is somewhere under his sweatshirt yet. Lena doesn’t turn around from the screen.",
+    "“You smell like the ocean, Youngstown.”",
+    "Julian moves his chair over to make room, and Kevin moves the napkin, and the second quarter kicks off.",
+    "It’s close all day, the kind of close that won’t let anybody at the table finish a plate of anything. Lena rings for every score and glares at the screen through everything else. Julian asks Kevin what a two-minute drill is, and means it, and Kevin draws him one on the corner of the napkin with arrows. Laney lifts her head for a field goal, says “Good for him,” and puts it back down. At the end of the bar the Lions get worse every time Jack checks on them, and Dale watches every snap of it anyway, and tips the bartender in quarters.",
+    "In the fourth Hartley comes out to kick from thirty-eight with four forty-two left. Lena stops ringing and holds the rope in both fists, and the bar goes quiet for the holder, and it’s good. Then it’s the Falcons’ ball, and four minutes, and most of Sully’s can’t look. Lena can. She is standing on the rung with the rope wound twice around her hand and her knuckles white on it.",
+    "“Don’t you *dare*,” she tells the Saints. “Thirteen. Don’t you *dare*.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "dale",
+     "title": "Dale (Sully’s)",
+     "text": "Dale Wisniewski. A Lions fan alone at the end of Sully’s bar in a Barry Sanders jersey. Warren, Michigan — not the other one. Tips in quarters. Said the rookie’s going to be good. Lions 38, Browns 37, on the last play. He bought me a root beer: the only man in California who knows what that cost. Thirteen and oh. Lena gave him the rope. For Detroit."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Get up on the chair rung with her.",
+     "tag": "Sincerity",
+     "set": {
+      "e21_atl": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "He gets up and steps onto the rung of the next chair, so his head is level with hers under the bell. She grabs a fistful of his sweatshirt at the shoulder and hangs on, and the two of them stand up there over the table like lookouts on a mast while the Falcons come down the field, and she doesn’t let go of the sweatshirt for any of it.",
+      "And then there’s no clock left, and it’s thirteen and oh.",
+      "Lena rings it. She rings it until the glasses on the back bar answer, and Laney takes the sunglasses off to look at the ceiling, and Joey is standing on his chair, and Sully’s comes up all around her. Then she stops, and unwinds the rope from her fist, and holds it out — past Julian, past Jack, down the length of the bar, as far as it will go — to the man in the Barry Sanders jersey.",
+      "“For Detroit, Dale.”",
+      "Dale looks at the rope. On the set over the dartboard the Lions are still losing in Baltimore, by more than he’d care to say. He gets down off his stool and comes down the bar, and takes the rope in one big, careful hand, and rings it — once, and then again, harder, and a third time for Detroit. Sully’s cheers him like he kicked it himself. He goes back to his stool and leaves a quarter on the bar for the bell.",
+      "Kevin prints 13–0 on the napkin in capitals. Under it, before he puts the golf pencil down, he adds a line: ADVENT III — GAUDETE."
+     ],
+     "goto": "s15c"
+    },
+    {
+     "text": "“Thirteen’s unlucky.”",
+     "tag": "Wit",
+     "set": {
+      "e21_atl": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Thirteen’s unlucky.”",
+      "“For *Atlanta*,” Lena says, and keeps her eyes on the screen.",
+      "And then there’s no clock left, and it’s thirteen and oh.",
+      "Lena rings it. She rings it until the glasses on the back bar answer, and Laney takes the sunglasses off to look at the ceiling, and Joey is standing on his chair, and Sully’s comes up all around her. Then she stops, and unwinds the rope from her fist, and holds it out — past Julian, past Jack, down the length of the bar, as far as it will go — to the man in the Barry Sanders jersey.",
+      "“For Detroit, Dale.”",
+      "Dale looks at the rope. On the set over the dartboard the Lions are still losing in Baltimore, by more than he’d care to say. He gets down off his stool and comes down the bar, and takes the rope in one big, careful hand, and rings it — once, and then again, harder, and a third time for Detroit. Sully’s cheers him like he kicked it himself. He goes back to his stool and leaves a quarter on the bar for the bell.",
+      "Kevin prints 13–0 on the napkin in capitals. Under it, before he puts the golf pencil down, he adds a line: ADVENT III — GAUDETE."
+     ],
+     "goto": "s15c"
+    },
+    {
+     "text": "Watch the screen.",
+     "tag": "Restraint",
+     "set": {
+      "e21_atl": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He watches the screen. At the edge of it her boots go up on their toes on the rung at every snap, and come down again.",
+      "And then there’s no clock left, and it’s thirteen and oh.",
+      "Lena rings it. She rings it until the glasses on the back bar answer, and Laney takes the sunglasses off to look at the ceiling, and Joey is standing on his chair, and Sully’s comes up all around her. Then she stops, and unwinds the rope from her fist, and holds it out — past Julian, past Jack, down the length of the bar, as far as it will go — to the man in the Barry Sanders jersey.",
+      "“For Detroit, Dale.”",
+      "Dale looks at the rope. On the set over the dartboard the Lions are still losing in Baltimore, by more than he’d care to say. He gets down off his stool and comes down the bar, and takes the rope in one big, careful hand, and rings it — once, and then again, harder, and a third time for Detroit. Sully’s cheers him like he kicked it himself. He goes back to his stool and leaves a quarter on the bar for the bell.",
+      "Kevin prints 13–0 on the napkin in capitals. Under it, before he puts the golf pencil down, he adds a line: ADVENT III — GAUDETE."
+     ],
+     "goto": "s15c"
+    }
+   ]
+  },
+  "s16a": {
+   "slug": "SUNDAY · 10:05 PM · ST. BRENDAN’S, THE STEPS",
+   "body": [
+    "Out on the steps the cold has come down hard and clear, and the stars are out over the Grove as far as the water. Behind them through the open doors the rose candle is still burning on the wreath, and Gus is playing the church empty.",
+    "Lena stops on the top step to button her coat. “Gus let a Christmas carol into Advent.”",
+    "“It was in Latin.”",
+    "“That’s what Father Osei said.”",
+    "Julian goes down for the car. Kevin waits on the bottom step with his hands in the pockets of his quarter-zip. Lena takes the 8-Ball out of her coat pocket and shuts her eyes and asks it something, without moving her lips, and shakes it, and turns it up to the light over the doors to read it.",
+    "She laughs, surprised into it, and turns the little window around to show him.",
+    "*BETTER NOT TELL YOU NOW.*",
+    {
+     "if": "e21_tag==\"candor\"",
+     "text": "“Your toy’s a coward, Jack.”"
+    },
+    {
+     "if": "e21_tag==\"nicholas\"",
+     "text": "“Your saint’s a coward.”"
+    },
+    {
+     "if": "e21_tag!=\"candor\" && e21_tag!=\"nicholas\"",
+     "text": "“This thing’s a coward.”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“What did you ask it?”",
+     "tag": "Sincerity",
+     "set": {
+      "e21_last": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“What did you ask it?”",
+      "Lena looks at him over the top of the ball, with the laugh still at the corners of her mouth. “Better not tell you now.” She puts it in her pocket."
+     ],
+     "goto": "s16e"
+    },
+    {
+     "text": "“Ask it about Hale.”",
+     "tag": "Wit",
+     "set": {
+      "e21_last": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Ask it about Hale.”",
+      "She shakes it again and squints at the window. *Outlook good.* “It’s a liar,” Lena says. “I’m keeping it.”"
+     ],
+     "goto": "s16e"
+    },
+    {
+     "text": "Say nothing.",
+     "tag": "Restraint",
+     "set": {
+      "e21_last": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He doesn’t say anything. She looks at the little window longer than it takes to read it, and turns it face down in her palm, and puts it away."
+     ],
+     "goto": "s16e"
+    }
+   ]
+  },
+  "s16e": {
+   "slug": "SUNDAY · 10:10 PM · OCEAN ROAD",
+   "body": [
+    "Julian’s headlights come along Ocean Road and stop at the curb below the steps, and he leans across inside and pushes the passenger door open. Lena goes down past Kevin with her hand in her coat pocket, and stops at the bottom, and looks back up.",
+    "“Goodnight, Jack.”",
+    "“Goodnight, Lena.”",
+    "Kevin says goodnight to Julian through the open door, and Julian says it back, and the door shuts, and the car pulls out toward Mission and goes. The RAZR in Jack’s pocket is on, and quiet.",
+    "He walks back across Ocean Road with Kevin, toward the lit windows of Delgado and the last week of the semester."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "if": "!missed_saints_13",
+     "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t. On a motel porch above Lucia at three in the morning she told me I can’t say her name like that. She asked what I decided. Not to be the one who wrecks anything, I said. She said okay. Then: me neither. Bought her Mémère a fruitcake from the monks, in exact change. ‘A girl writes the thing she wants first, Youngstown.’ Halloween: Flannery O’Connor, with a stuffed peacock tagged 57. Andalusia. She wouldn’t go past the last house on Seacliff, not even for Laney. ‘I came as her. I never said she was right.’ In the last minute of the extra hour, she put my hat back on. All Souls: she wrote her grandmother’s name in the book, and Nora Calloway’s. Nora was her host at Preview Weekend, in April. That night Wes ended it, on the phone, on the east stairs. He stopped going to Mass in September. There’s a ring. She knew something in September and decided not to notice — she says she’s good at it. At six in the morning she asked me what I’m going to do. She wrote Hale twelve pages in the spring of ’08, two years after the year she yelled at God. She’s had the same postcard the whole time. She knew mine on the porch. She had a house picked out on Zimple Street. A fig tree. She’d picked the paint. Veterans Day, on the bench above Campus Point: St. Martin gave the beggar half his cloak; she says everybody forgets the beggar took it. No. 9 for the reliquary. Friday the 13th, under the eucalyptus, in the middle of a sentence about monarchs: Julian asked her to dinner. So. Thursday night in the basement she played the piano properly — around the dead F. The last time she played it right in front of anybody was a November, four years ago. If you play well, she says, people ask you to play. Reading *New Moon* out of spite. Friday she signed the Manhattan Declaration from bed, with a cold. Two soups. She ate Julian’s. Mine’s on the sill for tomorrow. Ate Gloria’s soup cold out of the quart, at the sill, at six in the morning. Argued YES: a promise is made to a person, not to a reason. Wrote on my paper that I don’t believe one sentence of it. Neither does she. Mémère is lighting a candle for Nonna — the whole name. Half a name is half a candle. At the airport: Our Lady of Prompt Succor, for Nonna. She works fast. Thanksgiving: Theo said *pop* to the whole Broussard table. She asked about Theo, and Nonna, and her saint. Julian called during grace. Wes was in the kitchen. ‘Go back to your family, Youngstown.’ Handed Julian the bell rope at Sully’s. Knows I don’t work Mondays. Texted at two in the morning about Yusuf’s mother. On the lawn at four, looking at the place I wasn’t. Came to the Anchor at the end of my shift in Kevin’s car — Julian’s in Oakland, his brother’s home from the Navy. She has a paper. St. Nicholas Eve: Walgreens at half past one. I told her about Ma’s two hundred shoes; she said then we’re doing it, and we did every door in Delgado. Says I hold my phone like a hand of cards. Asked where I go. I said sometime. She said okay. Book Nine, for her Greek final: *Outis*. Nobody. In the laundry room she stepped back first. ‘Don’t make me be the one who wrecks something.’ Julian’s writing something she can’t hear yet. Twelve and oh in overtime. Her free hand found Kevin. Knows Book Nine by heart; asked me to pray at eight. Picked my best argument at the Brick: what a man says yes to. Put her phone face up next to mine and said nothing. Heard Julian’s song before anybody. ‘It’s good, Jack. It’s really good.’ Told me not to leave in the second chorus. The Advent party: brought coffee to the white elephant, and I got it. Stole my 8-Ball. Won an argument about ‘Joy to the World’ with Isaac Watts. Didn’t play. Julian did. Friday at half past twelve she knocked on 412; Theo said the library. At the Mañanitas she told me about Juan Diego, who took the long way around the hill. Thirteen and oh — she gave the rope to Dale. After the Gaudete Mass she asked the 8-Ball something. Better not tell you now."
+    },
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "if": "missed_saints_13",
+     "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t. On a motel porch above Lucia at three in the morning she told me I can’t say her name like that. She asked what I decided. Not to be the one who wrecks anything, I said. She said okay. Then: me neither. Bought her Mémère a fruitcake from the monks, in exact change. ‘A girl writes the thing she wants first, Youngstown.’ Halloween: Flannery O’Connor, with a stuffed peacock tagged 57. Andalusia. She wouldn’t go past the last house on Seacliff, not even for Laney. ‘I came as her. I never said she was right.’ In the last minute of the extra hour, she put my hat back on. All Souls: she wrote her grandmother’s name in the book, and Nora Calloway’s. Nora was her host at Preview Weekend, in April. That night Wes ended it, on the phone, on the east stairs. He stopped going to Mass in September. There’s a ring. She knew something in September and decided not to notice — she says she’s good at it. At six in the morning she asked me what I’m going to do. She wrote Hale twelve pages in the spring of ’08, two years after the year she yelled at God. She’s had the same postcard the whole time. She knew mine on the porch. She had a house picked out on Zimple Street. A fig tree. She’d picked the paint. Veterans Day, on the bench above Campus Point: St. Martin gave the beggar half his cloak; she says everybody forgets the beggar took it. No. 9 for the reliquary. Friday the 13th, under the eucalyptus, in the middle of a sentence about monarchs: Julian asked her to dinner. So. Thursday night in the basement she played the piano properly — around the dead F. The last time she played it right in front of anybody was a November, four years ago. If you play well, she says, people ask you to play. Reading *New Moon* out of spite. Friday she signed the Manhattan Declaration from bed, with a cold. Two soups. She ate Julian’s. Mine’s on the sill for tomorrow. Ate Gloria’s soup cold out of the quart, at the sill, at six in the morning. Argued YES: a promise is made to a person, not to a reason. Wrote on my paper that I don’t believe one sentence of it. Neither does she. Mémère is lighting a candle for Nonna — the whole name. Half a name is half a candle. At the airport: Our Lady of Prompt Succor, for Nonna. She works fast. Thanksgiving: Theo said *pop* to the whole Broussard table. She asked about Theo, and Nonna, and her saint. Julian called during grace. Wes was in the kitchen. ‘Go back to your family, Youngstown.’ Handed Julian the bell rope at Sully’s. Knows I don’t work Mondays. Texted at two in the morning about Yusuf’s mother. On the lawn at four, looking at the place I wasn’t. Came to the Anchor at the end of my shift in Kevin’s car — Julian’s in Oakland, his brother’s home from the Navy. She has a paper. St. Nicholas Eve: Walgreens at half past one. I told her about Ma’s two hundred shoes; she said then we’re doing it, and we did every door in Delgado. Says I hold my phone like a hand of cards. Asked where I go. I said sometime. She said okay. Book Nine, for her Greek final: *Outis*. Nobody. In the laundry room she stepped back first. ‘Don’t make me be the one who wrecks something.’ Julian’s writing something she can’t hear yet. Twelve and oh in overtime. Her free hand found Kevin. Knows Book Nine by heart; asked me to pray at eight. Picked my best argument at the Brick: what a man says yes to. Put her phone face up next to mine and said nothing. Heard Julian’s song before anybody. ‘It’s good, Jack. It’s really good.’ Told me not to leave in the second chorus. The Advent party: brought coffee to the white elephant, and I got it. Stole my 8-Ball. Won an argument about ‘Joy to the World’ with Isaac Watts. Didn’t play. Julian did. Friday at half past twelve she knocked on 412; Theo said the library. At the Mañanitas she told me about Juan Diego, who took the long way around the hill. Thirteen and oh. She texted me the number. After the Gaudete Mass she asked the 8-Ball something. Better not tell you now."
+    }
+   ],
+   "end": true
+  }
+ }
+}

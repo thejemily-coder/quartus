@@ -1344,3 +1344,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     have something to look forward to in January…"). **He looks, with Lena's night still on him. Cut to black.**
   - **Supersedes the finale plan's "no picture rung / Skye sends no picture in E22"**: the big jump lands here (per
     the E21 answers). Showrunner/Architect: reconcile `outlines/s1e22.md`.
+- **The "what are we" talk (player; confirms accelerated-sequence step 8; lands in S1E22, their last night together
+  before break).** Jack and Skye's **big in-person talk about what they are to each other** must be a **full scene**,
+  not a line: she suggests they **stay like this a few more weeks** because **Christmas, New Year's and long
+  distance** are a lot of pressure on a new relationship, and that they **become a thing when he gets back in
+  January**. (It's the sincere version of the strange hours: she's protecting something she wants to keep.)
