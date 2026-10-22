@@ -990,3 +990,5 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     it leads to the lengthy conversation about why (his faith, all of it) and **her first big moment of vulnerability**
     ("scared he thinks she's a whore"), as designed earlier. After that, January–February brings the increasingly
     effective repeat attempts.
+- **After S1E16 (player feedback).** "Great episode. Skye was amazing. Theo was great, Laney was hilarious. The early
+  scenes with Lena were perfect."
