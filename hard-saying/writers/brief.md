@@ -1261,3 +1261,18 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The last exchange before Jack walks away (player; adapt, near-verbatim).** Laney, **more pleading than angry**:
     "She was really upset, Jack, and she didn't have anyone." Jack, **still just as angry**: **"Yeah, well. So was I."**
     He leaves her standing there. (Laney's line explains Julian; Jack's is the hurt he's never admitted to anyone.)
+- **Skye's managed public life meets Jack (player; S2, January 2010 on).** Her public life is tightly scripted and
+  managed, so Jack becoming her public boyfriend is **a thing for her team too**. All four of these land (room places
+  and paces them):
+  1. **The team vets him.** Her publicist/manager wants to know who he is before anything goes public: a lunch that's
+     really an interview, a Google of his name, rules about photos and what he says. Skye finds it humiliating and
+     funny; Jack is out of his depth.
+  2. **She goes official herself.** The team wants a slow, managed reveal; **Skye changes her Facebook status herself,
+     without asking**: the one unscripted thing in her public life. That's why it's sudden, and why it means more than
+     Jack knows.
+  3. **Gossip sites notice.** A paparazzi or fan shot (beach, the Saab, maybe Mass) turns up on a gossip blog or a
+     "who's her mystery guy" item (period: TMZ, Perez Hilton, Just Jared, blind items; Twitter is new). **Gina finds it
+     first.** Lena sees the public surface this way (photos, never the private texts).
+  4. **The Danny problem.** Her team finds out his brother is in prison: a tabloid hook waiting to happen for the
+     network's "good girl." **Skye refuses to care**, and it becomes a quiet test of who she is. (Never a cheap villain:
+     the team is doing its job.)
