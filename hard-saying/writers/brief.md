@@ -837,7 +837,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **She keeps trying to get him to have sex**: seduction, plain asking ("unafraid of want"), escalation. **Jack is
     pushed to the brink often.** The resolve system bites hard here (Jack's resolve drops; choices let the player hold
     or slide right up to the line; the line itself never breaks, per HARD RULE).
-  - **Consent stays clean, and she keeps trying (player):** she never coerces; in the moment his "no" (or "not that")
+  - **Consent stays clean, and she keeps trying (player):** she never coerces; in the moment his "no" (or "not that") [see the later refinement: the no covers sex only]
     stops things. But **she never takes the no as final**: another night she tries again, persuasive, playful and
     sometimes less clothed, because **being refused frustrates her and she kind of enjoys it** (the first "no" she's
     ever met that isn't a negotiation becomes a game she can't stop playing). Her persistence is the pressure on Jack's
@@ -1059,3 +1059,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   as sexual assault.** Desire, mutual escalation and Jack's "no" stopping things remain as written; it's the
   procedural check-ins that go. Supersedes any earlier "consent guard" phrasing that called for on-page beats; the
   hard rules (no coercion, no assault, the line never breaks) are unchanged.
+- **What Jack's "no" covers with Skye (player, standing; refines "Consent stays clean").** His no is **about sex
+  only**, not intimacy. It does **not** have to end the making out or the rest of what they're doing.
+  - **The first time is the exception:** the first no stops everything, because Skye needs to understand what just
+    happened (the long conversation about why).
+  - **After that:** she might stop everything if she gets frustrated enough, but since it's a game to her (she's never
+    been told no except as a negotiation), **she most likely doesn't stop. She respects the no strictly to the letter**
+    and keeps everything else going, right up against it. That's where the pressure on his resolve comes from.
