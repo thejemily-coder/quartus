@@ -1321,3 +1321,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   the way through. **Jack is falling for her hard, and for every part of her**, and **she is falling for him too.**
   Never let the heat/resolve thread crowd out the arguments, the jokes, the dares and the plain joy of being with
   her. Each Skye episode should carry at least one beat of each (Voice Editor and Showrunner check this).
+  - **E21 confession content (player).** Jack tells Osei that **she was curious and receptive** to what he said, that
+    she was **worried what he thought of her**, and that **she said she'd meet him in daylight, teach him to surf**.
+    It all sounds hopeful, and it's part of **why Osei is tender this time** (alongside Jack having stopped and
+    talked it through). Osei can gently take up the daylight (his own "keep her in the daylight" counsel, answered).
