@@ -1174,3 +1174,5 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     break has begun and Jack is back in Youngstown, **Theo asks Jack to ask his parents if he can fly in for just
     Christmas Eve and Christmas Day** before heading back to LA. (They obviously tell him to come.) **Theo's LA run-in
     with Skye happens before or after that visit** (room's call). Affects S2E01's Christmas.
+- **After S1E18 (player feedback).** "Great episode." **Theo and the family were wonderful**; **Skye was great through
+  texts and especially the phone call**; **so was Lena.**
