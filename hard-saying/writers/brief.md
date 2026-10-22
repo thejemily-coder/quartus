@@ -1170,3 +1170,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   to Youngstown for as much as he can come**: Thanksgivings, Christmas breaks (a few days up to the whole break), and
   summers (default: the Fourth of July, but for as long as he wants to stay). Exception: the holidays Jack spends in
   New Orleans instead; **the Costigans may invite Theo anyway**. Theo becomes a fixture of Glenwood Avenue.
+  - **Christmas 2009 (player):** Jack invites him; Theo has things going on and **starts the break in LA**. After the
+    break has begun and Jack is back in Youngstown, **Theo asks Jack to ask his parents if he can fly in for just
+    Christmas Eve and Christmas Day** before heading back to LA. (They obviously tell him to come.) **Theo's LA run-in
+    with Skye happens before or after that visit** (room's call). Affects S2E01's Christmas.
