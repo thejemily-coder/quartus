@@ -877,3 +877,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   heat). It's a key humanizing beat: the child-star wound under the play, and the first sign that his "no" lands on her
   as possible judgment. The room should make his best answer genuinely good: Catholic teaching on her dignity, not
   condemnation.
+- **E15–E17 design round 1 (player).**
+  - **E15: Lena tells Jack about Julian casually, too casually**, mid-conversation as an aside ("Oh, Julian asked me
+    to dinner, so."), watching his face while pretending not to. He smiles and says the right thing.
+  - **E16: where and how Jack ends it with Becca:** room decides (truest version).
+  - **E17: the Skye meet, the lead-in.** After breaking up with Becca, **Jack has a bad couple of days and nights**. If
+    anyone asks, he pretends it's about Becca, but it's clearly about Lena. **Theo and Laney know instantly**; if they
+    tell Lena, **she doesn't believe them**. **Theo drags him to a party**, deliberately *not* to meet another girl, just
+    to have fun and get his head right for when Lena's available again (alliance logic). **Theo then loses him, and Jack
+    finds his way over to Skye on his own.** Dramatic irony for later: Theo brought Jack to a party in his own LA-kid
+    orbit where his childhood friend Skye was; he didn't see them meet (he confirms his suspicions only at Christmas).
+  - **E17: the book is Flannery O'Connor's "A Good Man Is Hard to Find"** (for a role). Skye has annotated the
+    grandmother's final gesture ("Why you're one of my babies…") as pure manipulation; Jack, who believes in grace,
+    can't let it go. Their first argument is about grace.
