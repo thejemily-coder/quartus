@@ -24,10 +24,6 @@
      "else": "“Costigan,” he says gently, to the screen. “Do you *like* things now?”"
     },
     {
-     "if": "e18_cannoli==\"candor\"",
-     "text": "He scrolls on. “You were going to say something on Sunday,” he adds. “Over the cannoli.” He keeps scrolling, and he leaves no room in it for an answer."
-    },
-    {
      "if": "e18_cannoli==\"wit\"",
      "text": "He scrolls on. “How’s Nonna’s guy?”"
     },
@@ -87,9 +83,13 @@
     "Sully’s is a noise before it’s a room. The *Monday Night Football* music is coming out of every set at once — the big screen over the bar, the tube in the corner, the one over the dartboard — and under it forty people are talking at the top of their lungs about a football team most of them couldn’t have found on a map in August. It’s full on a Monday because Lena told the Newman Center, and the Newman Center came: Peter and Kenzie in a booth with a pitcher of root beer, two of the Veritas missionaries, and Joey Abruzzo, who is a Giants fan from Staten Island, in a borrowed Saints cap he keeps taking off to argue with.",
     "Lena has the chair under the brass bell, in black and gold, and her voice is back. Eight days ago it was a gravel road. Tonight it’s all of New Orleans again, and she’s spending it on a referee.",
     "Julian is on the stool beside her in a cardigan, with a pencil behind his ear and a ginger ale. Under the ginger ale there’s a bar napkin with five lines ruled across it in ballpoint, very straight, and some marks sitting on the lines. Every so often he slides it out of the wet ring, looks at it, and puts it back.",
-    "Kevin keeps score on a napkin of his own with a golf pencil, two neat columns, and up the margin, in a box, the day’s other news: WEIS — FIRED. Laney, in a Pi Lam sweatshirt with her hair up in a clip, gives the screen her pageant wave when the Saints come out of the tunnel — wrist, wrist, elbow, elbow — and then sits down and starts on Lena’s fries.",
+    "Kevin keeps score on a napkin of his own with a golf pencil, two neat columns, and up the margin, in a box, the day’s other news: WEIS — FIRED. TIGER — WD. Laney, in a Pi Lam sweatshirt with her hair up in a clip, gives the screen her pageant wave when the Saints come out of the tunnel — wrist, wrist, elbow, elbow — and then sits down and starts on Lena’s fries.",
     "“Theodore doesn’t do Mondays,” she reports. “He said it like it was a diagnosis.”",
     "“He told me Mondays are a social construct,” Kevin says, without looking up from the napkin. “I told him so is orgo. He said *exactly*.”",
+    "Every few plays the bottom of the big screen runs it again, and the booths have been running it all night anyway: Tiger Woods has pulled out of his own tournament, down in Thousand Oaks, on account of his injuries from the car. “His *own* tournament,” Joey says to the whole booth, in the borrowed cap. “You don’t skip your own tournament. That’s skipping your own wedding.”",
+    "“His wife took a golf club to the back window of that car, Joey,” Laney says, with a fry. “I’d skip it too.”",
+    "“To get him *out*,” Kevin says, without looking up from the napkin. “The police said she was getting him out.”",
+    "Laney eats the fry. “That’s one reading.”",
     "Brees gets the ball, and keeps getting it. Every time the Saints score, the owner unties the rope from its cleat and Lena goes up on the rung of her chair and rings the bell until the glasses on the shelf behind the bar start answering it.",
     "On the third touchdown she takes the rope from the owner, turns around on the rung, and holds it down to Julian.",
     "He looks at it, and stands, and takes it, and rings it carefully, the way you’d ring a church bell — three strokes, each one a count behind where the room wants it. Lena laughs at him, at the bell, at the whole bar, and does the WHO DAT for both of them. Jack, across the table, watches the rope go back to its cleat.",
@@ -696,7 +696,7 @@
        "text": "Thursday section, Hollis 108. Kierkegaard. Kind to the scared ones, murder on the lazy ones. Smokes American Spirits. Rides a bike. Came back from PERSONAL grayer. Told us we’d left out a driver. Says Kierkegaard was engaged once, gave back the ring, and wrote about her for the rest of his life. Gave back the midterms, then read us Kierkegaard on recollecting the dead — the freest love, because they can’t pay you back. Couldn’t finish the paragraph. After the last section: the man in the white jacket. Was he at Preview Weekend last April? I don’t know. Don’t tell him I asked. I gave him Theo’s name."
       }
      ],
-     "goto": "s09"
+     "goto": "s08a"
     },
     {
      "text": "“Why?”",
@@ -723,7 +723,7 @@
        "text": "Thursday section, Hollis 108. Kierkegaard. Kind to the scared ones, murder on the lazy ones. Smokes American Spirits. Rides a bike. Came back from PERSONAL grayer. Told us we’d left out a driver. Says Kierkegaard was engaged once, gave back the ring, and wrote about her for the rest of his life. Gave back the midterms, then read us Kierkegaard on recollecting the dead — the freest love, because they can’t pay you back. Couldn’t finish the paragraph. After the last section: the man in the white jacket. Was he at Preview Weekend last April? I don’t know. Don’t tell him I asked."
       }
      ],
-     "goto": "s09"
+     "goto": "s08a"
     },
     {
      "text": "“Gatsby? He’s in English.”",
@@ -749,6 +749,180 @@
        "title": "Evan Marsh (TA)",
        "text": "Thursday section, Hollis 108. Kierkegaard. Kind to the scared ones, murder on the lazy ones. Smokes American Spirits. Rides a bike. Came back from PERSONAL grayer. Told us we’d left out a driver. Says Kierkegaard was engaged once, gave back the ring, and wrote about her for the rest of his life. Gave back the midterms, then read us Kierkegaard on recollecting the dead — the freest love, because they can’t pay you back. Couldn’t finish the paragraph. After the last section: the man in the white jacket. Was he at Preview Weekend last April? I don’t know. Don’t tell him I asked."
       }
+     ],
+     "goto": "s08a"
+    }
+   ]
+  },
+  "s08a": {
+   "slug": "THURSDAY · 9:00 PM · THE ANCHOR, THE BACK STEP",
+   "body": [
+    "He gets his ten at nine and takes it on the back step, between the walk-in’s compressor and the grease barrel, with the kitchen’s yellow light coming out through the screen door behind him and the harbor in front of him doing nothing in the dark. His hands are pruned to the wrist. At 8:59 exactly the RAZR goes off in the apron pocket, and it isn’t the buzz. It’s the ring.",
+    "“It’s nine,” Skye says. “Where you are. It’s on.”",
+    {
+     "if": "e18_night==\"restraint\"",
+     "text": "“I said I wouldn’t.” “I know. You said *you said*.” He can hear her smiling. “I believed you. I’m calling anyway. Belt and suspenders.”",
+     "else": "“I know what’s on.” “I don’t watch it. I never watch it. So I’m calling you instead.”"
+    },
+    "She’s in her car, she tells him, in the parking garage under her mother’s building, three levels down with the engine off and the seat back, because it’s the only place in Studio City where you can’t hear a television. Upstairs her mother is watching it with a legal pad. “She takes notes. On *me*. I get them in the morning with the coffee.”",
+    {
+     "if": "e19_mass==\"drift\"",
+     "text": "“The man who says *brand*,” Jack says. “Eleven times,” says Skye. “I counted for you. Once about my *hair*.”",
+     "else": "“My mother booked me a lunch today,” she says. “About my future. There was a man who says *brand* like it’s a prayer. Eleven times. I counted. Once about my *hair*.”"
+    },
+    "“Tell me something that isn’t a lunch.”",
+    "So he gives her Hollis 108, half underground, ankles going by the windows; Abraham going up the mountain with the knife and the fire and the boy, and saying nothing to Sarah, nothing to the servants, nothing to Isaac; and the note in small square pencil under his own paragraph. *You answered for Abraham. Who answers for Isaac?*",
+    "Skye doesn’t say anything for a time. Out on the water a boat comes in late with its running lights, red and green, and its wake goes slapping along under the Anchor’s pilings long after the boat has gone.",
+    "“Nobody asks Isaac,” she says. “That’s who.” Her voice has gone the way it goes when she reads. “He carries the wood. Up the hill. Himself. And he asks the only good question in the whole story — *here’s the fire and the wood, but where’s the lamb?* — and his father says *God will provide*.” A breath, three floors under Studio City. “That’s what you say to a kid on a set. *It’s going to be great, honey.* You say it while you’re tying them to something.”",
+    "Jack has the answer he gave Evan, and the one the Church gives, and he gives her both. Isaac wasn’t a kid. Some of the rabbis say he was thirty-seven, and Abraham past a hundred: a grown man carrying a load of wood up a mountain isn’t tied to anything he can’t walk away from. He went up knowing. The Fathers saw Christ in him for it — the wood on his back, the hill, the son who goes up willing. The ram in the thicket. The knife that doesn’t come down.",
+    "“That’s a very Catholic way of saying he was a good sport,” Skye says.",
+    "“It’s a very Catholic way of saying he was willing.”",
+    "“Willing.” She tries the word in the dark of the garage. “Thirty-seven, and still carrying his father’s wood up a hill because his father said so.” A small laugh, not the bit kind. “No, I believe that part. That’s the most believable thing in the whole Bible.”",
+    "And then she’s back, bright, all at once, the way a set comes back after a reset. “I’d play him. Isaac. Nobody ever casts Isaac. One line, and then three days of reaction on the way up the mountain. That’s the kind of part that wins things.” She sounds very pleased with it. He doesn’t entirely believe her, and he lets her keep it.",
+    "Behind him, through the screen, Rudy’s radio goes to a commercial and the Hobart finishes its cycle with the long hiss it does at the end.",
+    "“Your teacher’s question,” Skye says. “The one under the one in pencil. Can you keep a thing from people you love, for their own good?” The garage is quiet on her end. “So. Do you?”"
+   ],
+   "choices": [
+    {
+     "text": "“Yes. Right now. Everybody I know, about you.”",
+     "tag": "Candor",
+     "set": {
+      "e19_isaac": "candor",
+      "said_it_plain": true,
+      "said_it_plain_n": "+1",
+      "soul.honesty": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“Yes,” Jack says. “Right now. Everybody I know. About you.”",
+      "Three levels down, the line holds open a long time. “For whose good?” she says. “Theirs or yours?” “I haven’t worked that out.” “Me neither,” she says, and he can’t tell which part she means. “Don’t work it out tonight.”",
+      "At twenty past nine Rudy bangs the screen door twice with the flat of a spatula, which means the Hobart, and Jack says he has to go, and she says *go*, and neither of them hangs up until Rudy bangs it a third time.",
+      "At ten past ten, with his arms in the sink to the elbow, the apron goes against his hip, and again, and keeps going. He reads them at the drainboard with his back to the pass.",
+      {
+       "type": "sms",
+       "from": "Laney",
+       "text": "THEY INTRODUCE THEMSELVES BY THEIR NICKNAMES",
+       "time": "10:06 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Laney",
+       "text": "one of them is named after a SITUATION. im going to throw up in the fishbowl",
+       "time": "10:07 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Theo",
+       "text": "It’s a documentary about the fall of Rome. I have the good seats.",
+       "time": "10:09 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Theo",
+       "text": "Laney is booing a man’s abdominal muscles. They can hear her in New Jersey.",
+       "time": "10:11 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Laney",
+       "text": "were watching it AGAIN tomorrow. bring hate",
+       "time": "10:12 PM"
+      },
+      "He laughs at the sink by himself. Over at the grill Rudy looks at him, and decides not to ask, and turns the radio up."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "“Only from my mother. About the phone bill.”",
+     "tag": "Wit",
+     "set": {
+      "e19_isaac": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“Only from my mother,” Jack says. “About the phone bill.”",
+      "Skye laughs, the real one, the one that ends up lying on rugs. “What’s on the phone bill?” “You are. A quarter at a time.” “Then I’m going to be very expensive this month,” she says. “Tell her it’s for a good cause.”",
+      "At twenty past nine Rudy bangs the screen door twice with the flat of a spatula, which means the Hobart, and Jack says he has to go, and she says *go*, and neither of them hangs up until Rudy bangs it a third time.",
+      "At ten past ten, with his arms in the sink to the elbow, the apron goes against his hip, and again, and keeps going. He reads them at the drainboard with his back to the pass.",
+      {
+       "type": "sms",
+       "from": "Laney",
+       "text": "THEY INTRODUCE THEMSELVES BY THEIR NICKNAMES",
+       "time": "10:06 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Laney",
+       "text": "one of them is named after a SITUATION. im going to throw up in the fishbowl",
+       "time": "10:07 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Theo",
+       "text": "It’s a documentary about the fall of Rome. I have the good seats.",
+       "time": "10:09 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Theo",
+       "text": "Laney is booing a man’s abdominal muscles. They can hear her in New Jersey.",
+       "time": "10:11 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Laney",
+       "text": "were watching it AGAIN tomorrow. bring hate",
+       "time": "10:12 PM"
+      },
+      "He laughs at the sink by himself. Over at the grill Rudy looks at him, and decides not to ask, and turns the radio up."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "“No.”",
+     "tag": "Lie",
+     "set": {
+      "e19_isaac": "control",
+      "soul.honesty": "-1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“No,” Jack says.",
+      "“Abraham said that,” Skye says. “To everybody. All the way up the hill.” She lets it sit there in the dark between Studio City and the harbor. Then, kindly, before he has to find anything to say: “It’s fine. I wasn’t asking you. I was asking the question.”",
+      "At twenty past nine Rudy bangs the screen door twice with the flat of a spatula, which means the Hobart, and Jack says he has to go, and she says *go*, and neither of them hangs up until Rudy bangs it a third time.",
+      "At ten past ten, with his arms in the sink to the elbow, the apron goes against his hip, and again, and keeps going. He reads them at the drainboard with his back to the pass.",
+      {
+       "type": "sms",
+       "from": "Laney",
+       "text": "THEY INTRODUCE THEMSELVES BY THEIR NICKNAMES",
+       "time": "10:06 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Laney",
+       "text": "one of them is named after a SITUATION. im going to throw up in the fishbowl",
+       "time": "10:07 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Theo",
+       "text": "It’s a documentary about the fall of Rome. I have the good seats.",
+       "time": "10:09 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Theo",
+       "text": "Laney is booing a man’s abdominal muscles. They can hear her in New Jersey.",
+       "time": "10:11 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Laney",
+       "text": "were watching it AGAIN tomorrow. bring hate",
+       "time": "10:12 PM"
+      },
+      "He laughs at the sink by himself. Over at the grill Rudy looks at him, and decides not to ask, and turns the radio up."
      ],
      "goto": "s09"
     }

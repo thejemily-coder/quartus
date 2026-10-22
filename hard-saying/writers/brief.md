@@ -1191,3 +1191,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   not taken from theirs. **Working target: ~22–26k words per path (player-approved)** (no padding; every added scene earns its place).
   - **From the New Orleans trip on, Skye's extra time transfers to Lena**: from that week Lena becomes even more a
     part of Jack's life, so the episodes stay long and the extra share is hers.
+- **S1E20: Jack's answer to Skye's fear (player's beats; adapt to voice, not verbatim; EXPAND on all of it).** When
+  Skye, suddenly reserved after his first no, voices her fear that he thinks she's a slut (or the like):
+  1. **He puts his arms around her first.** She **stiffens**: she expects him to say nothing, because she assumes the
+     answer is yes and he just won't say it.
+  2. **First: no.** He doesn't think anything like that about her.
+  3. **For honesty's sake:** he definitely doesn't like thinking about her with another guy, but that's a completely
+     different thing (his jealousy, not a judgment of her).
+  4. **The Church's teaching is first for judging his own conduct, not other people's.** He's supposed to tell the
+     truth about it plainly when asked (which he has), and to be **hard on himself and generous with others**.
+  - **Accuracy/period notes for the room:** the idea is real Catholic teaching (CCC 1861: we can judge an act to be a
+    grave offense, but must entrust the judgment of persons to God's justice and mercy; Matthew 7, the speck and the
+    beam). **Do not use "Who am I to judge?"**: that's Pope Francis, July 2013 (anachronism). The room may let Jack
+    reach for Lewis, Aquinas or his own family (Danny) in his own voice, as long as it stays plain and unpreachy.
