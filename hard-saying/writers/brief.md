@@ -892,3 +892,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     can't let it go. Their first argument is about grace.
 - **After S1E14 (player feedback).** "A lot of bittersweet ache." **Becca asking if they were boyfriend and girlfriend
   was a knife twist** (good; the guilt engine works). Laney was hilarious.
+- **E15 notes (player).** After Lena's too-casual Julian news, **Jack is fine, too fine**: relentlessly normal and
+  funny; Theo and Laney see straight through it; Margot calls it out with a sociological term. **Plenty of Becca** before
+  the E16 breakup: she's at her sweetest right before the end (Thanksgiving plans, a gift, a sincere hope).
