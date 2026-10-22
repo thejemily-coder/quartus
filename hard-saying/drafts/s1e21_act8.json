@@ -1,0 +1,279 @@
+{
+ "scenes": {
+  "s14": {
+   "slug": "SUNDAY · 6:35 AM · ELLERY BEACH",
+   "music": "Animal Collective — “My Girls”",
+   "set": {
+    "resolve.jack": "+1",
+    "surfed_ellery": true
+   },
+   "body": [
+    "Up on the bluff the Saab sits in the dirt turnout with its engine off, ticking as it cools, and the radio still going on what’s left of the battery: the college station, and a song that is mostly one bright figure on a keyboard going around and around while a man’s voice climbs up over it asking for almost nothing — four walls and adobe slabs, for his girls. Skye has it turned up. Below the bluff the surf is making the long tearing sound it makes before anybody is in it.",
+    {
+     "if": "slept_delplaya",
+     "text": "They came out of her alley at six with two boards across the back seat and the nose of the long one standing up over the trunk lid, her hair still flat on the side where his arm was."
+    },
+    {
+     "if": "!slept_delplaya",
+     "text": "She was at the Marine Lab chain at six with the top down and two boards across the back seat, the nose of the long one standing up over the trunk lid, and a second wetsuit folded on his seat that he had to hold in his lap the four miles up the coast."
+    },
+    "Both boards came out from under her porch. One is a fat soft-top longboard with a bite out of its rail. The other is hers, short and battered, waxed so many times the wax has gone to lumps. “The boys won’t let it on the rack,” she says. “They say it’s a menace. It’s a *personality*.”",
+    "Now he’s behind the open passenger door with a towel around his waist, losing a fight with a wetsuit.",
+    "“Whose is this?”",
+    "“Tomás’s. He’s in Baja till tonight.” She’s already in hers — a worn black 4/3 with the knees gone shiny — and she’s sitting on the fender eating a banana, watching him. “He’s bigger than you in every direction.”",
+    "He is. The legs come down past Jack’s ankles and bunch there. The sleeves swallow his hands. There’s room in the chest for a second Costigan. She gets off the fender and hauls the zipper cord up his back with one knee in his spine, and pats him twice between the shoulder blades when it’s done. “Recess,” she says.",
+    "Over the mountains the sky has started to go rose before the sun, a long band of it laid along the ridges with the dark still sitting on top. It’s the third Sunday of Advent. Tonight somebody at St. Brendan’s lights the rose candle, and up here somebody beat them to it. Out on the horizon the platforms are still lit from the night. A line of pelicans goes by low over the water, single file, riding the air off the faces of the waves without a wingbeat among them, and the black stumps of her oil pier stand out into the surf in their two crooked rows.",
+    "They go down the path barefoot with the boards under their arms. The sand at the bottom is so cold it hurts.",
+    "The first wave that gets inside Tomás’s suit goes down his back and both legs at once, and the cold goes through the neoprene like news. His forehead aches at the bone. By the time he’s chest-deep in the whitewater, holding the soft-top out in front of him like a door he’s been asked to carry, he has forgotten every thought he came down the path with.",
+    "She can surf. He learns that from the whitewater. She lies down on the short board and paddles straight out into the break, and when a wave stands up in front of her she pushes the nose under and goes under with it, board and girl both, and comes up on the far side already paddling. Past the break she sits up and waits, her legs in the water, looking out to sea. Then she turns, takes three strokes, and is up — low, quick, both feet on the board in one move he doesn’t see — and she goes down the line on the face of a wave going green under her in the first light, with the spray tearing off the top of it in the wind, and rides it clear down to where it closes out by the pilings, and kicks out over the back. He’s standing in the whitewater with his mouth open. Some of the Pacific gets in.",
+    "He is terrible. He pearls: the nose goes under and the board stands up on end and throws him. He rolls, and comes up under the board instead of beside it. He eats it — a phrase she teaches him the first time he does it, with his teeth. He gets sand in his molars, salt up the back of his nose, a scrape on his chin from the rail. Tomás’s legs go on filling and draining like bilges.",
+    "She teaches. She paddles in to the whitewater and sits on her board next to him while he gets his breath, and she doesn’t make it a favor. “Paddle,” she says. “*Paddle*. Now pop. No — that’s a push-up. Up. Not up on your *knees*. You’re praying.”",
+    "“I’m not praying.”",
+    "“You’re on your knees on a board with your eyes shut.”",
+    "Once, between sets, she leans off her board and kisses him, a cold mouth and salt, the water off her hair running into his eye, and then she gets a hand on the tail of the soft-top and shoves him into the next one.",
+    "Somewhere around the tenth time he comes up spitting, he notices his face hurts. It’s the cold, and it’s the grinning. He’s been doing it since the first wipeout and hasn’t stopped.",
+    "Out past the break a bigger set is coming, three dark lines on the water with the sun just getting onto them.",
+    "“First one’s mine,” Skye says, and lies down on her board. “Second one you can have. Or you can stay in the kiddie pool.”"
+   ],
+   "choices": [
+    {
+     "text": "Go for the big one.",
+     "tag": "Reckless",
+     "set": {
+      "e21_wave": "reckless",
+      "trait.reckless": "+1",
+      "rel.skye.heat": "+1"
+     },
+     "response": [
+      "He gets the soft-top turned around and paddles at the second wave with everything he’s got, and gets up onto the shoulder of it somehow, and at the top he’s looking straight down a moving hill of green water at the sand, a long way off.",
+      "Then the hill falls on him. It holds him under long enough to think about it — sand, the leash yanking at his ankle, both of Tomás’s legs going different directions at once — and spits him out in the shallows on his back with the ocean coming out of his nose. He’s laughing before he’s got air to do it with.",
+      "Out in the lineup Skye is draped over her board, laughing too hard to paddle. When she gets enough breath back she cups her hands. “*Again!*”"
+     ],
+     "goto": "s14a"
+    },
+    {
+     "text": "“Show me again.”",
+     "tag": "Sincerity",
+     "set": {
+      "e21_wave": "sincerity",
+      "stood_on_board": true,
+      "trait.sincerity": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“Show me again,” he says.",
+      "She slides off her board into the water beside him and puts him on the soft-top herself: hands here, under the chest, not on the rails; feet together; look at the beach, not the board. “When I say, you get up like you mean it,” she says. “Not like you’re asking.” She takes hold of the tail and looks back over her shoulder at what’s coming, and waits, and waits. “*Now* —”",
+      "She shoves. He gets up. It isn’t pretty — a crouch, knees out, arms out for two buckets nobody gave him — but it’s up, on his feet, with the board moving under him and the beach coming at him, for two seconds before the Pacific takes it back.",
+      "Behind him she’s shrieking. When he comes up she’s on her knees on her board with both arms over her head. “You *stood*! Ohio *stood*!”"
+     ],
+     "goto": "s14a"
+    },
+    {
+     "text": "“I’m a natural.”",
+     "tag": "Wit",
+     "set": {
+      "e21_wave": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“I’m a natural,” he says.",
+      "He takes the next whitewater flat on his belly with his chin on the board and his arms hugging the rails, and it carries him, foam to his ears, clear in to the sand. He gets up in four inches of water, turns around to the lineup, and takes a bow in Tomás’s sagging suit.",
+      "Out past the break Skye applauds, sitting on her board, both hands over her head, and keeps applauding until she falls off it."
+     ],
+     "goto": "s14a"
+    }
+   ]
+  },
+  "s14a": {
+   "slug": "SUNDAY · 8:10 AM · ELLERY, THE CUT BANK",
+   "set": {
+    "skye_counting": true
+   },
+   "body": [
+    "By ten past eight the sun is over the ridge and hasn’t warmed anything yet. The wind has come up off the water, steady and cold, and it finds every wet place on him. They’re back in the striped blanket at the top of the beach where the sand is dry, under the cut bank and its brush, the two boards stuck nose-up in the sand in front of them. He’s in his jeans and his sweatshirt again with his hair in salty spikes. His lips are blue; she tells him so twice. She has the thermos between her knees — hot chocolate from a packet — and she makes him drink first.",
+    "Then she stands up out of the blanket into the wind and unzips her wetsuit by its cord, and peels it off her arms and down to her waist, taking her time about it: a black bikini top and gooseflesh from her collarbone down. She towels her hair facing him, with the towel snapping.",
+    "It’s broad daylight on a public beach and she’s turning blue, and he looks anyway. She sees him do it and towels harder.",
+    "“This is me respecting the letter,” Skye says. “Look how respectful I’m being.”",
+    "“You’re turning blue.”",
+    "“Respectfully blue.”",
+    "She lasts another ten seconds of it, and then she pulls a sweatshirt over her head with the neck cut out of it and drops back into the blanket against him, and gets her feet in under his thigh, two blocks of ice.",
+    "She looks him over: the blue mouth, the sand in his eyebrow, the scrape on his chin from the rail. “You look like you lost a war.”",
+    "“My roommate asked me that. Friday, six in the morning.” He gets his hands around the cup. “Why I look like I just went through a warzone.”",
+    "Her hands stop on the thermos lid.",
+    "“Tell him it was a peace mission,” Skye says. She pours.",
+    "“Who taught you?” he says, when he can feel his mouth again. “To do that.”",
+    "“A stunt double.” She blows on her cup. “On a sitcom I did when I was a kid — I was somebody’s little sister for a season. She surfed Zuma on her lunch hour, and she let me carry her board down to the water, and one day she said, *Get on.* I was thirteen. My mother thought I was at the dentist every Tuesday for a year.”",
+    "“What happened?”",
+    "“My mother found wax in my hair.” She hands him the cup back. “You’re not bad in the water. You’re bad on the *board*. You swim like somebody who grew up in a lake.”",
+    "“Lake Milton. And Erie. Erie has waves.”",
+    "“Erie has *opinions*,” Skye says.",
+    {
+     "if": "e20_dignity==\"grace\"",
+     "text": "“Say the participle again,” she says, out of nowhere, into her cup. “The grace one.” “Full of grace. Done, and still done.” “Done, and still undone,” Skye says, to see if he’ll fix it, and he does, and she says it back right and keeps it."
+    },
+    {
+     "if": "e20_dignity==\"prayer\" && slept_delplaya",
+     "text": "“What do you say?” she asks. “When you pray for me. Today.” “That you’d sleep.” “It worked,” Skye says, and lifts the thermos cup at the sky."
+    },
+    {
+     "if": "e20_dignity==\"prayer\" && !slept_delplaya",
+     "text": "“What do you say?” she asks. “When you pray for me. Today.” “That you’d sleep.” “Ask me tomorrow,” Skye says, and yawns at him."
+    },
+    {
+     "if": "e20_dignity==\"wit\"",
+     "text": "“How’s the lumberyard?” she asks. “Open late.” She laughs into her cup and spills some on the blanket."
+    },
+    {
+     "if": "e20_dignity==\"sincerity\"",
+     "text": "“Do the lion again,” she says. “The man who loves himself anyway.” He gives her the sentence again, with no voice left and sand in his teeth, and she says it along with him under her breath a half-word behind, the way she learns a line."
+    },
+    "Down the beach a man in a wetsuit with a gray ponytail comes down the path with a longboard on his head, and stops at the bottom to read the water, lifts his chin at the two of them in the blanket like they’re regulars, and goes on in.",
+    "“When do you go?” she says.",
+    "“Saturday. The nineteenth.”",
+    "“Six days.”",
+    "“You’re counting.”",
+    "“I don’t count,” Skye says. “I have people who count.”",
+    {
+     "if": "slept_delplaya",
+     "text": "She says it into the steam off her cup, and grins over it at him."
+    },
+    {
+     "if": "!slept_delplaya",
+     "text": "She says it with both hands around the cup, and when she’s done her thumbs go on working at the rim of it, around and around, until he puts his hand over them, and they quit."
+    },
+    "“January I’ll be here every day,” she says. “You’ll be sick of me by Valentine’s.”",
+    "“Valentine’s is three days before Lent.”",
+    "“What happens at Lent?”",
+    "“You give something up.”",
+    "She looks at him over the cup. “Good luck,” Skye says.",
+    "Out past the break the man with the ponytail catches one and rides it standing bolt upright with his arms at his sides, waiting for a bus on it.",
+    "“Orthodontist,” Skye says. “Fifty-four. Two ex-wives, both named Linda. He comes out at eight so he doesn’t have to say a word to anybody till his first patient, and his first patient is at ten, and he dreads her.”",
+    "“It’s Sunday.”",
+    "“It’s a very demanding practice.”",
+    "“He said hello to us.”",
+    "“He lifted his chin. That’s surfer for *please don’t*.”",
+    "“You don’t come out at eight on a Sunday in December to be alone,” Jack says. “You can be alone in bed.”",
+    "“You can be anything in bed,” Skye says, and puts a palm up at him. “Strike that. Watch. He’ll come in, and walk right past us, and get in his car and sit in it with the engine running and not go anywhere.”",
+    "They watch. He comes in on his belly on the last of the whitewater, and picks up his board, and walks up the beach toward the path, and stops beside the blanket with the water running off him.",
+    "“First time?” he says to Jack.",
+    "“Is it that obvious?”",
+    "“Keep at it. Took me till I was thirty to stand up like I meant it.” He goes on up the path. At the top a car door shuts, and they wait, and no engine starts.",
+    "“Sitting in it,” Skye says.",
+    "“He talked to us.”",
+    "“He talked to *you*.” She thinks it over with the cup at her mouth. “Split decision.”",
+    "They stay in the blanket till the sun gets down onto the cut bank. She tells him about Irene, who taught her fractions in a trailer between setups and wore a whistle on a lanyard she never blew. He tells her about Sister Rose at St. Brigid’s, who blew hers at fifth-grade boys for breathing.",
+    "“Who wins?” she says. “Irene or the sister.”",
+    "“Sister Rose had a yardstick.”",
+    "“Irene had a union,” Skye says, and that settles it. At ten to ten she digs the white iPhone out of the towel and looks at it.",
+    "“Studio City by two. My mother does Sundays.” She puts it back. “Breakfast? The Starlite. Bev will say I look like somebody.”"
+   ],
+   "choices": [
+    {
+     "text": "“I’ve got a game at ten.”",
+     "tag": "Saints",
+     "set": {
+      "e21_sunday": "saints",
+      "rel.skye.trust": "+1"
+     },
+     "key": "At ten to ten on Gaudete Sunday she offered you breakfast at the Starlite. You had a game at ten.",
+     "response": [
+      "“I’ve got a game at ten.”",
+      "“Your saints,” Skye says, and she’s already up, shaking the sand out of the blanket into the wind. “Go.”",
+      "Down the coast she talks about the cutback she did on her fourth wave, with both hands off the wheel to show him, and the long board’s nose standing up over the trunk behind them, and the Saints don’t come up once. She lets him out on Mission Street where he asks, two blocks short of where he’s going, with the salt drying white in his hair and sand in the creases of his knuckles. She’s around the corner before the light at the bottom of the block has changed."
+     ],
+     "goto": "s15a"
+    },
+    {
+     "text": "“Breakfast.”",
+     "tag": "Breakfast",
+     "cue": "Kevin will remember that.",
+     "set": {
+      "e21_sunday": "breakfast",
+      "missed_saints_13": true,
+      "rel.skye.warmth": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "key": "At ten to ten on Gaudete Sunday she offered you breakfast at the Starlite. You went, and missed the Saints.",
+     "response": [
+      "“Breakfast,” he says.",
+      "She’s on her feet at the first syllable, knocking sand off the blanket. “Bev,” she says, folding it in half against the wind, “is going to *lose* it.”",
+      "Back in town, in about ten minutes, a brass bell over a corner table on Mission Street is going to get rung without him. He picks up the other end of the blanket and helps her fold."
+     ],
+     "goto": "s15b"
+    }
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "skye",
+     "title": "Skye Callender",
+     "if": "slept_delplaya",
+     "text": "Skye Callender, two Ls. Wouldn’t give me a last name — said *Out* — till she texted it to me on the floor in Denver. Met her in a window seat in Montecito, reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Starts here in January: spring, undeclared. She’s declared enough, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. She was the one who stopped, in the grandmother’s voice. Typed herself into my phone as SKYE (MISFIT), and called herself from it. Took ten hours to answer my correction. Work, she said — a carpet and a wall. Her car’s an orphan now, and it’s my fault. Nearly three hours at the Starlite, a truck stop up the 101, with Nonna’s pie on the table. Cast me as the Bible salesman. Wanted to know what believing is like — not what I believe. Wants me to miss her a reasonable amount. Get the window, she said. Kissed me again against the Saab in the lot. Slower. On purpose. She was the one who stopped — her thumb on my mouth. She’s on TV. *Sweetwater*, Thursdays at nine: she plays Cassidy, the nice one. Gina screamed. I explained GM to her. In her own car. Thanksgiving: texted me the whole drive from Pittsburgh. Spent it at her mother’s place in Studio City; the parrot says ‘momager.’ Told me not to watch her show. Wants me to be specific. We’re friends on Facebook now — one mutual friend: Theo, who knows everybody. Saturday night she called. Three hours on the porch. Made me do my family. Asked what Advent is. Asked if the TV part matters. Fell asleep in the middle of the Madonna. Monday she drove two hours from LA to sit in a car with me for two more, and set an alarm so she’d leave. Watched the President with the sound off and read his face like a script. Her phone learned a trick in September; she’s still not over it. Gives every truck on the 101 a whole life in three sentences. Knows every word of ‘Thunder Road.’ The tape deck finally let go of *Rumours*. Invited me to LA; I work Saturdays. Doesn’t take people home. Saturday, in daylight, on a rock above the tide pools: fractions, for the placement test. I drew her a pie. Sharks were a lie. I told her a saint broke in. Drove me to Burbank in the rain to be her cousin from Ohio. Everybody on a set wants something from her; she smiles for every phone. Plays a preacher’s daughter who forgives a thief. She played it dry. Washed a borrowed dress in a laundromat at one in the morning; it lived. Thinks the Immaculate Conception is the other one. Took the math test with forty kids and nobody looked at her once. Doesn’t take people home. Took me home. Lives on Del Playa, in a house with a darkroom and no surfboards — she’ll live there in January. On her bed I said no. She stopped everything and asked me why, and we talked till it got light. I told her it’s a no right now. She said she can work with that. Picked my present for the church party: a Magic 8-Ball. Every answer’s a line reading, she says. Her car died in Buellton; I pushed. She’s seen Our Lady of Guadalupe on every taco truck in the Valley and thought she was a brand. Asked me if it’s still right now. It is. I said no again. Came to the Anchor in my shirt; Gloria rated her boysenberry. She’s going to ask every day, she says. It’s in her calendar. Slept at her house. Just slept. She says that doesn’t happen. Taught me to surf at Ellery on Gaudete Sunday. I’m terrible. I go home in six days. She isn’t counting."
+    },
+    {
+     "kind": "person",
+     "id": "skye",
+     "title": "Skye Callender",
+     "if": "!slept_delplaya",
+     "text": "Skye Callender, two Ls. Wouldn’t give me a last name — said *Out* — till she texted it to me on the floor in Denver. Met her in a window seat in Montecito, reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Starts here in January: spring, undeclared. She’s declared enough, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. She was the one who stopped, in the grandmother’s voice. Typed herself into my phone as SKYE (MISFIT), and called herself from it. Took ten hours to answer my correction. Work, she said — a carpet and a wall. Her car’s an orphan now, and it’s my fault. Nearly three hours at the Starlite, a truck stop up the 101, with Nonna’s pie on the table. Cast me as the Bible salesman. Wanted to know what believing is like — not what I believe. Wants me to miss her a reasonable amount. Get the window, she said. Kissed me again against the Saab in the lot. Slower. On purpose. She was the one who stopped — her thumb on my mouth. She’s on TV. *Sweetwater*, Thursdays at nine: she plays Cassidy, the nice one. Gina screamed. I explained GM to her. In her own car. Thanksgiving: texted me the whole drive from Pittsburgh. Spent it at her mother’s place in Studio City; the parrot says ‘momager.’ Told me not to watch her show. Wants me to be specific. We’re friends on Facebook now — one mutual friend: Theo, who knows everybody. Saturday night she called. Three hours on the porch. Made me do my family. Asked what Advent is. Asked if the TV part matters. Fell asleep in the middle of the Madonna. Monday she drove two hours from LA to sit in a car with me for two more, and set an alarm so she’d leave. Watched the President with the sound off and read his face like a script. Her phone learned a trick in September; she’s still not over it. Gives every truck on the 101 a whole life in three sentences. Knows every word of ‘Thunder Road.’ The tape deck finally let go of *Rumours*. Invited me to LA; I work Saturdays. Doesn’t take people home. Saturday, in daylight, on a rock above the tide pools: fractions, for the placement test. I drew her a pie. Sharks were a lie. I told her a saint broke in. Drove me to Burbank in the rain to be her cousin from Ohio. Everybody on a set wants something from her; she smiles for every phone. Plays a preacher’s daughter who forgives a thief. She played it dry. Washed a borrowed dress in a laundromat at one in the morning; it lived. Thinks the Immaculate Conception is the other one. Took the math test with forty kids and nobody looked at her once. Doesn’t take people home. Took me home. Lives on Del Playa, in a house with a darkroom and no surfboards — she’ll live there in January. On her bed I said no. She stopped everything and asked me why, and we talked till it got light. I told her it’s a no right now. She said she can work with that. Picked my present for the church party: a Magic 8-Ball. Every answer’s a line reading, she says. Her car died in Buellton; I pushed. She’s seen Our Lady of Guadalupe on every taco truck in the Valley and thought she was a brand. Asked me if it’s still right now. It is. I said no again. Came to the Anchor in my shirt; Gloria rated her boysenberry. She’s going to ask every day, she says. It’s in her calendar. Taught me to surf at Ellery on Gaudete Sunday. I’m terrible. I go home in six days. She isn’t counting."
+    }
+   ]
+  },
+  "s15b": {
+   "slug": "SUNDAY · 10:15 AM · THE STARLITE, UP THE 101",
+   "body": [
+    "In daylight the Starlite is smaller. The star on its pole is sheet metal and cold tubing against a blue sky, five points and none of them lit, so from the on-ramp there’s no telling which two are dead. The sodium lamps are off over the diesel islands. The gravel is full of Sunday: a pickup with a Christmas tree roped down in the bed, a church van with its side door open, two rigs asleep nose to tail with their curtains drawn.",
+    "Bev is on. She’s behind the counter with the pencil through the clip in her hair and her reading glasses on a chain, and she watches them come in — a girl with wet hair in a sweatshirt with the neck cut out, a boy with salt in his eyebrows — and picks up the pot and follows them into the back.",
+    "Skye slides in on the window side of the booth. Jack takes the other. Bev pours, and doesn’t go. She studies Skye over the top of the glasses.",
+    "“Honey,” Bev says, “you look like somebody.”",
+    "“Everybody looks like somebody, Bev.”",
+    {
+     "if": "slept_delplaya",
+     "text": "“No,” Bev says. “I mean you look like you *slept*.”",
+     "else": "“No,” Bev says. “I mean you look *cold*.”"
+    },
+    "Skye opens her mouth, and has nothing, and Bev takes the order out of it: a short stack and a side of bacon for the young lady, two over easy with hash browns and rye toast for the young man, and she goes back up front with the pot.",
+    "“She’s been waiting since Thanksgiving to do that,” Skye says. “She *workshopped* it.”",
+    "The pancakes come in a stack of three with a scoop of butter melting down the top. She butters between every layer anyway, and floods the plate with syrup from the sticky pitcher till it runs over the rim, and cuts the stack into a grid with the side of her fork, and eats. She eats with her elbows on the table. She talks with her mouth full. She points at him with the fork to make a point and drips syrup on his toast and calls it a tax.",
+    "The window beside her is full of the parking lot. A family is coming in from the church van, a little girl in a velvet dress and white tights skipping on the gravel. A trucker climbs down out of his cab in his socks. Skye has her eyes on her plate and on him, and she’s drawing a wave in the syrup with her fork to show him where he went wrong on the soft-top.",
+    "“You stand up too late,” she says. “You wait till you’re sure. The wave doesn’t wait for you to be sure. That’s the whole —” She shrugs with the fork. “Get up before you know.”",
+    "“That’s terrible advice.”",
+    "“It’s the only advice.” She eats a corner of the grid. “Ask anybody who’s ever stood up on anything.”",
+    "“That’s how people get married in Las Vegas.”",
+    "“That’s how people get *born*.” She points the fork. “Your Aquinas. Did he ever stand up on a board?”",
+    "“He was a very large man. They called him the Dumb Ox.” He takes the syrup away from her. “He’d have sunk it.”",
+    "“Then he doesn’t get a vote,” Skye says, and takes the syrup back.",
+    "At two minutes past ten his eyes go to the clock over the pass, an old one with a Coca-Cola girl on its face. She catches him at it.",
+    "“What are you missing?”",
+    "“A football game.”",
+    "“Go,” Skye says. “I’ll drive you.”",
+    "“No.”",
+    "She looks at him across the syrup and goes back to her pancakes.",
+    "She asks about the nineteenth instead. Who picks him up. “My dad. Pittsburgh. In the truck.” “The Lordstown man.” She does a line of his voice, low and flat, the Mahoning Valley in every vowel, and stops before it gets good. “Tell him the Saab says hello.” “He’ll say it’s GM.” “Tell him it’s an orphan now. Tell him it’s your fault.”",
+    "“What does she do on Sundays? Your mother.”",
+    "“Brunch. Notes on my week.” She mops a square through the syrup. “She’ll say I’m tan. She’ll say tan reads *summer*, and it’s December, and in January Cassidy goes off to a boarding school in Switzerland, and they have weather there.”",
+    "“Tell her you went to church.”",
+    "“I watched one from a car.” She considers the square on her fork. “Yesterday. At five in the morning. Is that anything?”",
+    "“It’s a start.”",
+    "“Your Lady didn’t seem to mind,” Skye says, and eats it.",
+    "Bev brings the check face down and calls them *you kids*, and Skye pays it while he’s still digging for his wallet, and leaves a five on the Formica under her coffee cup for Bev, for the workshop.",
+    "She drops him at the Marine Lab turnout at eleven, at the chain, and goes south toward Studio City and her mother’s Sunday with the long board’s nose over the trunk, and he goes up to 412 and lies down on top of the covers in his sweatshirt with the salt still in his hair and is asleep in the time it takes to think about his boots.",
+    "At four minutes past one the RAZR buzzes on the desk, and two minutes later it buzzes again. He sleeps through both.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "13. —L.",
+     "time": "1:04 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Kevin",
+     "text": "COSTIGAN — ABSENT. -K",
+     "time": "1:06 PM"
+    }
+   ],
+   "next": "s15c"
+  }
+ }
+}

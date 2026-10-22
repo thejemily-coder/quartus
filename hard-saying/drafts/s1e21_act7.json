@@ -1,0 +1,446 @@
+{
+ "scenes": {
+  "s11a": {
+   "slug": "SATURDAY · 5:40 PM · DELGADO HALL, EAST STAIRWELL",
+   "body": [
+    "The east-stair window has the last of the day in it, a band of green going thin over the Lagoon with the eucalyptus black against it, and the bulb a flight up hasn’t come on yet. Somewhere below, a laundry basket is coming up from the basement one landing at a time, resting on each. Jack stands at the sill, where the bar is, and opens the phone.",
+    "On the outer screen, above the plain ones, a little envelope with a picture’s corner turned down on it has been sitting since 3:41. He opens the plain ones first.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "you left something at my house",
+     "time": "3:42 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "come get it. 1130. your counter",
+     "time": "3:43 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "(this one you cant erase. its yours)",
+     "time": "3:44 PM",
+     "if": "pic3_erased"
+    },
+    "He left one thing at her house. It was blue, and it was on her floor Thursday night where it landed, and last night the floor had been picked up and it wasn’t there.",
+    "Half past eleven is the back end of his shift. *Your counter.* She has never set foot in the Anchor. Up here she has been a turnout, an alley, a launch ramp and a room at the top of some stairs, and none of it has a sign on it."
+   ],
+   "choices": [
+    {
+     "text": "Open it. Answer it.",
+     "tag": "Candor",
+     "set": {
+      "e21_pic": "candor",
+      "skye_pics_kept": "+1",
+      "said_it_plain_n": "+1",
+      "trait.candor": "+1",
+      "rel.skye.heat": "+1",
+      "resolve.jack": "-1",
+      "confession_owed": "+1"
+     },
+     "key": "Saturday, in the east stairwell, you opened her fourth picture — your own shirt — and told her you want it back, and her in it.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "*Picture Msg* · for AFTER. dont open it in there. im being respectful",
+       "time": "3:41 PM"
+      },
+      "The RAZR takes its time. The picture comes down the little screen from the top in coarse stripes, a few rows at a time, like a page feeding out of a fax, and when all of it has arrived it’s the size of a book of matches and too dark to read. He holds it up to the window and turns it until the green gets into it.",
+      "It isn’t a mirror. She held the phone out at arm’s length, backward, and pushed the button blind, and the camera took what it got: the frame tipped downhill, the top of her head cut off at the hairline. A red velvet Santa hat has been knocked sideways over one ear, and its white pom hangs down into the picture by her cheek. Behind her is the back seat of a black car — leather, a seat-belt buckle, the edge of an empty headrest — and past the tinted glass a concrete pillar with a number painted on it, and a security guard going by on a Segway, a yellow smear with both hands on the bar.",
+      "She’s in his shirt. The blue oxford. She buttoned it wrong by one — he can see where it went off — and then quit on buttons altogether, so it hangs open down the middle over a long narrow stripe of her and no more, and the cuffs come down past her hands. Her knees are drawn up on the leather, bare.",
+      "Her eyes are shut and her mouth is open, caught halfway through a laugh at something just outside the frame: the driver, the guard, the hat, herself. She couldn’t see the screen to fix it. Every other picture she has sent him knew where the lens was.",
+      "He is still looking at the guard on the Segway when the rest of him catches up with the shirt, hard, on a stairwell landing in Delgado with somebody’s laundry coming up the stairs.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "thats my shirt. i want it back. i want you in it. both",
+       "time": "5:46 PM"
+      },
+      "A girl from the third floor carries the laundry basket past him on her way up to four and says hey, and he says hey, with the phone shut against his chest. Five minutes later it answers.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "good. thats what after is for",
+       "time": "5:51 PM"
+      },
+      {
+       "if": "e21_warzone!=\"lie\"",
+       "text": "At twenty to seven he goes out of 412 with the apron over his shoulder, and Theo, at the lamp with his back to the room, says: “Library tonight?”",
+       "else": "At twenty to seven he goes out of 412 with the apron over his shoulder. Theo, at the lamp, lifts one hand off the keys as the door goes, and puts it back."
+      }
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "Leave it shut till she’s in front of you.",
+     "tag": "Restraint",
+     "set": {
+      "e21_pic": "restraint",
+      "pic4_unopened": true,
+      "skye_pics_kept": "+1",
+      "soul.restraint": "+1",
+      "resolve.jack": "+1"
+     },
+     "key": "Saturday, in the east stairwell, you left her fourth picture unopened.",
+     "response": [
+      "He shuts the phone on it. It has waited two hours. It can wait for her.",
+      "Back in 412 he puts the RAZR in the top drawer under his socks and shuts the drawer on it, and gets into the work shirt, and finds the apron on the back of the chair. At 6:39 he opens the drawer and takes the phone out again and puts it in his pocket. Theo has watched both trips in the mirror over his desk, the one with Nonna’s twenty tucked in the frame, and lets both of them go by.",
+      {
+       "if": "e21_warzone!=\"lie\"",
+       "text": "At twenty to seven he goes out of 412 with the apron over his shoulder, and Theo, at the lamp with his back to the room, says: “Library tonight?”",
+       "else": "At twenty to seven he goes out of 412 with the apron over his shoulder. Theo, at the lamp, lifts one hand off the keys as the door goes, and puts it back."
+      }
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "Open it. Erase it.",
+     "tag": "Control",
+     "set": {
+      "e21_pic": "control",
+      "pic4_erased": true,
+      "trait.control": "+1"
+     },
+     "key": "Saturday, in the east stairwell, you opened her fourth picture and erased it, and sent nothing.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "*Picture Msg* · for AFTER. dont open it in there. im being respectful",
+       "time": "3:41 PM"
+      },
+      "It comes down the little screen in stripes, and he has to hold it up to the window to make it out: a back seat, a crooked frame, a Santa hat knocked over one ear, a guard on a Segway sliding by behind tinted glass. His own blue shirt, open down the middle, and her bare knees up on the leather, and her eyes shut, laughing at something outside the picture. The first one she didn’t aim. He looks long enough to know he’ll have it anyway.",
+      {
+       "if": "pic3_erased",
+       "text": "She told him he couldn’t erase this one."
+      },
+      "*Erase this picture?* He presses yes. The little screen thinks it over and hands him back the plain ones, and he sends nothing.",
+      {
+       "if": "e21_warzone!=\"lie\"",
+       "text": "At twenty to seven he goes out of 412 with the apron over his shoulder, and Theo, at the lamp with his back to the room, says: “Library tonight?”",
+       "else": "At twenty to seven he goes out of 412 with the apron over his shoulder. Theo, at the lamp, lifts one hand off the keys as the door goes, and puts it back."
+      }
+     ],
+     "goto": "s12"
+    }
+   ]
+  },
+  "s12": {
+   "slug": "SATURDAY · 11:40 PM · THE ANCHOR",
+   "music": "Dusty Springfield — “Son of a Preacher Man”",
+   "set": {
+    "resolve.jack": "-1",
+    "gloria_met_skye": true
+   },
+   "body": [
+    "Rudy reaches up over the grill and turns his transistor down for it. The jukebox by the door has been playing whatever the Saturday room fed it since seven — Patsy Cline twice, the one Mariah Carey somebody always picks, then nothing for twenty minutes — and at twenty to twelve it takes a quarter and gives back Dusty Springfield, low and sure of herself, singing about a preacher’s boy who could talk her into anything.",
+    "The room is down to the people who meant to stay. Merle and a man off his boat at the far end of the counter, in their boots. A trucker in the booth by the window, working through a chicken-fried steak with the sports page folded beside it. In the corner booth a couple from the college with one plate of fries and two forks, building a lake of ketchup together. The Hobart hisses through a cycle. From the sink Jack can see the length of the counter through the pass.",
+    "She came in out of the cold with the door still swinging behind her and went to the jukebox before she looked for a seat, and now she’s on the third stool from the register, turning a little on it to the song, in a man’s flannel buttoned to the throat and a gray knit cap pulled down to her eyebrows, her cheeks red from three hours of an open top on the 101. She finds him through the pass. At the throat of the flannel, under the top button, there’s a second collar, blue, button-down, and he knows it from across the room.",
+    {
+     "if": "e21_pic==\"restraint\"",
+     "text": "He leans out through the pass with a rack of cups. “Did you look?” she says. “Not yet.” “Good.” She undoes the top button of the flannel, just the one, and the blue collar comes out over it. Enough."
+    },
+    {
+     "if": "e21_pic==\"candor\"",
+     "text": "He leans out through the pass with a rack of cups, and she taps the blue collar once with one finger, and goes back to the song."
+    },
+    {
+     "if": "e21_pic!=\"restraint\" && e21_pic!=\"candor\"",
+     "text": "He leans out through the pass with a rack of cups, and she taps the blue collar once with one finger. “You didn’t answer,” she says. “That’s fine. I came in person.”"
+    },
+    "She has found the board by the register: PIE OF THE DAY, PUMPKIN, in Gloria’s chalk, and under it on its own strip of masking tape, JACK’S RATINGS: MARIONBERRY 4/10 · OLALLIEBERRY 9/10. She reads it with her lips moving and turns back to the pass with both eyebrows up, and mouths it at him across the room: *Four?* He mouths back, *It was dry.* She puts a hand over her heart, for the marionberry.",
+    "He gets the rack into the Hobart without looking at what he’s doing, and pulls the door down, and looks again to make sure she’s still there. She is. She’s eating a creamer out of the bowl on the counter like it’s a shot.",
+    "Gloria comes out of the back with a rack of pie plates against her hip — his, still steaming from the Hobart — and bends to slide them under the counter by the register, and on the way down she gets a look at the third stool, and comes back up slower than she went. She wipes her hands down her apron and comes along the counter to it.",
+    "“You’re the girl on the boarding-school show,” Gloria says. “My granddaughter’s got you on her wall. Over the bed. With the lake.”",
+    "“That’s me,” Skye says, bright and instant, a girl answering to her name at roll call.",
+    "“In here you’re a slice of pie, hon.” Gloria takes the pencil out of her bun and holds it. “What’ll it be.”",
+    "Skye looks past her, through the pass, at the dishwasher. “Whatever he’d rate me.”",
+    "Gloria turns around and looks at Jack over the heat lamps for a long time, long enough that the sink water runs off his wrists and into his sleeves.",
+    "In the corner booth the girl has stopped building the lake. She has a hand on her boyfriend’s arm. “Oh my God,” she says, not quietly. “*Cassidy*.” Her phone is already out of her purse, a pink one that slides open, and it comes up over the fries with its little lens pointed at the third stool.",
+    "Skye turns on the stool to it with her smile already on, all of it at once, like a porch light on a timer."
+   ],
+   "choices": [
+    {
+     "text": "Come out from the sink. “She’s off the clock.”",
+     "tag": "Candor",
+     "set": {
+      "e21_fries": "candor",
+      "soul.honesty": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "He comes out through the swinging door with his sleeves wet to the elbow and the apron soaked down the front, and stands at the end of the counter between the third stool and the corner booth.",
+      "“She’s off the clock.”",
+      "The couple look at the dishwasher. Gloria looks at him. On the stool Skye turns away from the little lens to look at him too, at the wet apron and the rack-burned knuckles, and puts her chin in her hand to watch the rest of it.",
+      "Gloria, to the booth: “Pie or the door.”",
+      "They order pie. The phone goes back in the purse without a click."
+     ],
+     "goto": "s12a"
+    },
+    {
+     "text": "Let Gloria handle it.",
+     "tag": "Restraint",
+     "set": {
+      "e21_fries": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He stays at the sink.",
+      "Gloria puts the pencil back in her bun and walks the length of the counter to the corner booth, and stands at the end of their table with her hands folded on her apron until the girl looks up from the little screen into her face.",
+      "“Pie or the door.”",
+      "They order pie. The phone goes back in the purse without a click."
+     ],
+     "goto": "s12a"
+    },
+    {
+     "text": "“She’s my cousin from Ohio.”",
+     "tag": "Wit",
+     "set": {
+      "e21_fries": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“She’s my cousin from Ohio,” Jack says through the pass, loud enough for the booth.",
+      "The boy looks at the third stool — a tan in December, salt in the hair coming out from under the cap — and back at the dishwasher. “From *Ohio*?”",
+      "“Akron,” Skye says, beaming at him. “It’s very sunny. It’s a secret.”",
+      "The girl lowers the phone to think about Akron, and while she’s thinking about it Gloria arrives at the end of their table. “Pie or the door.”",
+      "They order pie. The phone goes back in the purse without a click."
+     ],
+     "goto": "s12a"
+    }
+   ]
+  },
+  "s12a": {
+   "slug": "SATURDAY · 11:50 PM · THE ANCHOR, THE PASS → THE SINK",
+   "body": [
+    "Gloria cuts it at the pass, on the steel shelf under the heat lamps, where he can watch her do it: the knife in, the server under, a wedge of boysenberry coming up out of the tin with its insides running purple onto the plate. She says it low, over her shoulder, without turning around.",
+    "“Boysenberry.”",
+    "“What’s wrong with boysenberry?”",
+    "“Nothing, hon. It’s every berry some fella in Anaheim could get his hands on, crossed.” She wipes the server on a towel. “Sweet up front, tart after, and it stains. You’ll be getting it out from under your nails till Easter.”",
+    "She lifts the plate. And going past the pass with it, not quite low enough: “That one’s not waiting for any door.”",
+    "She sets it down in front of the third stool with a fork and no speech. Skye takes one look at the slice and laughs at Jack through the pass, as pleased as if she’s been cast.",
+    "By midnight she has asked Gloria if she can wash a rack. “Health code,” Gloria says, and hands her a bar towel instead, and Skye moves to the end stool by the dish station and dries coffee cups as they come out of the Hobart, holding each one up to the light before she sets it down, a little stack going up beside her on the Formica. She is very bad at it and very serious about it. He keeps looking up from the sink to watch her do it, and doesn’t care who sees.",
+    "Between cups she casts the room for him, low, out of the side of her mouth. The trucker in the window booth is going to call his daughter when he’s done; he’s been rehearsing it since the gravy. The couple with the pie are on a second date, and she already knows, and he doesn’t yet. Merle comes here so his wife can think he’s down at the boat.",
+    "“You don’t know any of that.”",
+    "“I know all of it.” She sets down a cup. “What did she rate you?”",
+    "“Lattice-top.”",
+    "“Which is?”",
+    "“Pretty on top. Everything’s leaking underneath.”",
+    "Skye thinks about that with a cup in each hand. “She’s good,” she says.",
+    "In the window booth the trucker folds his sports page, digs a fistful of quarters out of his jacket, and goes back past the restrooms to the pay phone on the wall. Skye goes on drying.",
+    "Rudy comes down from the grill with a ramekin of flan nobody ordered and sets it beside her stack of cups. By the time she has her wallet out of the flannel he’s back at the flat-top. “My mother’s,” he says, scraping. “She came up from Oxnard for the Virgin. Sang at the Mission at five this morning, every verse.”",
+    "Skye points her fork down the counter at Jack. “He was there.”",
+    "“I saw him,” Rudy says, and goes back to the grill.",
+    "She eats the flan in four bites, with her eyes shut for the first one. Then, low, with the fork aimed at Gloria’s back: “Is she one of your everybody?”",
+    "“She’s the boss.”",
+    "“Then I’ve met one.” She sounds pleased about it.",
+    "Her day comes out between cups, in one breath: seven hours as Cassidy in a red velvet Santa hat on a stage of fake snow outside a toy store, in a mall in Burbank, for a network toy drive her mother booked in October; a line that went down an escalator and out into the parking structure; a man who asked her to sign his little girl’s cast, and then held out his own arm.",
+    "“Did you sign it?”",
+    "“I signed the cast. I told him the arm was a union thing.” She holds a cup up to the light and finds a spot on it and goes after the spot. “Did you tell him?”",
+    {
+     "if": "confessed_skye_2",
+     "text": "“Yes.” “Everything?” “Everything.” She dries the cup slowly, all the way around. “Am I famous in there?” “Nobody’s famous in there.” She holds the cup up to the light and keeps it there. “I’d like that room,” she says, and puts it on the stack.",
+     "else": "“Not yet.” She turns the cup once inside the towel and sets it on the stack, and lets that be the answer."
+    },
+    "At 11:52 the RAZR goes against his hip under the apron. He dries a hand on his jeans and reads it at the drainboard, with his back to the room.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Ingram by 28 points. Remy is inconsolable. Pie? —L.",
+     "time": "11:52 PM"
+    },
+    "The window over the sink is black, and the counter is in it behind him: the stools, the pie case, and her on the end one with the towel gone still in her hands, watching his back. When he turns around she is drying the same cup. Past her, at the register, Gloria has seen him read it, and seen Skye see him read it, and she goes on wiping the glass of the pie case with a rag."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "gloria",
+     "title": "Gloria (the Anchor)",
+     "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it. Asked after the pecan. I said she’s seeing somebody, he’s nice. She said lattice-top. Boxed a pie for Nonna. From a woman who’s been on her feet thirty years. Peach is August. St. Nicholas Eve, at the end of my shift, low, at the pass: ‘Pecan came to see if you were here.’ Gave my Thursday to Hector — his girl’s due at Christmas. ‘Don’t argue with a baby.’ Says I look like the pie case at closing. Rated somebody new. Boysenberry. ‘That one’s not waiting for any door.’"
+    },
+    {
+     "kind": "note",
+     "id": "pie",
+     "title": "The Anchor",
+     "text": "Marionberry: 4/10. Olallieberry: 9/10 — Dad would eat two pieces and complain about the second. Gloria rated Lena: pecan. She rated Margot without meeting her: rhubarb — tart, and nobody can decide if it’s a fruit. She rated Becca without meeting her: apple. Honest crust. Nobody loses sleep over an apple. Then she asked what happened to the pecan. A whole pie for a funeral is half price. I work here Tue/Thu/Sat, seven to one. Once a year the kitchen goes dark on a Thursday. Saturday the 10th Gloria met Becca: ‘Apple. Told you, hon.’ She looked at Wes a long time. ‘Peach.’ Everybody likes a peach, she says. Saturday the 12th: boysenberry, for a girl off the TV. Sweet up front, tart after. It stains."
+    }
+   ],
+   "choices": [
+    {
+     "text": "*slammed tonight. go to bed*",
+     "tag": "Lie",
+     "set": {
+      "e21_pie": "lie",
+      "soul.honesty": "-1",
+      "rel.lena.trust": "-1"
+     },
+     "cue": "Lena will remember that.",
+     "key": "At 11:52 Lena texted: Pie? With Skye drying cups at your counter, you told her you were slammed.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "slammed tonight. go to bed",
+       "time": "11:53 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "Goodnight, Youngstown. —L.",
+       "time": "11:54 PM"
+      },
+      "Behind him the Saturday room goes on being slammed: two men off a boat, a trucker on the pay phone, a couple sharing pie, and a girl drying cups.",
+      "At five to one Gloria comes up behind him at the sink and undoes his apron strings with one pull, and boxes a slice of the boysenberry in a white clamshell and puts it in his wet hands. “For the road,” she says. “Not the door. The *road*.”"
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "*not tonight lena*",
+     "tag": "Candor",
+     "set": {
+      "e21_pie": "candor",
+      "soul.honesty": "+1"
+     },
+     "key": "At 11:52 Lena texted: Pie? You told her not tonight.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "not tonight lena",
+       "time": "11:53 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "Okay. —L.",
+       "time": "11:55 PM"
+      },
+      "He puts the phone back under the apron. Down the counter Skye holds out a dry cup for the rack, and he takes it from her.",
+      "At five to one Gloria comes up behind him at the sink and undoes his apron strings with one pull, and boxes a slice of the boysenberry in a white clamshell and puts it in his wet hands. “For the road,” she says. “Not the door. The *road*.”"
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "Don’t answer.",
+     "tag": "Restraint",
+     "set": {
+      "e21_pie": "restraint",
+      "trait.control": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "key": "At 11:52 Lena texted: Pie? You didn’t answer.",
+     "response": [
+      "He shuts it, and puts it back under the apron, and runs the next rack.",
+      "At twenty to one, while he’s hosing down the last of the plates, it goes against his hip again.",
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "Never mind. Goodnight, Youngstown. —L.",
+       "time": "12:40 AM"
+      },
+      "At five to one Gloria comes up behind him at the sink and undoes his apron strings with one pull, and boxes a slice of the boysenberry in a white clamshell and puts it in his wet hands. “For the road,” she says. “Not the door. The *road*.”"
+     ],
+     "goto": "s13"
+    }
+   ]
+  },
+  "s13": {
+   "slug": "SUNDAY · 1:05 AM · THE WHARF → THE SAAB",
+   "body": [
+    "The wind has been at the sky since dark and scrubbed it down to the stars, more of them than Marisol usually admits to, and it comes along the wharf off the water hard enough to lean on. The bait shack is shut up, its cooler humming behind the plywood. Under the last lamp before it the Saab sits with its top down in the cold, on principle.",
+    "She walks beside him with the white clamshell held flat on both palms like a cake on its way to a party, in the knit cap and his shirt and her flannel over that, and the water slaps at the pilings under the planks and goes back out. Halfway along she gives him the box, and puts both her hands inside his jacket against his ribs, and walks the rest of the way like that, sideways, steering him by them.",
+    "“Boysenberry,” she says. “She never told me what it means.”",
+    "“It’s a cross. Some guy in Anaheim crossed every berry he could get.”",
+    "“And?”",
+    "“It stains.”",
+    "Skye looks down at the box. “Good,” she says.",
+    "At the car he sets the box on the hood, and she turns around with her back against the door and her hands in the flannel pockets, and looks up at him under the lamp.",
+    "“It’s Sunday now,” she says. “New day.” She tips her head. “Is it still right now?”",
+    "“It’s still right now.”",
+    "She nods, as though he has confirmed a booking. “I’m going to ask every day,” Skye says. “It’s in my calendar.”",
+    "“Every day.”",
+    "“Every single one. And one night you’ll be tired, or it’ll be raining, or the Browns will have lost —”",
+    "“They won Thursday.”",
+    "“I heard. Two and eleven.” She smiles up at him under the lamp, entirely at her ease. “I like my odds.”",
+    {
+     "if": "daylight_asked",
+     "text": "“Six-thirty,” she says. “Ellery. You asked for daylight. I’m giving you December’s.”",
+     "else": "“Tomorrow,” she says. “Dawn. Ellery. I’m teaching you to surf. In December. Don’t argue.”"
+    },
+    {
+     "if": "e20_dawn==\"sincerity\"",
+     "text": "She takes one hand out of her pocket and gets hold of his jacket by the zipper. “You asked if there’s a sleeping way,” she says. “I want to find out.”",
+     "else": "She takes one hand out of her pocket and gets hold of his jacket by the zipper. “Or,” she says. “Come home with me. Just sleep. I’ve never tried it.”"
+    },
+    "“Sleeping,” she says, when he looks at her. “I know what it sounds like. I mean the word.”",
+    {
+     "if": "firm_purpose_letter",
+     "text": "Before he gets in the car he says it: “Whatever we do. No.” She laughs up at him, delighted, with her hand still on his zipper. “You’re doing it in advance now,” she says. “That’s new.”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "Go home with her. Just sleep.",
+     "tag": "Stay",
+     "set": {
+      "e21_night": "stay",
+      "slept_delplaya": true,
+      "resolve.jack": "-1",
+      "rel.skye.trust": "+1",
+      "confession_owed": "+1"
+     },
+     "key": "At one in the morning on the wharf she said she’ll ask every day. Then she asked you home, to sleep. You went.",
+     "goto": "s13a"
+    },
+    {
+     "text": "“Six-thirty. Ellery. Daylight.”",
+     "tag": "Go",
+     "set": {
+      "e21_night": "go",
+      "resolve.jack": "+1",
+      "soul.restraint": "+1"
+     },
+     "key": "At one in the morning on the wharf she said she’ll ask every day. You went home, and met her at Ellery at first light.",
+     "response": [
+      "“Six-thirty,” he says. “Ellery. Daylight.”",
+      "“Daylight,” Skye says, and lets go of the zipper.",
+      "She drives him up to the Marine Lab turnout with the clamshell in his lap and stops short of the chain. When he’s out she leans across the seat. “Eat that,” she says. “All of it. The water’s going to take everything you’ve got, and I want it to have to work.” She reaches over and pulls his door shut herself, and goes."
+     ],
+     "goto": "s13b"
+    }
+   ]
+  },
+  "s13a": {
+   "slug": "SUNDAY · 1:40 AM · DEL PLAYA, HER ROOM",
+   "set": {
+    "rel.skye.trust": "+1"
+   },
+   "body": [
+    "The fuse is still out. The box is in the darkroom, where she isn’t allowed, and the house is dark from the alley to the porch except for the jelly jar on her floor, which she lights with a match from a book that says THE ANCHOR on the cover. She took it off the register on the way out. He didn’t see her do it.",
+    "They eat Gloria’s slice out of the clamshell on the floor by the candle, with their fingers, because the forks are downstairs in the dark. It’s still warm in the middle. It stains them both to the second knuckle, and she holds up her purple fingers in the candlelight and says, “She did warn you.”",
+    "Then the blanket. They get under it in their clothes — his jeans and his undershirt; her flannel, and his oxford under that, which she isn’t giving back — with the candle on the floor beside the mattress and the window cold over them.",
+    "“This is the sleeping way,” she says.",
+    {
+     "if": "e20_dawn!=\"sincerity\"",
+     "text": "“I just made it up.”"
+    },
+    "She arranges them: her back to his front, his arm over her, the blanket up to her ear. “Hands where I can see them,” she says, and finds his in the dark and lays it on the outside of the flannel, over her stomach, and folds her own on top of it. “Mine too.”",
+    "Her hair is in his mouth. He leaves it there.",
+    "She talks. She tells him how it’s going to go at Ellery: how you watch a set come in from outside so you know which wave is yours; where your feet go when you stand; how he is going to want to look down at his feet and mustn’t, because the board goes where you look; how the first time you stand up, the first real time, there’s a second where — and somewhere in the middle of that second, with the sentence still open, she’s asleep.",
+    "He can tell by her breathing. It slows and drops and catches once on something and lets it go, and her hand on top of his goes heavy.",
+    "He doesn’t sleep. He lies there with her breathing against his arm and the candle burning low on the floor, and says the night prayer in his head, the short one they said at the end of every retreat at Mooney. *Into your hands, Lord, I commend my spirit.* And the antiphon after it, which tonight he gets the first half of and she gets the second: *Protect us, Lord, as we stay awake; watch over us as we sleep.* He puts her in it by name, and asks for what he usually asks for her.",
+    "Some time after three she talks in her sleep, distinctly and crossly, like a line she has been given too early: “Not now, Irene. Fractions later.” And goes back under.",
+    "The candle burns down to a coin of light at the bottom of the jar. At 5:40 the marimba starts up inside a boot under the rack, chirping away in the dark.",
+    "She comes up out of sleep all at once, onto one elbow, and for a second she doesn’t know where she is — the black window, the strange weight of an arm across her — and he feels her go rigid against him. Then she does know.",
+    "She sits up in the blanket with her hair flat on one side and his collar crooked under the flannel, and looks at him in what’s left of the candle.",
+    "“I slept,” she says. “With somebody in the room. That doesn’t happen.” She pulls the blanket up around her shoulders and holds it shut in both fists. “I always stay up to see what they want.”",
+    "Before he can answer she’s out from under the blanket and on her knees at the rack, pulling things off hangers and dropping them on the floor in the dark, looking for a wetsuit."
+   ],
+   "next": "s14"
+  }
+ }
+}

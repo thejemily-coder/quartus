@@ -1349,3 +1349,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   not a line: she suggests they **stay like this a few more weeks** because **Christmas, New Year's and long
   distance** are a lot of pressure on a new relationship, and that they **become a thing when he gets back in
   January**. (It's the sincere version of the strange hours: she's protecting something she wants to keep.)
+- **End of Season 1 extras (player).**
+  - **A Season 1 recap screen** after the finale: where Jack stands with each person (warmth/trust/heat in words, not
+    numbers), his soul and resolve, and the season's biggest choices the player made. (Engine work at the E22
+    build; spoiler-safe; no hidden canon.) **No S2 teaser.**
+  - **The finale's last needle-drop: The National, "Fake Empire"** (2007, *Boxer*) over the Denver cut to black.
