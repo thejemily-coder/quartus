@@ -1335,3 +1335,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   told Lena she knows). When Jack and Skye go public, **she's kind, almost unbearably**: she **congratulates him,
   sincerely**, which is worse than anything she could say. **Only later, as friends** (spring), does she admit she
   didn't understand it. She still never brings Lena into it.
+- **S1E22 finale design answers (player).**
+  - **Touch on the walk: a few small ones.** Restrained but charged: her arm through his against the cold, a hand
+    found once and let go, her head on his shoulder on the shuttle. Each one counted by Jack, none of it named.
+  - **The goodbye at SBA: one long hug.** Longer than friends hug; neither lets go first; she says something small
+    and Lena-ish; he watches her go through security.
+  - **Denver, the last beat: he opens it.** His phone comes back on: Lena's text, then Skye's big-jump picture ("so you
+    have something to look forward to in January…"). **He looks, with Lena's night still on him. Cut to black.**
+  - **Supersedes the finale plan's "no picture rung / Skye sends no picture in E22"**: the big jump lands here (per
+    the E21 answers). Showrunner/Architect: reconcile `outlines/s1e22.md`.
