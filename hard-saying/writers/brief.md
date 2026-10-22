@@ -1176,3 +1176,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     with Skye happens before or after that visit** (room's call). Affects S2E01's Christmas.
 - **After S1E18 (player feedback).** "Great episode." **Theo and the family were wonderful**; **Skye was great through
   texts and especially the phone call**; **so was Lena.**
+- **E19 design answers (player).**
+  - **Picture texts: tease, then climb.** The first is playful and only suggestive (a bare shoulder, a look over it,
+    the mirror in frame); the second goes further. Leave room to escalate through December, Christmas and New Orleans.
+  - **Heat: a clear step up from E17.** Hungrier; some clothes come off; skin; her in his lap; frank and sensory. It
+    stops because the world interrupts, not because anyone checks in.
+  - **Period on screen, all four:** the **Tiger Woods scandal** (the ensemble won't shut up about it), **Obama's West
+    Point speech** (Dec 1; a serious beat for anyone with someone over there), **the Saints go 11–0** (Monday Night
+    Football over the Patriots; Lena's joy), and the **Jersey Shore premiere** (Dec 3; Laney and Theo hate-watching).
+  - **Theo: pointed but silent.** Notices everything and needles sideways (the News Feed read aloud, timing how fast the
+    phone hits a pocket), never confronts, and covers for Jack when it counts.
