@@ -1069,3 +1069,32 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Season 2: Jack tells his mom first (player).** Because his mom scolded him for finding out about Becca second- or
   third-hand from Facebook, **when Jack and Skye go Facebook official he texts or calls his mom first** so she hears it
   from him this time. He does **the same when he and Lena become official** (callback; **she notices he learned**: player-approved detail).
+- **Season 2: what flips the New Orleans trip (player-approved plan).** No truce before they leave: the city breaks the
+  cold war, not a decision.
+  1. **The drive out (~30 hours): the worst proxy fight**, with no exit for the other four. It doesn't resolve; it burns
+     out. 3 a.m. in West Texas, Jack driving, everyone asleep but Lena: quiet Christmas-call talk about anything but
+     the thing. She falls asleep on his shoulder. Neither mentions it in the morning. The first touch comes before
+     either has decided anything.
+  2. **Arrival: the Broussards read them as a couple**, and neither corrects it fast enough. Jack sees her whole, on her
+     ground. **The phones tell on them:** he lets Skye go to voicemail; Lena sees and says nothing; he sees her turn
+     her phone face-down on a Julian text.
+  3. **Super Bowl night (Feb 7) is the mutual realization.** The Saints win, the city erupts, she's in his arms in the
+     street before either thinks. One look: both know. Neither says it.
+  4. **The week: all over each other, unable to say it.** Parades, the second line, Mardi Gras crowds; each tries once
+     and retreats; the alliance watches, barely containing itself. It comes out only at the hair's-breadth near-miss
+     (Mardi Gras night), then the full honest conversation without letting go, then Lena pulls away.
+  5. **Ash Wednesday is the morning after.** Ashes, hangovers, "remember you are dust"; they've agreed to go home and end
+     things honestly. Lent is the waiting (both free within the week).
+  - **The first kiss is NOT at Easter** (player): Jack could never conceive of waiting again after how badly it went the
+    first time. First-kiss timing is still open; see the asking scene below.
+- **Season 2: the asking (player's design; adapt to voices, not verbatim).** The **first time they're face-to-face and
+  alone after both are single**, Jack asks her to be with him (in the seeing-each-other sense, not yet a date). **Lena
+  says no and can't keep a straight face** as his shock shows plainly; she starts laughing and tells him to **do it
+  properly: actual dates and the like.** He does (agrees, in the moment). They'd kiss then, finally and for a long time,
+  but **she stops him, smiling**: he's being very familiar for someone who hasn't taken her on a date yet. They just
+  stay there a while in each other's arms.
+  - **Back at the dorm:** Theo and Laney know, with champagne ready, and ask for confirmation. **Jack: Lena turned him
+    down.** Theo and Laney turn on her, outraged ("what the fuck, Lena?"). Jack and Lena both crack up. Lena says it's
+    because **Jack waited too long the first time**, but she's agreed to let him take her out; she'll see how it goes.
+    Theo and Laney look at each other: **"That's a yes with extra forms."** Lena, smiling wide, repeats that they'll
+    see how it goes.
