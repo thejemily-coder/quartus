@@ -890,3 +890,5 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **E17: the book is Flannery O'Connor's "A Good Man Is Hard to Find"** (for a role). Skye has annotated the
     grandmother's final gesture ("Why you're one of my babies…") as pure manipulation; Jack, who believes in grace,
     can't let it go. Their first argument is about grace.
+- **After S1E14 (player feedback).** "A lot of bittersweet ache." **Becca asking if they were boyfriend and girlfriend
+  was a knife twist** (good; the guilt engine works). Laney was hilarious.

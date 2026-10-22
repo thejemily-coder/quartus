@@ -3687,8 +3687,38 @@ the lie he tells best. 412: Theo already knows (Laney, 10:41 p.m.) and says noth
 begins at once ("the vampire who asks permission"). No two-hander (E14, E16). **Kevin's episode beat moves here from E16** (pacing, Head Writer after S1E14): his mask cracks at an orgo study group; Jack half-hears the
 stairwell fight between Kevin and Theo: "You said you'd never—" "I haven't." **Ledger (Head Writer after S1E14):** Jack is at Bastille on **every** `e14_bastille` value
 (`there`: as promised; `becca`: with Becca, clapping on one and three; `go`: he told her to go and goes anyway, at the back, because he promised Julian).
+*(**Pre-production plan, Showrunner 2026-10-22 — written before S1E14 is played; full plan `outlines/s1e15.md`; every E14-dependent beat is
+gated on all values.**)* Title kept: **"Black Monday"** (Nonno's 1977; the Leipzig Monday prayers; the Monday night Frank doesn't come home). **Money (#33,
+#54):** Priya delivers the pink HOLD notice Monday (≈$350 spring balance after aid — the family share that didn't come; due **Fri Nov 13, 5 p.m.**, or the
+hold blocks his spring registration window and his bed); offers come from Theo (Mon), Priya (the Brick's overnight desk, Mon), Rafi (an "errand," Tue, outside
+the Mission Street post office — where 🔒 **Jack has just bought the third money order to D. Kostelnik anyway**), Becca (**her heifer money — "Daisy" — refused on
+every path**, Tue) and Gloria (an advance, declined); Rudy: "I know what an errand is, mijo" (Tue, all paths, before the fork); **fork `e15_money`** at the
+Folgers can (Thu 1 a.m.): **rafi** (a Vans box on Rafi's own bike to the Wharf Rat's back door; 🔒 **Ray Ochoa** comes out of the Anchor — "New shoes?" — and
+doesn't look; `jack_ran_errand`) / **theo** (paid at the window; on the tab with "+ 1 PIE (PEACH)"; `theo_paid_deposit`) / **priya** (hardship extension to
+Dec 1; the Brick's night desk Thu–Fri, midnight–6, the lights blink at 1:45; `jack_brick_desk` — E17 may use it). [`e14_conf=="go"`] Osei's penance ("let
+somebody help you this week") surfaces at the fork. **Frank (#17):** SUB pay done; Monday he goes to the bar for the Steelers game, doesn't come home;
+**Maria calls 1:04 a.m. PT**; Jack stays on the line till the Silverado clips the trash can at 4:51 Eastern — Frank sat in the employee lot at Lordstown "to see
+if the lights were on." Nobody hurt (moral luck, never glossed). Nonna dizzy on the stairs Sunday (one clause → E17's fall). Saturday, OSU–Iowa (the Rose Bowl):
+Frank calls first; [monday] "We don't. Not here. That's done."; "Don't waste it." **Gina (#19 peak):** Tuesday she uses Ashley Vrabel's father's DUI in
+religion class herself (Jack never gave her that line — `e5_gina_advice=="nun"`), gets detention, and texts *i thought it would feel good* / *dad drove home
+like that monday. i heard the truck hit the can.* **The unofficial duel `wall`, "On the Wall"** (Mon night, 4th-floor lounge, the Berlin dominoes on CNN;
+Margot moderates and scores it **on her whiteboard — the record card is not rewritten**): Lena = Gdańsk, a union and a Polish pope; Jack = Leipzig, Monday
+prayers, candles (Sindermann's "candles and prayers"); Lena's "ask your daddy who won — GM took a bailout and he took a pink slip" lands four hours before
+Maria's call; her last move: "prayer *and* bread." **Wed (Veterans Day), the bluff bench:** Lena is there for him (`e15_bench`: Frank / Gina / ask about
+her) — "Some men drink and some men gut houses. Yours hasn't got a house to gut." / "Call him Saturday… Talk about that." **Bastille Thursday:** Julian's new
+song **has no second chorus** ("Somebody told me everybody leaves in it, so I cut it"); Lena and Jack both stay to the end; "Can I walk you back?" — "Yes."
+(he asks her on that walk; she says yes; off Jack's screen); Laney knows by Thursday night and **holds it until Lena has told Jack** (tells Theo 10:41 p.m.
+Sunday). **Fri:** the Lighthouse back porch at sunset — **Julian alone at the Point wall with his guitar case** (red herring #4, in Jack's head only); 🔒 Theo
+hands Jack a beer and goes in without looking west; Kevin's mask cracks over Maine at an orgo group (`e15_kevin`: follow — Theo, caught: "We were
+discussing Doug's sleepwalking," 🔒 accidentally true / stay — overheard from below); 🔒 writers only: Kevin's "You said you'd never—" means *go back up
+there*; Theo's "I haven't" is a lie (the Sunday flowers). **Sun:** Sully's 9–0 (Laney's untouched mimosa); **the 9 p.m. Mass, Julian beside Lena for the
+first time** (Becca: "Oh! *Scoot*."), the fig tree in Mark 13; the courtyard wall — Julian goes in for coffees and gives her the minutes — "I wasn't going to
+let you read it on a computer… I'm with Julian now." The invitation never leaves Jack's mouth. [candor] "Are you happy?" — "Yes." (medal: the lie-tell). Julian
+offers Jack his coffee. 412: Theo already knows, says nothing, then "Like a vampire. They have to be invited in." [`e14_becca_tg=="told"`] Becca's text: *did
+u ask her?? praying she says yes!! :)*; [`e14_ma=="lena"`] Gina to Jack (never to Lena): *ma bought a second pie. is the nun coming or what*. Lena's resolve
+6 → 7 (Mass) → **6**; no heat. Saints 9–0; money orders **3**.
 
-**E16 · "Stairwell"** · Mon Nov 16 – Sat Nov 21 · the Browns shut out 16–0 by Baltimore on Monday Night Football (Brady Quinn
+**E16 · "Due Course"** *(retitled from "Stairwell" in pre-production — Kevin's stairwell moved to E15)* · Mon Nov 16 – Sat Nov 21 · the Browns shut out 16–0 by Baltimore on Monday Night Football (Brady Quinn
 back; Frank on the phone, one word); *Going Rogue* (Tue Nov 17); the UC Regents' fee-hike protests up the coast (Nov 18–20 [verify]);
 *New Moon* (midnight shows Thu Nov 19 → Fri Nov 20; Laney forces the floor); the Manhattan Declaration (Fri Nov 20; Lena signs online; Jack signs
 too or argues — #47). *(Re-planned after S1E13 for the **ACCELERATED SEQUENCE**: **step 2 — Jack and Becca end before Thanksgiving.**)* **The
@@ -3715,6 +3745,26 @@ the sentence ("I'll bring a hostess gift. What do you people drink, Folgers?"). 
 alone, free; Lena, in the row ahead, beside Julian; Theo, beside Jack, audibly rude to Julian ("Edward, with a capo"); Laney offers Jack advice
 "now that you're back on the *market*, sugar — " "No." (#69). (Kevin's stairwell beat moved to E15.) **Margot tells Jack Julian is the healthiest thing in Lena's life**,
 and means it. Lena's resolve 6.
+*(**Pre-production plan, Showrunner 2026-10-22 — written before S1E14 is played; full plan `outlines/s1e16.md`; every E14- and E15-dependent beat is
+gated on all values.**)* **Cold open:** MNF at Sully's — Lena brings a St. Jude card for the Browns ("You watched mine win nine times… I owe you a
+Monday"; "I'm with Julian, Jack. I'm not *dead*."); 16–0; Maria has **already written Becca** ("A mother can write a girl"); Frank, one word: "Zero."
+(he watched it in the garage). **Tue** the Portolá steps: Maria's letter on St. Brigid's notepaper, Dec 27–30, flights into Pittsburgh; [told] Mrs. Fitch
+has told Becca about Julian. **Wed 2:05 a.m.** the Delgado kitchen, Mrs. Lindell's jam: **Becca prays at two, like always** — the realization, shown.
+**Wed 6:00 p.m. the Ranger** (Eli's truck, St. Isidore, the heater; her planner open to December): the reason (`e16_reason`); [told] "You were going to
+bring *her*."; "I did everything right…"; **"Mom first. Then Facebook."** — she asks him to leave the status up till she's told her mother at home
+[not hedge]; Theo keeps his jar. Theo hands Jack a spoon; optional Wednesday confession (penance: pray for her by name until Advent); **10:40 the
+lounge** — "Ask me again in a week," returned; "She's a good girl"; Lena's one medal-lie ("I'm good, Jack."); **Kevin's first scar telling** (his
+banked week); **midnight, Laney's face in 217's door**. **Thu** Gloria sends Jack home ("Is it the cow girl?" "Yeah."); **Theo to Youngstown — on
+the Greyhound**; the Harbor Inn "for my mother"; **the two-hander in the basement**: Jack read all four Twilight books aloud to Gina the summer after
+Danny went in; the unofficial duel `twilight` (record card untouched) — move 2, Edward leaving Bella "for her own good" without asking her (Concede: "He
+should have asked her."); Lena plays "Clair de lune" properly, around the dead F — "the last time I played it right in front of anybody was in
+November, four years ago"; the bench (Lena heat cap +1, Reckless only; she ends it); Julian at 11:40. **The Rialto at midnight** (Lena's head on
+Julian's shoulder in the months-passing montage; Kevin's "Respectfully"). **Fri** two soups (the Anchor's, Laney's op; Julian's juk) — Lena stays;
+Lena signs the Manhattan Declaration from bed; Jack signs / balks at the civil-disobedience pledge / concedes Margot's point (`e16_decl`); Lena's half
+of a sentence to Laney through a door; **Margot's "healthiest thing"**; "Cancel the Costigan." / "We are being *punished*." **Sat** 3 a.m. the Lagoon
+bench, Theo in from a run ("Is this about the farmer?" "Yeah."); OSU 21–10; Laney: "Sure it is."; **Danny's fifth letter** (advice for a week that's
+over); 5:45 p.m. Theo: "What time do you get off?" (E17's bridge to the party). Tag: "It just isn't the thing, is it." Lena's resolve 6 → 5 → **5**.
+**E16 is clean of Skye.**
 
 **E17 · "Christ the King"** · Sun Nov 22 – Wed Nov 25 · Christ the King (Sun Nov 22; John 18:33b–37, "What is truth?"); Saints 38–7 at Tampa (10–0)
 [verify]; **Koenigsegg walks away from buying Saab (Tue Nov 24) [verify]**; Thanksgiving break begins (Wed). *(Re-planned after S1E13 for the
@@ -4316,7 +4366,7 @@ raft, the toast, and: "We know." / "Everyone knows." / "People outside of Califo
 (player's lines; keep them verbatim).
 **The false dawns (brief running bit; registry #68).** Every time Jack or Lena gets out of a relationship, Theo and Laney are absolutely
 pumped — and then deeply bummed. It escalates: **#1 S1E13–E14** (Wes ends it; Martinelli's; then Becca is official — the Martinelli's
-goes into a ficus), **#2 S1E19–E20** (Becca ends; a table for two at the Harbor Inn under COSTIGAN; then Julian's soup), **#3 S2E11,
+goes into a ficus), **#2 S1E16** (Becca ends before Thanksgiving — accelerated; a table for two at the Harbor Inn under COSTIGAN; dead Friday with Julian's soup), **#3 S2E11,
 inverted** (they hear only the "No." and hold a wake with the real champagne — and then she cracks up). Paid off at S2E17, when the
 champagne is finally for something.
 **Never ask Laney for girl advice (registry #69).** S1E09 the poem and the knee; callbacks E16 ("No."), S2E03 ("I've seen your work,
@@ -5090,3 +5140,18 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 | 2026-10-21 | §22 E15, E16 | E15: "Thirteen days after Wes" (not "two weeks to the day"); **Kevin's stairwell fight moves to E15** (E16 over-stacked); **Jack is at Bastille on every `e14_bastille` value**. E16: Becca's Ohio-trip scene moves from a Tuesday "Coffee & Donuts" (a Sunday-only table) to **the Portolá steps**, and her knowledge of Maria's Christmas invitation has a route (**Maria writes her directly**, as in October). | Continuity, Knowledge, Mechanics (should/could). |
 | 2026-10-21 | Researcher queue | **Verify before E17/E22 are drafted:** the date Koenigsegg's withdrawal from Saab was announced (bible: Tue Nov 24; a reviewer recalls Nov 23) and GM's Saab wind-down announcement (bible: Fri Dec 18; a reviewer recalls Dec 17). Regensburg (Sept 12, 2006) and La Sapienza (cancelled Jan 2008, the text read in his absence) are now on the page in E14. | Continuity (could). |
 - Next: S1E15 from §22 E15 as amended; Knowledge Auditor carries the E14 live risks logged in `knowledge.md` (`becca_knows_lena_ask`, `maria_knows_lena_maybe`, Gina–Lena Facebook route).
+
+### Revision log — S1E15 pre-production plan (Showrunner, 2026-10-22; S1E14 published, not yet played)
+| Date | Section | Change | Why |
+|---|---|---|---|
+| 2026-10-22 | §22 E15 (pre-production paragraph), `outlines/s1e15.md` (new) | **S1E15 planned save-agnostically** (every E14 flag gated on all values; SAVE-DEPENDENCIES in the outline §9): the money fork (`e15_money` rafi / theo / priya) with Becca's refused Daisy money and the third Kostelnik money order 🔒; Frank's Monday night in the Lordstown lot and Maria's 1 a.m. call; Gina's DUI line and detention (#19 peak); the unofficial `wall` duel on Margot's whiteboard (record card untouched); the Veterans Day bench (Lena there for him — the mirror of E14); Bastille — the song with no second chorus, both stay to the end, "Can I walk you back?"; Julian at the Point wall at dusk (red herring #4); Kevin's crack and the stairwell (🔒 meaning recorded for writers only); the first Sunday Julian sits beside her; **"I'm with Julian now"** before the invitation can leave Jack's mouth; Theo's "vampire"; Laney holds it till 10:41 p.m. | Player notes (E15: Jack finds out about Julian; Lena tells him before he can ask her home); brief ACCELERATED SEQUENCE + details, "Open questions resolved," the hurt chain (no distance), Julian co-design; E14's `nextTime` promises. |
+| 2026-10-22 | new long-arc flags (planned) | `knows_lena_julian`, `knows_frank_drinking`, `knows_gina_detention`, `lena_knows_frank_night`, `jack_ran_errand` / `theo_paid_deposit` / `jack_brick_desk`, `becca_offered_daisy`, `theo_knows_lena_julian`. Open for the room: `jack_ran_errand` gives S2 (Rafi's father's file) a lever — Ray saw a box on Rafi's bike; whether he knew stays 🔒 and unused until the room wants it. | Consequence tracking for E16–E17 and S2. |
+- Next: the Period Researcher's E15 sheet (`period/s1e15-…`); the Architect expands `outlines/s1e15.md` into the blueprint after the player finishes S1E14 (or save-agnostically in pre-production). E16 and E17 plans follow.
+
+### Revision log — S1E16 pre-production plan (Showrunner, 2026-10-22; S1E14 published, not yet played; E15 planned only)
+| Date | Section | Change | Why |
+|---|---|---|---|
+| 2026-10-22 | §22 E16 (title + pre-production paragraph), `outlines/s1e16.md` (new) | **S1E16 planned save-agnostically** (every E14 flag and every planned E15 flag gated on all values; SAVE-DEPENDENCIES in the outline §9). **Retitled "Due Course"** (Kevin's stairwell moved to E15; #82's "in due course"). The breakup's truest version: **Wed Nov 18, the Ranger outside Portolá**, after Maria's letter and Becca's Ohio Christmas; the 2 a.m. realization keyed to **Becca praying at two, like always**; **"Mom first. Then Facebook."** — the status stays up [not hedge] until Becca has told her mother at Thanksgiving (keeps Maria's E17 route intact); Lena's quiet devastation in traces (one medal-lie; the full mug); Laney's face at midnight; **the two-hander** (Gina and Twilight; the unofficial `twilight` duel, record card untouched; "Clair de lune" around the dead F; "November, four years ago"); heat cap +1 (Reckless only); the false dawn #2 (Harbor Inn under COSTIGAN → "Cancel the Costigan"); Margot's "healthiest thing"; Kevin's first scar telling; Danny's fifth letter; Theo to Youngstown on the Greyhound. **E16 ends Sat Nov 21, 5:45 p.m.** | Player notes (E16: Jack ends it with Becca before Thanksgiving; Lena's quiet devastation, Laney sees; the every-other two-hander); brief ACCELERATED SEQUENCE + details, "Open questions resolved," E15–E17 design round 1 (the E17 lead-in starts here); E15's `nextTime` promises. |
+| 2026-10-22 | §24.7 | False dawn #2 re-timed **S1E19–E20 → S1E16** (stale since the acceleration; §21 #68 already said E16). | Consistency. |
+| 2026-10-22 | open for the E17 Showrunner | **The brief's newer E17 design (a party Theo drags Jack to; Theo loses him; Jack crosses the room) supersedes §22 E17's Brick meeting and §10.2's "the Brick's 24-hour reading room."** Not edited here — E17's plan owns the re-cut. E16's tag hands off Saturday night (Theo: "What time do you get off?"); the E15 Brick-desk/1:45 seed is orphaned unless E17 reuses it. [not hedge] Jack's Facebook still shows Becca until after Thanksgiving. | Brief (newest directives win). |
+- Next: the E16 period sheet exists (`period/s1e16-nov16-21-2009.md`; open items in the outline §12); the Architect expands `outlines/s1e16.md` after E15's blueprint exists. E17's plan follows.
