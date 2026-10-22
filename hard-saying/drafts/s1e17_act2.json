@@ -1,0 +1,534 @@
+{
+  "scenes": {
+    "s03": {
+      "slug": "SUNDAY · 1:35 PM · THE ANACAPA LOT, KEVIN’S ODYSSEY",
+      "body": [
+        "Lena carried the polish out of Sully’s in her coat pocket like a flask. Now she’s at the Odyssey’s back bumper in the first real sun since Thursday, a Kleenex up her sleeve and her voice down to about half of itself, and across the back glass, in the white La Vang car-wash polish, WHO DAT · 9–0 has gone streaky with a week of fog. The 9 is hers: fat on top and leaning into the next number, the way only she makes them.",
+        "“My nine,” she says. “I’ll take it down.” She does it herself, with the remover and a corner of the Kleenex, and steps back from a window that now says WHO DAT · –0. It reads like a threat.",
+        "Kevin has the keys and his backpack and somewhere to be. “Library. Orgo doesn’t care that we’re ten and oh. Make it legible — I park this thing in front of the Brick.” Julian stands at Lena’s elbow with his hands in his cardigan pockets, reading the glass with real attention. Eight days in, he has stopped asking what WHO DAT means and started saying it under his breath.",
+        "“She made me practice the chant in the car,” he tells Jack. “I’m told I’m flat.” “He’s a tenor,” Lena says. “Tenors can’t holler. It’s a known thing.” Jack has his hands in the Carhartt and, in one of them, a phone with a sentence in it he hasn’t sent.",
+        "Lena wipes the neck of the bottle on her jeans and holds it out. “Your turn, Youngstown.”"
+      ],
+      "choices": [
+        {
+          "text": "Write the ten yourself.",
+          "tag": "Sincerity",
+          "set": {
+            "e17_glass": "sincerity",
+            "rel.lena.warmth": "+1",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "He takes the bottle. The 1 goes on fine. The 0 starts out round, gets ambitious, and ends up an egg leaning hard to the left, with a drip of polish running off the bottom of it.",
+            "“That,” Lena says, hoarse and enormously pleased with him, “is the worst ten I have ever seen. In my *life*. Give it a flag. It needs something to hold it up.”",
+            "He draws a fleur-de-lis beside it. It comes out looking like a fork. She studies the fork, sniffs, and lets it stand.",
+            "Then they scatter: Lena into Julian’s car with her Kleenex, Kevin into the Odyssey with the ten still wet on the glass, backing out slow so it won’t run. Jack stays in the lot."
+          ],
+          "goto": "s03a"
+        },
+        {
+          "text": "Hand it to Julian. “He should do the ten. He’s learning.”",
+          "tag": "Decency",
+          "cue": "Lena will remember that.",
+          "set": {
+            "e17_glass": "decency",
+            "rel.julian.warmth": "+1",
+            "rel.lena.friction": "+1",
+            "soul.grace": "+1"
+          },
+          "response": [
+            "“He should do the ten,” Jack says, and passes the bottle across. “He’s learning.”",
+            "Julian checks with Lena, who says nothing at all, so he steps up to the glass. He writes it in a composer’s hand — the 1 a clean stem, the 0 closed at the top, the two of them the same height and properly spaced, neat as a score. Then he caps the bottle.",
+            "Lena reads the ten. “Perfect,” she says, to Jack.",
+            "Then they scatter: Lena into Julian’s car with her Kleenex, Kevin into the Odyssey with the ten still wet on the glass, backing out slow so it won’t run. Jack stays in the lot."
+          ],
+          "goto": "s03a"
+        },
+        {
+          "text": "“You do it. I’m in mourning.”",
+          "tag": "Wit",
+          "set": {
+            "e17_glass": "wit",
+            "rel.lena.warmth": "+1",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“You do it,” Jack says. “I’m in mourning.”",
+            {
+              "if": "e14_glass==\"wrote\"",
+              "text": "“I’m not letting you near a ten either,” Lena says, already uncapping it. “I’ve seen your eights.”",
+              "else": "“I wasn’t going to let you near it,” Lena says, already uncapping it."
+            },
+            "She writes the ten herself, big, a flag on the 1 and the 0 shaded down one side for depth. “Thirty-seven points and you lost,” she tells him over her shoulder. “That’s not mourning. That’s Ohio.”",
+            "Then they scatter: Lena into Julian’s car with her Kleenex, Kevin into the Odyssey with the ten still wet on the glass, backing out slow so it won’t run. Jack stays in the lot."
+          ],
+          "goto": "s03a"
+        }
+      ]
+    },
+    "s03a": {
+      "slug": "SUNDAY · 1:48 PM · THE ANACAPA LOT, THE WALL BY THE BIKE RACKS",
+      "body": [
+        "The low wall by the bike racks is cinderblock with a concrete cap, and by a quarter to two it has taken in enough sun to be warm through his jeans. Somebody’s U-lock hangs open on the nearest rack. Across the lot a gull is working the lid of a dumpster with total confidence and no results.",
+        "He hasn’t been properly warm since he walked into the Pacific on Friday night. He keeps finding the beach on him — in the seam of his jeans, in the eyelets of his boots, a few grains at the bottom of the Carhartt’s pocket, in with his keys.",
+        "Jack sits on the wall with the RAZR open on his knee — SKYE (MISFIT), where she typed herself in — and the sentence he has been carrying around since the den, through a Saints rout and a Lions miracle and Dale’s root beer, writing it under the table and taking it back out.",
+        "It started out long. It started out Aquinas-long, with objections and replies: that the grandmother isn’t working an angle at the end; that every con wants something, and the hand on the Misfit’s shoulder wants nothing; that a girl who listens to how people breathe ought to be able to hear the difference; that he can prove it, with page numbers. On T9 that’s four hundred key presses and a commitment. So he takes words out. He takes out the page numbers, and the breathing, and the hand. He takes out everything he would say to Hale. What’s left fits on the little screen, and it’s all bone.",
+        "She’ll see a 330 number and nothing else, so it has to be signed. And it starts *misfit*, because that’s what he called her, and she boxed it. That part was never in doubt.",
+        {
+          "if": "e16_misfit==\"jack_heart\"",
+          "text": "She crossed out CON in her own capitals. He wants it in writing that she meant it."
+        },
+        {
+          "if": "e16_misfit==\"jack\"",
+          "text": "She gave him the points and called it cheating. He wants the points without the asterisk."
+        },
+        {
+          "if": "e16_misfit==\"draw\"",
+          "text": "Nobody left the ditch. He would like to leave it first."
+        },
+        {
+          "if": "e16_misfit==\"skye\"",
+          "text": "She won. He has been losing to her for a day and a half."
+        },
+        "He has it three ways, and he means every one of them."
+      ],
+      "choices": [
+        {
+          "text": "*misfit. the grandmother still gets the last word. —jack (the guy who was right)*",
+          "tag": "Wit",
+          "set": {
+            "e17_draft": "wit",
+            "trait.wit": "+1"
+          },
+          "key": "Your first text to Skye was a correction: *the grandmother still gets the last word. —jack (the guy who was right).*",
+          "response": [
+            "He signs it the long way, dash and all, and hits SEND, and the screen says MESSAGE SENT like it’s proud of him.",
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "misfit. the grandmother still gets the last word. —jack (the guy who was right)",
+              "time": "1:52 PM"
+            },
+            "He shuts the phone. It doesn’t buzz. Across the lot the gull gives up on the dumpster and goes to see about the Lagoon."
+          ],
+          "goto": "s04"
+        },
+        {
+          "text": "*misfit. correction: a con waits for you to come to her. she reached. —jack (still right)*",
+          "tag": "Press",
+          "set": {
+            "e17_draft": "press",
+            "trait.control": "+1"
+          },
+          "key": "Your first text to Skye was a correction: *a con waits for you to come to her. she reached.*",
+          "response": [
+            "He goes back and puts the colon in, because she’ll check, and sends it.",
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "misfit. correction: a con waits for you to come to her. she reached. —jack (still right)",
+              "time": "1:52 PM"
+            },
+            "He shuts the phone. It doesn’t buzz. Across the lot the gull gives up on the dumpster and goes to see about the Lagoon."
+          ],
+          "goto": "s04"
+        },
+        {
+          "text": "The correction, and the rest of it.",
+          "tag": "Candor",
+          "set": {
+            "e17_draft": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1",
+            "said_it_plain": true,
+            "said_it_plain_n": "+1"
+          },
+          "key": "Your first text to Skye was a correction — and then you told her Friday was the best night you’d had in a long time.",
+          "response": [
+            "He types the correction. Then he keeps typing, though he didn’t plan to, and the RAZR, which has opinions, tells him at the bottom of the screen that this is now two messages.",
+            "He looks at the second half a long time. He could cut it. It would take two seconds, and nobody would ever know it had been there. He sends both.",
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "misfit. correction: shes not begging. shes the only one in the car who stops lying.",
+              "time": "1:52 PM"
+            },
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "also friday was the best night ive had in a long time. i wanted to say it. —jack",
+              "time": "1:52 PM"
+            },
+            "He shuts the phone. It doesn’t buzz. Across the lot the gull gives up on the dumpster and goes to see about the Lagoon."
+          ],
+          "goto": "s04"
+        }
+      ]
+    },
+    "s06": {
+      "slug": "SUNDAY · 10:05 PM · ST. BRENDAN’S, THE COURTYARD WALL",
+      "body": [
+        "By ten the cold has settled into the courtyard for the night: into the flagstones, into the low wall under the olive tree, into the broken sprinkler that somebody finally shut off at the valve, so the lake that used to stand under the tree has dried to a crust of mud with leaves set in it. A fat crescent moon is going down yellow behind the Grove. Through the A-frame’s door, propped open with a hymnal, the organ starts something, stops in the middle and starts it again. Julian is in there with the organist, asking about the organ. He has been asking for twenty minutes, and the organist, by the sound of it, has been waiting thirty years for somebody to.",
+        "Lena is on the wall with her coat buttoned to the chin and a fresh box of Kleenex in her lap, the lotion kind. Jack is beside her. The cold has made her nose red and her eyes bright, and she is beautiful with a cold. It isn’t fair, and it isn’t his business. Her voice has gone down another notch since the bar. “Osei,” she says, to start, “has a dirty trick of sitting down two sentences before you’re ready.” Then she spends what’s left of her voice on Hale.",
+        "“It’s due at nine,” she says, “and it’s *good*, and I’m furious about it. You want my thesis?”",
+        "“No.”",
+        "“*A promise is made to a person, not to a reason.*” One finger up, like she’s calling a point of order. “*When the reason goes, the person is still standing there.*” Then she blows her nose and spoils it, and doesn’t care. “That’s page one. The rest is footnotes and me being right.”",
+        "“I argued the other side.”",
+        "“I know you did. Hale made you.” She turns her head against the cold to look at him. “Did you convince yourself?”",
+        "“I convinced the paper.”",
+        "“That is the saddest thing anybody has ever said to me on this wall,” she says, “and you did the Nebraska cow on this wall.” She shifts the box on her knees. “Go on, then. Argue the other side at me. I have to hear it before nine.”",
+        "“And if the person doesn’t want it kept anymore?”",
+        "“Then they let you off it. They say so, to your face. That’s the only door out.” She points the Kleenex at him. “You don’t get to decide it *for* them. That’s the paper. That’s page six.”",
+        "She takes that in herself, and looks out at the olive tree. “I was supposed to prove the thing I least believe,” she says. “I think I talked myself into it. Don’t tell Hale. He’d be unbearable.”",
+        {
+          "if": "lena_knows_why_becca",
+          "text": "She tucks the Kleenex box under one arm. “Have you told your mama yet?” “Tomorrow.” “*Still?*” “Tomorrow.”"
+        },
+        "Inside, the organ goes up into something enormous and stops dead. In the quiet after it, Lena picks at the cardboard edge of the box.",
+        "“Laney says you had a beach in your boots this morning.”"
+      ],
+      "choices": [
+        {
+          "text": "“Theo dragged me to a party. In Montecito.”",
+          "tag": "Control",
+          "set": {
+            "e17_lena": "control",
+            "trait.control": "+1",
+            "lena_knows_party": true
+          },
+          "key": "On the courtyard wall you told Lena that Theo dragged you to a party in Montecito. You didn’t tell her the rest.",
+          "response": [
+            "“Theo dragged me to a party,” Jack says. “In Montecito.”",
+            "“Good,” Lena says. “You needed dragging.” She nods, satisfied with Theo, and then she’s on to Hale — whether he’ll grade the two of them on the same curve, whether Hale has ever in his life graded on a curve or only on grudges — and she never comes back around to Montecito.",
+            "The organ stops for good. Julian comes out through the propped door with his car keys already in his hand and his cardigan buttoned wrong by one, and says, “Goodnight, Jack,” and means it. Lena gets down off the wall. “Nine o’clock,” she tells Jack. “Pigeonhole. Be late and I win by default.” Then the two of them cross the courtyard to Ocean Road, and Jack sits where he is until the organist comes out after them with a ring of keys the size of a tambourine, locks up St. Brendan’s for the night, and tells Jack, unasked, that the young man knows his stops."
+          ],
+          "goto": "s07"
+        },
+        {
+          "text": "“I was at the beach. It’s California. It’s in the lease.”",
+          "tag": "Wit",
+          "set": {
+            "e17_lena": "wit",
+            "trait.wit": "+1",
+            "soul.honesty": "-1"
+          },
+          "key": "On the courtyard wall Lena asked about the beach in your boots. You made a joke of it.",
+          "response": [
+            "“I was at the beach,” Jack says. “It’s California. It’s in the lease.”",
+            "“Uh-huh,” says Lena — in New Orleans a complete sentence, with footnotes — and she lets it go, and blows her nose.",
+            "The organ stops for good. Julian comes out through the propped door with his car keys already in his hand and his cardigan buttoned wrong by one, and says, “Goodnight, Jack,” and means it. Lena gets down off the wall. “Nine o’clock,” she tells Jack. “Pigeonhole. Be late and I win by default.” Then the two of them cross the courtyard to Ocean Road, and Jack sits where he is until the organist comes out after them with a ring of keys the size of a tambourine, locks up St. Brendan’s for the night, and tells Jack, unasked, that the young man knows his stops."
+          ],
+          "goto": "s07"
+        },
+        {
+          "text": "Back to the paper. Ask if Hale grades them on the same curve.",
+          "tag": "Restraint",
+          "set": {
+            "e17_lena": "restraint",
+            "soul.restraint": "+1"
+          },
+          "key": "On the courtyard wall Lena asked about the beach in your boots. You asked about Hale’s curve instead.",
+          "response": [
+            "“Is he grading us on the same curve?” Jack says.",
+            "Lena answers the curve: Hale doesn’t grade on a curve, Hale grades on grudges, and she has been building one with him on purpose since September. She answers Mémère’s cold, which Mémère claims she caught off Lena over the telephone on Friday, out of solidarity, and is treating with a novena and a little whiskey. She answers her flight, Wednesday, at an hour she says God Himself hasn’t seen. And she doesn’t ask again.",
+            "The organ stops for good. Julian comes out through the propped door with his car keys already in his hand and his cardigan buttoned wrong by one, and says, “Goodnight, Jack,” and means it. Lena gets down off the wall. “Nine o’clock,” she tells Jack. “Pigeonhole. Be late and I win by default.” Then the two of them cross the courtyard to Ocean Road, and Jack sits where he is until the organist comes out after them with a ring of keys the size of a tambourine, locks up St. Brendan’s for the night, and tells Jack, unasked, that the young man knows his stops."
+          ],
+          "goto": "s07"
+        }
+      ]
+    },
+    "s07": {
+      "slug": "SUNDAY · 11:48 PM · DELGADO HALL, THE FISHBOWL",
+      "body": [
+        "Near midnight the Fishbowl has one lamp on and the television. SportsCenter is running Tampa with the sound off — Brees from the pocket, Brees from the end zone, Brees in slow motion with the ball leaving his hand and arriving, again and again — and on the glass above the set hangs Priya’s laminate: THE LOUNGE CLOSES AT 2 A.M.",
+        "At the far end of the couch Lena has her laptop on her knees and the Kleenex at her hip, finishing the YES paper. Laney is on the rug below her with cotton balls between her toes, painting them a red OPI calls Cajun Shrimp, for company. Margot has the armchair and a yellow paperback in German. Kevin is on a stool at the window counter over orgo, turning a plastic molecule in his fingers in search of the place where it opens. Jack has the near couch, his eight pages and a red pen.",
+        "The room is quiet. Lena’s keys go in bursts and stop and go again. Laney’s brush ticks against the bottle. It’s the floor the way it gets about once a semester, everybody in one room with nothing to do but work, and Jack has been in it two hours and hasn’t touched his phone since Mass. It’s face down on the cushion by his knee. Around half past eleven Laney asks the room how you spell *Thibodeaux*, for reasons she declines to give, and Lena spells it without looking up. A while later Margot says, without lowering the German, “Costigan. Your pen is very loud,” and he stops clicking it.",
+        "At 11:48 it buzzes against his leg.",
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "you would of been a good man if it had been somebody there to kiss you every minute of your life",
+          "time": "11:48 PM"
+        },
+        "Jack laughs. Out loud, all of it, the kind that folds him over Hale’s eight pages and won’t quit; every time it starts to run down he gets to *would of* again and it starts over. He can’t do a thing about it. He doesn’t want to.",
+        "Kevin turns on his stool with a carbon in his hand. Margot lowers the German. Laney’s brush stops halfway to a toe, a drop of Cajun Shrimp hanging off the end of it. And at the far end of the couch, Lena looks up from her screen with her fingers still on the keys.",
+        "Jack sees all four of them looking. It doesn’t help at all.",
+        "Laney gives it a decent interval. Then: “Well. *No one* is a riot.”"
+      ],
+      "choices": [
+        {
+          "text": "Say nothing. Take it out to the stairwell.",
+          "tag": "Restraint",
+          "set": {
+            "e17_laugh": "restraint",
+            "soul.restraint": "+1"
+          },
+          "response": [
+            "He gets up with the phone and the eight pages and doesn’t say a word.",
+            "“He’s *leaving*,” Laney says, to everybody.",
+            "Margot uncaps a pen and writes something on the inside cover of the German. Kevin turns back to his molecule. At the end of the couch Lena watches Jack get as far as the door. Then she goes back to her screen, and her keys start again."
+          ],
+          "goto": "s07a"
+        },
+        {
+          "text": "“Dale. From Sully’s. The Lions are still winning.”",
+          "tag": "Control",
+          "set": {
+            "e17_laugh": "dale",
+            "trait.control": "+1",
+            "soul.honesty": "-1"
+          },
+          "response": [
+            "“Dale,” Jack says, when he can. “From Sully’s. The Lions are still winning.”",
+            "Kevin frowns. “Dale has your *number*?”",
+            "“Dale has everybody’s number.”",
+            "Lena keeps typing. “Tell Dale I said congratulations.” Margot writes something down. Jack goes, the phone in one hand and Hale in the other, and behind him he hears Laney say “*Dale*,” and nothing after it."
+          ],
+          "goto": "s07a"
+        },
+        {
+          "text": "“Hale’s paper. I just got to my conclusion.”",
+          "tag": "Wit",
+          "set": {
+            "e17_laugh": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“Hale’s paper,” Jack says, and holds up the eight pages. “I just got to my conclusion.”",
+            "“Nobody’s conclusion is that good, Youngstown,” Lena says, and laughs at him a little, the cold making a croak of it, and goes back to hers. Her keys start again.",
+            "Margot makes a note without looking down at what she’s writing. Jack takes his conclusion out to the stairwell."
+          ],
+          "goto": "s07a"
+        }
+      ]
+    },
+    "s07a": {
+      "slug": "SUNDAY · 11:52 PM · DELGADO HALL, EAST STAIRWELL, 4TH-FLOOR LANDING",
+      "set": {
+        "skye_texting": true
+      },
+      "body": [
+        "He took the stairs two at a time with the phone open in his hand, past two and three, the fire doors banging behind him one after another. The window on the fourth-floor landing opens its six inches and no more, and the cold off the Lagoon comes through the gap and down the stairs. It’s the one place in Delgado with a bar of signal you can count on. Jack sits on the top step with Hale’s eight pages rolled in one fist and the phone open in the other, and the phone isn’t done with him.",
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "also. me too. friday",
+          "time": "11:52 PM",
+          "if": "e17_draft==\"candor\""
+        },
+        {
+          "if": "e17_draft==\"candor\"",
+          "text": "He leans his head back against the cold cinderblock and grins at the caged bulb over the landing like an idiot."
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "thats twice you said a true thing on purpose. im keeping count",
+          "time": "11:52 PM",
+          "if": "e17_draft==\"candor\" && e16_kiss==\"candor\""
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "sorry. work. i had to stand on a carpet and smile at a wall for five hours and every wall was rude to me",
+          "time": "11:53 PM"
+        },
+        "Work. He pictures a soundstage somewhere south of here — a juice box, a wall, lights — and her being polite to it for five hours.",
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "also flannery agrees with me. i asked her",
+          "time": "11:53 PM",
+          "if": "e16_misfit==\"skye\""
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "also we were tied. you dont get a signature",
+          "time": "11:53 PM",
+          "if": "e16_misfit==\"draw\""
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "also you used the author. you dont get a signature",
+          "time": "11:53 PM",
+          "if": "e16_misfit==\"jack\""
+        },
+        {
+          "if": "e16_misfit==\"skye\"",
+          "text": "He would like to know how."
+        },
+        {
+          "if": "e16_misfit==\"draw\"",
+          "text": "He disputes this, silently, on a stair."
+        },
+        {
+          "if": "e16_misfit==\"jack\"",
+          "text": "He used the author. He would use her again."
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "what did i miss",
+          "time": "11:54 PM"
+        },
+        "Ten hours. He could tell her about the Saints and Dale; that he wrote eight pages against something; that she just got him run out of a lounge. Three floors down, Laney is no doubt explaining him to the others. He gets as far as the first word of all three."
+      ],
+      "choices": [
+        {
+          "text": "*the browns lost on the last play. a man named dale bought me a root beer*",
+          "tag": "Wit",
+          "set": {
+            "e17_reply": "wit",
+            "trait.wit": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "the browns lost on the last play. a man named dale bought me a root beer",
+              "time": "11:55 PM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "i want to meet dale. i want dale at my funeral",
+              "time": "11:55 PM"
+            },
+            "He laughs again, quieter. The landing can take it.",
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "stuck down here till tuesday. more work. a woman with pins in her mouth",
+              "time": "11:56 PM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "tuesday. late. ill find you.",
+              "time": "11:56 PM"
+            },
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "find me where",
+              "time": "11:57 PM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "i found you in a window seat. ill manage.",
+              "time": "11:57 PM"
+            },
+            "Tuesday is his last night in California till Sunday. He’ll tell her Tuesday. He gets up off the step. He goes through the fire door into the fourth-floor hall instead of back down the stairs, and leaves the Fishbowl to whatever it’s saying about him."
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "*ten hours of nothing. i wrote a paper about promises*",
+          "tag": "Candor",
+          "set": {
+            "e17_reply": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1",
+            "rel.skye.trust": "+1"
+          },
+          "response": [
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "ten hours of nothing. i wrote a paper about promises",
+              "time": "11:56 PM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "ten hours is a long time to be polite to a phone. i like that you counted",
+              "time": "11:56 PM"
+            },
+            "He sits with that one on the cold step.",
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "stuck down here till tuesday. more work. a woman with pins in her mouth",
+              "time": "11:57 PM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "tuesday. late. ill find you.",
+              "time": "11:57 PM"
+            },
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "find me where",
+              "time": "11:58 PM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "i found you in a window seat. ill manage.",
+              "time": "11:58 PM"
+            },
+            "Tuesday is his last night in California till Sunday. He’ll tell her Tuesday. He gets up off the step. He goes through the fire door into the fourth-floor hall instead of back down the stairs, and leaves the Fishbowl to whatever it’s saying about him."
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "Don’t answer till morning.",
+          "tag": "Restraint",
+          "set": {
+            "e17_reply": "restraint",
+            "soul.restraint": "+1"
+          },
+          "response": [
+            "He shuts the phone. Morning is a reasonable hour for anything. He goes through the fire door into the hall instead of back down to the Fishbowl, brushes his teeth, and lies down in the dark of 412 with Theo breathing on the far side of the room and the phone on the pillow by his head, where he can get to it if it’s important. It won’t be.",
+            "At 12:31 it buzzes against his ear.",
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "are you asleep or being mysterious",
+              "time": "12:31 AM"
+            },
+            "He isn’t asleep.",
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "mysterious",
+              "time": "12:32 AM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "stuck down here till tuesday. more work. a woman with pins in her mouth",
+              "time": "12:32 AM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "tuesday. late. ill find you.",
+              "time": "12:33 AM"
+            },
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "find me where",
+              "time": "12:33 AM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "i found you in a window seat. ill manage.",
+              "time": "12:34 AM"
+            },
+            "Tuesday is his last night in California till Sunday. He’ll tell her Tuesday. He lies there with the phone shut on his chest, wide awake, grinning at a ceiling he can’t see."
+          ],
+          "goto": "s08"
+        }
+      ]
+    }
+  }
+}

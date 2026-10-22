@@ -38,7 +38,7 @@ locations are superseded by the outlines.**
 
 ## 3. Room inventions introduced by the re-split (fictional; for Continuity)
 
-- **The Starlite** — a 1958 all-night coffee shop at the east edge of Marisol by the 101 on-ramp (boomerang Formica; a rooftop neon star with two dead points; a
+- **The Starlite** — *(superseded by the E17 blueprint, revision 4: a 1958 **truck stop twenty minutes up the 101**, at the top of the grade — diesel islands, a coffee counter, a back room of booths, showers for drivers; the description below otherwise stands)* — a 1958 all-night coffee shop at the east edge of Marisol by the 101 on-ramp (boomerang Formica; a rooftop neon star with two dead points; a
   quarter jukebox; bottomless coffee); night waitress **Bev** ("you kids"). **Skye ground; never Jack/Lena ground.** A 1993 Mazzy Star single on a diner jukebox in 2009
   is period-plausible (UNVERIFIED for any real diner; fictional place).
 - Carried from the earlier E17 plan, now in E16: **the Halloran house** (Camino Alto), **Wyatt Halloran**, **Ellery Beach** (bible revision log 2026-10-22).
