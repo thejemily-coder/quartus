@@ -1228,3 +1228,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   character**." Keep her that lovable: the S2 ending has to hurt because she's worth it, never because she's diminished.
 - **After S1E19 (player feedback).** "So so good." **Skye especially**, but **Lena was magnificent in her extended
   scene with Jack** too. **Theo and Delaney remain great.** **Really enjoying Fr. Osei.** (Keep giving Osei room.)
+- **E20 design answers (player).**
+  - **Skye's first attempt is all seduction.** She never asks in words, because **she thinks she's already been clear**
+    (she pretty much was last time) and **can't conceive that he might say no**. So she's **shocked** when he does,
+    and **initially hurt**, but not once he starts explaining. Then the sting of rejection **turns toward the fear and
+    vulnerability already designed** (her fear he thinks she's a slut → his answer → "right now" → "I can work with
+    that").
+  - **Osei: keep as planned** (more in E21's confession and the Newman party).
+  - **Picture #3: a real step up.** Clearly provocative now, more skin and a dare in it, still leaving rungs for
+    Christmas and New Orleans.
