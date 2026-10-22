@@ -819,7 +819,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Skye's show:** a **CW-style prep-school teen soap** where she plays **the sweet, virginal good girl everyone
     protects**, the opposite of who she is. She finds it hilarious that Jack's family knows her as "the nice one" (play
     against the Costigans' alarm: Nonna and Maria clocked the Facebook photos, not the character).
-  - **Skye's real name: Mary Katherine** (Callender), baptized Catholic, named for a grandmother she barely knew. The
+  - **Skye's real name: Mary Catherine** (Callender), baptized Catholic, named for a grandmother she barely knew. The
     irony isn't lost on Jack. A late intimacy when she tells him.
   - **The Broussard Christmas (heard through Lena's calls and messages):** **bonfires on the levee** on Christmas Eve to
     light the way for Papa Noël; **Réveillon** after midnight Mass (Lena describes every dish); **the empty chair**
