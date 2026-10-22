@@ -966,3 +966,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   argues to win and to learn, and her "explain it to me while we walk" rule continues. It contrasts with Jack and
   Lena's arguments: with Skye politics is a game between people who differ; with Lena it's family (same faith,
   different conclusions), which is why Lena's version cuts deeper. Verify dates with the Period Researcher.
+- **Running bit: the alliance's escalating emergency meetings (player).** Three, each bigger than the last, seen only
+  in fragments from Jack's POV:
+  1. **Secret December (Theo suspicious):** Jack catches a glimpse or fragment: Theo and Laney huddled somewhere odd,
+     breaking apart when he walks in ("We were discussing… finals.").
+  2. **After Jack and Skye are Facebook official (January):** a **bigger** emergency meeting. Jack sees more of it (a
+     whiteboard hastily flipped, Kevin dragged in against his will, Margot taking notes "for science").
+  3. **After one of Skye's public antics (late January or early February):** the **biggest** emergency meeting,
+     which **secretly results in getting Lena to plan the group New Orleans trip** for the Super Bowl and Mardi Gras.
+     Jack only sees the outcome: Lena suddenly organizing the trip with suspicious enthusiasm, Laney and Theo
+     innocent. The alliance's masterstroke. Confirmed at the champagne reveal.
