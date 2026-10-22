@@ -918,3 +918,21 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   She dares him into the cold Pacific in their clothes, and they kiss soaking wet on the sand. **The next morning Theo
   is confused for both reasons**: he lost Jack at the party and spent the night worried, Jack strolls in at dawn soaked
   and glowing, humming, and won't explain. Theo is baffled, then suspicious. (Jack invites him to Thanksgiving that day.)
+- **E17 design round (player).**
+  - **First text: a correction**, continuing the book argument (e.g., "The grandmother still gets the last word. —Jack
+    (the guy who was right)"). Fit to voice.
+  - **The hours-long coffee:** **faith, curiously** (she asks what believing is like; yoga and philosophy comparisons;
+    he's charmed and a little sad) and **pure play** (improvised bits and games; she makes him play characters).
+    **Jack still doesn't know who she is** (no Facebook add yet), so Skye keeps her career out of it. She dodges or
+    deflects, and enjoys being unknown to him. The dramatic irony plays for the player (who knows from the brief
+    hints? No: the player knows; Jack doesn't), so plant small tells: someone staring, a barista's double-take, "for a
+    role."
+  - **After the coffee, before Jack gets home for Thanksgiving, she adds him on Facebook**, and that's how he learns
+    she's famous. He texts her that **he's sorry for being an idiot and having no idea she was famous**; **she's still
+    delighted** (being unknown to him was part of the charm). That exchange **begins their constant texting over
+    Thanksgiving**. (Lands at the end of E17 or the opening of E18; room's call.)
+- **E18 (Thanksgiving in Youngstown with Theo) design round (player):** **visiting Danny** (Jack takes Theo to the
+  prison visit; Theo meets Danny, and something about Theo shows); **Nonna adopts Theo** (feeds him, interrogates him in
+  Italian); **Frank and Theo** (continuing their move-in-day bond: the garage, the Browns, a beer); **Skye texts all
+  weekend** (the phone buzzes at the table; Gina notices, then Theo, then Nonna). **Jack is in touch with Lena regularly
+  too, but not as much or as deeply as they will be over Christmas.**
