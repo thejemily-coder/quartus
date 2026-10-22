@@ -1276,3 +1276,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   4. **The Danny problem.** Her team finds out his brother is in prison: a tabloid hook waiting to happen for the
      network's "good girl." **Skye refuses to care**, and it becomes a quiet test of who she is. (Never a cheap villain:
      the team is doing its job.)
+  - **Why she starts posting recklessly (player).** The team's photo rules are the reason: she's **fed up with them**,
+    and she **liked how changing her status on her own felt**, so **she keeps doing it with photos of the two of
+    them**. The first ones are **cute and fun**; as they're out being **more wild and reckless**, **the photos get that
+    way too**. This drives the Facebook tags, Lena seeing the public surface, and the public antic that sets off the
+    alliance's third emergency meeting. (Public posts stay Facebook-plausible; the private pictures stay private.
+    Jack's behavior in them stays within his character.)
