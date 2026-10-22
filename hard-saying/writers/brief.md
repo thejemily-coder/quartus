@@ -936,3 +936,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Italian); **Frank and Theo** (continuing their move-in-day bond: the garage, the Browns, a beer); **Skye texts all
   weekend** (the phone buzzes at the table; Gina notices, then Theo, then Nonna). **Jack is in touch with Lena regularly
   too, but not as much or as deeply as they will be over Christmas.**
+- **E19–E21 (the secret December) design round (player).**
+  - **Strange-hour dates (all four, spread across the episodes):** **night drives** (her car at 1 a.m., up the coast,
+    music loud, no destination); **her world** (she sneaks him onto an LA set or into an industry event, where he's wildly
+    out of place and she loves watching him); **dawn surf** (she tries to teach him in December; he's terrible); **his
+    world** (she comes to the Anchor late on his shift; Gloria clocks everything).
+  - **The first "no" + Skye's vulnerability scene: at her place** (her rented beach house or apartment), the first
+    time she brings him home; intimate and private, and the talk that follows runs till dawn.
+  - **Lena in December (through Jack's eyes): both.** She's visibly trying with Julian by day (his gig, Mass together,
+    the song), and she's seeking Jack out by night, almost testing, and he's never there (midnight disappearances;
+    "Where do you go?").
