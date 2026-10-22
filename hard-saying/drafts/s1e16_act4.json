@@ -1,0 +1,517 @@
+{
+ "scenes": {
+  "s16": {
+   "slug": "FRIDAY · 11:50 PM · THE HALLORAN HOUSE, THE DEN",
+   "body": [
+    "The house goes down the hill in levels, and it takes Jack most of an hour to find the bottom of it: a hall of framed movie posters for movies he has never heard of, three of them for the same movie in three languages; a gym with a rowing machine and nobody rowing; a powder room with a window in the shower that looks straight down into the canyon. Above him the pool deck keeps going without him. The bass comes down through the concrete into the stair treads, felt more than heard, like weather in the next county.",
+    {
+     "if": "e16_drink==\"reckless\"",
+     "text": "Wyatt’s tequila has settled into a low warm hum at the back of his skull, the kind that makes another flight of stairs seem like a good idea."
+    },
+    {
+     "if": "e16_drink==\"control\"",
+     "text": "The beer in his hand is two-thirds gone and going warm, on schedule."
+    },
+    {
+     "if": "e16_drink==\"restraint\"",
+     "text": "He’s on his second Coke, sweating through the can into his palm, and he can feel it in his teeth."
+    },
+    "The last flight is slabs of concrete stuck into the wall with nothing under them and no rail on the open side, the stairs a man builds when he doesn’t expect anybody he loves to get old. Halfway down, two Marisol girls he half knows from the Commons are coming up, sophomores, holding their cups in front of them like they were told not to spill on anything, and the one in front is looking back down over her shoulder.",
+    "“— it’s *Cassidy*, I swear to God —”",
+    "“Don’t *look*.”",
+    "They go past him in a gust of vanilla body spray. Whoever Cassidy is, she’s their business. Jack goes on down.",
+    "The den is a long low room at the bottom of everything, carpeted the color of wet sand. A sectional the size of a fishing boat holds six people watching something with the sound off — men in suits at a desk, a score crawling along the bottom of the screen. There is a fireplace nobody has lit. The far wall is glass from the floor to the ceiling, and past it the canyon drops away into nothing at all, so the room seems to be hanging out over the dark on somebody’s word.",
+    "In the corner, where the glass meets the side wall, there’s a window seat with cushions on it, and on the window seat, alone, a girl.",
+    "She has her knees up and a paperback bent open over one of them. A man’s flannel, washed soft, the sleeves shoved past her elbows; cutoffs over black tights; bare feet, one ankle in a braided anklet. Her boots stand on the carpet by the seat, side by side, like two dogs told to stay. Her hair is long and streaked by the sun and stiff at the ends from salt water, and she’s tan in November, with freckles across her nose that she has left alone. There’s a Sharpie in her teeth, uncapped, and three highlighters in one fist, and no red cup anywhere near her. She isn’t reading the book so much as fighting it. The margins are black with her writing, and from across the room he can make out one word in capitals.",
+    "The room is careful about her. Six heads on the sectional, and not one of them turns toward the corner; a guy comes down for the bar fridge under the TV and goes back up without his eyes ever getting as far as the window seat. Jack reads it as anybody from Glenwood Avenue would: she wants to be left alone, and the room is doing her the courtesy.",
+    "She is the most beautiful person in the house, and she is having an argument with a book.",
+    "She takes the Sharpie out of her teeth long enough to tell nobody in particular, “God, she’s *awful*.” She writes something hard in the margin, and caps it, and uncaps it again. “She deserves it.”",
+    "The cover is turned toward him. It’s the Harvest paperback, the same edition as the Mooney castoff that rode in his back pocket all September: *A Good Man Is Hard to Find*.",
+    "Every room at Marisol so far, somebody else has walked him into — Theo through the door of his first party, Laney round the Lagoon by the elbow, Becca onto her team with a clipboard, Hale to a seminar table by roster. This one he crosses on his own feet: over the carpet, behind the sectional and six heads that don’t turn, into the cold that comes off the glass."
+   ],
+   "choices": [
+    {
+     "text": "Straight over. Sit on the far end of the window seat.",
+     "tag": "Reckless",
+     "set": {
+      "e16_cross": "reckless",
+      "rel.skye.heat": "+1",
+      "trait.reckless": "+1"
+     },
+     "key": "At Wyatt Halloran’s party you crossed the room yourself.",
+     "response": [
+      "He doesn’t stop at the edge of the cushions. He sits down on the far end of the window seat with his back against the glass, near enough that the paperback is within reach and far enough that nobody could call it an accident, and the cold of the canyon comes straight through Theo’s shirt into his spine.",
+      "She doesn’t look up. She turns a page with the highlighter fist and goes on writing."
+     ],
+     "goto": "s17"
+    },
+    {
+     "text": "Two waters from the bar fridge first. Hold one out.",
+     "tag": "Control",
+     "set": {
+      "e16_cross": "control",
+      "rel.skye.warmth": "+1",
+      "trait.control": "+1"
+     },
+     "key": "At Wyatt Halloran’s party you crossed the room yourself.",
+     "response": [
+      "He detours to the bar fridge under the TV, where somebody’s parents keep little square bottles of Fiji in rows like a hotel, and takes two, and crosses with one held out in front of him into the space over her book.",
+      "She takes it without looking up. She turns the cap once with her thumb until she feels the seal crack, and drinks half of it, and stands the bottle on the sill against the glass."
+     ],
+     "goto": "s17"
+    },
+    {
+     "text": "From the edge of the rug: “Who deserves it?”",
+     "tag": "Wit",
+     "set": {
+      "e16_cross": "wit",
+      "rel.skye.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "At Wyatt Halloran’s party you crossed the room yourself.",
+     "response": [
+      "He stops at the edge of the rug, where the window seat’s territory seems to begin.",
+      "“Who deserves it?”",
+      "The Sharpie stops."
+     ],
+     "goto": "s17"
+    }
+   ]
+  },
+  "s17": {
+   "slug": "FRIDAY · 11:55 PM · THE HALLORAN HOUSE, THE DEN, THE WINDOW SEAT",
+   "duel": "misfit",
+   "set": {
+    "met_skye": true
+   },
+   "body": [
+    "She looks up.",
+    "It isn’t a long look, but it goes all the way in, and for as long as it lasts there isn’t anything else in the house: not the bass, not the men at their silent desk, not the six heads, not the charcoal shirt he’s wearing that isn’t his. He has been looked at a good deal this week. Theo has looked at him, and Laney has, and Gloria. They were all looking at what happened to him. She’s looking at him — here, on a Friday, at five to twelve, with nothing behind it — like he’s the news.",
+    "“Shh,” she says. For a second she’s a librarian, sixty, with a pencil through her bun and a card catalog at her back; he can see all of it, and she hasn’t moved anything but her mouth. Then the librarian is gone and it’s a girl in a window seat with a Sharpie.",
+    {
+     "if": "e16_cross==\"reckless\"",
+     "text": "“You’re on my window seat.” “It’s a big window seat.” “It’s a big book,” she says, and seems to think that settles it in her favor."
+    },
+    {
+     "if": "e16_cross==\"control\"",
+     "text": "She tips the bottle at him. “Thank you for the water. Brave choice. Everybody else down here brings tequila.”"
+    },
+    {
+     "if": "e16_cross==\"wit\"",
+     "text": "“The grandmother,” she says. “Obviously. Sit down, you’re making the window nervous.” He sits, on the far end of the seat, with the glass cold at his back."
+    },
+    "She holds the book up so he can see the damage. “I’m reading for a part. A preacher’s daughter, in a movie that’s ‘very O’Connor,’ the director says. Directors say that when they read one story in college. So I’m reading O’Connor.” She drops the book back onto her knee. “I hate her. She hates everybody.”",
+    {
+     "type": "doc",
+     "title": "“A Good Man Is Hard to Find” — the margins",
+     "text": "beside the grandmother, four times, bigger each time: LIAR\nbeside the Misfit: only honest man in it\nat “Why you’re one of my babies. You’re one of my own children!” — LAST CARD. SHE’S BEGGING. PLAY IT AS A CON."
+    },
+    "“She’s a liar,” she says, and starts counting on the highlighters. “Page one, she doesn’t want to go to Florida, so she waves the newspaper at Bailey — escaped convict, headed this way — to scare him out of it. She sneaks the cat into the car in a basket because she knows they’d say no. She makes up a secret panel in an old house so the kids will scream till Bailey turns down the dirt road. And she dresses for the drive — this is my favorite —” She finds it with the yellow. “Navy straw sailor hat, white violets on the brim, so in case of an accident, anybody who sees her dead on the highway will know she was a lady.” She looks up at him again. “She’s a performer. I know performers. That last line is her best performance.”"
+   ],
+   "choices": [
+    {
+     "text": "“She lies for twenty pages. The last thing she says is the only thing that doesn’t help her.”",
+     "tag": "Press",
+     "set": {
+      "duel.misfit.rigor": "+1",
+      "trait.control": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“She lies for twenty pages,” Jack says. “Fine. Every word of it. But there’s a gun on her by the end, and she’s been flattering him for three pages to get out of it — nice people, good blood, all that. Then she says the last thing, and it’s the only thing in the story that doesn’t help her. It gets her shot.”",
+      "She points the Sharpie at him. “Ooh. Okay.” She pulls her bare feet in under her to make more room on the cushion. “Say more.”"
+     ],
+     "goto": "s18"
+    },
+    {
+     "text": "“If that’s a performance, she’s not getting a callback.”",
+     "if": "trait.wit>=38",
+     "tag": "Riposte",
+     "set": {
+      "duel.misfit.wit": "+1",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“If that’s a performance,” Jack says, “she’s not getting a callback.”",
+      "She laughs, straight out, nothing held back, her bare heels drumming once on the cushion. “No,” she says. “No, she is *not*. They went with somebody younger.”"
+     ],
+     "goto": "s18"
+    },
+    {
+     "text": "“She’s a liar. Most of the way down.”",
+     "tag": "Concede",
+     "set": {
+      "duel.misfit.heart": "+1",
+      "trait.sincerity": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“She’s a liar,” Jack says. “Most of the way down.”",
+      "“Most.” She tries it out three ways — *most*, *MOST*, *most?* — the way he has heard people run a line in a hallway before an audition, and settles on the last one. “You’re saving the bottom.”"
+     ],
+     "goto": "s18"
+    },
+    {
+     "text": "“That’s the joke. Grace doesn’t wait till you’re good. It comes for a silly old woman in a ditch.”",
+     "tag": "Reframe",
+     "set": {
+      "duel.misfit.rigor": "+1",
+      "soul.grace": "+1"
+     },
+     "response": [
+      "“That’s the joke,” Jack says. “Grace doesn’t wait till you’re good. It comes for a silly old woman in a ditch with her hat brim broken.”",
+      "“*Grace!*” She’s a game-show host now, cards in one hand, every tooth she owns. “For four hundred.” Then she puts the cards down, and it’s only her. “Okay. Grace.”"
+     ],
+     "goto": "s18"
+    }
+   ]
+  },
+  "s18": {
+   "slug": "SATURDAY · 12:12 AM · THE HALLORAN HOUSE, THE DEN, THE WINDOW SEAT",
+   "duel": "misfit",
+   "body": [
+    "By twelve past midnight the sectional is down to three, and somebody has changed the silent channel to a cooking show. Jack’s boots are on the carpet beside hers. He doesn’t remember taking them off.",
+    {
+     "if": "e12_whos==\"writer\"",
+     "text": "She wants to know how a boy at a party in the hills knows so much about a dead lady from Georgia. “I’ve read it,” Jack says. “And a friend of mine went as her for Halloween. With a stuffed peacock.” “What did your friend say about her?” “‘I came as her. I never said she was right.’” She says it back to herself — *I came as her. I never said she was right* — not doing anybody this time, just trying the line in her own mouth, and puts it somewhere for later."
+    },
+    "Then she turns the paperback over to the end, and she is the Misfit. She hardly does anything. Her shoulders go down; her face goes courteous and patient; her voice drops into a slow Georgia drawl with nothing in it at all. Jack has seen men like that at the bus station downtown, waiting on a bus that isn’t theirs.",
+    "“No pleasure but meanness.”",
+    "She keeps the Misfit on him for one breath more, and then she’s back, leaning in. “Here’s the thing, though. He says if Jesus raised the dead, you drop everything and follow him. And if he didn’t, you enjoy your few minutes — kill somebody, burn a house, whatever’s fun.” She taps the page with the highlighter. “That’s the most honest thing anybody says in the book. Everybody else is lying about who they are. He’s the only one who did the math.”"
+   ],
+   "choices": [
+    {
+     "text": "“He’s honest. That’s his trouble. ‘I wasn’t there so I can’t say He didn’t.’ He’d give anything to have been there.”",
+     "tag": "Press",
+     "set": {
+      "duel.misfit.rigor": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“He’s honest,” Jack says. “That’s his trouble. Read the next part. ‘I wasn’t there so I can’t say He didn’t.’ He isn’t bragging. He’s furious about it. He’d give anything to have been there.”",
+      "She finds the line, underlined twice in her own green, and reads it with her lips moving. Then, in a margin crowded with capitals, she draws a small question mark beside it."
+     ],
+     "goto": "s19"
+    },
+    {
+     "text": "“He’s the most honest man in it. That’s why it’s a tragedy and not a joke.”",
+     "tag": "Concede",
+     "set": {
+      "duel.misfit.heart": "+1",
+      "trait.sincerity": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“He’s the most honest man in it,” Jack says. “I’ll give you that. That’s why it’s a tragedy and not a joke.”",
+      "She looks at him like he has said something in a language she took in high school and just remembered she can read. “Huh,” she says. “Okay. Write that down for me.” She holds out the Sharpie, and he writes TRAGEDY in her margin over the Misfit, in his small square capitals, and she blows on it to dry it."
+     ],
+     "goto": "s19"
+    },
+    {
+     "text": "“Honest men don’t put on a dead man’s shirt.”",
+     "if": "trait.wit>=38",
+     "tag": "Riposte",
+     "set": {
+      "duel.misfit.wit": "+1",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“Honest men don’t put on a dead man’s shirt,” Jack says.",
+      "She opens her mouth and shuts it and goes hunting back through the pages — and there it is: Bailey’s yellow shirt with the bright blue parrots, carried back out of the woods and buttoned on. She stabs the line and then points the Sharpie at him like it’s his fault. “*Parrots*,” she says. “I forgot the *parrots*.”"
+     ],
+     "goto": "s19"
+    },
+    {
+     "text": "“You like him because he says the worst thing out loud and calls it honest. That’s an actor’s favorite trick.”",
+     "if": "trait.reckless>=28",
+     "tag": "Personal",
+     "set": {
+      "duel.misfit.rigor": "+2",
+      "rel.skye.friction": "+1",
+      "rel.skye.heat": "+1",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "“You like him,” Jack says, “because he says the worst thing out loud and calls it honest. That’s an actor’s favorite trick.”",
+      "She clutches the paperback to her chest like he’s shot her with it. “*Ow*.” Then she grins at him over the top of it, and it isn’t any of the grins from earlier: wider, a little crooked, and very interested."
+     ],
+     "goto": "s19"
+    }
+   ]
+  },
+  "s19": {
+   "slug": "SATURDAY · 12:28 AM · THE HALLORAN HOUSE, THE DEN, THE WINDOW SEAT",
+   "duel": "misfit",
+   "body": [
+    "She gives him the Misfit once more, because she can’t leave it alone — the low shoulders, the good manners, the flat Georgia vowels of a man standing over a woman in a ditch. “She would of been a good woman, if it had been somebody there to shoot her every minute of her life.”",
+    "“Okay, Misfit,” Jack says.",
+    "She makes a face at that, a big one, for the back row. He looks out at the canyon, where there’s nothing to see but a single porch light on the far ridge, and when he looks back she has written it on the inside of the front cover — MISFIT — and drawn a box around it.",
+    "Then she pulls her knees up and wraps her arms round them, and the host and the librarian and the Georgia all go out of her at once. “Okay. Real question.” It’s the first thing she’s said tonight without somebody else in front of it. “Every line, somebody wants something. That’s the job. You find the want, you play the want.” She turns the book on her knees so he can see the place — the ditch, the gun, the old woman’s hand going out. “So when she reaches out and touches him. What does she *want*?”"
+   ],
+   "choices": [
+    {
+     "text": "“Nothing. That’s the point. For one second she doesn’t want anything from anybody. That’s what grace looks like from the outside. And he can’t stand it.”",
+     "tag": "Sincerity",
+     "cue": "Skye will remember that.",
+     "key": "In the window seat, over O’Connor, you told her what the grandmother wanted at the end: nothing. That’s the point.",
+     "set": {
+      "e16_misfit": "jack_heart",
+      "duel.misfit.heart": "+2",
+      "rel.skye.warmth": "+2",
+      "rel.skye.trust": "+1",
+      "trait.sincerity": "+1",
+      "soul.grace": "+1"
+     },
+     "response": [
+      "“Nothing,” Jack says. “That’s the point. For one second she doesn’t want anything from anybody. That’s what grace looks like from the outside. And he can’t stand it.”",
+      "She doesn’t say anything. She looks down at the page, at the hand on the shoulder, and then out at the black glass, where the two of them hang over the canyon with the lamps of the den behind them, and she stays like that with her chin on her knees, not being anybody at all."
+     ],
+     "goto": "s19v"
+    },
+    {
+     "text": "“O’Connor said it herself. That gesture is where grace comes in.”",
+     "tag": "Press",
+     "set": {
+      "e16_misfit": "jack",
+      "duel.misfit.rigor": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“O’Connor said it herself,” Jack says. “In one of her essays. That gesture, right there, is where the grace comes in. The author’s on my side.”",
+      "“You can’t use the *author*.” She’s scandalized. “That’s cheating. That’s calling the playwright’s mother.”",
+      "“She’d want me to.”",
+      "“She’d want *everybody* shot.”"
+     ],
+     "goto": "s19v"
+    },
+    {
+     "text": "“She wants to get to Tennessee.”",
+     "if": "trait.wit>=38",
+     "tag": "Riposte",
+     "set": {
+      "e16_misfit": "draw",
+      "duel.misfit.wit": "+1",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“She wants to get to Tennessee,” Jack says.",
+      "She throws a highlighter at him. It bounces off Theo’s shirt and rolls under the window seat, and she points after it, outraged, like it was his idea."
+     ],
+     "goto": "s19v"
+    },
+    {
+     "text": "“I don’t know. I just know it isn’t a con.”",
+     "tag": "Concede",
+     "set": {
+      "e16_misfit": "skye",
+      "duel.misfit.heart": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“I don’t know,” Jack says. “I just know it isn’t a con.”",
+      "She rests her chin on her knees and watches him say it. “That isn’t an answer.”",
+      "“I know.”",
+      "“It’s kind of a good one, though,” she says, and sounds annoyed about it."
+     ],
+     "goto": "s19v"
+    }
+   ]
+  },
+  "s19v": {
+   "slug": "SATURDAY · 12:40 AM · THE HALLORAN HOUSE, THE DEN, THE WINDOW SEAT",
+   "duel": "misfit",
+   "body": [
+    {
+     "if": "e16_misfit==\"jack_heart\" && duel.misfit.heart>=3",
+     "text": "She doesn’t score it. No host, no cards, no voice of any kind. She uncaps the Sharpie, finds CON at the bottom of the margin in her own capitals, and puts one hard line through it. Then she writes something beside it, small, upside down to him, and he can’t make it out. “Okay,” she says. “You win.”"
+    },
+    {
+     "if": "e16_misfit==\"jack_heart\" && duel.misfit.heart<=2",
+     "text": "She doesn’t score it. No host, no cards, no voice of any kind. She uncaps the Sharpie, finds CON at the bottom of the margin in her own capitals, and puts one hard line through it. “Okay,” she says. “You win.”"
+    },
+    {
+     "if": "e16_misfit==\"jack\"",
+     "text": "“Points,” she announces — the host is back, cards squared, teeth on — “to the boy in the borrowed shirt. The studio audience is annoyed.”"
+    },
+    {
+     "if": "e16_misfit==\"draw\"",
+     "text": "“A draw,” the host announces, cards squared, teeth on. “Nobody leaves the ditch.”"
+    },
+    {
+     "if": "e16_misfit==\"skye\"",
+     "text": "“I win,” the host announces, beaming at a camera somewhere over Jack’s shoulder. “She stays a liar. Flannery’s spinning.” “She’d be furious with you.” “Good.” The host goes, and she caps the Sharpie with a click. “She’d finally have a feeling.”"
+    },
+    "Upstairs the music changes songs without stopping. On the sectional somebody has fallen asleep sitting up, his chin on his chest, the remote still in his hand. She fans the highlighters into the pocket of the flannel like pens in a doctor’s coat, folds her legs under her, and turns on the cushion to face him properly, with the book shut on one finger."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "misfit",
+     "title": "The Misfit",
+     "if": "e16_misfit==\"jack_heart\"",
+     "text": "A girl in a window seat had the grandmother down as a con. I said she wanted nothing. She crossed out CON."
+    },
+    {
+     "kind": "note",
+     "id": "misfit",
+     "title": "The Misfit",
+     "if": "e16_misfit==\"jack\"",
+     "text": "A girl in a window seat had the grandmother down as a con. I cited O’Connor. She called it cheating, and gave me the points."
+    },
+    {
+     "kind": "note",
+     "id": "misfit",
+     "title": "The Misfit",
+     "if": "e16_misfit==\"draw\"",
+     "text": "A girl in a window seat had the grandmother down as a con. A draw. Nobody leaves the ditch."
+    },
+    {
+     "kind": "note",
+     "id": "misfit",
+     "title": "The Misfit",
+     "if": "e16_misfit==\"skye\"",
+     "text": "A girl in a window seat had the grandmother down as a con. She won. Flannery’s spinning."
+    }
+   ],
+   "next": "s20"
+  },
+  "s20": {
+   "slug": "SATURDAY · 12:45 AM · THE HALLORAN HOUSE, THE DEN, THE WINDOW SEAT",
+   "set": {
+    "skye_knows_surname": true,
+    "knows_skye_acts": true,
+    "skye_clocked_lena": true
+   },
+   "body": [
+    "“So,” she says. “Who are you?”",
+    "“Jack.”",
+    "“Jack what?”",
+    "“Costigan.”",
+    "She gives it back to him across a news desk — the anchor’s hair, the anchor’s concerned eyebrows, a hand on a stack of papers that isn’t there. “*Jack Costigan*, live from the window seat.” Then she says it again under her breath, just the name, getting it right.",
+    "“And you?”",
+    "“Skye.”",
+    "“Skye what?”",
+    "“Just the one.” She spreads her hands. “It’s a big one.”",
+    "“Two girls passed me on the stairs coming down,” Jack says. “One of them thought you were somebody called Cassidy.”",
+    "“People get me confused with a girl.”",
+    "“What girl?”",
+    "“A nice one.”",
+    "“Do you go here?”",
+    "“Not yet.”",
+    "“So what do you do, Skye-just-the-one?”",
+    "She’s somebody else before he has finished asking: a dental hygienist from Tarzana, snapping gum, with a lisp she must have spent a summer on. Mostly she does molars. She has seen things, in molars. Then the hygienist is gone. “I act,” Skye says. “I’ve been working since I was eleven.”",
+    "“In what?” Jack says — and he sees her get ready for something. It’s small. Her chin comes up and her face goes pleasant and set, somebody at the end of a high dive deciding not to look down.",
+    "So he adds, “I don’t have a TV, so it won’t mean anything,” and goes back to the Misfit, because he wasn’t done with him. “The thing about the Misfit is, he’s the only one in the whole car who takes Jesus seriously —”",
+    "She laughs. It isn’t any of the laughs she’s been doing tonight. It comes out through her nose first, undignified, and then the rest of it after, and she has to put the book face down on the cushion to get through it. Since eleven: Jack pictures a church-basement *Oliver!* and a commercial for a carpet outlet somewhere around Tarzana, and for the life of him he can’t see what’s funny.",
+    "When she’s finished she wipes her eyes with the cuff of the flannel and gives him the look again, the one from before, unhurried, all of her behind it. “You’ve got a dumped-somebody face,” she says. “Not a dumped face. A *dumped-somebody* face. They’re different. I’ve done both.”",
+    "“Wednesday.”",
+    "“Was she nice?”",
+    "“She’s the nicest person I’ve ever met.”",
+    "Skye doesn’t do a face for that, or a voice. She nods, slowly, like it’s exactly the answer she was afraid of on his behalf. “Then you did it for her,” she says. “That’s the worst kind to do.”",
+    "He doesn’t have anything to put after that.",
+    "“Are you with somebody else?” She asks it with no one in front of it — not the anchor, not the host.",
+    "“No.”",
+    {
+     "if": "e12_whos==\"writer\"",
+     "text": "She tips her head at him. “Your friend. The one who went as Flannery O’Connor.” “What about her?” “You said *a friend of mine* like it was in italics.”",
+     "else": "She tips her head at him. “There’s somebody, though.” “There isn’t.” “There’s a somebody all over your face, Jack. I can see her from here.”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“She’s a friend.”",
+     "tag": "Control",
+     "set": {
+      "e16_friend": "control",
+      "trait.control": "+1",
+      "soul.honesty": "-1"
+     },
+     "response": [
+      "“She’s a friend,” Jack says.",
+      "“Okay.” Skye lets a second go by. Then she reaches over and pats his knee, twice, in sympathy. “You’re a terrible actor, Jack.”"
+     ],
+     "goto": "s20a"
+    },
+    {
+     "text": "“She’s seeing somebody.”",
+     "tag": "Candor",
+     "set": {
+      "e16_friend": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“She’s seeing somebody,” Jack says.",
+      "“Okay,” Skye says. She doesn’t do a voice for it, or a face, or a joke. She caps the Sharpie and tucks it into the pocket of the flannel with the highlighters, and that’s where she leaves it."
+     ],
+     "goto": "s20a"
+    },
+    {
+     "text": "“Flannery O’Connor’s been dead since 1964. She’s not seeing anybody.”",
+     "if": "e12_whos==\"writer\"",
+     "tag": "Wit",
+     "set": {
+      "e16_friend": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“Flannery O’Connor’s been dead since 1964,” Jack says. “She’s not seeing anybody.”",
+      "“Sure,” Skye says, and smiles at him, and lets him keep that one."
+     ],
+     "goto": "s20a"
+    }
+   ]
+  },
+  "s20a": {
+   "slug": "SATURDAY · 1:00 AM · THE HALLORAN HOUSE, THE DEN",
+   "body": [
+    "At one o’clock somebody upstairs turns the music up, and the bass comes down through the ceiling and into the cushions. In the black glass beside her the den is laid out backward — the sectional, the cold fireplace, the floating stairs going up to the lit doorway at the top — and past the doorway, along the upper deck, somebody in a long coat goes by. Jack catches it at the edge of his eye, a shape in a reflection, and lets it go.",
+    "Skye turns her face toward the canyon, a fraction, away from the room. It’s quick, and it’s finished before he has decided whether it happened. Then she’s looking at him again.",
+    "“This party,” she says, “has too many people I went to middle school with.”",
+    "“You went to school with these people?”",
+    "“Some of them. On and off.” She already has her boots by the pull-tabs in one hand and the paperback in the other, and she’s on her bare feet on the carpet. “Do you want to leave?”"
+   ],
+   "choices": [
+    {
+     "text": "“Yes. Let me text my roommate.”",
+     "tag": "Control",
+     "set": {
+      "e16_theo": "control",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Yes,” Jack says. “Let me text my roommate.”",
+      "She takes him out through a door behind the bar fridge that he would never have found, and down a flight of bare concrete stairs toward the garage. He thumbs it on T9 going down, a letter at a time, the RAZR’s little screen the only light on the stairs.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "got a ride. dont wait",
+       "time": "1:04 AM"
+      },
+      "She waits at the bottom while he sends it and stamps into his own boots, swinging hers by their tabs, and if she’s curious who the roommate is, it doesn’t show. Beside her, under a fitted gray cover, Wyatt Halloran’s father’s second car sits in the dark with its shape showing through, and past it the big door is already rolling up on the night. She ducks under before it’s halfway, barefoot on the cold concrete, without looking back to see if he’s coming."
+     ],
+     "goto": "s21"
+    },
+    {
+     "text": "“Yes.”",
+     "tag": "Reckless",
+     "set": {
+      "e16_theo": "reckless",
+      "trait.reckless": "+1",
+      "soul.restraint": "-1"
+     },
+     "response": [
+      "“Yes,” Jack says.",
+      "She’s moving before the word is finished. He grabs his boots off the carpet and goes after her in his socks, through a door behind the bar fridge he would never have found and down a flight of bare concrete stairs into the garage, past Wyatt Halloran’s father’s second car asleep under a fitted cover, without a word to anybody. The big door is already rolling up on the night. She ducks under it before it’s halfway, barefoot on the cold concrete, and he goes under after her with a boot in each hand."
+     ],
+     "goto": "s21"
+    }
+   ]
+  }
+ }
+}

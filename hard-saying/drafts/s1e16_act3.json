@@ -1,0 +1,421 @@
+{
+ "scenes": {
+  "s14": {
+   "slug": "FRIDAY · 10:30 PM · CAMINO ALTO, THE HILLS ABOVE TOWN",
+   "music": "Randy Newman — “I Love L.A.”",
+   "body": [
+    "Theo takes the switchbacks of Camino Alto with the top down in November, the heater roaring at their shins and the cold going straight down the back of Jack’s borrowed collar. A cassette adapter runs from the old Becker deck to the iPhone in the cupholder, and Randy Newman is telling Los Angeles he loves it, and Theo is telling it with him — every word, the shouted parts too — with no irony at all. It’s the face he keeps for the last ten minutes of *Point Break*.",
+    "The town comes apart into lights as they climb. Mission Street is a long orange string; the campus is a scatter of windows; the harbor is a darker dark with a few boats pinned in it. There’s no moon. Jack finds the Lagoon by where the lights stop, and then makes himself watch the road.",
+    "“Wyatt Halloran,” Theo says, turning the music down for the pitch. “Junior. Two years ahead of me at Harvard-Westlake, where he was voted Most Likely to Own a Boat, and does. His father has produced three of the worst films of the decade for my father’s people. This is the house the second one built.”",
+    "My father’s people is Meridian. Jack has been on two expeditions on its letterhead.",
+    "“What was the second one?”",
+    "“A golden retriever gets elected to the Senate. I’ve seen it four times.” Theo downshifts for the last hairpin. “Think of it as penance, Father Jack. I do.”",
+    "At the top the road gives out into a turnaround and a house made mostly of light: glass walls lit gold from inside, a flat slab of roof, the front of it pushed out over the canyon on nothing Jack can see. Two black cars with Los Angeles dealer frames sit in the turnaround with their drivers in them and the engines off. Theo parks the SL beside them, nose out, and kills the ignition, and Randy Newman stops in the middle of a word.",
+    "On the front step Theo’s face changes. It goes smooth and pleasant and about ten years older — a face for valets, and for the people who tip them. Then the door opens on noise and warm air, and Theo puts a hand between Jack’s shoulder blades and walks him in."
+   ],
+   "next": "s15"
+  },
+  "s15": {
+   "slug": "FRIDAY · 10:45 PM · THE HALLORAN HOUSE, THE POOL DECK",
+   "music": "Passion Pit — “Little Secrets”",
+   "body": [
+    "The house is one idea, executed in money: glass and board-formed concrete cantilevered out over the canyon, and at the end of the deck a pool lit so blue Jack could read by it. Passion Pit is coming out of speakers hidden in the planters, a falsetto riding a drum machine, and around the pool stand forty people who all seem to have gone to the same four schools. They hold their drinks low and loose, like something they’re walking for somebody else.",
+    "A girl at the sliding door puts an empty red cup in Jack’s hand by way of a wristband, and Theo loses him in three minutes, by being Theo.",
+    "First a girl in a sequined top finds him by the outdoor kitchen — “Theo, thank God, Jordan’s in the powder room, it’s the callback, they went with the *other* girl” — and Theo produces a cocktail napkin from his coat pocket, monogrammed, and says something low that stops her chin shaking. Then a tall boy in a backwards Dodgers cap comes through the crowd with a cordless phone pressed to his chest. “Vance. The neighbor again. Noise. She wants an adult.” “Wyatt, I’m nineteen.” “You’re the closest thing.” Then a producer’s son in a fedora has an idea about a vampire who works in finance, and Theo is being steered toward the far end of the deck with a hand on each elbow.",
+    "He calls back over his shoulder. “Stay here. Don’t move. Don’t talk to anybody with a headshot.”",
+    "Jack stays. He stands by the outdoor kitchen, which is the size of the Fishbowl, as advertised, with two ovens in it nobody has ever turned on, and listens to Los Angeles talk. A boy’s manager says pilot season is going to be a bloodbath. A girl has booked a cell-phone commercial and is being congratulated in a tone usually kept for funerals. Somebody’s father is on a board; somebody else’s father is on a boat. A girl with a clipboard under her arm, who may or may not work here, looks at the empty cup and then at him.",
+    "“Who are you with?”",
+    "“Theo Vance.”",
+    "She nods, as though that accounts for the shirt. “And who reps you?”",
+    "“The Diocese of Youngstown.”",
+    "She laughs, politely, and seems to decide he’s somebody’s cousin, and goes.",
+    "When Jack looks again Theo is a camel coat at the far end of the pool with his LA face on, laughing at something the fedora said, holding the same glass of bourbon somebody handed him at the door. It’s still full. He’s driving.",
+    "Jack stands at the rail with his empty cup, over a canyon full of dark, in a house where nobody knows his name. It’s less restful than Lena made it sound."
+   ],
+   "choices": [
+    {
+     "text": "Wyatt’s tequila, because it’s handed to you.",
+     "tag": "Reckless",
+     "set": {
+      "e16_drink": "reckless",
+      "resolve.jack": "-1",
+      "trait.reckless": "+1",
+      "soul.restraint": "-1"
+     },
+     "response": [
+      "Wyatt comes back past the pool with the cordless phone under one arm and a bottle of Patrón in the other hand, pouring for anybody holding still, and Jack is holding still. Wyatt fills the bottom of the red cup without asking his name — “Welcome, man” — and goes off after Theo.",
+      "Jack drinks it because it’s there. It goes down hot and finds a place behind his breastbone to sit, and for a minute the deck is easier to stand on. Then the minute is over, and the falsetto is still going, and the clipboard girl has written him off as a cousin, and he wants a room with a door in it. Inside, a staircase goes down into the house — slabs of pale oak floating off the wall with nothing under them — and Jack takes it, looking for quiet."
+     ],
+     "goto": "s16"
+    },
+    {
+     "text": "One beer. Make it last an hour.",
+     "tag": "Control",
+     "set": {
+      "e16_drink": "control",
+      "trait.control": "+1"
+     },
+     "response": [
+      "There’s a galvanized tub of Pacifico on ice by the outdoor kitchen. Jack takes one, pours it into the red cup so nobody can count his bottles, and gives it an hour. He stands at the rail and sips and watches the far end of the deck, where Theo is being pitched at with both hands, and the hour doesn’t get any shorter.",
+      "Ten minutes of it is enough. He wants a room with a door in it. Inside, a staircase goes down into the house — slabs of pale oak floating off the wall with nothing under them — and Jack takes it, looking for quiet."
+     ],
+     "goto": "s16"
+    },
+    {
+     "text": "A Coke from the bar fridge.",
+     "tag": "Restraint",
+     "set": {
+      "e16_drink": "restraint",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "The bar fridge under the outdoor counter is full of bottles with labels in French. Jack asks the girl standing next to it whether there’s any pop.",
+      "She turns and looks at him with real interest. She has a nose ring and a cardigan that cost more than his bus ticket home. “You’re very *Midwestern*,” she says, not unkindly, and digs him out a Coke from behind the Perrier.",
+      "He pours it into the red cup so it looks like something. It fools no one, and the girl has already gone back to her friends. Ten minutes at the rail is enough; he wants a room with a door in it. Inside, a staircase goes down into the house — slabs of pale oak floating off the wall with nothing under them — and Jack takes it, looking for quiet."
+     ],
+     "goto": "s16"
+    }
+   ]
+  },
+  "s25": {
+   "slug": "SATURDAY · 6:05 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "At five past six the window over Theo’s desk has gone from black to the gray of a wet sidewalk, and there’s just enough of it to see Theo by. He’s on top of his bed in the camel coat with his shoes on and his iPhone face down on his chest, and his eyes are open before the knob has finished turning.",
+    "Jack stands in the doorway in Theo’s shirt. There’s salt dried white along the cuffs, and sand in his boots; he can feel it through his socks.",
+    {
+     "if": "e16_water==\"reckless\"",
+     "text": "His jeans have dried stiff to the thigh and crackle when he moves."
+    },
+    {
+     "if": "e16_theo==\"reckless\"",
+     "text": "“I almost called the Coast Guard,” Theo says, very calm.",
+     "else": "“You *texted*,” Theo says, very calm. “Like a hostage.”"
+    },
+    "He doesn’t move anything but his mouth. “I got home at three-thirty. I searched Wyatt’s house. The pool house. The garage, both cars. The neighbor’s koi pond.” A pause. “There’s a heron. We’ve met.”",
+    "“Theo —”",
+    "“I asked a girl in the kitchen if she’d seen a sad Catholic in a charcoal shirt. She asked me if I meant a *type*.” Theo is still flat on his back. “I drove the switchbacks twice with my high beams on. Like a search party in a perfume ad.” He lifts the iPhone off his chest and lets it fall back. “I texted you. I texted you like somebody’s *mother*. Then I stood by my car in that turnaround until three, and a driver from one of the black cars tried to tip me.” A pause, for the worst of it. “You missed the neighbor. She called the sheriff about the noise, and the sheriff turned out to be her nephew, and he stayed for a drink.”",
+    "Jack is wide awake to the ends of his fingers, the way he hasn’t been all week, and he stands in the doorway with it and doesn’t come in yet.",
+    "Then: “Where’d you go?”"
+   ],
+   "choices": [
+    {
+     "text": "“Walked home.”",
+     "tag": "Control",
+     "cue": "Theo noticed.",
+     "set": {
+      "e16_where": "control",
+      "jack_lied_theo_skye": true,
+      "soul.honesty": "-1",
+      "trait.control": "+1"
+     },
+     "key": "At six in the morning Theo asked where you went. “Walked home.”",
+     "response": [
+      "“Walked home,” Jack says.",
+      "“Six miles,” Theo says. “Downhill. In my shirt.” He gives it some thought. “Very Ohio.”",
+      "Theo comes up on one elbow and looks at him properly — not at the shirt; at his face — and frowns, as if a subtitle has gone by too fast.",
+      "“You look better.”",
+      "“I slept.”",
+      "“You didn’t.”",
+      "Theo lies back down in his coat and shuts his eyes. He may even be asleep."
+     ],
+     "goto": "s26"
+    },
+    {
+     "text": "“Talked to somebody about Flannery O’Connor till it got light.”",
+     "tag": "Candor",
+     "set": {
+      "e16_where": "candor",
+      "soul.honesty": "+1",
+      "trait.candor": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "key": "At six in the morning Theo asked where you went. You said you talked to somebody about Flannery O’Connor till it got light.",
+     "response": [
+      "“I talked to somebody about Flannery O’Connor,” Jack says, “till it got light.”",
+      "Theo is quiet for a second. “Of course you did.”",
+      "Theo comes up on one elbow and looks at him properly — not at the shirt; at his face — and frowns, as if a subtitle has gone by too fast.",
+      "“You look better.”",
+      "“I slept.”",
+      "“You didn’t.”",
+      "Theo lies back down in his coat and shuts his eyes. He may even be asleep."
+     ],
+     "goto": "s26"
+    },
+    {
+     "text": "“Where’d *you* go?”",
+     "tag": "Wit",
+     "set": {
+      "e16_where": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "At six in the morning Theo asked where you went. You asked him the same thing.",
+     "response": [
+      "“Where’d *you* go?”",
+      "“Looking for *you*.”",
+      "That’s as far as either of them takes it.",
+      "Theo comes up on one elbow and looks at him properly — not at the shirt; at his face — and frowns, as if a subtitle has gone by too fast.",
+      "“You look better.”",
+      "“I slept.”",
+      "“You didn’t.”",
+      "Theo lies back down in his coat and shuts his eyes. He may even be asleep."
+     ],
+     "goto": "s26"
+    }
+   ]
+  },
+  "s26": {
+   "slug": "SATURDAY · 9:00 AM · DELGADO HALL, THE FISHBOWL",
+   "body": [
+    "On the Fishbowl TV the blimp hangs over Ann Arbor, and the Big House is maize and blue to the rim except for one loud scarlet corner. Nine in the morning here is noon there. The Fishbowl has a boy asleep on the far couch under a Marisol Surf hoodie, a girl at the window counter eating dry cereal out of the box, and Jack, on the near couch, who hasn’t been to bed.",
+    "He’s talking to the set. He doesn’t try not to. Pryor keeps it on third down with half of Michigan hanging off him, and Jack says, “*There* it is.” Michigan’s freshman throws one straight to a scarlet jersey, and Jack says, “Thank you, Tate,” and means it. When the camera finds Tressel on the sideline in the sweater vest with his arms folded, Jack tells him, “Don’t smile. You’ll pull something.” In the garage on Glenwood his father would grunt at the good parts. Here the girl with the cereal box looks over once and decides to allow it.",
+    "It’s the game Becca put in her planner, in green. At the far end of the couch, in his navy silk robe, Theo Vance is watching Jack instead of it, with the expression he usually saves for subtitled films at the point where everybody’s motives get complicated.",
+    "At a commercial he asks, “Which ones are we?”",
+    "“Red.”",
+    "“Scarlet. I can see it’s scarlet. I mean *why*. What did Michigan ever do to you?”",
+    "Jack tells him. Woody Hayes, who wouldn’t say the word and called it *that school up north*, and who supposedly ran low on gas one night just short of Ohio and pushed his car over the line rather than buy a gallon in Michigan; Bo; the ten years of Woody and Bo; John Cooper, who lost to them ten times in thirteen tries and whose name his father still won’t allow in the house. It takes most of the commercials in the first quarter.",
+    "“So it’s a vendetta,” Theo says. “With a band.”",
+    "Laney turns up at the end of the first quarter in sweatpants and full makeup, with a Diet Coke, and folds her forearms on the back of the couch behind Theo, and they confer. Jack, watching Michigan go three-and-out, gets pieces of it.",
+    "“—why is he *humming*—”",
+    "“I don’t *know*. I lost him for seven hours—”",
+    "“You *lost* him?”",
+    "“There was a heron—”",
+    "Ohio State runs it up the middle for twelve yards and Jack says, “There you go,” and the conference breaks up. Laney leans over the couch back with the bright interest of a judge at the interview round.",
+    {
+     "if": "e16_where==\"control\"",
+     "text": "“Theodore tells me you *walked* home. Six miles.” “Downhill,” Jack says."
+    },
+    {
+     "if": "e16_where==\"candor\"",
+     "text": "“Theodore tells me you talked about a *book* all night.” “A short story,” Jack says. “It’s short.”"
+    },
+    {
+     "if": "e16_where==\"wit\"",
+     "text": "“Theodore tells me you won’t say where you went.” “He won’t say where he went either,” Jack says, and Theo, at the end of the couch, says, “I was *looking for you*,” with real feeling."
+    },
+    "Laney lets that one go and tries another. “Jack. How’s Becca?”",
+    "“She’s okay,” Jack says, watching the snap. “She flies home Wednesday.”",
+    "Laney looks at Theo as if he were personally responsible. Then she plays her last card. “Lena’s still sick. She sounds like a *foghorn*.”",
+    "“Tell her to eat the soup,” Jack says. He means it, and he says it to the television, and Michigan snaps the ball.",
+    "Laney straightens up off the couch very slowly and goes to sit somewhere she can see his face.",
+    "Then Michigan gives it away again, and Jack is up off the couch with both arms over his head before the officials have sorted out the pile, and the boy under the Marisol Surf hoodie lifts his head, takes in the situation, and puts it back down. Laney, who regards football as something that happens to other girls’ boyfriends, comes around and sits on the arm of the couch to see what the noise is about. Theo asks what a safety is. Jack explains it twice, with the remote, and Theo says it sounds like a tax.",
+    "At halftime ABC goes back to the studio. Jack mutes a man in a suit standing in front of a wall of numbers and turns sideways on the couch, and he doesn’t build up to it.",
+    {
+     "if": "e14_invite==\"lupes\"",
+     "text": "The last time he had this sentence in his mouth, walking home at one in the morning, it turned into a joke about Lupe’s on the way out. This one comes out straight."
+    },
+    "“Come to Youngstown for Thanks—”",
+    "“Yes,” says Theo.",
+    "“I didn’t finish.”",
+    "“Why? Yes.” Theo sits up and straightens his robe, an ambassador presenting credentials. “I’ll bring a hostess gift. What do you people drink — Folgers?”",
+    "“It’s the Greyhound. Two and a half days.”",
+    "“The *bus*.” Theo looks at the muted studio and visibly reconsiders nothing. “Is there a dining car?”",
+    "Behind him Laney has set her Diet Coke down on the back of the couch. “Theodore Vance,” she says, “on a *Greyhound*. I would pay money. I would pay my *daddy’s* money.”",
+    "“I’ve been on a bus,” Theo says, with dignity. “In Prague. It was an art project.”",
+    {
+     "if": "theo_paid_deposit",
+     "text": "Theo takes the Residential Services receipt out of his robe pocket — he carries it now — and writes under the jar, on his knee: + 1 THANKSGIVING (YOUNGSTOWN). PAYABLE IN PIE."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“My mother’s going to feed you till you die.”",
+     "tag": "Sincerity",
+     "cue": "Theo will remember that.",
+     "set": {
+      "e16_invite": "sincerity",
+      "theo_youngstown": true,
+      "rel.theo.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At halftime of Ohio State–Michigan you asked Theo home to Youngstown for Thanksgiving. He said yes before you finished.",
+     "response": [
+      "“My mother’s going to feed you till you die,” Jack says.",
+      "Theo takes that without a single word of commentary. Behind him Laney stops with the can halfway to her mouth. “Good,” Theo says, and turns back to the television, and watches a commercial for trucks very closely."
+     ],
+     "goto": "s27"
+    },
+    {
+     "text": "“Bring a coat. A real one.”",
+     "tag": "Wit",
+     "set": {
+      "e16_invite": "wit",
+      "theo_youngstown": true,
+      "rel.theo.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "At halftime of Ohio State–Michigan you asked Theo home to Youngstown for Thanksgiving. He said yes before you finished.",
+     "response": [
+      "“Bring a coat,” Jack says. “A real one.”",
+      "“I own eleven coats.”",
+      "“A *real* one.”",
+      "Theo turns to Laney for a ruling. Laney doesn’t blink. “He’s right, Theodore. Yours are *decorative*.”"
+     ],
+     "goto": "s27"
+    },
+    {
+     "text": "“I was going to ask somebody else.”",
+     "tag": "Candor",
+     "set": {
+      "e16_invite": "candor",
+      "theo_youngstown": true,
+      "rel.theo.trust": "+1",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "key": "At halftime of Ohio State–Michigan you asked Theo home to Youngstown for Thanksgiving. He said yes before you finished.",
+     "response": [
+      "“I was going to ask somebody else,” Jack says.",
+      "“I know,” says Theo.",
+      "That’s the end of what he has to say about it. He turns back to the muted studio and watches a man in a suit point at things."
+     ],
+     "goto": "s27"
+    }
+   ]
+  },
+  "s27": {
+   "slug": "SATURDAY · 12:40 PM · DELGADO HALL, EAST STAIRWELL, 4TH-FLOOR LANDING",
+   "set": {
+    "theo_paid_flights": true
+   },
+   "body": [
+    "Ohio State 21, Michigan 10. Two hundred and fifty-one yards on the ground in the other team’s house, and the sixth straight. At twenty to one Jack has the RAZR out on the fourth-floor landing of the east stairwell, where the window looks east over the eucalyptus to the hills. He stands with the phone in his hand and doesn’t call anybody yet. The hills are brown and bare in the noon light, with houses here and there in the folds, and one of them is a lot of glass.",
+    {
+     "if": "e15_frank==\"rose\" || e15_frank==\"okay\"",
+     "text": "It buzzes in his hand. DAD."
+    },
+    {
+     "if": "e15_frank==\"rose\" || e15_frank==\"okay\"",
+     "text": "“Six straight,” says Frank Costigan."
+    },
+    {
+     "if": "e15_frank==\"rose\" || e15_frank==\"okay\"",
+     "text": "“Six straight, Pop.”"
+    },
+    {
+     "if": "e15_frank==\"rose\" || e15_frank==\"okay\"",
+     "text": "Behind his father the garage radio is still on the postgame, turned low. Frank has some things to say about the running game and one thing to say about the Michigan coach, whom he has decided to pity. Then, in the same voice: “Your mother says the bus.”"
+    },
+    {
+     "if": "e15_frank==\"rose\" || e15_frank==\"okay\"",
+     "text": "“I’m bringing my roommate.”"
+    },
+    {
+     "if": "e15_frank==\"rose\" || e15_frank==\"okay\"",
+     "text": "“The rich one?”"
+    },
+    {
+     "if": "e15_frank==\"rose\" || e15_frank==\"okay\"",
+     "text": "“Yeah.”"
+    },
+    {
+     "if": "e15_frank==\"rose\" || e15_frank==\"okay\"",
+     "text": "“Huh.” There’s a pause on the line with an opinion in it, possibly two. “Your mother’ll feed him,” his father says, and the line clicks."
+    },
+    {
+     "if": "e15_frank==\"monday\"",
+     "text": "The phone doesn’t ring. At the half he texted his mother — *bringing my roommate for thanksgiving. ok?* — and he has been standing at this window since the final with the RAZR open in his hand, waiting for it to ring the way it rang last Saturday. At 12:44 it buzzes once."
+    },
+    {
+     "if": "e15_frank==\"monday\"",
+     "type": "sms",
+     "from": "Gina",
+     "text": "dad yelled at the tv in a good way. 6 straight. ma says ur bringing the rich one??",
+     "time": "12:44 PM"
+    },
+    {
+     "if": "e15_frank==\"monday\"",
+     "text": "He folds the phone against his leg and stands there a minute anyway."
+    },
+    "When he gets back to 412, Theo is at his desk in the robe with the MacBook open, and he turns it around without a word. On the screen is an itinerary with both their names on it: Santa Barbara to Pittsburgh, Wednesday morning, one change, two seats together.",
+    "“I was invited,” Theo says. “Guests bring something.”",
+    "“I have a bus ticket.”",
+    "“You have a voucher. You call them on Monday and tell them you’ve had a better offer. I looked into it.” Theo has had the word *bus* in his head since halftime, and it shows. “It left Monday *night*, Costigan. You’d have been in Nebraska by Wednesday, next to a man with a ham sandwich. Now you leave Wednesday, like a person.” He uncaps a pen. “What’s your address? For the flowers.”",
+    "“No flowers.”",
+    "“It’s customary. A guest sends flowers ahead. It establishes a *tone* —”",
+    "“Theo. You send lilies to Glenwood Avenue, my grandmother’s going to ask who died.”",
+    "“Glenwood,” says Theo, and writes it on the back of his hand.",
+    "For a second Jack can see it: Theo in the doorway on Glenwood with a hostess gift nobody can identify, and Nonna taking his face in both hands to find out whether he eats.",
+    "“What were you going to do? For Thanksgiving.”",
+    "“My mother’s doing it in Montecito with a man who sells crystals. My father’s doing it in Cabo with his wife. Poppy’s doing it with whichever of them loses.” Theo caps the pen. “I had a reservation somewhere. I’ll cancel it. I’m getting good at that.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "theo",
+     "title": "Theo Vance",
+     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath. Sunday night, to the ceiling: Laney says he asked if he could ask. ‘Like a vampire. They have to be invited in.’ He’s known since Friday. Wednesday I said I ended it. He opened his jar and gave me a spoon. Friday he took me to a party in the hills so I wouldn’t meet anybody, and lost me in three minutes. Saturday at six he was on his bed in his coat. At halftime of Michigan I asked him home for Thanksgiving. He said yes before I finished, and bought two tickets to Pittsburgh. ‘Guests bring something.’"
+    },
+    {
+     "kind": "note",
+     "id": "thanksgiving",
+     "title": "Thanksgiving",
+     "text": "Wes will be at the Broussards’ table on Thanksgiving, like every year since the storm. He carried the twins out of a second floor. Lena says she’d go anywhere nobody knows his name. I’m going to ask her to Youngstown — properly, in a week. Not one breath after Becca’s name. A week to the night, I asked about the table. She’ll be okay. Julian says call him from the bathroom. I didn’t ask the other thing. Becca’s done. It’s me and the Greyhound. Theo’s coming. I asked him at halftime of Michigan; he said yes before I finished. Two seats to Pittsburgh, Wednesday. The Greyhound’s a voucher."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Thank you.”",
+     "tag": "Grace",
+     "set": {
+      "e16_tickets": "grace",
+      "soul.grace": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "response": [
+      "“Thank you,” Jack says.",
+      "“You’re welcome,” Theo says, and closes the laptop."
+     ],
+     "goto": "s28"
+    },
+    {
+     "text": "“I’m paying you back.”",
+     "tag": "Control",
+     "set": {
+      "e16_tickets": "control",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“I’m paying you back.”",
+      "“With what?”",
+      "“Pie.”",
+      {
+       "if": "theo_paid_deposit",
+       "text": "Theo takes the receipt out of his robe pocket and adds a line under the last one: + 2 TICKETS (PIT). GUESTS BRING SOMETHING. Then he closes the laptop. “Peach,” he says. “I’ve been promised peach.”",
+       "else": "“Pie is an acceptable currency,” Theo says, and closes the laptop."
+      }
+     ],
+     "goto": "s28"
+    },
+    {
+     "text": "“I can’t keep letting you do this.”",
+     "tag": "Candor",
+     "set": {
+      "e16_tickets": "candor",
+      "trait.candor": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "response": [
+      "“I can’t keep letting you do this.”",
+      "“You can,” says Theo, and closes the laptop. “Watch.”"
+     ],
+     "goto": "s28"
+    }
+   ]
+  },
+  "s28": {
+   "slug": "SATURDAY · 5:45 PM · DELGADO HALL, ROOM 412 → THE 4TH-FLOOR HALL",
+   "body": [
+    "It has been dark for an hour. The charcoal shirt is back on its hanger on Theo’s closet door with the salt still on the cuffs, and Theo has looked at the cuffs twice today and kept his opinion to himself. Jack is in his Anchor shirt for the seven o’clock, sitting on the edge of his bed to tie his shoes, and Theo is lying on his own bed with his iPhone to his ear, talking to Laney as though Jack were a lamp.",
+    "“—I don’t *know*, Delaney. He’s *happy*.” A pause. “No. *No* girls. I checked every room. Twice.” A longer pause. “Because I *would* have seen.”",
+    "He hangs up and looks across at Jack. Jack finishes the second knot and stands.",
+    "“Night, Theo.”",
+    "“Costigan.”",
+    "Jack stops at the door. Theo is looking at him from the pillow with the phone still in his hand, and for a second there’s a short question on his face.",
+    "“Bring me fries,” Theo says.",
+    "Out in the hall the fourth floor is getting ready to go out: a hair dryer behind 418, “Bad Romance” through somebody’s door, two guys at the bathroom mirror arguing about whether a hoodie counts as a jacket. Jack takes the RAZR out and opens it, and the contacts fall open at S, where she put herself: SKYE (MISFIT). He starts a new message. He types *misfit* the old way, a letter at a time — the 6, the 4 three times, the 7 four times for the *s* — and looks at it on the little screen, and takes it back out the same way, one letter at a time.",
+    "He shuts the phone. Down at the end of the hall Doug’s door is open, and the blue of somebody’s raid is moving on his ceiling. Jack puts the RAZR in his pocket and keeps his hand on it, and goes to work."
+   ],
+   "end": true
+  }
+ }
+}
