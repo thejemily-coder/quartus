@@ -1,0 +1,513 @@
+{
+ "scenes": {
+  "s04": {
+   "slug": "SUNDAY · 9:55 PM · ST. BRENDAN’S, THE COURTYARD",
+   "set": {
+    "resolve.jack": "+1",
+    "resolve.lena": 5
+   },
+   "body": [
+    "At the nine o’clock the Gospel is Luke, the voice crying in the desert — *every valley shall be filled* — and Kenzie Rourke takes the psalm on her guitar with the capo so far up the neck it sounds like a mandolin with a head cold. Joey Abruzzo gets the second violet candle lit on his third match, and the front pew sits back. Two rows behind Lena, beside Kevin, Jack watches Julian Park-Ellis — down from Oakland in time, just, and still in the sweater he drove five hours in — answer every response by ear, half a breath behind the room, and land on every one.",
+    "By ten the cold has settled into the courtyard for the night. The olive tree, the low wall under it, the sprinkler head standing up dead out of a crust of dried mud: somebody shut it off at the valve back in November. Kevin peels off at the door — “Orgo,” he says, with real regret — and goes up Ocean Road at a jog with his hands in his quarter-zip.",
+    "Lena is on the wall in her coat with her boots crossed at the ankle, the black mantilla folded small in one fist, and the little green Loeb on her knee, shut on its pencil. Two days to Book Nine, on what can’t have been more than three hours’ sleep. She looks up when Jack comes out, and back down at the Loeb.",
+    "Julian comes out through the propped door with two coffees in Newman mugs, the white ones with the little leather boat on the side. He sets one in Lena’s hands. He sees Jack, and holds the other one out to him without a word about it, and goes back in for a third.",
+    "Jack stands with the mug warming his palms. The coffee is Mrs. Fitch’s. It has been on since the five o’clock, and it tastes like it went to both Masses.",
+    "When Julian comes back he sits on the wall beside Lena, not close, and blows on his cup. “I heard the end of it in Paso Robles,” he tells Jack. “On the radio, at a Chevron by the freeway. A man from Washington missed a kick, and the man on the radio said a word you can’t say at a church.”",
+    "“He missed it on *purpose*,” Lena says. “God reached down out of the sky over Maryland and moved that ball four inches. I watched Him do it. Kevin watched Him do it.”",
+    "“She texted me the number,” Julian says. “Just the number. In capitals.”",
+    "“Twelve is a holy number,” Lena says. “Twelve tribes. Twelve apostles.”",
+    "“One of the apostles was Judas,” Jack says.",
+    "“And they replaced him. By lot. And the lot fell on Matthias, and nobody’s heard a word about Matthias since, which is exactly what you want in a kicker.” She drinks her coffee, satisfied, and bumps Julian’s knee with hers. “Tell him about Daniel.”",
+    "“He’s good.” Julian turns the mug by the boat. “He got in Thursday. My mother’s cooked for a battalion. He brought her a flag that flew on his ship, folded in a triangle, and she didn’t know where to put it, so it’s on the piano. Nothing’s ever been allowed on the piano.” He turns the mug the other way. “He says the Navy’s mostly waiting.” A small smile at the coffee. “I told him so is music.”",
+    "“Tell him about the cow,” Lena says.",
+    "“I saw the cow,” Jack says. “Upside down. At Sully’s.”",
+    "“It was a good cow,” Julian says, mildly, as if somebody had suggested otherwise. “It was standing by itself in a field behind the Chevron, looking at the freeway. I thought she’d want to know.”",
+    {
+     "if": "julian_writing_song",
+     "text": "Then he looks up at Jack, with the calm that makes people trust him with their cars and their dogs and their bad news. “Thursday,” he says. “Bastille. I finished it.” A look down at the cup. “The new one.”",
+     "else": "Then he looks up at Jack, with the calm that makes people trust him with their cars and their dogs and their bad news. “Thursday,” he says. “Bastille. I finished something.”"
+    },
+    "He doesn’t look at Lena when he says it. Lena is looking at the olive tree.",
+    "“Will you stay to the end?”",
+    "In Jack’s coat pocket the RAZR has *tomorrow. im asking* in it, and Thursday is four days off, and the coffee is going cold in his hands."
+   ],
+   "choices": [
+    {
+     "text": "“I’ll stay to the end.”",
+     "tag": "Sincerity",
+     "cue": "Julian will remember that.",
+     "set": {
+      "e20_julian": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.julian.warmth": "+1",
+      "rel.julian.trust": "+1"
+     },
+     "key": "After the nine o’clock Julian asked you to stay to the end of his new song on Thursday. You said you would.",
+     "response": [
+      "“I’ll stay to the end,” Jack says.",
+      "“Good,” says Julian, and that’s all he says about it. Lena drinks her coffee.",
+      {
+       "if": "e19_outis_personal && !e19_outis_apology",
+       "text": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him: “Twelve and oh, Jack.” He’s three steps into the road when she adds it, as if she’d caught herself at something small and didn’t care for it: “Youngstown.”",
+       "else": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him, before he’s off the curb: “Twelve and oh, Youngstown.”"
+      },
+      "He turns around in the empty road and walks the next two steps backward. “Twelve and oh.”"
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“Is there a second chorus?”",
+     "tag": "Wit",
+     "set": {
+      "e20_julian": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "After the nine o’clock Julian asked you to stay to the end of his new song on Thursday. You asked if there’s a second chorus.",
+     "response": [
+      "“Is there a second chorus?”",
+      "“There’s a bridge,” Julian says. “Nobody leaves during a bridge.”",
+      "Lena, over the rim of her mug: “People leave during bridges.”",
+      {
+       "if": "e19_outis_personal && !e19_outis_apology",
+       "text": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him: “Twelve and oh, Jack.” He’s three steps into the road when she adds it, as if she’d caught herself at something small and didn’t care for it: “Youngstown.”",
+       "else": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him, before he’s off the curb: “Twelve and oh, Youngstown.”"
+      },
+      "He turns around in the empty road and walks the next two steps backward. “Twelve and oh.”"
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“I’ll try.”",
+     "tag": "Restraint",
+     "set": {
+      "e20_julian": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "After the nine o’clock Julian asked you to stay to the end of his new song on Thursday. You said you’d try.",
+     "response": [
+      "“I’ll try,” Jack says.",
+      "“That’s all anybody does,” Julian says. He means it kindly. It lands anyway, somewhere under the coffee.",
+      {
+       "if": "e19_outis_personal && !e19_outis_apology",
+       "text": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him: “Twelve and oh, Jack.” He’s three steps into the road when she adds it, as if she’d caught herself at something small and didn’t care for it: “Youngstown.”",
+       "else": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him, before he’s off the curb: “Twelve and oh, Youngstown.”"
+      },
+      "He turns around in the empty road and walks the next two steps backward. “Twelve and oh.”"
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s13": {
+   "slug": "WEDNESDAY · 11:20 PM · THE BRICK, 8TH FLOOR, THE 24-HOUR READING ROOM",
+   "set": {
+    "resolve.jack": "+1",
+    "lena_picked_yes": true
+   },
+   "body": [
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Brick. Eighth floor. We have to pick. Bring your margins. —L.",
+     "time": "10:50 PM"
+    },
+    "On finals-eve hours the eighth floor of the Brick doesn’t close, and at twenty past eleven forty people are up here doing their best impression of people who are going to pass. Under the long windows the radiators knock — iron on iron, somewhere down in the pipe, every couple of minutes, with no rhythm a person could tap along to. A girl at the far end of the long table is asleep with her cheek on *Gray’s Anatomy* and a highlighter still uncapped in her fist.",
+    "Lena has the end of the long table by the windows, staked out with her coat on one chair and the Loeb on the other. At the carrel just past the end of the table, Kevin Tran is in a pair of headphones the size of earmuffs with a rubber-banded block of orgo flashcards, mouthing reagents. He lifts his chin at Jack and goes back to a carbocation.",
+    "“He was here first,” Lena says. “Don’t let him quiz you. He bites.”",
+    "Jack sits. He puts the RAZR on the table, face down, and leaves his palm on top of it.",
+    "Lena looks at his hand on it. She takes her LG out of her pocket and sets it down on the table beside his, face up, with the little screen lit and nothing on it but the time, and uncaps her pen.",
+    "The papers come out of her bag in two stacks: his semester on the left and hers on the right, every page with the other one’s ink down the margins. Two kinds of red. Hers is a felt-tip and goes through to the next page, so every paper of his carries a ghost of her on its back; his is a Bic and gives out in the middle of words.",
+    "“Hale wants it by Friday,” she says. “Which of mine you’ll defend. Which of yours I will.” She drops into Hale — the vowels, the eyebrows, the long-suffering chin. “*Choose the best one. If you choose a weak one to win, I shall know.*” And back into herself. “And I will personally know before he does.”",
+    "“Twenty minutes each,” Jack says. “Back to back. In front of him.”",
+    "“In front of him, and in front of me, and I’ll be sitting right there next to you making faces.” She uncaps the pen. “So pick well.”",
+    "“Take the luck one,” Jack says. “You wrote on it that it was my best. In red.”",
+    "“In September. I’d just lost to you. I was being gracious, it’s a Southern illness.” She turns *That the Lucky Man Owes Nothing* face up and looks at her own handwriting on it like a relative she’s embarrassed by. “It’s a good paper. It’s the paper a smart boy writes so he never has to owe anybody anything. You argued it like it was yours.”",
+    "“It was mine.”",
+    "“That’s my objection.” She puts it on the floor.",
+    "“The leaving one. Hale liked it.”",
+    "“Hale said you argued for leaving like a man who’s never been allowed to. I am not standing up in front of that man and defending *that*. He’d look at me the whole twenty minutes.” The leaving paper goes on the floor. “And don’t say the dead.”",
+    "“The dead are beyond harm—”",
+    "“You *lost* that one, Costigan. To me. I’m not defending my own victim.”",
+    "“You’re supposed to pick one of mine, not throw them all on the floor.”",
+    "“I’m clearing the field.” The paper on the dead goes down on top of the others. “It’s a process of elimination. It’s very Thomist. Sit still.”",
+    "At the next carrel Kevin turns a flashcard over, and over again, and then lifts one side of the headphones off his ear and holds the card up at Jack. “Backside attack,” he says. “Go.”",
+    "“I’m a philosophy major.”",
+    "“So that’s a no.” The headphone goes back on.",
+    "She goes into the middle of his stack like she knew where it was all along, and pulls out the paper from October, and lays it under the lamp beside the two phones. His first sentence. And beside it in the margin, in her capitals, hard enough that the paper still has the dent: *THEN WHAT DID YOU TELL HIM?*",
+    "She doesn’t read the margin. She reads the sentence. “*A man knows his own heart by what he says yes to.*”",
+    "“That one,” Lena says. “It’s your best. You were wrong about everything else that night. Not that.” She taps the sentence with the cap of her pen. “I’ve been looking for the hole in it since October. I can’t find it. I’ve checked.”",
+    {
+     "if": "e19_outis_personal && !e19_outis_apology",
+     "text": "She caps the pen and uncaps it. “I’m still a little mad at you,” she says, to the page. “It’s still your best.”"
+    },
+    "Under Jack’s palm the phone has gone warm from his hand, and his fingers close on it.",
+    "“Now you,” she says, and pushes her own stack over to his side. “Pick mine. And don’t pick to win.”",
+    "“And not the loyalty one,” she adds, as his hand goes toward it. “I quoted Ruth at him. You can’t stand up and defend Ruth in front of Hale. He’ll do the Book of Common Prayer at you and you’ll cry.”",
+    "He goes through them anyway. Luck, from the other side. Loyalty, and Peter in John six — *Lord, to whom shall we go?* — with his Bic giving up in the middle of *whom*. Monica, asking to be remembered at the altar. The promise paper, which she argued without believing a sentence of, and which doesn’t read that way. And under all of them, the ones she never wrote down — said across Hale’s table, or in a church courtyard one Sunday in August — and won."
+   ],
+   "choices": [
+    {
+     "text": "“A promise is made to a person, not to a reason.”",
+     "tag": "Sincerity",
+     "set": {
+      "e20_best": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "At the Brick you chose the argument of Lena’s you’ll defend for Hale: a promise is made to a person, not to a reason.",
+     "response": [
+      "“This one,” Jack says. “*A promise is made to a person, not to a reason.*”",
+      "Lena looks at the paper in his hand — the one neither of them believes. She caps her pen. “Good,” she says. “Defend it like you mean it.”"
+     ],
+     "goto": "s13a"
+    },
+    {
+     "text": "“The dead can be wronged, and therefore helped.”",
+     "tag": "Grace",
+     "set": {
+      "e20_best": "grace",
+      "soul.grace": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "At the Brick you chose the argument of Lena’s you’ll defend for Hale: that the dead can be wronged, and therefore helped.",
+     "response": [
+      "“This one,” Jack says. “The dead can be wronged. And therefore helped.”",
+      "Lena looks past him at the window, at the dark out there where the Channel is. She takes the paper back from him and writes his name across the top of it in her red, over her own."
+     ],
+     "goto": "s13a"
+    },
+    {
+     "text": "“You leave the light on.”",
+     "tag": "Candor",
+     "set": {
+      "e20_best": "candor",
+      "trait.candor": "+1",
+      "rel.lena.trust": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "key": "At the Brick you chose the argument of Lena’s you’ll defend for Hale: some people you let go, and pray for at a distance, and leave the light on.",
+     "response": [
+      "“Not a paper,” Jack says. “Hale’s table. *You let them go, and you pray at a distance, and you leave the light on.*”",
+      "Her pen stops. “That one cost me.”",
+      "“That’s why it’s the best.”",
+      "She looks at him for a long time. She sets her pen down and lines it up with the edge of the table, exactly, and leaves it there."
+     ],
+     "goto": "s13a"
+    },
+    {
+     "text": "“That’s not hypocrisy. That’s showing up.”",
+     "tag": "Wit",
+     "set": {
+      "e20_best": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+2"
+     },
+     "key": "At the Brick you chose the argument of Lena’s you’ll defend for Hale: the first one she ever won off you — that’s not hypocrisy, that’s showing up.",
+     "response": [
+      "He squares her stack and sets it down. “Not on paper. This one. *That’s not hypocrisy. That’s showing up.*”",
+      "“You *remember* that.”",
+      "“You said it like you’d been waiting all summer to say it to somebody.”",
+      "Lena laughs, and writes it at the top of a clean page in her capitals, and underlines *showing up* twice."
+     ],
+     "goto": "s13a"
+    }
+   ]
+  },
+  "s13a": {
+   "slug": "THURSDAY · 1:05 AM · THE BRICK, 8TH FLOOR",
+   "body": [
+    "Past one the eighth floor thins to the serious and the doomed. The girl on *Gray’s Anatomy* has turned her head to the other cheek. Kevin has gone through the flashcards and started over from the top. The two phones are still lying side by side on the table where they were put.",
+    "For an hour and a half she has been taking his paper apart and putting it back together in her own order, in a whisper, with the cap of her pen for a pointer. Aristotle first, book two: *we become just by doing just things*. James second — faith without works. His own sentence last, where it belongs. It sounds different in New Orleans. It sounds like it might be true. He has her argument in front of him on a legal pad, and a page and a half of reasons for it in his own hand, and she has crossed out two of them as unworthy of her.",
+    "At half past twelve she made him do it for real — “Twenty minutes. I’m Hale. Go.” — and stopped him at three. “You said *I think*. Never say *I think* to that man. He’ll ask you how you know, and then he’ll ask you how you know *that*, and by the third one you won’t know your own name.” He started again. She let him go seven minutes the second time, and at the end of it she said, “Better,” and wrote something in her own margin he wasn’t allowed to see.",
+    "Now she has his paper again and is writing down the empty margin of it, the one she didn’t use in October. She doesn’t look up from it.",
+    "“He played it for me,” she says. “Tuesday night. After the holy day. In his garage.”",
+    "Her pen goes on to the end of the line it was on and stops there.",
+    "“It’s good, Jack.” She caps the pen. “It’s really good.”",
+    "Jack puts his own pen down on the legal pad.",
+    "That’s all she gives it. She turns the page over, and squares it on the stack, and when she looks over at him at last she is smiling — the smile of somebody owning up to an old sin in front of a witness.",
+    "“Come tonight,” she says. “Bastille. Tomorrow. Tonight — whatever it is after midnight.” She’s still smiling. “And whatever you do, don’t leave in the second chorus.”"
+   ],
+   "choices": [
+    {
+     "text": "“I’ll stay to the end.”",
+     "tag": "Sincerity",
+     "set": {
+      "e20_brick": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“I’ll stay to the end,” Jack says.",
+      "“Good,” says Lena.",
+      "They work. He argues her side at her in a whisper and she tells him where he’s soft; she argues his at him and he can’t find anything soft in it, and she says that’s the point. At ten past two Kevin takes his headphones off and hangs them around his neck and turns around in his chair.",
+      "“Respectfully,” Kevin says. “You two have been defending each other for three hours. That isn’t studying.”",
+      "Under the window the radiator knocks, once, and quits for the night.",
+      "They go down in the elevator with the girl from *Gray’s Anatomy*, who is still mostly asleep, and out across the Commons in a cold that has stars in it, Kevin in the middle quizzing himself on nucleophiles under his breath. On Delgado’s front steps, under the lobby light, Lena gets her keys out of her coat.",
+      "“Goodnight, Jack.”",
+      "“Goodnight, Lena.”",
+      "Kevin holds the door for both of them, and says goodnight to himself."
+     ],
+     "goto": "s14"
+    },
+    {
+     "text": "“You’re the one who leaves in the second chorus.”",
+     "tag": "Wit",
+     "set": {
+      "e20_brick": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“You’re the one who leaves in the second chorus.”",
+      "“I’ve *grown*,” Lena says, with great dignity, and points the capped pen at his paper until he goes back to it.",
+      "They work. He argues her side at her in a whisper and she tells him where he’s soft; she argues his at him and he can’t find anything soft in it, and she says that’s the point. At ten past two Kevin takes his headphones off and hangs them around his neck and turns around in his chair.",
+      "“Respectfully,” Kevin says. “You two have been defending each other for three hours. That isn’t studying.”",
+      "Under the window the radiator knocks, once, and quits for the night.",
+      "They go down in the elevator with the girl from *Gray’s Anatomy*, who is still mostly asleep, and out across the Commons in a cold that has stars in it, Kevin in the middle quizzing himself on nucleophiles under his breath. On Delgado’s front steps, under the lobby light, Lena gets her keys out of her coat.",
+      "“Goodnight, Jack.”",
+      "“Goodnight, Lena.”",
+      "Kevin holds the door for both of them, and says goodnight to himself."
+     ],
+     "goto": "s14"
+    },
+    {
+     "text": "“I’ll be there.”",
+     "tag": "Restraint",
+     "set": {
+      "e20_brick": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“I’ll be there,” Jack says.",
+      "She nods, and goes back to his paper.",
+      "They work. He argues her side at her in a whisper and she tells him where he’s soft; she argues his at him and he can’t find anything soft in it, and she says that’s the point. At ten past two Kevin takes his headphones off and hangs them around his neck and turns around in his chair.",
+      "“Respectfully,” Kevin says. “You two have been defending each other for three hours. That isn’t studying.”",
+      "Under the window the radiator knocks, once, and quits for the night.",
+      "They go down in the elevator with the girl from *Gray’s Anatomy*, who is still mostly asleep, and out across the Commons in a cold that has stars in it, Kevin in the middle quizzing himself on nucleophiles under his breath. On Delgado’s front steps, under the lobby light, Lena gets her keys out of her coat.",
+      "“Goodnight, Jack.”",
+      "“Goodnight, Lena.”",
+      "Kevin holds the door for both of them, and says goodnight to himself."
+     ],
+     "goto": "s14"
+    }
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "kevin",
+     "title": "Kevin Tran",
+     "if": "e19_lawn==\"candor\" && e20_doug==\"control\"",
+     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Tuesday at four I woke him for Doug. A chair under the knob, then a bell. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’"
+    },
+    {
+     "kind": "person",
+     "id": "kevin",
+     "title": "Kevin Tran",
+     "if": "e19_lawn==\"candor\" && e20_doug!=\"control\"",
+     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’"
+    },
+    {
+     "kind": "person",
+     "id": "kevin",
+     "title": "Kevin Tran",
+     "if": "e19_lawn!=\"candor\" && e20_doug==\"control\"",
+     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. It was still there when I went in. Tuesday at four I woke him for Doug. A chair under the knob, then a bell. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’"
+    },
+    {
+     "kind": "person",
+     "id": "kevin",
+     "title": "Kevin Tran",
+     "if": "e19_lawn!=\"candor\" && e20_doug!=\"control\"",
+     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. It was still there when I went in. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’"
+    }
+   ]
+  },
+  "s15": {
+   "slug": "THURSDAY · 9:10 PM · CAFÉ BASTILLE, MISSION STREET",
+   "music": "Julian Park-Ellis — “Magdalena”",
+   "set": {
+    "resolve.lena": 4,
+    "resolve.jack": "-1",
+    "heard_magdalena": true
+   },
+   "body": [
+    "At ten past nine Bastille is string lights and steam: the front windows have fogged to the height of a man, so that Mission Street outside is only headlights going by in a blur. The sign-up board by the register is full to the bottom. On the stool at the front a girl with a ukulele is finishing badly, which is taking some time, because she keeps finding one more verse about a boy named Tanner who doesn’t text back. Julian is seventh, in yellow chalk.",
+    "Half of Delgado has come out for Julian. Margot is on the bench along the brick wall with her red Dymo badge — PRESS — stuck to the front of her black coat and a reporter’s notebook open on her knee; she reviews the open mic for the *Tide*. Kevin is beside her with a hot chocolate. Yusuf, back from Fremont since last night, has the far end of the bench with his coat still on; he has been on planes all week.",
+    "Theo is at the counter in the camel coat with an espresso, on a stool by himself. When Julian comes through the tables with the guitar case, Theo turns on his stool to watch him pass. “Julian. Is it *long*? It *feels* long.”",
+    "“It’s four minutes, Theo.”",
+    "“That’s what they all say.”",
+    "“Let the man sing,” Kevin says, low, from the bench, and Theo lifts his cup to Kevin in a toast and drinks it.",
+    "Margot, when Jack goes past the bench, doesn’t look up from her notebook. “I’ve been asked to be kind,” she says. “By Laney. So it’s a threat.” Kevin considers Jack across the top of his hot chocolate. “You look like a man who’s been up since Tuesday,” he says. “Clinically.”",
+    "Laney is at the front table in a red sweater with a sequined reindeer on it, polite as a church bulletin to Julian’s face. “It is going to be *beautiful*, Julian.” Julian thanks her and goes to tune. The moment his back is turned Laney swivels in her chair and points at the empty chair on Lena’s left — Julian’s, with his scarf still over the back of it, because Julian will be on the stool. “Sit, fireman. *There*.”",
+    "Jack sits there. Laney reaches across Lena for the scarf and folds it into a square on her knee, like a flag at a funeral. Across the room, at the counter, Theo catches her eye and gives her a nod so small it barely moves his head.",
+    "Lena is in a green dress and her boots, with her coat over the chair behind her, and in front of her on the table there’s a tea and a paper napkin already folded twice. She looks at him when he sits down. “You came.” She tips her head at the chalkboard. “He’s seventh. Seven’s good. Seven sacraments, seven sorrows, seven gifts of the Holy Spirit.” A fold in the napkin. “Seven deadly sins, but we don’t count those at an open mic.” Another fold. “Did you send Hale yours?”",
+    "“Tomorrow.”",
+    "“It’s *due* tomorrow.” She looks at him over the napkin. “I sent mine at seven this morning. I put the subject line in Latin so he’d know I wasn’t scared of him.” She turns the napkin over. “I was a little scared of him.”",
+    "Laney leans across her, all reindeer, and puts one red fingernail on the table in front of Jack. “Phone stays in the pocket,” she says, sweet as pie. “Four minutes. I will be watching you like a pageant mom watches a judge.” Jack puts his hand over the pocket of the Carhartt, and she sits back, satisfied.",
+    "The ukulele finishes. People clap for it, generously. Julian takes the stool.",
+    "He tunes. It takes as long as it takes, and he doesn’t make a joke about it; he keeps his head down by the sound hole like a man listening at a wall. People settle. Somebody at the back shushes somebody, and the somebody shushes back.",
+    "Before he starts he looks out at the front table — at Lena, and then, for no longer than that, at Jack — and then down at the floor in front of the stool, and leans in to the mic.",
+    "“This one’s new,” he says. “It’s called ‘Magdalena.’”",
+    "Under the table Jack’s hand takes hold of his own knee.",
+    "It starts low, fingerpicked: a figure that climbs four notes and comes back down to where it began, and climbs again, in a key that sounds like the inside of a church on a weekday. The first verse is a woman up before the light — a garden, a stone, a dark that hasn’t made up its mind to be morning. Jack knows the story; anybody knows it who has sat through an Easter octave in Youngstown. A woman who goes to a grave in the dark to do the last thing she can do for somebody, and finds it open, and runs. Julian sings it with his eyes on the floor in front of the stool.",
+    "*You were up before the light, and you ran the whole way in the dark,* he sings, *and you didn’t know him till he said your name.*",
+    "His voice isn’t big, and he doesn’t push it. Where the line goes higher than he can comfortably go he lets the guitar take it, and comes in again under it.",
+    "At the counter Theo sets his cup down in its saucer, and it doesn’t make a sound.",
+    "The chorus is a man outside a door. He can’t get in. He can’t play what they’re playing in there, he doesn’t know the words they know; all he has is the one word, and he stands outside with it — *I’m outside the door, saying it every way I know.* And at the end of it, every time, the name.",
+    "Jack sits in the chair Laney put him in, holding on to his own knee, and listens to another man say it.",
+    "On the bench Margot caps her pen. The notebook stays open on her knee.",
+    "The second verse starts, and Lena isn’t watching the stage.",
+    "Jack can feel it on the side of his face. At the edge of his eye she has turned a little in her chair, and the folded napkin has gone still under her fingers, and she is watching him hear it. Not Julian. Him. Her hand goes up to the medal at her throat and holds it.",
+    "On Lena’s other side Laney’s hand comes across the table, without any fuss at all, and finds Lena’s free one, and keeps it.",
+    "The verse is the gardener. She takes him for the man who cuts the grass. She asks him where they’ve put the body, so she can go and get it, and he doesn’t argue with her or explain anything; he only says her name. Julian plays that part quieter, so the room has to lean in for it.",
+    "Jack knows what she says back to the gardener. It’s one word too. It isn’t in the song.",
+    "And the song goes back around to the door, and the man outside it, and the second chorus starts to come."
+   ],
+   "choices": [
+    {
+     "text": "Meet her eyes.",
+     "tag": "Sincerity",
+     "cue": "Lena noticed.",
+     "set": {
+      "e20_song": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.heat": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "At Bastille Julian sang a song called “Magdalena.” Lena watched you hear it, and you looked back.",
+     "response": [
+      "He turns his head and meets her eyes. They’re dry.",
+      "They look at each other through the second chorus, with a good man singing her name at the front of the room and the room listening to him do it. She doesn’t look away first. He doesn’t either. The table is quiet.",
+      "At the bridge she turns to the stage, and on the table Laney’s hand tightens on hers. Jack looks at the stage too, then, at Julian with his eyes shut, and the last chorus comes around and goes, and the name with it, and he doesn’t look at her again until it’s over."
+     ],
+     "journal": [
+      {
+       "kind": "note",
+       "id": "magdalena",
+       "title": "“Magdalena”",
+       "text": "Thursday at Bastille: Julian’s new one. It’s called ‘Magdalena.’ It’s good. She watched me hear it. I looked back."
+      }
+     ],
+     "goto": "s15a"
+    },
+    {
+     "text": "Watch Julian. Make yourself.",
+     "tag": "Restraint",
+     "set": {
+      "e20_song": "restraint",
+      "soul.restraint": "+1"
+     },
+     "key": "At Bastille Julian sang a song called “Magdalena.” You made yourself watch him. She watched you.",
+     "response": [
+      "He keeps his face on the stage.",
+      "He watches Julian: the calluses on the hand that holds the chord, the Timex on the wrist, the eyes shut on the high part of the second chorus. A good man, singing. And the whole time, through the chorus and the bridge and the last verse, he can feel her watching the side of his face, and he gives her nothing to see but the side of his face. At the bridge he hears her breathe in, once, and hold it, and let it go when the chorus comes back."
+     ],
+     "journal": [
+      {
+       "kind": "note",
+       "id": "magdalena",
+       "title": "“Magdalena”",
+       "text": "Thursday at Bastille: Julian’s new one. It’s called ‘Magdalena.’ It’s good. I watched him. She watched me."
+      }
+     ],
+     "goto": "s15a"
+    },
+    {
+     "text": "Leave in the second chorus.",
+     "tag": "Reckless",
+     "cue": "Lena will remember that.",
+     "set": {
+      "e20_song": "reckless",
+      "left_second_chorus": true,
+      "lena_unsigned": true,
+      "trait.reckless": "+1",
+      "rel.lena.friction": "+1",
+      "rel.lena.trust": "-1",
+      "rel.julian.trust": "-1"
+     },
+     "key": "At Bastille Julian sang a song called “Magdalena.” You left in the second chorus.",
+     "response": [
+      "The chair scrapes. At the counter Theo turns on his stool. Jack gets his Carhartt off the back of the chair and goes between the tables with the second chorus following him, and the bell over the door says he’s gone.",
+      "Out on the sidewalk it’s forty-some degrees and dry. He stands with his back to the steamed glass and his hands in the Carhartt, facing east, and hears the bridge through the window, muffled, and the last verse, and the end. And the applause, more than a small room usually has in it, and longer."
+     ],
+     "journal": [
+      {
+       "kind": "note",
+       "id": "magdalena",
+       "title": "“Magdalena”",
+       "text": "Thursday at Bastille: Julian’s new one. It’s called ‘Magdalena.’ It’s good. I left in the second chorus."
+      }
+     ],
+     "goto": "s16"
+    }
+   ]
+  },
+  "s15a": {
+   "slug": "THURSDAY · 9:40 PM · CAFÉ BASTILLE, THE COUNTER",
+   "body": [
+    "It ends on the name, and on the guitar after the name, and then nothing for a moment — and then the room applauds the way a small room applauds something it didn’t see coming, all at once, a little late, and for longer than it means to. Somebody at the back whistles.",
+    "Julian says, “Thanks,” into the mic, and then, “That’s all I’ve got,” and gets down off the stool with the guitar by the neck. People touch his shoulder as he comes back through the tables — the ukulele girl, a man in a bike helmet — and he thanks each of them and looks a little alarmed by it.",
+    "Lena has her hands in her lap. Laney still has one of them."
+   ],
+   "choices": [
+    {
+     "text": "Find Julian at the counter. “It’s good, Julian.”",
+     "tag": "Sincerity",
+     "set": {
+      "e20_after": "sincerity",
+      "julian_she_wanted": true,
+      "trait.sincerity": "+1",
+      "rel.julian.warmth": "+2",
+      "rel.julian.trust": "+1"
+     },
+     "response": [
+      "Julian is at the counter by the tip jar, laying the guitar down in its case like he’s putting a child to bed. Jack goes and stands next to him.",
+      "“It’s good, Julian.”",
+      "Julian looks up from the case. “You stayed.” And then, quietly, looking past Jack’s shoulder at the front table, where Lena is sitting with her hands in her lap: “She wanted you here.”",
+      "He snaps the latches shut, one, two, three.",
+      "He’s out the door before ten, with the Carhartt half on. On his way past, Laney catches the sleeve of it.",
+      "“Where are you *going*?”",
+      "“Out.”",
+      "Mission Street is cold and dry and lit to the end. Through a clear patch somebody has wiped in Bastille’s steamed window, as he walks east, Theo is at the counter in the camel coat, turned around on his stool, watching him go."
+     ],
+     "goto": "s16"
+    },
+    {
+     "text": "Tell Lena. “It’s good.”",
+     "tag": "Candor",
+     "set": {
+      "e20_after": "candor",
+      "trait.candor": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“It’s good,” Jack says to her.",
+      "“I know.”",
+      "On the table in front of her the paper napkin has been folded into eighths, and then once more, until it won’t fold any more, and she presses it flat under her thumb and keeps it there.",
+      "He’s out the door before ten, with the Carhartt half on. On his way past, Laney catches the sleeve of it.",
+      "“Where are you *going*?”",
+      "“Out.”",
+      "Mission Street is cold and dry and lit to the end. Through a clear patch somebody has wiped in Bastille’s steamed window, as he walks east, Theo is at the counter in the camel coat, turned around on his stool, watching him go."
+     ],
+     "goto": "s16"
+    },
+    {
+     "text": "Clap. Get your coat. Go.",
+     "tag": "Restraint",
+     "set": {
+      "e20_after": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He claps with the room, until the room is done, and gets the Carhartt off the back of Julian’s chair, where he hung it, and stands.",
+      "He’s out the door before ten, with the Carhartt half on. On his way past, Laney catches the sleeve of it.",
+      "“Where are you *going*?”",
+      "“Out.”",
+      "Mission Street is cold and dry and lit to the end. Through a clear patch somebody has wiped in Bastille’s steamed window, as he walks east, Theo is at the counter in the camel coat, turned around on his stool, watching him go."
+     ],
+     "goto": "s16"
+    }
+   ]
+  }
+ }
+}

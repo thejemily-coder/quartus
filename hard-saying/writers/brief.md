@@ -1237,3 +1237,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Osei: keep as planned** (more in E21's confession and the Newman party).
   - **Picture #3: a real step up.** Clearly provocative now, more skin and a dare in it, still leaving rungs for
     Christmas and New Orleans.
+- **Season 2 runs about 30 episodes (player; supersedes 22 for S2 and the bible's current S2 map).** Allocation:
+  - **Christmas break: 3** (Dec 18 – Jan 10, with Theo's Christmas Eve/Day visit and the long calls).
+  - **January – early February: ~8** (two per week): the Skye era, the proxy war, the three alliance emergency
+    meetings, Lena and the Facebook status, the fundraiser, the seduction attempts.
+  - **The drive + New Orleans through Ash Wednesday: ~6.**
+  - **The breakups and the asking: ~2.**
+  - **Lent dates through Easter, official, the champagne reveal, to finals (mid-May): ~11.**
+  Showrunner: re-map §23 at the next planning pass (S2E01 = the Youngstown Christmas). Other seasons keep their
+  lengths unless the player says otherwise.

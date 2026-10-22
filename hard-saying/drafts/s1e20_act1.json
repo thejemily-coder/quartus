@@ -1,0 +1,426 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "SUNDAY · 10:05 AM · SULLY’S, MISSION STREET",
+   "music": "The Meters — “Hey Pocky A-Way”",
+   "body": [
+    "Somebody fed the jukebox a quarter before the game sound came up, and the Meters come out of it loose and bright and a hair ahead of the beat, a New Orleans street parade turning the corner into a sports bar on Mission Street at five past ten on a Sunday morning. Then the kickoff comes up on every television in the place and buries it, and the parade goes on underneath for anybody still listening. Lena is still listening. She’s doing the horn part under her breath.",
+    "Jack is in yesterday’s clothes. He hasn’t been to bed. He came down Mission on the 11 with clementine still on his fingers, and the table Lena is holding is the one under the brass bell, with the rope already off its cleat and wound once around her fist, because the owner has learned.",
+    "She’s in black and gold with the cardigan over it, and her voice is all the way back. She’s spending it on the opening kickoff.",
+    {
+     "if": "e19_outis_personal && !e19_outis_apology",
+     "text": "“Morning, Jack.” She takes her bag off the chair across from hers so he can have it, and catches the waitress for his coffee, and thanks the waitress when it comes, and thanks him when he thanks her. The game has her after that."
+    },
+    {
+     "if": "e19_outis_apology",
+     "text": "“Morning.” Her chin is on the hand that isn’t holding the rope. “Greek’s Tuesday and I slept three hours. Don’t talk to me till the first quarter’s over.”"
+    },
+    {
+     "if": "!e19_outis_personal",
+     "text": "“Youngstown.” It’s exactly how she says it on any Sunday, and after half past four this morning that’s its own kind of weather. She hooks the chair across from hers out from the table with the toe of her boot, and he sits in it."
+    },
+    "Laney is beside her in a Pi Lam sweatshirt with last night’s semiformal still on her lashes and a single tan Ugg in her lap like a handbag. She reaches into it and comes out with a clementine. “Don’t,” she tells Jack, peeling it. “Somebody broke into my *shoes*, Jack. I’m processing it at brunch.” She lifts the Ugg off her lap. “This one’s evidence. The other one’s still at the scene.” She looks at him over the peel for longer than anybody looks at an innocent man. Lena is very interested in the first series.",
+    "Kevin has the end of the table, the napkin scorebook squared in front of him and a golf pencil beside it, and his Odyssey keys back on his own ring, Bellarmine lanyard and all. He sets them down by the napkin. “Doug’s Croc,” he says. “On a bed of chocolate coins.” He looks at Jack once, a look with a question in it, and keeps the question, and writes SAINTS at the top of one column and WASHINGTON at the top of the other.",
+    "“Julian’s leaving Oakland after lunch,” Lena tells the table. “His mama won’t let anybody up while there’s food on it, and there’s always food on it. He’ll text me a cow.”",
+    "“A cow,” Jack says.",
+    "“Every time he drives the 101. It’s a tradition. There are a lot of cows.”",
+    "At the end of the bar Dale Wisniewski is on his stool in the Barry Sanders jersey, and the owner has put the Lions on the set over the dartboard, against the Bengals, at the same hour — a porch light left on for him.",
+    "The Saints are at Washington, and for most of the first half Washington plays like a team that hasn’t read the papers. Just before the half Brees throws one straight into a Redskin’s hands, and the bar groans, and then Meachem, who was supposed to catch it, runs the man down from behind and takes it back off him — takes it right out of his arms, like a coat off a hook — and runs it the other way into the end zone.",
+    {
+     "if": "e19_outis_personal && !e19_outis_apology",
+     "text": "When the owner nods at the bell, Lena holds the rope out across the table to Kevin. Kevin rings it twice, precisely, like he’s testing a reflex, and hands it back.",
+     "else": "Lena is up on the rung of her chair before the owner can nod, ringing it with both fists."
+    },
+    "“He *stole* it,” Lena says, to the room. “That’s *legal*?”",
+    "Kevin, writing it down: “It’s encouraged.”",
+    "At the half Laney gives the table the Pi Lam semiformal in three acts. “Sloane’s date wore a *kilt*, y’all. He is not Scottish. He is from Newport Beach. Somebody asked him what was under it and he said *tradition*.” A sophomore cried in the coat check over a boy who wasn’t there. The DJ played “Single Ladies” four times, and the fourth time was personal. Lena laughs at all of it, and Kevin writes HALF in the margin and says, “Four times is a pattern,” and Laney points a clementine section at him across the table. “*Thank* you, Kevin.”",
+    "The third quarter belongs to Washington. Laney finishes the clementine and finds a second one in the toe of the Ugg. Along the bottom of the screen the crawl keeps bringing Cleveland around, San Diego ahead of the Browns at home, and Jack reads it every time it comes by. It doesn’t get better. At five past one the Lions game goes final on the set over the dartboard, and Dale says, from his stool, “Bengals. It had to be the Bengals.” Jack lifts his coffee to him down the length of the bar, and Dale lifts his glass back.",
+    "Late in the fourth Washington is up seven, with the ball close enough to kick it and put the whole thing away, and their kicker comes out for a field goal so short the bar goes quiet out of something like respect. He misses it. Laney, who has not followed one down of this all day, is on her feet anyway, holding the Ugg over her head. Lena has her eyes shut and both hands around the rope. “*Thank* you, Jesus. Sorry. *Thank* you.”",
+    "Brees gets the ball back with the clock running. He throws it long down the sideline, to Meachem again, and Meachem has it in the end zone, and Sully’s comes up out of its chairs. Lena rings with one hand. Her other hand comes off the table, reaching across toward Jack, and finds Kevin’s shoulder instead, and grips that. The kick ties it.",
+    "Kevin prints it on the napkin in capitals: OT — SUDDEN DEATH (SUNDAY, ADVENT II).",
+    "In overtime the Saints win the toss and go straight down the field, and at twenty-five past one Hartley jogs out to kick an eighteen-yard field goal, about the distance from their table to the bathrooms. The holder kneels. Lena has the rope in both fists."
+   ],
+   "choices": [
+    {
+     "text": "Do the Who Dat with her.",
+     "tag": "Sincerity",
+     "set": {
+      "e20_kick": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      {
+       "if": "e19_outis_personal && !e19_outis_apology",
+       "text": "He’s up before the snap with his arm out for her. Her eyes go to the arm. She takes it anyway, and does the Who Dat with him at the top of her lungs while the ball is still in the air.",
+       "else": "He’s up before the snap with his arm out for her, and she grabs it like a railing, and they do the Who Dat at the top of their lungs while the ball is still in the air."
+      },
+      "It’s good. Twelve and oh. Lena rings the bell until the bottles on the back bar are humming along with it, and the room goes up around her, and at the end of the bar Dale is clapping with his glass still in his hand. She turns around on the rung to all of Sully’s and gives it the number: “*Twelve.*”",
+      "On the table by her coffee her phone starts to buzz. She flips it open, and it takes its time loading, and when it gets there she turns it around to show Laney, and Jack gets it upside down across the table: a black-and-white cow in a wet gray field, square to the lens, chewing. Lena laughs at it, and holds it out for Kevin too."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“Eighteen yards. Rosie could make that.”",
+     "tag": "Wit",
+     "set": {
+      "e20_kick": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Eighteen yards,” Jack says. “Rosie could make that.”",
+      "Lena doesn’t take her eyes off the kicker. “Rosie has *range*.”",
+      "It’s good. Twelve and oh. Lena rings the bell until the bottles on the back bar are humming along with it, and the room goes up around her, and at the end of the bar Dale is clapping with his glass still in his hand. She turns around on the rung to all of Sully’s and gives it the number: “*Twelve.*”",
+      "On the table by her coffee her phone starts to buzz. She flips it open, and it takes its time loading, and when it gets there she turns it around to show Laney, and Jack gets it upside down across the table: a black-and-white cow in a wet gray field, square to the lens, chewing. Lena laughs at it, and holds it out for Kevin too."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "Watch the kick, not her.",
+     "tag": "Restraint",
+     "set": {
+      "e20_kick": "restraint",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "He watches the snap, the hold, the swing of the leg, the ball going up end over end against the painted crowd. He knows exactly where she is anyway.",
+      "It’s good. Twelve and oh. Lena rings the bell until the bottles on the back bar are humming along with it, and the room goes up around her, and at the end of the bar Dale is clapping with his glass still in his hand. She turns around on the rung to all of Sully’s and gives it the number: “*Twelve.*”",
+      "On the table by her coffee her phone starts to buzz. She flips it open, and it takes its time loading, and when it gets there she turns it around to show Laney, and Jack gets it upside down across the table: a black-and-white cow in a wet gray field, square to the lens, chewing. Lena laughs at it, and holds it out for Kevin too."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "SUNDAY · 3:40 PM · DELGADO HALL, ROOM 412",
+   "body": [
+    "Low December sun comes through the blind in bars and lies across the bed, and Jack wakes up in it not knowing what day it is. He’s on top of the covers in his clothes, and over him, tucked in at the shoulder, there’s a gray cashmere throw that isn’t his. It lives folded on the end of Theo’s bed. He has never seen it unfolded.",
+    "The RAZR is in his right fist, shut. He lay down holding it, somewhere around two, with two texts on it he meant to answer.",
+    "Theo is at the MacBook in the navy robe with his back to the room. Over the desk Rosie’s princes are still taped up by all four corners, and against the lamp there’s still a clementine, drying out.",
+    "“You were holding it like a rosary,” Theo says.",
+    "He scrolls. “Twelve and oh, I’m told. Laney sent it in capitals. And then, separately, a picture of a boot.”",
+    "It’s twenty to four. He has lost the afternoon somewhere between the bus and the pillow, and down the hall somebody’s television has the late games on loud enough to follow. Jack opens the phone.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "twelve and oh. i watched it for you. i understood none of it. the man who missed the kick looked like he wanted to die. i related",
+     "time": "1:34 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "tomorrow. im asking",
+     "time": "1:40 PM"
+    },
+    "He’s grinning at the ceiling tiles before he’s properly awake, and he knows it, and lets himself.",
+    "He sits up and folds the throw in half and in half again, and lays it across the foot of Theo’s bed, squared to the corner. Theo types."
+   ],
+   "next": "s03"
+  },
+  "s03": {
+   "slug": "SUNDAY · 6:10 PM · DELGADO HALL, EAST STAIRWELL",
+   "body": [
+    "The east-stairwell landing has the only good reception on four, so it’s where the calls home happen: the top step, the cinderblock cold through his shirt, the window open its six inches on the dark over the Lagoon. Ten past six here. Ten past nine on Glenwood Avenue, and his mother has been home from Trumbull since three.",
+    "“Your father drove,” she says. “He waited in the truck again.” And straight on: “Did you eat?”",
+    "“I ate.”",
+    "“Don’t lie to me, I can hear it in your voice.” She lets it go, because there’s news. The officer at the desk asked after Nonna. Nonna is asleep in her chair with the cast on the afghan. Rosie found an orange and a chocolate coin in each of her shoes this morning, ate both coins before Mass, and is keeping the oranges for reasons she won’t give. “Your father did my shoe,” his mother says. “I won two dollars.”",
+    "“How’s Danny?”",
+    "“He’s good. He says the food’s the same.” Paper moves on the oilcloth. “Hang on. I wrote it down. I wrote it on the back of the gas bill in the truck so I’d get it right.” She reads it to him slowly, word for word, as it was given to her. “Your brother says to tell you he went to the library. He says, quote, ‘She raised peacocks and she was mean and I like her.’ Unquote. He says is it still something.” The paper goes down. “And tell the rich one Reggie says hi. What’s still something, Jack?”",
+    "“Danny’s being Danny.”",
+    "He can see it, though: his brother at a bolted table in the prison library with a paperback somebody else has already underlined, looking up a dead woman from Georgia because Jack said her name across a visiting room.",
+    "On the line there’s the click he knows, the upstairs extension coming up off its cradle in the hands of somebody who believes she’s being careful, and then a sound like a cough with a scream folded up inside it.",
+    "“Regina, hang up the phone.”",
+    "“I’m *not on the phone*.”",
+    "From the front room, sharp, Nonna’s voice carries the length of the house. “*E l’attrice?*”",
+    "“Ma, go to bed.” His mother, away from the phone, and then back to it: “She means the girl on Gina’s show. She thinks they’re real people.”",
+    "The extension makes its noise again.",
+    "Out on the Lagoon path a bike light goes along the far shore, and Jack follows it till the trees take it.",
+    "“The phone bill came Saturday,” his mother says.",
+    "He can hear the pen. She has it flat on the kitchen table with the lamp pulled down over it, going down it line by line with a tick beside each one. She does the collection ledger at St. Brigid’s the same way, Mondays.",
+    "“Four hundred and nine text messages, Jack.”",
+    "“Ma —”",
+    "“It’s a page. You have your own page. Your sister has a page and a half, and she’s fifteen, and I understand your sister.” Up on the extension, very carefully, nobody breathes.",
+    "“Your father isn’t mad. Your father’s *curious*.”",
+    "From the other room, over the television: “I’m not curious.”",
+    "“He’s curious. He’s watching the highlights so he can lose twice.” The pen stops. “Who is it?”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "danny",
+     "title": "Danny Costigan",
+     "text": "My brother. Trumbull Correctional. Calls me Professor. Ma brought him the good socks. *Brideshead* went to him through Driftwood, margins erased; the C.O. reading it first says it’s about a house. The ocean letter got there; Reggie, from Portsmouth, decided on his own the Pacific smells like money and fish. Lena knows. She asked his name. On the bluff bench she said hi to him and told him she’s going to be defense, and he laughed like he used to. The system cut him off at ‘tell Gina — .’ He wrote the rest down: tell Gina it ain’t hers to carry. He’s got it. On Michaelmas he wrote: Tell Lena hey. I like knowing it. You sound happy out there. Don’t feel bad about it. That’s an order. Lena says hey back. She said it herself. The Saints are four and oh, and she expects him to know that. Third letter, after Columbus Day: the Hopkins got there. He read Ma “Felix Randal” on the phone and she cried; he says he’s telling me so I know he read it, not so I feel bad. The Housman made Reggie cry. Ma told him about Becca. He wants to know if I told Lena hey, or does he have to come out here. I did. He doesn’t know yet. Push-ups: 140. Fourth letter, All Souls: he knows about hey now. ABOUT TIME, up the margin; he wants to know what she said back. Halloween at Trumbull, a guard in a rubber mask. Ma’s getting Nonno a Mass at St. Brigid’s; he wants me to put Nonno in the book here. He says he’d put his in, but he doesn’t have anybody dead. He has the other kind. I wrote him back: she said hey like she meant it. Thanksgiving weekend: put in for a visit for the rich one himself. Liked him in a minute. Reggie waved. Asked which girl. ‘Who’s Flannery O’Connor?’ Noticed I waited till Theo went to the machines. Told Theo he could quit buying. He went to the prison library about Flannery O’Connor. Ma read it to me off an envelope: she raised peacocks and she was mean and he likes her. Is it still something."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“A girl, Ma.”",
+     "tag": "Candor",
+     "set": {
+      "e20_bill": "candor",
+      "maria_knows_girl": true,
+      "soul.honesty": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "Your mother counted four hundred and nine texts on the November bill and asked who. You told her: a girl.",
+     "response": [
+      "“A girl, Ma.”",
+      "“Is it Lena?”",
+      "“No.”",
+      "A silence on Glenwood Avenue, long enough that he hears the furnace come on under the kitchen floor.",
+      "“…Okay,” his mother says. “Is she nice?”",
+      "“No.”",
+      "“*Jack.*”",
+      "“She’s not *nice*, Ma. She’s —” Out the window the far shore of the Lagoon has two lights on it. “Something.”",
+      "His mother breathes out, close to the phone. “That’s what your father said about me.”",
+      "She doesn’t ask a name. The pen goes on the envelope, a short line of it, and stops.",
+      {
+       "if": "e18_ma_lena==\"sincerity\"",
+       "text": "Before she lets him go she says, “Lena’s saint is in Nonna’s missal now. The one in red. She keeps her place with it.”"
+      },
+      "And from the recliner in the other room, over the television, his father: “One and eleven.”",
+      "After they hang up he stays on the top step with the RAZR shut in his hand and the window letting the cold in on him. He knows without the itemized page whose most of them were."
+     ],
+     "journal": [
+      {
+       "kind": "person",
+       "id": "maria",
+       "title": "Ma",
+       "text": "Maria Costigan. St. Brigid’s school secretary. Feeds anybody who comes through the door. Cries at grace every year. Took my phone at the table and counted to eleven without looking at it once. Wrote Becca. December 6th, back from Trumbull: the November bill, four hundred and nine texts. Who is it. I told her a girl. Not Lena. Not nice — something. That’s what Dad said about her."
+      }
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“The Pope, Ma. The lasagna recipe’s a whole correspondence.”",
+     "tag": "Wit",
+     "set": {
+      "e20_bill": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "Your mother counted four hundred and nine texts and asked who. You told her the Pope.",
+     "response": [
+      "“The Pope, Ma. The lasagna recipe’s a whole correspondence.”",
+      "“Then the Pope can pay the overage.”",
+      "The pen again. “And you tell His Holiness the lasagna is your grandmother’s, and she’s not giving it to him either.”",
+      {
+       "if": "e18_ma_lena==\"sincerity\"",
+       "text": "Before she lets him go she says, “Lena’s saint is in Nonna’s missal now. The one in red. She keeps her place with it.”"
+      },
+      "And from the recliner in the other room, over the television, his father: “One and eleven.”",
+      "After they hang up he stays on the top step with the RAZR shut in his hand and the window letting the cold in on him. He knows without the itemized page whose most of them were."
+     ],
+     "journal": [
+      {
+       "kind": "person",
+       "id": "maria",
+       "title": "Ma",
+       "text": "Maria Costigan. St. Brigid’s school secretary. Feeds anybody who comes through the door. Cries at grace every year. Took my phone at the table and counted to eleven without looking at it once. Wrote Becca. December 6th, back from Trumbull: the November bill, four hundred and nine texts. Who is it. I told her the Pope."
+      }
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“Theo.”",
+     "tag": "Lie",
+     "set": {
+      "e20_bill": "control",
+      "soul.honesty": "-1",
+      "trait.control": "+1"
+     },
+     "key": "Your mother counted four hundred and nine texts and asked who. You told her Theo.",
+     "response": [
+      "“Theo.”",
+      "“You *live* with him.”",
+      "“He’s very verbal.”",
+      "“Theo has a phone that tells him the weather, Jack. I saw it at my table.”",
+      "His mother lets it go. He can hear where it goes: up on the refrigerator, under a magnet, for later.",
+      {
+       "if": "e18_ma_lena==\"sincerity\"",
+       "text": "Before she lets him go she says, “Lena’s saint is in Nonna’s missal now. The one in red. She keeps her place with it.”"
+      },
+      "And from the recliner in the other room, over the television, his father: “One and eleven.”",
+      "After they hang up he stays on the top step with the RAZR shut in his hand and the window letting the cold in on him. He knows without the itemized page whose most of them were."
+     ],
+     "journal": [
+      {
+       "kind": "person",
+       "id": "maria",
+       "title": "Ma",
+       "text": "Maria Costigan. St. Brigid’s school secretary. Feeds anybody who comes through the door. Cries at grace every year. Took my phone at the table and counted to eleven without looking at it once. Wrote Becca. December 6th, back from Trumbull: the November bill, four hundred and nine texts. Who is it. I told her Theo."
+      }
+     ],
+     "goto": "s04"
+    }
+   ]
+  },
+  "s05": {
+   "slug": "MONDAY · 7:50 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "The storm gets there before he’s awake. It comes in sideways off the Lagoon and throws itself at the window by the bucketful, and the glass shudders in its frame, and he lies under it working out what the noise is: rain, real rain, the first of the winter, the kind Youngstown would call a Monday. Down on Anacapa Way the gutters have already given up, and somebody’s bike is lying on its side in the lot where the wind put it.",
+    "“Take the umbrella,” says the shape under Theo’s duvet. “Top shelf. It’s Burberry; it has a personality.”",
+    "The top shelf of Theo’s closet is the gray camera bag, a shoebox with COOKIES — DON’T behind it, a black duffel, and along the front edge an umbrella with its crook hanging over. Jack hooks it down, and the crook brings the strap of the black duffel with it, and the bag tips out over the lip of the shelf and hangs there, its zipper open two inches on denim, and on the collar of the denim a small enamel pin, a red Ferris wheel and FRESNO FAIR.",
+    "He pushes the bag back square on the shelf.",
+    "“The *umbrella*, Costigan.”",
+    "“Got it.”",
+    "“With all its spokes,” the duvet says. “It’s been to Ascot.”",
+    "He takes the navy blazer down off its hanger, the Goodwill one from Market Street that does for Mass and for Hale, and puts it over his arm under the umbrella, and goes out to the east landing. The window there is shut against the weather, with a laminated card taped to the sill in Priya’s font — WINDOW TO REMAIN CLOSED DURING RAIN EVENTS — and the rain has come in under it anyway and lies in a bright line along the sill. Outside, it’s coming down the glass in ropes, and the RAZR finds its bar and gives him what came in before eight.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "230. marine lab turnout. bring the blazer. youre my cousin from ohio. dont argue",
+     "time": "7:41 AM"
+    },
+    "Hale has them at one, the last Monday seminar of the semester, and Hale lets them go at a quarter past two unless somebody gets him started on Hume.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "you said ask somewhere worse. this is worse",
+     "time": "7:42 AM",
+     "if": "e19_la==\"candor\""
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "you dont own a tv. youre going to stand inside one",
+     "time": "7:42 AM",
+     "if": "e19_la==\"wit\""
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "you said ask somewhere you cant say no. get in at 230",
+     "time": "7:42 AM",
+     "if": "e19_la==\"sincerity\""
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "its my world. come be bad at it",
+     "time": "7:42 AM",
+     "if": "e19_la!=\"candor\" && e19_la!=\"wit\" && e19_la!=\"sincerity\""
+    }
+   ],
+   "next": "s06"
+  },
+  "s08": {
+   "slug": "TUESDAY · 3:58 AM · DELGADO HALL, 4TH FLOOR, THE EAST-STAIR PULL STATION",
+   "set": {
+    "knows_doug_sleepwalks": true
+   },
+   "body": [
+    {
+     "if": "stood_in_rain",
+     "text": "At five to four in the morning he comes up the east stairs in the blazer, still damp through at the shoulders from somebody else’s rain, with a visitor pass in the breast pocket that says MY COUSIN FROM OHIO in her handwriting. He pushes the fire door open onto four.",
+     "else": "At five to four in the morning he comes up the east stairs in the blazer, dry, with a soundstage’s sawdust still in the turn-ups of his jeans and a visitor pass in the breast pocket that says MY COUSIN FROM OHIO in her handwriting. He pushes the fire door open onto four."
+    },
+    "The fourth floor at four in the morning is a long hum of nothing much: the EXIT sign, the vending machine in the lounge clicking its compressor on, somebody’s alarm clock going off behind a shut door, unanswered. Doug Pruitt is standing under the EXIT sign.",
+    "He’s barefoot on the carpet in the Tauren-druid hoodie, with his pillow under one arm, and his eyes are open and there’s no one home in them. His right hand is on the red handle of the pull station, closing.",
+    "Jack gets his wrist.",
+    "It’s warm and slack and doesn’t fight him. Doug turns his head and smiles at a spot just past Jack’s ear, pleasantly, from very far away.",
+    "“Dude,” Doug says. “The raid boss is in the *elevator*.”",
+    "“Yeah, Doug,” Jack says. “I’ll tell him.”",
+    "“Tell him I brought flasks,” Doug says, with dignity. “He’ll know.”",
+    "He takes Doug’s fingers off the handle one at a time. Five alarms since August. Eighteen days, twenty-five, twenty-six, twenty-seven: Margot built an entire science on the spaces in between, with a log and a theory and a stakeout and Gold Bond on the lounge handle and Theo’s camera, and tonight the space is three days, and the science is Doug Pruitt with his pillow, asleep on his feet. Doug yawns without shutting his eyes, which Jack didn’t know a person could do.",
+    "His own body has been awake since twenty to four on Sunday afternoon and would like that noted. It ought to be told to somebody. Jack tries it in his head the way it will have to go, on the lawn, under Priya’s headlamp. *I caught him.* At four in the morning? *I was in the hall.* Why were you in the hall? *I was coming in.* From where? *Burbank.* In a blazer? *I was somebody’s cousin.*",
+    "The only witness to the end of the semester’s great mystery is standing on the fourth floor at two minutes to four with a Burbank visitor pass in his pocket, holding the culprit by the wrist, and there isn’t a person in this building he can tell how he got here."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "doug",
+     "title": "Doug Pruitt",
+     "text": "Doug Pruitt. 420, with Kevin. Bakersfield. Mechanical engineering. A Tauren druid. Says ‘dude’ with five vowels. Tuesday the 8th, 3:58 in the morning, I caught his wrist on the east-stair pull station. He was asleep. The raid boss was in the elevator."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Go down to 305. Margot doesn’t sleep.",
+     "tag": "Candor",
+     "set": {
+      "e20_doug": "candor",
+      "margot_knows_doug": true,
+      "alarm_case_closed": true,
+      "soul.honesty": "+1"
+     },
+     "cue": "Margot will remember that.",
+     "key": "At four in the morning you caught Doug Pruitt asleep at the pull station. You went down and told Margot.",
+     "response": [
+      "He walks Doug back down the hall to 420 by the elbow, the way his father walks a drunk out of a wedding, and Doug goes where he’s steered. 420’s door is standing open on the dark. Doug lies down on top of his covers with the pillow in both arms, and across the room Kevin breathes on and doesn’t wake.",
+      "Down a flight. Jack hasn’t lifted his hand to 305 when it opens. Margot is in black, with a finger in a library book, wide awake and surprised by nothing.",
+      "He tells her. She doesn’t write it down.",
+      "“How do you know?”",
+      "“I saw him.”",
+      "“At?”",
+      "“Four.”",
+      {
+       "if": "margot_counted_nights",
+       "text": "“And at ten to four you came up the front walk in a blazer.” She looks at the blazer. “I assumed a funeral.”",
+       "else": "“You were in the hall at four,” Margot says. Flat."
+      },
+      "“Go to bed, Costigan. I have a whiteboard to update.”",
+      "At a quarter past four he gets into his own bed in the blazer. Across the room Theo is breathing slow and even, and the gray throw is folded on the foot of Theo’s bed where Jack left it."
+     ],
+     "journal": [
+      {
+       "kind": "note",
+       "id": "alarm",
+       "title": "The 3 a.m. alarm",
+       "text": "Alarm 1, Monday the 31st, 3:07: everybody on the lawn in what they sleep in; Theo saved the espresso machine; Margot wrote ‘ALARM 1’ like it was a case number. Alarm 2, Friday the 18th, 3:12: eighteen days. Margot says that’s not a schedule, it’s a person. She’s keeping a log. Tuesday the 6th, nothing. Either the theory’s wrong or he’s on vacation. Alarm 3, Tuesday the 13th, 3:20, in a storm, under the overhang: twenty-five days. Margot says he’s irregular or he’s two people. Alarm 4, Sunday the 8th, 3:11: twenty-six days. Margot staked out the lounge pull station all night with Theo’s camera and Gold Bond on the handle. She fell asleep at 2:50 for the first time in recorded history. It came from the east stair. Alarm 5, Saturday the 5th, 3:10. Twenty-seven days. Margot said twenty-six. I wasn’t on the lawn. I came up from the water at four. Theo told Priya I was in the shower. Tuesday the 8th, 3:58, three days after: Doug. Asleep. Pillow and all. His hand was on the handle. I was coming in from Burbank. Margot knows."
+      }
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "Wake Kevin. Now.",
+     "tag": "Control",
+     "set": {
+      "e20_doug": "control",
+      "kevin_knows_doug": true,
+      "trait.control": "+1"
+     },
+     "key": "At four in the morning you caught Doug Pruitt asleep at the pull station. You woke Kevin.",
+     "response": [
+      "He steers Doug back down the hall by the elbow, in through 420’s open door, and puts a hand on Kevin’s shoulder.",
+      "Kevin is awake at the first touch, like a resident on call — sitting up, eyes clear, already taking the room in: Doug on his feet in the middle of it, the pillow, the open door. He gets up and lays Doug down on top of his covers like a patient, and Doug goes, and tells him, asleep, that the raid boss is very tall.",
+      "At the door Kevin keeps it under a whisper. Something on the doorknob tonight that jingles. A word to Priya. The health center after finals. “He has a thermo final Thursday. Sleep debt’s a trigger.” Then he looks at Jack properly — the blazer, the hour, the visitor pass sticking up out of the breast pocket — and doesn’t ask. Not tonight. He shuts the door, and through it Jack hears the desk chair scrape across and wedge under the knob.",
+      "At a quarter past four he gets into his own bed in the blazer. Across the room Theo is breathing slow and even, and the gray throw is folded on the foot of Theo’s bed where Jack left it."
+     ],
+     "journal": [
+      {
+       "kind": "note",
+       "id": "alarm",
+       "title": "The 3 a.m. alarm",
+       "text": "Alarm 1, Monday the 31st, 3:07: everybody on the lawn in what they sleep in; Theo saved the espresso machine; Margot wrote ‘ALARM 1’ like it was a case number. Alarm 2, Friday the 18th, 3:12: eighteen days. Margot says that’s not a schedule, it’s a person. She’s keeping a log. Tuesday the 6th, nothing. Either the theory’s wrong or he’s on vacation. Alarm 3, Tuesday the 13th, 3:20, in a storm, under the overhang: twenty-five days. Margot says he’s irregular or he’s two people. Alarm 4, Sunday the 8th, 3:11: twenty-six days. Margot staked out the lounge pull station all night with Theo’s camera and Gold Bond on the handle. She fell asleep at 2:50 for the first time in recorded history. It came from the east stair. Alarm 5, Saturday the 5th, 3:10. Twenty-seven days. Margot said twenty-six. I wasn’t on the lawn. I came up from the water at four. Theo told Priya I was in the shower. Tuesday the 8th, 3:58, three days after: Doug. Asleep. Pillow and all. His hand was on the handle. I was coming in from Burbank. Kevin’s got a chair under the knob."
+      }
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "Tell nobody. Let him sleep.",
+     "tag": "Restraint",
+     "set": {
+      "e20_doug": "restraint",
+      "jack_covers_doug": true,
+      "trait.control": "+1"
+     },
+     "key": "At four in the morning you caught Doug Pruitt asleep at the pull station. You walked him back and told nobody.",
+     "response": [
+      "He walks Doug back down the hall to 420 by the elbow, the way his father walks a drunk out of a wedding, and Doug goes where he’s steered. 420’s door is standing open on the dark. Doug lies down on top of his covers, and Jack tucks the pillow back under his arm, and across the room Kevin sleeps through all of it.",
+      "Out in the hall, under the EXIT sign, the red handle is only a handle again. He stands in front of it with his hands in the blazer pockets, the pass crackling under his fingers, and does the arithmetic once more — three days, a pillow, finals week coming — and leaves it to him and God and the fire code.",
+      "At a quarter past four he gets into his own bed in the blazer. Across the room Theo is breathing slow and even, and the gray throw is folded on the foot of Theo’s bed where Jack left it."
+     ],
+     "journal": [
+      {
+       "kind": "note",
+       "id": "alarm",
+       "title": "The 3 a.m. alarm",
+       "text": "Alarm 1, Monday the 31st, 3:07: everybody on the lawn in what they sleep in; Theo saved the espresso machine; Margot wrote ‘ALARM 1’ like it was a case number. Alarm 2, Friday the 18th, 3:12: eighteen days. Margot says that’s not a schedule, it’s a person. She’s keeping a log. Tuesday the 6th, nothing. Either the theory’s wrong or he’s on vacation. Alarm 3, Tuesday the 13th, 3:20, in a storm, under the overhang: twenty-five days. Margot says he’s irregular or he’s two people. Alarm 4, Sunday the 8th, 3:11: twenty-six days. Margot staked out the lounge pull station all night with Theo’s camera and Gold Bond on the handle. She fell asleep at 2:50 for the first time in recorded history. It came from the east stair. Alarm 5, Saturday the 5th, 3:10. Twenty-seven days. Margot said twenty-six. I wasn’t on the lawn. I came up from the water at four. Theo told Priya I was in the shower. Tuesday the 8th, 3:58, three days after: Doug. Asleep. Pillow and all. His hand was on the handle. I was coming in from Burbank. Nobody knows but me."
+      }
+     ],
+     "goto": "s09"
+    }
+   ]
+  }
+ }
+}
