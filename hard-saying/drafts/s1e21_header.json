@@ -1,0 +1,472 @@
+{
+ "id": "S1E21",
+ "season": 1,
+ "episode": 21,
+ "showTitle": "The Hard Saying",
+ "title": "Guadalupe",
+ "dates": "Friday, December 11 – Sunday, December 13, 2009",
+ "logline": "Six in the morning and a question about a war, a white elephant with the wrong answers in it, roses before dawn, a new slice at the Anchor — and the coldest water of the year, on purpose.",
+ "previously": [
+  {
+   "text": "Lena, by text, on the night of the holy day: *Saturday 3:30. I’ll save you a place in line. —L.*",
+   "if": "e20_skip==\"candor\""
+  },
+  {
+   "text": "Theo, from his desk, not turning around: “You were holding it like a rosary.”",
+   "if": "e20_skip!=\"candor\""
+  },
+  {
+   "text": "At Bastille Julian sang a song called “Magdalena.” Lena watched you hear it, and you looked back.",
+   "if": "e20_song==\"sincerity\""
+  },
+  {
+   "text": "At Bastille Julian sang a song called “Magdalena.” You made yourself watch him. She watched you.",
+   "if": "e20_song==\"restraint\""
+  },
+  {
+   "text": "At Bastille Julian sang a song called “Magdalena.” You left in the second chorus.",
+   "if": "e20_song==\"reckless\""
+  },
+  {
+   "text": "At Bastille Julian sang a song called “Magdalena.”",
+   "if": "e20_song!=\"sincerity\" && e20_song!=\"restraint\" && e20_song!=\"reckless\""
+  },
+  {
+   "text": "She took you home. On her bed on Del Playa you said no. She stopped everything, and asked you why.",
+   "if": "skye_first_no"
+  },
+  {
+   "text": "“I’m not saying the answer’s always going to be no. Not until marriage — I’m not going to tell you that… Just that it’s a big thing for me. And it’s a no right now.” “I can work with that.”",
+   "if": "jack_right_now"
+  },
+  {
+   "text": "On the porch that leans: “You said no. And you’re still here.” You asked her for daylight. “Sunday. Ellery. I’ll teach you to surf. In *December*.”",
+   "if": "skye_first_no && daylight_asked"
+  },
+  {
+   "text": "On the porch that leans: “You said no,” Skye said. “And you’re still here.”",
+   "if": "skye_first_no && !daylight_asked"
+  },
+  {
+   "text": "At the corner the phone came back on. Lena, 11:41: *You left in the second chorus.*",
+   "if": "lena_unsigned"
+  },
+  {
+   "text": "At the corner the phone came back on. Lena, 11:41: *Thank you for staying. He said you told him. —L.*",
+   "if": "julian_she_wanted && !lena_unsigned"
+  },
+  {
+   "text": "At the corner the phone came back on. Lena, 11:41: *Thank you for staying. —L.*",
+   "if": "!lena_unsigned && !julian_she_wanted"
+  }
+ ],
+ "cast": [
+  {
+   "id": "lena",
+   "name": "Lena Broussard",
+   "role": "The girl on the porch",
+   "tracked": true
+  },
+  {
+   "id": "theo",
+   "name": "Theo Vance",
+   "role": "Roommate, Room 412",
+   "tracked": true
+  },
+  {
+   "id": "laney",
+   "name": "Laney Price",
+   "role": "Lena’s roommate",
+   "tracked": true
+  },
+  {
+   "id": "margot",
+   "name": "Margot Lindqvist",
+   "role": "Third floor, Delgado",
+   "tracked": true
+  },
+  {
+   "id": "kevin",
+   "name": "Kevin Tran",
+   "role": "Down the hall, Room 420",
+   "tracked": true
+  },
+  {
+   "id": "osei",
+   "name": "Fr. Gabriel Osei",
+   "role": "Newman Center chaplain",
+   "tracked": true
+  },
+  {
+   "id": "hale",
+   "name": "Prof. Adrian Hale",
+   "role": "Philosophy, Marisol",
+   "tracked": true
+  },
+  {
+   "id": "julian",
+   "name": "Julian Park-Ellis",
+   "role": "Plays Bastille on Thursdays",
+   "tracked": true
+  },
+  {
+   "id": "evan",
+   "name": "Evan Marsh",
+   "role": "TA, PHIL 1, Thursday section",
+   "tracked": true
+  },
+  {
+   "id": "becca",
+   "name": "Becca Lindell",
+   "role": "Newman regular",
+   "tracked": true
+  },
+  {
+   "id": "frank",
+   "name": "Frank Costigan",
+   "role": "Jack’s father",
+   "tracked": false
+  },
+  {
+   "id": "maria",
+   "name": "Maria Costigan",
+   "role": "Jack’s mother",
+   "tracked": false
+  },
+  {
+   "id": "nonna",
+   "name": "Carmela Rinaldi",
+   "role": "Jack’s grandmother",
+   "tracked": false
+  },
+  {
+   "id": "gina",
+   "name": "Gina Costigan",
+   "role": "Jack’s sister",
+   "tracked": false
+  },
+  {
+   "id": "rosie",
+   "name": "Rosie Costigan",
+   "role": "Jack’s sister",
+   "tracked": false
+  },
+  {
+   "id": "priya",
+   "name": "Priya Raman",
+   "role": "4th-floor RA",
+   "tracked": false
+  },
+  {
+   "id": "rafi",
+   "name": "Rafi Ochoa",
+   "role": "Second floor",
+   "tracked": false
+  },
+  {
+   "id": "doug",
+   "name": "Doug Pruitt",
+   "role": "Room 420",
+   "tracked": false
+  },
+  {
+   "id": "joey",
+   "name": "Joey Abruzzo",
+   "role": "Newman regular",
+   "tracked": false
+  },
+  {
+   "id": "tyler",
+   "name": "Tyler Brandt",
+   "role": "Newman missionary",
+   "tracked": false
+  },
+  {
+   "id": "fitch",
+   "name": "Dolores Fitch",
+   "role": "Newman secretary",
+   "tracked": false
+  },
+  {
+   "id": "gus",
+   "name": "Gus Ferreira",
+   "role": "Organist, St. Brendan’s",
+   "tracked": false
+  },
+  {
+   "id": "sloane",
+   "name": "Sloane Kittredge",
+   "role": "Pi Lambda Chi",
+   "tracked": false
+  },
+  {
+   "id": "gloria",
+   "name": "Gloria Mendes",
+   "role": "The Anchor, nights",
+   "tracked": false
+  },
+  {
+   "id": "rudy",
+   "name": "Rudy Salcedo",
+   "role": "Line cook, the Anchor",
+   "tracked": false
+  },
+  {
+   "id": "caleb",
+   "name": "Caleb Hargrove",
+   "role": "PHIL 9H",
+   "tracked": false
+  },
+  {
+   "id": "yusuf",
+   "name": "Yusuf Noorzai",
+   "role": "PHIL 9H",
+   "tracked": false
+  },
+  {
+   "id": "wes",
+   "name": "Wes Arceneaux",
+   "role": "Lena’s ex, Tulane",
+   "tracked": true
+  },
+  {
+   "id": "tess",
+   "name": "Tess Fontenot",
+   "role": "Lena’s sister",
+   "tracked": false
+  },
+  {
+   "id": "richard",
+   "name": "Richard Vance",
+   "role": "Theo’s father",
+   "tracked": false
+  },
+  {
+   "id": "brynn",
+   "name": "Brynn Vance",
+   "role": "Richard’s wife",
+   "tracked": false
+  },
+  {
+   "id": "caroline",
+   "name": "Caroline Ashby Vance",
+   "role": "Theo’s mother",
+   "tracked": false
+  },
+  {
+   "id": "poppy",
+   "name": "Poppy Vance",
+   "role": "Theo’s sister",
+   "tracked": false
+  },
+  {
+   "id": "danny",
+   "name": "Danny Costigan",
+   "role": "Jack’s brother",
+   "tracked": false
+  },
+  {
+   "id": "remy",
+   "name": "Remy Broussard",
+   "role": "Lena’s brother",
+   "tracked": false
+  },
+  {
+   "id": "nora",
+   "name": "Nora Calloway",
+   "role": "Name on a brass plate",
+   "tracked": false
+  },
+  {
+   "id": "dale",
+   "name": "Dale Wisniewski",
+   "role": "A Lions fan at Sully’s",
+   "tracked": false
+  },
+  {
+   "id": "peter",
+   "name": "Peter Haddad",
+   "role": "Newman president",
+   "tracked": false
+  },
+  {
+   "id": "kenzie",
+   "name": "Kenzie Rourke",
+   "role": "Newman cantor",
+   "tracked": false
+  },
+  {
+   "id": "bridget",
+   "name": "Bridget McNulty",
+   "role": "Newman missionary",
+   "tracked": false
+  },
+  {
+   "id": "ray",
+   "name": "Ray Ochoa",
+   "role": "Rafi’s father",
+   "tracked": false
+  },
+  {
+   "id": "lupe",
+   "name": "Lupe",
+   "role": "Taco truck, Seacliff Road",
+   "tracked": false
+  },
+  {
+   "id": "merle",
+   "name": "Merle",
+   "role": "A fisherman at the Anchor counter",
+   "tracked": false
+  },
+  {
+   "id": "dulce",
+   "name": "Dulce",
+   "role": "Harbor Inn housekeeping",
+   "tracked": false
+  },
+  {
+   "id": "rosario",
+   "name": "Rosario",
+   "role": "Harbor Inn housekeeping",
+   "tracked": false
+  },
+  {
+   "id": "kaylee",
+   "name": "Kaylee Whitmore",
+   "role": "Laney’s friend, Dallas",
+   "tracked": false
+  },
+  {
+   "id": "tony",
+   "name": "Tony Broussard",
+   "role": "Lena’s father, by phone",
+   "tracked": false
+  },
+  {
+   "id": "verna",
+   "name": "Verna",
+   "role": "Motel keeper, Lucia",
+   "tracked": false
+  },
+  {
+   "id": "bede",
+   "name": "Father Bede",
+   "role": "Camaldolese monk",
+   "tracked": false
+  },
+  {
+   "id": "luc",
+   "name": "Luc Broussard",
+   "role": "Lena’s brother",
+   "tracked": false
+  },
+  {
+   "id": "josie",
+   "name": "Josie Broussard",
+   "role": "Lena’s sister",
+   "tracked": false
+  },
+  {
+   "id": "brooks",
+   "name": "Brooks Callahan",
+   "role": "Sigma Rho",
+   "tracked": false
+  },
+  {
+   "id": "planner",
+   "name": "Delphine",
+   "role": "Party planner, Silver Lake",
+   "tracked": false
+  },
+  {
+   "id": "sol",
+   "name": "Soledad",
+   "role": "A girl with an old camera",
+   "tracked": false
+  },
+  {
+   "id": "odile",
+   "name": "Odile Broussard",
+   "role": "Lena’s Mémère, Breaux Bridge",
+   "tracked": false
+  },
+  {
+   "id": "graham",
+   "name": "Graham Fisk",
+   "role": "A guest at Hale’s table",
+   "tracked": false
+  },
+  {
+   "id": "garrett",
+   "name": "Garrett",
+   "role": "Bio 1A, the orgo study group",
+   "tracked": false
+  },
+  {
+   "id": "skye",
+   "name": "Skye Callender",
+   "role": "Thursdays at nine",
+   "tracked": true
+  },
+  {
+   "id": "debbie",
+   "name": "Debbie Callender",
+   "role": "Skye’s mother, by phone",
+   "tracked": false
+  },
+  {
+   "id": "wyatt",
+   "name": "Wyatt Halloran",
+   "role": "The host, Montecito",
+   "tracked": false
+  },
+  {
+   "id": "bev",
+   "name": "Bev",
+   "role": "Night waitress, the Starlite",
+   "tracked": false
+  },
+  {
+   "id": "tammy",
+   "name": "Tammy Price",
+   "role": "Laney’s mother, by speakerphone",
+   "tracked": false
+  },
+  {
+   "id": "reggie",
+   "name": "Reggie",
+   "role": "Danny’s bunk neighbor, from Portsmouth",
+   "tracked": false
+  },
+  {
+   "id": "ashley",
+   "name": "Ashley Vrabel",
+   "role": "Gina’s classmate, Ursuline",
+   "tracked": false
+  },
+  {
+   "id": "vrabel",
+   "name": "Mr. Vrabel",
+   "role": "Ashley’s father",
+   "tracked": false
+  },
+  {
+   "id": "dom",
+   "name": "Fr. Dom Bruno",
+   "role": "Pastor, St. Brigid of Kildare",
+   "tracked": false
+  }
+ ],
+ "duels": {},
+ "start": "s01",
+ "endCard": {
+  "tag": "“Better not tell you now.”",
+  "nextTime": [
+   "Wednesday at two: twenty minutes each, and somebody else’s best argument.",
+   "One in the morning, in a car with no future.",
+   "The last night, and every place it happened.",
+   "Two airports, and a phone that won’t keep still."
+  ]
+ }
+}

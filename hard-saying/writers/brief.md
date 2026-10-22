@@ -1316,3 +1316,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     now**, weak and powerless, as if this is the only thing he could possibly do.
   - **It passes a little while after they hang up, but he's shaken by it afterward.** (Resolve hit; the line itself
     never breaks. Likely feeds the next confession, where Osei moves from tender toward gentle but pointed.)
+- **Skye and Jack: keep the whole mix, every episode she's in (player; standing through the end of their
+  relationship).** The relationship is **sex appeal + intellect + wit/playfulness + unrestrained fun**, all four, all
+  the way through. **Jack is falling for her hard, and for every part of her**, and **she is falling for him too.**
+  Never let the heat/resolve thread crowd out the arguments, the jokes, the dares and the plain joy of being with
+  her. Each Skye episode should carry at least one beat of each (Voice Editor and Showrunner check this).
