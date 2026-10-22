@@ -1226,3 +1226,5 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **S1E19 mid-episode (player, at the questions game).** "Incredible episode so far. You did an amazing job with
   Skye," and "this is going to be so painful next season because **Jack and I both are falling in love with that
   character**." Keep her that lovable: the S2 ending has to hurt because she's worth it, never because she's diminished.
+- **After S1E19 (player feedback).** "So so good." **Skye especially**, but **Lena was magnificent in her extended
+  scene with Jack** too. **Theo and Delaney remain great.** **Really enjoying Fr. Osei.** (Keep giving Osei room.)
