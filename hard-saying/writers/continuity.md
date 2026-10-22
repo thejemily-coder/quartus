@@ -3358,3 +3358,65 @@ Christmas letter to Becca · Maria's next Trumbull visit **Sun Dec 6** ("Sunday 
 1:00 p.m. ET, the game ends ≈4:00 — s21 is ≈4:05, departure ≈4:50. Gina's New Moon count: twice by Thu, third time Sat. Frank does **not** drink Thursday or Sunday
 (thermos). Nonna sleeps in the front-room chair (since Nov 8); she never climbs the stairs this weekend. The seventh stair talks; there are fourteen. The side door has a
 spring and usually bangs. The Madonna's carnations: red and white, cellophane, from the all-night gas station on Market Street (a ten-minute walk).
+
+### S1E19 — "Nobody" (Mon Nov 30 – Sun Dec 6, 2009; tag Sun ≈9:15 a.m. PST, the 4th-floor lounge)
+> Final revision, collapsed against `saves/after-s1e18.json` (wit 58, reckless 39, candor 68, sincerity 125, grace 34, restraint −16, honesty 35; Jack resolve 6, Lena 5).
+> Dead E17/E18 variants collapsed to the played branch (`e17_theo` wit, `e12_evan` gatsby, `e18_night` restraint, `nonna_knows_skye`, `e15_conf` go, `lena_knows_danny`).
+> Live gates: `trait.candor>=60` (s08a [Candor]), `trait.wit>=50` (s12 [Wit]), `trait.wit>=56` (s17/s18 [Riposte]), `trait.reckless>=28` (s18 [Personal]),
+> `trait.sincerity>=100` (s21 [Unguarded]), `resolve.jack<=3 / >=7` (s21 narration), `e19_outis_personal` (s19 [Apologize]). 39 scenes; ≈24.6–26.3k words per path;
+> 12 keys and up to 6 whispers per path; forks `e19_yusuf` (s04a/s04b), `e19_mass` (s07a/s07b), `e19_conf` (s14a/s14b); duel `outis` (s17–s19v, Lena ends at 3).
+
+- **Mon Nov 30.** s01 7:40 a.m.: Theo reads the News Feed aloud (Skye's likes; Jack's Feb 3 Note "25 Random Things About Me" — No. 4 Gina, No. 9 the Summa twice). Rosie's two
+  crayon princes taped over Theo's desk; **Nonna's twenty folded in the frame of Theo's mirror**. s02 Sully's, MNF **Saints 38–17 Patriots (11–0)**; the brass bell; Julian rings
+  it on the third TD; Kevin's napkin margin: WEIS — FIRED, TIGER — WD (Chevron, Thousand Oaks); Tiger's crash = hydrant then tree, 2:25 a.m. Nov 27 (no conduct invented for
+  Elin). Browns lost to the Bengals 16–7 (Sun Nov 29). Skye's texts 7:02/7:03. Jack leaves at the two-minute warning (`e19_exit`); Kevin writes COSTIGAN — LEFT 4Q, 2:00.
+  s03/s03a the launch-ramp lot 8:50–10:40 p.m.: the strapless "dress with opinions" (Burbank fitting); tuxedo jacket not hers; her **marimba alarm at 10:40** stops it; dropped at
+  **the Marine Lab turnout** (her drop point from now on, never the Anacapa lot). Odyssey back glass: WHO DAT · 11–0. Last time in a lot together = Tue Nov 24 (E17).
+- **Tue Dec 1.** s04 the Fishbowl, **Obama at West Point (8 p.m. ET = 5 p.m. PT)**; Yusuf: "You left the first time. My father watched you leave. If you're going to come,
+  stay." **Tariq: IED, Helmand; alive; Landstuhl; to be flown home.** Lena tells Yusuf "I'll get Kevin" on the stairs [go] / sits a flight down [stay]; **Kevin texts Jack
+  6:31 p.m. "Airport at 6 AM with Yusuf. First flight north."** [go]. Margot's prop is the **Moleskine** (legal pads belong to Laney's meeting and Debbie Callender).
+- **Wed Dec 2.** s05 1:05–2:45 a.m. the wharf rail, **full moon overhead**; Skye on her mother's Studio City balcony (5 a.m. call); "Do the room" (her reads are general, Jack
+  supplies the facts); Lena's text **1:48 a.m.** ("Up? I keep thinking about Yusuf's mother"). Jack walks home ≈3:40, sleeps ≈4 hrs. **PM1 sent 5:12 a.m. ("proof of five")**,
+  opened 8:10 on the east-stair landing (best reception on four); Kevin back from the airport. s06 Hale: Yusuf has gone home, keep his chair; **final is oral, Wed Dec 16, pairs,
+  20 min each, defend your opponent's best argument**. s06a Skye's magazine questionnaire (Valentine's issue; soap-snow set in Burbank, 71°). **The Tiger voicemail + website
+  "transgressions" statement both Dec 2** (period sheet).
+- **Thu Dec 3.** St. Francis Xavier; s07a 12:10 Mass; Mrs. Fitch's flyer: **Advent party Fri Dec 11, 7 p.m., Newman House, $10 white elephant, "FR. OSEI REQUESTS NO
+  MISTLETOE."** Becca: still on the Christmas-card list; Daisy in the photo. s08 last PHIL 1 section (Kierkegaard; *Who answers for Isaac?*). s08a 9 p.m. Skye from the garage
+  under her mother's building; *Jersey Shore* premiere (Laney/Theo texts 10:06–10:12).
+- **Fri Dec 4.** s09 THE SITUATION ROOM (Fishbowl; orange bulbs; Cheetos in a punch bowl; spray tan unopened); Theo replays "take your name off your phone"; times Jack's pocket
+  with a stopwatch, says no number. Skye 11:52 / 11:55 ("ohio").
+- **Sat Dec 5.** s10 12:05 a.m. the Saab north (Rumours ejected; "Thunder Road" on a Santa Barbara classic-rock station); truck lives; Lordstown Cobalts; LA invite (network
+  party, piano in the pool; Jack works Sat 7–1, the Hobart). s10a 1:35 ranch road west of the highway, cattle on warm asphalt, heifer tag 61, *Questions Only*. s11 1:50 turnout
+  where the coast turns the corner (Jalama model; **≈40 miles from campus**; a working lighthouse down the coast); heat step (her in his lap; flannel/camisole off; his shirt
+  open). **Alarm Five 3:10 a.m.** (27 days; Margot said 26) — Theo's texts 3:12–3:15 stop it. Drive back ≈40 min: **dropped 3:58, on the lawn 4:03**; horn long silenced,
+  MFD walking every floor before anyone goes in; Priya ran roll twice; Theo's "shower" cover; Kevin's pencil question mark. Skye: "I don't take people home." s12a 11:40 a.m.
+  Marine Lab turnout in daylight: **Skye starts at Marisol in January (spring, undeclared)**; math placement booklet; studio teacher Irene; proficiency test at 16; Cassidy sent
+  to a Swiss school in the spring (off camera); fractions; Jack goes in a tide pool to the knee. Alabama 32–13 Florida (SEC title; ended ≈4:30 p.m. PT). s13 2:30 laundry room:
+  Theo + Laney's Saturday 2:30 "study group" (alliance meeting 1; Pi Lam legal pad). s14/s14a confession 3:35–4:00 (penance: a decade for her, by name).
+- **Sun Dec 6 (St. Nicholas).** s15 the Anchor 12:40–1:00 a.m.: Lena in Kevin's Odyssey (Julian in Oakland — brother **Daniel, Navy, two weeks' leave**); Gloria: "Pecan came to
+  see if you were here." s16 Walgreens 1:35: **Maria fills 200 shoes at St. Brigid's every St. Nicholas Eve (did them Friday this year; Jack and Danny carried boxes)**; Lena:
+  "Where do you go, Jack?" Reliquary **No. 10**. s17–s19v the breakwater/Mission St. 2:10–2:55 — **Lena's Greek final Tue Dec 8 (Book Nine at sight): "The languages go
+  early"** (language finals run before finals week Dec 14–18; Hale's oral stays Wed Dec 16). s20 the shoe raid 3:20–4:10 (Priya's NO SHOES IN HALLWAYS; Uggs 217, Rafi's
+  flip-flops 204, clementine at 305, Doug's Crocs 420 + Kevin's keys, **Theo's good cordovan loafers outside 412**, Priya's card at 401, headlamp 4:05). s21 laundry room 4:30–
+  ≈5:00 (she steps back first). **PM2 sent 4:40 a.m.** (hotel-bathroom mirror at the network party). s22 Theo out barefoot ≈5:30, back 6:40 wet to the shin, carrying his loafers;
+  **Jack invites Theo for Christmas himself ("Pop meant it in the garage… And I'm asking")**; Theo: "I have things. In LA." / "Tell your father I heard him." Theo: "I'm from
+  La Cañada. We don't have saints. We have donors." (No denomination set.) s23 Margot's whiteboard: UNEXPLAINED CITRUS — FLOORS 2–4.
+- **Flags (E19):** `e19_feed`, `e19_exit`, `e19_harbor`, `e19_yusuf` (go/stay), `knows_tariq`, `e19_pray`, `e19_sms`, `e19_two`, `e19_pic`, `pic1_erased`, `knows_hale_oral`,
+  `e19_quiz`, `e19_mass`, `knows_advent_party`, `e19_becca`, `e19_kev`, `e19_evan` (candor/control/wit/**protect** — protect sets neither `evan_knows_*`), `evan_knows_roommate`,
+  `evan_knows_theo_name`, `e19_isaac`, `e19_gtl`, `e19_la`, `skye_invited_la`, `e19_road`, `e19_moon`, `skye_no_home`, `alarm5_missed`, `theo_covered_alarm`,
+  `margot_counted_nights`, `e19_lawn`, `knows_skye_spring`, `e19_spring`, `alliance_meeting_1`, `e19_meeting`, `e19_conf`, `confessed_skye_1`, `e19_purpose`,
+  `firm_purpose_hour`, `e19_phone`, `phone_off_lena`, `reliquary` +1, `lena_asked_where`, `lena_phone_cards`, `julian_writing_song`, `e19_where`, `lena_sometime`,
+  `lena_named_delplaya`, `duel.outis.*`, `e19_outis` (press/concede/candor[Reframe, wit]/apology), `e19_outis_personal`, `e19_outis_apology`, `e19_inch`
+  (sincerity/candor/restraint/**unguarded**), **`e19_pic2` (reply/kept/erased), `pic2_kept`, `pic2_erased`**, `e19_night`, `skye_knows_nicholas_friend`,
+  `jack_hid_lena_from_skye`, `said_it_plain_n`.
+- **Picture counters:** `skye_pics` = pictures **received** (+1 s05a, +1 s23 → +2 on every path; E20's rung 3 makes 3). **New `skye_pics_kept`** = pictures kept (+1 PM1
+  candor/wit, +1 PM2 reply/kept): 0–2 after E19. The Christmas phone hazard should read `skye_pics_kept` / `pic2_kept`. E20 does not yet read `e19_pic2` (room may add).
+- **Resolve:** Jack 6 → −1 [harbor reckless/candor], +1 [pray grace], +1 [pic restraint], +1 [s07 drift: the sleep] or +1 s07a Mass, −1 s11, ±1 [moon], +1 s14a, +1 [purpose
+  grace], +1 [phone restraint], −1 s21, +1 [inch restraint] / −1 [unguarded], −1 s23, +1 [pic2 erased] → ≈2–10. **Lena 5 (s02) → 4 at s21** (the near-miss); E20 s01's reset to
+  5 overwrites it — E20 room's call.
+- **Scoring changes at final revision:** soul.restraint now moves both ways (−1 harbor reckless, moon reckless/candor, phone reckless, pic2 reply); non-sexual "Restraint" picks
+  pay `trait.control`; [Personal] costs grace −1 and Lena warmth −1; [Apologize] trust +1 (no honesty); s19 candor is a Reframe (wit +1); `rel.theo.trust` +1 for the alarm
+  cover on every path (Lie +1 more; candor −1 Theo warmth).
+- **Owed payoffs:** Skye at Marisol in January (`knows_skye_spring`); "Ask me in daylight" paid (sharks were a lie); `firm_purpose_hour` (E20/E21); Julian's song (`julian_writing_song`);
+  Theo's Christmas (brief: starts the break in LA, then asks for Christmas Eve/Day in Youngstown); Theo's clementine (🔒, never glossed); Kevin's question mark [lie/wit];
+  Margot's count ("four nights of six"; not writing it down); Evan's Preview Weekend question (🔒); `lena_sometime`; the Advent party Dec 11.

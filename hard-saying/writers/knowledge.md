@@ -1661,3 +1661,55 @@ Nobody in the core cast has met anybody else on-page. Specifically:
   must never hear it from Theo (they don't speak till Christmas); Lena learns nothing of Skye beyond [buzz candor] "a friend in California"; Becca and Gina never tell Lena
   about the invitation (through S2E10); Becca never tells Lena she knows it was her; nobody at Marisol knows about Skye but Jack (Theo has a fact, not a story); Meridian
   never on anything Jack sees about her; two scar stories in circulation (Skye: husband; Kevin: per `e17_scar`); Theo now "believes" the swan (Danny's lie).
+
+### S1E19 — "Nobody"
+> Final revision, collapsed against `saves/after-s1e18.json` (see continuity.md S1E19). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01] Theo reads Skye's likes aloud; Theo calls him fast. [s02] Lena watched the angle of the phone under the table. [s04] Tariq: IED, Helmand, alive, Landstuhl, flying
+  home; [s04a | go] Yusuf told Lena on the stairs and she said "I'll get Kevin"; **Kevin's 6:31 text: airport at 6 a.m., first flight north**; [s04b | stay] Lena told him,
+  and that Kevin drives at six. [s05] Skye watched the speech muted and read Obama's face; [go] Yusuf's face did nothing / [stay] he didn't see it ("I wasn't the one who
+  went"). [s06] Hale's oral final Dec 16; Yusuf has gone home. [s07a | grace] the Advent party flyer; Becca's Christmas card (Daisy). [s08] Evan's Isaac note; Evan asked about
+  the man in the white jacket and Preview Weekend [candor/control/wit] (route for "your roommate?": "somebody in section said he lives on your floor") / [protect] Jack said he
+  didn't know him. [s09] Theo replayed one voicemail line and timed Jack's pocket. [s10] Skye's LA ask (network party). [s11a] **"I don't take people home."** He doesn't know
+  where she sleeps up here. [s12] Theo covered (the shower); Margot counts ("Out past one, four nights of six") and isn't writing it down; Kevin's question mark [lie/wit] /
+  erased [candor]. [s12a] **Skye starts at Marisol in January, undeclared; never went to a high school; "Sharks were a lie"** — fear of being bad at something where people
+  can see her face; she thinks his "church people" will hate her. [s13] Theo and Laney meet Saturdays at 2:30 in the laundry room ("study group"). [s15] Julian's brother
+  Daniel is home on Navy leave; Lena came in Kevin's car. [s16] Lena: Monday Theo told her Jack was at work; "Where do you go, Jack?" [restraint] Julian's places (Bastille, the
+  nine o'clock, a Del Playa garage with a self-tuned piano). [s17] **Lena's Greek final is Tue Dec 8 (she tells him: "The languages go early")**. [s22] Theo out barefoot
+  before light, back wet to the shin with his loafers and a clementine (🔒 never explained; **not on any journal card**).
+- **He does NOT learn:** where Skye sleeps in Marisol; anything more linking Theo and Skye (Facebook line only); why Theo walks to the water; who pulls the alarms; what Evan
+  wants with Theo; what Julian's song is.
+
+#### Skye
+- From Jack: the Fishbowl in one sentence a person (no names) — "a guy in my seminar," his brother **Tariq** (the name only), Kevin-as-"the pre-med" driving "a guy" at six;
+  Margot doesn't sleep; Hollis 108 and Evan's note (no names); [isaac candor] he keeps her from everybody he knows; Lordstown / his father's plant (Cobalts); his grandmother
+  knows there's an *attrice* [nonna_knows_skye]; Advent candles; the fire alarm and his RA's roll (no names; she never sees Theo's texts — Jack tilts the phone away);
+  [night candor] "out with a friend" — St. Nicholas for the whole dorm (no name, no gender); [night restraint] "worked. slept" (a lie about Lena); [pic2 reply] he hasn't stopped
+  seeing PM2.
+- **She still has never heard** Lena's, Theo's, Danny's or Kevin's names from Jack; nothing of Lena exists for her beyond [night candor] "a friend."
+
+#### Lena
+- [s02] Jack left Sully's at the two-minute warning ([control] "Gloria called" — a lie she catches in s16: Theo told her Monday he was at work); [s05] his reply to her 1:48
+  text per `e19_two` ([candor] he was on the phone at 1:50 a.m.); [s12] the empty space on the lawn at Alarm Five, Jack coming up from the water at four in last night's clothes;
+  [s15] the phone turned to his hip at the Anchor; [phone control/reckless] it went off in the van and against her knee in the laundry room at 4:40. **She has seen no
+  picture, no Saab, no screen; she has no name.** [buzz candor, E18] "a friend in California" stands; she noticed "California isn't three hours behind here." [where candor]
+  "I'll tell you sometime" (`lena_sometime`). [inch unguarded] he doesn't want to be the one either.
+
+#### Theo
+- Sees Skye's Facebook activity on his Feed (likes); times Jack's pocket; covers at Alarm Five (doesn't know where Jack was); [lawn candor] Jack told Priya "I was out"; [s22]
+  sees Jack's RAZR shut on his chest at 6:40. **Christmas: Jack has asked him himself; he said he has things in LA** (brief's Christmas 2009 plan holds). Nothing new about Skye.
+
+#### Others
+- **Yusuf** — Jack went after him [go] / texted [stay]. **Kevin** — the airport run; [lawn] the question mark or its erasure; he finds his keys in Doug's Croc. **Margot** — "four
+  nights of six" past one (counts, won't write it). **Priya** — Jack wasn't on her lawn at Alarm Five; the St. Nicholas card on her door (doesn't know who). **Laney** — Jack
+  "dressed" at the alarm; an Ugg full of fruit; the "study group" with Theo. **Evan** — per `e19_evan`: Theo's name [candor], "roommate" by Jack's face [control/wit], nothing
+  [protect]. **Osei** [s14a] — a girl, the car, two in the morning, the daylight (seal of confession; nothing leaves the box). **Becca** — Theo said grace; Nonna's praying for
+  him; Nonna is in a cast. **Mrs. Fitch** — Jack stepped out of line [drift]. **Gloria** — Pecan came to see if he was there.
+
+#### LIVE RISKS carried out of E19
+- All E18 risks stand (Theo holds *now friends* to Christmas; Skye never hears the names; Lena learns nothing of Skye beyond "a friend in California").
+- Skye knows "a guy in my seminar" has a brother **Tariq** — she must never meet Yusuf as "Tariq's brother" without a route.
+- [night candor] Skye knows "a friend" did St. Nicholas with Jack — never upgrade it to a girl without a page.
+- Margot's count and Kevin's question mark are seeds, not knowledge of Skye: neither knows a name, a car or a face.
+- **Skye at Marisol in January**: from S1E21/S2 she can be on campus — every on-campus meeting with Lena, Theo, Kevin, Margot or Laney needs the room's plan (brief's reveal order).

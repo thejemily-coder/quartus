@@ -247,6 +247,15 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 117. **"Nobody" relative clauses in the narration** (S1E18 ×8: "the one nobody asks Frank anymore," "a coffee nobody asked for," "the one place in the house nobody sleeps
    next to"; a cousin of #106). Max three per episode, and keep them off the scenes where "nobody" is the thread (Gina's "Nobody." oath; Skye's "I liked being nobody to
    you").
+118. **"Without looking (up)" as a delivery tag** (S1E19 ×14 in one draft, three of them Kevin's in one scene; E03 ×4). Max three per episode; keep it where the not-looking
+   is the point (Kevin's COSTIGAN — LEFT 4Q entry; Lena not looking at Jack after the Personal). Otherwise give the hand something to do or cut the tag.
+119. **"It isn't a question." as a narrator's gloss** (S1E19 ×4; a cousin of #10). The line already carries its tone; cut the gloss. A character may say it (Frank's
+   "it isn't a question") — the narration may not.
+120. **The "has nothing to say / says nothing at all" button** (S1E19 ≈9; a cousin of #37 and #105). Max three per episode; never two in one paragraph (Frank was the father
+   who "says nothing at all" twice in s04/s05).
+121. **Skye's superlative-verdict formula — "the best/worst X I've ever gotten / that's ever happened to me"** (S1E19 ×8 in Skye's mouth alone; part of #49). Once an episode,
+   where it pays off (E19 kept "the best no I've ever gotten" for the PM2 caption). Recast the rest as actions or a flat line ("I'm having that framed").
+Small repeats to watch (S1E19): one tick source per episode (the halyards ticked ×5 — establish once, spend once); a working lighthouse "comes around" — establish once, spend once (×5 in one draft); hazard-light orange on a face ×4; sea lions "arguing" on the bait dock (E02, E04, E16, E19 ×2 — give the harbor another sound); animals or sky that "bought a ticket / paid to get in"; the roaring heater (one car per episode); "palm / hand flat" (≈8; #75); "a while" (#61); Lena and Skye never share a figure ("Lutheran," trying a word on, cards, "the only question") — #64.
 Small repeats to watch (S1E18): Nonna's "good hand" (≈17 in one draft) — once a scene, otherwise "her hand" / "her left"; Theo's bow from the waist (keep one an episode, where
 it pays — E18 s04); "Theo in the middle" of the bench seat (the rule once, the payoff once); Theo noticing the phone and saying nothing (build it in three beats, not six);
 "goes by" for passing scenery; Frank "with his eyes on the road"; phones "face down" (two an episode); turning an object "over in his fingers" (once); the buzz felt "in his
