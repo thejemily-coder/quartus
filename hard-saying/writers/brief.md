@@ -1305,3 +1305,14 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Pictures:** **a notch up when they're apart for consecutive days** (E21). **E22: a big jump** in the picture
     she sends as he's about to head home (her voice, not verbatim: "so you have something to look forward to in
     January…"). That's the finale's buzz.
+- **S2 Christmas break: the call (player; adapt, frank at the brief's literary standard, never pornographic
+  mechanics).** During a long late-night phone call over the break (Youngstown; the cold garage, his room, wherever
+  he can be alone), **Skye tells him slowly and exactly what she's going to do to him when he doesn't say no.** He
+  **doesn't stop her**, and **ends up telling her the same** (she likes it; **he's definitely not as good at it as
+  she is**).
+  - **Why he lets it run:** he **literally can't say yes** to what he's been avoiding, so he lets this go on and on as
+    the only yes available.
+  - **Too late, he realizes** it's just going to make the real yes easier: in the moment he **feels like he needs it
+    now**, weak and powerless, as if this is the only thing he could possibly do.
+  - **It passes a little while after they hang up, but he's shaken by it afterward.** (Resolve hit; the line itself
+    never breaks. Likely feeds the next confession, where Osei moves from tender toward gentle but pointed.)
