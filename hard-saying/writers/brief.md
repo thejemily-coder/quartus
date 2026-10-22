@@ -1166,3 +1166,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     altars on Mar 19, whitewashing and visiting the family tombs on All Saints, the Good Friday walk to nine churches)
     and Jack's **Youngstown** Italian/Slavic Catholicism (Nonna's Feast of the Seven Fishes, a St. Joseph's table,
     Christmas Eve customs). These carry the older practices, which they half-rediscover in books.
+- **Theo in Youngstown, standing (player; follows Frank's open invitation in S1E18).** From now on **Jack invites Theo
+  to Youngstown for as much as he can come**: Thanksgivings, Christmas breaks (a few days up to the whole break), and
+  summers (default: the Fourth of July, but for as long as he wants to stay). Exception: the holidays Jack spends in
+  New Orleans instead; **the Costigans may invite Theo anyway**. Theo becomes a fixture of Glenwood Avenue.
