@@ -1204,3 +1204,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     grave offense, but must entrust the judgment of persons to God's justice and mercy; Matthew 7, the speck and the
     beam). **Do not use "Who am I to judge?"**: that's Pope Francis, July 2013 (anachronism). The room may let Jack
     reach for Lewis, Aquinas or his own family (Danny) in his own voice, as long as it stays plain and unpreachy.
+  5. **The line he'll regret (player; adapt to the moment and his voice, not verbatim).** At the end, Jack says some
+     version of: **"I'm not saying the answer's always going to be no, not until marriage. Just that it's a big thing
+     for me, and it's a no right now."** She immediately tells him **she can work with that.**
+     - **It sets her approach for the whole relationship:** a no is a no **only for that instance and only about
+       sex**. (This is the source of "to the letter.")
+     - **Jack regrets it in a small way for years**, and is **more grateful that it didn't make him break**. It puts
+       the load more equally on Jack: he opened the door himself.
+     - **Skye is never a villain or actually cruel** for what she does after. Both of them sometimes call it "cruel,"
+       **always as a joke**: they mean she's incredibly hard, almost painfully hard, to resist, and both know it.
