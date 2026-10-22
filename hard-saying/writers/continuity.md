@@ -3226,3 +3226,135 @@ braided anklet; no shoes all night at 40°; she texts lowercase without apostrop
 Denver: the name said low into the pillar; the scream reached the stroller woman only). Jack knows Studio City (E16) and "my mother's" for Thanksgiving; he does not know
 where she drove at 4:38 (🔒). Lena knows "a party in Montecito" [control] — nothing of Skye. Jack/Theo: SBA → DEN → PIT; Lena SBA first (Julian drove); Becca SBA →
 SEA → GEG. Gina is 15, a sophomore at Ursuline; Kelsey and Ashley Vrabel her classmates.
+
+### S1E18 — "Visiting Hours" (Wed Nov 25 – Sun Nov 29, 2009; tag Sun ≈7:50 p.m. EST, a regional jet westbound out of PIT)
+> Final revision, collapsed against the after-s1e17 save (wit 52, reckless 37, candor 63, control 18, charm 25, sincerity 123; Jack resolve 5, Lena 5; `said_it_plain_n` 0).
+> Earlier-episode gates (all true on this save): `knows_nonna_fall`, `skye_coffee`, `kissed_skye_2` + `e17_stop` (previously #3 now has reckless/restraint variants),
+> `first_flight`, `becca_over`, `knows_skye_famous && gina_knows_skye`, `e17_miss`, `e17_gina`, `e16_invite`, `theo_paid_deposit`, `e17_nonna`, `e17_sba`,
+> `lena_knows_frank_night`, `danny_met_lena`, `scar_told_theo`, `e14_danny`, `e16_misfit`, `e17_play`, `e17_stop`, `e17_sorry`, `maria_knows_lena_maybe`,
+> `e15_gina`, `e15_conf`. Live trait gates: `trait.charm>=25` (s06 [Charm]), `trait.wit>=50` (s12a [Wit]); `said_it_plain_n>=3` (s16 candor) / `>=2` (s16 reckless).
+> Per-path ≈16.8–17.5k words (24 choices; 11–12 keys; up to 6 whispers; no duel). Genuine forks: `e18_night` (s09a basement / s09b garage), `e18_sat` (s15a / s15b).
+
+- **Wed s01 ≈7:40 p.m., PIT arrivals.** Skye's texts piled up in flight (stamped 6:52/6:58/7:10 p.m.). Theo in the camel coat with a monogrammed weekender; Gloria's pecan
+  pie in Jack's arms; two holy cards (Lena's Our Lady of Prompt Succor, Becca's St. Raphael). **The Silverado washed** in November. Frank: the Browns knit hat, gray at the
+  ears since August, a fresh shave. Greeting per `e18_curb`.
+- **s01a the bench seat:** Frank's spare **Browns parka** (orange/brown, older than Gina, cuff mended with electrical tape) goes over the camel coat and **Theo wears it all
+  weekend**. Theo rides in the middle ("the rule whenever three ride"). **Danny put in for Theo's special visit himself; Maria made calls.** Theo's fixer reflex ("My father
+  knows a man in Columbus") → Frank: "No." **Truck: '99, two-twelve in August, now two-seventeen; original transmission** (Theo remembered the August numbers — E01 s03).
+  Steelers: Roethlisberger concussed at KC; Dennis Dixon may start at BAL. Browns: Quinn's four TDs, lost on the last play (Lions 38–37). The line: "Loud… You quit hearing it."
+- **s02 ≈8:50 p.m., the Glenwood Ave. vestibule.** House: narrow two-story frame near Brownlee Woods; front-porch glider under a tarp; **Nonna's bathtub Madonna in the
+  side yard** (Nonno dug it before Jack was born; clawfoot tub on end, painted blue inside). Gina's ambush ("SHE'S. ON. TV."): six hours of research since the Denver call;
+  the fan page at 4,206 fans; **Danny called ≈8 p.m. on the kitchen phone; Gina held** ("Bring the rich one Friday. Tell him don't wear nothing nice."). **Gina's color
+  printout of the dock picture on Ma's ink — kept in her waistband / Ursuline binder.** Per `e18_dell`: "Cassidy says be nice" (`told_gina_cassidy`) / Jack saw it
+  (`saw_skye_photo`) / put it away. "Does she know? About Danny?" "Not yet."
+- **s02b 9:00 p.m. kitchen:** Maria home from St. Elizabeth's; wedding soup ("It's not dinner. It's a snack."); Theo's hostess gift: balsamic vinegar in a velvet box (on
+  the good-dish shelf); Italian in ballpoint over *Glenwood* on his hand. **Rosie's prince drawing** (yellow hair, crown, red car — Rosie's own idea) under the St. Brigid's
+  magnet. [deposit] Theo told Frank in the garage he's owed a pie; Maria brings up a quart of **Nonna and Gina's August peaches**. "Danny's bed's made up."
+- **s03 Thu 1:40 a.m.: the back bedroom Jack and Danny shared** (new canon): two twins, nightstand, radiator, crucifix over the door; Danny's shelf — Mooney JV trophy, the
+  gold man's arm snapped off; a pink-faded Browns pennant; Danny at sixteen in a Mooney jersey. Light from the **alley pole** through the blind. Nonna's cedar-chest quilt on
+  Danny's bed. Thermostat drops at eleven ("sleeping weather"). Frank snores in two parts. Skye at her **mother's place in Studio City** (she names it) — a parrot that says
+  "momager."
+- **s04 Thu 9:15 a.m., St. Elizabeth 6 West: Nonna discharged** (dressed since six): cast knuckles to elbow (right hand), six stitches over one eyebrow, heart monitor clipped
+  to the housedress; San Giovanni rosary; Gloria's pecan a quarter gone (breakfast). Cards: Lena's → "della suora"; Becca's → "l'altra"; one in the missal, one in the
+  pocketbook. Theo: "*Voglio una donna!*" (Amarcord; Nonna smacks his hand); "Piacere, signora. Grazie dell'ospitalità" (he keeps saying *ospedalità / ospitalietà*);
+  "Troppo magro." Theo's bow. **Nonna to Jack, untranslated: "*Tuo fratello porta la tua croce.*"** then "Dove sono le mie pantofole?" (`e18_croce`). Gina and Rosie in
+  the lobby (flu rules).
+- **s05 12:40 p.m.:** Louis Prima; the Lions on in the front room. Theo is Nonna's right hand: meatballs to her finger-ring, the gravy clockwise, cardoons ("Thistles");
+  **Theo rolls the peach-pie crust (third try; "Lake Erie")**, Nonna crimps one-handed. Gina has seen *New Moon* **twice** by Thursday; **Team Edward** vs. Theo's **Jacob**.
+  Gina nearly says Cassidy ("You know who'd love this fight —"). The apron: ST. BRIGID'S FISH FRY 2006. **Theo's call with Laney ≈12:50: "He's *texting*… I don't know
+  who… I am not going through his phone."**
+- **s06 2:30 p.m. Thanksgiving table:** **Theo in Danny's chair** ("Siediti lì"). **Costigan rule (new canon): the guest/newest says grace.** Theo's grace: "Thank you for
+  asking me. Thank you for Mrs. Rinaldi, home. Thank you for the food. And for the ones who aren't at this table. Amen?" Maria cries (every year). Gina translates
+  Nonna: too skinny, is your mother dead → "alive, and has a life coach" ("like a football coach, but for feelings"); father in Cabo ("Mexico isn't a family"); baptized for
+  his grandmother, "I sit outside" ("*Fuori!*"); "does your mom pray for you?" — "I don't think anybody does" — **"Da stasera, io."** Four buzzes; **Maria confiscates the
+  phone into her apron** (per `e18_phone`: control / charm (kissed her hand) / wit (the Pope) / reckless — *lasag* sent 2:48).
+- **s06a 3:20 p.m.:** the peach pie on Maria's Easter cake stand. [deposit] **the receipt: + 1 PIE (PEACH) … PAID. (SELF-SERVICE.)** with Frank's pen. Maria never reads the phone.
+- **s07 5:05–5:20 p.m.:** **Becca's text first (5:05): told her mom at the table, taking it down now, praying for Nonna. Status down ≈5:10 (Gina checked).** Jack: "happy
+  thanksgiving becca. thank you for nonna" (5:16). **Maria: "Eleven."** (Becca 1, Kevin 1, Margot 1, Skye 8.) "Idaho?" "Yeah." "I wrote her." Gina on the back step:
+  "you looked like you were doing a shift." Cowboys on the garage radio.
+- **s08 8:15 p.m. Lena call** (Thu 7:15 CST): speaker with the Broussards; Josie (TEN AND OH); **Theo: "a tall glass of *pop*"**; Lena in her old room. Nonna asleep in her
+  chair (beads stopped in the third decade). Mémère lit two candles [sba]. "And your daddy?" "Sober. He drove us." **Julian called during grace from Oakland (juk for forty).
+  Wes at the Broussard table** (his mama's sweet potato pie; helping with the fryer; asked Mémère about her hip in bad French). Remy's named fire extinguisher. **Tess/Beau:
+  if the Saints are undefeated when the baby comes, Beau gets no vote on the name — on a napkin, initialed, dated, witnessed (Luc; Mémère in French), under a Popeyes magnet.**
+  The buzz per `e18_buzz` ("Gina" lie / "Nothing" / "A friend. California's three hours behind."). "Go back to your family, Youngstown."
+- **s09 8:55 p.m.:** Skye: "dont watch it. i mean it." **Fork:** [reckless] s09a basement — *Sweetwater* encore on the old Zenith (Gina: three seasons; a girl drowned in
+  season two = Gina's freshman year; Cassidy the nice one; Bryce reformed twice); per `e18_watch` (candor: *youre not her* → 9:24 *no. im not.* — Skye's one real drop
+  this episode / wit / restraint off at first commercial). Maria at the basement door: "Laundry." [restraint/go] s09b garage — Frank (thermos; **Frank does not drink
+  this weekend**), Theo on the bucket with a Stroh's; Local 1112 hall, the Tuesday recall list behind glass; '07 two-tier; **Theo: "I looked it up after the housing email,
+  sir. Before I met you."**; the Cobalt ("I know exactly how the Cobalt feels") — **Frank laughs out loud**. Gina's plot texts. "Sunday. Bengals. You'll see something."
+  [go] Jack answers Skye at midnight: "hes drinking a strohs like its a sacrament."
+- **Fri s11 7:40 a.m.:** Black Friday on the kitchen TV. **Danny called collect Thu night late; Maria took it in the pantry.** Maria counts quarters (Folgers can); Theo's
+  four rolls — she pockets two. Theo's navy cashmere vetoed ("Nothing blue. Nothing nice. Nothing they wear.") → **Frank's maroon ST. BRIGID'S festival sweatshirt (won at
+  the 50/50)**. Gina: "Nobody." Lena 7:38: Feast of the Miraculous Medal, the good chain. Skye text per `e18_gap` (candor = `skye_knows_danny`).
+- **s12–s12a Trumbull Correctional, Leavittsburg, ≈9:00–11:10 a.m.** **Frank stays in the truck** ("Tell him we'll be there Sunday week" — Maria's next visit Sun Dec 6;
+  no reason given). Lobby: piano-key-yellow cinderblock, VISITING HOURS mural (sun, rainbow, ducks, barn); the officer knows Maria; UV hand stamp; the sally port (Theo's hand
+  flat on the cinderblock). Visiting room: bolted tables, platform officer, vending machines, a toy corner. **Danny: 22, state blues, square from push-ups, an inside haircut,
+  Frank's face from the wedding pictures, the gentlest eyes in the room. "Professor." "So you're the rich one." "Pop likes you… Pop don't like *anybody*." "Ma says he washed
+  the truck."** Reggie from Portsmouth laughed at *Point Break* (Theo forgives him). Bean burrito, Funyuns, honey buns. "Ma put you in my bed?" "Don't touch the shelf."
+  [swan] **Danny confirms the swan (Mill Creek Park) — his lie; no narration.** Brideshead: "It ain't about a house… Depends who's counting." Crab girl done; veil girl
+  seeing a guitar player [hey] "Tell her hey anyway." **"A girl who had Flannery O'Connor backwards."** Danny clocks that Jack waited till Theo was at the machines. Twenty
+  push-ups ("Science"). **Danny to Theo: "You can quit buying. I already like you… Somebody oughta come see *you*, man."** → "What's Pop say about Dawson?" Theo's
+  honey bun uneaten. "Take care of him." "I'm trying." "Quit walking in here like it's confession, Professor. It's just me."
+- **s13 ≈11:20:** "He gets everybody. Danny." Skye's texts 11:02–11:15; first reply per `e18_first` (11:24). **[skye/neither] Lena's medal-feast text answered at Friday
+  supper (6:14 p.m.) → "The feast runs till midnight. You made it."**
+- **s13a ≈11:30, Lordstown:** Frank turns right instead of home; Pretenders "My City Was Gone"; the plant, the near-empty lots; Jack at nine on the yellow line, family day.
+  **Theo films the plant on the 5D ("Nothing yet.").** "Does he ever say he's sorry? For it." (`e18_truck`). Theo silent the rest of the way.
+- **s14 Fri:** turkey on Nonna's bread at six; **Tiger Woods crash on the supper news** (Frank: "Guy's got everything"); Nonna asleep in the chair by nine. 11:41–11:58 p.m.
+  Skye: **"round two" at her mother's, 22 people**; the forearm autograph; "tell me something true from ohio" → "im in my brothers room" → "a trophy. the little gold mans arm
+  snapped off." **Theo: "You're texting a lot, Costigan."** Skye: "tomorrow night. stay up."
+- **Sat s15 9:30:** Gina's *New Moon* plan — **her third time** (Boardman, 1:10). Fork `e18_sat`: s15a — **Theo's ironed-on TEAM JACOB shirt**; the motorcycle
+  sequence; **Gina nearly says "Cass—" to Theo ("Cast… of a different movie")**; Frank's hardware-store hinge. s15b — the cardoons for Christmas (lemon water, thorns,
+  Maria's Band-Aid); Maria: cookies to Theo at Christmas; she'll write Becca at Christmas; **"He asked for that visit himself… He never asks for anything."** "Your father's
+  better." Rosie draws Theo in the parka (orange, brown).
+- **Sun s16 1:50 a.m., basement:** Jack's status gone ("broken heart" in the Feed from Thursday evening; Joey's FINALLY BRO still on the Wall). **Confirms Skye's friend
+  request ≈1:52 — "1 mutual friend: Theo Vance."** Skye home from "a thing in the hills"; "tell me what you think about. be specific" → per `e18_text` (candor *your mouth* /
+  reckless the paragraph / restraint *physics*). **s16b–s16d: Skye's first phone call, 2:15–5:08 a.m. EST (2h53m), the Glenwood front porch** (glider; Nonna's afghan; Frank's
+  Browns hat; **overcast — no moon**). **Nonna asleep in her front-room chair behind the window the whole call** (she has slept there since Nov 8). Skye's *Thanksgiving at
+  My Mother's* (two nights: a turkey delivered by van with a handler; 22 people at the Friday leftovers — boy-band manager with a Romanian horror picture, "say it like
+  Cassidy," a Pilates woman, a dentist with a screenplay; the parrot says its word). Per `e18_bit` Jack does Frank / Nonna / Gina's scream. Advent explained ("To be awake
+  when it counts. I'm usually not." — she writes it down). Battery chirp 3:50; charger from by the bread box; the Christmas-light outlet by the storm door. "Does it matter?
+  The TV part." (`e18_tv`). The street at 4:35: one buzzing lamp two doors up; the neighbors' 8-ft inflatable turkey (unplugged at ten); the Madonna. **She falls asleep in
+  the middle of the Madonna.** Jack on the front-room couch at 5:10 under the afghan; he does not sleep.
+- **s17 ≈5:20–5:50 a.m.:** **Theo goes out the side door ≈5:20** (Jack hears the seventh stair, says nothing) and **returns ≈5:45 up Glenwood from the Market Street end with
+  red-and-white carnations in cellophane (the all-night gas station on Market) — lays them at the bathtub Madonna's feet and stands there.** Nonna, awake in her chair, and
+  Jack both watch; nobody speaks. Theo steps over the seventh stair going up.
+- **s18 7:15 a.m.:** Frank's cannoli from the bakery on Midlothian (he saw the carnations; says nothing). Theo in **Frank's brown tie with Danny's tie clip** (Maria's
+  doing). **Theo's iPhone: "Jack Costigan and Skye Callender are now friends." (5 hours ago) — Theo reads it, looks at Jack, turns the phone face down, passes the box.** Gina
+  saw the phone go over (not the screen). Maria at the stove. Per `e18_cannoli`.
+- **s19 8 a.m. Mass, St. Brigid of Kildare (First Sunday of Advent):** Fr. Dom Bruno (sixties, bad left knee); a school family lights the first violet candle; no Gloria.
+  Pew order: Nonna (center aisle), Theo, Rosie, Maria, Jack, Gina, Frank. **Nonna presses Theo down to kneel at the consecration.** [e15_gina sincerity] **Gina gives Ashley
+  Vrabel the peace; Frank and Mr. Vrabel nod.** [e15_conf go] the Becca penance done. Prayer per `e18_advent`. Lena 8:10 "First candle. Be vigilant." → "Then it counts.
+  Tell him I said so."
+- **s20 1:00 p.m., the garage: Bengals 16, Browns 7 (Browns 1–10).** Frank on the thermos; Stroh's for Theo and Jack only. Sinatra "That's Life" at the half. **Richard
+  called Theo Thursday from a boat in Cabo, four minutes.** **Frank: "Your old man's an idiot… You come back. Christmas. Whenever. You don't call first."** LANEY rings Theo's
+  iPhone; he lets it.
+- **s21 ≈4:05 p.m.:** Maria's Tupperware dowry; carnations fogged. Skye 4:06. **Nonna: "Chi ti scrive?… Non è la suora."** Per `e18_nonna` (candor: *un'attrice* →
+  `nonna_knows_skye`, then she asks again, new each time).
+- **s22 ≈4:50 p.m.:** Giant Eagle bag (TURKEY. LASAGNA. COOKIES — SHARE. COOKIES — DON'T.). **Rosie's two princes (the second in the parka) → in Theo's camera bag.**
+  Gina: "Bye, LA." / "Madam Interpreter." / to Jack: "Nobody. I know." **Nonna's folded twenty to Theo ("Per il viaggio"; *Natale*) and to Jack.** Frank drives them to PIT
+  sober. [curb sincerity] at departures Frank's hand on the back of Jack's neck: "Christmas."
+- **s23 7:50 p.m.:** regional jet out of PIT; Skye "come back…"; **Theo keeps Nonna's twenty buttoned in his shirt pocket**; "I heard *Natale*. It was that."
+
+**New flags:** `gina_held_danny`, `gina_printout`, `told_gina_cassidy`, `saw_skye_photo`, `nonna_home`, `theo_said_grace`, `nonna_prays_theo`, `peach_paid`, `becca_fb_down`,
+`becca_tg_text`, `maria_counted`, `watched_sweetwater` / `watched_sweetwater_part`, `skye_knows_danny` [gap candor], `theo_met_danny`, `danny_knows_skye_exists`,
+`danny_knows_skye_knows` [danny candor_since], `skye_fb_friends`, `knows_theo_fb_mutual`, `jack_single_fb`, `skye_called`, `theo_madonna_seen`, `theo_knows_skye_jack`,
+`jack_saw_theo_see`, `frank_you_come_back`, `nonna_knows_skye` [nonna candor]; `said_it_plain`/`said_it_plain_n` (s01a, s11, s16, s19 candor). Path flags: `e18_curb`,
+`e18_drive`, `e18_dell`, `e18_like`, `e18_croce`, `e18_phone` (now incl. `charm`), `e18_gina`, `e18_wes`, `e18_buzz`, `e18_night`, `e18_watch`, `e18_garage`, `e18_gap`,
+`e18_danny`, `e18_rescue`, `e18_first`, `e18_truck`, `e18_sat`, `e18_blurt`, `e18_ma_lena`, `e18_text`, `e18_bit`, `e18_tv`, `e18_cannoli`, `e18_advent`, `e18_nonna`.
+**Readers in E18:** `e18_curb` (s22 sincerity coda — the "Your father will remember that." whisper is paid there), `e18_first` (s14 late Lena reply), `e18_phone` (s07, s21),
+`e18_night` (s09b, s15a/b, s16, s20), `e18_gap` (s12, s13), `saw_skye_photo`/`watched_sweetwater` (s09a, s16, s16c). **Flavor-only (mood; no downstream reader planned):**
+`e18_croce`, `e18_gina`, `e18_garage`, `e18_blurt`, `e18_ma_lena`, `e18_sat`, `e18_like`. **For E19+ (supplements outline §9.3):** `e18_buzz` — [candor] Lena knows only
+"a friend in California" who texted at Thanksgiving (S2E01 Christmas call may remember it); [control] she was told "Gina" (a lie); `e18_first` — [lena] answered at noon /
+[else] at supper with "sorry. long day"; `e18_bit` — keyed now.
+**Resolve:** Jack 5 → +1 s02b, [+1 s11 gap candor], −1 s12, [−1 s08a "Gina"], [±1 s16 text], −1 s17 (no sleep), +1 s19 Mass, +1 s19 prayer → **4–8 (typical 6)**. Lena
+5 (s08, held). Skye heat +1 [text candor] / +2 [text reckless]; Skye trust up to +5 [gap candor +2, tv sincerity +2, drive/watch/bit/text]. Theo trust/warmth/friction per s03,
+s06 [charm], s09, s09b, s12a, s13a, s15, s18.
+**Owed payoffs:** Gina's printout in her binder (Christmas route to the page) · "Cassidy says be nice" [told] · Nonna's *attrice* [candor] · Theo holds *now friends* and
+Gina's "Cass—" [newmoon] · Rosie's two princes in Theo's camera bag · Nonna's twenty in Theo's shirt pocket · "You come back. Christmas." · Maria's cookies to Theo and her
+Christmas letter to Becca · Maria's next Trumbull visit **Sun Dec 6** ("Sunday week") · Theo's 5D footage of Lordstown ("Nothing yet.") · the carnations at the Madonna
+(🔒 never explained) · Danny: "She know about me?" per `e18_danny` · Skye knows Danny is in prison [gap candor] and never raised it on the call · what was typed at 2 a.m.
+(`e18_text`) never spoken on the call · E19's first meeting knows the porch call happened · Skye's "Write that down… I'll remember it wrong on purpose."
+**Continuity notes.** Sunset Youngstown ≈4:56 p.m.; Sun Nov 29 moonset ≈4:30 a.m. but overcast all night (s16b). Studio City is Eastern −3; New Orleans −1. Kickoff
+1:00 p.m. ET, the game ends ≈4:00 — s21 is ≈4:05, departure ≈4:50. Gina's New Moon count: twice by Thu, third time Sat. Frank does **not** drink Thursday or Sunday
+(thermos). Nonna sleeps in the front-room chair (since Nov 8); she never climbs the stairs this weekend. The seventh stair talks; there are fourteen. The side door has a
+spring and usually bangs. The Madonna's carnations: red and white, cellophane, from the all-night gas station on Market Street (a ten-minute walk).

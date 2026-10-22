@@ -240,6 +240,18 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    the kid at the counter, "Jack decides it's two in the morning"; a cousin of #13). Once an episode; let the player catch the tell. E17 keeps only s18's.
 114. **Narrating Skye's inner state as fact** — "she means every word," "a line she means to understand later," "he watches her decide [X]," "they both know it." Give
    Jack an observation (her face clears; she smiles against his mouth and he can tell). "Watches her decide" once an episode at most.
+115. **"The color of [X]" similes** (S1E18; ≈38 across E01–E18 — nickel, oatmeal, dishwater in one draft). Max two per episode; **"dishwater" is retired** (E10, E15,
+   E18). Name the thing instead ("The window over the sink is gray").
+116. **"Which in this [house / family / wind] means / is" local-custom glosses** (S1E18 ×3: "saved for report cards," "a decorative choice," "two hours and one hinge").
+   Max one per episode; it counts under #91. Keep the one with a joke in it.
+117. **"Nobody" relative clauses in the narration** (S1E18 ×8: "the one nobody asks Frank anymore," "a coffee nobody asked for," "the one place in the house nobody sleeps
+   next to"; a cousin of #106). Max three per episode, and keep them off the scenes where "nobody" is the thread (Gina's "Nobody." oath; Skye's "I liked being nobody to
+   you").
+Small repeats to watch (S1E18): Nonna's "good hand" (≈17 in one draft) — once a scene, otherwise "her hand" / "her left"; Theo's bow from the waist (keep one an episode, where
+it pays — E18 s04); "Theo in the middle" of the bench seat (the rule once, the payoff once); Theo noticing the phone and saying nothing (build it in three beats, not six);
+"goes by" for passing scenery; Frank "with his eyes on the road"; phones "face down" (two an episode); turning an object "over in his fingers" (once); the buzz felt "in his
+teeth / through the bone" (once); Lena's "Youngstown" (two a path, one a button); Skye's "ok/Okay" (three a path, held); "Counselor" is Lena's register — Theo titles people
+by their role in the scene ("Madam Interpreter"); the river towns "strung in orange" (once a trip); "Then, [delivery]:" lead-ins (one an episode, under #72).
 Small repeats to watch (S1E16): Skye's "Okay" as her default turn (three per episode, on acceptances); "looks at him like [comic simile]" for Skye (two per episode — her
 reactions are things she does); Skye trying a line in her mouth (establish once, pay once — E16 keeps s16 and "snares"); one character per bit (the game-show host was
 spent four times in one draft — rotate: librarian, tent preacher, ring announcer, weather girl, audio guide; never a judge, which is Lena's, or a pageant host, Laney's);

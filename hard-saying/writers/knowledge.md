@@ -1584,6 +1584,80 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Gloria** [s15] Nonna fell, going up, for her rosary; Jack was texting someone at the sink and left at 12:55 with the pie. Nothing about Skye.
 - **Bev** saw two kids; "looks like somebody" — nothing confirmed. **Julian** Jack explained the nickel [julian sincerity]; nothing else.
 - **Osei** [s14] Nonna's name, from Jack's card. **Hale** both papers; nobody stays for Thanksgiving.
-- **LIVE RISKS carried:** Theo must not learn Skye's name or see her (until Christmas); Skye must not hear Theo's name from Jack; Lena learns nothing of Skye (only
+- **LIVE RISKS carried:** ~~Theo must not learn Skye's name or see her (until Christmas)~~ **superseded in S1E18 s18** (Theo sees *Jack Costigan and Skye Callender are now friends* per bible §14 — see S1E18 LIVE RISKS); Skye must not hear Theo's name from Jack; Lena learns nothing of Skye (only
   "a party in Montecito" [control]); Gina keeps the secret (Kelsey!); "my roommate" stays unnamed; Becca and Gina still never tell Lena about the invitation (through
   S2E10); Theo → Laney → Lena stays unstated; two scar stories in circulation (Skye: husband; Kevin: per `e17_scar`).
+
+### S1E18 — "Visiting Hours"
+> Final revision, collapsed against `saves/after-s1e17.json` (see continuity.md S1E18). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01a] Danny put in for Theo's visit himself; Maria made calls (Frank). [s02] Gina researched Skye six hours (fan page 4,206); **Danny called Wed ≈8 p.m. and Gina held**;
+  [dell reckless] what Skye looks like on the dock printout. [s01a | drive candor] a stranger in Studio City thinks Frank washed the truck *for him*.
+- [s04] Nonna's discharge (cast, stitches, monitor); she kept both cards ("della suora" / "l'altra"); **"Tuo fratello porta la tua croce."** (🔒 the narration never says
+  what he understands). [s05] Theo told Laney he's texting (Jack heard Theo's half from the sink). [s06] the guest-says-grace rule; Theo's grace; Theo's mother has a life
+  coach; Theo's father is in Cabo; Theo thinks nobody prays for him; **Nonna will ("Da stasera, io")**. [s07] Maria counted eleven and never looked; **Becca told her mom at
+  the table and texted him first (5:05), then took the status down (Gina checked, 5:10)**; Gina: "doing a shift."
+- [s08] The Broussard Thanksgiving: Wes in the kitchen, Julian called during grace, Mémère's candles [sba], Tess/Beau's napkin. [s09a | night reckless] *Sweetwater* —
+  Cassidy, the dock, the Hail Mary, the forgiveness; [watch candor] her *no. im not.* [s09b | night restraint/go] the Local 1112 hall, the recall list, Frank laughing,
+  Gina's plot texts. [s11] Danny called collect Thursday night; Maria took it (route for Danny's "Ma says" lines).
+- [s12–s12a] Danny in person: Reggie; [swan] Danny "confirms" the swan to Theo (🔒 Danny's lie — no narration); Brideshead; Danny clocked that Jack waited till Theo was at the
+  machines; **Danny's line to Theo** (money and visits only). [s12/s13] Frank waits in the truck — Jack doesn't ask why. [s13] "He gets everybody." [s13a] the plant;
+  Theo filmed it and said "Nothing yet"; Theo's question. [s14] Theo: "You're texting a lot, Costigan."
+- [s16] Skye wants him (her texts per `e18_text`); **her Facebook profile: "1 mutual friend: Theo Vance" — he reads it as Theo knowing everybody (nothing more until S2E02)**.
+  [s16b–s16d] three hours of her voice: her mother's place in Studio City, the two-night Thanksgiving, the parrot; Advent; "Does it matter? The TV part." She fell asleep.
+- [s17] Theo went out the side door ≈5:20 and came back with carnations for the Madonna (seen; unexplained). [s18] **Theo has seen *Jack Costigan and Skye Callender are now
+  friends* — and Jack knows he saw.** [s19] [e15_gina sincerity] Gina and Ashley at the peace. [s20] Frank's "You come back." [s21] Nonna: "Non è la suora." [s22] Nonna's
+  twenty for Theo (*Natale*). [s23] Theo's account: "come back at Christmas" — Jack heard only *Natale*.
+- **He does NOT learn:** what Theo did, why Theo doesn't sleep, why the Point, why Sundays; **anything linking Skye and Theo beyond the Facebook line**; Skye's real name;
+  Meridian; what Laney said to Theo; that Lena noticed the buzz as more than a buzz.
+
+#### Skye
+- [s01–s03] He landed; "gina looks like trouble with a laptop"; [drive] Frank washed the truck [candor] / Steelers QB on the bench seat [wit] / the truck smells like Lava
+  soap [sincerity]; wedding soup; "my roommate is on his second bowl." [s05] Nonna's home, bossing everyone, one hand and a monitor [e17_nonna candor → "is her heart
+  behaving"]. [s06 | phone reckless] *lasag*. [s07] **his mother confiscated the phone at the table** (no name). **She learns nothing new about Becca** (never raises it).
+- [s09 | night restraint] he didn't watch; [go] he was in the garage with his dad and "my roommate" drinks a Stroh's like a sacrament (🔒 she knows who); [s09a | watch]
+  per choice. [s11 | gap candor] **his brother is in prison** (not what for; `skye_knows_danny`) / [control] "a family thing" / [wit] worse coffee than the Starlite.
+  [s13 | first skye] "back. hes good" / "not a cult." [s14] he's in his brother's room; a trophy with the arm snapped off. [s15a/b] "my roommate made a pie under
+  supervision" / twilight / cardoons ("its christmas").
+- [s16] what he thinks about per `e18_text`; he confirmed the friend request. [s16b–s16d | call] [bit] his Frank ("Close your mouth") / his Nonna ("Mangia", the slippers) /
+  Gina's scream; Advent and "To be awake when it counts"; his answer to *does it matter* per `e18_tv`; Glenwood at 4:35 a.m. (the lamp, the inflatable turkey, the Madonna).
+- **She does NOT learn:** Lena's name, Danny's name, Maria's, Frank's or Nonna's names (beyond "Carmela Rinaldi," E17 s18a), Theo's name from Jack, that Theo saw *now
+  friends*, that Gina almost told Theo, or anything about Trumbull beyond [gap candor]. She did not raise Danny on the call.
+
+#### Lena
+- [s02b] Nonna home tomorrow; Theo is eating soup. [s08] Nonna's home and asleep in her chair; Theo said *pop* and said grace (as much as Jack told: "He said it"); Frank's
+  sober [lena_knows_frank_night]; [danny_met_lena] Jack's seeing Danny tomorrow. [s08a | buzz] **[candor] Jack has "a friend" in California who texted during their call —
+  nothing more; she does not guess a girl** / [control] "Gina" (a lie) / [restraint] "Nothing." [s13 | first lena] at 11:24 / [s14 | first != lena] at 6:14 p.m.: Nonna
+  slept in her chair, has her saint ("sorry. long day"). [s19] Nonna made Theo kneel.
+- **She does NOT learn:** Skye's existence (beyond [buzz candor] "a friend in California"), the call, the visit beyond Jack's texts, or that Jack meant to ask her home (Maria
+  and Gina never speak to her this weekend). The status coming down is a Feed line she sees off-page (she already knew).
+
+#### Others
+- **Theo** [s01a] the visit (Frank); Frank's truck, the line, Jack texting the whole drive (Frank's glance; Theo silent). [s02b] Danny's bed. [s04] Nonna; the cards.
+  [s05] tells Laney Jack is "texting… I don't know who." [s06] the grace rule; Nonna's questions and "Da stasera, io" (via Gina); [s06a] the apron buzzing; Gina choking.
+  [s09b] Frank's Lordstown; [night go/restraint] Jack came out to the garage. [s12–s12a] Danny in person — Reggie, the shelf, [Brideshead], the swan "confirmed" (he
+  believes it), **Danny's line**; Frank doesn't go in. [s13a] Jack's answer per `e18_truck`. [s14] Jack texting under the blanket. [s15a | newmoon] **Gina almost said
+  "Cass—"** (🔒 he can place it; never used before Christmas). [s18] **"Jack Costigan and Skye Callender are now friends"** (🔒 he did not know she was north; nothing on the
+  page says what he concludes) — **he says nothing on every path**. [s20] Frank's "You come back." He did **not** hear the porch call (asleep; then out the side door ≈5:20).
+  He tells Laney nothing (LANEY rings Sunday; he lets it).
+- **Gina** [s02] Danny called (she held); Skye doesn't know about Danny ("Not yet"); [dell sincerity] "Cassidy says be nice." [s05/s06] Jack's apron buzzing at the table;
+  Maria never looked. [s07] Becca's status came down (she checked). [s09a | reckless] watched with Jack; his text per `e18_watch` [she read it over his arm on wit]. [s09b |
+  garage] her texts unanswered. [s15a | newmoon] she nearly blurted. [s18] **Theo turned his phone face down** (she didn't see the screen). **She tells no one.**
+- **Danny** [s02 call] nothing from Gina. [s11 call] whatever Maria told him (the truck washed; Theo in his bed). [s12] Theo in person; the crab girl's done; the veil girl's
+  seeing a guitar player; **"a girl who had Flannery O'Connor backwards"** (no name, no TV); [danny candor_since] she knows about him. 🔒 He sees Jack keep it from Theo.
+- **Maria** [s06–s07] eleven buzzes, no name, no screen; Becca texted ("Idaho?"). [s09a | reckless] Jack and Gina in the basement "doing laundry" with the set warm. [s15b |
+  cardoons] Lena is with Julian [candor] / "good" [restraint] / sent the saint [sincerity]. Theo's mother has a life coach. **Nothing about Skye.**
+- **Frank** [s01a] Theo remembers the truck's mileage; the Steelers; [s09b] Theo knew about '07 before he met him (housing email); [s13a] the 5D; Jack's answer to Theo
+  (🔒 he knows the truth under it). [s18] the carnations (says nothing). [s20] Richard's four minutes. Nothing about Skye.
+- **Nonna** [s06] Theo eats, sits outside at Mass, has a life-coach mother, thinks nobody prays for him. [s17] 🔒 Theo at the Madonna; Jack on her couch in his coat at
+  5:40 (asks nothing). [s21] "it isn't the nun"; [nonna candor] *un'attrice* (dementia cover — must not reach Maria as fact before Christmas).
+- **Rosie** Theo kept both drawings. **Becca** Jack's one-line reply ("thank you for nonna"); nothing about Skye, ever. **Laney** (from Theo, Thursday) Jack is texting
+  someone; Sunday she rings and he lets it.
+- **LIVE RISKS carried out of E18** (replace E17's "Theo must not learn Skye's name or see her"): **Theo holds *now friends* (and [newmoon] Gina's "Cass—") even from Laney,
+  to Christmas**; Jack keeps Skye's secret from Theo (to Christmas); **Jack knows only a Facebook mutual-friend line about Theo and Skye — any line implying he knows more
+  before S2E02 is a break**; **Gina tells nobody** (to Christmas — then room's call); Gina's color printout exists (her binder) — nobody finds it before Christmas; Nonna's
+  *attrice* [candor] must not reach Maria as fact; Skye never hears Theo's, Danny's, Lena's or the family's names from Jack; [gap candor] Skye knows Danny is in prison and
+  must never hear it from Theo (they don't speak till Christmas); Lena learns nothing of Skye beyond [buzz candor] "a friend in California"; Becca and Gina never tell Lena
+  about the invitation (through S2E10); Becca never tells Lena she knows it was her; nobody at Marisol knows about Skye but Jack (Theo has a fact, not a story); Meridian
+  never on anything Jack sees about her; two scar stories in circulation (Skye: husband; Kevin: per `e17_scar`); Theo now "believes" the swan (Danny's lie).
