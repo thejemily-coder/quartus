@@ -23,6 +23,14 @@ Game artifact: https://claude.ai/artifact/3MQUVCyw8UxRfXjX7fr9bH
 5. **Publish** `game/play.html` to the same artifact URL (omit `capabilities` on redeploy to keep the db rules), then
    commit and push.
 
+## Pre-production (optional, while the player is still playing)
+- `writers/preprod.workflow.js` with args `{prevPlayed, lastSave, eps:[{ep,id,season,episode},...], notes}`: plans and
+  researches each listed episode (sequentially) and blueprints + drafts the first one save-agnostically. No assembly or
+  review.
+- When the player finishes the episode before, read the save, run the notes session, then
+  `writers/finalize.workflow.js` with `{ep,id,season,episode,prev,save,notes}`: save-delta patch, assembly, the review
+  board, revision. Then build, test, publish, commit.
+
 ## Files
 - `game/engine.html`: the player (template); `game/play.html`: built page with every episode baked in.
 - `tools/validate.py`, `tools/assemble.py`, `tools/build.py`.
