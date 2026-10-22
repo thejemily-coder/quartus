@@ -895,3 +895,19 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **E15 notes (player).** After Lena's too-casual Julian news, **Jack is fine, too fine**: relentlessly normal and
   funny; Theo and Laney see straight through it; Margot calls it out with a sociological term. **Plenty of Becca** before
   the E16 breakup: she's at her sweetest right before the end (Thanksgiving plans, a gift, a sincere hope).
+- **RE-SPLIT of E15–E17 (player; supersedes earlier episode assignments).**
+  - **E15 (covers a larger time span):** all of the Lena-is-dating-Julian moment (her too-casual news; Jack "fine, too
+    fine"; plenty of Becca at her sweetest), **Jack realizing he can't keep doing this with Becca** (the not-taking-her-
+    home realization), and **Jack's breakup with Becca** (room decides where and how; Lena's quiet devastation, which
+    Laney sees). This is the timing-tragedy false dawn for Theo and Laney.
+  - **E16:** **the days of misery over Lena** that Jack tries to hide behind the Becca breakup (Theo and Laney know
+    instantly; Lena doesn't believe them); **Theo drags him to the party**, which sets off **the Skye meeting set piece**
+    (event, long conversation over the O'Connor book, ending up elsewhere, kissing a while, she gives her number and
+    leaves; Jack crosses the room himself); and **the morning and day after**, with **a confused Theo**, whom **Jack
+    invites to Thanksgiving**.
+  - **E17: the last several days on campus before Thanksgiving.** Jack **texts the number after thinking hard about
+    what to say**. **No reply for several hours** (she's busy with work and more). **She responds later that night with
+    something witty.** Then they **meet up once before he leaves**: a **much longer conversation over coffee that goes
+    on for hours**, ending in **another extended, slow, very physical kiss** before she leaves. **Jack spends a long
+    time afterward thinking about her lips.** (Skye episodes may run to ~22k words.) The Facebook add that reveals who
+    she is comes during Thanksgiving break (E18).
