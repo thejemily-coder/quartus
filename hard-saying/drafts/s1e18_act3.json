@@ -1,0 +1,980 @@
+{
+ "scenes": {
+  "s08": {
+   "slug": "THURSDAY · 8:15 PM · GLENWOOD AVENUE, THE FRONT ROOM",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "The front room has gone blue: the TV off, the streetlight on, and the house at the stage of Thanksgiving where everybody is lying on something. Nonna is asleep in her chair by the window with the cast on a sofa pillow and the San Giovanni beads stopped in her good hand somewhere in the third decade. Rosie was carried up at seven. Theo is on the rug with his back against the couch and his hands folded over the parka, over the pie.",
+    "Jack dials at a quarter past eight. On Dupre Street it’s a quarter past seven, and she asked.",
+    "The other end doesn’t say hello. The phone opens straight onto a room: a television with a crowd in it, men arguing on a back porch over the hiss of a fryer, a woman telling everybody to lower their voices to no effect at all, and over every bit of it a girl screaming that the Saints are ten and oh, TEN AND OH, and the Patriots are going to cry on Monday night, on NATIONAL TELEVISION. Under that, an old woman says something long in French to the room at large.",
+    "“You’re on speaker,” Lena says, close to the phone and a little hoarse from shouting over her own family, “with the Broussards and Mémère and a turkey my daddy dropped in four gallons of peanut oil with his eyes shut. Say hi.”",
+    "“Hi,” Jack says, and is roared at from New Orleans.",
+    "“Put Theo on. I was promised.”",
+    "Theo gets up off the rug like he’s been called to the podium. He takes the RAZR in both hands, holds it out at arm’s length, for the cameras, and clears his throat.",
+    "“Good evening, New Orleans,” he says. “I’m calling from Youngstown, Ohio, where I have just finished my second piece of peach pie and a tall glass of *pop*.”",
+    "The roar comes out of the little speaker so loud it buzzes. Somebody bangs a table. The screaming girl screams “AGAIN,” and Lena, off the phone, says “Josie, he *heard* you,” and Theo does it again, slower, with feeling, a man giving the people what they came for — “a *tall* glass, of *pop*” — and Mémère wants to know in French what on earth, and somebody tells her in French, and she laughs like a gate.",
+    "Theo hands the phone back, bows from the waist to the chair where Nonna is sleeping, and goes out through the dining room to the kitchen. The back door bangs. A minute later, across the yard, the garage radio comes up a notch: Frank has the night game.",
+    "On Dupre Street a door shuts too, and the Broussards drop to a wall’s worth of noise.",
+    "“I’m in my old room,” Lena says. “Sitting on the floor with my back against the door so nobody can come in and ask me where the foil is. Hi, Youngstown.”",
+    "“Hi.”",
+    "“How’s Theo doing in captivity?”",
+    "He tells her about the table. The chair — Danny’s; his father at the end saying the guest says it; Theo with his head down and Rosie with her hands folded under her chin. He gets as far as the food — not dinner, Theo had been told, a snack — and then he’d rather not do the rest of it in his own voice, on the phone, with his grandmother asleep across the room. “He said it,” Jack says.",
+    "“Lord,” Lena says, softly, and leaves it there. “And Nonna? Is she home? Did my saint work?”",
+    "“She’s home. She’s asleep in her chair about eight feet from me, with a cast up to here. She kept your saint. She put one in her missal and one in her pocketbook, and I didn’t see which went where.”",
+    "“Missal,” Lena says at once. “Obviously the missal. I can feel it from here.”",
+    {
+     "if": "e17_sba==\"sincerity\"",
+     "text": "“Mémère lit two,” she says. “The one at St. Bernard’s Tuesday, and another one this morning before the turkey. She says it was nothing. Carmela Rinaldi.” She says the whole name, first and last, the way it’s written on the back of the card."
+    },
+    {
+     "if": "lena_knows_frank_night",
+     "text": "“And your daddy?”\n\n“Sober. He drove us.”\n\n“Good.”"
+    },
+    "“Julian called during grace,” she goes on, “from Oakland. Daddy was halfway through the grace and the phone went off in my pocket right on top of the Amen. His mother made juk for forty people. He says it’s a tradition. He sounded about nine years old.” She says it fondly, and quick, and is already on to the next thing.",
+    {
+     "if": "danny_met_lena",
+     "text": "“Tell Danny hey.”\n\n“I’m seeing him tomorrow.”\n\n“Good,” she says, and nothing else about it."
+    },
+    "Through her door, somewhere back in the kitchen on Dupre Street, a man laughs at something Luc must have said — a big, easy laugh, in no hurry to be done, that Jack last heard in the dark of 412 off an air mattress on the floor."
+   ],
+   "choices": [
+    {
+     "text": "“Is that him?”",
+     "tag": "Candor",
+     "set": {
+      "e18_wes": "candor",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“Is that him?”",
+      "“In the kitchen with Luc.” She doesn’t pretend she didn’t hear it too. “He brought his mama’s sweet potato pie, and he’s been helping Daddy with the fryer, and he asked Mémère how her hip was, in French, *badly*.” She breathes out through her nose. “Everybody’s being so nice I could scream.”"
+     ],
+     "goto": "s08a"
+    },
+    {
+     "text": "Don’t ask.",
+     "tag": "Restraint",
+     "set": {
+      "e18_wes": "restraint",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "He lets the laugh go by and starts to tell her about the cardoons.",
+      "She tells him anyway, over the top of the cardoons. “Wes is here,” she says. “It’s fine. It’s Thanksgiving.” And then, in her own voice again: “What’s a cardoon?”"
+     ],
+     "goto": "s08a"
+    },
+    {
+     "text": "“Somebody’s having fun.”",
+     "tag": "Wit",
+     "set": {
+      "e18_wes": "wit",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Somebody’s having fun.”",
+      "“That’s Wes.” Flat and fast, no trim on it. “Luc brought him. He brought his mama’s sweet potato pie. Don’t you dare be funny about the pie. It’s a very good pie.”"
+     ],
+     "goto": "s08a"
+    }
+   ]
+  },
+  "s08a": {
+   "slug": "THURSDAY · 8:21 PM · GLENWOOD AVENUE, THE FRONT ROOM",
+   "body": [
+    "She’s telling him about the fryer — her father in safety goggles from the hardware store, Remy standing by with a fire extinguisher he bought for the occasion and has named — when the RAZR goes off against his ear.",
+    "It isn’t a ring. It’s the dry hard buzz of a text, straight through the bone behind his ear, the phone shivering with it, and it goes down the line to New Orleans as clear as anything Theo said. He can’t see the screen without taking the phone away from her. In California it’s twenty past five.",
+    "“Is that you buzzing?”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t. On a motel porch above Lucia at three in the morning she told me I can’t say her name like that. She asked what I decided. Not to be the one who wrecks anything, I said. She said okay. Then: me neither. Bought her Mémère a fruitcake from the monks, in exact change. ‘A girl writes the thing she wants first, Youngstown.’ Halloween: Flannery O’Connor, with a stuffed peacock tagged 57. Andalusia. She wouldn’t go past the last house on Seacliff, not even for Laney. ‘I came as her. I never said she was right.’ In the last minute of the extra hour, she put my hat back on. All Souls: she wrote her grandmother’s name in the book, and Nora Calloway’s. Nora was her host at Preview Weekend, in April. That night Wes ended it, on the phone, on the east stairs. He stopped going to Mass in September. There’s a ring. She knew something in September and decided not to notice — she says she’s good at it. At six in the morning she asked me what I’m going to do. She wrote Hale twelve pages in the spring of ’08, two years after the year she yelled at God. She’s had the same postcard the whole time. She knew mine on the porch. She had a house picked out on Zimple Street. A fig tree. She’d picked the paint. Veterans Day, on the bench above Campus Point: St. Martin gave the beggar half his cloak; she says everybody forgets the beggar took it. No. 9 for the reliquary. Friday the 13th, under the eucalyptus, in the middle of a sentence about monarchs: Julian asked her to dinner. So. Thursday night in the basement she played the piano properly — around the dead F. The last time she played it right in front of anybody was a November, four years ago. If you play well, she says, people ask you to play. Reading *New Moon* out of spite. Friday she signed the Manhattan Declaration from bed, with a cold. Two soups. She ate Julian’s. Mine’s on the sill for tomorrow. Ate Gloria’s soup cold out of the quart, at the sill, at six in the morning. Argued YES: a promise is made to a person, not to a reason. Wrote on my paper that I don’t believe one sentence of it. Neither does she. Mémère is lighting a candle for Nonna — the whole name. Half a name is half a candle. At the airport: Our Lady of Prompt Succor, for Nonna. She works fast. Thanksgiving: Theo said *pop* to the whole Broussard table. She asked about Theo, and Nonna, and her saint. Julian called during grace. Wes was in the kitchen. ‘Go back to your family, Youngstown.’"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Gina.”",
+     "tag": "Control",
+     "set": {
+      "e18_buzz": "control",
+      "soul.honesty": "-1"
+     },
+     "response": [
+      "“Gina,” Jack says. “From the basement.”",
+      "“Tell her Team Edward is a moral failing,” Lena says.",
+      "And she’s on to Tess, at a clip: Tess has announced that if it’s a boy and the Saints are still undefeated when he comes, Beau doesn’t get a vote on the name, and Beau has agreed to this in writing, on a napkin, in front of witnesses, and the napkin is on the refrigerator under the Popeyes magnet. She tells it fast and well and all the way to the end.",
+      "Then there’s a scuffle on her end — the door, a shriek, a thump against something hollow — and Josie has the phone. “WHO DAT,” Josie screams into Ohio. “SAY IT.”",
+      "In his grandmother’s front room, low, Jack says it. “Who dat.”",
+      "Nonna sleeps through it. On Dupre Street there’s a brief war, and Lena gets the phone back, out of breath and laughing. “Go back to your family, Youngstown.”",
+      "Click.",
+      "He stands in the blue room with the phone warm in his hand and the streetlight lying across the rug. He would have taken an hour of it. He’d have taken the fryer and the napkin on the refrigerator and Josie and every one of the Broussards on speaker, for an hour of it."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "“Nothing.”",
+     "tag": "Restraint",
+     "set": {
+      "e18_buzz": "restraint",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "“Nothing.”",
+      "“Mm,” Lena says.",
+      "And she’s on to Tess, at a clip: Tess has announced that if it’s a boy and the Saints are still undefeated when he comes, Beau doesn’t get a vote on the name, and Beau has agreed to this in writing, on a napkin, in front of witnesses, and the napkin is on the refrigerator under the Popeyes magnet. She tells it fast and well and all the way to the end.",
+      "Then there’s a scuffle on her end — the door, a shriek, a thump against something hollow — and Josie has the phone. “WHO DAT,” Josie screams into Ohio. “SAY IT.”",
+      "In his grandmother’s front room, low, Jack says it. “Who dat.”",
+      "Nonna sleeps through it. On Dupre Street there’s a brief war, and Lena gets the phone back, out of breath and laughing. “Go back to your family, Youngstown.”",
+      "Click.",
+      "He stands in the blue room with the phone warm in his hand and the streetlight lying across the rug. He would have taken an hour of it. He’d have taken the fryer and the napkin on the refrigerator and Josie and every one of the Broussards on speaker, for an hour of it."
+     ],
+     "goto": "s09"
+    },
+    {
+     "text": "“A friend. California’s three hours behind.”",
+     "tag": "Candor",
+     "set": {
+      "e18_buzz": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“A friend,” Jack says. “California’s three hours behind.”",
+      "“So it’s still Thanksgiving there,” Lena says. “How nice for California.”",
+      "And she’s on to Tess, at a clip: Tess has announced that if it’s a boy and the Saints are still undefeated when he comes, Beau doesn’t get a vote on the name, and Beau has agreed to this in writing, on a napkin, in front of witnesses, and the napkin is on the refrigerator under the Popeyes magnet. She tells it fast and well and all the way to the end.",
+      "Then there’s a scuffle on her end — the door, a shriek, a thump against something hollow — and Josie has the phone. “WHO DAT,” Josie screams into Ohio. “SAY IT.”",
+      "In his grandmother’s front room, low, Jack says it. “Who dat.”",
+      "Nonna sleeps through it. On Dupre Street there’s a brief war, and Lena gets the phone back, out of breath and laughing. “Go back to your family, Youngstown.”",
+      "Click.",
+      "He stands in the blue room with the phone warm in his hand and the streetlight lying across the rug. He would have taken an hour of it. He’d have taken the fryer and the napkin on the refrigerator and Josie and every one of the Broussards on speaker, for an hour of it."
+     ],
+     "goto": "s09"
+    }
+   ]
+  },
+  "s09": {
+   "slug": "THURSDAY · 8:55 PM · GLENWOOD AVENUE, THE HALL",
+   "body": [
+    "He’s halfway down the hall with the phone still open when it goes again.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "its on in five minutes where you are. dont watch it. i mean it",
+     "time": "8:55 PM"
+    },
+    "At the end of the hall the basement door stands open, and Gina is sitting on the top step with a family-size bag of Pirate’s Booty in her lap, looking up at him with the face Ursuline reserves for holy days of obligation. Thursdays at nine have been sacred at Ursuline since 2007. As of Wednesday they are also a family matter.",
+    "At his other shoulder the kitchen window looks out across the dark yard to the garage, where the light is on. Over the cold come the radio and his father’s voice and, a second after, Theo laughing."
+   ],
+   "choices": [
+    {
+     "text": "The basement. Gina’s already got it on.",
+     "tag": "Reckless",
+     "set": {
+      "e18_night": "reckless",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "Gina is down the stairs ahead of him with the Pirate’s Booty, and he follows her and pulls the door shut at the top behind them."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "text": "Text her you won’t. Then the garage.",
+     "tag": "Restraint",
+     "set": {
+      "e18_night": "restraint",
+      "soul.restraint": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "i wont",
+       "time": "8:57 PM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "you wont?",
+       "time": "8:57 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "you said",
+       "time": "8:58 PM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "ok",
+       "time": "8:58 PM"
+      },
+      "Gina watches him put on his coat. “*Seriously*,” she says, to his back, and goes down the stairs alone with the Pirate’s Booty."
+     ],
+     "goto": "s09b"
+    },
+    {
+     "text": "The garage. Your father. Your roommate. The night game.",
+     "tag": "Go",
+     "set": {
+      "e18_night": "go"
+     },
+     "response": [
+      "He shuts the phone on her text without answering it, and it rides across the yard in his coat pocket like that, unanswered. Behind him Gina says “*Seriously*,” and goes down the stairs alone with the Pirate’s Booty."
+     ],
+     "goto": "s09b"
+    }
+   ]
+  },
+  "s09a": {
+   "slug": "THURSDAY · 9:00 PM · GLENWOOD AVENUE, THE BASEMENT",
+   "body": [
+    "The only light in the basement is the television’s, going blue and then gold and then blue on the paneling. The old Zenith lives on a wheeled cart down here since it was demoted from the front room, with the rabbit ears on top and the cable coming in over them anyway, belt and suspenders, and Gina has the sound down to a level she considers responsible. On the card table under Frank’s Browns calendar the family Dell sits dark.",
+    "She sits cross-legged at one end of the couch with the Pirate’s Booty and gives him three seasons in a whisper while the bumper — SWEETWATER · AN ENCORE PRESENTATION — dissolves into a lake. There’s a boarding school on the lake. There’s a dock, and girls in navy blazers on it, and a chapel up the hill with a bell. Somebody’s father is under indictment. Somebody’s twin is not her twin. A girl drowned in season one and it wasn’t an accident, and that was Gina’s entire freshman year.",
+    "“Cassidy’s the nice one,” Gina whispers, so he’ll be ready. “She brings everybody soup. Everybody *saves* her. Bryce reformed for her. Twice.”",
+    "And there she is, coming down the dock with her hands in her blazer pockets and her hair a shade too blonde, the freckles painted out, her shoulders up a little around her ears like a girl who is used to being looked after and a little sorry about it. She smiles at the boards before she smiles at anybody. The girl he knows is nowhere in her.",
+    {
+     "if": "saw_skye_photo",
+     "text": "He knew the face from the dock. It still takes him a minute."
+    },
+    "The girl next to her starts talking — trouble about a letter, a mother, a car — and Cassidy turns to listen. Chin down. Hands still in the pockets. Her eyes on the other girl’s mouth, waiting on the next word like it might be the one she came all this way for. He knows the listening before he knows the face. He has had it aimed at him across a red booth at three in the morning.",
+    "Gina, at the first close-up, sharp, into his shoulder: “*Jack.*”",
+    "Up the hill in the chapel Cassidy kneels in a pew and starts a Hail Mary in a voice he’s never heard come out of her, high and careful. Down on the dock, a boy in a lacrosse jacket who stood her up for somebody else at a dance comes to apologize, and before he’s through the first sentence she forgives him, completely, for nothing, with her hand on his sleeve.",
+    "“Is she like *that*?” Gina says.",
+    "The lake goes to black, and a phone that apparently does everything comes on, black and serious, to tell them so."
+   ],
+   "choices": [
+    {
+     "text": "Text her: *youre not her.*",
+     "tag": "Candor",
+     "set": {
+      "e18_watch": "candor",
+      "watched_sweetwater": true,
+      "rel.skye.trust": "+1",
+      "rel.skye.warmth": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "You watched her show in the basement with Gina and texted Skye: youre not her.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "youre not her",
+       "time": "9:12 PM"
+      },
+      "The commercials end. The lake comes back. Bryce is in trouble again, and Gina explains why, and Cassidy finds out about something in a hallway with a candle, and the RAZR lies shut on the arm of the couch with its little outer screen dark. Nine-fifteen. Nine-twenty. All weekend she has answered before he finished a word.",
+      "At 9:24 the screen lights.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "no. im not.",
+       "time": "9:24 PM"
+      },
+      "He shuts the phone and holds it shut.",
+      "Overhead, the kitchen floor creaks in the order that means his mother — sink, stove, the basement door — and Gina has the set off and the remote under a cushion before the knob turns. A wedge of kitchen light comes down the stairs.",
+      "“What are you two doing down there?”",
+      "“Laundry,” says Gina.",
+      "Jack has not touched a washing machine in this house since the Clinton administration. His mother looks down the stairs at the two of them on the couch, in the dark, beside a dryer that isn’t running, for long enough that he can smell the dust cooking off the back of the set. “Uh-huh,” she says, and goes back to the sink, and leaves the door open.",
+      "Gina gathers up the Pirate’s Booty with enormous dignity and goes up past him into the light. He follows her up, a step behind, and on the top stair she reaches back without turning around and holds out her hand flat for the phone, the way their mother does, and he puts his own empty hand in it instead and she drops it, disgusted."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "Text her: *cassidy is very nice.*",
+     "tag": "Wit",
+     "set": {
+      "e18_watch": "wit",
+      "watched_sweetwater": true,
+      "rel.skye.warmth": "+1",
+      "rel.skye.heat": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "You watched her show in the basement with Gina and texted Skye that Cassidy is very nice.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "cassidy is very nice",
+       "time": "9:12 PM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "I KNOW",
+       "time": "9:12 PM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "shes UNBEARABLE",
+       "time": "9:12 PM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "dont you like her. i forbid it",
+       "time": "9:13 PM"
+      },
+      "Gina, reading upside down over his arm, puts her whole face in the bag of Pirate’s Booty and keeps it there until the commercials are over.",
+      "Overhead, the kitchen floor creaks in the order that means his mother — sink, stove, the basement door — and Gina has the set off and the remote under a cushion before the knob turns. A wedge of kitchen light comes down the stairs.",
+      "“What are you two doing down there?”",
+      "“Laundry,” says Gina.",
+      "Jack has not touched a washing machine in this house since the Clinton administration. His mother looks down the stairs at the two of them on the couch, in the dark, beside a dryer that isn’t running, for long enough that he can smell the dust cooking off the back of the set. “Uh-huh,” she says, and goes back to the sink, and leaves the door open.",
+      "Gina gathers up the Pirate’s Booty with enormous dignity and goes up past him into the light. He follows her up, a step behind, and on the top stair she reaches back without turning around and holds out her hand flat for the phone, the way their mother does, and he puts his own empty hand in it instead and she drops it, disgusted."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "Turn it off at the first commercial. Tell her nothing.",
+     "tag": "Restraint",
+     "set": {
+      "e18_watch": "restraint",
+      "watched_sweetwater_part": true,
+      "soul.restraint": "+1"
+     },
+     "key": "You turned her show off at the first commercial and never told her you’d watched.",
+     "response": [
+      "He takes the remote off the arm of the couch. The picture pulls in to a white dot in the middle of the glass and then lets go of that too.",
+      "“*Traitor*,” Gina whispers, with real feeling.",
+      "Overhead, the kitchen floor creaks in the order that means his mother — sink, stove, the basement door — and the set is already off, for all the good it does. A wedge of kitchen light comes down the stairs.",
+      "“What are you two doing down there?”",
+      "“Laundry,” says Gina.",
+      "Jack has not touched a washing machine in this house since the Clinton administration. His mother looks down the stairs at the two of them on the couch, in the dark, beside a dryer that isn’t running, for long enough that he can smell the dust cooking off the back of the set. “Uh-huh,” she says, and goes back to the sink, and leaves the door open.",
+      "Gina gathers up the Pirate’s Booty with enormous dignity and goes up past him into the light. He follows her up, a step behind, and on the top stair she reaches back without turning around and holds out her hand flat for the phone, the way their mother does, and he puts his own empty hand in it instead and she drops it, disgusted."
+     ],
+     "goto": "s11"
+    }
+   ]
+  },
+  "s09b": {
+   "slug": "THURSDAY · 9:00 PM · GLENWOOD AVENUE, THE GARAGE",
+   "body": [
+    "The radio gets to him before the light does: Broncos and Giants, the Giants punting into a Denver night, a man in a booth in Denver reading the down and distance to a garage in Ohio.",
+    "Inside, the garage is warmer than the yard by one space heater. Its coils glow orange on the concrete and creak as they come up to heat. There’s the beer fridge with a Stroh’s magnet holding the Browns schedule to its door, and the workbench with the radio on it among the coffee cans of screws, and the Christmas lights in their milk crate, waiting for the weekend. There are two lawn chairs and an overturned bucket. Frank is in his chair. Theo is on the bucket in the Browns parka, with his knees up and a can of Stroh’s held low in both hands, carefully, like it was handed to him at an altar rail.",
+    "And Frank is talking. He is talking more than Jack has heard him talk since June. The line, the body shop, the paint shop. The Cobalt, which was a good little car that nobody wanted. The Local 1112 hall out by the plant, where the coffee is free and the recall list goes up on a corkboard behind glass, and where men who stood next to each other for twenty years go in on Tuesdays to stand in front of it and not say anything to each other.",
+    "Theo asks the next question every time, and it’s the right one. He knows what a two-tier wage is. He knows about ’07. “That was the contract where the new hires came in at half?”",
+    "Frank looks at him over the can. “Who told you that?”",
+    "“I looked it up on move-in day, sir. After you told me where you worked. I wanted to know what to ask.”",
+    "Jack stands in the side door with the cold at his back and doesn’t go in. They haven’t noticed him.",
+    "“Cobalt,” Frank says, shaking his head. “Good little car. Nobody wanted it.”",
+    "“I’ve been to a great many parties in Los Angeles, Mr. Costigan,” Theo says. “I know exactly how the Cobalt feels.”",
+    "And Frank laughs. Out of his chest, his head back against the cinderblock, at Theo — and Jack stands in the door of his father’s garage and watches his father laugh.",
+    "He comes in, then, and leans on the workbench by the radio, and nobody makes a thing of it. Before the half the RAZR goes off in his pocket three times. Gina, from the basement, live.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "shes forgiving a boy for NOTHING",
+     "time": "9:18 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "is she like this. answer me",
+     "time": "9:26 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "she cried on a DOCK",
+     "time": "9:41 PM"
+    },
+    "The third time, the little outer screen lights his coat pocket blue, and Theo looks at it, once, and back at the radio, and doesn’t say a word."
+   ],
+   "choices": [
+    {
+     "text": "Ask your father about the recall list.",
+     "tag": "Candor",
+     "set": {
+      "e18_garage": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“Pop. The recall list. Anything?”",
+      "Frank answers him and not Theo. “Small car. Next year, maybe.” He sets the can on his knee. “We’ll see.” He looks right at Jack while he says it, and Jack holds still for it.",
+      "At the half, Frank reaches over and turns the radio down a notch and looks at Theo on his bucket. “Sunday,” he says. “Bengals. You’ll see something.”",
+      "“I’d be honored, sir.”",
+      "“You won’t be.”",
+      {
+       "if": "e18_night==\"go\"",
+       "text": "At midnight, with the garage dark and the house asleep, Jack sits on the back steps in his coat with the cold coming up through the concrete and answers her at last.",
+       "else": "Her *ok* from before nine is in his coat pocket, read. He leaves it there and watches his father explain the second half to the radio."
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "was in the garage w my dad",
+       "time": "12:04 AM",
+       "if": "e18_night==\"go\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "is your roommate behaving",
+       "time": "12:05 AM",
+       "if": "e18_night==\"go\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "hes drinking a strohs like its a sacrament",
+       "time": "12:07 AM",
+       "if": "e18_night==\"go\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "of course he is",
+       "time": "12:07 AM",
+       "if": "e18_night==\"go\""
+      }
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "Pull the other chair out of the corner. Listen.",
+     "tag": "Sincerity",
+     "set": {
+      "e18_garage": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "There’s a third lawn chair folded behind the snowblower. He shakes the cobwebs off it and opens it by the heater, and there’s room for it without anybody moving.",
+      "He sits with his hands in his coat and listens to his father explain the line to a boy from Los Angeles: where the bodies come in, where the doors go on, how many seconds a man gets, and what the seconds feel like by the end of a shift.",
+      "At the half, Frank reaches over and turns the radio down a notch and looks at Theo on his bucket. “Sunday,” he says. “Bengals. You’ll see something.”",
+      "“I’d be honored, sir.”",
+      "“You won’t be.”",
+      {
+       "if": "e18_night==\"go\"",
+       "text": "At midnight, with the garage dark and the house asleep, Jack sits on the back steps in his coat with the cold coming up through the concrete and answers her at last.",
+       "else": "Her *ok* from before nine is in his coat pocket, read. He leaves it there and watches his father explain the second half to the radio."
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "was in the garage w my dad",
+       "time": "12:04 AM",
+       "if": "e18_night==\"go\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "is your roommate behaving",
+       "time": "12:05 AM",
+       "if": "e18_night==\"go\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "hes drinking a strohs like its a sacrament",
+       "time": "12:07 AM",
+       "if": "e18_night==\"go\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "of course he is",
+       "time": "12:07 AM",
+       "if": "e18_night==\"go\""
+      }
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "Hand Theo a second Stroh’s.",
+     "tag": "Wit",
+     "set": {
+      "e18_garage": "wit",
+      "trait.wit": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "response": [
+      "Jack opens the fridge, takes out a Stroh’s, and holds it out to Theo.",
+      "“He’s got one,” Frank says.",
+      "“I have two hands, Mr. Costigan,” Theo says, and takes it.",
+      "Frank laughs again. Twice in one night. Jack gets one for himself and doesn’t comment.",
+      "At the half, Frank reaches over and turns the radio down a notch and looks at Theo on his bucket. “Sunday,” he says. “Bengals. You’ll see something.”",
+      "“I’d be honored, sir.”",
+      "“You won’t be.”",
+      {
+       "if": "e18_night==\"go\"",
+       "text": "At midnight, with the garage dark and the house asleep, Jack sits on the back steps in his coat with the cold coming up through the concrete and answers her at last.",
+       "else": "Her *ok* from before nine is in his coat pocket, read. He leaves it there and watches his father explain the second half to the radio."
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "was in the garage w my dad",
+       "time": "12:04 AM",
+       "if": "e18_night==\"go\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "is your roommate behaving",
+       "time": "12:05 AM",
+       "if": "e18_night==\"go\""
+      },
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "hes drinking a strohs like its a sacrament",
+       "time": "12:07 AM",
+       "if": "e18_night==\"go\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "of course he is",
+       "time": "12:07 AM",
+       "if": "e18_night==\"go\""
+      }
+     ],
+     "goto": "s11"
+    }
+   ]
+  },
+  "s16": {
+   "slug": "SUNDAY · 1:50 AM · GLENWOOD AVENUE, THE BASEMENT",
+   "set": {
+    "skye_fb_friends": true,
+    "knows_theo_fb_mutual": true,
+    "jack_single_fb": true
+   },
+   "body": [
+    "At ten to two the furnace kicks on behind its louvered door with a hollow *whump*, and the ductwork over Jack’s head starts ticking, one length at a time, as the heat goes out through the house to everybody sleeping in it.",
+    "He’s at the card table in his coat, under Frank’s Browns calendar, still on November: a lineman breathing steam in a snowstorm the Browns lost. The family Dell takes its time waking up, its fan going like a hair dryer. The DSL cord runs across the concrete to the jack by the water heater under a strip of duct tape his father put down so nobody would trip and sue him. The RAZR is open by the mouse. Her text has been sitting there since before dinner.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "you still havent confirmed me ohio. im wounded. publicly",
+     "time": "7:12 PM"
+    },
+    "He logs in. Facebook comes down the line in pieces, the blue bar first.",
+    "His own profile has stopped saying anything about him — no *In a Relationship* anymore, a little broken heart in the News Feed from Thursday night, and further down his Wall Joey Abruzzo’s FINALLY BRO, still there from the day it went up — and he leaves it.",
+    {
+     "type": "fb",
+     "name": "Skye Callender",
+     "text": "wants to be friends with you on Facebook.",
+     "meta": "1 mutual friend: Theo Vance · Confirm · Ignore"
+    },
+    {
+     "if": "saw_skye_photo",
+     "text": "Her picture is the dock girl again, except that this one is her: a beach, a man’s flannel, no makeup, laughing at whoever’s holding the camera.",
+     "else": "Her picture is the first time he’s seen her face since the lot: a beach, a man’s flannel, no makeup, laughing at whoever’s holding the camera."
+    },
+    "The one mutual friend is Theo, who has eleven hundred of them, the Anchor’s busboy and every kid at the Montecito party among them. Jack clicks Confirm. The page thinks it over across the DSL and tells him they’re friends.",
+    "At 1:52 the phone goes off against the card table.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "home from a thing in the hills. finally. i was about to call your sister",
+     "time": "1:52 AM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "i keep thinking about the parking lot",
+     "time": "1:53 AM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "tell me what you think about. be specific",
+     "time": "1:53 AM"
+    },
+    "It’s ten to eleven in Studio City. In the basement on Glenwood Avenue he thinks about the parking lot. He has thought about it in a truck and at a sink and at a table with his grandmother at his left hand. Tonight it’s the cold of the Saab’s canvas top across his knuckles, where his hand was in her hair and the back of it was against the car — that, of all of it, he keeps coming back to: the cold on one side of his hand and her on the other.",
+    "Over the joists, his grandmother is asleep. The cursor waits."
+   ],
+   "choices": [
+    {
+     "text": "*your mouth.*",
+     "tag": "Candor",
+     "set": {
+      "e18_text": "candor",
+      "said_it_plain": true,
+      "said_it_plain_n": "+1",
+      "rel.skye.heat": "+1",
+      "rel.skye.trust": "+1",
+      "trait.candor": "+1"
+     },
+     "key": "At two in the morning she asked what you think about. You typed: your mouth.",
+     "response": [
+      "It takes him longer to type than anything he has sent all weekend, and longer than that to send.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "your mouth",
+       "time": "2:09 AM"
+      },
+      "She answers before he has the phone shut.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "good answer salesman",
+       "time": "2:09 AM",
+       "if": "e17_play==\"reckless\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "good answer",
+       "time": "2:09 AM",
+       "if": "e17_play!=\"reckless\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "next time theres no plane. no lot. no clock. both my hands in your hair and i take my time with yours. i mean hours. ive been planning it in traffic",
+       "time": "2:10 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "ive had to be the one who stops twice now. youre a menace",
+       "time": "2:11 AM",
+       "if": "e17_stop==\"reckless\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "youre getting better at saying things ohio",
+       "time": "2:11 AM",
+       "if": "said_it_plain_n>=3"
+      },
+      "He has never had a sentence like that written to him. He sits at a card table in his father’s basement in his coat with it lit in his hand, and the heat comes up his throat into his face, and he sits there in it.",
+      "Then the phone rings in his hand.",
+      "Not a buzz. A ring — the real one, the factory one he never changed — and the little outer screen says SKYE (MISFIT) and, under it, a word it has never said: *calling*. Since the lot it has all been type.",
+      "He takes it up the basement stairs ringing, his thumb over the little speaker as if that would help, through the dark kitchen and the dining room with the leaves still in the table, and through the front room past Nonna’s chair, empty now with her rosary over its arm. He takes her afghan off the back of it on his way by, and his father’s Browns hat off the hook by the door, and lets himself out the storm door onto the porch, the one place in the house nobody sleeps next to, and opens the phone on the last ring before it would have given up."
+     ],
+     "goto": "s16b"
+    },
+    {
+     "text": "*the car door. your hands in my jacket. how you made it slow on purpose.*",
+     "tag": "Reckless",
+     "set": {
+      "e18_text": "reckless",
+      "rel.skye.heat": "+2",
+      "resolve.jack": "-1",
+      "soul.restraint": "-1",
+      "trait.reckless": "+1"
+     },
+     "key": "At two in the morning she asked what you think about, and you told her — all of it, in a basement under your grandmother’s room.",
+     "response": [
+      "He keeps typing, under his grandmother’s room. T9 makes him earn every letter of it, and he doesn’t stop.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "the car door. your hands in my jacket. how you made it slow on purpose. how your mouth was cold for about one second and then it wasnt. your hair. you said my name once and i didnt answer because i forgot how. i think about that at the table. with my grandmother passing me the rolls",
+       "time": "2:11 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "salesman.",
+       "time": "2:12 AM",
+       "if": "e17_play==\"reckless\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "oh.",
+       "time": "2:12 AM",
+       "if": "e17_play!=\"reckless\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "next time i get that jacket all the way off you. and your hands dont stay where you kept them. dont think i didnt notice where you kept them",
+       "time": "2:13 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "when youre back",
+       "time": "2:13 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "ive had to be the one who stops twice now. youre a menace",
+       "time": "2:14 AM",
+       "if": "e17_stop==\"reckless\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "youre getting better at saying things ohio",
+       "time": "2:14 AM",
+       "if": "said_it_plain_n>=3"
+      },
+      "He reads the last one once and doesn’t answer it. He sits with the phone open on the card table and his hands flat on either side of it and his heart going, and he can’t think of one word in T9 that wouldn’t be a step further than he’s already gone.",
+      "Then the phone rings in his hand.",
+      "Not a buzz. A ring — the real one, the factory one he never changed — and the little outer screen says SKYE (MISFIT) and, under it, a word it has never said: *calling*. Since the lot it has all been type.",
+      "He takes it up the basement stairs ringing, his thumb over the little speaker as if that would help, through the dark kitchen and the dining room with the leaves still in the table, and through the front room past Nonna’s chair, empty now with her rosary over its arm. He takes her afghan off the back of it on his way by, and his father’s Browns hat off the hook by the door, and lets himself out the storm door onto the porch, the one place in the house nobody sleeps next to, and opens the phone on the last ring before it would have given up."
+     ],
+     "goto": "s16b"
+    },
+    {
+     "text": "*physics.*",
+     "tag": "Restraint",
+     "set": {
+      "e18_text": "restraint",
+      "soul.restraint": "+1",
+      "resolve.jack": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "At two in the morning she asked what you think about. You typed: physics.",
+     "response": [
+      "He sits with the cursor for a long time, and types the safest thing he knows.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "physics",
+       "time": "2:10 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "coward, salesman",
+       "time": "2:10 AM",
+       "if": "e17_play==\"reckless\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "coward",
+       "time": "2:10 AM",
+       "if": "e17_play!=\"reckless\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "i like it",
+       "time": "2:11 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "ill get it out of you in person",
+       "time": "2:11 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "ive had to be the one who stops twice now. youre a menace",
+       "time": "2:12 AM",
+       "if": "e17_stop==\"reckless\""
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "youre getting better at saying things ohio",
+       "time": "2:12 AM",
+       "if": "said_it_plain_n>=3"
+      },
+      "He laughs, once, under his breath, alone in the basement, and puts his hand over his mouth after it like somebody might have heard. It doesn’t help with the rest. The parking lot is still right there behind the joke. *in person* is right there on the screen.",
+      "Then the phone rings in his hand.",
+      "Not a buzz. A ring — the real one, the factory one he never changed — and the little outer screen says SKYE (MISFIT) and, under it, a word it has never said: *calling*. Since the lot it has all been type.",
+      "He takes it up the basement stairs ringing, his thumb over the little speaker as if that would help, through the dark kitchen and the dining room with the leaves still in the table, and through the front room past Nonna’s chair, empty now with her rosary over its arm. He takes her afghan off the back of it on his way by, and his father’s Browns hat off the hook by the door, and lets himself out the storm door onto the porch, the one place in the house nobody sleeps next to, and opens the phone on the last ring before it would have given up."
+     ],
+     "goto": "s16b"
+    }
+   ]
+  },
+  "s16b": {
+   "slug": "SUNDAY · 2:20 AM · GLENWOOD AVENUE, THE FRONT PORCH",
+   "set": {
+    "skye_called": true
+   },
+   "body": [
+    "The porch is the streetlight’s. The moon went down hours ago, and Glenwood Avenue lies there under the one lamp at the curb two doors up in a wash of orange, parked cars and bare maples and wet black asphalt, no snow anywhere. He pulls the tarp the rest of the way off the glider and sits, and the chains take his weight with two cold complaints. Nonna’s afghan goes around his shoulders, brown and orange and gold, and his father’s Browns hat comes down over his ears. His breath goes out in front of him and hangs. Under the boards, through the foundation, the furnace kicks on again and the ducts start up their ticking where he can feel it more than hear it.",
+    "Behind him, on the other side of the window glass, Nonna’s chair is empty. In the side yard the bathtub Madonna is a white shape with her hands out.",
+    "Before he can say anything she laughs — because she can hear his teeth, it turns out. Her voice isn’t her texts. It isn’t anything like her texts. It’s slower, and lower, and a little hoarse at the bottom, with a whole day of people worn into it, and it comes into his ear from Studio City close enough to feel.",
+    "“You’re *outside*.”",
+    "“Everybody’s asleep.”",
+    "“It’s *Ohio*. In *November*.”",
+    "“Yeah.”",
+    "“Go inside.”",
+    "“No.”",
+    "That’s the deal.",
+    "What he typed in the basement is somewhere in the phone all along. She doesn’t bring it up. He doesn’t either. It’s in how low she keeps her voice. And he wants her — on his father’s porch at half past two, in his grandmother’s afghan, from the other side of the country — and he keeps his own voice down and lets the wanting be exactly what it is, and goes no closer to it than that.",
+    "“All right, here’s Thanksgiving,” she says. “*Thanksgiving at My Mother’s.* A one-woman show. One act, no intermission, please silence your Ohio.” He hears her settle into something soft, a couch, a bed. “Act one. The turkey arrives. In a van. With a handler. Nobody in the house has touched it with their hands.”",
+    "She does the handler — a calm young man in black who needs a signature. She does twenty-two people in a living room in Studio City who want something, one at a time, quick changes: a man who manages a boy band and has a horror picture shooting in Romania, very prestigious, she’d play a nun; somebody’s cousin with her phone already up, *it’s for my niece, she’s your biggest fan, can you just say her name, it’s Madison, no, say it like Cassidy*; a woman from her mother’s Pilates class who asks if she’s seeing anyone and then answers for her. She does a dentist with a screenplay, and Jack is laughing too hard by then to be any help to the dentist.",
+    "“And one parrot,” she says, “who’s honest. He sat on the curtain rod all afternoon and told the truth about my mother, and everybody pretended he was saying hello.” A rustle. “Fin. Thank you. You’ve been a wonderful house.” Then, in her own voice: “Your turn. Do your family. I’ve been reading about them for three days. I want the voices.”"
+   ],
+   "choices": [
+    {
+     "text": "Do your father.",
+     "tag": "Wit",
+     "set": {
+      "e18_bit": "wit",
+      "rel.skye.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He sets it up for her: the table, somebody saying something impressive, his father not lifting his eyes off his plate. Then he puts the voice on — low, flat, out of the side of the mouth, Glenwood Avenue to the bone. “Close your mouth. You’ll catch flies.”",
+      "“Again.”",
+      "He does it again.",
+      "“Again. Slower. Where’s his fork?” He tells her where the fork is. He does it a third time, with the fork, and she’s quiet, and then she does it back to him, badly, in a voice that is nothing like his father and is somehow, against all odds, the plant — a man on a line, out of patience, kind about it. “*Close your mouth.* Is that close?”",
+      "“That’s close.”",
+      "“I’m going to use that on everybody.”"
+     ],
+     "goto": "s16c"
+    },
+    {
+     "text": "Do Nonna.",
+     "tag": "Sincerity",
+     "set": {
+      "e18_bit": "sincerity",
+      "rel.skye.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "So he does Nonna. He pulls the afghan up like a shawl, though there’s nobody to see it, and drops his voice into her chest, and points with a cast he doesn’t have at her plate in Studio City. “*Mangia.*” And then Thanksgiving morning, all of 6 West at her service and a wheelchair at the door, and the only thing she wants to know: where are her slippers.",
+      "Skye doesn’t laugh. She’s quiet a while.",
+      "“She’s the best one,” she says."
+     ],
+     "goto": "s16c"
+    },
+    {
+     "text": "Do Gina finding out.",
+     "tag": "Reckless",
+     "set": {
+      "e18_bit": "reckless",
+      "rel.skye.warmth": "+1",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "He takes a breath of the November air and gives it to her at full volume, Gina on the basement floor with her hair in her face: “*JACK. SHE’S ON TV.*”",
+      "It goes off the front of the porch and down Glenwood Avenue like a car alarm. Two houses down a dog wakes up and has an opinion. In Studio City something hits the floor — the phone — and from a long way off, from the floor, he can hear her laughing, helpless, the kind that won’t let a person up, and it goes on for a while before there’s a scrape and a rustle and her breath close again.",
+      "“I dropped you,” she says. “I’m sorry. I had to lie down on the rug. Does she really —”",
+      "“Exactly like that.”",
+      "“I love her. Don’t tell her. Tell her.”"
+     ],
+     "goto": "s16c"
+    }
+   ]
+  },
+  "s16c": {
+   "slug": "SUNDAY · 3:05 AM · GLENWOOD AVENUE, THE FRONT PORCH",
+   "body": [
+    "A car with one headlight comes down Glenwood at five past three, slows for nothing, and turns at the corner. After it the street is the lamp’s again.",
+    "“What time is it there?”",
+    "“Three.”",
+    "“And you have church.”",
+    "“Eight o’clock. It’s Advent.”",
+    "“What’s Advent?”",
+    "He tells her, low, with his breath going up past the porch light. Four Sundays before Christmas. A wreath with four candles, three violet and one rose — pink, if you’re not a priest — and you light one more each week, so the dark gets a little less dark. The readings are about the end of the world and about staying awake for it. Somebody is coming who said He’d come. The point is to be up when He gets here.",
+    "“Wait,” Skye says. “You people have a whole *season* for waiting.”",
+    "“Four weeks.”",
+    "“For *waiting*.” She sounds delighted and a little offended. “I’ve never waited four weeks for anything in my life. I don’t think I’ve waited four *days*.” He can hear her shift on whatever she’s lying on. “So what are *you* waiting for? You personally. Not the candles.”",
+    "He looks at the Madonna in the side yard, white in the streetlight with her hands out, in no hurry.",
+    "“To be awake when it counts,” he says. “I’m usually not.”",
+    "“I’m going to think about that,” she says.",
+    "No bit comes after it. On the line there’s a small sound like a pen cap, and then, a while later, she asks him what the candles smell like.",
+    "Beeswax, he tells her, and the match, and on the first Sunday the old ladies’ perfume, because the old ladies come early on the first Sunday to see which family from the school got picked to light it.",
+    "“Who got picked?”",
+    "“I don’t know yet. That’s the suspense.”",
+    "“You’re waiting to find out who lights the candle about waiting.”",
+    "“Now you’re getting it.”",
+    {
+     "type": "break"
+    },
+    "At ten to four the RAZR gives three small chirps against his ear like something in a nest, and the battery bar on the outer screen is one bar and blinking.",
+    "“What was that?”",
+    "“Battery. Hang on. Don’t hang up.” He gets up off the glider with the afghan and goes in through the storm door with the phone at his ear.",
+    "“And here,” Skye murmurs at once, very soft, very British, “in the frozen north, the Ohio male leaves the safety of his porch. He knows the territory. He steps over the board that talks. He does not wake the elders.” He steps over the board that talks. In the kitchen he finds his charger where he left it, by the bread box. “Note the stealth. Note the hat.”",
+    "Back on the porch, the only outlet is the one beside the storm door that his father runs the Christmas lights from, and the cord just reaches the arm of the glider if he sits at that end. He sits at that end.",
+    {
+     "type": "break"
+    },
+    "By four she is quieter. People are, at four. They have been talking about nothing — the Starlite’s jukebox, whether Ohio has a coast (“Lake Erie.” “A puddle with a navy.”) — and then she stops in the middle of it.",
+    "“Can I ask you something.”",
+    "It doesn’t come up at the end like a question. He pulls the afghan tighter.",
+    "“Yeah.”",
+    "“Does it matter? The TV part.”",
+    "Down the street the dog has gone back to sleep. He thinks of a clear plastic bag of quarters on a low table, and a row of vending machines along a cinderblock wall, humming."
+   ],
+   "choices": [
+    {
+     "text": "“No. You had the grandmother backwards. That’s the part I know.”",
+     "tag": "Sincerity",
+     "set": {
+      "e18_tv": "sincerity",
+      "rel.skye.trust": "+2"
+     },
+     "cue": "She’ll remember that.",
+     "key": "On the porch she asked if the TV part matters. You said no — she had the grandmother backwards, and that’s the part you know.",
+     "response": [
+      "“No,” he says. “You had the grandmother backwards. That’s the part I know.”",
+      {
+       "if": "e17_sorry==\"wit\"",
+       "text": "She doesn’t say anything. The line holds open, longer than it has all night, and he can hear only the faint hiss of it and a car somewhere on her end, far below a window.\n\n“Okay,” she says.",
+       "else": "“Good,” she says, very quietly, and nothing else for a while."
+      }
+     ],
+     "goto": "s16d"
+    },
+    {
+     "text": "“A little. It matters you didn’t say. Mostly no.”",
+     "tag": "Candor",
+     "set": {
+      "e18_tv": "candor",
+      "soul.honesty": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "On the porch she asked if the TV part matters. You said a little — that she didn’t say — and mostly no.",
+     "response": [
+      "“A little,” he says. “It matters you didn’t say. Mostly no.”",
+      "“Fair.” He hears her turn over. “I liked being nobody to you,” she says. “For five days.”"
+     ],
+     "goto": "s16d"
+    },
+    {
+     "text": "“Only if you make me watch it.”",
+     "tag": "Wit",
+     "set": {
+      "e18_tv": "wit",
+      "rel.skye.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "key": "On the porch she asked if the TV part matters. You said only if she makes you watch it.",
+     "response": [
+      "“Only if you make me watch it.”",
+      {
+       "if": "watched_sweetwater",
+       "text": "“You already *did*. You texted me about her.” He hears her pull something up over her head, a blanket, and her voice comes back muffled and pleased. “Never again. You’d like her more the second time.”",
+       "else": "“Never,” she says. “You’d like her.”"
+      }
+     ],
+     "goto": "s16d"
+    }
+   ]
+  },
+  "s16d": {
+   "slug": "SUNDAY · 4:35 AM · GLENWOOD AVENUE, THE FRONT PORCH",
+   "body": [
+    "Past half past four — half past one in Studio City — she starts to slow down. Her sentences get longer and further apart, and she asks him what the street looks like, right now, from where he is.",
+    "So he tells her. There’s one streetlight, two doors up, and it buzzes. The cars are all parked facing the same way, because on Glenwood it matters. The neighbors two doors down have an inflatable turkey that stands up eight feet tall when it’s plugged in, and they unplug it at ten, so right now it’s lying face-down on their lawn with its pilgrim hat in the wet grass like it lost an argument. And there’s a Madonna in his own side yard. His grandfather dug the hole for her before Jack was born and stood an old clawfoot bathtub up on its end in it, half buried, and Nonna painted the inside blue, and the Blessed Mother stands in it in white, with her hands held out a little at her sides, palms forward, like she’s —",
+    "Somewhere in the middle of the Madonna the line has changed, and he can tell she’s asleep.",
+    "“Goodnight,” he tells it, very low, and shuts the phone at 5:08, and the outer screen tells him it was two hours and forty-eight minutes before it goes dark.",
+    "He sits a minute more with the cord still running to his father’s outlet. At ten past five he goes in with the afghan, quietly, over the board that talks, and puts it back over the arm of Nonna’s chair where it was, and lies down on the front-room couch in his coat, because the stairs would wake somebody."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "skye",
+     "title": "Skye Callender",
+     "text": "Skye Callender, two Ls. Wouldn’t give me a last name — said *Out* — till she texted it to me on the floor in Denver. Met her in a window seat in Montecito, reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Doesn’t go here. Not yet, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. She was the one who stopped, in the grandmother’s voice. Typed herself into my phone as SKYE (MISFIT), and called herself from it. Took ten hours to answer my correction. Work, she said — a carpet and a wall. Her car’s an orphan now, and it’s my fault. Nearly three hours at the Starlite, a truck stop up the 101, with Nonna’s pie on the table. Cast me as the Bible salesman. Wanted to know what believing is like — not what I believe. Wants me to miss her a reasonable amount. Get the window, she said. Kissed me again against the Saab in the lot. Slower. On purpose. She was the one who stopped — her thumb on my mouth. She’s on TV. *Sweetwater*, Thursdays at nine: she plays Cassidy, the nice one. Gina screamed. I explained GM to her. In her own car. Saw Becca on my profile. Says she’s always wanted to play the other woman. Thanksgiving: texted me the whole drive from Pittsburgh. Spent it at her mother’s in Studio City; the parrot says ‘momager.’ Told me not to watch her show. Wants me to be specific. We’re friends on Facebook now — one mutual friend: Theo, who knows everybody. Saturday night she called. Three hours on the porch. Made me do my family. Asked what Advent is. Asked if the TV part matters. Fell asleep in the middle of the Madonna."
+    }
+   ],
+   "next": "s17"
+  }
+ }
+}
