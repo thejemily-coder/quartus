@@ -255,6 +255,25 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    who "says nothing at all" twice in s04/s05).
 121. **Skye's superlative-verdict formula — "the best/worst X I've ever gotten / that's ever happened to me"** (S1E19 ×8 in Skye's mouth alone; part of #49). Once an episode,
    where it pays off (E19 kept "the best no I've ever gotten" for the PM2 caption). Recast the rest as actions or a flat line ("I'm having that framed").
+122. **"At four in the morning" as a figure** (S1E20 ×17 in one draft; E19 ×12, E10 ×13 — "a table read at four in the morning" repeated E19's
+   *Questions Only* figure). Name the hour once a scene at most, as a clock time, never as a simile or a mood.
+123. **Skye's "since I was eleven / since she was eleven"** (3–4 every episode E16–E20). Once an episode, where it pays (E20 kept s19's "I've been
+   looked at for a living since I was eleven"); elsewhere "since I was a kid," or nothing. Never next to her body and money in one clause (Standards).
+124. **"In her own voice" as Skye's act-drop tag** (E12, E18, E20 ×3; a cousin of #109/#103). Once an episode, on the drop that matters (E20: "*Jack
+   Costigan*," s17). Otherwise just "she says."
+125. **"That's the deal" / "deal"** as Jack's and Skye's shared button (S1E20 ×6 across s18a–s19a). Once a path; it is Skye's word (her "better deal
+   than my industry," "Good deal") — Jack gets it only as her setup.
+126. **The picture-text template** (E19 PM2 → E20 PM3: the phone "low at her hip, taking it," the face "not doing" a character, "looking straight out
+   at whoever opens this"). Each picture gets a new camera action, a new specific expression, and how it arrives on a RAZR (stamp-sized, grainy, tilted
+   to a light) before any detail. No "isn't doing [X]'s face" negation.
+Small repeats to watch (S1E20): speech addressed to objects stacked in the Skye act (#32 — "to the boot," "to the lit half of the window," "to the
+Christmas lights," "to the jar of beach glass"; keep the one where her turning away is the point, s19 "to the wall"); Skye's "first/only/never"
+verdicts (spend the superlative once — E20 kept "the only person who's ever told me no and meant it"); "laughs into his neck" twice in one scene;
+Skye's "Don't" as a default deflection (three an episode; her deflection is a bit or a voice); Lena's holy-number litany (once an episode — E20 kept
+"Twelve tribes… Matthias" in s04); "forty" as number noise around the forty buttons (buttons and the test room only); "like a man [doing X]" (#44)
+and comic personification of weather, gulls, washers and bed frames (#25); transit codas ending Jack's scenes (#70); Margot "not writing it down" as a
+button (spend once, as the payoff); Theo's heckles are pitches and loglines, never "that's what she said" shapes; Skye's genre-voice bits must not
+borrow Theo's logline register (E20 swapped the trailer voice for a nature narrator).
 Small repeats to watch (S1E19): one tick source per episode (the halyards ticked ×5 — establish once, spend once); a working lighthouse "comes around" — establish once, spend once (×5 in one draft); hazard-light orange on a face ×4; sea lions "arguing" on the bait dock (E02, E04, E16, E19 ×2 — give the harbor another sound); animals or sky that "bought a ticket / paid to get in"; the roaring heater (one car per episode); "palm / hand flat" (≈8; #75); "a while" (#61); Lena and Skye never share a figure ("Lutheran," trying a word on, cards, "the only question") — #64.
 Small repeats to watch (S1E18): Nonna's "good hand" (≈17 in one draft) — once a scene, otherwise "her hand" / "her left"; Theo's bow from the waist (keep one an episode, where
 it pays — E18 s04); "Theo in the middle" of the bench seat (the rule once, the payoff once); Theo noticing the phone and saying nothing (build it in three beats, not six);

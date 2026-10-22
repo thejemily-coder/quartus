@@ -3420,3 +3420,72 @@ spring and usually bangs. The Madonna's carnations: red and white, cellophane, f
 - **Owed payoffs:** Skye at Marisol in January (`knows_skye_spring`); "Ask me in daylight" paid (sharks were a lie); `firm_purpose_hour` (E20/E21); Julian's song (`julian_writing_song`);
   Theo's Christmas (brief: starts the break in LA, then asks for Christmas Eve/Day in Youngstown); Theo's clementine (🔒, never glossed); Kevin's question mark [lie/wit];
   Margot's count ("four nights of six"; not writing it down); Evan's Preview Weekend question (🔒); `lena_sometime`; the Advent party Dec 11.
+
+### S1E20 — "Stay" (Sun Dec 6 – Fri Dec 11, 2009; tag Fri ≈5:52 a.m. PST, the corner of Del Playa)
+> Final revision, collapsed against `saves/after-s1e19.json` (wit 63, reckless 43, candor 73, sincerity 125, control 19, charm 26; grace 37, honesty 40, restraint −19; Jack resolve 4, Lena 4).
+> No E19 gates remain; E19 played values are stated flatly (COSTIGAN — PRESENT; "This one isn't a Thursday"; "You never answered the Bible"; the `pic2` caption; turnout/cows/"sometime"/"your everybody"; Osei's "two in the morning, and a car").
+> Live gates: `trait.wit>=56` (s18a [Riposte]), `trait.sincerity>=100` (s19a [Unguarded]), `resolve.jack<=3` (s17b narration). 36 scenes; ≈22.2–23.6k words per path (mean ≈22.9k); 12 keys and 1–5 whispers per path (8 in file);
+> forks `e20_mass` (s09a noon / s09b dusk / s09c skip), `e20_song` (reckless skips s15a); duel `why` (s18–s18v, unofficial — no `note:record`).
+
+- **Sun Dec 6 (Advent II).** s01 Sully's 10:05 a.m.: **Saints 33–30 Redskins in OT at FedExField, Landover MD (12–0)** — Meachem strips the interception back for a TD before the half; Suisham misses a short FG late;
+  Brees–Meachem long to tie; OT: Sellers fumbles after a catch, long review, **Saints' ball on Washington's 37**, a handful of plays, **Hartley 18 yds at ≈1:25 p.m. PT**. The page never says who won the toss.
+  **Chargers 30–23 Browns in Cleveland** (same 10 a.m. PT window; Browns 1–11) on the crawl. Lions lost to the Bengals 23–13 (Dale at the bar: "It had to be the Bengals"). Kevin's napkin: OT — SUDDEN DEATH (SUNDAY,
+  ADVENT II) / COSTIGAN — PRESENT. Laney's Pi Lam semiformal (Sloane's date in a kilt; "Single Ladies" ×4); Laney's Ugg of clementines. **Julian left Oakland after lunch; heard the end in Gilroy at a Chevron; the cow
+  (dry brown field) reached Lena on the kick.** s02 3:40 p.m.: Theo's gray cashmere throw over Jack ("holding it like a rosary"); Skye 1:34/1:40 ("tomorrow. im asking"). s03 6:10 p.m. east-stair call: Maria back from
+  Trumbull; **Danny went to the prison library about Flannery O'Connor** (Maria read it off an envelope); **the November phone bill: 409 texts** ("Who is it?") per `e20_bill`; Lena's saint is in Nonna's missal (red).
+  s04 the 9 p.m. Mass (Kenzie's capo; Joey lights the second candle), courtyard ≈9:55: Julian's brother **Daniel** home on Navy leave (a flag on the piano); **"Thursday. Bastille. I finished it. Will you stay to the end?"**
+  Lena's resolve 5.
+- **Mon Dec 7.** **First winter storm** (sideways rain off the Lagoon). s05: **Theo's black duffel on the closet shelf — denim jacket with a red Ferris-wheel FRESNO FAIR pin** (🔒 shown, never interpreted); the Burberry.
+  Skye 7:41/7:42 ("told you id ask somewhere worse"). Hale's last Monday seminar 1:00–2:15. s06 2:35 p.m. turnout → 101 south in the rain (Gaviota, Refugio, El Capitan, Carpinteria flags at half-staff for Pearl
+  Harbor, the Rincon over the riprap, the Conejo Grade); Skye's mother calls (the reunion picture; the publicist changed her favorite book back to *New Moon*); Gil the Ralphs driver; Joni Mitchell "California."
+  s07 Stage 9, Burbank (5:40 p.m.): the camera test — a 1962 revival-tent scene, the preacher's daughter forgives the thief (Lonnie); **the white dress, 40 covered buttons, hem to chin**; visitor pass MY COUSIN FROM
+  OHIO; rain tower over a painted lot (a Studebaker with taped chrome); her studio name Miss Callender; the guard. [`stood_in_rain`] Jack stood in for the thief's stand-in 9 minutes at ≈7:10. s07a the honeywagon
+  8:15 (heat step: no buttons; she counts to "sixty-one"). s07b takes four–six (director: "More grace"); **take six is played dry — the kept take**. s07c: Lena 11:02 p.m. ("Book Nine is 566 lines… Pray for me at 8");
+  wrap 12:40 a.m.; **on the drive home Jack tells Skye it's a holy day, the Immaculate Conception, and writes it on the back of her hand in Sharpie under the grip's nephew's email**; "praying" 1:40 a.m.; dropped at the
+  turnout 3:40.
+- **Tue Dec 8 (Immaculate Conception; holy day).** s08 3:55–3:58 a.m.: **Doug Pruitt sleepwalks — the alarm-puller** (Jack catches his wrist on the east-stair pull station; "the raid boss is in the elevator"); per
+  `e20_doug`: Margot at 305 (CASE CLOSED on the whiteboard Wed) / Kevin (chair under the knob, then a Christmas bell on dental floss; health center after finals) / nobody. Jack in bed 4:15; alarm set for 11:40.
+  Lena's Greek final at 8 (Book Nine at sight; *Outis*, 9.366; "I think I passed" 10:12). Kevin 10:30: Fitch's times 7, 12:10, 5:30. s09a 12:10 [noon]: Osei's homily on *kecharitōmenē* (perfect participle; "God gives
+  first"; "In Kumasi a physician catches whatever arrives"; "You cannot earn a gift. You can open it."); Joey at the sign of peace; Osei: "On a Tuesday." / "I was there."; **Becca's white-elephant list (Fri 7 p.m., $10,
+  nothing that eats); Thomas the hermit crab flies home to Idaho in a Tupperware at 33 ppt**. s09b 5:30 [dusk]: candles; Julian in a gray cardigan, has every response, doesn't receive, gets the *Ave* by ear the second
+  time; the RAZR buzzes on the last *Ave* (PM3, 6:18). s09c [skip]: wakes 6:20 p.m. — **first holy day of obligation missed since sixteen**; Lena 6:41 (Fr. Osei's participle relayed); **Osei calls across Ocean Road from
+  the steps: "God gives first. Even to the late."** The organist is still unnamed to Jack. s10 the Anchor: **Gloria gives Jack's Thursday to Hector (his girl due at Christmas)**; 9:20 the walk-in: **PM3 (rung 3)** —
+  Skye's mother's Studio City bathroom (fish shower curtain), the white dress with all 40 undone, a strip of white cotton, a forearm across her chest, the skirt mostly shut but one bare thigh out of it, the phone up by
+  her face; captions "you said you havent stopped. this is so you dont" / "wardrobe thinks its at the cleaners" / "all 40. tell me to do them back up. i DARE you" (6:18–6:20). Rudy opens the walk-in ("Mijo. Lettuce.").
+- **Wed Dec 9.** s10a 1:10–1:45 a.m., the Greyhound bench / Skye in a Studio City 24-hr laundromat washing the dress (it lives); the dry take went to the network; her mother's one note: "*Tired.*" underlined and circled;
+  she thinks the Immaculate Conception is the virgin birth ("Must be nice"). Skye shoots a cast picture on a Burbank dock at 10 a.m. s11 8:20: the case per `e20_doug` (Kevin redraws his question mark [control]).
+  s12 Hale's last seminar: Yusuf's chair; Lena silent an hour ("Note the date"); **by Friday each emails Hale which of the other's arguments they'll defend; "If you choose a weak one in order to win, I shall know."**;
+  Oslo tomorrow. **Julian played Lena the song Tue night in his garage.** s13/s13a the Brick, 8th floor, 11:20 p.m.–≈2:15 a.m.: **Lena picks Jack's "A man knows his own heart by what he says yes to."** Jack picks per
+  `e20_best` (promise [`e20_best_weak`: Lena says he picked to win] / the dead / "you leave the light on" / "That's not hypocrisy. That's showing up"); phones side by side; Kevin at the next carrel ("That isn't studying").
+  Lena: "It's good, Jack. It's really good." / "don't leave in the second chorus."
+- **Thu Dec 10.** Lena emailed Hale at 7 a.m. (Latin subject line); Jack's is due Friday. s14 2:50 p.m. launch-ramp lot: **Skye took the math placement test** (science building, forty test-takers, an egg timer; "nobody
+  looked at me"); result mailed in January; **the roll used "a name I don't use"** ("Ask me in a different daylight"); she's "up here tonight, at the house." s14a 4:30 the Fishbowl: **Obama's Nobel lecture** (Oslo;
+  "Evil does exist in the world…"; "I face the world as it is"); Yusuf back last night — **Tariq did all eleven stairs Monday**; Margot's "who decides which villagers are the cost." s15 Bastille 9:10: **"Magdalena"** —
+  Julian 7th on the board (a ukulele girl and Tanner first); Laney seats Jack in Julian's chair and holds Lena's hand; Theo at the counter; Margot reviews for the *Tide*. Lena resolve 4. Per `e20_song`: looked back /
+  watched Julian / **left in the second chorus**. s15a [stayed] ≈9:40 ("You stayed. She wanted you here." [after sincerity]); Jack out before ten, "Out." s16 10:05 the Walgreens; calls Skye ("Eleven minutes").
+  s16a: **Jack turns the RAZR off in her car (from now on, with Skye, the phone is off)**; "I've decided I want to [take people home]." **Skye's house: two-story shingle on Del Playa, porch that leans, empty surfboard rack
+  ("the boys" in Baja), a darkroom (red bulb, towel, vinegar); "Sol's in LA."** She'll live there in January. s17 10:40 her room (Christmas lights half out, mattress under the window, clothes rack, jar of beach glass, the
+  O'Connor with CON struck through, the white dress back from her trunk on the door hook); heat step (shirtless, lying down for the first time). s17b ≈11:20 **Jack's first no** (`e20_no`) — she never asked in words;
+  "I said not in a *car*. This isn't a car."; "You can go. I'll drive you." He sits down against the clothes rack and stays.
+- **Fri Dec 11.** s18–s18v 11:40 p.m.–≈1:40 a.m.: mint tea at 11:30; Cat Power "The Greatest" from her laptop; her questions (mortal sin; Catechism on knowledge and intent; confession; Song of Songs; "You'd make love to
+  a notary"; nine weddings); duel `why`. s19 3:30: **"Do you think I'm a slut?"** — his no; the jealousy is his; the teaching is for judging himself (CCC 1861 paraphrase — justice and mercy); per `e20_dignity`.
+  "You're the only person who's ever told me no and meant it." s19a 4:15: **"It's a big thing for me. And it's a no right now." — "I can work with that."**; Advent's rose candle Sunday; sunrise ≈6:50; confession
+  ("He won't know your name… That's the deal." / "Good deal."); January: a bicycle, a backpack. s20 5:40 the porch (waning crescent, ≈27% lit, up in the southeast; "the boys come back Sunday"; "My cousin from Ohio").
+  s20e 5:52: RAZR back on; **Lena's 11:41 p.m. text** (left: "You left in the second chorus." / stayed: "Thank you for staying." [+ "He said you told him."]); unanswered; first rain at the Grove. The Advent party is tonight 7 p.m.
+- **Flags (E20):** `e20_kick`, `e20_bill`, `maria_knows_girl`, `e20_julian`, `e20_rain`, `e20_stand`, `stood_in_rain`, `e20_trailer`, `e20_note`, `skye_took_note`, `knows_doug_sleepwalks`, `e20_doug`, `margot_knows_doug`,
+  `alarm_case_closed`, `kevin_knows_doug`, `jack_covers_doug`, `e20_mass` (noon/dusk/skip), `missed_holy_day`, `knows_kecharitomene`, `e20_noon`/`e20_pew`/`e20_skip`, `e20_pic`, `pic3_erased`, `e20_feast`, `skye_heard_given`,
+  `e20_case`, `knows_hale_choose`, `lena_picked_yes`, `e20_best` (sincerity=the promise paper / grace / candor / wit), **`e20_best_weak`** [promise pick — E22's Hale may "know"], `e20_brick`, `knows_skye_test`, `e20_test`,
+  `e20_oslo`, `heard_magdalena`, `e20_song`, `left_second_chorus`, `lena_unsigned`, `e20_after`, `julian_she_wanted`, `e20_call`, `phone_off_skye`, `skye_brought_home`, **`e20_close`** (reckless/candor/restraint — how far
+  before the no), `e20_no`, `skye_first_no`, `duel.why.*` (rigor/wit/heart), `told_skye_sixteen`, `skye_knows_sentence`, `skye_feared_judged`, `e20_dignity` (grace/prayer/wit/candor/sincerity), `jack_right_now`,
+  `skye_letter`, `e20_rightnow` (wit/candor/**unguarded**/restraint), `e20_dawn` (sincerity/restraint/daylight), `daylight_asked`, `said_it_plain_n`, **`confession_owed`** (counter: +1 trailer reckless, PM3 candor/reckless,
+  Mass skip, pew reckless, s17 scene — E21's confession reads the count plus the flags).
+- **Picture counters:** `skye_pics` 3 on every path; `skye_pics_kept` 2–4 (PM3 kept on candor/reckless); `pic3_erased` [restraint]. **Rung 3 is used: Christmas must escalate by situation and dare (where, when, who's
+  near), not by more skin; explicitness is reserved for New Orleans.**
+- **Resolve:** Jack enters 4 → s04 +1, [stand reckless] −1, [trailer reckless −1 / restraint +1], [bill candor +1 / lie −1], s09a/s09b +1 or s09c −1 (dusk choice no longer +1), [skip candor +1 / lie −1], s10 −1,
+  [pic reckless −1 / restraint +1], s13 +1, s15 −1, s17 −2, [close reckless −1 / restraint +1], **every `e20_no` +1**, [dawn sincerity/daylight −1] (s20 no longer taxes on entry) → ends ≈0–8 (most paths 2–5).
+  **Lena 4 → s04 5 → s12 5 → s15 4 → ends 4** (E21 restores to 6 per its plan).
+- **Scoring changes at final revision:** [kick restraint] pays `trait.control`, not soul.restraint; [doug candor] pays `trait.candor`, not honesty; [pew reckless] no soul.restraint hit; [song reckless] Lena trust −2,
+  friction +2, Julian trust −2; [best promise] Lena friction +1, no trust (she catches the pick-to-win); [dignity sincerity/Lewis] + Skye warmth +1.
+- **Owed payoffs:** E21 confession (`confession_owed`, `missed_holy_day`, the trailer, PM3, Del Playa); the Advent party Fri Dec 11 7 p.m. (white elephant; Laney's punch; Lena + Julian); E22 Hale's oral Wed Dec 16
+  (`e20_best`, `e20_best_weak`, `lena_picked_yes`); Skye's placement result (January); "a name I don't use" (🔒 open plant — Jack must not ask before the planned reveal); the Fresno Fair pin (🔒 never glossed); Gaudete
+  Sunday (rose candle); `daylight_asked` (Sunday surf at Ellery); the RAZR-off-with-Skye pattern; "right now" to the letter; Lena's 11:41 text unanswered; Kevin's redrawn question mark [doug control].

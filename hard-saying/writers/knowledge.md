@@ -1713,3 +1713,55 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - [night candor] Skye knows "a friend" did St. Nicholas with Jack — never upgrade it to a girl without a page.
 - Margot's count and Kevin's question mark are seeds, not knowledge of Skye: neither knows a name, a car or a face.
 - **Skye at Marisol in January**: from S1E21/S2 she can be on campus — every on-campus meeting with Lena, Theo, Kevin, Margot or Laney needs the room's plan (brief's reveal order).
+
+### S1E20 — "Stay"
+> Final revision, collapsed against `saves/after-s1e19.json` (see continuity.md S1E20). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01] COSTIGAN — PRESENT; the cow (Julian, Gilroy). [s02] Theo saw him sleep with the phone in his fist. [s03] 409 texts on the bill; Danny read up on O'Connor ("is it still something"); [bill candor] he told Ma "a girl"
+  (not Lena; "not nice — something"). [s04] Julian finished the new song and asked him to stay to the end; Daniel is home. [s05] **a FRESNO FAIR pin on a denim jacket in Theo's duffel — infers nothing**. [s06–s07c] Skye's
+  mother's voice (her side only); the publicist and *New Moon*; what a camera test is; the movie's rain scene; what a set wants from her; she played the dry take ([note] his note); **he told her Tuesday is a holy day and
+  wrote IMMACULATE CONCEPTION on her hand**. [s08] **Doug sleepwalks and pulls the alarms**. [s09] *kecharitōmenē* — from Osei [noon/dusk] or Lena's text [skip]; [skip] Osei's "God gives first. Even to the late." across
+  Ocean Road. **The organist is still unnamed to Jack.** [s10] Gloria gave his Thursday to Hector; PM3. [s10a] the dry take was kept; her mother's note "Tired."; she thinks the feast is the virgin birth; "Must be nice."
+  [s11] who else knows about Doug (per `e20_doug`). [s12] Hale's "choose the best one." [s13/s13a] Lena picked "what a man says yes to"; **Lena heard Julian's song Tuesday night in his garage; it's good**;
+  [best promise] Lena says he picked to win. [s14] Skye's placement test; nobody looked at her; **the roll used "a name I don't use"** (🔒 he does not ask again). [s14a] Tariq did eleven stairs. [s15] **the song is
+  "Magdalena"**; Lena watched him hear it. [s15a | after sincerity] "She wanted you here." [s16a–s19a] **Skye lives on Del Playa** (a darkroom; "the boys" in Baja; "Sol's in LA" — **he does not connect Sol to the
+  girl with the Bolex** 🔒); she'll live there in January; she never took anyone home; she thought she'd already been clear and didn't think she had to ask; her fear (a reputation; "Do you think I'm a slut?"); she
+  expected him to hold her and not answer; he's "the only person who's ever told me no and meant it"; **she can work with "right now."** [s20e] Lena's 11:41 text.
+- **He does NOT learn:** Skye's real name; Meridian; anything linking Theo to Skye, Fresno or Sol; what Lena felt hearing the song; that Julian watched Lena watch him; the camera test result; the placement result.
+
+#### Skye
+- From Jack: the Saints won (she watched); a roommate exists (no name); he'll be her cousin; [stand reckless] he stood in her rain; [note] his note on forgiveness; **Tuesday is a holy day — the Immaculate Conception (written
+  on her hand)**; his answer to PM3 per `e20_pic`; his holy day per `e20_mass`; what the feast means (Our Lady; the stain; the perfect participle — "what the priest said" / "what a friend texted him," no name, no gender);
+  [feast grace] "worth something before you've done anything"; [test] "a friend's playing a song… I said I'd stay to the end" — **no name, no gender, not what or whose**; he turns his phone off with her; his no and why
+  (body says things; the promise; [why moves] per choice); confession is anonymous; [reframe] **"Something happened when I was sixteen" (elided) and "My brother took five years"** — Jack does **not** connect the two for
+  her ("Not tonight"); his answer to her fear (the jealousy is his; the teaching is for judging himself) + [by `e20_dignity`] the participle / he prays for her by name / the lumberyard / he's never thought less of his brother /
+  Lewis; [rightnow unguarded] it's himself he doesn't trust; **"a no right now."**
+- **She still has never heard** Lena's, Theo's, Danny's, Kevin's or Julian's names from Jack; she knows nothing of Lena beyond E19's "a friend" [if played]. She has never heard Our Lady's name for Lena or anything of the song.
+
+#### Lena
+- [s01/s04] Jack at Sully's normal; his answer to Julian (stay / joke / try). [s09b | dusk] his pocket buzzed on the last *Ave* — nothing more. [s09c | skip] he missed the holy day — [candor] "overslept. i owe a confession"
+  / [lie] "worked" (uncheckable). [s13] his pick of her argument; his phone face down under his hand (she showed him hers). [s15] he watched her watch him / watched Julian / **left in the second chorus**; [stayed] he left
+  Bastille at ten, "Out" (Laney asked in her hearing). He didn't answer her 11:41. **She learns nothing about Skye: no name, no car, no face, no picture.** [reframe] Skye now holds exactly what Lena holds of the
+  sixteen and Danny's sentence, never the link.
+
+#### Theo
+- Jack slept with the phone in his fist; he lent the Burberry; at Bastille Jack left on foot at ten, east ([left] in the second chorus). Nothing about Burbank, Del Playa, or his own duffel being disturbed. He holds *now friends*.
+
+#### Others
+- **Maria** — 409 texts; [bill candor] a girl, not Lena, "not nice — something"; Nonna's "*E l'attrice?*" taken as Gina's show (LIVE RISK); **Gina** listened on the extension. **Danny** — nothing new.
+- **Julian** — Jack's answer in the courtyard; Jack stayed or left; [after sincerity] "It's good." 🔒 He watched Lena watch Jack and said only "She wanted you here."
+- **Margot** [doug candor] — Doug (≈4:05 a.m. Tue at 305's door); Jack came up the front walk at ten to four in a blazer; WITNESS: COSTIGAN, J. (UNEXPLAINED). **Kevin** [doug control] — Doug; Jack in a blazer at four
+  with a Burbank pass, asked Wednesday and got [wit/candor/nothing]; he redraws the question mark; [noon] Jack at the 12:10; at the Brick, "defending each other." **Doug** — [candor] he's a sleepwalker / [else] a dream
+  with Jack in a jacket. **Priya** — nothing new. **Laney** — Jack left Bastille at ten, "Out"; her texts unanswered. **Yusuf** — nothing new. **Hale** — nothing new; picks arrive by Friday.
+- **Osei** [noon/dusk] — preached to Jack; [skip] saw Jack at the bus stop in an apron on the holy day. Nothing from the confessional leaves it. **Becca** [noon] — nothing new. **Gloria** — Jack's Thursday is Hector's;
+  "the pie case at closing." **Rudy** — a phone shut fast in his walk-in. **The Burbank crew** — Jack is "the cousin from Ohio"; no names.
+
+#### LIVE RISKS carried out of E20
+- All E19 risks stand (Theo holds *now friends* to Christmas; Skye never hears the names; Lena learns nothing of Skye; Skye knows "a guy in my seminar" has a brother Tariq).
+- **Sol**: Skye said "Sol's in LA" in front of Jack — he must not connect Sol/Soledad to the girl with the Bolex on the page before E21's planned beat.
+- **"A name I don't use"** — Jack never asks before the planned reveal; it never appears in a journal card or recap.
+- **The Fresno Fair pin** — shown once, never glossed, never on a card.
+- **[reframe]** Skye holds the elided sixteen and "five years" separately — exactly Lena's level. No scene may let either woman join them before the truth comes out (S2E22 to Theo; Lena by the proposal).
+- **Christmas phone hazard** — 2–4 kept pictures ride home to Youngstown (`skye_pics_kept`); the RAZR is now routinely off with Skye (`phone_off_skye`).
+- **Maria knows "a girl"** [bill candor] — the Facebook discovery at Christmas lands on a mother who was told first.
