@@ -998,3 +998,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   tell Jack misses). **The reveal: Gina tells him.** He mentions a "Skye" to Gina (phone, or in person once he's home);
   she looks her up and screams: "JACK. SHE'S ON TV." Then the apology text ("sorry for being an idiot"), Skye's
   delight, and the constant texting.
+- **E18 design round 2 (player).**
+  - **Theo meets Danny (prison visit): instant rapport.** Two charming screwups who recognize each other. Danny says
+    something to Theo that cuts through his act (without revealing hidden canon), and Jack sees Theo shaken on the drive
+    home. (Keep Theo's darkness "back under" per earlier notes: shaken, not cracked open.)
+  - **The Costigan Thanksgiving table: all of it.** Frank asks Theo, the guest, to say grace; Theo, who doesn't pray,
+    does it anyway, devastatingly sincere. Nonna corners Theo about his soul, his mother and whether he eats, in Italian
+    with Gina translating (comedy, then a gut-punch). Skye's texts keep buzzing, and Maria finally confiscates Jack's
+    phone at the table.
+  - **Lena in E18: light texting throughout the weekend, plus one good, warm call from New Orleans on Thanksgiving
+    night**: sweet but guarded, less deep than the Christmas calls will be. She asks about Theo and Nonna.
