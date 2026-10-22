@@ -1331,3 +1331,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     **Osei's tenderness in E21 speaks to that**: he hears a young man who genuinely delights in this girl and is
     trying to do right by her, and speaks to the real good in it (love wills the good of the other) more than to the
     sin, which is exactly why the occasion is so dangerous.
+- **Becca's reaction to Skye (player; S2, January).** Becca knows the breakup was really about Lena (and has never
+  told Lena she knows). When Jack and Skye go public, **she's kind, almost unbearably**: she **congratulates him,
+  sincerely**, which is worse than anything she could say. **Only later, as friends** (spring), does she admit she
+  didn't understand it. She still never brings Lena into it.

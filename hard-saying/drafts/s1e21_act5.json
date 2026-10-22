@@ -1,0 +1,326 @@
+{
+ "scenes": {
+  "s07": {
+   "slug": "FRIDAY · 11:20 PM · DEL PLAYA, HER ROOM",
+   "body": [
+    "Since Thursday the strand around her window has lost more ground. What still burns has pulled back into the bottom right corner of the frame, a knot of red and green and one white gone stubborn yellow, so the light in her room comes up off the sill from one side, low, like footlights somebody quit hanging halfway through.",
+    "They came in by the alley. The rack is where it was, and the jar of beach glass with the blue piece on top, and the O’Connor on the sill with CON struck through. The floor has been picked up since Thursday; his shirt isn’t on it. The white dress still hangs on the back of the door in the cleaner’s bag, its collar standing up under the paper. Skye lifts it off the hook by the hanger and hangs it on the rack between two flannels, and pats the bag once.",
+    "“She’s had a big week,” she says.",
+    {
+     "if": "skye_brought_home",
+     "text": "“Second time anybody’s been up here,” she says over her shoulder. “You’re a regular. It’s alarming.”"
+    },
+    "She takes his right hand and turns it over under the lights. The Lava got the backs of it. The black is still packed under every nail, ten thin crescents of her battery.",
+    "“You washed.”",
+    "“There was soap.”",
+    "“Most of my car’s still on you,” Skye says, and keeps the hand.",
+    "She wants the party, all of it, from the door. He gives it to her sitting on the end of the mattress with his boots off and her feet in his lap: the priest at the door in a cardigan, who took one look and knew he’d pushed a car; the organist at the upright with a voice like a foghorn, a measure behind on every verse and not sorry; a parish secretary, seventy-one, three cups into a punch somebody from Texas had done something to, sailing the descant a third above everybody; the priest tasting the punch and putting the bowl on top of the refrigerator. His roommate’s spray tan, unopened, which went to the priest.",
+    "“Do her,” Skye says. “The secretary.”",
+    "“You’ve never heard her.”",
+    "“Do I need to?” She stands up on the mattress in her socks with one hand on the window frame and her chin in the air, and sings *Joy to the world* a third above anywhere it has ever lived, with a quaver in it like a kettle coming up and the total confidence of three cups, and holds the last note until the frame creaks under her hand. It’s terrible. It’s not far off.",
+    "He tells her the white elephant: a girl with a clipboard running it like an auction, steals allowed, three steals and it’s frozen. A kid named Joey got her bag, bow and all, and shook the 8-Ball with his eyes shut and asked it if he was going to be a priest, and it said *It is decidedly so*, and the room went up like somebody had scored. And then there were steals.",
+    {
+     "if": "e21_tag==\"nicholas\"",
+     "text": "“Did they read the tag?” “To the room. *From St. Nicholas.*” “Did he get a laugh?” “He got a look.” “Range,” Skye says."
+    },
+    "“It *is* decided,” Skye says, and sits down hard beside him with her knees up. “I told you. Every answer.” She bumps him with her shoulder. “So who got my Eight Ball?”"
+   ],
+   "choices": [
+    {
+     "text": "“A friend.”",
+     "tag": "Candor",
+     "set": {
+      "e21_ball": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“A friend,” he says.",
+      "“In italics?”",
+      "He says nothing. She looks at him over her knees with her head on one side, long enough that he knows she heard it, and lets it be."
+     ],
+     "goto": "s07a"
+    },
+    {
+     "text": "“Joey. The one who’s going to be a priest.”",
+     "tag": "Lie",
+     "set": {
+      "e21_ball": "lie",
+      "soul.honesty": "-1"
+     },
+     "response": [
+      "“Joey,” he says. “The one who’s going to be a priest.”",
+      "“Then it told the truth once,” Skye says. “That’s a good career for a toy.”"
+     ],
+     "goto": "s07a"
+    },
+    {
+     "text": "“It went to a good home.”",
+     "tag": "Wit",
+     "set": {
+      "e21_ball": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“It went to a good home.”",
+      "“What did they ask it?”",
+      "“They didn’t say.”",
+      "“Smart,” Skye says. “Never tell anybody your question. They give you notes on it.”"
+     ],
+     "goto": "s07a"
+    }
+   ]
+  },
+  "s07a": {
+   "slug": "FRIDAY · 11:45 PM · DEL PLAYA, HER ROOM",
+   "set": {
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "By a quarter to twelve his flannel and her sweater are on the floor with the scripts, and she’s lying on top of him in a black bra and her jeans with her chin on her stacked hands in the middle of his chest, looking at him down her nose, what’s left of the lights in the side of her hair.",
+    "“I’ve been doing coverage on your sentence,” she says.",
+    "“Coverage.”",
+    "“It’s what readers do. You read the script and write two pages on why it doesn’t work.” She takes one hand out from under her chin and holds up a finger. “One. It isn’t a rule. You said so yourself — not always, not till marriage, you don’t know that about you. A rule I’d respect. I’ve worked union.” A second finger. “So it’s a schedule. And a person’s allowed to ask what’s on a schedule. That’s what a schedule is *for*.”",
+    "She rolls off him long enough to unbutton her jeans and work them down her legs and kick them off the end of the mattress, and rolls back on, and doesn’t lose her place. “Costume change. Two. It had a time on it. A quarter past four, Friday morning. That was nineteen and a half hours ago.”",
+    "A third finger. “And in my business you never shoot the white pages. Every rewrite comes out on a new color — blue, pink, yellow, green. By the time anybody rolls camera it’s goldenrod. Right now was a white page, Jack.” She folds her hands back under her chin. “I’m only asking what color we’re on.”",
+    "He laughs, and it moves her up and down on his chest, and she rides it out and waits.",
+    "“Is it still right now?”",
+    "“Yes.”",
+    "“Then say no again,” Skye says. “Slower. I want to see how you do it.”",
+    {
+     "if": "e20_no==\"candor\"",
+     "text": "“Do the plain one.”"
+    },
+    {
+     "if": "e20_no==\"control\"",
+     "text": "She finds his hand on her back and brings it down and puts it over hers, on his own buckle, and holds it there. “With the hand.”"
+    },
+    {
+     "if": "e20_no!=\"candor\" && e20_no!=\"control\"",
+     "text": "“Do the one with the want in it.”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“No.” Slow, the way she asked.",
+     "tag": "Candor",
+     "set": {
+      "e21_letter": "candor",
+      "said_it_plain_n": "+1",
+      "trait.candor": "+1",
+      "rel.skye.trust": "+1",
+      "soul.restraint": "+1"
+     },
+     "cue": "Skye will remember that.",
+     "key": "Friday night she asked if it was still right now, and told you to say no again, slower. You said it slow. One word.",
+     "response": [
+      "“No.”",
+      "He says it slow, the way she asked, with his eyes on hers from the start of it to the end."
+     ],
+     "goto": "s07b"
+    },
+    {
+     "text": "“I want you. It’s still no.”",
+     "tag": "Sincerity",
+     "set": {
+      "e21_letter": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.heat": "+1",
+      "soul.restraint": "+1"
+     },
+     "key": "Friday night she asked if it was still right now, and told you to say no again, slower. You told her you want her, and it’s still no.",
+     "response": [
+      "“I want you,” he says. “It’s still no.”"
+     ],
+     "goto": "s07b"
+    },
+    {
+     "text": "“Still right now. Still no.”",
+     "tag": "Wit",
+     "set": {
+      "e21_letter": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1",
+      "soul.restraint": "+1"
+     },
+     "key": "Friday night she asked if it was still right now, and told you to say no again, slower. You told her: still right now, still no.",
+     "response": [
+      "“Still right now,” he says. “Still no. Still the white pages.”"
+     ],
+     "goto": "s07b"
+    }
+   ]
+  },
+  "s07b": {
+   "slug": "FRIDAY · 11:50 PM · DEL PLAYA, HER ROOM",
+   "set": {
+    "rel.skye.heat": "+2",
+    "resolve.jack": "-1",
+    "skye_letter_kept": true,
+    "confession_owed": "+1"
+   },
+   "body": [
+    {
+     "if": "e20_rightnow==\"candor\"",
+     "text": "“I heard the whole sentence,” she says. “Right now’s a whole sentence.”"
+    },
+    {
+     "if": "e20_rightnow==\"restraint\"",
+     "text": "“Right now,” she says, as if she’s reading a call time off a sheet."
+    },
+    {
+     "if": "e20_rightnow==\"wit\"",
+     "text": "“*Thorough*,” she reminds him."
+    },
+    {
+     "if": "e20_rightnow==\"unguarded\"",
+     "text": "“You said it’s you you don’t trust,” she says. “I trust you fine. That’s the problem.”"
+    },
+    "“A no’s a no. For tonight. For that.” She smiles when she says it, pleased, a professional with a note she can play — and she doesn’t stop.",
+    "She keeps to it exactly. What he said no to stays where he put it, and everything on the near side of it she takes, every bit, and she takes her time.",
+    "She has nothing on now but black cotton and the braided anklet, and he’s still in his jeans with the belt done up, and she’s easy in it — easy the way she is barefoot on a gas-station floor, or walking into the Pacific in November. She pulls his undershirt off over his head and throws it at the rack and misses.",
+    "Her mouth on his, slow, and then not slow. Her hair coming out of its knot and down over both their faces, so the room is a tent of it with the last of the lights coming through. The window is cold on one of her shoulders and the rest of her is heat. Her breasts on his chest, and her heart going under them, fast, right on top of his. He finds the freckles that go all the way down her shoulders, more than her face has, and puts his mouth on them, and she tips her head back for it and makes a sound he hasn’t heard out of her before, low, nothing like a laugh.",
+    "When she comes up on her hands to look at him there are smudges down her ribs where his fingers have been — gray, from under his nails, her own battery — and she looks down at herself in the red light and laughs. “You’re getting my car on me.” She rubs one with her thumb and makes it worse, and comes back down.",
+    "Watching her is like watching somebody work a stage with a spike mark taped on it. She can stand anywhere but there. She knows exactly where there begins, and she plays every board of the floor right up to the tape.",
+    "Her hands come down his chest and his stomach to his belt, and stop on the leather. Her thumb runs along the top edge of it, side to side, slow, and never under. Then she leaves the hand there, resting on the buckle like a hand on a dog that’s been told to stay, and kisses him.",
+    "There’s no question in any of it. That’s what he can’t get past, under her: she isn’t asking him for a thing. There’s nothing to say no to. The one thing he turned down is sitting right where he left it, and everything else is his, and every minute it’s his to turn down again from the beginning, and she is in no hurry at all.",
+    "His breathing has gone loud in the room, louder than the surf at the foot of the bluff and the stereo three houses down. She lifts her head and laughs at him, low and delighted. “Breathe, Jack,” she says. “That one’s allowed.”",
+    {
+     "if": "resolve.jack<=3",
+     "text": "He isn’t trying to be good. For a stretch of it he isn’t trying anything. There’s her mouth, and the heat coming off her, and her thumb on the leather, back and forth, and his own hands going places he’ll have to say on Saturday through a screen. His thoughts come shorter. Her skin. Her breath. The buckle. Her skin. The line holds anyway. It holds because he holds it, and it hurts.",
+     "else": "Under all of it a voice he knows for his own keeps track, low and level. It doesn’t need to raise itself. It knows where the belt is as well as she does."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Get up. “Water.”",
+     "tag": "Restraint",
+     "set": {
+      "e21_edge": "restraint",
+      "soul.restraint": "+1",
+      "resolve.jack": "+1"
+     },
+     "key": "To the letter: she kept to your no and to nothing else. You got up for water and stood at her window till it cooled.",
+     "response": [
+      "“Water,” he says, and gets up.",
+      "There’s a bathroom at the end of the hall with a toothbrush glass on the sink. He fills it and brings it back and doesn’t drink it. He stands at her window in the dark with it, bare to the waist, with the cold coming in under the sash and the surf down at the bottom of the bluff, and gives the cold a minute of him. She lets him have the minute.",
+      "When he turns around she’s under the blanket with it up to her chin, watching him.",
+      "“Better?”",
+      "“No.”",
+      "“Good,” Skye says, and lifts the edge of the blanket, and when he gets back in beside her in his jeans it has cooled enough to talk.",
+      "Somewhere inside the wall something goes *pop*, small and definite. The last knot of Christmas lights dies, and the line of light under the door dies with it, and three houses down the music keeps on while this house goes black from the roof to the alley. For the length of one wave there’s nothing in it but the surf.",
+      "Then her laugh in the dark, close to his ear.",
+      "“Unbelievable,” Skye says. “You converted the house.”",
+      "She finds a flashlight by feel, in one of the boots under the rack, and clicks it on and points it at the ceiling, and they lie there in the circle of it."
+     ],
+     "goto": "s07c"
+    },
+    {
+     "text": "“This is cruel.”",
+     "tag": "Wit",
+     "set": {
+      "e21_edge": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "To the letter: she kept to your no and to nothing else. You told her it was cruel. She said thorough.",
+     "response": [
+      "“This is cruel,” he says into her hair. It comes out hoarse.",
+      {
+       "if": "e20_rightnow==\"wit\"",
+       "text": "“I *told* you,” Skye says. “*Thorough*.”",
+       "else": "“Cruel’s a strong word,” Skye says. “I’m being *thorough*.”"
+      },
+      "And then she’s laughing at her own line, at him, at the state of him, and she can’t stop, and she has to roll off him onto her back to do it properly with both hands over her face, and the laugh does what his no didn’t: by the time she’s finished with it the room has come down to something he can lie next to.",
+      "Somewhere inside the wall something goes *pop*, small and definite. The last knot of Christmas lights dies, and the line of light under the door dies with it, and three houses down the music keeps on while this house goes black from the roof to the alley. For the length of one wave there’s nothing in it but the surf.",
+      "Then her laugh in the dark, close to his ear.",
+      "“Unbelievable,” Skye says. “You converted the house.”",
+      "She finds a flashlight by feel, in one of the boots under the rack, and clicks it on and points it at the ceiling, and they lie there in the circle of it."
+     ],
+     "goto": "s07c"
+    },
+    {
+     "text": "Let her.",
+     "tag": "Reckless",
+     "set": {
+      "e21_edge": "reckless",
+      "trait.reckless": "+1",
+      "soul.restraint": "-1",
+      "resolve.jack": "-1",
+      "rel.skye.heat": "+1",
+      "confession_owed": "+1"
+     },
+     "key": "To the letter: she kept to your no and to nothing else. You let her, right up against it, and the line held.",
+     "response": [
+      "He lets her. She goes on, right up against it, all of her on the near side of the one thing he said, and he stops keeping her anywhere. Her hand stays on the buckle and his closes around her wrist — not moving it, holding on — and it costs him. By the end it takes everything he’s got to keep the line where he put it, and none of it is easy, and he keeps it there.",
+      "Somewhere inside the wall something goes *pop*, small and definite. The last knot of Christmas lights dies, and the line of light under the door dies with it, and three houses down the music keeps on while this house goes black from the roof to the alley. For the length of one wave there’s nothing in it but the surf.",
+      "Then her laugh in the dark, close to his ear.",
+      "“Unbelievable,” Skye says. “You converted the house.”",
+      "She finds a flashlight by feel, in one of the boots under the rack, and clicks it on and points it at the ceiling, and they lie there in the circle of it."
+     ],
+     "goto": "s07c"
+    }
+   ]
+  },
+  "s07c": {
+   "slug": "SATURDAY · 1:00 AM · DEL PLAYA, HER ROOM, IN THE DARK",
+   "body": [
+    "By one o’clock there’s a candle going in a jelly jar on the floor and the flashlight has given up beside it. The fuse box is in the darkroom. “I’m not allowed in the darkroom,” Skye says. “House rule. Something about the light getting in.” She’s in her flannel and he’s back in his undershirt, and they sit against the wall under the dead window with the blanket over their knees, and the candle makes the room about the size of the candle.",
+    "She asks what he’s doing in four hours, and he tells her: the old Mission on Mission Street, at five. A guy from work asked him to come hear his mother sing. It’s the feast — today, now; midnight went by while the lights were still on. Our Lady of Guadalupe. At five in the morning they sing her *Las Mañanitas*, the birthday song, with a mariachi, and bank roses around her picture till you can smell them from the street.",
+    "“Why roses?”",
+    "So he tells her the part everybody knows. A hill outside Mexico City, in December, a long time ago. A man on his way to Mass, and a lady on the hill who sent him to the bishop. The bishop wanted a sign. She sent the man back up the hill for roses, in December, where nothing grows, and he carried them down in his coat, and when he opened the coat in front of the bishop the roses fell out on the floor and she was on the cloth.",
+    "Skye sits up off the wall. “Wait. Green cape? Stars all over it? Gold coming off her in spikes?”",
+    "“That’s her.”",
+    "“She’s on every taco truck in the Valley. She’s on the tall candles at the liquor store on Ventura. There’s a wall of her on Lankershim by a car wash, twenty feet high.” She looks at him across the candle. “I thought she was a *brand*.”",
+    "“She’s Our Lady.”",
+    {
+     "if": "skye_heard_given",
+     "text": "“The worth-something-first lady?” “Same lady.”"
+    },
+    {
+     "if": "!skye_heard_given",
+     "text": "“The clean one? From your Tuesday?” “Same lady.”"
+    },
+    "“Who painted her?”",
+    "“No one. That’s the story.”",
+    "She sits with that longer than he expects, chin on her knees. “The bishop’s the only one in it I believe,” she says at last. “Somebody pitches him a miracle and he asks to see it on tape.” She turns her head on her knees to look at him. “Whoever lit her knew what they were doing.”",
+    "“That’s the idea,” Jack says.",
+    "“I’ll drive you,” she says. “Mission’s on my way to the freeway. I want to see the candles from the car.” And then, in the same breath: “When do you tell your priest about me?”",
+    "“This afternoon. Three-thirty.”",
+    "“Do you get points for tonight?” She puts up a hand before he can answer, drops her voice down into her chest and flattens every vowel in it, and she’s a patient man from Ohio explaining something in a parked car: “It doesn’t work like points.”",
+    "“It doesn’t.”",
+    "“I heard you the first time.” She reaches over and turns the jar so the flame stands up straight. “Tell him I was respectful.”",
+    "A little before three he asks her to set her alarm for half past four.",
+    "“Why?”",
+    "“So I’d leave.”",
+    "She looks at him over her knees. Then she fishes the white iPhone out of the boot where it lives and sets the alarm, and lays it on the floor by the candle, and goes back to the story she was in the middle of — a hamburger commercial she shot at twelve in a field in Simi Valley, in a hoopskirt, which she still won’t explain.",
+    "Somewhere after half past three he falls asleep sitting up against the wall. The marimba goes at four-thirty, bright and idiotic in the dark, and when he opens his eyes she’s where she was, knees up, the candle down in its own wax, looking at him.",
+    "“You fold your hands,” she says. “When you sleep. I watched you the entire hour. You look like a knight on a tomb.”"
+   ],
+   "next": "s08"
+  },
+  "s08": {
+   "slug": "SATURDAY · 4:50 AM · THE SAAB, MISSION STREET",
+   "body": [
+    "She puts the top up for the cold. The canvas comes over them stiff with damp and latches at the windshield, the heater runs full blast, and Mission Street at ten to five is wet black asphalt with the signals going through their colors down the grade toward the harbor and not a car to stop.",
+    "At the light by the Greyhound depot he switches the RAZR on. It finds a bar and buzzes once in his hand.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "You up? —L.",
+     "time": "12:28 AM"
+    },
+    "It sits on the outer screen, four hours old. He shuts the phone on it and puts it in the Carhartt. Skye downshifts for the light.",
+    "She pulls in at the curb two blocks short, by the depot bench under its caged tube of light. From there the Mission is up the street on the far side with every one of its doors open, and the doors are full of light — candles, a great many of them, and behind the candles a red that has to be roses, banked so deep the color carries two blocks. People are going in out of the dark in coats. Somewhere inside a trumpet tries a note and thinks better of it.",
+    "“That’s her?”",
+    "“That’s her.”",
+    "Skye looks with both hands on the wheel and the heater going, her face lit faintly from up the street.",
+    "“It’s yours,” she says. “I’ll watch the light come up from the freeway.”",
+    "She kisses him once, across the gearshift, her hand on the back of his neck, warm from the heater.",
+    "“Cassidy has a Saturday,” she says against his mouth. “There’s a Santa involved. Don’t ask.”",
+    "He gets out into the cold. She swings the Saab around in the empty street in one wide U across both lanes and goes back the way they came, toward the freeway and Los Angeles, and he walks the two blocks up toward the open doors with his hands in the Carhartt and the trumpet starting over inside, for real this time."
+   ],
+   "next": "s09"
+  }
+ }
+}
