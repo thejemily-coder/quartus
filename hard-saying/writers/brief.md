@@ -1143,3 +1143,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Jack's end:** they arrive small, grainy and slow on the RAZR (about 25¢ each on a basic plan), viewed in the cold
     garage, a stairwell, under a blanket. The RAZR has no real lock, so a house full of Costigans at Christmas is a
     standing hazard (room's call on any near-discovery).
+  - **Near-misses: room's call.** But **family and friends (especially Theo and Lena) notice Jack has become far more
+    private about his phone from December through February** (tilting it away, screen-down, pocketing it fast, keeping
+    it on him at all times). An extension of the secret-December "texting no one" behavior.
+  - **New Orleans: the most salacious one yet** arrives **right after he sends Skye to voicemail** (the "phones tell on
+    them" beat). Her reply to being ignored.
