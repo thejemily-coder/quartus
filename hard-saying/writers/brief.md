@@ -1130,3 +1130,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   rule, Jack hears it **from Lena on one of their dates**, likely relayed as a story on herself.
   - **Mirror:** in January Laney *took the laptop away* from Lena over the Skye status; now she *brings it to her*.
   - **Irony:** Lena has given up Facebook for Lent, so she only sees it because Laney shoves it at her.
+  - **Lena's poker face fails (player-approved).** She tries to look blank and can't (the same way she can't keep a
+    straight face when Jack asks her). Laney reads it instantly ("Oh my God. *Lena.*"). On the date, Lena tells it as
+    a story on herself, and Jack gets to picture Laney's face.
