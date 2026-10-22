@@ -1113,3 +1113,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
        they're met. That's the long kiss.
     6. **The player chooses how Jack asks** (earnest, funny or blunt); her "no" lands like a truck for half a second in
        his narration before the player sees her face. Her answer is the same whichever way he asks.
+- **Lent 2010 observance (player; Ash Wednesday Feb 17 → Easter Apr 4).** Minimums: abstain from meat every Friday of
+  Lent; fast on Ash Wednesday and Good Friday. **Lena does more than the minimum, and Jack does something more too**:
+  e.g., fasting every Friday of Lent and/or a traditional devotion or a popular modern one. **Their dates avoid Fridays
+  during Lent.** (Specific practices: see the suggestions pending player approval, or room's call.)
