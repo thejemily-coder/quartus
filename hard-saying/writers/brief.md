@@ -1258,3 +1258,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     Jack's screen. Jack sees only the edges (Laney unusually quiet; a changed temperature with Lena; possibly one of
     the overheard fragments), and it **pays off in the New Orleans conversation** (he was waiting *for* her; "a
     week" is the misreading chain said aloud).
+  - **The last exchange before Jack walks away (player; adapt, near-verbatim).** Laney, **more pleading than angry**:
+    "She was really upset, Jack, and she didn't have anyone." Jack, **still just as angry**: **"Yeah, well. So was I."**
+    He leaves her standing there. (Laney's line explains Julian; Jack's is the hurt he's never admitted to anyone.)
