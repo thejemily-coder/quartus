@@ -58,3 +58,12 @@ locations are superseded by the outlines.**
 - en.wikipedia.org/wiki/2009_Iowa_Hawkeyes_football_team (at Ohio State, 2:30 p.m. CT, ABC/ESPN, L 24–27 OT).
 - hawkeyesports.com, Iowa post-game notes, Nov 14, 2009 (Rose Bowl clinch; Barclay 39-yd FG; 105,455).
 - irontontribune.com, "Posey remembers OT win that sent Ohio State to Rose Bowl."
+
+## 6. S1E17 revision pass (2026-10-22, vs. published S1E16 and the E17/E18 design rounds)
+
+No new sheet is needed: `s1e17-nov22-25-2009.md` + this addendum cover Sun Nov 22 – Wed Nov 25. **Beat map supersedes the sheet's old locations:** the Brick Mon-night
+scene is retired; the meeting is the Starlite, Wed Nov 25 ≈1:05–4:00 a.m. (after Tue Nov 24), the lot ≈4:15, break begins Wed. World facts in the sheet stand.
+- **The hours of silence (Sun Nov 22):** the AMAs ran Sun evening on ABC from the Nokia Theatre (E17 sheet 0.7 [V]); exact PST airtime UNVERIFIED (8 p.m. ET live; tape delay on the West Coast possible). Safe: "evening," "after dinner."
+- **Facebook, Nov 2009 (for E17 end / E18 open):** friend request with "confirm/ignore," Wall, Wall-to-Wall, News Feed ("Top News/Most Recent"), profile photo albums, "X and Y are now friends" stories, fan Pages (celebrities often had a Page plus a personal profile; 5,000-friend cap is real [recalled]). No Messages product until Nov 2010; Facebook Chat only. Facebook on a flip phone is slow (master). A famous actress's four-thousand-friend profile is plausible; real names/IDs are the room's invention.
+- **Thanksgiving trip clock (E18):** Thu Nov 26 holiday; Sat Nov 28 Ohio State/Michigan is already played (Nov 21); no Saints/Steelers/Browns facts beyond the E17 sheet were verified in this pass (the Thu Nov 26 games remain UNVERIFIED and blacklisted for E17).
+- **Do not use in E17:** Tiger Woods (Nov 27), Advent (Nov 29), Saab wind-down (Dec 22), Dubai World (Nov 25 evening onward).
