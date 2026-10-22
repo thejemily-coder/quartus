@@ -1038,3 +1038,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   puts that scene at her place, the first time she brings him home). The finale's empty-campus walk is then the first
   real time with Lena since the song, which is why it's the best night of the semester and why the airport-and-Skye
   ending stings.
+- **After S1E17 (player feedback).** "Absolutely fantastic. Skye was every bit sexy, charming and funny as hoped."
+  Theo, Laney and Gina great; Becca well done, with a couple of small knife twists.
+  - **NOTE FOR E18: the stale-Becca-status teasing already landed at the end of E17** (s24b: Skye saw Becca on his
+    profile, "always wanted to play the other woman"). **Do NOT repeat it in E18.** Replace that planned opening with a
+    different scene or two (room's choice: e.g., the drive from the airport with Frank, arriving at Glenwood Avenue,
+    Theo's arrival and first collision with Nonna, Gina interrogating Jack about Skye in secret, the status quietly
+    coming down, or Lena's first texts of the weekend). Skye's Thanksgiving texting continues, building from where E17
+    left it.
