@@ -911,3 +911,5 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     on for hours**, ending in **another extended, slow, very physical kiss** before she leaves. **Jack spends a long
     time afterward thinking about her lips.** (Skye episodes may run to ~22k words.) The Facebook add that reveals who
     she is comes during Thanksgiving break (E18).
+- **After S1E15 (player feedback).** "Lots of bittersweet hurt across the board. Excited for the Skye Era. Theo was
+  great this past episode."

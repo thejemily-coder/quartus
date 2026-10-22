@@ -1,0 +1,700 @@
+{
+ "scenes": {
+  "s05": {
+   "slug": "THURSDAY · 9:00 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "From the last flight Jack hears the playing change. The length of the stairwell it has been bad on purpose — clunking, cheerful, a wrong note planted every few bars like a tell — and then, just as he reaches the bottom landing, it stops being bad. Something slow comes through the fire door instead, one phrase of it, the right hand singing and the left rolling under it, real as anything. His shoulder hits the bar. The door bangs. The phrase breaks off in the middle, and what’s left, after a decent interval, is “Heart and Soul” with one finger, at the speed of a child being made to practice.",
+    "Lena is sitting sideways on the piano bench in a gray Rosary sweatshirt with the sleeves shoved up, her boots on the seat of a folding chair and a paperback open on her knee. Her right hand is reaching back behind her to the keys, picking out the tune without looking.",
+    "“Nobody admits to playing this piano,” Jack says.",
+    "“I’m not admitting,” she says. “I’m doing laundry.”",
+    "He holds up the bag. “So am I.”",
+    "At nine on a Thursday night the basement is theirs. Eight washers, three of them working. Six dryers along the far wall, one of them going, a pair of red socks coming round in its window. Priya’s laminated sign by the door with the hours on it and CLEAN THE LINT TRAP in capitals. The vending machines humming. The upright against the cinderblock, with its dead F. On the washer beside the bench, the Community Coffee mug, clean.",
+    "Lena hooks the folding chair with her boot heel and shoves it across the concrete at him without looking up. He loads the nearest working washer — jeans, the Mooney hoodie, a week of everything he owns in gray — feeds it quarters, and sits.",
+    "“She gave you the peace,” Lena says.",
+    {
+     "if": "e15_lounge==\"restraint\"",
+     "text": "“That’s as much as I’ll say about her. You told me she’s owed that.”"
+    },
+    "“She texted me at two.” Jack watches the washer fill. “She’s praying for me.”",
+    "Lena wets a finger and turns a page. “Course she is.”",
+    {
+     "if": "lena_knows_why_becca",
+     "text": "And then, still on the page: “Does your mama know?” “Not yet.”"
+    },
+    "“Julian’s playing Bastille till eleven,” she says. “He’s picking me up at twenty to twelve. Laney’s forcing the whole floor.”",
+    "“I’ve been forced.”",
+    "Bastille is Thursdays. It’s Thursday. She’s down here.",
+    "Over the vending machines there’s a clock in a wire cage, and from now on Jack knows where it is without having to look.",
+    "The paperback is Laney’s *New Moon*: TEAM JACOB across the cover in silver Sharpie, Post-its sprouting off the top edge in three colors. Lena is on page four hundred. “Laney says I can’t come tonight unless I’ve read it,” she says. “I’m reading it out of spite.”",
+    "“How’s the spite holding up?”",
+    "“I got through Leviticus faster,” she says. “Leviticus had more plot.”"
+   ],
+   "next": "s06"
+  },
+  "s06": {
+   "slug": "THURSDAY · 9:15 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "body": [
+    "She holds the book up at him, cover out, TEAM JACOB, like a crucifix at a vampire, and waits for the sneer.",
+    "He doesn’t have one. “I’ve read it.”",
+    "“You have not.”",
+    "“All four.”",
+    "Out loud, he tells her. To Gina, the summer before senior year, on the porch steps on Glenwood Avenue — a chapter a night, and then three — because that was the summer after Danny went in, and Gina wasn’t sleeping, and it was the only thing she’d let anybody read to her. Not Ma’s *Guideposts*. Not him doing Chesterton. Bella Swan and the boy with the Volvo, under the porch light, with the moths. They were halfway through the third one when the fourth came out, and Ma drove them to a strip-mall bookstore in Boardman for the midnight release, Gina in pajama pants among two hundred girls in pajama pants, and he had to read her the first chapter in the parking lot under a light pole because she wouldn’t wait for home. Some nights she fell asleep against the porch post before the end of a chapter, and he kept reading anyway, quieter, to the end of it, because you don’t stop in the middle. One night his father came out on the porch with a Stroh’s for the vampire baseball game in the thunderstorm, listened to two pages of it, said, “That’s not how you turn a double play,” and went back inside, and Gina laughed so hard she got the hiccups, and it was the first time she’d laughed since January.",
+    "Lena knows where Danny is. She closes the book on her finger and looks at him. “And?”",
+    "“She was furious at the ending. Seven hundred pages and they all stand around in a field and *talk*. She threw it at the porch light.”",
+    "“Did you do the voices?”",
+    "“I did not do the voices.”",
+    "“You did Edward.”",
+    "“I did a little Edward.”",
+    "“Which one did you like best?”",
+    "“*Eclipse*.” He doesn’t have to think about it. “There’s a night in a tent on a mountain in a snowstorm, and she’s freezing, and the werewolf has to get in the sleeping bag and keep her alive, and the vampire has to sit in the corner of the tent and *take* it. All night. Being polite.”",
+    "Lena stares at him. “That’s the most Catholic thing you have ever said to me.”",
+    "“Gina made me read that chapter twice.”",
+    "She laughs at him, and goes on smiling after the laugh is done, with her finger still in the book. “Does she sleep now?”",
+    "“Mostly. She’s fifteen. She sleeps through first period.”",
+    {
+     "if": "e15_bench==\"gina\" && e15_gina==\"sincerity\"",
+     "text": "“How is she now?” she asks. She read Gina’s texts, on the bench. “Did she make it right with that girl?” “I told her to apologize. Not for the truth — for why she said it. She said okay.” “Good,” Lena says."
+    },
+    {
+     "if": "e15_bench==\"gina\" && e15_gina==\"wit\"",
+     "text": "“How is she now?” she asks. She read Gina’s texts, on the bench. “Did it help, saying it?” “I told her good, now never do it again. She said it didn’t feel good.” “It never does,” Lena says. “That’s how you know you’re not a monster.”"
+    },
+    {
+     "if": "e15_bench==\"gina\" && e15_gina==\"candor\"",
+     "text": "“How is she now?” she asks. She read Gina’s texts, on the bench. “Is she all right?” “I told her she isn’t carrying Dad. She said ty.” “T-Y.” “It’s a full sentence, in Gina.”"
+    },
+    {
+     "if": "e15_bench==\"gina\" && e15_gina!=\"sincerity\" && e15_gina!=\"wit\" && e15_gina!=\"candor\"",
+     "text": "“How is she now?” she asks. She read Gina’s texts, on the bench. “Is she all right?” “I called her before school. Ten to four, my time. She ate Cheerios at me for twenty minutes.” “That’s love,” Lena says, “in fifteen.”"
+    },
+    "Lena and Gina are Facebook friends; Lena signs her wall posts to Gina like letters. So the next question is a serious one, and she asks it seriously. “Is she Team Edward?”",
+    "“She’s Team *Edward*. She says Jacob is literally a dog.”",
+    "“He *is* literally a dog.” Lena uncaps a pink highlighter and goes looking for the page."
+   ],
+   "next": "s07"
+  },
+  "s07": {
+   "slug": "THURSDAY · 9:35 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "duel": "twilight",
+   "set": {
+    "duel.twilight.lena": 1
+   },
+   "body": [
+    "By twenty-five to ten his washer has gone to rinse and Lena has turned round on the bench to face him with both boots planted on the concrete, and they are doing it properly. There’s no Margot down here, no marker, no Kevin with a stopwatch on his BlackBerry — two people and a dryer, and no one keeping count but them. The book is bristling. Pink, Lena explains, unprompted, is Laney for *swoon*; yellow is Laney for *problematic*, a word Laney got from Margot and now uses about everything, including the Pi Lam bylaws; green is Lena, objecting.",
+    "Jack opens with the obvious. “The prose —”",
+    "“Don’t. I know.” She holds up a hand. “The prose is a sin against the Ursulines. I’ve confessed reading it. Twice. Father Osei gave me a decade for the adverbs.” She lowers the hand. “That isn’t my argument.”",
+    "“Here’s what nobody at this school wants to hear,” she says. “It’s the only book in the world where the *boy* says no, Costigan. A hundred-year-old boy who won’t so much as kiss her properly in case it kills her, and who wants to marry her first. And millions of fourteen-year-old girls read that and decided the boy who won’t is hotter than the boy who will. A Mormon mother of three in Arizona did more for chastity in four books than a thousand youth ministers with purity rings and a PowerPoint.” She shuts the book and holds it against her chest like a missal. “Our Lady of Prompt Succor couldn’t have done better with a pamphlet.”",
+    "It’s a good argument. It’s a better argument than the one he brought down the stairs, which was that the books are bad."
+   ],
+   "choices": [
+    {
+     "text": "“He says no because he’d kill her. Bella’s dating a gas leak.”",
+     "tag": "Press",
+     "set": {
+      "duel.twilight.rigor": "+1",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“He says no because he’d kill her,” Jack says. “Bella’s dating a gas leak. You don’t get a medal for not lighting a match in a gas leak.”",
+      "“Fear of the Lord is the beginning of wisdom, Youngstown.” Lena doesn’t blink. “Edward’s just *literal* about it.” She opens the book again. “And you’d be amazed how many boys light the match.”"
+     ],
+     "goto": "s07a"
+    },
+    {
+     "text": "“Everybody’s chaste at a hundred.”",
+     "if": "trait.wit>=38",
+     "tag": "Riposte",
+     "set": {
+      "duel.twilight.wit": "+1",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Everybody’s chaste at a hundred,” Jack says.",
+      "Lena laughs, peels a pink Post-it off the top of the book, and sticks it to his knee. “That’s for cheap,” she says. “I don’t score cheap.”",
+      "“You laughed.”",
+      "“I laugh at Doug Pruitt. I don’t give Doug Pruitt *points*.”"
+     ],
+     "goto": "s07a"
+    },
+    {
+     "text": "“The boy says no. Fine. That’s rarer than vampires.”",
+     "tag": "Concede",
+     "set": {
+      "duel.twilight.heart": "+1",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“The boy says no,” Jack says. “Fine. I’ll give you that. It’s rarer than vampires.”",
+      "“Thank you.” And then, because she can’t help it: “At Marisol it’s rarer than *Catholics*.”",
+      "“Catholics who mean it.”",
+      "“Don’t push your luck, Youngstown. You were doing so well.”"
+     ],
+     "goto": "s07a"
+    },
+    {
+     "text": "“Chastity isn’t a no. It’s temperance — a yes to the right thing at the right time. Edward’s just scared.”",
+     "tag": "Reframe",
+     "set": {
+      "duel.twilight.rigor": "+1",
+      "soul.grace": "+1"
+     },
+     "response": [
+      "“Chastity isn’t a no,” Jack says. “Aquinas files it under temperance. It’s a yes — to the right thing, at the right time, for the right reason. Edward isn’t temperate. He’s scared.”",
+      "“Aquinas,” Lena says, “never met a boy with a Volvo.”",
+      "“Aquinas never met a *car*.”",
+      "“That’s my point. He’d have given it an entire question. *Whether the Volvo is an occasion of sin.* Objection one.”"
+     ],
+     "goto": "s07a"
+    }
+   ]
+  },
+  "s07a": {
+   "slug": "THURSDAY · 9:48 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "duel": "twilight",
+   "set": {
+    "duel.twilight.lena": 2
+   },
+   "body": [
+    "“Is he back yet?” Jack says. “Page four hundred. He’s got to be back.”",
+    "“Don’t you *dare*. I’m reading it in order, like a Christian.”",
+    "Across the room the washer bangs into its spin and hums against the cinderblock. Lena flips back most of the way and turns it around to show him: four pages in a row with nothing on them but a month. OCTOBER. NOVEMBER. DECEMBER. JANUARY.",
+    "“*New Moon*, though,” she says. “He leaves her. For her own good. He doesn’t ask her — he decides what’s good for her, and he goes, and she sits in a chair for four months.” She taps the empty pages, one, two, three, four. “That’s the worst thing a man can do to a woman, Jack. Decide for her and call it love.” She isn’t finished. “And everybody lets him. His family packs up the house and goes, because Edward’s decided, and not one of those vampires — and some of them have had *centuries* to think about it — says, *Has anybody asked Bella?*” She peels a green Post-it off the cover and sticks it, hard, on JANUARY.",
+    "She turns the book back around and finds her place."
+   ],
+   "choices": [
+    {
+     "text": "“Sometimes you stay away because you know what you’d do if you didn’t.”",
+     "tag": "Press",
+     "set": {
+      "duel.twilight.rigor": "+1",
+      "rel.lena.friction": "+1",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“Sometimes you stay away,” Jack says, “because you know what you’d do if you didn’t.”",
+      "Lena looks at him over the top of the book. It goes on past the place where she would usually have an answer ready. Then she turns a page she hasn’t read.",
+      "“Then you tell her so,” she says. “You don’t run off and sulk on another continent.”"
+     ],
+     "goto": "s07b"
+    },
+    {
+     "text": "“He should have asked her.”",
+     "tag": "Concede",
+     "cue": "Lena noticed.",
+     "key": "In the basement, about Edward leaving Bella for her own good, you told Lena: “He should have asked her.”",
+     "set": {
+      "duel.twilight.heart": "+2",
+      "rel.lena.trust": "+2",
+      "trait.sincerity": "+1",
+      "soul.honesty": "+1",
+      "told_lena_should_have_asked": true
+     },
+     "response": [
+      "“He should have asked her,” Jack says.",
+      "Lena is still for a moment, with the book open on her knee and her thumb on the page.",
+      "“Yes,” she says.",
+      "She says nothing else. She reads on."
+     ],
+     "goto": "s07b"
+    },
+    {
+     "text": "“Then a werewolf fixes her up a motorcycle. Seems like it worked out.”",
+     "if": "trait.wit>=38",
+     "tag": "Riposte",
+     "set": {
+      "duel.twilight.wit": "+1",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Then a werewolf fixes her up a motorcycle,” Jack says. “Seems like it worked out.”",
+      "“Do *not* say that in front of Laney.” Lena points the highlighter at him. “She’ll put you on a T-shirt. In glitter. She has the iron-on letters, Jack, I’ve *seen* them.”"
+     ],
+     "goto": "s07b"
+    },
+    {
+     "text": "“Margot says gallantry is a system for deciding things on other people’s behalf.”",
+     "if": "e13_caroline==\"becca\"",
+     "tag": "Reframe",
+     "set": {
+      "duel.twilight.rigor": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“Margot says gallantry is a system for deciding things on other people’s behalf.”",
+      "Lena’s eyebrows go up. “Margot said that?”",
+      "“To me. At the Harbor Inn.”",
+      "“Huh.” She writes something on a green Post-it and sticks it inside the cover. “Margot’s right more often than she lets on. Don’t you tell her I said so. She’ll put it in the *Tide*.”"
+     ],
+     "goto": "s07b"
+    }
+   ]
+  },
+  "s07b": {
+   "slug": "THURSDAY · 10:02 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "duel": "twilight",
+   "set": {
+    "duel.twilight.lena": 3
+   },
+   "body": [
+    "By two minutes past ten they’ve run out of Post-its to point with. Somebody on an upper floor flushes, and the water goes down through the wall behind the dryers like a heckler leaving early.",
+    "“At the Rosary,” Lena says, “half the junior class read these under the desks in Religion. Sister Agnes confiscated eleven copies and read every one of them. For safety.”",
+    "“Sister Agnes was Team Edward.”",
+    "“Sister Agnes was Team *Charlie*. She liked a man with a mustache who minded his own business.”",
+    "“So that’s why they read it,” Jack says. “For the waiting.”",
+    "“No.”",
+    "When she makes her last move she isn’t looking at him. She’s watching her dryer, the red socks coming round in the window and dropping and coming round.",
+    "“It isn’t about waiting at all,” she says. “Not really. Not the ring, not the rules. Every girl reading it wants one thing. To be the one somebody can’t stay away from — so much that a hundred years of good manners go out the window the day she walks into biology.”"
+   ],
+   "choices": [
+    {
+     "text": "“Then it’s a prayer with a vampire in it.”",
+     "tag": "Concede",
+     "set": {
+      "e16_twilight": "both",
+      "duel.twilight.heart": "+1",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Then it’s a prayer,” Jack says. “With a vampire in it.”",
+      "Lena turns from the dryer and nods at him slowly, like it’s a better answer than she had ready. “Okay,” she says. “Okay. I’ll take that.”"
+     ],
+     "goto": "s07v"
+    },
+    {
+     "text": "“Then he’s the villain of the book. He stayed away.”",
+     "tag": "Press",
+     "set": {
+      "e16_twilight": "jack",
+      "duel.twilight.rigor": "+1",
+      "trait.control": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“Then he’s the villain of the book,” Jack says. “He stayed away.”",
+      "“Oh, he’s a *terrible* boyfriend,” Lena says, still watching the socks. “I never said he wasn’t. That’s why they love him. They’re not stupid, Jack. They just want somebody to stay away from them that *hard*.”"
+     ],
+     "goto": "s07v"
+    },
+    {
+     "text": "“Laney’s going to be very upset you left Jacob out of it.”",
+     "if": "trait.wit>=38",
+     "tag": "Riposte",
+     "set": {
+      "e16_twilight": "lena",
+      "duel.twilight.wit": "+1",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Laney’s going to be very upset you left Jacob out of it,” Jack says. “He never stays away. He’s right *there*. With his shirt off.”",
+      "Lena opens her mouth, and shuts it, and swings round on the bench and points at him with the highlighter, grinning. “You just *forfeited*.”"
+     ],
+     "goto": "s07v"
+    }
+   ]
+  },
+  "s07v": {
+   "slug": "THURSDAY · 10:10 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "duel": "twilight",
+   "body": [
+    {
+     "if": "e16_twilight==\"both\"",
+     "text": "She scores it herself, with the highlighter, on the inside of Laney’s cover under TEAM JACOB, in small capitals: DRAW. “Edward would want us to wait for a ruling.”"
+    },
+    {
+     "if": "e16_twilight==\"jack\" && duel.twilight.rigor>=2",
+     "text": "She scores it herself. “Fine. You win.” She caps the highlighter. “Write it on the dryer, and don’t you dare tell Laney a vampire lost.”"
+    },
+    {
+     "if": "e16_twilight==\"jack\" && duel.twilight.rigor<=1",
+     "text": "She scores it herself. “You win the last one,” she says. “I had the first two.”"
+    },
+    {
+     "if": "e16_twilight==\"lena\" && duel.twilight.heart>=2",
+     "text": "She scores it herself. “I win. A joke’s a forfeit, Youngstown.” She caps the highlighter. “And you gave me the middle one for free.”"
+    },
+    {
+     "if": "e16_twilight==\"lena\" && duel.twilight.heart<=1",
+     "text": "She scores it herself. “I win,” she says. “A joke’s a forfeit, Youngstown.”"
+    },
+    "Then she tucks the highlighter behind her ear and stretches until something in her back pops, and Jack gets up to move his wash to a dryer, because his washer has been finished since the second round and he hadn’t noticed. It’s the first hour since Wednesday he hasn’t been thinking about it. He notices that he hasn’t, and then he is. He feeds the dryer quarters. When he turns around she’s sitting with the book shut on her knee, looking at the upright as if it had said something to her."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "twilight",
+     "title": "Team Edward",
+     "if": "e16_twilight==\"both\"",
+     "text": "Lena says *Twilight* is the best case for waiting anybody ever sold. We called it a draw. Edward would want us to wait for a ruling."
+    },
+    {
+     "kind": "note",
+     "id": "twilight",
+     "title": "Team Edward",
+     "if": "e16_twilight==\"jack\"",
+     "text": "Lena says *Twilight* is the best case for waiting anybody ever sold. I won, somehow. I’m not to tell Laney."
+    },
+    {
+     "kind": "note",
+     "id": "twilight",
+     "title": "Team Edward",
+     "if": "e16_twilight==\"lena\"",
+     "text": "Lena says *Twilight* is the best case for waiting anybody ever sold. She won. A joke’s a forfeit."
+    }
+   ],
+   "next": "s08"
+  },
+  "s08": {
+   "slug": "THURSDAY · 10:30 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "body": [
+    "At half past ten her dryer buzzes — the Delgado dryers don’t finish so much as complain — and stops. She folds on top of the washer: a black-and-gold Saints T-shirt washed soft as a dishrag, the oatmeal cardigan — she holds it up to the light, frowns at the hole in one elbow, and folds it anyway. The towels she leaves in a warm heap for later. “Mémère irons dish towels,” she says, smoothing the Saints shirt flat on the washer lid. “And pillowcases. And one Easter, Daddy’s twenty-dollar bills, so they’d be nice for the collection.” Jack watches her hands on the shirt, and then makes himself look at the vending machines.",
+    "Then she sits down at the upright, the right way round this time, facing it, and picks out a phrase with one finger. Slow, wrong, the top line of something that wants two hands and is getting one.",
+    "“This is the vampire song,” she says. “According to Laney. Laney also thinks the Pope can veto movies, so.” She plays the phrase again, worse. “Did you see what she put Theo in?”",
+    "“Jacob, under cashmere. For deniability. He showed me.” Jack leans on the washer. “It’s a lot of deniability.”",
+    "“Laney says if he takes the sweater off in the theater she’ll know the movie *worked*.”"
+   ],
+   "choices": [
+    {
+     "text": "“Play it right. Once.”",
+     "tag": "Sincerity",
+     "set": {
+      "e16_play": "ask",
+      "rel.lena.trust": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Play it right,” Jack says. “Once.”",
+      "She looks at him over her shoulder, and he waits for the joke, and it doesn’t come. She turns back to the keys and puts both hands on them."
+     ],
+     "goto": "s08a"
+    },
+    {
+     "text": "“Play it like Edward would. Brooding. In a Volvo.”",
+     "tag": "Wit",
+     "set": {
+      "e16_play": "wit",
+      "rel.lena.warmth": "+1",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Play it like Edward would,” Jack says. “Brooding. In a Volvo.”",
+      "She gives him three bars of Edward — shoulders up around her ears, chin down, glowering at the keys like they’ve insulted her family — and laughs at herself, and stops laughing, and starts again from the top."
+     ],
+     "goto": "s08a"
+    },
+    {
+     "text": "Fold her towels. Say nothing.",
+     "tag": "Restraint",
+     "set": {
+      "e16_play": "quiet",
+      "soul.restraint": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "He takes the second towel off the pile and folds it. He folds it wrong — in half, in half again, Glenwood Avenue style — and she gets up, takes it out of his hands, refolds it in thirds and sets it on the stack.",
+      "Then she sits back down at the upright. He hasn’t said a word."
+     ],
+     "goto": "s08a"
+    }
+   ]
+  },
+  "s08a": {
+   "slug": "THURSDAY · 10:36 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "music": "Debussy — “Clair de lune” (the basement upright)",
+   "set": {
+    "knows_lena_piano_played": true
+   },
+   "body": [
+    "It’s “Clair de lune.” Jack knows it the way everybody knows it — movies, commercials, the radio in a dentist’s office — and he has never heard it in a room.",
+    "First she sits a moment with her hands in her lap, the way Rosie sits before she says grace, as though she’s waiting on permission from somebody. Then she plays it slower than the radio does. Her right hand carries the tune and her left goes down under it and comes back up, and her shoulders come down from around her ears, and the bench creaks when she leans into the place where it opens out. She watches the keys, and then her eyes are on nothing in the room. And every few bars the tune walks onto the dead F and there’s nothing — a felt hammer on a string that won’t answer, a hole the size of one note — and she doesn’t stop for it or reach around it. She leaves the hole. The music goes on on both sides of it, and Jack hears the missing note anyway, because everything around it is so sure the note belongs there. Then it comes round again.",
+    "Near the end the compressor in the Coke machine kicks on and hums under her, and she plays over it.",
+    "Jack doesn’t move. If he moves she might remember he’s there.",
+    "When it’s done she keeps her hands on the keys until the last chord has gone out of the strings. Then she puts them in her lap.",
+    "Jack lifts his hands to clap.",
+    "“Don’t you dare,” she says.",
+    "He puts them down. “That,” he says, “was not badly.”",
+    "“No.”",
+    "“The Rosary-girl thing. Three in the morning, playing it wrong so nobody suspects.”",
+    "“That’s what I tell people.” She flexes her fingers, one hand and then the other. “If you play well, people ask you to play.”",
+    {
+     "if": "e16_play==\"ask\"",
+     "text": "“You asked.” “I asked.”"
+    },
+    {
+     "if": "e16_play==\"wit\"",
+     "text": "“You asked. More or less.” “I asked.”"
+    },
+    {
+     "if": "e16_play!=\"ask\" && e16_play!=\"wit\"",
+     "text": "“You didn’t even ask.” “I didn’t.”"
+    },
+    "“The last time I played it right in front of anybody,” she says, “was in November. Four years ago.”",
+    "She doesn’t say where. He doesn’t ask.",
+    {
+     "if": "e14_grief==\"house\"",
+     "text": "Jack thinks of a front window on Zimple Street, and the sewing table she put in it."
+    },
+    "Her hand goes up to the medal at her collar, rests there, and comes back down to the keys. She plays the first two bars again, quietly, as far as the dead F, and stops there."
+   ],
+   "next": "s09"
+  },
+  "s09": {
+   "slug": "THURSDAY · 11:15 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "body": [
+    "They talk until the caged clock says a quarter past eleven: the nun at the Rosary who hit the music stand with a ruler and never the child; Laney’s Post-it key, written out on an index card and folded into Laney’s wallet behind her fake ID; whether the Delgado dryers are possessed or only Protestant; whether Our Lady of Prompt Succor has ever been asked to do anything about the Browns, and whether she’d even consider it. His laundry tumbles. Hers sits folded on the washer with the book on top.",
+    "Then she shows him the dead F. She scoots down to make room, and he sits beside her on a bench built for one and a half, shoulder to shoulder, his knee against the side of the keyboard.",
+    "“That one.” She presses it. The key goes down, the hammer goes, and nothing happens. “Dead since before Priya. Every piano’s got one note that won’t. That’s this one’s.”",
+    "Jack considers the dead F. He cracks his knuckles. He shakes out his wrists for Carnegie Hall, lifts his right hand high over the keyboard, holds it there with his eyes shut — and brings one finger down on the dead F, tenderly, and holds it, swaying a little, while it makes no sound at all.",
+    "Lena goes. She laughs so hard she has to grab his arm to keep from sliding off the end of the bench, and she’s still hanging on to it, gasping, when she says, “Again,” and he does it again, softer — the sad part — with a little vibrato on nothing.",
+    "She wipes her eyes with the heel of her hand. Then she reaches across to show him how it’s really done, the dead F with some wrist in it, and his finger is still on the key, and hers comes down on top of it. The same key. The same octave. She doesn’t take it away, and for the length of a breath he can feel her pulse in the side of her finger, or his own.",
+    "He wants her. On a bench this size it isn’t complicated."
+   ],
+   "choices": [
+    {
+     "text": "Slide your hand down an octave. Play her the bass half of “Heart and Soul.”",
+     "tag": "Restraint",
+     "set": {
+      "e16_bench": "restraint",
+      "soul.restraint": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "He slides his hand out from under hers and down to the bottom of the keyboard and starts the bass half of “Heart and Soul,” the four chords every kid learns first.",
+      "Lena takes the top without being asked. They play it badly together, on purpose, louder every time round, until the vending machine rattles — and she ends it, because of course she does, on the dead F."
+     ],
+     "goto": "s09j"
+    },
+    {
+     "text": "Don’t move your hand when hers finds the same key.",
+     "if": "trait.reckless>=28",
+     "tag": "Reckless",
+     "key": "On the piano bench, when Lena’s hand found the same key, you didn’t move yours.",
+     "set": {
+      "e16_bench": "reckless",
+      "rel.lena.heat": "+1",
+      "resolve.jack": "-1",
+      "soul.restraint": "-1",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "Jack doesn’t move his hand."
+     ],
+     "goto": "s09r"
+    },
+    {
+     "text": "“This was a good night.”",
+     "tag": "Candor",
+     "set": {
+      "e16_bench": "candor",
+      "rel.lena.trust": "+1",
+      "rel.lena.warmth": "+1",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“This was a good night,” Jack says.",
+      "Lena looks down at their two hands on the one key. Then she takes hers back into her lap.",
+      "“It was,” she says. And then, because she’s Lena: “Don’t you tell Laney I played.”"
+     ],
+     "goto": "s09j"
+    }
+   ]
+  },
+  "s09r": {
+   "slug": "THURSDAY · 11:22 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "set": {
+    "resolve.lena": 4
+   },
+   "body": [
+    "Neither of them plays the key. Her fingers lie along the back of his, on ivory that wouldn’t make a sound if they did. The clock in its cage gets to twenty past and keeps going. He can smell the dryer sheets on her sleeve. He wants to turn his hand over under hers and hold it, and he doesn’t, and he doesn’t take it away either.",
+    "Lena breathes in once, slowly. Then she reaches across him with her other hand and draws the fallboard down over the keys — slowly, slowly enough that both their hands are under the edge of it, and then they aren’t — and it comes to rest on the keys with a soft wooden knock.",
+    "She leaves her hand on the lid."
+   ],
+   "next": "s09j"
+  },
+  "s09j": {
+   "slug": "THURSDAY · 11:40 PM · DELGADO HALL, THE BASEMENT LAUNDRY ROOM",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    "At twenty to twelve the door at the top of the stairs opens and Julian Park-Ellis is standing in it: a cardigan that was somebody’s father’s, car keys in one hand, the guitar case with the BART sticker in the other, straight from Bastille. He doesn’t come down.",
+    "“Lena? We’ll miss the vampires.” He finds Jack and nods to him, friendly, meaning it. “You coming? There’s room in the car.”",
+    "“I’m going with the floor,” Jack says.",
+    "“Sure. See you there.”",
+    "Lena gets up. She stacks the folded laundry in her basket, sets Laney’s book on top with its Post-its fluttering, and hooks the Community Coffee mug on one finger. At the bottom step she turns round. “Go on up, Youngstown,” she says. “Laney’s taking attendance.” She goes up the stairs with the basket on her hip, and at the top Julian takes the basket from her, and the lobby comes down the stairwell at them — somebody up there is already shrieking about capes — and the last thing Jack hears is Julian asking if she finished the book, and Lena saying she’s reading it out of spite, and Julian laughing like he’s glad to know it.",
+    {
+     "if": "e16_bench==\"reckless\"",
+     "text": "Jack is still on the bench. The fallboard is down over the keys, where she put it.",
+     "else": "Jack is still on the bench. The keys are open, all eighty-eight of them, one of them dead."
+    },
+    "His dryer has stopped. Hers, when he gets up and puts his hand on the drum, is empty and still warm."
+   ],
+   "next": "s10"
+  },
+  "s11": {
+   "slug": "FRIDAY · 5:10 PM · DELGADO HALL, ROOM 217",
+   "set": {
+    "resolve.lena": 5
+   },
+   "body": [
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "TEAM EDWARD. jacob is literally a dog. dont tell me u disagree",
+     "time": "12:40 PM"
+    },
+    {
+     "if": "e15_gina==\"control\"",
+     "type": "sms",
+     "from": "Gina",
+     "text": "u can call before school again. if u want. whatever",
+     "time": "12:41 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Laney",
+     "text": "lena is DYING. she wants anchor chicken & rice. ur the only one with a hookup. GO.",
+     "time": "3:12 PM"
+    },
+    "He’s on four hours of sleep and the Rialto’s popcorn. At the first light on Mission he texts Gina back, one key at a time: *agreed. dog.*",
+    "It’s three miles to the wharf on La Flaca with the wind in his face. Rudy lifts a spatula at him from the flat-top. Gloria fills a quart of the chicken and rice before he’s finished asking, snaps the lid on, and drops it in a paper sack with a sleeve of saltines. “For the pecan,” she says. “Tell her it’s from me.” He rides it back up Mission Street in the basket with one hand on the sack at every light.",
+    "217’s door is open. There’s a campus-clinic flyer about H1N1 taped to it at Laney’s eye level, with *FEVER = GO HOME* circled twice in pink.",
+    "Lena is in bed under the quilt in a Mardi Gras sweatshirt — purple, green and gold, the fleur-de-lis cracked from the wash — with a box of Kleenex at her hip and her laptop on her knees, and her nose is red, and she is saying, “It’s a *cold*, Laney, I took my temperature, it’s ninety-nine-point-*nothing*,” to Laney, who is lying on her own bed with a nail file and a folded sheet of lined paper, a list of song titles in somebody’s neat capitals; she keeps turning it over and smoothing it on her stomach. Margot is in the desk chair in black, with a printout stapled at the corner and marked up in red.",
+    "And Julian is there. He’s sitting on the floor with his back against Lena’s bed and his cardigan sleeves pushed up, unscrewing a tall steel thermos with a dent in the side. Steam comes off it, rice and ginger and sesame. “My mom’s,” he’s saying. “Juk. For colds. She’d disown me if I brought you canned.”",
+    "Jack is in the doorway with the Anchor’s quart.",
+    "“*Jack* brought the *Anchor*,” Laney announces, sitting straight up on her bed, a pageant host with a surprise finalist.",
+    "Two soups.",
+    "Lena sees him and her face goes bright. “*Jack*. Is that the *Anchor*?” She holds out both hands, and he crosses and puts the sack in them. She holds the quart a moment in her lap, warm through the paper, and says “Gloria” the way other people say a saint’s name. Then she sets it on the windowsill beside the bed, carefully, label out. “For tomorrow,” she says. “I’m going to want it *tomorrow*.” And she takes the bowl Julian has poured her, and the spoon, and eats. The quart sits on the sill with the afternoon behind it, a strip of masking tape across the lid that says PECAN in Gloria’s capitals.",
+    "She’s glad Julian is there. It’s on her, plain as the cold.",
+    "Laney’s nail file stops.",
+    "Jack puts his empty hands in his pockets.",
+    "“You walked home last night,” Julian says to him, looking up from the floor. “I saw you wave off Kevin’s van. All of Mission Street, at two-thirty?” “It was a nice night.” “It was,” Julian says, and sounds like he noticed it too.",
+    "“If it’s a hundred by tonight you’re going to the clinic,” Laney tells Lena, “and I’m carrying you, and I’m wearing the mask.” “It’s not going to be a hundred.” “Then I’ll wear the mask for fun.”",
+    "On the laptop, when Lena turns it round to show him, is a long page of names, and hers is the last one on it. “The Manhattan Declaration,” she says, through the cold. “It came out this morning. Life, marriage, religious liberty — Orthodox, evangelicals, us. I signed it for the last part.” She blows her nose. “They say if the law tells them to help kill somebody, they won’t do it, and they’ll take what comes. Caesar can have everything that’s Caesar’s and not one thing that’s God’s. Dorothy Day went to jail, Jack. These men are promising to go.”",
+    "“These men,” Margot says, “are archbishops. Not one of them is going to jail. They’re going to a fundraiser.” She turns a page of the printout. “And I’d take it more seriously if it didn’t do this. The marriage section puts two men in Portland who’d like to file a joint return in the same paragraph as the unborn child, in the same tone of voice, as if they were the same kind of claim, and then it ties them in one bundle and calls the bundle *conscience* — so that anyone who disagrees with the second is persecuting you about the first. It’s coalition maintenance dressed up as moral philosophy.” She caps her red pen. “It’s very well done. That’s what bothers me.”",
+    "“It’s the same question,” Lena says. “What a body is *for*. They just answer it in one breath.”",
+    "“That’s my point.”",
+    "“Then we disagree about what a body’s for, Margot. We’ve disagreed about it since September.” Lena sniffs. “I signed it anyway.”",
+    "Julian has been listening to all of it with his arms around his knees. Now he looks up at Lena and asks her, because he really wants to know, “What would you go to jail for?”",
+    "Lena puts the spoon down. She thinks about it — actually thinks — and then she tells him, and it takes the rest of the bowl. If they made it a crime to feed people under the Claiborne overpass, she’d go. If a girl wanted to keep her baby and everybody with a clipboard was telling her she couldn’t afford to, Lena would go with her, wherever that was. If they ever made a nurse hand somebody the pill or the needle, she’d go with the nurse. “Not for a bishop’s feelings,” she says. “I wouldn’t go to jail for a bishop’s feelings.”",
+    "Julian listens to every word. When she’s done he doesn’t argue with any of it. He says, “Okay,” like it’s something about her he means to keep, and fills her bowl again from the thermos.",
+    "It’s a good question. Jack wishes he’d been the one to ask it.",
+    "Then Lena tips the laptop toward the doorway. “Costigan?”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t. On a motel porch above Lucia at three in the morning she told me I can’t say her name like that. She asked what I decided. Not to be the one who wrecks anything, I said. She said okay. Then: me neither. Bought her Mémère a fruitcake from the monks, in exact change. ‘A girl writes the thing she wants first, Youngstown.’ Halloween: Flannery O’Connor, with a stuffed peacock tagged 57. Andalusia. She wouldn’t go past the last house on Seacliff, not even for Laney. ‘I came as her. I never said she was right.’ In the last minute of the extra hour, she put my hat back on. All Souls: she wrote her grandmother’s name in the book, and Nora Calloway’s. Nora was her host at Preview Weekend, in April. That night Wes ended it, on the phone, on the east stairs. He stopped going to Mass in September. There’s a ring. She knew something in September and decided not to notice — she says she’s good at it. At six in the morning she asked me what I’m going to do. She wrote Hale twelve pages in the spring of ’08, two years after the year she yelled at God. She’s had the same postcard the whole time. She knew mine on the porch. She had a house picked out on Zimple Street. A fig tree. She’d picked the paint. Veterans Day, on the bench above Campus Point: St. Martin gave the beggar half his cloak; she says everybody forgets the beggar took it. No. 9 for the reliquary. Friday the 13th, under the eucalyptus, in the middle of a sentence about monarchs: Julian asked her to dinner. So. Thursday night in the basement she played the piano properly — around the dead F. The last time she played it right in front of anybody was a November, four years ago. If you play well, she says, people ask you to play. Reading *New Moon* out of spite. Friday she signed the Manhattan Declaration from bed, with a cold. Two soups. She ate Julian’s. Mine’s on the sill for tomorrow."
+    },
+    {
+     "kind": "person",
+     "id": "gina",
+     "title": "Gina",
+     "text": "My sister. Fifteen, a sophomore at Ursuline. Texts in lowercase like punctuation costs extra. A girl in religion class called her the class expert on visiting the imprisoned. Dad turned the radio back on. Nonna told the altar society I went to confession. Said Danny’s name back to the girl. The girl looked away first. Then laughed with Kelsey anyway. Gina wants the first part on the record. She wanted to know if the nun was real. Now they’re Facebook friends, and Lena signs her wall posts like letters. Gina found the boyfriend in about four minutes. Didn’t tell Nonna. Ashley Vrabel is going to Halloween as a prisoner. Orange jumpsuit. A tribute, she says. Lena read it once and gave me a line for her. Halloween: went as a nun, obviously. Ashley wore the jumpsuit. Gina said it — visit, not dress up as — and Kelsey laughed at Ashley for once. Ashley says she’s dead Monday. Ashley sat next to her in religion and didn’t say anything. Kelsey either. The radio says they’re firing the GM. Dad laughed, Ma says. First time since June. Tuesday she said the thing about Ashley Vrabel’s father in religion. Detention. She thought it would feel good. She heard Dad’s truck hit the can Monday night. Team Edward. Jacob is literally a dog."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Give me the laptop.”",
+     "tag": "Sign",
+     "key": "Friday Lena signed the Manhattan Declaration from bed with a cold. You signed it too.",
+     "set": {
+      "e16_decl": "sign",
+      "jack_signed_manhattan": true,
+      "rel.lena.warmth": "+1",
+      "soul.grace": "+1"
+     },
+     "response": [
+      "“Give me the laptop,” Jack says.",
+      "Lena passes it to him over Julian’s head, and Jack types his name standing up, hunting for the letters, and hands it back.",
+      "“Welcome to the resistance, Costigan,” Lena says. “Bring a toothbrush.”",
+      "From the desk chair, Margot: “Two useful idiots. One laptop.”"
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "“I’ll sign the part about the baby. I won’t promise a website I’ll break the law.”",
+     "tag": "Press",
+     "key": "Friday you told Lena you’d sign the part about the baby — but you won’t promise a website you’ll break the law.",
+     "set": {
+      "e16_decl": "press",
+      "trait.candor": "+1",
+      "rel.lena.friction": "+1",
+      "rel.margot.warmth": "+1"
+     },
+     "response": [
+      "“I’ll sign the part about the baby,” Jack says. “I won’t promise a website I’ll break the law.”",
+      "Lena stares at him over the Kleenex. “*Youngstown*. You’d go to jail for *nothing*?”",
+      "“I’d go to jail for something. I just won’t promise it in advance. To a website.”",
+      "“Somebody note the date,” Margot says. “He’s being reasonable. It’s terrifying.”"
+     ],
+     "goto": "s12"
+    },
+    {
+     "text": "To Margot: “You’re right that it isn’t the same kind of claim.” Then sign.",
+     "tag": "Concede",
+     "key": "Friday you told Margot she was right about the marriage section — and signed the Declaration anyway.",
+     "set": {
+      "e16_decl": "concede",
+      "jack_signed_manhattan": true,
+      "rel.margot.trust": "+1",
+      "rel.margot.warmth": "+1",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“You’re right,” Jack tells Margot. “It isn’t the same kind of claim.”",
+      "Then he takes the laptop off Lena’s knees and signs it.",
+      "Margot, who is not often thrown, is thrown. “Then why *sign*?”",
+      "“Because the rest of it’s right.”",
+      "Lena blows her nose at both of them."
+     ],
+     "goto": "s12"
+    }
+   ]
+  },
+  "s12": {
+   "slug": "FRIDAY · 5:50 PM · THE 2ND-FLOOR HALL → THE EAST STAIRS",
+   "set": {
+    "knows_margot_julian": true
+   },
+   "body": [
+    "Julian goes first, at a quarter to six, with the empty thermos under his arm; he has a rehearsal, he says, and he’ll come back at nine with tea. On his way past the bed he touches Lena’s hair.",
+    "Five minutes later Jack and Margot go too. Margot pulls 217’s door to behind them and it doesn’t catch — the latch has never quite met the plate — and it drifts back open a hand’s width on the hall.",
+    "Inside, Laney is talking, low and fast, too low to make out. It has the shape of something she’s been saving all afternoon.",
+    "Then Lena, stuffed up and patient and perfectly clear: “—Laney, he *ended* it. People are sad when they end things. Even when they’re the one who does it.”",
+    "Jack is still standing there with his hand half out for the knob when somebody inside pushes the door shut.",
+    "Margot is already at the east stairs. Jack follows her down. A flight below, without turning round, she says it.",
+    "“He brought her his mother’s porridge, and he asked her what she’d go to jail for, and then he listened.” Another step. “He’s the healthiest thing in her life, Costigan.”",
+    "“I’ve done a great deal of fieldwork on couples,” she says, “most of it at my parents’ kitchen table. That one doesn’t need a footnote.”",
+    "She isn’t being clever. She means it.",
+    "“I know,” Jack says. He does know. He watched the man fill her bowl.",
+    "Margot nods, once, as though he’s confirmed a source."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "julian",
+     "title": "Julian Park-Ellis",
+     "text": "Julian Park-Ellis. The guitar guy from the Lighthouse stairs. Plays Bastille Thursdays. Wrote a song called “Fresno.” Plays it once a month. All Souls: came to St. Brendan’s to write Nora Calloway’s name in the book. She was his friend. They sang together. He saw us leave in the second chorus. Something new Thursday. A handshake you’d trust with anything. Sunday he came to the nine o’clock with Lena. Didn’t receive. Had the Sanctus by ear by the end. Picked Lena up at twenty to twelve for the vampires, straight from Bastille. Friday he brought her juk in his mother’s thermos and asked her what she’d go to jail for, and listened to all of it."
+    },
+    {
+     "kind": "person",
+     "id": "margot",
+     "title": "Margot Lindqvist",
+     "text": "Margot Lindqvist. Has a folder on me. Called Lena and me useful idiots for Christian nationalism in front of four hundred people. Made a point about the Euthyphro I still can’t answer. Her mother teaches Classics at Reed. Held a wake for a cigarette on the roof and buried it at sea, for the prose. Had a brother. Her mother was forty-one; the test came back; they’d already picked the name. Anders. March 15, 2000. She’s defended her mother in every room since, and she defended her on the roof. Lena said his name. Doesn’t sleep. My friend. She has a faith column now, in the *Tide*, on a trial basis. If it’s boring they’ll kill it. She told me not to be boring. Came to Big Sur as an observer, for the monks — a functioning patriarchy in its natural habitat. Ran the *Tide*’s Ferrer follow-up from a minivan and wrote nothing down. Sunday at the coffee urn: ‘I’m not writing anything down.’ Halloween: Joan of Arc in duct tape, with her own haircut. Best Couple, with Pope Joan. She called it a category error and laughed anyway. Told me I’m surface acting. Hochschild, 1983. The flight attendants. On the stairs, about Julian: ‘He’s the healthiest thing in her life, Costigan.’ She meant it."
+    }
+   ],
+   "next": "s13"
+  }
+ }
+}
