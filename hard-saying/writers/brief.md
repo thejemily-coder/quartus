@@ -1354,3 +1354,5 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     numbers), his soul and resolve, and the season's biggest choices the player made. (Engine work at the E22
     build; spoiler-safe; no hidden canon.) **No S2 teaser.**
   - **The finale's last needle-drop: The National, "Fake Empire"** (2007, *Boxer*) over the Denver cut to black.
+  - *(Implementation: the engine now supports a top-level `seasonRecap` on a finale (see schema.md). The S1E22
+    Architect writes it: `people` order and 6–10 gated `highlights` of the season's biggest choices.)*
