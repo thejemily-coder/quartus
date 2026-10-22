@@ -17,46 +17,15 @@
     "The organist is at the upright in a sweater with a ship’s wheel knitted into the front, bringing his hands down on the chords like he means to be heard in Monterey. Mrs. Fitch is at his shoulder with a cup of punch and the descant. “Gus,” she says, between lines, “you’re *dragging*.” He doesn’t speed up. Gus. A semester of Sundays, and the voice has a name.",
     "The Lava is where the priest said, behind the Comet, a gray bar worn down to the shape of somebody’s grip. Jack runs the tap as hot as it goes and does one hand at a time. The left waits its turn over the front pocket of his jeans, over the RAZR, black to the wrist, leaving a print on the denim. Through the pass-through Laney, at the punch bowl, finds the hand with her eyes and keeps them on it while she drinks. Behind her, coming in from the porch with Julian, Lena follows Laney’s eyes to it.",
     {
-     "if": "left_second_chorus",
-     "text": "Lena gets to the pass-through first. She’s in the cardigan, with a red ribbon in her hair, and she ladles a cup of punch and holds it out across the counter to him with her eyes on the bowl. “Good evening, Jack.” Kind, and formal, and finished. He takes the cup in his clean hand."
-    },
-    {
-     "if": "left_second_chorus && e21_reply==\"wit\"",
-     "text": "“Through the glass,” she says, and nothing more."
-    },
-    {
-     "if": "left_second_chorus && e21_reply==\"candor\"",
-     "text": "She looks at him over her own cup, once, and drinks."
-    },
-    {
-     "if": "left_second_chorus",
-     "text": "Julian, at her elbow, is decent anyway. “You missed the bridge,” he says. “It’s the best part. I’ll play it for you sometime.”"
-    },
-    {
-     "if": "!left_second_chorus && e21_reply==\"restraint\" && julian_she_wanted",
-     "text": "Julian reaches across the counter first and shakes his hand, black and all, warm, and doesn’t look at his own afterward."
-    },
-    {
-     "if": "!left_second_chorus && e21_reply==\"restraint\"",
+     "if": "e21_reply==\"restraint\"",
      "text": "Lena ladles herself a cup on the other side of the counter. She’s in the cardigan, with a red ribbon in her hair. “You didn’t answer me.” “I know.” “I know you know.” She drinks, and her face changes at the punch."
     },
     {
-     "if": "!left_second_chorus && e21_reply!=\"restraint\" && julian_she_wanted",
-     "text": "Julian reaches across the counter first and takes his hand, black to the wrist, and shakes it as if it were clean. “Gus needs a bass,” he says. Lena, ladling, in the cardigan and a red ribbon, says “Youngstown,” over the counter, and drinks, and her face changes at the punch."
-    },
-    {
-     "if": "!left_second_chorus && e21_reply!=\"restraint\" && !julian_she_wanted",
+     "if": "e21_reply!=\"restraint\"",
      "text": "Lena, ladling, in the cardigan and a red ribbon, says “Youngstown,” over the counter, and drinks, and her face changes at the punch. Julian lifts his cup to him from her elbow."
     },
     "Jack turns the tap back on and goes to work on the other hand. He scrubs till the water runs gray and stays gray. The black comes off the backs of his hands; under the nails it stays, and will, he can tell, for days. When he looks up again the pass-through is full of other people.",
-    {
-     "if": "e20_mass==\"noon\"",
-     "text": "Becca comes around into the kitchen with the clipboard on her hip and finds him at the sink. “Line three! You *came*.” She shows him: COSTIGAN, in her block capitals. “Ten dollars, nothing that eats. Mrs. Fitch is checking.”"
-    },
-    {
-     "if": "e20_mass!=\"noon\"",
-     "text": "Becca comes around into the kitchen with the clipboard on her hip and finds him at the sink. “You’re on my list anyway,” she says, and shows him: COSTIGAN, in block capitals. “Line three. Kevin vouched. Ten dollars, nothing that eats — Mrs. Fitch is checking.”"
-    },
+    "Becca comes around into the kitchen with the clipboard on her hip and finds him at the sink. “Line three! You *came*.” She shows him: COSTIGAN, in her block capitals. “Ten dollars, nothing that eats. Mrs. Fitch is checking.”",
     "Tyler Brandt comes in for punch and stays for the sink, a hand like a catcher’s mitt on Jack’s shoulder. “Brother. Brian Kelly.” He looks down into the Lava. “He left an *undefeated* team. In the *night*. For Notre *Dame*. I’m from Cincinnati. I don’t know whether to pray for him or *at* him.”",
     "Bridget McNulty is at the coffee urn by the back door, filling it from a can of Folgers, and she’s the only one tonight who looks at his face instead of his hands. She puts a dish towel over his shoulder on her way past and doesn’t say anything about it.",
     "In the front room Joey Abruzzo is explaining to two sophomores from the choir, at volume, that four of Mrs. Fitch’s lemon bars count as one if they’re touching. Peter Haddad is up a stepladder straightening the angel with Kenzie holding the ladder for him; he gets the angel upright and lets go, and the angel leans again.",
@@ -65,23 +34,9 @@
     "“For what?”",
     "“Advent,” says Theo.",
     "Margot has the step stool in the corner by the back door and a Moleskine open on her knee. “For the column,” she says, when he looks at the notebook. “Field notes on a Catholic Christmas party, held, I’m informed, in Advent.”",
-    {
-     "if": "e20_doug==\"candor\"",
-     "text": "“My whiteboard still has an unexplained witness, Costigan.” She turns a page. “It’s my only open case.”"
-    },
-    {
-     "if": "e20_doug!=\"candor\"",
-     "text": "“Six-ten this morning,” she says, writing. 305 has the front walk. “I’ve stopped counting. It was getting sad.”"
-    },
+    "“Six-ten this morning,” she says, writing. 305 has the front walk. “I’ve stopped counting. It was getting sad.”",
     "Kevin is by the refrigerator in a green sweater with a white snowflake across the chest that his mother mailed from San Jose, worn, he has told everybody, out of love and under protest.",
-    {
-     "if": "e20_doug==\"control\"",
-     "text": "“The bell works,” he tells Jack, low. “Doug got as far as the hall Wednesday. I walked him back.” He tastes the punch, and looks at Laney."
-    },
-    {
-     "if": "e20_doug!=\"control\"",
-     "text": "Kevin tastes the punch, and looks at Laney."
-    },
+    "“The bell works,” he tells Jack, low. “Doug got as far as the hall Wednesday. I walked him back.” He tastes the punch, and looks at Laney.",
     "The punch is peppermint schnapps and something clear that Laney, asked, calls “a Texas thing,” and it has been working on Mrs. Fitch for three cups. On the second verse she comes in a third above everybody, high and sure and gloriously in tune, and Gus turns half around on the bench to see where it’s coming from. Father Osei comes through with the coats put away, takes a cup, tastes it, and holds it up to the light over the stove. Laney is studying the angel. Osei sets the cup down, lifts the whole bowl off the pass-through in both arms, and puts it on top of the refrigerator next to the fire extinguisher. “Gaudete is Sunday, Miss Price,” he says. “You’re early.”",
     "Kevin reaches into the black velvet clutch under Laney’s arm and comes out with a silver flask the size of a prayer book. “Respectfully,” he says, and it goes into his own back pocket.",
     "By the tree Theo has his iPhone out, and he reads off it, for everybody, in his voice for the intentions at the twelve-ten, grave and even, as if he were asking prayers for the sick: “…*an indefinite break from professional golf.*”",
@@ -149,15 +104,7 @@
      "kind": "person",
      "id": "becca",
      "title": "Becca Lindell",
-     "if": "e20_mass==\"noon\"",
      "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey. She asked how I’m getting home. Greyhound. She frowned. Her mother sent a box: socks, cookies, two jars of huckleberry — JACK, and FOR THE CATHOLIC ROOMMATE. She offered me Daisy’s money. Six hundred and twelve dollars. It’s there, she says. Daisy doesn’t mind. Saturday, Ohio State in overtime: she gave me a photograph of the elephant seals in a frame she painted, every seal labeled with what it weighs. She’ll call during her dad’s grace on Thanksgiving so I can hear it. She wants to watch Michigan here, with me. ‘Someday I want to see your house. Is that okay to say?’ Ma wrote her. Three days after Christmas. Pittsburgh’s cheaper than Cleveland. She looked. Wednesday, in Eli’s truck, I told her. She said she did everything right, and she did. ‘It just isn’t the thing, is it.’ She asked me to leave it up on Facebook till she’s told her mom at the table. Thursday at two she texted. Still praying for me — not a girlfriend thing, she says. At the twelve-ten she turned around across the aisle at the sign of peace and held out her hand. Then she held it out to Lena. At the airport, a week to the day: St. Raphael, for Nonna. Father Osei read the name at the twelve-ten, and she heard. Thanksgiving: told her mom at the table. Texted me first — happy Thanksgiving, praying for Nonna, taking it down now. Then she did. The Immaculate Conception, on the steps after the 12:10: white elephant, ten dollars, nothing that eats. Thomas is going home to Idaho in a Tupperware to see snow. The Advent party: ran the white elephant like a cattle auction. Three steals and it’s frozen."
-    },
-    {
-     "kind": "person",
-     "id": "becca",
-     "title": "Becca Lindell",
-     "if": "e20_mass!=\"noon\"",
-     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey. She asked how I’m getting home. Greyhound. She frowned. Her mother sent a box: socks, cookies, two jars of huckleberry — JACK, and FOR THE CATHOLIC ROOMMATE. She offered me Daisy’s money. Six hundred and twelve dollars. It’s there, she says. Daisy doesn’t mind. Saturday, Ohio State in overtime: she gave me a photograph of the elephant seals in a frame she painted, every seal labeled with what it weighs. She’ll call during her dad’s grace on Thanksgiving so I can hear it. She wants to watch Michigan here, with me. ‘Someday I want to see your house. Is that okay to say?’ Ma wrote her. Three days after Christmas. Pittsburgh’s cheaper than Cleveland. She looked. Wednesday, in Eli’s truck, I told her. She said she did everything right, and she did. ‘It just isn’t the thing, is it.’ She asked me to leave it up on Facebook till she’s told her mom at the table. Thursday at two she texted. Still praying for me — not a girlfriend thing, she says. At the twelve-ten she turned around across the aisle at the sign of peace and held out her hand. Then she held it out to Lena. At the airport, a week to the day: St. Raphael, for Nonna. Father Osei read the name at the twelve-ten, and she heard. Thanksgiving: told her mom at the table. Texted me first — happy Thanksgiving, praying for Nonna, taking it down now. Then she did. The Advent party: ran the white elephant like a cattle auction. Three steals and it’s frozen."
     }
    ],
    "choices": [
@@ -248,10 +195,6 @@
    "body": [
     "At twenty to ten Gus gets the choir back up, and it is all voices welcome, and they’ve come. Gus on the melody, wide and flat and immovable. Mrs. Fitch’s descant, a third over the top, three cups to the good. Joey half a step under everybody and proud of it. Kenzie Rourke with the one gorgeous voice in the room, so that every time she comes in the carol gets better around her. And under all of it, from back by the refrigerator, a real bass — low and warm and dead on the note — and it’s Kevin.",
     "“Seven years of Vietnamese choir in San Jose,” Kevin says, when the verse is over and Jack is staring at him. “My mother made me.”",
-    {
-     "if": "julian_she_wanted",
-     "text": "By the tree Julian raises his cup to Gus. Gus raises his eyebrows back."
-    },
     "Jack has been in the kitchen since he came in. The Lava came off his hands an hour ago and he’s found reasons since — the cups, the trash, Mrs. Fitch’s lemon-bar pans soaking in the sink — and from the kitchen door the front room is a long gold box with the upright at the far end of it, and Lena at the far end of the upright, and the width of a whole party in the way. That’s where he has kept it all night.",
     "Father Osei’s rule is on an index card taped to the music stand since Thanksgiving — ADVENT HYMNS UNTIL DEC. 24. THANK YOU. G.O. — and Mrs. Fitch has just started “Joy to the World” again from the top, by herself, and Gus has gone after her, because he always does.",
     "Jack, in the kitchen door with a dish towel over his shoulder, says it to Becca, but it carries. “It’s Advent. You don’t cut the cake at the engagement party.”",
@@ -263,15 +206,7 @@
      "kind": "person",
      "id": "kevin",
      "title": "Kevin Tran",
-     "if": "e20_doug==\"control\"",
      "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Tuesday at four I woke him for Doug. A chair under the knob, then a bell. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’ Sings bass. A real one. Seven years of Vietnamese choir in San Jose — his mother made him."
-    },
-    {
-     "kind": "person",
-     "id": "kevin",
-     "title": "Kevin Tran",
-     "if": "e20_doug!=\"control\"",
-     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’ Sings bass. A real one. Seven years of Vietnamese choir in San Jose — his mother made him."
     }
    ],
    "choices": [
@@ -409,14 +344,6 @@
      "kind": "person",
      "id": "julian",
      "title": "Julian Park-Ellis",
-     "if": "julian_she_wanted",
-     "text": "Julian Park-Ellis. The guitar guy from the Lighthouse stairs. Plays Bastille Thursdays. Wrote a song called “Fresno.” Plays it once a month. All Souls: came to St. Brendan’s to write Nora Calloway’s name in the book. She was his friend. They sang together. He saw us leave in the second chorus. Something new Thursday. A handshake you’d trust with anything. Sunday he came to the nine o’clock with Lena. Didn’t receive. Had the Sanctus by ear by the end. Picked Lena up at twenty to twelve for the vampires, straight from Bastille. Friday he brought her juk in his mother’s thermos and asked her what she’d go to jail for, and listened to all of it. Drove down from Oakland for the nine o’clock; his brother Daniel’s home from the Navy. Two coffees on the wall. Asked me to stay to the end of the new one. Thursday at Bastille: it’s called ‘Magdalena.’ It’s good. ‘You stayed. She wanted you here.’ The Advent party: plays piano too, by ear. Under contraband mistletoe he kissed her cheek."
-    },
-    {
-     "kind": "person",
-     "id": "julian",
-     "title": "Julian Park-Ellis",
-     "if": "!julian_she_wanted",
      "text": "Julian Park-Ellis. The guitar guy from the Lighthouse stairs. Plays Bastille Thursdays. Wrote a song called “Fresno.” Plays it once a month. All Souls: came to St. Brendan’s to write Nora Calloway’s name in the book. She was his friend. They sang together. He saw us leave in the second chorus. Something new Thursday. A handshake you’d trust with anything. Sunday he came to the nine o’clock with Lena. Didn’t receive. Had the Sanctus by ear by the end. Picked Lena up at twenty to twelve for the vampires, straight from Bastille. Friday he brought her juk in his mother’s thermos and asked her what she’d go to jail for, and listened to all of it. Drove down from Oakland for the nine o’clock; his brother Daniel’s home from the Navy. Two coffees on the wall. Asked me to stay to the end of the new one. Thursday at Bastille: it’s called ‘Magdalena.’ It’s good. The Advent party: plays piano too, by ear. Under contraband mistletoe he kissed her cheek."
     }
    ],

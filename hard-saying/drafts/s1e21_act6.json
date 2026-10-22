@@ -78,18 +78,7 @@
      "key": "Under the roses at five in the morning Lena said you were up early. You told her you never miss Our Lady. She said Theo told her you were at the library.",
      "response": [
       "“I never miss Our Lady.”",
-      {
-       "if": "missed_holy_day",
-       "text": "“You missed her Tuesday.”"
-      },
-      {
-       "if": "e20_mass==\"dusk\"",
-       "text": "“You were two rows behind me Tuesday. You sang.”"
-      },
-      {
-       "if": "!missed_holy_day && e20_mass!=\"dusk\"",
-       "text": "“Mm.”"
-      },
+      "“Mm.”",
       "She turns back to the roses. “Theo said you were at the library.”",
       "Up under the loft the first trumpet finds its note, and the big guitar comes in beneath it, and the church gets up off its knees all at once."
      ],
@@ -129,18 +118,7 @@
     "At twenty-five to four the sun is low over Las Olas and comes in sideways through the blue panes of St. Brendan’s, and lays a long blue light down the side aisle and over six folding chairs set in a row outside the coat closet. On the closet door, in capitals, on an index card: KNOCK (GENTLY). Mrs. Fitch has a card table beside it with the crossword and a plate of lemon bars under plastic wrap, and she is herself again — recovered from the punch, she tells the grandmother at the head of the line, by the grace of God and two aspirin.",
     "Jack slept from seven to three in the Carhartt, and came across Ocean Road with his hair still flat on one side.",
     "The line is short for the third Saturday of Advent: the grandmother at the head of it, with wooden rosary beads the size of chickpeas; a graduate student in a Cal sweatshirt reading something with footnotes; a Newman freshman Jack knows by face, working down an examination of conscience off a laminated card and wincing at intervals. Now and then, through the closet door, comes the low sound of Father Osei’s voice, too low for words, which is what the door is for.",
-    {
-     "if": "e20_skip==\"candor\"",
-     "text": "Lena is in the second chair, and her cardigan is on the third. She lifts it off and hangs it over the back of her own. “I said I’d save you a place.” He sits in it."
-    },
-    {
-     "if": "e20_skip!=\"candor\"",
-     "text": "Lena is three chairs ahead, and turns around at the sound of the side door. “Youngstown.” He sits."
-    },
-    {
-     "if": "lena_unsigned && e20_skip!=\"candor\"",
-     "text": "The line moves up a chair, and then another, and she doesn’t turn around again."
-    },
+    "Lena is three chairs ahead, and turns around at the sound of the side door. “Youngstown.” He sits.",
     "“Miss Broussard,” Mrs. Fitch says, filling in a word. “Your roommate is not welcome at the Epiphany party.”",
     "“She’ll be devastated, Mrs. Fitch. She’ll wear black.”",
     "“She wore black to *this* one. I had three cups.” Mrs. Fitch erases something, hard. “I sang a descant over Gus for an hour and told him he was dragging. He was. That is not the point.”",

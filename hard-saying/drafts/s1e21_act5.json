@@ -6,10 +6,7 @@
     "Since Thursday the strand around her window has lost more ground. What still burns has pulled back into the bottom right corner of the frame, a knot of red and green and one white gone stubborn yellow, so the light in her room comes up off the sill from one side, low, like footlights somebody quit hanging halfway through.",
     "They came in by the alley. The rack is where it was, and the jar of beach glass with the blue piece on top, and the O’Connor on the sill with CON struck through. The floor has been picked up since Thursday; his shirt isn’t on it. The white dress still hangs on the back of the door in the cleaner’s bag, its collar standing up under the paper. Skye lifts it off the hook by the hanger and hangs it on the rack between two flannels, and pats the bag once.",
     "“She’s had a big week,” she says.",
-    {
-     "if": "skye_brought_home",
-     "text": "“Second time anybody’s been up here,” she says over her shoulder. “You’re a regular. It’s alarming.”"
-    },
+    "“Second time anybody’s been up here,” she says over her shoulder. “You’re a regular. It’s alarming.”",
     "She takes his right hand and turns it over under the lights. The Lava got the backs of it. The black is still packed under every nail, ten thin crescents of her battery.",
     "“You washed.”",
     "“There was soap.”",
@@ -94,18 +91,7 @@
     "“Is it still right now?”",
     "“Yes.”",
     "“Then say no again,” Skye says. “Slower. I want to see how you do it.”",
-    {
-     "if": "e20_no==\"candor\"",
-     "text": "“Do the plain one.”"
-    },
-    {
-     "if": "e20_no==\"control\"",
-     "text": "She finds his hand on her back and brings it down and puts it over hers, on his own buckle, and holds it there. “With the hand.”"
-    },
-    {
-     "if": "e20_no!=\"candor\" && e20_no!=\"control\"",
-     "text": "“Do the one with the want in it.”"
-    }
+    "She finds his hand on her back and brings it down and puts it over hers, on his own buckle, and holds it there. “With the hand.”"
    ],
    "choices": [
     {
@@ -167,22 +153,7 @@
     "confession_owed": "+1"
    },
    "body": [
-    {
-     "if": "e20_rightnow==\"candor\"",
-     "text": "“I heard the whole sentence,” she says. “*Right now* is in it.”"
-    },
-    {
-     "if": "e20_rightnow==\"restraint\"",
-     "text": "“Right now,” she says, as if she’s reading a call time off a sheet."
-    },
-    {
-     "if": "e20_rightnow==\"wit\"",
-     "text": "“*Thorough*,” she reminds him."
-    },
-    {
-     "if": "e20_rightnow==\"unguarded\"",
-     "text": "“You said it’s you you don’t trust,” she says. “I trust you fine. That’s the problem.”"
-    },
+    "“You said it’s you you don’t trust,” she says. “I trust you fine. That’s the problem.”",
     "“A no’s a no. For tonight. For that.” She smiles when she says it, pleased, a professional with a note she can play — and she doesn’t stop.",
     "She keeps to it exactly. What he said no to stays where he put it, and everything on the near side of it she takes, every bit, and she takes her time.",
     "She has nothing on now but a pair of black cotton underwear and the braided anklet, and he’s still in his jeans with the belt done up, and she’s easy in it — easy the way she is barefoot on a gas-station floor, or walking into the Pacific in November. She has always been at home in her skin, and tonight there’s a great deal of it. She pulls his undershirt off over his head and throws it at the rack and misses.",
@@ -236,11 +207,7 @@
      "key": "To the letter: she kept to your no and to nothing else. You told her it was cruel. She said thorough.",
      "response": [
       "“This is cruel,” he says into her hair. It comes out hoarse.",
-      {
-       "if": "e20_rightnow==\"wit\"",
-       "text": "“I *told* you,” Skye says. “*Thorough*.”",
-       "else": "“Cruel’s a strong word,” Skye says. “I’m being *thorough*.”"
-      },
+      "“Cruel’s a strong word,” Skye says. “I’m being *thorough*.”",
       "And then she’s laughing at her own line, at him, at the state of him, and she can’t stop, and she has to roll off him onto her back to do it properly with both hands over her face, and the laugh does what his no didn’t: by the time she’s finished with it the room has come down to something he can lie next to.",
       "Somewhere inside the wall something goes *pop*, small and definite. The last knot of Christmas lights dies, and the line of light under the door dies with it, and three houses down the music keeps on while this house goes black from the roof to the alley. For the length of one wave there’s nothing in it but the surf.",
       "Then her laugh in the dark, close to his ear.",
@@ -283,14 +250,7 @@
     "“That’s her.”",
     "“She’s on every taco truck in the Valley. She’s on the tall candles at the liquor store on Ventura. There’s a wall of her on Lankershim by a car wash, twenty feet high.” She looks at him across the candle. “I thought she was a *brand*.”",
     "“She’s Our Lady.”",
-    {
-     "if": "skye_heard_given",
-     "text": "“The worth-something-first lady?” “Same lady.”"
-    },
-    {
-     "if": "!skye_heard_given",
-     "text": "“The clean one? From your Tuesday?” “Same lady.”"
-    },
+    "“The worth-something-first lady?” “Same lady.”",
     "“Who painted her?”",
     "“No one. That’s the story.”",
     "She sits with that longer than he expects, chin on her knees. “The bishop’s the only one in it I believe,” she says at last. “Somebody pitches him a miracle and he asks to see it on tape.” She turns her head on her knees to look at him. “Whoever lit her knew what they were doing.”",

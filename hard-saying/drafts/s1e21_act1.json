@@ -139,54 +139,15 @@
     {
      "type": "doc",
      "title": "To: Prof. Adrian Hale · Subject: PHIL 9H oral",
-     "if": "e20_best==\"sincerity\"",
      "text": "Professor Hale,\n\nI’ll defend Miss Broussard’s argument that a promise is made to a person, not to a reason.\n\nJack Costigan"
     },
-    {
-     "type": "doc",
-     "title": "To: Prof. Adrian Hale · Subject: PHIL 9H oral",
-     "if": "e20_best==\"grace\"",
-     "text": "Professor Hale,\n\nI’ll defend Miss Broussard’s argument that the dead can be wronged, and therefore helped.\n\nJack Costigan"
-    },
-    {
-     "type": "doc",
-     "title": "To: Prof. Adrian Hale · Subject: PHIL 9H oral",
-     "if": "e20_best==\"candor\"",
-     "text": "Professor Hale,\n\nI’ll defend Miss Broussard’s argument that some people you let go, and pray for at a distance, and leave the light on. She said it at your table. It isn’t written down anywhere.\n\nJack Costigan"
-    },
-    {
-     "type": "doc",
-     "title": "To: Prof. Adrian Hale · Subject: PHIL 9H oral",
-     "if": "e20_best==\"wit\"",
-     "text": "Professor Hale,\n\nI’ll defend Miss Broussard’s argument that it isn’t hypocrisy to show up. She said it in a church courtyard in August, the day after we met. I’ve been losing to it since.\n\nJack Costigan"
-    },
-    {
-     "type": "doc",
-     "title": "To: Prof. Adrian Hale · Subject: PHIL 9H oral",
-     "if": "e20_best!=\"sincerity\" && e20_best!=\"grace\" && e20_best!=\"candor\" && e20_best!=\"wit\"",
-     "text": "Professor Hale,\n\nI’ll defend Miss Broussard’s YES paper.\n\nJack Costigan"
-    },
-    {
-     "if": "e20_best_weak",
-     "text": "He sits with it a minute before he sends it."
-    },
+    "He sits with it a minute before he sends it.",
     "In 412 the RAZR has one bar on a good day, and this morning it didn’t have that. He takes it out to the east stairwell, and on the landing it finds its bar and remembers everything at once: one new voicemail, 7:12 AM, HOME.",
     "His father left it at ten past ten, Glenwood Avenue time. Jack puts it to his ear.",
     "“Jack. It’s your father.” A cough, turned away from the phone. Behind him the radio on top of the refrigerator has the morning guys still going about it. “Browns beat Pittsburgh. Last night. Thirteen–six.” That gets a stretch of tape to itself. “Eight sacks.”",
     "There’s a pause then, long enough to hear a spoon go around a cup and one of the radio guys laugh at the other one.",
     "“Thought you’d want to know.”",
-    {
-     "if": "e20_bill==\"candor\"",
-     "text": "Paper, close to the mouthpiece. “Your mother left a list by the phone. ‘Ask him about the girl.’” The paper goes down. “I’m not asking you about the girl.”"
-    },
-    {
-     "if": "e20_bill==\"control\"",
-     "text": "Paper, close to the mouthpiece. “Your mother left a list by the phone. ‘Ask him about Theo’s phone.’” The paper goes down. “I’m not asking you about Theo’s phone.”"
-    },
-    {
-     "if": "e20_bill!=\"candor\" && e20_bill!=\"control\"",
-     "text": "Paper, close to the mouthpiece. “Your mother left a list by the phone. ‘Ask him is he eating.’” The paper goes down. “You’re eating.”"
-    },
+    "Paper, close to the mouthpiece. “Your mother left a list by the phone. ‘Ask him about the girl.’” The paper goes down. “I’m not asking you about the girl.”",
     "“Your mother says call.” Then the click, and the woman who lives in the phone asking what he’d like to do with this message.",
     "Jack stands on the landing with the phone still at his ear, grinning at nothing he could point to. It’s twenty past three in Youngstown. His mother is at the school till four, and his father will have gone out to the garage by now, to the space heater and the radio and the Stroh’s fridge, and if Jack called back the phone would ring in an empty kitchen. He can see his father in the recliner last night counting them off on his fingers at the television, all eight, and Nonna telling him to sit down.",
     "He saves it. Out the landing window, open its six inches, the Lagoon lies flat under a low white sky, and an egret stands out in it on one leg with its back to Delgado.",
@@ -194,32 +155,10 @@
     {
      "type": "sms",
      "from": "Lena",
-     "text": "You left in the second chorus.",
-     "time": "11:41 PM",
-     "if": "lena_unsigned"
-    },
-    {
-     "type": "sms",
-     "from": "Lena",
-     "text": "Thank you for staying. He said you told him. —L.",
-     "time": "11:41 PM",
-     "if": "!lena_unsigned && julian_she_wanted"
-    },
-    {
-     "type": "sms",
-     "from": "Lena",
      "text": "Thank you for staying. —L.",
-     "time": "11:41 PM",
-     "if": "!lena_unsigned && !julian_she_wanted"
+     "time": "11:41 PM"
     },
-    {
-     "if": "lena_unsigned",
-     "text": "No *—L.* She signs everything. She signed the one about Book Nine at twelve past ten on Tuesday morning, coming out of a Greek final, with the line number in it."
-    },
-    {
-     "if": "!lena_unsigned",
-     "text": "He stayed to the end of the song. Then he was out Bastille’s door before ten with his hands in the Carhartt, and when Laney asked where, in front of the table, what he gave her was *Out*."
-    },
+    "He stayed to the end of the song. Then he was out Bastille’s door before ten with his hands in the Carhartt, and when Laney asked where, in front of the table, what he gave her was *Out*.",
     "It’s the last day of classes. Tonight there’s a party at Newman House, ten-dollar limit, carols with the choir, all voices welcome, and everybody he knows will be at it."
    ],
    "journal": [
@@ -232,226 +171,8 @@
    ],
    "choices": [
     {
-     "text": "*i know. im sorry. it was good, lena*",
-     "tag": "Candor",
-     "if": "lena_unsigned",
-     "set": {
-      "e21_reply": "candor",
-      "soul.honesty": "+1",
-      "rel.lena.trust": "+1"
-     },
-     "key": "Lena’s text from the night of the song was still waiting at noon — you left in the second chorus. You told her you know, you’re sorry, and it was good.",
-     "response": [
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "i know. im sorry. it was good, lena",
-       "time": "12:22 PM"
-      },
-      "He stays out on the landing with the phone shut in his hand. It takes her nine minutes.",
-      {
-       "type": "sms",
-       "from": "Lena",
-       "text": "It was. —L.",
-       "time": "12:31 PM"
-      },
-      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
-       "text": "whats your afternoon",
-       "time": "12:40 PM"
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars. nothing that eats",
-       "time": "12:43 PM",
-       "if": "e20_mass==\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars",
-       "time": "12:43 PM",
-       "if": "e20_mass!=\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
-       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
-       "time": "12:44 PM"
-      },
-      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
-     ],
-     "goto": "s03"
-    },
-    {
-     "text": "*i heard the bridge through the glass. it was good*",
-     "tag": "Wit",
-     "if": "lena_unsigned",
-     "set": {
-      "e21_reply": "wit",
-      "trait.wit": "+1",
-      "rel.lena.warmth": "+1"
-     },
-     "key": "Lena’s text from the night of the song was still waiting at noon — you left in the second chorus. You told her you heard the bridge through the glass.",
-     "response": [
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "i heard the bridge through the glass. it was good",
-       "time": "12:22 PM"
-      },
-      {
-       "type": "sms",
-       "from": "Lena",
-       "text": "Through the glass doesn’t count, Youngstown. —L.",
-       "time": "12:30 PM"
-      },
-      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
-       "text": "whats your afternoon",
-       "time": "12:40 PM"
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars. nothing that eats",
-       "time": "12:43 PM",
-       "if": "e20_mass==\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars",
-       "time": "12:43 PM",
-       "if": "e20_mass!=\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
-       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
-       "time": "12:44 PM"
-      },
-      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
-     ],
-     "goto": "s03"
-    },
-    {
-     "text": "*he should play it again. tell him*",
-     "tag": "Sincerity",
-     "if": "!lena_unsigned && julian_she_wanted",
-     "set": {
-      "e21_reply": "sincerity",
-      "trait.sincerity": "+1",
-      "rel.julian.warmth": "+1"
-     },
-     "key": "Lena thanked you for staying, by text. You told her Julian should play it again.",
-     "response": [
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "he should play it again. tell him",
-       "time": "12:22 PM"
-      },
-      {
-       "type": "sms",
-       "from": "Lena",
-       "text": "I’ll tell him. —L.",
-       "time": "12:26 PM"
-      },
-      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
-       "text": "whats your afternoon",
-       "time": "12:40 PM"
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars. nothing that eats",
-       "time": "12:43 PM",
-       "if": "e20_mass==\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars",
-       "time": "12:43 PM",
-       "if": "e20_mass!=\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
-       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
-       "time": "12:44 PM"
-      },
-      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
-     ],
-     "goto": "s03"
-    },
-    {
-     "text": "*i meant it. its good*",
-     "tag": "Candor",
-     "if": "!lena_unsigned && julian_she_wanted",
-     "set": {
-      "e21_reply": "candor",
-      "soul.honesty": "+1",
-      "rel.lena.trust": "+1"
-     },
-     "key": "Lena thanked you for staying, by text. You told her you meant it.",
-     "response": [
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "i meant it. its good",
-       "time": "12:22 PM"
-      },
-      {
-       "type": "sms",
-       "from": "Lena",
-       "text": "He knows. He told me twice. —L.",
-       "time": "12:27 PM"
-      },
-      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
-       "text": "whats your afternoon",
-       "time": "12:40 PM"
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars. nothing that eats",
-       "time": "12:43 PM",
-       "if": "e20_mass==\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars",
-       "time": "12:43 PM",
-       "if": "e20_mass!=\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
-       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
-       "time": "12:44 PM"
-      },
-      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
-     ],
-     "goto": "s03"
-    },
-    {
      "text": "*it was really good*",
      "tag": "Sincerity",
-     "if": "!lena_unsigned && !julian_she_wanted",
      "set": {
       "e21_reply": "sincerity",
       "trait.sincerity": "+1",
@@ -482,69 +203,7 @@
        "type": "sms",
        "from": "Jack",
        "text": "church party. white elephant. 10 dollars. nothing that eats",
-       "time": "12:43 PM",
-       "if": "e20_mass==\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars",
-       "time": "12:43 PM",
-       "if": "e20_mass!=\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
-       "text": "i have done EIGHT YEARS of gift bags. i am a professional. marine lab turnout. 6",
-       "time": "12:44 PM"
-      },
-      "He sets the alarm for half past four and sleeps through the rest of the last day of classes."
-     ],
-     "goto": "s03"
-    },
-    {
-     "text": "*i stayed through the bridge. nobody leaves during a bridge*",
-     "tag": "Wit",
-     "if": "!lena_unsigned && !julian_she_wanted && e20_julian==\"wit\"",
-     "set": {
-      "e21_reply": "wit",
-      "trait.wit": "+1",
-      "rel.lena.warmth": "+1"
-     },
-     "key": "Lena thanked you for staying, by text. You told her nobody leaves during a bridge.",
-     "response": [
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "i stayed through the bridge. nobody leaves during a bridge",
-       "time": "12:22 PM"
-      },
-      {
-       "type": "sms",
-       "from": "Lena",
-       "text": "People leave during bridges. —L.",
-       "time": "12:28 PM"
-      },
-      "At twenty to one he’s back on his bed with the phone held up toward the window for whatever bar it can find, and it buzzes in his hand.",
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
-       "text": "whats your afternoon",
-       "time": "12:40 PM"
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars. nothing that eats",
-       "time": "12:43 PM",
-       "if": "e20_mass==\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars",
-       "time": "12:43 PM",
-       "if": "e20_mass!=\"noon\""
+       "time": "12:43 PM"
       },
       {
        "type": "sms",
@@ -559,7 +218,6 @@
     {
      "text": "*julian can sing. dont tell him i said so*",
      "tag": "Wit",
-     "if": "!lena_unsigned && !julian_she_wanted && e20_julian!=\"wit\"",
      "set": {
       "e21_reply": "wit",
       "trait.wit": "+1",
@@ -590,15 +248,7 @@
        "type": "sms",
        "from": "Jack",
        "text": "church party. white elephant. 10 dollars. nothing that eats",
-       "time": "12:43 PM",
-       "if": "e20_mass==\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars",
-       "time": "12:43 PM",
-       "if": "e20_mass!=\"noon\""
+       "time": "12:43 PM"
       },
       {
        "type": "sms",
@@ -632,15 +282,7 @@
        "type": "sms",
        "from": "Jack",
        "text": "church party. white elephant. 10 dollars. nothing that eats",
-       "time": "12:43 PM",
-       "if": "e20_mass==\"noon\""
-      },
-      {
-       "type": "sms",
-       "from": "Jack",
-       "text": "church party. white elephant. 10 dollars",
-       "time": "12:43 PM",
-       "if": "e20_mass!=\"noon\""
+       "time": "12:43 PM"
       },
       {
        "type": "sms",
@@ -749,15 +391,7 @@
      "kind": "person",
      "id": "theo",
      "title": "Theo Vance",
-     "if": "!left_second_chorus",
      "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath. Sunday night, to the ceiling: Laney says he asked if he could ask. ‘Like a vampire. They have to be invited in.’ He’s known since Friday. Wednesday I said I ended it. He opened his jar and gave me a spoon. Friday he took me to a party in Montecito so I wouldn’t meet anybody, and lost me in three minutes. Saturday at six he was on his bed in his coat. He’d called me nine times. At halftime of Michigan I asked him home for Thanksgiving. He said yes before I finished, and bought two tickets to Pittsburgh. ‘Guests bring something.’ Looked up St. Elizabeth’s visiting hours before I asked. Thanksgiving: came to Youngstown in Dad’s Browns parka over the camel coat. Dad said that’s not a coat. Speaks Italian from a movie, wrong. Rolled Nonna’s crust and made his own peach pie. Dad asked him to say grace. He did. Nonna asked who prays for him; he said nobody. Met Danny — Danny liked him in a minute. Didn’t talk the whole way home. Kept Rosie’s prince. Nonna gave him a twenty. Back at Marisol he reads me the News Feed in the morning like the intentions at the twelve-ten. Wants to know if I *like* things now. Says I’m fast. Says I’ve started sleeping with my phone. Played the Fishbowl a voicemail off the internet and ran one sentence of it twice: take your name off your phone. Timed my pocket with his stopwatch. Didn’t say the number. Taped Rosie’s princes over his desk; Nonna’s twenty is in the frame of his mirror. Covered for me at Alarm Five: I was in the shower. Sat on a dryer with Laney, discussing finals. Sunday at twenty to seven: back from somewhere. I asked him home for Christmas; so did Pop, in the garage. He has things in LA. ‘Tell your father I heard him.’ Put his cashmere on me Sunday. Said I was holding my phone like a rosary. Lent me the Burberry in the storm. Tried to heckle Julian’s song and couldn’t. Watched me go through Bastille’s window. Six in the morning on the last day of classes he asked why I look like I’ve been through a war. He had a question in his calendar for after Thanksgiving; he’s moved it. Sunday he filmed his shoes with a girl named Soledad."
-    },
-    {
-     "kind": "person",
-     "id": "theo",
-     "title": "Theo Vance",
-     "if": "left_second_chorus",
-     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath. Sunday night, to the ceiling: Laney says he asked if he could ask. ‘Like a vampire. They have to be invited in.’ He’s known since Friday. Wednesday I said I ended it. He opened his jar and gave me a spoon. Friday he took me to a party in Montecito so I wouldn’t meet anybody, and lost me in three minutes. Saturday at six he was on his bed in his coat. He’d called me nine times. At halftime of Michigan I asked him home for Thanksgiving. He said yes before I finished, and bought two tickets to Pittsburgh. ‘Guests bring something.’ Looked up St. Elizabeth’s visiting hours before I asked. Thanksgiving: came to Youngstown in Dad’s Browns parka over the camel coat. Dad said that’s not a coat. Speaks Italian from a movie, wrong. Rolled Nonna’s crust and made his own peach pie. Dad asked him to say grace. He did. Nonna asked who prays for him; he said nobody. Met Danny — Danny liked him in a minute. Didn’t talk the whole way home. Kept Rosie’s prince. Nonna gave him a twenty. Back at Marisol he reads me the News Feed in the morning like the intentions at the twelve-ten. Wants to know if I *like* things now. Says I’m fast. Says I’ve started sleeping with my phone. Played the Fishbowl a voicemail off the internet and ran one sentence of it twice: take your name off your phone. Timed my pocket with his stopwatch. Didn’t say the number. Taped Rosie’s princes over his desk; Nonna’s twenty is in the frame of his mirror. Covered for me at Alarm Five: I was in the shower. Sat on a dryer with Laney, discussing finals. Sunday at twenty to seven: back from somewhere. I asked him home for Christmas; so did Pop, in the garage. He has things in LA. ‘Tell your father I heard him.’ Put his cashmere on me Sunday. Said I was holding my phone like a rosary. Lent me the Burberry in the storm. Tried to heckle Julian’s song and couldn’t. Turned around at the counter when I left in the second chorus. Six in the morning on the last day of classes he asked why I look like I’ve been through a war. He had a question in his calendar for after Thanksgiving; he’s moved it. Sunday he filmed his shoes with a girl named Soledad."
     }
    ],
    "next": "s16"

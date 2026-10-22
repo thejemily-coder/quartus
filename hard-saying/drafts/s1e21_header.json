@@ -8,56 +8,22 @@
  "logline": "Six in the morning and a question about a war, a white elephant with the wrong answers in it, roses before dawn, a new slice at the Anchor — and the coldest water of the year, on purpose.",
  "previously": [
   {
-   "text": "Lena, by text, on the night of the holy day: *Saturday 3:30. I’ll save you a place in line. —L.*",
-   "if": "e20_skip==\"candor\""
+   "text": "Theo, from his desk, not turning around: “You were holding it like a rosary.”"
   },
   {
-   "text": "Theo, from his desk, not turning around: “You were holding it like a rosary.”",
-   "if": "e20_skip!=\"candor\""
+   "text": "At Bastille Julian sang a song called “Magdalena.” Lena watched you hear it, and you looked back."
   },
   {
-   "text": "At Bastille Julian sang a song called “Magdalena.” Lena watched you hear it, and you looked back.",
-   "if": "e20_song==\"sincerity\""
+   "text": "She took you home. On her bed on Del Playa you said no. She stopped everything, and asked you why."
   },
   {
-   "text": "At Bastille Julian sang a song called “Magdalena.” You made yourself watch him. She watched you.",
-   "if": "e20_song==\"restraint\""
+   "text": "“I’m not saying the answer’s always going to be no. Not until marriage — I’m not going to tell you that… Just that it’s a big thing for me. And it’s a no right now.” “I can work with that.”"
   },
   {
-   "text": "At Bastille Julian sang a song called “Magdalena.” You left in the second chorus.",
-   "if": "e20_song==\"reckless\""
+   "text": "On the porch that leans: “You said no. And you’re still here.” You asked her for daylight. “Sunday. Ellery. I’ll teach you to surf. In *December*.”"
   },
   {
-   "text": "At Bastille Julian sang a song called “Magdalena.”",
-   "if": "e20_song!=\"sincerity\" && e20_song!=\"restraint\" && e20_song!=\"reckless\""
-  },
-  {
-   "text": "She took you home. On her bed on Del Playa you said no. She stopped everything, and asked you why.",
-   "if": "skye_first_no"
-  },
-  {
-   "text": "“I’m not saying the answer’s always going to be no. Not until marriage — I’m not going to tell you that… Just that it’s a big thing for me. And it’s a no right now.” “I can work with that.”",
-   "if": "jack_right_now"
-  },
-  {
-   "text": "On the porch that leans: “You said no. And you’re still here.” You asked her for daylight. “Sunday. Ellery. I’ll teach you to surf. In *December*.”",
-   "if": "skye_first_no && daylight_asked"
-  },
-  {
-   "text": "On the porch that leans: “You said no,” Skye said. “And you’re still here.”",
-   "if": "skye_first_no && !daylight_asked"
-  },
-  {
-   "text": "At the corner the phone came back on. Lena, 11:41: *You left in the second chorus.*",
-   "if": "lena_unsigned"
-  },
-  {
-   "text": "At the corner the phone came back on. Lena, 11:41: *Thank you for staying. He said you told him. —L.*",
-   "if": "julian_she_wanted && !lena_unsigned"
-  },
-  {
-   "text": "At the corner the phone came back on. Lena, 11:41: *Thank you for staying. —L.*",
-   "if": "!lena_unsigned && !julian_she_wanted"
+   "text": "At the corner the phone came back on. Lena, 11:41: *Thank you for staying. —L.*"
   }
  ],
  "cast": [

@@ -1356,3 +1356,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The finale's last needle-drop: The National, "Fake Empire"** (2007, *Boxer*) over the Denver cut to black.
   - *(Implementation: the engine now supports a top-level `seasonRecap` on a finale (see schema.md). The S1E22
     Architect writes it: `people` order and 6–10 gated `highlights` of the season's biggest choices.)*
+- **Skye heat ladder, standing rule (player).** **Every new intimate scene with Skye escalates the heat**, and **each
+  no is harder** for Jack than the last (resolve, body, argument, timing).
+  - **Exception for explicitness: the Christmas-break phone call is by far the most explicit scene** of the Skye arc,
+    even though it's only talk, because **it's the only time actual sex is described** (not happening in the scene).
+  - **The in-person heat still keeps rising every episode after it** in the continuing intimate scenes (January,
+    early February), each a step past the last, short of sex (HARD RULE).
+  - Showrunner and Voice Editor track the ladder per episode (no two scenes the same beat; each step named in the
+    outline).
