@@ -1151,7 +1151,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     - **FLAG FOR THE ROOM (player likes it; room decides):** consider making this a player choice (open it, or delete
       it unopened), with stat and resolve effects. **The room decides whether it fits, how his response plays given his
       arc at that point, and whether Lena is watching.**
-- **Living the liturgical year together (player; after they've been together a while, i.e., sophomore year on).** Jack
+- **Living the liturgical year together (player; once they're a couple: Season 3+ territory).** Jack
   and Lena start keeping the liturgical seasons **together and communally**: Lent, Easter, Hallowtide (Halloween, All
   Saints, All Souls), Advent, Christmas and the major feasts (which they keep anyway), **plus older customs no longer
   required**: St. Michael's Lent (Aug 15 – Sep 29), Ember Days, and the like. Extends "future Lents: a whole plan
