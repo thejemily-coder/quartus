@@ -1246,3 +1246,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Lent dates through Easter, official, the champagne reveal, to finals (mid-May): ~11.**
   Showrunner: re-map §23 at the next planning pass (S2E01 = the Youngstown Christmas). Other seasons keep their
   lengths unless the player says otherwise.
+- **S2 (January, shortly after Jack and Skye go public, not the first public episode): Laney corners Jack (player;
+  adapt to voices, not verbatim except her callback).** Laney gets Jack alone: "What the hell are you doing, fireman?"
+  and she **quotes herself exactly** from S1E16 (the Halloween-party exit, s1e16): **"And if you so much as learn a
+  girl's name tonight, I will have you killed, fireman, and I will wear white to the service, and everybody will say
+  how well I'm holding up."** (e.g., "What part of 'if you so much as learn a girl's name' wasn't clear?")
+  - **Jack snaps back at her, which he has never done**, and it's **the closest to honesty about Lena he's gotten out
+    loud** (his voice, not verbatim): **"She'd moved on in a week, Laney. I don't know what the right timeframe is
+    for that stuff, but I'm pretty sure she'd have waited more than a week if she was interested."**
+  - **Laney reports back, somberly, to Lena, who is equal parts upset and dismissive.** POV rule: that report is off
+    Jack's screen. Jack sees only the edges (Laney unusually quiet; a changed temperature with Lena; possibly one of
+    the overheard fragments), and it **pays off in the New Orleans conversation** (he was waiting *for* her; "a
+    week" is the misreading chain said aloud).

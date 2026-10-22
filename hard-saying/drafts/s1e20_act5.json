@@ -22,11 +22,7 @@
     "“Tell him about the cow,” Lena says.",
     "“I saw the cow,” Jack says. “Upside down. At Sully’s.”",
     "“It was a good cow,” Julian says, mildly, as if somebody had suggested otherwise. “It was standing by itself in a field behind the Chevron, looking at the freeway. I thought she’d want to know.”",
-    {
-     "if": "julian_writing_song",
-     "text": "Then he looks up at Jack, with the calm that makes people trust him with their cars and their dogs and their bad news. “Thursday,” he says. “Bastille. I finished it.” A look down at the cup. “The new one.”",
-     "else": "Then he looks up at Jack, with the calm that makes people trust him with their cars and their dogs and their bad news. “Thursday,” he says. “Bastille. I finished something.”"
-    },
+    "Then he looks up at Jack, with the calm that makes people trust him with their cars and their dogs and their bad news. “Thursday,” he says. “Bastille. I finished it.” A look down at the cup. “The new one.”",
     "He doesn’t look at Lena when he says it. Lena is looking at the olive tree.",
     "“Will you stay to the end?”",
     "In Jack’s coat pocket the RAZR has *tomorrow. im asking* in it, and Thursday is four days off, and the coffee is going cold in his hands."
@@ -46,11 +42,7 @@
      "response": [
       "“I’ll stay to the end,” Jack says.",
       "“Good,” says Julian, and that’s all he says about it. Lena drinks her coffee.",
-      {
-       "if": "e19_outis_personal && !e19_outis_apology",
-       "text": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him: “Twelve and oh, Jack.” He’s three steps into the road when she adds it, as if she’d caught herself at something small and didn’t care for it: “Youngstown.”",
-       "else": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him, before he’s off the curb: “Twelve and oh, Youngstown.”"
-      },
+      "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him, before he’s off the curb: “Twelve and oh, Youngstown.”",
       "He turns around in the empty road and walks the next two steps backward. “Twelve and oh.”"
      ],
      "goto": "s05"
@@ -67,11 +59,7 @@
       "“Is there a second chorus?”",
       "“There’s a bridge,” Julian says. “Nobody leaves during a bridge.”",
       "Lena, over the rim of her mug: “People leave during bridges.”",
-      {
-       "if": "e19_outis_personal && !e19_outis_apology",
-       "text": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him: “Twelve and oh, Jack.” He’s three steps into the road when she adds it, as if she’d caught herself at something small and didn’t care for it: “Youngstown.”",
-       "else": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him, before he’s off the curb: “Twelve and oh, Youngstown.”"
-      },
+      "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him, before he’s off the curb: “Twelve and oh, Youngstown.”",
       "He turns around in the empty road and walks the next two steps backward. “Twelve and oh.”"
      ],
      "goto": "s05"
@@ -87,11 +75,7 @@
      "response": [
       "“I’ll try,” Jack says.",
       "“That’s all anybody does,” Julian says. He means it kindly. It lands anyway, somewhere under the coffee.",
-      {
-       "if": "e19_outis_personal && !e19_outis_apology",
-       "text": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him: “Twelve and oh, Jack.” He’s three steps into the road when she adds it, as if she’d caught herself at something small and didn’t care for it: “Youngstown.”",
-       "else": "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him, before he’s off the curb: “Twelve and oh, Youngstown.”"
-      },
+      "They break up at the gate onto Ocean Road. Julian takes the three mugs back in, hooked on his fingers by their handles, and Lena waits for him at the gate with the Loeb under her arm, and Jack is the one who goes. Behind him, before he’s off the curb: “Twelve and oh, Youngstown.”",
       "He turns around in the empty road and walks the next two steps backward. “Twelve and oh.”"
      ],
      "goto": "s05"
@@ -136,10 +120,6 @@
     "She goes into the middle of his stack like she knew where it was all along, and pulls out the paper from October, and lays it under the lamp beside the two phones. His first sentence. And beside it in the margin, in her capitals, hard enough that the paper still has the dent: *THEN WHAT DID YOU TELL HIM?*",
     "She doesn’t read the margin. She reads the sentence. “*A man knows his own heart by what he says yes to.*”",
     "“That one,” Lena says. “It’s your best. You were wrong about everything else that night. Not that.” She taps the sentence with the cap of her pen. “I’ve been looking for the hole in it since October. I can’t find it. I’ve checked.”",
-    {
-     "if": "e19_outis_personal && !e19_outis_apology",
-     "text": "She caps the pen and uncaps it. “I’m still a little mad at you,” she says, to the page. “It’s still your best.”"
-    },
     "Under Jack’s palm the phone has gone warm from his hand, and his fingers close on it.",
     "“Now you,” she says, and pushes her own stack over to his side. “Pick mine. And don’t pick to win.”",
     "“And not the loyalty one,” she adds, as his hand goes toward it. “I quoted Ruth at him. You can’t stand up and defend Ruth in front of Hale. He’ll do the Book of Common Prayer at you and you’ll cry.”",
@@ -296,29 +276,15 @@
      "kind": "person",
      "id": "kevin",
      "title": "Kevin Tran",
-     "if": "e19_lawn==\"candor\" && e20_doug==\"control\"",
+     "if": "e20_doug==\"control\"",
      "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Tuesday at four I woke him for Doug. A chair under the knob, then a bell. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’"
     },
     {
      "kind": "person",
      "id": "kevin",
      "title": "Kevin Tran",
-     "if": "e19_lawn==\"candor\" && e20_doug!=\"control\"",
+     "if": "e20_doug!=\"control\"",
      "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’"
-    },
-    {
-     "kind": "person",
-     "id": "kevin",
-     "title": "Kevin Tran",
-     "if": "e19_lawn!=\"candor\" && e20_doug==\"control\"",
-     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. It was still there when I went in. Tuesday at four I woke him for Doug. A chair under the knob, then a bell. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’"
-    },
-    {
-     "kind": "person",
-     "id": "kevin",
-     "title": "Kevin Tran",
-     "if": "e19_lawn!=\"candor\" && e20_doug!=\"control\"",
-     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. It was still there when I went in. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’"
     }
    ]
   },

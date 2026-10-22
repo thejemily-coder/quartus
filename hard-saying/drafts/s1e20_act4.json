@@ -1,416 +1,385 @@
 {
-  "scenes": {
-    "s10": {
-      "slug": "TUESDAY · 9:20 PM · THE ANCHOR, THE WALK-IN COOLER",
-      "set": {
-        "skye_pics": "+1",
-        "resolve.jack": "-1"
-      },
-      "body": [
-        "The Anchor on a Tuesday night smells of fryer oil on its third day, the Hobart’s steam, and the pot of coffee Gloria puts on at eight for the ones who mean to stay till close. There are six of them tonight, spaced down the counter in their jackets. Gloria isn’t pouring for any of them. She has the register drawer open and a box of paper sleeves from the bank, and she’s rolling nickels on the counter beside the pie case, forty to a sleeve, her lips moving with the count, and she doesn’t stop counting to tell him.",
-        "“Thursday you’re off.” A sleeve fills; she crimps the ends shut with her thumbs. “Hector’s girl is due at Christmas, and he wants the hours.”",
-        "Jack gets as far as opening his mouth about the plane ticket home.",
-        "“Don’t argue with a baby,” Gloria says, and tips out the next forty.",
-        "So Thursday is Bastille. He’s already been asked.",
-        "He does three hours on the Hobart with the RAZR in the apron. The racks come out of the machine in their own weather, and Rudy’s radio does a ranchera and a used-car commercial and another ranchera, and the six at the counter turn into four and then into a man who eats his pie point-last and takes forty minutes about it. Twice Jack dries a hand on his jeans and lays it over the pocket, and takes it off again.",
-        "At twenty past nine Rudy wants romaine, and the walk-in is the only door in the Anchor that shuts all the way. Everything else in the place swings: the kitchen doors on their springs, the restroom, the screen onto the back step. The walk-in closes on a steel latch with the sound of a car door, and inside it’s thirty-eight degrees, with a fan grinding away in the ceiling unit, crates of romaine stacked to his shoulder, a case of eggs, Rudy’s flan in a hotel pan under plastic wrap with tomorrow’s date on a strip of masking tape, and his own breath going up white under the caged bulb.",
-        {
-          "if": "e20_pew==\"control\"",
-          "text": "The phone has been off since the last Ave at the 5:30. Between the romaine and the flan he holds the red key down, and the RAZR wakes and hunts around for the one bar the walk-in allows it, and finds it, and the envelope comes in after.",
-          "else": "The envelope has been in there since 6:18, unopened, waiting for a door that shuts."
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "*Picture Msg* · you said you havent stopped. this is so you dont",
-          "time": "6:18 PM",
-          "if": "e19_pic2==\"reply\""
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "*Picture Msg* · you went quiet on the last one. im not good at quiet",
-          "time": "6:18 PM",
-          "if": "e19_pic2!=\"reply\""
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "wardrobe thinks its at the cleaners",
-          "time": "6:19 PM"
-        },
-        "A bathroom he has never been in: a long mirror on the back of a door, a shower curtain with fish on it, yellow and blue, the kind somebody’s mother picks out. Studio City, he’d bet. And her in the mirror, in the white dress from Monday. He knows the collar, and the sleeves to the wrist. Wardrobe counted the buttons out to her, and from her throat to her waist every one of them is undone, and there’s nothing under the dress. One forearm lies across her chest and holds the two halves where they would fall open. Below her arm the cotton has parted down the middle, and there is the long line of her, bare, from the hollow of her throat down her breastbone and her stomach, past her navel, to where the last of the buttons still hold at her hips. Her other hand hangs at her side with the white iPhone in it, taking the picture. And her face is the preacher’s daughter’s, the solemn one from the tent, the face for forgiving somebody in the rain, and at one corner of the mouth it’s losing.",
-        "His body answers before he has finished looking, all at once, and thirty-eight degrees is no help to him at all.",
-        {
-          "if": "e20_mass==\"noon\"",
-          "text": "At noon he was on his knees for the feast of a girl who was given everything before she had done one thing to earn it, and this is the same hand he blessed himself with."
-        },
-        {
-          "if": "e20_mass==\"dusk\"",
-          "text": "Three hours ago it went against his ribs during the last Ave, two pews behind a black lace mantilla, and he has known since then what would be in it."
-        },
-        {
-          "if": "e20_mass!=\"noon\" && e20_mass!=\"dusk\"",
-          "text": "He slept through the feast. This is what he woke up to."
-        },
-        "The latch clanks behind him, and Rudy is in the door with the kitchen’s heat coming in around him and the radio coming in with it.",
-        "“Mijo. Lettuce.”",
-        "The RAZR snaps shut against Jack’s apron. Rudy’s eyes go down to it and come back up to Jack, unhurried, the same eyes he gives the grill. He reaches past Jack and lifts a crate of romaine off the stack himself and settles it on his hip.",
-        "“Cold in here,” Rudy says, and takes the lettuce out to the line.",
-        "Alone with the romaine again, Jack opens the phone back up. She’s where he left her."
-      ],
-      "journal": [
-        {
-          "kind": "person",
-          "id": "rudy",
-          "title": "Rudy (the Anchor)",
-          "text": "Line cook. Rosary on his wrist, a ballgame on the radio, Louis L’Amour in his apron. Did six years at Soledad. His mother came every other Sunday — three buses from Oxnard. Says: write him, even when there’s nothing to say. I told him about Rafi’s errand like a joke. ‘I know what an errand is, mijo.’ Opened the walk-in on me Tuesday. ‘Mijo. Lettuce.’ Took the lettuce himself."
-        }
-      ],
-      "choices": [
-        {
-          "text": "*i cant stop looking at it. thats the problem*",
-          "tag": "Candor",
-          "set": {
-            "e20_pic": "candor",
-            "said_it_plain": true,
-            "said_it_plain_n": "+1",
-            "skye_pics_kept": "+1",
-            "trait.candor": "+1",
-            "rel.skye.trust": "+1",
-            "rel.skye.heat": "+1"
-          },
-          "key": "Tuesday night, in the Anchor’s walk-in, you opened her third picture. You told her you can’t stop looking at it.",
-          "response": [
-            {
-              "type": "sms",
-              "from": "Jack",
-              "text": "i cant stop looking at it. thats the problem",
-              "time": "9:24 PM"
-            },
-            "He sends it from between the romaine and the eggs, with his breath going up past the bulb, and goes out to the sink with the phone back in the apron, where it goes off against his hip seven minutes later.",
-            {
-              "type": "sms",
-              "from": "SKYE (MISFIT)",
-              "text": "good. its supposed to be a problem",
-              "time": "9:31 PM"
-            },
-            "At ten to one, with the last rack in, Gloria leans in at the pass with the pie server still in her hand and looks at him over the heat lamps. “You look like the pie case at closing, hon.”"
-          ],
-          "journal": [
-            {
-              "kind": "person",
-              "id": "gloria",
-              "title": "Gloria (the Anchor)",
-              "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it. Asked after the pecan. I said she’s seeing somebody, he’s nice. She said lattice-top. Boxed a pie for Nonna. From a woman who’s been on her feet thirty years. Peach is August. St. Nicholas Eve, at the end of my shift, low, at the pass: ‘Pecan came to see if you were here.’ Gave my Thursday to Hector — his girl’s due at Christmas. ‘Don’t argue with a baby.’ Says I look like the pie case at closing."
-            }
-          ],
-          "goto": "s10a"
-        },
-        {
-          "text": "*give it back to wardrobe. no. dont*",
-          "tag": "Reckless",
-          "set": {
-            "e20_pic": "reckless",
-            "skye_pics_kept": "+1",
-            "trait.reckless": "+1",
-            "rel.skye.heat": "+2",
-            "resolve.jack": "-1",
-            "soul.restraint": "-1"
-          },
-          "key": "Tuesday night, in the Anchor’s walk-in, you opened her third picture. You told her not to give the dress back.",
-          "response": [
-            {
-              "type": "sms",
-              "from": "Jack",
-              "text": "give it back to wardrobe. no. dont",
-              "time": "9:24 PM"
-            },
-            "He sends it with his thumb going faster than the rest of him, and stands in the cold a minute more with his forehead against the cold side of the egg case before he goes back out to the sink. It answers before he has his arms wet.",
-            {
-              "type": "sms",
-              "from": "SKYE (MISFIT)",
-              "text": "too late. its mine now",
-              "time": "9:30 PM"
-            },
-            "At ten to one, with the last rack in, Gloria leans in at the pass with the pie server still in her hand and looks at him over the heat lamps. “You look like the pie case at closing, hon.”"
-          ],
-          "journal": [
-            {
-              "kind": "person",
-              "id": "gloria",
-              "title": "Gloria (the Anchor)",
-              "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it. Asked after the pecan. I said she’s seeing somebody, he’s nice. She said lattice-top. Boxed a pie for Nonna. From a woman who’s been on her feet thirty years. Peach is August. St. Nicholas Eve, at the end of my shift, low, at the pass: ‘Pecan came to see if you were here.’ Gave my Thursday to Hector — his girl’s due at Christmas. ‘Don’t argue with a baby.’ Says I look like the pie case at closing."
-            }
-          ],
-          "goto": "s10a"
-        },
-        {
-          "text": "Shut it. Erase it. Say nothing.",
-          "tag": "Restraint",
-          "set": {
-            "e20_pic": "restraint",
-            "pic3_erased": true,
-            "soul.restraint": "+1",
-            "resolve.jack": "+1"
-          },
-          "key": "Tuesday night, in the Anchor’s walk-in, you opened her third picture. You erased it and said nothing.",
-          "response": [
-            "*Erase?* Yes. *Erased.*",
-            "He stands among the romaine with the phone shut in his fist until the fan in the ceiling cycles off, and the walk-in goes so quiet he can hear the eggs, nearly, and the fan comes on again.",
-            "He takes the case of eggs out with him, since somebody ought to bring something out of there, and sets it on the line by Rudy’s elbow. Rudy says thank you to the eggs.",
-            "At ten to one, with the last rack in, Gloria leans in at the pass with the pie server still in her hand and looks at him over the heat lamps. “You look like the pie case at closing, hon.”"
-          ],
-          "journal": [
-            {
-              "kind": "person",
-              "id": "gloria",
-              "title": "Gloria (the Anchor)",
-              "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it. Asked after the pecan. I said she’s seeing somebody, he’s nice. She said lattice-top. Boxed a pie for Nonna. From a woman who’s been on her feet thirty years. Peach is August. St. Nicholas Eve, at the end of my shift, low, at the pass: ‘Pecan came to see if you were here.’ Gave my Thursday to Hector — his girl’s due at Christmas. ‘Don’t argue with a baby.’ Says I look like the pie case at closing."
-            }
-          ],
-          "goto": "s10a"
-        }
-      ]
+ "scenes": {
+  "s10": {
+   "slug": "TUESDAY · 9:20 PM · THE ANCHOR, THE WALK-IN COOLER",
+   "set": {
+    "skye_pics": "+1",
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "The Anchor on a Tuesday night smells of fryer oil on its third day, the Hobart’s steam, and the pot of coffee Gloria puts on at eight for the ones who mean to stay till close. There are six of them tonight, spaced down the counter in their jackets. Gloria isn’t pouring for any of them. She has the register drawer open and a box of paper sleeves from the bank, and she’s rolling nickels on the counter beside the pie case, forty to a sleeve, her lips moving with the count, and she doesn’t stop counting to tell him.",
+    "“Thursday you’re off.” A sleeve fills; she crimps the ends shut with her thumbs. “Hector’s girl is due at Christmas, and he wants the hours.”",
+    "Jack gets as far as opening his mouth about the plane ticket home.",
+    "“Don’t argue with a baby,” Gloria says, and tips out the next forty.",
+    "So Thursday is Bastille. He’s already been asked.",
+    "He does three hours on the Hobart with the RAZR in the apron. The racks come out of the machine in their own weather, and Rudy’s radio does a ranchera and a used-car commercial and another ranchera, and the six at the counter turn into four and then into a man who eats his pie point-last and takes forty minutes about it. Twice Jack dries a hand on his jeans and lays it over the pocket, and takes it off again.",
+    "At twenty past nine Rudy wants romaine, and the walk-in is the only door in the Anchor that shuts all the way. Everything else in the place swings: the kitchen doors on their springs, the restroom, the screen onto the back step. The walk-in closes on a steel latch with the sound of a car door, and inside it’s thirty-eight degrees, with a fan grinding away in the ceiling unit, crates of romaine stacked to his shoulder, a case of eggs, Rudy’s flan in a hotel pan under plastic wrap with tomorrow’s date on a strip of masking tape, and his own breath going up white under the caged bulb.",
+    {
+     "if": "e20_pew==\"control\"",
+     "text": "The phone has been off since the last Ave at the 5:30. Between the romaine and the flan he holds the red key down, and the RAZR wakes and hunts around for the one bar the walk-in allows it, and finds it, and the envelope comes in after.",
+     "else": "The envelope has been in there since 6:18, unopened, waiting for a door that shuts."
     },
-    "s10a": {
-      "slug": "WEDNESDAY · 1:10 AM · MISSION STREET, THE GREYHOUND DEPOT BENCH",
-      "body": [
-        "The Greyhound depot has its grate down for the night and one light left over its bench, a long tube in a wire cage that hums and makes everything under it look slightly seasick. Past it Mission Street runs downhill to the harbor without a car on it, the signals changing anyway. Jack is off at one. He has the bench and the light to himself, and his fingers still pruned from the sink, when the RAZR goes in his apron, and keeps going: a call.",
-        "“Keep me company,” Skye says. “I’m committing a crime.”",
-        "She’s in a laundromat in Studio City, she tells him, open all night, two blocks from her mother’s, with every light in the ceiling on and a TV bolted up in a corner selling knives to the empty chairs. She’s sitting cross-legged on a folding table in front of a front-loader, and going around in the front-loader, in the suds, is the preacher’s daughter’s dress.",
-        "“Wardrobe thinks it’s at the cleaners,” she says. “I’m a woman of my word. Approximately. I *am* the cleaners.”",
-        "“Your mother’s building doesn’t have a laundry room?”",
-        "“My mother’s building has a laundry room. My mother’s building also has my mother.” Something on her end clanks, a lid or a door. “It’s cotton from 1962, Jack. If it shrinks, I’m going to jail. Talk to me.”",
-        "“About what?”",
-        "“Anything that isn’t a dress. Your shift. Who came in. Give me one.”",
-        "So he gives her the man who eats his pie point-last, forty minutes, a fork in one hand and the sports page in the other, and hasn’t touched the crust yet. She approves of him. She wants to know what he does with the crust. Jack doesn’t know. “Find out,” she says. “That’s the whole man. The crust.”",
-        "She isn’t sleeping tonight anyway, she tells him. At ten she has to be on a dock in Burbank with the rest of the cast for a picture, in sundresses, in December, pretending it’s June. She’ll sleep in the makeup chair. “They’re very gentle with a sleeping face,” she says. “It can’t do anything for anybody.”",
-        "He asks about the take, and she tells him. They kept the dry one. Take six, the one with no tears in it, is the one going to the network. “The director told the producer it was his idea,” she says. “He’s told it three times today. It gets better every time. By Friday he’ll have been out in the rain with me, holding my hand.”",
-        "Somebody at the agency sent the test to her mother as a file, and her mother watched it at the kitchen table on her laptop, with the legal pad. One note.",
-        "Skye clears her throat and becomes the legal pad: yellow, ruled, faintly let down by everyone it has ever met. “*Tired.*” A pause, for the pen. “Underlined.”",
-        "He laughs on the bench, and she lets him, and then she says in her own voice, “She circled it, too,” and goes straight on to the lint trap.",
-        {
-          "if": "skye_took_note",
-          "text": "“She said I looked tired,” Skye says. “I said I *was* tired. That was the note.”",
-          "else": "“I *was* tired,” Skye says. “It was eleven at night in a rainstorm with a roof on it. Tired was the job.”"
-        },
-        {
-          "if": "e20_pic==\"candor\"",
-          "text": "“Where were you,” she says, “when you opened it? The truth.” “A walk-in cooler. With the lettuce.” “And you said it was a problem.” On her end the washer changes its mind about something, slows, and starts up again faster. “Good. I like being a problem in a lettuce room.”"
-        },
-        {
-          "if": "e20_pic==\"reckless\"",
-          "text": "“You said don’t give it back.” “I said a lot of things.” “You said *no, don’t*. I heard the *don’t*.” The washer goes into its spin, a whine climbing down the line at him. “So I’m washing it for you. That’s romance.”"
-        },
-        {
-          "if": "e20_pic==\"restraint\"",
-          "text": "She talks about the dress while it washes, as a dress: the cotton, the collar that stands up under the jaw, the buttons covered in the same white cloth, the wardrobe woman who counted them out on Monday and is going to count them back in. She has a good deal to say about the collar."
-        },
-        {
-          "if": "e20_pic!=\"restraint\"",
-          "text": "“You should know my mother was in the next room,” she says. “Watching *Wheel of Fortune*. She solved the puzzle before the man did. I could hear her through the door being right.”"
-        },
-        "At twenty past one the washer lets go of it and she moves it, wet and heavy, into a dryer; he hears her grunt with it. She sets the dial on low and reads it back to him twice to be sure.",
-        "“So,” she says. “How was your holy day? That’s a real thing you said to me in a car.”",
-        {
-          "if": "e20_mass==\"noon\"",
-          "text": "“I went at noon.” “On three hours of sleep. On a Tuesday. On *purpose*.” “It’s a holy day.” “I know. You said. I wrote it on my hand.”"
-        },
-        {
-          "if": "e20_mass==\"dusk\"",
-          "text": "“I went at five-thirty.” “Was there singing?” “There’s always singing.” “Did you sing?” “Everybody sings that one.”"
-        },
-        {
-          "if": "e20_mass!=\"noon\" && e20_mass!=\"dusk\"",
-          "text": "“I slept through it.” “Is that bad?” “It’s bad.” “Like a ticket?” “Like a confession.”"
-        },
-        "“So which one is it?” She sounds pleased to know there’s a which. “The Immaculate Conception. That’s the Jesus one. The virgin thing.”",
-        "Half the parish at St. Brigid’s gets that one wrong. “It’s his mother,” Jack says. “Our Lady. That she was conceived without — that she started out clean. Without the stain, from the first second.” He has this part the way he has his own phone number. “Gina got it wrong on a test in sixth grade, and Nonna didn’t speak to the nuns for a month.”",
-        "“What stain?”",
-        "“The one everybody starts out with. Adam’s. It comes off at the font.” The bench is cold through his jeans. “She never had it to begin with.”",
-        "“Before she was born?”",
-        "“From the first second there was a her.”",
-        {
-          "if": "e20_mass!=\"skip\"",
-          "text": "And he gives her what the priest said, as near as he can get it. The angel doesn’t say *you will be*. He says *full of grace* like it’s already done, and in Luke’s Greek it is: a perfect participle, done and still done. She was graced before she’d said yes to anything. Before she’d done a single thing.",
-          "else": "And he gives her what a friend texted him at twenty to seven, as near as he can get it. The angel doesn’t say *you will be*. He says *full of grace* like it’s already done, and in Luke’s Greek it is: a perfect participle, done and still done. She was graced before she’d said yes to anything. Before she’d done a single thing."
-        },
-        "On her end a change machine pays somebody out in quarters, a long clatter, and stops.",
-        "“Must be nice,” Skye says."
-      ],
-      "choices": [
-        {
-          "text": "“It’s not just her. It’s the idea that you’re worth something before you’ve done anything. That part’s for everybody.”",
-          "tag": "Grace",
-          "set": {
-            "e20_feast": "grace",
-            "skye_heard_given": true,
-            "soul.grace": "+1",
-            "rel.skye.trust": "+1"
-          },
-          "response": [
-            "“It’s not just her,” Jack says. “It’s the idea that you’re worth something before you’ve done anything. That part’s for everybody.”",
-            "On her end the dryer goes around. He gives it one turn, and another, under the hum of the cage light.",
-            "“Huh,” Skye says. And then she’s telling him about the collar, and whether a collar can shrink on its own, out of spite.",
-            "At a quarter to two the dryer stops, and she opens it, and he can hear her not breathing. Then: “It *lived*. Jack. It’s the same size. It’s a *miracle*.” Something rustles; she’s holding it up to the lights. “Is that a holy-day thing?”",
-            {
-              "if": "pic1_erased && pic2_erased && pic3_erased",
-              "text": "She folds it while she talks, he can hear her shaking it out on the table, and then, as if it’s the next thing on the list: “Do you erase them? Tell me the truth.” “Yes.” “…Okay.” A dryer buzzes somewhere in Studio City, somebody else’s. “Why?” “My mother reads the phone bill.” “That’s not why.” “No.” She goes back to the folding."
-            },
-            "He walks the rest of the way home up Mission with the phone hot against his ear, past the bank and the shoe repair and the dark Walgreens, while she tells him how you fold a dress from 1962 so it never finds out it’s been anywhere.",
-            "Somewhere past Sully’s she says she’s up north on Thursday. “A test. A real one. With a pencil.” A breath on the line. “Don’t ask me how I feel about it.” And she hangs up first."
-          ],
-          "goto": "s11"
-        },
-        {
-          "text": "“I’m the other kind. I’m the one in the line on Saturday afternoons.”",
-          "tag": "Candor",
-          "set": {
-            "e20_feast": "candor",
-            "soul.honesty": "+1",
-            "rel.skye.warmth": "+1"
-          },
-          "response": [
-            "“I’m the other kind,” Jack says. “I’m the one in the line on Saturday afternoons.”",
-            "“Every Saturday?” Skye says. “What do you *do* all week?”",
-            "“You’ve met me.”",
-            "She laughs at that longer than it deserves, with the dryer going around behind her.",
-            "At a quarter to two the dryer stops, and she opens it, and he can hear her not breathing. Then: “It *lived*. Jack. It’s the same size. It’s a *miracle*.” Something rustles; she’s holding it up to the lights. “Is that a holy-day thing?”",
-            {
-              "if": "pic1_erased && pic2_erased && pic3_erased",
-              "text": "She folds it while she talks, he can hear her shaking it out on the table, and then, as if it’s the next thing on the list: “Do you erase them? Tell me the truth.” “Yes.” “…Okay.” A dryer buzzes somewhere in Studio City, somebody else’s. “Why?” “My mother reads the phone bill.” “That’s not why.” “No.” She goes back to the folding."
-            },
-            "He walks the rest of the way home up Mission with the phone hot against his ear, past the bank and the shoe repair and the dark Walgreens, while she tells him how you fold a dress from 1962 so it never finds out it’s been anywhere.",
-            "Somewhere past Sully’s she says she’s up north on Thursday. “A test. A real one. With a pencil.” A breath on the line. “Don’t ask me how I feel about it.” And she hangs up first."
-          ],
-          "goto": "s11"
-        },
-        {
-          "text": "“She had a hard year later. Ask her about the stable.”",
-          "tag": "Wit",
-          "set": {
-            "e20_feast": "wit",
-            "trait.wit": "+1",
-            "rel.skye.warmth": "+1"
-          },
-          "response": [
-            "“She had a hard year later,” Jack says. “Ask her about the stable.”",
-            "Skye laughs, and it comes down the line with all that tile in it, and somewhere behind her the man on the TV is still cutting through a tomato and being amazed about it.",
-            "At a quarter to two the dryer stops, and she opens it, and he can hear her not breathing. Then: “It *lived*. Jack. It’s the same size. It’s a *miracle*.” Something rustles; she’s holding it up to the lights. “Is that a holy-day thing?”",
-            {
-              "if": "pic1_erased && pic2_erased && pic3_erased",
-              "text": "She folds it while she talks, he can hear her shaking it out on the table, and then, as if it’s the next thing on the list: “Do you erase them? Tell me the truth.” “Yes.” “…Okay.” A dryer buzzes somewhere in Studio City, somebody else’s. “Why?” “My mother reads the phone bill.” “That’s not why.” “No.” She goes back to the folding."
-            },
-            "He walks the rest of the way home up Mission with the phone hot against his ear, past the bank and the shoe repair and the dark Walgreens, while she tells him how you fold a dress from 1962 so it never finds out it’s been anywhere.",
-            "Somewhere past Sully’s she says she’s up north on Thursday. “A test. A real one. With a pencil.” A breath on the line. “Don’t ask me how I feel about it.” And she hangs up first."
-          ],
-          "goto": "s11"
-        }
-      ]
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "*Picture Msg* · you said you havent stopped. this is so you dont",
+     "time": "6:18 PM"
     },
-    "s14": {
-      "slug": "THURSDAY · 2:50 PM · THE HARBOR, THE LAUNCH-RAMP LOT",
-      "set": {
-        "knows_skye_test": true
-      },
-      "body": [
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "done. i didnt cry. launch ramp. 3",
-          "time": "2:31 PM"
-        },
-        "He’s on the 2:40 into town with the phone still open in his hand.",
-        "In daylight the far side of the harbor has a job. The sun is already low over the breakwater, the December kind that comes in sideways and finds everything, and it finds a boatyard behind chain-link with a hull up on stands and a man under it going at the bottom paint with a sander; the fuel dock, where the pump dings a little bell at every gallon for a trawler taking on diesel; a guy in rubber boots hosing down a deck and whistling through his teeth. The lamp over the lot is just a lamp on a pole. Across the water the Anchor is gray shingles on pilings with its sign switched off, nothing he’d look at twice.",
-        "The Saab is nosed up to the rail with the top down again. The rain is gone, and the rule is back. Skye is cross-legged on the trunk lid in a gray Marisol sweatshirt she must have bought today, the price tag still hanging off the cuff on its plastic thread, with a sleeve of No. 2 pencils in her lap and a sheet of scratch paper she wasn’t supposed to keep.",
-        "She holds the paper up in both hands as he comes across the lot, like a ticket that won.",
-        "“The bookstore,” she says, when she catches him looking at the tag. “The kid at the register asked if I wanted a bag. That’s all he wanted out of me. Yes or no on a bag.”",
-        "“They said leave your scratch paper on the desk,” she says. “I didn’t. I’m a criminal now. It’s been a big week for me.”",
-        "He takes it. Both sides are long division going downhill, and in every margin there are circles cut into slices, twelve to a circle, most of them, some shaded in and some shaded twice. Halfway down the back there’s a seven in a quotient that ought to be a one, and he puts his thumb under it.",
-        "“Don’t,” she says. “Don’t tell me. It’s handed in. I’m *free*.”",
-        "“A room in the science building,” she says. “Forty of us. All eighteen. They all had one pencil. I brought twelve.” She rattles the sleeve. “A proctor with a kitchen timer shaped like an egg. A clock on the wall you could *hear*. I’ve never been anyplace quiet enough to hear a clock.” She pulls her knees up under the sweatshirt. “And Jack. For two hours —”",
-        "She stops, to get it right.",
-        "“For two hours, not one person in that room looked at me. Forty people, and every one of them was looking at a fraction. Nobody needed my face. My face had the afternoon *off*.”",
-        "She lies back on the trunk lid with her arms flung out and the sun on her, and the pencils go rolling, and she laughs straight up at the sky. She sits up again. She can’t keep still. She’s up on her knees on the trunk, and then down off it, barefoot on the asphalt, and then back up, and the whole time she’s telling him — the girl beside her who chewed her pencil down to the metal, the boy who signed his name in cursive, the egg timer going off at the end and forty people letting out their air at once like a congregation sitting down — and he stands at the rail with her scratch paper and listens to all of it.",
-        "“Seven-twelfths came in,” she says, “and I said, *love what you’re doing*. I cast every one of them. I was extremely fair.”",
-        "“How’d you do?”",
-        "“I have *no idea*,” she says, and laughs. “They mail you a number. In January. I don’t even know what the number’s out of.” She points a pencil back up Mission, toward campus and the room in the science building. “And I read every one of them, Jack, I couldn’t help it. The girl by the window is going to be a vet. The boy with the cursive is going to marry her, and she has no idea.” The pencil comes down. “Not one of them read me back.”",
-        "“That sounds lonely.”",
-        "“It was *heaven*.” She lies back on the trunk again, with the sweatshirt hiked up and the sun on her stomach. “Two hours in a room full of people, and I was furniture. Write that down. I want it on my stone.”",
-        "“They read the roll off the paperwork,” she says. She takes a pencil out of the sleeve and turns it over in her fingers. “Off the application. A name I don’t use.” The pencil goes behind her ear. “And nobody turned around.” “What’s on the paperwork?” “Ask me in a different daylight.”",
-        {
-          "if": "e19_spring==\"candor\"",
-          "text": "“You said you wanted me here,” she says, with her face turned up into the sun. “This is here.”"
-        },
-        {
-          "if": "e19_spring==\"sincerity\"",
-          "text": "“I said I didn’t know what a room does when it’s looking at something else,” she says. “Now I know. It does long division.”"
-        },
-        {
-          "if": "e19_spring==\"wit\"",
-          "text": "“There was an oceanography flyer on the board outside,” she says. “I took it. I’m *declaring*.”"
-        },
-        {
-          "if": "e19_isaac==\"candor\"",
-          "text": "She turns her head on the trunk lid to look at him. “Do they know yet? Your everybody.” “No.” “Okay.” She shuts her eyes again in the sun."
-        },
-        "He sits on the back bumper below her, and she sits up and puts her bare feet in his lap, cold as the harbor, sand on them from somewhere, and he holds one in each hand to warm it.",
-        "“What are you doing tonight?”",
-        "“A friend’s playing a song,” Jack says. “Open mic. I said I’d stay to the end.”",
-        "She nods, like that’s a reasonable thing for a person to have promised. “I’m up here tonight. At the house.” She has never said where the house is, and she doesn’t now. “Do your thing. After?”",
-        {
-          "if": "firm_purpose_hour",
-          "text": "*Keep her in the daylight*, the man behind the linen told him on Saturday, and here she is in it, with a pencil behind her ear and her bare feet on a trunk lid in December, and it is the easiest hour he has had all week."
-        },
-        "She leans down off the trunk and kisses him, short, in front of the fuel dock and the man with the hose and God and everybody, and she tastes of pencil."
-      ],
-      "choices": [
-        {
-          "text": "“I’m going to want you after.”",
-          "tag": "Candor",
-          "set": {
-            "e20_test": "candor",
-            "said_it_plain": true,
-            "said_it_plain_n": "+1",
-            "trait.candor": "+1",
-            "rel.skye.trust": "+1"
-          },
-          "response": [
-            "“I’m going to want you after,” Jack says.",
-            "“Then call,” Skye says. “You never call. I always call.” She takes the pencil from behind her ear and points it at him, the eraser end. “*Call.*”"
-          ],
-          "goto": "s14a"
-        },
-        {
-          "text": "“Nobody looking suits you.”",
-          "tag": "Sincerity",
-          "set": {
-            "e20_test": "sincerity",
-            "trait.sincerity": "+1",
-            "rel.skye.trust": "+1"
-          },
-          "response": [
-            "“Nobody looking suits you,” Jack says.",
-            "“Don’t,” she says, and pulls the sleeve of the new sweatshirt down over her hand, price tag and all. “I’ll get used to it.”"
-          ],
-          "goto": "s14a"
-        },
-        {
-          "text": "“Did you cast the proctor?”",
-          "tag": "Wit",
-          "set": {
-            "e20_test": "wit",
-            "trait.wit": "+1",
-            "rel.skye.warmth": "+1"
-          },
-          "response": [
-            "“Did you cast the proctor?”",
-            "She did. She gives him the proctor right there on the trunk lid: a disappointed aunt from Barstow in a cardigan with a tissue up the sleeve, who set the egg timer like she was setting it for all of their funerals and had given up on every one of them by the second page, and was very nice about it. “*Pencils down, sweethearts. You did what you could.*”"
-          ],
-          "goto": "s14a"
-        }
-      ]
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "wardrobe thinks its at the cleaners",
+     "time": "6:19 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "all 40. tell me to do them back up. i DARE you",
+     "time": "6:20 PM"
+    },
+    "A bathroom he has never been in: a long mirror on the back of a door, a shower curtain with fish on it, yellow and blue, the kind somebody’s mother picks out. Studio City, he’d bet. And her in the mirror, in the white dress from Monday. He knows the collar, and the sleeves to the wrist. Wardrobe counted forty buttons out to her, and she has undone all forty, throat to hem, and there’s nothing under the dress but a strip of white cotton slung low across her hips. The dress hangs open the whole length of her. One forearm lies across her chest and holds the two halves where they’d fall away, and holds them loosely, the cotton already slipping at the edge of her arm, the way you’d hold a door you mean to let swing. Below it there is all of her down the middle, bare: the hollow of her throat, her breastbone, her stomach, her navel, the two points of her hips with the white cotton between them; and one knee has come forward out of the open skirt, so that the long line of a bare thigh runs out of the dress to the edge of the frame. Her other hand holds the white iPhone low at her hip, taking it. She isn’t doing the preacher’s daughter’s face. She’s looking straight down the mirror over the phone, at whoever opens this, with her chin down and one eyebrow up, and the corner of her mouth isn’t losing anything. It’s waiting to see what he does.",
+    "His body answers before he has finished looking, all at once, and thirty-eight degrees is no help to him at all.",
+    {
+     "if": "e20_mass==\"noon\"",
+     "text": "At noon he was on his knees for the feast of a girl who was given everything before she had done one thing to earn it, and this is the same hand he blessed himself with."
+    },
+    {
+     "if": "e20_mass==\"dusk\"",
+     "text": "Three hours ago it went against his ribs during the last Ave, two pews behind a black lace mantilla, and he has known since then what would be in it."
+    },
+    {
+     "if": "e20_mass!=\"noon\" && e20_mass!=\"dusk\"",
+     "text": "He slept through the feast. This is what he woke up to."
+    },
+    "The latch clanks behind him, and Rudy is in the door with the kitchen’s heat coming in around him and the radio coming in with it.",
+    "“Mijo. Lettuce.”",
+    "The RAZR snaps shut against Jack’s apron. Rudy’s eyes go down to it and come back up to Jack, unhurried, the same eyes he gives the grill. He reaches past Jack and lifts a crate of romaine off the stack himself and settles it on his hip.",
+    "“Cold in here,” Rudy says, and takes the lettuce out to the line.",
+    "Alone with the romaine again, Jack opens the phone back up. She’s where he left her."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "rudy",
+     "title": "Rudy (the Anchor)",
+     "text": "Line cook. Rosary on his wrist, a ballgame on the radio, Louis L’Amour in his apron. Did six years at Soledad. His mother came every other Sunday — three buses from Oxnard. Says: write him, even when there’s nothing to say. I told him about Rafi’s errand like a joke. ‘I know what an errand is, mijo.’ Opened the walk-in on me Tuesday. ‘Mijo. Lettuce.’ Took the lettuce himself."
     }
+   ],
+   "choices": [
+    {
+     "text": "*i cant stop looking at it. thats the problem*",
+     "tag": "Candor",
+     "set": {
+      "e20_pic": "candor",
+      "said_it_plain": true,
+      "said_it_plain_n": "+1",
+      "skye_pics_kept": "+1",
+      "trait.candor": "+1",
+      "rel.skye.trust": "+1",
+      "rel.skye.heat": "+1"
+     },
+     "key": "Tuesday night, in the Anchor’s walk-in, you opened her third picture. You told her you can’t stop looking at it.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "i cant stop looking at it. thats the problem",
+       "time": "9:24 PM"
+      },
+      "He sends it from between the romaine and the eggs, with his breath going up past the bulb, and goes out to the sink with the phone back in the apron, where it goes off against his hip seven minutes later.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "good. its supposed to be a problem",
+       "time": "9:31 PM"
+      },
+      "At ten to one, with the last rack in, Gloria leans in at the pass with the pie server still in her hand and looks at him over the heat lamps. “You look like the pie case at closing, hon.”"
+     ],
+     "journal": [
+      {
+       "kind": "person",
+       "id": "gloria",
+       "title": "Gloria (the Anchor)",
+       "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it. Asked after the pecan. I said she’s seeing somebody, he’s nice. She said lattice-top. Boxed a pie for Nonna. From a woman who’s been on her feet thirty years. Peach is August. St. Nicholas Eve, at the end of my shift, low, at the pass: ‘Pecan came to see if you were here.’ Gave my Thursday to Hector — his girl’s due at Christmas. ‘Don’t argue with a baby.’ Says I look like the pie case at closing."
+      }
+     ],
+     "goto": "s10a"
+    },
+    {
+     "text": "*give it back to wardrobe. no. dont*",
+     "tag": "Reckless",
+     "set": {
+      "e20_pic": "reckless",
+      "skye_pics_kept": "+1",
+      "trait.reckless": "+1",
+      "rel.skye.heat": "+2",
+      "resolve.jack": "-1",
+      "soul.restraint": "-1"
+     },
+     "key": "Tuesday night, in the Anchor’s walk-in, you opened her third picture. You told her not to give the dress back.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "give it back to wardrobe. no. dont",
+       "time": "9:24 PM"
+      },
+      "He sends it with his thumb going faster than the rest of him, and stands in the cold a minute more with his forehead against the cold side of the egg case before he goes back out to the sink. It answers before he has his arms wet.",
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "too late. its mine now",
+       "time": "9:30 PM"
+      },
+      "At ten to one, with the last rack in, Gloria leans in at the pass with the pie server still in her hand and looks at him over the heat lamps. “You look like the pie case at closing, hon.”"
+     ],
+     "journal": [
+      {
+       "kind": "person",
+       "id": "gloria",
+       "title": "Gloria (the Anchor)",
+       "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it. Asked after the pecan. I said she’s seeing somebody, he’s nice. She said lattice-top. Boxed a pie for Nonna. From a woman who’s been on her feet thirty years. Peach is August. St. Nicholas Eve, at the end of my shift, low, at the pass: ‘Pecan came to see if you were here.’ Gave my Thursday to Hector — his girl’s due at Christmas. ‘Don’t argue with a baby.’ Says I look like the pie case at closing."
+      }
+     ],
+     "goto": "s10a"
+    },
+    {
+     "text": "Shut it. Erase it. Say nothing.",
+     "tag": "Restraint",
+     "set": {
+      "e20_pic": "restraint",
+      "pic3_erased": true,
+      "soul.restraint": "+1",
+      "resolve.jack": "+1"
+     },
+     "key": "Tuesday night, in the Anchor’s walk-in, you opened her third picture. You erased it and said nothing.",
+     "response": [
+      "*Erase?* Yes. *Erased.*",
+      "He stands among the romaine with the phone shut in his fist until the fan in the ceiling cycles off, and the walk-in goes so quiet he can hear the eggs, nearly, and the fan comes on again.",
+      "He takes the case of eggs out with him, since somebody ought to bring something out of there, and sets it on the line by Rudy’s elbow. Rudy says thank you to the eggs.",
+      "At ten to one, with the last rack in, Gloria leans in at the pass with the pie server still in her hand and looks at him over the heat lamps. “You look like the pie case at closing, hon.”"
+     ],
+     "journal": [
+      {
+       "kind": "person",
+       "id": "gloria",
+       "title": "Gloria (the Anchor)",
+       "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it. Asked after the pecan. I said she’s seeing somebody, he’s nice. She said lattice-top. Boxed a pie for Nonna. From a woman who’s been on her feet thirty years. Peach is August. St. Nicholas Eve, at the end of my shift, low, at the pass: ‘Pecan came to see if you were here.’ Gave my Thursday to Hector — his girl’s due at Christmas. ‘Don’t argue with a baby.’ Says I look like the pie case at closing."
+      }
+     ],
+     "goto": "s10a"
+    }
+   ]
+  },
+  "s10a": {
+   "slug": "WEDNESDAY · 1:10 AM · MISSION STREET, THE GREYHOUND DEPOT BENCH",
+   "body": [
+    "The Greyhound depot has its grate down for the night and one light left over its bench, a long tube in a wire cage that hums and makes everything under it look slightly seasick. Past it Mission Street runs downhill to the harbor without a car on it, the signals changing anyway. Jack is off at one. He has the bench and the light to himself, and his fingers still pruned from the sink, when the RAZR goes in his apron, and keeps going: a call.",
+    "“Keep me company,” Skye says. “I’m committing a crime.”",
+    "She’s in a laundromat in Studio City, she tells him, open all night, two blocks from her mother’s, with every light in the ceiling on and a TV bolted up in a corner selling knives to the empty chairs. She’s sitting cross-legged on a folding table in front of a front-loader, and going around in the front-loader, in the suds, is the preacher’s daughter’s dress.",
+    "“Wardrobe thinks it’s at the cleaners,” she says. “I’m a woman of my word. Approximately. I *am* the cleaners.”",
+    "“Your mother’s building doesn’t have a laundry room?”",
+    "“My mother’s building has a laundry room. My mother’s building also has my mother.” Something on her end clanks, a lid or a door. “It’s cotton from 1962, Jack. If it shrinks, I’m going to jail. Talk to me.”",
+    "“About what?”",
+    "“Anything that isn’t a dress. Your shift. Who came in. Give me one.”",
+    "So he gives her the man who eats his pie point-last, forty minutes, a fork in one hand and the sports page in the other, and hasn’t touched the crust yet. She approves of him. She wants to know what he does with the crust. Jack doesn’t know. “Find out,” she says. “That’s the whole man. The crust.”",
+    "She isn’t sleeping tonight anyway, she tells him. At ten she has to be on a dock in Burbank with the rest of the cast for a picture, in sundresses, in December, pretending it’s June. She’ll sleep in the makeup chair. “They’re very gentle with a sleeping face,” she says. “It can’t do anything for anybody.”",
+    "He asks about the take, and she tells him. They kept the dry one. Take six, the one with no tears in it, is the one going to the network. “The director told the producer it was his idea,” she says. “He’s told it three times today. It gets better every time. By Friday he’ll have been out in the rain with me, holding my hand.”",
+    "Somebody at the agency sent the test to her mother as a file, and her mother watched it at the kitchen table on her laptop, with the legal pad. One note.",
+    "Skye clears her throat and becomes the legal pad: yellow, ruled, faintly let down by everyone it has ever met. “*Tired.*” A pause, for the pen. “Underlined.”",
+    "He laughs on the bench, and she lets him, and then she says in her own voice, “She circled it, too,” and goes straight on to the lint trap.",
+    {
+     "if": "skye_took_note",
+     "text": "“She said I looked tired,” Skye says. “I said I *was* tired. That was the note.”",
+     "else": "“I *was* tired,” Skye says. “It was eleven at night in a rainstorm with a roof on it. Tired was the job.”"
+    },
+    {
+     "if": "e20_pic==\"candor\"",
+     "text": "“Where were you,” she says, “when you opened it? The truth.” “A walk-in cooler. With the lettuce.” “And you said it was a problem.” On her end the washer changes its mind about something, slows, and starts up again faster. “Good. I like being a problem in a lettuce room.”"
+    },
+    {
+     "if": "e20_pic==\"reckless\"",
+     "text": "“You said don’t give it back.” “I said a lot of things.” “You said *no, don’t*. I heard the *don’t*.” The washer goes into its spin, a whine climbing down the line at him. “So I’m washing it for you. That’s romance.”"
+    },
+    {
+     "if": "e20_pic==\"restraint\"",
+     "text": "She talks about the dress while it washes, as a dress: the cotton, the collar that stands up under the jaw, the buttons covered in the same white cloth, the wardrobe woman who counted them out on Monday and is going to count them back in. She has a good deal to say about the collar."
+    },
+    {
+     "if": "e20_pic!=\"restraint\"",
+     "text": "“You should know my mother was in the next room,” she says. “Watching *Wheel of Fortune*. She solved the puzzle before the man did. I could hear her through the door being right.”"
+    },
+    "At twenty past one the washer lets go of it and she moves it, wet and heavy, into a dryer; he hears her grunt with it. She sets the dial on low and reads it back to him twice to be sure.",
+    "“So,” she says. “How was your holy day? That’s a real thing you said to me in a car.”",
+    {
+     "if": "e20_mass==\"noon\"",
+     "text": "“I went at noon.” “On three hours of sleep. On a Tuesday. On *purpose*.” “It’s a holy day.” “I know. You said. I wrote it on my hand.”"
+    },
+    {
+     "if": "e20_mass==\"dusk\"",
+     "text": "“I went at five-thirty.” “Was there singing?” “There’s always singing.” “Did you sing?” “Everybody sings that one.”"
+    },
+    {
+     "if": "e20_mass!=\"noon\" && e20_mass!=\"dusk\"",
+     "text": "“I slept through it.” “Is that bad?” “It’s bad.” “Like a ticket?” “Like a confession.”"
+    },
+    "“So which one is it?” She sounds pleased to know there’s a which. “The Immaculate Conception. That’s the Jesus one. The virgin thing.”",
+    "Half the parish at St. Brigid’s gets that one wrong. “It’s his mother,” Jack says. “Our Lady. That she was conceived without — that she started out clean. Without the stain, from the first second.” He has this part the way he has his own phone number. “Gina got it wrong on a test in sixth grade, and Nonna didn’t speak to the nuns for a month.”",
+    "“What stain?”",
+    "“The one everybody starts out with. Adam’s. It comes off at the font.” The bench is cold through his jeans. “She never had it to begin with.”",
+    "“Before she was born?”",
+    "“From the first second there was a her.”",
+    {
+     "if": "e20_mass!=\"skip\"",
+     "text": "And he gives her what the priest said, as near as he can get it. The angel doesn’t say *you will be*. He says *full of grace* like it’s already done, and in Luke’s Greek it is: a perfect participle, done and still done. She was graced before she’d said yes to anything. Before she’d done a single thing.",
+     "else": "And he gives her what a friend texted him at twenty to seven, as near as he can get it. The angel doesn’t say *you will be*. He says *full of grace* like it’s already done, and in Luke’s Greek it is: a perfect participle, done and still done. She was graced before she’d said yes to anything. Before she’d done a single thing."
+    },
+    "On her end a change machine pays somebody out in quarters, a long clatter, and stops.",
+    "“Must be nice,” Skye says."
+   ],
+   "choices": [
+    {
+     "text": "“It’s not just her. It’s the idea that you’re worth something before you’ve done anything. That part’s for everybody.”",
+     "tag": "Grace",
+     "set": {
+      "e20_feast": "grace",
+      "skye_heard_given": true,
+      "soul.grace": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“It’s not just her,” Jack says. “It’s the idea that you’re worth something before you’ve done anything. That part’s for everybody.”",
+      "On her end the dryer goes around. He gives it one turn, and another, under the hum of the cage light.",
+      "“Huh,” Skye says. And then she’s telling him about the collar, and whether a collar can shrink on its own, out of spite.",
+      "At a quarter to two the dryer stops, and she opens it, and he can hear her not breathing. Then: “It *lived*. Jack. It’s the same size. It’s a *miracle*.” Something rustles; she’s holding it up to the lights. “Is that a holy-day thing?”",
+      "He walks the rest of the way home up Mission with the phone hot against his ear, past the bank and the shoe repair and the dark Walgreens, while she tells him how you fold a dress from 1962 so it never finds out it’s been anywhere.",
+      "Somewhere past Sully’s she says she’s up north on Thursday. “A test. A real one. With a pencil.” A breath on the line. “Don’t ask me how I feel about it.” And she hangs up first."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "“I’m the other kind. I’m the one in the line on Saturday afternoons.”",
+     "tag": "Candor",
+     "set": {
+      "e20_feast": "candor",
+      "soul.honesty": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“I’m the other kind,” Jack says. “I’m the one in the line on Saturday afternoons.”",
+      "“Every Saturday?” Skye says. “What do you *do* all week?”",
+      "“You’ve met me.”",
+      "She laughs at that longer than it deserves, with the dryer going around behind her.",
+      "At a quarter to two the dryer stops, and she opens it, and he can hear her not breathing. Then: “It *lived*. Jack. It’s the same size. It’s a *miracle*.” Something rustles; she’s holding it up to the lights. “Is that a holy-day thing?”",
+      "He walks the rest of the way home up Mission with the phone hot against his ear, past the bank and the shoe repair and the dark Walgreens, while she tells him how you fold a dress from 1962 so it never finds out it’s been anywhere.",
+      "Somewhere past Sully’s she says she’s up north on Thursday. “A test. A real one. With a pencil.” A breath on the line. “Don’t ask me how I feel about it.” And she hangs up first."
+     ],
+     "goto": "s11"
+    },
+    {
+     "text": "“She had a hard year later. Ask her about the stable.”",
+     "tag": "Wit",
+     "set": {
+      "e20_feast": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“She had a hard year later,” Jack says. “Ask her about the stable.”",
+      "Skye laughs, and it comes down the line with all that tile in it, and somewhere behind her the man on the TV is still cutting through a tomato and being amazed about it.",
+      "At a quarter to two the dryer stops, and she opens it, and he can hear her not breathing. Then: “It *lived*. Jack. It’s the same size. It’s a *miracle*.” Something rustles; she’s holding it up to the lights. “Is that a holy-day thing?”",
+      "He walks the rest of the way home up Mission with the phone hot against his ear, past the bank and the shoe repair and the dark Walgreens, while she tells him how you fold a dress from 1962 so it never finds out it’s been anywhere.",
+      "Somewhere past Sully’s she says she’s up north on Thursday. “A test. A real one. With a pencil.” A breath on the line. “Don’t ask me how I feel about it.” And she hangs up first."
+     ],
+     "goto": "s11"
+    }
+   ]
+  },
+  "s14": {
+   "slug": "THURSDAY · 2:50 PM · THE HARBOR, THE LAUNCH-RAMP LOT",
+   "set": {
+    "knows_skye_test": true
+   },
+   "body": [
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "done. i didnt cry. launch ramp. 3",
+     "time": "2:31 PM"
+    },
+    "He’s on the 2:40 into town with the phone still open in his hand.",
+    "In daylight the far side of the harbor has a job. The sun is already low over the breakwater, the December kind that comes in sideways and finds everything, and it finds a boatyard behind chain-link with a hull up on stands and a man under it going at the bottom paint with a sander; the fuel dock, where the pump dings a little bell at every gallon for a trawler taking on diesel; a guy in rubber boots hosing down a deck and whistling through his teeth. The lamp over the lot is just a lamp on a pole. Across the water the Anchor is gray shingles on pilings with its sign switched off, nothing he’d look at twice.",
+    "The Saab is nosed up to the rail with the top down again. The rain is gone, and the rule is back. Skye is cross-legged on the trunk lid in a gray Marisol sweatshirt she must have bought today, the price tag still hanging off the cuff on its plastic thread, with a sleeve of No. 2 pencils in her lap and a sheet of scratch paper she wasn’t supposed to keep.",
+    "She holds the paper up in both hands as he comes across the lot, like a ticket that won.",
+    "“The bookstore,” she says, when she catches him looking at the tag. “The kid at the register asked if I wanted a bag. That’s all he wanted out of me. Yes or no on a bag.”",
+    "“They said leave your scratch paper on the desk,” she says. “I didn’t. I’m a criminal now. It’s been a big week for me.”",
+    "He takes it. Both sides are long division going downhill, and in every margin there are circles cut into slices, twelve to a circle, most of them, some shaded in and some shaded twice. Halfway down the back there’s a seven in a quotient that ought to be a one, and he puts his thumb under it.",
+    "“Don’t,” she says. “Don’t tell me. It’s handed in. I’m *free*.”",
+    "“A room in the science building,” she says. “Forty of us. All eighteen. They all had one pencil. I brought twelve.” She rattles the sleeve. “A proctor with a kitchen timer shaped like an egg. A clock on the wall you could *hear*. I’ve never been anyplace quiet enough to hear a clock.” She pulls her knees up under the sweatshirt. “And Jack. For two hours —”",
+    "She stops, to get it right.",
+    "“For two hours, not one person in that room looked at me. Forty people, and every one of them was looking at a fraction. Nobody needed my face. My face had the afternoon *off*.”",
+    "She lies back on the trunk lid with her arms flung out and the sun on her, and the pencils go rolling, and she laughs straight up at the sky. She sits up again. She can’t keep still. She’s up on her knees on the trunk, and then down off it, barefoot on the asphalt, and then back up, and the whole time she’s telling him — the girl beside her who chewed her pencil down to the metal, the boy who signed his name in cursive, the egg timer going off at the end and forty people letting out their air at once like a congregation sitting down — and he stands at the rail with her scratch paper and listens to all of it.",
+    "“Seven-twelfths came in,” she says, “and I said, *love what you’re doing*. I cast every one of them. I was extremely fair.”",
+    "“How’d you do?”",
+    "“I have *no idea*,” she says, and laughs. “They mail you a number. In January. I don’t even know what the number’s out of.” She points a pencil back up Mission, toward campus and the room in the science building. “And I read every one of them, Jack, I couldn’t help it. The girl by the window is going to be a vet. The boy with the cursive is going to marry her, and she has no idea.” The pencil comes down. “Not one of them read me back.”",
+    "“That sounds lonely.”",
+    "“It was *heaven*.” She lies back on the trunk again, with the sweatshirt hiked up and the sun on her stomach. “Two hours in a room full of people, and I was furniture. Write that down. I want it on my stone.”",
+    "“They read the roll off the paperwork,” she says. She takes a pencil out of the sleeve and turns it over in her fingers. “Off the application. A name I don’t use.” The pencil goes behind her ear. “And nobody turned around.” “What’s on the paperwork?” “Ask me in a different daylight.”",
+    "“You said you wanted me here,” she says, with her face turned up into the sun. “This is here.”",
+    "She turns her head on the trunk lid to look at him. “Do they know yet? Your everybody.” “No.” “Okay.” She shuts her eyes again in the sun.",
+    "He sits on the back bumper below her, and she sits up and puts her bare feet in his lap, cold as the harbor, sand on them from somewhere, and he holds one in each hand to warm it.",
+    "“What are you doing tonight?”",
+    "“A friend’s playing a song,” Jack says. “Open mic. I said I’d stay to the end.”",
+    "She nods, like that’s a reasonable thing for a person to have promised. “I’m up here tonight. At the house.” She has never said where the house is, and she doesn’t now. “Do your thing. After?”",
+    "*Keep her in the daylight*, the man behind the linen told him on Saturday, and here she is in it, with a pencil behind her ear and her bare feet on a trunk lid in December, and it is the easiest hour he has had all week.",
+    "She leans down off the trunk and kisses him, short, in front of the fuel dock and the man with the hose and God and everybody, and she tastes of pencil."
+   ],
+   "choices": [
+    {
+     "text": "“I’m going to want you after.”",
+     "tag": "Candor",
+     "set": {
+      "e20_test": "candor",
+      "said_it_plain": true,
+      "said_it_plain_n": "+1",
+      "trait.candor": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“I’m going to want you after,” Jack says.",
+      "“Then call,” Skye says. “You never call. I always call.” She takes the pencil from behind her ear and points it at him, the eraser end. “*Call.*”"
+     ],
+     "goto": "s14a"
+    },
+    {
+     "text": "“Nobody looking suits you.”",
+     "tag": "Sincerity",
+     "set": {
+      "e20_test": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“Nobody looking suits you,” Jack says.",
+      "“Don’t,” she says, and pulls the sleeve of the new sweatshirt down over her hand, price tag and all. “I’ll get used to it.”"
+     ],
+     "goto": "s14a"
+    },
+    {
+     "text": "“Did you cast the proctor?”",
+     "tag": "Wit",
+     "set": {
+      "e20_test": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“Did you cast the proctor?”",
+      "She did. She gives him the proctor right there on the trunk lid: a disappointed aunt from Barstow in a cardigan with a tissue up the sleeve, who set the egg timer like she was setting it for all of their funerals and had given up on every one of them by the second page, and was very nice about it. “*Pencils down, sweethearts. You did what you could.*”"
+     ],
+     "goto": "s14a"
+    }
+   ]
   }
+ }
 }

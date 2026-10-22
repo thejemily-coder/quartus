@@ -1,472 +1,438 @@
 {
-  "id": "S1E20",
-  "season": 1,
-  "episode": 20,
-  "showTitle": "The Hard Saying",
-  "title": "Stay",
-  "dates": "Sunday, December 6 – Friday, December 11, 2009",
-  "logline": "Twelve and oh in overtime, a rainstorm indoors and out, a holy day on three hours’ sleep, a song with a name in it — and a door somebody has never opened for anyone.",
-  "previously": [
-    {
-      "text": "Up the coast at one in the morning she asked you to LA. “I want to. I work Saturday. I’m not calling in.” “Next time I’ll ask somewhere worse.”",
-      "if": "e19_la==\"candor\""
-    },
-    {
-      "text": "Up the coast at one in the morning she asked you to LA. “I don’t own a TV. I’m not going to a party for one.”",
-      "if": "e19_la==\"wit\""
-    },
-    {
-      "text": "Up the coast at one in the morning she asked you to LA. “Ask me again. Somewhere I can’t say no.” “Careful, Jack.”",
-      "if": "e19_la==\"sincerity\""
-    },
-    {
-      "text": "Up the coast at one in the morning she asked you to a party in LA. You work Saturdays.",
-      "if": "e19_la!=\"candor\" && e19_la!=\"wit\" && e19_la!=\"sincerity\""
-    },
-    {
-      "text": "At the Marine Lab turnout, with your door open and the cold coming in: “I don’t take people home.” “Why?” “I’ve never wanted to yet.”",
-      "if": "skye_no_home"
-    },
-    {
-      "text": "In a drugstore aisle at half past one in the morning: “Where do you go, Jack?” “The library. Work. Around.”",
-      "if": "lena_asked_where && e19_where==\"control\""
-    },
-    {
-      "text": "In a drugstore aisle at half past one in the morning: “Where do you go, Jack?” “Confession. I have a lot of material.”",
-      "if": "lena_asked_where && e19_where==\"wit\""
-    },
-    {
-      "text": "In a drugstore aisle at half past one in the morning: “Where do you go, Jack?” “I’ll tell you sometime. Not yet.” “Okay.”",
-      "if": "lena_asked_where && e19_where==\"candor\""
-    },
-    {
-      "text": "In a drugstore aisle at half past one in the morning: “Where do you go, Jack?” You asked where she goes. Bastille on Thursdays. The nine o’clock.",
-      "if": "lena_asked_where && e19_where==\"restraint\""
-    },
-    {
-      "text": "In a drugstore aisle at half past one in the morning, she asked where you go.",
-      "if": "lena_asked_where && e19_where!=\"control\" && e19_where!=\"wit\" && e19_where!=\"candor\" && e19_where!=\"restraint\""
-    },
-    {
-      "text": "In the laundry room at half past four, she stepped back first. “Don’t make me be the one who wrecks something, Jack. You know I won’t.”",
-      "if": "lena_asked_where"
-    },
-    {
-      "text": "“Julian’s writing something. He won’t let me hear it till it’s done.”",
-      "if": "julian_writing_song"
-    },
-    {
-      "text": "In daylight, on the back of her car: “I’m starting in January. Here. Spring. Undeclared.”",
-      "if": "knows_skye_spring"
-    }
-  ],
-  "cast": [
-    {
-      "id": "lena",
-      "name": "Lena Broussard",
-      "role": "The girl on the porch",
-      "tracked": true
-    },
-    {
-      "id": "theo",
-      "name": "Theo Vance",
-      "role": "Roommate, Room 412",
-      "tracked": true
-    },
-    {
-      "id": "laney",
-      "name": "Laney Price",
-      "role": "Lena’s roommate",
-      "tracked": true
-    },
-    {
-      "id": "margot",
-      "name": "Margot Lindqvist",
-      "role": "Third floor, Delgado",
-      "tracked": true
-    },
-    {
-      "id": "kevin",
-      "name": "Kevin Tran",
-      "role": "Down the hall, Room 420",
-      "tracked": true
-    },
-    {
-      "id": "osei",
-      "name": "Fr. Gabriel Osei",
-      "role": "Newman Center chaplain",
-      "tracked": true
-    },
-    {
-      "id": "hale",
-      "name": "Prof. Adrian Hale",
-      "role": "Philosophy, Marisol",
-      "tracked": true
-    },
-    {
-      "id": "julian",
-      "name": "Julian Park-Ellis",
-      "role": "Plays Bastille on Thursdays",
-      "tracked": true
-    },
-    {
-      "id": "evan",
-      "name": "Evan Marsh",
-      "role": "TA, PHIL 1, Thursday section",
-      "tracked": true
-    },
-    {
-      "id": "becca",
-      "name": "Becca Lindell",
-      "role": "Newman regular",
-      "tracked": true
-    },
-    {
-      "id": "frank",
-      "name": "Frank Costigan",
-      "role": "Jack’s father",
-      "tracked": false
-    },
-    {
-      "id": "maria",
-      "name": "Maria Costigan",
-      "role": "Jack’s mother",
-      "tracked": false
-    },
-    {
-      "id": "nonna",
-      "name": "Carmela Rinaldi",
-      "role": "Jack’s grandmother",
-      "tracked": false
-    },
-    {
-      "id": "gina",
-      "name": "Gina Costigan",
-      "role": "Jack’s sister",
-      "tracked": false
-    },
-    {
-      "id": "rosie",
-      "name": "Rosie Costigan",
-      "role": "Jack’s sister",
-      "tracked": false
-    },
-    {
-      "id": "priya",
-      "name": "Priya Raman",
-      "role": "4th-floor RA",
-      "tracked": false
-    },
-    {
-      "id": "rafi",
-      "name": "Rafi Ochoa",
-      "role": "Second floor",
-      "tracked": false
-    },
-    {
-      "id": "doug",
-      "name": "Doug Pruitt",
-      "role": "Room 420",
-      "tracked": false
-    },
-    {
-      "id": "joey",
-      "name": "Joey Abruzzo",
-      "role": "Newman regular",
-      "tracked": false
-    },
-    {
-      "id": "tyler",
-      "name": "Tyler Brandt",
-      "role": "Newman missionary",
-      "tracked": false
-    },
-    {
-      "id": "fitch",
-      "name": "Dolores Fitch",
-      "role": "Newman secretary",
-      "tracked": false
-    },
-    {
-      "id": "sloane",
-      "name": "Sloane Kittredge",
-      "role": "Pi Lambda Chi",
-      "tracked": false
-    },
-    {
-      "id": "gloria",
-      "name": "Gloria Mendes",
-      "role": "The Anchor, nights",
-      "tracked": false
-    },
-    {
-      "id": "rudy",
-      "name": "Rudy Salcedo",
-      "role": "Line cook, the Anchor",
-      "tracked": false
-    },
-    {
-      "id": "caleb",
-      "name": "Caleb Hargrove",
-      "role": "PHIL 9H",
-      "tracked": false
-    },
-    {
-      "id": "yusuf",
-      "name": "Yusuf Noorzai",
-      "role": "PHIL 9H",
-      "tracked": false
-    },
-    {
-      "id": "wes",
-      "name": "Wes Arceneaux",
-      "role": "Lena’s ex, Tulane",
-      "tracked": true
-    },
-    {
-      "id": "tess",
-      "name": "Tess Fontenot",
-      "role": "Lena’s sister",
-      "tracked": false
-    },
-    {
-      "id": "richard",
-      "name": "Richard Vance",
-      "role": "Theo’s father",
-      "tracked": false
-    },
-    {
-      "id": "brynn",
-      "name": "Brynn Vance",
-      "role": "Richard’s wife",
-      "tracked": false
-    },
-    {
-      "id": "caroline",
-      "name": "Caroline Ashby Vance",
-      "role": "Theo’s mother",
-      "tracked": false
-    },
-    {
-      "id": "poppy",
-      "name": "Poppy Vance",
-      "role": "Theo’s sister",
-      "tracked": false
-    },
-    {
-      "id": "danny",
-      "name": "Danny Costigan",
-      "role": "Jack’s brother",
-      "tracked": false
-    },
-    {
-      "id": "remy",
-      "name": "Remy Broussard",
-      "role": "Lena’s brother",
-      "tracked": false
-    },
-    {
-      "id": "nora",
-      "name": "Nora Calloway",
-      "role": "Name on a brass plate",
-      "tracked": false
-    },
-    {
-      "id": "dale",
-      "name": "Dale Wisniewski",
-      "role": "A Lions fan at Sully’s",
-      "tracked": false
-    },
-    {
-      "id": "peter",
-      "name": "Peter Haddad",
-      "role": "Newman president",
-      "tracked": false
-    },
-    {
-      "id": "kenzie",
-      "name": "Kenzie Rourke",
-      "role": "Newman cantor",
-      "tracked": false
-    },
-    {
-      "id": "bridget",
-      "name": "Bridget McNulty",
-      "role": "Newman missionary",
-      "tracked": false
-    },
-    {
-      "id": "ray",
-      "name": "Ray Ochoa",
-      "role": "Rafi’s father",
-      "tracked": false
-    },
-    {
-      "id": "lupe",
-      "name": "Lupe",
-      "role": "Taco truck, Seacliff Road",
-      "tracked": false
-    },
-    {
-      "id": "merle",
-      "name": "Merle",
-      "role": "A fisherman at the Anchor counter",
-      "tracked": false
-    },
-    {
-      "id": "dulce",
-      "name": "Dulce",
-      "role": "Harbor Inn housekeeping",
-      "tracked": false
-    },
-    {
-      "id": "rosario",
-      "name": "Rosario",
-      "role": "Harbor Inn housekeeping",
-      "tracked": false
-    },
-    {
-      "id": "kaylee",
-      "name": "Kaylee Whitmore",
-      "role": "Laney’s friend, Dallas",
-      "tracked": false
-    },
-    {
-      "id": "tony",
-      "name": "Tony Broussard",
-      "role": "Lena’s father, by phone",
-      "tracked": false
-    },
-    {
-      "id": "verna",
-      "name": "Verna",
-      "role": "Motel keeper, Lucia",
-      "tracked": false
-    },
-    {
-      "id": "bede",
-      "name": "Father Bede",
-      "role": "Camaldolese monk",
-      "tracked": false
-    },
-    {
-      "id": "luc",
-      "name": "Luc Broussard",
-      "role": "Lena’s brother",
-      "tracked": false
-    },
-    {
-      "id": "josie",
-      "name": "Josie Broussard",
-      "role": "Lena’s sister",
-      "tracked": false
-    },
-    {
-      "id": "brooks",
-      "name": "Brooks Callahan",
-      "role": "Sigma Rho",
-      "tracked": false
-    },
-    {
-      "id": "planner",
-      "name": "Delphine",
-      "role": "Party planner, Silver Lake",
-      "tracked": false
-    },
-    {
-      "id": "sol",
-      "name": "Soledad",
-      "role": "A girl with an old camera",
-      "tracked": false
-    },
-    {
-      "id": "odile",
-      "name": "Odile Broussard",
-      "role": "Lena’s Mémère, Breaux Bridge",
-      "tracked": false
-    },
-    {
-      "id": "graham",
-      "name": "Graham Fisk",
-      "role": "A guest at Hale’s table",
-      "tracked": false
-    },
-    {
-      "id": "garrett",
-      "name": "Garrett",
-      "role": "Bio 1A, the orgo study group",
-      "tracked": false
-    },
-    {
-      "id": "skye",
-      "name": "Skye Callender",
-      "role": "Thursdays at nine",
-      "tracked": true
-    },
-    {
-      "id": "debbie",
-      "name": "Debbie Callender",
-      "role": "Skye’s mother, by phone",
-      "tracked": false
-    },
-    {
-      "id": "wyatt",
-      "name": "Wyatt Halloran",
-      "role": "The host, Montecito",
-      "tracked": false
-    },
-    {
-      "id": "bev",
-      "name": "Bev",
-      "role": "Night waitress, the Starlite",
-      "tracked": false
-    },
-    {
-      "id": "tammy",
-      "name": "Tammy Price",
-      "role": "Laney’s mother, by speakerphone",
-      "tracked": false
-    },
-    {
-      "id": "reggie",
-      "name": "Reggie",
-      "role": "Danny’s bunk neighbor, from Portsmouth",
-      "tracked": false
-    },
-    {
-      "id": "ashley",
-      "name": "Ashley Vrabel",
-      "role": "Gina’s classmate, Ursuline",
-      "tracked": false
-    },
-    {
-      "id": "vrabel",
-      "name": "Mr. Vrabel",
-      "role": "Ashley’s father",
-      "tracked": false
-    },
-    {
-      "id": "dom",
-      "name": "Fr. Dom Bruno",
-      "role": "Pastor, St. Brigid of Kildare",
-      "tracked": false
-    }
-  ],
-  "duels": {
-    "why": {
-      "title": "Why",
-      "opponent": "skye",
-      "topic": "Whether the body says anything"
-    }
+ "id": "S1E20",
+ "season": 1,
+ "episode": 20,
+ "showTitle": "The Hard Saying",
+ "title": "Stay",
+ "dates": "Sunday, December 6 – Friday, December 11, 2009",
+ "logline": "Twelve and oh in overtime, a rainstorm indoors and out, a holy day on three hours’ sleep, a song with a name in it — and a door somebody has never opened for anyone.",
+ "previously": [
+  {
+   "text": "Up the coast at one in the morning she asked you to LA. “I want to. I work Saturday. I’m not calling in.” “Next time I’ll ask somewhere worse.”"
   },
-  "start": "s01",
-  "endCard": {
-    "tag": "“You said no. And you’re still here.”",
-    "nextTime": [
-      "Six in the morning, and somebody asks about a war.",
-      "A white elephant, a terrible choir, and something in the punch.",
-      "Late at the Anchor, and Gloria rates somebody new.",
-      "Gaudete Sunday. December water. Dawn."
-    ]
+  {
+   "text": "At the Marine Lab turnout, with your door open and the cold coming in: “I don’t take people home.” “Why?” “I’ve never wanted to yet.”"
+  },
+  {
+   "text": "In a drugstore aisle at half past one in the morning: “Where do you go, Jack?” “I’ll tell you sometime. Not yet.” “Okay.”"
+  },
+  {
+   "text": "In the laundry room at half past four, she stepped back first. “Don’t make me be the one who wrecks something, Jack. You know I won’t.”"
+  },
+  {
+   "text": "“Julian’s writing something. He won’t let me hear it till it’s done.”"
+  },
+  {
+   "text": "In daylight, on the back of her car: “I’m starting in January. Here. Spring. Undeclared.”"
   }
+ ],
+ "cast": [
+  {
+   "id": "lena",
+   "name": "Lena Broussard",
+   "role": "The girl on the porch",
+   "tracked": true
+  },
+  {
+   "id": "theo",
+   "name": "Theo Vance",
+   "role": "Roommate, Room 412",
+   "tracked": true
+  },
+  {
+   "id": "laney",
+   "name": "Laney Price",
+   "role": "Lena’s roommate",
+   "tracked": true
+  },
+  {
+   "id": "margot",
+   "name": "Margot Lindqvist",
+   "role": "Third floor, Delgado",
+   "tracked": true
+  },
+  {
+   "id": "kevin",
+   "name": "Kevin Tran",
+   "role": "Down the hall, Room 420",
+   "tracked": true
+  },
+  {
+   "id": "osei",
+   "name": "Fr. Gabriel Osei",
+   "role": "Newman Center chaplain",
+   "tracked": true
+  },
+  {
+   "id": "hale",
+   "name": "Prof. Adrian Hale",
+   "role": "Philosophy, Marisol",
+   "tracked": true
+  },
+  {
+   "id": "julian",
+   "name": "Julian Park-Ellis",
+   "role": "Plays Bastille on Thursdays",
+   "tracked": true
+  },
+  {
+   "id": "evan",
+   "name": "Evan Marsh",
+   "role": "TA, PHIL 1, Thursday section",
+   "tracked": true
+  },
+  {
+   "id": "becca",
+   "name": "Becca Lindell",
+   "role": "Newman regular",
+   "tracked": true
+  },
+  {
+   "id": "frank",
+   "name": "Frank Costigan",
+   "role": "Jack’s father",
+   "tracked": false
+  },
+  {
+   "id": "maria",
+   "name": "Maria Costigan",
+   "role": "Jack’s mother",
+   "tracked": false
+  },
+  {
+   "id": "nonna",
+   "name": "Carmela Rinaldi",
+   "role": "Jack’s grandmother",
+   "tracked": false
+  },
+  {
+   "id": "gina",
+   "name": "Gina Costigan",
+   "role": "Jack’s sister",
+   "tracked": false
+  },
+  {
+   "id": "rosie",
+   "name": "Rosie Costigan",
+   "role": "Jack’s sister",
+   "tracked": false
+  },
+  {
+   "id": "priya",
+   "name": "Priya Raman",
+   "role": "4th-floor RA",
+   "tracked": false
+  },
+  {
+   "id": "rafi",
+   "name": "Rafi Ochoa",
+   "role": "Second floor",
+   "tracked": false
+  },
+  {
+   "id": "doug",
+   "name": "Doug Pruitt",
+   "role": "Room 420",
+   "tracked": false
+  },
+  {
+   "id": "joey",
+   "name": "Joey Abruzzo",
+   "role": "Newman regular",
+   "tracked": false
+  },
+  {
+   "id": "tyler",
+   "name": "Tyler Brandt",
+   "role": "Newman missionary",
+   "tracked": false
+  },
+  {
+   "id": "fitch",
+   "name": "Dolores Fitch",
+   "role": "Newman secretary",
+   "tracked": false
+  },
+  {
+   "id": "sloane",
+   "name": "Sloane Kittredge",
+   "role": "Pi Lambda Chi",
+   "tracked": false
+  },
+  {
+   "id": "gloria",
+   "name": "Gloria Mendes",
+   "role": "The Anchor, nights",
+   "tracked": false
+  },
+  {
+   "id": "rudy",
+   "name": "Rudy Salcedo",
+   "role": "Line cook, the Anchor",
+   "tracked": false
+  },
+  {
+   "id": "caleb",
+   "name": "Caleb Hargrove",
+   "role": "PHIL 9H",
+   "tracked": false
+  },
+  {
+   "id": "yusuf",
+   "name": "Yusuf Noorzai",
+   "role": "PHIL 9H",
+   "tracked": false
+  },
+  {
+   "id": "wes",
+   "name": "Wes Arceneaux",
+   "role": "Lena’s ex, Tulane",
+   "tracked": true
+  },
+  {
+   "id": "tess",
+   "name": "Tess Fontenot",
+   "role": "Lena’s sister",
+   "tracked": false
+  },
+  {
+   "id": "richard",
+   "name": "Richard Vance",
+   "role": "Theo’s father",
+   "tracked": false
+  },
+  {
+   "id": "brynn",
+   "name": "Brynn Vance",
+   "role": "Richard’s wife",
+   "tracked": false
+  },
+  {
+   "id": "caroline",
+   "name": "Caroline Ashby Vance",
+   "role": "Theo’s mother",
+   "tracked": false
+  },
+  {
+   "id": "poppy",
+   "name": "Poppy Vance",
+   "role": "Theo’s sister",
+   "tracked": false
+  },
+  {
+   "id": "danny",
+   "name": "Danny Costigan",
+   "role": "Jack’s brother",
+   "tracked": false
+  },
+  {
+   "id": "remy",
+   "name": "Remy Broussard",
+   "role": "Lena’s brother",
+   "tracked": false
+  },
+  {
+   "id": "nora",
+   "name": "Nora Calloway",
+   "role": "Name on a brass plate",
+   "tracked": false
+  },
+  {
+   "id": "dale",
+   "name": "Dale Wisniewski",
+   "role": "A Lions fan at Sully’s",
+   "tracked": false
+  },
+  {
+   "id": "peter",
+   "name": "Peter Haddad",
+   "role": "Newman president",
+   "tracked": false
+  },
+  {
+   "id": "kenzie",
+   "name": "Kenzie Rourke",
+   "role": "Newman cantor",
+   "tracked": false
+  },
+  {
+   "id": "bridget",
+   "name": "Bridget McNulty",
+   "role": "Newman missionary",
+   "tracked": false
+  },
+  {
+   "id": "ray",
+   "name": "Ray Ochoa",
+   "role": "Rafi’s father",
+   "tracked": false
+  },
+  {
+   "id": "lupe",
+   "name": "Lupe",
+   "role": "Taco truck, Seacliff Road",
+   "tracked": false
+  },
+  {
+   "id": "merle",
+   "name": "Merle",
+   "role": "A fisherman at the Anchor counter",
+   "tracked": false
+  },
+  {
+   "id": "dulce",
+   "name": "Dulce",
+   "role": "Harbor Inn housekeeping",
+   "tracked": false
+  },
+  {
+   "id": "rosario",
+   "name": "Rosario",
+   "role": "Harbor Inn housekeeping",
+   "tracked": false
+  },
+  {
+   "id": "kaylee",
+   "name": "Kaylee Whitmore",
+   "role": "Laney’s friend, Dallas",
+   "tracked": false
+  },
+  {
+   "id": "tony",
+   "name": "Tony Broussard",
+   "role": "Lena’s father, by phone",
+   "tracked": false
+  },
+  {
+   "id": "verna",
+   "name": "Verna",
+   "role": "Motel keeper, Lucia",
+   "tracked": false
+  },
+  {
+   "id": "bede",
+   "name": "Father Bede",
+   "role": "Camaldolese monk",
+   "tracked": false
+  },
+  {
+   "id": "luc",
+   "name": "Luc Broussard",
+   "role": "Lena’s brother",
+   "tracked": false
+  },
+  {
+   "id": "josie",
+   "name": "Josie Broussard",
+   "role": "Lena’s sister",
+   "tracked": false
+  },
+  {
+   "id": "brooks",
+   "name": "Brooks Callahan",
+   "role": "Sigma Rho",
+   "tracked": false
+  },
+  {
+   "id": "planner",
+   "name": "Delphine",
+   "role": "Party planner, Silver Lake",
+   "tracked": false
+  },
+  {
+   "id": "sol",
+   "name": "Soledad",
+   "role": "A girl with an old camera",
+   "tracked": false
+  },
+  {
+   "id": "odile",
+   "name": "Odile Broussard",
+   "role": "Lena’s Mémère, Breaux Bridge",
+   "tracked": false
+  },
+  {
+   "id": "graham",
+   "name": "Graham Fisk",
+   "role": "A guest at Hale’s table",
+   "tracked": false
+  },
+  {
+   "id": "garrett",
+   "name": "Garrett",
+   "role": "Bio 1A, the orgo study group",
+   "tracked": false
+  },
+  {
+   "id": "skye",
+   "name": "Skye Callender",
+   "role": "Thursdays at nine",
+   "tracked": true
+  },
+  {
+   "id": "debbie",
+   "name": "Debbie Callender",
+   "role": "Skye’s mother, by phone",
+   "tracked": false
+  },
+  {
+   "id": "wyatt",
+   "name": "Wyatt Halloran",
+   "role": "The host, Montecito",
+   "tracked": false
+  },
+  {
+   "id": "bev",
+   "name": "Bev",
+   "role": "Night waitress, the Starlite",
+   "tracked": false
+  },
+  {
+   "id": "tammy",
+   "name": "Tammy Price",
+   "role": "Laney’s mother, by speakerphone",
+   "tracked": false
+  },
+  {
+   "id": "reggie",
+   "name": "Reggie",
+   "role": "Danny’s bunk neighbor, from Portsmouth",
+   "tracked": false
+  },
+  {
+   "id": "ashley",
+   "name": "Ashley Vrabel",
+   "role": "Gina’s classmate, Ursuline",
+   "tracked": false
+  },
+  {
+   "id": "vrabel",
+   "name": "Mr. Vrabel",
+   "role": "Ashley’s father",
+   "tracked": false
+  },
+  {
+   "id": "dom",
+   "name": "Fr. Dom Bruno",
+   "role": "Pastor, St. Brigid of Kildare",
+   "tracked": false
+  }
+ ],
+ "duels": {
+  "why": {
+   "title": "Why",
+   "opponent": "skye",
+   "topic": "Whether the body says anything"
+  }
+ },
+ "start": "s01",
+ "endCard": {
+  "tag": "“You said no. And you’re still here.”",
+  "nextTime": [
+   "Six in the morning, and somebody asks about a war.",
+   "A white elephant, a terrible choir, and something in the punch.",
+   "Late at the Anchor, and Gloria rates somebody new.",
+   "Gaudete Sunday. December water. Dawn."
+  ]
+ }
 }
