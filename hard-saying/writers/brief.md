@@ -1029,3 +1029,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     semester (the Lighthouse porch, the Point path, St. Brendan's, the Delgado lounge, the Anchor, the Lagoon bench),
     talking until the airport shuttle. Both nearly say it. Then her flight to New Orleans, his to Youngstown, and his
     phone buzzes: Skye.
+- **Julian's song → Jack withdraws to Skye (player).** Hearing Julian's song for Lena (E20) wounds Jack, and he
+  **completely withdraws into Skye** from then **until the last night with Lena** (E22). He's there in body for the
+  Newman party and the rest, but he spends every free hour with Skye; Lena's night-time seeking finds him gone. **Skye
+  notices something hurt him but doesn't push** (her presence-without-pressing is part of her pull). This withdrawal
+  can **contain, lead up to, or build on** Skye's first attempt to sleep with him, his first "no", the long conversation
+  about why, and her big vulnerability moment (room's call on exact placement within E19–E21; the earlier directive
+  puts that scene at her place, the first time she brings him home). The finale's empty-campus walk is then the first
+  real time with Lena since the song, which is why it's the best night of the semester and why the airport-and-Skye
+  ending stings.

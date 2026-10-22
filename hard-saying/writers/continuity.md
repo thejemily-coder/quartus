@@ -3062,3 +3062,167 @@ The Halloran parents are in London. Wyatt's father's company is never named on t
 Jack's RAZR as SKYE (MISFIT); she has his 330 number. She has never seen THEO on his screen and never heard Theo's name from Jack; Jack never mentioned Danny to her. Theo
 never saw her. Lena heard only her own half through 217's door. "Cassidy" was said once, by a stranger, unexplained. Becca flies to Spokane Wed Nov 25; Theo and Jack fly
 SBA → PIT Wed morning.
+
+### S1E17 — "Out Loud" (Sun Nov 22 – Wed Nov 25, 2009; tag Wed 12:40 p.m. MST, the jetway in Denver)
+> Final revision, collapsed against the after-s1e16 save (wit 42, reckless 35, candor 62, control 17, charm 25, sincerity 118; Jack resolve 5, Lena 4; Skye heat 3,
+> trust 3, warmth 5). **Save-specific (written flat for this save; would need gates on any other save):** Previously (met_skye, kissed_skye — "You kissed her before she
+> finished", skye_has_number, knows_lena_piano_played, theo_youngstown && theo_paid_flights, e16_where candor — "Argued about a book till it got light"); s16 "Coat
+> check." (e16_water control); s17 "How's Marlene?" (scar husband); s07a "i didnt un-cross-out the con" (e16_misfit jack_heart); s18a "The one who's seeing somebody."
+> (e16_friend candor); s18b "most nights nobody answers… a terrible business plan" (e16_faith sincerity); s20 "Last time you didn't let me get to the end of the
+> sentence." (e16_kiss reckless) and "I retired her." (e16_stop reckless); s21 "Another book?" (e16_where candor); s23 "You can. I told you. Watch." (e16_tickets candor);
+> and E5–E15: e5_sullys heckle (Dale card without the Aints line), e15_jude sincerity, e15_whodat becca (Lena rings the final herself), e14_glass wrote, e15_conf go,
+> lena_knows_why_becca, e15_gina sincerity, e15_frank rose, maria_knows_lena_maybe, e14_ma lena, e14_danny hey, e15_wall both, e15_kevin follow, e14_memere oui,
+> lena_knows_frank_night, theo_paid_deposit, becca_fb_up, e15_her yes. Live gates: `e17_*`, `said_it_plain_n>=2`, `trait.wit>=44` only. Per-path ≈18.4k words
+> (Skye ceiling ~22k); 22 choices per path; 6 whispers; 12 keys per path; no duel (the Starlite games are unscored by design). Genuine fork: `e17_stop` (s20a/s20b).
+
+- s01 Sun 6:10 a.m., 412 (civil twilight 6:12, sunrise ≈6:40): Jack in from the Saturday close at 1:20, up since five drafting on T9 (*hi its jack*; *about last
+  night*; 5477 kiss/lips); keeps *the grandmother*. 6:40 Theo in from the beach — khakis wet to the shin, sand, loafers dark, gas-station coffee: "I run now." Sees the
+  open RAZR; says nothing.
+- s02 10:05 Sully's: Saints 38–7 at Tampa (31 straight; 10–0); Lions 38, Browns 37 on the last play (Quinn's four TDs; Jack "exhumes" him); Steelers at KC on the third
+  set. Lena under the bell in black and gold, chest cold, gravel voice ("Don't you dare tell Gloria" — she ate the soup cold at six); Julian, eight days in, on a stool
+  in a cardigan; Laney in sunglasses: "Fireman, why is there a *beach* in your boots?"; Kevin scores on a napkin; Theo asleep; Laney's purse on Becca's old chair. "Who're
+  you texting?" "No one." Dale: a root beer — "the only man in California who knows what that cost"; Jack lifts it back and can't stop grinning (the big laugh is s07's).
+  "You look like something happened to you." "Ohio State beat Michigan." The nickel per `e17_julian`. Lena rings the final herself.
+- s03 1:35 Anacapa lot: Lena wipes her 9; WHO DAT · 10–0 per `e17_glass` (sincerity: Jack's leaning egg + a fork for a fleur-de-lis; decency: Julian's composer's ten,
+  "Perfect," to Jack — whisper "Lena will remember that."; wit: Lena's shaded ten, "That's not mourning. That's Ohio."). Kevin to the library.
+- s03a 1:52 p.m., the wall by the bike racks: the first text per `e17_draft` (wit *misfit. the grandmother still gets the last word. —jack (the guy who was right)*;
+  press *misfit. correction: a con waits for you to come to her. she reached. —jack (still right)*; candor two texts, the second *also friday was the best night ive had
+  in a long time. i wanted to say it. —jack*).
+- s04 3:10 the Brick: the NO paper (eight pages; Hume; the best paragraph of his semester; he believes none of it); `e17_check` (reckless: resolve −1). 8:20 the Fishbowl:
+  AMAs (West Coast delay), Laney + two Pi Lams, kettle corn; "Light a candle for Kanye."
+- s05 9:00 p.m. Christ the King: the organist himself at full organ; Osei on Pilate's "What is truth?" ("with our backs half turned"); Lena whispering, Julian says her
+  responses; [conf go] *Becca* on the kneeler. Nonna still sleeps in the front-room chair. resolve.jack +1; resolve.lena 6.
+- s06 10:05 the courtyard wall (the moon setting yellow behind the Grove): Lena's YES thesis ("A promise is made to a person, not to a reason"); "I convinced the paper.";
+  "Argue the other side at me"; "Then they let you off it… to your face"; "Have you told your mama yet?" "Tomorrow." "*Still?*"; "You had a beach in your boots this
+  morning." → `e17_lena` (control: "Theo dragged me to a party. In Montecito." — `lena_knows_party`, trust +1; wit: "It's in the lease." — "Uh-huh," friction +1;
+  restraint: Hale's curve, Mémère's solidarity cold, her Wednesday flight; she doesn't ask again). Julian with the organist; "Goodnight, Jack."
+- s07 11:48 p.m. the Fishbowl (Jack there about an hour, phone face down on the cushion): **the knockout** — *you would of been a good man if it had been somebody there to
+  kiss you every minute of your life* — Jack laughs out loud and can't stop; Kevin, Margot, Laney (Cajun Shrimp on her toes) and Lena all look up; Laney: "Well. *No* one
+  is a riot." `e17_laugh` (restraint "He's *leaving*" / "Dale… The Lions are still winning." / "Hale's paper. I just got to my conclusion." — "Nobody's conclusion is that
+  good, Youngstown"). Margot writes nothing down; her button is Tuesday's whiteboard.
+- s07a 11:52 the 4th-floor landing: [draft candor] *also. me too. friday*; *sorry. work. i had to stand on a carpet and smile at a wall for five hours and every wall was
+  rude to me*; *also i didnt un-cross-out the con. dont get excited*; `e17_reply` (wit: Dale → "i want dale at my funeral"; candor: "i like that you counted";
+  restraint: 12:31 "are you asleep or being mysterious"); *stuck down here till tuesday… a woman with pins in her mouth* / *tuesday. late. ill find you.* / *i found you
+  in a window seat. ill manage.* Jack does not text her that Tuesday is his last night in California.
+- s08 Mon: papers in Hale's pigeonhole at 9 (Lena's first, binder-clipped); Jack calls Greyhound (refund as a voucher). 1:00 Hollis 302: the whiteboard (MR. COSTIGAN: NO.
+  MISS BROUSSARD: YES.); papers swapped — "Margins by tomorrow… like Victorians. I'll collect them in December"; nobody staying in Marisol (Yusuf: Fremont, turkey and
+  biryani); "I shall have the town to myself." (🔒 the Wharf Rat); forty minutes on Hume; "Try not to convert anyone over the gravy."
+- s09 2:10 the Hollis steps → the east stairwell: Gina *nonna fell. on the stairs. ambulance. shes talking. call ma* + *i said sorry to ashley btw…*; Lena folds her paper
+  into his Carhartt: "Call her. I'll keep yours warm." Maria (5:15 ET, calm "the way she does in hospitals"): Nonna, two weeks in the front-room chair (since Sun Nov 8),
+  went up for her good rosary from San Giovanni ("She had decided God could tell the difference") and came down the fast way; fourteen stairs, the seventh complains;
+  Gina found her after Ursuline, did everything right, now shut in her room; St. Elizabeth's — broken wrist, six stitches over the eye, kept on a heart monitor for the
+  dizzy spells ("*stable*"); called the paramedic handsome, wouldn't ride in his ambulance — **Frank drove her, sober, carried her to the truck**; "it wasn't the stairs.
+  She was in a hurry, and the rosary wasn't."; Frank on the extension ("And we lose." Click.); "Wednesday is soon enough"; Theo's plane tickets ("Does he eat?"); Lena to
+  New Orleans; Nonna asks if the cow girl's coming at Christmas — pizzelle. **`e17_ma`**: candor "Last week. It was me." → "You told me… Yourself. Good." (whisper) /
+  sincerity "She's the best girl I know. It wasn't right" → "Did she do something?" "No, Ma. She did everything right." / deflect "Not now, Ma." → "You broke up with her."
+  Every path: "Oh, honey." … "I'll write her anyway." (`maria_knows_becca_over`).
+- s10 2:31 Jack→Lena *nonna fell. shes ok. wrist*; Lena *Praying. Calling Mémère. I have your paper. —L.* 6:15 Danny's letter (PROFESSOR; "She said hey back"; Jagoff;
+  Idaho at Christmas; push-ups 160) — into the Carhartt with the others. Theo (told at three; the San Pellegrino) has St. Elizabeth's visiting hours, 2–8; "What do
+  Calabrian grandmothers like?" "Being right." (`rel.theo.trust` +1)
+- s11 11:40 Lena's YES paper (Ruth and Naomi; *Quocumque perrexeris*; the footnote *Obviously*); his margin per `e17_margin`; under 217's door at midnight. He nearly
+  texts Skye about Nonna and doesn't: he'll tell her when he can see her face.
+- s12 Tue 7:05 Lena's red on his title page: *Best thing you've written for him. You don't believe one sentence of it. He'll know. Neither do I. —L.*
+- s13 8:10 the floor goes home: Priya's BREAK CLOSURE CHECKLIST ("I know about the cheese"); Margot's whiteboard, under BOTH: **COSTIGAN — LAUGHED AT A TELEPHONE (SUN.,
+  11:48 P.M.). NOT SURFACE. DIAGNOSTIC.**; Laney's three monogrammed suitcases and a hatbox; the town car, Tammy on the dash ("Delaney Rose. Shoulders."); Laney's hug (a
+  Christmas-and-funerals thing): "don't learn any girls' names, sugar. You're fragile."; Theo's admiral wave from 412; Lena has a 9:30 (she and Laney said goodbye at
+  seven); Margot rides with Kevin to San Jose, flies to Portland ("Two academics and a Tofurky"); Kevin: the Vietnamese Martyrs (117; his mother reads eleven at La Vang);
+  the 2004 Costco turkey fryer; **Kevin asks about the scar** (`e17_scar`/`scar_told_kevin`: hockey puck / jealous husband in Erie / a cat named Archbishop / "A fight. A
+  long time ago." — whisper on fight); Kevin's hand on Jack's shoulder for one step.
+- s14 12:10 (the Martyrs, in red): Osei reads Jack's card — "For Carmela Rinaldi, in the hospital in Youngstown, Ohio." Becca (beside Joey) hears; Lena turns around.
+  resolve.jack +1. The Grove: Mémère called at seven — a candle at St. Bernard's (Breaux Bridge) tonight, Tante Claudine driving and holding the lighter; "*La moitié
+  d'un nom, c'est la moitié d'une chandelle*"; "your nonna raised a boy with manners, so she's owed"; "Who drove her?" "My dad. Sober." "Good."; Julian drives Lena to SBA
+  at dawn; Becca waves; Claudine: "Carmela goes ahead of the Saints' secondary. Last year it was the levees."
+- s15 9:40 the Anchor, last shift before the break: KNX — Koenigsegg walks away from Saab (Rudy: "Poor Swede"; Merle's brother-in-law's Saab); Jack told Gloria about
+  Nonna at seven; **Gloria's pecan for Nonna** ("Pecan travels"; "from a woman who's been on her feet thirty years"; "You fall for a reason, it doesn't count against
+  you"; "Peach is August, hon"); 9:52 *my car is an orphan. this is on you, ohio.*; the route stated: Jack told her about the Anchor at Ellery in the Saab (Gloria, the pie
+  ratings, the Hobart, which end of the wharf). `e17_text`; *the orphan will be at the end of the wharf. past the bar with the sad neon. dont tell anyone.* Rudy's nephew
+  has his Saturday sink; "Come back."
+- s16 Wed 1:05 a.m. the wharf: La Flaca stays chained to the rail behind the Anchor over Thanksgiving; the Saab past the Wharf Rat (only RAT holds); "Coat check."; a
+  green-and-black flannel, barefoot; the fitting bit (pins; "Since ten this morning. I drove up after. I've been back two hours."); "My grandmother's pie."; "Not the
+  diner you work at."; she passes the bright all-night place at the on-ramp — "Too bright." — "Somewhere nobody I know has ever been."
+- s17 1:30 **the Starlite** (1958, at the top of the grade ~20 min up the 101; six diesel islands; a neon star with two dead points; SHOWERS · DRIVERS · $8 · ASK; red
+  leatherette booths patched with tape; a Seeburg — Mazzy Star; Bev, sixties, pencil in her hair-clip, "You kids sit anywhere"): two lemon meringue, "coffee till we
+  die. He's paying."; her bare feet on his side of the booth; "How's Marlene?" "Still in Erie." "I'm still not buying it."; she looks out the window once; the minivan
+  girl (13, Hollister hoodie) stares and ducks; the napkin CASTING. STARLITE. 1:30 A.M.; "Good Country People" (near the back of the book), Hulga; Jack as the Bible
+  salesman per `e17_play` (reckless full Tennessee / wit "Hollow. There's Marlboros in 'em." / restraint "I do one" → "You ain't so smart." / yesand Mrs. Hopewell,
+  gated `trait.wit>=44`); the AD bit: "You're cast."; she never says what she's in; toast to the orphan (KNX twelve minutes ahead of her text).
+- s18 2:05: "if you ever get on TV, I'll buy one. Just to watch." — she laughs coffee everywhere; "Deal." Nonna per `e17_nonna` (candor: all of it, including the rosary
+  reason and "my dad drove her"; control: the facts; wit: "She called the paramedic handsome. Twice." → "Now tell me the real one.").
+- s18a 2:25: Nonna as a person (San Giovanni in Fiore; 1951, one suitcase; the Calabrese rosary; cardoons; the folded twenty; the chair by the window; "Giacomino"; *E la
+  ragazza?* → "Which girl?" → "The one who's seeing somebody."); a cardoon is a thistle; Skye begins to do Nonna and stops ("She's yours."); 🔒 "I'm named for a
+  grandmother I met twice" — holy cards every birthday till nine (dialogue only; never in a card); "When do you go?" "Today. In about five hours. With my roommate."; the
+  Glenwood table (Maria cries at grace); "My mother's… Nineteen years old, and somebody will still ask me if I'm eating." **(Skye is nineteen, said on the page.)**
+- s18b 2:55: Bev: "Anybody ever tell you you look like somebody?" "Everybody looks like somebody, Bev."; what believing is *like* (savasana / corpse pose; the First Mover
+  as a plot problem — "a good writers' room"); the Hail Mary together, first half, low under the jukebox; "For a role. Forty takes. A chapel." "What were you playing?"
+  "A nice girl." `e17_faith` → "So it's like acting." "It's the other way round. It's true first." "Is it?" "Yeah. It is."
+- s19 3:30: a trucker's dollar → Merle Haggard, "Silver Wings"; "I've never been up." "Get the window. Don't blink."; "Then I'll pray for physics."; **the second game:**
+  Jack as a flight attendant (twenty-two years in the air), Skye as a frightened seventy-year-old in 22C bound for a grandson in Tucson; the safety demo (menu = the card;
+  sugar pourer = the oxygen mask; exits by the cassettes and through the kitchen; the red-taped cushion floats); "Then I come back for you, ma'am. That's the job."; "My
+  granddaughter's single. She's a dental hygienist."; Bev: "Life jackets are in back with the mops. He's new."; Skye watches a pickup till the driver (feed cap, the
+  showers) climbs down (tell); Jack sits beside her; "I want you to miss me. Over Thanksgiving. A reasonable amount." `e17_miss` (candor whisper "Skye will remember
+  that." / wit ledger — "Sunday. Bring receipts." / restraint "That's a yes in Ohio"). Bev: "She got it. Two o'clock." The box sat two and a half hours.
+- s20 4:15 the Anacapa lot (a lamp on the Lagoon side ticks; no moon): "I'm not going to ask this time. Last time you didn't let me get to the end of the sentence." "I
+  retired her." `e17_ask` (candor "I'd like to kiss you." → "There he is." [+"*Again.*" at `said_it_plain_n>=2`] / reckless: he kisses her as her chin comes up — she
+  makes a pleased sound / restraint: she kisses him once — "You're very patient. It's infuriating.").
+- s20k 4:20 against the Saab: "Friday was fast. I've been thinking about the slow way ever since."; the extended, slow, clothed kiss (coffee and lemon; her hands flat on
+  his ribs inside the Carhartt; his hand in her dry hair, thumb along her cheekbone; the corner of her mouth, the side of her throat; her hips against his — he's honest
+  about it and she doesn't move away; his other hand on the flannel above the waist of her cutoffs, kept there on purpose; she smiles against his mouth; she says his name
+  once). `kissed_skye_2`; resolve −1; heat +2. **`e17_stop`**: restraint → s20a (he stops, forehead to hers; "Go home, Ohio. You have a plane."; she does up his top
+  snap) / reckless → s20b (she stops: her thumb at the corner of his mouth, "That's for the plane."; resolve −1 more, heat +1). "Miss me a reasonable amount." The Saab
+  onto Ocean Road toward the 101 (where she goes after is not Jack's knowledge).
+- s21 4:40–5:20 the curb by the bike racks: forty minutes of her mouth (the still cool first second; coffee and lemon; one chapped place at the corner, on the left; a
+  freckle by her mouth he saw only under the lamp; the peak of her top lip; she'd been thinking about it since Friday, and said so); thumb on the 5, unsent; the St.
+  Michael; the confession sentence he stops. Sprinklers at 5:20. 412: Theo up in the robe, alarm for 5:30; "Did you sleep?" "No." "Doing what? Another book?" `e17_theo`
+  (control "Packing." — the empty duffel, one sock; `jack_lied_theo_skye_2`, friction +1, whisper "Theo noticed." / candor "Thinking… Pie." / wit "I run now." "That's
+  *mine*." "I hate that you're funny at five in the morning.").
+- s22 6:50 SBA: Theo drove the SL, top up; the box on Jack's knees; Julian at the curb ("Julian. Don't write a song about the drive back."); "Theo Vance is going to
+  *Youngstown*?" "I intend to be a revelation."; Lena hands Theo her Kleenex to carry; security: her Justins, resoled twice; tomorrow's Dupre Street table (she skips one
+  chair — 🔒); the pie at the X-ray ("Diplomatic"); Lena's hand on the rail an inch from his; **Our Lady of Prompt Succor** for Nonna (back, in red: *Carmela Rinaldi* /
+  *St. Bernard's, Breaux Bridge — O. Broussard*): "Tell her it's urgent." "Call me Thursday. After the pie. I want to hear Theo say *pop*."; Becca at the next gate
+  (Seattle → Spokane): "You're *flying*!"; Theo holds her coffee; **St. Raphael** for Nonna ("When Father Osei said Youngstown, I knew."); "I'm telling Mom at the table
+  tomorrow. Then Facebook."; Becca watches Lena and says nothing. `e17_sba` (sincerity "Tell Mémère thank you" — warmth, trust / wit "Ten and oh" / restraint a quick
+  hug, warmth only). Lena's flight first; 7:31 *window seat. dont blink.*
+- s23 7:55 seat 14A (2×2 regional; Theo's pass, the aisle for himself): "You can. I told you. Watch."; the RAZR turned toward the window; `e17_last` (7:56–7:57); first
+  flight — the Channel, the platforms like matchheads, the Santa Ynez; Theo asleep before wheels-up.
+- s24 12:20 p.m. MST, DIA Concourse B: forty minutes late; Theo on a shoeshine stand (Curtis), Poppy on the phone ("choosing between our parents and wants a consultant");
+  Jack's own Dell dead in the duffel; [last restraint] *how was it. dont lie* / *i didnt blink*; 12:20 *added you on facebook. callender. two Ls. now you know everything.
+  dont be weird about it*; no picture of her; Gina calls from the family Dell in the basement (Nonna told the nurse she's from Calabria; Frank ready since noon);
+  `e17_gina` (candor "There's a girl." whisper "Gina will remember that." / wit "G. I need a Facebook detective." / control "Don't ask why." → "You owe me."); Jack says
+  the name low into the pillar.
+- s24a 12:24: **"JACK. SHE'S ON TV."** — Cassidy on *Sweetwater*, Thursdays at nine (everybody at Ursuline; Kelsey has the song); a fan page with thousands of fans; a
+  dock photo in blazers; only the stroller woman reacts (Theo on the stand, the PA between them); the Cassidy click (E16's stairs; "People get me confused with a
+  girl… A nice one."); Jack flat on the carpet; "Is she the nice one?" "No. Not like that."; Gina: his Facebook still says In a Relationship "with *Idaho*" ("She asked me
+  to leave it up till she tells her mom." "I'm mad about it."); sworn — not Ma, Pop, Nonna, Danny ("calls *tonight*"), Theo ("the rich one"); "Not even the nun?" "Lena's
+  got a boyfriend, G." "I know. The one with the cardigans. She's in his pictures. … That's not what I asked."; the Silverado's horn (one long, two short; washed in
+  November for the rich one). `e17_sorry` at 12:29.
+- s24b 12:31: *OHIO* / *five days. you lasted FIVE DAYS. nobody lasts five minutes. i had to hand you my own last name*; per `e17_sorry`; *i still dont have a tv* / *never
+  get one*; *who told you* → *GINA??* / *tell gina cassidy says be nice* / *no dont* / *yes do*; [miss wit] *ledger. day one…*; [miss candor] *you said it out loud…
+  i noticed*; [play yesand] *mrs hopewell wants her salesman back*; **the stale status:** *wait. your facebook says youre IN A RELATIONSHIP* / *with a becca. should i be
+  worried about becca* → Jack: *she asked me to leave it up till she tells her mom. tomorrow at the table* → *oh thats decent. i hate it* / *fine. im the other woman.
+  ive always wanted to play her* (`skye_saw_becca_status`); Theo back ("A man named Curtis has restored my faith in Denver") — "What?" "Nothing."; texting from the gate
+  to the end of the jetway (*like me. shed win* / *the fire alarm at 3am* / *under a seat. its fine* / *one. and the stroller*); off at the plane door on *go. ill still
+  be on tv when you land*, the phone behind the two saints. The friend request is still pending (no internet till the family Dell).
+
+**New flags:** `skye_texting`, `knows_nonna_fall`, `maria_knows_becca_over`, `lena_knows_nonna_fall`, `knows_lena_yes_paper`, `becca_knows_nonna_fall`,
+`lena_knows_party` [lena control], `scar_told_kevin`, `skye_coffee`, `skye_knows_nonna`, `skye_knows_first_flight`, `kissed_skye_2`, `jack_stopped_first_2` [stop
+restraint], `jack_lied_theo_skye_2` [theo control — `_2` means the second chance to lie; on this save E16 took the truthful route, so `jack_lied_theo_skye` is false],
+`first_flight`, `skye_fb_request`, `knows_skye_surname` (Jack knows *hers*; not E16's `skye_knows_surname`, which is Skye knowing his), `knows_skye_famous`,
+`gina_knows_skye`, `skye_knows_gina`, `skye_saw_becca_status`, `said_it_plain`/`said_it_plain_n` [candor beats]. Path flags: `e17_julian`, `e17_glass`, `e17_draft`,
+`e17_check`, `e17_lena`, `e17_laugh`, `e17_reply`, `e17_ma`, `e17_margin`, `e17_scar`, `e17_text`, `e17_play`, `e17_nonna`, `e17_faith`, `e17_miss`, `e17_ask`,
+`e17_stop`, `e17_theo`, `e17_sba`, `e17_last`, `e17_gina`, `e17_sorry`. **Resolve:** Jack 5 → +1 (s05) +1 (s14 Mass) −1 (s20k) [−1 `e17_check` reckless; −1 s20b] →
+**4–6**; Lena 4 → 6 (s05) → **5** (s22). Skye heat +2 (s20k) [+1 play reckless, +1 stop reckless].
+
+**Owed payoffs:** the pending friend request (E18, the family Dell) · `skye_saw_becca_status` — E18 opens on the other-woman bit for a few texts (not its setup) · Becca's
+status down Thursday night after the table · "Call me Thursday. After the pie." / Theo says *pop* · two holy cards and Gloria's pecan for Nonna at St. Elizabeth's
+(visiting hours 2–8) · Theo's gift for a Calabrian grandmother ("Being right") · Gina sworn (Kelsey must not know) · "Not even the nun?" · Danny calls Wed night · Kevin's
+scar answer (`scar_told_kevin`) vs Skye's (husband) — two different stories in circulation · Hale collects the margins in December · La Flaca chained behind the Anchor ·
+Rudy's nephew has the Saturday sink · [miss wit] "Sunday. Bring receipts." · "If you ever get on TV, I'll buy one." · `e15_conf` penance to Advent (Nov 29) · [theo
+control] Theo noticed · the Odyssey's WHO DAT · 10–0.
+
+**Continuity notes.** Sun Nov 22: civil twilight 6:12, sunrise ≈6:40; the waxing crescent sets ≈10:08 p.m. (yellow behind the Grove at 10:05). Wed 4:15 a.m.: no moon;
+first gray ≈5:50. Nonna in the front-room chair since Sun Nov 8 (two weeks by Mon Nov 23); she is 84. Jack clocked in at 7:00 Tue, off 12:55 (≈six hours of the Hobart).
+The Starlite 1:30–3:55 a.m.; Skye paid at two. Skye: nineteen (said); freckles across the nose (bible) and one by her mouth; the chapped place at the corner, left; a
+braided anklet; no shoes all night at 40°; she texts lowercase without apostrophes. Theo never heard "Skye" or saw Jack's screen (14A: phone turned to the window;
+Denver: the name said low into the pillar; the scream reached the stroller woman only). Jack knows Studio City (E16) and "my mother's" for Thanksgiving; he does not know
+where she drove at 4:38 (🔒). Lena knows "a party in Montecito" [control] — nothing of Skye. Jack/Theo: SBA → DEN → PIT; Lena SBA first (Julian drove); Becca SBA →
+SEA → GEG. Gina is 15, a sophomore at Ursuline; Kelsey and Ashley Vrabel her classmates.
