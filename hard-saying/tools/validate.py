@@ -120,6 +120,11 @@ def main(path):
     ep['_ext_duels'] = set()
     scenes = ep.get('scenes', {})
     duels = ep.get('duels', {})
+    for h in (ep.get('seasonRecap') or {}).get('highlights', []):
+        if not h.get('text'):
+            errs.append('seasonRecap highlight missing text')
+        if h.get('if'):
+            check_expr(h['if'], 'seasonRecap', ep, errs)
     for p in ep.get('previously', []):
         if 'if' in p:
             check_expr(p['if'], 'previously', ep, errs)

@@ -70,6 +70,13 @@ prose so straight double quotes never need escaping. Em dashes are allowed. Do n
   Journal text is Jack's knowledge and impressions, in his voice, and never contains hidden canon he couldn't know.
 - POV is Jack only. No cutaways.
 
+## Season recap (finales only)
+A season finale may carry a top-level `seasonRecap`; the engine then adds a recap to the finale's end card:
+`"seasonRecap": { "title": "Where Jack stands", "people": ["lena","skye","theo",...], "highlights": [ { "if": "e20_no==\"control\"", "text": "You said no, and meant right now." } ] }`
+- `people`: tracked cast ids in display order (the engine describes each in words from rel.*; numbers are never shown).
+- `highlights`: 6–10 lines naming the season's biggest choices, second person past tense, each gated on real flags so
+  only the path the player took shows. Spoiler-safe: no hidden canon. The engine also shows soul and Jack's resolve in words.
+
 ## Choices
 - Prefer choices that change tone, state and flags and then **converge**. Branch scenes only where it really matters
   (2–4 genuine forks per episode). "Where to go" choices fork into different scenes, then converge.

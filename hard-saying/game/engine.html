@@ -447,9 +447,40 @@ function endCard(ep) {
     ${keys.length ? `<div class="sect"><h5>What you chose</h5><ul>${keys.map(k => `<li><span>${fmt(k.key)}</span></li>`).join('')}</ul></div>` : ''}
     ${ep.endCard && ep.endCard.tag ? `<p class="tagline">${fmt(ep.endCard.tag)}</p>` : ''}
     ${ep.endCard && ep.endCard.nextTime && ep.endCard.nextTime.length ? `<div class="next-time"><div class="kicker" style="margin-bottom:12px">Next time on The Hard Saying</div>${ep.endCard.nextTime.map(t => `<p>${fmt(t)}</p>`).join('')}</div>` : ''}
+    ${ep.seasonRecap ? seasonRecap(ep) : ''}
     <div class="sect"><p class="note">This episode is locked in. ${nx ? '' : 'When you’re ready for the next one, tell Claude: the writers’ room will read your save and build the next episode on the path you took.'}</p>
     <div class="row">${nx ? `<button class="go" data-a="start" data-ep="${nx.id}">Play ${epTag(nx)}</button>` : ''}<button class="ghost" data-a="title">Title screen</button><button class="ghost" data-a="journal">Open journal</button></div></div>
   </section>`;
+}
+/* Season recap: shown on a finale's end card when the episode carries `seasonRecap`. Words, never numbers. */
+function relWords(id) {
+  const v = a => Number(get('rel.' + id + '.' + a)) || 0;
+  const w = v('warmth'), t = v('trust'), h = v('heat'), f = v('friction');
+  if (!w && !t && !h && !f) return null;
+  const parts = [];
+  parts.push(w >= 40 ? 'as close as anyone' : w >= 15 ? 'warm' : w >= 5 ? 'friendly' : w <= -5 ? 'cold' : 'still deciding about you');
+  parts.push(t >= 40 ? 'trusts you completely' : t >= 12 ? 'trusts you' : t >= 4 ? 'trusts you a little' : t <= -4 ? 'doesn’t trust you' : 'trust not earned yet');
+  if (h >= 15) parts.push('the air burns between you'); else if (h >= 8) parts.push('something charged'); else if (h >= 3) parts.push('a spark');
+  if (f >= 15) parts.push('and a lot of friction'); else if (f >= 5) parts.push('with some friction');
+  return parts.join(' · ');
+}
+function soulWord(name, pos, neg) {
+  const n = Number(get('soul.' + name)) || 0;
+  return n >= 25 ? `firmly ${pos}` : n >= 8 ? pos : n > -8 ? `between ${pos} and ${neg}` : n > -25 ? `leaning ${neg}` : `deep in ${neg}`;
+}
+function shortName(n) { const w = n.split(' '); return /^(Fr|Prof|Dr|Mrs|Mr|Ms|Sr)\.?$/.test(w[0]) && w[1] ? w[0] + ' ' + w[w.length - 1] : w[0] }
+function seasonRecap(ep) {
+  const R = ep.seasonRecap, cast = {};
+  EPISODES.filter(e => e.season === ep.season).forEach(e => (e.cast || []).forEach(c => { if (c.tracked) cast[c.id] = c }));
+  const order = (R.people && R.people.length ? R.people : Object.keys(cast));
+  const people = order.map(id => cast[id] && relWords(id) ? `<li><span><b>${esc(shortName(cast[id].name))}</b> — ${esc(relWords(id))}</span></li>` : '').join('');
+  const r = Number(get('resolve.jack'));
+  const resolve = r >= 8 ? 'steady' : r >= 6 ? 'holding' : r >= 4 ? 'worn thin' : r >= 2 ? 'nearly gone' : 'gone';
+  const hl = (R.highlights || []).filter(x => test(x.if)).map(x => `<li><span>${fmt(x.text)}</span></li>`).join('');
+  return `<div class="sect season-recap"><div class="kicker" style="margin:18px 0 6px">Season ${SEASON_WORDS[ep.season] || ep.season} · ${esc(R.title || 'Where Jack stands')}</div>
+    ${people ? `<h5>The people</h5><ul>${people}</ul>` : ''}
+    <h5 style="margin-top:18px">His soul</h5><ul><li><span>Grace — ${soulWord('grace', 'grace', 'drift')}</span></li><li><span>Honesty — ${soulWord('honesty', 'honest', 'performance')}</span></li><li><span>Restraint — ${soulWord('restraint', 'restraint', 'abandon')}</span></li><li><span>Resolve — ${resolve}</span></li></ul>
+    ${hl ? `<h5 style="margin-top:18px">The season you chose</h5><ul>${hl}</ul>` : ''}</div>`;
 }
 function bindTitle() {
   $('stage').querySelectorAll('[data-a]').forEach(b => b.onclick = () => {
