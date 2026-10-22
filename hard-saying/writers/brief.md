@@ -1148,3 +1148,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     it on him at all times). An extension of the secret-December "texting no one" behavior.
   - **New Orleans: the most salacious one yet** arrives **right after he sends Skye to voicemail** (the "phones tell on
     them" beat). Her reply to being ignored.
+    - **FLAG FOR THE ROOM (player likes it; room decides):** consider making this a player choice (open it, or delete
+      it unopened), with stat and resolve effects. **The room decides whether it fits, how his response plays given his
+      arc at that point, and whether Lena is watching.**
