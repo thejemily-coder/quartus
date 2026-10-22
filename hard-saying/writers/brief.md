@@ -1133,3 +1133,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Lena's poker face fails (player-approved).** She tries to look blank and can't (the same way she can't keep a
     straight face when Jack asks her). Laney reads it instantly ("Oh my God. *Lena.*"). On the date, Lena tells it as
     a story on herself, and Jack gets to picture Laney's face.
+- **Skye's picture texts (player; from S1E19 on, especially S2's Christmas break).** Skye sends Jack **provocative
+  pictures of herself that escalate over time** (within the hard rules and the brief's explicitness standard; it
+  feeds the resolve pressure).
+  - **Period tech:** MMS was common by 2009, but the **iPhone only got US picture messaging on Sep 25, 2009** (AT&T), so
+    it's a new trick for her phone. **No front-facing camera until the iPhone 4 (June 2010)**, so this is the **mirror-pic
+    era**: bathroom/bedroom mirror shots, phone visible in frame, or blind arm's-length shots with the back camera. Her
+    whole run with Jack falls before the iPhone 4.
+  - **Jack's end:** they arrive small, grainy and slow on the RAZR (about 25¢ each on a basic plan), viewed in the cold
+    garage, a stairwell, under a blanket. The RAZR has no real lock, so a house full of Costigans at Christmas is a
+    standing hazard (room's call on any near-discovery).
