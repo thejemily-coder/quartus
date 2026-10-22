@@ -1217,3 +1217,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
        Lena, or she learns it another way. It's the moment Lena understands **how close he came, and how much he
        held**. Room decides when (after they're together; e.g., the restraint arc's height or the marriage
        conversations) and how it lands.
+- **Season numbering (player; supersedes the room's "SU1/SU2/SU3" labels).** Summers stay **short seasons covering
+  the summer in depth** (~5–6 episodes), but they **are numbered**:
+  S1 Fall 2009 · S2 Christmas 2009 + Spring 2010 · **S3 Summer 2010** · S4 Fall 2010 · S5 Spring 2011 · **S6 Summer
+  2011** · S7 Fall 2011 · S8 Spring 2012 · **S9 Summer 2012 (the wedding)** · S10 Fall 2012 · S11 Spring 2013 · then
+  adulthood. Showrunner: renumber the bible's §23 season map at the next planning pass (episode ids follow, e.g.
+  S3E01 = the first Summer 2010 episode). "Season 3+" in earlier directives means Summer 2010 onward.
