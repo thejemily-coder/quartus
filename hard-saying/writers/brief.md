@@ -1098,3 +1098,18 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     because **Jack waited too long the first time**, but she's agreed to let him take her out; she'll see how it goes.
     Theo and Laney look at each other: **"That's a yes with extra forms."** Lena, smiling wide, repeats that they'll
     see how it goes.
+  - **Refinements to the asking (player-approved, all six):**
+    1. **The champagne stays corked.** After "a yes with extra forms," Laney puts it back in the mini-fridge: it stays
+       corked "until there's a yes without an asterisk." That bottle is the one opened at the later champagne reveal
+       ("We know." "Everyone knows.").
+    2. **The alliance stays secret.** Theo and Laney having champagne ready reads as friends who watched New Orleans,
+       nothing more; the meetings and the engineered trip stay hidden until the champagne reveal. Optional tell: Lena
+       squints at the bottle ("You *bought* that? When?") and Laney changes the subject too fast.
+    3. **Location:** not the Lighthouse back porch (reserved for the proposal). Somewhere theirs: the Lagoon bench, or
+       St. Brendan's steps after Mass (echoing the morning-after collision when they met). Room's call.
+    4. **Dating during Lent.** The proper dates start mid-Lent; Lena teases him about what he's giving up, and the line
+       they hold on those dates becomes its own kind of fast.
+    5. **The first kiss: at the end of the first real date, and Lena kisses him.** She set the terms; she decides when
+       they're met. That's the long kiss.
+    6. **The player chooses how Jack asks** (earnest, funny or blunt); her "no" lands like a truck for half a second in
+       his narration before the player sees her face. Her answer is the same whichever way he asks.
