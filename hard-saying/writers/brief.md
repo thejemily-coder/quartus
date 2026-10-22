@@ -1066,3 +1066,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **After that:** she might stop everything if she gets frustrated enough, but since it's a game to her (she's never
     been told no except as a negotiation), **she most likely doesn't stop. She respects the no strictly to the letter**
     and keeps everything else going, right up against it. That's where the pressure on his resolve comes from.
+- **Season 2: Jack tells his mom first (player).** Because his mom scolded him for finding out about Becca second- or
+  third-hand from Facebook, **when Jack and Skye go Facebook official he texts or calls his mom first** so she hears it
+  from him this time. He does **the same when he and Lena become official** (callback; she notices he learned).
