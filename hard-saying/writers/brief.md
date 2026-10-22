@@ -1282,3 +1282,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     way too**. This drives the Facebook tags, Lena seeing the public surface, and the public antic that sets off the
     alliance's third emergency meeting. (Public posts stay Facebook-plausible; the private pictures stay private.
     Jack's behavior in them stays within his character.)
+- **After S1E20 (player feedback).** "Gutwrenching on so many levels. Fantastic episode." Between sitting through
+  Julian's "Magdalena" and Skye being even more wonderful than he could have hoped for, **Jack withdraws hard into
+  Skye until his last night with Lena before they go home** (the player confirms the withdrawal design).
