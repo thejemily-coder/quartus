@@ -924,8 +924,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The hours-long coffee:** **faith, curiously** (she asks what believing is like; yoga and philosophy comparisons;
     he's charmed and a little sad) and **pure play** (improvised bits and games; she makes him play characters).
     **Jack still doesn't know who she is** (no Facebook add yet), so Skye keeps her career out of it. She dodges or
-    deflects, and enjoys being unknown to him. The dramatic irony plays for the player (who knows from the brief
-    hints? No: the player knows; Jack doesn't), so plant small tells: someone staring, a barista's double-take, "for a
+    deflects, and enjoys being unknown to him. The dramatic irony plays for the player (the player knows who she is;
+    Jack doesn't), so plant small tells: someone staring, a barista's double-take, "for a
     role."
   - **After the coffee, before Jack gets home for Thanksgiving, she adds him on Facebook**, and that's how he learns
     she's famous. He texts her that **he's sorry for being an idiot and having no idea she was famous**; **she's still
