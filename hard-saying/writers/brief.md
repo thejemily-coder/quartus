@@ -1223,3 +1223,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   2011** · S7 Fall 2011 · S8 Spring 2012 · **S9 Summer 2012 (the wedding)** · S10 Fall 2012 · S11 Spring 2013 · then
   adulthood. Showrunner: renumber the bible's §23 season map at the next planning pass (episode ids follow, e.g.
   S3E01 = the first Summer 2010 episode). "Season 3+" in earlier directives means Summer 2010 onward.
+- **S1E19 mid-episode (player, at the questions game).** "Incredible episode so far. You did an amazing job with
+  Skye," and "this is going to be so painful next season because **Jack and I both are falling in love with that
+  character**." Keep her that lovable: the S2 ending has to hurt because she's worth it, never because she's diminished.
