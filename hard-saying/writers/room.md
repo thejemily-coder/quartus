@@ -230,6 +230,16 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    joke," "no bit, no voice of any kind," "not the anchor, not the host," "it isn't any of the laughs she's been doing tonight." Six to eight a path in one draft. Skye's
    real drop is spent at most once an episode (E16: s21a, "And then she drops it"); everywhere else show an action (she caps the Sharpie, takes her thumb off his eyebrow)
    and never grade a laugh or grin against "the earlier ones."
+110. **Draft-and-delete beats** (S1E17; five in one draft — s01, s02 ×2, s03a, s11 — after E16 ended on one). Jack types a text and takes it back out "a letter at a
+   time." Once an episode, plus the send.
+111. **"and means it" / "means every word" / "seems to mean it"** as a sincerity tag (E14 ×6, E15 ×4, E16 ×5, E17 heavier; a cousin of #53). Max two per episode; let the
+   line carry the sincerity.
+112. **"Then" as the default sentence opener** (S1E17 ≈25–30 per path; E16 higher). Max twelve per episode. Also **"the way [someone] [did]" comparison clauses** (a
+   cousin of #26; ≈12 per path in E17) max five, and **"all of it" as an intensifier** once.
+113. **The misread tell glossed** — "Jack figures / decides [the wrong reading]" after a fame tell (S1E17 ×3 in two scenes: "He figures she likes the dark end of things,"
+   the kid at the counter, "Jack decides it's two in the morning"; a cousin of #13). Once an episode; let the player catch the tell. E17 keeps only s18's.
+114. **Narrating Skye's inner state as fact** — "she means every word," "a line she means to understand later," "he watches her decide [X]," "they both know it." Give
+   Jack an observation (her face clears; she smiles against his mouth and he can tell). "Watches her decide" once an episode at most.
 Small repeats to watch (S1E16): Skye's "Okay" as her default turn (three per episode, on acceptances); "looks at him like [comic simile]" for Skye (two per episode — her
 reactions are things she does); Skye trying a line in her mouth (establish once, pay once — E16 keeps s16 and "snares"); one character per bit (the game-show host was
 spent four times in one draft — rotate: librarian, tent preacher, ring announcer, weather girl, audio guide; never a judge, which is Lena's, or a pageant host, Laney's);
@@ -238,6 +248,13 @@ Laney" (once an episode — the clap); the platforms "burning" on the horizon (t
 episode — the rule is Skye's); the cold down the back of Jack's neck (once, where it's earned); "the color of wet sand" and "soft as a dish towel/dishrag" (one fabric
 figure each); speech addressed to the ceiling (Laney's, once); "as if / like it's" substitutes count under #60; Theo's "with no irony at all" (the bible's short list only:
 *Point Break*, the Madonna Inn, Poppy); consecutive scenes repeating an inventory (Jack's soaked clothes: once, in the room where someone sees them).
+Small repeats to watch (S1E17): Skye's total-presence figure (the lights in a room switched off one at a time till only he is lit — E16 s17, E17 s18a; retired
+after E17); Lena's cold props (Kleenex ≈19 in one draft — one prop beat per scene; "points the Kleenex at him" once); the tick source (one per episode: establish, use once
+more — E17's is the Anacapa lamp); "Ohio" as Skye's vocative (it was Wes's; three per episode where it lands — E17: the orphan text, "Go home, Ohio," the caps); "two at
+a time" on stairs; "about once a semester"; the cup turned by its handle (and the E04 quarter-turn); Margot's notebook/timing (#30 binds: E17 spends only the
+whiteboard); Kevin's "Respectfully" (once a beat); the exit coda "stands where she left him until he can't hear the engine" (retired; also the taillight, once a
+scene); "Somebody has to" (#68) and geography superlatives (#80) — one each; lips summarized ("thinking about her mouth" ×4 — after the reverie, one new specific per
+scene); callback glosses for the bingeing player ("it's the window seat again," "he asked her for that in a parking lot") — #73, keep one (E17: the Cassidy click).
 Small repeats to watch (S1E15): the untouched drink (Lena's Bastille coffee, the Corona, Laney's mimosa, Lena's mug — one is the trace; the others must not be "full"); the
 heater/toaster/espresso tick (one source per episode, established once and used once more — E15 gives it to the Ranger); "twenty-four hundred miles" (once an episode);
 "one degree" cooler/off (once); ranch figures in the narration at Becca's joy or grief (her own lines only — "farm hand's grip," the calf's ear tag and the feed bill were

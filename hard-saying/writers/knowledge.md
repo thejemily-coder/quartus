@@ -1497,6 +1497,8 @@ Nobody in the core cast has met anybody else on-page. Specifically:
   candor: "she's seeing somebody"); his father — Lordstown, Local 1112, laid off since June; [dad candor] the Monday-before-last night in the employee lot; his scar per
   `e16_scar` (pacific / husband / "a fight, a long time ago"); St. Michael (confirmation saint) and the prayer's first line; that he expects an answer [faith candor];
   he has no TV; he came with "my roommate" [control] — **never the roommate's name**; where he lives (Delgado, the lot past the Lagoon — he told her in s24).
+- [s23a/s23b, off-page; logged in S1E17 final] **Gina** (texts in lowercase), **Rosie** (mails him crabs), Nonna's gravy, Youngstown's gray snow; **the Anchor** at the
+  wharf — Gloria and the pie ratings, the Hobart, which end of the wharf; that he works nights. (E17 s15 states the route; s15/s16/s24b use it.)
 - **She does NOT learn from Jack:** Theo's name, Danny, Lena's name, Becca's name. She never saw THEO on his phone (the 2:50 text came while she was at the car).
   🔒 She already knows his face from Sol's footage and that he arrived with Theo; she says nothing.
 
@@ -1518,3 +1520,70 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **LIVE RISKS carried:** Theo must not learn Skye's name or that Jack met anyone (suspicion only, until Christmas); Skye must not hear Theo's name from Jack or see it on his
   phone; Lena learns nothing of the night; "Cassidy" stays unglossed; Becca and Gina still never tell Lena about the invitation (through S2E10); Theo → Laney → Lena stays
   unstated.
+
+### S1E17 — "Out Loud"
+> Final revision, collapsed against `saves/after-s1e16.json` (see continuity.md S1E17). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s02] Lena ate Gloria's soup cold at six. Julian is learning football (eight days in). [s06] Lena's YES thesis; she "talked herself into it."
+- [s07] Skye's reply came ten hours after his text; it was a rewrite of the Misfit's line at him. [s07a] "work" = a carpet, a wall, five hours; "stuck down here till
+  tuesday"; a woman with pins in her mouth; [e16_misfit] she didn't un-cross-out the con.
+- [s09] **Nonna fell** (Mon Nov 23): two weeks in the chair; went up for her good rosary from San Giovanni; broken wrist, six stitches, heart monitor at St. Elizabeth's;
+  Gina found her; **Frank drove, sober**; "it wasn't the stairs… the rosary wasn't." Gina said sorry to Ashley. Maria knows Becca is over (per `e17_ma`: told / told,
+  sparing Becca / guessed). [s10] Danny's letter; Theo has the visiting hours. [s11] Lena's paper (Ruth). [s12] Lena doesn't believe her own paper either.
+- [s13] Margot's whiteboard on him; Laney's "You're fragile."; Kevin's mother reads eleven of 117 names; Kevin asked about the scar.
+- [s14] Osei read Nonna's name; Becca heard; Mémère's candle at St. Bernard's (Tante Claudine). [s15] KNX: Koenigsegg dropped Saab. Gloria's pecan for Nonna.
+- [s16–s19] Skye: did a fitting all day (pins), drove up after, "back two hours"; won't eat in front of his boss; "Too bright"; wants somewhere nobody she knows has been;
+  plays any voice; had a role that needed the Hail Mary ("A nice girl"; forty takes; a chapel); named for a grandmother she met twice (holy cards till nine) — **he does
+  not register anything about the name**; going to "my mother's" for Thanksgiving (lots of people interested in how she's doing); **she's nineteen**; does yoga; wants him to
+  miss her a reasonable amount; paid at two. **He does not infer fame from any tell** (Too bright; the girl at the counter; Bev's "you look like somebody"; "for a role";
+  "if you ever get on TV"; the pickup she watched).
+- [s20k–s21] She'd been thinking about the slow way since Friday (said). He does not know where she drove after.
+- [s22] Becca will tell her mother at the table Thursday, then take the Facebook status down. Becca knew Nonna from "Youngstown" at the 12:10.
+- [s24] **Her surname: Callender, two Ls** (her own text, 12:20 Wed). [s24a] **From Gina: she's on TV — Cassidy on *Sweetwater*, Thursdays at nine, "the nice one"; a fan
+  page.** The E16 "Cassidy" on the stairs now clicks. Gina knows about Julian ("the one with the cardigans… in his pictures").
+- [s24b] Skye isn't angry — delighted ("five days"); she's seen his profile and the relationship status with Becca. He has no picture of her.
+
+#### Lena
+- [s02] Jack had beach sand in his boots Sunday morning (she was at the table when Laney asked); he was texting "no one." [s06 | control] **Theo dragged him to a party in
+  Montecito** (`lena_knows_party`) — nothing more; [wit] a joke; [restraint] nothing. [s07] Jack laughed at a phone at 11:48 and left; per `e17_laugh`: nothing /
+  "Dale" (a lie) / "Hale's paper."
+- [s09–s10] **Nonna fell** (she saw it on his face; his text at 2:31); his paper is in her keeping. [s11] his margin per `e17_margin`. [s14] Carmela Rinaldi's full name
+  (for Mémère); "My dad. Sober." [s22] Jack didn't sleep Tuesday night; Theo is going to Youngstown; Becca gave Jack a holy card too.
+- **She does NOT learn:** Skye's existence, the Starlite, the lot, the surname, the TV show, or anything Gina knows.
+
+#### Skye
+- [s03a] his correction (per `e17_draft`); [candor] Friday was the best night he'd had in a long time.
+- [s07a] the Browns lost / Dale [reply wit]; he wrote a paper about promises and counted ten hours [candor].
+- [s15] (route, stated in E17 s15 from E16 s23a/b off-page) **the Anchor at the wharf, Gloria, the pie ratings, the Hobart, which end of the wharf; that he works nights**;
+  he gets off at one.
+- [s16–s19] the pie is for his grandmother, who fell Monday; [nonna candor] the stairs, two weeks in the chair, the rosary, his sister found her, St. Elizabeth's, **his
+  father drove her** (nothing more about Frank) / [control] the facts / [wit] "handsome, twice," then some of it. **Nonna as a person:** Carmela Rinaldi, 84, San Giovanni
+  in Fiore, 1951, the Calabrese rosary, cardoons, the folded twenty, "Giacomino," *E la ragazza?* The Glenwood table (an extra chair this year; his mother cries at grace).
+  He goes home today with "my roommate" — **no name**. He's never flown; one change; his dad meets them in Pittsburgh. What believing is like per `e17_faith`. He does a
+  second voice (Youngstown or the salesman). He does a kind flight attendant; he learned it on his grandmother.
+- [s23] [last candor] "my roommate gave me the window without asking"; [wit] the orphan; [restraint] (and s24: *i didnt blink*).
+- [s24b] **He knows who she is now; his sister Gina told him** ("GINA??" — she knew the name from E16 s23a: Gina who texts in lowercase); Gina screamed; one person knows
+  (and a stroller); the pie survived Denver; **his Facebook status still says In a Relationship with Becca** — and why (she asked him to leave it up till she tells her
+  mom at the table).
+- **She does NOT learn from Jack:** Theo's name, Danny, Lena's name; Becca's name only from Facebook. 🔒 She already knows "my roommate" is Theo; nothing on the page
+  says so.
+
+#### Others
+- **Theo** [s01] Jack's phone open at dawn (he says nothing). [s10] Nonna fell (told at three). [s21] Jack came in at ≈5:25 with the pie box, didn't sleep; per
+  `e17_theo` — "Packing." (a lie; the empty duffel; friction +1; **Theo noticed**) / "Thinking… Pie." / "I run now." [s22] Lena and Becca each gave Jack a holy card.
+  [s24b] Jack lying on the floor of Concourse B with the phone in his fist: "Nothing." **He never heard the name Skye or saw the screen; he has no name, face or car.**
+- **Laney** [s02] the beach in his boots; [s07] he laughed at a phone at 11:48 ("*No* one is a riot") and left; [s13] the hug, "don't learn any girls' names." She
+  tells Lena nothing on the page (LIVE RISK: Theo → Laney → Lena stays unstated).
+- **Margot** [s07] the laugh, 11:48 → the whiteboard (DIAGNOSTIC). **Kevin** [s07] the laugh; [s13] the scar per `e17_scar`. Margot was at the curb for Kevin's scar question [s13].
+- **Gina** [s24–s24a] Jack is in Denver; there's a girl (per `e17_gina`); **Skye Callender is Cassidy on *Sweetwater*; Jack met her at a party "over a book" and had
+  coffee; she's "not like that" (not the nice one).** Sworn: not Ma, Pop, Nonna, Danny, Theo. She knows Lena has a new boyfriend (Facebook). [s24b] (via Jack, if he
+  passes it on in E18) "cassidy says be nice."
+- **Maria** [s09] Becca is over (per `e17_ma`); Theo flies, eats. **Frank** [s09] Jack heard he drove sober (via Maria). Neither knows about Skye.
+- **Becca** [s14] Nonna's name at the 12:10 (she guessed Jack's grandmother from "Youngstown"); [s22] Jack is flying, with Theo; she watched Lena and said nothing.
+- **Gloria** [s15] Nonna fell, going up, for her rosary; Jack was texting someone at the sink and left at 12:55 with the pie. Nothing about Skye.
+- **Bev** saw two kids; "looks like somebody" — nothing confirmed. **Julian** Jack explained the nickel [julian sincerity]; nothing else.
+- **Osei** [s14] Nonna's name, from Jack's card. **Hale** both papers; nobody stays for Thanksgiving.
+- **LIVE RISKS carried:** Theo must not learn Skye's name or see her (until Christmas); Skye must not hear Theo's name from Jack; Lena learns nothing of Skye (only
+  "a party in Montecito" [control]); Gina keeps the secret (Kelsey!); "my roommate" stays unnamed; Becca and Gina still never tell Lena about the invitation (through
+  S2E10); Theo → Laney → Lena stays unstated; two scar stories in circulation (Skye: husband; Kevin: per `e17_scar`).
