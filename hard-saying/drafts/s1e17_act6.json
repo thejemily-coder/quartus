@@ -1,415 +1,407 @@
 {
-  "scenes": {
-    "s23": {
-      "slug": "WEDNESDAY · 7:55 AM · SEAT 14A",
-      "set": {
-        "first_flight": true
-      },
-      "body": [
-        "Theo has had the boarding passes since Tuesday. At row fourteen he stops in the aisle with his weekender held up out of everybody’s way and waits for Jack to go in first. The pass on top says 14A, and the name on it is Theo’s.",
-        "“I’ve seen it,” Theo says, and takes the aisle.",
-        "It’s a small plane, two seats on each side and a ceiling Jack could put his palm on without straightening his arm. The bin takes the weekender and refuses the duffel. Gloria’s box goes under the seat in front of him, string and all, and his boots make room for it. The window is a scratched oval with a plastic shade, and past it a man in ear protection walks backward across the apron, waving two orange wands at the plane.",
-        {
-          "if": "e16_tickets==\"control\"",
-          "text": "Theo, buckling in, looks down at the white box between Jack’s boots. “Peach,” he says. “And two tickets.”"
-        },
-        "The RAZR is open on Jack’s knee with her text still on it. Two rows up, a flight attendant is shutting the bins one after another, coming his way."
-      ],
-      "choices": [
-        {
-          "text": "*my roommate gave me the window without asking*",
-          "tag": "Candor",
-          "set": {
-            "e17_last": "candor",
-            "trait.candor": "+1"
-          },
-          "response": [
-            {
-              "type": "sms",
-              "from": "Jack",
-              "text": "my roommate gave me the window without asking",
-              "time": "7:52 AM"
-            },
-            {
-              "type": "sms",
-              "from": "SKYE (MISFIT)",
-              "text": "good roommate",
-              "time": "7:52 AM"
-            },
-            "He puts the phone away just as the flight attendant reaches him.",
-            "Theo is asleep before the wheels are up, his head back against the seat and his hands folded over the buckle.",
-            "Then the engines come up into a sound Jack feels in his back teeth, and the seat shoves him, and the runway goes by faster than anything he has ever ridden in — and the ground lets go of them, with no fuss at all. The coast tips up under the wing: the beach a white thread, the town laid out in its grid, the Channel flat as poured metal with the platforms standing out on it small as matchheads. The plane comes around, and there are the Santa Ynez, brown and folded and near enough to count the fire roads, and then the tops of them, and then more of them behind. He doesn’t blink.",
-            "Somewhere over the mountains, with two holy cards in his shirt pocket and his grandmother’s pie under the seat in front of him, he is thinking about her mouth again — the cold at the corner of it, in the lot, before it was warm."
-          ],
-          "goto": "s24"
-        },
-        {
-          "text": "*tell the orphan i said bye*",
-          "tag": "Wit",
-          "set": {
-            "e17_last": "wit",
-            "trait.wit": "+1"
-          },
-          "response": [
-            {
-              "type": "sms",
-              "from": "Jack",
-              "text": "tell the orphan i said bye",
-              "time": "7:52 AM"
-            },
-            {
-              "type": "sms",
-              "from": "SKYE (MISFIT)",
-              "text": "the orphan says take a jacket. ohio is cold",
-              "time": "7:53 AM"
-            },
-            "He puts the phone away just as the flight attendant reaches him.",
-            "Theo is asleep before the wheels are up, his head back against the seat and his hands folded over the buckle.",
-            "Then the engines come up into a sound Jack feels in his back teeth, and the seat shoves him, and the runway goes by faster than anything he has ever ridden in — and the ground lets go of them, with no fuss at all. The coast tips up under the wing: the beach a white thread, the town laid out in its grid, the Channel flat as poured metal with the platforms standing out on it small as matchheads. The plane comes around, and there are the Santa Ynez, brown and folded and near enough to count the fire roads, and then the tops of them, and then more of them behind. He doesn’t blink.",
-            "Somewhere over the mountains, with two holy cards in his shirt pocket and his grandmother’s pie under the seat in front of him, he is thinking about her mouth again — the cold at the corner of it, in the lot, before it was warm."
-          ],
-          "goto": "s24"
-        },
-        {
-          "text": "Turn it off unanswered.",
-          "tag": "Restraint",
-          "set": {
-            "e17_last": "restraint",
-            "soul.restraint": "+1"
-          },
-          "response": [
-            "He holds the button down and puts the phone away with her text unanswered in it. The flight attendant, checking belts, gives him a nod as she goes by, for being a good passenger.",
-            "Theo is asleep before the wheels are up, his head back against the seat and his hands folded over the buckle.",
-            "Then the engines come up into a sound Jack feels in his back teeth, and the seat shoves him, and the runway goes by faster than anything he has ever ridden in — and the ground lets go of them, with no fuss at all. The coast tips up under the wing: the beach a white thread, the town laid out in its grid, the Channel flat as poured metal with the platforms standing out on it small as matchheads. The plane comes around, and there are the Santa Ynez, brown and folded and near enough to count the fire roads, and then the tops of them, and then more of them behind. He doesn’t blink.",
-            "Somewhere over the mountains, with two holy cards in his shirt pocket and his grandmother’s pie under the seat in front of him, he is thinking about her mouth again — the cold at the corner of it, in the lot, before it was warm."
-          ],
-          "goto": "s24"
-        }
-      ]
+ "scenes": {
+  "s23": {
+   "slug": "WEDNESDAY · 7:55 AM · SEAT 14A",
+   "set": {
+    "first_flight": true
+   },
+   "body": [
+    "Theo has had the boarding passes since Tuesday. At row fourteen he stops in the aisle with his weekender held up out of everybody’s way and waits for Jack to go in first. The pass on top says 14A, and the name on it is Theo’s.",
+    "“I’ve seen it,” Theo says, and takes the aisle.",
+    "It’s a small plane, two seats on each side and a ceiling Jack could put his palm on without straightening his arm. The bin takes the weekender and refuses the duffel. Gloria’s box goes under the seat in front of him, string and all, and his boots make room for it. The window is a scratched oval with a plastic shade, and past it a man in ear protection walks backward across the apron, waving two orange wands at the plane.",
+    {
+     "if": "e16_tickets==\"candor\"",
+     "text": "Jack looks at the pass, and at the window, and at Theo, and starts to say it. “You can,” Theo says, buckling in, without looking up. “I told you. Watch.”"
     },
-    "s24": {
-      "slug": "WEDNESDAY · 12:20 PM · DENVER INTERNATIONAL AIRPORT, CONCOURSE B",
-      "set": {
-        "skye_fb_request": true,
-        "knows_skye_surname": true
+    "The RAZR is open on Jack’s knee with her text still on it. Two rows up, a flight attendant is shutting the bins one after another, coming his way."
+   ],
+   "choices": [
+    {
+     "text": "*my roommate gave me the window without asking*",
+     "tag": "Candor",
+     "set": {
+      "e17_last": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "my roommate gave me the window without asking",
+       "time": "7:52 AM"
       },
-      "body": [
-        "The PA in Concourse B is a woman who never gets to finish a sentence before another woman starts one on top of her — a gate change, a final call for Omaha, a reminder that unattended bags will be — and under her the rolling bags go by in both directions, wheels knocking over every seam in the floor, on the busiest travel day of the year.",
-        "The connection is forty minutes late, and the board has stopped pretending otherwise. Every outlet on the concourse has somebody’s cord in it and somebody sitting guard. The Dell is at the bottom of the duffel with its eleven minutes of battery, and it can stay there. Jack is on the carpet with his back against a pillar and Gloria’s box upright beside him.",
-        "Theo is across the concourse, up on a shoeshine stand — a high leather chair on a platform, brass rests for the feet — with his iPhone to his ear and his loafers in the hands of a man in a canvas apron. “Poppy,” he said, going over. “She’s choosing between our parents and wants a consultant.” Whatever she’s saying now, Theo laughs at it with his head back.",
-        {
-          "if": "e17_last==\"restraint\"",
-          "text": "He turned the RAZR back on halfway up the jetway, and her text was waiting for him — *how was it. dont lie* — and he answered it before he reached the gate: *i didnt blink*."
-        },
-        "At 12:20 it buzzes in his hand.",
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "added you on facebook. callender. two Ls. now you know everything. dont be weird about it",
-          "time": "12:20 PM"
-        },
-        "He asked her for that in a parking lot and got *Out*. Now it comes to him on the floor of an airport in the middle of the country. Callender. Two Ls. He tries it under his breath with the first name in front of it, and it sounds like a girl he hasn’t met yet.",
-        "Somewhere on Facebook there is a request with his name on it, waiting for Confirm or Ignore, and her picture beside it, and he can’t get to either one. The RAZR doesn’t do the internet, not on his plan; it barely does Denver. The Dell is dead weight. Theo’s iPhone does the internet, thirty feet away, and Jack would sooner walk to Pittsburgh. Sitting there, he notices something he hasn’t noticed in five days: he doesn’t have a single picture of her.",
-        "The RAZR rings in his hand. GINA.",
-        "“Ma says are you in Denver,” Gina says, no hello. Under her voice there are keys going, fast — the basement, the Dell, where she lives when school is out. “Ma says is Theo eating. Ma says —”",
-        "“I’m in Denver.” Across the concourse Theo is pointing out to the shoeshine man a place on the left loafer that still needs him. “He’s eating.”",
-        "“Ma’s at St. Elizabeth’s. Nonna told the nurse she doesn’t need a monitor, she’s from Calabria. Dad’s been ready for the airport since *noon*.”",
-        "Jack looks at the little screen of the phone, and then across the concourse at Theo, with a stranger shining his shoes and his sister in his ear."
-      ],
-      "choices": [
-        {
-          "text": "“G. There’s a girl.”",
-          "tag": "Candor",
-          "set": {
-            "e17_gina": "candor",
-            "said_it_plain": true,
-            "said_it_plain_n": "+1",
-            "trait.candor": "+1",
-            "soul.honesty": "+1"
-          },
-          "cue": "Gina will remember that.",
-          "key": "On the floor in Denver you told Gina: “There’s a girl.”",
-          "response": [
-            "“G,” he says. “There’s a girl.”",
-            "The keys stop. “There’s a *what*.”",
-            "“A girl. She added me on Facebook. Look her up.”",
-            "“Name.”",
-            "“Skye. Callender. Two Ls.”",
-            "On Glenwood Avenue the keys start again, faster than before."
-          ],
-          "goto": "s24a"
-        },
-        {
-          "text": "“I need the best Facebook detective in Mahoning County.”",
-          "tag": "Wit",
-          "set": {
-            "e17_gina": "wit",
-            "trait.wit": "+1"
-          },
-          "key": "On the floor in Denver you asked Gina to be your Facebook detective.",
-          "response": [
-            "“I need the best Facebook detective in Mahoning County.”",
-            "“That’s me. Obviously.” The keys are already going. “Who.”",
-            "“Skye Callender. Two Ls.”",
-            "“Who’s Skye Callender?”",
-            "“Just look.”",
-            "On Glenwood Avenue the keys go faster."
-          ],
-          "goto": "s24a"
-        },
-        {
-          "text": "“Look somebody up for me. Don’t ask why.”",
-          "tag": "Control",
-          "set": {
-            "e17_gina": "control",
-            "trait.control": "+1"
-          },
-          "key": "On the floor in Denver you asked Gina to look somebody up, and not to ask why.",
-          "response": [
-            "“Look somebody up for me. Don’t ask why.”",
-            "“I’m asking why.”",
-            "“Skye Callender. Two Ls.”",
-            "“I’m still asking why,” Gina says — but on Glenwood Avenue the keys have started."
-          ],
-          "goto": "s24a"
-        }
-      ]
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "good roommate",
+       "time": "7:52 AM"
+      },
+      "He puts the phone away just as the flight attendant reaches him.",
+      "Theo is asleep before the wheels are up, his head back against the seat and his hands folded over the buckle.",
+      "Then the engines come up into a sound Jack feels in his back teeth, and the seat shoves him, and the runway goes by faster than anything he has ever ridden in — and the ground lets go of them, with no fuss at all. The coast tips up under the wing: the beach a white thread, the town laid out in its grid, the Channel flat as poured metal with the platforms standing out on it small as matchheads. The plane comes around, and there are the Santa Ynez, brown and folded and near enough to count the fire roads, and then the tops of them, and then more of them behind. He doesn’t blink.",
+      "Somewhere over the mountains, with two holy cards in his shirt pocket and his grandmother’s pie under the seat in front of him, he is thinking about her mouth again — the cold at the corner of it, in the lot, before it was warm."
+     ],
+     "goto": "s24"
     },
-    "s24a": {
-      "slug": "WEDNESDAY · 12:24 PM · DENVER INTERNATIONAL AIRPORT, CONCOURSE B",
-      "set": {
-        "knows_skye_famous": true,
-        "gina_knows_skye": true
+    {
+     "text": "*tell the orphan i said bye*",
+     "tag": "Wit",
+     "set": {
+      "e17_last": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "tell the orphan i said bye",
+       "time": "7:52 AM"
       },
-      "body": [
-        "The keys stop.",
-        "“Oh my God,” Gina says.",
-        "Then, loud enough to come out of a RAZR held tight to his ear and carry across a concourse: “JACK. SHE’S ON TV.”",
-        "A woman three seats down, rocking a stroller with her foot, looks over at him. Across the concourse Theo has his eyes shut and his phone at his ear, letting the man work, and never turns his head.",
-        "“She’s *Cassidy*. On *Sweetwater*. Thursdays at nine — everybody at Ursuline watches it, Jack, *everybody*, Kelsey has the song from it on her phone — she’s the *nice* one. She’s the one everybody protects.” “There’s two of her. There’s her, and then there’s her *fan page*, with *fans*, and it says *Actress*, and she has four thousand friends. Four thousand and *something*. She’s *so pretty*. Like TV pretty. Because she’s *on TV*. There’s a picture of her on a *dock*, in a *blazer*, with like six other girls in blazers, and she’s in the middle looking like she’d say sorry to a *chair*.” She goes for a breath and doesn’t get one. “How do you — where did you — you don’t even *have* a TV.”",
-        "*— it’s Cassidy, I swear to God —*",
-        "*People get me confused with a girl.* *What girl?* *A nice one.*",
-        "He told a girl who is on television Thursdays at nine that he doesn’t own a television, so it wouldn’t mean anything. To put her at ease. Then he explained General Motors to her. In her own car. With dates. And she let him. She drove up the 101 with one bare foot on the gas and asked him about Lordstown like he was the one in the car worth hearing about.",
-        "Jack slides down the pillar until he is lying flat on the carpet of Concourse B, with the phone at his ear and Gloria’s box standing over him. The woman with the stroller wheels it a few feet farther off.",
-        "“Jack. *Jack*. Where did you *meet* her?”",
-        "“At a party. Over a book.”",
-        "“Of *course* over a book. What did you *do*.”",
-        "“We had coffee.”",
-        "“*JACK*.”",
-        "Gina, at a lower volume: “Is she nice? Like in real life. Is she the nice one?”",
-        "Jack, on his back on the carpet, sees her to the waist in the Pacific in a man’s flannel in November, swearing through her teeth.",
-        "“No,” he says. “Not like that.”",
-        "“Oh my *God*.” The keys again, furious. “Kelsey is going to *die* —”",
-        "“Kelsey’s not going to anything.”",
-        {
-          "if": "becca_fb_up",
-          "text": "“Also your Facebook still says you’re in a relationship. With *Idaho*.” “She asked me to leave it up till she tells her mom.” “That’s so nice,” Gina says, “I’m mad about it.”"
-        },
-        "He sits up. Theo has switched feet on the stand.",
-        "“G. Nobody. Not Ma. Not Pop. Not Nonna. Not Danny. Not Theo.”",
-        "“Danny calls *tonight*. Who’s — the rich one? I’ve never even *met* the rich one.”",
-        "“Nobody.”",
-        "Down the line the keys go again, slower, a few at a time, and quit.",
-        "“Not even the nun?”",
-        "“Lena’s got a boyfriend, G.”",
-        "“I know. I found him.” One key. “That’s not what I asked.”",
-        "Then, through the basement window and down the line, the Silverado’s horn in the driveway — one long, two short, the way their father has called people out to the truck since before Gina was born.",
-        "“Dad wants me to come look at the truck. He *washed* it. In *November*. For the *rich one*.” The horn again. “I have to go. Jack.” She brings her voice down to what she must think is a whisper. “*On TV*.”",
-        "Click.",
-        "He sits on the carpet with the phone in his lap. The PA wants a passenger named Ruiz at the white courtesy phone. Then he opens the RAZR to SKYE (MISFIT) and puts his thumb on the keys."
-      ],
-      "journal": [
-        {
-          "kind": "person",
-          "id": "gina",
-          "title": "Gina",
-          "if": "e15_gina==\"sincerity\"",
-          "text": "My sister. Fifteen, a sophomore at Ursuline. Texts in lowercase like punctuation costs extra. A girl in religion class called her the class expert on visiting the imprisoned. Dad turned the radio back on. Nonna told the altar society I went to confession. Said Danny’s name back to the girl. The girl looked away first. Then laughed with Kelsey anyway. Gina wants the first part on the record. She wanted to know if the nun was real. Now they’re Facebook friends, and Lena signs her wall posts like letters. Gina found the boyfriend in about four minutes. Didn’t tell Nonna. Ashley Vrabel is going to Halloween as a prisoner. Orange jumpsuit. A tribute, she says. Lena read it once and gave me a line for her. Halloween: went as a nun, obviously. Ashley wore the jumpsuit. Gina said it — visit, not dress up as — and Kelsey laughed at Ashley for once. Ashley says she’s dead Monday. Ashley sat next to her in religion and didn’t say anything. Kelsey either. The radio says they’re firing the GM. Dad laughed, Ma says. First time since June. Tuesday she said the thing about Ashley Vrabel’s father in religion. Detention. She thought it would feel good. She heard Dad’s truck hit the can Monday night. Team Edward. Jacob is literally a dog. Monday she found Nonna at the bottom of the stairs, and called the ambulance, and went for Dad. Said sorry to Ashley. Told me in the next text. On the floor in Denver I asked her to look up a girl. She screamed. She’s sworn. ‘Not even the nun?’"
-        },
-        {
-          "kind": "person",
-          "id": "gina",
-          "title": "Gina",
-          "if": "e15_gina!=\"sincerity\"",
-          "text": "My sister. Fifteen, a sophomore at Ursuline. Texts in lowercase like punctuation costs extra. A girl in religion class called her the class expert on visiting the imprisoned. Dad turned the radio back on. Nonna told the altar society I went to confession. Said Danny’s name back to the girl. The girl looked away first. Then laughed with Kelsey anyway. Gina wants the first part on the record. She wanted to know if the nun was real. Now they’re Facebook friends, and Lena signs her wall posts like letters. Gina found the boyfriend in about four minutes. Didn’t tell Nonna. Ashley Vrabel is going to Halloween as a prisoner. Orange jumpsuit. A tribute, she says. Lena read it once and gave me a line for her. Halloween: went as a nun, obviously. Ashley wore the jumpsuit. Gina said it — visit, not dress up as — and Kelsey laughed at Ashley for once. Ashley says she’s dead Monday. Ashley sat next to her in religion and didn’t say anything. Kelsey either. The radio says they’re firing the GM. Dad laughed, Ma says. First time since June. Tuesday she said the thing about Ashley Vrabel’s father in religion. Detention. She thought it would feel good. She heard Dad’s truck hit the can Monday night. Team Edward. Jacob is literally a dog. Monday she found Nonna at the bottom of the stairs, and called the ambulance, and went for Dad. On the floor in Denver I asked her to look up a girl. She screamed. She’s sworn. ‘Not even the nun?’"
-        }
-      ],
-      "choices": [
-        {
-          "text": "*im an idiot. i had no idea who you were. im sorry.*",
-          "tag": "Candor",
-          "set": {
-            "e17_sorry": "candor",
-            "said_it_plain": true,
-            "said_it_plain_n": "+1",
-            "trait.candor": "+1",
-            "soul.honesty": "+1"
-          },
-          "key": "From the floor in Denver you texted Skye: *im an idiot. i had no idea who you were. im sorry.*",
-          "response": [
-            {
-              "type": "sms",
-              "from": "Jack",
-              "text": "im an idiot. i had no idea who you were. im sorry.",
-              "time": "12:29 PM"
-            }
-          ],
-          "goto": "s24b"
-        },
-        {
-          "text": "*i explained gm to a girl whos on tv thursdays at nine. with dates. im an idiot. sorry*",
-          "tag": "Wit",
-          "set": {
-            "e17_sorry": "wit",
-            "trait.wit": "+1",
-            "rel.skye.warmth": "+1"
-          },
-          "key": "From the floor in Denver you texted Skye that you’d explained GM to a girl who’s on TV Thursdays at nine.",
-          "response": [
-            {
-              "type": "sms",
-              "from": "Jack",
-              "text": "i explained gm to a girl whos on tv thursdays at nine. with dates. im an idiot. sorry",
-              "time": "12:29 PM"
-            }
-          ],
-          "goto": "s24b"
-        },
-        {
-          "text": "*sorry. i should have known. i didnt. im an idiot. youre still misfit in my phone*",
-          "tag": "Sincerity",
-          "set": {
-            "e17_sorry": "sincerity",
-            "trait.sincerity": "+1",
-            "rel.skye.trust": "+1"
-          },
-          "key": "From the floor in Denver you texted Skye: *youre still misfit in my phone.*",
-          "response": [
-            {
-              "type": "sms",
-              "from": "Jack",
-              "text": "sorry. i should have known. i didnt. im an idiot. youre still misfit in my phone",
-              "time": "12:29 PM"
-            }
-          ],
-          "goto": "s24b"
-        }
-      ]
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "the orphan says take a jacket. ohio is cold",
+       "time": "7:53 AM"
+      },
+      "He puts the phone away just as the flight attendant reaches him.",
+      "Theo is asleep before the wheels are up, his head back against the seat and his hands folded over the buckle.",
+      "Then the engines come up into a sound Jack feels in his back teeth, and the seat shoves him, and the runway goes by faster than anything he has ever ridden in — and the ground lets go of them, with no fuss at all. The coast tips up under the wing: the beach a white thread, the town laid out in its grid, the Channel flat as poured metal with the platforms standing out on it small as matchheads. The plane comes around, and there are the Santa Ynez, brown and folded and near enough to count the fire roads, and then the tops of them, and then more of them behind. He doesn’t blink.",
+      "Somewhere over the mountains, with two holy cards in his shirt pocket and his grandmother’s pie under the seat in front of him, he is thinking about her mouth again — the cold at the corner of it, in the lot, before it was warm."
+     ],
+     "goto": "s24"
     },
-    "s24b": {
-      "slug": "WEDNESDAY · 12:31 PM · DENVER INTERNATIONAL AIRPORT, CONCOURSE B → THE JETWAY",
-      "music": "Spoon — “The Underdog”",
-      "set": {
-        "skye_knows_gina": true
-      },
-      "body": [
-        "At 12:31 the phone goes off in his hand, and keeps going off.",
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "OHIO",
-          "time": "12:31 PM"
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "five days. you lasted FIVE DAYS. nobody lasts five minutes. i was hoping for christmas",
-          "time": "12:31 PM"
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "dont be sorry. it was the best part",
-          "time": "12:32 PM",
-          "if": "e17_sorry==\"candor\""
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "you explained my own car to me and i let you because it was the best date ive had in three years. do not get weird. i will know",
-          "time": "12:32 PM",
-          "if": "e17_sorry==\"wit\""
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "good. stay that way. do not get weird. i will know",
-          "time": "12:32 PM",
-          "if": "e17_sorry==\"sincerity\""
-        },
-        "He laughs on the floor of Concourse B with his head against the pillar. Of everything in the last ten minutes, that’s the part he can’t get past. She isn’t angry. She’s *pleased* with him — five days, like it’s a record he set.",
-        {
-          "type": "sms",
-          "from": "Jack",
-          "text": "i still dont have a tv",
-          "time": "12:32 PM"
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "never get one",
-          "time": "12:32 PM"
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "who told you",
-          "time": "12:33 PM"
-        },
-        {
-          "type": "sms",
-          "from": "Jack",
-          "text": "my sister. she screamed. a woman moved her stroller",
-          "time": "12:33 PM"
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "GINA??",
-          "time": "12:34 PM"
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "tell gina cassidy says be nice",
-          "time": "12:34 PM"
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "no dont",
-          "time": "12:34 PM"
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "yes do",
-          "time": "12:34 PM"
-        },
-        "Theo comes back across the concourse with his loafers shining and drops into the seat beside the pillar. He holds one foot out for Jack to admire. “A man named Curtis,” he says, “has restored my faith in Denver. I told him where I was going, and he gave me the good polish out of sympathy.” Then he looks down at Jack on the carpet, with the phone shut in his fist.",
-        "“What?”",
-        "“Nothing.”",
-        "Theo crosses his ankles and turns his attention to the other shoe.",
-        "They board families with small children first, and the woman with the stroller goes past him to the jetway giving him the widest berth Concourse B allows. After them, group three. The phone buzzes in Jack’s hand from the gate to the end of the jetway, faster than T9 was ever built to answer. She wants to know what Gina looks like (*like me. shed win*). What the scream sounded like (*the fire alarm at 3am*). Whether the pie made it through Denver (*under a seat. its fine*). How many people know (*one. and the stroller*). She wants to know everything at once, and she types the way she drives.",
-        "At the door of the plane the flight attendant looks at the phone, and then at him. He turns it off with her last one still lit on the screen — *go. ill still be on tv when you land* — and puts it in his shirt pocket, behind the two saints."
-      ],
-      "journal": [
-        {
-          "kind": "person",
-          "id": "skye",
-          "title": "Skye Callender",
-          "if": "e16_stop==\"restraint\"",
-          "text": "Skye. No last name — she said *Out*. Met her in a window seat in Montecito, reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Doesn’t go here. Not yet, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. I was the one who stopped; she said okay like it was interesting. Typed herself into my phone as SKYE (MISFIT), and called herself from it. Took ten hours to answer my correction. Work, she said — a carpet and a wall. Her car’s an orphan now, and it’s my fault. Nearly three hours at the Starlite, a truck stop up the 101, with Nonna’s pie on the table. Cast me as the Bible salesman. Wanted to know what believing is like — not what I believe. Named for a grandmother she met twice. Wants me to miss her a reasonable amount. Get the window, she said. Kissed me again against the Saab in the lot. Slower. On purpose. Callender — two Ls; she texted it from LA. She’s on TV. *Sweetwater*, Thursdays at nine: she plays Cassidy, the nice one. Gina screamed. I explained GM to her. In her own car."
-        },
-        {
-          "kind": "person",
-          "id": "skye",
-          "title": "Skye Callender",
-          "if": "e16_stop==\"reckless\"",
-          "text": "Skye. No last name — she said *Out*. Met her in a window seat in Montecito, reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Doesn’t go here. Not yet, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. She was the one who stopped, in the grandmother’s voice. Typed herself into my phone as SKYE (MISFIT), and called herself from it. Took ten hours to answer my correction. Work, she said — a carpet and a wall. Her car’s an orphan now, and it’s my fault. Nearly three hours at the Starlite, a truck stop up the 101, with Nonna’s pie on the table. Cast me as the Bible salesman. Wanted to know what believing is like — not what I believe. Named for a grandmother she met twice. Wants me to miss her a reasonable amount. Get the window, she said. Kissed me again against the Saab in the lot. Slower. On purpose. Callender — two Ls; she texted it from LA. She’s on TV. *Sweetwater*, Thursdays at nine: she plays Cassidy, the nice one. Gina screamed. I explained GM to her. In her own car."
-        }
-      ],
-      "end": true
+    {
+     "text": "Turn it off unanswered.",
+     "tag": "Restraint",
+     "set": {
+      "e17_last": "restraint",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "He holds the button down and puts the phone away with her text unanswered in it. The flight attendant, checking belts, gives him a nod as she goes by, for being a good passenger.",
+      "Theo is asleep before the wheels are up, his head back against the seat and his hands folded over the buckle.",
+      "Then the engines come up into a sound Jack feels in his back teeth, and the seat shoves him, and the runway goes by faster than anything he has ever ridden in — and the ground lets go of them, with no fuss at all. The coast tips up under the wing: the beach a white thread, the town laid out in its grid, the Channel flat as poured metal with the platforms standing out on it small as matchheads. The plane comes around, and there are the Santa Ynez, brown and folded and near enough to count the fire roads, and then the tops of them, and then more of them behind. He doesn’t blink.",
+      "Somewhere over the mountains, with two holy cards in his shirt pocket and his grandmother’s pie under the seat in front of him, he is thinking about her mouth again — the cold at the corner of it, in the lot, before it was warm."
+     ],
+     "goto": "s24"
     }
+   ]
+  },
+  "s24": {
+   "slug": "WEDNESDAY · 12:20 PM · DENVER INTERNATIONAL AIRPORT, CONCOURSE B",
+   "set": {
+    "skye_fb_request": true,
+    "knows_skye_surname": true
+   },
+   "body": [
+    "The PA in Concourse B is a woman who never gets to finish a sentence before another woman starts one on top of her — a gate change, a final call for Omaha, a reminder that unattended bags will be — and under her the rolling bags go by in both directions, wheels knocking over every seam in the floor, on the busiest travel day of the year.",
+    "The connection is forty minutes late, and the board has stopped pretending otherwise. Every outlet on the concourse has somebody’s cord in it and somebody sitting guard. The Dell is at the bottom of the duffel with its eleven minutes of battery, and it can stay there. Jack is on the carpet with his back against a pillar and Gloria’s box upright beside him.",
+    "Theo is across the concourse, up on a shoeshine stand — a high leather chair on a platform, brass rests for the feet — with his iPhone to his ear and his loafers in the hands of a man in a canvas apron. “Poppy,” he said, going over. “She’s choosing between our parents and wants a consultant.” Whatever she’s saying now, Theo laughs at it with his head back.",
+    {
+     "if": "e17_last==\"restraint\"",
+     "text": "He turned the RAZR back on halfway up the jetway, and her text was waiting for him — *how was it. dont lie* — and he answered it before he reached the gate: *i didnt blink*."
+    },
+    "At 12:20 it buzzes in his hand.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "added you on facebook. callender. two Ls. now you know everything. dont be weird about it",
+     "time": "12:20 PM"
+    },
+    "He asked her for that in a parking lot and got *Out*. Now it comes to him on the floor of an airport in the middle of the country. Callender. Two Ls. He tries it under his breath with the first name in front of it, and it sounds like a girl he hasn’t met yet.",
+    "Somewhere on Facebook there is a request with his name on it, waiting for Confirm or Ignore, and her picture beside it, and he can’t get to either one. The RAZR doesn’t do the internet, not on his plan; it barely does Denver. The Dell is dead weight. Theo’s iPhone does the internet, thirty feet away, and Jack would sooner walk to Pittsburgh. Sitting there, he notices something he hasn’t noticed in five days: he doesn’t have a single picture of her.",
+    "The RAZR rings in his hand. GINA.",
+    "“Ma says are you in Denver,” Gina says, no hello. Under her voice there are keys going, fast — the basement, the Dell, where she lives when school is out. “Ma says is Theo eating. Ma says —”",
+    "“I’m in Denver.” Across the concourse Theo is pointing out to the shoeshine man a place on the left loafer that still needs him. “He’s eating.”",
+    "“Ma’s at St. Elizabeth’s. Nonna told the nurse she doesn’t need a monitor, she’s from Calabria. Dad’s been ready for the airport since *noon*.”",
+    "Jack looks at the little screen of the phone, and then across the concourse at Theo, with a stranger shining his shoes and his sister in his ear."
+   ],
+   "choices": [
+    {
+     "text": "“G. There’s a girl.”",
+     "tag": "Candor",
+     "set": {
+      "e17_gina": "candor",
+      "said_it_plain": true,
+      "said_it_plain_n": "+1",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "cue": "Gina will remember that.",
+     "key": "On the floor in Denver you told Gina: “There’s a girl.”",
+     "response": [
+      "“G,” he says. “There’s a girl.”",
+      "The keys stop. “There’s a *what*.”",
+      "“A girl. She added me on Facebook. Look her up.”",
+      "“Name.”",
+      "“Skye. Callender. Two Ls.”",
+      "On Glenwood Avenue the keys start again, faster than before."
+     ],
+     "goto": "s24a"
+    },
+    {
+     "text": "“I need the best Facebook detective in Mahoning County.”",
+     "tag": "Wit",
+     "set": {
+      "e17_gina": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "On the floor in Denver you asked Gina to be your Facebook detective.",
+     "response": [
+      "“I need the best Facebook detective in Mahoning County.”",
+      "“That’s me. Obviously.” The keys are already going. “Who.”",
+      "“Skye Callender. Two Ls.”",
+      "“Who’s Skye Callender?”",
+      "“Just look.”",
+      "On Glenwood Avenue the keys go faster."
+     ],
+     "goto": "s24a"
+    },
+    {
+     "text": "“Look somebody up for me. Don’t ask why.”",
+     "tag": "Control",
+     "set": {
+      "e17_gina": "control",
+      "trait.control": "+1"
+     },
+     "key": "On the floor in Denver you asked Gina to look somebody up, and not to ask why.",
+     "response": [
+      "“Look somebody up for me. Don’t ask why.”",
+      "“I’m asking why.”",
+      "“Skye Callender. Two Ls.”",
+      "“I’m still asking why,” Gina says — but on Glenwood Avenue the keys have started."
+     ],
+     "goto": "s24a"
+    }
+   ]
+  },
+  "s24a": {
+   "slug": "WEDNESDAY · 12:24 PM · DENVER INTERNATIONAL AIRPORT, CONCOURSE B",
+   "set": {
+    "knows_skye_famous": true,
+    "gina_knows_skye": true
+   },
+   "body": [
+    "The keys stop.",
+    "“Oh my God,” Gina says.",
+    "Then, loud enough to come out of a RAZR held tight to his ear and carry across a concourse: “JACK. SHE’S ON TV.”",
+    "A woman three seats down, rocking a stroller with her foot, looks over at him. Across the concourse Theo has his eyes shut and his phone at his ear, letting the man work, and never turns his head.",
+    "“She’s *Cassidy*. On *Sweetwater*. Thursdays at nine — everybody at Ursuline watches it, Jack, *everybody*, Kelsey has the song from it on her phone — she’s the *nice* one. She’s the one everybody protects.” “There’s two of her. There’s her, and then there’s her *fan page*, with *fans*, and it says *Actress*, and she has four thousand friends. Four thousand and *something*. She’s *so pretty*. Like TV pretty. Because she’s *on TV*. There’s a picture of her on a *dock*, in a *blazer*, with like six other girls in blazers, and she’s in the middle looking like she’d say sorry to a *chair*.” She goes for a breath and doesn’t get one. “How do you — where did you — you don’t even *have* a TV.”",
+    "*— it’s Cassidy, I swear to God —*",
+    "*People get me confused with a girl.* *What girl?* *A nice one.*",
+    "He told a girl who is on television Thursdays at nine that he doesn’t own a television, so it wouldn’t mean anything. To put her at ease. Then he explained General Motors to her. In her own car. With dates. And she let him. She drove up the 101 with one bare foot on the gas and asked him about Lordstown like he was the one in the car worth hearing about.",
+    "Jack slides down the pillar until he is lying flat on the carpet of Concourse B, with the phone at his ear and Gloria’s box standing over him. The woman with the stroller wheels it a few feet farther off.",
+    "“Jack. *Jack*. Where did you *meet* her?”",
+    "“At a party. Over a book.”",
+    "“Of *course* over a book. What did you *do*.”",
+    "“We had coffee.”",
+    "“*JACK*.”",
+    "Gina, at a lower volume: “Is she nice? Like in real life. Is she the nice one?”",
+    "Jack, on his back on the carpet, sees her to the waist in the Pacific in a man’s flannel in November, swearing through her teeth.",
+    "“No,” he says. “Not like that.”",
+    "“Oh my *God*.” The keys again, furious. “Kelsey is going to *die* —”",
+    "“Kelsey’s not going to anything.”",
+    {
+     "if": "becca_fb_up",
+     "text": "“Also your Facebook still says you’re in a relationship. With *Idaho*.” “She asked me to leave it up till she tells her mom.” “That’s so nice,” Gina says, “I’m mad about it.”"
+    },
+    "He sits up. Theo has switched feet on the stand.",
+    "“G. Nobody. Not Ma. Not Pop. Not Nonna. Not Danny. Not Theo.”",
+    "“Danny calls *tonight*. Who’s — the rich one? I’ve never even *met* the rich one.”",
+    "“Nobody.”",
+    "Down the line the keys go again, slower, a few at a time, and quit.",
+    "“Not even the nun?”",
+    "“Lena’s got a boyfriend, G.”",
+    "“I know. I found him.” One key. “That’s not what I asked.”",
+    "Then, through the basement window and down the line, the Silverado’s horn in the driveway — one long, two short, the way their father has called people out to the truck since before Gina was born.",
+    "“Dad wants me to come look at the truck. He *washed* it. In *November*. For the *rich one*.” The horn again. “I have to go. Jack.” She brings her voice down to what she must think is a whisper. “*On TV*.”",
+    "Click.",
+    "He sits on the carpet with the phone in his lap. The PA wants a passenger named Ruiz at the white courtesy phone. Then he opens the RAZR to SKYE (MISFIT) and puts his thumb on the keys."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "gina",
+     "title": "Gina",
+     "if": "e15_gina==\"sincerity\"",
+     "text": "My sister. Fifteen, a sophomore at Ursuline. Texts in lowercase like punctuation costs extra. A girl in religion class called her the class expert on visiting the imprisoned. Dad turned the radio back on. Nonna told the altar society I went to confession. Said Danny’s name back to the girl. The girl looked away first. Then laughed with Kelsey anyway. Gina wants the first part on the record. She wanted to know if the nun was real. Now they’re Facebook friends, and Lena signs her wall posts like letters. Gina found the boyfriend in about four minutes. Didn’t tell Nonna. Ashley Vrabel is going to Halloween as a prisoner. Orange jumpsuit. A tribute, she says. Lena read it once and gave me a line for her. Halloween: went as a nun, obviously. Ashley wore the jumpsuit. Gina said it — visit, not dress up as — and Kelsey laughed at Ashley for once. Ashley says she’s dead Monday. Ashley sat next to her in religion and didn’t say anything. Kelsey either. The radio says they’re firing the GM. Dad laughed, Ma says. First time since June. Tuesday she said the thing about Ashley Vrabel’s father in religion. Detention. She thought it would feel good. She heard Dad’s truck hit the can Monday night. Team Edward. Jacob is literally a dog. Monday she found Nonna at the bottom of the stairs, and called the ambulance, and went for Dad. Said sorry to Ashley. Told me in the next text. On the floor in Denver I asked her to look up a girl. She screamed. She’s sworn. ‘Not even the nun?’"
+    },
+    {
+     "kind": "person",
+     "id": "gina",
+     "title": "Gina",
+     "if": "e15_gina!=\"sincerity\"",
+     "text": "My sister. Fifteen, a sophomore at Ursuline. Texts in lowercase like punctuation costs extra. A girl in religion class called her the class expert on visiting the imprisoned. Dad turned the radio back on. Nonna told the altar society I went to confession. Said Danny’s name back to the girl. The girl looked away first. Then laughed with Kelsey anyway. Gina wants the first part on the record. She wanted to know if the nun was real. Now they’re Facebook friends, and Lena signs her wall posts like letters. Gina found the boyfriend in about four minutes. Didn’t tell Nonna. Ashley Vrabel is going to Halloween as a prisoner. Orange jumpsuit. A tribute, she says. Lena read it once and gave me a line for her. Halloween: went as a nun, obviously. Ashley wore the jumpsuit. Gina said it — visit, not dress up as — and Kelsey laughed at Ashley for once. Ashley says she’s dead Monday. Ashley sat next to her in religion and didn’t say anything. Kelsey either. The radio says they’re firing the GM. Dad laughed, Ma says. First time since June. Tuesday she said the thing about Ashley Vrabel’s father in religion. Detention. She thought it would feel good. She heard Dad’s truck hit the can Monday night. Team Edward. Jacob is literally a dog. Monday she found Nonna at the bottom of the stairs, and called the ambulance, and went for Dad. On the floor in Denver I asked her to look up a girl. She screamed. She’s sworn. ‘Not even the nun?’"
+    }
+   ],
+   "choices": [
+    {
+     "text": "*im an idiot. i had no idea who you were. im sorry.*",
+     "tag": "Candor",
+     "set": {
+      "e17_sorry": "candor",
+      "said_it_plain": true,
+      "said_it_plain_n": "+1",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "key": "From the floor in Denver you texted Skye: *im an idiot. i had no idea who you were. im sorry.*",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "im an idiot. i had no idea who you were. im sorry.",
+       "time": "12:29 PM"
+      }
+     ],
+     "goto": "s24b"
+    },
+    {
+     "text": "*i explained gm to a girl whos on tv thursdays at nine. with dates. im an idiot. sorry*",
+     "tag": "Wit",
+     "set": {
+      "e17_sorry": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "From the floor in Denver you texted Skye that you’d explained GM to a girl who’s on TV Thursdays at nine.",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "i explained gm to a girl whos on tv thursdays at nine. with dates. im an idiot. sorry",
+       "time": "12:29 PM"
+      }
+     ],
+     "goto": "s24b"
+    },
+    {
+     "text": "*sorry. i should have known. i didnt. im an idiot. youre still misfit in my phone*",
+     "tag": "Sincerity",
+     "set": {
+      "e17_sorry": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "From the floor in Denver you texted Skye: *youre still misfit in my phone.*",
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "sorry. i should have known. i didnt. im an idiot. youre still misfit in my phone",
+       "time": "12:29 PM"
+      }
+     ],
+     "goto": "s24b"
+    }
+   ]
+  },
+  "s24b": {
+   "slug": "WEDNESDAY · 12:31 PM · DENVER INTERNATIONAL AIRPORT, CONCOURSE B → THE JETWAY",
+   "music": "Spoon — “The Underdog”",
+   "set": {
+    "skye_knows_gina": true
+   },
+   "body": [
+    "At 12:31 the phone goes off in his hand, and keeps going off.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "OHIO",
+     "time": "12:31 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "five days. you lasted FIVE DAYS. nobody lasts five minutes. i was hoping for christmas",
+     "time": "12:31 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "dont be sorry. it was the best part",
+     "time": "12:32 PM",
+     "if": "e17_sorry==\"candor\""
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "you explained my own car to me and i let you because it was the best date ive had in three years. do not get weird. i will know",
+     "time": "12:32 PM",
+     "if": "e17_sorry==\"wit\""
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "good. stay that way. do not get weird. i will know",
+     "time": "12:32 PM",
+     "if": "e17_sorry==\"sincerity\""
+    },
+    "He laughs on the floor of Concourse B with his head against the pillar. Of everything in the last ten minutes, that’s the part he can’t get past. She isn’t angry. She’s *pleased* with him — five days, like it’s a record he set.",
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "i still dont have a tv",
+     "time": "12:32 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "never get one",
+     "time": "12:32 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "who told you",
+     "time": "12:33 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "my sister. she screamed. a woman moved her stroller",
+     "time": "12:33 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "GINA??",
+     "time": "12:34 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "tell gina cassidy says be nice",
+     "time": "12:34 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "no dont",
+     "time": "12:34 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "yes do",
+     "time": "12:34 PM"
+    },
+    "Theo comes back across the concourse with his loafers shining and drops into the seat beside the pillar. He holds one foot out for Jack to admire. “A man named Curtis,” he says, “has restored my faith in Denver. I told him where I was going, and he gave me the good polish out of sympathy.” Then he looks down at Jack on the carpet, with the phone shut in his fist.",
+    "“What?”",
+    "“Nothing.”",
+    "Theo crosses his ankles and turns his attention to the other shoe.",
+    "They board families with small children first, and the woman with the stroller goes past him to the jetway giving him the widest berth Concourse B allows. After them, group three. The phone buzzes in Jack’s hand from the gate to the end of the jetway, faster than T9 was ever built to answer. She wants to know what Gina looks like (*like me. shed win*). What the scream sounded like (*the fire alarm at 3am*). Whether the pie made it through Denver (*under a seat. its fine*). How many people know (*one. and the stroller*). She wants to know everything at once, and she types the way she drives.",
+    "At the door of the plane the flight attendant looks at the phone, and then at him. He turns it off with her last one still lit on the screen — *go. ill still be on tv when you land* — and puts it in his shirt pocket, behind the two saints."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "skye",
+     "title": "Skye Callender",
+     "text": "Skye. No last name — she said *Out*. Met her in a window seat in Montecito, reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Doesn’t go here. Not yet, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. She was the one who stopped, in the grandmother’s voice. Typed herself into my phone as SKYE (MISFIT), and called herself from it. Took ten hours to answer my correction. Work, she said — a carpet and a wall. Her car’s an orphan now, and it’s my fault. Nearly three hours at the Starlite, a truck stop up the 101, with Nonna’s pie on the table. Cast me as the Bible salesman. Wanted to know what believing is like — not what I believe. Named for a grandmother she met twice. Wants me to miss her a reasonable amount. Get the window, she said. Kissed me again against the Saab in the lot. Slower. On purpose. Callender — two Ls; she texted it from LA. She’s on TV. *Sweetwater*, Thursdays at nine: she plays Cassidy, the nice one. Gina screamed. I explained GM to her. In her own car."
+    }
+   ],
+   "end": true
   }
+ }
 }
