@@ -1010,3 +1010,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     phone at the table.
   - **Lena in E18: light texting throughout the weekend, plus one good, warm call from New Orleans on Thanksgiving
     night**: sweet but guarded, less deep than the Christmas calls will be. She asks about Theo and Nonna.
+- **The stale relationship status (player; room may refine).** On this save Becca's "in a relationship with Jack
+  Costigan" went up on Facebook in E14 (`becca_fb_up`), and nothing since has taken it down. So when **Skye first sees
+  Jack's profile** (the friend request, end of E17 / start of Thanksgiving), **it still says he's in a relationship
+  with Becca**. Skye knows he just ended something, so she **assumes he hasn't gotten around to changing it**, and,
+  being Skye, **makes it a bit and messes with him for a few texts** (mock-scandalized, playing the other woman,
+  "should I be worried about this Becca," etc.). Room's suggested why it's still up, a quiet knife: Jack won't be the
+  first to publicly end it (Becca deserves to tell her family and friends on her own time), and Becca hasn't taken it
+  down yet (she can't bear to, or hasn't told her parents). It comes down later (room's call: Becca removes it over or
+  after Thanksgiving, and Jack sees the notification, or it vanishes quietly). Alliance and Lena reactions to the stale
+  status are available too. Land the texts at the opening of E18 (Thanksgiving texting) if E17 is already locked.
