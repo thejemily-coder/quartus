@@ -985,3 +985,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   she drops the act, his guilt and want), so it's never filler. Track escalation across episodes so no two scenes play
   the same beat. Consent stays clean per the earlier directive. Lena sees only the public surface (photos), never these
   scenes.
+  - **Caveat (player):** the escalation isn't strictly "seduction only in Jan–Feb." **Her first attempt to sleep with
+    him happens in December** (the secret stretch, at her place, the first time she brings him home). He says no, and
+    it leads to the lengthy conversation about why (his faith, all of it) and **her first big moment of vulnerability**
+    ("scared he thinks she's a whore"), as designed earlier. After that, January–February brings the increasingly
+    effective repeat attempts.
