@@ -1117,3 +1117,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Lent; fast on Ash Wednesday and Good Friday. **Lena does more than the minimum, and Jack does something more too**:
   e.g., fasting every Friday of Lent and/or a traditional devotion or a popular modern one. **Their dates avoid Fridays
   during Lent.** (Specific practices: see the suggestions pending player approval, or room's call.)
+  - **First Lent (2010): separate practices, no joint plan (player).** They're just starting out, so each keeps their own
+    Lent. Suggested individual practices (room may use): **Lena:** fasting every Friday (perhaps the old bread-and-water
+    way); Stations of the Cross on Friday evenings at St. Brendan's (Jack may tag along unplanned; a Friday not-date);
+    giving up Facebook for Lent (a real 2010 trend; Laney appalled; keeps the relationship off Facebook until Easter).
+    **Jack:** giving up cigarettes (withdrawal, itchy hands, an unopened pack he carries, Lena quietly moved); fasting
+    Fridays too, matching her out of devotion and pride. **No shared Lent plan or joint Friday dinners this year.**
+  - **Future Lents (2011 onward): they make a whole Lent plan together** as a couple, and later as a married couple.
