@@ -1124,3 +1124,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     **Jack:** giving up cigarettes (withdrawal, itchy hands, an unopened pack he carries, Lena quietly moved); fasting
     Fridays too, matching her out of devotion and pride. **No shared Lent plan or joint Friday dinners this year.**
   - **Future Lents (2011 onward): they make a whole Lent plan together** as a couple, and later as a married couple.
+- **Season 2: Laney brings the laptop (player; off Jack's screen, relayed later).** The first week back from New Orleans,
+  before Jack asks Lena out: when Jack's Facebook goes from "In a Relationship with Skye" back to single, **Laney brings
+  her laptop to Lena to show her, watching Lena's face carefully, and asks what she knows about this.** Per the POV
+  rule, Jack hears it **from Lena on one of their dates**, likely relayed as a story on herself.
+  - **Mirror:** in January Laney *took the laptop away* from Lena over the Skye status; now she *brings it to her*.
+  - **Irony:** Lena has given up Facebook for Lent, so she only sees it because Laney shoves it at her.
