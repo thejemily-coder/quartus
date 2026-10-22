@@ -13,10 +13,10 @@
     "He holds up the bag. “So am I.”",
     "At nine on a Thursday night the basement is theirs. Eight washers, three of them working. Six dryers along the far wall, one of them going, a pair of red socks coming round in its window. Priya’s laminated sign by the door with the hours on it and CLEAN THE LINT TRAP in capitals. The vending machines humming. The upright against the cinderblock, with its dead F. On the washer beside the bench, the Community Coffee mug, clean.",
     "Lena hooks the folding chair with her boot heel and shoves it across the concrete at him without looking up. He loads the nearest working washer — jeans, the Mooney hoodie, a week of everything he owns in gray — feeds it quarters, and sits.",
-    "“She gave you the peace,” Lena says.",
     {
-     "if": "e15_lounge==\"restraint\"",
-     "text": "“That’s as much as I’ll say about her. You told me she’s owed that.”"
+     "if": "e15_her==\"yes\"",
+     "text": "“She gave me the peace too,” Lena says. “She didn’t have to.”",
+     "else": "“She gave you the peace,” Lena says."
     },
     "“She texted me at two.” Jack watches the washer fill. “She’s praying for me.”",
     "Lena wets a finger and turns a page. “Course she is.”",
@@ -54,22 +54,6 @@
     "“Gina made me read that chapter twice.”",
     "She laughs at him, and goes on smiling after the laugh is done, with her finger still in the book. “Does she sleep now?”",
     "“Mostly. She’s fifteen. She sleeps through first period.”",
-    {
-     "if": "e15_bench==\"gina\" && e15_gina==\"sincerity\"",
-     "text": "“How is she now?” she asks. She read Gina’s texts, on the bench. “Did she make it right with that girl?” “I told her to apologize. Not for the truth — for why she said it. She said okay.” “Good,” Lena says."
-    },
-    {
-     "if": "e15_bench==\"gina\" && e15_gina==\"wit\"",
-     "text": "“How is she now?” she asks. She read Gina’s texts, on the bench. “Did it help, saying it?” “I told her good, now never do it again. She said it didn’t feel good.” “It never does,” Lena says. “That’s how you know you’re not a monster.”"
-    },
-    {
-     "if": "e15_bench==\"gina\" && e15_gina==\"candor\"",
-     "text": "“How is she now?” she asks. She read Gina’s texts, on the bench. “Is she all right?” “I told her she isn’t carrying Dad. She said ty.” “T-Y.” “It’s a full sentence, in Gina.”"
-    },
-    {
-     "if": "e15_bench==\"gina\" && e15_gina!=\"sincerity\" && e15_gina!=\"wit\" && e15_gina!=\"candor\"",
-     "text": "“How is she now?” she asks. She read Gina’s texts, on the bench. “Is she all right?” “I called her before school. Ten to four, my time. She ate Cheerios at me for twenty minutes.” “That’s love,” Lena says, “in fifteen.”"
-    },
     "Lena and Gina are Facebook friends; Lena signs her wall posts to Gina like letters. So the next question is a serious one, and she asks it seriously. “Is she Team Edward?”",
     "“She’s Team *Edward*. She says Jacob is literally a dog.”",
     "“He *is* literally a dog.” Lena uncaps a pink highlighter and goes looking for the page."
@@ -550,13 +534,6 @@
      "from": "Gina",
      "text": "TEAM EDWARD. jacob is literally a dog. dont tell me u disagree",
      "time": "12:40 PM"
-    },
-    {
-     "if": "e15_gina==\"control\"",
-     "type": "sms",
-     "from": "Gina",
-     "text": "u can call before school again. if u want. whatever",
-     "time": "12:41 PM"
     },
     {
      "type": "sms",

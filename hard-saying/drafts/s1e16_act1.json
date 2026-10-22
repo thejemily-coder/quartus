@@ -1,277 +1,288 @@
 {
-  "scenes": {
-    "s01": {
-      "slug": "THURSDAY · 2:00 AM · DELGADO HALL, ROOM 412",
-      "body": [
-        "At two o’clock the little screen on the outside of the RAZR comes on blue, and for a few seconds there’s enough light in 412 to see by: the reader, the coffee can of pens, the corner of the frame, and on the floor between the beds the jam jar with its two spoons. Jack is awake to see it. He has been awake since Theo’s phone call to the Harbor Inn, lying on his back in the dark, listening to Theo do a very good impression of somebody asleep.",
-        "Two in the morning is Becca’s hour. It has been since September.",
-        {
-          "type": "sms",
-          "from": "Becca",
-          "text": "its 2. praying for u like always. thats not a girlfriend thing. dont worry about me ok? :)",
-          "time": "2:00 AM"
-        },
-        "He holds the phone open over his face and reads it by its own light. It came at two exactly, not a minute either side. She’d have set an alarm.",
-        {
-          "if": "e15_conf==\"go\"",
-          "text": "Then he says her name into the dark, once, low enough not to wake anybody. *Becca.* Every day till Advent; this is the first full one."
-        },
-        {
-          "if": "e15_conf!=\"go\" && e15_last==\"pray\"",
-          "text": "Then he prays for her, the way he told her in the truck he would. He gets as far as her name."
-        },
-        {
-          "if": "e15_conf!=\"go\" && e15_last!=\"pray\"",
-          "text": "Then he lies there with the phone lit on his chest until the screen goes dark by itself."
-        },
-        "He gets up and wakes the Dell, for the light more than anything. Facebook comes up where he left it, on his own profile, and under his name it still says *In a Relationship with Becca Lindell.* Under it on his wall, from two weeks ago, Joey Abruzzo has written FINALLY BRO, in capitals, with four exclamation points. He looks at it. He leaves it.",
-        {
-          "if": "e15_two_am==\"reckless\"",
-          "text": "The Reds are in the Carhartt on the chair. Three left. He leaves them there."
-        },
-        "Two floors down, a clean mug is sitting on the linoleum outside 217 with its handle turned out, unless somebody has already taken it in.",
-        "He doesn’t go back to bed. He sits at the desk with the laptop open and the rest of the room around him in the dark — the jar, the spoons, Theo’s Submariner on the nightstand catching a little of the screen — and waits for it to be a reasonable hour for anything."
-      ],
-      "next": "s01b"
+ "scenes": {
+  "s01": {
+   "slug": "THURSDAY · 2:00 AM · DELGADO HALL, ROOM 412",
+   "body": [
+    "At two o’clock the little screen on the outside of the RAZR comes on blue, and for a few seconds there’s enough light in 412 to see by: the reader, the coffee can of pens, the corner of the frame, and on the floor between the beds the jam jar with its two spoons. Jack is awake to see it. He has been awake since Theo’s phone call to the Harbor Inn, lying on his back in the dark, listening to Theo do a very good impression of somebody asleep.",
+    "Two in the morning is Becca’s hour. It has been since September.",
+    {
+     "type": "sms",
+     "from": "Becca",
+     "text": "its 2. praying for u like always. thats not a girlfriend thing. dont worry about me ok? :)",
+     "time": "2:00 AM"
     },
-    "s01b": {
-      "slug": "THURSDAY · 12:10 PM · ST. BRENDAN’S",
-      "set": {
-        "resolve.jack": "+1"
-      },
-      "body": [
-        "St. Brendan’s takes the noon light in through its blue glass and turns it to deep water, and the fifteen or so people at the 12:10 sit in it at the bottom of the hull: Mrs. Fitch in her cardigan, the old man with the cane, two nursing students in scrubs, Joey Abruzzo already kneeling.",
-        "The fourth pew on the right has a canvas bag on the end of it, at the aisle. When Jack gets there Lena lifts the bag into her lap and goes back to her worship aid, and he sits down where it was.",
-        "Across the aisle, in the fourth pew on the left, where she always is, Becca sits between Joey and Kenzie Rourke with her rosary in her hands. She doesn’t look over. Not at the entrance hymn, not at the readings.",
-        "The first reading is Maccabees again; it has been Maccabees all week, old men refusing things. Then Fr. Osei reads the Gospel, Luke, Jesus coming over the hill and seeing the city and weeping over it. *If this day you only knew what makes for peace — but now it is hidden from your eyes.*",
-        "“He is not angry here. Notice,” Osei says, from the step, without notes. “He comes over the hill and sees the city and he cries, the way a doctor cries in his car afterward, never in front of the family. They did not know the hour they were visited. Most of us find out later.” He looks out at the fifteen of them a moment. “Later is also an hour. God keeps those too.” Ninety seconds, and he sits down.",
-        {
-          "if": "e15_conf==\"go\"",
-          "text": "At the Our Father he says Becca’s name inside it, which is not where it goes."
-        },
-        "At the sign of peace Becca turns around — not to Joey, not to Kenzie; across the aisle — and holds out her hand to him.",
-        "“Peace be with you, Jack.”",
-        "He leans out over the aisle and takes it. “And also with you.”",
-        "Her hand is warm. She lets go first, and turns back to Kenzie, and then to Joey, who gives her the peace at the volume he does everything.",
-        "When Jack turns back to his own pew Lena’s hand is out, waiting for him; she hasn’t given the peace to anybody else yet. He takes it, and she gives his a small shake, and after that her eyes are on the hymnal in the rack in front of her, all the way through the Lamb of God, though there is nothing in it they’re singing.",
-        "After the dismissal she checks her watch and is gone up the side aisle with the bag on her shoulder, to a one o’clock. Becca goes out the other door, toward the Marine Lab and the touch tank, the way she does on Thursdays. The two of them don’t pass each other. Jack keeps his seat in the blue until Mrs. Fitch starts folding Sunday’s bulletins in the pew behind him, three days early."
-      ],
-      "journal": [
-        {
-          "kind": "person",
-          "id": "becca",
-          "title": "Becca Lindell",
-          "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey. She asked how I’m getting home. Greyhound. She frowned. Her mother sent a box: socks, cookies, two jars of huckleberry — JACK, and FOR THE CATHOLIC ROOMMATE. She offered me Daisy’s money. Six hundred and twelve dollars. It’s there, she says. Daisy doesn’t mind. Saturday, Ohio State in overtime: she gave me a photograph of the elephant seals in a frame she painted, every seal labeled with what it weighs. She’ll call during her dad’s grace on Thanksgiving so I can hear it. She wants to watch Michigan here, with me. ‘Someday I want to see your house. Is that okay to say?’ Ma wrote her. Three days after Christmas. Pittsburgh’s cheaper than Cleveland. She looked. Wednesday, in Eli’s truck, I told her. She said she did everything right, and she did. ‘It just isn’t the thing, is it.’ She asked me to leave it up on Facebook till she’s told her mom at the table. Thursday at two she texted. Still praying for me — not a girlfriend thing, she says. At the twelve-ten she turned around across the aisle at the sign of peace and held out her hand."
-        }
-      ],
-      "next": "s02"
+    "He holds the phone open over his face and reads it by its own light. It came at two exactly, not a minute either side. She’d have set an alarm.",
+    {
+     "if": "e15_daisy==\"gently\"",
+     "type": "sms",
+     "from": "Becca",
+     "text": "daisy says hi btw. shes staying put. like u said",
+     "time": "2:01 AM"
     },
-    "s02": {
-      "slug": "THURSDAY · 1:15 PM · DELGADO HALL, THE FISHBOWL",
-      "body": [
-        "On the Fishbowl TV, with the sound off, CNN is still running Kabul: Hamid Karzai in his karakul hat and his striped cloak, taking the oath again in a hall full of men applauding without any noise. The crawl underneath is about the UC Regents and a fee hike, and students outside a meeting at UCLA. Jack is on the couch under it with Hale’s prompt folded into the reader on his knee — WHETHER A PROMISE BINDS WHEN ITS REASON IS GONE; COSTIGAN: NO; eight pages, Monday at nine — and a notebook open beside it with the date at the top and nothing under the date. Every time the east stairwell door bangs he looks up. It’s never anybody: a kid with a bike helmet, two girls carrying a laundry basket by its handles, a boy in a Lakers jersey eating cereal out of a mug.",
-        "Laney comes through from the mailroom with a Diet Coke and stops behind the couch. She doesn’t move on. Eventually he has to look up.",
-        "“You look like a girl who lost Miss Teen Dallas to a baton twirler.”",
-        "“It’s Becca.”",
-        "“Sure it is.”",
-        "She puts the Diet Coke in his hand. It’s cold and open, one sip gone, her lip gloss on the rim, and she lets go of it and keeps walking.",
-        "At the door she stops. “I’ve been instructed to be nice to Becca. Effective today. I don’t know where to *put* it.”",
-        {
-          "if": "e15_laney==\"ask\"",
-          "text": "Then, halfway out, without turning around: “I still have the sash.”"
-        },
-        "Through the Fishbowl glass Theo is out on the Anacapa lawn in his sunglasses with his iPhone to his ear, looking in at Jack. When Jack looks back, Theo turns around and gives his attention to the sky, still talking.",
-        {
-          "if": "jack_brick_desk",
-          "text": "Priya crosses the lobby with her clipboard and changes course for the couch. “You’re off Friday. Your two this week are Sunday and Monday now. Midnight to six.” “I had Friday.” “You did. Delaney came to my door at seven this morning and informed me that you have a vampire film at midnight, and that Friday you are ‘spoken for.’ She wouldn’t say by what.” A look over the clipboard. “I filled out the swap. Delaney doesn’t do forms.”"
-        }
-      ],
-      "next": "s03"
+    {
+     "if": "e15_conf==\"go\"",
+     "text": "Then he says her name into the dark, once, low enough not to wake anybody. *Becca.* Every day till Advent; this is the first full one."
     },
-    "s03": {
-      "slug": "THURSDAY · 7:20 PM · THE ANCHOR",
-      "body": [
-        "The Hobart is mid-cycle with its door down, a long wet roar, and over it Rudy’s transistor has KNX out of Los Angeles — the Regents again, students chanting about thirty-two percent outside a building at UCLA — and under all of it the fryer and the ticket wheel. Jack has been at the sink twenty minutes. He has done a rack of coffee cups, and then the same rack again, because he wasn’t looking.",
-        "Gloria comes up behind him and unties his apron herself. He feels the knot go at the small of his back; then she lifts the strap off over his head, the way you’d take a bib off a kid, and folds it over her arm.",
-        "“Hon. Whatever it is, I don’t want it near my pie case.” She looks at him. “Is it the apple?”",
-        "“Yeah.”",
-        "“Mm,” says Gloria. She hangs the apron on its nail by the walk-in.",
-        "Rudy doesn’t turn around from the flat-top. “Go home, mijo.”",
-        {
-          "if": "jack_ran_errand",
-          "text": "Through the screen door at the back, across the planks, Rafi’s bike is chained to the rail outside the Wharf Rat."
-        },
-        "It’s six hours at eight dollars, plus a Thursday’s share of the tips, and Thursdays are never much. He gets his jacket off the hook. He lets it go.",
-        "On his way out past the register Gloria hands him a to-go box without a word and goes back to a fisherman’s refill. He doesn’t open it till he’s out on the planks under the wharf lights, with the sea lions arguing somewhere below the pilings. It’s a slice of the pecan."
-      ],
-      "next": "s04"
+    "He gets up and wakes the Dell, for the light more than anything. Facebook comes up where he left it, on his own profile, and under his name it still says *In a Relationship with Becca Lindell.* Under it on his wall, from two weeks ago, Joey Abruzzo has written FINALLY BRO, in capitals, with four exclamation points. He looks at it. He leaves it.",
+    {
+     "if": "e15_two_am==\"reckless\"",
+     "text": "The Reds are in the Carhartt on the chair. Three left. He leaves them there."
     },
-    "s04": {
-      "slug": "THURSDAY · 8:50 PM · DELGADO HALL, ROOM 412 → THE EAST STAIRS",
-      "body": [
-        "Theo is dressing for midnight in front of the closet mirror, on Laney’s orders: a TEAM JACOB T-shirt, the iron-on kind from a mall kiosk, and over it a cashmere sweater the color of wet sand, tugged down carefully until not one letter shows.",
-        "“For deniability,” he says.",
-        "In the mirror he watches Jack sit on the end of his own bed with his boots still on. He says nothing about it. He says nothing about anything. On the desk the RAZR has nothing new on it; Jack checks anyway, and puts it back, and Theo watches him do that too and says nothing about that either. He does his hair, though it didn’t need it, turns to check the sweater from the side, turns back. This goes on for some time.",
-        "“Lobby, eleven-forty,” Theo says at last. “Delaney has a clipboard. Nobody has ever seen it.”",
-        "It’s ten to nine. Jack has three hours and nothing to put in them. He drags his laundry bag out from under the bed, where it has been since Sunday, and takes it down the east stairs — four, three, two, the lobby landing — and somewhere between the lobby and the basement the stairwell carries something up to him off the cinderblock.",
-        "A piano. Badly. On purpose."
-      ],
-      "next": "s05"
+    "Two floors down, a clean mug is sitting on the linoleum outside 217 with its handle turned out, unless somebody has already taken it in.",
+    "He doesn’t go back to bed. He sits at the desk with the laptop open and the rest of the room around him in the dark — the jar, the spoons, Theo’s Submariner on the nightstand catching a little of the screen — and waits for it to be a reasonable hour for anything."
+   ],
+   "next": "s01b"
+  },
+  "s01b": {
+   "slug": "THURSDAY · 12:10 PM · ST. BRENDAN’S",
+   "set": {
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "St. Brendan’s takes the noon light in through its blue glass and turns it to deep water, and the fifteen or so people at the 12:10 sit in it at the bottom of the hull: Mrs. Fitch in her cardigan, the old man with the cane, two nursing students in scrubs, Joey Abruzzo already kneeling.",
+    "The fourth pew on the right has a canvas bag on the end of it, at the aisle. When Jack gets there Lena lifts the bag into her lap and goes back to her worship aid, and he sits down where it was.",
+    "Across the aisle, in the fourth pew on the left, where she always is, Becca sits between Joey and Kenzie Rourke with her rosary in her hands. She doesn’t look over. Not at the entrance hymn, not at the readings.",
+    "The first reading is Maccabees again; it has been Maccabees all week, old men refusing things. Then Fr. Osei reads the Gospel, Luke, Jesus coming over the hill and seeing the city and weeping over it. *If this day you only knew what makes for peace — but now it is hidden from your eyes.*",
+    "“He is not angry here. Notice,” Osei says, from the step, without notes. “He comes over the hill and sees the city and he cries, the way a doctor cries in his car afterward, never in front of the family. They did not know the hour they were visited. Most of us find out later.” He looks out at the fifteen of them a moment. “Later is also an hour. God keeps those too.” Ninety seconds, and he sits down.",
+    {
+     "if": "e15_conf==\"go\"",
+     "text": "At the Our Father he says Becca’s name inside it, which is not where it goes."
     },
-    "s10": {
-      "slug": "FRIDAY · 12:01 AM · THE RIALTO, MISSION STREET",
-      "body": [
-        "At a minute past midnight the biggest of the four houses the Rialto got cut into in 1987 — the one that kept the old proscenium — is full to the back wall and sounds like a pep rally. The line was around the block at a quarter to twelve: capes, mostly, and Team shirts, a girl who had come as Bella’s red truck in a painted refrigerator box on shoulder straps, and a boy with glitter all over his face who told anyone who looked at him that it was for accuracy.",
-        "Laney has run the floor through all of it like a pageant director with a show to bring in on time. Head count in the lobby at eleven-forty; head count in the Odyssey; head count on the sidewalk under the marquee, where NEW MOON 12:01 · SOLD OUT is spelled in the old black letters with one of the O’s borrowed from a 6; tickets dealt out of her clutch one at a time. Jack never sees the clipboard. He sees what it does. Theo, Jacob under cashmere. Margot, in black, who informed the Odyssey on the way over that she was here to observe a fertility rite. Doug, who has never seen a Twilight anything and said *dude* at the line the way other people say *amen*. Kevin, who drove — “I’m the designated adult,” he told the girl at the ticket window, who hadn’t asked. And Jack.",
-        "Margot, taking her seat with her notebook on her knee, surveys the house — three hundred girls and the boys who drove them — and delivers her findings to nobody in particular. “Every culture has one. A ritual in which the young are told that wanting is dangerous, and then sold a poster of it.”",
-        {
-          "if": "e15_kevin==\"follow\"",
-          "text": "Kevin takes the seat beside Jack without a word."
-        },
-        "In the lobby Julian had found them — the cardigan, his car keys, Lena beside him — and Laney had said, sweet as a hostess at a garden party, “Lovely set list, Julian. *Very* well organized.” Julian thanked her, because he’s Julian. Jack had seen her earlier at the concession stand, standing very close to Julian’s elbow while he paid for Lena’s Junior Mints. There is a sheet of notebook paper folded in her clutch now, sticking up out of the clasp.",
-        "She slides into the seat beside Jack and settles the clutch in her lap. “Now that you’re back on the *market*, sugar —”",
-        "“No.”",
-        "In the row ahead, a little to the left, are Lena and Julian.",
-        "On Laney’s far side Theo says, not quite under his breath, “Edward, with a capo.”",
-        "Kevin leans forward to find him down the row. “Respectfully. Leave it alone.”"
-      ],
-      "choices": [
-        {
-          "text": "Say nothing.",
-          "tag": "Restraint",
-          "set": {
-            "e16_capo": "restraint",
-            "soul.restraint": "+1"
-          },
-          "response": [
-            "Jack watches the curtain. Theo glances over at him and takes the silence for permission, and then is quiet anyway, because the lights go down and the trailers start, and somebody three rows back shushes the entire theater on principle."
-          ],
-          "goto": "s10a"
-        },
-        {
-          "text": "“He’s Jacob, if anything. He’s *warm*.”",
-          "tag": "Wit",
-          "set": {
-            "e16_capo": "wit",
-            "trait.wit": "+1",
-            "rel.theo.warmth": "+1"
-          },
-          "response": [
-            "“He’s Jacob, if anything,” Jack says. “He’s *warm*.”",
-            "Laney laughs — one bark — and is furious about it, and sits up straight to check the back of Lena’s head, which hasn’t turned. Theo looks at Jack with something close to love. The lights go down."
-          ],
-          "goto": "s10a"
-        },
-        {
-          "text": "“Theo.”",
-          "tag": "Control",
-          "set": {
-            "e16_capo": "control",
-            "trait.control": "+1",
-            "rel.kevin.trust": "+1"
-          },
-          "response": [
-            "“Theo,” Jack says. Just that.",
-            "Theo shuts up for exactly one trailer. Down the row Kevin settles back in his seat with his arms folded, and the lights go the rest of the way down."
-          ],
-          "goto": "s10a"
-        }
-      ]
+    "At the sign of peace Becca turns around — not to Joey, not to Kenzie; across the aisle — and holds out her hand to him.",
+    "“Peace be with you, Jack.”",
+    "He leans out over the aisle and takes it. “And also with you.”",
+    {
+     "if": "e15_her==\"yes\"",
+     "text": "Her hand is warm. She lets go first. Then her eyes go past his shoulder to the girl in his pew, and he watches her make up her mind. She leans a little farther out over the aisle and offers Lena her hand. “Peace be with you.” Lena takes it across him. “And also with you.” Then Becca turns back to Kenzie, and to Joey, who gives her the peace at the volume he does everything.",
+     "else": "Her hand is warm. She lets go first, and turns back to Kenzie, and then to Joey, who gives her the peace at the volume he does everything."
     },
-    "s10a": {
-      "slug": "FRIDAY · 12:40 AM · THE RIALTO, MISSION STREET",
-      "music": "Lykke Li — “Possibility”",
-      "set": {
-        "resolve.jack": "-1"
-      },
-      "body": [
-        "Edward leaves in the first act, in the woods, in the rain, and the Rialto takes it personally. A girl somewhere in the middle says *no* like she means it. Then the picture goes quiet, and there is Bella in a chair at her bedroom window, and the camera goes slowly around and around her while the months go by outside the glass, each one with its name on the screen. OCTOBER. NOVEMBER. The trees go bare. The glass goes white. She doesn’t get up.",
-        "Somewhere around December, in the row ahead, Lena puts her head on Julian’s shoulder.",
-        "It looks like a good shoulder for it. She’s still there through the snow; he can see the top of her head against the cardigan, and the light off the screen moving in her hair. Jack watches the screen. He watches it very carefully, the girl in the chair, for the rest of the winter.",
-        "Laney grips Jack’s forearm through the motorcycle sequence and will deny it afterward. When Jacob takes his shirt off to wipe the blood off Bella’s forehead the theater screams like the roof is coming in, and Margot, in the dark, writes something down. Later the wolves come out of the trees, and Lena sneezes once, into Julian’s cardigan, and four seats down Doug says *bless you* at a normal speaking volume.",
-        "At twenty past two the lights come up on a lobby full of capes going home, everybody blinking. Somebody’s fangs are on the carpet by the popcorn machine.",
-        {
-          "if": "e15_coffee==\"take\"",
-          "text": "By the poster for *2012*, Jack catches Julian with his keys out. “I owe you a coffee.” Julian smiles at him like that’s a kind thing to have said. “You don’t.”"
-        },
-        "Kevin jingles the Odyssey’s keys at him from the door. “There’s room, Jack. Doug folds.”",
-        "“I’m going to walk.”",
-        "Kevin looks at him for a second and doesn’t argue. So Jack walks home down Mission Street at half past two in the morning, three miles, with his hands in the Carhartt — past Bastille with its chairs up on the tables and the chalkboard turned to the wall, past the Walgreens, still lit — and every block or so a vampire is unlocking a Civic."
-      ],
-      "next": "s11"
+    {
+     "if": "e15_her==\"yes\"",
+     "text": "When Jack turns back to his own pew Lena’s hand is still out — the hand Becca just let go of — and it’s waiting for him. He takes it, and she gives his a small shake, and after that her eyes are on the hymnal in the rack in front of her, all the way through the Lamb of God, though there is nothing in it they’re singing.",
+     "else": "When Jack turns back to his own pew Lena’s hand is out, waiting for him; she hasn’t given the peace to anybody else yet. He takes it, and she gives his a small shake, and after that her eyes are on the hymnal in the rack in front of her, all the way through the Lamb of God, though there is nothing in it they’re singing."
     },
-    "s13": {
-      "slug": "FRIDAY · 9:40 PM · DELGADO HALL, ROOM 412",
-      "set": {
-        "harbor_cancelled": true
-      },
-      "body": [
-        "Laney is lying across Theo’s bed with her shoes kicked off on the rug and her ankles crossed on his pillow, and Theo is at the window with his iPhone to his ear, using his telephone manners.",
-        "“Harbor Inn? Vance. Cancel the Costigan. Saturday, eight. — No. Nothing’s wrong with the piano. The piano is beyond reproach.” He listens. “You’re very kind. I’m sure she will.”",
-        "Laney addresses the ceiling. “We are being *punished*.”",
-        "Jack is in the doorway with his towel over his shoulder and his shower caddy in his hand, back from the end of the hall. “Punished for what?”",
-        "“*New Moon*, fireman,” Laney says, without looking. “Two hours of a girl in a chair.”",
-        "Theo hangs up. “My mother can’t come up.” He sets the phone face down on the desk with the air of a man retiring a story with honors.",
-        "Then Theo looks at Laney, and Laney turns her head on the pillow and looks back at Theo, and something gets decided in the space over the rug that Jack isn’t part of. Theo opens his closet.",
-        "“Pruitt is raiding,” he announces, going through hangers. “Tran is studying. Lindqvist is reading something in German to spite us. Delaney has a prior engagement with a box of Kleenex. Which leaves you, and me, and my car. Get dressed.”",
-        "He holds out a shirt on a hanger: charcoal, soft as a dish towel, with some Japanese label stitched inside the collar. “It’s mine. By the end of the night it’ll be yours. They always are.”",
-        "“Theo, I’m not —”",
-        "“You’ve been sad about Becca for two days,” Theo says, with a straight face, “and very convincing. I’d like a night off from it.”",
-        "“Where are we going?”",
-        "“A party. In the hills. A house with a pool nobody swims in and a kitchen the size of the Fishbowl.” Theo hangs the shirt on Jack’s closet door himself and steps back from it. “And let me be very clear, because I know how your mind works. This is not a setup. I am not setting you up. I’m *forbidding* it. Tonight you stand in a kitchen and let rich people bore you, and you remember you’re nineteen.”",
-        "“Eighteen.”",
-        "“Details.” Theo looks over at Jack’s boots by the bed. “Those can come. Those have character. Nothing else you own is invited.”",
-        "Laney swings her feet down and starts working them back into her flats. “And if you so much as learn a girl’s name tonight,” she says, “I will have you killed. I’ve thought about the method. It’s very clean.”",
-        "“Why?”",
-        "Theo answers for her, getting his camel coat off its hanger. “She feels you’re fragile.”",
-        "Jack looks from one of them to the other. Theo is buttoning the coat. Laney is studying a thumbnail.",
-        "Laney stands up and smooths her skirt and gives Jack the full pageant smile. It ought to worry him. On her way out she takes the box of Kleenex off Theo’s desk — the good kind, with the lotion — and tucks it under her arm for the sick girl downstairs."
-      ],
-      "choices": [
-        {
-          "text": "“Does the shirt come with a personality?”",
-          "tag": "Wit",
-          "set": {
-            "e16_go": "wit",
-            "trait.wit": "+1",
-            "rel.theo.warmth": "+1"
-          },
-          "response": [
-            "“Does the shirt come with a personality?”",
-            "“It comes with *mine*,” Theo says. “Return both by Monday.” He tosses Jack a stick of his deodorant, unrequested, and checks his own hair in the mirror one last time."
-          ],
-          "goto": "s14"
-        },
-        {
-          "text": "“I’m bad company tonight, Theo.”",
-          "tag": "Sincerity",
-          "set": {
-            "e16_go": "sincerity",
-            "trait.sincerity": "+1",
-            "rel.theo.warmth": "+1",
-            "rel.theo.trust": "+1"
-          },
-          "response": [
-            "“I’m bad company tonight, Theo.”",
-            "Theo doesn’t make a joke out of it. He takes the shirt off the closet door and puts the hanger in Jack’s hand. “I know,” he says. “That’s why I’m bringing you to people who won’t notice.”"
-          ],
-          "goto": "s14"
-        },
-        {
-          "text": "“Give me the shirt.”",
-          "tag": "Reckless",
-          "set": {
-            "e16_go": "reckless",
-            "trait.reckless": "+1",
-            "rel.theo.warmth": "+1"
-          },
-          "response": [
-            "“Give me the shirt.”",
-            "Laney, in the doorway with the Kleenex, gives him one slow clap, like the back row at a pageant. Theo hands it over with a small bow."
-          ],
-          "goto": "s14"
-        }
-      ]
+    "After the dismissal she checks her watch and is gone up the side aisle with the bag on her shoulder, to a one o’clock. Becca goes out the other door, toward the Marine Lab and the touch tank, the way she does on Thursdays. The two of them don’t pass each other. Jack keeps his seat in the blue until Mrs. Fitch starts folding Sunday’s bulletins in the pew behind him, three days early."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey. She asked how I’m getting home. Greyhound. She frowned. Her mother sent a box: socks, cookies, two jars of huckleberry — JACK, and FOR THE CATHOLIC ROOMMATE. She offered me Daisy’s money. Six hundred and twelve dollars. It’s there, she says. Daisy doesn’t mind. Saturday, Ohio State in overtime: she gave me a photograph of the elephant seals in a frame she painted, every seal labeled with what it weighs. She’ll call during her dad’s grace on Thanksgiving so I can hear it. She wants to watch Michigan here, with me. ‘Someday I want to see your house. Is that okay to say?’ Ma wrote her. Three days after Christmas. Pittsburgh’s cheaper than Cleveland. She looked. Wednesday, in Eli’s truck, I told her. She said she did everything right, and she did. ‘It just isn’t the thing, is it.’ She asked me to leave it up on Facebook till she’s told her mom at the table. Thursday at two she texted. Still praying for me — not a girlfriend thing, she says. At the twelve-ten she turned around across the aisle at the sign of peace and held out her hand.",
+     "if": "e15_her!=\"yes\""
+    },
+    {
+     "kind": "person",
+     "id": "becca",
+     "title": "Becca Lindell",
+     "text": "Coeur d’Alene. Seven siblings; wants seven or nine kids, odd numbers, for the tiebreaker. Can butcher a deer — elk too. Has pulled a calf, and it shows. Ran the beach cleanup like a cattle drive and put me on her team. Asked about the scar in the water. Told her mother the cleanup was a date, then asked me if it was. Wrote FRIDAY? on her clipboard, and meant it. Drives her brother Eli’s red Ranger; St. Isidore on the visor. Second date: Friday-night football. Knows downs. Prayed a Glory Be on fourth and one. Learned the First Way on the bleachers and said it back perfectly. Kissed my cheek so there’s no confusion. Third date was mine. I asked. I paid. The elephant seals at Piedras Blancas at sunset, in Kevin’s Odyssey. She knew what every one of them weighed. Nobody’s ever planned a thing for her, she says. She’s been praying for two in the morning. Named a hermit crab Thomas, after the First Way, and asked Fr. Osei whose blessing it was. Works the Marine Lab touch tank Thursday afternoons and Friday at six in the morning — that’s how she signed Thomas out. He’s home; she knows him by the chip in his shell. Mailed Rosie a birthday card with Thomas on it and six true facts on the back, to the address I gave her for her Christmas cards. She does them in October. Has a page on her clipboard for Wes. She’s been praying for him and Lena since September. Her eyes are gray. Brought a survival bag to the library for my midterm, with a clementine for Lena. Prays at two, like always. Took me to *Where the Wild Things Are* at the Rialto; her favorite line is the last one. My mother wrote her a thank-you note. Her list for Halloween says WE SHOULD MATCH!! It’s due Halloween. She says I look at her like homework. She says she’ll wait. Stuck on the touch tank all weekend while we were at Big Sur: the weekend volunteer has the swine flu. Asked me for the monks’ fruitcake for her Grandma Agnes — the only honest fruitcake in America. I handed in my homework six days early. St. Isidore and St. Maria: her first. Early, she said. Nobody’s early but her. Halloween: she sewed my costume out of a Rathdrum Feed & Seed sack. She was St. Maria de la Cabeza in Mrs. Fitch’s lace, with a water jug. Best Saint, by acclamation — a gold halo. Never won anything that wasn’t a heifer. Home at 11:40 for the six o’clock tank; the volunteer still has the flu. ‘Farmer.’ Theo’s birthday: huckleberry jam from her mother, for Theo — the Idaho gift. Next to his mother all night. ‘He’s *mine*. Since the beach cleanup.’ Toasted St. Martin de Porres: a dog and a cat and a mouse, one bowl. The Portolá steps, November 4th: her mom’s been calling me her boyfriend since September. She asked if she could tell her she’s right. I said yes. Her mom first, then Facebook. She flies home to Spokane the Wednesday before Thanksgiving. Her mother has named the turkey. She asked how I’m getting home. Greyhound. She frowned. Her mother sent a box: socks, cookies, two jars of huckleberry — JACK, and FOR THE CATHOLIC ROOMMATE. She offered me Daisy’s money. Six hundred and twelve dollars. It’s there, she says. Daisy doesn’t mind. Saturday, Ohio State in overtime: she gave me a photograph of the elephant seals in a frame she painted, every seal labeled with what it weighs. She’ll call during her dad’s grace on Thanksgiving so I can hear it. She wants to watch Michigan here, with me. ‘Someday I want to see your house. Is that okay to say?’ Ma wrote her. Three days after Christmas. Pittsburgh’s cheaper than Cleveland. She looked. Wednesday, in Eli’s truck, I told her. She said she did everything right, and she did. ‘It just isn’t the thing, is it.’ She asked me to leave it up on Facebook till she’s told her mom at the table. Thursday at two she texted. Still praying for me — not a girlfriend thing, she says. At the twelve-ten she turned around across the aisle at the sign of peace and held out her hand. Then she held it out to Lena.",
+     "if": "e15_her==\"yes\""
     }
+   ],
+   "next": "s02"
+  },
+  "s02": {
+   "slug": "THURSDAY · 1:15 PM · DELGADO HALL, THE FISHBOWL",
+   "body": [
+    "On the Fishbowl TV, with the sound off, CNN is still running Kabul: Hamid Karzai in his karakul hat and his striped cloak, taking the oath again in a hall full of men applauding without any noise. The crawl underneath is about the UC Regents and a fee hike, and students outside a meeting at UCLA. Jack is on the couch under it with Hale’s prompt folded into the reader on his knee — WHETHER A PROMISE BINDS WHEN ITS REASON IS GONE; COSTIGAN: NO; eight pages, Monday at nine — and a notebook open beside it with the date at the top and nothing under the date. Every time the east stairwell door bangs he looks up. It’s never anybody: a kid with a bike helmet, two girls carrying a laundry basket by its handles, a boy in a Lakers jersey eating cereal out of a mug.",
+    "Laney comes through from the mailroom with a Diet Coke and stops behind the couch. She doesn’t move on. Eventually he has to look up.",
+    "“You look like a girl who lost Miss Teen Dallas to a baton twirler.”",
+    "“It’s Becca.”",
+    "“Sure it is.”",
+    "She puts the Diet Coke in his hand. It’s cold and open, one sip gone, her lip gloss on the rim, and she lets go of it and keeps walking.",
+    "At the door she stops. “I’ve been instructed to be nice to Becca. Effective today. I don’t know where to *put* it.”",
+    "Through the Fishbowl glass Theo is out on the Anacapa lawn in his sunglasses with his iPhone to his ear, looking in at Jack. When Jack looks back, Theo turns around and gives his attention to the sky, still talking."
+   ],
+   "next": "s03"
+  },
+  "s03": {
+   "slug": "THURSDAY · 7:20 PM · THE ANCHOR",
+   "body": [
+    "The Hobart is mid-cycle with its door down, a long wet roar, and over it Rudy’s transistor has KNX out of Los Angeles — the Regents again, students chanting about thirty-two percent outside a building at UCLA — and under all of it the fryer and the ticket wheel. Jack has been at the sink twenty minutes. He has done a rack of coffee cups, and then the same rack again, because he wasn’t looking.",
+    "Gloria comes up behind him and unties his apron herself. He feels the knot go at the small of his back; then she lifts the strap off over his head, the way you’d take a bib off a kid, and folds it over her arm.",
+    "“Hon. Whatever it is, I don’t want it near my pie case.” She looks at him. “Is it the apple?”",
+    "“Yeah.”",
+    "“Mm,” says Gloria. She hangs the apron on its nail by the walk-in.",
+    "Rudy doesn’t turn around from the flat-top. “Go home, mijo.”",
+    "It’s six hours at eight dollars, plus a Thursday’s share of the tips, and Thursdays are never much. He gets his jacket off the hook. He lets it go.",
+    "On his way out past the register Gloria hands him a to-go box without a word and goes back to a fisherman’s refill. He doesn’t open it till he’s out on the planks under the wharf lights, with the sea lions arguing somewhere below the pilings. It’s a slice of the pecan."
+   ],
+   "next": "s04"
+  },
+  "s04": {
+   "slug": "THURSDAY · 8:50 PM · DELGADO HALL, ROOM 412 → THE EAST STAIRS",
+   "body": [
+    "Theo is dressing for midnight in front of the closet mirror, on Laney’s orders: a TEAM JACOB T-shirt, the iron-on kind from a mall kiosk, and over it a cashmere sweater the color of wet sand, tugged down carefully until not one letter shows.",
+    "“For deniability,” he says.",
+    "In the mirror he watches Jack sit on the end of his own bed with his boots still on. He says nothing about it. He says nothing about anything. On the desk the RAZR has nothing new on it; Jack checks anyway, and puts it back, and Theo watches him do that too and says nothing about that either. He does his hair, though it didn’t need it, turns to check the sweater from the side, turns back. This goes on for some time.",
+    "“Lobby, eleven-forty,” Theo says at last. “Delaney has a clipboard. Nobody has ever seen it.”",
+    "It’s ten to nine. Jack has three hours and nothing to put in them. He drags his laundry bag out from under the bed, where it has been since Sunday, and takes it down the east stairs — four, three, two, the lobby landing — and somewhere between the lobby and the basement the stairwell carries something up to him off the cinderblock.",
+    "A piano. Badly. On purpose."
+   ],
+   "next": "s05"
+  },
+  "s10": {
+   "slug": "FRIDAY · 12:01 AM · THE RIALTO, MISSION STREET",
+   "body": [
+    "At a minute past midnight the biggest of the four houses the Rialto got cut into in 1987 — the one that kept the old proscenium — is full to the back wall and sounds like a pep rally. The line was around the block at a quarter to twelve: capes, mostly, and Team shirts, a girl who had come as Bella’s red truck in a painted refrigerator box on shoulder straps, and a boy with glitter all over his face who told anyone who looked at him that it was for accuracy.",
+    "Laney has run the floor through all of it like a pageant director with a show to bring in on time. Head count in the lobby at eleven-forty; head count in the Odyssey; head count on the sidewalk under the marquee, where NEW MOON 12:01 · SOLD OUT is spelled in the old black letters with one of the O’s borrowed from a 6; tickets dealt out of her clutch one at a time. Jack never sees the clipboard. He sees what it does. Theo, Jacob under cashmere. Margot, in black, who informed the Odyssey on the way over that she was here to observe a fertility rite. Doug, who has never seen a Twilight anything and said *dude* at the line the way other people say *amen*. Kevin, who drove — “I’m the designated adult,” he told the girl at the ticket window, who hadn’t asked. And Jack.",
+    "Margot, taking her seat with her notebook on her knee, surveys the house — three hundred girls and the boys who drove them — and delivers her findings to nobody in particular. “Every culture has one. A ritual in which the young are told that wanting is dangerous, and then sold a poster of it.”",
+    {
+     "if": "e15_kevin==\"follow\"",
+     "text": "Kevin takes the seat beside Jack without a word."
+    },
+    "In the lobby Julian had found them — the cardigan, his car keys, Lena beside him — and Laney had said, sweet as a hostess at a garden party, “Lovely set list, Julian. *Very* well organized.” Julian thanked her, because he’s Julian. Jack had seen her earlier at the concession stand, standing very close to Julian’s elbow while he paid for Lena’s Junior Mints. There is a sheet of notebook paper folded in her clutch now, sticking up out of the clasp.",
+    "She slides into the seat beside Jack and settles the clutch in her lap. “Now that you’re back on the *market*, sugar —”",
+    "“No.”",
+    "In the row ahead, a little to the left, are Lena and Julian.",
+    "On Laney’s far side Theo says, not quite under his breath, “Edward, with a capo.”",
+    "Kevin leans forward to find him down the row. “Respectfully. Leave it alone.”"
+   ],
+   "choices": [
+    {
+     "text": "Say nothing.",
+     "tag": "Restraint",
+     "set": {
+      "e16_capo": "restraint",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "Jack watches the curtain. Theo glances over at him and takes the silence for permission, and then is quiet anyway, because the lights go down and the trailers start, and somebody three rows back shushes the entire theater on principle."
+     ],
+     "goto": "s10a"
+    },
+    {
+     "text": "“He’s Jacob, if anything. He’s *warm*.”",
+     "tag": "Wit",
+     "set": {
+      "e16_capo": "wit",
+      "trait.wit": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "response": [
+      "“He’s Jacob, if anything,” Jack says. “He’s *warm*.”",
+      "Laney laughs — one bark — and is furious about it, and sits up straight to check the back of Lena’s head, which hasn’t turned. Theo looks at Jack with something close to love. The lights go down."
+     ],
+     "goto": "s10a"
+    },
+    {
+     "text": "“Theo.”",
+     "tag": "Control",
+     "set": {
+      "e16_capo": "control",
+      "trait.control": "+1",
+      "rel.kevin.trust": "+1"
+     },
+     "response": [
+      "“Theo,” Jack says. Just that.",
+      "Theo shuts up for exactly one trailer. Down the row Kevin settles back in his seat with his arms folded, and the lights go the rest of the way down."
+     ],
+     "goto": "s10a"
+    }
+   ]
+  },
+  "s10a": {
+   "slug": "FRIDAY · 12:40 AM · THE RIALTO, MISSION STREET",
+   "music": "Lykke Li — “Possibility”",
+   "set": {
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "Edward leaves in the first act, in the woods, in the rain, and the Rialto takes it personally. A girl somewhere in the middle says *no* like she means it. Then the picture goes quiet, and there is Bella in a chair at her bedroom window, and the camera goes slowly around and around her while the months go by outside the glass, each one with its name on the screen. OCTOBER. NOVEMBER. The trees go bare. The glass goes white. She doesn’t get up.",
+    "Somewhere around December, in the row ahead, Lena puts her head on Julian’s shoulder.",
+    "It looks like a good shoulder for it. She’s still there through the snow; he can see the top of her head against the cardigan, and the light off the screen moving in her hair. Jack watches the screen. He watches it very carefully, the girl in the chair, for the rest of the winter.",
+    "Laney grips Jack’s forearm through the motorcycle sequence and will deny it afterward. When Jacob takes his shirt off to wipe the blood off Bella’s forehead the theater screams like the roof is coming in, and Margot, in the dark, writes something down. Later the wolves come out of the trees, and Lena sneezes once, into Julian’s cardigan, and four seats down Doug says *bless you* at a normal speaking volume.",
+    "At twenty past two the lights come up on a lobby full of capes going home, everybody blinking. Somebody’s fangs are on the carpet by the popcorn machine.",
+    {
+     "if": "e15_coffee==\"chorus\"",
+     "text": "By the poster for *2012*, Julian has his keys out and Lena’s coat over his arm, and he stops beside Jack on his way to find her. “I put the second chorus back,” he says. “Tonight.”"
+    },
+    {
+     "if": "e15_coffee==\"chorus\"",
+     "text": "“How’d it go?”"
+    },
+    {
+     "if": "e15_coffee==\"chorus\"",
+     "text": "“Long,” Julian says, and smiles, and goes."
+    },
+    "Kevin jingles the Odyssey’s keys at him from the door. “There’s room, Jack. Doug folds.”",
+    "“I’m going to walk.”",
+    "Kevin looks at him for a second and doesn’t argue. So Jack walks home down Mission Street at half past two in the morning, three miles, with his hands in the Carhartt — past Bastille with its chairs up on the tables and the chalkboard turned to the wall, past the Walgreens, still lit — and every block or so a vampire is unlocking a Civic."
+   ],
+   "next": "s11"
+  },
+  "s13": {
+   "slug": "FRIDAY · 9:40 PM · DELGADO HALL, ROOM 412",
+   "set": {
+    "harbor_cancelled": true
+   },
+   "body": [
+    "Laney is lying across Theo’s bed with her shoes kicked off on the rug and her ankles crossed on his pillow, and Theo is at the window with his iPhone to his ear, using his telephone manners.",
+    "“Harbor Inn? Vance. Cancel the Costigan. Saturday, eight. — No. Nothing’s wrong with the piano. The piano is beyond reproach.” He listens. “You’re very kind. I’m sure she will.”",
+    "Laney addresses the ceiling. “We are being *punished*.”",
+    "Jack is in the doorway with his towel over his shoulder and his shower caddy in his hand, back from the end of the hall. “Punished for what?”",
+    "“*New Moon*, fireman,” Laney says, without looking. “Two hours of a girl in a chair.”",
+    "Theo hangs up. “My mother can’t come up.” He sets the phone face down on the desk with the air of a man retiring a story with honors.",
+    "Then Theo looks at Laney, and Laney turns her head on the pillow and looks back at Theo, and something gets decided in the space over the rug that Jack isn’t part of. Theo opens his closet.",
+    "“Pruitt is raiding,” he announces, going through hangers. “Tran is studying. Lindqvist is reading something in German to spite us. Delaney has a prior engagement with a box of Kleenex. Which leaves you, and me, and my car. Get dressed.”",
+    "He holds out a shirt on a hanger: charcoal, soft as a dish towel, with some Japanese label stitched inside the collar. “It’s mine. By the end of the night it’ll be yours. They always are.”",
+    "“Theo, I’m not —”",
+    "“You’ve been sad about Becca for two days,” Theo says, with a straight face, “and very convincing. I’d like a night off from it.”",
+    "“Where are we going?”",
+    "“A party. In Montecito. Somebody’s parents’ house, and the somebody’s parents are in London. A pool nobody swims in, a view of the entire Channel, and a kitchen the size of the Fishbowl.” Theo hangs the shirt on Jack’s closet door himself and steps back from it. “And let me be very clear, because I know how your mind works. This is not a setup. I am not setting you up. I’m *forbidding* it. Tonight you stand in a kitchen and let rich people bore you, and you remember you’re nineteen.”",
+    "“Eighteen.”",
+    "“Details.” Theo looks over at Jack’s boots by the bed. “Those can come. Those have character. Nothing else you own is invited.”",
+    "Laney swings her feet down and starts working them back into her flats. “And if you so much as learn a girl’s name tonight,” she says, “I will have you killed. I’ve thought about the method. It’s very clean.”",
+    "“Why?”",
+    "Theo answers for her, getting his camel coat off its hanger. “She feels you’re fragile.”",
+    "Jack looks from one of them to the other. Theo is buttoning the coat. Laney is studying a thumbnail.",
+    "Laney stands up and smooths her skirt and gives Jack the full pageant smile. It ought to worry him. On her way out she takes the box of Kleenex off Theo’s desk — the good kind, with the lotion — and tucks it under her arm for the sick girl downstairs."
+   ],
+   "choices": [
+    {
+     "text": "“Does the shirt come with a personality?”",
+     "tag": "Wit",
+     "set": {
+      "e16_go": "wit",
+      "trait.wit": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "response": [
+      "“Does the shirt come with a personality?”",
+      "“It comes with *mine*,” Theo says. “Return both by Monday.” He tosses Jack a stick of his deodorant, unrequested, and checks his own hair in the mirror one last time."
+     ],
+     "goto": "s14"
+    },
+    {
+     "text": "“I’m bad company tonight, Theo.”",
+     "tag": "Sincerity",
+     "set": {
+      "e16_go": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.theo.warmth": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "response": [
+      "“I’m bad company tonight, Theo.”",
+      "Theo doesn’t make a joke out of it. He takes the shirt off the closet door and puts the hanger in Jack’s hand. “I know,” he says. “That’s why I’m bringing you to people who won’t notice.”"
+     ],
+     "goto": "s14"
+    },
+    {
+     "text": "“Give me the shirt.”",
+     "tag": "Reckless",
+     "set": {
+      "e16_go": "reckless",
+      "trait.reckless": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "response": [
+      "“Give me the shirt.”",
+      "Laney, in the doorway with the Kleenex, gives him one slow clap, like the back row at a pageant. Theo hands it over with a small bow."
+     ],
+     "goto": "s14"
+    }
+   ]
   }
+ }
 }

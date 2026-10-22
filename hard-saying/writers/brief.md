@@ -976,3 +976,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
      which **secretly results in getting Lena to plan the group New Orleans trip** for the Super Bowl and Mardi Gras.
      Jack only sees the outcome: Lena suddenly organizing the trip with suspicious enthusiasm, Laney and Theo
      innocent. The alliance's masterstroke. Confirmed at the champagne reveal.
+- **Skye heat-scene escalation (player; refines "first near-explicit intimacy").** New in the series compared with
+  Becca: **frequent heat scenes**, as frank and explicit as the brief's literary standard allows **short of sex** (the
+  hard rule). They **steadily escalate** across the arc: lengthy kissing (E16–E17) → make-out sessions that get
+  **continually more physical, raw and hungry** (the secret December) → **Skye's increasingly effective seduction
+  attempts** (January–February), each pushing Jack's resolve closer to the line (resolve drops; the player chooses how
+  close he lets it get; the line holds). Each heat scene must also carry character (her play, her presence, the moment
+  she drops the act, his guilt and want), so it's never filler. Track escalation across episodes so no two scenes play
+  the same beat. Consent stays clean per the earlier directive. Lena sees only the public surface (photos), never these
+  scenes.
