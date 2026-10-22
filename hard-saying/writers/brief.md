@@ -992,3 +992,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     effective repeat attempts.
 - **After S1E16 (player feedback).** "Great episode. Skye was amazing. Theo was great, Laney was hilarious. The early
   scenes with Lena were perfect."
+- **E17 design round 2 (player).** **Skye's late reply: a one-line knockout**: short, devastating, flirtatious; Jack
+  laughs out loud in the lounge and everyone notices. **The coffee: somewhere she won't be recognized** (an
+  out-of-the-way taqueria, bait-shop coffee counter or truck stop on 101; part of keeping her career out of it; a small
+  tell Jack misses). **The reveal: Gina tells him.** He mentions a "Skye" to Gina (phone, or in person once he's home);
+  she looks her up and screams: "JACK. SHE'S ON TV." Then the apology text ("sorry for being an idiot"), Skye's
+  delight, and the constant texting.
