@@ -1213,3 +1213,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
        the load more equally on Jack: he opened the door himself.
      - **Skye is never a villain or actually cruel** for what she does after. Both of them sometimes call it "cruel,"
        **always as a joke**: they mean she's incredibly hard, almost painfully hard, to resist, and both know it.
+     - **Echo with Lena, years on (player-approved; room places it).** The line returns once: Jack confesses it to
+       Lena, or she learns it another way. It's the moment Lena understands **how close he came, and how much he
+       held**. Room decides when (after they're together; e.g., the restraint arc's height or the marriage
+       conversations) and how it lands.
