@@ -10,8 +10,9 @@ ledgers and brief, consulting those only by targeted lookup.
 | Role | Model | Job |
 |---|---|---|
 | **Showrunner** | opus | Owns the secret bible: hidden arcs, the central mystery, twists, the arc registry. Plans each episode; in finalize, patches drafts to the actual save and the newest notes (medium effort). |
+| **Story Editor** | sonnet | Look-ahead sketches for the episode after next in pre-production (the Showrunner plans it fully on the next run). |
 | **Period Researcher** | sonnet | Keeps `period/` accurate: dates, news, Church calendar, weather, songs released by each date, sports. Flags anachronisms. |
-| **Context Packer** | sonnet | Builds the per-episode pack: player directives, style guide, on-page voices, hidden-canon constraints, ledger entries, tic registry, period facts. |
+| **Context Packer** | sonnet | Builds the per-episode pack in pre-production and updates it at finalize (never rebuilds it): player directives, style guide, on-page voices, hidden-canon constraints, ledger entries, tic registry, period facts. |
 | **Episode Architect** | opus | Scene-by-scene blueprint: choice maps, flags, effects, duels, act split, header JSON. |
 | **Romance Writer** | opus | Every Jack/Lena and Jack/Skye scene. Heat, subtext, argument, restraint. |
 | **Ensemble Writers** | sonnet | The remaining chunks in parallel, matching pack voices. |

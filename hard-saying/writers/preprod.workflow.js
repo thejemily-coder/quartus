@@ -24,12 +24,16 @@ START WITH THE CONTEXT PACK ${PACK}: it holds the player's binding directives, t
 ${PREPROD}`
 
 phase('Planning')
-for (const e of A.eps) await parallel([
+const SKETCH = A.eps.slice(1)
+await parallel([
   () => agent(`${FULL}
-ROLE: Showrunner (pre-production). Plan ${e.id}. Read the bible's season map and arc registry, the brief in full (newest entries carefully), the ledgers' recent entries, and ${A.prevPlayed} plus the episode immediately before ${e.id} if it exists in ${D}/writers/outlines/ (a plan) or ${D}/episodes/ (published). Write ${D}/writers/outlines/${e.ep}.md: the plan for ${e.id} honoring every brief directive due in it, the beats, arcs advanced, reveals/seeds, a Previously list (4–6 lines, gated on flags), 3–5 nextTime lines, the act split (mark romance chunks: Jack/Lena or Jack/Skye material), a CHARACTERS-ON-PAGE list, and a "SAVE-DEPENDENCIES" section listing every place the plan depends on an unplayed choice and how each variant plays. Update the bible only if the plan requires it, logging in the Revision log. Return a 3-line spoiler-free summary.`, { label: `Showrunner ${e.id}`, phase: 'Planning', model: 'opus', effort: 'high' }),
-  () => agent(`${FULL}
-ROLE: Period Researcher. Determine ${e.id}'s in-world dates from the bible's season map. If ${D}/writers/period/ lacks a sheet for those dates, write one (news, Sunday Gospel and feasts, weather, songs released by then, campus calendar, sports incl. Saints/Browns/Steelers/Ohio State). Verify with web search when possible; mark UNVERIFIED otherwise. Return 2 lines.`, { label: `Researcher ${e.id}`, phase: 'Planning', model: 'sonnet', effort: 'medium' }),
+ROLE: Showrunner (pre-production). Plan ${first.id}. Read the bible's season map and arc registry, the brief in full (newest entries carefully), the ledgers' recent entries, and ${A.prevPlayed} plus the episode immediately before ${first.id} if it exists in ${D}/writers/outlines/ (a plan) or ${D}/episodes/ (published). Write ${D}/writers/outlines/${first.ep}.md: the plan for ${first.id} honoring every brief directive due in it, the beats, arcs advanced, reveals/seeds, a Previously list (4–6 lines, gated on flags), 3–5 nextTime lines, the act split (mark romance chunks: Jack/Lena or Jack/Skye material), a CHARACTERS-ON-PAGE list, and a "SAVE-DEPENDENCIES" section listing every place the plan depends on an unplayed choice and how each variant plays. Update the bible only if the plan requires it, logging in the Revision log. Return a 3-line spoiler-free summary.`, { label: `Showrunner ${first.id}`, phase: 'Planning', model: 'opus', effort: 'high' }),
+  ...A.eps.map(e => () => agent(`${FULL}
+ROLE: Period Researcher. Determine ${e.id}'s in-world dates from the bible's season map. If ${D}/writers/period/ lacks a sheet for those dates, write one (news, Sunday Gospel and feasts, weather, songs released by then, campus calendar, sports incl. Saints/Browns/Steelers/Ohio State). Verify with web search when possible; mark UNVERIFIED otherwise. Return 2 lines.`, { label: `Researcher ${e.id}`, phase: 'Planning', model: 'sonnet', effort: 'medium' })),
 ])
+// Look-ahead episodes get a cheap sketch; their full plan is written by the Opus Showrunner on the next run.
+for (const e of SKETCH) await agent(`${FULL}
+ROLE: Story Editor (look-ahead sketch). Write or revise ${D}/writers/outlines/${e.ep}.md as a SKETCH for ${e.id} (it will be fully planned later): dates, the brief directives due in it, 8–15 beats, seeds and payoffs, and the flags it expects from ${first.id} (read ${D}/writers/outlines/${first.ep}.md). Keep any existing fuller plan's decisions unless the brief's newest entries override them. Do not edit the bible. Return 2 lines.`, { label: `Sketch ${e.id}`, phase: 'Planning', model: 'sonnet', effort: 'medium' })
 
 phase('Context pack')
 await agent(`You are the Context Packer for the writers' room of "The Hard Saying". Project folder: ${D}. ${RULES}
