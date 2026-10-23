@@ -1408,3 +1408,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     with Theo's name on it); and **Theo and Danny** (Theo comes along on a visit; the Thanksgiving rapport continues).
   - **Lena's Christmas Eve call from the levee: warm, almost there.** The best call of the break: the bonfires, her
     family loud behind her, and one silence where either could have said it.
+- **Julian lands (player, after S1E22).** "Every time Lena was with or mentioned Julian was agony." It's working: keep
+  Julian decent and present (never a fool or a strawman) so the agony stays honest, through his S2 exit after New
+  Orleans. Over Christmas break (Julian in New Orleans for New Year's), his mentions should keep that edge.
