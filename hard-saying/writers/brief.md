@@ -1480,3 +1480,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     feels he owes her that**: that **he really is in love with her**, and that **he loved all of what they were and did
     together**. Not a speech, not the Saint-Exupéry line; his own fumbling words, honest, and it doesn't make it hurt
     less. (Her response: room's call within her co-design; never cruel, never diminished.)
+- **The New Orleans conversation includes Skye, honestly (player).** Since they're fully honest in New Orleans, **Jack
+  tells Lena this too** (what Skye is to him, what they were and did together, that it's real), **without using the
+  word "love."** Neither of them says "love" on the trip: both know they love each other, but they won't sound like
+  crazy people or say it while they're with someone else. **The trick: Jack can't say outright that he loves Skye,**
+  because if what he and Lena have is more than that, he'd be saying out loud that he loves Lena. The word stays
+  unsaid; the meaning is unmistakable.
+  - **It hurts Lena**, and it's **why her dislike of Skye never goes away** (the running joke later has a real root).
+  - **At the same time she knows it means he's giving all of that up for her**, because of how he feels about her.
