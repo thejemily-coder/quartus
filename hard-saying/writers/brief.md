@@ -1545,3 +1545,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     fight or silence, never around Skye** (with Skye it simply fades). After those scenes, offer a choice: light one or
     not (counted on `jack_cigs`, plus a January–February count of its own). **In New Orleans, when she gets the tin
     back, he tells her the number honestly**, and she realizes **every one was about her**. Zero is its own answer.
+- **Skye reads Chesterton (player loved it, S2E02).** Her reading *Orthodoxy* both for Jack and for her own enrichment
+  is "beautiful." Keep it: her intellectual life is her own, not a performance for him; let her bring her readings
+  into their arguments (her own takes, sometimes better than his), and never let it read as her converting for him
+  (respect without belief stands).
