@@ -1554,3 +1554,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   messages, friend requests from people he hasn't spoken to since St. Brigid's/high school, the CYO guys, Tommy Hritz,
   exes of friends, someone's mom. Comic texture (period-true Facebook insert material) with an edge: everyone back
   home suddenly sees him, and none of them ask about the girl in New Orleans. Gina fields some of it at school.
+- **S2E03 design answers (player).**
+  - **The reunion: at the gate, loudly.** Skye is waiting at the airport (sign, sunglasses at night, the works) and
+    kisses him like nobody's watching; **someone with a phone is**. That photo becomes the first fan/gossip shot of them.
+  - **Lena on the first day back: she's just gone.** She's seriously upset and doesn't want to be seen by anybody.
+    **When they're forced next to each other, it's perfect politeness, which quickly unravels into the first sideways
+    fight** (the proxy war opens; the Facebook-status grievance itself is saved for a later fight per the brief).

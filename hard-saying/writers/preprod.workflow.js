@@ -47,7 +47,7 @@ Write these sections, VERBATIM excerpts preferred over paraphrase, each excerpt 
 6. LEDGERS: continuity.md standing facts plus entries for the last three episodes and any object/place in the plan; knowledge.md LIVE RISKS plus the who-knows-what for every on-page character.
 7. TIC REGISTRY: room.md's knowledge checklist and full tic registry, verbatim.
 8. PERIOD: the period-sheet facts for these dates.
-Aim for 80–160k characters; completeness on sections 1, 4 and 7 beats brevity. Edit no other file. Return the pack's size and section list.`, { label: `Context Packer ${first.id}`, phase: 'Context pack', model: 'sonnet', effort: 'medium' })
+HARD CAP: 200,000 characters total. Sections 1, 4 and 7 are verbatim and never trimmed; to stay under the cap, summarize sections 3, 5, 6 and 8 tightly (ledgers as dense bullet facts, not pasted pages), and include only voices of characters actually on the page. Edit no other file. Return the pack's size and section list.`, { label: `Context Packer ${first.id}`, phase: 'Context pack', model: 'sonnet', effort: 'medium' })
 
 phase('Blueprint')
 const ARCH = { type: 'object', properties: { acts: { type: 'array', items: { type: 'object', properties: { act: { type: 'integer' }, writer: { type: 'string', enum: ['romance', 'ensemble'] }, sceneIds: { type: 'array', items: { type: 'string' } }, words: { type: 'integer' } }, required: ['act', 'writer', 'sceneIds', 'words'] } }, summary: { type: 'string' } }, required: ['acts', 'summary'] }
