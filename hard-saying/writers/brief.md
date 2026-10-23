@@ -1383,3 +1383,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   S1E21, as Jack does: **truly happy, having fun, falling in love when he's with Skye; pure agony when he's with Lena
   and Julian.** Keep **both halves fully true** and side by side. Never let the Skye half curdle into guilt-tinted
   half-joy, or the Lena half soften. The whiplash between them is the experience, until New Orleans resolves it.
+  - **The test of it (player):** "When he's with Skye, I can't see how he'd possibly give this up in New Orleans. When
+    he's with Lena, I can't see how he wouldn't." **Hold that balance exactly** until New Orleans. The choice there must
+    cost him something real, and the Skye ending must be worthy of her.
