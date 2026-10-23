@@ -132,11 +132,7 @@
     "The mailboxes on two are a wall of little brass doors, each with a window the size of a stamp and a combination nobody remembers past October, and the radiator under them knocks twice and thinks about a third. Down the hall somebody shuffles toward the showers in slippers, and a hair dryer starts up behind a door and stops. Jack is down from four with his bag on his shoulder and twenty minutes before a nine-thirty, and Lena and Laney are ahead of him at the wall.",
     "Laney has her sunglasses on indoors and the Pi Lam hood up. Lena is in the navy peacoat buttoned to the top, her hair up off her neck with a pencil through it, and she has a yellow package slip from the front desk in both hands and is reading it.",
     "Laney sees him first. She turns to her mailbox and opens it, and takes out nothing, and studies that through the sunglasses.",
-    {
-     "if": "s2e3_landed==\"restraint\"",
-     "text": "His *tomorrow*, sent from 412 on Sunday night, never got an answer. Lena reads the slip to the bottom, the fine print too, before she looks up.",
-     "else": "Lena reads the slip to the bottom, the fine print too, before she looks up."
-    },
+    "Lena reads the slip to the bottom, the fine print too, before she looks up.",
     "“Morning, Jack.”",
     "“Morning.”",
     "She folds the slip in half, and in half again. “How was the rest of your break?”",
@@ -170,7 +166,7 @@
       "“Have a lovely —” Lena says, and hears it, and stops on it. “Have a good day, Jack.”",
       "They go down the hall toward the stairs with the slip and the sunglasses. Jack opens his own box. Behind the little window there’s a half-sheet folded once, NEWMAN — SPRING RETREAT, and under it a mountain somebody drew with a ruler."
      ],
-     "goto": "s02a"
+     "goto": "s02b"
     },
     {
      "text": "“Did Lucille cry, or did your father?”",
@@ -187,7 +183,7 @@
       "“Have a lovely —” Lena says, and hears it, and stops on it. “Have a good day, Jack.”",
       "They go down the hall toward the stairs with the slip and the sunglasses. Jack opens his own box. Behind the little window there’s a half-sheet folded once, NEWMAN — SPRING RETREAT, and under it a mountain somebody drew with a ruler."
      ],
-     "goto": "s02a"
+     "goto": "s02b"
     },
     {
      "text": "“How was the baptism?”",
@@ -200,16 +196,12 @@
      "response": [
       "“How was the baptism?”",
       "“Lovely, thank you.”",
-      {
-       "if": "commented_baptism",
-       "text": "“You saw the pictures,” she says. “You commented.”",
-       "else": "“Tess put pictures up,” she says."
-      },
+      "“You saw the pictures,” she says. “You commented.”",
       "Laney takes her arm.",
       "“Have a lovely —” Lena says, and hears it, and stops on it. “Have a good day, Jack.”",
       "They go down the hall toward the stairs with the slip and the sunglasses. Jack opens his own box. Behind the little window there’s a half-sheet folded once, NEWMAN — SPRING RETREAT, and under it a mountain somebody drew with a ruler."
      ],
-     "goto": "s02a"
+     "goto": "s02b"
     }
    ]
   },
@@ -258,6 +250,7 @@
     "Osei comes to the doorway when the room is busy and looks at them all, the forty and the urn and the lemon bars, and somebody near him asks him how he is.",
     "“I asked the bishop if he could spare an old doctor,” Osei says. “He said he couldn’t spare a young priest.”",
     "Mrs. Fitch laughs first, at exactly the size it needs, and the room follows her a little way, and Osei goes back in to the phone.",
+    "Kenzie comes past him with the poster board for tomorrow’s sign under her arm and the markers in her fist, and stops, and says it brightly, as if his tag were out. “Oceanography! I saw. Peter has all of Fenner’s old midterms, if you want them.” She goes on to the sign-up table, where Lena is standing with the clipboard, and props the poster board against the table leg at Lena’s feet. Lena’s pencil doesn’t stop.",
     "Lena works down the sheet name by name, a tick for each. She reaches his.",
     "“Jack. Wednesday, one to three. With Becca.”",
     "At the urn Becca turns around with a stack of cups and waves the stack at him.",
@@ -463,11 +456,7 @@
    "slug": "WEDNESDAY · 10:42 PM · DELGADO HALL, THE FRONT STEPS",
    "body": [
     "He goes back out the way he came in and sits down on the front steps. The quad is dark. Ferrer Tower is done chiming for the night, and the bike racks are full, and somebody’s sprinkler out by the lot is ticking around on the grass.",
-    {
-     "if": "s2e3_smoke==\"reckless\"",
-     "text": "His bag is on the step beside him. In the front pocket, the tin: eleven, her count. In the side pocket, his own pack, one fewer than it rode home with. His thumb finds the lighter in his coat pocket and stays on the wheel.",
-     "else": "His bag is on the step beside him. In the front pocket, the tin: eleven, her count. In the side pocket, his own pack, as it rode home. His thumb finds the lighter in his coat pocket and stays on the wheel."
-    }
+    "His bag is on the step beside him. In the front pocket, the tin: eleven, her count. In the side pocket, his own pack, as it rode home. Monday, on the back steps of Hollis, he put it back in the bag and zipped the pocket. His thumb finds the lighter in his coat pocket and stays on the wheel."
    ],
    "choices": [
     {
@@ -482,10 +471,7 @@
      },
      "response": [
       "He takes one out of his own pack and lights it with his shoulder to the quad. The smoke goes up past the dark windows of four and comes apart there. It doesn’t help. He smokes it to the filter anyway and puts it out on the step and puts the end in his pocket.",
-      {
-       "if": "s2e3_smoke==\"reckless\"",
-       "text": "The second this week."
-      },
+      "Monday he put it back. Tonight he didn’t.",
       "The front door is heavy, and he lets it be heavy. Inside, the radio on the desk is still on Haiti, and he goes in past it."
      ],
      "goto": "s15"
@@ -513,10 +499,6 @@
      "response": [
       "He opens the tin on his knee, under the light from the lobby, and counts them with one finger.",
       "Eleven.",
-      {
-       "if": "s2e3_smoke==\"count\"",
-       "text": "Eleven again. He knew."
-      },
       "He shuts it, and puts it back in the front pocket, and zips the pocket.",
       "The front door is heavy, and he lets it be heavy. Inside, the radio on the desk is still on Haiti, and he goes in past it."
      ],

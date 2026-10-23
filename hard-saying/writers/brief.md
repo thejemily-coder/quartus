@@ -1736,3 +1736,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   with someone like Jack but closer to her worldview**, and admits **he'll never know unless she finds it.** Then,
   with a sad smile: **he erred on the side of the Catholics' happiness, because Skye's the only one allowed marital
   do-overs.** (Adapt to his voice; the last line near-verbatim.)
+- **Sully's with Skye, and the chain it sets off (player; S2E05–E07, the Saints' playoff run).** Jack and Skye come to
+  **Sully's for the Saints and other games with the group** (Divisional vs. Arizona, Sat Jan 16; NFC Championship vs.
+  Minnesota, Sun Jan 24; other weekend games), **until there's an actual blowup between him and Lena.** Lena is
+  there for every Saints game, as always. The chain:
+  1. **Laney and Lena see Jack and Skye argue the way Jack and Lena do** (they were both absent for the Fishbowl in
+     December, so it's their first sight of it). That's when Laney says her already-recorded line (to Lena): **"Oh my
+     God. He found a California you. Excuse me while I go be a bitch on your behalf."**
+  2. **Laney's first bitchy comment *to* Skye.** **Jack takes it personally.**
+  3. **Whatever Laney says triggers what happens next:** a bigger fight with Lena and/or the Laney aside ("fireman…
+     'So was I'"). Room sequences it so the aside still revives the alliance (meeting #2 after it).
+  - Skye at Lena's Saints table is a pressure cooker: comedy first (Skye learning "Who Dat," cheering for the wrong
+    reasons, being genuinely charming to the room), knife underneath. Skye clocks Lena (her S1 jealousy and intuition).
+    Jack stops coming to Sully's only after the blowup, which costs him the Saints-with-Lena ritual.
