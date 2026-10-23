@@ -1549,3 +1549,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   is "beautiful." Keep it: her intellectual life is her own, not a performance for him; let her bring her readings
   into their arguments (her own takes, sometimes better than his), and never let it read as her converting for him
   (respect without belief stands).
+- **Youngstown reaches out (player; S2, January on).** Once Jack and Skye are public on Facebook and in the tabloids,
+  **a lot of old friends from school reach out** (the New Year's Eve crowd at Ryan Pallante's and beyond): wall posts,
+  messages, friend requests from people he hasn't spoken to since St. Brigid's/high school, the CYO guys, Tommy Hritz,
+  exes of friends, someone's mom. Comic texture (period-true Facebook insert material) with an edge: everyone back
+  home suddenly sees him, and none of them ask about the girl in New Orleans. Gina fields some of it at school.
