@@ -1705,3 +1705,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     as villainy or scheming, and within the hard lines: no cheating, no other relationships for Jack once he's with
     Lena; the danger is temptation, jealousy, and what it costs Jack to hold the line. Lena feels it, which feeds her
     lasting dislike of Skye and her later vulnerable admission.
+  - **There are always eyes on her (player).** During the relationship and especially after, if Jack and Skye so much
+    as **get a cup of coffee together on or near campus**, **the rumor mill kicks into overdrive**: a fan's photo, a
+    Facebook post, a blind item ("back on?"), campus gossip, Gina texting from Ohio. After the breakup every sighting
+    reaches Lena (and the alliance) within hours, so even innocent contact (the class, a group assignment) costs
+    something. Use it for comedy and for real strain.
