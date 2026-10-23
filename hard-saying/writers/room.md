@@ -266,6 +266,17 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 126. **The picture-text template** (E19 PM2 → E20 PM3: the phone "low at her hip, taking it," the face "not doing" a character, "looking straight out
    at whoever opens this"). Each picture gets a new camera action, a new specific expression, and how it arrives on a RAZR (stamp-sized, grainy, tilted
    to a light) before any detail. No "isn't doing [X]'s face" negation.
+127. **"Considers [object]" as the default comic look** (rising E16→E21: 3, 2, 1, 4, 4, 7 per path; S1E21's draft had Osei and the refrigerator, Becca, the
+   sprig, the sprinkler, Theo and the pocket, Laney and the hands, Skye and the fork). Max two per episode (E21 kept Osei's refrigerator and Theo's pocket); otherwise an action, or
+   "looks at." Counts toward #62 when stacked on a second look.
+128. **"Lets it go by / lets it be / lets that be the [answer / prayer]" as the tactful-silence button** (S1E21 ×5–6 per path; a cousin of #36 and #37). Max two per episode, where the
+   letting is the point (E21 kept Skye's in s07 — she sees him skip the doorway — and s13b's "lets that be the prayer").
+129. **The Saab exit as a scene button** (S1E21 ×5: "honks twice… and goes," the U-turn on Mission Street, "pulls his door shut herself, and goes," "around the corner before the light has
+   changed," "goes south toward Studio City"; the same shape #27 caught with Lena's watched exit). Once an episode; keep it when the exit is her action (E21: s13's door-pull).
+130. **A character's default listening pose** (S1E21: Skye's chin/head "on her knees" five times in s07c; cf. #74 "chin on his fist"). Once a scene; turn the rest into actions (she turns the
+   jar, pulls the blanket up).
+131. **"[N] years of [X]" credential bits** (S1E21: Skye's "EIGHT YEARS of gift bags," Kevin's "Seven years of Vietnamese choir," Margot's "Six years of Suzuki" — three speakers, one register
+   of wit; #6, #25). Once an episode (E21 kept Kevin's: it's the reveal).
 Small repeats to watch (S1E20): speech addressed to objects stacked in the Skye act (#32 — "to the boot," "to the lit half of the window," "to the
 Christmas lights," "to the jar of beach glass"; keep the one where her turning away is the point, s19 "to the wall"); Skye's "first/only/never"
 verdicts (spend the superlative once — E20 kept "the only person who's ever told me no and meant it"); "laughs into his neck" twice in one scene;
@@ -374,6 +385,15 @@ nothing on it" — once per episode); Margot looking "over the black frames"; "g
 "owes him money" simile; "reading somebody else's mail"; tide similes; the quarter-turn of a glass; Priya's bureaucracy
 figures in the narration (let her own lines carry it); "doesn't say anything" as the default reaction; medal touches beyond
 the budgeted thinking/lying beats; "dark kitchen" for the Anchor seen from the pier.
+
+Small repeats to watch (S1E21): Osei's physician figures (12 "doctor," 9 "patient" in one draft — "the doctor first / has stepped out / again," "removed from a patient";
+about three an episode, carried in his own lines: E21 kept "I prescribe daylight" and "I don't diagnose at parties" — never narrated as a mode switch); narration borrowing Skye's showbiz
+register ("a professional with a note she can play," "walks back to the tape for another take," "as pleased as if she's been cast," "like a line she has been given too early" — keep it in
+her mouth; Jack's narration uses his own frames); courtroom words in Skye's mouth ("Exhibit A," "evidence" — #11, Lena's); "Youngstown" in Lena's mouth (cap two a path, one a button — in the
+withdrawal stretch "Jack" is the word that hurts); "without turning around / not turning around" (#118; keep it where not-turning is the point); Laney's "in mourning" (once) and "fireman"
+(one a path); "Nobody…" dialogue openers (#67); the "only time all night" claim must be literally true — route the rest of a withheld person through sound and the edge of the eye; the
+"to the letter" limit stated once in narration, never re-explained (no procedural consent beats); a heat step must name what is new against the last scene (E21: the jeans; her ease;
+the duration), never re-describe the previous rung's beats.
 
 ## Episode pipeline
 1. Orchestrator: read save (`ArtifactData get saves/main`), write `saves/after-<ep>.json`; notes session with the player.

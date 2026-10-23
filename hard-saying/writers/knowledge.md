@@ -1765,3 +1765,57 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **[reframe]** Skye holds the elided sixteen and "five years" separately — exactly Lena's level. No scene may let either woman join them before the truth comes out (S2E22 to Theo; Lena by the proposal).
 - **Christmas phone hazard** — 2–4 kept pictures ride home to Youngstown (`skye_pics_kept`); the RAZR is now routinely off with Skye (`phone_off_skye`).
 - **Maria knows "a girl"** [bill candor] — the Facebook discovery at Christmas lands on a mother who was told first.
+
+### S1E21 — "Guadalupe"
+> Final revision, collapsed against `saves/after-s1e20.json` (see continuity.md S1E21). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01–s01a] Theo saw his face at 6:10 and asked about a war; Theo's after-Thanksgiving question is moved. [s02] Browns 13–6, eight sacks (Frank's voicemail); Ma's list "Ask him about the girl." [s03] Skye chose the 8-Ball
+  (he was there). [s04] **the organist is Gus** (Mrs. Fitch, before the narration uses it); Tiger's "indefinite break"; Margot's window (305) is over the front walk. [s05] **Lena brought the coffee** (her tag). [s05a] **Lena stole
+  the 8-Ball and asked it something** (he did not see or hear what). [s06] Watts / Psalm 98; Kevin sings bass. [s06a–s06m] Julian plays by ear; **Julian kissed Lena's cheek under Theo's mistletoe**; **the one glance — her face
+  changed into something he hasn't got a word for** (🔒 he does not know it read as hurt, or what it opens; New Orleans). [s06b] the Kumasi waiting room; Osei's 3:30 closet and the door with the light on. [s06c] Skye's
+  10:31 text. [s07–s07c] the argument and **to the letter**; the fuse; the darkroom is off-limits to Skye ("house rule"); Guadalupe as "a brand"; the hoopskirt commercial; "You fold your hands." [s08] **Lena's 12:28 "You
+  up?"**. [s09] **Lena knocked on 412 at 12:30; Theo said the library**; Rudy's mother came from Oxnard (Rudy invited him Tuesday, off-page). [s09a] **Juan Diego's other road** (Lena; never glossed). [s10] Lena's "Will I get a
+  decade?"; Lena saw his hand cover the buzzing pocket. [s10a/s10o | confessed] Osei's counsel (to love is to will the good of the other; why that makes it dangerous; the door; penance). [s10b | drift] Mrs. Fitch counts;
+  the 1962 valve. [s11] Hale received both picks (Lena's in Latin, Thursday 7 a.m.); Theo confirms the knock. [s11a] PM4 per `e21_pic`. [s12–s12a] **Gloria recognized Skye from TV**; boysenberry; Rudy saw him at the Mission;
+  Skye's Burbank toy-drive day; Lena's Heisman text. [s13] "I'm asking every day." [s13a | stay] she never sleeps with someone in the room ("I always stay up to see what they want"); Irene (in her sleep). [s13b | go] Theo out
+  barefoot at 5:30, loafers left behind. [s14–s14a] she surfs (a stunt double, Zuma, at thirteen); **Tomás** owns the wetsuit (in Baja); **two boards live under her porch**; Irene knitted and never got to fractions; she's
+  counting the six days. [s15a | saints] 13–0; the rope to Dale; Julian learns the holder. [s15b | breakfast] Skye knows about Wednesday's oral and the promise argument (no names); Lena's "13."; Kevin's ABSENT. [s15c] **Soledad
+  — the Halloween staircase girl with the Bolex (he places her) — films Theo's shoes; asks about "the black one"; Theo: "Shoes."; "Hi, hat."** (he infers nothing; **no link to Skye's "Sol"**). [s16a] the 8-Ball's *Better not
+  tell you now*.
+- **He does NOT learn:** what Lena asked the 8-Ball; what her face meant at the doorway; that Skye knows Theo ("peace mission" stays a plant); that Sol is Skye's housemate; what's in the duffel; anything of Lena's confession;
+  what Gloria or Rudy think; whose London letter (cut — not on the page).
+
+#### Skye
+- From Jack: a church party, a white elephant, a priest who requests no mistletoe; the party in his telling (priest, organist, the secretary's descant, the punch on the fridge, the spray tan) — **no upright, no doorway, no Lena**;
+  her 8-Ball went to `e21_ball`; the Mañanitas and Our Lady of Guadalupe (no names; never "Mary"; "a guy from work" invited him); **he confesses Saturdays at 3:30**; he asked for the 4:30 alarm so he'd leave; the Anchor, Gloria,
+  Rudy (first names, as coworkers); a text read at the drainboard, sender unsaid (she asks nothing); [confessed] he told the priest everything / [else] not yet; his roommate asked about a war (no name); he goes home Saturday the
+  19th, his dad picks him up in Pittsburgh; [breakfast] Wednesday's oral and "a promise is made to a person" (from "somebody in the seminar").
+- **She still has never heard** Lena's, Theo's, Kevin's, Julian's or Danny's names from Jack, or anything of the song or the doorway. She has seen nothing of Lena.
+
+#### Lena
+- [s04] Jack late with black hands (`e21_hands`: "Kevin's" / "the Pope's" / "a friend's"); he didn't turn from the sink. [s05a] [tag jack] the 8-Ball was his ("Thank you, Jack") / [nicholas] "from St. Nicholas" (she knows it
+  means him) / [blank] she doesn't know. He took her coffee. [s06] his Watts replies went to Becca. [s06a] he didn't tell anybody she plays. [s06m] 🔒 **the glance — she clocks it instantly and correctly as hurt** (her opening for E22;
+  the start of considering breaking up with Julian, decided over Christmas; in January she decides she imagined it). [s06c] he walked west on Ocean Road at 10:45 (`e21_ride`). [s08–s09] he wasn't in 412 at 12:30 (Theo: the library);
+  **he came to the Mañanitas alone at 5 a.m., in the party jacket**. [s10] his pocket buzzed in line and his hand covered it; [drift] he left the line and sat on the courtyard wall (she waved at 4:20); [knock] nothing more.
+  [s12a] his answer to "Pie?" (`e21_pie`). [s15a | saints] he came in salty and late ("You smell like the ocean") / [breakfast] he didn't come. [s16a] she asked the 8-Ball something and wouldn't say.
+- **She learns nothing about Skye** — no name, car, face, drugstore, Anchor, picture or shirt. **She never asks where.**
+
+#### Others
+- **Theo** — Jack's 6:10 face and answer ([mirror] his own line back); the black hands; Lena's 12:30 knock (he answered); Jack's pocket and the stairwell; Sol asked about the black one and he said shoes; [go] nothing (he was out at
+  5:30). Nothing new about Skye; holds *now friends* to Christmas. 🔒 Mistletoe op debriefed with Laney off-page.
+- **Osei** — at the party a man who pushed a car and watched the clock; [sink candor] "somewhere to be"; **the confession (seal — nothing from E19's or E21's box ever shapes what he says outside)**; [drift] Mrs. Fitch's report that
+  Jack left the line (outside the seal) and the wall; [knock now] the office confession (same seal). **Mrs. Fitch** — his pocket buzzed in line ("Nor you, Mr. Costigan"); [drift] he left the line.
+- **Gloria** — Skye is the girl on the boarding-school show; she came for Jack; Jack read a text at the drainboard while Skye watched (she saw it in the glass); [pie lie] she knows "slammed" was a lie. 🔒 She never tells Pecan.
+- **Rudy** — Jack at the Mission at 5 a.m. (with "the girl from the counter" who came to the Anchor before, and the man with the tamales); Skye at the counter at midnight. Says only "I saw him." **Julian** — Rudy's mother sang (Jack
+  named her); the holder; nothing of Skye. **Laney** — black hands; Jack's answer; the mistletoe backfired. **Kevin** — the flask; [breakfast] ABSENT. **Margot** — the party for the column. **Becca** — nothing new.
+- **Soledad (Sol)** — 🔒 Jack is "the hat"; she knows whose Carhartt hangs in her house and whose shirt her housemate wears; she says "Hi, hat." and nothing else. **Bev** — "you look like you slept / cold." **The fry couple, the Mission's
+  families, the mariachi, the drugstore clerk, the town-car driver, the Segway guard, the orthodontist** — strangers. **No photograph of Skye is taken in Marisol** (the couple's phone goes back in the purse unclicked).
+
+#### LIVE RISKS carried out of E21
+- All E18–E20 risks stand (Theo holds *now friends*; Skye never hears the names; Lena learns nothing of Skye; Skye holds no more of Jack's secret than Lena; "a name I don't use"; the Fresno pin unglossed).
+- **New:** Gloria and Rudy have seen both girls — neither speaks to Lena about Skye, ever (through New Orleans). **Sol has met Jack in 412** and owns the house where his Carhartt hangs; she says nothing to Theo or Jack; nobody
+  says "Sol" in front of Jack where Theo is; Sol is never home when Jack is at Del Playa (S1); Jack may recall the Halloween staircase but never links Soledad to "Sol." **"Tell him it was a peace mission"** — no Jack inference,
+  ever, before the planned Theo–Skye reveal. **The glance's meaning is Lena's alone** until New Orleans (POV). **The 8-Ball's question is Lena's alone.** Lena has now seen the phone go under his hand in a confession line and asked
+  nothing — she still never asks where. Up to four kept pictures (one possibly unopened) ride home to Youngstown. Osei's seal covers two Skye confessions (one on [not today]); never touched outside the box. **Jack's narration
+  never recalls E05's Guadalupe jacket** until E22's photograph.

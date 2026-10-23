@@ -18,11 +18,11 @@
     "The Lava is where the priest said, behind the Comet, a gray bar worn down to the shape of somebody’s grip. Jack runs the tap as hot as it goes and does one hand at a time. The left waits its turn over the front pocket of his jeans, over the RAZR, black to the wrist, leaving a print on the denim. Through the pass-through Laney, at the punch bowl, finds the hand with her eyes and keeps them on it while she drinks. Behind her, coming in from the porch with Julian, Lena follows Laney’s eyes to it.",
     {
      "if": "e21_reply==\"restraint\"",
-     "text": "Lena ladles herself a cup on the other side of the counter. She’s in the cardigan, with a red ribbon in her hair. “You didn’t answer me.” “I know.” “I know you know.” She drinks, and her face changes at the punch."
+     "text": "Lena ladles herself a cup on the other side of the counter. She’s in the cardigan, with a red ribbon in her hair, and she stands there with the cup long enough for him to feel her at the edge of things behind his shoulder, waiting to be turned around to. He works the Lava into his knuckles and doesn’t turn. She drinks, and says “*Delaney*,” to the punch, and goes back out to the front room."
     },
     {
      "if": "e21_reply!=\"restraint\"",
-     "text": "Lena, ladling, in the cardigan and a red ribbon, says “Youngstown,” over the counter, and drinks, and her face changes at the punch. Julian lifts his cup to him from her elbow."
+     "text": "Lena, ladling, in the cardigan and a red ribbon, says “Youngstown,” over the counter. He lifts one wet hand off the soap without turning around, and goes on scrubbing. Behind him the ladle stops, and starts again. Then, to the punch, with feeling: “*Delaney*.” From her elbow Julian lifts his cup to the back of Jack’s head."
     },
     "Jack turns the tap back on and goes to work on the other hand. He scrubs till the water runs gray and stays gray. The black comes off the backs of his hands; under the nails it stays, and will, he can tell, for days. When he looks up again the pass-through is full of other people.",
     "Becca comes around into the kitchen with the clipboard on her hip and finds him at the sink. “Line three! You *came*.” She shows him: COSTIGAN, in her block capitals. “Ten dollars, nothing that eats. Mrs. Fitch is checking.”",
@@ -109,16 +109,14 @@
    ],
    "choices": [
     {
-     "text": "Look across the room at her.",
+     "text": "Hold the tag a second. Don’t look up.",
      "tag": "Sincerity",
      "set": {
       "e21_coffee": "sincerity",
-      "trait.sincerity": "+1",
-      "rel.lena.warmth": "+1"
+      "trait.sincerity": "+1"
      },
      "response": [
-      "He looks for her. She’s on a folding chair by the tree beside Julian, and she isn’t looking at him — she’s looking at the can in his hands, at the orange label, the way somebody looks at a thing from home on a shelf in a strange store. She turns and says something to Julian, and Julian laughs.",
-      "Jack sits down with the coffee on his knees, and after a while he puts it under his chair."
+      "He stands at the table with the coffee in the crook of one arm and the strip of index card between his finger and thumb, and keeps his eyes on it — the capitals, the dash, the L — because the tree is where his eyes would go next, and he knows it. Then Becca is chanting the next number, and he goes back to the last chair in the back row with it on his knees, and after a while he puts it under his chair."
      ],
      "goto": "s05a"
     },
@@ -130,9 +128,9 @@
       "trait.wit": "+1"
      },
      "response": [
-      "“Who brings coffee to a white elephant?” he says.",
+      "“Who brings coffee to a white elephant?” he says to Tyler, in the next chair.",
       "Lena answers from her folding chair by the tree, loud enough for everybody. “A woman from New Orleans. We bring coffee to *funerals*.”",
-      "Somebody laughs, and Becca’s already chanting the next number."
+      "Somebody laughs. Jack laughs with Tyler, at the floor between his boots, and doesn’t look up the room, and Becca’s already chanting the next number."
      ],
      "goto": "s05a"
     },
@@ -179,11 +177,11 @@
     "Lena turns away from all of them to the front window with it. Her back is to the room; her elbow moves once; she stands there reading something, in the ball or in the black glass of the window, Jack can’t tell which. Then it goes into the pocket of her cardigan, and she comes back and sits down beside Julian with her hand over the pocket, and doesn’t show anybody.",
     {
      "if": "e21_tag==\"candor\"",
-     "text": "When the next number has been called and the noise has moved on, she says it to him across the room, over everybody’s heads. “Thank you, Jack.” “It was Joey’s.” “It was *yours*.”"
+     "text": "When the next number has been called and the noise has moved on, she says it across the room, over everybody’s heads. “Thank you, Jack.” He nods at the back of Tyler’s folding chair, as if Tyler had said it, and Becca calls sixteen."
     },
     {
      "if": "e21_tag==\"nicholas\"",
-     "text": "She looks across the room at Jack, once, over everybody’s heads, and leaves it with the saint."
+     "text": "Across the room he can feel her look for him, once, over everybody’s heads. He keeps his eyes on Becca’s clipboard and leaves it with the saint."
     },
     "Mrs. Fitch draws thirteen and opens a glow-in-the-dark rosary, which is Kenzie’s, and says it’s lovely and she has nine. Margot draws fourteen and steals it off her — “For the column” — and holds it up under the lamp to charge it, and sits back down with it glowing faintly green in her lap while she writes. “That’s a steal!” Becca says, and makes her mark, so happy about the rules working that Mrs. Fitch can’t mind.",
     "Becca unfolds the next slip and the chant starts up again, *fifteen-fifteen-who’s-got-fifteen*, and under Jack’s chair the coffee is where his heel can find it."
@@ -219,25 +217,25 @@
       "rel.lena.friction": "+1"
      },
      "response": [
-      "“‘The Lord *is* come,’” Jack says, the length of the room. “Past tense. Watts was hedging.”",
-      "“Watts was a *Congregationalist*, Jack. He hedged for a living.”",
+      "“‘The Lord *is* come,’” Jack tells Becca. “Past tense. Watts was hedging.”",
+      "It carries. From the far end of the upright: “Watts was a *Congregationalist*, Jack. He hedged for a living.”",
+      "Becca looks from him to the upright and back. “She got you,” she says, pleased with everybody.",
       "Father Osei passes the upright with a tray of lemon bars, at no particular speed. “Miss Broussard is correct, it is still Advent, and Mrs. Fitch is seventy-one. Sing.”",
-      "Gus brings his hands down. Jack sings it from the kitchen door with the towel on his shoulder — *Joy to the world, the Lord is come* — and at the far end of the upright Lena sings it louder, and he sings it louder than that, the two of them hauling against each other across the room with the choir in the middle and Mrs. Fitch sailing over the top of everybody. At the end of the verse he goes back into the kitchen."
+      "Gus brings his hands down. Jack sings it into the sink with the towel on his shoulder — *Joy to the world, the Lord is come* — and out at the far end of the upright Lena sings it louder, and he sings it louder than that, the two of them hauling against each other through the kitchen wall with the whole choir in between and Mrs. Fitch sailing over the top of everybody. He never goes to the door to watch her do it."
      ],
      "goto": "s06a"
     },
     {
-     "text": "“…Watts. Fine.”",
+     "text": "Let her have it. Go back to the cups.",
      "tag": "Concede",
      "set": {
       "e21_carol": "concede",
-      "rel.lena.warmth": "+1"
+      "trait.control": "+1"
      },
      "response": [
-      "“…Watts,” Jack says. “Fine.”",
-      "“Say it louder. Mrs. Fitch can’t hear you.”",
+      "He doesn’t answer. He goes back to the sink and runs the water. Out front there’s a space after her last word about the size of the answer he usually gives her, and nobody fills it, and then Mrs. Fitch comes back in on the descant.",
       "Father Osei passes the upright with a tray of lemon bars, at no particular speed. “Miss Broussard is correct, it is still Advent, and Mrs. Fitch is seventy-one. Sing.”",
-      "Gus brings his hands down. Jack sings it from the kitchen door with the towel on his shoulder — *Joy to the world, the Lord is come* — and at the far end of the upright Lena sings it louder, and he sings it louder than that, the two of them hauling against each other across the room with the choir in the middle and Mrs. Fitch sailing over the top of everybody. At the end of the verse he goes back into the kitchen."
+      "Gus brings his hands down. Jack sings it into the sink with the towel on his shoulder — *Joy to the world, the Lord is come* — and out at the far end of the upright Lena sings it louder, and he sings it louder than that, the two of them hauling against each other through the kitchen wall with the whole choir in between and Mrs. Fitch sailing over the top of everybody. He never goes to the door to watch her do it."
      ],
      "goto": "s06a"
     },
@@ -250,10 +248,10 @@
       "rel.lena.warmth": "+1"
      },
      "response": [
-      "“Then Mrs. Fitch is a prophet.”",
-      "Lena laughs before she means to, and puts the hymnal up in front of her mouth, and glares at him over the top of it for making her.",
+      "“Then Mrs. Fitch is a prophet,” he tells Becca.",
+      "It carries. At the far end of the room Lena laughs before she means to; he hears it from the kitchen door, and hears it stop, and doesn’t turn to see what she does with her face.",
       "Father Osei passes the upright with a tray of lemon bars, at no particular speed. “Miss Broussard is correct, it is still Advent, and Mrs. Fitch is seventy-one. Sing.”",
-      "Gus brings his hands down. Jack sings it from the kitchen door with the towel on his shoulder — *Joy to the world, the Lord is come* — and at the far end of the upright Lena sings it louder, and he sings it louder than that, the two of them hauling against each other across the room with the choir in the middle and Mrs. Fitch sailing over the top of everybody. At the end of the verse he goes back into the kitchen."
+      "Gus brings his hands down. Jack sings it into the sink with the towel on his shoulder — *Joy to the world, the Lord is come* — and out at the far end of the upright Lena sings it louder, and he sings it louder than that, the two of them hauling against each other through the kitchen wall with the whole choir in between and Mrs. Fitch sailing over the top of everybody. He never goes to the door to watch her do it."
      ],
      "goto": "s06a"
     }
@@ -270,7 +268,7 @@
     "Margot, from the step stool, still writing: “Six years of Suzuki. I won’t be taking questions.”",
     "On the arm of the plaid couch, where she went when the singing stopped, Lena doesn’t move. Her hands are in her cardigan pockets, and one of them is around the 8-Ball.",
     "Jack has heard her play. The basement upright in Delgado, properly, around its dead F, at one in the morning with the dryers going — her left hand stepping over the hole in the keyboard every time it came, the way you’d step over a board you knew was loose — and he has heard her say why she doesn’t where people can hear. If you play well, people ask you to play.",
-    "Across the room her thumb is moving on the 8-Ball inside the pocket, around and around; he can see the shape of it working through the wool."
+    "At the edge of his eye, across the room, her thumb is moving on the 8-Ball inside the pocket, around and around. He doesn’t look over. He doesn’t have to, to know the shape of it working through the wool."
    ],
    "choices": [
     {
@@ -328,12 +326,12 @@
    "slug": "FRIDAY · 10:10 PM · NEWMAN HOUSE, THE KITCHEN DOOR",
    "body": [
     "Julian plays by ear. He takes Gus’s tempo for a verse and then, kindly, a better one; he finds a key Kevin can sit at the bottom of and leaves the floor of it open for him; he gives Father Osei “O Come, O Come, Emmanuel” in a minor so plain it sounds older than the house, and then, without stopping, lifts it into “Joy to the World” for Mrs. Fitch, who puts down her cup; when her descant goes up, his left hand goes down an octave to hold the floor under her. He doesn’t look at his hands. Lena stands at his shoulder with her palm on the piano’s lid and sings alto, and where Julian’s voice won’t go, hers goes.",
-    "Jack watches it from the kitchen door, leaning on the jamb, with the dish towel.",
+    "Jack watches Julian’s hands from the kitchen door, leaning on the jamb, with the dish towel. Julian’s hands, and the keys, and nothing to the left of them.",
     "“Costigan. Move.” Theo has a kitchen chair. Jack moves a step back into the kitchen, and Theo climbs up on the chair in his loafers and tapes a sprig of something green with white berries to the top of the doorframe, tearing the Scotch tape with his teeth. “Picture it,” he says. “A doorway. Two Catholics. A plant with a record.” The plant is contraband: FR. OSEI REQUESTS NO MISTLETOE is on the flyer on the corkboard, three feet away, in capitals. Out in the front room Laney, awake for the purpose, has a hand on Lena’s elbow the minute the carol ends — “Magdalena, come help me with the cups, I am *so* drunk” — and Theo gets down off the chair and takes Jack by the sleeve.",
     "Kevin comes through with a stack of paper plates and says it low, to both of them. “Leave it alone.”",
     "Theo doesn’t let go of the sleeve. Laney doesn’t let go of the elbow.",
     "It doesn’t matter. Julian is up from the bench with a paper cup of water from the bathroom tap, because Lena has sung herself dry, and he gets to the kitchen door when she does, and stops there because she has, and looks up, because Theo’s tape is shining in the light. He smiles. He kisses her cheek, gently, with his free hand under the cup so it won’t spill.",
-    "Jack sees it from four feet away. He has been looking at her since Julian sat down at the piano, and he’s still looking when she comes up from under it with the cup in her hand and finds him over Julian’s shoulder, and sees his face before he’s done anything to it. She doesn’t look away. Her lips part, the way they do before she says his name, and don’t get there. He’s the one who turns back to the sink.",
+    "Jack sees it from four feet away. He has kept his eyes off her all night — the length of the room, the kitchen wall, the backs of people’s heads — and he has nothing left to keep them off her with now. He looks. It’s the only time all night he does. She’s coming up from under it with the cup in her hand, and her eyes go past Julian’s shoulder straight to him, as if they knew where he’d be, and find his face before he’s done anything to it. Her own face changes, all at once, into something he hasn’t got a word for, and she doesn’t look away. Her lips part, the way they do before she says his name, and don’t get there. He’s the one who turns back to the sink.",
     "Theo, in retreat, climbs back on the chair to get the evidence down, and comes off it into the doorway at the same moment as Tyler Brandt with a tray of empty cups. They both look up.",
     "“Brother,” says Tyler.",
     "“*Absolutely* not,” says Theo.",
@@ -381,7 +379,7 @@
      "response": [
       "“I’m going to the library.”",
       "“On the last Friday.” She lets it go. “Take a sweater.”",
-      "He goes down the steps and turns west on Ocean Road, away from Delgado, with his hands in the Carhartt. At the first streetlight he looks back once. She’s still on the top step with Laney asleep on her shoulder and Julian’s headlights on the both of them, watching him go the wrong way.",
+      "He goes down the steps and turns west on Ocean Road, away from Delgado, with his hands in the Carhartt. He doesn’t look back. Julian’s headlights are on the steps behind him, and they throw his shadow out ahead of him down Ocean Road, long, going the wrong way, until the road bends and takes it.",
       "At the Marine Lab turnout the Saab is idling at the chain with the top down and the heater going full on the floor, the dash lit green in the dark. He takes the RAZR out of his pocket and turns it off, and gets in."
      ],
      "goto": "s07"
@@ -396,7 +394,7 @@
      "response": [
       "“I’m meeting somebody.”",
       "“Okay,” Lena says, and moves Laney’s hair off Laney’s face with one finger.",
-      "He goes down the steps and turns west on Ocean Road, away from Delgado, with his hands in the Carhartt. At the first streetlight he looks back once. She’s still on the top step with Laney asleep on her shoulder and Julian’s headlights on the both of them, watching him go the wrong way.",
+      "He goes down the steps and turns west on Ocean Road, away from Delgado, with his hands in the Carhartt. He doesn’t look back. Julian’s headlights are on the steps behind him, and they throw his shadow out ahead of him down Ocean Road, long, going the wrong way, until the road bends and takes it.",
       "At the Marine Lab turnout the Saab is idling at the chain with the top down and the heater going full on the floor, the dash lit green in the dark. He takes the RAZR out of his pocket and turns it off, and gets in."
      ],
      "goto": "s07"
@@ -412,7 +410,7 @@
       "“I’ll walk.”",
       "“It’s the other way.”",
       "“I know.”",
-      "He goes down the steps and turns west on Ocean Road, away from Delgado, with his hands in the Carhartt. At the first streetlight he looks back once. She’s still on the top step with Laney asleep on her shoulder and Julian’s headlights on the both of them, watching him go the wrong way.",
+      "He goes down the steps and turns west on Ocean Road, away from Delgado, with his hands in the Carhartt. He doesn’t look back. Julian’s headlights are on the steps behind him, and they throw his shadow out ahead of him down Ocean Road, long, going the wrong way, until the road bends and takes it.",
       "At the Marine Lab turnout the Saab is idling at the chain with the top down and the heater going full on the floor, the dash lit green in the dark. He takes the RAZR out of his pocket and turns it off, and gets in."
      ],
      "goto": "s07"
