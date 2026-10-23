@@ -1730,3 +1730,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     - Same move one-on-one: **Theo telling Jack, and Laney telling Lena, how they feel about things, or more importantly
       people** (heavy-handed "hypotheticals," badly hidden notes, a line said twice because the target missed it).
     - Jack (POV) clocks that it's weird, not why; the player sees the seams.
+- **Theo's admission about Skye (player; much later; room places it, after the alliance reveal).** Theo admits he **felt
+  guilty about doing it to Skye**: he knew everything between her and Jack was real, and she's his old friend. But
+  Jack would clearly be happier long term with Lena, and vice versa. He **wants to tell himself Skye will be happier
+  with someone like Jack but closer to her worldview**, and admits **he'll never know unless she finds it.** Then,
+  with a sad smile: **he erred on the side of the Catholics' happiness, because Skye's the only one allowed marital
+  do-overs.** (Adapt to his voice; the last line near-verbatim.)
