@@ -1493,3 +1493,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   hurt by Jack.** But she is **eventually grateful that he told her the truth, and that he did it before anything
   happened** (before they slept together). She stays in the wider world via Theo; the slow thaw is the room's to pace
   across later seasons.
+  - **Clarification (player): how Skye takes the breakup is still the room's choice** (acceptance, or fighting back for
+    him hard, whichever fits her character). **One option is now OFF the table: that she knew all along and expected
+    it.** **She didn't. It was always real to her.** (Her clocking Lena in S1 is jealousy and intuition, never
+    foreknowledge or resignation.)
