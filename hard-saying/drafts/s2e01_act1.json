@@ -1,0 +1,416 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "SATURDAY · 4:55 PM · PITTSBURGH INTERNATIONAL AIRPORT → ROUTE 60 NORTH",
+   "set": {
+    "resolve.jack": "+1",
+    "resolve.lena": 6
+   },
+   "body": [
+    "Western Pennsylvania comes up under the cloud floor all at once, and it’s white. The jet drops through the last of the gray with its wing light blinking — on, and the snow streams past it sideways, every flake lit; off, and there’s only the wing — and below it the ground is laid out in white squares stitched together with black lines of trees, a farm pond frozen flat, a county road drawn on it in headlights, a water tower with its name snowed over. After a December of fog and sixty degrees he had forgotten it could do this: just fall, all afternoon, for no reason but December. He keeps his forehead on the plastic until the runway comes up and takes the snow away under the wheels.",
+    "At the gate he holds the red key down, and walks up the jetway with the RAZR waking in his hand.",
+    {
+     "if": "reliquary_with_jack",
+     "text": "Every other step, through the pocket of the Carhartt, the corner of the tin finds his hip.",
+     "else": "The Carhartt still has the beach in it: salt dried white along the seams at the cuffs."
+    },
+    "He reads the stack on the long escalator down to baggage claim, standing on one step with his hands full of phone while the snow goes past the tall glass wall beside him.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Landed. Benedict made John Paul and Pius XII venerable this morning. Pius is going to be a whole thing. —L.",
+     "time": "2:12 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "dad is in short term since 2:30. brought a thermos and the browns hat. dont be weird",
+     "time": "2:31 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Tess’s water broke in the Rouses. Mama says that counts as a sign. We’re at Touro. Kickoff’s 7:20 our time. You promised. —L.",
+     "time": "4:40 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "did the snow globe have snow in it. report back",
+     "time": "4:51 PM"
+    },
+    "Pius is going to be a whole thing. He knows already which side of it she’ll take, and that she’ll take the other one too, at speed, if he takes hers. At Gina’s *dont be weird* he looks down over the rail for a thermos.",
+    "Halfway down, he answers one.",
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "landed. ill watch",
+     "time": "4:58 PM"
+    },
+    "His father is at the bottom of the escalator. He has the Browns knit hat on with snow still caught in the weave — he walked over from short-term, then, rather than circle — and the thermos under one arm like a football, and he watches Jack come down without waving. He says, “Which one,” meaning the carousel, and walks him to it, and when the duffel comes around Frank has it off the belt and the strap settled on his own shoulder before Jack can get a hand to it. Then he hugs him, with the arm that’s free. One arm. The thermos between them; the wet wool of the hat against Jack’s ear.",
+    "“You eat?”",
+    "“On the plane.”",
+    "“That’s not eating.”",
+    "Somebody gave him that one in the kitchen this morning. As soon as it’s out, Frank looks off down the belt.",
+    "They go out across the walkway to short-term with the snow blowing in under the roof of it, Frank a half step ahead with the duffel. He won’t give it back. The Silverado is on the second level with two inches on the hood. Frank starts it, and unscrews the thermos and pours the lid full and holds it out — coffee, Ma’s, from the house, still hot after two and a half hours — and while Jack drinks it he gets the scraper out from behind the seat and clears the windshield in long strokes with the engine running. The duffel rides in the middle of the bench seat with the lap belt across it, because Frank belts it.",
+    "Route 60 north is two black ruts in the slush and the taillights of a salt truck. The wipers go. The defrost is on high and KDKA is on low: a man counting accidents on the Parkway, the Steelers tomorrow against Green Bay, a woman who wants to sell them gutters. The airport hotels go by with their signs snowed half over, and then the dark. Somewhere past Moon Township Frank says, “Your sister’s been on that computer in the basement every night since Thanksgiving. Says it’s for school.”",
+    "“It’s for school.”",
+    "“Uh huh.” The wipers. “Tests go alright?”",
+    "“Good. I find out Monday.”",
+    "“Good.” A semi goes by on the left and buries them in slush, and the wipers fight their way out of it. “Hall’s got a list up.”",
+    "“For what?”",
+    "“The small car.” The wipers go across and back. “Spring.” Across and back. “Maybe.”",
+    "That’s the news. Beaver County goes by unseen, the snow coming at the glass out of the black, thrown. After a mile of wipers:",
+    "“Your mother says there’s a girl.”"
+   ],
+   "choices": [
+    {
+     "text": "“There’s a girl, Dad.”",
+     "tag": "Candor",
+     "set": {
+      "s2e1_frank": "candor",
+      "soul.honesty": "+1"
+     },
+     "key": "In the truck from Pittsburgh your father asked about the girl your mother had heard about. You told him there is one.",
+     "response": [
+      "Frank drives a mile. A plow passes going the other way with its orange light turning on the snow, and the truck rocks in its wake.",
+      "“Not the Saints one.”",
+      "“No.”",
+      "Another mile.",
+      "“Okay.”",
+      "Past New Castle the snow thins to a few flakes swimming in the high beams. The sign for Ohio comes up white with a ridge of snow along its top edge, and goes by. Down along the river below the road, where the Valley opens out in the dark, what’s left of the mills stands in the snow: a run of sheds with the roofing long gone and a furnace frame beside them, the steel ribs of it in rows against the sky, and snow laid along every crosspiece, white lines drawn on black."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“It’s the Saints one.”",
+     "tag": "Lie",
+     "set": {
+      "s2e1_frank": "lie",
+      "soul.honesty": "-1"
+     },
+     "key": "In the truck from Pittsburgh your father asked about the girl your mother had heard about. You told him it was Lena.",
+     "response": [
+      "Frank, to the windshield: “Your mother says it ain’t.”",
+      "The wipers go across and back, and the salt truck ahead of them throws a spray of it against the glass.",
+      "“God help you,” his father says, and turns KDKA up a notch.",
+      "Past New Castle the snow thins to a few flakes swimming in the high beams. The sign for Ohio comes up white with a ridge of snow along its top edge, and goes by. Down along the river below the road, where the Valley opens out in the dark, what’s left of the mills stands in the snow: a run of sheds with the roofing long gone and a furnace frame beside them, the steel ribs of it in rows against the sky, and snow laid along every crosspiece, white lines drawn on black."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“Which one?”",
+     "tag": "Wit",
+     "set": {
+      "s2e1_frank": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "In the truck from Pittsburgh your father asked about the girl your mother had heard about. You asked him which one.",
+     "response": [
+      "Frank looks over at him for the length of an overpass — the dark coming down over the cab and lifting off it again — and back at the road.",
+      "“Don’t make me tell your mother you said that.”",
+      "And he laughs, short, through his nose. It’s the first one Jack has gotten out of him since the escalator, and he’ll take it.",
+      "Past New Castle the snow thins to a few flakes swimming in the high beams. The sign for Ohio comes up white with a ridge of snow along its top edge, and goes by. Down along the river below the road, where the Valley opens out in the dark, what’s left of the mills stands in the snow: a run of sheds with the roofing long gone and a furnace frame beside them, the steel ribs of it in rows against the sky, and snow laid along every crosspiece, white lines drawn on black."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "SATURDAY · 6:40 PM · GLENWOOD AVENUE",
+   "set": {
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "Frank has strung blue lights around the bathtub Madonna in the side yard, three times around the tub and once over the top, and they’ve got snow on them now, and so has she: a little on each shoulder, a little in each of her two open hands. Two doors up, the neighbors’ inflatable has been changed over to a Santa, and the Santa is lying face-down in the yard. In the front window the tree is up with every ornament Jack made at St. Brigid’s in second grade still on it — the clothespin reindeer, the paper-plate angel with his school picture for a face — and along the mantel the stockings hang in their row with the names on the cuffs in Ma’s glitter glue: FRANK, MARIA, DANNY, JACK, GINA, ROSIE, NONNA.",
+    "Gina has the storm door open before he’s up the steps. She hugs him like a normal person, arms around his neck, her cheek against the snow on the Carhartt, and says into his collar, low, “Did she send you anything.”",
+    "“G.”",
+    "“*Just asking.*” She lets go and puts both hands in the front pocket of her sweatshirt, where they can’t do anything.",
+    "Rosie is behind her in pajamas with a drawing held up in both hands at the height of his face: Jack, very tall, beside a crab the size of a dog and a Christmas tree with a star bigger than either of them. “That’s you,” she says. “That’s a crab.” And Ma, from the kitchen doorway with a dish towel over her shoulder: “Did you eat? You didn’t eat. I can hear it.” She gets to him past both girls and takes his face in her two hands, wet dish towel and all, and kisses him on the side of the head. “You smell like an airplane.” Behind him Frank comes up the steps with the duffel, stamps the snow off on the mat, and sets it down by the radiator without a word.",
+    "On the mantel, over the stockings, the Christmas cards stand open in a row, and at the front of the row, where you’d see it first from the door, is one on stationery with cows on it, and Ma has stood it there and says nothing about it. Jack knows the cows from the mat, with one boot off. Later, up close, it says *To the Costigans* in round blue ballpoint, and *Praying for Mrs. Rinaldi’s hand*.",
+    "Nonna is in her chair by the front window with the San Giovanni rosary in her left hand, and on the right, where the cast was, a beige splint with Velcro straps.",
+    "“Giacomino.”",
+    "He kneels on the rug by the chair so she won’t have to look up, and she takes his face in her left hand and turns it to the lamp to see what California has done to it. “Nonna. There’s a lady in New Orleans who lights a candle for you every Sunday. Mémère. She told me to tell you she’s still lighting the whole name.”",
+    "Nonna’s chin comes up off her chest. “Carmela Rinaldi,” she says, the way she says it to doctors. “*Tutto.*”",
+    {
+     "if": "e22_bless==\"grace\"",
+     "text": "He tells her a priest in California turned around on his church steps toward Ohio and made a cross in the air for her, by name. “Carmela,” she agrees, pleased with him, like he’s finally got it right."
+    },
+    "Rosie wants to know what’s in the duffel. He unbuckles the strap to get at the stuffed buffalo he bought her in the Denver airport, and Theo’s gray throw, rolled tight under the strap since the Delgado lobby, comes loose and unrolls across the rug to Nonna’s slippers. Rosie takes the buffalo and names it Denver on the spot. Nonna’s left hand goes down to the throw. She rubs a corner between her thumb and the side of her finger.",
+    "“*Questo è di qualcuno ricco.*”",
+    "It goes over her knees. “Is that the rich one’s?” Ma says from the doorway. “It was,” Jack says. By the time Ma has gone back to the stove it’s been tucked in at both sides, and Nonna has her hand flat on it, and nobody translates.",
+    "Then Nonna looks past him at the front door. “*Viene Danny?*”",
+    "Ma, with the dish towel: “Not this year, Ma.”",
+    "Nonna nods at that, and moves a bead along, and then her eyes come up to Jack, black and perfectly clear, in front of Ma. “*E l’attrice?*”",
+    "“She means Gina’s show,” Ma says.",
+    "On the stairs Gina coughs on nothing, hard, and has to hold the banister."
+   ],
+   "choices": [
+    {
+     "text": "“Più tardi, Nonna.”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e1_nonna": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Più tardi,” she agrees, and pats his cheek with the good hand, satisfied. Five minutes later, with his coat off and Rosie on his knee explaining the buffalo to him, she asks again, as new: “*E l’attrice?*”",
+      "The cable guide crawls up the front-room set in its slow blue rows while Jack looks for the game — ESPN, the Weather Channel, three channels selling jewelry, no NFL Network, not in this house — and when he turns around from it his father is standing in the kitchen doorway with his coat back on and his keys in his hand. “Not on my couch,” Frank says. “Not the Cowboys. There’s a place.”",
+      "“Frank,” Maria says, from the stove.",
+      "“I know.”"
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“Quale attrice?”",
+     "tag": "Wit",
+     "set": {
+      "s2e1_nonna": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "She lifts the rosary at him like a fist, the crucifix swinging off the bottom of it. Gina goes up the rest of the stairs as fast as a person can go without running, and a door shuts.",
+      "The cable guide crawls up the front-room set in its slow blue rows while Jack looks for the game — ESPN, the Weather Channel, three channels selling jewelry, no NFL Network, not in this house — and when he turns around from it his father is standing in the kitchen doorway with his coat back on and his keys in his hand. “Not on my couch,” Frank says. “Not the Cowboys. There’s a place.”",
+      "“Frank,” Maria says, from the stove.",
+      "“I know.”"
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“Sì, Nonna. L’attrice.”",
+     "tag": "Candor",
+     "set": {
+      "s2e1_nonna": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "Nonna nods, a woman whose information has been confirmed, and goes back to the beads. Ma, who follows Calabrese at a walk and not at that speed, has already turned back to the stove. On the stairs Gina’s eyes are enormous.",
+      "The cable guide crawls up the front-room set in its slow blue rows while Jack looks for the game — ESPN, the Weather Channel, three channels selling jewelry, no NFL Network, not in this house — and when he turns around from it his father is standing in the kitchen doorway with his coat back on and his keys in his hand. “Not on my couch,” Frank says. “Not the Cowboys. There’s a place.”",
+      "“Frank,” Maria says, from the stove.",
+      "“I know.”"
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s03b": {
+   "slug": "SUNDAY · 12:40 AM · THE KITCHEN",
+   "body": [
+    "The wedding soup is still on low at twenty to one, the lid lifting and settling on the pot. Ma is up — not waiting up; she would want that understood — at the counter in her robe, writing a list on the back of an envelope. Through the doorway Nonna is awake in her chair with the lamp on and the cashmere over her knees, and Gina is at the kitchen table in a Cardinal Mooney sweatshirt that used to be Danny’s, eating soup out of a mug with a fork, for the meatballs.",
+    "He has been telling Ma about the game for ten minutes, because she asked: Lena’s sister in labor through three quarters, Lena’s father in a Brees jersey yelling at a television bolted to a hospital wall, Lena’s grandmother with a Thermos for the mother, Lena saying the baby came in undefeated so the father doesn’t get a vote. Across the table Gina has started putting up a finger every time he says the name, without looking up from the soup. She is on her second hand.",
+    "At 12:40 the RAZR buzzes in his coat on the back of the chair.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "*Picture Msg* · Lucille Odile Fontenot, 7 lb 3 oz. Undefeated. —L.",
+     "time": "12:40 AM"
+    },
+    "It comes the way they come on this phone: a gray square, a bar that fills from the left at its own pace, then a picture the size of a postage stamp, too dark until he tilts it up to the light over the stove. A newborn in a striped hospital blanket, pink and white, asleep with her mouth open and one fist up by her ear like she’s got a question. Tess’s hand under her head. In the corner of the frame, out of focus, a loop of black beads that can only be Mémère’s.",
+    "“Is that the baby?” Ma is at his shoulder with the envelope. “Let me see the baby.”",
+    "From the front room: “*La bambina?*”",
+    "He’s in the inbox to get to it, and the baby is at the top of the list. Under her, down the little screen, the same small picture icon five more times.",
+    "Ma’s chin is at his ear. Rosie, woken by something, is on the stairs in her nightgown with her hair flat on one side. And Gina, who doesn’t know a thing about any picture, takes one look at her brother’s face and puts her fork down in the mug."
+   ],
+   "choices": [
+    {
+     "text": "*Open it yourself. Hold it out at arm’s length.*",
+     "tag": "Control",
+     "set": {
+      "s2e1_baby": "control",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He opens it and holds the phone out at arm’s length with his thumb on the hinge, the baby turned to the room, and they lean in, all of them, Ma with her hand at her collar. From the chair, a long way off: “*Bella.*” From the stairs, Rosie: “She looks like a potato.” He snaps it shut.",
+      "The phone goes back in his pocket, shut. From the chair Nonna announces, “*La bambina della suora.*”",
+      "“Her *sister’s*, Ma,” Maria says. “The nun’s *sister*.”",
+      "Nonna lifts her chin at the window and takes back nothing. Maria turns the soup off. “Bed. All of you. Mass is at eight, and I need you after.”",
+      "At one he’s on the top step of the basement stairs with the door pulled shut behind him and the furnace breathing down there in the dark, and he answers California.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "yes. its snowing in the snow globe",
+       "time": "1:04 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "GOOD. shake it for me",
+       "time": "1:06 AM"
+      },
+      "He shakes the phone. On the top step, in the dark, with the furnace going below him, he is grinning so hard his face hurts."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "“She looks like Tony. Everybody in that family looks like Tony.”",
+     "tag": "Wit",
+     "set": {
+      "s2e1_baby": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Who’s Tony?” Ma says.",
+      "“Lena’s dad. I’ve never seen him.” He describes the baby instead — small, furious about something, a lot of black hair, a hat like a sock — and makes a bad job of it, and in the end he carries the phone into the front room and opens it for Nonna alone, tilted to the lamp, his thumb over the bottom of the screen.",
+      "The phone goes back in his pocket, shut. From the chair Nonna announces, “*La bambina della suora.*”",
+      "“Her *sister’s*, Ma,” Maria says. “The nun’s *sister*.”",
+      "Nonna lifts her chin at the window and takes back nothing. Maria turns the soup off. “Bed. All of you. Mass is at eight, and I need you after.”",
+      "At one he’s on the top step of the basement stairs with the door pulled shut behind him and the furnace breathing down there in the dark, and he answers California.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "yes. its snowing in the snow globe",
+       "time": "1:04 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "GOOD. shake it for me",
+       "time": "1:06 AM"
+      },
+      "He shakes the phone. On the top step, in the dark, with the furnace going below him, he is grinning so hard his face hurts."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "*Hand it to Rosie with the baby open.*",
+     "tag": "Reckless",
+     "set": {
+      "s2e1_baby": "reckless",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "Rosie comes down off the stairs for it. Her thumb goes straight for the arrow key — the down arrow, the one that walks the list — and Gina reaches across the table and takes the phone out of her sister’s hand. “MY turn.” She looks at the baby. “Cute.” She shuts it and passes it back to him across the soup.",
+      "She has no idea what she just did. His pulse does.",
+      "The phone goes back in his pocket, shut. From the chair Nonna announces, “*La bambina della suora.*”",
+      "“Her *sister’s*, Ma,” Maria says. “The nun’s *sister*.”",
+      "Nonna lifts her chin at the window and takes back nothing. Maria turns the soup off. “Bed. All of you. Mass is at eight, and I need you after.”",
+      "At one he’s on the top step of the basement stairs with the door pulled shut behind him and the furnace breathing down there in the dark, and he answers California.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "yes. its snowing in the snow globe",
+       "time": "1:04 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "GOOD. shake it for me",
+       "time": "1:06 AM"
+      },
+      "He shakes the phone. On the top step, in the dark, with the furnace going below him, he is grinning so hard his face hurts."
+     ],
+     "goto": "s04"
+    }
+   ]
+  },
+  "s04": {
+   "slug": "SUNDAY · 8:00 AM · ST. BRIGID OF KILDARE",
+   "set": {
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "All four candles on the Advent wreath are lit this morning, and they stand in a staircase, four Sundays of burning: the first violet one down to a stub, the second a step up, the rose one from Gaudete a step past that, and today’s violet new and tallest, the flame barely into the wick. Snow light comes in gray through the windows on the east side. They take their pew on the left, in the order they have always taken it: Nonna on the aisle with her splint in her lap and her beads in the other hand, then Rosie, Ma, Jack, Gina, and Frank on the end with his hat on his knee.",
+    "Father Dom Bruno comes out of the sacristy favoring the left knee, and he reads the Gospel with a cough drop in his cheek. Luke. *Mary set out and traveled to the hill country in haste.* At *the infant leaped in her womb* Jack has a striped blanket in his head, seven pounds three ounces, and then Father Dom is reading on.",
+    "Gina leans over in the Creed, between *one in Being with the Father* and *for us men*, and whispers, “Did you sleep?” “No.” “Me neither.” Ma looks down the pew at both of them and they say the rest of it like Catholics.",
+    "He doesn’t preach long. He never has. He stands at the ambo with both hands on it and shifts the cough drop over.",
+    "“She just got the biggest news anybody ever got,” he says. “And what does she do? Does she sit with it? She goes to see somebody. Her cousin, who’s old, and pregnant, and stuck in the hills. In haste, it says. Not when it’s convenient.” He looks out at them over his glasses. “So go see somebody this week. Somebody who’s been waiting on you. Don’t make them wait anymore.”",
+    "And he sits down. Rosie, who has been timing him on her Hannah Montana watch, holds it up to Ma: four minutes. Ma pushes her arm back down.",
+    "At Communion Nonna goes up on Frank’s arm with the splint held against her coat, and kneels after — she isn’t supposed to — and nobody stops her. Jack kneels beside Ma with his hands over his face and prays the short way, the only way he’s any good at: for the baby, by her name, the first time he’s said it to God — Lucille Odile — and for Nonna’s hand, and for Danny, and for the drive.",
+    "On the steps after, in the snow, with Frank gone ahead to start the truck, Ma buttons her coat to the top and fixes her scarf and says, without making anything of it,",
+    "“You’re coming with me. He asked.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "dom",
+     "title": "Fr. Dom Bruno",
+     "text": "Pastor at St. Brigid’s since before I was old enough to serve. Bad left knee, a cough drop through the homily, and he keeps it short on purpose."
+    }
+   ],
+   "next": "s05"
+  },
+  "s05d": {
+   "slug": "SUNDAY · 3:55 PM · THE GARAGE",
+   "set": {
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "The space heater glows orange on the concrete and the Stroh’s fridge hums against the back wall, and on the workbench the radio has the Browns in Kansas City on the Cleveland station, at a volume Ma can hear through two doors. Somebody — Frank will not discuss who — has run a strand of colored lights along the pegboard over the bench, looped between the coffee can of drywall screws and the vise. Jack has the chair with the duct tape on the seat; he came straight out here from the truck at one and hasn’t gone in, and his father hasn’t asked him to. Frank has the bucket, turned over, and the thermos, and when he pours, the steam comes up off the lid smelling of Folgers. The door of the Stroh’s fridge hasn’t opened all afternoon.",
+    "It has been an afternoon. Cribbs has taken two kickoffs back for touchdowns, the second one a hundred and three yards, and the man on the radio still hasn’t got his voice back from it. Frank came up off the bucket for that one and put his head into the colored lights, and the noise brought Gina to the side door in her socks. “Ma says this isn’t a bar.” “Tell your mother a hundred and three.” “I don’t know what that means.” “She will.” Jerome Harrison has been running all day through a Kansas City defense that seems to have gone home at the half, and every time the radio gives his yards Frank says a number under his breath. “Two-thirty-seven.” Jim Brown’s. In the fourth quarter Harrison goes past it, and Frank quits saying it and just sits forward on the bucket with his elbows on his knees, his lips moving with the down and distance, a man at a Mass he knows by heart. Somewhere in the third quarter Jack noticed he was laughing too, at a Browns game, in December, and he can’t say when it started.",
+    "With forty-four seconds left Harrison goes twenty-eight yards for the score, and the radio loses its mind, and it’s Browns 41, Chiefs 34. Frank stands up off the bucket with the thermos lid in his hand.",
+    "“Two-eighty-six.”",
+    "That’s the call. Then he laughs — head back, at the colored lights, with coffee going over the rim of the lid onto his boot."
+   ],
+   "choices": [
+    {
+     "text": "“You’re not drinking.”",
+     "tag": "Candor",
+     "set": {
+      "s2e1_garage": "candor",
+      "s2e1_frank_xmas": true,
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "Frank looks down at the thermos.",
+      "“Your mother asked me. I said Christmas.” He screws the cap back on, all the way down, and sets it on the bench under the lights. “We’ll see about after.”"
+     ],
+     "goto": "s05e"
+    },
+    {
+     "text": "*Take the coffee he pours you. Say nothing about it.*",
+     "tag": "Sincerity",
+     "set": {
+      "s2e1_garage": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Frank fills the lid again and holds it out without asking, and Jack takes it. They pass it back and forth, two men and one thermos lid, while the radio gives them the run twice more in the highlights, and both times Frank says the number along with it."
+     ],
+     "goto": "s05e"
+    },
+    {
+     "text": "“Two-eighty-six. They’ll put him on a stamp.”",
+     "tag": "Wit",
+     "set": {
+      "s2e1_garage": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“They’ll trade him by March.” Frank sits back down on the bucket, still grinning, and pours."
+     ],
+     "goto": "s05e"
+    }
+   ]
+  },
+  "s05e": {
+   "slug": "SUNDAY · 7:35 PM · THE FRONT ROOM → DANNY’S ROOM",
+   "body": [
+    "At 7:35 the late game is down to its last play on the front-room set, Pittsburgh and Green Bay, no time on the clock. Roethlisberger throws it to the corner of the end zone and Wallace comes down with it there, and it’s Steelers 37, Packers 36, and Heinz Field is jumping up and down. From his chair Frank gives it the one word he has.",
+    "“Pittsburgh.”",
+    "“Language,” Ma says, from the dining-room table, where she’s doing the last of the cards.",
+    "“That’s a city.”",
+    "“Not the way you said it.” Rosie is asleep at the other end of the couch with Denver the buffalo under her arm, and Ma looks at her, and at the clock, and at Frank, and Frank gets up and carries her to bed.",
+    "At 9:14, in Danny’s room, with the little gold man on the shelf still missing his arm, the RAZR buzzes on the nightstand.",
+    {
+     "type": "sms",
+     "from": "Kevin",
+     "text": "Respectfully: did you sleep. Did you tell somebody something.",
+     "time": "9:14 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "yeah. my brother",
+     "time": "9:20 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Kevin",
+     "text": "Good. That’s the first text you’ve answered in a month.",
+     "time": "9:21 PM"
+    }
+   ],
+   "next": "s06"
+  }
+ }
+}

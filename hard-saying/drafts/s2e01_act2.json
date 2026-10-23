@@ -1,0 +1,403 @@
+{
+ "scenes": {
+  "s03": {
+   "slug": "SATURDAY · 8:20 PM · A BAR ON MARKET STREET",
+   "music": "The Pogues feat. Kirsty MacColl — “Fairytale of New York”",
+   "set": {
+    "resolve.lena": 6,
+    "knows_lucille": true,
+    "lena_godmother": true
+   },
+   "body": [
+    "The place on Market Street has a Stroh’s sign in the window with the S burned out and no other name anybody uses. Inside: a long bar under a pressed-tin ceiling, Christmas lights stapled along the top of the backbar mirror, and a television over the register that gets NFL Network because the owner’s brother-in-law is a Cowboys fan and pays for it. A dozen men in work coats and Browns knits. Most of them say *Frankie* when the door lets him in. Frank takes the stool at the end, under the set, and the bartender comes down to him.",
+    "“Canada Dry,” Frank says. “In a glass.”",
+    "The bartender looks at him once and takes down a glass. Jack gets a Coke. On the set the Saints are running out of the tunnel into the Superdome under a noise that makes the speaker over the register buzz, and Frank, who has never cared what happens to New Orleans on a Saturday night, turns his stool to watch them, because his son is.",
+    "At 8:22 the RAZR goes off in his coat. It’s Lena, and behind Lena it’s a room: a television turned up past what it’s for, a man yelling at it, a woman saying something low in French, the clunk of a vending machine.",
+    "“That’s Daddy,” she says, about the yelling. “In the Brees jersey. He wore it to the hospital; he’ll be buried in it. Mémère brought a Thermos *pour la mère* and she’s drinking it herself. Luc’s on his break, so there’s a policeman in the maternity ward eating Zapp’s. Remy drove down from Baton Rouge in an hour and ten minutes, which is a crime, which Luc is choosing not to see. Beau’s in and out of that door like a cuckoo clock. Josie’s doing the play-by-play for the nurses’ station.” Her breath catches up with her. “You said the garage.”",
+    "“The garage doesn’t get NFL Network. Neither does the house. I’m in a bar with my father.”",
+    "“Your *father’s* in a bar?”",
+    "Jack turns on the stool, a quarter turn, away from the end of it. “Drinking a ginger ale,” he says, lower.",
+    "On her end the room goes on — Tony telling the referees exactly what they are, a page for a doctor, the vending machine again — and under it her breath against the phone. “Tell him I said thank you for bringing you.”",
+    "Frank’s eyes don’t leave the set. “Tell her you’re welcome.”",
+    "The first half belongs to Dallas. Lena takes every first down personally, on behalf of the waiting room and the city and the Holy See, which she says is with them on this. At the half, in the middle of a sentence about the officiating, her LG dies.",
+    "The bar uses the half to stretch. Somebody feeds the jukebox, and the Pogues come on, the drunk man and the woman going at each other over the piano, and two old men at the far end who have known each other since Sheet & Tube sing the parts they know into each other’s faces, badly, with feeling. Frank drinks his ginger ale. Jack sits with the dead phone in his hand.",
+    "At two past ten it buzzes with a number he doesn’t know, and it’s her voice. “Remy’s,” she says. “Mine’s dead and his smells like a fraternity.”",
+    "The third quarter belongs to Dallas too. Somewhere in it she gets the 8-Ball out of her coat — he hears the slosh of the blue water, and the waiting room telling her to do it — and asks it, in front of everybody, whether the Saints are going to win this game. She reads him the window. “*Very doubtful.*” The waiting room groans at the news. “I’m going to throw it in the bayou.”",
+    "At a quarter past ten, Dallas driving again, a door bangs open on her end and the room goes up — a roar he takes for a touchdown until it keeps going past where a touchdown stops. Tony is shouting. Mémère is shouting in French. Somebody is crying in the high, helpless way that means good news, and then it’s Lena, crying and laughing and talking over her father: “She came, Jack. She came while they were undefeated. Beau doesn’t get a vote. It’s on the napkin. Luc *witnessed*.”",
+    "“What’s her name?”",
+    "“Lucille.” He hears her wipe her face on something, a sleeve. “For Grandmère. Odile in the middle, for Mémère, so nobody fights.” Over her shoulder, to someone: “I’m *telling* him.” And to him: “They’re letting us in two at a time and Mémère says she’s first, she says she’s earned it. Keep watching. Tell me everything.”",
+    {
+     "if": "jack_prays_14",
+     "text": "At the start of the fourth quarter, down twenty-one, Jack puts his Coke on the bar and prays for fourteen: a Hail Mary, start to finish, loud enough to carry to the far end of the bar. The men at the far end let him finish. Frank crosses himself without taking his eyes off the set."
+    },
+    "Brees comes back. A touchdown, and the men at the end of the bar, who have no business caring, make a noise anyway; another, and it’s seven, and three of them have turned into Saints fans for the night, and the brother-in-law has gone to stand by the pool table with his arms folded. The RAZR buzzes on the bar. Lena, from a hallway, with a cart going by — he can hear its wheels: “Tess asked me. To be godmother. With the epidural still in.”",
+    "“Yeah?”",
+    "“I said yes before she got to the *mother*.”",
+    "On the set the last drive ends. Dallas 24, New Orleans 17. The bar goes back to its drinks.",
+    "On the line Lena goes quiet, and he gets Touro instead: the television, somebody switching it off, Tony saying *Well*. Then she laughs and cries at once, the same breath, one sound. “She came in undefeated,” she says.",
+    "“You missed thirteen,” she says, “and you made it for the first one we lost. I’m not saying it’s your fault. I’m saying it’s a pattern.”",
+    {
+     "if": "e22_saints==\"concede\"",
+     "text": "“You said He was a Saints fan.” “He had a delivery,” Jack says."
+    },
+    {
+     "if": "e22_saints==\"press\"",
+     "text": "“And don’t you say Detroit to me tonight.”"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“I prayed for fourteen. Out loud. In a bar.”",
+     "tag": "Promise",
+     "if": "jack_prays_14",
+     "set": {
+      "s2e1_loss": "prays",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "The night the Saints lost their first game, her niece born undefeated in the third quarter, you told Lena you’d prayed for fourteen, out loud, in a bar.",
+     "response": [
+      "“I prayed for fourteen,” Jack says. “Everybody heard.”",
+      "She’s laughing before he’s through. “And you got a baby instead.” She blows her nose. “God has a sense of humor, Jack, and it’s *Cajun*.”"
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“She came in undefeated. That’s the record that counts.”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e1_loss": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "The night the Saints lost their first game, her niece born undefeated in the third quarter, you told Lena the baby’s record is the one that counts.",
+     "response": [
+      "“She came in undefeated,” Jack says. “That’s the record that counts.”",
+      "The line is quiet on her end, and then he hears Tony, in the waiting room, telling everybody what the Ohio boy said, and getting it wrong, and the waiting room agreeing with him anyway."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“Thirteen and one. The Browns would kill a man for that.”",
+     "tag": "Wit",
+     "set": {
+      "s2e1_loss": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "The night the Saints lost their first game, her niece born undefeated in the third quarter, you told Lena the Browns would kill a man for thirteen and one.",
+     "response": [
+      "“Thirteen and one,” Jack says. “The Browns would kill a man for that.”",
+      "Frank, to the set: “We would.” And Lena laughs, with the crying still in it."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "Say nothing. Let her have it.",
+     "tag": "Restraint",
+     "set": {
+      "s2e1_loss": "restraint",
+      "trait.control": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "The night the Saints lost their first game, her niece born undefeated in the third quarter, you said nothing and let Lena have it.",
+     "response": [
+      "He keeps the phone at his ear and lets her have it. The waiting room, Tony’s voice going hoarse, somebody’s rosary clicking against a chair. A commercial for trucks on the set over his head. The line stays open.",
+      "“You’re still there,” she says.",
+      "“I’m here.”"
+     ],
+     "goto": "s03a"
+    }
+   ]
+  },
+  "s03a": {
+   "slug": "SATURDAY · 11:40 PM · THE SILVERADO, MARKET STREET → GLENWOOD AVENUE",
+   "body": [
+    "Market Street has been plowed once and salted twice, and the salt comes up gray in the headlights. The defrost has cleared two fans in the windshield, and the wipers knock the new snow off them. Lena is still on the line. She’s on the floor of Tess’s room now, she tells him, with her back against the heater under the window, and the baby is asleep, and Tess is asleep, and Beau is asleep in the chair with his mouth open, and she is staying on the phone until somebody in authority makes her stop. She keeps her voice down for all three of them, and the call goes down Market Street at thirty miles an hour, about nothing: the baby’s hair, of which there is a great deal; a hospital bracelet on a wrist the size of Jack’s thumb; what Mémère said to the night nurse in French, which Lena won’t translate.",
+    "Somewhere at her end a door opens. A woman’s voice, low, about a blood pressure, and then nearer, amused: “That your boyfriend?”",
+    "“My friend in Ohio,” Lena says.",
+    "Frank keeps the truck in the plowed track. The salt goes by in the lights.",
+    "At the corner of Glenwood she lets him go. “I’m sending you her,” she says. “In a minute. Don’t you dare show anybody who’ll say she looks like Tony.” And she hangs up.",
+    "Frank drives a block of Glenwood with the wipers going. “Her sister had a baby during the game?”",
+    "“Third quarter.”",
+    "The light at Midlothian is red over nothing. Frank sits it out anyway, both hands on the wheel, and when it goes green and they’re through it: “That’s a Catholic family.”"
+   ],
+   "next": "s03b"
+  },
+  "s12b": {
+   "slug": "THURSDAY · 8:00 PM · THE GARAGE",
+   "music": "Louis Armstrong — “Christmas in New Orleans”",
+   "set": {
+    "resolve.jack": "+1",
+    "rel.lena.warmth": "+1"
+   },
+   "body": [
+    {
+     "if": "xmas_eve_call",
+     "text": "At eight o’clock he calls her from the garage.",
+     "else": "At eight o’clock the phone goes off in his hand halfway across the yard, and he answers it in the garage."
+    },
+    "His father’s garage at Christmas: the space heater ticking up to orange at his shins, the Stroh’s fridge humming to itself, the radio off for once, and over the workbench a string of colored lights Frank tacked across the pegboard some December when Jack was in grade school and never took down, red and green and one blue bulb dead in the middle, strung over the painted outlines of the tools. Jack has the Carhartt on over his good shirt, and squid on his hands that the sink didn’t get off.",
+    "“Don’t talk,” Lena says. “Listen.”",
+    "She holds the phone up. It comes down the line as a roar with cracks in it — the cane going off in the heat like cap guns, a string of firecrackers some cousin lit too close, kids shrieking, a man’s voice, *Remy, get back from that*, the deep soft rush of a big fire pulling air — and under all of it, thin and tinny out of a truck parked on the levee with its doors open, Louis Armstrong.",
+    "He takes it out of the garage, down the driveway past his father’s truck. Christmas Eve has come in clear and bitter. The old snow on the lawns has a crust a man could stand on, Frank’s blue lights are on around the Madonna in the side yard, and in the south, over the roofs across Glenwood, there’s a half-moon, white and very sharp, cut clean down the middle.",
+    "“Can you see the moon?” She has the phone back at her ear. The fire is behind her now, and her breath is close.",
+    "“I can see the moon.”",
+    "And the line goes quiet with both of them on it. The fire keeps on at her end, low. At his, the furnace kicks on in the house and a car goes by down at the corner with its radio up, and is gone. His breath goes up white toward the moon. There is room in it for anything either of them might say. He has a sentence; he holds it in his mouth like a coal. Then a firecracker goes off close to her, and some child screams with joy, and Lena laughs, and the quiet is over.",
+    "He gives her Glenwood, since she gave him the fire. The Madonna in her bathtub under the blue lights with snow on her shoulders. The neighbors’ Santa, face-down on the lawn since Saturday; his father calls it the economy. Theo in the fish-fry apron cleaning squid under Nonna’s orders from the doorway. Rosie’s grace, long enough that the clams went cold, with the baby in New Orleans in it. He leaves out the bread basket.",
+    "“Theo’s *there*?”",
+    "“In my father’s parka. He ate an eel. He wants you to know.”",
+    "“Lord. Tell him I’m proud of him. Tell him Papa Noël saw.”",
+    "She gives him the baby, who stayed home with Tess and Beau and Mama and is five days old and has a grip, Lena says, like a longshoreman. She gives him godmother: “I’ve been practicing my renunciations. I renounce Satan. I renounce all his works. I renounce the Dallas Cowboys.” She gives him her father, who on Saturday night cried for ten minutes on a man from Metairie in the waiting room and found out afterward the man was a Falcons fan, and has forgiven him, it being Christmas.",
+    {
+     "if": "knows_julian_newyear",
+     "text": "“Julian lands the thirtieth,” she says. “Mémère’s ironing a tablecloth.” There’s frost on the tailgate of his father’s truck, and when Jack takes his hand off it his palm has left a print there, melted down to the green paint."
+    },
+    "“You stood up,” she says. “Didn’t you. In your kitchen.”",
+    "“With a squid in my hand.”",
+    "Her laugh goes up over the fire. Somebody near her asks what’s funny, and she says *the Pope*, and is told that isn’t funny, and laughs harder.",
+    "“They’re lighting the next one down,” she says. “You can see four from here. Listen.”"
+   ],
+   "choices": [
+    {
+     "text": "“I can hear it.”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e1_levee": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "On Christmas Eve Lena held her phone up to a bonfire on the levee. You told her you could hear it.",
+     "response": [
+      "“I can hear it,” Jack says.",
+      "She holds it up again, longer this time, out toward the fire, and he stands in the driveway with the RAZR against his ear and the half-moon over the roofs and listens to a levee burn: the cane, the cousins, Armstrong giving way to a man selling trucks in Gonzales. When she brings the phone back she doesn’t say anything about it, and he doesn’t either."
+     ],
+     "goto": "s12c"
+    },
+    {
+     "text": "“Nonna set a place for Danny tonight.”",
+     "tag": "Candor",
+     "set": {
+      "s2e1_levee": "candor",
+      "told_lena_danny_place": true,
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "On Christmas Eve Lena held her phone up to a bonfire on the levee. You told her Nonna had set a place for Danny.",
+     "response": [
+      "“Nonna set a place for Danny tonight,” Jack says. “His plate. His First Communion napkin ring. Ma left it.”",
+      "The fire, and her breath against the phone. Something pops on the levee and a cousin cheers it. “Tomorrow,” Lena says, “I’ll tell you about ours.”"
+     ],
+     "goto": "s12c"
+    },
+    {
+     "text": "“Tell Papa Noël I’ve been good. Mostly.”",
+     "tag": "Wit",
+     "set": {
+      "s2e1_levee": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "On Christmas Eve Lena held her phone up to a bonfire on the levee. You told her to tell Papa Noël you’d been good. Mostly.",
+     "response": [
+      "“Tell Papa Noël I’ve been good,” Jack says. “Mostly.”",
+      "“Mostly is the family motto. It’s on the crest.” She passes it along to somebody on her end, and Josie, from the pitch of the outrage, tells her that is not how Papa Noël works, and Lena tells Josie it is in Ohio."
+     ],
+     "goto": "s12c"
+    },
+    {
+     "text": "“I wish I was standing next to you.”",
+     "tag": "Unguarded",
+     "if": "trait.sincerity>=120",
+     "cue": "Lena will remember that.",
+     "set": {
+      "s2e1_levee": "unguarded",
+      "said_it_plain_n": "+1",
+      "rel.lena.heat": "+1",
+      "resolve.jack": "-1"
+     },
+     "key": "On Christmas Eve Lena held her phone up to a bonfire on the levee. You told her you wished you were standing next to her.",
+     "response": [
+      "“I wish I was standing next to you.”",
+      "On the levee a stack of cane goes up with a crack, and a cousin whoops at it. “You’d hate it,” Lena says, right away, too lightly. “Everybody’s cousin is here, and they all want to know about the Ohio boy.”"
+     ],
+     "goto": "s12c"
+    }
+   ]
+  },
+  "s12c": {
+   "slug": "THURSDAY · 8:35 PM · THE GARAGE",
+   "body": [
+    "At twenty-five to nine the cousins start loading the trucks at her end; he hears the tailgates. “Go back to your fishes, Youngstown,” Lena says. “I’ve got a Mass.”",
+    "“Midnight.”",
+    "“Ours is at midnight. Yours is at midnight.” A truck door, and her boots on gravel. “I’ll be an hour behind you the whole way.”",
+    "She hangs up first.",
+    {
+     "if": "reliquary_with_jack && e22_jacket==\"reckless\"",
+     "text": "In the garage the colored lights are on over the bench, and the space heater has the place nearly warm. He takes the tin out of the Carhartt and opens it on the workbench under the dead blue bulb, and counts them with one finger, filter by filter. Eleven. He shuts the lid and puts it back in the pocket."
+    },
+    {
+     "if": "reliquary_with_jack && e22_jacket!=\"reckless\"",
+     "text": "In the garage the colored lights are on over the bench, and the space heater has the place nearly warm. He takes the tin out of the Carhartt and opens it on the workbench under the dead blue bulb, and counts them with one finger, filter by filter. Ten. He shuts the lid and puts it back in the pocket."
+    },
+    {
+     "if": "!reliquary_with_jack",
+     "text": "In the garage the colored lights are on over the bench, and the space heater has the place nearly warm. He stands under them a minute with his hand in the Carhartt’s pocket."
+    },
+    "Through the side door the kitchen is loud: Rosie still doing the donkey without the radio, the pans going into the sink, his mother calling his name."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "cigarette",
+     "title": "The Reliquary",
+     "if": "reliquary_with_jack && e22_jacket==\"reckless\"",
+     "text": "An Altoids tin from a pea-soup restaurant in Buellton. RELIQUARY on the lid. No. 1: the Lighthouse. No. 2: Malibu, before breakfast. No. 3: the harbor — she smoked half of it first. No. 4: a clove, on the Delgado roof, at a wake. By dispensation. Do not ask. No. 5: the Ferrer Tower, in the bells. No. 6: Lucia, a motel porch, under the stars — on the back of the receipt. No. 7: Del Playa, on the widow’s walk, on the back of a HALO OR HORNS card. All Hallows — the occasion. No. 8: the east stairs, before light, the morning after All Souls. She smoked half. On the back of an All Souls card — she wrote All Souls anyway. No. 9: Campus Point, Veterans Day, on the back of the 12:10 worship aid. No. 10: the Walgreens on Mission Street, St. Nicholas Eve, half past one in the morning, out of my own pocket. ‘For the saint.’ Into her cardigan. She’ll file it. No. 11: the Point, the last night. She took it before I could light it. ‘Not here.’ She gave me the tin to keep over Christmas. Count them. Christmas Eve, in Dad’s garage after the levee, I counted: eleven."
+    },
+    {
+     "kind": "note",
+     "id": "cigarette",
+     "title": "The Reliquary",
+     "if": "reliquary_with_jack && e22_jacket!=\"reckless\"",
+     "text": "An Altoids tin from a pea-soup restaurant in Buellton. RELIQUARY on the lid. No. 1: the Lighthouse. No. 2: Malibu, before breakfast. No. 3: the harbor — she smoked half of it first. No. 4: a clove, on the Delgado roof, at a wake. By dispensation. Do not ask. No. 5: the Ferrer Tower, in the bells. No. 6: Lucia, a motel porch, under the stars — on the back of the receipt. No. 7: Del Playa, on the widow’s walk, on the back of a HALO OR HORNS card. All Hallows — the occasion. No. 8: the east stairs, before light, the morning after All Souls. She smoked half. On the back of an All Souls card — she wrote All Souls anyway. No. 9: Campus Point, Veterans Day, on the back of the 12:10 worship aid. No. 10: the Walgreens on Mission Street, St. Nicholas Eve, half past one in the morning, out of my own pocket. ‘For the saint.’ Into her cardigan. She’ll file it. She gave me the tin to keep over Christmas. Count them. Christmas Eve, in Dad’s garage after the levee, I counted: ten."
+    }
+   ],
+   "next": "s13"
+  },
+  "s18": {
+   "slug": "FRIDAY · 9:05 PM · THE SILVERADO, IN THE DRIVEWAY",
+   "set": {
+    "resolve.lena": 5,
+    "rel.lena.trust": "+1",
+    "knows_memorial": true
+   },
+   "body": [
+    "It has rained all of Christmas, and at nine it’s still coming, steady and gray through the streetlight, running down the windshield of his father’s truck in sheets. Jack sits behind the wheel in the driveway with the engine going for the heater and the wipers off, and the house beside him is lit in every window: the tree in the front one, Nonna’s lamp, his mother crossing the kitchen. The rain drums on the cab roof a foot over his head.",
+    "Lena is on the back steps on Dupre Street with the screen door behind her. Christmas dinner is over and the house isn’t; every time the door opens he gets it — voices, a television, dishes — and then the spring pulls it to. Remy is singing in the kitchen, badly, on purpose. Tess has the baby asleep on her in the front room, Lena says, and nobody is allowed to breathe in that direction.",
+    {
+     "if": "told_lena_danny_place",
+     "text": "“I said I’d tell you about ours,” she says."
+    },
+    {
+     "if": "!told_lena_danny_place",
+     "text": "She starts on her own, before he can ask."
+    },
+    "“You already know the menu.”",
+    "“Tell me anyway.”",
+    "So she tells him Réveillon the way it went, dish by dish. The grillades and grits went first, the way they always do. The daube didn’t set. Mama made it Tuesday and it sat in the icebox two days refusing to be anything but soup, and at two in the morning Daddy declared it a new dish and named it for Luc, and everybody ate it with a spoon. Mémère and Mama fought over the roux for forty minutes in two languages, and Mémère won, and Mama says she let her. Luc ate the oyster dressing standing at the stove in his uniform shirt, because he had a shift at six. Somebody put too much whiskey in the sauce for the bread pudding, and it was Remy, and it was on purpose. Josie was asleep under the table by three with her head on Jude’s shoes. And Daddy did the café brûlot in the good bowl, by the curtains, with the lights out, while Mama told him not by the curtains, and the curtains are fine — Mama has said *the curtains are fine* four times today, and every time it sounds less true.",
+    "He lets her finish.",
+    "“Mama set Grandmère’s place,” she says. “Like every year. The plate, and the glass, and the good napkin.” Behind her the screen door opens on somebody laughing and closes on it. “Tess came in from the car with the baby in the carrier, and she set it on the chair to get her coat off. Just for a minute. That chair. And Mama picked it up and put it on the floor, and didn’t say a word. And then she picked it back up and put it back on the chair. And then nobody said anything till the gumbo.”",
+    "The rain on the roof. The heater, still catching up.",
+    "“My mama worked at Memorial,” Lena says.",
+    "The rain comes down the windshield in the dark, and the porch light two houses up runs to pieces in it."
+   ],
+   "choices": [
+    {
+     "text": "Don’t say anything. Stay on the line.",
+     "tag": "Sincerity",
+     "cue": "Lena will remember that.",
+     "set": {
+      "s2e1_memorial": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.trust": "+2"
+     },
+     "key": "Christmas night, from the back steps on Dupre Street, Lena told you her mother worked at Memorial. You didn’t say anything. You stayed on the line.",
+     "response": [
+      "He stays on the line. The rain on the roof; on her end the screen door, a dish breaking somewhere and a cheer for it, the baby starting up in the front room and settling. Her breath against the phone, and his.",
+      "“Thank you,” she says. And a minute later, lower: “I’ve never said that out loud on purpose.”"
+     ],
+     "goto": "s18a"
+    },
+    {
+     "text": "“Do you want to tell me?”",
+     "tag": "Candor",
+     "set": {
+      "s2e1_memorial": "candor",
+      "rel.lena.trust": "+1"
+     },
+     "key": "Christmas night, from the back steps on Dupre Street, Lena told you her mother worked at Memorial. You asked if she wanted to tell you.",
+     "response": [
+      "“Do you want to tell me?”",
+      "“No,” she says. “Not tonight.” The screen door; Remy getting louder in the kitchen and somebody telling him to hush; the baby. “Someday, maybe.”"
+     ],
+     "goto": "s18a"
+    },
+    {
+     "text": "“Nonna set a place for Danny last night.”",
+     "tag": "Personal",
+     "if": "!told_lena_danny_place",
+     "set": {
+      "s2e1_memorial": "personal",
+      "rel.lena.warmth": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "Christmas night, from the back steps on Dupre Street, Lena told you her mother worked at Memorial. You told her Nonna had set a place for Danny.",
+     "response": [
+      "“Nonna set a place for Danny last night,” Jack says. “His plate. His glass. Ma left it there.”",
+      "The rain. Her breath on the line. “Then we both had one,” Lena says."
+     ],
+     "goto": "s18a"
+    },
+    {
+     "text": "“Danny called today. The phone cut him off right when he got to you.”",
+     "tag": "Personal",
+     "if": "told_lena_danny_place",
+     "set": {
+      "s2e1_memorial": "personal",
+      "rel.lena.warmth": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "Christmas night, from the back steps on Dupre Street, Lena told you her mother worked at Memorial. You told her Danny had called, and the phone cut him off when he got to her.",
+     "response": [
+      "“Danny called today,” Jack says. “From Trumbull. The phone cut him off right when he got to you.”",
+      "A breath on her end, a long one. “Tell him I heard it anyway.”"
+     ],
+     "goto": "s18a"
+    },
+    {
+     "text": "“What happened there?”",
+     "tag": "Press",
+     "set": {
+      "s2e1_memorial": "press",
+      "rel.lena.friction": "+1"
+     },
+     "key": "Christmas night, from the back steps on Dupre Street, Lena told you her mother worked at Memorial. You asked what happened there.",
+     "response": [
+      "“What happened there?”",
+      "It’s the arguer’s question, and it’s out, and on the steps she goes quiet. The screen door. The house. “Not tonight, Jack,” she says, gently, and closes it. Then she tells him about Josie’s agenda for the baptism instead — typed, with a section for Josie’s own remarks — and he lets her, and laughs where he’s supposed to."
+     ],
+     "goto": "s18a"
+    }
+   ]
+  },
+  "s18a": {
+   "slug": "FRIDAY · 9:50 PM · THE SILVERADO, IN THE DRIVEWAY",
+   "body": [
+    "By ten to ten they’ve gotten around to the book.",
+    "“Forty pages,” Jack says. It’s on the dash. He knows the book; he didn’t know it with her in the margins, small and fast and merciless, a *ha* here and a *no* there, and *oh, honey* beside Binx on the Gentilly bus. “Binx is a lot.”",
+    "“Binx Bolling is every man who ever lived,” Lena says. “That’s the *point*.”",
+    {
+     "if": "sent_lena_pierogi || sent_lena_card",
+     "text": "“Mama says the mailman left a slip on Christmas Eve,” she says. “Something from Ohio. I’m not allowed to guess.”"
+    },
+    "On her end the screen door opens and somebody says her name, and she says *one minute* in a voice that means five.",
+    {
+     "if": "s2e1_memorial==\"sincerity\"",
+     "text": "“Merry Christmas, Youngstown,” she says.",
+     "else": "“Merry Christmas, Jack,” she says."
+    },
+    "“Merry Christmas, Lena.”",
+    "He hangs up first. The heater has caught up at last, and his feet are warm, and the rain goes on coming down the glass."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t. On a motel porch above Lucia at three in the morning she told me I can’t say her name like that. She asked what I decided. Not to be the one who wrecks anything, I said. She said okay. Then: me neither. Bought her Mémère a fruitcake from the monks, in exact change. ‘A girl writes the thing she wants first, Youngstown.’ Halloween: Flannery O’Connor, with a stuffed peacock tagged 57. Andalusia. She wouldn’t go past the last house on Seacliff, not even for Laney. ‘I came as her. I never said she was right.’ In the last minute of the extra hour, she put my hat back on. All Souls: she wrote her grandmother’s name in the book, and Nora Calloway’s. Nora was her host at Preview Weekend, in April. That night Wes ended it, on the phone, on the east stairs. He stopped going to Mass in September. There’s a ring. She knew something in September and decided not to notice — she says she’s good at it. At six in the morning she asked me what I’m going to do. She wrote Hale twelve pages in the spring of ’08, two years after the year she yelled at God. She’s had the same postcard the whole time. She knew mine on the porch. She had a house picked out on Zimple Street. A fig tree. She’d picked the paint. Veterans Day, on the bench above Campus Point: St. Martin gave the beggar half his cloak; she says everybody forgets the beggar took it. No. 9 for the reliquary. Friday the 13th, under the eucalyptus, in the middle of a sentence about monarchs: Julian asked her to dinner. So. Thursday night in the basement she played the piano properly — around the dead F. The last time she played it right in front of anybody was a November, four years ago. If you play well, she says, people ask you to play. Reading *New Moon* out of spite. Friday she signed the Manhattan Declaration from bed, with a cold. Two soups. She ate Julian’s. Mine’s on the sill for tomorrow. Ate Gloria’s soup cold out of the quart, at the sill, at six in the morning. Argued YES: a promise is made to a person, not to a reason. Wrote on my paper that I don’t believe one sentence of it. Neither does she. Mémère is lighting a candle for Nonna — the whole name. Half a name is half a candle. At the airport: Our Lady of Prompt Succor, for Nonna. She works fast. Thanksgiving: Theo said *pop* to the whole Broussard table. She asked about Theo, and Nonna, and her saint. Julian called during grace. Wes was in the kitchen. ‘Go back to your family, Youngstown.’ Handed Julian the bell rope at Sully’s. Knows I don’t work Mondays. Texted at two in the morning about Yusuf’s mother. On the lawn at four, looking at the place I wasn’t. Came to the Anchor at the end of my shift in Kevin’s car — Julian’s in Oakland, his brother’s home from the Navy. She has a paper. St. Nicholas Eve: Walgreens at half past one. I told her about Ma’s two hundred shoes; she said then we’re doing it, and we did every door in Delgado. Says I hold my phone like a hand of cards. Asked where I go. I said sometime. She said okay. Book Nine, for her Greek final: *Outis*. Nobody. In the laundry room she stepped back first. ‘Don’t make me be the one who wrecks something.’ Julian’s writing something she can’t hear yet. Twelve and oh in overtime. Her free hand found Kevin. Knows Book Nine by heart; asked me to pray at eight. Picked my best argument at the Brick: what a man says yes to. Put her phone face up next to mine and said nothing. Heard Julian’s song before anybody. ‘It’s good, Jack. It’s really good.’ Told me not to leave in the second chorus. The Advent party: I kept the whole room between us all night. She brought coffee to the white elephant, and I got it. Stole my 8-Ball. Won an argument about ‘Joy to the World’ with Isaac Watts. Didn’t play. Julian did. Friday night, half past twelve, she knocked on 412; Theo said the library. At the Mañanitas she told me about Juan Diego, who took the long way around the hill. Thirteen and oh. She texted me the number. After the Gaudete Mass she asked the 8-Ball something. Better not tell you now. Geminids from the roof without me. At Hale’s oral she’d answered him in Augustine — said my sentence was his. She defended it and won, and told him to ask where I say yes at two in the morning. Julian kissed her goodbye at his car; he’s going to New Orleans for New Year’s. Friday she knocked with two coffees and a list of every place. She played the basement piano for me, properly. Taught me a secret in the O Antiphons. Pecan at Gloria’s counter; fourteen and oh is ordained. On the Lighthouse porch she said it plain: I’d never not answered her before. Never missed Sully’s. Always came to her, whatever it was — and now I stay away. She knows something’s hurting. She didn’t make me say what. Walked past the last house to the Point for the first time all semester. The bonfires on the levee on Christmas Eve — call her from the garage. On the roof I nearly said it. The 8-Ball said ask again later. She gave me the tin to keep. I gave her Benedict. At the checkpoint she turned around and said something I couldn’t hear. Christmas week: her sister had the baby in the third quarter of the Dallas game, while they were still undefeated, so Beau didn’t get a vote. Lucille Odile — both grandmothers. Lena’s the godmother. Then they lost. The 8-Ball said very doubtful. She texts me the O Antiphons at dusk. When the Pope went down she texted within the minute: is he alright, are you. Christmas Eve she held the phone up to a bonfire on the levee so I could hear it burn. She’d mailed me *The Moviegoer* before the last night. Christmas night she told me how Réveillon went, and about the place her mother sets for her grandmother. Then she said her mama worked at Memorial. Nothing else."
+    }
+   ],
+   "next": "s19"
+  }
+ }
+}

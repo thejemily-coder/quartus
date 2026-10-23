@@ -1411,3 +1411,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Julian lands (player, after S1E22).** "Every time Lena was with or mentioned Julian was agony." It's working: keep
   Julian decent and present (never a fool or a strawman) so the agony stays honest, through his S2 exit after New
   Orleans. Over Christmas break (Julian in New Orleans for New Year's), his mentions should keep that edge.
+- **The Christmas-break Lena calls and texts must carry the weight (player; S2E01–E03).** They have a lot to do:
+  **emotional depth, fanning the flame, and reinforcing their connection**, enough that **Lena spends the whole break
+  considering it and then actively decides to break up with Julian**. She is stopped **only** because she then sees
+  the Facebook status (Jack and Skye) and is **hurt, betrayed, upset, then furious**.
+  - So the calls need **real substance on Jack's side of the screen** (the player must later believe her decision
+    completely): long late-night calls, the things they only tell each other, jokes that are theirs, the near-silences,
+    texts at odd hours, Midnight Mass messages, after the finale's porch.
+  - Her decision itself stays **off-screen** (POV); the player feels its possibility in her warmth and learns the fact
+    in New Orleans. **The Skye threads run in parallel** (the double state), which is exactly what turns the calls into
+    betrayal for her when she sees the status.
