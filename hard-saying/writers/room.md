@@ -3,23 +3,27 @@
 How *The Hard Saying* gets made. Each role is a subagent on the model that suits its task. The orchestrator (the main
 Claude session) runs the notes session with the player, reads the save, runs the pipeline, builds, publishes and commits.
 
-## Roles
+## Roles (pipeline v2, 2026-10-23; v1 archived in `writers/pipeline-v1/`)
+Every agent after planning reads the episode's **context pack** (`drafts/<ep>_pack.md`) instead of the full bible,
+ledgers and brief, consulting those only by targeted lookup.
 
 | Role | Model | Job |
 |---|---|---|
-| **Showrunner** | opus | Owns the secret bible: hidden arcs, the central mystery, twists, the arc registry. Reads the save after each episode, adjusts the long game to the path taken, writes the episode plan. |
-| **Period Researcher** | sonnet | Keeps `period/` accurate: dates, news, Church calendar (feasts, readings, homily-worthy Gospel), weather, songs released by each date, tech, slang, prices. Flags anachronisms. |
-| **Episode Architect** | opus | Turns the plan into a scene-by-scene blueprint: choice maps, flags, relationship and soul effects, duel design, act split, header JSON. |
-| **Romance Writer** | opus | Drafts every Jack/Lena scene. Heat, subtext, argument, restraint. |
-| **Ensemble Writers** | opus | Draft the remaining acts in parallel, one act each, matching voices from the bible. |
-| **Mechanics Designer** | sonnet | Duel tuning, choice distinctness, trait gates, resolve economy, whisper restraint. |
-| **Assembler** | haiku | Merges drafts and runs the validator; fixes only syntax. |
-| **Continuity Auditor** | sonnet | Facts, names, dates, geography, timeline, prior choices in the save honored exactly. |
+| **Showrunner** | opus | Owns the secret bible: hidden arcs, the central mystery, twists, the arc registry. Plans each episode; in finalize, patches drafts to the actual save and the newest notes (medium effort). |
+| **Period Researcher** | sonnet | Keeps `period/` accurate: dates, news, Church calendar, weather, songs released by each date, sports. Flags anachronisms. |
+| **Context Packer** | sonnet | Builds the per-episode pack: player directives, style guide, on-page voices, hidden-canon constraints, ledger entries, tic registry, period facts. |
+| **Episode Architect** | opus | Scene-by-scene blueprint: choice maps, flags, effects, duels, act split, header JSON. |
+| **Romance Writer** | opus | Every Jack/Lena and Jack/Skye scene. Heat, subtext, argument, restraint. |
+| **Ensemble Writers** | sonnet | The remaining chunks in parallel, matching pack voices. |
+| **Assembler + checks** | haiku | Merges drafts, runs the validator, `tools/sim.js` (400 random playthroughs) and `tools/tics.py`. |
+| **Continuity Auditor** | sonnet | Facts, names, dates, geography, timeline, prior choices honored exactly. |
 | **Knowledge Auditor** | opus | Who knows what, when, and how (see checklist below). |
-| **Voice Editor** | opus | Each character sounds like themselves, consistent with prior episodes; relationship temperatures reflected. |
-| **Line Editor & Tic Hunter** | opus | Prose polish plus the tic registry below, across this AND previous episodes. |
-| **Standards & Spoiler Guard** | sonnet | Brief's content standards and hard lines; hidden canon never leaks into journal, cues, keys, recaps, teasers. |
-| **Head Writer** | opus | Applies notes, final polish, validates, updates `continuity.md` and `knowledge.md`. |
+| **Voice Editor** | opus (medium) | Each character sounds like themselves; relationship temperatures; player directives honored. |
+| **Line Editor & Tic Hunter** | sonnet | Starts from the scripted tic counts; prose polish plus the registry below. |
+| **Standards & Spoiler Guard** | sonnet | Content standards and hard lines; hidden canon never leaks into journal, cues, keys, recaps, teasers. |
+| **Mechanics Designer** | haiku | Reads the scripted playthrough results; choice distinctness, gates, resolve economy, whispers, keys. |
+| **Head Writer** | opus | Applies notes, final polish, validates. |
+| **Ledger Clerk** | sonnet | Appends the episode's canon to `continuity.md`, who-learned-what to `knowledge.md`, new tics to the registry. |
 
 ## Knowledge Auditor checklist
 For every line of dialogue or narration that implies knowledge, ask: **how does this character know this?**

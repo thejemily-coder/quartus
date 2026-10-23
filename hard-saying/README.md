@@ -36,6 +36,13 @@ Game artifact: https://claude.ai/artifact/3MQUVCyw8UxRfXjX7fr9bH
   document at 256 KiB). Logs: `saves/main/log/<EP>`; checkpoint: `saves/main/aux/checkpoint`. When reading the save,
   merge the log docs into `logs` (state.split == 2).
 
+## Pipeline versions
+- **v2 (current, 2026-10-23):** per-episode context pack; Opus only for planning, blueprint, romance writing,
+  knowledge/voice review and the head writer; Sonnet/Haiku elsewhere; scripted checks (`tools/sim.js`, `tools/tics.py`).
+- **v1 (archived):** `writers/pipeline-v1/` (every agent reads the full canon; most roles on Opus). Restore with
+  `cp writers/pipeline-v1/*.workflow.js writers/` if episode quality dips.
+- Smoke test by hand: `python3 tools/build.py && node tools/sim.js <EPID> saves/after-<prev>.json`.
+
 ## Files
 - `game/engine.html`: the player (template); `game/play.html`: built page with every episode baked in.
 - `tools/validate.py`, `tools/assemble.py`, `tools/build.py`.
