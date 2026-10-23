@@ -1613,3 +1613,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     scandal dimension), **but not a reveling in the gravely sinful act itself.** Jack names it precisely, without
     scrupulosity and without excuse. Osei's response fits his current stage of the arc (he may well enjoy it a
     little; real counsel about words and witness, never a scolding).
+  - **Jack apologizes to Skye (player; adapt to voice).** Later, Jack apologizes for causing problems for her career.
+    **She takes his face in her hands, kisses him slow and hard, then tells him never to apologize for making her
+    happy.**
