@@ -1601,3 +1601,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     Laney's eclipse it entirely). **Peter Haddad, Mar 8.** **Jack, Mar 19** (St. Joseph; date #2). **Skye, Apr 4
     (Easter Sunday 2010)**, after the breakup: Jack's choice whether to send anything (room's call). **Osei, May 2.**
     **Becca, May 31** (summer; a text). Then Rafi Jun 2, Hale Jun 30, Brooks Jul 4, Lena Jul 22 (S3).
+  - **The singalong video is a big deal for both of them (player).** **Jack:** Youngstown sees it (the family, St.
+    Brigid's/the NYE crowd, the parish) and so does **the Newman crowd** (Osei, Mrs. Fitch, Becca, the regulars): the
+    devout guy belting "Birthday Sex" in a convertible; comic and mortifying, with real fallout (Ma's call; a look from
+    Osei; Laney's delight). **Skye:** her **reputation and image as Cassidy**, the network's good girl: the team and her
+    mother in full crisis mode, gossip-blog headlines about the "good girl" gone wild. She doesn't regret it; it may
+    be the happiest thing she's ever been filmed doing. (It can feed the alliance's third emergency meeting.)
