@@ -1587,3 +1587,4 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Lena all see it. Pure joy on the screen (the double state's Skye half at full volume). **Song: room's pick, released
   by the scene's date**; candidates: Khia, "My Neck, My Back (Lick It)" (2002); Jeremih, "Birthday Sex" (2009);
   Lady Gaga, "LoveGame" (2008); Young Money, "BedRock" (Nov 2009). Quote at most a few words of lyric on the page.
+  - **Song locked (player): Jeremih, "Birthday Sex"** (2009). Quote at most a few words of lyric on the page.
