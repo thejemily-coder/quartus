@@ -1643,3 +1643,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Skye, which ran hot from the start; Lena's is slower and deeper.)
 - **Sophomore housing (player; S4 = Fall 2010).** **Laney lives in her sorority house.** **Lena and Margot become
   roommates in the dorm.** Jack and Theo: see the next entry.
+  - **Jack, Theo, Kevin and Yusuf rent a house (player).** Four guys in a beat-up rental (Theo pays more than his share
+    and pretends he doesn't): a porch, a kitchen, house rules, Lena and Margot always over; **the ensemble's new hub
+    from S4.** (The spring 2010 "deposit paid" thread, #33, is this house.)
