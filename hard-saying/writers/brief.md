@@ -1391,3 +1391,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   different: complete non-engagement with anything, especially Lena.** Show it in their behavior around him in the
   finale (Theo's quiet worry, Laney's alarm, Kevin and Margot's sideline reads) and let it inform the alliance's
   Christmas-break prep and January ops. POV: Jack sees their looks and changed handling of him, not their talks.
+- **S2 Christmas break: Jack is honest with Danny (player).** During a prison visit over the break, Jack is **open about
+  what's going on**: not giving details, but honest (Lena, Skye, the song, the withdrawal, the double state). Danny is
+  the one person he tells. (Danny has met Lena; room decides his response, in his voice: plain, unsentimental, the man
+  who "doesn't wish, he decides.")
