@@ -1621,3 +1621,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     But she **posts on his Facebook wall, deliberately undermining her own team's PR campaign** (whatever spin they're
     running), so it's public that **she's looking forward to their next singalong**, with a wink to **"bring the clean
     version next time, for everybody watching at home."** Protecting him and defying them in one post.
+- **Order and turn in Skye's public posting (player; refines "reckless posting").**
+  1. Defiant posts escalate (airport still → her own photo → wilder ones) **up to one suggestive photo post.**
+  2. **That's where she learns some of it costs him** (his family's reaction: Ma, Nonna; Youngstown; the Newman crowd).
+     And by now **she really wants his mom and Nonna to like her.** So **from then on she shares only sweet/happy photos
+     and videos.**
+  3. **Jack tells her he doesn't care**: he likes being with her, likes having fun with her, and she shouldn't feel bad
+     for posting something true. **She can tell he's being truthful and genuinely doesn't care. She stops anyway**,
+     because it still costs him, and it costs her with his family.
+  4. **The singalong video comes after this** (filmed by a stranger, not posted by her), which is why she doesn't
+     share it and answers it with the protective, defiant wall post instead.
