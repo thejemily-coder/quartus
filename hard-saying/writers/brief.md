@@ -1616,3 +1616,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Jack apologizes to Skye (player; adapt to voice).** Later, Jack apologizes for causing problems for her career.
     **She takes his face in her hands, kisses him slow and hard, then tells him never to apologize for making her
     happy.**
+  - **Skye's response to the video (player).** Unlike everything before, **she does NOT share the video herself**,
+    solely because she knows how the people around Jack see him in it (his family, Youngstown, the Newman crowd).
+    But she **posts on his Facebook wall, deliberately undermining her own team's PR campaign** (whatever spin they're
+    running), so it's public that **she's looking forward to their next singalong**, with a wink to **"bring the clean
+    version next time, for everybody watching at home."** Protecting him and defying them in one post.
