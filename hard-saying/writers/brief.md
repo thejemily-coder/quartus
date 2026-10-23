@@ -1682,3 +1682,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     of high vulnerability**, Lena admits **she hates how often she wonders whether he's still done more with Skye**
     (than with her). Room decides Jack's answer and how it lands; it should deepen them, not become a recurring
     jealousy plot, and it stays the edge under her lasting dislike of Skye.
+- **After S2E03 (player feedback).** "Great episode. **Everything with Lena was so wonderful until it wasn't.** Skye was
+  fantastic. **Laney's cold turn is a great development.**" (Keep Laney's coldness toward Jack real and sustained
+  through the January–February stretch, with her loyalty to Lena showing; it pays off in the "fireman" confrontation
+  and thaws only after New Orleans.)
