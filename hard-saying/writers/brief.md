@@ -1503,3 +1503,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   mystery college boyfriend 'couldn't handle her fame'"). Dramatic reading in the lounge; Theo supplies sound
   effects. Keep it on Laney and the tabloid, never on Skye's pain (Laney grudgingly liked her; one flicker of that
   under the glee). Room places it (S2, after New Orleans).
+- **Lena's apology for the song (player; New Orleans conversation ONLY).** In New Orleans (not before, or it would blow
+  everything open), **Lena apologizes for asking Jack to come listen to Julian's song** (S1E20 s13: "Come tonight…
+  don't leave in the second chorus"). **She knows that's when everything changed between them.** She didn't do it to
+  hurt him, but she realized too late that it did anyway.
