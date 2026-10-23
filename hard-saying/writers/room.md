@@ -317,7 +317,13 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 156. **Measured "inch"** ("by the inch," "an inch at a time," folders and doors moving inch by inch; S2E03 s14a). Once an episode.
 157. **Narrator's verdict button after a guess** (a character guesses; narration then rules "He's right." / "She is wrong."). Max one an episode; let the next line of dialogue do the ruling.
 158. **Two speakers packed into one paragraph** (a reply and the answer sharing a paragraph break-free; S2E03 s18). A QA check, not a prose rule: every speaker change starts a new paragraph.
-159. **"Then" as a sentence opener** (≈20 a path in S2E03 against the 12 under #112). Not swept in S2E03; sweep in S2E04 and keep at or under 12 a path.
+159. **"Then" as a sentence opener** (≈20 a path in S2E03 against the 12 under #112). Not swept in S2E03; swept in S2E04 (verify the path count stays at or under 12).
+160. **"Square" / "squared" as the all-purpose verb and adjective** (S2E04 draft 27 across paths; swept to 9). At most 3 an episode.
+161. **Clock-time sentence openers** ("At ten past one he...", "By 2:15..."; S2E04 draft 22, swept to 14). At most 6 an episode, and never restating the slug's time.
+162. **"[X], and goes [back / on / out]" exits** (S2E04; swept only in part). At most 2 an episode; end a beat on the action or the line, not on a departure.
+163. **The clipped "Then [imperative]." retort** (S2E04 draft 18, swept to 7; cousin of #159). At most 4 an episode, and never Lena's except the argued line.
+164. **Identical post-choice tails** (the same closing beats pasted after each branch of a choice). Flag them for hoisting into a shared tail when the target scenes share a slug, time and place; S2E04 declined to hoist because the targets differ.
+165. **"In writing" passed around as a shared joke** (Skye, Jack and Theo in S2E04). One owner an episode; give the others their own register.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);
 "before X can" pre-emptions (#83, ≈14 a path in draft); trailing "which" (#91, ≈15 in draft); "the way [someone did]" (#112, ≈12 in draft); laughter overflow buttons (#101, 6+ in draft — characters top it in their own register:

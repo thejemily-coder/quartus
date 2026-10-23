@@ -1752,3 +1752,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Jack's state going in (player).** Right now he's **confused**, not angry: in his view **Lena is the one who
     basically told him to move on** (the Friday call), so her coldness and Laney's make no sense to him. **But he gets
     angry real quick once anyone starts taking shots at Skye.** That protectiveness is the fuse for the chain above.
+  - **Fix applied to S2E04 (orchestrator):** the pre-produced draft spent Laney's "California you" line at the Haiti
+    table (s12a) before she'd seen them argue. Replaced there with "Well. Somebody hand me my good manners. I'm fixing
+    to need every one of them." **The line is UNSPENT and lands at Sully's per the chain above** (S2E05–E07).
