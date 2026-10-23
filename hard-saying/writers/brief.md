@@ -1379,3 +1379,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   at Sully's; he always used to come to her no matter what was going on, and now he stays away**, speaking to her only
   when he couldn't avoid her. **She knows he's hurting badly**, even though next month, once he's dating Skye, she won't
   believe it anymore. (Jack can't say why; it stops just short. POV: he sees her restraint, not her reasons.)
+- **Jack's double state (player; the emotional engine through early February).** The player felt it the whole of
+  S1E21, as Jack does: **truly happy, having fun, falling in love when he's with Skye; pure agony when he's with Lena
+  and Julian.** Keep **both halves fully true** and side by side. Never let the Skye half curdle into guilt-tinted
+  half-joy, or the Lena half soften. The whiplash between them is the experience, until New Orleans resolves it.
