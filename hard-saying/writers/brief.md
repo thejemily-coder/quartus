@@ -1395,3 +1395,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   what's going on**: not giving details, but honest (Lena, Skye, the song, the withdrawal, the double state). Danny is
   the one person he tells. (Danny has met Lena; room decides his response, in his voice: plain, unsentimental, the man
   who "doesn't wish, he decides.")
+- **After S1E22, the Season 1 finale (player feedback).** "Yet again, **Skye was incredible** and I loved every moment
+  with her. **Lena was gut-wrenching**; almost moved to tears when she recapped December" (the porch naming of the
+  withdrawal). Season 1 complete.
