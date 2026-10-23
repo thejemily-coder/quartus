@@ -1870,3 +1870,54 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **New:** the jacket photograph is in Lena's coat and Jack has recognized it — **his narration may not reason from it** (no "Theo," no "the duffel," no "how did it get") until the planned S2 beats; Lena does not know the jacket
   exists anywhere. The porch is spent: in S2 Lena does not name the withdrawal again in those terms (no re-naming), and by mid-January she stops believing he's hurting. **Her SBA words stay unheard** until their planned reveal.
   The tin is in Jack's pocket in Youngstown (Gina, Maria). PM5 and four earlier pictures ride home on the RAZR (the bread basket on Christmas Eve). Tess's baby and the Saints' first loss happen Saturday night, off this episode's page.
+
+### S2E01 — "Midnight" (Season 2 premiere)
+> Final revision, collapsed against `saves/after-s1e22.json` (see continuity.md S2E01). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01] Pius XII and John Paul II declared venerable (Lena's text); Tess in labor at Touro; Hall's list for the small car at Lordstown ("Spring. Maybe."). [s03] Lucille born in the third quarter while 13–0; Lena is godmother; the
+  8-Ball said very doubtful; the Saints lost 24–17. [s04] Fr. Dom's Visitation homily. [s05–s05b] **Danny believes him, both; Danny's one question — which of them can he tell the truth to — and Jack has no answer.** Danny's
+  "Pop too. Tell him I said." [s05c] Theo is still on Danny's visitor list; Christmas Eve has an afternoon session. [s05d] Browns 41–34, Harrison 286, Cribbs 103; **his father isn't drinking** ([candor] "I said Christmas"). [s05e] Lena:
+  "I'm glad you wrote me first." [s06] Margot's birthday; Theo asks to come Dec 24–25. [s06b] Hale: did well. [s06c] **Lena's Pius argument (Golda Meir; Zolli/Eugenio; prudence is heroic) — she won the point**; Julian sent Mémère a
+  card with a pressed flower; she knows he sleeps in Danny's bed. [s08] **Skye and Theo have known each other since eleven (Meridian makes *Sweetwater*); she calls him Ted; she hid behind the Hallorans' ficus; "peace mission" was
+  for Ted; Ted saw her on a terrace on the 22nd and "knows"; "He does. That's the problem."** (Jack has this from Skye only.) [s08a] Tariq is home. [s09] the Senate vote; Frank on Stupak; [wit]/[candor] Theo now knows Jack
+  knows (`theo_knows_jack_knows`). [s10a | grace] Fr. Dom's counsel (the two thousand miles; the different street); Osei's message delivered. [s10c] **Theo asked Danny if Jack had told him about California; Danny said he misses the
+  beach**; Theo: "He does. He doesn't knock." [s11] the Pope knocked down and up; Theo watched Jack instead of the TV. [s12] Nonna set Danny's place; Ma left it. [s12a] Theo took the RAZR from Rosie with his palm over the screen.
+  [s12b] the levee; Julian lands the 30th; Mémère irons a tablecloth. [s13] PM6 per `s2e1_pic`. [s14] Carly Benedetto is home (Ryan's, New Year's). [s15] Lena's Midnight Mass messages ("An hour behind you"); [candor variants] Theo
+  "figured she would." [s16] Theo at the Madonna at dawn (**unread — he does not know why**); unlimited texting; **Ma found the coffee in his duffel**; Gina's box set; Nonna "*L'attrice*". [s16a] the family has seen Skye's public
+  pictures; Ma: "Is she Catholic, at least?" [s16b] Skye: "She asked if you still are." [s17] Danny laughed at the boat; Ma saw that Danny already knew; "she can do better than you. And tell the veil girl —" (cut). NW253. [s18] Julian
+  sang Lucille "You Are My Sunshine"; Grandmère's place and the chair; **"My mama worked at Memorial." — only the word.** [s19] Nonna: "*Due ragazze… Quale ti fa pregare?*" — he understands it.
+- **He does NOT learn:** what Danny meant to say about "the veil girl"; anything about Memorial beyond the word; why Theo stood at the Madonna; what Lena is deciding (🔒 Julian); what Danny's money order recipient means (🔒 — never
+  glossed in his narration); what Nonna said to Theo in Calabrese at the door.
+
+#### Lena
+- [s03] Jack watched with his father in a bar (Frank's ginger ale; "Tell her you're welcome"); [loss] his line. [s03a] he's "my friend in Ohio" (her words to the nurse). [s05e] **he saw Danny; Danny asked about her first; he wrote
+  first.** [s06c] he argued Pius and conceded the point; **he sleeps in Danny's bed** (she didn't ask why). [s07a] he's not opening the box till Christmas. [s11] [candor] "no. yes. he got up" / [sincerity] / [wit]. [s12b] Nonna's candle
+  answer ("*Tutto*"); the bathtub Madonna; Rosie's grace for Lucille; **Theo is in Youngstown, in Frank's parka, ate an eel**; Frank's five per `s2e1_eel`; Jack stood up at the Pope; per `s2e1_levee` ([candor] Nonna set Danny's place /
+  [unguarded] "I wish I was standing next to you"). [s15] his Midnight Mass reply (Theo already kneeling; Rosie's Gloria). [s18] the 1964 program; the crab; **Ma brewed her coffee and asked where it came from — "A friend."**; Fr. Dom's
+  night-shift homily; [personal] Danny's place / Danny cut off at her. [s18a] he's forty pages into *The Moviegoer*.
+- **She learns nothing about Skye** (not the calls, the pictures, the box set, Ted, the family finding her, "Starting January"). She hears Theo is there; she never hears why Theo knows anything. **She still never asks where, who, or
+  what.** 🔒 Her Christmas decision about Julian forms off-screen; no line of hers says so; the porch withdrawal is not re-named.
+
+#### Skye
+- From Jack: the snow globe snowing; the basement and the salt cod; Theo is coming for Christmas Eve (balsamic in velvet at Thanksgiving); the weather report; the Pope ("ive only had two"); [pic candor] "only door in this house with
+  a lock"; the back bedroom, Dad snoring, Nonna asleep in her chair, "a roommate who doesnt sleep"; **the family found her** (Gina's box set, Rosie, Nonna's *L'attrice*, the Dell, Frank's "Huh," Ma's "Is she Catholic, at least?");
+  [candor] "They're scared of you." **She still has never heard Lena's, Julian's, Kevin's names from Jack**; she knows Danny is in prison (`skye_knows_danny`), Gina, Rosie, Nonna, Frank, Maria. She does not know Danny was told about her,
+  or that Fr. Dom heard her name ([sincerity] s10a).
+
+#### Others
+- **Danny** — Jack's double state (honest, not detailed; `danny_knows_double`); Jack loves Lena (`told_danny_love`); Skye acts (thought "plays"); **from Gina: she's on TV, the boat, the fan page** (`danny_knows_skye_tv`); Theo asked about
+  California and got "the beach." 🔒 He never repeats any of it to Ma. **Maria** — "a girl, not Lena" (E20) → now the girl's face, show, pictures; [candor] her name; she saw Danny already knew (`maria_saw_danny_knew`); she found
+  and brewed the New Orleans coffee ("A friend"). **Frank** — the girl isn't the Saints one (per `s2e1_frank`); Skye's pictures ("Huh"); Lena's family on the phone; he tells Theo the Browns. **Nonna** — *l'attrice* is the girl on
+  the DVD; *la suora* sent the coffee (she read the can); **"*Due ragazze*"** (she has seen him with both: the nun's calls, the actress on the phone). **Gina** — the secret is out (kept thirty days); she told Danny about the boat.
+  **Theo** — Skye told Jack about Ted, per `s2e1_theo`/`theo_knows_jack_knows` (on [restraint]+[restraint truck] he has only Jack's silence and the basket); Danny's "the beach" cover; Nonna's cashmere; the stocking; Danny's list.
+  **Laney** — via Theo, Jack is awake at 7:30 Christmas morning (🔒 the alliance preps the break off-page). **Fr. Dom** — [grace] the fourth Skye confession (seal); Osei's message. **Carly Benedetto** — Jack is home till the ninth.
+  **Kevin** — Jack told his brother something. **Yusuf** — Jack's Christmas wish to Tariq.
+
+#### LIVE RISKS carried out of S2E01
+- All E22 risks stand (porch spent — no re-naming; the jacket photograph un-reasoned; Lena's SBA words unheard; Osei's seal; Skye never hears the names).
+- **Danny's question stays unanswered and un-glossed** until New Orleans; no character repeats it. Danny's "And tell the veil girl —" is never completed by anyone else.
+- **Lena's Memorial line is the word only**; Jack may not research, infer or narrate what happened there; Lena's "Not tonight" / "Someday, maybe" is hers to spend.
+- The **Pius argument is spent** (she won it; don't rerun it). The sleeping-in-Danny's-bed confidence is Lena's alone (nobody else in Jack's world knows he said it).
+- **Theo knows Jack knows** only on [wit]/[candor] truck or [candor] s15; otherwise Theo's knowledge of Jack's knowledge is a guess — keep his needling sideways.
+- The family now knows Skye's face and show; **Ma's question is about Jack's faith** (Skye's read) — no one in the family links her to Lena or to the Saints girl beyond Ma's "What happened to the Saints girl?"

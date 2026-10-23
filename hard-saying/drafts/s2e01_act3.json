@@ -89,26 +89,7 @@
     "“Her name.”",
     "“Oof,” Danny says.",
     "“Then I disappeared. A month. I didn’t answer her. I missed the Saints.”",
-    {
-     "if": "e22_porch==\"candor\"",
-     "text": "“She asked me where I go. I got as far as ‘sometime.’”"
-    },
-    {
-     "if": "e22_porch==\"sincerity\"",
-     "text": "“She told me what it looked like from her side. I said I was sorry. Not why.”"
-    },
-    {
-     "if": "e22_porch==\"restraint\"",
-     "text": "“She told me what it looked like from her side. I didn’t say anything.”"
-    },
-    {
-     "if": "e22_porch==\"wit\"",
-     "text": "“She told me what it looked like from her side, and I made a joke.”"
-    },
-    {
-     "if": "e22_porch!=\"candor\" && e22_porch!=\"sincerity\" && e22_porch!=\"restraint\" && e22_porch!=\"wit\"",
-     "text": "“She noticed.”"
-    },
+    "“She told me what it looked like from her side. I said I was sorry. Not why.”",
     "Danny’s eyebrows go up at the Saints. He lets Jack get to the rest.",
     "The rest is California. “The O’Connor one. Skye.”",
     "“She does what?”",
@@ -119,40 +100,14 @@
     "“And she likes you?”",
     "“She seems to.”",
     "“Huh,” Danny says, a man who has seen Jack’s school pictures.",
-    {
-     "if": "skye_january",
-     "text": "“We’re making it official in January.”",
-     "else": "“She says we’ll see in January.”"
-    },
+    "“We’re making it official in January.”",
     "“And the last night before the flights, it was Lena. She made a list of places, and we went to every one of them.”",
-    {
-     "if": "e22_roof==\"unguarded\"",
-     "text": "“I got two words in on a roof.”"
-    },
-    {
-     "if": "e22_roof==\"candor\"",
-     "text": "“I told her I had something to tell her and didn’t get to.”"
-    },
-    {
-     "if": "e22_roof==\"sincerity\"",
-     "text": "“I told her it was the best night since — and stopped.”"
-    },
-    {
-     "if": "e22_roof==\"wit\"",
-     "text": "“I told her she’d grade it.”"
-    },
-    {
-     "if": "e22_roof!=\"unguarded\" && e22_roof!=\"candor\" && e22_roof!=\"sincerity\" && e22_roof!=\"wit\"",
-     "text": "“I didn’t say it.”"
-    },
+    "“On the roof I got as far as ‘I’m in.’ Then I stopped myself.”",
     {
      "if": "s2e1_tell==\"wit\"",
      "text": "Somewhere in the middle of it Danny says it for him — “You’re in love with the veil girl” — and Jack doesn’t say no."
     },
-    {
-     "if": "e22_margot==\"sincerity\"",
-     "text": "And the last afternoon a girl from his floor who doesn’t believe in anything was lighting a candle at the Newman shrine, and he lit one next to hers, for Danny. “She pray for me?” “She said it was research.” Danny thinks about that. “Tell her I’m a good subject.”"
-    },
+    "And the last afternoon a girl from his floor who doesn’t believe in anything was lighting a candle at the Newman shrine, and he lit one next to hers, for Danny. “She pray for me?” “She said it was research.” Danny thinks about that. “Tell her I’m a good subject.”",
     "He stops there. Danny waits him out. The baby two tables over gives up on the bottle and falls asleep on somebody’s shoulder, and Jack gets to the part he came in here to say.",
     "“When I’m with Skye I’m happy, Dan. I’m not faking it. I laugh the whole time. I like who I am with her. And then I’m with Lena one night and it’s —”",
     "“It’s what?”",
@@ -177,10 +132,7 @@
     "“I don’t do the accent.”",
     "“Then I didn’t get it.” But he’s grinning at the table. “I like the veil girl. She asked my name.” He shrugs one shoulder. “And the California one knows about me, and she’s still around. I like that too.” He lifts a hand off the table and sets it back down. “That don’t count. I’m in here.”",
     "In the toy corner somebody’s kid tips the bin of Duplos out onto the linoleum, and the room jumps and laughs, and Danny keeps his eyes on Jack.",
-    "“A guy sings a song,” he says, “and you go dark on her for a month.”",
-    "“She noticed.”",
-    "“Course she noticed.” He rolls the wrapper’s corner under his thumb. “You know what a month is, in here? Somebody don’t write for a month, you start reading the old ones over.”",
-    "He picks up the wrapper and turns it over, foil side up, and sets it down square to the edge of the table. “You can’t decide for the veil girl. She’s got the guitar guy. You can’t decide for the California one.” He looks up. “So I’m gonna ask you one thing, and then Ma’s coming back with that coffee, and we’re gonna talk about Rosie.”",
+    "He picks up the wrapper and turns it over, foil side up, and sets it down square to the edge of the table. “I ain’t gonna tell you nothing, Professor. I heard all of it.” He looks up. “So I’m gonna ask you one thing, and then Ma’s coming back with that coffee, and we’re gonna talk about Rosie.”",
     "“Okay.”",
     "“Which one of ’em can you tell the truth to?”",
     "Under the bolted table Jack’s right hand closes into a fist against his knee, and opens.",
@@ -194,7 +146,7 @@
       "s2e1_danny": "candor",
       "soul.honesty": "+1"
      },
-     "key": "Danny wouldn’t tell you which one. You told him you can’t tell either of them the truth.",
+     "key": "Danny didn’t tell you which one. He asked you one thing — which of them you can tell the truth to — and you told him neither.",
      "response": [
       "Danny nods, slow. “Both of ’em. Okay.” He taps one finger on the wrapper. “That’s a list, Professor. I asked you which one.”"
      ],
@@ -207,9 +159,9 @@
       "s2e1_danny": "sincerity",
       "trait.sincerity": "+1"
      },
-     "key": "Danny wouldn’t tell you which one. You asked him how he does it, in there.",
+     "key": "Danny didn’t tell you which one. He asked you one thing — which of them you can tell the truth to — and you asked him how he does it, in there.",
      "response": [
-      "“I don’t wish. I told you that.” He turns the wrapper back over. “Deciding’s the easy part. It’s the next morning.”"
+      "“Nah.” Danny turns the wrapper back over. “I asked you first.”"
      ],
      "goto": "s05c"
     },
@@ -220,7 +172,7 @@
       "s2e1_danny": "wit",
       "trait.wit": "+1"
      },
-     "key": "Danny wouldn’t tell you which one. You told him he was supposed to say you’re a catch.",
+     "key": "Danny didn’t tell you which one. He asked you one thing — which of them you can tell the truth to — and you made a joke.",
      "response": [
       "“You’re a catch.” Danny points at him across the table. “You’re a mess. Ask either one of ’em.”"
      ],
@@ -233,10 +185,10 @@
       "s2e1_danny": "restraint",
       "trait.control": "+1"
      },
-     "key": "Danny wouldn’t tell you which one. You let him have the last word.",
+     "key": "Danny didn’t tell you which one. He asked you one thing — which of them you can tell the truth to — and you didn’t have an answer.",
      "response": [
       "Danny lets the quiet go on. Across the room their mother has finally reached the coffee machine and is reading every button on it.",
-      "“Good,” Danny says. “You heard me.”"
+      "“Okay,” Danny says. “Take it home with you.”"
      ],
      "goto": "s05c"
     }
@@ -250,6 +202,9 @@
     "“Of course he misses the beach.” She pushes a honey bun across the table at Jack. “Eat that. You didn’t eat.” And to Danny, are they giving him the vegetables, did he get the socks, and he answers all of it, every item, and somewhere in the middle of the socks he says to Jack, “How’s the rich one?”",
     "“LA.”",
     "“He’ll call.”",
+    "Ma is on to the socks again, the gray wool ones, have they been through the wash yet, and Danny says yes to her and keeps his eyes on Jack. “If he comes, bring him Thursday. Christmas Eve they run a holiday session, one to three. He’s still on my list from Thanksgiving.”",
+    "“Thursday I got seven fishes,” Ma says, not looking up.",
+    "“So send the Professor and the rich one, Ma. Pop can drive.” Danny takes the last honey bun off the table.",
     "At a quarter to twelve the officer up on the platform calls the end of the hour, and the room stands up with all its chairs. The hug at the end is allowed. Danny gives Ma hers, and then he has Jack by both shoulders at arm’s length and takes a good look at him.",
     "“Professor. You walked in here like it’s confession.”",
     "“It was.”",
@@ -267,31 +222,9 @@
     "Rosie is at the other end of the table making a paper chain out of strips of construction paper, one link for every day left till Christmas; she ran out of days at four and is making more links anyway, for after. In the front room Nonna has the Rosary going on EWTN and is praying a decade behind it. Gina is still asleep. Ursuline let out Friday, and Gina has explained to everybody that break is a sacrament.",
     "He texted Margot happy birthday at nine. She answered at 9:02.",
     {
-     "if": "e22_solstice==\"candor\"",
-     "type": "sms",
-     "from": "Margot",
-     "text": "YOU TOASTED “WHO COUNTS.” I COUNTED. YOUNGSTOWN, TODAY: 9 HR 10 MIN OF DAYLIGHT. CONDOLENCES.",
-     "time": "9:02 AM"
-    },
-    {
-     "if": "e22_solstice==\"wit\"",
      "type": "sms",
      "from": "Margot",
      "text": "THE PATRIARCHY SENT FLOWERS. I DECLINED.",
-     "time": "9:02 AM"
-    },
-    {
-     "if": "e22_solstice==\"sincerity\"",
-     "type": "sms",
-     "from": "Margot",
-     "text": "“UPHILL FROM MONDAY.” IT IS MONDAY. I AM HOLDING YOU TO IT.",
-     "time": "9:02 AM"
-    },
-    {
-     "if": "e22_solstice!=\"candor\" && e22_solstice!=\"wit\" && e22_solstice!=\"sincerity\"",
-     "type": "sms",
-     "from": "Margot",
-     "text": "DAY LENGTH, YOUNGSTOWN, TODAY: 9 HR 10 MIN. CONDOLENCES.",
      "time": "9:02 AM"
     },
     "Ma is at the table with her coffee and the envelope from Saturday night, which has run out of back and started down the front. Jack is eating the last of the wedding soup for breakfast because it was there.",
@@ -360,14 +293,7 @@
     "“He called first, Dad.”",
     "“Tell him anyway.” And he’s gone back across the yard with the cord paying out behind him.",
     "“I heard,” Theo says in Jack’s ear. “Tell him —” and stops, and starts again, a man who has the end of every sentence and doesn’t have the end of this one. “Tell him thank you.” He recovers. “Eight-oh-nine Thursday morning. A gate with a letter in it. I’ll be the one in a coat that’s wrong for Ohio.”",
-    {
-     "if": "e22_tab==\"keep\"",
-     "text": "“Is my tab enjoying Ohio?” “It’s in my wallet.” “Then it’s seen more of the Midwest than I have.”"
-    },
-    {
-     "if": "e22_tab==\"candor\"",
-     "text": "“Your twenties are guarding 412. I left them in charge.”"
-    },
+    "“Danny wants you Thursday,” Jack says. “Christmas Eve. They do a holiday visit, one to three. You’re still on his list.” There is a silence in Brentwood long enough for Jack to hear a leaf blower somewhere behind it. “Then I’ll need to know what you wear to a prison on Christmas Eve,” Theo says. “Something that isn’t the coat.” “It’s the parka. It’s always the parka.” “Of course it is.”",
     "“And tell your grandmother her twenty has been to Rodeo Drive,” Theo says. “It wasn’t impressed.”",
     "When they’ve hung up, Nonna wants to know from the front room who that was. Ma tells her *il ricco*. Nonna smooths the gray cashmere over her knees with her left hand. “*Lo sapevo.*”"
    ],
@@ -396,38 +322,8 @@
      "title": "From: Adrian Hale · Subject: Marks",
      "text": "Marks are posted. You will find you did well, which I should like you to understand is not the same as being right."
     },
-    {
-     "if": "e22_oral_personal",
-     "text": "*I am still thinking about the back booth. So, I suspect, are you.*"
-    },
-    {
-     "if": "!e22_oral_personal && duel.oral.heart>=2",
-     "text": "*I have been trying to decide whether “a man defending a person” is a compliment. I have decided it is, and that I shall deny it.*"
-    },
-    {
-     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor>=2",
-     "text": "*I have told the Dean it was an argument. He was astonished.*"
-    },
-    {
-     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor<2 && duel.oral.wit>=2",
-     "text": "*Keep the jokes. They are rarer than rigor and travel better.*"
-    },
-    {
-     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor<2 && duel.oral.wit<2",
-     "text": "*Adequate. Merry Christmas.*"
-    },
-    {
-     "if": "e22_williams==\"candor\"",
-     "text": "*I am reading your margins. You argue with Williams the way the Irish argue with God: constantly, and with the expectation of a reply.*"
-    },
-    {
-     "if": "e22_williams==\"wit\"",
-     "text": "*How is my hostage? Feed it margins.*"
-    },
-    {
-     "if": "e22_williams==\"restraint\"",
-     "text": "*You left Williams on my blotter without a speech. Berkeley approved.*"
-    },
+    "*I have told the Dean it was an argument. He was astonished.*",
+    "*I am reading your margins. You argue with Williams the way the Irish argue with God: constantly, and with the expectation of a reply.*",
     {
      "type": "doc",
      "text": "P.S. Berkeley and I will be in Marisol. He is excellent company and does not argue.\n\n—A.H."
@@ -439,36 +335,7 @@
      "kind": "person",
      "id": "hale",
      "title": "Prof. Adrian Hale",
-     "if": "!e22_oral_personal && duel.oral.heart>=2",
-     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. He said I defended it like a man defending a person. He won’t put that in writing. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol."
-    },
-    {
-     "kind": "person",
-     "id": "hale",
-     "title": "Prof. Adrian Hale",
-     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor>=2",
      "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. He said it was an argument; he’s told they still occur. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol."
-    },
-    {
-     "kind": "person",
-     "id": "hale",
-     "title": "Prof. Adrian Hale",
-     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor<2 && duel.oral.wit>=2",
-     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. He said I defended her with jokes, like the English. He’ll allow it, for Ohio. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol."
-    },
-    {
-     "kind": "person",
-     "id": "hale",
-     "title": "Prof. Adrian Hale",
-     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor<2 && duel.oral.wit<2",
-     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. Adequate, he said. From him, in December, that’s a sonnet. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol."
-    },
-    {
-     "kind": "person",
-     "id": "hale",
-     "title": "Prof. Adrian Hale",
-     "if": "e22_oral_personal",
-     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. I used the back booth on him and won. He said don’t do it to anyone you love. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol."
     }
    ],
    "next": "s07"
@@ -554,7 +421,27 @@
     "At home there is a box under the tree that wasn’t there this morning, out in front of the Nativity: a Priority Mail box with a round black postmark — MARISOL CA, DEC 17 — and the return address in tall, even capitals, N. DUPRE ST., NEW ORLEANS, LA. Ma is standing over it with the dish towel on her shoulder, and from the tape at the corners it’s been picked up and put back down more than once.",
     "“From California,” Ma says. “Who in California sends you a *package*?”",
     "“Lena.”",
-    "Behind him on the mat Gina takes her boots off one at a time, very slowly, listening."
+    "Behind him on the mat Gina takes her boots off one at a time, very slowly, listening.",
+    "At six, with the box still sitting unopened in front of the Nativity where Ma can keep an eye on it, the phone goes on the stairs.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "O Rex Gentium. The cornerstone. Mama has me on the roux tonight, so I am the cornerstone. —L.",
+     "time": "6:04 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "your box came. ma has picked it up 4 times. im not opening it till christmas",
+     "time": "6:07 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Good man. It isn’t a big deal. It’s a little bit of a big deal. Stir it slow, Youngstown. —L.",
+     "time": "6:11 PM"
+    },
+    "He reads *stir it slow* on the seventh stair with his thumb on the hinge, and doesn’t know what it means, and knows exactly."
    ],
    "next": "s08"
   }

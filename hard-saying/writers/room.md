@@ -285,6 +285,23 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    "The one eye is on the lens and nowhere else" — the frame depends on it).
 135. **"Hold(s) on" as the default grip** (E22 ×11 in one draft; Julian's and Kevin's goodbye handshakes used the same beat scenes apart; hands "hold on" to wrists, rails, curbs, backs). Max three per episode (E22 kept touch One — her
    arm "holds on" — and the SBA hug "He holds on."); otherwise grips, takes hold, or nothing.
+136. **Jack's grin as the default joy marker** (S2E01 draft ≈10 "grin(ning)" a path; nearly every Skye beat ended on it: "grinning at the little screen," "grinning at Glenwood Avenue," "the grin still on him," "grinning at it in
+   the dark"). Max two an episode (S2E01 kept s03b's top step); give each joy its own action (squid thumbs and Theo's towel, the phone close to his face) — the double state needs Skye's joy fully true, not stamped.
+137. **"Rather be here than anywhere" contentment closers** (S2E01: "nothing in him wants to be anywhere but here," "he could stand out here till Easter," "he wouldn't trade a minute of it"). Once an episode (S2E01 kept s08a).
+138. **"Gives him/her [content]" as the summary verb for reported talk** (S1E22 ×16; S2E01 draft ×9+, s12b repeating E22's "gives her Glenwood Avenue back"). Max three an episode; otherwise tell it, start the inventory, or let the
+   dialogue carry it ("Then godmother:").
+139. **Truck silences measured in road** ("Frank drives a mile… Another mile," "for the length of an overpass," "A mile goes by," "Nobody in the cab says anything for a mile"). One road-distance silence an episode (S2E01 kept s01);
+   use the wipers, the heater, Frank's thumb on the wheel, the salt truck.
+140. **Frank's radio knob as his all-purpose reaction** ("turns KDKA up a notch," "turns the radio up"). Once an episode (S2E01 kept s05's "The twenty-seventh.").
+141. **Per-scene stamps on Nonna** (her chin ×4 with "allows it"; Theo's cashmere over her knees re-established in ≈10 scenes; cf. her "good hand" in S1E18). One chin a scene; name a running prop only at its load-bearing points
+   (S2E01: the cashmere at s02 arrival, s06a "*Lo sapevo*," s09 Theo seeing it, s17 Theo tucking it in).
+Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
+asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);
+"before X can" pre-emptions (#83, ≈14 a path in draft); trailing "which" (#91, ≈15 in draft); "the way [someone did]" (#112, ≈12 in draft); laughter overflow buttons (#101, 6+ in draft — characters top it in their own register:
+"Do it again," "The *valets*," "*Allegedly*"); courtroom figures away from Lena (#11 — the Santa-hat officer "like a ruling," Gina's "for the record"); counted numbers (#1 — seven fishes must be seven on the table; 286 was Harrison's,
+not the team's; "Seventeen days" from Dec 23 to Jan 9; Gina kept it thirty days by Christmas); the face-down Santa (establish once, spend once — S2E01: s02, the weather report, s16b's puddle); "Local 1112" (once — the bar);
+snow "crust" (one a scene); Ma's dish towel (one a scene); "snoring in two parts" (S1E18's — once, s08); "sleeping weather" (S1E18's — retired); "He makes himself say the rest in order" (S1E21's confession — retired);
+"Fourteen" as number noise (the Costigan stairs are just "the stairs"; Tariq's fourteen belong to Yusuf); defroster half-moons (once); Rosie's half-beat Gloria (once in narration).
 Small repeats to watch (S1E22): the RAZR "finds its bar" (E05, E20, E21, E22 ×3 — once an episode, at the payoff; E22 kept Denver's "*Searching.* It finds Denver."); the power-off chime's "four notes going downstairs" (E20's
 phrase — retired; E22: "four notes, high to low"); the oil platforms as "a town" (E12, E15, E16, E22 ×2 — retired after s07's "a town that came loose and floated off"); "two thousand miles" (once an episode — Skye's cousin speech);
 the Café du Monde can (one can per episode — E22's is Lena's white-elephant coffee in Jack's duffel); the heater "like a hair dryer in another room" (E07, E10, E16, E18 — retired); "thinks better of it" (E11, E13, E21 — retired);

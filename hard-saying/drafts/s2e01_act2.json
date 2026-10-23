@@ -36,42 +36,15 @@
     "Frank watches Dallas line up for a field goal. “Healthy?”",
     "“She says she’s got a lot of hair.”",
     "Frank nods. He picks up the ginger ale and tips it at the television, at New Orleans, at whoever’s in charge down there, and drinks.",
-    {
-     "if": "jack_prays_14",
-     "text": "At the start of the fourth quarter, down twenty-one, Jack puts his Coke on the bar and prays for fourteen: a Hail Mary, start to finish, loud enough to carry to the far end of the bar. The men at the far end let him finish. Frank crosses himself without taking his eyes off the set."
-    },
     "Brees comes back. A touchdown, and the men at the end of the bar, who have no business caring, make a noise anyway; another, and it’s seven, and three of them have turned into Saints fans for the night, and the brother-in-law has gone to stand by the pool table with his arms folded. The RAZR buzzes on the bar. Lena, from a hallway, with a cart going by — he can hear its wheels: “Tess asked me. To be godmother. With the epidural still in.”",
     "“Yeah?”",
     "“I said yes before she got to the *mother*.”",
     "On the set the last drive ends. Dallas 24, New Orleans 17. The bar goes back to its drinks.",
     "On the line Lena goes quiet, and he gets Touro instead: the television, somebody switching it off, Tony saying *Well*. Then she laughs and cries at once, the same breath, one sound. “She came in undefeated,” she says.",
     "“You missed thirteen,” she says, “and you made it for the first one we lost. I’m not saying it’s your fault. I’m saying it’s a pattern.”",
-    {
-     "if": "e22_saints==\"concede\"",
-     "text": "“You said He was a Saints fan.” “He had a delivery,” Jack says."
-    },
-    {
-     "if": "e22_saints==\"press\"",
-     "text": "“And don’t you say Detroit to me tonight.”"
-    }
+    "“And don’t you say Detroit to me tonight.”"
    ],
    "choices": [
-    {
-     "text": "“I prayed for fourteen. Out loud. In a bar.”",
-     "tag": "Promise",
-     "if": "jack_prays_14",
-     "set": {
-      "s2e1_loss": "prays",
-      "trait.sincerity": "+1",
-      "rel.lena.warmth": "+1"
-     },
-     "key": "The night the Saints lost their first game, her niece born undefeated in the third quarter, you told Lena you’d prayed for fourteen, out loud, in a bar.",
-     "response": [
-      "“I prayed for fourteen,” Jack says. “Everybody heard.”",
-      "She’s laughing before he’s through. “And you got a baby instead.” She blows her nose. “God has a sense of humor, Jack, and it’s *Cajun*.”"
-     ],
-     "goto": "s03a"
-    },
     {
      "text": "“She came in undefeated. That’s the record that counts.”",
      "tag": "Sincerity",
@@ -142,11 +115,7 @@
     "rel.lena.warmth": "+1"
    },
    "body": [
-    {
-     "if": "xmas_eve_call",
-     "text": "At eight o’clock he calls her from the garage.",
-     "else": "At eight o’clock the phone goes off in his hand halfway across the yard, and he answers it in the garage."
-    },
+    "At eight o’clock he calls her from the garage.",
     "His father’s garage at Christmas: the space heater ticking up to orange at his shins, the Stroh’s fridge humming to itself, the radio off tonight, and over the workbench a string of colored lights Frank tacked across the pegboard some December when Jack was in grade school and never took down, red and green and one blue bulb dead in the middle, strung over the painted outlines of the tools. Jack has the Carhartt on over his good shirt, and squid on his hands that the sink didn’t get off.",
     "“Don’t talk,” Lena says. “Listen.”",
     "She holds the phone up. It comes down the line as a roar with cracks in it — the cane going off in the heat like cap guns, a string of firecrackers some cousin lit too close, kids shrieking, a man’s voice, *Remy, get back from that*, the deep soft rush of a big fire pulling air — and under all of it, thin and tinny out of a truck parked on the levee with its doors open, Louis Armstrong.",
@@ -154,7 +123,7 @@
     "He takes it out of the garage, down the driveway past his father’s truck. Christmas Eve has come in clear and bitter. The old snow on the lawns has a crust a man could stand on, Frank’s blue lights are on around the Madonna in the side yard, and in the south, over the roofs across Glenwood, there’s a half-moon, white and very sharp, cut clean down the middle. Through the front window the table is still out, and Theo is talking to Nonna with both hands, and Nonna is pretending not to understand him.",
     "“Can you see the moon?” She has the phone back at her ear. The fire is behind her now, and her breath is close.",
     "“I can see the moon.”",
-    "And the line goes quiet with both of them on it. The fire keeps on at her end, low. At his, the furnace kicks on in the house and a car goes by down at the corner with its radio up, and is gone. His breath goes up white toward the moon. There is room in it for anything either of them might say. He has a sentence; he holds it in his mouth like a coal. Then a firecracker goes off close to her, and some child screams with joy, and Lena laughs, and the quiet is over.",
+    "And the line goes quiet with both of them on it. The fire keeps on at her end, low. At his, the furnace kicks on in the house and a car goes by down at the corner with its radio up, and is gone. His breath goes up white toward the moon. There is room in it for anything either of them might say. He has a sentence; he holds it in his mouth like a coal. On her end she doesn’t fill it either. He can hear her not filling it: her breath, held a second and let go, and held again, as if she had one too and was deciding what it would cost. Then a firecracker goes off close to her, and some child screams with joy, and Lena laughs, and the quiet is over.",
     "“I’m in Remy’s LSU sweatshirt and Mémère’s church gloves,” she says, “and I smell like a smokehouse.”",
     "“I smell like squid.”",
     "“Then we’d clear a room together.”",
@@ -186,17 +155,11 @@
     "“Merry Christmas, Mr. Broussard. I’m sorry about Kansas City.”",
     "“You ought to be.” And, away from the phone: “He’s polite. Told you.” And the phone is hers again.",
     "“He cried for ten minutes on a man from Metairie in the waiting room Saturday,” she says, “and found out afterward the man was a Falcons fan. They’re exchanging Christmas cards.”",
-    {
-     "if": "knows_julian_newyear",
-     "text": "“Julian lands the thirtieth,” she says. “Mémère’s ironing a tablecloth.” There’s frost on the tailgate of his father’s truck, and when Jack takes his hand off it his palm has left a print there, melted down to the green paint."
-    },
+    "“Julian lands the thirtieth,” she says. “Mémère’s ironing a tablecloth.” There’s frost on the tailgate of his father’s truck, and when Jack takes his hand off it his palm has left a print there, melted down to the green paint.",
     "“You stood up,” she says. “Didn’t you. In your kitchen.”",
     "“With a squid in my hand.”",
     "Her laugh goes up over the fire. Somebody near her asks what’s funny, and she says *the Pope*, and is told that isn’t funny, and laughs harder. Jack has his back against his father’s truck and the cold coming through the Carhartt, grinning at Glenwood Avenue, and he could stand out here till Easter.",
-    {
-     "if": "lena_has_benedict",
-     "text": "“I had your holy card out on the counter for the rest of it,” she says. “Propped on the sugar. Facing the television, so he could watch himself get up.”"
-    },
+    "“I had your holy card out on the counter for the rest of it,” she says. “Propped on the sugar. Facing the television, so he could watch himself get up.”",
     "“They’re lighting the next one down,” she says. “You can see four from here. Listen.”"
    ],
    "choices": [
@@ -274,18 +237,7 @@
     "“Ours is at midnight. Yours is at midnight.” A truck door, and her boots on gravel. “I’ll be an hour behind you the whole way.”",
     "She hangs up first.",
     "He stays in the driveway a minute with the phone shut in his hand and his breath going up. The moon has moved west over the roofs. Somewhere toward Market Street a dog is barking at it, or at Christmas, and a door opens on a party two streets over and closes again.",
-    {
-     "if": "reliquary_with_jack && e22_jacket==\"reckless\"",
-     "text": "In the garage the colored lights are on over the bench, and the space heater has the place nearly warm. He takes the tin out of the Carhartt and opens it on the workbench under the dead blue bulb — RELIQUARY in her marker on the lid, the corners gone shiny from a week in his pocket — and counts them with one finger, filter by filter. Eleven. He shuts the lid and puts it back in the pocket. The Marlboros ride in the other one."
-    },
-    {
-     "if": "reliquary_with_jack && e22_jacket!=\"reckless\"",
-     "text": "In the garage the colored lights are on over the bench, and the space heater has the place nearly warm. He takes the tin out of the Carhartt and opens it on the workbench under the dead blue bulb — RELIQUARY in her marker on the lid, the corners gone shiny from a week in his pocket — and counts them with one finger, filter by filter. Ten. He shuts the lid and puts it back in the pocket. The Marlboros ride in the other one."
-    },
-    {
-     "if": "!reliquary_with_jack",
-     "text": "In the garage the colored lights are on over the bench, and the space heater has the place nearly warm. He stands under them a minute with his hand in the Carhartt’s pocket."
-    },
+    "In the garage the colored lights are on over the bench, and the space heater has the place nearly warm. He takes the tin out of the Carhartt and opens it on the workbench under the dead blue bulb — RELIQUARY in her marker on the lid, the corners gone shiny from a week in his pocket — and counts them with one finger, filter by filter. Eleven. He shuts the lid and puts it back in the pocket. The Marlboros ride in the other one.",
     "Through the side door the kitchen is loud: Rosie still doing the donkey without the radio, the pans going into the sink, his mother calling his name, and Theo over all of it asking Nonna, in very bad Italian, whether there’s any more eel."
    ],
    "journal": [
@@ -293,15 +245,7 @@
      "kind": "note",
      "id": "cigarette",
      "title": "The Reliquary",
-     "if": "reliquary_with_jack && e22_jacket==\"reckless\"",
      "text": "An Altoids tin from a pea-soup restaurant in Buellton. RELIQUARY on the lid. No. 1: the Lighthouse. No. 2: Malibu, before breakfast. No. 3: the harbor — she smoked half of it first. No. 4: a clove, on the Delgado roof, at a wake. By dispensation. Do not ask. No. 5: the Ferrer Tower, in the bells. No. 6: Lucia, a motel porch, under the stars — on the back of the receipt. No. 7: Del Playa, on the widow’s walk, on the back of a HALO OR HORNS card. All Hallows — the occasion. No. 8: the east stairs, before light, the morning after All Souls. She smoked half. On the back of an All Souls card — she wrote All Souls anyway. No. 9: Campus Point, Veterans Day, on the back of the 12:10 worship aid. No. 10: the Walgreens on Mission Street, St. Nicholas Eve, half past one in the morning, out of my own pocket. ‘For the saint.’ Into her cardigan. She’ll file it. No. 11: the Point, the last night. She took it before I could light it. ‘Not here.’ She gave me the tin to keep over Christmas. Count them. Christmas Eve, in Dad’s garage after the levee, I counted: eleven."
-    },
-    {
-     "kind": "note",
-     "id": "cigarette",
-     "title": "The Reliquary",
-     "if": "reliquary_with_jack && e22_jacket!=\"reckless\"",
-     "text": "An Altoids tin from a pea-soup restaurant in Buellton. RELIQUARY on the lid. No. 1: the Lighthouse. No. 2: Malibu, before breakfast. No. 3: the harbor — she smoked half of it first. No. 4: a clove, on the Delgado roof, at a wake. By dispensation. Do not ask. No. 5: the Ferrer Tower, in the bells. No. 6: Lucia, a motel porch, under the stars — on the back of the receipt. No. 7: Del Playa, on the widow’s walk, on the back of a HALO OR HORNS card. All Hallows — the occasion. No. 8: the east stairs, before light, the morning after All Souls. She smoked half. On the back of an All Souls card — she wrote All Souls anyway. No. 9: Campus Point, Veterans Day, on the back of the 12:10 worship aid. No. 10: the Walgreens on Mission Street, St. Nicholas Eve, half past one in the morning, out of my own pocket. ‘For the saint.’ Into her cardigan. She’ll file it. She gave me the tin to keep over Christmas. Count them. Christmas Eve, in Dad’s garage after the levee, I counted: ten."
     }
    ],
    "next": "s13"
@@ -340,6 +284,9 @@
     "“Good for Nonna.” Somebody goes past her into the house with a stack of plates. “I got yours. On the steps at Holy Rosary after, with Jude asleep on my shoulder in his good coat.”",
     "“What’d Papa Noël bring Dupre Street?”",
     "“Daddy got everybody the same thing. Brees jerseys. All of us, the baby included — hers goes to her knees. Mémère wore hers to dinner over her church dress, and Mama took a picture, and it’s going on next year’s card whether Mémère likes it or not.”",
+    "“Julian called at dinner,” she says. “From Oakland. His brother’s ship is in for Christmas, so the whole Park-Ellis side was on the line yelling *Merry Christmas* at the whole Broussard side.” A breath. “He asked to say hi to Lucille. He sang her ‘You Are My Sunshine,’ all the way through, every verse, even the sad one nobody knows, over the speakerphone at the table. Tess cried. Daddy said it was the onions.” And then, simply, because she doesn’t do half a truth: “He’s good with babies. I didn’t know that.”",
+    "The rain drums on the cab. Jack watches the porch light two houses up swim in the windshield.",
+    "“That’s nice of him,” he says, and means it, which is the worst part.",
     {
      "if": "told_lena_danny_place",
      "text": "“I said I’d tell you about ours,” she says."

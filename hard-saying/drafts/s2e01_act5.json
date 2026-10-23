@@ -5,14 +5,7 @@
    "body": [
     "On Christmas Eve morning the line for confession at St. Brigid’s runs down the side aisle from the fifth Station to the second, and it’s half the South Side: women in their good parkas with their purses held in both hands, a man in a Local 1112 jacket reading the bulletin like a racing form, two Mooney sophomores somebody’s mother has marched over, shoving each other in whispers. Up front the Holy Name men are on ladders, hanging garland off the choir loft and arguing about the staple gun. Mrs. Pallante from the school cafeteria turns around in line, sees him, tells him he got tall, and turns back.",
     "The confessional is the old one, built into the wall between the Stations: dark oak gone black at the edges where hands push the curtains back, a velvet curtain on either side, and over the middle door, where the priest sits, a small light, green, which means Father’s in.",
-    {
-     "if": "xmas_confession_planned",
-     "text": "A week ago Wednesday he told a priest in California he’d go Christmas Eve, at home."
-    },
-    {
-     "if": "confession_owed>=4",
-     "text": "He did the arithmetic coming down Glenwood. It’s going to be a long one."
-    },
+    "A week ago Wednesday he told a priest in California he’d go Christmas Eve, at home.",
     "The left-hand curtain slides back and an old man comes out putting his cap on. The woman ahead of Jack goes in, and it’s him next, standing under the green light with his hands in the Carhartt’s pockets and the line at his back."
    ],
    "choices": [
@@ -38,7 +31,7 @@
      "response": [
       "He steps out of the line and goes back up the side aisle past the Stations, and behind him the line moves up a place to fill where he stood."
      ],
-     "goto": "s11"
+     "goto": "s10c"
     }
    ]
   },
@@ -52,48 +45,18 @@
    "body": [
     "He draws the curtain to behind him and kneels in the dark. It smells of varnish and wet wool and somebody’s Jean Naté. The kneeler is worn into two shallow dips by other people’s knees. At the height of his face there’s a brass grille with a cloth behind it, and behind the cloth a shape, a chair creaking, a cough drop clicking against teeth. Somewhere in the wall a radiator is coming up, ticking in the pipe, a small dry knock every few seconds. The little door behind the grille slides open.",
     "“Bless me, Father, for I have sinned.”",
-    {
-     "if": "confessed_skye_3",
-     "text": "“It’s been eight days since my last confession.”",
-     "else": "“It’s been twelve days since my last confession.”"
-    },
+    "“It’s been eight days since my last confession.”",
     "Through the curtain he can hear the line breathing: a purse clasp, one of the sophomores getting shushed, somebody’s beads knocking a pew end. He had it in order coming down Glenwood. On the kneeler it comes out in whatever order it likes.",
     "“There’s a girl. At school, in California.” On the other side of the cloth Father Dom breathes through his nose and waits.",
-    {
-     "if": "pic5_opened",
-     "text": "“She sent me a picture on my phone. Of herself. I opened it. And I kept it.”",
-     "else": "“She sent me a picture on my phone. Of herself. I kept it.”"
-    },
+    "“She sent me a picture on my phone. Of herself. I opened it. And I kept it.”",
     "“A week ago, in her car.” He makes himself say the rest of that one. “I was the one who went too far this time.”",
     "“This time,” Father Dom says.",
     "“Usually she’s the one driving.”",
-    {
-     "if": "e22_thu_late",
-     "text": "“And I took a minute I shouldn’t have. Before I stopped. I knew I was taking it.”"
-    },
-    {
-     "if": "!confessed_skye_3",
-     "text": "“And before that, the Tuesday. Her car again. Further than it’s ever gone.”"
-    },
-    {
-     "if": "!confessed_skye_3 && e22_tue_late",
-     "text": "“I said no late.”"
-    },
-    {
-     "if": "!confessed_skye_3",
-     "text": "“The Saturday before, she came to where I work, and after that, down on the wharf. There was a picture before this one, too. I opened that one and I answered it. I slept at her house — only slept. I knew I shouldn’t be there. And I keep lying to a friend about where I go.”"
-    },
-    {
-     "if": "!confessed_skye_3 && e22_waiting==\"lie\"",
-     "text": "“Once by text. About finals.”"
-    },
+    "“And I took a minute I shouldn’t have. Before I stopped. I knew I was taking it.”",
     "“Did it stop?” Father Dom says. “In the car.”",
     "“It stopped.”",
     "“Good.”",
-    {
-     "if": "xmas_confession_planned",
-     "text": "“And Father, one more thing. It’s an errand.” Jack has it by heart. “A priest in California said to tell you you’re very lucky to have me in your line. And very sorry.” Behind the grille the cough drop goes over to the other cheek. “Tell him we’ll see.”"
-    },
+    "“And Father, one more thing. It’s an errand.” Jack has it by heart. “A priest in California said to tell you you’re very lucky to have me in your line. And very sorry.” Behind the grille the cough drop goes over to the other cheek. “Tell him we’ll see.”",
     "“For these and all my sins I’m sorry.”",
     "The chair creaks while Father Dom gets the knee straightened out under him.",
     "“You’re home,” he says, “and she’s in California. God gave you two thousand miles for Christmas. Don’t mail them back.”",
@@ -155,7 +118,7 @@
     "The radiator in the wall knocks twice and goes quiet.",
     "Out on the steps the sky has been scraped clean overnight, hard blue from the steeple to the Valley, and the old snow on the lawns along Glenwood has gone to crust that shines. He goes down the street toward the house with his hands in the Carhartt’s pockets, counting off the first decade on his fingers inside the left one, and into every Hail Mary, under his breath, he puts her name."
    ],
-   "next": "s11"
+   "next": "s10c"
   },
   "s14": {
    "slug": "FRIDAY · 12:00 AM · ST. BRIGID OF KILDARE, MIDNIGHT MASS",
@@ -195,6 +158,44 @@
     }
    ],
    "next": "s15"
+  },
+  "s10c": {
+   "slug": "THURSDAY · 1:05 PM · TRUMBULL CORRECTIONAL INSTITUTION, THE VISITING ROOM",
+   "set": {
+    "resolve.jack": "+1",
+    "rel.theo.warmth": "+1",
+    "theo_danny_xmas": true
+   },
+   "body": [
+    "Frank takes the last row of the lot again, against the same gray wall of plowed snow, and leaves the engine running, and doesn’t say *the twenty-seventh*, because it’s understood. Theo gets out of the truck in the Browns parka over the camel coat with the hood down and stands a second looking at the fence, at the coils along the top of it lit up silver in the clear, and then he follows Jack in.",
+    "The lobby on Christmas Eve is a waiting room at a bus station the day before a holiday. Every plastic chair is taken. Somebody has hung a paper chain along the top of the lockers, and somebody else has put a Santa hat on the officer at the desk, who wears it like a ruling he plans to appeal. Theo signs the visitor log in fountain-pen ink and hands his license across without being asked. Coats in the lockers; phones in the lockers. The stamp on the back of the hand. In the space between the two steel doors Theo puts his palm flat on the cinderblock again, exactly where he put it in November, as if he’s checking that it’s still there.",
+    "The visiting room is loud with it — kids in their good clothes, grandmothers, a man in state blues holding a baby up over his head at the end of his arms while the baby shrieks with joy. The paper tree is still taped up over the microwave. Danny comes through the far door and finds them before they find him.",
+    "“Professor.” And then, to Theo, with a look at the parka: “You came back.”",
+    "“Your father said I didn’t have to call first.”",
+    "Danny stops halfway into the bolted chair. “He said that?” Behind him a C.O. on the platform calls a name, and a woman two tables down gets up crying and laughing at once. “He never said that to nobody.”",
+    "Theo has a roll of quarters in his fist from the truck, and before anybody can stop him he’s at the machines. Danny watches him go. “What’d I tell him about buying?” “He says Christmas Eve is a loophole.” “He would.” Theo comes back with a honey bun, two coffees in the paper cups with the playing cards around them, and a bag of Funyuns he sets down in front of Danny like a man laying a wreath.",
+    "For an hour Jack mostly listens. Danny wants the Browns from somebody who was there for it, and Theo, who could not have told a first down from a fumble at Thanksgiving, gives him Sunday in the garage — Cribbs, a hundred and three, Frank’s head in the Christmas lights, the thermos, *two-eighty-six* — in Frank’s exact voice, so exact Danny has to put his coffee down. Danny gives him Christmas inside: the chaplain’s Mass at eight tomorrow, the turkey roll, Reggie from Portsmouth teaching the whole unit the words to “Feliz Navidad” so he can lead it badly. Theo tells him he’s been learning the seven fishes since ten this morning from a woman who won’t speak English to him on principle.",
+    "“She’s gonna put the eel on you tonight,” Danny says. “Watch. She puts it right on your plate. Pop won’t touch it. Twenty-four years.”",
+    "“Is there a technique?”",
+    "“Yeah. Don’t think.” Danny grins. “I never ate it once. Tell Nonna I said you’re a coward if you don’t.”",
+    "Somewhere in the second coffee Theo turns his cup around once on the bolted table and says, mildly, to nobody in particular: “Has he told you about California?”",
+    "Danny doesn’t look at Jack. Not once. “He told me he misses the beach.”",
+    "Theo looks at Danny for a second, and then at Jack, and then back down at his coffee with the playing cards printed around it. “It’s a very good beach,” he says.",
+    "Near the end the room starts to stand up in pieces, people reaching for each other before they’re told. Danny leans in on his forearms. “Nonna still praying for you?”",
+    "“Since Thanksgiving. She says starting that night.”",
+    "“Then you’re covered, man. She don’t miss.” He looks at Theo the way he looked at Jack on Sunday, a long plain look. “Thanksgiving I said somebody oughta come see you. So who comes to see you, out there?”",
+    "Theo opens his mouth on something ready, and it doesn’t come. He tips his head at Jack. “He does. He doesn’t knock.”",
+    "“Good,” Danny says.",
+    "At five to three the officer calls the end of it. The hug at the end is allowed. Danny gets Jack first, a hand on the back of his head for a second like when they were kids, and then he gets Theo too, without asking, both arms, and Theo, who shakes hands with everybody’s father and bows to girls on terraces, stands inside it with his own hands up in the air for a second like a man at a stickup before he puts them down on Danny’s back.",
+    "“Merry Christmas, rich one.”",
+    "“Merry Christmas, Danny.”",
+    "Out in the lot the windshield has fogged from the inside and Frank has the Cleveland station on, two men already arguing about Oakland on Sunday. Theo gets in the middle. A mile goes by, the fields white on both sides and the stubble coming up through the snow in rows.",
+    "“Mr. Costigan,” Theo says. “What was Danny like at eleven?”",
+    "Frank drives. Jack thinks he isn’t going to answer.",
+    "“Same,” Frank says. “Ate everything.” He moves the truck over for a plow. “Laughed at his own jokes before he got to the end of them.”",
+    "Theo nods at the windshield as if he’s writing it down. Nobody says anything else till Glenwood, and the quiet in the cab is the good kind."
+   ],
+   "next": "s11"
   }
  }
 }
