@@ -1451,3 +1451,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
      the status; Lena's hint pays off in New Orleans, when he learns what she meant.)
   - POV: Lena's intent stays off-screen; the player sees her words exactly as Jack hears them, written so they read
     both ways on a replay.
+- **January–February: Jack and Skye as a real couple (player).** Jack **throws himself into being who he could never be
+  for Becca**. Not over the top (they both still have lives), but **both are there for each other's things**, and they
+  have **time together with physical intimacy, studying, intellectual argument and playfulness**.
+  - **Skye comes with him to ensemble scenes**, so **the friend group witnesses it** and **takes note especially of the
+    intellectual arguments**, because they're used to Jack and Lena doing that. (Laney and Theo clock it hardest;
+    Margot may find Skye's arguments genuinely good; Kevin quietly unhappy.)
+  - **Lena is beyond upset and furious about all of it**, and **privately blames Jack for poisoning her relationship with
+    Julian**: she was ready to end it for Jack, and now can't get her own head past that with Julian while they're still
+    together. (POV: Jack sees only her fury's surface; the blame comes out in New Orleans.)
