@@ -1607,3 +1607,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     Osei; Laney's delight). **Skye:** her **reputation and image as Cassidy**, the network's good girl: the team and her
     mother in full crisis mode, gossip-blog headlines about the "good girl" gone wild. She doesn't regret it; it may
     be the happiest thing she's ever been filmed doing. **It is the public antic that triggers the alliance's third (biggest) emergency meeting** (player-approved), the one that secretly gets Lena to plan the New Orleans trip.
+  - **Jack confesses the singalong as what it was (player).** No wrong intended: a fun moment that wasn't thought
+    through. **A venial sin**, in the sense that it continues the **regularizing and cheapening of the words**, making
+    the act easier to treat lightly, **not just for them but for others who see it** (a small public-example /
+    scandal dimension), **but not a reveling in the gravely sinful act itself.** Jack names it precisely, without
+    scrupulosity and without excuse. Osei's response fits his current stage of the arc (he may well enjoy it a
+    little; real counsel about words and witness, never a scolding).
