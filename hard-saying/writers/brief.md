@@ -1696,3 +1696,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     seats; she stops coming; the empty seat; a group assignment that can't be traded; the final exam in the same
     room). A recurring, quiet knife through spring, and part of the slow road to Skye and Jack becoming not-close
     friends much later.
+    **And it forces their continued contact (player):** she can't fully disappear from his life (or he from hers); the
+    class keeps them in each other's orbit (at minimum a shared assignment/group and the same room twice a week), so
+    the hurt, and later the thaw, have somewhere to happen. Don't let her drop it or vanish from it entirely.
