@@ -1606,4 +1606,4 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     devout guy belting "Birthday Sex" in a convertible; comic and mortifying, with real fallout (Ma's call; a look from
     Osei; Laney's delight). **Skye:** her **reputation and image as Cassidy**, the network's good girl: the team and her
     mother in full crisis mode, gossip-blog headlines about the "good girl" gone wild. She doesn't regret it; it may
-    be the happiest thing she's ever been filmed doing. (It can feed the alliance's third emergency meeting.)
+    be the happiest thing she's ever been filmed doing. **It is the public antic that triggers the alliance's third (biggest) emergency meeting** (player-approved), the one that secretly gets Lena to plan the New Orleans trip.
