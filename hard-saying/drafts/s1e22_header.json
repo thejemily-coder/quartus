@@ -24,12 +24,12 @@
    "if": "confessed_skye_2"
   },
   {
-   "text": "Father Osei, with a pipe wrench: “Then I will see you at nine tomorrow, and the light will still be on.”",
-   "if": "!confessed_skye_2"
-  },
-  {
    "text": "On the beach at Ellery: “Six days.” “You’re counting.” “I don’t count. I have people who count.”",
    "if": "skye_counting"
+  },
+  {
+   "text": "On Gaudete Sunday you went to breakfast instead of Sully’s. At 1:04 the RAZR buzzed on your desk while you slept: *13. —L.*",
+   "if": "missed_saints_13"
   },
   {
    "text": "After the Gaudete Mass she asked the 8-Ball something without moving her lips, and turned it so you could read it: *Better not tell you now.*",
@@ -471,10 +471,6 @@
     "text": "On a back porch where you didn’t know anybody, a girl took the cigarette out of your mouth."
    },
    {
-    "if": "e10_play==\"low\"",
-    "text": "At five in the morning she played the Saints on the Ferrer Tower, and you took the low notes."
-   },
-   {
     "if": "e11_decided==\"wreck\"",
     "text": "On a motel porch above Lucia you told her you’d decided not to be the one who wrecks anything. “Me neither.”"
    },
@@ -497,6 +493,10 @@
    {
     "if": "skye_first_no",
     "text": "On her bed on Del Playa you said no, and stayed till it got light."
+   },
+   {
+    "if": "missed_saints_13",
+    "text": "All of December you stayed away from her. On Gaudete Sunday you missed the Saints for the first time."
    },
    {
     "if": "skye_january && e22_skye==\"restraint\"",

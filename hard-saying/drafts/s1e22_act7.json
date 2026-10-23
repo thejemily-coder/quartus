@@ -13,18 +13,11 @@
      "text": "LAST ONE OUT:\nTHE LIGHTS ARE NOT DECORATIVE.\n— Priya, RA"
     },
     "Theo’s half of 412 is down to the bare mattress, a square of cleaner carpet where the minifridge stood, and the espresso machine, unplugged, with its cord wound tight around its middle. On Jack’s bed, folded in thirds at the foot where Theo left it, is the gray cashmere throw. For Ohio.",
-    {
-     "if": "jack_has_lena_coffee",
-     "text": "His duffel is packed and zipped on the floor by the bed, with the Café du Monde can in the top of it, wrapped in his Mooney T-shirt so it won’t dent between here and Glenwood Avenue.",
-     "else": "His duffel is packed and zipped on the floor by the bed."
-    },
+    "His duffel is packed and zipped on the floor by the bed, with the Café du Monde can in the top of it, wrapped in his Mooney T-shirt so it won’t dent between here and Glenwood Avenue.",
     "Out the window the Lagoon has gone the last dark blue before black, and the lamps are on along the bike path with no bikes on it. Down the hall the vending machine by the east stairs hums, and clunks, and thinks better of it. Everybody Jack knows is on a freeway or in the air or in a kitchen two thousand miles away, and he is on his bed in his socks with a paperback open on his chest that he hasn’t turned a page of in twenty minutes, and the RAZR shut on the blanket by his knee.",
     "Somebody knocks. Not Priya’s knock, which is three and a clipboard. Two, and then nothing.",
     "He opens the door on Lena in her coat, with two paper cups from the urn at the front desk, the lids on, the last of it. She holds one out to him so she’ll have a hand free.",
-    {
-     "if": "lena_has_8ball",
-     "text": "Something round and heavy pulls the right pocket of her coat out of shape."
-    },
+    "Something round and heavy pulls the right pocket of her coat out of shape.",
     "When her free hand comes out of the other pocket, an index card comes with it: ruled, numbered, in her capitals, a pen-mark at the left of each line where a box would go. She reads the top of it once, in his doorway, and he gets the first of it upside down before she puts it back.",
     {
      "type": "doc",
@@ -118,10 +111,6 @@
     "Jack sits on the dryer beside her coat with the coffee going cold in his hands. He watches her right foot on the pedal, the scuffed toe of the Justin. He watches the back of her neck where her hair is pushed over one shoulder. She plays it through, every verse, with her eyes on the keys and nowhere else, and she plays it properly — no joke in it, nothing thrown away — and on the last chord she holds both hands down until the basement has it, and then lifts them off.",
     "“That wasn’t Debussy,” Jack says.",
     "“Debussy never walked anywhere in his life.”",
-    {
-     "if": "e21_keys==\"wit\"",
-     "text": "She closes the lid over the keys. “You gave Gus Julian,” she says. “At the party.” “He was right there.” “He was,” Lena says, and gets up."
-    },
     "She takes her coat off the dryer and her coffee off the piano and goes up the east stairs ahead of him to four.",
     "The lounge is dark. The couches are shapes, the TV is off and looks wrong off, and the microwave clock says 6:12. Lena finds the switch over the counter. Margot’s whiteboard comes up under the fluorescents in layers, a semester of it, nothing ever quite erased: USEFUL IDIOTS FOR CHRISTIAN NATIONALISM across the top with COSTIGAN | BROUSSARD and the tallies under it; LEIF ERIKSON DAY (OBSERVED) gone gray at the edges; AMERICAN GOTHIC (UNPLANNED); a pink pitchfork with a bow on it; UNEXPLAINED CITRUS — FLOORS 2–4, SUSPECTS: (THE CATHOLICS); and down the side Laney’s TIGER column, which says MORE.",
     {
@@ -207,42 +196,14 @@
      "kind": "person",
      "id": "osei",
      "title": "Fr. Gabriel Osei",
-     "if": "e21_conf==\"drift\" && e21_knock!=\"now\" && e22_conf==\"grace\"",
-     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday I held the wrench for him at the courtyard wall. The sprinkler won. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back."
-    },
-    {
-     "kind": "person",
-     "id": "osei",
-     "title": "Fr. Gabriel Osei",
-     "if": "e21_conf==\"drift\" && e21_knock!=\"now\" && e22_conf!=\"grace\"",
-     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday I held the wrench for him at the courtyard wall. The sprinkler won. Gaudete: rejoice is a command. Blessed us both for the road on the Newman steps. Come back."
-    },
-    {
-     "kind": "person",
-     "id": "osei",
-     "title": "Fr. Gabriel Osei",
-     "if": "e21_conf==\"drift\" && e21_knock==\"now\" && e22_conf==\"grace\"",
-     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday I held the wrench for him at the courtyard wall. The sprinkler won. Then his office, side by side: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back."
-    },
-    {
-     "kind": "person",
-     "id": "osei",
-     "title": "Fr. Gabriel Osei",
-     "if": "e21_conf==\"drift\" && e21_knock==\"now\" && e22_conf!=\"grace\"",
-     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday I held the wrench for him at the courtyard wall. The sprinkler won. Then his office, side by side: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Blessed us both for the road on the Newman steps. Come back."
-    },
-    {
-     "kind": "person",
-     "id": "osei",
-     "title": "Fr. Gabriel Osei",
-     "if": "e21_conf!=\"drift\" && e22_conf==\"grace\"",
+     "if": "e22_conf==\"grace\"",
      "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday, behind the screen: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back."
     },
     {
      "kind": "person",
      "id": "osei",
      "title": "Fr. Gabriel Osei",
-     "if": "e21_conf!=\"drift\" && e22_conf!=\"grace\"",
+     "if": "e22_conf!=\"grace\"",
      "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday, behind the screen: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Blessed us both for the road on the Newman steps. Come back."
     }
    ],
@@ -304,10 +265,7 @@
     "“He’s coming for New Year’s,” Lena says to the dark window. “Mémère wants to hear him play.”",
     "“Daddy’s making him a gumbo. Julian’s never had a real one. He thinks the thing they make in Oakland with the sausage is a gumbo.” She says it fondly, and to the glass, and doesn’t take any of it back.",
     "Jack can see it without having seen any of it: a front room in New Orleans with the good lamps on, an old woman in the best chair, Julian at somebody’s piano being kind about the tuning, and everybody in the room liking him, because there is nothing about him not to like.",
-    {
-     "if": "e21_reply==\"restraint\"",
-     "text": "Before he can answer: “You never answered me. About staying.” He doesn’t have to. She isn’t waiting for it."
-    }
+    "Before he can answer: “You never answered me. About staying.” He doesn’t have to. She isn’t waiting for it."
    ],
    "choices": [
     {
@@ -372,10 +330,6 @@
     "“Then practice.”",
     "She goes back to the restroom past the pay phone. Gloria stops at the register across from him, ringing up nothing, and says it low, with her back half to him.",
     "“That one’s still standing in it, hon.”",
-    {
-     "if": "e21_pie==\"lie\"",
-     "text": "She looks at him a little longer than the line needs, and goes back to the register."
-    },
     "In the glass of the pie case his own face is laid over the lemon meringue. He looks at it until the restroom door opens.",
     "Lena comes back and takes the second-to-last bite of the pecan without asking and announces, to Jack and the pie case and Rudy, that the Saints are going to beat Dallas tomorrow night, because it’s ordained.",
     "“God doesn’t care who wins football games,” Jack says.",

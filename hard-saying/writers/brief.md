@@ -1386,3 +1386,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The test of it (player):** "When he's with Skye, I can't see how he'd possibly give this up in New Orleans. When
     he's with Lena, I can't see how he wouldn't." **Hold that balance exactly** until New Orleans. The choice there must
     cost him something real, and the Skye ending must be worthy of her.
+- **The friends notice the withdrawal (player; S1E22 and into S2).** The group, **especially Theo and Laney**, has
+  noticed how Jack has acted **since the song**. Before, it was strange hours, disappearing and reappearing; **this is
+  different: complete non-engagement with anything, especially Lena.** Show it in their behavior around him in the
+  finale (Theo's quiet worry, Laney's alarm, Kevin and Margot's sideline reads) and let it inform the alliance's
+  Christmas-break prep and January ops. POV: Jack sees their looks and changed handling of him, not their talks.

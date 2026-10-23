@@ -40,7 +40,16 @@
     "“Then Laney won.”",
     "“Laney always wins. It’s the first thing you learn.”",
     "Then they’ve been still too long. The porch light clicks off, and the house gives up on them. The dark drops over the deck, and then the stars come up through it over the Point, more of them every second his eyes give back to him. Either of them could wave an arm and bring the light back.",
-    "“You were very hard to find this month, Jack,” she says lightly, looking out at the Point. She says it the way she’d say it was cold, a thing about December, and sets it on the rail, and puts nothing after it.",
+    "“You were very hard to find this month, Jack,” she says, looking out at the Point. She says it the way she’d say it was cold, a thing about December, and he waits for her to set it on the rail and leave it there.",
+    "She doesn’t, quite. “You’ve never just not answered me,” she says. “Not once since August. Not when you were mad at me. Not at three in the morning when I was being ridiculous. You always answered. Even if it was only to tell me I was being ridiculous.” Her boots uncross and cross the other way. “I offered to be Hale. I’d have been a *good* Hale.”",
+    {
+     "if": "e22_waiting==\"lie\"",
+     "text": "“And when you did answer, it was *can’t, finals*.” She lets one breath go up white in the dark. “To a meteor shower.”"
+    },
+    "“And you’ve never missed a Saints game at Sully’s. Not one. Every game since September you were in that booth in black and gold, praying for field goals you swear you don’t pray for.” She says it to the Point. “Sunday I texted you the number. You were supposed to be sitting right there when it happened. I didn’t have anybody to turn around to.”",
+    "Then, to him: “And you used to come to me. Whatever was going on. Your daddy. Nonna. Me being impossible. Something went wrong and you came and found me, and sat there not telling me what it was until I made you. That was the thing about you.” Her voice doesn’t go up or down. “Now something’s wrong, and you stay away. You talk to me when you can’t get out of it. Across Hale’s carpet. Over Margot’s cake.”",
+    "“Something’s hurting you,” Lena says. “Bad. I can see that much from here.”",
+    "And then she stops. He watches her do it: her mouth closes on whatever was next, and her hands go back into her coat pockets and stay there, and her eyes go back out to the dark shoulder of the Point and the old light on it. She doesn’t ask him what. She doesn’t ask him who, or where. She sits on the rail of the porch where they met with her hands in her pockets, and waits, and doesn’t make him.",
     "He has a sentence. He has had it since a drugstore aisle, and it’s right there now, in the dark, with nothing in the way of it but him."
    ],
    "choices": [
@@ -54,13 +63,30 @@
       "soul.honesty": "+1",
       "rel.lena.trust": "+1"
      },
-     "key": "On the Lighthouse porch you started to tell Lena where you go. You got as far as “sometime.”",
+     "key": "On the Lighthouse porch Lena named the month — the texts, Sully’s, the staying away. You started to tell her where you go. You got as far as “sometime.”",
      "response": [
       "“You asked me where I go.”",
       "“I remember,” Lena says, in the dark.",
       "He gets as far as the next word, and the next word is a person, and the only way to say who is to say why it matters that he says it to her, on this rail, tonight. He has it standing in his mouth, and he can’t.",
       "“Sometime,” he says.",
       "There’s only the sea at the foot of the bluff for a while. “You keep saying that,” Lena says, “like it’s a day of the week.” She doesn’t pick it back up. Her boot finds the post and taps it, twice, and stops."
+     ],
+     "goto": "s15"
+    },
+    {
+     "text": "“I know. I’m sorry, Lena.”",
+     "tag": "Sincerity",
+     "set": {
+      "e22_porch": "sincerity",
+      "e22_sometime": "kept",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "On the Lighthouse porch Lena named the month — the texts, Sully’s, the staying away. You told her you were sorry, and not why.",
+     "response": [
+      "“I know,” he says. “I’m sorry, Lena.”",
+      "It isn’t the why. They both hear that it isn’t. It’s what he has.",
+      "“I know you are,” Lena says. “I wasn’t collecting.” She takes one hand out of her pocket long enough to point at his eyebrow. “Sorry doesn’t get you out of the Ukrainians, though.” “Nothing gets me out of the Ukrainians.” “No,” she says. “Nothing does.”"
      ],
      "goto": "s15"
     },
@@ -72,9 +98,9 @@
       "e22_sometime": "kept",
       "trait.control": "+1"
      },
-     "key": "On the Lighthouse porch Lena said you were hard to find this month. You didn’t tell her.",
+     "key": "On the Lighthouse porch Lena named the month — the texts, Sully’s, the staying away. You didn’t tell her why.",
      "response": [
-      "He keeps it. She watches him not say it; in the dark he can feel her do it, every second of it. Then her hand finds the rail beside her and holds on, and she looks back out at the Point, and after a minute she starts telling him what she thought of his shoes that night, which was nothing good."
+      "He keeps it. She watches him not say it; in the dark he can feel her do it, every second of it. Then one hand comes out of her pocket and finds the rail beside her and holds on, and she looks back out at the Point, and after a minute she starts telling him what she thought of his shoes that night, which was nothing good."
      ],
      "goto": "s15"
     },
@@ -87,10 +113,10 @@
       "trait.wit": "+1",
       "rel.lena.warmth": "+1"
      },
-     "key": "On the Lighthouse porch Lena said you were hard to find this month. You filed a complaint about the night you met instead.",
+     "key": "On the Lighthouse porch Lena named the month — the texts, Sully’s, the staying away. You filed a complaint about the night you met instead.",
      "response": [
-      "“I’d like to file a complaint about the night we met.”",
-      "“Overruled,” Lena says. “It was a *great* night.” In the dark he hears her settle back against the post, and then she says it again, quieter. “It was.” And a minute later: “You told me the postcard was classified.” “It was.” “It still is,” she says, and he can hear she’s smiling."
+      "“I’d like to file a complaint,” he says, “about the night we met.”",
+      "She could leave it lying there. She doesn’t; she picks up what he’s handing her, and he hears her do it. “Overruled,” Lena says. “It was a *great* night.” In the dark he hears her settle back against the post, and then she says it again, quieter. “It was.” And a minute later: “You told me the postcard was classified.” “It was.” “It still is,” she says, and he can hear she’s smiling."
      ],
      "goto": "s15"
     }
@@ -203,14 +229,7 @@
     "That’s all she says about it. He leaves it where she put it, and gives her Glenwood Avenue back: Nonna’s seven fishes on Christmas Eve — a light supper, she calls it — the baccalà soaking in the basement sink since Monday, smelts, calamari, shrimp, the clams, a white fish no one in the family has ever identified, and anchovies baked into the bread to make seven. Danny always called that cheating. His father in the short-term lot at Pittsburgh with the truck running since noon, because the heater takes a while and he doesn’t trust it.",
     "“Call me Christmas Eve,” Lena says. “From the levee. I’ll hold the phone up so you can hear it burn.”",
     "“I’ll call from the garage. It’s the only place nobody listens.”",
-    {
-     "if": "missed_saints_13",
-     "text": "“You missed thirteen.” “I know.” “Fourteen you watch. I don’t care what time it is in Ohio.”"
-    },
-    {
-     "if": "!missed_saints_13",
-     "text": "“You were there for thirteen,” she says. “Be there for fourteen. On the phone.”"
-    },
+    "“Fourteen you watch,” she says. “On the phone. From the garage. I don’t care what time it is in Ohio.” “I’ll watch.” She nods once, and that’s the end of Sully’s for the night.",
     "She takes the card out of her coat and crosses off two lines on her knee, by feel, in the dark, and holds it up. Every line on it is gone.",
     "“One more,” Jack says. “It’s not on your card.”",
     "She looks at him, and puts the card away, and they go up the wet lawn to Delgado and in at the side door and up the east stairs past four floors of dark doors with the nameplates still on them, to the half-flight at the top."
@@ -333,52 +352,14 @@
   "s17a": {
    "slug": "SATURDAY · 4:15 AM · DELGADO HALL, THE ROOF",
    "body": [
-    {
-     "if": "lena_has_8ball",
-     "text": "When the cold has had long enough at both of them, Lena takes the 8-Ball out of her coat pocket. She shuts her eyes and asks it something with her lips still, and shakes it once, hard, and carries it over to the roof door to read it under the caged bulb. It surprises a laugh out of her, short and bright, up into the cold, and she comes back and holds the little window up for him."
-    },
-    {
-     "if": "lena_has_8ball",
-     "text": "*ASK AGAIN LATER.*"
-    },
-    {
-     "if": "lena_has_8ball && e21_tag==\"candor\"",
-     "text": "“Your toy’s a diplomat.”"
-    },
-    {
-     "if": "lena_has_8ball && e21_tag==\"nicholas\"",
-     "text": "“Your saint’s a diplomat.”"
-    },
-    {
-     "if": "lena_has_8ball && e21_tag!=\"candor\" && e21_tag!=\"nicholas\"",
-     "text": "“This thing’s a diplomat.”"
-    },
-    {
-     "if": "lena_has_8ball",
-     "text": "“Shake it again.” “You don’t shake it again. That’s how you break them.” She turns it over in her glove so the little window faces her palm."
-    },
-    {
-     "if": "lena_has_8ball && e21_last==\"sincerity\"",
-     "text": "“Don’t ask me what I asked it.” “I wasn’t going to.” “Liar.” She puts it back in her coat."
-    },
-    {
-     "if": "lena_has_8ball && e21_last!=\"sincerity\"",
-     "text": "She puts it away."
-    },
-    {
-     "if": "!lena_has_8ball",
-     "text": "When the cold has had long enough at both of them, Lena stands at the parapet with her hands in her coat and looks east at the hills a while longer, and then turns her back on them."
-    },
+    "When the cold has had long enough at both of them, Lena takes the 8-Ball out of her coat pocket. She shuts her eyes and asks it something with her lips still, and shakes it once, hard, and carries it over to the roof door to read it under the caged bulb. It surprises a laugh out of her, short and bright, up into the cold, and she comes back and holds the little window up for him.",
+    "*ASK AGAIN LATER.*",
+    "“Your saint’s a diplomat.”",
+    "“Shake it again.” “You don’t shake it again. That’s how you break them.” She turns it over in her glove so the little window faces her palm.",
+    "She puts it away.",
     "At the roof door she stops with her hand on the bar, the bulb right over her, the light in her hair and the dark of the stairwell in front of her, and turns her head halfway back. “Jack —”",
     "He waits.",
-    {
-     "if": "jack_has_lena_coffee",
-     "text": "“Bring the coffee back empty.”"
-    },
-    {
-     "if": "!jack_has_lena_coffee",
-     "text": "“Sleep on the plane.”"
-    },
+    "“Bring the coffee back empty.”",
     "And she goes down the stairs ahead of him. He gives the roof a last look — the gravel, the parapet, the one square of light on the grass — and follows her, past the popsicle stick, and behind him the alarm doesn’t sound. It hasn’t in a decade."
    ],
    "journal": [

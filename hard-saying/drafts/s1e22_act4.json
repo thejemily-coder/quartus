@@ -47,72 +47,24 @@
     "He knocks, and steps in, and pulls the door to behind him.",
     "The kneeler on this side; the linen screen on its wooden frame, with the violet of a stole showing through; the old coat hooks along the back wall; the Prodigal Son thumbtacked inside the door at the height of a kneeling man’s eyes. On the far side the folding chair gives a little under the priest, and the bad leg goes where it goes.",
     "“Bless me, Father, for I have sinned.”",
-    {
-     "if": "confessed_skye_2",
-     "text": "“It’s been four days since my last confession.”"
-    },
-    {
-     "if": "!confessed_skye_2",
-     "text": "“It’s been eleven days since my last confession.”"
-    },
+    "“It’s been four days since my last confession.”",
     "He has the week as a list. The list holds for about a sentence.",
+    "“Saturday night she came to where I work. And after, on the wharf —” He doesn’t finish it. The rest is the sentence Osei heard on Saturday afternoon, only later, and colder.",
+    "“Another picture. I opened it, and I answered it.”",
+    "“I slept at her house. Just slept. I knew I shouldn’t be there.”",
     {
-     "if": "confessed_skye_2",
-     "text": "“Saturday night she came to where I work. And after, on the wharf —” He doesn’t finish it. The rest is the sentence Osei heard on Saturday afternoon, only later, and colder."
-    },
-    {
-     "if": "confessed_skye_2 && e21_pic==\"candor\"",
-     "text": "“Another picture. I opened it, and I answered it.”"
-    },
-    {
-     "if": "confessed_skye_2 && e21_pic==\"control\"",
-     "text": "“A picture I looked at before I erased it.”"
-    },
-    {
-     "if": "confessed_skye_2 && slept_delplaya",
-     "text": "“I slept at her house. Just slept. I knew I shouldn’t be there.”"
-    },
-    {
-     "if": "confessed_skye_2 && e21_pie==\"lie\"",
-     "text": "“I lied to a friend about where I was.”"
-    },
-    {
-     "if": "!confessed_skye_2",
-     "text": "“Last Thursday I went to her house. I knew what I was going there for, and I said no, and it stopped. Friday she asked again. She argued it, and she was good, and I said no again, and she stopped.” He goes on to the end of it. “There. Only there.”"
-    },
-    {
-     "if": "!confessed_skye_2 && e21_edge==\"reckless\"",
-     "text": "“And Friday I didn’t hold any of the rest back.”"
-    },
-    {
-     "if": "!confessed_skye_2 && e21_ride==\"lie\" || !confessed_skye_2 && e21_early==\"lie\" || !confessed_skye_2 && e21_warzone==\"lie\" || !confessed_skye_2 && e21_hands==\"lie\" || !confessed_skye_2 && e21_pie==\"lie\"",
-     "text": "“I keep lying about where I go.”"
-    },
-    {
-     "if": "!confessed_skye_2",
-     "text": "“And the rest. Everything since the fifth.” The priest takes it as it’s given."
+     "if": "e22_waiting==\"lie\"",
+     "text": "“And Monday I lied to a friend. By text. About finals.”"
     },
     "“And last night.” This is the one he walked over carrying. “In her car. It went further than it’s gone.”",
     {
      "if": "e22_tue_late",
      "text": "“I said no late. Later than I should have.”"
     },
-    {
-     "if": "firm_purpose_letter",
-     "text": "“I said it before I got in the car,” Jack says. “Like you told me.”"
-    },
-    {
-     "if": "firm_purpose_letter",
-     "text": "“And?”"
-    },
-    {
-     "if": "firm_purpose_letter",
-     "text": "“It held.”"
-    },
-    {
-     "if": "firm_purpose_letter",
-     "text": "“Then you know it can.”"
-    },
+    "“I said it before I got in the car,” Jack says. “Like you told me.”",
+    "“And?”",
+    "“It held.”",
+    "“Then you know it can.”",
     "For a while there’s only the church on the other side of the door: Gus’s pew creaking once, the furnace coming on somewhere under the floor.",
     "“Last night,” Osei says. “Who chose the hour?”",
     "“She did.”",
@@ -124,14 +76,7 @@
     "“Then she keeps a schedule,” Osei says. “And you keep the appointment.” “You are not avoiding the occasion, my friend. You are scheduling it.”",
     "“It’s held,” Jack says. “Every time. The line’s held.”",
     "“I know. I thank God for it.” A pause. “It is not the line I worry about. It is the man who stands on it every night of the week, who is getting very tired, and who keeps signing up for the late shift.”",
-    {
-     "if": "confessed_skye_2",
-     "text": "“I am not taking back Saturday,” Osei says, gentler. “Every word of it is still true. What is in it is good, and you want her good. I believed you then. I believe you now.”"
-    },
-    {
-     "if": "!confessed_skye_2",
-     "text": "“Saint Thomas says that to love is to will the good of the other,” Osei says, gentler. “I meant to tell you so on Saturday, at the wall, before the valve beat the two of us. You have not told me you love her. You have told me enough.”"
-    },
+    "“I am not taking back Saturday,” Osei says, gentler. “Every word of it is still true. What is in it is good, and you want her good. I believed you then. I believe you now.”",
     "“So will it. If you will her good, stop meeting her at the edge of what you can’t give her. Every night you walk out to that edge together, and every night you ask her to stand there with you and hear no. In Kumasi a man came to me with the same burn on his hand four nights running. The fourth night I stopped dressing it, and asked him where he kept the stove.”",
     "“When do you go home?”",
     "“Saturday.”",
