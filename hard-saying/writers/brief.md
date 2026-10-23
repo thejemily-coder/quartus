@@ -1631,3 +1631,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
      because it still costs him, and it costs her with his family.
   4. **The singalong video comes after this** (filmed by a stranger, not posted by her), which is why she doesn't
      share it and answers it with the protective, defiant wall post instead.
+- **Summer 2010 (S3) visits (player).** They plan **one long trip each way**: Lena to Youngstown, and Jack to New
+  Orleans. (Supersedes shorter "trade visits.")
+- **Skye's birthday, Apr 4 (Easter Sunday 2010) (player).** Jack **struggles over whether to text her**: he wants to do
+  whatever's best for her on that front (is it kind or cruel to reach out?). Show the struggle; the room decides what
+  he does, or makes it a player choice.
+- **Jack and Lena's physical intimacy as a couple (player; S2 spring → S3).** It **builds and escalates consistently
+  but very slowly.** They touch each other a lot, but **it's not raw and hungry at every moment**; they do other things
+  in each other's arms too (talk, read, argue, sleep on a couch, watch the game). **So restraint is not a huge factor
+  yet**: a couple of light moments in S2 and S3, **then it becomes the fire from S4 (Fall 2010) on.** (Contrast with
+  Skye, which ran hot from the start; Lena's is slower and deeper.)
+- **Sophomore housing (player; S4 = Fall 2010).** **Laney lives in her sorority house.** **Lena and Margot become
+  roommates in the dorm.** Jack and Theo: see the next entry.

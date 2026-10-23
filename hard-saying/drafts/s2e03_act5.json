@@ -1,0 +1,571 @@
+{
+ "scenes": {
+  "s11": {
+   "slug": "SATURDAY · 7:52 PM · SANTA BARBARA AIRPORT, THE CURB",
+   "set": {
+    "skye_sign_sba": true,
+    "rel.skye.warmth": "+1"
+   },
+   "body": [
+    "Denver was a seat over the wing and a man from Grand Junction asleep against his shoulder most of the way to the desert. At Santa Barbara there’s no jetway. They roll a stair up to the door in the dark, and he comes down it into air that’s soft and wet and smells of cut grass and jet fuel and, under both, the sea; and halfway down, the RAZR finds a bar and sets its clock back three hours. 7:52. He gets the whole evening over again.",
+    "Inside, the terminal is somebody’s old idea of a hacienda — tile floor, dark beams, a gift shop shut behind a grille, one belt going around with a car seat on it. He has the duffel already. He walks straight through and out the glass doors onto the curb, and down the curb a hotel shuttle lets its air brakes go with a long sigh.",
+    "The Saab is in the white zone with its hazards going: top up, the dent in the rear quarter panel catching the light from the doors, a surfboard sticking out of the back seat at an angle that has nothing to do with the law. Propped inside the windshield is a flap torn off a cardboard box, and on it, in black eyeliner, gone over two and three times where the pencil gave out, in letters as tall as his hand:",
+    {
+     "type": "doc",
+     "title": "A sign in a windshield",
+     "text": "OFFICIALLY"
+    },
+    "She’s sitting on the hood with her bare feet on the bumper and a pair of flats in her lap. She has his blue oxford on — the sleeves rolled to the elbow, the tail down over her cutoffs — under a man’s flannel she hasn’t bothered to button, and her hair is down and full of salt, and she sits there and lets him get across the sidewalk to her before she says a word.",
+    "“I said I wanted you in it,” Skye says. “I lied. I wanted *me* in it.”",
+    "Up close she smells of sunscreen in January and warm vinyl, and there’s sand dried on her ankles above the anklet, and the eyeliner she didn’t use on the sign is around her eyes, smudged, as if she’s been up since the sun.",
+    {
+     "if": "s2e2_chat==\"candor\"",
+     "text": "“*im glad its you*,” she says. “Lowercase. No apostrophe. I’ve been hearing it with no apostrophe since New Year’s.”"
+    },
+    {
+     "if": "s2e2_chat==\"wit\"",
+     "text": "“How’s the furnace?” she says. “Did it get its line?”"
+    },
+    {
+     "if": "s2e2_chat==\"sincerity\"",
+     "text": "She holds up the back of her hand to him. The flight number is there in blue ballpoint, nearly gone, and gone over again on top of where it was. “I re-inked it twice.”"
+    },
+    {
+     "if": "s2e2_chat!=\"candor\" && s2e2_chat!=\"wit\" && s2e2_chat!=\"sincerity\"",
+     "text": "“Eight days,” she says. “I wasn’t counting.”"
+    },
+    {
+     "if": "s2e2_pic==\"candor\"",
+     "text": "“Show me how your father held it.” He does: the phone out at arm’s length, the squint, the face doing nothing at all. She laughs until she has to put a hand down on the hood."
+    },
+    {
+     "if": "s2e2_pic==\"restraint\"",
+     "text": "“You owe me an ocean,” she says."
+    },
+    {
+     "if": "s2e2_pic==\"control\"",
+     "text": "“You owe me an ocean,” she says. “I know,” he says."
+    },
+    "She comes off the hood and the duffel goes down on the sidewalk, and she kisses him in front of the doors and the shuttle and a family of five with a stroller, long, her hands in the back of his hair, his inside the flannel at the small of her back where the oxford is warm from her. “It’s an adverb,” she says against his mouth. “I looked it up. It modifies everything after it.” A knuckle raps twice on the Saab’s roof. An airport cop, gray at the temples, not angry, a man who has worked this curb a long time: “Move it along.”",
+    "She salutes him with a shoe. “Officer, this man has come all the way from *Ohio*.”",
+    "“So he’s seen snow,” the cop says. “Move it along.”"
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“I missed you.”",
+     "set": {
+      "s2e3_sign": "candor",
+      "said_it_plain_n": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "At Santa Barbara there was a sign in the windshield, in eyeliner: OFFICIALLY. You told her you missed her.",
+     "response": [
+      "“I missed you.”",
+      "“I know,” Skye says. “It was on your face from the doors.” She opens the passenger side for him and slings the shoes in after. “Get in.”"
+     ],
+     "goto": "s11a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“You spelled it right.”",
+     "set": {
+      "s2e3_sign": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "At Santa Barbara there was a sign in the windshield, in eyeliner: OFFICIALLY. You told her she spelled it right.",
+     "response": [
+      "“You spelled it right.”",
+      "“I had Sol check,” Skye says. “Two f’s. One of us went to school.” She pulls the sign out of the windshield and lays it face-down on the back seat beside the board, gently, like it might wake up."
+     ],
+     "goto": "s11a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "*Say nothing. Kiss her again.*",
+     "set": {
+      "s2e3_sign": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.heat": "+1"
+     },
+     "key": "At Santa Barbara there was a sign in the windshield, in eyeliner: OFFICIALLY. You kissed her again.",
+     "response": [
+      "He doesn’t say anything. He kisses her again, the shoe still in her hand against his neck.",
+      "The cop taps the roof a second time, and gives up."
+     ],
+     "goto": "s11a"
+    }
+   ]
+  },
+  "s11a": {
+   "slug": "SATURDAY · 8:05 PM · THE SAAB, THE 101 NORTH",
+   "music": "Vampire Weekend — “Cousins”",
+   "set": {
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "At the on-ramp she reaches over and turns it up — “For my cousin from Ohio” — and puts her foot down, and the Saab, nineteen years old and an orphan, goes up onto the 101 like it has a call time. The top’s up. The nose of the board rides between their headrests and smells of wax.",
+    "For the first ten miles he can’t look at her. He looks at the road, the dash, the eyeliner sign face-down on the back seat, his own hands. She can’t stop smiling at the road. Every exit sign gets it. A Ralphs truck gets it.",
+    "“Hi,” she says finally, with her eyes on the lane, in a voice for a party where nobody knows anybody. “I’m the girl from the phone.”",
+    "“We’ve met.”",
+    "“We’ve *spoken*.”",
+    "She lets that ride for a whole exit, and doesn’t look over to check. His ears are hot to the tips. She drums the wheel in time with the song and lets him burn.",
+    "“My father says to tell you the Browns won four straight,” he says. “He said you’d want to know.”",
+    "Skye takes a hand off the wheel and puts it over her heart. “Tell Frank Costigan I’m *overcome*.” A lane change, no signal. “What’s a Brown? Is it a bird? Tell him I said that. No — tell him I cried.”",
+    "Past Goleta she brings the music down with one finger. “So. Tomorrow.” She gives it to him fast, like a call sheet: two-forty, West Hollywood, a back room behind a hedge, her mother, Corinne, a valet. And then she stops doing it fast. “I’m more nervous than I’m letting on,” she says. “And I’m letting on.”",
+    "The road comes down to the water. West of town the lights quit, and the coast goes black on the left, and out on the black the platforms sit lit up a long way offshore, little and gold and patient.",
+    "“Tomorrow matters,” Skye says. “I don’t want tonight to be the thing I’m thinking about at lunch.” She glances at him and back at the road. “So Ted gets you. That’s why. Not because I don’t want you. Because I do, and tomorrow at two-forty I have to sit across a table from my mother and not have it on my face.”"
+   ],
+   "choices": [
+    {
+     "tag": "Reckless",
+     "text": "*Open the ones you saved. Now, with her watching.*",
+     "if": "pic7_unopened || pic8_unopened",
+     "set": {
+      "s2e3_drive": "reckless",
+      "pics_opened_with_skye": true,
+      "pic7_unopened": false,
+      "pic8_unopened": false,
+      "trait.reckless": "+1",
+      "rel.skye.heat": "+1",
+      "resolve.jack": "-1",
+      "confession_owed": "+1"
+     },
+     "response": [
+      "He takes the RAZR out of his jacket. She sees what he’s doing and doesn’t say a word about it. At Refugio she puts the blinker on for the empty road, pulls onto the shoulder, sets the brake, and reaches up and clicks on the dome light. She turns in her seat with her knees up and her back against the door, and watches him. Not the screen. His face.",
+      {
+       "if": "s2e2_pic==\"restraint\"",
+       "text": "The ocean first, stamp-sized and grainy under the dome light: first light up the coast, the wetsuit peeled to her hips, a 10 in white zinc low on one of them, her face salt-blotched and squinting into the sun with nothing on it at all."
+      },
+      {
+       "if": "s2e2_pic==\"restraint\" && s2e3_pic==\"wit\" || s2e2_pic==\"restraint\" && s2e3_pic==\"restraint\"",
+       "text": "Then the window — two of her until he tilts it to the light, and then one: her own reflection in her black glass at Del Playa, chin up, the surf breaking white straight through her."
+      },
+      {
+       "if": "s2e2_pic!=\"restraint\" && s2e3_pic==\"wit\" || s2e2_pic!=\"restraint\" && s2e3_pic==\"restraint\"",
+       "text": "The window, stamp-sized and grainy under the dome light — two of her until he tilts it, and then one: her own reflection in her black glass at Del Playa, chin up, the surf breaking white straight through her."
+      },
+      {
+       "if": "s2e2_pic==\"restraint\" && s2e3_pic==\"wit\" || s2e2_pic==\"restraint\" && s2e3_pic==\"restraint\"",
+       "text": "He looks at both of them a long time.",
+       "else": "He looks at it a long time."
+      },
+      "When he looks up, she’s still looking at him, the dome light on her hair and the flannel open. “There he is,” Skye says, low.",
+      "She turns the light off, and pulls back out onto the 101 with the window cracked.",
+      "At two minutes to nine she pulls in at the corner of Mission, under a jacaranda with nothing on it, a block short of where anybody in a window could see. “Ted will be in a window with binoculars,” she says. “I know Ted.” She puts the Saab in neutral and turns to him with her back against her door.",
+      "“Ted has you at nine,” Skye says. “I have you at a quarter to twelve tomorrow. In between, you sleep in your dorm like a monk.”",
+      "She leans across him and opens his door, and kisses him once on the way back, and he’s on the sidewalk with the duffel while the Saab goes up Mission with its surfboard and one taillight brighter than the other."
+     ],
+     "goto": "s12"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Not in a car. I’m not seventeen.”",
+     "if": "pic7_unopened || pic8_unopened",
+     "set": {
+      "s2e3_drive": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“Not in a car,” he says. “I’m not seventeen.”",
+      "She laughs so hard she has to slow down, and a semi goes around them on the left lit up like a ship. “*Coward*,” she says, and wipes her eye with the cuff of the flannel. “Tomorrow.”",
+      "At two minutes to nine she pulls in at the corner of Mission, under a jacaranda with nothing on it, a block short of where anybody in a window could see. “Ted will be in a window with binoculars,” she says. “I know Ted.” She puts the Saab in neutral and turns to him with her back against her door.",
+      "“Ted has you at nine,” Skye says. “I have you at a quarter to twelve tomorrow. In between, you sleep in your dorm like a monk.”",
+      "She leans across him and opens his door, and kisses him once on the way back, and he’s on the sidewalk with the duffel while the Saab goes up Mission with its surfboard and one taillight brighter than the other."
+     ],
+     "goto": "s12"
+    },
+    {
+     "tag": "Candor",
+     "text": "“My brother wrote to ask if you’re blind.”",
+     "set": {
+      "s2e3_drive": "candor",
+      "soul.honesty": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“My brother wrote to ask if you’re blind.”",
+      {
+       "if": "s2e3_pic==\"wit\"",
+       "text": "“I know. Twenty-fifteen.” She holds her right hand out to him, palm up, without taking her eyes off the road. “I want the whole letter.”",
+       "else": "She wants the whole letter. Word for word, she says, in order, capitals and all."
+      },
+      "He gives it to her from memory: the yacht with a box around it, Balthazar and the myrrh that was a honey bun, the chaplain’s star that’s a legal pad, push-ups, *eat something*. She drives with her mouth open. At *You can’t sing, I been in a car with you* she has to put both hands back on the wheel, and she looks over at him in her car, and loses it again.",
+      "“Tell him I’m going to write back,” Skye says. “In capitals.”",
+      "At two minutes to nine she pulls in at the corner of Mission, under a jacaranda with nothing on it, a block short of where anybody in a window could see. “Ted will be in a window with binoculars,” she says. “I know Ted.” She puts the Saab in neutral and turns to him with her back against her door.",
+      "“Ted has you at nine,” Skye says. “I have you at a quarter to twelve tomorrow. In between, you sleep in your dorm like a monk.”",
+      "She leans across him and opens his door, and kisses him once on the way back, and he’s on the sidewalk with the duffel while the Saab goes up Mission with its surfboard and one taillight brighter than the other."
+     ],
+     "goto": "s12"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“My grandmother gave me coal.”",
+     "set": {
+      "s2e3_drive": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“My grandmother gave me coal.”",
+      "“Good,” Skye says. “You deserve it.”",
+      "The platforms go by out on the black, one and then another. “Was it real?”",
+      "“Sugar.”",
+      "“Then she likes you,” Skye says. She has never met Nonna. She’s right anyway.",
+      "At two minutes to nine she pulls in at the corner of Mission, under a jacaranda with nothing on it, a block short of where anybody in a window could see. “Ted will be in a window with binoculars,” she says. “I know Ted.” She puts the Saab in neutral and turns to him with her back against her door.",
+      "“Ted has you at nine,” Skye says. “I have you at a quarter to twelve tomorrow. In between, you sleep in your dorm like a monk.”",
+      "She leans across him and opens his door, and kisses him once on the way back, and he’s on the sidewalk with the duffel while the Saab goes up Mission with its surfboard and one taillight brighter than the other."
+     ],
+     "goto": "s12"
+    }
+   ]
+  },
+  "s14": {
+   "slug": "SUNDAY · 2:40 PM · A RESTAURANT IN WEST HOLLYWOOD, THE BACK ROOM",
+   "set": {
+    "met_debbie": true,
+    "skye_team_rules": true,
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "At twenty past five that morning Theo came into 412 in the orange hat with sand on his shoes, and sat on his bed in the dark to take them off, and Jack heard all of it and lay still. At the nine-thirty at St. Brendan’s it was the Baptism of the Lord, the Christmas season going out in white — Osei at the altar in the white vestments, the heavens opened in Luke, *You are my beloved Son; with you I am well pleased* — and at twenty to twelve the Saab was at the Delgado curb, five minutes early, top down, her bare feet up on the dash. Rincon. Ventura. They didn’t say a word for forty miles, which for her is a medical event; and then on the 405 she said all of it at once — the hedge, the valet, which fork, her mother’s laugh and her mother’s other laugh — with her hand on the gearshift and his over it.",
+    "The restaurant is behind a hedge you could lose a car in. There’s a valet in a vest, and across the street a man leaning on a fence with a camera on a strap and nothing else to do, and Corinne has arranged — Skye tells him this in the alley — for the two of them to come in through the kitchen, past a man scaling fish who doesn’t look up. The back room has a skylight, four tables, and one of them set. At it: two women, a legal pad, a BlackBerry, a manila folder squared to the edge of the cloth, and a basket of bread. He doesn’t look at the bread.",
+    "Debbie Callender gets up. She is thirty-nine on paper, small and gold and finished, in cream, with Skye’s mouth and none of Skye’s freckles, and a voice with carpet in it. “Jack. *Jack.* Sit, sit, sit.”",
+    "He very nearly laughs. Across the table Skye looks hard at her water.",
+    "Debbie looks him over, top to bottom and back up: the blazer from the rain; the Goodwill tag still on the inside of the cuff, which she finds in about a second and a half; the St. Michael at his open collar, which she touches, briefly, with one fingernail. “Oh, he’s *Catholic*,” she tells Corinne, the way you’d say *Capricorn*.",
+    "Corinne Waxman doesn’t get up. She’s younger than Debbie and dressed like a fountain pen, all black and one gold clip, and she reads her BlackBerry the way other people read the room. Beverly Hills, Skye said in the alley — the kind of firm that answers its phone with its own name and nothing else. “Corinne,” Corinne says, by way of hello, and shakes his hand with the other one still scrolling. The folder stays shut by her plate.",
+    "Skye is in a green dress her mother picked, with sleeves, and her hair is up the way somebody else put it up, and before the bread has gone around once her shoes are off under the table. While Corinne is reading something she leans to him, very low. “Watch. She’s going to ask what your father does in the form of a question about your shoes.”",
+    "“Those are nice shoes,” Debbie says, to his feet. “What are those?”",
+    "“Florsheims. They’re my father’s.”",
+    "“And what does he do, your father?”",
+    "Under the table Skye’s bare foot taps his once: *told you*.",
+    "“GM,” Jack says. “Lordstown. The plant.”",
+    "“*GM!*” Debbie’s hand comes down on his sleeve. “I did a Chevy spot in ’94. A Lumina. I was the mom who forgets the lunch.”",
+    "Into her water glass, in a clipped murmur that belongs to the woman across from her, Skye says, “*Heartland. We love a heartland.*”",
+    "His father put twenty-six years into the line at Lordstown and has been on a list at the union hall since June. “That was a good car,” Jack says. It was not.",
+    "“And you’re studying —”",
+    "“Philosophy.”",
+    "Corinne looks up from the BlackBerry for the first time. “Is that employable?”",
+    "“No.”",
+    "She types something with her thumb.",
+    "“Skye was the little girl in the burger spot,” Debbie tells him, warming. “‘*Is that a* pickle?’ People still say it to her in —”",
+    "“Mother.”",
+    "“Baby, it’s a *compliment*.”",
+    "“I Googled you,” Corinne says. She scrolls. “There are a lot of Jack Costigans. Most of them are dead. You’re the one with a *Vindicator* box score — twelve points, no picture, thank God. Your name on a volunteer list for an Advent party at a Newman Center. Your Facebook, which is boring, which I love. One mutual friend with Skye.” She looks at him over the top of the BlackBerry. “And Skye tells me you room with Richard Vance’s son.”",
+    "“*Teddy!*” Debbie says. “Is he *eating*?”",
+    "“He’s eating.”",
+    "“He was the skinniest thing on that lot. Tell him Debbie says eat.”",
+    "Corinne has the rules on the BlackBerry and reads them off like a menu she’s sick of. No photographs of the two of them, anywhere, by anybody, unless she has seen it first. If anyone asks — a waiter, a cousin, his mother — he is *a friend from school*. Nothing on his Facebook. “Not a wall post. Not a status. Not a *lyric*.”",
+    "“Skye says there’s a sister,” Debbie says. “Don’t let your sister post anything.”",
+    "“My sister found her in four minutes.”",
+    "Corinne makes a note. “I want your sister.”",
+    "“And in February,” Corinne says, “there’s a network thing. I can’t tell you where. You arrive separately, you leave together, and a photographer I like happens to be standing by the valet. *Sweetwater star steps out with a nice boy from Ohio.*” For the first time she puts the BlackBerry face-down on the cloth. “It writes itself.”",
+    "Skye takes a piece of the bread and tears it in half, slowly, and doesn’t eat either half.",
+    "Debbie lays her pen across the legal pad and leans in to him, confiding, a woman asking about a rash. “Skye says you’re religious.” She lowers her voice. “Like — *religious* religious?”"
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“Yes, ma’am. Every Sunday and most days.”",
+     "set": {
+      "s2e3_lunch": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“Yes, ma’am. Every Sunday and most days.”",
+      "Debbie turns to Corinne. “*Ma’am*.”",
+      "Corinne, to the BlackBerry, already typing: “That’s actually good for us. The network loves a nice boy.”",
+      "Skye, into her glass: “*The network loves a nice boy.*”"
+     ],
+     "goto": "s14a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Only on weekends and in emergencies.”",
+     "set": {
+      "s2e3_lunch": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“Only on weekends and in emergencies.”",
+      "Debbie laughs. It isn’t the carpeted one; it’s a honk, short and surprised, out of somewhere in Lancaster, and she puts her fingertips to her mouth after it. Across the table Skye has her glass halfway up, and leaves it there, looking at her mother."
+     ],
+     "goto": "s14a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“It’s the realest thing about me.”",
+     "set": {
+      "s2e3_lunch": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“It’s the realest thing about me.”",
+      "The table goes quiet. Corinne’s thumb stops over the BlackBerry and writes nothing. Under the cloth Skye’s bare foot finds his ankle, and stays."
+     ],
+     "goto": "s14a"
+    }
+   ]
+  },
+  "s14a": {
+   "slug": "SUNDAY · 3:50 PM · THE BACK ROOM",
+   "set": {
+    "skye_folder_refused": true
+   },
+   "body": [
+    "By ten to four there’s coffee, and three little spoons nobody has explained to him, and a plate of cookies so small they look like a dare. The square of sun from the skylight has come down off the bread basket and onto the cloth.",
+    "Corinne puts two fingers on the manila folder and slides it an inch across the tablecloth toward Skye. She doesn’t open it. “We ran his name,” she says. “It’s standard. We run everybody’s. There’s a family matter we’ll want to talk through at some point.” A small smile, fair enough as smiles go. “Not today.”",
+    "The tab is upside down to him: a white label, typed. COSTIGAN.",
+    "Skye doesn’t look at it. She puts her hand flat on the folder and slides it back across the cloth the inch it came, and then another inch. “No.”",
+    "“Baby —” Debbie says.",
+    "“We’re not doing his family,” Skye says. “Ever.”",
+    "“Skye, it’s my job to know what’s coming,” Corinne says, quite kindly.",
+    "“Know it about somebody else’s family.”",
+    "Debbie looks up at the skylight. “She’s been like this since she was nine,” she says. “A director asked her to cry about her dog. She didn’t have a dog.”",
+    "Jack watches the square of sun. It has an edge, clean as a ruler, and the edge is moving; you’d never see it if you looked away and back, so he doesn’t look away. It crosses the weave of the cloth toward the folder a thread at a time, and reaches the corner of it, and starts up over the label."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“It’s my brother. It’s public. Read it if you want.”",
+     "set": {
+      "s2e3_folder": "candor",
+      "soul.honesty": "+1"
+     },
+     "key": "At lunch in Los Angeles, Skye’s publicist brought a folder with your brother’s name on it. Skye pushed it back unopened, and you told her she could read it.",
+     "response": [
+      "“It’s my brother,” he says. “It’s public. Read it if you want.”",
+      "Skye still doesn’t look at the folder. She looks at him. “I don’t want to meet him in a folder.”",
+      "Corinne puts it in her bag."
+     ],
+     "goto": "s14b"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "*Under the table, find her hand. “Thank you.”*",
+     "set": {
+      "s2e3_folder": "sincerity",
+      "said_it_plain_n": "+1",
+      "rel.skye.trust": "+2"
+     },
+     "cue": "Skye will remember that.",
+     "key": "At lunch in Los Angeles, Skye’s publicist brought a folder with your brother’s name on it. Skye pushed it back unopened, and under the table you thanked her.",
+     "response": [
+      "Under the tablecloth he finds her hand on her knee. “Thank you,” he says, for her only.",
+      "She doesn’t look at him. She squeezes once, hard, and doesn’t let go of it until the coffee is gone."
+     ],
+     "goto": "s14b"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Say nothing. Let it be hers.*",
+     "set": {
+      "s2e3_folder": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "At lunch in Los Angeles, Skye’s publicist brought a folder with your brother’s name on it. Skye pushed it back unopened, and you let her.",
+     "response": [
+      "He doesn’t say anything. It’s hers.",
+      "Corinne puts the folder in her bag. Debbie writes a word on her legal pad and draws a line under it."
+     ],
+     "goto": "s14b"
+    }
+   ]
+  },
+  "s14b": {
+   "slug": "SUNDAY · 4:20 PM · THE BACK ROOM",
+   "body": [
+    "At twenty past, Corinne’s BlackBerry goes off with a noise like a small bird being stepped on, and she takes it out to the patio, and Skye pushes back her chair and goes after her. Through the glass he can see the two of them out among the potted lemons: Corinne holding the BlackBerry up between them, and Skye talking — fast, both hands, her shoulders up around her ears — in a way he hasn’t seen her talk to anybody. He can’t hear a word of it.",
+    "Debbie watches them too, with her pen in her fingers. When she turns back to him the carpet has gone out of her voice.",
+    "“She’s never brought anybody to lunch,” she says.",
+    "He holds his coffee.",
+    "“Whatever you want from her,” Debbie says, “it comes through me. Everybody’s does.”",
+    "“I don’t want anything.”",
+    "Debbie looks at him after a while — a long, level look, no lobby in it at all — and sets her cup down in its saucer without a sound.",
+    "“Then you’re going to be very expensive,” she says.",
+    "The patio door opens. Corinne comes back in with the BlackBerry already ringing again and says, to the room in general, “No phones at the table,” and inside his jacket, against his ribs, the RAZR goes off as if it heard her. He excuses himself."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "debbie",
+     "title": "Debbie Callender",
+     "text": "Skye’s mother. Her manager. A voice like a hotel lobby. Did a Chevy commercial in ’94. Calls her baby. Keeps a legal pad. ‘Then you’re going to be very expensive.’"
+    }
+   ],
+   "next": "s14c"
+  },
+  "s15": {
+   "slug": "SUNDAY · 7:35 PM · A GAS STATION OFF THE 101, BUELLTON",
+   "music": "Florence + the Machine — “Dog Days Are Over”",
+   "set": {
+    "skye_status_self": true
+   },
+   "body": [
+    "Out of the city she doesn’t talk, and he lets her not. It’s dark by Ventura. At Carpinteria she sits up behind the wheel and does Corinne saying *managed first sighting* — as a weather girl, as a eulogy, as an airline captain on descent, as a fortune-teller reading it off her own palm, as Corinne in labor, nine ways in all, the ninth in a whisper — and he laughs until he has his forehead against the window. The Marisol exit comes up green in the headlights and goes by.",
+    "“Not yet,” Skye says.",
+    "Buellton is a strip of light at the bottom of the dark: motels, a steakhouse sign, a feed store shut for the night. She takes the exit like she lives there and pulls in under the canopy of a gas station that isn’t anybody’s in particular, island four, and turns off the engine, and sits with both hands on the wheel.",
+    "“This is where you pushed,” she says.",
+    "She leaves the doors open and the radio going, and the song goes out over the empty islands. She gets out barefoot onto the concrete and works the pump herself, and hands him the squeegee because he’s standing there, and he does the windshield, bugs and salt and a thumbprint of eyeliner low in one corner of the glass. She leans on the fender with the nozzle ticking in the tank and takes out the white iPhone and frowns at it, thumbing, the same frown she gives a script.",
+    "“Come here,” she says.",
+    "He comes around the pump with the squeegee. On the little screen it’s Facebook — her own face at the top, small — and under it *Relationship Status*, and she has already chosen *In a Relationship*, and there’s a box after it that says *with*. Her thumb goes into the box. J-a-c-k, space, C-o-s — and his own face comes up out of her phone, the profile picture, looking surprised to be there, waiting to be picked.",
+    "“Corinne’s going to —” he says.",
+    "“Corinne’s going to call me in about forty minutes.” She doesn’t look up. “I’d like to be in the bath.”",
+    "She presses it.",
+    "The phone tells her it’s waiting on him. She reads that and bites the inside of her cheek, and taps through something he can’t follow, and her face goes off the top of the screen and a blank blue page comes up asking who’s there. She holds it out to him across the pump.",
+    "“Your turn.”",
+    "He has never held a phone with no keys. He types his own email address with one finger, hunting, backing up over the wrong letters, while she turns politely away and studies the price of diesel; then his password, the same way. And it’s there when the page comes up, the first thing, waiting:",
+    {
+     "type": "fb",
+     "name": "Skye Callender",
+     "text": "listed you as in a relationship with her.",
+     "meta": "Relationship Request · Confirm · Not Now"
+    },
+    "She’s reading it over his arm. And then she’s looking at him.",
+    "“That’s the first thing anybody’s ever watched me do that nobody wrote,” Skye says.",
+    "Behind her the pump clicks off in the tank.",
+    "He holds her phone in his hand. “Give me a minute.”",
+    "He walks away from her across the lot, past the ice chest and the propane cage, to the air pump at the edge of the concrete, where the canopy lights give out and the wind comes down off the dark hills smelling of cattle and sage. Her phone in one hand; the RAZR in the other. It’s 10:37 in Ohio. He calls home.",
+    "It rings once.",
+    "“Who died?”",
+    "“Nobody, Ma. I’m calling you first.”",
+    "“First before what?”",
+    "“Before the computer.”",
+    "A breath, a long one, from Youngstown, and behind it the refrigerator: she’s in the kitchen, in her robe, at the wall phone, with the light on over the stove. He’d know the hum of that refrigerator anywhere in the world.",
+    "“Is she still asking?” Ma says."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“Every day, Ma. She read Matthew 2 because I said it was Epiphany.”",
+     "set": {
+      "s2e3_ma": "candor",
+      "soul.honesty": "+1"
+     },
+     "key": "At a gas station in Buellton you called your mother first. She asked if Skye was still asking; you told her about Matthew 2. Then she brought up Lena.",
+     "response": [
+      "“Every day, Ma. She read Matthew 2 because I said it was Epiphany.”",
+      "“*Matthew*,” Ma says, and he can hear her trying not to be pleased about it."
+     ],
+     "goto": "s15a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“She bought a Chesterton. With her own money.”",
+     "set": {
+      "s2e3_ma": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "At a gas station in Buellton you called your mother first. She asked if Skye was still asking; you told her about the Chesterton. Then she brought up Lena.",
+     "response": [
+      "“She bought a Chesterton. With her own money.”",
+      "“Which one?”",
+      "“*Orthodoxy*.”",
+      "“…Well,” Ma says."
+     ],
+     "goto": "s15a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“She asks me what it’s like. I don’t know how to tell her.”",
+     "set": {
+      "s2e3_ma": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "cue": "Your mother will remember that.",
+     "key": "At a gas station in Buellton you called your mother first. She asked if Skye was still asking; you told her you don’t know how to tell her what it’s like. Then she brought up Lena.",
+     "response": [
+      "“She asks me what it’s like. I don’t know how to tell her.”",
+      "“Nobody knows how,” Ma says. “You keep telling her.”"
+     ],
+     "goto": "s15a"
+    }
+   ]
+  },
+  "s15a": {
+   "slug": "SUNDAY · 7:41 PM · BUELLTON, THE AIR PUMP",
+   "set": {
+    "jack_fb_confirmed": true,
+    "called_ma_first": true,
+    "maria_knows_official": true,
+    "maria_raised_lena": true
+   },
+   "body": [
+    "“You told Danny before me,” Ma says. “You’re telling me before the computer. I’ll take it.”",
+    "And under that, lower, with the dish towel somewhere in it: “Thank you for calling me first.”",
+    "“Yeah, Ma.”",
+    "Back under the canopy the Saab’s doors are still open and the song is still going out over the concrete. Skye is sitting sideways in the driver’s seat with her bare feet on the ground, looking at the road, not at him. At the next island a pickup rolls over the hose, and the bell goes.",
+    "“You were on that phone with Lena all break,” Ma says. “Two hours on my kitchen floor with my cord through the pantry door, and then every single night — the garage, the porch, my eggs sitting an hour in the truck in the Giant Eagle lot.”",
+    "He looks at the air hose coiled on its hook.",
+    "“She’s still got a boyfriend, Ma,” he says. “He wrote a song for her. It was good.”",
+    "Ma doesn’t say anything.",
+    "In Youngstown the refrigerator runs. In Buellton the wind gets in under the edge of the canopy and turns a paper cup over and over across the lot. He can tell she wants to say something. She takes a breath for it and doesn’t use it, and takes another, and he stands at the air pump with the RAZR hot against his ear and Skye’s phone asleep in his other hand, and waits for her to find the way in, and she doesn’t find it; and he can’t find what it would be, either — what she’d say, or what he’d say back if she did. The bell at the next island goes again.",
+    "“Okay,” Ma says.",
+    "“Okay.”",
+    "Neither one of them is the thing. Then she’s gone, and it’s the wind.",
+    "He walks back across the lot under the canopy lights with both phones. Skye watches him come and doesn’t get up. He wakes her phone with his thumb and the request is still there where he left it, and he presses Confirm. She watches his thumb, not the screen.",
+    {
+     "type": "fb",
+     "name": "Jack Costigan",
+     "text": "is in a relationship with Skye Callender.",
+     "meta": "Just now · Comment · Like"
+    },
+    "She’s out of the seat before the page has finished loading, barefoot, both fists in his collar, and kisses him there at the pump with the nozzle still hanging out of the tank, until over at the diesel island a trucker in a Peterbilt leans on his horn — one long blast that goes off the hills and comes back — and she breaks off and turns and throws both arms up at him and yells “THANK YOU” across the whole of Buellton.",
+    "The taquería is across the frontage road: a counter, four stools, a hand-lettered menu, a man in a paper hat. They eat standing up, al pastor off paper plates, and she eats in front of him — three tacos, both hands, lime running down her wrist, talking with her mouth full about the man in the paper hat’s life, which she has worked out entirely: a daughter at Cal Poly, a bad knee, a wife who does the books and the lettering on the menu, and he hasn’t been to the beach since 1986, which is twenty minutes from here, which is a crime. Her iPhone lies face-down on the counter by the hot sauce and buzzes against the Formica. “That’s my mother.” It stops; it starts. “That’s Corinne.” It stops; it starts. “That’s my mother again.” She doesn’t turn it over. She asks the man for another lime.",
+    "At eight fifty-two she stops at the Delgado curb with the engine running and the top up against the damp. Behind him the dorm is lit window over window, everybody back. She leans to look past him at all of it, and then at him.",
+    "“Tomorrow everybody finds out what I already knew,” Skye says."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "maria",
+     "title": "Ma",
+     "text": "Maria Costigan. St. Brigid’s school secretary. Feeds anybody who comes through the door. Cries at grace every year. Took my phone at the table and counted to eleven without looking at it once. Wrote Becca. December 6th, back from Trumbull: the November bill, four hundred and nine texts. Who is it. I told her a girl. Not Lena. Not nice — something. That’s what Dad said about her. Christmas week: took forever at the machines at Trumbull so Danny and I could talk. Stood Becca’s card at the front of the mantel. Brewed the New Orleans coffee Christmas morning. Put unlimited texting on the family plan; it was cheaper than me. Saw the photos. “Is she Catholic, at least?” When Danny laughed on the phone, she looked at me. Holy Family Sunday she took Pop in. ‘You sit, Frank.’ Showed him the machines. Goes to the seven o’clock on the last day of every year; this year I went with her. Lena called the house on the second of January, and Ma answered, and they talked for ten minutes. ‘She wants you. I don’t know why.’ Now she knows the coffee was hers. At the door she gave me the can back, empty, for the girl who called. From a gas station in Buellton I called her before I said yes on Skye’s phone. She said I was on the phone with Lena all break. I told her Lena’s still got a boyfriend, and he wrote her a song, and it was good. She didn’t say anything."
+    }
+   ],
+   "next": "s16"
+  },
+  "s16a": {
+   "slug": "SUNDAY · 9:34 PM · 412, THE DARK",
+   "body": [
+    "Theo’s lamp is off. Delgado is full again, and it sounds like it: somebody’s door down the hall, a hair dryer through the wall, a stereo two floors down working through the same song twice, a girl laughing in the stairwell at something on her phone. The streetlight off the quad lies across the ceiling. Jack is on his back on his own bed in his clothes, and the RAZR goes on his chest.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "my mother has called six times",
+     "time": "9:34 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "corinne has called eleven",
+     "time": "9:34 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "im in the bath with the phone on the sink and im not getting out till february",
+     "time": "9:35 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "february is 3 weeks. youll prune",
+     "time": "9:37 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "goodnight jack costigan. officially",
+     "time": "9:41 PM"
+    },
+    "He holds it up over his face in the dark with his thumb on the hinge, and reads it, and keeps it open. Across the room Theo turns over, and turns back, and isn’t asleep either."
+   ],
+   "next": "s17"
+  }
+ }
+}
