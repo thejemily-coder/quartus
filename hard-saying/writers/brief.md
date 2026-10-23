@@ -1794,3 +1794,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **S2E04 mid-episode (player).** Skye's response to Haiti "once again gave me that 'how could Jack walk away from
   this' feeling." Her goodness in a crisis lands as much as her heat and wit: keep giving her moments of real
   character under pressure (generosity, seriousness, care), not only charm.
+- **Skye–Jack friendship may end up closer than planned (player; open, "we'll see").** The earlier "not close"
+  directive softens to **let it find its level** (still never a threat once the campaign ends, and never at Lena's
+  expense). **Running bit while they're at the same school:** whenever he balks at something she asks, she comes back
+  with **"So remember that time you told me you loved me and then dumped me on the side of the road?"** (Staging
+  note: the player's phrasing suggests the breakup itself happens **in the Saab, pulled over on the side of a road**;
+  room, consider staging it there so the line is literal.)
