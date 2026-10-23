@@ -1,0 +1,459 @@
+{
+ "scenes": {
+  "s11": {
+   "slug": "FRIDAY · 5:20 PM · DELGADO HALL, ROOM 412",
+   "set": {
+    "resolve.lena": 6
+   },
+   "body": [
+    "At twenty past five the lights in the fourth-floor hall come on by themselves, on their timer, down a corridor of shut doors. Priya has been along it since noon with a clipboard, trying every knob, and on her own door, 401, at eye level, there’s a new laminate.",
+    {
+     "type": "doc",
+     "title": "A laminate, the door of 401",
+     "text": "LAST ONE OUT:\nTHE LIGHTS ARE NOT DECORATIVE.\n— Priya, RA"
+    },
+    "Theo’s half of 412 is down to the bare mattress, a square of cleaner carpet where the minifridge stood, and the espresso machine, unplugged, with its cord wound tight around its middle. On Jack’s bed, folded in thirds at the foot where Theo left it, is the gray cashmere throw. For Ohio.",
+    {
+     "if": "jack_has_lena_coffee",
+     "text": "His duffel is packed and zipped on the floor by the bed, with the Café du Monde can in the top of it, wrapped in his Mooney T-shirt so it won’t dent between here and Glenwood Avenue.",
+     "else": "His duffel is packed and zipped on the floor by the bed."
+    },
+    "Out the window the Lagoon has gone the last dark blue before black, and the lamps are on along the bike path with no bikes on it. Down the hall the vending machine by the east stairs hums, and clunks, and thinks better of it. Everybody Jack knows is on a freeway or in the air or in a kitchen two thousand miles away, and he is on his bed in his socks with a paperback open on his chest that he hasn’t turned a page of in twenty minutes, and the RAZR shut on the blanket by his knee.",
+    "Somebody knocks. Not Priya’s knock, which is three and a clipboard. Two, and then nothing.",
+    "He opens the door on Lena in her coat, with two paper cups from the urn at the front desk, the lids on, the last of it. She holds one out to him so she’ll have a hand free.",
+    {
+     "if": "lena_has_8ball",
+     "text": "Something round and heavy pulls the right pocket of her coat out of shape."
+    },
+    "When her free hand comes out of the other pocket, an index card comes with it: ruled, numbered, in her capitals, a pen-mark at the left of each line where a box would go. She reads the top of it once, in his doorway, and he gets the first of it upside down before she puts it back.",
+    {
+     "type": "doc",
+     "title": "An index card, in capitals",
+     "text": "1. DELGADO — DOWNSTAIRS\n2. ST. BRENDAN’S\n…"
+    },
+    "“You’re here,” she says.",
+    "“I’m here.”",
+    "He has been gone every night this month she might have knocked, and he knows it, and here he is in his own doorway in his socks with her coffee in his hand.",
+    "“I’ve knocked on this door three times this month.” She looks past him at the stripped mattress, the throw, the duffel. “Tonight somebody answered.”",
+    "Jack holds the coffee. It’s too hot to drink and he holds it anyway.",
+    "“Everybody’s gone,” he says.",
+    "“Everybody but us.”",
+    "“And Priya.”",
+    "“And Priya.” She takes the lid off her cup to let it cool, and blows across it, and looks at him over it. “Walk me to the shuttle, Costigan. The long way.”",
+    "“The shuttle’s at quarter to five.”",
+    "“In the morning. I know when it is.”",
+    "“That’s eleven hours.”",
+    "“Eleven and a half.” She puts the lid back on. “I did the arithmetic.” Her eyes go past him to the foot of his bed. “Is that cashmere?”",
+    "“Theo. For Ohio. He says he’s been.”",
+    "“He left you cashmere.” She looks at it folded in its thirds on the cheap Delgado blanket, gray on brown. “That’s a love letter, Jack. In Theo.” She steps back into the hall to give him room. “Get your coat.”",
+    "On the blanket the RAZR is lying where he left it, shut, with its one bar."
+   ],
+   "choices": [
+    {
+     "text": "Turn it off in front of her. “I want the whole night.”",
+     "tag": "Candor",
+     "set": {
+      "e22_phone": "candor",
+      "phone_off_lena": true,
+      "said_it_plain_n": "+1",
+      "trait.candor": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "At twenty past five Lena knocked on 412 with two coffees. You turned your phone off in front of her and told her you wanted the whole night.",
+     "response": [
+      "He picks it up and opens it and holds the red button down where she can watch him do it. The RAZR plays its little falling chime, four notes going downstairs, and the screen empties.",
+      "“I want the whole night,” he says.",
+      "Lena watches the phone into his pocket. Then she reaches past him into 412, takes the Carhartt off the back of the door, and holds it out to him by the collar, the way his mother does at the back door on Glenwood in February."
+     ],
+     "goto": "s11a"
+    },
+    {
+     "text": "Turn it off in your pocket.",
+     "tag": "Restraint",
+     "set": {
+      "e22_phone": "restraint",
+      "phone_off_lena": true,
+      "trait.control": "+1"
+     },
+     "key": "At twenty past five Lena knocked on 412 with two coffees. You turned your phone off in your pocket.",
+     "response": [
+      "He puts the phone in the front pocket of his jeans and finds the red button through the denim with his thumb and holds it. The chime comes out of his pocket small and muffled, four notes going downstairs.",
+      "Lena hears it. She drinks her coffee and studies Theo’s espresso machine, wound up in its own cord, until he has his boots on."
+     ],
+     "goto": "s11a"
+    },
+    {
+     "text": "Leave it on the desk. “If anybody needs me, they can write.”",
+     "tag": "Wit",
+     "set": {
+      "e22_phone": "wit",
+      "phone_off_lena": true,
+      "phone_left_412": true,
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "At twenty past five Lena knocked on 412 with two coffees. You switched your phone off and left it on the desk: if anybody needs you, they can write.",
+     "response": [
+      "He switches it off and sets it on the empty desk, square to the edge, where the Dell used to be. “If anybody needs me,” he says, “they can write.”",
+      "“Nobody writes, Costigan.”",
+      "“Then nobody needs me.”",
+      "Lena looks at the little black phone on the bare desk. Then she gets the Carhartt off the back of the door and throws it at him."
+     ],
+     "goto": "s11a"
+    }
+   ]
+  },
+  "s11a": {
+   "slug": "FRIDAY · 5:45 PM · DELGADO HALL, THE BASEMENT → THE 4TH-FLOOR LOUNGE",
+   "music": "Lena at the upright — “Walking to New Orleans”",
+   "set": {
+    "lena_played_for_jack": true
+   },
+   "body": [
+    "The dryers are cold for once. Without them the basement is the boiler ticking somewhere behind the cinderblock and the long tube light over the folding table, buzzing to itself. Priya’s CLEAN THE LINT TRAP is still taped over the machines. Somebody has left one gray sock on top of a washer, folded, as if it might be called for.",
+    "Item one on the card is the upright against the far wall, the one nobody in Delgado admits to playing, with its dead F and its cigarette burn on the lid from some decade before Priya.",
+    "Lena puts her coffee on top of it, on a ring somebody else left there, and her coat on the nearest dryer. She doesn’t say anything about it. She sits down on the bench and pushes the cardigan sleeves up to the elbow, one and then the other, and lifts the lid.",
+    "It’s New Orleans from the first bar. Her left hand starts walking, a slow easy rolling walk with a little hitch in it, and her right comes in over it, lazy and exactly on time. The dead F comes up in the bass every other bar, and every time it comes up she steps around it the way you’d step around a pothole on a street you grew up on, without looking down and without slowing.",
+    "She sings the first verse low, under the piano, not loud enough to carry past the folding table — *I’m walking to New Orleans* — and then she stops singing and lets the piano have the rest of it.",
+    "Jack sits on the dryer beside her coat with the coffee going cold in his hands. He watches her right foot on the pedal, the scuffed toe of the Justin. He watches the back of her neck where her hair is pushed over one shoulder. She plays it through, every verse, with her eyes on the keys and nowhere else, and she plays it properly — no joke in it, nothing thrown away — and on the last chord she holds both hands down until the basement has it, and then lifts them off.",
+    "“That wasn’t Debussy,” Jack says.",
+    "“Debussy never walked anywhere in his life.”",
+    {
+     "if": "e21_keys==\"wit\"",
+     "text": "She closes the lid over the keys. “You gave Gus Julian,” she says. “At the party.” “He was right there.” “He was,” Lena says, and gets up."
+    },
+    "She takes her coat off the dryer and her coffee off the piano and goes up the east stairs ahead of him to four.",
+    "The lounge is dark. The couches are shapes, the TV is off and looks wrong off, and the microwave clock says 6:12. Lena finds the switch over the counter. Margot’s whiteboard comes up under the fluorescents in layers, a semester of it, nothing ever quite erased: USEFUL IDIOTS FOR CHRISTIAN NATIONALISM across the top with COSTIGAN | BROUSSARD and the tallies under it; LEIF ERIKSON DAY (OBSERVED) gone gray at the edges; AMERICAN GOTHIC (UNPLANNED); a pink pitchfork with a bow on it; UNEXPLAINED CITRUS — FLOORS 2–4, SUSPECTS: (THE CATHOLICS); and down the side Laney’s TIGER column, which says MORE.",
+    {
+     "if": "e22_solstice==\"wit\"",
+     "text": "And new at the bottom, in Margot’s capitals, copied off the back of her own hand: TO THE PATRIARCHY — WE’LL ALWAYS HAVE DECEMBER."
+    },
+    "Lena uncaps the black marker from its string and writes, in a clear corner under Margot’s heading, in capitals of her own: MARGOT: FEELINGS DETECTED.",
+    "“For January,” she says. “She’ll erase it. She’ll know who.”",
+    "Jack takes the marker. He writes HALE’S ORAL and stops with the cap in his teeth. “What’s the score?”",
+    "“He didn’t give one.”",
+    "“So we do.”",
+    "“Then I won mine,” Lena says. “Everybody in the room knew it. The dog knew it.”",
+    "“The dog’s deaf.”",
+    "“He slept through yours. He slept through mine *attentively*.”",
+    {
+     "if": "e22_oral_personal",
+     "text": "“I want a point for the counterexample.” “You get a point for the counterexample. You don’t get a point for the booth.”"
+    },
+    "They go back and forth about it for about a minute, her twenty against his, Augustine against the promise, which one Hale smiled at with both sides of his mouth and which one with only the left, and in the end Jack writes it the only way either of them will sign: HALE’S ORAL — B 1 · C 1 · BERKELEY 1.",
+    "The window over the couches is black, the Lagoon gone out behind it, and in it the lounge comes back at them: the dead TV, the board, two people in coats under the fluorescents with a marker and a cold coffee each. Lena takes the card out of her pocket and a pen out of her coat and draws a line through the first line."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "whiteboard",
+     "title": "The whiteboard",
+     "text": "Margot’s, by annexation: USEFUL IDIOTS FOR CHRISTIAN NATIONALISM, COSTIGAN | BROUSSARD. Sully’s made the board: liturgical football, idolatry, my outfit. Margot wasn’t even there when I read it. She didn’t need to be. Now the chastity talk is up there too: both of us, voluntarily. Kenzie Rourke got her own line. Margot thinks she might not be an idiot. Category pending. C 6, B 5. The morning after the wake, under the total: TUESDAY — NO SCORE. (BEREAVEMENT.) October 9th, top of the board: LEIF ERIKSON DAY (OBSERVED). Columbus: see attached. Then: FERRER TOWER · THU 5:00 A.M. · “WHEN THE SAINTS GO MARCHING IN.” Suspects: a Catholic; a different Catholic. Laney added the Holy Ghost. Margot wrote it up for the Tide and didn’t name anybody. Halloween: AMERICAN GOTHIC (UNPLANNED). Both. C 7, B 6. Somebody drew a pitchfork. Sunday after St. Nicholas: UNEXPLAINED CITRUS — FLOORS 2–4. SUSPECTS: (THE CATHOLICS). Laney’s TIGER column has given up counting. It says MORE. The last night Lena added a line for Margot to find in January: MARGOT: FEELINGS DETECTED."
+    }
+   ],
+   "next": "s12"
+  },
+  "s12": {
+   "slug": "FRIDAY · 7:15 PM · ST. BRENDAN’S → THE NEWMAN HOUSE STEPS",
+   "set": {
+    "resolve.jack": "+1",
+    "resolve.lena": 7,
+    "knows_ero_cras": true
+   },
+   "body": [
+    "St. Brendan’s is dark but for the red lamp by the tabernacle and the shrine. Without the lights on, the hull of the ceiling is gone up into the black, and the blue glass is black too, and what’s left of the church is the little rack of votives under the Lady, burning low in their red cups, and the brass plate under them catching it.",
+    "In the top row one candle has burned most of the way down since half past two.",
+    {
+     "if": "e22_margot==\"sincerity\"",
+     "text": "Beside it, a little taller, is the one Jack lit for his brother."
+    },
+    "“Margot lit that,” Jack says, low. “For research. You didn’t hear it from me.”",
+    "Lena looks at the candle with real respect. “Of course she did.”",
+    "She takes a long match from the box, lights it off Margot’s, and lights one more in the bottom row, under the plate — NORA GRACE CALLOWAY · 1989–2009 — and shakes the match out and kneels. Jack kneels at the end of the rail. He gives the Lady his grandmother and his mother and his father’s truck on the road to Pittsburgh tomorrow night, and a van at quarter to five, and doesn’t get further than that, and she crosses herself beside him and gets up, and he does.",
+    "At the door she wets her fingers in the font and crosses herself, and then flicks what’s left on her fingertips at him, for the road. It gets him in the eye.",
+    "They go out by the side door into the courtyard, past the olive tree and the broken sprinkler, to the Newman House steps. Father Osei’s Advent sheet is taped inside the glass of the front door at eye level, in his careful hand.",
+    {
+     "type": "doc",
+     "title": "Taped inside the Newman House door",
+     "text": "THE O ANTIPHONS · DEC. 17–23 · VESPERS\n17 · O Sapientia\n18 · O Adonai\n19 · O Radix Jesse\n20 · O Clavis David\n21 · O Oriens\n22 · O Rex Gentium\n23 · O Emmanuel\n— G.O."
+    },
+    "Lena reads them off in Latin, all seven, in her Rosary pronunciation, the nuns’ vowels, and taps the glass at the bottom. “Now read the first letters. Backwards. From the twenty-third up.”",
+    "Jack does it with his finger on the glass. E. R. O. C. R. A. S.",
+    "“Ero cras,” he says.",
+    "“Translate, Latin Club.”",
+    "“*Ero* — I will be. *Cras*. Tomorrow.” He looks at it. “Tomorrow I will be.”",
+    "“Tomorrow, I will be there.” She is very pleased with it, and with him. “Some medieval monk hid it in there, upside down at the end of Advent, so that on the last night it answers you. Or that’s the story. Sister Agnes told it to us in the eighth grade like it was gossip.”",
+    "Jack laughs out on the step in the cold, and runs his finger up the column again, letter by letter, to watch it work. “He hid a promise in the calendar,” he says, “and didn’t sign it.”",
+    "“He didn’t have to sign it,” Lena says. “It isn’t his.”",
+    "She taps the second line. “Tonight’s is Adonai. The bush that burned and didn’t burn up.” The third. “Tomorrow’s the root of Jesse.”",
+    "“Tomorrow I’m in Denver.”",
+    "“Tomorrow I’m in Phoenix,” she says, “eating a pretzel in a terminal and saying Vespers into it. Jesse won’t mind. He was a farmer.”",
+    "“You say Vespers in airports?”",
+    "“I say Vespers in Laney’s car with the windows down and Laney doing the responses. An airport’s a cathedral.”",
+    "The door opens on them. Father Osei is in a brown cardigan over his clerical shirt with a mug of something in his hand, and the light from the hall behind him, and by the look of him he has seen two people in his church after dark through his office window and come out to see which two.",
+    "“Ah,” he says. “The last two.”",
+    "“We were reading your door, Father.”",
+    "“Ero cras,” Jack says.",
+    "Osei looks from the sheet to Lena, delighted. “She told you. Good. Most priests don’t know it.” He lowers his voice. “Don’t tell them. They will put it in a homily.”",
+    "He sets the mug down on the rail. “You are both traveling tomorrow.”",
+    "“Both of us,” Lena says.",
+    "Osei looks at the two of them on his steps in the cold, her with her collar up and him with his hands jammed in the Carhartt, and not a hat on either of them. “In Kumasi we would call this weather a reason to stay indoors,” he says. “Here you call it December and go walking in it. Then stand there.” He comes out onto the landing beside them, the bad leg last, and raises his hand.",
+    "“Be for them, Lord, a help when they set out,” Father Osei says, “and a comfort on the road. A shade in the heat. A cover in the rain and in the cold. A staff where the way is slippery, and a harbor if they are shipwrecked. And may almighty God bless you, the Father, and the Son, and the Holy Spirit.”",
+    "He makes the cross over the two of them, one sign for both, and lets his hand down.",
+    "“Come back,” he says."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "if": "e21_conf==\"drift\" && e21_knock!=\"now\" && e22_conf==\"grace\"",
+     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday I held the wrench for him at the courtyard wall. The sprinkler won. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back."
+    },
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "if": "e21_conf==\"drift\" && e21_knock!=\"now\" && e22_conf!=\"grace\"",
+     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday I held the wrench for him at the courtyard wall. The sprinkler won. Gaudete: rejoice is a command. Blessed us both for the road on the Newman steps. Come back."
+    },
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "if": "e21_conf==\"drift\" && e21_knock==\"now\" && e22_conf==\"grace\"",
+     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday I held the wrench for him at the courtyard wall. The sprinkler won. Then his office, side by side: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back."
+    },
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "if": "e21_conf==\"drift\" && e21_knock==\"now\" && e22_conf!=\"grace\"",
+     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday I held the wrench for him at the courtyard wall. The sprinkler won. Then his office, side by side: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Blessed us both for the road on the Newman steps. Come back."
+    },
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "if": "e21_conf!=\"drift\" && e22_conf==\"grace\"",
+     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday, behind the screen: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back."
+    },
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "if": "e21_conf!=\"drift\" && e22_conf!=\"grace\"",
+     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday, behind the screen: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Blessed us both for the road on the Newman steps. Come back."
+    }
+   ],
+   "choices": [
+    {
+     "text": "Ask him to bless your grandmother too.",
+     "tag": "Grace",
+     "set": {
+      "e22_bless": "grace",
+      "soul.grace": "+1"
+     },
+     "response": [
+      "“My grandmother too, Father,” Jack says. “She’s not going anywhere. She’s eighty-four. She’d want to be asked.”",
+      "“Carmela,” Osei says. He has had her name since the fall. He turns a little on the step, toward the east, toward Ohio, and makes a smaller cross in the air in that direction. “Done.”",
+      "He picks up his mug and leaves them the steps."
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "“Does it cover airlines?”",
+     "tag": "Wit",
+     "set": {
+      "e22_bless": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Does it cover airlines?”",
+      "“It covers everything,” Osei says, “but the food.” He picks up his mug. “For the food you will need a bishop.”",
+      "He leaves them the steps."
+     ],
+     "goto": "s13"
+    },
+    {
+     "text": "Say amen and mean it.",
+     "tag": "Sincerity",
+     "set": {
+      "e22_bless": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Amen,” Jack says.",
+      "Lena says it with him, half a syllable behind, so that it comes out of the two of them with a small echo in it. Osei hears it, and picks up his mug, and goes back up to his door with the leg taking the steps one at a time, and leaves the light on over the steps behind him."
+     ],
+     "goto": "s13"
+    }
+   ]
+  },
+  "s13": {
+   "slug": "FRIDAY · 8:40 PM · THE 11 BUS → MISSION STREET, BASTILLE (DARK)",
+   "set": {
+    "knows_julian_newyear": true
+   },
+   "body": [
+    "The 11 into town is nearly empty on the last Friday of the semester and the heater is going full blast for whoever it can get. Lena has the fares in the box, two sets of quarters, before Jack has his wallet out of his back pocket. There’s the driver, with a Santa hat on top of the regular hat, and a man at the back with a Christmas tree in its netting across two seats, holding it by the trunk so it won’t roll on the turns, and them. The bus smells like the tree. Mission Street goes by in strings of colored lights, the Walgreens, the post office, the Mission up on its rise with one lamp on over the doors, and somewhere past the Mission Lena turns around in her seat and asks the man whether it’s for him. “For my daughter,” he says. “She told me get the ugliest one they got.” Lena looks it over through the netting, the bald side and the bent top, with professional seriousness. “You did real good,” she says, and he is so pleased he gets off at the post office still smiling, and thanks the driver, and then, on the way past, the two of them, Merry Christmas.",
+    "They get off at the bottom of the grade. Café Bastille is dark for the break. The string lights over the door are off. Inside, through the glass, the chairs are up on the tables with their legs in the air, and the sign-up board by the register where the open-mic names go has been wiped down to a gray smear, except for one line in somebody’s marker across the bottom: BACK JAN 14 · MERRY XMAS · TIP YOUR BARISTA.",
+    "They stop outside without either of them deciding to.",
+    "Lena stands with her hands in her coat pockets and looks in at the little stage, the stool on it, the mic stand with no mic. “Julian’s going to record it in January,” she says. “In Oakland. His mother found a cellist.”",
+    "A week ago Thursday there was a man on that stool singing her name, and Jack in the singer’s empty chair at her table, hearing every word of it. A car goes by behind them, slowly, looking for parking that isn’t needed anymore.",
+    "“He’s coming for New Year’s,” Lena says to the dark window. “Mémère wants to hear him play.”",
+    "“Daddy’s making him a gumbo. Julian’s never had a real one. He thinks the thing they make in Oakland with the sausage is a gumbo.” She says it fondly, and to the glass, and doesn’t take any of it back.",
+    "Jack can see it without having seen any of it: a front room in New Orleans with the good lamps on, an old woman in the best chair, Julian at somebody’s piano being kind about the tuning, and everybody in the room liking him, because there is nothing about him not to like.",
+    {
+     "if": "e21_reply==\"restraint\"",
+     "text": "Before he can answer: “You never answered me. About staying.” He doesn’t have to. She isn’t waiting for it."
+    }
+   ],
+   "choices": [
+    {
+     "text": "“It’s a good song.”",
+     "tag": "Candor",
+     "set": {
+      "e22_song": "candor",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“It’s a good song,” Jack says.",
+      "“It is.”",
+      "She looks in at the stage through the glass, the stool and the empty stand, and then she turns away from it, and they go on down Mission Street toward the water."
+     ],
+     "goto": "s13a"
+    },
+    {
+     "text": "“Tell the cellist not to leave in the second chorus.”",
+     "tag": "Wit",
+     "set": {
+      "e22_song": "wit",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Tell the cellist,” Jack says, “not to leave in the second chorus.”",
+      "Lena laughs, surprised into it, and it comes out of her in a cloud in the cold and goes up past the dark awning. “Walk,” she says, and he does, and so does she."
+     ],
+     "goto": "s13a"
+    },
+    {
+     "text": "Say nothing. Walk.",
+     "tag": "Restraint",
+     "set": {
+      "e22_song": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He doesn’t say anything. He starts walking, and after a few steps she falls in beside him, and they go down Mission Street together, down the grade to the harbor, with the lights of the wharf coming up at the bottom of it."
+     ],
+     "goto": "s13a"
+    }
+   ]
+  },
+  "s13a": {
+   "slug": "FRIDAY · 9:30 PM · THE ANCHOR",
+   "music": "Irma Thomas — “Ruler of My Heart”",
+   "set": {
+    "rel.lena.warmth": "+1"
+   },
+   "body": [
+    "Her quarter goes into the jukebox before she has her coat off. She knows the number without reading the cards. Irma Thomas comes out of the speaker over the pie case, slow and patient, a New Orleans girl in 1963 with a piano under her, and Lena stands there with her coat half off one shoulder until the first line is sung and then comes and sits on the stool next to his.",
+    "From the customer side of the counter the Anchor is a different restaurant. Jack has never sat on this side of it with her. The pie case is lit up at eye level, the Hobart is somebody else’s problem, and Rudy at the flat-top lifts his chin at the two of them over a burger and goes back to it, and the ballgame on his radio is a basketball game from somewhere with the volume down.",
+    "Gloria comes out of the walk-in backward, pushing the door with her hip, with a flat of eggs held against the other one. She sees who’s on her stools. She sets the eggs down by the grill, and wipes her hands on her apron, and without either of them ordering anything a plate comes down the counter with a slice of pecan on it and two forks crossed beside it.",
+    "“Ma’am, I didn’t order this,” Lena says.",
+    "“Eat it while it’s warm,” says Gloria, already going back down to the register. “It’s been waiting.”",
+    "Rudy comes down from the flat-top a minute later with a basket of fries they didn’t order either and sets it by the pie. He looks at Lena. “The Mission,” he says. “You sang.” “Badly,” Lena says. Rudy thinks about it. “My mother says for the Virgin, loud is the same as good.” And goes back to the grill.",
+    "“You don’t order the pecan,” Jack says. “It comes to see if you’re here.”",
+    "She picks up a fork. Gloria’s pecan is the dark kind, more pecans than filling, with a crust somebody has been making the same way for thirty years, and Lena takes the first bite with her eyes closed and opens them slowly. “All right,” she says. “All right. That’s a pecan pie.”",
+    "She asks after Danny. Jack gives her the last of it: Ma read him the latest one off the envelope on the phone. Danny went to the prison library to look up Flannery O’Connor. His review, in full: she raised peacocks, she was mean, and he likes her.",
+    "“Your brother has taste,” Lena says. She points her fork at him. “Tell him I said so. And tell him Merry Christmas from me. With the accent.”",
+    "“I don’t do the accent.”",
+    "“Then practice.”",
+    "She goes back to the restroom past the pay phone. Gloria stops at the register across from him, ringing up nothing, and says it low, with her back half to him.",
+    "“That one’s still standing in it, hon.”",
+    {
+     "if": "e21_pie==\"lie\"",
+     "text": "She looks at him a little longer than the line needs, and goes back to the register."
+    },
+    "In the glass of the pie case his own face is laid over the lemon meringue. He looks at it until the restroom door opens.",
+    "Lena comes back and takes the second-to-last bite of the pecan without asking and announces, to Jack and the pie case and Rudy, that the Saints are going to beat Dallas tomorrow night, because it’s ordained.",
+    "“God doesn’t care who wins football games,” Jack says.",
+    "“He does so.” She sets the fork down to have both hands. “Providence goes all the way down. Every sparrow. Every hair. Thomas says it extends to singular things, not just the species — you don’t get to have a God who runs the universe and can’t be bothered with a field goal. And the Saints aren’t a football team. After the storm the whole city was a FEMA trailer. Daddy has had the same two seats since 1981, and the night they opened the Dome again he sat in them, in a building they’d scraped the storm out of, with seventy thousand people on their feet, praying. That’s a liturgy. That’s a city’s petition.”",
+    "“Thomas also says secondary causes,” Jack says. “God doesn’t kick the ball. He moves the kicker by letting the kicker kick. He cares about Hartley — his soul, his mother, his hamstrings. Not the score. The score is the kicker’s job.”",
+    "“You don’t get to use Thomas on me. Thomas is mine.” She picks up the fork again and points it at him. “Then why do you pray before the field goal, Costigan?”",
+    "“I don’t.”",
+    "“Washington. Overtime. Before the snap. At the top of your lungs.”",
+    "“That was the Who Dat.”",
+    "“The Who Dat,” Lena says, “is a question addressed to the heavens. *Who dat say dey gonna beat dem Saints?* It’s practically the Book of Job.” She takes the last bite. “Fourteen and oh tomorrow night. It’s ordained.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "gloria",
+     "title": "Gloria (the Anchor)",
+     "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it. Asked after the pecan. I said she’s seeing somebody, he’s nice. She said lattice-top. Boxed a pie for Nonna. From a woman who’s been on her feet thirty years. Peach is August. St. Nicholas Eve, at the end of my shift, low, at the pass: ‘Pecan came to see if you were here.’ Gave my Thursday to Hector — his girl’s due at Christmas. ‘Don’t argue with a baby.’ Says I look like the pie case at closing. Rated somebody new. Boysenberry. ‘That one’s not waiting for any door.’ The last night: two forks and the pecan, at the counter. ‘That one’s still standing in it, hon.’"
+    }
+   ],
+   "choices": [
+    {
+     "text": "“Then Providence owes Detroit an apology.”",
+     "tag": "Press",
+     "set": {
+      "e22_saints": "press",
+      "trait.wit": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“Then Providence owes Detroit an apology,” Jack says.",
+      "“Detroit has *Dale*,” Lena says. “That’s Providence. Dale is a sign and a wonder.” She isn’t giving him an inch of it, and they go two more rounds on it — the Lions, Job again, whether a man in a Barry Sanders jersey at ten in the morning counts as a mortification — before she lets him have the last word by eating his.",
+      "At a quarter to twelve Gloria lays the check face down at Lena’s elbow and takes the pie plate with the two forks on it. The pecan isn’t on the check. Lena turns it over, and reads it, and turns it back, and puts down a tip that would embarrass both of them if either said anything about it."
+     ],
+     "goto": "s13b"
+    },
+    {
+     "text": "“Fine. He cares. He’s a Saints fan.”",
+     "tag": "Concede",
+     "set": {
+      "e22_saints": "concede",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Fine,” Jack says. “He cares. He’s a Saints fan.”",
+      "“Everybody is,” Lena says, “eventually.” She clinks her coffee cup against his, satisfied, and holds it there against the rim of his before she drinks.",
+      "At a quarter to twelve Gloria lays the check face down at Lena’s elbow and takes the pie plate with the two forks on it. The pecan isn’t on the check. Lena turns it over, and reads it, and turns it back, and puts down a tip that would embarrass both of them if either said anything about it."
+     ],
+     "goto": "s13b"
+    },
+    {
+     "text": "“I’ll pray for fourteen.”",
+     "tag": "Sincerity",
+     "set": {
+      "e22_saints": "sincerity",
+      "jack_prays_14": true,
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“I’ll pray for fourteen,” Jack says.",
+      "“Out loud?”",
+      "“Out loud.”",
+      "Lena puts her hand down flat on the Formica between their cups as if he’d signed something, and leaves it there while Irma Thomas finishes.",
+      "At a quarter to twelve Gloria lays the check face down at Lena’s elbow and takes the pie plate with the two forks on it. The pecan isn’t on the check. Lena turns it over, and reads it, and turns it back, and puts down a tip that would embarrass both of them if either said anything about it."
+     ],
+     "goto": "s13b"
+    }
+   ]
+  },
+  "s13b": {
+   "slug": "SATURDAY · 12:05 AM · THE BEACH, WEST OF THE HARBOR",
+   "set": {
+    "lena_arm_cold": true
+   },
+   "body": [
+    "They take the beach home. It’s three miles west from the harbor to the bluffs under Las Olas, and the tide is out far enough to give them the hard sand, packed and ribbed and shining a little where the water has just left it, and the night has gone very cold and very clear. The stars come down to the sea. Offshore the oil platforms are lit up, each one its own small town, and behind them the wharf and the Anchor’s sign get smaller every time Jack looks back, until he stops looking back. It smells of kelp and cold salt. Their breath goes ahead of them. They don’t talk much. She has the card in her pocket and he can hear her thumb going along the edge of it.",
+    "The wind comes straight off the Pacific into their faces with nothing in its way since Japan. Lena puts her chin down into her collar against it. “Three miles,” she says into the collar. “About.” “Good,” she says, and a few hundred yards past the breakwater, without a word about it, her arm comes through his and holds on. One. Her hand stays in her own coat pocket with his elbow clamped against her side, so that he has to shorten his stride to hers and she has to lengthen hers to his, and after a hundred yards or so they have it worked out. They walk west like that on the hard sand with the surf breaking white on their left, toward the dark end of the beach and the wooden stairs up to Seacliff Road."
+   ],
+   "next": "s14"
+  }
+ }
+}

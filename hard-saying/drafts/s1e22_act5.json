@@ -1,0 +1,240 @@
+{
+ "scenes": {
+  "s07": {
+   "slug": "THURSDAY · 12:50 AM · THE SAAB, THE BLUFF ROAD ABOVE ELLERY",
+   "music": "Tom Petty — “Wildflowers”",
+   "set": {"resolve.jack": "-1"},
+   "body": [
+    "No moon. It went new before dawn yesterday, and tonight there isn’t a paring of it anywhere. The coast north of campus is as dark as he has ever seen a place with people in it, black from the hills clear down to the water, and out on the water the platforms sit lit in their rows like a town that came loose and floated off. The top is down. The cold comes over the windshield and gets into his collar, and he lets it.",
+    "Her college station is playing Tom Petty, low — a song he knows from the radio in his father’s garage, one guitar and a voice in no hurry at all.",
+    "She picked him up at the Marine Lab chain at twenty to one with her hair stuffed up under the gray knit cap, and kissed him before he had the door shut, across the gearshift, cold-nosed, with one hand inside his jacket against his ribs to see if he was warm. He wasn’t. She kept the hand there anyway, up Ocean Road and out past the last lights of campus, and drove with the other.",
+    "North of the Lagoon there’s nothing on the coast road but the two of them and the dark, and she gives him the tour, bright and bored, nine tours into her day. “On your left, the Pacific Ocean. Please do not touch the Pacific Ocean. On your right, California. Gift shop at the end.” A pair of eyes in the brush at the shoulder, green, and gone. “Local wildlife. Union.” He’s laughing; she hasn’t cracked once. “If you look up, those are stars. They’re real. We had them flown in.”",
+    "A quarter mile short of the turnout, where the bluff road tips down toward the sea, Skye reaches over the wheel and switches off the headlights. Then the engine.",
+    "The Saab doesn’t mind. It goes on downhill on nothing, rolling, the tires loud on the gravel and the road gone out from under the windshield. There isn’t a road. There’s a darker dark where the road ought to be, and the platforms for a horizon, and over the open car every star he has ever been told about, out all at once, so many the sky looks grainy with them. He has one hand braced on the dash and the other on her knee. She’s laughing, steering by something he can’t see, and Petty keeps on through the speakers like nothing’s happening.",
+    "“Skye.”",
+    "“I know where it goes.”",
+    "“You can’t see where it goes.”",
+    "“GM’s deciding if my car gets to live,” she says. “It was on the radio. I wanted to see what it does on its own.”",
+    "“You’re out of your mind.”",
+    "“I’m from Lancaster,” Skye says. “Out there we do this on purpose. There’s nothing else to do.”",
+    "What it does is slow on the flat at the bottom, and take the turnout’s gravel under its tires with a long crunch like a crowd settling, and stop with its nose at the rail and the black Pacific in front of it. She pulls the brake. It ratchets. Jack takes his hand off the dash. His heart is going like he ran here.",
+    {"if": "firm_purpose_letter", "text": "At the chain, before he got in, he’d said it: “Whatever happens. No.” “Nothing’s happening,” she said. “I’m *talking* tonight.”"},
+    "She doesn’t start the engine again. She sits with both hands up on the wheel of a parked car where a driving instructor would want them. She drives with one wrist hung over the top of it, or with a knee; he has never seen her hold it like this.",
+    "“Thursday,” Skye says. “Not asking.”",
+    "After that she says nothing. She waits, hands on the wheel, for him to turn his head and look at her."
+   ],
+   "choices": [
+    {
+     "text": "“Then I’ll ask something. What are we, Skye?”",
+     "tag": "Candor",
+     "set": {"e22_open": "candor", "said_it_plain_n": "+1", "trait.candor": "+1", "rel.skye.trust": "+1"},
+     "response": [
+      "“Then I’ll ask something,” he says. “What are we, Skye?”",
+      "“You stole my scene,” she says, and the corner of her mouth goes up and won’t come back down."
+     ],
+     "goto": "s07a"
+    },
+    {
+     "text": "“Are you breaking up with me? We’d have to be something first.”",
+     "tag": "Wit",
+     "set": {"e22_open": "wit", "trait.wit": "+1", "rel.skye.warmth": "+1"},
+     "response": [
+      "“Are you breaking up with me?” he says. “We’d have to be something first.”",
+      "“That’s the scene,” Skye says. “Sit still. I wrote it.”"
+     ],
+     "goto": "s07a"
+    },
+    {
+     "text": "Wait. Let her say it.",
+     "tag": "Restraint",
+     "set": {"e22_open": "restraint", "trait.control": "+1"},
+     "response": [
+      "He waits.",
+      "She takes a breath like somebody about to go under a wave, and takes her hands off the wheel."
+     ],
+     "goto": "s07a"
+    }
+   ]
+  },
+  "s07a": {
+   "slug": "THURSDAY · 1:05 AM · THE SAAB, THE BLUFF ROAD ABOVE ELLERY",
+   "set": {"skye_january": true, "rel.skye.trust": "+1"},
+   "body": [
+    "Petty runs out. A boy on the college station comes on half asleep to say that was Tom Petty and this is the overnight, and something about a benefit show in Las Olas on Saturday, and Skye reaches over and turns him off. The dark comes in where the radio was. At the foot of the bluff the surf works at the old pier pilings.",
+    "She gets the striped blanket out from behind his seat — the beach one, Ellery still in its creases — and shakes it out over the both of them, and turns in the driver’s seat to face him with her back to the door and her knees drawn up under it.",
+    "“Here’s my pitch,” she says. “We stay like this.”",
+    "“Like this.”",
+    "“A few more weeks. The car. One in the morning. You on a lawn doing ducks.” She pulls the blanket to her chin. “Not before Christmas.”",
+    "“What happens at Christmas?”",
+    "“Everything. That’s what’s wrong with it.” She says it fast, like the setup to something. “Christmas and New Year’s put too much pressure on new things. Everybody’s drunk and somebody’s mother is crying in a kitchen. I’ve watched it happen on four sets and in one kitchen.”",
+    "“My mother makes everybody put their phones in the bread basket on Christmas Eve,” he says. “At the door. Like a toll.”",
+    "“See?” Skye points at him across the gearshift. “That’s a woman under pressure.” Her thumb finds a loose thread at the blanket’s hem and goes to work on it. “And then you’re in the snow and I’m here, and it’s two thousand miles of phone. Long distance is two people holding phones and pretending it’s a person. I’ve never done it. I don’t want to find out I’m bad at it with you.”",
+    "He turns that over in the cold. It sounds like a good reason, and he was raised around good reasons; his mother keeps a drawer of them by the stove.",
+    "“We’d be the same two people on the phone either way,” he says. “If we both know, why not now? What’s a word going to break?”",
+    "“Oh, Jack.” She comes up off the door. “Everything. A word breaks everything. Listen. Two people are a couple on the twentieth. Great. On the twenty-fourth there’s a second drink, and a cousin — there’s always a cousin — who leans across the table” — she leans across the gearshift and does him, a cousin with a mustache and a beer in his fist — “*so what are you two*, and he says *together* and she says *talking*, and now they’re in a fight about a word with two thousand miles in the middle of it, and neither of them can see the other one’s face, which is the only thing that would’ve fixed it.” A finger up, before he can come in. “On the thirty-first somebody takes a picture at midnight. She’s in it. Some guy’s arm is around her, because it’s midnight and arms go places. It means nothing. It’s on the internet by ten after twelve, and he sees it in a basement with his grandmother asleep upstairs.” She tips her head. “Who wins that fight?”",
+    "“Nobody.”",
+    "“The cousin,” Skye says. “The cousin always wins.”",
+    "“Then we tell the cousin to mind his business.”",
+    "“You have never told a cousin to mind his business in your life. You’d pass him the bread.”",
+    "He has cousins. He can see exactly which one would lean, and over which bread basket.",
+    "“The cousin always wins,” he says.",
+    "She settles back against the door, satisfied, and looks up at the stars instead of at him. The thread comes loose from the hem. She winds it around one finger, tight, till the tip goes dark, and lets it off, and winds it again.",
+    "“I want to keep this,” she says. “That’s the reason under the reasons. Everything I ever watched get broken got broken between the twentieth and the second.”",
+    "“What do you want to keep?”",
+    "She thinks about it with the thread. “This. One in the morning. You telling me the earth drives through a comet on schedule. The part where you don’t want anything out of me but the next line.” She winds it tighter. “It’s rare. I’d like it not to go to a party.” She looks over at him. “Whatever it was in December, I’m not asking. January’s mine.”",
+    "He looks out at the sea. One of the platforms has a red light on top of it that blinks, and he counts it four times before he can look back at her.",
+    "“So,” Skye says. “Go home. Text me from the snow globe. When you get back, we’re dating. Officially.” She lets the thread go. “I’ll make it a whole thing.”",
+    "The cold sits on his face. Under the blanket her feet find his leg, cold as the rail, and press there.",
+    "“How’d it go? Your twenty minutes.”",
+    "“Fine.”",
+    "“*Fine*. You’ll have to do better than fine in January.” She sits up into the cold with the blanket around her shoulders like a cape. “Here’s mine, then. I just gave you a lot of reasons. Forget them. Those are for Christmas.” And she says his sentence back to him, word for word: “A promise is made to a person, not to a reason. So I’m not making it to a reason. I’m making it to you.”",
+    "Down at the pilings a wave comes in bigger than the others, and the sound of it comes up the bluff a second late.",
+    "“And you can not-trust yourself all January,” Skye says. “I’ll be right there.”"
+   ],
+   "choices": [
+    {
+     "text": "“Yes. I want that.”",
+     "tag": "Candor",
+     "set": {"e22_skye": "candor", "said_it_plain_n": "+1", "trait.candor": "+1", "rel.skye.trust": "+1", "rel.skye.heat": "+1"},
+     "cue": "Skye will remember that.",
+     "key": "At one in the morning on the bluff, Skye said not before Christmas — in January, officially, a whole thing. You told her yes, you want that.",
+     "response": [
+      "“Yes,” he says. “I want that.”",
+      "She doesn’t have anything ready. Her mouth opens on nothing and shuts again, and her feet go still against his leg.",
+      "“Good,” she says. “I was going to do it anyway. I’m glad it’s mutual.”"
+     ],
+     "goto": "s07b"
+    },
+    {
+     "text": "“Do I get a vote?”",
+     "tag": "Wit",
+     "set": {"e22_skye": "wit", "trait.wit": "+1", "rel.skye.warmth": "+1"},
+     "key": "At one in the morning on the bluff, Skye said not before Christmas — in January, officially, a whole thing. You asked if you got a vote.",
+     "response": [
+      "“Do I get a vote?”",
+      "Skye looks at him across the gearshift in the starlight, at all of him. “You just voted,” she says. “With your whole face.”"
+     ],
+     "goto": "s07b"
+    },
+    {
+     "text": "“A whole thing?”",
+     "tag": "Sincerity",
+     "set": {"e22_skye": "sincerity", "trait.sincerity": "+1", "rel.skye.trust": "+1"},
+     "key": "At one in the morning on the bluff, Skye said not before Christmas — in January, officially, a whole thing. You asked her: a whole thing?",
+     "response": [
+      "“A whole thing?”",
+      "She squares her shoulders under the blanket and looks into a camera somewhere over the glove box, and she’s reading the eleven o’clock news. “Tonight, a source close to the couple confirms,” she says, grave as a flood warning, “that it is, in fact, a whole thing. More at eleven.” And then, herself, pulling the blanket back up: “I’ll tell my mother last.”"
+     ],
+     "goto": "s07b"
+    },
+    {
+     "text": "“Ask me again in January.”",
+     "tag": "Restraint",
+     "set": {"e22_skye": "restraint", "skye_january_hedge": true, "trait.control": "+1"},
+     "key": "At one in the morning on the bluff, Skye said not before Christmas — in January, officially, a whole thing. You told her to ask you again in January.",
+     "response": [
+      "“Ask me again in January.”",
+      "She looks at him. She winds the thread back around her finger.",
+      "“I’m not going to ask,” Skye says. “In January I’m going to *tell* you.”"
+     ],
+     "goto": "s07b"
+    }
+   ]
+  },
+  "s07b": {
+   "slug": "THURSDAY · 1:30 AM · THE SAAB, THE BLUFF ROAD ABOVE ELLERY",
+   "set": {"rel.skye.heat": "+1", "resolve.jack": "-1", "confession_owed": "+1"},
+   "body": [
+    "“I’m not counting, by the way,” she says. “Before you ask.”",
+    "He hadn’t been going to ask. She has her arms around her knees under the blanket, and her eyes on the platforms, and her chin down on her wrists.",
+    "“I counted,” Skye says. “Twenty-four days. Till you’re back.”",
+    "He looks at her. She’s looking at the sea.",
+    "“The dorms open the tenth,” she says then, fast. “I get the housing emails. I don’t live in housing. I read them anyway, like a cookbook.”",
+    "“What are you doing for it?” he says. “Christmas.”",
+    "She gives it to him in order. Her mother’s, by dawn. The network’s party on Christmas Eve, where her mother wears a sweater with a reindeer on it that lights up, and tells everybody Skye is resting. “And a party in the hills on the twenty-second. Everybody I went to middle school with.” She makes a face. “Christmas Day we do a hotel, so nobody has to cook. There’s a brunch. My mother tips the omelet man like he’s family. He sort of is.” She pulls the blanket tighter. “You?”",
+    "“Snow. Three days of my grandmother’s bread. Midnight Mass at St. Brigid’s, and my father asleep on his feet for the homily.”",
+    "“On his *feet*?”",
+    "“It’s a gift. It skipped me.”",
+    "“In January,” Skye says, “my publicist’s going to want lunch. Wear the blazer from the rain.”",
+    {"if": "pic4_unopened", "text": "“Did you ever look at my shirt?” “Not yet.” “Look in the snow,” Skye says."},
+    {"if": "e21_ball==\"candor\"", "text": "“How’d my Eight Ball do with your friend in italics?” “It went to a good home.” “*Italics*,” she says, and bumps his knee with hers."},
+    "Around half past one the cold wins. She gets up on her knees on the seat and hauls the top forward over them by its frame, and it comes down out of the stars and latches at the windshield, one side and then the other, and the sky is gone. It’s the canvas a foot over their heads, and the blanket, and the smell of her hair.",
+    "She comes back across the seat to him the way she always does — and then, on purpose, he can see it’s on purpose, she doesn’t. She stops with her mouth just off his, and waits. It’s Thursday. She isn’t asking.",
+    "So he does what she taught him. He says it.",
+    "“I want you,” Jack says. “I’ve wanted you since the chain.” His hand is at the hem of her sweater. “I want to see you.”",
+    "She laughs, very low, and lifts her arms over her head.",
+    "So it’s his hands. The sweater, over her head, and the knit cap with it, so that her hair comes down full of static and crackles against the canvas. The flannel under that, a button at a time, slow, because he wants it slow. The rest of it, her jeans and the clasp at her back, which his fingers have never done — every time before tonight she’s been the one — and his fingers are stupid with it in the cold, and she lies back against the door with her arms up on the cold leather and watches him be stupid and doesn’t help, and when it gives she says, very softly, “There he is.”",
+    "After that there’s nothing on her but the white cotton at her hips and the braided anklet, and his own shirt and the undershirt under it are on the floor where he threw them, and in the dark under the canvas there are his hands, and it’s his doing, all of it. She doesn’t steer. She lies under his hands and lets him find out what he does when nobody is making the case for him, and what he does is go farther than he ever has: his mouth down the middle of her, the St. Michael medal swinging off his own chest onto her stomach so that her breath goes in sharp at the cold of it; her hands in his hair, holding on; her heel hooked behind his knee. He says her name into her skin and she arches up off the seat to meet it. His hand is at her hip. His thumb is under the edge of the last cotton she has on, and the edge is right there under his thumb, and there is nobody in this car to stop him but him."
+   ],
+   "choices": [
+    {
+     "text": "“No.” To yourself. Out loud.",
+     "tag": "Control",
+     "set": {"e22_thu": "control", "trait.control": "+1", "soul.restraint": "+1"},
+     "key": "On the bluff she didn’t ask, and you were the one who went too far. You said no — to yourself, out loud.",
+     "response": [
+      "“No,” he says — to himself — and takes his thumb out from under the cotton, and puts the hand flat on her hip above it, and holds it there.",
+      "She hears it. She lies still under him, breathing.",
+      "“I didn’t ask,” she says.",
+      "“I know.”"
+     ],
+     "goto": "s07c"
+    },
+    {
+     "text": "“Skye. I want to. No.”",
+     "tag": "Sincerity",
+     "set": {"e22_thu": "sincerity", "trait.sincerity": "+1", "soul.restraint": "+1", "rel.skye.trust": "+1"},
+     "key": "On the bluff she didn’t ask, and you were the one who went too far. You told her you want to, and no.",
+     "response": [
+      "“Skye.” His hand stops where it is. “I want to. No.”",
+      "She pulls his head up by the hair until his mouth is on hers. “I didn’t ask,” she says against it.",
+      "“I know.”"
+     ],
+     "goto": "s07c"
+    },
+    {
+     "text": "Tell her exactly how close you came.",
+     "tag": "Candor",
+     "set": {"e22_thu": "candor", "said_it_plain_n": "+1", "soul.honesty": "+1", "soul.restraint": "+1", "rel.skye.heat": "+1"},
+     "key": "On the bluff she didn’t ask, and you were the one who went too far. You stopped yourself, and told her exactly how close you came.",
+     "response": [
+      "He takes his hand back, and tells her. Exactly how close. It doesn’t take long to say, and he says all of it, with his forehead down against her collarbone where he doesn’t have to see her face.",
+      "She’s quiet. Then she lifts his face in both hands and puts her mouth on his. “I know,” she says against it. “I was there.”"
+     ],
+     "goto": "s07c"
+    },
+    {
+     "text": "One more minute. Then no.",
+     "tag": "Reckless",
+     "set": {"e22_thu": "reckless", "e22_thu_late": true, "trait.reckless": "+1", "soul.restraint": "-1", "resolve.jack": "-1", "rel.skye.heat": "+1"},
+     "key": "On the bluff she didn’t ask, and you were the one who went too far. You took one more minute. Then you said no.",
+     "response": [
+      "He takes the minute. It’s his — not hers, not the car’s, not the hour’s — and he knows it while he’s taking it, every second of it, with his thumb where it is and her breath coming short against his ear.",
+      "Then: “No.”",
+      "“I didn’t ask,” Skye says.",
+      "“I know.”"
+     ],
+     "goto": "s07c"
+    }
+   ]
+  },
+  "s07c": {
+   "slug": "THURSDAY · 1:50 AM · THE SAAB, THE BLUFF ROAD ABOVE ELLERY → THE TURNOUT CHAIN",
+   "body": [
+    "And it doesn’t stop. She pulls him back down by the neck and keeps him there, and the no stays where he put it and everything this side of it goes on — nothing comes off, nothing goes back on. His hand stays on the right side of the line he drew, and every minute it knows exactly where the line is, and every minute he has to put it there again himself.",
+    {"if": "e22_thu_late", "text": "The minute he took is in the car with them. She doesn’t mention it. He can feel her not mentioning it every time she moves."},
+    "It’s the slowest it has ever been, and the longest. She takes her time and so does he. Her skin is cold wherever the air gets at it and hot everywhere else; her mouth tastes of the cold; her hands go down his back and stay low and hold on. Their breath goes up the inside of the windshield and takes the platforms out of it one at a time, till the last light at sea is a smear on the glass and then there isn’t any, only the dark and her. Once the seat lever gives under his knee and the seatback drops flat with both of them on it, and she laughs up at the canvas, helpless, and pulls him back down by the ears. The clock on the dash goes past two. He doesn’t look at it again.",
+    "“Jack Costigan,” she says once, low, into his mouth.",
+    "At twenty past two she lifts her head and squints at the green numbers and says a word that would get her sent out of Sister Rose’s fifth grade. “Studio City by six,” she says, “or my mother calls the Highway Patrol. She’s done it before.”",
+    "They dress by feel in the dark. She finds his undershirt wedged down the side of the seat and he finds her sock on the gearshift, and they put themselves back together in the cold without much talk. When he’s done she turns on the dome light and looks him over, frowning, and fixes him: turns his collar right side out, does the top button, pulls his jacket zipper up to his chin and stands the collar up at the back of his neck with both hands.",
+    "“Wardrobe,” she says.",
+    "She puts her forehead against his for a minute under the dome light, and turns it off.",
+    "She drives him back down the coast with the headlights on this time and stops short of the Marine Lab chain at 2:35. He gets out. She leans across the seat after him, the gray cap back on crooked, her hair still full of static.",
+    "“Merry Christmas, Ohio.”",
+    "She puts it in gear, and the Saab goes off down the service road toward the highway and south, one taillight a little dimmer than the other.",
+    "At the chain the RAZR comes back on and finds its bar and shows him 2:37, and nothing else. He puts it in his pocket. His collar is still done up to the top the way she left it, and it’s cold enough out here that he leaves it that way."
+   ],
+   "next": "s08"
+  }
+ }
+}

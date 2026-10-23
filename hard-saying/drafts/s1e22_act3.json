@@ -1,0 +1,446 @@
+{
+ "scenes": {
+  "s04": {
+   "slug": "WEDNESDAY · 2:00 PM · HOLLIS HALL, ROOM 314",
+   "set": {
+    "resolve.lena": 6
+   },
+   "body": [
+    "Hale’s window is all Pacific this afternoon, white with sun from the sill to the top of the glass, and it lights the room from the sea side only, so that every stack of books on the floor throws a long shadow toward the door. The gold leaf on the pebbled glass has lost another flake off the E since September. Italy is still in the carpet by the desk. The leash is on its hook behind the door, and today there’s a dog to go with it: Bishop Berkeley, gray to the eyebrows, asleep across the one clear avenue to the desk, so that Lena has to step over him in her boots, and does, and he doesn’t stir.",
+    "Two chairs have been set side by side in front of the desk and squared to it. Hale is behind it in a dark jacket Jack has never seen, clean at both cuffs, with his reading glasses actually on his nose and not up in his hair. On the blotter in front of him sits a white plastic kitchen timer, the egg-shaped kind that comes free with a set of saucepans.",
+    "Lena takes the left-hand chair. She’s in the cardigan over a dark dress and the Justins, her hair down, a capped pen in her folded hands. In the corridor she said *good afternoon* to him, in full, and nothing else. Jack takes the other chair on four hours’ sleep, with the cold of the bluff still in the backs of his hands.",
+    "“Miss Broussard first,” Hale says. “Ladies, and the South.” He lifts a sheet of paper off the nearest stack and holds it up to the light. “But before she defends anything, I want this explained. Thursday, two minutes past seven in the morning. No salutation. No argument. No subject line, which in my experience means a student is either in love or in Latin.”",
+    {
+     "type": "doc",
+     "title": "From: Magdalena Broussard · To: Adrian Hale · Thu 7:02 AM",
+     "text": "Pondus meum amor meus; eo feror quocumque feror.\n\n—M.T.B."
+    },
+    "“Translate it, Miss Broussard. For the benefit of Ohio.”",
+    "“*My weight is my love*,” Lena says. “*By it I am carried wherever I am carried.* Augustine, the *Confessions*, Book Thirteen.” She uncaps the pen and writes nothing with it. “It’s his sentence, Professor. *A man knows his own heart by what he says yes to.* Mr. Costigan wrote Augustine in October and didn’t know it. I checked his paper. Not one footnote.”",
+    "She gives Hale the long way round, because he asked for it and because she has been sitting on it since Thursday. Thomas says the will follows what the mind shows it as good, and Thomas is right, and Thomas is very little help in a hurry. Augustine says a body goes to its own place by its weight — fire up, a stone down, oil to the top of the water — and that love is a weight like that, and a person finds out what theirs is by where it takes them. “His sentence isn’t about choosing,” she says. “It’s about falling. You find out which way you fall by falling.”",
+    "Hale turns to Jack. “Is that true, Mr. Costigan? You stole from a bishop?”",
+    "“Aquinas would have footnoted him.”",
+    "“Aquinas footnoted everybody,” Lena says. “It was how he flirted.”",
+    "Hale makes a small noise of pure pleasure and winds the timer to twenty with a crunch. It begins to tick, loud, a cheap tin tick in a room full of books and sea. “Go.”",
+    "She stands up to do it. She doesn’t look at her paper once. She takes his October sentence and makes it better than he made it: that a heart isn’t a thing a man inspects, like a tooth, but a thing he finds out about the way he finds out about anybody, by what it does; that Aristotle knew it, that you become brave by doing brave things and only afterward find out you were; that a yes is the one act nobody can do for you, so it’s the one place a man can’t lie about where his weight is. For her example she doesn’t go to Aristotle. She goes to Nazareth: a girl of fourteen or so, told something nobody could have understood, who says *Be it done unto me* and doesn’t know who she is until she has said it. “And then she does, Professor. And so does everybody else, for two thousand years. She didn’t look into her heart and find a yes there. She said yes, and found her heart.” Hale, who has a rule against interrupting the Virgin Mary, waits her out with his fingers steepled under his chin, and then gets in the way.",
+    "“Then the drunk knows his heart is a bottle.”",
+    "“He knows it’s thirsty,” Lena says. “And he knows it the next day. You don’t learn your heart at two in the morning, Professor. You learn it at breakfast.”",
+    "“And the man who says yes to everything?”",
+    "“Has a very small heart. And a very busy one.”",
+    "Hale tips his chair back, and the chair complains about it, and asks, mildly: “And Mr. Costigan? Does he know his?”",
+    "Lena doesn’t look at Jack. She looks at Hale, and keeps her eyes on Hale, and her voice doesn’t change at all. “Ask him where he says yes at two in the morning. I can’t tell you. That’s rather my point.”",
+    "“Is that an argument, Miss Broussard, or a subpoena?”",
+    "“It’s an argument with a witness.”"
+   ],
+   "choices": [
+    {
+     "text": "Look at her.",
+     "tag": "Sincerity",
+     "set": {
+      "e22_watch": "sincerity",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "He looks at her. She doesn’t look back. The pen goes into the pocket of the cardigan, and her hand goes in after it, and she finishes the last four minutes with her hand in her pocket and her eyes on Hale.",
+      "When the twenty are up, she has won them, and everybody in the room knows it, including the dog. Hale stops the timer with one finger and turns it back round to twenty without a word about her. “Mr. Costigan,” he says. “Twenty minutes. In her argument, not yours.”"
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "Look at the greyhound.",
+     "tag": "Restraint",
+     "set": {
+      "e22_watch": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He looks at the greyhound. Berkeley opens one eye at him, with great sympathy, and closes it again.",
+      "When the twenty are up, she has won them, and everybody in the room knows it, including the dog. Hale stops the timer with one finger and turns it back round to twenty without a word about her. “Mr. Costigan,” he says. “Twenty minutes. In her argument, not yours.”"
+     ],
+     "goto": "s05"
+    },
+    {
+     "text": "“Objection.”",
+     "tag": "Wit",
+     "set": {
+      "e22_watch": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1",
+      "rel.hale.warmth": "+1"
+     },
+     "response": [
+      "“Objection,” Jack says.",
+      "“Overruled,” says Hale. “It’s my office.” Lena’s mouth goes at one corner, and she puts it back where it was, and goes on.",
+      "When the twenty are up, she has won them, and everybody in the room knows it, including the dog. Hale stops the timer with one finger and turns it back round to twenty without a word about her. “Mr. Costigan,” he says. “Twenty minutes. In her argument, not yours.”"
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s05": {
+   "slug": "WEDNESDAY · 2:24 PM · HOLLIS 314",
+   "duel": "oral",
+   "body": [
+    "The sun has come a foot along the green carpet while she talked, and Italy is in it now, boot and all, and so is the end of the dog.",
+    "Lena sits. Jack doesn’t; he can’t do this sitting down, and Hale, who has stood up to argue in rooms like this one for thirty years, lets him stand.",
+    "“You chose the one she didn’t believe, Mr. Costigan.” Hale says it pleasantly, settling back in his chair. “I said I would know. Defend it anyway.”",
+    "In her chair Lena turns her face to the window and keeps it there.",
+    "“A promise is made to a person,” Jack says, “not to a reason.”",
+    "He builds it the way she built it in September, from the bottom up. A reason is a thing a man has; a person is a thing a man is facing. You can’t owe a reason anything, because a reason can’t be let down. Every promise worth the name is made so that it will survive the day its reasons go — *for worse*, *in sickness*, *till death*: the back half of the vows is nothing but a list of reasons going away, and a man saying he’ll stay anyway. He has her paper in his head, her red and his down the margins. Where she argued it like a woman holding a fish at arm’s length, he holds it close, and somewhere around the vows he notices he has stopped performing it. Lena is looking at the sea. Hale gives him six minutes with his chin down on his chest, and then lifts it.",
+    "“Hume,” says Hale, “who was right about nearly everything except the French. A promise is a convention. An invention, and a very good one. It’s the clever little tool by which a man ties down his future self so that his neighbor will lend him a horse. The *reason* is the horse.” He sets his fist on the blotter: the horse. “Take the horse away, Mr. Costigan, and what have you got in your hand? A tool. And a tool may be put down. Your vows are the same instrument for the same purpose, with a cow in place of the horse. Civilization is very largely made of tools put down at the right moment. The rest is sentiment and bollocks.”"
+   ],
+   "choices": [
+    {
+     "text": "“A tool you can put down. A person you can’t — not without wronging somebody.”",
+     "tag": "Press",
+     "set": {
+      "e22_oral_r1": "press",
+      "duel.oral.rigor": "+1"
+     },
+     "response": [
+      "“You can put a tool down,” Jack says. “You can’t put a person down. Not without wronging somebody. If I promise you a horse and the reason for the horse goes away, I don’t get to keep the horse. The horse was never the point. You were. I looked at *you* when I said it, not at the horse.”",
+      "Hale is pleased, and lifts a finger to show it. “Wronging *whom*, if the reason’s gone? If the man’s gone? Hold that. I’m coming back for it, and you won’t enjoy it.” Jack holds it, and goes on."
+     ],
+     "goto": "s05a"
+    },
+    {
+     "text": "“My father’s kept a promise to the Browns since 1964. There’s no reason left. There’s a person.”",
+     "tag": "Riposte",
+     "set": {
+      "e22_oral_r1": "riposte",
+      "duel.oral.wit": "+1",
+      "rel.hale.warmth": "+1"
+     },
+     "response": [
+      "“My father’s kept a promise to the Cleveland Browns since 1964,” Jack says. “They won it all when he was a kid and they haven’t given him a reason since. Believe me. Every Sunday in the fall he sits down in front of them and gets betrayed, and next Sunday he sits down again. There’s no reason left. There’s a person.”",
+      "Hale laughs, a single bark that doesn’t trouble the deaf dog in the least. “The Cleveland Browns as a moral person. Go on — no. Don’t. I can see the season on your face, and I’ve had lunch.” He waves Jack onward with the back of his hand, still grinning, and Jack goes."
+     ],
+     "goto": "s05a"
+    },
+    {
+     "text": "“Some promises are tools. Give me the ones that aren’t.”",
+     "tag": "Concede",
+     "set": {
+      "e22_oral_r1": "concede",
+      "duel.oral.heart": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "“Some promises are tools,” Jack says. “Most of them. I lend you a horse, you lend me a horse. You can have those, Professor. You can have Hume. Give me the ones that aren’t.”",
+      "“Generous,” says Hale. “Dangerous. Which ones aren’t?” He waits, with every appearance of enjoying himself, while Jack goes looking, and Jack finds the first one where he left it — the vows, the back half, the reasons going away one by one — and sets it down in front of Hale again, slower."
+     ],
+     "goto": "s05a"
+    }
+   ]
+  },
+  "s05a": {
+   "slug": "WEDNESDAY · 2:31 PM · HOLLIS 314",
+   "duel": "oral",
+   "body": [
+    "“Before we leave the horse.” Hale still has his finger up. “In November, in my seminar, you argued that the dead are beyond harm. Epicurus: where death is, I am not. Miss Broussard took you apart in front of the room, and I gave her the afternoon.” He lets the finger come down and point. “Have you been converted since? Or are you merely changing sides for the day, like a mercenary?”",
+    "“I lost,” Jack says.",
+    "“So you did. Then argue like a man who lost, which is to say carefully.”",
+    "Hale gets up and goes round the end of the desk, stepping over his own dog, and stands at the window with his back to the sea, so that he’s a dark shape against all that white and Jack has to squint to argue with him.",
+    "“Very well. Let me take your person away. Not a fable — it happens on every hospital ward in England on any given Tuesday. A man on his deathbed makes you promise to look after his dog.” He doesn’t glance at the carpet. “You promise. He dies. The dog, being a dog, has no idea any promise was made; the dog would be equally content with the neighbor. To whom is the promise owed now, Mr. Costigan? The man is ash. The animal is indifferent. There is nobody left in the world to wrong.” He spreads his hands against the glass. “Where does your person live?”",
+    "He doesn’t wait for it. “And don’t tell me you keep it for *him*. You keep it because you would like to be the sort of man who keeps it. That isn’t fidelity to the dead, Mr. Costigan. It’s a portrait of yourself, hung where the dead man used to be, with a little candle under it so you can see the brushwork.” He lets go of the glass. “Vanity is the only creditor that never dies.”",
+    "Jack’s hand closes at his side and opens again. At the window Lena has stopped pretending to look at the sea; she’s looking at the floor in front of her boots, very hard, with her pen in both hands."
+   ],
+   "choices": [
+    {
+     "text": "“To him. The dead are still somebody. The Church is built on it, Professor — so is the law of wills.”",
+     "tag": "Press",
+     "set": {
+      "e22_oral_r2": "press",
+      "duel.oral.rigor": "+1"
+     },
+     "response": [
+      "“It’s owed to him,” Jack says. “The dead are still somebody. The Church is built on that, Professor — we pray for them, we ask them for things, we don’t stop owing them because they stopped being able to collect. So is the law of wills, and nobody ever accused probate court of sentiment. You don’t tear up a will because the man who wrote it isn’t around to complain.”",
+      "“The Church and the probate court,” Hale says. “Strange bedfellows. Accepted — provisionally, the way one accepts a check from a Catholic.” He comes a step off the glass toward Jack, out of the light, so that Jack can see his face again, and it’s having a very good afternoon."
+     ],
+     "goto": "s05b"
+    },
+    {
+     "text": "“My grandmother lights a candle for my grandfather every Sunday. Nobody’s holding her to it.”",
+     "tag": "Reframe",
+     "set": {
+      "e22_oral_r2": "reframe",
+      "duel.oral.heart": "+1",
+      "duel.oral.rigor": "+1"
+     },
+     "response": [
+      "“My grandmother lights a candle for my grandfather every Sunday after Mass,” Jack says. “Every Sunday since he died. He can’t hold her to it. My mother would let her off tomorrow, and nobody at that Mass would say a word if she stopped. She does it anyway.”",
+      "Hale is quiet against the window for long enough that the sea gets a word in. “Then the promise has outlived its creditor,” he says at last, “and found itself a second one. Who?”",
+      "“Her.”"
+     ],
+     "goto": "s05b"
+    },
+    {
+     "text": "“If promises die with people, Professor, Housman owes a lot of refunds.”",
+     "tag": "Riposte",
+     "set": {
+      "e22_oral_r2": "riposte",
+      "duel.oral.wit": "+1",
+      "rel.hale.warmth": "+1"
+     },
+     "response": [
+      "“If promises die with people, Professor,” Jack says, “Housman owes a lot of refunds. Half of *A Shropshire Lad* is a man keeping faith with somebody who’s been dead since the second stanza.”",
+      "Hale gave him that Housman himself, foxed, wartime, for a brother in a cell, and they both know where the punch came from. “Low,” Hale says. “Effective. I’ll allow it.” He looks at Jack a moment longer over folded arms, and then waves him on."
+     ],
+     "goto": "s05b"
+    },
+    {
+     "text": "“I don’t know who it’s owed to. I know it’s owed.”",
+     "tag": "Concede",
+     "set": {
+      "e22_oral_r2": "concede",
+      "duel.oral.heart": "+1"
+     },
+     "response": [
+      "“I don’t know who it’s owed to,” Jack says. “I’ve been trying to find him since you asked. I know it’s owed.”",
+      "“That’s not an argument.”",
+      "“No, sir. It’s the thing the argument’s for.”",
+      "Hale opens his mouth to make a meal of that, thinks better of it, and moves on."
+     ],
+     "goto": "s05b"
+    }
+   ]
+  },
+  "s05b": {
+   "slug": "WEDNESDAY · 2:38 PM · HOLLIS 314",
+   "duel": "oral",
+   "body": [
+    "For four minutes more they go at it over open ground, Hale with Hume again and Jack giving him ground an inch at a time and never the inch that matters, until Hale reaches for Williams — his own Williams, Bernard, from memory — and Jack, who has spent three months in that paperback with a pencil, takes it off him.",
+    "“Your man in the water,” Jack says. “Williams. Two people drowning, he can save one, one of them’s his wife. And if he stops to work out that it’s permissible to save your wife in cases like this — ”",
+    "“— he has had one thought too many,” Hale says, in spite of himself. He has it by heart.",
+    "“That’s a promise made to a person,” Jack says. “Not to a reason. Your own guy. Page eighteen. I wrote *yes* next to it, under your *no*.”",
+    "Hale stares at him. “Bernard,” he says, “would be appalled to be enlisted by a Catholic.” But he doesn’t say Jack is wrong. Somewhere in there it stops being a game, and Jack couldn’t have said when.",
+    "Then Hale stops arguing.",
+    "He comes back from the window and sits on the front edge of his desk, close enough to Jack to be rude about it, and folds his arms, and for the first time since two o’clock he isn’t looking at the argument at all. He’s looking at Jack, with the kind of interest he usually saves for a paper he’s about to enjoy failing.",
+    "On the carpet Berkeley sighs in his sleep and stretches all four legs at once, as far as they go.",
+    "“You’ve been very good for fourteen minutes,” Hale says. “Good is cheap in this room. I want something dearer.” He tips his head toward the window without taking his eyes off Jack. “Do you believe it, Mr. Costigan? Or does she?”",
+    "There are a lot of answers in Jack, and all of them are true enough to say in this room, and only one of them has a person in it, and she’s sitting four feet away with her face to the glass.",
+    "At the window Lena has gone very still, her capped pen lying across both palms like something she’s been asked to hold for somebody."
+   ],
+   "choices": [
+    {
+     "text": "“I believe it because I watched her live it.”",
+     "tag": "Heart",
+     "set": {
+      "e22_oral_r3": "heart",
+      "duel.oral.heart": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "At Hale’s oral he asked if you believe her argument. You said you believe it because you watched her live it.",
+     "response": [
+      "“I believe it,” Jack says, “because I watched her live it.” He says it to Hale, because Hale asked.",
+      "Lena doesn’t move. Hale, on the edge of the desk, unfolds his arms slowly, and puts his hands on his knees, and has, for once, nothing at all ready to say. On the carpet Berkeley’s ribs go up and down."
+     ],
+     "goto": "s05c"
+    },
+    {
+     "text": "“It doesn’t matter who believes it. It’s true or it isn’t.”",
+     "tag": "Press",
+     "set": {
+      "e22_oral_r3": "press",
+      "duel.oral.rigor": "+1"
+     },
+     "key": "At Hale’s oral he asked if you believe her argument. You said it doesn’t matter who believes it.",
+     "response": [
+      "“It doesn’t matter who believes it,” Jack says. “It’s true or it isn’t. A promise doesn’t get truer because I mean it, and it doesn’t get falser because she didn’t. You can’t get out of an argument by finding out who said it.”",
+      "Hale looks at him, approving and disappointed in the same breath. “Spoken like a Thomist,” he says, and Jack can’t tell which of the two of them it’s aimed at."
+     ],
+     "goto": "s05c"
+    },
+    {
+     "text": "“You drink alone in the Anchor’s back booth after midnight and say Housman to the window, Professor. That’s a promise kept after the reason died.”",
+     "tag": "Personal",
+     "set": {
+      "e22_oral_r3": "personal",
+      "e22_oral_personal": true,
+      "duel.oral.rigor": "+2",
+      "rel.hale.friction": "+2",
+      "rel.lena.friction": "+1"
+     },
+     "key": "At Hale’s oral you used the Anchor’s back booth on him. It won the point.",
+     "response": [
+      "“You drink alone in the Anchor’s back booth after midnight,” Jack says, “and say Housman to the window, Professor. I wash your glass. That’s a promise kept after the reason died.”",
+      "The room holds it. Hale doesn’t get up off the desk, and he doesn’t look away, and the sea in the window behind him goes on being much too bright. When he speaks it’s in the same mild voice as before, with something underneath the vowels that came up from a long way off.",
+      "“That was very nearly cruel, Mr. Costigan,” he says. “Go on.”",
+      "Lena turns from the window and looks at Jack. It’s the first time she has looked at him since two o’clock."
+     ],
+     "goto": "s05c"
+    },
+    {
+     "text": "“I picked it to win.”",
+     "tag": "Concede",
+     "set": {
+      "e22_oral_r3": "concede",
+      "soul.honesty": "+1",
+      "duel.oral.heart": "+1",
+      "rel.hale.trust": "+1"
+     },
+     "key": "At Hale’s oral he asked if you believe her argument. You told him you picked it to win — and then couldn’t find the hole in it.",
+     "response": [
+      "“I picked it to win,” Jack says. “It reads like a winner. I was told so at the time.”",
+      "“Yes,” says Hale, unsurprised. “And then?”",
+      "“And then I couldn’t find the hole in it either.”",
+      "At the window Lena’s thumb stops moving on the cap of her pen."
+     ],
+     "goto": "s05c"
+    },
+    {
+     "text": "“It’s her argument, Professor. I just work here.”",
+     "tag": "Riposte",
+     "set": {
+      "e22_oral_r3": "riposte",
+      "duel.oral.wit": "+1"
+     },
+     "key": "At Hale’s oral he asked if you believe her argument. You told him it’s hers — you just work there.",
+     "response": [
+      "“It’s her argument, Professor,” Jack says. “I just work here.”",
+      "At the window Lena puts her hand over her mouth and leaves it there. Hale regards the pair of them from the edge of his desk. “Everyone in this room works for her, Mr. Costigan,” he says. “Some of us have tenure.”"
+     ],
+     "goto": "s05c"
+    }
+   ]
+  },
+  "s05c": {
+   "slug": "WEDNESDAY · 2:47 PM · HOLLIS 314",
+   "duel": "oral",
+   "body": [
+    "The timer goes off on the blotter behind Hale: a tin rattle that goes on far longer than anything that size should be able to, while Berkeley, who can’t hear it, sleeps through every second. Hale reaches back and smothers it with his palm.",
+    "He sits there on the edge of the desk a while longer with his hand on the timer, and looks at Jack.",
+    {
+     "if": "e22_oral_personal",
+     "text": "“You won,” Hale says. “Don’t do it to anyone you love.”"
+    },
+    {
+     "if": "!e22_oral_personal && duel.oral.heart>=2",
+     "text": "“You defended it like a man defending a person,” Hale says. “That isn’t philosophy, Mr. Costigan. It may be better. I shan’t say so in writing.”"
+    },
+    {
+     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor>=2",
+     "text": "“That was an argument,” Hale says. “I’m told they still occur.”"
+    },
+    {
+     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor<2 && duel.oral.wit>=2",
+     "text": "“You defended her with jokes,” Hale says, “which is how the English defend everything. You’re from Ohio, so I’ll allow it.”"
+    },
+    {
+     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor<2 && duel.oral.wit<2",
+     "text": "“Adequate,” Hale says. “Which from me, in December, is a sonnet.”"
+    },
+    "He takes his hand off the timer. “You chose the one she didn’t believe,” he says, “and defended it as if she did. I told you I’d know.” He looks from Jack to the girl at the window and back. “I don’t yet know what I know. Marks post Monday.”",
+    "He turns to Lena. “And you, Miss Broussard, will kindly stop sending me Latin before breakfast. At my age it’s bad for the heart.”",
+    "“It was Augustine, Professor,” Lena says. “He’s good for the heart.”",
+    "“He was very bad for his mother’s.”",
+    "Lena gives him that one with a small bow of her head, and gets up, and starts buttoning the cardigan from the bottom.",
+    "The Pacific has gone from white to gold in the window while nobody was looking at it. Hale drops the timer into the top drawer of his desk, where it lands on something that clinks, and shuts the drawer with his knee. He gets up then, and takes a long dark overcoat off the hook beside the leash, and shrugs into it, and wakes his dog with the toe of one shoe. Berkeley unfolds himself off the carpet in sections. Hale clips the leash on by feel.",
+    "“Go home,” he says, to the both of them, “the pair of you.”",
+    "The Williams is in Jack’s back pocket today — *Moral Luck*, Cambridge, 1981, Hale’s pencil and now his own going at Bernard Williams down every margin, two hands thirty years apart. This morning he moved the Benedict holy card into it out of the *Big Sur*, for the occasion. He takes the card out now and puts it in his shirt pocket, and the Pope goes in over his heart with the corner sticking up."
+   ],
+   "choices": [
+    {
+     "text": "Give it back. Margins and all.",
+     "tag": "Candor",
+     "set": {
+      "e22_williams": "candor",
+      "rel.hale.trust": "+1"
+     },
+     "response": [
+      "He holds the Williams out across the desk, margins and all. Hale takes it and riffles it once with his thumb, the pages going by full of two kinds of pencil, and stops somewhere in the middle and reads whatever Jack wrote there, and snorts, and closes it on his finger.",
+      "“I’ll read them at Christmas,” he says, and puts it into the inside pocket of the overcoat. “I have nothing else to do.”"
+     ],
+     "goto": "s05d"
+    },
+    {
+     "text": "“Keep it till January? It’s a hostage.”",
+     "tag": "Wit",
+     "set": {
+      "e22_williams": "wit",
+      "rel.hale.warmth": "+1"
+     },
+     "response": [
+      "“Can I keep it till January?” Jack says. “It’s a hostage.”",
+      "Hale looks at the back pocket where it lives, and at the corner of the Pope sticking up out of the shirt pocket above it. “A man who keeps my books comes back for the next one,” he says. “Take it to Ohio. Argue with it in the snow. Bring it back with more in it.”"
+     ],
+     "goto": "s05d"
+    },
+    {
+     "text": "Leave it on his desk on the way out.",
+     "tag": "Restraint",
+     "set": {
+      "e22_williams": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "On the way to the door he sets the Williams down on the blotter beside the timer, square to the edge, with no speech attached.",
+      "Berkeley feels it land through the floor, and lifts his long gray head toward the desk at the end of his leash, and lowers it again. Hale looks at the book, and then at Jack in the doorway, and nods, once."
+     ],
+     "goto": "s05d"
+    }
+   ]
+  },
+  "s05d": {
+   "slug": "WEDNESDAY · 3:05 PM · HOLLIS HALL, THE STEPS",
+   "body": [
+    "Outside, the sun is low and cold and very bright on the steps, the kind of December sun in California that lights everything and warms nothing. Somebody’s bike lock is ringing against a rack in the wind. Lena is sitting on the top step with her bag in her lap and the cardigan buttoned to the neck, and when he comes out she moves her bag to make room.",
+    {
+     "if": "!e22_oral_personal",
+     "text": "“We were good,” she says."
+    },
+    {
+     "if": "!e22_oral_personal",
+     "text": "“We were *very* good.”"
+    },
+    {
+     "if": "!e22_oral_personal",
+     "text": "She takes that with a tilt of her head, and the tilt turns into something else, short of a smile, before she puts it away."
+    },
+    {
+     "if": "e22_oral_personal",
+     "text": "“We were good,” she says."
+    },
+    {
+     "if": "e22_oral_personal",
+     "text": "“You were.”"
+    },
+    {
+     "if": "e22_oral_personal",
+     "text": "She looks at him sideways. “The booth,” she says. “I didn’t know you could do that.”"
+    },
+    {
+     "if": "e22_oral_personal",
+     "text": "“Neither did he.”"
+    },
+    {
+     "if": "e22_oral_personal",
+     "text": "She looks out over the Commons, into the wind, and gives him nothing else for it."
+    },
+    "She stands, and gets her bag up onto her shoulder. “I’m going to Julian’s. It’s his last night — he drives to Oakland in the morning. I said I’d make him dinner.” No apology in it and no explanation either; she promised, so she’s going.",
+    "She goes down two steps and stops there, with the cold sun on half her face.",
+    "“Laney booked my shuttle,” she says. “Quarter to five Saturday morning. To the airport. She says I’m on yours.”",
+    "“Theo booked mine.”",
+    "Lena looks up at him from two steps down. He looks back. A gull goes over toward the lagoon, shouting at the wind. Whatever the word is for Laney Price and Theo Vance booking the same van at quarter to five in the morning without telling either of them, it doesn’t get said on the steps of Hollis Hall.",
+    "“Quarter to five,” Lena says, and goes on down the rest of them."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "if": "!e22_oral_personal",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said."
+    },
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "if": "e22_oral_personal",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. I used the back booth on him and won. He said don’t do it to anyone you love."
+    }
+   ],
+   "next": "s06"
+  }
+ }
+}

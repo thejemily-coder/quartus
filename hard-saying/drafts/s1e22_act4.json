@@ -1,0 +1,208 @@
+{
+ "scenes": {
+  "s06": {
+   "slug": "WEDNESDAY · 8:00 PM · ST. BRENDAN’S, THE SIDE AISLE",
+   "body": [
+    "By eight the blue panes of St. Brendan’s have gone black, every one of them, and the church is down to two lights: the sanctuary lamp up front in its red glass, steady, and one bulb over the side aisle that somebody has left on for the line. The line is three folding chairs outside the coat closet, KNOCK (GENTLY) on its index card, and one man ahead of him, a stranger with a backpack between his boots, older than a student, elbows on his knees, reading the floor.",
+    "In the back pew Gus is asleep sitting up in the ship’s-wheel sweater, a hymnal face-down on his chest and the church’s ring of keys in his fist, waiting to lock up. Through the closet door Father Osei’s voice comes and goes with somebody else’s, a murmur with no words in it.",
+    "Through the glass in the side door, past the olive tree and the dead sprinkler, one window of Newman House is lit. The office. The priest it belongs to is on the other side of the closet door, and the lamp is on anyway.",
+    "Jack’s knee is going under the folding chair. At ten to one the Saab will be idling somewhere in the dark with the top down; he hasn’t thought it once since Hollis, and his knee has thought it all evening. The man with the backpack looks at the knee. Jack stops it.",
+    "The closet door opens on a girl in a Marisol hoodie with her eyes on her shoes, and the stranger knocks and is let in. He’s in there nine minutes by the RAZR’s outer screen. When he comes out he shoulders the backpack and goes out the side door into the courtyard, under the lit window, and the closet door stands open on the kneeler."
+   ],
+   "choices": [
+    {
+     "text": "Go in.",
+     "tag": "Grace",
+     "set": {
+      "e22_conf": "grace",
+      "soul.grace": "+1"
+     },
+     "key": "Wednesday at eight you went into the box.",
+     "goto": "s06a"
+    },
+    {
+     "text": "Walk past the light.",
+     "tag": "Drift",
+     "set": {
+      "e22_conf": "drift",
+      "soul.grace": "-1",
+      "resolve.jack": "-1"
+     },
+     "key": "Wednesday at eight you walked past the light.",
+     "response": [
+      "He goes out the side door the way the stranger did, across the courtyard under the lit window and down to Ocean Road, and when he looks back from the crosswalk the light is still on, and it’s on when he looks back from the Delgado steps."
+     ],
+     "goto": "s07"
+    }
+   ]
+  },
+  "s06a": {
+   "slug": "WEDNESDAY · 8:10 PM · ST. BRENDAN’S, THE CONFESSIONAL",
+   "set": {
+    "resolve.jack": "+2",
+    "rel.osei.trust": "+1",
+    "confessed_skye_3": true
+   },
+   "body": [
+    "He knocks, and steps in, and pulls the door to behind him.",
+    "The kneeler on this side; the linen screen on its wooden frame, with the violet of a stole showing through; the old coat hooks along the back wall; the Prodigal Son thumbtacked inside the door at the height of a kneeling man’s eyes. On the far side the folding chair gives a little under the priest, and the bad leg goes where it goes.",
+    "“Bless me, Father, for I have sinned.”",
+    {
+     "if": "confessed_skye_2",
+     "text": "“It’s been four days since my last confession.”"
+    },
+    {
+     "if": "!confessed_skye_2",
+     "text": "“It’s been eleven days since my last confession.”"
+    },
+    "He has the week as a list. The list holds for about a sentence.",
+    {
+     "if": "confessed_skye_2",
+     "text": "“Saturday night she came to where I work. And after, on the wharf —” He doesn’t finish it. The rest is the sentence Osei heard on Saturday afternoon, only later, and colder."
+    },
+    {
+     "if": "confessed_skye_2 && e21_pic==\"candor\"",
+     "text": "“Another picture. I opened it, and I answered it.”"
+    },
+    {
+     "if": "confessed_skye_2 && e21_pic==\"control\"",
+     "text": "“A picture I looked at before I erased it.”"
+    },
+    {
+     "if": "confessed_skye_2 && slept_delplaya",
+     "text": "“I slept at her house. Just slept. I knew I shouldn’t be there.”"
+    },
+    {
+     "if": "confessed_skye_2 && e21_pie==\"lie\"",
+     "text": "“I lied to a friend about where I was.”"
+    },
+    {
+     "if": "!confessed_skye_2",
+     "text": "“Last Thursday I went to her house. I knew what I was going there for, and I said no, and it stopped. Friday she asked again. She argued it, and she was good, and I said no again, and she stopped.” He goes on to the end of it. “There. Only there.”"
+    },
+    {
+     "if": "!confessed_skye_2 && e21_edge==\"reckless\"",
+     "text": "“And Friday I didn’t hold any of the rest back.”"
+    },
+    {
+     "if": "!confessed_skye_2 && e21_ride==\"lie\" || !confessed_skye_2 && e21_early==\"lie\" || !confessed_skye_2 && e21_warzone==\"lie\" || !confessed_skye_2 && e21_hands==\"lie\" || !confessed_skye_2 && e21_pie==\"lie\"",
+     "text": "“I keep lying about where I go.”"
+    },
+    {
+     "if": "!confessed_skye_2",
+     "text": "“And the rest. Everything since the fifth.” The priest takes it as it’s given."
+    },
+    "“And last night.” This is the one he walked over carrying. “In her car. It went further than it’s gone.”",
+    {
+     "if": "e22_tue_late",
+     "text": "“I said no late. Later than I should have.”"
+    },
+    {
+     "if": "firm_purpose_letter",
+     "text": "“I said it before I got in the car,” Jack says. “Like you told me.”"
+    },
+    {
+     "if": "firm_purpose_letter",
+     "text": "“And?”"
+    },
+    {
+     "if": "firm_purpose_letter",
+     "text": "“It held.”"
+    },
+    {
+     "if": "firm_purpose_letter",
+     "text": "“Then you know it can.”"
+    },
+    "For a while there’s only the church on the other side of the door: Gus’s pew creaking once, the furnace coming on somewhere under the floor.",
+    "“Last night,” Osei says. “Who chose the hour?”",
+    "“She did.”",
+    "“And the place?”",
+    "“She did.”",
+    "“And who walked down to the car?”",
+    "On the back of the door the Prodigal Son is down among the pigs, at eye level.",
+    "“I did.” And because it’s the truth, the rest of it: “She asks every night. She told me it’s on her call sheet.”",
+    "“Then she keeps a schedule,” Osei says. “And you keep the appointment.” “You are not avoiding the occasion, my friend. You are scheduling it.”",
+    "“It’s held,” Jack says. “Every time. The line’s held.”",
+    "“I know. I thank God for it.” A pause. “It is not the line I worry about. It is the man who stands on it every night of the week, who is getting very tired, and who keeps signing up for the late shift.”",
+    {
+     "if": "confessed_skye_2",
+     "text": "“I am not taking back Saturday,” Osei says, gentler. “Every word of it is still true. What is in it is good, and you want her good. I believed you then. I believe you now.”"
+    },
+    {
+     "if": "!confessed_skye_2",
+     "text": "“Saint Thomas says that to love is to will the good of the other,” Osei says, gentler. “I meant to tell you so on Saturday, at the wall, before the valve beat the two of us. You have not told me you love her. You have told me enough.”"
+    },
+    "“So will it. If you will her good, stop meeting her at the edge of what you can’t give her. Every night you walk out to that edge together, and every night you ask her to stand there with you and hear no. In Kumasi a man came to me with the same burn on his hand four nights running. The fourth night I stopped dressing it, and asked him where he kept the stove.”",
+    "“When do you go home?”",
+    "“Saturday.”",
+    "“Three weeks, then, and two thousand miles. Distance is not a virtue. But it is a mercy. Use it.” And, with what sounds like a smile behind the linen: “Let a different priest hear you at Christmas. It will be good for both of us.”"
+   ],
+   "choices": [
+    {
+     "text": "“I’ll go Christmas Eve. At home.”",
+     "tag": "Grace",
+     "set": {
+      "e22_vow": "grace",
+      "xmas_confession_planned": true,
+      "soul.grace": "+1",
+      "confession_owed": 0
+     },
+     "response": [
+      "“I’ll go Christmas Eve,” Jack says. “At home.”",
+      "“Good. Tell him a priest in California says he is very lucky to have you in his line,” Osei says, “and very sorry.”",
+      "“For your penance,” Osei says, “a decade of the Joyful Mysteries. Whichever one you need. It’s the season.”",
+      "Jack says the Act of Contrition straight through. Near the end of it, on the far side of the screen, the bad leg shifts on the chair and settles.",
+      "Through the linen the shadow of the priest’s hand comes up.",
+      "“God, the Father of mercies, through the death and resurrection of his Son has reconciled the world to himself and sent the Holy Spirit among us for the forgiveness of sins; through the ministry of the Church may God give you pardon and peace, and I absolve you from your sins in the name of the Father, and of the Son, and of the Holy Spirit.”",
+      "“Amen.”",
+      "“The Lord has freed you from your sins. Go in peace.”",
+      "In the back pew Gus hasn’t moved. Past the side door the courtyard is black, and the Grove across Ocean Road is blacker, the eucalyptus heaving over the road in the wind. It’s twenty past eight. On the steps Jack takes the fifth mystery, the boy missing three days and found in the Temple, and starts it on his knuckles. Four and a half hours till the Saab."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“I don’t know what I’m going to do in January.”",
+     "tag": "Candor",
+     "set": {
+      "e22_vow": "candor",
+      "soul.honesty": "+1",
+      "confession_owed": 0
+     },
+     "response": [
+      "“I don’t know what I’m going to do in January,” Jack says.",
+      "“Nobody does,” Osei says. “That is why God invented February.”",
+      "“For your penance,” Osei says, “a decade of the Joyful Mysteries. Whichever one you need. It’s the season.”",
+      "Jack says the Act of Contrition straight through. Near the end of it, on the far side of the screen, the bad leg shifts on the chair and settles.",
+      "Through the linen the shadow of the priest’s hand comes up.",
+      "“God, the Father of mercies, through the death and resurrection of his Son has reconciled the world to himself and sent the Holy Spirit among us for the forgiveness of sins; through the ministry of the Church may God give you pardon and peace, and I absolve you from your sins in the name of the Father, and of the Son, and of the Holy Spirit.”",
+      "“Amen.”",
+      "“The Lord has freed you from your sins. Go in peace.”",
+      "In the back pew Gus hasn’t moved. Past the side door the courtyard is black, and the Grove across Ocean Road is blacker, the eucalyptus heaving over the road in the wind. It’s twenty past eight. On the steps Jack takes the fifth mystery, the boy missing three days and found in the Temple, and starts it on his knuckles. Four and a half hours till the Saab."
+     ],
+     "goto": "s07"
+    },
+    {
+     "text": "“Pray for her. And for me.”",
+     "tag": "Sincerity",
+     "set": {
+      "e22_vow": "sincerity",
+      "trait.sincerity": "+1",
+      "confession_owed": 0
+     },
+     "response": [
+      "“Pray for her,” Jack says. “And for me.”",
+      "“I do. Both,” Osei says. “You by your name. Her by the one you have never given me. God has it.”",
+      "“For your penance,” Osei says, “a decade of the Joyful Mysteries. Whichever one you need. It’s the season.”",
+      "Jack says the Act of Contrition straight through. Near the end of it, on the far side of the screen, the bad leg shifts on the chair and settles.",
+      "Through the linen the shadow of the priest’s hand comes up.",
+      "“God, the Father of mercies, through the death and resurrection of his Son has reconciled the world to himself and sent the Holy Spirit among us for the forgiveness of sins; through the ministry of the Church may God give you pardon and peace, and I absolve you from your sins in the name of the Father, and of the Son, and of the Holy Spirit.”",
+      "“Amen.”",
+      "“The Lord has freed you from your sins. Go in peace.”",
+      "In the back pew Gus hasn’t moved. Past the side door the courtyard is black, and the Grove across Ocean Road is blacker, the eucalyptus heaving over the road in the wind. It’s twenty past eight. On the steps Jack takes the fifth mystery, the boy missing three days and found in the Temple, and starts it on his knuckles. Four and a half hours till the Saab."
+     ],
+     "goto": "s07"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,344 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "MONDAY · 12:58 AM · THE LAGOON LAWN, BELOW DELGADO",
+   "set": {
+    "resolve.jack": "-1",
+    "resolve.lena": 6
+   },
+   "body": [
+    "The phone is warm against his ear. The grass has soaked through the seat of his jeans and the shoulders of the Carhartt and gone on soaking, and the voice in his ear is coming up two hours of the 101 from a balcony in Studio City, kept low so it won’t wake her mother.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Geminids peak at 2. The roof door says alarm will sound. It won’t. Margot’s counting. Bring a coat. —L.",
+     "time": "11:48 PM"
+    },
+    "He hasn’t answered it. At 12:41 the RAZR went off in his hand in 412, and Skye said, “Are there meteors up there? LA has four stars and they’re all helicopters.” The east stairwell has a window. The lawn has the sky. He took the lawn.",
+    "Since then he has been flat on his back below Delgado, reporting. The sky over the Lagoon is black clear to the hills, no moon anywhere in it, and every minute or so something lets go of it and draws a line and is gone. He tells her each one. She casts it.",
+    "“Long one. Left to right, over the eucalyptus.”",
+    "“Lead,” Skye says. “Give it a trailer.”",
+    "“Short one. Barely.”",
+    "“Day player. One line. *Sir, your car is ready.* Gone.”",
+    "In return she gives him her four, the only lights over Studio City that move, each with a grudge. “That one’s the news. He hovers over the 405 because his wife left him for a traffic reporter. That one’s the police, and he thinks he’s the lead. That one’s a sightseeing tour that took off in 1994 and nobody’s had the heart to land him.” The balcony rail creaks under her. “I don’t know the fourth one. He’s new. He’s got something to prove.”",
+    "She wants to know why there are so many tonight. He tells her: the Geminids, the same few nights every December.",
+    "“Same night every year?”",
+    "“Every year.”",
+    "“Then it isn’t a miracle,” Skye says. “It’s a *schedule*. You know how I feel about schedules.”",
+    "He does. He lies there with it while a short one goes over, and finds what he wants to say. “The earth drives through what a comet left behind,” he says. “Every December. Same place in the road, on time. It doesn’t have to be a miracle.” A long one goes east to west the length of the Lagoon, and he waits it out. “You still lie down in the cold for it.”",
+    "She makes a small sound down the line, put out and pleased at once. “I hate that,” she says. “Point to you. Don’t let it go to your head. It’s a very small point.” The rail creaks again. “Are you lying down?”",
+    "“I’m on a lawn.”",
+    "“Lie *down*. Flat. I want to hear you lying down.”",
+    "He puts his head back on the wet grass and the cold goes through his hair to the scalp, and down the line her breathing changes, listening to him do it — a girl two hours south with all her attention on the sound of him on a lawn — and lying in the cold under all of it with that in his ear is a very good place to be.",
+    "Out on the Lagoon something objects in the dark, three times, offended. “What was that?” — “Ducks.” — “Do them.” He does a duck. “That’s a goose with a head cold,” Skye says, and does one back, and hers is better than his, and better than the ducks’. Out on the black water one of them answers her, furious.",
+    "Somewhere in the middle of the meteors he tells her about Wednesday: twenty minutes defending somebody else’s argument, in front of the man who assigned it.",
+    {
+     "if": "e21_sunday==\"breakfast\"",
+     "text": "“Your Wednesday,” she says. “The promise one.” “That one.” “Bring it Tuesday. I’ll run lines.”"
+    },
+    {
+     "if": "e21_sunday!=\"breakfast\"",
+     "text": "“Whose argument?” “Somebody in the seminar.” “Bring it Tuesday,” she says. “I’ll run lines.”"
+    },
+    "Above him, the roof. He hears it before he sees it, carried out over the lawn by the cold from five floors up: Margot, flat and final, “Thirty-*one*.” Laney shrieks at something. Kevin laughs his laugh. Theo, aggrieved: “That one was mine. I *ordered* that one.” And a voice he would know through a wall — “Margot, that one broke, that’s two, it counts as two” — and along the parapet, against the stars, a row of dark shapes. All but one of them turn back to the sky. One stays at the edge, over the lawn.",
+    "At 1:10 a tone cuts into his ear, two notes, and Skye goes on talking under it. He takes the phone away from his head and tilts the screen to his face.",
+    "LENA.",
+    "“Is that somebody?” Skye says.",
+    "The tone comes again. Up on the parapet, the shape that stayed has something small and lit held at the side of its head."
+   ],
+   "choices": [
+    {
+     "text": "Let it ring out.",
+     "tag": "Restraint",
+     "set": {
+      "e22_waiting": "restraint",
+      "trait.control": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "key": "On the night of the Geminids Lena called from the roof while you were on the lawn with Skye on the phone. You let it ring out.",
+     "response": [
+      "He puts the phone back to his ear and lets the tone come twice more, and quit. Up on the parapet the small lit square at the side of her head goes dark. The shape doesn’t move from the edge for a while. When he looks again it’s back among the others.",
+      "In his ear, about the next one over the Lagoon, Skye says, “Day player,” and that’s all she says about it.",
+      "Near the end she yawns down the line and doesn’t bother hiding it. “Go to bed, Ohio,” Skye says. “Count one for me.” She hangs up first. The lawn is cold at once, through the Carhartt, through everything."
+     ],
+     "goto": "s01a"
+    },
+    {
+     "text": "Look up. Lift a hand to the roof, phone still at your ear.",
+     "tag": "Hand",
+     "set": {
+      "e22_waiting": "hand",
+      "lena_saw_lawn": true,
+      "rel.lena.warmth": "+1"
+     },
+     "cue": "Lena saw that.",
+     "key": "On the night of the Geminids Lena called from the roof while you were on the lawn with Skye on the phone. You looked up and lifted a hand.",
+     "response": [
+      "He lifts his free hand off the wet grass, up into the dark, the phone still at his ear. On the parapet the little lit square comes down from the side of her head. Her arm comes up and holds there. She can see him. She can see he’s on the phone.",
+      "A second shape comes to the edge beside hers, tall, one hand in a pocket, and stands looking down at the lawn with her until the tone in Jack’s ear gives up.",
+      "Near the end she yawns down the line and doesn’t bother hiding it. “Go to bed, Ohio,” Skye says. “Count one for me.” She hangs up first. The lawn is cold at once, through the Carhartt, through everything."
+     ],
+     "goto": "s01a"
+    },
+    {
+     "text": "After, text her: *cant. finals*",
+     "tag": "Lie",
+     "set": {
+      "e22_waiting": "lie",
+      "soul.honesty": "-1"
+     },
+     "key": "On the night of the Geminids Lena called from the roof while you were on the lawn with Skye on the phone. After, you texted her: can’t, finals.",
+     "response": [
+      "He lets the tone run out against his ear and keeps talking to Skye about a long one over the hills.",
+      "Near the end she yawns down the line and doesn’t bother hiding it. “Go to bed, Ohio,” Skye says. “Count one for me.” She hangs up first. The lawn is cold at once, through the Carhartt, through everything.",
+      "At 1:14, still flat on the grass, he does it with his thumb.",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "cant. finals",
+       "time": "1:14 AM"
+      },
+      {
+       "type": "sms",
+       "from": "Lena",
+       "text": "It’s a meteor shower, Jack, not a keg. —L.",
+       "time": "1:22 AM"
+      },
+      "Up on the parapet nobody is standing at the edge anymore."
+     ],
+     "goto": "s01a"
+    }
+   ]
+  },
+  "s01a": {
+   "slug": "MONDAY · 1:50 AM · DELGADO HALL, THE ROOF",
+   "body": [
+    "At ten to two he goes up anyway. The half-flight at the east end of five; the beige door, EMERGENCY EXIT ONLY · ALARM WILL SOUND, and under it in brown Sharpie *(it won’t)*; the popsicle stick still wedged in the strike plate. It doesn’t sound. Outside there’s the gravel, and the two HVAC boxes humming to themselves, and the parapet, and nobody.",
+    "The PHIL 1 final is at eight in the morning; they’ve gone down to bed. The blanket out of Kevin’s Odyssey is folded square on top of the elevator housing, and on it, under a pebble somebody picked out for the job, is an index card in Margot’s capitals.",
+    {
+     "type": "doc",
+     "title": "An index card, under a pebble",
+     "text": "GEMINIDS: 44.\nCOSTIGAN: 0."
+    },
+    "He lies down on the gravel where the blanket must have been. The stones still keep one or two warm places, about the size of people. He lies with the RAZR on his chest while the cold of the roof comes up through the Carhartt into his shoulder blades. It’s the same sky as the lawn’s, with less in the way. He waits. One comes — a long one, low over the hills behind the Grove, slow enough that he has time to sit up for it — and burns down almost to the ridge, and there’s no one up here to say it to.",
+    "The phone on his chest says 1:58. Then it says 2:00, the peak, and the sky goes on being very dark and very clear, and nothing else comes."
+   ],
+   "next": "s02"
+  },
+  "s03": {
+   "slug": "TUESDAY · 11:50 PM · THE SAAB, THE MARINE LAB TURNOUT",
+   "set": {
+    "skye_did_hale": true
+   },
+   "body": [
+    "The top is up. The canvas over them is beaded on the outside with a cold that never quite became rain, and the Saab’s heater runs on the floor like a hair dryer in another room, so that everything below the knee is July and everything above it is December. The dome light is on. His index cards are in her lap.",
+    {
+     "if": "firm_purpose_letter",
+     "text": "He said it at the chain, before he had the door all the way open: “Tuesday. No.” “You can’t answer before the question,” Skye said. “It’s in my contract.”"
+    },
+    "She came up from LA after a fitting — “Ten pins in a skirt I’m not allowed to sit down in. Cassidy goes to Switzerland in January. Wardrobe wants her to look like she’s never been warm in her life, and I’m a tan with a problem” — and Del Playa is full again. “Tomás is back from Baja. He brought Baja with him. There are two guys from Ensenada in sleeping bags in the hall.” She counts it on the steering wheel. “Four surfers and a darkroom. It’s a fraternity with chemicals.” So it’s the car, at the Marine Lab turnout, short of the chain, with the bluff black on one side of them and the sea working at the bottom of it. She’s in the gray knit cap and somebody’s flannel with the cuffs rolled four times, and she has her bare feet up on the dash in the heater’s draft, in December, the braided anklet slid down to the bone. Her shoes are somewhere in the back with the boards she didn’t bring.",
+    {
+     "if": "slept_delplaya",
+     "text": "“The sleeping way’s closed for the season,” she adds. “There’s a man from Ensenada asleep across my door.”"
+    },
+    "She wants Hale first. He gives her Hale in pieces: English, fifties, a coal town somewhere underneath the Oxford that comes up through the vowels when he’s angry; silver hair worn too long; a linen jacket with wine on the cuff; reading glasses he loses on top of his own head; a deaf old greyhound called Bishop Berkeley that he talks to like a colleague; a habit of writing to believers on postcards. Five sentences, maybe six.",
+    "Skye listens with her eyes on the fogging windshield, and somewhere around the greyhound her chin begins to go up. Her shoulders go back against the seat. By the postcards she has one of his cards held away from her between finger and thumb, like something a student left on her desk, and she’s looking at him down her nose over the top of reading glasses she doesn’t have.",
+    "“Mister Costigan,” she says.",
+    "It isn’t Hale’s voice. She has never heard Hale’s voice. It’s the voice Jack just described, with the long-suffering chin attached and something under the vowels shoveling coal, and it frightens him a little how much of the man got across the gearshift in six sentences.",
+    "She reads the card aloud. “*A promise is made to a person, not to a reason.*” She lets it droop. “How very moving. I have a greyhound who has heard more convincing things than this, Mister Costigan, and he is *deaf*.” She taps the card on the wheel, once, and comes at the sentence with what she always brings to a fight — people. “And if the person goes away?”",
+    {
+     "if": "e21_sunday==\"breakfast\"",
+     "text": "For half a breath she’s out of the chin. “You owe me that one since the Starlite,” she says, and puts it back on."
+    },
+    {
+     "if": "e21_sunday!=\"breakfast\"",
+     "text": "He doesn’t have it. She can see he doesn’t. She waits in Hale’s face with the chin up, as long as it takes."
+    },
+    "So he goes looking for it, in her car, and it’s at home. Every Sunday his grandmother lights a candle for his grandfather after Mass, and stands there till it catches.",
+    "“The person doesn’t go away,” he says. “Not the way you mean. My grandmother lights a candle for my grandfather every Sunday. He can’t hold her to anything. He can’t see her do it. She does it anyway, because she didn’t promise a reason. She promised him. He’s still somebody.”",
+    "Hale looks at him over the top of nothing. “Again. You sound like a Hallmark card. Again.”",
+    "He says it again, shorter.",
+    "“Better. Wrong, but better.” Hale settles deeper into the driver’s seat, the cuff with the wine on it lifted off the wheel. “Your grandmother, Mister Costigan, is a widow in a cold church. She isn’t keeping a promise. She’s keeping *company*. The candle is a habit, and the habit is lonely, and you have mistaken loneliness for fidelity, which is the most Catholic thing I have ever heard.”",
+    "“Then she’d light it when she’s lonely,” Jack says. “She lights it Sundays. She lights it when she’s happy. She lit it the Sunday my sister was born. It goes on whether she feels like it or not.” He hears where that’s going, and goes there anyway. “It’s on a schedule.”",
+    "Out of the chin entirely, with a finger up at him: “Don’t you *dare* use my schedule against me.” She puts the chin back. “Again.”",
+    "He gives it to her again.",
+    "“Again. The bishop has nodded off.”",
+    "The third time he doesn’t reach for it. It’s there, in his own words, and it’s his, and Hale gives him one short nod, from a great height.",
+    {
+     "if": "e21_sunday!=\"breakfast\"",
+     "text": "“Who wrote this?” Skye says, herself again, turning the card over to see whether the name is on the back. “Somebody in the seminar. Hale paired us.”"
+    },
+    {
+     "if": "e21_sunday==\"breakfast\"",
+     "text": "“Your somebody in the seminar,” Skye says, herself again, turning the card over to see whether the name is on the back, “writes a good sentence.” “Hale paired us.”"
+    },
+    "She gathers the stack off her knee and squares it there, edge by edge, tapping the short sides even, then the long ones.",
+    "“You’re not defending the argument,” she says. “You’re defending whoever made it.”",
+    "She taps the stack even once more, and holds it out, and he takes it."
+   ],
+   "choices": [
+    {
+     "text": "“It’s the best thing anybody said all semester. I want to do it right.”",
+     "tag": "Candor",
+     "set": {
+      "e22_prep": "candor",
+      "trait.candor": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "“Then do it right,” Skye says, and the chin goes back up, and the glasses that aren’t there go back on. “From the top. I’m British.”"
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“Do the greyhound.”",
+     "tag": "Wit",
+     "set": {
+      "e22_prep": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "She does the deaf greyhound. She lies down across both seats with tremendous dignity, her head on his thigh and her knees against the driver’s door, and lifts one hand beside her head for an ear, cocked toward a sound it cannot hear, and holds it there, mournful, patient, faintly betrayed, until he has to put his forehead on the dashboard. It is the funniest thing he has seen all week, and it goes on longer than it should, and she knows it, and keeps going."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "text": "“Do Hale again. Harder.”",
+     "tag": "Restraint",
+     "set": {
+      "e22_prep": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "She does. For ten minutes she comes at him with the chin and the cuff and the coal under the Oxford, and finds four new ways into the sentence, and he holds every one. At the end of it she takes the chin down and looks at him across the gearshift.",
+      "“You’re going to be fine,” she says. “You’re going to be better than fine, and you’re going to hate it.”"
+     ],
+     "goto": "s03a"
+    }
+   ]
+  },
+  "s03a": {
+   "slug": "WEDNESDAY · 12:40 AM · THE SAAB, THE MARINE LAB TURNOUT",
+   "set": {
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "Some time after midnight the cards end up on the dash, and a little after that they slide off it.",
+    "She comes across the gearshift into his lap. The glass is cold against the back of his head and the heater is going at their ankles, and on the way over her hip finds the steering wheel and the horn lets out half a bleat into the dark. She laughs with her mouth in his hair and doesn’t get off him to see whether the Marine Lab heard.",
+    "She kisses him the way she argues, quick and then slow, a peppermint from the cupholder still in her mouth. His hands find the hem of her sweater and the warm small of her back under it, and she sits back on his knees long enough to pull the sweater over her head and drop it on the floor with the cards, and comes back down to him in a black bra and the gooseflesh the cold puts on her arms. “The Swedes built this car for exactly this,” she says into his mouth. “They have very long winters.” And it climbs. Her hands in his hair. His mouth on the freckles at her shoulder, the salt there. The windshield is starting to go white at the edges. She’s breathing through her nose against his cheek, fast, and she is laughing a little too, at the car, at the state of the two of them in it. He has Hale’s office at two this afternoon and a priest’s light he could walk past at eight tonight, and neither of them is in this car. She is. Her weight, the heat of her bare stomach through his shirt, her knees tight on either side of his hips, the cold glass at his back the only part of him still in December.",
+    "At the height of it her hand goes down his chest to his belt and settles on the buckle, sure of where it is, and stops there.",
+    "The clock on the dash says 12:40 in green. It’s Wednesday. By her it’s Tuesday until she goes to sleep.",
+    "“Tuesday,” Skye says against his mouth. “Asking.”"
+   ],
+   "choices": [
+    {
+     "text": "Take her wrist — not the buckle this time — and hold it. “No.”",
+     "tag": "Control",
+     "set": {
+      "e22_tue": "control",
+      "trait.control": "+1",
+      "soul.restraint": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "Tuesday, in the Saab at the turnout, she asked. You took her wrist and said no.",
+     "response": [
+      "He takes her wrist — not the buckle, the wrist — and holds it. “No.”",
+      "She looks down at her wrist in his hand, and then at him, interested, like somebody who has just been shown a new move and wants to see it again."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "“You’re winning. It’s still no.”",
+     "tag": "Sincerity",
+     "set": {
+      "e22_tue": "sincerity",
+      "trait.sincerity": "+1",
+      "soul.restraint": "+1",
+      "rel.skye.heat": "+1"
+     },
+     "key": "Tuesday, in the Saab at the turnout, she asked. You told her she was winning, and it was still no.",
+     "response": [
+      "“You’re winning,” he says. “It’s still no.”",
+      "“I know I’m winning,” Skye says. “I wanted to hear you say it.”"
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "“This car has no future. Neither does that question.”",
+     "tag": "Wit",
+     "set": {
+      "e22_tue": "wit",
+      "trait.wit": "+1",
+      "soul.restraint": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "Tuesday, in the Saab at the turnout, she asked. You told her the car has no future and neither does the question.",
+     "response": [
+      "“This car has no future,” he says. “Neither does that question.”",
+      "She laughs into his collar. “Too soon,” she says. “It’s still alive.”"
+     ],
+     "goto": "s03b"
+    },
+    {
+     "text": "Let her get as far as the zipper. Then no.",
+     "tag": "Reckless",
+     "set": {
+      "e22_tue": "reckless",
+      "e22_tue_late": true,
+      "trait.reckless": "+1",
+      "soul.restraint": "-1",
+      "resolve.jack": "-1",
+      "rel.skye.heat": "+1"
+     },
+     "key": "Tuesday, in the Saab at the turnout, she asked. You let her get as far as the zipper. Then you said no.",
+     "response": [
+      "He lets her. The buckle, the button, the first of the zipper under her fingers — he knows to the inch how near that is, and the no, when it comes, comes up from somewhere a long way down and takes all the air he has to say it.",
+      "“No.”"
+     ],
+     "goto": "s03b"
+    }
+   ]
+  },
+  "s03b": {
+   "slug": "WEDNESDAY · 12:45 AM · THE SAAB, THE MARINE LAB TURNOUT → OCEAN ROAD",
+   "set": {
+    "rel.skye.heat": "+1",
+    "resolve.jack": "-1",
+    "confession_owed": "+1"
+   },
+   "body": [
+    "She doesn’t argue it. She sits back on his knees in the dome light and looks at him, and then down at the top of his jeans, and her mouth goes slowly sideways.",
+    "“You said no to *that*,” Skye says. She runs one finger along his waistband from one hip to the other, reading it like a clause she has found a way through. “You didn’t say no to denim.”",
+    "Getting his jeans off him in the passenger seat of a 1991 Saab takes both of them and most of a minute. A boot has to go first and won’t. His knee finds the glove box; her elbow finds the horn again, and he reaches up and kills the dome light with his own elbow so the Marine Lab can at least not *see* it, and she is laughing so hard she has to stop and put her forehead on his shoulder. The jeans end up on the dash on top of the cards, one leg hanging down over the radio.",
+    "And then it isn’t funny. Her own jeans go faster than his, and the black bra after them, and his undershirt over his head, until there’s nothing on either of them but cotton — his shorts, the white cotton on her hips, the braided anklet cold against his calf — and the windows have gone blind white, and the car is a small warm room with them in it and the dark pressing on the glass. For the first time that’s all there is. The no holds there, at the last of it. He holds it there.",
+    "She keeps to it. She keeps to every word. Everything the no didn’t cover she takes, slowly and then not slowly: her mouth on his throat, his jaw, the scar through his eyebrow; her hands everywhere the letter lets them go, which on her reading turns out to be very nearly everywhere; the warm weight of her settling and shifting in his lap. His hands on the long bare line of her back, the dip at the bottom of it, her ribs going in and out under his palms. She’s not in any hurry. She has all of the letter to work with, and she reads it out to the margins.",
+    "Wanting her has stopped being a thing he thinks. It’s pressure — behind the ribs, in the hands, at the hinge of the jaw — like the water at the bottom of a deep dive off the dam at Lake Milton, where the farther down you go the harder it leans on you; and there’s no farther down than this, and he keeps going down.",
+    "Once a light comes across the fogged glass, white and slow, sweeping right to left, and every bead of water on the inside of the windshield lights up at the same time. A Marine Lab security truck, idling up the service road past the chain, and on, and gone. She laughs with her mouth on his shoulder and doesn’t stop anything, and the laugh goes all through her and into him.",
+    "Once, at the top of it, she lifts her head and looks at him in the white dark, and the question is all over her face. She doesn’t say it. She said it already; it’s Tuesday’s, and it’s spent. He shakes his head. She smiles at him like he’s paid her something, and comes back down.",
+    {
+     "if": "e22_tue_late",
+     "text": "He knows how near the zipper came. So does she. She never brings it up, and every time her hand goes past his hip he can tell she hasn’t forgotten."
+    },
+    "Some part of him is already counting what this will sound like said through a screen, and loses count.",
+    "Some time after half past one she props her chin on his bare chest and looks at him through her hair.",
+    "“That’s twice now,” Skye says. “Twice you’ve said no to me at this car.” She taps his breastbone once for each. “I’m keeping score.” And she puts her mouth back on his, warm, in no hurry, with the windows white and nowhere in the world either of them has to be.",
+    "At a quarter past two he walks up from the chain in the dark with his undershirt on backward and the cards in his jacket and the surf loud below the bluff. At the corner of Ocean Road the RAZR comes back on, finds its bar, and shudders twice in his hand.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Brick 8. Kevin’s asleep on his orgo. Practice? I’ll be Hale. —L.",
+     "time": "12:52 AM"
+    },
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Never mind. Goodnight. —L.",
+     "time": "1:40 AM"
+    },
+    "He reads them once, standing on the corner, and shuts the phone. Across the Commons the Brick is dark from the ground up, all but the eighth floor, which is lit from end to end."
+   ],
+   "next": "s04"
+  }
+ }
+}
