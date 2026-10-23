@@ -1464,3 +1464,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **They say it (player): Skye says it first**, late January or early February, unguarded, the first time she has
     ever meant it off-screen. **Jack says it back, and means it.** It makes the end after New Orleans cost everything
     (and must be honored in how it ends; never retconned as less than real).
+- **The thematic key to the Skye/Lena choice (player-approved).** Jack feels the whole river with both of them (the
+  player's reference: HIMYM's made-up *Lebenslangerschicksalsschatz*, the instantaneous lifelong-treasure feeling, vs.
+  *Beinaheleidenschaftsgegenstand*, "almost the thing you want"). **Skye is never written as "almost the thing."** Both
+  loves are real and both were instant (Lena: the porch and the Mass collision; Skye: he crossed the room himself).
+  - **The difference is not intensity but direction.** Skye is face to face: she loves him, delights in him, argues with
+    him and respects his faith. **Lena is face to face *and* side by side**, wanting the same life (the sacrament, the
+    kids, the whole hard saying). Saint-Exupéry (1939, period-safe): *"Love does not consist in gazing at each other,
+    but in looking outward together in the same direction."* In New Orleans Jack chooses the one he can walk toward God
+    with, and does not stop loving the other when he does. Not a lesser love traded for a greater: a real love given
+    up for the one that is also his vocation. (Never state this as a thesis; let it be lived.)
+  - **Later-season callback (approved):** the HIMYM episode aired in 2011, so no one quotes it in 2010. In 2011 or later
+    the group watches it; **Jack goes quiet; only Lena knows why.**
