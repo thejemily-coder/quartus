@@ -1800,3 +1800,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   with **"So remember that time you told me you loved me and then dumped me on the side of the road?"** (Staging
   note: the player's phrasing suggests the breakup itself happens **in the Saab, pulled over on the side of a road**;
   room, consider staging it there so the line is literal.)
+- **After the first blowup with Lena at Sully's: Jack's false answers (player).** Jack **tells Skye some about Lena**
+  (the first crack in "he can tell Skye everything except Lena"; how much is the room's call: likely the friendship,
+  the fight, never the whole of it). Skye's response makes him think **Skye is the answer to Danny's question after
+  all**, and that **her curiosity about his prayer and faith (especially after what she did for Haiti) is enough to
+  answer Nonna's.** He believes it, privately; it's a real conclusion, not a rationalization he's aware of. **New
+  Orleans overturns both answers** (the "same direction" key), which is part of why it costs so much. Keep the two
+  questions unanswered aloud; this is Jack's interior verdict, shown in narration and choices.
