@@ -1435,3 +1435,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Theo/Skye is ALREADY DONE (S2E01):** Jack said something, and after the family learned about Skye, Theo told
     Jack to **be careful**. **Do not re-run the "Theo knows Skye" reveal in S2E02**; play its aftermath only.
   - **Skye's explicit call: room decides how it starts.**
+  - **Refinement (player): at his own midnight (12:00 ET) Jack answers Skye first, on purpose**, because they're about
+    to be together. That deliberate choice is **why Lena's text at her midnight (1:00 a.m. his time) lands so hard**:
+    he chose Skye first; Lena chose him first. (Write it as Jack's decision, not a player choice at 12:00.)
