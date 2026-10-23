@@ -1427,3 +1427,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     and how he really feels about Lena.** And **both women make him pray, in different senses.** Keep returning to
     both questions (never answered aloud until New Orleans); the asymmetry of his honesty is the shape of the double
     state.
+- **S2E02 design answers (player).**
+  - **New Year's Eve midnights.** **Both Lena and Skye text him at his midnight (12:00 Eastern) AND at their own
+    midnights** (Lena's 12:00 Central = 1:00 a.m. his time; Skye's 12:00 Pacific = 3:00 a.m. his time). **Lena's text at
+    her own midnight is the one that shocks him: it's immediate, the very stroke of it, meaning she told him first**
+    (before anyone there, Julian included). Jack registers what that means and can't answer it honestly.
+  - **Theo/Skye is ALREADY DONE (S2E01):** Jack said something, and after the family learned about Skye, Theo told
+    Jack to **be careful**. **Do not re-run the "Theo knows Skye" reveal in S2E02**; play its aftermath only.
+  - **Skye's explicit call: room decides how it starts.**
