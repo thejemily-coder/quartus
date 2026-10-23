@@ -1460,3 +1460,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Lena is beyond upset and furious about all of it**, and **privately blames Jack for poisoning her relationship with
     Julian**: she was ready to end it for Jack, and now can't get her own head past that with Julian while they're still
     together. (POV: Jack sees only her fury's surface; the blame comes out in New Orleans.)
+  - **Their relationship develops quickly on every front (player).** By New Orleans **they clearly love each other.**
+  - **They say it (player): Skye says it first**, late January or early February, unguarded, the first time she has
+    ever meant it off-screen. **Jack says it back, and means it.** It makes the end after New Orleans cost everything
+    (and must be honored in how it ends; never retconned as less than real).
