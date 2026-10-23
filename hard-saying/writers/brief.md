@@ -1713,3 +1713,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     **Correction (player): every sighting reaches Lena and the alliance within hours BEFORE the breakup too** (all of
     January–February), feeding the proxy war and Lena's fury in real time. (POV: Jack learns it from the fallout, not
     from watching it reach her.)
+- **The alliance dies and comes back (player; S2 January).**
+  - After the status, **Laney considers the alliance dead**: from Lena's side the gap is irreparable in Laney's eyes.
+    **She's short with Theo for a while for being friendly to Skye and Jack** (fits Theo "in the middle").
+  - **Then the aside** (Laney corners Jack: "fireman… 'So was I'"). **Laney reports it to Lena, who disbelieves it**
+    (thinks he's lying/playing games). **Laney doesn't**: she **goes to Theo for him to obliquely get the story from
+    Jack.** That is what **puts the alliance back into action**, with its emergency meetings.
+  - **Reconciles the running bit:** emergency meeting #1 stays secret December; **meeting #2 moves to after the aside**
+    (not right after the status), and #3 is the singalong. Jack still sees each only in fragments; Theo's oblique
+    questions to Jack are on the page (Jack doesn't know why he's asking).
