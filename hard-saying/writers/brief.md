@@ -1572,3 +1572,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     after." or similar), **not as a rejection.** Her decision stands; nothing on the call shakes it. Only the Facebook
     status breaks it. (Write her side of the call so a replay shows her unbothered certainty; Jack, on first hearing,
     reads her easy acceptance as more proof she's moving on.)
+- **The airport reunion video reaches Jack's wall (player).** Within a day or two, **somebody tags him in or posts the
+  airport reunion video on his wall** (period: an iPhone 3GS or Flip video uploaded to Facebook or YouTube; a fan, a
+  gossip blog, or a Youngstown friend reposting it). **Lena sees it as well** (off-screen per POV; it's part of what
+  Laney finds going through the pictures and interactions after taking the laptop). Jack learns it's out there from
+  the wall/comments and Gina, and only learns in New Orleans that Lena watched it.
