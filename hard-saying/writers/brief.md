@@ -1531,3 +1531,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Maria doesn't say anything, because she can hear it in his voice still.**
   - **Jack can tell she wants to say something but can't figure out how**, and **he can't figure out what.** The call
     ends on that silence. (Joins Danny's and Nonna's unanswered questions: now three people who see it.)
+- **Season 2 background pacing (player; standing).** While Jack/Lena/Skye dominate the foreground, **keep every other
+  character's arc and the mystery beats moving steadily but slowly in the background** (each episode advances at least
+  a couple of them: a seed, a clue, a small turn), so they're well set up for **Season 3 on**, when Jack and Lena are
+  together and the show opens up: their relationship stays central but develops *around* everything else going on
+  (mystery, friends' arcs, family, the world). Showrunner: name the background beats advanced in each S2 outline.
