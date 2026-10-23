@@ -1488,3 +1488,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   unsaid; the meaning is unmistakable.
   - **It hurts Lena**, and it's **why her dislike of Skye never goes away** (the running joke later has a real root).
   - **At the same time she knows it means he's giving all of that up for her**, because of how he feels about her.
+- **Skye after the end (player; long arc).** **Jack and Skye eventually become friends**, but **not close** (that
+  would bother Lena, and Skye might not be able to handle it either). **It takes a long time: Skye is deeply, deeply
+  hurt by Jack.** But she is **eventually grateful that he told her the truth, and that he did it before anything
+  happened** (before they slept together). She stays in the wider world via Theo; the slow thaw is the room's to pace
+  across later seasons.
