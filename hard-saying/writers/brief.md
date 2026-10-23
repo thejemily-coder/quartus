@@ -1787,3 +1787,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     some.** Track the campaign across episodes with cumulative counters (e.g. `skye_cat_jack` / `skye_cat_skye`: how
     close each comes to being persuaded), feeding how her arc resolves into friendship. Keep each duel distinct from
     Jack–Lena duels in register (Skye's improv, actor's logic, sincerity under performance; real arguments).
+- **Lena won't joke about Skye yet (player; timing for the running joke).** The "Lena brings up Skye as a running
+  joke / cheap fallback argument" bit **does not start until Skye's Catechism campaign is over** and the meet-ups have
+  ended. Until then Skye is **a live fear** for Lena, never a punchline; she's careful, quiet or sharp about it, never
+  funny. The joke only becomes possible once the threat is truly past.
