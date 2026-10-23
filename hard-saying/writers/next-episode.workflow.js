@@ -48,7 +48,7 @@ Write these sections, VERBATIM excerpts preferred over paraphrase, each excerpt 
 6. LEDGERS: continuity standing facts plus the last three episodes and any object/place in the plan; knowledge LIVE RISKS plus who-knows-what for every on-page character.
 7. TIC REGISTRY: room.md's knowledge checklist and full tic registry, verbatim.
 8. PERIOD: the period-sheet facts for these dates.
-HARD CAP: 200,000 characters total. Sections 1, 4 and 7 are verbatim and never trimmed; to stay under the cap, summarize sections 3, 5, 6 and 8 tightly (ledgers as dense bullet facts, not pasted pages), and include only voices of characters actually on the page. BEFORE RETURNING: run `wc -c` on the pack; if it is over 200000, cut sections 3, 5, 6 and 8 further (summaries, not pastes) and re-run `wc -c` until it is under 200000. A pack over the cap is a failed task. Edit no other file. Return the pack's final byte count and section list.`, { label: 'Context Packer', phase: 'Context pack', model: 'sonnet', effort: 'medium' })
+HARD CAP: 200,000 characters total. Sections 1, 4 and 7 are verbatim and never trimmed; to stay under the cap, summarize sections 3, 5, 6 and 8 tightly (ledgers as dense bullet facts, not pasted pages), and include only voices of characters actually on the page. BEFORE RETURNING: run wc -c on the pack; if it is over 200000, cut sections 3, 5, 6 and 8 further (summaries, not pastes) and re-run wc -c until it is under 200000. A pack over the cap is a failed task. Edit no other file. Return the pack's final byte count and section list.`, { label: 'Context Packer', phase: 'Context pack', model: 'sonnet', effort: 'medium' })
 
 phase('Blueprint')
 const ARCH = { type: 'object', properties: {
