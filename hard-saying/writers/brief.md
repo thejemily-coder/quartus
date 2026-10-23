@@ -1646,3 +1646,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Jack, Theo, Kevin and Yusuf rent a house (player).** Four guys in a beat-up rental (Theo pays more than his share
     and pretends he doesn't): a porch, a kitchen, house rules, Lena and Margot always over; **the ensemble's new hub
     from S4.** (The spring 2010 lease and deposit happen on-screen in S2E28–E30; room: reconcile with registry #33 rather than overwrite it.)
+  - **The hub, standing through graduation (player).** The house stays the ensemble's hub for the rest of school.
+    **Laney is over all the time too** (slightly less than the others because of sorority obligations). **Senior
+    year:** Jack and Lena move in together as a married couple, and **Margot replaces Jack** as the fourth resident
+    (Margot, Theo, Kevin, Yusuf). Purpose: a shared home set makes it easy to weave everybody's individual arcs
+    around the central relationship arc.
