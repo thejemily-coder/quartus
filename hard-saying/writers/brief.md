@@ -1656,3 +1656,20 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     they all live very well for college students: the house hosts **lots of house parties, football games, other big
     events, and the communal liturgical celebrations/parties planned by Jack and Lena** (and Kevin, when it fits his
     arc; S3+ liturgical-year directive).
+- **Jack and Islam, foreign policy and war (player; long arc across the series).** Over the years **Jack struggles
+  with Islam and the Muslim world**, genuinely torn:
+  - **Sympathetic** to the shared religious patrimony (Abraham, Mary, Jesus as prophet, the natural-law overlap) and to
+    the US's older relationships with much of the Muslim world, especially those who helped against the Soviets and
+    then al-Qaeda, ISIS, etc.
+  - **Also shares many right-wing fears about radical Islamist terrorism**, particularly Iran and its proxies.
+  - **Obama's drone campaign (2010 on):** torn. A life issue on which he can genuinely criticize a president he doesn't
+    like, **and** he thinks Obama is right to protect Americans and innocents abroad with weapons that reduce the risk
+    to American soldiers. Same tension over **the Syrian civil war, the refugees** and everything along those lines.
+  - **It comes to a head in the Trump era** (the travel ban, ISIS, Soleimani) and, if the series reaches it, **October 7
+    and the resulting wars**, where **Jack is far more sympathetic to Israel than Lena is**, even while struggling with
+    the cost of its self-defense. Lena (Catholic Worker left, consistent life ethic) is more critical of drones, war
+    and Israel's conduct; both are pro-life and both take each other seriously. Real arguments, no strawmen on any
+    side.
+  - **It's personal, not abstract:** Yusuf (a housemate from S4; his brother Tariq a soldier) and his family keep it
+    human. Muslim characters are never props or villains; Jack's tensions are tested by friendship, never resolved by
+    a speech.

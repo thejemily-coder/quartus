@@ -1,6 +1,6 @@
 # S2E03 "EPIPHANY" — CONTEXT PACK (writers' room only; contains 🔒 hidden canon)
 
-**Built by the Context Packer, 2026-10-23, for the Fri Jan 1 – Mon Jan 11, 2010 episode (revision 2 of `writers/outlines/s2e03.md`).**
+**Built by the Context Packer, 2026-10-23; UPDATED in place (update pass: 1.0b player notes + brief L1552-L1658 appended to 1B); for the Fri Jan 1 – Mon Jan 11, 2010 episode (revision 2 of `writers/outlines/s2e03.md`).**
 Every later agent reads this INSTEAD of the 1 MB bible, the 155 KB brief, the 500 KB continuity ledger and the 189 KB knowledge ledger, and consults those only
 by targeted lookup. Every excerpt below is **verbatim** and carries a `[SRC file · heading · line range]` label so it can be checked at the source (line numbers are
 those of the files as of this build). Nothing here is paraphrased except the short bracketed `[Packer's note]`s and section intros.
@@ -39,7 +39,7 @@ Every excerpt is labeled `[SRC file · heading · line range]`, so an agent may 
 - *Mechanics Designer:* 1A (Mechanics), 1B-NEWEST, 5.1, 6.2 (Flags / Counters / Resolve bullets).
 
 ## CONTENTS
-1. PLAYER DIRECTIVES — 1.0 player notes for this pass · 1A hard rules / content standards / mechanics · 1B brief entries bearing on S2E03 (verbatim, in the brief's order, newest last) · 1C bible standing specs the directives point at (Skye picture ladder; Skye heat ladder) · 1D bible Revision log: the S2E02 Head Writer handoff + the S2E03 rev. 2 and S2E04 plan notes
+1. PLAYER DIRECTIVES — 1.0 / 1.0b player notes (1.0b = update pass, newest) · [1B now ends with the update-pass block, brief L1552-L1658: Youngstown reaches out; S2E03 design answers; Friday call refinement; airport video; defiant posts; singalong; birthdays (Julian Jan 9); posting order; S3 visits; Skye birthday; intimacy pacing; sophomore housing] · 1A hard rules / content standards / mechanics · 1B brief entries bearing on S2E03 (verbatim, in the brief's order, newest last) · 1C bible standing specs the directives point at (Skye picture ladder; Skye heat ladder) · 1D bible Revision log: the S2E02 Head Writer handoff + the S2E03 rev. 2 and S2E04 plan notes
 2. STYLE — bible Part I §4 style guide in full (+ §3 Tone)
 3. VOICES — on-page roster; dossier public-face/voice/phone paragraphs (plus the outline's text conventions and on-page roster) for every character who speaks, texts, writes or appears in S2E03
 4. HIDDEN CANON THAT CONSTRAINS THIS EPISODE (🔒) — the outline's "may not" list and LIVE RISKS; dossier private-truth/wound/arc paragraphs; secrets register; elision rule; Jack's and Lena's secrets; the Point; hidden knowledge ceilings; the S2 seed plan
@@ -61,6 +61,13 @@ Every excerpt is labeled `[SRC file · heading · line range]`, so an agent may 
 
 [Packer's note] The same notes are quoted in the outline's header (L20–L25). Hard rules from the task text: frank, literary heat (never pornographic mechanics); everyone 18+; no sex for Jack or Lena with anyone;
 no procedural consent beats unless a scene would otherwise read as assault; never mock the faith; no strawmen; Jack and Lena never die. Do not touch anything outside `hard-saying/`; do not run git.
+
+
+## 1.0b Player notes — UPDATE PASS (orchestrator; binding; newest) — verbatim from the Packer's task
+
+> Player on S2E02: great episode; laughed out loud at Frank asking about Skye's swimsuit picture while watching her show (give Frank more dry comedy); Skye reading Chesterton for Jack and for herself is beautiful. S2E03 DESIGN ANSWERS (read the brief's newest entries; patch the drafts): (1) the airport reunion: Skye at the gate, loudly (sign, sunglasses at night), kisses him like nobody's watching; someone with a phone is; the still/video becomes the first gossip shot; she posts the still herself; when her mom/team says take it down she posts her own first photo of them instead. (2) Lena on the first day back: she's just gone (seriously upset, doesn't want to be seen); when forced next to each other: perfect politeness that quickly unravels into the first sideways fight. (3) Friday call: add that she's going to coffee/dinner with Julian and asks if Jack will be around after; he's evasive ('probably not / I've got a thing'); CRUCIAL: Lena takes it as weird or practical (a shift, tired), NOT rejection, and accepts easily ('Okay. Then call me after.'); she still believes they understand each other until the status. (4) Julian's birthday is Jan 9 (the reunion day): Lena won't end it on his birthday, which is why 'Monday'. (5) Maria call before official: she brings up Lena; 'She's still got a boyfriend, Ma. He wrote a song for her. It was good.'; Maria silent, hears it in his voice; neither can find the words. (6) Smoking: urge only after Lena scenes, never around Skye (jack_cigs_jf). Collapse S2E02 gates to played values (s2e2_newyear=almost, s2e2_nye=stay, etc.). Trim the pack to the 200k cap. Length ~22-26k per path..
+
+[Packer's note, update pass] Items (1)-(5) are the brief entries "S2E03 design answers", "S2E03 Friday call refinement", "The airport reunion video reaches Jack's wall", "Skye's first defiant posts", "Birthdays get celebrated" (Julian, Jan 9) and "Jack tells his mom first" (Section 1B, last blocks). Item (6) is the brief's "Reliquary goes back to Lena" entry (jack_cigs / January-February count) as the player's note restates it. Section 1D's S2E02 handoff gates are superseded by the played values in the player's note (s2e2_newyear=almost, s2e2_nye=stay; see saves/after-s2e02.json); the S2E02 ledger entries (Section 6.2) and knowledge entries (6.4) are unchanged since this pack was built (continuity.md and knowledge.md last modified before the build). No published-S2E02 canon beyond Section 6.2 was found to add.
 
 
 ## 1A. Hard rules, content standards, mechanics (brief front matter — verbatim)
@@ -1087,6 +1094,117 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
   is "beautiful." Keep it: her intellectual life is her own, not a performance for him; let her bring her readings
   into their arguments (her own takes, sometimes better than his), and never let it read as her converting for him
   (respect without belief stands).
+
+
+**[SRC brief.md · UPDATE PASS: every brief entry newer than the first build, "Youngstown reaches out" through "Sophomore housing" (end of "Player directives") — NEWEST; NEWER WINS · L1552-L1658]**
+
+- **Youngstown reaches out (player; S2, January on).** Once Jack and Skye are public on Facebook and in the tabloids,
+  **a lot of old friends from school reach out** (the New Year's Eve crowd at Ryan Pallante's and beyond): wall posts,
+  messages, friend requests from people he hasn't spoken to since St. Brigid's/high school, the CYO guys, Tommy Hritz,
+  exes of friends, someone's mom. Comic texture (period-true Facebook insert material) with an edge: everyone back
+  home suddenly sees him, and none of them ask about the girl in New Orleans. Gina fields some of it at school.
+- **S2E03 design answers (player).**
+  - **The reunion: at the gate, loudly.** Skye is waiting at the airport (sign, sunglasses at night, the works) and
+    kisses him like nobody's watching; **someone with a phone is**. That photo becomes the first fan/gossip shot of them.
+  - **Lena on the first day back: she's just gone.** She's seriously upset and doesn't want to be seen by anybody.
+    **When they're forced next to each other, it's perfect politeness, which quickly unravels into the first sideways
+    fight** (the proxy war opens; the Facebook-status grievance itself is saved for a later fight per the brief).
+- **S2E03 Friday call refinement (player; patches outlines/s2e03.md s09).** The plan's hint stands ("I'm going to see
+  him Monday… I haven't been fair to him… I'm going to fix it."), plus the player's addition: **she's going to coffee
+  or dinner with Julian and asks if Jack will be around after.** Jack hears "seeing Julian" and takes the rest as a
+  friend's courtesy or a back-off signal, and his answer is evasive or a "probably not / I've got a thing" (he'll be
+  with Skye): **on a replay, she was asking him to be there right after she ended it.** The call ends awkwardly as
+  planned (he hangs up first). Written both ways; her intent off-screen.
+  - **Lena's read of the awkward call (player; important).** She must **still believe they understand each other until
+    she sees the status.** So she takes his "probably not / I've got a thing" and the abrupt ending as **weird, or as
+    him working a shift / being tired / something practical** (Jack hears her accept it easily: "Okay. Then call me
+    after." or similar), **not as a rejection.** Her decision stands; nothing on the call shakes it. Only the Facebook
+    status breaks it. (Write her side of the call so a replay shows her unbothered certainty; Jack, on first hearing,
+    reads her easy acceptance as more proof she's moving on.)
+- **The airport reunion video reaches Jack's wall (player).** Within a day or two, **somebody tags him in or posts the
+  airport reunion video on his wall** (period: an iPhone 3GS or Flip video uploaded to Facebook or YouTube; a fan, a
+  gossip blog, or a Youngstown friend reposting it). **Lena sees it as well** (off-screen per POV; it's part of what
+  Laney finds going through the pictures and interactions after taking the laptop). Jack learns it's out there from
+  the wall/comments and Gina, and only learns in New Orleans that Lena watched it.
+- **Skye's first defiant posts (player; refines "she goes official herself" and the reckless posting).** If there's a
+  clear still from the airport video (or a good photo of the moment from another phone), **Skye puts it on Facebook
+  herself.** When **her mom/team tries to get her to take it down**, that's when **she takes the first photo of the two
+  of them herself and posts it instead**: the start of the reckless posting, born of defiance.
+- **The Saab singalong video (player; a little later, late Jan/early Feb).** Someone in traffic films them in the Saab,
+  **top down, at a stoplight, singing a period-accurate and absolutely filthy song to each other at the top of their
+  lungs, eyes on each other the whole time.** It goes around (wall posts, a gossip blog), and the friends, Gina, and
+  Lena all see it. Pure joy on the screen (the double state's Skye half at full volume). **Song: room's pick, released
+  by the scene's date**; candidates: Khia, "My Neck, My Back (Lick It)" (2002); Jeremih, "Birthday Sex" (2009);
+  Lady Gaga, "LoveGame" (2008); Young Money, "BedRock" (Nov 2009). Quote at most a few words of lyric on the page.
+  - **Song locked (player): Jeremih, "Birthday Sex"** (2009). Quote at most a few words of lyric on the page.
+- **Birthdays get celebrated (player; standing).** Every main character's birthday is marked on-screen when it comes
+  up on the calendar (a scene, a beat, a text, a card: scaled to the person and the moment). Bible §9 is the
+  calendar. **Showrunner: fill the gaps in §9 at the next planning pass** (Frank, Maria, Gina, Rosie's exact date,
+  Nonna, Danny confirmed Feb 2; the Broussards: Tony, Celeste, Mémère, Tess, Drew, Lena's other siblings; Sol; Fr. Dom
+  if recurring), and check each S2 outline against the calendar. **S2 birthdays already on the calendar:**
+  - **Julian, Jan 9 (S2E03)**: the day Jack lands and Skye meets him at the gate. It's also why Lena's "I'm going to see
+    him Monday" isn't the weekend: **she won't end it on his birthday.** (Room: honor this in S2E03; Lena's off-screen
+    weekend is Julian's birthday.)
+  - **Danny, Feb 2** (Candlemas; 23; his letter). **Evan, Feb 11** (they're away). **Laney, Feb 14** (Valentine's,
+    Bacchus Sunday, in New Orleans; Celeste's cake). **Kevin, Feb 15** (Presidents' Day, in New Orleans: don't let
+    Laney's eclipse it entirely). **Peter Haddad, Mar 8.** **Jack, Mar 19** (St. Joseph; date #2). **Skye, Apr 4
+    (Easter Sunday 2010)**, after the breakup: Jack's choice whether to send anything (room's call). **Osei, May 2.**
+    **Becca, May 31** (summer; a text). Then Rafi Jun 2, Hale Jun 30, Brooks Jul 4, Lena Jul 22 (S3).
+  - **The singalong video is a big deal for both of them (player).** **Jack:** Youngstown sees it (the family, St.
+    Brigid's/the NYE crowd, the parish) and so does **the Newman crowd** (Osei, Mrs. Fitch, Becca, the regulars): the
+    devout guy belting "Birthday Sex" in a convertible; comic and mortifying, with real fallout (Ma's call; a look from
+    Osei; Laney's delight). **Skye:** her **reputation and image as Cassidy**, the network's good girl: the team and her
+    mother in full crisis mode, gossip-blog headlines about the "good girl" gone wild. She doesn't regret it; it may
+    be the happiest thing she's ever been filmed doing. **It is the public antic that triggers the alliance's third (biggest) emergency meeting** (player-approved), the one that secretly gets Lena to plan the New Orleans trip.
+  - **Jack confesses the singalong as what it was (player).** No wrong intended: a fun moment that wasn't thought
+    through. **A venial sin**, in the sense that it continues the **regularizing and cheapening of the words**, making
+    the act easier to treat lightly, **not just for them but for others who see it** (a small public-example /
+    scandal dimension), **but not a reveling in the gravely sinful act itself.** Jack names it precisely, without
+    scrupulosity and without excuse. Osei's response fits his current stage of the arc (he may well enjoy it a
+    little; real counsel about words and witness, never a scolding).
+  - **Jack apologizes to Skye (player; adapt to voice).** Later, Jack apologizes for causing problems for her career.
+    **She takes his face in her hands, kisses him slow and hard, then tells him never to apologize for making her
+    happy.**
+  - **Skye's response to the video (player).** Unlike everything before, **she does NOT share the video herself**,
+    solely because she knows how the people around Jack see him in it (his family, Youngstown, the Newman crowd).
+    But she **posts on his Facebook wall, deliberately undermining her own team's PR campaign** (whatever spin they're
+    running), so it's public that **she's looking forward to their next singalong**, with a wink to **"bring the clean
+    version next time, for everybody watching at home."** Protecting him and defying them in one post.
+- **Order and turn in Skye's public posting (player; refines "reckless posting").**
+  1. Defiant posts escalate (airport still → her own photo → wilder ones) **up to one suggestive photo post.**
+  2. **That's where she learns some of it costs him** (his family's reaction: Ma, Nonna; Youngstown; the Newman crowd).
+     And by now **she really wants his mom and Nonna to like her.** So **from then on she shares only sweet/happy photos
+     and videos.**
+  3. **Jack tells her he doesn't care**: he likes being with her, likes having fun with her, and she shouldn't feel bad
+     for posting something true. **She can tell he's being truthful and genuinely doesn't care. She stops anyway**,
+     because it still costs him, and it costs her with his family.
+  4. **The singalong video comes after this** (filmed by a stranger, not posted by her), which is why she doesn't
+     share it and answers it with the protective, defiant wall post instead.
+- **Summer 2010 (S3) visits (player).** They plan **one long trip each way**: Lena to Youngstown, and Jack to New
+  Orleans. (Supersedes shorter "trade visits.")
+- **Skye's birthday, Apr 4 (Easter Sunday 2010) (player).** Jack **struggles over whether to text her**: he wants to do
+  whatever's best for her on that front (is it kind or cruel to reach out?). Show the struggle; the room decides what
+  he does, or makes it a player choice.
+- **Jack and Lena's physical intimacy as a couple (player; S2 spring → S3).** It **builds and escalates consistently
+  but very slowly.** They touch each other a lot, but **it's not raw and hungry at every moment**; they do other things
+  in each other's arms too (talk, read, argue, sleep on a couch, watch the game). **So restraint is not a huge factor
+  yet**: a couple of light moments in S2 and S3, **then it becomes the fire from S4 (Fall 2010) on.** (Contrast with
+  Skye, which ran hot from the start; Lena's is slower and deeper.)
+- **Sophomore housing (player; S4 = Fall 2010).** **Laney lives in her sorority house.** **Lena and Margot become
+  roommates in the dorm.** Jack and Theo: see the next entry.
+  - **Jack, Theo, Kevin and Yusuf rent a house (player).** Four guys in a beat-up rental (CORRECTED below: Theo pays
+    exactly the same share): a porch, a kitchen, house rules, Lena and Margot always over; **the ensemble's new hub
+    from S4.** (The spring 2010 lease and deposit happen on-screen in S2E28–E30; room: reconcile with registry #33 rather than overwrite it.)
+  - **The hub, standing through graduation (player).** The house stays the ensemble's hub for the rest of school.
+    **Laney is over all the time too** (slightly less than the others because of sorority obligations). **Senior
+    year:** Jack and Lena move in together as a married couple, and **Margot replaces Jack** as the fourth resident
+    (Margot, Theo, Kevin, Yusuf). Purpose: a shared home set makes it easy to weave everybody's individual arcs
+    around the central relationship arc.
+  - **Theo and the house money (player; corrects "pays more than his share").** **Theo pays exactly the same rent and
+    utilities, because the other three insist.** But **he keeps buying a ton of things he "wants for the house,"** so
+    they all live very well for college students: the house hosts **lots of house parties, football games, other big
+    events, and the communal liturgical celebrations/parties planned by Jack and Lena** (and Kevin, when it fits his
+    arc; S3+ liturgical-year directive).
 
 
 ## 1C. Bible standing specs the directives point at (verbatim) — Skye's picture ladder and heat ladder (rung 8 and S2-a are this episode's)
