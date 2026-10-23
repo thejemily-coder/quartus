@@ -1,0 +1,200 @@
+{
+ "scenes": {
+  "s10": {
+   "slug": "THURSDAY · 10:30 AM · ST. BRIGID OF KILDARE, THE CONFESSION LINE",
+   "body": [
+    "On Christmas Eve morning the line for confession at St. Brigid’s runs down the side aisle from the fifth Station to the second, and it’s half the South Side: women in their good parkas with their purses held in both hands, a man in a Local 1112 jacket reading the bulletin like a racing form, two Mooney sophomores somebody’s mother has marched over, shoving each other in whispers. Up front the Holy Name men are on ladders, hanging garland off the choir loft and arguing about the staple gun. Mrs. Pallante from the school cafeteria turns around in line, sees him, tells him he got tall, and turns back.",
+    "The confessional is the old one, built into the wall between the Stations: dark oak gone black at the edges where hands push the curtains back, a velvet curtain on either side, and over the middle door, where the priest sits, a small light, green, which means Father’s in.",
+    {
+     "if": "xmas_confession_planned",
+     "text": "A week ago Wednesday he told a priest in California he’d go Christmas Eve, at home."
+    },
+    {
+     "if": "confession_owed>=4",
+     "text": "He did the arithmetic coming down Glenwood. It’s going to be a long one."
+    },
+    "The left-hand curtain slides back and an old man comes out putting his cap on. The woman ahead of Jack goes in, and it’s him next, standing under the green light with his hands in the Carhartt’s pockets and the line at his back."
+   ],
+   "choices": [
+    {
+     "text": "Go in.",
+     "tag": "Grace",
+     "set": {
+      "s2e1_conf": "grace",
+      "soul.grace": "+1"
+     },
+     "key": "On Christmas Eve morning you went to confession at St. Brigid’s.",
+     "goto": "s10a"
+    },
+    {
+     "text": "Go home. There’s fish.",
+     "tag": "Drift",
+     "set": {
+      "s2e1_conf": "drift",
+      "soul.grace": "-1",
+      "resolve.jack": "-1"
+     },
+     "key": "On Christmas Eve morning you stood in the confession line at St. Brigid’s, and went home.",
+     "response": [
+      "He steps out of the line and goes back up the side aisle past the Stations, and behind him the line moves up a place to fill where he stood."
+     ],
+     "goto": "s11"
+    }
+   ]
+  },
+  "s10a": {
+   "slug": "THURSDAY · 10:50 AM · ST. BRIGID’S, THE CONFESSIONAL",
+   "set": {
+    "resolve.jack": "+2",
+    "confessed_skye_4": true,
+    "confession_owed": 0
+   },
+   "body": [
+    "He draws the curtain to behind him and kneels in the dark. It smells of varnish and wet wool and somebody’s Jean Naté. The kneeler is worn into two shallow dips by other people’s knees. At the height of his face there’s a brass grille with a cloth behind it, and behind the cloth a shape, a chair creaking, a cough drop clicking against teeth. Somewhere in the wall a radiator is coming up, ticking in the pipe, a small dry knock every few seconds. The little door behind the grille slides open.",
+    "“Bless me, Father, for I have sinned.”",
+    {
+     "if": "confessed_skye_3",
+     "text": "“It’s been eight days since my last confession.”",
+     "else": "“It’s been twelve days since my last confession.”"
+    },
+    "Through the curtain he can hear the line breathing: a purse clasp, one of the sophomores getting shushed, somebody’s beads knocking a pew end. He had it in order coming down Glenwood. On the kneeler it comes out in whatever order it likes.",
+    "“There’s a girl. At school, in California.” On the other side of the cloth Father Dom breathes through his nose and waits.",
+    {
+     "if": "pic5_opened",
+     "text": "“She sent me a picture on my phone. Of herself. I opened it. And I kept it.”",
+     "else": "“She sent me a picture on my phone. Of herself. I kept it.”"
+    },
+    "“A week ago, in her car.” He makes himself say the rest of that one. “I was the one who went too far this time.”",
+    "“This time,” Father Dom says.",
+    "“Usually she’s the one driving.”",
+    {
+     "if": "e22_thu_late",
+     "text": "“And I took a minute I shouldn’t have. Before I stopped. I knew I was taking it.”"
+    },
+    {
+     "if": "!confessed_skye_3",
+     "text": "“And before that, the Tuesday. Her car again. Further than it’s ever gone.”"
+    },
+    {
+     "if": "!confessed_skye_3 && e22_tue_late",
+     "text": "“I said no late.”"
+    },
+    {
+     "if": "!confessed_skye_3",
+     "text": "“The Saturday before, she came to where I work, and after that, down on the wharf. There was a picture before this one, too. I opened that one and I answered it. I slept at her house — only slept. I knew I shouldn’t be there. And I keep lying to a friend about where I go.”"
+    },
+    {
+     "if": "!confessed_skye_3 && e22_waiting==\"lie\"",
+     "text": "“Once by text. About finals.”"
+    },
+    "“Did it stop?” Father Dom says. “In the car.”",
+    "“It stopped.”",
+    "“Good.”",
+    {
+     "if": "xmas_confession_planned",
+     "text": "“And Father, one more thing. It’s an errand.” Jack has it by heart. “A priest in California said to tell you you’re very lucky to have me in your line. And very sorry.” Behind the grille the cough drop goes over to the other cheek. “Tell him we’ll see.”"
+    },
+    "“For these and all my sins I’m sorry.”",
+    "The chair creaks while Father Dom gets the knee straightened out under him.",
+    "“You’re home,” he says, “and she’s in California. God gave you two thousand miles for Christmas. Don’t mail them back.”",
+    "The cough drop clicks. “Thirty years I’ve had men off the line at Lordstown in this box. Not one of them ever told me he decided to drink the house payment. He stopped for one on the way home, one Friday. Then it was Fridays. Pretty soon it was the way home.” A pause. “The old books call it the near occasion. You don’t beat it every Friday. You take a different street.”",
+    "“For your penance, help your mother with the fish. All seven.” Another click. “And a rosary for the girl. By her name. Not yours.”"
+   ],
+   "choices": [
+    {
+     "text": "“I’ll keep the miles.”",
+     "tag": "Grace",
+     "set": {
+      "s2e1_dom": "grace",
+      "firm_purpose_miles": true,
+      "soul.grace": "+1"
+     },
+     "response": [
+      "“I’ll keep the miles,” Jack says.",
+      "“Keep every one of them.”"
+     ],
+     "goto": "s10b"
+    },
+    {
+     "text": "“I don’t know if I can, Father.”",
+     "tag": "Candor",
+     "set": {
+      "s2e1_dom": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“I don’t know if I can, Father.”",
+      "“Then you know more than most of the men in that line.”"
+     ],
+     "goto": "s10b"
+    },
+    {
+     "text": "“Pray for her.”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e1_dom": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Pray for her, Father.”",
+      "“What’s her name?”",
+      "“Skye.”",
+      "Behind the grille there’s a pause, and a creak that might be the knee. “I will.”"
+     ],
+     "goto": "s10b"
+    }
+   ]
+  },
+  "s10b": {
+   "slug": "THURSDAY · 11:05 AM · ST. BRIGID’S → THE STEPS",
+   "body": [
+    "He says the Act of Contrition as they all learned it for First Confession, *O my God, I am heartily sorry for having offended Thee*, right through to *amend my life*, and behind the cloth the shadow of Father Dom’s hand comes up.",
+    "“God, the Father of mercies, through the death and resurrection of his Son has reconciled the world to himself and sent the Holy Spirit among us for the forgiveness of sins; through the ministry of the Church may God give you pardon and peace, and I absolve you from your sins in the name of the Father, and of the Son, and of the Holy Spirit.”",
+    "“Amen.”",
+    "“Go in peace.”",
+    "The radiator in the wall knocks twice and goes quiet.",
+    "Out on the steps the sky has been scraped clean overnight, hard blue from the steeple to the Valley, and the old snow on the lawns along Glenwood has gone to crust that shines. He goes down the street toward the house with his hands in the Carhartt’s pockets, counting off the first decade on his fingers inside the left one, and into every Hail Mary, under his breath, he puts her name."
+   ],
+   "next": "s11"
+  },
+  "s14": {
+   "slug": "FRIDAY · 12:00 AM · ST. BRIGID OF KILDARE, MIDNIGHT MASS",
+   "music": "Big Star — “Jesus Christ”",
+   "set": {
+    "resolve.jack": "+1",
+    "knows_carly_home": true
+   },
+   "body": [
+    "St. Brigid’s has every light on, the brass chandeliers lit end to end as they are twice a year, and by half past eleven the Christmas-and-Easter crowd is standing at the back under the choir loft in their good coats with the carols going over their heads. The poinsettias are banked three deep up the altar steps. The crèche is set up at the end of the communion rail on their side, the old plaster family under a roof of real straw, the manger still empty.",
+    "The Costigans have their pew, two-thirds of the way back on the left. Nonna is on the aisle with Theo’s gray throw folded over her knees and the splint on top of it, and Theo beside her in a tie she has retied twice since the house; then Rosie, Ma, Jack, Gina, and Frank on the end.",
+    "At midnight the bells go, and the procession comes up the middle in a cloud of incense, the servers and the candles and Father Dom at the back of it in gold, taking the altar steps one at a time on the bad knee with a server’s hand under his elbow. He lays the Child in the manger himself. The Gloria comes back after four Sundays without it, and Rosie, who has been waiting, sings it at the top of her lungs a half-beat ahead of the organ.",
+    "Mr. Yanko from the Knights reads Isaiah in his foreman’s voice, *The people who walked in darkness have seen a great light*, and Father Dom reads Luke: the decree, the town, no room at the inn, shepherds in the fields keeping the night watch over their flock. Frank goes to sleep on his feet somewhere around Quirinius, as he does every year, and at *Glory to God in the highest* Gina puts an elbow in him and he comes awake looking like he never left.",
+    "Father Dom keeps the homily to three sentences. “The angels didn’t go to the palace,” he says. “They went to the night shift. Every one of you knows somebody who works nights.” And he sits.",
+    "At the consecration the bells ring and the pew goes down onto the kneelers. Nonna’s hand comes over onto Theo’s shoulder to press him down, and finds him already going.",
+    "At the sign of peace the girl in the white knit hat two pews up turns around, and it’s Carly Benedetto, Mooney ’09, her mother beside her. “Peace be with you, Jack.” Her hand is cold. Her eyes go to his eyebrow and come back to his face.",
+    "“And also with you.”",
+    "Up in the chandeliers the incense from the procession is still hanging in a blue shelf. Gina has her hand out for him, and Rosie leans across Ma to get him too, and the man behind them in the Steelers jacket wants him, so he gives the peace to all three. Over the side of the pew, in the crèche, the plaster ox has had a chipped horn since before Jack was born, and somebody has turned it again this year so the chip faces the wall.",
+    {
+     "if": "s2e1_conf==\"grace\" && s2e1_pic!=\"candor\"",
+     "text": "When the pew goes up for Communion, Theo stays where he is, and so does Nonna; the aisle is too long for her tonight. Jack goes up with Ma and the girls and his father and receives in the hand, and coming back down the side aisle he sees one of the Altar and Rosary ladies stop at the end of their pew with the little gold pyx, and Nonna lift her face for it, and Theo beside her with his hands on his knees, sitting with her while it comes.",
+     "else": "When the pew goes up for Communion, Jack stays on the kneeler and lets Ma and the girls and his father go past his knees into the aisle. At the far end Theo stays where he is, and so does Nonna; the aisle is too long for her tonight. One of the Altar and Rosary ladies comes down to the end of the pew with the little gold pyx, and Nonna lifts her face for it, and Theo sits beside her with his hands on his knees while it comes. Jack kneels three people’s width from the two of them with his hands over his face and makes a spiritual communion, as the nuns taught them to for the nights you can’t."
+    },
+    "They go out on “Joy to the World” with the doors open and the night coming in. Father Dom is at the back in the gold, shaking hands like anybody, a word for everyone. He takes Jack’s. “Merry Christmas, Jack.” There’s nothing in his face but the hour.",
+    "On the steps, in the crowd going down to the cars, Carly catches his sleeve. “You’re home.”",
+    "“Till the ninth.”",
+    "“There’s a thing at Ryan’s on New Year’s. YSU people.” Her mother is calling her from the curb. “Come.”",
+    "He nods, and she goes down to her mother.",
+    "Frank brings the truck around for Nonna and Ma, and Rosie is asleep across the bench seat before the doors are shut, so the other three walk: five blocks down the middle of Glenwood, because there isn’t a car moving on the South Side. The ground is frozen hard and the crust along the curbs creaks under them. Gina walks in the middle with an arm through each of theirs. Over the roofs the half-moon is going down, and at the corner of Brownlee Theo says, “In Los Angeles, Midnight Mass is at ten. So the valets can get home,” and Gina laughs so hard she has to hang off the both of them the rest of the way up the street to the porch light."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "carly",
+     "title": "Carly Benedetto",
+     "text": "Mooney ’09, YSU now. Two pews up at Midnight Mass with her mother. Gave me the peace. Asked me to a thing at Ryan’s on New Year’s."
+    }
+   ],
+   "next": "s15"
+  }
+ }
+}

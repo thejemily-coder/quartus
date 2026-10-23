@@ -1,0 +1,562 @@
+{
+ "scenes": {
+  "s05": {
+   "slug": "SUNDAY · 10:05 AM · TRUMBULL CORRECTIONAL INSTITUTION, THE VISITING ROOM",
+   "body": [
+    "Frank takes the last row of the lot, against the fence, and leaves the engine running for the heater. The plows have been through and pushed the snow up along the chain-link in a gray wall as high as the hood, and the Cleveland station already has two men in a studio arguing about the Kansas City run defense. Ma gets the Folgers can of quarters out from under the seat and holds it in her lap with both hands.",
+    "“Tell him the twenty-seventh,” Frank says.",
+    "“You coming in, Dad?”",
+    "Frank turns the radio up a notch. “The twenty-seventh.”",
+    "The lobby is the one from Thanksgiving — the yellow cinderblock, the lockers with their red tags, the mural over them with the sun that has a face and the ducks going down to the lake — except that somebody’s grandmother is asleep in a plastic chair against the painted barn with her pocketbook in both arms, and the officer at the desk says, “Merry Christmas, Maria,” and Ma says it back and asks after his wife’s hip by name. Coats in the locker. The stamp on the back of the hand; the two steel doors, and the wait between them.",
+    "In the visiting room somebody has cut a Christmas tree out of green construction paper and taped it to the cinderblock over the microwave, and the kids from the toy corner have colored its ornaments in crayon, one of them solid black, pressed hard. Danny comes through the far door with his hands already out: twenty-two, in the state blues, square through the shoulders, their father’s face and the gentlest eyes in the room. He gets Ma first and keeps her a while, rocking her a little on her feet, and then Jack.",
+    "“Professor.”",
+    "For twenty minutes it’s Ma’s visit. She went to the machines the minute they sat down and came back with a honey bun, and Danny ate it in three bites while she went down her list, and the wrapper is still lying open on the bolted table in front of him. Nonna’s hand, and the splint, and how she knelt at Communion this morning when she isn’t supposed to. Rosie practicing a grace for Christmas Eve in the bathroom mirror, with gestures. Gina’s grades. The baby in New Orleans, with the weight and the hour; Ma has it by heart already.",
+    "Danny looks at Jack. “The veil girl’s sister? During the *game*?”",
+    "“Third quarter. They lost after.”",
+    "“Figures.” He shakes his head at the Saints, in general.",
+    "“Dad says tell you the twenty-seventh.”",
+    "Danny looks off at the cinderblock, at about where the lot would be if the room had a window. “The twenty-seventh, Ma. All of you.” His eyes come back. “Pop too. Tell him I said.”",
+    "“I’ll tell him,” Ma says. She picks up the Folgers can and shakes it to hear what’s left. “I want a coffee.” And she goes, and takes a long time about it. She stops at a table where a woman in a church hat is visiting Reggie from Portsmouth and bends to say something that makes the woman put a hand on her arm; she gets in the line at the microwave behind two men with burritos; she admires a baby. She has not gone anywhere near the coffee.",
+    "Danny watches her go. “She does that for me too.”",
+    "He turns back to the table. “So.” He flattens the honey-bun wrapper with the side of his hand. “The O’Connor girl. Is it still something?”"
+   ],
+   "choices": [
+    {
+     "text": "“I’m in love with Lena, Dan.”",
+     "tag": "Candor",
+     "cue": "Danny will remember that.",
+     "set": {
+      "s2e1_tell": "candor",
+      "said_it_plain_n": "+1",
+      "soul.honesty": "+1"
+     },
+     "key": "In Trumbull’s visiting room, while your mother took a long time at the machines, you told Danny you’re in love with Lena — the first person you’ve ever said it to.",
+     "response": [
+      "Danny doesn’t laugh. Over by the microwave a timer goes off and somebody says *finally*; his eyes stay on Jack.",
+      "“The veil girl.”",
+      "“Yeah.”",
+      "“Took you long enough to say it to somebody.”"
+     ],
+     "goto": "s05a"
+    },
+    {
+     "text": "“There’s a girl in California who makes me happy. And she’s not the one I —”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e1_tell": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "In Trumbull’s visiting room you told Danny about the girl in California, and he finished the sentence for you: you’re in love with Lena.",
+     "response": [
+      "Danny lets him get as far as the dash and stop there.",
+      "“Not the veil girl.”",
+      "“No.”",
+      "“Huh.” He sits with that, his thumb on the wrapper. “You’re in love with the veil girl.”",
+      "“…Yeah.”"
+     ],
+     "goto": "s05a"
+    },
+    {
+     "text": "“It’s two somethings, Dan.”",
+     "tag": "Wit",
+     "set": {
+      "s2e1_tell": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "In Trumbull’s visiting room you told Danny it was two somethings, and let him say the rest himself: you’re in love with Lena.",
+     "response": [
+      "Danny sits back in the bolted chair as far as a bolted chair goes and folds his arms over the state blues.",
+      "“Start at the beginning,” he says. “I got till quarter to twelve and Ma’s slow.”"
+     ],
+     "goto": "s05a"
+    }
+   ]
+  },
+  "s05a": {
+   "slug": "SUNDAY · 10:25 AM · TRUMBULL, THE VISITING ROOM",
+   "set": {
+    "resolve.jack": "+1",
+    "told_danny_love": true,
+    "danny_knows_double": true
+   },
+   "body": [
+    "He tells it with his forearms on the bolted table and his voice under the room’s. It isn’t hard. Two tables over a baby is losing an argument with a bottle, and up on the platform the officer is working through a newspaper one page at a time. He has never said any of it in order before, to anybody. In order it’s shorter than he thought it would be, and worse.",
+    "He gives Danny a porch in August and a girl in a veil who took his argument apart on it — Danny has known her name since September. “She argues like it matters who’s right,” he says. “She prays at football games. Out loud.” Danny grins at the wrapper; he has had letters about the football. Jack gives him the boyfriend from home, and the night it ended, and what he did about it: nothing.",
+    "“I wasn’t going to be the guy waiting at the door.”",
+    "“Okay,” Danny says.",
+    "“A week later she’s seeing somebody. A guitar player. A good guy. He wrote her a song. Put her name on it.” He looks at the wrapper. “I sat through it.”",
+    "“The guitar player. You said.” Danny tips his head, their father’s move when the radio says something he doesn’t believe. “What’s it called?”",
+    "“Her name.”",
+    "“Oof,” Danny says.",
+    "“Then I disappeared. A month. I didn’t answer her. I missed the Saints.”",
+    {
+     "if": "e22_porch==\"candor\"",
+     "text": "“She asked me where I go. I got as far as ‘sometime.’”"
+    },
+    {
+     "if": "e22_porch==\"sincerity\"",
+     "text": "“She told me what it looked like from her side. I said I was sorry. Not why.”"
+    },
+    {
+     "if": "e22_porch==\"restraint\"",
+     "text": "“She told me what it looked like from her side. I didn’t say anything.”"
+    },
+    {
+     "if": "e22_porch==\"wit\"",
+     "text": "“She told me what it looked like from her side, and I made a joke.”"
+    },
+    {
+     "if": "e22_porch!=\"candor\" && e22_porch!=\"sincerity\" && e22_porch!=\"restraint\" && e22_porch!=\"wit\"",
+     "text": "“She noticed.”"
+    },
+    "Danny’s eyebrows go up at the Saints. He lets Jack get to the rest.",
+    "The rest is California. “The O’Connor one. Skye.”",
+    "“She does what?”",
+    "“She acts.”",
+    "“Like in plays?”",
+    "“…Sort of.”",
+    "He gives Danny that she’s funny, and smart in a way that comes up behind you, and that he laughs with her until he has to sit down on whatever’s there. That she knows about Danny, and has never made it strange.",
+    "“And she likes you?”",
+    "“She seems to.”",
+    "“Huh,” Danny says, a man who has seen Jack’s school pictures.",
+    {
+     "if": "skye_january",
+     "text": "“We’re making it official in January.”",
+     "else": "“She says we’ll see in January.”"
+    },
+    "“And the last night before the flights, it was Lena. She made a list of places, and we went to every one of them.”",
+    {
+     "if": "e22_roof==\"unguarded\"",
+     "text": "“I got two words in on a roof.”"
+    },
+    {
+     "if": "e22_roof==\"candor\"",
+     "text": "“I told her I had something to tell her and didn’t get to.”"
+    },
+    {
+     "if": "e22_roof==\"sincerity\"",
+     "text": "“I told her it was the best night since — and stopped.”"
+    },
+    {
+     "if": "e22_roof==\"wit\"",
+     "text": "“I told her she’d grade it.”"
+    },
+    {
+     "if": "e22_roof!=\"unguarded\" && e22_roof!=\"candor\" && e22_roof!=\"sincerity\" && e22_roof!=\"wit\"",
+     "text": "“I didn’t say it.”"
+    },
+    {
+     "if": "s2e1_tell==\"wit\"",
+     "text": "Somewhere in the middle of it Danny says it for him — “You’re in love with the veil girl” — and Jack doesn’t say no."
+    },
+    {
+     "if": "e22_margot==\"sincerity\"",
+     "text": "And the last afternoon a girl from his floor who doesn’t believe in anything was lighting a candle at the Newman shrine, and he lit one next to hers, for Danny. “She pray for me?” “She said it was research.” Danny thinks about that. “Tell her I’m a good subject.”"
+    },
+    "He stops there. Danny waits him out. The baby two tables over gives up on the bottle and falls asleep on somebody’s shoulder, and Jack gets to the part he came in here to say.",
+    "“When I’m with Skye I’m happy, Dan. I’m not faking it. I laugh the whole time. I like who I am with her. And then I’m with Lena one night and it’s —”",
+    "“It’s what?”",
+    "“It’s like getting hit. And I’d go back every night.”",
+    "Danny doesn’t move. He is a man who does push-ups to think, and he has gone completely still.",
+    "Over by the microwave Ma has the sleeping baby now, handed off by its grandmother, and is walking it up and down in front of the paper tree, and isn’t looking this way at all."
+   ],
+   "next": "s05b"
+  },
+  "s05b": {
+   "slug": "SUNDAY · 10:50 AM · TRUMBULL, THE VISITING ROOM",
+   "body": [
+    "Danny looks at his brother across the table long enough for the officer on the platform to turn a page.",
+    "“You want me to tell you which one.”",
+    "“No.”",
+    "“Good. ’Cause I ain’t.”",
+    "“I didn’t come in here for that.”",
+    "“I know what you came in here for.” He lifts his chin at the room — the platform, the bolted chairs, the paper tree. “Look where I live, Professor. I ain’t picking nothing for nobody. Last girl I picked was Tina Mancuso, and she married a guy who sells pools.”",
+    "He puts his forearms on the table, the way Jack has his. “I believe you. Both. That’s your problem — everything you feel is true. Most guys get one true thing at a time.” He turns one hand over on the table, palm up. “I laugh in here. Most days. Reggie does Ma on the phone — you never heard anything like it.” The hand goes back over. “And then it’s count time. Both.”",
+    "“She said to tell you Merry Christmas,” Jack says. “Lena. With the accent.”",
+    "“So do the accent.”",
+    "“I don’t do the accent.”",
+    "“Then I didn’t get it.” But he’s grinning at the table. “I like the veil girl. She asked my name.” He shrugs one shoulder. “And the California one knows about me, and she’s still around. I like that too.” He lifts a hand off the table and sets it back down. “That don’t count. I’m in here.”",
+    "In the toy corner somebody’s kid tips the bin of Duplos out onto the linoleum, and the room jumps and laughs, and Danny keeps his eyes on Jack.",
+    "“A guy sings a song,” he says, “and you go dark on her for a month.”",
+    "“She noticed.”",
+    "“Course she noticed.” He rolls the wrapper’s corner under his thumb. “You know what a month is, in here? Somebody don’t write for a month, you start reading the old ones over.”",
+    "He picks up the wrapper and turns it over, foil side up, and sets it down square to the edge of the table. “You can’t decide for the veil girl. She’s got the guitar guy. You can’t decide for the California one.” He looks up. “So I’m gonna ask you one thing, and then Ma’s coming back with that coffee, and we’re gonna talk about Rosie.”",
+    "“Okay.”",
+    "“Which one of ’em can you tell the truth to?”",
+    "Under the bolted table Jack’s right hand closes into a fist against his knee, and opens.",
+    "The room goes on around them: the microwave, the toy corner, a woman at the next table crying a little and laughing at herself for it. Danny waits. Over at the machines a can drops into the tray, and somebody’s quarters go in after it, one at a time."
+   ],
+   "choices": [
+    {
+     "text": "“I can’t tell either of them the truth.”",
+     "tag": "Candor",
+     "set": {
+      "s2e1_danny": "candor",
+      "soul.honesty": "+1"
+     },
+     "key": "Danny wouldn’t tell you which one. You told him you can’t tell either of them the truth.",
+     "response": [
+      "Danny nods, slow. “Both of ’em. Okay.” He taps one finger on the wrapper. “That’s a list, Professor. I asked you which one.”"
+     ],
+     "goto": "s05c"
+    },
+    {
+     "text": "“How do you do it? In here.”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e1_danny": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "Danny wouldn’t tell you which one. You asked him how he does it, in there.",
+     "response": [
+      "“I don’t wish. I told you that.” He turns the wrapper back over. “Deciding’s the easy part. It’s the next morning.”"
+     ],
+     "goto": "s05c"
+    },
+    {
+     "text": "“You’re supposed to tell me I’m a catch.”",
+     "tag": "Wit",
+     "set": {
+      "s2e1_danny": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "Danny wouldn’t tell you which one. You told him he was supposed to say you’re a catch.",
+     "response": [
+      "“You’re a catch.” Danny points at him across the table. “You’re a mess. Ask either one of ’em.”"
+     ],
+     "goto": "s05c"
+    },
+    {
+     "text": "*Don’t answer. Let him have the last word.*",
+     "tag": "Restraint",
+     "set": {
+      "s2e1_danny": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "Danny wouldn’t tell you which one. You let him have the last word.",
+     "response": [
+      "Danny lets the quiet go on. Across the room their mother has finally reached the coffee machine and is reading every button on it.",
+      "“Good,” Danny says. “You heard me.”"
+     ],
+     "goto": "s05c"
+    }
+   ]
+  },
+  "s05c": {
+   "slug": "SUNDAY · 11:40 AM · TRUMBULL → THE LOT",
+   "body": [
+    "Ma comes back with two more honey buns, a coffee for Danny in a paper cup with playing cards printed around it, and the Folgers can a good deal lighter, and sits down into the middle of whatever this is and looks from one son to the other.",
+    "Danny takes the coffee. “He misses the beach, Ma.”",
+    "“Of course he misses the beach.” She pushes a honey bun across the table at Jack. “Eat that. You didn’t eat.” And to Danny, are they giving him the vegetables, did he get the socks, and he answers all of it, every item, and somewhere in the middle of the socks he says to Jack, “How’s the rich one?”",
+    "“LA.”",
+    "“He’ll call.”",
+    "At a quarter to twelve the officer up on the platform calls the end of the hour, and the room stands up with all its chairs. The hug at the end is allowed. Danny gives Ma hers, and then he has Jack by both shoulders at arm’s length and takes a good look at him.",
+    "“Professor. You walked in here like it’s confession.”",
+    "“It was.”",
+    "“Yeah?” Danny lets go. “Penance is you come back the twenty-seventh and act normal in front of Ma.”",
+    "He goes out through the far door with the other men in blue, and at the door he turns and points at Ma, and she points back.",
+    "Out in the lot the truck is where they left it, running, a skin of new snow over the windshield except for two clear half-moons the defroster has worked open at the bottom of the glass. Frank has the pregame up. He waits till Ma’s door shuts, and puts it in reverse. Nobody in the cab says anything for a mile."
+   ],
+   "next": "s05d"
+  },
+  "s06": {
+   "slug": "MONDAY · 11:40 AM · THE KITCHEN",
+   "body": [
+    "The shortest day of the year doesn’t bother getting light. At twenty to noon the window over the sink is gray, and the snow along the curb on Glenwood has gone gray to match, and Ma has the light on over the stove like it’s February.",
+    "He and his father shoveled the walk at eight, and the Kovacs’ next door, and Mrs. Pavlik’s across the street because her son is in Columbus, without discussing any of it, and came in with their faces burning. He slept in Danny’s bed again and woke at six to the plow going by.",
+    "Rosie is at the other end of the table making a paper chain out of strips of construction paper, one link for every day left till Christmas; she ran out of days at four and is making more links anyway, for after. In the front room Nonna has the Rosary going on EWTN and is praying a decade behind it. Gina is still asleep. Ursuline let out Friday, and Gina has explained to everybody that break is a sacrament.",
+    "He texted Margot happy birthday at nine. She answered at 9:02.",
+    {
+     "if": "e22_solstice==\"candor\"",
+     "type": "sms",
+     "from": "Margot",
+     "text": "YOU TOASTED “WHO COUNTS.” I COUNTED. YOUNGSTOWN, TODAY: 9 HR 10 MIN OF DAYLIGHT. CONDOLENCES.",
+     "time": "9:02 AM"
+    },
+    {
+     "if": "e22_solstice==\"wit\"",
+     "type": "sms",
+     "from": "Margot",
+     "text": "THE PATRIARCHY SENT FLOWERS. I DECLINED.",
+     "time": "9:02 AM"
+    },
+    {
+     "if": "e22_solstice==\"sincerity\"",
+     "type": "sms",
+     "from": "Margot",
+     "text": "“UPHILL FROM MONDAY.” IT IS MONDAY. I AM HOLDING YOU TO IT.",
+     "time": "9:02 AM"
+    },
+    {
+     "if": "e22_solstice!=\"candor\" && e22_solstice!=\"wit\" && e22_solstice!=\"sincerity\"",
+     "type": "sms",
+     "from": "Margot",
+     "text": "DAY LENGTH, YOUNGSTOWN, TODAY: 9 HR 10 MIN. CONDOLENCES.",
+     "time": "9:02 AM"
+    },
+    "Ma is at the table with her coffee and the envelope from Saturday night, which has run out of back and started down the front. Jack is eating the last of the wedding soup for breakfast because it was there.",
+    "“Gina says you sleep with that phone.”",
+    "“Gina sleeps with a Jonas Brother.”",
+    "“That’s a *poster*.”",
+    "“She talks to it.”",
+    "Ma looks at him over her glasses, and at the RAZR face-down by his bowl, and leaves it lying there. She has never picked it up. She writes *cardoons* on the envelope and underlines it twice.",
+    "At 11:52 it buzzes against the oilcloth, and the little outer screen says THEO.",
+    "He has it open on the first ring.",
+    "“You answered,” Theo says, at once — and from the sound of it he had a whole voicemail ready, with an introduction."
+   ],
+   "choices": [
+    {
+     "text": "“You told me to.”",
+     "tag": "Candor",
+     "set": {
+      "s2e1_answer": "candor",
+      "rel.theo.trust": "+1"
+     },
+     "response": [
+      "“I tell you a lot of things, Costigan. You’ve never done one of them.” A breath, out in Brentwood. “Don’t make a habit of it. I’ll have nothing to talk about.”"
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "“Who is this?”",
+     "tag": "Wit",
+     "set": {
+      "s2e1_answer": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Your conscience,” Theo says. “Calling from Brentwood. I have a request.”"
+     ],
+     "goto": "s06a"
+    },
+    {
+     "text": "“Come for Christmas, Theo.”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e1_answer": "sincerity",
+      "rel.theo.warmth": "+1"
+     },
+     "response": [
+      "Theo clears his throat, out in Brentwood. “I had a preamble. Four minutes. There was a joke about my mother’s life coach’s life coach.”",
+      "“Come for Christmas.”",
+      "“…Yes,” Theo says. “That’s what I was calling about. You’ve ruined the preamble.”"
+     ],
+     "goto": "s06a"
+    }
+   ]
+  },
+  "s06a": {
+   "slug": "MONDAY · 11:56 AM · THE KITCHEN",
+   "set": {
+    "theo_xmas_eve": true
+   },
+   "body": [
+    "The preamble comes anyway, because Theo can’t help it: the break in Brentwood has been everything he said it would be; there is a man coming to his mother’s house on the twenty-sixth to move the furniture for spiritual reasons; and he would like — only if it’s no trouble, and he can tell from here that it’s trouble — to come to Youngstown for Christmas Eve and Christmas Day. “Just the two days. I’ll be out of your hair by Saturday. Your father won’t have to see me in daylight more than twice.”",
+    "Jack lowers the phone. “Ma. Theo wants to know can he come Christmas Eve. And Christmas.”",
+    "Ma has the RAZR out of his hand before he’s finished. She doesn’t put it to her ear so much as speak down into it, like the intercom at St. Brigid’s school. “Theo? Honey. *You come.*” She listens; Jack can hear Theo through the little speaker saying *Mrs. Costigan* the way other people say *Your Holiness*. “No. No. You come.” She hands it back and writes THEO on the envelope, under the smelts.",
+    "“Tell him we sit down at twenty to seven,” she says to Jack, “and we don’t wait for anybody. Not the Pope.”",
+    "Frank is in the side doorway in his Carhartt, with snow on his boots and an orange extension cord over his shoulder, on his way back out to the garage. He doesn’t come in.",
+    "“Tell him he don’t call first.”",
+    "“He called first, Dad.”",
+    "“Tell him anyway.” And he’s gone back across the yard with the cord paying out behind him.",
+    "“I heard,” Theo says in Jack’s ear. “Tell him —” and stops, and starts again, a man who has the end of every sentence and doesn’t have the end of this one. “Tell him thank you.” He recovers. “Eight-oh-nine Thursday morning. A gate with a letter in it. I’ll be the one in a coat that’s wrong for Ohio.”",
+    {
+     "if": "e22_tab==\"keep\"",
+     "text": "“Is my tab enjoying Ohio?” “It’s in my wallet.” “Then it’s seen more of the Midwest than I have.”"
+    },
+    {
+     "if": "e22_tab==\"candor\"",
+     "text": "“Your twenties are guarding 412. I left them in charge.”"
+    },
+    "“And tell your grandmother her twenty has been to Rodeo Drive,” Theo says. “It wasn’t impressed.”",
+    "When they’ve hung up, Nonna wants to know from the front room who that was. Ma tells her *il ricco*. Nonna smooths the gray cashmere over her knees with her left hand. “*Lo sapevo.*”"
+   ],
+   "next": "s06b"
+  },
+  "s06b": {
+   "slug": "MONDAY · 6:05 PM · THE BASEMENT",
+   "body": [
+    "It’s full dark by a quarter past five. At 6:05, when the sun is just down in New Orleans:",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "O Oriens. The Dayspring, on the shortest day of the year. Margot would hate it. —L.",
+     "time": "6:05 PM"
+    },
+    "Yesterday’s was *O Clavis*, at the same hour.",
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "sun went down at 4:59 here. margot would want the minute",
+     "time": "6:09 PM"
+    },
+    "The family Dell lives on a card table in the basement by the furnace, next to the laundry sink, where since this morning Ma’s baccalà has been soaking under a dish towel with a note on it in her hand: DON’T. He logs into the school email. Hale is at the top.",
+    {
+     "type": "doc",
+     "title": "From: Adrian Hale · Subject: Marks",
+     "text": "Marks are posted. You will find you did well, which I should like you to understand is not the same as being right."
+    },
+    {
+     "if": "e22_oral_personal",
+     "text": "*I am still thinking about the back booth. So, I suspect, are you.*"
+    },
+    {
+     "if": "!e22_oral_personal && duel.oral.heart>=2",
+     "text": "*I have been trying to decide whether “a man defending a person” is a compliment. I have decided it is, and that I shall deny it.*"
+    },
+    {
+     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor>=2",
+     "text": "*I have told the Dean it was an argument. He was astonished.*"
+    },
+    {
+     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor<2 && duel.oral.wit>=2",
+     "text": "*Keep the jokes. They are rarer than rigor and travel better.*"
+    },
+    {
+     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor<2 && duel.oral.wit<2",
+     "text": "*Adequate. Merry Christmas.*"
+    },
+    {
+     "if": "e22_williams==\"candor\"",
+     "text": "*I am reading your margins. You argue with Williams the way the Irish argue with God: constantly, and with the expectation of a reply.*"
+    },
+    {
+     "if": "e22_williams==\"wit\"",
+     "text": "*How is my hostage? Feed it margins.*"
+    },
+    {
+     "if": "e22_williams==\"restraint\"",
+     "text": "*You left Williams on my blotter without a speech. Berkeley approved.*"
+    },
+    {
+     "type": "doc",
+     "text": "P.S. Berkeley and I will be in Marisol. He is excellent company and does not argue.\n\n—A.H."
+    },
+    "The furnace kicks on behind him and runs. Upstairs Ma calls down that it’s on the table. Email has no margins. He misses the pencil. He writes back *Merry Christmas, Professor. And to Berkeley,* and sends it, and signs out of the school email; behind it the Dell still has every window open that it had at Thanksgiving, a blue one among them, and the screensaver comes up over all of it while he climbs the stairs."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "if": "!e22_oral_personal && duel.oral.heart>=2",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. He said I defended it like a man defending a person. He won’t put that in writing. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol."
+    },
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor>=2",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. He said it was an argument; he’s told they still occur. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol."
+    },
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor<2 && duel.oral.wit>=2",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. He said I defended her with jokes, like the English. He’ll allow it, for Ohio. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol."
+    },
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "if": "!e22_oral_personal && duel.oral.heart<2 && duel.oral.rigor<2 && duel.oral.wit<2",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. Adequate, he said. From him, in December, that’s a sonnet. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol."
+    },
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "if": "e22_oral_personal",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. I used the back booth on him and won. He said don’t do it to anyone you love. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol."
+    }
+   ],
+   "next": "s07"
+  },
+  "s07": {
+   "slug": "TUESDAY · 2:00 PM · THE SOUTHERN PARK MALL",
+   "body": [
+    "Frank lets them out at the department-store doors with the engine running and says four o’clock, and says it again through the window. Inside, with three shopping days left, all of Mahoning County has had the same idea at once. Gina has sixty dollars of babysitting money folded small in her coat pocket and her hand on it. She waits for the escalator.",
+    "“Twenty-seven days.” She is looking straight up at the top of it. “Do you know how hard that is? I go to *Ursuline*.”",
+    "“I know.”",
+    "“You don’t *know*.” At the top she steps off and turns around. “Is she nice?”",
+    "“No.”",
+    "“Good.” Three stores later, in front of a window full of mannequins in scarves: “Is she the nice one in real life?”",
+    "“She’s the other one.”",
+    "“*Good*.”",
+    "Past the Hallmark store she starts up again without warning, low, steering around strollers. “I almost told Kelsey. I told Kelsey I *almost* told her something, and now she follows me around like I’m a raffle.” A stroller; a man with a ladder. “Ma came down Thursday while it was on and asked what I was watching, and I said *nothing*. With it *on*.” She looks at him at last, outraged. “*Nothing*, Jack.”",
+    "She lets that carry them to the food court. In line at the pretzel stand, reading the board, she says, “You said the nun’s name like seven times at the kitchen table Saturday,” and that’s all she does with it. She orders a cinnamon one and splits it with him.",
+    "At the Orange Julius Ashley Vrabel is in line with her mother, in a Penn State sweatshirt. Gina sees her first. She lifts a hand about shoulder high, and Ashley glances at her mother, and lifts one back. When they’re past, Gina says, “We’re not friends. We’re *Catholic*.”",
+    "The gifts take an hour. For Theo, a Browns knit hat of his own, orange, the same as Frank’s — “So he quits borrowing Dad’s stuff,” Gina says. For Rosie he picks a stuffed crab up off a pile of them, and Gina says, “Do *not* say Idaho,” and he puts it back and buys the sixty-four colored markers that come in a tin. For Nonna, fleece slippers with backs that fold down, because the splint makes the old ones hard. For Ma, the good hand cream from the counter, the kind she won’t buy herself. For Frank, a snow brush with a scraper on the end; the one behind the seat of the truck is held together with tape. Gina buys something flat in a bag, for him, and won’t let him see it, and carries it against her chest. Hers he’ll have to come back for alone, and she knows it, and walks him past the earrings twice.",
+    "By the Santa line the Altar and Rosary ladies from a Slovak parish out in Campbell have set up a card table of nut rolls and spiral-bound cookbooks. Gina stops across from them at a kiosk of calendars and looks at a calendar of puppies, hard.",
+    "“Are you getting the nun something?”"
+   ],
+   "choices": [
+    {
+     "text": "Buy the pierogi cookbook off the church ladies’ table. Write *Proof.* inside.",
+     "tag": "Wit",
+     "set": {
+      "s2e1_gift": "wit",
+      "sent_lena_pierogi": true,
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "It’s eight dollars, *Our Favorite Recipes*, with pierogi on page forty-one three different ways and a note at the bottom from a Mrs. Hudak about the dough. He borrows a pen from the ladies and writes on the inside cover, in capitals: *PROOF. —J.*",
+      "Gina reads it over his arm. “That’s it? That’s the letter?”",
+      "“That’s the letter.”",
+      "She thinks about it, and nods, a professional."
+     ],
+     "goto": "s07a"
+    },
+    {
+     "text": "*Mail her the St. Brigid’s card in your coat — the one Nonna wrote on.*",
+     "tag": "Sincerity",
+     "set": {
+      "s2e1_gift": "sincerity",
+      "sent_lena_card": true,
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "It’s been in his inside pocket since breakfast, one of Ma’s box of parish cards with the stained-glass Brigid on the front. He wrote his line at the kitchen table, and before he could get it into the envelope Nonna had the pen out of his hand and was writing under it, slanted, in the hand they taught in San Giovanni in Fiore.",
+      "“What did she write?” Gina says.",
+      "“*Buon Natale alla suora.*”",
+      "“She calls her the nun in *writing*?”"
+     ],
+     "goto": "s07a"
+    },
+    {
+     "text": "*Nothing. She’s with Julian.*",
+     "tag": "Restraint",
+     "set": {
+      "s2e1_gift": "restraint",
+      "sent_lena_nothing": true,
+      "trait.control": "+1"
+     },
+     "response": [
+      "“No,” he says.",
+      "Gina puts the puppies back. “Coward.”"
+     ],
+     "goto": "s07a"
+    }
+   ]
+  },
+  "s07a": {
+   "slug": "TUESDAY · 3:30 PM · MARKET STREET → GLENWOOD AVENUE",
+   "body": [
+    "At half past three Gina goes into a store that sells nothing but candles, and he tells her he’ll wait outside, and crosses Market Street at the light to the post office.",
+    "The line is out the door, people holding boxes against their chests with both arms, and it doesn’t move, and then it does.",
+    {
+     "if": "sent_lena_pierogi || sent_lena_card",
+     "text": "He mails New Orleans first — Priority, Dupre Street in his capitals."
+    },
+    "At the window a clerk in a pair of light-up antlers sells him a money order for forty dollars. He fills it out at the counter by the pens on their chains and addresses a plain envelope in block capitals — D. KOSTELNIK, and a street, and STRUTHERS, OHIO — with no return address, and puts it through the slot marked LOCAL. “Merry Christmas,” the clerk says, and her antlers blink. Struthers is eleven minutes from where he’s standing. He has never driven it.",
+    "Frank is at the doors at four. Gina gets in the middle without being told.",
+    "At home there is a box under the tree that wasn’t there this morning, out in front of the Nativity: a Priority Mail box with a round black postmark — MARISOL CA, DEC 17 — and the return address in tall, even capitals, N. DUPRE ST., NEW ORLEANS, LA. Ma is standing over it with the dish towel on her shoulder, and from the tape at the corners it’s been picked up and put back down more than once.",
+    "“From California,” Ma says. “Who in California sends you a *package*?”",
+    "“Lena.”",
+    "Behind him on the mat Gina takes her boots off one at a time, very slowly, listening."
+   ],
+   "next": "s08"
+  }
+ }
+}
