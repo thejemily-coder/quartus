@@ -1497,3 +1497,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     him hard, whichever fits her character). **One option is now OFF the table: that she knew all along and expected
     it.** **She didn't. It was always real to her.** (Her clocking Lena in S1 is jealousy and intuition, never
     foreknowledge or resignation.)
+- **Comic bit after the Skye breakup (player): Laney reads the tabloid version aloud.** She both **makes a show of it**
+  and **genuinely relishes it**: a gossip blog / weekly item on the breakup (period: Perez Hilton, Just Jared, Us
+  Weekly, a "sources say" blind item), gloriously wrong about everything ("a source close to the actress says the
+  mystery college boyfriend 'couldn't handle her fame'"). Dramatic reading in the lounge; Theo supplies sound
+  effects. Keep it on Laney and the tabloid, never on Skye's pain (Laney grudgingly liked her; one flicker of that
+  under the glee). Room places it (S2, after New Orleans).
