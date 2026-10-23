@@ -1560,3 +1560,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Lena on the first day back: she's just gone.** She's seriously upset and doesn't want to be seen by anybody.
     **When they're forced next to each other, it's perfect politeness, which quickly unravels into the first sideways
     fight** (the proxy war opens; the Facebook-status grievance itself is saved for a later fight per the brief).
+- **S2E03 Friday call refinement (player; patches outlines/s2e03.md s09).** The plan's hint stands ("I'm going to see
+  him Monday… I haven't been fair to him… I'm going to fix it."), plus the player's addition: **she's going to coffee
+  or dinner with Julian and asks if Jack will be around after.** Jack hears "seeing Julian" and takes the rest as a
+  friend's courtesy or a back-off signal, and his answer is evasive or a "probably not / I've got a thing" (he'll be
+  with Skye): **on a replay, she was asking him to be there right after she ended it.** The call ends awkwardly as
+  planned (he hangs up first). Written both ways; her intent off-screen.
