@@ -1523,3 +1523,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   4. **Skye tells him to go.** She's away that week anyway (location shoot or press; room picks a plausible reason) and
      pushes him: go watch your Saints win. **She trusts him completely, which is the knife: it was always real to
      her.**
+- **Jack tells his mom first, and she brings up Lena (player; adapt to voices, not verbatim; S2E03/E04, right before
+  Jack and Skye go official).** On the call (or text, then call) where Jack tells Maria about Skye first, as he
+  promised himself, Maria points out that **he was texting and calling Lena all break too** (calling her whatever
+  Maria calls her on the page: check continuity, e.g. by name, "the Saints girl" is Frank's, or a Maria-ism).
+  Jack: **"She's still got a boyfriend, Ma. He wrote a song for her. It was good."**
+  - **Maria doesn't say anything, because she can hear it in his voice still.**
+  - **Jack can tell she wants to say something but can't figure out how**, and **he can't figure out what.** The call
+    ends on that silence. (Joins Danny's and Nonna's unanswered questions: now three people who see it.)
