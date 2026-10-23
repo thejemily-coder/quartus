@@ -1421,3 +1421,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - Her decision itself stays **off-screen** (POV); the player feels its possibility in her warmth and learns the fact
     in New Orleans. **The Skye threads run in parallel** (the double state), which is exactly what turns the calls into
     betrayal for her when she sees the status.
+- **After S2E01 (player feedback).** "Great episode all around. **The Skye reveal scene was hysterical.**"
+  - **The two questions (Danny's and Nonna's) are the season's trouble (player's read; make it the engine):** **Jack
+    can tell Skye the truth about everything except Lena, and he can tell Lena the truth about everything except Skye
+    and how he really feels about Lena.** And **both women make him pray, in different senses.** Keep returning to
+    both questions (never answered aloud until New Orleans); the asymmetry of his honesty is the shape of the double
+    state.
