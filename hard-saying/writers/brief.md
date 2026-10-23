@@ -1536,3 +1536,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   a couple of them: a seed, a clue, a small turn), so they're well set up for **Season 3 on**, when Jack and Lena are
   together and the show opens up: their relationship stays central but develops *around* everything else going on
   (mystery, friends' arcs, family, the world). Showrunner: name the background beats advanced in each S2 outline.
+- **The Reliquary goes back to Lena in New Orleans (player).** Jack carried Lena's tin home over break (eleven inside)
+  and **won't get a chance to give it back before Skye goes public**, and once Skye is public **Lena absolutely would
+  not want it** (if he tries, she refuses it or he can't bring himself to offer). **She gets it back in New Orleans.**
+  (Room places the moment; it lands right before Ash Wednesday and Jack's Lent without cigarettes, so the count resumes
+  with meaning. Its long arc stands: S4 he quits for real; the wedding gift.)
