@@ -265,19 +265,32 @@ function save() { S.updatedAt = Date.now(); writeLocal(); queueRemote() }
 function queueRemote() { if (!sync.ref) return; clearTimeout(sync.timer); sync.timer = setTimeout(pushRemote, 700) }
 function remoteBody() {
   const cur = S.cur && EP[S.cur.ep];
+  // The main doc must stay under the db's 256 KiB cap: finished-episode logs live in saves/main/log/<ep>,
+  // the restart checkpoint in saves/main/aux/checkpoint.
+  const state = Object.assign({}, S, { logs: {}, checkpoint: null, split: 2 });
   return {
     updatedAt: S.updatedAt,
     summary: { current: S.cur ? { ep: S.cur.ep, scene: S.cur.scene, stage: S.cur.stage, title: cur ? cur.title : '' } : null, completed: S.completed },
-    state: S
+    state
   };
+}
+async function pushAux() {
+  const ck = S.checkpoint ? S.checkpoint.ep + ':' + S.checkpoint.log.length : 'none';
+  if (sync.ckSent !== ck) { await sync.db.doc('saves/main/aux/checkpoint').set({ checkpoint: S.checkpoint || null, updatedAt: S.updatedAt }); sync.ckSent = ck }
+  sync.logsSent = sync.logsSent || {};
+  for (const id of Object.keys(S.logs || {})) {
+    if (sync.logsSent[id]) continue;
+    await sync.db.doc('saves/main/log/' + id).set({ ep: id, entries: S.logs[id], updatedAt: Date.now() });
+    sync.logsSent[id] = true;
+  }
 }
 async function pushRemote() {
   if (!sync.ref) return;
   if (sync.busy) { sync.dirty = true; return }
   sync.busy = true; sync.dirty = false;
-  try { await sync.ref.set(remoteBody()); setSync('account') }
+  try { await pushAux(); await sync.ref.set(remoteBody()); setSync('account') }
   catch (e) {
-    if (e && e.code === 'invalid_argument') { sync.ref = null; setSync('local') }
+    if (e && e.code === 'invalid_argument') { setSync('error') }
     else if (e && e.code === 'unavailable') { sync.dirty = true }
     else setSync('error');
   }
@@ -286,11 +299,22 @@ async function pushRemote() {
 }
 async function archiveLog(epId, entries) {
   if (!sync.ref) return;
-  try { await sync.db.doc('saves/main/log/' + epId).set({ ep: epId, entries, updatedAt: Date.now() }) } catch {}
+  try { await sync.db.doc('saves/main/log/' + epId).set({ ep: epId, entries, updatedAt: Date.now() }); sync.logsSent = sync.logsSent || {}; sync.logsSent[epId] = true } catch {}
+}
+async function pullAux(state) {
+  try {
+    const q = await sync.db.collection('saves/main/log').get();
+    state.logs = state.logs || {};
+    q.docs.forEach(d => { const x = d.data(); if (x && x.ep && Array.isArray(x.entries)) state.logs[x.ep] = x.entries });
+    sync.logsSent = {}; Object.keys(state.logs).forEach(k => sync.logsSent[k] = true);
+    const c = await sync.db.doc('saves/main/aux/checkpoint').get();
+    if (c.exists) { const x = c.data(); state.checkpoint = x && x.checkpoint || null; sync.ckSent = state.checkpoint ? state.checkpoint.ep + ':' + state.checkpoint.log.length : 'none' }
+  } catch {}
+  return state;
 }
 function setSync(m) { sync.mode = m; const el = $('syncline'); if (el) el.textContent = syncText() }
 function syncText() {
-  return { account: 'Saved to your Claude account · follows you across browsers', local: 'Saved in this browser only', error: 'Account save failed · saved in this browser', checking: 'Connecting to your save…' }[sync.mode];
+  return { account: 'Saved to your Claude account · follows you across browsers', local: 'Saved in this browser only', error: 'Account save failed · saved in this browser (it will retry)', checking: 'Connecting to your save…' }[sync.mode];
 }
 async function initRemote() {
   if (!window.claude || !window.claude.use) { setSync('local'); return }
@@ -304,7 +328,7 @@ async function initRemote() {
     sync.ref = ref;
     if (snap.exists) {
       const r = snap.data();
-      if (r && r.state && (r.updatedAt || 0) > (S.updatedAt || 0)) { S = Object.assign(fresh(), clone(r.state)); writeLocal(); render() }
+      if (r && r.state && (r.updatedAt || 0) > (S.updatedAt || 0)) { let st = Object.assign(fresh(), clone(r.state)); if (r.state.split) st = await pullAux(st); S = st; writeLocal(); render() }
       else if ((S.updatedAt || 0) > (r.updatedAt || 0)) pushRemote();
       setSync('account');
     } else if (S.updatedAt) { await pushRemote() } else setSync('account');

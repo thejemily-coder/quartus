@@ -31,6 +31,11 @@ Game artifact: https://claude.ai/artifact/3MQUVCyw8UxRfXjX7fr9bH
   `writers/finalize.workflow.js` with `{ep,id,season,episode,prev,save,notes}`: save-delta patch, assembly, the review
   board, revision. Then build, test, publish, commit.
 
+## Save format
+- The main doc `saves/main` holds the state minus finished-episode logs and the restart checkpoint (the db caps a
+  document at 256 KiB). Logs: `saves/main/log/<EP>`; checkpoint: `saves/main/aux/checkpoint`. When reading the save,
+  merge the log docs into `logs` (state.split == 2).
+
 ## Files
 - `game/engine.html`: the player (template); `game/play.html`: built page with every episode baked in.
 - `tools/validate.py`, `tools/assemble.py`, `tools/build.py`.

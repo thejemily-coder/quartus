@@ -1370,3 +1370,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The heat stays after the no (player).** A no doesn't cool the scene: the heat continues at full intensity,
     **confined to the limit set** (to the letter), rather than ending or fading out. (Except the first no, which
     stopped everything because she needed to understand.)
+- **After S1E21 (player feedback).** "Both wonderful and upsetting: everything with Skye was incredible; everything with
+  Lena was painful." The player went **full withdrawal**: non-responsive to Lena, and **missed the Saints game at
+  Sully's for the first time**.
+- **S1E22: the withdrawal has to come up (player).** On the last night, they have **something just short of an honest
+  conversation** about it. **She doesn't press, because she saw his face at the party** the one time they looked at
+  each other. What she names (Lena's voice): **he's never just not answered her texts; he's never missed a Saints game
+  at Sully's; he always used to come to her no matter what was going on, and now he stays away**, speaking to her only
+  when he couldn't avoid her. **She knows he's hurting badly**, even though next month, once he's dating Skye, she won't
+  believe it anymore. (Jack can't say why; it stops just short. POV: he sees her restraint, not her reasons.)
