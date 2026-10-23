@@ -1,0 +1,272 @@
+{
+ "scenes": {
+  "s11": {
+   "slug": "SATURDAY · 3:30 PM · ST. BRENDAN’S — THE CONFESSIONAL",
+   "set": {
+    "confession_owed": 0,
+    "s2e5_confessed": true,
+    "resolve.jack": "+2",
+    "rel.osei.trust": "+1"
+   },
+   "body": [
+    "Inside, the afternoon comes through the blue glass on the west side and lays the pews out in long blue bars, and up where the two slopes of the roof meet it’s already evening. At the back, by the doors, the coat closet: the index card turned out, KNOCK (gently), and over the frame the little light is on.",
+    "Mrs. Fitch has her card table set up beside it, as she does every Saturday, with her lanyard and her ledger and a Folgers can with CATHOLIC RELIEF SERVICES taped around it in her own printing. She sees him look at the bare end of the table. “Lemon bars are Sunday,” she says, and goes back to her pencil.",
+    "Two folding chairs along the wall are taken. On one, a woman from town with a canvas market bag on her knees and the green tops of leeks sticking out of it. On the other, still in his Saints jersey, Joey Abruzzo, who left Sully’s at the two-minute warning and beat Jack here on the bus. “Birthday eve,” Joey tells him, in what for Joey is a whisper and for anybody else would be a toast. “Clean slate for nineteen. I’ve got a ride back for the third quarter.”",
+    "The closet door opens on an old man with a cane, who nods to everybody on his way to the sun, and Joey knocks and disappears inside.",
+    "The door is the door they hung in 1962, and Joey is Joey. There are no words in what comes through it — Jack makes sure of that, and so does Mrs. Fitch, who starts humming *Holy God, We Praise Thy Name* at her ledger at a volume she has been setting since the Carter administration, and keeps it up through every verse, and on the second verse the woman with the leeks comes in under her without looking up. When the door opens again Joey comes out red to the ears, dips his whole hand in the font, crosses himself twice, and heads up the side aisle for the Marian shrine. The woman goes in. When she comes out she sits back down beside a man in a windbreaker who has just come in from the lot jingling his keys, who must be her husband, and who looks like he’s been parking the car since three.",
+    "Jack knocks, gently, and steps in, and takes the kneeler.",
+    "The closet is the closet: the linen screen on its frame with the violet of the stole behind it, the old hooks along the back wall, the Prodigal Son on the inside of the door. On the far side the chair takes the priest’s weight, and the leg goes where it goes.",
+    "“Bless me, Father, for I have sinned. It’s been two weeks since my last confession. At home.”",
+    "“Jack,” Osei says. Only that.",
+    "On the steps he had a list. In here he keeps it to what will fit through the screen.",
+    "“At home I told Father Dom about the phone. All of it. That’s done.” He looks at the coat hook nearest his head, which has a drip of the wall’s paint on it from some year when nobody bothered to take it down. “The week after New Year’s she sent me a picture. At my parents’ house. I kept it, and I wrote back.”",
+    "“Monday night. Her room.” The words for it are short ones, and he has them, and he uses the fewest he can. “It went further than it’s ever gone. I stopped. I stopped at the last —”",
+    "The sentence stops where he did. He lets it.",
+    "“It’s the same every time. It goes a little further, and I stop a little later, and I come in here.” And then the thing he walked in carrying, which isn’t a sin yet. “I’m seeing her tonight.”",
+    "Osei is quiet. Out past the door Mrs. Fitch turns a page of her ledger, and the husband coughs, and the 11 goes by on Ocean Road with its brakes squealing at the corner, and Osei is still quiet.",
+    "“In December,” he says at last, “I told you that you were not avoiding the occasion. You were scheduling it.” The chair gives a little as he moves the leg. “Now you have scheduled *me*.”",
+    "Jack opens his mouth, and there isn’t anything in it. He thinks of the Saab doing twenty-two down Mission Street so he’d make it, and a clock over a kitchen door. It’s true. He had help.",
+    "“You came at half past three because you will be with her tonight,” Osei says, “and you would like to go to her with nothing on your account.” There’s no heat in it at all. “There is an old name for counting on mercy to cover what you have already decided. Presumption. It is a sin against hope, my friend — not against her. Against hope. Hope asks God for the strength. Presumption asks him for the receipt.”",
+    "Behind the linen the shadow of his head bends, and comes up.",
+    "“This morning’s Gospel. The physician comes for the sick, not the well. Good — come sick, and I will open this door every time. But I was a doctor a long while, and a doctor who stitches the same cut every Saturday is allowed to ask what you are doing with the knife.” A breath. “I am not your permission. I will be here every Saturday you come; I would much rather that than you stopped coming. But one of these Saturdays you will bring me the thing you cannot take back, and you will have decided it at half past three, in this closet.”",
+    "Out in the church the woman’s husband shifts on his folding chair, and the chair creaks.",
+    "“You told me in December that you want her good. I believed you. I still do.” Osei’s voice is lower now, and nearer the screen. “Then it is her good you are deciding at half past three as well, and not only yours.”",
+    "And then the question, with no proverb on it.",
+    "“Do you want to stop?”"
+   ],
+   "choices": [
+    {
+     "text": "“Not tonight. I want to want to.”",
+     "tag": "Candor",
+     "cue": "Father Osei heard every word.",
+     "set": {
+      "s2e5_osei": "candor",
+      "soul.honesty": "+1"
+     },
+     "key": "At confession you told Father Osei the truth: not tonight. You want to want to.",
+     "response": [
+      "“Not tonight,” Jack says. “I want to want to.”",
+      "Outside the door the husband’s keys go into a pocket and come out again.",
+      "“That is the smallest beginning there is,” Osei says. “God takes less. He has taken less from me.” The chair creaks. “A man who wants to want is standing at the door with his hand on it. I have watched men come the whole way in from there. Bring me that, if that is what you have. But bring it before, not after. Before, it is still a prayer.”"
+     ],
+     "goto": "s11c"
+    },
+    {
+     "text": "“Yes. I don’t know how.”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e5_osei": "sincerity",
+      "soul.grace": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "At confession you told Father Osei yes — you want to stop — and that you don’t know how.",
+     "response": [
+      "“Yes,” Jack says. “I don’t know how.”",
+      "“Then don’t go to her room tonight,” Osei says. “Sit on her porch. Sit in her car with the light on. Take her somewhere with a waiter who interrupts. In Kumasi we say a man who will not move his chair complains all night about the draft.” Through the linen, something that might be a smile. “I am not telling you to leave her, my friend. I am telling you to move the chair.”"
+     ],
+     "goto": "s11c"
+    },
+    {
+     "text": "“I’ll stop before it gets there.”",
+     "tag": "Restraint",
+     "set": {
+      "s2e5_osei": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "At confession you told Father Osei you’d stop before it got there.",
+     "response": [
+      "“I’ll stop before it gets there.”",
+      "“You told me that in December,” Osei says. “Twice.” A pause through the screen. “I believed you both times. That is my sin, not yours.”",
+      "The leg shifts on the chair. “Stopping is a grace, and I thank God for every one. But you have just told me where you stopped on Monday. A man who keeps walking out to the edge to prove he can stop there is not practicing stopping. He is practicing the edge.”"
+     ],
+     "goto": "s11c"
+    }
+   ]
+  },
+  "s11c": {
+   "slug": "SATURDAY · 3:49 PM · ST. BRENDAN’S — THE CONFESSIONAL, THEN THE NAVE",
+   "set": {
+    "osei_penance_name": true
+   },
+   "body": [
+    "He says the Act of Contrition. He has been saying it since he was seven, and it goes the way it always goes until the last line, *and to avoid the near occasion of sin*, which he has said a thousand times and never before with the occasion already on somebody’s calendar, in pen.",
+    "Behind the linen the shadow of Osei’s hand comes up.",
+    "“…and I absolve you from your sins, in the name of the Father, and of the Son, and of the Holy Spirit.”",
+    "“Amen.”",
+    "“For your penance —” Osei stops. “In December I gave you a decade for her, by her name, and you had the name and I didn’t. What is her name?”",
+    "He hasn’t said it in this closet. “Skye.”",
+    "“Skye,” Osei says, carefully, setting it down where he can find it again. In that voice, unhurried, it sounds like a name off a parish register. “A decade for Skye. By her name. Not ‘a girl,’ not ‘her.’ Before God, not before me. And one for you, by yours.” The chair takes the leg’s weight. “I will say one for her myself tonight. Now I can.”",
+    "“The Lord has freed you from your sins. Go in peace.”",
+    "“Thanks be to God.”",
+    "“One more thing.” The chair, the leg. “Next Saturday. Whatever you bring.”",
+    {
+     "type": "break"
+    },
+    "He comes out into the blue. The husband in the windbreaker is on his feet with his keys in his fist, and the light over the closet door stays on for him. Mrs. Fitch slides the Folgers can along the card table toward him; he puts in the five he has, and she makes a mark in the ledger.",
+    "Up at the Marian shrine Joey has a taper and is taking a long time over which red cup in the rack is the lucky one. He chooses, and lights it, and kneels, and he’s still on his knees when a horn goes twice on Ocean Road. Joey jams the taper in the sand, genuflects at a run, and is out the side door into the courtyard with the jersey flying.",
+    "The clock over the choir loft says four minutes to four. The 11 stops at the corner of Ocean and Mission at five past and goes back down Mission Street past the green awning, where it’s still the third quarter, going on the fourth. The pews in front of him are empty all the way to the altar rail.",
+    "Ten Hail Marys for Skye, and ten for him. They’re owed either way."
+   ],
+   "choices": [
+    {
+     "text": "*Take the 11 back to Sully’s for the fourth quarter. Say it on the bus.*",
+     "tag": "Go back",
+     "set": {
+      "s2e5_after": "back"
+     },
+     "key": "After confession you went back to Sully’s for the end of the game.",
+     "goto": "s11a"
+    },
+    {
+     "text": "*Stay. Say it here, in a pew.*",
+     "tag": "Stay",
+     "set": {
+      "s2e5_after": "stay",
+      "trait.control": "+1"
+     },
+     "key": "After confession you stayed in the pew and prayed the decade for her.",
+     "goto": "s11b"
+    }
+   ]
+  },
+  "s11b": {
+   "slug": "SATURDAY · 4:05 PM · ST. BRENDAN’S, THE SIXTH PEW",
+   "set": {
+    "heard_bell_rope": true,
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "Through the side windows he hears the 11 come to the corner and sigh and go on without him.",
+    "He’s in the sixth pew on the Lady’s side, on the kneeler, with nothing in his hands. The church is empty but for the votives at the shrine, Joey’s new one among them, and a man asleep in the last pew with his shoes off and set side by side on the kneeler beside him, toes to the aisle, as neat as a pair in a store window.",
+    "He has no beads. He has ten fingers and the back of the pew in front of him.",
+    "“For Skye,” he says, low, to the front of the church.",
+    "The Our Father. Then the Hail Mary, the whole of it — *Hail Mary, full of grace, the Lord is with thee* — through to *the hour of our death*, and before each of the next ones the same two words, said to the same place: *For Skye.* A Hail Mary is a Hail Mary. He doesn’t add to it. On the fourth the man in the back turns over and says something to his shoes. On the eighth a car goes by on Ocean Road with somebody leaning out of it shouting the chant at the A-frame, and he keeps going under it. Ten, on his fingers against the wood. The Glory Be.",
+    "Then the second decade, for himself, by the name he was baptized with, which turns out to be harder to say in an empty church than hers.",
+    "At a quarter to five the light over the closet door goes off. Osei comes out with the violet stole over his arm, genuflects to the tabernacle with the leg taking the long way down and the long way up, and goes up the side aisle to the sacristy, past the sixth pew, without turning his head. Jack is grateful to him for that past anything he could put into words.",
+    "The RAZR has been going in his pocket since a quarter past four, on silent, buzzing against the wood of the kneeler like a trapped bee, and he hasn’t looked. He opens it now, in the pew, and reads them in order, and they keep coming while he reads.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "dale says im a natural",
+     "time": "4:18 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "who dat. i KNOW the rest now",
+     "time": "4:31 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "45 to 14. the bell lady handed me the rope for the end. she said our guest",
+     "time": "4:49 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "best thing anybodys ever handed me in a bar",
+     "time": "4:49 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "ted says the redhead smiled once. he has witnesses",
+     "time": "4:52 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "outside your church in 10. dont confess anything else",
+     "time": "4:58 PM"
+    },
+    "He sits back in the pew with the phone open on his knee, and the man in the back is awake now and putting his shoes on, one and then the other, slowly, as if there were a right order. On his way out he stops at the end of the sixth pew, a gray man in a Raiders cap who smells of the bus.",
+    "“They win?”",
+    "“Forty-five to fourteen.”",
+    "The man thinks about it. “Good for them people,” he says, and genuflects with a hand on the pew end, and is gone up the aisle into the light.",
+    "The Saab comes around the corner onto Ocean Road at ten past five with the top down and a little paper Saints flag somebody gave her stuck in the windshield frame, and she’s telling him the second half before he has the door open: Dale’s quarters, the chant all the way through, Joey nearly in tears at the end, everything, in order and then out of order. They eat at Lupe’s truck on Seacliff, sitting on the hood, with horns still going for the Saints all the way down to the beach, and drive the coast road with the heater on and the top still down because she refuses to put it up on a night like this, and it’s close to ten when she turns onto Del Playa."
+   ],
+   "next": "s12"
+  },
+  "s13": {
+   "slug": "SUNDAY · 9:30 AM · ST. BRENDAN THE NAVIGATOR — CANA",
+   "music": "Marty Haugen — “We Are Many Parts”",
+   "set": {
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "In the night the cloud came in off the Channel and stopped against the hills in one low lid, the first weather of the year. He left Del Playa at half past eight with Skye asleep across the whole of the bed and the white phone still in her hand, and wrote *930 mass. st brendans at noon* on the back of the Oceanography syllabus from his bag and stood it against her alarm clock, and stood in the doorway a while longer than he had time for. He walks up through the Grove with the Carhartt zipped over yesterday’s shirt, and the eucalyptus are restless over the path, dropping bark in long strips. It isn’t raining. It looks like a sky that’s thinking about it.",
+    "The 9:30 is the Newman crowd’s Mass. Gus is up at the organ in the ship’s-wheel sweater; beside him Clare Dominguez has a violin under her chin, tuning, the 49ers cap off for church, and Kevin has taken the end of the front pew where he can hand her the music, which he does twice before she needs it. Joey, nineteen today, is telling Tyler Brandt so in the third pew, and Tyler already knows. Peter Haddad has the usher’s badge. Mrs. Fitch has her end of the fourth pew, as she has had it since before any of them were born.",
+    "Lena’s Mass is the nine o’clock at night. She’s here anyway, two pews ahead of him on the Lady’s side, with Julian, her hair up and the Haiti clipboard on the kneeler, and at the end of their pew four long-handled collection baskets lean against the wall with HAITI on an index card taped to each handle in her printing. The baskets tell him why. He didn’t pick the pew. It’s where there was room.",
+    "Becca reads the first reading. She reads it the way she says everything, straight out, Idaho-flat and unembarrassed: *No more shall people call you “Forsaken” … But you shall be called “My Delight.”* Jack has been carrying the same picture since Thursday, a TV picture of one runway and a fence and the crates stacked high on the wrong side of it, and *Forsaken* goes to it the minute she says it. *My Delight* hasn’t got anywhere to go yet.",
+    "Kenzie sings the psalm. Tyler reads Corinthians — *different kinds of spiritual gifts but the same Spirit* — as though he’d like to sign everybody up for at least one.",
+    "Osei reads the Gospel himself, in the green, with his weight off the bad leg. *When the wine ran short, the mother of Jesus said to him, “They have no wine.”* He reads it all the way down: the six stone jars, the servants filling them to the brim, the headwaiter who doesn’t know where it came from. The last time Jack heard those verses it was a little after ten last night, in another voice.",
+    "Osei doesn’t go up into the pulpit. He comes down to the foot of the step with his hands folded.",
+    "“Mary notices before anybody has said a word,” he says. “She does not fix it — she has no wine either. She tells him, and she tells the servants to do whatever he tells them, and then she goes back to the party, which I think is the hardest thing anybody does in this Gospel.”",
+    "He goes back up the step, and before the Creed he turns at the ambo. “The second basket today is for Haiti. Miss Broussard has the baskets, and she will count them twice. And Yaw has a generator now.” Half the church heard about Yaw on Wednesday, and the sound they make isn’t applause, because it’s church, but it’s next door to it.",
+    "At the offertory Gus starts the Haugen, and Clare comes in a bar late and then exactly right, and Lena and Julian and Peter take the long baskets down the pews. Julian takes Jack’s side. The basket comes along the pew at the end of its pole; Jack puts in what’s left of Thursday’s tips, folded twice, and Julian, at the far end of the handle, gives him the same small nod he gives everybody, and moves on to the next row.",
+    "At the sign of peace Joey goes up and down his pew shaking every hand in reach and two that aren’t, and Becca, across the aisle, reaches over and gives Jack hers, a ranch handshake, firm, *Peace be with you*, and means nothing by it but peace. Two pews up Lena turns to the pew behind hers, and gives her hand to a woman in a Saints scarf and to the woman’s little boy, and turns back to the front.",
+    "At the Lamb of God the pews begin to empty forward, one by one, from the front. Two pews up Julian stands to let Lena out, and sits back down, as he does every Sunday, with his hands on his knees.",
+    "Yesterday at ten to four Jack was absolved in a closet forty feet behind him. He knows what he’s been since last night, and he isn’t going up that aisle on the strength of not thinking about it."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday, behind the screen: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back. The first day back I gave him Father Dom’s message: we’ll see. He laughed. I told him I went at home. The night of the earthquake he asked the bishop if he could spare an old doctor. The bishop couldn’t spare a young priest. His friend Yaw from medical school is in Port-au-Prince — alive, operating in a parking lot. Saturday at three-thirty the light was on. Sunday he read Cana. Yaw has a generator now."
+    }
+   ],
+   "choices": [
+    {
+     "text": "*Go up with your arms crossed over your chest.*",
+     "tag": "Grace",
+     "cue": "Lena saw that.",
+     "set": {
+      "s2e5_cana": "grace",
+      "soul.grace": "+1",
+      "resolve.jack": "+1"
+     },
+     "key": "On the Sunday of Cana you went up with your arms crossed for a blessing.",
+     "response": [
+      "He gets into the line behind the woman in the Saints scarf and her little boy, with his arms crossed over his chest, right hand to left shoulder, the way the nuns at St. Brigid’s taught the second grade to go up before they were ready.",
+      "When he reaches the front Osei looks at the arms and lifts his free hand over Jack’s head instead of the Host, and makes the cross in the air. “May almighty God bless you.” His face is kind and has nothing else in it. Nothing in it has been in the closet.",
+      "On the way back he forgets to take his arms down. Lena is coming back along the side aisle with her hands folded, and her eyes go to his crossed arms, and up to his face, and then she’s past him to her pew, where Julian stands to let her in. In his own pew Jack uncrosses his arms and kneels."
+     ],
+     "goto": "s14"
+    },
+    {
+     "text": "*Stay in the pew. Let the line go by.*",
+     "tag": "Restraint",
+     "set": {
+      "s2e5_cana": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "On the Sunday of Cana you stayed in the pew and let the line go by.",
+     "response": [
+      "He keeps his seat and moves his knees for the people going out past him. Joey goes by with “Excuse me, Jack, sorry, excuse me” at a volume meant for the upper deck.",
+      "Then it’s only him in his pew, and two rows up only Julian in his, both of them sitting, and the line going up the middle without them.",
+      "Lena’s line comes back along the side aisle past the end of his row. She sees the pew empty except for him, and him sitting in it, and her step doesn’t change, but her eyes stay on him a moment past the end of the pew. Then she’s past, and back in her own pew, kneeling, beside the man who never goes up."
+     ],
+     "goto": "s14"
+    },
+    {
+     "text": "*Kneel. Say Nonna’s prayer for the ones who can’t go up — all the way to the end this time.*",
+     "tag": "Sincerity",
+     "set": {
+      "s2e5_cana": "sincerity",
+      "soul.grace": "+1",
+      "trait.sincerity": "+1"
+     },
+     "key": "On the Sunday of Cana you knelt and said your grandmother’s prayer all the way through.",
+     "response": [
+      "He kneels while the pew empties around him and shuts his eyes and starts it, the one Nonna taught him at the kitchen table for the Sundays you can’t go up. *My Jesus, I believe that You are present in the Most Holy Sacrament.* He gets to *come at least spiritually into my heart*, and Kenzie starts the communion hymn over his head, and he keeps going under it this time, all the way. *I embrace You as if You were already there, and unite myself wholly to You. Never permit me to be separated from You.*",
+      "“Amen,” he says, and opens his eyes.",
+      "Lena is passing the end of his pew, coming back along the side aisle with her hands folded, and from where she is she must have seen him on his knees with his lips moving. She looks at him straight for the length of one step, and then at the floor ahead of her, and goes on to her own pew."
+     ],
+     "goto": "s14"
+    }
+   ]
+  }
+ }
+}

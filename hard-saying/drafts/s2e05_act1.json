@@ -1,0 +1,276 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "THURSDAY · 7:40 AM · DELGADO HALL, 412",
+   "set": {
+    "theo_pledged": true
+   },
+   "body": [
+    "The pipes in the wall knock first, the shower at the far end of the hall working its way toward hot, and under the knocking Theo’s iPhone chimes on the desk: one note, a gap, one note, a gap. Past the blind the quad is still gray, under a fog that hasn’t decided to leave.",
+    "The navy blazer is a pledge’s blazer now and not a rushee’s, and Theo sits at the desk in it. The bid card from last night stands against the lamp exactly where it stood at ten to midnight. Beside it on the blotter lies a small gold pin, shaped like a sword or an anchor (it has been explained to Theo, under oath, and he can’t say which), and beside the pin sits a white china teacup with a raw egg in it, HOLLIS lettered down the shell in blue ballpoint capitals, in somebody else’s hand.",
+    "“Don’t,” Theo says, without turning around.",
+    "Jack, up on one elbow, hasn’t said a word.",
+    "“Brooks’s assignment. I carry him everywhere for a week. He’s named for a founder, the same Hollis as the building, somebody’s great-great-uncle, a man who sat on a railroad board and held an opinion on everything else. There is a sheet of rules. He may be presented at meals. He is back in the cup by noon.” Theo looks at the cup. “If it breaks, I’m out. If it hatches, I’m president.”",
+    "“Is that shower ever going to be hot?” Jack says.",
+    "“That shower has not been hot at this hour since the Eisenhower administration. It’s an exercise in hope.” Theo straightens a cuff. “Tuesday I ate an onion. Thursday I carry an egg. By the end of the month, I’m told, I will be required to love a man named Bucky.”",
+    "“What do you do when you sleep?” Jack says.",
+    "“He sleeps on the nightstand, in the cup, and I sleep with one ear open. The rules are silent on what happens to a pledge who rolls over.” Theo sighs through his nose. “Picture it: a boy, an egg, a week. Altman would have shot it in one take and wept in the car.”",
+    "The phone is propped against the base of the lamp with CNN on it, the sound low: the airport at Port-au-Prince from the air, one runway, planes circling in a line over the water and pallets stacking up on a tarmac with no way to send them into the city. One plane comes down out of the stack while Jack watches, and the rest go on circling. Theo’s thumb goes. The chime comes back.",
+    "“Text YES to confirm your ten-dollar donation to the American Red Cross,” he reads, to the lamp. “Yes.” The thumb. The chime. By the time Jack has his feet on the cold floor Theo has done it ten times, and he reads the tenth in the voice he used for the first.",
+    "“A hundred dollars,” he says, “in ten-dollar increments, because the phone company insists on a ritual. It goes on my father’s statement. A woman in his office will open it and feel something on his behalf.”",
+    "“You could write a check,” Jack says.",
+    "“A check is a decision. This is a practice.”",
+    "“It’ll take more than ten dollars,” Jack says.",
+    "“It’ll take ten dollars from everybody.” Theo says it short, to the screen, where another plane has begun its circuit. “So I’m being everybody. Ten times.”",
+    "He picks up the phone again, and this time it’s the other thing, the text that came in while Jack slept. “Seven-twelve,” Theo reads, off the screen, flat. “*he got his bid. good for him.*” He sets the phone down on the blotter. “Congratulations from Laney. In the third person. I’m told that’s progress.”",
+    "“She’s texting you,” Jack says.",
+    "“She’s texting *at* me. It’s a distinction she insists on.” Then he takes the phone up again and goes to Jack’s wall (he can see it, being a friend) and reports on it like news from a distant front.",
+    {
+     "if": "s2e4_wall==\"candor\"",
+     "text": "“Glenwood Avenue has answered you. Sixty-one comments under *hi glenwood ave*. Ryan Pallante’s mother is now discussing the platter with a stranger in Boardman.”"
+    },
+    {
+     "if": "s2e4_wall==\"restraint\"",
+     "text": "“Tommy Hritz has reposted it again. *COSTIGAN DELETED IT AGAIN lol.* He’s very devoted to you. It’s almost liturgical.”"
+    },
+    {
+     "if": "s2e4_wall==\"wit\"",
+     "text": "“Thirty-one new friends since Tuesday. I counted. One of them is a dentist.”"
+    },
+    {
+     "if": "s2e4_wall!=\"candor\" && s2e4_wall!=\"restraint\" && s2e4_wall!=\"wit\"",
+     "text": "“Fifty-two comments under the video on your wall now, and not a sound from you. It’s very Garbo.”"
+    },
+    "From the wall he goes to the News Feed, and down it with one thumb.",
+    {
+     "if": "joined_nora_group",
+     "text": "The thumb stops. He looks across the room at Jack, and keeps looking, with the phone lit in his hand. “Hollis has to be back in the cup by noon,” he says. “Those are the rules.” And scrolls on.",
+     "else": "He scrolls on."
+    },
+    "At the mirror on the inside of the closet door he pins the pin to his lapel. Under Jack’s pillow the RAZR buzzes, and Jack’s hand is under there before the second buzz, because that is where it lives now. In the glass Theo’s eyes follow the hand out from under the pillow and come back to the lapel. The pin is straight. He says nothing about it.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "partners today. sit where you sat. dont let fenner move you",
+     "time": "7:44 AM"
+    },
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "wouldnt dream of it",
+     "time": "7:45 AM"
+    },
+    "At seven fifty-two, because Brooks holds that punctuality is a form of love, Theo lifts the teacup off the blotter in both hands, level, and gets as far as the door before he sees the problem. The door has a knob, and he has no hand."
+   ],
+   "choices": [
+    {
+     "text": "“What’s his middle name?”",
+     "tag": "Wit",
+     "set": {
+      "s2e5_egg": "wit",
+      "trait.wit": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "goto": "s02",
+     "response": [
+      "“Ashby,” Theo says. “He’s family now.” He gets the knob with his elbow, a skill he must have practiced in the night, and the cup goes out ahead of him into the hall, where the shower pipes are still knocking."
+     ]
+    },
+    {
+     "text": "“Congratulations. Really.”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e5_egg": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "goto": "s02",
+     "response": [
+      "Theo stops with the cup half through the doorway. He doesn’t turn around. “I owe you a kidney,” he says, short, and goes, and his footsteps take the cup down the hall at a walk Jack has never seen on him, slow and even and entirely without style."
+     ]
+    },
+    {
+     "text": "*Get the door for him.*",
+     "tag": "Restraint",
+     "set": {
+      "s2e5_egg": "restraint",
+      "trait.control": "+1",
+      "rel.theo.warmth": "+1"
+     },
+     "goto": "s02",
+     "response": [
+      "Jack gets there first and holds it. Theo goes through sideways, cup first, like a man carrying a candle in a wind, and goes down the hall with it, and the door stays open on the long carpet and the knocking pipes."
+     ]
+    }
+   ]
+  },
+  "s04": {
+   "slug": "THURSDAY · 5:40 PM · DELGADO HALL, THE 4TH-FLOOR LOUNGE",
+   "set": {
+    "kevin_called_clare": true,
+    "knows_sullys_moved": true
+   },
+   "journal": [
+    {
+     "kind": "person",
+     "id": "kevin",
+     "title": "Kevin Tran",
+     "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Tuesday at four I woke him for Doug. A chair under the knob, then a bell. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’ Sings bass. A real one. Seven years of Vietnamese choir in San Jose — his mother made him. Friday, from the Odyssey: Go home. Sleep. Tell somebody something. Back from San Jose. His mother has a girl from their parish she wants him to call. Clare. She plays the violin in the Mass band. Wednesday he brought two flats of water to the Haiti table, which nobody asked for, and stayed to hold Clare’s violin case. ‘My mother knows your mother.’ Thursday he called Clare. His mother had the number, and his grandmother was on the speaker. She said yes to Sully’s."
+    }
+   ],
+   "body": [
+    "Sundown was at eight past five, and the lounge has been left with what it leaves: the vending machine’s one lit face, the window gone to blue ink, and Doug Pruitt’s laptop on the coffee table throwing the only other light, CNN.com with the sound off. On the screen a street in Port-au-Prince has become a hill, and there are people standing on the hill. Behind it the whiteboard waits on its wheeled stand, COSTIGAN | BROUSSARD down the middle in Margot’s marks, months old and never wiped.",
+    "Doug is cross-legged on the couch with his phone in both hands. “Forty,” he announces, as the last chime comes back, and reads it off the screen. “YES.” He lowers the phone. “That’s four hundred dollars, dude. My dad’s going to see the bill and think I joined a cult.”",
+    "“Forty texts, Douglas,” says Margot, from the armchair, without looking up from her legal pad. “A cult has a leader. This is a novena with a carrier.”",
+    "“Every one of them is a yes, though,” Doug says. He means it; his face has gone earnest. “I said yes forty times to something. When’s the last time I did that?”",
+    "“Yesterday,” says Margot, “to the cheesecake.”",
+    "Jack has come up for his Anchor shirt, drying on the radiator since Tuesday for reasons the fourth floor has stopped asking about. It is still damp at the collar. He is due on the Hobart at eight. He takes it down.",
+    "Doug flips a tab, off the hill and onto his News Feed, and frowns at it. “Kayla Ruiz is now friends with Kenzie Rourke. Who’s Kenzie Rourke?”",
+    "“The cantor,” Jack says.",
+    "“Why is that on my feed?”",
+    "“Because it’s a network, Douglas,” Margot says. “Everyone is on everyone’s feed. That is what the word means.”",
+    "At the far end of the couch Kevin has his BlackBerry face-up on his knee, and it lights: a text from his mother, a name and a 408 number and nothing else, no greeting, no punctuation. Mrs. Tran texts the way she wires money. Before he can touch it, the phone is ringing on his knee, and out of habit he thumbs the speaker, and the lounge fills up with two women at once.",
+    "“Minh? You got the number?”",
+    "Another voice comes in over hers in Vietnamese, fast, until the little speaker crackles, and then it arrives in English, complete and satisfied. “She plays the violin for God, Minh.”",
+    "“For the *church*,” his mother says, behind her.",
+    "“Same building.”",
+    "Kevin sits up at *Minh* the way he sits up for no one else, and answers: “Dạ. Dạ, Bà Nội. Dạ.”",
+    "Doug leans over the arm of the couch toward Jack and says, in a stage whisper, “He’s only got the one, dude. He just says it with different feelings.”",
+    "The call ends in something warm and final in two voices, and a last *dạ*, and the BlackBerry goes quiet in Kevin’s hand. He stands there holding a number.",
+    "Margot has put down the pad. “Call her now,” she says, in a voice Jack can’t read. “If you wait you will rehearse, and it will sound rehearsed. Impression management, Kevin. Establish the frame early—”",
+    "“I’m *managing*.”",
+    "“You are sweating through a polo.” She turns a page she isn’t reading. “Open with the mothers; they are your only shared fact. Do not mention the violin. She has heard about the violin every day of her life from people who can’t play one.”",
+    "“I wasn’t going to mention the violin.”",
+    "“You had it in your mouth. Ask her about something that isn’t her.”",
+    "He goes to the window to do it, with his back to the room. Clare’s voice comes out of the BlackBerry as a small bright sound, the shape of a question, and Kevin’s half is all there is: “Hi — Clare? It’s Kevin Tran. We met at — at the table. With the water. Our mothers — yes. Yes, they do. They do know each other.” He turns around and aims his face at the ceiling. “Okay, so, there’s a football thing. Saturday. It’s for a friend from New Orleans, it’s the Saints, it’s a playoff game. She moved it — it’s not in the Fishbowl anymore. It’s at Sully’s, on Mission. There’s food. There are also pitchers, but there’s food.”",
+    "Jack is standing with the damp shirt over one arm and the RAZR in his other hand, where his thumb has been working the cracked hinge open and shut. The thumb stops.",
+    "The small bright sound again. “Yes?” Kevin says. “Yes. Okay. Okay, great.” He takes the phone from his ear and looks at it, as if it could explain what has just happened to him.",
+    "“You said *playoff game* like it was on a box, dude,” Doug says, with admiration.",
+    "“She said yes,” he reports to the lounge. Then, after a moment: “She said she has four brothers.”",
+    "“Four brothers is a favorable finding,” Margot says. “It means she has seen the worst of the species at close range and answered the phone anyway.”"
+   ],
+   "choices": [
+    {
+     "text": "“She said yes, Kev. That’s the whole thing.”",
+     "tag": "Candor",
+     "set": {
+      "s2e5_kevin": "candor",
+      "soul.honesty": "+1",
+      "rel.kevin.trust": "+1"
+     },
+     "goto": "s05",
+     "response": [
+      "Kevin nods slowly, as if handed a diagnosis he can live with. “Okay,” he says. “Yes. That’s the whole thing.”",
+      "Doug, from the couch, wants to know if the brothers are the kind who ask what your intentions are or the kind who just stand there.",
+      "“It’s the same kind, Douglas,” Margot says. “There is only the one.”"
+     ]
+    },
+    {
+     "text": "“Four brothers. Wear a cup.”",
+     "tag": "Wit",
+     "set": {
+      "s2e5_kevin": "wit",
+      "trait.wit": "+1",
+      "rel.kevin.warmth": "+1"
+     },
+     "goto": "s05",
+     "response": [
+      "Margot laughs into her legal pad, a single bark, and is furious about it.",
+      "Kevin turns the BlackBerry over in his hands. “That’s — respectfully — not the sport,” he says, and then, to the window, quieter, “but I’ll look into it.”"
+     ]
+    },
+    {
+     "text": "“You okay?”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e5_kevin": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.kevin.trust": "+1"
+     },
+     "goto": "s05",
+     "response": [
+      "Kevin gives him the smile, the team-captain one, all the way up. “I’m great,” he says. “I have a plan and a number.” Margot watches him say it, and the pad stays down on her knee."
+     ]
+    }
+   ]
+  },
+  "s16": {
+   "slug": "SUNDAY · 5:40 PM · DELGADO HALL, THE 4TH-FLOOR LOUNGE",
+   "set": {
+    "heard_frag_christmas": true
+   },
+   "body": [
+    "He has spent the afternoon in the Brick with the Oceanography text open to a chapter on tides, and the sky is already the wrong gray when he comes out. The rain reaches the east stairwell about when he does: one fat drop on the landing window, then a handful, then the sound of all of it at once, the first of the year. The Carhartt goes dark across both shoulders on the last flight. By the fourth floor the glass is running and the building smells of wet eucalyptus, and on the stairwell door Priya’s newest laminate says PROPPED DOORS ARE A FIRE CODE VIOLATION, and under it, in pen, WEDGES ARE A LIFESTYLE.",
+    "The lounge door is propped on the wedge anyway, and the light and the noise of the television come out through the gap into the hall: a ballroom, a band playing somebody off, applause from a long way off. Under them, low, which it never is, Laney.",
+    "“…over Christmas, Margot. She told me over Christmas, and then —”",
+    "He puts a shoulder to the door, and the wedge gives, and the voice stops.",
+    "Laney is on the window seat with her knees up, her nails done in black and gold, the left thumbnail chewed back to the quick. Margot is in the armchair beside her with a laptop open on her knees and a legal pad on the arm. The window behind them is running. Laney sees him once, and that settles it. She unfolds from the seat, pockets her phone and crosses the room, and goes past him in the doorway so close that he gets her shampoo, coconut, and nothing else. On the sill her tea is still steaming, the string hanging over the rim.",
+    "“Laney,” he says.",
+    "Her flats go off down the hall carpet. The stairs take her.",
+    "“Is she —” Jack says.",
+    "“She has gone to watch the Golden Globes in a room with fewer of you in it,” says Margot, and turns her screen a few degrees away from his side of the room. She reaches over and takes Laney’s tea off the sill and drinks it, because it is hot and it is there.",
+    "On the television a woman in a column of silver is cutting between tables toward the stage, followed by a man whose only job, apparently, is her train. Jack watches the edges of the shot for a face that isn’t going to be there. Then the host, in a tuxedo, says something to a ballroom of the famous that makes the front tables laugh a second late. “He insults them and they love him,” Margot says, watching it. “It’s a power dynamic in a tuxedo.”",
+    "Doug is on the floor with his back against the couch and a bag of pretzels on his chest. “Dude,” he says, to Jack, upside down. “Is Skye *on*?”",
+    "“She’s not presenting,” Jack says. “She’s at a party after.”",
+    "Doug lets the pretzels settle. “*After*,” he says, reverently. “With the *Avatar* people. In the same room as the blue ones.”",
+    "“They don’t come blue,” Jack says.",
+    "“You don’t know that.” Doug eats a pretzel. “What do they eat at those, dude? Is it just one grape?”",
+    "“I’ll find out.”",
+    "“You have to. For the floor.”",
+    "Kevin asks, from the couch, whether the Globes are always this long.",
+    "“It is a four-hour lunch for sixty people with cameras,” Margot says. “Yes.”",
+    "Kevin, on the couch with his chemistry, has his BlackBerry buzz against the cushion. He turns it over and reads it, lays it face-down on the page, and goes on highlighting a line that is already yellow.",
+    "Margot has closed the laptop to a slit. “My column runs Thursday,” she says. “‘Front Stage.’ I have her: an evening, on the record, with the subject’s boyfriend as an unwilling witness in the dish pit. She says there is no backstage, only more stages. She also says you are the same in every room. Those are difficult claims to hold at once, and I would like to know which she’s lying about.”",
+    "“Which?” Jack says.",
+    "“Neither, I suspect, which is a hypothesis I resent.” She uncaps a pen. “What I lack is a control. One line from one of the rooms.”",
+    "“Do we get names?” Doug says. “Can I be, like, Douglas P.?”",
+    "“You will be ‘a friend,’” says Margot. “Possibly ‘a floor.’”"
+   ],
+   "choices": [
+    {
+     "text": "“Tell them I’m load-bearing.”",
+     "tag": "Wit",
+     "set": {
+      "s2e5_lounge": "wit",
+      "trait.wit": "+1",
+      "rel.margot.warmth": "+1"
+     },
+     "goto": "s17",
+     "response": [
+      "Margot writes it down. “‘Load-bearing,’” she reads back. “A structural claim.”",
+      "“What does that mean?” Doug asks the ceiling.",
+      "“It means he holds up the roof, Douglas,” Margot says, “and doesn’t think it’s his job.” On the television the room laughs again, a second late, and the rain goes on at the window."
+     ]
+    },
+    {
+     "text": "“Tell them she’s right.”",
+     "tag": "Candor",
+     "set": {
+      "s2e5_lounge": "candor",
+      "soul.honesty": "+1",
+      "rel.margot.trust": "+1"
+     },
+     "goto": "s17",
+     "response": [
+      "Margot looks at him over the frames until the television has laughed twice. “That is not a quote,” she says. “That is a confession.”",
+      "“Is it going in?” Doug says.",
+      "“I’m thinking about it,” says Margot, and the pen stays where it is. Behind her the window runs with the first rain of the year, and on the screen somebody is being kissed on both cheeks by someone who has clearly just met her."
+     ]
+    },
+    {
+     "text": "“No comment.”",
+     "tag": "Restraint",
+     "set": {
+      "s2e5_lounge": "restraint",
+      "trait.control": "+1"
+     },
+     "goto": "s17",
+     "response": [
+      "“That’s a comment, Costigan,” Margot says. “I’ll print it as one.”",
+      "Doug, from the floor, would like it noted that he has a comment, and that it is about the grape. Nobody takes him up on it. The ballroom applauds somebody, and the rain finds the gutter over the window and begins to pour."
+     ]
+    }
+   ]
+  }
+ }
+}
