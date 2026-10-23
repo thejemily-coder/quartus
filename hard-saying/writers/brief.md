@@ -1677,5 +1677,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   and now knowing where he was in the middle of the night all December (and much of January–February) raise the
   question for her. **Jack's answer, honest and plain: there was more than there should have been, but they never
   slept together.** For Lena it's **painful but more relief than pain**, and **she decides she doesn't need any further
-  details** (she stops him if he starts). It never becomes a subject between them again, except as the edge under her
-  lasting dislike of Skye.
+  details** (she stops him if he starts). (CORRECTED below: it does come up once more.)
+  - **It comes up once more (player).** During their slow intimacy climb (S3–S4 range; room places it), in **a moment
+    of high vulnerability**, Lena admits **she hates how often she wonders whether he's still done more with Skye**
+    (than with her). Room decides Jack's answer and how it lands; it should deepen them, not become a recurring
+    jealousy plot, and it stays the edge under her lasting dislike of Skye.
