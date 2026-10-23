@@ -1699,3 +1699,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     **And it forces their continued contact (player):** she can't fully disappear from his life (or he from hers); the
     class keeps them in each other's orbit (at minimum a shared assignment/group and the same room twice a week), so
     the hurt, and later the thaw, have somewhere to happen. Don't let her drop it or vanish from it entirely.
+  - **Skye stays dangerous to Jack and Lena (player).** Because the love was real in that direction, and the class keeps
+    them in contact, **Skye is a genuine threat to the new Jack–Lena relationship through spring 2010**, especially if
+    the room has her **fight for him**. Play it as real pull (memory, chemistry, unfinished feeling, her hurt), never
+    as villainy or scheming, and within the hard lines: no cheating, no other relationships for Jack once he's with
+    Lena; the danger is temptation, jealousy, and what it costs Jack to hold the line. Lena feels it, which feeds her
+    lasting dislike of Skye and her later vulnerable admission.
