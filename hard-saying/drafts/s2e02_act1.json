@@ -1,0 +1,410 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "SATURDAY · 10:40 AM · GLENWOOD AVENUE, THE DRIVEWAY",
+   "set": {
+    "resolve.lena": 4
+   },
+   "body": [
+    "The flat shovel goes down the drive with a scrape that carries to the end of the block, and what it’s after is the slush from Christmas, gone hard in the tire tracks into two gray ribbons that don’t want to come up. Jack gets the edge under one and leans on the handle until a slab breaks loose, carries it to the bank by the garage, and comes back for the next. Two streets over a plow is working toward Midlothian: the blade comes down on the pavement with a bang, scrapes the length of a house, lifts, and bangs down again. Up and down Glenwood the cans are out at the curb with Christmas standing up out of them — red paper and gold paper and plaid, a flattened box that held somebody’s new television, tissue by the armload — and the lids balanced on top.",
+    "His father comes down behind him in the Browns knit with a bag of rock salt on his hip and a Dixie cup out of the bathroom dispenser for a scoop. He dips it and throws from the wrist, short and flat, and the salt goes out over the concrete in a fan and rattles on the ice, and he dips again. He doesn’t waste any. His ears are red under the edge of the knit. In the front window Rosie is watching the two of them with the blue crab under her arm.",
+    "The new snow brush hangs off the Silverado’s side mirror by its strap with the tag still on it, where Frank put it Christmas morning, because the old one, the one held together with electrical tape, still works. They do the drive from the garage down, Jack breaking and Frank salting behind him, and they don’t talk, and it isn’t the kind of not talking that needs fixing. A woman goes by on the sidewalk with a dog in a sweater and says *Merry Christmas, Frank*, and Frank says it back with his eyes on the ice, and the dog stops to consider the salt and is talked out of it.",
+    "The phone has been going off in the Carhartt since breakfast. At the bottom of the drive Jack stands the shovel up on its blade, leans on it, and reads them in the order they came.",
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "Landed. They wanded the baccalà. Your mother’s labels were admired by a federal employee.",
+     "time": "2:52 AM"
+    },
+    "Somewhere at LAX there is a man in a blue uniform who now knows Ma’s capitals: BACCALÀ. FOR YOUR MOTHER.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "if": "sent_lena_pierogi",
+     "text": "This proves pierogi. It doesn’t prove Ukrainians. —L.",
+     "time": "10:31 AM"
+    },
+    {
+     "type": "sms",
+     "from": "Lena",
+     "if": "sent_lena_pierogi",
+     "text": "Mémère wants the one with the sauerkraut. She says it’s Cajun if you put andouille in it. —L.",
+     "time": "10:33 AM"
+    },
+    {
+     "type": "sms",
+     "from": "Lena",
+     "if": "sent_lena_card",
+     "text": "Nonna’s handwriting is better than yours. Mama read it out at breakfast. Mémère wants to know which nun. —L.",
+     "time": "10:31 AM"
+    },
+    {
+     "type": "sms",
+     "from": "Lena",
+     "if": "!sent_lena_pierogi && !sent_lena_card",
+     "text": "Day after. Mama is making gumbo out of Réveillon. Remy is asleep in the bathtub with his shoes on. —L.",
+     "time": "10:31 AM"
+    },
+    {
+     "if": "sent_lena_pierogi",
+     "text": "*Andouille.* He’s two keys into something about Mrs. Hudak and her note on the dough when the salt stops."
+    },
+    {
+     "if": "sent_lena_card && !sent_lena_pierogi",
+     "text": "*Which nun.* He’s working out how you explain to a woman from Breaux Bridge which nun when the salt stops."
+    },
+    {
+     "if": "!sent_lena_pierogi && !sent_lena_card",
+     "text": "He has his thumb on the keys when the salt stops."
+    },
+    "Tomorrow is the twenty-seventh. Since Christmas the date hasn’t come up in the house.",
+    "Frank has stopped a few feet up the drive with the cup full. He says it to the salt in it, not to Jack.",
+    "“What’s it like. In there. Now.”",
+    "Jack was in it last Sunday with his mother, and again on Thursday with Theo. On the next street the plow bangs down and scrapes off toward the corner, and the quiet comes back in behind it. He puts the phone in his pocket."
+   ],
+   "choices": [
+    {
+     "text": "“Yellow. Loud. Vending machines. He looks good, Dad.”",
+     "tag": "Candor",
+     "set": {
+      "s2e2_frank": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“Yellow,” Jack says. “Loud. Vending machines.” His father is still looking at the cup. “He looks good, Dad.”",
+      "Frank salts a long stripe down the middle of the drive, out to the street, before he says anything. “Your mother says that every time.”",
+      "“It’s true every time.”",
+      "Frank looks at the cup. “Okay.”",
+      "Two streets over the plow drops its blade one more time and grinds off toward Market. Frank holds out the Dixie cup with salt still in the bottom of it, and Jack takes it, and his father goes up the front steps into the house with the bag on his hip. Jack does the walk himself, dip and throw, the way he was shown at nine. When he’s done the drive is laid in gray stripes from the garage to the street, his father’s throws and his, and where the salt went down first the ice has started to darken and let go."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“Like a bus station where everybody does push-ups.”",
+     "tag": "Wit",
+     "set": {
+      "s2e2_frank": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Like a bus station,” Jack says, “where everybody does push-ups.”",
+      "One corner of Frank’s mouth goes. He almost laughs, and throws salt instead, a long arc of it out over the front walk that comes down rattling on the steps.",
+      "Two streets over the plow drops its blade one more time and grinds off toward Market. Frank holds out the Dixie cup with salt still in the bottom of it, and Jack takes it, and his father goes up the front steps into the house with the bag on his hip. Jack does the walk himself, dip and throw, the way he was shown at nine. When he’s done the drive is laid in gray stripes from the garage to the street, his father’s throws and his, and where the salt went down first the ice has started to darken and let go."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“Come see.”",
+     "tag": "Restraint",
+     "set": {
+      "s2e2_frank": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Come see,” Jack says.",
+      "Frank goes to work on a frozen tire track with the heel of his boot. He works at it a long time, longer than it needs, until a piece of it gives and skates off down the concrete.",
+      "“Tomorrow’s your mother’s,” he says.",
+      "Two streets over the plow drops its blade one more time and grinds off toward Market. Frank holds out the Dixie cup with salt still in the bottom of it, and Jack takes it, and his father goes up the front steps into the house with the bag on his hip. Jack does the walk himself, dip and throw, the way he was shown at nine. When he’s done the drive is laid in gray stripes from the garage to the street, his father’s throws and his, and where the salt went down first the ice has started to darken and let go."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "SATURDAY · 2:10 PM · THE FRONT ROOM",
+   "body": [
+    "By ten past two the light is already leaving the front window, the sky over the roofs across Glenwood going from gray to grayer without bothering with anything in between, and the tree is lit against it anyway, every bulb. Gina comes down the stairs with the box set held flat against her chest — his Christmas present, in her room since Christmas night — and kneels in front of the TV and feeds it disc one.",
+    "“For research,” she says. She skips the first three episodes from the menu without consulting anybody. “Setup. The regatta’s the one.”",
+    "The family arrives by accident, one at a time. Nonna is already in her chair by the window under Theo’s cashmere, with her beads. Rosie comes in and lies down on her stomach on the rug with the blue crab under her chin. Ma comes in from the kitchen with a dish towel to fold and stands behind the couch folding it, and ten minutes later she is still folding the same towel. Frank appears in the kitchen doorway with his coffee, just seeing, and comes no farther.",
+    "“Is this the boat one?”",
+    "“That’s her *Facebook*, Dad,” Gina says.",
+    "*Sweetwater* opens on a lake: long and gray, with mountains standing up behind it that Gina says are really Canada, and a boathouse, and a dock, and a line of girls in navy blazers going down it two by two with oars on their shoulders. It’s regatta weekend. Parents are arriving in good cars. A cello is doing most of the work.",
+    "And there she is, coming down the boathouse stairs with a clipboard against her chest, the smallest girl on the dock, the one who steers, and Nonna’s hand comes up off the beads. “*L’attrice!*”",
+    "She’s eighteen in it. Her hair is darker and ironed straight, the freckles are gone under somebody’s foundation, and the blazer is buttoned to the top. It’s the girl from the window seat in Montecito, and she is doing something Jack has never seen her do, which is hold still.",
+    "A rower comes up the dock to carry the clipboard for her. His name is Reid, and he has a jaw like a mailbox. When he makes a joke, Cassidy laughs at it, and it’s the laugh she gives strangers who raise a phone at her in a parking lot — bright, quick, all teeth — and Jack, on the end of the couch, knows it from the real one from across the front room.",
+    "“Is that really a school?” Rosie says.",
+    "“It’s *Canada*, Rosie.”",
+    {
+     "if": "s2e1_girl==\"lie\"",
+     "text": "“For anybody keeping score,” Gina says, from the far end of the couch, “this is *not* my crush.”"
+    },
+    "By the end of the first act Reid has kissed her at the end of the dock at sunset, carefully, the cello going like it’s being paid by the hour.",
+    {
+     "if": "s2e1_girl==\"wit\"",
+     "text": "“Is this where she’s saving herself?” Ma says, folding."
+    },
+    {
+     "if": "s2e1_girl==\"wit\"",
+     "text": "“*Ma*,” Gina says."
+    },
+    "Every time she comes back on after that — the dining hall, the stairs, a dormitory window with the lake in it — Nonna announces her. “*L’attrice.*” “We *know*, Nonna,” Gina says, every time.",
+    "Cassidy’s mother arrives in the second act. She is blond and tan and beautifully dressed, and at a restaurant in town with white tablecloths, with the rest of the crew team’s parents at the next table, she takes Cassidy’s hand across the bread basket and tells her, smiling, in a voice nobody else at the table can hear, that she was such a sweet little girl, and it was so much easier to love her then.",
+    "Cassidy keeps smiling through all of it. That’s the thing Jack watches: the smile stays exactly where it is, polite, for the parents at the next table, while everything above it goes out like a porch light. He has watched her do the reverse of that since November — the eyes going on while the mouth stays put — and it’s the same muscle, run backward.",
+    "Behind the couch Ma stops folding. “*Disgraziata*,” Ma says under her breath — a word she does not use in front of Rosie, and has just used in front of Rosie.",
+    "In the chair by the window the rosary comes up in Nonna’s fist. “*Povera*,” Nonna says, and her lips go to work on the beads, fast, in Calabrese, praying for the girl at the table, and she doesn’t stop till the scene does.",
+    "Before the race Cassidy goes into the school chapel by herself and lights a candle and doesn’t pray, just looks at it with the clipboard in her lap.",
+    "Nonna nods at the candle, approving of it.",
+    "“She’s nice,” Rosie says.",
+    {
+     "if": "s2e1_nice==\"wit\"",
+     "text": "“She finds God in season three,” Gina tells her. “In a *pool*. She told him.”"
+    },
+    "The girl who ruins it is named Whitney. She has red hair and a lacrosse stick she carries everywhere for reasons the show doesn’t go into, and the morning of the race she tells the coach something about Cassidy that isn’t true, and the coach takes Cassidy out of the boat and puts Whitney in, and Sweetwater comes in third behind two schools Gina says don’t count. “And Sweetwater is *not* in the boat,” Gina says, low, like the man who does the golf. At the finish line the camera finds Cassidy alone on the shore with her clipboard against her chest and the wind in her hair, being brave about it in a way that makes Rosie put the crab over her own face.",
+    "“*Cassidy*,” Nonna says, to her, with feeling.",
+    "That night Whitney finds her on the dock in the dark, crying, and Rosie sits up on the rug with the crab.",
+    "“She doesn’t drown, Rosie,” Gina says. “It’s the *other* one who drowns.”",
+    "“Which other one?”",
+    "“*That* one. In the spring.”",
+    "Rosie lies back down, unsatisfied.",
+    "Whitney says she’s sorry. And the camera goes in on Cassidy and stays there, no cello, no anything, while she decides. You can see the mean thing come up into her face — her mother’s thing, the one she could say and be right — and you can see her not say it. It goes out of her a piece at a time, the jaw first and then the mouth, and what’s left is a girl deciding to be kind to somebody who hasn’t earned it, and knowing she hasn’t, and sitting down on the dock beside her anyway.",
+    "Jack has seen that face once for real, at one in the morning, in a car, over something smaller, with no camera anywhere.",
+    "She’s good. He sits forward on the end of the couch with his elbows on his knees, proud of her in a way he has no right to yet, in front of his entire family, who are doing color commentary.",
+    "From the kitchen doorway his father gives his first review of a television program in Jack’s memory. “She’s good.”",
+    "Ma, folding again: “Which one is she really, Jack? This one, or the boat?”"
+   ],
+   "choices": [
+    {
+     "text": "“Neither. She’s better than both.”",
+     "tag": "Candor",
+     "set": {
+      "s2e2_marathon": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“Neither,” Jack says. “She’s better than both.”",
+      "“Better how?” Ma says.",
+      "He opens his mouth to tell her, and over by the window Nonna’s beads are still going, and he can’t do it with them going.",
+      "“Oh my *God*,” Gina says, into a cushion."
+     ],
+     "goto": "s02a"
+    },
+    {
+     "text": "“Cassidy. Nobody fakes a blazer like that.”",
+     "tag": "Wit",
+     "set": {
+      "s2e2_marathon": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Cassidy,” Jack says. “Nobody fakes a blazer like that.”",
+      "In the doorway his father laughs, a real one, with coffee in his hand, and has to hold the cup out away from himself till it’s over.",
+      "“*Francis*,” Ma says."
+     ],
+     "goto": "s02a"
+    },
+    {
+     "text": "*Watch her. Don’t answer.*",
+     "tag": "Restraint",
+     "set": {
+      "s2e2_marathon": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He doesn’t answer her. On the screen Cassidy is still sitting on the dock with the girl who doesn’t deserve it, and he watches it to the end: the two of them not talking, the lake going black behind them, the dock lights coming on one after another down the water.",
+      "When he looks up, his mother is watching him instead of the television, and her hands have gone still."
+     ],
+     "goto": "s02a"
+    }
+   ]
+  },
+  "s07": {
+   "slug": "MONDAY · 4:05 PM · THE FRONT ROOM",
+   "set": {
+    "resolve.jack": "+1",
+    "nonna_cassidy": true
+   },
+   "journal": [
+    {
+     "kind": "note",
+     "id": "nonna",
+     "title": "Nonna",
+     "text": "Asked me about the girl. Laughed. Five minutes later she asked me again, the same words, like it was the first time. Ma says she’s tired. That was the nineteenth of September. Michaelmas she lit one for me and one for Danny. Saturday: ‘E la ragazza?’ Ma told her the girl has a boyfriend. ‘Peccato.’ Then, sharp: ‘E l’altra?’ Purdue Saturday. Dad said ‘Purdue’ and that was the call. Nonna got on the extension and called me Danny. Then she knew me. Then she asked about the crab girl. Sunday the 8th: ‘E la ragazza?’ Which one, I didn’t ask. She didn’t say. Monday she fell on the stairs she’d been keeping off. St. Elizabeth’s: her wrist, six stitches, a monitor for her heart. Called the paramedic handsome. Dad drove her. Home Thanksgiving morning. Cast to the elbow; a monitor on her housedress. Kept both cards — the nun’s and the other one. Made Theo her hands. Sat him in the chair. Says she’ll pray for him, starting that night. Knows it isn’t the nun. Christmas: Mémère’s still lighting her whole name — “Carmela Rinaldi. Tutto.” Asked if Danny’s coming, more than once. Set his place at the Vigil, and Ma left it. Pointed at the girl on the DVD: *l’attrice*. Theo’s cashmere is on her knees. The day after Christmas she prayed for Cassidy out loud, at the TV. *Povera.* On the Innocents she asked me to sit for the rosary, and said the intentions — for Danny, for Pop, who went in, for the nun, and for Cassidy. I told her the name’s Skye. She said Cassidy."
+    }
+   ],
+   "body": [
+    "At ten past three he’s on the front porch tying the flattened boxes from Christmas into bundles for the curb, his breath going up, the twine cutting into his fingers through the gloves, when his pocket goes.",
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "Daddy is praying for the Bears tonight. Out loud. In the market. A man buying oysters asked him to stop. —L.",
+     "time": "3:12 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "tell the oyster man some of us have faith",
+     "time": "3:14 PM"
+    },
+    "He carries the bundles down to the curb two at a time and stands them against the cans. The street has the week-after-Christmas quiet on it in the middle of a Monday afternoon: every driveway salted, a kid two doors up trying out a new sled on a lawn with no hill in it.",
+    "By four the front room is dark except for the tree. Through the kitchen doorway the little set at the end of the counter is on low, and the President is on it, from Hawaii, standing at a podium, talking about the man on the plane on Christmas Day. The sound is too far down to follow from the couch. Jack gets *passengers*, and *a review*, and not much else. At the kitchen table his father watches it to the end with his coffee going cold in front of him, and when they cut back to the studio he has one thing to say about it.",
+    "“They let him on the plane.”",
+    "In her chair by the window Nonna has had the beads out since three. She looks across the room at Jack over them.",
+    "“Giacomino. *Il rosario.*”",
+    "She has been asking him that since he was small enough to sit on the hassock beside her chair with his feet not reaching the rug, and in all that time he hasn’t found a reason good enough to say no to her. The hassock is the same hassock, the vinyl split along one seam and taped. His knees come up nearly to his chest on it now. Danny had it first, till he got too big and too fast at the Hail Mary, and Nonna moved him to the couch and put Jack on it, six years old, and taught him the Joyful from the Sorrowful by the days of the week. Gina is at Kelsey’s and Ma is next door at the Kovacs’ with a plate, so it’s the two of them and the tree, and that suits Nonna.",
+    "She digs in the pocket of her housedress and comes up with his: the white plastic one from his First Communion, glow-in-the-dark once, that hasn’t glowed since about 1999. She has kept it in that pocket for the times he’s home. She puts it in his hand and closes his fingers on it with hers.",
+    "Monday is the Joyful Mysteries. She starts with the crucifix, the sign of the cross made with it, and then the Creed — *Credo in Dio Padre onnipotente* — and Jack comes in under her in English, *I believe in God, the Father almighty*, the two of them half a syllable apart to the life everlasting, as they have always done it, neither language waiting for the other.",
+    "The intentions come next. She says them to the tree and the black window and whoever up there is listening, in Calabrese, with the Latin she learned in San Giovanni in Fiore and the English she learned at Sheet & Tube picnics mixed in wherever they fit, and Jack’s church-and-kitchen Italian follows most of it. Today is the Innocents, she says, and so first the babies — *i santi Innocenti*. After the babies, Nonno Antonio, *l’anima sua*, as always, and the forgotten souls in Purgatory, as always, and then:",
+    "“*Per Danny.*”",
+    "A bead. “*Per Francesco*” — she stops on the next word, and gets it right — “*che è entrato.*”",
+    "Who went in. Jack didn’t tell her. Ma must have.",
+    "“*Per la suora.*” The beads go on. “*E per Cassidy.*”",
+    "“Her name’s Skye, Nonna.”",
+    "“Cassidy,” Nonna says, and goes on to the Our Father.",
+    "He looks down at the plastic beads in his hand and follows her into it.",
+    "Through the doorway the set has moved on to the weather, a map of the Valley gone blue for Wednesday. His father turns it off. Nonna holds up the first of the ten beads between her thumb and the side of her finger, the splint resting on the arm of the chair, and looks at him to see if he’s ready.",
+    "“*Il primo mistero gaudioso*,” she says. “*L’annunciazione.*”"
+   ],
+   "choices": [
+    {
+     "text": "*Lead the fifth decade.*",
+     "tag": "Grace",
+     "set": {
+      "s2e2_rosary": "grace",
+      "soul.grace": "+1",
+      "resolve.jack": "+1"
+     },
+     "key": "On the Feast of the Holy Innocents you prayed the rosary with Nonna, and led the fifth decade.",
+     "response": [
+      "She takes the first four. The Annunciation, the Visitation, the Nativity, the Presentation; the Hail Mary going around in two languages, hers a half syllable ahead, his a half syllable behind, the furnace coming on under the floor and going off again.",
+      "When she gets to the end of the fourth she stops and looks at him, and he takes the fifth. “*Il quinto mistero gaudioso*,” he says, and gets the rest of it wrong, and she fixes it for him without any fuss — “*il ritrovamento di Gesù nel tempio*” — and he leads it in English and she answers in Italian. His fingers lose the count somewhere around the sixth. Her beads keep it for him.",
+      "At the end she starts the Salve Regina and he follows her through it. Then her left hand comes off the beads and onto his face, dry as paper and warm, and she knows exactly whose face it is.",
+      "“Giacomino,” she says, like she’s making sure of it.",
+      "In the kitchen doorway his father is standing with his coffee. Jack doesn’t know how long he’s been there. When Jack looks up, Frank goes back to the table and sits down."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "*Pray it beside her and let her lead.*",
+     "tag": "Sincerity",
+     "set": {
+      "s2e2_rosary": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "On the Feast of the Holy Innocents you prayed the rosary with Nonna, and let her lead.",
+     "response": [
+      "She leads all five. He answers. The Annunciation, the Visitation; the furnace coming on under the floor and going off again.",
+      "In the third decade, somewhere in the middle of the Nativity, she loses her place. Her voice stops with a bead held between her fingers, and she looks at the bead, and he waits. It takes a while. When she starts again it’s in the fourth, not quite where she left off but close enough for God, and he goes there with her. Twice more she stops, and twice more he waits, and every time she goes on, he goes on with her.",
+      "At the end the Salve Regina, all of it, and then her left hand comes off the beads and onto his face, dry as paper and warm.",
+      "In the kitchen doorway his father is standing with his coffee. Jack doesn’t know how long he’s been there. When Jack looks up, Frank goes back to the table and sits down."
+     ],
+     "goto": "s08"
+    },
+    {
+     "text": "“I have to make a call, Nonna.”",
+     "tag": "Drift",
+     "set": {
+      "s2e2_rosary": "drift",
+      "soul.grace": "-1",
+      "resolve.jack": "-1"
+     },
+     "key": "On the Feast of the Holy Innocents Nonna asked you to pray the rosary with her. You told her you had a call to make.",
+     "response": [
+      "“I have to make a call, Nonna.”",
+      "He has no call to make. She nods, and the bead goes down between her fingers, and the Hail Mary starts without him.",
+      "He goes up. The plastic rosary is still in his fist on the stairs, and he puts it in his pocket. In the back bedroom, with the door open and the phone shut in his hand and no one to call, he can hear her through the floor: the Hail Marys going around by themselves, the Finding, and the Salve Regina after, slower without anyone to keep up with. He doesn’t go back down."
+     ],
+     "goto": "s08"
+    }
+   ]
+  },
+  "s09": {
+   "slug": "TUESDAY · 9:15 AM · THE KITCHEN",
+   "body": [
+    "The light comes in flat and white off the old snow in the side yard and fills the kitchen window without coming from anywhere in particular, and everything in the kitchen looks a little overexposed in it: the oilcloth, the sugar bowl, the radiator under the window with a pair of Rosie’s mittens drying on top.",
+    {
+     "if": "s2e2_after==\"drift\"",
+     "text": "He comes down at a quarter past nine on two hours of sleep, and the stairs take longer than stairs should.",
+     "else": "He comes down at a quarter past nine on four hours of sleep, and the stairs take longer than stairs should."
+    },
+    "“Did you sleep?” Ma says from the stove, before he’s through the doorway. “You didn’t sleep. I can see it.” She puts a plate at his place — eggs, and the end of the Christmas bread, toasted — and a coffee by his hand, and goes back to the pan. He holds the coffee in both hands and doesn’t drink it yet.",
+    "Frank is behind the *Vindicator*, folded to the Browns. Nonna is in her chair in the kitchen doorway, where Frank carried it after breakfast, with her coffee on the floor beside her and her eyes on everybody. At the far end of the table Rosie has the markers open in their tin and is drawing something for an envelope with a great deal of brown in it, and Gina is across from his place with a pad of lined paper and a pen, writing to Danny, her left arm curled around the page so the page stays hers.",
+    "“I need you at the Giant Eagle before supper,” Ma says. “I’ll make you a list. Your father needs his two tickets.” Behind the paper Frank holds up two fingers.",
+    "The RAZR is on the counter by the bread box with the cord in it. He unplugs it on his way past and sits down in front of the eggs and opens it under the edge of the table.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "you DIED",
+     "time": "9:02 AM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "i said goodnight to nobody. for like a whole minute. it was very moving. i did the whole thing",
+     "time": "9:02 AM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "finished your chesterton at 4. hes wrong about everything and i love him. dont tell him",
+     "time": "9:03 AM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "dont tell YOU",
+     "time": "9:03 AM"
+    },
+    "Jack smiles at the kitchen table, at a plate of eggs, before he can get his face to do anything else.",
+    "At the stove his mother sees it. She turns the eggs over in the pan, one and then the other, and keeps her back to the table. Across the table Gina sees her mother see it, and puts her pen down, and picks it up again.",
+    "He shuts the phone and puts it in his pocket and picks up the fork. The coffee has gone warm enough to drink, and he drinks it.",
+    "“That’s Danny,” Rosie says, turning her drawing around for him to look at: a man in blue as tall as the page, and behind him a Christmas tree taped to a wall, and a lot of quarters. “That’s the tree that’s paper.”",
+    "“That’s good, Ro.”",
+    "“I know.” She turns it back around to add more quarters.",
+    "“Ro, he can’t have markers,” Gina says, without looking up. “It’s a letter. Not a mural.”",
+    "“He can have *pictures*.”",
+    "“He can have pictures,” Ma says from the stove, and that settles it; Rosie gets out the gray for the fence.",
+    "Gina has stopped writing. She is frowning at the page.",
+    "“How do you spell *yacht*?”",
+    "“Y-A-C-H-T.”",
+    "“*Cosa?*” Nonna says from the doorway.",
+    "“*Una barca*, Nonna,” Gina says. “A big one.”",
+    "“*Ah.*” Nonna takes this in, and takes a sip of her coffee, and looks at Jack.",
+    "Gina looks at what she’s written, and at him, and at what she’s written. “That’s not a word. That’s a *sneeze*.” She writes it anyway, a letter at a time with her tongue in the corner of her mouth, and crosses out whatever was there before it, and goes on under her breath as she writes: *on a* … *yacht* … *in a bathing suit, Ma says underwear, it is NOT underwear* … — and behind the *Vindicator* his father turns a page to the box scores.",
+    "Gina looks up at him over the pad.",
+    "“Anything you want me to tell him?”"
+   ],
+   "choices": [
+    {
+     "text": "“Tell him she surfs. Badly. No — tell him I do.”",
+     "tag": "Candor",
+     "set": {
+      "s2e2_gina": "candor",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“Tell him she surfs,” Jack says. “Badly. No —” He stops. “Tell him I do.”",
+      "Gina writes it word for word, including the *no*."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "text": "“Tell him it’s a boat.”",
+     "tag": "Wit",
+     "set": {
+      "s2e2_gina": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Tell him it’s a boat.”",
+      "“It’s a *yacht*, Jack.” She underlines it twice, so Danny will know she spelled it right."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "text": "“Tell him thanks for Sunday.”",
+     "tag": "Restraint",
+     "set": {
+      "s2e2_gina": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“Tell him thanks for Sunday.”",
+      "Gina looks up from the pad. At the stove the spatula stops for a second, and goes on.",
+      "Gina writes it at the bottom of the page, by itself, under everything else."
+     ],
+     "goto": "s09a"
+    }
+   ]
+  }
+ }
+}
