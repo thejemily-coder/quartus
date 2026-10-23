@@ -1476,3 +1476,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     up for the one that is also his vocation. (Never state this as a thesis; let it be lived.)
   - **Later-season callback (approved):** the HIMYM episode aired in 2011, so no one quotes it in 2010. In 2011 or later
     the group watches it; **Jack goes quiet; only Lena knows why.**
+  - **The breakup with Skye (player).** At the end, **Jack tries to explain this to her**, probably badly, because **he
+    feels he owes her that**: that **he really is in love with her**, and that **he loved all of what they were and did
+    together**. Not a speech, not the Saint-Exupéry line; his own fumbling words, honest, and it doesn't make it hurt
+    less. (Her response: room's call within her co-design; never cruel, never diminished.)
