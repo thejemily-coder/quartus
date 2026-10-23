@@ -1541,3 +1541,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   not want it** (if he tries, she refuses it or he can't bring himself to offer). **She gets it back in New Orleans.**
   (Room places the moment; it lands right before Ash Wednesday and Jack's Lent without cigarettes, so the count resumes
   with meaning. Its long arc stands: S4 he quits for real; the wedding gift.)
+  - **Does he smoke without her? Player chooses (approved).** In January–February the urge comes **only after a Lena
+    fight or silence, never around Skye** (with Skye it simply fades). After those scenes, offer a choice: light one or
+    not (counted on `jack_cigs`, plus a January–February count of its own). **In New Orleans, when she gets the tin
+    back, he tells her the number honestly**, and she realizes **every one was about her**. Zero is its own answer.
