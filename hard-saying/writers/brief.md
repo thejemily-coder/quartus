@@ -1782,3 +1782,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
      stays within the hard lines (no cheating, nothing physical), keeps Skye a real pull on Jack (the "dangerous" entry)
      and keeps Lena's dislike honest. Every Catechism session is a real argument with real philosophy on both sides;
      Skye is never a strawman, and Jack doesn't always win.
+  - **Mechanic (player-approved): the Catechism sessions run as argument duels.** Each session (one Catechism section
+    or theme) is a short duel with **Skye as the opponent**, scored on rigor/wit/heart like Lena's duels; **she wins
+    some.** Track the campaign across episodes with cumulative counters (e.g. `skye_cat_jack` / `skye_cat_skye`: how
+    close each comes to being persuaded), feeding how her arc resolves into friendship. Keep each duel distinct from
+    Jack–Lena duels in register (Skye's improv, actor's logic, sincerity under performance; real arguments).
