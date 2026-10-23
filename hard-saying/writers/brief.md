@@ -1749,3 +1749,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - Skye at Lena's Saints table is a pressure cooker: comedy first (Skye learning "Who Dat," cheering for the wrong
     reasons, being genuinely charming to the room), knife underneath. Skye clocks Lena (her S1 jealousy and intuition).
     Jack stops coming to Sully's only after the blowup, which costs him the Saints-with-Lena ritual.
+  - **Jack's state going in (player).** Right now he's **confused**, not angry: in his view **Lena is the one who
+    basically told him to move on** (the Friday call), so her coldness and Laney's make no sense to him. **But he gets
+    angry real quick once anyone starts taking shots at Skye.** That protectiveness is the fuse for the chain above.
