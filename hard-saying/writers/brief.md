@@ -1588,3 +1588,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   by the scene's date**; candidates: Khia, "My Neck, My Back (Lick It)" (2002); Jeremih, "Birthday Sex" (2009);
   Lady Gaga, "LoveGame" (2008); Young Money, "BedRock" (Nov 2009). Quote at most a few words of lyric on the page.
   - **Song locked (player): Jeremih, "Birthday Sex"** (2009). Quote at most a few words of lyric on the page.
+- **Birthdays get celebrated (player; standing).** Every main character's birthday is marked on-screen when it comes
+  up on the calendar (a scene, a beat, a text, a card: scaled to the person and the moment). Bible §9 is the
+  calendar. **Showrunner: fill the gaps in §9 at the next planning pass** (Frank, Maria, Gina, Rosie's exact date,
+  Nonna, Danny confirmed Feb 2; the Broussards: Tony, Celeste, Mémère, Tess, Drew, Lena's other siblings; Sol; Fr. Dom
+  if recurring), and check each S2 outline against the calendar. **S2 birthdays already on the calendar:**
+  - **Julian, Jan 9 (S2E03)**: the day Jack lands and Skye meets him at the gate. It's also why Lena's "I'm going to see
+    him Monday" isn't the weekend: **she won't end it on his birthday.** (Room: honor this in S2E03; Lena's off-screen
+    weekend is Julian's birthday.)
+  - **Danny, Feb 2** (Candlemas; 23; his letter). **Evan, Feb 11** (they're away). **Laney, Feb 14** (Valentine's,
+    Bacchus Sunday, in New Orleans; Celeste's cake). **Kevin, Feb 15** (Presidents' Day, in New Orleans: don't let
+    Laney's eclipse it entirely). **Peter Haddad, Mar 8.** **Jack, Mar 19** (St. Joseph; date #2). **Skye, Apr 4
+    (Easter Sunday 2010)**, after the breakup: Jack's choice whether to send anything (room's call). **Osei, May 2.**
+    **Becca, May 31** (summer; a text). Then Rafi Jun 2, Hale Jun 30, Brooks Jul 4, Lena Jul 22 (S3).
