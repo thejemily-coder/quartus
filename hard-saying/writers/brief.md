@@ -1510,3 +1510,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **S2E02 mid-episode (player).** Laughed out loud at **Frank asking about Skye's swimsuit picture while the family
   watches her show** ("usually it's Laney who gets that out of me"). Frank's dry, deadpan family comedy is landing:
   give him more of it in Youngstown scenes (never at the cost of his sobriety arc or his weight).
+- **Why Jack goes to New Orleans at all (player; all four stack).** By early February he has just told Skye he loves
+  her and is as happy as he's ever been, while he and Lena have spent a month alternating between silence and
+  fighting. He would not want to go. Four things get him on the road, layered across the late-January episodes:
+  1. **The Saints.** A Rust Belt football kid and a once-in-a-lifetime Super Bowl run in New Orleans (the game is in
+     Miami; the city is the place to watch it). Even furious, he can't pass it up, and **tells himself that's the only
+     reason.**
+  2. **Theo asks, for himself.** Theo, who never asks anyone for anything, asks Jack to come as a personal favor ("I
+     need you there"), maybe already paid. Jack can't say no to that. The alliance's real play, played straight.
+  3. **The Broussards invite him.** Not Lena: her family. Mémère (whom he has spoken to) or her mother calls or writes
+     to him herself. You don't say no to Mémère. (Room decides whether Laney nudged it; Lena didn't.)
+  4. **Skye tells him to go.** She's away that week anyway (location shoot or press; room picks a plausible reason) and
+     pushes him: go watch your Saints win. **She trusts him completely, which is the knife: it was always real to
+     her.**
