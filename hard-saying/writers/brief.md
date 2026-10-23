@@ -1507,3 +1507,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   everything open), **Lena apologizes for asking Jack to come listen to Julian's song** (S1E20 s13: "Come tonight…
   don't leave in the second chorus"). **She knows that's when everything changed between them.** She didn't do it to
   hurt him, but she realized too late that it did anyway.
+- **S2E02 mid-episode (player).** Laughed out loud at **Frank asking about Skye's swimsuit picture while the family
+  watches her show** ("usually it's Laney who gets that out of me"). Frank's dry, deadpan family comedy is landing:
+  give him more of it in Youngstown scenes (never at the cost of his sobriety arc or his weight).
