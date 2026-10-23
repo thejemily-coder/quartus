@@ -1722,3 +1722,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Reconciles the running bit:** emergency meeting #1 stays secret December; **meeting #2 moves to after the aside**
     (not right after the status), and #3 is the singalong. Jack still sees each only in fragments; Theo's oblique
     questions to Jack are on the page (Jack doesn't know why he's asking).
+  - **How the revived alliance looks in public (player; comic).** For appearances, **Laney is (comically, awkwardly)
+    cold to Jack and Theo to Lena**, to show their loyalty, but each **keeps being oddly affectionate at random times**,
+    and **they clearly keep working together to engineer moments with Jack and Lena.** Running gags:
+    - **Awkwardly rehearsed public conversations** between Theo and Laney, staged within earshot, about **the importance
+      of communication, finding out all the facts**, not assuming, etc.
+    - Same move one-on-one: **Theo telling Jack, and Laney telling Lena, how they feel about things, or more importantly
+      people** (heavy-handed "hypotheticals," badly hidden notes, a line said twice because the target missed it).
+    - Jack (POV) clocks that it's weird, not why; the player sees the seams.
