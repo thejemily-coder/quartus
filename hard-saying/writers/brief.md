@@ -1566,3 +1566,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   friend's courtesy or a back-off signal, and his answer is evasive or a "probably not / I've got a thing" (he'll be
   with Skye): **on a replay, she was asking him to be there right after she ended it.** The call ends awkwardly as
   planned (he hangs up first). Written both ways; her intent off-screen.
+  - **Lena's read of the awkward call (player; important).** She must **still believe they understand each other until
+    she sees the status.** So she takes his "probably not / I've got a thing" and the abrupt ending as **weird, or as
+    him working a shift / being tired / something practical** (Jack hears her accept it easily: "Okay. Then call me
+    after." or similar), **not as a rejection.** Her decision stands; nothing on the call shakes it. Only the Facebook
+    status breaks it. (Write her side of the call so a replay shows her unbothered certainty; Jack, on first hearing,
+    reads her easy acceptance as more proof she's moving on.)
