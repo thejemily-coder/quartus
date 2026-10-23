@@ -1643,11 +1643,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Skye, which ran hot from the start; Lena's is slower and deeper.)
 - **Sophomore housing (player; S4 = Fall 2010).** **Laney lives in her sorority house.** **Lena and Margot become
   roommates in the dorm.** Jack and Theo: see the next entry.
-  - **Jack, Theo, Kevin and Yusuf rent a house (player).** Four guys in a beat-up rental (Theo pays more than his share
-    and pretends he doesn't): a porch, a kitchen, house rules, Lena and Margot always over; **the ensemble's new hub
+  - **Jack, Theo, Kevin and Yusuf rent a house (player).** Four guys in a beat-up rental (CORRECTED below: Theo pays
+    exactly the same share): a porch, a kitchen, house rules, Lena and Margot always over; **the ensemble's new hub
     from S4.** (The spring 2010 lease and deposit happen on-screen in S2E28–E30; room: reconcile with registry #33 rather than overwrite it.)
   - **The hub, standing through graduation (player).** The house stays the ensemble's hub for the rest of school.
     **Laney is over all the time too** (slightly less than the others because of sorority obligations). **Senior
     year:** Jack and Lena move in together as a married couple, and **Margot replaces Jack** as the fourth resident
     (Margot, Theo, Kevin, Yusuf). Purpose: a shared home set makes it easy to weave everybody's individual arcs
     around the central relationship arc.
+  - **Theo and the house money (player; corrects "pays more than his share").** **Theo pays exactly the same rent and
+    utilities, because the other three insist.** But **he keeps buying a ton of things he "wants for the house,"** so
+    they all live very well for college students: the house hosts **lots of house parties, football games, other big
+    events, and the communal liturgical celebrations/parties planned by Jack and Lena** (and Kevin, when it fits his
+    arc; S3+ liturgical-year directive).
