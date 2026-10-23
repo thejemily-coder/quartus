@@ -1791,3 +1791,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   joke / cheap fallback argument" bit **does not start until Skye's Catechism campaign is over** and the meet-ups have
   ended. Until then Skye is **a live fear** for Lena, never a punchline; she's careful, quiet or sharp about it, never
   funny. The joke only becomes possible once the threat is truly past.
+- **S2E04 mid-episode (player).** Skye's response to Haiti "once again gave me that 'how could Jack walk away from
+  this' feeling." Her goodness in a crisis lands as much as her heat and wit: keep giving her moments of real
+  character under pressure (generosity, seriousness, care), not only charm.
