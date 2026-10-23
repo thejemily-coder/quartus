@@ -1686,3 +1686,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   fantastic. **Laney's cold turn is a great development.**" (Keep Laney's coldness toward Jack real and sustained
   through the January–February stretch, with her loyalty to Lena showing; it pays off in the "fireman" confrontation
   and thaws only after New Orleans.)
+- **S2E04 design answers (player).**
+  - **Skye and Jack share one gen-ed, never with Lena.** A big lecture (astronomy, film, something undemanding): they
+    sit together, flirt in the back row, study together. Lena is never in that room.
+  - **Theo in the fallout: in the middle.** Still Jack's roommate and friend, still Team Lena underneath: polite to Skye
+    (his childhood friend), quietly worried, needling sideways, and **getting it from Laney for not being colder.**
