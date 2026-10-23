@@ -1710,3 +1710,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     Facebook post, a blind item ("back on?"), campus gossip, Gina texting from Ohio. After the breakup every sighting
     reaches Lena (and the alliance) within hours, so even innocent contact (the class, a group assignment) costs
     something. Use it for comedy and for real strain.
+    **Correction (player): every sighting reaches Lena and the alliance within hours BEFORE the breakup too** (all of
+    January–February), feeding the proxy war and Lena's fury in real time. (POV: Jack learns it from the fallout, not
+    from watching it reach her.)
