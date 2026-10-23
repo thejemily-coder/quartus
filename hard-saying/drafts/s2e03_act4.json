@@ -290,10 +290,6 @@
       "It’s her window, at night. Behind her the room is lit — the lamp, the string of Christmas lights with half of them out — and in front of her the glass has gone black and gives her back to herself. She’s kneeling up on the mattress under it with the white phone raised to her eye like a viewfinder, and she has nothing on. The light is all behind her, so what the window keeps of her is mostly edge: gold along one shoulder and down the long line of her side to the hip, her hair loose over the other shoulder and lit through. The rest is shadow and glass, and through the glass, through her, the beach in the dark and one white line of surf breaking low across her, where the window gives up and lets the outside in. Her chin is up. Her mouth is set. Her eyes are past her own reflection, out on the black — on Del Playa, on the Pacific — daring it to look.",
       "*Erase?* the phone asks. *Yes.*",
       "The list closes up over the place where it was. It’s off the phone. It isn’t off anything else: he can shut his eyes in the lamplight and find the gold along her shoulder exactly where it was.",
-      {
-       "if": "pic7_erased",
-       "text": "It isn’t the first one he’s erased."
-      },
       "He goes back to the lined paper."
      ],
      "goto": "s09"
@@ -309,35 +305,24 @@
    "body": [
     "Upstairs, the lamp off. The alley light comes through the blind in stripes and lies across the parka on Danny’s bed. Down the hall his father snores in two parts. He’s on his own bed in his clothes with the RAZR open over his face, and he goes into the Pictures folder and starts from the first one.",
     "The trailer mirror at five in the morning. The hotel-bathroom mirror. The forty buttons. His own shirt in the back of a town car. The bedroom door at first light. The white tree.",
-    {
-     "if": "s2e2_pic==\"candor\"",
-     "text": "The ocean, and the 10 on her hip."
-    },
+    "The ocean, and the 10 on her hip.",
     {
      "if": "s2e3_pic==\"candor\"",
      "text": "The window."
     },
     {
-     "if": "s2e2_pic!=\"candor\" && s2e3_pic!=\"candor\"",
-     "text": "Six of them."
-    },
-    {
-     "if": "s2e2_pic==\"candor\" && s2e3_pic!=\"candor\" || s2e2_pic!=\"candor\" && s2e3_pic==\"candor\"",
+     "if": "s2e3_pic!=\"candor\"",
      "text": "Seven of them."
     },
     {
-     "if": "s2e2_pic==\"candor\" && s2e3_pic==\"candor\"",
+     "if": "s2e3_pic==\"candor\"",
      "text": "Eight of them."
     },
     {
-     "if": "pic7_unopened && pic8_unopened",
-     "text": "Two more at the bottom of the list, still shut, the little envelopes waiting. He leaves them for Saturday."
-    },
-    {
-     "if": "pic7_unopened && !pic8_unopened || !pic7_unopened && pic8_unopened",
+     "if": "pic8_unopened",
      "text": "One more at the bottom of the list, still shut. He leaves it for Saturday."
     },
-    "He goes back up to the top and through them again, slower. A girl three time zones away has been holding a phone up to mirrors since the first week of December so a guy in a snow globe would have something to look at. The same girl docked him a point for Pasadena on the word of a man in a fleece. She read Matthew in a Coffee Bean so she could tell him Herod was a showrunner. Tomorrow night at 7:52 she is going to be at a curb in Santa Barbara, with an hour of him before Ted’s thing already counted. Somewhere around the town car he stops being a man lying in his brother’s room who got off the phone first, and he decides it — he can feel himself do it, like setting his feet before a lift — that he’s lucky. That he is, after all, a lucky man.",
+    "He goes back up to the top and through them again, slower. A girl three time zones away has been holding a phone up to mirrors since the first week of December so a guy in a snow globe would have something to look at. The same girl docked him a point for Pasadena on the word of a man in a fleece. She read Matthew in a Coffee Bean so she could tell him Herod was a showrunner. Tomorrow night at 7:52 she is going to be at an airport in Santa Barbara, with an hour of him before Ted’s thing already counted. Somewhere around the town car he stops being a man lying in his brother’s room who got off the phone first, and he decides it — he can feel himself do it, like setting his feet before a lift — that he’s lucky. That he is, after all, a lucky man.",
     "He’s smiling. At a screen the size of a stamp, in the dark. He puts the back of his wrist against his mouth like that’s going to do anything about it.",
     "“Skye,” he tells the ceiling, which has heard worse from this bed.",
     "He opens a new message and types what they do: *sat 7:52. if theres no marching band im getting back on the plane*. It’s good. It’s their usual. He looks at it, and takes it back out a letter at a time, and lies there with the empty box and the cursor going."
@@ -452,16 +437,8 @@
       {
        "type": "sms",
        "from": "SKYE (MISFIT)",
-       "text": "im writing it on my other hand",
-       "time": "11:53 PM",
-       "if": "s2e2_chat==\"sincerity\""
-      },
-      {
-       "type": "sms",
-       "from": "SKYE (MISFIT)",
        "text": "im writing it on my hand",
-       "time": "11:53 PM",
-       "if": "s2e2_chat!=\"sincerity\""
+       "time": "11:53 PM"
       },
       {
        "type": "sms",

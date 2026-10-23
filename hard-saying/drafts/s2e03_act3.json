@@ -11,22 +11,7 @@
     "She picks up already talking to somebody else. “Hold on. Hold on — Mama, it’s — *hold on*.” A door, and the house on her end drops by half. “You called *me*.”",
     "“I called you.”",
     "“Jack Costigan called me on the telephone. On purpose. Mémère, write down the date.” Behind her an old woman says something in French that doesn’t sound like anybody writing anything down. “She says it’s the first. She says she’ll remember it without a pencil.”",
-    {
-     "if": "s2e2_newyear==\"restraint\"",
-     "text": "“You answered my midnight in the morning. I’ll allow it. Once.”"
-    },
-    {
-     "if": "s2e2_newyear==\"wit\"",
-     "text": "“The Gulf is still saluting your daddy. Mémère wants to know was anybody hurt.” “Tell her I’m sitting at the scene,” Jack says."
-    },
-    {
-     "if": "s2e2_newyear==\"sincerity\" || s2e2_newyear==\"almost\"",
-     "text": "“Happy New Year, Jack. Again.”"
-    },
-    {
-     "if": "s2e2_newyear!=\"restraint\" && s2e2_newyear!=\"wit\" && s2e2_newyear!=\"sincerity\" && s2e2_newyear!=\"almost\"",
-     "text": "“Happy New Year, Jack.”"
-    },
+    "“Happy New Year, Jack. Again.”",
     "It’s ten after five on Dupre Street, and she gives it to him in pieces. The black-eyed peas and the cabbage have been on the stove since noon. Every light in the house is still on from last night. Her daddy is in the den with the Sugar Bowl pregame, three hours early, to be sure of his chair. “Sweeping is forbidden till tomorrow. Mama’s walking around the kitchen with her hands behind her back so she won’t pick up the broom.”",
     "Four minutes of nothing. Whether a lentil is a vegetable — “It’s a *legume*, Jack. Don’t you call my peas’ cousin a vegetable on New Year’s Day” — and whether Ohio State can keep it up, and whether Mémère, who has been told twice, will ever accept that there is a state called Oregon. Somebody wants her in the kitchen, two somebodies, and there are plates to carry.",
     "“Call me back when y’all win.”",
@@ -348,8 +333,7 @@
      "type": "sms",
      "from": "Lena",
      "text": "Home field. We don’t need Carolina.",
-     "time": "4:15 PM",
-     "if": "knows_saints_homefield"
+     "time": "4:15 PM"
     },
     {
      "type": "break"
@@ -357,50 +341,8 @@
     "At twenty past nine the garage is down to the heater and the colored lights, and the radio is unplugged, and the supper plates are soaking inside. He dials. It’s twenty past eight on Dupre Street, and she picks up in a kitchen: a refrigerator door, foil coming off a roll, Mémère in French in the next room.",
     "“She wore it,” Lena says, before hello. “Every lily. I signed the paper, in pen.” “She spit up on Father’s stole at the Creed and he said it was the most sincere profession of faith he’d had all year.” The foil. “Daddy listened to the whole fourth quarter in the vestibule with the radio to his ear like a man waiting on a kidney. Then he came back in and held her and cried. I don’t know which part he was crying about. He doesn’t either.”",
     "“Okay. Your turn.”",
-    {
-     "if": "lena_knows_frank_went_in",
-     "text": "She asks before he can get a word in. “Did he get out?”"
-    },
-    {
-     "if": "lena_knows_frank_went_in && s2e2_danny==\"candor\"",
-     "text": "“He turned it off himself.”"
-    },
-    {
-     "if": "lena_knows_frank_went_in && s2e2_danny==\"wit\"",
-     "text": "“He asked me was I going to sit there all day.”"
-    },
-    {
-     "if": "lena_knows_frank_went_in && s2e2_danny==\"sincerity\"",
-     "text": "“Ma drove. He got out first.”"
-    },
-    {
-     "if": "lena_knows_frank_went_in && s2e2_danny!=\"candor\" && s2e2_danny!=\"wit\" && s2e2_danny!=\"sincerity\"",
-     "text": "“He turned the key.”"
-    },
-    {
-     "if": "!lena_knows_frank_went_in",
-     "text": "“He went in,” Jack says. “Last Sunday too.”"
-    },
-    {
-     "if": "!lena_knows_frank_went_in",
-     "text": "“Last *Sunday*? You didn’t tell me.”"
-    },
-    {
-     "if": "!lena_knows_frank_went_in && s2e2_room==\"sincerity\"",
-     "text": "“I left him out.”"
-    },
-    {
-     "if": "!lena_knows_frank_went_in && s2e2_room==\"wit\"",
-     "text": "“Danny was laughing at my face. It took the whole call.”"
-    },
-    {
-     "if": "!lena_knows_frank_went_in && s2e2_room!=\"sincerity\" && s2e2_room!=\"wit\"",
-     "text": "“It was long.”"
-    },
-    {
-     "if": "!lena_knows_frank_went_in && s2e2_room!=\"sincerity\" && s2e2_room!=\"wit\"",
-     "text": "“Tell me now.”"
-    }
+    "She asks before he can get a word in. “Did he get out?”",
+    "“Ma drove. He got out first.”"
    ],
    "choices": [
     {
@@ -413,22 +355,7 @@
      },
      "response": [
       "He tells her all of it, from the lot, and she lets him get to the end with Dupre Street going on behind her, the foil and the refrigerator and somebody laughing in the den.",
-      {
-       "if": "s2e2_danny==\"candor\"",
-       "text": "The key, his father turning it himself, and the radio dying in the middle of a man’s sentence."
-      },
-      {
-       "if": "s2e2_danny==\"wit\"",
-       "text": "The mirror, and his father’s eyes in it: *You gonna sit there all day?*"
-      },
-      {
-       "if": "s2e2_danny==\"sincerity\"",
-       "text": "Ma at the curb, taking the keys out of his father’s hand without a word."
-      },
-      {
-       "if": "s2e2_danny!=\"candor\" && s2e2_danny!=\"wit\" && s2e2_danny!=\"sincerity\"",
-       "text": "The key turning, and nobody saying anything about it."
-      },
+      "Ma at the curb, taking the keys out of his father’s hand without a word.",
       "The paper star over the microwave. Danny standing up. *They’ll win.* Four straight.",
       "“Tell your daddy a godmother said good.”",
       "Her end has filled up with leftovers — every aunt in the parish brought a pan — and she has to go wrap a hundred things in foil before Mama starts crying at the refrigerator. “Night, Jack.” He sits on under the colored lights with the phone shut on his knee."
@@ -492,17 +419,15 @@
    "set": {
     "resolve.jack": "-1",
     "heard_lena_fix_it": true,
-    "knows_lena_lands_10": true
+    "knows_lena_lands_10": true,
+    "lena_asked_monday_after": true,
+    "jack_got_a_thing": true
    },
    "body": [
     "The garage looks bigger with the lights down. The pegboard is bare except for the painted shapes of the tools that live on it, and the Stroh’s fridge hums against the back wall with ginger ale in it, and the space heater has the near half of the room to itself. His duffel is already behind the seat of the truck for the morning. It’s half past nine on Dupre Street. He dials.",
     "Her house is all suitcases. “Everybody’s flying somewhere. Mémère goes back to Breaux Bridge Sunday, the twins go back to school Monday, I’m Sunday at noon, and Josie has written an agenda for the airport. It has times on it. It has a column for *notes*.” A zipper, close by. “Mémère is packing me a jar of something for the dormitory. I asked what. She said *for the dormitory*. It’s not going to get through security. It’s not going to get through *Mama*.”",
     "The king cake is in its box on the kitchen table, and nobody is allowed to look at it. “If the TSA wands my king cake I’m going to make a scene, Jack, and it’s going to be a Broussard scene. They’ll have to call the Coast Guard.”",
     "Tess brought Lucille for supper and took her home asleep. “At the table she reached up and got my medal in her fist — just took it — and wouldn’t let go. Tess had to open her fingers one at a time. She has a grip like Daddy. Mémère crossed herself and said she’d known it all along, I don’t know what. She’s going to be a terror and I’m going to let her.”",
-    {
-     "if": "s2e2_market==\"sincerity\"",
-     "text": "“I never told you. I ate your oyster. I ate two.”"
-    },
     "“Is it snowing?” “It’s always snowing.” “I’ve seen snow twice in my life, Jack, and once it was hail.” He tells her his father is driving him to Pittsburgh in the morning, because Pittsburgh is cheaper, and she says only Ohio would drive to another state to leave it.",
     "She wants to know what he did all day. Packed. Ma ironed his shirts, all four, and stacked them on Danny’s bed like the bed was going too. Rosie is making him a drawing for the door and has told him it’s a secret and that it’s a plane. “Then you act surprised,” Lena says. “Practice your face tonight. You have a terrible surprised face. I’ve seen it.”",
     "She wants to know what he’s bringing back. He tells her: the Carhartt, a Tupperware of pizzelles Ma has packed in wax paper like they’re going to the moon, and a book he finished. She’s bringing the Greene for the plane, the one on Hale’s list. She has read it twice. “I hate her. I love her and I hate what she does. Hale’s going to make us fight about it in front of everybody, you know he is.” Remy goes back to Baton Rouge in the morning with a laundry bag the size of a person. Luc is on nights. The Saints play next Saturday, whoever wins Sunday, and her daddy is already sick to his stomach about both of them. “I’m watching it in the Fishbowl,” she says, “and y’all are going to be quiet, and nobody is going to say anything to me till it’s over.”",
@@ -513,13 +438,15 @@
     "She lands Sunday at four. Laney’s getting her; Kevin’s driving, because Theo won’t let Laney touch his car. “Monday is Hale,” she says. “He’s got us at opposite ends.”",
     "“For the safety of the others.”",
     "“I’m taking the end by the window.”",
-    "“Julian gets back Sunday too,” she says. “Late.”",
+    "“Julian gets back Sunday too,” she says. “Late. Tomorrow’s his birthday. He’s home in Oakland till Sunday.” A zipper. “So not this weekend.”",
     "It’s the first time she’s said his name in a week.",
     "“Yeah?”",
-    "“I’m going to see him Monday.”",
-    "Jack looks at the bare pegboard.",
+    "“I’m going to see him Monday. Dinner, after Hale.” Something goes into the suitcase and gets pressed down. “Will you be around after? Monday night. Nine, ten.”",
+    "Monday night was spoken for on the basement phone, at half past one in the morning, by somebody who wasn’t asking. Jack looks at the bare pegboard.",
+    "“Probably not,” he says. “I’ve got a thing.”",
+    "“Okay,” Lena says. She doesn’t ask what thing. “Then call me after.”",
     "“I haven’t been fair to him, Jack. I’ve known it a while. I’m going to fix it.”",
-    "It’s what she has always done. Where Julian is, when he lands, when he calls at ten his time — since September she has kept him posted, like a girl reading him the weather in a town he’ll never see. And under it, after a week of him dialing this number every night, he hears something being shut, gently, the way you’d shut a door on somebody asleep. She’s going home to make it right with Julian. She’s telling him so he’ll stop calling."
+    "It’s what she has always done. Where Julian is, when he lands, when he calls at ten his time — since September she has kept him posted, like a girl reading him the weather in a town he’ll never see. And under it, after a week of him dialing this number every night, he hears something being shut, gently, the way you’d shut a door on somebody asleep. *Then call me after*, as easy as that, like it costs her nothing; she didn’t even ask what the thing was, and she has never in her life not asked. She’s going home to make it right with Julian. She’s telling him so he’ll stop calling."
    ],
    "choices": [
     {

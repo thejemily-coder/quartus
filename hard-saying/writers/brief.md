@@ -1673,3 +1673,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **It's personal, not abstract:** Yusuf (a housemate from S4; his brother Tariq a soldier) and his family keep it
     human. Muslim characters are never props or villains; Jack's tensions are tested by friendship, never resolved by
     a speech.
+- **What Jack tells Lena about the physical side with Skye (player; New Orleans conversation).** The photos, the videos,
+  and now knowing where he was in the middle of the night all December (and much of January–February) raise the
+  question for her. **Jack's answer, honest and plain: there was more than there should have been, but they never
+  slept together.** For Lena it's **painful but more relief than pain**, and **she decides she doesn't need any further
+  details** (she stops him if he starts). It never becomes a subject between them again, except as the edge under her
+  lasting dislike of Skye.
