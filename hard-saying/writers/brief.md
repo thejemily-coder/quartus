@@ -1755,3 +1755,30 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Fix applied to S2E04 (orchestrator):** the pre-produced draft spent Laney's "California you" line at the Haiti
     table (s12a) before she'd seen them argue. Replaced there with "Well. Somebody hand me my good manners. I'm fixing
     to need every one of them." **The line is UNSPENT and lands at Sully's per the chain above** (S2E05–E07).
+- **SKYE'S BREAKUP AND AFTER (player's design; supersedes "room decides how Skye takes it"; S2E18 onward; adapt to
+  voices, not verbatim). The balance of the breakup's reaction is Skye's.**
+  1. **She thinks he's doing a bit**, and **laughs at first**, then tells him **to stop, because it isn't funny.** (It
+     hurts more from the first second.)
+  2. **Truly heartbroken as it sets in**, she doesn't understand how: everything he said to her before he left was true
+     (she can tell), so how can this be happening. He tries to explain, **badly**.
+  3. **Then she gets angry:** you're in love with me, you're happy, and you don't want to be with me. She **yells at him
+     for a while, most of it not making sense**, because she's crying through it and can't understand what he's trying
+     to say. **She decides he must have cheated in New Orleans** and just feels guilty. **She tells him to get out and
+     leave her alone.**
+  4. **A week or two without a word from her; she misses their shared class.**
+  5. **Then she shows back up.** After class she talks to him again, devastated and angry but not shouting: **he doesn't
+     lie**, so if he was telling the truth (and she knows he was), **he owes it to her to sit somewhere and explain it
+     until she understands.** They talk a long while; she cries; Jack isn't doing well with himself; **she sort of gets
+     there.** They're still forced to work together in the class. **She'll respect what he said, as she always does,
+     "but this isn't done."**
+  6. **She fights within the framework of their relationship and her own understanding** (the "same direction" idea):
+     at class, their regular coffees and studying for the class, **she buys herself a Catechism and argues it with him,
+     one section at a time.** Her plan: **argue into understanding, so either she's persuaded of his faith or he's
+     dissuaded from it.** She also **dresses fairly provocatively but never touches him** (that part worked before too).
+  7. **Lena isn't thrilled but doesn't make it a thing.** She makes Jack promise that **if Skye ever makes a move, the
+     meet-ups stop.** Skye seizes on the phrasing: she's the only one who *can't* make a move, and **"I can work with
+     that"** (echoing her line from their first conversation about sex, S1E20).
+  8. **Fun, fraught, and eventually it leads to their friendship** (not close; the long thaw already in the brief). It
+     stays within the hard lines (no cheating, nothing physical), keeps Skye a real pull on Jack (the "dangerous" entry)
+     and keeps Lena's dislike honest. Every Catechism session is a real argument with real philosophy on both sides;
+     Skye is never a strawman, and Jack doesn't always win.
