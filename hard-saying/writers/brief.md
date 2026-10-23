@@ -1577,3 +1577,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   gossip blog, or a Youngstown friend reposting it). **Lena sees it as well** (off-screen per POV; it's part of what
   Laney finds going through the pictures and interactions after taking the laptop). Jack learns it's out there from
   the wall/comments and Gina, and only learns in New Orleans that Lena watched it.
+- **Skye's first defiant posts (player; refines "she goes official herself" and the reckless posting).** If there's a
+  clear still from the airport video (or a good photo of the moment from another phone), **Skye puts it on Facebook
+  herself.** When **her mom/team tries to get her to take it down**, that's when **she takes the first photo of the two
+  of them herself and posts it instead**: the start of the reckless posting, born of defiance.
+- **The Saab singalong video (player; a little later, late Jan/early Feb).** Someone in traffic films them in the Saab,
+  **top down, at a stoplight, singing a period-accurate and absolutely filthy song to each other at the top of their
+  lungs, eyes on each other the whole time.** It goes around (wall posts, a gossip blog), and the friends, Gina, and
+  Lena all see it. Pure joy on the screen (the double state's Skye half at full volume). **Song: room's pick, released
+  by the scene's date**; candidates: Khia, "My Neck, My Back (Lick It)" (2002); Jeremih, "Birthday Sex" (2009);
+  Lady Gaga, "LoveGame" (2008); Young Money, "BedRock" (Nov 2009). Quote at most a few words of lyric on the page.
