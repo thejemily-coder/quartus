@@ -127,18 +127,7 @@
     "“Pop fell asleep at Midnight Mass,” Gina says.",
     "“Around Quirinius,” Jack says.",
     "“Everybody falls asleep at Quirinius,” Danny says. “That’s what he’s for.”",
-    {
-     "if": "s2e1_eel==\"reckless\"",
-     "text": "“So who ate the eel?” Danny says, with his mouth full. “Me,” Jack says. “First. Pop paid five.” Danny turns all the way around in the bolted chair to look at his father. “Twenty-four years.” “It was a bet,” Frank says."
-    },
-    {
-     "if": "s2e1_eel==\"wit\"",
-     "text": "“So who ate the eel?” Danny says, with his mouth full. “Theo ate mine.” Danny points a honey bun at him. “Coward.”"
-    },
-    {
-     "if": "s2e1_eel==\"restraint\"",
-     "text": "“So who ate the eel?” Danny says, with his mouth full. “Nonna ate mine.” Danny points a honey bun at him. “Coward.”"
-    },
+    "“So who ate the eel?” Danny says, with his mouth full. “Me,” Jack says. “First. Pop paid five.” Danny turns all the way around in the bolted chair to look at his father. “Twenty-four years.” “It was a bet,” Frank says.",
     "“I drew the TV girl,” Rosie tells him. “With Jack. And the crab.”",
     "“Yeah? What’s she look like?”",
     "“Yellow hair. And Jack’s holding the crab, because she’s scared of it.”",
@@ -160,32 +149,12 @@
     "“*Daniel*,” Ma says.",
     "“She’s nice on TV,” Rosie says.",
     "“That’s what I hear,” Danny says, and wipes his eyes with the heel of his hand.",
-    {
-     "if": "family_knows_skye_name",
-     "text": "“What’s her name again?” Gina tells him, and he tries it. “*Sky*-ee. With an E, Gina says.”",
-     "else": "Her name doesn’t come up. To Gina she’s *her*, in italics. To Danny she’s the TV one, like a horse he has money on."
-    }
+    "“What’s her name again?” Gina tells him, and he tries it. “*Sky*-ee. With an E, Gina says.”"
    ],
    "choices": [
     {
-     "text": "“Her name’s Skye, Dan.”",
-     "tag": "Candor",
-     "if": "!family_knows_skye_name",
-     "set": {
-      "s2e2_tv": "candor",
-      "soul.honesty": "+1"
-     },
-     "key": "Holy Family Sunday, at the bolted table, Danny laughed at the TV girl till the officer looked over. You told him her name.",
-     "response": [
-      "“Skye,” Danny says. He tries it like a word off a menu in another language, a word he has never heard in his life — though he heard it at this table a week ago, from his brother. “Course it is.”",
-      "And to Ma, straight-faced: “Nice Catholic name.”"
-     ],
-     "goto": "s05c"
-    },
-    {
      "text": "“Say it right, Dan. She’d want it said right.”",
      "tag": "Candor",
-     "if": "family_knows_skye_name",
      "set": {
       "s2e2_tv": "candor",
       "soul.honesty": "+1"
@@ -206,9 +175,9 @@
      },
      "key": "Holy Family Sunday, at the bolted table, Danny laughed at the TV girl till the officer looked over. You told him to ask Theo.",
      "response": [
-      "“The rich one knows her?”",
-      "“Everybody in LA knows everybody.”",
-      "Danny looks at him a second longer than the joke needs. He picks up the last corner of his honey bun and eats it."
+      "“The rich one said so?”",
+      "“At breakfast. To Ma.”",
+      "Danny thinks about that, chewing. “Then it’s true. Rich one don’t lie to Ma. He’s scared of her.” He picks up the last corner of his honey bun and eats it."
      ],
      "goto": "s05c"
     },
@@ -239,30 +208,8 @@
     "“Rich one get home?”",
     "“They wanded the baccalà at the airport. Ma’s labels got admired by a federal employee.”",
     "Danny laughs into his fist. “Ma’s gonna put that on the fridge.”",
-    {
-     "if": "s2e1_danny==\"candor\"",
-     "text": "“Took it home?” he says. “Yeah.” “Okay.”"
-    },
-    {
-     "if": "s2e1_danny==\"wit\"",
-     "text": "“Still a catch?” he says. “Still a mess.”"
-    },
-    {
-     "if": "s2e1_danny==\"sincerity\"",
-     "text": "He turns his honey-bun wrapper foil side up and squares it to the edge of the table, and leaves it at that."
-    },
-    {
-     "if": "s2e1_danny==\"restraint\"",
-     "text": "“Still carrying it?” he says. “Yeah.” “Okay.”"
-    },
-    {
-     "if": "s2e1_danny!=\"candor\" && s2e1_danny!=\"wit\" && s2e1_danny!=\"sincerity\" && s2e1_danny!=\"restraint\"",
-     "text": "“You good?” he says. “Yeah.”"
-    },
-    {
-     "if": "told_danny_love",
-     "text": "Danny looks at him across the table, and Jack lets him."
-    },
+    "He turns his honey-bun wrapper foil side up and squares it to the edge of the table, and leaves it at that.",
+    "Danny looks at him across the table, and Jack lets him.",
     "For a little while Danny doesn’t say anything else, and Jack doesn’t either. The grandmothers at the next table have finished the clementine and are folding the peel into a napkin. In the toy corner Gina is sitting cross-legged on the linoleum in her good skirt, holding the fire truck’s ladder up for the little brother while Rosie explains to him how it goes. Somebody’s baby has fallen asleep with a fist in a man’s collar. Up on the platform the officer turns a page of the newspaper and smooths it flat.",
     "Danny’s eyes have gone past Jack, to the far wall. Jack turns in the bolted chair to see.",
     "Frank has a coffee in each hand now, in the paper cups with the playing cards printed around them, and he is standing in front of the creamer button with his chin down, frowning at it, while Ma explains it to him again with one finger.",
@@ -362,14 +309,6 @@
      "kind": "person",
      "id": "danny",
      "title": "Danny Costigan",
-     "if": "s2e1_tell==\"candor\"",
-     "text": "My brother. Trumbull Correctional. Calls me Professor. Ma brought him the good socks. *Brideshead* went to him through Driftwood, margins erased; the C.O. reading it first says it’s about a house. The ocean letter got there; Reggie, from Portsmouth, decided on his own the Pacific smells like money and fish. Lena knows. She asked his name. On the bluff bench she said hi to him and told him she’s going to be defense, and he laughed like he used to. The system cut him off at ‘tell Gina — .’ He wrote the rest down: tell Gina it ain’t hers to carry. He’s got it. On Michaelmas he wrote: Tell Lena hey. I like knowing it. You sound happy out there. Don’t feel bad about it. That’s an order. Lena says hey back. She said it herself. The Saints are four and oh, and she expects him to know that. Third letter, after Columbus Day: the Hopkins got there. He read Ma “Felix Randal” on the phone and she cried; he says he’s telling me so I know he read it, not so I feel bad. The Housman made Reggie cry. Ma told him about Becca. He wants to know if I told Lena hey, or does he have to come out here. I did. He doesn’t know yet. Push-ups: 140. Fourth letter, All Souls: he knows about hey now. ABOUT TIME, up the margin; he wants to know what she said back. Halloween at Trumbull, a guard in a rubber mask. Ma’s getting Nonno a Mass at St. Brigid’s; he wants me to put Nonno in the book here. He says he’d put his in, but he doesn’t have anybody dead. He has the other kind. I wrote him back: she said hey like she meant it. Thanksgiving weekend: put in for a visit for the rich one himself. Liked him in a minute. Reggie waved. Asked which girl. ‘Who’s Flannery O’Connor?’ Noticed I waited till Theo went to the machines. Told Theo he could quit buying. He went to the prison library about Flannery O’Connor. Ma read it to me off an envelope: she raised peacocks and she was mean and he likes her. Is it still something. The Sunday before Christmas I went with Ma; Pop stayed in the truck — the twenty-seventh, he says. Ma took forever at the machines. I said it out loud: I’m in love with Lena. Then the rest: the song, the month, Skye. He said he wasn’t going to tell me which one. He said he believes me, both. Then he asked me one question, and I didn’t have an answer. Then he told Ma I miss the beach. Christmas Eve I brought Theo, in the parka. Theo bought; Danny let him. Theo asked if I’d told him about California. Danny said I miss the beach. Asked Theo who comes to see him. “He does.” Christmas, Gina told him about the boat, and he laughed till they cut him off in the middle of a sentence about Lena. Holy Family Sunday, all of us — Pop too. He stood up when he saw Pop. Pop told him they’d beat Oakland. Laughed at the TV one till the guard looked over, and didn’t say one other thing about it. Not one. While Ma showed Pop the machines he asked me not to let Pop sit in the truck on the third. Pop brought him coffee with cream and sugar. He drinks it black. He drank it."
-    },
-    {
-     "kind": "person",
-     "id": "danny",
-     "title": "Danny Costigan",
-     "if": "s2e1_tell!=\"candor\"",
      "text": "My brother. Trumbull Correctional. Calls me Professor. Ma brought him the good socks. *Brideshead* went to him through Driftwood, margins erased; the C.O. reading it first says it’s about a house. The ocean letter got there; Reggie, from Portsmouth, decided on his own the Pacific smells like money and fish. Lena knows. She asked his name. On the bluff bench she said hi to him and told him she’s going to be defense, and he laughed like he used to. The system cut him off at ‘tell Gina — .’ He wrote the rest down: tell Gina it ain’t hers to carry. He’s got it. On Michaelmas he wrote: Tell Lena hey. I like knowing it. You sound happy out there. Don’t feel bad about it. That’s an order. Lena says hey back. She said it herself. The Saints are four and oh, and she expects him to know that. Third letter, after Columbus Day: the Hopkins got there. He read Ma “Felix Randal” on the phone and she cried; he says he’s telling me so I know he read it, not so I feel bad. The Housman made Reggie cry. Ma told him about Becca. He wants to know if I told Lena hey, or does he have to come out here. I did. He doesn’t know yet. Push-ups: 140. Fourth letter, All Souls: he knows about hey now. ABOUT TIME, up the margin; he wants to know what she said back. Halloween at Trumbull, a guard in a rubber mask. Ma’s getting Nonno a Mass at St. Brigid’s; he wants me to put Nonno in the book here. He says he’d put his in, but he doesn’t have anybody dead. He has the other kind. I wrote him back: she said hey like she meant it. Thanksgiving weekend: put in for a visit for the rich one himself. Liked him in a minute. Reggie waved. Asked which girl. ‘Who’s Flannery O’Connor?’ Noticed I waited till Theo went to the machines. Told Theo he could quit buying. He went to the prison library about Flannery O’Connor. Ma read it to me off an envelope: she raised peacocks and she was mean and he likes her. Is it still something. The Sunday before Christmas I went with Ma; Pop stayed in the truck — the twenty-seventh, he says. Ma took forever at the machines. He said it for me — I’m in love with Lena — and I didn’t tell him he was wrong. Then the rest: the song, the month, Skye. He said he wasn’t going to tell me which one. He said he believes me, both. Then he asked me one question, and I didn’t have an answer. Then he told Ma I miss the beach. Christmas Eve I brought Theo, in the parka. Theo bought; Danny let him. Theo asked if I’d told him about California. Danny said I miss the beach. Asked Theo who comes to see him. “He does.” Christmas, Gina told him about the boat, and he laughed till they cut him off in the middle of a sentence about Lena. Holy Family Sunday, all of us — Pop too. He stood up when he saw Pop. Pop told him they’d beat Oakland. Laughed at the TV one till the guard looked over, and didn’t say one other thing about it. Not one. While Ma showed Pop the machines he asked me not to let Pop sit in the truck on the third. Pop brought him coffee with cream and sugar. He drinks it black. He drank it."
     }
    ],

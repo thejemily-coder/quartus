@@ -506,10 +506,6 @@
       "He opens it. *Retrieving.* It comes down the little screen a stripe at a time in the gray light from the garage window, and for the first three stripes it’s only gray — sea and sky the same gray, the line between them gone soft. Then the white nose of a surfboard in the bottom corner, and the shine of wet black neoprene, and her.",
       "It’s blind, at arm’s length: the horizon tipped, the top of her head lost off the frame where her arm guessed wrong. A beach up the coast at first light, the sun just over the hills behind the camera and full in her face. She has peeled the wetsuit down to her hips and there is nothing above it but her, gooseflesh all over, her hair in wet ropes over one shoulder and a patch of salt dried white on her collarbone. She’s squinting into the low sun with her mouth a little open from the water, red in the cheeks, blotched with salt — a girl freezing on a beach at seven in the morning with a phone held out, and that’s all her face is doing. Low on her hip, just above the black edge of the suit, she has drawn a 10 in white zinc with one finger.",
       "*Erase?* the phone asks him. *Yes.* The list closes up over the place where it was, quick and tidy, the 10 and the zinc and the rest. The phone can only take back its half. He looked.",
-      {
-       "if": "pic6_erased",
-       "text": "It’s the second one he’s erased."
-      },
       "Across the drive, in the kitchen window, his father is on the wall phone with the cord stretched to the sink. They’ve made him start over: he is spelling his name again from the top. Jack can’t hear it from the garage, but he can watch it go — one thick finger coming down on the counter for every letter."
      ],
      "goto": "s10a"
@@ -520,8 +516,7 @@
    "slug": "FRIDAY · 3:00 AM · THE BASEMENT, THE DELL",
    "set": {
     "rel.skye.warmth": "+1",
-    "skye_chat_nye": true,
-    "knows_theo_family_line": true
+    "skye_chat_nye": true
    },
    "body": [
     "At five to three the basement is the furnace and the Dell. The furnace is between runs, ticking as it cools. The Dell is back on its card table by the laundry sink, its fan whining, the only light down here, and it puts his shadow up the paneling behind him the size of a door. Over his head the whole house is asleep, the year included. He came down in the Carhartt over his pajama pants with a glass of milk, because the basement is the one room in the house where a light on at this hour doesn’t climb the stairs. Ma’s laundry baskets are stacked by the sink, folded and waiting. The old Zenith is under its bedsheet. The keyboard is the family’s, with half the letters worn off the keys and a horse sticker of Gina’s from the sixth grade on the space bar, and he types on it with two fingers.",
@@ -529,21 +524,27 @@
     {
      "type": "sms",
      "from": "Theo",
-     "text": "Happy New Year, Costigan. It’s nine o’clock here and the party is already a disappointment. Callender is here. I’m being polite. Answer your phone.",
-     "time": "12:00 AM",
-     "if": "s2e1_told_theo || theo_knows_jack_knows"
-    },
-    {
-     "type": "sms",
-     "from": "Theo",
      "text": "Happy New Year, Costigan. It’s nine o’clock here and the party is already a disappointment. Answer your phone.",
-     "time": "12:00 AM",
-     "if": "!s2e1_told_theo && !theo_knows_jack_knows"
+     "time": "12:00 AM"
     },
     {
      "if": "nye_home",
      "text": "He answered it from the rug in the front room, between Nonna’s *Buon anno* and the dishes: *happy new year theo. ma wants to know if youre wearing the scarf.*",
      "else": "He answered it on the walk home from Ryan’s, one glove off, under the streetlights on Glenwood: *happy new year theo. ma wants to know if youre wearing the scarf.*"
+    },
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "I am wearing the scarf. It is sixty-one degrees. A woman has asked me if I’m in a band.",
+     "time": "12:09 AM",
+     "if": "nye_home"
+    },
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "I am wearing the scarf. It is sixty-one degrees. A woman has asked me if I’m in a band.",
+     "time": "12:51 AM",
+     "if": "!nye_home"
     },
     "On the Dell the News Feed has gone on without him.",
     {
@@ -575,7 +576,7 @@
     {
      "type": "fb",
      "name": "Skye Callender",
-     "text": "i KNOW. i watched the ball drop at 9. east coast feed. these people have a satellite. in THIS den. so id be at midnight with you",
+     "text": "i KNOW. i was at yours. east coast feed. these people have a satellite. in THIS den. this ones mine",
      "meta": "Chat · 3:01am"
     },
     {
@@ -718,105 +719,75 @@
     {
      "type": "fb",
      "name": "Skye Callender",
-     "text": "ted is here",
-     "meta": "Chat · 3:05am",
-     "if": "knows_theo_skye"
-    },
-    {
-     "type": "fb",
-     "name": "Skye Callender",
-     "text": "ted is wearing an ORANGE KNIT HAT. at a POOL. it is sixty one degrees",
-     "meta": "Chat · 3:05am",
-     "if": "knows_theo_skye"
-    },
-    {
-     "type": "fb",
-     "name": "Skye Callender",
-     "text": "and a SCARF. he says your mother made it",
-     "meta": "Chat · 3:06am",
-     "if": "knows_theo_skye"
-    },
-    {
-     "type": "fb",
-     "name": "Skye Callender",
-     "text": "he came all the way around the pool to me. he was careful again. twice in one christmas",
-     "meta": "Chat · 3:06am",
-     "if": "knows_theo_skye"
-    },
-    {
-     "type": "fb",
-     "name": "Skye Callender",
-     "text": "he said and i quote. dont break my family",
-     "meta": "Chat · 3:06am",
-     "if": "knows_theo_skye"
-    },
-    {
-     "type": "fb",
-     "name": "Skye Callender",
-     "text": "ted doesnt HAVE a family. ted has a father and a mother with a life coach",
-     "meta": "Chat · 3:07am",
-     "if": "knows_theo_skye"
-    },
-    {
-     "type": "fb",
-     "name": "Skye Callender",
-     "text": "who is he talking about ohio",
-     "meta": "Chat · 3:07am",
-     "if": "knows_theo_skye"
-    },
-    {
-     "type": "fb",
-     "name": "Skye Callender",
-     "text": "dont tell me. i know. its you people. youve adopted him. its like a nature documentary",
-     "meta": "Chat · 3:07am",
-     "if": "knows_theo_skye"
-    },
-    {
-     "type": "fb",
-     "name": "Skye Callender",
-     "text": "ted is here. hes being polite. its unbearable",
-     "meta": "Chat · 3:05am",
-     "if": "!knows_theo_skye"
+     "text": "did you say hi to ted for me. christmas",
+     "meta": "Chat · 3:06am"
     },
     {
      "type": "fb",
      "name": "Jack Costigan",
-     "text": "is he having a good time",
+     "text": "i called him ted",
+     "meta": "Chat · 3:06am"
+    },
+    {
+     "type": "fb",
+     "name": "Skye Callender",
+     "text": "you DIDNT",
+     "meta": "Chat · 3:06am"
+    },
+    {
+     "type": "fb",
+     "name": "Skye Callender",
+     "text": "what did he do",
+     "meta": "Chat · 3:06am"
+    },
+    {
+     "type": "fb",
+     "name": "Jack Costigan",
+     "text": "laughed. then he said only you get that one",
      "meta": "Chat · 3:07am"
     },
     {
      "type": "fb",
      "name": "Skye Callender",
-     "text": "hes having a TED time. he brought a hostess gift to a pool party. a candle shaped like a pear. the host put it in the koi pond. its FLOATING. emmy is very upset",
+     "text": "…",
+     "meta": "Chat · 3:07am"
+    },
+    {
+     "type": "fb",
+     "name": "Skye Callender",
+     "text": "ok well hes right. its the one thing i have on him. get your own ted",
+     "meta": "Chat · 3:07am"
+    },
+    {
+     "type": "fb",
+     "name": "Skye Callender",
+     "text": "earlier. someone brought a hostess gift to a pool party. a candle shaped like a pear. the host put it in the koi pond. its FLOATING. emmy is very upset",
      "meta": "Chat · 3:08am"
     },
     {
      "type": "fb",
      "name": "Skye Callender",
-     "text": "telling you right away this time. like you said",
-     "meta": "Chat · 3:08am",
-     "if": "s2e1_ted==\"candor\""
+     "text": "who else did you hear from tonight. i want the list",
+     "meta": "Chat · 3:08am"
+    },
+    {
+     "type": "fb",
+     "name": "Jack Costigan",
+     "text": "my whole family with pots and pans. theo. kevin. margot. laney. a guy named yusuf whose brother walked to the mailbox",
+     "meta": "Chat · 3:08am"
+    },
+    "Every name on it is true. It’s one name short. He sends it.",
+    {
+     "type": "fb",
+     "name": "Skye Callender",
+     "text": "his brother walked to the MAILBOX. best news of the year",
+     "meta": "Chat · 3:09am"
     },
     {
      "type": "fb",
      "name": "Skye Callender",
-     "text": "you asked if hes ok. still no. but hes wearing something your mother made so hes closer",
-     "meta": "Chat · 3:08am",
-     "if": "s2e1_ted==\"sincerity\""
-    },
-    {
-     "type": "fb",
-     "name": "Skye Callender",
-     "text": "no bow. he bowed to my DRINK",
-     "meta": "Chat · 3:08am",
-     "if": "s2e1_ted==\"wit\""
-    },
-    {
-     "type": "fb",
-     "name": "Skye Callender",
-     "text": "also he asked if you passed on his merry christmas. you DIDNT. what goes on in that house",
-     "meta": "Chat · 3:08am",
-     "if": "s2e1_theo==\"restraint\""
+     "text": "the year is 9 minutes old. still",
+     "meta": "Chat · 3:09am"
     },
     "The furnace kicks on behind him with a thump and settles into its run, and the warm comes across the concrete to the backs of his legs.",
     {
@@ -895,21 +866,13 @@
      "kind": "person",
      "id": "skye",
      "title": "Skye Callender",
-     "text": "Skye Callender, two Ls. Wouldn’t give me a last name — said *Out* — till she texted it to me on the floor in Denver. Met her in a window seat in Montecito, reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Starts here in January: spring, undeclared. She’s declared enough, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. She was the one who stopped, in the grandmother’s voice. Typed herself into my phone as SKYE (MISFIT), and called herself from it. Took ten hours to answer my correction. Work, she said — a carpet and a wall. Her car’s an orphan now, and it’s my fault. Nearly three hours at the Starlite, a truck stop up the 101, with Nonna’s pie on the table. Cast me as the Bible salesman. Wanted to know what believing is like — not what I believe. Wants me to miss her a reasonable amount. Get the window, she said. Kissed me again against the Saab in the lot. Slower. On purpose. She was the one who stopped — her thumb on my mouth. She’s on TV. *Sweetwater*, Thursdays at nine: she plays Cassidy, the nice one. Gina screamed. I explained GM to her. In her own car. Thanksgiving: texted me the whole drive from Pittsburgh. Spent it at her mother’s place in Studio City; the parrot says ‘momager.’ Told me not to watch her show. Wants me to be specific. We’re friends on Facebook now — one mutual friend: Theo, who knows everybody. Saturday night she called. Three hours on the porch. Made me do my family. Asked what Advent is. Asked if the TV part matters. Fell asleep in the middle of the Madonna. Monday she drove two hours from LA to sit in a car with me for two more, and set an alarm so she’d leave. Watched the President with the sound off and read his face like a script. Her phone learned a trick in September; she’s still not over it. Gives every truck on the 101 a whole life in three sentences. Knows every word of ‘Thunder Road.’ The tape deck finally let go of *Rumours*. Invited me to LA; I work Saturdays. Doesn’t take people home. Saturday, in daylight, on a rock above the tide pools: fractions, for the placement test. I drew her a pie. Sharks were a lie. I told her a saint broke in. Drove me to Burbank in the rain to be her cousin from Ohio. Everybody on a set wants something from her; she smiles for every phone. Plays a preacher’s daughter who forgives a thief. She played it dry. Washed a borrowed dress in a laundromat at one in the morning; it lived. Thinks the Immaculate Conception is the other one. Took the math test with forty kids and nobody looked at her once. Doesn’t take people home. Took me home. Lives on Del Playa, in a house with a darkroom she isn’t allowed in and two boards under the porch the boys won’t let on the rack — she’ll live there in January. On her bed I said no. She stopped everything and asked me why, and we talked till it got light. I told her it’s a no right now. She said she can work with that. Picked my present for the church party: a Magic 8-Ball. Every answer’s a line reading, she says. Her car died in Buellton; I pushed. She’s seen Our Lady of Guadalupe on every taco truck in the Valley and thought she was a brand. Friday night she took my ‘right now’ apart, point by point, with visual aids, and made a very good case. It’s still right now. I said no again, and she stopped right there and nowhere else. Came to the Anchor in my shirt; Gloria rated her boysenberry. She’s going to ask every day, she says. It’s in her calendar. Slept at her house. Just slept. She says that doesn’t happen. Taught me to surf at Ellery on Gaudete Sunday. I’m terrible. I go home in six days. She isn’t counting. Played Hale in her car from my description. Made me answer the question I couldn’t at the Starlite. Thursday at one in the morning, no moon at all, she drove the bluff with the lights off. Not before Christmas, she said — Christmas and New Year’s and long distance are too much for something new. When I get back we’re dating. Officially. A whole thing. She counted. GM is killing Saab. I’m on the hook. Christmas week: Theo’s known her since they were eleven — his father’s company makes her show. She calls him Ted; nobody else does. She saw us walk into the Hallorans’ together and hid behind a ficus. “Peace mission” was for him. He ran into her at a party in the hills on the twenty-second, and she says he knows. She had me do the weather barefoot in the snow. Seventeen days; she’s not counting. Christmas morning my family found her — Gina gave me her show on DVD. They know her as the nice one. She wants it on her headstone. The day after Christmas my whole family watched season two of her show. She was eighteen, in a blazer, on a dock. She’s good — Dad said so, and she says nobody says good. Nonna prays for Cassidy now. She bought Chesterton used on Ventura without knowing it was my book, and wants to know who picked midnight. The Monday after Christmas she called, and we talked till my phone died. New Year’s she watched the ball drop on the East Coast feed at nine so she’d be at midnight with me — then had her own."
+     "text": "Skye Callender, two Ls. Wouldn’t give me a last name — said *Out* — till she texted it to me on the floor in Denver. Met her in a window seat in Montecito, reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Starts here in January: spring, undeclared. She’s declared enough, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. She was the one who stopped, in the grandmother’s voice. Typed herself into my phone as SKYE (MISFIT), and called herself from it. Took ten hours to answer my correction. Work, she said — a carpet and a wall. Her car’s an orphan now, and it’s my fault. Nearly three hours at the Starlite, a truck stop up the 101, with Nonna’s pie on the table. Cast me as the Bible salesman. Wanted to know what believing is like — not what I believe. Wants me to miss her a reasonable amount. Get the window, she said. Kissed me again against the Saab in the lot. Slower. On purpose. She was the one who stopped — her thumb on my mouth. She’s on TV. *Sweetwater*, Thursdays at nine: she plays Cassidy, the nice one. Gina screamed. I explained GM to her. In her own car. Thanksgiving: texted me the whole drive from Pittsburgh. Spent it at her mother’s place in Studio City; the parrot says ‘momager.’ Told me not to watch her show. Wants me to be specific. We’re friends on Facebook now — one mutual friend: Theo, who knows everybody. Saturday night she called. Three hours on the porch. Made me do my family. Asked what Advent is. Asked if the TV part matters. Fell asleep in the middle of the Madonna. Monday she drove two hours from LA to sit in a car with me for two more, and set an alarm so she’d leave. Watched the President with the sound off and read his face like a script. Her phone learned a trick in September; she’s still not over it. Gives every truck on the 101 a whole life in three sentences. Knows every word of ‘Thunder Road.’ The tape deck finally let go of *Rumours*. Invited me to LA; I work Saturdays. Doesn’t take people home. Saturday, in daylight, on a rock above the tide pools: fractions, for the placement test. I drew her a pie. Sharks were a lie. I told her a saint broke in. Drove me to Burbank in the rain to be her cousin from Ohio. Everybody on a set wants something from her; she smiles for every phone. Plays a preacher’s daughter who forgives a thief. She played it dry. Washed a borrowed dress in a laundromat at one in the morning; it lived. Thinks the Immaculate Conception is the other one. Took the math test with forty kids and nobody looked at her once. Doesn’t take people home. Took me home. Lives on Del Playa, in a house with a darkroom she isn’t allowed in and two boards under the porch the boys won’t let on the rack — she’ll live there in January. On her bed I said no. She stopped everything and asked me why, and we talked till it got light. I told her it’s a no right now. She said she can work with that. Picked my present for the church party: a Magic 8-Ball. Every answer’s a line reading, she says. Her car died in Buellton; I pushed. She’s seen Our Lady of Guadalupe on every taco truck in the Valley and thought she was a brand. Friday night she took my ‘right now’ apart, point by point, with visual aids, and made a very good case. It’s still right now. I said no again, and she stopped right there and nowhere else. Came to the Anchor in my shirt; Gloria rated her boysenberry. She’s going to ask every day, she says. It’s in her calendar. Slept at her house. Just slept. She says that doesn’t happen. Taught me to surf at Ellery on Gaudete Sunday. I’m terrible. I go home in six days. She isn’t counting. Played Hale in her car from my description. Made me answer the question I couldn’t at the Starlite. Thursday at one in the morning, no moon at all, she drove the bluff with the lights off. Not before Christmas, she said — Christmas and New Year’s and long distance are too much for something new. When I get back we’re dating. Officially. A whole thing. She counted. GM is killing Saab. I’m on the hook. Christmas week: Theo’s known her since they were eleven — his father’s company makes her show. She calls him Ted; nobody else does. She saw us walk into the Hallorans’ together and hid behind a ficus. “Peace mission” was for him. He ran into her at a party in the hills on the twenty-second, and she says he knows. She had me do the weather barefoot in the snow. Seventeen days; she’s not counting. Christmas morning my family found her — Gina gave me her show on DVD. They know her as the nice one. She wants it on her headstone. The day after Christmas my whole family watched season two of her show. She was eighteen, in a blazer, on a dock. She’s good — Dad said so, and she says nobody says good. Nonna prays for Cassidy now. She bought Chesterton used on Ventura without knowing it was my book, and wants to know who picked midnight. The Monday after Christmas she called, and we talked till my phone died. New Year’s Eve she watched my ball drop on the East Coast feed at nine her time and texted, so she’d be at midnight with me. Then she had her own, at three in the morning mine, from a locked den in the hills. I told her I called Ted *Ted*. She says he’s right: that one’s hers."
     },
     {
      "kind": "person",
      "id": "theo",
      "title": "Theo Vance",
-     "if": "s2e1_told_theo",
-     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath. Sunday night, to the ceiling: Laney says he asked if he could ask. ‘Like a vampire. They have to be invited in.’ He’s known since Friday. Wednesday I said I ended it. He opened his jar and gave me a spoon. Friday he took me to a party in Montecito so I wouldn’t meet anybody, and lost me in three minutes. Saturday at six he was on his bed in his coat. He’d called me nine times. At halftime of Michigan I asked him home for Thanksgiving. He said yes before I finished, and bought two tickets to Pittsburgh. ‘Guests bring something.’ Looked up St. Elizabeth’s visiting hours before I asked. Thanksgiving: came to Youngstown in Dad’s Browns parka over the camel coat. Dad said that’s not a coat. Speaks Italian from a movie, wrong. Rolled Nonna’s crust and made his own peach pie. Dad asked him to say grace. He did. Nonna asked who prays for him; he said nobody. Met Danny — Danny liked him in a minute. Didn’t talk the whole way home. Kept Rosie’s prince. Nonna gave him a twenty. Back at Marisol he reads me the News Feed in the morning like the intentions at the twelve-ten. Wants to know if I *like* things now. Says I’m fast. Says I’ve started sleeping with my phone. Played the Fishbowl a voicemail off the internet and ran one sentence of it twice: take your name off your phone. Timed my pocket with his stopwatch. Didn’t say the number. Taped Rosie’s princes over his desk; Nonna’s twenty is in the frame of his mirror. Covered for me at Alarm Five: I was in the shower. Sat on a dryer with Laney, discussing finals. Sunday at twenty to seven: back from somewhere. I asked him home for Christmas; so did Pop, in the garage. He has things in LA. ‘Tell your father I heard him.’ Put his cashmere on me Sunday. Said I was holding my phone like a rosary. Lent me the Burberry in the storm. Tried to heckle Julian’s song and couldn’t. Watched me go through Bastille’s window. Six in the morning on the last day of classes he asked why I look like I’ve been through a war. He had a question in his calendar for after Thanksgiving; he’s moved it. Sunday he filmed his shoes with a girl named Soledad. Tore up the tab. Left me his cashmere for Ohio. Have a good Christmas, Costigan — all of it. Christmas: called from LA to ask for Christmas Eve and Christmas Day. I answered on the first ring; he sounded surprised. Dad said he doesn’t have to call first. Wore the parka again. Ma glued his name on a stocking. Nonna has his cashmere. Ate an eel. Took my phone out of Rosie’s hand at dinner and gave it to me face-down. Christmas Eve he came with me to Trumbull, bought from the machines, and did Dad for Danny. Danny asked him who comes to see him. He said I do. Danny says he’s on the list for good. Wears the Browns hat now. Laney has a schedule. Three in the morning on Christmas, in Danny’s bed, I told him she’d told me. He wasn’t surprised. Landed Christmas night — they wanded the baccalà. New Year’s Eve he wore the orange hat and Ma’s scarf to a party in the hills, went all the way around the pool to Skye, and told her not to break his family. She told me at three in the morning."
-    },
-    {
-     "kind": "person",
-     "id": "theo",
-     "title": "Theo Vance",
-     "if": "!s2e1_told_theo",
-     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath. Sunday night, to the ceiling: Laney says he asked if he could ask. ‘Like a vampire. They have to be invited in.’ He’s known since Friday. Wednesday I said I ended it. He opened his jar and gave me a spoon. Friday he took me to a party in Montecito so I wouldn’t meet anybody, and lost me in three minutes. Saturday at six he was on his bed in his coat. He’d called me nine times. At halftime of Michigan I asked him home for Thanksgiving. He said yes before I finished, and bought two tickets to Pittsburgh. ‘Guests bring something.’ Looked up St. Elizabeth’s visiting hours before I asked. Thanksgiving: came to Youngstown in Dad’s Browns parka over the camel coat. Dad said that’s not a coat. Speaks Italian from a movie, wrong. Rolled Nonna’s crust and made his own peach pie. Dad asked him to say grace. He did. Nonna asked who prays for him; he said nobody. Met Danny — Danny liked him in a minute. Didn’t talk the whole way home. Kept Rosie’s prince. Nonna gave him a twenty. Back at Marisol he reads me the News Feed in the morning like the intentions at the twelve-ten. Wants to know if I *like* things now. Says I’m fast. Says I’ve started sleeping with my phone. Played the Fishbowl a voicemail off the internet and ran one sentence of it twice: take your name off your phone. Timed my pocket with his stopwatch. Didn’t say the number. Taped Rosie’s princes over his desk; Nonna’s twenty is in the frame of his mirror. Covered for me at Alarm Five: I was in the shower. Sat on a dryer with Laney, discussing finals. Sunday at twenty to seven: back from somewhere. I asked him home for Christmas; so did Pop, in the garage. He has things in LA. ‘Tell your father I heard him.’ Put his cashmere on me Sunday. Said I was holding my phone like a rosary. Lent me the Burberry in the storm. Tried to heckle Julian’s song and couldn’t. Watched me go through Bastille’s window. Six in the morning on the last day of classes he asked why I look like I’ve been through a war. He had a question in his calendar for after Thanksgiving; he’s moved it. Sunday he filmed his shoes with a girl named Soledad. Tore up the tab. Left me his cashmere for Ohio. Have a good Christmas, Costigan — all of it. Christmas: called from LA to ask for Christmas Eve and Christmas Day. I answered on the first ring; he sounded surprised. Dad said he doesn’t have to call first. Wore the parka again. Ma glued his name on a stocking. Nonna has his cashmere. Ate an eel. Took my phone out of Rosie’s hand at dinner and gave it to me face-down. Christmas Eve he came with me to Trumbull, bought from the machines, and did Dad for Danny. Danny asked him who comes to see him. He said I do. Danny says he’s on the list for good. Wears the Browns hat now. Laney has a schedule. Landed Christmas night — they wanded the baccalà. New Year’s Eve he wore the orange hat and Ma’s scarf to a party in the hills, went all the way around the pool to Skye, and told her not to break his family. She told me at three in the morning."
+     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath. Sunday night, to the ceiling: Laney says he asked if he could ask. ‘Like a vampire. They have to be invited in.’ He’s known since Friday. Wednesday I said I ended it. He opened his jar and gave me a spoon. Friday he took me to a party in Montecito so I wouldn’t meet anybody, and lost me in three minutes. Saturday at six he was on his bed in his coat. He’d called me nine times. At halftime of Michigan I asked him home for Thanksgiving. He said yes before I finished, and bought two tickets to Pittsburgh. ‘Guests bring something.’ Looked up St. Elizabeth’s visiting hours before I asked. Thanksgiving: came to Youngstown in Dad’s Browns parka over the camel coat. Dad said that’s not a coat. Speaks Italian from a movie, wrong. Rolled Nonna’s crust and made his own peach pie. Dad asked him to say grace. He did. Nonna asked who prays for him; he said nobody. Met Danny — Danny liked him in a minute. Didn’t talk the whole way home. Kept Rosie’s prince. Nonna gave him a twenty. Back at Marisol he reads me the News Feed in the morning like the intentions at the twelve-ten. Wants to know if I *like* things now. Says I’m fast. Says I’ve started sleeping with my phone. Played the Fishbowl a voicemail off the internet and ran one sentence of it twice: take your name off your phone. Timed my pocket with his stopwatch. Didn’t say the number. Taped Rosie’s princes over his desk; Nonna’s twenty is in the frame of his mirror. Covered for me at Alarm Five: I was in the shower. Sat on a dryer with Laney, discussing finals. Sunday at twenty to seven: back from somewhere. I asked him home for Christmas; so did Pop, in the garage. He has things in LA. ‘Tell your father I heard him.’ Put his cashmere on me Sunday. Said I was holding my phone like a rosary. Lent me the Burberry in the storm. Tried to heckle Julian’s song and couldn’t. Watched me go through Bastille’s window. Six in the morning on the last day of classes he asked why I look like I’ve been through a war. He had a question in his calendar for after Thanksgiving; he’s moved it. Sunday he filmed his shoes with a girl named Soledad. Tore up the tab. Left me his cashmere for Ohio. Have a good Christmas, Costigan — all of it. Christmas: called from LA to ask for Christmas Eve and Christmas Day. I answered on the first ring; he sounded surprised. Dad said he doesn’t have to call first. Wore the parka again. Ma glued his name on a stocking. Nonna has his cashmere. Ate an eel. Took my phone out of Rosie’s hand at dinner and gave it to me face-down. Christmas Eve he came with me to Trumbull, bought from the machines, and did Dad for Danny. Danny asked him who comes to see him. He said I do. Danny says he’s on the list for good. Wears the Browns hat now. Laney has a schedule. Landed Christmas night — they wanded the baccalà. At the side door Christmas night he said, Be careful, Costigan. Of what. All of it. New Year’s Eve, at nine his time, the party was already a disappointment. Wore Ma’s scarf in sixty-one degrees. A woman asked if he was in a band."
     }
    ],
    "choices": [

@@ -1438,3 +1438,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Refinement (player): at his own midnight (12:00 ET) Jack answers Skye first, on purpose**, because they're about
     to be together. That deliberate choice is **why Lena's text at her midnight (1:00 a.m. his time) lands so hard**:
     he chose Skye first; Lena chose him first. (Write it as Jack's decision, not a player choice at 12:00.)
+- **End of break: the last misreading (player; S2E02 tail → S2E03).**
+  1. **Answering Skye first sits uncomfortably**, so through the end of break Jack **talks to Lena more and more**,
+     trying desperately to get a read on where her head is.
+  2. **Lena takes his words and actions as an understanding of where they are.** She **stops mentioning Julian**,
+     because of how Jack reacted on the phone to Julian compared to everything else she said.
+  3. **On one of the last days, she says something about Julian, trying to hint that they're going to be done.** **Jack
+     misreads it** as the same reporting she's always done, maybe even a signal to back away a little.
+  4. **So their last phone call before Skye goes public ends a little awkwardly.**
+  5. **Jack is hurt again**, looks through the pictures Skye has sent him, **decides he's lucky after all, with a
+     smile**, and messages her **something a little softer than their usual banter**. (The next thing is January and
+     the status; Lena's hint pays off in New Orleans, when he learns what she meant.)
+  - POV: Lena's intent stays off-screen; the player sees her words exactly as Jack hears them, written so they read
+    both ways on a replay.

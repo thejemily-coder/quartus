@@ -70,30 +70,6 @@
      "if": "s2e2_elfland==\"candor\"",
      "text": "The mattress gives. “That’s a whole theology,” Skye says, “and you did it with a shoe.”"
     },
-    {
-     "if": "pic6_unopened",
-     "text": "“Did you open my tree?” she says."
-    },
-    {
-     "if": "pic6_unopened",
-     "text": "“No.”"
-    },
-    {
-     "if": "pic6_unopened",
-     "text": "“Good.” Her breath, close to the phone. “…Open it now.”"
-    },
-    {
-     "if": "pic6_erased",
-     "text": "“Did you keep my tree?” she says."
-    },
-    {
-     "if": "pic6_erased",
-     "text": "“I erased it.”"
-    },
-    {
-     "if": "pic6_erased",
-     "text": "The blanket moves on her end. “…Good. The lighting was bad.”"
-    },
     "“So,” Skye says. “No questions tonight. I’m not going to ask you one thing. No cow.”",
     "The bed takes her weight differently; he hears her settle into it, the springs and then nothing.",
     "“Monday,” Skye says. “Not asking. Telling.”"
@@ -108,7 +84,6 @@
       "rel.skye.heat": "+1",
       "resolve.jack": "-1"
      },
-     "key": "The Monday after Christmas Skye called and stopped asking. You told her to tell you.",
      "response": [
       "“Then tell me.”",
       "A breath on her end, close to the phone. She begins."
@@ -123,7 +98,6 @@
       "trait.wit": "+1",
       "rel.skye.warmth": "+1"
      },
-     "key": "The Monday after Christmas Skye called and stopped asking. You told her it was already Tuesday in Ohio.",
      "response": [
       "“It’s Tuesday here.”",
       "“Then you’re late,” Skye says. “You’re three hours late, Costigan, and I’ve been lying here the entire time getting ready.”",
@@ -138,36 +112,9 @@
       "s2e2_telling": "restraint",
       "trait.control": "+1"
      },
-     "key": "The Monday after Christmas Skye called and stopped asking. You said nothing, and let her start.",
      "response": [
       "He doesn’t say anything.",
       "Behind him the furnace goes on with its work. On her end the bed creaks and goes still, and she waits out his nothing, and then she starts."
-     ],
-     "goto": "s08a"
-    },
-    {
-     "text": "*Open the one you saved. Now, while she’s on the line.*",
-     "tag": "Reckless",
-     "if": "pic6_unopened",
-     "set": {
-      "s2e2_telling": "reckless",
-      "pic6_opened_call": true,
-      "pic6_unopened": false,
-      "trait.reckless": "+1",
-      "soul.restraint": "-1",
-      "rel.skye.heat": "+1",
-      "resolve.jack": "-1",
-      "confession_owed": "+1"
-     },
-     "key": "The Monday after Christmas Skye called and stopped asking. You opened the picture you’d saved since Christmas Eve while she was on the line.",
-     "response": [
-      "“Hang on.”",
-      "“Oh, I’m not going anywhere,” Skye says.",
-      "He takes the phone down from his ear. In the inbox the envelope from Christmas Eve is still sitting where he left it, and he opens it. *Retrieving.* The screen is the only light in the basement, and the picture comes down it in bands, slow, top to bottom, so he gets the tree before he gets her: white, flocked so thick it looks frosted by hand, and a wedge of carpet, and at the edge of the frame a green parrot on a perch with its head turned, deeply put out. Then her hair, fanned on the carpet in the tree’s shadow. Then her.",
-      "She took it lying on her back under the tree with her arm straight up, aiming down at herself without looking, so the camera hangs over her at the height of somebody kneeling there — and the somebody, now, holding the phone in a basement in his socks, is him. One strand of the tree’s small white lights is wound loose around her, over a shoulder and across and around a hip, and it is all she has on. Each bulb makes a warm coin of light on her skin, and the rest of her belongs to the brown dusk of a living room at four in the afternoon. She has her lip pinned under her teeth against a laugh, and her eyes are right on the lens.",
-      "He holds it at his knee in the dark and looks.",
-      "When he gets the phone back to his ear she says, “I can hear you looking.” And then, softer: “There he is.”",
-      "She begins."
      ],
      "goto": "s08a"
     }
@@ -372,6 +319,7 @@
     "It passes. Not all at once; a little while after. The furnace cuts out behind him, and in the quiet the sheet metal at his back gives up its heat a little at a time, and he feels it go. His breath comes down. His body comes back to being what it is the rest of the day: a body on a concrete floor in socks gone cold, with pins and needles in one foot from how he’s been sitting.",
     "And then, with it gone, his hands start to shake. Not much. He can’t see them in the dark, but he can feel it. The dead phone is still warm, warm as something alive, and he holds it in his fist against his knee and can’t make his fingers let go of it. He can’t make himself get up yet, either, and go up those stairs and through the kitchen and past his grandmother asleep under the tree. Two hours and seven minutes. He said all of it. He would have kept on saying it. What stopped it was a battery.",
     "It comes to him there on the floor that he is afraid, and of whom. Of himself. Of the voice that came out of him for the last hour and more, saying those things to a girl in California in his parents’ basement with his grandmother asleep over his head — and of how much he liked the sound of it.",
+    "*Be careful, Costigan.* Theo, at the side door on Christmas night, with the rain coming off the gutter behind him. *Of what?* *All of it.* At the time it sounded like Theo being Theo. On the basement floor he hears it the way it was said.",
     "He gets as far as his knees, one hand on the furnace’s cooling side, and stops there. He doesn’t pray. He stays on his knees on the concrete, as far up as he’s got.",
     "Over his head the house sleeps on, every room of it, the way it slept through the last two hours.",
     "When he shifts against the furnace, the corner of the Altoids tin in the Carhartt’s pocket finds his hip."
@@ -387,14 +335,13 @@
      },
      "key": "When the phone died, you went up and said the rosary in the dark.",
      "response": [
-      "He goes up. The stairs; the kitchen, where he puts the dead phone on its cord by the bread box; the tree, and Nonna under it, who doesn’t stir. In the back bedroom he lies down in the Carhartt on top of the covers and starts the rosary on his fingers in the dark. It’s Tuesday, so the Sorrowful. He gets as far as the second decade and loses count, and starts that one over, and somewhere in it he says her name — Skye — because it’s the only name he has for her."
+      "He goes up. The stairs; the kitchen, where he puts the dead phone on its cord by the bread box; the tree, and Nonna under it, who doesn’t stir. In the back bedroom he lies down in the Carhartt on top of the covers and starts the rosary on his fingers in the dark. It’s Tuesday, so the Sorrowful. He gets as far as the second decade and loses count, and starts that one over, and somewhere in the third he puts her in it — Skye, by name, the whole of her — and keeps going to the end."
      ],
      "goto": "s09"
     },
     {
      "text": "*The side yard. One of your own Marlboros, in the old snow.*",
      "tag": "Reckless",
-     "if": "!firm_purpose_miles",
      "set": {
       "s2e2_after": "reckless",
       "jack_cigs": "+1",
@@ -408,27 +355,8 @@
      "goto": "s09"
     },
     {
-     "text": "*The side yard. One of your own Marlboros, in the old snow.*",
-     "tag": "Reckless",
-     "if": "firm_purpose_miles",
-     "set": {
-      "s2e2_after": "reckless",
-      "jack_cigs": "+1",
-      "trait.reckless": "+1",
-      "soul.grace": "-1",
-      "resolve.jack": "-1"
-     },
-     "key": "When the phone died, you went out to the side yard and smoked one of your own Marlboros.",
-     "response": [
-      "He goes up the basement steps and across the kitchen in the dark, and leaves the phone on its cord by the bread box on his way, and goes out the side door. The spring yanks the door out of his fingers and bangs it shut behind him hard enough for the whole street. No light comes on upstairs.",
-      "The pack is in the Carhartt’s other pocket — his own, crushed flat, three left — not the tin. He gets one lit on the third match with his back to the house. The side yard is old snow gone hard as a sidewalk, and the Madonna stands in her tub at the back of it under his father’s blue lights. He smokes it down to the filter looking at her, and doesn’t feel any better, and didn’t expect to."
-     ],
-     "goto": "s09"
-    },
-    {
      "text": "*Stay against the furnace until it comes back on.*",
      "tag": "Restraint",
-     "if": "!firm_purpose_miles",
      "set": {
       "s2e2_after": "restraint",
       "trait.control": "+1"
@@ -440,49 +368,14 @@
      "goto": "s09"
     },
     {
-     "text": "*Stay against the furnace until it comes back on.*",
-     "tag": "Restraint",
-     "if": "firm_purpose_miles",
-     "set": {
-      "s2e2_after": "restraint",
-      "trait.control": "+1",
-      "soul.grace": "-1",
-      "resolve.jack": "-1"
-     },
-     "key": "When the phone died, you stayed against the furnace until it came back on.",
-     "response": [
-      "He sits back down against it, and stays. It takes a long time, and he doesn’t count it. The chill comes up out of the concrete into him and he sits there in it with the dead phone in his fist. When the burner finally catches behind him with its soft whump, the sheet metal warms against his back by degrees, and when he can feel it through the Carhartt he gets up, and goes up, and plugs the phone in by the bread box without turning on a light."
-     ],
-     "goto": "s09"
-    },
-    {
      "text": "*Turn on the Dell. Look at her Facebook till it’s light.*",
      "tag": "Drift",
-     "if": "!firm_purpose_miles",
      "set": {
       "s2e2_after": "drift",
       "soul.grace": "-1",
       "soul.restraint": "-1",
       "rel.skye.heat": "+1",
       "resolve.jack": "-1"
-     },
-     "key": "When the phone died, you turned on the Dell and looked at her Facebook till it was light.",
-     "response": [
-      "He goes up long enough to put the phone on its cord by the bread box, and comes back down to the card table. The Dell wakes up grinding. The screen comes up blue, and he signs in, and goes to her page.",
-      "Only what anybody can see: the red carpet, the boat off Catalina, her bare feet on the hood of the Saab — the ones his family passed around the kitchen table on Christmas morning. He goes through them, and through them again, and back to the first, and can’t stop. There’s no window to tell him when it gets light. The house tells him instead: the pipes knocking, the furnace, and at six-thirty, through the floor over his head, his mother’s alarm."
-     ],
-     "goto": "s09"
-    },
-    {
-     "text": "*Turn on the Dell. Look at her Facebook till it’s light.*",
-     "tag": "Drift",
-     "if": "firm_purpose_miles",
-     "set": {
-      "s2e2_after": "drift",
-      "soul.grace": "-2",
-      "soul.restraint": "-1",
-      "rel.skye.heat": "+1",
-      "resolve.jack": "-2"
      },
      "key": "When the phone died, you turned on the Dell and looked at her Facebook till it was light.",
      "response": [
