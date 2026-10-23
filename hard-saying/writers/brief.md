@@ -1691,3 +1691,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     sit together, flirt in the back row, study together. Lena is never in that room.
   - **Theo in the fallout: in the middle.** Still Jack's roommate and friend, still Team Lena underneath: polite to Skye
     (his childhood friend), quietly worried, needling sideways, and **getting it from Laney for not being colder.**
+  - **The shared gen-ed after the breakup (player).** It **becomes very bad**: two people who used to share the back
+    row now in the same lecture hall for the rest of the semester (S2E18–E30). Room decides the staging (she moves
+    seats; she stops coming; the empty seat; a group assignment that can't be traded; the final exam in the same
+    room). A recurring, quiet knife through spring, and part of the slow road to Skye and Jack becoming not-close
+    friends much later.
