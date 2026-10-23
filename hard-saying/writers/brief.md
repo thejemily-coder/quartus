@@ -1398,3 +1398,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **After S1E22, the Season 1 finale (player feedback).** "Yet again, **Skye was incredible** and I loved every moment
   with her. **Lena was gut-wrenching**; almost moved to tears when she recapped December" (the porch naming of the
   withdrawal). Season 1 complete.
+- **S2E01 (Youngstown Christmas) design answers (player).**
+  - **Skye's explicit call lands after Christmas**, in the dead week between Christmas and New Year's (S2E02): the
+    house quiet, the warm Lena calls fresh, the contrast cutting hardest.
+  - **Danny: one hard question.** He listens to all of it, then asks one plain question that cuts through everything,
+    which Jack can't answer yet. No advice.
+  - **Theo's Christmas Eve and Day, all four:** Nonna's **Feast of the Seven Fishes** (Theo learning the rules; Frank and
+    Theo); **Midnight Mass** with the Costigans; **Christmas morning** (gifts, Gina, the family-plan bill, a stocking
+    with Theo's name on it); and **Theo and Danny** (Theo comes along on a visit; the Thanksgiving rapport continues).
+  - **Lena's Christmas Eve call from the levee: warm, almost there.** The best call of the break: the bonfires, her
+    family loud behind her, and one silence where either could have said it.
