@@ -277,6 +277,21 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
    jar, pulls the blanket up).
 131. **"[N] years of [X]" credential bits** (S1E21: Skye's "EIGHT YEARS of gift bags," Kevin's "Seven years of Vietnamese choir," Margot's "Six years of Suzuki" — three speakers, one register
    of wit; #6, #25). Once an episode (E21 kept Kevin's: it's the reveal).
+132. **"In the cold" as the default location tag** (S1E22: 15 in one draft against 0–3 in E16–E21; every s17 roof option left the unsaid thing "out in the cold"; "cold" overall ×69). Max three per episode; a
+   withheld word can be left "on the parapet," "under the bulb," or nowhere at all. Watch "cold" overall (≈40 a finale is already a lot).
+133. **", once," as the gesture's emphatic beat adverb** (E16 2 → E20 5 → E21 5 → E22 7: "laughs, once," "taps the card on the wheel, once," "nods, once," "shakes her head at the hills, once"). Max two per episode; the gesture is
+   already singular (E22 kept Lena's laugh into her sleeve and Kevin's look across the party).
+134. **"And nowhere else" as a focus intensifier** (E20 1, E21 4, E22 3 plus a journal carry: "eyes on the keys and nowhere else," "a little light along the edge of her jaw and nowhere else"). Once an episode (E22 kept s20's
+   "The one eye is on the lens and nowhere else" — the frame depends on it).
+135. **"Hold(s) on" as the default grip** (E22 ×11 in one draft; Julian's and Kevin's goodbye handshakes used the same beat scenes apart; hands "hold on" to wrists, rails, curbs, backs). Max three per episode (E22 kept touch One — her
+   arm "holds on" — and the SBA hug "He holds on."); otherwise grips, takes hold, or nothing.
+Small repeats to watch (S1E22): the RAZR "finds its bar" (E05, E20, E21, E22 ×3 — once an episode, at the payoff; E22 kept Denver's "*Searching.* It finds Denver."); the power-off chime's "four notes going downstairs" (E20's
+phrase — retired; E22: "four notes, high to low"); the oil platforms as "a town" (E12, E15, E16, E22 ×2 — retired after s07's "a town that came loose and floated off"); "two thousand miles" (once an episode — Skye's cousin speech);
+the Café du Monde can (one can per episode — E22's is Lena's white-elephant coffee in Jack's duffel); the heater "like a hair dryer in another room" (E07, E10, E16, E18 — retired); "thinks better of it" (E11, E13, E21 — retired);
+the sea "working at" rocks and pilings (eleven episodes — the surf breaks, pulls back, or is loud); "in no hurry" (Wes's vowels own it); "with tremendous dignity" (E02, E09 — retired); "an inch" (Lena's "didn't give an inch" at the
+wake is the canon line; nobody else gives inches); "makes a small sound / noise" (six+ episodes — once an episode); "laughs into [collar / hair / shoulder]" (once per scene run); foreheads together (once an episode, at a goodbye);
+transit codas (#70 — the outline's three); the narration stating Lena's reasons or perceptions on the last night (#114's cousin: "She sees it all on him," "they both hear," "She is very pleased" — show the hands and eyes only);
+Lena citing an exchange the page never showed (her proofs must be scenes the player saw); props that move between paragraphs (the timer in the drawer, then "beside the timer").
 Small repeats to watch (S1E20): speech addressed to objects stacked in the Skye act (#32 — "to the boot," "to the lit half of the window," "to the
 Christmas lights," "to the jar of beach glass"; keep the one where her turning away is the point, s19 "to the wall"); Skye's "first/only/never"
 verdicts (spend the superlative once — E20 kept "the only person who's ever told me no and meant it"); "laughs into his neck" twice in one scene;

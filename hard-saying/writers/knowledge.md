@@ -1819,3 +1819,54 @@ Nobody in the core cast has met anybody else on-page. Specifically:
   ever, before the planned Theo–Skye reveal. **The glance's meaning is Lena's alone** until New Orleans (POV). **The 8-Ball's question is Lena's alone.** Lena has now seen the phone go under his hand in a confession line and asked
   nothing — she still never asks where. Up to four kept pictures (one possibly unopened) ride home to Youngstown. Osei's seal covers two Skye confessions (one on [not today]); never touched outside the box. **Jack's narration
   never recalls E05's Guadalupe jacket** until E22's photograph.
+
+### S1E22 — "Sometime" (Season 1 finale)
+> Final revision, collapsed against `saves/after-s1e21.json` (see continuity.md S1E22). Branch tags are `[scene | condition]`.
+
+#### Jack
+- [s01] the Geminids, Skye's four helicopters; Margot counting on the roof; **Lena called from the parapet at 1:10** (`e22_waiting`); [hand] a tall second shape stood beside her (he doesn't name it). [s01a] GEMINIDS: 44. COSTIGAN: 0.
+  [s02] Theo's count (44; "Lena said *oh*"); Becca's card; Hale's final question; Dad leaves at 1, snow, "is the girl coming". [s03] Del Playa is full (Tomás, two men from Ensenada); Cassidy goes to Switzerland in January. [s03b]
+  Lena's Brick-8 offer and "Never mind" (read at 2:15). [s04] **Lena emailed Hale Augustine on Thursday at 7:02 and claims Jack's October sentence is Augustine's**; Hale's oral as played (verdict per score; [personal] "Don't do it to
+  anyone you love"). [s05d] Lena's 4:45 shuttle — Laney booked it; Theo booked his. [s06a | grace] Osei's counsel (the appointment / scheduling; "Then will it"; the Kumasi burn; distance is a mercy; a different priest at Christmas).
+  [s07–s07b] Skye's January pitch and reasons (the cousin; "between the twentieth and the second"); she counted twenty-four days; her Christmas schedule; she keeps the blue shirt. [s08] **Julian kissed Lena goodbye at his car**;
+  "humming low… that's hungry." [s09] Margot turns 19 on the solstice; Theo's Beauvoir first edition; **Tariq home the 23rd**; Margot likes them (struck); the logistics (just Lena and Jack Friday night). [s10] Lena hums the flat bell
+  exactly. [s10a] Theo's tab per `e22_tab`; the cashmere; **Laney's threat, with a look at Lena; Theo's "answer your phone in Ohio"** (Jack sees their handling; he hears no talk between them). [s10b] **Margot lit a candle "for
+  research"** (he knows of Anders since E07; he does not ask). [s10c] Rafi: the bike decides; Kevin: "Tell somebody something."; GM is killing Saab (Skye). [s11] **Lena planned the night — a card of stops** (he sees the first two
+  lines; he is never told why she planned it). [s11a] Lena played for him properly. [s12] ERO CRAS; Lena guessed Margot's candle herself. [s13] **Julian records the song in Oakland in January and comes to New Orleans for
+  New Year's**; Mémère; Daddy's gumbo. [s13a] Gloria: "That one's still standing in it, hon."; Rudy's mother's line; **Tess is due any day; the napkin rule**. [s14] **Lena named the month — the texts, the meteor shower, Sully's, the staying
+  away; "Something's hurting you. Bad."** He sees her stop; **he is never told why she stops** (🔒 the glance; POV). [s15] **Rosa Calloway's letter; the photograph of Nora in the Guadalupe jean jacket with the red Ferris wheel; Lena was
+  asleep; the jacket was never found.** He recognizes the jacket (E05, the black bag) and the wheel (E20, a collar) in one sentence — **no inference, no name, no duffel; he does not connect it to Theo on the page.** Somebody still
+  brings Nora flowers (he sees kitchen string; he infers nothing). [s16] Lena's Christmas; Grandmère's empty place; the levee call. [s17] the near-say per `e22_roof`; the 8-Ball: ASK AGAIN LATER. [s19] the tin for Christmas; Benedict to
+  her; the hug; **two words at the checkpoint he couldn't hear**. [s20] Lena's 7:19 text; **PM5 opened** (the mirror, early light, the corkboard of call sheets — he does not know whose room; room’s call: her old room at her mother’s).
+- **He does NOT learn:** why Lena planned the night, why she didn't press, what she read in the glance, or that she's considering ending it with Julian; what the 8-Ball was asked (either time); her two words at SBA; who leaves Nora's
+  flowers; whose duffel holds the jacket; what Hale's mark is; how the Saints game ends (Saturday night, after the episode).
+
+#### Lena
+- [s01] he was on the lawn on the phone while they counted ([hand] he waved, phone at his ear — she must have seen the phone; [lie] "cant. finals" / [restraint] nothing). [s03b] he didn't answer the Brick-8 offer. [s04–s05c] his oral
+  as played: [heart] "because I watched her live it" / [personal] the Anchor's back booth (she learns Hale drinks alone there — Jack washes his glass) / [concede] he picked it to win / [riposte] "I just work here". [s05d] he's on her van.
+  [s08] he watched Julian kiss her through the Fishbowl glass (she doesn't see him look; she comes in with her eyes on the stairs). [s09] his toast. [s10b–s12] **Margot's candle — guessed, not told** (Jack only says he can't confirm).
+  [s11] he answered the door; he turned the phone off for the night (each `e22_phone` variant; [wit] left on the desk). [s13a] Danny's O'Connor review; [sincerity] he'll pray for fourteen out loud. [s14] **"I'm not sad. I'm Irish."**
+  (Sad Irish Poem's source); per `e22_porch`: [candor] he started — "You asked me where I go" — and stopped at "Sometime" / [sincerity] he's sorry, not why / [restraint] he kept it / [wit] a complaint about the night they met.
+  [s15] he saw the photograph and her letter (`e22_jacket`; [reckless] No. 11). [s16] Nonna's seven fishes; he'll call from the garage and watch fourteen. [s17] the near-say per `e22_roof` ([unguarded] "I'm in —"). [s19] the
+  Benedict card; Nonna to be told Mémère lights the whole name.
+- **She learns nothing about Skye** — not the lawn call's other end, not the Saab, not the picture, not the shirt, not January. **She still never asks where, who, or what.** 🔒 Her not pressing comes from the E21 glance (she read
+  hurt); next month, once he is dating Skye, she won't believe it anymore (brief).
+
+#### Skye
+- From Jack: the Geminids from a lawn (no roof, no names); his Wednesday oral — "twenty minutes defending somebody else's argument" and the sentence on his card ("your somebody in the seminar" — **no name, no gender confirmed by
+  him**); Hale (described: English, the greyhound, the postcards — name "Hale" heard); Nonna's Sunday candle for his grandfather; Maria's bread-basket toll; his Christmas (snow, the bread, Midnight Mass at St. Brigid's, Frank asleep
+  on his feet); "Fine" about the oral; [candor/sincerity] "im on the hook". **She still has never heard Lena's, Theo's, Julian's, Kevin's or Danny's names from Jack, nor anything of the song, the glance, the walk, or the hug.**
+
+#### Others
+- **Theo** — Jack watched Julian's goodbye from the Fishbowl (Theo arrives after the kiss, with the demitasse); the tab ([grace] torn / [candor] $40 / [keep] Jack has it); Jack's face for a month (🔒 worried; Theo+Laney's alliance
+  preps the break off-page). He knows Lena's and Jack's shared 4:45 van (he booked Jack's). **Laney** — Jack's withdrawal, clocked (🔒 alarm; the chain and the threat); she booked Lena's van. **Kevin** — Jack, read
+  ("Tell somebody something"; the look at the party). **Margot** — Jack's face at the party (the clock look at 12:10); Jack saw her candle (🔒 for Anders; she'll know who wrote FEELINGS DETECTED). **Julian** — Jack will make sure
+  Lena eats (`e22_julian`); nothing else. **Hale** — the oral as played; [personal] Jack knows about the back booth (he said so in front of Lena). **Osei** — [grace] the third Skye confession (seal); the two of them on his steps
+  the last night, "the last two" (outside the seal). **Gloria** — both girls; "still standing in it" (🔒 she never tells Pecan). **Rudy** — Lena sang at the Mission. **Priya** — present, both of them, at 4:40. **Rafi** — the bike.
+  **Rosa Calloway (Selma)** — writes Lena; asks about the jacket. **The van driver, the SBA screener, the tree man** — strangers.
+
+#### LIVE RISKS carried out of E22 (into S2)
+- All E18–E21 risks stand (Skye never hears the names; Lena learns nothing of Skye; Theo holds *now friends*; Sol never linked; Gloria and Rudy silent; Osei's seal now covers three Skye confessions).
+- **New:** the jacket photograph is in Lena's coat and Jack has recognized it — **his narration may not reason from it** (no "Theo," no "the duffel," no "how did it get") until the planned S2 beats; Lena does not know the jacket
+  exists anywhere. The porch is spent: in S2 Lena does not name the withdrawal again in those terms (no re-naming), and by mid-January she stops believing he's hurting. **Her SBA words stay unheard** until their planned reveal.
+  The tin is in Jack's pocket in Youngstown (Gina, Maria). PM5 and four earlier pictures ride home on the RAZR (the bread basket on Christmas Eve). Tess's baby and the Saints' first loss happen Saturday night, off this episode's page.
