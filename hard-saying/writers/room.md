@@ -324,6 +324,13 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 163. **The clipped "Then [imperative]." retort** (S2E04 draft 18, swept to 7; cousin of #159). At most 4 an episode, and never Lena's except the argued line.
 164. **Identical post-choice tails** (the same closing beats pasted after each branch of a choice). Flag them for hoisting into a shared tail when the target scenes share a slug, time and place; S2E04 declined to hoist because the targets differ.
 165. **"In writing" passed around as a shared joke** (Skye, Jack and Theo in S2E04). One owner an episode; give the others their own register.
+166. **"[Era] administration" age jokes** (S2E05). Once an episode, and Theo's only.
+167. **"Gets as far as [her mouth / the door]"** as an interrupted-gesture beat (S2E05). Once an episode.
+168. **"In capitals" for written signs and texts** (S2E05). Once an episode.
+169. **Skye "bites her lip on it"** (S2E05). Once a path.
+170. **"All the way [up / down / through / around]"** (S2E05). At most 3 an episode.
+171. **"The first X of the year" echoing a song title** (S2E05, Julian's "First of the Year"). Once an episode.
+172. **Skye's "for the record" bit** (S2E05). One payoff an episode.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);
 "before X can" pre-emptions (#83, ≈14 a path in draft); trailing "which" (#91, ≈15 in draft); "the way [someone did]" (#112, ≈12 in draft); laughter overflow buttons (#101, 6+ in draft — characters top it in their own register:
