@@ -1837,3 +1837,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     and Kevin** than he was in December, so he **makes an effort to hang out with them while avoiding Lena when he
     can** (awkward logistics with a shared friend group: arriving after she leaves, the hub-before-the-hub, Theo
     caught in the middle, Laney's ice). Keeps the ensemble alive in the Skye era.
+- **January design answers (player).**
+  - **The suggestive post: Gina, then Ma.** Gina sees it at school (someone shows her) and texts Jack in all caps; it
+    reaches Ma by dinner. **Ma's call is quiet and devastating**; Nonna hears about it through the wall. This is what
+    shows Skye the cost and turns her posting sweet.
+  - **Skye's first "I love you": room's call** where and when (late Jan/early Feb), per the existing directive (she
+    says it first, unguarded; he says it back and means it).
+  - **The Walk for Life, SF (Sat Jan 23): Skye comes.** Curious, supportive, wry; she wants to see what he believes in
+    on the street. **Lena is in the Newman van.** Respect without belief, tested in public (and every sighting
+    reaches the rumor mill).
