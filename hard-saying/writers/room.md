@@ -331,6 +331,14 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 170. **"All the way [up / down / through / around]"** (S2E05). At most 3 an episode.
 171. **"The first X of the year" echoing a song title** (S2E05, Julian's "First of the Year"). Once an episode.
 172. **Skye's "for the record" bit** (S2E05). One payoff an episode.
+173. **"All at once" openers** (S2E06). At most 4 an episode.
+174. **"He has learned / he knows" tags on reading Skye** (S2E06; a refrain in s01, s12, s15, s18, cut). One per Skye scene, and as an action (what he does about it), never as a tag.
+175. **Rain as "sheets" or "ropes," and rain personified** (S2E06). At most 3 "sheets" an episode; vary the storm vocabulary scene to scene.
+176. **One tick or knock source per episode** (S2E06: extra tick sources cut). Establish one, use it once more.
+177. **Emotion placed "lower down," "under the breastbone" or in the "ribs"** (S2E06). Once an episode.
+178. **Per-scene prop or costume stamps** (S2E06: the cardigan and the "level" egg stamps, trimmed). Name it once an episode, then let it go or change it.
+179. **Fork tails that reach the same scene must hoist the shared paragraphs** (S2E06; extends #164). Check every `goto` target for pasted paragraphs before the fork text goes in.
+180. **"Wet to the skin" in every storm scene** (S2E06). At most 2 an episode.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);
 "before X can" pre-emptions (#83, ≈14 a path in draft); trailing "which" (#91, ≈15 in draft); "the way [someone did]" (#112, ≈12 in draft); laughter overflow buttons (#101, 6+ in draft — characters top it in their own register:
