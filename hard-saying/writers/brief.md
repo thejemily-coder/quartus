@@ -1812,3 +1812,4 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     this is started when he got back.** (Nothing about his feelings, the porch, the calls' weight, or the song.) Skye,
     who clocked Lena back in S1, hears more than he says: room decides her read (jealousy and intuition, never
     foreknowledge), and it should feed her own quiet fear, played lightly.
+- **After S2E04 (player feedback).** "Great episode. **Skye is a treasure.**"
