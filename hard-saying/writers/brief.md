@@ -1896,3 +1896,21 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     carries the biggest** (the Christmas decision and the misread Friday call, the waiting as a guardrail, the song and
     her apology, Skye: what she was and the physical truth); **Ash Wednesday morning the quiet ones** (the Reliquary
     and the cigarette count, Laney's report Lena didn't believe, the airport video).
+- **After S2E06 (player feedback + notes).** "Skye was fantastic. **Lena scenes were brutal.**"
+  - **Jack tells Skye the truth about the basement and the questions (player; S2E07).** He cares more about Skye than
+    anything else, so he tries to be honest even about Lena. He brings up **what he didn't say when she asked what
+    happened in the basement**: he really doesn't know; Theo and Laney are being odd; Laney suddenly seemed to stop
+    hating him, with no explanation. But **Skye said he was funnier than he'd ever been on the phone afterward**, and
+    that wasn't Laney's deal: **he decided something.** Over break **Nonna and Danny each asked him a question** (before
+    they really knew about Skye, so the questions were general); he's thought about them ever since, and **after the
+    basement he decided she was the answer to both.** That's why he was funnier: **he was as happy as he's ever been.**
+    **Skye can tell there's more to the basement and to the questions, but also that he's telling the truth: he
+    decided on *her*, and he's happy. It moves her deeply, and his explanation is enough.** (He does not repeat the
+    questions' wording unless the room finds it right; never Lena's name as the subject of either.)
+  - **Jack is still confused by Lena, but more angry. Now completely confused by Laney**: random affection thrown into
+    the uninspired cold civility that has replaced her open hostility (the revived alliance's act, from his side).
+  - **The ride home from the Walk for Life (S2E07).** After the blowup with Lena, **Jack asks Kevin whether it's okay if
+    he goes back with Skye instead of the van.** He wants nothing more than the hours with Skye instead of being trapped
+    in an enclosed space with Lena again, **but if Kevin still needs him for the ride home as badly as Kevin needed him
+    to come, Jack would suffer through it.** (Keep `s2e7_ride` as the player's choice, framed through asking Kevin:
+    Kevin's answer is honest; the van path is Jack choosing Kevin over his own comfort.)
