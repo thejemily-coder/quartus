@@ -1848,3 +1848,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     reaches the rumor mill).
   - **Jack's reaction to "I love you" (player).** He's **pleasantly stunned and says nothing at first**, so **Skye starts
     to panic**, until **she sees him smile wide.** **Then he says it back, and she knows instantly that he means it.**
+  - **The next intimate scene after "I love you" (player).** Soon after, when she tries again, **he tells her it's still
+    no for now, but it's closer than it's ever been**, and says so. (A rung on the heat ladder and the hardest no yet;
+    within the hard line. Her response: room's call within her co-design; it should read as hope to her, and as
+    danger to the player.)
