@@ -1868,3 +1868,18 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     with her.** (The game still reaches him: the result, the town, Lena's joy at a distance; room decides how much.)
   - **The vetting lunch: her mother (Debbie) and the publicist**, a two-hander; Skye performs "fine" for them and
     **Jack is the only one who sees her disappear inside it** (his reading of her, per the newest note).
+- **Deepen Jack and Skye on every level (player; standing through early February).**
+  - **Physicality:** as far as it's gotten, **they now engage in other sexual behavior short of sleeping together**
+    (the hard line remains intercourse: "never sleeps with anyone else"). Written at the brief's frank, literary
+    standard (never pornographic mechanics; adults; no procedural consent beats), continuing the heat ladder with each
+    no harder. **The faith side stays honest:** Jack knows what this is; it costs him in resolve and in confession
+    (Osei moves along his arc from tender to gentle-but-pointed to bracing); never prudish, never preachy.
+  - **Intellect:** more deep discussions and real arguments (her own readings, her Chesterton, politics, art, his faith).
+  - **Playfulness, wit, banter:** constant.
+  - **Vulnerability and emotion quietly become the new core** as they fall in love (her mother, the child-star wound,
+    his family and Danny, what each is afraid of). This is the half that makes New Orleans cost everything.
+- **The next sideways fight's ending (player).** It ends with Jack **angrily demanding how Lena has the nerve to be mad
+  at him for any of this.** **Lena is speechless, then even angrier** that he'd dare say that after what she thinks he
+  did (the Christmas calls, then Skye). **She just leaves, both of them confirmed in their own misreadings.** (Neither
+  says what they mean; it's the closest to the truth they get before New Orleans, alongside the Facebook-status
+  grievance; room sequences them.)
