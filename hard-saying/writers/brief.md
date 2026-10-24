@@ -1883,3 +1883,16 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   did (the Christmas calls, then Skye). **She just leaves, both of them confirmed in their own misreadings.** (Neither
   says what they mean; it's the closest to the truth they get before New Orleans, alongside the Facebook-status
   grievance; room sequences them.)
+- **New Orleans: layered truths + a truth ledger (player-approved).** The truths come out **in layers across the trip**,
+  not all in one conversation; the room tracks them in **`writers/nola_ledger.md`** (every secret/misreading: where
+  planted, where it comes out, who says it) and checks each NOLA episode (S2E12–E17) against it.
+  - **The drive is the hinge (player caveat):** first the **big fight**, then **her sleeping against his shoulder**
+    (3 a.m., West Texas). That softens them both; **only after it do truths start leaking.** Nothing leaks before.
+  - **Remember he doesn't want to go at all:** Theo asked; a Broussard called him personally; the Saints, once in a
+    lifetime; and **Skye told him to go, since she's away shooting anyway, with a line that haunts in retrospect**
+    (her voice, e.g. **"Who knows, maybe it'll be good for you guys."**: she means patching up a friendship).
+  - Layers (default; room may adjust): small, sideways truths after the shoulder on the drive; things that slip in the
+    Broussards' kitchen and on Super Bowl night; each tries once and retreats during parade week; **Mardi Gras night
+    carries the biggest** (the Christmas decision and the misread Friday call, the waiting as a guardrail, the song and
+    her apology, Skye: what she was and the physical truth); **Ash Wednesday morning the quiet ones** (the Reliquary
+    and the cigarette count, Laney's report Lena didn't believe, the airport video).
