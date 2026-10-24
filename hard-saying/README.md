@@ -2,7 +2,7 @@
 
 A choice-driven prestige-TV college drama, played in episodes. Fall 2009, California State University at Marisol.
 
-**Player warning:** `writers/bible.md`, `writers/outlines/`, `writers/continuity.md`, `writers/knowledge.md` and `drafts/`
+**Player warning:** `writers/bible.md`, `writers/outlines/`, `writers/continuity.md`, `writers/knowledge.md`, `writers/nola_ledger.md` and `drafts/`
 and `episodes/` contain hidden canon and unplayed story. Reading them spoils the show. `writers/brief.md` (your own
 decisions), `writers/room.md` and `writers/schema.md` are safe.
 
