@@ -1827,3 +1827,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   is; it's his reason). Remove the [bastille] branch of `s2e5_friday`: Friday is Skye (the movie) on every path, with
   Jack's refusal on the page (interior; maybe Theo or Kevin mentions the benefit, or Lena's there, and he says no
   without saying why).
+  - **Revision (player): keep `s2e5_friday` as a choice.** On the skip path (Skye/the movie), **Jack's reason is that
+    he's not listening to Julian play "Magdalena" again**, in narration, never said aloud. On the [bastille] path he
+    goes braced for it (the dread present until Julian plays something else). Supersedes "remove the branch."
