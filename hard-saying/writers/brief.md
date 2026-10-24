@@ -1813,3 +1813,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     who clocked Lena back in S1, hears more than he says: room decides her read (jealousy and intuition, never
     foreknowledge), and it should feed her own quiet fear, played lightly.
 - **After S2E04 (player feedback).** "Great episode. **Skye is a treasure.**"
+- **S2E05 design answers (player).**
+  - **Laney's jab at Skye:** Skye **starts to disarm it**, but **Jack tees off on Laney, loudly and angrily, first.**
+    Afterward Skye tells him **she had it handled, but at the risk of losing her feminist card, it was kind of hot, and
+    she will definitely reward that sort of behavior.** (Her voice; can feed the episode's heat rung.)
+  - **The back-hall blowup with Lena (surface): Laney, then Skye.** He goes after Lena for Laney's jab; she defends
+    Laney, then lets slip a crack about Skye's "performance"; it spirals into whether Skye is real, which is really
+    about whether *he* is. Neither says the real thing.
+  - **If the drafted Sully's sequence differs (e.g. Jack's shots choice), patch it so Jack's outburst at Laney happens
+    on every path** (the player choice can shade how he does it, not whether).
