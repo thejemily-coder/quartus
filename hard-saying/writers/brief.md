@@ -1846,3 +1846,5 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The Walk for Life, SF (Sat Jan 23): Skye comes.** Curious, supportive, wry; she wants to see what he believes in
     on the street. **Lena is in the Newman van.** Respect without belief, tested in public (and every sighting
     reaches the rumor mill).
+  - **Jack's reaction to "I love you" (player).** He's **pleasantly stunned and says nothing at first**, so **Skye starts
+    to panic**, until **she sees him smile wide.** **Then he says it back, and she knows instantly that he means it.**
