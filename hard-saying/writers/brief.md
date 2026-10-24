@@ -1807,3 +1807,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   answer Nonna's.** He believes it, privately; it's a real conclusion, not a rationalization he's aware of. **New
   Orleans overturns both answers** (the "same direction" key), which is part of why it costs so much. Keep the two
   questions unanswered aloud; this is Jack's interior verdict, shown in narration and choices.
+  - **What Jack tells Skye about Lena (player).** Angry now at Lena and Laney but **genuinely confused** by Lena's
+    behavior, he tells Skye **they were really close earlier in the fall, on good terms through break, and whatever
+    this is started when he got back.** (Nothing about his feelings, the porch, the calls' weight, or the song.) Skye,
+    who clocked Lena back in S1, hears more than he says: room decides her read (jealousy and intuition, never
+    foreknowledge), and it should feed her own quiet fear, played lightly.
