@@ -1822,3 +1822,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     about whether *he* is. Neither says the real thing.
   - **If the drafted Sully's sequence differs (e.g. Jack's shots choice), patch it so Jack's outburst at Laney happens
     on every path** (the player choice can shade how he does it, not whether).
+- **Jack will NOT go to Julian's Haiti benefit (player).** He absolutely won't attend Julian's *Songs for Haiti* at
+  Bastille (S2E05, Fri), because **he's not listening to him play "Magdalena" again** (whatever the setlist actually
+  is; it's his reason). Remove the [bastille] branch of `s2e5_friday`: Friday is Skye (the movie) on every path, with
+  Jack's refusal on the page (interior; maybe Theo or Kevin mentions the benefit, or Lena's there, and he says no
+  without saying why).
