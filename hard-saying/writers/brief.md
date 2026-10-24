@@ -1861,3 +1861,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Jack is all in on Skye**, as the answer to Danny's and Nonna's questions. **He makes the effort with her, always.**
     **He has started to learn her and read her better than almost anyone else** (her tells, her performances vs. her
     real moments, what her mother does to her, when she needs quiet). Show it in specifics.
+- **More January design answers (player).**
+  - **NFC Championship (Sun Jan 24; Saints beat the Vikings in OT for their first Super Bowl):** Jack doesn't go to
+    Sully's. In light of his conclusion that Skye is the answer to the questions, **he's honest with Skye: he's angry
+    with Laney and Lena for what they said about her, so he has no interest in going; he'd rather do something else
+    with her.** (The game still reaches him: the result, the town, Lena's joy at a distance; room decides how much.)
+  - **The vetting lunch: her mother (Debbie) and the publicist**, a two-hander; Skye performs "fine" for them and
+    **Jack is the only one who sees her disappear inside it** (his reading of her, per the newest note).

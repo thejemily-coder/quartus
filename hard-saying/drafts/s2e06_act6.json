@@ -109,14 +109,7 @@
      "text": "The two Cokes are on the step beside him, unopened, sweating onto the concrete. He keeps seeing the remote on the arm of the couch, lined up with the edge."
     },
     "His own pack has been in the inside pocket of the Carhartt since Saturday, against his ribs, with the lighter. In the other pocket, the tin, which isn’t his: eleven.",
-    {
-     "if": "jack_cigs_jf>=1",
-     "text": "Saturday’s, on the church steps, was the first since New Year’s."
-    },
-    {
-     "if": "jack_cigs_jf<1",
-     "text": "He hasn’t lit one since Christmas."
-    },
+    "Saturday’s, on the church steps, was the first since New Year’s.",
     "It isn’t like wanting a drink of water. It’s lower down and meaner than that, in the hands first, then the chest, an itch with an opinion; it came up the stairs behind him from the lobby, and it has been sitting on the step beside him since. Upstairs, through the fire door, somebody’s alarm clock goes off for no reason and gets slapped quiet. The building ticks with water in its gutters.",
     "His hand is already inside the jacket. He can feel the cellophane under his fingers, the corner of the pack, the lighter warm from him."
    ],
@@ -170,22 +163,7 @@
    "body": [
     "The rain on the window toward the Grove has gone steady and close, and under it, from Theo’s side of the room, comes Theo’s breathing, which is too even and too quiet to be a man asleep. Jack has the desk lamp bent down low over the legal pad so the light stays on his side of the divider. Hollis is on Theo’s nightstand in the teacup, catching a little of the lamp.",
     "Three pages on why you are wrong. He has a page and a half, and an eraser worn down to the metal, and Theo’s blazer on the back of his own chair where Theo threw it at ten past eleven, because Theo’s chair has Hollis’s salad bowl on it. *Frankenstein* is open face down on the desk to the trial, the spine cracked white at the page where Victor says the tortures of the accused didn’t equal his. Jack has underlined that one so many times since last Thursday the paper’s gone soft.",
-    {
-     "if": "s2e5_justine==\"press\"",
-     "text": "Hale gave him the wrong side and the wrong side is winning. He spent Thursday telling the table Victor was right to keep his mouth shut, and now he’s up past midnight arguing against silence, against himself, and every sentence he writes for it is better than anything he said at the table last week."
-    },
-    {
-     "if": "s2e5_justine==\"concede\"",
-     "text": "He gave Lena the point on Thursday, and Hale made him take it back in writing: three pages defending Victor’s silence against his own conscience. Every sentence comes out sounding like a lawyer for somebody he doesn’t like."
-    },
-    {
-     "if": "s2e5_justine==\"reframe\"",
-     "text": "He’s writing about the priest — Justine’s confessor, who frightened a girl into a lie and called it absolution. *Mr. Costigan may include the clergy.* He has. He keeps having to stop and take the adjectives out."
-    },
-    {
-     "if": "s2e5_justine!=\"press\" && s2e5_justine!=\"concede\" && s2e5_justine!=\"reframe\"",
-     "text": "He’s arguing against silence, the way she argued it on Thursday, from her end of the table, and it goes easier than it should. He keeps writing sentences she could have said, and having to cross them out because she did."
-    },
+    "Hale gave him the wrong side and the wrong side is winning. He spent Thursday telling the table Victor was right to keep his mouth shut, and now he’s up past midnight arguing against silence, against himself, and every sentence he writes for it is better than anything he said at the table last week.",
     {
      "if": "s2e6_pages_started && s2e6_placemat!=\"sincerity\"",
      "text": "The Giorgio’s placemat is taped to the top of page one, grease spot and all, with Calabria showing through from the back."
@@ -305,36 +283,10 @@
     "It goes past Jack close, the sentence, like a truck past a man walking the shoulder of 422. There are things he doesn’t think about. He’s good at it. He sits with his hands on the table and doesn’t think about them now, and at the window end her hand doesn’t move from her collar, and her eyes don’t move from Hale.",
     "The rain goes across the window in a gust, and every pen at the table stays down.",
     "“Costigan,” Hale says, and finds his.",
-    {
-     "if": "s2e5_justine==\"press\"",
-     "text": "He reads it in the same voice he gave the train time. *A man who keeps quiet to save himself has already confessed; he’s only chosen the wrong confessor.* He looks down the table at the door end. “Mr. Costigan has prosecuted himself and won. Appeal denied.”"
-    },
-    {
-     "if": "s2e5_justine==\"concede\"",
-     "text": "He reads it with a little relish, as if it were a menu in bad French. *Victor was right to keep quiet, and I do not believe a word of this paragraph.* He sets it down. “The most honest sentence in the stack, and it’s a lie. Well done.”"
-    },
-    {
-     "if": "s2e5_justine==\"reframe\"",
-     "text": "*A confessor who frightens a girl into a lie has stopped hearing confessions and started taking them.* Hale reads it twice over in his head, by the look of him, before he says anything. “He has included the clergy.”"
-    },
-    {
-     "if": "s2e5_justine!=\"press\" && s2e5_justine!=\"concede\" && s2e5_justine!=\"reframe\"",
-     "text": "*Victor’s silence isn’t the sin; the sin is the year he spent making it sound like a reason.* Hale reads it without any voice on it at all, and looks down the table at him a moment. “Better. Late, but better.”"
-    },
+    "He reads it in the same voice he gave the train time. *A man who keeps quiet to save himself has already confessed; he’s only chosen the wrong confessor.* He looks down the table at the door end. “Mr. Costigan has prosecuted himself and won. Appeal denied.”",
     "It’s strange to hear it read, his own sentence in that voice, in that room, with the rain going across the window behind her. It sounds smaller than it did at two in the morning. It sounds truer. Down the table Lena hasn’t looked at him; she’s looking at the page in Hale’s hand.",
     "Then Hale turns his head toward the door end and leaves it there.",
-    {
-     "if": "s2e5_justine==\"concede\"",
-     "text": "“You have both defended him, Mr. Costigan. She did it better, and meant it less. Answer her.”"
-    },
-    {
-     "if": "s2e5_justine==\"reframe\"",
-     "text": "“You went after the clergy, Mr. Costigan. Miss Broussard has gone after you. Answer her.”"
-    },
-    {
-     "if": "s2e5_justine!=\"concede\" && s2e5_justine!=\"reframe\"",
-     "text": "“Mr. Costigan. She has made your Thursday case against you, and made it better. Answer her.”"
-    },
+    "“Mr. Costigan. She has made your Thursday case against you, and made it better. Answer her.”",
     "The table turns with him, one face at a time: Caleb, the window girls, Evan with his pen up, Yusuf over his coffee lid. At the window end her hand is still at her collar. She’s looking at Hale, and only at Hale, and the storm light is all down one side of her."
    ],
    "journal": [
@@ -455,14 +407,7 @@
     "“Please. It makes me sound like I make jam.”",
     "“We should get him a plaque.”",
     "“He’d hate it. He’s a very private egg.” Theo is smiling at the cup anyway. “I’m keeping him.” He picks up the cup in both hands and looks at the egg, the HOLLIS in somebody else’s blue ink, a week of stairwells and sandbags and storm and one salad bowl. He sets it back down on the nightstand exactly where it was.",
-    {
-     "if": "s2e5_egg==\"wit\"",
-     "text": "“Hollis Ashby retires with honors.”"
-    },
-    {
-     "if": "s2e5_egg!=\"wit\"",
-     "text": "“Hollis retires with honors.”"
-    },
+    "“Hollis Ashby retires with honors.”",
     "The cup sits on the nightstand in the lamplight, and the egg in it.",
     "Theo looks around the room, at his own bed and the closet and the floor. “Costigan. My umbrella.”",
     "“It lost an argument with the Supreme Court.”",
