@@ -1,0 +1,343 @@
+{
+ "scenes": {
+  "s08": {
+   "slug": "SATURDAY · 4:55 AM · ST. BRENDAN’S LOT — THE NEWMAN VAN",
+   "set": {
+    "walk_for_life_van": true
+   },
+   "body": [
+    "The Newman van sits under the one sodium light in St. Brendan’s lot with its side door rolled open, a white fifteen-passenger Ford with ST. BRENDAN THE NAVIGATOR lettered small on the driver’s door, and the light turns everybody standing around it the same flat orange and their breath the same gold. Ocean Road is empty in both directions. Down the hill, in the dark, the surf is loud.",
+    "Peter Haddad is already behind the wheel with a steel thermos between his knees and a laminated route taped to the dash, going down it with one finger, his lips moving. Kenzie Rourke has the passenger seat and a road atlas open across her lap to a page she won’t need. Tyler Brandt and Bridget McNulty are feeding the back of the van a stack of signs on sticks, face down, so the words don’t show. Becca Lindell, in a long knitted scarf that goes around her twice, sees him crossing the lot and waves with her whole arm. Clare Dominguez is standing guard over a backpack with more sticks poking out of the top of it. Margot, in black to the chin, lifts her own thermos at him from the curb stop.",
+    "“For science,” she says, as if he’d asked.",
+    "“COSTIGAN,” says Joey Abruzzo, at a volume meant for a stadium, and up behind the church a rectory window lights and goes dark again.",
+    "“Joey Abruzzo.” It comes from the side door, quick and low and pure Mid-City. “It is five in the morning and Father is asleep forty feet from your mouth. The Lord can hear you at half.”",
+    {
+     "if": "s2e6_van==\"wit\"",
+     "text": "Kevin comes around the back of the van with a clipboard under one arm and a foil-wrapped breakfast burrito in the other hand, still hot enough to steam in the light, and puts it in Jack’s. “Net thirty,” he says. “Paid early.” Jack stows it in the Carhartt, where it warms one side of him like a hand on his ribs."
+    },
+    {
+     "if": "s2e6_van==\"candor\"",
+     "text": "Kevin comes around the back of the van with a clipboard under one arm and sees him and stops. “You came,” he says, and nothing fast comes after it. He stands there in the orange light with his ears going red, and then he remembers he has a clipboard."
+    },
+    {
+     "if": "s2e6_van!=\"wit\" && s2e6_van!=\"candor\"",
+     "text": "Kevin comes around the back of the van with a clipboard under one arm. “Oh-five-hundred,” he says, and points at his watch, pleased with it. He might have arranged the hour himself."
+    },
+    "Jack takes the backpack of signs off Clare, who says it’s fine, it’s fine, they’re heavier than they look, and lets him, and he swings it up into the van for her. Becca hugs him around the neck in passing, scarf and all, and says, “You came! Kevin said you would and I said I’d believe it at five,” and it is five, and she lets him go.",
+    "Lena is at the open side door with the sign-up against her chest. She ran it; that’s her handwriting down every line. She’s in the gray cardigan under a navy peacoat buttoned to the throat, her hair twisted up off her neck, a pen in her other hand. She checks Clare off with a hand on her arm, and Becca with a “Morning, Becca,” warm and low, and then she finds his name and ticks it without looking up.",
+    "“Costigan.”",
+    "The pen goes on to the next line.",
+    "Kevin reads the seats off his own list. It’s typed, in rows, in Kevin’s careful way, and a few of the names have been crossed out and written in again in pink. “Row one, Haddad, Rourke. Row two, Tran, Dominguez.” He clears his throat at nothing. “Row three. Costigan. Broussard.”",
+    "Everybody goes quiet in the way of a lot of people not looking. Bridget stops with a sign halfway into the van. Even Joey stops.",
+    "“It’s alphabetical,” Kevin says.",
+    "“We’re not next to each other alphabetically.”",
+    "“By first name.”",
+    "Jack looks at the list in Kevin’s hand, at the two names on the pink line. “Jack and Magdalena?”",
+    "Kevin’s ears go dark red under the sodium light. “…It’s a system.”",
+    "Row three is a bench for three. The aisle end of it is already taken by the big red cooler and Clare’s backpack of signs, side by side, with the seat belt pulled across both. “Cargo,” Kevin says. “It’s in the system.”",
+    "Jack doesn’t ask to move. At the side door Lena slides the clipboard under her arm and doesn’t ask either. Whoever asks first is the one who asked."
+   ],
+   "choices": [
+    {
+     "tag": "Restraint",
+     "text": "*Take the window, like Theo said.*",
+     "set": {
+      "s2e7_seat": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He climbs in past the cooler and takes the window. Somewhere in the Carhartt is a square of yellow paper that says so.",
+      "Lena gets in last, after she has counted heads twice and slid the side door shut on the cold. She takes the middle, against the cooler, with the clipboard on her knees, and settles her peacoat under her, and looks straight ahead at the back of Kevin’s head."
+     ],
+     "goto": "s09"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "*Give her the window.*",
+     "set": {
+      "s2e7_seat": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "He stands back by the cooler and lets the row be hers.",
+      "Lena looks at the window, and at him. Then she gets in past him without a word and takes it, and folds her peacoat under her, and puts the clipboard on her knees. He takes the middle. The cooler is against his right knee, cold through the denim, for the next three hundred miles."
+     ],
+     "goto": "s09"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Is there a mechanism for appeal?”",
+     "set": {
+      "s2e7_seat": "wit",
+      "trait.wit": "+1",
+      "rel.kevin.warmth": "+1"
+     },
+     "response": [
+      "“There’s no mechanism,” Kevin says, instantly. “I checked.”",
+      "Somebody in the back laughs, and Becca says, “Oh, *Kevin*,” fondly, and Kevin looks down at the list, betrayed, and reads it out again: Costigan, middle; Broussard, window.",
+      "Lena gets in and takes the window. Jack gets in after her and takes what the system has left him. From his knee to hers there is a hand’s breadth of gray vinyl, and then on his other side the cooler."
+     ],
+     "goto": "s09"
+    }
+   ]
+  },
+  "s09": {
+   "slug": "SATURDAY · 5:20 AM · US-101 NORTH, GAVIOTA → PASO ROBLES — ROW THREE",
+   "set": {
+    "resolve.lena": 3,
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "Peter takes the van up the coast in the dark with both hands on the wheel, and off to the left the Channel is black, with one oil platform lit far out on it. The dome lights are off. The heater is on high and smells of wet wool. In the rows behind, the people who got up at four are going back under one at a time — heads against the glass, against each other, against Becca’s scarf. In row two Clare is asleep against the window with a rosary in her lap and Kevin is pretending not to be asleep beside her.",
+    "The only reading light lit in the van is the one over row three, and it’s hers: a small hard cone of yellow on the clipboard on her knees, where she is going down the sign-up again in her small upright hand, and then a second page, the Haiti money, a column of figures she totals with the pen moving and her lips still.",
+    {
+     "if": "s2e7_seat==\"restraint\"",
+     "text": "He has the window, cold against his shoulder. The light falls on her hands and on the edge of his sleeve."
+    },
+    {
+     "if": "s2e7_seat!=\"restraint\"",
+     "text": "She has the window; he has the middle. The light falls on her hands and on his knee."
+    },
+    "Where the freeway runs along the water she looks up from the column, at the little lamp over their heads, and then at him.",
+    "“Is the light going to bother you?”",
+    "“No.”",
+    "“Tell me if it does.”",
+    "“I will.”",
+    "It is perfectly polite. He would rather she had hit him with the clipboard. In the fall she did her figures out loud at him over a Commons tray and made him check her carrying, and argued when he was right. Now she totals by herself, under her own light, and asks after his comfort, and goes back to the page.",
+    "At Gaviota the coast turns away and the hills close in black on both sides, and the van goes into the tunnel and the sound of everything changes, a long hollow roar like the inside of a shell. Peter says over his shoulder, into the dark, “Okay. Before sunrise. Lena, would you?”",
+    "“The first Joyful Mystery,” Lena says. “The Annunciation.”",
+    "A girl in a back room in a town with no reputation, and an angel with a question. Nonna used to say it was the one time in Scripture that God asked and then waited for the answer.",
+    "She leads it low and quick and exact, the Our Father and then the Hail Marys, and the van comes in under her half asleep, a mumble from the back rows like a six-thirty Mass in February, and the tunnel lets them out the far side into the pass.",
+    "On the fourth Hail Mary, Margot, from row four, comes in on *Holy Mary, Mother of God* while Lena is still on *the fruit of thy womb*, hears it, and, for science, keeps going. She finishes the second half a clause ahead of the van, alone, with total confidence. Lena doesn’t stop. The rest of the van catches up with Margot at *sinners*.",
+    "Jack says it with them, at the speed of the van, with his hands between his knees. He doesn’t make any of the words smaller than they are. *Pray for us sinners* — there’s a way to say that line so it slides by, like a car doing exactly the limit past a cruiser, and his mother would hear it from the kitchen; there’s a way to drop it altogether, and Nonna would hear that from her chair in her sleep. Yesterday is all through him, the sun on the wall, every bit of it, and the line goes straight there and lands. He says it anyway, every time it comes around. It was true before he got in the van. And this morning he needs it said over him by somebody, and the van will do. The van says it ten times.",
+    "On the Glory Be, Lena’s free hand goes up to her collar, to the place under the peacoat where the medal is, and holds it through the wool — *as it was in the beginning* — and comes back down to the clipboard on *amen*. In the dark it’s the one thing he can see her do.",
+    "“Thank you, Lena,” Peter says. “Tyler, the second.”",
+    "Tyler takes the second and Bridget the third, and somewhere in the fourth the back rows go under for good, and by the end of the fifth the only voices answering are Peter’s and Kenzie’s and Lena’s and his. Peter says the Hail Holy Queen alone, and then it’s quiet. That’s the rule. The rosary, then quiet.",
+    "In the quiet he can hear her pen. He can hear the tires change their note on a bridge, and a semi going by the other way with a long sigh of air brakes, and somebody in the back row breathing slow and deep through the nose. Lena doesn’t sleep. Her pen stops for long stretches and starts again. Once her head goes back against the seat and her eyes close, and he holds very still, so as not to be the thing that moves, and after a minute the pen starts again.",
+    "South of Santa Maria the strawberry fields start, both sides of the freeway, mile on mile of plastic over the rows, pale in the dark, like furniture under dust sheets in a shut-up house.",
+    "Kevin passes the coffee back from row two in a tower of Dixie cups, out of a gas-station carafe he filled at half past four, and it is a crime: thin, scorched, the temperature of old bathwater. Jack drinks half of his to be polite and holds the rest.",
+    "Lena tastes hers and leans forward to the seat back, low, so as not to wake anybody. “Kevin Tran. I love you like a brother, and this coffee is a sin against the Fifth Commandment.”",
+    "“It’s from the Chevron,” Kevin whispers.",
+    "“I know where it’s from. I can taste the pumps.”",
+    "She sits back. Beside him, in the cone of light, she unscrews the cap of her own thermos — a dented green Stanley, older than both of them, somebody’s father’s — and pours, and the smell comes across the bench, real coffee, with chicory in it. She holds the cap out to him without a word, still reading the sign-up.",
+    "He takes it. She has it by the very rim, so he has to take it by the bottom, and the coffee shivers in it with the road, and at sixty miles an hour it takes some doing, on her part and on his, for no part of one hand to touch any part of the other. They manage it. There’s a chip out of the rim on one side, a little half-moon of bare steel, and he drinks from the other side. It’s very good coffee. When it’s empty he gives the cap back the same careful way, and she fills it for herself, and drinks from the chipped side.",
+    {
+     "if": "resolve.jack<=2",
+     "text": "North of San Luis Obispo the road climbs the Cuesta Grade in long curves, and on the first one the van leans and her knee comes against his, and on the next one it’s still there. He doesn’t move his. He can feel the seam of her jeans through his own, and the warmth of her through both, and he sits with it to the top of the grade with his eyes front and his coffee hand very still. She doesn’t move hers either. At the summit the road straightens and she shifts on the bench to reach her pen, and it’s gone, and the place on his knee goes on knowing where it was."
+    },
+    {
+     "if": "resolve.jack>2",
+     "text": "North of San Luis Obispo the road climbs the Cuesta Grade in long curves, and on the first one the van leans and her knee comes against his. Before the second curve he has moved his away. So has she. They go up the rest of the grade like that, braced, two people in a church van holding their knees apart against the turns, and at the summit the road straightens out and they stay braced anyway, out of habit or principle, down the far side."
+    },
+    "Past Atascadero the dark thins out over the hills to the east, and goes gray, and then goes to no color at all, and Kenzie wakes up in the front seat long enough to say “Oh, it’s morning,” as if it had been her idea, and at Paso Robles the vineyards come up out of the frost on both sides of the freeway: rows and rows of bare black vines on their wires, cut back hard to the knuckle, white on the ground in the alleys, and men walking down the rows in the first light in hooded sweatshirts and work gloves, bent over, with shears, pruning. Their breath goes up. One of them straightens at the end of a row with a hand at the small of his back and looks at the road. They don’t stop for the van. They’ve got the valley to get through before the sap comes up.",
+    "Lena has stopped totaling. The pen is still on the page, and the reading light is going pale on her hands in the daylight, and she has turned her face to the men in the vines.",
+    {
+     "if": "s2e7_seat==\"restraint\"",
+     "text": "She has to look past him to do it, out the window at his shoulder, and he keeps still so as not to be in the way."
+    },
+    {
+     "if": "s2e7_seat!=\"restraint\"",
+     "text": "He can see them past her, over her shoulder, through her window."
+    },
+    "It comes at him from the side, out of nowhere, with nothing to brace for. Julian’s song: the woman in the garden who took him for the gardener, and didn’t know him until he said her name. He looks down at his hands, at the Dixie cup in them, at the knuckles, and he keeps looking at his hands until the vineyard is behind them."
+   ],
+   "journal": [
+    {
+     "kind": "note",
+     "id": "medal",
+     "title": "The medal",
+     "text": "Lena’s medal was her grandmother’s; it came back to her mother in a plastic bag. When she’s working something out, her hand goes to it. At the Point in December. Thursday at Hale’s table, about Justine. Saturday in the hall at Sully’s, about the Fishbowl. Thursday at Hale’s table, while he read out her paper about keeping quiet. Saturday in the van at dawn, on the Glory Be."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“You said I could stop. Stop what?”",
+     "if": "s2e6_3am==\"in\"",
+     "set": {
+      "s2e7_dawn": "candor",
+      "lena_3am_asked": true,
+      "said_it_plain_n": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "He says it low, under the heater, so it goes no farther than the bench. “You said I could stop. Stop what?”",
+      "She looks at the vines. The pen doesn’t move on the page. Out past the glass the men in the rows keep cutting, and the last of the frost lifts off the low ground like breath, and the question goes by with the vines, unanswered.",
+      "He doesn’t ask it twice. North of the vineyards, when it’s light enough to read by, she reaches up and turns off the reading light herself."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "*Ask her about the Saints tomorrow.*",
+     "set": {
+      "s2e7_dawn": "sincerity",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "“Tomorrow,” he says. “Sully’s. They letting Dale near the rope?”",
+      "It’s the one thing left they can talk about, and she steps onto it like a board she isn’t sure of, and it holds. “Dale has the rope again,” she says. “He’s rationing it. He says he’s not handing it to anybody who hasn’t bled for this team, and I said, Dale, I was *born* bleeding for this team, and he said that was my mama’s doing, not mine.” The corner of her mouth goes, and comes back. She makes a mark on the sign-up. “Are you coming?”",
+      "“I don’t know yet.”",
+      "She nods, the small nod you give a no, and goes back to her column of figures."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Watch the vineyards go by.*",
+     "set": {
+      "s2e7_dawn": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      {
+       "if": "s2e6_3am==\"door\"",
+       "text": "He watches the vineyards. Without looking at him she reaches up and switches off the reading light over the two of them, the last lit seat in the van, and the cone goes off her hands and off the clipboard, and the dawn is the only light there is. She leaves her hand on the clipboard after, flat on the page."
+      },
+      {
+       "if": "s2e6_3am!=\"door\"",
+       "text": "He watches the vineyards. Nothing happens. The vines go by in their rows, and the men in them, and the frost, and the reading light goes on burning, pale and useless, into the daylight. He knows exactly where she is without looking, the way you know where the stove is in a dark kitchen."
+      }
+     ],
+     "goto": "s09a"
+    },
+    {
+     "tag": "Wit",
+     "text": "*Pass her the burrito Kevin brought.*",
+     "if": "s2e6_van==\"wit\"",
+     "set": {
+      "s2e7_dawn": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He takes Kevin’s burrito out of the Carhartt, where it has been keeping his ribs warm since Ocean Road, and peels the foil back off one end and holds it out across the bench.",
+      "She looks at it in the gray light. She takes it, and eats half without comment, neatly, and folds the foil back down over the end and creases the corners and hands it back to him, wrapped like new.",
+      "From row two, Kevin’s voice: “I saw that.”"
+     ],
+     "goto": "s09a"
+    }
+   ]
+  },
+  "s09a": {
+   "slug": "SATURDAY · 7:40 AM · US-101 NORTH, KING CITY → GILROY — ROW THREE",
+   "set": {
+    "lena_asked_happy": true
+   },
+   "body": [
+    "By King City it’s full morning, and the Salinas Valley lies open on both sides of the road, flat as a kitchen table and miles across, the fields in long brown rows waiting on spring and a few of them in winter green, irrigation pipe stacked white at the field ends, and mountains far off on either hand. The van is half awake. Joey is asleep on Tyler’s shoulder with his mouth open, and Tyler sits very straight under him, being good about it. Becca is knitting something long and red in row four, the needles going steady as a clock. Margot is writing in the notebook now that there’s light to write by, with her thermos standing between her boots. Up front Kenzie has the atlas open to a page they left an hour ago.",
+    "Out in the fields the crews are already working: a white school bus parked at the end of a row with a porta-john on a trailer hitched behind it, and a line of people in hooded sweatshirts and bandannas bent over the beds, moving down them together, setting something small and green into the dirt by hand. A tractor goes by on a dirt road with gulls behind it. Frank would have something to say about that bus, and about the union that isn’t on it, and then he’d have something to say about the price of lettuce, and both of them would be true.",
+    "Becca leans forward over the back of row three with the knitting in her lap. “Lena, what did we end up at? For Haiti?”",
+    "Lena tells her, to the cent, from memory, and Becca says, “Glory Be,” and sits back and knits faster.",
+    "Margot leans forward beside her with the notebook open. “Clarification,” she says. “The rosary before sunrise. Is that doctrine, or is that Peter?”",
+    "“That’s Peter,” Lena says, her pen still going. “Doctrine’s Peter too, if you go back far enough.”",
+    "Margot writes that down. Up front Peter, who has heard his name twice, says, “What?” and Kenzie pats his arm.",
+    "Jack keeps his face on the fields. It’s a good one. In the fall it would have been said sideways, for him, out of the corner of her mouth with one eyebrow up, and he would have been the one who laughed, and she’d have looked pleased with herself for a mile. Nobody laughs. Becca knits.",
+    "Kevin turns around in row two, carefully, so as not to wake Clare, who is asleep against the window with her mouth a little open and the rosary still in her fingers, and hooks his chin over the seat back. He keeps his voice under the engine. “Four brothers,” he says. “Javi, Luis, Nico, Tito. Oldest to youngest. I made a card.” He shows it to Jack: an index card, four names, a 49ers logo drawn badly in one corner. “What do I do.”",
+    "“Shake hands like you mean it. Look at them. Don’t call anybody sir.”",
+    "“Why not sir? Sir is respectful.”",
+    "“They’re in their twenties, Kev. Sir is for their father.”",
+    "Kevin turns back around and sits facing the windshield. Jack hears him say it to himself, under the engine, twice: “Not sir. Not sir.”",
+    "South of Soledad there’s a sign at the side of the freeway. CORRECTIONAL TRAINING FACILITY. And then, out past the fields, there it is, spread over the valley floor like a community college, except for the towers: long low buildings the color of the dirt they’re built on, fences in rows, and the lights along the fences still on in the daylight.",
+    "Rudy did six years in there. He told Jack once at the flat-top, scraping, between a short stack and a patty melt. Danny is in Trumbull, on the other side of the country, in a place that could have been built off the same drawings for all Jack knows. He knows the visiting room. The bolted tables, the vending machines along one wall, the floor wax, the guard with the newspaper; his brother’s hands around a can of Coke, because you’re allowed to buy them one. He stops there, where he always stops.",
+    {
+     "if": "s2e6_danny==\"candor\"",
+     "text": "The number goes through his head by heart, the letter and the six digits, the way he wrote it big at the pass on Thursday."
+    },
+    {
+     "if": "s2e6_danny==\"sincerity\"",
+     "text": "He thinks about the two lines on the flap he never read, sealed with a thumb under the heat lamp, somewhere east of here by now in a canvas sack, on their way to Leavittsburg."
+    },
+    {
+     "if": "s2e6_danny!=\"candor\" && s2e6_danny!=\"sincerity\"",
+     "text": "*He’s going to think I hired you.* Monday, maybe, or Tuesday. Danny will read it on his bunk and think exactly that."
+    },
+    "He watches the place until it’s behind them. When he turns back from it, Lena is looking at him. Not at the sign. At him. She knows about Danny. In the fall she told Jack you can love somebody, but you can’t pay for them, and later she said hi to Danny himself on a collect call and told him she was going to be defense. In all of Marisol there are only a few people who would know why a man from Youngstown looks at that sign that long, and she’s one of them.",
+    "She doesn’t say anything. She takes the green thermos out from between her boots and unscrews the cap and turns it in her fingers until the chip is on her side, and fills it, and holds it out to him with the good side of the rim toward his mouth.",
+    "He takes it. He drinks from the side she gave him, slowly, so it will last to Gonzales. She goes back to the sign-up. The fences go by, and then it’s fields again, and the Soledad exit, and that’s that, as far as anybody else in the van could tell.",
+    "North of Salinas Peter starts announcing Gilroy. “Gilroy in twenty,” he tells the van. “Coffee and restrooms at Gilroy.” Then, “Gilroy in ten, people.” He has been telling Kenzie about the Starbucks at the Gilroy exit — it has a lot big enough for the van, and a drive-through, and a girl at the register who remembered him from last year — since Chualar. The outlets come up off the freeway, acres of them, and the sign for the exit, and Peter sails past it at sixty-five with his blinker off, still describing the girl at the register.",
+    "“Peter,” says Lena, and Jack says it with her, at the same instant, in the same voice, down to the note.",
+    "“I *know*,” Peter says. “I know. There’s a Denny’s in Morgan Hill.” Kenzie shuts the atlas.",
+    "“Denny’s,” says Joey, awake, from the back row, with feeling.",
+    "“We are not stopping at a Denny’s on the way to the Walk for Life,” says Bridget.",
+    "“Why not?” says Tyler.",
+    "“Because it’s a *Denny’s*, Tyler.”",
+    "“We’ll pray about it,” Peter says, and changes lanes.",
+    "Lena leans forward and sets a folded note on the dash beside the laminated route. “The garage on Washington Street,” she says. “Level two.”",
+    "“Level two, baby,” Kenzie tells Peter. “Not three. Remember three.”",
+    "“We don’t talk about three,” says Peter.",
+    "In row three they don’t look at each other. He keeps his eyes on Peter’s laminated route, three rows off, and she keeps hers on the clipboard, and the corner of her mouth has gone, and so has his. It’s the closest they’ve been since the porch in December. He can feel it get up into his face. Beside him she puts her pen down on the column of figures and presses it there, and the corner of her mouth goes back to where it was, and after a while so does his.",
+    "A few miles on, with the Denny’s argument settled in the front seat and the hills closing in green on both sides, she takes her hair down, all of it, and shakes it out, and twists it back up off her neck and pushes a pencil from her bag through the knot to hold it, and picks her pen up again. She says it straight and quiet, to the window.",
+    "“Are you happy?”",
+    "He looks at the side of her face. It’s a straight question. As it happens, for the first time in a long time, he has a straight answer."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“Yeah. I am.”",
+     "set": {
+      "s2e7_happy": "candor",
+      "soul.honesty": "+1",
+      "said_it_plain_n": "+1"
+     },
+     "cue": "Lena will keep that.",
+     "key": "In the van Lena asked if you were happy. You told her the truth: yes.",
+     "response": [
+      "“Yeah,” he says. “I am.”",
+      "“Good.” She caps her pen. She clips it to the board, and holds the board on her knees with both hands, and looks ahead through the windshield past Peter’s shoulder at the road.",
+      "At San Jose the van wakes up all at once — Joey first, at full volume, then the back rows, then Clare, blinking, with the rosary still in her fingers. Kenzie turns around in the front seat on her knees and starts “Holy God, We Praise Thy Name,” high and clean, and half the van comes in on the second line. Ahead the first hills of the city come up out of the haze, green, with houses stacked on them, and the valley runs out under the wheels."
+     ],
+     "goto": "s10"
+    },
+    {
+     "tag": "Restraint",
+     "text": "“Yes.”",
+     "set": {
+      "s2e7_happy": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "In the van Lena asked if you were happy. You said yes.",
+     "response": [
+      "“Yes.”",
+      "She nods. “Good.” The clipboard goes into her bag, and the bag goes down at her feet, and she folds her hands in her lap on top of the peacoat.",
+      "Joey wakes up at San Jose and announces it. Up front Kenzie starts a hymn, “Holy God, We Praise Thy Name,” and Becca comes in behind her strong enough for two, and then the rest of the van, and Jack, on the second verse, because he knows it, because everybody from St. Brigid’s knows it. The road climbs out of the valley into the first hills, and Peter, for the length of the hymn, doesn’t miss anything."
+     ],
+     "goto": "s10"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“I am. Are you?”",
+     "set": {
+      "s2e7_happy": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "In the van Lena asked if you were happy. You said yes, and asked her back. She didn’t answer.",
+     "response": [
+      "“I am,” he says. “Are you?”",
+      "She turns a page on the clipboard that doesn’t need turning. “Good,” she says, to his first answer, and lets the second one sit unanswered on the vinyl.",
+      "Kevin turns all the way around in row two at San Jose to tell row three that there will be water at the rally and that nobody should rely on it. Kenzie, up front, starts “Holy God, We Praise Thy Name,” and the waking van comes in a line behind her, ragged, and then together. Jack sings it. The hills come up green and close and full of houses, and the road goes up into them, and there’s no more valley to drive down."
+     ],
+     "goto": "s10"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Ask me after Peter finds the city.”",
+     "set": {
+      "s2e7_happy": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "In the van Lena asked if you were happy. You made a joke, and then said yes.",
+     "response": [
+      "“Ask me after Peter finds the city.”",
+      "The laugh comes up in her before she can do anything about it, and she stops it with her teeth, and looks hard out the window at a field until it goes.",
+      "He gives it up. “Yeah. I am.”",
+      "“Good.”",
+      "At San Jose Peter finds the city, or a green sign with its name on it, and reads it out to the van with some dignity, and Kenzie starts “Holy God, We Praise Thy Name” to wake everybody up, and it works. The van sings its way up out of the valley into the first green hills, and the road leaves the flat behind for good."
+     ],
+     "goto": "s10"
+    }
+   ]
+  }
+ }
+}
