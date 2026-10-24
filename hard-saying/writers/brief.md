@@ -1914,3 +1914,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     in an enclosed space with Lena again, **but if Kevin still needs him for the ride home as badly as Kevin needed him
     to come, Jack would suffer through it.** (Keep `s2e7_ride` as the player's choice, framed through asking Kevin:
     Kevin's answer is honest; the van path is Jack choosing Kevin over his own comfort.)
+- **Resolve at 0: "Not that, but anything else" (player; S2E07's heat scene; adapt, not verbatim).** At the point of
+  escalation, Jack murmurs, **half with need and half ashamed**, some version of: **"Not that. But anything else you
+  want."** Skye (in character) **grins wickedly: "Only if you tell me out loud first."** **And he does, badly, half
+  ashamed and half desperate.** (Frank literary standard; the hard line holds; no procedural consent beat: this is
+  desire and her game, not a check-in. It's the next rung, and it costs him in resolve and confession.)

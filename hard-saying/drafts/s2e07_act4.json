@@ -205,14 +205,7 @@
     "“She’s nineteen and she’s praying,” Skye says. “Yell at me. I’m on your side.”",
     "The man stops. He looks at her — the beanie, the sunglasses, a man’s flannel buttoned to the throat — and he has no idea who she is; it isn’t anywhere in his face. After a moment he gets it, or gets a version of it, and he turns the megaphone on her. “Then what are you *doing* in there?” His voice cracks on the top of it. “You’re worse than they are. They don’t know any better. You know better and you walk with them anyway.”",
     "The heat comes up the back of Jack’s neck and into his face, fast — the way it comes now only when somebody goes at her — and his hand closes on the cup.",
-    {
-     "if": "s2e6_cu==\"concede\"",
-     "text": "Without looking around, Skye reaches back, and her cold hand goes inside the open Carhartt and lies over his heart, and she leaves it there."
-    },
-    {
-     "if": "s2e6_cu!=\"concede\"",
-     "text": "Without looking around, Skye puts one hand back against his chest, and she leaves it there."
-    },
+    "Without looking around, Skye puts one hand back against his chest, and she leaves it there.",
     "“Sir,” she says to the man, pleasantly, at the volume of a dinner party. “I’m agreeing with you. Agree back quieter.”",
     "The sidewalk laughs — his own side, a woman with a wire coat hanger on her sign, a kid in a beret — and a few people on the march laugh with them. The man’s face goes dark red. He brings the megaphone back up.",
     "Ahead at the banner Lena has turned around at the noise, the pole in both hands, and she is looking at Skye. A few yards behind them Kenzie has her BlackBerry up, and has had it up since the man came off the sidewalk.",
@@ -284,48 +277,55 @@
     "Skye looks at Jack’s face through the windshield. She puts the car in park, gets out, comes around the long hood in his flannel with the hazards blinking orange on the both of them, and stands next to him on the curb with her shoulder against his arm, facing the way he’s facing, which is at nothing in particular. It’s what she does instead of asking.",
     "Peter comes down the curb on his circuit, sees the Saab, sees Skye, and says “Ten past” to her too, politely, in case she’s coming.",
     "“I’ll be ready,” Skye tells him, with a perfectly straight face, and Peter nods and moves on to Joey.",
-    "Kevin is in the van’s side door with the list against his chest and his pen uncapped.",
-    "Six hours either way. Kevin asked him for himself. Skye drove up alone at six this morning, and if he gets in the van she drives back alone."
+    "Kevin is in the van’s side door with the list against his chest and his pen uncapped. Behind him, through the open door, row three: the cooler in the aisle seat, Clare’s backpack of signs, the window and the middle.",
+    "Six hours either way. Six hours in a box with no door, with *Thank you for coming, Jack* sitting in the front of it, or six hours of the coast with the girl leaning on his arm. There isn’t a contest. There is Kevin, in a hall at half past eleven on Thursday in his pajama pants, asking him for something with an *I* in it.",
+    "“One second,” he tells Skye. She lets go of his arm.",
+    "He goes to the side door. “Kev. Can I ask you something, and you tell me the truth?”",
+    "“I always tell the truth. Margot says it’s a condition.”",
+    "“If I go back with Skye instead. Is that okay?” He keeps going before Kevin can be polite. “Because if you need me in the van the way you needed me to come up, I’ll get in the van. I mean it. I’ll sit on the cooler.”",
+    "Kevin looks at the list. He looks down the bench at Clare, who is in the second row with a rolled sign across her knees and her coat buttoned to the chin, talking to Becca. He looks at Jack’s face, and whatever is still on it from ten minutes ago, and Jack watches him take the question seriously, which is the only way Kevin knows how to take one.",
+    "“The brothers went home in Javi’s truck,” Kevin says. “Skye did the brothers. That was what I needed you for, and it’s done, and you didn’t even have to do it.” He clicks the pen. “So, the truth. I don’t need you. I’d like you. Six hours, and I’ve never sat next to a girl for six hours who wasn’t my sister, and I don’t know what I talk about at hour four. That’s the truth. But that’s mine. You came. That was the ask.” His ears have gone red to the tops. “Whichever. Really.”",
+    "It’s both halves, in order, the way Kevin gives the dosage and then the side effects. Jack heard both."
    ],
    "choices": [
     {
      "tag": "Van",
-     "text": "*Ride home with Kevin. You said you would.*",
+     "text": "*Hear the half he said second. Ride home with Kevin.*",
      "set": {
       "s2e7_ride": "van",
       "rode_van_home": true,
       "rel.kevin.trust": "+1"
      },
      "cue": "Kevin saw you stay.",
-     "key": "You rode home in the van, because Kevin asked.",
+     "key": "You asked Kevin if you could go home with Skye. He said he’d like you in the van, and you rode home in the van.",
      "response": [
-      "“I said I’d ride with Kevin,” he tells her.",
-      "Skye looks over at Kevin in the doorway with his list, and back.",
-      "“Go be Kevin’s,” she says. She kisses him on the curb, and gets in, and rolls the window down and pulls him down to it by the collar and kisses him again through it, quick. When she noses out into the traffic he can see her face through the glass — not hurt. Thinking. Thinking about his face, and what was on it, the thing she didn’t ask about.",
-      "Behind him Kevin checks off a name on his list that was already checked."
+      "“I’m on the cooler,” he tells Kevin.",
+      "Kevin opens his mouth to argue, and shuts it, and makes a small mark on the list next to a name that was already checked.",
+      "Jack goes back to the curb. Skye has heard all of it from four feet away; she has a professional’s ears. She looks over at Kevin in the doorway with his list, and back.",
+      "“Go be Kevin’s,” she says. She kisses him on the curb, and gets in, and rolls the window down and pulls him down to it by the collar and kisses him again through it, quick. When she noses out into the traffic he can see her face through the glass — not hurt. Thinking. Thinking about his face, and what was on it, the thing she didn’t ask about."
      ],
      "goto": "s13v"
     },
     {
      "tag": "Saab",
-     "text": "*Go home with Skye.*",
+     "text": "*Take him at his word. Go home with Skye.*",
      "set": {
       "s2e7_ride": "saab",
       "rode_saab_home": true,
       "rel.skye.warmth": "+1"
      },
-     "key": "You rode home with Skye.",
+     "key": "You asked Kevin if you could go home with Skye. He told you the truth — he’d like you there, he didn’t need you — and you went with Skye.",
      "journal": [
       {
        "kind": "person",
        "id": "kevin",
        "title": "Kevin Tran",
-       "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Tuesday at four I woke him for Doug. A chair under the knob, then a bell. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’ Sings bass. A real one. Seven years of Vietnamese choir in San Jose — his mother made him. Friday, from the Odyssey: Go home. Sleep. Tell somebody something. Back from San Jose. His mother has a girl from their parish she wants him to call. Clare. She plays the violin in the Mass band. Wednesday he brought two flats of water to the Haiti table, which nobody asked for, and stayed to hold Clare’s violin case. ‘My mother knows your mother.’ Thursday he called Clare. His mother had the number, and his grandmother was on the speaker. She said yes to Sully’s. MLK Day he brought gloves for everybody. Tuesday in the basement he read us the first reading off his BlackBerry. Clare’s going to the Walk for Life, and so is he. He asked me to come — for him. I said yes. At the Walk he met all four of Clare’s brothers, and Skye took them off his hands. He let me ride home with Skye and said he’d lie about it."
+       "text": "Kevin Tran. Goes to daily Mass, saves you a seat with a Bible. Has a sister, Tina, in dental school, who flossed in the womb. Lies to his mom about orgo in Vietnamese. Drives his mother’s Odyssey at sixty-five, not sixty-six. His dad has two nail-salon supply stores in San Jose and has never had a Labor Day. Brought six pairs of gloves to a beach cleanup. Mouthed every word of Joey’s first reading from the second pew. Somebody coached Joey; I can guess who. Brought tea to a wake. His Bà Nội says heaven makes the elephant and heaven makes the grass. Walked Margot down at four in the morning. Handed Lena a roll of quarters for the payphone before she asked. Halloween: All Saints, every one nobody’s heard of — scrubs, a halo and a white mask. He found Laney. Friday night a pre-med said Maine got it right. Kevin answered him and went to get water. Tuesday, the Vietnamese Martyrs: his mother reads eleven of the hundred and seventeen. Asked about the scar. Alarm Five, on the lawn: he had a question mark next to my name on his clipboard. I told Priya I was out. He erased it. Tuesday at four I woke him for Doug. A chair under the knob, then a bell. Wednesday at the Brick, at the next carrel all night: ‘You two have been defending each other for three hours. That isn’t studying.’ Sings bass. A real one. Seven years of Vietnamese choir in San Jose — his mother made him. Friday, from the Odyssey: Go home. Sleep. Tell somebody something. Back from San Jose. His mother has a girl from their parish she wants him to call. Clare. She plays the violin in the Mass band. Wednesday he brought two flats of water to the Haiti table, which nobody asked for, and stayed to hold Clare’s violin case. ‘My mother knows your mother.’ Thursday he called Clare. His mother had the number, and his grandmother was on the speaker. She said yes to Sully’s. MLK Day he brought gloves for everybody. Tuesday in the basement he read us the first reading off his BlackBerry. Clare’s going to the Walk for Life, and so is he. He asked me to come — for him. I said yes. At the Walk he met all four of Clare’s brothers, and Skye took them off his hands. I asked if I could ride home with Skye. He said he didn’t need me, he’d like me — and that was his, not mine. Then he said go, and that he’d lie about it."
       }
      ],
      "response": [
-      "“Go,” Kevin says from the door, while Jack is still looking for the first word. “I’ll lie about it.”",
-      "He would, and he’d be terrible at it; he’d tell Peter something so detailed that Peter would call Jack’s mother. His ears have gone red. He puts a line through Jack’s name, neatly, and beside it, in very small letters, writes *excused*.",
+      "“Go,” Kevin says, while Jack is still looking for the first word. “I’ll lie about it.”",
+      "He would, and he’d be terrible at it; he’d tell Peter something so detailed that Peter would call Jack’s mother. He puts a line through Jack’s name, neatly, and beside it, in very small letters, writes *excused*.",
       "Skye opens the passenger door from the curb side and holds it for him, like a driver at an airport, and Jack gets in."
      ],
      "goto": "s13s"
@@ -355,7 +355,9 @@
     "There was a fight, he tells her. At the van, after she left for the car.",
     "“About?”",
     "“About you,” he says. “Sort of.”",
-    "That’s all he gives her: nothing about whose fight, or what he said in it, or anything that came before the curb. She drives with it. Her thumb doesn’t start again. There’s a name in the car and nobody says it.",
+    "He hears how small that is as soon as it’s out. She hears it too; her thumb doesn’t start again. There’s a name in the car and nobody says it.",
+    "“There’s more,” he says. “There’s Tuesday too. I’m going to tell you. Not in the dark at seventy, with you driving.”",
+    "She keeps her eyes on the road a long moment. “Daylight,” she says, the way she’d write it on a call sheet, and lets it be.",
     "South of Salinas the light goes. The fields on both sides turn blue, and then there are only the long silver lines of the irrigation pipe holding on to the last of it, and then not even those. She reaches over without looking and thumbs through the iPod in the cupholder and puts something on — a guitar, two voices, low and close and hardly there — in place of the next question.",
     "At King City she gets off for gas and goes in to buy, she announces, the worst snacks in the store, on principle. Under the canopy lights the RAZR, which has been in the Carhartt since the plaza, buzzes four times against his ribs.",
     {

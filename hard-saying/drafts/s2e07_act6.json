@@ -1,409 +1,359 @@
 {
-  "scenes": {
-    "s12": {
-      "slug": "SATURDAY · 2:25 PM · THE END OF THE ROUTE — THE VAN AT THE CURB",
-      "set": {
-        "resolve.lena": 3,
-        "rel.lena.friction": "+1",
-        "resolve.jack": "-1"
-      },
-      "body": [
-        "At the end of the route the Walk comes apart into what it was made of. Church groups stand in knots on the sidewalk counting heads. Buses with the names of parishes taped inside their windshields wait three deep at the curb with their engines running, and a man in a Knights of Columbus jacket is folding a banner the length of a living room by himself, corner to corner, very carefully, on the pavement. The sun is low and white on the Bay, and everybody on the curb is squinting.",
-        "Peter has brought the van around from the garage on Washington Street and has it at the curb with its hazards going and its back doors open, and the Newman people are feeding signs into it in stacks. Kevin is down the block saying goodbye to the Dominguez brothers, one long handshake at a time. Skye left a few minutes ago in a cab, to get the Saab out of a garage at the other end of the route. Margot sits on the back bumper with her thermos between her boots, the only one not loading anything.",
-        "Lena is at the side door with the clipboard, counting the van back in, the pencil through the knot of her hair. She does it by face, as she did at five this morning in the dark, and when she gets to him she makes the tick without lifting her eyes. “Thirteen,” she tells the clipboard. Peter comes down the curb on his circuit, and she says, “Joey’s at the Ferry Building, in the restroom. Becca went to get him,” and Peter says, “Ten past,” and goes on to tell the buses.",
-        "For the first time since five this morning neither of them has anything to carry.",
-        "“*Look*,” Kenzie is saying at the back doors, holding her BlackBerry out to Bridget in both hands. “It’s already got twenty-two.” Jack sees it over their shoulders.",
-        {
-          "type": "fb",
-          "name": "Kenzie Rourke",
-          "text": "added 4 new photos to the album Walk for Life SF 2010!! *so proud of our Newman family today!!! CASSIDY FROM SWEETWATER walked with us and stood up for Clare when a guy was screaming at her. God is good <3*",
-          "meta": "Today at 1:58pm via Facebook for BlackBerry · Jack Costigan and Clare Dominguez were tagged"
-        },
-        "His own name is in the gray line at the bottom. Kenzie sees him reading and beams up at him. “I tagged you! I couldn’t tag her. We’re not friends.” Then Bridget wants to see the one of Clare again, and the two of them carry the phone and an armful of signs around to the far side of the van.",
-        "Lena has seen it. Kenzie has been showing it to the curb for ten minutes. She writes something in the margin of the clipboard and says, at an ordinary volume, “It’s a prayer.”",
-        "He looks at her.",
-        "“Thirty-five thousand people walked two miles today for children nobody got to name, and for their mothers.” The pencil goes down the list. “It is not a premiere. And now it’s Cassidy from Sweetwater on Kenzie’s wall, and half of Newman will have liked it before Peter finds the freeway.”",
-        {
-          "if": "s2e6_hale==\"personal\"",
-          "text": "The pencil stops at the bottom of the column. “Some people are very good at keeping quiet,” she says. “You said so.”"
-        },
-        {
-          "if": "s2e6_hale==\"press\"",
-          "text": "The pencil stops at the bottom of the column. “You won on Thursday,” she says. “You win everything in public.”"
-        },
-        {
-          "if": "s2e6_hale==\"concede\"",
-          "text": "The pencil stops at the bottom of the column. “You told Hale I’m usually right,” she says. “I’m right.”"
-        },
-        {
-          "if": "s2e6_hale!=\"personal\" && s2e6_hale!=\"press\" && s2e6_hale!=\"concede\"",
-          "text": "She doesn’t add anything. She lets the post say the rest of it, and waits for him."
-        },
-        "“She didn’t post anything.” He can hear his voice coming up and keeps it where it is. “She wouldn’t. A girl put a phone up at her at the rally and she turned around and gave it the back of her head. I watched her do it. Kenzie posted that.” His hand goes out toward the far side of the van, where Kenzie is. “She drove up here alone at six in the morning to see a thing she doesn’t believe in. She walked two miles of it arguing with me, and she listened — she read those women’s signs, every one, she slowed down for them. And when that guy came off the sidewalk at Clare with a megaphone, she’s the one who stood in front of her.” He looks at the banner pole, leaning against the van’s side with the Newman banner rolled around it. “Which one of us did that?”",
-        "It’s a shot, and it goes in. She was at the banner, turned around with the pole in both hands, a few yards up the road. She isn’t a coward, and they both know it, and it goes in anyway.",
-        "When she looks up from the clipboard, it’s straight at him.",
-        "“You brought your girlfriend to the Walk for Life, Jack.”",
-        "He has a list. She was with a musician a week after Wes; on the last night of break she told him from Louisiana that she was going to fix it with Julian, and *call me after*, which is what you say to a friend; she sends Laney down to the laundry room to do her talking; in the back hall at Sully’s she called Skye a performance and wouldn’t say what she meant. He says none of it. All of it goes into what he does say."
-      ],
-      "choices": [
-        {
-          "tag": "Candor",
-          "text": "*Say it low, so she has to hear every word.*",
-          "set": {
-            "s2e7_nerve": "candor",
-            "soul.honesty": "+1",
-            "said_it_plain_n": "+1"
-          },
-          "key": "At the end of the Walk you asked Lena, low, how she had the nerve to be mad at you. She didn’t answer. She left.",
-          "response": [
-            "He steps in close — close enough that the people at the back doors can’t hear him over the buses, close enough that she has nowhere to look but at him, close enough to see the pencil through her hair and the bitten place on it near the lead. He keeps it low, so she has to stand there and take every word.",
-            "“How do you have the nerve to be mad at me? For any of this?”"
-          ],
-          "goto": "s12a"
-        },
-        {
-          "tag": "Reckless",
-          "text": "*Say it loud enough for the curb.*",
-          "set": {
-            "s2e7_nerve": "reckless",
-            "trait.reckless": "+1",
-            "rel.lena.friction": "+1",
-            "rel.lena.trust": "-1",
-            "resolve.jack": "-1"
-          },
-          "cue": "The whole curb heard it.",
-          "key": "At the end of the Walk you asked Lena, loud enough for the whole curb, how she had the nerve to be mad at you. She didn’t answer. She left.",
-          "response": [
-            "It comes up out of him at the volume of the megaphone an hour ago. In the back of the van a sign slides off the top of the stack and slaps flat on the asphalt, and nobody bends to pick it up.",
-            "“How do you have the nerve to be mad at me? For any of this?”"
-          ],
-          "goto": "s12a"
-        },
-        {
-          "tag": "Control",
-          "text": "*Say it like a fact. Don’t raise your voice.*",
-          "set": {
-            "s2e7_nerve": "control",
-            "trait.control": "+1"
-          },
-          "key": "At the end of the Walk you asked Lena, like a fact, how she had the nerve to be mad at you. She didn’t answer. She left.",
-          "response": [
-            "He keeps his hands in the pockets of the Carhartt. He doesn’t raise his voice, and he doesn’t lower it. He says it level, no louder than the buses, a number off a scoreboard. It has been sitting in him for weeks.",
-            "“How do you have the nerve to be mad at me? For any of this?”"
-          ],
-          "goto": "s12a"
-        },
-        {
-          "tag": "Wit",
-          "text": "*Start with a joke and watch it turn.*",
-          "set": {
-            "s2e7_nerve": "wit",
-            "trait.wit": "+1"
-          },
-          "key": "At the end of the Walk you started with a joke and asked Lena how she had the nerve to be mad at you. She didn’t answer. She left.",
-          "response": [
-            "“You know Peter missed Gilroy,” he says. “And the garage. Twice. He took fourteen people around the same three blocks of Washington Street till Joey started praying for him by name, and out of all fourteen of us, somehow I’m the one who doesn’t know where he’s —” Halfway through it, the joke dies in his mouth, and what was under it all along comes up instead.",
-            "“How do you have the nerve to be mad at me? For any of this?”"
-          ],
-          "goto": "s12a"
-        }
-      ]
+ "scenes": {
+  "s12": {
+   "slug": "SATURDAY · 2:25 PM · THE END OF THE ROUTE — THE VAN AT THE CURB",
+   "set": {
+    "resolve.lena": 3,
+    "rel.lena.friction": "+1",
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "At the end of the route the Walk comes apart into what it was made of. Church groups stand in knots on the sidewalk counting heads. Buses with the names of parishes taped inside their windshields wait three deep at the curb with their engines running, and a man in a Knights of Columbus jacket is folding a banner the length of a living room by himself, corner to corner, very carefully, on the pavement. The sun is low and white on the Bay, and everybody on the curb is squinting.",
+    "Peter has brought the van around from the garage on Washington Street and has it at the curb with its hazards going and its back doors open, and the Newman people are feeding signs into it in stacks. Kevin is down the block saying goodbye to the Dominguez brothers, one long handshake at a time. Skye left a few minutes ago in a cab, to get the Saab out of a garage at the other end of the route. Margot sits on the back bumper with her thermos between her boots, the only one not loading anything.",
+    "Lena is at the side door with the clipboard, counting the van back in, the pencil through the knot of her hair. She does it by face, as she did at five this morning in the dark, and when she gets to him she makes the tick without lifting her eyes. “Thirteen,” she tells the clipboard. Peter comes down the curb on his circuit, and she says, “Joey’s at the Ferry Building, in the restroom. Becca went to get him,” and Peter says, “Ten past,” and goes on to tell the buses.",
+    "For the first time since five this morning neither of them has anything to carry.",
+    "“*Look*,” Kenzie is saying at the back doors, holding her BlackBerry out to Bridget in both hands. “It’s already got twenty-two.” Jack sees it over their shoulders.",
+    {
+     "type": "fb",
+     "name": "Kenzie Rourke",
+     "text": "added 4 new photos to the album Walk for Life SF 2010!! *so proud of our Newman family today!!! CASSIDY FROM SWEETWATER walked with us and stood up for Clare when a guy was screaming at her. God is good <3*",
+     "meta": "Today at 1:58pm via Facebook for BlackBerry · Jack Costigan and Clare Dominguez were tagged"
     },
-    "s12a": {
-      "slug": "SATURDAY · 2:31 PM · THE END OF THE ROUTE — THE VAN AT THE CURB",
-      "set": {
-        "jack_said_nerve": true,
-        "lena_left_walk": true
-      },
-      "body": [
-        {
-          "if": "s2e7_nerve==\"reckless\"",
-          "text": "Every head at the back of the van has turned. Bridget is holding a sign in both hands in front of her like a shield, and on the bumper Margot has stopped with the thermos cup halfway to her mouth."
-        },
-        {
-          "if": "s2e7_nerve!=\"reckless\"",
-          "text": "Behind the van the sign-loading goes on, a stack at a time, nobody turning this way. On the bumper Margot has the thermos cup at her mouth and isn’t drinking from it."
-        },
-        "Lena doesn’t say anything. She has the clipboard flat against her chest with both arms crossed over it, and her mouth opens on something — he sees it come, right there, whatever it is — and closes on it. Her eyes stay on his face. A bus with ST. ANNE’S taped in its windshield pulls out from the curb behind her, and the wind off it moves her hair, and she doesn’t blink.",
-        "And then it turns. Her knuckles go white on the edge of the clipboard, one hand and then the other. Whatever she had in her mouth goes back down, and her chin comes up.",
-        "“Thank you for coming, Jack,” she says.",
-        "She tucks the clipboard under her arm. He doesn’t see which way she goes. He’s looking at his hands, which have nothing in them and have started, at the ends of the fingers, to shake.",
-        "Peter comes back down the curb on his circuit and says, “Ten past,” to Jack, and then gets a look at his face and says it again, more gently, and doesn’t stop to find out why.",
-        "At the back of the van Margot screws the cup onto the thermos, a full turn at a time, and stands up off the bumper, and starts handing signs up into the van with the rest of them."
-      ],
-      "journal": [
-        {
-          "kind": "person",
-          "id": "lena",
-          "title": "Lena Broussard",
-          "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t. On a motel porch above Lucia at three in the morning she told me I can’t say her name like that. She asked what I decided. Not to be the one who wrecks anything, I said. She said okay. Then: me neither. Bought her Mémère a fruitcake from the monks, in exact change. ‘A girl writes the thing she wants first, Youngstown.’ Halloween: Flannery O’Connor, with a stuffed peacock tagged 57. Andalusia. She wouldn’t go past the last house on Seacliff, not even for Laney. ‘I came as her. I never said she was right.’ In the last minute of the extra hour, she put my hat back on. All Souls: she wrote her grandmother’s name in the book, and Nora Calloway’s. Nora was her host at Preview Weekend, in April. That night Wes ended it, on the phone, on the east stairs. He stopped going to Mass in September. There’s a ring. She knew something in September and decided not to notice — she says she’s good at it. At six in the morning she asked me what I’m going to do. She wrote Hale twelve pages in the spring of ’08, two years after the year she yelled at God. She’s had the same postcard the whole time. She knew mine on the porch. She had a house picked out on Zimple Street. A fig tree. She’d picked the paint. Veterans Day, on the bench above Campus Point: St. Martin gave the beggar half his cloak; she says everybody forgets the beggar took it. No. 9 for the reliquary. Friday the 13th, under the eucalyptus, in the middle of a sentence about monarchs: Julian asked her to dinner. So. Thursday night in the basement she played the piano properly — around the dead F. The last time she played it right in front of anybody was a November, four years ago. If you play well, she says, people ask you to play. Reading *New Moon* out of spite. Friday she signed the Manhattan Declaration from bed, with a cold. Two soups. She ate Julian’s. Mine’s on the sill for tomorrow. Ate Gloria’s soup cold out of the quart, at the sill, at six in the morning. Argued YES: a promise is made to a person, not to a reason. Wrote on my paper that I don’t believe one sentence of it. Neither does she. Mémère is lighting a candle for Nonna — the whole name. Half a name is half a candle. At the airport: Our Lady of Prompt Succor, for Nonna. She works fast. Thanksgiving: Theo said *pop* to the whole Broussard table. She asked about Theo, and Nonna, and her saint. Julian called during grace. Wes was in the kitchen. ‘Go back to your family, Youngstown.’ Handed Julian the bell rope at Sully’s. Knows I don’t work Mondays. Texted at two in the morning about Yusuf’s mother. On the lawn at four, looking at the place I wasn’t. Came to the Anchor at the end of my shift in Kevin’s car — Julian’s in Oakland, his brother’s home from the Navy. She has a paper. St. Nicholas Eve: Walgreens at half past one. I told her about Ma’s two hundred shoes; she said then we’re doing it, and we did every door in Delgado. Says I hold my phone like a hand of cards. Asked where I go. I said sometime. She said okay. Book Nine, for her Greek final: *Outis*. Nobody. In the laundry room she stepped back first. ‘Don’t make me be the one who wrecks something.’ Julian’s writing something she can’t hear yet. Twelve and oh in overtime. Her free hand found Kevin. Knows Book Nine by heart; asked me to pray at eight. Picked my best argument at the Brick: what a man says yes to. Put her phone face up next to mine and said nothing. Heard Julian’s song before anybody. ‘It’s good, Jack. It’s really good.’ Told me not to leave in the second chorus. The Advent party: I kept the whole room between us all night. She brought coffee to the white elephant, and I got it. Stole my 8-Ball. Won an argument about ‘Joy to the World’ with Isaac Watts. Didn’t play. Julian did. Friday night, half past twelve, she knocked on 412; Theo said the library. At the Mañanitas she told me about Juan Diego, who took the long way around the hill. Thirteen and oh. She texted me the number. After the Gaudete Mass she asked the 8-Ball something. Better not tell you now. Geminids from the roof without me. At Hale’s oral she’d answered him in Augustine — said my sentence was his. She defended it and won, and told him to ask where I say yes at two in the morning. Julian kissed her goodbye at his car; he’s going to New Orleans for New Year’s. Friday she knocked with two coffees and a list of every place. She played the basement piano for me, properly. Taught me a secret in the O Antiphons. Pecan at Gloria’s counter; fourteen and oh is ordained. On the Lighthouse porch she said it plain: I’d never not answered her before. Never missed Sully’s. Always came to her, whatever it was — and now I stay away. She knows something’s hurting. She didn’t make me say what. Walked past the last house to the Point for the first time all semester. The bonfires on the levee on Christmas Eve — call her from the garage. On the roof I nearly said it. The 8-Ball said ask again later. She gave me the tin to keep. I gave her Benedict. At the checkpoint she turned around and said something I couldn’t hear. Christmas week: her sister had the baby in the third quarter of the Dallas game, while they were still undefeated, so Beau didn’t get a vote. Lucille Odile — both grandmothers. Lena’s the godmother. Then they lost. The 8-Ball said very doubtful. She texts me the O Antiphons at dusk. Monday night she called at ten to one to argue about Pius, and won the point fair. I told her I’ve been sleeping in Danny’s bed. She said somebody ought to. When the Pope went down she texted within the minute: is he alright, are you. Christmas Eve she held the phone up to a bonfire on the levee so I could hear it burn. After Midnight Mass she wrote from the steps of Holy Rosary: an hour behind me, like she said. She’d mailed me *The Moviegoer* before the last night. Christmas night she told me how Réveillon went, and about the place her mother sets for her grandmother. Then she said her mama worked at Memorial. Nothing else. Holy Family: they lost to Tampa in overtime — ‘They’re resting.’ Fr. Dom took the short form; hers read the long one, and we’re not discussing it. Sunday night we whispered for two hours because Nonna was asleep in her chair, and she whispered too, from her back steps. I read her her own margins; she argued with the girl who wrote them. I told her Dad went in. ‘And Danny drank it.’ Julian calls at ten his time. Tuesday she called from behind the register at her father’s market — home field; her father’s making the musician a gumbo. I told her what Danny asked about the third. If Pop won’t get out of the truck, she says, I get in. She said she wouldn’t call as much. Then she said she’d call. Wednesday nothing. Thursday at dawn, the morning after Julian landed, she called from the river with beignets. She said she’d call. She asked if I asked Ma who the candle was for. No. You don’t. New Year’s Eve she texted at my midnight, an hour early for her. At hers it came the second the year turned — before the fireworks. I know what that means. Then the river on fire, and Julian beside it. New Year’s Day I called her from the garage at the half, and she said, You called *me*. Saturday night she called the house — Ma answered and talked to her for ten minutes. Two hours on the kitchen phone, her mother’s cordless dying twice. Her grandmother made the christening gown for Luc in 1985; it rode out the storm in Mémère’s cedar chest in Breaux Bridge. She had me be the priest so she could practice the promises. She thinks Binx doesn’t stop looking — he stops looking by himself. I told her Danny asked me something I can’t answer yet; she didn’t ask what. She asked how California was. ‘Come back, Youngstown.’ Two hours, and she never said Julian’s name. Lucille was baptized in the third quarter, and she didn’t get one word wrong. After that I called every night. Twelfth Night she got the baby in the king cake. Friday she said she hasn’t been fair to Julian, and she’s going to fix it. Sunday she landed: come find me tomorrow. Monday I couldn’t find her — not at 217, not at the twelve-ten. She came into Hale’s seminar a step behind him with a king cake, and the only chair left was next to mine. She was polite to me for fifteen minutes. Then Dido. Tuesday morning Julian put up a picture from their dinner Monday — birthday dinner, two days late. She’s tagged. She’d said call me after. I didn’t. At the mailboxes she asked about my break, and I told her as far as Denver, and Ma’s words about the coffee. ‘Tell her I’m glad.’ The baptism was lovely. Tuesday night at St. Brendan’s she had the whole thing organized by half past eight, in a whisper, and put me on the table with Becca. When the TV said trapped she left the room. Julian went. Wednesday at the table she met Skye. She said no pictures at the table, and I argued with her about it in front of everybody. That night at the desk: Skye’s envelope was the biggest. ‘Tell her thank you. From Newman.’ Thursday she took the far end of Hale’s table before anybody got there. She moved the Saints to Sully’s. Saturday in the back hall she said she changed her mind, and stood up for Laney, and said Skye gave a good performance, and wouldn’t say what she meant. At Atlanta she kept my chair till the half. At ten after three she told me the time. Wednesday at three in the morning, the aftershock, in the Fishbowl: she said I could stop whatever I’m doing. I don’t know what I’m doing. Thursday Hale read her whole name off his list. She told him Lena. Saturday she ran the van to San Francisco. Six hours, row three. She asked me if I was happy. I said yes. At the end of the Walk I asked her how she had the nerve to be mad at me. She didn’t answer. She thanked me for coming and left.",
-          "if": "s2e6_3am==\"in\""
-        },
-        {
-          "kind": "person",
-          "id": "lena",
-          "title": "Lena Broussard",
-          "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t. On a motel porch above Lucia at three in the morning she told me I can’t say her name like that. She asked what I decided. Not to be the one who wrecks anything, I said. She said okay. Then: me neither. Bought her Mémère a fruitcake from the monks, in exact change. ‘A girl writes the thing she wants first, Youngstown.’ Halloween: Flannery O’Connor, with a stuffed peacock tagged 57. Andalusia. She wouldn’t go past the last house on Seacliff, not even for Laney. ‘I came as her. I never said she was right.’ In the last minute of the extra hour, she put my hat back on. All Souls: she wrote her grandmother’s name in the book, and Nora Calloway’s. Nora was her host at Preview Weekend, in April. That night Wes ended it, on the phone, on the east stairs. He stopped going to Mass in September. There’s a ring. She knew something in September and decided not to notice — she says she’s good at it. At six in the morning she asked me what I’m going to do. She wrote Hale twelve pages in the spring of ’08, two years after the year she yelled at God. She’s had the same postcard the whole time. She knew mine on the porch. She had a house picked out on Zimple Street. A fig tree. She’d picked the paint. Veterans Day, on the bench above Campus Point: St. Martin gave the beggar half his cloak; she says everybody forgets the beggar took it. No. 9 for the reliquary. Friday the 13th, under the eucalyptus, in the middle of a sentence about monarchs: Julian asked her to dinner. So. Thursday night in the basement she played the piano properly — around the dead F. The last time she played it right in front of anybody was a November, four years ago. If you play well, she says, people ask you to play. Reading *New Moon* out of spite. Friday she signed the Manhattan Declaration from bed, with a cold. Two soups. She ate Julian’s. Mine’s on the sill for tomorrow. Ate Gloria’s soup cold out of the quart, at the sill, at six in the morning. Argued YES: a promise is made to a person, not to a reason. Wrote on my paper that I don’t believe one sentence of it. Neither does she. Mémère is lighting a candle for Nonna — the whole name. Half a name is half a candle. At the airport: Our Lady of Prompt Succor, for Nonna. She works fast. Thanksgiving: Theo said *pop* to the whole Broussard table. She asked about Theo, and Nonna, and her saint. Julian called during grace. Wes was in the kitchen. ‘Go back to your family, Youngstown.’ Handed Julian the bell rope at Sully’s. Knows I don’t work Mondays. Texted at two in the morning about Yusuf’s mother. On the lawn at four, looking at the place I wasn’t. Came to the Anchor at the end of my shift in Kevin’s car — Julian’s in Oakland, his brother’s home from the Navy. She has a paper. St. Nicholas Eve: Walgreens at half past one. I told her about Ma’s two hundred shoes; she said then we’re doing it, and we did every door in Delgado. Says I hold my phone like a hand of cards. Asked where I go. I said sometime. She said okay. Book Nine, for her Greek final: *Outis*. Nobody. In the laundry room she stepped back first. ‘Don’t make me be the one who wrecks something.’ Julian’s writing something she can’t hear yet. Twelve and oh in overtime. Her free hand found Kevin. Knows Book Nine by heart; asked me to pray at eight. Picked my best argument at the Brick: what a man says yes to. Put her phone face up next to mine and said nothing. Heard Julian’s song before anybody. ‘It’s good, Jack. It’s really good.’ Told me not to leave in the second chorus. The Advent party: I kept the whole room between us all night. She brought coffee to the white elephant, and I got it. Stole my 8-Ball. Won an argument about ‘Joy to the World’ with Isaac Watts. Didn’t play. Julian did. Friday night, half past twelve, she knocked on 412; Theo said the library. At the Mañanitas she told me about Juan Diego, who took the long way around the hill. Thirteen and oh. She texted me the number. After the Gaudete Mass she asked the 8-Ball something. Better not tell you now. Geminids from the roof without me. At Hale’s oral she’d answered him in Augustine — said my sentence was his. She defended it and won, and told him to ask where I say yes at two in the morning. Julian kissed her goodbye at his car; he’s going to New Orleans for New Year’s. Friday she knocked with two coffees and a list of every place. She played the basement piano for me, properly. Taught me a secret in the O Antiphons. Pecan at Gloria’s counter; fourteen and oh is ordained. On the Lighthouse porch she said it plain: I’d never not answered her before. Never missed Sully’s. Always came to her, whatever it was — and now I stay away. She knows something’s hurting. She didn’t make me say what. Walked past the last house to the Point for the first time all semester. The bonfires on the levee on Christmas Eve — call her from the garage. On the roof I nearly said it. The 8-Ball said ask again later. She gave me the tin to keep. I gave her Benedict. At the checkpoint she turned around and said something I couldn’t hear. Christmas week: her sister had the baby in the third quarter of the Dallas game, while they were still undefeated, so Beau didn’t get a vote. Lucille Odile — both grandmothers. Lena’s the godmother. Then they lost. The 8-Ball said very doubtful. She texts me the O Antiphons at dusk. Monday night she called at ten to one to argue about Pius, and won the point fair. I told her I’ve been sleeping in Danny’s bed. She said somebody ought to. When the Pope went down she texted within the minute: is he alright, are you. Christmas Eve she held the phone up to a bonfire on the levee so I could hear it burn. After Midnight Mass she wrote from the steps of Holy Rosary: an hour behind me, like she said. She’d mailed me *The Moviegoer* before the last night. Christmas night she told me how Réveillon went, and about the place her mother sets for her grandmother. Then she said her mama worked at Memorial. Nothing else. Holy Family: they lost to Tampa in overtime — ‘They’re resting.’ Fr. Dom took the short form; hers read the long one, and we’re not discussing it. Sunday night we whispered for two hours because Nonna was asleep in her chair, and she whispered too, from her back steps. I read her her own margins; she argued with the girl who wrote them. I told her Dad went in. ‘And Danny drank it.’ Julian calls at ten his time. Tuesday she called from behind the register at her father’s market — home field; her father’s making the musician a gumbo. I told her what Danny asked about the third. If Pop won’t get out of the truck, she says, I get in. She said she wouldn’t call as much. Then she said she’d call. Wednesday nothing. Thursday at dawn, the morning after Julian landed, she called from the river with beignets. She said she’d call. She asked if I asked Ma who the candle was for. No. You don’t. New Year’s Eve she texted at my midnight, an hour early for her. At hers it came the second the year turned — before the fireworks. I know what that means. Then the river on fire, and Julian beside it. New Year’s Day I called her from the garage at the half, and she said, You called *me*. Saturday night she called the house — Ma answered and talked to her for ten minutes. Two hours on the kitchen phone, her mother’s cordless dying twice. Her grandmother made the christening gown for Luc in 1985; it rode out the storm in Mémère’s cedar chest in Breaux Bridge. She had me be the priest so she could practice the promises. She thinks Binx doesn’t stop looking — he stops looking by himself. I told her Danny asked me something I can’t answer yet; she didn’t ask what. She asked how California was. ‘Come back, Youngstown.’ Two hours, and she never said Julian’s name. Lucille was baptized in the third quarter, and she didn’t get one word wrong. After that I called every night. Twelfth Night she got the baby in the king cake. Friday she said she hasn’t been fair to Julian, and she’s going to fix it. Sunday she landed: come find me tomorrow. Monday I couldn’t find her — not at 217, not at the twelve-ten. She came into Hale’s seminar a step behind him with a king cake, and the only chair left was next to mine. She was polite to me for fifteen minutes. Then Dido. Tuesday morning Julian put up a picture from their dinner Monday — birthday dinner, two days late. She’s tagged. She’d said call me after. I didn’t. At the mailboxes she asked about my break, and I told her as far as Denver, and Ma’s words about the coffee. ‘Tell her I’m glad.’ The baptism was lovely. Tuesday night at St. Brendan’s she had the whole thing organized by half past eight, in a whisper, and put me on the table with Becca. When the TV said trapped she left the room. Julian went. Wednesday at the table she met Skye. She said no pictures at the table, and I argued with her about it in front of everybody. That night at the desk: Skye’s envelope was the biggest. ‘Tell her thank you. From Newman.’ Thursday she took the far end of Hale’s table before anybody got there. She moved the Saints to Sully’s. Saturday in the back hall she said she changed her mind, and stood up for Laney, and said Skye gave a good performance, and wouldn’t say what she meant. At Atlanta she kept my chair till the half. At ten after three she told me the time. Wednesday at three in the morning she was alone in the Fishbowl with the news, and when she saw me she turned it off. Thursday Hale read her whole name off his list. She told him Lena. Saturday she ran the van to San Francisco. Six hours, row three. She asked me if I was happy. I said yes. At the end of the Walk I asked her how she had the nerve to be mad at me. She didn’t answer. She thanked me for coming and left.",
-          "if": "s2e6_3am==\"door\""
-        },
-        {
-          "kind": "person",
-          "id": "lena",
-          "title": "Lena Broussard",
-          "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t. On a motel porch above Lucia at three in the morning she told me I can’t say her name like that. She asked what I decided. Not to be the one who wrecks anything, I said. She said okay. Then: me neither. Bought her Mémère a fruitcake from the monks, in exact change. ‘A girl writes the thing she wants first, Youngstown.’ Halloween: Flannery O’Connor, with a stuffed peacock tagged 57. Andalusia. She wouldn’t go past the last house on Seacliff, not even for Laney. ‘I came as her. I never said she was right.’ In the last minute of the extra hour, she put my hat back on. All Souls: she wrote her grandmother’s name in the book, and Nora Calloway’s. Nora was her host at Preview Weekend, in April. That night Wes ended it, on the phone, on the east stairs. He stopped going to Mass in September. There’s a ring. She knew something in September and decided not to notice — she says she’s good at it. At six in the morning she asked me what I’m going to do. She wrote Hale twelve pages in the spring of ’08, two years after the year she yelled at God. She’s had the same postcard the whole time. She knew mine on the porch. She had a house picked out on Zimple Street. A fig tree. She’d picked the paint. Veterans Day, on the bench above Campus Point: St. Martin gave the beggar half his cloak; she says everybody forgets the beggar took it. No. 9 for the reliquary. Friday the 13th, under the eucalyptus, in the middle of a sentence about monarchs: Julian asked her to dinner. So. Thursday night in the basement she played the piano properly — around the dead F. The last time she played it right in front of anybody was a November, four years ago. If you play well, she says, people ask you to play. Reading *New Moon* out of spite. Friday she signed the Manhattan Declaration from bed, with a cold. Two soups. She ate Julian’s. Mine’s on the sill for tomorrow. Ate Gloria’s soup cold out of the quart, at the sill, at six in the morning. Argued YES: a promise is made to a person, not to a reason. Wrote on my paper that I don’t believe one sentence of it. Neither does she. Mémère is lighting a candle for Nonna — the whole name. Half a name is half a candle. At the airport: Our Lady of Prompt Succor, for Nonna. She works fast. Thanksgiving: Theo said *pop* to the whole Broussard table. She asked about Theo, and Nonna, and her saint. Julian called during grace. Wes was in the kitchen. ‘Go back to your family, Youngstown.’ Handed Julian the bell rope at Sully’s. Knows I don’t work Mondays. Texted at two in the morning about Yusuf’s mother. On the lawn at four, looking at the place I wasn’t. Came to the Anchor at the end of my shift in Kevin’s car — Julian’s in Oakland, his brother’s home from the Navy. She has a paper. St. Nicholas Eve: Walgreens at half past one. I told her about Ma’s two hundred shoes; she said then we’re doing it, and we did every door in Delgado. Says I hold my phone like a hand of cards. Asked where I go. I said sometime. She said okay. Book Nine, for her Greek final: *Outis*. Nobody. In the laundry room she stepped back first. ‘Don’t make me be the one who wrecks something.’ Julian’s writing something she can’t hear yet. Twelve and oh in overtime. Her free hand found Kevin. Knows Book Nine by heart; asked me to pray at eight. Picked my best argument at the Brick: what a man says yes to. Put her phone face up next to mine and said nothing. Heard Julian’s song before anybody. ‘It’s good, Jack. It’s really good.’ Told me not to leave in the second chorus. The Advent party: I kept the whole room between us all night. She brought coffee to the white elephant, and I got it. Stole my 8-Ball. Won an argument about ‘Joy to the World’ with Isaac Watts. Didn’t play. Julian did. Friday night, half past twelve, she knocked on 412; Theo said the library. At the Mañanitas she told me about Juan Diego, who took the long way around the hill. Thirteen and oh. She texted me the number. After the Gaudete Mass she asked the 8-Ball something. Better not tell you now. Geminids from the roof without me. At Hale’s oral she’d answered him in Augustine — said my sentence was his. She defended it and won, and told him to ask where I say yes at two in the morning. Julian kissed her goodbye at his car; he’s going to New Orleans for New Year’s. Friday she knocked with two coffees and a list of every place. She played the basement piano for me, properly. Taught me a secret in the O Antiphons. Pecan at Gloria’s counter; fourteen and oh is ordained. On the Lighthouse porch she said it plain: I’d never not answered her before. Never missed Sully’s. Always came to her, whatever it was — and now I stay away. She knows something’s hurting. She didn’t make me say what. Walked past the last house to the Point for the first time all semester. The bonfires on the levee on Christmas Eve — call her from the garage. On the roof I nearly said it. The 8-Ball said ask again later. She gave me the tin to keep. I gave her Benedict. At the checkpoint she turned around and said something I couldn’t hear. Christmas week: her sister had the baby in the third quarter of the Dallas game, while they were still undefeated, so Beau didn’t get a vote. Lucille Odile — both grandmothers. Lena’s the godmother. Then they lost. The 8-Ball said very doubtful. She texts me the O Antiphons at dusk. Monday night she called at ten to one to argue about Pius, and won the point fair. I told her I’ve been sleeping in Danny’s bed. She said somebody ought to. When the Pope went down she texted within the minute: is he alright, are you. Christmas Eve she held the phone up to a bonfire on the levee so I could hear it burn. After Midnight Mass she wrote from the steps of Holy Rosary: an hour behind me, like she said. She’d mailed me *The Moviegoer* before the last night. Christmas night she told me how Réveillon went, and about the place her mother sets for her grandmother. Then she said her mama worked at Memorial. Nothing else. Holy Family: they lost to Tampa in overtime — ‘They’re resting.’ Fr. Dom took the short form; hers read the long one, and we’re not discussing it. Sunday night we whispered for two hours because Nonna was asleep in her chair, and she whispered too, from her back steps. I read her her own margins; she argued with the girl who wrote them. I told her Dad went in. ‘And Danny drank it.’ Julian calls at ten his time. Tuesday she called from behind the register at her father’s market — home field; her father’s making the musician a gumbo. I told her what Danny asked about the third. If Pop won’t get out of the truck, she says, I get in. She said she wouldn’t call as much. Then she said she’d call. Wednesday nothing. Thursday at dawn, the morning after Julian landed, she called from the river with beignets. She said she’d call. She asked if I asked Ma who the candle was for. No. You don’t. New Year’s Eve she texted at my midnight, an hour early for her. At hers it came the second the year turned — before the fireworks. I know what that means. Then the river on fire, and Julian beside it. New Year’s Day I called her from the garage at the half, and she said, You called *me*. Saturday night she called the house — Ma answered and talked to her for ten minutes. Two hours on the kitchen phone, her mother’s cordless dying twice. Her grandmother made the christening gown for Luc in 1985; it rode out the storm in Mémère’s cedar chest in Breaux Bridge. She had me be the priest so she could practice the promises. She thinks Binx doesn’t stop looking — he stops looking by himself. I told her Danny asked me something I can’t answer yet; she didn’t ask what. She asked how California was. ‘Come back, Youngstown.’ Two hours, and she never said Julian’s name. Lucille was baptized in the third quarter, and she didn’t get one word wrong. After that I called every night. Twelfth Night she got the baby in the king cake. Friday she said she hasn’t been fair to Julian, and she’s going to fix it. Sunday she landed: come find me tomorrow. Monday I couldn’t find her — not at 217, not at the twelve-ten. She came into Hale’s seminar a step behind him with a king cake, and the only chair left was next to mine. She was polite to me for fifteen minutes. Then Dido. Tuesday morning Julian put up a picture from their dinner Monday — birthday dinner, two days late. She’s tagged. She’d said call me after. I didn’t. At the mailboxes she asked about my break, and I told her as far as Denver, and Ma’s words about the coffee. ‘Tell her I’m glad.’ The baptism was lovely. Tuesday night at St. Brendan’s she had the whole thing organized by half past eight, in a whisper, and put me on the table with Becca. When the TV said trapped she left the room. Julian went. Wednesday at the table she met Skye. She said no pictures at the table, and I argued with her about it in front of everybody. That night at the desk: Skye’s envelope was the biggest. ‘Tell her thank you. From Newman.’ Thursday she took the far end of Hale’s table before anybody got there. She moved the Saints to Sully’s. Saturday in the back hall she said she changed her mind, and stood up for Laney, and said Skye gave a good performance, and wouldn’t say what she meant. At Atlanta she kept my chair till the half. At ten after three she told me the time. Wednesday at three in the morning she was in the Fishbowl with the news. I kept walking. Thursday Hale read her whole name off his list. She told him Lena. Saturday she ran the van to San Francisco. Six hours, row three. She asked me if I was happy. I said yes. At the end of the Walk I asked her how she had the nerve to be mad at me. She didn’t answer. She thanked me for coming and left.",
-          "if": "s2e6_3am!=\"in\" && s2e6_3am!=\"door\""
-        }
-      ],
-      "next": "s12b"
+    "His own name is in the gray line at the bottom. Kenzie sees him reading and beams up at him. “I tagged you! I couldn’t tag her. We’re not friends.” Then Bridget wants to see the one of Clare again, and the two of them carry the phone and an armful of signs around to the far side of the van.",
+    "Lena has seen it. Kenzie has been showing it to the curb for ten minutes. She writes something in the margin of the clipboard and says, at an ordinary volume, “It’s a prayer.”",
+    "He looks at her.",
+    "“Thirty-five thousand people walked two miles today for children nobody got to name, and for their mothers.” The pencil goes down the list. “It is not a premiere. And now it’s Cassidy from Sweetwater on Kenzie’s wall, and half of Newman will have liked it before Peter finds the freeway.”",
+    "The pencil stops at the bottom of the column. “Some people are very good at keeping quiet,” she says. “You said so.”",
+    "“She didn’t post anything.” He can hear his voice coming up and keeps it where it is. “She wouldn’t. A girl put a phone up at her at the rally and she turned around and gave it the back of her head. I watched her do it. Kenzie posted that.” His hand goes out toward the far side of the van, where Kenzie is. “She drove up here alone at six in the morning to see a thing she doesn’t believe in. She walked two miles of it arguing with me, and she listened — she read those women’s signs, every one, she slowed down for them. And when that guy came off the sidewalk at Clare with a megaphone, she’s the one who stood in front of her.” He looks at the banner pole, leaning against the van’s side with the Newman banner rolled around it. “Which one of us did that?”",
+    "It’s a shot, and it goes in. She was at the banner, turned around with the pole in both hands, a few yards up the road. She isn’t a coward, and they both know it, and it goes in anyway.",
+    "When she looks up from the clipboard, it’s straight at him.",
+    "“You brought your girlfriend to the Walk for Life, Jack.”",
+    "He has a list. She was with a musician a week after Wes; on the last night of break she told him from Louisiana that she was going to fix it with Julian, and *call me after*, which is what you say to a friend; she sends Laney down to the laundry room to do her talking; in the back hall at Sully’s she called Skye a performance and wouldn’t say what she meant. He doesn’t understand her any better than he did at Christmas. The difference is that he’s done holding the door open while he waits to. He says none of it. All of it goes into what he does say."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "*Say it low, so she has to hear every word.*",
+     "set": {
+      "s2e7_nerve": "candor",
+      "soul.honesty": "+1",
+      "said_it_plain_n": "+1"
+     },
+     "key": "At the end of the Walk you asked Lena, low, how she had the nerve to be mad at you. She didn’t answer. She left.",
+     "response": [
+      "He steps in close — close enough that the people at the back doors can’t hear him over the buses, close enough that she has nowhere to look but at him, close enough to see the pencil through her hair and the bitten place on it near the lead. He keeps it low, so she has to stand there and take every word.",
+      "“How do you have the nerve to be mad at me? For any of this?”"
+     ],
+     "goto": "s12a"
     },
-    "s14": {
-      "slug": "SUNDAY · 12:10 AM · ST. BRENDAN’S LOT — THE VAN COMES HOME",
-      "body": [
-        {
-          "if": "s2e7_ride==\"van\"",
-          "text": "The van turns in off Ocean Road and rocks to a stop under the lot’s one sodium light, where it stood at five this morning with its side door open and everybody’s breath showing. The door rolls back. He gets out last, behind the signs."
-        },
-        {
-          "if": "s2e7_ride!=\"van\"",
-          "text": "He walked down from Delgado at a quarter to twelve. He’s at the edge of the lot with his hands in the Carhartt, in dry jeans, his hair still stiff with salt, when the van turns in off Ocean Road and rocks to a stop under the sodium light, where it stood at five this morning with everybody’s breath showing."
-        },
-        "They come off it the way people come off six hours. Joey, asleep on his feet, steered by the elbow. Becca with the long red knitting rolled under her arm, lifting a hand to Jack as she passes. Peter, stiff, unlocking the hall with a ring of keys the size of a saucer.",
-        "Lena comes down off the front step with the clipboard against her chest and starts across the lot toward Ocean Road, toward Delgado, and he’s standing in the way of it. She doesn’t go around him. She goes past, near enough that he hears the clip of the clipboard tick against a button on her peacoat, and she doesn’t look at him, and he doesn’t say her name. Then there’s just the lot, and the sodium light, and the smell of the van’s hot brakes.",
-        "At the side door Kevin says goodnight to Clare. He puts his hand out and she takes it, and they shake, up and down, and it goes on past where a handshake ends and wants very much to turn into something else and doesn’t find out what. Kevin’s ears go red under the sodium light. “Night, Kevin,” Clare says, and shoulders the backpack of signs, and crosses the lot toward the dorms.",
-        "Jack carries signs into the hall for Kevin until there aren’t any. When he comes back out for the cooler, Kevin and Peter are arguing in whispers over the clipboard about whether a sign is missing, and he goes and sits on the low wall by the side door, under the olive tree, to wait.",
-        "It’s waiting for him there. It starts in his fingers, which want something to do; then in his mouth, the taste of it arriving ahead of the thing. His own pack is in the inside pocket of the Carhartt, with the lighter. The tin is in the other pocket, and it isn’t his.",
-        {
-          "if": "jack_cigs_jf>=2",
-          "text": "The last one was Wednesday’s, in the roof door at Delgado with the rain coming in on his knees."
-        },
-        {
-          "if": "jack_cigs_jf<2",
-          "text": "The last one was on the front steps of this church a week ago, ten minutes before confession, and it was the first since New Year’s."
-        },
-        "The olive tree moves a little over him. Across the courtyard a light is on in the rectory, upstairs. His hand is inside the jacket."
-      ],
-      "choices": [
-        {
-          "tag": "Reckless",
-          "text": "*Light one.*",
-          "set": {
-            "s2e7_smoke": "reckless",
-            "jack_cigs": "+1",
-            "jack_cigs_jf": "+1",
-            "trait.reckless": "+1",
-            "resolve.jack": "-1"
-          },
-          "key": "After the van came home, you lit one.",
-          "response": [
-            "He lights it on the low wall under the olive tree with his back to the church. The first drag is the one he wanted, and the rest of it is just smoking. He smokes it to the filter anyway, looking at the lot where the van is, and pinches it out against the stone and puts the end in his pocket.",
-            "Kevin comes out with the cooler and stops on the step, and sniffs, and says nothing about it, and hands him one end."
-          ],
-          "goto": "s15"
-        },
-        {
-          "tag": "Restraint",
-          "text": "*Put it back.*",
-          "set": {
-            "s2e7_smoke": "restraint",
-            "trait.control": "+1"
-          },
-          "key": "After the van came home, you put the pack back.",
-          "response": [
-            "He pushes the pack back down below the lighter and zips the Carhartt to the throat over it, and sits on the wall with his hands laced in his lap until Kevin comes out with the cooler.",
-            "He takes one end of it. They carry it into the hall together, and Kevin tells him, in a whisper, because it’s after midnight in a church, that the missing sign was in the van the whole time, under Joey."
-          ],
-          "goto": "s15"
-        },
-        {
-          "tag": "Sincerity",
-          "text": "*Open the tin. Count them.*",
-          "set": {
-            "s2e7_smoke": "count",
-            "trait.sincerity": "+1"
-          },
-          "key": "After the van came home, you counted her eleven.",
-          "response": [
-            "He takes the tin out instead and opens it on his knee under the olive tree. RELIQUARY on the lid, in her hand. He counts with one finger.",
-            "Eleven. It was eleven in December. It has been eleven every time he’s opened it since, and what he sits there counting isn’t the cigarettes. It’s that the number hasn’t moved.",
-            "He shuts the lid and holds it shut until Kevin comes out with the cooler."
-          ],
-          "goto": "s15"
-        }
-      ]
+    {
+     "tag": "Reckless",
+     "text": "*Say it loud enough for the curb.*",
+     "set": {
+      "s2e7_nerve": "reckless",
+      "trait.reckless": "+1",
+      "rel.lena.friction": "+1",
+      "rel.lena.trust": "-1",
+      "resolve.jack": "-1"
+     },
+     "cue": "The whole curb heard it.",
+     "key": "At the end of the Walk you asked Lena, loud enough for the whole curb, how she had the nerve to be mad at you. She didn’t answer. She left.",
+     "response": [
+      "It comes up out of him at the volume of the megaphone an hour ago. In the back of the van a sign slides off the top of the stack and slaps flat on the asphalt, and nobody bends to pick it up.",
+      "“How do you have the nerve to be mad at me? For any of this?”"
+     ],
+     "goto": "s12a"
     },
-    "s19": {
-      "slug": "SUNDAY · 10:05 PM · DELGADO HALL, THE CURB → 412",
-      "set": {
-        "saw_lena_table_pic": true,
-        "told_theo_stop_julian": true
-      },
-      "body": [
-        "She drops him at the Delgado curb at ten, because he has an eight o’clock, and the Saab goes off up the street and around the corner at the end of it. He took the RAZR out of her glove box when he got out. He turned it off at one o’clock, at the truck, and put it in there himself, and hasn’t thought about it since.",
-        "The street is Sunday-night empty, the lit windows of Delgado going up over him in rows. Somewhere off toward Mission Street a car horn is still going, on and off since a little after seven, in the rhythm of a chant he knows the words to. He turns the phone on under the streetlight. It thinks it over. After that the day comes in all at once, in order.",
-        {
-          "type": "sms",
-          "from": "Theo",
-          "text": "he’s at the taco truck. repeat taco truck",
-          "time": "1:04 PM"
-        },
-        {
-          "type": "sms",
-          "from": "Theo",
-          "text": "Disregard.",
-          "time": "1:05 PM"
-        },
-        {
-          "type": "sms",
-          "from": "Theo",
-          "text": "Broussard asked where you were. Kenzie said a taco truck.",
-          "time": "1:31 PM"
-        },
-        "The first one wasn’t meant for him; Theo was drunk by one o’clock, which at Sully’s on a playoff Sunday is a reasonable time to be drunk. The third one he stands still for, on the curb. So she knew before kickoff.",
-        {
-          "type": "sms",
-          "from": "Theo",
-          "text": "Kickoff. I am being correct. Dale has asked Broussard to sit down twice. She has not.",
-          "time": "3:41 PM"
-        },
-        {
-          "type": "sms",
-          "from": "Theo",
-          "text": "PORTER.",
-          "time": "7:04 PM"
-        },
-        {
-          "type": "sms",
-          "from": "Frank",
-          "text": "WHO DAT",
-          "time": "7:23 PM"
-        },
-        "Under his father’s there’s a picture message, 7:24, from Theo, with nothing written on it. The RAZR drinks it through a straw, a band at a time from the top down, and when it’s done it’s the size of a stamp, and he tilts it to the streetlight to see.",
-        "Sully’s, from the floor. Lena is standing on the long table under the brass ship’s bell with the rope in both hands, her mouth wide open on a sound he can’t hear, and the bar is under her with its arms up, and Laney has both arms locked around her knees to keep her up there, and every face in the picture is turned up to her.",
-        "It’s the happiest he has ever seen her, and he’s seeing it on a curb, from Theo, the size of a stamp, and every part of him he has spent the week keeping out of that room gets up at once and wants to be under that table.",
-        "The pack is in the inside pocket where it always is. He leaves it there. He closes the phone with the picture still in it.",
-        {
-          "type": "sms",
-          "from": "Gina",
-          "text": "ma says tell lena CONGRATULATIONS",
-          "time": "7:31 PM"
-        },
-        {
-          "type": "sms",
-          "from": "Gina",
-          "text": "and that she lit a candle for the kicker",
-          "time": "7:32 PM"
-        },
-        "He doesn’t answer Gina.",
-        "Theo comes in at twenty to eleven, hoarse, in the black-and-gold scarf, with beer on one sleeve of the blazer and the day still on him. He sits down on his bed in all of it.",
-        "“I was correct to Broussard for seven hours,” he says. “It was exhausting. I may need a doctor.” He unwinds the scarf one turn and stops. “Nine degrees, all afternoon. I said ‘Broussard’ forty-one times. Laney kept count on a napkin; she says I was within regulation. Dale wept. Openly. Into the bell rope. He kept saying *forty-three years*, and he’s from Detroit.” He lies back across the bed. “There was an incident at the interception. I may have hugged Broussard. Briefly. In the confusion. Laney has filed a complaint with herself.”",
-        "“Was it good?”",
-        "Theo turns his head on the blanket and looks at him. “It was the best thing I’ve ever seen in a bar,” he says. “You should have been there.”",
-        "Jack doesn’t have anything for that.",
-        "“You sent me a picture.”",
-        "“For the archive.” Short. The bit comes back into his face, and he sits up and leans forward with his elbows on his knees. “And Julian. Costigan. Julian learned the Who Dat. He learned it a half-beat late. All night, every time, the bar going *who dat, who dat*, and then Julian, alone, with great conviction, on *dat*. In overtime he asked Laney if it was sudden death, ‘like a fugue.’ And when the Vikings punted —”",
-        "Theo straightens and does it. He claps, small and delighted, the fingertips of one hand against the palm of the other, up under his chin. “*Oh, lovely*,” he says, in a soft voice, a good one, Julian’s. “For a *punt*. For the *Vikings*.”",
-        "He does it again, the little clap, and this time the voice under it isn’t doing a bit. “He doesn’t even know. That’s the part I can’t stand. He’s going to stand there clapping at the wrong things until the day she stops looking at him, and he’ll still be clapping. Somebody ought to take him out back and tell him.”",
-        "Jack has seen Julian at the head of that table, reading the label on her root beer, glad for her at a game he doesn’t follow. He has heard the voice she keeps for Julian on the phone, slow at the ends, with all the argument taken out of it. It isn’t going to work. Anybody could see that but Julian. And Julian is a decent man, who shook his hand like he meant it."
-      ],
-      "choices": [
-        {
-          "tag": "Candor",
-          "text": "“Theo. Stop. It’s not going to work, and everybody knows it but him. He’s decent. You don’t have to kick him on the way out.”",
-          "set": {
-            "s2e7_theo": "candor",
-            "said_it_plain_n": "+1",
-            "rel.theo.trust": "+1"
-          },
-          "cue": "Theo will carry that.",
-          "key": "You told Theo to leave Julian alone: it isn’t going to work, and everybody knows it but him.",
-          "response": [
-            "He says it to the end without stopping. It comes out steadier than anything he said at the curb yesterday.",
-            "Theo’s hands come apart and go down onto his knees."
-          ],
-          "goto": "s19a"
-        },
-        {
-          "tag": "Restraint",
-          "text": "“Stop.”",
-          "set": {
-            "s2e7_theo": "restraint",
-            "trait.control": "+1"
-          },
-          "key": "You told Theo to stop on Julian. You said it wasn’t going to work.",
-          "response": [
-            "Theo stops, mid-clap.",
-            "“It isn’t going to work,” Jack says. “He’s decent. Leave him alone.”"
-          ],
-          "goto": "s19a"
-        },
-        {
-          "tag": "Wit",
-          "text": "“Do the punt again and I’m telling Hollis.”",
-          "set": {
-            "s2e7_theo": "wit",
-            "trait.wit": "+1"
-          },
-          "key": "You made a joke, then told Theo to leave Julian alone — it isn’t going to work.",
-          "response": [
-            "Theo starts to laugh, a big hoarse one, and looks over to share it, and finds Jack not laughing.",
-            "“It isn’t going to work, Theo. Everybody can see it but him. He’s a decent guy. You don’t have to kick him on his way out.”",
-            "The laugh goes out of Theo slowly, like a tire with a nail in it."
-          ],
-          "goto": "s19a"
-        }
-      ]
+    {
+     "tag": "Control",
+     "text": "*Say it like a fact. Don’t raise your voice.*",
+     "set": {
+      "s2e7_nerve": "control",
+      "trait.control": "+1"
+     },
+     "key": "At the end of the Walk you asked Lena, like a fact, how she had the nerve to be mad at you. She didn’t answer. She left.",
+     "response": [
+      "He keeps his hands in the pockets of the Carhartt. He doesn’t raise his voice, and he doesn’t lower it. He says it level, no louder than the buses, a number off a scoreboard. It has been sitting in him for weeks.",
+      "“How do you have the nerve to be mad at me? For any of this?”"
+     ],
+     "goto": "s12a"
     },
-    "s19a": {
-      "slug": "SUNDAY · 11:05 PM · DELGADO HALL, 412",
-      "body": [
-        "Theo is in bed with the scarf hung on the bedpost and the lamp still on, and he lies there on his side and looks across the room at Jack for a long time, with nothing on his face Jack can use.",
-        {
-          "if": "s2e6_theo==\"candor\"",
-          "text": "He tries once more. “Everybody knows it.”"
-        },
-        {
-          "if": "s2e6_theo==\"candor\"",
-          "text": "“Yeah,” Jack says."
-        },
-        {
-          "if": "s2e6_theo==\"candor\"",
-          "text": "Theo lets it lie, and reaches up, and turns off the lamp."
-        },
-        {
-          "if": "s2e6_theo!=\"candor\"",
-          "text": "“Noted,” Theo says, and reaches up, and turns off the lamp."
-        },
-        "The room goes to the streetlamp under the blind. Jack lies on his back in the dark with the RAZR shut in his hand and his hand on his breastbone, and after a minute it buzzes there, through his fingers, and lights the ceiling once.",
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "i embrace you as if you were already here",
-          "time": "11:04 PM"
-        },
-        {
-          "type": "sms",
-          "from": "SKYE (MISFIT)",
-          "text": "i know. it says there. i like mine better",
-          "time": "11:04 PM"
-        },
-        "He holds it up over his face. He types a line from the middle of the prayer with his thumb — *come at least spiritually into my heart* — and looks at it on the little screen, and erases it.",
-        {
-          "type": "sms",
-          "from": "Jack",
-          "text": "it says there. i know what you meant. goodnight",
-          "time": "11:06 PM"
-        },
-        "He shuts the phone and puts it back where it was, closed, against his breastbone, and keeps his hand over it, and it stays warm there under his hand."
-      ],
-      "journal": [
-        {
-          "kind": "person",
-          "id": "theo",
-          "title": "Theo Vance",
-          "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath. Sunday night, to the ceiling: Laney says he asked if he could ask. ‘Like a vampire. They have to be invited in.’ He’s known since Friday. Wednesday I said I ended it. He opened his jar and gave me a spoon. Friday he took me to a party in Montecito so I wouldn’t meet anybody, and lost me in three minutes. Saturday at six he was on his bed in his coat. He’d called me nine times. At halftime of Michigan I asked him home for Thanksgiving. He said yes before I finished, and bought two tickets to Pittsburgh. ‘Guests bring something.’ Looked up St. Elizabeth’s visiting hours before I asked. Thanksgiving: came to Youngstown in Dad’s Browns parka over the camel coat. Dad said that’s not a coat. Speaks Italian from a movie, wrong. Rolled Nonna’s crust and made his own peach pie. Dad asked him to say grace. He did. Nonna asked who prays for him; he said nobody. Met Danny — Danny liked him in a minute. Didn’t talk the whole way home. Kept Rosie’s prince. Nonna gave him a twenty. Back at Marisol he reads me the News Feed in the morning like the intentions at the twelve-ten. Wants to know if I *like* things now. Says I’m fast. Says I’ve started sleeping with my phone. Played the Fishbowl a voicemail off the internet and ran one sentence of it twice: take your name off your phone. Timed my pocket with his stopwatch. Didn’t say the number. Taped Rosie’s princes over his desk; Nonna’s twenty is in the frame of his mirror. Covered for me at Alarm Five: I was in the shower. Sat on a dryer with Laney, discussing finals. Sunday at twenty to seven: back from somewhere. I asked him home for Christmas; so did Pop, in the garage. He has things in LA. ‘Tell your father I heard him.’ Put his cashmere on me Sunday. Said I was holding my phone like a rosary. Lent me the Burberry in the storm. Tried to heckle Julian’s song and couldn’t. Watched me go through Bastille’s window. Six in the morning on the last day of classes he asked why I look like I’ve been through a war. He had a question in his calendar for after Thanksgiving; he’s moved it. Sunday he filmed his shoes with a girl named Soledad. Tore up the tab. Left me his cashmere for Ohio. Have a good Christmas, Costigan — all of it. Christmas: called from LA to ask for Christmas Eve and Christmas Day. I answered on the first ring; he sounded surprised. Dad said he doesn’t have to call first. Wore the parka again. Ma glued his name on a stocking. Nonna has his cashmere. Ate an eel. Took my phone out of Rosie’s hand at dinner and gave it to me face-down. Christmas Eve he came with me to Trumbull, bought from the machines, and did Dad for Danny. Danny asked him who comes to see him. He said I do. Danny says he’s on the list for good. Wears the Browns hat now. Laney has a schedule. Landed in the middle of the night — they wanded the baccalà in Pittsburgh. At the side door Christmas afternoon he said, Be careful, Costigan. Of what. All of it. New Year’s Eve, at nine his time, the party was already a disappointment. Wore Ma’s scarf in sixty-one degrees. A woman asked if he was in a band. Back from LA in the orange hat and Ma’s scarf. Says the hat is a family heirloom. Sunday night: ‘Congratulations, Costigan.’ ‘Go to sleep. Monday is going to be a long day.’ Tuesday morning he did the responses too: Lord, hear our prayer. Rushing Sigma Rho; ate a raw onion in front of the lacrosse team. Wednesday night he got a bid. A pledge now. Carries a raw egg named Hollis in a teacup; if it breaks, he’s out. At Sully’s: ‘She’s the best actress I know, Costigan. Never ask her if she’s acting.’ MLK Day he shoveled sand one-handed for Sigma Rho with Hollis in the other. At midnight Wednesday he pitched me a movie about a man whose friend got dumped and was with somebody else in a week. He said it twice. Hollis made his week. Theo’s in. He’s keeping the egg. Saturday he became a brother. Sunday he runs. He was correct to Lena for seven hours at Sully’s and sent me the end of it. He started on Julian, and I told him to stop."
-        }
-      ],
-      "end": true
+    {
+     "tag": "Wit",
+     "text": "*Start with a joke and watch it turn.*",
+     "set": {
+      "s2e7_nerve": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "At the end of the Walk you started with a joke and asked Lena how she had the nerve to be mad at you. She didn’t answer. She left.",
+     "response": [
+      "“You know Peter missed Gilroy,” he says. “And the garage. Twice. He took fourteen people around the same three blocks of Washington Street till Joey started praying for him by name, and out of all fourteen of us, somehow I’m the one who doesn’t know where he’s —” Halfway through it, the joke dies in his mouth, and what was under it all along comes up instead.",
+      "“How do you have the nerve to be mad at me? For any of this?”"
+     ],
+     "goto": "s12a"
     }
+   ]
+  },
+  "s12a": {
+   "slug": "SATURDAY · 2:31 PM · THE END OF THE ROUTE — THE VAN AT THE CURB",
+   "set": {
+    "jack_said_nerve": true,
+    "lena_left_walk": true
+   },
+   "body": [
+    {
+     "if": "s2e7_nerve==\"reckless\"",
+     "text": "Every head at the back of the van has turned. Bridget is holding a sign in both hands in front of her like a shield, and on the bumper Margot has stopped with the thermos cup halfway to her mouth."
+    },
+    {
+     "if": "s2e7_nerve!=\"reckless\"",
+     "text": "Behind the van the sign-loading goes on, a stack at a time, nobody turning this way. On the bumper Margot has the thermos cup at her mouth and isn’t drinking from it."
+    },
+    "Lena doesn’t say anything. She has the clipboard flat against her chest with both arms crossed over it, and her mouth opens on something — he sees it come, right there, whatever it is — and closes on it. Her eyes stay on his face. A bus with ST. ANNE’S taped in its windshield pulls out from the curb behind her, and the wind off it moves her hair, and she doesn’t blink.",
+    "And then it turns. Her knuckles go white on the edge of the clipboard, one hand and then the other. Whatever she had in her mouth goes back down, and her chin comes up.",
+    "“Thank you for coming, Jack,” she says.",
+    "She tucks the clipboard under her arm. He doesn’t see which way she goes. He’s looking at his hands, which have nothing in them and have started, at the ends of the fingers, to shake.",
+    "Peter comes back down the curb on his circuit and says, “Ten past,” to Jack, and then gets a look at his face and says it again, more gently, and doesn’t stop to find out why.",
+    "At the back of the van Margot screws the cup onto the thermos, a full turn at a time, and stands up off the bumper, and starts handing signs up into the van with the rest of them."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "lena",
+     "title": "Lena Broussard",
+     "text": "New Orleans. Two seventeen. Classics. Hale paired us for the semester. Makes a roux like she’s taking a vow and expects you to keep up. Her father sells Gulf shrimp — Broussard’s Seafood, Banks Street. Boyfriend: Wes Arceneaux — Tulane, civil engineering, the boat at sixteen. Calls at 8:04 on the dot. Her grandmother, Lucille Guidry, died in the storm in ’05; they buried her in November, in the good dress. The medal came back to her mother in a plastic bag. She has never asked her mother one question. The year after, she went to Mass every morning to yell at God, and somewhere in there it stopped being a fight. Paints a mean fleur-de-lis. Said hi to Danny. Says she’s going to be defense. Walked her home the long way from Pi Lam: the beach, the creek, the tower, the Commons, the Lagoon bench. Wes calls from somewhere loud lately; her brother Luc is with him. She’s decided not to notice. The Tuesday of the wake he called on the dot, from his room. He came for Columbus Day weekend to see the Pacific. She’d told him it’s a threat. He touched it at two in the morning. Came to Marisol for the money, she says — Notre Dame gave her half. Went to Hale’s office to tell him he was wrong about who gets to forgive. Cried for Anders on the roof and didn’t give an inch. Stayed till the chimes. There’s a sentence she hasn’t finished. Her middle name is Thérèse; October first is her feast. She erased *Show Lena* out of the Hopkins herself, so Danny could have it. At midnight I gave her *Story of a Soul* with my margins in it, and she wouldn’t let me erase a word. On the beach she asked if I know what I’m doing. I don’t. She laughed. At the elevator: ‘That was a terrible thing to be glad about.’ Brought Wes to everything. Wouldn’t walk past the last house on Seacliff toward the Point; said she was cold. At the stove she gave Becca the spoon. Monday night, two floors down, on the phone to New Orleans: ‘He’s my friend, Wes.’ Plays the piano in the Delgado basement — the one nobody admits to playing. Two years at the Rosary. At five in the morning she played the Saints on the Ferrer carillon with her fists, one bell flat, and said it wasn’t flat, it was New Orleans. Wes told her what I said on the beach, and what I didn’t. On a motel porch above Lucia at three in the morning she told me I can’t say her name like that. She asked what I decided. Not to be the one who wrecks anything, I said. She said okay. Then: me neither. Bought her Mémère a fruitcake from the monks, in exact change. ‘A girl writes the thing she wants first, Youngstown.’ Halloween: Flannery O’Connor, with a stuffed peacock tagged 57. Andalusia. She wouldn’t go past the last house on Seacliff, not even for Laney. ‘I came as her. I never said she was right.’ In the last minute of the extra hour, she put my hat back on. All Souls: she wrote her grandmother’s name in the book, and Nora Calloway’s. Nora was her host at Preview Weekend, in April. That night Wes ended it, on the phone, on the east stairs. He stopped going to Mass in September. There’s a ring. She knew something in September and decided not to notice — she says she’s good at it. At six in the morning she asked me what I’m going to do. She wrote Hale twelve pages in the spring of ’08, two years after the year she yelled at God. She’s had the same postcard the whole time. She knew mine on the porch. She had a house picked out on Zimple Street. A fig tree. She’d picked the paint. Veterans Day, on the bench above Campus Point: St. Martin gave the beggar half his cloak; she says everybody forgets the beggar took it. No. 9 for the reliquary. Friday the 13th, under the eucalyptus, in the middle of a sentence about monarchs: Julian asked her to dinner. So. Thursday night in the basement she played the piano properly — around the dead F. The last time she played it right in front of anybody was a November, four years ago. If you play well, she says, people ask you to play. Reading *New Moon* out of spite. Friday she signed the Manhattan Declaration from bed, with a cold. Two soups. She ate Julian’s. Mine’s on the sill for tomorrow. Ate Gloria’s soup cold out of the quart, at the sill, at six in the morning. Argued YES: a promise is made to a person, not to a reason. Wrote on my paper that I don’t believe one sentence of it. Neither does she. Mémère is lighting a candle for Nonna — the whole name. Half a name is half a candle. At the airport: Our Lady of Prompt Succor, for Nonna. She works fast. Thanksgiving: Theo said *pop* to the whole Broussard table. She asked about Theo, and Nonna, and her saint. Julian called during grace. Wes was in the kitchen. ‘Go back to your family, Youngstown.’ Handed Julian the bell rope at Sully’s. Knows I don’t work Mondays. Texted at two in the morning about Yusuf’s mother. On the lawn at four, looking at the place I wasn’t. Came to the Anchor at the end of my shift in Kevin’s car — Julian’s in Oakland, his brother’s home from the Navy. She has a paper. St. Nicholas Eve: Walgreens at half past one. I told her about Ma’s two hundred shoes; she said then we’re doing it, and we did every door in Delgado. Says I hold my phone like a hand of cards. Asked where I go. I said sometime. She said okay. Book Nine, for her Greek final: *Outis*. Nobody. In the laundry room she stepped back first. ‘Don’t make me be the one who wrecks something.’ Julian’s writing something she can’t hear yet. Twelve and oh in overtime. Her free hand found Kevin. Knows Book Nine by heart; asked me to pray at eight. Picked my best argument at the Brick: what a man says yes to. Put her phone face up next to mine and said nothing. Heard Julian’s song before anybody. ‘It’s good, Jack. It’s really good.’ Told me not to leave in the second chorus. The Advent party: I kept the whole room between us all night. She brought coffee to the white elephant, and I got it. Stole my 8-Ball. Won an argument about ‘Joy to the World’ with Isaac Watts. Didn’t play. Julian did. Friday night, half past twelve, she knocked on 412; Theo said the library. At the Mañanitas she told me about Juan Diego, who took the long way around the hill. Thirteen and oh. She texted me the number. After the Gaudete Mass she asked the 8-Ball something. Better not tell you now. Geminids from the roof without me. At Hale’s oral she’d answered him in Augustine — said my sentence was his. She defended it and won, and told him to ask where I say yes at two in the morning. Julian kissed her goodbye at his car; he’s going to New Orleans for New Year’s. Friday she knocked with two coffees and a list of every place. She played the basement piano for me, properly. Taught me a secret in the O Antiphons. Pecan at Gloria’s counter; fourteen and oh is ordained. On the Lighthouse porch she said it plain: I’d never not answered her before. Never missed Sully’s. Always came to her, whatever it was — and now I stay away. She knows something’s hurting. She didn’t make me say what. Walked past the last house to the Point for the first time all semester. The bonfires on the levee on Christmas Eve — call her from the garage. On the roof I nearly said it. The 8-Ball said ask again later. She gave me the tin to keep. I gave her Benedict. At the checkpoint she turned around and said something I couldn’t hear. Christmas week: her sister had the baby in the third quarter of the Dallas game, while they were still undefeated, so Beau didn’t get a vote. Lucille Odile — both grandmothers. Lena’s the godmother. Then they lost. The 8-Ball said very doubtful. She texts me the O Antiphons at dusk. Monday night she called at ten to one to argue about Pius, and won the point fair. I told her I’ve been sleeping in Danny’s bed. She said somebody ought to. When the Pope went down she texted within the minute: is he alright, are you. Christmas Eve she held the phone up to a bonfire on the levee so I could hear it burn. After Midnight Mass she wrote from the steps of Holy Rosary: an hour behind me, like she said. She’d mailed me *The Moviegoer* before the last night. Christmas night she told me how Réveillon went, and about the place her mother sets for her grandmother. Then she said her mama worked at Memorial. Nothing else. Holy Family: they lost to Tampa in overtime — ‘They’re resting.’ Fr. Dom took the short form; hers read the long one, and we’re not discussing it. Sunday night we whispered for two hours because Nonna was asleep in her chair, and she whispered too, from her back steps. I read her her own margins; she argued with the girl who wrote them. I told her Dad went in. ‘And Danny drank it.’ Julian calls at ten his time. Tuesday she called from behind the register at her father’s market — home field; her father’s making the musician a gumbo. I told her what Danny asked about the third. If Pop won’t get out of the truck, she says, I get in. She said she wouldn’t call as much. Then she said she’d call. Wednesday nothing. Thursday at dawn, the morning after Julian landed, she called from the river with beignets. She said she’d call. She asked if I asked Ma who the candle was for. No. You don’t. New Year’s Eve she texted at my midnight, an hour early for her. At hers it came the second the year turned — before the fireworks. I know what that means. Then the river on fire, and Julian beside it. New Year’s Day I called her from the garage at the half, and she said, You called *me*. Saturday night she called the house — Ma answered and talked to her for ten minutes. Two hours on the kitchen phone, her mother’s cordless dying twice. Her grandmother made the christening gown for Luc in 1985; it rode out the storm in Mémère’s cedar chest in Breaux Bridge. She had me be the priest so she could practice the promises. She thinks Binx doesn’t stop looking — he stops looking by himself. I told her Danny asked me something I can’t answer yet; she didn’t ask what. She asked how California was. ‘Come back, Youngstown.’ Two hours, and she never said Julian’s name. Lucille was baptized in the third quarter, and she didn’t get one word wrong. After that I called every night. Twelfth Night she got the baby in the king cake. Friday she said she hasn’t been fair to Julian, and she’s going to fix it. Sunday she landed: come find me tomorrow. Monday I couldn’t find her — not at 217, not at the twelve-ten. She came into Hale’s seminar a step behind him with a king cake, and the only chair left was next to mine. She was polite to me for fifteen minutes. Then Dido. Tuesday morning Julian put up a picture from their dinner Monday — birthday dinner, two days late. She’s tagged. She’d said call me after. I didn’t. At the mailboxes she asked about my break, and I told her as far as Denver, and Ma’s words about the coffee. ‘Tell her I’m glad.’ The baptism was lovely. Tuesday night at St. Brendan’s she had the whole thing organized by half past eight, in a whisper, and put me on the table with Becca. When the TV said trapped she left the room. Julian went. Wednesday at the table she met Skye. She said no pictures at the table, and I argued with her about it in front of everybody. That night at the desk: Skye’s envelope was the biggest. ‘Tell her thank you. From Newman.’ Thursday she took the far end of Hale’s table before anybody got there. She moved the Saints to Sully’s. Saturday in the back hall she said she changed her mind, and stood up for Laney, and said Skye gave a good performance, and wouldn’t say what she meant. At Atlanta she kept my chair till the half. At ten after three she told me the time. Wednesday at three in the morning, the aftershock, in the Fishbowl: she said I could stop whatever I’m doing. I don’t know what I’m doing. Thursday Hale read her whole name off his list. She told him Lena. Saturday she ran the van to San Francisco. Six hours, row three. She asked me if I was happy. I said yes. At the end of the Walk I asked her how she had the nerve to be mad at me. She didn’t answer. She thanked me for coming and left."
+    }
+   ],
+   "next": "s12b"
+  },
+  "s14": {
+   "slug": "SUNDAY · 12:10 AM · ST. BRENDAN’S LOT — THE VAN COMES HOME",
+   "body": [
+    {
+     "if": "s2e7_ride==\"van\"",
+     "text": "The van turns in off Ocean Road and rocks to a stop under the lot’s one sodium light, where it stood at five this morning with its side door open and everybody’s breath showing. The door rolls back. He gets out last, behind the signs."
+    },
+    {
+     "if": "s2e7_ride!=\"van\"",
+     "text": "He walked down from Delgado at a quarter to twelve. He’s at the edge of the lot with his hands in the Carhartt, in dry jeans, his hair still stiff with salt, when the van turns in off Ocean Road and rocks to a stop under the sodium light, where it stood at five this morning with everybody’s breath showing."
+    },
+    "They come off it the way people come off six hours. Joey, asleep on his feet, steered by the elbow. Becca with the long red knitting rolled under her arm, lifting a hand to Jack as she passes. Peter, stiff, unlocking the hall with a ring of keys the size of a saucer.",
+    "Lena comes down off the front step with the clipboard against her chest and starts across the lot toward Ocean Road, toward Delgado, and he’s standing in the way of it. She doesn’t go around him. She goes past, near enough that he hears the clip of the clipboard tick against a button on her peacoat, and she doesn’t look at him, and he doesn’t say her name. Then there’s just the lot, and the sodium light, and the smell of the van’s hot brakes.",
+    "At the side door Kevin says goodnight to Clare. He puts his hand out and she takes it, and they shake, up and down, and it goes on past where a handshake ends and wants very much to turn into something else and doesn’t find out what. Kevin’s ears go red under the sodium light. “Night, Kevin,” Clare says, and shoulders the backpack of signs, and crosses the lot toward the dorms.",
+    "Jack carries signs into the hall for Kevin until there aren’t any. When he comes back out for the cooler, Kevin and Peter are arguing in whispers over the clipboard about whether a sign is missing, and he goes and sits on the low wall by the side door, under the olive tree, to wait.",
+    "It’s waiting for him there. It starts in his fingers, which want something to do; then in his mouth, the taste of it arriving ahead of the thing. His own pack is in the inside pocket of the Carhartt, with the lighter. The tin is in the other pocket, and it isn’t his.",
+    "The last one was Wednesday’s, in the roof door at Delgado with the rain coming in on his knees.",
+    "The olive tree moves a little over him. Across the courtyard a light is on in the rectory, upstairs. His hand is inside the jacket."
+   ],
+   "choices": [
+    {
+     "tag": "Reckless",
+     "text": "*Light one.*",
+     "set": {
+      "s2e7_smoke": "reckless",
+      "jack_cigs": "+1",
+      "jack_cigs_jf": "+1",
+      "trait.reckless": "+1",
+      "resolve.jack": "-1"
+     },
+     "key": "After the van came home, you lit one.",
+     "response": [
+      "He lights it on the low wall under the olive tree with his back to the church. The first drag is the one he wanted, and the rest of it is just smoking. He smokes it to the filter anyway, looking at the lot where the van is, and pinches it out against the stone and puts the end in his pocket.",
+      "Kevin comes out with the cooler and stops on the step, and sniffs, and says nothing about it, and hands him one end."
+     ],
+     "goto": "s15"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Put it back.*",
+     "set": {
+      "s2e7_smoke": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "After the van came home, you put the pack back.",
+     "response": [
+      "He pushes the pack back down below the lighter and zips the Carhartt to the throat over it, and sits on the wall with his hands laced in his lap until Kevin comes out with the cooler.",
+      "He takes one end of it. They carry it into the hall together, and Kevin tells him, in a whisper, because it’s after midnight in a church, that the missing sign was in the van the whole time, under Joey."
+     ],
+     "goto": "s15"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "*Open the tin. Count them.*",
+     "set": {
+      "s2e7_smoke": "count",
+      "trait.sincerity": "+1"
+     },
+     "key": "After the van came home, you counted her eleven.",
+     "response": [
+      "He takes the tin out instead and opens it on his knee under the olive tree. RELIQUARY on the lid, in her hand. He counts with one finger.",
+      "Eleven. It was eleven in December. It has been eleven every time he’s opened it since, and what he sits there counting isn’t the cigarettes. It’s that the number hasn’t moved.",
+      "He shuts the lid and holds it shut until Kevin comes out with the cooler."
+     ],
+     "goto": "s15"
+    }
+   ]
+  },
+  "s19": {
+   "slug": "SUNDAY · 10:05 PM · DELGADO HALL, THE CURB → 412",
+   "set": {
+    "saw_lena_table_pic": true,
+    "told_theo_stop_julian": true
+   },
+   "body": [
+    "She drops him at the Delgado curb at ten, because he has an eight o’clock, and the Saab goes off up the street and around the corner at the end of it. He took the RAZR out of her glove box when he got out. He turned it off at one o’clock, at the truck, and put it in there himself, and hasn’t thought about it since.",
+    "The street is Sunday-night empty, the lit windows of Delgado going up over him in rows. Somewhere off toward Mission Street a car horn is still going, on and off since a little after seven, in the rhythm of a chant he knows the words to. He turns the phone on under the streetlight. It thinks it over. After that the day comes in all at once, in order.",
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "he’s at the taco truck. repeat taco truck",
+     "time": "1:04 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "Disregard.",
+     "time": "1:05 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "Broussard asked where you were. Kenzie said a taco truck.",
+     "time": "1:31 PM"
+    },
+    "The first one wasn’t meant for him; Theo was drunk by one o’clock, which at Sully’s on a playoff Sunday is a reasonable time to be drunk. The third one he stands still for, on the curb. So she knew before kickoff.",
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "Kickoff. I am being correct. Dale has asked Broussard to sit down twice. She has not.",
+     "time": "3:41 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Theo",
+     "text": "PORTER.",
+     "time": "7:04 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Frank",
+     "text": "WHO DAT",
+     "time": "7:23 PM"
+    },
+    "Under his father’s there’s a picture message, 7:24, from Theo, with nothing written on it. The RAZR drinks it through a straw, a band at a time from the top down, and when it’s done it’s the size of a stamp, and he tilts it to the streetlight to see.",
+    "Sully’s, from the floor. Lena is standing on the long table under the brass ship’s bell with the rope in both hands, her mouth wide open on a sound he can’t hear, and the bar is under her with its arms up, and Laney has both arms locked around her knees to keep her up there, and every face in the picture is turned up to her.",
+    "It’s the happiest he has ever seen her, and he’s seeing it on a curb, from Theo, the size of a stamp, and every part of him he has spent the week keeping out of that room gets up at once and wants to be under that table.",
+    "The pack is in the inside pocket where it always is. He leaves it there. He closes the phone with the picture still in it.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "ma says tell lena CONGRATULATIONS",
+     "time": "7:31 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "and that she lit a candle for the kicker",
+     "time": "7:32 PM"
+    },
+    "He doesn’t answer Gina.",
+    "Theo comes in at twenty to eleven, hoarse, in the black-and-gold scarf, with beer on one sleeve of the blazer and the day still on him. He sits down on his bed in all of it.",
+    "“I was correct to Broussard for seven hours,” he says. “It was exhausting. I may need a doctor.” He unwinds the scarf one turn and stops. “Nine degrees, all afternoon. I said ‘Broussard’ forty-one times. Laney kept count on a napkin; she says I was within regulation. Dale wept. Openly. Into the bell rope. He kept saying *forty-three years*, and he’s from Detroit.” He lies back across the bed. “There was an incident at the interception. I may have hugged Broussard. Briefly. In the confusion. Laney has filed a complaint with herself.”",
+    "“Was it good?”",
+    "Theo turns his head on the blanket and looks at him. “It was the best thing I’ve ever seen in a bar,” he says. “You should have been there.”",
+    "Jack doesn’t have anything for that.",
+    "“You sent me a picture.”",
+    "“For the archive.” Short. The bit comes back into his face, and he sits up and leans forward with his elbows on his knees. “And Julian. Costigan. Julian learned the Who Dat. He learned it a half-beat late. All night, every time, the bar going *who dat, who dat*, and then Julian, alone, with great conviction, on *dat*. In overtime he asked Laney if it was sudden death, ‘like a fugue.’ And when the Vikings punted —”",
+    "Theo straightens and does it. He claps, small and delighted, the fingertips of one hand against the palm of the other, up under his chin. “*Oh, lovely*,” he says, in a soft voice, a good one, Julian’s. “For a *punt*. For the *Vikings*.”",
+    "He does it again, the little clap, and this time the voice under it isn’t doing a bit. “He doesn’t even know. That’s the part I can’t stand. He’s going to stand there clapping at the wrong things until the day she stops looking at him, and he’ll still be clapping. Somebody ought to take him out back and tell him.”",
+    "Jack has seen Julian at the head of that table, reading the label on her root beer, glad for her at a game he doesn’t follow. He has heard the voice she keeps for Julian on the phone, slow at the ends, with all the argument taken out of it. It isn’t going to work. Anybody could see that but Julian. And Julian is a decent man, who shook his hand like he meant it."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“Theo. Stop. It’s not going to work, and everybody knows it but him. He’s decent. You don’t have to kick him on the way out.”",
+     "set": {
+      "s2e7_theo": "candor",
+      "said_it_plain_n": "+1",
+      "rel.theo.trust": "+1"
+     },
+     "cue": "Theo will carry that.",
+     "key": "You told Theo to leave Julian alone: it isn’t going to work, and everybody knows it but him.",
+     "response": [
+      "He says it to the end without stopping. It comes out steadier than anything he said at the curb yesterday.",
+      "Theo’s hands come apart and go down onto his knees."
+     ],
+     "goto": "s19a"
+    },
+    {
+     "tag": "Restraint",
+     "text": "“Stop.”",
+     "set": {
+      "s2e7_theo": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "You told Theo to stop on Julian. You said it wasn’t going to work.",
+     "response": [
+      "Theo stops, mid-clap.",
+      "“It isn’t going to work,” Jack says. “He’s decent. Leave him alone.”"
+     ],
+     "goto": "s19a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Do the punt again and I’m telling Hollis.”",
+     "set": {
+      "s2e7_theo": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "You made a joke, then told Theo to leave Julian alone — it isn’t going to work.",
+     "response": [
+      "Theo starts to laugh, a big hoarse one, and looks over to share it, and finds Jack not laughing.",
+      "“It isn’t going to work, Theo. Everybody can see it but him. He’s a decent guy. You don’t have to kick him on his way out.”",
+      "The laugh goes out of Theo slowly, like a tire with a nail in it."
+     ],
+     "goto": "s19a"
+    }
+   ]
+  },
+  "s19a": {
+   "slug": "SUNDAY · 11:05 PM · DELGADO HALL, 412",
+   "body": [
+    "Theo is in bed with the scarf hung on the bedpost and the lamp still on, and he lies there on his side and looks across the room at Jack for a long time, with nothing on his face Jack can use.",
+    "He tries once more. “Everybody knows it.”",
+    "“Yeah,” Jack says.",
+    "Theo lets it lie, and reaches up, and turns off the lamp.",
+    "The room goes to the streetlamp under the blind. Jack lies on his back in the dark with the RAZR shut in his hand and his hand on his breastbone, and after a minute it buzzes there, through his fingers, and lights the ceiling once.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "i embrace you as if you were already here",
+     "time": "11:04 PM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "i know. it says there. i like mine better",
+     "time": "11:04 PM"
+    },
+    "He holds it up over his face. He types a line from the middle of the prayer with his thumb — *come at least spiritually into my heart* — and looks at it on the little screen, and erases it.",
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "it says there. i know what you meant. goodnight",
+     "time": "11:06 PM"
+    },
+    "He shuts the phone and puts it back where it was, closed, against his breastbone, and keeps his hand over it, and it stays warm there under his hand."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "theo",
+     "title": "Theo Vance",
+     "text": "Roommate. Drives his grandfather’s car like a getaway. His father calls him Teddy and stays six minutes. Heard my brother’s voice and didn’t ask. Loves *Point Break* with no irony at all. Poppy texts him at midnight. The Big Sur Expedition, on his father’s letterhead. Called the Anchor and got my Saturday covered before I could say I work Saturdays. Bought six used copies of Kerouac off the cart at Driftwood. Halloween: threw the party of the year as Gatsby. Left it at twelve-thirty by the back gate. Found him at the wall at the Point at one in the morning, the second one. He said not there. Nineteen. His father sent a stretch Lincoln and a card that called him Teddy, and called at six minutes past and stayed four. His mother came up from La Cañada with Poppy. Blew out nineteen candles in one breath. Sunday night, to the ceiling: Laney says he asked if he could ask. ‘Like a vampire. They have to be invited in.’ He’s known since Friday. Wednesday I said I ended it. He opened his jar and gave me a spoon. Friday he took me to a party in Montecito so I wouldn’t meet anybody, and lost me in three minutes. Saturday at six he was on his bed in his coat. He’d called me nine times. At halftime of Michigan I asked him home for Thanksgiving. He said yes before I finished, and bought two tickets to Pittsburgh. ‘Guests bring something.’ Looked up St. Elizabeth’s visiting hours before I asked. Thanksgiving: came to Youngstown in Dad’s Browns parka over the camel coat. Dad said that’s not a coat. Speaks Italian from a movie, wrong. Rolled Nonna’s crust and made his own peach pie. Dad asked him to say grace. He did. Nonna asked who prays for him; he said nobody. Met Danny — Danny liked him in a minute. Didn’t talk the whole way home. Kept Rosie’s prince. Nonna gave him a twenty. Back at Marisol he reads me the News Feed in the morning like the intentions at the twelve-ten. Wants to know if I *like* things now. Says I’m fast. Says I’ve started sleeping with my phone. Played the Fishbowl a voicemail off the internet and ran one sentence of it twice: take your name off your phone. Timed my pocket with his stopwatch. Didn’t say the number. Taped Rosie’s princes over his desk; Nonna’s twenty is in the frame of his mirror. Covered for me at Alarm Five: I was in the shower. Sat on a dryer with Laney, discussing finals. Sunday at twenty to seven: back from somewhere. I asked him home for Christmas; so did Pop, in the garage. He has things in LA. ‘Tell your father I heard him.’ Put his cashmere on me Sunday. Said I was holding my phone like a rosary. Lent me the Burberry in the storm. Tried to heckle Julian’s song and couldn’t. Watched me go through Bastille’s window. Six in the morning on the last day of classes he asked why I look like I’ve been through a war. He had a question in his calendar for after Thanksgiving; he’s moved it. Sunday he filmed his shoes with a girl named Soledad. Tore up the tab. Left me his cashmere for Ohio. Have a good Christmas, Costigan — all of it. Christmas: called from LA to ask for Christmas Eve and Christmas Day. I answered on the first ring; he sounded surprised. Dad said he doesn’t have to call first. Wore the parka again. Ma glued his name on a stocking. Nonna has his cashmere. Ate an eel. Took my phone out of Rosie’s hand at dinner and gave it to me face-down. Christmas Eve he came with me to Trumbull, bought from the machines, and did Dad for Danny. Danny asked him who comes to see him. He said I do. Danny says he’s on the list for good. Wears the Browns hat now. Laney has a schedule. Landed in the middle of the night — they wanded the baccalà in Pittsburgh. At the side door Christmas afternoon he said, Be careful, Costigan. Of what. All of it. New Year’s Eve, at nine his time, the party was already a disappointment. Wore Ma’s scarf in sixty-one degrees. A woman asked if he was in a band. Back from LA in the orange hat and Ma’s scarf. Says the hat is a family heirloom. Sunday night: ‘Congratulations, Costigan.’ ‘Go to sleep. Monday is going to be a long day.’ Tuesday morning he did the responses too: Lord, hear our prayer. Rushing Sigma Rho; ate a raw onion in front of the lacrosse team. Wednesday night he got a bid. A pledge now. Carries a raw egg named Hollis in a teacup; if it breaks, he’s out. At Sully’s: ‘She’s the best actress I know, Costigan. Never ask her if she’s acting.’ MLK Day he shoveled sand one-handed for Sigma Rho with Hollis in the other. At midnight Wednesday he pitched me a movie about a man whose friend got dumped and was with somebody else in a week. He said it twice. Hollis made his week. Theo’s in. He’s keeping the egg. Saturday he became a brother. Sunday he runs. He was correct to Lena for seven hours at Sully’s and sent me the end of it. He started on Julian, and I told him to stop."
+    }
+   ],
+   "end": true
   }
+ }
 }

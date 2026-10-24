@@ -11,18 +11,7 @@
     "“For science,” she says, as if he’d asked.",
     "“COSTIGAN,” says Joey Abruzzo, at a volume meant for a stadium, and up behind the church a rectory window lights and goes dark again.",
     "“Joey Abruzzo.” It comes from the side door, quick and low and pure Mid-City. “It is five in the morning and Father is asleep forty feet from your mouth. The Lord can hear you at half.”",
-    {
-     "if": "s2e6_van==\"wit\"",
-     "text": "Kevin comes around the back of the van with a clipboard under one arm and a foil-wrapped breakfast burrito in the other hand, still hot enough to steam in the light, and puts it in Jack’s. “Net thirty,” he says. “Paid early.” Jack stows it in the Carhartt, where it warms one side of him like a hand on his ribs."
-    },
-    {
-     "if": "s2e6_van==\"candor\"",
-     "text": "Kevin comes around the back of the van with a clipboard under one arm and sees him and stops. “You came,” he says, and nothing fast comes after it. He stands there in the orange light with his ears going red, and then he remembers he has a clipboard."
-    },
-    {
-     "if": "s2e6_van!=\"wit\" && s2e6_van!=\"candor\"",
-     "text": "Kevin comes around the back of the van with a clipboard under one arm. “Oh-five-hundred,” he says, and points at his watch, pleased with it. He might have arranged the hour himself."
-    },
+    "Kevin comes around the back of the van with a clipboard under one arm and sees him and stops. “You came,” he says, and nothing fast comes after it. He stands there in the orange light with his ears going red, and then he remembers he has a clipboard.",
     "Jack takes the backpack of signs off Clare, who says it’s fine, it’s fine, they’re heavier than they look, and lets him, and he swings it up into the van for her. Becca hugs him around the neck in passing, scarf and all, and says, “You came! Kevin said you would and I said I’d believe it at five,” and it is five, and she lets him go.",
     "Lena is at the open side door with the sign-up against her chest. She ran it; that’s her handwriting down every line. She’s in the gray cardigan under a navy peacoat buttoned to the throat, her hair twisted up off her neck, a pen in her other hand. She checks Clare off with a hand on her arm, and Becca with a “Morning, Becca,” warm and low, and then she finds his name and ticks it without looking up.",
     "“Costigan.”",
@@ -154,7 +143,6 @@
     {
      "tag": "Candor",
      "text": "“You said I could stop. Stop what?”",
-     "if": "s2e6_3am==\"in\"",
      "set": {
       "s2e7_dawn": "candor",
       "lena_3am_asked": true,
@@ -191,29 +179,7 @@
       "trait.control": "+1"
      },
      "response": [
-      {
-       "if": "s2e6_3am==\"door\"",
-       "text": "He watches the vineyards. Without looking at him she reaches up and switches off the reading light over the two of them, the last lit seat in the van, and the cone goes off her hands and off the clipboard, and the dawn is the only light there is. She leaves her hand on the clipboard after, flat on the page."
-      },
-      {
-       "if": "s2e6_3am!=\"door\"",
-       "text": "He watches the vineyards. Nothing happens. The vines go by in their rows, and the men in them, and the frost, and the reading light goes on burning, pale and useless, into the daylight. He knows exactly where she is without looking, the way you know where the stove is in a dark kitchen."
-      }
-     ],
-     "goto": "s09a"
-    },
-    {
-     "tag": "Wit",
-     "text": "*Pass her the burrito Kevin brought.*",
-     "if": "s2e6_van==\"wit\"",
-     "set": {
-      "s2e7_dawn": "wit",
-      "trait.wit": "+1"
-     },
-     "response": [
-      "He takes Kevin’s burrito out of the Carhartt, where it has been keeping his ribs warm since Ocean Road, and peels the foil back off one end and holds it out across the bench.",
-      "She looks at it in the gray light. She takes it, and eats half without comment, neatly, and folds the foil back down over the end and creases the corners and hands it back to him, wrapped like new.",
-      "From row two, Kevin’s voice: “I saw that.”"
+      "He watches the vineyards. Nothing happens. The vines go by in their rows, and the men in them, and the frost, and the reading light goes on burning, pale and useless, into the daylight. He knows exactly where she is without looking, the way you know where the stove is in a dark kitchen."
      ],
      "goto": "s09a"
     }
@@ -240,18 +206,7 @@
     "Kevin turns back around and sits facing the windshield. Jack hears him say it to himself, under the engine, twice: “Not sir. Not sir.”",
     "South of Soledad there’s a sign at the side of the freeway. CORRECTIONAL TRAINING FACILITY. And then, out past the fields, there it is, spread over the valley floor like a community college, except for the towers: long low buildings the color of the dirt they’re built on, fences in rows, and the lights along the fences still on in the daylight.",
     "Rudy did six years in there. He told Jack once at the flat-top, scraping, between a short stack and a patty melt. Danny is in Trumbull, on the other side of the country, in a place that could have been built off the same drawings for all Jack knows. He knows the visiting room. The bolted tables, the vending machines along one wall, the floor wax, the guard with the newspaper; his brother’s hands around a can of Coke, because you’re allowed to buy them one. He stops there, where he always stops.",
-    {
-     "if": "s2e6_danny==\"candor\"",
-     "text": "The number goes through his head by heart, the letter and the six digits, the way he wrote it big at the pass on Thursday."
-    },
-    {
-     "if": "s2e6_danny==\"sincerity\"",
-     "text": "He thinks about the two lines on the flap he never read, sealed with a thumb under the heat lamp, somewhere east of here by now in a canvas sack, on their way to Leavittsburg."
-    },
-    {
-     "if": "s2e6_danny!=\"candor\" && s2e6_danny!=\"sincerity\"",
-     "text": "*He’s going to think I hired you.* Monday, maybe, or Tuesday. Danny will read it on his bunk and think exactly that."
-    },
+    "He thinks about the two lines on the flap he never read, sealed with a thumb under the heat lamp, somewhere east of here by now in a canvas sack, on their way to Leavittsburg.",
     "He watches the place until it’s behind them. When he turns back from it, Lena is looking at him. Not at the sign. At him. She knows about Danny. In the fall she told Jack you can love somebody, but you can’t pay for them, and later she said hi to Danny himself on a collect call and told him she was going to be defense. In all of Marisol there are only a few people who would know why a man from Youngstown looks at that sign that long, and she’s one of them.",
     "She doesn’t say anything. She takes the green thermos out from between her boots and unscrews the cap and turns it in her fingers until the chip is on her side, and fills it, and holds it out to him with the good side of the rim toward his mouth.",
     "He takes it. He drinks from the side she gave him, slowly, so it will last to Gonzales. She goes back to the sign-up. The fences go by, and then it’s fields again, and the Soledad exit, and that’s that, as far as anybody else in the van could tell.",

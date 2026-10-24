@@ -1,301 +1,248 @@
 {
-  "scenes": {
-    "s03": {
-      "slug": "FRIDAY · 1:30 PM · DELGADO HALL, THE CURB → DEL PLAYA LANE, THE PORCH WITH NO SWING",
-      "music": "The Beatles — “Here Comes the Sun”",
-      "body": [
-        "The Saab is at the Delgado curb at one-thirty with the top down for the first time in a week, the canvas folded away behind the seats like a thing she’s finished with. Skye is behind the wheel in sunglasses, one arm laid along the door, her hair loose and her face turned up, doing nothing at all but sitting in a car in the sun.",
-        "Across Ocean Road the Commons has its big front window, and at a table in it, with a tray, Laney Price turns her head. She doesn’t turn it back. She watches the Saab, and the girl in it, and him coming across the wet grass toward both of them.",
-        "He sees her see it. He gets in.",
-        "She takes Ocean Road with one hand on the wheel and the other held up in the wind. “I’m solar,” she says. “Did you know that about me? I’ve been on a backup generator since Monday. Everything I said to you this week was the generator talking.” At the light at Las Olas she tips her head back against the seat and shuts her eyes behind the sunglasses with her face up, and the light goes green, and she stays like that, and the man in the pickup behind them leans on his horn, and she waves to him over her shoulder without opening her eyes.",
-        "On Del Playa the porch boards are steaming, the sun on the soaked wood lifting it off in a low white breath, and the house, which leans, leans into the light. Sol is on the top step in a man’s undershirt with a sheet of sandpaper, a long bleached limb of driftwood across her knees, sanding it toward something.",
-        "“What is it?” Jack says.",
-        "“Swing,” says Sol, and keeps sanding.",
-        {
-          "if": "s2e6_wed==\"hers\"",
-          "text": "Over her head are the two hooks in the porch ceiling. Wednesday in the rain a length of chain still swung from one of them, tapping the post; now the chain is gone, and in the sun the bare hooks throw two small shadows on the boards, side by side."
-        },
-        {
-          "if": "s2e6_wed!=\"hers\"",
-          "text": "Over her head are the two hooks in the porch ceiling, bare — the first time he’s seen them. *Like earrings.* They are: two small brass curls hung from the eave, catching the light, with nothing in them."
-        },
-        {
-          "if": "s2e6_note==\"wit\"",
-          "text": "*Oceanography 1* is drying open on the porch rail, its pages rippled. On the cover, *you snore like a senator* has been erased hard enough to wear the paper through to gray, and under it, in her pencil, she has written *governor*."
-        },
-        {
-          "if": "s2e6_note!=\"wit\"",
-          "text": "*Oceanography 1* is drying on the porch rail, face down at chapter four, its pages rippled like something that has been to sea."
-        },
-        "Through the screen door Tomás has a record on, a guitar coming up out of the dark of the front room bright and unhurried, and then Tomás himself comes to the screen, squints up at the blue over the street, which has been gone long enough to owe him an explanation, and says to Jack, “Maybe Sunday, bro.” He takes his head back inside.",
-        "Skye drops onto the step below Sol, takes the iced tea out of Sol’s hand, drinks half of it, and gives it back, and Sol accepts this as she accepts weather. Jack sits on the rail.",
-        "Jack tells her there. It has been in him since Kevin in the hall last night, and in the sun it has started to feel like something he’s keeping from her.",
-        "“I’m on a van tomorrow. Five in the morning. The Walk for Life, in San Francisco.” She pushes her sunglasses up into her hair. “Kevin asked me,” he says. “For him. He asked for himself.”",
-        "“Is all of Newman going?”",
-        "“It’s a Newman thing.”",
-        "Skye looks up at the hooks.",
-        "“That’s a yes, then,” she says. And then, fast, before he can get anything else into the air: “I’m coming.”",
-        "“It’s a pro-life march.”",
-        "“I know what it is. I read the news, Jack. I’m an informed corporation.” The sunglasses are back down. She’s talking quickly now. “I want to see what you believe in on the street. Not in a book, not in a pew — out in the road with thirty thousand people and their signs. I don’t have to believe it to watch you.”",
-        "“Do they let in people who aren’t —” She makes a gesture that takes in herself, her sunglasses, the Saab at the curb, the whole state of California.",
-        "“It’s a sidewalk, Skye.”",
-        "“I’ve been turned away from sidewalks.”",
-        "“The van leaves at five.”",
-        "“Five is a call time. Six is a choice.” She has it worked out already; she must have worked it out between *Newman* and *thing*. “I’ll drive up. I’ll find you at the part where they all talk first.”",
-        "“The rally.”",
-        "“I’ll find you at the rally.” And the next part is already loaded behind it. She’s sitting on the step below Sol with both arms locked around one knee and her chin up, braced, the way she sat across from her mother and a legal pad at that lunch, with the answers ready to the things he hasn’t said yet: that people will look, that the van will talk, that Corinne will have a feeling about it.",
-        "He doesn’t make her get to the second answer."
-      ],
-      "choices": [
-        {
-          "text": "“I want you there.”",
-          "tag": "Candor",
-          "set": {
-            "s2e7_coming": "candor",
-            "said_it_plain_n": "+1",
-            "rel.skye.trust": "+1"
-          },
-          "response": [
-            "Her arms come off her knee. The braced thing goes out of her shoulders, all at once, like a coat let fall.",
-            "“Then I’m there,” she says.",
-            "She gets up, takes his hand off the porch rail, and walks him in by it — through the screen door, past Tomás on the arm of the couch with his eyes shut, conducting, past the record turning in the dark — and up the stairs, which are too narrow for two people holding hands, and she doesn’t let go of it on the stairs either."
-          ],
-          "goto": "s04"
-        },
-        {
-          "text": "“Don’t bring a sign. They’re heavier than they look.”",
-          "tag": "Wit",
-          "set": {
-            "s2e7_coming": "wit",
-            "trait.wit": "+1",
-            "rel.skye.warmth": "+1"
-          },
-          "response": [
-            "“I’m bringing coffee,” she says. “Coffee’s lighter.”",
-            "She’s up and backing through the screen door ahead of him, still arguing about the sign she isn’t bringing — what it would say, what font, whether a sign that just said HI on a stick would get her killed or elected — and she argues it up the stairs backward, one step above him, which puts her mouth exactly level with his, and she knows it, and keeps arguing."
-          ],
-          "goto": "s04"
-        },
-        {
-          "text": "“Some of it’s going to be hard to look at. For you.”",
-          "tag": "Sincerity",
-          "set": {
-            "s2e7_coming": "sincerity",
-            "trait.sincerity": "+1",
-            "rel.skye.warmth": "+1"
-          },
-          "response": [
-            "“Then I’ll look at you,” she says.",
-            "She says it lightly, and doesn’t take it back. On the top step Sol stops sanding. Sol starts again.",
-            "Skye stands and holds the screen door open with her hip, and goes in ahead of him and up the stairs into the dark of the house with one hand trailing behind her on the rail, low, where he can reach it."
-          ],
-          "goto": "s04"
-        }
-      ]
+ "scenes": {
+  "s03": {
+   "slug": "FRIDAY · 1:30 PM · DELGADO HALL, THE CURB → DEL PLAYA LANE, THE PORCH WITH NO SWING",
+   "music": "The Beatles — “Here Comes the Sun”",
+   "body": [
+    "The Saab is at the Delgado curb at one-thirty with the top down for the first time in a week, the canvas folded away behind the seats like a thing she’s finished with. Skye is behind the wheel in sunglasses, one arm laid along the door, her hair loose and her face turned up, doing nothing at all but sitting in a car in the sun.",
+    "Across Ocean Road the Commons has its big front window, and at a table in it, with a tray, Laney Price turns her head. She doesn’t turn it back. She watches the Saab, and the girl in it, and him coming across the wet grass toward both of them.",
+    "He sees her see it. He gets in.",
+    "She takes Ocean Road with one hand on the wheel and the other held up in the wind. “I’m solar,” she says. “Did you know that about me? I’ve been on a backup generator since Monday. Everything I said to you this week was the generator talking.” At the light at Las Olas she tips her head back against the seat and shuts her eyes behind the sunglasses with her face up, and the light goes green, and she stays like that, and the man in the pickup behind them leans on his horn, and she waves to him over her shoulder without opening her eyes.",
+    "On Del Playa the porch boards are steaming, the sun on the soaked wood lifting it off in a low white breath, and the house, which leans, leans into the light. Sol is on the top step in a man’s undershirt with a sheet of sandpaper, a long bleached limb of driftwood across her knees, sanding it toward something.",
+    "“What is it?” Jack says.",
+    "“Swing,” says Sol, and keeps sanding.",
+    "Over her head are the two hooks in the porch ceiling. Wednesday in the rain a length of chain still swung from one of them, tapping the post; now the chain is gone, and in the sun the bare hooks throw two small shadows on the boards, side by side.",
+    "*Oceanography 1* is drying on the porch rail, face down at chapter four, its pages rippled like something that has been to sea.",
+    "Through the screen door Tomás has a record on, a guitar coming up out of the dark of the front room bright and unhurried, and then Tomás himself comes to the screen, squints up at the blue over the street, which has been gone long enough to owe him an explanation, and says to Jack, “Maybe Sunday, bro.” He takes his head back inside.",
+    "Skye drops onto the step below Sol, takes the iced tea out of Sol’s hand, drinks half of it, and gives it back, and Sol accepts this as she accepts weather. Jack sits on the rail.",
+    "Jack tells her there. It has been in him since Kevin in the hall last night, and in the sun it has started to feel like something he’s keeping from her.",
+    "“I’m on a van tomorrow. Five in the morning. The Walk for Life, in San Francisco.” She pushes her sunglasses up into her hair. “Kevin asked me,” he says. “For him. He asked for himself.”",
+    "“Is all of Newman going?”",
+    "“It’s a Newman thing.”",
+    "Skye looks up at the hooks.",
+    "“That’s a yes, then,” she says. And then, fast, before he can get anything else into the air: “I’m coming.”",
+    "“It’s a pro-life march.”",
+    "“I know what it is. I read the news, Jack. I’m an informed corporation.” The sunglasses are back down. She’s talking quickly now. “I want to see what you believe in on the street. Not in a book, not in a pew — out in the road with thirty thousand people and their signs. I don’t have to believe it to watch you.”",
+    "“Do they let in people who aren’t —” She makes a gesture that takes in herself, her sunglasses, the Saab at the curb, the whole state of California.",
+    "“It’s a sidewalk, Skye.”",
+    "“I’ve been turned away from sidewalks.”",
+    "“The van leaves at five.”",
+    "“Five is a call time. Six is a choice.” She has it worked out already; she must have worked it out between *Newman* and *thing*. “I’ll drive up. I’ll find you at the part where they all talk first.”",
+    "“The rally.”",
+    "“I’ll find you at the rally.” And the next part is already loaded behind it. She’s sitting on the step below Sol with both arms locked around one knee and her chin up, braced, the way she sat across from her mother and a legal pad at that lunch, with the answers ready to the things he hasn’t said yet: that people will look, that the van will talk, that Corinne will have a feeling about it.",
+    "He doesn’t make her get to the second answer."
+   ],
+   "choices": [
+    {
+     "text": "“I want you there.”",
+     "tag": "Candor",
+     "set": {
+      "s2e7_coming": "candor",
+      "said_it_plain_n": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "response": [
+      "Her arms come off her knee. The braced thing goes out of her shoulders, all at once, like a coat let fall.",
+      "“Then I’m there,” she says.",
+      "She gets up, takes his hand off the porch rail, and walks him in by it — through the screen door, past Tomás on the arm of the couch with his eyes shut, conducting, past the record turning in the dark — and up the stairs, which are too narrow for two people holding hands, and she doesn’t let go of it on the stairs either."
+     ],
+     "goto": "s04"
     },
-    "s04": {
-      "slug": "FRIDAY · 2:30 PM · DEL PLAYA LANE, HER ROOM — DAYLIGHT",
-      "set": {
-        "skye_s2c": true,
-        "confession_owed": "+1",
-        "soul.restraint": "-1"
-      },
-      "body": [
-        "He has only ever been in this room at night. Now the window over the mattress is open on the Channel, and the Channel is bright as tin all the way out to the islands, and the surf comes up through the window loud after six days of storm, so loud they would have to raise their voices to fight. On the wall over the dresser the sun has laid down a square of itself, the shape of the window, sharp at the edges and a little crooked, on the old plaster.",
-        "Skye reaches past him for the cord of the blind.",
-        "It’s an old roll-up blind gone the color of weak tea, and he has never seen it down. There has never been anything in here to keep out. Her hand is on the cord, and her eyes are on the cord and not on him, and he has never seen her do that either.",
-        "He puts his hand over hers on the cord, and holds it there, and doesn’t let her pull. She lets him. The blind stays up.",
-        "“It’s very bright,” she says.",
-        "“It’s the sun.”",
-        "“I’ve heard of it.” She takes her hand back from under his and puts it on his face instead, and turns it to the window, so the light is on him first. “I just never got a good look at you in it.”",
-        {
-          "if": "s2e6_pic==\"control\"",
-          "text": "“How long did you look?” she asks him, with her mouth against his jaw — the fitting room, the one look, before he erased it. “Once.” “*Once*,” she says, and he can feel her smile against his jaw, and feel her try to stop it, and fail."
-        },
-        {
-          "if": "s2e6_pic==\"restraint\"",
-          "text": "She tells him what his face did on the curb on Wednesday, opening it in the rain, and then she does it for him, close enough to kiss the real one — the eyebrows going up, the mouth going stupid. He tells her the picture was the wrong size. “Prove it,” she says. In daylight, he can."
-        },
-        {
-          "if": "s2e6_pic!=\"control\" && s2e6_pic!=\"restraint\"",
-          "text": "“*That one most*,” she says against his ear, in his own words, which she seems to have been carrying around in her pocket all week."
-        },
-        "After that there’s nothing to argue with but the daylight.",
-        "In the dark there was always somewhere for his face to go. Under the lamp there was a circle and a room beyond it, and the room was a kind of privacy. Here there is no beyond. The sun is on the sheets and on her shoulders and down the long line of her to her heels, and it’s on him, all of him, and there is nowhere in this room that isn’t lit, and nothing either of them does in it will be able to pass itself off as a dream afterward. The wind comes in off the water and raises the gooseflesh along her arms and he puts his mouth there and watches it go down again. Her skin is warm on the side the sun has been on and cool on the other, and he finds the line where one turns into the other with his hand, and follows it, and she shivers and laughs and tells him he’s doing geography. He wants her. He has wanted her since a window seat in Montecito, and in this light the wanting has nowhere to hide either, and he doesn’t ask it to.",
-        "And this time they don’t stop at the edge of it. Everything but the one thing — for the first time, all of the rest of it — and they take each other the rest of the way. She goes first, unhurried, propped where she can watch his face in the full sun, and there’s no joke he can get to in time and no dark to turn his face into, and she watches all of it: his breath going ragged and then going entirely, his hand knotted in the sheet, her name coming out of him like something he’s dropped and can’t pick up. When it’s over she laughs, low and pleased with herself, with her forehead on his stomach, and he can feel the laugh more than hear it.",
-        "Then it’s his turn to learn something, and he takes his time about it, because she did. He learns what her face does when it has stopped performing anything for anyone. Her laugh breaks in the middle and turns into something that isn’t a laugh; her hand comes down on the back of his head and grips; she says his name to the ceiling, and then again, the second time like an argument she has decided to lose, and she doesn’t care who on Del Playa has a window open. Somewhere in the middle of it the mattress, which lives on the floor and has never had a frame, travels most of a foot toward the wall, and afterward they both lift their heads to look at how far it went, and she says, “Sol’s going to hear about that,” and he says Sol already did. Downstairs Tomás’s record goes on to the next song, discreetly, like a waiter leaving a room.",
-        "Later she props herself on an elbow in the sun from the window, her hair falling forward over one shoulder, and looks down at him. Over the dresser the square of light has slid a hand’s width down the wall.",
-        "“So what’s the difference now?” she says.",
-        "Her voice is the one from the Lagoon path, the walk-and-explain voice, lying down. “After that? Tell me the difference between that and the thing.” She puts one finger in the middle of his chest, not to push. “Because every time I find your line, it’s somewhere else. It was a shirt once. Then it was my underwear. Last Saturday there wasn’t anything left of it but a word.” The finger taps, once. “And now it isn’t even that. Now it’s — what? Show me where it is. I’m not trying to get you to. I’m asking. I want to understand it.”",
-        "He goes looking for it.",
-        "There has always been one. He comes from a kitchen where people argue the line between a mortal sin and a venial one over the dishes, and he has always had the distinction ready, the word for what’s allowed and the word for what isn’t, a fence he could show her. He goes to where the fence should be, and there isn’t one. Not for this. Augustine prayed to be made chaste, *but not yet*, and Jack has always found that line funny, and he isn’t laughing. He isn’t going to lie on her mattress in the sun and tell her that what they just did was nothing. He knows what it was. He knew at the door, and on the stairs, and he’ll know in the coat closet at St. Brendan’s, saying it out loud to a man behind a linen screen. And he isn’t going to tell her the one thing is different in some way he could draw for her, because he can’t draw it, and she would see through it inside a minute. The one thing is the one thing he isn’t going to do without a promise. He can’t make that true by explaining it. He opens his mouth and there is nothing ready in it at all.",
-        "She has watched him lose arguments, to her, gladly, under a dead umbrella. She has never seen him without one. It shows on her face — interest first, and then something quicker, and less sure of itself.",
-        "She comes up nearer on her elbow, her hair falling on his chest, and starts to ask it again, lower."
-      ],
-      "choices": [
-        {
-          "text": "*Tell her the truth: there isn’t a difference you can explain. It’s still no.*",
-          "tag": "Candor",
-          "set": {
-            "s2e7_rung": "candor",
-            "soul.honesty": "+1",
-            "rel.skye.trust": "+1",
-            "rel.skye.heat": "+1",
-            "resolve.jack": "-1"
-          },
-          "cue": "Skye heard the truth.",
-          "key": "In daylight Skye asked you the difference, and you told her you didn’t have one — and kept the no.",
-          "response": [
-            "He tells her the truth, in the light, because it’s the only thing in the room he can’t be caught out in, and because she asked him the way she asks about tides — to know.",
-            "That he went looking for the difference and it isn’t there. That he’s not going to tell her what they just did was nothing, because it wasn’t nothing — not to him, and not, he’s fairly sure, to God, and she can laugh at that part if she wants to. She doesn’t. And that he’s not going to tell her the one thing is different because of some rule he can recite, because he could recite it, and she’d hear him reciting.",
-            "She listens with her chin on his breastbone and her eyes on his. When he stops there’s nothing but the surf through the window.",
-            "“So what is it, then?” she says. “If it isn’t a difference.” She isn’t teasing. She has her hand over his heart, feeling for the answer through the bone.",
-            "He gives her the only true thing he has left.",
-            "“I don’t have an argument. I have a no.”"
-          ],
-          "goto": "s04a"
-        },
-        {
-          "text": "*Let it go to the very edge before you say it.*",
-          "tag": "Reckless",
-          "set": {
-            "s2e7_rung": "reckless",
-            "trait.reckless": "+1",
-            "rel.skye.heat": "+2",
-            "resolve.jack": "-2"
-          },
-          "key": "In daylight you let it go to the very edge before you said it — and kept the no.",
-          "response": [
-            "He doesn’t answer her. She stops asking with words, and he lets her ask the other way, and lets it come.",
-            "He lets it come all the way. To the edge of the thing she’s asking about and then the last of the edge, the place where answering and not answering are the same breath, where nothing has happened yet and everything is about to, and both of them know exactly how close it is, to the width of a word — her eyes open on his, the sun on both their faces, the surf loud below the window. He has never let it come this far. He can feel her knowing it, and feel her waiting, holding her breath, her fingers gone still on the back of his neck.",
-            "Her mouth is open against his. Her heart is going so hard he can feel it in his own chest, and his in hers, and neither rhythm is his to choose anymore. Nothing has happened that can’t be stopped. Stopping is all it is. It takes everything he has, and then it takes a little more than that, from somewhere he didn’t know he was keeping anything.",
-            "He stops. He says it against her mouth, hoarse, with no breath left over to say it with.",
-            "“I don’t have an argument. I have a no.”"
-          ],
-          "goto": "s04a"
-        },
-        {
-          "text": "*Say it before she finishes asking — in the light — and then don’t stop anything else.*",
-          "tag": "Restraint",
-          "if": "resolve.jack>=3",
-          "set": {
-            "s2e7_rung": "restraint",
-            "trait.control": "+1",
-            "rel.skye.warmth": "+1",
-            "rel.skye.heat": "+1",
-            "resolve.jack": "-1"
-          },
-          "key": "In daylight you said the no before Skye finished asking, and didn’t stop anything else.",
-          "response": [
-            "He says it into the middle of her sentence, in the full light, so she can watch his face while he does: “I don’t have an argument. I have a no.”",
-            "She stops with her mouth open on the rest of it.",
-            "And then, because the no is about one thing and only the one thing, he shows her so. He pulls her back down into the sun on the sheets and doesn’t stop anything else — doesn’t reach for the blanket, or the joke, or the cord of the blind — and kisses her until she’s laughing against his teeth, and then until she isn’t.",
-            "She tries to argue once, with her mouth busy, and loses track of the argument halfway through, and says so, indignant. When she comes up for air she says, “Say it again. I missed it,” which is a lie, and he says it again into her hair, the same size as the first time.",
-            "“I don’t have an argument. I have a no.”"
-          ],
-          "goto": "s04a"
-        },
-        {
-          "text": "*Hold her and give her the one reason you have, badly.*",
-          "tag": "Sincerity",
-          "set": {
-            "s2e7_rung": "sincerity",
-            "trait.sincerity": "+1",
-            "rel.skye.warmth": "+1",
-            "rel.skye.heat": "+1",
-            "resolve.jack": "-1"
-          },
-          "key": "In daylight you held Skye and gave her the one reason you have, badly — and kept the no.",
-          "response": [
-            "He gets his arms around her and pulls her down against him, her cheek on his collarbone, and holds on, and tries.",
-            "It’s the one thing he’d be promising with, he tells her. Everything else they do, he does knowing what it is, and he’ll answer for it, and he keeps doing it anyway, apparently — that part comes out wrong. But the one thing is a promise. It’s the body saying *for good*, and he can’t say for good yet; he’s eighteen, he’s — It comes out worse than that, all of it, in pieces, with the surf louder than he is, and he knows how bad it sounds before each piece is out.",
-            "He says something about his mother and stops. He says something about promises that comes out sounding like the inside of a greeting card, and stops again. She lets him get through every piece. She doesn’t help him. When he runs out she lifts her head off his collarbone to look at him, close, with the sun in her eyelashes.",
-            "He gives up on the reasons and gives her what’s under them.",
-            "“I don’t have an argument. I have a no.”"
-          ],
-          "goto": "s04a"
-        }
-      ]
+    {
+     "text": "“Don’t bring a sign. They’re heavier than they look.”",
+     "tag": "Wit",
+     "set": {
+      "s2e7_coming": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“I’m bringing coffee,” she says. “Coffee’s lighter.”",
+      "She’s up and backing through the screen door ahead of him, still arguing about the sign she isn’t bringing — what it would say, what font, whether a sign that just said HI on a stick would get her killed or elected — and she argues it up the stairs backward, one step above him, which puts her mouth exactly level with his, and she knows it, and keeps arguing."
+     ],
+     "goto": "s04"
     },
-    "s04a": {
-      "slug": "FRIDAY · 3:50 PM · DEL PLAYA LANE, HER ROOM — THE LIGHT ON THE WALL",
-      "body": [
-        "Skye laughs.",
-        "It comes up out of her into his shoulder, helpless — at him, because he lost, because he had nothing left and said no anyway, as if no were a thing you could just have — and she laughs until the mattress shakes and her hair is in both their mouths.",
-        "“You lost,” she says, into the shoulder. “You lost, and you won anyway. By forfeit. You can’t win by forfeit, there are *rules* —” She can’t get the rest out. She comes up for air and tries again. “That,” she says, “is the most annoying thing anyone has ever done to me in daylight.”",
-        "She lifts her head. Her eyes are wet from laughing, and her mouth is still going at one corner, and she looks at him from very close, memorizing something. She doesn’t argue it any further. She kisses him instead, slowly, and doesn’t stop.",
-        "She keeps the no exactly where he put it. The one thing is out of the room and nothing else is, and the afternoon doesn’t cool by a degree. It goes on in the full light, as long and as near as it can go without crossing, his mouth and her hands and the sun on the two of them, her heel hooked behind his knee, the sweat cooling on the small of her back in the wind from the window and coming again, and every time it comes up against the line she stops there, precisely, her eyes open, and waits for him to know where they are, and then starts again from somewhere else. She takes her time with him with the light on, and lets him take his with her, and nobody in the room pretends not to be looking. Over the dresser the square of sun slides down the wall a little at a time, across the drawer pulls and the mirror and down toward the corner, the clock of the whole afternoon, and they let it go where it’s going. Downstairs the record runs out, and nobody goes to turn it over.",
-        "When it has nearly reached the corner she’s on her side with her head on his arm, watching it. Her face in the sun has nothing on it, not even the sunglasses: a crease from the pillow down one cheek, a little burn across her nose from the drive with the top down, her eyelashes pale at the tips where the light comes through them. He has seen this face on Gloria’s Zenith at the Anchor with every hair put where somebody wanted it. He has never seen it like this, in the afternoon, with no one deciding anything about it.",
-        "“Every time anybody’s seen me in daylight,” she says, “there was a crew.”",
-        "The square is a hand’s width from the floor.",
-        "“Somebody with a meter at my face. Somebody who knew where the sun was going to be.” She watches it. “I never had to look.”",
-        "He doesn’t answer her. He reaches down for the sheet and brings it up over the two of them, as far as her shoulders and no farther, so the sun is still on her face.",
-        "The square slides into the corner and thins to a bar, and the bar goes off the wall, and the room is just a room in the late afternoon, with the window open and the sea in it."
-      ],
-      "next": "s05"
-    },
-    "s05": {
-      "slug": "FRIDAY · 5:20 PM · DEL PLAYA LANE, THE FRONT ROOM — HOPE FOR HAITI NOW",
-      "set": {
-        "skye_skylark_haiti": true,
-        "rel.skye.trust": "+1"
-      },
-      "body": [
-        "Tomás’s television hums before it shows anything — a thin high whine from somewhere deep in its back — and then the picture swims up out of the dark a little green. It has been green since whoever left a rear-projection set the size of a refrigerator in this house left it. Tomás goes through six channels with the remote to prove a point he never states, and it’s the same stage on all six. Candles. A long dark room. Sol and Tomás are on the couch with a mixing bowl of tortilla chips in the middle cushion, and Jack is on the floor with his back against the couch, and Skye is beside him on the floor with her knees up, in his flannel and nothing much else.",
-        "George Clooney is at the front of it in Los Angeles in a dark suit, being grave, which suits him. Behind him are long tables of famous people in headsets answering telephones — a man from a sitcom, a singer, an actor Jack’s mother would know, writing down credit card numbers with their heads bent like people taking an exam. Wyclef is in New York. A man with a guitar Jack would know anywhere stands alone in a spotlight and sings something old and slow, and the couch is quiet through all of it.",
-        "Skye has gone quiet — the quiet she does in a full room.",
-        "“Nobody called me,” she says.",
-        "Sol looks over. Skye has her eyes on the screen.",
-        "“It’s not a complaint. That’s how it works.” She points with a chip at the long tables, and her voice is a professional’s, level, a woman going over somebody else’s books. “They asked people with movies. You get a phone if you’ve got something opening in the spring, or if you need the spring to forget something. That one’s opening. That one’s forgetting. Somebody’s publicist made a call for every chair in that room, and Corinne could tell you which by now.” She eats the chip. “And it works. You’ll tell your friends George Clooney took your Visa, and you’ll give twice what you meant to. It’s a little disgusting and it works, and I’d do it in a second. Five years ago they’d have put me at the end of a table in a cardigan, between a soap and a kid from a cereal ad, and I’d have been thrilled.”",
-        "Then she sits up straight and puts an imaginary headset on, and becomes the girl at the end of the table, radiant, sincere, one finger to her ear. “Hi! It’s a person from a show you’ve heard of. How much do you love Haiti?” A nod, enormous. “That’s *so* much. Can you love it more?”",
-        "Tomás laughs through his nose. Sol doesn’t, and looks at Skye. Skye takes her finger down from her ear and puts her hand back in the chip bowl, and leaves it there without taking one.",
-        "He doesn’t try to fix it. There’s a number running along the bottom of the screen in white, under the candles, and he reads it to her, slowly, every digit, the way Ma reads a phone number to Nonna, so she has it.",
-        "Skye looks at him. She gets her white phone out of the pocket of his flannel and turns it over, and from a slot in the back of the case she slides a black card he has never seen, plain, a card an accountant in Encino gave her once for emergencies.",
-        "She dials. He says it from the floor: “Corporations have no consciences.”",
-        "“Skylark does tonight,” says Skye, with the phone at her ear.",
-        "Somebody answers, a long way off, and she says good evening and thanks them for being there so late. She spells it for the volunteer. *S-K-Y-L-A-R-K.* Pictures. Inc. Like the bird, yes. She reads the card number off the black card in a clear voice with her hair in her face, and the expiration date, and the zip code in Encino, and then the volunteer must ask her how much, because she says, flat, as a fact: “Twenty-five thousand dollars.”",
-        "Jack watches her give it away with the phone tucked against her shoulder, reading numbers to a stranger in a room full of famous people who didn’t call her, and he couldn’t look anywhere else if the house came down around them.",
-        "She thanks the volunteer. She hangs up.",
-        "Without a word, Tomás leans down off the couch and sets the bowl of tortilla chips in her lap.",
-        "On the screen the man with the guitar has finished, and the room in Los Angeles is applauding in the dark, and Sol reaches for the remote and turns it up."
-      ],
-      "next": "s06"
-    },
-    "s06": {
-      "slug": "FRIDAY · 11:35 PM · DEL PLAYA LANE, THE FRONT ROOM — CONAN’S LAST SHOW",
-      "set": {
-        "resolve.jack": "-1"
-      },
-      "body": [
-        "By eleven-thirty-five the front room is lit by the television and nothing else, green and blue and moving on all of their faces, and the pop Jack brought is going flat on the floor in four mismatched glasses.",
-        {
-          "if": "s2e6_wed==\"pages\"",
-          "text": "She sets the popcorn in his lap before the monologue. “You know your job.”"
-        },
-        {
-          "if": "s2e6_wed!=\"pages\"",
-          "text": "She made the popcorn, as promised, in the biggest mixing bowl in the house, and puts it in his lap, and he holds it."
-        },
-        "Sol and Tomás are on the floor in front of the couch, Sol with her back against Tomás’s knees and a blanket around both of them, and Jack and Skye have the couch, and the couch has a spring in the middle that has opinions. Conan comes out to an ovation that won’t stop. The monologue is about NBC, all of it, and the audience laughs loudest at the jokes about the building they’re sitting in. Tom Hanks comes on and is kind. Neil Young comes on and plays, and Tomás sits up straight for him, reverently, a man in church.",
-        "Skye watches with her feet tucked under her and a fistful of popcorn she forgets to eat. “Look at his hands,” she says, about Conan. “Look. He doesn’t know where to put them. Sixteen years and he still doesn’t know where to put his hands.” She says it like good news about an old friend.",
-        "At the end Will Ferrell comes out in a long blond wig with a cowbell, and the band comes in behind him, and Beck and Ben Harper and Billy Gibbons, and it’s “Free Bird,” the whole thing, the full long ridiculous run of it, and Tomás is on his feet in the blue light playing every note of it on an air guitar with his eyes shut, and Sol is laughing silently into the blanket, and Skye is laughing so hard she has to put her popcorn down.",
-        "Then Conan is at the front of it, alone, with the band quiet behind him, and he says goodbye. He thanks everybody. He says — Jack has it only as an idea, the way you keep a homily — that he hates cynicism, that it doesn’t lead anywhere; that if you work hard and you’re kind, things turn out better than you thought. He says it fast, and for once his hands are still.",
-        "Skye has stopped laughing.",
-        "“When I was fourteen,” she says, to the screen, “my mother rented a two-bedroom in Studio City. For the commute. The lot was eleven minutes away. She timed it.” Her voice is ordinary. “There was a TV on the dresser at the end of my bed, the size of a lunchbox. I had a six o’clock call most days and I could not sleep. I could never sleep. And at twelve thirty-five he came on, from New York, on this little set at the end of the bed, with the sound way down so she wouldn’t hear it through the wall —” She stops. “He was the only person on television who looked as scared as I was. Every night. Like he’d just been told he was on. And he did it anyway.”",
-        "On the screen the band has started up again, and people are crying in the audience, and Conan is shaking hands.",
-        "“I used to do the monologue with him,” Skye says. “Under the covers. I knew the rhythm before I knew any of the jokes.” And then she’s crying — not for Conan, who is fine, who has thirty-two million dollars and a staff with jobs, but for the girl at the end of the bed in Studio City, with the sound down so her mother wouldn’t hear, running lines with a man in New York at a quarter to one in the morning because there was nobody in the apartment to run them with.",
-        "Jack puts the bowl down on the floor, and she doesn’t ask him to. He puts his hand on her back, between her shoulder blades, where she carries the bad nights, and keeps it there. She leans back into it. Sol, on the floor, reaches up without turning around and holds Skye’s ankle a minute, and lets go.",
-        "At ten to one Skye walks him to the door. He has an alarm set for four-thirty and she knows it; she has said so three times, in three voices. On the porch in the dark she straightens the collar of the Carhartt with both hands, as if she’s sending him to school.",
-        "“Go be holy,” she says.",
-        {
-          "type": "break"
-        },
-        "He walks home up Del Playa with his hands in his pockets and the cold coming off the water. The street has dried in the sun and gone damp again in the dark, and the eucalyptus at the top of the lane are dripping their menthol onto the sidewalk.",
-        "He knows what this afternoon was. He isn’t going to pretend to himself that it was anything else, or anything less; he never has been any good at that, and he isn’t going to start on Del Playa at one in the morning. The van leaves at five. At three-thirty tomorrow afternoon, when Osei opens the closet door at St. Brendan’s, he’ll be in San Francisco. *Next Saturday,* Osei said. *Whatever you bring.* He’s bringing more than he had.",
-        "And he is walking home happier than he has ever been in his life. He can feel it in his legs. He knows to the dollar what it costs, and he’s happy anyway, and both of those are true at once, on the same street, and neither one is going to talk the other out of it tonight.",
-        "At the top of the lane he stops and looks back down it, past the dark houses, to the Channel. Half a moon is going down into the water to the west, white, sharp-edged as something cut with scissors, the first moon anybody in Marisol has seen in a week."
-      ],
-      "next": "s07"
+    {
+     "text": "“Some of it’s going to be hard to look at. For you.”",
+     "tag": "Sincerity",
+     "set": {
+      "s2e7_coming": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "“Then I’ll look at you,” she says.",
+      "She says it lightly, and doesn’t take it back. On the top step Sol stops sanding. Sol starts again.",
+      "Skye stands and holds the screen door open with her hip, and goes in ahead of him and up the stairs into the dark of the house with one hand trailing behind her on the rail, low, where he can reach it."
+     ],
+     "goto": "s04"
     }
+   ]
+  },
+  "s04": {
+   "slug": "FRIDAY · 2:30 PM · DEL PLAYA LANE, HER ROOM — DAYLIGHT",
+   "set": {
+    "skye_s2c": true,
+    "confession_owed": "+1",
+    "soul.restraint": "-1"
+   },
+   "body": [
+    "He has only ever been in this room at night. Now the window over the mattress is open on the Channel, and the Channel is bright as tin all the way out to the islands, and the surf comes up through the window loud after six days of storm, so loud they would have to raise their voices to fight. On the wall over the dresser the sun has laid down a square of itself, the shape of the window, sharp at the edges and a little crooked, on the old plaster.",
+    "Skye reaches past him for the cord of the blind.",
+    "It’s an old roll-up blind gone the color of weak tea, and he has never seen it down. There has never been anything in here to keep out. Her hand is on the cord, and her eyes are on the cord and not on him, and he has never seen her do that either.",
+    "He puts his hand over hers on the cord, and holds it there, and doesn’t let her pull. She lets him. The blind stays up.",
+    "“It’s very bright,” she says.",
+    "“It’s the sun.”",
+    "“I’ve heard of it.” She takes her hand back from under his and puts it on his face instead, and turns it to the window, so the light is on him first. “I just never got a good look at you in it.”",
+    "“*That one most*,” she says against his ear, in his own words, which she seems to have been carrying around in her pocket all week.",
+    "After that there’s nothing to argue with but the daylight.",
+    "In the dark there was always somewhere for his face to go. Under the lamp there was a circle and a room beyond it, and the room was a kind of privacy. Here there is no beyond. The sun is on the sheets and on her shoulders and down the long line of her to her heels, and it’s on him, all of him, and there is nowhere in this room that isn’t lit, and nothing either of them does in it will be able to pass itself off as a dream afterward. The wind comes in off the water and raises the gooseflesh along her arms and he puts his mouth there and watches it go down again. Her skin is warm on the side the sun has been on and cool on the other, and he finds the line where one turns into the other with his hand, and follows it, and she shivers and laughs and tells him he’s doing geography. He wants her. He has wanted her since a window seat in Montecito, and in this light the wanting has nowhere to hide either, and he doesn’t ask it to.",
+    "And this time they don’t stop at the edge of it. Everything but the one thing — for the first time, all of the rest of it — and they take each other the rest of the way. She goes first, unhurried, propped where she can watch his face in the full sun, and there’s no joke he can get to in time and no dark to turn his face into, and she watches all of it: his breath going ragged and then going entirely, his hand knotted in the sheet, her name coming out of him like something he’s dropped and can’t pick up. When it’s over she laughs, low and pleased with herself, with her forehead on his stomach, and he can feel the laugh more than hear it.",
+    "Then it’s his turn to learn something, and he takes his time about it, because she did. He learns what her face does when it has stopped performing anything for anyone. Her laugh breaks in the middle and turns into something that isn’t a laugh; her hand comes down on the back of his head and grips; she says his name to the ceiling, and then again, the second time like an argument she has decided to lose, and she doesn’t care who on Del Playa has a window open. Somewhere in the middle of it the mattress, which lives on the floor and has never had a frame, travels most of a foot toward the wall, and afterward they both lift their heads to look at how far it went, and she says, “Sol’s going to hear about that,” and he says Sol already did. Downstairs Tomás’s record goes on to the next song, discreetly, like a waiter leaving a room.",
+    "Later she props herself on an elbow in the sun from the window, her hair falling forward over one shoulder, and looks down at him. Over the dresser the square of light has slid a hand’s width down the wall.",
+    "“So what’s the difference now?” she says.",
+    "Her voice is the one from the Lagoon path, the walk-and-explain voice, lying down. “After that? Tell me the difference between that and the thing.” She puts one finger in the middle of his chest, not to push. “Because every time I find your line, it’s somewhere else. It was a shirt once. Then it was my underwear. Last Saturday there wasn’t anything left of it but a word.” The finger taps, once. “And now it isn’t even that. Now it’s — what? Show me where it is. I’m not trying to get you to. I’m asking. I want to understand it.”",
+    "He goes looking for it.",
+    "There has always been one. He comes from a kitchen where people argue the line between a mortal sin and a venial one over the dishes, and he has always had the distinction ready, the word for what’s allowed and the word for what isn’t, a fence he could show her. He goes to where the fence should be, and there isn’t one. Not for this. Augustine prayed to be made chaste, *but not yet*, and Jack has always found that line funny, and he isn’t laughing. He isn’t going to lie on her mattress in the sun and tell her that what they just did was nothing. He knows what it was. He knew at the door, and on the stairs, and he’ll know in the coat closet at St. Brendan’s, saying it out loud to a man behind a linen screen. And he isn’t going to tell her the one thing is different in some way he could draw for her, because he can’t draw it, and she would see through it inside a minute. The one thing is the one thing he isn’t going to do without a promise. He can’t make that true by explaining it. He opens his mouth and there is nothing ready in it at all.",
+    "She has watched him lose arguments, to her, gladly, under a dead umbrella. She has never seen him without one. It shows on her face — interest first, and then something quicker, and less sure of itself.",
+    "She comes up nearer on her elbow, her hair falling on his chest, and starts to ask it again, lower."
+   ],
+   "choices": [
+    {
+     "text": "*Tell her the truth: there isn’t a difference you can explain. It’s still no.*",
+     "tag": "Candor",
+     "set": {
+      "s2e7_rung": "candor",
+      "soul.honesty": "+1",
+      "rel.skye.trust": "+1",
+      "rel.skye.heat": "+1",
+      "resolve.jack": "-1"
+     },
+     "cue": "Skye heard the truth.",
+     "key": "In daylight Skye asked you the difference, and you told her you didn’t have one — and kept the no.",
+     "response": [
+      "He tells her the truth, in the light, because it’s the only thing in the room he can’t be caught out in, and because she asked him the way she asks about tides — to know.",
+      "That he went looking for the difference and it isn’t there. That he’s not going to tell her what they just did was nothing, because it wasn’t nothing — not to him, and not, he’s fairly sure, to God, and she can laugh at that part if she wants to. She doesn’t. And that he’s not going to tell her the one thing is different because of some rule he can recite, because he could recite it, and she’d hear him reciting.",
+      "She listens with her chin on his breastbone and her eyes on his. When he stops there’s nothing but the surf through the window.",
+      "“So what is it, then?” she says. “If it isn’t a difference.” She isn’t teasing. She has her hand over his heart, feeling for the answer through the bone.",
+      "He gives her the only true thing he has left.",
+      "“I don’t have an argument. I have a no.”"
+     ],
+     "goto": "s04a"
+    },
+    {
+     "text": "*Let it go to the very edge before you say it.*",
+     "tag": "Reckless",
+     "set": {
+      "s2e7_rung": "reckless",
+      "trait.reckless": "+1",
+      "rel.skye.heat": "+2",
+      "resolve.jack": "-2"
+     },
+     "key": "In daylight you let it go to the very edge before you said it — and kept the no.",
+     "response": [
+      "He doesn’t answer her. She stops asking with words, and he lets her ask the other way, and lets it come.",
+      "He lets it come all the way. To the edge of the thing she’s asking about and then the last of the edge, the place where answering and not answering are the same breath, where nothing has happened yet and everything is about to, and both of them know exactly how close it is, to the width of a word — her eyes open on his, the sun on both their faces, the surf loud below the window. He has never let it come this far. He can feel her knowing it, and feel her waiting, holding her breath, her fingers gone still on the back of his neck.",
+      "Her mouth is open against his. Her heart is going so hard he can feel it in his own chest, and his in hers, and neither rhythm is his to choose anymore. Nothing has happened that can’t be stopped. Stopping is all it is. It takes everything he has, and then it takes a little more than that, from somewhere he didn’t know he was keeping anything.",
+      "He stops. He says it against her mouth, hoarse, with no breath left over to say it with.",
+      "“I don’t have an argument. I have a no.”"
+     ],
+     "goto": "s04a"
+    },
+    {
+     "text": "*Hold her and give her the one reason you have, badly.*",
+     "tag": "Sincerity",
+     "set": {
+      "s2e7_rung": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.warmth": "+1",
+      "rel.skye.heat": "+1",
+      "resolve.jack": "-1"
+     },
+     "key": "In daylight you held Skye and gave her the one reason you have, badly — and kept the no.",
+     "response": [
+      "He gets his arms around her and pulls her down against him, her cheek on his collarbone, and holds on, and tries.",
+      "It’s the one thing he’d be promising with, he tells her. Everything else they do, he does knowing what it is, and he’ll answer for it, and he keeps doing it anyway, apparently — that part comes out wrong. But the one thing is a promise. It’s the body saying *for good*, and he can’t say for good yet; he’s eighteen, he’s — It comes out worse than that, all of it, in pieces, with the surf louder than he is, and he knows how bad it sounds before each piece is out.",
+      "He says something about his mother and stops. He says something about promises that comes out sounding like the inside of a greeting card, and stops again. She lets him get through every piece. She doesn’t help him. When he runs out she lifts her head off his collarbone to look at him, close, with the sun in her eyelashes.",
+      "He gives up on the reasons and gives her what’s under them.",
+      "“I don’t have an argument. I have a no.”"
+     ],
+     "goto": "s04a"
+    }
+   ]
+  },
+  "s04a": {
+   "slug": "FRIDAY · 3:50 PM · DEL PLAYA LANE, HER ROOM — THE LIGHT ON THE WALL",
+   "body": [
+    "Skye laughs.",
+    "It comes up out of her into his shoulder, helpless — at him, because he lost, because he had nothing left and said no anyway, as if no were a thing you could just have — and she laughs until the mattress shakes and her hair is in both their mouths.",
+    "“You lost,” she says, into the shoulder. “You lost, and you won anyway. By forfeit. You can’t win by forfeit, there are *rules* —” She can’t get the rest out. She comes up for air and tries again. “That,” she says, “is the most annoying thing anyone has ever done to me in daylight.”",
+    "She lifts her head. Her eyes are wet from laughing, and her mouth is still going at one corner, and she looks at him from very close, memorizing something. She doesn’t argue it any further. She kisses him instead, slowly, and doesn’t stop.",
+    "She keeps the no exactly where he put it. The one thing is out of the room and nothing else is, and the afternoon doesn’t cool by a degree. It goes on in the full light, as long and as near as it can go without crossing, his mouth and her hands and the sun on the two of them, her heel hooked behind his knee, the sweat cooling on the small of her back in the wind from the window and coming again, and every time it comes up against the line she stops there, precisely, her eyes open, and waits for him to know where they are, and then starts again from somewhere else. She takes her time with him with the light on, and lets him take his with her, and nobody in the room pretends not to be looking. Over the dresser the square of sun slides down the wall a little at a time, across the drawer pulls and the mirror and down toward the corner, the clock of the whole afternoon, and they let it go where it’s going. Downstairs the record runs out, and nobody goes to turn it over.",
+    "When it has nearly reached the corner she’s on her side with her head on his arm, watching it. Her face in the sun has nothing on it, not even the sunglasses: a crease from the pillow down one cheek, a little burn across her nose from the drive with the top down, her eyelashes pale at the tips where the light comes through them. He has seen this face on Gloria’s Zenith at the Anchor with every hair put where somebody wanted it. He has never seen it like this, in the afternoon, with no one deciding anything about it.",
+    "“Every time anybody’s seen me in daylight,” she says, “there was a crew.”",
+    "The square is a hand’s width from the floor.",
+    "“Somebody with a meter at my face. Somebody who knew where the sun was going to be.” She watches it. “I never had to look.”",
+    "He doesn’t answer her. He reaches down for the sheet and brings it up over the two of them, as far as her shoulders and no farther, so the sun is still on her face.",
+    "The square slides into the corner and thins to a bar, and the bar goes off the wall, and the room is just a room in the late afternoon, with the window open and the sea in it."
+   ],
+   "next": "s05"
+  },
+  "s05": {
+   "slug": "FRIDAY · 5:20 PM · DEL PLAYA LANE, THE FRONT ROOM — HOPE FOR HAITI NOW",
+   "set": {
+    "skye_skylark_haiti": true,
+    "rel.skye.trust": "+1"
+   },
+   "body": [
+    "Tomás’s television hums before it shows anything — a thin high whine from somewhere deep in its back — and then the picture swims up out of the dark a little green. It has been green since whoever left a rear-projection set the size of a refrigerator in this house left it. Tomás goes through six channels with the remote to prove a point he never states, and it’s the same stage on all six. Candles. A long dark room. Sol and Tomás are on the couch with a mixing bowl of tortilla chips in the middle cushion, and Jack is on the floor with his back against the couch, and Skye is beside him on the floor with her knees up, in his flannel and nothing much else.",
+    "George Clooney is at the front of it in Los Angeles in a dark suit, being grave, which suits him. Behind him are long tables of famous people in headsets answering telephones — a man from a sitcom, a singer, an actor Jack’s mother would know, writing down credit card numbers with their heads bent like people taking an exam. Wyclef is in New York. A man with a guitar Jack would know anywhere stands alone in a spotlight and sings something old and slow, and the couch is quiet through all of it.",
+    "Skye has gone quiet — the quiet she does in a full room.",
+    "“Nobody called me,” she says.",
+    "Sol looks over. Skye has her eyes on the screen.",
+    "“It’s not a complaint. That’s how it works.” She points with a chip at the long tables, and her voice is a professional’s, level, a woman going over somebody else’s books. “They asked people with movies. You get a phone if you’ve got something opening in the spring, or if you need the spring to forget something. That one’s opening. That one’s forgetting. Somebody’s publicist made a call for every chair in that room, and Corinne could tell you which by now.” She eats the chip. “And it works. You’ll tell your friends George Clooney took your Visa, and you’ll give twice what you meant to. It’s a little disgusting and it works, and I’d do it in a second. Five years ago they’d have put me at the end of a table in a cardigan, between a soap and a kid from a cereal ad, and I’d have been thrilled.”",
+    "Then she sits up straight and puts an imaginary headset on, and becomes the girl at the end of the table, radiant, sincere, one finger to her ear. “Hi! It’s a person from a show you’ve heard of. How much do you love Haiti?” A nod, enormous. “That’s *so* much. Can you love it more?”",
+    "Tomás laughs through his nose. Sol doesn’t, and looks at Skye. Skye takes her finger down from her ear and puts her hand back in the chip bowl, and leaves it there without taking one.",
+    "He doesn’t try to fix it. There’s a number running along the bottom of the screen in white, under the candles, and he reads it to her, slowly, every digit, the way Ma reads a phone number to Nonna, so she has it.",
+    "Skye looks at him. She gets her white phone out of the pocket of his flannel and turns it over, and from a slot in the back of the case she slides a black card he has never seen, plain, a card an accountant in Encino gave her once for emergencies.",
+    "She dials. He says it from the floor: “Corporations have no consciences.”",
+    "“Skylark does tonight,” says Skye, with the phone at her ear.",
+    "Somebody answers, a long way off, and she says good evening and thanks them for being there so late. She spells it for the volunteer. *S-K-Y-L-A-R-K.* Pictures. Inc. Like the bird, yes. She reads the card number off the black card in a clear voice with her hair in her face, and the expiration date, and the zip code in Encino, and then the volunteer must ask her how much, because she says, flat, as a fact: “Twenty-five thousand dollars.”",
+    "Jack watches her give it away with the phone tucked against her shoulder, reading numbers to a stranger in a room full of famous people who didn’t call her, and he couldn’t look anywhere else if the house came down around them.",
+    "She thanks the volunteer. She hangs up.",
+    "Without a word, Tomás leans down off the couch and sets the bowl of tortilla chips in her lap.",
+    "On the screen the man with the guitar has finished, and the room in Los Angeles is applauding in the dark, and Sol reaches for the remote and turns it up."
+   ],
+   "next": "s06"
+  },
+  "s06": {
+   "slug": "FRIDAY · 11:35 PM · DEL PLAYA LANE, THE FRONT ROOM — CONAN’S LAST SHOW",
+   "set": {
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "By eleven-thirty-five the front room is lit by the television and nothing else, green and blue and moving on all of their faces, and the pop Jack brought is going flat on the floor in four mismatched glasses.",
+    "She made the popcorn, as promised, in the biggest mixing bowl in the house, and puts it in his lap, and he holds it.",
+    "Sol and Tomás are on the floor in front of the couch, Sol with her back against Tomás’s knees and a blanket around both of them, and Jack and Skye have the couch, and the couch has a spring in the middle that has opinions. Conan comes out to an ovation that won’t stop. The monologue is about NBC, all of it, and the audience laughs loudest at the jokes about the building they’re sitting in. Tom Hanks comes on and is kind. Neil Young comes on and plays, and Tomás sits up straight for him, reverently, a man in church.",
+    "Skye watches with her feet tucked under her and a fistful of popcorn she forgets to eat. “Look at his hands,” she says, about Conan. “Look. He doesn’t know where to put them. Sixteen years and he still doesn’t know where to put his hands.” She says it like good news about an old friend.",
+    "At the end Will Ferrell comes out in a long blond wig with a cowbell, and the band comes in behind him, and Beck and Ben Harper and Billy Gibbons, and it’s “Free Bird,” the whole thing, the full long ridiculous run of it, and Tomás is on his feet in the blue light playing every note of it on an air guitar with his eyes shut, and Sol is laughing silently into the blanket, and Skye is laughing so hard she has to put her popcorn down.",
+    "Then Conan is at the front of it, alone, with the band quiet behind him, and he says goodbye. He thanks everybody. He says — Jack has it only as an idea, the way you keep a homily — that he hates cynicism, that it doesn’t lead anywhere; that if you work hard and you’re kind, things turn out better than you thought. He says it fast, and for once his hands are still.",
+    "Skye has stopped laughing.",
+    "“When I was fourteen,” she says, to the screen, “my mother rented a two-bedroom in Studio City. For the commute. The lot was eleven minutes away. She timed it.” Her voice is ordinary. “There was a TV on the dresser at the end of my bed, the size of a lunchbox. I had a six o’clock call most days and I could not sleep. I could never sleep. And at twelve thirty-five he came on, from New York, on this little set at the end of the bed, with the sound way down so she wouldn’t hear it through the wall —” She stops. “He was the only person on television who looked as scared as I was. Every night. Like he’d just been told he was on. And he did it anyway.”",
+    "On the screen the band has started up again, and people are crying in the audience, and Conan is shaking hands.",
+    "“I used to do the monologue with him,” Skye says. “Under the covers. I knew the rhythm before I knew any of the jokes.” And then she’s crying — not for Conan, who is fine, who has thirty-two million dollars and a staff with jobs, but for the girl at the end of the bed in Studio City, with the sound down so her mother wouldn’t hear, running lines with a man in New York at a quarter to one in the morning because there was nobody in the apartment to run them with.",
+    "Jack puts the bowl down on the floor, and she doesn’t ask him to. He puts his hand on her back, between her shoulder blades, where she carries the bad nights, and keeps it there. She leans back into it. Sol, on the floor, reaches up without turning around and holds Skye’s ankle a minute, and lets go.",
+    "At ten to one Skye walks him to the door. He has an alarm set for four-thirty and she knows it; she has said so three times, in three voices. On the porch in the dark she straightens the collar of the Carhartt with both hands, as if she’s sending him to school.",
+    "“Go be holy,” she says.",
+    {
+     "type": "break"
+    },
+    "He walks home up Del Playa with his hands in his pockets and the cold coming off the water. The street has dried in the sun and gone damp again in the dark, and the eucalyptus at the top of the lane are dripping their menthol onto the sidewalk.",
+    "He knows what this afternoon was. He isn’t going to pretend to himself that it was anything else, or anything less; he never has been any good at that, and he isn’t going to start on Del Playa at one in the morning. The van leaves at five. At three-thirty tomorrow afternoon, when Osei opens the closet door at St. Brendan’s, he’ll be in San Francisco. *Next Saturday,* Osei said. *Whatever you bring.* He’s bringing more than he had.",
+    "And he is walking home happier than he has ever been in his life. He can feel it in his legs. He knows to the dollar what it costs, and he’s happy anyway, and both of those are true at once, on the same street, and neither one is going to talk the other out of it tonight.",
+    "At the top of the lane he stops and looks back down it, past the dark houses, to the Channel. Half a moon is going down into the water to the west, white, sharp-edged as something cut with scissors, the first moon anybody in Marisol has seen in a week."
+   ],
+   "next": "s07"
   }
+ }
 }
