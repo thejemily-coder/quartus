@@ -1852,3 +1852,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     no for now, but it's closer than it's ever been**, and says so. (A rung on the heat ladder and the hardest no yet;
     within the hard line. Her response: room's call within her co-design; it should read as hope to her, and as
     danger to the player.)
+- **After S2E05 (player feedback + notes).** "Great episode. **I love Skye so much.**"
+  - **Laney's aside should cover more of what's happened since the semester started** (not just the "learn a girl's
+    name" grievance): the airport video, the status, Sully's, his blowup at her, Lena disappearing, the way he's been
+    acting; the core grievance stays the same.
+  - **Jack is done (so he thinks) with Lena AND Laney**: he avoids both (the aside was unavoidable), and is **careful not
+    to avoid the rest of the friend group** (Theo, Margot, Kevin, Becca, the Newman crowd).
+  - **Jack is all in on Skye**, as the answer to Danny's and Nonna's questions. **He makes the effort with her, always.**
+    **He has started to learn her and read her better than almost anyone else** (her tells, her performances vs. her
+    real moments, what her mother does to her, when she needs quiet). Show it in specifics.
