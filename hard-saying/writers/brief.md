@@ -1830,3 +1830,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Revision (player): keep `s2e5_friday` as a choice.** On the skip path (Skye/the movie), **Jack's reason is that
     he's not listening to Julian play "Magdalena" again**, in narration, never said aloud. On the [bastille] path he
     goes braced for it (the dread present until Julian plays something else). Supersedes "remove the branch."
+- **Jack after the Sully's blowup (player; S2E05 tail → early February).** He tells himself he's **straight-up done
+  with Lena.** He knows he isn't: **"Magdalena" is still painful even to remember**, and he **thinks about it every
+  time he's forced to be in the room with her.** But he's so happy otherwise (Skye) that **he keeps away from her.**
+  - **The one change from December: he doesn't withdraw completely.** He wants to be **a better friend to Theo, Margot
+    and Kevin** than he was in December, so he **makes an effort to hang out with them while avoiding Lena when he
+    can** (awkward logistics with a shared friend group: arriving after she leaves, the hub-before-the-hub, Theo
+    caught in the middle, Laney's ice). Keeps the ensemble alive in the Skye era.
