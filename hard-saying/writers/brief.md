@@ -1964,3 +1964,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   out loud that he thinks Skye is **the answer** to three people this episode: **Ma** on Tuesday's phone call (she hears
   it in his voice before he says it), **Theo** (half-joking reaction, real worry underneath), and **Osei in confession**
   Wednesday night (pointed, not tender: "You think she's the answer. To what question?").
+- **S2E08 s02 patch (player): Jack expands his "No."** After Skye won't take it as a present, Jack tells her Osei
+  wouldn't say it: Osei would say what he said before (stop seeing her, or stop what happens; change the hour; see her
+  in daylight); there's a lot of good between two people, and what's good isn't something to avoid; it doesn't make up
+  for the bad, but it goes both ways: **the bad doesn't cancel out the good.** Skye: "Say the last part again"; "That's
+  not in the book." / "It's in him."; "I can live in the daylight column." Later beats (Wednesday's confession, NOLA)
+  may echo the line; it is Jack's, credited to Osei.
