@@ -2,7 +2,7 @@
 
 Built by the Context Packer for **S2E08 (Mon Jan 25 – Wed Jan 27, 2010)**. Every later agent reads this INSTEAD of the 1 MB bible. Excerpts are labeled `[source § heading]`. Verbatim blocks are marked VERBATIM; summaries are marked SUMMARY.
 
-**Authority order:** (1) the brief's newest entries and the player's notes below; (2) `writers/outlines/s2e08.md` rev. 1 (the plan — read it in full alongside this pack; it is NOT copied here); (3) this pack's canon digests; (4) the period sheet. Where this pack and the plan disagree, the brief wins, then the plan.
+**Authority order:** (1) the brief's newest entries ('After S2E07', 'S2E08 answers', end of brief.md) and the player's notes in §1.4 (these OVERRIDE any older line in this pack, the plan or the drafts; e.g. JACK says 'I love you' first; Kevin's lunch is S2E09); (2) `writers/outlines/s2e08.md` rev. 1 (the plan — read it in full alongside this pack; it is NOT copied here); (3) this pack's canon digests; (4) the period sheet. Where this pack and the plan disagree, the brief wins, then the plan.
 
 **Known conflicts resolved for you:**
 - Period sheet §8 note 2 says "the Alito moment is for later (E09)" and §0 says proxy fight #1 = "S2E05"; both are wrong. The sheet's own Trap 1 [V] and the plan govern: **Alito's head shake / "not true" happened DURING the Wed Jan 27 speech (6 p.m. PST)** and is in E08 (Hale's television, s12; Skye's Alito bit, s16). Proxy fight #1 and the status line are E08 (bible §23.2 and registry #59 as revised).
@@ -669,6 +669,52 @@ Built by the Context Packer for **S2E08 (Mon Jan 25 – Wed Jan 27, 2010)**. Eve
   desire and her game, not a check-in. It's the next rung, and it costs him in resolve and confession.)
 
 
+**[brief L1946, the newest entries; END of brief.md; included in full]**
+### After S2E07 (player feedback + directives for S2E08 on)
+- **Feedback:** "Incredible episode, all of it." Skye magnificent; the ensemble perfect; Laney and Theo laugh-out-loud
+  again. Keep doing exactly this.
+- **The Communion tension (player; left to Skye's character).** Jack is now *open* to doing those things again with
+  Skye. But Skye, having learned what it costs him (she knows Communion and confession now; she came to Mass, asked
+  him to explain it properly, prayed, walked at the March), may want to and still refuse, or hesitate, if it's going to
+  cost him Communion. **How she resolves it is hers to decide, in character** (Skye never coerces and never takes a no
+  as final, but she is also the one who stood for him at the Walk). The writers decide scene by scene; it should feel
+  like her choice, not the plot's.
+- **Escalation rule (player).** If the intimate scenes continue, **the heat, intensity and variety escalate every
+  time**: never the same scene twice, a new act, setting, rhythm or power dynamic each time, under the explicit,
+  specific standard. **The conversations afterward escalate too**: deeper, more honest, harder questions each time.
+- **Jack is truly falling in love (player).** Mass, her effort to understand his faith, their talks, the prayers, the
+  March for Life: Jack **truly thinks she's the answer.** Play it as sincere and earned, not infatuation; the player
+  should feel why he believes it (which makes the coming fall harder).
+- **S2E08 answers (player).** (1) Kevin's raincheck lunch **opens S2E09** (Thu Jan 28, Commons window table, "hour
+  four"); in S2E08 Kevin only texts a reminder on Wednesday, gated on `kevin_raincheck`. (2) **Jack says "I love you"
+  first** (not Skye): it surprises them both; she was braced to go first. The home/her-place fork stands. (3) Jack says
+  out loud that he thinks Skye is **the answer** to three people this episode: **Ma** on Tuesday's phone call (she hears
+  it in his voice before he says it), **Theo** (half-joking reaction, real worry underneath), and **Osei in confession**
+  Wednesday night (pointed, not tender: "You think she's the answer. To what question?").
+
+## 1.4 UPDATE (post-S2E07 publication): player notes for this run, VERBATIM from the workflow task, plus resolved save facts
+
+> Apply EVERY brief entry from 'After S2E07' and 'S2E08 answers' (end of writers/brief.md), plus the earlier raised heat standard and the 'what's the difference now' carry-forward. Specifically: (a) Player took the Kevin raincheck (kevin_raincheck=true): the lunch itself OPENS S2E09 (Thu Jan 28); in S2E08 add only a short Kevin reminder text on Wednesday ('hour four. Thursday.' in Kevin's voice), gated on kevin_raincheck. Note the S2E09 payoff in the nextTime/seeds. (b) JACK SAYS 'I LOVE YOU' FIRST in s16h/s16p (both forks), not Skye; it surprises them both; she was braced to go first; she says it back. Fix skye_said_love semantics (add jack_said_love_first:true) and every downstream line. (c) Jack says out loud he thinks Skye is THE ANSWER to: Ma on the Tuesday call (s09a/s09b: she hears it in his voice first), Theo (half-joking reaction with real worry underneath; find a natural Theo scene, e.g. s11 or s01), and Osei in confession s15 (pointed, not tender: 'You think she's the answer. To what question?'). (d) Jack is truly falling in love: Mass, her effort to understand, the talks, prayers, the March for Life; play it sincere and earned. (e) THE COMMUNION TENSION: Jack is now open to more with Skye; Skye knows what it costs him (skye_knows_communion, skye_first_mass, skye_asked_prayer, skye_at_walk all true). In s02 (Monday, her room) and any later intimate beat, Skye decides in character whether to go ahead, hesitate or refuse because it would cost him Communion; she never coerces and never takes his no as final, but she also stood with him at the Walk. Her choice, not the plot's. (f) ESCALATION RULE: if an intimate scene happens, it must exceed S2E07 s04/s04a in heat, intensity AND variety (a new act, setting, rhythm or power dynamic) under the explicit, specific standard (name what they do; concrete bodies and sensations; frank literary prose; hard line: no intercourse; no consent beats), and the conversation afterward must go deeper and harder than S2E07's. If Skye refuses for Communion's sake, that refusal scene must itself be charged and escalate the conversation. (g) Save facts: resolve.jack is 2; confession_owed 3 (s15 confession clears it); Jack lit one (jack_cigs 14); s2e7_walk=press; Lena left the walk; skye_posted_pismo true; told_skye_basement/decided/angry true; skipped_nfc true; rode_saab_home true; jack_said_nerve true. Make every S2E07 callback match the path actually taken. Keep length ~22-26k words per path; no corners cut.
+
+**Binding consequences (Packer's reading; the brief and the notes above govern):**
+- **Supersedes earlier pack text.** Any line in this pack, the plan, or drafts that has SKYE saying "I love you" first, or Kevin's lunch ON the page in E08, is stale. Jack says it first (both the home and her-place forks); Skye was braced to go first and says it back. New state: `jack_said_love_first:true` alongside `skye_said_love` (define `skye_said_love` as "she has said it", set when she says it back); every downstream callback reads Jack-first.
+- **The answer line (three people):** Ma (Tue call; she hears it in his voice first), Theo (half-joking, worry under it), Osei s15 (pointed: "You think she's the answer. To what question?"). The question Osei's line pokes is the unspoken Nonna/Danny questions; Skye does not know their wording and Lena is never named as their subject.
+- **Heat and Communion:** the intimate beat is Skye's decision; refusal must be charged and escalate the conversation; any go-ahead exceeds S2E07 s04/s04a in act, setting, rhythm or power; the conversation after goes deeper and harder; no intercourse; no consent beats. Jack's "no is probably becoming not yet" is already said aloud (do not repeat it; build on it).
+- **Kevin:** Wednesday text only ("hour four. Thursday." voice), gated `kevin_raincheck`; lunch opens S2E09 (Thu Jan 28, Commons window table); put it in nextTime/seeds.
+
+**Resolved save facts, `saves/after-s2e07.json` (the path actually taken; every S2E07 callback must match):**
+- Counters: `resolve.jack` 2, `resolve.lena` 3; `confession_owed` 3 (cleared to 0 at Osei's confession, s15); `jack_cigs` 14, `jack_cigs_jf` 3; `reliquary` 11; `skye_pics` 9; `rel.skye.trust` 59, `rel.skye.warmth` 49; `skye_s2b`, `skye_s2c` true.
+- Choices: `s2e7_hub` wit; `s2e7_coming` candor; `s2e7_rung` sincerity; `s2e7_seat` restraint; `s2e7_dawn` candor; `s2e7_happy` candor; `s2e7_rally` candor; `s2e7_walk` **press** (Thomson argument pressed); `s2e7_fuse` wit; `s2e7_nerve` **reckless** (the whole curb heard "How do you have the nerve"); `s2e7_ride` **saab** (`rode_saab_home` true; no van-home flags; so no `s2e7_vanhome`, no Margot "this", no Javi/Niners beat, the Kevin/Clare side-door handshake IS on the page via E07 s14's ungated branch — Jack sees it from the lot at midnight); `s2e7_pismo` candor with `skye_posted_pismo` true (the Pismo photo is POSTED; `skye_kept_pismo` unset); `s2e7_smoke` reckless (Jack lit one); `s2e7_why` sincerity; `s2e7_sully` candor; `s2e7_score` candor; `s2e7_theo` candor.
+- Flags true: `lena_left_walk`, `jack_said_nerve`, `lena_3am_asked`, `lena_asked_happy`, `walk_for_life_van`, `skye_at_walk`, `skye_walk_argument`, `skye_stood_for_clare`, `kenzie_posted_walk`, `skye_skylark_haiti`, `skye_first_mass`, `skye_knows_communion`, `skye_asked_prayer`, `told_skye_angry`, `told_skye_basement`, `told_skye_decided`, `skipped_nfc`, `saw_lena_table_pic`, `told_theo_stop_julian`, **`kevin_raincheck`**. `reliquary_opened` unset. `skye_said_love` not yet set.
+- Gist of the saab path: Skye drove Jack home from the Walk (Lena left the Walk and rode the van; Jack never saw the van-home scene); the shower and Debbie's 7 AM notes, "about you, sort of" and the daylight promise (OWED), Pismo (fogged car, "stops keeping count" until the gearshift), the Pismo photo posted; Kevin's raincheck given at the curb (Thursday lunch, "hour four").
+
+## 1.5 UPDATE: S2E07 ledger entries and canon added by the published S2E07 that bear on E08 (SUMMARY of continuity.md § S2E07 "Final revision")
+- **Published facts:** S2-c in daylight, everything short of intercourse, "I don't have an argument. I have a no."; Jack's s04 admission (cannot show the difference, "more psychological than substantive", "no is turning into not yet": "It probably is."), thanks her for her patience, calls himself a hypocrite, she refuses the word; the kitchen table on Glenwood has a leaf ("a loud table"). Skylark gave $25,000 to Hope for Haiti Now (Encino card); Conan was Skye's at fourteen (Studio City); Theo: "Take the window" (WINDOW Post-it); Lena led the first Joyful Mystery in the van and poured from the chipped thermos; knees touched on the Cuesta Grade; Soledad 8:15, "Are you happy?" yes on every path; the rally (Becca kept Skye's letter; Dominguez brothers); the Thomson argument and Dorothy Day; DENISE 1969 man, Skye shielded Clare, Kenzie filmed; Kenzie's post 1:58 PM (Jack and Clare tagged) STAYS UP; Lena: "You brought your girlfriend to the Walk for Life, Jack." / Jack: "How do you have the nerve..." / Lena: "Thank you for coming, Jack." and she leaves; Kevin: "I don't need you. I'd like you."; Skye's first Mass and her Haiti envelope, Jack did not receive; "I'm sorry for what I did. I'm not sorry it was you."; Osei met Skye: "Wednesday. Eight o'clock."; "Church is over."; the RAZR off in Skye's glove box (phones go in with it); Jack tells Skye he is angry at Laney and Lena; Kenzie's Corolla passes; the Point open, fresh roses at the cross, no owner; Skye's fear that she is a phase; the Danny guilt told; the Spiritual Communion prayer learned; the basement account (Jack: "I don't know what it was"; Laney liked him in the fall, hated him from the week he got back; the Nonna and Danny questions in general form, she is the answer to both; Skye: "That's enough."); Theo's misdirected text, Lena knew about the taco truck before kickoff, the picture of Lena on the table, Laney's wings ("Don't."), Theo's Julian pool, Jack: "Stop"; Skye's text "i embrace you as if you were already here."; endCard "Somebody in Youngstown sees it again."
+- **Counter changes in E07:** `confession_owed` +1 at s04 and +1 at s13s [saab] (3 on this path); `jack_cigs` to 14 (s14 reckless); `reliquary` stays 11.
+- **Owed payoffs (S2E08+):** Osei and Skye, Wednesday 8:00; whether Lena's quiet holds after "Thank you for coming, Jack."; the daylight promise to Skye about Lena; Lena's taco-truck knowledge and Theo's off-page relay to Laney; Laney's wings and "Don't."; Danny's letter (A555218); Conan's last night; Kenzie's post; Becca and Skye's letter; Kevin and Clare; Margot's ride; Debbie's notes and the scene-partner line; Gina and Ma at the Dell; Skye's Haiti envelope; Skye's fear she is a phase; the S2-c line; Hollis retires and Theo is in (runs); the State of the Union.
+- **Ledger housekeeping:** nola_ledger rows 11, 12, 14 still "planned"; row 12 needs `jack_cigs` 14 recorded (done on this save); row 8: s17 named Lena (back hall) to Skye while Skye never says the name (stands).
+
+
 ---
 
 # 2. STYLE (VERBATIM) [bible Part I §4 "Style guide", in full]
@@ -875,7 +921,6 @@ gets short.
 **Voice.** Dallas pageant-Texan, filthy timing, malapropisms she makes on purpose, sugar-coated threats. "Sugar," "y'all,"
 "fixin' to," "bless your heart" (weaponized), "I will end you, and I will look fabulous at your funeral." Talks in
 superlatives. Narrates her own life like a pageant host ("And our next contestant is a hangover").
-- *"Doctor's orders. Literally. I have a note. It's laminated."*
 - True register (rare, usually at 4 a.m.): *"Don't leave. I'm not drunk. I mean I am. But don't."*
 
 
@@ -883,7 +928,6 @@ superlatives. Narrates her own life like a pageant host ("And our next contestan
 **Voice.** Deadpan, polysyllabic, merciless, footnoted. Uses academic jargon on purpose and knows how it sounds
 ("heteronormative," "problematize," "hegemonic," "praxis" — she's allowed 2009 jargon and is mocked for it). Never
 raises her voice. Insults as diagnoses. Humor bone-dry and frequently cruel; when she's kind she pretends it's research.
-- *"St. Michael. Patron saint of what, bouncers?"*
 - True register: *"Can you just — sit here. Don't talk. I'll know if you're praying."*
 
 
@@ -945,19 +989,12 @@ roof; never admitted; Laney's only Jack-girl friendship). **Lena can't stand her
 
 ### 3.B Voices not in the bible's voice paragraphs (SUMMARY from bible §10.2, §10.5, §10.7, §10.8, §10.10, §11, §12 and the plan §8) — for the characters below, read the plan §8 "Voices" bullet (VERBATIM further down) as binding
 
-- **Debbie Callender** (Skye's mother; "Momager"; signs emails that way). Carpet in the voice, a hand on the sleeve, "Baby" (E03; ONE use in E08, at the bed: "Baby. A *bed*."). Asks what your father does as a question about your shoes. Warm as a lobby, frightened underneath; owns a company named after a bird (Skylark Pictures, Inc.). When the carpet goes out of her voice she is plain and level (E03 s14b: "Whatever you want from her, it comes through me. Everybody's does." / "Then you're going to be very expensive."). New entrance in E08, NOT "Jack. *Jack.* Sit, sit, sit.": she is already up, already touching his sleeve, already asking about Teddy. At the valet (s08a): no carpet — "She wrote to your brother? In prison?" … "She doesn't write to anybody." … "She doesn't write to me." Never cheap.
+- **Debbie Callender** (Skye's mother, "Momager"). Carpet in the voice, a hand on the sleeve, "Baby" (ONE use in E08, at the bed: "Baby. A *bed*."). Warm as a lobby, frightened underneath; owns Skylark Pictures, Inc. When the carpet goes out she is plain and level ("Whatever you want from her, it comes through me." / "Then you're going to be very expensive."). New entrance in E08, NOT "Jack. *Jack.* Sit, sit, sit.": already up, already touching his sleeve, already asking about Teddy. See the plan §8 for the valet (s08a) and the rest.
 - **Corinne** (Skye's publicist, Beverly Hills firm that answers with its own name only). Younger than Debbie, "dressed like a fountain pen, all black and one gold clip"; reads her BlackBerry the way others read the room; says only her name as hello; dry, exact, kind in a way that doesn't bend; uses a legal pad ONLY when a lawyer might read it later. Rules delivered like a menu she's sick of. Never reads a victim's name. "Skye, it isn't whether *you* care." / "Then we're done with it." — pleasant, immovable. She writes down Skye's number for Danny (the quiet test of who she is — passed).
-- **Ma — Maria Teresa (Rinaldi) Costigan, 49**, secretary at St. Brigid's school. Plain, Catholic, a school secretary, a woman who doesn't shout; the dish towel at most once. Lines on record: *"Did you eat? Don't lie to me, I can hear it in your voice when you haven't eaten."* · E03 *"She wants you. I don't know why."* · E07 (via Gina) *"thats something"* · E07 *"ok… nice"*. In the E08 call she cannot find how to say the next thing and Jack hears her not find it (the S2E04 shape). Her one question: **"When did you go to confession last?"** Hangs up gently ("Go tomorrow, Jackie.") — not Lena's #143.
-- **Gina — Regina Costigan, 15**, Ursuline sophomore. Smart-mouthed, Facebook-native, texts Jack constantly in lowercase (no apostrophes: `its`, `dont`, `ma`, `ur`); ALL CAPS only at the s06 text (#168 once). Ohio-teen texture. Jack's favorite person to argue with. Fought a Mahoning County commenter over Danny and "called him a name (a Catholic one)". Her #19 history (Ashley Vrabel, "convict's sister") is in her voice without being named. She says "don't tell ma" once (#150). Calls from the upstairs bathroom with the fan on.
+- **Ma — Maria Teresa (Rinaldi) Costigan, 49**, St. Brigid's secretary. Plain, Catholic, doesn't shout; the dish towel at most once. On record: *"Did you eat? Don't lie to me, I can hear it in your voice when you haven't eaten."* · *"She wants you. I don't know why."* · via Gina *"thats something"* · *"ok… nice"*. In the Tuesday call she cannot find how to say the next thing and Jack hears her not find it (the S2E04 shape); she hears "the answer" in his voice first (§1.4). Her one question: **"When did you go to confession last?"** Hangs up gently ("Go tomorrow, Jackie.").
+- **Gina — Regina Costigan, 15**, Ursuline sophomore. Smart-mouthed, Facebook-native, texts in lowercase (no apostrophes: `its`, `dont`, `ma`, `ur`); ALL CAPS only at the s06 text (once). Fought a Mahoning County commenter over Danny. Says "don't tell ma" once. Calls from the upstairs bathroom with the fan on.
 - **Nonna — Carmela Rinaldi, 84** (calls Jack "Giacomino"; Calabrian Italian; early dementia; perfect memory for the Church calendar). Voice only: the rosary in Italian through the kitchen wall, steady, loud enough to come down the line — NEVER on the line, never speaks to Jack in E08. Via Gina she asks Skye's baptism name "for the rosary" and says "skye isnt a saint".
-- **Frank** (offstage: the garage), **Rosie, 7** (≤1 line, e.g. asked if they were married; offstage via Ma), **Mrs. Pallante** (fb insert only: "Jackie!! Does your mother know about this?? Call her!!"), **Tommy Hritz** (fb: "COSTIGAN. the back of ur head is famous"), **Ryan Pallante**, a CYO coach, a homecoming date, an Ursuline sophomore's friend request (fb inserts). Nobody asks about anyone in New Orleans.
-- **Mrs. Dolores Fitch, 71** (parish secretary since 1979; widow; lemon bars; "A gossip with a heart of gold leaf. Remembers every student by name and every sin by reputation."). E08: bulletin, "My granddaughter showed me your picture on the computer," a Hail Mary for both of them, a lemon bar he has to eat. Kind; never a joke at the faith.
-- **Sol Holm** (films everything, talks very little; hangs the swing, pushes it once and goes in). **Tomás** (stereo through the floor; yells at the television).
-- **Evan Marsh** (TA; "dry, exhausted, precise, kind to struggling students, savage to lazy ones"): the roster, refills glasses (fact only).
-- **Priya Raman** (RA, junior; "Rapid, bureaucratic, accidentally hilarious, passive-aggressive in Comic Sans"; laminates; 🔒 failing orgo — E08: the orgo text open, no page turned, FACT only).
-- **Caleb Hargrove** (Pentecostal pastor's son; "Central Valley twang, rapid, King James cadence used ironically; self-deprecating; 'dude' in moments of terror"; Hale's acolyte; says it at the volume of a man who thinks he's discreet).
-- **Yusuf Noorzai** ("Bay Area understatement; deadpan; 'inshallah' only when he means it; engineering metaphors"; brother Tariq in Afghanistan 🔒 fact only; coffee lid stops on the table at the speech).
-- **Doug Pruitt** (Kevin's roommate; "sweet, oblivious, says 'dude' with five vowels"; "Dude. You're *Mystery Guy*."; wants to know if the iPad makes calls).
+- **Minor (SUMMARY):** Frank (offstage, the garage); Rosie, 7 (<=1 line via Ma); Mrs. Pallante / Tommy Hritz / Ryan Pallante (Facebook inserts only: "Jackie!! Does your mother know about this?? Call her!!"; "COSTIGAN. the back of ur head is famous"); Mrs. Dolores Fitch, 71 (parish secretary, lemon bars, kind, never a joke at the faith); Sol (films everything, hangs the swing) and Tomás (yells at the TV); Evan Marsh (TA, dry, precise); Priya Raman (RA, Comic Sans passive-aggression; orgo FACT only); Caleb Hargrove (pastor's son, King James irony, indiscreet volume); Yusuf Noorzai (deadpan; brother Tariq in Afghanistan, fact only); Doug Pruitt ("Dude. You're *Mystery Guy*.").
 - **Berkeley / Bishop Berkeley** (Hale's old deaf greyhound; prose only, not a cast id; lifts his head when the door jumps).
 
 ### 3.C The plan's voice rules for this episode (VERBATIM) [outlines/s2e08.md §8 "Voices" and "Period words"]
@@ -966,60 +1003,9 @@ roof; never admitted; Laney's only Jack-girl friendship). **Lena can't stand her
 
 ### 3.E Canon voice scenes (VERBATIM excerpts from the published episodes — the voices to match)
 
-**[S2E03 s14 "A restaurant in West Hollywood, the back room" — the first lunch; Debbie, Corinne, the shoes, the Lumina, "Baby"] (excerpt; `episodes/s2e03.json`)**
+**[S2E03 s14, SUMMARY of the first lunch]** Debbie ("Jack. *Jack.* Sit, sit, sit."; the Chevy Lumina spot in '94, "the mom who forgets the lunch"; asks about GM) in cream with a voice with carpet in it; Skye in a green dress her mother picked, shoes off under the table before the bread has gone round; Corinne reads the rules off the BlackBerry like a menu she's sick of (no photos of the two of them unless Skye sees them first; if asked, he is *a friend from school*).
 
-Debbie Callender gets up. She is thirty-nine on paper, small and gold and finished, in cream, with Skye’s mouth and none of Skye’s freckles, and a voice with carpet in it. “Jack. *Jack.* Sit, sit, sit.”
-
-Skye is in a green dress her mother picked, with sleeves, and her hair is up the way somebody else put it up, and before the bread has gone around once her shoes are off under the table. While Corinne is reading something she leans to him, very low. “Watch. She’s going to ask what your father does in the form of a question about your shoes.”
-
-“*GM!*” Debbie’s hand comes down on his sleeve. “I did a Chevy spot in ’94. A Lumina. I was the mom who forgets the lunch.”
-
-Corinne has the rules on the BlackBerry and reads them off like a menu she’s sick of. The airport comes down off Skye’s page today; the blogs she can live with — a blurry girl and the back of a coat is a rumor, and rumors are free. No photographs of the two of them, anywhere, by anybody, unless she has seen it first. If anyone asks — a waiter, a cousin, his mother — he is *a friend from school*. Nothing on his Facebook. “Not a wall post. Not a status. Not a *lyric*.”
-
-
-**[S2E03 s14a "Sunday · 3:50 PM · the back room" — the folder] (full body)**
-
-By ten to four there’s coffee, and three little spoons he can’t account for, and a plate of cookies so small they look like a dare. The square of sun from the skylight has come down off the bread basket and onto the cloth.
-
-Corinne puts two fingers on the manila folder and slides it across the tablecloth toward Skye. She doesn’t open it. “We ran his name,” she says. “It’s standard. We run everybody’s. There’s a family matter we’ll want to talk through at some point.” A small smile, fair enough as smiles go. “Not today.”
-
-The tab is upside down to him: a white label, typed. COSTIGAN.
-
-Skye doesn’t look at it. She puts her hand flat on the folder and slides it back across the cloth, and then farther. “No.”
-
-“Baby —” Debbie says.
-
-“We’re not doing his family,” Skye says. “Ever.”
-
-“Skye, it’s my job to know what’s coming,” Corinne says, quite kindly.
-
-“Know it about somebody else’s family.”
-
-Debbie looks up at the skylight. “She’s been like this since she was nine,” she says. “A director asked her to cry about her dog. She didn’t have a dog.”
-
-Jack watches the square of sun. It has an edge, clean as a ruler, and the edge is moving; you’d never see it if you looked away and back, so he doesn’t look away. It crosses the weave of the cloth toward the folder a thread at a time, and reaches the corner of it, and starts up over the label.
-
-
-**[S2E03 s14b "Sunday · 4:20 PM · the back room" — Debbie without the carpet] (full body)**
-
-At twenty past, Corinne’s BlackBerry goes off with a noise like a small bird being stepped on, and she takes it out to the patio, and Skye pushes back her chair and goes after her. Through the glass he can see the two of them out among the potted lemons: Corinne holding the BlackBerry up between them, and Skye talking — fast, both hands, her shoulders up around her ears — in a way he hasn’t seen her talk to anybody. He can’t hear a word of it.
-
-Debbie watches them too, with her pen in her fingers. When she turns back to him the carpet has gone out of her voice.
-
-“She’s never brought anybody to lunch,” she says.
-
-He holds his coffee.
-
-“Whatever you want from her,” Debbie says, “it comes through me. Everybody’s does.”
-
-“I don’t want anything.”
-
-Debbie looks at him after a while — a long, level look, no lobby in it at all — and sets her cup down in its saucer without a sound.
-
-“Then you’re going to be very expensive,” she says.
-
-The patio door opens. Corinne comes back in with the BlackBerry already ringing again and says, “No phones at the table,” and inside his jacket, against his ribs, the RAZR goes off as if it heard her. He excuses himself.
-
+**[S2E03 s14a/s14b, SUMMARY]** Corinne slides the manila folder (tab: COSTIGAN) across; Skye slides it back: "We're not doing his family. Ever." / "Know it about somebody else's family." Debbie: "She's been like this since she was nine." Debbie without the carpet: "Whatever you want from her, it comes through me. Everybody's does." / "Then you're going to be very expensive." Corinne: "No phones at the table."
 
 **[S2E06 s16 "Thursday · 1:06 PM · Hollis Hall, 302" — the two silence sentences; excerpt, paragraphs in order] (the papers s13 may quote back — quote EXACTLY)**
 
@@ -1186,21 +1172,21 @@ Room adds hidden-canon items (mystery, other secrets) only where they genuinely 
 
 ## 5.1 Arc-registry rows touched (bible §21; #57, #58 verbatim in §4.8)
 - **#1 Jack & Lena:** E08 = proxy fight #1 + the status line (NOLA #13). Next honest beat NOLA (S2E10) → S2E11 "No."/"Do it properly" → S2E15 official + first kiss (Easter Vigil Apr 3). They never kiss or touch in E08. Lena resolve writer-set **3** in every Lena scene.
-- **#3 Jack's secret:** E08 shows only Danny's PUBLIC version. Danny: Trumbull Correctional (Leavittsburg), **A555218**; felonious assault, plea Jan 2008, five years; the *Vindicator* clip (Struthers, Oct 2007). Truth = S2E22 (not in this pack).
-- **#7/#55 Hale:** foil; never diagnoses the fight; 🔒 §4.5. **#11 Kevin:** the sad attempt with a girl (Clare, the Walk; Niners invite). **#19 Gina bullied:** Ashley Vrabel shows Gina the bed picture in chem; Gina fights the Danny commenter (unnamed echo). **#26 Priya:** box fires E10; E08 fact only (orgo text, no page turned). **#41 Caleb / #42 Yusuf:** phones in the bowl; Afghanistan/coffee lid (Tariq fact only; NUMMI closes Apr 2010). **#47 Politics:** SOTU 2010 live; both nearly homeless, both pro-life. **#48 Saints:** Super Bowl XLIV Feb 7; E08 chatter only. **#50 Paired papers:** quote the PUBLISHED silence sentences exactly (§3.E).
-- **#21 Skye:** E08 steps: gossip item → bed post (taken down) → lunch (shoes; Danny; "I'm very good at fine") → Ma's call from the driver's seat → sweet only → "They're running lines" → **"I love you" (Wed Jan 27)**. Then E09 fundraiser + real name + S2-d; E10 singalong + S2-e; E11 near-miss. 🔒 Jack ends it Tue Feb 23, 2010 (S2E11/E12 area) — NEVER foreshadow; E08's Skye scenes are joy that doesn't curdle.
+- **#3 Jack's secret:** E08 shows only Danny's PUBLIC version. Danny: Trumbull Correctional (Leavittsburg), **A555218**; felonious assault, plea Jan 2008, five years; the *Vindicator* clip (Struthers, Nov 2007). Truth = S2E22 (not in this pack).
+- **#7/#55 Hale:** foil; never diagnoses the fight; 🔒 §4.5. **#11 Kevin:** the sad attempt with Clare. **#19 Gina bullied:** Ashley Vrabel, the bed picture in chem; Gina fights the Danny commenter. **#26 Priya:** orgo text, fact only. **#41 Caleb / #42 Yusuf:** phones in the bowl; Afghanistan/coffee lid. **#47 Politics:** SOTU live. **#48 Saints:** chatter only. **#50 Paired papers:** quoted exactly.
+- **#21 Skye:** E08 steps: gossip item → bed post (taken down) → lunch (shoes; Danny; "I'm very good at fine") → Ma's call from the driver's seat → sweet only → "They're running lines" → **Jack says "I love you" FIRST (Wed Jan 27; she says it back; §1.4)**. Then E09 fundraiser + real name + S2-d; E10 singalong + S2-e; E11 near-miss. 🔒 Jack ends it Tue Feb 23, 2010 (S2E11/E12 area) — NEVER foreshadow; E08's Skye scenes are joy that doesn't curdle.
 - **#59 Proxy fights (VERBATIM):** | 59 | **The proxy fights** (reserved; Jack's Skye period only — the organizer is dropped; §24.6) | ME | **S2E08 #1** (Wed Jan 27, 2010 — Hale's PHIL 109H session moved to his bungalow on State of the Union night; ostensibly Greene's *The End of the Affair*; **the Facebook-status line spoken here**; Jack has no answer) | **#2 = the drive, S2E12** (§23.2: "the worst," no exit for the other four) | **S2E19**: together now, one of them names what the fights were really about (default Lena: "It was never Greene. It was never the police."); the fear is answered ("Never. Not with anyone."); the first Skye joke (#80) | reserved |
 - **#84 Costigans on Skye:** they never meet her; Nonna "L'attrice!"; Danny: "IS SHE BLIND OR DID YOU LIE". **#83 Skye's fundraiser (held):** bible row still says S2E05; **current canon Thu Jan 28 night, S2E09** (Boxer re-election fundraiser, Palisades; Corinne sets it at the E08 lunch; no candidate named in E08).
 
 ## 5.2 Season map (bible §23.2)
 **S2E08 "Tagged":** see the plan (rev. 1) — it is not repeated here. `confession_owed` → 0; no picture rung (`skye_pics` 9); no heat rung.
-**S2E09 "Love Is Patient" (Thu Jan 28 – Sun Jan 31; 1 Cor 13:4; Luke 4:21–30):** THE FUNDRAISER (held scene): Theo dresses Jack; Boxer fundraiser at a Meridian executive's Palisades house (candidate absent; a surrogate speaks); she sees he's uncomfortable, asks twice, takes his arm; the walk-and-argue on his politics; a taquería on Sunset, hours; the photo (her arm out, back camera) she posts INSTEAD of the fundraiser photo; 🔒 **her real name told on the walk, as an intimacy**; Fri: Laney on her laptop gags at the photo, Lena can't hide the laugh (#14), Jack sees all; Pi Lam formal Sat; **no PHIL 109H Jan 28 (Hale in New York)**; **S2-d = first intimate scene after "I love you": "still no for now, but it's closer than it's ever been"** — must step past S2-c and be the hardest no yet. Skye posts only sweet things now.
-**S2E10 "Candlemas" (Feb 1–3):** Candlemas Feb 2 (Danny turns 23; Gina's card question seeded in s05); the Saab singalong video; **alliance meeting #3** → Lena organizes the NOLA trip (Jack, Lena, Theo, Laney, Margot, Kevin); S2-e; "Come to Vancouver." Theo's Super Bowl hypothetical (s04) pays here. **S2E11:** the near-miss; Osei bracing. **S2E12:** the drive, proxy fight #2.
+**S2E09 "Love Is Patient" (Thu Jan 28 – Sun Jan 31):** OPENS with Kevin's raincheck lunch (Commons window table, "hour four"; `kevin_raincheck`); then the Boxer fundraiser in the Palisades, the walk-and-argue, a Sunset taquería, the photo she posts instead; 🔒 her real name told as an intimacy; Laney gags at the photo, Lena cannot hide the laugh; S2-d.
+**S2E10 "Candlemas" (Feb 1–3):** Danny turns 23 (Feb 2); the Saab singalong; alliance meeting #3 and the NOLA trip; S2-e. **S2E11:** the near-miss. **S2E12:** the drive, proxy fight #2.
 
 ## 5.3 Romance roadmap — current state
 - **Rule (brief):** every new intimate scene with Skye escalates and names what is new; each no harder; after any no but the first the heat continues at full intensity, confined to the limit; literary, never mechanics; no procedural consent beats.
 - **Rungs so far:** E16–E17 long kissing → E18 words → E19b the turnout → E20 her bed (first no) → E21a all night, jeans and belt on → E22a the Saab, his jeans off (her doing) → E22b "Thursday. Not asking." (he leads; the no is his own) → Christmas call (talk only; never quoted) → **S2-a (E03)** her last layer off, lamp on → **S2-b (E05, Cana)** he is seen, nothing between them, she asks for the thing itself → **S2-c (E07, daylight)** everything but the one thing; "I don't have an argument. I have a no." (`skye_s2c`).
-- **E08: NO new rung** — one heat beat (s02: flannel, mattress, his hand on her bare thigh, her mouth at his throat, Hale at one; no ask, no no); what's new is her lens: the first picture of them in bed. **S2-d (E09) is the first scene after the words** and must step past daylight / everything-but / a no with no argument behind it.
+- **E08 OVERRIDDEN by §1.4 (brief "After S2E07"):** s02 is Skye's in-character decision (go ahead, hesitate, or refuse for Communion's sake); any intimacy must exceed S2E07 s04/s04a in heat, intensity and variety, the aftermath deeper and harder; a refusal scene is itself charged. (Old plan note, superseded: flannel, mattress, a hand on her thigh, no ask, no no.) What's also new is her lens: the first picture of them in bed. **S2-d (E09) is the first scene after the words** and must step past daylight / everything-but / a no with no argument behind it.
 - **Resolve:** Jack enters E08 at 2–4; the line holds on every value (HARD RULE; resolve sets HOW, never WHETHER). **No dangerous-night gate opens.** No sex for Jack or Lena with anyone, ever.
 - **Proxy fight rules (bible §24.6):** winning the stated argument is the wrong thing to win (Press/Personal win costs trust and raises friction; Concede is the only move that helps and doesn't feel like it); the real reason never spoken; the closest it comes is the status line (verbatim in §1.0/§1.3 and the plan §2 s13b). Skye never says Lena's name first; Lena never jokes about Skye; Lena's "replaced" mirrors NOLA #10/#5 with no clue tag.
 
@@ -1209,35 +1195,29 @@ Room adds hidden-canon items (mystery, other secrets) only where they genuinely 
 
 # 6. LEDGERS (SUMMARY as dense facts; knowledge.md blocks marked VERBATIM)
 
-## 6.1 Standing facts (continuity.md §1)
-- **Cast:** Jack (John Anthony Costigan, Delgado 412; RAZR V3 cracked hinge, T9) · Lena (Magdalena Thérèse Broussard, 217; LG enV2; medal) · Theo (Theodore Ashby Vance, 412; iPhone 3GS; "Teddy" is Richard's alone — Debbie says it too) · Laney (Delaney Rose Price, 217; pink BlackBerry) · Margot (305) · Kevin (Tran, 420 with Doug; BlackBerry Bold) · Fr. Gabriel Kofi Osei · Prof. Hale (bungalow at the cliff end of Del Playa; deaf greyhound **Bishop Berkeley**) · Julian (garage studio on Del Playa — only a LIT GARAGE on the E08 page, never named).
-- **Costigans:** Glenwood Ave, Brownlee Woods; St. Brigid of Kildare. Frank 51 (GM Lordstown, laid off since June 2009; garage), Maria 49 (St. Brigid's school secretary; the Dell), **Danny** (b. Feb 2 1987; Trumbull; A555218; "Professor"), Gina 15 (Ursuline), Rosie 7, Nonna Carmela Rinaldi 84 ("Giacomino").
-- **Jack:** 6'0", black hair, pale, blue eyes, nose broken once, scar through LEFT eyebrow, St. Michael medal, paperback in back pocket, **Danny's old Carhartt**, flannels; **tin = ELEVEN** cigarettes (Lena's Reliquary). **Skye:** sun-streaked hair, freckles, white iPhone (no front camera until June), GM Saab.
-- **Places:** Delgado (4th-floor lounge; east stairwell best reception, windows open six inches); Hollis 302; Anacapa Commons; St. Brendan's (A-frame; confession Sat 3:30–4:45, **Wed 8:00 p.m.**; Osei's door with the light on; closet behind the linen screen); Del Playa (Skye/Sol/Tomás's house with the porch swing; Hale's bungalow: silver board-and-batten, books to the ceiling, woodstove, **table = six-panel door on trestles**, deck over the bluff); Marisol Point (dark Point Marisol Light; white cross); Studio City (restaurant on Ventura, eleven minutes from the lot).
-- **Tallies entering E08:** `jack_cigs` 13 or 14, `jack_cigs_jf` 2 or 3, `reliquary` 11; `confession_owed` 2 ([van]) / 3 ([saab]) → 0 at s15; `skye_pics` 9; Skye rung S2-c done; Lena resolve 3; Jack resolve 2–4.
+## 6.1 Standing facts (continuity.md §1, SUMMARY)
+- **Cast:** Jack (John Anthony Costigan, Delgado 412; RAZR V3, T9) · Lena (Magdalena Thérèse Broussard, 217; LG enV2; medal) · Theo (Theodore Ashby Vance, 412; iPhone 3GS; "Teddy" is Richard's alone; Debbie says it too) · Laney (Delaney Rose Price, 217; pink BlackBerry) · Margot (305) · Kevin Tran (420 with Doug; BlackBerry Bold) · Fr. Gabriel Kofi Osei · Prof. Hale (bungalow, cliff end of Del Playa; deaf greyhound Bishop Berkeley) · Julian (a LIT GARAGE only, never named on the E08 page).
+- **Costigans:** Glenwood Ave, Brownlee Woods; St. Brigid of Kildare. Frank 51 (laid off from GM Lordstown since June 2009), Maria 49 (St. Brigid's secretary; the Dell), Danny (b. Feb 2 1987; Trumbull; A555218), Gina 15 (Ursuline), Rosie 7, Nonna Carmela Rinaldi 84 ("Giacomino").
+- **Jack:** 6'0", black hair, pale, blue eyes, scar through LEFT eyebrow, St. Michael medal, paperback in back pocket, Danny's old Carhartt; tin = ELEVEN cigarettes. **Skye:** sun-streaked hair, freckles, white iPhone (no front camera until June), GM Saab.
+- **Places:** Delgado (4th-floor lounge; east stairwell best reception); Hollis 302; Anacapa Commons; St. Brendan's (confession Sat 3:30-4:45, **Wed 8:00 p.m.**; Osei's door with the light on); Del Playa (Skye/Sol/Tomás's house with the porch swing; Hale's bungalow: silver board-and-batten, woodstove, table = six-panel door on trestles, deck over the bluff); Marisol Point; Studio City (restaurant on Ventura).
+- **Tallies entering E08 (save):** `jack_cigs` 14, `jack_cigs_jf` 3, `reliquary` 11; `confession_owed` 3 → 0 at s15; `skye_pics` 9; Skye rung S2-c done; resolve.lena 3; resolve.jack 2.
 
 ## 6.2 Last three episodes (continuity.md)
-- **S2E05 "Cana" (Jan 14–17):** Pair 41; Skye's Globes deal; Jack yelled at Laney (over Skye); Lena: "I kept your chair till the half"; Osei: "Now you have scheduled *me*"; S2-b.
-- **S2E06 "A Week" (Jan 18–21):** Laney's list (airport video, the status, Kenzie's Mass report, Fishbowl, Sully's, the jacket, "I can't find her"); Jack alone told Laney "a week… So was I" (Laney alone holds it); the avoidance of Lena and Laney stated ONCE (s03) and never restated; Lena at 3 a.m.: "Whatever you're doing, Jack — you can stop."; Skylark Pictures, Inc.; Danny's number A555218 to Skye; both silence sentences read by Hale (§3.E); Kevin's Walk for Life van ask; swing hooks (`s2e6_wed=hers`).
-- **S2E07 "Overtime" (Jan 22–24):** Walk for Life; S2-c ("I have a no"); Skylark's $25,000 to Hope for Haiti Now; Lena: "You brought your girlfriend to the Walk for Life, Jack." / Jack: "How do you have the nerve…" / Lena: "Thank you for coming, Jack."; Kenzie's post (1:58 PM; Jack and Clare tagged) stays up; [saab] the shower/Pismo; [van] Kevin "I don't need you. I'd like you."; Skye's first Mass; s16b "Wednesday at eight… Next Sunday I go up." / "Church is over."; Osei meets Skye; the Point open, fresh roses no owner; s18b Skye learns only "there's more"; Theo's misdirected text, the picture of Lena on the table, Jack's "Stop" to Theo about Julian; end card "Somebody in Youngstown sees it again."
+- **S2E05 "Cana" (Jan 14–17):** Pair 41; Skye's Globes deal; Jack yelled at Laney; Lena: "I kept your chair till the half"; S2-b.
+- **S2E06 "A Week" (Jan 18–21):** Laney's list; Jack alone told Laney "a week... So was I"; avoidance of Lena and Laney stated ONCE (s03); Lena at 3 a.m.: "Whatever you're doing, Jack — you can stop."; Skylark Pictures, Inc.; Danny's number to Skye; Kevin's Walk for Life van ask.
+- **S2E07 "Overtime" (Jan 22–24):** see §1.5 and the resolved save facts in §1.4 (saab path; press; reckless; Pismo photo posted).
 
-## 6.3 Objects and time pins in the plan
-- The Carhartt (Danny's; ID'd Jack from the airport video and the rally shot) · Jack's flannel (Skye kept it from the Walk) · the white iPhone · the Saab · Sol's driftwood swing (E06 tornado → E07 sanding → hung in s10 → passed at s15) · the tin (11) · Lena's medal · the novel squared to the table edge · Berkeley's bowl (phones) · the door on trestles · two legal pads · Skye's shoes (off before the bread in E03; ON through the E08 lunch; off at Agoura) · A555218 / Trumbull · Pair 41 (cut Tuesday) · Mrs. Fitch's lemon bars · Kenzie's public Walk album.
+## 6.3 Objects and time pins in the plan (SUMMARY)
+The Carhartt (Danny's) · Jack's flannel (Skye kept it) · the white iPhone · the Saab · Sol's driftwood swing · the tin (11) · Lena's medal · Berkeley's bowl (phones) · the door on trestles · two legal pads · Skye's shoes (ON through the lunch; off at Agoura) · A555218 / Trumbull · Pair 41 · Mrs. Fitch's lemon bars · Kenzie's public Walk album. Read the plan for pins.
 
 ## 6.4 knowledge.md — who knows what and LIVE RISKS (VERBATIM; for every on-page character see also §4.1 ceilings)
 
 ### S2E07
 > Final revision (see continuity.md S2E07). Branch tags are `[scene | condition]`. Canon is Fri Jan 22 – Sun Jan 24, 2010.
 
-#### Lena
-- From Jack: [s09] her thermos and rosary lead are her own; [dawn=candor] "Stop what?" unanswered (`lena_3am_asked`). [s09a] he asks "Are you happy?" back on [sincerity] and gets no answer. [s12] "How do you have the nerve…" ([reckless] heard by the whole curb); [s12a] `jack_said_nerve`. [s14] she walks past him without looking.
-- She sees for herself: [s10] the flannel (Jack sees her see it). [s11a] Skye shields Clare, Kenzie films (`s2e7_fuse`). [s12] Kenzie's post. [s13v | van] she moves to the front seat; Margot's "this" (not on the candor path).
-- **She does not learn (on the page):** Skye's S2-c line, Skye's Haiti envelope, the s17 and s18b talks, Jack's anger at her told to Skye, Theo's Julian pool, Laney's wings, Jack's "Stop" to Theo, the s18a prayer.
-
-#### Skye
-- From Jack: [s03] the van; she drives up (`s2e7_coming`). [s04] the no is a line that can be kept, not explained. [s08/s10] she comes to the Walk and is at the rally (`skye_at_walk`). [s11] the Thomson argument (`s2e7_walk`). [s13s | saab] "about you, sort of," daylight promised; the photo posted ([candor]/[wit]) or kept ([sincerity]). [s16a] `skye_knows_communion`; Jack does not receive. [s17] Jack tells her he is angry at Laney and Lena (`told_skye_angry`); Lena (back hall) is named to her while Skye never says the name. [s18a] the Danny guilt; the Spiritual Communion prayer. [s18b] Laney turned after the basement and Jack does not know why; the Nonna and Danny questions in general form, and that she is the answer to both; "That's enough." (`told_skye_basement`, `told_skye_decided`).
-- She sees or says herself: [s05] Skylark's Haiti gift; [s06] Conan at fourteen; [s11a] shields Clare; [s13v] Kenzie learns she did not want the post; [s16] her first Mass and her own Haiti envelope; [s16b] meets Osei; [s17] the RAZR off in her glove box; [s18a] her fear that she is a phase; [s19a] her text.
-- She does not know: "So was I," "a week," "fireman," "Due ragazze," "Which one of 'em" (s18b); Danny's and Nonna's questions quoted; Theo's Julian pool; Laney's wings; Lena's taco-truck knowledge.
+#### Lena and Skye (knowledge.md S2E07, SUMMARY)
+- **Lena knows:** her thermos/rosary lead are her own; [dawn=candor] "Stop what?" unanswered (`lena_3am_asked`); Jack asked "Are you happy?" back, no answer; "How do you have the nerve..." heard by the whole curb (`jack_said_nerve`, reckless); she saw the flannel (Jack saw her see it); Skye shielded Clare, Kenzie filmed; Kenzie's post. **She does NOT learn:** Skye's S2-c line, Skye's Haiti envelope, the s17/s18b talks, Jack's anger at her told to Skye, Theo's Julian pool, Laney's wings, Jack's "Stop" to Theo, the prayer.
+- **Skye knows (from Jack):** the van and the Walk (`skye_at_walk`); the no is a line that can be kept, not explained; "about you, sort of" and daylight promised; Communion and confession (`skye_knows_communion`), Jack did not receive; Jack is angry at Laney and Lena (Lena named, back hall; Skye never says the name); the Danny guilt; the Spiritual Communion prayer; Laney turned after the basement and Jack does not know why; the Nonna and Danny questions in general form and that she is the answer to both; "That's enough." **She does NOT know:** "So was I," "a week," "fireman," "Due ragazze," "Which one of 'em"; the questions quoted; Theo's Julian pool; Laney's wings; Lena's taco-truck knowledge.
 
 #### LIVE RISKS carried out of S2E07
 - **s18b withholds**: Skye never hears "So was I," "a week," "fireman," "Due ragazze" or "Which one of 'em," and neither Danny's nor Nonna's question is quoted. Do not let her know more than "there's more."
@@ -1253,16 +1233,10 @@ Room adds hidden-canon items (mystery, other secrets) only where they genuinely 
 
 
 
-#### LIVE RISKS carried out of S2E06
-- **Avoidance timeline:** Jack has avoided Lena and Laney "since Saturday" (s03); s07a confirms it for good. He avoids only those two; he is careful not to avoid the rest of the friend group. Do not restate or re-date it.
-- **Laney alone holds "a week… So was I"**; Lena and Skye do not learn it on the page. Laney's list since the semester stands; the main grievance is unchanged.
-- **Jack's interior verdict on Danny's and Nonna's questions (s18) is never said aloud**; Skye does not know it. Danny's number A555218 reaches Skye as an address; the by-heart knowledge reaches her only on [candor].
-- **Walk for Life collision:** Jack said yes to Kevin on every path, knowing it collides with the Anchor Saturday and Osei's "next Saturday." The keys say "to the Walk for Life," not "onto the van," so E07 can still bring Skye.
-- **"Something happened Tuesday that isn't the tornado"** is unanswered in s12; do not resolve it by accident.
-- Conan's last Tonight Show is Friday (Del Playa); Hollis retires, Theo is in; the Point may open Sunday (Tomás); Skye's letter is with Becca.
+#### LIVE RISKS carried out of S2E06 (SUMMARY)
+- Avoidance of Lena and Laney is stated once (E06 s03), never restated; Laney alone holds "a week... So was I"; Jack's verdict on Danny's and Nonna's questions is never said aloud to Skye; Danny's number A555218 reached Skye as an address; "something happened Tuesday that isn't the tornado" stays unanswered; Conan's last show Fri Jan 22 (done); Hollis retires, Theo is in.
 
-
-**Older LIVE RISKS still standing (SUMMARY of knowledge.md S2E03–S2E05):** Skye never hears "Julian" from Laney ("Sugar") but Jack introduced them (E05); Skye never hears Nora's group or the duffel; **Jack must not tell Skye about the Nora memorial group**; Lena hears Danny asked Jack something and has not asked what; the airport video is public but Jack's own Facebook stayed clean per the team rules; Skye took the driver photo down at midnight (E04) and burned Corinne's statement (Corinne has not learned the second); `skye_s2b` is rung 2 and S2-d must name what is new against S2-c; Jack's decade for Skye by name reached her only at E05 s12a (Lena never learns it); Maria knows the coffee was Lena's and that Lena phoned (she has not met Lena); Frank still does not tell on the page; Danny's letter (IS SHE BLIND OR DID YOU LIE) is owed on the restraint path; the black duffel is gone (Jack must not know where); Laney's "the laptop's in my closet" and "don't you dare tell him, Theodore" unresolved; Skye is baptized but nobody at Marisol knows but Theo.
+**Older LIVE RISKS still standing (SUMMARY):** Skye never hears "Julian" from Laney; never hears Nora's group or the duffel (Jack must not tell her about the Nora memorial group); Lena hears Danny asked Jack something and has not asked what; the airport video is public but Jack's own Facebook stayed clean; `skye_s2b` is rung 2 and S2-d must name what is new against S2-c; Maria knows the coffee was Lena's; Frank still does not tell on the page; Danny's letter (IS SHE BLIND OR DID YOU LIE) is owed.
 
 **Whisper (cue) budget:** the plan allows ≤6 cues in the file; one "will remember that" only; ≤5 relays of Ma/Gina texts (#153).
 
@@ -1735,9 +1709,9 @@ Small repeats to watch (S2E02): Danny's laugh (one big one a visit — at the of
 **Moon/weather:** Wed Jan 27 moon about 80% lit, up from afternoon, high at dusk (waxing gibbous; full Sat Jan 30). "It finally stopped raining" as a feeling (El Niño series peaked Jan 21; leftover runoff, sandbags, mud on the Del Playa stairs plausible; no day-level weather source — prefer feeling).
 **State of the Union:** Wed Jan 27, **9 p.m. ET = 6 p.m. PST** [V], ~70 min. Jobs; **three-year freeze on non-security discretionary spending**; health care urged forward after Scott Brown (52–47, Jan 19 [V]); DADT repeal called for; small-business tax credits; a **Citizens United** passage [V] (decision Jan 21, 5–4 [V]) — **Justice Alito shook his head and mouthed "not true"** (words varied: "not true"/"simply not true") [V]; Afghanistan (paraphrase); Republican response Gov. Bob McDonnell (Virginia); **paraphrase only, no quotation beyond these.** Hale turns it off at 7:10 before the rebuttal. A 6 p.m. viewing conflicts with dinner, not bedtime. Salinger and Zinn obits are Thursday (OUT).
 **iPad:** Wed Jan 27, **~10 a.m. PST**, Steve Jobs, Yerba Buena Center, SF [V date/place]; **not livestreamed** (live blogs) [verify]; 9.7-inch, ~0.5 in thick, ~1.5 lb, **$499 base (16 GB wifi)**, 3G models later, ships ~late March/April; keyboard dock; iBooks; A4 chip; mockery of the name. Nobody owns one; no iPad in anyone's hands.
-**Facebook/gossip tech:** Facebook ~350M users; photo tags notify the tagged; "untag" removes the viewer's tag only and does NOT delete the photo; Mobile Uploads album; "likes this"; News Feed; Dec 2009 privacy transition made many albums public by default [verify phrasing]; Twitter and TwitPic exist; **no Instagram, no Snapchat, no iMessage, no front-facing camera (until June)**; no "selfie," no "viral" as a verb. Real sites (TMZ, Perez Hilton, Just Jared, Gawker) may be NAMED in dialogue only (Gina, Caleb); the item's copy is invented for a fictional actress; **no quotes attributed to real people**. The *Vindicator*'s web archive (vindy.com) plausible [verify]; no invented article text beyond Corinne's summary.
-**News/sports:** Toyota recall (~2.3M, sticky pedals; announced Tue Jan 26) as a TV crawl [verify]; Haiti recovery phase — state NO final toll; Saints beat Minnesota 31–28 OT Sun Jan 24 [V]; **Super Bowl XLIV Saints v. Colts, Sun Feb 7, Miami** [V]; Ohio State 65–57 at Iowa Wed Jan 27 [V] (tip ~6 p.m. PST, overlaps the SOTU; Frank/Danny texture); Cavs-Wizards Mon Jan 25; Browns/Steelers background grumble only. Conan's last Tonight Show was Fri Jan 22 (E07).
-**Music (all unused so far):** Vampire Weekend "Giving Up the Gun" (*Contra*, Jan 11, 2010 [V]); Spoon "Written in Reverse" (*Transference*, Jan 19, 2010 [verify]); **Beach House "Zebra" (*Teen Dream*, Tue Jan 26, 2010 — verify US release day; if not Jan 26 keep the song, drop "it came out today")**; Ray LaMontagne "You Are the Best Thing" (2008 [V]).
+**Facebook/gossip tech:** Facebook ~350M users; photo tags notify the tagged; "untag" removes the viewer's tag only and does NOT delete the photo; Mobile Uploads album; News Feed; many albums public by default after the Dec 2009 privacy change [verify]; Twitter, TwitPic exist; **no Instagram, Snapchat, iMessage, front-facing camera**; no "selfie," no "viral" as a verb. Real sites (TMZ, Perez Hilton, Just Jared, Gawker) NAMED in dialogue only; the item's copy is invented for a fictional actress; no quotes attributed to real people.
+**News/sports:** Toyota recall (~2.3M, announced Tue Jan 26) as a TV crawl [verify]; Haiti recovery, NO final toll; Saints beat Minnesota 31–28 OT Sun Jan 24 [V]; Super Bowl XLIV Saints v. Colts Sun Feb 7 [V]; Ohio State 65–57 at Iowa Wed Jan 27 [V] (overlaps the SOTU); Cavs-Wizards Mon Jan 25. Conan's last Tonight Show was Fri Jan 22.
+**Music (unused so far):** Vampire Weekend "Giving Up the Gun" (Contra, Jan 11 [V]); Spoon "Written in Reverse" (Jan 19 [verify]); Beach House "Zebra" (Teen Dream, Jan 26 [verify day; else drop "came out today"]); Ray LaMontagne "You Are the Best Thing" (2008 [V]).
 **Geography/time:** Rincon (southbound to LA in the morning, US-101 S); northbound afternoon: Calabasas → Agoura → Thousand Oaks → **the Conejo Grade descends to Camarillo** → Las Posas Road exit; Studio City on Ventura Blvd; the Meridian lot eleven minutes away. **Ohio is three hours ahead** (Gina 10:50/10:31/11:40 EST; Ma 7:35 EST; Gina 2:55 EST); the conversions are dialogue, not narration openers.
 **OUT (do not mention):** Jan 28 Bernanke vote and Aquinas; Salinger/Zinn; Grammys (Jan 31); "We Are the World 25"; "Telephone" (video Mar 11); *Lost*/Oscar noms (Feb 2); Google Buzz.
 **Campus:** week 3 of spring term; PHIL 109H Mon/Thu 1:00, Hollis 302 (Thursday moved to Wed 6 p.m. at Hale's because he flies to New York Thursday).

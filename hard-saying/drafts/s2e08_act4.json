@@ -1,249 +1,245 @@
 {
-  "scenes": {
-    "s09a": {
-      "slug": "TUESDAY · 4:05 PM · US-101 NORTH, THE CONEJO GRADE",
-      "set": {
-        "ma_saw_post": true,
-        "ma_call_confession": true,
-        "resolve.jack": "-1"
-      },
-      "body": [
-        "Past Newbury Park the freeway comes up over the top of the Conejo Grade, and the Oxnard plain opens out below them all at once: flat and green to a brightness at the far end that has to be the sea, fields laid out in long rows under white plastic, lines of eucalyptus standing up out of them for windbreaks, Camarillo in the middle distance, and the sun gone low and gold over all of it, coming in sideways through the windshield. The grade drops away in front of them. In the right lane the trucks are down in low gear, groaning, and at the bottom of the hill the northbound lanes are a red string of brake lights as far as Jack can see.",
-        "Skye takes the Saab down into it, braking and letting off. The record is still going round.",
-        "Inside his jacket the RAZR goes off against his ribs, and again, and twice more.",
-        {
-          "type": "sms",
-          "from": "Gina",
-          "text": "ma knows",
-          "time": "4:05 PM"
-        },
-        {
-          "type": "sms",
-          "from": "Gina",
-          "text": "not from me i swear",
-          "time": "4:05 PM"
-        },
-        {
-          "type": "sms",
-          "from": "Gina",
-          "text": "mrs pallante called during dinner",
-          "time": "4:06 PM"
-        },
-        {
-          "type": "sms",
-          "from": "Gina",
-          "text": "dad went to the garage",
-          "time": "4:06 PM"
-        },
-        "He shuts the phone. Ahead of them a horse trailer with nobody’s horse in it brakes, and Skye brakes, and the Saab rocks on its springs and stops.",
-        "The RAZR hasn’t been shut a minute when it goes again in his hand, ringing this time, and the little outside screen says GLENWOOD.",
-        "Skye reaches over and turns the record off. In the quiet the Saab is all engine and tires, and the hiss of the car beside them, and a talk station coming out of somebody’s open window two lanes over.",
-        "He opens it. “Hi, Ma.”",
-        "“Jackie.” Not *hi, honey*. Not *did you eat*. “Are you driving?”",
-        "“No, Ma.”",
-        "“Good.” Behind her a cupboard door shuts. He knows where she is without being told: at the kitchen phone with the dish towel over her shoulder, the dinner done and the dishes done, because she would do the dishes first. “Rita Pallante called during dinner,” she says. “I didn’t get up. She called back.” Another cupboard. “She had a lot to say. I let her say it. I said, *Thank you, Rita*.”",
-        "A car horn somewhere down the grade, long, and then let go of.",
-        "“So I went down the basement to look, and Rosie was already at the Dell.” She breathes in. “She asked me did you get married.”",
-        "He can see it from here: the card table at the bottom of the cellar stairs, Pop’s Browns calendar on the wall over it, and Rosie in Ma’s chair in front of the screen, seven years old, swinging her feet. And tomorrow at twenty to eight Ma will be at the office window at St. Brigid’s with the lunch envelopes, and the mothers will come to the window one at a time, and every one of them will have seen it.",
-        "Beside him Skye has both hands on the wheel, high up, and the Saab is creeping in the brake lights. There’s nowhere in a car this size to take a phone call, and he doesn’t try to find one. He doesn’t turn to the window. He keeps the side of his face to her, and keeps his voice down, for her and for the car.",
-        "“I’m not going to ask you what that is,” Ma says.",
-        "The brake lights ahead of them go out in a long row and come on again. Skye’s right hand comes off the wheel to the gearshift, and takes it down a gear, and goes back up where it was.",
-        "“Saturday I said *that’s something*,” she says. “I meant it.”",
-        {
-          "if": "s2e7_vanhome==\"candor\"",
-          "text": "“You told your sister she walked the whole thing.”"
-        },
-        {
-          "if": "s2e7_vanhome!=\"candor\"",
-          "text": "“Gina showed me her. At the march.”"
-        },
-        "“And then tonight —” she says, and that isn’t how it goes. “Your father —” And that isn’t it either, and she leaves it wherever she left it. He hears her take a breath to try it a third way.",
-        "“Jackie —”",
-        "And she stops."
-      ],
-      "choices": [
-        {
-          "tag": "Candor",
-          "text": "“I’m not going to lie to you, Ma.”",
-          "set": {
-            "s2e8_ma": "candor",
-            "soul.honesty": "+1",
-            "said_it_plain_n": "+1"
-          },
-          "cue": "Ma heard that.",
-          "key": "Ma called about the picture. You told her you weren’t going to lie to her.",
-          "response": [
-            "“I know you’re not,” she says. “That’s why I’m only asking one thing.”",
-            "Down the grade the brake lights let go, and the Saab rolls a car length, and stops again. Skye’s hands haven’t moved on the wheel.",
-            "“When did you go to confession last?”"
-          ],
-          "goto": "s09b"
-        },
-        {
-          "tag": "Restraint",
-          "text": "“Yes, Ma.”",
-          "set": {
-            "s2e8_ma": "restraint",
-            "trait.control": "+1"
-          },
-          "key": "Ma called about the picture. You said yes, Ma, and nothing else.",
-          "response": [
-            "“Yes what,” she says — tired, at the end of a day at the office window at St. Brigid’s and a dinner and a phone call from Rita Pallante, and not sharp with him at all.",
-            "He doesn’t have a *what* to give her. The Saab rolls a car length in the brake lights, and stops.",
-            "“When did you go to confession last?”"
-          ],
-          "goto": "s09b"
-        },
-        {
-          "tag": "Sincerity",
-          "text": "“She’s good, Ma. She’s not what that looks like.”",
-          "set": {
-            "s2e8_ma": "sincerity",
-            "trait.sincerity": "+1"
-          },
-          "key": "Ma called about the picture. You told her Skye’s good — not what it looks like.",
-          "response": [
-            "“I know what it looks like, Jack.”",
-            "She breathes in.",
-            "“I didn’t say anything about her.”",
-            "Beside him Skye’s eyes stay on the car ahead, and her hands stay where they are.",
-            "“When did you go to confession last?”"
-          ],
-          "goto": "s09b"
-        }
-      ]
+ "scenes": {
+  "s09a": {
+   "slug": "TUESDAY · 4:05 PM · US-101 NORTH, THE CONEJO GRADE",
+   "set": {
+    "ma_saw_post": true,
+    "ma_call_confession": true,
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "Past Newbury Park the freeway comes up over the top of the Conejo Grade, and the Oxnard plain opens out below them all at once: flat and green to a brightness at the far end that has to be the sea, fields laid out in long rows under white plastic, lines of eucalyptus standing up out of them for windbreaks, Camarillo in the middle distance, and the sun gone low and gold over all of it, coming in sideways through the windshield. The grade drops away in front of them. In the right lane the trucks are down in low gear, groaning, and at the bottom of the hill the northbound lanes are a red string of brake lights as far as Jack can see.",
+    "Skye takes the Saab down into it, braking and letting off. The record is still going round.",
+    "Inside his jacket the RAZR goes off against his ribs, and again, and twice more.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "ma knows",
+     "time": "4:05 PM"
     },
-    "s09b": {
-      "slug": "TUESDAY · 4:12 PM · US-101 NORTH → THE LAS POSAS ROAD EXIT",
-      "set": {
-        "skye_took_post_down": true
-      },
-      "body": [
-        "“Tomorrow,” he says.",
-        "Skye’s eyes come off the road to his face, and go back.",
-        "Ma doesn’t say anything. And into the quiet on Glenwood Avenue, through the kitchen wall, from her chair in the front room, comes Nonna: the rosary in Italian, both halves of it herself, steady and unhurried, loud enough that it comes down the line from Ohio and into a Saab on the 101. *Santa Maria, Madre di Dio, prega per noi peccatori.* It’s Tuesday. She’ll be on the Sorrowful Mysteries. *Adesso e nell’ora della nostra morte.* She starts the next one without stopping for breath, and Ma doesn’t cover the phone.",
-        "He has knelt on that carpet beside that chair since he was small enough to be eye level with the beads. He knows which bead is the chipped one. He holds the phone against his ear and listens to her go around.",
-        "“Your grandmother heard us,” Ma says.",
-        "The Saab rolls, and stops.",
-        "“Go tomorrow, Jackie.”",
-        "She hangs up gently — the small click of a phone being put back where it lives by somebody careful not to wake the house — and Glenwood Avenue is gone.",
-        "He shuts the RAZR and holds it on his knee.",
-        "The grade has let them down onto the flat. The fields go by on both sides under their plastic, rows and rows of them, and in one of them a crew in hooded sweatshirts is bent over the beds in the low sun with a truck idling at the end of the row. The brake lights thin out, and a green sign comes up out of the glare: LAS POSAS RD, the next exit. Skye puts her blinker on.",
-        "She takes the exit and pulls onto the shoulder of the ramp, short of the light, and stops there with the blinker still going. She takes the white iPhone out of the cup holder. He watches her thumb. Her own page, Mobile Uploads, and there it is at the top of the album. She doesn’t look at it long. Her thumb finds the place to delete it, and the phone asks her if she’s sure, and her thumb tells it.",
-        "She puts the phone back in the cup holder. She hasn’t said a word since his phone rang, and she doesn’t say one now. Jack doesn’t either. He keeps his hands on his knees. The ramp and the light and the thumb are hers.",
-        "She checks her mirror and pulls off the shoulder, through the light, around and onto the on-ramp north, and the blinker keeps on through all of it, until at the top of the ramp the wheel comes straight and puts it out."
-      ],
-      "journal": [
-        {
-          "kind": "person",
-          "id": "maria",
-          "title": "Ma",
-          "text": "Maria Costigan. St. Brigid’s school secretary. Feeds anybody who comes through the door. Cries at grace every year. Took my phone at the table and counted to eleven without looking at it once. Wrote Becca. December 6th, back from Trumbull: the November bill, four hundred and nine texts. Who is it. I told her a girl. Not Lena. Not nice — something. That’s what Dad said about her. Christmas week: took forever at the machines at Trumbull so Danny and I could talk. Stood Becca’s card at the front of the mantel. Brewed the New Orleans coffee Christmas morning. Put unlimited texting on the family plan; it was cheaper than me. Saw the photos. “Is she Catholic, at least?” When Danny laughed on the phone, she looked at me. Holy Family Sunday she took Pop in. ‘You sit, Frank.’ Showed him the machines. Goes to the seven o’clock on the last day of every year; this year I went with her. Lena called the house on the second of January, and Ma answered, and they talked for ten minutes. ‘She wants you. I don’t know why.’ Now she knows the coffee was hers. At the door she gave me the can back, empty, for the girl who called. From a gas station in Buellton I called her before I said yes on Skye’s phone. She said I was on the phone with Lena all break. I told her Lena’s still got a boyfriend, and he wrote her a song, and it was good. She didn’t say anything. Tuesday Mrs. Pallante called during dinner, and Rosie saw it on the Dell before Ma could close it. Ma didn’t ask me what it was. She asked when I last went to confession. I said tomorrow. Nonna heard us through the wall. ‘Go tomorrow, Jackie.’"
-        }
-      ],
-      "next": "s10"
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "not from me i swear",
+     "time": "4:05 PM"
     },
-    "s10": {
-      "slug": "TUESDAY · 5:50 PM · DEL PLAYA LANE, THE PORCH — THE SWING",
-      "body": [
-        "The sun has been down twenty-five minutes, and the sky over the Channel has gone the deep clear blue that comes after, with one long rag of pink over the islands going out. The porch light isn’t on yet. Down at the end of the street the surf is loud at the bottom of the bluff.",
-        "She drove the rest of the way home with the record off — through Ventura, and along the Rincon in the last of the sun with the surfers coming in off the water, and up through Carpinteria with her left hand on the wheel and her right hand in his on the console, where she put it at the county line and didn’t take it back.",
-        "The swing is up. While they were in Studio City somebody hung it: the driftwood seat Sol has been sanding since the tornado, sanded so pale it holds the last of the light, on two lengths of new chain from the two hooks in the porch ceiling. Tomás’s drill is on the rail, and the coffee can of screws beside it, empty. Across the seat somebody has stuck a strip of masking tape and written on it in Tomás’s capitals: OILED 2 PM. SIT AT OWN RISK.",
-        "Sol is sitting on the top step with a bottle of beer when they come up the walk. She gets up. She sets her foot against the edge of the seat and gives the swing its first push, and watches it go out over the boards and come back on its chains, and nods at it. She collects her camera from the step and heads off down Del Playa toward the bluff, after whatever’s left of the light, and leaves them to it.",
-        "Skye peels the tape off the seat, folds it in half on itself, and hands it to Jack, and sits down on the swing. She sits at one end of the new seat with one foot under her and the other knee pulled up, her arms locked around it and her chin up, and the swing gives a little under her and settles.",
-        "“I took it down,” she says, as if he hadn’t been in the car.",
-        "He leans on the porch post.",
-        "“Corinne asked me on the phone at six in the morning. Then she asked me by email. With a subject line. With my mother cc’d.” The new chain creaks in its hook. “My mother asked me at lunch, with a bread stick. I said I’d take it down after lunch, and I meant after lunch next year. I’d have taken it down for Corinne never. I took it down for a woman I’ve never met, who asked you one question.”",
-        "She stops there, holding on to her knee. She’s braced, and he can see for what: for him to tell her it doesn’t matter, and for it to be the kind thing to say."
-      ],
-      "choices": [
-        {
-          "tag": "Candor",
-          "text": "“I don’t care. I like being with you. It was true. Don’t feel bad for posting something true.”",
-          "set": {
-            "s2e8_care": "candor",
-            "soul.honesty": "+1",
-            "said_it_plain_n": "+1",
-            "rel.skye.trust": "+1"
-          },
-          "key": "On the swing you told Skye you don’t care about the picture — it was true — and she could tell you meant it.",
-          "response": [
-            "She looks at him from the swing for a long time, in the blue light, with the chain still creaking a little over her head.",
-            "Whatever she was braced against goes out of her arms. Her knee comes down, and her foot finds the boards."
-          ],
-          "goto": "s10a"
-        },
-        {
-          "tag": "Wit",
-          "text": "“I’ve been on a website. I’m hardened.”",
-          "set": {
-            "s2e8_care": "wit",
-            "trait.wit": "+1",
-            "rel.skye.warmth": "+1"
-          },
-          "key": "On the swing you made a joke, then told Skye the truth: you don’t care, and she could tell.",
-          "response": [
-            "She doesn’t laugh. She waits, with her arms where they are.",
-            "So he tells her the true version, with nothing on it. He likes being with her. He likes how much fun it is, every day of it. The picture was the two of them, and it was true, and she doesn’t have to feel bad about putting something true where people can see it. He doesn’t care who saw it.",
-            "She watches him say it, every word, to the end. Then she nods, once."
-          ],
-          "goto": "s10a"
-        },
-        {
-          "tag": "Sincerity",
-          "text": "*Sit down next to her. Tell her she can post anything she wants.*",
-          "set": {
-            "s2e8_care": "sincerity",
-            "trait.sincerity": "+1",
-            "rel.skye.trust": "+1"
-          },
-          "key": "On the swing you sat down next to Skye and told her she can post anything she wants. She could tell you meant it.",
-          "response": [
-            "He sits down next to her, and the swing takes his weight and goes back.",
-            "“Post anything you want,” he says. “Anything. I don’t care who sees it.”",
-            "She looks at him sideways, close, through the full arc back and the full arc forward, and on the way forward her hand finds his on the chain."
-          ],
-          "goto": "s10a"
-        }
-      ]
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "mrs pallante called during dinner",
+     "time": "4:06 PM"
     },
-    "s10a": {
-      "slug": "TUESDAY · 6:05 PM · DEL PLAYA LANE, THE PORCH — THE SWING",
-      "set": {
-        "skye_sweet_only": true,
-        "resolve.jack": "+1"
-      },
-      "body": [
-        {
-          "if": "s2e8_care!=\"sincerity\"",
-          "text": "She moves over on the driftwood, and he sits, and the new chains take the two of them."
-        },
-        "“I know. I can tell. I’m stopping anyway.”",
-        "He starts to say it again, and she shakes her head at him.",
-        "“You said *tomorrow* to your mother,” she says. “I know what tomorrow is.”",
-        "The swing goes back and comes forward. Somewhere down the street a screen door bangs and a girl yells somebody’s name at the beach.",
-        "“It costs you. Don’t tell me it doesn’t — I was in the car, I heard your half.” She looks up at the chains where they go into the ceiling. “And it costs me. With them.” She puts her foot down and stops the swing. “I want your mother to like me. I want your grandmother to like me so much it’s stupid. I learned her prayer. I say it at red lights.”",
-        "“She’s had you in her rosary since Christmas,” Jack says.",
-        "Skye looks at him. “Me or Cassidy?”",
-        "“She’s working on it.”",
-        "That gets a laugh out of her, short, against his shoulder.",
-        {
-          "if": "s2e7_pismo==\"sincerity\"",
-          "text": "“I’ve got one I never posted,” she says. “I’m keeping it.”"
-        },
-        "Then her head tips, and a smile comes up on her, bright and even, every tooth in it on its best behavior, and it’s Cassidy on the swing, Thursdays at nine, sweet as a church supper. “From now on,” Cassidy says, “only the nice ones.”",
-        "Cassidy goes as fast as she came, and Skye pushes them off again with her heel. “Pictures of you explaining things,” she says. “You explain things to people who didn’t ask. It’s the nicest thing about you. Your mother can look at that all day.”",
-        "He tells her about tomorrow, the rest of it. Hale is flying to New York on Thursday, so the Greene session has moved to his house, tomorrow at six, with the State of the Union on the television. Hale said to bring a guest.",
-        "“Come,” Jack says.",
-        "The swing goes back and comes forward while she thinks about it. “Go,” she says. “Bring me back Hale doing the President. I want all of it. I want his face in the applause breaks. If he heckles, I want the heckles word for word, and don’t clean them up, I’ll know.” She tucks her feet up under her on the seat. “I’m watching it here. Tomás and Sol. Tomás yells at the television on principle, and Sol films him doing it. So somebody can yell at it with me.”",
-        "She leans into his side, and he puts his arm along the back of the swing behind her, and they ride it like that until the porch light comes on over them by itself, on its timer.",
-        {
-          "type": "break"
-        },
-        "He walks home up Del Playa in the dark, past the house parties starting up and a couch somebody has carried out onto a lawn to sit on, with his hands in his jacket and the RAZR quiet in one of them.",
-        "At the corner he looks back. Her porch is the one lit square on that side of the street, and the swing is still moving a little on its new chains — her on it, one heel on the boards, pushing off."
-      ],
-      "next": "s11"
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "dad went to the garage",
+     "time": "4:06 PM"
+    },
+    "He shuts the phone. Ahead of them a horse trailer with nobody’s horse in it brakes, and Skye brakes, and the Saab rocks on its springs and stops.",
+    "The RAZR hasn’t been shut a minute when it goes again in his hand, ringing this time, and the little outside screen says GLENWOOD.",
+    "Skye reaches over and turns the record off. In the quiet the Saab is all engine and tires, and the hiss of the car beside them, and a talk station coming out of somebody’s open window two lanes over.",
+    "He opens it. “Hi, Ma.”",
+    "“Jackie.” Not *hi, honey*. Not *did you eat*. “Are you driving?”",
+    "“No, Ma.”",
+    "“Good.” Behind her a cupboard door shuts. He knows where she is without being told: at the kitchen phone with the dish towel over her shoulder, the dinner done and the dishes done, because she would do the dishes first. “Rita Pallante called during dinner,” she says. “I didn’t get up. She called back.” Another cupboard. “She had a lot to say. I let her say it. I said, *Thank you, Rita*.”",
+    "A car horn somewhere down the grade, long, and then let go of.",
+    "“So I went down the basement to look, and Rosie was already at the Dell.” She breathes in. “She asked me did you get married.”",
+    "He can see it from here: the card table at the bottom of the cellar stairs, Pop’s Browns calendar on the wall over it, and Rosie in Ma’s chair in front of the screen, seven years old, swinging her feet. And tomorrow at twenty to eight Ma will be at the office window at St. Brigid’s with the lunch envelopes, and the mothers will come to the window one at a time, and every one of them will have seen it.",
+    "Beside him Skye has both hands on the wheel, high up, and the Saab is creeping in the brake lights. There’s nowhere in a car this size to take a phone call, and he doesn’t try to find one. He doesn’t turn to the window. He keeps the side of his face to her, and keeps his voice down, for her and for the car.",
+    "“I’m not going to ask you what that is,” Ma says.",
+    "The brake lights ahead of them go out in a long row and come on again. Skye’s right hand comes off the wheel to the gearshift, and takes it down a gear, and goes back up where it was.",
+    "“Saturday I said *that’s something*,” she says. “I meant it.”",
+    "“Gina showed me her. At the march.”",
+    "“And then tonight —” she says, and that isn’t how it goes. “Your father —” And that isn’t it either, and she leaves it wherever she left it. He hears her take a breath to try it a third way.",
+    "“Jackie —”",
+    "And she stops."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“I’m not going to lie to you, Ma.”",
+     "set": {
+      "s2e8_ma": "candor",
+      "soul.honesty": "+1",
+      "said_it_plain_n": "+1"
+     },
+     "cue": "Ma heard that.",
+     "key": "Ma called about the picture. You told her you weren’t going to lie to her.",
+     "response": [
+      "“I know you’re not,” she says. “That’s why I’m only asking one thing.”",
+      "Down the grade the brake lights let go, and the Saab rolls a car length, and stops again. Skye’s hands haven’t moved on the wheel.",
+      "“When did you go to confession last?”"
+     ],
+     "goto": "s09b"
+    },
+    {
+     "tag": "Restraint",
+     "text": "“Yes, Ma.”",
+     "set": {
+      "s2e8_ma": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "Ma called about the picture. You said yes, Ma, and nothing else.",
+     "response": [
+      "“Yes what,” she says — tired, at the end of a day at the office window at St. Brigid’s and a dinner and a phone call from Rita Pallante, and not sharp with him at all.",
+      "He doesn’t have a *what* to give her. The Saab rolls a car length in the brake lights, and stops.",
+      "“When did you go to confession last?”"
+     ],
+     "goto": "s09b"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“She’s good, Ma. She’s not what that looks like.”",
+     "set": {
+      "s2e8_ma": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "Ma called about the picture. You told her Skye’s good — not what it looks like.",
+     "response": [
+      "“I know what it looks like, Jack.”",
+      "She breathes in.",
+      "“I didn’t say anything about her.”",
+      "Beside him Skye’s eyes stay on the car ahead, and her hands stay where they are.",
+      "“When did you go to confession last?”"
+     ],
+     "goto": "s09b"
     }
+   ]
+  },
+  "s09b": {
+   "slug": "TUESDAY · 4:12 PM · US-101 NORTH → THE LAS POSAS ROAD EXIT",
+   "set": {
+    "skye_took_post_down": true
+   },
+   "body": [
+    "“Tomorrow,” he says.",
+    "“Good,” Ma says. And then, in the same voice, without changing it: “And now the other thing.”",
+    "“What other thing?”",
+    "“I heard it when you said *hi, Ma*.” Not sharp. A woman reading something off a list she didn’t write. “You might as well say it. I already heard it.”",
+    "He looks at the brake lights. There’s nowhere in a car this size to say it, and he says it anyway, low, in the voice he keeps for her, with the side of his face to Skye.",
+    "“I think she’s the answer, Ma.”",
+    "Skye’s eyes come off the road to his face, and go back.",
+    "Ma doesn’t say anything at all. And into the quiet on Glenwood Avenue, through the kitchen wall, from her chair in the front room, comes Nonna: the rosary in Italian, both halves of it herself, steady and unhurried, loud enough that it comes down the line from Ohio and into a Saab on the 101. *Santa Maria, Madre di Dio, prega per noi peccatori.* It’s Tuesday. She’ll be on the Sorrowful Mysteries. *Adesso e nell’ora della nostra morte.* She starts the next one without stopping for breath, and Ma doesn’t cover the phone.",
+    "He has knelt on that carpet beside that chair since he was small enough to be eye level with the beads. He knows which bead is the chipped one. He holds the phone against his ear and listens to her go around.",
+    "“Your grandmother heard us,” Ma says.",
+    "The Saab rolls, and stops.",
+    "“Go tomorrow, Jackie.”",
+    "She hangs up gently — the small click of a phone being put back where it lives by somebody careful not to wake the house — and Glenwood Avenue is gone.",
+    "He shuts the RAZR and holds it on his knee.",
+    "The grade has let them down onto the flat. The fields go by on both sides under their plastic, rows and rows of them, and in one of them a crew in hooded sweatshirts is bent over the beds in the low sun with a truck idling at the end of the row. The brake lights thin out, and a green sign comes up out of the glare: LAS POSAS RD, the next exit. Skye puts her blinker on.",
+    "She takes the exit and pulls onto the shoulder of the ramp, short of the light, and stops there with the blinker still going. She takes the white iPhone out of the cup holder. He watches her thumb. Her own page, Mobile Uploads, and there it is at the top of the album. She doesn’t look at it long. Her thumb finds the place to delete it, and the phone asks her if she’s sure, and her thumb tells it.",
+    "She puts the phone back in the cup holder. She hasn’t said a word since his phone rang, and she doesn’t say one now. Jack doesn’t either. He keeps his hands on his knees. The ramp and the light and the thumb are hers.",
+    "She checks her mirror and pulls off the shoulder, through the light, around and onto the on-ramp north, and the blinker keeps on through all of it, until at the top of the ramp the wheel comes straight and puts it out."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "maria",
+     "title": "Ma",
+     "text": "Maria Costigan. St. Brigid’s school secretary. Feeds anybody who comes through the door. Cries at grace every year. Took my phone at the table and counted to eleven without looking at it once. Wrote Becca. December 6th, back from Trumbull: the November bill, four hundred and nine texts. Who is it. I told her a girl. Not Lena. Not nice — something. That’s what Dad said about her. Christmas week: took forever at the machines at Trumbull so Danny and I could talk. Stood Becca’s card at the front of the mantel. Brewed the New Orleans coffee Christmas morning. Put unlimited texting on the family plan; it was cheaper than me. Saw the photos. “Is she Catholic, at least?” When Danny laughed on the phone, she looked at me. Holy Family Sunday she took Pop in. ‘You sit, Frank.’ Showed him the machines. Goes to the seven o’clock on the last day of every year; this year I went with her. Lena called the house on the second of January, and Ma answered, and they talked for ten minutes. ‘She wants you. I don’t know why.’ Now she knows the coffee was hers. At the door she gave me the can back, empty, for the girl who called. From a gas station in Buellton I called her before I said yes on Skye’s phone. She said I was on the phone with Lena all break. I told her Lena’s still got a boyfriend, and he wrote her a song, and it was good. She didn’t say anything. Tuesday Mrs. Pallante called during dinner, and Rosie saw it on the Dell before Ma could close it. Ma didn’t ask me what it was. She asked when I last went to confession. I said tomorrow. Then she said she’d already heard the other thing, when I said hi, so I told her: I think Skye’s the answer. Nonna heard us through the wall. ‘Go tomorrow, Jackie.’"
+    }
+   ],
+   "next": "s10"
+  },
+  "s10": {
+   "slug": "TUESDAY · 5:50 PM · DEL PLAYA LANE, THE PORCH — THE SWING",
+   "body": [
+    "The sun has been down twenty-five minutes, and the sky over the Channel has gone the deep clear blue that comes after, with one long rag of pink over the islands going out. The porch light isn’t on yet. Down at the end of the street the surf is loud at the bottom of the bluff.",
+    "She drove the rest of the way home with the record off — through Ventura, and along the Rincon in the last of the sun with the surfers coming in off the water, and up through Carpinteria with her left hand on the wheel and her right hand in his on the console, where she put it at the county line and didn’t take it back.",
+    "The swing is up. While they were in Studio City somebody hung it: the driftwood seat Sol has been sanding since the tornado, sanded so pale it holds the last of the light, on two lengths of new chain from the two hooks in the porch ceiling. Tomás’s drill is on the rail, and the coffee can of screws beside it, empty. Across the seat somebody has stuck a strip of masking tape and written on it in Tomás’s capitals: OILED 2 PM. SIT AT OWN RISK.",
+    "Sol is sitting on the top step with a bottle of beer when they come up the walk. She gets up. She sets her foot against the edge of the seat and gives the swing its first push, and watches it go out over the boards and come back on its chains, and nods at it. She collects her camera from the step and heads off down Del Playa toward the bluff, after whatever’s left of the light, and leaves them to it.",
+    "Skye peels the tape off the seat, folds it in half on itself, and hands it to Jack, and sits down on the swing. She sits at one end of the new seat with one foot under her and the other knee pulled up, her arms locked around it and her chin up, and the swing gives a little under her and settles.",
+    "“I took it down,” she says, as if he hadn’t been in the car.",
+    "He leans on the porch post.",
+    "“Corinne asked me on the phone at six in the morning. Then she asked me by email. With a subject line. With my mother cc’d.” The new chain creaks in its hook. “My mother asked me at lunch, with a bread stick. I said I’d take it down after lunch, and I meant after lunch next year. I’d have taken it down for Corinne never. I took it down for a woman I’ve never met, who asked you one question.”",
+    "She stops there, holding on to her knee. She’s braced, and he can see for what: for him to tell her it doesn’t matter, and for it to be the kind thing to say."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“I don’t care. I like being with you. It was true. Don’t feel bad for posting something true.”",
+     "set": {
+      "s2e8_care": "candor",
+      "soul.honesty": "+1",
+      "said_it_plain_n": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "On the swing you told Skye you don’t care about the picture — it was true — and she could tell you meant it.",
+     "response": [
+      "She looks at him from the swing for a long time, in the blue light, with the chain still creaking a little over her head.",
+      "Whatever she was braced against goes out of her arms. Her knee comes down, and her foot finds the boards."
+     ],
+     "goto": "s10a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“I’ve been on a website. I’m hardened.”",
+     "set": {
+      "s2e8_care": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "On the swing you made a joke, then told Skye the truth: you don’t care, and she could tell.",
+     "response": [
+      "She doesn’t laugh. She waits, with her arms where they are.",
+      "So he tells her the true version, with nothing on it. He likes being with her. He likes how much fun it is, every day of it. The picture was the two of them, and it was true, and she doesn’t have to feel bad about putting something true where people can see it. He doesn’t care who saw it.",
+      "She watches him say it, every word, to the end. Then she nods, once."
+     ],
+     "goto": "s10a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "*Sit down next to her. Tell her she can post anything she wants.*",
+     "set": {
+      "s2e8_care": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "On the swing you sat down next to Skye and told her she can post anything she wants. She could tell you meant it.",
+     "response": [
+      "He sits down next to her, and the swing takes his weight and goes back.",
+      "“Post anything you want,” he says. “Anything. I don’t care who sees it.”",
+      "She looks at him sideways, close, through the full arc back and the full arc forward, and on the way forward her hand finds his on the chain."
+     ],
+     "goto": "s10a"
+    }
+   ]
+  },
+  "s10a": {
+   "slug": "TUESDAY · 6:05 PM · DEL PLAYA LANE, THE PORCH — THE SWING",
+   "set": {
+    "skye_sweet_only": true,
+    "resolve.jack": "+1"
+   },
+   "body": [
+    {
+     "if": "s2e8_care!=\"sincerity\"",
+     "text": "She moves over on the driftwood, and he sits, and the new chains take the two of them."
+    },
+    "“I know. I can tell. I’m stopping anyway.”",
+    "He starts to say it again, and she shakes her head at him.",
+    "“You said *tomorrow* to your mother,” she says. “I know what tomorrow is.”",
+    "The swing goes back and comes forward. Somewhere down the street a screen door bangs and a girl yells somebody’s name at the beach.",
+    "“It costs you. Don’t tell me it doesn’t — I was in the car, I heard your half.” She looks up at the chains where they go into the ceiling. “And it costs me. With them.” She puts her foot down and stops the swing.",
+    "“And you told her I was the answer.” She says it to the chains. “On the Conejo Grade. In the brake lights. With me right there, with both hands on the wheel, being furniture.” Her thumb finds the seam of the driftwood and goes along it. “I’ve been the answer to a nine o’clock problem on Thursdays. I have never once been anybody’s answer to their *mother*.”",
+    "“I want your mother to like me. I want your grandmother to like me so much it’s stupid. I learned her prayer. I say it at red lights.”",
+    "“She’s had you in her rosary since Christmas,” Jack says.",
+    "Skye looks at him. “Me or Cassidy?”",
+    "“She’s working on it.”",
+    "That gets a laugh out of her, short, against his shoulder.",
+    "Then her head tips, and a smile comes up on her, bright and even, every tooth in it on its best behavior, and it’s Cassidy on the swing, Thursdays at nine, sweet as a church supper. “From now on,” Cassidy says, “only the nice ones.”",
+    "Cassidy goes as fast as she came, and Skye pushes them off again with her heel. “Pictures of you explaining things,” she says. “You explain things to people who didn’t ask. It’s the nicest thing about you. Your mother can look at that all day.”",
+    "He tells her about tomorrow, the rest of it. Hale is flying to New York on Thursday, so the Greene session has moved to his house, tomorrow at six, with the State of the Union on the television. Hale said to bring a guest.",
+    "“Come,” Jack says.",
+    "The swing goes back and comes forward while she thinks about it. “Go,” she says. “Bring me back Hale doing the President. I want all of it. I want his face in the applause breaks. If he heckles, I want the heckles word for word, and don’t clean them up, I’ll know.” She tucks her feet up under her on the seat. “I’m watching it here. Tomás and Sol. Tomás yells at the television on principle, and Sol films him doing it. So somebody can yell at it with me.”",
+    "She leans into his side, and he puts his arm along the back of the swing behind her, and they ride it like that until the porch light comes on over them by itself, on its timer.",
+    {
+     "type": "break"
+    },
+    "He walks home up Del Playa in the dark, past the house parties starting up and a couch somebody has carried out onto a lawn to sit on, with his hands in his jacket and the RAZR quiet in one of them.",
+    "At the corner he looks back. Her porch is the one lit square on that side of the street, and the swing is still moving a little on its new chains — her on it, one heel on the boards, pushing off."
+   ],
+   "next": "s11"
   }
+ }
 }

@@ -2097,3 +2097,35 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - The Point is open; the roses at the cross have no owner; Conan's last night; Hollis retires and Theo is in.
 - **Skye holds "not yet" as hope.** Jack said no is "probably" becoming not yet (s04, every path) and then kept the no; she has his words and will hold him to them. Do not let either of them forget it was said.
 - **"I don't know what I'd do to one"** (s04: a child, in her mother's voice, "working children") is an open wound; Jack did not answer it directly. Do not resolve it lightly or turn it into a bit.
+
+### S2E08
+> Final revision (see continuity.md S2E08). Branch tags are `[scene | condition]`. Canon is Mon Jan 25 – Wed Jan 27, 2010.
+
+#### Jack
+- [s01] a blog item (Mon 3:12 AM PT) calls him "Mystery Guy" and knows him by Danny's Carhartt; [candor] he tells the table it is Danny's jacket. [s02] Skye stops it at the fourth button, for Sunday; "the talking" counts; "Tell me what I'm saving you"; her hardest question about Osei and staying away; [candor] she rejects "No." as a present. [s05] comment #31 ("convict"); Gina reported and answered it; Danny's Candlemas card goes in Gina's envelope. [s06] the post went up Mon 11:48 PM, Jack tagged (63 likes); Rita Pallante is on his wall; Gina's all-caps texts. [s08/s08a] Corinne has not printed his name; the Vindicator facts are in Corinne's and Debbie's hands; Debbie: "She doesn't write to me." [s09] Pancake, "I'm very good at fine," Skye still takes the shower calls. [s09a] Ma saw the post through Mrs. Pallante and Rosie. [s10] the Carhartt is handed back; Sol's swing is hung; Skye goes sweet-only. [s11] the tray post (11:02). [s12, via Gina at 3:31 PM] Ma saw the tray post and did not close it. [s13b] Lena says the Facebook-status line aloud. [s14] the Point light is dark; Hale: "Give him my regards." [s15] Osei uses his wording, "To what question?" [s15a] Osei: "Go home tonight." [s17] Nonna asks, through Gina, for Skye's baptism name.
+
+#### Lena
+- From Jack: [s13a | personal] his jab at Julian (cue "Lena heard that."); [s13b | concede] "You should have heard it from me." (cue "Lena will remember that."). She says the Facebook-status line herself; Jack has no answer on any path (`lena_said_status`). [s13c] she says "replaced."
+- She sees for herself: Hale's table and the Greene duel (`duel_affair_done`).
+- **She does not learn (on the page):** the blog item, the heat scene, the vetting lunch, Danny's number, the post and its takedown, the confession, "I love you."
+
+#### Skye
+- From Jack: [s02] "the talking" counts; he names her "the near occasion of sin" in confession; what Communion means to him ("they pass the plate over you"); [candor] "No." to the Osei question. [s09] only his half of the call to Ma (she hears how he said *Ma*, and deletes the post at Las Posas); [candor] "You weren't fine. Your shoes were on."; [sincerity] he saw her come back for Danny. [s16h / s16p | `s2e8_after`] Jack says "I love you" first; she learns she was beaten to it and says it back.
+- She sees or says herself: [s02] stops it at the fourth button; the bed photo; [s06] her post (11:48 PM) with Jack tagged; [s08a] Danny's number A555218, said aloud; [s11] "They're running lines" (intuition only); [s16ha/s16pa] Hale's heckles and the sitting-vs-standing argument ("grief with good posture").
+- She does not know: the confession (Osei's seal); Jack's "She stopped it, for Sunday" and "the answer"; Lena's status line at Hale's; the Vindicator facts beyond what Corinne and Debbie said at lunch.
+
+#### Others
+- **Corinne** and **Debbie** — [s08/s08a] learn Struthers, Nov 2007, felonious assault, plea Jan 2008, five years (no victim named); Gina's comment #34; Danny's number A555218 (Skye says it aloud); Corinne sets the Thursday Palisades fundraiser; [s08 | candor] Corinne writes down "pro-me." **Theo** — [s01] knows; [s06] sees the post; hears "I think she's the answer" (Theo alone); [s13b] hears Lena's status line. **Margot, Doug, Kevin** — [s01] know; Doug and the table learn the jacket on [candor]; [s06] Margot's comment (11 likes). **Laney** — [s06] a screenshot; [s11] flattens his collar; [s13b] hears the status line. **Kenzie, Tyler** — [s06] see the post. **Caleb, Yusuf, Evan, Hale's table** — [s13b] hear the status line. **Gina** — [s05] reports and answers comment #31; [s06] all-caps texts; [s12] Ma saw the tray post (3:31 PM). **Ma** — [s09a] hears of the post through Mrs. Pallante and Rosie; "Tomorrow," then "I think she's the answer"; Nonna's rosary carries down the line. **Rita Pallante** — [s06] posts on his wall. **Youngstown's wall** — [s06] sees the post. **Nonna** — [s09a] the rosary on the line; [s17] asks, through Gina, for Skye's baptism name. **Hale** — [s14] "Give him my regards."; [s16ha] the heckles. **Osei** — [s15] under the seal hears "the answer," Skye's Sunday stop and the stretch after it; [s15a] "Go home tonight."
+- Theo, Gina and Rita know of the post; Theo alone hears "the answer."
+
+#### LIVE RISKS carried out of S2E08
+- **Osei's seal:** the confession (the Sunday stop, "the answer") stays with Osei; Skye must not learn it from him.
+- **Jack said "I love you" first** (`jack_said_love_first`); Skye knows she was beaten to it. Do not have her claim it was mutual or forget it.
+- **Nonna's baptism-name question** was sent and unanswered; Jack has no answer. Do not resolve it by accident.
+- **Danny's number and the Vindicator facts** are with Corinne and Debbie; Corinne wrote "pro-me" on [candor]. Keep the victim unnamed.
+- **Skye's line at noon** (nothing that's going anywhere, though talking counts) and her "after Sunday" must be honored in E09; Jack's "first no ever" is only his guess.
+- **The post is down** (Skye deleted it at Las Posas), but Theo, Laney (screenshot), Margot, Kenzie, Tyler, Doug, Rita and Youngstown's wall saw it; Ma saw the tray post and did not close it.
+- **Lena's status line** was spoken before Hale's table and Jack has no answer; she says "replaced." Her friction rises on the [s13a | personal] path.
+- **`kevin_raincheck` gates Kevin's text;** the end-card "Hour four. The window table." stays ungated (the engine cannot gate end-card lines).
+- **Whisper count:** 8 in the file, 0-5 a path; the schema counts 5-8 per episode; Showrunner to rule whether that is a file count. **Journal length against the word band** also needs a Showrunner ruling.
+- **The Point light is dark;** Hale: "Give him my regards."; Thursday's Palisades fundraiser is set.
