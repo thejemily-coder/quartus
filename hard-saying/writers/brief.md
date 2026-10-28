@@ -1924,3 +1924,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   vehicle with Lena that long again, not right now. Kevin names it: **Thursday lunch at the Commons, the window table,
   "hour four."** If the player took it, **S2E08 must pay it off** (Thursday is Jan 28: S2E09's opening day per the map;
   or move the lunch into S2E08 if the room prefers). Gate on `kevin_raincheck`.
+- **Heat standard raised (player, after S2E07's Friday scene read "incredibly vague").** From now on, Jack–Skye
+  intimate scenes are **explicit and specific**: name what they do (undressing, hands, mouths, oral sex, bringing each
+  other to climax), concrete bodies and sensations, who does what and how it lands, in frank literary prose (no crude
+  slang, no clinical anatomy lists), always carrying character and emotion. Vague summary ("they take each other the
+  rest of the way") is a defect. The hard line (no intercourse) and the no-consent-beat rule stand. Reference: the
+  revised S2E07 s04/s04a. Applies to the Christmas-call level of explicitness for talk, and above it for action.
