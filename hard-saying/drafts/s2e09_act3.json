@@ -1,0 +1,414 @@
+{
+  "scenes": {
+    "s05": {
+      "slug": "THURSDAY · 7:45 PM · SUNSET BOULEVARD, THE PALISADES — DOWNHILL",
+      "duel": "walk",
+      "body": [
+        {
+          "if": "s2e9_tell==\"candor\"",
+          "text": "“You can’t stand in it,” she says, swinging her shoes. “Okay. Tell me why while we walk. All of it.”"
+        },
+        {
+          "if": "s2e9_tell==\"sincerity\"",
+          "text": "“The other side,” she says, swinging her shoes. “Okay. I walked yours. Walk me through it.”"
+        },
+        {
+          "if": "s2e9_tell!=\"candor\" && s2e9_tell!=\"sincerity\"",
+          "text": "“The shrimp has my vote too,” she says, swinging her shoes. “Now the real one. All of it.”"
+        },
+        "The hill road comes down out of the hedges in long switchbacks with no sidewalk, a white line and a gutter full of eucalyptus bark, and lets them out onto Sunset above the Village. The air has gone dry for the first time in two weeks. Somebody up the canyon is burning oak, and the smoke comes down to the road thin and sweet, and the moon, most of the way to full, has come up over the hills behind them and is following them down.",
+        "At the first curve he takes off Theo’s jacket and holds it open behind her, and she backs into it without breaking stride and walks on with the sleeves down past her fingers and her heels hanging out of one cuff by their straps. Cars come up the hill at them with their brights on and dip them, one after another, out of courtesy or alarm.",
+        "So he tells her. It helps that it’s downhill.",
+        "“It’s a human being from the start,” he says. “That isn’t the catechism, that’s biology. Its own DNA the first day. A heartbeat by six weeks. Kevin has it in a textbook with pictures; he’ll show you, he’s dying to. That’s what we walked for in San Francisco — that, and nothing else. And I grew up in a union house. The Democrats came to the hall at election time and the hall went to Mass on Sunday, and every man in it would’ve walked out of that room tonight, and not because they’re Republicans. Pop would sooner eat his jacket. Because the life part used to be theirs too. Stupak’s what’s left of it. A Catholic Democrat from the Upper Peninsula who looked at his own party’s bill and said *not with that in it*, and held, and they had to come to him.”",
+        "She listens for most of a block, walking the top of the curb with her arms out and the empty sleeves hanging. When he’s done she hops down.",
+        "“My first show,” she says, “I was somebody’s little sister. I had a catchphrase. I’m not doing it. The girl who stood in for my TV sister got bumped up to lines — nineteen, from Bakersfield, a morals clause in her contract and a mother who cashed her checks. She told me in the hair trailer, because I was fifteen and I didn’t count. She didn’t say *pregnant*. She said, ‘I’m stuck.’” Skye walks on. “So who was going to pay for it? Stupak? The network had a lawyer, and her mother had the money, and the boy had a new phone number. That was the room, Jack. You couldn’t stand in Gil’s for an hour. She had to stand in hers.”",
+        "He opens his mouth.",
+        "“And don’t make that face. I’m not about to tell you that you hate women.” She points a sleeve at him. “You’d carry every woman in Los Angeles down this hill if she asked you nicely. You keep saying *the child*. I knew the girl.”",
+        "A car comes up out of the curve below, and its lights go over both of them, and she stands in them and waits for his answer."
+      ],
+      "choices": [
+        {
+          "tag": "Press",
+          "text": "“She matters. So does the one she’s carrying. You don’t get to pick which one counts.”",
+          "set": {
+            "s2e9_walk1": "press",
+            "duel.walk.rigor": "+1",
+            "duel.walk.skye": "+1",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "“Neither does the network’s lawyer,” he says. “Neither does her mother.”",
+            "“See — you said *carrying*.” She turns around on the sidewalk and walks backward downhill in his jacket, facing him. “She said *stuck*. You’re arguing with a word she never used.” She tallies it in the air with a heel. “Mine.”",
+            "He goes looking for something to put against *stuck*, and comes back with nothing, and she watches him come back with it and turns around again, swinging the shoes."
+          ],
+          "goto": "s05a"
+        },
+        {
+          "tag": "Riposte",
+          "text": "“Stupak’s a Democrat from the Upper Peninsula. It’s your party that can’t count to sixty.”",
+          "set": {
+            "s2e9_walk1": "riposte",
+            "duel.walk.wit": "+1",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "She laughs out loud, on Sunset Boulevard, hard enough that she has to stop walking, and the jacket slides half off one shoulder and she hitches it back up by the collar.",
+            "“That’s very good,” she says. “I’m stealing it for a dinner party. And she was still stuck, Youngstown. Sixty senators weren’t going to babysit.”",
+            "She bumps him off the curb with her hip and takes it back for herself."
+          ],
+          "goto": "s05a"
+        },
+        {
+          "tag": "Concede",
+          "text": "“You knew her. I didn’t. Tell me about her.”",
+          "set": {
+            "s2e9_walk1": "concede",
+            "duel.walk.heart": "+1",
+            "rel.skye.trust": "+1",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "So she does, walking. The girl kept it. The show didn’t keep her; they wrote her out in two lines and a suitcase, and she went home to Bakersfield. Skye was fifteen. She sent a card with a stuffed giraffe taped to it, and never saw her again.",
+            "A driveway gate goes by. “If she’d asked me to drive her,” Skye says, “I’d have driven her. And cried the entire way. I don’t know why I’d have cried.” She moves the shoes to her other hand. “I never told anybody that part.”",
+            "He doesn’t argue with it. He moves to the traffic side of her, and keeps his hand at the small of her back down the next curve, where the sidewalk gives out."
+          ],
+          "goto": "s05a"
+        },
+        {
+          "tag": "Reframe",
+          "text": "“Then argue the girl with me. What would it take for her to keep it? Who pays for that?”",
+          "set": {
+            "s2e9_walk1": "reframe",
+            "duel.walk.rigor": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            "Skye looks over at him from inside Theo’s collar. “Now you sound like a Democrat.”",
+            "“I sound like my mother’s parish. St. Brigid’s has a closet in the basement full of cribs and car seats, and a list of people who’ll drive you to the doctor, and Ma has the key to the closet.”",
+            "“Don’t,” Skye says. “Don’t be good at this. I had a speech about Republicans. It had a part in it for Glenn.” She pulls the lapels shut under her chin and walks on beside him, close enough to bump, and doesn’t give the speech."
+          ],
+          "goto": "s05a"
+        }
+      ]
+    },
+    "s05a": {
+      "slug": "THURSDAY · 8:30 PM · SUNSET BOULEVARD, PALISADES VILLAGE — A BUS BENCH",
+      "duel": "walk",
+      "set": {
+        "duel.walk.skye": "+1"
+      },
+      "body": [
+        "Palisades Village has shut for the night: a bookstore with one lamp left on for a cat asleep in the window, a hardware store with its rakes chained out front, a café with the chairs upside down on the tables. Over the bank on the corner a clock trades the time for the temperature and back, and the temperature is fifty-one. Skye drops onto the bus bench under it — a realtor in a sport coat smiling across the backrest, BUYING OR SELLING? CALL MARTY — and swings her feet up into Jack’s lap as he sits down.",
+        "They’re like ice. He takes them in his hands and holds them, Theo’s cuffs riding up his wrists on their safety pins.",
+        "“Health care,” she says. “Go. Tell me you’re against it.”",
+        "“I’m for most of it. The insurance company can’t drop you for getting sick, or turn you down for what you’ve already got.” He rubs her arch with his thumb, and she shuts her eyes. “I’m against the abortion money. And I’m against it coming out of Washington, because nothing comes out of Washington without a string on it, and the other end of the string’s in somebody’s hand who’s never been to Ohio.”",
+        "“Massachusetts,” she says, eyes still shut. “Sixty is gone. The man with the truck took it.” She means the senator-elect’s pickup, which has been on every channel since. “So they pass the Senate’s, or they go home and explain it to people. I’m for it. All of it, the strings too. Strings are how you hold something up.”",
+        "“Strings are how you work a puppet.”",
+        "She opens one eye at him. She wiggles her toes in his hands.",
+        "“Your father’s union got him a doctor,” she says. “Whose union got Rudy one?”",
+        "It lands. Rudy at the flat-top at the Anchor in his hairnet, turning hash browns — Jack has worked that counter beside him since the fall and couldn’t tell you the name of his doctor, or if there is one. He sits on the bench under Marty with her feet in his hands and has no union to name."
+      ],
+      "choices": [
+        {
+          "tag": "Press",
+          "text": "“Then pass it without the abortion money. Stupak’s language. Nelson’s isn’t the same thing.”",
+          "set": {
+            "s2e9_walk2": "press",
+            "duel.walk.rigor": "+1"
+          },
+          "response": [
+            "“Everybody in that house tonight knows Nelson’s isn’t the same thing,” he says. “That’s why they like it.”",
+            "“Sixty is gone, Youngstown.” She sits up and takes her feet back. “You get the Senate’s bill or you get nothing, and nothing doesn’t cover anybody’s teeth.”",
+            "He has an answer — the House can fix it, the House can wait — and she has one for his, about who’s waiting, and they go around it twice more under the bank clock while the temperature drops to fifty. It’s a draw. She won’t call it and he won’t either. She stands up, and holds a hand down to him, and pulls."
+          ],
+          "goto": "s05b"
+        },
+        {
+          "tag": "Riposte",
+          "text": "“Rudy has a doctor. Her name is Gloria, and she prescribes pie.”",
+          "set": {
+            "s2e9_walk2": "riposte",
+            "duel.walk.wit": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            "Skye folds in half on the bench, his jacket and all, her feet kicking in his hands, and a man walking two greyhounds on the far sidewalk stops and turns around to look.",
+            "When she can talk she sits up and wipes her eyes on a sleeve. “Rudy’s tooth, Jack.” She taps her own jaw, low on the left. “The night Gloria gave me the boysenberry. He chewed on the other side all night, and every time the door let the cold in he winced. I watched him. You did too.”",
+            "He did. He has nothing for the tooth. He holds on to her feet."
+          ],
+          "goto": "s05b"
+        },
+        {
+          "tag": "Concede",
+          "text": "“Nobody did. You’re right.”",
+          "set": {
+            "s2e9_walk2": "concede",
+            "duel.walk.heart": "+1",
+            "rel.skye.trust": "+1"
+          },
+          "response": [
+            "He tells her the true thing, the one he doesn’t tell people. Since Lordstown, the Costigans are on Ma’s insurance — the diocese’s plan, school secretary and dependents — and Pop, twenty-six years on the line, carries the card behind his union card in his wallet, where he doesn’t have to look at it. Pop hates it.",
+            "Skye takes her feet out of his lap and slides down the bench until she’s against his side, and puts her head on his shoulder.",
+            "“What does he say about it?”",
+            "“Nothing,” Jack says. “That’s what he says.”"
+          ],
+          "goto": "s05b"
+        },
+        {
+          "tag": "Reframe",
+          "text": "“I don’t trust Washington with my father’s pension. Why would I trust it with Rudy’s doctor?”",
+          "set": {
+            "s2e9_walk2": "reframe",
+            "duel.walk.rigor": "+1",
+            "trait.control": "+1"
+          },
+          "response": [
+            "“Because the alternative is trusting Glenn Sato,” she says. “Or the guy Glenn buys his insurance from. I’ve met him. He has a boat in Marina del Rey called the *Deductible*. I’ve been on it. There was a cheese plate.”",
+            "It’s a real point, and it’s funny. He concedes the laugh and not the point, and says so, and she puts her cold feet back in his lap to show him what she thinks of that."
+          ],
+          "goto": "s05b"
+        }
+      ]
+    },
+    "s05b": {
+      "slug": "THURSDAY · 9:15 PM · SUNSET BOULEVARD, TEMESCAL CANYON — THE LIGHT",
+      "duel": "walk",
+      "body": [
+        "At Temescal Canyon Road the light is red for a street with nothing on it. Up to the right the canyon goes back into the dark between its sycamores, the trunks white where the streetlight reaches them, and the air coming down out of it is colder by a coat and smells of wet sage. Skye presses the walk button, and presses it again, and stands back and gives it a look.",
+        "“The bailout,” she says. “Let’s do one you’re wrong about.”",
+        "“I’m for it.”",
+        "She turns around from the button. “You’re *for* it.”",
+        "“GM goes under, Lordstown goes with it, and every bar and diner and parish for twenty miles goes with Lordstown. So yeah. I’m for it.” He hears Pop in it, and keeps going. “It didn’t save my dad. They took his shift in June, in the bankruptcy. It saved the plant. They still build the Cobalt out there. Good little car. There isn’t one in this zip code.” A Metro bus goes by them downhill, lit up inside and empty, NOT IN SERVICE across its forehead. “I’ll take the plant.”",
+        "“Okay. So.” She holds up one sleeve, a finger in it somewhere. “The men who run GM fly to Washington in their own jets to ask for money, and they get a bridge loan by Christmas. And the year before, the writers go out for three months, and every show in this town goes dark, and nobody bridges anybody anything. Not the writers. Not the crews. Not the woman who does craft services.” Another finger. “I’m a union member, Jack. Two of them. SAG and AFTRA. I paid dues before I could drive. Explain to me why the suits get a bridge and the people who build the thing get a pink slip and a speech.”",
+        "The walk sign comes on, white, and starts counting down, and she stands in front of it with Theo’s sleeve held up like a vote while it counts."
+      ],
+      "choices": [
+        {
+          "tag": "Press",
+          "text": "“Because half the Valley eats off Lordstown, and nobody eats off a sitcom.”",
+          "set": {
+            "s2e9_walk3": "press",
+            "duel.walk.rigor": "+1",
+            "duel.walk.skye": "+1"
+          },
+          "response": [
+            "“Tell that to the juicers,” she says.",
+            "“The what?”",
+            "“Juicers. Electricians. The guys up on the catwalks who hang every light you’ve ever seen me in.” The sign has run out under them, and she crosses anyway, against the red, with nothing coming. “They eat off a sitcom. They’ve got a union too, the IA, and when the writers went out they went home for three months with no check, and nobody flew anywhere to get them a loan.”",
+            "She says *juicers* like a word from her own kitchen, a word she had before she could read. He gets to the far curb a step behind her, and it’s her point, and he tells her so."
+          ],
+          "goto": "s05c"
+        },
+        {
+          "tag": "Riposte",
+          "text": "“Two unions. You’re more labor than my father, and he’s got the jacket.”",
+          "set": {
+            "s2e9_walk3": "riposte",
+            "duel.walk.wit": "+1",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“He has a *jacket*?” She lights up. “Describe the jacket.”",
+            "He describes it: LOCAL 1112 across the back, and the hook by the back door it’s hung on since June.",
+            "Skye turns Theo’s collar up, hunches down into it, sets her jaw, and turns into a man from Youngstown standing on a corner in Pacific Palisades and disapproving of it. “*Light’s red,*” she growls. “*You wait for the light. This isn’t Pittsburgh.*”",
+            "It’s terrible. It’s nothing like him. It’s so much him that Jack laughs until he misses the light, and loses whatever he was going to say about unions, and doesn’t go back for it."
+          ],
+          "goto": "s05c"
+        },
+        {
+          "tag": "Reframe",
+          "text": "“Then we agree. The workers. Not the suits, not the studios.”",
+          "set": {
+            "s2e9_walk3": "reframe",
+            "duel.walk.rigor": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            "“The guys on the line in Lordstown and the guys on your catwalks,” he says. “Same guys. Different hats.”",
+            "She stops at the light. It’s green now. She doesn’t take it.",
+            "“Damn it,” she says.",
+            "“What?”",
+            "“I set that up and you walked right in and took it.” She looks at him in the green light with Theo’s collar up around her ears. “Fine. Yours.” And she holds it out to him in both hands, nothing in them, like a present she had been planning to keep for herself."
+          ],
+          "goto": "s05c"
+        },
+        {
+          "tag": "Personal",
+          "text": "“Your mother negotiated your contracts. Who was your union then?”",
+          "set": {
+            "s2e9_walk3": "personal",
+            "s2e9_walk_personal": true,
+            "duel.walk.rigor": "+1",
+            "rel.skye.trust": "-1",
+            "trait.reckless": "+1"
+          },
+          "response": [
+            "She keeps walking. Three steps, out ahead of him, into the crosswalk with the sign still counting.",
+            "“Nobody,” she says.",
+            "In the middle of Sunset, in the white bars of the crosswalk, she bends and fixes the strap of one of the heels in her hand. It doesn’t need fixing; she isn’t wearing it. Under Theo’s jacket her shoulders have come up a little toward her ears.",
+            "“That was cheap,” he says.",
+            "“It was good.” She straightens. “That’s the problem with you.” She walks on, and says the rest with her back to him, at the far curb: “Don’t do it twice.”",
+            "He catches up. Her shoulders are still up. They come down a block later, slowly, on their own, and he walks beside her and watches them until they do."
+          ],
+          "goto": "s05c"
+        }
+      ]
+    },
+    "s05c": {
+      "slug": "THURSDAY · 9:55 PM · SUNSET BOULEVARD, THE LAKE SHRINE WALL — THE LAST HILL",
+      "duel": "walk",
+      "set": {
+        "duel.walk.skye": "+1"
+      },
+      "body": [
+        "The last hill runs down beside a long white wall with red tile along the top and bougainvillea spilling over it, mostly leaves this time of year. Behind it, Skye says, there’s a lake with swans on it, and a windmill somebody turned into a chapel, and a little bit of Gandhi in a stone box. “I did a shoot in there for a magazine. They were very nice about it. We weren’t allowed to smile near the ashes.”",
+        "She walks the curb along the wall with one hand trailing on the stucco.",
+        "“You want to know about that house?” she says. “That house is my people. Gil cries at his own pilots, and then he cancels them on Friday. Every person in that room ticked a box on a card tonight for anything with *choice* on it, and drove home, and half of them don’t have the woman who cleans the house on the insurance.” She doesn’t say it like a joke. “And you were at the lunch. Somebody two floors up from publicity called Corinne to ask, very nicely, whether Cassidy’s pro-life now. They don’t care what I believe, Jack. I could believe in Zeus. They want to know which half of the audience I cost them. That’s what a conviction is in that building. It’s a demographic.”",
+        "He has watched her work a room all night. He didn’t know she was keeping its books.",
+        "“So here’s yours.” She stops on the curb, which puts her eyes level with his. “You think you’re on nobody’s side. That side’s very expensive, Youngstown. It’s the side of everybody who’s never had to pay for one.”",
+        "“I’ve paid for one.”",
+        "“I read your Chesterton.” She jumps down. “The ordinary man ought to be in charge of the really important things — getting married, and kids, and the laws. That’s democracy, he says. And you read that and think, *ordinary man, that’s me, a guy from Ohio*. Jack. You walked out of a room tonight because you could. That girl from Bakersfield couldn’t walk out of anything.”"
+      ],
+      "choices": [
+        {
+          "tag": "Press",
+          "text": "“Nobody’s side isn’t a side. It’s a place you stand.”",
+          "set": {
+            "s2e9_walk4": "press",
+            "duel.walk.rigor": "+1"
+          },
+          "response": [
+            "“Where?” She puts her back to the wall and spreads her arms along it. “Show me where.”",
+            "So he tells her. In the pew at St. Brigid’s between Pop and Nonna, where the Democrats in the front and the Republicans in the back say the same Creed and mostly mean it the same. On Market Street five days ago, in sneakers, with her beside him. At the hall with his father in June, the week of the layoff, when nobody from either party came.",
+            "She opens her mouth to take it away from him. She shuts it again, and takes his arm instead, and they go down the last of the wall like that."
+          ],
+          "goto": "s05d"
+        },
+        {
+          "tag": "Riposte",
+          "text": "“Says the girl who just walked out on a senator.”",
+          "set": {
+            "s2e9_walk4": "riposte",
+            "duel.walk.wit": "+1"
+          },
+          "response": [
+            "“I walked out on a *shrimp*.” She points downhill with a shoe. “The senator wasn’t there. The senator was in Washington, being on a side.”",
+            "“The shrimp was there.”",
+            "“The shrimp had no position.”",
+            "They split it somewhere near the end of the wall, both laughing, and neither one could tell you who split it."
+          ],
+          "goto": "s05d"
+        },
+        {
+          "tag": "Concede",
+          "text": "“You knew all that and went anyway. Because it’s your job. Because they’re your people.”",
+          "set": {
+            "s2e9_walk4": "concede",
+            "duel.walk.heart": "+1",
+            "rel.skye.trust": "+1"
+          },
+          "response": [
+            "She stops against the wall, her shoulder blades on the stucco and the shoes hanging off one hand, and looks back up the hill they came down.",
+            "“They’re my people,” she says. “Lord help them.”",
+            "It comes out fond, and it comes out like a prayer for a hopeless case, and she doesn’t pick. He takes the shoes from her, and carries them the rest of the way."
+          ],
+          "goto": "s05d"
+        },
+        {
+          "tag": "Reframe",
+          "text": "“Then neither of us has a side. We’ve got each other’s.”",
+          "set": {
+            "s2e9_walk4": "reframe",
+            "duel.walk.heart": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            "She stares at him. “That is so corny I want to report you to somebody,” she says. “I’ve been hit on by a man in a Pikachu suit on this exact boulevard, and he had better material.”",
+            "She takes his hand anyway, and laces her fingers through his, and swings it the rest of the way down the wall."
+          ],
+          "goto": "s05d"
+        }
+      ]
+    },
+    "s05d": {
+      "slug": "THURSDAY · 10:40 PM · PACIFIC COAST HIGHWAY — WILL ROGERS STATE BEACH, THE LIFEGUARD TOWER",
+      "duel": "walk",
+      "set": {
+        "duel_walk_done": true
+      },
+      "body": [
+        "Sunset runs out at the bottom of the hill into the Pacific Coast Highway, four lanes and a median with the ocean on the far side of it, loud now, close enough to feel in the soles of his shoes. On the near corner the old gas-station kiosk sits under its heat lamp, the stools out front, the menu lit in the window, onions going on a flat-top somewhere inside it; the smell comes across the corner after them, and Skye turns her head to it and says, “Later,” like a promise to a dog. They cross with the light and go down a set of concrete steps past the empty lot, and the sand is cold and gives under them. A lifeguard tower stands up out of the dark on its legs, blue and white, shuttered for the winter, its ramp running down to the sand and the paint coming off the rail in flakes.",
+        "Behind them one car slows on PCH, a pair of headlights that drops below the speed of everything else and hangs there. Skye turns her face into his shoulder, quick, and keeps it there. The car picks up and goes on toward Malibu.",
+        {
+          "if": "duel.walk.rigor>=2",
+          "text": "“Fine,” she says at the foot of the ramp, out of breath from nothing. “You win the hill. I win everything else on Sunset.” She counts it off on her fingers, his hand in her other one. “Rudy’s mine. The network’s mine. And you get the hill, because you argued it like you were carrying something up it instead of walking down.”"
+        },
+        {
+          "if": "duel.walk.rigor<2 && duel.walk.heart>=2",
+          "text": "“You know what you do?” she says at the foot of the ramp. “You argue like you’re scared of losing me. Not the point. Me.” She says it lightly, kicking sand at the bottom board of the ramp. It isn’t light. He doesn’t tell her she’s wrong."
+        },
+        {
+          "if": "duel.walk.rigor<2 && duel.walk.heart<2",
+          "text": "“Draw,” she says at the foot of the ramp. “Pending a recount.” She holds out her hand, formally, and he shakes it, formally, on the sand, with the surf going off behind her like applause, and she keeps the hand afterward, which wasn’t in the terms."
+        },
+        "She’s put the shoes down. They lie on their sides in the sand by the ramp, and Theo’s jacket hangs off her to the knees, and the surf breaks white behind her and runs up the beach and sinks into it.",
+        "“Everybody I know walks out of rooms,” she says. “I do it twice a week. I’m good at it; I’ve got a face for it. They walk out *away* from something.” She looks up at him. “You’re the only person I’ve ever seen walk out of a room *for* something.”"
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "*Kiss her.*",
+          "set": {
+            "s2e9_tower": "sincerity",
+            "trait.sincerity": "+1",
+            "rel.skye.heat": "+1"
+          },
+          "key": "At the bottom of Sunset, by a lifeguard tower, Skye said you’re the only person she knows who walked out of a room for something. You kissed her.",
+          "response": [
+            "He doesn’t say anything to that. He kisses her, and walks her back with it until the rail of the ramp is behind her.",
+            "She makes a sound against his mouth, half a laugh, and her hands come up inside his collar, cold, and the jacket slides off her shoulders into the sand and nobody goes after it. His hands are on the rail on either side of her, and the pipe is ice under his palms, and he wants her hips in them instead, and the green dress gone, and the dark under the tower, and all night — he wants more than kissing, and he wants it all through him, and nothing in him has a word to say back.",
+            "Up on the highway a truck goes by and leans on its horn at them, two long notes. Skye, without stopping, takes one hand off the back of his neck and waves."
+          ],
+          "goto": "s06"
+        },
+        {
+          "tag": "Candor",
+          "text": "“I’d do it again. Every room.”",
+          "set": {
+            "s2e9_tower": "candor",
+            "trait.candor": "+1",
+            "rel.skye.trust": "+1"
+          },
+          "key": "At the bottom of Sunset Skye said you’re the only person she knows who walked out of a room for something. You told her you’d do it again, every room.",
+          "response": [
+            "She has Theo’s tie in her hand before he’s done saying it, and walks him backward by it until the rail of the ramp is across his back, and kisses him.",
+            "The cold of the rail comes through Theo’s shirt in a stripe across his shoulder blades. Her hips are against his, and he puts his hands on them, on the thin green knit and the warm of her under it, and he wants — the dress up, and the jacket down in the sand, and her, here, under the tower, now — and the wanting goes through him from his mouth to his knees, and he lets it, and nothing in him says anything back.",
+            "When she lets go of the tie it’s wrecked. She looks at it in the dark and puts her forehead against his chin.",
+            "“Ted’s going to kill you,” she says. “That was a *commitment*.”"
+          ],
+          "goto": "s06"
+        },
+        {
+          "tag": "Wit",
+          "text": "“Technically I walked out on a shrimp.”",
+          "set": {
+            "s2e9_tower": "wit",
+            "trait.wit": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "key": "At the bottom of Sunset Skye said you’re the only person she knows who walked out of a room for something. You said technically it was a shrimp, and she kissed you anyway.",
+          "response": [
+            {
+              "if": "s2e9_walk4==\"riposte\"",
+              "text": "“You did that one already,” she says. “Up by Gandhi. It was better the first time.”",
+              "else": "“Technically,” she says, “the shrimp had it coming.”"
+            },
+            "She’s laughing when she kisses him, laughing into his mouth, so that the start of it is mostly teeth and the laugh going back and forth between them, and then it isn’t a laugh at all. She pulls him in by his belt against her, against the rail at her back, and his hands go to her hips and find the green knit warm from Theo’s jacket and her under it, and he wants more than this — wants the dress up and the long dark under the tower and the rest of the night to spend in it — and there’s no voice in him saying anything else.",
+            "A wave comes farther up the sand than the others and gets them both to the ankles, Theo’s trouser cuffs and all. Skye shrieks into his collar and doesn’t let go."
+          ],
+          "goto": "s06"
+        }
+      ]
+    }
+  }
+}
