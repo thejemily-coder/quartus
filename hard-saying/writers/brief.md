@@ -1970,3 +1970,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   for the bad, but it goes both ways: **the bad doesn't cancel out the good.** Skye: "Say the last part again"; "That's
   not in the book." / "It's in him."; "I can live in the daylight column." Later beats (Wednesday's confession, NOLA)
   may echo the line; it is Jack's, credited to Osei.
+- **Follow-up (player): "Her response should be adjusted and expanded accordingly, as well as any future scenes that
+  would touch on that."** Done in S2E08 (s02 Candor expanded: "Which him?", the columns, "You're not something I did",
+  Friday in both columns, the good shot with the lights off; s10a, s15/s15a Osei's answer: the good is God's and not
+  to be fled, the near occasion was the room/hour/door, neither cancels the other, "if you make her the answer you
+  make her the occasion"; s16h/s16p/s16pa, s17 Sower line; all gated `s2e8_noon=="candor"`). **Standing rule:** future
+  episodes carry this exchange and Osei's reply forward wherever they touch it.
