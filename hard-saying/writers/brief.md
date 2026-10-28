@@ -1930,3 +1930,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   slang, no clinical anatomy lists), always carrying character and emotion. Vague summary ("they take each other the
   rest of the way") is a defect. The hard line (no intercourse) and the no-consent-beat rule stand. Reference: the
   revised S2E07 s04/s04a. Applies to the Christmas-call level of explicitness for talk, and above it for action.
+- **"What's the difference now?": Jack's fuller answer (player; S2E07 s04, rewritten in place).** In his own words,
+  with the guilt seeping in: marriage is a sacrament; sex is its renewal and a child its fruit; so what they did may be
+  theologically *worse* (it imitates the marital act and avoids the fruit); the act itself might be less sinful,
+  except contraception (which most use) would probably make it more so (he's read it compared to receiving the
+  Eucharist and spitting it out); **so he doesn't actually know**: there's some difference, maybe more psychological
+  than substantive. **If she's asking whether no is turning into not yet, that's probably true.** Quiet. Then: he knows
+  she's been patient, he knows this basically makes him a hypocrite, "but thank you, seriously, for putting up with
+  me and whatever my head's doing." Skye asks everything (her own sharp, funny, sincere questions) and ties "the fruit"
+  to the next day's Walk for Life.
+  - **Carry-forward:** Jack has now said aloud that **no is probably becoming "not yet."** Later beats (the I-love-you
+    episode's "closer than it's ever been" no; Osei's confessions moving from tender to pointed; New Orleans) build
+    on this admission rather than repeat it. Skye knows it; it's hope to her and danger to the player.
