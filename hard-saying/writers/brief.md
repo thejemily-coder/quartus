@@ -1958,3 +1958,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Jack is truly falling in love (player).** Mass, her effort to understand his faith, their talks, the prayers, the
   March for Life: Jack **truly thinks she's the answer.** Play it as sincere and earned, not infatuation; the player
   should feel why he believes it (which makes the coming fall harder).
+- **S2E08 answers (player).** (1) Kevin's raincheck lunch **opens S2E09** (Thu Jan 28, Commons window table, "hour
+  four"); in S2E08 Kevin only texts a reminder on Wednesday, gated on `kevin_raincheck`. (2) **Jack says "I love you"
+  first** (not Skye): it surprises them both; she was braced to go first. The home/her-place fork stands. (3) Jack says
+  out loud that he thinks Skye is **the answer** to three people this episode: **Ma** on Tuesday's phone call (she hears
+  it in his voice before he says it), **Theo** (half-joking reaction, real worry underneath), and **Osei in confession**
+  Wednesday night (pointed, not tender: "You think she's the answer. To what question?").
