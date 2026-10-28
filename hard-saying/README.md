@@ -23,7 +23,13 @@ Game artifact: https://claude.ai/artifact/3MQUVCyw8UxRfXjX7fr9bH
 5. **Publish** `game/play.html` to the same artifact URL (omit `capabilities` on redeploy to keep the db rules), then
    commit and push.
 
-## Pre-production (optional, while the player is still playing)
+## Production cadence (player directive, 2026-10-28)
+**Strictly one episode at a time** from S2E09 on: no pre-production while the player is playing. When the player
+finishes an episode: read the save, run the notes session, then run `writers/next-episode.workflow.js` once for the
+next episode (plan → pack → blueprint → drafts → checks → review → revision), build, test, publish, commit. (S2E08 was
+the last pre-produced episode; it is finalized with `finalize.workflow.js`.)
+
+## Pre-production (retired from S2E09; kept for reference)
 - `writers/preprod.workflow.js` with args `{prevPlayed, lastSave, eps:[{ep,id,season,episode},...], notes}`: plans and
   researches each listed episode (sequentially) and blueprints + drafts the first one save-agnostically. No assembly or
   review.
