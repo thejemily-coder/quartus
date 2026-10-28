@@ -54,3 +54,13 @@ the last pre-produced episode; it is finalized with `finalize.workflow.js`.)
 - `tools/validate.py`, `tools/assemble.py`, `tools/build.py`.
 - Save: the artifact's db, doc `saves/main` (owner-only read/write), logs in `saves/main/log/<EPISODE_ID>`; a copy
   lives in the browser's localStorage, and the Menu offers a backup save code.
+
+## Shared play and the planned fork (player directives, 2026-10-28)
+- **Shared save:** db rule `saves` read/write = `interact`, so anyone the owner shares the page with as **Contributor**
+  plays the same save (one shared Jack; take turns, never simultaneously). Viewers cannot read it.
+- **Alternate timeline fork ("Jack does NOT go to New Orleans"):** when the player finishes **S2E09**, before S2E10 is
+  written: create a new private repo on the player's GitHub (e.g. `thejemily-coder/hard-saying-alt`) holding a full
+  copy of `hard-saying/` (bible, brief, ledgers, outlines, episodes, engine, tools, workflows, saves through
+  after-s2e09); add a top-of-brief fork directive ("this timeline: Jack does not go to New Orleans; all hard rules
+  stand"); publish a separate artifact seeded from after-s2e09; start a separate Claude session on the new repo with
+  a handoff prompt. The main game continues here unchanged.
