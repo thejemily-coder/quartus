@@ -1919,3 +1919,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   want."** Skye (in character) **grins wickedly: "Only if you tell me out loud first."** **And he does, badly, half
   ashamed and half desperate.** (Frank literary standard; the hard line holds; no procedural consent beat: this is
   desire and her game, not a check-in. It's the next rung, and it costs him in resolve and confession.)
+- **Kevin's raincheck (player; added to S2E07 s12b as a third ride-home option, `kevin_raincheck`).** After Kevin's
+  "I don't need you. I'd like you," Jack can quietly ask him to hold him to something else, because he can't be in a
+  vehicle with Lena that long again, not right now. Kevin names it: **Thursday lunch at the Commons, the window table,
+  "hour four."** If the player took it, **S2E08 must pay it off** (Thursday is Jan 28: S2E09's opening day per the map;
+  or move the lunch into S2E08 if the room prefers). Gate on `kevin_raincheck`.
