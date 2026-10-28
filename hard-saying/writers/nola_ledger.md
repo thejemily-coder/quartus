@@ -8,7 +8,7 @@ a truth ledger". **Nothing leaks before the drive's fight → her head on his sh
 | # | Truth / misreading | Planted | Layer (default) | Who tells whom | Done |
 |---|---|---|---|---|---|
 | 1 | Lena decided over Christmas to leave Julian (the calls are why) | S2E01–E03 (off-screen) | Mardi Gras night | Lena → Jack | |
-| 2 | The Friday call: "Will you be around after?" meant right after she ended it; she took his dodge as practical | S2E03 s09 | Mardi Gras night | Lena → Jack | |
+| 2 | The Friday call: "Will you be around after?" meant right after she ended it; she took his dodge as practical | S2E03 s09; **S2E08 s13r/s13r2 [`s2e8_d3=="real"`]: Jack says aloud, before Hale's table, that she "as good as told" him to go ahead ("fix it," "call me after"); Lena: "I said no such thing… you're lying"; "I asked you one thing on that phone… you had a *thing*" (her intent unsaid); each now thinks the other a liar — the answer must undo the public "liar" both ways** | Mardi Gras night | Lena → Jack | |
 | 3 | She saw the status (and the airport video); Laney took the laptop | S2E03–E04 (off-screen); **S2E08 s13b (planned): she says aloud she found out from a status** (the video and the laptop stay unsaid) | Mardi Gras night / Ash Wed | Lena → Jack | |
 | 4 | Why Jack didn't come for her after Wes: wouldn't swoop in; didn't trust himself single; Becca as guardrail | S1E13–E15 | Mardi Gras night | Jack → Lena | |
 | 5 | "A week": he read Julian as her moving on in a week | S1E15; S2E06 s07 (said to Laney, the aside); S2E06 s14 (Theo: "A week, Costigan.") | drive (sideways) → Mardi Gras | Jack → Lena | |
@@ -23,6 +23,7 @@ a truth ledger". **Nothing leaks before the drive's fight → her head on his sh
 | 14 | "How dare you be mad at me": what each actually thought the other did | sideways fight — **S2E07 s12–s12a (published: the van curb after the Walk — "How do you have the nerve to be mad at me? For any of this?"; Lena speechless, then angrier — "Thank you for coming, Jack." — leaves)**; **S2E08 s13b (planned): her sideways answer — the status line** | Mardi Gras night | both | |
 | 15 | The overheard fragments ("she'd decided, Theo…", "over Christmas…") click | S2E03–E06 | Mardi Gras night (Jack's realization) | (Jack, internal) | |
 | 16 | His Christmas-break calls meant as much to him; he read hers as friendship he mustn't push | S2E01–E03; S2E06 s20 (Theo: "Over Christmas. You called her every night." / "Most nights."); **S2E08 s13b (planned): her side, in public — "we talked every single day for weeks" (said as a friendship betrayed; what they meant to her stays unsaid)** | Mardi Gras night | Jack → Lena | |
+| 17 | [`s2e8_d3=="real"` only] The public "liar": at Hale's each called the other a liar over the Friday call (his misread vs. her intent); both hardened; Laney heard Jack's version | S2E08 s13r/s13r2 | Mardi Gras night, with #1/#2 (she says what "fix it" meant; he says what he heard; each takes back "liar") | both | |
 
 Room adds hidden-canon items (mystery, other secrets) only where they genuinely surface on the trip; never pad.
 
