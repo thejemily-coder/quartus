@@ -1984,3 +1984,17 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   done before, until Hale stops it. **Design ruling (player + room): this HARDENS them, not reconciles**: each now
   believes the other is lying outright. Lena now knows Jack's read; neither learns the truth soon (a slow fuse, much
   later). Downstream scenes reflect it.
+
+### After S2E08 (player feedback + S2E09 answers)
+- **Feedback:** "Such a great episode!!" Skye fantastic again; the Hale set piece with Jack and Lena incredible; Theo
+  and Laney wonderful.
+- **Kevin's lunch (opens S2E09, Thu Jan 28, Commons window table, "hour four"):** Kevin has heard about Hale's (via
+  Laney's network). He takes no side, says **one plain, Kevin-sized thing** about it, then keeps the lunch about what he
+  promised (Clare, hour four).
+- **Laney's gag at the sweet photo, Lena's laugh: KEEP, and it hurts more now.** Lena laughs despite herself, catches
+  Jack seeing it, and the laugh dies on her face: a crack in the war neither can use.
+- **The S2-d heat scene ("closer than it's ever been" no) lands Sunday Jan 31, after Mass.** Skye watches him go up
+  (her condition from S2E08 s02 met, her word kept); that night she is the one who asks. His no, closer than it's ever
+  been and said so, is the hardest yet. Escalation rule applies in full (heat, intensity, variety beyond S2E07 s04 and
+  S2E08 s02; explicit and specific; hard line holds) and the conversation after goes deeper than any before. It
+  re-opens `confession_owed`.
