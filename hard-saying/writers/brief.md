@@ -1976,3 +1976,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   to be fled, the near occasion was the room/hour/door, neither cancels the other, "if you make her the answer you
   make her the occasion"; s16h/s16p/s16pa, s17 Sower line; all gated `s2e8_noon=="candor"`). **Standing rule:** future
   episodes carry this exchange and Osei's reply forward wherever they touch it.
+- **S2E08 s13b patch (player): Jack gets "the real reason" at Hale's.** New fifth choice: "That right there. That's
+  what I meant in San Francisco. You as good as told me to do what I did. I didn't realize I owed you proof of
+  delivery." Lena forcefully denies saying any such thing (he's lying to win a debate) and never reveals what she
+  meant. Jack: a fine night to call somebody a liar to win a room (Joe Wilson's "You lie!", accurately Sept 9, 2009,
+  the health-care joint session, which Lena corrects). It disintegrates into personal attacks unlike anything they've
+  done before, until Hale stops it. **Design ruling (player + room): this HARDENS them, not reconciles**: each now
+  believes the other is lying outright. Lena now knows Jack's read; neither learns the truth soon (a slow fuse, much
+  later). Downstream scenes reflect it.
