@@ -2063,3 +2063,34 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Lena** knows Jack saw her at the glass ([door]) or sat with her ([in]); `lena_3am_stop` is set only on `in`. She hears Jack's sentence and answer to Hale per `s2e6_hale`. Her friction rises on press and personal.
 - **Whisper count:** 7 in the file (cues in s04, s07, s10, s12a, s14, s16, s19), about 2.2 a path; Showrunner to rule whether 5-8 is a file count.
 - Conan's last Tonight Show is Friday (Del Playa); Hollis retires, Theo is in; the Point may open Sunday (Tomás); Skye's letter is with Becca.
+
+### S2E07
+> Final revision (see continuity.md S2E07). Branch tags are `[scene | condition]`. Canon is Fri Jan 22 – Sun Jan 24, 2010.
+
+#### Jack
+- [s01] Laney's granola bar "For the van"; Gloria gives his Saturday away ("That's twice, hon."); Margot rides the van "for science." [s03] Sol is sanding a driftwood swing (via Skye). [s04] Skye's "I don't have an argument. I have a no." [s05] Skylark's $25,000 to Hope for Haiti Now. [s06] Conan was Skye's at fourteen. [s07] Theo: "Take the window." [s08] Kevin's "system" seats him by Lena in row three. [s09] Lena leads the first Joyful Mystery; knees touch on the Cuesta Grade; [dawn=candor] "Stop what?" goes unanswered. [s09a] Soledad and Rudy's six years; "Are you happy?" gets a yes on every path; [sincerity] he asks it back and she does not answer. [s10] Lena's "You came. You're welcome here."; Becca kept Skye's letter. [s11a] the DENISE · 1969 man. [s12] Kenzie's post (1:58 PM); Lena: "You brought your girlfriend to the Walk for Life, Jack."; [s12a] "Thank you for coming, Jack." [s12b] Kevin: "I don't need you. I'd like you." [s13s | saab] Debbie's notes; Gina: Ma at the Dell, "thats something." [s13v | van] Javi's Niners invite; Margot's "this"; [vanhome=candor] Ma: "ok… nice." [s16b] Osei: "Wednesday. Eight o'clock." [s17] Kenzie's Corolla passes; Lupe's Sunday schedule via Tomás. [s18] the Point is open; fresh roses at the cross, no owner. [s19] Theo's misdirected text; Lena knew about the taco truck before kickoff; the picture of Lena on the table; Laney asked if he ate and sent wings ("Don't."); Dale, a Lions fan from Warren, Michigan. [s19a] Skye: "i embrace you as if you were already here."
+
+#### Lena
+- From Jack: [s09] her thermos and rosary lead are her own; [dawn=candor] "Stop what?" unanswered (`lena_3am_asked`). [s09a] he asks "Are you happy?" back on [sincerity] and gets no answer. [s12] "How do you have the nerve…" ([reckless] heard by the whole curb); [s12a] `jack_said_nerve`. [s14] she walks past him without looking.
+- She sees for herself: [s10] the flannel (Jack sees her see it). [s11a] Skye shields Clare, Kenzie films (`s2e7_fuse`). [s12] Kenzie's post. [s13v | van] she moves to the front seat; Margot's "this" (not on the candor path).
+- **She does not learn (on the page):** Skye's S2-c line, Skye's Haiti envelope, the s17 and s18b talks, Jack's anger at her told to Skye, Theo's Julian pool, Laney's wings, Jack's "Stop" to Theo, the s18a prayer.
+
+#### Skye
+- From Jack: [s03] the van; she drives up (`s2e7_coming`). [s04] the no is a line that can be kept, not explained. [s08/s10] she comes to the Walk and is at the rally (`skye_at_walk`). [s11] the Thomson argument (`s2e7_walk`). [s13s | saab] "about you, sort of," daylight promised; the photo posted ([candor]/[wit]) or kept ([sincerity]). [s16a] `skye_knows_communion`; Jack does not receive. [s17] Jack tells her he is angry at Laney and Lena (`told_skye_angry`); Lena (back hall) is named to her while Skye never says the name. [s18a] the Danny guilt; the Spiritual Communion prayer. [s18b] Laney turned after the basement and Jack does not know why; the Nonna and Danny questions in general form, and that she is the answer to both; "That's enough." (`told_skye_basement`, `told_skye_decided`).
+- She sees or says herself: [s05] Skylark's Haiti gift; [s06] Conan at fourteen; [s11a] shields Clare; [s13v] Kenzie learns she did not want the post; [s16] her first Mass and her own Haiti envelope; [s16b] meets Osei; [s17] the RAZR off in her glove box; [s18a] her fear that she is a phase; [s19a] her text.
+- She does not know: "So was I," "a week," "fireman," "Due ragazze," "Which one of 'em" (s18b); Danny's and Nonna's questions quoted; Theo's Julian pool; Laney's wings; Lena's taco-truck knowledge.
+
+#### Others
+- **Laney** — granola bar "For the van" (s01); the "listening" bit with Theo; asked whether Jack ate and sent wings to his chair ("Don't."), learned by Jack at s19; [s19] Theo's pool bit may reach her off-page (`told_theo_stop_julian`; relay off-page); her jab is "a week ago Saturday." **Theo** — [s19 | `told_theo_stop_julian`] Jack tells him to stop; [candor] cue "Theo heard that."; his misdirected text; is "correct to Broussard" and runs (s15). **Kevin** — "I don't need you. I'd like you." (s12b); handshake with Clare (s14). **Clare** — Skye shields her (s11a). **Kenzie** — films (s11a), posts at 1:58 PM, learns Skye did not want it (s13v), her Corolla passes (s17). **Margot** — rides "for science," cleared with Peter (s01); "this" or "I saw her hands" (s13v). **Becca** — kept Skye's letter (s10). **Osei** — meets Skye (s16b). **Gina** — Ma at the Dell, "thats something" (s13s); [vanhome=candor] told "yes" (s13v). **Ma** — "ok… nice" (s13v). **Debbie** — 7 AM notes, "only a very good scene partner" (s13s). **Javi** — Niners invite (s13v). **Gloria** — gives Jack's Saturday away (s01). **Tomás** — Lupe's Sunday schedule to Skye (s17). **Dale** — Lions fan from Warren, Michigan (s19). **Sol** — driftwood swing (s03).
+
+#### LIVE RISKS carried out of S2E07
+- **s18b withholds**: Skye never hears "So was I," "a week," "fireman," "Due ragazze" or "Which one of 'em," and neither Danny's nor Nonna's question is quoted. Do not let her know more than "there's more."
+- **Skye never says Lena's name** after s17, though Jack has named Lena (back hall) to her.
+- **Lena's Walk-day line** "Thank you for coming, Jack." and her leaving (`lena_left_walk`) must be honored; she walks past him in s14 without looking.
+- **Kenzie's post stays up**, tagging Jack and Clare; Lena has seen it.
+- **Daylight promise** to Skye about Lena ("about you, sort of") is owed.
+- **`s2e7_happy` is state only** (ungated); "Are you happy?" gets a yes on every path.
+- **Theo's relay of the Julian pool to Laney is off-page.** Do not show Laney's reaction without a decision.
+- **Ledger:** nola_ledger rows 11, 12 and 14 still say "planned"; `reliquary_opened` (value "count" stays), `jack_cigs` may reach 14.
+- **Whisper count:** 10 in the file, 2 to 6 a path; the validator warns above 10.
+- The Point is open; the roses at the cross have no owner; Conan's last night; Hollis retires and Theo is in.

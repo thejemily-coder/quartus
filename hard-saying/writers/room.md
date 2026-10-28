@@ -339,6 +339,13 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 178. **Per-scene prop or costume stamps** (S2E06: the cardigan and the "level" egg stamps, trimmed). Name it once an episode, then let it go or change it.
 179. **Fork tails that reach the same scene must hoist the shared paragraphs** (S2E06; extends #164). Check every `goto` target for pasted paragraphs before the fork text goes in.
 180. **"Wet to the skin" in every storm scene** (S2E06). At most 2 an episode.
+181. **A character's blush as a reaction stamp** (S2E07). At most 2 an episode.
+182. **"Has opinions" object personification** (S2E07). Retire it; the couch got the last one.
+183. **One owner per micro-gesture** (S2E07: mouth-corner, "face clears"). Give each small gesture to one character.
+184. **Running-gag line with a stage-business tail** (S2E07: "Ten past… on his circuit"). At most 3 an episode.
+185. **A catchphrase repeated as a bit** (S2E07: "I read ahead"). At most 2 an episode, and one must pay off.
+186. **Every named landmark checked against the direction of travel** (S2E07: the Cuesta Grade is Santa Maria to Gaviota northbound; Pismo, King City, Burger King stop). Check before the line goes in.
+Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);
 "before X can" pre-emptions (#83, ≈14 a path in draft); trailing "which" (#91, ≈15 in draft); "the way [someone did]" (#112, ≈12 in draft); laughter overflow buttons (#101, 6+ in draft — characters top it in their own register:
