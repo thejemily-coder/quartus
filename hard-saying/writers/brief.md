@@ -1942,3 +1942,19 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Carry-forward:** Jack has now said aloud that **no is probably becoming "not yet."** Later beats (the I-love-you
     episode's "closer than it's ever been" no; Osei's confessions moving from tender to pointed; New Orleans) build
     on this admission rather than repeat it. Skye knows it; it's hope to her and danger to the player.
+
+### After S2E07 (player feedback + directives for S2E08 on)
+- **Feedback:** "Incredible episode, all of it." Skye magnificent; the ensemble perfect; Laney and Theo laugh-out-loud
+  again. Keep doing exactly this.
+- **The Communion tension (player; left to Skye's character).** Jack is now *open* to doing those things again with
+  Skye. But Skye, having learned what it costs him (she knows Communion and confession now; she came to Mass, asked
+  him to explain it properly, prayed, walked at the March), may want to and still refuse, or hesitate, if it's going to
+  cost him Communion. **How she resolves it is hers to decide, in character** (Skye never coerces and never takes a no
+  as final, but she is also the one who stood for him at the Walk). The writers decide scene by scene; it should feel
+  like her choice, not the plot's.
+- **Escalation rule (player).** If the intimate scenes continue, **the heat, intensity and variety escalate every
+  time**: never the same scene twice, a new act, setting, rhythm or power dynamic each time, under the explicit,
+  specific standard. **The conversations afterward escalate too**: deeper, more honest, harder questions each time.
+- **Jack is truly falling in love (player).** Mass, her effort to understand his faith, their talks, the prayers, the
+  March for Life: Jack **truly thinks she's the answer.** Play it as sincere and earned, not infatuation; the player
+  should feel why he believes it (which makes the coming fall harder).
