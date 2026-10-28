@@ -1998,3 +1998,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   been and said so, is the hardest yet. Escalation rule applies in full (heat, intensity, variety beyond S2E07 s04 and
   S2E08 s02; explicit and specific; hard line holds) and the conversation after goes deeper than any before. It
   re-opens `confession_owed`.
+- **Jack's state for S2E09 on (player, binding).** Jack is in love with Skye, and **she is the only thing he's certain
+  about right now.** He is **beyond done with Lena** (after Hale's: no longing, no second-guessing on the page; cold,
+  finished, avoidance as relief, not ache). **It should be plain that he is on the verge of saying yes** to Skye: in
+  Sunday night's scene his "closer than it's ever been" no must read as a no hanging by a thread, and the whole
+  episode should make the player feel the yes coming.
