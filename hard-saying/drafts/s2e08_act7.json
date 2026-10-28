@@ -1,0 +1,293 @@
+{
+ "scenes": {
+  "s16h": {
+   "slug": "WEDNESDAY · 9:05 PM · DELGADO HALL, THE CURB — THE SAAB, TOP DOWN",
+   "set": {
+    "skye_said_love": true,
+    "rel.skye.warmth": "+2"
+   },
+   "body": [
+    "Halfway up the hill from Ocean Road he sees the Saab. It’s double-parked in front of Delgado with its top down, in January, the hazards blinking orange along the row of parked cars, and a boy from the second floor with a laundry basket on his hip gives it a wide berth on his way in. Skye is behind the wheel with the blanket off Sol’s porch around her shoulders and the moon up over the eucalyptus behind her. She has turned in her seat to watch the hill instead of the dorm door, so she sees him the whole way up.",
+    "He comes around into the street on her side and puts his forearms on the top of her door. Up close she smells like the porch she came from: popcorn, and somebody’s chimney down the lane, and the cold.",
+    "“Okay,” she says. “Hale. I want the heckles. All of them, word for word, don’t clean them up, because I’ll be able to —”",
+    "She stops. She looks at him in the orange of the hazards, at whatever has come up the hill on his face from the cliff end of Del Playa, and she lets Hale go. She gets up on her knees on the seat instead, takes the blanket off her own shoulders, and puts it around his, over the Carhartt, and tucks the end into his collar like a bib, and sits back down in her sweater.",
+    "“Did you go?” she says.",
+    "“Yes.”",
+    "“So Sunday you go up.”",
+    "He nods. She nods back, as if they’ve shaken on it.",
+    {
+     "if": "s2e7_why==\"sincerity\"",
+     "text": "“I read the part about the screen,” she says. “Twice. I had notes. I’m saving them for when you’re not tired.”"
+    },
+    "“Okay. The bit.” She wraps both hands around the top of the wheel and sets her chin on them. “I’ve been holding it since seven. It’s getting heavy.”",
+    "“Go.”",
+    "“You remember the couple.” Her chin comes up off her hands and one hand goes flat over her heart, and she’s the wounded one, from Sacramento, forty winters cold in his own house. “Last week he finally won. Five to four. He got his hands on the thermostat, and he’s being *very* gracious about it. He’s sending cards.” Down into the collar of her sweater, ancient and bow-tied, one finger raised: “*It was sixty-eight for a reason.*” She comes back up. “He wrote a letter about it as long as a phone book. He read some of it aloud at breakfast.”",
+    "“And tonight the man from across the street comes over.” She does the President with no words at all — the chin, the pauses, a hand that cuts the air into reasonable pieces — and at the end of it he turns, slow, toward the front row, where the couple sits in their robes being told in front of the neighborhood that they’ve left the front door open and anybody at all can walk in.",
+    "“And the new neighbor.” She folds her arms inside the sweater and sinks in the seat until she’s a man in the front row, and shakes her head, small and steady, side to side, while her mouth goes on two words that don’t make any sound. “Moved in four years ago,” she says, out of the side of her mouth, still shaking it. “He isn’t even in the couple. He just lives next door and disagrees through the window.”",
+    "Jack is laughing, has been since the cards — helpless, hanging off her door with his head down on his arms.",
+    "“And *Tomás*.” Both her hands go up over the windshield, high, holding nothing. “On the porch. With the sign. LIAR. And he hasn’t decided. He points it at the President. He points it at the neighbor. He points it at the couple, both of them, for the thermostat. The man from Virginia comes on and he points it at him on principle before he’s said a word, and Sol is filming every bit of it, so he turns it around on Sol, and Sol just keeps — I love you — Sol just keeps —”",
+    "She stops with her hands still up, holding the sign that isn’t there.",
+    "He has stopped laughing; he couldn’t say when. He’s standing in the street with his arms on her door and her blanket around him, and nothing comes out of him. The street has gone very wide and very quiet. Somewhere on the fourth floor a stereo stops between songs.",
+    "Her hands come down. “That’s —” They go to the wheel and off it again. “Cassidy says that. In the wedding episode. To a man in a — it’s a *line*, there’s a whole —” She reaches for Cassidy’s voice to finish it in and gets about half of it, sweet for three words and then gone thin.",
+    "And then she sees his face, and stops talking. He’s smiling at her. Wide, from one side of his face to the other, in the middle of the street, with his arms on her door and nothing he could do about it if he tried."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“I love you.”",
+     "set": {
+      "s2e8_love": "candor",
+      "jack_said_love": true,
+      "soul.honesty": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "cue": "Skye will hold on to that.",
+     "key": "Skye said it first. You said it back: I love you.",
+     "response": [
+      "“I love you,” he says.",
+      "Nothing after it. He doesn’t need anything after it.",
+      "It gets to her before the words are all the way out, and he watches it arrive. She takes it like a bell takes the hammer — all at once, and still ringing after — and her face says she knew."
+     ],
+     "goto": "s16ha"
+    },
+    {
+     "tag": "Wit",
+     "text": "“You said it first.”",
+     "set": {
+      "s2e8_love": "wit",
+      "jack_said_love": true,
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "Skye said it first. You told her so — and then you said it back.",
+     "response": [
+      "“You said it first,” he says.",
+      "Her eyes narrow. Her hands come off the wheel and take two fistfuls of the blanket at his collar, and she hauls him down by it to the level of the door, nose to nose, to kill him —",
+      "“I love you,” he says, from there.",
+      "The fists stay where they are, full of blanket. Whatever she was going to do to him burns off her like morning fog off the Rincon, and what’s underneath, close enough to count his eyelashes, says she knew before he got to the second word."
+     ],
+     "goto": "s16ha"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "*Take her face in your hands.*",
+     "set": {
+      "s2e8_love": "sincerity",
+      "jack_said_love": true,
+      "trait.sincerity": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "Skye said it first. You took her face in your hands and said it back.",
+     "response": [
+      "He reaches over the door and takes her face in both hands, his thumbs along her cheekbones, his fingers still cold from the walk up the hill, and her mouth stops on the end of *whole*.",
+      "“I love you, Skye.”",
+      "He feels it get to her before he sees it: her jaw letting go in his hands, a breath coming in that turns halfway into a laugh. Then her face, under his thumbs, sure of him."
+     ],
+     "goto": "s16ha"
+    }
+   ]
+  },
+  "s16ha": {
+   "slug": "WEDNESDAY · 9:15 PM · DELGADO HALL, THE CURB",
+   "music": "Ray LaMontagne — “You Are the Best Thing”",
+   "body": [
+    "She’s the one who turns the iPod on, after — reaching past him to the dash with her other hand still caught in the front of the Carhartt — whatever comes up, and she doesn’t skip it. It comes out of the door speakers so low it’s mostly piano, under his elbows.",
+    "“I’ve said that on a soundstage forty times,” she says.",
+    "He waits.",
+    "“To a man with a microphone taped to his chest.” She looks up at him over the top of the windshield. “I counted, in a makeup trailer. Different men. Same tape. They put a mark on the floor so the light gets your eyes when you say it.” She shakes her head at the street. “That one didn’t have a mark. That’s the first one that was mine.”",
+    "“What did they do after? The men.”",
+    "“Went to their trailers.” She takes her hand out of his jacket to fix the blanket where it slid. “One of them asked me to sign a headshot for his niece. With the tape still on.”",
+    "He has nothing clever for that, and doesn’t go looking for anything.",
+    "He kisses her over the door. It’s slow, with the engine idling under it and her fingers hooked in the open front of the Carhartt to keep him where he is, and the cold coming up off the steel into his forearms, and Sol’s blanket sliding off one of his shoulders and her catching it one-handed. When it’s over she doesn’t start another. She sits back in her seat with her hands in her lap and looks at him, and laughs at herself, and wipes her eyes with the heel of one hand.",
+    "“Go up,” she says. “You have class.”",
+    "“Your blanket.”",
+    "“It’s Sol’s. Sol has a closet of them.” She puts the car in gear herself. “Keep it. You look like the third shepherd from the left.”",
+    "She pulls out from beside the parked cars with the hazards still going, remembers them halfway down the block, and kills them. At the corner, under the streetlight, her arm comes up out of the open top, straight up, and she holds it there the length of the turn.",
+    "He stands on the curb in Sol’s blanket. Delgado goes up over him, lit in rows. On the fourth floor, in his own window, the blind has been pulled a little way out from the frame, and when he looks up it lets go."
+   ],
+   "next": "s17"
+  },
+  "s16p": {
+   "slug": "WEDNESDAY · 9:10 PM · DEL PLAYA LANE, THE PORCH — THE SWING",
+   "set": {
+    "skye_said_love": true,
+    "rel.skye.warmth": "+2"
+   },
+   "body": [
+    "Del Playa after nine on a Wednesday is half party and half library: a beer-pong table on a front lawn under a work light, a girl on the porch three doors up with a highlighter and her boyfriend’s head in her lap, bikes locked to every railing on the block. Sol’s porch light is on. Through the screen door the speeches are over and the panel of experts has the television, and Tomás is arguing with every one of them.",
+    "Skye is on the swing in Sol’s blanket, going a little, one foot on the boards. She sees him at the gate. The foot comes down and stops the swing.",
+    "“You came straight here.”",
+    "It comes across the porch like a fact she’s checking — ten past nine; St. Brendan’s at the top of the hill; she can count — and her face is glad and suspicious of it at the same time. “Is that allowed?”",
+    "He doesn’t explain it. He comes up the steps and sits down on the other half of the swing, and the driftwood takes his weight with a creak from both hooks and swings back.",
+    "She looks at him in the porch light. Then she puts her hand flat on his chest, inside the open Carhartt, on the flannel over his breastbone, and keeps it there long enough to feel him breathe twice. She takes it back under the blanket.",
+    "“Did you go?”",
+    "“Yes.”",
+    "“So Sunday you go up.” She tells the street so, and pushes off with her heel.",
+    {
+     "if": "s2e7_why==\"sincerity\"",
+     "text": "“I read about the screen,” she says. “I have follow-up questions. Later. They’re good ones.”"
+    },
+    "The screen door opens a foot. Sol looks out, sees who it is, hangs a second blanket over the back of the swing behind his head. Through the gap Tomás is telling a man in a red tie that he has never set foot in Ohio.",
+    "“Okay,” Skye says. “The speech. Sit there. Don’t help.”",
+    "She gets up with Sol’s blanket around her like robes and goes to the light switch beside the screen door. “This is the thermostat.” One hand on her heart — Sacramento, wounded, cold in his own house for as long as anybody on the street can remember — and the other on the switch. “*Mine.* After forty years. Five to four.” She flicks the porch light off and on again, just to feel it work. “And I want everyone on this street to know I’m being *gracious*.” And she folds down into somebody very small and very old in a bow tie, and from somewhere around her collarbone, quavering and certain: “*Sixty-eight. Since Ford.*”",
+    "She walks the length of the porch to the far rail and turns, and the rail is a podium. No words. A finger that comes down on each reasonable point; the pause before the next one; the chin. The President turns from it to the front row and tells the couple, with all of Del Playa listening, that they’ve left the door wide open and anyone can wander in.",
+    "Now she’s down on the top step with her knees together, the front row, arms folded inside the blanket, looking up at the rail where the President was. She shakes her head. Small, steady, side to side, while her lips go on two words with no sound behind them. “Moved in four years ago,” she tells Jack out of the corner of her mouth. “He isn’t even *in* the couple.”",
+    "And she’s up again, and Tomás’s actual sign is leaning against the rail where he left it — shirt cardboard, LIAR in black marker, a paint stirrer taped on for a handle — and she has it over her head. She turns it on the rail. On the top step. On the light switch, both of them. On the screen door, where the real Tomás is still going at the experts. On the moon.",
+    "Jack is laughing so hard the swing is going by itself.",
+    "“He hasn’t *decided*,” she says, swinging the sign around. “That’s the beauty. He keeps deciding. Sol has the camera on him, so he turns it on Sol, and Sol doesn’t even — I love you — Sol doesn’t even look up, she just —”",
+    "The sign stops, pointed at nothing, out over the steps.",
+    "The swing comes back under him and slows. He sits on Sol’s driftwood with his mouth open on nothing at all. There’s too much in him for any of it to be words yet.",
+    "“That’s a —” The sign comes down to her side. “Cassidy has a — they gave me *pages*, Jack, it’s in the pages, there’s a gazebo, it’s the second season, he has a — it’s a —” She hunts for a voice to put it back into, and every one she tries comes out the wrong size.",
+    "Then she sees his face, and quits. He’s smiling at her — wide, so wide it pulls at the corners of his mouth — sitting on a swing on Del Playa in two blankets, and he couldn’t have stopped it for money."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“I love you.”",
+     "set": {
+      "s2e8_love": "candor",
+      "jack_said_love": true,
+      "soul.honesty": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "cue": "Skye will hold on to that.",
+     "key": "Skye said it first. You said it back: I love you.",
+     "response": [
+      "“I love you,” he says, from the swing, up at her, with the porch light on the both of them.",
+      "It reaches her like the porch light reaches the bottom step — everywhere at once, nothing of her left out in the dark. The cardboard slides out of her fingers onto the boards, and her face says she knew it before he got to the end."
+     ],
+     "goto": "s16pa"
+    },
+    {
+     "tag": "Wit",
+     "text": "“You said it first.”",
+     "set": {
+      "s2e8_love": "wit",
+      "jack_said_love": true,
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "Skye said it first. You told her so — and then you said it back.",
+     "response": [
+      "“You said it first.”",
+      "She lunges and catches the swing’s chain at his shoulder and stops it dead, and leans down into his face. “Oh, you —”",
+      "“I love you,” he says.",
+      "She lets go of the chain. The swing goes back without her and comes forward again, and when it does her face is right there waiting for him, and it says she knew before he got it out."
+     ],
+     "goto": "s16pa"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "*Take her face in your hands.*",
+     "set": {
+      "s2e8_love": "sincerity",
+      "jack_said_love": true,
+      "trait.sincerity": "+1",
+      "rel.skye.trust": "+1"
+     },
+     "key": "Skye said it first. You took her face in your hands and said it back.",
+     "response": [
+      "He gets up off the swing, which knocks the backs of his knees and goes on swinging empty behind him, and takes her face in both hands under the porch light, with the sign still hanging from one of hers.",
+      "“I love you, Skye.”",
+      "The sign drops on the boards behind her. Her face in his hands has already got there; he can see the porch light in both her eyes, and her, steady behind it."
+     ],
+     "goto": "s16pa"
+    }
+   ]
+  },
+  "s16pa": {
+   "slug": "WEDNESDAY · 9:20 PM · DEL PLAYA LANE, THE PORCH — THE SWING",
+   "music": "Ray LaMontagne — “You Are the Best Thing”",
+   "body": [
+    "Inside, Tomás has run out of experts and turned the panel off. A record starts in the front room, low, and somebody turns it lower.",
+    "They end up back on the swing, Jack in the middle of it and Skye sideways with her back against the chain at her end. She puts her feet in his lap, reaches the porch post with her toes, and pushes. The swing goes out over the boards. She keeps it going like that, one push every time it comes back to the post.",
+    "“I’ve said that on a soundstage forty times,” she says.",
+    "“Forty.”",
+    "“To a man with a microphone taped to his chest.” Her toes find the post. “You hold still while his sound guy fixes it, and you say it, and they say cut, and he goes to lunch.” Out over the boards, and back. “That was the first one that wasn’t a line.”",
+    "He takes her ankle, where it’s cold, and leans across her knees to kiss her, and she meets him halfway, short and sweet, and then puts him back in his corner of the swing with both feet.",
+    "“You came from church,” she says. “I’m not going to be the reason you can’t go up Sunday.”",
+    "So he tells her about Mrs. Fitch instead: the bulletin and the one lamp, the lemon bar he had to eat, and the Hail Mary she says every night now for the both of them, because her granddaughter showed her their picture on the computer.",
+    "Skye stops the swing with her toes. “Which picture?”",
+    "“She didn’t say.”",
+    "She pulls the blanket up over her face. “Oh, *God*.” And then, from in there: “Is that a sin? Saying that? About her?”",
+    "“Depends what you meant by it.”",
+    "“I meant *oh God*.” She comes up out of the blanket. “Tell her thank you. I’ll take all of them.”",
+    "They sit there with the swing going and the record going under it, and she makes him do Hale, finally — the Dante line, the half of the room on its hands — and makes him do it again, slower, so she can steal it. When the record runs out it’s eleven, and the lawn with the beer-pong table has got louder, and he has class in the morning. He lifts her feet off his lap and sets them down on the warm place where he was.",
+    "He’s through the gate and two houses up the lane when she calls after him, loud enough for the beer-pong lawn.",
+    "“Jack!”",
+    "He turns around in the middle of Del Playa. She’s up on her knees on the swing with one hand on the chain and the porch light behind her.",
+    "“That was *one!*” she yells. “Thirty-nine to go!”"
+   ],
+   "next": "s17"
+  },
+  "s17": {
+   "slug": "WEDNESDAY · 11:55 PM · DELGADO HALL, 412",
+   "set": {
+    "nonna_asked_name": true
+   },
+   "body": [
+    "Theo is asleep, or doing it well. He started the bottle’s story over again from his pillow when Jack came in — the ambassador, the widowed sister in San Marino, and now a dog at the vineyard who could tell a good year by the cork — and somewhere in the middle of the dog he stopped. The Rioja stands on Jack’s desk with not much left in it and the price sticker turned to the wall. Hollis is in his teacup on the nightstand.",
+    "Jack sits on his bed in the dark and turns the RAZR on for the first time since Hale’s dog bowl. It takes its time about it.",
+    {
+     "type": "sms",
+     "from": "Frank",
+     "text": "BUCKS 65 IOWA 57",
+     "time": "8:14 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "nonna wants to know her baptism name",
+     "time": "11:52 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "for the rosary",
+     "time": "11:52 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "she says skye isnt a saint and cassidy isnt real",
+     "time": "11:53 PM"
+    },
+    "It’s three in the morning in Youngstown. Somebody up there couldn’t sleep on it.",
+    "He doesn’t know if Skye has one. She told him once, in the fall, that she was named for a grandmother she met twice. That’s all he has.",
+    "He types it with his thumb — *nonna wants your baptism name for the rosary* — and looks at it on the little screen, and takes *for the rosary* back off the end. That part is Nonna’s business. He puts *if you have one* in its place, and sends it.",
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "nonna wants your baptism name. if you have one",
+     "time": "11:58 PM"
+    },
+    "Nothing comes back. He holds the phone until the screen dims on its own, and then he gets up, quietly, because of Theo, and takes the Bible down off the shelf over his desk and sits back down with it open to Mark.",
+    "The penance was the Sower, slowly, so he reads it slowly. The seed on the path, where the birds get it. The seed on the rock, which comes up fast with no root under it and burns off when the sun gets high. The seed in among the thorns, where the worries of the world and the pull of money and the wanting of other things grow up alongside it and choke it off; he goes through that part with his finger under the line, like Rosie. And the good ground, thirty and sixty and a hundredfold.",
+    "He falls asleep sitting up against the wall with the book open on his knees and the phone shut on his chest, in case."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "skye",
+     "title": "Skye Callender",
+     "text": "Skye Callender, two Ls. Wouldn’t give me a last name — said *Out* — till she texted it to me on the floor in Denver. Met her in a window seat in Montecito, reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Starts here in January: spring, undeclared. She’s declared enough, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. She was the one who stopped, in the grandmother’s voice. Typed herself into my phone as SKYE (MISFIT), and called herself from it. Took ten hours to answer my correction. Work, she said — a carpet and a wall. Her car’s an orphan now, and it’s my fault. Nearly three hours at the Starlite, a truck stop up the 101, with Nonna’s pie on the table. Cast me as the Bible salesman. Wanted to know what believing is like — not what I believe. Wants me to miss her a reasonable amount. Get the window, she said. Kissed me again against the Saab in the lot. Slower. On purpose. She was the one who stopped — her thumb on my mouth. She’s on TV. *Sweetwater*, Thursdays at nine: she plays Cassidy, the nice one. Gina screamed. I explained GM to her. In her own car. Thanksgiving: texted me the whole drive from Pittsburgh. Spent it at her mother’s place in Studio City; the parrot says ‘momager.’ Told me not to watch her show. Wants me to be specific. We’re friends on Facebook now — one mutual friend: Theo, who knows everybody. Saturday night she called. Three hours on the porch. Made me do my family. Asked what Advent is. Asked if the TV part matters. Fell asleep in the middle of the Madonna. Monday she drove two hours from LA to sit in a car with me for two more, and set an alarm so she’d leave. Watched the President with the sound off and read his face like a script. Her phone learned a trick in September; she’s still not over it. Gives every truck on the 101 a whole life in three sentences. Knows every word of ‘Thunder Road.’ The tape deck finally let go of *Rumours*. Invited me to LA; I work Saturdays. Doesn’t take people home. Saturday, in daylight, on a rock above the tide pools: fractions, for the placement test. I drew her a pie. Sharks were a lie. I told her a saint broke in. Drove me to Burbank in the rain to be her cousin from Ohio. Everybody on a set wants something from her; she smiles for every phone. Plays a preacher’s daughter who forgives a thief. She played it dry. Washed a borrowed dress in a laundromat at one in the morning; it lived. Thinks the Immaculate Conception is the other one. Took the math test with forty kids and nobody looked at her once. Doesn’t take people home. Took me home. Lives on Del Playa, in a house with a darkroom she isn’t allowed in and two boards under the porch the boys won’t let on the rack — she’ll live there in January. On her bed I said no. She stopped everything and asked me why, and we talked till it got light. I told her it’s a no right now. She said she can work with that. Picked my present for the church party: a Magic 8-Ball. Every answer’s a line reading, she says. Her car died in Buellton; I pushed. She’s seen Our Lady of Guadalupe on every taco truck in the Valley and thought she was a brand. Friday night she took my ‘right now’ apart, point by point, with visual aids, and made a very good case. It’s still right now. I said no again, and she stopped right there and nowhere else. Came to the Anchor in my shirt; Gloria rated her boysenberry. She’s going to ask every day, she says. It’s in her calendar. Slept at her house. Just slept. She says that doesn’t happen. Taught me to surf at Ellery on Gaudete Sunday. I’m terrible. I go home in six days. She isn’t counting. Played Hale in her car from my description. Made me answer the question I couldn’t at the Starlite. Thursday at one in the morning, no moon at all, she drove the bluff with the lights off. Not before Christmas, she said — Christmas and New Year’s and long distance are too much for something new. When I get back we’re dating. Officially. A whole thing. She counted. GM is killing Saab. I’m on the hook. Christmas week: Theo’s known her since they were eleven — his father’s company makes her show. She calls him Ted; nobody else does. She saw us walk into the Hallorans’ together and hid behind a ficus. “Peace mission” was for him. He ran into her at a party in the hills on the twenty-second, and she says he knows. She had me do the weather barefoot in the snow. Seventeen days; she’s not counting. Christmas morning my family found her — Gina gave me her show on DVD. They know her as the nice one. She wants it on her headstone. The day after Christmas my whole family watched season two of her show. She was eighteen, in a blazer, on a dock. She’s good — Dad said so, and she says nobody says good. Nonna prays for Cassidy now. She bought Chesterton used on Ventura without knowing it was my book, and wants to know who picked midnight. The Monday after Christmas she called, and we talked till my phone died. New Year’s Eve she watched my ball drop on the East Coast feed at nine her time and texted, so she’d be at midnight with me. Then she had her own, at three in the morning mine, from a locked den in the hills. I told her I called Ted *Ted*. She says he’s right: that one’s hers. She has my flight home written on her hand. She read Matthew 2 because I said Sunday was Epiphany; Herod is a jealous showrunner. OFFICIALLY, in eyeliner, on a sign at the rope at Santa Barbara, in sunglasses at night. A girl from my flight filmed it, and by morning it was on a gossip blog. Skye put the still on her own Facebook herself. Her people wanted lunch: her mother, Debbie, who manages her, and her publicist, Corinne. The rules: no pictures, ‘a friend from school,’ February. Take the airport down. She took it down. There was a folder with my last name on it, and she pushed it back without opening it. At a gas station in Buellton she took the first picture of the two of us herself, at arm’s length, and put it up instead. Then she changed her status herself and made me say yes to it on her phone — the first thing anybody ever watched her do that nobody wrote. Monday she came to the Fishbowl and argued with me about a rose. My pie got her out of remedial math. Tuesday she taught me stick in an empty lot — a voice for every stall. I do a bad Frank. We argued Conan. She posted a picture of me stalling. The radio, at 2:31: Haiti. At midnight she took the picture down — not for Corinne. Wednesday in the Brick she explained the plates under Haiti from her Oceanography book, read me Milton off the front of *Frankenstein*, and fell asleep on my shoulder. At the Haiti table she borrowed Becca’s apron and was Cassidy for twenty dollars a name, and asked me where God was at 4:53. Met Laney. Met everybody. Corinne wanted a statement; she told her the girl at the table was right about the pictures, and hung up. That night she asked me to say one for them, from her. ‘Saturday.’ Thursday Margot interviewed her at the Anchor; she says I’m the same in every room. Saturday at dawn she taught me again, inside the Point. Still very bad at it. She posted it and kept it up. She came to Sully’s and learned the Who Dat. Laney took a shot at her; she had it handled, she says, and I didn’t let her finish, and she says she’ll reward that sort of behavior. In the Saab I told her some about Lena — that we were close in the fall. She said she can tell there’s a rest. She drove me to confession, and went back to Sully’s without me. Saturday night she read me Sunday’s Gospel off her phone. Three nights in LA: a fitting for the wedding episode — she’s not the bride, she checked. Tuesday she made me explain Massachusetts while I walked. The tornado took Sol’s swing. Wednesday she drove home with the top down in the rain and put the two of us up on Facebook, soaked. Thursday we argued the Supreme Court under one umbrella until it turned inside out. She’s been a corporation since she was twelve — Skylark Pictures; her mother named it. She wrote my brother, in capitals; Rudy says write the number big. Friday the sun came out, and she called the telethon as Skylark. Saturday she drove six hours to the Walk for Life, walked the whole thing arguing with me, and stood in front of Clare when a man started screaming. Sunday she came to Mass. I told her why I didn’t go up. Out past the break I told her what I know about the basement, which isn’t much, and about Nonna’s question and Danny’s. She’s the answer to both. She knows there’s more; she said that’s enough. She asked me to teach her Nonna’s prayer. Monday a blog found the back of my head; Gina knew Danny’s jacket before the commenters did. Corinne called her at six: every picture of us down until there’s a strategy. That night she put one of us in her bed up anyway, captioned with Corinne’s own rule — *my friend from school.* At the lunch in Studio City her shoes stayed on. When they got to Danny she came back for that and nothing else, and said his number from memory. In the car she said she’s very good at fine. She heard me tell Ma *tomorrow*, and took the picture down at the Las Posas exit without a word. Sol’s swing is up. I told her I don’t care, and she could tell. She’s stopping anyway. She wants Nonna to like her. Wednesday she said Theo and Laney were running lines. Wednesday night she was at the curb when I got home from confession. She asked if I went. Then, in the middle of a bit about a Supreme Court justice, she said it first. I didn’t say anything. Then I did.",
+     "if": "s2e8_after==\"home\""
+    },
+    {
+     "kind": "person",
+     "id": "skye",
+     "title": "Skye Callender",
+     "text": "Skye Callender, two Ls. Wouldn’t give me a last name — said *Out* — till she texted it to me on the floor in Denver. Met her in a window seat in Montecito, reading O’Connor for a part and had the grandmother exactly backwards. Acts — since she was eleven. Starts here in January: spring, undeclared. She’s declared enough, she says. Doesn’t drink where there are phones. Drives a dented ’91 Saab she says is Swedish. It’s GM. Walked into the Pacific in November like it was a bath, and dared me in after her in my clothes. Asked to kiss me — out loud. She was the one who stopped, in the grandmother’s voice. Typed herself into my phone as SKYE (MISFIT), and called herself from it. Took ten hours to answer my correction. Work, she said — a carpet and a wall. Her car’s an orphan now, and it’s my fault. Nearly three hours at the Starlite, a truck stop up the 101, with Nonna’s pie on the table. Cast me as the Bible salesman. Wanted to know what believing is like — not what I believe. Wants me to miss her a reasonable amount. Get the window, she said. Kissed me again against the Saab in the lot. Slower. On purpose. She was the one who stopped — her thumb on my mouth. She’s on TV. *Sweetwater*, Thursdays at nine: she plays Cassidy, the nice one. Gina screamed. I explained GM to her. In her own car. Thanksgiving: texted me the whole drive from Pittsburgh. Spent it at her mother’s place in Studio City; the parrot says ‘momager.’ Told me not to watch her show. Wants me to be specific. We’re friends on Facebook now — one mutual friend: Theo, who knows everybody. Saturday night she called. Three hours on the porch. Made me do my family. Asked what Advent is. Asked if the TV part matters. Fell asleep in the middle of the Madonna. Monday she drove two hours from LA to sit in a car with me for two more, and set an alarm so she’d leave. Watched the President with the sound off and read his face like a script. Her phone learned a trick in September; she’s still not over it. Gives every truck on the 101 a whole life in three sentences. Knows every word of ‘Thunder Road.’ The tape deck finally let go of *Rumours*. Invited me to LA; I work Saturdays. Doesn’t take people home. Saturday, in daylight, on a rock above the tide pools: fractions, for the placement test. I drew her a pie. Sharks were a lie. I told her a saint broke in. Drove me to Burbank in the rain to be her cousin from Ohio. Everybody on a set wants something from her; she smiles for every phone. Plays a preacher’s daughter who forgives a thief. She played it dry. Washed a borrowed dress in a laundromat at one in the morning; it lived. Thinks the Immaculate Conception is the other one. Took the math test with forty kids and nobody looked at her once. Doesn’t take people home. Took me home. Lives on Del Playa, in a house with a darkroom she isn’t allowed in and two boards under the porch the boys won’t let on the rack — she’ll live there in January. On her bed I said no. She stopped everything and asked me why, and we talked till it got light. I told her it’s a no right now. She said she can work with that. Picked my present for the church party: a Magic 8-Ball. Every answer’s a line reading, she says. Her car died in Buellton; I pushed. She’s seen Our Lady of Guadalupe on every taco truck in the Valley and thought she was a brand. Friday night she took my ‘right now’ apart, point by point, with visual aids, and made a very good case. It’s still right now. I said no again, and she stopped right there and nowhere else. Came to the Anchor in my shirt; Gloria rated her boysenberry. She’s going to ask every day, she says. It’s in her calendar. Slept at her house. Just slept. She says that doesn’t happen. Taught me to surf at Ellery on Gaudete Sunday. I’m terrible. I go home in six days. She isn’t counting. Played Hale in her car from my description. Made me answer the question I couldn’t at the Starlite. Thursday at one in the morning, no moon at all, she drove the bluff with the lights off. Not before Christmas, she said — Christmas and New Year’s and long distance are too much for something new. When I get back we’re dating. Officially. A whole thing. She counted. GM is killing Saab. I’m on the hook. Christmas week: Theo’s known her since they were eleven — his father’s company makes her show. She calls him Ted; nobody else does. She saw us walk into the Hallorans’ together and hid behind a ficus. “Peace mission” was for him. He ran into her at a party in the hills on the twenty-second, and she says he knows. She had me do the weather barefoot in the snow. Seventeen days; she’s not counting. Christmas morning my family found her — Gina gave me her show on DVD. They know her as the nice one. She wants it on her headstone. The day after Christmas my whole family watched season two of her show. She was eighteen, in a blazer, on a dock. She’s good — Dad said so, and she says nobody says good. Nonna prays for Cassidy now. She bought Chesterton used on Ventura without knowing it was my book, and wants to know who picked midnight. The Monday after Christmas she called, and we talked till my phone died. New Year’s Eve she watched my ball drop on the East Coast feed at nine her time and texted, so she’d be at midnight with me. Then she had her own, at three in the morning mine, from a locked den in the hills. I told her I called Ted *Ted*. She says he’s right: that one’s hers. She has my flight home written on her hand. She read Matthew 2 because I said Sunday was Epiphany; Herod is a jealous showrunner. OFFICIALLY, in eyeliner, on a sign at the rope at Santa Barbara, in sunglasses at night. A girl from my flight filmed it, and by morning it was on a gossip blog. Skye put the still on her own Facebook herself. Her people wanted lunch: her mother, Debbie, who manages her, and her publicist, Corinne. The rules: no pictures, ‘a friend from school,’ February. Take the airport down. She took it down. There was a folder with my last name on it, and she pushed it back without opening it. At a gas station in Buellton she took the first picture of the two of us herself, at arm’s length, and put it up instead. Then she changed her status herself and made me say yes to it on her phone — the first thing anybody ever watched her do that nobody wrote. Monday she came to the Fishbowl and argued with me about a rose. My pie got her out of remedial math. Tuesday she taught me stick in an empty lot — a voice for every stall. I do a bad Frank. We argued Conan. She posted a picture of me stalling. The radio, at 2:31: Haiti. At midnight she took the picture down — not for Corinne. Wednesday in the Brick she explained the plates under Haiti from her Oceanography book, read me Milton off the front of *Frankenstein*, and fell asleep on my shoulder. At the Haiti table she borrowed Becca’s apron and was Cassidy for twenty dollars a name, and asked me where God was at 4:53. Met Laney. Met everybody. Corinne wanted a statement; she told her the girl at the table was right about the pictures, and hung up. That night she asked me to say one for them, from her. ‘Saturday.’ Thursday Margot interviewed her at the Anchor; she says I’m the same in every room. Saturday at dawn she taught me again, inside the Point. Still very bad at it. She posted it and kept it up. She came to Sully’s and learned the Who Dat. Laney took a shot at her; she had it handled, she says, and I didn’t let her finish, and she says she’ll reward that sort of behavior. In the Saab I told her some about Lena — that we were close in the fall. She said she can tell there’s a rest. She drove me to confession, and went back to Sully’s without me. Saturday night she read me Sunday’s Gospel off her phone. Three nights in LA: a fitting for the wedding episode — she’s not the bride, she checked. Tuesday she made me explain Massachusetts while I walked. The tornado took Sol’s swing. Wednesday she drove home with the top down in the rain and put the two of us up on Facebook, soaked. Thursday we argued the Supreme Court under one umbrella until it turned inside out. She’s been a corporation since she was twelve — Skylark Pictures; her mother named it. She wrote my brother, in capitals; Rudy says write the number big. Friday the sun came out, and she called the telethon as Skylark. Saturday she drove six hours to the Walk for Life, walked the whole thing arguing with me, and stood in front of Clare when a man started screaming. Sunday she came to Mass. I told her why I didn’t go up. Out past the break I told her what I know about the basement, which isn’t much, and about Nonna’s question and Danny’s. She’s the answer to both. She knows there’s more; she said that’s enough. She asked me to teach her Nonna’s prayer. Monday a blog found the back of my head; Gina knew Danny’s jacket before the commenters did. Corinne called her at six: every picture of us down until there’s a strategy. That night she put one of us in her bed up anyway, captioned with Corinne’s own rule — *my friend from school.* At the lunch in Studio City her shoes stayed on. When they got to Danny she came back for that and nothing else, and said his number from memory. In the car she said she’s very good at fine. She heard me tell Ma *tomorrow*, and took the picture down at the Las Posas exit without a word. Sol’s swing is up. I told her I don’t care, and she could tell. She’s stopping anyway. She wants Nonna to like her. Wednesday she said Theo and Laney were running lines. Wednesday night I went to her house after confession instead of home. She was on the swing. She asked if I went. Then, in the middle of a bit about a Supreme Court justice, she said it first. I didn’t say anything. Then I did.",
+     "if": "s2e8_after!=\"home\""
+    },
+    {
+     "kind": "person",
+     "id": "gina",
+     "title": "Gina",
+     "text": "My sister. Fifteen, a sophomore at Ursuline. Texts in lowercase like punctuation costs extra. A girl in religion class called her the class expert on visiting the imprisoned. Dad turned the radio back on. Nonna told the altar society I went to confession. Said Danny’s name back to the girl. The girl looked away first. Then laughed with Kelsey anyway. Gina wants the first part on the record. She wanted to know if the nun was real. Now they’re Facebook friends, and Lena signs her wall posts like letters. Gina found the boyfriend in about four minutes. Didn’t tell Nonna. Ashley Vrabel is going to Halloween as a prisoner. Orange jumpsuit. A tribute, she says. Lena read it once and gave me a line for her. Halloween: went as a nun, obviously. Ashley wore the jumpsuit. Gina said it — visit, not dress up as — and Kelsey laughed at Ashley for once. Ashley says she’s dead Monday. Ashley sat next to her in religion and didn’t say anything. Kelsey either. The radio says they’re firing the GM. Dad laughed, Ma says. First time since June. Tuesday she said the thing about Ashley Vrabel’s father in religion. Detention. She thought it would feel good. She heard Dad’s truck hit the can Monday night. Team Edward. Jacob is literally a dog. Monday she found Nonna at the bottom of the stairs, and called the ambulance, and went for Dad. Said sorry to Ashley. Told me in the next text. On the floor in Denver I asked her to look up a girl. She screamed. She’s sworn. ‘Not even the nun?’ Thanksgiving: met me at the door — on TV, in person. Took Danny’s call and said nothing. Printed the dock picture on Ma’s ink. Translated Nonna for Theo, mostly. Checked Facebook for me — Becca took it down. ‘You looked like you were doing a shift.’ Gave Ashley Vrabel the peace at the first candle. Still sworn. Christmas: kept it thirty days. Lifted a hand to Ashley Vrabel at the Orange Julius first, and Ashley lifted one back. Gave me the second season of *Sweetwater*, for research — and Rosie handed it to me in front of everybody. She meant upstairs. Put season two in the DVD player the day after Christmas, for research, and the whole family watched. Wrote Danny about the boat. It’s a yacht. Filmed everybody’s resolutions on Theo’s Flip. Found the baptism album before I did. “Who’s the guy?” At the door, in my ear: “Don’t let Ma find out from Facebook.” Tuesday: six thousand views; Ashley Vrabel showed the whole bus. Nonna lit a candle and won’t say for who. On my wall: FINALLY — the sister who knew first. Monday she found me on a celebrity blog before I did, and knew Danny’s jacket. A man from Mahoning County called Danny a name in the comments; she reported him, answered him, and called him one back — a Catholic one. She’s making Danny a card for Candlemas. Tuesday Ashley Vrabel showed her the picture in chem. Capitals. Wednesday, at three in the morning her time: Nonna wants a baptism name, for the rosary."
+    }
+   ],
+   "end": true
+  }
+ }
+}
