@@ -2053,3 +2053,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   towel** and think the trip was a huge mistake (the alliance's lowest point, before the shoulder and New Orleans turn
   it). The other limits stand (no grief/Memorial or Danny weaponized; no cheap villain: Lena's attack is vicious but
   comes from somewhere real).
+- **The drive's last line (player, verbatim; S2E12).** After Lena goes in on Skye for performing again, **Jack angrily
+  snaps the last line either of them says for a while**: *"Sorry, I forgot how private you and Julian are. When she
+  stars in a movie called 'Jack' I'll make sure you come watch the whole thing next to me so we can see your face
+  enjoying how authentic and humble everything is."* (Julian's song "Magdalena", sung publicly about Lena, with Jack
+  there because Lena asked him to come.) **Jack is absolutely fuming. Lena goes quiet:** she remembers how hurt he looked
+  the night Julian sang "Magdalena", and that she had asked him to come, **and starts to second-guess things again.**
+  Silence in the car follows (the towel thrown in), leading eventually to the shoulder. Her second-guessing is private
+  (narration and her face; not voiced to Jack).
