@@ -372,6 +372,13 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 211. **"X, and nothing else" closing a gesture** (S2E10). Once a scene.
 212. **Cumulative journal cards repeating a scene's last line word for word** (S2E10). Once an episode.
 213. **"Item." as a list engine for Theo** (S2E10). Once a duel.
+214. **"Arithmetic" as a word several characters share** (S2E11). Once an episode.
+215. **Scenes closing on a spoken clock time** (S2E11). Two an episode.
+216. **A dripping or ticking object as the silence marker** (S2E11). One source, used twice at most.
+217. **"Stays where it is" / "stay stopped"** (S2E11). Once.
+218. **Call-and-response callback pairs** (S2E11). Three an episode.
+219. **Repeated prop tags** (S2E11: the pie carried "level" and "grease pencil"). "Level" twice; grease pencil six times in prose.
+220. **Shared text after a multi-way choice that assumes one option's wording** (S2E11: "you said yes"). Gate it by the flag or make it neutral.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);
