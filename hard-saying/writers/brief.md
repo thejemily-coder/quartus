@@ -2003,3 +2003,17 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   finished, avoidance as relief, not ache). **It should be plain that he is on the verge of saying yes** to Skye: in
   Sunday night's scene his "closer than it's ever been" no must read as a no hanging by a thread, and the whole
   episode should make the player feel the yes coming.
+- **S2E09 fundraiser REDESIGN (player; supersedes the held fundraiser directive #83's walk-out).** Five days after the
+  Walk photos, the Boxer fundraiser is **Corinne's correction** (offsetting the march; she wants Jack in the picture so
+  the Walk stops being a story). **Skye doesn't think about it until she sees his face.** She asks why; he tells her
+  **it's fine, specifically because she came to his (the Walk) curious and treating the opposition seriously; he can do
+  the same.** She appreciates that more than she can say. What she does for him instead: **she draws his opposition out
+  into the open**, because she knows most of these people are parroting lines, and lets him give them the **actual
+  pro-life arguments from him instead of the feeble caricatures** they've built up. **He stays for her; she turns the
+  evening into exactly what he loves while making it plain where he stands.** They do NOT leave early. They're both
+  thrilled to be fully themselves and with each other in a room Corinne planned. **They still go out to eat after** (she
+  wants real food), and **she posts a picture of them eating instead of the fundraiser**, caption verbatim (lowercase):
+  *much needed food after continuing our spirited debate that started in San Francisco. we agree on each other. (and
+  also that we're not just friends from school)*, **tags him and adds a heart** (period-accurate: "<3"). The politics
+  argument between the two of them continues over the food (still a game between people who differ). Her real name at
+  the end of the night stands. Downstream: the caption feeds the lounge gag (Laney; Lena's laugh) and Corinne.
