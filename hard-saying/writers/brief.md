@@ -2254,3 +2254,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     victory champagne toast and the alliance "reveal"** (the meetings, the whiteboard, the seating sheet, the champagne
     bought for the misheard "No." wake, finally drunk for the right reason) **and the discovery that everybody knew all
     along** (Kevin's "Respectfully, leave it alone"; Margot's field notes; et al.).
+
+### After S2E13 (player feedback)
+- **Feedback:** "Fantastic episode! The Broussards were great. It's been wonderful having Lena back." Keep the Broussards
+  as a full ensemble through the week, and keep Lena at full strength on the page.
