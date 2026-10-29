@@ -2230,3 +2230,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **Heat escalation for Jack and Lena is VERY slow.** They don't really cross from kissing into what would be "making
     out" **until their summer visits to each other (Season 3).** (The S4 restraint framing and the slow-intimacy
     entries stand.)
+
+### After S2E12 (player feedback)
+- **Feedback:** "Great episode!" (the drive). No new notes for S2E13.
