@@ -2130,3 +2130,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   week progresses (after throwing in the towel on the drive: disbelief, then barely contained glee, then terror of
   jinxing it). **The Broussards treat Jack like he's the boyfriend** (Tony, Celeste, Luc, Remy, Tess, the twins, Mémère:
   seat at the table, chores, teasing, assumptions nobody corrects fast enough).
+
+### After S2E11 (player feedback)
+- **Feedback:** "Great episode!" The player left Skye's darkroom "No." as written (subtle, reasons in pieces).
+  The player is "very sad about the beginning of the end of the Skye era": **honor that.** Skye's exit (the breakup on
+  the porch, the anger, the campaign, the friendship later) must be written with full love for her; she leaves the
+  story as magnificent as she entered it, and the player should feel the loss.
