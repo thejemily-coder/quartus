@@ -1,0 +1,269 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "MONDAY · 11:40 AM · N. DUPRE STREET, THE ATTIC",
+   "set": {
+    "resolve.lena": 3,
+    "resolve.jack": "+1",
+    "s2e14_on": true
+   },
+   "body": [
+    "The light gets to the attic late, and low, and comes in sideways through the gable window past the box fan, which somebody switched off at dawn. The blades stand still in the frame, and the sun comes through them in one piece for a change and falls the length of the mattresses with the dust hanging in it, going nowhere. Over Jack’s face the nails come down through the roof deck in their rows. This morning the points are dry. It is a Monday, and the house under him is as quiet as a house gets when nobody in it has gone to work.",
+    "They got in at ten to six, before the sun. His body has been reporting on Sunday ever since, one item at a time: both knees, from the curb on Esplanade; his voice, which went to gravel somewhere in the fourth quarter and hasn’t come back up; and gold paint in the creases of his left hand that he doesn’t remember getting and that won’t come off on the sheet.",
+    "Kevin is awake. He sits on his sleeping bag by the hatch with his back to a rafter, dressed down to the shoes, a paperback of *The Hot Zone* open on one knee and his rosary in the other hand, the crucifix swinging under his knuckles. At seven, while the rest of them slept, he walked to two churches looking for a Monday Mass.",
+    "“Two churches,” Kevin says. “Both locked. A *Monday*.”",
+    "“City’s sleeping it off,” Jack says, in what’s left of his voice.",
+    "“I left a note on the second one.” Kevin goes back to the Ebola, and then, without lifting his eyes off it: “That’s acute laryngitis, by the way. Textbook. Rest the voice, push fluids, and no yelling at professional football for six to eight weeks.”",
+    "“It’s over. There’s no more football.”",
+    "“Then you’re in luck.” He turns a page. “There’s a parade.”",
+    "Under the boards the house is going about its Monday at half speed. A pot lid, somewhere. Mémère saying something short in French and the screen door answering on its spring. Out on Dupre Street a car goes by with its horn doing the chant, one tired time, and gives up halfway.",
+    "On the middle mattress Theo lies face-down in last night’s good coat with one shoe on. The other shoe isn’t anywhere. His face is pushed so far into the pillow that it looks like a position he has taken and means to defend.",
+    "Jack says the penance on his back under Remy’s Tiger, lips going, with no sound to speak of, all the voice he has anyway. *Two by two.* The walking stick. *No food, no sack, no money in their belts.* Sandals, and not a second tunic. *Wherever you enter a house, stay there until you leave from there.*",
+    "*Whatever place does not welcome you or listen to you, leave there and shake the dust off your feet in testimony against them.*",
+    "He says that one again. *Shake the dust off your feet.* And goes on to the end of it, the demons driven out, *and they anointed with oil many who were sick and cured them*, and lies there under the dry nails for a while with his hands on his chest.",
+    "The RAZR is on the boards by his ear, where he put it down at six. The little outside screen says he has two.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "fog. 4 degrees",
+     "time": "8:02 AM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "your city is on the morning news up here. a man in a jersey is kissing a police horse",
+     "time": "8:03 AM"
+    },
+    "Fog, four. Yesterday it was seven.",
+    {
+     "if": "quarter_night",
+     "text": "On Bourbon last night a girl in a gold wig asked a mounted cop if she could kiss his horse, and he let her. It could be the same horse. It could be any horse in the city; it was that kind of night for horses."
+    },
+    "Up there it would have been the hotel room in Burnaby with the curtains still shut and the news on with the sound down, her hair every which way on the pillow, and her thumbs going before the man at the anchor desk got to the end of his sentence. He holds the phone up over his face with the keypad lit green and smiles at it like a fool, in an attic, in Louisiana, at noon."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*i know that horse. miss you*",
+     "set": {
+      "s2e14_dawn": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      "His thumb is on the key when the middle mattress speaks.",
+      "“Do exactly what you did yesterday, Costigan.” Theo hasn’t lifted his face out of the pillow. “Don’t change anything.”",
+      "“Is this about the parade?”",
+      "“Everything’s about the parade.”",
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "i know that horse. miss you",
+       "time": "11:44 AM"
+      },
+      "He sends it. By the hatch Kevin turns a page and doesn’t look up from it."
+     ],
+     "goto": "s02"
+    },
+    {
+     "tag": "Wit",
+     "text": "*tell canada the horse said yes*",
+     "set": {
+      "s2e14_dawn": "wit",
+      "trait.wit": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "tell canada the horse said yes",
+       "time": "11:44 AM"
+      },
+      "He sends it and lays the shut phone on his chest. From the middle mattress, with no warning and no movement of any kind, Theo says, “Do exactly what you did yesterday, Costigan. Don’t change anything.”",
+      "“Is this about the parade?”",
+      "“Everything’s about the parade.”"
+     ],
+     "goto": "s02"
+    },
+    {
+     "tag": "Candor",
+     "text": "*slept 5 hours. city still yelling. miss you*",
+     "set": {
+      "s2e14_dawn": "candor",
+      "trait.candor": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "slept 5 hours. city still yelling. miss you",
+       "time": "11:44 AM"
+      },
+      "It goes, and Theo says something into the pillow that it takes Jack two tries to get out of the feathers.",
+      "“Do exactly what you did yesterday, Costigan. Don’t change anything.”",
+      "“Is this about the parade?”",
+      "Theo turns his face out of the pillow far enough to breathe, eyes still shut, one shoe still on. “Everything’s about the parade.”"
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "MONDAY · 12:15 PM · DUPRE STREET, THE KITCHEN — AMEN",
+   "set": {
+    "rel.lena.warmth": "+1"
+   },
+   "body": [
+    "WWL is on the porch rail with the volume up, and it reaches the kitchen through two doors, the front and the screen: a caller from Chalmette who hasn’t slept, telling the host he hasn’t slept, and the host telling him to go to bed and then asking him one more question.",
+    "Tony is home. It’s a Monday, a quarter past twelve, and Tony Broussard is in his own kitchen in a Saints T-shirt and house shoes, which Celeste says hasn’t happened on a weekday since the market opened back up in ’06. He keeps opening the refrigerator and looking into it, and shutting it, and standing there.",
+    "Broussard’s Seafood is shut. Remy drove past it at ten, on his way out for beignets, and reports on the sign taped inside the door in his father’s marker:",
+    {
+     "type": "doc",
+     "title": "Taped inside the door of Broussard’s Seafood, Banks Street (as Remy reports it)",
+     "text": "CLOSED\nWHO DAT\nBACK WEDNESDAY\nGOD WILLING"
+    },
+    "“The *God willing*’s new,” Remy says. He has powdered sugar down the front of his shirt and the beignet bag in his lap, and he has not offered it around.",
+    "“It’s always been there,” Tony says, from behind the refrigerator door. “I just never wrote it down.”",
+    "Celeste has taken a personal day from Touro, her first since 2006. She is at the counter in an old Holy Rosary fun-run sweatshirt, writing a list on the back of the light bill.",
+    "“The ICU can have me Tuesday,” she says. “God can have me Sunday. Today I’m making groceries.”",
+    "The twins went off to school at seven-thirty for a full day, under protest. “Josie told the bus driver school today was against her religion,” Celeste says, still writing, “and he said his too, and took her anyway.”",
+    "Down both sides of the table, on the oilcloth, lie eight copies of the *Times-Picayune*. Tony stood in a line of hundreds at a gas station on Carrollton before it was light and came home with them under his arm, and he has laid them out like place cards: one for each of his six children, wherever they are this morning, one for his mother, and one for the girl in the Saints bib at church, and he doesn’t explain the last one. The headline is AMEN, in black letters you could read from the porch.",
+    "“Man in front of me bought forty,” Tony says, with his head in the refrigerator. “For his route. I said, what route. He said, I’m starting one today.” He shuts the door. “I respect that.”",
+    "“Tony,” Celeste whispers, without stopping the pen. “The cold’s for the shrimp.”",
+    "In the front room Mémère has hers spread across the arms of her chair and goes over it with a magnifying glass the size of a saucer, from the top of the page to the fold and from the fold to the bottom. When she gets there she lowers the glass and says, “*Bon*.”",
+    "It’s Monday, so it’s red beans. The Camellias have been soaking since last night in Mémère’s big pot, and the pickled pork is out on the board in its pink brine, and next to it the onions and the bell pepper and the celery sit in a heap, waiting for somebody.",
+    {
+     "if": "made_roux",
+     "text": "Mémère comes in from the front room with her paper under her arm, takes the knife off the board, points it at the onions, and hands it to Jack handle first, without a word, and goes back to her chair. He carries the board to his end of the table and starts.",
+     "else": "Celeste puts the knife in his hand on her way past. “Small, baby.” He carries the board to his end of the table and starts."
+    },
+    "On the parish calendar by the phone St. Jude is still holding up January.",
+    "His coffee is at his elbow, and his toast, and Remy’s copy of AMEN folded back to the sports, which Remy is not reading.",
+    "Lena is last. She comes in from the hall in Remy’s purple LSU sweatshirt with the sleeves down over her hands and her hair up in a knot with a pencil through it, takes the corner chair beside his, takes the triangle of toast off his plate without asking, and leans over his shoulder to read the box score with her chin very nearly on it. He moves his coffee so she can get her elbow down. She gets her elbow down. Her sleeve lies along his forearm while she reads, Remy’s purple gone soft with a hundred washings, and it stays there while his knife goes.",
+    "“Brees,” Jack says, with the knife going. “Thirty-two of forty.”",
+    "“Thirty-nine.” She reaches across his onions for the butter. “Thirty-two of thirty-nine. You don’t round a man down in this house, not this week. Hartley, three for three, every one of them from past forty, and Joseph of Cupertino couldn’t get one up from there in a stiff wind. Porter. And the onside kick.” She points his toast at the page. “Payton called it at halftime.”",
+    "“You read a box score like it’s the Gospel,” Jack says.",
+    "“It’s the day after. It *is* the Gospel.” She takes a bite of his toast and talks around it. “Tomorrow’s the Acts of the Apostles. Wednesday’s the epistles. Everybody gets a letter.”",
+    "“*I* called it,” Tony says, from the refrigerator.",
+    "“You called it from the porch with your eyes shut,” Celeste says, and underlines something.",
+    "Across the table, Remy has been waiting with his mouth full.",
+    {
+     "if": "s2e13_canada==\"wit\"",
+     "text": "“How’s your Colts fan, brother-in-law?”",
+     "else": "“How’s your girl in Canada, brother-in-law?”"
+    },
+    "Jack shrugs at him over a mouthful of the toast he has left. Beside him Lena’s knife goes on buttering the triangle that used to be his, out to the corners, and she turns the page of his paper with her other hand.",
+    "Remy looks round the kitchen for a witness and gets his father. “Leave the man alone,” Tony says. “He’s chopping.”",
+    "Laney sweeps in from the hall in a Saints sweatshirt of Tony’s that comes down to her knees, with her hair already done at a quarter past noon in case of cameras. She gets three steps into the kitchen. She looks down the table at the two of them at the end of it, the onions, Lena’s chin, the one paper between his elbow and hers; and she turns round on the linoleum and walks straight back out the way she came. From the hall, low, to Theo, a piece of it comes back through the door:",
+    "“— *nobody* move. Nobody change one thing.”",
+    "Theo’s answer, if there is one, doesn’t carry.",
+    "At the drainboard Kevin is drying the cup from the bank in Baton Rouge. “Respectfully, the game is over.”",
+    "“It is *not* over, Kevin,” Laney says, from the hall.",
+    "Margot, at the far end of the table with her notebook open beside her coffee, writes something down and reads it out as she writes it. “Field note. The superstition has outlived its object.”",
+    "“*Margot.*”",
+    "From the front room, Mémère: “*Qu’est-ce qu’elle a dit?*”",
+    "“She said we’re superstitious, Mémère,” Lena calls back, with her mouth full.",
+    "A pause in the front room, and the magnifying glass going down on the paper. “She’s learning.”",
+    "Remy gets up at last with the beignet bag and goes to the screen door with his keys, and stops there with it open and the radio coming in louder around him. “The team’s landing this afternoon, y’all. Kenner. They’re late, and the whole parish is going.” Behind him on the rail, WWL is still on the man from Chalmette.",
+    "Celeste caps her pen. “Making groceries,” she says. “One o’clock. I need a man for the heavy things.”",
+    "She is looking at Jack."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "remy",
+     "title": "Remy Broussard",
+     "text": "Lena’s brother, twenty, LSU. Calls me brother-in-law, and he’s not the one who’s joking. Drives a Suburban like it owes him money. Knew the team was landing before the radio did."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Ask Tony to sign one for your father.*",
+     "set": {
+      "s2e14_amen": "sincerity",
+      "amen_for_frank": true,
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Mr. Broussard,” Jack says. “Would you sign one for my father?”",
+      "Tony lets the refrigerator door swing shut. He looks at Jack, and down the table at his eight papers, and picks one up off the end. “The baby can get her own,” he says. He finds a black marker in the drawer by the phone, takes the cap off with his teeth, and writes across the front under AMEN in big letters that run uphill: *To Frank Costigan, father of the Ohio boy — WHO DAT — A. Broussard.* He blows on it anyway, and reads it over, and nods at it.",
+      "“Celeste. Find me a mailing tube.”",
+      "She has one, because she has everything. She stands it on the table by Jack’s elbow, and takes the other seven papers up off the oilcloth in a stack against her hip, to set the table for lunch."
+     ],
+     "goto": "s03"
+    },
+    {
+     "tag": "Wit",
+     "text": "“In Youngstown we’d frame it and lose it in the basement.”",
+     "set": {
+      "s2e14_amen": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“In Youngstown we’d frame it,” Jack says, “and lose it in the basement.”",
+      "“In this house we frame it and lose it in the *attic*,” Tony says.",
+      "Lena doesn’t look up from the box score. “You’re sleeping under three of them.”",
+      "Celeste comes down the table and lifts the papers off it one by one to set it for lunch, every one but the one under Lena’s elbow, which she goes around."
+     ],
+     "goto": "s03"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Let her read you the rest of it.*",
+     "set": {
+      "s2e14_amen": "restraint",
+      "trait.control": "+1",
+      "rel.lena.heat": "+1"
+     },
+     "response": [
+      "He puts the knife down and lets her have it. She turns his paper back to the front of the sports, settles her chin on his shoulder, and reads it to him, every column, in her debate voice: the drives, the kick, the interception, the box score again for the hard of hearing, at speed and with feeling and with remarks of her own in the margins.",
+      "From the front room, through the door: “*Garçon*.”",
+      "“That’s what I said, Mémère.”",
+      "“You said it like the television. The television is not French.”",
+      "Lena says it again, properly, into his collar, and reads on. Celeste waits for the end of a paragraph and slides the paper out from under the two of them to set the table for lunch, and Lena finishes the column from memory."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s03": {
+   "slug": "MONDAY · 1:05 PM · DUPRE STREET, THE PORCH",
+   "body": [
+    "Remy’s Suburban is at the curb behind the Odyssey with every window down and WWL on and the engine running, and the sun is out over Dupre Street, bright and not warm, on a man two doors down sweeping gold confetti off his steps into the gutter.",
+    "Theo, Laney, Margot and Kevin are already in it. Remy stands at the open back door and counts them with his keys.",
+    "“Seven seats,” he says.",
+    "“We’re seven,” Margot says, from the way back.",
+    "“Kevin can ride on the roof,” Theo says.",
+    "“Respectfully —” Kevin says, and Remy shuts the door on it.",
+    "Lena is on the top step of the porch with her house keys in her teeth, pulling on her boots. One is on. She works her heel down into the other with both hands on the shaft, frowning at the street and the Suburban and the sky over the roofs out toward the airport, and gets it, and stands, and takes the keys out of her mouth.",
+    "“They’re coming *home*,” she says, and takes the steps at a run.",
+    "Laney leans out of the middle window with her sunglasses on. “Magdalena Broussard, if you make me miss Drew Brees I will tell your mother about the ninth grade.”",
+    "“She knows about the ninth grade,” Lena says from the walk.",
+    "“Not *all* of it, she doesn’t.”",
+    "Behind Jack, Celeste stands in the front door with her purse on her arm and the list in her hand, and says nothing at all, which is louder.",
+    "He’s on the porch boards between the two of them, in the Carhartt, with the RAZR in his inside pocket and the onions still on his hands. Down at the curb Lena has the front passenger door open and one boot up on the running board. She looks back up the steps at him, once, and waits."
+   ],
+   "choices": [
+    {
+     "tag": "Kenner",
+     "text": "Go see the team come home.",
+     "set": {
+      "s2e14_mon": "airport"
+     },
+     "goto": "s03a"
+    },
+    {
+     "tag": "Groceries",
+     "text": "“I’ll push your cart, Mrs. Broussard.”",
+     "set": {
+      "s2e14_mon": "groceries"
+     },
+     "goto": "s03g"
+    }
+   ]
+  }
+ }
+}
