@@ -2082,3 +2082,5 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   it, and everyone on the call knows she's joking. **Then she drops even the joke** and tells Danny exactly what Jack
   actually did at the party in Montecito (the window seat, the O'Connor; check S1 canon for the exact night) that
   made them talk the whole night and made her want to see him again. Jack hears it; it lands on him.
+  - **Danny's reaction (player):** Danny **loves her immediately**: dying laughing through the entire "trick" story,
+    then **audibly moved by the real story but playing it off** (Danny's register: a joke, a cough, "Professor").
