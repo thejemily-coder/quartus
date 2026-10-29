@@ -2173,3 +2173,17 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   new relationship.** Public-record facts only for the spill.
 - **Season 2 finale (finals week, May 10–15): joy, then the goodbye.** The happiest episode in a long time, ending on
   the first goodbye of their summer apart, **at an airport again**, rhyming with the Season 1 checkpoint.
+- **SKYE'S LONG ARC (player; supersedes "not close" and "let it find its level").** It's hard, and it's **clearly still
+  part of her fight to get him back**, but **Skye and Jack end up friends by the end of the spring semester (S2) and
+  going forward, and eventually close friends.** **She never joins the friend group** (not much of a change: she has her
+  own very full life), **but she makes time for Jack and Theo.** She stays a **recurring character throughout the
+  game**: her efforts to get Jack back **continue loosely for a very long time**, and even after that she is **still
+  around every so often.** (Lena's dislike stays honest; nothing physical; never at Lena's expense; the hard lines
+  hold.)
+  - **Long-term arc: the Flannery O'Connor biopic.** In part because of her long study of and wrestling with the
+    Catechism with Jack, **she auditions for and stars in a biopic about Flannery O'Connor** (a fictional film, similar
+    in spirit to the much later real film *Wildcat*; never name or imply the real one in-world) and **receives critical
+    acclaim.** It rhymes with how they met (the window seat, reading O'Connor for a part, the grandmother "exactly
+    backwards"). Timing is the room's to place in a later season (casting, preparation, release, awards); she can ask
+    Jack to help her with the faith (O'Connor's *A Prayer Journal* and letters, Andalusia, the peacocks), and the
+    role is a summit of her craft and of her own search, without forcing a conversion.
