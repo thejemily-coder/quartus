@@ -70,3 +70,6 @@ Claude's own initiative, without asking: create a new private repo, copy everyth
 after-s2e09), add the fork directive (Jack does NOT go to New Orleans), publish a separate artifact seeded from
 after-s2e09, and start a separate Claude session on the new repo with a handoff prompt. The fork must be fully
 independent: nothing done in this repo or this artifact afterward touches it, and vice versa.
+
+**Fork-only directives** live in `fork/FORK_BRIEF.md` (copy them to the top of the fork's brief at creation). The main
+timeline's writers' room must never read or apply them.
