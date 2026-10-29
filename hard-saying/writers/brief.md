@@ -2141,3 +2141,14 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   **Arrival leaks (Dupre Street, Sat evening):** **both and more**: he carries her (asleep) and her bag up the
   shotgun's steps without thinking, Celeste watching from the door; at the crawfish table she pulls him down next to
   her without looking, as if it were always his seat; and more small leaks, in whatever chronology fits the story.
+- **Jack's confession on return from New Orleans (player; S2E17/S2E18, before he sees Skye).** As soon as he's back on
+  campus, **before Skye**, Jack goes to Osei. It's not really a confession, because **it isn't a sin that's bothering
+  him.** He and Lena have already made the plan (both free by the end of the week). He knows his love with Lena could
+  be something even greater **precisely because of the "same direction" line** (Saint-Exupéry: looking outward together
+  in the same direction rather than gazing at each other), **but he so deeply loves Skye and had honestly planned on
+  marrying her someday** (Nonna's words about her real name: "a good name for a wife") **that he is distraught.** Osei
+  won't tell him what to do, but **talking it out loud helps.** Osei points out, with a small laugh, that **he hasn't
+  actually confessed anything.** Jack ends up **confessing some venial sins from New Orleans**, because he has **no
+  mortal sins on his conscience** (consistent with the no-kiss Mardi Gras). Confessing venial sins isn't necessary, but
+  it's encouraged when there are no mortal sins, to keep up the practice of the sacrament (devotional confession);
+  Osei can say so in his own voice. Sound Catholic theology throughout.
