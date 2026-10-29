@@ -2152,3 +2152,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   mortal sins on his conscience** (consistent with the no-kiss Mardi Gras). Confessing venial sins isn't necessary, but
   it's encouraged when there are no mortal sins, to keep up the practice of the sacrament (devotional confession);
   Osei can say so in his own voice. Sound Catholic theology throughout.
+- **The drive fight: length and blood (player, binding for S2E12).** The fight must be **as long as it is nasty**: a
+  sustained, escalating war across the whole duel (not a flare and a sulk), with **both Jack and Lena out for blood**,
+  each landing real hits and going back for more. **All four others reach the point of regretting coming on the trip**
+  (Kevin, Margot, Theo, Laney, each in their own register), and **Theo and Laney are the most miserable of all, for having
+  set it up.** Keep the seating plan as written (the fight on Margot's shift; the glovebox rotation at El Paso).
