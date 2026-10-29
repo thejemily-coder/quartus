@@ -2061,3 +2061,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   the night Julian sang "Magdalena", and that she had asked him to come, **and starts to second-guess things again.**
   Silence in the car follows (the towel thrown in), leading eventually to the shoulder. Her second-guessing is private
   (narration and her face; not voiced to Jack).
+- **Jack on the death penalty (player, standing).** Jack is **mostly against the death penalty**: only when truly
+  necessary to protect other lives (Evangelium Vitae's standard), which in modern America is close to never. Applied in
+  S2E09 s05c (Janine's question now tests consistency from there).
