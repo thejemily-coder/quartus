@@ -2084,3 +2084,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   made them talk the whole night and made her want to see him again. Jack hears it; it lands on him.
   - **Danny's reaction (player):** Danny **loves her immediately**: dying laughing through the entire "trick" story,
     then **audibly moved by the real story but playing it off** (Danny's register: a joke, a cough, "Professor").
+  - **The end of the call (player, verbatim lines):** Skye asks Danny to call again. Before they get off, Jack tells
+    Danny (Skye hears): *"She's the one I can tell the truth to."* Danny: *"Yeah, I can tell, Professor. You're not
+    subtle. I'm still going with the trick though, easier to wrap my brain around that one."*
