@@ -79,7 +79,7 @@ timeline lives on the long-lived branch **`hard-saying-alt`** of this repo, with
 https://claude.ai/artifact/F2CbUgU7hNCNNjzXyqoqXw (seeded from after-s2e09) and its own Claude session. **The main
 timeline never commits to, merges, or rebases `hard-saying-alt`, and never writes to that artifact.**
 
-**Pipeline v3 (approved 2026-10-29, apply after S2E14 publishes):** archive v2 to `writers/pipeline-v2/` (restorable
+**Pipeline v3 (APPLIED 2026-10-29 after S2E14; first used for S2E15):** archived v2 to `writers/pipeline-v2/` (restorable
 if quality dips), then: (1) slimmer writer briefs (own scenes' blueprint + a one-page episode summary + the full voice
 and style pack); (2) ~5 bigger drafting chunks instead of 10–11; (3) reviewers 6 → 4 (Continuity+Knowledge on Opus;
 Voice on Opus; Standards on Sonnet; Line merged with tics.py; Mechanics replaced by sim.js plus a short check);
