@@ -2157,3 +2157,19 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   each landing real hits and going back for more. **All four others reach the point of regretting coming on the trip**
   (Kevin, Margot, Theo, Laney, each in their own register), and **Theo and Laney are the most miserable of all, for having
   set it up.** This **expands and adds to the planned beats** (keep them all); it replaces nothing. Keep the seating plan as written (the fight on Margot's shift; the glovebox rotation at El Paso).
+
+### Season 2 back-half decisions (player, during S2E12 production)
+- **What Jack tells Skye at the breakup (Tue Feb 23, Del Playa porch).** He keeps his promise: **everything, plainly**
+  (Lena; Mardi Gras night they nearly kissed and didn't; nothing happened), **except he never says "love" about Lena.**
+  He **confirms he loves Skye** and that their time together has truly been **among the happiest of his life**, which
+  only deepens the confusion and pain. **The facts make no sense to her**, so the only thing she can conclude is that
+  **he's lying, he cheated on her, and his guilt is making him do this.** She feels **pathetic because she still wants to
+  work it out**, gets angrier each time he says he didn't, and **yells at him to leave.** (Folds into the existing
+  eight-step design: bit → heartbreak → anger → "cheated" → gone 1–2 weeks → return → campaign → "I can work with that".)
+- **Skye's line moves to her RETURN** (the quieter "sit somewhere and explain it" talk, not the porch): *"I just
+  thought I'd be better than her at something. Explain to me, slowly, why it took you a parade."*
+- **Deepwater Horizon (Tue Apr 20 on) hits HARD, a real arc.** Lena's uncle's shrimp boat in Plaquemines; the fishing
+  season gone; the family's livelihood threatened; Lena goes home or nearly does; **Jack's response is a test of the
+  new relationship.** Public-record facts only for the spill.
+- **Season 2 finale (finals week, May 10–15): joy, then the goodbye.** The happiest episode in a long time, ending on
+  the first goodbye of their summer apart, **at an airport again**, rhyming with the Season 1 checkpoint.

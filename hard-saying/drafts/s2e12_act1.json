@@ -1,0 +1,245 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "FRIDAY · 8:05 AM · I-405 SOUTH, THE SEPULVEDA PASS",
+   "music": "The Carpenters — “We’ve Only Just Begun”",
+   "set": {
+    "resolve.lena": 3,
+    "on_i10": true
+   },
+   "body": [
+    "The 405 climbs the Sepulveda Pass under a gray that has no intention of burning off, ten lanes of brake lights strung up the grade, and on its ridge above the southbound side the Getty sits white and square in the overcast like a hospital for paintings. The Odyssey is doing eleven miles an hour. Kevin is doing it at exactly the speed of everyone around him, both hands on the wheel, the La Vang rosary hanging dead still under the mirror, because nothing in Los Angeles is moving fast enough to swing it.",
+    "The second of the two Carpenters songs on Kevin’s *Road Trip Mix* comes up out of the door speakers at the volume his mother left the knob on, and it plays to the end with six people listening to it and not one of them remarking.",
+    {
+     "if": "laney_bags",
+     "text": "Theo is asleep in the passenger seat in MEDIUM SPARKLE’s satin mask again, chin down in the collar of his camel coat, his mouth a little open, a silent-film heiress on the second reel.",
+     "else": "Theo is asleep in the passenger seat with his own hand over his eyes again, his head against the glass and his camel coat buttoned to the throat against a morning he has declined to attend."
+    },
+    "Across the aisle Margot has Interstate 10 on her knees, printed out county by county and laid over Gloria’s box, the top sheet already gone three colors.",
+    {
+     "type": "doc",
+     "title": "Margot’s Interstate 10, page 1 of 34: the key",
+     "text": "YELLOW — FUEL.\nPINK — RESTROOMS KEVIN HAS PRE-APPROVED.\nGREEN — SITES OF ANTHROPOLOGICAL INTEREST. (NONE YET.)"
+    },
+    "Her tape recorder rides in the milk crate between her Docs with its red light off. When Jack’s eyes go to it, she doesn’t move anything but her mouth. “I don’t record captivity,” she says. “There are ethics boards.” Between Jack’s own sneakers FIREMAN, LARGE sits on the floor mat with its grosgrain bows flopped over and the horseshoe pillow still sealed inside.",
+    "The rule from the packing still holds. It was never voted on, and it hasn’t been lifted: Lena doesn’t speak to Jack, Jack doesn’t speak to Lena, and anything that has to cross the van crosses it by way of Kevin or Laney. In a parking lot it was a procedure. In a minivan on the 405, with six people sitting close enough to hear each other swallow, it is a play with the house lights up.",
+    "From the way-back, behind Margot, diagonally as far from him as Kevin’s chart allows: “Kevin, it’s seventy-eight back here.”",
+    "Kevin, to the dash: “It’s seventy-eight back there.”",
+    "The rear climate dial is in the ceiling over Jack’s head. He reaches up and turns it down two clicks and says, to the back of Kevin’s head, “Down.”",
+    "“It’s down,” Kevin says, and moves them up four car lengths, the most progress anybody has made since Sherman Oaks. Under the Mulholland bridge a silver Prius noses into the gap ahead of them, and Kevin, who has read about the brakes, lets it have three more lengths and the benefit of his prayers.",
+    "Up front Kevin glances at the dash clock and at the trip odometer, which he zeroed at the Chevron by the freeway, and does a sum he doesn’t share. Then he shares it. “Two hours. Ninety-one miles.”",
+    "“Theo said thirty hours,” Laney says from the way-back, to the ceiling, her sunglasses still on.",
+    "“Theo is asleep,” says Kevin.",
+    "Margot uncaps a yellow highlighter and draws a very short line on Los Angeles County. “At this rate,” she says, “we make New Orleans for Lent.”",
+    "It’s a temperature. Jack can handle a temperature. At this size it suits him: a number out of the way-back, a dial in the ceiling, a word to Kevin, and the back of his own head toward her for nineteen hundred miles.",
+    "Past Wilshire Kevin signals for the 10 half a mile early and takes it east, and downtown stands up ahead of them in the overcast, glass and more glass, the tops of the tallest towers gone into the cloud. North of everything the San Gabriels have weather piled on them, slate-dark and heaped to the ridgelines, and it sits there over the foothills and doesn’t move.",
+    "Jack cracked his window at the Rincon for the cold and the salt, and it is still cracked, and now what it lets in is the 10: tire hum, a motorcycle splitting the lanes, somebody’s bass three cars over, the whole city breathing exhaust at a crawl. He hasn’t slept since Wednesday night. His eyes feel sanded. Somewhere north of all this the six-forty out of Goleta is over Oregon by now, with a girl in a window seat in it who is mostly fine about it, and the thought of her up there in the bright above the cloud deck, with her knees up and her coat for a blanket, is the one warm thing he has brought into this van."
+   ],
+   "choices": [
+    {
+     "text": "*Roll it up.*",
+     "tag": "Restraint",
+     "set": {
+      "s2e12_window": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He rolls it up. The glass seals, the 10 drops to a hum, and the van warms by a degree nobody announces. Kevin’s mix moves on to something with a pedal steel in it. Jack puts his temple against the window with the RAZR shut in his fist and Hale’s book a hard rectangle in his back pocket, and somewhere past the East L.A. interchange he stops keeping track of the exits, and by El Monte he’s gone."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "“Kevin, tell her it’s a sunroof.”",
+     "tag": "Wit",
+     "set": {
+      "s2e12_window": "wit",
+      "trait.wit": "+1",
+      "rel.lena.friction": "+1"
+     },
+     "response": [
+      "“Kevin,” he says. “Tell her it’s a sunroof.”",
+      "Laney gets there before Kevin can, without lifting her sunglasses, in a voice like a frost advisory for the higher elevations: “He says it’s a sunroof.”",
+      "From the way-back: “Laney. Tell him it’s a *window*.”",
+      "“It’s a window,” Laney says, and turns her face back to the glass.",
+      "He runs it up halfway, as a statement, and leaves the rest open, as another. Kevin gains them three car lengths and gives them back. Jack props his head on the cold edge of the frame with the air coming across his eyelids, and is asleep by El Monte."
+     ],
+     "goto": "s02"
+    },
+    {
+     "text": "*Leave it open and let Los Angeles in.*",
+     "tag": "Reckless",
+     "set": {
+      "s2e12_window": "reckless",
+      "trait.reckless": "+1"
+     },
+     "response": [
+      "He leaves it. Los Angeles comes in at the crack: diesel off a city bus in the next lane, the flat wet-concrete smell of the river channel as they cross it, carnitas from a taco truck parked at the foot of an off-ramp with its awning up and a line already at it.",
+      "From the way-back: “Kevin, I’m going to die of Los Angeles.”",
+      "“I’ll put it on the chart,” Kevin says.",
+      "Jack lays his head against the cold of the window frame, where the air comes in on his cheek and his ear, and somewhere around the Long Beach Freeway he loses the thread of the road, and by El Monte he’s asleep."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "FRIDAY · 9:40 AM · I-10 EAST, ONTARIO → REDLANDS — TWO TRUTHS AND A LIE",
+   "music": "Vampire Weekend — “Horchata”",
+   "body": [
+    "Jack comes up out of most of an hour of sleep with the window printed down one cheek, because Theo is awake, and when Theo is awake the van is.",
+    "Theo is awake all at once, sitting up, taking in the Inland Empire through the windshield: a warehouse, a warehouse, a billboard for a personal-injury lawyer with his arms folded, a warehouse the length of an airport, the sky over all of it the same flat gray it was in Los Angeles, only with more room. He has his iPod out of his coat and the little transmitter plugged into the lighter socket, thumbing down the dial for a frequency San Bernardino County isn’t using, and he finds one, and the Carpenters give way to marimba and strings and four boys out of Columbia. Kevin lets it have most of a verse before he reaches across and presses the button for his CD.",
+    "“Respectfully,” Kevin says, “it’s my mother’s car.”",
+    "Theo puts the iPod back in his coat and turns around in his seat to face the van, awake now in every part of him. “Two truths and a lie,” he says. “To pass the Inland Empire. It’s that or the Inland Empire.”",
+    "Margot, referee by temperament: “I’ll allow it.”",
+    "“Rules,” Theo says. “Three statements. One lie. The lie has to be possible.” He looks into the way-back. “Laney.”",
+    "“*Possible* is a strong word,” Laney says. “For a Friday.”",
+    "He points at the driver. Kevin doesn’t take his eyes off the road. “One. Your stomach grows a new lining every few days, or it would digest itself. Two. You can’t tickle yourself; the brain cancels it out before it gets there. Three. I have had zero cavities in my life.”",
+    "“Kevin,” Theo says. “One of them has to be a lie.”",
+    "“Respectfully, I don’t lie.”",
+    "“Then it isn’t a game,” Theo says.",
+    "“It’s a game,” Kevin says. “I win it.”",
+    "Laney goes next, from the way-back, without being asked. “Okay. One: I got sent home from a Baptist lock-in in the eighth grade for what the youth pastor called *interpretive dance*. Two: I have been bitten by a horse in a full pageant gown, and I *placed*. Three: I have never been to Oklahoma.”",
+    "“What’s interpretive dance?” Kevin asks.",
+    "“It’s whatever the youth pastor says it is, Kevin. That’s the lesson.”",
+    "“Three,” says the van, in four voices.",
+    "“You go to Oklahoma by accident,” Laney says, unbothered. “It’s like a cold.”",
+    "Margot doesn’t wait either. “One: I have two hundred and eleven pages of field notes on the fourth floor of Delgado. Two: I was asked to leave a sorority’s rush week for taking minutes. Three: I didn’t mind.”",
+    "“Three,” Theo says. “You minded.”",
+    "“Two. They asked me back.” Margot turns a page of San Bernardino County. “I declined. The data had saturated.”",
+    "Kevin, after a moment: “What were the minutes of?”",
+    "“Who cried in the bathroom, and when, and whose sweater she was wearing. It’s a kinship system. They just call it sisterhood.”",
+    "From the way-back, Laney, wounded and fascinated: “Which house?”",
+    "“I’d never tell you that.”",
+    "Theo gives himself the floor with a hand on his heart. “I have been on a yacht with a Kennedy. I have been seasick on a yacht with a Kennedy. The yacht was a hundred and twelve feet, a Feadship, out of Hyannis, forty-one tons, teak decks, and the Kennedy was a second cousin by marriage in a pair of —”",
+    "“The tonnage,” Margot says.",
+    "Theo closes his mouth. “I hadn’t even got to his loafers.”",
+    "He turns farther round in his seat, past Margot, past Jack’s headrest, to the way-back. “Broussard.”",
+    "Behind Jack and to the left, where she has ridden since Marisol: “I’ll pass, Theo.”",
+    "Theo waits. She lets him wait.",
+    "“I hear I’m unreliable,” Lena says.",
+    "Nobody laughs. Kevin checks his mirror and finds nothing in it he wants. Margot’s highlighter stops halfway across Rialto.",
+    "“House rules,” Theo starts, “a pass costs you —”",
+    "“Sugar,” Laney says. “Let it go.”",
+    "Jack watches a Costco go by his window, and the long beige wall of the one after it.",
+    "Theo pulls his visor down. In the little mirror on the back of it, from where Jack sits, there is a slice of the way-back: copper hair, a pair of sunglasses, Laney’s face looking straight into the mirror at Theo’s. Laney’s eyes drop to the pink BlackBerry in her lap, and she gets very interested in it. Theo flips the visor up.",
+    "He comes round on Jack with all his teeth. “Costigan. Father Jack. Two truths, one lie. Dazzle the Inland Empire.”"
+   ],
+   "choices": [
+    {
+     "text": "“My grandmother calls me Giacomino. I gave a marionberry pie a four. I’ve read all of Chesterton.”",
+     "tag": "Wit",
+     "set": {
+      "s2e12_truths": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Margot, without looking up: “Nobody has read all of Chesterton. Chesterton hasn’t.”",
+      "“It’s a lot of books,” Kevin agrees.",
+      "Theo awards the point to Margot, who accepts it like a parking validation. The game limps on past Redlands with no one willing to go next, and up the long grade past Yucaipa, and it dies at the top of the pass at Beaumont, where the road tips down toward Banning and the desert opens out ahead of them, brown and enormous under the overcast."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“I’ve met Tony Romo. My father drove me twenty-four hundred miles to college. I can name every pope since Leo the Thirteenth.”",
+     "tag": "Charm",
+     "set": {
+      "s2e12_truths": "charm",
+      "trait.charm": "+1"
+     },
+     "response": [
+      "Laney doesn’t let him finish the sentence. “Nobody’s met Tony Romo. He’s from *Wisconsin*.”",
+      "“Name the popes,” Kevin says.",
+      "He names them, with the numbers, the way he learned them in the fourth grade, standing up: Leo, Pius, Benedict, Pius, Pius, John, Paul, John Paul, John Paul. He gets to Benedict the Sixteenth just as they top the pass at Beaumont. The van receives the popes in silence. Then the road tips down toward Banning, and the desert opens out ahead of them, brown and enormous under the overcast."
+     ],
+     "goto": "s03"
+    },
+    {
+     "text": "“Pass. I’m driving West Texas. I’m saving my lies.”",
+     "tag": "Restraint",
+     "set": {
+      "s2e12_truths": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "“That’s two passes,” Theo says.",
+      "“It’s a trend,” says Margot. “I’ll allow it.”",
+      "Theo faces front and studies the Inland Empire as if it had personally let him down. The game dies at the top of the pass at Beaumont with nobody’s lie on the table, and the road tips down toward Banning, and the desert opens out ahead of them, brown and enormous under the overcast."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s03": {
+   "slug": "FRIDAY · 10:40 AM · CABAZON — THE DINOSAURS",
+   "set": {
+    "cabazon": true
+   },
+   "body": [
+    "The wind comes down the San Gorgonio Pass hard enough to lean on. It flattens the creosote along the frontage road, throws grit across the pumps, and rips the sliding door out of Margot’s hand the second she unlatches it. Kevin’s card says gas at half a tank, and at half a tank exactly Kevin put his signal on, and so they are here: a gas station, a diner, a lot full of RVs, and beyond the lot the dinosaurs, standing in the wind. A brontosaurus the length of a motel, concrete, weathered, its neck going up into the gray and its tail coming down to the asphalt. Behind it a tyrannosaur six stories tall with its little arms up and its mouth open on a row of teeth, roaring at the interstate.",
+    "Kevin takes the pump. The rest of them go across the lot because it is there. Theo holds his iPhone up at the tyrannosaur and takes its picture, and then takes it again with Laney under it doing a pageant wave, wrist, wrist, elbow, elbow, into the wind, her hair going straight sideways off her head. Margot has her map pinned under one arm so it won’t leave for Arizona without her.",
+    "The gift shop is inside the brontosaurus. You go in by a door in its flank, under its ribs, and inside are rubber dinosaurs and dinosaur T-shirts and a shelf of books about the Flood, and placards along the walls in careful lettering that ask the visitor to consider how old he thinks the earth is, and why he thinks so, and who told him. The woman at the register, in a fleece vest, says good morning to each of them as they come in out of the wind, and asks where they’re headed, and when Laney says New Orleans she says, “Well, God bless the Saints, then,” and gives her a sticker.",
+    "Margot stops in the doorway and takes it all in. “A young-earth gift shop,” she says, very softly, “inside a Jurassic misunderstanding. I’m home.” She explains to Kevin, who has come in from the pump to see, that there is no such animal as a brontosaurus — it’s an apatosaurus that spent most of a century wearing the wrong head — and goes in reverently, like a woman entering a cathedral she intends to write up.",
+    "She finds Jack at the postcard rack by the back wall and stands beside him in front of a placard, and reads it over twice, and turns to him with something close to joy. “Defend this,” she says. “Professionally.”",
+    "At the other end of the shop, by the T-shirts, Kevin has asked Lena something too, low, with his hands in his quarter-zip.",
+    "“Augustine already did,” Jack says. “He says it’s a disgrace when somebody who doesn’t believe hears a Christian talking nonsense about the natural world. Because the guy knows better, and he laughs, and then why would he believe you about the resurrection.”",
+    "And at the far end of the shop, at the same time, at the same speed, in her own words: “— Augustine says it’s a scandal when a Christian talks nonsense about the earth and the stars to a man who knows better, because the man laughs at you, Kevin, and after that he won’t listen to you about anything that matters —”",
+    "They both hear it. They both stop. Across a rack of T-shirts, a tyrannosaur in sunglasses and a brontosaurus with CABAZON across its ribs, Jack and Lena look at each other, a glare apiece, and look away.",
+    "Beside him Margot closes her mouth on whatever she had ready. “Well,” she says. None of it has carried as far as the register, where the woman in the fleece is showing Laney which postcards have the sunset on them and which ones have the snow on San Jacinto, and saying that both are true, depending on the day.",
+    "Outside, the wind has the flags on the gas station snapping straight out. Theo and Laney have stationed themselves under the tyrannosaur’s feet, directly on the way back to the van, and are having a conversation loud enough to reach the pumps.",
+    "“It’s fascinating,” Theo is saying, “how two people can remember the *same phone call* completely differently.”",
+    "“I read about it in *Cosmo*,” Laney says. “It happens to *couples*.”",
+    "Jack walks past them to the van without breaking stride. Behind him the gift-shop door bangs, and a pair of boots goes the other way across the asphalt, toward the restrooms.",
+    "Kevin comes out of the brontosaurus behind him on his way back to the pump, and stops square in front of the two of them. Over the wind it carries fine.",
+    "“Respectfully,” Kevin says. “Leave it alone.”",
+    "“We’re discussing *paleontology*,” Theo says.",
+    "“Leave the paleontology alone.”",
+    "Jack stands at the hatch with his hands in the Carhartt and the wind in his ears. Across the back glass, in white: WHO DAT · 2 DAYS. The 2 is new since the pumps. Somebody has wiped out the 3 with a thumb and made a 2 over the smear, and the white is still wet; the wind is drying it while he watches, the bottom stroke going dull first."
+   ],
+   "choices": [
+    {
+     "text": "*A postcard of the T. rex, for Danny.*",
+     "tag": "Sincerity",
+     "set": {
+      "s2e12_dino": "sincerity",
+      "danny_postcard": true,
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He goes back in through the brontosaurus’s side. The postcard is a tyrannosaur against a blue sky Cabazon hasn’t seen all day, roaring, twenty-five cents. The woman in the fleece gives him change for a dollar and tells him to drive safe. He doesn’t write anything on it. It goes into the back of Hale’s *Moviegoer*, flat against the inside of the back cover, a long way from the print.",
+      "On the 10 east the windmills come up through his window, on the slopes past Cabazon, a thousand of them, white, turning all together in a wind none of them can feel through the glass."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "*A plastic brontosaurus for Rosie, with a Latin name on the box.*",
+     "tag": "Wit",
+     "set": {
+      "s2e12_dino": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He goes back in for it. It’s three ninety-nine, green, with *BRONTOSAURUS EXCELSUS* across the window of the box in yellow. Margot takes it out of his hand in the aisle and turns it over.",
+      "“That’s not a real genus.”",
+      "“It is to an eight-year-old.”",
+      "“That’s how it starts,” Margot says, and gives it back.",
+      "On the 10 east the windmills begin past Cabazon, and he watches them in Theo’s side mirror, a thousand of them on the slopes, white, turning all together in a wind none of them can feel through the glass, falling away behind them as more come up."
+     ],
+     "goto": "s04"
+    },
+    {
+     "text": "*Nothing. Back to the van.*",
+     "tag": "Candor",
+     "set": {
+      "s2e12_dino": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "He slides the door open and gets in, middle right, out of the wind. Kevin is back at the pump, doing the windshield in long even strokes against the gusts, and when he comes around the hood he raps a knuckle on Jack’s glass. “Good man.”",
+      "The rest of them come back one at a time and the doors slide and slam. On the 10 east the windmills come up over Theo’s headrest, filling the windshield on the slopes past Cabazon, a thousand of them, white, turning all together in a wind none of them can feel through the glass."
+     ],
+     "goto": "s04"
+    }
+   ]
+  }
+ }
+}

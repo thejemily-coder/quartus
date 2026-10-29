@@ -1,0 +1,126 @@
+{
+  "scenes": {
+    "s18v": {
+      "slug": "SATURDAY · 10:00 AM · SAN ANTONIO, THE VAN — DAYLIGHT",
+      "set": { "rel.lena.trust": "+1", "rel.lena.warmth": "+1" },
+      "body": [
+        "Out at the van the sun has finally got some warmth in it, the first since California. It comes low and yellow across the truck lot, off the windshields of the rigs idling in their rows, and it shows up every crumb on the Odyssey’s floor mats and the haze on the inside of the glass where six people have been breathing since Marisol.",
+        "Laney is in the way-back with the hatch up, flat on her back across the bench, her boots out over the bumper and her sunglasses pushed up into her hair. A breakfast taco in its foil rides on her chest, unopened, going up and down. She hasn’t said a word since the taco counter, and her face would like it known that she intends to keep it that way.",
+        "Lena is standing in the open side door with a map of Texas. It’s the big free highway map, and at some point this morning somebody opened it to its full size, and it doesn’t want to go back. She has the Gulf folded under. She has El Paso folded under. In the middle the rest of the state bellies up out of her hands, and there’s a brown coffee ring on the Hill Country where she must have set her cup down on it.",
+        "Jack comes across from the restaurant with the last of his coffee and stops, because she’s in the door and his chair is behind her. In the daylight she looks like the night she’s had: the dark under her eyes, the sweatshirt she slept in, her hair twisted up off her neck and held there by a pencil stuck through the knot.",
+        "She looks up at him over Texas and holds out a corner of it.",
+        "“Can you hold this end.”",
+        "He sets the coffee on the roof of the van and takes the end. She folds her side toward him along a crease that’s printed right there, and he folds his side toward her along a crease that’s printed right there, and they turn out to be different creases, and Texas comes up in a peak in the middle with San Antonio on top.",
+        "“No,” Lena says.",
+        "They open it back out and do it again, slower, her way, with her telling him when. It goes wrong in a new place. The legend ends up on the inside. The cover ends up somewhere in the Panhandle, upside down.",
+        "She takes the map out of his hands in one wad and crams it into the pocket of the sliding door, on top of the legal pad, and leans on it with the heel of her hand until it stays.",
+        "“It lives there now.”",
+        "Hale’s *Moviegoer* is on the seat of his chair just inside the door, where he left it to go in for tacos: the cover curling, the spine gone white in its creases, the pages fat from some bath a long time ago. She sees it. She doesn’t pick it up.",
+        "“That’s not yours.”",
+        "“Hale’s. He lent it to me.”",
+        "She reads the cover upside down, the way it’s lying, with her hands in the pouch of her sweatshirt.",
+        "“Is it any good?” she says. “His?”"
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“Yours is better.”",
+          "set": { "s2e12_copy": "candor", "said_yours_better": true, "trait.candor": "+1", "rel.lena.trust": "+1" },
+          "key": "In San Antonio Lena asked if Hale’s copy is any good. You told her hers is better.",
+          "response": [
+            "She looks up off the book at him, straight, in the full sun. He means the margins. It’s in her face that she knows whose: her mouth comes open on something and shuts on it again, and she reaches up and pushes the pencil deeper into the knot of her hair, and leaves it at that.",
+            "Across the lot Theo is coming back from the far edge of the asphalt, putting his phone away."
+          ],
+          "goto": "s19"
+        },
+        {
+          "tag": "Wit",
+          "text": "“He wrote *Quite not* next to a sunset.”",
+          "set": { "s2e12_copy": "wit", "said_yours_better": true, "trait.wit": "+1" },
+          "key": "In San Antonio Lena asked if Hale’s copy is any good. You told her Hale wrote *Quite not* next to a sunset. Hers is better, she said. You said yeah.",
+          "response": [
+            "“That’s very Hale.” She tips her head to read the spine the right way up. And then, on her own: “Mine’s better.”",
+            "“Yeah.”",
+            "She nods, as if that’s settled a thing that needed settling, and pushes the door pocket shut on the map with her knee. Across the lot Theo is on his way back from the edge of the asphalt with his phone in his pocket."
+          ],
+          "goto": "s19"
+        },
+        {
+          "tag": "Restraint",
+          "text": "“I’ve got yours at home. I read it twice.”",
+          "set": { "s2e12_copy": "restraint", "said_read_twice": true, "said_yours_better": true, "trait.control": "+1", "rel.lena.warmth": "+1" },
+          "key": "In San Antonio Lena asked if Hale’s copy is any good. You told her you’ve got hers at home, and you’ve read it twice.",
+          "response": [
+            "She doesn’t answer that. She pulls the map back out of the door pocket and opens one panel of it and closes it again, and opens another, though there’s nothing left in it that folding is going to fix. The tops of her ears have gone red.",
+            "Across the lot Theo is walking back from the edge of the asphalt with his phone in his pocket."
+          ],
+          "goto": "s19"
+        }
+      ]
+    },
+    "s19": {
+      "slug": "SATURDAY · 5:45 PM · I-10 EAST, THE ATCHAFALAYA BASIN BRIDGE — DUSK",
+      "music": "Clifton Chenier — “Bon Ton Roulet”",
+      "set": { "rel.lena.heat": "+1", "basin_dusk": true },
+      "body": [
+        { "if": "s2e12_sa==\"van\"", "text": "Theo came back across the lot with his phone in his pocket and his face arranged, and Laney, watching Lena watch Jack, put her sunglasses back on.", "else": "Theo walked back to the van beside him with his phone in his pocket and his face arranged." },
+        "Theo drove. Houston took two hours out of the middle of the day, freeways stacked on freeways and the same skyline turning up in a different window every time Jack looked for it. Beaumont. A long rise over a river going brown into the marsh, and a blue sign at the top: WELCOME TO LOUISIANA, and under it, smaller, *Bienvenue en Louisiane*. In the way-back Lena sat up to read it. Then Lake Charles, and the tall bridge there, and the flat country after it.",
+        "At Lafayette there was a gas station with boudin turning under a heat lamp by the register. Kevin bought a link for everybody on principle and read the ingredients aloud to anyone who would stand still — “Pork, rice, liver. It’s a casserole in a casing. I love it.” — and took the keys back. Theo got in up front. Lena came out of the restroom last and got in on the right side of the way-back, directly behind Jack, and pulled her belt across, and nobody said a word about it.",
+        { "if": "s2e12_sa==\"theo\"", "text": "“Your seat,” she said, behind him. “Put it up.” He put it up. It was the first thing she had said to him since Fort Stockton, and she said it to him, not to Kevin." },
+        "East of town the land gets low and wet, and then it quits. The interstate goes up onto concrete legs and stays up, two spans running side by side out over the water for eighteen miles, and the water is everywhere: black, flat, standing among cypress that come up out of it with their knees showing and moss hanging off their arms in gray rags. The sun is low behind them. It lays the van’s shadow out long on the bridge ahead and turns the tops of the trees to copper while the water underneath goes dark first.",
+        "Theo has found a station at the bottom of the dial out of Lafayette. When he found it a man was talking French between records, easy, a neighbor over a fence. Now it’s an accordion, pumping, with a rubboard rattling along under it, and a man singing in a French Jack has three words of, none of them these.",
+        "Lena has been awake since Lafayette. Somewhere at the start of the bridge she comes forward out of the way-back with her belt let out to the end of its strap, and folds her forearms on the top of his seat. He feels her lean come through the seatback into his shoulders. Her arm goes past his face to point.",
+        "“Heron.”",
+        "A big gray one, on one leg in the shallows at the edge of the trees, lifts off as they come level with it and goes away low over the water with its legs hanging.",
+        "“That’s a man running his traps.” Out where the cypress thins, an aluminum skiff is working down a line of floats, and a man in the bow is hauling something up dripping. “See his boots?” White rubber, to the knee. “Cajun Reeboks.”",
+        "“Is that what they’re called?”",
+        "“That’s what they’re called by everybody who doesn’t have to wear them.” Her sleeve goes across his cheek as she swings her arm around to point back past his shoulder, into the light, the way they came. “Mémère’s people are back that way. Breaux Bridge. Her daddy fished all this before there was a bridge to fish it from.”",
+        "Jack looks wherever she points — the heron, the skiff, the low sun — and keeps his head where it is. Her face is just behind his shoulder. He knows exactly where, and he looks at the water.",
+        "At the wheel Kevin’s eyes go up to the rearview and come back down to the road.",
+        "“Huh,” Kevin says, very quietly.",
+        "Beside Jack, Margot has her notebook open on top of her printed maps. She writes, and reads it off as she goes. “The avoidance relationship has been suspended. Cause unknown.”",
+        "“Margot,” says Laney, from the way-back.",
+        "Up front Theo pulls his visor down, though the sun is behind them, and slides open the little mirror on the back of it. In that square of glass he and Laney find each other, and both look away fast: two people who have seen a ghost and would rather not scare it off.",
+        "Lena is still leaning on his seat. The accordion goes on, and under it, close at his ear and low enough to be his alone: “I asked Kevin for the way-back so I wouldn’t have to look at you for thirty hours.”",
+        "The bridge lifts over a channel where a barge is tied up dark against the trees, and comes back down.",
+        "“Turns out the way-back’s where you see the back of everybody’s head.”"
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“What’s he singing?”",
+          "set": { "s2e12_basin": "sincerity", "trait.sincerity": "+1", "rel.lena.warmth": "+1" },
+          "response": [
+            "“*Bon ton roulet.*” She listens to the next bit. “Let the good times roll. Roughly.” And she keeps going, a line behind the singer, translating with total confidence, and it turns out the song is about a man who drove thirty-five hours in somebody’s mother’s minivan for one plate of crawfish, and would do it again, and his friends were no help to him at all.",
+            "“That’s not what he’s singing.”",
+            "“No. I made it up.” She settles her chin on her forearms. “It’s what he means, though.”",
+            "The bridge runs out of water and into trees, and behind them the dark comes down over the Basin fast, the copper gone off the cypress, the water and the sky gone the same black."
+          ],
+          "goto": "s20"
+        },
+        {
+          "tag": "Wit",
+          "text": "“We’re going to be thirty-five hours. Theo said thirty.”",
+          "set": { "s2e12_basin": "wit", "trait.wit": "+1" },
+          "response": [
+            "Theo flips his visor back up. “I said *approximately*.”",
+            "Behind Jack’s seat Lena laughs, short, into her own sleeve.",
+            "“Approximately is a range, Costigan. Thirty is in it. Thirty-five is in it. Technically, so is forty. I was very careful.”",
+            "The bridge comes down off its legs into trees. Out the back glass the dark is already coming down over the water, and Kevin reaches for the headlights."
+          ],
+          "goto": "s20"
+        },
+        {
+          "tag": "Candor",
+          "text": "“I know. I could feel it.”",
+          "set": { "s2e12_basin": "candor", "trait.candor": "+1", "rel.lena.heat": "+1" },
+          "response": [
+            "Her forearms come off his seat. She sits back, and behind him there’s no sound at all for the rest of the record, not even her belt. When the man comes back on talking French, her knuckle knocks against the back of his headrest, one soft knock, and nothing after it.",
+            "The van comes off the end of the bridge into trees. Behind them the dark comes down on the water, and he can still feel the knock at the back of his head."
+          ],
+          "goto": "s20"
+        }
+      ]
+    }
+  }
+}
