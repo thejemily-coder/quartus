@@ -2064,3 +2064,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Jack on the death penalty (player, standing).** Jack is **mostly against the death penalty**: only when truly
   necessary to protect other lives (Evangelium Vitae's standard), which in modern America is close to never. Applied in
   S2E09 s05c (Janine's question now tests consistency from there).
+
+### After S2E09 (player feedback + S2E10 answers)
+- **Feedback:** "Fantastic episode!! Skye is so so great. Fully back at the how could Jack give this up feeling."
+  Keep that pull at full strength going into the trip.
+- **Hale, Monday Feb 1 (first 109H since his house):** he **teaches straight at it**: never mentions Wednesday,
+  assigns a text too close to home, runs the class as if nothing happened while everyone knows it's aimed, then a
+  sharp private word with each of them after.
+- **The NOLA pitch:** Theo pitches; **Jack's flat no**; then **Skye tips it** (she'll be on her shoot anyway; "maybe
+  it'll be good for you guys"). He agrees for Theo and the Saints, with Lena as the reason not to. (S2E10–S2E11; the
+  drive leaves Fri Feb 5.)
+- **Danny's 23rd (Candlemas, Tue Feb 2):** besides Jack's letter, **Danny calls from Trumbull on his birthday while
+  Jack is with Skye, and she gets on the phone** (Danny thinks the whole thing is hilarious; first time they speak).
