@@ -2216,3 +2216,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     either will say yet. It hurts Lena; it's the root of her lasting dislike of Skye; and she understands it means he's
     giving all of that up for her. **Lena is equally honest about Julian**, but it's not the same: she was going to
     break up with him after Christmas break, for Jack.
+  - **The wound of the avoidable (player).** It honestly wounds them both that **everything since January could have
+    been completely avoided if they'd spoken plainly** on that last phone call, or any night before it. Let it land as
+    grief, not blame: neither can hand it to the other, and it shapes their resolve to speak plainly from now on.
