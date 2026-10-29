@@ -2047,3 +2047,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Theo/Laney's needling of the call, the caption and profile picture), with new ground neither has touched. The hard
   lines still hold (no grief/Memorial or Danny weaponized; no Skye jokes from Lena while the fear is live), and it
   still has to land on the shoulder after.
+- **CORRECTION (player): "no Skye jokes" applies only once Jack and Lena are TOGETHER** (while her fear of Skye is
+  live inside their relationship). It does NOT restrain Lena now. **On the drive (S2E12) Lena absolutely rips into
+  Skye**, and **Jack responds as angry as he's ever been.** It is so bad that **Theo and Laney basically throw in the
+  towel** and think the trip was a huge mistake (the alliance's lowest point, before the shoulder and New Orleans turn
+  it). The other limits stand (no grief/Memorial or Danny weaponized; no cheap villain: Lena's attack is vicious but
+  comes from somewhere real).
