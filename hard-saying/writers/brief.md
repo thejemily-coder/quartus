@@ -2187,3 +2187,25 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     backwards"). Timing is the room's to place in a later season (casting, preparation, release, awards); she can ask
     Jack to help her with the faith (O'Connor's *A Prayer Journal* and letters, Andalusia, the peacocks), and the
     role is a summit of her craft and of her own search, without forcing a conversion.
+- **THE MARDI GRAS HONESTY: EVERYTHING (player, binding for S2E16; consolidates earlier entries).** After the near-kiss,
+  Jack and Lena go through **every single thing** since Jack started dating Becca:
+  1. Jack and Becca; **Lena's breakup with Wes** (the ring; why Jack didn't swoop in; Becca as a guardrail);
+  2. **Jack's breakup with Becca**; **Lena going out with Julian** (how she read Jack choosing Becca; why Julian);
+  3. **Jack meeting Skye** (Theo took him to the Montecito party because he was so obviously in pain about Lena);
+  4. **Jack and Skye's secret December**;
+  5. **Julian and "Magdalena"**: it hurt Jack deeply, **all the more because "Magdalena" is what he had started calling
+     her at the end of their good nights together** (and Lena's apology for the song);
+  6. **What actually happened over Christmas break and what they meant by the phone calls** (her decision to end it
+     with Julian; the Friday call: "Will you be around after?" / "I've got a thing." / "Then call me after."; the
+     status; both take back "liar");
+  7. **All the fighting since getting back to campus** (the alley, Hale's, the drive: the proxy war named, laughed at,
+     painfully);
+  8. **Theo and Laney** (the alliance, what they each tried; Kevin's "Respectfully, leave it alone").
+  **Some pieces can and should leak out during the week** (the layered-truth ledger's rungs), so Mardi Gras is the
+  complete accounting, not the first time each thing surfaces.
+- **The Reliquary at Mardi Gras (player; supersedes "Ash Wednesday morning" for the tin).** **Between the end of the
+  full confessions and their long talk about what happens next**, Jack returns Lena's tin: it holds **a new cigarette
+  for every one since she gave it to him before Christmas break**, **each dated and marked for the fight it followed**
+  (every urge, all semester, was about her; the count is the player's `jack_cigs_jf` and January–February tallies;
+  he tells her the number honestly; zero is its own answer). She realizes every one was about her. Then the talk about
+  what happens next (not as anyone's "other"; both free by the end of the week; Lena pulls away; no kiss).
