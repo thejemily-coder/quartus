@@ -360,6 +360,9 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 199. **The same punchline across scenes** (S2E09). One callback, and only with a change.
 200. **The "she says it and waits" beat in heat scenes** (S2E09). Once per rung.
 201. **Time-zone arithmetic** ("It's after four there") (S2E09). Once an episode; currently in s06a, s19h and s19s.
+202. **A counted deadline used as a refrain** (S2E10). "Sixteen days" appeared seven times in one draft. Once or twice an episode, and never as the button on a scene.
+203. **Pen-cap and pen-position business as everyone's default beat marker** (S2E10). Name it once per scene at most; do not let every character have a pen to cap.
+204. **A journal-card update that is a bare addition** (S2E10, process rule). Every journal card update must be the save text plus the addition, built in code, never an added fragment alone.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

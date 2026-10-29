@@ -1,3 +1,41 @@
+# ⛔ ALTERNATE TIMELINE: THIS IS NOW THE SILENCE LEDGER (Showrunner, 2026-10-29; branch `hard-saying-alt`)
+**Jack does not go to New Orleans in this timeline.** The NOLA truth ledger below is **SUPERSEDED as a New Orleans plan** (kept for the record:
+its PLANTED column is still accurate). Every truth is **re-placed** to one of four layers. Nothing leaks before its layer; the Knowledge Auditor
+checks each S2-ALT episode against this table. Bible: §0A, §23.2-ALT, §24.0-ALT, registry #95.
+
+**Layers (alt):** **L1 — the alliance discovered** (S2E16: Jack puts it together; Theo tells only what's his) · **L2 — the first words** (S2E22, Good
+Friday: one sentence each, no truths spent) · **L3 — the roof** (S2E30, the last night of freshman year: the January truths) · **L4 — New Orleans**
+(S3, late July 2010, Jack's visit for Lena's 19th: the deep truths, the levee near-miss, the asking).
+
+| # | Truth (short) | Re-placed layer (alt) | Who tells whom | Note |
+|---|---|---|---|---|
+| 1 | She decided over Christmas to leave Julian | **L4** | Lena → Jack | The fragments click here ("…she'd *decided*, Theodore —" spent in S2E10 at meeting #3; Jack reads it as about the trip). |
+| 2 | The Friday call: "Will you be around after?" | **L3** | Lena → Jack | With #17: each takes back "liar," explicitly, both ways. |
+| 3 | She saw the status and the airport video; Laney took the laptop | **L3** (status) / **L4** (video, laptop) | Lena → Jack | |
+| 4 | Why he didn't come for her after Wes (the guardrail) | **L4** | Jack → Lena | |
+| 5 | "A week" | **L4** | Jack → Lena | |
+| 6 | The Newman-party glance | **L4** | Lena → Jack | |
+| 7 | The song; her apology | **L4** (default; the roof may carry its first sentence) | Lena → Jack | **Lena's song apology in New Orleans → re-placed to New Orleans in July.** |
+| 8 | Skye: what she is to him, without the word "love" | **L3** (that it was real; he loved her — he may now say "loved," past tense; planner's care) | Jack → Lena | The trick of the unsaid word is retired: by the roof Skye is over and the word can be past tense. |
+| 9 | The physical truth | **L3** — **REWRITTEN: he slept with her** (S2E10 on) | Jack → Lena, unasked, before anything starts between them | Brief's "never slept together" is void in this timeline. She stops him if he starts details. |
+| 10 | Her private blame (he poisoned Julian) | **L4** | Lena → Jack | |
+| 11 | Laney's report; she didn't believe it | **L4** | Lena → Jack | |
+| 12 | The Reliquary; the count | **L4** — returned in New Orleans with the honest count (Lent's no-cigarettes days included) | Jack → Lena | **Reliquary return in NOLA → re-placed to New Orleans in July.** |
+| 13 | The status grievance — answered | **L3** | Jack → Lena | His answer is why it mattered. |
+| 14 | "How dare you be mad at me" | **L3** | both | |
+| 15 | The overheard fragments click | **L4** | (Jack, internal) | |
+| 16 | The Christmas calls meant as much to him | **L3** | Jack → Lena | |
+| 17 | The public "liar" (`s2e8_d3=="real"`) | **L3** | both | |
+| **18** | **He slept with Skye (S2E10)** | **L3** | Jack → Lena | New. He tells her first, himself (the status lesson paid). |
+| **19** | **Her card, his harder no (S2E10), and what writing it cost her** | **L3** (his side) / **L4** (hers) | both | New. `s2e10_lena_no` decides what he has to own (the slid card / "No." / "Take Julian." / never answered). |
+| **20** | **The tickets and meeting #3** | **L1** (Jack learns the alliance) / **L4** (Lena learns he knows) | Theo → Jack; Jack → Lena | New. Theo tells only the alliance, never Lena's secrets. |
+
+**Superseded with the trip (cut, not re-placed):** the drive's layering ("nothing leaks before the shoulder"); the phones telling on them; the
+Broussards reading them as a couple in February (→ July, L4, as a fact of the visit, not a truth); the Mardi Gras near-miss (→ the levee, L4);
+Ash Wednesday's quiet truths (→ L4).
+
+---
+
 # New Orleans truth ledger (writers' room only; hidden canon; S2E12–S2E17)
 
 Every secret or misreading Jack and Lena carry into the trip. For each: where it was planted (published episode or
