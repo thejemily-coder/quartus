@@ -17,7 +17,7 @@ export const meta = {
 const D = '/home/user/quartus/hard-saying'
 const A = args
 const PACK = `${D}/drafts/${A.ep}_pack.md`
-const RULES = `Content standards and HARD RULES per the brief: frank, literary heat (never pornographic mechanics); everyone 18+; no sex for Jack or Lena with anyone; no procedural consent beats unless a scene would otherwise read as assault; never mock the faith; no strawmen; Jack and Lena never die. Do not touch anything outside ${D}. Do not run git.`
+const RULES = `Content standards and HARD RULES per the brief: frank, literary heat (never pornographic mechanics); everyone 18+; ALTERNATE TIMELINE: Jack and Skye may have sex (fork directive at the top of the brief; same frank literary standard, faith stakes real); no sex for Lena with anyone, and no one else for Jack; no procedural consent beats unless a scene would otherwise read as assault; never mock the faith; no strawmen; Jack and Lena never die. Do not touch anything outside ${D}. Do not run git.`
 const PLAYER = `The player's save after ${A.prev} is ${D}/${A.save} (vars, journal, keys, choice logs). Player notes for this episode: ${A.notes || '(none)'}.`
 const FULL = `You are part of the writers' room for "The Hard Saying", an interactive prestige-TV college drama game. Project folder: ${D}.
 Binding docs: ${D}/writers/brief.md (every line is a player decision; newest win), ${D}/writers/room.md, ${D}/writers/schema.md. Hidden canon: ${D}/writers/bible.md. Ledgers: ${D}/writers/continuity.md, ${D}/writers/knowledge.md. Period: ${D}/writers/period/. ${RULES}`
