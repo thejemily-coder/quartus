@@ -1,0 +1,344 @@
+{
+ "scenes": {
+  "s02": {
+   "slug": "SUNDAY · 7:15 AM · DUPRE STREET, THE KITCHEN — ONE BATHROOM",
+   "body": [
+    "From the kitchen table, with his second cup of chicory, Jack listens to the house find its stairs. The attic hatch bangs back. The ladder takes somebody’s weight a rung at a time and complains about every one. Doors go all down the hall, Tess’s old room and Josie’s and the bathroom’s, and in the front room a lamp clicks off because the window has caught up with it.",
+    "Eleven people and one bathroom, not counting Mémère, who went through it before the sun was up and is in her chair with her hat on. Celeste runs the line from the middle of the hall in a whisper, a nurse’s station at shift change: “Remy, out. Margot, baby, you’re next. Theo, nobody needs that long.”",
+    "Margot does not go when she’s called. She stands in the kitchen door in black, sweater and skirt and tights, as always, with her notebook shut on one finger. “I’m attending as an observer,” she tells the hall.",
+    "From the front room, Mémère: “God observes. You can sit.”",
+    "Margot takes that under advisement and goes to stand outside the bathroom door with her toothbrush.",
+    "Laney comes up the hall behind her in one of Lena’s Mass dresses, navy with a white collar, a size wrong in every direction and magnificent anyway, and stops in the kitchen doorway to let the room look at it. Theo, coming out of the bathroom with a towel round his neck, opens his mouth. Laney points at him. He shuts it. “I am a *vision* in borrowed navy,” Laney says, “and I will be taking no questions at this time.”",
+    "Tony comes through from the front of the house in his Sunday sport coat, brown, with brass buttons, and under it, where a shirt and tie ought to be, a Brees jersey with the gold 9 showing in the V, put on under the coat with the care of a vestment. He kisses the top of Celeste’s head on his way past her in the hall, pours himself a coffee, sets it down on the counter to hunt for his reading glasses, and goes out the front without it. In a minute WWL comes back through two doors from the porch rail, a man talking very fast about Miami.",
+    "Jude is standing at the sink eating a cold boiled potato out of the colander from last night’s boil, skin and all, like an apple. Tess and Beau come in the back door from their place with Lucille asleep in a black-and-gold knit cap with a fleur-de-lis sewn on the top, and the baby goes from lap to lap down the table and doesn’t wake for any of them. Kevin comes in behind them from the back steps with his beads in his pocket and the boards of the steps still printed across the knees of his khakis, and says good morning to every person in the kitchen one at a time, by name, including Lucille.",
+    "And Lena is at the stove with her back to all of it, in a black dress with the sleeves pushed up past her elbows, scrambling eggs for the house in Mémère’s iron skillet with a wooden spoon gone black at the business end. She salts, and stirs, and says “Plates” over her shoulder, and Josie brings plates.",
+    "Celeste comes through on her way to somewhere else and puts a loaf of bread in Jack’s hands without stopping. “Toast, baby. The broiler.” The broiler is the drawer at the bottom of the old Magic Chef, at Lena’s knees, and the sheet pan has to come out past her every time, so for ten minutes they work the one stove together. Her hip moves the skillet’s handle out of his road before he gets to it. He holds the drawer open with his foot so she can reach across it for the cayenne. She says “Butter,” and it’s in her hand. She doesn’t look at him and he doesn’t look at her, and the toast comes out right, three pans of it.",
+    "“Mama,” Remy says from the table, “you got him *working*?”",
+    "“He’s got hands,” Celeste whispers from the hall, and that’s the end of that. Jack puts the toast on the table and sits where she points.",
+    {
+     "if": "heard_debris_flow",
+     "text": "At the table Theo has a cup of chicory and his chair tipped back. When Celeste asks after his mother he says she’s fine, she’s at a friend’s in Pasadena, and that’s all he says about it, and Jack watches him say it and drink his coffee after.",
+     "else": "At the table Theo has a cup of chicory, his chair tipped back on two legs, and an audience. “My mother’s pool is now a pond,” he tells it. “A hill came down in the night. She’s at a friend’s in Pasadena with the dogs, and she would like everyone to know she’s *fine*.” He does *fine* in her voice, from a long way down a phone line, and gets the table, Kevin included. Tony is back in the doorway for the coffee he forgot. “Redfish,” Tony says. “You stock it with redfish.” Theo tips his cup to him. “I’ll tell her you’re taking bids.” Tony goes back out to his radio laughing, with the cup this time, and Theo’s face, start to finish, is doing its very best work."
+    },
+    "Kevin looks at the clock over the stove before he takes a piece of toast, out of habit, and does the sum for the table: Communion around twenty to nine, so they’re fine, an hour and change. “Kevin knows,” Mémère says from the front room, and that’s the canon law settled.",
+    "Josie is buttering toast at the counter with her weight on one hip, Lena’s hip, under Lena’s eyebrows, and when the noise has gone round once she points the butter knife across the kitchen at Jack and says, at the volume of a thirteen-year-old with information:",
+    {
+     "if": "josie_asked",
+     "text": "“Is your girlfriend in Canada watching the game?”",
+     "else": "“Do you have a girlfriend?”"
+    },
+    {
+     "if": "josie_asked",
+     "text": "Remy, at the table with his fork up and waiting on eggs, is delighted. “Everybody’s got a girlfriend in Canada, Jo-Jo. I got two.”",
+     "else": "Remy, at the table with his fork up and waiting on eggs, is delighted. “Everybody’s got a girlfriend somewhere, Jo-Jo. I got two.”"
+    },
+    "Laney looks at the ceiling. At the stove, Lena’s back doesn’t change. The spoon goes round the skillet, and round."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "josie",
+     "title": "Josie Broussard",
+     "if": "josie_asked",
+     "text": "Lena’s sister, thirteen, with Lena’s eyebrows and Lena’s way of standing. Saturday night on the front steps she asked who I was talking to, and I told her. Sunday at breakfast she asked, at full volume, if my girlfriend in Canada was watching the game. When Mémère asked who was in Canada, she said *Personne*."
+    },
+    {
+     "kind": "person",
+     "id": "josie",
+     "title": "Josie Broussard",
+     "if": "!josie_asked",
+     "text": "Lena’s sister, thirteen, with Lena’s eyebrows and Lena’s way of standing. I’m not the violin. *Good.* Sunday at breakfast she asked, at full volume, if I have a girlfriend. When Mémère asked what, she said *Rien*."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“I do, actually. She’s working.”",
+     "set": {
+      "s2e13_canada": "candor",
+      "trait.candor": "+1"
+     },
+     "key": "At breakfast on Dupre Street Josie asked about your girlfriend, at full volume. You said you have one, and she’s working. Lena told Remy she’s real, and to eat his eggs.",
+     "response": [
+      "“I do, actually,” Jack says. “She’s working.”",
+      "“*Working*,” Remy says, and that finishes him. He has to hold the edge of the table. “Jo-Jo. She’s got a *job*.”",
+      "At the stove the flame goes off under the skillet. “She’s real, Remy,” Lena says, with her back to them. “Eat your eggs.”",
+      "She brings the skillet to the table and spoons eggs onto a plate and puts the plate in front of Remy, and spoons out another and puts that one in front of Jack, and takes the skillet back where it came from. What Jack gets of her is a black sleeve going by, and her shoulder, and the back of her neck where her hair is pinned up for church.",
+      {
+       "if": "josie_asked",
+       "text": "In the doorway from the front room Mémère has caught one word of it. “*Qui est au Canada?*” Josie goes on buttering. “*Personne,* Mémère.” And across the toast, with the knife still going, she gives Jack a look he has only ever had from one other Broussard, a look that says they will settle up later.",
+       "else": "In the doorway from the front room Mémère has caught the noise and none of the words. “*Quoi?*” Josie goes on buttering. “*Rien,* Mémère.” And across the toast, with the knife still going, she gives Jack a look he has only ever had from one other Broussard, a look that says they will settle up later."
+      },
+      "Celeste puts her head in from the hall. “Seven forty-five on the steps,” she whispers. “Mémère doesn’t wait and God doesn’t either.”",
+      "In the front room Mémère is already working her gloves on, a finger at a time."
+     ],
+     "goto": "s03"
+    },
+    {
+     "tag": "Wit",
+     "text": "“She’s cheering for the Colts. It’s a long story.”",
+     "set": {
+      "s2e13_canada": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "At breakfast on Dupre Street Josie asked about your girlfriend, at full volume. You said she’s cheering for the Colts; it’s a long story. Lena told Remy she’s real, and to eat his eggs.",
+     "response": [
+      "“She’s cheering for the Colts,” Jack says. “It’s a long story.”",
+      "“The *Colts*.” Remy has to put his fork down. He looks around the kitchen for somebody to share it with and settles on Beau, who is holding the baby and can’t get away. “He brought a Colts fan into this house. On *this* day.”",
+      {
+       "if": "josie_asked",
+       "text": "Josie doesn’t laugh. She looks at Jack across her toast, a long, level look he has only ever had from one other Broussard, a look that says they will settle up later, and when Mémère’s voice comes from the doorway — “*Qui est au Canada?*” — Josie answers without taking her eyes off him. “*Personne,* Mémère.”",
+       "else": "Josie doesn’t laugh. She looks at Jack across her toast, a long, level look he has only ever had from one other Broussard, a look that says they will settle up later, and when Mémère’s voice comes from the doorway — “*Quoi?*” — Josie answers without taking her eyes off him. “*Rien,* Mémère.”"
+      },
+      "The skillet comes to the table. A plate goes down in front of Remy, and a plate goes down in front of Jack, and Lena’s arm is the only part of her in it. “She’s real, Remy,” she says from over his head. “Eat your eggs.”",
+      "Then she’s back at the stove, running water into the skillet so it hisses.",
+      "Celeste comes as far as the kitchen door. “Seven forty-five on the steps,” she whispers. “Mémère doesn’t wait and God doesn’t either.”",
+      "Jude puts the rest of his potato back in the colander, for later."
+     ],
+     "goto": "s03"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“She’s real. She’s in Vancouver for two weeks. She’ll be watching.”",
+     "set": {
+      "s2e13_canada": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "At breakfast on Dupre Street Josie asked about your girlfriend, at full volume. You said she’s real, she’s in Vancouver, and she’ll be watching. Lena said it too: she’s real, Remy. Eat your eggs.",
+     "response": [
+      "“She’s real,” Jack says. “She’s in Vancouver for two weeks. She’ll be watching.”",
+      "Remy laughs harder at that than at anything yet. “*Vancouver*,” he says. “Two *weeks*.” He looks to his sisters for help.",
+      "From the stove, a moment behind it, with her back to the table, Lena says, “She’s real, Remy. Eat your eggs.” She says it to Remy.",
+      "She comes with the skillet and puts a plate in front of her brother, and then one in front of Jack. The eggs have cayenne in them, and green onion cut fine, and she has gone back to the stove while he is still finding a word for that.",
+      {
+       "if": "josie_asked",
+       "text": "Josie has stopped buttering to look at him: a long, level look across her toast that he has only ever had from one other Broussard, a look that says they will settle up later. In the doorway behind her Mémère has caught one word. “*Qui est au Canada?*” Josie turns her head just far enough. “*Personne,* Mémère.”",
+       "else": "Josie has stopped buttering to look at him: a long, level look across her toast that he has only ever had from one other Broussard, a look that says they will settle up later. In the doorway behind her Mémère has caught the noise and none of the words. “*Quoi?*” Josie turns her head just far enough. “*Rien,* Mémère.”"
+      },
+      "From the hall, Celeste: “Seven forty-five on the steps. Mémère doesn’t wait and God doesn’t either.”",
+      "Jack eats his eggs."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s03": {
+   "slug": "SUNDAY · 7:58 AM · OUR LADY OF THE HOLY ROSARY, ESPLANADE AVENUE — THE PEW",
+   "set": {
+    "resolve.jack": "+1",
+    "soul.grace": "+1"
+   },
+   "body": [
+    "The eight o’clock is half full and dressed for two things. Sunday coats go over black and gold in every other pew. An usher at the back has a fleur-de-lis pin in his lapel, and the man beside him, waiting with the collection basket on its long handle, is wearing a Brees jersey under his windbreaker and is not hiding it. Two pews up a baby in a Saints bib is eating the bib. The doors are propped open behind them, and through them Esplanade is gray under its oaks, the neutral ground still wet, a woman in a gold sweatshirt walking a dog on it. The altar is dressed in green.",
+    "Inside the doors, at the font, Lena wets her fingers and holds them back over her shoulder to him, and he touches his own to them and crosses himself with her water, the way his mother does it for his father at the door of the church at home, the Sundays his father comes. Behind him he hears Laney stop walking.",
+    "The Broussards have two pews on the Gospel side, and Mémère has the aisle end of the first, where the kneeler’s leather is worn pale in two places the size of her knees. Celeste stands at the end of the pew and seats them with a touch between the shoulder blades, one at a time, in an order she must have settled on the walk over: Mémère; Jack; Lena; Laney; Theo. Behind them, Tony and herself, Remy, Josie, Jude, Tess, and Beau with Lucille, and at the far end Kevin and Margot. Jack is put between the grandmother and the granddaughter, and he sits where he’s put.",
+    "The bulletin is folded into the missalette in the rack in front of him, the parish name across the top in old church type and under it REV. LUCIEN HÉBERT, PASTOR. Lena tips her head toward him, eyes on the altar. “He baptized all five of us,” she says. “And Lucille, in January. In the third quarter.”",
+    "“Carolina?”",
+    "“Daddy had the radio in his coat.”",
+    "Behind him Tony goes down onto the kneeler like a toolbox set down hard, and before the procession has so much as moved he prays, aloud, loud enough for three pews: “Lord, I wore the bag for You. One and fifteen, I wore the bag. You owe me one.”",
+    "Celeste doesn’t look up from her missalette. Mémère doesn’t turn her head. “*Antoine.*”",
+    "Down the row Laney makes a sound into her hand and tries to turn it into a cough, and it fools nobody, and Lena’s elbow goes into her ribs without the rest of Lena moving at all.",
+    "The organ starts, and they stand. Father Hébert comes up the aisle behind a boy with the cross and two girls with candles: a small man in his seventies with the slight roll in his walk of somebody raised on a levee, in a green chasuble with a Saints pin on it over the heart, and nothing more than the pin. On his way past the Broussard pews he looks them over, both rows, end to end, a farmer at the edge of a field he planted himself.",
+    "A lector in a black-and-gold scarf reads Isaiah: the seraph taking the ember from the altar with tongs and touching it to the prophet’s mouth, and the prophet answering, *Here I am; send me!*",
+    "The cantor gives them the psalm, *In the sight of the angels I will sing your praises, Lord*, and the pew sings it back: Mémère high and cracked and half a beat behind, Laney a beat late and game, Theo moving his mouth, and on Jack’s other side Lena, a third under the tune, finding a harmony of her own down there and staying in it. Jack loses his place in the verse twice.",
+    "The lector reads Paul, the risen Christ appearing to Cephas, then the Twelve, then more than five hundred at once, and *last of all, as to one born abnormally*, to Paul himself. On *abnormally*, two pews up, the baby gives the bib up and starts on its fist.",
+    "Hébert reads the Gospel himself. The crowd pressing on the shore of the lake; Jesus getting into Simon’s boat to have room to talk; then, to Simon, put out into deep water. *Master, we have worked hard all night and have caught nothing* — and Jack, thirty-five hours out of a van, hears it go by — *but at your command I will lower the nets.* The nets fill until they tear. They wave in the other boat, and both boats fill until they start to go under, and Simon Peter falls at Jesus’s knees in among the fish. *Depart from me, Lord, for I am a sinful man.* Hébert reads it without leaning on it and lets it go up into the ceiling with the fans.",
+    "He closes the book and looks out at them with his hands on the ambo. “Half of you have pulled a net,” he says, in a voice from somewhere up the Teche. “The other half married somebody who did.”",
+    "The church laughs, and Tony laughs loudest.",
+    "“Peter knows that lake,” Hébert says. “He knows you don’t catch nothing in deep water in the daytime. He tells the Lord so. He’s right. And he lets the net down anyway, because somebody told him to.” Two pews up the baby says something, and he nods to it. “Some of y’all know what it costs to be right and do it anyway. And when the boat’s going under with fish, what does Peter do? He gets down in the fish and tells the Lord to go away. And the Lord don’t go. Read it again when you get home. He don’t go anywhere. He gives the man a job.” He looks down at the Broussard pews, and at the rest of the black and gold. “This evening some of you will ask God for things He has not promised. Ask Him anyway. He likes to be asked. And if He says no, the gumbo is still good.”",
+    "“*Amen*,” Tony says, a beat early, and the church laughs again, the laugh of people who have said it to each other in kitchens all week.",
+    "The Creed, the gifts going up the aisle, the basket on its long handle working down the rows, the Our Father, with Lena’s hand on the edge of the pew beside his and not touching it, from *Our Father* to *deliver us from evil*, where the priest takes it back.",
+    "At the sign of peace Mémère goes first: a dry hand, small and twice as strong as it looks, a squeeze, “*La paix.*” Then Lena, on his other side, holding hers out."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Peace be with you, Lena.”",
+     "cue": "Lena will remember that.",
+     "set": {
+      "s2e13_peace": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1",
+      "rel.lena.heat": "+1"
+     },
+     "key": "At the sign of peace at Holy Rosary, between Lena and her grandmother, you said: Peace be with you, Lena.",
+     "response": [
+      "“Peace be with you, Lena.”",
+      "Her hand is warm from the pew and has the ridge of a pen callus on the middle finger, and she looks at him for the answer, not at the hand. “And also with you.”",
+      "She doesn’t let go. Around them the church is shaking hands across the pews and over the backs of them, and Lena keeps his hand until Laney leans across her with her own hand out, and only then gives it up, so that Laney can shake it, cool and correct, the handshake for a groomsman she has been warned about. Up at the altar Hébert breaks the host, and the organ starts the Lamb of God."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Just take her hand.*",
+     "set": {
+      "s2e13_peace": "restraint",
+      "trait.control": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "At the sign of peace at Holy Rosary you took Lena’s hand and didn’t say anything. Neither did she.",
+     "response": [
+      "He takes it, and says nothing, and she says nothing back.",
+      "Her hand is warm from the pew. It goes on as long as a handshake can before it has to be called something else, with the church murmuring *peace* all round them in a hundred voices, and it is the organ starting the Lamb of God that ends it, and Laney’s hand coming across Lena’s lap for his, cool and correct, the handshake for a groomsman she has been warned about.",
+      "Lena puts her hand back in her lap, and lays the other one over it."
+     ],
+     "goto": "s03a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Peace be with you, Navigator.”",
+     "set": {
+      "s2e13_peace": "wit",
+      "trait.wit": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "key": "At the sign of peace at Holy Rosary you said: Peace be with you, Navigator. And also with you, Youngstown.",
+     "response": [
+      "“Peace be with you, Navigator.”",
+      "Her mouth goes. She gets it back before it can get anywhere. “And also with you, Youngstown.”",
+      "On his other side Mémère hears *Youngstown* and looks at the altar very hard. Laney is already reaching across Lena for him, her hand out, cool and correct, the handshake for a groomsman she has been warned about, and while he’s still shaking it the organ comes in under them with the Lamb of God. At the far end of the row Theo has his eyes shut tight, the picture of devotion, and his lips pressed together hard."
+     ],
+     "goto": "s03a"
+    }
+   ]
+  },
+  "s03a": {
+   "slug": "SUNDAY · 8:35 AM · HOLY ROSARY — THE LINE",
+   "set": {
+    "went_up_holy_rosary": true,
+    "resolve.jack": "+1",
+    "soul.grace": "+1"
+   },
+   "body": [
+    "Hébert holds the host up over the paten in old fingers that don’t shake. “This is the Lamb of God who takes away the sins of the world. Happy are those who are called to his supper.”",
+    "“Lord, I am not worthy to receive you,” the church says, “but only say the word and I shall be healed,” and Tony behind him says it a word ahead of everybody, and the ushers come up the aisle to start the rows.",
+    {
+     "if": "!absolution_withheld",
+     "text": "The pew empties into the aisle in its order: Mémère, then Jack, then Lena behind him, then Laney. Theo stands with the row and sits back down when it has gone past him, and a minute later Margot comes forward out of the pew behind to sit beside him, the two of them alone in the front pew of the Broussards. When Jack looks back from the aisle, Theo’s hands are on the back of the pew in front of him."
+    },
+    {
+     "if": "!absolution_withheld",
+     "text": "He was absolved on Friday at five past three in the morning, in the confessional two thousand miles behind him, and he goes up. The aisle is old tile, worn to a path down the middle. Mémère’s hat goes ahead of him at the pace of Mémère, behind an old man with a cane who holds his Saints cap over his heart up to the front. At the head of the side aisle Our Lady stands on her plinth with a rosary of real beads hung over her plaster hands. Behind him, at the edge of his eye, the hem of a black dress."
+    },
+    {
+     "if": "!absolution_withheld && skye_told_morning",
+     "text": "Three people from the front, in her voice, exactly: *I want you to be able to.*"
+    },
+    {
+     "if": "!absolution_withheld",
+     "text": "“The Body of Christ.”"
+    },
+    {
+     "if": "!absolution_withheld",
+     "text": "“Amen.”"
+    },
+    {
+     "if": "!absolution_withheld",
+     "text": "He holds out his hands, the left on the right, and Hébert lays the host in them. He takes it with his right hand, a step to the side, and crosses himself, and the quiet comes up through him the way heat comes up through the floor of Nonna’s kitchen in January, from somewhere under the house he has never been down to see."
+    },
+    {
+     "if": "!absolution_withheld",
+     "text": "When he turns up the side aisle Lena is at the front of the line with her chin up, receiving. Behind her Laney has her arms crossed over her chest, a Baptist braced for it, and Hébert puts his thumb to her forehead and blesses her, and calls her *chère*, and Laney comes away from it looking as though she has been handed something and has to decide where to put it. Somewhere behind Laney, Tony says his *Amen* to Hébert loud enough to close a deal."
+    },
+    {
+     "if": "!absolution_withheld",
+     "text": "He goes in past the aisle seat and kneels in his place. Mémère comes back at her own pace and lowers herself onto the end of the pew by the armrest, and gets her beads out. Up the side aisle Lena is coming back with her hands folded and her eyes down, past the Stations and the rack of red votive glasses, the medal out on top of the black dress where it has worked its way loose. She goes in past her grandmother’s knees and past his, and kneels beside him, and her shoulder is against his for the length of the communion hymn, which is one every grandmother in the building knows by heart, so the building sings it. Past her, at the end of the pew, Theo is studying his hymnal with tremendous concentration. It is open to Easter."
+    },
+    {
+     "if": "absolution_withheld",
+     "text": "The pew empties into the aisle past him: Mémère from the end, then Lena and Laney stepping past his knees one after the other. He keeps his place, with Theo and Margot, while the rows go up, and kneels, and watches Tony and Celeste go by, and Kevin from the second pew, and the twins. He doesn’t go up."
+    },
+    {
+     "if": "absolution_withheld",
+     "text": "Lena comes back up the side aisle with her hands folded and her eyes down and goes in past his knees again, and kneels beside him, and her shoulder is against his for the length of the communion hymn, which is one every grandmother in the building knows by heart, so the building sings it."
+    },
+    "Kneeling after, with the hymn going on over his head, there is Mémère’s rosary clicking against the wood on one side, and Lena’s shoulder on the other, and in front of him the green and the gold and the candles, and a small old priest wiping out the chalice with a white cloth and taking his time about it. Under the hymn, barely, he can hear Lena: *Remember, O most gracious Virgin Mary, that never was it known* — and then she goes too low for him."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Pray for Skye. By the name her father gave her.*",
+     "set": {
+      "s2e13_kneel": "sincerity",
+      "trait.sincerity": "+1",
+      "soul.grace": "+1"
+     },
+     "key": "Kneeling after Communion at Holy Rosary you prayed for Skye, by the name her father gave her.",
+     "response": [
+      "*Mary Kate,* he says, inside, once.",
+      "He asks for the day on set to go right, and the wig to sit the way they want it, and the trailer to be warm. He asks that she sleep tonight, wherever they put her, and wake on her own. That’s the prayer. He doesn’t dress it up, and he says it from the first word to the last with Lena’s shoulder against his.",
+      "Up front Hébert sets the chalice down and goes to his chair and sits, and folds his hands on his stomach, and the church sits back with him, kneelers going up all down the nave, one after another, like a row of screen doors."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "tag": "Candor",
+     "text": "*Say Peter’s line, and mean it.*",
+     "set": {
+      "s2e13_kneel": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "key": "Kneeling after Communion at Holy Rosary you said Peter’s line and meant it. Depart from me, Lord.",
+     "response": [
+      "The kneeler is wood under a skin of leather gone hard with use, and his knees ache on it, in the ordinary way.",
+      "*Depart from me, Lord, for I am a sinful man.*",
+      "He says it inside, to the end, and stays down. Nothing comes back. Lena’s shoulder doesn’t move from his. The hymn goes into its last verse. When the people around him sit back, Mémère sits last, pulling herself up by the pew in front, and she gives his sleeve a tug on her way down, as if he’s an altar boy who’s missed the bell."
+     ],
+     "goto": "s03b"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Don’t ask for anything. Say thank you.*",
+     "set": {
+      "s2e13_kneel": "restraint",
+      "trait.control": "+1",
+      "resolve.jack": "+1"
+     },
+     "key": "Kneeling after Communion at Holy Rosary you didn’t ask for anything. You said thank you.",
+     "response": [
+      "*Thank you,* he says, inside, and then, because thank you wants an object: for the van, which got here. For the house, and the steps up to it. For the eggs. For Kevin’s driving sheet and Margot’s Gideon and Mémère’s chicory at a quarter to seven. For this pew, and the old wood, and the old woman on the end of it.",
+      "The next thing on the list has a face, and he stops there.",
+      "Up at the altar the boy with the cross yawns enormously behind his hand, and Hébert sits down in his chair, and the church sits back, and for a while there is only the organ finishing the hymn by itself."
+     ],
+     "goto": "s03b"
+    }
+   ]
+  },
+  "s03b": {
+   "slug": "SUNDAY · 9:00 AM · HOLY ROSARY, THE STEPS",
+   "body": [
+    "Hébert has his hand up for the last blessing and has got as far as *the Father* when somebody at the back, by the holy-water font, says it, not loud: *Who dat.* Somebody answers. By *the Son* it has gone down both side aisles, and Hébert raises his voice to get the Holy Spirit in over the top of it, and the church crosses itself in the middle of a chant, every hand, Mémère’s too. He puts his other hand up to stop it, a crossing guard at three o’clock, and gets nowhere, and he is laughing. “Go in peace to love and serve the Lord,” he says, and *Thanks be to God* comes back at him in the chant’s own time, and the chant goes out the open doors ahead of everybody and down the steps into Esplanade.",
+    "He is at the door when they get there, shaking hands. He takes Lena’s in both of his. “Magdalena,” he says. “You brought a delegation.”",
+    "Then Jack’s hand, and a good long look up at him from under white eyebrows. “You’re the one from Ohio.”",
+    "“Yes, Father.”",
+    "“Hm.” Hébert gives the hand one more shake and lets it go. “Well. You stayed in the house.”",
+    "He has already turned to Laney. “That was a beautiful service, Father,” Laney tells him, Dallas to the bone.",
+    "“Baptists welcome,” Hébert says. “Y’all bring the best casseroles.” And the line moves Jack out into the light.",
+    {
+     "if": "absolution_withheld",
+     "text": "At the bottom of the steps Kevin falls in beside him and puts a hand on his shoulder, and leaves it there a moment, and says nothing.",
+     "else": "At the bottom of the steps Kevin falls in beside him, hands in his pockets, looking at the oaks. “Good to see you up there,” Kevin says."
+    },
+    "Margot comes out behind them into the gray with her notebook already open against her forearm, and writes standing up. “Field note,” she says. “They were on their feet before he dismissed them.”",
+    "Across the street the oaks hold Esplanade over their heads like a roof somebody forgot to finish. Mémère is coming down the steps with Remy on one side of her and Theo on the other, Theo’s arm crooked for her at exactly the height cotillion teaches. And Lena is on the bottom step with her face turned up into the light, what there is of it, with her eyes shut."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "hebert",
+     "title": "Fr. Lucien Hébert",
+     "text": "The pastor at Holy Rosary. He baptized all five of them, Lena says, and he’s the only one in that church who calls her Magdalena. Sunday he preached on Peter in the boat: ask Him anyway; if He says no, the gumbo is still good. At the door he said I stayed in the house."
+    },
+    {
+     "kind": "person",
+     "id": "margot",
+     "title": "Margot Lindqvist",
+     "text": "Margot Lindqvist. Has a folder on me. Called Lena and me useful idiots for Christian nationalism in front of four hundred people. Made a point about the Euthyphro I still can’t answer. Her mother teaches Classics at Reed. Held a wake for a cigarette on the roof and buried it at sea, for the prose. Had a brother. Her mother was forty-one; the test came back; they’d already picked the name. Anders. March 15, 2000. She’s defended her mother in every room since, and she defended her on the roof. Lena said his name. Doesn’t sleep. My friend. She has a faith column now, in the *Tide*, on a trial basis. If it’s boring they’ll kill it. She told me not to be boring. Came to Big Sur as an observer, for the monks — a functioning patriarchy in its natural habitat. Ran the *Tide*’s Ferrer follow-up from a minivan and wrote nothing down. Sunday at the coffee urn: ‘I’m not writing anything down.’ Halloween: Joan of Arc in duct tape, with her own haircut. Best Couple, with Pope Joan. She called it a category error and laughed anyway. Told me I’m surface acting. Hochschild, 1983. The flight attendants. On the stairs, about Julian: ‘He’s the healthiest thing in her life, Costigan.’ She meant it. Alarm Five: twenty-seven days; she’d said twenty-six. Out past one, four nights of six — she doesn’t sleep, she counts. Not writing it down. Sunday: UNEXPLAINED CITRUS. Nineteen on the solstice, four days early, under protest. Likes us. On the record. Lit a candle for research. Took Skye’s side about the rose. Goffman, 1956. Wrote TED in her notebook and underlined it. Gave to Partners In Health and sent the rest of us there — Farmer’s Catholic, sort of. Commented ‘Front stage.’ on my status. Wednesday night in the lounge, while Laney kept it short with Theo: keeping score. A page in her notebook says SKYE. Thursday at the Anchor she interviewed Skye for her column. She hated that it was good. Her column ran Thursday: ‘Front Stage.’ It’s good. I told her twice. Thursday she brought Salinger’s death to the window table like a lab result. Friday in the Fishbowl she took Skye on about the fundraiser: a room raised for a cause, handed to its opposition. Skye said she didn’t hand them the room, she introduced them to me, and she’s still voting for Boxer. Margot gave her one point and kept one. Four versions of Wednesday are going around Delgado, she says. Commented *Back region. Finally.* on the taco picture. Monday night in the Fishbowl: six versions of Wednesday now. One has reached the Classics department. She wouldn’t read me any of them. Thursday night at the van she took the pie on her lap, for science, and told the van about men in some societies who may not speak to their mothers-in-law; everything goes through a third party. Radcliffe-Brown. Then she turned her recorder off. Friday it was eight versions of Wednesday. Then she drove Picacho to El Paso and wouldn’t stop for anything: there’s nowhere to stop, it’s the Chihuahuan Desert. Saturday at sunup she lent me a Gideon from the Santa Lucia Motor Court. Not God. A primary source. Sunday she attended the eight o’clock as an observer. Mémère told her God observes; she could sit. Field note: they were on their feet before he dismissed them."
+    }
+   ],
+   "next": "s04"
+  }
+ }
+}

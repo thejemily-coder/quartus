@@ -2266,3 +2266,44 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **The Dupre Street rules:** boys in the attic (Jack, Kevin, Theo), girls downstairs with Magdalena; Mémère sleeps in the front room where she can see the stairs. Josie knows "my girlfriend, in Canada" (`josie_asked`, steps branch only). Celeste knows Jack carried Lena (and, on [candor], that he knew he had).
 - **Clocks.** WHO DAT is at 1 DAYS (s18), zero on Sunday; the dash clock runs an hour behind Central after the Hudspeth/Culberson line; the drive took 35 hours 40 minutes (Kevin's figure; Theo said thirty, "approximately").
 - **Branch-dependent:** `s2e12_call`, `s2e12_margin`, `s2e12_d1`–`d4`, `s2e12_sa` (theo: s18t, the hill; van: s18v, the copy), `s2e12_talk`, `s2e12_basin`, `s2e12_celeste`, `s2e12_skyecall` (steps: s23s, Josie; attic: s23a, Kevin and Theo), `s2e12_goodnight`, `s2e12_line`.
+
+### S2E13
+> Final revision (see continuity.md S2E13). Branch tags are `[scene | condition]`. Canon is Sun Feb 7 – Mon Feb 8, 2010 (tag Mon 3:50 AM, Esplanade Avenue neutral ground). On Dupre Street, in the pew and at the game, everything said aloud in a room is heard by the people in it unless the entry says otherwise. None of the hidden canon (ledger rows 1–17, the tomb, Memorial) appears on the page, in journals, keys, cues or nextTime.
+
+#### Jack
+- **Learns about the Broussards:** [s02a] the Josie look, Celeste's call and the gloves line. [s03] Hébert baptized all six Broussard children, plus Lucille in January; Jack is counted in "all six of us" at the pew (the Broussard headcount). [s03b | all paths] Mémère calls Hébert "Lucien" and hands Jack to him as "le garçon de l'Ohio"; she had told Hébert that Jack stayed in the house; Hébert says "Odile tells me…". [s04k | `s2e13_noon=="kitchen"`] the roux ("Copper… Laney'd be flattered"), Nonna's gravy is five hours. [s05 | all paths] Clovis is Tony's baby brother (Remy: "Daddy's baby brother"); he built the stairs and named the first Aints in 1980. [s06] Tony, since "short pants," has waited "Forty-three, son."
+- **Learns from Lena:** [s04k | `s2e13_noon=="kitchen"`] she asked where he was at Sully's before the bell picture. [s07b | `s2e13_half=="steps"`] the ice count (Wit) reaches Lena. [s10] Lena in the street; the snow-sky look. [s11n | `s2e13_night=="neighborhood"`] Jack sees Lena air-play "Walking to New Orleans" around the dead F. [s12] "I wanted you here for this. Since September." (said asleep-ish into his shoulder; he keeps his answer to himself).
+- **Learns from the others:** [s06a | `s2e13_ad=="press"`] Margot grants "first decent argument" and that Jack "keeps the mother." [s09 | `s2e13_zero=="sincerity"`] Mémère's French blessing (Lena sees it and will not translate it). [s09 | `s2e13_zero=="charm"`] Celeste kisses his forehead. [s12a] Luc: "Get her home before the sun."
+- **Tells others:** to Skye (call, s06): "How's Canada?"; [`s2e13_kickoff=="sincerity"`] "Love you."; [`candor`] the porch and Tony's voice; to Skye (text, s12): [`sincerity`] "love you. we won. go to sleep" (`said_love_text`), [`wit`] the man on the porch cried on a Grand Am, [`candor`] "wish you could hear it". To Danny (s05): [`s2e13_danny=="candor"`] "It's complicated, Dan." To Josie/the table (s02): [`candor`] his girlfriend is working, [`wit`] she is cheering for the Colts, [`sincerity`] she is in Vancouver for two weeks and will be watching. To Lena: [s07b | `s2e13_ice=="candor"`] the movie line was the worst thing he has ever said to anybody.
+- **Does not know / draws no inference:** that Tony will voice "Love you" only at s07t (he does not hear Tony say it unless `s2e13_half=="porch" && said_love_kickoff`); what Theo's eyes-shut means at s12a.
+- **Does:** [s03a] goes up at Holy Rosary (`went_up_holy_rosary`). [s12a | `resolve.jack>=5`] prays the Hail Mary for the house.
+
+#### Lena
+- **Hears on every path:** [s03] the pew, "all six of us"; [s03b] "le garçon de l'Ohio"; [s06] Jack leaving the room for the kickoff call (she watches the door; she does not hear Skye's side or his; she hears only that he went out); [s10] he is the one she runs to.
+- **From Jack, one to one:** [s03] the sign of peace (her hand; "Navigator" on [wit]); [s04k | kitchen] the table photo or the taco truck or "I know."; [s07b | steps] the ice count [wit], the movie line "the worst thing I've ever said to anybody" [`s2e13_ice=="candor"`], the ice taken from her hands [sincerity]; [s10] his name for her: "Lena." [sincerity] / nothing [restraint] / "Who dat" [wit]; [s11n | neighborhood] the step she teaches him [sincerity].
+- **Sees or hears herself:** [s06 | `s2e13_kickoff=="sincerity"`] nothing of "Love you" (Tony hears it from the porch; Lena does not). [s09 | `s2e13_zero=="sincerity"`] Mémère's French blessing: she saw it and won't translate. [s11n | neighborhood] she air-plays "Walking to New Orleans" around the dead F, and Jack saw her do it. [s12] she sleeps on his shoulder; she says "Since September."
+- **She does not learn (on the page):** Skye's calls or texts in full (s06 she watches the door only); the s12 reply he sends; Skye's trailer; the girl in Canada beyond what the family already heard at breakfast; `promised_skye_truth`; the swing print.
+
+#### Skye
+- **From Jack (phone):** [s06] "How's Canada?" and his side of the kickoff call; [`s2e13_kickoff`] "Love you. Go cheer for the wrong people." / the Colts favored by five / the porch and Tony's voice. [s12] his 3:46 AM reply (see Jack). Her texts: 9:22 PM "WHO DAT" and "i cheered for the wrong people and they lost so im taking full credit. go be loud. tell the man on the porch im sorry" (Jack reads them at 3:44 AM, six hours later; her timestamps show send time).
+- **She says or does herself:** [s06] calls first (Burnaby trailer, 3:30 PM there, six a.m. call times); Kyle's laptop; Cassie's wig; "Is it Sunday?" with the makeup lady's crossword.
+- **She does not know:** that Jack went up at Holy Rosary or prayed for her by name [s03a `s2e13_kneel=="sincerity"`], the roux, Lena running to him in the street, the second line or Bourbon Street, Lena asleep on his shoulder at 3:44, Theo's look, Luc's blessing; Danny's "It's complicated" stays hidden.
+
+#### Others
+- **Tony** — [s06] hears "How's Canada?" on every path (he now knows about the girl in Canada on every path: note for E14), hears "Love you" on [`s2e13_kickoff=="sincerity"`] and voices it only at [s07t | `s2e13_half=="porch" && said_love_kickoff`]; squares the transistor to his face; [s07t] Jack's plate ("All six" / Youngstown / what he will do if they win); [s10] cries on a stranger's green Grand Am (Mississippi plate), the owner in a Shockey jersey patting his back.
+- **Mémère** — [s03b] hands Jack to Lucien Hébert as "le garçon de l'Ohio"; told Hébert Jack stayed in the house; [s09 | sincerity] gives the French blessing; "Two of you are up."
+- **Margot** — [s06a | `s2e13_ad=="press"`] grants Jack "keeps the mother"; [s12a] "threat or a blessing."
+- **Theo** — [s04p] on the parade path: warmth +1; [s12a] sees Jack with Lena on his shoulder, shuts his eyes, says nothing; his phone look cut.
+- **Luc** — [s12a] sees his sister asleep on Jack and the left hand on her ribs; "Get her home before the sun." / "Yes, sir."
+- **Remy** — [s05] tells Jack Clovis is Tony's baby brother; [s04p] boudin stop; [s11q | quarter] trades Jack the Saints hat; "brother-in-law" cut from s08a.
+- **Celeste** — [s02a] the look and the gloves line; [s06] asks about Tony's Sazerac; [s09 | charm] kisses Jack's forehead.
+- **Mémère/Hébert** — Hébert baptized all six Broussard children and Lucille in January.
+- **Hale/Osei** — nothing new this episode.
+
+#### LIVE RISKS carried out of S2E13
+- **Skye in Vancouver.** Tony knows "How's Canada?" on every path; Josie and the table know about "your girlfriend" depending on `s2e13_canada` (and `josie_asked`). Skye does not know about Lena in the street, the sleep on his shoulder, or Theo/Luc at s12a. "Something from Vancouver, at the wrong hour" is owed.
+- **Lena's "Since September."** Jack gave no answer; he keeps it. Do not resolve by narration.
+- **Theo.** His open-then-shut eyes at s12a are unexplained; Theo still has not learned Skye's name (carried) and does not speak at s12a.
+- **Luc.** He saw the hand on his sister's ribs and let it be; the warning is "Get her home before the sun."
+- **Carried from S2E12 and untouched:** the January call, Kevin's "I said leave it alone. In January.", Theo and Laney's "mistake", the swing print and the Cabazon postcard, `promised_skye_truth`, the pool house/hill, `confession_owed` 0.
+- **Branch-dependent:** `s2e13_canada`, `s2e13_peace`, `s2e13_kneel`, `s2e13_noon`, `s2e13_roux`, `s2e13_beads`, `s2e13_danny`, `s2e13_kickoff`, `s2e13_ad`, `s2e13_half`, `s2e13_ice`, `s2e13_tony`, `s2e13_ambush`, `s2e13_zero`, `s2e13_street`, `s2e13_night`, `s2e13_line`, `s2e13_quarter`, `s2e13_reply`.

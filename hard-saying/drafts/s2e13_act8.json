@@ -1,0 +1,195 @@
+{
+  "scenes": {
+    "s08": {
+      "slug": "SUNDAY · 7:15 PM · DUPRE STREET, THE FRONT ROOM — AMBUSH",
+      "set": {
+        "saw_ambush": true,
+        "rel.lena.heat": "+1",
+        "resolve.jack": "-1",
+        "resolve.lena": 3
+      },
+      "body": [
+        {
+          "if": "s2e13_half==\"porch\"",
+          "text": "When he comes in off the porch the teams are already lining up for the second half, and Lena is back on the floor before him, cross-legged in the middle of the rug. The cooler is full at her mother’s feet. There are chips of ice in her hair from the shed, little and bright, and one of them is melting down the side of her neck into her collar. She doesn’t look round. She moves her knee, and the middle of the rug is his again.",
+          "else": "They come in up the hall with the cooler between them, a handle each, and set it down at Celeste’s feet, and sit down on the rug where they were, his knees up, her back against his shins, while in Miami the teams come out for the second half. Lena wipes her wet hands on the knees of his jeans, both of them, thoroughly, and goes on watching the screen."
+        },
+        "The room gets up for the kickoff, because the room gets up for everything now. Celeste stands at her corner of the couch. Remy stands on the arm of it. Clovis is on his feet by the door with his hat in both hands, and Mémère is up out of her armchair on Kevin’s arm with the beads going. Lena comes up off the rug, and he comes up behind her, and through the screen door Tony’s chair scrapes on the porch boards as Tony gets up out there too, with his back to it all.",
+        "On the television the Saints’ punter, who does their kickoffs, sets the ball on the tee at his own thirty and backs away from it and stands with his hand up. The Colts are spread across their half of the field in blue, waiting for it to come to them. He comes up to the ball.",
+        "His foot doesn’t go through it. It goes over the top of it, and the ball comes off the tee sideways, short and low and ugly along the grass, end over end, and takes a bad hop, and jumps up at the Colts’ front line at about the height of a man’s chest.",
+        "Somebody in the room says, “What —”",
+        "Lena turns round. She turns her back on the television and puts her face in his shoulder, hard, and both her fists go into the front of his shirt.",
+        "The ball goes off a blue jersey’s hands, and up, and down into a lot of legs, and the legs come together over it, and then there is no ball, only a heap of men in white and blue at about the forty, and more of them coming in from both sides and diving onto the top of it. Mémère’s beads stop. By the door Clovis puts his hand over Aints III’s eyes.",
+        "And then it goes on. The officials get to the heap and start pulling men off it by the backs of their jerseys, one at a time, and each man comes up out of the pile pointing, a white arm one way and a blue arm the other, both of them sure. The camera goes in close on the bottom of it and finds only elbows. The men in the booth don’t know. The men on the radio, through the screen, don’t know, and Tony is shouting at them to tell him. *Tell me. Tell me. TELL ME.* In the front room on Dupre Street twenty-some people and a dog stand with their mouths open and make no sound at all, and in the quiet Jack can hear the box fan going round up in the attic, where it has been going since six this morning.",
+        "“Tell me,” Lena says, into his shirt. “Jack. Tell me.”",
+        "He can’t. He has his hand on the back of her head, and the pencil through her hair is against his palm, and he’s watching a man in a striped shirt on his knees with both arms in the bottom of a heap of men, feeling around in there.",
+        "The striped shirt stands up. He points.",
+        "The graphic comes up in the corner of the screen, SAINTS BALL, and out of the bottom of the pile a man in white comes up with it in his arms, and a name goes across the bottom of the picture, REIS, and the house on Dupre Street goes up like a shook bottle.",
+        "Remy comes off the arm of the couch onto the coffee table, and the coffee table holds. Clovis’s hat goes up and hits the ceiling fan. Celeste’s whisper comes up out of her for the first time all weekend at its real size, and its real size is a scream. Tony is at the screen door with his radio in one hand and the other hand spread on the screen, howling through it at the room he won’t come into, and the twins come out from under the dining table on their knees, and Aints III is barking at everything, and on the floor by the television Lucille wakes up in her black-and-gold cap and is furious with every one of them.",
+        "In the noise Lena comes up out of his shoulder laughing. She’s up on her toes, laughing into his collar, both fists still full of his shirt, and his arms are round her, one hand between her shoulder blades and the other low on her back where her shirt has come untucked, and the side of her face is against his neck, wet. His breath has gone out of him and not come back. His face is hot, and getting hotter, and it comes up into him like the heat off a pour in the stories the old Sheet & Tube men tell after Mass at St. Brigid’s: on your face first, and your eyes shut after. A piece of her hair has come down out of the pencil and is caught in the stubble along his jaw, and it smells of the cold out by the shed and of Mémère’s kitchen, and every time she laughs it pulls."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "Hold on.",
+          "set": {
+            "s2e13_ambush": "sincerity",
+            "trait.sincerity": "+1",
+            "rel.lena.heat": "+1"
+          },
+          "key": "At the onside kick to open the second half, when the house went up, you held on to Lena a second longer than the room did.",
+          "response": [
+            "All over the room people are letting go of each other, Remy of Clovis, Celeste of the couch, Kevin of Mémère’s elbow. He keeps her. Her laugh runs down into his collar and stops there, and she lets him."
+          ],
+          "goto": "s08a"
+        },
+        {
+          "tag": "Restraint",
+          "text": "Let go first.",
+          "set": {
+            "s2e13_ambush": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "At the onside kick to open the second half, when the house went up, you let go of Lena first. Her hand stayed in your shirt.",
+          "response": [
+            "He takes his hands off her back and puts them down at his sides. Hers doesn’t move. She stands there on the rug in the uproar with her face turned to the television and a fistful of his shirt front still in her hand, and keeps it."
+          ],
+          "goto": "s08a"
+        },
+        {
+          "tag": "Reckless",
+          "text": "Lift her off the floor.",
+          "set": {
+            "s2e13_ambush": "reckless",
+            "trait.reckless": "+1",
+            "rel.lena.heat": "+1"
+          },
+          "key": "At the onside kick to open the second half, when the house went up, you lifted Lena off the floor. Remy yelled brother-in-law, and it covered everything.",
+          "response": [
+            "He gets his arms round her and lifts, and her socks come up off Mémère’s rug, and she shrieks right in his ear. From the top of the coffee table Remy points his beer at the two of them and roars, “BROTHER-IN-LAW!” and the room roars it with him, at the television, at the dog, at Miami, and it covers everything."
+          ],
+          "goto": "s08a"
+        }
+      ]
+    },
+    "s08a": {
+      "slug": "SUNDAY · 7:17 PM · DUPRE STREET, THE KITCHEN — THE SINK",
+      "body": [
+        {
+          "if": "s2e13_ambush==\"reckless\"",
+          "text": "He sets her down. Remy is still yelling it, at Clovis now, and at the dog."
+        },
+        {
+          "if": "s2e13_ambush==\"restraint\"",
+          "text": "Her hand comes out of his shirt. She smooths the place where it was with two quick strokes, and turns back to Miami."
+        },
+        {
+          "if": "s2e13_ambush!=\"reckless\" && s2e13_ambush!=\"restraint\"",
+          "text": "He lets go when the room does, a second after."
+        },
+        "He goes for ice.",
+        "The cooler is full of it, at Celeste’s feet, and he steps round it on the way. Up the hall, past the bedrooms with their doors open on dark beds and coats, past the bathroom with a jelly jar of toothbrushes on the sink, into the kitchen, where every light is on.",
+        "It’s too bright in here after the front room. The overhead and the light over the stove both burn on an empty room: Mémère’s big pot on the back burner with the lid cocked and her spoon laid across it, the gumbo gone down dark and low; a stack of bowls in the drainer; the paper towels; the Community Coffee can; a calendar from Broussard’s Seafood on the side of the refrigerator, still on January. The window over the sink is open its crack on the yard. Out there it’s black, and the shed is a pale shape at the back of the black, under the oak.",
+        "He puts both hands on the edge of the sink.",
+        "It’s an old double sink, white enamel over cast iron, chipped down to the black at the corner by the faucet, and the edge of it is cold and still wet from somebody’s bowls. He grips it. He turns on the cold tap, and the water comes down hard into the empty side and roars in the iron, and he doesn’t put his hands under it. He stands with his hands on the edge of the sink and watches the water go down the drain.",
+        "Up the hall the front room is roaring at every yard. A pass, and the house yells. A run, and the house yells. Mémère says something in French, sharp, and the room laughs.",
+        "His knuckles have gone white along the edge of the enamel. He looks at them. In the window glass over the sink, laid over the dark yard by the kitchen light, there is a man with his head down and his hands on a sink, and he doesn’t look at the man. He looks past him, at the shed.",
+        "He shoves at the sink, once, with both arms, as if it might move. It’s cast iron, bolted into a house three brothers put back together by hand, and it doesn’t. The water goes on running. He stands with his arms locked and his head down between his shoulders and lets the water run, and the edge of the enamel cuts a line across the heels of both his hands, and he leaves them there till it hurts, and longer.",
+        "From the front room, over everything, over the television and Remy and the dog, her voice:",
+        "“They’re *driving*, Youngstown —”",
+        "He turns the water off. He wipes his hands down the front of his jeans and goes back up the hall.",
+        {
+          "type": "break"
+        },
+        "They are driving. He gets back to the rug in time to see Brees throw short, nothing to it, to Pierre Thomas out on the edge of things, and Thomas turn up the field with three men in front of him and follow them into the end zone, sixteen yards, while the front room comes apart. 13–10, and for the first time in forty-three seasons the Saints are ahead in a Super Bowl.",
+        "Mémère puts her beads to her lips. “*Merci*,” she says, to the ceiling.",
+        "The Colts take the kickoff and go the length of the field straight back at them, the same straight line as the first quarter, Manning at the line with his hands going, and Addai runs it in from the four, and it’s 17–13 Colts, and the room sits down hard on everything in it, the arm of the couch, the footstool, the dog.",
+        "Late in the quarter Hartley trots out again, from forty-seven this time. Under the dining table Josie has both hands over Jude’s eyes, and Jude has both of his over hers. It goes through with room to spare. 17–16.",
+        "Lena is up on her knees on the rug for the kick. When it’s through she sits back down, and back, into him, and settles there against his chest as if she’d never got up."
+      ],
+      "next": "s09"
+    },
+    "s09": {
+      "slug": "SUNDAY · 8:10 PM · DUPRE STREET, THE FRONT ROOM — THE FOURTH QUARTER",
+      "body": [
+        "The fourth quarter comes on with the house on its feet, and doesn’t let it sit back down. Through the screen door the porch light is on over Tony’s head, and up and down Dupre Street every open door has the same green field in it, and the same quiet.",
+        "Early in the quarter the Colts stall and send out their old kicker from fifty-one yards. Mémère closes her eyes. The ball goes up, and drifts, and goes wide, and the house yells at it the length of its fall.",
+        "Clovis takes his hat off and holds it to his chest. “God bless that man’s family,” he says, with real feeling.",
+        "The Saints get the ball back on the long side of the field and go down it short, short, short: a pass to the flat, a pass over the middle, a pass to the flat again, Brees throwing to whoever is standing still, and the room stops calling it out and only breathes in when the ball goes up and out when it comes down. At the two he throws to the tight end in the end zone, the big one, Shockey, and Shockey has it, and the house goes up for it, and Remy kisses the television again, and this time Celeste lets him. 22–17.",
+        "They go for two. Brees throws to Lance Moore in a crowd at the goal line, and Moore goes down with the ball stretched out in front of him, and on the way down a Colt knocks it out of his hands, and the official waves it off. Incomplete. The yell turns over in the room halfway out and dies.",
+        "On the sideline Payton has a red flag in his hand, and he throws it.",
+        "And so they wait. The referee goes over to the replay booth at the side of the field and puts his head into the hood, and on the television the same two seconds of Lance Moore go by forward and backward and forward again in slow motion, the ball in his hands over the line, the ball not over the line, the ball over the line, while the front room stands with its hands on its head. Mémère has the beads in both fists, knuckles white, going at a pace Kevin has stopped trying to match.",
+        "Lena is up on her knees on the rug with her hands clasped in front of her mouth. “I have never asked You for one thing about football,” she says, with her eyes shut. “Not one thing.”",
+        "“*Ah, non?*” says Mémère, without opening hers.",
+        "“Not *this year*.”",
+        {
+          "if": "s2e12_sazerac==\"reckless\"",
+          "text": "Celeste leans down the couch toward Kevin on his dining chair, low, the house’s business voice. “Kevin, baby. You’re the medical authority. Can the Ohio boy have another Sazerac?”",
+          "else": "Celeste leans down the couch toward Kevin on his dining chair, low, the house’s business voice. “Kevin, baby. You’re the medical authority. Can Tony have another Sazerac?”"
+        },
+        "Kevin doesn’t take his eyes off the hood. “Respectfully, not until the ruling.”",
+        "The referee comes out from under it. He walks out to the middle of the field and turns on his microphone, and the house goes silent to hear him, and whatever he says, the official behind him has both arms straight up over his head, and the house can’t hear the rest for itself. 24–17. Aints III howls, and Clovis howls with him.",
+        "Then Manning gets the ball back with five and a half minutes on the clock and starts down the field the way he has been going down it all night, in a straight line, short, sure, his hands going at the line, and the room stands up and stays up. Through the window Jack can see Tony on the porch on his feet with the transistor held up a foot from his face, shouting at it to do something about Indianapolis.",
+        "Somewhere around midfield Lena’s hand is in his.",
+        "He doesn’t know which of them did it. He doesn’t look down at it, and she doesn’t. They stand on the rug with their fingers laced, and their eyes on Miami, and her thumb going back and forth across the back of his hand, over the knuckles, every time Manning takes the snap.",
+        "Third down. Manning drops back and throws for Wayne, short, and a Saint has stepped into the space between them, and takes the ball in stride, and is gone.",
+        "Theo sees it first. From the far end of the couch, hoarse, a full second ahead of the house:",
+        "“*PORTER* —”",
+        "And then everybody. Tracy Porter goes down the sideline with the ball in his arm and no one in blue within ten yards of him, past the forty, the thirty, Manning himself coming across at him and going down on the grass too late, and the twins are screaming, and Clovis is screaming, and Celeste is screaming with Remy on her back, and Laney has both arms round Theo’s neck and is screaming straight into his chest, and Porter crosses the goal line and keeps going, and on the screen the clock in the corner reads 3:12.",
+        "Through the window, on the porch, under the light, Tony is down on his knees on the boards with his hands over his face and the radio in his lap.",
+        "Lena has turned to Jack with both his hands in hers and is shaking them, up and down, hard, like a pump handle, shouting something at him he can’t hear and doesn’t need to.",
+        "Hartley kicks the extra point. 31–17. The last three minutes the room stands for. The Colts come back down the field anyway, because they’re the Colts, all the way to the shadow of the goal line, and the house holds them there, every soul in it, Mémère with her beads up in the air like a fist. On fourth down the pass falls on the grass, and it’s the Saints’ ball, and Brees comes out and takes the snap and goes down on one knee with it, and the clock runs down, and the room counts it with the television, in English and in French.",
+        "Zero.",
+        "Saints 31, Colts 17.",
+        "On the television there is confetti coming down over the field in Miami, and in the middle of it Brees is standing with his baby son in his arms, a little boy in a pair of big ear protectors, looking up at all of it falling.",
+        "On the floor by the television Tess holds Lucille up to the screen with both hands under her arms, so she can see."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "Find Mémère first.",
+          "set": {
+            "s2e13_zero": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "When the clock hit zero you found Mémère first. She took your face in both hands and said something in French nobody will translate.",
+          "response": [
+            "She is still in front of her armchair with Kevin’s arm under her elbow, very small in the uproar, and he gets across the room to her through Remy and the coffee table and the dog. She looks up at him. She puts the beads in Kevin’s hand and takes Jack’s face in both of hers, dry, cool, strong, and pulls it down to her level, and says something to him in French, low and fast and a good deal of it.",
+            "“*Bon garçon*” is the only part he gets. Lena, when he asks her, will refuse to translate the rest.",
+            "Mémère lets go of his face and pats it. Remy and Clovis come and take her by an elbow each, and she lets them, and the front room picks the two of them up with everyone else and carries them out the front door."
+          ],
+          "goto": "s10"
+        },
+        {
+          "tag": "Wit",
+          "text": "Find Kevin.",
+          "set": {
+            "s2e13_zero": "wit",
+            "trait.wit": "+1"
+          },
+          "key": "When the clock hit zero you found Kevin. He took your pulse, for the record.",
+          "response": [
+            "Kevin is on his feet by Mémère’s chair with the rosary still wound round his hand, and when Jack gets to him he takes Jack’s wrist without a word and puts two fingers on the inside of it, and looks at his watch.",
+            "Kevin counts. The house goes off around them.",
+            "“You’re fine,” Kevin says. He keeps the fingers there. He looks up from the watch at Jack’s face. “You’re *not* fine.”",
+            "Celeste is at the door with it hooked open on her hip, shooing the room through it with both hands like chickens. “Out. Out. Everybody out,” she whispers, and everybody goes."
+          ],
+          "goto": "s10"
+        },
+        {
+          "tag": "Reckless",
+          "text": "Out the door with Remy.",
+          "set": {
+            "s2e13_zero": "reckless",
+            "trait.reckless": "+1"
+          },
+          "key": "When the clock hit zero you went out the front door with Remy before anybody, and the whole street came with you.",
+          "response": [
+            "Remy is already going, and Jack goes with him, through the screen door so hard the spring sings, past Tony on his knees, and Remy reaches down on the way and takes the radio out of his father’s lap and holds it up over his head with the WWL man’s voice coming out of it cracked and gone. They take the steep steps three at a time, Remy riding the rail for the bottom half, into Dupre Street, and every door on the block opens at once behind them and lets out everybody inside it."
+          ],
+          "goto": "s10"
+        }
+      ]
+    }
+  }
+}

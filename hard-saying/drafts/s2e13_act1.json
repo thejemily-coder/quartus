@@ -1,0 +1,103 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "SUNDAY · 6:40 AM · N. DUPRE STREET, THE ATTIC → THE FRONT ROOM",
+   "set": {
+    "resolve.lena": 3,
+    "resolve.jack": "+1",
+    "s2e13_on": true
+   },
+   "body": [
+    "The light gets into the attic gray, through the gable window and the blades of the box fan, which chop it on the way in and lay it across the mattresses in slats. Over Jack’s face the nails come down through the roof deck in rows, an inch of point apiece, and every point holds its own bead of cold. The fan is still on the louder of its two settings. It pulls Dupre Street in over him a piece at a time: a dog two yards down, a screen door on a spring, a car that won’t turn over and then does.",
+    "By the hatch, Kevin’s sleeping bag is rolled tight and squared to the edge of the boards, with his pillow set on top of it like a lid. Theo is asleep on the middle mattress with his mouth open and one arm off the side, knuckles on the floor, in a T-shirt that cost more than the fan.",
+    "Margot has the Gideon downstairs. Jack lies on his back under Remy’s Tiger and says the penance from memory, lips moving, the sound kept down in his chest.",
+    "*He summoned the Twelve and began to send them out two by two.* The rafters over him are rough-sawn and dark with old heat. *He instructed them to take nothing for the journey but a walking stick* — no food, no sack, no money in their belts. *They were, however, to wear sandals but not a second tunic.*",
+    "The next verse is right behind it. *Wherever you enter a house, stay there until you leave from there.* The rest comes after it in order, the dust shaken off the feet at the door of any place that won’t have them, the oil, the sick made well, and he says it through to the last word and lies there under the nails with the fan going.",
+    "He’s in one. Under the mattress it creaks once, somewhere down in the walls, and settles.",
+    "The attic stairs are closer to a ladder than to stairs, and he takes them backward in his socks with his boots in one hand. At the foot of them, in the front room, Mémère is in her armchair with the lamp on and her beads going, dressed for the eight o’clock at a quarter to seven: a black dress, a black cardigan buttoned to the collar, a small black hat with a long pin run through it, and on the cardigan a gold fleur-de-lis no bigger than a thumbnail. Behind her the daybed is made up tight, the spread turned square under the pillow, and the big television across the room is dark, with a fistful of Carnival throws, gold and purple, hung over one corner of it. The beads in her hand stop.",
+    "“*Bon.*” They start again under her thumb. “One of you is up. The other two sleep like Protestants.”",
+    "Past her shoulder, through the front window, Dupre Street is gray and shut, with every porch light on the block still burning, and the Odyssey sits at the curb with its back glass to the house. WHO DAT · 1 DAYS, in white, the way it came in from Texas. Somebody has drawn a 0 over the 1 in lipstick, a dark gold-brown, the stroke heavy where it started and thin where it closed. On the porch rail a lipstick tube stands on its end with the cap off.",
+    "“Coffee’s on the stove,” Mémère says. “Bring me one. Then you sit.”",
+    "The kitchen has only the light over the stove. The coffee is in an old drip pot on the back burner, the enamel chipped down to the iron at the spout, and when he tips it the chicory comes out black, smelling half of chocolate and half of something burnt on purpose. The cayenne tin stands next to the salt. On the parish calendar by the phone, St. Jude is still holding up January. He takes two cups off the drainboard, one from Broussard’s Seafood and one from a bank in Baton Rouge, and brings her the one without the chip.",
+    "She points hers at the end of the daybed. He sits on it, with his boots on the rug between his feet.",
+    "“What does your mama cook on Sunday?”",
+    "“Gravy. Sauce. My grandmother’s. At two o’clock.” At home it’s on the stove by nine, and Nonna stands over it from then till two with the wooden spoon, like a crossing guard who doesn’t trust the cars.",
+    "“*Bon.*” She drinks. “Your daddy goes to Mass?”",
+    "Jack looks into his cup. “Sometimes.”",
+    "“Sometimes is a lot of men.”",
+    "She says something to herself in French, short, with a nod at the end of it — *Trop maigre. Mais il se lève, celui-là.* — and doesn’t put it into English for him. He drinks his coffee. It’s the first hot thing he’s had since the gumbo, and he can feel exactly where it goes.",
+    "In the inside pocket of the Carhartt, against his ribs, the RAZR goes twice.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "light rain. 7 degrees",
+     "time": "6:58 AM"
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "forecast: your game",
+     "time": "6:59 AM"
+    },
+    "She has a six o’clock call in Burnaby; she’ll be in the makeup chair by now, with somebody pinning her hair flat for Cassie. A report means she misses him. A forecast means she’s going to, later. *Your game* is new.",
+    "Mémère watches him read it the way she’d watch a dog in church."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*gray. 50. mid city. a lady in a hat pin is watching me drink coffee*",
+     "set": {
+      "s2e13_dawn": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "gray. 50. mid city. a lady in a hat pin is watching me drink coffee",
+       "time": "7:02 AM"
+      },
+      "Mémère taps the side of his cup with one fingernail. “Drink it while it’s hot. It don’t get better waiting.”"
+     ],
+     "goto": "s02"
+    },
+    {
+     "tag": "Wit",
+     "text": "*forecast: who dat. 100 percent*",
+     "set": {
+      "s2e13_dawn": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "forecast: who dat. 100 percent",
+       "time": "7:02 AM"
+      },
+      "Mémère says something to the window in French, and then, in English: “Hm.”"
+     ],
+     "goto": "s02"
+    },
+    {
+     "tag": "Candor",
+     "text": "*gray. 50. i miss you*",
+     "set": {
+      "s2e13_dawn": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "gray. 50. i miss you",
+       "time": "7:02 AM"
+      },
+      "She holds her cup out for more without looking at him, and he goes."
+     ],
+     "goto": "s02"
+    }
+   ]
+  }
+ }
+}

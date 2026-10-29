@@ -383,6 +383,13 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 222. **"Since [waypoint]" as a clock device** ("since Picacho," "since the Rincon," "since Sonora"). At most 4 an episode.
 223. **"The dark" doing things, or "the van" reacting as a chorus** (S2E12). At most 2 each an episode.
 224. **Lena and Skye sharing stage and wardrobe figures** (S2E12: the fight let Lena talk in Skye's showbiz register). Give Lena church and kitchen figures, and Jack mill figures.
+225. **A "found somebody else" callback for a crowd extra** (S2E13: the woman in the nightgown at s10). Once only.
+226. **"Hears it over [instrument]" as a loudness marker** (S2E13: "a laugh he can hear over the trumpet"). Max 1.
+227. **"At a volume that carries to [place]"** (S2E13). Max 1.
+228. **The network "letting go of everything it has been holding"** (S2E13, the jammed phone network). Once per episode.
+229. **"A look he has only ever had from one other Broussard"** (S2E13). Once.
+230. **Tony squaring the transistor to his face** (S2E13). Max 3 per episode.
+231. **"Since [waypoint]" in narration, where the narration (not a character) marks time from an earlier moment** (S2E13; the narration cousin of #222). Max 4 an episode.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

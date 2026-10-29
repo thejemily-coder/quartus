@@ -1,0 +1,147 @@
+{
+  "scenes": {
+    "s04": {
+      "slug": "SUNDAY · 10:40 AM · DUPRE STREET, THE PORCH",
+      "body": [
+        "Remy has a milk crate on the top step with a twin on either side of it, and he is packing it for the day: grocery sacks folded small, two pairs of work gloves, a roll of duct tape, and a stuffed alligator in a Saints helmet, unexplained. He has a black-and-gold tie knotted loose over a T-shirt. The block is already loud. Two houses down a man is standing on his porch rail to hang a flag, and a radio across the street is running the same pre-game half a second behind another one up the block.",
+        "“Carrollton’s rolling at eleven,” Remy says. “King Arthur at noon. Both an hour early, on account of the game.” He points the duct tape down the porch like a roll call. “I got room for the twins, the redhead, the rich one and the professor.”",
+        "“I’m a sophomore,” Margot says.",
+        "“Professor.”",
+        "“I’d prefer *patron*,” says Theo, from the rail.",
+        "Laney already has her sunglasses on her head. “It’s *copper*, and I will fight you on a public street.”",
+        "“See, that’s a redhead talking.” Remy tapes the alligator’s helmet on tighter. Josie picks the lipstick tube up off the porch rail, caps it, and puts it in her pocket. Jude is already at the bottom of the steps by Remy’s car with his hands in his jacket.",
+        "Kevin is on the swing beside Mémère with a borrowed rosary across his knees. She claimed him for eleven o’clock somewhere between the church and the car, and he hasn’t argued. Now she puts her foot down on the boards and stops the swing.",
+        "“The gumbo tonight wants a roux,” she says. And then, with a turn of her head toward the house: “And Magdalena makes the roux.”",
+        "Lena is in the screen door. She’s out of her church clothes and into an old black T-shirt over a gray thermal, and she is pushing the thermal’s sleeves up her forearms, the left and then the right, past the elbow.",
+        "From somewhere down the hall, not loud, in a voice every Broussard on the porch hears anyway, Celeste says she needs hands for the trinity.",
+        "“Lose a twin, Remy,” Lena says, “and don’t come home.”",
+        "“Which twin?”",
+        "“Me,” says Josie. “Obviously.”"
+      ],
+      "choices": [
+        {
+          "tag": "The parade",
+          "text": "Go Uptown with Remy.",
+          "set": {
+            "s2e13_noon": "parade"
+          },
+          "goto": "s04p"
+        },
+        {
+          "tag": "The kitchen",
+          "text": "Stay. Somebody has to cut the onions.",
+          "set": {
+            "s2e13_noon": "kitchen"
+          },
+          "goto": "s04k"
+        }
+      ]
+    },
+    "s04k": {
+      "slug": "SUNDAY · 11:00 AM · DUPRE STREET, THE KITCHEN — THE ROUX",
+      "music": "Harry Choates — “Jole Blon”",
+      "set": {
+        "made_roux": true,
+        "rel.lena.warmth": "+1",
+        "rel.lena.friction": "-1"
+      },
+      "body": [
+        "The kitchen smells of flour going brown in hot oil, raw onion, the andouille on Celeste’s board, and the chicory still keeping warm on the back burner from seven o’clock. The window over the sink is open a crack on the side yard. On the front burner sits a black iron pot that has been black since Eisenhower, with the flame under it turned down to a low blue fringe, and Lena stands at it with a wooden spoon worn flat along one side, down to a straight edge, by somebody dragging it across the bottom of that pot for longer than Lena has been alive.",
+        "Mémère has had a kitchen chair carried to the doorway and set down facing in, where she can see the stove and, by turning her head, straight down the hall to the foot of the attic stairs. Kevin is on a step stool in the hall behind her. Celeste is at the counter by the sink taking chicken thighs off the bone, three cuts to a thigh, quick and clean. Jack has the table: a cutting board, Celeste’s second-best knife, and a hill of yellow onions, green bells and celery that he is going to be at for some time. On the windowsill a boombox the size of a car battery has WWL on low, two men arguing about the Colts’ secondary as if one of them had money on it.",
+        "The rosary starts at eleven sharp. Mémère says the first half of every Hail Mary in French — *Je vous salue, Marie, pleine de grâce* — and Kevin answers with the second half from the hall in English, and at the stove Lena answers in French, just above a whisper, *Sainte Marie, Mère de Dieu*, without the spoon missing a turn. Jack answers in English, low, with the knife going. Between the third Glory Be and the next Our Father, Mémère leans forward on her chair and looks at his board.",
+        "“Smaller. *Plus petit.* You cut like a man from Ohio.”",
+        "“I am a man from Ohio, ma’am.”",
+        "“*Plus petit.*” And the Our Father, in French, from the top.",
+        "When the last decade is done and the Salve Regina after it, Kevin folds the beads into his shirt pocket and carries his stool off to the front room. Mémère crosses herself and points her own beads at the windowsill.",
+        "“Céleste. Those men talk like they’re paid by the word.”",
+        "Celeste rinses her hands, dries them, and turns the men off. Out of a shoebox on the sill she takes a cassette with GUMBO on the label in blue ballpoint, and puts it in, and pushes the button down with her thumb.",
+        {
+          "if": "e8_dance==\"waltz\"",
+          "text": "Tape hiss first, and then a fiddle, high and scratchy and in a hurry, and a man hollering in French over the top of it. He knows this one. He knows the steps. At the stove Lena’s spoon keeps its time around the pot.",
+          "else": "Tape hiss first, and then a fiddle, high and scratchy and in a hurry, and a man hollering in French over the top of it. He knows this one. At the stove Lena’s spoon keeps its time around the pot."
+        },
+        "In the doorway the toe of Mémère’s house shoe finds the time on the linoleum, one hard and two soft, and keeps it. Celeste, back at her board, says, “Bells next, baby. Then the celery.” He starts on the bells.",
+        "“What does your grandmother start with?” Lena asks, with the spoon going.",
+        "“Garlic in olive oil,” he says. “Low. If it goes brown she throws it out and starts over and doesn’t speak to you till Tuesday.”",
+        "“And then?”",
+        "“Then the tomatoes, and then six hours. Nonna goes to the seven o’clock. The pot goes to the ten with my mother.”",
+        "Lena laughs, high and surprised, into the steam, and the spoon jumps and goes on. Mémère wants to know what was funny, and Lena tells her in French, and Mémère hears it out and turns to Jack.",
+        "“Italian,” she says. “*Bon.* They cook.”",
+        "By the time the bells are done the roux has gone from the white of paste to something like a biscuit, and the smell has turned to toast. Lena reaches across Celeste’s board for a coin of andouille, and Celeste raps her knuckles with the back of the knife, and she eats it anyway. “Blond,” she says, chewing. “Now it starts being worth something. Now’s when people get bored and go answer the phone, and come back, and it’s black, and they cry, and they have to start over, and everybody at Thanksgiving knows.”",
+        "“What if the house is on fire?”",
+        "“You carry the pot out on the lawn and keep stirring,” she says. “And you pray for Remy.”",
+        "Mémère says something long in French, very pleased with it. There’s a word in the middle of it that sounds like *escalier*, and at the end her hands come up off her lap together and make the shape of a long gun.",
+        "“She says the stairs are steep,” Lena says.",
+        "Mémère looks straight at Jack. “I said, in my day, a boy carried a girl up those stairs, he married her or her daddy shot him.”",
+        "“*Mémère.*”",
+        "“Nobody’s shooting anybody before kickoff,” Celeste says, and doesn’t stop cutting.",
+        "Jack keeps cutting. The celery under his knife gets a good deal smaller than anybody asked for.",
+        "Halfway to done, Lena shakes out her right arm from the shoulder down and says, “Come here.” He wipes his hands on his jeans and comes. She puts the spoon in his hand and doesn’t let go of it. Her hand is over his, hot from the stove and dry with flour, and she takes him across the bottom of the pot and around the edge and across again, two strokes, three, so he gets the speed of it from her wrist instead of from being told.",
+        "“You never stop,” she says. “If you stop, it burns, and you start over.”",
+        "Then her hand is gone, and the spoon is his. He keeps it going. She stands at his shoulder and watches the pot. The heat comes up off the iron into both their faces, and a fleck of roux jumps the rim and lands on the back of his wrist and sticks there and goes on cooking.",
+        "“Cajun napalm,” Lena says. “Don’t touch your face.”",
+        "He doesn’t. He stirs. The flat edge of the spoon scrapes the iron on every pass, a dry sound under the wet one of the oil, and inside five minutes he understands about her arm. “Figure eights,” she says. “You’re leaving the edge. The edge is where it catches.” She reaches past him and turns the flame down a hair, and her forearm lies across his wrist while she does it, and then it doesn’t. At Nonna’s stove you get the elbow, where she can grab the spoon back off you. Lena has taken the shoulder. It is against the back of his arm, and every time the spoon comes round the near side of the pot it comes round toward her. She has put her hair up with a pencil through the knot, and the steam has got at the loose pieces by her ear. The fiddle goes on with its grievance. The roux goes from biscuit to peanut butter while he watches it, and the smell goes deep and nutty, like the bottom of a bag of something good, and she says “Peanut butter,” to confirm it, and doesn’t move from his shoulder.",
+        "Celeste comes past behind them with the cut-up chicken in a bowl on her hip, and on her way to the other burner she sets a hand flat between Jack’s shoulder blades, the way you’d steady a ladder, and takes it away again.",
+        "When it’s past peanut butter and still going darker, Lena leans in over the pot and looks. “Pew,” she says. “Ours. Gospel side.” She reaches over his hand and takes the spoon back. “Give it here. The end’s mine.” He gives it. She steps into the place he was standing, and he steps back to the table and his board, and she has the spoon going before his hand is off it.",
+        "She brings it the rest of the way herself. The spoon goes faster at the end, not slower, and she leans into it from the shoulder with her feet set wide on the linoleum and her lips moving on something, a count or a prayer, that he can’t make out from the table. Under her it goes darker than it ever went under him. The kitchen smells like pecans roasting. Celeste slides the bowl of chicken onto the counter at her elbow, and Mémère leans forward in the doorway with her hands folded on her beads to watch the color, and the tape gets to the end of one waltz and starts another one just like it.",
+        "Low, under the fiddle, with the spoon going round:",
+        "“I asked where you were. At Sully’s. Before the kickoff.”"
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“I saw the picture. You on the table, with the bell.”",
+          "cue": "Mémère noticed.",
+          "set": {
+            "s2e13_roux": "candor",
+            "said_saw_table": true,
+            "trait.candor": "+1",
+            "rel.lena.trust": "+1",
+            "rel.lena.heat": "+1"
+          },
+          "key": "Over the roux Lena said she’d asked where you were, at Sully’s, before the kickoff. You told her you saw the picture: her on the table with the bell.",
+          "response": [
+            "“I saw the picture,” he says. “You on the table, with the bell.”",
+            "Her spoon stops.",
+            "“*Remue!*” says Mémère from the doorway, sharp as a slap on the hand, and Lena stirs. From then on Mémère doesn’t look at the pot any more. She looks at Jack, through the rest of the tape and the last of the roux, with her beads quiet in her lap.",
+            "“*Chocolat*,” she says at last. “Stop when it’s *chocolat*.” It is. Lena puts the spoon back in his hand — “Stir.” — and takes the board off the table and tips the trinity into the pot all at once. It goes in with a hiss like a rain squall on a tin roof, and a cloud comes up off the iron and fogs the window over the sink, and the side yard goes out of it, and the fiddle plays on the other side of the glass."
+          ],
+          "goto": "s05"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“I was at a taco truck. I’m sorry I missed it.”",
+          "set": {
+            "s2e13_roux": "sincerity",
+            "trait.sincerity": "+1",
+            "rel.lena.warmth": "+1"
+          },
+          "key": "Over the roux Lena said she’d asked where you were, at Sully’s, before the kickoff. You said you were at a taco truck, and you’re sorry you missed it.",
+          "response": [
+            "“I was at a taco truck,” he says. “I’m sorry I missed it.”",
+            "“You should be,” she tells the roux. “Dale wept.” The spoon goes round twice. “He kept saying *forty-three years*. He’s from Michigan.”",
+            "“Theo said.”",
+            "“Theo cried too. Don’t let him tell you different.”",
+            "From the doorway Mémère watches the pot go dark, and says, when it’s time, “*Chocolat.* Stop when it’s *chocolat*.” Lena tips her head at his board without a word, and he brings it to the stove and scrapes the trinity in with the back of Celeste’s second-best knife. It goes in with a hiss and a cloud that comes up off the iron and fogs the window over the sink, and Lena stirs it under, and the kitchen smells of everything at once."
+          ],
+          "goto": "s05"
+        },
+        {
+          "tag": "Restraint",
+          "text": "“I know.”",
+          "set": {
+            "s2e13_roux": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "Over the roux Lena said she’d asked where you were, at Sully’s, before the kickoff. You said: I know. That was all.",
+          "response": [
+            "“I know,” he says.",
+            "She nods at the pot.",
+            "The fiddle saws on. Jack finishes the last of the celery, small enough this time for anybody from Breaux Bridge, and Mémère watches the roux go darker, and says, when it’s right, “*Chocolat.* Stop when it’s *chocolat*.” Celeste is already there. She comes in at Lena’s elbow with Jack’s board on her forearm and tips the trinity in over both their hands, and it hits the iron with a hiss and a cloud that fogs the window over the sink, and the three of them stand in the steam of it, coughing, while Lena stirs."
+          ],
+          "goto": "s05"
+        }
+      ]
+    }
+  }
+}
