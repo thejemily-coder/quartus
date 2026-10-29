@@ -2209,3 +2209,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   (every urge, all semester, was about her; the count is the player's `jack_cigs_jf` and January–February tallies;
   he tells her the number honestly; zero is its own answer). She realizes every one was about her. Then the talk about
   what happens next (not as anyone's "other"; both free by the end of the week; Lena pulls away; no kiss).
+  - **Also in the Mardi Gras honesty (player): what Skye means to Jack, fully.** Because they're being completely
+    honest, and because **Lena needs to know exactly what Jack is giving up**, he tells her everything Skye is to him
+    (what they were and did together, that it's real), **without the word "love."** Lena knows anyway. He can't say it:
+    saying it out loud would be as good as saying he loves Lena, and loves her more, which is true but not something
+    either will say yet. It hurts Lena; it's the root of her lasting dislike of Skye; and she understands it means he's
+    giving all of that up for her. **Lena is equally honest about Julian**, but it's not the same: she was going to
+    break up with him after Christmas break, for Jack.
