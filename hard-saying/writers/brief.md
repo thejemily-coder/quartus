@@ -2219,3 +2219,14 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The wound of the avoidable (player).** It honestly wounds them both that **everything since January could have
     been completely avoided if they'd spoken plainly** on that last phone call, or any night before it. Let it land as
     grief, not blame: neither can hand it to the other, and it shapes their resolve to speak plainly from now on.
+- **CORRECTION: the first kiss (player; supersedes "first kiss at the end of date #1, Lena kisses him").** The first
+  kiss comes **right after Lena "rejects" him** ("No.", straight-faced) **and tells him to ask her out properly
+  instead.** It's **not short, not particularly long.** **Lena breaks it off by pulling away just slightly, foreheads
+  touching, and murmurs playfully that he's being very familiar for a man who hasn't asked her on a date yet.** Then they
+  go back to the dorm for **Theo and Laney's planned celebration scene that doesn't quite come off yet** (the champagne
+  wake on the misheard "No."), as already designed.
+  - **Then the dates and hangouts, kissing frequently.** The "she's given up kissing for Lent, in principle" bit is
+    retired (or said and broken at once, as a joke; room's call).
+  - **Heat escalation for Jack and Lena is VERY slow.** They don't really cross from kissing into what would be "making
+    out" **until their summer visits to each other (Season 3).** (The S4 restraint framing and the slow-intimacy
+    entries stand.)
