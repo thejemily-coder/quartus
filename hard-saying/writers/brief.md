@@ -15,6 +15,25 @@ Season 2 from S2E10 for this timeline.
 - All other hard rules stand: no mocking the faith; no cheap villains; no death of Lena or Jack; no sexual assault or
   rape in anyone's background; Skye never coerces.
 
+- **Alt S2E10 notes session (player, 2026-10-29).**
+  - **The no comes in layers.** Theo pitches New Orleans first (the alliance's play: the Saints' Super Bowl run,
+    Bacchus, maybe tickets already bought). Then an invitation from Lena herself arrives (a note or text, breaking the
+    silence for the purpose). Jack turns both down, **Lena's harder**. That no seals the silence.
+  - **The alliance's failure is only hinted at for Jack** (a meeting he walks in on, tickets, odd coordination); he
+    puts it together **later in the season**, not in S2E10.
+  - **Total cold between Jack and Lena:** not a word, even in Hale's seminar; they argue through Hale and the texts if
+    they must; everyone around them feels it.
+  - **The friends go without him:** Theo, Lena, Laney, Kevin and Margot go to New Orleans for the Super Bowl/Bacchus
+    weekend. Skye leaves for her location shoot. Jack stays behind. (He watches the Super Bowl, Feb 7, in the dorm
+    with Doug and Yusuf: S2E11 material.)
+  - **Jack sleeps with Skye at the END of S2E10,** the night before she leaves for the shoot. Written through, frank
+    but literary (never pornographic mechanics), high heat, emotional. Jack pushes the guilt aside by not thinking
+    about anything; afterward he is completely, perfectly happy with her, and they fall asleep in each other's arms.
+    **The guilt comes later** (S2E11+), when he is alone, with Skye and his closest friends all out of town.
+  - **Afterward Jack avoids Osei** (he stays away from the Wednesday light; the avoidance is the story).
+  - **More home and family** (Ma, Gina, Nonna, Danny, Frank); **Theo–Jack friendship** even as the alliance strain shows;
+    **warmth high** (comedy around the knife); **advance Kevin and Clare.**
+
 ---
 
 # THE HARD SAYING — Creative Brief (binding)
