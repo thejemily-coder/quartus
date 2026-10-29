@@ -2233,3 +2233,15 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 
 ### After S2E12 (player feedback)
 - **Feedback:** "Great episode!" (the drive). No new notes for S2E13.
+- **First "I love you" for Jack and Lena: during a SUMMER 2010 VISIT (S3)** (supersedes Thanksgiving 2010 as the
+  default). The first time they're together after weeks apart, on one of the long visits (the Fourth in New Orleans
+  or August in Youngstown; room's call by path). Until then the word stays unsaid between them.
+- **Date #1 (after "ask me properly"): Jack, overreaching**, trying to do it "properly" by the book (a real
+  restaurant, a jacket). **Both are so nervous with each other that night, despite never being that way otherwise**;
+  it's a **lovely, funny disaster they rescue together.** (Lent: Friday abstinence if it falls on a Friday.)
+- **Date #2: Jack plans it Youngstown-humble** (something small and his), and **Lena is undone by how much thought
+  went into so little.** They are themselves, **completely at ease, and for the first time with no significant others
+  looming over the evening.**
+- **Skye's birthday (Apr 4, Easter Sunday 2010):** by then they're back in touch and the Catechism study may already
+  have started, so **he texts, maybe even calls**, depending on how much they're talking by then (supersedes "struggles
+  whether to text"; the struggle can be a beat, the answer is yes).
