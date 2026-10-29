@@ -2136,3 +2136,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   The player is "very sad about the beginning of the end of the Skye era": **honor that.** Skye's exit (the breakup on
   the porch, the anger, the campaign, the friendship later) must be written with full love for her; she leaves the
   story as magnificent as she entered it, and the player should feel the loss.
+- **S2E12 answers (player).** **Fight fuse:** Skye calls from Vancouver at a gas stop in Arizona; Jack takes it warmly,
+  in front of everyone (faithful throughout); back in the van Lena says one thing about it, and hours of pressure blow.
+  **Arrival leaks (Dupre Street, Sat evening):** **both and more**: he carries her (asleep) and her bag up the
+  shotgun's steps without thinking, Celeste watching from the door; at the crawfish table she pulls him down next to
+  her without looking, as if it were always his seat; and more small leaks, in whatever chronology fits the story.
