@@ -379,6 +379,10 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 218. **Call-and-response callback pairs** (S2E11). Three an episode.
 219. **Repeated prop tags** (S2E11: the pie carried "level" and "grease pencil"). "Level" twice; grease pencil six times in prose.
 220. **Shared text after a multi-way choice that assumes one option's wording** (S2E11: "you said yes"). Gate it by the flag or make it neutral.
+221. **A hand left on a switch (or lever, latch, dial) as a regret beat** (S2E12: Kevin's hand on the map light in s07 and again in s11). Once per character per episode.
+222. **"Since [waypoint]" as a clock device** ("since Picacho," "since the Rincon," "since Sonora"). At most 4 an episode.
+223. **"The dark" doing things, or "the van" reacting as a chorus** (S2E12). At most 2 each an episode.
+224. **Lena and Skye sharing stage and wardrobe figures** (S2E12: the fight let Lena talk in Skye's showbiz register). Give Lena church and kitchen figures, and Jack mill figures.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);
