@@ -2125,3 +2125,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   each other's orbit) **without admitting it**, except for **small leaks during the week** that lead toward the
   Mardi Gras conversation. **At the Super Bowl win, in the elation, embracing in the street, they both KNOW it; they just
   don't say it yet.** (Jack's faithfulness to Skye in every call and text still holds; the contradiction is the drama.)
+- **Everyone notices (player, NOLA week).** The others all notice how Jack and Lena are acting all of a sudden (Kevin
+  and Margot included, each in their own register). **Theo and Laney can scarcely believe what they're seeing** as the
+  week progresses (after throwing in the towel on the drive: disbelief, then barely contained glee, then terror of
+  jinxing it). **The Broussards treat Jack like he's the boyfriend** (Tony, Celeste, Luc, Remy, Tess, the twins, Mémère:
+  seat at the table, chores, teasing, assumptions nobody corrects fast enough).

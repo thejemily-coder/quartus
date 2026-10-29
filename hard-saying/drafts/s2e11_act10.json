@@ -1,0 +1,280 @@
+{
+ "scenes": {
+  "s10": {
+   "slug": "FRIDAY · 3:05 AM · ST. BRENDAN’S — BEHIND THE SCREEN",
+   "set": {
+    "soul.grace": "+1"
+   },
+   "body": [
+    {
+     "if": "s2e11_hill==\"hill\"",
+     "text": "He comes up the steps from the lot with the Saab idling behind him under the bell tower, its parking lights on and its heater going for the girl inside it, three suitcases in the back. The hall door is on the latch.",
+     "else": "He comes in off Ocean Road on foot with the cold on the shoulders of the Carhartt and the eucalyptus still on his hands from the fence at the top of the hill, where he stopped to get his breath. The hall door is on the latch."
+    },
+    "Inside, the church is blue and black. The streetlight on Ocean Road comes through the west glass in long pale bars across the pews, and up front, past all of it, the lamp by the tabernacle is burning, red and small as the end of a cigarette. It is First Friday. Somewhere in the dark there is a heart on a holy card in a pew rack, on fire and wrapped in thorns. At the back by the doors the little light over the confessional door is on, and the card under it has grown a line.",
+    {
+     "type": "doc",
+     "title": "The card on the confessional door",
+     "text": "KNOCK (GENTLY)\n(AND PROMPTLY)\n(ALL NIGHT TONIGHT — TRAVELERS)"
+    },
+    "The third line is in Osei’s hand, the capitals leaning uphill.",
+    "He is halfway down the side aisle when the door opens and Kevin steps into the light, in the quarter-zip zipped to his chin, his mother’s car key on its ring around one finger. He wets his hand in the font and crosses himself and sees Jack, and stops.",
+    "“He’s got a thermos,” Kevin says, at church volume.",
+    "“Good.”",
+    "“Couldn’t sleep.”",
+    "“Same.”",
+    "Kevin opens his mouth, and whatever is in it he trades for something smaller. “Four-forty-five. He’s blessing the car.”",
+    "The key goes around his finger once more and into his fist. He goes out by the hall door, and his sneakers go down the steps fast, and the lot has him.",
+    "Jack knocks gently. On the far side a chair takes a man’s weight and a cap comes off something with a squeak, and he goes in and kneels on the worn place in the dark, his forearm on the ledge, the Prodigal Son on the back of the door behind him with his face buried in his father’s coat. Hale’s *Moviegoer* is in his back pocket with the two of them in it, and kneeling bends it to the shape of him. Through the linen comes the smell of coffee strong enough to stand a spoon in.",
+    {
+     "if": "s2e11_print==\"riposte\"",
+     "text": "His fingers smell of her stop bath. He puts a hand up to his collar and finds the clothespin still on it, and takes it off, and holds it.",
+     "else": "His fingers still smell of her stop bath. He can’t get it off them; he has stopped trying."
+    },
+    "“You’re up, Father.”",
+    "“My body still believes it is a resident,” Osei says. “It is the only part of me that does.”",
+    "“Bless me, Father, for I have sinned. It’s been a day and a half since my last confession.”",
+    "The cap goes back on the thermos. “Thirty-one hours. I have had patients come back sooner, but they were bleeding.”",
+    "He gives it in the short words, with the honest verbs. Where he was, and who with, and what they did there, and what he let be done to him. A room built for the dark, which she wasn’t supposed to be in either. None of it takes long and none of it is small, and on the other side of the linen the chair doesn’t move once.",
+    {
+     "if": "s2e11_yes==\"restraint\"",
+     "text": "Then the worst, last, because that is how he was taught, and flat. “She asked me. In so many words.” He makes himself finish it. “I started to say wait. She’d already stopped.”"
+    },
+    {
+     "if": "s2e11_yes==\"reckless\"",
+     "text": "Then the worst, last, because that is how he was taught, and flat. “She asked me. In so many words. I didn’t say anything. I took my medal off and put it on the counter. That was my answer.” And the end of it, which is the part he walked up here carrying. “She’s the one who stopped.”"
+    },
+    {
+     "if": "s2e11_yes!=\"restraint\" && s2e11_yes!=\"reckless\"",
+     "text": "Then the worst, last, because that is how he was taught, and flat. “She asked me. In so many words. I said yes.” And the end of it, which is the part he walked up here carrying. “She’s the one who stopped.”"
+    },
+    {
+     "if": "took_off_medal",
+     "text": "“And Michael,” Osei says. “Where did you leave him?”"
+    },
+    {
+     "if": "took_off_medal",
+     "text": "“On the counter. She put him back on me.”"
+    },
+    {
+     "if": "took_off_medal",
+     "text": "The chair is quiet. “Then she knows something about you,” Osei says, “that you have mislaid.”"
+    },
+    "“She stopped,” Osei says back to him, evenly, and then says nothing else, and makes him kneel in it.",
+    "Under the floor the furnace comes on with a thump and a long breath up through the grate by the kneeler, warm on his ankles. It runs. He kneels there with *she stopped* in the little room and nothing to put next to it.",
+    {
+     "if": "s2e10_amend==\"candor\"",
+     "text": "“On Wednesday you told me you were closer than you had ever been to not wanting to,” Osei says. “Now you know exactly how close.”"
+    },
+    {
+     "if": "s2e10_amend==\"sincerity\"",
+     "text": "“On Wednesday you told me you would try,” Osei says. “I believed you. I still do; that is not the question.”"
+    },
+    {
+     "if": "s2e10_amend!=\"candor\" && s2e10_amend!=\"sincerity\"",
+     "text": "“On Wednesday you promised me this week,” Osei says. “It is still this week.”"
+    },
+    "“She knew what it costs me,” Jack says. “Sunday. Going up. She’s been reading about it. That’s why.”",
+    "“Yes. Twice in a week someone who never made you a promise has kept yours for you.”",
+    "“I know.”",
+    {
+     "if": "s2e8_noon==\"candor\"",
+     "text": "“Do you? You have made her the keeper of your vow, Jack. She never took one. In January I told you that if you make her the answer you will make her the occasion. This is the same mistake with a kinder face.” The beads move in the dark. “You love her. I do not doubt it; I have heard it in every confession since Christmas. Then do not hand her the hardest part of you and drive to Louisiana.”",
+     "else": "“Do you? You have made her the keeper of your vow, Jack. She never took one.” The beads move in the dark. “You love her. I do not doubt it; I have heard it in every confession since Christmas. Then do not hand her the hardest part of you and drive to Louisiana.”"
+    },
+    "“It’s the best thing anybody’s ever done for me, Father.”",
+    "“I believe you. It is why I am awake.” The chair creaks. “A man cannot live on someone else’s no. It is not his to eat. My mother used to say: the one who is carried does not know how far the town is. Twice now you have been carried. You still do not know how far it is.”",
+    "Jack looks at the linen. The furnace runs.",
+    "“Yesterday’s Gospel,” Osei says. “He sent them out two by two and told them to take nothing for the journey. Not bread, not a bag, not a second tunic. I would add: not a yes you have not taken back.”",
+    "Osei unscrews the thermos and pours, and drinks. “Kevin telephoned me on Tuesday to ask me to bless his mother’s car. He asked me also to pray for its atmosphere.”",
+    "Behind Jack the Prodigal Son goes on hiding his face in his father’s coat. Osei does not wait to see if anything comes back. The furnace shuts off. In the quiet Jack can hear the man on the other side of the linen breathing, slow, a man who has sat up with a great many people at this hour and has not yet been the first to leave.",
+    "“Are you sorry, Jack? Or are you sorry it stopped?”",
+    "He knows what he is supposed to say. He can feel the shape of it in his mouth, worn smooth from Glenwood Avenue and St. Brigid’s and every Saturday since. And under it, the red, and her weight, and her forehead on his, and the word he said in that room, which some part of him has not stopped saying yet. He kneels between the two with her stop bath on his hands."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“I’m sorry I said it. I don’t know yet if I’m sorry she stopped.”",
+     "set": {
+      "s2e11_sorry": "candor",
+      "confession_owed": 0,
+      "confessed_skye_8": true,
+      "resolve.jack": "+2",
+      "soul.honesty": "+1",
+      "trait.candor": "+1",
+      "rel.osei.trust": "+1"
+     },
+     "key": "Behind the screen you told Osei you’re sorry you said yes, and that you don’t know yet if you’re sorry she stopped. He absolved you for the half you can reach.",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "osei",
+       "title": "Fr. Gabriel Osei",
+       "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday, behind the screen: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back. The first day back I gave him Father Dom’s message: we’ll see. He laughed. I told him I went at home. The night of the earthquake he asked the bishop if he could spare an old doctor. The bishop couldn’t spare a young priest. His friend Yaw from medical school is in Port-au-Prince — alive, operating in a parking lot. Saturday at three-thirty the light was on. Sunday he read Cana. Yaw has a generator now. Sunday at the 11:30 I didn’t go up. At the door I introduced him to Skye. He said her name. Then he said Wednesday, eight o’clock. Wednesday at eight the light was on, and he waited. Not gentle this time. I told him I think she’s the answer, and he asked: to what question? I didn’t have it. He said on Monday it was she who kept my Sunday, not me. I told him I called a friend a liar at a table, and went for the places that hurt. Two sins, he said, and I confessed the one I’m sure of. He said he’d be less sure, if he were me. I told him I’d spoken for him on Monday. He let most of it stand: what’s good between us is good, and the near occasion was the room and the hour and the door. He said I took his daylight at noon with the door shut. Neither one cancels the other. And if I make her the answer, I’ll make her the occasion. The absolution isn’t a curtain between Fridays. He said Ma asked me the right question. He asked what will be different when I leave. Absolved me anyway. Penance: the Sower, slowly — the thorns. Then: go home tonight. The Fourth Sunday: a prophet’s never welcome in his own country. Skye watched me go up. At the door he said “Skye,” and she said “Father,” and he looked at me about as long as a handshake. He didn’t say anything. Candlemas: Simeon held the child and let himself be let go. At the door he said, “I saw your concert.” Wednesday at eight I told him all of it, and the song. Ghana has seen it. He asked again, to what question, and I gave him Nonna’s. He said I said it like a man reading a translation. Absolved. Penance: Simeon’s canticle, slowly — the part about letting go. He didn’t tell me where to sleep. I know where the door is. First Friday, three in the morning, the light was on: ALL NIGHT TONIGHT — TRAVELERS. I told him I said yes, and that she was the one who stopped. He said it back. She stopped. He said I’ve made her the keeper of my vow, and she never took one. He asked if I was sorry, or sorry it stopped. I said I don’t know yet about the second half. Absolved for the half I can reach. Penance: Mark 6, every morning till I’m home."
+      }
+     ],
+     "response": [
+      "“I’m sorry I said it,” Jack says. “I don’t know yet if I’m sorry she stopped.”",
+      "He hears it in the little room and knows it’s true, and leaves it on the ledge.",
+      "“Then you are sorry for the half you can reach,” Osei says. “Bring me the other half when you can lift it.” The beads. “For your penance, Mark, the sixth chapter, verses seven to thirteen. Every morning until you are home. If you cannot find a Bible in New Orleans you are not trying. Read to the part where He tells them that when they enter a house they are to stay in that house until they leave. Stay with that part.”",
+      "The shadow of a hand comes up behind the linen. Jack says the Act of Contrition to the end of it, and the last of the absolution comes through unhurried: *in the name of the Father, and of the Son, and of the Holy Spirit.*",
+      "“Amen.”",
+      "The chair groans as Osei stands, and the voice comes down from higher up, through the top of the screen. “Go and sleep one hour. At a quarter to five I am going to throw water on Kevin’s mother’s car.”"
+     ],
+     "goto": "s10a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“I’m sorry. I’m sorry I put it on her.”",
+     "set": {
+      "s2e11_sorry": "sincerity",
+      "confession_owed": 0,
+      "confessed_skye_8": true,
+      "resolve.jack": "+2",
+      "soul.grace": "+1",
+      "trait.sincerity": "+1",
+      "rel.osei.trust": "+1"
+     },
+     "key": "Behind the screen you told Osei you’re sorry — sorry you put it on her. He absolved you.",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "osei",
+       "title": "Fr. Gabriel Osei",
+       "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday, behind the screen: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back. The first day back I gave him Father Dom’s message: we’ll see. He laughed. I told him I went at home. The night of the earthquake he asked the bishop if he could spare an old doctor. The bishop couldn’t spare a young priest. His friend Yaw from medical school is in Port-au-Prince — alive, operating in a parking lot. Saturday at three-thirty the light was on. Sunday he read Cana. Yaw has a generator now. Sunday at the 11:30 I didn’t go up. At the door I introduced him to Skye. He said her name. Then he said Wednesday, eight o’clock. Wednesday at eight the light was on, and he waited. Not gentle this time. I told him I think she’s the answer, and he asked: to what question? I didn’t have it. He said on Monday it was she who kept my Sunday, not me. I told him I called a friend a liar at a table, and went for the places that hurt. Two sins, he said, and I confessed the one I’m sure of. He said he’d be less sure, if he were me. I told him I’d spoken for him on Monday. He let most of it stand: what’s good between us is good, and the near occasion was the room and the hour and the door. He said I took his daylight at noon with the door shut. Neither one cancels the other. And if I make her the answer, I’ll make her the occasion. The absolution isn’t a curtain between Fridays. He said Ma asked me the right question. He asked what will be different when I leave. Absolved me anyway. Penance: the Sower, slowly — the thorns. Then: go home tonight. The Fourth Sunday: a prophet’s never welcome in his own country. Skye watched me go up. At the door he said “Skye,” and she said “Father,” and he looked at me about as long as a handshake. He didn’t say anything. Candlemas: Simeon held the child and let himself be let go. At the door he said, “I saw your concert.” Wednesday at eight I told him all of it, and the song. Ghana has seen it. He asked again, to what question, and I gave him Nonna’s. He said I said it like a man reading a translation. Absolved. Penance: Simeon’s canticle, slowly — the part about letting go. He didn’t tell me where to sleep. I know where the door is. First Friday, three in the morning, the light was on: ALL NIGHT TONIGHT — TRAVELERS. I told him I said yes, and that she was the one who stopped. He said it back. She stopped. He said I’ve made her the keeper of my vow, and she never took one. He asked if I was sorry, or sorry it stopped. I said I’m sorry I put it on her. Absolved. Penance: Mark 6, every morning till I’m home."
+      }
+     ],
+     "response": [
+      "“I’m sorry,” Jack says. “I’m sorry I put it on her.”",
+      "He sees her as he says it: above him on Sol’s daybed in the red, gone still, deciding for both of them, because he had handed her the deciding and let go of it.",
+      "“That is the sentence a man says when he has seen the other person,” Osei says. “For your penance, Mark six, seven to thirteen, every morning until you are home. Tomorrow you will be somewhere in Texas; say what you remember. After that you will be in a city where they are not hard to find. When you enter a house, stay in that house until you leave.”",
+      "The Act of Contrition, all of it. The hand behind the linen. *In the name of the Father, and of the Son, and of the Holy Spirit.*",
+      "“Amen.”",
+      "The cap comes off the thermos again with its small squeak. “Go and sleep one hour,” Osei says, and pours. “At a quarter to five I am going to throw water on Kevin’s mother’s car.”"
+     ],
+     "goto": "s10a"
+    },
+    {
+     "tag": "Restraint",
+     "text": "“Not on the trip. Not till I’m back and can see straight.”",
+     "set": {
+      "s2e11_sorry": "restraint",
+      "confession_owed": 0,
+      "confessed_skye_8": true,
+      "promised_till_back": true,
+      "resolve.jack": "+2",
+      "trait.control": "+1"
+     },
+     "key": "Behind the screen you promised Osei: not on the trip, not till you’re back and can see straight. He absolved you.",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "osei",
+       "title": "Fr. Gabriel Osei",
+       "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday, behind the screen: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back. The first day back I gave him Father Dom’s message: we’ll see. He laughed. I told him I went at home. The night of the earthquake he asked the bishop if he could spare an old doctor. The bishop couldn’t spare a young priest. His friend Yaw from medical school is in Port-au-Prince — alive, operating in a parking lot. Saturday at three-thirty the light was on. Sunday he read Cana. Yaw has a generator now. Sunday at the 11:30 I didn’t go up. At the door I introduced him to Skye. He said her name. Then he said Wednesday, eight o’clock. Wednesday at eight the light was on, and he waited. Not gentle this time. I told him I think she’s the answer, and he asked: to what question? I didn’t have it. He said on Monday it was she who kept my Sunday, not me. I told him I called a friend a liar at a table, and went for the places that hurt. Two sins, he said, and I confessed the one I’m sure of. He said he’d be less sure, if he were me. I told him I’d spoken for him on Monday. He let most of it stand: what’s good between us is good, and the near occasion was the room and the hour and the door. He said I took his daylight at noon with the door shut. Neither one cancels the other. And if I make her the answer, I’ll make her the occasion. The absolution isn’t a curtain between Fridays. He said Ma asked me the right question. He asked what will be different when I leave. Absolved me anyway. Penance: the Sower, slowly — the thorns. Then: go home tonight. The Fourth Sunday: a prophet’s never welcome in his own country. Skye watched me go up. At the door he said “Skye,” and she said “Father,” and he looked at me about as long as a handshake. He didn’t say anything. Candlemas: Simeon held the child and let himself be let go. At the door he said, “I saw your concert.” Wednesday at eight I told him all of it, and the song. Ghana has seen it. He asked again, to what question, and I gave him Nonna’s. He said I said it like a man reading a translation. Absolved. Penance: Simeon’s canticle, slowly — the part about letting go. He didn’t tell me where to sleep. I know where the door is. First Friday, three in the morning, the light was on: ALL NIGHT TONIGHT — TRAVELERS. I told him I said yes, and that she was the one who stopped. He said it back. She stopped. He said I’ve made her the keeper of my vow, and she never took one. He asked if I was sorry, or sorry it stopped. I said not on the trip, not till I’m back. A promise and a date, he says; keep the first. Absolved. Penance: Mark 6, every morning till I’m home."
+      }
+     ],
+     "response": [
+      "“Not on the trip,” Jack says. “Not till I’m back and can see straight.”",
+      "It’s small. It’s what he can carry down the hill.",
+      "“A promise with a date on it is a promise and a date,” Osei says. “Keep the first. Pray about the second.” The beads. “For your penance, Mark six, verses seven to thirteen, every morning until you are home. Louisiana will lend you a Bible. When you enter a house, stay in that house until you leave.”",
+      "The Act of Contrition. The hand. *In the name of the Father, and of the Son, and of the Holy Spirit.*",
+      "“Amen.”",
+      "Osei leans close to the linen; Jack can see the shape of his head against it. “Go and sleep one hour. At a quarter to five I am going to throw water on Kevin’s mother’s car.”"
+     ],
+     "goto": "s10a"
+    },
+    {
+     "tag": "Reckless",
+     "text": "“I can’t tell you I won’t.”",
+     "cue": "Osei heard that.",
+     "set": {
+      "s2e11_sorry": "reckless",
+      "absolution_withheld": true,
+      "soul.honesty": "+1",
+      "trait.reckless": "+1"
+     },
+     "key": "Behind the screen you told Osei you can’t tell him you won’t. He didn’t absolve you. He blessed you instead.",
+     "journal": [
+      {
+       "kind": "person",
+       "id": "osei",
+       "title": "Fr. Gabriel Osei",
+       "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday, behind the screen: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back. The first day back I gave him Father Dom’s message: we’ll see. He laughed. I told him I went at home. The night of the earthquake he asked the bishop if he could spare an old doctor. The bishop couldn’t spare a young priest. His friend Yaw from medical school is in Port-au-Prince — alive, operating in a parking lot. Saturday at three-thirty the light was on. Sunday he read Cana. Yaw has a generator now. Sunday at the 11:30 I didn’t go up. At the door I introduced him to Skye. He said her name. Then he said Wednesday, eight o’clock. Wednesday at eight the light was on, and he waited. Not gentle this time. I told him I think she’s the answer, and he asked: to what question? I didn’t have it. He said on Monday it was she who kept my Sunday, not me. I told him I called a friend a liar at a table, and went for the places that hurt. Two sins, he said, and I confessed the one I’m sure of. He said he’d be less sure, if he were me. I told him I’d spoken for him on Monday. He let most of it stand: what’s good between us is good, and the near occasion was the room and the hour and the door. He said I took his daylight at noon with the door shut. Neither one cancels the other. And if I make her the answer, I’ll make her the occasion. The absolution isn’t a curtain between Fridays. He said Ma asked me the right question. He asked what will be different when I leave. Absolved me anyway. Penance: the Sower, slowly — the thorns. Then: go home tonight. The Fourth Sunday: a prophet’s never welcome in his own country. Skye watched me go up. At the door he said “Skye,” and she said “Father,” and he looked at me about as long as a handshake. He didn’t say anything. Candlemas: Simeon held the child and let himself be let go. At the door he said, “I saw your concert.” Wednesday at eight I told him all of it, and the song. Ghana has seen it. He asked again, to what question, and I gave him Nonna’s. He said I said it like a man reading a translation. Absolved. Penance: Simeon’s canticle, slowly — the part about letting go. He didn’t tell me where to sleep. I know where the door is. First Friday, three in the morning, the light was on: ALL NIGHT TONIGHT — TRAVELERS. I told him I said yes, and that she was the one who stopped. He said it back. She stopped. He said I’ve made her the keeper of my vow, and she never took one. He asked if I was sorry, or sorry it stopped. I said I can’t tell him I won’t. He didn’t absolve me. It isn’t a punishment, he says; it’s arithmetic. He blessed me instead, and said there’s a priest on every corner of New Orleans this week."
+      }
+     ],
+     "response": [
+      "“I can’t tell you I won’t,” Jack says.",
+      "It is the truest thing he has said in this room since September. Osei is quiet long enough that the furnace comes on again under the floor.",
+      "“Then I cannot give you what you came for,” Osei says, gently, and without any anger in it at all. “Not tonight. It is not a punishment, Jack; it is arithmetic. You have not asked me to take it. You have asked me to hold it.”",
+      "“Yes, Father.”",
+      "“So I will give you what I am allowed. This is a blessing. It is not absolution; do not let anyone tell you it is, and you least of all.” The shadow of the hand comes up behind the linen. “May almighty God bless you, the Father, and the Son, and the Holy Spirit.”",
+      "“Amen.”",
+      "“There is a priest on every corner of that city this week,” Osei says. “Some of them will even be in churches.” The beads go quiet. “Go and sleep one hour. At a quarter to five I am going to throw water on Kevin’s mother’s car.”"
+     ],
+     "goto": "s10a"
+    }
+   ]
+  },
+  "s10a": {
+   "slug": "FRIDAY · 3:40 AM · ST. BRENDAN’S, THE FRONT STEPS",
+   "body": [
+    "The courtyard is black, and the olive trees are a blacker shape in it, and the cold comes up out of the top step through the seat of his jeans. Down the hill the Anacapa lot is a puddle of orange, and in the middle of it, small from here, the shape of Kevin’s mother’s van, loaded and waiting. Behind him the little light over the confessional door is still burning for whoever comes next.",
+    {
+     "if": "absolution_withheld",
+     "text": "He says Mark 6 on the step anyway, nobody’s penance, as much of it as he has: two by two, and a walking stick, and no bread and no bag for the road. A house, and stay in it. He says it to the olive trees because nobody told him to.",
+     "else": "He starts the penance on the step, aloud, to the dark courtyard, as much of it as Osei gave him: two by two, and a walking stick, and no bread and no bag for the road. A house, and stay in it. The rest is in a book he doesn’t have on him."
+    },
+    {
+     "if": "s2e11_hill==\"hill\"",
+     "text": "The Saab is where he left it under the bell tower, the engine running, the parking lights making two orange smudges on the stucco. Skye is asleep against her own window with her coat pulled up to her chin and her cheek on the glass, and her breath has made a small gray country on it. He gets in. The heat is thick and smells like the vents and like her. She wakes when the door shuts, without opening her eyes, and lies there against the glass while the engine runs. Then she sits up and drives him down Ocean Road and into the Anacapa lot, past the dark van, to the far end by the eucalyptus, and parks, and leaves the heater on. She tips her head back against the window and shuts her eyes again."
+    },
+    {
+     "if": "s2e11_hill==\"hill\"",
+     "text": "“Did he take it?”"
+    },
+    {
+     "if": "s2e11_hill==\"hill\"",
+     "text": "It’s the only thing she asks."
+    },
+    {
+     "if": "s2e11_hill==\"hill\" && s2e11_sorry==\"reckless\"",
+     "text": "“No,” Jack says. “He blessed me.”"
+    },
+    {
+     "if": "s2e11_hill==\"hill\" && s2e11_sorry==\"reckless\"",
+     "text": "She opens her eyes. She looks at him across the gearshift a long time, in the orange coming through the windshield. She asks nothing else. She reaches over and puts her hand on the back of his neck, warm from the coat, and leaves it there."
+    },
+    {
+     "if": "s2e11_hill==\"hill\" && s2e11_sorry==\"reckless\"",
+     "text": "Her hand goes heavy. She sleeps against the window till a quarter to five, and he doesn’t."
+    },
+    {
+     "if": "s2e11_hill==\"hill\" && s2e11_sorry!=\"reckless\"",
+     "text": "“Yeah.”"
+    },
+    {
+     "if": "s2e11_hill==\"hill\" && s2e11_sorry!=\"reckless\"",
+     "text": "She nods with her eyes shut. Her hand comes off her lap and finds his on the gearshift by feel, and covers it, and stays."
+    },
+    {
+     "if": "s2e11_hill==\"hill\" && s2e11_sorry!=\"reckless\"",
+     "text": "She sleeps against the window till a quarter to five, and he doesn’t. The *Moviegoer* is on his knee, shut, still curved from the kneeler. The clock on the dash says 3:52, and then it says other things."
+    },
+    {
+     "if": "s2e11_hill!=\"hill\"",
+     "text": "Delgado is dark except the lobby. In 412 Theo is a long shape under the duvet with his back to the room. Jack doesn’t undress. He lies down on top of his made bed in the Carhartt and his boots with Hale’s book on his chest, the swing inside it, NOT FOR POSTING face down against his breastbone through two hundred pages, and looks at the ceiling for fifty minutes and doesn’t sleep a single one of them."
+    },
+    {
+     "if": "s2e11_hill!=\"hill\"",
+     "text": "At 4:20 Theo’s alarm goes off and plays its little tune twice through."
+    },
+    {
+     "if": "s2e11_hill!=\"hill\"",
+     "text": "“I’m up,” Theo says, from the dark, into the pillow. “I’ve been up. I’m *always* up.”"
+    }
+   ],
+   "next": "s11"
+  }
+ }
+}
