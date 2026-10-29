@@ -2087,3 +2087,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The end of the call (player, verbatim lines):** Skye asks Danny to call again. Before they get off, Jack tells
     Danny (Skye hears): *"She's the one I can tell the truth to."* Danny: *"Yeah, I can tell, Professor. You're not
     subtle. I'm still going with the trick though, easier to wrap my brain around that one."*
+
+### After S2E10 (player feedback + S2E11 answers)
+- **Feedback:** "Great episode. Skye was spectacular."
+- **The last night before Vancouver (S2E11):** if it comes to the point, **Skye's character decides** who stops it
+  (as with the Communion tension); the player's choices shape how, never whether (hard rule). Escalation rule in full.
+- **Packing the Odyssey Thursday night:** Jack and Lena's first time in the same space since Hale's: **logistics only,
+  ice cold.** They speak only through Kevin and Laney (who sits where, what fits); not one word to each other; everyone
+  else is miserable.
+- **Julian won't come to New Orleans** (via Laney): Jack reacts with **mild irritation**: annoyed that Laney thinks he'd
+  care, and says so.
