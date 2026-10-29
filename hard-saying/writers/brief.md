@@ -1,3 +1,22 @@
+# >>> ALTERNATE TIMELINE — THIS BRANCH (`hard-saying-alt`) ONLY <<<
+**This repository branch is the alternate timeline of The Hard Saying, forked after S2E09 (2026-10-29).** In this
+timeline **Jack does NOT go to New Orleans.** The directives below are binding, sit above everything else in this brief,
+and supersede any conflicting directive later in the file (including the NOLA trip, the drive, the alliance's success,
+the Mardi Gras near-miss, Ash Wednesday at Holy Rosary, and "neither Jack nor Lena sleeps with anyone else" as it applies
+to Jack and Skye). Everything else in this brief still binds unless it depends on New Orleans; the writers re-map
+Season 2 from S2E10 for this timeline.
+
+- **Jack says a hard no to the New Orleans trip.** That ends the secret alliance (Theo, Laney, Kevin) **as a failure**.
+- **Jack and Lena have stopped speaking to each other.** They likely still end up together eventually (the endgame is
+  not abandoned), but the road is longer and different.
+- **Jack sleeps with Skye before she leaves for the shoot.** In this timeline the rule "neither Jack nor Lena sleeps with
+  anyone else" is lifted for Jack and Skye, and **their relationship is allowed to go as far as it can.** The faith
+  stakes, confession, Osei and the consequences remain real and are written seriously (never mocking the faith).
+- All other hard rules stand: no mocking the faith; no cheap villains; no death of Lena or Jack; no sexual assault or
+  rape in anyone's background; Skye never coerces.
+
+---
+
 # THE HARD SAYING — Creative Brief (binding)
 
 This is the player's brief, assembled from a long design interview. Everything here is a decision the player made. It is

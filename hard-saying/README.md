@@ -1,3 +1,9 @@
+# The Hard Saying — ALTERNATE TIMELINE (branch `hard-saying-alt`)
+> Forked from the main timeline after S2E09 on 2026-10-29. Artifact: https://claude.ai/artifact/F2CbUgU7hNCNNjzXyqoqXw
+> (its own save db, seeded from saves/after-s2e09.json). Develop, commit and push ONLY on branch `hard-saying-alt`.
+> Never touch the main timeline's branch or its artifact (https://claude.ai/artifact/3MQUVCyw8UxRfXjX7fr9bH).
+> The fork directives are at the top of writers/brief.md. The "planned fork" section below is historical.
+
 # The Hard Saying
 
 A choice-driven prestige-TV college drama, played in episodes. Fall 2009, California State University at Marisol.
@@ -6,7 +12,7 @@ A choice-driven prestige-TV college drama, played in episodes. Fall 2009, Califo
 and `episodes/` contain hidden canon and unplayed story. Reading them spoils the show. `writers/brief.md` (your own
 decisions), `writers/room.md` and `writers/schema.md` are safe.
 
-Game artifact: https://claude.ai/artifact/3MQUVCyw8UxRfXjX7fr9bH
+Game artifact: https://claude.ai/artifact/F2CbUgU7hNCNNjzXyqoqXw
 
 ## Making the next episode (for Claude)
 1. **Read the save.** `ArtifactData get` on doc `saves/main` of the artifact above (the page writes the whole game state
