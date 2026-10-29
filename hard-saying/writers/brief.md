@@ -6,7 +6,10 @@ the Mardi Gras near-miss, Ash Wednesday at Holy Rosary, and "neither Jack nor Le
 to Jack and Skye). Everything else in this brief still binds unless it depends on New Orleans; the writers re-map
 Season 2 from S2E10 for this timeline.
 
-- **Jack says a hard no to the New Orleans trip.** That ends the secret alliance (Theo, Laney, Kevin) **as a failure**.
+- **Jack says a hard no to the New Orleans trip.** That ends the secret alliance (Theo and Laney) **as a failure**.
+  **Correction (player, 2026-10-29, both timelines): Kevin is NOT in the alliance.** It is Theo and Laney only. Kevin
+  has told them "Respectfully, leave it alone" again and again, and keeps getting dragged along with their antics
+  anyway, same as Margot.
 - **Jack and Lena have stopped speaking to each other.** They likely still end up together eventually (the endgame is
   not abandoned), but the road is longer and different.
 - **Jack sleeps with Skye before she leaves for the shoot.** In this timeline the rule "neither Jack nor Lena sleeps with
