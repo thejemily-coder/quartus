@@ -2017,3 +2017,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   also that we're not just friends from school)*, **tags him and adds a heart** (period-accurate: "<3"). The politics
   argument between the two of them continues over the food (still a game between people who differ). Her real name at
   the end of the night stands. Downstream: the caption feeds the lounge gag (Laney; Lena's laugh) and Corinne.
+- **S2E09 photo beats (player, add to the fundraiser redesign).** Before the food photo: Jack tells her the fundraiser
+  photo is fine to post, since she got photographed with him at the March. **She blows a raspberry at him** and says
+  she's not going to do on purpose what somebody else did (Kenzie posted the Walk picture; Jack vaguely knows her).
+  She takes the photo of them **laughing at each other at the table**. **Later that night Jack makes that photo his
+  profile picture.** Skye comments on it (she may literally be lying beside him if they're still together at her
+  place), verbatim lowercase: *did you just steal my art. this is worse than pirating my work. nevermind happy looks
+  good on you, you can steal from me*. It feeds Laney's gag in the lounge, or Lena faltering as she reads it after the
+  gag ("happy" lands: she asked him in the van if he was happy).
