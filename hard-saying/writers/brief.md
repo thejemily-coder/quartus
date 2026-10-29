@@ -2156,4 +2156,4 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   sustained, escalating war across the whole duel (not a flare and a sulk), with **both Jack and Lena out for blood**,
   each landing real hits and going back for more. **All four others reach the point of regretting coming on the trip**
   (Kevin, Margot, Theo, Laney, each in their own register), and **Theo and Laney are the most miserable of all, for having
-  set it up.** Keep the seating plan as written (the fight on Margot's shift; the glovebox rotation at El Paso).
+  set it up.** This **expands and adds to the planned beats** (keep them all); it replaces nothing. Keep the seating plan as written (the fight on Margot's shift; the glovebox rotation at El Paso).
