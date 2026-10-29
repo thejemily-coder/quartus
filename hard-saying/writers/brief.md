@@ -2097,3 +2097,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   else is miserable.
 - **Julian won't come to New Orleans** (via Laney): Jack reacts with **mild irritation**: annoyed that Laney thinks he'd
   care, and says so.
+- **CORRECTION (player): Kevin is NOT in the secret alliance.** The alliance is **Theo and Laney**. Kevin has told them
+  "Respectfully, leave it alone" repeatedly throughout, and keeps getting **dragged along with their antics anyway, same
+  as Margot.** Never list Kevin as a member, never have him scheme, recruit or report for it; he can be present,
+  unwilling, and dry about it. (Fix any earlier brief/ledger wording that bunches him in, e.g. "the alliance (Theo,
+  Laney, Kevin)".)
