@@ -2245,3 +2245,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Skye's birthday (Apr 4, Easter Sunday 2010):** by then they're back in touch and the Catechism study may already
   have started, so **he texts, maybe even calls**, depending on how much they're talking by then (supersedes "struggles
   whether to text"; the struggle can be a beat, the answer is yes).
+- **Easter Sunday 2010 (Apr 4) (player).** Away from family, **Jack and Lena plan an Easter dinner together in the
+  dorm, as best they can, with the friend group, after Mass** (their first holiday hosted as a couple: a dorm-kitchen
+  feast with improvised Youngstown and New Orleans touches; the whole group; comic logistics, real joy). Fits with the
+  Easter Vigil/official beat and Skye's birthday text the same day.
