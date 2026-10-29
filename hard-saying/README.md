@@ -64,3 +64,9 @@ the last pre-produced episode; it is finalized with `finalize.workflow.js`.)
   after-s2e09); add a top-of-brief fork directive ("this timeline: Jack does not go to New Orleans; all hard rules
   stand"); publish a separate artifact seeded from after-s2e09; start a separate Claude session on the new repo with
   a handoff prompt. The main game continues here unchanged.
+
+**Fork authorization (player, 2026-10-29):** when the player finishes S2E09, execute the alternate-timeline fork on
+Claude's own initiative, without asking: create a new private repo, copy everything (game, writers, saves through
+after-s2e09), add the fork directive (Jack does NOT go to New Orleans), publish a separate artifact seeded from
+after-s2e09, and start a separate Claude session on the new repo with a handoff prompt. The fork must be fully
+independent: nothing done in this repo or this artifact afterward touches it, and vice versa.
