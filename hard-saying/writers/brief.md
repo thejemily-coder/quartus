@@ -2076,3 +2076,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   drive leaves Fri Feb 5.)
 - **Danny's 23rd (Candlemas, Tue Feb 2):** besides Jack's letter, **Danny calls from Trumbull on his birthday while
   Jack is with Skye, and she gets on the phone** (Danny thinks the whole thing is hilarious; first time they speak).
+- **Skye on the phone with Danny (player, S2E10).** Skye puts on the full charm: she tells Danny a **very elaborate,
+  ludicrous story of the trick Jack supposedly pulled to get her to date him** (Danny's "you tricked her" from S2E09
+  is the cue). Jack notices it's **different from her usual controlled lines**: there's a **freedom and lightness** to
+  it, and everyone on the call knows she's joking. **Then she drops even the joke** and tells Danny exactly what Jack
+  actually did at the party in Montecito (the window seat, the O'Connor; check S1 canon for the exact night) that
+  made them talk the whole night and made her want to see him again. Jack hears it; it lands on him.
