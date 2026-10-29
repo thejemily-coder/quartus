@@ -2041,3 +2041,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   persistence, Laney's sugar and steel); Jack and Lena each resist and harden. Knowledge rules apply: what Lena tells
   Laney stays within what Lena would say even to her best friend; nothing leaks to Jack or Lena; the player may see the
   alliance's alarm without the hidden truth being spelled out.
+- **The drive must top Hale's (player).** Hale's (S2E08) raised the ante: the I-10 drive fight (S2E12, proxy fight #2,
+  "the worst") must be **bigger and nastier than Hale's**: longer, more confined (no Hale to stop it, no door to walk
+  out of, three friends trapped in the car), drawing on everything since (the liar exchange, the reverberations,
+  Theo/Laney's needling of the call, the caption and profile picture), with new ground neither has touched. The hard
+  lines still hold (no grief/Memorial or Danny weaponized; no Skye jokes from Lena while the fear is live), and it
+  still has to land on the shoulder after.
