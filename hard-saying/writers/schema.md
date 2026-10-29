@@ -101,7 +101,7 @@ resolve, which starts at its default).
   player's choices; Lena's is set by writers via scene `set`. When both are ≤ 3, the dangerous night becomes possible.
   The engine never shows resolve.
 - **Duels:** `duel.<duelId>.rigor`, `duel.<duelId>.wit`, `duel.<duelId>.heart` (scored by choices), and optionally
-  `duel.<duelId>.lena` (points Lena scores, set by writers).
+  `duel.<duelId>.lena` (points Lena scores, set by writers; for another opponent use that opponent's cast id, e.g. `duel.walk.skye`).
 
 ## Duels (argument mini-game)
 - Define each in top-level `duels`. A duel runs over 3–6 consecutive scenes, all carrying `"duel": "<id>"`.

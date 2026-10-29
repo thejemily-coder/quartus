@@ -352,6 +352,14 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 191. **Corinne "reads it off the pad"** (S2E08). Once an episode.
 192. **A song "circling / going round"** (S2E08). Once an episode.
 193. **The hand that comes down "flat," shared by Lena and Skye** (S2E08). Give it one owner (Lena); at most 2 an episode.
+194. **The absent-conscience formula** ("nothing in him says anything back") (S2E09). Once an episode, and never to end a kiss.
+195. **Retellings** (S2E09). Retelling an event to a new listener must add a fact or a new reaction; otherwise it is a one-line summary.
+196. **Skye's touch as the button on every duel beat** (S2E09). At most 2 a duel.
+197. **A borrowed garment as a scene stamp** (S2E09). Name it twice an episode, then "the jacket".
+198. **The moon as the default light on bodies** (S2E09). One bodies-in-moonlight line a scene, three across a night run.
+199. **The same punchline across scenes** (S2E09). One callback, and only with a change.
+200. **The "she says it and waits" beat in heat scenes** (S2E09). Once per rung.
+201. **Time-zone arithmetic** ("It's after four there") (S2E09). Once an episode; currently in s06a, s19h and s19s.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

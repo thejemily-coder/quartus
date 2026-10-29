@@ -31,8 +31,9 @@ def check_var(name, where, ep, errs):
         if len(parts) != 2 or parts[1] not in ('jack', 'lena'):
             errs.append(f'{where}: bad resolve var {name!r}')
     elif head == 'duel':
-        if len(parts) != 3 or parts[2] not in DUEL_AXES:
-            errs.append(f'{where}: bad duel var {name!r}')
+        opp = ep.get('duels', {}).get(parts[1], {}).get('opponent') if len(parts) == 3 else None
+        if len(parts) != 3 or (parts[2] not in DUEL_AXES and parts[2] != opp):
+            errs.append(f'{where}: bad duel var {name!r} (axis must be rigor|wit|heart|lena or the duel\'s opponent id)')
         elif parts[1] not in ep.get('duels', {}):
             ep['_ext_duels'].add(parts[1])
     elif '.' in name:
