@@ -73,3 +73,8 @@ independent: nothing done in this repo or this artifact afterward touches it, an
 
 **Fork-only directives** live in `fork/FORK_BRIEF.md` (copy them to the top of the fork's brief at creation). The main
 timeline's writers' room must never read or apply them.
+
+**Fork EXECUTED 2026-10-29 (after S2E09).** GitHub refused new-repo creation from this session (403), so the alternate
+timeline lives on the long-lived branch **`hard-saying-alt`** of this repo, with its own artifact
+https://claude.ai/artifact/F2CbUgU7hNCNNjzXyqoqXw (seeded from after-s2e09) and its own Claude session. **The main
+timeline never commits to, merges, or rebases `hard-saying-alt`, and never writes to that artifact.**
