@@ -2033,3 +2033,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   and Clare caught between, Julian hearing a version, Osei noticing, Skye hearing something secondhand (she never says
   Lena's name). Each echo is specific and in-character; it costs both of them socially; it does not soften Jack
   (beyond done) or produce reconciliation. It should still be live when the five of them get in the car (S2E12).
+- **Theo and Laney work the phone call (player).** After Hale's, **Theo needles Jack** and **Laney needles Lena** for
+  the exact Friday call (Jan 8, the garage: "Will you be around after?" / "I've got a thing." / "Then call me after.
+  Eat something first." / "I haven't been fair to him... I'm going to fix it."), word by word, to figure out what
+  happened. Comparing notes (the alliance), they find two accounts of the same call that can't both be what was meant,
+  and it **makes the New Orleans idea more urgent** for them. Each needling is in character (Theo's charm and
+  persistence, Laney's sugar and steel); Jack and Lena each resist and harden. Knowledge rules apply: what Lena tells
+  Laney stays within what Lena would say even to her best friend; nothing leaks to Jack or Lena; the player may see the
+  alliance's alarm without the hidden truth being spelled out.
