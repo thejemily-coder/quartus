@@ -2249,3 +2249,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   dorm, as best they can, with the friend group, after Mass** (their first holiday hosted as a couple: a dorm-kitchen
   feast with improvised Youngstown and New Orleans touches; the whole group; comic logistics, real joy). Fits with the
   Easter Vigil/official beat and Skye's birthday text the same day.
+  - **Official at Easter dinner (player; supersedes "official at the Easter Vigil" and the Easter-morning status).**
+    Jack and Lena **officially decide on being a couple at the Easter dinner.** There, at last: **Theo and Laney's
+    long-awaited victory champagne toast and the alliance "reveal"** (the meetings, the whiteboard, the seating
+    sheet, the champagne bought for the misheard "No." wake, finally drunk for the right reason) **and the discovery
+    that everybody knew all along** (Kevin's "Respectfully, leave it alone"; Margot's field notes; the Broussards; et
+    al.). Any Facebook "in a relationship" status follows the dinner, not before.
