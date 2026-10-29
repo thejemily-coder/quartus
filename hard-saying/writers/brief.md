@@ -2102,3 +2102,20 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   as Margot.** Never list Kevin as a member, never have him scheme, recruit or report for it; he can be present,
   unwilling, and dry about it. (Fix any earlier brief/ledger wording that bunches him in, e.g. "the alliance (Theo,
   Laney, Kevin)".)
+
+### New Orleans arc decisions (player, after S2E10; binding for S2E12–S2E17)
+- **The turn stays at the Super Bowl (S2E13, Sun Feb 7).** The drive's fight and the 3 a.m. shoulder crack him; two
+  days of the Broussards treating them as a couple wear him down; the onside kick and the street break him open
+  against his will. He is furious at himself. Sudden but earned; both know, neither says it.
+- **The 3 a.m. bridge (S2E12):** after hours of silence following Jack's "movie called 'Jack'" line, **Lena speaks
+  first, sideways**: half-awake, something small and practical (gas, the radio, a Saints stat). He answers. Not an
+  apology: a truce neither names. Then the quiet anything-but-the-thing talk, then her head on his shoulder.
+- **"Liar" and the January call are untangled AT MARDI GRAS (S2E16)**, at the center of the honesty scene: each replays
+  the call ("Will you be around after?" / "I've got a thing." / "Then call me after."), hears what the other heard,
+  and both take back "liar." Painful and funny. Not before.
+- **Skye contact during New Orleans: Jack is FAITHFUL THROUGHOUT.** He keeps every call and answers every text, warmly
+  and truly; **the betrayal is entirely internal, which is worse.** This SUPERSEDES the plan's "he lets Skye go to
+  voicemail" (S2E14): there is no voicemail slight. "The phones tell on them" now plays as Lena watching him answer
+  Skye every time, and him seeing her turn her phone face-down on a Julian text. Skye's most salacious picture still
+  arrives from Vancouver (her own escalation, missing him, not a reply to being ignored), and the open-or-delete choice
+  stands.
