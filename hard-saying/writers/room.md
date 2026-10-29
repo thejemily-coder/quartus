@@ -360,6 +360,18 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 199. **The same punchline across scenes** (S2E09). One callback, and only with a change.
 200. **The "she says it and waits" beat in heat scenes** (S2E09). Once per rung.
 201. **Time-zone arithmetic** ("It's after four there") (S2E09). Once an episode; currently in s06a, s19h and s19s.
+202. **The caught-and-covered alliance ladder** (S2E10 reviewers). Jack catches the conspirators, they cover with a cheerful lie, and he lets it go: once an episode, with a rung that changes.
+203. **Hand-staging for scrutiny** (S2E10). Characters arrange hands or props for an observer: at most 2 an episode.
+204. **The silent laugh as an intimacy button** (S2E10). At most 2 an episode, in different scenes.
+205. **The offstage laugh as an exit** (S2E10). At most 2 an episode (Theo's laugh into the pillow in s14 owns this one).
+206. **Profession-voice bits** (S2E10). A character speaking in a weather-girl, tourism-board, golf-announcer or lector voice: at most 2 an episode, each owned by one character.
+207. **The kiss meant to be short that runs long** (S2E10). Once an episode; vary the s13 branches.
+208. **The bystander reaction to a kiss** (S2E10). Once an episode (S2E10 kept one: the row-nine kid).
+209. **The narrator's tell-gloss** (S2E10: "Theo is telling the truth" cut three times). Never gloss a character's honesty in narration; let the scene show it.
+210. **A clock number echoed across scenes** (S2E10: "thirty-eight seconds"). One echo, only with a change.
+211. **"X, and nothing else" closing a gesture** (S2E10). Once a scene.
+212. **Cumulative journal cards repeating a scene's last line word for word** (S2E10). Once an episode.
+213. **"Item." as a list engine for Theo** (S2E10). Once a duel.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

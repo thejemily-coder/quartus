@@ -1,0 +1,154 @@
+{
+ "scenes": {
+  "s12": {
+   "slug": "WEDNESDAY · 8:00 PM · ST. BRENDAN’S — BEHIND THE SCREEN",
+   "set": {
+    "confession_owed": 0,
+    "confessed_skye_7": true,
+    "confessed_singalong": true,
+    "resolve.jack": "+2",
+    "soul.grace": "+1"
+   },
+   "body": [
+    "The clock over the choir loft says two minutes to eight. He is early, which in this closet is new, and he sits down in the last pew in the blue dark with his hands between his knees to work out what to do with the two minutes. The votive rack still has Tuesday in it: stubs in the sand, drips of wax down the iron, a paper drip guard somebody has not had the heart to throw out.",
+    "The little light over the closet door is on. The index card beneath it has been revised.",
+    {
+     "type": "doc",
+     "title": "INDEX CARD · CLOSET DOOR",
+     "text": "KNOCK (GENTLY)\n(AND PROMPTLY)"
+    },
+    "The second line is in Mrs. Fitch’s pen. He knocks gently. On the far side a rosary finds the arm of a chair, and he goes in and kneels on the worn place, with his forearm on the ledge and the bruise the gearshift left on his ribs reporting for duty.",
+    "“Bless me, Father, for I have sinned. It’s been seven days since my last confession.”",
+    "“Seven days.” Osei lets it sit a moment. “And at eight o’clock exactly. I had prepared a remark about punctuality. It will keep. I think you will give me the occasion.”",
+    "“That’s generous, Father.”",
+    "“It is a forecast. I was a doctor.”",
+    "He starts with Sunday night and goes on to Tuesday, in the short words, with the honest verbs. Neither takes long, and neither is small. The list is shorter than the one he carried in last week, and everything on it is further down the road.",
+    {
+     "if": "s2e10_verge==\"reckless\"",
+     "text": "Then the worst of it, because Osei taught him to put the worst of it last and say it flat. “Last night, in my own room, I told her to ask me.”",
+     "else": "Then the worst of it, because Osei taught him to put the worst of it last and say it flat. “Last night, in my own room, if she had asked me, I don’t know that I would have said no.”"
+    },
+    {
+     "if": "s2e10_verge==\"reckless\"",
+     "text": "“*I told her to ask,*” Osei says back to him, very evenly. “That is not a thing that happened to you, Jack. That is a thing you said. You were right to put it last.”",
+     "else": "“*I don’t know that I would have said no,*” Osei says back to him, very evenly. “It is an honest sentence, and a frightening one. A man should know his no before the night, not in it. In Kumasi we say you do not test the depth of the river with both feet.”"
+    },
+    "“She wouldn’t,” Jack says. “She said not in my bed, and not on my brother’s birthday, and not the night before this.”",
+    "“Then you were kept last night by someone who was under no obligation to keep you,” Osei says. “I also saw who held your candle on Tuesday. Both are true, and both are on the scale, and neither makes the other pan lighter. Do not thank yourself for either.”",
+    "He gives him Monday next, because it is shorter and the worst is already said. A red light on State Street, the top down, a song on the radio. He sang it at her at the top of his lungs, and a girl in the next lane had a phone. “No wrong meant, Father. It was a fun moment and I didn’t think it through. It’s venial. I know it’s venial. I was happy, Father. I know that isn’t a defense.”",
+    "The chair creaks twice, as if its occupant has leaned very suddenly away from something, and when Osei speaks his voice has been put back in order.",
+    "“It is not a defense. It is the best sentence you have brought me.” A cough. “I saw it. My niece in Kumasi has also seen it. Ghana has seen it, Jack.”",
+    "“Yes, Father.”",
+    "“I believe you. No wrong meant. If that were the whole of it I would send you home with a smile.” The beads move. “When I practised, I told my patients: do not take the strong medicine for the small ache. On the day you have the large ache, it has nothing left to say to you. The words in that song are strong medicine, meant for one strong thing. Each time they are taken for a very good afternoon, they have a little less to say when you need them. You knew that. It is why you said *venial* before I could.”",
+    "“Yes, Father.”",
+    "“And it was not only the two of you at the stoplight. Who watched?”",
+    "“My sister’s homeroom. Our pastor’s secretary. My mother’s phone tree.”",
+    "“Thirty-eight seconds of you, in front of all of those. It is a short text from which to read a man’s faith, and they will read it. People take the measure of the thing from the ones who say they believe it. I do not say this to frighten you; it is the same for me, and I wear the collar. Say it was light, and say it was light of you, and leave it here. I do not want you at home counting.”",
+    "“Now.” The chair settles. “Last week I asked you, to what question. Have you found it?”",
+    "*Quale ti fa pregare?* It is where it was on Christmas night, over the beads, and he leaves the first word of it on the kneeler and passes the rest through the linen.",
+    "“My grandmother’s,” he says. “She asked me at Christmas. What makes me pray.”",
+    "“Mm.” The beads. “You said it like a man reading a translation.”",
+    "Jack opens his mouth, and the Italian is whole on the roof of it, and he shuts his mouth on it.",
+    "“I do not need the original,” Osei says. “I wish only to tell you I can hear that there is one. Now the part I may not skip. In your own words, please. The Baltimore Catechism I also know.”"
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“I want to. I’m closer than I’ve ever been to not wanting to.”",
+     "set": {
+      "s2e10_amend": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "key": "Behind the screen you told Osei you want to stop — and that you’re closer than you’ve ever been to not wanting to.",
+     "response": [
+      "“I want to,” Jack says. “I’m closer than I’ve ever been to not wanting to.”",
+      "It is not what he walked up the hill meaning to say, and it is the first time he has heard it said. The beads stop.",
+      "“Then you have told me the truth, which is the beginning,” Osei says. “Most men start with the end.”"
+     ],
+     "goto": "s12a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“I’ll try.”",
+     "set": {
+      "s2e10_amend": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "Behind the screen you told Osei you’ll try.",
+     "response": [
+      "“I’ll try,” Jack says.",
+      "It sits in the closet with nothing around it, and it looks small.",
+      "“Try is a good word,” Osei says. “It is a verb. Most of the good words are.”"
+     ],
+     "goto": "s12a"
+    },
+    {
+     "tag": "Restraint",
+     "text": "“I won’t put myself there this week.”",
+     "set": {
+      "s2e10_amend": "restraint",
+      "trait.control": "+1",
+      "promised_this_week": true
+     },
+     "key": "Behind the screen you promised Osei you won’t put yourself there this week.",
+     "response": [
+      "“I won’t put myself there this week,” Jack says. “I can see as far as Sunday.”",
+      "The beads move through a hand.",
+      "“A week is a good size for a promise,” Osei says. “Small enough to carry. Carry it.”"
+     ],
+     "goto": "s12a"
+    }
+   ]
+  },
+  "s12a": {
+   "slug": "WEDNESDAY · 8:24 PM · ST. BRENDAN’S, THE FRONT STEPS",
+   "body": [
+    "“For your penance,” Osei says, “the canticle of Simeon. *Now, Master, you may let your servant go in peace.* I read it last night, and you studied your shoes. Say it tonight, slowly, and stay with the part about letting go. Everyone thinks it is about dying. It is about a man who has been handed the thing he waited his whole life for, and opens his hands.”",
+    "Behind the linen the shadow of a hand comes up. Jack says the Act of Contrition to the end of it without being stopped, and the last of the absolution comes through the screen unhurried: *in the name of the Father, and of the Son, and of the Holy Spirit.*",
+    "“Amen.”",
+    "“Sunday,” Osei says, “you will come up the center aisle, and I will give you what is in the ciborium and the same face I give everyone. It is the only face I brought.”",
+    "“Jack.” Beads, once. “Last week I told you to go home. You went, and you were right to, and you are back in seven days with the same wrist. A man who is told where to sleep has not yet decided where he lives. So tonight I tell you nothing. You know where the door is.”",
+    "Out in the nave the lamp burns red over the tabernacle and nothing else burns. Mrs. Fitch has gone and taken her lamp, and the card table stands bare under the choir loft. On the top step he sits down with the cold of the stone coming up through the Carhartt, and says the canticle to the courtyard, slowly. The olive trees stand where the candles were. At the part about letting go he stops, and says it again. His hands are open on his knees. He didn’t put them there.",
+    "Behind him the hall door opens and Osei comes out locking it, his coat over one arm and the ring of keys in his hand. He stops on the step beside Jack’s shoulder and looks at the courtyard instead of at him, and remarks, as a man remarks on the weather, “I hear Professor Hale’s dog had a difficult evening last week.”",
+    "Jack studies the olive trees.",
+    "After a moment Osei nods, as at an answer, and goes down to the lot, the limp first and the keys behind it. A small car starts, and Ocean Road takes it.",
+    "The RAZR is in Jack’s hand, the cracked hinge under his thumb."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "osei",
+     "title": "Fr. Gabriel Osei",
+     "text": "Newman chaplain. Kumasi, Ghana. Used to be a doctor. Limps and doesn’t mention it. Plays chess like he’s got all night and highlife like the neighbors owe him money. Told me a proverb about funerals. I laughed. That was apparently the point. Said Nonna’s Mass himself at the 12:10, like he promised. Gave me a card for her: ‘A grandmother likes paper.’ Blessed Hale’s deaf dog with his hand on its ribs, where it could hear. Finished Hale’s limerick for him. Laughed for a full minute at Becca’s crab. All Souls, at the book: ‘Write them all. He has a large book and a long memory.’ Saturday, behind the screen, one question: do I want to stop seeing her, or stop what happens. Change the hour. Keep her in the daylight. The Advent party: got the spray tan. Confiscated the mistletoe — he requested. At the sink he told me about the waiting room in Kumasi. His door is the one with the light on. Saturday, behind the screen: love wills the good of the other — and that’s why it’s dangerous. Gaudete: rejoice is a command. Wednesday, behind the screen: I’m not avoiding the occasion, I’m scheduling it. Distance is a mercy; use it. Blessed us both for the road on the Newman steps. Come back. The first day back I gave him Father Dom’s message: we’ll see. He laughed. I told him I went at home. The night of the earthquake he asked the bishop if he could spare an old doctor. The bishop couldn’t spare a young priest. His friend Yaw from medical school is in Port-au-Prince — alive, operating in a parking lot. Saturday at three-thirty the light was on. Sunday he read Cana. Yaw has a generator now. Sunday at the 11:30 I didn’t go up. At the door I introduced him to Skye. He said her name. Then he said Wednesday, eight o’clock. Wednesday at eight the light was on, and he waited. Not gentle this time. I told him I think she’s the answer, and he asked: to what question? I didn’t have it. He said on Monday it was she who kept my Sunday, not me. I told him I called a friend a liar at a table, and went for the places that hurt. Two sins, he said, and I confessed the one I’m sure of. He said he’d be less sure, if he were me. I told him I’d spoken for him on Monday. He let most of it stand: what’s good between us is good, and the near occasion was the room and the hour and the door. He said I took his daylight at noon with the door shut. Neither one cancels the other. And if I make her the answer, I’ll make her the occasion. The absolution isn’t a curtain between Fridays. He said Ma asked me the right question. He asked what will be different when I leave. Absolved me anyway. Penance: the Sower, slowly — the thorns. Then: go home tonight. The Fourth Sunday: a prophet’s never welcome in his own country. Skye watched me go up. At the door he said “Skye,” and she said “Father,” and he looked at me about as long as a handshake. He didn’t say anything. Candlemas: Simeon held the child and let himself be let go. At the door he said, “I saw your concert.” Wednesday at eight I told him all of it, and the song. Ghana has seen it. He asked again, to what question, and I gave him Nonna’s. He said I said it like a man reading a translation. Absolved. Penance: Simeon’s canticle, slowly — the part about letting go. He didn’t tell me where to sleep. I know where the door is."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Porch",
+     "text": "*Walk down Del Playa to her.*",
+     "set": {
+      "s2e10_after": "porch"
+     },
+     "response": [
+      "He shuts the phone on its hinge and puts it away. She said *and then you come back here*, with her ear over his heart, and he said yes to it. He goes down the hill."
+     ],
+     "goto": "s13p"
+    },
+    {
+     "tag": "Lot",
+     "text": "*Call her. Wait on the steps.*",
+     "set": {
+      "s2e10_after": "lot"
+     },
+     "response": [
+      "He thumbs down to SKYE (MISFIT) and it rings once.",
+      "“I’m on the steps,” he says.",
+      "“Stay there,” she says. “I’m coming to you.”"
+     ],
+     "goto": "s13l"
+    }
+   ]
+  }
+ }
+}

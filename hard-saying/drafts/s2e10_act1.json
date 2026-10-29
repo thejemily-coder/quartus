@@ -1,0 +1,112 @@
+{
+  "scenes": {
+    "s01": {
+      "slug": "MONDAY · 6:50 AM · DEL PLAYA LANE, HER ROOM",
+      "set": {
+        "rel.skye.warmth": "+1"
+      },
+      "body": [
+        "The light comes in gray over the sill and finds the floorboards first, then the heap of their clothes, then the white wall above the mattress, going gold as it climbs. Below the bluff the surf is still big from the weekend, breaking and pulling back under everything.",
+        {
+          "if": "s2e9_after==\"stay\"",
+          "text": "He wakes in her bed with the day already in the room. Not Ellery, not the Saab at the Rincon, not six o’clock in December with the dark still on and two boards to load: her bed, the morning on the wall, her knee over his.",
+          "else": "He came back down Del Playa at six with the dark just lifting, and she let him in at the door in his flannel and went back to sleep on him before he had his shoes off. Now the morning is on the wall, and her knee is over his."
+        },
+        "Downstairs Tomás’s coffee grinder starts up through the floor, a dentist in the next town, and stops, and starts again. The room is cold everywhere the sheet isn’t.",
+        "She’s awake. She’s lying on her side with her cheek on her arm, watching him, and from the look of her she’s been at it for some time.",
+        {
+          "if": "s2e9_question==\"sincerity\"",
+          "text": "“Still now?” she says."
+        },
+        {
+          "if": "s2e9_question!=\"sincerity\"",
+          "text": "“Still here?” she says."
+        },
+        "“Yes,” he says, and the word is already out in the room with the light by the time he hears it.",
+        "She has a Sharpie from somewhere. She always has a Sharpie from somewhere. She pulls the cap off with her teeth, pushes the sheet down off his ribs with the back of her hand, and says around the cap, “Hold still. I’m finishing.”",
+        "Her fingers have been drawing on him in her sleep. Now she means it. The felt tip is cold and wet and tickles like hell, and he isn’t allowed to laugh, because she’s working, the cap clamped in her teeth and her hair down over one eye. It’s a horse. It has a mane this time, and a tail with some wind in it, and four legs that bend the way legs go, and last, with the very tip, an eye. She sits back to look at it.",
+        "Under the horse, smaller and worse, she adds a lily: three petals and a band across their middle, the left one leaning like it’s had a couple.",
+        "“That’s a fleur-de-lis,” he says.",
+        "“It’s a lily.” Through the cap. “I did the reading.” She blows on it to dry it, one long cool breath from his ribs to his hip, and he looks very hard at the ceiling.",
+        "“You’re blushing on your ribs,” she says, interested. “I didn’t know you could do that there.”",
+        "The RAZR is in his jeans on the floor. He fishes it out one-handed. Theo’s from 11:58 last night is still waiting on the little outside screen — *Home? Asking for Hollis.* — and he answers it now, with her chin on his shoulder, reading along.",
+        {
+          "type": "sms",
+          "from": "Jack",
+          "text": "home. eventually.",
+          "time": "6:58 AM"
+        },
+        "“*Eventually*,” Skye reads. “Such commitment.” She takes the cap out of her mouth. “Corinne at nine. An hour on the phone about my face. Then I’m putting myself on tape.”",
+        "“For what?”",
+        "“A pilot.”",
+        "“What pilot?”",
+        "“I don’t say it till I have it. It’s bad luck. Actors are worse than Catholics.”",
+        "“My grandmother would light a candle on it.”",
+        "“Your grandmother already has a candle going on me.” She sounds very pleased about it. “What have you got?”",
+        "“Hale at one.” He shuts the phone. “Come get me after?”",
+        "“I’m taking you somewhere with a parking meter.”",
+        "“What’s there?”",
+        "“A meter, Jack. Bring quarters.”",
+        "Tomás’s voice comes up the stairwell. “Skye. Coffee.” The clink of a mug on the rail. “Point’s closing out. Somebody put white ones at the cross again.” His feet go back down.",
+        "“Thanks, Tomás,” she calls. Her eyes have gone to the floor by the mattress, where Sunday left his clothes: the jeans with the bulletin still folded in the back pocket, the T-shirt, the Marisol sweatshirt inside out.",
+        "“You have to wear those,” she says. “The Mass clothes. It’s tradition.”",
+        "“Whose tradition?”",
+        "“The street’s. Del Playa at seven in the morning, in your church clothes, past every boy on the block hosing last night off his porch. I’ll narrate.” She comes up on one elbow with the sheet held to her chest and drops into the hush of a man lying in the grass with binoculars. “*Dawn, on the Central Coast. The young male stirs. He does not yet know what awaits him.*”",
+        "She breaks off. “Is there a saint for this? There’s a saint for everything.”",
+        "“Augustine,” Jack says. “*Lord, make me chaste —*”",
+        "“*— but not yet.*” She points the Sharpie at him. “That one I know. It was on a mug in the writers’ room. Somebody’s ex-wife gave it to him. I like Augustine. He was honest about his calendar.”",
+        "“He got there,” Jack says. “Eventually.”",
+        "“Don’t.” She caps the pen. “I like him how he is.”",
+        "She lies back down with her head on his shoulder and her hair across his mouth.",
+        "“Anyway,” she says, “shame’s Wednesday. Today’s just the walk.”",
+        "He puts his hand in her hair and leaves it. Downstairs the grinder stops.",
+        "She sits up. “So. The walk. Who’s doing the voice?”"
+      ],
+      "choices": [
+        {
+          "tag": "Wit",
+          "text": "*Let her narrate it.*",
+          "set": {
+            "s2e10_dawn": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "She follows him down as far as the porch in his sweatshirt and very little else, and does the rest from the top step in the binocular hush. “*The male, having failed to migrate, attempts the journey home in his Sunday plumage. Note the bulletin. Note the gait. He has been to church, and then he has very much not been to church.*”",
+            "Two houses down a boy hosing sand off his steps lets the hose go slack. “*A rival male,*” she breathes. “*He senses weakness.*” She keeps it up past the third house and the fourth, over the surf and the grinder, and when Jack gets to the corner he bows to Ocean Road without turning around, and hears her lose it behind him."
+          ],
+          "goto": "s02"
+        },
+        {
+          "tag": "Charm",
+          "text": "*Narrate it yourself.*",
+          "set": {
+            "s2e10_dawn": "charm",
+            "trait.charm": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            "He does it himself, from her doorway, getting into the jeans, in the flattest Youngstown he owns. “*The young Catholic emerges, blinking. He is a long way from his parish. Mrs. Fitch will hear of this by noon. He will say he was at a Bible study. He will not be believed.*”",
+            "Skye laughs until she has to hold the sheet over her face with both fists. He pulls the sweatshirt over his head, and the horse on his ribs is the last thing she sees of him before the sweatshirt comes down over it. On the stairs a sock hits him between the shoulder blades. It’s his."
+          ],
+          "goto": "s02"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "*Kiss her quiet and go.*",
+          "set": {
+            "s2e10_dawn": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "She’s drawing breath for the next line when he leans down and kisses her in the middle of a word, and the binoculars go, and the hush, and she takes his face in both hands and keeps him there until the documentary is a lost cause. Her thumb finds the scar in his eyebrow on the way.",
+            "“Go,” she says into his mouth. “Go before I cast you.”",
+            "“As what?”",
+            "“The male.”",
+            "He goes. The length of the stairs, and out past Tomás and the coffee, he can hear her up there laughing to herself."
+          ],
+          "goto": "s02"
+        }
+      ]
+    }
+  }
+}
