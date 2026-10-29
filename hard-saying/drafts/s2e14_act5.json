@@ -1,0 +1,416 @@
+{
+ "scenes": {
+  "s06": {
+   "slug": "TUESDAY · 11:50 AM · DUPRE STREET, THE KITCHEN — GOLD PAINT",
+   "set": {
+    "rel.lena.heat": "+1"
+   },
+   "body": [
+    "The cold came down in the night. At seven Jack said the penance on his knees at the attic window, Tuesday’s version, with the glass gone gray in front of him and the wind worrying the tin on the shed roof in the side yard: two by two, the walking stick, no bread, no sack, no money in the belt, sandals and the one tunic, stay in the house that takes you in, the dust off the feet, the oil and the sick made well. He got through it clean, start to finish, without going back for a single word, and he doesn’t trust it. By noon the porch boards are dark with a wet that came from no rain he heard fall, Tony and Clovis have been gone since six with two folding chairs to hold a corner on Canal, and down Celeste’s counter seven thermoses stand in a row with their caps screwed on, six steel ones and a plaid one from some other decade, each with a strip of masking tape and her handwriting on it.",
+    "“Six bags of coffee and one of milk,” Celeste says, and smooths the last strip of tape down with her thumb. “Nobody drinks the milk.”",
+    "The twins come in the back door at a run at ten to twelve with their school bags still on their backs. The school let everybody out early for the parade, and Josie announces it from the doormat at the top of her voice, to the house, to the dog, to the front room, and Mémère, from the daybed, says something back in French about the floor.",
+    {
+     "if": "s2e12_dino==\"wit\"",
+     "text": "In three days Jude Broussard has said *yes sir* to Jack, and *no*, and nothing else. He comes down the table now with his bag still on and sets a box on the oilcloth by Jack’s coffee: a green plastic dinosaur behind a cellophane window, BRONTOSAURUS EXCELSUS on the end in gift-shop lettering, last seen on Saturday night in the duffel at the foot of the attic ladder. The box is in better shape than when it left Cabazon. Jude puts one finger on the name."
+    },
+    {
+     "if": "s2e12_dino==\"wit\"",
+     "text": "“They took the name away,” he says. “It’s *Apatosaurus* now.”"
+    },
+    {
+     "if": "s2e12_dino==\"wit\"",
+     "text": "“My sister’s eight,” Jack says. “Don’t tell her.”"
+    },
+    {
+     "if": "s2e12_dino==\"wit\"",
+     "text": "Jude looks at the box, and at Jack, and at the box. “Okay,” he says, and picks it up again and carries it off up the hall toward the ladder under his arm, with the school bag bumping on his back."
+    },
+    {
+     "if": "s2e12_dino!=\"wit\"",
+     "text": "In three days Jude Broussard has said *yes sir* to Jack, and *no*, and nothing else. He sits down across the table with his bag still on and watches Jack eat a cold biscuit, every bite of it, without blinking, and when it’s gone he says, “Does Ohio have dinosaurs?”"
+    },
+    {
+     "if": "s2e12_dino!=\"wit\"",
+     "text": "“Trilobites,” Jack says. “It’s the state fossil.”"
+    },
+    {
+     "if": "s2e12_dino!=\"wit\"",
+     "text": "Jude thinks about that for some time. “Okay.”"
+    },
+    "Lena has the end of the table by the window, where the light is, such as it is today. She has Tess’s good makeup brush, borrowed out of the bathroom while Tess is in the front room feeding the baby, and a pot of gold face paint from the drugstore on Carrollton, and a saucer, and a wet rag over her shoulder, and she paints a mean fleur-de-lis. Josie sits for hers with her chin up and her eyes on the ceiling. Lena lays it on in three strokes, the middle petal and then the two that curl away from it, and the band across, steady as a man running a bead down a seam, and sits back to look.",
+    "“Bigger than Jude’s,” Josie says.",
+    "“Hush. You’re a saint in a window, not the foreman.” Lena rinses the brush in the saucer. “Jude. Here.”",
+    "Jude flinches at the touch of the brush. “Hold still, *cher*,” Lena tells him, “or you get a crawfish,” and he holds, and gets his, and gets the rag across his eyebrow where the second curl went wrong.",
+    "Then she holds the brush out across the corner of the table at Jack, with gold on the end of it, and doesn’t say anything.",
+    "He reaches for it. She takes it back out of his reach and leans over the corner of the table instead, and takes his jaw in her hand, and turns his face to the window, to what light there is.",
+    "The brush is cold and wet and very light. She does the middle petal first, up the bone under his eye, and her breath is on the paint to keep it from running, warm, and smelling of chicory. Her hand is under his chin. Her eyes are on her own work and nowhere else, with the line between her brows that she gets over a page of Aquinas, and her thumb is at the corner of his mouth, holding the skin where she wants it. He wants, very simply, to turn his face the last little way into her palm. He keeps it where she put it.",
+    "The back door bangs open. Tony is in it with the transistor in one hand, back from Canal for the thermoses, red in the face from the wind, and he takes in his kitchen table at a glance. “Don’t you paint the Ohio boy —”",
+    "She has already done the first curl.",
+    "At the stove, eating cold red beans out of the pot with a serving spoon, Remy says, “*Brother-in-law.*”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "jude",
+     "title": "Jude Broussard",
+     "if": "s2e12_dino==\"wit\"",
+     "text": "Josie’s twin. Doesn’t talk, and then does. Found Rosie’s dinosaur in my duffel and kept it safe three days. They took the name away, he says. It’s *Apatosaurus* now. He won’t tell her."
+    },
+    {
+     "kind": "person",
+     "id": "jude",
+     "title": "Jude Broussard",
+     "if": "s2e12_dino!=\"wit\"",
+     "text": "Josie’s twin. Doesn’t talk, and then does. His first question for me was whether Ohio has dinosaurs."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Restraint",
+     "text": "*Hold still.*",
+     "set": {
+      "s2e14_paint": "restraint",
+      "trait.control": "+1",
+      "rel.lena.heat": "+1"
+     },
+     "key": "Tuesday in the kitchen Lena painted a fleur-de-lis on your face. You held still. It took longer than a fleur-de-lis needs.",
+     "response": [
+      "He holds still. It takes longer than a fleur-de-lis needs. She does the second curl, and the band across, and goes back over the first curl, fine as it was, and the band again; she wipes a fleck off his cheekbone with the corner of the rag from somewhere he couldn’t see it; and the whole time Tony stands in the back door with the transistor going and the cold coming in round him, and doesn’t shut it. When she’s done she blows on the paint to dry it and gives him back his face.",
+      "Celeste is in the hall door with a thermos in the crook of each arm and the rest in the milk crate at her feet. “Coats. All of you. It’s February on Canal.”"
+     ],
+     "goto": "s07"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Make it a Browns helmet.”",
+     "set": {
+      "s2e14_paint": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "Tuesday in the kitchen Lena painted a fleur-de-lis on your face, and, at your request, a very small Browns helmet beside it. There. Now you’re both.",
+     "response": [
+      "“Make it a Browns helmet,” he says, out of the side of his mouth she isn’t holding.",
+      "She doesn’t answer him. She lets go of his face, takes Josie’s red lipstick off the windowsill, dabs it on the saucer, works the gold into it with the end of the brush until it comes up orange, and takes his face back. Beside the fleur-de-lis, up toward his ear, she paints a very small, very accurate orange helmet with a stripe down the middle and no logo on the side, because there isn’t one.",
+      "“There,” she says. “Now you’re both.”",
+      "Josie gets up on her knees on her chair to see. “That’s *sad*.”",
+      "Celeste is in the hall door with a thermos in the crook of each arm and the rest in the milk crate at her feet. “Coats. All of you. It’s February on Canal.”"
+     ],
+     "goto": "s07"
+    },
+    {
+     "tag": "Reckless",
+     "text": "*Take the brush and paint hers.*",
+     "set": {
+      "s2e14_paint": "reckless",
+      "painted_lena": true,
+      "trait.reckless": "+1",
+      "rel.lena.heat": "+1"
+     },
+     "key": "Tuesday in the kitchen Lena painted a fleur-de-lis on your face, and you took the brush and painted hers. The whole kitchen watched. Laney walked out of the room.",
+     "response": [
+      "He takes the brush out of her fingers. She lets him. She sits back in her chair and turns her own face to the window for him, chin up, and shuts her eyes.",
+      "He is no painter. The middle petal goes on fat, the curls go on like two hooks off an overhead crane, and his hand isn’t as steady at her cheekbone as he would like. The kitchen has gone quiet round the two of them: Tony with the radio in the back door, Remy with the spoon halfway to his mouth, Josie on her knees on her chair. In the hall doorway Laney, in Remy’s old Saints parka, stops dead, looks, pulls the hood up over her hair with both hands, and backs out of sight the way she came.",
+      "Lena opens her eyes and finds herself in the dark of the window glass. “It’s a crawfish,” she says.",
+      "“It’s a fleur-de-lis.”",
+      "“It’s a crawfish, Youngstown, and I’m wearing it.”",
+      "Celeste is in the hall door with a thermos in the crook of each arm and the rest in the milk crate at her feet. “Coats. All of you. It’s February on Canal.”"
+     ],
+     "goto": "s07"
+    }
+   ]
+  },
+  "s07": {
+   "slug": "TUESDAY · 2:30 PM → 4:45 PM · CANAL STREET — THE WAIT",
+   "music": "The Soul Rebels — “Let Your Mind Be Free”",
+   "set": {
+    "in_the_coat": true,
+    "wes_hug": true,
+    "rel.lena.heat": "+1",
+    "rel.lena.warmth": "+1",
+    "rel.wes.friction": "-1",
+    "resolve.jack": "-1"
+   },
+   "body": [
+    "Tony’s corner on Canal is twenty feet of curb, a strip of dead winter grass on the neutral ground behind it, and a length of streetcar track that a man in a reflective vest has asked him twice, politely, not to put a chair on. Tony has stood somewhere on Canal Street for every big thing in this city since 1981. He picked this piece of it at six o’clock this morning in the dark, with his brother Clovis and two folding chairs, and he hasn’t given up a foot of it since.",
+    "The floats aren’t due on Canal until after dark, and at half past two the crowd is already here. It has been here since breakfast: ten deep along the curb and on the neutral ground behind it, both sides of the street, as far up toward the Dome and down toward the river as Jack can see. Stepladders stand along the curb with plywood seats bolted across their tops for the children, a kid on every one already and a parent holding the legs. Coolers. Lawn chairs. A man in a blue Colts jersey with MANNING across the back is being forgiven, loudly, by strangers. “He’s from *here*, baby,” a woman in a gold wig tells him, and kisses him on the cheek, and the man in the jersey stands there and takes it with his eyes shut.",
+    "The Broussards have the corner furnished. Clovis is in one folding chair with Aints III sitting between his boots in a quilted dog coat with a fleur-de-lis sewn on the back. Tess is in the other with Lucille in her lap, zipped into a black-and-gold snowsuit with the hood up, so that the baby looks out at the parade route like a very small astronaut who has landed somewhere unexpected and has questions. Beau is up a ladder, because Beau climbs poles for Entergy and trusts a ladder more than he trusts the ground. Clovis’s pickup is pulled up on the grass behind them with the tailgate down. Celeste has the thermoses in a milk crate at her feet, and a sleeve of foam cups. Mémère stayed home with Channel 4.",
+    "“She told me, ‘I saw nineteen-eighty in person,’” Celeste says, pouring. “‘I can see this on the television.’”",
+    "Down the block, at the corner, NOPD has a line of barricades out, and Luc is on one of them in uniform with his hands on the rail and his eyes on the crowd. He doesn’t look over at his family. A little after three he does, a single time: across Canal, over all those heads, a nod. After that it’s the crowd again.",
+    "Tony stands at the curb with his hands on his hips and looks up Canal and down it, at his city out on its own sidewalks on a Tuesday afternoon with the stores shut. “Biggest crowd this city ever had,” he says, to anybody.",
+    "A man on the next ladder says, “Amen.”",
+    "Behind them on the neutral ground a brass band is warming up, not playing yet so much as finding out who showed: a sousaphone trying the same three notes over and over, a snare getting tightened, two trumpets talking over each other. Then they fall into the same song together, and the people on the grass around them start to move.",
+    "It’s gray. It has been gray since dawn, a low lid of cloud over the city, and the wind comes down Canal off the river and finds every gap in everybody. Lena is in Remy’s purple sweatshirt with a jean jacket over it that might have been warm in October. She has been running the corner for an hour. She moved a man’s cooler out from in front of Lucille without consulting the man; she told Jack where to stand, and then where to stand instead. She is also shaking.",
+    "“You’re cold,” he says.",
+    "“I’m *excited*. It’s a parade.”",
+    "“This isn’t cold.”",
+    "“It’s cold, and it’s wet, and the wind’s off the river.” Her teeth are going. “Your Yankee cold is dry, and you brag on it like a virtue. This is a damp, low-lying, Catholic cold, Youngstown. It gets in the bones and says a novena there.”",
+    "He takes the Browns knit off his own head, the Glenwood spare, orange with the brown band, and pulls it down over her hair to her eyebrows.",
+    "Tony, from the curb: “Take that off my daughter’s head.”",
+    "“It’s warm, Daddy.”",
+    "Tony looks at her in it. He opens his mouth and shuts it, and takes the matter up with the sky over Canal instead, at length, without a word, and on the neutral ground behind him Remy, with a go-cup of his own, crosses himself.",
+    "An hour in, with the band on its third song and the wind no better, she turns round from the street, sizes up his open coat, and steps inside it. Back to his chest. Her shoulders under his collarbones, the knit under his chin. He closes the Carhartt round both of them and it nearly goes: he gets three of the buttons done up over the front of her and holds the rest of it shut with his arms crossed over her.",
+    "“It’s forty degrees, Youngstown,” she says, facing the street. “Don’t flatter yourself.”",
+    "He doesn’t. He stands there with her. She’s warm all down the front of him and cold at the edges, where the wind gets in at the hem, and the knit smells of his own head and her shampoo, and her hands come up out of the sweatshirt sleeves and take hold of his wrists where they cross over her. He wants her. There’s no getting round it, standing like this, and he stands like this. Over her head the band goes into something slower, and a man in front of them lifts his little girl onto his shoulders, and at the curb Tony keeps his back to the two of them and his face to the street.",
+    "Twenty feet up the curb, on purpose, Theo and Laney stand shoulder to shoulder with their backs to the corner and their faces to the street. They have been standing like that for the better part of an hour, and they haven’t turned round.",
+    {
+     "if": "s2e14_mon==\"groceries\"",
+     "text": "At the tailgate Theo has his iPhone out and is doing nothing with it but looking at it, and over toward the corner, and back at it. He holds it out to Kevin across a bag of Zapp’s, screen down."
+    },
+    {
+     "if": "s2e14_mon==\"groceries\"",
+     "text": "“Confiscate it,” Theo says. “I can’t be trusted.”"
+    },
+    {
+     "if": "s2e14_mon==\"groceries\"",
+     "text": "Kevin takes it and zips it into the inside pocket of his windbreaker. When Laney looks round at the two of them, Kevin says, “He said confiscate it.”"
+    },
+    {
+     "if": "s2e14_mon==\"groceries\"",
+     "text": "A city garbage truck comes down Canal ahead of everything, slow, clearing the route, with two men riding the back step in orange vests, and the crowd cheers it the length of the block. The men on the step take their gloves off and bow. Margot, on the tailgate beside Kevin with her notebook in her coat, watches them go."
+    },
+    {
+     "if": "s2e14_mon==\"groceries\"",
+     "text": "“Durkheim,” Margot says. “*Collective effervescence.* A society worshipping itself and calling it a football team.”"
+    },
+    {
+     "if": "s2e14_mon==\"groceries\"",
+     "text": "Laney turns her head exactly far enough to see the tailgate and no farther. “Then why are *you* crying?”"
+    },
+    {
+     "if": "s2e14_mon==\"groceries\"",
+     "text": "Margot wipes under one eye with the side of her thumb and inspects the thumb. “Allergies to the sacred.”"
+    },
+    {
+     "if": "s2e14_mon!=\"groceries\"",
+     "text": "At the tailgate Kevin sits with one hand on the zipped pocket of his windbreaker, where Theo’s phone has lived since Kenner. Every so often Theo looks round at the pocket, and Kevin looks back at him, and Theo looks at the street."
+    },
+    "Margot, on the tailgate, has been watching Kevin, and Kevin has been watching the band.",
+    "“You’re the only one not looking at them,” Margot says.",
+    "Kevin keeps his eyes on the sousaphone. “It’s a parade, Margot.”",
+    "Margot looks at him a little longer and drops it, and goes back to the band herself.",
+    "By twenty to five the gray has begun to go to evening at the edges, and the band has stopped for water, and somebody on the neutral ground says, “Look what the river brought.”",
+    "He comes across the grass with two friends from Gentilly, one in a Deuce McAllister jersey and one in a purple Carnival wig worn for warmth: the Saints cap with the bent brim, a camouflage jacket, a go-cup in his hand. Wes is thinner than he was in October. It’s in his face mostly, under the cheekbones, and in how the jacket hangs off his shoulders. His eyes are bright, and a little slow.",
+    "Celeste gets to him first. “*Baby*,” she says, and takes his face in both her hands and looks at it, and lets go. Tony’s handshake gets about halfway before it turns into a hug with a fist in it, two thumps on the back. Tess turns Lucille round in her lap so he can see her, and Wes looks at the baby a long time, and puts out one finger and touches the foot of the snowsuit.",
+    "“Lucille,” Tess says.",
+    "Wes nods at the foot.",
+    "Lena works the buttons open from the inside, quick, and steps out of Jack’s coat into the wind and hugs Wes round the neck, up on her toes in the knit. He hugs her back with the go-cup held out away from her so it won’t spill on her.",
+    "“You eating, Wes?”",
+    "“Your mama’s gonna feed me, dawlin’.”",
+    "“Today, Wesley. I asked about today.”",
+    "He laughs at that, a little. She lets go of him and steps back, and back into Jack’s coat, and does the buttons up over herself, in front of him.",
+    "Wes watches her do it. The chipped tooth.",
+    "His eyes come to Jack, over the top of the knit. “Ohio.” He tips the go-cup at the two behind him. “Gentilly. They’re harmless.”",
+    "“Wes.”",
+    "A priest comes down the neutral ground in a black windbreaker with a gold Saints stole over it, a fleur-de-lis embroidered on each end, flinging holy water over the crowd off a palm branch he dips in a bucket that a boy carries along beside him. People duck and laugh and bless themselves. The Broussards cross themselves, Tony and Celeste and Remy, Tess with the baby’s mitten in her hand, Lena inside the coat with her elbow in Jack’s ribs, and Jack with them. Wes stands with the water on the brim of his cap and the go-cup in his hand.",
+    "When the priest has gone by, Wes turns to the street and tops the go-cup up from a flask out of his jacket, low, a quick pour. Inside the coat Lena is looking at it.",
+    "Then Lucille wants her bottle, suddenly and at the top of her lungs, and Celeste’s thermoses are the only hot thing on Canal Street. Tess gets up with the baby. Celeste takes a steel thermos out of the crate. Clovis goes along because it’s his truck. Lena unbuttons herself out of Jack’s coat for the second time — “Hold my place” — and goes with them up the neutral ground to stand the bottle in a cup of hot coffee. Tony has already gone down the block with a cup for Luc, who won’t be allowed to drink it.",
+    "That leaves Wes and Jack at Tony’s empty chairs. Wes’s friends are a few yards off, arguing with a stranger about Deuce. Wes sits down in Tony’s chair and holds the go-cup on his knee and looks at the street. Jack stays standing, with his coat open and the wind back in it.",
+    {
+     "if": "e9_wes_danny==\"told\"",
+     "text": "“How’s your brother?” Wes says."
+    },
+    {
+     "if": "e9_wes_danny==\"told\"",
+     "text": "“He’s got the Saints,” Jack says. “Him and one other guy in the dayroom.”"
+    },
+    {
+     "if": "e9_wes_danny==\"told\"",
+     "text": "Wes laughs. It’s the old laugh, up out of the belly, and it’s gone nearly as soon as it comes."
+    },
+    {
+     "if": "e9_take==\"drink\"",
+     "text": "“You never did tell me, podna,” Wes says. “On that beach. You drank to it, and I said that’s a yes where I’m from.”"
+    },
+    {
+     "if": "e9_take==\"drink\"",
+     "text": "He takes a pull on the go-cup and looks into it. “I been wondering was it a yes where *you’re* from.”"
+    },
+    {
+     "if": "e9_take==\"will\"",
+     "text": "“You said you would, podna,” Wes says. “On that beach.” He takes a pull on the go-cup and looks into it. “I been wondering did you mean it.”"
+    },
+    {
+     "if": "e9_take==\"call\"",
+     "text": "“You told me call her at eight-oh-four,” Wes says. He takes a pull on the go-cup and looks into it. “I did, a while. Then I didn’t.”"
+    },
+    {
+     "if": "e9_take!=\"drink\" && e9_take!=\"will\" && e9_take!=\"call\"",
+     "text": "“You nodded, podna,” Wes says. “On that beach.” He takes a pull on the go-cup and looks into it. “I been thinking about that nod.”"
+    }
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "wes",
+     "title": "Wes Arceneaux",
+     "text": "Lena’s boyfriend. Tulane, civil engineering; the boat at sixteen. Six-two, a chipped front tooth, a Saints cap he’s been bending since 2006. Calls me the Ohio guy. Says she called me a jagoff and that means she likes me; he’s known her since she had a retainer. Drank the Pacific: the jar came back empty. Theo fetched him from the airport alone, in a two-seater, with a sign, and cancelled his motel. Bedbugs, Theo says. He’s on Theo’s new air mattress in our room, three nights. The Corps built the walls wrong; he’s going to build them right. I like him. Saturday night on the beach at Campus Point he waded into the Pacific to the knees. At sixteen he pulled people off roofs for four days in his uncle’s boat. There was one he couldn’t get to — a woman in an attic on Pauger Street; the axe wouldn’t go through. He couldn’t kneel for a year after. Then she came along, he says, and he could. Her Mémère gave him a ring at Easter, for when. He’s going to ask her father after she graduates. He asked me not to say anything to her. He asked me to take care of her. He stopped going to Mass in September. The attic wasn’t over. Mémère asked him about the ring at the tomb on All Saints. He ended it on All Souls, on the phone: she’d marry him anyway, he said, so he couldn’t let her. Tuesday at the parade, on the Canal Street neutral ground with two friends from Gentilly and a go-cup: thinner than in October, the same chipped tooth. Celeste called him baby. Lena hugged him. He asked about my brother, and he asked about the beach. When he went, it was the hug."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“I remember what you said.”",
+     "set": {
+      "s2e14_wes": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.wes.trust": "+1",
+      "rel.wes.warmth": "+1"
+     },
+     "cue": "Wes will remember that.",
+     "key": "On the Canal Street neutral ground Wes asked if it was a yes where you’re from. You told him you remember what he said. When he went, it was the hug.",
+     "response": [
+      "“I remember what you said,” Jack says.",
+      "Wes looks up the neutral ground to the truck, where Lena stands at the tailgate in the knit holding a foam cup of coffee in both hands with the baby’s bottle standing in it, for Tess. “Yeah,” he says. “I can see you do.”",
+      "Up the curb his friends are calling him, *Wes, Wes, come on, they got a spot up by the Dome*, and he gets up out of Tony’s chair and stands there. He doesn’t put his hand out. He hugs him: one arm first, with the go-cup held off to the side, and then both arms, hard, his chin on Jack’s shoulder and the bent brim against Jack’s ear.",
+      "“See you, Ohio.”"
+     ],
+     "goto": "s07a"
+    },
+    {
+     "tag": "Candor",
+     "text": "“I didn’t answer because I couldn’t promise it.”",
+     "set": {
+      "s2e14_wes": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1",
+      "rel.wes.trust": "+1"
+     },
+     "key": "On the Canal Street neutral ground Wes asked if it was a yes where you’re from. You told him you didn’t answer because you couldn’t promise it. Nobody can, he said. That’s why you say it.",
+     "response": [
+      "“I didn’t answer,” Jack says, “because I couldn’t promise it.”",
+      "Wes nods at the street for some time. “Nobody can, podna,” he says. “That’s why you say it.”",
+      "Up the curb his friends are calling him. He gets up out of Tony’s chair and sets the go-cup down on the seat of it, and hugs him, both arms, hard, his chin on Jack’s shoulder, the brim of the cap knocked crooked against Jack’s ear. When he steps back he picks the cup up again.",
+      "“See you, Ohio.”"
+     ],
+     "goto": "s07a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Who dat.”",
+     "set": {
+      "s2e14_wes": "wit",
+      "trait.wit": "+1",
+      "rel.wes.warmth": "+2"
+     },
+     "key": "On the Canal Street neutral ground Wes asked if it was a yes where you’re from. You said Who dat. He said it back, and this time it was the hug.",
+     "response": [
+      "“Who dat,” Jack says.",
+      {
+       "if": "e9_bye==\"whodat\"",
+       "text": "Wes looks up at him out of Tony’s chair, and gets up out of it, and there’s the chipped tooth. “Who dat,” Wes says, and this time his hand comes all the way up past Jack’s shoulder, and it’s the hug, hard, the go-cup in his other hand held out over the curb.",
+       "else": "Wes looks up at him out of Tony’s chair, and gets up out of it, and there’s the chipped tooth. “Who dat,” Wes says, and it’s the hug, hard, the go-cup in his other hand held out over the curb."
+      },
+      "Up the curb his friends are calling him. He lets go and backs off a step, and points the cup at Jack.",
+      "“See you, Ohio.”"
+     ],
+     "goto": "s07a"
+    }
+   ]
+  },
+  "s07a": {
+   "slug": "TUESDAY · 4:50 PM · CANAL STREET — A PRALINE",
+   "set": {
+    "heard_ring_back": true
+   },
+   "body": [
+    "Lena comes back down the neutral ground with the bottle done and the knit pushed up off her eyebrows, and steps into his coat again without looking, as if it were a doorway she uses, and he closes it. She’s cold all down the back from the walk to the truck, and it comes through the sweatshirt into him, and goes.",
+    "Josie is at his elbow. He didn’t hear her come. She has a praline in her mitten from the woman with the basket who has been working the curb since three, a dollar apiece, and she eats it in small bites with her eyes on the street.",
+    "“He gave Mémère the ring back,” Josie says. “In November. After Mass, in the box. She keeps it in the cedar chest in Breaux Bridge, with Grandmère’s christening gown.”",
+    "Lena, against his chest: “*Josie.*”",
+    "“He should know.”",
+    "“Know *what*, Josie.”",
+    "“*Rien.*” Josie breaks the praline in half, drops one half into the outside pocket of his coat at his hip, and goes on eating the other.",
+    {
+     "if": "knows_wes_ring",
+     "text": "He has seen that ring once, on a screen the size of a matchbook that Wes had to tilt for him till it lit, on a lifeguard ramp at three in the morning, with the tide out below them."
+    },
+    "Inside the coat Lena doesn’t turn round. Her hands are on his wrists where they cross over her, and they don’t move.",
+    "Josie licks her mitten clean and goes back along the curb toward her mother.",
+    {
+     "if": "josie_asked",
+     "text": "Halfway there she turns and walks backward a few steps to say it, to Jack: “I didn’t tell Mémère. About Canada.”"
+    },
+    "Over Canal the gray is going to dark. The streetlights come on a block at a time, from up by the Dome down toward the river, one block and then the next, and the crowd cheers each block as it lights, because tonight this city will cheer anything that comes on. On the neutral ground the band stops to drink."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "josie",
+     "title": "Josie Broussard",
+     "text": "Lena’s sister, thirteen, with Lena’s eyebrows and Lena’s way of standing. Saturday night on the front steps she asked who I was talking to, and I told her. Sunday at breakfast she asked, at full volume, if my girlfriend in Canada was watching the game. When Mémère asked who was in Canada, she said *Personne*. Tuesday on Canal, with a praline: the ring went back to Mémère in November, after Mass, in its box. It’s in the cedar chest in Breaux Bridge. He should know, she said. Know what, Lena said. *Rien.*"
+    }
+   ],
+   "next": "s08"
+  },
+  "s08": {
+   "slug": "TUESDAY · 6:50 PM · CANAL STREET — LOMBARDI GRAS",
+   "set": {
+    "pic10_arrived": true,
+    "rel.lena.heat": "+1",
+    "resolve.jack": "-1",
+    "resolve.lena": 3
+   },
+   "body": [
+    "The noise gets there first. It comes down Canal a block ahead of anything you can see, the crowd up the street taking it up and handing it down, and by the time it reaches Tony’s corner the people around Jack are yelling at an empty street with their arms in the air.",
+    "Mounted police come first, at a walk, six abreast, the horses enormous under the streetlights with their ears going round at the noise. A marching band in purple and gold behind them, the drum line so loud it moves the air in his chest; another in green, the drum major bending over backward till his plume touches the street. And after the bands the floats, Carnival floats out of the krewe dens, papier-mâché and gold leaf and bulbs strung along their rails, borrowed for a Tuesday in February, and up on them in the cold, in jerseys and hoodies and fistfuls of black-and-gold beads, the players.",
+    "Drew Brees goes by on one of them, saluting the crowd, and every hand on the block goes to an eyebrow and salutes him back. Tom Benson rides another, and Tony takes his cap off to it. Remy, with somebody’s transistor against his ear, reports from the neutral ground that the floats are stopping up the route at a reviewing stand for the mayor. “Nagin’s up there somewhere,” Remy says, and goes back to the radio.",
+    "Tony isn’t crying. He stands at the curb with his cap in his hand and his chin up and his face wet, and Celeste, beside him with her arm through his, says, “It’s the wind,” crying.",
+    "Pop would have stood here like that. Pop would have stood exactly here.",
+    "Laney has been catching beads with both hands since the first float, from twenty feet up the curb, and handing every strand to whatever child is nearest on a ladder. “Here, sugar.” A boy in a Bush jersey gets a purple one; a girl on her father’s shoulders gets three. A gold strand comes down out of the lights and she takes it one-handed, and comes down the curb through the crowd, and without a word or a look at Jack reaches over his shoulder and puts it in Lena’s hand. She is back up the curb before Lena has it doubled round her own wrist.",
+    "Margot stands with her hands deep in her coat pockets and her notebook in one of them. Theo keeps reaching into his good coat for a phone that isn’t there.",
+    "Behind the next band comes a float with a trophy on it as tall as a garage, a Lombardi built out of something silver and lit from underneath, and the crowd goes up at it like it’s the real thing, and surges, and the curb goes out from under everybody at once. Jack goes down a step into the gutter with Lena in the coat and gets his feet back. Her hand flies up to her collar. When the crowd settles back onto the curb she has her fist shut at her throat, and when she opens it the medal is in her palm with the chain run out between her fingers.",
+    "“Clasp,” she says.",
+    "She puts it in the breast pocket of her jean jacket, under his coat, and buttons the flap down over it.",
+    "At two minutes to seven, in the inside pocket of the Carhartt, against his ribs and against the middle of Lena’s back, the RAZR goes: one long buzz, the one it does for a picture.",
+    "She feels it. “You’re ringing.”",
+    "“It’s a text.”",
+    "He knows that buzz. There is one person on earth who sends him those. He doesn’t take it out. He couldn’t get to it without opening the coat, with her back where it is, and he leaves the coat shut, and it lies there against his ribs, between his shirt and her, and goes still. She doesn’t step out of the coat.",
+    "And then, up Canal, under the lights, the real one. Sean Payton is on a float with the Lombardi Trophy up over his head in both hands, bringing a hand down off it to blow kisses at the city, and the noise coming down the street in front of him is nothing Jack has a word for, not from Cleveland, not from anywhere."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Lift her so she can see the trophy.*",
+     "set": {
+      "s2e14_float": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "He gets her up onto Clovis’s folding chair with his hands at her waist inside the coat, and the coat comes up with her, and so does half of him, one knee on the seat of the chair beside her boots, holding her steady while the trophy goes by under the lights. She sees it. She yells at it in Mémère’s French, with both arms up out of his coat, things he will never in his life get translated.",
+      "The last float goes by, and the crowd closes in behind it like water. Down the block Luc nods across Canal from his barricade, and they walk home in the dark through a city with nowhere to put everybody."
+     ],
+     "goto": "s09"
+    },
+    {
+     "tag": "Wit",
+     "text": "“That’s the Lombardi. In Youngstown we’d pawn it.”",
+     "set": {
+      "s2e14_float": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“That’s the Lombardi,” Jack says, into the top of the knit. “In Youngstown we’d pawn it.”",
+      "Tony, at the curb, doesn’t turn round. “*SON.*”",
+      "This time it’s a warning, and it gets heeded, and Lena laughs into his collar without a sound, her shoulders going against his chest.",
+      "When the last float has passed, the crowd closes over the street behind it like water, and Luc, at his barricade, nods across Canal again. It’s a long walk home in the dark, in a city with nowhere to put everybody."
+     ],
+     "goto": "s09"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Keep still and watch it go by.*",
+     "set": {
+      "s2e14_float": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He keeps still. She keeps still. The trophy goes by over their heads with the streetlights in it, and she brings both hands up and puts them over his on the front of the coat, and keeps them there till it’s gone on down toward the river.",
+      "After the last float the crowd closes behind it like water, and Luc nods across Canal from his barricade, and they walk home in the dark, all of them, through a city that has nowhere to put everybody tonight."
+     ],
+     "goto": "s09"
+    }
+   ]
+  }
+ }
+}

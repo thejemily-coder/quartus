@@ -1,0 +1,369 @@
+{
+ "scenes": {
+  "s04": {
+   "slug": "MONDAY · 6:05 PM · DUPRE STREET, THE FRONT STEPS — WHAT IT COSTS",
+   "body": [
+    {
+     "if": "s2e14_mon==\"airport\"",
+     "text": "They get back from Kenner with the sky going and his ears still ringing. Remy yelled the last of his voice at a sunroof on the airport road and has talked since by horn, two short taps at every corner, and every corner taps back. At the curb he gives the house one long one.",
+     "else": "The groceries go up the steep front steps two bags at a time, Blue Plate and Camellias and Zapp’s and all the rest of it, and Celeste stands in the door and counts them in under her breath. When the count comes out right she takes the last two off his arms herself. “Sit, baby. You carried.” The screen door claps behind her, and he does."
+    },
+    "Dupre Street has gone back to being a street. Three houses up, a man in a Saints windbreaker is hosing WHO DAT off the back glass of his Buick, and the white shoe polish runs down over the bumper and along the gutter toward the corner. The porch across the way, which has had somebody on it every hour of the day and night since Saturday, has a cooler on it and a folding chair and nobody. The last of the light has gone amber over the roofs. Jack sits on the top step with his forearms on his knees, and the RAZR goes off in the Carhartt’s inside pocket against his ribs.",
+    "The little screen on the lid says ANCHOR. Out there it’s the dead hour between the lunch counter and the supper one, when Gloria does the pies.",
+    "“We watched it at the counter,” Gloria says, instead of hello. “Me and Rudy. Merle came in at the half and sat through the rest with a cup of coffee and let it go cold. Rudy cried.” Somewhere behind her a sheet pan goes into the rack. “Don’t tell him I told you.”",
+    "“When?”",
+    "“The interception. He had his rosary out on the ticket rail, and when the boy went down the sideline he put a bar towel over his whole head and kept it there through the extra point. He says in Soledad you were Saints or you were Raiders, and he wasn’t going to be a Raider.”",
+    "“I won’t tell him.”",
+    "“Tell him you heard. Leave me out of it.”",
+    {
+     "if": "s2e11_pie==\"pecan\"",
+     "text": "“Did the grandmother eat it?”",
+     "else": "“Did they eat the pie?”"
+    },
+    {
+     "if": "s2e11_pie==\"pecan\"",
+     "text": "“Saturday night,” Jack says. “Off a fork, standing up in the kitchen. She said *Bon*.”",
+     "else": "“Every crumb,” Jack says. “The grandmother had the last of it off a fork, standing up.”"
+    },
+    {
+     "if": "s2e11_pie==\"pecan\"",
+     "text": "Out in Marisol the register drawer runs out and bumps shut. “Well,” Gloria says. And then, to whatever pie is in front of her: “Pecan keeps. People don’t know that about pecan.”",
+     "else": "Out in Marisol the register drawer runs out and bumps shut. “Well,” Gloria says."
+    },
+    "“Now business.” The grease pencil, Jack would bet money, has come out of her hair. “Hector’s faster than you on the Hobart, hon, and he’s got a baby, and he wants your Saturdays.”",
+    "Thursday went to Hector before Christmas, for the baby, and Hector has had the rest of his shifts since Friday. Saturday is the shift with the fishermen in it, seven to one, and the fishermen pay in cash and tip in it. Up the street the man has turned his hose off and stands looking at his clean back glass.",
+    "“I told him Saturdays are spoken for,” Gloria says. “Come back the twentieth and earn them.”"
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "gloria",
+     "title": "Gloria (the Anchor)",
+     "text": "Hired me for rating her pie a four. Rated me a lattice-top. I’m not going to ask. Told her I won’t be the next guy at the door. She says nobody holds a door that long without somebody else walking through it. Asked after the pecan. I said she’s seeing somebody, he’s nice. She said lattice-top. Boxed a pie for Nonna. From a woman who’s been on her feet thirty years. Peach is August. St. Nicholas Eve, at the end of my shift, low, at the pass: ‘Pecan came to see if you were here.’ Gave my Thursday to Hector — his girl’s due at Christmas. ‘Don’t argue with a baby.’ Says I look like the pie case at closing. Rated somebody new. Boysenberry. ‘That one’s not waiting for any door.’ The last night: two forks and the pecan, at the counter. ‘That one’s still standing in it, hon.’ Thursday I asked her for Saturday night. ‘Who’s she?’ ‘You met her.’ ‘Boysenberry.’ She gave it to Rudy’s nephew. Her granddaughter got her watching *Sweetwater*; Thursdays at nine, for the clothes. She rated Cassidy a vanilla custard. Skye agreed. Thursday I asked her for the trip. Theo asked her Tuesday; she told him it wasn’t his to ask. Hector has my shifts — the baby’s six weeks. She counted my tips out early into an envelope with my name on it in grease pencil. Hale told her about the dog. In front of the dog. She made me pick the pie for the Broussards. Monday from the counter, the dead hour: she and Rudy watched the game, and Rudy cried. Hector wants my Saturdays. She told him they’re spoken for. Come back the twentieth and earn them."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Thank you, Gloria.”",
+     "set": {
+      "s2e14_gloria": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "From the Broussards’ steps you called Gloria’s Saturdays a gift and thanked her. Don’t thank me, she said. Come back.",
+     "response": [
+      "“Thank you, Gloria.”",
+      "“Don’t thank me. Come back.” Behind her the Hobart starts into its cycle, and she hangs up on it.",
+      "He sits with the shut phone on his knee. Up the street the Buick drips into the gutter, and its back glass is only glass again."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "tag": "Candor",
+     "text": "“Give him the Saturdays if the baby needs them.”",
+     "set": {
+      "s2e14_gloria": "candor",
+      "gave_hector_saturdays": true,
+      "trait.candor": "+1"
+     },
+     "key": "From the Broussards’ steps you told Gloria to give Hector your Saturdays, for the baby. The dumbest thing you ever said to her, she said. She’s keeping it.",
+     "response": [
+      "“Give him the Saturdays,” Jack says, “if the baby needs them.”",
+      "“That’s the dumbest thing you ever said to me.” A pause long enough for the Hobart to cycle behind her. “I’m keeping it.”",
+      "“Gloria —”",
+      "“You’ve still got Tuesdays. And whatever I feel like.” The line clicks over to the dial tone. He does the sum on the step, the one he knew the answer to before he said it, and puts the phone back inside his coat."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Tell Hector the Hobart likes me better.”",
+     "set": {
+      "s2e14_gloria": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "From the Broussards’ steps you told Gloria the Hobart likes you better. The Hobart doesn’t like anybody, she said. That’s why it works. Your Saturdays are waiting.",
+     "response": [
+      "“Tell Hector the Hobart likes me better.”",
+      "“The Hobart doesn’t like anybody, hon. That’s why it works.” Something slides onto the pass on her end, and somebody hits the bell. “The twentieth. Don’t make me hold a door.”"
+     ],
+     "goto": "s04a"
+    }
+   ]
+  },
+  "s04a": {
+   "slug": "MONDAY · 6:25 PM · DUPRE STREET, THE PORCH — NOTHING ABOUT FOOTBALL",
+   "body": [
+    "By the time the streetlight at the corner comes on he has moved to the swing, which takes his weight with one complaint from the chains and settles. The screen door opens behind him, and it’s Theo, in a gray cashmere sweater with the sleeves shoved up, carrying his MacBook open in both hands like a tray.",
+    "“Your Englishman wrote,” Theo says. He sets the laptop on Jack’s knees, screen up, already open to it. “I’m not here.”",
+    "He isn’t. He’s back inside before the swing has stopped moving, and from somewhere past the front room Laney says something to him, low, and he says something back, lower.",
+    {
+     "type": "doc",
+     "title": "From: Adrian Hale · To: jcostigan, mbroussard · Mon 8 Feb 2010, 2:12 PM · Subject: PHIL 109H",
+     "text": "Seminar met. The Moviegoer, in the absence of its two most motivated readers. Mr. Hargrove argued both of your positions and lost to himself. Mr. Noorzai asked whether you would be back. I said the Saints had won and that this was not a theological event.\n\nFour thousand words each, the Monday you return. Nothing about football.\n\n—A.H."
+    },
+    "Hale’s own *Moviegoer*, with Hale’s pencil arguing in all its margins, is upstairs in the duffel under Remy’s Tiger. Jack is still on Mr. Noorzai when the screen door goes again.",
+    "It’s Lena, in her socks, with Remy’s sweatshirt sleeves pushed up past her elbows and her LG open in her hand. She doesn’t come to the swing. She sits down on the top step with her back to the porch post and her feet two steps down, facing the street, and reads off her little screen in vowels that are trying very hard to be from Oxford and are mostly from Mid-City: “‘*Nothing about football.*’”",
+    {
+     "if": "amen_for_frank",
+     "text": "Beside her on the step stands the mailing tube, Celeste’s tape round both ends and FRANK COSTIGAN · GLENWOOD AVE across it in Tony’s capitals, ready for whatever day the post office decides this city is going back to work."
+    },
+    "“He wrote you too,” Jack says.",
+    "“He wrote *us*.” She scrolls with her thumb. “‘Its two most motivated readers.’ Read that fast and it’s an insult. Read it slow and it’s a compliment. He’s going to deny both.”",
+    "“Caleb argued both our positions.”",
+    "“And lost to himself.” She lays her head back against the post. “Poor Caleb. He’d have been so proud of himself right up till the last ten minutes.” She scrolls back to the top. “They read Binx without us. In Hollis 302, with the radiator going. A book about a boy from Gentilly who goes to the movies all the way through Carnival so he doesn’t have to be anywhere.” She points the LG up Dupre Street, past the Odyssey and the dripping Buick, toward the dark coming in off the lake. “Gentilly’s right over there.”",
+    "“You grew up with boys who think they’re in it.”",
+    "She turns her head and looks at him, on the swing, with the laptop on his knees and Hale’s sentences lit up on it. “I did,” she says. “Half of them will be on Canal tomorrow.”",
+    "The cursor waits in the reply."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "hale",
+     "title": "Prof. Adrian Hale",
+     "text": "Wrote *The Consolations of Disbelief*. Wrote me a postcard. Walked into Hollis 302 at 1:07 with wine on his cuff and asked us to prove we have souls. Saw my face at the Anchor before he could put it to the nine pages. Called me a spaniel. Some nights he drinks alone in the Anchor’s back booth after midnight and says Housman to the window. Tips like he’s apologizing. Wrote his doctorate on moral luck. Asked me if the lucky one sleeps. Lent me his own copy of Williams’s *Moral Luck*, his Oxford pencil arguing with Williams in the margins on a first-name basis. Wants it back with mine in it. I owe him more than one. Gave me a pocket Housman for Danny, foxed, wartime. No margins. They’d only erase them. Has a deaf old greyhound named Bishop Berkeley. Brought him to the Blessing of the Animals to annoy Fr. Osei. Osei finished his limerick for him. Asked me if the Housman had gone. Says when you leave something, look at it. Newman did. Threw a dinner at the cliff end of Del Playa. Told a man asking Yusuf about Fort Hood that Yusuf’s a guest, not a spokesman. Read our margins out loud. Stopped in the middle of Lena’s, and folded it away. Told Caleb he doesn’t answer devotion. Collected our margins. Read Lena’s on mine: Neither do I. The final’s oral, December 16th — each of us defends the other’s best argument, and he’s the opponent. Told the room to keep Yusuf’s chair. The last seminar: Lena said nothing for an hour, and he told us to note the date. By Friday we each email him which of the other’s arguments we’ll defend. If we pick a weak one, he’ll know. Both picks came in. Not surprised, not disappointed — at his age the same thing as joy. Wednesday, two o’clock. Come as you are. The oral: she’d sent him Augustine. Lena first, then me. He knew which one I’d picked. I don’t yet know what I know, he said. He said it was an argument; he’s told they still occur. Marks posted on the solstice. I did well, which he’d like me to understand is not the same as being right. He and Berkeley are spending Christmas in Marisol. Spring: PHIL 109H, The Novel as Moral Argument, Mondays and Thursdays at one in Hollis 302. Opposite ends of the table, for the safety of the others. He got the baby in the king cake. ‘For the first quarter of an hour you were civil, and I didn’t care for it. I find I care for this even less.’ Carthage is not on the syllabus. The Conversion of St. Paul: he did Saul for Caleb. He’s in New York Thursday, being rude to a churchman on a stage, so Greene moved to his house Wednesday with the State of the Union on — phones in the dog’s bowl, bring a guest, sides assigned: me for Sarah’s silence, Lena against. Opposite ends of a door. He turned the President off before the rebuttal. When Lena and I went at each other across his table he stood up and stopped it, in a voice I’ve never heard out of him, and he wasn’t amused. Berkeley felt it through the floor. On the deck he said the table was his. He asked where a Catholic goes at eight on a Wednesday. Give him my regards. He blessed my dog. He may like to do it again. Monday he gave us Joyce, “The Dead,” and taught it as if Wednesday never happened, and everybody at the table knew what it was for. He kept Lena after with the door shut. Then me: until Wednesday no argument at his table had ever sent the dog under the kitchen table. He said I went for the places that hurt, that I’m good at it, and that he’d rather I weren’t. Miss Ivors left before the goose. Nobody remembers what she was right about. Thursday he canceled the seminar for a lecture in Berkeley and gave me the week. Go. Write me something about it. Four thousand words on the second line, not one of them *liminal* — Theo’s terms; he took them. He lent me his own *Moviegoer*, his pencil in the margins. It ends on Ash Wednesday. Thirty hours in a van: he’d like to be the luggage. Monday he wrote to the two of us and nobody else: the seminar met on *The Moviegoer* without us, and Caleb argued both our sides and lost to himself. Four thousand words each, the Monday we’re back. Nothing about football. He noticed both replies came from the same city."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Wit",
+     "text": "“Respectfully, it was a theological event.”",
+     "set": {
+      "s2e14_hale": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He types it with one finger on a moving swing and sends it.",
+      {
+       "type": "doc",
+       "title": "From: jcostigan · To: Adrian Hale · Mon 8 Feb 2010, 4:28 PM · Subject: Re: PHIL 109H",
+       "text": "Respectfully, it was a theological event. Four thousand words. —J.C."
+      },
+      "“You stole that from Kevin,” Lena says, her thumbs already going. When he leans to see, she tips the screen down against her knee. A minute after his, hers goes.",
+      {
+       "type": "doc",
+       "title": "From: Adrian Hale · To: jcostigan, mbroussard · Mon 8 Feb 2010, 4:31 PM · Subject: Re: PHIL 109H",
+       "text": "Two replies within a minute, from the same city. I shan’t ask from which room.\n\n—A.H."
+      },
+      "It lands in both places together, the MacBook chiming on his knees and the LG buzzing on hers. She laughs out loud with her eyes shut, and says it to the street in the Oxford voice: “‘*I shan’t ask from which room.*’”",
+      "The swing won’t hold still under the laptop, so he brings it down and sits on the top step beside her, her sleeve against the Carhartt. The MacBook’s corner digs the RAZR into his ribs until he takes it out and lays it on the boards by hers. Two phones, face-up. Across the street, on the Odyssey’s back glass, Josie’s lipstick 0 has gone black in the dusk.",
+      "“Mama says you’re a large,” she tells the street.",
+      "“A large what?”",
+      "“You’ll see.”"
+     ],
+     "goto": "s05"
+    },
+    {
+     "tag": "Candor",
+     "text": "“Yes, sir. Four thousand. Not one about football.”",
+     "set": {
+      "s2e14_hale": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "She watches him type it. He can feel her watching right through to his initials, and he sends it.",
+      {
+       "type": "doc",
+       "title": "From: jcostigan · To: Adrian Hale · Mon 8 Feb 2010, 4:28 PM · Subject: Re: PHIL 109H",
+       "text": "Yes, sir. Four thousand. Not one about football. —J.C."
+      },
+      "“*Sir*,” Lena says, and turns a shoulder to him to write her own. A minute after his, hers goes.",
+      {
+       "type": "doc",
+       "title": "From: Adrian Hale · To: jcostigan, mbroussard · Mon 8 Feb 2010, 4:31 PM · Subject: Re: PHIL 109H",
+       "text": "Two replies within a minute, from the same city. I shan’t ask from which room.\n\n—A.H."
+      },
+      "The MacBook chimes on his knees. “He wrote back,” Jack says, and reads it to her, and she laughs out loud before he gets to the initials.",
+      "He brings the laptop down to the step, because the swing won’t keep still under it, and sits beside her. The MacBook’s corner digs the RAZR into his ribs until he takes it out and sets it by her LG, the two phones face-up on the boards. Across the street the lipstick 0 on the Odyssey’s back glass has gone black.",
+      "She looks at the street. “Mama says you’re a large.”",
+      "“A large what?”",
+      "“You’ll see.”"
+     ],
+     "goto": "s05"
+    },
+    {
+     "tag": "Restraint",
+     "text": "“Received.”",
+     "set": {
+      "s2e14_hale": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He types it, and his initials, and sends it.",
+      {
+       "type": "doc",
+       "title": "From: jcostigan · To: Adrian Hale · Mon 8 Feb 2010, 4:28 PM · Subject: Re: PHIL 109H",
+       "text": "Received. —J.C."
+      },
+      "Lena leans off the step far enough to read his screen. “*Received*,” she says. “You sound like my brother.” She writes something a good deal longer, with her shoulder turned, and sends it a minute after his.",
+      {
+       "type": "doc",
+       "title": "From: Adrian Hale · To: jcostigan, mbroussard · Mon 8 Feb 2010, 4:31 PM · Subject: Re: PHIL 109H",
+       "text": "Two replies within a minute, from the same city. I shan’t ask from which room.\n\n—A.H."
+      },
+      "The LG buzzes and the MacBook chimes, together. She laughs out loud and holds her phone out toward the swing so he can see, as if he didn’t have the same thing in his lap.",
+      "He comes down to the step with the laptop and sits beside her, and the MacBook’s corner digs the RAZR into his ribs until he lays it on the boards by hers, face-up. Across the street the Odyssey’s lipstick 0 has gone dark.",
+      "“Mama says you’re a large,” she tells the street, still smiling at it.",
+      "“A large what?”",
+      "“You’ll see.”"
+     ],
+     "goto": "s05"
+    }
+   ]
+  },
+  "s05": {
+   "slug": "MONDAY · 7:40 PM · DUPRE STREET, THE KITCHEN TABLE — RED BEANS",
+   "set": {
+    "resolve.lena": 3,
+    "resolve.jack": "+1",
+    "bag_large": true,
+    "rel.lena.heat": "+1"
+   },
+   "body": [
+    "The kitchen table seats eight, so Tony has put the card table on the end of it, and the leaf in, and a bedsheet over the seam where the two don’t meet, and around it on dining chairs and folding chairs and the piano bench from the front room and an upturned five-gallon bucket that Remy says is his by right sit fifteen people and a baby. Outside, Dupre Street has gone dark. The bulb over the table makes a yellow room inside the yellow room.",
+    "The pot has been on since noon. Somewhere in it, gone to nothing, are the onions he cut, and the pickled pork has given everything it had to the beans, and the rice steams in Mémère’s big colander by the stove. Under Clovis’s chair at the corner Aints III lies with his chin on his paws and his bandana on, waiting on the law of averages. The Magic Chef ticks as it cools.",
+    "At Celeste’s elbow there’s a Tupperware filled to the lid, with LUC on a strip of masking tape across the top. “Sixteen hours,” she says, when Jack looks at it. “He’s dead to the world. He’ll eat it at one in the morning, like a raccoon.”",
+    "Tony points at Kevin.",
+    "Kevin has been pointed at before. He puts his fork down and bows his head and says it short and in English, from *Bless us, O Lord* to *through Christ our Lord, amen*, and then, with every spoon at the table already lifted: “And thank You for the Saints.”",
+    "“*Amen*,” says Mémère, to the Saints, and crosses herself a second time.",
+    "Josie is aggrieved. She and Jude did a full day of school on the Monday after the Super Bowl, in this city, and came home at three to learn they get let out early tomorrow. “Tomorrow,” Josie says, for the third time since three o’clock. “They let us out early for the parade on the *day of the parade*. Like it’s a favor. Like somebody sat up nights thinking of it.”",
+    "“It is a favor, baby,” says Celeste.",
+    "Jude, beside her, eats his rice off the back of his fork. Jack hasn’t had a word out of him since Saturday.",
+    "Across Lucille’s head, Beau passes him the hot sauce without being asked. Beau is Tess’s husband, an Entergy lineman with a sunburn in February and the stillness of somebody who has spent eighteen hours in a bucket truck getting the power right along tomorrow’s route. He has been saving his words since he sat down.",
+    "“Youngstown,” Beau says. “Your daddy GM?”",
+    "“Lordstown.”",
+    "“What line?”",
+    "“Cobalt.”",
+    "Beau nods, the way men nod at a model year. “They bring him back?”",
+    "“Not yet.”",
+    "Beau nods again and hands him the rice. Pop would like Beau. Pop would ask him about his truck.",
+    "At the head of the table Tony puts his spoon down and stands, which in this family means legislation.",
+    "“Every Fat Tuesday since nineteen eighty-one,” Tony says, “this family goes out as one thing.”",
+    "“Crawfish, the first year,” Remy tells Jack, as a public service. “The year after the Pope came, the Swiss Guard. The year after the water, blue tarps. Last year —”",
+    "“And this year,” says Tony.",
+    "“The bag,” says Remy.",
+    "The table splits down the middle like a union hall on a contract vote.",
+    "“We can’t wear the *bag*,” says Josie. “We *won*.”",
+    "“That’s the *point*, Jo,” says Tess, from behind the baby.",
+    "“I still got mine,” says Clovis, with his mouth full.",
+    "Celeste says Tony’s name in a whisper that stops the kitchen as well as any shout would, and Tony stays standing.",
+    {
+     "if": "tony_porch",
+     "text": "Jack has heard this one. On the porch at halftime, with the transistor on the rail: nineteen-eighty, one and fifteen, a Schwegmann’s sack for a dollar, and a girl of twenty with her sewing scissors in her purse, cutting him the eyeholes in the parking lot. The girl is at the other end of the table, passing the French bread.",
+     "else": "“In nineteen-eighty,” Remy tells Jack, “we lost every game, so Daddy wore a grocery sack on his head to the Dome, and Mama cut the holes with a steak knife.”"
+    },
+    {
+     "if": "!tony_porch",
+     "text": "“We won one,” Tony says. “And it was her sewing scissors. Get it right or get out of my kitchen.”"
+    },
+    "“Wear it for penance,” Lena says. She has her elbows on the oilcloth and her spoon pointed at her father. “You don’t take off the sackcloth because the siege lifted. You keep it on to remember what it cost.”",
+    "“Wear it for Easter,” Jack says. “Easter isn’t Good Friday with better lighting. He came back with the holes still in Him, and He told Thomas to put his hand in them. Same wounds. Different Sunday.”",
+    "“*Ohio’s* right,” Remy says, and hits the table. “It’s Easter. We’re *Easter* now.”",
+    "Lena puts her spoon down. She looks at her brother, and at Jack, and at her brother again, and pushes her sleeves the rest of the way up.",
+    "“Oh,” she says. “Magdalena is *going* to say something.”",
+    "“Lord,” Celeste whispers.",
+    "“Nineveh,” Lena says. “Jonah, chapter three. Forty days and the city’s destroyed, and the king hears it, and he gets up off his throne and takes off his robe and puts on sackcloth and sits down in the ashes. And then he makes a *decree*. Man and beast, Remy. *Man and beast.* Nobody eats, nobody drinks, everybody in sackcloth, the cattle too, the sheep too, cows in sackcloth in the street crying out to God. And God sees it, and He relents, and the city is spared.” She picks the spoon back up. “And nowhere in that book does anybody take it off the cows. Go read the end. The last word of the book of Jonah is *cattle*. God gets the last word and He spends it on the livestock, saved, still in their sackcloth. You don’t take it off. You wear it to the parade.”",
+    "Remy opens his mouth, and shuts it, and puts both hands up. “Okay. The cows.”",
+    "At the far end of the table Mémère says something in French, short and dry, with her spoon in the air, and Celeste puts her hand over her mouth and keeps it there, and Lena goes red to the ears. Jack doesn’t have the French for it, and nobody gives it to him.",
+    "Under the table a stocking foot finds his boot. It comes from across the corner, where Lena sits, and settles against the side of it with the toes over his laces, warm through the leather, while she eats her beans as if she has never in her life had feet. He doesn’t move the boot. He eats his beans, and they are very good, and he couldn’t tell anybody one thing about them. At the next corner Josie has developed an interest in the ceiling fan. Across the table Laney has found something in her rice that needs all of her, and Theo is asking Clovis about dogs with a concentration Clovis has never had from anybody.",
+    "“*Assez*,” says Mémère, and it is.",
+    "Tony is still standing. “It’s a *bag*,” he tells all of them. He reaches back and opens the drawer by the stove, and Celeste reaches past him into it without looking and comes out with a pair of black-handled sewing scissors as long as her hand and holds them up under the bulb, and the kitchen applauds them. Remy whistles through his fingers. Clovis bangs the table with his palm.",
+    "“Same scissors,” Tony says. “Gold paint. A sack from the store. Eyeholes.” He looks down the table at every one of them, his mother and his wife and his children, and the baby, and the six from California. “We wore it in shame,” Tony says. “We’ll wear it in glory.”",
+    "Celeste is already up. She takes a marker out of the drawer and a stack of brown paper sacks off the top of the refrigerator and goes round the table behind the chairs, a hand on each shoulder as she passes and her sizes in a whisper, like a ward round at six in the morning.",
+    "“Remy, medium. Tess, medium. Beau, medium, I don’t care what you say. Twins, small.”",
+    "“*Mama*,” says Josie.",
+    "“Small, baby. Lucille’s in my arms; she’s a bag already. Mémère wears her veil.” There’s no arguing with that. “Laney. My redhead gets sequins.”",
+    "Laney puts a hand to her heart. “*Gold* sequins, Mrs. Broussard?”",
+    "“Is there another kind?”",
+    "Theo looks up from Clovis and the dogs. “Am I a bag?”",
+    "“Everybody’s a bag, baby.”",
+    "Margot sets her spoon down. “I’ll attend as a bag.”",
+    "“Kevin, medium.”",
+    "“I’m a medium in most things, ma’am,” Kevin says.",
+    "“Clovis brings his own.”",
+    "Clovis lifts his glass to that, and Aints III sneezes under the chair.",
+    "“Lena, medium.”",
+    "“I’m a *small*, Mama.”",
+    "“You’re a medium, and you’ll thank me on Fat Tuesday. Tony, extra large, and he knows why.”",
+    "She comes round behind Jack’s chair last. She uncaps the marker and writes on a sack against the back of the chair, in capitals, without asking him one thing.",
+    "“Baby,” Celeste says, “you’re a large.”",
+    "Nobody has asked him, and nobody at the table is about to."
+   ],
+   "journal": [
+    {
+     "kind": "person",
+     "id": "celeste",
+     "title": "Celeste Broussard",
+     "text": "Lena’s mother. A nurse — she came to the door in scrubs. Gives her orders in a whisper. Saturday night she was in the door when I came up her steps with Lena asleep, and she didn’t ask me one thing. Sunday she ran eleven people through one bathroom in a whisper. Ice, baby. In the street after the game, with the whole city yelling, she said to me: Bring them home, baby. Monday she took a personal day, her first since the storm, and made groceries. At red beans she sized the whole table for the bag in a whisper. Baby, you’re a large."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“I’d be honored, Mrs. Broussard.”",
+     "set": {
+      "s2e14_bag": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "At Monday red beans Mrs. Broussard sized the whole table for the family’s Mardi Gras bag. You’re a large, she said. You said you’d be honored.",
+     "response": [
+      "“I’d be honored, Mrs. Broussard.”",
+      "“You’d be a large,” says Celeste.",
+      "Tony, to his beans: “He’d be *honored*.”",
+      "“*Antoine*,” says Mémère.",
+      "Celeste sets the sack down on the oilcloth at Jack’s plate, LARGE side up, square to the edge of the table, and goes to put the scissors back."
+     ],
+     "goto": "s05a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“In Youngstown we wear the bag all year.”",
+     "set": {
+      "s2e14_bag": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "At Monday red beans Mrs. Broussard sized the whole table for the family’s Mardi Gras bag. You’re a large. You told the table that in Youngstown you wear the bag all year.",
+     "response": [
+      "“In Youngstown,” Jack says, “we wear the bag all year.”",
+      "Tony laughs until he has to put his spoon down. He laughs with his eyes shut and a hand on his chest, and Mémère says “*Antoine*,” and he laughs anyway, and Clovis catches it off him, and Aints III comes out from under the chair to see what he’s missing.",
+      "Celeste sets the sack down on the oilcloth at Jack’s plate with LARGE facing up, pats it, and goes to put the scissors back."
+     ],
+     "goto": "s05a"
+    },
+    {
+     "tag": "Candor",
+     "text": "“I’m not family, ma’am.”",
+     "set": {
+      "s2e14_bag": "candor",
+      "said_not_family": true,
+      "trait.candor": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "cue": "Only Lena heard that.",
+     "key": "At Monday red beans Mrs. Broussard sized you for the family’s bag. You said, plainly, that you’re not family. Nobody heard it but Lena.",
+     "response": [
+      "“I’m not family, ma’am,” Jack says.",
+      "He says it at an ordinary volume into a kitchen with fifteen people in it, and it goes nowhere. Remy is asking for the hot sauce. Mémère is telling Josie something in French with a finger up. Tess is wiping Lucille’s chin with the corner of a dish towel. Celeste is already writing LARGE.",
+      "Across the corner of the table, Lena heard it. She looks at her plate. Under the table her foot doesn’t move off his boot.",
+      "Celeste sets the sack down on the oilcloth at Jack’s plate, LARGE side up, and goes to put the scissors back in the drawer."
+     ],
+     "goto": "s05a"
+    }
+   ]
+  },
+  "s05a": {
+   "slug": "MONDAY · 8:40 PM · THE KITCHEN — THE DISHES",
+   "body": [
+    "Lena washes. He dries. Celeste has gone to sit down for the first time since she got up, and the kitchen has emptied round the two of them into the front room, where the television is on with the sound off and Mémère is in her chair under the lamp.",
+    "The house is a shotgun, every door in a line, and from the drainboard Jack can see straight down it to the front room: Theo and Laney on the couch, side by side, not looking into the kitchen so hard that every time one of them shifts the couch creaks. At the deep sink by the back door Kevin is rinsing a spoon. He has been rinsing it for some time.",
+    "When Lena opens the refrigerator to put the butter away, the Tupperware is on the second shelf with LUC across the lid, waiting for one in the morning.",
+    "She hands him the plates by the rim. Every plate, the edge of it pinched between her finger and thumb, held out at the length of her arm so that his hand can come in from the other side and their hands won’t meet. They meet anyway. They meet on the third plate and on the fifth, and on the gravy boat, which has a handle, and she hands him that by the lip, so that the side of her wet thumb goes along his knuckles and away. Each time it takes everything he has to think about the towel. He dries the gravy boat for a long time.",
+    "From her chair in the front room, Mémère: “*Magdalena.* The pot.”",
+    "“I *know* the pot.”",
+    "The pot is Mémère’s big black one, sitting on the back of the stove with the last of the beans gone hard round the inside of it. Lena runs the tap into it. Then she flicks the water off her fingers at him, sideways, and doesn’t look to see if it landed. It lands on his cheek, cold, and he dries that too.",
+    "The dish rack fills. The window over the sink is black, and the bulb has put the two of them in it, side by side, her sleeves up and the towel over his shoulder, and the table behind them, and on the oilcloth at his place the paper sack with LARGE on it in Celeste’s capitals, standing up on its own."
+   ],
+   "next": "s06"
+  }
+ }
+}

@@ -390,6 +390,12 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 229. **"A look he has only ever had from one other Broussard"** (S2E13). Once.
 230. **Tony squaring the transistor to his face** (S2E13). Max 3 per episode.
 231. **"Since [waypoint]" in narration, where the narration (not a character) marks time from an earlier moment** (S2E13; the narration cousin of #222). Max 4 an episode.
+232. **Averted-eyes chorus: a bystander caught looking, then looking away** (S2E14). At most 3 per path.
+233. **Lena's sleeves as all-purpose body language** (S2E14; about eight cut). At most 2 per path.
+234. **Bank-side chorus: an indifferent-world coda (fisherman, dog, child) after a duel point** (S2E14). Banned inside duels.
+235. **Withheld explanation: "doesn't explain / does not discuss"** (S2E14). At most 2 an episode.
+236. **Jack's Wit templates:** "In Youngstown we'd…" at most once an episode; relay jokes ("Tell X…") at most once an episode (S2E14: the Youngstown, relay and pawn jokes were recast).
+237. **Knocking wood as the jinx ritual** (S2E14: spent twice, Laney at s11 and Theo at s16). Retired until the reveal.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);
