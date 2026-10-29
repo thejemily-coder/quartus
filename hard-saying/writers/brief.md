@@ -2025,3 +2025,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   place), verbatim lowercase: *did you just steal my art. this is worse than pirating my work. nevermind happy looks
   good on you, you can steal from me*. It feeds Laney's gag in the lounge, or Lena faltering as she reads it after the
   gag ("happy" lands: she asked him in the van if he was happy).
+- **Hale's fight reverberates (player, binding for S2E09 → at least S2E11/the drive).** The argument at Hale's got
+  personal and nasty in front of a lot of people (Hale, Theo, Laney, Caleb, Yusuf, Evan, the table; via them, everyone).
+  It should **reverberate for a few episodes among people both Jack and Lena know**: the rumor mill and its versions
+  (Margot, Doug, Priya, Kenzie, Becca, Newman people, the Fishbowl), people choosing sides or refusing to, the
+  seminar table at the next 109H (Mon Feb 1, S2E10) and Hale's handling of it, Caleb's and Yusuf's discomfort, Kevin
+  and Clare caught between, Julian hearing a version, Osei noticing, Skye hearing something secondhand (she never says
+  Lena's name). Each echo is specific and in-character; it costs both of them socially; it does not soften Jack
+  (beyond done) or produce reconciliation. It should still be live when the five of them get in the car (S2E12).
