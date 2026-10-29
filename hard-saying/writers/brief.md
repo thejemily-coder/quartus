@@ -2119,3 +2119,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   Skye every time, and him seeing her turn her phone face-down on a Julian text. Skye's most salacious picture still
   arrives from Vancouver (her own escalation, missing him, not a reply to being ignored), and the open-or-delete choice
   stands.
+- **REFINEMENT (player): "beyond done" ends by the end of the drive.** After the 3 a.m. truce and the shoulder,
+  Jack's "beyond done with Lena" is over by arrival (it governs S2E09–S2E12 up to the shoulder only). **From the moment
+  they arrive on Dupre Street they're all over each other** (the physical register: proximity, touch, falling into
+  each other's orbit) **without admitting it**, except for **small leaks during the week** that lead toward the
+  Mardi Gras conversation. **At the Super Bowl win, in the elation, embracing in the street, they both KNOW it; they just
+  don't say it yet.** (Jack's faithfulness to Skye in every call and text still holds; the contradiction is the drama.)
