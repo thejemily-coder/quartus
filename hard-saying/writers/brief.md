@@ -2297,3 +2297,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   even more so** (dry, literary, at the whole table's expense and theirs; after Hale's dining-room fight, the contrast
   is the joke; it lands the day after Lena ends it with Julian and the day before Jack tells Skye, so neither can
   answer him).
+
+### After S2E16 (player feedback)
+- **Feedback:** "Phenomenal episode, it's finally happening!"
