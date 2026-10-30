@@ -2287,3 +2287,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   in**; and **he didn't think he could stop himself if he were single at that moment too**, so Becca was a guardrail
   against himself. She tells him how she read it (that he'd chosen Becca) and what it cost her. Both land; neither is
   absolved by the other's reason; it's the first domino of the whole chain.
+  - **And Jack's side of Julian (player):** he says **he thought it was obvious how he felt about her**, and that was
+    **the problem the entire time, for both of them** (each assumed the other could see it, so neither said it); **so
+    when she went out with Julian, it felt like her saying no.** (This mirrors her reading of Becca as his choice: each
+    took the other's next relationship as an answer to a question neither had asked out loud. It feeds directly into
+    "the wound of the avoidable" and the vow to speak plainly.)
