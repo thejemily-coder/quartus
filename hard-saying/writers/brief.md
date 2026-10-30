@@ -2277,3 +2277,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 
 ### After S2E15 (player feedback)
 - **Feedback:** "Finished, great episode." (first pipeline-v3 episode; quality holding.)
+- **S2E16 answers (player).** **The near-kiss is on the levee at night** (after the crowds thin, the Mississippi levee
+  at the Moonwalk, the river black, the city still roaring behind them; theirs alone). **They stop BOTH AT ONCE**,
+  foreheads nearly touching, without letting go, and that starts the honesty. **Length: as long as it needs** (up to
+  about 30–32k words per path), so the honesty conversation gets all its room and the rest of Mardi Gras isn't squeezed.
