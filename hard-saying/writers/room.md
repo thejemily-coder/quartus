@@ -404,6 +404,13 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 243. **Comic "like a man / woman" simile density** (S2E15: queen, boy, baby, ward round, football, fork trimmed). At most 3 an episode.
 244. **Skye's real drop announced by negation** ("doesn't make a joke of it") (S2E15). Once an episode.
 245. **"He hears her sit down" as the device for Skye going serious on the phone** (S2E15). Once an episode.
+246. **Chest-hand gestures** (S2E16 levee: 46+ in a draft, 17 after trim). Capped at 6 an episode, counted across all branches.
+247. **River furniture as a beat marker** (S2E16: ferry, towboat, fog, Algiers disappearing). Ferry at most 3 an episode; the fog arrives once.
+248. **"He wants her." as a paragraph opener** (S2E16). Once per episode.
+249. **Announced motif tags** ("space kept," "on purpose") (S2E16). Trim; never label a motif the scene already shows.
+250. **Runs of save-flag recap lines** (S2E16). Do not stack consecutive lines whose only job is to acknowledge earlier choices.
+251. **Pasted branch tails** (S2E16: the same reaction under all three options). Give each option its own voice and run the shared reaction once at the start of the next scene.
+252. **A character narrating her own action** (S2E16: Lena). Let the action stand; no self-description in her mouth.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

@@ -1,0 +1,588 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "MONDAY · 6:40 AM · N. DUPRE STREET, THE ATTIC",
+   "set": {
+    "s2e16_on": true,
+    "resolve.lena": 3
+   },
+   "body": [
+    "The gable window comes up gray around the box fan. It stands dead in the frame where somebody set it last summer and left it. The light gets through the blades in bars and lies along the three mattresses and the boards in between. Over Jack’s face the roofing nails come down through the deck in their rows, dry this morning, and Remy’s Tiger poster has let go of a corner in the night and hangs over him at a slant, Tiger in Sunday red with his fist up, celebrating something on a green Jack can’t see. The attic keeps the night’s cold till noon, like his father’s garage in February.",
+    "Two houses down, behind a shut window, a radio has a man on WWL doing the Lundi Gras forecast for anybody up at this hour: cold today, cold on the river tonight for the king, and for tomorrow, folks, dig out the long johns.",
+    "Jack kneels on the boards at the window and says the penance from memory, the eleventh morning of it. It comes out word-perfect from the summoning to the oil, with *take nothing for the journey* falling in the middle where it always falls, and when it’s done he gets up with the grain of the boards printed on both knees.",
+    "The RAZR is on the sill. The outside screen says two, both from Burnaby, both from while he slept.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "wrapped. the violets rode home in my lap like a baby",
+     "time": "6:34 AM",
+     "if": "s2e15_gift==\"violets\""
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "dutch says good morning to new orleans. dutch has never said good morning to anyone",
+     "time": "6:35 AM",
+     "if": "s2e15_gift==\"violets\""
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "wrapped. read your book in the van. the guy who had it before you underlined all the wrong parts",
+     "time": "6:34 AM",
+     "if": "s2e15_gift!=\"violets\""
+    },
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "dutch says good morning to new orleans. dutch has never said good morning to anyone",
+     "time": "6:35 AM",
+     "if": "s2e15_gift!=\"violets\""
+    },
+    {
+     "if": "s2e15_gift==\"violets\"",
+     "text": "He can see the van: the heater blowing, the rest of the crew asleep against the windows with their hoods up, and Skye in the middle seat with the white violets held level on her knees through every turn, the way you’d hold a baby that had finally gone down.",
+     "else": "He can see the van: the heater blowing, the rest of the crew asleep against the windows with their hoods up, and Skye in the middle seat with a used Flannery O’Connor open on her knees, arguing in the margins with a stranger’s pencil."
+    },
+    "And Dutch. Dutch, who flies the moon on a crane over Burnaby all night and has never in his life said good morning to anyone, has said it to New Orleans on her say-so. Jack stands at the window in his socks and laughs at that without making a sound, so as not to wake the attic, and answers short, with his thumb, so she can read it with one eye open.",
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "sleep. tell the violets goodnight for me",
+     "time": "6:41 AM",
+     "if": "s2e15_gift==\"violets\""
+    },
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "sleep. fight the pencil guy tomorrow",
+     "time": "6:41 AM",
+     "if": "s2e15_gift!=\"violets\""
+    },
+    "He shuts the phone and drops it in the Carhartt where it hangs on its nail by the window.",
+    "By the hatch, Kevin is awake. He lies on his back on top of his sleeping bag, dressed down to his shoes, turning his Bold over and over on his chest, so that the screen lights his chin from below and goes dark and lights it again.",
+    "“Bà Nội,” he says, when he sees Jack see it. “Voicemail. She says her rosary at five, and then she calls me.”",
+    "He puts it to his ear again. From across the attic Jack can hear it play, small and quick and dry, an old woman’s Vietnamese with the rosary’s rhythm still in it, and Kevin lies listening with his eyes shut until it stops.",
+    "In the middle Theo is a long shape under a Marisol blanket with his back to the room, asleep, or giving the role everything he has.",
+    {
+     "if": "kevin_birthday_known",
+     "text": "“Happy birthday,” Jack says.",
+     "else": "Kevin says it to the nails over his sleeping bag, like a man reporting a symptom: “It’s my birthday. Respectfully. Don’t.”"
+    },
+    {
+     "if": "kevin_birthday_known",
+     "text": "Kevin turns the phone face-down on his chest. “Respectfully. Don’t.”"
+    },
+    "He turns his head on the pillow to say the rest of it to Jack. “It’s a Monday. Mondays are red beans. Nobody needs a cake on a Monday.”"
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“I’m telling Celeste.”",
+     "set": {
+      "s2e16_kevin": "house",
+      "kevin_bday_house": true,
+      "trait.sincerity": "+1",
+      "rel.kevin.trust": "+1"
+     },
+     "cue": "Kevin will remember that.",
+     "key": "On Lundi Gras morning Kevin told you not to make anything of his nineteenth birthday. You told him you were telling Celeste.",
+     "response": [
+      "“That’s a betrayal,” Kevin says.",
+      "“It’s Monday. It’s a small one.”",
+      "Kevin looks at the nails a long time. “…Lemon,” he says. “If she asks.” Under the boards a lid goes down on a pot, and somebody turns the fire up beneath it."
+     ],
+     "goto": "s02"
+    },
+    {
+     "tag": "Wit",
+     "text": "“I’m telling Laney.”",
+     "set": {
+      "s2e16_kevin": "laney",
+      "kevin_bday_laney": true,
+      "trait.wit": "+1",
+      "rel.kevin.warmth": "+1",
+      "rel.laney.warmth": "+1"
+     },
+     "key": "On Lundi Gras morning Kevin told you not to make anything of his nineteenth birthday. You told him you were telling Laney.",
+     "response": [
+      "“She decreed *nothing*,” Kevin says.",
+      "“For her. She didn’t decree anything for you.”",
+      "Kevin sits up on his sleeping bag and looks at Jack across Theo with new respect. “You’re a dangerous man, Costigan.” At the foot of the stairs Mémère has started in on somebody in French — the beans, or the hour, or both — and the house is getting up under her."
+     ],
+     "goto": "s02"
+    },
+    {
+     "tag": "Restraint",
+     "text": "“Then it’s ours.”",
+     "set": {
+      "s2e16_kevin": "quiet",
+      "kevin_bday_quiet": true,
+      "trait.control": "+1",
+      "rel.kevin.trust": "+1"
+     },
+     "key": "On Lundi Gras morning Kevin told you not to make anything of his nineteenth birthday. You told him it would stay between the two of you.",
+     "response": [
+      "“Ours.” Kevin tries the word out with the phone flat on his chest. “Okay. Ours.”",
+      "Up through the hatch comes the smell of the red beans Celeste put on at six, and under it her whisper on the stairs, giving the twins their orders."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "MONDAY · 7:05 AM · DUPRE STREET, THE KITCHEN — RED BEANS",
+   "set": {
+    "resolve.lena": 3
+   },
+   "body": [
+    "Celeste’s 13-inch sits on the end of the counter by the bread box with the sound down low. On WWL a man in a purple tie stands in front of the parishes doing the Lundi Gras forecast — gray, cold, *bundle up for the king* — while the closings crawl along under his shoes: the post office, the banks, the federal building, everything with a flagpole, for Presidents’ Day.",
+    "Monday is red beans. The pot went on at six in the dark, a ham bone and a pound of pickled pork and the beans that soaked all night in the yellow bowl, and it has hours to go yet and the rest of the day after that to get better. Mémère sits on a kitchen chair at the stove’s elbow in her housecoat, with her beads, watching it. That is her job, all of it, and she does it like a lifeguard: she does not take her eyes off the water.",
+    "Celeste is in navy scrubs with her Touro badge clipped at the pocket, packing her lunch at the counter like a med cart: thermos, apple, napkin, the sandwich last, everything where her hand will expect to find it at one o’clock. She works Lundi Gras, seven to three. Mardi Gras is a different story.",
+    "“Mardi Gras she’s had off since nineteen ninety-eight,” Tony tells the kitchen from his chair at the end of the table, over his coffee, proud as if he’d won it off a man in a card game. “Twelve years. Never once gave it back.”",
+    "Jack comes to the counter for a mug, and Celeste hands him the roll of wax paper instead, and he holds it while she tears. With her back to the kitchen and her eyes on the sandwich, she says, just above a whisper:",
+    {
+     "if": "s2e15_gift==\"violets\"",
+     "text": "“Miss Dot tells me violets. The girl in Canada. Did she like the violets?”",
+     "else": "“Lena says you sent a book. The girl in Canada. Did she like the book?”"
+    },
+    "“Yes ma’am.”",
+    "“Good.” A fold of wax paper. “And she knows where you are.”",
+    "“Yes ma’am. She told me to come.”",
+    "Celeste takes that in for the length of a second fold, corner over corner, creased down with her thumbnail.",
+    "“Hm.”",
+    "She puts the sandwich in the bag on top of the apple.",
+    {
+     "if": "s2e16_kevin==\"house\"",
+     "text": "At a quarter past she has her keys off the nail and the lunch bag over her wrist, and at the back door, while she checks her badge, Jack leans down to her ear. *It’s Kevin’s birthday.*"
+    },
+    {
+     "if": "s2e16_kevin==\"house\"",
+     "text": "Celeste’s face does nothing at all. She looks at the clock over the stove, and at the pantry door, and at the clock again."
+    },
+    {
+     "if": "s2e16_kevin==\"house\"",
+     "text": "“Lemons,” she says, and goes."
+    },
+    {
+     "if": "s2e16_kevin!=\"house\"",
+     "text": "At a quarter past she kisses Tony on the top of his head, takes her keys off the nail, and goes out the back with the lunch bag over her wrist."
+    },
+    {
+     "if": "s2e16_kevin==\"laney\"",
+     "text": "Laney comes down a minute later, following the smell of the coffee, in a terrycloth robe with a towel wound round her head like a turban, and Jack meets her at the bottom of the stairs. “It’s Kevin’s birthday.”"
+    },
+    {
+     "if": "s2e16_kevin==\"laney\"",
+     "text": "“Since *when*?”"
+    },
+    {
+     "if": "s2e16_kevin==\"laney\"",
+     "text": "“Since nineteen years ago.”"
+    },
+    {
+     "if": "s2e16_kevin==\"laney\"",
+     "text": "She turns on the step without a word and goes back up at a run, the coffee forgotten, the turban coming loose over one ear."
+    },
+    "At twenty past, Lena comes down in the Broussard’s Seafood sweatshirt with the crab on the front washed nearly pink, her hair still wet at the ends, and his black Bic behind her ear. She pours two cups of chicory at the stove. His she does first, with the milk in it, without asking how, and sets it down at his elbow on her way past; then she pours her own.",
+    "Not a soul at the table remarks on it. Mémère, at her post by the pot, takes her eyes off the beans long enough to see it, and puts them back.",
+    "The twins have the far end of the table. Josie has the *Times-Picayune*’s parade map spread out over her cereal and is going over Zulu’s route in yellow highlighter, and Jude eats around her elbow without complaint.",
+    "Remy comes down the stairs on the backs of his heels with a blanket round his shoulders and points at Jack from the doorway. “Ohio owes a king cake. It’s been three days. In some parishes that’s a felony.”",
+    "Tony gets up and takes his market jacket off the hook — green canvas, BROUSSARD’S over the heart in white thread, the cuffs gone stiff with ice — and zips it to his chin. Mr. Alcide opened the store at six. Broussard’s takes the Mardi Gras orders Monday morning, six to noon, and after that the door stays shut through Fat Tuesday. “Lent’s Christmas for a fish market,” Tony says. “Wednesday I open at six.” He finds his keys in the jacket pocket and looks across the kitchen at Jack.",
+    {
+     "if": "s2e14_wed==\"market\"",
+     "text": "“You know ice.”",
+     "else": "“You can lift.”"
+    },
+    "“He owes Remy a king cake,” Lena says from the stove in the same second, the coffeepot still in her hand.",
+    "Theo sits at the table with chicory and no phone. His phone has been zipped into Kevin’s windbreaker for a week, and he holds the cup in both hands for something to hold. “Choose wisely,” he says. “One of those is a woman and one of them is a refrigerator.”",
+    "“They’re both errands,” Kevin says, and butters his toast."
+   ],
+   "choices": [
+    {
+     "tag": "The king cake",
+     "text": "“I’ve got a debt.”",
+     "set": {
+      "s2e16_mon": "cake"
+     },
+     "goto": "s03k"
+    },
+    {
+     "tag": "Tony’s",
+     "text": "“I know ice.”",
+     "set": {
+      "s2e16_mon": "tony"
+     },
+     "response": [
+      "Tony’s keys are already in the air, coming at him end over end across the kitchen, and Jack takes them against his chest. “You drive,” Tony says, and takes a piece of Kevin’s toast for the road."
+     ],
+     "goto": "s03t"
+    }
+   ]
+  },
+  "s03k": {
+   "slug": "MONDAY · 10:20 AM · A BAKERY ON CARROLLTON AVENUE — AND BACK ALONG THE STREETCAR LINE",
+   "music": "The Meters — “They All Asked for You”",
+   "set": {
+    "king_cake_paid": true,
+    "rel.lena.warmth": "+1",
+    "rel.lena.heat": "+1"
+   },
+   "body": [
+    "The bakery smells of butter and yeast and cinnamon and the burnt-sugar edge of whatever came out of the ovens at four, and the line runs out the door and past the next storefront, where it stamps its feet on the sidewalk and blows on its hands.",
+    "Josie is the chaperone. This was Josie’s own idea, announced at the foot of the stairs with her coat already buttoned, and no one in the kitchen came up with a reason fast enough to stop her.",
+    {
+     "if": "throw_to_josie",
+     "text": "She wears the king’s medallion on over her school sweatshirt on a holiday, the beads doubled so it rides high where the line can see it."
+    },
+    {
+     "if": "throw_to_lena",
+     "text": "The king’s medallion rides on Lena’s jean jacket, its beads looped twice round a button, and Josie has looked at it more than once."
+    },
+    {
+     "if": "throw_to_laney",
+     "text": "The king’s medallion went to Laney on Saturday, and Josie, who has nothing round her neck but a scarf, has mentioned this."
+    },
+    "She keeps score of everything. They aren’t through the door before she announces, to her sister, “That’s two times you looked at him.”",
+    "Inside, the radio behind the register is on WWOZ, and the line is a parade that hasn’t started yet. Lena narrates it for him in her float voice, the one she uses from the top of a ladder, turned down to half for indoors. She knows every order in it. Here, on your left, Sister Bernadette with a list for the convent, four plain and two praline and one cream cheese she will tell you is for Father. Behind her a cop off the night shift, still in uniform, who has earned a whole cake and is going to eat it in his car. And by the door a man in a Zulu warrior’s grass skirt over long johns and a Saints parka, buying four — “That’s Mr. Batiste’s nephew,” Lena tells Jack, low and proud. “He walks tomorrow. He needs his strength.”",
+    {
+     "type": "doc",
+     "title": "Chalkboard over the register",
+     "text": "KING CAKES\nPLAIN · CINNAMON · CREAM CHEESE · PRALINE · APPLE\nNO HALVES · DON’T ASK\nTHE BABY IS INSIDE · CHEW WITH CARE"
+    },
+    "At the counter Josie says, “Cream cheese.”",
+    "“Plain,” Lena says.",
+    "“Cream cheese is *better*.”",
+    "Lena turns to her sister with the gravity of Thomas opening an article. “It would seem that a king cake ought to be cream cheese, because cream cheese is better. On the contrary, Mémère. I answer that a king cake is a *bread*, Josephine Broussard, it is a bread for the Epiphany, it is a bread the Magi would recognize if they walked through that door this minute, and the Magi had never heard of Philadelphia.”",
+    "“The Magi never had a king cake at *all*.”",
+    "“Which is why they kept walking.”",
+    "The cop off the night shift snorts. The counter girl, who is maybe sixteen and has been on her feet since five, reaches into the case for a plain one, and turns it to slide it in a box, and there on the bottom of it, poking out through the dough, is a small pink plastic foot.",
+    "“No ma’am,” Lena says. “Sweet suffering Saint Sebastian, look at it, the foot is *out*. That baby is pre-located. Where’s the sport in that? Open us a fresh one, please, cher, from the back.”",
+    "The girl looks at her, and at the line, and goes to the back for a fresh one. Jack pays, in twenties folded small from the back of his wallet, and that is the debt.",
+    "“That’s *three*,” Josie says.",
+    "“I was looking at the *change*.”",
+    "The counter girl tapes the box shut and slides it across. “You know the rule,” Lena tells Jack, as he picks it up. “You get the baby, you buy the next one.”",
+    "“I know the rule.”",
+    "“You know it like a man who read it on a placemat. In this city it is *binding*.”",
+    "Out on the sidewalk Jack says, “You did a disputation. On a pastry.”",
+    "“I did a disputation on *tradition*, Youngstown. The pastry was the occasion.”",
+    "“Josie had a point about the Magi.”",
+    "“Josie had a point about cream cheese, and the point is she likes it. That is not a point. That is an appetite.”",
+    "“I’m *right here*,” Josie says.",
+    "It’s colder on Carrollton than it was going in. A red streetcar goes up the neutral ground with its bell going and nobody on it but the motorman. They walk back along the tracks toward Mid-City, Josie a step ahead, the box under Jack’s arm, and every porch they pass is getting ready for tomorrow: ladders chained to the rails with their seat-boxes painted in somebody’s colors, a woman on a stepladder hanging a papier-mâché jester from her porch light, a yard flying a fleur-de-lis and a Saints flag and a Bud Light banner, all three, and on one shotgun still waiting on its repairs, the old spray-paint from the Storm faded orange on the siding by the door, under a string of beads. At the curb at Bienville, waiting on a pickup with purple streamers on its antenna, Lena says:",
+    "“The Lundi Gras I was nine, Rex waved at me from the boat. Right at me. I could see his eyes. I decided right there I was going to marry him.” The pickup goes by. “He was sixty-two. I’d have made it work.”",
+    "She doesn’t look at him to tell it. Jack says, “Sixty-two,” and can’t find anything to put after it. Josie, a step ahead, has heard every word, and he watches her put it away behind her eyes for later.",
+    "Lena has no gloves, and her hands are pulled up inside her sleeves. Jack shifts the box to his left arm. With his right hand he takes hold of the edge of the Carhartt’s pocket and holds it open, and keeps walking. It is a small thing to do with a coat pocket. He knows exactly what it is.",
+    "Her hand comes out of her sleeve and goes into the pocket with his. She keeps her eyes on the streetcar tracks while it happens, as if her hand were some other girl’s business. Her fingers are cold. His close over them in the dark of the pocket, among the lint and a folded church bulletin from Thursday, and he can feel each one of them separately, the knuckles, the ridge of a callus where she holds a pen, and he wants the walk to be longer than it is, and he knows exactly how much he wants it. On the other side of the coat, in the inside pocket over his heart, the RAZR rides with Dutch’s good morning in it.",
+    "At the next corner Josie stops and turns round to face them, walking backward.",
+    "“Are y’all *going* together? Because Destiny Thibodeaux’s sister says if he carries the box it counts.”",
+    "“*Josie.*”",
+    "“I’m asking for *science*.” She has been sitting next to Margot on the piano bench all weekend, and it shows."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Carry the box. Let her keep her hand where it is.*",
+     "set": {
+      "s2e16_box": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "response": [
+      "He carries the box. Twelve blocks, under the live oaks along the neutral ground and then the bare crape myrtles of the side streets, and her hand doesn’t move in his pocket for any of them. Josie walks ahead of them backward most of the way, watching the two of them like a line judge, and trips on a root heaving up the sidewalk, and keeps watching.",
+      "At the gate on Dupre Street Lena takes her hand back to work the latch. In the kitchen Remy is still in his blanket at the table, and she sets the box down on the oilcloth in front of him. “Don’t say I never.”"
+     ],
+     "goto": "s04"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Tell Destiny’s sister it counts.”",
+     "set": {
+      "s2e16_box": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“I’m *telling* her,” Josie says.",
+      "“You will not,” says Lena.",
+      "They argue it the rest of the way home, every block of it, Josie walking backward and Lena walking forward, and Lena’s hand stays in his pocket through every point she makes. In the kitchen Remy has the lid of the box up before it’s all the way down on the oilcloth. “Don’t say I never,” Lena tells him, and shuts it on his fingers."
+     ],
+     "goto": "s04"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Give Josie the box.*",
+     "set": {
+      "s2e16_box": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He holds the box out to Josie. She takes it in both arms, outraged — she is a chaperone, not a porter — and carries it home in front of her, level and stiff, like a crown on a cushion. Lena’s hand stays in his pocket anyway.",
+      "On Dupre Street Josie marches it into the kitchen and puts it down on the oilcloth with a bang. Lena reaches past her and turns the box round so the bakery’s name faces Remy. “Don’t say I never.”"
+     ],
+     "goto": "s04"
+    }
+   ]
+  },
+  "s03t": {
+   "slug": "MONDAY · 9:00 AM → 12:10 PM · BROUSSARD’S SEAFOOD, BANKS STREET — THE WALK-IN",
+   "music": "The Meters — “They All Asked for You”",
+   "set": {
+    "king_cake_paid": true,
+    "tony_asked_who": true,
+    "tony_cooler": true,
+    "rel.lena.trust": "+1"
+   },
+   "body": [
+    "By nine the bell over Broussard’s door has stopped ringing separately and become one long jangle, and the line goes out past the window onto Banks Street, everybody in it in a coat and half of them in purple. Tomorrow half of Mid-City boils, and half of Mid-City is buying from Tony: red mesh sacks of crawfish, alive and clicking, going out the door on shoulders and in the beds of trucks and once, at twenty past nine, in a baby stroller.",
+    "Jack is the one bringing them out of the walk-in. In past the heavy steel door, a sack off the stack and onto his shoulder, out through the plastic strips, down the length of the case to the counter, and back. By ten he has the rhythm of it, sack, shoulder, door, counter, the kind of dumb good rhythm Frank used to say was the only part of the plant he missed.",
+    "Under the front window Mr. Alcide opens oysters for the Monday trade and sings along in French with whatever WWOZ gives him on the red radio, whether or not it was in French to begin with.",
+    "Lena has the register and the book. She has the wall phone on its cord tucked against her shoulder and her own LG open on the counter on speaker and a man in front of her with cash in his hand — three customers — and she is taking all three at once and writing it down on a roll of butcher paper with his black Bic: *DUPLANTIS 2 SX 4:00 · MRS. VO 1 SX + 2 DZ · FIREHOUSE 3 SX — CALL BACK, THEY ALWAYS CHANGE IT*. “Ask Lena,” Tony says all morning, to everybody, about everything, and goes on weighing.",
+    "Her voice carries the length of the store over the radio and the bell and the crawfish, and every time Jack comes out through the plastic strips it is the first thing that reaches him, before the warm does. *Mrs. Vo, I have you down for four o’clock and if you come at three-thirty I will be at the rosary.* *No sir, those are the small ones, you want the select, I would not lie to you during Carnival.* Tony defers to her on the book the way he defers to the weather.",
+    "Once, coming back past the register, Jack has the Bic pointed at him.",
+    "“The firehouse changed it.”",
+    "“To what?”",
+    "“To four. They always change it. Four sacks, and one of them is for Father Hébert, and you do not say that in front of Mrs. Vo or she will want one for Father too.” The pen goes back behind her ear. She has the wall phone off the hook on its first ring, and he goes back into the walk-in with four in his head.",
+    "At half past ten Miss Earline comes in, in her plastic rain bonnet, for a pound and the news. She looks down the case at Jack with a sack on his shoulder.",
+    "“They haven’t sent you home yet,” Miss Earline says.",
+    "“No ma’am.”",
+    "“Good. Don’t let them.” She takes her shrimp and gives Lena the news — whose ladder is where on St. Charles, whose roof is leaking, which of the Duplantis girls is expecting — and goes.",
+    "At a quarter to eleven Tony follows him into the walk-in and pulls the door shut behind them.",
+    "It’s a small room, steel to the ceiling, with one bulb in a wire cage and the compressor droning somewhere over their heads. The sacks are stacked chest-high along the back wall, and in the mesh the crawfish move against each other with a sound like rain starting on a tin roof. Their words smoke when they talk. For a minute they don’t; they stack, Tony handing down and Jack laying the sacks in rows on the pallet by the door, for the afternoon pickups.",
+    "“Wednesday,” Tony says, to the sacks, “every Catholic in this city remembers he’s supposed to eat fish. Forty days. I’ll sell more catfish by Easter than I sold all of Advent.” He hands down another sack. “Lent’s been good to me. You won’t hear a word against it from me.”",
+    "He doesn’t hand down the next one. “So which one of you is with who?”",
+    "Jack stops with a sack in his arms.",
+    "Tony lays it out on his fingers, thick fingers, an old knife scar white across one knuckle. “You and her. Her and the singer. You and Canada.” Three fingers, standing up in the bulb light. He looks at them himself. “I’m asking because Celeste says don’t ask, and I been not asking since Tuesday, and I’m done.”",
+    "Jack stands in the walk-in with forty pounds of live crawfish against his chest and opens his mouth, and there is nothing in it. *I’m with Skye* is true, and it is not what the man asked. It is the first finger he can’t get past.",
+    "Tony waits. The compressor cuts out overhead, and the room is quiet except for the crawfish, and Tony waits through that too, a long time, looking at Jack with his three fingers still up.",
+    "“That’s what I figured,” he says.",
+    "He picks up a sack. He puts his shoulder to the steel door and opens it on the warm and the radio and his daughter’s voice saying *four o’clock, Mrs. Vo, and not one minute before*, and goes out into it.",
+    "Jack stays where he is a minute, in the steel room with the bulb and the crawfish, the sack still against his chest. When he carries it out through the plastic strips into the warm, Lena, writing, holds her hand out sideways for a ticket. When nothing lands in it she looks up and sees it’s him, and the hand goes back to the butcher paper.",
+    "At a quarter to twelve Clovis leans on his horn out on Banks Street. Lena takes her jacket off the hook, tells her father the book balances to the penny and the firehouse will call back, and tells Jack, on her way past the case, with the Bic back behind her ear, “Don’t let him charge you interest.”",
+    "At noon Tony walks down to the bakery by the bank and comes back with a white box, and hands it to Jack across the counter.",
+    "“Your debt,” Tony says. “I fronted it. You owe me.”",
+    "Then he takes a piece of shirt cardboard from under the register, and a roll of tape, and goes to the door, and turns the sign, and tapes the cardboard up inside the glass under it.",
+    {
+     "type": "doc",
+     "title": "Hand-lettered, taped inside the door at Broussard’s",
+     "text": "CLOSED · MARDI GRAS\nOPEN ASH WEDNESDAY 6 A.M.\nGOD WILLING"
+    },
+    "He presses the tape down at the corners with his thumb, one corner at a time, his back to the store."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“I don’t know yet, Mr. Broussard.”",
+     "set": {
+      "s2e16_ice": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1",
+      "told_tony_dont_know": true
+     },
+     "response": [
+      "He says it to Tony’s back. Tony doesn’t turn round. He runs his thumb along the last strip of tape. “Then you’re the only honest man in my store.”",
+      "When the truck pulls up on Dupre Street at half past twelve, Lena is on the porch swing between the twins with her feet up on the rail, and she looks at the white box, and at her father, and at Jack, and whatever was said in the walk-in she leaves where it was said."
+     ],
+     "goto": "s04"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "*Carry the king cake home on your lap in the truck.*",
+     "set": {
+      "s2e16_ice": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He carries it out to the truck in both hands and gets in with it, and holds it on his knees all the way back, one hand on the lid and one underneath, over every pothole between Banks Street and Dupre, and the road from one to the other is mostly pothole. Tony drives and watches him do it and says nothing, which on Tony is a sentence.",
+      "Lena is on the porch with the twins when they pull up, and she gets up off the swing to hold the gate open for the box, and has no question for her father, or for Jack."
+     ],
+     "goto": "s04"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Put it on my tab.”",
+     "set": {
+      "s2e16_ice": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Ohio,” Tony says, pressing down the last corner, “you *are* my tab.”",
+      "He is still laughing at it at the red light on Broad. On Dupre Street Lena is on the porch swing with a twin on either side of her, home well ahead of them, and she looks from her father laughing at the wheel to Jack with the box on his knees, and leaves it at that."
+     ],
+     "goto": "s04"
+    }
+   ]
+  },
+  "s04": {
+   "slug": "MONDAY · 4:45 PM · SPANISH PLAZA, THE RIVERFRONT — LUNDI GRAS",
+   "set": {
+    "rex_lundi_gras": true,
+    "tony_asked_who": true,
+    "wes_dont_wait": true,
+    "rel.lena.heat": "+1",
+    "rel.wes.warmth": "+1",
+    "resolve.lena": 3
+   },
+   "body": [
+    "The river is higher than Jack thought a river could get and still stay in its banks, and browner, and faster. It goes by the foot of Canal Street without a sound, heavy and steady and not stopping for anybody, the way the line at Lordstown used to move when Frank was on it.",
+    "Tony has taken whoever is home down to the river on Lundi Gras to watch the king come in since Luc was two. Today that is Clovis, who drove the truck, and Remy, and the twins, and Theo and Laney and Margot and Kevin, and Lena, and Jack. Mémère stayed with the beans.",
+    {
+     "if": "s2e16_kevin==\"house\"",
+     "text": "Celeste, home at half past three with her badge still on and a paper sack of lemons, stayed with Mémère. “Somebody has to be here,” she said at the door, “when a king comes back from the river.”",
+     "else": "Celeste, home at half past three with her badge still on, stayed with Mémère. “Somebody has to be here,” she said at the door, “when a king comes back from the river.”"
+    },
+    "Spanish Plaza is a round of colored tile at the foot of Poydras with a fountain in the middle and the Riverwalk at its back, and by a quarter to five it is full: purple and green and gold over parkas, children up on shoulders, old men in folding chairs brought from home, a brass band at the far side of the fountain playing for itself and anybody else. Upriver the lights along the big bridge are coming on. A towboat shoves six barges up against the current, slow as a man pushing a stalled car uphill, and the Algiers ferry crosses in front of everything with its own lights on, going home.",
+    "“Zulu came in by water this morning,” Remy announces, with authority. “The king. On a boat. Up there somewhere.” He waves at the river in general. “I slept through it.”",
+    "Kevin has his hands in the pockets of his windbreaker, one of them shut round Theo’s phone, and is explaining to Jude how a towboat steers when it’s pushing instead of pulling. Jude listens to every word of it.",
+    "Lena has Margot by the sleeve at the rail and is giving her the lore without coming up for air: the boat, the king on the deck, the mayor on the landing, *Daddy says the mayor hands him the key and the king gives the city back to us for a day*, and why a king needs a boat at all — “because the city’s a port, Margot, *everything* important comes up that river, including Daddy’s shrimp and the Spanish.”",
+    "Margot looks at the river through her black frames. “So the monarchy arrives by freight.”",
+    "“*Exactly.*”",
+    "“Picture it,” Theo says at Jack’s shoulder, his hands deep in the pockets of the good coat. “A king. A boat. A city that hands him the keys and asks for nothing back but beads. Costigan, it’s *Fitzcarraldo* with a horn section.”",
+    {
+     "if": "s2e16_mon==\"cake\"",
+     "text": "Tony comes along the rail with a go-cup of coffee and stops behind them, Lena at the rail and Jack beside her, and puts his arm out between them, level, like the gate at a railroad crossing.",
+     "else": "Tony has his spot at the rail behind the twins. He had his say in the walk-in this morning. He looks at the two of them now, Lena at the rail and Jack beside her, over Josie’s head, just the once, and says nothing, which is worse."
+    },
+    {
+     "if": "s2e16_mon==\"cake\"",
+     "text": "“So which one of you is with who?”"
+    },
+    {
+     "if": "s2e16_mon==\"cake\"",
+     "text": "“*Daddy.*”"
+    },
+    {
+     "if": "s2e16_mon==\"cake\"",
+     "text": "“I’m *asking*. A man can ask on a public levee.”"
+    },
+    {
+     "if": "s2e16_mon==\"cake\"",
+     "text": "There is no answer from either one of them. The boat’s horn gives one instead, far off down the river around the bend where nobody can see it yet, a long low note that comes up the water and turns every head on the plaza, and Tony takes his arm back and goes to look.",
+     "else": "Far off down the river, around the bend where nobody can see it yet, a boat’s horn sounds, one long low note coming up the water, and every head on the plaza turns."
+    },
+    "The rail fills two deep behind the sound. There’s room at it for Lena and not much else. Jack could step back to the fountain with Theo. He puts his arms on the rail instead, one on either side of her, his hands on the cold iron beside hers, and stands at her back with the plaza behind him. Saturday on Orleans Avenue she was the one behind.",
+    "He doesn’t touch her anywhere he doesn’t have to. He keeps a little cold air between his chest and her back and keeps it there on purpose, and it costs him, and he could name the price item by item standing here: the back of her neck where her hair is pinned up off it, the red beans and Celeste’s shampoo, the Bic behind her ear, right under his chin. After a minute she leans back into him. He lets her.",
+    "“You’re blocking the wind, Youngstown,” she says, without turning round.",
+    "“That’s the idea.”",
+    "“Good idea.”",
+    "She stays. Out on the water the ferry has turned for the Algiers side, and downriver the light is going out of the sky a shade at a time, and across the fountain the brass band has slowed into something with a long horn in it.",
+    "He wants her. It is that simple, and it has been that simple since a porch in August, and standing behind her at an iron rail with his arms round a space he isn’t going to close doesn’t make it any simpler; it only puts it where he can see it. The wind comes up the river and moves her hair against his chin. He keeps his hands where they are on the iron, and keeps them there, and the keeping is all he does for the next ten minutes, and it takes everything he has.",
+    "Wes is at the edge of the plaza by the floodwall, where the crowd thins out against the concrete: the bent brim, a go-cup, the same two friends from Gentilly in their Saints jackets. He is thinner than he was on Canal Street a week ago, or the coat is bigger. He sees Lena before she sees him. When she does, she ducks out under Jack’s arm and goes to him through the crowd, and Wes opens his arms, and she walks into them.",
+    "“You’re skinny,” she tells him, into his coat.",
+    "“You look like your mama.”",
+    "“I do *not*.”",
+    "“Every day more, dawlin’.”",
+    "Lena lets go first. Wes holds on a second longer than she does, and then he is the one who steps back. She brings him to the rail by the sleeve of his coat.",
+    "“Ohio,” Wes says.",
+    "“Wes.”",
+    "Then the twins arrive at Lena’s elbows, Josie wanting to see the king’s face and Jude wanting to see the engine, and she takes one in each hand and steers them down through the crowd toward the front rail on the water. Wes stands where she was, beside Jack, with his forearms on the iron and the go-cup between his hands, looking at the river.",
+    "“Y’all staying for the king?” Wes says.",
+    "“Tony’s tradition.”",
+    "“Since Luc was in diapers.” Wes tips the go-cup at the water. “I came down with ’em a few years. Stood right here.” A long pause, the kind Jack has learned to leave alone. A towboat goes by upriver, all its lights on, and Wes watches it go.",
+    "“Don’t wait on nobody, podna,” he says. “I waited on God four years.”",
+    "He drinks from the go-cup and goes on looking at the water."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“I’m done waiting.”",
+     "set": {
+      "s2e16_wes": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1",
+      "rel.wes.trust": "+1"
+     },
+     "key": "At Spanish Plaza on Lundi Gras, Wes told you not to wait on anybody — he’d waited on God four years. You told him you’re done waiting.",
+     "response": [
+      "Wes nods at the river. “Good.”",
+      "He finishes what’s in the cup and sets it on the rail, and puts a hand on the back of Jack’s neck, warm and heavy, there and then not, and then he and the Gentilly boys are moving off through the purple and gold toward Canal Street, and by the time the boat is in sight there is no bent brim anywhere on the plaza."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“Did He come?”",
+     "set": {
+      "s2e16_wes": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.wes.warmth": "+1"
+     },
+     "key": "At Spanish Plaza on Lundi Gras, Wes told you not to wait on anybody — he’d waited on God four years. You asked him if God ever came.",
+     "response": [
+      "Wes looks down into the go-cup a long time.",
+      "“Ask me in four more,” he says. He reaches over and lays his hand on the back of Jack’s neck, the way you’d steady a kid brother at the top of a ladder, and takes it back, and goes off along the floodwall with his friends, and the crowd closes behind his hat while the boat is still too far off to see."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Is that a yes where you’re from?”",
+     "if": "e9_take==\"drink\"",
+     "set": {
+      "s2e16_wes": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "At Spanish Plaza on Lundi Gras, Wes told you not to wait on anybody — he’d waited on God four years. You asked him if that was a yes where he’s from.",
+     "response": [
+      "Wes laughs the old laugh, chipped tooth and all. “Where I’m from that’s a *sermon*, podna.”",
+      "He takes the back of Jack’s neck in one hand and gives it a shake and lets go, and then he’s off up the plaza toward Poydras with the Gentilly boys, and gone into the crowd while the boat is still a light down the river."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“That’s a sermon where I’m from.”",
+     "if": "e9_take!=\"drink\"",
+     "set": {
+      "s2e16_wes": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "At Spanish Plaza on Lundi Gras, Wes told you not to wait on anybody — he’d waited on God four years. You told him that’s a sermon where you’re from.",
+     "response": [
+      "Wes turns the go-cup on the rail. “Where I’m from it’s a confession, podna.”",
+      "His hand comes down on the back of Jack’s neck, rests there a moment, and lifts, and he goes off with his two friends along the floodwall toward the Riverwalk, and is gone before the boat comes round the bend."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Say nothing. Stand there with him.*",
+     "set": {
+      "s2e16_wes": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "At Spanish Plaza on Lundi Gras, Wes told you not to wait on anybody — he’d waited on God four years. You said nothing, and stood at the rail with him.",
+     "response": [
+      "They watch the towboat. Wes taps the rail twice with the bottom of the go-cup.",
+      "When the barges are past he puts a hand on the back of Jack’s neck, for about as long as a nod takes, and pushes off the rail, and his friends fall in beside him, and the three of them go off along the floodwall into the purple and gold, well before the boat ties up."
+     ],
+     "goto": "s04a"
+    }
+   ]
+  },
+  "s04a": {
+   "slug": "MONDAY · 5:50 PM · SPANISH PLAZA — A KING BY RIVER",
+   "body": [
+    "The boat comes in as the light goes. It comes up out of the gray down the river all white, strung with flags from bow to stern and a crowd at its rail in purple and gold, and the roar starts on the plaza while it’s still too far off for faces, and comes back off the water doubled. Behind it the river has gone from brown to black without anyone seeing it happen, and the big bridge upriver is lit end to end.",
+    "Lena comes back up from the front rail with the twins. Josie takes one look at the crowd in front of her and one look up at Jack.",
+    "“You’re the tallest,” she says. “It’s not personal.”",
+    "He crouches, and she climbs on, coat and all, and he stands up with her knees under his ears and both her fists in his hair. Remy takes Jude. Lena stays at Jack’s side.",
+    "“He’s *old*,” Josie reports from up there, as the boat comes broadside.",
+    "“He’s always old,” says Remy.",
+    "On the deck, at the front, the King of Carnival stands in his crown with one hand up, waving, gold all down him, turning to wave to one side of the river and then the other, and on the landing the mayor waits in a dark coat with the people who wait with mayors. The band at the landing starts something slow and old that every Broussard on the plaza knows. Tony is humming it, flat. Remy is humming it, sharp. On Jack’s shoulders Josie is singing it, and Lena says, “That’s Rex’s song,” like that answers every question there is.",
+    {
+     "if": "s2e16_mon==\"cake\"",
+     "text": "“He waved at me when I was nine,” she says, watching him wave.",
+     "else": "“Rex waved at me from that boat when I was nine,” she says, watching him wave. “Right at me. I decided I was going to marry him.” The king turns to the other side of the river. “He was sixty-two. I’d have made it work.”"
+    },
+    {
+     "if": "s2e16_mon==\"cake\"",
+     "text": "From Remy’s shoulders, Jude says, “We *know*.”"
+    },
+    "Men on the landing catch the boat’s lines. The king comes down onto the dock with his scepter up, into the crowd of dark coats waiting for him, and the mayor takes his hand, and the roar goes up again off the water.",
+    "Jack doesn’t tell her what Wes said.",
+    "Afterward they walk back up Poydras to the truck in the early dark, the family strung out along the sidewalk under the streetlights: Tony out in front with Josie by the hand, Remy herding Jude, Clovis jingling his keys, Theo and Margot arguing about Herzog, Laney with her arm through Kevin’s. Lena walks beside Jack. Her shoulder is against his arm the whole way, and neither of them moves it."
+   ],
+   "next": "s05"
+  }
+ }
+}

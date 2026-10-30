@@ -1,0 +1,742 @@
+{
+ "scenes": {
+  "s12d": {
+   "slug": "TUESDAY · 10:30 PM · THE MOONWALK — MAGDALENA",
+   "set": {
+    "magdalena_told": true,
+    "rel.lena.warmth": "+2",
+    "rel.lena.heat": "+1",
+    "rel.lena.friction": "-2"
+   },
+   "body": [
+    "Upriver the bridge is strung in lights from bank to bank, and the wind has come around to blow straight down the water at them, and it finds every place where the coat gives out. She stays down against his collarbone. Somewhere on Decatur the band has gone into something slow, a trombone leaning on every note of it, and he doesn’t hurry her.",
+    "When she lifts her head it’s to look past his shoulder at the cathedral, three white steeples standing up out of the dark at the back of the square.",
+    "“Bastille,” she says.",
+    "“Bastille.”",
+    "He has never found words for it that he likes. So he starts with the name.",
+    "“The song was called ‘Magdalena,’” he says. “You know that part. You were there. Here’s the part you don’t know.” He feels her wait. “I’d been saying it. At your door, at the end of a night, when there wasn’t anything left to say and I didn’t want to go in yet. ‘Goodnight, Magdalena.’ And you let me. I thought it was mine. I thought it was the one piece of you I hadn’t got secondhand from somebody else.” The trombone holds a note too long and somebody down on Decatur boos it, fondly. “And then a man I liked stood up with a guitar, and it was his. He’d written it down. He’d put chords under it. It was on a set list.”",
+    {
+     "if": "e4_goodnight==\"magdalena\" && e6_goodnight==\"magdalena\" && e10_dawn==\"magdalena\" && e14_door==\"magdalena\"",
+     "text": "“You said it four times,” Lena says."
+    },
+    {
+     "if": "e4_goodnight==\"magdalena\" && e6_goodnight==\"magdalena\" && e10_dawn==\"magdalena\" && e14_door==\"magdalena\"",
+     "text": "He looks down. Her hand has come up off his chest, and she is counting on it, one finger at a time, against the canvas of his coat. “The front steps of Delgado, two in the morning, in the fog. The Lagoon path, and then the elevator with the doors coming shut — and I said, ‘That’s twice, Youngstown. I keep a tin for less.’ The library at dawn, with the bells going. And the front door at two twenty-five in the morning, under that little red light on the card reader.” Four fingers stand up under his chin. She doesn’t fold them down. “Lord have mercy.”"
+    },
+    {
+     "if": "e4_goodnight!=\"magdalena\" || e6_goodnight!=\"magdalena\" || e10_dawn!=\"magdalena\" || e14_door!=\"magdalena\"",
+     "text": "“You said it at my door,” Lena says. “In the fog, and under that red light on the card reader, and other places. I didn’t think you knew you were doing it, and I wasn’t about to tell you.” Her hand lies on his chest and doesn’t count anything. “Lord have mercy.”"
+    },
+    "“The first night,” she says, “on the rail. I told you who gets to call me that.”",
+    "“Your mother, the Holy Ghost, and Laney when she wants something.”",
+    "“And you’d known me about ten minutes, and you said it anyway, and I didn’t stop you.” Her fingers close in his shirt. “And then a man stood up in Bastille and sang it to a room. And I asked you to come.”",
+    {
+     "if": "e20_brick==\"sincerity\" && e20_song==\"sincerity\"",
+     "text": "“At the Brick, at one in the morning. ‘Come tonight. And whatever you do, don’t leave in the second chorus.’ And you said —”"
+    },
+    {
+     "if": "e20_brick==\"sincerity\" && e20_song==\"sincerity\"",
+     "text": "“‘I’ll stay to the end.’”"
+    },
+    {
+     "if": "e20_brick==\"sincerity\" && e20_song==\"sincerity\"",
+     "text": "“And you stayed to the end. In the second chorus you found me across that room and you didn’t look anywhere else till he was done.”"
+    },
+    {
+     "if": "e20_brick!=\"sincerity\" || e20_song!=\"sincerity\"",
+     "text": "“You came,” she says. “I asked, and you came, and you sat through every verse of it. What do you remember?” — “All of it.” — “So do I.”"
+    },
+    "“I thanked you for staying,” she says. “You never wrote back.”",
+    "“There wasn’t anything I could send.” He looks out at the bridge. “I walked home afterward with it going around in my head, and I couldn’t get it out, because it was good. That week I told my mother on the phone that a man wrote a song about a girl I know and it was good, and she said, ‘Which girl,’ and I asked her how the Browns looked.”",
+    "Lena’s fist tightens in his shirt. It isn’t a laugh. It’s near one, and it doesn’t get any nearer.",
+    "She sits up inside the coat to see him. The cold gets in at her back, and she stays sat up in it. “I’m going to say this once and get it right,” she says, “so you hold still.”",
+    "He holds still.",
+    "“I asked you to come. I wanted you in that room. I told myself it was because you were my friend, and I wanted my friend to hear the best thing anybody ever made about me.” She stops, and starts again lower. “I’ve had two months to work out what I really wanted you there for, and I don’t like the answer. I wanted to watch your face while he sang it. I wanted to see what it would do.” Her fist is tight in the flannel. “And I saw. And that’s when everything turned over, Jack. Not for him. For me. Watching you hear it.” Her eyes are wet and they stay on his. “I’m sorry. I am so sorry I asked you.”",
+    {
+     "if": "e21_glance",
+     "text": "“And then the Advent party,” she says, before he can find anything to say back. “Theo’s contraband mistletoe taped up on the kitchen doorframe, and Julian kissed my cheek under it, and you looked. Once. You had Father Osei’s dish towel over your shoulder and a wet cup in your hand, and you looked up from the cup, and I saw it go into you.” She stops on that. “That’s when I started deciding.”"
+    },
+    "“The night before the shuttle I knocked on your door with two coffees from the urn and an index card in my pocket. Every stop on it was somewhere I’d been with you.” Down Decatur the trombone gives up and a clarinet takes the song away from it. “That card was the most honest thing I wrote all year, and you never once asked me why.”",
+    "He saw the top line upside down in his doorway — *1. DELGADO — DOWNSTAIRS* — and put it out of his head, because not asking was easier than finding out. “I was scared of what you’d say,” he says.",
+    {
+     "if": "e22_roof==\"unguarded\"",
+     "text": "“And the roof,” she says. “You said, ‘I’m in —’”"
+    },
+    {
+     "if": "e22_roof==\"unguarded\"",
+     "text": "“And you said, ‘Jack.’”"
+    },
+    {
+     "if": "e22_roof==\"unguarded\"",
+     "text": "“I said your name so you’d stop.” She says it straight up into his face. “Because if you’d finished it I’d have answered it. On a roof. With a van coming at a quarter to five and somebody else’s song still going in Oakland.”"
+    },
+    {
+     "if": "e22_roof==\"unguarded\"",
+     "text": "He stood on that gravel with the rest of it in his mouth and let her stop him, and all winter he’s been sure she stopped him because the answer was no."
+    },
+    {
+     "if": "e22_roof!=\"unguarded\"",
+     "text": "“And the roof,” she says. “You didn’t say anything up there. Whatever it was. If you had, I’d have answered it, and I don’t know what that would have done to either of us, with a van coming at a quarter to five.”"
+    },
+    {
+     "if": "lena_two_words && knows_ero_cras",
+     "text": "“What did you say at the airport?” he asks. “At the corner, where the hall turns. The PA ate it.”"
+    },
+    {
+     "if": "lena_two_words && knows_ero_cras",
+     "text": "“*Ero cras*, you idiot.” She says it into his shirt. “I *taught* it to you.”"
+    },
+    {
+     "if": "lena_two_words && knows_ero_cras",
+     "text": "He can see it on the glass of the Newman door, his own finger going up the column from the bottom, letter by letter. *Tomorrow I will be there.*"
+    },
+    {
+     "if": "lena_two_words && !knows_ero_cras",
+     "text": "“What did you say at the airport?” he asks. “At the corner, where the hall turns. The PA ate it.”"
+    },
+    {
+     "if": "lena_two_words && !knows_ero_cras",
+     "text": "“*Ero cras*.” She says it into his shirt. “It’s on Father Osei’s door at the end of Advent, upside down, if you read the antiphons from the bottom. *Tomorrow I will be there.*”"
+    },
+    {
+     "if": "lena_two_words",
+     "text": "“I meant January,” Lena says. “I meant when you got back I’d be there.” She doesn’t lift her head. “And you got off a plane three weeks later and kissed somebody at a rope.”"
+    },
+    {
+     "if": "lena_two_words",
+     "text": "There’s nothing that goes after that, and he doesn’t try to put anything there."
+    },
+    "The cold has got worse. She sits back up and looks at him, and when she speaks it has the old courtroom snap in it, turned inside out.",
+    "“Magdalena is going to say something now,” she says, “and you’re going to let her finish it.”",
+    "“Okay.”",
+    "“At my grandmother’s tomb I told you who calls me that. Grandmère. Mémère, when I’m in trouble. Father Hébert, because he poured the water.”",
+    {
+     "if": "hale_said_magdalena",
+     "text": "“Professor Hale, once, and I fixed that.”"
+    },
+    "Her fingers have come down the front of his shirt one button at a time while she named them, and they stop on the next one.",
+    "“— and —”",
+    "The clarinet on Decatur finishes. In the space it leaves there’s the hum of the lamp, and the city further off, and her.",
+    "“— and you.”"
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Say her name. The whole of it.*",
+     "set": {
+      "s2e16_h5": "sincerity",
+      "trait.sincerity": "+1",
+      "rel.lena.heat": "+1"
+     },
+     "cue": "Lena will remember that.",
+     "key": "On the levee Lena told you she was sorry she asked you to come hear the song. You said her whole name, and she let it stand.",
+     "response": [
+      "“Magdalena.”",
+      "Not a good night. There’s no door behind her, and nobody going in. He says it because it’s hers and because she just gave it to him, and it goes out over the black water and doesn’t come back.",
+      "She lets it stand. Her hand opens over the button where her counting stopped, and stays there.",
+      {
+       "if": "e4_goodnight==\"magdalena\" && e6_goodnight==\"magdalena\" && e10_dawn==\"magdalena\" && e14_door==\"magdalena\"",
+       "text": "“Five,” she says.",
+       "else": "“That one counts,” she says."
+      }
+     ],
+     "goto": "s12e"
+    },
+    {
+     "tag": "Candor",
+     "text": "“It was the worst night of my life, and I stayed, because you asked.”",
+     "set": {
+      "s2e16_h5": "candor",
+      "trait.candor": "+1"
+     },
+     "key": "On the levee Lena told you she was sorry she asked you to come hear the song. You told her it was the worst night of your life, and you stayed because she asked.",
+     "response": [
+      "“It was the worst night of my life,” he says. “And I stayed, because you asked.”",
+      "“I know,” she says. “I watched you do it.” Her fist opens on his shirt and closes again around the same fold. “Every verse.”"
+     ],
+     "goto": "s12e"
+    },
+    {
+     "tag": "Wit",
+     "text": "“It was a good song. That was the worst part.”",
+     "set": {
+      "s2e16_h5": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "On the levee Lena told you she was sorry she asked you to come hear the song. You told her it was a good song, and that was the worst part.",
+     "response": [
+      "“It was a good song,” he says. “That was the worst part.”",
+      "Something goes out of her that is nearly a laugh and isn’t. Her eyes are still wet. “It was a *really* good song,” she says, miserable, and puts her face back down against his collar."
+     ],
+     "goto": "s12e"
+    }
+   ]
+  },
+  "s12e": {
+   "slug": "TUESDAY · 10:45 PM · THE MOONWALK — CALL ME AFTER",
+   "set": {
+    "liar_withdrawn": true,
+    "call_untangled": true,
+    "told_no_thing": true,
+    "knows_laney_laptop": true,
+    "rel.lena.trust": "+3",
+    "rel.lena.friction": "-4"
+   },
+   "body": [
+    "Out on the river the ferry is making one of its last crossings, a lit box sliding over the black with nobody at its rail, and Lena watches it across to the Algiers landing before she moves. When she moves, she turns. She comes around inside the coat on the step below him until she’s facing him between his knees, with the Carhartt held around her shoulders by his arms, and she puts both hands flat on his chest, side by side, over his heart. He has seen her put her hands on a seminar table like that, right before she takes the table apart.",
+    "“Christmas,” she says.",
+    "“I called you most nights.”",
+    "“Every night. I said it at Hale’s, in front of everybody.” And she says it again, word for word, only lower: “‘Every night, Jack. From your daddy’s garage. I sat out on my mama’s back steps in a coat in the dark so I wouldn’t wake the house, and you read me my own margins, and you told me about your brother and your grandmother and the snow, and I told you —’”",
+    "At Hale’s she stopped there, with the table watching. Here there’s only him.",
+    "“And I told you about Mémère’s hip, and the bonfires on the levee at Lutcher, and Daddy’s knee in the cold room, and what Father Hébert said about the Holy Innocents,” she says. “I told you every single thing but one. I was out on those steps every night deciding something, with you in my ear, and I never said what.”",
+    "Out on the water the ferry has turned at the far landing and started back, its lights laid out on the river ahead of it.",
+    "“Three times I told you he was coming,” Lena says. “‘Julian lands the thirtieth. Mémère’s ironing a tablecloth.’ ‘Julian lands tomorrow at four.’ ‘The gumbo happened. Mémère ironed the tablecloth twice.’ And every time I stopped after, and waited. Three times I told you, and three times you let me hang there.”",
+    "“What was I supposed to say? *Don’t?*”",
+    "“Yes.”",
+    "Her hands are still on his chest. He sat in a cold garage with the phone against his ear and heard her read him the weather in a town he’d never see, and it didn’t once cross his mind that she was standing at the end of every forecast waiting for him to say a word.",
+    {
+     "if": "s2e2_newyear==\"almost\"",
+     "text": "“New Year’s,” he says. “Your text came in the second my phone turned one. *Happy New Year, Jack. —L.* I typed back *1:00. not 1:01. i saw.* And I erased it.” He has never told anybody that. “I sat there and took it out.”"
+    },
+    {
+     "if": "s2e2_newyear==\"almost\"",
+     "text": "“I sent it at 12:59,” Lena says, “so it would land on your minute.”"
+    },
+    {
+     "if": "s2e2_newyear==\"sincerity\"",
+     "text": "“New Year’s,” he says. “I wrote you back.” — “*happy new year lena*,” she says. “No capitals. I read it forty times on the back steps and I couldn’t make it say one thing more than that.”"
+    },
+    {
+     "if": "s2e2_newyear!=\"almost\" && s2e2_newyear!=\"sincerity\"",
+     "text": "“New Year’s,” he says. “Your text came, and I didn’t answer it. I held the phone till two.” — “I know you didn’t answer it,” she says. “I was holding mine.”"
+    },
+    "For a little there’s only the band on Decatur, and the cold.",
+    "“I’d decided,” she says. “Over Christmas. After the party — after your face under that doorframe — and because of those calls, every one of them. I’d decided to end it with Julian.”",
+    {
+     "if": "heard_frag_tell",
+     "text": "Two pieces of a sentence he caught through a door in January — *she’d decided, Theo* — *over Christmas* — and carried around since in two halves, come together in his head and make one, and he hears it whole."
+    },
+    "“Say it,” she says. “The call. Laney made me say it to her four times in the bathroom with the fan going so the hall couldn’t hear. I bet somebody made you.”",
+    "“Theo. While I was doing my tie.”",
+    "So they say it. She does her lines and he does his, on the top step of the Moonwalk with the Quarter roaring at his back, and they don’t have to stop and think for any of it.",
+    "“‘I’m going to see him Monday. Dinner, after Hale. Will you be around after? Monday night. Nine, ten.’”",
+    "“‘Probably not. I’ve got a thing.’”",
+    "“‘Okay. Then call me after. Eat something first.’” She doesn’t take her eyes off him for the next one. “‘I haven’t been fair to him, Jack. I’ve known it a while. I’m going to fix it.’”",
+    {
+     "if": "s2e3_hint==\"restraint\"",
+     "text": "“‘Okay.’”"
+    },
+    {
+     "if": "s2e3_hint==\"restraint\"",
+     "text": "“‘Lord, he speaks.’”"
+    },
+    {
+     "if": "s2e3_hint==\"sincerity\"",
+     "text": "“‘He’s a good guy, Lena. He deserves that.’”"
+    },
+    {
+     "if": "s2e3_hint==\"sincerity\"",
+     "text": "“‘He does.’”"
+    },
+    {
+     "if": "s2e3_hint==\"candor\"",
+     "text": "“‘Why are you telling me?’”"
+    },
+    {
+     "if": "s2e3_hint==\"candor\"",
+     "text": "“And I didn’t tell you why,” she says. “That’s on me.”"
+    },
+    {
+     "if": "s2e3_hint!=\"restraint\" && s2e3_hint!=\"sincerity\" && s2e3_hint!=\"candor\"",
+     "text": "“‘Fix it how? Write him a song?’”"
+    },
+    {
+     "if": "s2e3_hint!=\"restraint\" && s2e3_hint!=\"sincerity\" && s2e3_hint!=\"candor\"",
+     "text": "“‘That’s not funny.’”"
+    },
+    "“*Fix it*,” Lena says. “End it. *After* — after I’d ended it, Monday night, at that dinner. *Call me after.*” Her hands press once against his chest. “Be there after, Jack. That’s what I said. I asked a man to be up at ten o’clock on a Monday night waiting to hear how my dinner with another man went. Who asks that? Who asks that of a *friend*?”",
+    "“I heard *fix it*,” he says. “Make it right. With him. I heard *call me after* the way you’d say it to a cousin. I heard you shutting a door on me, real gentle, so it wouldn’t wake anybody.”",
+    "She opens her mouth to win it. He watches her get as far as the first word, and stop, and go back over the record in her head, and come out the other end of it.",
+    "“I said *fix it*,” she says. “Lord. I said *fix it*. Who says *fix it* about a breakup?” She shuts her eyes. “I sounded like Daddy talking about a carburetor.”",
+    "It gets out of him, one short laugh, up at the low cloud, and her hands knock against his chest for it, and with her eyes still shut her mouth goes crooked anyway.",
+    "“Now you,” she says, opening them. “Tell me about your thing.”",
+    "“There wasn’t any thing.” It costs more than he thought, said up close. “I said it so I wouldn’t be sitting by a phone Monday night while you fixed it. And by Monday night —” He makes himself. “By Monday night my thing was Del Playa.”",
+    "Her hands stay where they are.",
+    "“The next day I got off a plane,” he says, “and there was a sign at the gate in eyeliner, and I kissed her under it, and a girl in the line filmed it. Sunday she set the status, and I said yes to it.”",
+    "“I landed Sunday at four,” Lena says. “By Sunday night I’d seen both.”",
+    {
+     "if": "laney_silent_laptop",
+     "text": "“Laney took the laptop. Shut it and put it in her closet and told Theo it was staying there. She thought I didn’t see her do it.”",
+     "else": "“Nobody had to show me. I found them both on my own, at eleven o’clock at night, sitting on my bed with my suitcase still packed.”"
+    },
+    {
+     "if": "laney_silent_laptop",
+     "text": "He didn’t know that. He puts it with the rest."
+    },
+    "“Monday we sat at opposite ends of Hale’s table and did Dido. Monday night was his birthday dinner, the Monday after.” She stops. “And I didn’t say what I went there to say. We’ll get to the dinner.”",
+    "She looks at him, close, with her hands on him.",
+    "“I found out from a status,” she says, “after we talked every single day for weeks.”",
+    "“I couldn’t tell you,” he says, “without telling you what the calls had been. And I thought you’d told me, on that phone, that you were going back to him. I thought you’d told me nicely.” The ferry is halfway home again. “There wasn’t anything I could say that you’d want to hear.”",
+    "“You could have tried me.” Her hands press harder; she has the floor and she means to keep it. “You could have called me Saturday from the airport parking lot. You could have texted me from the plane. *I’m seeing somebody. I wanted you to hear it from me.* I’d have hated you for a week, Jack, and I’d have hated you to your face, on the phone, like a friend. You owed me that much before you owed the internet anything.”",
+    "There isn’t an argument against it, and he doesn’t make one. “I did,” he says. “I owed you that.”",
+    "“You did.” She keeps it a moment, won. Then, quieter, because she’s fair: “And I’d have hung up on you.”",
+    "“I know.”",
+    {
+     "if": "s2e8_d3==\"real\"",
+     "text": "“And then Hale’s,” she says."
+    },
+    {
+     "if": "s2e8_d3==\"real\"",
+     "text": "He gives her his own line back, the worst one, because it’s his to carry. “‘That right there. That’s what I meant in San Francisco. You as good as told me to do what I did. I didn’t realize I owed you proof of delivery.’”"
+    },
+    {
+     "if": "s2e8_d3==\"real\"",
+     "text": "“‘I said no such thing,’” Lena says. “And you called me a liar, and I called you one, at Hale’s table, with Hale at the head of it.”"
+    },
+    {
+     "if": "s2e8_d3==\"real\"",
+     "text": "“You called me a liar in front of Caleb Hargrove.”"
+    },
+    {
+     "if": "s2e8_d3==\"real\"",
+     "text": "“You called me one in front of Hale’s *dog*.”"
+    },
+    {
+     "if": "s2e8_d3==\"real\"",
+     "text": "“The dog took your side.”"
+    },
+    {
+     "if": "s2e8_d3==\"real\"",
+     "text": "“Berkeley’s *deaf*, Jack. Berkeley takes everybody’s side.”"
+    },
+    {
+     "if": "s2e8_d3==\"real\"",
+     "text": "It’s funny. For as long as it takes the ferry to nose into its slip it’s the funniest thing either of them has ever heard. And then it isn’t, because it was a real table with real people around it, and they said it to each other’s faces and both of them believed it."
+    },
+    {
+     "if": "s2e8_d3!=\"real\"",
+     "text": "“And all of January,” she says, “you walked around thinking I was a liar, and I walked around thinking you were one. On the curb I as good as said it to your face.”"
+    },
+    "“I wasn’t lying,” he says. “I heard what I heard.”",
+    "“And I wasn’t. I said what I said.” Her hands haven’t left him, and her eyes are wet again, and her face could go either way, into a laugh or the other thing. “That’s the stupidest part.”"
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“I’m sorry I called you a liar. You weren’t.”",
+     "set": {
+      "s2e16_liar": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "cue": "Lena will remember that.",
+     "key": "On the levee you and Lena went through the January call word for word, and both of you took back “liar.” You said it first.",
+     "response": [
+      "“I’m sorry I called you a liar,” he says. “You weren’t.”",
+      "“Neither were you.” She says it right away, before it can get any heavier. “I’m sorry.”",
+      "That’s all it takes, after a month of it. He would have thought it would take more."
+     ],
+     "goto": "s12f"
+    },
+    {
+     "tag": "Candor",
+     "text": "“I heard what I was afraid of. That’s mine.”",
+     "set": {
+      "s2e16_liar": "candor",
+      "trait.candor": "+1"
+     },
+     "key": "On the levee you and Lena went through the January call word for word. You told her you’d heard what you were afraid of, and both of you took back “liar.”",
+     "response": [
+      "“I heard what I was afraid of,” he says. “That’s mine.”",
+      "“And I said it like a carburetor.” She nods against nothing. “That’s mine.” And then, because it has to be said in the actual word: “You weren’t a liar, Jack.”",
+      "“You weren’t either.”"
+     ],
+     "goto": "s12f"
+    },
+    {
+     "tag": "Wit",
+     "text": "“I still say the dog was on my side.”",
+     "if": "s2e8_d3==\"real\"",
+     "set": {
+      "s2e16_liar": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "On the levee you and Lena went through the January call word for word, argued about whose side Hale’s dog was on, and both took back “liar.”",
+     "response": [
+      "“I still say the dog was on my side.”",
+      "She nearly laughs. It gets right up to her mouth, and her hands bunch on his chest, and she holds it there and doesn’t let it out. “You’re not a liar,” she says instead, straight. “I take it back.”",
+      "“I take it back too. You never were.”"
+     ],
+     "goto": "s12f"
+    },
+    {
+     "tag": "Wit",
+     "text": "“For two liars, we were terrible at it.”",
+     "if": "s2e8_d3!=\"real\"",
+     "set": {
+      "s2e16_liar": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "On the levee you and Lena went through the January call word for word, and both of you took back “liar.”",
+     "response": [
+      "“For two liars,” he says, “we were terrible at it.”",
+      "She nearly laughs, and doesn’t. “You weren’t one,” she says, straight. “I take it back.”",
+      "“I take it back too.”"
+     ],
+     "goto": "s12f"
+    }
+   ]
+  },
+  "s12f": {
+   "slug": "TUESDAY · 10:55 PM · THE MOONWALK — CARTHAGE",
+   "set": {
+    "proxy_named": true,
+    "rel.lena.warmth": "+1",
+    "rel.lena.friction": "-3"
+   },
+   "body": [
+    "After that it goes fast. They go through January the way people go through a bruise, pressing each part of it once to find where it still hurts, and moving on.",
+    "“Dido,” Lena says. “The eleventh.”",
+    "“You took the window.”",
+    "“You took the door. And we did Aeneas at each other for forty minutes down the length of that table, and not one person in that room said a word about Aeneas that wasn’t about us.”",
+    "“Sully’s,” he says. “The back hall.”",
+    "“That hallway was an alley with a pay phone in it.”",
+    "“I said ‘performance.’”",
+    "“You said ‘performance.’ And I said I kept your chair till the half.”",
+    {
+     "if": "s2e5_hall==\"press\"",
+     "text": "“And I said you moved it so I wouldn’t come.”"
+    },
+    {
+     "if": "s2e5_hall==\"press\"",
+     "text": "“I moved it out of the Fishbowl because I wasn’t going to sit in my own booth and watch her in my bar.” Her palms push against his chest, not hard. “That’s why. Not so you wouldn’t come. So she wouldn’t. And then you both came.”"
+    },
+    {
+     "if": "s2e5_hall!=\"press\"",
+     "text": "“I moved it out of the Fishbowl,” Lena says, “and you never asked me why, so here’s why. I wasn’t going to sit in my own booth and watch her in my bar.”"
+    },
+    "“The Fishbowl,” he says. “Three in the morning.”",
+    {
+     "if": "s2e6_3am==\"in\"",
+     "text": "“‘Whatever you’re doing, Jack — you can stop.’” She gives it back to him in the same words, and then the rest, that she didn’t say that night. “I thought you were taking it apart. Me and him. I thought you were sitting up there on the fourth floor putting something in it a drop at a time, on purpose, so I’d have to watch it go.”"
+    },
+    {
+     "if": "s2e6_3am!=\"in\"",
+     "text": "“If I’d come down that night,” Lena says, “I’d have told you to stop whatever you were doing. I thought you were taking it apart, me and him. A drop at a time. On purpose.”"
+    },
+    "“I wasn’t doing anything,” he says. “I was in a stairwell.”",
+    "She looks at him, and leaves it.",
+    "“The curb,” she says. “After the Walk.”",
+    "“‘How do you have the nerve to be mad at me? For any of this?’”",
+    {
+     "if": "s2e7_nerve==\"reckless\"",
+     "text": "“The whole curb heard you.”",
+     "else": "“You said it so quiet I had to read it off you.”"
+    },
+    "“And you said, ‘Thank you for coming, Jack,’ and left.”",
+    "“And I was right to leave,” she says. “You don’t get to be mad at me, Jack. Not then. You had a girl on your arm in every picture on the internet, and you stood on a curb in front of a van full of people and asked me where I got the *nerve*.” Her palms press. “I was the one who’d been left on a phone. You don’t get to be the one who’s hurt in front of a van.”",
+    "She’s right, and he knows the shape of it from the inside: he stood on that curb and made himself the wronged party because it was easier than being the one who went to Del Playa. “No,” he says. “I didn’t get to be.”",
+    "“You were mad at me for a gate and a status,” she says. “I was mad at you for a *thing*, and for three times on a phone. We were standing on the same map, pointing at each other from opposite edges of it.”",
+    {
+     "if": "lena_thanked_coming",
+     "text": "“And on Sunday,” he says, “on your mama’s back steps, you said it again. ‘Thank you for coming.’”"
+    },
+    {
+     "if": "lena_thanked_coming",
+     "text": "“Same words.”"
+    },
+    {
+     "if": "lena_thanked_coming",
+     "text": "“I meant the other thing by them.”"
+    },
+    "“And Hale’s,” he says.",
+    "She says the worst of hers herself, so he won’t have to. “‘Do you still go up, Costigan? On Sundays?’” She doesn’t say the rest of it. She doesn’t have to; he heard it the first time.",
+    "“‘You can’t forgive a *Facebook status*,’” he says. Equal time.",
+    "“You found the one thing,” he says. “On the first try.” And because it’s true, and she ought to have it: “I didn’t go up that Sunday. I knelt.”",
+    "Her hands stop on his chest. “I’m sorry,” she says. “That one I’m sorry for. That one was low, and I went looking for it.”",
+    "“Hale stopped it.”",
+    "“Hale stood up. I didn’t know the man could get up that fast.”",
+    "“And Monday, ‘The Dead,’” he says. “Hale throwing it straight at us like a pitching machine.”",
+    "“And six minutes behind his door,” she says, “and I came out and walked right by you.” She shakes her head. “He asked me if I was all right. Hale. In that voice. And I said, ‘Perfectly, thank you,’ and I could hear how I sounded, and so could he, and he let me go anyway. I was terrified of him for a week.”",
+    "“And Thursday we packed a van through Kevin and Laney.”",
+    "“And then the drive.”",
+    "She’s quiet. Her palms lie on his chest without pushing. “I went after her,” she says. “In the van. I called her a performer. I said it every way I knew how, and I know a lot of ways.”",
+    "“And I was as angry as I’ve ever been in my life.”",
+    {
+     "if": "said_movie_line",
+     "text": "“And you said,” Lena says, and she has it by heart, every word: “‘Sorry, I forgot how private you and Julian are. When she stars in a movie called “Jack” I’ll make sure you come watch the whole thing next to me so we can see your face enjoying how authentic and humble everything is.’”"
+    },
+    {
+     "if": "said_movie_line",
+     "text": "Hearing it in her mouth is worse than saying it was."
+    },
+    {
+     "if": "said_movie_line",
+     "text": "“That line about the movie was the meanest thing anybody’s ever said to me,” she says. “And it was fair.”"
+    },
+    {
+     "if": "said_movie_line",
+     "text": "“It wasn’t fair.”"
+    },
+    {
+     "if": "said_movie_line",
+     "text": "“It was fair enough to shut me up for three hundred miles of Texas.”"
+    },
+    {
+     "if": "!said_movie_line",
+     "text": "“And you shut your mouth on whatever you had,” she says, “and kept it shut for three hundred miles of Texas. I watched you hold it. Tell me what it was.” — “That you were jealous.” — “I was.”"
+    },
+    "He looks at it all laid out, January to the Texas line. Dido and Sarah Miles and Gretta Conroy at her window in the snow, a Facebook status, and a woman in Vancouver who was never what any of it was about. They fought about every bit of it. They didn’t fight about the phone call one time.",
+    "“We had a war about *Dido*,” Lena says.",
+    "“Aeneas had a fleet.”",
+    "“He had a *choice*.”",
+    "“So did she.”",
+    "They look at each other. And it’s funny — it’s so stupid it’s funny, two people who talked every night for three weeks spending a month going at each other in front of their professor by way of a dead queen of Carthage — and he laughs, really laughs, out over the water, and she says, “Don’t you laugh at Dido,” with her eyes running and her mouth not minding her at all. And then it isn’t funny, because it was a month, and it was them. And then, because it was *Dido*, it is again."
+   ],
+   "choices": [
+    {
+     "tag": "Wit",
+     "text": "“We had a war by proxy. Aeneas lost.”",
+     "set": {
+      "s2e16_proxy": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“We had a war by proxy,” he says. “Aeneas lost.”",
+      "“Aeneas *won*, Jack.” She’s wiping her eyes with the heel of one hand and keeping the other on him. “That’s the whole problem with the poem.”",
+      "“Then I’m sorry about the movie line.”",
+      "“I’m sorry about *performing*.” She says it to his face, both words. “Now we’re even, and I hate it.”"
+     ],
+     "goto": "s12g"
+    },
+    {
+     "tag": "Candor",
+     "text": "“Every one of them was the phone call.”",
+     "set": {
+      "s2e16_proxy": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "“Every one of them was the phone call,” he says.",
+      "“Every one,” she says. “Even Dido.” She looks down at her own hands on his shirt as if they belonged to somebody who’d been in all those rooms. “I’m sorry about *performing*.”",
+      "“I’m sorry about the movie.”"
+     ],
+     "goto": "s12g"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“I’m sorry about the movie line.”",
+     "set": {
+      "s2e16_proxy": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“I’m sorry about the movie line.”",
+      "“Don’t be. I’m sorry about *performing*. She isn’t. She’s —”",
+      "And Lena stops herself there, with her mouth open on the rest of it, and shuts it, and shakes her head once at him: not yet."
+     ],
+     "goto": "s12g"
+    }
+   ]
+  },
+  "s12g": {
+   "slug": "TUESDAY · 11:05 PM · THE MOONWALK, IN THE FOG — LUCKY DOGS",
+   "set": {
+    "alliance_named": true,
+    "rel.lena.warmth": "+1",
+    "rel.lena.friction": "-1"
+   },
+   "body": [
+    "The fog comes off the river without any warning. Algiers is there across the water with its handful of lamps, and then it’s a smear, and then it’s gone, and the fog is coming up the rocks and over the lowest steps in a slow white roll, and the Moonwalk lamp has a ring around it. Behind them the cathedral goes soft at the edges. The cold turns wet and gets into the canvas.",
+    "“Theo,” Jack says.",
+    "“Laney,” Lena says, at the same time.",
+    "They look at each other in the fog.",
+    "“He made me say the call to him,” Jack says. “Then he asked me what the thing was, folding socks. He said ‘A week, Costigan’ back to me like a scouting report. He said, ‘Over Christmas. You called her every night.’ I said most nights. And then he stood in our room with the Saints schedule and said ‘once in a lifetime’ till I said yes to New Orleans to make him stop.”",
+    "“And Laney wrote mine down,” Lena says. “She had a legal pad. She’d come in at two in the morning and sit on the end of my bed in her retainer and say, ‘Tell me the phone call again, sugar,’ and I’d tell it, and she’d make a face like a judge at a pie contest. ‘He said he had a *thing*?’ Every time. Like it was new.”",
+    "“They had two. I walked in on them in the lounge one night, both of them with legal pads, doing a wedding seating chart.”",
+    "“*Whose* wedding?”",
+    "“They said hypothetical.”",
+    {
+     "if": "jack_said_so_was_i && laney_aside",
+     "text": "“She told me what you said,” Lena says. “At the dryer. She came upstairs that night and told me. ‘She was really upset, Jack, and she didn’t have anyone.’ And you said, ‘Yeah, well. So was I.’”"
+    },
+    {
+     "if": "jack_said_so_was_i && laney_aside",
+     "text": "“I did.”"
+    },
+    {
+     "if": "jack_said_so_was_i && laney_aside",
+     "text": "“I didn’t believe her. Laney lies for sport. She said you said it at a *dryer*.” Lena’s hands open on his chest, appealing to the fog. “Who says that at a dryer?”"
+    },
+    {
+     "if": "jack_said_so_was_i && laney_aside",
+     "text": "“I did. I said it at a dryer.”"
+    },
+    {
+     "if": "!jack_said_so_was_i || !laney_aside",
+     "text": "“Laney told me something you said, in January,” Lena says. “I didn’t believe her. Laney lies for sport.” — “Whatever it was,” he says, “I said it.”"
+    },
+    {
+     "if": "told_theo_hurt",
+     "text": "“Theo knew how bad it was,” he says. “I told him.”"
+    },
+    "“Laney turned around this morning at Zulu with that coconut and showed it to me first,” Jack says. “Before she remembered she hates me.”",
+    "“She doesn’t hate you. She’s been hating you on my behalf since January.” Lena shakes her head against his coat. “It’s a lot of work. She’s exhausted. And this afternoon in the Marigny she danced with Kevin for half an hour straight so she wouldn’t have to look at us. Laney doesn’t dance with *Kevin*. Kevin can *dance*, it turns out, and she didn’t even look surprised.”",
+    "And once they start looking for it, it’s everywhere. The seating chart taped to the Odyssey’s dash. Theo on the parade route handing his phone across a cooler to Kevin, screen down — *I can’t be trusted.* Laney at Endymion throwing a plush red heart the size of a pillow back into the crowd like it had the pin pulled — *NO hearts.* And back at the corner of the square, a girl with a coconut deciding all at once that every single one of them was faint.",
+    "“They’re eating Lucky Dogs,” Lena says. “Right now. Somewhere on Bourbon Street, Theo Vance and Laney Price are eating Lucky Dogs *on purpose*.”",
+    "“Margot too.”",
+    "“Margot’s being held against her will.” She looks off into the fog. “Margot’s been taking notes on us since August. She’ll say it was research.”",
+    "“It was research.”",
+    "“Kevin told them,” Jack says. “Under the dinosaurs at Cabazon. ‘Respectfully. Leave it alone.’ And in the van, when they started up again: ‘I said leave it alone. In January.’”",
+    "“In *January*.” Lena looks up at him through the wet. “Kevin’s the only honest man on this trip.”",
+    "Out on the river the ferry is a lit shape going under the fog, its last run. Neither bank is there anymore.",
+    "“We don’t tell them,” she says.",
+    "“Not a word.”",
+    "“Not till it’s true.” She looks out at the white where the water was. “Let them eat their hot dogs.”"
+   ],
+   "choices": [
+    {
+     "tag": "Wit",
+     "text": "“We should send them a fruit basket.”",
+     "set": {
+      "s2e16_alliance": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“We should send them a fruit basket.”",
+      "“We should send them a *bill*.” And she laughs — out loud, into the fog, her head back, a real laugh with all of New Orleans in it, and the fog takes it and doesn’t give any of it back."
+     ],
+     "goto": "s12h"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“They threw the towel in, in Arizona. They picked it back up.”",
+     "set": {
+      "s2e16_alliance": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“They threw the towel in, in Arizona,” he says. “They picked it back up.”",
+      "“They did,” she says, and the laugh gets out of her, surprised — a short bright sound over the water that she didn’t send and doesn’t take back. “They did. With a *coconut*.”"
+     ],
+     "goto": "s12h"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Laugh, and let her laugh.*",
+     "set": {
+      "s2e16_alliance": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He laughs, and she hears him start and goes with him, and then they’re both gone — her laugh with all its sound in it, shaking, his under it — for longer than any of it deserves, on a wet step in the fog with the city going on without them. The fog takes it.",
+      "“Hot dogs,” she says, when she can. “On *purpose*.”"
+     ],
+     "goto": "s12h"
+    }
+   ]
+  },
+  "s12h": {
+   "slug": "TUESDAY · 11:12 PM · THE MOONWALK — NOT THE PICTURES",
+   "set": {
+    "skye_in_full": true,
+    "rel.lena.trust": "+2",
+    "rel.lena.heat": "+1"
+   },
+   "body": [
+    "The laugh goes out of her slowly. By the time it’s gone the fog is all the way up the steps, and the lamp over them has a ring around it, and the roar of the Quarter comes through the white muffled, like a party in the next apartment.",
+    "She tips her face up to him. Her hand is flat on his chest.",
+    "“Tell me about her,” she says. “Not the pictures. Her.”",
+    "It’s the one he’d skip, if she were letting him skip anything. She isn’t. And she ought to know what it is he’s putting down.",
+    "“She’s the funniest person I’ve ever met,” he says. “I don’t mean she tells jokes. She’ll do my mother, or Hale, or a waitress in Youngstown, before she’ll answer a question as herself, and she’s so good at it you forget you asked. And she’s the bravest person in any room she walks into. She walks in and everybody turns around, and she knows it before they do, and she walks in anyway.”",
+    {
+     "if": "skye_first_mass",
+     "text": "“She came to Mass with me. I didn’t ask her to. She sat there and watched everything like she was taking notes, and afterward she made me explain it properly, start to finish. The next time she knelt down next to me at St. Brendan’s.”"
+    },
+    {
+     "if": "skye_at_walk",
+     "text": "“She walked at the March for Life with me, in San Francisco. It cost her, and she knew exactly what it was going to cost before she got out of the car.”"
+    },
+    {
+     "if": "stayed_fundraiser",
+     "text": "“There was a fundraiser her people set up. She could have walked me through it like a coat she’d borrowed. Instead she took it apart for me — got every one of those people to say what they actually thought, and then she stood back and let me give them the real arguments instead of the cartoon.”"
+    },
+    "He hears his own voice going on and doesn’t stop it. “She didn’t want to win. She wanted to understand what I believe. I don’t know anybody else who ever wanted that who didn’t already believe it.”",
+    {
+     "if": "s2e8_noon==\"candor\"",
+     "text": "“I told her something Father Osei would say. That there’s good between two people and there’s bad, and the bad doesn’t cancel the good. And she said, ‘Say the last part again.’ And then she said it wasn’t in the book, and I said, ‘It’s in him,’ and she was quiet a long time after that.”"
+    },
+    "“She told my brother how we met. Danny was on the phone, on his birthday, and she told him this whole made-up story about some trick I pulled to get her to go out with me, and he was dying, he couldn’t breathe — and then she stopped doing it and told him the truth. The window seat. What I said about the grandmother. A lie would’ve been funnier, and she knew it, and she told him the true one.”",
+    "“Was she kind to you?” Lena asks.",
+    "“Yes.”",
+    "“Good,” she says, and nothing on her face changes, and her eyes stay on his.",
+    "“She’s the one I can tell the truth to. I said that to my brother on the phone with her listening, and it was true when I said it.” The fog moves on the steps below them. “She wanted to be with me in the daylight. She was good at it.”",
+    {
+     "if": "lena_asked_happy",
+     "text": "“You asked me in the van if I was happy. I said yes. It was true.”"
+    },
+    "“I thought about Christmas in Youngstown with her at my grandmother’s table. I had the chair picked out. She told me once nobody ever sends her the first thing — they send the last thing, after. I wanted to be the one who sent the first.”",
+    "“I skipped a Saints game for her in January,” he says. “I told her why I was skipping it, and she said, ‘Teach me it.’ So I taught her it. She asked better questions than Remy.” The fog has her hair now, a fine wet on it. “She reads a book like she’s going to have to play every person in it. You can’t win an argument with her about a story. She’s already been all of them.”",
+    "He stops, and makes himself say the next part too, because it’s true and she asked for all of it. “I’m going to miss her. I already do.”",
+    "Her hand doesn’t move. It doesn’t press and it doesn’t lift. Her medal has come out of her collar on its mended chain, and it catches what light the lamp still has.",
+    "“I watched you answer her,” Lena says. “All week. Every call. In the kitchen with Mama at the stove, at a gas pump in Arizona, on a stoop on Royal Street this afternoon. You never let it ring once.”",
+    "“I wasn’t going to be that,” he says. “On top of all the rest.”",
+    "“I know you weren’t.” Her fingers move a little on the flannel, not anywhere new, the same small place. “That’s how I knew it was real. A man doesn’t pick up on a stoop on Royal Street for a picture.”",
+    "There’s a word for it. He has said it to her on the phone with this girl ten feet away. He can’t say it here: said to the woman inside his coat, it would turn around in his mouth into the truth about her, and more than that, and nobody on this levee is going to say that tonight.",
+    "“She’s —” he says.",
+    "“I know what the word is, Jack.” Her hand on his chest doesn’t move. “Don’t you say it.”",
+    "He doesn’t.",
+    "“It was never the pictures,” she says. “All January I thought, if I ever had to hear it, it’d be the pictures that killed me. I *wanted* it to be the pictures. Some girl doing a bit at you on the internet in a tank top — I could have hated a bit. I’m good at hating a bit. I was raised by Mémère.” Her eyes don’t leave his. They’re wet and they don’t go anywhere. “It was never the pictures. It was that it was real.”",
+    "She says the other half herself.",
+    "“And you’re giving that up.”",
+    "“Yes.”",
+    "“For —”",
+    "She doesn’t finish it. He doesn’t either. The fog has the lamp now, and the two of them under it, and up and down the Moonwalk there’s nobody else at all."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“She’s the best thing that happened to me this year, except —”",
+     "set": {
+      "s2e16_skye": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "On the levee Lena asked about Skye — not the pictures, her. You told her all of it, without the word, and stopped at “except.”",
+     "response": [
+      "“She’s the best thing that happened to me this year,” he says, “except —”",
+      "And he stops there, at the edge of it, with the rest of the sentence inside his coat with her. Lena lets it stand. It’s the nearest either of them has come."
+     ],
+     "goto": "s12i"
+    },
+    {
+     "tag": "Candor",
+     "text": "“I’m going to tell her all of this. To her face. I promised her that.”",
+     "set": {
+      "s2e16_skye": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "key": "On the levee Lena asked about Skye — not the pictures, her. You told her all of it, without the word, and that you’ll tell Skye all of this to her face.",
+     "response": [
+      "“I’m going to tell her all of this,” he says. “To her face. I promised her that.”",
+      "“Good,” Lena says. “She should hear it from you. Not from a —” She stops, and starts it over. “Not from anybody else.”"
+     ],
+     "goto": "s12i"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Stop there. Let the rest be silence.*",
+     "set": {
+      "s2e16_skye": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "On the levee Lena asked about Skye — not the pictures, her. You told her all of it, without the word, and let the rest be silence.",
+     "response": [
+      "He stops there. He has told her what there is, and the rest he leaves unsaid.",
+      "The city fills the silence for them, muffled through the white — a band starting over, somebody whistling for a cab, a siren a long way off — and she lets it, and her hand stays where it is on his chest."
+     ],
+     "goto": "s12i"
+    }
+   ]
+  }
+ }
+}

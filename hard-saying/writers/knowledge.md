@@ -2405,3 +2405,50 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Laney's cry.** Her first at the table since Kaylee; Theo's "Happy birthday, Laney". The 403 call from Gordon (four minutes) is Laney's; do not have Theo know the number.
 - **Carried from S2E14 and untouched:** Lena's "— and —"; Luc's gas-leak file; Theo's eyes at S2E13 s12a; the January call; the swing print and the Cabazon postcard; `promised_skye_truth`; the ring in Mémère's cedar chest; Hale's four thousand words due the Monday they return.
 - **Branch-dependent:** `s2e15_dawn`, `s2e15_lourdes`, `s2e15_gift`, `s2e15_card`, `s2e15_decree`, `s2e15_page`, `s2e15_ladder`, `s2e15_jude`, `s2e15_torch`, `s2e15_val`, `s2e15_cake`, `s2e15_roses`, `s2e15_conf`, `s2e15_box`, `s2e15_d1`, `s2e15_d2`, `s2e15_tet`, `s2e15_try`, `s2e15_throw`, `s2e15_steps`.
+
+### S2E16
+> Final revision (see continuity.md S2E16). Branch tags are `[scene | condition]`. Canon is Mon Feb 15 – Tue Feb 16, 2010, to midnight. Everything said aloud in a room is heard by the people in it unless the entry says otherwise. None of the hidden canon appears on the page, in keys, cues or nextTime.
+
+#### Jack
+- **Learns from Lena (levee, one to one):** [s12a] Wes's ring photo, the ring Odile gave him "For when", his plan, and "Take care of her"; Lena learned Jack knew since Columbus Day. [s12b] the thirteen days. [s12c] Montecito, meeting Skye, the Del Playa nights, the Brick 8 night, "never that". [s12d] her apology for the song; the December card of stops; the roof; Ero cras [`lena_two_words`]; "- and you." [s12e] her Christmas decision; the January call replayed word for word [`s2e8_d3=="real"`]; she takes back "liar". [s12f] the January fights; "Do you still go up" / Facebook status [`s2e8_d3=="real"`]. [s12g] her side of the whiteboard (a doberge on her mama's cake stand). [s12i] the Julian card (index card in capitals, back steps over Christmas, in her wallet five weeks and a day, "for you", Julian reads it first); she ends it after Mass Sun Feb 21. [s12k] she gives up something "Laney's going to take personally", not coffee.
+- **Learns from the others:** [s05] Remy asks if anyone else is confused; Josie: "Everybody." [s03t | Tony path] Tony asks "which one of you is with who". [s08] the rider hands Laney the coconut. [s11] Josie's marriage question at the table; Luc: the horses "come down from Canal". [s13a] Skye's midnight text: "you never said what youre wrapping."
+- **Tells others:** [s12a] Becca as a guardrail; that he knew of the ring since Columbus Day. [s12b] he ended it with Becca because of her. [s12c] the meteor-shower lie [`e21_early=="lie"`]. [s12d] Magdalena was his own good-night name. [s12e] he had no "thing"; Laney took the laptop [`knows_laney_laptop && laney_silent_laptop`]. [s12g] Kevin said "leave it alone"; "So was I" [`jack_said_so_was_i && laney_aside`]. [s12h] Skye in full, without the word; he has said it to Skye in Lena's hearing [gated on the save]. [s12i] "Me too. Since the porch." [s12j] the four cigarettes he put back [Candor]; "Six." [s12k] he will tell Skye Tue Feb 23; gives up cigarettes for Lent. To Skye: [s08] the bag photo; [s10 | `s2e16_tue=="sincerity"`] "Love you" (Lena overhears); [s13a] his Lent answer (`s2e16_lent`), nothing about the levee. To Jude: [s08] his answer (`s2e16_jude`), which Lena hears. To Wes: nothing new.
+- **Does not know / draws no inference:** the contents of Lena's Julian card before she tells him (s12i); that Theo and Laney will be told (they agree not to); what Lena is giving up beyond "Laney's going to take personally".
+
+#### Lena
+- **Hears on every path:** [s05] Julian's call (his name on her screen only). [s05] Josie: "Everybody." [s07] Mémère's French line, translated by Josie. [s08] the rider hands Laney the coconut. [s10] Skye's call, the Lent explanation. [s11] Josie's marriage question; Luc's "come down from Canal". [s13] Luc sees how they're standing at the sweep.
+- **From Jack, one to one (levee):** [s12a] Becca as a guardrail; that he knew of the ring since Columbus Day. [s12b] the thirteen days and why Becca ended. [s12c] Montecito, meeting Skye, Del Playa, Brick 8, "never that"; the meteor-shower lie [`e21_early=="lie"`]. [s12d] Magdalena was his name for her. [s12e] he had no "thing"; Laney took the laptop [`knows_laney_laptop && laney_silent_laptop`]. [s12f] "I knelt" [`s2e8_d3=="real"`]. [s12g] the alliance named; Kevin's "leave it alone"; "So was I" [`jack_said_so_was_i && laney_aside`]. [s12h] Skye in full, without the word. [s12j] "Six."; the four put back [Candor]. [s12k] he tells Skye Tue Feb 23. [s06 | Candor] the "Wed 2/17 · Lent" strip in his wallet (she sees strips Nos. 13, 15, 17 on the levee, new to her). [s10 | `s2e16_tue=="sincerity"`] "Love you" to Skye, overheard.
+- **Sees or hears herself:** [s08b | each coat branch] "You still carry that." (the tin through the coat); Tess sees her inside Jack's coat. [s09 | king-cake path] her hand in his coat pocket (Josie saw it at s03k).
+- **She does not learn (on the page):** Wes's s04 line (spent on Jack only; s04a, s12a).
+
+#### Skye
+- **From Jack:** [s08] the bag photo. [s10] Jack's Mardi Gras call: the Lent explanation, plus "Love you" [`s2e16_tue=="sincerity"`]. [s13a] his Lent answer (`s2e16_lent`).
+- **She says or does herself:** [s13a] midnight text "you never said what youre wrapping."
+- **She does not know:** anything from the levee (Wes's ring, the thirteen days, the Julian card, the whiteboard, that Jack will tell her on Tue Feb 23); that Lena overheard her call or Jack's "Love you"; that Lena was inside Jack's coat at Rex.
+
+#### Others
+- **Celeste** — [s02] learns Skye told Jack to come; [s05a | `house`] Kevin's 19th known, then the house; [s11] Lena tells her Julian isn't coming for Easter.
+- **Tony** — [s03t | Tony path] asks "which one of you is with who", fronts the king cake; [s05a | Tony path] "Tony's holding the paper on it."
+- **Josie** — [s03k | cake path] sees Lena's hand in Jack's pocket; [s05] "Everybody."; [s07] translates Mémère's French; [s11] asks the marriage question at the table.
+- **Laney** — [s05a | `laney`] knows Kevin's 19th, then the house; [s08] receives the coconut (Coco). Not told: the levee.
+- **Theo** — [s13] gets his phone back ("You already did."). Not told: the levee.
+- **Kevin** — [s12g] said "leave it alone" (Lena learns it); Kevin's dash chart is not alliance evidence. Turns 19: known to Jack alone on `quiet`.
+- **Julian** — [s05] calls Lena; [s12i] reads Lena's index card first; she ends it after Mass Sun Feb 21; Celeste is told he is not coming for Easter.
+- **Luc** — [s11] "come down from Canal"; [s13] sees how Jack and Lena are standing at the sweep.
+- **Jude** — [s08] Jack's answer (Lena hears it).
+- **Tess** — [s08b] sees Lena inside Jack's coat.
+- **Mémère / the house** — [s07] the whole house hears her French line.
+- **Bà Nội** — [s01] her voicemail was left at midnight Pacific.
+
+#### LIVE RISKS carried out of S2E16
+- **Who knows what at the end.** Lena knows everything on the levee (Wes's plan, the thirteen days, Montecito, Skye in full, the alliance). Skye knows none of it and is to be told Tue Feb 23; Theo and Laney are not to be told. No kiss on the levee; nothing either would have to confess until Feb 23.
+- **The unsaid word.** Mentioned once, in s12h ("There's a word for it" / "Don't you say it"). Whether Jack has said it to Skye in Lena's hearing depends on the save and on `s2e16_tue`. Do not have Lena say it aloud.
+- **`knows_laney_laptop`.** Set on all of s12e; read it only as `knows_laney_laptop && laney_silent_laptop`. Do not have Jack know Laney took the laptop unless both hold.
+- **The Julian card.** New canon: index card in capitals, back steps over Christmas, in her wallet five weeks and a day, "for you", Julian read it first; she ends it after Mass Sun Feb 21; Celeste knows he is not coming for Easter.
+- **Lena's Lent.** She gives up something "Laney's going to take personally", not coffee. Laney finds out in S2E17 (nextTime). Do not reveal it earlier.
+- **Jack's Lent.** Cigarettes (`lent_no_cigs`); "A pack he doesn't open"; on Candor a "Wed 2/17 · Lent" strip is in his wallet. The tin is now Lena's, in her jean-jacket pocket, and holds the "Six" strips.
+- **Tin key lines.** Unconditioned in the file: correct on a 6-cigarette save only.
+- **Wes.** The ring photo, the ring from Odile "For when", "Take care of her", Jack knew since Columbus Day. Lena knows all of it; the s04 Wes line reached Jack only.
+- **Fork-dependent facts.** House vs Laney vs quiet (Kevin's 19th); Tony vs cake path; coat branches at Rex; `s2e8_d3=="real"` gates the replay of Hale's call, "Do you still go up" and "I knelt"; `e21_early=="lie"` gates the meteor-shower lie; `e21_reply` varies "You never wrote back"; `lena_two_words` gates Ero cras.
+- **Carried from earlier and untouched:** Hale's four thousand words; Gloria's Saturday the 20th; `promised_skye_truth`; Luc's gas-leak file; Mémère's cedar-chest ring; the Cabazon postcard and the swing print.
+- **Branch-dependent keys:** `s2e16_mon`, `s2e16_wes`, `s2e16_lid`, `s2e16_jude`, `s2e16_bag`, `s2e16_box`, `s2e16_candle`, `s2e16_coat`, `s2e16_tue`, `s2e16_josie`, `s2e16_kevin`, `s2e16_stop`, `s2e16_h1`, `s2e16_h2`, `s2e16_h3`, `s2e16_h5`, `s2e16_alliance`, `s2e16_liar`, `s2e16_proxy`, `s2e16_plain`, `s2e16_tin`, `s2e16_skye`, `s2e16_line`, `s2e16_ice`, `s2e16_after`, `s2e16_lent`.
