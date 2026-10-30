@@ -1,0 +1,436 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "WEDNESDAY · 6:20 AM · N. DUPRE STREET, THE ATTIC",
+   "set": {
+    "s2e17_on": true,
+    "lent_day1": true,
+    "resolve.lena": 3
+   },
+   "body": [
+    "It’s barely light, and what light there is comes in gray at the gable window, through the blades of a box fan that hasn’t turned since summer. Over Jack’s face the points of the roofing nails stand through the deck boards, each with a bead of the night’s cold on it. Remy’s Tiger poster has let go of its second corner and hangs by one tack now, Tiger upside down with his fist still up, still celebrating. The hangover sits behind Jack’s eyes like the heel of a hand pressing in. Up through the open hatch from the front room comes Mémère’s television with the sound kept low for the sleepers: EWTN, the Ash Wednesday Mass from somewhere in Alabama, a choir singing something slow he can’t make out a word of.",
+    "They got home from the Quarter a little after half past twelve, and at one Clovis was still out on the porch swing in his good jacket with a bottle of Old Forester on the boards by his shoe and a Kool going. He has smoked his Kools on that porch since 1989, the year Tony quit and put him out the front door with them. Remy sat on the top step in the purple wig, and Theo on the step below him, and Clovis poured for the three of them into jelly glasses with the cartoons washed off. Jack took a finger of it, and then another, because his hands needed to be holding something that wasn’t a Marlboro; and when that didn’t work he went in and up the ladder in the dark and came back down with the January pack out of the side pocket of his duffel, eight left in it, and put it in Clovis’s shirt pocket behind the Kools. Clovis looked down at his own pocket for a while. “That’s not how Lent works, cher.”",
+    "Up here, with the light coming, Jack can still hear his answer. “It’s how mine works.” Clovis buttoned the pocket down over them and poured him one more he didn’t drink, and that was all anybody said about it. Celeste was asleep. Lena had gone straight in from the car and shut the door of the girls’ room behind her.",
+    "He hasn’t lit one since the air pump in El Paso, twelve days ago. Whatever his body wanted out of them, it quit asking somewhere in Louisiana. His hands haven’t quit. Twice before he’s properly awake he catches them going to the breast pocket of the flannel he slept in, where there’s nothing, and then out to the Carhartt on its nail, to the pocket where the tin rode for two months, and that’s two different nothings. Forty days. The first morning of a thing knows exactly how long it is.",
+    "He gets onto his knees on the boards under the window, with his head going like a bass drum two blocks off, and gets through the penance from memory. Thirteen mornings now. The Twelve go out two by two with a walking stick and nothing else, no bread, no money in their belts, into the houses that will have them and the houses that won’t, and halfway through comes *shake the dust off your feet*, and he says it and goes on to the oil and the sick. When he stands, the attic tips and settles.",
+    "Kevin is dressed already, sitting by the hatch on his rolled-up sleeping bag in the windbreaker and a pair of khakis with a crease ironed into them somewhere between Marisol and here, his hair combed wet and straight back. He looks across the attic at Jack, and his nose makes a small, private, clinical decision.",
+    "“Respectfully,” Kevin says. “You smell like Clovis.”",
+    {
+     "if": "s2e16_kevin==\"house\"",
+     "text": "He feels in the pocket of the windbreaker and takes something out and looks at it in his palm: the wax 7 off Monday’s cake, the wick gone black, the 7 a little bent from the heat. He puts it back and zips the pocket shut over it."
+    },
+    "In the middle Theo is a long shape under the Marisol blanket, flat on his back, with his eyes open on the nails. He doesn’t turn his head.",
+    "“I’m coming to the ashes,” Theo says. “Don’t make it a thing.”",
+    "“It’s not a thing.”",
+    "“Good.”",
+    "From the foot of the ladder Celeste’s whisper comes up through the hatch, the one that carries the length of a ward without waking anybody in a bed: “Eight o’clock. Coffee’s not food.”",
+    "The RAZR is on the sill by his knee with its outside screen lit. One message, from Burnaby, sent at 6:14 by his clock, which is 4:14 by hers: the end of a night on the lot, the rain towers shut down, the trailers dark, and Skye in a doorway somewhere with her hood up and the night’s makeup still on.",
+    {
+     "type": "sms",
+     "from": "SKYE (MISFIT)",
+     "text": "its wednesday where you are. are you dust yet",
+     "time": "6:14 AM"
+    },
+    "She went and looked it up. She always goes and looks it up."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*“not yet. 8 oclock. ill send proof”*",
+     "set": {
+      "s2e17_dust": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "not yet. 8 oclock. ill send proof",
+       "time": "6:21 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "proof or it didnt happen. going to sleep in my trailer like a raccoon",
+       "time": "6:22 AM"
+      },
+      "He shuts the phone and drops it into the breast pocket of the Carhartt, alone in there, and goes down the ladder into the smell of chicory."
+     ],
+     "goto": "s02"
+    },
+    {
+     "tag": "Wit",
+     "text": "*“hungover first. dust at 8”*",
+     "set": {
+      "s2e17_dust": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "hungover first. dust at 8",
+       "time": "6:21 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "a catholic hangover. is that a sin or a sacrament. dont answer. ill look it up",
+       "time": "6:22 AM"
+      },
+      "Kevin, who has come over to read it upside down across his shoulder, says nothing so loudly that Jack puts the phone away and goes down the ladder."
+     ],
+     "goto": "s02"
+    },
+    {
+     "tag": "Candor",
+     "text": "*“yes. since about 1am”*",
+     "set": {
+      "s2e17_dust": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "yes. since about 1am",
+       "time": "6:21 AM"
+      },
+      {
+       "type": "sms",
+       "from": "SKYE (MISFIT)",
+       "text": "thats either very deep or very drunk. dont tell me which. go get your dirt",
+       "time": "6:22 AM"
+      },
+      "Jack reads it out low, and from under the blanket Theo says, “Both.” Jack goes down the ladder."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "WEDNESDAY · 6:55 AM · DUPRE STREET, THE KITCHEN — COFFEE IS NOT FOOD",
+   "set": {
+    "ashwed_kitchen": true,
+    "resolve.lena": 3
+   },
+   "body": [
+    "There’s no breakfast. All week the kitchen has met him at the foot of the stairs with something going — grits, eggs, Monday’s red beans — and this morning the Magic Chef is cold on three burners, and on the fourth there’s the pot of chicory, and that is the menu. The 13-inch at the end of the counter is dark. The transistor that lives on top of the icebox went to Banks Street with Tony at five.",
+    "Celeste is home. She traded a girl in the ICU for Thursday, and she stands at the counter in a black cardigan setting out cups in a row, counting cups and not people. “Tony left at five,” she says. “Lent is Christmas for a fish market. He’ll meet us at church.”",
+    "Mémère has the head of the table, in black to the wrists, with a mantilla folded square in her lap and her beads going through her fingers. She has fasted every Ash Wednesday since before Truman, and she sits at an oilcloth with nothing on it but the sugar bowl as though the company were only late.",
+    "Josie, in her plaid uniform, has her book bag hung on the back of her chair, packed since six, and has done the reading. “The Church says you stop at fifty-nine, Mémère.”",
+    "Mémère answers her in French, at some length, without lifting her eyes off the beads.",
+    "“She says,” Josie reports, “fifty-nine is a number a man made up.”",
+    "Celeste lays down the law over the cups: the twins go at seven-twenty to Mass with their class and are home at two-thirty, and nobody in this family leaves this house for California till they are.",
+    "Remy is at the table’s elbow in last night’s sunglasses, gray under them, with both hands around an empty cup. “I’m giving up ‘brother-in-law’ for Lent,” he announces. “Forty days. After that, no promises.”",
+    "“That’s not a thing you can give up,” says Josie.",
+    "“It’s a *vice*, Josie.”",
+    "Laney has come down in a black dress from the waist down and a Pi Lam sweatshirt from the waist up, the biggest sunglasses in the parish, and Coco tucked under one arm like an evening clutch. She lays her cheek on the oilcloth, cool side down, and leaves it there. Margot sits across from her with a paperback Durkheim propped against the sugar bowl, pink and rested and turning pages, the only person in the house who slept. Kevin has his hands folded on the table. Theo has a cup of coffee in front of him that he doesn’t drink and doesn’t push away.",
+    "“Is aspirin food?” Laney asks, without lifting her cheek.",
+    "“Aspirin’s medicine, baby,” Celeste says, and sets two on a saucer by Laney’s ear, with a glass of water beside it, the way she’d set them on a tray at the foot of a bed.",
+    {
+     "if": "s2e16_kevin==\"house\"",
+     "text": "On the counter by the bread box sits a Tupperware with a strip of masking tape across the lid and KEVIN on the tape in Celeste’s marker, and under the lid the last of Monday’s lemon pound cake. “For Thursday,” Celeste says, when she sees him see it. “Today you fast.” Kevin looks at the tape and keeps his hands folded, and then he looks out the window over the sink."
+    },
+    {
+     "if": "s2e16_kevin==\"laney\"",
+     "text": "On the counter by the bread box sits a Tupperware with KEVIN across the lid in Laney’s silver Sharpie, a little crown drawn over the V, and under the lid the last of Monday’s lemon pound cake. “For Thursday,” Celeste says, when she sees him see it. “Today you fast.” Kevin looks at the crown and keeps his hands folded, and then he looks out the window over the sink."
+    },
+    "Jack is at the stove end with his back to the counter when Lena comes down the stairs at seven, in a black dress with her jean jacket over it, the chest pocket buttoned down over the square of the tin, and a black lace mantilla in one hand. She goes past him to the stove and pours two coffees, his first, as she has every morning this week — the chicory, then the milk, without asking how — and she carries his the length of the oilcloth and sets it down at the far end, at the last place, in front of the chair by the back door. She takes hers up to the other end, beside Mémère, and sits down with the mantilla in her lap.",
+    "Laney lifts her cheek off the oilcloth to look at her. “Magdalena Broussard. You look like a widow in a Western.”",
+    "“It’s Ash Wednesday, cher.”",
+    "“I know what day it is.” The cheek goes back down. “I can *feel* what day it is.”",
+    "Yesterday on St. Charles, with half this family on the neutral ground to see it, she stood inside his coat through all of Rex. This morning there is the length of the table and a sugar bowl.",
+    "Josie has stopped halfway to the back door with one arm through a strap of her bag, and looks from one end of the table to the other.",
+    "“Did y’all have a fight?”",
+    "“No,” Lena says.",
+    "“Then why are you sitting like *that*?”",
+    "“It’s Lent.”",
+    "“Lent’s not about *chairs*.”",
+    "Mémère has been watching both ends of the oilcloth over her beads. She says something in French, short, to the sugar bowl.",
+    "Josie translates. “She says it’s the first sensible thing she’s seen all week.”",
+    "At the counter Celeste puts the extra cups back in the cabinet one at a time, without looking at either end of the table. “Hm.”"
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Drink the coffee where she put it.*",
+     "set": {
+      "s2e17_chair": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He walks the length of the oilcloth to it and drinks it standing at the far end, by the back door, hot enough to hurt, with the hangover sitting on his eyes. Lena doesn’t look up from hers. Mémère gives one small nod over the beads, as at a hymn taken in the right key.",
+      "Celeste takes the car keys down off the nail, and that is the end of a breakfast that never started."
+     ],
+     "goto": "s03"
+    },
+    {
+     "tag": "Wit",
+     "text": "“It’s a long table, Josie.”",
+     "set": {
+      "s2e17_chair": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“It’s the *same* table,” says Josie.",
+      "Mémère laughs, one syllable, into her beads. At her end Lena drinks her coffee like it’s evidence.",
+      "Celeste holds Josie’s coat open behind her, and Josie, still arguing, backs into it."
+     ],
+     "goto": "s03"
+    },
+    {
+     "tag": "Candor",
+     "text": "“No fight, Josie.”",
+     "set": {
+      "s2e17_chair": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Josie narrows her eyes at him. “Then *what*.”",
+      "Lena answers from her end, in the voice that runs a fish-market counter on a Friday. “Then get your other strap, Josephine. It’s seven-twenty.”",
+      "Celeste has Jude’s collar straightened and both twins out the back door by the time the clock agrees with her, and then she turns around and looks at the rest of them, and at the coats on their hooks."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s03": {
+   "slug": "WEDNESDAY · 8:00 AM · OUR LADY OF THE HOLY ROSARY, ESPLANADE AVENUE — DUST",
+   "set": {
+    "ashes_holy_rosary": true,
+    "ashes_hebert": true,
+    "soul.grace": "+1",
+    "resolve.jack": "+1",
+    "resolve.lena": 3
+   },
+   "body": [
+    "They go up Esplanade to it on foot under the oaks, with last night’s beads still hanging in the branches, purple and green and gold gone dull in the gray; Celeste’s car creeps along at the curb beside them because Mémère will not be driven to her ashes, and Mémère walks on Remy’s arm, because this morning he needs hers more.",
+    "Inside the doors, at the back, there’s a holy water font on a pedestal, a marble shell with a chip out of the rim, and everybody going in touches it: Mémère, Remy, the women in scrubs, a man in a hard hat. Lena dips her fingers on her way past and crosses herself. Jack touches the water after her and does the same, and it’s cold, and it’s the same water.",
+    "Holy Rosary is fuller than any Sunday. It isn’t a holy day of obligation, and Esplanade Avenue has never cared: they are in the pews in work clothes and scrubs and one Saints jersey, standing two deep at the back under the loft. The church has gone purple overnight. The flowers are gone. On the altar there’s nothing but the cross, and on a small table at the foot of the steps a glass bowl of ash. A cantor up in the loft sings something alone, without the organ, a Lenten chant whose name Jack doesn’t know and whose shape he does.",
+    "The Broussards have their two pews on the Gospel side, Mémère on the aisle. The school has the first six rows, and the twins are in among their class in plaid and white. Halfway through the entrance chant Josie turns clear around in her pew to check on the family, and Jude reaches over and turns her back.",
+    "Tony comes in at the opening prayer, late from the market, in his green canvas jacket with ice melting off the cuffs and the case still on him, brine and cold steel, and kneels at the end of the pew beside Jack without taking it off. He prays the way he does, aloud, with his eyes open on the crucifix.",
+    "“Lord. It’s Lent. You know what that means for my business. Thank You.”",
+    "He crosses himself. Then, lower, like a man adding a line to an order: “And whatever it is with the boy. That one’s Yours.”",
+    "Theo is at the far end of the second pew, very still, with his hands between his knees. Laney has her sunglasses pushed up into her hair. Margot has her notebook shut in her lap, and when Laney looks over at her she says, “Participant observation,” which means she’s going up. Kevin kneels with his back straight and his eyes shut.",
+    "Jack’s hangover takes the readings one line at a time. From Joel, a lector in a navy suit: *rend your hearts, not your garments.* From Matthew, in Hébert’s dry little voice, *anoint your head and wash your face, so that you may not appear to be fasting,* and Jack has a thought about that one he doesn’t have the head to finish.",
+    "In between, the cantor sings the psalm alone and the church sings the refrain back to her, *Be merciful, O Lord, for we have sinned*, four hundred people and Tony, who sings it loudest and a half-step under everybody else, a man who has paid for the note and means to get it. Down the pew Jack can pick Lena’s voice out of all of it, low and sure, and he stops singing for a line to hear it, and then makes himself start again.",
+    "Hébert comes down to the foot of the altar steps for the homily, seventy-four years old and no taller than Josie, and gives them one sentence of it in the voice from Breaux Bridge.",
+    "“Yesterday this whole city put on a mask. Today He puts a little dirt on your face so you can’t hide behind it — and then the Gospel tells you to go wash your face and not make a show. You will wear it out that door anyway. Wear it humble.”",
+    "He goes back up and sits down, and four hundred people who have known him for twenty-six years are surprised anyway.",
+    "*Wear it humble.* Jack has never worn anything humble in his life. He wears the Carhartt like he’s expecting to get into a fight in it.",
+    "Then the ashes. The family goes up in family order: Mémère first on Remy’s arm, Tony with the ice on his cuffs, Celeste. Hébert says something to Mémère in French that makes her lift her chin, and something to Tony that makes him snort in the middle of the aisle. At the end of the pew Celeste stops, takes Jack by the elbow without a word, moves him out of his place and into the one behind Lena, and goes on up the aisle ahead of them both.",
+    "So he goes up behind her, close enough in the line to see the back of her neck under the black lace: the clasp of the medal chain he fastened for her by her grandmother’s tomb, the mended link, a strand of hair the mantilla didn’t catch. He keeps his hands folded in front of him, the right one holding the left one down.",
+    "At the bowl Hébert looks up at her. He baptized her in the font by the door, eighteen years ago this summer; he poured the water. He puts his thumb in the ash and makes the cross on her forehead, a short stroke down and a short one across.",
+    "“Remember that you are dust, and to dust you will return.”",
+    "And then, lower, for her and for nobody else in the church: “Magdalena.”",
+    "“Amen,” she says, and steps aside.",
+    "Then it’s Jack. The same words he’s heard every Ash Wednesday of his life at St. Brigid’s, in that other voice, and the thumb, cold and gritty, pressing a little harder than it has to, as if to make sure it takes. Hébert looks at him over the bowl.",
+    "“*Le garçon de l’Ohio.*”",
+    "On the way back down the side aisle a crumb of the ash comes loose and catches in his lashes, and he carries it to the pew at the bottom edge of everything he looks at, a small gray blur he doesn’t brush away.",
+    "Behind him the rest of them go up. Margot takes hers with her chin raised, a specimen offering itself to the slide. Laney shuts her eyes for it and holds Coco against her hip. Kevin bows his head so low that Hébert has to reach. Theo takes his without a word and goes back to the end of the second pew, and the ash on him is very black.",
+    "Kneeling, with dirt on his face and the hangover behind it, he has to decide what it’s for. *Remember that you are dust.* He knows dust. In Youngstown it came down out of the stacks along the river onto every car on Glenwood Avenue for seventy years, the old men at St. Brigid’s say, and the morning it quit coming down was worse. On Royal Street he told Skye you give it to Somebody; it’s a present; the going without is the wrapping paper. Forty days of wrapping paper. Now he has to choose what goes inside.",
+    {
+     "if": "s2e16_lent==\"sincerity\"",
+     "text": "At midnight under a streetlight on Esplanade he told her he’d say one for her in the morning, and he says it first, before anything else: a Hail Mary all the way through, for a girl asleep in a trailer in Burnaby."
+    },
+    "Two places down the pew Lena kneels upright with her folded hands against her mouth, and from where he is he can see her in profile under the lace: the gray cross on her forehead, a grain of it fallen onto the bridge of her nose, her eyes shut. Nine hours ago he could feel her shivering through his shirt. He looks at the altar instead, at the bare cross and the bowl, and keeps looking at it, and the not-looking is work he has to do with every muscle in his neck.",
+    "At the far end of the pew Theo kneels with his eyes open."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Offer it for Skye — that Tuesday doesn’t break her.*",
+     "set": {
+      "s2e17_ashes": "skye",
+      "trait.sincerity": "+1",
+      "soul.grace": "+1"
+     },
+     "key": "At Holy Rosary on Ash Wednesday you offered your Lent for Skye — that Tuesday wouldn’t break her.",
+     "response": [
+      "He thinks of her asleep in a trailer on the lot in Burnaby with the white phone on the pillow by her face, and he gives Him the whole forty days for one evening on Del Playa: that she comes out the other side of it on her feet. It’s the first prayer he has ever said for her that he can’t tell her about."
+     ],
+     "goto": "s04"
+    },
+    {
+     "tag": "Candor",
+     "text": "*Offer it for the truth — that you tell it right, every word, to her face.*",
+     "set": {
+      "s2e17_ashes": "truth",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "key": "At Holy Rosary on Ash Wednesday you offered your Lent for the truth — that you’d tell it right, every word, to her face.",
+     "response": [
+      "Not for how it comes out. For the words: that on Tuesday they come in the right order, every one of them true, and not one of them a kindness that’s really a lie. He asks for that with his forehead on his knuckles, harder than he’s asked for anything since Christmas."
+     ],
+     "goto": "s04"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Offer it for Lena on Sunday, and for Julian.*",
+     "set": {
+      "s2e17_ashes": "sunday",
+      "trait.control": "+1",
+      "soul.restraint": "+1"
+     },
+     "key": "At Holy Rosary on Ash Wednesday you offered your Lent for Lena on Sunday, and for Julian.",
+     "response": [
+      "For the two of them at a table somewhere after Mass on Sunday, and for the kind man who is going to be kind about it. He finds it’s harder to pray for Julian than for anybody he knows, and he does it anyway, twice, until the second time it takes."
+     ],
+     "goto": "s04"
+    },
+    {
+     "tag": "Faith",
+     "text": "*Offer it the way you always do — for your brother.*",
+     "set": {
+      "s2e17_ashes": "danny",
+      "soul.grace": "+1"
+     },
+     "key": "At Holy Rosary on Ash Wednesday you offered your Lent for your brother, the way you always do.",
+     "response": [
+      "Danny, in a cell in Leavittsburg, where there are no ashes this morning unless a deacon carries some in. It’s what Jack has offered every Lent since Danny went in, and he offers it again now, all forty days of it, toward a debt to his brother that forty days won’t touch."
+     ],
+     "goto": "s04"
+    }
+   ]
+  },
+  "s04": {
+   "slug": "WEDNESDAY · 9:05 AM · THE STEPS OF HOLY ROSARY, ESPLANADE AVENUE — CROOKED",
+   "set": {
+    "crooked_ash": true,
+    "rel.lena.heat": "+1",
+    "resolve.lena": 3
+   },
+   "body": [
+    "At the sign of peace he shakes Tony’s cold hand and Celeste’s warm one, and past her mother Lena gives him a nod, a small one, and he gives her one back. He goes up for Communion behind her, because that’s still the order they’re in, and then it’s the dismissal with no hymn after it, and the doors at the back swing open on Esplanade and the cold comes in to meet the crowd.",
+    "Outside, the avenue is gray and wet under the oaks, the beads still up in the branches. Everybody on it has the smudge. The driver of the Esplanade bus has one, pulling away from the stop with both hands on the wheel. A woman pushing a stroller has one, and so does the baby. Two cops in a cruiser at the light have one each. It’s like coming out into a city where everybody has been told the same thing about themselves and has decided to wear it to work.",
+    "Laney has the six of them in a row on the steps before the crowd thins, and hands her pink BlackBerry to Remy, who takes the picture from two steps down in his sunglasses, sideways and then the other way. Lena is on one end of the row and Jack on the other. Theo stands next to Laney with his ashes very black and his face doing nothing; Margot has her arms crossed; Kevin stands up straight, like a groomsman.",
+    "“Six sinners and a coconut,” Laney says, and holds Coco up beside her face for it.",
+    "“Everybody say *dust*,” Remy says from behind the phone, and nobody does, and he takes it anyway.",
+    "The phone makes its little shutter noise. At the curb Tony is back in his truck already, the engine going, and Celeste has Mémère by the elbow, walking her down to the car.",
+    "Then the row breaks up and the others go down the steps, and Jack and Lena are left at the top of them, a little apart, with the doors open behind them and people coming out around them on both sides. It’s the first time they’ve been alone in daylight since the levee, if this is alone.",
+    "Down at the bottom of the steps a man in a Sewerage & Water Board jacket stops with his ashes on to light a cigarette, cupping it out of the wind, and the smell of it comes up the steps on the damp. Jack’s hands go into the pockets of the Carhartt and make fists there. Lena’s eyes go to his pockets and come back up to his face.",
+    "She looks at his forehead.",
+    "“It’s crooked.”",
+    "“Hébert’s eighty.”",
+    "“He’s seventy-four. It’s crooked.”",
+    "Her hand comes up. It’s her thumb, out toward the smudge to put it right, the way you’d fix a child’s collar at the school door, and it stops an inch from his forehead. It holds there. He can feel it without feeling it, the cold of her hand on the air against his skin, and every part of him that has been told no since midnight goes and stands at that inch. He doesn’t lean. Her hand goes down into her jacket instead, flat on the buttoned flap of the chest pocket, over the tin.",
+    "In the breast pocket of the Carhartt the RAZR goes off. His father, in capitals:",
+    {
+     "type": "sms",
+     "from": "Dad",
+     "text": "ASHES?",
+     "time": "9:08 AM"
+    },
+    "He answers in his father’s capitals, one key at a time, with the cracked hinge creaking and Lena watching him type it.",
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "8 AM. HOLY ROSARY. CROOKED.",
+     "time": "9:09 AM"
+    },
+    {
+     "type": "sms",
+     "from": "Dad",
+     "text": "GOOD.",
+     "time": "9:10 AM"
+    },
+    "From Frank Costigan, in capitals, that is a parade. Jack shuts the phone.",
+    "“You answered him in his own capitals,” Lena says.",
+    "“It’s the only language he reads.”",
+    "“Mama’s going to ask me in the car,” Lena says.",
+    "“What are you going to tell her?”",
+    "“‘Lent, Mama.’ And she’s going to say ‘Hm.’”",
+    "“Your daddy asked me Monday which one of us was with who,” Jack says. “I’m going to have to shake his hand this afternoon and not answer him.”",
+    "“He’ll hate it. He’ll shake it anyway, and then he’ll go back to the market and count something.” Down at the curb her mother is settling Mémère into the front seat with a hand on the top of her head to mind the door frame, and Lena watches that, and then she doesn’t. “I’m not going to be able to look at you till Tuesday.”",
+    "She says it looking straight at him, the ash on her a little smeared at one arm of the cross where the lace caught it, and her eyes are the one thing on Esplanade Avenue that isn’t gray. He holds them as long as she does."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Leave it. Hébert made it.”",
+     "set": {
+      "s2e17_crooked": "leave",
+      "trait.sincerity": "+1",
+      "rel.lena.warmth": "+1"
+     },
+     "cue": "Lena will remember that.",
+     "key": "On the steps of Holy Rosary Lena said your ashes were crooked and nearly fixed them. You told her to leave them.",
+     "response": [
+      "She takes her hand back out of her pocket and doesn’t use it for anything.",
+      "“…Leave it,” she agrees, and looks at the cross on his forehead as if she’s memorizing which way it leans."
+     ],
+     "goto": "s04a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Matthew six. You’re supposed to wash your face.”",
+     "set": {
+      "s2e17_crooked": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“Matthew six is about showing *off*, Youngstown. You’ve never shown off a day in your life.”",
+      "That came out nearly kind. She corrects it. “It’s still crooked.”"
+     ],
+     "goto": "s04a"
+    },
+    {
+     "tag": "Candor",
+     "text": "“I can’t look at you either.”",
+     "set": {
+      "s2e17_crooked": "candor",
+      "trait.candor": "+1",
+      "rel.lena.trust": "+1",
+      "rel.lena.heat": "+1"
+     },
+     "key": "On the steps of Holy Rosary Lena said she couldn’t look at you till Tuesday. You told her you couldn’t look at her either.",
+     "response": [
+      "“Then we’re both going to be very interested in Texas.”",
+      "She looks down Esplanade instead, hard, at the oaks and the bus and the beads, like it’s all going to be on a test."
+     ],
+     "goto": "s04a"
+    }
+   ]
+  },
+  "s04a": {
+   "slug": "WEDNESDAY · 9:15 AM · ESPLANADE AVENUE, AT THE CURB",
+   "body": [
+    "Lena goes down the steps ahead of him to her mother’s car and gets into the back seat behind Mémère, to go home and pack, and pulls the door shut. The rest of them are already strung out up Esplanade on foot toward Dupre under the oaks, Remy out in front, Laney carrying Coco in both arms, Margot with her collar up. Jack stands on the bottom step with the ash on his face and his hands still in his pockets.",
+    "At the same second, at the curb behind the car, Tony leans across the cab of his truck with the passenger window down and the market still on him.",
+    {
+     "if": "s2e14_wed==\"market\"",
+     "text": "“Ohio. Lent’s Christmas for a fish market. I could use a man who knows ice.”",
+     "else": "“Ohio. Lent’s Christmas for a fish market. I could use a man who can lift.”"
+    },
+    "And Celeste, at her own door with the keys in her hand, across the roof of the car: “Baby, Mémère wants you at the house.”",
+    "They hear each other. Tony keeps his arm along the back of the seat. Celeste keeps her hand on the door. In the front seat, through the glass, with her mantilla off and folded on her knee, Mémère lifts two fingers at Jack and crooks them: come."
+   ],
+   "choices": [
+    {
+     "tag": "The market",
+     "text": "*Get in Tony’s truck.*",
+     "set": {
+      "s2e17_wed": "market"
+     },
+     "response": [
+      "Tony has the door open before Jack is off the curb. Celeste gets in behind the wheel and pulls her own door shut."
+     ],
+     "goto": "s05m"
+    },
+    {
+     "tag": "The house",
+     "text": "*Go with Celeste.*",
+     "set": {
+      "s2e17_wed": "house"
+     },
+     "response": [
+      "He gets into the back of Celeste’s car with Mémère’s mantilla handed back and laid on the seat between him and Lena’s elbow, and out at the curb Tony slaps the side of the truck twice, like a horse he’s fond of, and pulls out into Esplanade."
+     ],
+     "goto": "s05h"
+    }
+   ]
+  }
+ }
+}

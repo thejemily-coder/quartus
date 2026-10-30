@@ -411,6 +411,13 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 250. **Runs of save-flag recap lines** (S2E16). Do not stack consecutive lines whose only job is to acknowledge earlier choices.
 251. **Pasted branch tails** (S2E16: the same reaction under all three options). Give each option its own voice and run the shared reaction once at the start of the next scene.
 252. **A character narrating her own action** (S2E16: Lena). Let the action stand; no self-description in her mouth.
+253. **Truth-stamps** (S2E17): "and it's true", "He meant it", "and he does". Let the line carry its own sincerity; do not vouch for it.
+254. **Recycled symptom lists** (S2E17): the same withdrawal symptoms restated on each day. State the list once; later days show only what changed.
+255. **One table for every count before lock** (S2E17): days, hours, miles and heads. Check every count in a scene against one table before locking.
+256. **Pocket and pack stamps** (S2E17). At most 8 per path.
+257. **Gray as the default** for dawn and sorrow (S2E17). Name a different color or a different light.
+258. **Branch tails** (S2E17): several responses to one choice ending on the same destination phrase. Give each response its own last beat (cousin of #251).
+259. **Confession items** (S2E17). Every sin Jack confesses must be a beat the player actually saw.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

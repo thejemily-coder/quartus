@@ -2452,3 +2452,43 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Fork-dependent facts.** House vs Laney vs quiet (Kevin's 19th); Tony vs cake path; coat branches at Rex; `s2e8_d3=="real"` gates the replay of Hale's call, "Do you still go up" and "I knelt"; `e21_early=="lie"` gates the meteor-shower lie; `e21_reply` varies "You never wrote back"; `lena_two_words` gates Ero cras.
 - **Carried from earlier and untouched:** Hale's four thousand words; Gloria's Saturday the 20th; `promised_skye_truth`; Luc's gas-leak file; Mémère's cedar-chest ring; the Cabazon postcard and the swing print.
 - **Branch-dependent keys:** `s2e16_mon`, `s2e16_wes`, `s2e16_lid`, `s2e16_jude`, `s2e16_bag`, `s2e16_box`, `s2e16_candle`, `s2e16_coat`, `s2e16_tue`, `s2e16_josie`, `s2e16_kevin`, `s2e16_stop`, `s2e16_h1`, `s2e16_h2`, `s2e16_h3`, `s2e16_h5`, `s2e16_alliance`, `s2e16_liar`, `s2e16_proxy`, `s2e16_plain`, `s2e16_tin`, `s2e16_skye`, `s2e16_line`, `s2e16_ice`, `s2e16_after`, `s2e16_lent`.
+
+### S2E17
+> Final revision (see continuity.md S2E17). Branch tags are `[scene | condition]`. Canon is Wed Feb 17 – Sat Feb 20, 2010. Everything said aloud in a room is heard by the people in it unless the entry says otherwise. None of the hidden canon appears on the page, in keys, cues or nextTime.
+
+#### Jack
+- **Learns:** [s01] Tony quit cigarettes in 1989 (sunflower seeds, Clovis and the Kools out the door); Clovis holds Jack's January pack, eight left. [s03] Hébert baptized Lena at the side-altar font in 1991; ashes "Magdalena." (hers) and "*Le garçon de l'Ohio*." (his). [s05h] Mémère's St. Joseph card, "le 19 mars" (he doesn't know who told her). [s07] Lena's Lent is known to Laney, not new to him. [s08] Kyle is from Fort Wayne. [s12] Laney is silent on the page, but he infers Lena is ending it with Julian on Sunday. [s12 | Candor] Laney says "Jack." [s14] the drive took 35:15. [s19] Gloria says "Nine"; on the market path "Tell him I don't fly." [s21b] absolution face to face; the penance.
+- **Tells:** [s05m] Tony: "To their face." [s05h] Celeste learns only that they've decided something. [s09] Theo: that he is ending it with Skye Tuesday (Candor: also that he loves her). [s13] Skye: the pack (Candor: he'll tell her all of it Tuesday; Sincerity: "Love you", `said_love_thu`). [s08] Skye: the ash photo, Hébert's words, his Matthew 6 answer. [s11 | Candor] Lena: offers the pack, she says "You carry it." [s21-s21b] Osei: see Others.
+- **Does not know:** who told Mémère his birthday; what Lena says to Julian; whether Skye knows anything of the levee or Lena.
+
+#### Lena
+- **Hears:** [s03] her own ashes with "Magdalena." [s07 | Sincerity or Wit, `fridays_said`] Jack's Fridays; otherwise [s16] from his tray. [s08] Jack's half of the call only. [s11] sees the pack; [s11 | Candor] "You carry it."
+- **Does not hear:** Blythe on the call, the Tuesday plan, Osei, the talk with Theo.
+- **Tells:** [s07] Laney: her Lent (Facebook, Friday bread and water, the Stations). [s12] Laney: she is ending it with Julian on Sunday (off the page).
+
+#### Skye
+- **From Jack:** [s08] the ash photo, Hébert's words, his Matthew 6 answer. [s13] the pack; on Candor that he'll tell her all of it Tuesday; on Sincerity "Love you" (`said_love_thu`). [s18p | Sincerity] he is on her porch (`skye_knows_porch`). [s18s | Candor] the stairwell.
+- **From Theo:** [s13] a lie by over-specifying.
+- **Says or does herself:** [s13] lands at LAX 12:10 Tuesday; dinner on Del Playa at six, a frittata, porch light on; she has never made anybody dinner.
+- **She does not know:** the levee, Lena, Julian, the Wes line, the confession.
+
+#### Others
+- **Osei (under the seal, s21-s21b)** — Both breakups and the plan; that Jack loves Skye and meant to marry her; Nonna's line; the "same direction" line. Venial sins: the bourbon, snapping at Theo, pride in the Friday fast, jealousy of Julian, and the last item per `s2e17_last` (pack / coat / soon / tuesday). [s2e16_wes candor] the Wes line.
+- **Tony** — [s05m] Jack would answer if he could; on Candor, "to their face" with no date (`told_tony_face`).
+- **Celeste** — [s05h] they've decided something.
+- **Jude** — "Tuesday".
+- **Josie** — [s06 | Sincerity] "ask me at Easter" (`josie_easter`).
+- **Laney** — [s07] Lena's Lent; [s12] Lena is ending it with Julian on Sunday; [s12 | Candor] says "Jack."
+- **Theo** — [s09] only that Jack is ending it with Skye Tuesday (Candor: and that he loves her); [s13] lies to Skye by over-specifying.
+- **Gloria** — [s19] the tin back full of pralines, "Nine"; the card on the market path, "Tell him I don't fly."
+- **Frank** — the ashes. **Ma** — he's home safe. **Margot** — one field note ("Contagion"). **Kevin** — "keep not saying it."; the 35:15 sheet is in his wallet.
+- **Hébert** — [s03] "Magdalena." and "*Le garçon de l'Ohio*." Nobody else is answered.
+
+#### LIVE RISKS carried out of S2E17
+- **Who knows what at the end.** Skye knows the pack, the ash photo, and (by path) "Love you" or the porch/stairwell; she knows nothing of the levee, Lena or Julian. Theo knows only Tuesday's plan (Candor: also love). Laney knows Lena's Lent and Sunday's breakup. Osei knows everything under the seal. Nobody else is answered.
+- **Tuesday Feb 23.** Jack goes down the hill to Del Playa; Skye lands at 12:10, dinner at six, porch light on. The penance (Our Father for Skye) is due before he goes to her door. Do not have anyone pre-empt it.
+- **Branch-gated facts.** `s2e17_last` (pack / coat / soon / tuesday; "tin" gone); `s2e16_jude=="sincerity"` picks "soon" vs "Tuesday" in the confession; `s2e16_wes` candor gates the Wes line; `fridays_said` (Lena's source for Fridays); `josie_easter`, `said_love_thu`, `skye_knows_porch`, `told_tony_face`; house (s05h) vs market (s05m) path.
+- **Hébert / pastor facts.** 74, pastor since 1984, baptized Lena summer 1991. Do not contradict.
+- **Mémère's "le 19 mars" card.** Jack's birthday is Mar 19; who told her is unresolved.
+- **Muted TV in s16.** Tiger Woods' statement, Fri Feb 19, 2010, never named; Continuity to confirm.
+- **Carried and untouched:** Julian's card (Lena ends it Sun Feb 21); Hale's four thousand words; Mémère's cedar-chest ring; Luc's gas-leak file; `promised_skye_truth`; Cabazon postcard and swing print.
