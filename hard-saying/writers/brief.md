@@ -2267,3 +2267,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **Valentine's Day (Sun Feb 14):** Jack **sends Skye something real** in Vancouver (flowers to her trailer in Burnaby, or
   something better and more specific to her). He means it, and that's what makes it ache.
 - **Who tries first to say the thing this week:** the writers decide (each tries once and retreats).
+- **The Broussards get confused (player, during S2E15; binding for S2E16–S2E17).** Lena's family is **increasingly
+  confused** by how Jack and Lena are with each other set against their **continued contact with their significant
+  others** (Jack's warm calls and Valentine to the girl in Canada; Lena's Julian on the phone and in the mail). Let it
+  surface in each family member's register: Celeste's careful questions, Tony's blunt one ("So which one of you is
+  with who?"), Mémère's French verdicts, Remy's "brother-in-law" bit souring into genuine puzzlement, Tess's
+  big-sister look, Josie and Jude asking out loud what the adults won't. It raises the pressure going into Mardi Gras
+  (no answers given; neither Jack nor Lena can explain it, which is part of why the honesty has to happen).
