@@ -2261,3 +2261,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 - **THE JOURNAL IS RETIRED (player, 2026-10-30): "Go ahead and take out the journal... I don't look at it that much."**
   The engine no longer records or shows journal cards; the drawer shows only "Story so far" (key lines). Writers write
   no `journal` arrays or cards from S2E15 on. Knowledge discipline still applies to the prose itself.
+
+### After S2E14 (player feedback + S2E15 answers)
+- **Feedback:** "Fantastic episode."
+- **Valentine's Day (Sun Feb 14):** Jack **sends Skye something real** in Vancouver (flowers to her trailer in Burnaby, or
+  something better and more specific to her). He means it, and that's what makes it ache.
+- **Who tries first to say the thing this week:** the writers decide (each tries once and retreats).
