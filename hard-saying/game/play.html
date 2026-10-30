@@ -176,7 +176,7 @@ textarea { width: 100%; min-height: 7rem; background: var(--night); color: var(-
   <div class="bar-in">
     <button class="bug" id="home" aria-label="Back to title screen"><b>The Hard</b> Saying</button>
     <div class="ep-label" id="eplabel"></div>
-    <button class="bar-btn" id="jbtn">Journal</button>
+    <button class="bar-btn" id="jbtn">Story so far</button>
     <button class="bar-btn" id="mbtn">Menu</button>
   </div>
 </header>
@@ -199,7 +199,7 @@ function fresh() {
   return { v: 1, updatedAt: 0, vars: {}, journal: {}, keys: [], log: [], logs: {}, completed: [], cur: null, checkpoint: null, started: null };
 }
 let S = fresh();
-let ui = { drawer: null, tab: 'person', confirm: null, whisper: null };
+let ui = { drawer: null, tab: 'story', confirm: null, whisper: null };
 
 /* ---------- state helpers ---------- */
 function get(name) { return name in S.vars ? S.vars[name] : (name in DEFAULTS ? DEFAULTS[name] : 0) }
@@ -230,6 +230,7 @@ function atom(a) {
 function test(expr) { if (!expr) return true; return expr.split('||').some(d => d.split('&&').every(atom)) }
 
 function addJournal(list, epId) {
+  return; // the journal was retired at the player's request (2026-10-30); keys ('Story so far') remain
   for (const j of list || []) {
     if (!test(j.if)) continue;
     const key = j.kind + ':' + (j.id || j.title);
@@ -337,7 +338,7 @@ async function pullAux(state) {
       q.docs.forEach(d => { const x = d.data(); if (x && x.k && x.v) { journal[x.k] = x.v; sync.jSent[x.k] = JSON.stringify(x.v) } });
       const kd = await sync.db.doc('saves/main/aux/keys').get();
       const keys = kd.exists && kd.data() && Array.isArray(kd.data().keys) ? kd.data().keys : [];
-      state.journal = journal; state.keys = keys; sync.kSent = JSON.stringify(keys); sync.auxOk = true;
+      state.journal = {}; state.keys = keys; sync.kSent = JSON.stringify(keys); sync.auxOk = true;
     } catch { sync.auxOk = false }
   }
   return state;
@@ -358,7 +359,7 @@ async function initRemote() {
     sync.ref = ref;
     if (snap.exists) {
       const r = snap.data();
-      if (r && r.state && (r.updatedAt || 0) > (S.updatedAt || 0)) { let st = Object.assign(fresh(), clone(r.state)); if (r.state.split) st = await pullAux(st); S = st; writeLocal(); render() }
+      if (r && r.state && (r.updatedAt || 0) > (S.updatedAt || 0)) { let st = Object.assign(fresh(), clone(r.state)); if (r.state.split) st = await pullAux(st); st.journal = {}; S = st; writeLocal(); render() }
       else if ((S.updatedAt || 0) > (r.updatedAt || 0)) pushRemote();
       setSync('account');
     } else if (S.updatedAt) { await pushRemote() } else setSync('account');
@@ -508,7 +509,7 @@ function endCard(ep) {
     ${ep.endCard && ep.endCard.nextTime && ep.endCard.nextTime.length ? `<div class="next-time"><div class="kicker" style="margin-bottom:12px">Next time on The Hard Saying</div>${ep.endCard.nextTime.map(t => `<p>${fmt(t)}</p>`).join('')}</div>` : ''}
     ${ep.seasonRecap ? seasonRecap(ep) : ''}
     <div class="sect"><p class="note">This episode is locked in. ${nx ? '' : 'When you’re ready for the next one, tell Claude: the writers’ room will read your save and build the next episode on the path you took.'}</p>
-    <div class="row">${nx ? `<button class="go" data-a="start" data-ep="${nx.id}">Play ${epTag(nx)}</button>` : ''}<button class="ghost" data-a="title">Title screen</button><button class="ghost" data-a="journal">Open journal</button></div></div>
+    <div class="row">${nx ? `<button class="go" data-a="start" data-ep="${nx.id}">Play ${epTag(nx)}</button>` : ''}<button class="ghost" data-a="title">Title screen</button><button class="ghost" data-a="journal">Story so far</button></div></div>
   </section>`;
 }
 /* Season recap: shown on a finale's end card when the episode carries `seasonRecap`. Words, never numbers. */
@@ -570,7 +571,7 @@ function closeDrawerIfStale() { if (ui.drawer) drawDrawer() }
 function drawDrawer() {
   const d = $('drawer');
   if (ui.drawer === 'journal') {
-    const tabs = [['person', 'People'], ['clue', 'Clues'], ['note', 'Notes'], ['story', 'Story so far']];
+    const tabs = [['story', 'Story so far']];
     let body = '';
     if (ui.tab === 'story') {
       const byEp = {};
@@ -628,6 +629,7 @@ function start(data) {
   const local = readLocal();
   if (data && data.S) S = Object.assign(fresh(), data.S);
   else if (local) S = Object.assign(fresh(), local);
+  S.journal = {};
   ui.view = 'title';
   render(true);
   initRemote();

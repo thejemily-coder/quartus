@@ -2258,3 +2258,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 ### After S2E13 (player feedback)
 - **Feedback:** "Fantastic episode! The Broussards were great. It's been wonderful having Lena back." Keep the Broussards
   as a full ensemble through the week, and keep Lena at full strength on the page.
+- **THE JOURNAL IS RETIRED (player, 2026-10-30): "Go ahead and take out the journal... I don't look at it that much."**
+  The engine no longer records or shows journal cards; the drawer shows only "Story so far" (key lines). Writers write
+  no `journal` arrays or cards from S2E15 on. Knowledge discipline still applies to the prose itself.
