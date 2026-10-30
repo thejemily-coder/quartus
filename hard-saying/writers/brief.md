@@ -2281,3 +2281,9 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   at the Moonwalk, the river black, the city still roaring behind them; theirs alone). **They stop BOTH AT ONCE**,
   foreheads nearly touching, without letting go, and that starts the honesty. **Length: as long as it needs** (up to
   about 30–32k words per path), so the honesty conversation gets all its room and the rest of Mardi Gras isn't squeezed.
+- **Mardi Gras honesty, item 1 in full (player, making sure it's included).** **Lena was hurt that Jack didn't leave
+  Becca to come for her after she and Wes broke up.** Jack tells her **why he waited**: he wouldn't be the man who
+  swooped in on her grief (a breakup that big, with a ring); he decided to wait **until it wasn't just him swooping
+  in**; and **he didn't think he could stop himself if he were single at that moment too**, so Becca was a guardrail
+  against himself. She tells him how she read it (that he'd chosen Becca) and what it cost her. Both land; neither is
+  absolved by the other's reason; it's the first domino of the whole chain.
