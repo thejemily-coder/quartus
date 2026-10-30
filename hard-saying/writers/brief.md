@@ -2300,3 +2300,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 
 ### After S2E16 (player feedback)
 - **Feedback:** "Phenomenal episode, it's finally happening!"
+- **S2E17 answers (player).**
+  - **What they tell their best friends:** each tells their best friend (Jack → Theo; Lena → Laney) **only that they're
+    breaking up with Skye / Julian. Nothing further is stated; everything is implied.** (Theo and Laney's reactions in
+    their own registers; the alliance's terror of jinxing it peaks; the Easter reveal stays intact.)
+  - **Skye's calls on the drive home:** Jack **answers, warm as ever**, because he does love her, and that's what
+    makes it unbearable. **She suspects nothing until the porch** (Tue Feb 23). He says nothing of it on the phone
+    (his promise: to her face).
+  - **The return confession to Osei is SATURDAY** (Feb 20), regular confession hours, after a night of not sleeping;
+    before Skye (as designed: distraught, not a sin; "you haven't actually confessed anything"; the venial sins from
+    New Orleans; devotional confession). Place it at the end of S2E17 or the start of S2E18 per the map.
