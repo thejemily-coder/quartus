@@ -2274,3 +2274,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   with who?"), Mémère's French verdicts, Remy's "brother-in-law" bit souring into genuine puzzlement, Tess's
   big-sister look, Josie and Jude asking out loud what the adults won't. It raises the pressure going into Mardi Gras
   (no answers given; neither Jack nor Lena can explain it, which is part of why the honesty has to happen).
+
+### After S2E15 (player feedback)
+- **Feedback:** "Finished, great episode." (first pipeline-v3 episode; quality holding.)
