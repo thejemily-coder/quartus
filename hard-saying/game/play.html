@@ -234,6 +234,9 @@ function addJournal(list, epId) {
     if (!test(j.if)) continue;
     const key = j.kind + ':' + (j.id || j.title);
     const prev = S.journal[key];
+    // Small restart checkpoint: remember only the pre-episode version of each card this episode touches.
+    const ck = S.checkpoint;
+    if (ck && ck.jbase && S.cur && ck.ep === S.cur.ep && !(key in ck.jbase)) ck.jbase[key] = prev ? clone(prev) : null;
     S.journal[key] = { kind: j.kind, title: j.title, text: j.text, ep: epId, t: prev ? prev.t : Date.now(), u: Date.now() };
   }
 }
@@ -266,14 +269,16 @@ function queueRemote() { if (!sync.ref) return; clearTimeout(sync.timer); sync.t
 function remoteBody() {
   const cur = S.cur && EP[S.cur.ep];
   // The main doc must stay under the db's 256 KiB cap: finished-episode logs live in saves/main/log/<ep>,
-  // the restart checkpoint in saves/main/aux/checkpoint.
-  const state = Object.assign({}, S, { logs: {}, checkpoint: null, split: 2 });
+  // the restart checkpoint in saves/main/aux/checkpoint, journal cards in saves/main/journal/<n>,
+  // and key choices in saves/main/aux/keys.
+  const state = Object.assign({}, S, { logs: {}, checkpoint: null, journal: {}, keys: [], split: 3 });
   return {
     updatedAt: S.updatedAt,
     summary: { current: S.cur ? { ep: S.cur.ep, scene: S.cur.scene, stage: S.cur.stage, title: cur ? cur.title : '' } : null, completed: S.completed },
     state
   };
 }
+function jdocId(k) { return 'j_' + k.replace(/[^A-Za-z0-9_\-.~@+]/g, c => '+' + c.charCodeAt(0).toString(16)) }
 async function pushAux() {
   const ck = S.checkpoint ? S.checkpoint.ep + ':' + S.checkpoint.log.length : 'none';
   if (sync.ckSent !== ck) { await sync.db.doc('saves/main/aux/checkpoint').set({ checkpoint: S.checkpoint || null, updatedAt: S.updatedAt }); sync.ckSent = ck }
@@ -283,6 +288,21 @@ async function pushAux() {
     await sync.db.doc('saves/main/log/' + id).set({ ep: id, entries: S.logs[id], updatedAt: Date.now() });
     sync.logsSent[id] = true;
   }
+  if (sync.auxOk === false) return; // never overwrite remote cards/keys with a state that failed to load them
+  sync.jSent = sync.jSent || {};
+  for (const k of Object.keys(S.journal || {})) {
+    const body = JSON.stringify(S.journal[k]);
+    if (sync.jSent[k] === body) continue;
+    await sync.db.doc('saves/main/journal/' + jdocId(k)).set({ k, v: S.journal[k] });
+    sync.jSent[k] = body;
+  }
+  for (const k of Object.keys(sync.jSent)) {
+    if (S.journal && k in S.journal) continue;
+    try { await sync.db.doc('saves/main/journal/' + jdocId(k)).delete() } catch {}
+    delete sync.jSent[k];
+  }
+  const kb = JSON.stringify(S.keys || []);
+  if (sync.kSent !== kb) { await sync.db.doc('saves/main/aux/keys').set({ keys: S.keys || [], updatedAt: S.updatedAt }); sync.kSent = kb }
 }
 async function pushRemote() {
   if (!sync.ref) return;
@@ -303,13 +323,23 @@ async function archiveLog(epId, entries) {
 }
 async function pullAux(state) {
   try {
-    const q = await sync.db.collection('saves/main/log').get();
+    const q = await sync.db.collection('saves/main/log').limit(1000).get();
     state.logs = state.logs || {};
     q.docs.forEach(d => { const x = d.data(); if (x && x.ep && Array.isArray(x.entries)) state.logs[x.ep] = x.entries });
     sync.logsSent = {}; Object.keys(state.logs).forEach(k => sync.logsSent[k] = true);
     const c = await sync.db.doc('saves/main/aux/checkpoint').get();
     if (c.exists) { const x = c.data(); state.checkpoint = x && x.checkpoint || null; sync.ckSent = state.checkpoint ? state.checkpoint.ep + ':' + state.checkpoint.log.length : 'none' }
   } catch {}
+  if ((state.split || 0) >= 3) {
+    try {
+      const journal = {}; sync.jSent = {};
+      let q = await sync.db.collection('saves/main/journal').limit(1000).get();
+      q.docs.forEach(d => { const x = d.data(); if (x && x.k && x.v) { journal[x.k] = x.v; sync.jSent[x.k] = JSON.stringify(x.v) } });
+      const kd = await sync.db.doc('saves/main/aux/keys').get();
+      const keys = kd.exists && kd.data() && Array.isArray(kd.data().keys) ? kd.data().keys : [];
+      state.journal = journal; state.keys = keys; sync.kSent = JSON.stringify(keys); sync.auxOk = true;
+    } catch { sync.auxOk = false }
+  }
   return state;
 }
 function setSync(m) { sync.mode = m; const el = $('syncline'); if (el) el.textContent = syncText() }
@@ -342,7 +372,7 @@ function inProgress() { return S.cur && !S.completed.includes(S.cur.ep) && EP[S.
 
 function startEpisode(id) {
   const ep = EP[id];
-  S.checkpoint = { ep: id, vars: clone(S.vars), journal: clone(S.journal), keys: clone(S.keys), log: clone(S.log) };
+  S.checkpoint = { ep: id, vars: clone(S.vars), jbase: {}, keysLen: S.keys.length, log: clone(S.log) };
   const prev = (ep.previously || []).filter(p => test(p.if));
   S.cur = { ep: id, stage: prev.length ? 'previously' : 'card', scene: null, applied: null, choice: null };
   if (!S.started) S.started = Date.now();
@@ -350,7 +380,12 @@ function startEpisode(id) {
 }
 function restartEpisode() {
   const c = S.checkpoint; if (!c || !S.cur || c.ep !== S.cur.ep) return;
-  S.vars = c.vars; S.journal = c.journal; S.keys = c.keys; S.log = c.log;
+  S.vars = c.vars; S.log = c.log;
+  if (c.journal) { S.journal = c.journal; S.keys = c.keys }
+  else {
+    for (const k of Object.keys(c.jbase || {})) { if (c.jbase[k] === null) delete S.journal[k]; else S.journal[k] = c.jbase[k] }
+    S.keys = S.keys.slice(0, c.keysLen || 0);
+  }
   S.cur = null; ui.confirm = null; closeDrawer(); startEpisode(c.ep);
 }
 function enterScene(id) {
