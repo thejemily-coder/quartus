@@ -1,0 +1,437 @@
+{
+ "scenes": {
+  "s05": {
+   "slug": "THURSDAY · 9:40 PM · THE KITCHEN TABLE — FOUR THOUSAND WORDS",
+   "set": {
+    "rel.lena.heat": "+1",
+    "resolve.lena": 3
+   },
+   "body": [
+    "The house has gone down to its night noises. Through two doors, from the front room, EWTN is saying a litany to Mémère on the daybed in a nun’s patient voice, and out on the porch the swing chain complains under a weight that can only be Tony’s. The bulb over the table makes its yellow room. Behind Jack the Magic Chef is still ticking off the heat of supper, small and dry, a fingernail on a pie tin.",
+    "Two yellow legal pads lie on the oilcloth. Four thousand words each, due the Monday they’re back. Hers says PENANCE IN A BAG across the top, underlined, and is on its sixth page; she has Jonah on page three and her mother’s sewing scissors in the second paragraph and the cows of Nineveh wherever she can fit them. His says THE SECOND LINE, and under it is one sentence.",
+    {
+     "if": "hale_lent_moviegoer && skye_print_given",
+     "text": "Under his pad lies Hale’s *Moviegoer*, its spine broken open at Carnival and Hale’s pencil quarreling down every margin, with the print still in the back of it, face-down."
+    },
+    {
+     "if": "hale_lent_moviegoer && !skye_print_given",
+     "text": "Under his pad lies Hale’s *Moviegoer*, its spine broken open at Carnival and Hale’s pencil quarreling down every margin."
+    },
+    "He writes a second sentence and crosses it out, and writes it again, worse, and crosses that out too. Lena sits across the corner of the table from him with her hair up in a knot that has a pencil through it and is coming down anyway, one knee up against the edge and her pen going in a hand that leans forward like it’s walking into weather. She reads his sentence upside down without stopping hers.",
+    {
+     "if": "second_line_night",
+     "text": "“You’ve been in one,” she says. “Once. You were holding an umbrella that wasn’t yours.”",
+     "else": "“You can’t write about a second line you’ve never been in,” she says."
+    },
+    "“I’ve got till the twenty-second.”",
+    "“Mm.” Her pen goes to the end of its line and starts the next one. “Mine’s got Jonah, and the cows, and a grocery sack, and my mother’s sewing scissors, and Hale is going to write *this is a sermon* across the top in red, and he’s going to be right, and I’m going to get an A on it anyway, because it’s a *good* sermon.”",
+    "In the front room the nun has got to the Divine Praises, and Mémère is answering her just behind, in French.",
+    {
+     "if": "s2e15_gift==\"book\"",
+     "text": "Half a page later, still writing: “Where’d y’all go this morning? You and Kevin.”"
+    },
+    {
+     "if": "s2e15_gift==\"book\"",
+     "text": "“The bank. And FedEx.”"
+    },
+    {
+     "if": "s2e15_gift==\"book\"",
+     "text": "The pen crosses a *t*. “…Valentine’s.”"
+    },
+    {
+     "if": "s2e15_gift==\"book\"",
+     "text": "“Yes.”"
+    },
+    {
+     "if": "s2e15_gift==\"book\"",
+     "text": "“Good,” Lena says, and her pen doesn’t stop."
+    },
+    {
+     "if": "s2e15_gift!=\"book\"",
+     "text": "A minute in, with her eyes on her own page, she says, “White?”"
+    },
+    {
+     "if": "s2e15_gift!=\"book\"",
+     "text": "“White.”"
+    },
+    {
+     "if": "s2e15_gift!=\"book\"",
+     "text": "She writes a sentence. He watches her get it across the page from margin to margin, and then draw one straight line through it, and start the next."
+    },
+    "He gets two more sentences out of himself and is into a third when her hand comes across the corner of the table and takes the pen out of his fingers. It’s a black Bic, the end chewed flat. She turns his pad a few degrees toward her with the side of her wrist, and on the fourth line, where he has the city on Canal Street refusing to be *embarased* by its own joy, she puts in the r he left out, and the s while she’s down there.",
+    "“Two r’s,” Lena says. “Two s’s. It’s a word that’s ashamed of itself, so it overdoes everything.”",
+    "She doesn’t give the pen back. She goes on with her own paragraph in it, Nineveh in his black ink. Somewhere in the last page her bare foot has found the rung of his chair and hooked itself over it, the heel against the wood by his ankle, and it moves when she crosses a word out, and settles when she doesn’t.",
+    "When she’s finished her sentence she turns his pad the rest of the way round and reads his best one aloud, in the Oxford she keeps for Hale: “*On the Tuesday after the Super Bowl the city came down Canal Street behind a silver trophy the way a parish walks behind its saint, and nobody had to tell anybody where to stand.*” She lets the pen point at him across the oilcloth. “‘*Nothing about football*,’ Mr. Costigan.”",
+    "He reaches over to turn to the next page, where the sentences get worse, and her hand comes down flat on the pad and keeps it there."
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "*Let her read the whole page.*",
+     "set": {
+      "s2e15_page": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "He takes his hand back. She turns the page herself and reads it, all of it, down to where he quit in the middle of a word, her mouth moving a little on the part about the curb: that he has stood at the edge of every crowd in this city for six days with his hands in his coat, watching it walk away down the street behind a horn.",
+      "She turns the pad back round to him and lines it up with the edge of the table.",
+      "“That’s the true one,” Lena says. “Keep that one.”",
+      "She goes back to her cows, with his pen."
+     ],
+     "goto": "s06"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Hale’s going to take points off for the pen.”",
+     "set": {
+      "s2e15_page": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Lena laughs out loud, short and surprised, with her head going back, and from the front room Mémère asks the litany something in French and gets no answer.",
+      "“Then he can take it up with me,” she says. She caps his pen and puts it behind her ear, into her hair, and goes back to Nineveh with her own."
+     ],
+     "goto": "s06"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Keep writing — with her pen.*",
+     "set": {
+      "s2e15_page": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Hers is lying by her pad: a blue felt-tip with TOURO INFIRMARY down the barrel in white, the kind her mother brings home by the fistful in her scrub pockets. He picks it up and uncaps it. She watches him do it and goes back to her page.",
+      "It writes wetter than his, and leans when he leans on it. He finds the end of the sentence about Canal Street with it, and the one after. Neither pen goes back."
+     ],
+     "goto": "s06"
+    }
+   ]
+  },
+  "s06": {
+   "slug": "FRIDAY · 9:30 AM · DUPRE STREET, THE SIDE YARD — THE LADDER",
+   "set": {
+    "built_ladder": true
+   },
+   "body": [
+    "Tony’s transistor sits on the upturned boil pot in the middle of the side yard with its antenna up, and WWL is taking calls about ladders. A man in Metairie believes chaining a ladder to the neutral ground on a Thursday ought to be against the law. A woman in Gentilly believes the man in Metairie ought to be against the law. Tony, down on one knee at a sawhorse with a pencil behind his ear, tells the radio that Thursday is late.",
+    "Across the sawhorses lies the twins’ ladder: a six-foot wooden stepladder freckled with the paint of every job Tony has ever done for nothing, with a plywood box bolted to the top where the paint shelf used to be — a seat for two, with sides, and a bar across the front for leaning out over. Every year since the twins were four he has taken the box off after Mardi Gras and built a new one before Endymion. This year it’s gold, out of the same can as the bags. Clovis is at the other sawhorse sanding a corner by hand with his coffee in a Saints mug by his boot, and under the picnic table Aints III lies in a quilted coat with snaps down the belly, black and gold, with the face of a lineman who has been asked to wear it.",
+    "Jack comes down the back steps with his own coffee.",
+    "“Ohio.” Tony holds a yellow drill up over his shoulder. “You know a drill?”",
+    "“I know a drill.”",
+    "“Endymion’s ours,” Tony says, as if Jack had asked him why a man builds the same ladder twice. “Rex, that’s the city’s. Zulu’s Zulu’s. Bacchus got Brees this year, fine, God bless him, that’s Uptown. Endymion comes down Orleans Avenue.” He points the screwdriver up Dupre Street at Orleans and at all of Mid-City behind it. “Ours.”",
+    "The ladders have been out on the Orleans Avenue neutral ground since yesterday, chained to a light pole in a thicket of other families’ ladders, with Clovis’s padlock and Tony’s. “Brass one’s mine,” Clovis says.",
+    "Tony shows him the four holes with a fat thumb, and Jack sets the first screw and drives it, and Tony listens to the drill with his head on one side.",
+    {
+     "if": "amen_for_frank",
+     "text": "“Celeste mailed your daddy’s paper this morning,” Tony says, holding the next screw up for him. “Carrollton post office. Tuesday, they said. God willing.”"
+    },
+    {
+     "if": "bag_large",
+     "text": "Behind them on the clothesline, between two of Celeste’s sheets, the bags hang in a row, gold, their eyeholes cut, turning a little on their pins in the wind off the lake. LARGE is on the fourth one, in Celeste’s marker.",
+     "else": "Behind them on the clothesline, between two of Celeste’s sheets, the bags hang in a row, gold, their eyeholes cut, turning a little on their pins in the wind off the lake, one of them too big for anybody but Tony."
+    },
+    "The back screen door goes. Lena comes down the steps with a laundry basket on her hip and his pen behind her ear, and crosses the yard behind the sawhorses to the shed, where the washer is. She says nothing to either of them. Tony watches her cross. When she’s at the shed he looks at Jack, who has stopped with the drill against the wood, and then he picks up the next screw.",
+    "In the kitchen window over the sink Celeste is drying a pot she has been drying for some time.",
+    "When the last screw is in, Tony stands the ladder up in the grass and climbs it to test the box, all of him, and the ladder takes the news hard. He stops on the third step. “Hold it.”",
+    "Jack takes the rails.",
+    "“Hold it like you mean it, son.”",
+    "He holds it like he means it. Tony goes the rest of the way and turns round and sits in the gold box with his knees up round his ears, and bounces, twice, while Clovis says the Lord’s name in a tone that is not a prayer. Up there, with his forearms on the bar and Dupre Street under him, Tony looks down at Jack’s hands on his ladder.",
+    "“Your daddy,” Tony says. “He build things?”"
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“He built our porch. Twice.”",
+     "set": {
+      "s2e15_ladder": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“The first one he built the year I was born. The second one he built right.”",
+      "Tony nods down at that, slowly.",
+      "“Twice is how you know it’s a porch,” Tony says, and comes down."
+     ],
+     "goto": "s07"
+    },
+    {
+     "tag": "Candor",
+     "text": "“He used to. He’s waiting on Lordstown.”",
+     "set": {
+      "s2e15_ladder": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Up in the box Tony finds a screw head standing proud of the plywood, and takes the screwdriver out of his back pocket and drives it home by hand, and for the length of a screw going in there’s only that, and WWL arguing about Endymion’s route on the boil pot.",
+      "“Till they call him back,” Tony says, “you tell him come down here. There’s always a ladder.”",
+      "He puts the screwdriver back in his pocket and stays up there a minute, looking down Dupre Street toward Orleans."
+     ],
+     "goto": "s07"
+    },
+    {
+     "tag": "Wit",
+     "text": "“He built a Cobalt. On a line. Mostly.”",
+     "set": {
+      "s2e15_ladder": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "Clovis laughs into his coffee, a bark that sends Aints III out from under the picnic table to see.",
+      "Tony doesn’t. He looks down at Jack from the gold box.",
+      "“Mostly’s a car,” Tony says, and comes down."
+     ],
+     "goto": "s07"
+    }
+   ]
+  },
+  "s07": {
+   "slug": "FRIDAY · 3:40 PM · THE KITCHEN — CHECK YES OR NO",
+   "set": {
+    "jude_valentine": true,
+    "rel.lena.trust": "+1",
+    "resolve.lena": 3
+   },
+   "body": [
+    "The afternoon comes in low over the sink and lies across the oilcloth in a long yellow bar with pecan shells in it. The front door bangs off its stop, and the twins come down the hall in their school polos with their backpacks and a brown paper lunch sack each, folded over at the top and stapled, with JOSIE B. and JUDE B. on them in a teacher’s red marker. Their school had its party at two. They are thirteen, and above it, and they would like the kitchen to know.",
+    "Josie upends hers on the oilcloth anyway, across the table from where Jack is shelling the pecans Celeste gave him, and sorts, and grades, aloud.",
+    "“Hannah Montana. Hannah Montana. SpongeBob — that’s a boy who didn’t try. Pencil with hearts on it from Brianna, that’s a bribe, Brianna wants my science notes.” She holds one up at arm’s length: a Jonas Brother, with a sucker taped through his chest. “Brandon Landry.” It goes on a pile by itself. “Brandon knows what he did.” A Bella and Edward, folded over a Tootsie Roll. “Team Edward, from Kaitlyn. Kaitlyn and I are done.” She looks up at Jack across the pile. “Did *you* get any?”",
+    "“I’m in college.”",
+    "“So no,” Josie says, and goes back to grading.",
+    "At the stove Celeste keeps her back to all of it, with the hood fan going over a pot of something with shrimp in it, and lifts the lid, and looks, and puts it back, which is as much as she will say about valentines.",
+    {
+     "if": "s2e15_lourdes==\"candor\"",
+     "text": "Josie squares the Hannah Montanas without looking up. “*I* didn’t tell Mémère.”"
+    },
+    {
+     "if": "s2e15_lourdes==\"candor\"",
+     "text": "“I know,” Jack says. “I did.”"
+    },
+    "She sweeps the pile back into the sack, takes a pen out of the jar by the phone, and goes off up the hall with it.",
+    "Jude hasn’t upended anything. His sack sits at his elbow with the staple still in it and JUDE B. facing the wall. Jude is the quiet one, the one who eats his rice off the back of his fork and says *Who dat* at the television and nothing else. He waits until the door at the end of the hall has closed, and then he unbuttons the second button of his polo and takes out a piece of red construction paper folded twice, and unfolds it on the oilcloth, and turns it round so it faces Jack.",
+    {
+     "type": "doc",
+     "title": "Red construction paper, folded twice",
+     "text": "Will you be mine?\nCheck yes or no\n☐ YES   ☐ NO\n— Destiny T."
+    },
+    "The print is round and careful, a girl’s, and somebody has gone over the boxes twice with a ruler.",
+    "“Destiny Thibodeaux,” Jude says. “Homeroom. She sits in front of me.” He looks at the refrigerator, where Celeste’s calendar has ENDYMION written across Saturday in red. “Her daddy’s ladder is two down from ours.”",
+    {
+     "if": "s2e12_dino==\"wit\"",
+     "text": "The only other thing Jude has ever said to him was about a dinosaur, out a van window in Cabazon. This is the second.",
+     "else": "Jude hasn’t said one word to him all week. This is the first."
+    },
+    "Jude looks at the boxes and then up at Jack, with his mother’s eyes in his father’s face.",
+    "“What do you do.”",
+    "All week this house has been telling Jack where to stand, what to carry and what size he is. It’s the first time anybody in it has asked him for directions.",
+    "Behind Jude, in the hall door, where Jude can’t see her, Lena has stopped in her father’s Broussard’s Seafood sweatshirt with his pen behind her ear and her mother’s list in her hand — the secret one, written on the back of the light bill — and is reading it, and Jack can see from where he sits that she can hear every word in this kitchen."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Do you like her?”",
+     "set": {
+      "s2e15_jude": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "Jude Broussard got a valentine that said check yes or no, and asked you what you do. You asked if he liked her, and told him to check yes.",
+     "response": [
+      "Jude looks at the paper. The hood fan runs. A pecan shell goes off the edge of the table and he watches it go all the way to the linoleum.",
+      "“…Yeah.”",
+      "“Then check yes.”",
+      "Jude looks down at the two boxes like a man looking at a wire he has to cut.",
+      "“What if she was kidding?”",
+      "“Then she went to a lot of trouble with a ruler.”"
+     ],
+     "goto": "s07a"
+    },
+    {
+     "tag": "Candor",
+     "text": "“Tell her the truth. Soon. It gets harder the longer you wait.”",
+     "set": {
+      "s2e15_jude": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "cue": "Lena heard that.",
+     "key": "Jude Broussard got a valentine that said check yes or no, and asked you what you do. You told him to tell her the truth, soon, because it gets harder the longer you wait.",
+     "response": [
+      "Jude takes that in with his face shut. He looks at the valentine, and back up at Jack, and puts one finger on the corner of the paper.",
+      "“How soon,” Jude says.",
+      "“Before the parade.”",
+      "In the hall doorway the list in Lena’s hand stops moving. She doesn’t come in for a while."
+     ],
+     "goto": "s07a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“In Youngstown we wait four years and then move to California.”",
+     "set": {
+      "s2e15_jude": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "Jude Broussard got a valentine that said check yes or no, and asked you what you do. You told him in Youngstown they wait four years and move to California. He said that was dumb.",
+     "response": [
+      "Jude considers California.",
+      "“That’s dumb,” he says.",
+      "“It is.”",
+      "Jude nods, as if the two of them have settled something about men and Ohio, and looks back down at the boxes."
+     ],
+     "goto": "s07a"
+    }
+   ]
+  },
+  "s07a": {
+   "slug": "FRIDAY · 3:55 PM · THE KITCHEN",
+   "body": [
+    "Josie comes back down the hall for a better pen. She takes three out of the jar by the phone and tries each one on the back of her hand and keeps the third, and on her way out she sees the red paper on the oilcloth.",
+    "“Jude’s in *LOVE*,” Josie says, and is gone before he can throw anything.",
+    "Jude folds the valentine back along its two folds and puts it inside his polo, against his chest, and does the button up over it.",
+    "Lena comes in off the hall reading the list, as though she has only this minute got to the kitchen, and stops at her brother’s chair on her way to the stove. She puts her hand on top of his head, and he puts up with it.",
+    "“Check a box, *cher*,” she says. “Either one. Don’t leave her standing there.”",
+    "Jude ducks out from under her hand and takes his stapled sack and goes, not up the hall but out the back, where the gold ladder stands against the shed.",
+    "Celeste turns from the stove. She takes the list out of Lena’s fingers and writes one more line at the bottom of it against the cabinet. Over Lena’s shoulder Jack can read the end of it in Celeste’s quick hand — *lemons (6) · Baker’s · butter, LOTS* — and then the new line: *candles — 19*. Celeste folds it once and gives it back with her car keys on top, and looks at the two of them, the girl by the stove and the boy at the table with pecan dust on his hands, and drops her voice to the whisper that runs this house.",
+    "“You two. Laney’s not to see.”",
+    "From the front of the house, from the girls’ room, Laney calls out to nobody in particular that she can *hear* whispering. Celeste goes back to her pot."
+   ],
+   "next": "s08"
+  },
+  "s08": {
+   "slug": "FRIDAY · 6:30 PM → 7:50 PM · THE KITCHEN — THE TORCH",
+   "music": "k.d. lang — “Hallelujah”",
+   "set": {
+    "torch_watched": true,
+    "arm_around_lena": true,
+    "rel.lena.heat": "+2",
+    "rel.lena.warmth": "+1",
+    "resolve.jack": "-1",
+    "resolve.lena": 3
+   },
+   "body": [
+    "The big set in the front room belongs to EWTN and the rosary, and the rosary belongs to Mémère, and nobody alive in this house touches that remote. So the Winter Olympics come to Dupre Street on Celeste’s thirteen-inch, on the counter by the Magic Chef, with the government-coupon converter box on top of it like a hat and the rabbit ears pointed at the window, and NBC coming in a little green. It was going to be a few minutes. But the kitchen sat down, and once a Broussard kitchen has sat down it doesn’t get up.",
+    "Tony has a chair turned backward with his arms folded on the top rail. Celeste stands, because Celeste stands, with a spoon in a pot of shrimp and okra and her eyes on the screen. Theo and Laney sit cross-legged on the linoleum with their backs to the bench, sharing a bag of Zapp’s with great concentration. Jude is on the floor by the refrigerator. Margot has the step stool, with her notebook shut on her knee. Kevin leans on the drainboard, in charge of the rabbit ears. Remy isn’t back from Baton Rouge. The doberge things are in the trunk of Celeste’s car at the curb, under a beach towel, where nobody who is turning nineteen on Sunday will look.",
+    "The piano bench came in from the front room for red beans on Monday and never went back. It stands under the kitchen window, with no back to it and room on it for two. Lena takes the end. Jack takes what’s left. Josie climbs up off the floor, because her father’s head is in the way, and wedges in on Jack’s other side, and the bench is three people wide, and the only place left for his arm is behind Lena, and then it’s around her, and her shoulder is under it.",
+    "Laney turns to say something to Lena, and turns front again without saying it, and she and Theo look at the thirteen-inch with all their might.",
+    "At the stove Celeste looks over once, and back down at her pot.",
+    "“Every opening ceremony is the same picture,” Theo announces, a little too loud. “A country’s childhood, scored by somebody expensive.”",
+    "“So the thing about the luge,” Kevin says from the drainboard, “is it’s basically just —”",
+    "And the anchor comes on with the morning’s news from Whistler: the training run, the boy from Georgia, the last curve. The kitchen listens. Kevin, who was going to explain the physics of the luge, doesn’t. Celeste stops stirring and starts again.",
+    "The coverage moves on to Canada: mountains from a helicopter, a man on a dogsled, a Mountie in red with the hat. Margot observes that Canada has the highest per-capita rate of apology in the developed world.",
+    "“Nice people,” Tony says. “Can’t cook a crawfish.”",
+    "On the floor Theo leans to Laney’s ear and says something, and Laney puts an elbow in his ribs without taking her eyes off Canada.",
+    "The rosary ends in the front room, and Mémère comes and stands in the doorway with her beads round her fingers to see what they’ve all deserted her for. She looks at the Mountie a long time. “*Regarde-moi donc ces chapeaux,*” she says. “*Comme des scouts.*”",
+    "“She likes the hats,” Lena says.",
+    "“She said they look like Boy Scouts,” says Josie.",
+    "“*Josie.*”",
+    "At twenty to eight the RAZR goes off against his ribs, and the little screen on the lid says SKYE (MISFIT). He takes his arm back. He gets up off the bench, past Josie’s knees, and steps over Theo, and takes it out the back door to the steps, the way he’d take any call in anybody’s kitchen. Lena’s eyes go with him to the door.",
+    "The back steps are cold through his jeans. The yard is dark to the fence, the boil pot still upside down in the side yard, and over the fence somebody else’s television has the same thing on, a little behind. It’s twenty to six in Burnaby.",
+    "“Are you near a television?” Skye says. “Tell me you’re near a television, Jack.”",
+    "She says his name the way she does at the end of things, low, leaning on it. Behind her something big goes over, chopping the air into pieces, and she waits for it to pass.",
+    "“That’s the fourth one. They keep going over toward the stadium like they’re late. I’m on an apple box behind a grip truck. That’s my entire view — a grip truck, and a strip of sky with helicopters in it. Kyle ran a cable out to a monitor on the liftgate so the crew can stop and watch, and Russ brought a lawn chair from *home*. In February. He’s been sitting in it since four like it’s the Fourth of July.”",
+    "“Save him a seat.”",
+    "“He’d save you his.” On her end a generator coughs and catches. “They’re going to stop it for him. The whole stadium.” Her voice comes in close to the phone. “Sixty thousand people are about to go quiet on cue, for a boy from Georgia. The country. I’ve never been so jealous of a director.”",
+    "He hears her breathe.",
+    "“I hate that I thought that.”",
+    "Jack looks at the shed at the bottom of the yard, and the gold ladder standing against it. “Nonna says you pray for the dead with whatever you’ve got in your hands when you hear,” he says. “She says God sorts it out after.”",
+    "“Then he’s getting an apple box and a grip truck.” She says it soft, nearly a laugh. “Okay. I’ll take that. What’s the house watching it on? Tell me exactly.”",
+    "“A thirteen-inch on the kitchen counter, next to the stove. Rabbit ears. There’s a converter box on top from the government. The lady of the house has a pot going right beside it.”",
+    "“Oh, that’s *correct*.” She sounds delighted; he can hear her sit up on the apple box. “That’s exactly how it should be seen. All that money, every camera in Canada, and the best seat in the world is next to somebody’s stew.”",
+    {
+     "if": "s2e15_gift==\"book\"",
+     "text": "“Also. The front desk called. There’s a box that says SUNDAY in capital letters. It’s been looking at me like the goose.”"
+    },
+    {
+     "if": "s2e15_gift==\"book\"",
+     "text": "“Then it’s Sunday’s.”"
+    },
+    {
+     "if": "s2e15_gift==\"book\"",
+     "text": "“*Cruel.*”"
+    },
+    {
+     "if": "s2e15_gift!=\"book\"",
+     "text": "She doesn’t know about Sunday yet. He keeps it."
+    },
+    "“I’m on nights through Saturday,” Skye says. “Sunday I’m sleeping until noon or Jesus, whichever’s first.”",
+    "Above his head the kitchen window is up from the bottom for the heat of the stove, and out of it come NBC, and the okra, and Tony telling Kevin something about hockey. The piano bench is right under it, on the inside. Lena is on the end of it."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Love you. Go light something.”",
+     "set": {
+      "s2e15_torch": "sincerity",
+      "said_love_fri": true,
+      "trait.sincerity": "+1",
+      "rel.skye.warmth": "+1"
+     },
+     "key": "On the night the Olympics opened, Skye called from Burnaby before her shift. On the Broussards’ back steps you told her you love her.",
+     "response": [
+      "“Love you back,” Skye says. “Bye, Back Steps.”",
+      "The line goes. He folds the RAZR and puts it in the Carhartt. The kitchen window above him is open, and he goes back in under it."
+     ],
+     "goto": "s08a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Ask the Mountie about my candle.”",
+     "set": {
+      "s2e15_torch": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "On the night the Olympics opened, Skye called from Burnaby before her shift. You asked if the Mountie had lit your candle yet.",
+     "response": [
+      "“I did ask,” Skye says. “On Wednesday, at the relay. He said it’s a *torch*, Jack. He said it like I’d asked to borrow his horse.”",
+      "“Did he lend you the horse?”",
+      "“He’s thinking about it. Bye, Back Steps.”",
+      "Somebody on her end yells for first team. He stays on the step after the line goes, with the phone shut in his hand, until the cold finds the back of his neck."
+     ],
+     "goto": "s08a"
+    },
+    {
+     "tag": "Candor",
+     "text": "“I wish I could see it from where you are.”",
+     "set": {
+      "s2e15_torch": "candor",
+      "trait.candor": "+1"
+     },
+     "key": "On the night the Olympics opened, Skye called from Burnaby before her shift. You told her you wish you could see it from where she is.",
+     "response": [
+      "“You’d see a grip truck,” Skye says. “You’d love it.” Another helicopter goes over her, and she waits it out, and when it’s gone she’s closer to the phone. “I wish that too. Bye, Back Steps.”",
+      "He holds the shut phone against his knee a minute, on the step, and listens to the kitchen through the window."
+     ],
+     "goto": "s08a"
+    }
+   ]
+  },
+  "s08a": {
+   "slug": "FRIDAY · 8:05 PM → 10:40 PM · THE KITCHEN",
+   "body": [
+    "Inside, the kitchen is as he left it, except Josie, who has spread into his half of the bench and has to be persuaded out of it with a knee. He sits down where he was.",
+    "On the thirteen-inch, under the white roof of a stadium in Vancouver, the countries are coming in behind their flags, endless, Tony reading out the ones he has eaten the food of — Italy, yes; Jamaica, yes; Japan, once, in Metairie, and he’d do it again — and when Georgia comes in the team is walking with black bands on their arms. The stadium stands for the boy from Georgia. All of it gets up, every seat, and stands there quiet.",
+    "Tony takes his cap off. He takes it off to a television, in his own kitchen, and holds it against his chest with both hands, and Celeste puts her spoon down on the counter without a sound. Mémère crosses herself in the doorway. Kevin crosses himself at the drainboard, and then Laney does, right way round. The pot murmurs on its low flame. The kitchen is quiet for it.",
+    "*Eternal rest grant unto him, O Lord*, Jack says under his breath, the way Nonna says it for anybody on the news. *And let perpetual light shine upon him.*",
+    "After that, alone in all that space, k.d. lang sings “Hallelujah,” and the kitchen, which has had something to say about everything all evening, holds still for it. Celeste reaches over and turns the flame out under the okra. From the doorway Mémère asks what the woman is singing, and Lena tells her, “*Alléluia*, Mémère,” and Mémère nods as if that were only right. Margot has opened her notebook and isn’t writing in it. On the floor Laney has her knees pulled up and her chin on them, and Theo sits with his hands still. Lena has her hands in her lap and her eyes on the little screen, and her mouth is set, and he can see the light of it moving on her face.",
+    "It goes on a long time, the rest of the ceremony. Josie falls asleep against him and wakes up indignant. Celeste’s phone goes three times on the counter, and three times she reads it out: Remy, almost there. Tony explains curling to Margot, who has questions. The great white arms of the cauldron come up out of the floor of the stadium to meet in the middle, all but one, which never comes up. Later, out on the waterfront, Gretzky goes in the back of a truck in the rain to the other cauldron, and the kitchen cheers a man in a pickup.",
+    "“Somebody’s getting called into the office Monday,” Tony says, about the arm that didn’t come up.",
+    "“It’s hydraulics,” Kevin says. “One bad seal.”",
+    "“Then somebody’s seal is getting called into the office Monday.”",
+    "By then his arm is around her again, and her shoulder is under it.",
+    "At half past ten Remy comes in the back door with his duffel on one shoulder and a cardboard box in both hands, from a gas station in Gonzales with the price still on the plastic wrap, and puts it on the counter in front of the Olympics.",
+    "“King cake,” Remy says. “Don’t say I never.”",
+    "Celeste cuts it with the bread knife onto paper towels, and the paper towels go round the kitchen hand to hand, purple and green and gold sugar coming off on everybody’s fingers. Mémère gets hers first, by law. Margot asks what the baby signifies, and four Broussards tell her four different things at the same time. Jack bites into his and his teeth find something that isn’t cake.",
+    "He takes it out. It’s a plastic baby, pink, the size of the end of his thumb.",
+    "“Brother-in-law got the *baby*!” Remy says.",
+    "“*Remy.*”",
+    "Theo and Laney go white as one person.",
+    "Lena licks the sugar off her thumb. “It means you buy the next one.”",
+    "“When’s the next one?”",
+    "The whole kitchen, Mémère included: “*Tomorrow.*”",
+    "Remy, unwounded, goes to the refrigerator for the milk and comes out of it with a plan. “Y’all should go see that Valentine’s movie Sunday,” he says. “The one with everybody in it. All y’all young people. Make a night of it.”",
+    "Theo and Laney, in unison, from the floor: “Absolutely not.”",
+    "Remy looks at them. Jack sets the baby down on his paper towel, face-up under the bulb, next to the sugar."
+   ],
+   "next": "s09"
+  }
+ }
+}

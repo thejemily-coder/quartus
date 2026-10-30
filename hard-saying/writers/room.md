@@ -396,6 +396,14 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 235. **Withheld explanation: "doesn't explain / does not discuss"** (S2E14). At most 2 an episode.
 236. **Jack's Wit templates:** "In Youngstown we'd…" at most once an episode; relay jokes ("Tell X…") at most once an episode (S2E14: the Youngstown, relay and pawn jokes were recast).
 237. **Knocking wood as the jinx ritual** (S2E14: spent twice, Laney at s11 and Theo at s16). Retired until the reveal.
+238. **Withheld translation as a gag** (S2E15: the speaker is not translated for the player). At most 1 an episode.
+239. **A bystander's "goes back to [task]" as a scene button** (S2E15). At most 2 an episode.
+240. **A crowd surge as the engine for touch** (S2E15: Endymion). Once per episode, and not as the default way to put Jack and Lena in contact.
+241. **Julian's roses in the lit window as a scene closer** (S2E15). One scene or branch closer per episode.
+242. **Past-tense backfill openers that flip to present** (S2E15). At most 2 an episode.
+243. **Comic "like a man / woman" simile density** (S2E15: queen, boy, baby, ward round, football, fork trimmed). At most 3 an episode.
+244. **Skye's real drop announced by negation** ("doesn't make a joke of it") (S2E15). Once an episode.
+245. **"He hears her sit down" as the device for Skye going serious on the phone** (S2E15). Once an episode.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);
