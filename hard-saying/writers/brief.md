@@ -2292,3 +2292,8 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     when she went out with Julian, it felt like her saying no.** (This mirrors her reading of Becca as his choice: each
     took the other's next relationship as an answer to a question neither had asked out loud. It feeds directly into
     "the wound of the avoidable" and the vow to speak plainly.)
+- **Hale notices (player; first 109H after New Orleans, likely Mon Feb 22, S2E18).** Hale **cannot refrain from
+  commenting in his seminar, in his usual way**, on how Jack and Lena's dynamic **has returned to what it was, if not
+  even more so** (dry, literary, at the whole table's expense and theirs; after Hale's dining-room fight, the contrast
+  is the joke; it lands the day after Lena ends it with Julian and the day before Jack tells Skye, so neither can
+  answer him).
