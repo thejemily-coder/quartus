@@ -1,0 +1,340 @@
+{
+ "scenes": {
+  "s16": {
+   "slug": "SATURDAY · 6:40 PM · DELGADO HALL, ROOM 412 — TWO INVITATIONS",
+   "body": [
+    "The last of Saturday is going out of the top of the window in 412, a band of apricot over the ridge with the eucalyptus standing up black in front of it. Jack has been back long enough to shower and not long enough to get the Anchor’s fryer out from under his nails. He’s at his desk with *The Moviegoer* shut in front of him. Since the wharf a picture has been coming back to him every few minutes, a rail and a camera and a face, and every time it comes he lets it, and lets it go back where it came from.",
+    "Theo is on his bed in a T-shirt and his good trousers, the MacBook open on his knees and three DVD cases fanned out on the blanket beside him like a hand he’s deciding how to play. He picks one and holds it up by the corner.",
+    "“*The Apartment*. Nineteen-sixty. Wilder. You’ve never seen it, which is a moral failing. I’ve been waiting all week with nothing on it.”",
+    "“How do you know I’ve never seen it?”",
+    "“Because you’ve never brought it up. People who’ve seen it bring it up.”",
+    "The RAZR goes off on the desk by his elbow, and the outside screen lights with her name.",
+    {"type": "sms", "from": "Lena", "text": "Making a roux in the parish kitchen for the Newman supper tomorrow. If your hands want a job. —L.", "time": "6:41 PM"},
+    "He opens it and reads it with the phone down by his knee. Across the room Theo has turned the case over and is reading the back of it with great care, the running time, the cast list, the copyright in letters the size of sand, the way a person reads a cereal box at a breakfast table where somebody else is on the phone."
+   ],
+   "choices": [
+    {
+     "tag": "Theo",
+     "text": "*Stay. Watch the movie.*",
+     "set": {"s2e19_sat": "theo"},
+     "response": [
+      "He types it with his thumb, a key at a time.",
+      {"type": "sms", "from": "Jack", "text": "cant tonight. theo is showing me a movie from 1960. its a moral issue", "time": "6:43 PM"},
+      "Theo gets up and pulls the desk chair out between the two beds, and puts a pillow on the seat and the MacBook on the pillow, and turns the screen to face the room.",
+      {"type": "sms", "from": "Lena", "text": "Tell him I said it’s a good one. —L.", "time": "6:44 PM"},
+      "Theo reads it over Jack’s shoulder on his way to the lamp. He hums a bar of something with violins in it, and reaches for the switch."
+     ],
+     "goto": "s16t"
+    },
+    {
+     "tag": "Lena",
+     "text": "*Go make a roux.*",
+     "set": {"s2e19_sat": "lena"},
+     "response": [
+      "Theo is already feeding the disc into the side of the MacBook, which takes it with a little whir.",
+      "“Go. It’s a moral failing I can live with.”",
+      "Jack has the Carhartt half on when the lamp clicks off behind him. At the door he looks back. Theo is sitting up against the wall with his knees up and the laptop on them, and the first black-and-white frames are coming up on his face, and he settles in to watch it by himself."
+     ],
+     "goto": "s16l"
+    }
+   ]
+  },
+  "s16t": {
+   "slug": "SATURDAY · 7:00 PM · DELGADO HALL, ROOM 412 — THE APARTMENT",
+   "set": {"theo_apartment": true, "rel.theo.trust": "+1", "rel.theo.warmth": "+1", "resolve.jack": "+1"},
+   "body": [
+    "Theo’s rule is that you don’t watch black and white with a lamp on. “It’s like reading Dickens in a dentist’s office.” So the lamp is off, and the MacBook sits on its pillow on the desk chair between the beds, the brightest thing in 412, and the two of them lie on their own beds on their sides with their heads propped on their hands, too old for a sleepover by a couple of years and not caring.",
+    "In the window the moon has come up full over the ridge, so white it could have walked out of the picture.",
+    "It opens in an insurance company in New York, a floor of desks going back so far they stop being desks and turn into a pattern, and at one of them, with an adding machine and a cold coming on, Jack Lemmon. Lemmon has an apartment. Men above him at the company borrow the key, so they’ll have somewhere to take women who aren’t their wives, and they pay him in promises about promotions, and he stands out on the sidewalk in the cold waiting for them to be finished with his own bed. Shirley MacLaine runs one of the elevators. By her second ride Jack can see how this is going to go for Lemmon, and so can Lemmon, and knowing doesn’t do either of them any good. When Lemmon buys a bowler hat to go with his promotion and tries it on for her in the elevator, Jack is so far on his side it hurts.",
+    "Theo has seen it, by his own count, forty times. He watches maybe one scene in three. The rest of the time, when Jack glances across the desk chair, Theo is watching him, the screen light on half his face, the way a man drives a friend through the town he grew up in and watches the friend instead of the town. He laughs where Jack laughs, a hair behind, checking the joke still works on somebody new. Now and then he says something into the dark, never over a line, always in the gaps: “Watch his hands. Lemmon acts with his hands better than most people act with their faces.” And later, as the elevator doors close on MacLaine: “Wilder never lets her be the joke. Notice that. Everybody else in the building is a joke.” There’s a bowl of kettle corn from the Mesa farmers’ market on the desk chair beside the laptop, and every so often one of them reaches over in the dark and the other one hears it. When Lemmon drains a pot of spaghetti through a tennis racket, Jack laughs so hard and so suddenly that he has to sit up, and across the room Theo puts his face in his pillow and comes up out of it with his hair wrecked.",
+    "It isn’t only funny. Past the middle it goes somewhere dark that Jack didn’t see coming, and for that stretch Theo watches the screen and not him.",
+    "Somewhere in there, with MacLaine back in her elevator and her face turned away from everybody in it, it comes to Jack that he could ask. Theo went up those steps on Del Playa on Tuesday night and didn’t come back from it till past one. Whatever he carried back down from it is still in Theo, and it’s hers. Jack lies with his cheek on his forearm and doesn’t reach for it, and the picture goes on.",
+    "By the end it’s New Year’s Eve. MacLaine has heard something at a party that makes her put down her glass and leave, and she’s running down a New York street in her good coat with the noisemakers going behind her, and Jack is up on one elbow.",
+    "“I’m happy for you,” Theo says. He says it to the screen, with the girl in the coat running on it. “I’m going to be happy on a delay.”",
+    "His eyes stay on her."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Take the delay. I’ll wait.”",
+     "cue": "Theo will remember that.",
+     "set": {"s2e19_theo": "sincerity", "trait.sincerity": "+1"},
+     "key": "Watching *The Apartment* in the dark, when Theo said he was happy for you on a delay, you told him to take the delay — you’d wait.",
+     "response": [
+      "“Take the delay,” Jack says. “I’ll wait.”",
+      "“Okay.”",
+      "The last scene plays out in a small apartment with a deck of cards on the couch, and the picture fades, and the credits come and go and leave the screen blue. Theo doesn’t turn the lamp on for a while."
+     ],
+     "goto": "s17"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Picture it. A man. A laptop. A delay.”",
+     "set": {"s2e19_theo": "wit", "trait.wit": "+1"},
+     "key": "Watching *The Apartment* in the dark, when Theo said he was happy for you on a delay, you handed him back one of his own loglines.",
+     "response": [
+      "“Picture it,” Jack says. “A man. A laptop. A delay.”",
+      "Theo laughs, caught. “Derivative.”",
+      "On the screen MacLaine gets where she’s going. Theo watches her get there, and lays his head back down on his arm. “You’ll owe me a kidney for that.”"
+     ],
+     "goto": "s17"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Say nothing. Watch the end with him.*",
+     "set": {"s2e19_theo": "restraint", "trait.control": "+1"},
+     "key": "Watching *The Apartment* in the dark, when Theo said he was happy for you on a delay, you said nothing and watched the end with him.",
+     "response": [
+      "Jack lies back down on his arm. They watch the end of it together, two beds and a desk chair and a picture fifty years old, with nothing said.",
+      "The credits come up. Theo rolls onto his back and tells the ceiling, quietly, “Best Picture. Nineteen sixty,” like a prayer he has known since he was small."
+     ],
+     "goto": "s17"
+    }
+   ]
+  },
+  "s16l": {
+   "slug": "SATURDAY · 7:00 PM · ST. BRENDAN’S, THE PARISH KITCHEN — NOT A DATE",
+   "set": {"roux_sat": true, "rel.lena.warmth": "+1", "rel.lena.heat": "+1"},
+   "body": [
+    "The parish kitchen is three steps down at the back of the hall, a long room in stainless steel and church-basement green, with a six-burner range older than anyone who cooks on it and a window over the sinks that looks out on the courtyard. Father Osei’s office is on the other side of the wall, and through it, turned low, comes a highlife record, horns going round over a guitar.",
+    "Lena is at the range in a bib apron that says ST. BRENDAN ALTAR SOCIETY and comes nearly to her shins, her sleeves shoved up past the elbow and her hair tied back with the twist tie off a bread bag. On the burner is the biggest Dutch oven the parish owns. On the board beside it sit four yellow onions, a head of celery, three green peppers, and a knife laid across them like a place setting.",
+    "“This isn’t a date,” she says. “Dates have reservations. This is a vegetable.” She holds out an onion.",
+    "He takes it. It’s cold from the walk-in, and the skin comes away like tissue paper in his palm.",
+    "“Onion, celery, bell pepper,” Lena says. “The trinity. The celery is the Holy Ghost: couldn’t a soul tell you exactly what it does, and you’d know in a heartbeat if it wasn’t there. So you be respectful with the celery.”",
+    "He is respectful with the celery. He chops the way Rudy showed him on slow nights at the Anchor, fingertips curled back out of the blade’s way and the knife doing the work, and she watches the first onion go into a neat white heap, and makes a small approving noise, and turns back to her pot.",
+    "The oil is in already. She shakes the flour over it out of a Folgers can and starts in with a wooden spoon whose end has gone black from forty years of exactly this, and the kitchen fills up with it toasting, warm, part bakery and part struck match. It’s for the Newman supper after the five o’clock tomorrow, chicken and andouille for forty, the stock already going on the back burner. “It’s Sunday tomorrow,” she says, “and on a Sunday the Church permits a girl a sausage, and I intend to be permitted.”",
+    "When the onions are done she hands him the spoon. “The color of a penny,” she says, “then a Hershey bar, then you stop or you start over. That’s Daddy’s. Don’t you walk away from it.”",
+    "He knows better than to walk away from it. He stirs, and she takes the knife and does the peppers, fast, and then the celery, with exaggerated reverence. The board is at his elbow. When she reaches past him for the bowl her forearm goes along his, flour on hers and onion on his, and comes back. She leans her hip on the counter beside the range, near enough that he can feel the warmth of her through his shirtsleeve, and watches the roux go from blond toward peanut butter under the spoon.",
+    "In the window over the sinks the moon has come up full behind the olive tree, and the courtyard is silver and black: the folding tables stacked against the wall for tomorrow, and the old brass sprinkler head, a knob in the flower bed, behaving itself.",
+    "Halfway to peanut butter, Father Osei comes past the kitchen door in his black clerical shirt with the sleeves rolled. He takes a spoon from the drawer by the door, dips it in the stockpot, tastes, drops the spoon in the sink, and goes back out the way he came. The horns through the wall go on.",
+    "It’s a long stir. Forty-five minutes, or as long as it takes. He has her at his elbow for every one of them, the soap in her hair and the onion on her fingers, her voice going on about the Newman treasurer and a casserole dish nobody has seen since Ash Wednesday, the pot under his spoon going darker by degrees. There’s flour on the inside of her wrist. He would like very much to do something about it with his mouth. She told him in the doorway what this is, and it’s a vegetable."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Tell me about your father’s.”",
+     "cue": "Lena will remember that.",
+     "set": {"s2e19_roux": "sincerity", "trait.sincerity": "+1"},
+     "key": "In the parish kitchen on Saturday night you asked Lena about her father’s roux, and she told you while you stirred.",
+     "response": [
+      "“Tell me about your father’s.”",
+      "She watches the spoon go round before she answers. “Sundays,” she says. “After the ten-thirty, with the house full of everybody. He’d have the stove, and he’d open a Dixie and set it on the back corner, and never drink it. Every Sunday. That beer just sat there getting warm. I asked him one time what it was for, and he said it was for his hands, so they’d have somewhere to be that wasn’t the spoon.” She pushes a piece of hair off her face with the back of her wrist. “He said a roux will tell you when. You just have to be standing there when it does.”",
+      "Then she reaches over and takes the spoon out of his hand without a word. It’s time; he can see it in the pot, dark as the chocolate bar, and she’s the one standing there."
+     ],
+     "goto": "s17"
+    },
+    {
+     "tag": "Wit",
+     "text": "“It’s the color of a penny. Do I stop or start over?”",
+     "set": {"s2e19_roux": "wit", "trait.wit": "+1"},
+     "key": "In the parish kitchen on Saturday night you asked Lena whether a penny-colored roux meant stop or start over.",
+     "response": [
+      "“It’s the color of a penny,” he says. “Do I stop or start over?”",
+      "“Keep going, Youngstown. Nobody stops at a penny.”",
+      "Her hand comes over his on the spoon, flour-dry and warm, and takes the pot round with it, one slow turn, scraping the corners he’s been missing, and then it’s back on the cutting board, busy with the celery, as though it had never been anywhere else."
+     ],
+     "goto": "s17"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Keep stirring. Don’t look at her.*",
+     "set": {"s2e19_roux": "restraint", "trait.control": "+1", "soul.restraint": "+1"},
+     "key": "In the parish kitchen on Saturday night you kept stirring Lena’s roux and didn’t look at her, with her right there at your elbow.",
+     "response": [
+      "He keeps stirring. He keeps his eyes on the pot.",
+      "She’s right there at his elbow. He can feel her looking at the side of his face, and she goes on looking long enough for the roux to go a shade darker under it, and he gives the pot everything he has: the corners, the bottom, the slow brown coming round and round.",
+      "“It’s done,” she says, and takes the spoon."
+     ],
+     "goto": "s17"
+    }
+   ]
+  },
+  "s17": {
+   "slug": "SUNDAY · 11:30 AM · ST. BRENDAN THE NAVIGATOR — THE TRANSFIGURATION",
+   "set": {"peace_feb28": true, "soul.grace": "+1", "resolve.jack": "+1", "resolve.lena": 5},
+   "body": [
+    "The 11:30 is St. Brendan’s at its fullest: families from the Mesa in the front half with their children graded by height, a rank of students in the back still damp from the shower, the Coffee & Donuts ladies on the aisle ends where they can get out quick. The sun is high enough now to come through the blue glass from outside, and it lays its color down the fir ribs and across the tile. The flower stands are empty. The purple is on the ambo and the altar cloth and, in a minute, on Father Osei.",
+    "Jack takes a pew on the Mary side, about halfway up, the aisle end, and kneels. He is three words into a Hail Mary when the kneeler takes somebody’s weight beside him.",
+    "It’s Lena, in the long coat, with the lace folded in her hand. She kneels, and crosses herself, and is quiet a little with her eyes shut. Then she sits back, and shakes the lace out, and puts it on her hair.",
+    {"if": "s2e19_sat==\"lena\"", "text": "Settling her coat, she leans to him under the organ’s first chords and informs him that he still smells like her onions."},
+    {"if": "s2e19_sat!=\"lena\"", "text": "Settling her coat, she leans to him under the organ’s first chords and asks him how the movie was. He tells her Theo says it was a moral failing he’d never seen it. “It was,” she says."},
+    "Gus Ferreira brings them to their feet with the entrance hymn, a Lenten one, each line of it coming down a step lower at the end than it started. Father Osei comes up the aisle in the purple behind the cross. Where the Gloria would go there is only the sound of a full church sitting down.",
+    "A man from the Mesa in a sport coat reads Genesis: Abram brought outside in the dark and told to look up and count the stars, if he can; and then the strange part, the animals cut in two and laid out in the night, and a smoking pot and a flaming torch passing between the halves on their own. Jack has always liked that part. Abram is asleep through it. The fire keeps both ends of the bargain by itself.",
+    "Kenzie Rourke from Newman cantors the psalm, *The Lord is my light and my salvation*, and the church gives it back to her, and beside him Lena’s voice comes in under the line and stays on the last note a hair after everybody else has let it go.",
+    "There’s no Alleluia before the Gospel. Gus plays the Lenten acclamation instead, and they stand, and Father Osei reads Luke. Peter and James and John taken up the mountain to pray, and while he prays the Lord’s face changes and his clothes go dazzling white, and Moses and Elijah are there talking with him about what is going to happen to him in Jerusalem. Peter has been asleep. He wakes and sees them, and says, “Master, it is good that we are here,” and offers to put up three tents, one apiece, not knowing what he’s saying. And then the cloud comes down over all of them, and they’re afraid inside it, and the voice: *This is my chosen Son; listen to him.* When it lifts, there is only Jesus. And they fell silent, Father Osei reads, and did not at that time tell anyone what they had seen.",
+    "He comes down to the sanctuary step for the homily and stands there with his hands folded. “Peter wants to build a house for the glory and live in it,” he says. “The Lord lets them see it once, so that they can carry it down the mountain into Jerusalem, where they will need it.” He goes back to his chair. In the pew behind them Mrs. Fitch approves of the length with a single “Mm.”",
+    "In the prayers of the faithful the man in the sport coat reads one for Chile: for the dead and the injured, for those who have lost their homes, and for everyone still waiting for news. *Lord, hear our prayer.* Lena’s fingers have been turning down the corner of her missalette. At *Chile* they stop. Her hands go still on the back of the pew in front of them and lie there, through the response and the petition after it, the hands of a girl from a coast. Jack keeps his eyes on the altar. At the Amen her hands come back to her.",
+    "The bells at the consecration, and a hundred kneelers coming down at once like a strike on league night in Boardman. St. Brendan’s doesn’t hold hands at the Our Father. Lena folds hers. His hang at his sides. Her voice goes along at his shoulder, low, a half-word ahead of his the length of the prayer, and they come to *deliver us from evil* together, and Father Osei goes on alone.",
+    "He wishes them the peace of the Lord, and the church tells him *and also with you*, and he asks them to offer one another a sign of peace. All around them hands go out across the pews. Lena turns to him first. She holds out her hand and he takes it: warm from being folded, a nick across one knuckle from a paring knife, a grip like a handshake on a deal for about as long as it takes him to notice, and then not like a handshake at all."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Say it the way it’s said.* “Peace be with you.”",
+     "set": {"s2e19_peace": "sincerity", "trait.sincerity": "+1"},
+     "response": [
+      "“Peace be with you.”",
+      "“And also with you.”",
+      "When it’s time they go up to Communion together. In the line she’s in front of him, and the lace has slipped crooked over one ear, and he looks at it the length of the aisle and doesn’t fix it."
+     ],
+     "goto": "s17a"
+    },
+    {
+     "tag": "Candor",
+     "text": "“Peace be with you, Lena.”",
+     "set": {"s2e19_peace": "candor", "trait.candor": "+1"},
+     "response": [
+      "“Peace be with you, Lena.”",
+      "Her name, in the middle of the church. Her hand tightens on his. “And also with you, Jack.”",
+      "They go up to Communion side by side in the line, and behind them Mrs. Fitch says nothing whatsoever at a volume they can both hear."
+     ],
+     "goto": "s17a"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Say it, and let go first.*",
+     "set": {"s2e19_peace": "restraint", "trait.control": "+1"},
+     "response": [
+      "“Peace be with you.”",
+      "“And also with you.”",
+      "He lets go first. She notices; a small line comes between her brows and goes. They go up to Communion with the pew, and on the way up the aisle her knuckles find his, going by, and are gone again."
+     ],
+     "goto": "s17a"
+    }
+   ]
+  },
+  "s17a": {
+   "slug": "SUNDAY · 12:40 PM · ST. BRENDAN’S, THE COURTYARD — COFFEE & DONUTS",
+   "music": "E.T. Mensah & the Tempos — “Ghana Freedom”",
+   "set": {"asked_dinner": true, "date1_set": true, "rel.lena.trust": "+1", "rel.lena.warmth": "+1"},
+   "body": [
+    "Coffee & Donuts happens in the courtyard after the 11:30 in any weather, and today the weather has come round to it: the fog burned off by noon and the sun coming down through the olive tree onto three folding tables, two urns, a sleeve of styrofoam cups and four pink boxes going fast. Father Osei’s office window is open over the courtyard, and inside it his record player is going at a volume the Coffee & Donuts ladies gave up complaining about years ago, a dance band from Accra, horns out front and a guitar picking along underneath like somebody walking quickly to a party he’s glad to be asked to. Father Osei himself is down here at the urn in his black shirt, pouring, and the record plays on up there without him.",
+    "Sunday isn’t a fast day. Lena eats a glazed donut standing at the end of the table, with the unhurried devotion of a woman who had bread and water on Friday and hasn’t forgotten it, and licks the glaze off her thumb, and goes back in. Jack has one in a napkin and forgets it’s there.",
+    "“He’s right about Peter,” she says, with her mouth full, nodding up at the open window. “Peter is a man who’d build you a carport while you were trying to tell him something.”",
+    "“I like Peter.”",
+    "“Everybody likes Peter. Peter is who you want at a crawfish boil. You would not put Peter in charge of the tents.” She looks at the last bite of the donut, and takes it. “I dreamed about a po’boy Friday night. Shrimp. Dressed. I woke up and said a whole Act of Contrition over a sandwich I never ate.”",
+    "“Did it take?”",
+    "“It’s Sunday. I’m eating the evidence.”",
+    "Mrs. Fitch comes down the table in her driving gloves, coffee in one hand, and stops, and looks from one of them to the other. “You two are standing in front of the creamer.” They step aside, and she pours with her back to them, and that’s that.",
+    "The first of Lena’s three instructions is his to carry out, and he has had since Friday night to work out how. He had it worked out in the shower, and again kneeling at the Communion rail, and it has gone out of his head the way the Baltimore Catechism used to go out of it at the front of a classroom at St. Brigid’s. He puts the donut down on the end of the table. His hands are steadier than they were on Wednesday. They aren’t steady.",
+    "“Lena,” he says. “I wanted to ask you — ”",
+    "Under the flower bed, a valve that has been in the ground since 1962 makes up its mind. The brass head comes up hissing sideways, spits at the bench, and then finds its arc and lets fly: a long fan of water that comes round across the flower bed, across the end of the first table, across the pink boxes and the two of them, and keeps on coming.",
+    "The courtyard scatters. The Coffee & Donuts ladies snatch the pink boxes to their chests. A man in a Giants cap holds his cup over his head and gets soaked anyway. A little girl in patent-leather shoes runs straight into it, shrieking, and has to be retrieved. Mrs. Fitch walks out of range at precisely her ordinary pace, coffee aloft. Jack and Lena run the other way, for the olive tree, and get in under it with water rattling in the leaves over their heads and Lena laughing so hard she has to put a hand on the trunk. “Sweet suffering Saint Sebastian,” she says, when she can, to the general situation. Out by the tables one of the Coffee & Donuts ladies, rescuing the creamer, looks over at the two of them under the tree, and then looks very hard at the creamer.",
+    "She has saved the donut. Her lace is wet and one side of her coat is wet, and the donut, held high the entire time, is perfect.",
+    "Father Osei comes over from the urn, which the sprinkler doesn’t reach and never has, with a stack of paper napkins. He gives one to Lena and one to Jack. “It does this,” he says. “It has done this since before I came. Dry your hands. There are more glazed.” He goes back to the urn and pours for the man in the Giants cap, who has started to laugh about it.",
+    "Under the olive tree, with the water swinging round on the far side of the trunk and the leaves still dripping on them, Lena dries her face with the napkin and looks up at him, wet to the hairline, and waits.",
+    "“You were saying.”"
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Will you have dinner with me? A real place. Saturday.”",
+     "cue": "Lena will remember that.",
+     "set": {"s2e19_dinner": "sincerity", "trait.sincerity": "+1"},
+     "key": "After Mass on Sunday, under the olive tree, you asked Lena to dinner properly — a real place, Saturday — and she said yes.",
+     "response": [
+      "“Will you have dinner with me? A real place. Saturday.”",
+      "“Not a Friday.”",
+      "“Saturday.”",
+      "“Then yes.”",
+      "She takes the napkin back out of his hand and dries his hand with it, not hers: the back, and the palm, and carefully between the fingers."
+     ],
+     "goto": "s18"
+    },
+    {
+     "tag": "Wit",
+     "text": "“Miss Broussard, I’m told the forms require a dinner.”",
+     "cue": "Lena will remember that.",
+     "set": {"s2e19_dinner": "wit", "trait.wit": "+1"},
+     "key": "After Mass on Sunday, under the olive tree, you told Lena the forms required a dinner — and she said yes to Saturday.",
+     "response": [
+      "“Miss Broussard, I’m told the forms require a dinner.”",
+      "“Not a Friday.”",
+      "“Saturday.”",
+      "“Then yes.” She folds the wet napkin into a square, very neatly, and tucks it into his shirt pocket. “Form one is complete.”",
+      "Behind them the sprinkler shuts off as suddenly as it started, in the middle of its arc, with a gulp, and the courtyard comes back out from wherever it went."
+     ],
+     "goto": "s18"
+    },
+    {
+     "tag": "Candor",
+     "text": "“Dinner. Saturday. Say yes.”",
+     "cue": "Lena will remember that.",
+     "set": {"s2e19_dinner": "candor", "trait.candor": "+1"},
+     "key": "After Mass on Sunday, under the olive tree, you asked Lena to dinner in four words — and she said yes to Saturday.",
+     "response": [
+      "“Dinner. Saturday. Say yes.”",
+      "“Not a Friday.”",
+      "“Saturday.”",
+      "“Then yes.”",
+      "Up in Father Osei’s window the record comes to the end of its side, and the needle rides round and round in the groove at the middle, and nobody goes in to turn it over."
+     ],
+     "goto": "s18"
+    }
+   ]
+  },
+  "s18": {
+   "slug": "SUNDAY · 6:30 PM · DELGADO HALL, THE EAST STAIRWELL — THE BROWNS",
+   "set": {"ma_sunday_dinner": true},
+   "body": [
+    "The afternoon went to the hockey final: the fourth-floor lounge full to the doors by the third period, and in overtime, when the puck went in and it was over, a girl from Vancouver in a red sweater standing on the couch with both arms up, screaming, and Jack in the doorway thinking of Kyle peeling off a jersey in a bar in Burnaby and Gord with the mustache rising off his stool, and of the girl who told him about them in lowercase, and smiling at a room full of strangers who thought it was about the hockey.",
+    "Now the lounge is a drift of popcorn and the stairwell is his. He’s on his step. The RAZR goes at six-thirty exactly; Ma has never been late for anything in her life and isn’t going to start on account of the Olympics.",
+    {"if": "s2e19_ma==\"candor\"", "text": "“Did you ask Lena?”"},
+    {"if": "s2e19_ma==\"sincerity\"", "text": "“It was Friday,” Ma says. “Did you ask her?”"},
+    {"if": "s2e19_ma!=\"candor\" && s2e19_ma!=\"sincerity\"", "text": "“Is it still ‘not yet’?”"},
+    {"if": "s2e19_ma==\"candor\" || s2e19_ma==\"sincerity\"", "text": "“To dinner.”", "else": "“No, Ma. I asked her. To dinner.”"},
+    "“*Good.*”",
+    "He hears the dish towel go down on the counter. She has stopped whatever she was doing to hear the rest of it, and there isn’t much rest yet, and she takes what there is.",
+    "“Did you eat?”",
+    "“A donut.”",
+    "“A donut is not eating,” Ma says. “A donut is what you have while you decide what to eat.” The tap goes on and off. “Where are you taking her?”",
+    "“Someplace with tablecloths.”",
+    "“Then iron something.”",
+    "“I’ll iron something, Ma.”",
+    "Behind her, from the door to the garage, at full volume: “ASK HIM DOES SHE LIKE THE BROWNS.”",
+    "“Your father wants to know — ”",
+    "“I heard him, Ma.”",
+    "“The street heard him.”",
+    "“Tell him she’s a Saints fan.”",
+    "Ma, away from the phone: “She’s a Saints fan, Frank.” Out in the garage a silence follows, the length of a man revising a lifetime of opinions about Louisiana. Then, at the same volume: “TELL HER CONGRATULATIONS.”",
+    "“She knows more football than he does,” Jack says.",
+    "“I’m not telling him that. He’s got the hood up.”",
+    "She tells him the rest of the week on Glenwood Avenue: the furnace man, Rosie’s cough, a snow on Thursday that’s still in the gutters going black. Then, when the garage has been quiet a while: “Your grandmother lit her candle. After the nine o’clock. She sat with it till the ten-thirty people came in and made her move.”",
+    "“Tell her thank you.”",
+    "“She knows.”",
+    "Out in the garage the compressor kicks on, and his father hollers something about a light, and Ma says, “I’m on with your son,” and then, to Jack, “He wants me to hold the light,” and goes to hold it. The stairwell is quiet. It’s ten past seven."
+   ],
+   "next": "s18a"
+  },
+  "s18a": {
+   "slug": "SUNDAY · 7:40 PM · DELGADO HALL, THE EAST STAIRWELL",
+   "set": {"lena_on_step": true, "kiss_sun": true, "rel.lena.warmth": "+1", "rel.lena.heat": "+1", "resolve.jack": "+1"},
+   "body": [
+    "Sunday night has the building at dinner, or behind its doors with the weekend’s reading, and the east stairwell has gone quiet from the ground up. Jack is on his step, the third one down from four, with his back against the cinderblock and the wired glass on the landing below gone dark enough to show him the light over his own head.",
+    {"if": "s2e19_sat==\"theo\"", "text": "He left Theo in 412 when he came down for Ma, the lamp off and another black-and-white picture going on the desk chair, and its light along the bottom of the door when he pulled it to."},
+    "The pack is in his hand. He took it out of the breast pocket of the Carhartt when Ma went to hold the light and hasn’t put it back: the red and white, the cellophane, the seal, the corners gone soft from riding against the RAZR since El Paso. Somewhere in the last day or two his hands quit going looking for it every few minutes. He noticed that this afternoon in the lounge doorway, and didn’t follow the thought any further than that.",
+    "The steps come up out of two: quick, light, the heel of a boot catching the lip of every third stair. They come up onto her landing, and they don’t stop. They come on round the turn and up the flight to three, and round the turn below him, and up.",
+    "She’s in the jean jacket with a sweater under it, and her hair is down, and there’s a smudge of something brown on the cuff of the sweater. She comes up the last of the flight and gets to his step and looks at the width of it.",
+    "“Move over, Youngstown.”",
+    "He moves over. She sits down beside him on the cold concrete, her shoulder against his shoulder and her boots on the step below beside his.",
+    {"if": "s2e19_sat!=\"theo\"", "text": "When she tucks her hair behind her ear, her fingers bring the parish kitchen up the stairs with her, the dark of the roux she finished at the five o’clock supper."},
+    "“Forty bowls,” she says. “Father Osei had three. He says it needed more pepper. He says that every time, so he can taste it again to make sure.”",
+    "Her eyes go to the pack on his knee, and the seal, and come back up to his face with nothing to say about it.",
+    "“You asked me under a tree,” she says. “In a sprinkler.”",
+    "“You said yes under a tree in a sprinkler.”",
+    "“I did.” She looks down the flight at the turn, where the light from the landing lies on the cinderblock, as if she can see the courtyard from here and is checking it over. “Saturday,” she says, trying it. “I have been asked to a great many things in my life, Jack, by a great many boys. I’ve never once been asked to dinner by one who was scared of me.”",
+    "“I’m not scared of you.”",
+    "“You put your donut down.”",
+    "“It was a good donut.”",
+    "“I know it was,” Lena says. “I saw what it cost you.”",
+    "She’s close enough that he can see the place where the lace pressed her hair flat this morning and the day hasn’t undone it, and a fleck of flour still at her hairline. He has sat beside her in a pew today, and stood with her under a tree with the water coming down, and not like this, on his step, with the building gone quiet around them.",
+    "She leans over and kisses him.",
+    "It’s short. Her mouth is warm from the stairs and the supper and tastes faintly of cayenne, and her hand has come to rest on the inside of his wrist, her fingertips over the pulse, as if she means to take it and report back. He has time to know it’s happening, and to know it all the way down, and then she has sat back on the step beside him with her chin up and her hands folded in her lap: matter closed.",
+    "“There. Now you’ve asked.”",
+    "He laughs. No sound comes out of it to speak of; it goes through him and into the step. She watches him do it, and looks satisfied, and then she puts her head down on his shoulder. Her hair is against his neck. The weight of her settles, all of it, one person leaning on another on a concrete step, and he sits very still so as not to waste any of it.",
+    "In a stairwell where a word said on two can be heard on four, they sit on one step and give it nothing to carry. Over the landing the tube light hums along, dim at the one end where it has been dim since October, and keeps the two of them lit."
+   ],
+   "end": true
+  }
+ }
+}

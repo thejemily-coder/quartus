@@ -2528,3 +2528,42 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Page 233.** Unverified; Researcher to confirm against an edition before any later episode cites it.
 - **s18a ending.** "He doesn't go down yet." Do not have anyone read it as Jack at Lena's door at 6:20 a.m.
 - **Carried and untouched:** Mémère's "le 19 mars" card; Mémère's cedar-chest ring; Luc's gas-leak file; `promised_skye_truth`; Cabazon postcard and swing print; Clovis holds the pack; Kevin's 35:15 sheet.
+
+### S2E19
+> Final revision (see continuity.md S2E19). Branch tags are `[scene | condition]`. Canon is Wed Feb 24 – Sun Feb 28, 2010. Everything said aloud in a room is heard by the people in it unless the entry says otherwise. None of the hidden canon appears on the page, in keys, cues or nextTime.
+
+#### Jack
+- **Learns:** [s02] Lena waited on her step; the Stations are Friday at seven. [s03] Skye removed the relationship status Wed 3:12 pm (he infers it was her; Gina and Ma know); [candor] Gina: "proud of u." [s04] only "Oh my God. *Lena.*" from Laney's laptop. [s05] "Since when?" / "Thursday."; infers Laney now knows what Theo has known since Texas. [s06] Ma's side: Frank knew and said nothing; Nonna's candle Sunday. [s07] Frank: "75-67... YOU OK."; Skye skipped class. [s08 | essays] his gets *See me.*; Lena's gets *Yes.* [s08h | `s2e19_thu=="hale"`] Hale's private word and the "side street" remark. [s09] the blog item (6:47 am Thu), heard with Kevin, Margot and Theo; Lena not invited. [s09a] Photo 3 shows Skye in his flannel. [s12a] Lena's "No." then her three instructions. [s13a] Kevin: he said leave it alone, at the light on Ocean Road. [s14] Gloria names the tablecloth place at the end of the wharf (jacket required). [s15] sees Skye filming for Sol. [s17a] Lena: "Not a Friday." / "Saturday." / "Then yes."
+- **Tells:** [s02] Lena: "No." (she is not all right); "Sol. Theo went." [s06] Ma: he ended it to Skye's face; there is someone else; nothing happened; [candor] Lena's name; [sincerity] "Friday"; [restraint] "Not yet". [s08h] Hale: where he wrote the paragraph (true by `s2e18_sun`). [s13b] Theo, Laney, Kevin, Margot: "Never. Not with anyone." [s18] Ma and Frank: he asked Lena to dinner. [s18a] Lena: the wharf place and the jacket.
+- **Does not know:** what Skye says to Sol while filming; why Skye removed the status beyond inference; what Lena told Celeste or the Broussards.
+
+#### Lena
+- **Hears:** [s02] "No." and "Sol. Theo went." [s07] Hale's lines in the room. [s08k | brick, `brick_thursday`] shows Jack her last page; [sincerity] he trades his. [s12a] says her own instructions. [s17a] Jack's dinner ask. [s18a] the wharf place and the jacket.
+- **Does not hear:** the porch (S2E18), the blog item in s09 (not invited), Ma's call, Theo's and Laney's talk in 412 before s13, Skye on the wharf.
+- **Tells:** [s02] Jack: the Stations at seven. [s12a] "No." (the van leaves on it), then three instructions. [s13a] the room: it was a no; why ("Because he waited too long the first time... one no, cher"). [s17a] "Saturday." [s18a] "There. That's for the donut."
+
+#### Skye
+- **Knows from earlier episodes:** the full S2E18 porch list. Nothing new reaches her on the page this episode.
+- **Does or shows:** [s03] removed the status Wed 3:12 pm (Jack's inference). [s07] skipped class; texts Frank-side only through Jack's reading (Frank's "YOU OK."). [s09a] Photo 3, in Jack's flannel. [s15] films for Sol on the wharf; Sol sees Jack, Skye does not.
+- **She does not know:** that Jack saw her on the wharf; the blog item; the "No." and the kiss; the dinner.
+
+#### Others
+- **Ma** — [s06] the ended-it, someone else, nothing happened; Lena's name only on [candor]; "Friday" on [sincerity]. [s18] learns he asked Lena to dinner; Nonna lit the candle; Frank: "Does she like the Browns" / "she's a Saints fan."
+- **Frank** — [s06] knew and said nothing. [s07] texts Jack the score and "YOU OK."
+- **Gina** — [s03 | candor] Jack's text; "proud of u."
+- **Laney** — [s04] "Oh my God. *Lena.*" [s05] knows what Theo has known since Texas. [s09a] sees Jack know the flannel and closes the laptop (and on [sincerity] "I know she would"). [s12-s13] in the van window; learns it was a no, then the instructions, then dinner.
+- **Theo** — [s09] hears the blog item (News Feed as his visible source). [s13] learns it was a no, the instructions, dinner. [s16 | theo] `theo_apartment`, "happy on a delay".
+- **Kevin / Margot** — [s09] hear the blog item. [s12] Kevin drives the van. [s13a] Kevin's "leave it alone" at the light on Ocean Road.
+- **Hale** — [s08c] Rome line or page-number variant by `s2e18_hale`/d2; "You give me a little cowardice" on rigor>=2 / d3 concede. [s08h] the private word, the "side street" remark, the true answer ("The curb got into it anyway.").
+- **Gloria / Rudy** — [s14] Gloria names the tablecloth place (jacket required); Rudy says "Terremoto" unprompted.
+- **Sol** — [s15] sees Jack on the wharf.
+- **Mrs. Fitch** — [s11], [s12] "Goodnight, you two", [s17a] the walk-out. Three appearances only.
+- **Nonna** — [s06, s18] *Poverina*; the candle Sunday, lit.
+
+#### LIVE RISKS carried out of S2E19
+- **Who knows what at the end.** Lena and Jack know the "No.", her three instructions, the kiss and the dinner; 412 (Theo, Laney, Kevin, Margot) knows it was a no, the instructions and dinner agreed; Ma and Frank know only that he asked her to dinner (Ma learns Lena's name earlier only on [candor]); Skye knows nothing of this episode; Sol saw Jack on the wharf.
+- **Branch-gated facts.** `s2e19_thu=="hale"` gates s08h; the s08h answer by `s2e18_sun`; s08c Rome line by `s2e18_hale=="wit" && s2e18_d2!="press"`; s17a asks differ by path but "Not a Friday." / "Saturday." / "Then yes." land on all three; `jack_fridays` (bread for both in s10); `maria_knows_lena_maybe` (s06).
+- **Counts to keep.** Mrs. Fitch exactly three; courtroom figures at three; Stations Friday at seven; Skye's status removed Wed 3:12 pm; blog item 6:47 am Thursday; "very familiar"; Veuve stays in 412's fridge until "a yes without an asterisk".
+- **Wardrobe and props.** Jack's oxford (Skye has the flannel); the pack sealed in the Carhartt; Lena's hands bare in s13; Jack's red Team Canada sweater in s18; Laney's quilted pink robe.
+- **Skye.** Her thread is open: the wharf filming for Sol, the flannel photo, the status removal. Do not resolve offstage.
+- **Carried and untouched:** page 233 (Researcher to verify); Mémère's "le 19 mars" card; Mémère's cedar-chest ring; Luc's gas-leak file; `promised_skye_truth`; Cabazon postcard and swing print; Clovis holds the pack (eight left); Kevin's 35:15 sheet; the Wes line.

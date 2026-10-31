@@ -1,0 +1,715 @@
+{
+ "scenes": {
+  "s07": {
+   "slug": "THURSDAY · 11:00 AM · MORRO HALL 1100 — THE BACK ROW",
+   "set": {
+    "skye_missed_ocean": true
+   },
+   "body": [
+    "On the Morro steps the RAZR goes off against his hip, twice, the second buzz before he has the first one open. The rain has cleared out overnight and left the sky scrubbed hard and blue over the Channel, every puddle on the quad holding a piece of it, and the eucalyptus along the walk is still letting go of last night in fat single drops on whoever passes under.",
+    {
+     "type": "sms",
+     "from": "Dad",
+     "text": "75-67. AT PENN STATE.",
+     "time": "10:51 AM"
+    },
+    {
+     "type": "sms",
+     "from": "Dad",
+     "text": "YOU OK.",
+     "time": "10:51 AM"
+    },
+    "Last night’s score, a day late. And the other thing, same capitals, sent the same minute.",
+    "He holds the key down for capitals — Frank reads nothing else — and sends it standing on the third step with people going round him on both sides.",
+    {
+     "type": "sms",
+     "from": "Jack",
+     "text": "IM GOOD.",
+     "time": "10:52 AM"
+    },
+    "Morro 1100 is filling the way it fills on a Thursday, from the bottom up, laptops coming open on a hundred News Feeds, coffees going down on the floor between sneakers. Dr. Fenner is at the board already with the chalk, drawing a row of little humps that march off the right-hand edge of it. Jack climbs to the back row under the exit sign.",
+    "Her seat is beside his. The fold-down desk is folded up.",
+    "On Tuesday she was somewhere over California, a window seat and a flight number, and the folded desk was the airline’s doing. She’s been back since Tuesday afternoon. She’s down the bluff on Del Playa right now, in the house with the yellow boots by the door, a walk from this chair. She has missed Fenner before — for a meeting in LA, for a fitting, for a table read — and every one of those came with a city. He sets his bag on the floor at his own feet and leaves her desk the way it is.",
+    "From the back row you can see every screen in the room. A boy three tiers down is drafting a fantasy baseball team in February. Two girls in the middle are sharing one pair of earbuds, a bud each, heads tipped together. Fenner taps the chalk twice on the board and the quiet goes up the tiers from the front, row by row, till it reaches the exit sign. “Partners are partners till May,” he says, as he says every week. “No trades. I get requests.”",
+    "“Swell,” Fenner says, and underlines the humps. “Which is what a wave turns into once it gets out from under the wind that made it.” He does fetch, the stretch of open water the wind has to work with, and duration, how long it blows, and then he turns from the board with the chalk up, pleased with the ocean. “Dispersion. Once they’re loose, the long ones outrun the short ones. By the time it gets to your beach it’s sorted itself, longest first. The sea is tidier than any of you.”",
+    "“Somewhere off the Aleutians right now,” he says, “there’s a low the size of Texas leaning on the water. You won’t feel a thing. Next week it’ll stand up off the Point at six feet on a sunny morning with no wind at all, and every surfer in this room will cut my class.” A laugh goes round the tiers, and two boys in board shorts in the fourth row look at each other with real hope.",
+    "Jack writes *fetch* in the margin — the distance the wind gets to blow with nothing in its way — and puts a box around it, and then sits with the pen on the box for most of a page of Fenner.",
+    "At twenty to twelve Fenner frees the tiers for partner conferences, sign-up sheet at the front, and the room comes apart into twos, chairs squealing round to face each other up and down the rows.",
+    "“Mr. Costigan.” Up the tiers from the lectern, cheerful, the chalk still in his hand. “Your partner?”",
+    "“Not today.”",
+    "“Tuesday, then. Put yourselves down.” He’s already turning to a girl in the front row who wants to know about Hawaii, and Jack hears him start on it, delighted with her: a swell can come ashore on a dead-calm morning, he’s telling her, days after the storm that made it, a thousand miles off, and the people on the beach never felt a lick of the wind.",
+    "The sign-up sheet comes hand to hand along the rows and somebody passes it into the back. The term pairs are numbered down the margin in Fenner’s blocky hand. Forty-one is *Costigan / Callender*, and the line for Tuesday beside it is blank. Jack holds the clipboard for a while with the pen on its string between his fingers. Then he passes it on down the row with the line the way he found it.",
+    "The handouts are on the table by the back door, under the exit sign.",
+    {
+     "type": "doc",
+     "title": "OCEANOGRAPHY 1 — Thursday, February 25",
+     "text": "SWELL. Waves that have outrun the wind that made them. Fetch · duration · dispersion. A swell can arrive days after its storm, and a thousand miles from it. Term-project partner conferences: sign up at the front."
+    },
+    {
+     "if": "s2e18_handout==\"candor\"",
+     "text": "In the back of his notebook, behind his own, is Tuesday’s — hers, the plunging breaker with its ruled curl, and across the top in his small square print, *refraction; shoaling; the bottom comes up; the point gathers it; Thurs.* He hasn’t taken it out."
+    },
+    {
+     "if": "s2e18_handout==\"sincerity\"",
+     "text": "In the back of his notebook, behind his own, is Tuesday’s — hers, clean, the plunging breaker with its ruled curl, taken as he always took them."
+    },
+    {
+     "if": "s2e18_handout!=\"candor\" && s2e18_handout!=\"sincerity\"",
+     "text": "There’s nothing of Tuesday’s in the back of his notebook. He left hers on the stack."
+    },
+    "He stops at the stack."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Take hers too. Write across the top what she missed, and keep the two together.*",
+     "set": {
+      "s2e19_folder": "sincerity",
+      "skye_folder": true,
+      "trait.sincerity": "+1"
+     },
+     "key": "When Skye’s seat stayed empty in Oceanography, you took her handout, wrote across the top what she’d missed, and kept it with yours for after.",
+     "response": [
+      "He takes two. Standing at the table he writes it small in her margin, Fenner’s three words off the board — *fetch · duration · dispersion* — and under them *Thurs. 2/25*, so she’ll know which one it was.",
+      "The two handouts go into the back of the notebook together, hers behind his, and the notebook shuts on them."
+     ],
+     "goto": "s08"
+    },
+    {
+     "tag": "Candor",
+     "text": "*Write her name on one and leave it in Fenner’s tray for absentees.*",
+     "set": {
+      "s2e19_folder": "candor",
+      "skye_handout_tray": true,
+      "trait.candor": "+1"
+     },
+     "key": "When Skye’s seat stayed empty in Oceanography, you wrote her name on a handout and left it in the tray for absentees, where she could find it without you.",
+     "response": [
+      "He takes one off the top and prints her name across it in block letters, SKYE, and nothing under it.",
+      "The tray for absentees is a wire basket on the corner of the table, three or four handouts in it already with other people’s names. He lays hers on top, face up, so it’s the first one there."
+     ],
+     "goto": "s08"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Take only your own.*",
+     "set": {
+      "s2e19_folder": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "When Skye’s seat stayed empty in Oceanography, you took only your own handout and left hers to her.",
+     "response": [
+      "He takes his own and folds it into the notebook. Hers stays on the stack.",
+      "Going out under it, he hears the exit sign hum over the back row, over her folded desk."
+     ],
+     "goto": "s08"
+    }
+   ]
+  },
+  "s08": {
+   "slug": "THURSDAY · 1:05 PM · HOLLIS HALL, 302 — DIRECT ADDRESS",
+   "duel": "reticence",
+   "set": {
+    "rel.lena.heat": "+1",
+    "duel.reticence.lena": "+1"
+   },
+   "body": [
+    "There’s no sun on this side of Hollis after one, and 302 gets what comes up off the water instead, a cool, even, unforgiving light that finds every ring a coffee cup ever left on the oak. The same twelve in the same chairs: Jack at the door end under the clock, Lena at the window end, Caleb beside Jack with his pens laid out in a row by color, Yusuf beside Caleb, the two sophomores from the window side, Evan at the door with the roster on its clipboard.",
+    "Hale comes in with his coffee and the soft paperback and takes his place halfway down the side, where he has to turn his head for either end. “Percy,” he says. “Still for the travellers.” He opens it to the back and doesn’t look at it. There’s a high color along his cheekbones today, and a little more Yorkshire than usual in his vowels.",
+    "“Percy will not show us one prayer of Binx Bolling’s. Not a Mass, not a sentence. Honesty or cowardice? I said on Monday I’d never decided. I’d like it decided by two-thirty.”",
+    "The table does what it does at the top of the hour, settles, waits to see who’ll go. Caleb uncaps the green.",
+    "From the window end, and not to the chair: “Youngstown.”",
+    "Every head at the table comes round. They go to the window end first and then they come up the oak to the clock, and Caleb, before he has finished turning, looks at Hale to see whether Hale has seen. Hale has. He turns a page he isn’t reading.",
+    "Lena has her sleeves pushed up to the elbow and her pencil laid across the open book like a bar across a door, and she’s looking straight up the table at him. The length of Hale’s oak is in the way, and Hale, and Caleb’s pens, and she doesn’t appear to have noticed any of it.",
+    "“You’re going to tell me he’s being honest,” she says. “So let me tell you what he did. A Catholic man writes a Catholic hero — a man who goes looking for God up and down Elysian Fields — and in two hundred and some pages he won’t let that hero say one word to God where the rest of us can hear it. Not a Hail Mary at a red light. Not a Mass. Not a sentence.” She lifts the pencil off the book. “Now. When a client won’t take the stand, every lawyer at Tulane and Broad knows exactly what the jury does with that. They don’t call it humility. They go out, and they come back in twenty minutes. If you believe a thing, you say it where people can hear it, or the people who were listening pay for your silence. Percy made the reader pay. That’s cowardice, and he had the nerve to dress it up as good manners.”",
+    "Jack sits back in his chair. He has missed this more than cigarettes.",
+    "He opens Hale’s copy to the back."
+   ],
+   "choices": [
+    {
+     "tag": "Press",
+     "text": "“He shows it, Miss Broussard. He just won’t narrate it. Read the car.”",
+     "set": {
+      "s2e19_d1": "press",
+      "duel.reticence.rigor": "+1",
+      "rel.lena.friction": "-1"
+     },
+     "response": [
+      "Her book is open to the last pages before he’s finished the sentence. She didn’t have to look for the place.",
+      "Her pencil is already moving."
+     ],
+     "goto": "s08a"
+    },
+    {
+     "tag": "Reframe",
+     "text": "“It’s manners, Miss Broussard. Ash Wednesday’s Gospel: go to your room and shut the door.”",
+     "set": {
+      "s2e19_d1": "reframe",
+      "duel.reticence.rigor": "+1"
+     },
+     "response": [
+      "One of the window-side sophomores actually has a New Testament in her bag, and gets it out, and thumbs through Matthew with the table watching her.",
+      "Caleb writes MATTHEW 6 in his margin in green and draws a box around it."
+     ],
+     "goto": "s08a"
+    },
+    {
+     "tag": "Riposte",
+     "text": "“You want him on the stand. He’s not on trial, Miss Broussard. He’s a moviegoer. They don’t talk during the picture.”",
+     "set": {
+      "s2e19_d1": "riposte",
+      "duel.reticence.wit": "+1"
+     },
+     "response": [
+      "The window-side sophomores laugh, both of them, and one of them says “*Oh*,” to her neighbor.",
+      "At the far end of the oak, Lena’s mouth is losing a fight with itself."
+     ],
+     "goto": "s08a"
+    },
+    {
+     "tag": "Concede",
+     "text": "“The reader does pay, Miss Broussard. I read the epilogue three times looking for it.”",
+     "set": {
+      "s2e19_d1": "concede",
+      "duel.reticence.heart": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "She looks at him down the oak, and goes on looking after the argument has finished with it, until Caleb glances from one end of the table to the other to see what he’s missed.",
+      "“Three?”",
+      "“Three.”"
+     ],
+     "goto": "s08a"
+    }
+   ]
+  },
+  "s08a": {
+   "slug": "THURSDAY · 1:25 PM · HOLLIS 302 — THE EPILOGUE",
+   "duel": "reticence",
+   "set": {
+    "duel.reticence.lena": "+1"
+   },
+   "body": [
+    {
+     "if": "s2e19_d1==\"press\"",
+     "text": "“Fine, he shows it in the car. Then let’s get in the car.”"
+    },
+    {
+     "if": "s2e19_d1==\"reframe\"",
+     "text": "“Manners. Ash Wednesday. He quotes Matthew at me.”"
+    },
+    {
+     "if": "s2e19_d1==\"riposte\"",
+     "text": "“They don’t talk during the picture. Lord. He’s been saving that.”"
+    },
+    {
+     "if": "s2e19_d1!=\"press\" && s2e19_d1!=\"reframe\" && s2e19_d1!=\"riposte\"",
+     "text": "“The man conceded on the first round. Somebody check him for a fever.”"
+    },
+    "She turns to the end of the book without hunting for it. “The epilogue. Lonnie’s dead. And the little ones come out to the car with their questions for Binx, and the big one is this: on the last day, when everybody’s raised up, will Lonnie still be in his wheelchair?” She sets her pencil down on the page. “And Binx tells them no. Just like that. No. He answers a child. A child at a car window gets the creed, and the reader gets a shrug. That’s the evasion. He had the answer all along, and he gave it to the one person in the book who couldn’t write it down.”",
+    "He can see her hands today. It’s the first thing he notices, before he notices he’s noticing it: the pencil, which she holds like a cigarette when she’s winning, the thumb running down the edge of the page, a strand of hair going round and round one finger of the other hand without her knowing it’s there. She has been coming at him down the oak for twenty minutes and it’s better than anything on television.",
+    "“He gives it to the one who —” Jack says.",
+    "“— asked, I know, I read the same —”",
+    "“— so it isn’t a shrug. It’s got —”",
+    "“— an address on it,” she says, “and it isn’t ours,” and at the door Evan’s pen clicks once.",
+    "“And don’t you tell me that’s humility,” she says, picking it straight up again. “Humility’s saying the thing and then getting out of the way. Percy stays in the way and says nothing and calls it modesty. On my street we call it coy.”",
+    "From halfway down the side, to the ceiling, Hale says, “Don’t stop on my account.”",
+    "Jack has the page open in Hale’s copy. In the margin beside the children’s question, in the small upright pencil, Hale has written one word, *Well*, with a period after it, which is more than he wrote beside anything else in the epilogue and less than Jack would like.",
+    "The table has stopped writing. Caleb has the green pen held up by his ear, forgotten, and he turns from one end of the oak to the other and back with his mouth a little open, as happy as Jack has ever seen a person look in a chair. Hale has put his own pencil down. He isn’t refereeing. He doesn’t appear to think he’s needed."
+   ],
+   "choices": [
+    {
+     "tag": "Press",
+     "text": "“He answers the one who asked, Miss Broussard. We didn’t ask. We were reading over his shoulder.”",
+     "set": {
+      "s2e19_d2": "press",
+      "duel.reticence.rigor": "+1"
+     },
+     "response": [
+      "She opens her mouth to come back at him and shuts it again.",
+      "She looks at the clock over his head instead of at him, thinking."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "tag": "Riposte",
+     "text": "“If Binx gave the reader a speech, you’d grade it. You’d give it a B.”",
+     "set": {
+      "s2e19_d2": "riposte",
+      "duel.reticence.wit": "+1",
+      "rel.lena.heat": "+1"
+     },
+     "response": [
+      "“I would *not* —” she says, and the table laughs, because she would.",
+      "Down the oak, very quietly, Yusuf: “B-minus.”"
+     ],
+     "goto": "s08b"
+    },
+    {
+     "tag": "Concede",
+     "text": "“It is a shrug, for us. He made me want the answer and then didn’t give it to me.”",
+     "set": {
+      "s2e19_d2": "concede",
+      "duel.reticence.heart": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "response": [
+      "She sits back. It’s the face she makes when somebody tells her the truth in the middle of an argument: half pleased, half sorry about the waste of a good fight.",
+      "She writes something in her margin and doesn’t say what."
+     ],
+     "goto": "s08b"
+    },
+    {
+     "tag": "Reframe",
+     "text": "“It’s the only honest place to put it, Miss Broussard — in the car, with whoever’s in it.”",
+     "set": {
+      "s2e19_d2": "reframe",
+      "duel.reticence.rigor": "+1"
+     },
+     "response": [
+      "“With whoever’s in it,” she says back to him, slowly, weighing it.",
+      "Under the middle window the radiator knocks and gives up."
+     ],
+     "goto": "s08b"
+    }
+   ]
+  },
+  "s08b": {
+   "slug": "THURSDAY · 1:40 PM · HOLLIS 302 — THE BACK SEAT",
+   "duel": "reticence",
+   "body": [
+    {
+     "if": "s2e19_d2==\"press\" || s2e19_d2==\"reframe\"",
+     "text": "“All right. To whoever asked.”"
+    },
+    {
+     "if": "s2e19_d2==\"riposte\"",
+     "text": "“A *B*. I’d have given it a B-plus, and you know it.”"
+    },
+    {
+     "if": "s2e19_d2==\"concede\" && s2e19_d1==\"concede\"",
+     "text": "“Don’t you agree with me twice in one afternoon, I’ll lose my footing.”"
+    },
+    {
+     "if": "s2e19_d2==\"concede\" && s2e19_d1!=\"concede\"",
+     "text": "“Don’t you go agreeing with me in Hale’s room, I’ll lose my footing.”"
+    },
+    "Twenty to two. Hale is looking at the ceiling. He listens from up there when he’s enjoying himself.",
+    "Lena lays her hand flat on the open book. “But if that’s Percy’s rule,” she says, “— a man says the true thing only to whoever happens to be in the car with him — then the rest of us had better get in the car. And that’s an imposition, and Percy knows it. He sits up front with the answer in his lap and makes the reader ride in the back the length of the book, waiting for him to turn around. Silence isn’t modest. Silence makes the reader do the work the writer wouldn’t. If I want to know what Binx believes, I have to climb in the back seat with a carload of children and wait for one of them to ask? That’s a cover charge, and Percy’s working the door.”",
+    "Jack thinks of Frank in the Silverado. Frank, who has never volunteered a true thing at the kitchen table in his life, and who stopped in traffic on the Market Street bridge, with the wipers going, will answer anything you ask him straight, so long as you’re in the truck and it’s just you. Everything Jack knows about his father he learned from the passenger seat. He doesn’t know if that’s Percy’s point or his own.",
+    "She waits for him. She has her chin up and the pencil going end over end under her fingers, and the table waits with her, every one of them happier watching this than doing anything else available at a quarter to two on a Thursday.",
+    "She has him in a corner, and from the look of her she knows it, and she looks sorry about it for almost no time at all.",
+    "Down the oak the sophomores are writing *imposition*. Caleb has started writing again, very fast, the green pen going and his tongue in the corner of his mouth. Jack turns Hale’s copy over in his hands, the spine soft as cloth, every page of the epilogue penciled up both margins in the small upright hand, and none of it any help to him."
+   ],
+   "choices": [
+    {
+     "tag": "Press",
+     "text": "“Then the book’s honest. It puts us in the back seat and makes us listen.”",
+     "set": {
+      "s2e19_d3": "press",
+      "duel.reticence.rigor": "+1"
+     },
+     "key": "In Hale’s seminar, arguing with Lena straight across the table again, you told her Percy’s silence was honest: it puts the reader in the back seat and makes him listen.",
+     "response": [
+      "She doesn’t concede it. She nods at him, slowly, the nod she gives a point she plans to steal later and use better.",
+      "Beside him Caleb has gone beatific."
+     ],
+     "goto": "s08c"
+    },
+    {
+     "tag": "Riposte",
+     "text": "“Miss Broussard has just argued herself into a minivan.”",
+     "set": {
+      "s2e19_d3": "riposte",
+      "duel.reticence.wit": "+1"
+     },
+     "key": "In Hale’s seminar, arguing with Lena straight across the table again, you told her she’d argued herself into a minivan.",
+     "response": [
+      "She laughs. It comes straight down the oak at him, Hale’s room or no Hale’s room, and she doesn’t try to put it anywhere.",
+      "When she has it back she points her pencil at him like a gavel."
+     ],
+     "goto": "s08c"
+    },
+    {
+     "tag": "Concede",
+     "text": "“Then it’s cowardice. A little. He could’ve rolled the window down.”",
+     "set": {
+      "s2e19_d3": "concede",
+      "duel.reticence.heart": "+1",
+      "rel.lena.trust": "+1"
+     },
+     "key": "In Hale’s seminar, arguing with Lena straight across the table again, you gave her the point: a little cowardice — Percy could have rolled the window down.",
+     "response": [
+      "She stares at him down the length of the oak.",
+      "“I’m going to need the court reporter to read that back.”"
+     ],
+     "goto": "s08c"
+    },
+    {
+     "tag": "Reframe",
+     "text": "“It’s neither one. It’s a promise. He’s telling you there’s an answer, and making you go ask for it.”",
+     "set": {
+      "s2e19_d3": "reframe",
+      "duel.reticence.rigor": "+1"
+     },
+     "key": "In Hale’s seminar, arguing with Lena straight across the table again, you told her Percy’s silence was a promise: there’s an answer, and you have to go and ask for it.",
+     "response": [
+      "The table goes quiet. Even Caleb’s pen stops.",
+      "At the window end Lena looks down at her page, and very quietly, to it, says, “Huh.”"
+     ],
+     "goto": "s08c"
+    }
+   ]
+  },
+  "s08c": {
+   "slug": "THURSDAY · 1:50 PM · HOLLIS 302 — PARLIAMENT DISSOLVED",
+   "duel": "reticence",
+   "set": {
+    "essays_back": true,
+    "rel.hale.warmth": "+1"
+   },
+   "body": [
+    {
+     "if": "duel.reticence.rigor>=2",
+     "text": "At the window end Lena puts her pencil down across the book. “Fine. He’s honest.” She lets the table wait for the rest of it. “He’s honest the way a man is who’d rather be misunderstood than overheard.” It’s his point. She has made it better than he did, and the sophomores are writing it down in her words."
+    },
+    {
+     "if": "duel.reticence.rigor<=1 && duel.reticence.heart>=3",
+     "text": "Lena sits up very straight. “Oh, he *concedes*. Three times. Somebody write down the time.” She is delighted with him, and it’s all over her, the mouth, the pencil going end over end through her fingers. Caleb, helpfully, writes down the time."
+    },
+    {
+     "if": "duel.reticence.rigor<=1 && duel.reticence.heart>=2 && duel.reticence.heart<=2",
+     "text": "Lena sits up very straight. “Oh, he *concedes*. Twice. Somebody write down the time.” She is delighted with him, and it’s all over her, the mouth, the pencil going end over end through her fingers. Caleb, helpfully, writes down the time."
+    },
+    {
+     "if": "duel.reticence.rigor<=1 && duel.reticence.heart<=1",
+     "text": "Hale brings his eyes down off the ceiling. “Has it occurred to either of you,” he says, “that Percy simply didn’t know what Binx would say?” Lena opens her mouth, and so does Jack, and the question lies there on the oak, and neither end of the table can pick it up."
+    },
+    "Hale closes the paperback on his thumb. He looks at the window end, and then he turns his head the long way round and looks at the door end, taking his time about both.",
+    {
+     "if": "s2e18_hale==\"wit\"",
+     "text": "“I see Parliament has dissolved itself. The Lords and the Commons on one bench, shouting at each other directly. It’s grossly unconstitutional. Carry on.” He opens the book again. “Mr. Costigan will no doubt inform Rome.”",
+     "else": "“I see Parliament has dissolved itself. The Lords and the Commons on one bench, shouting at each other directly. It’s grossly unconstitutional. Carry on.”"
+    },
+    "Caleb writes it down word for word, and under it *grossly*, and underlines that. At the window end Lena has put her face into her hand, and her shoulders are going. Jack looks hard at the grain of the oak.",
+    "That’s the only thing he says about it. He gives the rest of the hour to Yusuf, who has been waiting since Monday to talk about the aunt.",
+    "At ten past two the essays come back down the oak. Jack’s comes hand to hand from Caleb — THE SECOND LINE — and he turns to the last page. Nothing in any margin. No grade. Under the last line, in the small upright hand that runs up every page of Hale’s Percy: *See me.*",
+    "It’s pencil, and small, and somehow it takes up more of the page than anything he typed. Caleb leans over to look, sees it, and sucks air in through his teeth.",
+    "Lena’s goes down the window side. She reads her last page where she sits. Something on it makes her mouth go small and pleased, and she puts her thumb over it so the sophomore beside her can’t see, and then she folds the essay in half the long way and puts it in her bag, and she doesn’t show him. He doesn’t ask.",
+    "At half past two the room comes apart, chairs going back, the sophomores in their coats before Hale has finished his sentence about Monday. Two things happen at once.",
+    "At the door, Hale, not looking up from his bag: “Mr. Costigan. A word.”",
+    "And from the head of the stairs, already going, Lena, to him: “I’m going to the Brick.”"
+   ],
+   "choices": [
+    {
+     "tag": "Hale",
+     "text": "*Stay. “Professor.”*",
+     "set": {
+      "s2e19_thu": "hale"
+     },
+     "response": [
+      "“Professor.”",
+      "Her steps go on down the stairs without him. Hale puts his bag down again."
+     ],
+     "goto": "s08h"
+    },
+    {
+     "tag": "The Brick",
+     "text": "*Go down the stairs after her.*",
+     "set": {
+      "s2e19_thu": "brick"
+     },
+     "response": [
+      "Behind him, to the empty doorway, Hale says, “Another time, then.”",
+      "He doesn’t sound put out. He sounds like he had money on it."
+     ],
+     "goto": "s08k"
+    }
+   ]
+  },
+  "s08h": {
+   "slug": "THURSDAY · 2:35 PM · HOLLIS HALL, 314",
+   "set": {
+    "hale_word": true,
+    "rel.hale.trust": "+1"
+   },
+   "body": [
+    "Hollis 314 is at the far end of the third floor past the department copier, and its door stands open about the width of a dog. Inside it is mostly books: books in towers on the floor, books shelved two deep with the back row showing over the heads of the front, books on the one chair that isn’t Hale’s, which Hale clears by setting them on the floor as a tower of their own. Berkeley is asleep on the rug in the only square of sun, long and white at the muzzle, his ribs going up and down, and being deaf, he doesn’t stir when they come in. One ear has folded itself inside out on the rug. The sash window is propped open on a fat paperback Housman, and the room smells of dog and old paper and, faintly, last night.",
+    "Hale drops into his own chair. His reading glasses are on top of his head, where he has evidently lost them. There’s an old red half-moon of wine on his left cuff, laundered and ironed and still there.",
+    "“Sit, if you can find the chair. Give it here.”",
+    "Jack gives it to him. Hale turns to the last page and reads it to himself, not aloud, the way he reads everything at the table, as though somebody might charge him for the words.",
+    "“I don’t write compliments in margins,” he says. “Students frame them. Hence *See me*.” He turns back to the first page and puts his finger on the top line. “*The band goes out slow and comes back loose.* I liked that. It writes a cheque. For four thousand words you try to cash it with cleverness, and then on the last page you simply pay.” He turns to the end again and taps the last paragraph. “The waiting. The second line goes round the block, and the people on the curb stand there, and it comes back, loose. This is the only paragraph in four thousand and twelve words in which you were not performing for me, Mr. Costigan. You were standing on a curb. Somewhere on the last page you forgot I existed, and the prose improved out of all recognition. You should be ashamed of the rest of it. It’s very clever. I could have written it, and that is not a compliment.”",
+    "That paragraph is the one he typed in one go at half past five on Sunday and never read back. He doesn’t say so.",
+    "“The second line,” Hale says. “Remind me. The people who follow the band.”",
+    "“They’re not in the parade. They just come. They fall in behind the brass and go where it goes.”",
+    "“Yes, I know what it is, Mr. Costigan, I’ve been to New Orleans. I was asking whether you did.” He looks at the last page again. “Where did you write it?”",
+    "“On a curb. In New Orleans.”",
+    "“Yes,” Hale says. “One can tell. There’s grit in it.” He turns the page to the light. “You didn’t read it over. Don’t tell me. There’s a comma missing in the third line you’d have put in if you had. Leave it out. It’s better without.”",
+    "He hands the essay back across the desk. For a moment he isn’t looking at Jack, or at the page; he’s looking past Jack’s shoulder at the window, where there’s nothing but the top of a eucalyptus and the sky behind it.",
+    "“In my experience it doesn’t always come back round the block, Mr. Costigan. Sometimes it turns off down a side street, and that’s the last you hear of the trumpets.”",
+    "And at once, to the rug: “Berkeley. Stop that.”",
+    "Berkeley, asleep in his patch of sun, goes on doing nothing whatsoever.",
+    "Hale picks a pen up off the desk and puts it down somewhere else. “Well? I haven’t got all afternoon. The dog has a constitutional.”"
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Thank you, Professor.”",
+     "set": {
+      "s2e19_hale": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Don’t thank me. It’s unbecoming in a Catholic. Go away.”",
+      "On the rug, at nothing anybody can see, Berkeley’s tail thumps the floor one time."
+     ],
+     "goto": "s09"
+    },
+    {
+     "tag": "Wit",
+     "text": "“So that paragraph’s an A.”",
+     "set": {
+      "s2e19_hale": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“That paragraph is a paragraph. The rest is a B-plus and a great deal of brass.”",
+      "He finds his glasses on top of his head, takes them down, and puts them on to look at Jack properly for the first time all afternoon."
+     ],
+     "goto": "s09"
+    },
+    {
+     "tag": "Candor",
+     "text": "“Did it? Come back?”",
+     "set": {
+      "s2e19_hale": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Hale doesn’t answer. He gets up and takes the dog’s lead down off the hook on the back of the door.",
+      "“Mind the second step on your way down, Mr. Costigan. It’s loose.”"
+     ],
+     "goto": "s09"
+    }
+   ]
+  },
+  "s08k": {
+   "slug": "THURSDAY · 3:00 PM · THE BRICK, EIGHTH FLOOR — THE CHAIR",
+   "set": {
+    "brick_thursday": true,
+    "rel.lena.warmth": "+1"
+   },
+   "body": [
+    "Somebody on the eighth floor of the Brick is highlighting an entire textbook, and the felt tip squeaks on every line, three rows over, all afternoon. Her carrel is the one by the east window, where the water shows between two roofs. Her coat is over the back of her chair and her shoes are off under the desk, Hale’s Percy open in front of her and a legal pad beside it, and the chair next to hers is pushed in.",
+    {
+     "if": "s2e18_sun==\"brick\"",
+     "text": "He pulls it out and sits down in it — the chair beside hers, on the floor where on Sunday he typed two rows back with his back to her empty one — and she reaches over without a word and moves her bag off the corner of the desk so his elbow has somewhere to go.",
+     "else": "He pulls it out and sits down in it — his first time up on her floor since the fall — and she reaches over without a word and moves her bag off the corner of the desk so his elbow has somewhere to go."
+    },
+    "“Didn’t Hale want a word?” she says, still reading.",
+    "“He said another time.”",
+    "“He’ll keep.” She turns a page. Under the desk her socks don’t match, one green, one with a brown pelican on it, and she has them hooked round the legs of her chair.",
+    "They study. That is, she studies, and he opens his Percy to the epilogue and reads the same half page about the children at the car window until he could say it back, and every so often her pencil stops and so does his reading, and he keeps his eyes on Binx.",
+    "Once her pen dies, and she reaches over blind and takes his, writes a line with it, and puts it back by his hand pointing the way it was. Out past her, the platforms stand off in the Channel with their lights not on yet, and the water between the two roofs goes from blue to a hard bright tin as the afternoon comes round. Twenty minutes of that. Then she takes the last page of her essay off the top of the pile and slides it across to him, face up, and goes straight back to her legal pad and underlines something that is already underlined.",
+    "THE NEUTRAL GROUND, the last page. In the margin, in Hale’s pencil, a single tick and one word, which Jack reads upside down before he turns it the right way round: *Yes.*",
+    "It’s about the median down the middle of St. Charles, the strip with the streetcar tracks in it, where New Orleans stands to watch the parades go by. He reads to the end. The last sentence is in her voice so exactly that he can hear her say it across a table with a fork in her hand:",
+    "*On the neutral ground nobody owns the street: you stand in the middle with your mother’s folding chair and your cousin’s ladder and a cooler of Barq’s, the parade on one side of you and the rest of New Orleans on the other, and for one afternoon a city that agrees about nothing agrees about where to stand.*",
+    "When he looks up she’s found his last page, sticking out of his Percy where he shoved it, and she has it turned so she can read the bottom. *See me.* She laughs without a sound, the library laugh, all shoulders, and has to look out the window at the two roofs till it passes."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Hand her your last page in trade.*",
+     "set": {
+      "s2e19_brick": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "On the eighth floor of the Brick you sat in the chair beside Lena’s, read the last page of her essay, and gave her yours in trade.",
+     "response": [
+      "She reads it. He watches her get to the last paragraph, the second line going round the block and coming back loose, and her pencil, which goes everywhere with her, doesn’t move.",
+      "When she’s done she turns his page face down on the desk and leaves her hand on it, and goes back to her own book without taking it away."
+     ],
+     "goto": "s09"
+    },
+    {
+     "tag": "Candor",
+     "text": "“It’s better than mine.”",
+     "set": {
+      "s2e19_brick": "candor",
+      "trait.candor": "+1"
+     },
+     "key": "On the eighth floor of the Brick you sat in the chair beside Lena’s, read the last page of her essay, and told her it was better than yours.",
+     "response": [
+      "“I know.” She tips her head at the page sticking out of his Percy. “Yours made him write *See me*.”",
+      "“That’s not a compliment.”",
+      "“From Hale it’s a sonnet.”"
+     ],
+     "goto": "s09"
+    },
+    {
+     "tag": "Wit",
+     "text": "“You wrote a whole page about standing in the middle of the street.”",
+     "set": {
+      "s2e19_brick": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "On the eighth floor of the Brick you sat in the chair beside Lena’s, read the last page of her essay, and told her she’d written a whole page about standing in the middle of the street.",
+     "response": [
+      "“Best place to stand.” She takes the page back and squares it on her pad. “You see both sides go by.”",
+      "Out past her shoulder, between the two roofs, the light is coming off the water in pieces."
+     ],
+     "goto": "s09"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Read it twice. Hand it back. Say nothing.*",
+     "set": {
+      "s2e19_brick": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "On the eighth floor of the Brick you read the last page of Lena’s essay twice, in the chair beside hers, and handed it back without a word.",
+     "response": [
+      "He goes back to the top and reads it again, slower. She watches him do it with her chin on her hand and makes no move to stop him.",
+      "When he holds it out a library cart squeaks past the end of the row, and she takes the page."
+     ],
+     "goto": "s09"
+    }
+   ]
+  },
+  "s09": {
+   "slug": "THURSDAY · 9:40 PM · DELGADO HALL, 4TH FLOOR LOUNGE — SOURCES SAY",
+   "set": {
+    "tabloid_read": true,
+    "rel.laney.warmth": "+1"
+   },
+   "body": [
+    "The lounge TV is on the Olympics with the sound off, a skater in red going round a white rink under a black roof, arms out, in perfect silence. Jack came in for the vending machine. He has a bag of pretzels in his hand and he has not been permitted to leave.",
+    "Laney is perched on the arm of the couch with her laptop open on her knees and a pair of tortoiseshell reading glasses low on her nose that she does not need and has never needed, which is the point of them. She bought them at the CVS on Ocean Road in October for a Sarah Palin costume and has been waiting four months for an occasion. Theo is cross-legged on the carpet in the blazer, his back against the couch. Kevin has the armchair and his organic chemistry and a highlighter, and the air of a man who was here first, and was, and would like that noted. Margot is at the far end of the couch with her notebook on her knee.",
+    "“Lena’s at the Brick,” Laney says, before anybody asks. “She’d make me stop, and she’d be right, so she’s not invited.” She pushes the glasses up her nose with one finger. “Ladies and gentlemen of the fourth floor. Our next item comes to us from the internet, where it was posted at six forty-seven this morning by a woman who has never once been right about anything in her life. She’ll be competing tonight in the category of Breaking News. Please hold your applause.”",
+    "“I’m studying,” Kevin says.",
+    "“You’re *present*, Kevin. That’s all the pageant requires.”",
+    "Not a soul was going to applaud. Theo gives her a drumroll on his thighs anyway.",
+    {
+     "type": "doc",
+     "title": "A celebrity blog — Thursday, 6:47 AM",
+     "text": "SWEETWATER’S SKYE CALLENDER SINGLE AGAIN?! MYSTERY GUY OUT\n\nSpotted — and spotted ALONE! *Sweetwater* sweetheart Skye Callender, 19, quietly went from “in a relationship” to nothing at all on Facebook Wednesday afternoon, and our inbox EXPLODED. A source close to the actress says the hunky mystery college boyfriend “couldn’t handle her fame,” and that the pair had been drifting ever since she began filming in Vancouver. Mystery Guy, last seen in the famous borrowed work jacket, could not be reached for comment, mostly because nobody knows his NAME. A rep for the actress did not respond to our request for comment."
+    },
+    "At “Spotted — and spotted ALONE!” Theo does a camera shutter with his tongue, three frames. She reads the rest of it the way the six o’clock news reads a tornado, chin down, every word a little lower than the one before. Under SINGLE AGAIN?! Theo runs a slide whistle up through the roof of his mouth. At “the hunky mystery college boyfriend” she stops and looks at Jack, and back down. At “couldn’t handle her fame” Theo hits a gong — a long, shivering *bwonnng* with his hand cupped over his mouth to make it ring — and Laney stops dead and reads it again for the gong: “*Couldn’t handle her fame.*”",
+    "“Drifting,” she says, savoring it. “Since *Vancouver*.” She doesn’t look at Jack this time. He answered every one of the Vancouver calls. The blog doesn’t know that.",
+    "At “the famous borrowed work jacket” she lifts one arm and points across the lounge at the Carhartt with her wrist turned and her smile on — “and for our viewers at home, *the jacket*” — and Theo does a record scratch.",
+    "“Could not be reached for comment,” Laney says, “mostly because nobody knows his *name*. Jack, you are a mystery to the entire nation.”",
+    "Theo, on the carpet, plays a sustained low cello note on nothing, for suspense.",
+    "“It’s a genre,” Margot says, from the end of the couch, without any change in her face. “The obituary of the celebrity class. Three facts, two of them wrong, and a photograph of the deceased at an airport.”",
+    "“Funny you should say that,” says Laney. “And now, ladies and gentlemen, the evening-wear portion of the competition.” She turns the laptop around.",
+    {
+     "type": "doc",
+     "title": "Photo 1",
+     "text": "Tuesday at LAX — back from Vancouver and ALL SMILES. Little did we know!!"
+    },
+    "Skye under the arrivals sign with her bag on her shoulder and her sunglasses pushed up in her hair, mid-stride, laughing at something past the edge of the picture. From the carpet, the studio audience: *ooooh.* Jack looks at it for the length of the ooh.",
+    "“Couldn’t. Handle. Her. Fame,” says Laney, to the photo, with sorrow, and scrolls.",
+    {
+     "type": "doc",
+     "title": "Photo 2 (from our archives)",
+     "text": "Happier times: hand in hand with Mystery Guy behind a church banner in January. We’ll always have San Francisco."
+    },
+    "It’s the one from the Walk in January, her hand in his behind the banner, the one the country was invited to have an opinion about. Laney gives the caption the full soap opera, a woman in a negligee at the top of a staircase: “*We’ll always have San Francisco.*” She lets it hang there, and scrolls on to the comments.",
+    {
+     "type": "doc",
+     "title": "",
+     "text": "Did he dump her?? Did SHE dump HIM?? Is Cassidy single too?? Sound off below!\n\n212 comments"
+    },
+    "She does them in voices. The first is a girl from somewhere with a lot of malls, in capitals, furious: “SKYE CALLENDER IS TOO GOOD FOR EVERY MAN ON EARTH. EVERY SINGLE ONE. I CHECKED.” The second is a Valley drawl, very bored: “ok so i go to marisol and i have SEEN mystery guy and he is not a hunk. he is a guy with a dishrag. like an actual dishrag. on his shoulder.”",
+    "“That one’s accurate,” Margot says.",
+    "Laney looks at Jack across the lounge for a long, appraising moment. She scrolls all the way back up to the top, to read it one more time, with feeling: “*Couldn’t handle her fame.*”",
+    "“Respectfully, Laney,” Kevin says, turning a page of his chemistry, “that’s the fourth time you’ve read ‘couldn’t handle her fame.’”",
+    "“It’s the best line in it, Kevin.” She scrolls back down. The third one she reads in her own voice, no voice at all, quick and even: “praying for you skye. the Lord is close to the brokenhearted. psalm 34.” She goes past it without stopping. “Two hundred and nine more,” she announces, “and I have *all night*.”",
+    "Jack opens the pretzels. It seems the thing to do."
+   ],
+   "choices": [
+    {
+     "tag": "Wit",
+     "text": "“Just so it’s on file — nobody in Ohio has ever called me a hunk.”",
+     "set": {
+      "s2e19_tabloid": "wit",
+      "trait.wit": "+1"
+     },
+     "key": "When Laney read the gossip blog aloud, the only thing you corrected was the word hunk.",
+     "response": [
+      "“Sugar, nobody in Ohio has *met* you.”",
+      "From the armchair, without looking up from his chemistry, Kevin: “I’ve met him.”"
+     ],
+     "goto": "s09a"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“She’d laugh at this harder than you, Laney. Not this week, though.”",
+     "cue": "Laney will remember that.",
+     "set": {
+      "s2e19_tabloid": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "key": "When Laney read the gossip blog aloud, you told her Skye would laugh at it harder than anyone — just not this week.",
+     "response": [
+      "Laney looks at him over the top of the prop glasses, and for a second there isn’t a bit anywhere on her face.",
+      "“I know she would.”",
+      "The bit comes back on after that, a notch quieter, and she scrolls."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "tag": "Candor",
+     "text": "“Every word of that’s wrong. Keep going.”",
+     "set": {
+      "s2e19_tabloid": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "key": "When Laney read the gossip blog aloud, you told the room every word of it was wrong — and told her to keep going.",
+     "response": [
+      "“Oh, I *intend* to.”",
+      "She shakes out her hair and slides the prop glasses back down her nose, back from the commercial break."
+     ],
+     "goto": "s09a"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Sit on the arm of the couch and let her finish.*",
+     "set": {
+      "s2e19_tabloid": "restraint",
+      "trait.control": "+1"
+     },
+     "key": "When Laney read the gossip blog aloud, you sat on the arm of the couch and let her finish.",
+     "response": [
+      "He sits on the other arm of the couch, and Laney turns on the cushion to face him and does the next six comments to him and him alone, a command performance, a different woman for every one: a Long Island aunt, a cheerleader, a lady from church who has *heard things*.",
+      "At the end she waits, chin up, eyes on the middle distance, for the judges."
+     ],
+     "goto": "s09a"
+    }
+   ]
+  },
+  "s09a": {
+   "slug": "THURSDAY · 9:55 PM · DELGADO HALL, 4TH FLOOR LOUNGE — PHOTO 3",
+   "set": {
+    "flannel_photo": true
+   },
+   "body": [
+    "Laney scrolls past the end of the comments, to where the blog has stuck one more picture at the very bottom.",
+    {
+     "type": "doc",
+     "title": "Photo 3 (reader-submitted)",
+     "text": "Wednesday, Las Olas: sunglasses, a coffee, and one VERY oversized flannel. Whose flannel, Skye?? WHOSE??"
+    },
+    "It’s small, and taken from across the street past the side mirror of a parked car, and a little crooked. Skye on the Las Olas sidewalk under the jasmine, in sunglasses, a paper cup in one hand, her hair down and blowing. A man’s flannel shirt on her with the cuffs turned back twice, coming down to the middle of her thighs, the plaid gone soft at the elbows. Two buttons gone.",
+    "He knows it. He knew it before the picture had finished loading, line by line, down the screen. That shirt has been through the wash on Glenwood Avenue more times than he has.",
+    "There’s no sound effect. There hasn’t been one from the carpet since the march.",
+    "Laney glances up from the screen and catches him knowing it. She goes back to the photo and stays on it one second longer than the bit needs.",
+    "Then she closes the laptop.",
+    "“That’s enough of that.”",
+    "She takes the glasses off and folds them and puts them in the pocket of her robe, and sets the shut laptop on the cushion beside her and pats it twice, the way you’d settle a dog. Kevin caps his highlighter. Margot’s notebook stays shut on her knee.",
+    "On the TV the skater in red comes out of her last spin and stops dead in the middle of the white ice with both arms up over her head, and the arena stands up for her without a sound, and Kevin reaches over the arm of his chair for the remote and turns it off."
+   ],
+   "next": "s10"
+  }
+ }
+}

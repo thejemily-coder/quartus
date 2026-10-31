@@ -428,6 +428,19 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 267. **"its one note" for the tube light** (S2E18). Once an episode (#176).
 268. **Narrator restating Jack's restraint** (S2E18). See #260; show it, do not label it.
 269. **Skye's showbiz register leaking into narration** (S2E18, a repeat of the S1E21 note). Keep genre voice in her dialogue, not the narrator's figures.
+270. **Ma's phone sounds as punctuation between lines** (S2E19: taps, cord). Mostly cut; one a call.
+271. **A walk-on's identical stage business** (S2E19: Mrs. Fitch's gloves and the look). Extends #265; vary or cut on repeat appearances.
+272. **Lena's folding ("in half, and in half again") and thumb-licking** (S2E19). Lace plus one thumb-lick an episode, no more.
+273. **"Had it worked out" as Jack's rehearsal tag** (S2E19). Two uses an episode.
+274. **A "he wants her" paragraph in every Lena scene** (S2E19). Extends #248; show it, one scene at most.
+275. **Scenes ending on an inanimate sound or object** (S2E19: object codas). End on people; cousin of #258/#264.
+276. **"Hands want something to do" as Lent shorthand** (S2E19), spreading into other characters' dialogue. Once, in one mouth.
+277. **Lena's held-back-laugh tells** (S2E19: mouth corner, shoulders, library laugh). Extends #14/#183/#204; one a scene.
+278. **Every bystander getting a one-line button at the end of a group scene** (S2E19). Let the scene end on its centre; cousin of #266.
+279. **"The look / face / voice she keeps for [situation]"** (S2E19). Cut in s02, s03, s08b, s13; one kept in s12a.
+280. **A coined phrase repeated as a callback** (S2E19). Spend a coinage once as a callback, not as a running label.
+281. **Church similes as the courtroom replacement** (S2E19: "like a nun...", 2 uses). To watch; do not let it become the new stock figure.
+282. **A composure beat where a laugh was cut** (S2E19: "looks very hard at the creamer / the grain of the oak / with great composure", 3 uses). Once an episode.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

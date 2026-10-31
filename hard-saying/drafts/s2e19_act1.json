@@ -1,0 +1,555 @@
+{
+ "scenes": {
+  "s01": {
+   "slug": "WEDNESDAY · 7:40 AM · DELGADO HALL, ROOM 412",
+   "set": {
+    "s2e19_on": true
+   },
+   "body": [
+    "Somewhere in the night it rained, and he never heard it. The window over Theo’s desk is beaded top to bottom, and the eucalyptus in the courtyard is letting the night go a leaf at a time, a drop and then another onto the sill. Past the tree the sky over the Grove is weak tea, thin and brownish, clearing at the edges toward the hills. Down the hall somebody is in the shower with a radio, singing half a beat behind it.",
+    "He has been up off the step since twenty past six. Not to sleep. He has stood under the shower in the fourth-floor bathroom till the hot gave out, and gone over his fingers with the bar of Dial somebody abandoned on the ledge in September, because at four in the morning he ate a sleeve of orange crackers out of a vending machine, every one, and the orange was still on him. He has a clean shirt on, the blue oxford from the bottom of the drawer. Not the flannel. She has the flannel, on Del Playa.",
+    "His eyes feel sanded. His face has the stiff, rinsed feel it gets after a night like that one, as if it had been taken off and put back on a quarter inch wrong. Over his own bed the crucifix has the window’s light on it. He says the Morning Offering to it while he does the buttons, the short one Ma taught him at the kitchen table, fast, the way you say a thing you have said every morning of your life, and at the end, without planning to, he adds *and her*, and doesn’t say which, and leaves God to sort it out.",
+    "Theo is asleep on top of his covers in the blazer again, on his back, one arm off the side of the bed with the knuckles resting on the carpet, the tie rolled in the breast pocket and one good shoe still on. He came up the three steps to four at first light and went down like a building, all at once and straight down, and hasn’t moved since.",
+    "Jack crouches at the foot of Theo’s bed and works the knot out of the one shoe, a brown wingtip with the lace pulled tight by a man who meant to walk somewhere in it, and eases it off and sets it beside its mate on the carpet, toes to the wall. Theo doesn’t stir. There’s a hole in the heel of his sock. Jack leaves him the blazer. You don’t get a blazer off a sleeping man without waking him, and Theo has earned the blazer.",
+    "Six thirty-eight came and went while he was under the water.",
+    "The RAZR is on his desk, shut, where he left it. He picks it up and the little outside screen comes on in his palm: the time, the bars, the battery. Nothing else. For three months of mornings the first thing on that screen has been lowercase. A line about the fog on Del Playa, or a dream she’d had and wanted a ruling on, or the goose; on a bad morning, one word. He catches himself, with the phone in his palm, listening for it anyway. Down the hall the shower shuts off.",
+    {
+     "if": "lena_replied_done",
+     "text": "Inside, under the hinge, the last thing that came is still the last thing on it.",
+     "else": "Inside, under the hinge, the last thing on it is the line he sent from the guardrail, with nothing under it."
+    },
+    {
+     "type": "sms",
+     "from": "Lena",
+     "text": "I’ll be here. —L.",
+     "time": "7:16 PM",
+     "if": "lena_replied_done"
+    },
+    "He doesn’t open the other thread. He doesn’t delete anything out of it, either.",
+    "The want, this far into Lent, is smaller than it was. It’s the hands that have got worse. They want something to do. They want the hinge of the phone, open and shut and open; they want a lighter that isn’t there, the wheel under the thumb, the scratch and catch of it; left alone, they go looking on their own. His right hand goes to the breast pocket of the Carhartt and finds the pack where it went back at first light, out of Theo’s blazer: the cellophane, the seal, the four corners still sharp. He leaves it there and brings the hand away.",
+    {
+     "if": "lena_replied_done",
+     "text": "*I’ll be here.* She typed it at sixteen minutes past seven last night, and he has had the whole night to work out what she meant by *here*. Here is two floors down.",
+     "else": "*I’ll find you tomorrow.* He typed it on a guardrail with his thumbs not working, and it’s tomorrow, and she’s two floors down."
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*Read her line again.*",
+     "set": {
+      "s2e19_razr": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      {
+       "if": "lena_replied_done",
+       "text": "He opens it. *I’ll be here.* A full stop, a dash, her initial. He reads it for the shape, the way he learned the Baltimore Catechism at seven, off index cards at the kitchen table on Glenwood, so the answers would be there later without his having to go and look.",
+       "else": "He opens it and reads his own line, and the empty space under it, for the shape, the way he learned the Baltimore Catechism at seven, off index cards at the kitchen table on Glenwood, so the answers would be there later without his having to go and look."
+      },
+      "He sits down on the edge of his bed and laces his boots, double knots, both of them, and doesn’t hurry the second one. Two floors. He would like to arrive with something besides his heart in his mouth."
+     ],
+     "goto": "s02"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Put the phone away without opening it.*",
+     "set": {
+      "s2e19_razr": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Into the breast pocket, on top of the pack, the hinge against the cellophane. Whatever is coming at him today isn’t coming on that screen, and he has somewhere to be.",
+      "Across the room Theo says one word in his sleep, crisp as a clapperboard: “Cut.” He turns over to face the wall."
+     ],
+     "goto": "s02"
+    },
+    {
+     "tag": "Wit",
+     "text": "*Check that the ringer’s on. Twice.*",
+     "set": {
+      "s2e19_razr": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "It’s on. It has been on since August, Mass excepted. He checks it again anyway, thumbing down through the menu to the little bell and back out to the screen with nothing new on it. The little bell is there. The bars are there. He stands in the middle of 412 in a clean shirt and holds the phone up to the window, to the weak light, and shuts it."
+     ],
+     "goto": "s02"
+    }
+   ]
+  },
+  "s02": {
+   "slug": "WEDNESDAY · 8:05 AM · DELGADO HALL, THE EAST STAIRWELL — HERE",
+   "set": {
+    "found_lena_wed": true,
+    "resolve.lena": 5,
+    "rel.lena.trust": "+1",
+    "rel.lena.warmth": "+1",
+    "resolve.jack": "+1"
+   },
+   "body": [
+    "The stairwell door on four lets him through with its usual complaint, and the well is full of morning. The tube over the landing has gone thin and useless against the daylight. Down at the turn the wired glass is still beaded from the night, and the light through it lays the shadow of the chicken wire across the cinderblock in a slanted grid that shivers whenever a drop lets go.",
+    {
+     "if": "s2e18_landing==\"restraint\"",
+     "text": "He passes his own step, the third one down. On Sunday night he sat on it and nodded to her, and said nothing."
+    },
+    {
+     "if": "s2e18_landing==\"candor\"",
+     "text": "He passes his own step, the third one down. On Sunday night he gave her one word from it: *Tuesday.*"
+    },
+    {
+     "if": "s2e18_landing==\"sincerity\"",
+     "text": "He passes his own step, the third one down. On Sunday night he told her from it that he was sorry it hurt him."
+    },
+    {
+     "if": "s2e18_landing!=\"restraint\" && s2e18_landing!=\"candor\" && s2e18_landing!=\"sincerity\"",
+     "text": "He passes his own step, the third one down."
+    },
+    "He goes down. The rail is cold and a little wet under his hand where the glass has been sweating onto it. Past the door on three, past the landing, round the turn onto the flight that goes down toward two, and he takes it a step at a time. He has taken these stairs three at a time since August.",
+    "Halfway down it comes to him that *here* could mean anything. Here, Marisol. Here, the Commons at the window table. Here, St. Brendan’s at the twelve-ten, in the pew she likes on the Mary side. Here, in general, on the earth, alive: a thing a person might say to a man who sent her a text like that from a guardrail. He had it worked out at four in the morning. At four in the morning everything is worked out. He comes round the last turn with his hand on the rail and his heart going like he ran the flights instead of walking them.",
+    "She’s on her landing. She’s sitting sideways on the step where she takes her calls, three up from the landing, with her back against the cinderblock and her knees drawn up, so that she can see up the flight and down it at once. She’s dressed for class: jeans, the brown boots, her bag against the wall with a library spine showing at the flap, and the long dark coat, open this morning all the way down. At her collarbone, where he can see it, Grandmère Lucille’s medal lies on its chain against her shirt. On the step below her boots are two Commons coffees in brown paper sleeves gone soft at the seams. One has a tan ring at the sip hole where the milk has come up through it. The other doesn’t.",
+    "The step is hers. She has sat on it since September to call home, and he has heard her on it from two floors up on other nights, arguing with a sister about a christening, telling her mother the weather.",
+    "The morning goes past before either of them says a word. A boy in a towel and shower shoes comes up from two with a caddy on his hip, trailing Axe and steam; it’s Rafi Ochoa from two, whose floor’s hot water has been out since Monday, and he edges past her on the wall side and past Jack on the rail side with a nod for each of them, a man with no dignity left to lose. A girl with a cello case on her back comes down from three behind him, sideways, the case knocking the rail at every step, and gets it past the pair of them by inches and on down the well. Somebody’s roommate calls up from one, *sorry, sorry, I’m coming, I’m sorry*, and a door takes her. And then the well is empty, and the glass on the landing drips.",
+    {
+     "if": "lena_replied_done",
+     "text": "“You said here,” Lena says.",
+     "else": "“You said you’d find me,” Lena says."
+    },
+    {
+     "if": "lena_replied_done",
+     "text": "“I said here.”",
+     "else": "“I said I’d find you.”"
+    },
+    "She looks at him from the step: the wet hair, the oxford, whatever his face has been doing since six. He watches her decide not to say one word about the shirt.",
+    "“Youngstown,” she says.",
+    "She says it like a door held open. He doesn’t answer it, because anything he said would be too much, and the word goes down somewhere under his ribs and stays warm.",
+    "He has had this face across a table, across an argument, across a levee in the dark, and since the levee across a rule. This morning she’s pale under the freckles, and there’s a freckle just under her ear he has been not looking at since September. Her hair is pinned up off her neck any old way, for speed, and one piece of it has already given up and come down against her cheek. There’s a crease on her cheek from a pillow, or a sleeve. She looks like somebody who got up early to be somewhere. He wants her; it’s eight in the morning in a stairwell that smells of wet concrete and somebody’s Axe, and he wants her like water on the I-10: simply, and all day. He would like, more than he has wanted most things in his life, to sit down on that step beside her. There’s room. There is about one coat’s width of room. He stays three steps up, with his hands hanging, and his knees ache from the night.",
+    "“You look like you didn’t sleep.”",
+    "“I didn’t.”",
+    "She nods, unsurprised. She hasn’t handed him anything yet. The black coffee stays on the step by her boot, and both her hands stay around her own cup, and she looks up at him straight and asks it first, before anything else.",
+    "“Is she all right?”",
+    "“No.”",
+    "She takes that. Her face doesn’t do anything with it; she looks past him, up the flight, at nothing in particular, for about the length of a Glory Be, and comes back.",
+    "“Is somebody with her?”",
+    "“Sol. Theo went.”",
+    "It’s the first time anybody has asked him, and it comes out of him that small.",
+    "“Good.” She looks down at the lid of her cup, and nods again, slowly, like somebody putting a thing on a high shelf where it will keep. She asks nothing about what was said. He would have had no idea where to start.",
+    "She picks up the black one and holds it up to him. He comes down the last few steps and takes it, and that’s where his hands give him away. They haven’t been steady since the guardrail: a night with no sleep in them, and Lent, and nowhere to go. The cup shakes enough to slop coffee up through the sip hole and over the lid. She sees it. She reaches up and takes the lid by its rim, and her other hand comes round over the back of his on the cup, to hold it still while she works the lid loose. Her fingers are cold from the concrete. They stay on the back of his hand while the lid comes free, and a little after it’s free, two seconds, about, long enough for him to feel the hard small ridge on her middle finger where the pen rides, and then the lid is on her knee and her hand is back around her own cup.",
+    "He can feel where her fingers were. Not warmth; they were cold. The places themselves, a small cold map across the back of his hand that takes its time going.",
+    "The last hand of hers he felt was on a levee in Louisiana. He stands on her stairs with the steam coming up into his face and holds the coffee, much too hot to drink.",
+    "“It’s Commons coffee,” she says. “It has sat on this step long enough to go bad and not long enough to go cold, and I make no claims for it.”",
+    "“It’s good.”",
+    "“It is not good. It is hot, and it is here.” She looks at her watch. It tells her what she knew. “The Stations are at seven on Friday. I’ll be at them.”",
+    "“I know.”",
+    "“I know you know.”",
+    "She looks at him a moment more, at the oxford and the eyes over it. “Sleep today. Skip something.”",
+    "“I’ve got two classes.”",
+    "“Skip one of them. God will understand. Your professor won’t, but God will, and you can take it up with your professor in purgatory.”",
+    "Her eight o’clock started ten minutes ago. The strap of her bag is already over her arm. There is one thing he came down to say, and he has had since first light to get it right, in the shower and in the mirror and on his knees in front of Theo’s shoe, and it has come out a different shape every time. It isn’t right yet. He is going to say it anyway."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“I’m not going to ask you anything today. Not the day after.”",
+     "cue": "Lena will remember that.",
+     "key": "On the stairs the morning after, you told Lena you wouldn’t ask her anything that day — not the day after.",
+     "set": {
+      "s2e19_here": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“I know.” She keeps her eyes on him over the rim of her cup, and doesn’t make him wait for the rest. “That’s how I know it’s you.”",
+      "She gets up, and for the length of a step they’re level, close enough that he gets the cold off her coat and the coffee and under it her soap, and she doesn’t touch him and he doesn’t touch her, and the not-touching has her whole face in it. Then she has the bag on her shoulder and her own cup in her hand, and she goes on down the flight toward two, quick, one hand skimming the rail, and he listens to her boots take the turn below him and go.",
+      "The black one is the one she brought him. It’s still too hot. He holds it anyway, in both hands, on her stairs."
+     ],
+     "goto": "s03"
+    },
+    {
+     "tag": "Candor",
+     "text": "“I’m going to ask you something. Not today.”",
+     "cue": "Lena will remember that.",
+     "key": "On the stairs the morning after, you told Lena you were going to ask her something — just not that day.",
+     "set": {
+      "s2e19_here": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "“I know you are.” She looks up at him with her head a little on one side, the look she gives an argument she may want to take up later, and then she puts it away. “Not today, then.” She sets the lid down on the step beside her, very precisely, like a card she means to come back for.",
+      "She stands with her bag and her cup and goes on down toward two, her boots quick on the concrete, and at the turn of the stair, without looking back, she says, “Drink that.”"
+     ],
+     "goto": "s03"
+    },
+    {
+     "tag": "Wit",
+     "text": "“You said *here*. I’m from Youngstown. We take things literally.”",
+     "cue": "Lena will remember that.",
+     "key": "On the stairs the morning after, you told Lena that in Youngstown you take things literally.",
+     "set": {
+      "s2e19_here": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“So do I.” She tips her own cup at the one in his hands. “I brought two.”",
+      "She studies him over the lid. “You’re not going to ask me anything today.”",
+      "“No.”",
+      "“I’d have worried if you did. I’d have had to send you back up those stairs to bed, and you’d have gone, and then where would we be.” She stands and swings the bag up and goes down past the landing toward the ground, and far below, the door at the foot of the well lets her out into the morning.",
+      "When she’s gone he sits down on her step. The concrete is warm where she was."
+     ],
+     "goto": "s03"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Sit down two steps below her. Drink the coffee.*",
+     "cue": "Lena will remember that.",
+     "key": "On the stairs the morning after, you sat two steps below Lena with the coffee she’d brought and didn’t ask her anything.",
+     "set": {
+      "s2e19_here": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He comes down past her and sits two steps below, with his back to the wall and the cup in both hands. It’s black and burnt at the bottom, Commons coffee all the way down, and it’s the best thing he has tasted in a week.",
+      "She lets the quiet run. The tube hums. The beaded glass on the landing goes bright a drop at a time. When she speaks, it’s to the top of his head. “You’re not going to ask me anything today.”",
+      "He shakes his head. He doesn’t trust anything else he has.",
+      "“Good,” Lena says. “Then I can go be late for my eight o’clock with a clear conscience.” She stands, and comes down past him on the rail side with her coat held in close so it doesn’t brush him, and goes on to the ground with her boots loud in the empty well.",
+      "He drinks it too hot and doesn’t care."
+     ],
+     "goto": "s03"
+    }
+   ]
+  },
+  "s03": {
+   "slug": "WEDNESDAY · 3:30 PM · DELGADO HALL, ROOM 412 — A LITTLE BROKEN HEART",
+   "set": {
+    "fb_single": true
+   },
+   "body": [
+    "Two classes behind him, and he could not pass a quiz on either. He’s back at his desk in 412 with *The Moviegoer* open for Thursday at a page he has been on since he sat down, and the window has dried, and the eucalyptus has stopped dripping and gone back to smelling like a cough drop and a cat.",
+    "Theo is awake, more or less. He has traded the blazer for an old navy cashmere sweater with a hole at one elbow, and he’s lying on top of the covers again with his ankles crossed and his iPhone on his chest. A screenplay lies splayed on the carpet where it slid off the bed.",
+    "The iPhone buzzes. Theo lifts it and looks at it, and lays it face down on his chest, and goes on looking at the ceiling.",
+    "A minute later the RAZR goes off by Jack’s elbow, and keeps going.",
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "JACK",
+     "time": "3:31 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "UR FACEBOOK SAYS SINGLE",
+     "time": "3:31 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "MA SAW",
+     "time": "3:32 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "call her",
+     "time": "3:33 PM"
+    },
+    {
+     "type": "sms",
+     "from": "Gina",
+     "text": "r u ok",
+     "time": "3:34 PM"
+    },
+    "Gina, in Denver, who types in lowercase unless somebody is in the hospital.",
+    "Across the room Theo has turned his head on the pillow and is watching him read. He turns the iPhone around in his hand and holds it out across the gap between the beds, screen first, and Jack gets up and takes it.",
+    {
+     "type": "fb",
+     "name": "Jack Costigan",
+     "text": "is no longer listed as “in a relationship.”",
+     "meta": "Wednesday at 3:12pm"
+    },
+    "In Theo’s News Feed it sits between somebody’s album from a formal and a quiz about which *Lost* character you are, and beside it there’s a little broken heart. Jack thumbs over to his own page. His name; his school; his town; the picture from orientation he has never bothered to change. The line that used to be under his name is gone.",
+    "It went up in January under the canopy of a gas station in Buellton, at island four, with the pump ticking in the tank. She typed his name into her own phone with her thumb and pressed it, and read the request over his arm when it came up, and said, *That’s the first thing anybody’s ever watched me do that nobody wrote.* He walked off to the air hose in the dark and called his mother first, and came back and pressed Confirm, and a trucker at the diesel island leaned on his horn.",
+    "He didn’t touch it today. He hasn’t been on Facebook since Sunday. He doesn’t have to ask whose hand it was. Somebody sat down at twelve minutes past three on a Wednesday afternoon and did the public part herself, without a word to him, and let the site do the rest. It’s the only thing she has sent him since the porch. It’s addressed to everybody else.",
+    "He hands the phone back. Theo takes it and sets it on his chest again, and the radiator ticks, and of all the things Theo could say about her, he says none of them.",
+    "He has her side of it. He’s had it since Tuesday night, in that house with the candles going, everything she said; he carried it up three flights and sat down a step above Jack with it, and it has been in this room all day on the other bed, and Theo hasn’t set any of it down. He isn’t going to. Jack would know that about him if he’d known him a week. He has known him since August."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Good. She should be the one.”",
+     "set": {
+      "s2e19_status": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "Theo looks at him across the room for a long second, the look he gives a line in a script that turned out better than he expected from the writer. “Okay.”",
+      "He turns the phone over again, screen to the sweater, and reaches down to the carpet for the screenplay, and holds it open over his face."
+     ],
+     "goto": "s04"
+    },
+    {
+     "tag": "Candor",
+     "text": "*Text Gina back.*",
+     "set": {
+      "s2e19_status": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      {
+       "type": "sms",
+       "from": "Jack",
+       "text": "its true. ill call ma at 630",
+       "time": "3:36 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Gina",
+       "text": "ok",
+       "time": "3:37 PM"
+      },
+      {
+       "type": "sms",
+       "from": "Gina",
+       "text": "proud of u. dont tell anyone i said that",
+       "time": "3:37 PM"
+      },
+      "He doesn’t answer the last one. He leaves it lit on the desk, and gets up off the chair and takes his jacket down off the hook, and if Gina could see his face she would make fun of it till Easter."
+     ],
+     "goto": "s04"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Close the phone. Look at the ceiling.*",
+     "set": {
+      "s2e19_status": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "He lies back on his own bed and looks up. The water stain over the door, Lake Erie with a bite out of it. The radiator. Theo breathing, slow, across the room. The square of sun from the window working its way up the wall toward the crucifix.",
+      "Eventually Theo says, “Commons. You. Food.”",
+      "Jack sits up. “You coming?”",
+      "Theo doesn’t move. Jack gets his jacket and goes, and Theo doesn’t come. One of them needs to lie there a while longer, and it’s Theo."
+     ],
+     "goto": "s04"
+    }
+   ]
+  },
+  "s04": {
+   "slug": "WEDNESDAY · 3:50 PM · DELGADO HALL, THE EAST STAIRWELL — THE SECOND FLOOR",
+   "music": "Lady Gaga feat. Beyoncé — “Telephone”",
+   "set": {
+    "laney_laptop": true
+   },
+   "body": [
+    "Somebody on two has a door open and a song going, the one every other door on two has been playing since January, loud enough to come through the wired glass of the stairwell door and meet him on the way down. He passes her step on the way. The lid of his coffee is still on it, where she must have set it down when she stood, a white plastic Commons lid with a brown bead dried in the sip hole. He picks it up and puts it in his pocket. He’s on the last flight to the second-floor landing, hands in the Carhartt’s pockets and the Commons somewhere in his future, when the hall beyond the glass fills up with Laney Price.",
+    "She is coming down the second-floor hall from the far end at the speed-walk of a woman with news, in socks, on industrial carpet. She’s in an enormous T-shirt from somebody’s charity 5K and flannel pajama pants printed with little cowboy boots, her face lit blue from below by the screen. She has her laptop open and held out in front of her, flat on both palms, level, the screen lit, the way you’d carry a birthday cake down a drafty hall with every candle going. Her pink BlackBerry is clamped in her teeth by one end, and buzzing. And she is, entirely by accident, right on the beat. Every open door she passes, she passes on it; her ponytail goes on it; a boy who puts his head out of 209 to see what the noise is pulls it back in on it.",
+    "She doesn’t see Jack. She gets to 217 and shoulders the door without knocking, because it’s hers, and goes in with the cake held high, and leaves the door open behind her.",
+    "It comes out of 217 and through the glass and up the well past him, Dallas at full volume: “Oh my God. *Lena.*”",
+    "And then something from Lena, lower, that might be a laugh and might be *Laney, I gave it* up; he gets the shape of it more than the words. The door of 217 swings shut on whatever comes next, and the song has the hall to itself again.",
+    "Whatever her face did, it did it on the other side of that door, and he is not going to know it today. He stands on the landing with one hand on the rail and the back of the other wrist pressed to his mouth, because his mouth has gone off and done something without consulting him, in a stairwell, on a Wednesday afternoon, with only the fire extinguisher for a witness.",
+    "He keeps going down. It hasn’t worn off by the ground floor."
+   ],
+   "next": "s05"
+  },
+  "s05": {
+   "slug": "WEDNESDAY · 5:40 PM · DELGADO HALL, ROOM 412 — THEODORE. HALL. NOW.",
+   "set": {
+    "halves_joined": true
+   },
+   "body": [
+    "Laney arrives at speed. The door of 412 is propped on one of Theo’s loafers for the air, and she comes through the gap without slowing, BlackBerry in her fist and her hair half out of its clip, and she’s two steps toward Theo’s bed with her mouth already open on the first word when she sees Jack at his desk.",
+    "She stops. He watches her swallow it: whatever she has carried up two flights at that speed, all of it, in one gulp, like a mouthful of something too hot to hold. Her eyes water a little with the effort.",
+    "“Fireman,” she says to Jack, very sweetly.",
+    "“Laney.”",
+    "“Y’all get that rain last night?” It comes out of her in the voice of a woman reading a statement off a card with somebody standing just out of frame.",
+    "“I didn’t hear it.”",
+    "“Me neither. Slept like a baby. Like a *baby*.” She nods several times.",
+    "She can’t sit. She tries the end of Theo’s bed and is up again before the mattress has finished taking her weight. She takes a DVD off Theo’s shelf and reads the back of it with great attention.",
+    "“That’s Fassbinder,” Theo says from the bed, without lifting his head. “You’re holding it upside down.”",
+    "“I know what I’m holding.” She puts it back on the shelf upside down.",
+    "To the bed: “Theodore. Hall. Now.”",
+    "Theo gets up, steps into his loafers one at a time, including the one holding the door, and follows her out, and pulls the door to behind him. Without the shoe it doesn’t latch; it never has without a shoulder. It drifts back open a few inches, and the hall comes in through the gap.",
+    "What comes in, Jack doesn’t try to hear, and hears anyway. A squeal, high and enormous, cut off in the middle by what can only be a hand. Then Laney, in a whisper that would carry the length of a football stadium:",
+    "“*Since when?*”",
+    "“Thursday.”",
+    "“*THURSDAY?*”",
+    "And Theo, short, with nothing on it at all: “Laney. Not this week.”",
+    "Jack has heard Theo tell Laney no before, about restaurants, about a sweater, once about a cowboy hat. Not like that.",
+    "Thursday was Texas. Jack sits at his desk with his pen on *The Moviegoer* and does nothing at all with the pen. After that the hall goes quiet for a minute, the particular quiet of two people standing in it, one of whom would very much like to be screaming.",
+    "Kevin Tran goes by the gap with a laundry basket on his hip, and stops, and backs up two steps, and puts his head in. “Respectfully,” he says, “is someone being murdered?”",
+    "“Not yet,” Jack says.",
+    "Kevin nods; on this floor it’s a reasonable answer. He goes on with his basket.",
+    "Past the gap the stairwell door bangs, and a pair of socks goes down the well at a dead run.",
+    "So now Laney has Thursday, too. And not one of them is going to say a word to him about any of it this week, because Theo said so in a hallway.",
+    "Theo comes back alone a minute later. His collar is crooked and there’s a smear of pink lip gloss high on one cheekbone, and his face is perfectly composed. He sits down on his bed, picks the screenplay up off the carpet, opens it somewhere in the middle, and looks at it.",
+    "Whatever happened out there, he has brought none of it back in with him but the lip gloss. He crosses his ankles. He licks his thumb and turns a page with it.",
+    "“Laney says hello.”"
+   ],
+   "choices": [
+    {
+     "tag": "Wit",
+     "text": "“Tell her I said hello back. Through the door.”",
+     "set": {
+      "s2e19_theodore": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“She’s gone. I’ll have it couriered.”",
+      "“Through the door.”",
+      "“Through the door and down two flights and into a room with Lena in it. Absolutely not. I value my life.” Theo turns a page, reads it, and turns it back."
+     ],
+     "goto": "s06"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“Theo. Thank you.”",
+     "set": {
+      "s2e19_theodore": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      {
+       "if": "s2e18_theo==\"sincerity\"",
+       "text": "“For this one too.”"
+      },
+      "“Don’t,” Theo says, to the page. He turns it. “Okay.”",
+      "He doesn’t look up, and that’s how Jack knows it landed."
+     ],
+     "goto": "s06"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Let it go.*",
+     "set": {
+      "s2e19_theodore": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "They sit in it. It isn’t a bad thing to sit in. The window goes from blue to dark behind the eucalyptus, and Theo reads the same scene three or four times, and Jack doesn’t interrupt him.",
+      "Kevin goes past the door the other way, the basket full of folded laundry now, squared at the corners, and says nothing at all."
+     ],
+     "goto": "s06"
+    }
+   ]
+  },
+  "s06": {
+   "slug": "WEDNESDAY · 6:30 PM · DELGADO HALL, THE EAST STAIRWELL — WEDNESDAY",
+   "set": {
+    "ma_told_wed": true
+   },
+   "body": [
+    "He calls her. Not Sunday, and not her call; his, on a Wednesday, from his step, with the stairwell to himself and the landing glass going dark. Any other Wednesday of his life she’d pick up saying *Who died?*",
+    "He hasn’t eaten. He got as far as the Commons at four, and stood in the line with a tray, and put the tray back. He has had all day to find the words for his mother and has found the same few he had at breakfast. They’ll have to do. She has never needed many from him.",
+    "It’s half past nine on Glenwood. She picks up before the first ring is through, and the long cord rattles taut against the table leg at her end, so he knows where she has been sitting since supper. He can see the kitchen: the overhead light off and the one over the stove on, the clock above it four minutes fast since before he was born, the calendar from the funeral home by the phone with every Sunday already written on.",
+    {
+     "if": "s2e18_ma==\"candor\"",
+     "text": "“You said Wednesday,” Ma says. “It’s Wednesday.”"
+    },
+    {
+     "if": "s2e18_ma==\"sincerity\"",
+     "text": "“You said you’d write your grandmother,” Ma says. “You called instead.”"
+    },
+    {
+     "if": "s2e18_ma!=\"candor\" && s2e18_ma!=\"sincerity\"",
+     "text": "“Not on the phone, you said,” Ma says. “Well. Here’s the phone.”"
+    },
+    "“A little broken heart,” she says. “On the computer. Gina showed me. She walked me through it from Denver like I was landing a plane.” The cord creaks. “Last time, you called me before the computer.”",
+    "“I know, Ma.”",
+    "“This time the computer called me.”",
+    "“It’s true, Ma.”",
+    "He tells her. He tells it plain, like a noise in the truck reported to his father: what, and when, and nothing on it. He ended it. Last night. There’s somebody else, and nothing happened, and he told her before anything could. Ma doesn’t stop him. The tap goes on at her end, and off.",
+    "“Nothing happened.”",
+    "“Nothing, Ma.”",
+    "“I believe you. I’m asking so I can say I asked.” A cupboard; a glass set down on the counter. “Did you tell her to her face?”",
+    "“Yes.”",
+    "“Good,” Ma says.",
+    "She doesn’t add anything to it. He didn’t know, till he heard it, how badly he needed somebody on this earth to say that word to him about last night. He sits on his step with it, and it’s enough to sit on.",
+    "“Are you sleeping?”",
+    "“Not last night.”",
+    "“Tonight, then. That’s not a request. How are you?”",
+    "“I’m good.”",
+    "“Don’t you *I’m good* me, Jackie. I’m your mother.” A chair leg scrapes on the linoleum; she’s sitting back down. “Was she good to you?”",
+    "“She was good to me, Ma.” It comes up out of him without his choosing it, and it’s the easiest true thing he’s said all day. “She’s the funniest person I ever met.”",
+    "“Funnier than you?”",
+    "“She’d have done your voice, Ma. In a day. The cord, the tap, all of it.”",
+    "“My voice.”",
+    "“You’d have laughed.”",
+    "“I’d have hit her with the dish towel,” Ma says. “And then I’d have laughed.” The tap. “Then I’m sorry. For both of you. Is somebody bringing her soup?”",
+    "“Theo went.”",
+    "“Theo,” Ma says, as though that settles the soup. “I told your sister she was the answer. In January. I said it at this table out loud, and Gina is never going to let me hear the end of it, and I don’t care. I liked her. I never met her, and I liked her. Your grandmother had her at the table already. She had the menu.” The cord creaks. “I’m allowed to be sad about a girl I never met. It’s a free country.”",
+    "Behind her, from the chair by the radiator, Nonna says something in Calabrese. He catches *Maria Caterina* in it, and the rest he doesn’t need.",
+    "Ma takes the phone away from her mouth. “No, Mà,” she says, and a little more after it, soft, in the same Calabrese, and he doesn’t need that translated either.",
+    "Nonna says one word. Ma does translate that one.",
+    "“*Poverina,*” Ma says. “Poor little thing. She says she’ll light a candle for her Sunday. At St. Brigid’s, after the nine o’clock.”",
+    "A few weeks ago Nonna lit one for the same girl, glad, the morning she first heard the name. This one is the other kind. He can see her at it: the rack of red glass under the Blessed Mother at St. Brigid’s, Nonna feeding a folded dollar into the box with her good hand and taking a long time over the taper, not because she’s slow but because she’s telling the Blessed Mother about it, in Calabrese, in detail, a girl from California, too thin, who she never got to feed.",
+    "“She never met her, Ma.”",
+    "“She never met half the people she lights them for. That’s what they’re for.”",
+    "He puts his free hand over his eyes on the step and keeps it there. On Glenwood the radio in the front room is going low, the Italian station out of Cleveland that Nonna won’t let anybody change, and somebody is singing on it in a hurry about the sea.",
+    "“Your father’s out in the garage,” Ma says.",
+    "He can see it from here: the overhead door down against the cold, the drop light hooked under the Silverado’s hood, his father on the creeper with the drain pan, letting out oil that went in new in January so he can put new oil in after it.",
+    "“He knows?”",
+    "“I told him at supper. He didn’t say anything. He finished his plate.” The tap, on and off. “Then he went out there.”",
+    "“Tell him I’m good.”",
+    "“You tell him. He has a phone. He uses it like he’s mad at it.”",
+    "The cord rattles. She’s moving the phone to her other shoulder. She does that before a thing she has been holding since supper.",
+    {
+     "if": "maria_knows_lena_maybe",
+     "text": "“Is it the veil girl?”",
+     "else": "“This somebody,” Ma says. “Is it serious?”"
+    }
+   ],
+   "choices": [
+    {
+     "tag": "Candor",
+     "text": "“Yes, Ma. Her name’s Lena.”",
+     "key": "On Wednesday you told your mother the truth about Skye, and when she asked about the veil girl, you gave her Lena’s name.",
+     "set": {
+      "s2e19_ma": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "Ma tries it once, carefully, like a word in the Sunday crossword she isn’t ready to ink. “Lena.” On Glenwood a cupboard door shuts. “Then what are you doing on the phone with your mother?”",
+      "“Ma —”",
+      "But he hears the pen come out of the jar by the phone, and she hangs up first, which she has not done in his life."
+     ],
+     "goto": "s07"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "“I haven’t asked her anything yet. Friday.”",
+     "key": "On Wednesday you told your mother the truth about Skye, and that you hadn’t asked the other girl anything yet — Friday.",
+     "set": {
+      "s2e19_ma": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Friday’s a fast day.”",
+      "“I know, Ma.”",
+      "“Then eat Thursday. Eat like a person, at a table, off a plate.” The tap, on and off. “Did you eat?”",
+      "“Not yet.”",
+      "On Glenwood, the sound of his mother not saying one single thing about that."
+     ],
+     "goto": "s07"
+    },
+    {
+     "tag": "Restraint",
+     "text": "“Ma. Not yet.”",
+     "key": "On Wednesday you told your mother the truth about Skye, and when she asked about the other girl, you told her: not yet.",
+     "set": {
+      "s2e19_ma": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "Ma takes her time with it. “Okay,” she says. “Not yet.” The radiator under her window; the cord going slack as she sits back. “Your grandmother wants to know what you said.”",
+      "“Tell her not yet.”",
+      "“She won’t like it.” Away from the phone, in Calabrese, a few words. Nonna, from the chair, a few back. “She says she can wait. She says she’s waited for worse.” The pen comes out of the jar by the phone. “I’m writing it on the calendar anyway.”",
+      "“Writing what?”",
+      "“*Not yet.*”"
+     ],
+     "goto": "s07"
+    }
+   ]
+  }
+ }
+}

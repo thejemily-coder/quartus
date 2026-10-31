@@ -1,0 +1,382 @@
+{
+ "scenes": {
+  "s10": {
+   "slug": "FRIDAY · 12:15 PM · ANACAPA COMMONS — THE WINDOW TABLE",
+   "set": {
+    "bread_together": true,
+    "rel.lena.warmth": "+1",
+    "resolve.lena": 5
+   },
+   "body": [
+    "Noon comes into the Commons off the water, white and hard, through the long windows behind the window table, and lies across the trays as far as the soft-serve machine. The fog burned off by ten. Out past the bluff the Channel is a flat bright blue with a tanker parked on it, and the radio over the dish return is playing something with a drum machine in it, low, under the noise of the trays.",
+    {
+     "if": "jack_fridays",
+     "text": "On Lena’s tray there is the heel of a baguette and a glass of tap water with a handful of the machine’s ice going cloudy in it. On his there is the other heel of the same baguette, which he watched her pick out of the basket before he took the next one, and the same glass of water, and the same ice, because the machine gave it to him before he could stop it.",
+     "else": "On Lena’s tray there is the heel of a baguette and a glass of tap water with a handful of the machine’s ice going cloudy in it. On his there is the Friday cheese pizza, a square of it gone orange at the corners, which he hasn’t touched yet, out of something like manners, and a glass of water with the same ice."
+    },
+    {
+     "if": "s2e17_bread==\"wit\"",
+     "text": "Last Friday he toasted her with a roll from the far side of the room."
+    },
+    {
+     "if": "s2e17_bread==\"sincerity\"",
+     "text": "Last Friday he held a plastic tumbler up at her from the far side of the room until she put hers down first."
+    },
+    {
+     "if": "s2e17_bread!=\"wit\" && s2e17_bread!=\"sincerity\"",
+     "text": "Last Friday he ate his roll on the far side of the room and didn’t look up."
+    },
+    "Today she was at the window table first, with the Pacific behind her head, and when she saw him in line with his tray she put her boot against the leg of the other chair and pushed it out from the table. That was the whole invitation. He sat in it.",
+    "There’s a basket of butter pats on the condiment cart by the window. He has looked at it twice.",
+    "“Don’t,” Lena says, without looking up from her bread.",
+    "“I wasn’t.”",
+    "“You looked at the butter. Twice. I have witnesses.”",
+    "“Butter’s a condiment. Condiments don’t count.”",
+    "She puts her bread down on the tray to have both hands free, and he knows he’s in for it. “Butter is not a condiment. Ketchup is a condiment. Mustard is a condiment. Butter is a *foundation*. You don’t put butter *on* a thing, you build on it. There are women in St. Martin Parish who would cross the Atchafalaya on foot to slap you for that sentence, and I would hold their pocketbooks.”",
+    "“It’s dairy. It’s basically a beverage.”",
+    "“Lord have mercy.” She picks the bread back up. “Eat your water.”",
+    "He eats his water. That is, he puts a piece of the machine’s ice in his mouth and crunches it, because his hands have nothing to do on a Friday and his mouth has less, and the crunch goes off in his head like a shot in a quiet house. She stops chewing and looks at him.",
+    "“It’s water,” he says.",
+    "“Ice is water with ambitions, Youngstown.”",
+    "It comes across the tray without any warning, in the voice she used for it before there were rules, and he has to keep his eyes on his glass. “So it’s allowed.”",
+    "“It’s allowed. It isn’t humble.”",
+    "Behind her, by the doors, the waffle station is doing the noon rush: a line six deep, the iron hissing open and shut, the smell of hot batter and vanilla coming across the room in waves you could lean on. They both look at it. It is a Friday in Lent and they have been up since six and the smell is a kind of weather.",
+    "“The Desert Fathers,” Lena says, “lived on bread and salt, and a little oil on feast days, and some of them lived to a hundred. Not one of them had to sit downwind of a Belgian waffle iron.”",
+    "“Anthony had demons.”",
+    "“Anthony had demons. We have a waffle station with a *line*.” Her stomach makes a sound, short and indignant, under the table. She doesn’t blink. “That wasn’t me.”",
+    "“That wasn’t me either.”",
+    "“Then we agree it was Theo.”",
+    "Theo is at the next table, near enough to pass salt, with Laney and Kevin and Margot, all four of them having lunch with enormous discretion. Laney is looking at the ceiling. Kevin is looking at his soup. Theo is eating a turkey sandwich and appears to find it absorbing. Margot has turned her chair to face them and is simply watching, chin up, with her spoon in the air.",
+    "“Y’all are on a date at a soup kitchen,” Laney tells the ceiling.",
+    "“It’s not a date,” Lena says.",
+    "“I *know* it’s not a date.” Laney brings her eyes down from the ceiling one tile at a time. “I’d have been *told*.” She turns in her chair, all the way to them now, the bit coming over her like a spotlight. “And who’d have told me, Lena? *Facebook?* Some people have given up the entire internet for Lent and can’t even *see* it. Do you know what my week has been? I’m Paul Revere. I’m running up and down halls. I’m the only woman on the second floor who knows anything, and I have to deliver it *by hand*.”",
+    "“I hear about it,” Lena says.",
+    "“From *me*.”",
+    "“That’s what I said.”",
+    "Kevin watches Jack put another piece of ice in his mouth. “Pagophagia,” he says. “Compulsive ice-chewing. Usually it means you’re low on iron.” He looks over at the window table. “That’s not a fast, that’s a hunger strike with a seating chart.”",
+    "“I’m not failing to look,” Margot says, to the table at large, and doesn’t lower the spoon. “I’m the only one at this table with a methodology.”",
+    "Theo finishes the first half of his sandwich, and starts on the second half, and says nothing about anybody.",
+    "Lena tears a corner off her heel and eats it, slowly, the way you eat a thing when it’s all there is and you mean to have all of it. She drinks some water. The light off the Channel is on the side of her face, and on the medal, and on the crumbs on her tray, and she hasn’t once looked like a woman suffering anything at him. He hasn’t either. He has sat across a lot of tables from her since August. This is the first one with nobody else’s name sitting at it with them, and he is so hungry he could eat the tray, and he would not be anywhere else in California."
+   ],
+   "choices": [
+    {
+     "tag": "Wit",
+     "text": "*Raise your heel of bread to her. Across eighteen inches this time.*",
+     "if": "jack_fridays",
+     "set": {
+      "s2e19_bread": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He lifts the heel off his tray and raises it to her, a beer at a ballgame, the crust end up.",
+      "She looks at it. She looks at him. She lifts hers, gravely, between her finger and thumb, and holds it up to his, and the two pieces of bread stop short of each other over the trays and don’t touch.",
+      "At the next table Laney puts her face in her hands."
+     ],
+     "goto": "s11"
+    },
+    {
+     "tag": "Candor",
+     "text": "“Seven.”",
+     "set": {
+      "s2e19_bread": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "She doesn’t look up. “I know what time the Stations are.” She brushes a crumb off the tray with the side of her hand, and lets him sit in it a moment. “I’m the one who told you.”",
+      "She takes a bite of bread like a ruling, and chews it, and the corner of her mouth is doing something it is under strict instructions not to do."
+     ],
+     "goto": "s11"
+    },
+    {
+     "tag": "Sincerity",
+     "text": "*Tear yours in half and trade her the better end.*",
+     "if": "jack_fridays",
+     "set": {
+      "s2e19_bread": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He tears his heel in half down the middle, which a baguette heel does not want to do, and it fights him and sheds, and he holds out the half with more of the soft inside in it and less of the end.",
+      "She takes it and turns it over and examines it with judicial gravity, the crust, the crumb, the tear. She keeps it. She hands him hers, which is worse.",
+      "At the next table Margot uncaps her pen over the open notebook, and holds it there, and writes nothing down, conspicuously."
+     ],
+     "goto": "s11"
+    }
+   ]
+  },
+  "s11": {
+   "slug": "FRIDAY · 7:00 PM · ST. BRENDAN THE NAVIGATOR — STATIONS OF THE CROSS",
+   "set": {
+    "stations_feb26": true,
+    "soul.grace": "+1",
+    "resolve.jack": "+1",
+    "rel.osei.warmth": "+1",
+    "resolve.lena": 5
+   },
+   "body": [
+    "Overhead the church is a boat turned keel-up on the hill, the Douglas-fir ribs going up out of the side walls in two long rows and meeting in the dark at the top, and on a Friday night in Lent forty people walk around inside the hull of it. The windows have only Ocean Road behind them at this hour. The blue glass is nearly black, keeping a little of its color only where the side lamps reach it, a deep cold blue like the bottom of a swimming pool at night.",
+    "There’s purple on the ambo and purple on the cloth at Mary’s feet and purple on the stole around Father Osei’s neck as he comes out of the sacristy behind the processional cross. A tall quiet sophomore from the nine o’clock carries it, and two acolytes come after him with candles. At the first station the cross stops, and Father Osei names it to the carving on the wall, *Jesus is condemned to death*, and reads the little meditation about the basin and the washed hands like news about a man he knew, and says, “We adore you, O Christ, and we praise you,” and forty people go down on one knee on the tile and answer, “Because by your holy cross you have redeemed the world,” Mrs. Fitch in her driving gloves a half-step out in front of the rest of them, as she is every Friday.",
+    "Lena is up front in the black lace, at the head of the little crowd, where the cross is.",
+    "Jack is at the back of the crowd, not the back of the church. When the cross turns from the first station toward the second, he goes with it.",
+    "He walked these at St. Brigid’s on Friday nights with Nonna’s hand on the back of his neck, before he was tall enough to see the carvings over the heads in front of him, and they haven’t gotten any easier to look at since. He has stopped expecting them to.",
+    {
+     "if": "jack_fridays",
+     "text": "He hasn’t eaten since noon, half a heel of bread, and the hunger has gone up out of his stomach into his head, a high clean ringing that puts sharp edges on the candle flames.",
+     "else": "He ate at noon, and it hasn’t done much; the day has gone up out of his stomach into his head anyway, a high ringing that puts sharp edges on the candle flames."
+    },
+    "It’s the hands this week. The rest of it has gone quiet, mostly, but the hands still want something to do and keep coming up with the one thing. At the first station, going down to the tile, his right hand goes to the breast pocket of the Carhartt, to the flat shape of the pack under the canvas, and stops there with two fingers on the button. He takes it back. He puts it on his knee, and gets up with the rest of them.",
+    "At the second station, *Jesus takes up his cross*, he’s beside an old man in a brown suit gone big on him at the shoulders, who gets down to one knee with a hand on the end of a pew and then can’t find a pew to get back up by. Jack gives him an arm. The old man takes it without looking at him, with the grip of somebody who lifted things for a living once, and comes up, and lets go. At the third he needs it again, and Jack is there, and after that it’s where Jack’s arm goes whenever the church kneels.",
+    "Between the stations, while the cross turns from one carving to the next with a noise of shoes and kneelers, Gus Ferreira gives a chord from the loft with the soft stops out and the church sings a verse of the old hymn: *At the cross her station keeping, / stood the mournful Mother weeping, / close to Jesus to the last.* Gus takes it lower than anybody, out of a chest that has spent a working life yelling across wet decks in weather, and the rest of them lean on him.",
+    "At the turns, the length of the nave ahead of him, he can see the lace. The back of her coat. At the corner by the sanctuary, her face in profile for the space of a verse, eyes down on the booklet, her lips a hair behind Mrs. Fitch on the response like everybody else’s. The cross goes on along the north wall, and she goes with it, and he looks at the carving in front of him, because that is what he came for.",
+    "Father Osei reads the meditations out of the booklet in the voice he uses for the parish announcements, unhurried, and doesn’t hurry the kneeling, and his left leg makes him slow at the corners, and he lets it. His eyes go to the carvings and the booklet and the floor in front of the cross, and not to anyone in the pews.",
+    "The stations go round the walls, dark carved wood, seven to a side, and he walks them. Somewhere along the walls one of them stops him, and the rest of the church goes on kneeling and rising around him while he stays in it."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "*The fourth: Jesus meets his mother.*",
+     "set": {
+      "s2e19_station": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "In the carving she has both her hands out toward him and can’t reach, because there is a soldier’s arm in the way, and the beam on his shoulder, and the crowd. Father Osei reads that she couldn’t take any of it from him, so she walked beside it.",
+      "Jack thinks of Ma on Wednesday night on Glenwood Avenue, the long cord stretched from the wall phone across the kitchen to the table, the tap going on and off behind her so he wouldn’t hear what her voice was doing, and *Good*, when he told her. He prays it for her. He doesn’t ask anything for her. He holds her up, the cord and the tap and the kitchen light over the table, where it can be seen, and leaves her there.",
+      "The cross turns toward the fifth. The verse begins again, and Mrs. Fitch is out ahead of it."
+     ],
+     "goto": "s12"
+    },
+    {
+     "tag": "Candor",
+     "text": "*The eighth: the women of Jerusalem.*",
+     "set": {
+      "s2e19_station": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "In the carving the women have their hands up over their faces, and he has turned his head to them under the beam, on the way to it, to tell them something. Father Osei reads it short, the station’s own words out of Luke: *Do not weep for me.* Weep for yourselves, and for your children.",
+      "Jack prays for a house on Del Playa. He doesn’t know what to ask for it and doesn’t pretend to. He asks nothing for himself. He puts the house there, its steps and its door and the light over the door and whoever is behind it, and leaves it in front of Him, and lets that be all.",
+      "When the church gets up, he gets up with it. Ahead of him the acolytes walk their candles on toward the ninth, the two flames leaning back from the going."
+     ],
+     "goto": "s12"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*The twelfth, and nothing to think at all.*",
+     "set": {
+      "s2e19_station": "restraint",
+      "trait.control": "+1"
+     },
+     "response": [
+      "*Jesus dies on the cross.* At the twelfth the church kneels on the bare floor and doesn’t get up; that’s the custom here, and Father Osei doesn’t read anything for a while.",
+      "Jack kneels on the tile with his hands open on his thighs. He came in with things to say, a whole week’s worth, and at the twelfth he can’t find one of them. He has nothing to bring to it. He brings that. The quiet goes on long enough to hear the building tick as it cools, and somebody’s stomach, and nobody laughs.",
+      "From the loft Gus’s organ comes back in under the silence, a single low note held a long time, and after it, the verse."
+     ],
+     "goto": "s12"
+    }
+   ]
+  },
+  "s12": {
+   "slug": "FRIDAY · 7:50 PM · ST. BRENDAN’S, THE FRONT STEPS",
+   "set": {
+    "asked_lena": true,
+    "lena_no": true,
+    "rel.lena.trust": "+1"
+   },
+   "body": [
+    "After the fourteenth and the closing prayer the forty find their coats, and the doors go open on the cold.",
+    "Outside it’s clear, the kind of cold California keeps for after dark in February, and the moon is up over the Grove across the road, a night short of full, laying the eucalyptus out in silver and black. The little crowd goes down the steps in twos and threes: two nurses from the hospital with their scrubs showing under their parkas, the man in the Cal Poly jacket who comes every Friday by himself and leaves by himself. At the curb on Ocean Road a minivan sits idling with its windows down and WHO DAT still ghosting through the road dust on its back glass.",
+    "Lena comes out ahead of him and stops on the top step, in the long yellow shape the doorway lays down the concrete, to button her coat. She does the long dark coat from the bottom up and leaves the top two, so the medal is there at her collarbone on its chain, catching some of the light from the doors. She reaches up and takes the lace off her hair, one pin and another, and folds it in half, and in half again, small enough to go in a fist.",
+    "Jack stops two steps below her. It puts her eyes level with his.",
+    "The last of the forty go down past them on either side. Mrs. Fitch, at the rail, working her driving gloves back on a finger at a time, looks from one of them to the other and back. “Goodnight, you two,” she says, and goes on down, a step at a time, holding on.",
+    "His hands are in the side pockets of the Carhartt. He takes them out, because it seems to him a man ought to have his hands out for this, and then they hang there at his sides with nothing in them, Lent humming in the fingers. Up close in the door light her cheeks are pink with the cold. There’s a bobby pin still in her hair above one ear, forgotten, catching the light, and the folded lace is in her right fist, and she hasn’t put either hand in a pocket.",
+    "Down the hill past the Grove the Channel is a long sheet of moon with the platform lights sitting out on it. Somewhere in the church behind her Gus is closing up the organ, and the lid comes down on the keys with a wooden knock that carries out the doors. A car goes by below with its radio up and takes its song away with it. Jack is very hungry and very awake, and he can feel his heart in the ends of his fingers. She has never looked like this to him; or she has always looked like this, and he was never allowed to stand this near and look, and he isn’t sure there’s a difference.",
+    "The steps are poured concrete, the edges worn round by Catholics late for Mass since Kennedy, with a crack across one of them that somebody filled with tar and somebody else’s heels have been picking at ever since. Behind her, through the open doors, Father Osei is putting out the nave lights from the switch plate by the sacristy, bank by bank, and each time a bank goes, the blue glass in the front of the church gives up a little more of its blue.",
+    "He had it worked out. He had it worked out at the sink in the fourth-floor bathroom on Wednesday, and on the walk to Morro, and lying on his back at two this morning looking at the ceiling of 412, and every time it came out longer, with more in front of it to get him started. One version began in August. One had Chesterton in it. One, around three, had something close to a diagram. Her eyes go past his shoulder to the street, once, and come back to him perfectly serious. She is looking at him over the folded lace, waiting. Her face says she has a fair idea what’s coming and has no intention of helping.",
+    "He leaves everything he had in front of it on the step."
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“I want to be with you. Not anybody’s anything. With you. Will you?”",
+     "cue": "Lena will remember how you asked.",
+     "key": "On the steps of St. Brendan’s after the Stations, you asked Lena to be with you — not anybody’s anything; with you.",
+     "set": {
+      "s2e19_ask": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "He says it to her eyes, with his hands at his sides: no joke at the front of it to get him going and none at the back to get him out. At *Will you* his voice goes up at the end, the way a real question does, and he lets it.",
+      "“No.”"
+     ],
+     "goto": "s12a"
+    },
+    {
+     "tag": "Wit",
+     "text": "“I’ve been advised to do this properly. Magdalena Thérèse Broussard, would you consider going with a dishwasher from Ohio?”",
+     "cue": "Lena will remember how you asked.",
+     "key": "On the steps of St. Brendan’s after the Stations, you asked Lena, by her whole name, whether she’d consider going with a dishwasher from Ohio.",
+     "set": {
+      "s2e19_ask": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "He gives her every syllable of the name, *Thérèse* and all, with a small bow from the neck, and *going with* the way the old people on Glenwood Avenue still say it about a couple at the Lenten fish fry. It’s a bit when it starts. Somewhere around *dishwasher* it stops being one, and his voice gets there before he does.",
+      "“No.”"
+     ],
+     "goto": "s12a"
+    },
+    {
+     "tag": "Candor",
+     "text": "“Be with me.”",
+     "cue": "Lena will remember how you asked.",
+     "key": "On the steps of St. Brendan’s after the Stations, you asked Lena in three words: Be with me.",
+     "set": {
+      "s2e19_ask": "candor",
+      "trait.candor": "+1"
+     },
+     "response": [
+      "Three words and nothing around them. He doesn’t take a step to say it, or lift a hand. He stands where he is on the cold concrete and says it to her, low, and doesn’t add a thing.",
+      "“No.”"
+     ],
+     "goto": "s12a"
+    }
+   ]
+  },
+  "s12a": {
+   "slug": "FRIDAY · 7:52 PM · THE FRONT STEPS",
+   "set": {
+    "first_kiss": true,
+    "rel.lena.heat": "+3",
+    "rel.lena.warmth": "+2",
+    "rel.lena.friction": "-2",
+    "resolve.lena": 5
+   },
+   "body": [
+    "It gets to him in the half second before he can see her face, and the half second is enough.",
+    "The step under his boot goes soft, and the cold of it comes straight up through the sole. Everything he has carried up the hill since Wednesday stops dead in his chest and runs up into the back of itself, a line at Lordstown when somebody hits the red button and every car on it noses into the one in front. His throat shuts on the next thing he had to say, and there isn’t a next thing; there wasn’t supposed to be one. He has had that word from her since August in every voice she owns, across tables, up stairwells, in pencil in a margin, and in the half second all of them come back at once and stand on the step with this one.",
+    "Behind him, down on Ocean Road, a sliding door rolls shut. An engine comes up off idle. He hears it before he understands it, and looks round, and it’s Kevin’s mother’s Odyssey pulling away from the curb, not fast and not slow, at precisely the speed limit, with its blinker on, and in the side window under the streetlight, for one frame, Laney, both hands clapped over her mouth. WHO DAT goes by on the back glass, and the van goes off down Ocean Road toward campus with its taillights getting smaller.",
+    "He looks back up at Lena.",
+    "Her face is perfectly level. Chin up, mouth composed, brows not doing a thing, eyes steady on his: the face she keeps for Hale when Hale is wrong and hasn’t found out yet. It holds one more second. For Lena Broussard that is a very long time.",
+    "And then it doesn’t.",
+    "It goes at the corners first. Her mouth goes and her eyes go with it, and then she’s laughing, at him, at whatever his face has been doing since the word, the laugh with every sound in it, from low down, and it goes out over the steps and out over Ocean Road after the van.",
+    "“Was that Kevin’s *mama’s* van?”",
+    "“Doing exactly twenty-five,” Jack hears himself say, and that finishes her.",
+    "The step comes back under his boot. It comes back all at once, solid, and so does the rest of him, and he starts to laugh too, he can’t help it, on the steps of a church after the Stations of the Cross with the moon up and his heart still trying to find where it left off. She watches him get there. She’s still laughing when she says the rest, but the laugh goes up above it somewhere and leaves it standing plain and level underneath, every word set down where she means it to go.",
+    "“Ask me to dinner, Costigan. Then ask me again. Then ask me.”",
+    "It goes into him the way a work order goes up on the pegboard in Frank’s garage, three lines in a hand you don’t argue with, and he has all three lines by heart before she’s done saying them, and the step under him is concrete again, poured and cured and going nowhere.",
+    "“Okay,” he says. It comes out with a laugh cracked down the middle of it that he didn’t put there. “Yeah. Okay. I can do that.”",
+    "And there isn’t any more of the steps. He’s going up to her and she’s already coming down to him, and whatever was left of the concrete is gone.",
+    "Her face is cold. That’s the first thing: her cheek under his palm, cold from standing out on the top step, and then his hand finds her jaw and goes on past it, into the hair at the back of her neck, where it’s warm, where the lace was an hour ago. Her mouth is cold too, at the start. Then it isn’t. She’s still smiling when it begins; he can feel the smile against his mouth, and then he can’t, because she has stopped smiling to kiss him back, and that takes all of her. The folded lace is in her fist, and the fist is up against his collar with the knuckles hard against his neck. Her other hand comes up flat on the front of the Carhartt, over the breast pocket and what’s in it, and stays there. His own free hand has found the small of her back, over the wool of the coat, and keeps to it.",
+    "He wants her. He has wanted her since a morning at the end of August, and he has spent every month since finding out how many ways there are not to, and none of them is happening now. It isn’t careful and it isn’t for anybody; there’s nobody left on the steps, and he wouldn’t know if there were. Where his wrist crosses her collarbone the medal is pressed between his skin and hers, a small hard coin of cold, and it goes warm while he isn’t paying attention. Somewhere behind her another bank of lights goes out, and he knows it only because the dark behind his eyelids gets darker.",
+    "It goes on long enough for him to stop thinking in sentences. It doesn’t go on long enough for him to forget whose steps these are.",
+    "She’s the one who breaks it. She doesn’t go far. She pulls back just enough to take her mouth off his and leaves her forehead against his forehead, and keeps it there. Their breath goes up white in the light from the doors, his and hers, and there’s no telling whose is whose.",
+    "He keeps his eyes open. He’s near enough to see that the cold has made her lashes wet at the corners, and that a strand of her hair has got caught between his forehead and hers, and he leaves it. Her coat smells of the church, candle wax and cold wood, and under that of her.",
+    "Her eyes are open, very close, and laughing at him.",
+    "“You’re being very familiar, Costigan,” she murmurs, “for a man who hasn’t asked me on a date yet.”"
+   ],
+   "choices": [
+    {
+     "tag": "Sincerity",
+     "text": "“Then let me ask you.”",
+     "cue": "Lena will remember that.",
+     "key": "With your forehead against Lena’s after your first kiss, you asked to ask her — and she told you properly means not the same night.",
+     "set": {
+      "s2e19_familiar": "sincerity",
+      "trait.sincerity": "+1"
+     },
+     "response": [
+      "“Not tonight, Costigan. *Lord.* Properly means not the same night.”",
+      "She’s laughing again, very low, so that he feels it in her forehead more than he hears it, and she doesn’t take her forehead off his."
+     ],
+     "goto": "s12b"
+    },
+    {
+     "tag": "Wit",
+     "text": "“I’ve been told there are forms.”",
+     "cue": "Lena will remember that.",
+     "key": "With your forehead against Lena’s after your first kiss, you told her you’d heard there were forms. There are so many forms, she said.",
+     "set": {
+      "s2e19_familiar": "wit",
+      "trait.wit": "+1"
+     },
+     "response": [
+      "“There are *so* many forms.” She says it like a woman who drafted every one of them herself, in triplicate, and has the carbons in her pocketbook.",
+      "Behind her the last bank of lights goes out and the blue glass goes black, and what’s left is the streetlight from Ocean Road, and her eyes in it."
+     ],
+     "goto": "s12b"
+    },
+    {
+     "tag": "Candor",
+     "text": "“I’ve been familiar with you since August. I just never said.”",
+     "cue": "Lena will remember that.",
+     "key": "With your forehead against Lena’s after your first kiss, you told her you’d been familiar with her since August and had just never said.",
+     "set": {
+      "s2e19_familiar": "candor",
+      "trait.candor": "+1",
+      "soul.honesty": "+1"
+     },
+     "response": [
+      "She has nothing to say back to that. He feels her start to; her forehead moves against his, and her mouth opens, and nothing comes, and she shuts it again.",
+      "Instead she presses her forehead harder against his, and leaves it there a while longer, with her eyes closed."
+     ],
+     "goto": "s12b"
+    },
+    {
+     "tag": "Restraint",
+     "text": "*Stay where you are, foreheads touching, and say nothing.*",
+     "cue": "Lena will remember that.",
+     "key": "With your forehead against Lena’s after your first kiss, you stayed where you were and said nothing, and she called it a good answer.",
+     "set": {
+      "s2e19_familiar": "restraint",
+      "trait.control": "+1",
+      "soul.restraint": "+1"
+     },
+     "response": [
+      "So he says nothing. The cold comes up off the concrete through his boots. Somewhere out on the Mesa a car downshifts for the hill. She lets the quiet run until it’s nearly a question, and then she lets it run past that.",
+      "“Good answer,” she says.",
+      "Down on Ocean Road the street is empty both ways, and the light at the corner turns green on nobody’s account."
+     ],
+     "goto": "s12b"
+    }
+   ]
+  },
+  "s12b": {
+   "slug": "FRIDAY · 8:10 PM · OCEAN ROAD",
+   "set": {
+    "held_hands_feb26": true
+   },
+   "body": [
+    "The church is dark behind them when they go down the steps. Father Osei hasn’t come out. They go down side by side, not touching, Lena with the lace in her coat pocket now and her hands in after it, and at the bottom they stand at the corner of Ocean Road and wait for the light, which takes its time.",
+    "The street is empty in both directions. Kevin’s mother’s van is long gone. Across the road the Grove stands up black, and the moon is over it, white enough to make the streetlights look like they’re only trying, and the eucalyptus send their smell down across the asphalt, menthol and cold and something under it like a cat that has been somewhere it shouldn’t.",
+    "The light changes. Stepping off the curb, her hand finds his.",
+    "Her fingers are cold. His aren’t steady. She doesn’t seem to mind about that, and keeps his hand anyway, and takes a better grip on it in the middle of the crosswalk, as if she has decided something about the fit, and they go over Ocean Road like that, inside the white lines, not fast.",
+    "“Your hand’s shaking,” she says, halfway over.",
+    "“It’s Lent.”",
+    "“It is not Lent.”",
+    "“It’s a little bit Lent.”",
+    "On the far curb she puts their two hands into the side pocket of his Carhartt, out of the cold, without a word about it, as though that’s where the two of them have always been kept. There’s a gumband in there, and a receipt from the Anchor, and her fingers find both and leave them be.",
+    "They take the path past the bike racks and along the dark edge of the Commons lawn, under the trees, and he doesn’t let go of her for anything, not to fix his collar, not to point at the moon, and she doesn’t either. A kid on a bike comes down the path toward them with a headlamp strapped to his helmet, swings wide around the two of them on the grass, and rings his bell at them, one bright ding, and is gone up the path. Off toward Las Olas somebody’s Friday is getting going, a bass line through a wall. He couldn’t tell you afterward what else they said. Her thumb moves once across his knuckles, and he would be able to tell you about that in detail for the rest of his life.",
+    "The trees open and there’s Delgado, a grid of windows, most of them lit on a Friday night, and on four, near the east end, one window lit brighter than the rest, with the blinds all the way up.",
+    "They both look up at it. What’s behind it, they don’t say.",
+    {
+     "if": "s2e16_alliance==\"sincerity\"",
+     "text": "On the levee he told her they’d thrown the towel in, in Arizona, and picked it back up. *With a coconut,* she said."
+    },
+    {
+     "if": "s2e16_alliance==\"wit\"",
+     "text": "On the levee he said somebody ought to send them a fruit basket, and she said a *bill*."
+    },
+    {
+     "if": "s2e16_alliance!=\"sincerity\" && s2e16_alliance!=\"wit\"",
+     "text": "On the levee they laughed about the pair of them till it hurt."
+    },
+    "“He signaled,” Lena says, to the window, still not over it.",
+    "“He always signals.”",
+    "“At a *getaway*.”",
+    "In the east stairwell the tube light is humming over the landing, and the wired glass is black. On two, where her door is, she doesn’t let go. On three she doesn’t. On the fourth-floor landing she lets go of his hand to push the door, and down the hall, from somewhere near the end of it, something orchestral and enormous is playing, strings, a great many of them, slow, at a volume nobody plays anything at on a Friday in Lent."
+   ],
+   "next": "s13"
+  }
+ }
+}
