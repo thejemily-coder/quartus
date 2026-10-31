@@ -1,0 +1,621 @@
+{
+  "scenes": {
+    "s01": {
+      "slug": "SUNDAY · 8:40 AM · DELGADO HALL, ROOM 412",
+      "set": {
+        "s2e18_on": true,
+        "slept_sun": true
+      },
+      "body": [
+        "He came in from the vigil at half past seven last night, lay down on the bed with his boots still on, and slept for twelve hours, which is the answer, a day late, to what Father Osei asked him yesterday in the office with the two chairs: “When did you sleep?”",
+        "Now the window is full of Sunday. The wet week blew out to sea sometime in the night and left every roof between Delgado and the water shining, and the eucalyptus outside is steaming in the sun, giving its rain back as menthol. Day five. His hands are awake before he is. They find the breast pocket of his shirt before his eyes are open, and pat it, and come away with nothing. Whatever the rest of him was asking for, it quit somewhere in Louisiana. The hands never got the news.",
+        "He sits up. Everything aches in the good way, a body that has finally been paid what it was owed. Across the room Theo is asleep on top of his covers in his blazer, flat on his back with his fingers laced on his stomach like a knight on a tomb. The hems of his trousers are wet to the shin and there’s sand in the cuffs, and his shoes are paired by the door with sand dried white in their welts. Down the hall somebody’s shower comes on, and the old pipes sing in the wall. Jack lets him sleep.",
+        {
+          "if": "s2e17_wed==\"house\"",
+          "text": "Mémère’s St. Joseph leans on the headboard ledge under the crucifix with his lily and his carpenter’s square, still looking off to one side at something more interesting than Jack."
+        },
+        "On the desk, face down where he left it Friday, is Nonna’s purple card. Beside it is the pack, red and white, the cellophane catching the window, a reach from the foot of the crucifix. Hale’s legal pad is on the chair, yellow, fat with pencil, curling at the corners like a sandwich left out. His shirt smells of the vigil’s incense and two days of himself.",
+        "Last night’s Gospel is still in his head in pieces, like a song after the car is off. *One does not live on bread alone.* The devil in the desert quoting the psalm back at Him word for word, a kid who did the reading and wants you to know he did the reading. And the last line, which Jack had forgotten was in there and lay awake on for about a minute before the twelve hours took him: *he departed from him for a time.* For a time. He heard this Mass last night, at the back, by the holy water. St. Brendan’s is hers today, every Mass on the board, and he means to stay off that hill till dark.",
+        "The RAZR is on the windowsill where he dropped it, and the outside screen says he has two messages, 8:31 and 8:32.",
+        {
+          "if": "s2e17_three==\"wit\"",
+          "text": "Yesterday on the church steps he asked her for a page of the binder, and was told he didn’t get one till Tuesday."
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "2. ok ONE page. its sunday. this is time sensitive",
+          "time": "8:31 AM",
+          "if": "s2e16_lent==\"wit\""
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "LOOPHOLES p.1: sundays dont count. the 40 days skip them. 46 minus 6. look it up. i did. you can smoke today. im only the messenger",
+          "time": "8:32 AM",
+          "if": "s2e16_lent==\"wit\""
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "2. did you say one for me today",
+          "time": "8:31 AM",
+          "if": "s2e16_lent==\"sincerity\""
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "also. i looked it up. sundays dont count. the 40 days skip them. you can smoke today. im only the messenger",
+          "time": "8:32 AM",
+          "if": "s2e16_lent==\"sincerity\""
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "2. still for real?",
+          "time": "8:31 AM",
+          "if": "s2e16_lent!=\"wit\" && s2e16_lent!=\"sincerity\""
+        },
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "also. i looked it up. sundays dont count. the 40 days skip them. you can smoke today. im only the messenger",
+          "time": "8:32 AM",
+          "if": "s2e16_lent!=\"wit\" && s2e16_lent!=\"sincerity\""
+        },
+        "He reads *im only the messenger* sitting up in bed in yesterday’s shirt, and his face does what it does for her, all by itself. She’s right about the arithmetic. The forty days don’t count the Sundays; he knew that at twelve, from the purple calendar St. Brigid’s sends home every February with the Sundays left white. Forty-six minus six. She looked it up for him, in Canada, on a Sunday, before nine in the morning. He can see her doing it: cross-legged on a bed in Burnaby with a laptop on a pillow and her hair still in pins from Saturday, typing *do sundays count lent* into Google and reading three Catholic websites and one cross Lutheran one to the bottom, because once Skye starts research for a part she does all of it.",
+        "So the pack is a reach from the crucifix, and it’s Sunday, and the only thing standing between him and the loophole is that he doesn’t want it. Not the cigarette. The hands want the cigarette so badly he can feel it in the joints of his fingers. The loophole. It’s the same thing that put bread and water on his tray on Friday, and he couldn’t tell you its name."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "*“not this one. its not that kind of lent”*",
+          "set": {
+            "s2e18_loophole": "sincerity",
+            "loophole_refused": true,
+            "trait.sincerity": "+1",
+            "soul.restraint": "+1",
+            "resolve.jack": "+1"
+          },
+          "key": "On the First Sunday of Lent Skye sent you the loophole — Sundays don’t count. You told her it isn’t that kind of Lent.",
+          "response": [
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "not this one. its not that kind of lent",
+              "time": "8:44 AM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "noted. the messenger is impressed and a little scared. 2",
+              "time": "8:45 AM"
+            },
+            "He turns the pack face down on Nonna’s card, as if that settles which of the two of them it answers to."
+          ],
+          "goto": "s02"
+        },
+        {
+          "tag": "Wit",
+          "text": "*“the devil quotes scripture too. luke 4. heard it last night”*",
+          "set": {
+            "s2e18_loophole": "wit",
+            "loophole_refused": true,
+            "trait.wit": "+1",
+            "soul.restraint": "+1",
+            "resolve.jack": "+1"
+          },
+          "key": "On the First Sunday of Lent Skye sent you the loophole — Sundays don’t count. You told her the devil quotes scripture too.",
+          "response": [
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "the devil quotes scripture too. luke 4. heard it last night",
+              "time": "8:44 AM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "did he win",
+              "time": "8:45 AM"
+            },
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "no",
+              "time": "8:45 AM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "then hes a bad scene partner. 2",
+              "time": "8:46 AM"
+            },
+            "He laughs out loud at a quarter to nine on a Sunday, and across the room Theo says something into the sleeve of the blazer that isn’t a word."
+          ],
+          "goto": "s02"
+        },
+        {
+          "tag": "Candor",
+          "text": "*“i know. im not taking it”*",
+          "set": {
+            "s2e18_loophole": "candor",
+            "loophole_refused": true,
+            "trait.candor": "+1",
+            "soul.honesty": "+1",
+            "soul.restraint": "+1",
+            "resolve.jack": "+1"
+          },
+          "key": "On the First Sunday of Lent Skye sent you the loophole — Sundays don’t count. You told her you know, and you’re not taking it.",
+          "response": [
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "i know. im not taking it",
+              "time": "8:44 AM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "i know you know. i just like handing you options. its my love language. 2",
+              "time": "8:45 AM"
+            },
+            "He shuts the phone, sets it on the desk beside the pack, and goes down the hall to stand under whatever hot water the shower left for him, for a long time, with his hands braced on the tile."
+          ],
+          "goto": "s02"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Put the pack in the desk drawer and don’t answer for an hour.*",
+          "set": {
+            "s2e18_loophole": "restraint",
+            "loophole_refused": true,
+            "trait.control": "+1",
+            "soul.restraint": "+1",
+            "resolve.jack": "+1"
+          },
+          "key": "On the First Sunday of Lent Skye sent you the loophole — Sundays don’t count. You put the pack in a drawer and didn’t answer her for an hour.",
+          "response": [
+            "He puts the pack in the drawer, on top of a dead highlighter and the syllabus for Hale’s seminar, and shuts it, and doesn’t answer. The hour is long. He sits on the edge of the bed with his hands between his knees and listens to Theo sleep, and to the shower down the hall run and stop and run.",
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "?",
+              "time": "9:12 AM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "ok saint. 2",
+              "time": "9:40 AM"
+            },
+            "A minute later he opens the drawer and takes the pack back out, because a drawer is where you hide a thing and he isn’t hiding it, and puts it in the Carhartt on the back of the chair."
+          ],
+          "goto": "s02"
+        }
+      ]
+    },
+    "s02": {
+      "slug": "SUNDAY · 11:00 AM · ANACAPA COMMONS — SUNDAYS DON’T COUNT",
+      "body": [
+        "The Commons on a Sunday runs on the waffle irons. There are four of them on the far counter, and kids in pajama pants and last night’s mascara flip them over on their hinges and stand guard, and each one hisses when the lid comes down and beeps when it’s done, so the room keeps a slow, lopsided time. The omelet line goes back past the cereal. At the long table a guy is asleep sitting up with his hood pulled over his face and a plate of hash browns in front of him he paid for and won’t see. The radio over the dish return is playing something with a drum machine in it, low enough that nobody has to admit to knowing the words.",
+        "Jack has a cup of coffee and a piece of wheat toast and nothing to say. He doesn’t mention the page on his phone.",
+        "At the omelet station a freshman in a Marisol Rowing hoodie is ordering an omelet with every single thing in the bins, one at a time, and the cook, who has been up since five, is adding each one with the face of a man who has seen how this ends.",
+        "Kevin comes in from the nine o’clock at St. Brendan’s in a pressed shirt with the creases still standing in the sleeves, carrying a plate of scrambled eggs and a cup of cut fruit and nothing at all from the pastry case, where the bear claws this morning are the size of catcher’s mitts. He sits, crosses himself, says grace with his eyes shut, short, a grace with a curfew, and opens them on Margot, who is looking at his tray.",
+        "“No bear claw.”",
+        "“Bà Nội says Sundays count.”",
+        "Margot uncaps a ballpoint and draws on her napkin: a little grid, seven squares across, Ash Wednesday at the top left and a cross at the bottom right, and the Sundays struck through, one, two, three, four, five, six. She does the sum with the tip of the pen.",
+        "“Forty-six days from Ash Wednesday to Easter Eve,” she says. “Minus six Sundays. Forty.” She turns the napkin around and slides it across to him past the syrup. “The Church did the arithmetic, Kevin. Your grandmother is holier than the Church.”",
+        "“My grandmother is aware.” Kevin picks a strawberry out of the cup and eats it slowly, from the point down, like a man defusing it.",
+        "“It isn’t a rule,” Margot says. “It’s the absence of a rule. She’s fasting from a loophole.”",
+        "Jack drinks his coffee.",
+        "“Not counted isn’t the same as not kept,” Kevin says, and takes another strawberry, and Margot looks at him over the napkin, and then folds it in half and puts it in the pocket of her coat, to keep or to burn.",
+        "Kevin turns the sunny end of himself on Jack. “You look like you slept.”",
+        "“Twelve hours.”",
+        "“Clinically, that’s a coma.” Kevin pushes the fruit cup an inch toward him. “Eat a melon. It’s Sunday. Even Bà Nội eats melon on Sunday.”",
+        "Jack eats a piece of melon, to be polite to somebody’s grandmother.",
+        "Laney comes in at five past eleven wearing sunglasses. Big ones, indoors, in February, and there’s nothing on her tray but a black coffee, and Laney Price eats breakfast like a lumberjack who’s been told it’s free. She sits down. She crosses her legs. She uncrosses them. She takes the pink BlackBerry out and lays it face down by the coffee, and turns it face up, and face down again.",
+        "Since the boulders at Texas Canyon Laney has known what today is, and Jack knows that she knows, and how much. She has done her makeup, and under the sunglasses, as far as he can tell, done it twice. She doesn’t say a word about any of it. It comes off her anyway, like heat off a road.",
+        "Margot looks at the sunglasses, and at the black coffee, and at the BlackBerry going over and back like a pancake, and then across the table at Jack, as if he might be the footnote. Jack keeps his face where it is and reaches for the jam he doesn’t want.",
+        "“What are you doing today, Costigan?” Laney asks the ceiling fan, about as casually as a person asks the time during a bank robbery.",
+        "“Nothing.”",
+        "“*Good.*” She stands up. “I have to go check on something.” She takes the coffee with her, and the BlackBerry, and the sunglasses stay on all the way to the doors.",
+        "Kevin watches her go. “That’s textbook,” he says. “Textbook what, I couldn’t tell you without bloodwork.”",
+        "The RAZR goes off on the table beside the toast, and for once it isn’t Skye.",
+        {
+          "type": "sms",
+          "from": "Dad",
+          "text": "74-67. AT EAST LANSING. TURNER.",
+          "time": "11:08 AM"
+        },
+        {
+          "type": "sms",
+          "from": "Dad",
+          "text": "GO TO MASS.",
+          "time": "11:09 AM"
+        },
+        "He knows the scene: the space heater, the little TV on the workbench with the foil on its rabbit ears, his father in the folding chair with the door down, a man who would sooner drive to Columbus than call his son to say his team won. Jack answers in his father’s capitals, slow going on a RAZR, a key at a time.",
+        {
+          "type": "sms",
+          "from": "Jack",
+          "text": "WENT LAST NIGHT. VIGIL.",
+          "time": "11:11 AM"
+        },
+        {
+          "type": "sms",
+          "from": "Dad",
+          "text": "GOOD.",
+          "time": "11:12 AM"
+        },
+        "That’s all. In capitals it sounds the way it does in the garage.",
+        "The legal pad is in the bag at his feet, Hale’s yellow pad, fat now and curling at the corners: four thousand words of “THE SECOND LINE” in pencil, due tomorrow at one, and not one of them *liminal*. It’s a quarter past eleven. It won’t be dark till six. Room 412 has Theo asleep in it in a wet blazer, and the afternoon stretches out in front of him with nothing in it but a phone that isn’t going to ring, and he has to put his hands somewhere."
+      ],
+      "choices": [
+        {
+          "tag": "The Brick",
+          "text": "*Take Hale’s legal pad to the Brick and type it.*",
+          "set": {
+            "s2e18_sun": "brick"
+          },
+          "response": [
+            "He buses his tray and goes out past the omelet line with the bag on his shoulder. “Double-spaced,” Kevin calls after him. “He counts.”",
+            "“Hale doesn’t count,” Margot says. “Hale *weighs*.”"
+          ],
+          "goto": "s03b"
+        },
+        {
+          "tag": "The Anchor",
+          "text": "*Go where somebody will give your hands a job.*",
+          "set": {
+            "s2e18_sun": "anchor"
+          },
+          "response": [
+            "He’s halfway to the doors before he’s decided where, with the bag on his shoulder and the legal pad still in it, because he forgets to take it out."
+          ],
+          "goto": "s03a"
+        }
+      ]
+    },
+    "s03b": {
+      "slug": "SUNDAY · 1:30 PM · THE BRICK, EIGHTH FLOOR",
+      "set": {
+        "brick_sunday": true,
+        "essay_typed": true
+      },
+      "body": [
+        "The eighth floor of the Brick on a Sunday afternoon belongs to the light. It comes in level off the Channel through the long windows and turns the dust over the carrels into something you could almost read by, and out past the roofs the platforms stand in the water with their lights not on yet. There’s nobody up here but a cart of reshelving left for Monday and a girl asleep at the far end on her organic chemistry with the highlighter still uncapped in her fist.",
+        "Her floor. *Bring your margins.* Her carrel is the one by the east window, where the water shows between two roofs, and the chair is pushed in square to the desk. He doesn’t sit there. He takes a public terminal two rows back, with his back to it, and props Hale’s legal pad against the monitor, and logs in.",
+        "Four thousand words in pencil. He types the first sentence as it was always going to go, *The band goes out slow and comes back loose,* and then the one after it, and the one after that, his own handwriting going into Times New Roman, a font with no idea it was ever handwriting. His pencil was worse than he remembered. In two places he can’t read himself and has to guess what he meant on a curb in New Orleans, and guesses, and it’s probably better.",
+        {
+          "if": "s2e16_line==\"reckless\"",
+          "text": "On page three is the sentence he wrote with the horns still in his ears, and it goes in as written: *A trumpet player swings out of the line and points his bell at one fool on the curb and plays at him, only him, and the fool is not on the curb anymore.*",
+          "else": "On page three is the sentence he wrote on the curb, and it goes in as written: *From the curb, a second line looks like a parade going by, and from the curb that is all it will ever be.*"
+        },
+        "The RAZR is face up on the desk by the keyboard. It doesn’t ring. He knows it won’t. She won’t call; she’ll come. The phone lies there anyway with its little outside screen dark, and he checks it every page or so, the way you check a pot.",
+        "His hands, given forty keys and a job, are content for the first time in five days. They go at it like they’ve been let out of the house.",
+        "The clock in the corner of the screen says 2:10, and he’s on page six, Rex going by, the kids up on their ladders and the king on his float with a scepter, waving at a city that has waited for him since Twelfth Night. It says 3:40, and he’s on the brass bands, the sousaphones worn on the men like they grew there, and somewhere behind him a printer wakes up, thinks about it, and goes back to sleep. It says 4:55. He puts his head down and types a page without looking up at anything, and when he looks up it says 5:24, and the light on the carrels has gone long and orange and the girl with the highlighter has packed up and gone.",
+        "The last paragraph is the one he couldn’t write on the legal pad either. It’s about the waiting. The second line goes by, and the people on the curb wait for it to come back around the block, because it does come back, that’s the thing about it; you stand on the curb with your hands at your sides and it comes back, loose. He sits with his fingers on the home row and can’t make them do it.",
+        "At half past five he types it straight through, start to finish, and doesn’t read it back.",
+        "The eighth-floor printer takes his card by the page and pushes the essay out warm, a sheet at a time, into the tray. He staples it with the stapler on the chain beside the printer, somebody having once walked off with the last one. *THE SECOND LINE*, at the top. *John Costigan.* *Prof. A. Hale, PHIL 109H.* Four thousand and twelve, by the counter at the bottom of the screen.",
+        "He puts it in his bag and the bag on his shoulder, and goes past her chair without touching it, and down eight flights instead of the elevator, and home the long way along the bluff. It’s dark by the time he gets to Delgado."
+      ],
+      "next": "s04"
+    },
+    "s03a": {
+      "slug": "SUNDAY · 1:30 PM · THE ANCHOR — THE COUNTER",
+      "set": {
+        "anchor_sunday": true,
+        "essay_typed": true
+      },
+      "body": [
+        "The harbor throws Sunday light in through the Anchor’s front windows, and it gets as far as the pie case and quits. The fishermen are long gone; they were gone before church. Merle’s stool at the end of the counter is empty. The only booth taken is the window one, where a family in Sunday clothes is working through pancakes and a baby in a wooden high chair is throwing Cheerios at the glass one at a time and studying where each one lands.",
+        "It isn’t his day. His nights are Tuesday, Thursday and Saturday, seven to one, and the twentieth was yesterday. He comes in anyway, because his hands need a job and 412 hasn’t got one, and he sits at the counter with the bag at his feet.",
+        "Gloria is behind the case with the grease pencil stuck through the knot of her hair, giving the pies their quarter-turn, a lattice, a cream, a pecan, each one faced out to the room like it’s posing for a yearbook.",
+        {
+          "if": "s2e14_gloria==\"sincerity\"",
+          "text": "She looks at him over the pecan. “You came back the twentieth,” she says. “It’s the twenty-first. You don’t work Sundays.”",
+          "else": "She looks at him over the pecan. “Sit,” she says. He’s sitting."
+        },
+        {
+          "if": "s2e14_gloria==\"sincerity\"",
+          "text": "“I know.”"
+        },
+        "She goes in back and comes out with a bus tub of clean silverware, still warm from the machine, and a brick of paper napkins in its band, and sets them in front of him, and walks off. She doesn’t ask him why.",
+        "At the pass Rudy looks out at him under the heat lamps. “Mijo,” he says, and nothing else. On the shelf over the line Rudy’s radio is playing something low in Spanish, a man and an accordion and a long story.",
+        "The family in the window booth pays at the register, the father counting out ones, the baby asleep at last on his shoulder with a Cheerio stuck to its cheek. Gloria watches them out the door. “Banana cream,” she says, to nobody in particular. “Sweet all the way down. Nothing wrong with it.” It’s the only pie she rates all afternoon.",
+        "Jack rolls silverware. Napkin flat, a corner pointed at him. Knife, fork, spoon, the handles even at the bottom. Fold the corner up over the handles, fold in the sides, roll it tight, and the paper band around the middle, licked and pressed down with a thumb. It’s a job that wants exactly as much as his hands have, and not one thing more. He sets the RAZR face up on the counter by the tub, where he can see it, and rolls.",
+        "An hour in, there are forty rolls in the crate at his elbow, and Gloria stops across the counter from him with a rag over her shoulder and looks at the phone.",
+        "“You waiting on a call?”",
+        "“No.”",
+        "“Then put it in your pocket. It’s making the pie nervous.”",
+        "He puts it in his pocket. It doesn’t ring there either. She won’t call. She’ll come.",
+        "Around three Gloria sets a grilled cheese in front of him, cut corner to corner, and a cup of tomato soup with the crackers on the saucer, and says, “Eat.” He eats. It’s Sunday. Rudy watches from the pass until the plate is clean, and nods at it.",
+        "The Coca-Cola clock over the pass runs ten minutes fast, and everybody who works here knows it and nobody sets it back. It says 2:40. It says 3:50, and a pair of surfers come in with wet heads for coffee to go and go. It says 4:55, and the minute hand goes over the top and starts down the other side, and he rolls a fork into a napkin, and another, and another.",
+        "When the Coca-Cola clock says six, ten to six really, Gloria comes and stands in front of the empty tub and the full crate. She reaches down and draws the legal pad halfway out of his bag. She saw him carry it in. She taps it twice with the grease pencil out of her hair.",
+        "“Type that,” Gloria says. “It looks like somebody’s homework.”",
+        "She takes the crate in back without another word, and on the shelf over the line Rudy’s radio goes from the accordion to a man reading the news."
+      ],
+      "next": "s04"
+    },
+    "s04": {
+      "slug": "SUNDAY · 6:30 PM · DELGADO HALL, THE EAST STAIRWELL — MA",
+      "body": [
+        "The east stairwell has the best reception in Delgado and no secrets at all. Sound goes up and down the well like water in a pipe; a thing said two floors down can be heard on four, if you sit still. He sits on his step, the third down from the top. The tube light over the landing holds its one note. The wired-glass window is full of the last of the sun.",
+        {
+          "if": "s2e18_sun==\"brick\"",
+          "text": "The essay is in the bag at his feet, printed, the staple bright in the corner.",
+          "else": "Hale’s legal pad is on his knee, still in pencil, one corner soft from his thumb."
+        },
+        "Ma calls on the dot, as she has every Sunday since August. It’s half past nine on Glenwood Avenue. The dishes are done, his father is in the garage with Sinatra and the space heater, and she’s on the kitchen phone with the long cord; he can tell from her voice coming and going as she walks it to the sink and back.",
+        "“Your grandmother wants to know did you get it.”",
+        "“I got it. Tell her I got it. It’s on my desk.”",
+        "“All right. Did you go to Mass?”",
+        "“Last night. The vigil.”",
+        "“Your father says you told him in capitals.”",
+        "“He started it.”",
+        "“Are you sleeping?”",
+        "“Twelve hours last night.”",
+        "“Twelve’s good,” Ma says. “Twelve I like.”",
+        "“She gave up coffee, you know,” Ma says. “Five days. She’s a menace. She told Father Dom at the door after the ten-thirty that his homily was too long.”",
+        "“Was it?”",
+        "“Twenty-two minutes. On the desert. Your father timed it.” The tap goes on and off. “That’s not the point. You don’t say it at the door.”",
+        "“And the Broussards?”",
+        "“They fed me every two hours, Ma.”",
+        "“Good. Somebody should.” A chair leg scrapes on the linoleum; she’s sitting down at the kitchen table. “Your father still can’t get over it. His son in New Orleans for the Super Bowl. He tells people at the Sparkle like you won it yourself.”",
+        "“I watched it on the floor of a front room on Dupre Street.”",
+        "“Don’t tell him that. He’s got you on Bourbon Street.”",
+        "“I was on Bourbon Street after.”",
+        "“Don’t tell him that either.”",
+        "“Gina says she wrote on your wall and you never wrote back.”",
+        "“I’ve been in a van, Ma.”",
+        "“That’s what I told her. She says a van has a phone in it.”",
+        "Behind Ma, Nonna says something in Calabrese, sharp and short, the voice she uses on a television she disagrees with.",
+        "“She says the summer,” Ma says. “She wants to know about the summer.” He hears her shift the phone to the other shoulder. “She wants Maria Caterina at the table. Her words. She wants to see is she too thin.” The cord, the sink, the tap going on and off. “I’m asking because she asked. And because I want to know.”",
+        "He can see the table. The leaf put in for company, the good cloth, Nonna at the far end in her cardigan already deciding what to feed a girl from California and how much. He can’t tell her. Skye gets it first, to her face, before anybody on earth gets it on a phone. And he won’t lie to his mother, not on a Sunday, not about this.",
+        "Ma knows tired. On Friday she told him so. Tonight she doesn’t tell him anything. She waits, with the radiator ticking under the kitchen window on the other side of the country, and when he doesn’t give her anything she says, to the kitchen in general, “When your father has a thing he won’t say, he goes out and changes the oil in the Silverado. It doesn’t need it. It’s the cleanest oil in Mahoning County.”"
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“I’ll call you Wednesday, Ma. I’ll have something to tell you.”",
+          "set": {
+            "s2e18_ma": "candor",
+            "ma_wednesday": true,
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "key": "On Sunday your mother asked about the summer. You told her you’d call Wednesday — you’d have something to tell her.",
+          "response": [
+            "“Is it good or bad?”",
+            "“It’s true.”",
+            "“That’s not what I asked.”",
+            "A long Glenwood silence: the radiator, the cord, Nonna in the next room asking who it is. “Wednesday,” Ma says, the way she writes a thing on the calendar by the phone, in pen."
+          ],
+          "goto": "s05"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“Tell Nonna I got it. Tell her I’ll write her.”",
+          "set": {
+            "s2e18_ma": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "On Sunday your mother asked about the summer. You told her to tell Nonna you got her card and you’d write — and nothing about the summer.",
+          "response": [
+            "Ma hears what isn’t in it. “I’ll tell her,” she says, and then, carefully, the way she reads a report card from the bottom up: “Did you eat?”",
+            "“I ate, Ma.”",
+            "“Eat again,” Ma says. “It’s Sunday.”"
+          ],
+          "goto": "s05"
+        },
+        {
+          "tag": "Restraint",
+          "text": "“Not on the phone, Ma.”",
+          "set": {
+            "s2e18_ma": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "On Sunday your mother asked about the summer. You told her not on the phone.",
+          "response": [
+            "“Then when.”",
+            "“Soon.”",
+            "“You sound like your father.” She says it the way she has said it since he was eleven: a complaint, and an accusation, and the nicest thing she knows how to say. She hangs up to go tell Nonna something, and the stairwell comes back around him, the tube light, the window going from gold to something else."
+          ],
+          "goto": "s05"
+        }
+      ]
+    },
+    "s05": {
+      "slug": "SUNDAY · 7:40 PM · DELGADO HALL, THE EAST STAIRWELL — A FLIGHT",
+      "set": {
+        "lena_julian_ended": true,
+        "heard_never_wrong": true,
+        "julian_not_surprised": true,
+        "rel.lena.trust": "+1",
+        "resolve.jack": "-1",
+        "resolve.lena": 3
+      },
+      "body": [
+        "He doesn’t go up after Ma. He stays on the step with the phone shut on the concrete beside him, and the wired glass on the landing goes from gold to blue, and from blue to the pearl and violet of the inside of a mussel shell, and the tube light comes into its own.",
+        "He takes the pack out. It’s Sunday. The loophole is real, and there’s nobody in the stairwell to prove anything to. He turns it end over end on his knee, red, white, red, white, the cellophane slick and new under his thumb, the seal a thin gold thread he could find with his eyes shut. It stays shut.",
+        "The stairwell smells of cold cinderblock and, faintly, of somebody’s microwave popcorn coming up the well from three. He says a Hail Mary because he can’t think of anything, and gets to the end of it, and finds that it was for Julian Park-Ellis, and he didn’t plan it and doesn’t take it back. He says another one to make sure.",
+        "On four somebody’s door opens on a laugh track and closes on it. In the hall above, a girl is walking up and down on her phone, laughing, saying *no — no, he did not*, and then *he did?* On two there is nothing at all.",
+        "Day five. No clock but the window, and the window is nearly dark.",
+        "He could go up. Room 412 has a bed in it, and Theo awake in it by now with a movie on low. He doesn’t. She won’t call; she’ll come. He doesn’t know when, and he isn’t going to be behind a shut door when she does.",
+        "A door opens two floors down.",
+        "He knows the steps before he knows he’s listening: quick, light, the heel of a boot catching the lip of every third stair. They come up out of the second floor and stop on the landing where she takes her calls, for about as long as it takes to button a coat, and come on again, onto the flight to three. Up, toward four. Toward 412.",
+        "She comes round the third-floor landing and sees him.",
+        "She stops. She’s on the landing one flight below him, at the foot of his flight, with her hands in her pockets, and she does not come up. He does not come down. Everything in him that has legs would like to; he sets his boot heels against the lip of the step below his and keeps them there, and the cellophane crackles in his fist. *Nothing either one of us would have to explain.*",
+        "She has her coat on still, the long dark one, buttoned to the collar, so that the medal is somewhere under the wool where he can’t see it; he knows to the half inch where it sits. A corner of black lace shows at the mouth of the right-hand pocket, where something has been folded small and put away. Her face is washed, a little pink at the hairline, and the hair at her temples is damp. He would know her in the dark by how she stands on a stair, weight on the back foot, ready to go either way.",
+        {
+          "if": "offered_pack_lena",
+          "text": "She looks at the pack in his hand. At the seal. On Thursday, at an air pump in El Paso, he held it out to her and she wouldn’t take it. It’s still shut. She looks at him.",
+          "else": "She looks at the pack in his hand, at the seal, and then at him."
+        },
+        "She opens her mouth, and closes it, and starts again from the top. “It’s done,” Lena says.",
+        "Something under his breastbone that has been clenched since the levee lets go a notch. He catches it and holds it where it is. It isn’t Tuesday.",
+        "Her voice goes up the well past him, and comes back down off the concrete a little behind itself. It’s her plain voice, the one without any of New Orleans put on for company, and her eyes are dry and very clear.",
+        "“He read it first. Then I said it.”",
+        "Her hands stay in her pockets. The lace moves when the right one does. Five weeks and a day that card rode in her wallet, through Mardi Gras and a levee and the width of Texas, and Jack doesn’t know what it says and isn’t going to.",
+        "“He wasn’t surprised.”",
+        "Down on two the stairwell door settles in its frame. She stands on the landing with her chin up and that sentence beside her. Yesterday, in a chair facing a crucifix, Jack said out loud that somewhere around Arizona he’d caught himself hoping Julian would be a jerk about it. He sits on his step with that.",
+        "“I told him the truth. That in four months he never once told me I was wrong.”",
+        "The pack has stopped turning in Jack’s hands. Up on four the girl on the phone has gone in somewhere, and the hall is quiet.",
+        "“He was kind,” she says. “He was kind the whole time.”",
+        "Jack has seen it. Sunday after Sunday since the fall, at St. Brendan’s, a man in an old cardigan in a pew near the back, standing when they stood and kneeling when they knelt and staying in the pew at Communion with his hands folded, learning the responses a week at a time.",
+        "And then, after a moment, with her eyes on the step below his: “The rest is his.”",
+        "Jack will never ask for it.",
+        "On four the television laughs at something.",
+        "“So I need you to not talk to me,” Lena says. “Not till you’re free too.” She looks up the flight at him then, the step, the pack, his face, and stays there. “We barely held on last time, Jack. I’m not standing on another levee with you. Not till Tuesday’s done.”",
+        "Every answer he has would be talking to her. He sits on his step with the pack in his fist and the whole of the last two weeks in his mouth, and the stairwell waits with him."
+      ],
+      "choices": [
+        {
+          "tag": "Restraint",
+          "text": "*Nod. Say nothing.*",
+          "set": {
+            "s2e18_landing": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "On the stairs Lena told you it was done with Julian, and asked you not to talk to her until you’re free too. You nodded and said nothing.",
+          "response": [
+            "He nods.",
+            "Lena nods back, the first thing they’ve agreed on without a word since the levee, and turns and goes down. He listens to all of it: the boots quick on the flight, the turn at the bottom, the push bar on two, a corridor’s worth of quiet, and at the end of the quiet the 217 door.",
+            "He sits. Last time was the levee: the river black under them and the city roaring at their backs, and two people stopping at once with nothing left over to stop with. He knows exactly how barely. He doesn’t light the thing in his hand."
+          ],
+          "goto": "s05a"
+        },
+        {
+          "tag": "Candor",
+          "text": "“Tuesday.”",
+          "set": {
+            "s2e18_landing": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "key": "On the stairs Lena told you it was done with Julian, and asked you not to talk to her until you’re free too. You said one word: Tuesday.",
+          "response": [
+            "“Tuesday,” he says.",
+            "“I know,” Lena says, and goes down with her hands in her coat and neither one on the rail, quick on the top stairs and careful at the bottom, the way she came up. The lace in her pocket is the last thing he sees go round the turn. He listens to her all the way to two. The push bar. The corridor. The 217 door.",
+            "He says it again, to nobody, in the empty stairwell: *Tuesday.* It sounds, in here, like the name of a town he has to drive to."
+          ],
+          "goto": "s05a"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“I’m sorry it hurt him.”",
+          "set": {
+            "s2e18_landing": "sincerity",
+            "trait.sincerity": "+1",
+            "rel.lena.warmth": "+1"
+          },
+          "cue": "Lena will remember that.",
+          "key": "On the stairs Lena told you it was done with Julian, and asked you not to talk to her until you’re free too. You told her you were sorry it hurt him.",
+          "response": [
+            "“I’m sorry it hurt him,” he says.",
+            "“So am I.” Her right hand is still in her coat pocket, on the lace. “He deserved somebody who didn’t need to be fought.”",
+            "She goes. Down the flight with the rail untouched beside her, round the turn, the push bar on two, the door of 217 closing with the small particular click it has.",
+            "He sits with that sentence long after the door, the pack going end over end on his knee again, red, white, red, while somebody upstairs runs a bath and the pipes in the wall carry it down past him to the ground."
+          ],
+          "goto": "s05a"
+        }
+      ]
+    },
+    "s05a": {
+      "slug": "SUNDAY · 9:50 PM · DELGADO HALL, THE EAST STAIRWELL",
+      "body": [
+        "Two hours. He hasn’t gone up. The step has gone cold through his jeans and into the bone, and the landing window is black now and has a boy on a step in it, and he gives it his shoulder. Once he went up to the bathroom on four and stood at the sink with the water running, and came back down to the step without examining why.",
+        "What she said is still in the stairwell. Concrete keeps things. You can say a word in here at twenty to eight and still hear it at ten, if you sit still enough, and he has been sitting very still.",
+        "A little after nine a girl from four came up the stairs bumping a rolling suitcase behind her one step at a time, home from somebody’s weekend, and said “Sorry, sorry” and stepped over his boots, and looked back once from the top at a guy sitting on the stairs on a Sunday night with his boots across them, and went in.",
+        "Twice in two hours the push bar on two has gone, and both times he’s known by the steps that it wasn’t her.",
+        "Down the well somebody’s shower has been running on three for twenty minutes. The cinderblock is the color it is at night, a cream gone to old piano keys, and the tube light makes everything on the stairs look like it’s waiting for an inspection.",
+        "The phone that didn’t ring all day goes off on the step beside him. SKYE (MISFIT), from a bar in Burnaby.",
+        {
+          "type": "sms",
+          "from": "SKYE (MISFIT)",
+          "text": "i am in danger. kyle wore a usa shirt UNDER his canucks jersey and took the jersey off at the 5th goal. a man named gord is asking us to leave. gord has a mustache. 2",
+          "time": "9:50 PM"
+        },
+        "He laughs. He can see it: Kyle in his brave cold, peeling off the jersey in a room full of Canadians; Gord, with the mustache, rising from his stool; Skye with her drink held up out of the way, delighted, typing with her thumb before she’s out the door. This is the girl who looked it up for him before nine this morning. Who has been counting down to Tuesday at the bottom of every text since Wednesday.",
+        "Two floors down, Lena’s words are still on the landing. Here is Skye, funny in a bar in Canada and in love with him, and he loves her, as surely as the step under him is cold. Both of those will still be so on Tuesday, on her porch. That’s the part he can’t get his hands around.",
+        "None of it goes in a text."
+      ],
+      "choices": [
+        {
+          "tag": "Wit",
+          "text": "*“kyle is a double agent. run”*",
+          "set": {
+            "s2e18_hockey": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "kyle is a double agent. run",
+              "time": "9:52 PM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "we ran. kyle is crying on a bus. gord was right. 2",
+              "time": "9:58 PM"
+            },
+            "He laughs again, in an empty stairwell at ten at night, and the sound goes down the well past three and two and on down to one, and doesn’t come back."
+          ],
+          "goto": "s06"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "*“get home safe. 2”*",
+          "set": {
+            "s2e18_hockey": "sincerity",
+            "trait.sincerity": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "get home safe. 2",
+              "time": "9:52 PM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "you counted. you never count. im framing it next to the goose. 2",
+              "time": "9:53 PM"
+            },
+            "He shuts the phone and keeps it against his knee a while, warm side down, as if it were a hand."
+          ],
+          "goto": "s06"
+        },
+        {
+          "tag": "Candor",
+          "text": "*“i miss you”*",
+          "set": {
+            "s2e18_hockey": "candor",
+            "trait.candor": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "i miss you",
+              "time": "9:52 PM"
+            },
+            {
+              "type": "sms",
+              "from": "SKYE (MISFIT)",
+              "text": "good. thats the correct amount. tuesday you get all of me. 2",
+              "time": "9:53 PM"
+            },
+            "He stands up off the step at last, and his knees have forgotten how, and he has to put a hand on the cold rail and wait there for them to remember."
+          ],
+          "goto": "s06"
+        }
+      ]
+    }
+  }
+}

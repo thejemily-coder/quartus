@@ -1,0 +1,615 @@
+{
+  "scenes": {
+    "s14": {
+      "slug": "TUESDAY · 5:58 PM · DEL PLAYA LANE — THE PORCH LIGHT",
+      "music": "Van Morrison — “Sweet Thing”",
+      "set": {
+        "porch_feb23": true
+      },
+      "body": [
+        "Eight minutes after sunset the sky over the ocean-side houses still has the color in it — apricot low behind the Marine Lab, going up through a clean pale green into a blue that deepens to navy overhead, with the half moon already pinned up in the south over the neighbors’ roofs. Under all of that the porch light over Sol’s door is the only thing on Del Playa that’s lit on purpose: one bulb in a frosted cup, yellow, on.",
+        "The screen door has the kitchen behind it, a long rectangle of yellow with the shapes of things in it. Van Morrison is on Sol’s turntable and coming through the mesh, a guitar going round and round under a voice that sounds like it has all evening. Under the record, from somewhere on the kitchen counter, a wind-up timer is ticking, and the butter he could smell from the walk has gone a little browner.",
+        "Her shape crosses the screen once — quick, bare-legged, an oven mitt up on one hand like a puppet about to say something — and is gone into the kitchen. She hasn’t seen him. By the door the yellow boots stand where they always stand, the script pushed down in the left one; the coffee can of beach glass is on the rail with the blue piece on top.",
+        "He has one boot on the bottom step and one on the second. The wood at the front edge of the step is soft with forty years of salt air.",
+        {
+          "if": "promised_skye_truth",
+          "text": "He has the first sentence. He promised her this in a darkroom, with her fingers on his chest — whatever happened, to her face — and he has carried the first sentence across half the country and down Del Playa to the bottom of her steps, and it’s ready.",
+          "else": "He has the first sentence. It’s the least she’s owed, and he’s carried it across half the country, and it’s ready."
+        },
+        "He doesn’t have the second."
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "*Stay on the steps. Tell her before she opens the door.*",
+          "set": {
+            "s2e18_door": "steps",
+            "trait.candor": "+1"
+          },
+          "key": "At six on Tuesday you didn’t go up Skye’s steps. You called her name from the bottom, to tell her there.",
+          "response": [
+            "He doesn’t go up. From the second step he says her name to the screen door."
+          ],
+          "goto": "s14s"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "*Go up. Let her say hello.*",
+          "set": {
+            "s2e18_door": "hello",
+            "trait.sincerity": "+1"
+          },
+          "key": "At six on Tuesday you went up Skye’s steps and let her say hello first.",
+          "response": [
+            "He goes up. The third step from the top gives under him, the way it always has."
+          ],
+          "goto": "s14h"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Go in. Tell her before she puts a plate down.*",
+          "set": {
+            "s2e18_door": "inside",
+            "trait.control": "+1"
+          },
+          "key": "At six on Tuesday you went into Skye’s house to tell her before she could put a plate down.",
+          "response": [
+            "He goes up and opens the screen door himself, like any other night, and steps into the warm."
+          ],
+          "goto": "s14i"
+        }
+      ]
+    },
+    "s14s": {
+      "slug": "TUESDAY · 5:59 PM · DEL PLAYA LANE — THE STEPS",
+      "body": [
+        "She comes out at her name in one motion, the way she comes into any room, the screen door slapping back on its spring: barefoot on the boards in February, the oven mitt on one hand, delighted.",
+        "“Hi.”",
+        "Two weeks in Burnaby are still on her. Her hair is kinked from forty pins and standing up at the crown where the last of them came out in a hurry, and low on her neck, on the left, there’s a faint pink mark the length of his thumb where they glued a wound on her every morning and peeled it off every night. She’s wearing his flannel — he’d know it across a parking lot, two buttons gone now — open over a short black dress with no business anywhere near a stove. She picked it for the joke of that. She picked it for him.",
+        "She stops on the top step, because he hasn’t come up. So she’s above him in the doorway light with the kitchen yellow at her back, and he’s down on the second step with the street gone to dusk behind him, and the screen door bumps closed on its spring and the record goes on behind it.",
+        "“Is this a serenade?” She points the mitt at him. “Are you about to serenade me? Hold that. Hold that exact face, I’m getting Sol’s camera —” She turns halfway for the door and turns back, because he hasn’t laughed. “Okay. No serenade. Come up. The eggs are at a delicate stage. They’ve never been made by me before. They’re nervous.”",
+        "She reaches back and hooks the screen door open again with one heel, and the warm comes out past her into the cold — butter and onion and the hot-dust smell of an oven nobody has turned on since Christmas — and the record comes out with it, louder for a moment, and goes soft again when the door eases to.",
+        "He doesn’t come up.",
+        "He knows exactly how it would go. She’d meet him two steps down — she always comes more than halfway — and she’d be up on her toes before he got his hands out of his pockets, and it would taste like butter and her laughing into it, and the screen door wouldn’t have finished bumping before the first sentence was gone out of his head. It’s right there. It’s three steps. He keeps his boots where they are and lets the steps stay between them: her at the top with her chin up and her arms a little out from her sides, the mitt hanging, ready to be met.",
+        "“I left the light on,” she says. “Like I said. Do you know where the switch is in this house? It’s in the *bathroom*. Sol’s grandfather wired it. I had to stand in the tub.” She shifts from one bare foot to the other on the cold boards and tips her head at him. “You’re being weird on my steps. Your boots are here and the rest of you is somewhere around Tucson. Did you leave it in the van? Kevin can mail it.”",
+        "“Skye.”",
+        "He says it from below, and whatever is in it gets to her before the word does. She takes the oven mitt off, finger by finger, and holds it in both hands in front of her."
+      ],
+      "next": "s15"
+    },
+    "s14h": {
+      "slug": "TUESDAY · 5:59 PM · DEL PLAYA LANE — HELLO",
+      "body": [
+        "She’s out the door before he’s at the top — the screen slapping back on its spring, bare feet on the boards in February, an oven mitt on one hand, and her face opening up at the sight of him.",
+        "“Hi.”",
+        "Two weeks in Burnaby are still on her: her hair kinked from forty pins and standing up at the crown, a faint pink mark low on her neck where they glued a wound on her every morning and peeled it off every night. She’s wearing his flannel — two buttons gone now — open over a short black dress with no business anywhere near a stove.",
+        "“You were supposed to wear something you can get eggs on,” she says. “I never said anything about me.”",
+        "And she’s up on her toes on the top step and her mouth is on his forehead — exactly there, the place the ashes were, just under where his hair starts — before he knows it’s coming. She doesn’t have to look for it. She’s been rehearsing it on the back of her hand in a trailer in Burnaby. Her lips are warm and sure on the one place and she keeps them there, the mitt held out to the side so it won’t get butter on his coat, and he can’t stop it. There isn’t time to want to.",
+        "When she comes down off her toes and comes back up for his mouth, he puts his hands on her arms. Flannel, and her warm under it.",
+        "“Skye. Wait.”",
+        {
+          "if": "s2e16_lent==\"wit\"",
+          "text": "She laughs. “Is kissing Lent? Is there a tab?”",
+          "else": "She laughs. “Is kissing Lent now? Did I miss a memo?”"
+        },
+        "She takes her arms back out of his hands, easy, no offense in it, and goes down the porch to the swing at the far end where the boards lean left toward the neighbors, and drops into it so the chains jump, and pats the slats beside her with the mitt.",
+        "He sits. The swing takes his weight and goes back and comes forward, and the chain on his side complains about it. She tucks her bare feet up under her and turns half toward him with an elbow on the back of it, laughing a little, still in the middle of hello. His hands are on his knees. They have the shape of her arms in them yet, through the flannel, and he leaves them on his knees.",
+        "“Found it,” she says, pleased with herself, and taps her own forehead with the mitt. “First try. All that rehearsal.” She pushes off with one bare foot so the swing goes. “I drove the whole 101 with the top up and the windows down singing the Hip wrong. I don’t know the words. I made up new ones. They were about you, mostly, and a little bit about Oxnard.”",
+        "Inside, the record goes on in the empty front room.",
+        "She looks at him from a foot away and says, “What.” Smiling, with a dare in it. And waits."
+      ],
+      "next": "s15"
+    },
+    "s14i": {
+      "slug": "TUESDAY · 5:59 PM · SOL’S HOUSE, THE FRONT ROOM",
+      "body": [
+        "Inside, the front room is lit by two candles stuck in the necks of wine bottles on a card table she has dragged in from somewhere and set for two: two folding chairs, two plates that don’t match, a jelly jar of nasturtiums she must have picked off a neighbor’s fence, the stems still wet. Sol’s turntable sits on a milk crate under the window with the record going round, *Astral Weeks* propped against the crate in its sleeve, and he can see the needle riding in toward the label. Down the hall the darkroom door is shut, the red bulb over it dark. Through the far door is a kitchen older than both of them — a stove with a clock in the backsplash stopped at some other decade’s twenty to four — and on the counter a wind-up timer shaped like a chicken, ticking.",
+        "“Hi.”",
+        "She’s in the kitchen doorway with an oven mitt on one hand. Her hair is kinked from forty pins and standing up at the crown; low on her neck there’s a faint pink mark where two weeks of a glued-on wound came off. She’s wearing his flannel — two buttons gone now — open over a short black dress with no business anywhere near a stove, and she watches him see it.",
+        {
+          "if": "s2e16_lent==\"wit\"",
+          "text": "The binder is on his plate. It’s three-ring and white and tabbed in her handwriting — FRIDAYS · CIGARETTES · LOOPHOLES — and LOOPHOLES is fatter than the other two put together. She picks it up and puts it into his hands like a script on the first day of a job. “Read the Loopholes tab first. It’s the best writing in it. There are footnotes.”",
+          "else": "There’s a folded index card on his plate. She picks it up and puts it into his hands like a script on the first day of a job. *MENU*, it says on the front in her handwriting, and inside, one line: *eggs (ambitious)*. “Read the menu. It’s short. It’s ambitious.”"
+        },
+        "And she’s gone back to the oven, bent to the little window in its door with the mitt up, encouraging the frittata in a grandmother’s voice from no country in particular.",
+        "“Don’t read it in the doorway like a cop,” she says to the oven. “Sit. It’s a dinner. You sit at dinners. I looked it up.”",
+        "He doesn’t sit. He stands in the kitchen doorway with it in his hands. It weighs what it weighs; she made it for him. He goes back to the card table and sets it down between the candles, square to the edge, carefully, the way you’d set down something that isn’t yours.",
+        "“I’m ending it, Skye,” he says to her back. “Us. I’m sorry.”",
+        "She laughs — the real one, right into the oven. She bumps the oven door shut with her hip and comes past him still laughing, through the front room to the screen door, and shoves it open and holds it there with her arm straight out.",
+        "“Okay — no. Outside. I’m not doing a breakup scene in a kitchen, it’s a cliché, we’d get notes.”",
+        "He goes out past her, under her arm on the door, without touching her, and behind them the record goes on turning in the empty room with the candles."
+      ],
+      "next": "s15"
+    },
+    "s15": {
+      "slug": "TUESDAY · 6:05 PM · THE PORCH — A BIT",
+      "set": {
+        "rel.skye.friction": "+1"
+      },
+      "body": [
+        {
+          "if": "s2e18_door==\"steps\"",
+          "text": "From the second step he says it up into the doorway light, to her standing there with the oven mitt in her two hands. “I’m ending it, Skye. Us. I’m sorry.”"
+        },
+        {
+          "if": "s2e18_door==\"hello\"",
+          "text": "On the swing, with her bare feet tucked up on the slats beside him and her face still full of hello, he says it. “I’m ending it, Skye. Us. I’m sorry.” The chains creak when he says it."
+        },
+        {
+          "if": "s2e18_door!=\"steps\" && s2e18_door!=\"hello\"",
+          "text": "Out on the porch she lets the screen door go and plants herself with her back to the rail and her arms out wide, a director at the lip of a stage. “Okay. From the top. With feeling.” And he says it again, the same words, because they’re the only ones he’s got. “I’m ending it, Skye. Us. I’m sorry.”"
+        },
+        {
+          "if": "s2e18_door!=\"steps\" && s2e18_door!=\"hello\"",
+          "text": "She laughs again, harder, and this time it’s the laugh from the Hallorans’ house, the first night, coming up out of her all at once and out into Del Playa.",
+          "else": "She laughs. It’s the real one, the laugh from the Hallorans’ house, the first night, coming up out of her all at once and out into Del Playa."
+        },
+        "“At *zero*?” She points the oven mitt at him. “You’re doing this at zero? With eggs in the oven? Okay. Okay, that’s good. Who’s the girl — is it the goose? It’s the goose. She’s been after you since the picture wrapped. Russ signed the photo, but I know her handwriting.”",
+        "He doesn’t laugh, and she nods, like that’s a choice an actor could make and she respects it.",
+        "“Okay, but you can’t break up with me tonight, I have a *schedule*.” She counts it off on the mitt. “Eggs at six-fifteen. Six-thirty, the goose — the picture, I’m unveiling it, there’s a pillowcase over it, Sol helped me hang it. Then you tell me New Orleans, all of it, in order, with the weather, while I eat an entire pie, because I bought a pie, because I don’t trust myself with two things in one oven. I bribed the surfers out with a thirty-rack. Sol swore on her camera she’d stay gone till eight. I have this house till *eight*, Jack. You can break up with me at eight-oh-five.”",
+        "She has the evening blocked like a scene, every minute of it, and every minute of it is for him.",
+        "And when he still doesn’t break, she takes the scene off him and plays both parts. She does him first — chin down, shoulders up, the Ohio flattened into every vowel, both hands jammed into the pockets of a Carhartt that isn’t there: “*I’m ending it, Skye.*” Then she does herself on a daytime soap, the back of her wrist to her forehead, swooning backward into the arms of an invisible Brock: “*But Brock — the twins!*” And back to her own voice, delighted with both of them: “That’s the scene. That’s every soap I ever guest-starred on. I was the twins once. Both of them. Different wigs.”",
+        "“Skye.”",
+        "“No, wait, I’m not done, I have a note. Do it again. You’re upstaging the eggs.” She has a hand up now, thumb and finger making a frame, and him in it. “Look at the light this time. Give me *pain*. And lose the sorry. You don’t say sorry in the first line. You save it. It’s the button.”",
+        "It’s good. It’s very good; on any other night he’d be gone, laughing, sitting down on her steps with his face in his hands. The pink mark on her neck is catching the bulb, and the frame of her fingers is up at her eye with him in it, and he loves her — he loves her doing exactly this, on a porch, for an audience of one, with eggs in the oven — and he keeps his hands where they are and lets her keep going one more line, and another, and knows every one is another second she’ll have to come back from."
+      ],
+      "choices": [
+        {
+          "tag": "Restraint",
+          "text": "*Don’t say anything. Let her see your face.*",
+          "set": {
+            "s2e18_bit": "restraint",
+            "trait.control": "+1"
+          },
+          "response": [
+            "He doesn’t do it again. He holds still in the light and lets her look. She’s still directing — the hand up, “and —” — and the hand stays where it is."
+          ],
+          "goto": "s15a"
+        },
+        {
+          "tag": "Candor",
+          "text": "“It’s not a bit.”",
+          "set": {
+            "s2e18_bit": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "“It’s not a bit,” he says.",
+            "“Everything’s a bit if you commit to it,” she says — something an acting teacher says to a room full of sixteen-year-olds — and then she looks at him properly, and her smile stays on after the rest of her face has stopped."
+          ],
+          "goto": "s15a"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“Skye. Look at me.”",
+          "set": {
+            "s2e18_bit": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“Skye,” he says. “Look at me.”",
+            "She looks at him the way she looks at anybody across a table read, all of her at once, reading him — she’s been paid to do it since she was a kid — and she keeps looking."
+          ],
+          "goto": "s15a"
+        }
+      ]
+    },
+    "s15a": {
+      "slug": "TUESDAY · 6:10 PM · THE PORCH — TRUE",
+      "set": {
+        "told_skye_everything": true,
+        "rel.skye.trust": "-1",
+        "rel.skye.friction": "+2"
+      },
+      "body": [
+        "“Stop.”",
+        "The laugh goes out of her so fast it leaves her mouth a little open. “That’s not funny. You don’t do bits. You’ve never done a bit in your life.”",
+        {
+          "if": "s2e18_door==\"hello\"",
+          "text": "She’s up off the swing, and so is he. Four minutes ago her mouth was on his forehead."
+        },
+        "The oven mitt is in her hand. She puts it down on the rail beside the coffee can and smooths it out, the thumb, the burn on the thumb, and leaves it there.",
+        "“No. Wait.” She holds a hand up — not at him; at the air, at the next thing he might say. “Everything you said to me before you left was true. I *know* it was. I can tell, Jack, I can always tell. It’s the one thing I’m actually good at. People pay me for it. I sit across from people for a living, and I know when they mean it.”",
+        {
+          "if": "said_love_mon",
+          "text": "“You said love you last night. On a roof. I *heard* it. That wasn’t acting. I know acting.”"
+        },
+        {
+          "if": "!said_love_mon && said_love_thu",
+          "text": "“You said love you at a gas pump in Blythe on Thursday. I heard it. That wasn’t acting. I *know* acting.”"
+        },
+        {
+          "if": "!said_love_mon && !said_love_thu && s2e17_thu==\"candor\"",
+          "text": "“You said you’d tell me all of it. To my face. I thought you meant *floats*.”"
+        },
+        {
+          "if": "!said_love_mon && !said_love_thu && s2e17_thu!=\"candor\"",
+          "text": "“You told me not to burn the house down. I didn’t. I made you *eggs*.”"
+        },
+        "“I did mean it,” he says. And then, with nowhere else to start: “Lena broke up with Julian on Sunday.”",
+        "It comes out end first. He hears it go — the last thing, first — and there’s no getting it back into order now, so he keeps on in the order it comes.",
+        "“Lena,” she says. Flat. “The one with the medal.”",
+        "“Yes.”",
+        "“Mardi Gras,” he says. “The last night. We were on the levee, by the river, and we nearly kissed. And we both stopped.” He makes himself keep looking at her. “Nothing happened. Nothing.”",
+        "“Nearly.” She says it like a word on a sides page she’s going to be asked to play. “How nearly.”",
+        "“Close enough that we both stopped.”",
+        "“Who stopped first?”",
+        "“Neither of us. Both.”",
+        "“That’s not a thing.” Quick, almost a laugh, almost her. “That doesn’t happen. Somebody always stops first. I’ve done that scene forty times, on soundstages, with boys I didn’t even like, and somebody always stops first, Jack, and it’s always — that’s not a *thing*.”",
+        "He doesn’t have anything to say to that but that it happened, and he has already said it.",
+        "Her hand is on the rail by the coffee can. The other one has come up to her mouth.",
+        "“That morning, on St. Charles, it was cold, and she stood inside my coat. And on the levee. That’s as close as it got. We talked till midnight.”",
+        "“Inside your coat,” Skye says. Just the words, back to him.",
+        "“When?” she says. “When did you — when was this decided?”",
+        "“That night. On the levee.”",
+        "She looks off past him at nothing, and he can see her counting back from it.",
+        "“And then you talked about what.”",
+        "“Everything. A year of things neither of us ever said. And we decided we wouldn’t start anything while either of us was with somebody. That we’d each end it. Honestly. To each face. Before anything.” The light over the door. Her bare feet on the boards. “She did. Sunday.”",
+        "“Sunday,” Skye says. “I was signing my texts *two* on Sunday.”",
+        "And the last of it, which is the reason he’s standing on her porch: “And I’m here.”",
+        "That’s all of it. Everything that happened, in the wrong order, and it took him less than a minute. A week of it, across Texas and New Mexico and Arizona and up the coast and onto her porch, and it fits in less than a minute, and she’s still standing there waiting for the rest.",
+        "She doesn’t say anything. Down the road somebody’s party has its windows shut and its music on, and it comes up the street as nothing but bass.",
+        "“I love you,” he says. She didn’t ask. “These months — I’ve never been happier than I was in that car with you. At the turnout, with the windows gone white. In the darkroom, in the red light, with your hands smelling like fixer. You at Mass next to me, kneeling, not knowing any of the words and kneeling anyway. The March, in the cold. All of it.”",
+        {
+          "if": "s2e16_skye==\"sincerity\"",
+          "text": "“You’re the best thing that happened to me this year.”"
+        },
+        "She shakes her head at them as they come, small and steady — at the turnout, at the darkroom, at the Mass — and by the March her hand has come down off her mouth and she’s holding it up toward him, palm out, to stop the next one.",
+        "“Don’t,” she says. “Don’t do that. Don’t do that *now*. You don’t get to say the darkroom. I *printed* that. It’s on my wall. It’s on my wall over the bed, next to where I was going to put the goose.”",
+        "Her face is wet. She doesn’t do anything about it.",
+        "“I can’t make it make sense,” she says. “I’ve been trying since you said it. I can’t.”",
+        "She looks at him across the porch, at all of him, like the answer is on him somewhere and she’s missed it.",
+        "“I can tell when an agent’s going to drop somebody from the way she says hi on the phone. I can tell when a director’s sleeping with the script supervisor from where they stand at lunch. I read rooms. It’s the only thing I ever learned in school, and the school was a soundstage.” Her voice goes down to almost nothing. “And I didn’t see you coming up my walk.”",
+        {
+          "if": "s2e16_lent==\"wit\"",
+          "text": "“I made you a binder. I sat up Saturday and made you a binder with tabs. I don’t make things, Jack. I’ve never made anybody anything. Things get made *for* me. There’s a whole department.”",
+          "else": "“I wrote you a menu. On a card. I don’t make things, Jack. I’ve never made anybody anything. Things get made *for* me. There’s a whole department.”"
+        },
+        {
+          "if": "skye_knows_porch",
+          "text": "She looks down at her own top step. “You sat right there. Saturday. At two in the morning. On my step. And I told you to go home and sleep. I was *sweet* about it.” Her hand closes on the rail. “You were sitting there working out how to tell me.”",
+          "else": "“I thought you were the one without a call time.”"
+        },
+        "Inside, the song has come to its end, and the side has come to its end with it. The porch is very quiet.",
+        "She takes the breath she takes before she ducks under a wave, and asks it straight.",
+        "“Do you love her?”"
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“I’m not going to say that to you.”",
+          "set": {
+            "s2e18_her": "candor",
+            "wouldnt_say_love": true,
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "cue": "Skye heard that.",
+          "key": "On her porch Skye asked if you love Lena. You told her you weren’t going to say that to her.",
+          "response": [
+            "“I’m not going to say that to you.”",
+            "“Okay,” she says, to the beach glass. “Okay.” Her thumb finds the blue piece on top of the can and turns it over, and puts it back, blue side up, exactly where it was."
+          ],
+          "goto": "s15b"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“I love *you*. That’s the one I can say.”",
+          "set": {
+            "s2e18_her": "sincerity",
+            "wouldnt_say_love": true,
+            "trait.sincerity": "+1"
+          },
+          "key": "On her porch Skye asked if you love Lena. You told her you love her — that’s the one you can say.",
+          "response": [
+            "“I love *you*,” he says. “That’s the one I can say.”",
+            "“That’s an answer,” Skye says. “It’s just not to my question.” And she runs it again, slower, with the weight moved, the way she’d try a line at a callback to find what’s under it: “That’s the one you *can*.”"
+          ],
+          "goto": "s15b"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Don’t answer.*",
+          "set": {
+            "s2e18_her": "restraint",
+            "wouldnt_say_love": true,
+            "trait.control": "+1"
+          },
+          "key": "On her porch Skye asked if you love Lena. You didn’t answer.",
+          "response": [
+            "He doesn’t answer.",
+            "Inside, the needle has found the run-out groove at the end of the side: a hiss, and a click, and a hiss. It goes round unlifted. She waits through four clicks, and stops waiting."
+          ],
+          "goto": "s15b"
+        }
+      ]
+    },
+    "s15b": {
+      "slug": "TUESDAY · 6:18 PM · THE PORCH — WHY",
+      "set": {
+        "rel.skye.trust": "-2",
+        "rel.skye.warmth": "-1",
+        "rel.skye.friction": "+2"
+      },
+      "body": [
+        "“Then why.”",
+        "She stays at the rail. “I need a why, Jack. I can’t cross a room without one. You can’t play a scene without one — you walk out there without a why and the audience can tell in four seconds and they start unwrapping cough drops. You love me. It was the happiest. You won’t say it about her. And you’re on my porch telling me it’s done.” Her voice goes up on the last word, and she brings it back down by main force. “So give me the why.”",
+        "“It isn’t —”",
+        "“Is it the job?” She’s auditioning reasons now, one after another, fast, like every read of a line she’s ever run in a car on the way to a callback. “Is it the people who come up to me in Ralphs? Is it the magazine with my face on it in the checkout line? Is it my mother? Because I’d understand my mother. People leave over my mother. I’d *leave* over my mother —”",
+        "“No.”",
+        "“Is it that I kept you up? That I’m a lot? I know I’m a lot. People have told me I’m a lot since before I could spell it.”",
+        "“No. Skye. No.”",
+        "“Is it God?” Quieter. “Because I read Luke. On the website with the dove. I’d have read the rest. I was going to.”",
+        "“It’s not a rule,” he says. “It isn’t that.”",
+        "“Then *what*.”",
+        "She waits. Her arms are folded now, tight, over his shirt. “Use your words, Jack. You’ve got all of them. You’ve got more words than anybody I’ve ever been in a car with. You’ve got words for the inside of a *cigarette*. Use one.”",
+        "He can feel the shape of it — plain as a tool in his hand, the right one, he’s had hold of it for weeks — and every word he reaches for to hand it to her comes out the wrong size."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“When I’m looking at something — Mass, or the — anything — she’s already looking at it. I don’t have to turn around. You turn around. You look at *me*. Nobody ever — and I love that, I —”",
+          "set": {
+            "s2e18_why": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "Skye asked why. You tried to tell her — something about Lena already looking where you look, and Skye looking at you — and it came out wrong.",
+          "response": [
+            "“When I’m looking at something — Mass, or the — anything — she’s already looking at it. I don’t have to turn around. You turn around. You look at *me*. Nobody ever — and I love that, I —” He stops, because the sentence has gone somewhere he can’t follow it.",
+            "“I look at you,” she says, trying the words in her mouth like a line in a language she doesn’t speak, to see if they mean anything different when she’s the one saying them."
+          ],
+          "goto": "s15c"
+        },
+        {
+          "tag": "Candor",
+          "text": "“It’s not that you’re less. It’s that — she’s facing where I’m facing. That’s all I’ve got. I know how it sounds.”",
+          "set": {
+            "s2e18_why": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "key": "Skye asked why. You told her it wasn’t that she was less — that Lena faces where you face. You knew how it sounded.",
+          "response": [
+            "“It’s not that you’re less,” he says. “It’s that — she’s facing where I’m facing. That’s all I’ve got. I know how it sounds.”",
+            "“No,” Skye says. “You don’t. You don’t know how it sounds.”"
+          ],
+          "goto": "s15c"
+        },
+        {
+          "tag": "Wit",
+          "text": "“You know when two people are in a car and they’re both watching the road? And it’s — no. That’s not it either.”",
+          "set": {
+            "s2e18_why": "wit",
+            "trait.wit": "+1"
+          },
+          "key": "Skye asked why. You tried a car and a road, and gave up on it halfway.",
+          "response": [
+            "“You know when two people are in a car,” he says, “and they’re both watching the road? And it’s —” He hears it. “No. That’s not it either.”",
+            "“We were in a car,” she says. “We were in a car for four months, Jack.”"
+          ],
+          "goto": "s15c"
+        }
+      ]
+    },
+    "s15c": {
+      "slug": "TUESDAY · 6:25 PM · THE PORCH — YOU CHEATED",
+      "set": {
+        "skye_thinks_cheated": true,
+        "rel.skye.trust": "-2",
+        "rel.skye.warmth": "-2",
+        "rel.skye.friction": "+3",
+        "resolve.jack": "-1"
+      },
+      "body": [
+        "“You’re leaving me because I *look* at you?”",
+        "“No — that’s not —” And the sentence has no end, because it’s near enough what he said that he can’t get a blade between the two.",
+        "She holds up one finger. “You’re in love with me.” A second finger. “You’re happy.” A third, and she looks at the three of them standing up in the porch light. “And you don’t want to be with me.”",
+        "And then she’s yelling.",
+        "“That doesn’t — no. *No.* That isn’t a thing, that doesn’t *add*, you can’t just —” She wipes her face with the heel of her hand and it doesn’t do any good; it’s coming faster than that. “I bought a pan. I pulled off the 101 in Ventura in my sunglasses like a crazy person and bought a pan, and the girl asked was I having people over, and I said *one*, I said one person, like it was — who *does* that? Who does that and then — was it because I was gone? Is that it? Two weeks. I was in a chair in Burnaby with glue on my neck and I called you from the *chair* — and you picked up. Every time. Every single — Kyle said you sounded tired. Kyle said, *he sounds tired*, and I said he’s driving across America, Kyle, everybody sounds tired, and Kyle said — I don’t know why I’m telling you about Kyle. I don’t care what Kyle said. *Jack.*”",
+        "“I told *Dutch* about you. Dutch is sixty and he’s been a teamster since Nixon and he doesn’t care about anything but the Canucks, and I told him about you for twenty minutes at the coffee urn, and he said, *Sounds like a keeper, sweetheart* —” She turns all the way round, away from him, to the street, and back. “I stood in a *bathtub* to turn that light on. Was it the goose? It was not the goose. I *know* it wasn’t the goose. I don’t know why I said the goose.”",
+        "“Did you tell her about me? On your levee? Did you sit by a river and tell her about *me* —” Her hand goes up. “Don’t. Don’t answer that. You’ll answer it. You answer everything now, apparently, it’s your new *thing*.”",
+        "She gets one arm out of his flannel, yanking at it, and stops with it half off her shoulder and the cold on her bare arm, and stands there like that, and pulls it back up. It’s February. It’s the only warm thing she has on.",
+        "She’s crying through it and not stopping for it, her face wet in the porch light, her voice going up and cracking and coming back angrier for having cracked. She says his name again, and a third time, like somebody calling him from the far end of a house he’s already walked out of.",
+        "“Say something. No — don’t. Don’t say anything. You’ll say it *nicely*.” A laugh comes up out of her with no air in it. “You’re going to stand there and say it nicely.”",
+        "Inside, on the kitchen counter, the timer goes off. It rings and rings, a cheap bell rattling itself against the Formica, and he doesn’t move and she doesn’t look round, and it rattles down to a stutter and quits.",
+        {
+          "if": "s2e18_her!=\"restraint\"",
+          "text": "Under the quiet it leaves, he can hear the record’s run-out groove: the hiss and the click, the needle going round at the end of the side with no one to lift it."
+        },
+        "The smell coming through the screen now is eggs gone too far.",
+        "He stands in it. He lets it come, all of it, and doesn’t put his hands up and doesn’t look away from her. Not looking away is the one thing left he can do right.",
+        "“Six days,” she says. “You knew on that levee. That was Tuesday. And then six days, and I counted.”",
+        "“Six, on the phone, on your bridge in Louisiana. Five at the pump.”",
+        {
+          "if": "skye_knows_porch",
+          "text": "“Four from a makeup chair while you sat on my step in the dark, and I thought it was the sweetest thing anybody ever —” She stops it with her own hand.",
+          "else": "“Four from a makeup chair with fake rain in my hair, and I thought you sounded so —” She stops it with her own hand."
+        },
+        {
+          "if": "s2e16_lent==\"wit\"",
+          "text": "“Three, I made you a binder. Two, I broke my own rule and sent you a page. Somebody on the internet said you could smoke on Sundays and I *sent* it to you, like a cat bringing in a bird.”",
+          "else": "“Three. Two, on Sunday, while you were — while she was —” She doesn’t finish it."
+        },
+        "“One, outside a bar in the rain, so I could hear you over the Hip. *Zero.* Zero at the airport in Vancouver at six in the morning, in line for a coffee, and I wrote you that it’s the one you *land* on, and I was so pleased with myself the man behind me asked if I was okay.” Her voice gives out on it. “I signed every one. Like a kid with an Advent calendar. You let me count.”",
+        "“I promised you your face,” he says — and hears it, out on the porch in the cold, what it sounds like. He stops.",
+        "“My *face*.” She puts both hands up to it, wet, and holds it out at him, framed. “Here. Here it is. Here’s my face. Was it worth it? Is this what you drove two thousand miles for?”",
+        "He doesn’t answer that. There isn’t an answer to it that’s his.",
+        "“You stood on a levee at midnight with a girl inside your coat —”",
+        "“On St. Charles. In the morning.”",
+        "“— and *nothing happened*.” He has corrected her. He has stood on her porch in the middle of this and corrected the time of day, because it was the morning, and she looks at him like that is the worst thing he has done yet. “You slept with her.”",
+        "“No.”",
+        "“In her mother’s house.”",
+        "“No. Nothing happened.”"
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“Nothing happened. I’d tell you. I’m telling you everything.”",
+          "set": {
+            "s2e18_cheat": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "response": [
+            "“Nothing happened. I’d tell you. I’m telling you everything.”",
+            "“*Everything*,” she says, like it’s the word that set the house on fire."
+          ],
+          "goto": "s15d"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“I would never do that to you.”",
+          "set": {
+            "s2e18_cheat": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“I would never do that to you.”",
+            "“You’re doing *something* to me,” she says. “Look where you’re standing.”"
+          ],
+          "goto": "s15d"
+        },
+        {
+          "tag": "Restraint",
+          "text": "“No.”",
+          "set": {
+            "s2e18_cheat": "restraint",
+            "trait.control": "+1"
+          },
+          "response": [
+            "“No.”",
+            "Just the word. She wipes her face with the cuff of his flannel, and stares at the cuff — his cuff, his shirt — and lets go of it."
+          ],
+          "goto": "s15d"
+        }
+      ]
+    },
+    "s15d": {
+      "slug": "TUESDAY · 6:40 PM · THE PORCH — LEAVE",
+      "set": {
+        "skye_ended": true,
+        "rel.skye.trust": "-1",
+        "rel.skye.warmth": "-1",
+        "rel.skye.friction": "+2"
+      },
+      "body": [
+        "“If nothing happened,” Skye says, “then you just *chose*. Do you understand that? Do you understand what you’re telling me? On a *levee*. Nothing happened, and you *chose*. If you’d kissed her I could hate you. I could *do* something with that, I could put it somewhere. You stood there and you didn’t, and you came home and you called me every night, and now you’re here, and I have nowhere to *put* it.” She’s shaking her head before she’s done saying it. “No. No. You feel guilty. That’s all this is. You did something down there and you feel guilty and you’re doing *this* instead of saying it.” Her jaw is set so hard that the pink mark on her neck moves. “It has to be. It *has* to be, Jack.”",
+        "He doesn’t argue it. He said no. There’s no way to say it again that will make it go in, and every time he says it, it goes in worse.",
+        "She presses the heels of both hands into her eyes and stands like that, on her own porch, in his shirt.",
+        "Four months of him has learned to go toward her when she’s hurt — across the Saab, across a darkroom, across a party — and all four months of it goes toward her now, and he keeps his boots exactly where they are. It’s the hardest thing he does all night. It’s the last thing he can do for her.",
+        "“And the worst part —” Into her hands. “The most pathetic part — if you said *kidding* right now I’d let you in and feed you. I’d still *feed* you.” The hands come down. “Listen to me. Listen to what I just said. I hate it. I hate that I’d do it.”",
+        {
+          "if": "skye_knows_wife_line",
+          "text": "And lower, at the boards: “Your grandmother said my name was a good name for a wife. You *told* me that.”"
+        },
+        "“You and your *Lent*,” she says, and it breaks in the middle, and she turns her face away to the street so he can’t have the rest of it.",
+        "“Get off my porch.”",
+        "“Skye —”",
+        "“No. Don’t say my name like that. You said it like that the minute you got here and I left the eggs in anyway.” The words come apart on her. “Go *home*. Just go —”",
+        "He doesn’t go fast enough.",
+        "“*Leave me alone.*” She yells it, all of it, everything she has, and it comes back off the house across the street.",
+        {
+          "if": "s2e18_door==\"steps\"",
+          "text": "He steps back off the second step onto the walk. He was never any higher than that.",
+          "else": "He goes. Along the porch, past the yellow boots, down her steps to the walk."
+        },
+        "At the bottom he turns around."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“I’m sorry. I’m so sorry.”",
+          "set": {
+            "s2e18_last": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "cue": "Skye will remember that.",
+          "key": "From her steps you told Skye you were sorry — so sorry. She didn’t answer.",
+          "response": [
+            "“I’m sorry,” he says. “I’m so sorry.”",
+            "She’s at the rail with her back to him, her hand on the wood beside the coffee can, and she doesn’t turn round. Her shoulders go, once, and that’s all he gets."
+          ],
+          "goto": "s15e"
+        },
+        {
+          "tag": "Candor",
+          "text": "“I’ll go. You were never a story I was telling myself.”",
+          "set": {
+            "s2e18_last": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "key": "From her steps you told Skye she was never a story you were telling yourself. She didn’t answer.",
+          "response": [
+            "“I’ll go,” he says. “You were never a story I was telling myself.”",
+            "She goes in. She doesn’t let the screen door bang; she closes it carefully, with both hands, so that it won’t."
+          ],
+          "goto": "s15e"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Go without another word.*",
+          "set": {
+            "s2e18_last": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "You went down Skye’s steps without another word.",
+          "response": [
+            "He doesn’t say anything else. There isn’t anything that’s his to say.",
+            "She watches him go, her arms crossed tight over herself, her chin up, her face wet, and her mouth stays shut on whatever’s in it."
+          ],
+          "goto": "s15e"
+        }
+      ]
+    },
+    "s15e": {
+      "slug": "TUESDAY · 6:55 PM · DEL PLAYA LANE — SOL",
+      "set": {
+        "sol_saw": true
+      },
+      "body": [
+        {
+          "if": "s2e18_door==\"steps\"",
+          "text": "The walk under his boots is cracked concrete with ice plant pushing up through the cracks."
+        },
+        {
+          "if": "s2e18_door==\"hello\"",
+          "text": "Behind him the swing is still moving a little on its chains, empty, from somebody getting up off it fast."
+        },
+        {
+          "if": "s2e18_door!=\"steps\" && s2e18_door!=\"hello\"",
+          "text": "Behind him the screen door is shut on the candles."
+        },
+        {
+          "if": "s2e18_door==\"steps\"",
+          "text": "Sol is coming up the walk with a camera bag on her shoulder, and she has to step off onto the ice plant to go round him.",
+          "else": "Sol is coming up the walk with a camera bag on her shoulder, and she meets him at the foot of the steps."
+        },
+        "She’s twenty and talks about as much as the yellow boots do. She looks at his face. She looks past him at the porch. Then she goes up the steps two at a time without a word, and the screen door bangs behind her.",
+        {
+          "if": "s2e16_lent==\"wit\" && s2e18_door==\"inside\"",
+          "text": "Passing under the front window he can see in: the card table, the two candles burned down an inch, and the binder on the table between the plates, square to the edge where he set it down, shut."
+        },
+        {
+          "if": "s2e16_lent==\"wit\" && s2e18_door!=\"inside\"",
+          "text": "Passing under the front window he can see in, for the first time: the card table, the two candles burned down an inch, and on the plate at his place a white three-ring binder with handwritten tabs, shut."
+        },
+        {
+          "if": "s2e16_lent!=\"wit\" && s2e18_door==\"inside\"",
+          "text": "Passing under the front window he can see in: the card table, the two candles burned down an inch, and the MENU card on the table where he set it down, folded."
+        },
+        {
+          "if": "s2e16_lent!=\"wit\" && s2e18_door!=\"inside\"",
+          "text": "Passing under the front window he can see in, for the first time: the card table, the two candles burned down an inch, and on the plate at his place a folded index card with *MENU* on it in her hand."
+        },
+        "The half moon has climbed over the roofs across the street while he was on her porch. Over the door the light is on.",
+        {
+          "if": "knows_skye_name",
+          "text": "A name goes through his head on the walk, the one her father had for her, the man with the five o’clock call. *Mary Kate.* He doesn’t say it."
+        },
+        "He doesn’t look back until the road. When he does, the light is on over her door, and behind the screen two shapes are standing close together in the yellow of the kitchen."
+      ],
+      "next": "s16"
+    }
+  }
+}

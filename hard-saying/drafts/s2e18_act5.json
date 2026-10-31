@@ -1,0 +1,185 @@
+{
+  "scenes": {
+    "s16": {
+      "slug": "TUESDAY · 7:10 PM · DEL PLAYA LANE, THE MARINE LAB TURNOUT",
+      "set": { "texted_lena_done": true, "lena_replied_done": true, "rel.lena.trust": "+1" },
+      "body": [
+        "Past the Marine Lab fence the streetlights give out. The turnout is where they stop: a dark scoop of gravel off the shoulder, a guardrail at the back of it, and past the guardrail the bluff going down to nothing and the Channel laid out black to the end of the world, with one oil platform on it in a small fixed cluster of lights.",
+        "He sits on the guardrail. From here he can see her porch.",
+        "The house is five lots back up Del Playa, leaning toward the neighbors, and the light over the door is on, yellow, the only porch light lit on that side of the street. The Saab is at the curb under the streetlight where she left it, the dent in the rear quarter panel holding a little of the light. Three houses past hers somebody’s Tuesday party is getting started; a cheer goes up when the keg makes the top of the steps, and after that only a bass line through a wall.",
+        "It comes back out here all at once, everything Lent has cost him so far, at the same time. His hands first. They won’t stay on the rail; they go to his knees and back and to his knees, wanting the one thing they have always done at a time like this. Then the hollow under his breastbone, cut to the exact shape of a first drag. Then the breast pocket, which he can feel against his chest as distinctly as a hand laid there. He sits on his hands.",
+        "He’s cold. He doesn’t know how cold until he goes for the phone and his fingers can barely get it out, and then can’t work the RAZR’s hinge; he has to blow on them and open it with both thumbs, and the hinge creaks along the crack. It’s been a quarter of an hour. She shouldn’t have to wait to find out whether he did it.",
+        "He types it with his thumbs gone stupid, and he puts in the capitals and goes back into the symbols for every apostrophe.",
+        { "type": "sms", "from": "Jack", "text": "It’s done. It went badly, but it’s done. I’ll find you tomorrow.", "time": "7:15 PM" },
+        "He sends it to Lena.",
+        { "type": "sms", "from": "Lena", "text": "I’ll be here. —L.", "time": "7:16 PM" },
+        "He reads it once and shuts the phone. It stays on the outside screen, a line of small blue-white letters in the cup of his hand, until the screen gives up and goes black.",
+        "A little before eight somebody comes down Del Playa from the Ocean Road end in a blazer, walking fast with his hands in his pockets, and turns in at her walk and goes up the steps under the light. The door opens before he gets to the top. Jack would know the walk from the far end of a parking lot: the shoulders, the hurry pretending it isn’t one. Theo, as he said. The door shuts, and the porch is empty again, the swing at the end of it, the boots by the door.",
+        "He doesn’t feel it start. He’s watching the door Theo went in at, and then his face is wet and his chest is going in hard, uneven pulls, and he’s bent over his knees on the guardrail with his mouth open, crying the way he hasn’t since he was small enough to be carried in from the car: loud, and stupid, and to the bottom. It isn’t anything he’s doing. It’s done to him, from the stomach up, in waves that fold him over and let him up and fold him over. His nose runs. He wipes it on the Carhartt’s cuff and it runs again.",
+        "What he cries for comes up in no order, a piece at a time, and every piece is hers. This turnout, and the Saab in it with the engine off and the heater on, the two of them talking till the windows went white and she wrote on the white with one finger, things he had to read backwards from the passenger seat. Mass, with her beside him not knowing a single response and kneeling anyway every time everybody knelt, on the hard kneeler, because she’d come to find out what it was and kneeling was part of it. The March in January, in the cold, her hands in his coat pockets with his. A goose in Burnaby he’s never going to meet, in a frame, signed by a crew. The window seat, that first night, and O’Connor face down on her knee, and the grandmother she said was exactly backwards.",
+        { "if": "s2e16_lent==\"wit\"", "text": "A binder on a card table between two candles, three-ring, tabbed in her hand, the thickest tab marked LOOPHOLES, and he never read a page of it and isn’t going to. Dinner. She has never made anybody dinner. She made him one, and he never sat down to it.", "else": "An index card on a card table between two candles, MENU in her hand across the top and one item under it, *eggs (ambitious)*. Dinner. She has never made anybody dinner. She made him one, and he never sat down to it." },
+        "And the chair by the radiator in the kitchen on Glenwood, the one Nonna puts people in when she means to feed them. He’d already put Skye in it, in his head, for the summer: Nonna standing over her with a plate, telling her in Calabrese she was too thin, and Skye answering in an accent she’d have worked up on the flight.",
+        { "if": "ma_wednesday", "text": "Tomorrow he owes Ma a call. Nonna will be in the next room, asking who it is." },
+        "And under all of it the thing he can’t get his hands around. For months there has been one person he could tell the worst true thing to, out loud, and she would laugh at him, kindly, from about four inches away, and then say it back to him better than he said it. Tonight he told her the truest thing he had, and she laughed at first, because she thought he was kidding.",
+        "It doesn’t empty anything. He cries till he’s done, and he isn’t done, and it comes back up and bends him over again, and he stays bent over it on the rail with his elbows on his knees and the cold gravel under his boots, and lets it.",
+        "At twenty to ten the porch light goes out. He doesn’t see whose hand. It’s there, a yellow square over her door with the boards under it and the swing at the end, and then there’s only the streetlight and the Saab."
+      ],
+      "choices": [
+        {
+          "tag": "Restraint",
+          "text": "*Stay till the dark is all the way dark.*",
+          "set": { "s2e18_light": "restraint", "trait.control": "+1" },
+          "response": [
+            "He stays till his eyes give up the shape of the porch, and the house is only a darker place in the dark, and there’s nothing on that side of the street but the streetlight and the Saab under it. When he gets up off the rail his knees are older than they were at six. He starts up Del Playa on the far sidewalk, and doesn’t cross."
+          ],
+          "goto": "s17"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "*Say the Our Father again, for her, all the way through.*",
+          "set": { "s2e18_light": "sincerity", "trait.sincerity": "+1", "soul.grace": "+1" },
+          "response": [
+            "*Our Father, who art in heaven.* For her. Not for him. He goes slowly, the speed he went at the foot of her steps, and this time he doesn’t stop at the trespasses; he goes through them and out the other side, *as we forgive those who trespass against us*, and on to the end, and says Amen to a dark house. He gets up and takes the bluff path behind the Marine Lab instead of the street, with the surf going under him in the dark."
+          ],
+          "goto": "s17"
+        },
+        {
+          "tag": "Candor",
+          "text": "*Get up. Walk.*",
+          "set": { "s2e18_light": "candor", "trait.candor": "+1" },
+          "response": [
+            "He gets up. Up Del Playa on the ocean side, past the Saab without looking at the house, past Julian’s garage, dark now, the door down and the piano somewhere behind it. Ocean Road. He won’t remember the Lagoon path afterward, only that he was on it."
+          ],
+          "goto": "s17"
+        }
+      ]
+    },
+    "s17": {
+      "slug": "TUESDAY · 11:05 PM · DELGADO HALL, THE EAST STAIRWELL",
+      "set": { "lena_on_landing": true },
+      "body": [
+        "The tube over the landing hums its one note. Behind the cinderblock somebody’s shower runs and stops. On three somebody drops something heavy, a textbook or a boot, and says one word about it, and far down the well a dryer is turning a pair of sneakers over and over, a soft knock, a soft knock. Tuesday night in Delgado Hall: everybody with a quiz in the morning, and the building settling around it.",
+        "He’s on his step, the third one down from four. He hasn’t been up to 412. Theo is on Del Playa, and the room would have Theo’s lamp in it and the crucifix over his own bed, and he doesn’t want the room. His face has dried stiff. His eyes feel sanded.",
+        "The want is worse in here. On the guardrail he was too cold to feel all of it, and in the stairwell he’s warm enough to feel every bit. He unbuttons the breast pocket and takes the pack out. Red and white, the cellophane bright along its edges under the tube.",
+        "He leans down and sets it on the step two below his, in the middle, where he’d have to stand up and go down to get it. He sits back against the cinderblock and does the button up again over the RAZR, and looks at the pack.",
+        { "if": "s2e17_last==\"pack\"", "text": "Osei, in the chair facing his, on Saturday: *If the hand wins one day, come back.*" },
+        "His hand stays on his knee. He watches it there: his hand, the pack, two steps of concrete. It’s a long shift on a line that doesn’t stop, his father’s kind of work, the same small thing to be done right every time it comes round, and it keeps coming round. Somebody on four laughs in the hall and goes in. Once it comes up so hard he has to shut his eyes: not in his hands this time but behind his teeth, a taste, the first drag before the first drag, and he sits with his eyes shut and his hands loose on his knees and listens to the tube hum till the taste goes back down where it lives.",
+        "A little after a quarter past, two floors down, a door. Not the stairwell door; farther off, at the end of the second-floor hall, and he knows it the way he knows the screen door on Glenwood. The push bar on two. Steps coming up half a flight onto the landing where she takes her calls, and stopping there. A coat folding. Somebody sitting down on concrete.",
+        "No phone. No voice, no blue glow on the cinderblock down there. A small hard click, wood on concrete. Another. Another. Ten of them, and a pause, and in the pause he can just hear her, too low for words, and then the clicks again. It’s her. It’s her landing; she has sat on it to call New Orleans since September. He has heard her from up here on other nights, her voice coming up the well telling somebody at home she’d made groceries, telling somebody at home not to start.",
+        "Tuesday. The Sorrowful Mysteries. The Agony in the Garden first.",
+        "He can’t see her. The stairs double back twice between his step and hers, and all he has of her landing is the rail going down into it and the tube light lying on the wall. He knows those beads, though: wooden, dark from handling. He has watched them go through her fingers in a pew at St. Brendan’s before Mass, and lost the first reading entirely, and the psalm.",
+        "He doesn’t go down. Two flights; he has taken them three at a time with a laundry bag on his shoulder. He stays on his step with the pack two below him, and the beads go on below that, ten and a pause, ten and a pause. The Scourging. The Crowning with Thorns. He knows where she is in it by the count. He knew where Nonna was in hers from the next room on Glenwood, by the click of the plastic ones against the arm of the chair by the radiator, and that is a thing he can’t think about tonight, so he listens to these.",
+        "Somewhere around her third time through, it stops being Tuesday. He feels it go by. The dryer has stopped; the building has gone down to the tube and the beads. *Not till Tuesday’s done,* she said, and Tuesday is done, and he wrote *tomorrow* to her on a guardrail with his thumbs not working, and he isn’t going to make a technicality of it at one minute past twelve.",
+        "He could say her name. The stairwell would carry it; it carries everything. He keeps it in his mouth. His hand goes to the rail and comes back to his knee. She doesn’t come up."
+      ],
+      "choices": [
+        {
+          "tag": "Restraint",
+          "text": "*Leave it where it is.*",
+          "set": { "s2e18_stairs": "restraint", "trait.control": "+1", "soul.restraint": "+1", "resolve.jack": "+1" },
+          "response": [
+            "He leaves it. It sits two steps down in the tube light, red and white, through the rest of that round and into another, and he lets the clicks take him round with them. At twenty past twelve the beads stop. A coat moves on concrete; the push bar; the hall; the 217 door, far off. The pack is where he put it."
+          ],
+          "goto": "s18"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "*Pray the decade with her, under your breath, a bead behind.*",
+          "set": { "s2e18_stairs": "sincerity", "trait.sincerity": "+1", "soul.grace": "+1" },
+          "response": [
+            "He prays it with her under his breath, half a Hail Mary behind, keeping her pace: her beads coming up the stairwell and his words going down it, none of it louder than the light. The clicks go round, and round again. When they stop, past midnight, and the push bar goes, and far down the hall her door, he’s three Hail Marys from the end. He finishes the decade alone."
+          ],
+          "goto": "s18"
+        },
+        {
+          "tag": "Candor",
+          "text": "*Pick it up and hold it, shut, in your fist.*",
+          "set": { "s2e18_stairs": "candor", "trait.candor": "+1" },
+          "response": [
+            "He stands, goes down two steps, picks it up, and sits back down with it shut in his fist, and holds it the way you’d hold somebody’s wrist to keep them from going. Below, the beads go round, and round again. At twenty past twelve they stop, and a coat moves on concrete, and far down the hall the 217 door shuts. The cellophane has gone warm in his hand."
+          ],
+          "goto": "s18"
+        }
+      ]
+    },
+    "s18": {
+      "slug": "WEDNESDAY · 1:05 AM · THE EAST STAIRWELL — THEO",
+      "set": { "theo_held_pack": true, "rel.theo.trust": "+2", "rel.theo.warmth": "+1" },
+      "body": [
+        "The bass line has been coming up the well since midnight from somewhere on one, the same figure over and over, patient as a sump pump. The push bar bangs on the ground floor, and somebody starts up.",
+        "Jack hears every flight of it. Not quick. Leather soles on concrete, and the scuff at each turn where whoever it is takes the landing wide. Past two. Past three. At the turn below Jack’s flight the steps stop, and start again, and Theo comes round the corner into the tube light in the blazer, his tie rolled up and stuffed in the breast pocket, his hair pushed back off his forehead with both hands, by the look of it, more than once.",
+        "He looks at Jack, and climbs past him and sits down on the step above, a little to one side, his back to the cinderblock and his knees up, his good shoes on the concrete by Jack’s shoulder. The blazer smells of somebody else’s kitchen: butter, and candle smoke.",
+        "He doesn’t say anything, and Jack doesn’t. For a long time it’s the tube light and the bass line. In the wired glass on the landing below, the two of them sit reflected in the black, one step apart, two guys in a stairwell at one in the morning, and Jack looks at that and stops looking. The bass line quits in the middle of its figure, and a door shuts somewhere down there on whatever was playing it, and it’s only the tube.",
+        "Theo’s hands hang between his knees. Eventually he takes a sleeve of orange peanut-butter crackers out of his blazer pocket and puts it on the step beside Jack’s boot. “Vending machine on one,” he says. “It was out of everything else.”",
+        "Jack looks at the crackers. He leaves them there.",
+        "On Monday night in 412, Theo said he’d go to her, and then come find him. He has done it in that order. He went up her steps at eight and stayed five hours, and then he walked up Ocean Road in his good shoes and climbed four flights, and now he’s sitting on cold concrete in a blazer that cost more than the Saab, with his tie in his pocket, and in the tube light he looks a good deal older than nineteen.",
+        "“She’s not alone,” Theo says. “Sol’s home.”",
+        "Jack nods. He keeps nodding a little after there’s no reason to, and stops. Out on the road a car goes by with its radio up, and is gone.",
+        "“She told me,” Theo says.",
+        "So he has it. All of it, from her side, in that house with the candles burning down: the name, and the levee, and whatever she made of them by the time he got there. He carried it up four flights and sat down a step above Jack with it, and it’s going to stay where he put it. It’s hers. Jack leaves it with him.",
+        { "if": "s2e18_stairs==\"candor\"", "text": "Theo looks at Jack’s right hand, at the corner of red showing between the knuckles. He holds his own hand out, palm up, and leaves it there, and waits. He waits through the hum of the tube and Jack breathing through his mouth because his nose is still no good. Jack opens his fist.", "else": "Theo looks past him at the pack on the step two down, red and white in the tube light. He leans past Jack’s shoulder and picks it up, and holds it up in the light, and his eyebrows go up with it: *may I.* Jack nods." },
+        "Theo puts it inside his blazer. “Till it’s light.”",
+        "Twice in the next hour he takes the tie out of his breast pocket and rolls it tighter round his fingers and puts it back. Jack’s eyes close and open. He isn’t sleeping. Every time they close he’s on her steps with the light on over the door, and they open.",
+        "That’s all, for a long stretch. The building runs down toward two. On three a door opens, and somebody goes down the hall to the bathroom in shower shoes, slap, slap, and back.",
+        "It comes back while Theo is sitting there. Jack doesn’t feel this one start either; he’s looking at the crackers, the cellophane, the stupid cheerful orange of them, and then he has his forearms across his knees and his face down in the crook of one elbow, and his back is going, and the sound he’s making goes up the well and comes down again off the concrete, and there’s nothing he can do about where it goes. It’s her laugh, this time, that does it. Not any particular laugh. Just that he knows what it sounds like close up against his ear, and that he knows it better than any sound in the world except maybe his mother calling up the stairs, and that it’s on Del Playa tonight in a dark house, and he isn’t going to hear it like that again.",
+        "Theo sits a step above with his shoes by Jack’s shoulder and his eyes on the wall across the stairwell, and leaves him to it, and the tube light hums over the two of them till it passes.",
+        "When Jack can sit up, he sits up. He wipes his face with both hands. The Carhartt’s cuff is no use to anybody now.",
+        "“Picture it,” Theo says, to the wall. And then nothing comes after it. He shakes his head slightly at whatever the picture was.",
+        "“We used to get under the craft-services table,” he says instead. “On the Meridian lots. When we were kids. Rate everybody’s outfits.”",
+        "Jack laughs. He doesn’t mean to. It comes up out of the place the crying came from and hurts coming up, one cracked sound in the stairwell, and then it’s out, and there isn’t any more of it.",
+        "Theo doesn’t laugh. He looks down the stairwell at the turn below, where the light lies on the cinderblock, and if there’s more about the craft-services table, he keeps it."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“Thank you for going to her.”",
+          "cue": "Theo will remember that.",
+          "key": "At one in the morning Theo found you in the stairwell and held the pack till it was light. You thanked him for going to her.",
+          "set": { "s2e18_theo": "sincerity", "trait.sincerity": "+1", "rel.theo.warmth": "+1" },
+          "response": [
+            "“Thank you for going to her.”",
+            "“She’s my oldest friend, Costigan. You’re my — ” Theo doesn’t finish it. He puts his head back against the cinderblock and shuts his eyes, and moves his shoe on the step until it’s against Jack’s shoulder, and leaves it there."
+          ],
+          "goto": "s18a"
+        },
+        {
+          "tag": "Candor",
+          "text": "“I told her everything. It didn’t help.”",
+          "key": "At one in the morning Theo found you in the stairwell and held the pack till it was light. You told him you’d told her everything, and it didn’t help.",
+          "set": { "s2e18_theo": "candor", "trait.candor": "+1", "soul.honesty": "+1" },
+          "response": [
+            "“I told her everything. It didn’t help.”",
+            "“No,” Theo says. “It never does.” He takes the pack out of his blazer and turns it over in his fingers in the tube light, red, white, and puts it back, and settles his back against the cinderblock for the night."
+          ],
+          "goto": "s18a"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Say nothing. Let him sit.*",
+          "key": "At one in the morning Theo found you in the stairwell and held the pack till it was light. You said nothing, and let him sit.",
+          "set": { "s2e18_theo": "restraint", "trait.control": "+1" },
+          "response": [
+            "They sit. Somewhere after two Theo hums four bars of something from a movie Jack hasn’t seen, low, mostly under his breath, and stops in the middle, and that’s the last sound either of them makes till morning."
+          ],
+          "goto": "s18a"
+        }
+      ]
+    },
+    "s18a": {
+      "slug": "WEDNESDAY · 6:20 AM · THE EAST STAIRWELL — FIRST LIGHT",
+      "set": { "first_light_feb24": true, "resolve.jack": "+1" },
+      "body": [
+        "Theo stays. Most of the night. The tube keeps its one note, the bass line is hours gone, and every time Jack looks up, Theo is a step above with his head against the cinderblock and his eyes open. Somewhere around four Jack eats the crackers, all of them, one after another, without tasting any, and sits with orange on his fingers and the empty sleeve on his knee. Around five the heat comes on in the walls with a long sigh, and the stairwell warms by a degree, and that is the only thing that happens for an hour.",
+        "After six the wired glass on the landing stops being a mirror. All night it has been black with the two of them in it; now, by degrees, it goes the deep blue of a new work shirt, the dark Dickies his father wore to Lordstown, and then paler than that, the blue of the same shirt after years in Ma’s machine, washed soft at the elbows. Through it, for the first time since he sat down, there’s a world: the top of a eucalyptus, the roofline of the Commons, a strip of sky going clear.",
+        "Theo stands. His knees crack. He takes the pack out of his blazer and holds it down to Jack, the cellophane tight, the gold thread unbroken. It’s warm from the blazer.",
+        "“Yours.”",
+        "Jack takes it. Theo said till it was light, and it is, just. He goes up the three steps onto four, and the stairwell is Jack’s.",
+        "He opens the RAZR. The hinge creaks in the empty stairwell, louder than anything has been in an hour. Her line is still on the screen, where he left it last night on a guardrail: *I’ll be here. —L.*",
+        "It’s tomorrow.",
+        "He doesn’t go down yet. He gets up off the step, slowly, his legs telling him about every hour since eleven, and puts the pack in the breast pocket next to the phone, and does up the button.",
+        "Below him the stairs go down, flight after flight, to two, and the light is coming in at every landing."
+      ],
+      "end": true
+    }
+  }
+}
