@@ -2313,3 +2313,12 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 
 ### After S2E17 (player feedback)
 - **Feedback:** "Finished." (no notes)
+- **S2E18 answers (player).**
+  - **Lena's news (Sunday, after ending it with Julian):** from Lena herself: **it's done; please don't talk to me
+    until you're free too; we barely held on last time** (her own words in voice; the levee is "last time").
+  - **After the porch (Tuesday night):** Jack goes **alone, then Theo.** He sits in his grief most of the night for
+    what's been lost. **Relatively soon into it he texts Lena**, so she doesn't have to wait to find out if he did it,
+    but he can't bring himself to go to her that night. Text verbatim: *"It's done. It went badly, but it's done.
+    I'll find you tomorrow."*
+  - **Laney's tabloid read-aloud of the Skye breakup lands in S2E19** (when the item hits the blogs; alongside the
+    asking that Friday).
