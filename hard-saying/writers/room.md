@@ -418,6 +418,16 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 257. **Gray as the default** for dawn and sorrow (S2E17). Name a different color or a different light.
 258. **Branch tails** (S2E17): several responses to one choice ending on the same destination phrase. Give each response its own last beat (cousin of #251).
 259. **Confession items** (S2E17). Every sin Jack confesses must be a beat the player actually saw.
+260. **"keeps X where it is" as a restraint stamp** (S2E18). Narration naming Jack's restraint is announced once an episode, not four times; same for "the one thing left he can do" and "nothing that's his to say" (#114 cousin).
+261. **Lena's exit as a chain of sounds** (S2E18): push bar, corridor, the 217 door. One exit sound at most per scene.
+262. **Skye's asides about herself** (S2E18: "I don't know why I'm telling you about Kyle"). Once an episode.
+263. **Offstage stairwell noises** (S2E18): one a scene, never a stack of bystander sounds.
+264. **Scenes ending on a closed phone in Jack's hand** (S2E18). Once an episode; give the others their own last beat (cousin of #258).
+265. **A recurring walk-on extra in the same hoodie** (S2E18). Once, not as a running gag.
+266. **Duel responses ending on a bystander or Hale's verdict** (S2E18). Vary the last beat (cousin of #258).
+267. **"its one note" for the tube light** (S2E18). Once an episode (#176).
+268. **Narrator restating Jack's restraint** (S2E18). See #260; show it, do not label it.
+269. **Skye's showbiz register leaking into narration** (S2E18, a repeat of the S1E21 note). Keep genre voice in her dialogue, not the narrator's figures.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

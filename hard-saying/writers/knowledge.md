@@ -2492,3 +2492,39 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Mémère's "le 19 mars" card.** Jack's birthday is Mar 19; who told her is unresolved.
 - **Muted TV in s16.** Tiger Woods' statement, Fri Feb 19, 2010, never named; Continuity to confirm.
 - **Carried and untouched:** Julian's card (Lena ends it Sun Feb 21); Hale's four thousand words; Mémère's cedar-chest ring; Luc's gas-leak file; `promised_skye_truth`; Cabazon postcard and swing print.
+
+### S2E18
+> Final revision (see continuity.md S2E18). Branch tags are `[scene | condition]`. Canon is Sun Feb 21 – Wed Feb 24, 2010. Everything said aloud in a room is heard by the people in it unless the entry says otherwise. None of the hidden canon appears on the page, in keys, cues or nextTime.
+
+#### Jack
+- **Learns:** [s05] from Lena: it's done with Julian; Julian read the card first; he wasn't surprised; he "never once told me I was wrong"; he was kind; the rest is his; please don't talk to me till you're free; no levee till Tuesday's done. [s07c] at the 109H table: Hale's "more so"; Evan counted eleven finished sentences. [s08a] Theo tells him Skye texted Theo the goose photo at 6 p.m. Monday, captioned *Tell no one.* [s15a] Skye asks whether he ate. [s18] Theo's ironed handkerchief; Theo's breakfast sleep claim (on the Anchor path he knows it's false).
+- **Tells:** [s15c] Skye: Lena "knows it's Tuesday". [s16] Lena: the verbatim 7:15 text. [s18] Theo: nothing of the porch; Theo already has "She told me."
+- **Does not know:** what Skye says to Theo (never relayed); whether Lena has read the text beyond her reply.
+
+#### Lena
+- **Hears:** [s05] says it herself (above). [s07] Hale's lines in the room. [s16] the verbatim 7:15 text; her reply *I'll be here. —L.*
+- **Does not hear:** the porch, Sol, Theo, Skye's side of anything.
+- **Tells:** [s05] Jack: the facts above. [s16] her reply.
+
+#### Skye
+- **From Jack (porch, s15a-s15c, all paths):** Lena; Julian ended Sunday; the near-kiss on the levee; St. Charles and the coat; they all stayed at Lena's family's house ("In her mother's house"); the pact; nothing happened; Jack loves Skye and these were his happiest months; he won't say "love" about Lena (`s2e18_her`); the fumbled why (`s2e18_why`); Lena knows it's Tuesday. [s08 | Sincerity] on the roof Jack said "love you" to Skye (`said_love_roof`); s15a reads it.
+- **From Theo:** [s08a] she sent Theo the goose photo (*Tell no one.*); [s18] Theo to Jack only: "She told me."
+- **Says or does herself:** [s15] lit two candles, relit one; notes on her hand at a red light in Carpinteria; bribed the surfers out with a thirty-rack. [s15b] has been learning Mass. [s15c] bought the pan in Ventura; learned both endings of the Our Father in the car.
+- **She does not know:** what Lena wrote back; Jack's night on the stairs.
+
+#### Others
+- **Gloria** — [s03a / s12, told Saturday] only that Jack wanted Tuesday night off (she wrote HECTOR over his name and didn't ask why).
+- **Sol** — [s15e] Jack's face, and the porch; he came home about 6:55, an hour before he'd sworn he would (Sol's timing clause).
+- **Theo** — [s18] "She told me." What Skye said is never relayed. [s08a] was texted the goose photo, told Jack. [s14] hears Skye's text because Jack reads it aloud.
+- **Hale** — [s07] Wit option text by path (`s2e18_hale`): "Page two-thirty-three" only on the d2 Press path.
+- **Ma** — [s04 | Candor] a call on Wednesday.
+- **Evan / the 109H table** — [s07c] Hale's "more so"; eleven finished sentences counted.
+- **Bev** — the goose's handler (s08 / s15).
+
+#### LIVE RISKS carried out of S2E18
+- **Who knows what at the end.** Skye knows the full porch list above; Lena knows only the 7:15 text; Theo knows "She told me" and nothing of content; Sol knows Jack's face and the porch; Gloria only the Tuesday request. Osei's seal from S2E17 is unchanged.
+- **Branch-gated facts.** `said_love_roof` (replaces `said_love_mon`; check S2E14 saves and any later reader of the old name); `essay_typed` (now s06, all paths); `s2e18_last == "candor"` for "You were never a bit."; `s2e18_her`, `s2e18_why`; binder and "broke my own rule" lines need both `s2e16_lent` and `s2e17_three`; Hale Wit option by `s2e18_hale`/d2 Press path.
+- **Counts to keep.** "nearly six weeks" (wallet card), "A week", "thirty times since November", "three months", moon waxing gibbous a few days short of full, neither in the room since before the Super Bowl, Jack ate nothing from morning until the crackers around 4 a.m.
+- **Page 233.** Unverified; Researcher to confirm against an edition before any later episode cites it.
+- **s18a ending.** "He doesn't go down yet." Do not have anyone read it as Jack at Lena's door at 6:20 a.m.
+- **Carried and untouched:** Mémère's "le 19 mars" card; Mémère's cedar-chest ring; Luc's gas-leak file; `promised_skye_truth`; Cabazon postcard and swing print; Clovis holds the pack; Kevin's 35:15 sheet.
