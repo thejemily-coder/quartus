@@ -2310,3 +2310,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   - **The return confession to Osei is SATURDAY** (Feb 20), regular confession hours, after a night of not sleeping;
     before Skye (as designed: distraught, not a sin; "you haven't actually confessed anything"; the venial sins from
     New Orleans; devotional confession). Place it at the end of S2E17 or the start of S2E18 per the map.
+
+### After S2E17 (player feedback)
+- **Feedback:** "Finished." (no notes)
