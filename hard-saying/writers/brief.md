@@ -2322,3 +2322,10 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     I'll find you tomorrow."*
   - **Laney's tabloid read-aloud of the Skye breakup lands in S2E19** (when the item hits the blogs; alongside the
     asking that Friday).
+- **Theo and Skye's call (player; staged OFF-PAGE now, revealed MUCH LATER, likely not this season).** A day or two
+  after the breakup, **Skye calls Theo to ask what happened.** Theo tells her he **genuinely doesn't know**, but he
+  **dismisses her cheating theory**; all he tells her is that **Jack seemed miserable both the day before and the night
+  after the breakup.** This is **part of why Skye comes back** a couple of weeks later to ask Jack for an explanation
+  (step 5 of her design): she now believes what he said (he never did lie to her); she just can't understand what
+  happened. **Theo admits the call to Jack much later.** Until then: nothing on the page reveals it (no hint from Skye
+  or Theo the Knowledge Auditor would flag), though Skye's return can be shaped by it invisibly.
