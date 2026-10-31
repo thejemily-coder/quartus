@@ -2329,3 +2329,7 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   (step 5 of her design): she now believes what he said (he never did lie to her); she just can't understand what
   happened. **Theo admits the call to Jack much later.** Until then: nothing on the page reveals it (no hint from Skye
   or Theo the Knowledge Auditor would flag), though Skye's return can be shaped by it invisibly.
+
+### After S2E18 (player feedback)
+- **Feedback:** "That was devastating. Skye is simply the best. I teared up." Keep honoring Skye at this level in
+  her absence and her return.
