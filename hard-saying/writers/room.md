@@ -441,6 +441,15 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 280. **A coined phrase repeated as a callback** (S2E19). Spend a coinage once as a callback, not as a running label.
 281. **Church similes as the courtroom replacement** (S2E19: "like a nun...", 2 uses). To watch; do not let it become the new stock figure.
 282. **A composure beat where a laugh was cut** (S2E19: "looks very hard at the creamer / the grain of the oak / with great composure", 3 uses). Once an episode.
+283. **The discreet stranger who looks away** (S2E20: dog-walker, cab driver, bus driver, desk sophomore, coat-check girl). At most 3 per path.
+284. **The kiss-tail quip delivered "against his mouth"** (S2E20). Once per path.
+285. **"Her hand finds his" as the closing touch** (S2E20). Once per episode.
+286. **A tender beat deflected to a window, lapel or thread** (S2E20). Once per character per episode.
+287. **Conditional jacket recap lines** (S2E20: s15a tails). At most 3 scenes carry them.
+288. **A set-piece speech performed in full twice** (S2E20: Lena's Forum case in s03 and s07). Show what changed instead.
+289. **"In my life" superlatives** ("never in his life", "best of my life"; S2E20 had five "never in his life"). At most 2 per episode.
+290. **The rival borrowing the heroine's gestures** (S2E20). Add to #64: Skye's shoved sleeves, lifted pen and mouth-corner were Lena's; Skye keeps the chewed pen cap and the Kleenex ball, Lena keeps the rest.
+291. **One identical exchange pasted under every option of a choice** (S2E20: Lena's 2:36 text under all three s09c options; the s11 "wear what I like" exchange). Hoist it into shared text or the next scene.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

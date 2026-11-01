@@ -1,0 +1,706 @@
+{
+  "scenes": {
+    "s04": {
+      "slug": "TUESDAY · 11:00 AM · MORRO HALL 1100 — STILL SOLO",
+      "set": {
+        "skye_absent_mar2": true
+      },
+      "body": [
+        "The rain came through in the night and didn’t finish. Morro 1100’s long windows are beaded from the sills up, and the light that gets in through them is a thin wet lemon, the sun up there somewhere behind the marine layer, working on it. Umbrellas lie open to dry along the aisles in a field of black mushrooms. Jack climbs the tiers to the back row under the exit sign with the drizzle still standing in beads on the shoulders of the Carhartt.",
+        "Her desk is folded up.",
+        {
+          "if": "s2e19_wharf==\"candor\"",
+          "text": "On the wharf on Saturday he said her name once, low, and the wind took it back up the boards toward town."
+        },
+        {
+          "if": "s2e19_wharf==\"restraint\"",
+          "text": "On the wharf on Saturday he turned around before she could look up, and walked back the length of the boards with the wind at his back."
+        },
+        {
+          "if": "s2e19_wharf==\"sincerity\"",
+          "text": "On the wharf on Saturday he stood behind the bait shack and watched her start it over from the beginning, and then he went."
+        },
+        "He sits. He gets out the notebook and the pen and puts his bag down at his own feet, on his own side.",
+        "Dr. Fenner has drawn a beach on the board: a long flat line, and the surf as a row of little humps along it with one gap in the row. Out through the gap he chalks an arrow, skinny at the bottom and fanned at the top, a tree with no trunk to speak of. “Rip current,” he says, turning round, pleased with it. “Not a rip *tide*. If I see rip *tide* on a midterm I will weep in front of you.” He taps along the shore. “Feeder.” The gap. “Neck.” The fan, out past the break. “Head.” All the water the waves pile up on a beach has to get back out somehow, he says, and it finds the low place and goes out through it all at once, fast, faster in a good one than anybody in this room can swim.",
+        "“It doesn’t pull you under. Everybody thinks it pulls you under. It takes you out past the break and lets go of you there.” He points the chalk up the tiers. “The people who drown in one drown swimming at the beach. They can see exactly where they want to be, and they go straight at it with everything they’ve got, and it’s stronger than everything they’ve got. Don’t fight it. Swim parallel. Along the shore, out of the neck — most of them aren’t thirty yards wide. Then swim in.”",
+        "One of the surfers in the fourth row says you can also just ride it out to the lineup, it’s a free ride, and Fenner aims the chalk at him with real joy. “That young man has a *board*. That young man is not the population I’m worried about.”",
+        "Jack writes *feeder · neck · head* in the margin, and under it *swim parallel*, and draws the little tree.",
+        "At 11:40 the chalk goes down and the room breaks into pairs for conferences: desks banging down along the tiers, chairs scraping round, people knee to knee over one notebook with their heads together. It’s loud in a cheerful, Tuesday way. Fenner comes up the side stairs with the clipboard, ticking pairs off as he climbs, and gets to the top.",
+        "“Mr. Costigan. Still solo?”",
+        "“Still solo.”",
+        "“Thursday, then.”",
+        "He makes a mark and is gone back down the stairs, already happy about two girls in the middle who have drawn their rip current going the wrong way. On the clipboard under his arm, beside *41 · Costigan / Callender*, the line for today stays blank.",
+        "When the room lets out Jack goes down the back stairs to the table by the door, where the handouts are stacked under the exit sign, still warm from the copier.",
+        {
+          "type": "doc",
+          "title": "",
+          "text": "RIP CURRENTS. Feeder · neck · head. Don’t fight it — swim parallel. Pair conferences: sign up at the front."
+        },
+        {
+          "if": "skye_folder && s2e18_handout==\"candor\"",
+          "text": "In the back of his notebook, behind his own, are two of hers: last Tuesday’s, with *refraction; shoaling; the bottom comes up; the point gathers it; Thurs.* across the top in his small print, and Thursday’s, with *fetch · duration · dispersion* and *Thurs. 2/25*."
+        },
+        {
+          "if": "skye_folder && s2e18_handout==\"sincerity\"",
+          "text": "In the back of his notebook, behind his own, are two of hers: last Tuesday’s, clean, and Thursday’s, with *fetch · duration · dispersion* and *Thurs. 2/25* across the top in his small print."
+        },
+        {
+          "if": "skye_folder && s2e18_handout!=\"candor\" && s2e18_handout!=\"sincerity\"",
+          "text": "In the back of his notebook, behind his own, is one of hers: Thursday’s, with *fetch · duration · dispersion* and *Thurs. 2/25* across the top in his small print."
+        },
+        {
+          "if": "!skye_folder && s2e18_handout==\"candor\" || !skye_folder && s2e18_handout==\"sincerity\"",
+          "text": "In the back of his notebook, behind his own, is last Tuesday’s, hers, the only one of hers he kept."
+        },
+        {
+          "if": "!skye_folder && skye_handout_tray",
+          "text": "Thursday’s is still in the wire tray for absentees at the corner of the table, *SKYE* across it in his capitals, gone under other people’s since."
+        },
+        {
+          "if": "!skye_folder && !skye_handout_tray && s2e18_handout!=\"candor\" && s2e18_handout!=\"sincerity\"",
+          "text": "There’s nothing of hers in his notebook, and nothing in the tray."
+        },
+        "He stands at the table with his hand on the stack while the room empties out past him."
+      ],
+      "choices": [
+        {
+          "text": "*Take hers. Write what she missed across the top, same as the others.*",
+          "if": "skye_folder",
+          "tag": "Sincerity",
+          "set": {
+            "s2e20_folder2": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "He takes two. Standing at the table he writes it small along her margin, Fenner’s words off the board — *feeder · neck · head · swim parallel* — and it goes into the back of the notebook, behind hers.",
+            "He knocks the handouts even against the notebook’s spine and shuts it on them."
+          ],
+          "goto": "s04a"
+        },
+        {
+          "text": "*Take hers. Write what she missed — and under it, “Fenner says Thursday.”*",
+          "if": "skye_folder",
+          "tag": "Candor",
+          "set": {
+            "s2e20_folder2": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "He takes two and writes it along her margin, *feeder · neck · head · swim parallel*, and then under it, smaller, *Fenner says Thursday.*",
+            "He looks at that a while. He doesn’t cross it out. It goes in behind hers, and out on the Morro steps the sun has got through, and every puddle on the quad is throwing it back up into his face."
+          ],
+          "goto": "s04a"
+        },
+        {
+          "text": "*Lay another in Fenner’s tray, on top of the first.*",
+          "if": "skye_handout_tray",
+          "tag": "Candor",
+          "set": {
+            "s2e20_folder2": "tray",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "The first is still there, *SKYE* in his capitals, gone under other people’s. He prints her name across a second one and lays it on top, face up.",
+            "On his way to the door the TA comes for the wire tray and carries it off down the front of the room, the two of them riding on top."
+          ],
+          "goto": "s04a"
+        },
+        {
+          "text": "*Take hers. Write nothing on it.*",
+          "tag": "Restraint",
+          "set": {
+            "s2e20_folder2": "restraint",
+            "trait.control": "+1"
+          },
+          "response": [
+            {
+              "if": "skye_folder",
+              "text": "He takes two, and hers goes into the back of the notebook behind the others, clean.",
+              "else": "He takes two, and hers goes into the back of the notebook, clean."
+            },
+            "He zips the bag shut on it and goes down the stairs with it on his shoulder."
+          ],
+          "goto": "s04a"
+        }
+      ]
+    },
+    "s04a": {
+      "slug": "TUESDAY · 12:40 PM · DELGADO HALL, THE LOBBY — NOT A DRESS",
+      "set": {
+        "laney_dont": true
+      },
+      "body": [
+        "Delgado’s lobby at lunch is the wall of mailboxes, little brass doors with combination dials, and the front desk with a sophomore behind it eating a Commons wrap over *Organic Chemistry*, and the Yellow Pages back on its shelf under the bulletin board where he put it yesterday. Jack is spinning his combination for nothing — a Residential Life flyer about the dryers, two-for-one from Giorgio’s — when Laney Price comes in from the mail window with a box.",
+        "It’s a USPS Express Mail box, white with the blue eagle, and she has it hugged to her front with both arms, contraband. The label is in a careful upright hand, every letter standing on its own two feet — *Magdalena Broussard, Delgado Hall 217* — and up in the corner, the return address: *N. Dupre St., New Orleans, LA.*",
+        "“This is *not* a dress,” Laney says, before he has opened his mouth. “It is *books*. Heavy Catholic books. Her mama is sending her Lent reading. Encyclicals.” She hugs the box tighter. It weighs, by the look of it, about as much as a sweater.",
+        "It isn’t Lena’s hand. Lena’s leans forward like it’s late for something. This one is her mother’s, and Jack can see the phone call as clearly as if he’d been in the kitchen for it: Lena on the line to Dupre Street, asking her mother to send her something to wear.",
+        "Laney shifts the box onto one hip. Her face comes up like a stadium at dusk, bank by bank, and she fills up for it, and he can see Saturday rising in her, with advice in it.",
+        "“Don’t,” Jack says.",
+        "Laney shuts her mouth on it. She looks at him over the box, wounded to the soul and thrilled about it.",
+        "“I was *only*,” she says, “going to say wear socks that match. On Sunday at Mass you had on one navy and one black, fireman, and I said nothing, because it was the Lord’s day.”",
+        "“They’ll match.”",
+        "“They had *better*. I have seen your closet, Jack Costigan. Theodore gave me the tour. I had to sit down.” She hoists the box higher. “And Saturday from six o’clock, she is *mine*. You don’t call, you don’t come down, you don’t stand on that landing with your face. You will be *received*, at the time appointed, like a gentleman, and not one minute before. And if you so much as shake this, I will Express Mail *you* back to Ohio. In pieces. Overnight. Insured.”",
+        "She’s still going — something about a lint roller, and a girl in Highland Park who wore white to a cotillion and has never been seen again — when the RAZR goes off in his pocket, twice.",
+        {
+          "type": "sms",
+          "from": "Theo",
+          "text": "412. 7pm. dinner school. attendance mandatory.",
+          "time": "12:46 PM"
+        },
+        {
+          "type": "sms",
+          "from": "Margot",
+          "text": "costigan the tide office 7 i need a catholic",
+          "time": "12:47 PM"
+        }
+      ],
+      "choices": [
+        {
+          "text": "*Go to dinner school.*",
+          "tag": "Theo",
+          "set": {
+            "s2e20_tue": "theo"
+          },
+          "response": [
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "ok",
+              "time": "12:48 PM"
+            },
+            "Laney reads it upside down off the RAZR and lays her free hand on his arm. “Oh, he is going to *ruin* you,” she says, fondly."
+          ],
+          "goto": "s05t"
+        },
+        {
+          "text": "*Go to the* Tide *office.*",
+          "tag": "Margot",
+          "set": {
+            "s2e20_tue": "margot"
+          },
+          "response": [
+            {
+              "type": "sms",
+              "from": "Jack",
+              "text": "what kind of catholic",
+              "time": "12:48 PM"
+            },
+            {
+              "type": "sms",
+              "from": "Margot",
+              "text": "a useful one",
+              "time": "12:48 PM"
+            },
+            "Laney reads the last one over his arm and moves the box to her other hip. “Margot wants a *Catholic*? Lock your doors.”"
+          ],
+          "goto": "s05m"
+        }
+      ]
+    },
+    "s05t": {
+      "slug": "TUESDAY · 7:00 PM · DELGADO HALL, ROOM 412 — DINNER SCHOOL",
+      "set": {
+        "dinner_school": true,
+        "rel.theo.warmth": "+1",
+        "rel.theo.trust": "+1",
+        "resolve.jack": "+1"
+      },
+      "body": [
+        "412 has been converted. The two desks are pushed end to end down the middle of the room under a white Delgado bath towel for a tablecloth, the desk lamp is turned to the wall for candlelight, and over Jack’s bed the crucifix presides. Theo is in shirtsleeves with the cuffs turned back twice and a dish towel over his forearm, humming something of Sinatra’s, low, a little behind the band, the way the man himself did it.",
+        "At Jack’s end there is a place setting that must have come out of the Commons in installments over most of a week: a dinner plate with the Anacapa crest, a bread plate, a water glass, a juice glass promoted to wine, a knife, a spoon, and three forks. Two are Commons forks. The third is white plastic.",
+        "“For verisimilitude,” Theo says. “There is always a fork you have never seen before in your life. You will not know what it’s for. It will be looking at you. Sit.”",
+        "Jack sits. Theo whips the napkin off the plate — a Commons napkin, paper, folded up into something with ambitions — and holds it up by one corner.",
+        "“The Bishop’s Mitre, Costigan. Appropriately. And it goes in your lap before the bread. Before the *bread*. You don’t tuck it in your collar, you are not eating a lobster on a pier in Maine. You don’t snap it open like a bedsheet. It simply arrives on your knee. It was always there.”",
+        "He taps the forks down the row with the butter knife like a xylophone. “Outside in. Salad, fish, meat. A slow push in toward the plate, one course at a time. Kubrick would have shot it in a hundred and twelve takes and fired the waiter.”",
+        "“And the plastic one?”",
+        "“The plastic one is the one you don’t know. When in doubt, watch her. She was raised by people who own a gravy boat.”",
+        "He produces the wine list: another napkin, unfolded, in Theo’s own looping hand, a dozen lines of French, most of which, when Jack reads it, is *Point Break*. *Château Bodhi ’91. Cuvée Johnny Utah, blanc. Les Ex-Présidents, réserve.*",
+        "“You’re eighteen,” Theo says. “In California. In a room with tablecloths. They will hand you the list anyway, because they are professionals and you will be wearing a jacket. You open it. You read it. You hand it back as if you’ve read it and found it wanting. And you say, ‘We’ll start with water.’ You never say *tap*.”",
+        "Jack opens the napkin, reads *Les Ex-Présidents*, and hands it back.",
+        "“No. You handed that back like a parking ticket. Again. With contempt. *Gentle* contempt. You’ve had better.”",
+        "He does it again. Theo shuts his eyes.",
+        "“Better. Truffaut would have kept that one.”",
+        "“The tip.” Theo pulls out the desk chair across from him and sits, for the first time all night. “You tip like a man who has washed dishes. Which is to say obscenely. You know what the night looks like from the back of the house. Behave accordingly.”",
+        "He reaches out and lines the plastic fork up with the other two, and keeps his eyes on it.",
+        "“My father took me to places like that when he had something to tell me,” he says. “He liked a room with a man in a white jacket two tables off who wouldn’t blink.” He moves the fork a hair to the left. “That’s what tablecloths are for. Witnesses with manners.”",
+        "Then he’s up again, flicking the towel at a Commons dinner roll on the bread plate, and the moment has gone wherever Theo sends them. “Bread. You *tear* it. You never cut it. You tear off a bite, and you butter the bite. You are not spackling a wall.”",
+        "They do bread. They do the soup spoon, away from you, and the salt, which is passed with the pepper because they are married. They do what to do with your hands, which is nothing, beautifully. By a quarter to ten he is sliding the three forks back into the pocket of his coat to be returned to the Commons the way they came, a little at a time, and he says, with his back to Jack, “Take the navy.”"
+      ],
+      "choices": [
+        {
+          "text": "“Thanks for this, Theo.”",
+          "tag": "Sincerity",
+          "cue": "Theo will remember that.",
+          "set": {
+            "s2e20_school": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“Thanks for this, Theo.”",
+            "Theo is refolding the napkin into its mitre and keeps his eyes on the folds. “You owe *me* a kidney.”",
+            "He takes the plastic fork back out of his coat and hands it across the towel to Jack, ceremonially, a man presenting a sword."
+          ],
+          "goto": "s06"
+        },
+        {
+          "text": "“Which fork do I use for my feelings?”",
+          "tag": "Wit",
+          "set": {
+            "s2e20_school": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“Which fork do I use for my feelings?”",
+            "“The plastic one,” Theo says. “It bends.”",
+            "And he laughs at his own line, which he never does, a short bark out of nowhere, and covers it by reaching over and lifting Jack’s elbows off the towel one at a time."
+          ],
+          "goto": "s06"
+        },
+        {
+          "text": "*Fold the napkin the way he showed you. Say nothing.*",
+          "tag": "Restraint",
+          "set": {
+            "s2e20_school": "restraint",
+            "trait.control": "+1"
+          },
+          "response": [
+            "Jack takes the napkin off his knee and folds it the way Theo did it at the start of the night, in half and in thirds and up into its point, and stands it on the plate.",
+            "Theo looks at it a good while. “Better than mine.”",
+            "He reaches across and turns the desk lamp off, and dinner school is out."
+          ],
+          "goto": "s06"
+        }
+      ]
+    },
+    "s05m": {
+      "slug": "TUESDAY · 7:00 PM · THE UCEN, UPSTAIRS — THE TIDE",
+      "set": {
+        "margot_feature": true,
+        "rel.margot.trust": "+1",
+        "rel.margot.warmth": "+1"
+      },
+      "body": [
+        "The *Marisol Tide* lives up a flight of stairs from the UCen’s Panda Express, behind a door with a red Dymo label on it, under a fluorescent tube that makes everybody in the room look recently exhumed. It’s a long room with a layout table down the middle and proofs pinned to a corkboard in overlapping ranks, back issues in drifts against the wall, and in the corner the dead iMac G4 still holding the AP Stylebook open on its neck like a lectern. The radiator under the window is on full and hissing to itself.",
+        "Margot is at the end of the layout table with her notebook open and the Nokia face down at her elbow, in a black turtleneck, the only person Jack knows who can look like the front page of a French newspaper with orange chicken coming up the stairs.",
+        "“Sit,” she says. “You’re the Catholic.”",
+        "“I’m *a* Catholic.”",
+        "“You’re the useful one. The rest of Newman is either in the choir or on a retreat about it.” She turns a page. “April twenty-sixth is fifty-five days from tonight. One year since Nora Calloway went off the Point.” She says the name without any ceremony at all. “The *Tide* would like three hundred words. Candles. A quote from somebody at the vigil. A photograph of the cross with flowers on it. Page six, under the ad for the tanning place.” She sets the pen down across the notebook. “I intend to write four thousand words of what happened to her.”",
+        "“What happened to her was in the paper.”",
+        "She reaches into the drift of back issues by her chair and comes up with last April’s, and lays it on the table: a photograph of candles along a low wall at night, and a smaller one of a girl in a choir robe with her hair pinned up, laughing at whoever held the camera. “Two hundred and eleven words,” Margot says. “I counted. Forty of them are the police.”",
+        "“That was a sentence in the paper. *Accidental fall.* A girl sits on the wrong side of a wall at night, and the police say *accident* in about the time it takes to say *accident*, and everyone is very relieved, and not one person asks what a sophomore who sang in the Newman choir was doing on that wall at midnight by herself.” She looks at him, level. “A sentence isn’t a story. She was a person. Somebody should find out which one.”",
+        "“Her family might want the candles,” Jack says.",
+        "“Her family can have the candles. Candles are for the family.” Margot taps the photograph of the wall. “The paper is for the rest of us, who walked past that cross all year on the way to the beach and never asked whose it was.”",
+        "It’s a good reason. He’d like it to be a worse one.",
+        "“I need Father Osei,” Margot says. “He said her memorial Mass. He knew her the way a priest knows people, which is the one way I don’t have.” She taps the pen twice on the page. “I need a Catholic who can get me a priest who won’t hide behind a collar.”",
+        "“He doesn’t hide behind it. He just wears it.”",
+        "“Then he won’t mind being asked.”",
+        "“I’ll tell him you want to talk to him,” Jack says. “That’s not the same as him talking.”",
+        "“It never is.” She turns the notebook round on the table and slides it across to him. In her small upright hand there is a list headed *In Memory of Nora Calloway — FB group*, a handful of names, and a box drawn round three of them. *Julian.* *Priya.* *Magdalena Broussard.*",
+        "“Julian sang with her,” Margot says. “Priya I can work out. And I would like to know why a freshman who never met her is in a memorial group.”",
+        "Jack knows why. At All Souls, in front of the Book of the Dead, Lena wrote Nora Calloway’s name under her grandmother’s and told him: Nora was her host at Preview Weekend, last April. She told him, and nobody else.",
+        "Margot waits with the pen uncapped. She is extremely good at waiting."
+      ],
+      "choices": [
+        {
+          "text": "“I’ll ask Lena if she wants to talk to you. That’s all I’ll do.”",
+          "tag": "Candor",
+          "set": {
+            "s2e20_margot": "candor",
+            "trait.candor": "+1"
+          },
+          "key": "When Margot asked about Lena for her *Tide* story, you said you’d ask Lena if she wanted to talk — and that was all you’d do.",
+          "response": [
+            "“I’ll ask Lena if she wants to talk to you,” he says. “That’s all I’ll do.”",
+            "Margot turns the offer over and looks at the underside of it. “Acceptable.”",
+            "Halfway down the stairs, in the orange chicken, Jack works out that he now owes Lena a question, and that he hasn’t the first idea how to ask it."
+          ],
+          "goto": "s06"
+        },
+        {
+          "text": "“Leave Lena out of it, Margot.”",
+          "tag": "Sincerity",
+          "set": {
+            "s2e20_margot": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "When Margot asked about Lena for her *Tide* story, you told her to leave Lena out of it.",
+          "response": [
+            "“Leave Lena out of it, Margot.”",
+            "Margot looks at him over the black frames for some time. “That’s an answer to a question I didn’t ask.”",
+            "She writes it down."
+          ],
+          "goto": "s06"
+        },
+        {
+          "text": "“Ask her yourself.”",
+          "tag": "Restraint",
+          "set": {
+            "s2e20_margot": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "When Margot asked about Lena for her *Tide* story, you told her to ask Lena herself.",
+          "response": [
+            "“Ask her yourself.”",
+            "“That was always the plan,” Margot says. “You were a courtesy.”",
+            "She takes the notebook back, and caps her pen, and that’s the interview."
+          ],
+          "goto": "s06"
+        }
+      ]
+    },
+    "s06": {
+      "slug": "WEDNESDAY · 3:30 PM · DELGADO HALL, ROOM 412 — THEY’LL WANT A JACKET",
+      "body": [
+        "Jack stands in front of his half of the closet with the door open and takes inventory, the way Frank goes through a toolbox the night before a job he isn’t sure he has the tools for.",
+        "It doesn’t take long. The Carhartt on its hook, Danny’s, the brown duck gone pale at the elbows. Two flannels. The oxford, his one white shirt, which has done every serious thing he has asked of it since high school. The tie from St. Brigid’s, maroon, a little shiny at the knot, his Confirmation tie and the only one he owns, on the hanger with the oxford, where it lives. Khakis with a crease that gave up around Thanksgiving. The boots.",
+        "He puts the oxford on over his T-shirt and the tie round his neck, not knotted, and looks at himself in the mirror on the back of the door. It looks like what it is: Confirmation, plus four years and a dish machine. Over that, the Carhartt. He has stood outside that place on the wharf and seen the man in the white jacket polishing glasses that already shone. He takes the Carhartt back off and hangs it on its hook.",
+        "*They’ll want a jacket.*",
+        {
+          "if": "s2e20_tue==\"theo\"",
+          "text": "Last night, bagging up dinner school, Theo said *Take the navy* without looking round, and his closet door across the room has been standing open ever since on its row of jackets, shoulder to shoulder on wooden hangers, the end of a casting call, everybody still hoping.",
+          "else": "Across the room Theo’s closet door is standing open on its row of jackets, shoulder to shoulder on wooden hangers, the end of a casting call, everybody still hoping."
+        },
+        "The envelope of Anchor tips is in his desk drawer. Saturday is three days off, and he has a dishwasher’s back."
+      ],
+      "choices": [
+        {
+          "text": "*Borrow Theo’s navy blazer.*",
+          "tag": "Theo",
+          "set": {
+            "s2e20_jacket": "theo"
+          },
+          "key": "For the date, you borrowed Theo’s navy blazer.",
+          "goto": "s06t"
+        },
+        {
+          "text": "*Walk to the St. Vincent de Paul on Mission Street. Buy one.*",
+          "tag": "Thrift",
+          "set": {
+            "s2e20_jacket": "thrift"
+          },
+          "key": "For the date, you bought a nine-dollar jacket at the St. Vincent de Paul on Mission Street.",
+          "goto": "s06v"
+        },
+        {
+          "text": "*Take the 11 to the Anchor. Ask Gloria.*",
+          "tag": "Gloria",
+          "set": {
+            "s2e20_jacket": "gloria"
+          },
+          "key": "For the date, you wore Rudy’s brown wedding jacket from the Anchor.",
+          "goto": "s06g"
+        }
+      ]
+    },
+    "s06t": {
+      "slug": "WEDNESDAY · 3:40 PM · DELGADO HALL, ROOM 412 — THE NAVY",
+      "set": {
+        "jacket_theo": true,
+        "rel.theo.warmth": "+1"
+      },
+      "body": [
+        "“Theo. Can I borrow the navy?”",
+        "Theo is at his desk with the laptop open on something in black and white. He closes it. He gets up and crosses to his closet and runs a hand along the row and takes it out by the hanger, already the right one.",
+        "It’s his best. Navy wool so soft it’s barely there, no padding in the shoulders, a lining Jack would have to call *plum* if anybody made him, and inside the collar a label in Italian that Jack can’t pronounce and isn’t going to try in front of Theo.",
+        "Theo holds it open behind him like a bullfighter’s cape. Jack puts his arms in. It goes on and settles, and in the mirror on the back of the closet door there’s somebody Jack doesn’t know — somebody out of a movie about a better school. It fits at the collar. It fits at the wrists. It fits everywhere except across the back, where it was cut for a man who has never lifted anything heavier than a Criterion box set, and Jack has been racking mugs into a Hobart three nights a week since September.",
+        "Theo pinches the seam across his shoulder blades between thumb and finger, and tests it.",
+        "“Don’t reach for anything.”",
+        "“What if she drops something?”",
+        "“Let it lie. She’ll think you have depths.”",
+        "Theo walks round him slowly, a director walking a set he isn’t sure of. “Shoulders back. No — *back*, not *up*. You’re not bracing for a punch, you’re a man with a reservation. You button it standing and unbutton it when you sit. Never the bottom button. The bottom button is for Midwesterners and the dead.”",
+        "“I’m a Midwesterner.”",
+        "“Not on Saturday.”",
+        "He takes a white pocket square from a drawer and holds it up against the breast pocket, and looks, and puts it away again. “No. You’d fidget with it. She’d watch you fidget with it, and know everything.”",
+        "He works round Jack with pins out of a hotel sewing kit he has clearly never opened for himself, tugging a cuff, turning the collar up and down again, stepping back, coming in. He’s humming. Sinatra, or something that wishes it were, low and a little behind. Whatever this is for Theo, he’s good at it, and his face says he likes being asked. Jack catches his eye in the mirror and grins, and the hum stops dead, and Theo becomes intensely interested in a lapel."
+      ],
+      "choices": [
+        {
+          "text": "“It’s the best thing I’ve ever had on.”",
+          "tag": "Sincerity",
+          "set": {
+            "s2e20_navy": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“It’s the best thing I’ve ever had on.”",
+            "“It’s the best thing *I’ve* ever had on,” Theo says, “and it’s never looked like that.”",
+            "He takes Jack by both shoulders and turns him to face the mirror, and walks off across the room to the window, so that what his face is doing is the window’s business."
+          ],
+          "goto": "s07"
+        },
+        {
+          "text": "“Do I have to give it back if she says yes?”",
+          "tag": "Wit",
+          "set": {
+            "s2e20_navy": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“Do I have to give it back if she says yes?”",
+            "“She’s *said* yes,” Theo says. “You have to give it back either way.”",
+            "He picks a thread off the lapel that isn’t there, and flicks it at the window."
+          ],
+          "goto": "s07"
+        },
+        {
+          "text": "*Stand still and let him pin it.*",
+          "tag": "Restraint",
+          "set": {
+            "s2e20_navy": "restraint",
+            "trait.control": "+1"
+          },
+          "response": [
+            "Jack stands still with his arms held a little out from his sides, posed for a tailor out of some old movie, and lets him.",
+            "Theo comes round the front with a pin between his teeth and looks, and goes on looking, and doesn’t put it anywhere. There’s nowhere to put it. He takes the pin out of his mouth.",
+            "“Arms *down*, Costigan.”"
+          ],
+          "goto": "s07"
+        }
+      ]
+    },
+    "s06v": {
+      "slug": "WEDNESDAY · 4:20 PM · MISSION STREET, ST. VINCENT DE PAUL — WALTER",
+      "set": {
+        "jacket_walter": true,
+        "soul.grace": "+1"
+      },
+      "body": [
+        "The St. Vincent de Paul on Mission Street has a bell on the door and the smell they all have, old wool and mothballs and somebody’s attic, and Jack is home the minute it reaches him. Ma bought his Confirmation shoes at the one on the South Side, black, a size big to grow into, and he grew into them.",
+        "The men’s jackets hang on a rack by the window in a long patient row: a powder-blue tuxedo jacket with a ruffle still pinned to it, somebody’s high-school letterman, a corduroy with elbow patches that has sat through years of faculty meetings, a black blazer gone green across the shoulders. And at the end of the row, a brown herringbone sport coat, heavy and plain and well made, with the price on a tag on a safety pin. *$9.*",
+        "He puts it on. It fits across the back as if the man who wore it carried things for a living too. In the long mirror by the dressing room it makes him look older, or like somebody’s uncle at a wedding, and either one will do.",
+        "There’s something stiff in the breast pocket. He takes it out.",
+        {
+          "type": "doc",
+          "title": "",
+          "text": "In Loving Memory · Walter J. Pruszynski · 1921–2009 · St. Joseph the Worker · Lord, make me an instrument of your peace."
+        },
+        "On the front, St. Francis, with a bird on his finger.",
+        "At the register a small woman in a green cardigan is pricing a box of paperbacks with a sticker gun. She has the look Jack grew up around at St. Brigid’s: white hair cut short, good flat shoes, a plain silver cross, a sister out of her habit since the seventies and never out of the job. She sees the card in his hand.",
+        "“The family brought in all his suits,” she says. “In the fall. After the funeral.”",
+        "*Walter J. Pruszynski.* A boy in the Depression, then, and old enough for the war. It’s a name off the mailboxes on the East Side at home, off the St. Stanislaus bulletin, off the honor roll in the vestibule at St. Brigid’s with the little gold stars by it.",
+        "“Walter,” Jack says.",
+        "She comes round from behind the counter and turns his collar down at the back, where it has folded under, without asking, with the hand of a woman who has done it for a great many boys. “St. Joe’s,” she says. “The Worker. Out on the Westside. Every Sunday of his life, the eight o’clock.” She clicks a sticker onto a Reader’s Digest Condensed Book. “You’re taking it?”"
+      ],
+      "choices": [
+        {
+          "text": "*Keep the card in the pocket. Say one for Walter.*",
+          "tag": "Sincerity",
+          "set": {
+            "s2e20_walter": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "He puts the card back in the breast pocket where Walter, or whoever loved Walter, left it, and lays a ten from the Anchor envelope on the glass. While she makes change he says it, low, to the glass. “Eternal rest grant unto him, O Lord —”",
+            "“— and let perpetual light shine upon him,” she says along with him, counting into the drawer, as easily as the price of the jacket. “May he rest in peace.”",
+            "“Amen.”",
+            "She puts the dollar in his palm and closes his fingers over it with her own."
+          ],
+          "goto": "s07"
+        },
+        {
+          "text": "*Hand the card back — it’s the family’s.*",
+          "tag": "Candor",
+          "set": {
+            "s2e20_walter": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "He holds the card out to her across the counter. “This should go back to the family.”",
+            "She won’t take it. She keeps both hands on the sticker gun and shakes her head. “They gave them all away. Every suit he had.” She looks at the coat on him, at the shoulders, and nods at it. “He’d want it worn.”",
+            "Jack puts the card back in the breast pocket himself, behind the flap, where it was."
+          ],
+          "goto": "s07"
+        },
+        {
+          "text": "“Walter, you and me are going to dinner.”",
+          "tag": "Wit",
+          "set": {
+            "s2e20_walter": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“Walter,” he tells the coat, “you and me are going to dinner.”",
+            "The woman laughs, a real one, surprised out of her over the paperbacks. “Oh, he’d have liked that. I’d bet you anything he danced at every wedding at St. Joe’s.”",
+            "Out on Mission Street the wind is coming up off the harbor, and in Walter’s coat Jack is warm."
+          ],
+          "goto": "s07"
+        }
+      ]
+    },
+    "s06g": {
+      "slug": "WEDNESDAY · 4:30 PM · THE ANCHOR — RUDY’S WEDDING",
+      "set": {
+        "jacket_rudy": true
+      },
+      "body": [
+        "Half past four on a Wednesday is the Anchor’s dead hour, between the late lunches and the fishermen’s supper, when the place belongs to the pie case and the ceiling fans. Merle’s stool is empty. Rudy’s radio sits dark on its shelf over the grill. Gloria is at the end of the counter with the paper folded to the crossword and a grease pencil stuck through the knot of her hair, and she looks up when the bell goes over the door, and back down.",
+        "“Hon.”",
+        "“Gloria. I need a jacket.” And because she waits, he gives her the rest in a sentence: Saturday, the place at the end of the wharf, a jacket, and him with a Carhartt.",
+        "She fills in a word. She keeps her eyes on the next clue and says something in Spanish over her shoulder toward the kitchen, quick and flat, and the only part of it Jack catches is *Rudy*.",
+        "Rudy comes out of the back drying his hands, hears her out, and looks at Jack — at the shoulders, the length of the arms, a cook sizing a cut of meat — and goes on out the back door to the lot without a word. Gloria does two more clues. Jack stands at the counter where he has stood three nights a week since September, on the wrong side of it, with his hands in his pockets.",
+        "The back door bangs. Rudy comes in with a dry-cleaning bag over his arm, the plastic gone cloudy with age and a paper tag stapled at the neck. He hangs it on the hook by the register and peels the plastic up.",
+        "It’s brown. Not a little brown: brown with conviction, a chocolate brown with wide lapels and a sheen to it, and when the plastic lifts a little sweet cologne comes out of the lining, faint, from a long time ago.",
+        "“My wedding,” Rudy says. “My mother picked it out. Penney’s, in Oxnard. She said brown doesn’t show anything.” He looks at it, and at Jack, and at it again, apologetic. “Mijo. It’s brown.”",
+        "“Brown is a color,” Gloria says, from the crossword.",
+        "It’s a size too big. The shoulders sit out past his own like a porch roof, and the sleeves come down over his knuckles. Gloria comes round the end of the counter with the tin from under the register — an old Danish butter cookie tin like the one Nonna keeps buttons in, full of buttons and safety pins and straight pins — and puts a row of pins between her lips, and takes his wrist and turns his arm out, and folds the sleeve up two inches and pins it, and the other one, fast, the way she does a lattice.",
+        "She stands back and looks at the shoulders. “You’ll grow.”",
+        "“I’m done growing, Gloria.”",
+        "“Not there.” She tips her chin at his back, at the Hobart’s work on it. “Saturday morning. I’ll hem it. Nine o’clock.”"
+      ],
+      "choices": [
+        {
+          "text": "“I’ll bring it back better than I found it.”",
+          "tag": "Sincerity",
+          "set": {
+            "s2e20_rudy": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“I’ll bring it back better than I found it.”",
+            "“Bring it back, mijo,” Rudy says. “That’s enough.”",
+            "Gloria takes a pin out of her mouth to say “Hm,” and puts it back."
+          ],
+          "goto": "s07"
+        },
+        {
+          "text": "“Did you dance in this?”",
+          "tag": "Wit",
+          "set": {
+            "s2e20_rudy": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“Did you dance in this?”",
+            "“All night,” Rudy says.",
+            "“He stepped on my sister,” Gloria says, round the pins.",
+            "Rudy, already on his way back to the grill: “*Once*.”"
+          ],
+          "goto": "s07"
+        },
+        {
+          "text": "“I can pay you.”",
+          "tag": "Candor",
+          "set": {
+            "s2e20_rudy": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "“I can pay you.”",
+            "Gloria looks at him over the sleeve. “You can wash dishes in it.”",
+            "She goes back round the counter to her crossword, and it is a full minute, standing there with his arms pinned, before Jack works out that she was joking."
+          ],
+          "goto": "s07"
+        }
+      ]
+    },
+    "s07": {
+      "slug": "WEDNESDAY · 10:40 PM · DELGADO HALL, THE EAST STAIRWELL — THE FLOOR IS YOURS",
+      "set": {
+        "forum_rehearsal": true,
+        "kiss_wed": true,
+        "rel.lena.warmth": "+1",
+        "rel.lena.heat": "+1",
+        "resolve.jack": "+1"
+      },
+      "body": [
+        "Somewhere on three a shower is running. Otherwise the building has gone to its Wednesday quiet, all its doors shut on reading, and the tube over the landing between two and three is doing its best, dim at the end where it has been dim since October.",
+        "Lena is on her step under it with her knees up and a yellow legal pad on them, and on top of the pad, face down, three pages of Hale: the fountain-pen hand showing backward through the sheets, all loops and slashes, nothing Jack can read. She’s in sweatpants and a Saints sweatshirt with the sleeves shoved to the elbow. His black Bic is behind her ear.",
+        "Where the pad sticks out from under them he can see her own hand, slanting, crossed out and written over, arrows up the margin, one word boxed so hard the pen has gone through.",
+        "“He gave me three pages on how to beat him,” she says, when he is still on the last stair, “and he’s wrong about two of them, and I can’t tell which two. You’re Hale. Stand there. He doesn’t sit for this. He walks, and he puts his hands behind his back like the Duke of Edinburgh.”",
+        "He stands on the landing and puts his hands behind his back and lifts his chin at the fire extinguisher. He has watched the man do it for two semesters.",
+        "“Miss Broussard,” he says, in Hale. “The floor is yours. Do try not to bleed on it.”",
+        "“Your Yorkshire’s from Pittsburgh.”",
+        "He drops Hale entirely. “Take that back.”",
+        "“It says *yinz*. Hush. You’re Hale. Hale doesn’t argue with women on staircases. He lets them finish, and then he ruins them.”",
+        "She stands up for it — on her step, so she has the height on him — and lets the pad hang at her side and doesn’t look at it once.",
+        "“I grant the motion its best man,” she says. “I’ve met him. Y’all have met him. He holds the door. He pays what he owes and a little over. He sits up three nights running with his mother in the hospital and never says grace over the vending-machine coffee. He’s brave, and he’s kind, and he keeps his word, and he has never asked God for a thing in his life.” She lets that stand a moment. “Saint Paul met him too. He wrote to the Romans about the Gentiles who do by nature what the law requires — the law written on their hearts. The Church has never said that man isn’t good. I won’t stand up here and say it either.”",
+        "“How *terribly* generous of Rome,” Jack says, in Hale, rocking on his heels. “The atheist may be good, on condition that he’s secretly a Catholic. Do tell him. He’ll be thrilled.”",
+        "“Better,” she says. “Still Pittsburgh.” And goes straight on over him. “But the motion doesn’t say a man can *do* good without God. It says one can *be* good. And the minute you call him good — the minute you say he *ought* to sit up with his mother, that he’d be failing somebody if he went home to bed — you have used a word that means a debt.”",
+        "At *ought* his thumb finds the corner of the pack through the canvas of his breast pocket.",
+        "“Then he owes it to *her*,” Jack says, Hale again, because Hale would have it ready. “To his mother. To the nurse. To the man he gave his word to. A fellow called Scanlon wrote four hundred pages on what we owe to each other, Miss Broussard, and never needed a ghost to do the collecting.”",
+        "“Then tell me why he feels it most when she’s dead.” She doesn’t raise her voice; she drops it, and he has to lean in to get it. “His mother dies on the third night. He goes home. He owes her nothing anymore — your Mr. Scanlon would tell him so, kindly. And he sits on the edge of his bed in his clothes, and he still owes her, and he knows it, and there is no one left on earth to pay.”",
+        "“Elizabeth Anscombe noticed, in 1958, that we kept that word after we buried the one it was owed to. *Ought* used to mean the Law says so, and the Law had a Lawgiver. Take him away and the word goes right on working on us anyway, with what she called a mesmeric force — a collection agency for a bank that closed fifty years ago, still sending letters.” She takes the Bic from behind her ear and points it at the third row, where there is a fire door. “I am not here to tell the good man in the third row that he’s wicked. I believe in him. I’m here to ask him who it is he thinks he owes.”",
+        {
+          "if": "s2e19_d3==\"reframe\"",
+          "text": "Out of the speech, to him, quick: “You said last week a silence is a promise. Hale’s motion is a silence about who it’s owed to. I’m keeping that.”"
+        },
+        "She stops. Up on three the shower has quit at some point; he didn’t hear it go.",
+        "It’s good. It is better than good. He stands on the landing with Hale’s hands still clasped behind him and can’t think of one thing Hale could say to it that she hasn’t already picked up off the table and put in her pocket.",
+        "She sits back down on her step and writes something at the top of the pad he can’t read from where he is.",
+        "“Where is Saturday?” she says, writing.",
+        "“Saturday.”",
+        "“That’s not a *where*, Costigan.”",
+        "“Wear something you can walk in.”",
+        "She looks up at that and narrows her eyes at him, and he can watch her go through every place in Marisol a person could walk to in something, and come up empty, and hate it.",
+        "He comes up the one step and leans down and kisses her.",
+        "The pad goes off her knee and down a stair with a slap. Her mouth is surprised for about half a second and then isn’t; it tastes of the Commons’ terrible cocoa; the back of his hand brushes the medal where it lies against her collarbone and it is cold, the only cold thing on the landing. It’s short. He straightens up, and would very much like to do it again, and she is looking at him from her step with the Bic still in her hand.",
+        "She leans down and gets the pad off the stair below, and smooths the top sheet flat on her knee, and sets the pen to it.",
+        "“Again,” she says. “From the top. And give me a note this time.”"
+      ],
+      "choices": [
+        {
+          "text": "*Tell her the true note: she wins it in the first two minutes or not at all.*",
+          "tag": "Sincerity",
+          "set": {
+            "s2e20_floor": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "On her landing the night she rehearsed for the Forum, you told Lena she’d win it in the first two minutes or not at all.",
+          "response": [
+            "“He decides in the first two minutes whether you’re worth his evening,” Jack says. “So does the room. You win it in the first two minutes or not at all. Start with the debt.”",
+            "She turns Hale’s first page over just far enough to write *2 MIN* along its top edge in capitals, and circles it, and circles it again.",
+            "“Goodnight, Youngstown.”",
+            "He goes up the stairs, and the last thing he hears before the fourth-floor door is her voice starting again from the top, low, to the wired glass."
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "“Hale will try to make you say atheists are wicked. Don’t let him cast you.”",
+          "tag": "Wit",
+          "set": {
+            "s2e20_floor": "wit",
+            "trait.wit": "+1"
+          },
+          "key": "On her landing the night she rehearsed for the Forum, you told Lena not to let Hale cast her as the woman who thinks atheists are wicked.",
+          "response": [
+            "“He’ll try to make you say atheists are wicked,” Jack says. “That’s the play. He wants the woman in the movie who thinks the nice man’s going to hell. Don’t let him cast you.”",
+            "“He *would*,” she says, delighted and furious in the same face.",
+            "She throws the Bic at him. He gets it one-handed out of the air, and puts it in his pocket, and keeps it."
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "“You’re better than him at this. Say it to his face.”",
+          "tag": "Candor",
+          "set": {
+            "s2e20_floor": "candor",
+            "trait.candor": "+1"
+          },
+          "key": "On her landing the night she rehearsed for the Forum, you told Lena she was better than Hale at this, and to say it to his face.",
+          "response": [
+            "“You’re better than him at this,” he says. “Say it to his face.”",
+            "“He told me to, once. It’s on a card in my missal at home.” She sets the pad down on the step beside her. “I intend to.”",
+            "She looks at him from her step and doesn’t say anything else, and it does for goodnight."
+          ],
+          "goto": "s08"
+        },
+        {
+          "text": "*Listen to it a second time without a note.*",
+          "tag": "Restraint",
+          "set": {
+            "s2e20_floor": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "On her landing the night she rehearsed for the Forum, you listened to her opening a second time without a note.",
+          "response": [
+            "He doesn’t give her one. He puts his hands behind his back again, Hale’s hands, and waits.",
+            "She runs it from the top, and it’s better: she cuts a sentence he hadn’t noticed was weak, and slows down on *ought*, and leaves a silence after *who it is he thinks he owes* that he can feel on the back of his neck. At the end she stops and looks at him.",
+            "“That was the note,” she says.",
+            "She stays on her step and he stays on the landing, the pad on the stair between them, the stairwell quiet above and below."
+          ],
+          "goto": "s08"
+        }
+      ]
+    }
+  }
+}

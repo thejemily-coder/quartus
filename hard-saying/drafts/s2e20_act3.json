@@ -1,0 +1,661 @@
+{
+  "scenes": {
+    "s08": {
+      "slug": "THURSDAY · 10:58 AM · MORRO HALL 1100 — THE SEAT",
+      "set": {
+        "skye_back": true
+      },
+      "body": [
+        "Thursday has come up clear and cold, Tuesday’s rain all gone out to sea. The eucalyptus along the Morro walk is lit at the tops a sharp yellow-green, the bark hanging off the trunks in long curls like old wallpaper, and the bike racks are jammed three deep. Jack goes in with the crowd, up the side stairs into the noise of a hundred people finding their seats, and climbs to the back row under the exit sign.",
+        "Her desk is down.",
+        "She’s in it. She got here before him. Her own navy sweater with the sleeves shoved to the elbow, and the scarf, and her sunglasses pushed back into her hair to hold it off her face; a pen; her notebook open to a clean page with the date written at the top and nothing under it. Not his flannel.",
+        "She doesn’t look up at him. She doesn’t look anywhere else, either. She’s looking at the board, where Fenner is, which is where anybody in a lecture looks.",
+        "Nine days. For nine days he has told himself he wouldn’t know what to do if that desk came down, and it turns out what you do is sit. He sits. His own desk comes down with the same knock as every other desk in the room, and he gets out his notebook and his pen and puts his bag at his feet on his own side, and the seat she’s in is the same seat it has been since January.",
+        {
+          "if": "s2e18_last==\"candor\"",
+          "text": "The last time he was this close to her she was closing a screen door with both hands so it wouldn’t bang."
+        },
+        {
+          "if": "s2e18_last==\"sincerity\"",
+          "text": "The last time he was this close to her she was at her porch rail with her back to him, and her shoulders went, and that was all he got."
+        },
+        {
+          "if": "s2e18_last!=\"candor\" && s2e18_last!=\"sincerity\"",
+          "text": "The last time he was this close to her she was watching him go down her walk with her arms crossed tight and her mouth shut."
+        },
+        {
+          "if": "skye_folder",
+          "text": "In the back of the notebook is a bookstore folder he bought yesterday for a dollar, because the spiral had started chewing the corners of what’s in it."
+        },
+        {
+          "if": "!skye_folder && skye_handout_tray",
+          "text": "Down at the front, on the table by the door, Fenner’s wire tray for absentees sits where it always sits."
+        },
+        "Fenner has the big roll-down map of the Pacific pulled over the board and is standing in front of it with a wooden pointer, happy as a man at a ballgame. “Last weekend’s,” he says, and touches the pointer to the coast of Chile, and then lays it flat across the blue in the middle of the map, as much of it as the pointer will cover. “Out here, in the deep water, a tsunami is about a foot high. A foot. And a hundred miles long, front to back. And it’s doing five hundred miles an hour, which is the plane most of you flew home on at Christmas.” He slides the pointer across the ocean toward them, slowly. “You could be out there on a boat eating a sandwich right on top of it. It goes under you. You don’t feel a thing.”",
+        "The pointer comes to the coastline and stops where the blue goes pale. “It’s when the bottom comes up,” Fenner says. “All that water has to go somewhere. That’s the only part of it anybody ever sees.”",
+        "Jack writes *a foot high* in his margin, and nothing after it. In January she would have leaned over and written something under it about the sandwich. Her pen stays on her own page.",
+        "Somebody down front asks about Hawaii. Fenner starts to answer, and looks up the tiers instead, pleased with something, and sees her.",
+        "“Ms. Callender. Welcome back. Your other half has been carrying the project.” He aims the pointer up at the two of them like a wand. “Pair 41, I’m putting you down for Tuesday. Both halves.”",
+        "Heads turn up the rows, a few. She lifts her pen an inch to him and goes on writing.",
+        "Of the last forty minutes Jack keeps nothing but the sound of her pen going along the page beside his.",
+        "At a quarter past twelve the room comes apart: desks slapping up all down the tiers, zippers, a hundred conversations starting at once and heading for the doors. She caps her pen and doesn’t get up. He opens the back of his notebook."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "*Hold out the folder — every one of hers, your notes across each.*",
+          "if": "skye_folder",
+          "set": {
+            "s2e20_folder": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "When Skye came back to Oceanography, you held out the folder with all of her handouts and your notes across each.",
+          "response": [
+            "He holds it out. It hangs there over the armrest with the room draining down the tiers past them, long enough for him to feel how stupid his arm looks, and then she takes it.",
+            "She opens it on her clean page."
+          ],
+          "goto": "s08a"
+        },
+        {
+          "tag": "Candor",
+          "text": "*Hold it out and say, “You missed three.”*",
+          "if": "skye_folder",
+          "set": {
+            "s2e20_folder": "candor",
+            "trait.candor": "+1"
+          },
+          "key": "When Skye came back to Oceanography, you held out her handouts and told her she’d missed three.",
+          "response": [
+            "“You missed three,” he says, and holds it out.",
+            "She takes it without answering. Her thumb goes down the edge of the stack inside, counting it, while her eyes stay on the front of the room."
+          ],
+          "goto": "s08a"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Set it on her desk and don’t say anything.*",
+          "if": "skye_folder",
+          "set": {
+            "s2e20_folder": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "When Skye came back to Oceanography, you set her handouts on her desk and didn’t say anything.",
+          "response": [
+            "He sets it on the corner of her desk and takes his hand back.",
+            "It sits there through a row of people squeezing past to the aisle. Then she draws it over to her with one finger."
+          ],
+          "goto": "s08a"
+        },
+        {
+          "tag": "Candor",
+          "text": "“Fenner’s tray has two with your name on them.”",
+          "if": "skye_handout_tray",
+          "set": {
+            "s2e20_folder": "tray",
+            "trait.candor": "+1"
+          },
+          "key": "When Skye came back to Oceanography, you told her Fenner’s tray had two handouts with her name on them.",
+          "response": [
+            "“Fenner’s tray has two with your name on them.”",
+            "She looks down the tiers at the wire basket on the table by the door, and doesn’t go and get them. She turns her capped pen end over end on the desk."
+          ],
+          "goto": "s08a"
+        },
+        {
+          "tag": "Plain",
+          "text": "“Skye.”",
+          "set": {
+            "s2e20_folder": "name"
+          },
+          "key": "When Skye came back to Oceanography, you said her name before anything else.",
+          "response": [
+            "“Skye.”",
+            "He hasn’t said it since the bottom of her steps. Her pen stops turning. She turns her head and looks at him."
+          ],
+          "goto": "s08a"
+        }
+      ]
+    },
+    "s08a": {
+      "slug": "THURSDAY · 12:16 PM · MORRO HALL 1100 — THE BACK ROW, EMPTYING",
+      "set": {
+        "skye_owed": true
+      },
+      "body": [
+        {
+          "if": "s2e20_folder==\"sincerity\" || s2e20_folder==\"candor\" || s2e20_folder==\"restraint\"",
+          "text": "On top is Thursday’s, *fetch · duration · dispersion* across it in his small square print and under that *Thurs. 2/25*, so she’d know which one it was. She reads it. She turns it face down on the desk and reads the next one, and the next."
+        },
+        {
+          "if": "s2e20_folder==\"sincerity\" && s2e20_folder2==\"sincerity\" || s2e20_folder==\"candor\" && s2e20_folder2==\"sincerity\" || s2e20_folder==\"restraint\" && s2e20_folder2==\"sincerity\"",
+          "text": "This Tuesday’s says *feeder · neck · head · swim parallel*."
+        },
+        {
+          "if": "s2e20_folder==\"sincerity\" && s2e20_folder2==\"candor\" || s2e20_folder==\"candor\" && s2e20_folder2==\"candor\" || s2e20_folder==\"restraint\" && s2e20_folder2==\"candor\"",
+          "text": "This Tuesday’s says *feeder · neck · head · swim parallel*, and under it, smaller, *Fenner says Thursday.* Her finger stops under that line."
+        },
+        {
+          "if": "s2e20_folder==\"sincerity\" && s2e20_folder2==\"restraint\" || s2e20_folder==\"candor\" && s2e20_folder2==\"restraint\" || s2e20_folder==\"restraint\" && s2e20_folder2==\"restraint\"",
+          "text": "This Tuesday’s has nothing written on it at all."
+        },
+        {
+          "if": "s2e20_folder==\"tray\" || s2e20_folder==\"name\"",
+          "text": "She doesn’t open anything. She sits with her hands on her clean page and looks at him while the row in front of them empties, a girl in a crew sweatshirt and two boys arguing about a quiz, down the row to the aisle and away."
+        },
+        "“You don’t lie,” Skye says.",
+        "The room is going down the tiers past them in a slow loud tide of backpacks and coffee cups. He waits.",
+        "“I ran it back,” she says. “Tuesday. Every night since. I lie down and I run the whole porch, start to finish, like dailies. Every take. And I look for it, the place where you’re lying. I’m good at that.” Her eyes don’t leave his face. “I watched your hands. People lie with their hands; they never know where to put them. Yours just hung there, the entire time, like you’d forgotten you had any. And I watched you correct me about midnight. Do you know what a liar does when you get the time wrong? He lets you have it. Any time you want. You stood on my porch in the middle of all that and you corrected the *hour*.”",
+        "He remembers it: her porch light, her bare feet on the boards, and his own voice saying *before midnight*, as if the hour were the thing that mattered. He wishes he didn’t.",
+        "“You never lied once,” she says. “Not one line. I’ve been lied to by professionals. I know what it looks like. You don’t have it in you.”",
+        "Up close her eyes are red at the rims, and so, he would guess, are his.",
+        "“You look like hell,” she says.",
+        "“Yeah.”",
+        "“Good.” And then, before the word has finished landing: “You didn’t cheat. I know you didn’t.”",
+        {
+          "if": "s2e18_cheat==\"sincerity\"",
+          "text": "“You said you’d never do that to me. I believe you. That’s the worst part.”",
+          "else": "“You said nothing happened. I believe you. That’s the worst part.”"
+        },
+        "He nods. It was her word to take back, and she has taken it back herself.",
+        "The cap of her pen is chewed flat at the end. In January it wasn’t.",
+        "“So you owe me.” She lays her pen across her page, square. “You’re going to sit somewhere and explain it until I understand it. Slowly.”",
+        "It’s the most reasonable thing anybody has said to him all week.",
+        "“Tuesday and before,” she says. “Nothing after. I’m not there yet.”",
+        "“Tuesday and before,” he says.",
+        "She nods, and picks her pen up, and puts it down again.",
+        "Down at the front the doors bang open on the 12:30 section, a TA first with a cardboard box of blue books on his hip, which he drops on the lectern with a smack that carries up to the exit sign. Hale’s seminar is at one, across campus. In forty minutes Lena will sit down at the window end of the oak table and look up the length of it at his chair under the clock. Skye stands and gets her bag onto her shoulder.",
+        "“Car.”",
+        "His eyes go past her down the side stairs, to the open doors and the lawn outside with its benches in the sun.",
+        "“I’m not crying on a bench,” she says. “The internet has a camera.”"
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“Okay. As long as it takes.”",
+          "cue": "Skye will remember that.",
+          "set": {
+            "s2e20_owe": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "When Skye said you owed her an explanation, you told her you’d give it as long as it took.",
+          "response": [
+            "“Okay,” he says. “As long as it takes.”",
+            "“That’s the first thing you’ve said I didn’t have to pull out of you.”",
+            "She goes down the side stairs and he goes down behind her. On the way he gets the RAZR out of his pocket and holds the red key until the little outside screen goes dark, and puts it back.",
+            "At the side door she holds it for him with her hip, as she’d hold it for anybody, and lets it go once he’s through."
+          ],
+          "goto": "s09"
+        },
+        {
+          "tag": "Candor",
+          "text": "“I owe you. I know.”",
+          "cue": "Skye will remember that.",
+          "set": {
+            "s2e20_owe": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "key": "When Skye said you owed her an explanation, you told her you knew you did.",
+          "response": [
+            "“I owe you,” he says. “I know.”",
+            "“Good. Then we agree on one thing.”",
+            "Going down the tiers behind her he turns the phone off in his pocket by feel, and the outside screen goes dark against his palm.",
+            "At the doors the noon comes in at them white off the concrete, and her sunglasses come down out of her hair onto her face."
+          ],
+          "goto": "s09"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Stand up and follow her.*",
+          "cue": "Skye will remember that.",
+          "set": {
+            "s2e20_owe": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "When Skye said you owed her an explanation, you stood up and followed her to her car.",
+          "response": [
+            "He stands, and gets his bag, and goes down after her.",
+            "Halfway down he takes the phone out and turns it off and puts it away again, and doesn’t look at what was on it.",
+            "She doesn’t turn round on the stairs to check that he’s behind her. She goes out the side door into the sun as if there were never any question he would be."
+          ],
+          "goto": "s09"
+        }
+      ]
+    },
+    "s09": {
+      "slug": "THURSDAY · 12:40 PM · THE SAAB, LOT 22 BY THE LAGOON — SLOWLY",
+      "set": {
+        "skye_returned": true,
+        "rel.skye.trust": "+1",
+        "resolve.jack": "-1"
+      },
+      "body": [
+        "Lot 22 is the far one, down past the dorms on the Lagoon, half empty at this hour. The white Saab is nosed in at the end of a row with its bumper to the railing and the water beyond it. She unlocks it with the key, not the button, and gets in, and he gets in the other side. She doesn’t start it. She doesn’t turn on the radio.",
+        "Through the windshield the Lagoon lies flat and brown-green in the sun. A raft of coots is working along the near edge, black, with white bills, going under and bobbing up. A jogger goes by on the path in a Marisol Track shirt, her ponytail going like a metronome. On the far bank the eucalyptus stand with their roots in the water. On the dash is a new paperback Catechism with a receipt sticking out of it for a bookmark.",
+        "The car is quiet. Somewhere behind the dorms a leaf blower starts up, and works its way along a wall, and stops.",
+        "She puts both hands on top of the wheel. “So,” she says, bright, “tell the folks at home a little bit about yourself —” She stops. Her hands come down into her lap. “No. Not today.”",
+        "The coots go under, and come up.",
+        "“Go,” she says.",
+        "He goes. Mardi Gras and the levee, and the stopping; what they said on the levee, that they’d each end it, to each face, before anything; Lena on the Sunday; him on her porch on the Tuesday —",
+        "“Slower.”",
+        "He stops. He starts again at the levee, slower, and makes it to the coat.",
+        "“Again.” She’s looking at the water. “Not from there. That’s where it happened. That isn’t where it starts. What does he *want* in this scene?”",
+        "“Who?”",
+        "“The guy on my porch. What does he want?”",
+        "“Not to lie to you.”",
+        "“That’s what he doesn’t want. Anybody can play what they don’t want. What does he *want*?”",
+        "He looks at the coots for it. He has had the levee, and the van, and every night since on his step, and it should be ready by now, and it isn’t; it comes as it came on her porch, in pieces, except that this time she has told him to take as long as it takes, and so he does.",
+        "“Since August,” he says. “The first week. Before I knew you. She was with somebody, and then she was with somebody else, and I told myself that was the end of it, and I believed me. I’d have sworn on anything it was over by the time I met you.” He makes himself keep going. “It wasn’t over. I didn’t know that till the levee. That’s the truth, and it isn’t a good one.”",
+        "“What does she want?” Skye says — and then, fast, before he can get his mouth open: “No. Don’t. I don’t want her in the car.”",
+        "“When did you know?”",
+        "“The levee.”",
+        "“Not before.”",
+        "“Before, I didn’t let myself look at it.”",
+        "“That isn’t the same as not knowing.”",
+        "He doesn’t argue it. She was in Burnaby with glue on her neck and he was on a levee in Louisiana, and before that, all winter, he was right here, and in every one of those places some part of him knew, and kept its head down.",
+        {
+          "if": "s2e18_why==\"sincerity\"",
+          "text": "“Explain *you look at me*.”",
+          "else": "“Explain the part where I look at you.”"
+        },
+        "“At Mass,” he says. “You’d turn in the pew and look at me. To see what it was doing to me. To see if I was all right. I never had anybody look at me like that, in there or anywhere else, and I loved it.” He watches a coot go under. “She doesn’t turn around. She’s already looking at the same thing I am, for her own reasons. She’d be looking at it if I wasn’t there.”",
+        "Skye doesn’t say anything. Her face is to the water.",
+        "“My dad and me,” he says, “under the hood of the truck. Two hours, the light on the cord, and he doesn’t look at me, and I never felt closer to him in my life. We’re both looking at the engine.” He stops, and goes on. “I want my life pointed at God. All of it. And I want the person next to me pointed there too — not because I am. On her own. That’s the best I’ve got. It’s more than I had on your porch.”",
+        "“And I was looking at you,” Skye says.",
+        "“Yes.”",
+        "“I thought that was the good part.”",
+        "“It was the good part.”",
+        "His mouth is already open on the rest of it, and she turns her head and looks at him.",
+        "“You still love me. Don’t say it. I can see it. It’s my job.”",
+        "He closes his mouth.",
+        "Across the water and the roofs, Ferrer Tower strikes one, flat bell and all.",
+        "“There’s water in the back,” she says, after it. “If you want water.”",
+        "“No.”",
+        "“Me either.” She picks at a thread on the sleeve of the navy sweater, and leaves it.",
+        {
+          "if": "s2e18_her==\"sincerity\"",
+          "text": "“You said it’s the one you can say,” she says. “Say why you can’t say the other one.”",
+          "else": "“You wouldn’t say it about her,” she says. “Say why.”"
+        },
+        "“Because I haven’t said it to her. I won’t say it to you first.”",
+        "Out on the Lagoon the coots go down all together, as if somebody had pulled a plug, and come up scattered.",
+        "“That’s an answer,” Skye says.",
+        "“What’s the scene about?”",
+        "“Me telling you the truth too late.”",
+        "“That’s what happens in it. What’s it *about*?” She doesn’t wait for him. “I’ll tell you what I had, around the fifth night. It’s about a guy who’s scared of being happy. He gets the thing, and he can’t stand having it, so he goes and finds a reason.”",
+        "“No.”",
+        "“Then what.”",
+        "He looks at his hands for it, the cracks across the knuckles from the Hobart that won’t heal till May.",
+        "“It’s about what I’m for.”",
+        "“That’s a hell of a thing to say to a girl in her own car.”",
+        "“I know.”",
+        "She turns in the seat, her back against her own door, so she can see all of him. “Here’s mine. I went to Mass. I sat there with no idea when to stand up. I learned the words. I learned both endings of the Our Father in this car, on the 101. And I didn’t do any of it *at* you. I did it *with* you. I was happy, and you were happy — I’ve got that on tape, I watched it every night, you were *happy*.” She stops, and gets it back. “So tell me what kind of God looks at that and takes it away.”",
+        "What he has isn’t an answer to what she asked. It’s just the truest thing he’s got.",
+        "“He didn’t take it,” Jack says. “I did. I gave it back. I’d have spent the rest of it lying to you — not with my mouth. With the rest of me. Kneeling next to you facing one way, and you not knowing which. I’d rather lose you than do that to you.”",
+        "“That’s not good enough.”",
+        "“No,” he says. “It isn’t.”",
+        "“Say it’s all true,” she says. “Say I’m wrong and he’s up there. Then he made me too. Like this. Somebody who can’t look at anything without turning round to see what it’s doing to the person next to her. He made that. And then he takes the person.”",
+        "He has nothing for that. He looks for something and there isn’t anything.",
+        "“I don’t know,” he says.",
+        "“You always know.”",
+        "“Not that one.”",
+        "She looks at him for that, and then out at the jogger coming back the other way, slower now, her ponytail flagging.",
+        "“Did you see the blog?”",
+        "“I heard it.”",
+        "“‘Couldn’t handle her fame.’” Her mouth goes crooked at one side. “I laughed for the first time in a week. Then I threw up.”",
+        "It gets a laugh out of him, a short ugly one he didn’t know was in there, and something close to one out of her.",
+        "“Sol printed it out,” she says. “It’s on the fridge. Under the lobster magnet. She thought it would help.”",
+        "“Did it?”",
+        "“A little. Don’t tell her.”",
+        "It doesn’t last. She looks down at her hands.",
+        "“Did you notice I stopped doing voices? On the phone. Since Ash Wednesday.” She turns one hand over. “Every time you called. *Hi.* First thing, every time. Just me.” She looks at the palm, at nothing on it. “I gave up the first take. For Lent.”"
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“I noticed. Every time.”",
+          "set": {
+            "s2e20_hi": "sincerity",
+            "trait.sincerity": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "key": "In her car, when Skye asked if you’d noticed she’d stopped doing voices on the phone, you told her you’d noticed every time.",
+          "response": [
+            "“I noticed,” he says. “Every time.”",
+            "“Of course you did.” She looks out at the Lagoon. A coot goes under, and comes up a long way from where it went down."
+          ],
+          "goto": "s09a"
+        },
+        {
+          "tag": "Candor",
+          "text": "“I noticed. I didn’t know why.”",
+          "set": {
+            "s2e20_hi": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "key": "In her car, when Skye asked if you’d noticed she’d stopped doing voices on the phone, you told her you’d noticed and hadn’t known why.",
+          "response": [
+            "“I noticed,” he says. “I didn’t know why.”",
+            "“No. You wouldn’t. I didn’t tell anybody.” Her thumb rests on the top of the wheel, at twelve o’clock, not moving."
+          ],
+          "goto": "s09a"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Don’t say anything. Let her finish.*",
+          "set": {
+            "s2e20_hi": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "In her car, when Skye asked if you’d noticed she’d stopped doing voices on the phone, you said nothing and let her finish.",
+          "response": [
+            "He doesn’t answer.",
+            "She sees that he’s waiting, and nods once, and looks down at her hands in her lap, the one turned up and the other turned down."
+          ],
+          "goto": "s09a"
+        }
+      ]
+    },
+    "s09a": {
+      "slug": "THURSDAY · 1:40 PM · THE SAAB — A PARADE",
+      "body": [
+        "“I meant it for you,” she says. “That was the idea. Something you do, that I could do too. Give something up.” She closes the hand. “It turns out you can’t give something up for a person. It doesn’t hold.”",
+        "The coots have gone off up the Lagoon in a long black line. A girl on a bike goes by on the path with a cello case on her back, and Skye watches her out of sight.",
+        "“So that’s over. Except I’m still doing it. The phone rings and I say *hi*. My agent. My mother. Sol, from the kitchen, on the house phone, which is insane. My agent thinks I’m depressed. My mother thinks I’ve joined something. *Hi.* Every time. And I don’t know who for.” She looks at him. “Isn’t that stupid.”",
+        "Before Lent, every call of hers started with somebody else. A flight attendant asking him to return his seat to its upright position. A Texas Ranger with a warrant. Once, from a makeup chair in Burnaby, a waitress at a Youngstown diner so exact he’d laughed till he had to pull off the road. And from Ash Wednesday on: *Hi.* Just that, and then her.",
+        "He keeps still in his seat.",
+        "“Are you still not smoking?” she says.",
+        "“Still not.”",
+        "Her eyes go to the breast pocket of the Carhartt, and away again, out to the water. “I hate that I’m proud of you.”",
+        "A man with a golden retriever stops at the railing in front of the car to let the dog look at the coots. The man looks up and sees the two of them sitting there, and finds something to do with the leash, and takes the dog on along the path.",
+        "Across the roofs Ferrer Tower strikes two.",
+        "She waits for the last of it to go out over the water before she says anything else.",
+        {
+          "if": "s2e18_last==\"candor\"",
+          "text": "“‘You were never a bit.’ You said that from the bottom of my steps. Then what was I?”",
+          "else": "“You never said what I was,” she says. “On my steps. You never said.”"
+        },
+        "He has had nine days to have this one ready, and it still has to be got out of him.",
+        "“Somebody I’d have done anything for,” he says. “Except lie to.”",
+        "She takes it. She doesn’t tell him whether it’s enough. Her chin goes up a little, and down.",
+        "“You can’t even give me a bad one,” she says, and crosses her arms over the navy sweater, and looks at the water a while longer.",
+        "“A parade,” she says. “I keep going back to it. Somebody’s coat on St. Charles, in the cold, and floats going by. I’ve read it fifty ways. There’s nothing in it. It’s the smallest scene I ever heard of.”",
+        "She looks at him.",
+        "It comes quiet, and partway through her voice goes out from under her, and she says the rest of it lower, where it went, and doesn’t raise it.",
+        "“I just thought I’d be better than her at something. Explain to me, slowly, why it took you a parade.”"
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“It didn’t take a parade. It took since August. The parade’s where I quit lying to myself. I never lied to you.”",
+          "cue": "Skye will remember what you said.",
+          "set": {
+            "s2e20_parade": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "key": "When Skye asked why it took a parade, you told her it took since August, and that you’d never lied to her.",
+          "response": [
+            "“It didn’t take a parade,” he says. “It took since August. The parade’s where I quit lying to myself. I never lied to you.”",
+            "“Since August,” she says. Her eyes are on the water. Her mouth presses shut after it, hard, and stays shut."
+          ],
+          "goto": "s09b"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“You weren’t losing to her. There wasn’t a contest. These were some of the best months of my life, and I still did this.”",
+          "cue": "Skye will remember what you said.",
+          "set": {
+            "s2e20_parade": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "When Skye asked why it took a parade, you told her there’d never been a contest, and that these had been some of the best months of your life.",
+          "response": [
+            "“You weren’t losing to her,” he says. “There wasn’t a contest. These were some of the best months of my life, and I still did this.”",
+            "“And you still did this.” She says it back to him slowly, all of it, and nods, slowly, more than once, the way you nod at directions in a town you’ve never been to."
+          ],
+          "goto": "s09b"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Don’t answer fast. Let her see you can’t.*",
+          "cue": "Skye will remember what you said.",
+          "set": {
+            "s2e20_parade": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "When Skye asked why it took a parade, you didn’t answer fast, and let her see you couldn’t.",
+          "response": [
+            "He tries, and stops. He tries again, and stops again, and doesn’t pretend he hasn’t.",
+            "“Because I’m slow,” he says. “And I’m a coward about what I want. And I let you pay for both.”",
+            "She turns in her seat and looks at him straight, and keeps on looking."
+          ],
+          "goto": "s09b"
+        }
+      ]
+    },
+    "s09b": {
+      "slug": "THURSDAY · 2:05 PM · THE SAAB — DIFFERENT DEPARTMENTS",
+      "set": {
+        "skye_not_done": true,
+        "skye_keeps_flannel": true,
+        "rel.skye.trust": "+1",
+        "rel.skye.friction": "+1"
+      },
+      "body": [
+        "She cries.",
+        "It isn’t loud. Her face goes, and then her shoulders, and she puts the heel of one hand against one eye and then the other, and it keeps coming.",
+        "“Glovebox,” she says.",
+        "He opens it. Registration in a Ziploc, a tire gauge, a parking stub from the Paramount lot, a travel pack of Kleenex. He sets the Kleenex on the console by the gearshift and shuts the glovebox, and she goes through three of them, and then a Del Taco napkin out of her door pocket, and when that’s gone, the cuff of the navy sweater pulled down over her fist.",
+        "She talks through some of it. Not much of it is to him.",
+        "“I had a plan,” she says, wet. “For today. I was going to do this in the hall in four minutes and walk away and make you watch me walk away. I had it all —” A Kleenex. “That was the plan. I told Sol this morning I wasn’t even going. I had my keys in my hand when I said it.”",
+        "And a little later, into the cuff: “Don’t say anything. I mean it. Not one nice thing.”",
+        "Jack isn’t doing well with himself. His hands are on his knees and won’t stay there. The right one goes up to the Carhartt on its own and finds the pack through the canvas, flat over his heart, the hard corner of it under his palm, and presses.",
+        "There’s a thing he could say that would make this hurt her less. He can feel the shape of it, three or four of them, all easy, all ready in his mouth, and every one of them is a lie.",
+        "He did this. He did it on purpose, and he would do it again, and she is crying in her own car with the sleeve of her sweater over her fist; both of those are true, and there’s no way to set them down side by side that makes either one of them any smaller.",
+        "He tries a Hail Mary in his head and loses it at *the Lord is with thee*, and starts it again, and loses it in the same place.",
+        "What comes instead, from nowhere, is Nonna’s, the thing she says at the stove over a burn or a dropped plate, flapping the dish towel at it: *Passa, passa.* It passes. He doesn’t believe it. He keeps it anyway, under his hand with the pack.",
+        "If there were any way to take this off her and carry it himself, he’d have found it by now. He has been looking for one since her steps. His knee is going under the dash and he puts his other hand on it, and it goes on going.",
+        "Something has hold of his throat. He sits in her car with it. One tear gets out of him and goes down beside his nose.",
+        "He doesn’t reach for her. She’s sitting with her back to her own door and her knees drawn up onto the seat and the sleeve over her fist, and all of it says not to.",
+        "It goes on a long time. It goes on less. Then it stops, mostly, and she blows her nose, hard, a honk nothing like anybody on television, and balls the Kleenex up in her fist and holds onto it.",
+        "The Lagoon has gone a darker green with the sun round behind them. The light has come in across the dash and lies on her knees and his.",
+        "“I understand it,” she says. “I don’t accept it. Those are different departments.”",
+        "“Okay.”",
+        "“Don’t *okay* me.” But there’s nothing behind it. She wipes her face one more time with the cuff and looks at the cuff and pulls it straight. “I’ll respect what you said. I always do.”",
+        "He waits.",
+        "“But this isn’t done.” She says it to the windshield, and then she turns her head and looks at him until he nods.",
+        "“Tuesday,” she says. “Pair 41. Fenner doesn’t take requests.”",
+        "“I know.”",
+        "“Bring your notes.”",
+        "“I’ll bring them.”",
+        "“I’m keeping your shirt.”",
+        "“It’s yours.”",
+        "She puts the key in the ignition and doesn’t turn it yet.",
+        "“Text me when you —” he says, and stops.",
+        "She looks at him. Her face is a wreck, and she lets him see it, all of it, and doesn’t look away.",
+        "“Get out of my car, Costigan.”",
+        "Something is going on at one corner of her mouth that isn’t a laugh yet.",
+        "He gets out. The air off the Lagoon is cold after the car. He shuts the door and steps up onto the curb, and the Saab starts, and backs out, and goes up the row and out of Lot 22, and doesn’t wait at the stop sign.",
+        "Jack stands on the curb with his hands at his sides and the cold coming off the water, in the space where her car was, until a pickup noses in and waits for him to move."
+      ],
+      "next": "s09c"
+    },
+    "s09c": {
+      "slug": "THURSDAY · 2:40 PM · THE LAGOON PATH — THE PACK",
+      "body": [
+        "He doesn’t go back the short way. He takes the path round the far side of the water, under the eucalyptus, past the kayak racks and the little footbridge, while across campus 109H goes on without him under the clock.",
+        "By the footbridge it comes back. Not the hands; the hands have been better for days. The want. It comes back whole, for the first time since her porch: the first one of the morning on the back step on Glenwood with a cup of Folgers, the scratch and the flare, the smoke going down and doing what it does. There is one thing on God’s earth that would make the next ten minutes of his life go faster, and it’s in his pocket, and he wants it more than he has wanted anything since Ash Wednesday. His mouth waters for it, actually waters, like a dog’s at a back door. The afternoon is bright and cold, the eucalyptus giving off menthol and cat and last week’s rain, the Lagoon full of light, and none of that is any use to him at all.",
+        "The pack is out of the pocket before he’s decided anything. Marlboro Reds, the El Paso tax stamp, the cellophane and the seal, the corners gone soft from two weeks riding against his chest. He stands on the path with his thumb on the little red tab of the tear strip."
+      ],
+      "choices": [
+        {
+          "tag": "Restraint",
+          "text": "*Put it back. Walk.*",
+          "set": {
+            "s2e20_pack": "restraint",
+            "trait.control": "+1",
+            "resolve.jack": "+1",
+            "soul.restraint": "+1"
+          },
+          "response": [
+            "It goes back in the pocket and he does the button up over it, and walks. Past the footbridge, up the stairs by the dorms, across the lawn. On Delgado’s front steps he takes the phone out and turns it on, and it sits in his hand thinking about it, and then there she is.",
+            {
+              "type": "sms",
+              "from": "Lena",
+              "text": "Hale asked where you were. I told him Ohio. Are you all right? —L.",
+              "time": "2:36 PM"
+            },
+            "He sits down on the top step with it open on his knee and people going in and out of the doors behind him."
+          ],
+          "goto": "s10"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "*The Jesus Prayer, all the way to Delgado.*",
+          "set": {
+            "s2e20_pack": "sincerity",
+            "trait.sincerity": "+1",
+            "resolve.jack": "+1",
+            "soul.grace": "+1"
+          },
+          "response": [
+            "*Lord Jesus Christ, Son of God, have mercy on me, a sinner.* On one step and on the next. Round the rest of the Lagoon, up the stairs by the dorms, across the wet lawn. Somewhere around the kayak racks the pack has gone back in the pocket; he couldn’t say when. In the lobby he turns the phone on.",
+            {
+              "type": "sms",
+              "from": "Lena",
+              "text": "Hale asked where you were. I told him Ohio. Are you all right? —L.",
+              "time": "2:36 PM"
+            },
+            "He laughs at *Ohio*, out loud, alone in the middle of the lobby, and Marcus at the front desk looks up from his book."
+          ],
+          "goto": "s10"
+        },
+        {
+          "tag": "Candor",
+          "text": "*Turn the phone back on.*",
+          "set": {
+            "s2e20_pack": "candor",
+            "trait.candor": "+1",
+            "resolve.jack": "+1"
+          },
+          "response": [
+            "He puts the pack in the pocket to have a hand free and gets the RAZR out and turns it on, right there on the path, and waits through its little song.",
+            {
+              "type": "sms",
+              "from": "Lena",
+              "text": "Hale asked where you were. I told him Ohio. Are you all right? —L.",
+              "time": "2:36 PM"
+            },
+            "He stands on the path with it open in his hand while a jogger goes round him, and doesn’t answer yet."
+          ],
+          "goto": "s10"
+        }
+      ]
+    },
+    "s10": {
+      "slug": "THURSDAY · 6:15 PM · DELGADO HALL, THE EAST STAIRWELL — HER LANDING",
+      "set": {
+        "told_lena_skye": true,
+        "rel.lena.trust": "+2"
+      },
+      "body": [
+        "At four he answered her.",
+        {
+          "type": "sms",
+          "from": "Jack",
+          "text": "im ok. ill tell you tonight",
+          "time": "4:02 PM"
+        },
+        {
+          "type": "sms",
+          "from": "Lena",
+          "text": "I’ll be on my step. —L.",
+          "time": "4:04 PM"
+        },
+        "He spent the two hours after that on his bed in 412 with Fenner’s textbook open face down on his chest to the chapter on waves, not reading it, while the window over the desk went from white to gold to the deep blue it goes before the lights come on.",
+        "At ten past six he gets up and goes down. Two floors, before he knows what he’s going to say. The stairwell is between suppers, somebody’s microwave popcorn coming down from three, a door on four letting out a burst of television and taking it back.",
+        "She’s on her step. The jean jacket, a sweater under it, her hair down; three pages in Hale’s handwriting on her knees with her pencil laid across them. She hears his boots on the flight above and turns the pages face down on her knee, and moves over.",
+        "He sits. The concrete is cold through his jeans. On the landing below the wired glass in the door on two has gone dark, and shows the two of them sitting there under the tube light, small.",
+        "“Three pages,” she says, with her hand on them. “On how to beat him. In that handwriting like a fence. And he wouldn’t look at me while I read them. He stood at the window with his back to me like a man watching a pot.” “And today he asked where you were. In front of God and Caleb.”",
+        "“I saw.”",
+        "“I told him Ohio.” She looks at him sidelong. “He asked was that the entire state, Miss Broussard, and I said yes, sir, the entire state, and he let it go. I don’t know what he saw on my face. Whatever it was, he let it go.” She runs the pencil along the edge of the pages. “Your chair was empty under the clock all afternoon. I know because I looked at it all afternoon. Caleb asked me was something wrong with the clock.”",
+        "It nearly gets a laugh out of him.",
+        "“You didn’t answer my question,” she says.",
+        "“Which one?”",
+        "“Are you all right.”",
+        "“I’m good.”",
+        "“Don’t you *I’m good* me.” She says it low. “Not tonight.”",
+        "“No,” he says. “Not really.”",
+        "She waits after that. She doesn’t ask anything else. She sits, and leaves the rest of it to him.",
+        "“Skye came back to class today.”",
+        "Lena’s pencil stops on the edge of the pages.",
+        "“Is she all right?”",
+        "“No. Better than Tuesday.”",
+        "She nods, slowly, and is quiet.",
+        "“She was in her seat when I got there,” he says. “Before me. She didn’t say a word till Fenner let us out.” “She talked to me after. Two hours. In her car, down by the Lagoon. That’s where I was.”",
+        "Lena doesn’t say anything for a little. She straightens; he feels it more than sees it, through the shoulder of the jean jacket against his. She lays the pencil in the fold of Hale’s pages and puts both hands flat on top of them.",
+        "“I mind. I’m telling you I mind so I don’t have to act like I don’t.”",
+        "She says it to his face, with her chin up, and she doesn’t put a joke on the end of it to carry it off.",
+        "He would have done a great deal not to be the reason she had to say that. He is the reason. She said it anyway, on her own step, on a Thursday, with Hale’s notes on her knee. He wants to put his hand over hers on the pages, and doesn’t know yet whether he has the right."
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "*Tell her the shape of it: she wanted to understand; she sort of does; she says it isn’t done.*",
+          "cue": "Lena heard that.",
+          "set": {
+            "s2e20_tell": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "key": "On her landing that night, you told Lena the shape of what Skye said: she wanted to understand, she sort of did, and it wasn’t done.",
+          "response": [
+            "“She wanted to understand,” he says. “I told her as slow as I could. She sort of does now.” He makes himself give her the last of it. “She says it isn’t done.”",
+            "Lena hears *it isn’t done*, and he watches it go in. She takes it the way she takes a hard reading at Mass, upright, without looking away from the lectern.",
+            "“All right,” she says. She looks down the flight. “Saturday stands.”",
+            "Her hand comes down over his on the cold step. It doesn’t move while somebody’s door on three bangs open and two voices go off down the hall laughing, and it’s still there after the stairwell has gone quiet again."
+          ],
+          "goto": "s11"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“Some of what she said is hers. I’m not going to give it to you.”",
+          "cue": "Lena heard that.",
+          "set": {
+            "s2e20_tell": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "On her landing that night, you told Lena some of what Skye said was Skye’s, and kept it.",
+          "response": [
+            "“Some of what she said is hers,” he says. “I’m not going to give it to you.”",
+            "“Good,” Lena says. “Keep hers.”",
+            "She looks at him, and goes on looking, until he has to look down at their boots side by side on the step below.",
+            "“Saturday stands.”",
+            "Her hand finds his on the concrete and covers it. When she gets up to go in she bends first and puts her forehead against his, cool, the medal swinging forward on its chain; then she goes down to her landing and through the door on two, and leaves it standing a little open behind her."
+          ],
+          "goto": "s11"
+        },
+        {
+          "tag": "Restraint",
+          "text": "“Ask me anything.”",
+          "cue": "Lena heard that.",
+          "set": {
+            "s2e20_tell": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "On her landing that night, you told Lena to ask you anything, and answered what she asked.",
+          "response": [
+            "“Ask me anything,” he says.",
+            "She takes her time. She asks one thing. “Did you tell her the truth?”",
+            "“Everything she asked me.”",
+            "“Then that’s all I need.” She tucks the pencil behind her ear. “Saturday stands.”",
+            "Her hand finds his on the step and stays. He sits beside her under the tube light with her hand on his and nothing left to say, and nothing he needs."
+          ],
+          "goto": "s11"
+        }
+      ]
+    }
+  }
+}

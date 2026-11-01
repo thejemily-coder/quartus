@@ -1,0 +1,455 @@
+{
+  "scenes": {
+    "s11": {
+      "slug": "FRIDAY · 7:00 PM · ST. BRENDAN THE NAVIGATOR — THE THIRD FRIDAY",
+      "set": {
+        "stations_mar5": true,
+        "soul.grace": "+1",
+        "resolve.jack": "+1",
+        "rel.osei.warmth": "+1",
+        "rel.lena.warmth": "+1",
+        "resolve.lena": 5
+      },
+      "body": [
+        "By seven the light is gone off the hill. From inside, the dalle-de-verre has nothing left of the day to work with and holds only what the side lamps give it, a deep blue at the bottom of each window going to ink at the top, and over all of it the Douglas-fir ribs go up out of the walls and meet in the dark. Somebody has propped the side door onto Ocean Road with a kneeler, and the cold comes in low along the tile with the sound of the surf behind it.",
+        {
+          "if": "jack_fridays",
+          "text": "Bread and water since morning, his and hers, and all day not one word about it from either of them.",
+          "else": "He had his meatless lunch at the Commons, grilled cheese and the tomato soup. Her bread and water stands alone, and she hasn’t said a word about it all day."
+        },
+        {
+          "if": "s2e19_bread==\"sincerity\"",
+          "text": "At noon on the Hollis steps she tore her heel of bread in two and gave him the better end this time."
+        },
+        {
+          "if": "s2e19_bread==\"wit\"",
+          "text": "At noon on the Hollis steps she raised her heel of bread to him first."
+        },
+        {
+          "if": "s2e19_bread==\"candor\"",
+          "text": "At noon on the Hollis steps she said “Seven.” before he could."
+        },
+        "Father Osei comes out of the sacristy in the purple stole behind the processional cross and its two candles, and at the first station he reads the name off the carving, *Jesus is condemned to death*, and says, “We adore you, O Christ, and we praise you,” and forty people go down on one knee on the tile and give it back to him: “Because by your holy cross you have redeemed the world.”",
+        "Lena is on one knee beside him for it.",
+        "She came in at five to seven with the black lace already over her hair and sat down in his pew without looking at him, and when the cross turned toward the first station she stood when he stood. Now she is at his elbow at the back of the crowd, her shoulder not quite touching his arm, her booklet held low enough for him to read off it. He has his own booklet. He reads off hers.",
+        "Between the stations Gus Ferreira gives a chord from the loft, and the forty walk to the next carving singing the old verse, *At the cross her station keeping, / stood the mournful Mother weeping*, with Gus underneath all of them on the low notes like a keel. Lena sings it a little ahead of the beat in a clean alto. At each station she goes down on the tile without a hand on anything and comes up the same way, and the lace swings forward and back, and every time they kneel the sleeve of her coat brushes the sleeve of the Carhartt, wool on canvas, and every time they stand it doesn’t.",
+        "Father Osei reads the meditations short and unhurried, his eyes on the carvings and the page, and takes the corners slowly on the bad leg. The fast has made everything in the church louder in a way Jack is getting used to: the kneelers knocking, the forty booklets turning their page together, the little tick of the candle wicks as the acolytes walk them.",
+        "They go down the south wall, the second and the third and the first fall, and round under the sanctuary lamp, and up the north wall, where the carvings are darker. Fifty Lents of candle smoke have got into the grain on that side, and the faces are harder to make out, and he has to look longer at each one to find who is who: the soldiers, the women, the man under the beam.",
+        "Somewhere along the north wall, one of the carvings takes hold of him and won’t let go."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "*The sixth: Veronica wipes his face.*",
+          "set": {
+            "s2e20_station": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "In the carving a woman has pushed in between the soldiers with a cloth held out in both hands, and his face is on it. Father Osei reads that she wasn’t asked, and did it anyway, and kept the cloth.",
+            "Jack kneels and asks for nothing. He holds things up instead, one after another, and leaves them on the cloth: Ma at the kitchen table with the long cord; a woman on Dupre Street at a post office counter on a Monday morning; a white car in a lot by the lagoon, and the face in it. He leaves each one there a while. The cloth takes what it takes.",
+            "The cross turns toward the seventh and the verse starts again, and they go with it, and round the walls, and out.",
+            "On the front steps after, with the church emptying onto Ocean Road behind them and the cold coming up off the water, she takes the lace off her hair.",
+            "“Wear something you can walk in,” he says.",
+            "“I’ll wear what I like, Costigan.”",
+            "Her hand finds the side pocket of the Carhartt, where there’s a receipt and one of Gloria’s gumbands, and stays in it the length of Ocean Road."
+          ],
+          "goto": "s12"
+        },
+        {
+          "tag": "Candor",
+          "text": "*The ninth: he falls the third time.*",
+          "set": {
+            "s2e20_station": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "The ninth hangs low on the wall by the confessionals: him down on his hands under the beam, for the third time, and the beam on top of him. Father Osei reads it in two sentences and lets them kneel on it.",
+            "Jack knows something about the third time. It isn’t the falling. Anybody falls. It’s getting up when you have done it twice already and know exactly how far down the floor is. He kneels on the tile and asks for that, the getting up, and doesn’t ask to be spared the floor.",
+            "The church gets up. He gets up with it.",
+            "When the forty come out onto the steps there’s a wind off the water that wasn’t there at seven, and she holds her coat shut at the collar. He tells her to wear something tomorrow she can walk in.",
+            "“I’ll wear what I like, Costigan.”",
+            "Going down Ocean Road her hand comes into the side pocket of the Carhartt. It finds the gumband in there, and turns it round a finger, and leaves it where it was."
+          ],
+          "goto": "s12"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*The eleventh: and nothing to think at all.*",
+          "set": {
+            "s2e20_station": "restraint",
+            "trait.control": "+1"
+          },
+          "response": [
+            "*Jesus is nailed to the cross.* Father Osei reads the meditation and stops, and the church kneels, and the side door knocks against its kneeler in the wind.",
+            "Jack kneels with nothing in his head. All week there have been words in it, on the Hollis steps and on her landing and over the Hobart, sentences going round like plates in the Hobart, and at the eleventh there isn’t one. He lets it be that. Beside him Lena has her eyes shut and her hands together under her chin.",
+            "From the loft Gus comes back in on the low note, and the forty get up off the tile.",
+            "On the steps after he says it again, wear something you can walk in, and she looks at him from under the lace.",
+            "“I’ll wear what I like, Costigan.”",
+            "On Ocean Road, in the dark between the streetlights, her hand comes into the pocket of the Carhartt where his already is, and his stays there with it the whole way down the hill."
+          ],
+          "goto": "s12"
+        }
+      ]
+    },
+    "s12": {
+      "slug": "SATURDAY · 7:05 AM · THE ANCHOR — DON’T ORDER THE DUCK",
+      "music": "Lucho Gatica — “Bésame Mucho”",
+      "set": {
+        "anchor_mar6": true
+      },
+      "body": [
+        "Saturday comes up clear and cold over the harbor, the mountains behind the town lit pink along their tops with their feet still in shadow, and by five past seven the fishermen have the counter from Merle’s stool in, caps on, elbows down, paying cash. Jack has the Hobart. The first rack of mugs goes in with a roar and comes out in a cloud.",
+        "The talk at the counter is last Saturday’s talk, a week on and quieter. Chile. A cousin of somebody’s in a town down there whose name the man can say and Jack can’t, and the church at home taking up a second collection, and the radio’s numbers, which the men leave to the radio.",
+        "On the shelf over the grill Rudy’s radio is on the Saturday boleros out of Oxnard, a man singing slow in Spanish over strings, and Rudy cracks eggs to it two at a time, one-handed.",
+        "Gloria comes down the counter with the grease pencil out of her hair and writes the morning’s pies on the glass of the case in her square capitals, PECAN · APPLE · CHOC CREAM, and stands back from it with her arms folded until she’s satisfied none of them is lying.",
+        {
+          "if": "s2e19_gloria==\"sincerity\"",
+          "text": "Then she goes to the pass and comes back with a plate, two eggs over and potatoes and a short stack, and sets it on the steel by the Hobart before he has said a word. “Eat.” It’s breakfast, not a thank-you, and she stands there with the rag over her shoulder until he picks up the fork.",
+          "else": "“You look like a man with a jacket problem,” she says on her way past, and comes back from the pass with a plate, two eggs over and a short stack, and sets it on the steel in front of him. “Eat.”"
+        },
+        "When she comes back for the plate it’s clean. She takes it and doesn’t go.",
+        "“Tonight?”",
+        "“Tonight.”",
+        "“What are you ordering?”",
+        "“Something French.”",
+        "“What time?”",
+        "“Seven-thirty.”",
+        "She nods at that. It seems to be the one thing he has got right so far.",
+        "Gloria looks at him a while, at his face and at his hands going in and out of the rack.",
+        "“Don’t order the duck,” she says. “Nobody can eat duck nervous.”",
+        {
+          "if": "s2e20_jacket==\"gloria\"",
+          "text": "At nine, when the fishermen have gone back down the ramps and the counter is a row of empty mugs, she takes Rudy’s brown off its hanger by the register and sits on the end stool with it across her knees and the butter-cookie tin open beside her. She hems the sleeves fast, a row of pins in her mouth, and her coffee goes cold at her elbow and she lets it. When Jack comes round the end of the counter with his wallet out she doesn’t take the pins out to say no; she shakes her head at the sleeve. At the end she bites the thread and holds the jacket up by the shoulders, the whole brown length of it. “Chocolate cream,” she says. “Doesn’t win on looks. Everybody finishes it.” Rudy, who has watched the whole hem from the grill, flips two eggs. “Mijo. Don’t spill on it.”"
+        },
+        {
+          "if": "s2e20_jacket==\"theo\"",
+          "text": "When the fishermen have gone she comes back along the counter with the rag. “You find a jacket?” He tells her: Theo’s, navy, Italian, so light it’s hardly there, and tight across the back. Gloria wipes the same foot of steel for the length of it. “French silk,” she says. “Pretty. Rich. Don’t take it out in the heat.” She goes off down the counter with the rag before he can ask what that means."
+        },
+        {
+          "if": "s2e20_jacket!=\"gloria\" && s2e20_jacket!=\"theo\"",
+          "text": "When the fishermen have gone she comes back along the counter with the rag. “You find a jacket?” He tells her: nine dollars at St. Vincent de Paul, brown herringbone, heavy, a dead man’s, a good one. “Walter,” he says. Gloria nods at the name. “Mincemeat,” she says. “Old man’s pie. Nobody young orders it, and it’s the best thing in the case.” She takes the rag on down the counter to Merle’s cup, and fills it without being asked."
+        }
+      ],
+      "next": "s13"
+    },
+    "s13": {
+      "slug": "SATURDAY · 6:30 PM · DELGADO HALL, ROOM 412 — THE JACKET",
+      "set": {
+        "date1": true
+      },
+      "body": [
+        "The sun has been down half an hour, and the window of 412 has gone a deep clear blue with the eucalyptus black against it and one early star caught in its top branches. Theo’s laptop is shut on his desk. Theo is on his bed on top of the covers in his socks with a paperback face down on his chest, watching Jack get dressed with the attention he gives the first reel of a Kubrick.",
+        "The shirt is ironed. He did it at five in the laundry nook at the end of the hall on a board with a scorch mark the shape of Florida, with an iron that spat at him every time he stood it up, and it took forty minutes and a small burn on the inside of his wrist, and the oxford came out flat enough for Ma. Ma will ask. He can tell her yes. In the back of the notebook, under PROPERLY, there’s a check mark now beside number three, and beside one and two, and he has stood over the page twice this afternoon looking at four and five and six to see whether they’ve moved.",
+        "The Confirmation tie from St. Brigid’s, his only tie, goes on in the mirror on the back of the closet door, over and under and through, as Frank taught him at the kitchen table the week before the bishop came. He gets it wrong. He gets it right the second time and leaves it alone.",
+        {
+          "if": "s2e20_jacket==\"theo\"",
+          "text": "Then Theo’s navy, which weighs nothing and fits him everywhere but across the back. From the bed Theo takes one finger off the paperback and points it at the seam between his shoulder blades. He said it on Wednesday. He doesn’t need to say it again."
+        },
+        {
+          "if": "s2e20_jacket==\"thrift\"",
+          "text": "Then Walter’s herringbone, heavy and brown and easy across the shoulders. Doing up the button he feels the card in the breast pocket through the tweed, stiff, St. Francis and his bird, and he touches it there through the cloth, and leaves it where Walter’s family left it."
+        },
+        {
+          "if": "s2e20_jacket!=\"theo\" && s2e20_jacket!=\"thrift\"",
+          "text": "Then Rudy’s brown, with Gloria’s hem two inches up the sleeves in stitches so small he has to hunt for them. When it settles on him a faint sweet cologne comes up out of the lining, a wedding in Oxnard a long time ago, and the shoulders still sit a little wide of his own."
+        },
+        "The envelope with the Anchor money goes into the inside pocket. Number six. The Carhartt stays on its hook on the back of the door with the pack in its breast pocket, and he walks past it.",
+        "The roses are on his desk. A dozen, red, long-stemmed, in Albertsons cellophane with a gold elastic round the stems and, square in the middle of the cellophane, a white price sticker: *$19.99*. He bought them at four o’clock on Mission Street, and he has been trying to get the sticker off since. He tries again now with a thumbnail. The corner lifts, and the cellophane under it tears a little, a small clear wound, and the sticker stays on.",
+        "“A dozen,” Theo says from the bed. “Red. In cellophane.” He lets the paperback slide off his chest onto the blanket. “You’ve proposed to a bowling alley.”",
+        "“They had carnations. Carnations are for funerals.”",
+        "“These are what the boy brings in the last reel of a picture that went straight to video. Turn the sticker in. No. *In*. Against you. She’ll find it, but she’ll find it later.”",
+        "He turns the sticker in. In the mirror on the closet door there is a man in a jacket and a tie with a dozen roses against his chest, and he looks like somebody’s cousin at a wedding, or a man on his way to a bank to ask for a loan, and either one is going to have to do. He phoned for the cab from the front desk at six, and the sophomore on duty wrote *7:00 DELGADO CIRCLE — COSTIGAN* on a Post-it and stuck it to the phone and wished him luck, grinning. It’s six-fifty. He has the roses in the crook of one arm and his hand on the doorknob, and he stands there, in a borrowed jacket, with a dozen roses, at the door of a room he has walked out of a thousand times without a thought.",
+        "Theo has the paperback up again.",
+        "“Costigan.” He doesn’t lower it. “She said yes before you bought those.”"
+      ],
+      "next": "s13a"
+    },
+    "s13a": {
+      "slug": "SATURDAY · 6:55 PM · DELGADO HALL, 217 — PRESENTING",
+      "music": "Michael Bublé — “Haven’t Met You Yet”",
+      "set": {
+        "rel.lena.heat": "+1"
+      },
+      "body": [
+        "He doesn’t stop on her landing. He goes past it and through the wired-glass door onto two and down the corridor under the tube lights, past a door with a Saints flag thumbtacked over its nameplate and a door with a whiteboard that says GONE TO SULLY’S, to 217. He stands in front of it with the roses. He knocks three times, evenly spaced. He practiced it on the inside of his own door at six-fifteen, with Theo watching.",
+        "The door opens a foot. Laney Price fills it in a black dress and full makeup, with a hairbrush in one hand held like a microphone. She takes in the tie, the jacket and the roses in one long pass, top to bottom, and shuts her eyes, and opens them again.",
+        "“Right on time,” she says. “I could cry.”",
+        "She swings the door wide and steps back into the room with the hairbrush up.",
+        "“And now,” Laney says, “from the great state of *Louisiana* —”",
+        "Lena is standing in the middle of 217 between the two beds, and she has heard every word of that, and has the face of a woman who will deal with Laney later.",
+        "She’s in a navy dress, plain, with sleeves to the elbow and a neckline that goes straight across under her collarbones, and it isn’t hers. He knows the box it came in, and the careful upright hand on the label, and at the hem there’s still a faint straight crease where it was folded to fit. Her hair is up off her neck. The medal lies on the navy at her collarbone. She’s in black heels he has never seen, standing in them very carefully, the way you stand on a dock in a swell.",
+        "“The shoes are mine,” Laney announces. “They’re half a size small. She will suffer *beautifully*.”",
+        "Lena looks at him, and he looks back, and for the first time since a porch in August he has nothing to say to her, and he can see in her face that she has nothing to say to him.",
+        "“You look —” he says.",
+        "“So do you,” she says.",
+        "It isn’t an answer to anything. They both stand there with it.",
+        "He holds out the roses. She takes them in both arms, and the cellophane crackles, and she looks down at them and finds the sticker turned in against the stems where he hid it. He watches her find it. She looks up and says, “Thank you,” very correctly, and turns to look for somewhere to put them, and there is nowhere: both desks are buried in Laney’s makeup, and Coco the coconut has the windowsill.",
+        "Laney holds out her arms. “I’ll put them in the sink, sugar. Go.”",
+        "Lena draws the roses in against the navy.",
+        "“I’m not leaving a dozen roses alone with Laney Price.”",
+        "So the roses come too.",
+        {
+          "type": "break"
+        },
+        "The cab is a Yellow Cab idling in Delgado’s circle with its roof light off, and the driver is a heavyset man in a Dodgers jacket who watches them come down the front steps, her hand on Jack’s arm for the heels, Jack holding the door, the roses going in first, and keeps whatever he thinks about it to himself. The meter starts with a click.",
+        "They sit in the back very upright, with the roses on her knees and his hands on his, and the cracked vinyl of the seat between her hip and his. The radio is on low. The cab smells of a cardboard pine tree and somebody’s fries, and under that, nearer, of something on her he has never smelled on her before, out of a bottle that has to be Laney’s.",
+        "“It’s a pretty night,” Lena says.",
+        "“It is,” he says. “Lena, it — it is.”",
+        "He hears her name go on the front of it, and doesn’t know what it’s doing there.",
+        "Mission Street goes by lit up for Saturday, the Anchor’s windows, the Wharf Rat’s sign with half its letters out; the cab turns onto the wharf, and the planks start under the tires, a long loose drumming, and the lights near the end come up the windshield toward them. Her hand comes off the roses and lies on the seat, on the vinyl. His comes off his knee. The cab stops before either one of them gets anywhere."
+      ],
+      "next": "s14"
+    },
+    "s14": {
+      "slug": "SATURDAY · 7:30 PM · LE MARIN, THE END OF THE WHARF — THREE FORKS",
+      "music": "Bill Evans Trio — “Waltz for Debby”",
+      "set": {
+        "lemarin": true
+      },
+      "body": [
+        "At night Le Marin is one long room lit from the inside and hung out over the water, more window than wall, and through every window the harbor lies black with the lights of the boats and the town laid on it in long wavering strokes. White tablecloths go down the room in two rows. The glasses stand upside down on them, and every place has three forks. A piano trio is playing low out of somewhere in the ceiling, brushes on a snare and a bass walking along under it.",
+        "The man at the stand by the door is in a dinner jacket, silver at the temples, with a reservation book open in front of him the size of a road atlas, and when he says, “Good evening,” Jack knows the voice from Monday. It has a face now, long and kind and entirely serious.",
+        {
+          "if": "s2e20_occasion==\"sincerity\"",
+          "text": "“Costigan,” the maître d’ reads, and looks up, and says to the waiter who has come to his elbow, very low, “A special occasion.” The waiter inclines his head, barely."
+        },
+        {
+          "if": "s2e20_occasion==\"candor\"",
+          "text": "“Mr. Costigan,” the maître d’ says, without looking at the book at all, and in one look round the room Jack understands that the book has been read. The waiter knows. The girl at the coat check knows. In the service door at the back a busboy in a white jacket catches his eye over a tray of water glasses and gives him a thumbs-up, small, at hip height, and is gone. They are all being gently, unbearably kind."
+        },
+        {
+          "if": "s2e20_occasion!=\"sincerity\" && s2e20_occasion!=\"candor\"",
+          "text": "“Costigan,” the maître d’ reads, and there in the book beside the name, in good ink, is the word FORM. He looks up at the two of them. “Will you be dining with the firm this evening, sir?” he asks, with perfect gravity. “No,” Lena says, very politely."
+        },
+        "The waiter is the man in the white jacket Jack watched through the window a week ago, polishing glasses that already shone. He takes them to a table by the window. Jack reaches for her chair, and so does the waiter, and for a moment the two of them have hold of it like men moving a couch up a stairwell, until the waiter lets go, gracefully, and Jack pulls it out, and Lena sits, and he pushes it in a little too far, so that the table meets her at the ribs.",
+        "“Thank you,” she says.",
+        "She sits very straight with her hands folded on the cloth, and once, and then again, she touches the back of her hair where it’s pinned, to see if it’s still there. She has lipstick on. In seven months he has never seen her wear any.",
+        {
+          "if": "s2e19_dinner==\"sincerity\"",
+          "text": "*A real place, with tablecloths.* He looks at the tablecloth and doesn’t say it. Across the table she sees him look, and doesn’t say it either."
+        },
+        {
+          "if": "s2e19_dinner==\"wit\"",
+          "text": "Coming in through the door she said “Form one,” very low, and it has been very quiet since."
+        },
+        {
+          "if": "s2e19_dinner==\"candor\"",
+          "text": "At the door she said, “I said yes,” out of nowhere, as though he’d asked again, and he still hasn’t thought of anything to say back."
+        },
+        "The roses have come in with them and lie on the cloth in their cellophane like a third guest. The waiter, without a flicker, brings a second water pitcher and stands them up in it in the middle of the table, and folds the cellophane, sticker and all, and lays it on the window edge of the cloth, and goes. Now there is a hedge of red roses in the middle of the table, taller than either of them sitting down. He leans left to see her. She leans right. They meet behind the roses, and both of them lean back.",
+        {
+          "if": "s2e20_occasion==\"sincerity\"",
+          "text": "Then the waiter comes back with a single long-stemmed red rose standing in a bud vase, with the compliments of the house on the occasion, and sets it at Lena’s elbow beside the pitcher, and now there are thirteen, and the hedge is worse."
+        },
+        "The menus are leather and heavy and say very little.",
+        {
+          "type": "doc",
+          "title": "Le Marin",
+          "text": "Since 1971 · Sole meunière · Canard à l’orange · Steak au poivre · Bananas Foster, flambéed at your table, for two"
+        },
+        "He has been practicing the French since Tuesday out of a library book with a woman in a beret on the cover, on the bus and over the Hobart and in the shower. Lena reads it without effort, the vowels coming off her in Cajun French and eight years of nuns.",
+        {
+          "if": "s2e20_tue==\"theo\"",
+          "text": "The waiter offers the wine list to Jack. He opens it, reads one line of something that costs more than Frank’s truck payment, closes it, and hands it back the way Theo taught him, as if he’s read it and found it wanting. “We’ll start with water.” The waiter takes it without the least surprise.",
+          "else": "The waiter offers the wine list to Jack. He opens it, reads one line of something that costs more than Frank’s truck payment, closes it, and hands it back the way a man hands back a parking ticket. “Just water. Please. Thank you.” The waiter takes it without the least surprise."
+        },
+        "The bread comes in a basket under a napkin, warm, with a dish of butter, and it’s Saturday, and butter is permitted. Yesterday was bread and water. They both look at the bread. Something at the corner of her mouth goes, and comes back, and she doesn’t laugh, quite.",
+        "“This is nice,” Lena says.",
+        "She says it in the voice he has heard her use on a monsignor at a christening: low, sweet, every consonant ironed. He has heard it used on visiting priests and on the Newman treasurer and on a bishop, once, in a receiving line. It has never been used on him.",
+        "“It is,” he says. “Lena, it’s very nice.”",
+        "“The view is lovely.”",
+        "“It is.” He looks at the view. It is the harbor. “Lena, the duck looks good.”",
+        "“It does.”",
+        "“How’s the Forum?”",
+        "“It’s coming along.”",
+        "“You’re going to win.”",
+        "“Thank you.”",
+        "“Hale gave me three pages of notes on himself.”",
+        "“That was good of him.”",
+        "“It was.”",
+        "And that’s the Forum, and that’s Hale. Since August he has not been able to say good morning to this woman without it turning into an argument about something, Aquinas or the Saints or how much celery goes in a roux, and tonight she agrees with him about the view, and he agrees with her about the duck, and one after another the things they say go down without a fight.",
+        "The waiter comes back with his pad. Jack has had the sentence ready since Tuesday. “*Pour moi*,” he says, “*le canard à l’orange*,” in an accent from somewhere between the library book and Glenwood Avenue, and the waiter writes it down and says, “The duck. Very good, sir,” in English, kindly.",
+        "“*La sole meunière, s’il vous plaît*,” Lena says, in French that sounds like French.",
+        "The waiter goes. There’s nothing to do with his hands. He lines up the three forks. He moves the third one, the little one on the outside that nobody has ever explained to him, a hair to the left, and back. He can feel the knot of the Confirmation tie whenever he moves his head.",
+        "And then a silence comes down on the table that has never once been there before, not in August when he didn’t know her name, not on her landing at two in the morning, not in 302 with Hale and the room watching: a silence with nothing in it at all. It goes on so long that he hears the trio in the ceiling come to the end of its tune, and the applause of a club somewhere fifty years ago, small and far off, a glass set down somewhere in it, and the next tune start.",
+        "He has to say something."
+      ],
+      "choices": [
+        {
+          "tag": "Wit",
+          "text": "*Make a joke about the forks.*",
+          "set": {
+            "s2e20_table": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“Three forks,” he says. “I figure one’s for the duck, one’s for the fish, and one’s to see if I’m paying attention.”",
+            "It lands, perfectly, on the waiter, who has arrived that moment with the water and laughs: a warm, professional laugh, exactly long enough. He fills their glasses. Lena smiles at the tablecloth.",
+            "Before he goes, the waiter reaches over, very kindly, and nudges Jack’s third fork back into line with the other two, and somehow that is the worst thing that has happened all night."
+          ],
+          "goto": "s14a"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“You look beautiful.”",
+          "set": {
+            "s2e20_table": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“You look beautiful.”",
+            "“Thank you,” Lena says, in the voice.",
+            "They both look at the roses.",
+            "He has wanted to say it since the door of 217 opened, and now he has, in a room with tablecloths, and it lies there on the cloth between the bread plates, and neither of them can think what comes after it."
+          ],
+          "goto": "s14a"
+        },
+        {
+          "tag": "Candor",
+          "text": "“I’ve never been nervous around you in my life.”",
+          "set": {
+            "s2e20_table": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "“I’ve never been nervous around you in my life.”",
+            "“You’re not nervous,” she says.",
+            "It’s a lie, and not a good one, and they both hear it go by. For a second it nearly does it. Something nearly gives, in both of them, and holds.",
+            "She takes a roll out of the basket that she doesn’t want, and tears it, and butters the bite with great care."
+          ],
+          "goto": "s14a"
+        }
+      ]
+    },
+    "s14a": {
+      "slug": "SATURDAY · 8:35 PM · LE MARIN — BANANAS FOSTER",
+      "set": {
+        "fire_lemarin": true,
+        "rel.lena.warmth": "+2",
+        "rel.lena.friction": "-2"
+      },
+      "body": [
+        "The duck has been in front of him for twenty-five minutes. It came glazed and shining in its orange sauce, half a bird fanned out on the plate like a hand of cards, and it has beaten him. The knife goes in and stops. He saws. The duck slides, sauce and all, toward the rim, and he stops it with a fork, the little outside one, which he understands too late is the wrong one, and it skids the other way and takes a slice of orange with it, and he chases it round the plate.",
+        "Between two of the roses he can see half her face. Lena has been eating her sole in small exact bites, and she puts her fork down to watch him.",
+        "“This is nice,” she says, and on *nice* her voice is starting to go.",
+        {
+          "if": "s2e19_roux==\"sincerity\"",
+          "text": "She reaches round the roses and moves her water glass across the cloth until it stands beside his right hand. “For your hands,” she says. She doesn’t explain it. He doesn’t need her to.",
+          "else": "He gives up on the duck, and puts both his hands under the table on his knees, and leaves them there."
+        },
+        "Under the table something soft goes over on its side against his ankle, a shoe, and then the other; she has stepped out of Laney’s heels. He shifts his foot to give them room and it comes down on hers, on her stockinged foot, warm through the nylon, and they both pull back under the cloth to their own sides.",
+        "“This is nice,” she says, and it cracks clean through the middle.",
+        "Lena looks out the window at the harbor for a while.",
+        "He can’t see her. He has spent an hour leaning round a dozen roses to get a look at her, and he has had enough of it. He half stands in the borrowed jacket, lifts the roses out of the pitcher in one dripping bunch, lays them back in their cellophane where it lies on the window edge of the table, sticker and all, and sits down.",
+        "Now he can see her. She’s right there, in navy, with her hair coming down a little on one side and the harbor black behind her, looking at him. She doesn’t mention the roses. He doesn’t either.",
+        "The waiter takes the duck away mostly whole and brings the little dessert cards. Lena reads hers, and her eyebrows go up.",
+        "“Bananas Foster,” she says. “In *California*? I have to see what they’ve done to it.”",
+        "It comes on a cart: a copper pan over a burner, a dish of butter, brown sugar, bananas split the long way, a little bottle of dark rum with a pour spout, and a box of long matches. The waiter parks it at the window end of their table and lights the burner and goes to work, the butter first, then the sugar, then the bananas laid in to sizzle, with the air of a man who has done this ten thousand times and still likes it. Brown sugar and butter going dark comes up over the table. Lena sits up straight. She watches the pan with her chin up and her eyes narrowed, a judge from Brennan’s brought in to rule.",
+        "“He’s going to flame it too high,” she says, low.",
+        "“How do you know?”",
+        "“Because he’s showing off for me, cher, and I’d do the same.”",
+        "It’s the first real thing either of them has said all night, and it’s about the waiter.",
+        "The waiter tips in the rum and touches a match to the lip of the pan, and the flame goes up blue and gold, high, higher than it needs to, for the room. At the next table a woman in pearls says, “*Oh*.”",
+        "Then the kitchen door swings somewhere behind them and a draft takes the flame sideways, and the end of it licks out over the window edge of the table and finds the cellophane, and the cellophane goes up with a sound like paper, in one bright crackling sheet, the price sticker curling black in the middle of it, and a ribbon of fire runs off it a hand’s width onto the tablecloth.",
+        "Jack’s hand is on the roses’ pitcher. He doesn’t remember reaching for it. He throws what’s in it, water and a loose petal and the last of the ice, across the cellophane and the roses and the burning edge of the cloth.",
+        "Lena’s napkin comes down on the tablecloth where the ribbon of fire was, and both her hands come down flat on the napkin, pressing, a girl who grew up at a stove.",
+        "It’s out. It took four seconds.",
+        {
+          "if": "s2e20_occasion==\"sincerity\"",
+          "text": "The bud-vase rose has gone over with everything else and lies in the puddle on the cloth, still perfect, pointing at Lena."
+        },
+        {
+          "if": "s2e20_jacket==\"theo\"",
+          "text": "When he reached, the seam across the back of Theo’s navy went, one long rip from the collar down, and he can feel the room on his shirt through it."
+        },
+        {
+          "if": "s2e20_jacket==\"thrift\"",
+          "text": "When he leaned over the table, the card slid out of the breast pocket of Walter’s herringbone and landed on the wet cloth face up: St. Francis and his bird, *In Loving Memory*, Walter J. Pruszynski, lying in the roses’ water beside the black ruin of the cellophane."
+        },
+        {
+          "if": "s2e20_jacket!=\"theo\" && s2e20_jacket!=\"thrift\"",
+          "text": "When he reached across, the right sleeve of Rudy’s brown went through the edge of the flame, Gloria’s hem from nine this morning and all, and came out again with nothing worse than a scorch along the cuff, and now it smells very strongly of rum."
+        },
+        "A little smoke goes up off the cellophane, thin and blue, and hangs under the ceiling. The smell is rum and burnt sugar and wet plastic.",
+        "The room has stopped. Every fork in Le Marin is down. In the ceiling the trio plays on.",
+        "The maître d’ arrives at a speed Jack would not have believed of a man in a dinner jacket, carrying a red fire extinguisher. He looks at the table. There is nothing on it burning. He doesn’t use the extinguisher. He stands at the end of the table holding it upright in front of him in both hands, like a christening candle.",
+        "He thinks, very clearly, that he has set the girl on fire, which isn’t true and which he will never in his life be able to explain to Nonna. He looks across at Lena. She is looking at him over the wet ruin of it all: the drowned roses in their blackened cellophane, her napkin, the puddle, the bananas going on quietly in their pan as if nothing had happened. There is soot on one of her knuckles. Her hair has come down on the other side now too.",
+        "Her mouth goes first. It goes at the corner and doesn’t come back, and then her shoulders go, and then a sound comes out of Lena Broussard that he has never in seven months heard her make in a public place, a kind of honk, and that sets him off, and then the two of them are gone. They laugh too loud for the room, helpless, past any help at all. She puts her forehead down on the wet tablecloth. He puts his hand over his eyes. Every time it starts to let go of them one of them looks up and sees the extinguisher, and it starts all over again, worse. He tries to say something about the extinguisher and gets as far as *he brought* — and that’s the end of him. She is trying to say something too, into the tablecloth, something with *Brennan’s* in it, and can’t get it out.",
+        "And the room starts to laugh with them. It begins at the window, with the woman in pearls, who covers her mouth and then gives up; then the man across from her; then the table past theirs, and the next, table by table from the window in, until the long room is laughing and only half of it knows why, and the girl at the coat check has to turn round to the coats.",
+        "The waiter has not left his cart. When it is possible to hear anything again he lifts the little bottle of rum in one hand and the box of matches in the other, and turns to Lena.",
+        "“Again?”",
+        "Lena wipes her eyes with the back of her wrist.",
+        "“Again,” she says.",
+        "Jack takes his hand off his eyes. She is right there across the table with nothing in the way, and he can talk now."
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“I’ve been terrified of you all night.”",
+          "cue": "Lena will remember that.",
+          "set": {
+            "s2e20_fire": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "key": "When the dessert caught fire and you’d both stopped laughing, you told Lena you’d been terrified of her all night.",
+          "response": [
+            "“I’ve been terrified of you all night.”",
+            "“Oh, thank *God*. Me too.” She says it into the tablecloth, and then lifts her head. There’s a damp print of the cloth on her forehead and soot on her knuckle, and she is looking straight at him, and she is entirely herself.",
+            "She reaches across the wreck and takes the third fork out of his hand, where it has been all along without his knowing, and sets it down on the cloth, and keeps the hand."
+          ],
+          "goto": "s14b"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“Are you all right?”",
+          "cue": "Lena will remember that.",
+          "set": {
+            "s2e20_fire": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "When the dessert caught fire and you’d both stopped laughing, you asked Lena if she was all right.",
+          "response": [
+            "“Are you all right?”",
+            "“I have never been better in my life.” She sits up, wet in the face, and points at him across the table.",
+            {
+              "if": "s2e20_jacket==\"theo\"",
+              "text": "“Look at your *back*.” He reaches round and finds his own shirt through Theo’s navy, from the collar most of the way down."
+            },
+            {
+              "if": "s2e20_jacket==\"thrift\"",
+              "text": "“Look at *Walter*.” Walter lies face up in the puddle with a rose petal on him. Jack picks him up by one corner and shakes him off, and puts him back in the breast pocket, damp, where he belongs."
+            },
+            {
+              "if": "s2e20_jacket!=\"theo\" && s2e20_jacket!=\"thrift\"",
+              "text": "“Look at your *sleeve*.” He holds it up: Rudy’s wedding brown, Gloria’s hem, a scorch along the cuff the size of a thumbprint, and coming off the whole arm the smell of the Wharf Rat at closing."
+            },
+            "She picks up her napkin to wipe her eyes, the wet one, the one that put out the fire, and remembers what it is halfway to her face, and starts laughing all over again."
+          ],
+          "goto": "s14b"
+        },
+        {
+          "tag": "Wit",
+          "text": "“I asked them to make it memorable.”",
+          "cue": "Lena will remember that.",
+          "set": {
+            "s2e20_fire": "wit",
+            "trait.wit": "+1"
+          },
+          "key": "When the dessert caught fire and you’d both stopped laughing, you told Lena you’d asked them to make it memorable.",
+          "response": [
+            "“I asked them to make it memorable.”",
+            "“Costigan, you *menace*.” She points a dripping finger at him across the table, and she is laughing again, not as hard, and her voice is her own voice, all the way back.",
+            {
+              "if": "s2e20_occasion==\"candor\"",
+              "text": "The busboy from the service door appears at Jack’s elbow, sets down two fresh napkins folded into swans, one at each place, and goes away again without a word.",
+              "else": "A waiter Jack hasn’t seen before appears at his elbow, sets down two fresh napkins folded into swans, one at each place, and goes away again without a word."
+            }
+          ],
+          "goto": "s14b"
+        }
+      ]
+    }
+  }
+}
