@@ -2349,3 +2349,11 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
     seizes on the phrasing: she's the only one who CAN'T make a move, and "I can work with that."
   - **Skye's dressing strategy, first session: obvious and funny.** Something outrageous for a coffee shop; they both
     know exactly what she's doing; she says so, and argues brilliantly anyway. Never touches him.
+- **CORRECTION (player): when Skye learns Lena's condition (supersedes "Skye seizes on the phrasing" in S2E21).**
+  Lena tells JACK the condition for the ongoing Catechism meetings/coffees. **Jack does NOT tell Skye the condition
+  until much later, after several meetings** (S2E22 at the earliest; the room places it). The reveal scene: a charged
+  moment, right before a kiss; Jack quietly: *"Don't. If you do that, I have to stop meeting you for this. I
+  promised."* / Skye: *"You promised?"* / **He quotes Lena's words to him exactly.** / Skye: *"So I'm the one not
+  allowed to make a move?"* / Jack: *"You know that's not what she meant."* / **Skye, with the ghost of a grin and a
+  very familiar expression on her face:** *"I can work with that."* (echo of S1E20). Until then Skye doesn't know the
+  condition exists; nothing on the page has her react to it.
