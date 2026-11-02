@@ -1,0 +1,546 @@
+{
+  "scenes": {
+    "s01": {
+      "slug": "MONDAY · 6:50 AM · DELGADO HALL, THE EAST STAIRWELL — THREE DAYS",
+      "set": {
+        "s2e21_on": true
+      },
+      "body": [
+        "The window over the landing between two and three is going from black to plum, and at the bottom edge, where the roof of the next building cuts it off, to a thin cold pink. Day twenty. Jack comes down the two flights from four with two Commons coffees in brown paper sleeves, one in each hand, and somewhere under the building a dryer that somebody started at midnight turns over, thumps, and settles back into its cycle.",
+        "She’s on her step in sweatpants and the Saints sweatshirt, knees up, a stack of index cards on them with a gumband round the middle. Hale’s three pages lie face down on the concrete beside her, the backward-leaning hand showing through the paper. Her hair is in a knot with a pencil through it. She has hardly slept since Saturday, and it shows under her eyes in two violet smudges, and the rest of her face hasn’t been told.",
+        {
+          "if": "s2e20_floor==\"sincerity\"",
+          "text": "The top card says *2 MIN*. His note, her capitals, circled twice."
+        },
+        {
+          "if": "s2e20_floor==\"wit\"",
+          "text": "The top card says *DON’T BE CAST*, in her capitals."
+        },
+        {
+          "if": "s2e20_floor==\"candor\"",
+          "text": "The top card says *SAY IT TO HIS FACE*, in her capitals."
+        },
+        {
+          "if": "s2e20_floor==\"restraint\"",
+          "text": "The top card says *owes* — and after it a long dash in pencil, the silence she means to leave."
+        },
+        {
+          "if": "s2e20_floor!=\"sincerity\" && s2e20_floor!=\"wit\" && s2e20_floor!=\"candor\" && s2e20_floor!=\"restraint\"",
+          "text": "The cards are face down under the gumband, and she has one thumb on them."
+        },
+        "He holds a cup down to her. She takes it with her eyes still on the cards. “Thank you,” she tells them, and drinks, and makes the face Commons coffee has earned, and drinks again.",
+        "“You slept?”",
+        "“Some. I kept waking up and saying the first sentence to the ceiling. Laney threw a pillow at me at four and said if I said *owe* one more time she was going to owe me a black eye.” She drinks. She sounds happier about all of it than anybody who has slept four hours has a right to. “Three days.”",
+        "“Give me your watch.”",
+        "He unbuckles the Timex and hands it down. It goes on her wrist two holes too loose and slides to the knob of the bone, and she frowns at the face of it, and sets the cup on the step, and gets up and goes down to the landing to stand in front of the fire door to two. The wired glass is still dark enough to give her back to herself.",
+        "“Professor Hale is going to tell you that you owe each other everything,” she says. “He’ll be right. I want to ask him one question about the word.”",
+        "After that he stops hearing words and starts watching. He watches her right hand open on *debt* like she’s setting a dish on a table. He watches her chin come up toward the back row of a hall that isn’t here yet. He watches her not look at the cards on the step behind her even once, though she knows to the line what is on every one of them. He has heard her argue since August, on porches and in pews and down the length of an oak table, and this is something else: this is a woman who has stopped arguing and is telling you how it is.",
+        "“I only want to know who it’s owed to,” she says, and looks at the watch. “One fifty-two.”",
+        "“That’s under.”",
+        "“Again.”",
+        "She goes back to the top. This time, before the first word, she plants her feet a little apart on the concrete, the way a man plants them at a press on the line, and the first sentence goes out of her and into the door like a thing that has already happened.",
+        "“One forty-nine.” Over the landing the plum has gone out of the window and left the pink, and the pink is climbing. She looks at the watch on her wrist a second time, to make sure of it, and her whole face goes up at the corners and comes back down to business.",
+        "“You took three seconds off the debt,” he says.",
+        "“I took three seconds off *Hale*. The debt’s the same size it ever was.” She comes back up the half flight unbuckling his watch, scoops her coffee up off the step on the way, and stops a step below him with the watch held out on her other palm.",
+        "“Saturday. Where?”",
+        "“Mine.”",
+        "“You keep saying that like it’s a parish.”"
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“It’s the closest thing I’ve got to one out here.”",
+          "set": {
+            "s2e21_where": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "She looks at him over the lid of her cup, longer than the line deserves. Then she comes up the one step between them, so close the two lids knock, and kisses him — quick, coffee and toothpaste — and goes back down to her own step and sits with the cards, as if she has put a period at the end of something.",
+            "He goes up the flight with his coffee in one hand and the watch, still warm, in the other, and at the top he couldn’t have told anybody how many stairs there were."
+          ],
+          "goto": "s02"
+        },
+        {
+          "tag": "Wit",
+          "text": "“It has a softball team and a fish fry. You’ll see.”",
+          "set": {
+            "s2e21_where": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“Fish fries are *Fridays*, Costigan. If there’s a fish fry on a Saturday in Lent, I am reporting it to somebody with a miter.”",
+            "She kisses him to shut him up, which works, up on her toes on the step with the cup held off to one side. She takes her cards back down to the fire door and is already moving her lips at the wired glass, the first sentence, before he has the watch buckled."
+          ],
+          "goto": "s02"
+        },
+        {
+          "tag": "Candor",
+          "text": "“You’ll laugh when you see it. I want you to.”",
+          "set": {
+            "s2e21_where": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "That lands somewhere he didn’t aim it. She doesn’t laugh now. She hooks a finger in the neck of his T-shirt and pulls him down the one step and kisses him, and lets go.",
+            "“Go away. I’m working, Youngstown.”",
+            "From the flight above he hears her start over from the top."
+          ],
+          "goto": "s02"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Don’t answer. Hand her the second coffee too.*",
+          "set": {
+            "s2e21_where": "restraint",
+            "trait.control": "+1"
+          },
+          "response": [
+            "She takes it. Two coffees, one in each fist, and no hand left over for anything.",
+            "She kisses him anyway, quick, leaning out over both lids so as not to slop either one, and sits down on her step laughing at herself, looking up and down it for somewhere to put one of them."
+          ],
+          "goto": "s02"
+        }
+      ]
+    },
+    "s02": {
+      "slug": "MONDAY · 1:05 PM · HOLLIS HALL, 302 — THE LAST MONDAY",
+      "body": [
+        "The radiator under 302’s middle window is winning again, and the blinds are half down against a white sky that hasn’t decided about rain. Jack at the door end under the clock; Lena at the window end, a pencil going end over end in her fingers like a baton between movements. Caleb beside Jack in a clean shirt, knees already going. Yusuf beside Caleb. Evan Marsh in the doorway with the roster on its clipboard. At Hale’s elbow on the oak, a stack of new paperbacks with the price stickers still on, and on top of them *The Moviegoer*, closed, with about forty slips of paper sticking out of it.",
+        "Hale sits and looks round the table and lays down the law. “Anyone who says the word *Thursday* at this table will be made to read it aloud from the programme in a Welsh accent.”",
+        "Five minutes in, Caleb, making a point about Aunt Emily, says, “Which on *Thurs* —” and stops, and turns the color of a brake light.",
+        "“Does it count if I spell it?” Yusuf says.",
+        "“It counts double. Spelling is how the Welsh got into this.” Hale opens *The Moviegoer* at the last of the slips. “So. A farewell to Binx Bolling. Ash Wednesday. He sits in his car outside the church on Elysian Fields with Kate beside him and watches a man come down the steps with the ashes on his forehead, and he cannot say — Percy will not let him say — whether the man has come for God, or because it’s good for business to be seen there, or both at once, by some trick of grace. Percy, being a Catholic, refuses to tell us. Percy, being a novelist, is right not to. Discuss.”",
+        "They discuss. A sophomore with a nose ring says Binx is a tourist in his own life; another says he’s depressed and the book thinks that’s deep. “Everyone in New Orleans is depressed in August,” Hale says. “Percy merely wrote it down.” From the window end, without lifting her pencil: “We’re not depressed, Professor. We’re humid.” The sophomores laugh, and Hale inclines his head toward the window, which is as much ground as he gives anybody before a fight. Caleb, recovered, says with all his Central Valley chest that the search is the point — that Binx says somewhere that not to be onto something is to be in despair, and the man on the steps is onto something whether Binx can see it or not — and Hale lets him have three sentences, which is two more than usual. Lena, later, says one thing about the man on the steps: that Binx is the only person in that scene who thinks it matters why the man came, and that wondering about it might be the nearest Binx has got to a prayer. Then she goes back to her pencil.",
+        "Across the oak her eyes keep starting for the clock. It is over his head, and every time her eyes come up the table they have to come past him to get to it, and they don’t get to it; they stop on him and go back down to the pencil. She’s writing in the margin of her Percy in very small capitals. From the door end he can’t read a word of it, and he would bet the tip jar that not one word of it is about Binx.",
+        "Hale doesn’t look at her for long. He doesn’t look at the door end for long either. He looks, mostly, at the book.",
+        "“Thirty years,” he says, “Binx doesn’t turn up to his own life. He goes to the pictures. He sells mutual funds. Percy keeps him on the page regardless.” He turns a slip over with one finger. “A man may miss a Thursday and still be in the story.”",
+        "The sophomores take it as Percy. At the window end Lena’s pencil stops for the length of the sentence and then goes on. Jack, under the clock, doesn’t take it as Percy at all.",
+        "Hale lays a hand on the stack of paperbacks. “After the event this table does not name: Waugh. *Brideshead*. Catholic, English and drunk. Two out of three, and I leave you to guess which.” The table laughs. He waits it out. “Mr. Costigan. You’ve been quiet. Is Binx saved, or merely self-aware?”"
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“The man on the steps went up for ashes, and nobody can say why. Probably not him either. That’s most of us, sir.”",
+          "set": {
+            "s2e21_binx": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "Hale considers him over his glasses. “Most of *you*, Mr. Costigan.”",
+            "At the window end Lena writes something down, and underlines it."
+          ],
+          "goto": "s02a"
+        },
+        {
+          "tag": "Wit",
+          "text": "“He’s saved. He just hasn’t been told yet. It’s a very Catholic position.”",
+          "set": {
+            "s2e21_binx": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "The table laughs. “The Church’s most comfortable doctrine,” Hale says. “Salvation by post.”",
+            "Caleb laughs too loud and too long, hears himself, and stops."
+          ],
+          "goto": "s02a"
+        },
+        {
+          "tag": "Candor",
+          "text": "“Self-aware. Percy wants you to think it’s the same thing. It isn’t.”",
+          "set": {
+            "s2e21_binx": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "“Good,” Hale says — just the word — and moves on to the nose ring, and it is the most he has given Jack across that table since February.",
+            "Over Jack’s head the clock lurches to 2:14."
+          ],
+          "goto": "s02a"
+        }
+      ]
+    },
+    "s02a": {
+      "slug": "MONDAY · 2:20 PM · HOLLIS 302 — OHIO",
+      "set": {
+        "rel.hale.warmth": "+1"
+      },
+      "body": [
+        "The chairs go back. The sophomores get into their coats, and somebody knocks the stack of *Brideshead*s over and stands it up again, and Hale, writing in the margin of *The Moviegoer* with his fountain pen, says, “Mr. Costigan. A word.”",
+        "Lena, at the door with her bag on her shoulder, looks back at Jack. In a moment she’s down the hall toward the stairs, and Caleb is gone after her with his question about Aunt Emily, and the room is two men, a radiator, and a lot of oak.",
+        "Jack stays standing. Hale doesn’t ask him to sit.",
+        "Hale finishes his sentence in the margin first. Whatever it is takes him four lines in the tall backward hand, and he reads it over, and doesn’t seem to think much of it.",
+        "“Will you be at Sandoval on Thursday?”",
+        "He says the word himself, at his own table, and nobody fines him.",
+        "“Yes, sir.”",
+        "“Sit where she can see you.” The pen goes on moving. Up at the tops, Hale’s ears have gone faintly red. “Not where I can.”",
+        "Jack doesn’t say anything to that. There isn’t anything a man could say to it that Hale would forgive him for.",
+        "“The Dean,” he says to the page, briskly, “has asked me to wear a microphone on the night. A little clip on the lapel, with a cord down one’s back like a tail. I have told her I have never in my career needed help to be heard, and that if the back row can’t hear me they may come down to the front like everyone else.” He turns the page. “Miss Broussard will not need one either. I have been on the receiving end of that voice since September.”",
+        "Jack stands there with his bag on his shoulder. Out the middle window the quad is going white under the sky that hasn’t made up its mind, and a kid in a wetsuit pulled down to the waist is crossing it barefoot with a board, as if Hollis were the beach.",
+        "“You made a very passable me last Monday,” Hale says. “Don’t do it again this week. She has had quite enough of me. And read the Waugh. Everyone in it is Catholic and miserable, which I’m told is accurate.”",
+        "“She came to my office on Friday to tell me which two of my three pages were wrong. She was right about one of them.” He says it to the margin, and it costs him a tooth.",
+        "That’s all. Hale turns a page. Jack waits long enough to be sure, and then gets his bag up onto his shoulder and goes to the door, past the radiator ticking under the middle window and the *Brideshead*s with their price stickers, and has his hand on the cold brass of the knob when Hale, capping the pen, says without looking up:",
+        "“Thursday last. I’m told you were in Ohio.”"
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“I was in a parked car, owing somebody an explanation. I paid it.”",
+          "set": {
+            "s2e21_ohio": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "key": "When Hale asked about the Thursday you missed, you told him you’d been in a parked car paying a debt.",
+          "response": [
+            "Hale looks up at that, and this time he looks at Jack and not at the margin.",
+            "“And was it accepted?”",
+            "“Not yet.”",
+            "“Then you’ve learned what a debt is.” He sets the pen down. “Miss Broussard has been trying to teach it to me for a week. She is a better teacher than I was at her age, and much less pleasant to argue with. Go away, Mr. Costigan.”",
+            "Jack goes down the Hollis stairs lighter than he came up them."
+          ],
+          "goto": "s03"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“Someone needed the truth, slowly. It took the afternoon.”",
+          "set": {
+            "s2e21_ohio": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "When Hale asked about the Thursday you missed, you told him someone had needed the truth, slowly.",
+          "response": [
+            "Hale is quiet. He sets the capped pen down across *The Moviegoer*, and looks at the stack of Waugh instead of at Jack, and the radiator is the only thing talking in the room.",
+            "“There are worse reasons to miss a seminar,” he says. “I’ve used most of them. None of them took the afternoon.”",
+            "Jack lets himself out."
+          ],
+          "goto": "s03"
+        },
+        {
+          "tag": "Wit",
+          "text": "“Ohio, sir. The entire state.”",
+          "set": {
+            "s2e21_ohio": "wit",
+            "trait.wit": "+1"
+          },
+          "key": "When Hale asked about the Thursday you missed, you told him you’d been in Ohio — the entire state.",
+          "response": [
+            "“That was my line,” Hale says. “Miss Broussard delivered it better, and with less sweat.”",
+            "Jack is on the stairs grinning before he’s out of the room, and halfway down he isn’t, because a man who remembers his own line from a week ago remembers what face it got."
+          ],
+          "goto": "s03"
+        },
+        {
+          "tag": "Restraint",
+          "text": "“It won’t happen again.”",
+          "set": {
+            "s2e21_ohio": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "When Hale asked about the Thursday you missed, you told him it wouldn’t happen again.",
+          "response": [
+            "Hale finally looks up. He looks at Jack in the doorway with his bag on his shoulder, the way he looks at a premise somebody has offered him with a straight face.",
+            "“It will,” Hale says. “See that it’s worth it.”",
+            "Jack believes him, all the way down the stairs."
+          ],
+          "goto": "s03"
+        }
+      ]
+    },
+    "s03": {
+      "slug": "MONDAY · 3:30 PM · DELGADO HALL, THE LOBBY — UNDER B",
+      "set": {
+        "date2_lane": true
+      },
+      "body": [
+        "The afternoon has come round to the front of Delgado and lies across the lobby floor in long tilted panes, and the mailboxes’ little brass doors throw it up onto the ceiling in coins. On the bulletin board, between the dryer flyer and a sign-up for intramural inner-tube water polo, somebody from the Forum committee has pinned a flyer with HALE in one column and BROUSSARD in the other, and somebody else has drawn a very small halo over her name in blue ballpoint and, over his, a very small pair of horns. The Yellow Pages is back on its shelf under the board, where it was a week ago. Jack takes it down and stands with it open on his forearm and finds what he’s looking for under B, and runs his thumb down the column, and stops.",
+        "The lobby phone is a beige box on the wall by the mailboxes with a cord that has been stretched by every homesick freshman since the building went up. It’s free, and his minutes aren’t. He dials.",
+        "It rings five times. A man picks up with a television going behind him — a ball game, a crowd, somebody selling trucks — and says the name of the place like he has said it ten thousand times and would like to say it ten thousand more.",
+        "Jack tells him what he wants. Saturday night. Two people. After six, if they can. He says it better than he said *a table for two* last week; he’s had practice now, and this time the place isn’t going to want a jacket.",
+        "“Sixteen,” the old man says. “By the wall. Nobody wants it, the return sticks. Saturday after six it’s yours.”",
+        "“Sixteen’s good.” Then, because he’s got the man on the line: “Does your grill do shrimp?”",
+        "The man laughs, a big laugh with a cough at the bottom of it. “Ask Connie,” he says, and hangs up, and the ball game goes with him. Jack hangs the receiver back on its hook and stands there with the Yellow Pages open on his arm, smiling at the bulletin board like a fool, at the halo and the horns.",
+        "The sophomore at the desk is doing calculus. She has a column of derivatives going down the back of a Res Life flyer and her lips are moving, and when Jack borrows a Bic off her counter and writes *16* on the back of his hand she says “mm” and keeps going.",
+        "The 11 runs down Mission at four. He makes it to the stop with three minutes to spare and the Carhartt open, and when the bus kneels at the curb with its sigh he climbs on, and drops his fare, and the doors fold shut behind him."
+      ],
+      "next": "s04"
+    },
+    "s04": {
+      "slug": "TUESDAY · 11:00 AM · MORRO HALL 1100 — PAIR 41",
+      "set": {
+        "skye_campaign": true,
+        "rel.skye.trust": "+1"
+      },
+      "body": [
+        "There’s been rain since before light, and more coming. Morro 1100’s long windows are beaded from the sills halfway up, and what comes through them is a wet green-white, the light of a room at the bottom of a pool. Jack climbs the tiers at five to eleven shaking the drizzle off the Carhartt and finds Skye already there, back row under the exit sign, her bag on the floor on her own side.",
+        "“Hi,” she says, before he has sat down.",
+        "Jeans, the navy sweater, her hair back in a tortoiseshell clip with the ends coming out of it, no makeup he can find. She smells of the rain and of the grapefruit stuff she uses in her hair, and he knows that, and would rather he didn’t know it quite so well.",
+        "Down at the board Dr. Fenner has drawn the sun, the earth and the moon in a straight line, three circles on a string.",
+        "“Spring tide,” he says, and taps the string. “Who can tell me why it’s called spring?”",
+        "A girl in the second row says because it happens in the spring.",
+        "“It does not. It happens twice a month, every month, in January, in a blizzard.” He beams. “Spring has nothing to do with the season. It’s the water *springing* up. Sun and moon pulling the same way — new moon, full moon — highest highs, lowest lows. New moon’s next week. Go look at the harbor pilings.” He taps the quarter moons. “Neap. That’s when they’re pulling against each other and nobody gets what they want.” The joke lands on nobody at all, and he is happy anyway.",
+        "When Fenner calls the conferences, the desks bang down all along the tiers, and she already has the project out: a sheet of graph paper with the Point traced off the chart, the depth lines curving round under the headland in pencil, and over them, in four colors of felt-tip, the wave rays coming in straight from the open sea — blue, green, orange, red — and bending as the bottom comes up under them, crowding onto the reef off the Point like people at a door and thinning out across the cove beyond.",
+        "“The bottom slows them,” she says, and runs the cap of her pen along a blue line. The cap is chewed flat. “Whatever part of the wave feels the shallow water first slows down first, and the rest of it swings round to catch up. So they wrap. Everything piles onto the Point. That’s why it breaks there and nowhere else in the bay.” She turns the sheet to face him. “I did the swell angles. You do the math. You’re the one who likes math.”",
+        "He does the math. A wave in shallow water goes at the square root of gravity times the depth, which means the part of a swell crossing ten feet of reef is doing half the speed of the same swell over forty, and the slow end drags and the fast end swings round on it like a gate on a post. He writes it out under her colors in pencil. She checks it upside down, faster than he did it, and finds one thing, and is right.",
+        "Fenner comes up the side stairs with his clipboard, ticking pairs, and stops at the top and bends over the graph paper and its four colors with his reading glasses pushed up on his forehead.",
+        "“Both halves,” he says. “Good.” And goes back down, pleased with the world.",
+        "“That’s going on my headstone,” Skye says, watching him go. “*Both halves. Good.* Under the dates. People will come from miles.” It gets a laugh out of him. She caps the felt-tip. “You laughed. That’s one.”",
+        "At a quarter past twelve the room empties down the tiers around them, umbrellas and zippers and somebody arguing about a lab, and she reaches into her bag and sets a book square on his open notebook.",
+        "It’s the paperback from her dash: *Catechism of the Catholic Church*, thick as a phone book for a small town, a Borders sale sticker on the cover with the price struck through, and the receipt that was sticking out of it on Thursday moved up to page one.",
+        "The only catechism Jack owns is the Baltimore, No. 2, in his desk drawer under the tip envelope: *Who made us? God made us*, fits in a shirt pocket, his own name in the front in a second-grader’s capitals. This one would hold a door open in a high wind.",
+        "“It was on sale,” she says. “It’s the only reason I could afford the highlighters.”",
+        "He looks at it, and at her.",
+        "“You said what you’re for,” Skye says. “I want to read the manual.”",
+        "“Don’t do the face.”",
+        "“What face?”",
+        "“The one where you’re about to be fair to me. Not yet.” She taps the cover with one finger.",
+        "“From the beginning. In order. One section at a time.”",
+        "He gets as far as opening his mouth.",
+        "“I read the overture already. The prologue. On Sol’s porch, Sunday, with a blanket. It’s mostly about why the book exists, which every book should have to explain.” She ticks something off on her fingers. “I’m doing it because you said a thing to me I didn’t understand, and I don’t like that, and there’s a book. Either you talk me into it or I talk you out of it. I’m not picky which.”",
+        "“Skye —”",
+        "“You’re going to say a priest would be better at this. A priest would be better at the answers. I don’t want the answers from somebody who’s never had to lose anything over them.” She doesn’t wait to see if that lands.",
+        "“Wednesdays. Four. Low Tide — the surf shop with the menu on a board. We were always going to study for this anyway.” She taps the graph paper with the chewed cap. “Daylight. In public.”",
+        {
+          "if": "s2e8_noon==\"candor\"",
+          "text": "She points the chewed cap at him. “The daylight column. Your priest’s.”",
+          "else": "She spreads her hands. “Nobody can say a word about four in the afternoon.”"
+        },
+        "And, in a late-night voice off a channel in the high numbers, a man in a headset selling knives at two in the morning: “But wait. There’s more.” She lays her palm on the cover. “It’s two thousand eight hundred and sixty-five paragraphs. I counted the last one. I did the math. It’s years.”",
+        "“And?”",
+        "She takes her hand off the book and puts the cap back on her pen.",
+        "“I’ve got till May in this class,” she says, “and the rest of my life after that.”",
+        "The room has emptied out under them while she talked. Down at the bottom of the tiers Fenner is fitting his overheads back into their box one at a time, humming, and the long windows have started to run, and the book sits on Jack’s notebook between his two hands with the receipt sticking out of page one like a tongue."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“Okay. From the beginning.”",
+          "set": {
+            "s2e21_terms": "sincerity",
+            "trait.sincerity": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "cue": "Skye will remember that.",
+          "key": "When Skye asked to argue the whole Catechism with you, one section at a time, you said yes — from the beginning.",
+          "response": [
+            "“That’s two things you’ve said I didn’t have to pull out of you.”",
+            "She takes the book back off his notebook and gets her bag up onto her shoulder, and goes first, down the side stairs with the Catechism under her arm, and hits the bar of the side door with her hip without breaking stride, out into the wet noon."
+          ],
+          "goto": "s05"
+        },
+        {
+          "tag": "Candor",
+          "text": "“I’ll be telling Lena.”",
+          "set": {
+            "s2e21_terms": "candor",
+            "trait.candor": "+1"
+          },
+          "cue": "Skye will remember that.",
+          "key": "When Skye asked to argue the whole Catechism with you, you said yes, and told her you’d be telling Lena.",
+          "response": [
+            "She doesn’t blink.",
+            "“You tell people things,” she says. “It’s your worst quality.”",
+            "She picks up the book and goes, down the side stairs with it under her arm. Jack sits on in the back row under the exit sign with his notebook, which is only a notebook again, and the warm place on it where the book was."
+          ],
+          "goto": "s05"
+        },
+        {
+          "tag": "Wit",
+          "text": "“You’ll quit at the Trinity.”",
+          "set": {
+            "s2e21_terms": "wit",
+            "trait.wit": "+1"
+          },
+          "cue": "Skye will remember that.",
+          "key": "When Skye asked to argue the whole Catechism with you, you bet her she’d quit at the Trinity.",
+          "response": [
+            "“I’ll *thrive* at the Trinity.” She takes the book back and stands. “The Father, the Son and a bird. I’ve worked with worse ensembles.”",
+            "She goes down the side stairs with it under her arm, and at the bottom Fenner, packing his overheads into their box, laughs out loud at something he didn’t hear."
+          ],
+          "goto": "s05"
+        },
+        {
+          "tag": "Restraint",
+          "text": "“Wednesday.”",
+          "set": {
+            "s2e21_terms": "restraint",
+            "trait.control": "+1"
+          },
+          "cue": "Skye will remember that.",
+          "key": "When Skye asked to argue the whole Catechism with you, you said one word — Wednesday.",
+          "response": [
+            "“Wednesday,” she says.",
+            "She takes the book and goes, down the side stairs. Her seat folds itself up behind her with a clack, and Jack caps his pen and puts it away in the spine of his notebook with a good deal more care than a Bic has ever needed."
+          ],
+          "goto": "s05"
+        }
+      ]
+    },
+    "s05": {
+      "slug": "TUESDAY · 4:30 PM · SANDOVAL HALL 1 — THE EMPTY STAGE",
+      "set": {
+        "told_lena_catechism": true,
+        "lena_condition": true,
+        "rel.lena.trust": "+1"
+      },
+      "body": [
+        {
+          "type": "sms",
+          "from": "Lena",
+          "text": "Sandoval 1, 4:30. Come see where I’ll be standing. —L.",
+          "time": "1:10 PM"
+        },
+        {
+          "type": "sms",
+          "from": "Jack",
+          "text": "ill be there. i have to tell you something first",
+          "time": "1:12 PM"
+        },
+        "Sandoval Hall 1 with nobody in it is four hundred orange flip-down seats going up into the dark, the house lights at half, and one worklight on a stand at the side of the stage that makes everything on the boards hard and white and everything off them brown. Up in the ceiling the air handler runs on, steady, the only sound in the building. It’s the room where Hale taught PHIL 1 to both of them in the fall. On the stage, two lecterns with a bare table between them; Thursday’s pitcher isn’t out yet.",
+        "Lena is on the stage in her socks. Her flats are side by side on the lip of it, toes out, and she is walking the boards slowly, heel to toe, with her head on one side, listening. Her cards and Hale’s three pages are on her lectern. Coiled on Hale’s, stage right, is the little clip-on microphone Hale won’t wear, its black cord wound in a neat figure eight. She reaches the front of his lectern and a board answers her, and she stops on it and rocks, and it says it again.",
+        "He stands at the top of the aisle with the door easing shut behind him and lets her find the next one. She hasn’t seen him yet. She is mouthing something as she walks, her lips going, one hand making a small shape in the air at her side and putting it away again, and the worklight throws her shadow off the back of the stage and up the wall behind her twice her size.",
+        "She looks up and finds him in the aisle. “You came.”",
+        "“I have to tell you something first.”",
+        "It’s a long aisle. He has had since a quarter past twelve with it — through a Commons tray he pushed around and didn’t eat, and twenty minutes on the bench outside Sandoval with his hands between his knees and the bells in Ferrer doing the half hour — and all the way down the steps he can feel her up there on the boards, watching him come and not asking.",
+        "He takes the front row, dead center, and the seat lets him know about it. She stays where she is, on Hale’s board. Whatever she had ready to say about Thursday she puts away.",
+        "“Skye bought a Catechism,” he says. “The big one, the paperback. She wants to read it from page one and argue it with me as she goes. A section at a time. In public. For as long as it takes.” After all that he still hasn’t worked out how to say it, and says it anyway, in the order it happened. “She asked me this morning, after Oceanography. I said yes.” He makes himself put in the rest of it, the part that’s true and doesn’t help. “We’re partners in Fenner’s class till May. We were going to be studying together anyway, coffee after class. This is on top of that. I didn’t want you to get it from anybody else, or from a week from now.”",
+        "Lena doesn’t move. She stands under the worklight in her socks with her weight on the creaking board and doesn’t let it creak. While he talks her right hand has found the microphone on Hale’s lectern, and the cord, and has wound the cord once round two fingers.",
+        "“When?”",
+        "“Tomorrow. Every Wednesday. Four o’clock.”",
+        "“Where?”",
+        "“Low Tide.” The cord goes round her fingers a second time.",
+        "“The surf shop with the menu on a board.” She has it placed; he watches her put it on the map, the bike path, the window, the boards up the walls. “What does she want?”",
+        "“To understand it. Or to talk me out of it.”",
+        "“She can’t.”",
+        "“No.”",
+        "She doesn’t say anything for a while after that. She looks out past him at the empty house, at the seats going up into the dark where the worklight doesn’t reach, and the air handler runs, and in all that quiet he can hear her breath, slow and even, going in and coming out. Inside the cord the tips of those fingers have gone white. On her lectern her cards sit in their gumband under the worklight, where she left them. He sits in the front row and waits for whatever she’s going to ask. He knows already what he’ll say to it, and that he can’t say it until she has.",
+        {
+          "if": "s2e20_tell==\"candor\"",
+          "text": "“You told me Thursday she said it isn’t done,” she says. “I heard you.”"
+        },
+        {
+          "if": "s2e20_tell==\"sincerity\"",
+          "text": "“You told me Thursday some of it was hers,” she says. “I let you keep it. I’m still letting you.”"
+        },
+        {
+          "if": "s2e20_tell==\"restraint\"",
+          "text": "“You told me Thursday you told her the truth,” she says. “I believed you. I still do.”"
+        },
+        {
+          "if": "s2e20_tell!=\"candor\" && s2e20_tell!=\"sincerity\" && s2e20_tell!=\"restraint\"",
+          "text": "“She was always going to want more than a car,” she says."
+        },
+        "She unwinds the cord from her fingers a turn at a time, and lays it back on Hale’s lectern in its figure eight, exactly as it was, and takes her hand away. She looks down at him in the front row.",
+        "“Then here’s mine.”",
+        "Her voice is as level as the stage.",
+        "“If she ever makes a move, it stops. The coffees, the book, all of it. Promise me.”",
+        "“I promise.”",
+        "He says it straight back up to her, with nothing on either side of it. Up in the ceiling the air handler cycles off, and the quiet it leaves is bigger than the hall. She stays where she is, on the creak, and hears it."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“You’d have heard about the book before anybody. You did.”",
+          "set": {
+            "s2e21_promise": "sincerity",
+            "trait.sincerity": "+1",
+            "rel.lena.trust": "+1"
+          },
+          "cue": "Lena will remember that.",
+          "key": "On the empty stage, you told Lena about Skye’s Catechism before anyone else could, and made her the promise she asked for.",
+          "response": [
+            "“I know,” Lena says. “That’s why I can stand up here.”",
+            "She says it to him and to nobody else, and then she does it: stands up there, in her socks on Hale’s board under the worklight, with four hundred empty seats in front of her and him in the first of them, her chin up, the medal catching the worklight at her collarbone, and lets him look at her doing it."
+          ],
+          "goto": "s05a"
+        },
+        {
+          "tag": "Candor",
+          "text": "“She’s going to try to argue me out of it. Not — that. The faith.”",
+          "set": {
+            "s2e21_promise": "candor",
+            "trait.candor": "+1",
+            "soul.honesty": "+1"
+          },
+          "cue": "Lena will remember that.",
+          "key": "On the empty stage, you made Lena the promise she asked for, and told her plainly that Skye meant to argue you out of your faith.",
+          "response": [
+            "“Let her try,” Lena says.",
+            "There’s no heat in it, and no boast. She says it about God the way she’d tell you the river comes up in April — not a hope, not a dare, a thing she has watched happen all her life from the top of a levee. She stands on the creaking board and looks down at him, her empty hands at her sides."
+          ],
+          "goto": "s05a"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Say nothing more. Let the promise stand by itself.*",
+          "set": {
+            "s2e21_promise": "restraint",
+            "trait.control": "+1",
+            "soul.restraint": "+1"
+          },
+          "cue": "Lena will remember that.",
+          "key": "On the empty stage, you made Lena the promise she asked for, and let it stand without another word.",
+          "response": [
+            "He leaves it where it is, the two words, in the big room.",
+            "She looks at him from the stage a good while, under the worklight, with her hands at her sides and her weight on the board that creaks, and it doesn’t. Then she nods, once."
+          ],
+          "goto": "s05a"
+        },
+        {
+          "tag": "Wit",
+          "text": "“Do your first two minutes for me. I’ll be the room.”",
+          "set": {
+            "s2e21_promise": "wit",
+            "trait.wit": "+1",
+            "rel.lena.warmth": "+1"
+          },
+          "cue": "Lena will remember that.",
+          "key": "On the empty stage, you made Lena the promise she asked for, and then asked her to give you her first two minutes — and she did.",
+          "response": [
+            "She looks at him, and at the empty house behind him, and crosses to her own lectern in her socks, and doesn’t touch the cards.",
+            "She starts with the sentence he heard at the fire door at dawn, and it isn’t the same sentence anymore. After that he doesn’t hear it as words. He hears the room she’s talking to — the one that isn’t there yet, all of Thursday — going quiet for her a row at a time, and he is the house, four hundred of him in one seat.",
+            "When she finishes she stands with one hand on the lectern and looks down at him over it, waiting to hear what the room thought."
+          ],
+          "goto": "s05a"
+        }
+      ]
+    },
+    "s05a": {
+      "slug": "TUESDAY · 4:55 PM · SANDOVAL HALL 1 — THIRD ROW, AISLE",
+      "set": {
+        "rel.lena.warmth": "+1"
+      },
+      "body": [
+        "She comes down the stage steps at the side in her socks, one hand on the rail, and sits in the seat next to his. The seat says the same thing his did. For a little they sit there an armrest apart, the worklight up on the stage throwing their two shadows out long across the carpet in front of them, and then she leans, and her shoulder settles against his.",
+        {
+          "if": "s2e21_promise==\"wit\"",
+          "text": "“Better?” she says."
+        },
+        {
+          "if": "s2e21_promise==\"wit\"",
+          "text": "“Better.”"
+        },
+        {
+          "if": "s2e21_promise==\"wit\"",
+          "text": "She doesn’t run it again. She sits with her shoulder against his and looks at the stage the way she’d look at a kitchen she means to cook Christmas in."
+        },
+        {
+          "if": "s2e21_promise!=\"wit\"",
+          "text": "She doesn’t stand up for it. She says the first sentence from where she is, sitting down, without the cards, low, to the dark at the top of the house — and it’s better than at the fire door this morning: slower, with the weight on *one question*, as if there might really be only the one and she’s sorry for him about it."
+        },
+        "“Hale walks,” she says. “He puts his hands behind his back and goes up and down like he’s reviewing troops. I’m not going to walk. I’m going to stand on his board and let it creak every time I lean on him.” She looks at the boards. “I’ll have to lean on him a fair amount.”",
+        "“You will.”",
+        "“Mama made me learn every stage in my socks. The parish hall at Christmas, the gym for the spelling bee. She says you have to know where the floor is going to talk back before you let anybody watch you stand on it.” She wiggles her toes in the socks, which are navy and have a hole coming at one heel. “The building manager gave me an hour and a long talk about not touching the worklight.”",
+        "“Did you touch the worklight?”",
+        "“I moved it four feet. It was lighting the wrong lectern.”",
+        "“And don’t clap when he’s funny,” she says. “He’s going to be very funny. He’s going to be funny from his first sentence to his last, and four hundred people are going to love him for it.”",
+        "“I’ll clap when you’re funny.”",
+        "“You’ll be sitting on your hands, then. I don’t plan on being funny.” She tips her head back against the seat and looks up at the dark where the ceiling must be.",
+        "“Thursday. Third row. Aisle.”",
+        "“Why the third row?”",
+        "“Because that’s where the good one sits.”",
+        "She leans forward out of the seat and gets her flats off the lip of the stage and stands, and he gets his knees out of her way. She has the rest of an hour to give back to the building manager. She goes up the aisle in her socks between the orange seats with her shoes in one hand, not hurrying, past the third row, past all of them, toward the doors at the top, where the light from the lobby is."
+      ],
+      "next": "s06"
+    }
+  }
+}

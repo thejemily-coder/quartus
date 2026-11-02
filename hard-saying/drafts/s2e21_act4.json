@@ -1,0 +1,261 @@
+{
+  "scenes": {
+    "s12h": {
+      "slug": "THURSDAY · 9:05 PM · SANDOVAL HALL, THE LOADING DOCK — YOU ARMED HER",
+      "set": { "hale_dock": true, "rel.hale.warmth": "+1" },
+      "body": [
+        "The side door at the end of the backstage corridor has a bar across it that says ALARM WILL SOUND, and the alarm doesn’t. It lets out onto a loading dock under one sodium lamp that turns everything the orange of a cheap pumpkin: the concrete lip, the black rubber bumpers bolted along it, two dumpsters, a stack of banquet chairs under a tarp. Past the dumpsters the Commons is shut for the night, a long low building with its EXIT signs burning green inside. The noise of four hundred people leaving comes round from the front of the hall, cut down by the brick into something like surf.",
+        "Hale is sitting on the edge of the dock with his legs over and his jacket folded beside him, tie pulled loose, cuffs turned back twice. He has a flask in his hand, a flat silver one with a dent in its shoulder. He takes one pull off it when the door bangs, and screws the cap back on, and doesn’t offer it, and doesn’t look round.",
+        { "if": "duel.anscombe.rigor>=2 && s2e20_d2==\"press\" || duel.anscombe.rigor>=2 && s2e20_d2==\"reframe\"", "text": "“Mr. Costigan.” He addresses the dumpsters. “You armed her. A wolf. I gave you Foot for a week and you handed her a *wolf*.”" },
+        { "if": "duel.anscombe.rigor>=2 && s2e20_d2!=\"press\" && s2e20_d2!=\"reframe\"", "text": "“Mr. Costigan.” He addresses the dumpsters. “You armed her. A creditor across the table — I recognized the furniture.”" },
+        { "if": "duel.anscombe.rigor<=1 && duel.anscombe.heart>=2", "text": "“Mr. Costigan.” He addresses the dumpsters. “You armed her. You sat in my chair and gave her her case.”" },
+        { "if": "duel.anscombe.rigor<=1 && duel.anscombe.heart<=1", "text": "“I armed her myself, Mr. Costigan.” He addresses the dumpsters. “On Monday last. With my own question. Remind me never to be generous again.”" },
+        "Some vowel in it has gone short and northern, the way it does with him at the far end of a long day. Jack comes and stands at the edge of the light with his hands in the Carhartt and says nothing, because there isn’t anything to say to a man on a loading dock that he hasn’t already said to himself.",
+        "“I wrote you into my opening,” Hale says. “Did you notice? *The good man in the third row.* A rhetorical convenience. A figure. Somebody to be decent without a ghost to collect from him. And she turned round and addressed the figure by his seat number, and four hundred people looked at the back of your neck, and I lost the hall to a pair of ears.” He turns the flask over in his hand. “Sit where she can see you. I said that. I’d like it noted that I said that.”",
+        "“You did.”",
+        "“The horn business. Euthyphro. I have used that on bishops. I once used it on a Jesuit in Leeds and he had to go and lie down.” A car goes by on the service road with its radio up, and the bass of it thumps along the brick and away. “She went straight through the middle. I watched her look for you first.”",
+        "Jack looks at the dumpsters too.",
+        "Hale is quiet. Out of nowhere, to the Commons, with no performance on it anywhere: “She was always going to win it.” He looks at the flask and doesn’t drink from it. “I wanted to be the one she beat.”",
+        "Out front somebody is leading the Newman kids in a song Jack half knows, and the song falls apart into laughing. Hale gets up off the edge of the dock in two stages, a hand on the concrete, his knees reporting it, and shakes his jacket out and hangs it over his arm.",
+        "“Don’t tell her I said so.” He puts the flask away in the jacket. “She’ll know.”",
+        "“Yes, sir.”",
+        "Hale looks at him for that, the *sir*, with an eyebrow, and lets him have it. He goes to the side door and puts a hand on the bar and stops there.",
+        "“Monday, Waugh,” he says. “You may tell the table they are permitted to say *Thursday* again. I shan’t.” And he goes back into the building he lost in, holding the door behind him so it won’t bang, like a man coming in late to a house where somebody is asleep."
+      ],
+      "next": "s13"
+    },
+    "s12c": {
+      "slug": "THURSDAY · 9:05 PM · SANDOVAL HALL, THE FRONT STEPS — BOTH CARDS",
+      "set": { "caleb_steps": true },
+      "body": [
+        "The front of Sandoval is all glass, and the lobby behind it is still lit and still full: people in coats who don’t want to go home yet, arguing in fours under the fire marshal’s sign, a philosophy TA with a box of leftover colored cards on his hip. The steps go down wide and shallow to the quad. Out at the bottom the Newman kids have made a knot under the lamp and are singing something with hand motions, and a sophomore with the *Tide* lanyard is trying to get a quote out of anybody at all.",
+        "Caleb isn’t in any of it. He’s at the far end of the steps, down against the planter where the light gives out, with Hale’s book beside him face down on the concrete. The clip-on tie is in his fist. In his other hand he has two cards, one white and one red, held together like a hand at euchre he doesn’t want to play.",
+        "Jack goes and sits a step above him. Not close. He puts one hand flat on the concrete beside him and leaves it there.",
+        "“And it came to pass,” Caleb says to the quad, fast, the Visalia right up front in it, “that the multitude was divided, and lo, they did go against the professor by a hundred and three, and the professor said *Deservedly*, and it was so.” He holds the cards up without turning round. “I didn’t vote. Either time. I had this one in this hand and that one in that hand and I sat there through the entire count like a — dude, like a guy holding two cards. Front row. He could see me.”",
+        "“I saw.”",
+        "“Yeah. Everybody saw.” He opens his fist and looks at the tie in it, the little metal clip bent where he’s been working it. “She didn’t make him the bad guy.”",
+        "Jack waits.",
+        "“The treasurer. Every time I ever told that, he’s the bad guy. That’s the point of him. That’s his only job in the story.” Caleb bends the clip back the other way. “And she just goes, *I don’t know what happened to that man.* Like he was a man. Like he had a mom.” He laughs through his nose, with nothing in it. “My dad would have prayed for him. That’s worse.”",
+        { "if": "e14_vile==\"caleb\"", "text": "“Like I told you on the stairs.” He says it to the planter. “He never answered either. He just smiled.” It sounds exactly the same as it did on the stairs over the cove, and Jack doesn’t try to fix it any better now than he did then. He keeps his hand on the step.", "else": "He’s quiet a moment. Out on the quad the Newman kids get to a part of the song where everybody points at the sky. “I used to ask him,” Caleb says. “Why God didn’t do anything about it. Fifteen years old, every night at dinner, like it was my job.” He turns the red card over and back. “My dad never answered either. He just smiled.” Jack has never heard that before, and from the way it comes out he can tell it has mostly been said to ceilings. He doesn’t try to fix it. He keeps his hand on the step." },
+        "Caleb looks down at the two cards a long time. He pulls the red one off the white one, carefully, like they’ve been glued, and holds it back over his shoulder at Jack without looking.",
+        "“Give it to her,” he says. “Don’t say it’s from me.”",
+        "Jack takes it. It’s a plain red card the size of an index card, AGAINST printed across the top, a little soft at one corner from his thumb.",
+        "Caleb gets up all at once, shoves the white card in the book, the book under his arm, and goes down the steps two at a time and off across the quad, fast, the tie still in his fist, past the Newman kids without looking at them, out of the lamplight."
+      ],
+      "next": "s13"
+    },
+    "s13": {
+      "slug": "THURSDAY · 11:20 PM · DELGADO HALL, THE EAST STAIRWELL — UNFORGIVABLE",
+      "set": { "kiss_forum": true, "rel.lena.heat": "+1", "rel.lena.trust": "+1" },
+      "body": [
+        "By twenty past eleven Delgado has stopped being a building where something happened tonight and gone back to being a dorm on a Thursday. The tube light hums over her landing. Somewhere down on two a door opens on a television and shuts on it again.",
+        "She’s on her step with her flats on the step below her, side by side, toes out, shoes at a back door. The black blazer is off and laid across her knees like a lap rug. Laney’s pearls are gone — into a pocket, or back to Laney — but the medal is still outside her blouse where Laney put it at twenty to six, lying on the white. Her lipstick is long gone too. Her hair has come half out of whatever it was in. She looks like she has been carried out of a hall on people’s shoulders and set down somewhere quiet and has not yet decided whether to sleep or to run around the block.",
+        "“There you are, Youngstown.”",
+        "“They let you go.”",
+        "“Peter Haddad made a toast with a Martinelli’s. In the lobby. Somebody had a *bottle opener*.” She moves the blazer over so there’s room on her step, and he sits, and her stocking foot comes over and rests on the toe of his boot and settles there. “Do you want to know what he said? Hale? When he shook my hand?”",
+        "“Yes.”",
+        "She looks straight ahead at the wired glass on two, black, with the two of them in it.",
+        "“He said, ‘You were very kind to my third row.’ I said I meant to be. He said, ‘I know. It was unforgivable.’” She lets that go up the stairwell. “And then he let go of my hand and walked off the stage with his hands behind his back, like he’d won. I am going to be up till three working out which half of that he meant.”",
+        { "if": "s2e21_after==\"caleb\"", "text": "Jack takes the red card out of the side pocket of the Carhartt and holds it out. He doesn’t say anything about it. She looks at it, a red card with AGAINST across the top and nothing written on it, soft at one corner, and then she looks at him, and he watches her know exactly whose it is. She takes it in both hands. She holds it a long time, longer than it takes to read one word. Then she reaches into the bag beside her, gets out her missal, opens it somewhere toward the back, lays the card in flat between the pages, and closes it, and keeps her hand on the cover." },
+        { "if": "s2e21_after==\"hale\"", "text": "She turns her head and looks at him instead of the glass, close, narrow-eyed, a woman checking a page for a hidden footnote. “You went out the side.”" },
+        { "if": "s2e21_after==\"hale\"", "text": "“I did.”" },
+        { "if": "s2e21_after==\"hale\"", "text": "“He said something about me.”" },
+        { "if": "s2e21_after==\"hale\"", "text": "“He said you’d know.”" },
+        { "if": "s2e21_after==\"hale\"", "text": "“I do.” She looks back at the glass. Whatever she knows, she keeps, and the keeping makes her sit up straighter on the step and look very pleased with the wired glass." },
+        "She kisses him then. She turns on the step and takes his face in her two hands and kisses him, and it isn’t for luck this time and it isn’t quick. The blazer slides off her knees and slithers down two steps and is left there. Her mouth tastes of sparkling cider and of nothing she put on for anybody. His hand goes to the back of her neck under the fallen hair, where it’s warm, and the medal is cold where it presses into his shirt, and she makes a small sound against him that he will hear again later, upstairs, in the dark.",
+        "He wants her. It isn’t a thought; it’s the weather of him, top to bottom, and it is good, and it has an order to it he can feel like the grain of a step under his hand. Her first: the voice that took a hall apart and put it back together facing the other way, the stocking feet on cold concrete, the pulse going hard under his fingers at the back of her neck. Everything else after, and in its turn. He wants it all, and he is glad, tonight, to wait for it.",
+        "It goes on. It goes on until the tube light’s hum is the only thing in the stairwell that isn’t them, the longest she has kissed him yet. She’s the one who ends it. She draws back, not far, and lets her forehead come to rest against his, and stays there with her eyes shut and her thumbs still at his ears.",
+        "She sits back on her own step and picks up her shoes, one in each hand, and remembers she has an agenda.",
+        "“Notes, Costigan. You were in the third row.”"
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“You had them at the debt. I counted. A minute forty.”",
+          "set": { "s2e21_won": "candor", "trait.candor": "+1" },
+          "key": "On her landing after the Forum, you told Lena she’d had the room at a minute forty.",
+          "response": [
+            "“You *counted*.”",
+            "“The clock over the stage. You said your first sentence and I looked up. A minute forty and Caleb’s pen stopped.”",
+            "“Four hundred people, and you sat in the third row and *timed* me.” She points one flat at him like it’s loaded. “That is so *Ohio* I could spit.” The flat comes down and she laughs, helplessly, with the back of her head against the cinderblock and her eyes shut, laughing up at the tube light like it told her."
+          ],
+          "goto": "s14"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“You were kind to Caleb. That’s what I’ll remember.”",
+          "set": { "s2e21_won": "sincerity", "trait.sincerity": "+1" },
+          "key": "On her landing after the Forum, you told Lena that what you’d remember was how kind she’d been to Caleb.",
+          "response": [
+            "She doesn’t answer him. She sets the shoes down again, side by side, toes out, and leans over and puts her head on his shoulder, and leaves it there.",
+            "He feels her stop being the woman who won and become a girl from Dupre Street who has been on her feet since six this morning. Her hair is against his neck. Her hand takes a fold of the Carhartt’s sleeve and keeps it.",
+            "She has her eyes shut. Whatever she’s seeing in there, it isn’t the hall."
+          ],
+          "goto": "s14"
+        },
+        {
+          "tag": "Wit",
+          "text": "“With attribution.”",
+          "set": { "s2e21_won": "wit", "trait.wit": "+1" },
+          "key": "On her landing after the Forum, you reminded Lena she’d won it with attribution.",
+          "response": [
+            "“With *attribution*.” She puts one finger in the middle of his chest and pokes him with it, twice, hard, on the word. “I said I would. I said it in a seminar room in front of God and Yusuf. A Broussard doesn’t say *with attribution* and then not attribute.”",
+            "“Four hundred people don’t know who you meant.”",
+            "“Four hundred people don’t need to.” The finger doesn’t move from over his heart, pressing, holding a place in him like a place in a book."
+          ],
+          "goto": "s14"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Don’t give her one. Sit with her.*",
+          "set": { "s2e21_won": "restraint", "trait.control": "+1" },
+          "key": "On her landing after the Forum, you gave Lena no notes at all, and sat with her.",
+          "response": [
+            "He doesn’t give her any. He goes down two steps and gets the blazer and brings it back up and lays it over her knees again, and sits.",
+            "They sit. The television on two comes and goes again. After a while she starts telling him the night from the top, without being asked — Laney and the pearls, Margot’s headline, the Dean’s glasses on their chain, the board by Hale’s lectern that creaked exactly where she meant it to — and he lets her, every bit of it, like he wasn’t there.",
+            "Her voice goes on in the stairwell, low and fast and New Orleans, getting to the horns."
+          ],
+          "goto": "s14"
+        }
+      ]
+    },
+    "s14": {
+      "slug": "FRIDAY · 7:00 PM · ST. BRENDAN THE NAVIGATOR — THE FOURTH FRIDAY",
+      "set": { "stations_mar12": true, "soul.grace": "+1", "resolve.jack": "+1", "resolve.lena": 5 },
+      "body": [
+        "At ten past four he stood in the Rite Aid on Mission with a three-pack of women’s white socks, size small, in one hand and a Barq’s in the other. The cashier had a pencil behind each ear and a nametag that said ASK ME ABOUT OUR PHOTO CENTER. She rang them up and asked if that would be everything. It was.",
+        "By seven the Stations have stopped being something he goes to and become something he does on Fridays, like the dish machine on Saturdays at the Anchor. Four Fridays in, his knees know where the tile is. He knows which kneeler in the back rocks, and which acolyte walks the candles too fast, and that Gus Ferreira in the loft gives the chord a half-second early so the forty can find the note.",
+        { "if": "jack_fridays", "text": "Bread and water since breakfast, both of them, and at this hour of a Friday it has stopped being hunger and become a kind of clearness, like the storm windows came down. Lena’s face has it too, under the black lace.", "else": "He had his meatless lunch at the Commons, fish sticks gone soft in their paper boat. She has had bread and water since breakfast, and at this hour of a Friday it shows in her face only as a kind of clearness, like the storm windows came down." },
+        "She came in at five to seven and sat in his pew without looking at him, as she does now, and when Father Osei came down the aisle in the purple stole behind the cross and the two candles, she stood when he stood. Her booklet is open on her palm. He reads off his own this time, and she notices, and doesn’t say so.",
+        "They go down the south wall. Between the stations Gus gives the chord and the forty walk to the next carving singing the old verse, *Through her heart, his sorrow sharing, / all his bitter anguish bearing*, and Lena is a little ahead of the beat again, and he is a little behind it, and they meet at the end of every line.",
+        "At the eighth, on the north wall where the candle smoke has got into the wood, Father Osei reads the name off the carving: *Jesus meets the women of Jerusalem.* “We adore you, O Christ, and we praise you.” Forty people go down on one knee on the tile. “Because by your holy cross you have redeemed the world.”",
+        "In the carving the women are a tangle of hands and veils at the edge of the road, kept back by a soldier’s spear held crossways, and he has turned his head to them under the beam. Father Osei reads it short, as he reads everything on Fridays, his eyes on the page: that they came anyway, that nobody asked them to, that he stopped on the worst road in the world to speak to them, and what he said was not *thank you* but *weep for yourselves and for your children*. Then he lets the church kneel on that.",
+        "Jack kneels on it. He thinks about the women who come anyway. He doesn’t pray for anything in particular. He kneels next to one of them with her lace swung forward and her eyes shut and lets that be enough to bring.",
+        { "type": "break" },
+        "Afterward the steps of St. Brendan’s are cold and clear, the first night in a week without rain coming, and there’s no moon, and over the olive tree the stars go clear down to the hills. People come out past them buttoning coats. Lena folds the lace into a square and puts it in her pocket and comes down two steps and turns round to face him, so that she’s a little below him for once and has to look up.",
+        "“Tomorrow,” he says.",
+        "“Still?”",
+        "“Still.”",
+        "She narrows her eyes. “What do I wear?”",
+        "“Jeans. Something warm.”",
+        "“Jeans.” She says it like he has suggested a feed sack. “On a date.”",
+        "“It’s mine.”",
+        "She narrows her eyes further, and he can practically watch the sums go — jeans, warm, Saturday, the 11 runs till midnight, he said *mine* on Ocean Road and again on Monday — and come out to nothing, and her hating it, and loving it. She goes home doing arithmetic, her lips moving, and twice on Ocean Road she opens her mouth to ask him, and twice she shuts it."
+      ],
+      "next": "s15"
+    },
+    "s15": {
+      "slug": "SATURDAY · 5:40 PM · DELGADO HALL, 217 — THE CARHARTT",
+      "set": { "date2": true },
+      "body": [
+        "The late sun comes down the second-floor corridor from the window at the end and lays itself along the linoleum to his boots. He knocks on 217 three times, evenly spaced. He did not practice it.",
+        "Laney opens the door with a hairbrush in her hand and her own hair half done, the other half still in rollers, and looks at him from his boots up, and turns round to the room.",
+        "“He’s in the *Carhartt*.”",
+        "He is. It’s Danny’s, the canvas faded to paper-sack brown, and he washed it Thursday night in the Delgado basement with a cup of somebody’s Tide, and it smells of that and of the dryer and, a long way under both, of twenty-five days since a cigarette. He has his good jeans on and his boots wiped, and that’s the outfit.",
+        "Lena comes to the door. Jeans, and a green sweater with the sleeves too long, and her jean jacket over it, and flats. Her hair is down, which it almost never is in the daytime, and it changes the shape of her, softer at the edges. She looks him over too, slower, and something happens at the corners of her eyes.",
+        "“You said warm,” she says.",
+        "“You’re warm.”",
+        "Laney points the hairbrush at him. “Where are you *taking* her?”",
+        "“Mine.”",
+        "“That is not a *place*.”",
+        "“It’s an address.”",
+        "Laney looks at the ceiling for help and gets none. She waves the two of them off down the corridor with the hairbrush, rollers bouncing. “Go. Be *poor* together.” The door of 217 shuts on her laughing.",
+        { "type": "break" },
+        "The 11 comes down Mission at dusk with its inside lights already on, so the town outside goes dim and blue and the bus is a lit box full of people going somewhere on a Saturday: two girls with a shopping bag between their feet, an old man with a folding cart, a kid asleep against the window with his headphones still going. Lena takes the window. He takes the aisle. Past the Anchor, past the Wharf Rat with its letters out, the sun is going down red into the haze over the water at the bottom of every cross street, one street at a time, like somebody turning pages.",
+        "He opens the RAZR to check the time and there’s Frank, from the afternoon, still sitting on the screen where he left it.",
+        { "type": "sms", "from": "Dad", "text": "2 OT. TURNER 31. FINAL TOMORROW.", "time": "1:58 PM" },
+        "Lena reads it over his arm without being invited, her chin on his shoulder.",
+        "“Evan Turner,” she says. “Thirty-one. I read the paper, Costigan.”",
+        "He turns his head to look at her. She has already gone back to the window, chin up, watching Mission Street go by toward wherever he’s taking her, pleased with herself the length of Mission, a woman who has waited all week for somebody to underestimate her."
+      ],
+      "next": "s15a"
+    },
+    "s15a": {
+      "slug": "SATURDAY · 6:30 PM · MISSION LANES — LANE SIXTEEN",
+      "set": { "mission_lanes": true, "rel.lena.trust": "+1" },
+      "body": [
+        "Lower Mission, past the tire place and the laundromat and the Mexican bakery with its pink boxes stacked in the window, there’s a neon bowling pin on a pole over a flat-roofed building the color of a Band-Aid. The pin’s head has been burned out for years, so from the bus stop it’s a white neon bottle with nothing on top. Under it, in letters that have survived better: MISSION LANES · SINCE 1961 · OPEN BOWLING · COCKTAILS · GRILL.",
+        "Lena stops on the sidewalk and looks up at it with her hands in the pockets of the jean jacket.",
+        "“Jack Costigan,” she says.",
+        "“It’s mine.”",
+        "Inside it’s loud in the way he wanted it to be loud: sixteen lanes in a row under a ceiling with boomerangs in the tile, and the long rolling thunder of balls going down the wood, and the crash at the far end, again and again, from every direction at once, so that under the noise nobody can hear anybody but the person beside them. The approaches are blond and gleaming. Over each lane hangs a screen, and at each scoring table an overhead projector throws the score sheet up onto it, somebody’s handwriting ten feet high in grease pencil. Along the back wall the league banners go back decades, felt letters on satin, MISSION MERCHANTS 1974, KNIGHTS OF COLUMBUS COUNCIL 2217, SATURDAY NITE MIXED. The air is lane oil and fryer and the popcorn machine by the door.",
+        "Ed Tavares is behind the counter under a television with a ball game on and the sound off: seventy if he’s a day, a cardigan buttoned wrong, hands like a pair of catcher’s mitts. He looks at Jack, and at Lena, and back at Jack.",
+        "“Sixteen,” Ed says. “Told you. The return sticks — kick it.”",
+        "He doesn’t ask their sizes. He looks down over the counter at their feet, one and then the other, and turns round to the cubbies and comes back with two pairs of rented shoes, red and blue and tan with the size on the heel in white paint, and sets them on the counter. Lena’s are a seven. Lena’s are right.",
+        "She picks hers up by the heels and looks at them, and then down at her flats, and at her bare ankles where the jeans stop.",
+        "Jack puts his hand inside the Carhartt, to the pocket on the inside over his heart, and takes out a three-pack of white socks, women’s small, still in their cardboard band. He holds them out.",
+        "“Ma’s rule,” he says. “You never put a bare foot in a rented shoe.”",
+        "She takes the package. She stands at the counter of Mission Lanes with a pair of red-and-blue bowling shoes in one hand and three pairs of white socks in the other, and looks at the socks, and her mouth opens a little and doesn’t produce anything. He watches something go up and down in her throat. On the television behind Ed somebody hits a shot from the corner and a crowd stands up without a sound.",
+        "“You bought me *socks*,” Lena says.",
+        "It isn’t a complaint. It isn’t a joke either, though she tries for a second to make it one, and can’t, and gives up. She looks at him over the package with her eyes very bright, and then she turns away to the molded orange bench by lane sixteen, and sits, and works the cardboard band off the socks with fierce attention, her head down, so he can’t see her face.",
+        "Lane sixteen is down at the end by the wall, as promised, with fifteen empty. The ball return stands at the head of it like a gumball machine with a grudge. He drops into the swivel chair at the scoring table, finds the grease pencil on its string, and writes on the clean sheet under the projector’s glass, in block letters, BROUSSARD, and under it COSTIGAN. Up on the screen over the lane, ten feet wide and wobbling a little in the heat of the lamp, her name goes up in his handwriting over his.",
+        "She looks up from her shoelaces and sees it, and stops.",
+        "“My dad bowled a league for twenty years,” he says. “Local 1112, Tuesday nights at the Valley Lanes out on 422 — the league book had COSTIGAN in it the way that sheet has you, and he averaged one-eighty-something, and I learned to keep score on his sheet with a grease pencil when I was nine.” He caps the pencil. “The league folded last spring, after the layoffs. His ball’s in its bag in the basement, next to the Stroh’s fridge.”",
+        "He says it like the weather report from home. Lena doesn’t say she’s sorry. She looks up at her name on the screen. She ties her second shoe in a double knot, hard, and stands up in a pair of rented shoes and white socks.",
+        "“What do I do,” she says, “to beat you.”",
+        "She has bowled twice before: two birthday parties in Metairie when she was eight and nine, both with the bumpers up, and she remembers neither as a happy occasion. She tells him this while she walks the rack, lifting balls and putting them back. She chooses a fourteen-pound ball, marbled green, the heaviest one she can get off the rack with one hand, on the grounds that if she is going to be bad she means to be bad with conviction. She puts her fingers in the holes as if she’s taking an oath. She walks up to the foul line at a dead run and stops at it, and lets go from somewhere near her ear.",
+        "The ball goes into the left gutter about four feet out and travels the full sixty feet of it, slowly, with a sound like a long sentence that won’t be interrupted, and drops off the end without touching anything. Lena watches it the entire way with her hands on her hips.",
+        "“That lane,” she says, “is *crooked*.”",
+        "The return thinks about it, and keeps the ball. Jack gets up and kicks it at the base, where Ed said, and the green ball comes up out of the hole and rolls up the rack and knocks against the others, and Lena points at him across the approach.",
+        "“Don’t you *look* at me like that. Don’t you dare. I am warming up.”",
+        "Her second ball takes the seven pin, alone, from somewhere far out on the left, and she turns round with both arms up and the face of a woman who has just carried Orleans Parish.",
+        "His turn. He takes a twelve off the rack without having to look, because his hand still knows what a twelve weighs, and when he turns round she is already in the swivel chair at the scoring table with the grease pencil off its string, writing her seven up on the screen in a figure a foot high and underlining it. While he’s on the approach she says, pleasantly, to the ceiling, “I hear Ohio’s very flat. I hear there’s nothing to do there but this.” He leaves the ten pin standing. She writes his nine up as a six. When he points at the screen she looks at it with the innocence of a cat and says the projector must be crooked too. She is sitting in his chair in white socks she didn’t own an hour ago, with his pencil, cooking his books in plain view of Ed Tavares, and he stands at the head of lane sixteen with his empty hand and lets her have all of it."
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "*Teach her Frank’s way: walk it to the line, let go when your hand’s done.*",
+          "set": { "s2e21_lane": "sincerity", "trait.sincerity": "+1" },
+          "key": "At Mission Lanes you taught Lena to bowl the way your father taught you.",
+          "response": [
+            "“Come here,” he says. “My dad’s way.”",
+            "He takes a ball off the rack and shows her with his own arm, not hers: four steps, not a run; the ball goes back by itself if you let it, like a pendulum, not like a throw; you walk it to the line and you let go when your hand is done and not before, and you don’t look at the pins. “Look at the arrows. The pins are going to be there. The pins can’t leave.”",
+            "“That’s just philosophy, Costigan.”",
+            "“That’s Tuesday nights on 422.”",
+            "She does it. Four steps, the green ball swinging back on its own, her eyes down on the little arrows, and she lets go low, and the ball goes out straight and true down the middle of sixteen with no hurry in it at all, and takes seven pins and leaves three standing like the last people at a wake. She turns round with both fists up over her head, rented shoes planted, hair everywhere, roaring, and doesn’t lower them, not for anybody, not even when lane fourteen starts to laugh."
+          ],
+          "goto": "s15b"
+        },
+        {
+          "tag": "Candor",
+          "text": "*Bowl for real. Tell her she’s terrible.*",
+          "set": { "s2e21_lane": "candor", "trait.candor": "+1" },
+          "key": "At Mission Lanes you bowled for real and told Lena she was terrible.",
+          "response": [
+            "He bowls for real. His first ball hooks in late off the right and the pins go down in a pile like a dropped tray. He writes the X on the sheet, and it goes up on the screen, and he turns round.",
+            "“You’re *terrible*,” he tells her.",
+            "“I am *learning*, Costigan.”",
+            "She learns at the top of her lungs and with no technique whatsoever, and it costs him. By the second game she has worked out that she can’t beat him bowling, so she beats him talking: by the tenth frame she is narrating his approach as he makes it, low and urgent in the voice of a man calling a horse race at the Fair Grounds — *and Costigan comes up the stretch, the Ohio boy, the money’s all on him* — and he gutters twice in a row laughing so hard he can’t let go of the ball properly, and she puts a spare on top of it from God knows where, and when Ed’s projector adds it all up she has beaten him by one pin.",
+            "One. She stands under the screen and points up at it with both hands, and starts saying so, and he understands that she is going to be saying so until Easter at the very least."
+          ],
+          "goto": "s15b"
+        },
+        {
+          "tag": "Wit",
+          "text": "*Call it like Frank’s league — the frame-by-frame, the nicknames.*",
+          "set": { "s2e21_lane": "wit", "trait.wit": "+1" },
+          "key": "At Mission Lanes you called Lena’s frames like a league announcer and christened her the Mid-City Menace.",
+          "response": [
+            "He calls it like the old men called it on Tuesday nights on 422, from the table, frame by frame, in a voice like a radio left on in a garage. “Broussard to the line. Fourteen-pound ball, which is a choice. She favors the left gutter, folks, she has always favored the left gutter, she was raised to favor it.”",
+            "She bowls a four and turns round to glare at him, and he’s already up and gone to the counter. Ed listens to him for three seconds and hands him the PA microphone off its hook without a word, with the look of a man who has been waiting since 1961 for somebody to ask.",
+            "“Ladies and gentlemen of Mission Lanes,” says the PA, all sixteen lanes of it, over the thunder, “now bowling on sixteen, out of Dupre Street, New Orleans, Louisiana — the *Mid-City Menace*.”",
+            "Lane twelve, a birthday party of women in their sixties in matching purple shirts, puts down their beers and applauds. Lena stands at the head of lane sixteen in rented shoes and white socks, blushing to the ears, and takes the bow: one hand on her stomach, one arm out, down to the knees, a curtain call at the Saenger."
+          ],
+          "goto": "s15b"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Keep score. Let her find it.*",
+          "set": { "s2e21_lane": "restraint", "trait.control": "+1" },
+          "key": "At Mission Lanes you kept score and let Lena find her own way down the lane.",
+          "response": [
+            "He doesn’t tell her anything. He keeps score. He writes her gutters as dashes and her one pin as a one, and sits in the swivel chair with the grease pencil and watches her work it out on her own, which is the only way she has ever wanted to work anything out.",
+            "She tries running. She tries a little hop. She tries both hands and turns round and dares him to write it down. He writes it down. By the fourth frame she has slowed to a walk without noticing. By the fifth she’s stopped watching the pins and started watching the arrows, because she noticed lane fourteen doing it.",
+            "In the sixth she walks up, lets go low and late and easy, and the ball goes down the middle and takes eight. She doesn’t throw her arms up. She turns round, fast, to see whether he saw — her face wide open, checking, nothing held back from him."
+          ],
+          "goto": "s15b"
+        }
+      ]
+    }
+  }
+}

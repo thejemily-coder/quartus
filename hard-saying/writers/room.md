@@ -450,6 +450,14 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 289. **"In my life" superlatives** ("never in his life", "best of my life"; S2E20 had five "never in his life"). At most 2 per episode.
 290. **The rival borrowing the heroine's gestures** (S2E20). Add to #64: Skye's shoved sleeves, lifted pen and mouth-corner were Lena's; Skye keeps the chewed pen cap and the Kleenex ball, Lena keeps the rest.
 291. **One identical exchange pasted under every option of a choice** (S2E20: Lena's 2:36 text under all three s09c options; the s11 "wear what I like" exchange). Hoist it into shared text or the next scene.
+292. **Skye's pen, cap or highlighter as the button on a duel response** (S2E21). Two a session.
+293. **The "bit, then real problem" shape for every duel round** (S2E21). Vary the round shape; not every round opens on a joke and lands on the honest point.
+294. **The crowd number ("four hundred")** (S2E21). Once an episode (kept in the s05 establishing line).
+295. **The beat where Jack decides not to tell her something** (S2E21). Once an episode.
+296. **A question already answered on the page** (S2E21). Do not have a character ask what the narration just told the player.
+297. **Narration that answers a line before a later scene says it** (S2E21). Let the scene that owns the line deliver it.
+298. **The same kiss or exit pasted under every option** (S2E21). Extends #291; hoist into shared text or vary per option.
+299. **Anaphora runs ("not when... not when...")** (S2E21). One an episode.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

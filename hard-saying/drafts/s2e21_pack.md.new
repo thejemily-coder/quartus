@@ -1,0 +1,268 @@
+# S2E21 "LAETARE" — CONTEXT PACK (writers' room only; hidden canon inside — never surfaces on the page, in a cue, key, previously, logline, nextTime or choice text. THE JOURNAL IS RETIRED: no journal array or card anywhere.)
+
+Built INCREMENTALLY from `drafts/s2e20_pack.md` for the writers' room of *The Hard Saying*. Every later agent reads THIS instead of the 1 MB bible. Plan of record: `writers/outlines/s2e21.md` (rev. 1, 2026-11-02; the Episode Architect's §2B will win on any conflict once written). Its §5 THE CONDITION, §6 THE FIRST SESSION (the pitch, Low Tide and the gown, the duel `cat1`, the verdict, counters) and §7 THE FORUM are pasted verbatim in §4.1; §8 (date #2) is pasted verbatim in §4.1b; its §0 (dates/shape/entering state), §1 (directive map), §2 (beats), §3, §4 (previously/nextTime/end card/header), §9–§16 (characters, chunks, state, save-dependencies, knowledge, tics, period, handoffs) are the scene-level source and are NOT pasted except the short digests in §5/§6: read them in the plan. Save: `saves/after-s2e20.json` (S2E20 PLAYED; read flat).
+
+Hard rules (binding on every agent): frank, literary heat, never pornographic mechanics; everyone in any sexual content is 18+; no sex for Jack or Lena with anyone; no procedural consent beats unless a scene would otherwise read as assault; never mock the faith; no strawmen; Jack and Lena never die. **THE JOURNAL IS RETIRED (player, 2026-10-30):** write no `journal` arrays or journal cards in any scene, choice, blueprint or brief; key lines ("Story so far") remain and carry the recap as complete, spoiler-safe second-person sentences. Older excerpts below that mention journals are superseded. Do not touch anything outside `hard-saying/`; do not run git.
+
+Sections: 1 PLAYER DIRECTIVES · 2 STYLE · 3 VOICES · 4 HIDDEN CANON (🔒) · 5 ARCS AND SEASON MAP · 6 LEDGERS · 7 TIC REGISTRY · 8 PERIOD. Each excerpt is tagged `[SOURCE § heading]`. Sections 1, 2, 4 and 7 are verbatim; 3, 5, 6, 8 are tight digests (the source wins on a conflict, except where §1.0 supersedes).
+Changes vs the S2E20 pack: §1.0 rewritten for S2E21; §1.3 EXTENDED through **"After S2E20"** (newest, in full, with the CORRECTION) and PRUNED of date #1's spec (played); §2 unchanged; §3 re-cast (Skye in full — the campaign begins; Hale, Caleb in full; Ed/Connie/the Dean added; Clare, Fenner, Gloria/Rudy short); §4 = this plan's §5/§6/§7.2–7.6/§8 + bible S2E21 notes + registry #92–#93 (S2E20 specs dropped, played); §5, §6, §8 refreshed; §7 re-copied (registry grew to #291).
+
+---
+
+# 1. PLAYER DIRECTIVES
+
+## 1.0 PLAYER NOTES FOR THIS EPISODE (from the orchestrating task; binding)
+- **Player after S2E20 (brief "After S2E20", newest entry, §1.3): "Good to have Skye back."** plus the S2E21 answers and the CORRECTION, all pasted in full in §1.3.
+- **PROCESS: the notes session with the player is COMPLETE.** Every agent, including Assembly, runs its full step now; do not pause for a notes session.
+- **MAIN TIMELINE (ignore `hard-saying/fork/` entirely).**
+- **THE JOURNAL IS RETIRED:** no journal arrays anywhere; key lines ("Story so far") carry the recap.
+- The period sheet `writers/period/s2e21-mar8-14-2010.md` already exists (extend only if needed). If the bible already has a partial S2E21 revision from an interrupted run, revise it rather than duplicating.
+- **S2E21 'Laetare', Mon Mar 8 – Sun Mar 14, 2010 (Laetare Sunday, Luke 15: the prodigal son; rose vestments), per the bible season map and S2E20's handoffs.** Read the end of `writers/brief.md` from "### After S2E07" to the end IN FULL (newest entries win). Binding:
+  - **THE CATECHISM CAMPAIGN BEGINS** (Skye's design steps 6 and 8 and "S2E21 answers"): Skye buys herself a Catechism and argues it with Jack one section at a time, **STARTING FROM THE BEGINNING AND GOING IN ORDER** (Part One, Section One: the desire for God, how God can be known...), here for the whole thing, unworried how long it takes; each session is an argument **DUEL with Skye as opponent** (scored rigor/wit/heart; she wins some; distinct register from Jack–Lena duels: improv, actor's logic, sincerity under performance; real philosophy on both sides; never a strawman; Jack doesn't always win); track the campaign with cumulative counters (e.g. `skye_cat_jack` / `skye_cat_skye` and a section counter `cat_section`) so future episodes continue in order; her aim: argue into understanding, so either she's persuaded of his faith or he's dissuaded; their regular coffees and studying for the shared class continue; her FIRST SESSION outfit is obvious and funny (outrageous for a coffee shop; they both know; she says so; argues brilliantly anyway; never touches him).
+  - **JACK TELLS LENA FIRST, the same day, before anyone else can; LENA tells JACK her condition:** if Skye ever makes a move, the meet-ups stop (calmly, and isn't calm); Lena isn't thrilled but doesn't make it a thing; no Lena jokes about Skye yet.
+  - **CRITICAL CORRECTION: JACK DOES NOT TELL SKYE THE CONDITION in this episode; Skye does not know it exists;** the "I can work with that" reveal scene happens MUCH LATER, after several meetings (not in S2E21): **do NOT stage Skye reacting to the condition or saying "I can work with that" about it here.**
+  - Jack and Lena: dating, kissing frequently, heat very slow; not official until the Easter Vigil. Lent continues. **Kevin NOT in the alliance.** Player's S2E20 path: `saves/after-s2e20.json`. **Length ~22-26k words per path. No corners cut.**
+- **The plan of record is `writers/outlines/s2e21.md` (rev. 1, 2026-11-02).** Its rulings (binding on the room): five acts, Mon 6:50 a.m. → Sun ≈9:20 p.m.; **Tue Mar 9** Skye's pitch ("From the beginning. In order. One section at a time.") and, the same afternoon, Jack tells Lena on the empty stage of Sandoval Hall 1 — her condition verbatim: **"Then here's mine." / "If she ever makes a move, it stops. The coffees, the book, all of it. Promise me." / "I promise."** (Jack does NOT tell Skye; nothing in any Skye scene, key, cue, previously or nextTime alludes to a promise or condition); **Wed Mar 10** session 1 (¶27–30, "The Desire for God") at **Low Tide** (a surf-shop coffee bar; new canon), Skye in a black silk premiere gown — "Yes. It's a strategy. It isn't a subtle strategy. I'm committed to it." — duel `cat1` (3 rounds + verdict; she takes rounds 1–2 writer-set), she never touches him; counters `skye_cat_jack`, `skye_cat_skye`, `cat_section` 1, `cat_sessions`; **Thu Mar 11** the Marisol Forum (Lena wins, FOR 211/AGAINST 98/UNDECIDED 63 → 149/201/22; "Miss Broussard has the floor."; Hale: "Deservedly."); **Sat Mar 13** date #2 at Mission Lanes (socks, the Barq's "for my hands," the Fats Domino record; the lost hour; "Nobody has ever thought this hard about me for two dollars and fifty cents."); **Sun Mar 14** Laetare, rose, Luke 15; end with Skye's text and Lena's "Then do the reading." **No "love" between Jack and Lena on any path; nothing may hint at Theo's off-page call with Skye; Kevin and Clare end Tue Mar 9 (Kevin's news held from Laney); "I can work with that" appears nowhere.**
+- **E20 nextTime (all four) to pay:** "Rose, for one Sunday." (s16) · "Miss Broussard has the floor." (s11a) · "Something small, and his." (s15–s15c) · "One section at a time." (s04).
+- **Hard rules (every agent):** frank, literary heat (never pornographic mechanics); everyone 18+; no sex for Jack or Lena with anyone; no procedural consent beats unless a scene would otherwise read as assault; never mock the faith; no strawmen; Jack and Lena never die.
+
+## 1.1 CONTENT STANDARDS AND SHOW FORMAT
+
+[brief.md L170–183 "Content standards"]
+## Content standards
+- **Explicitness:** the player asked for the narrative to be as graphic, explicit and unflinching as permitted, always in
+  service of character, story and emotion. In practice: sex, desire, bodies, drug use, violence, addiction, overdose,
+  death and grief are written frankly, with real sensory and physical detail, at the level of literary fiction or
+  HBO drama. Sex scenes can be on the page and charged, but they are written as literature (emotion, sensation, the
+  specific people), not pornographic mechanics. The ensemble's sex lives are shown frankly (Euphoria-honest): the fun,
+  the morning after, the loneliness. Neither preachy nor glamorized.
+- **Everyone in any sexual content is an adult (18+).** All freshmen are 18 or older; say so in the bible.
+- **Sexual assault** may be a storyline, handled seriously and centered on the person's experience and aftermath.
+  Never titillating, never a cheap twist.
+- Addiction and overdose (someone may not make it), death and grief, crime and violence (a mystery thread) are all allowed.
+- **Hard lines:** the narrative never mocks the faith (critics can be sharp and right; the story never sneers). No cheap
+  villains or secular strawmen; everyone has their reasons. **Jack and Lena never die.**
+
+
+
+## 1.2 STANDING AND CHARACTER-RELEVANT BRIEF ENTRIES (verbatim, in brief order; pruned to entries that still bear on S2E20; brief wins over bible on any conflict; newer entries in §1.3 supersede older ones here; any journal wording is superseded by the retirement notice)
+- **Faith tests: bent, never broken.** Grief, scandal and argument shake both of them, but neither ever truly stops
+  believing. The tests are about *living* it (fidelity, temptation, anger at God, the Church's failures), not whether it's
+  true.
+
+[brief.md L215–215]
+- **Explicitness, refined.** "As set, dialed up": frank, literary, on the page when the story calls for it, a notch
+  more than so far. **POV stays Jack-only** (confirmed: no other POV has been used). Never cut to another character's
+  POV just for a sex scene. The ensemble's sex lives appear as Jack witnesses, hears, or lives the before and after,
+  and in Jack's own scenes when they come.
+
+[brief.md L346–353]
+- **HARD RULE: neither Jack nor Lena ever sleeps with anyone else.** Not with Wes, Julian, the tryer, the magnetic girl,
+  the magnetic guy, or anyone. Sleeping with someone else would undermine the entire premarital-temptation arc when they
+  are finally together: their first time (whenever and however the player's choices make it happen) is with each
+  other. Kissing, making out, real physical temptation and near-misses with others are allowed and can be charged; the
+  line holds short of sex, and the resolve system should make it cost something. No backstory sex either: neither has
+  slept with anyone before the series. **No sexual assault or rape in either of their backgrounds** (or happening to
+  them during the series). Other serious wounds are fine: family rupture, grief, violence, addiction in the family,
+  crime, illness, emotional or other non-sexual harm from a past relationship, faith crises, and so on.
+
+[brief.md L370–372]
+- **No consent beats unless needed (player, standing).** Going forward, **don't write explicit consent beats** (asking
+  permission, checking in, "is this okay," narrated pauses for consent) **unless the situation would otherwise read
+  as sexual assault.** Desire, mutual escalation and Jack's "no" stopping things remain as written; it's the
+  procedural check-ins that go. Supersedes any earlier "consent guard" phrasing that called for on-page beats; the
+  hard rules (no coercion, no assault, the line never breaks) are unchanged.
+
+[brief.md L1319 "Skye and Jack: keep the whole mix"]
+- **Skye and Jack: keep the whole mix, every episode she's in (player; standing through the end of their
+  relationship).** The relationship is **sex appeal + intellect + wit/playfulness + unrestrained fun**, all four, all
+  the way through. **Jack is falling for her hard, and for every part of her**, and **she is falling for him too.**
+  Never let the heat/resolve thread crowd out the arguments, the jokes, the dares and the plain joy of being with
+  her. Each Skye episode should carry at least one beat of each (Voice Editor and Showrunner check this).
+  - **CORRECTION: Jack is not lonely (player).** He loves Lena and is hurt he can't be with her, but **Skye is
+    entirely different from Becca: Jack *wants* to be with Skye.** He enjoys her company, enjoys doing things with
+    her, and enjoys **learning about her, body and mind**. Never write Skye as a consolation or a cure for loneliness.
+    **Osei's tenderness in E21 speaks to that**: he hears a young man who genuinely delights in this girl and is
+    trying to do right by her, and speaks to the real good in it (love wills the good of the other) more than to the
+    sin, which is exactly why the occasion is so dangerous.
+
+
+
+## 1.3 BRIEF, "### After S2E07" TO THE END (newest entries; binding; PRUNED of entries that are played or no longer bear on S2E21 — the full text is in `writers/brief.md` L1946–2359; dropped as not bearing: After S2E07, the New Orleans arc contact rules, the porch's content bullet, the near-kiss, Mardi Gras item 1, Hale-notices, the S2E18 answers, the Julian co-design, Deepwater Horizon, the S2 finale, the asking and its refinements, the tabloid bit, the proxy fights, the S2E08/S2E10/S2E14 patches, and Date #1's spec (PLAYED in S2E20)) [brief.md L1946–2359]
+
+### After S2E10 (player feedback + S2E11 answers)
+- **CORRECTION (player): Kevin is NOT in the secret alliance.** The alliance is **Theo and Laney**. Kevin has told them
+  "Respectfully, leave it alone" repeatedly throughout, and keeps getting **dragged along with their antics anyway, same
+  as Margot.** Never list Kevin as a member, never have him scheme, recruit or report for it; he can be present,
+  unwilling, and dry about it. (Fix any earlier brief/ledger wording that bunches him in, e.g. "the alliance (Theo,
+  Laney, Kevin)".)
+
+
+### After S2E11 (player feedback)
+- **Feedback:** "Great episode!" The player left Skye's darkroom "No." as written (subtle, reasons in pieces).
+  The player is "very sad about the beginning of the end of the Skye era": **honor that.** Skye's exit (the breakup on
+  the porch, the anger, the campaign, the friendship later) must be written with full love for her; she leaves the
+  story as magnificent as she entered it, and the player should feel the loss.
+
+### Season 2 back-half decisions (player, during S2E12 production)
+- **Skye's line moves to her RETURN** (the quieter "sit somewhere and explain it" talk, not the porch): *"I just
+  thought I'd be better than her at something. Explain to me, slowly, why it took you a parade."*
+- **SKYE'S LONG ARC (player; supersedes "not close" and "let it find its level").** It's hard, and it's **clearly still
+  part of her fight to get him back**, but **Skye and Jack end up friends by the end of the spring semester (S2) and
+  going forward, and eventually close friends.** **She never joins the friend group** (not much of a change: she has her
+  own very full life), **but she makes time for Jack and Theo.** She stays a **recurring character throughout the
+  game**: her efforts to get Jack back **continue loosely for a very long time**, and even after that she is **still
+  around every so often.** (Lena's dislike stays honest; nothing physical; never at Lena's expense; the hard lines
+  hold.)
+  - *(Long-term arc, not this episode: Skye's Flannery O'Connor biopic — a fictional film; never name the real one in-world; timing is a later season's; see `writers/brief.md` "Season 2 back-half decisions".)*
+- **CORRECTION: the first kiss (player; supersedes "first kiss at the end of date #1, Lena kisses him").** The first
+  kiss comes **right after Lena "rejects" him** ("No.", straight-faced) **and tells him to ask her out properly
+  instead.** It's **not short, not particularly long.** **Lena breaks it off by pulling away just slightly, foreheads
+  touching, and murmurs playfully that he's being very familiar for a man who hasn't asked her on a date yet.** Then they
+  go back to the dorm for **Theo and Laney's planned celebration scene that doesn't quite come off yet** (the champagne
+  wake on the misheard "No."), as already designed.
+  - **Then the dates and hangouts, kissing frequently.** The "she's given up kissing for Lent, in principle" bit is
+    retired (or said and broken at once, as a joke; room's call).
+  - **Heat escalation for Jack and Lena is VERY slow.** They don't really cross from kissing into what would be "making
+    out" **until their summer visits to each other (Season 3).** (The S4 restraint framing and the slow-intimacy
+    entries stand.)
+
+### After S2E12 (player feedback)
+- **First "I love you" for Jack and Lena: during a SUMMER 2010 VISIT (S3)** (supersedes Thanksgiving 2010 as the
+  default). The first time they're together after weeks apart, on one of the long visits (the Fourth in New Orleans
+  or August in Youngstown; room's call by path). Until then the word stays unsaid between them.
+
+
+### After S2E17 (player feedback)
+- **Theo and Skye's call (player; staged OFF-PAGE now, revealed MUCH LATER, likely not this season).** A day or two
+  after the breakup, **Skye calls Theo to ask what happened.** Theo tells her he **genuinely doesn't know**, but he
+  **dismisses her cheating theory**; all he tells her is that **Jack seemed miserable both the day before and the night
+  after the breakup.** This is **part of why Skye comes back** a couple of weeks later to ask Jack for an explanation
+  (step 5 of her design): she now believes what he said (he never did lie to her); she just can't understand what
+  happened. **Theo admits the call to Jack much later.** Until then: nothing on the page reveals it (no hint from Skye
+  or Theo the Knowledge Auditor would flag), though Skye's return can be shaped by it invisibly.
+
+### After S2E18 (player feedback) [brief.md L2333–2335, verbatim]
+- **Feedback:** "That was devastating. Skye is simply the best. I teared up." Keep honoring Skye at this level in
+  her absence and her return.
+
+### After S2E19 (player feedback) [brief.md L2337–2338, verbatim]
+- **Feedback:** "Great episode."
+
+### After S2E20 (player feedback)
+- **Feedback:** "Good to have Skye back."
+- **S2E21 answers (player): the Catechism campaign begins.**
+  - **Order:** Skye **starts from the beginning of the Catechism and goes in order** (Part One, Section One: "The
+    Desire for God", man's capacity for God, how God can be known, Revelation, Scripture and Tradition, the Creed...).
+    **She's here for the whole thing and not worried about how long it takes** (a long arc: one section or theme per
+    session duel, across many episodes and seasons; track it).
+  - **Lena learns from Jack first:** he tells her the same day, before anyone else can (speaking plainly is their new
+    rule). Lena sets the condition (if Skye ever makes a move, the meet-ups stop) calmly, and isn't calm. Skye later
+    seizes on the phrasing: she's the only one who CAN'T make a move, and "I can work with that."
+  - **Skye's dressing strategy, first session: obvious and funny.** Something outrageous for a coffee shop; they both
+    know exactly what she's doing; she says so, and argues brilliantly anyway. Never touches him.
+- **CORRECTION (player): when Skye learns Lena's condition (supersedes "Skye seizes on the phrasing" in S2E21).**
+  Lena tells JACK the condition for the ongoing Catechism meetings/coffees. **Jack does NOT tell Skye the condition
+  until much later, after several meetings** (S2E22 at the earliest; the room places it). The reveal scene: a charged
+  moment, right before a kiss; Jack quietly: *"Don't. If you do that, I have to stop meeting you for this. I
+  promised."* / Skye: *"You promised?"* / **He quotes Lena's words to him exactly.** / Skye: *"So I'm the one not
+  allowed to make a move?"* / Jack: *"You know that's not what she meant."* / **Skye, with the ghost of a grin and a
+  very familiar expression on her face:** *"I can work with that."* (echo of S1E20). Until then Skye doesn't know the
+  condition exists; nothing on the page has her react to it.
+
+### EXACT-TEXT ENTRIES FOR THE S2E21 WRITERS (pasted from earlier brief sections at the Packer handoff; binding; the CORRECTION "the first kiss" is above in "Season 2 back-half decisions"; where "After S2E20" above conflicts with any of these, "After S2E20" wins)
+
+- **Lent 2010 observance (player; Ash Wednesday Feb 17 → Easter Apr 4).** Minimums: abstain from meat every Friday of
+  Lent; fast on Ash Wednesday and Good Friday. **Lena does more than the minimum, and Jack does something more too**:
+  e.g., fasting every Friday of Lent and/or a traditional devotion or a popular modern one. **Their dates avoid Fridays
+  during Lent.** (Specific practices: see the suggestions pending player approval, or room's call.)
+  - **First Lent (2010): separate practices, no joint plan (player).** They're just starting out, so each keeps their own
+    Lent. Individual practices (player-approved): **Lena:** fasting every Friday (perhaps the old bread-and-water
+    way); Stations of the Cross on Friday evenings at St. Brendan's (Jack may tag along unplanned; a Friday not-date);
+    giving up Facebook for Lent (a real 2010 trend; Laney appalled; keeps the relationship off Facebook until Easter).
+    **Jack:** giving up cigarettes (withdrawal, itchy hands, an unopened pack he carries, Lena quietly moved); fasting
+    Fridays too, matching her out of devotion and pride. **No shared Lent plan or joint Friday dinners this year.**
+
+[brief.md L325–338 and L404–408 — the alliance (reveal and false dawns)]
+- **The alliance reveal (reserved payoff).** In the **first ensemble set-piece episode after Jack and Lena finally get
+  together**, Theo and Laney openly reveal their secret alliance, toasting themselves with champagne for pulling it
+  off, and discover **everyone already knew**, Jack and Lena included. The beat (the player's lines; keep them):
+  "We know." / "Everyone knows." / "People outside of California know." / "It was obvious after five minutes."
+  Until then, the alliance's maneuvering should be visible to the player and to the ensemble but never acknowledged
+  aloud, so the reveal pays off years of comic evidence.
+- **Running bit: the alliance's false dawns.** Every time Jack or Lena gets out of a relationship, **Theo and Laney are
+  absolutely pumped** (celebrations, plans, maybe premature champagne) and then **deeply bummed** when they realize the
+  other one *isn't* immediately breaking up with whoever they're with to chase after them. It escalates each time and
+  pairs with the timing tragedy. The first instance is likely when Lena and Wes end while Jack is with someone. Pays
+  off in the champagne at the alliance reveal.
+
+[brief.md L2239–2257 — "Date #2", Skye's birthday and the Easter dinner (After S2E12); Date #1 is PLAYED and dropped]
+- **Date #2: Jack plans it Youngstown-humble** (something small and his), and **Lena is undone by how much thought
+  went into so little.** They are themselves, **completely at ease, and for the first time with no significant others
+  looming over the evening.**
+- **Skye's birthday (Apr 4, Easter Sunday 2010):** by then they're back in touch and the Catechism study may already
+  have started, so **he texts, maybe even calls**, depending on how much they're talking by then (supersedes "struggles
+  whether to text"; the struggle can be a beat, the answer is yes).
+- **Easter Sunday 2010 (Apr 4) (player).** Away from family, **Jack and Lena plan an Easter dinner together in the
+  dorm, as best they can, with the friend group, after Mass** (their first holiday hosted as a couple: a dorm-kitchen
+  feast with improvised Youngstown and New Orleans touches; the whole group; comic logistics, real joy). Fits with the
+  Easter Vigil/official beat and Skye's birthday text the same day.
+  - **CORRECTED (player): keep the original plan** (official at the Easter Vigil; the "in a relationship" status
+    Easter morning). **The Easter dinner is the response to it becoming public:** Theo and Laney's **long-awaited
+    victory champagne toast and the alliance "reveal"** (the meetings, the whiteboard, the seating sheet, the champagne
+    bought for the misheard "No." wake, finally drunk for the right reason) **and the discovery that everybody knew all
+    along** (Kevin's "Respectfully, leave it alone"; Margot's field notes; et al.).
+
+
+[bible.md §21 registry row #69 — running bit (verbatim)]
+- **"Never ask Laney for girl advice" (brief running bit; registry #69):** S1E09 the bonfire poem ("about her eyes… and then, sugar, one knee"); callbacks: E16 *New Moon* (Laney offers; "No."); S2E05 Skye at Sully's; **S2E12/date #1: "Don't." before she opens her mouth** (S2E20 s04a pays it, verbatim, on every path); S2E17 Laney confirms it was sabotage.
+
+### SKYE'S BREAKUP AND AFTER AND RELATED ENTRIES (pasted exact; steps 1–5 are PLAYED (S2E18–S2E20); **STEPS 6 AND 8 AND THE MECHANIC BEGIN IN THIS EPISODE (S2E21)**; step 7 is SUPERSEDED by the "After S2E20" CORRECTION above (Lena tells JACK; Jack does not tell Skye until much later); the "side of the road" staging note is SUPERSEDED: the porch is set)
+
+[brief.md L1758–1802 — "SKYE'S BREAKUP AND AFTER" and the entries that follow it (the "side of the road" staging note in the last bullet is SUPERSEDED: the player set the porch, so "dumped me on the side of the road" is her later exaggeration of the porch, per bible §10.2 S2E18 note)]
+- **SKYE'S BREAKUP AND AFTER (player's design; supersedes "room decides how Skye takes it"; S2E18 onward; adapt to
+  voices, not verbatim). The balance of the breakup's reaction is Skye's.**
+  1. **She thinks he's doing a bit**, and **laughs at first**, then tells him **to stop, because it isn't funny.** (It
+     hurts more from the first second.)
+  2. **Truly heartbroken as it sets in**, she doesn't understand how: everything he said to her before he left was true
+     (she can tell), so how can this be happening. He tries to explain, **badly**.
+  3. **Then she gets angry:** you're in love with me, you're happy, and you don't want to be with me. She **yells at him
+     for a while, most of it not making sense**, because she's crying through it and can't understand what he's trying
+     to say. **She decides he must have cheated in New Orleans** and just feels guilty. **She tells him to get out and
+     leave her alone.**
+  4. **A week or two without a word from her; she misses their shared class.**
+  5. **Then she shows back up.** After class she talks to him again, devastated and angry but not shouting: **he doesn't
+     lie**, so if he was telling the truth (and she knows he was), **he owes it to her to sit somewhere and explain it
+     until she understands.** They talk a long while; she cries; Jack isn't doing well with himself; **she sort of gets
+     there.** They're still forced to work together in the class. **She'll respect what he said, as she always does,
+     "but this isn't done."**
+  6. **She fights within the framework of their relationship and her own understanding** (the "same direction" idea):
+     at class, their regular coffees and studying for the class, **she buys herself a Catechism and argues it with him,
+     one section at a time.** Her plan: **argue into understanding, so either she's persuaded of his faith or he's
+     dissuaded from it.** She also **dresses fairly provocatively but never touches him** (that part worked before too).
+  7. **Lena isn't thrilled but doesn't make it a thing.** She makes Jack promise that **if Skye ever makes a move, the
+     meet-ups stop.** Skye seizes on the phrasing: she's the only one who *can't* make a move, and **"I can work with
+     that"** (echoing her line from their first conversation about sex, S1E20).
+  [PACK NOTE — step 7's "Skye seizes on the phrasing…" is SUPERSEDED by brief "After S2E20" CORRECTION (§1.3 above): Jack does NOT tell Skye the condition until much later (S2E22 at the earliest; the room places it). Nothing in S2E21 has Skye know or react to it.]
+  8. **Fun, fraught, and eventually it leads to their friendship** (not close; the long thaw already in the brief). It
+     stays within the hard lines (no cheating, nothing physical), keeps Skye a real pull on Jack (the "dangerous" entry)
+     and keeps Lena's dislike honest. Every Catechism session is a real argument with real philosophy on both sides;
+     Skye is never a strawman, and Jack doesn't always win.
+  - **Mechanic (player-approved): the Catechism sessions run as argument duels.** Each session (one Catechism section
+    or theme) is a short duel with **Skye as the opponent**, scored on rigor/wit/heart like Lena's duels; **she wins
+    some.** Track the campaign across episodes with cumulative counters (e.g. `skye_cat_jack` / `skye_cat_skye`: how
+    close each comes to being persuaded), feeding how her arc resolves into friendship. Keep each duel distinct from
+    Jack–Lena duels in register (Skye's improv, actor's logic, sincerity under performance; real arguments).
+- **Lena won't joke about Skye yet (player; timing for the running joke).** The "Lena brings up Skye as a running
+  joke / cheap fallback argument" bit **does not start until Skye's Catechism campaign is over** and the meet-ups have
+  ended. Until then Skye is **a live fear** for Lena, never a punchline; she's careful, quiet or sharp about it, never
+  funny. The joke only becomes possible once the threat is truly past.
+
+- **Skye–Jack friendship may end up closer than planned (player; open, "we'll see").** The earlier "not close"
+  directive softens to **let it find its level** (still never a threat once the campaign ends, and never at Lena's
+  expense). **Running bit while they're at the same school:** whenever he balks at something she asks, she comes back
+  with **"So remember that time you told me you loved me and then dumped me on the side of the road?"** (Staging
+  note: the player's phrasing suggests the breakup itself happens **in the Saab, pulled over on the side of a road**;
+  room, consider staging it there so the line is literal.)
+
+---
