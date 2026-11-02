@@ -2339,3 +2339,13 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 
 ### After S2E20 (player feedback)
 - **Feedback:** "Good to have Skye back."
+- **S2E21 answers (player): the Catechism campaign begins.**
+  - **Order:** Skye **starts from the beginning of the Catechism and goes in order** (Part One, Section One: "The
+    Desire for God", man's capacity for God, how God can be known, Revelation, Scripture and Tradition, the Creed...).
+    **She's here for the whole thing and not worried about how long it takes** (a long arc: one section or theme per
+    session duel, across many episodes and seasons; track it).
+  - **Lena learns from Jack first:** he tells her the same day, before anyone else can (speaking plainly is their new
+    rule). Lena sets the condition (if Skye ever makes a move, the meet-ups stop) calmly, and isn't calm. Skye later
+    seizes on the phrasing: she's the only one who CAN'T make a move, and "I can work with that."
+  - **Skye's dressing strategy, first session: obvious and funny.** Something outrageous for a coffee shop; they both
+    know exactly what she's doing; she says so, and argues brilliantly anyway. Never touches him.
