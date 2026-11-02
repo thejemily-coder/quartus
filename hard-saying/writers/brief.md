@@ -2336,3 +2336,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
 
 ### After S2E19 (player feedback)
 - **Feedback:** "Great episode."
+
+### After S2E20 (player feedback)
+- **Feedback:** "Good to have Skye back."
