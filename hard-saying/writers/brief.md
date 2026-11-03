@@ -2357,3 +2357,6 @@ NOT secret: the player wrote it. Hidden canon lives in `bible.md`. Where the bib
   allowed to make a move?"* / Jack: *"You know that's not what she meant."* / **Skye, with the ghost of a grin and a
   very familiar expression on her face:** *"I can work with that."* (echo of S1E20). Until then Skye doesn't know the
   condition exists; nothing on the page has her react to it.
+
+### After S2E21 (player feedback)
+- **Feedback:** "Finished, ready for the next one!"
