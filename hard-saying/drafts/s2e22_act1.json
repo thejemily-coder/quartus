@@ -1,0 +1,332 @@
+{
+  "scenes": {
+    "s01": {
+      "slug": "MONDAY · 6:50 AM · DELGADO HALL, THE EAST STAIRWELL — FRIDAY’S MINE",
+      "set": {
+        "s2e22_on": true,
+        "lena_note": true
+      },
+      "body": [
+        "Day twenty-seven. The window over the landing between two and three is still a deep ink blue, with one sodium lamp off the service road caught in its bottom corner like a coal left in a grate, and the tube light over the fourth-floor door is buzzing to itself. The building is asleep in the particular way of a Monday, every door shut on somebody who meant to start the reading Sunday. Jack comes out zipping the Carhartt, on his way down to the Commons for two coffees — his run this week, by an unwritten treaty — and nearly puts his boot through one.",
+        "It’s on his step, third down from four, dead center, where he’d have to step over it or into it: a Commons coffee in a brown paper sleeve with the lid on, and under the cup, squared to the edge of the concrete, an index card.",
+        {
+          "type": "doc",
+          "title": "An index card, under the coffee",
+          "text": "FRIDAY’S MINE. —L."
+        },
+        "Her capitals. The period, the dash, the L. He picks up the cup and it’s barely warm through the sleeve; she must have been up here a good while ago, in her socks, past his door, and he slept through it. It is his own word from a week ago, said on these stairs about a Saturday, come back to him in her hand and left where he’d trip on it. He has spent three weeks planning things for her — a restaurant with three forks, a bowling alley with his father’s rules — and carrying the plans around in his chest like a man carrying a cake up a ladder. He stands on the step holding a lukewarm coffee and a card, and has no idea what to do with his hands.",
+        "He takes it down to her landing anyway. Her step is empty. No index cards, no pencil through a knot of hair, no first sentence going out at the wired glass: only the concrete, and the cold coming off the fire door to two, and the window beginning to go from ink to something you could read by. He sits on her step for a minute and drinks the coffee, which is technically his coffee. It has gone the temperature of the stairwell. The Commons, then.",
+        "At half past seven the Commons is steam and trays and the dish return clanking round on its belt, and they’re at the window table: Lena, Laney and Margot, three heads over a yellow legal pad. Laney sees him first. The pad goes face down so fast it lifts a napkin off the table.",
+        "“We’re discussing nothing,” Margot says. “At length.”",
+        "Lena gets up. She’s in the Saints sweatshirt with a pencil behind her ear and her hair down, and she kisses him quick, hello, coffee and cold air off the lagoon, with one elbow still parked behind her on the legal pad like a paperweight. Somewhere in the middle of the kiss Laney slides the pad out from under the elbow and tucks it under her own arm.",
+        "“*Not* on the plans.”",
+        "Where the pad was there’s a library book with a white call-number sticker, lying spine-in toward the window. Margot sets her tray on it. Jack doesn’t read the spine. He sits, and takes the index card out of the Carhartt, and puts it down on the table between the cups where all three of them can see it.",
+        "Laney studies the ceiling. Margot butters a bagel to the edges, with the concentration of a surgeon who has been told the patient is famous. Lena picks up her coffee and holds it under her chin in both hands and looks at him over the lid, composed as a hostess at the door of her own party, waiting.",
+        "“Somebody left you a note,” she says.",
+        "“Somebody left me a coffee. On my step. At six in the morning. Cold.”",
+        "“Lukewarm,” Laney says, eyes still up. “It was *hot* when it went up.” Margot kicks her under the table, and Laney adds, with dignity, “I would imagine.”"
+      ],
+      "choices": [
+        {
+          "tag": "Wit",
+          "text": "“Is it a parish?”",
+          "set": {
+            "s2e22_note": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“It’s a *diocese*.”",
+            "Margot, with her mouth full: “Archdiocese.”",
+            "Lena takes the legal pad back from Laney and turns it over, deliberately, so he can see the back: yellow lines all the way down, not a word, not a doodle. Then she turns it face down again and sets her coffee on it."
+          ],
+          "goto": "s02"
+        },
+        {
+          "tag": "Candor",
+          "text": "“You know I don’t want a fuss.”",
+          "set": {
+            "s2e22_note": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "“I know. I’m overruling you.”",
+            "Motion carried, at a meeting he wasn’t invited to. She drinks her coffee with the air of a woman whose calendar is clear until Friday, and Laney writes something on her napkin and turns it face down too."
+          ],
+          "goto": "s02"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“Okay. It’s yours.”",
+          "set": {
+            "s2e22_note": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "She had a comeback ready. He watches it go back wherever she keeps them.",
+            "She reaches across the cups and takes the index card off the table and puts it in the breast pocket of his flannel herself, under the open Carhartt, and gives the pocket a single pat. “Good.”",
+            "Her hand takes its time coming away."
+          ],
+          "goto": "s02"
+        }
+      ]
+    },
+    "s02": {
+      "slug": "MONDAY · 1:05 PM · HOLLIS HALL, 302 — ET IN ARCADIA",
+      "set": {
+        "hale_rematch": true,
+        "rel.hale.warmth": "+1"
+      },
+      "body": [
+        "Sun on the oak for the first time in a week, coming flat through the half-raised blinds and showing every ring a coffee cup has ever left in the varnish. Jack at the door end under the clock; Lena at the window end with her Waugh open and the spine broken in three places since Sunday; Caleb, Yusuf and the sophomores down the sides with theirs. Somebody’s morning section has left the date on the board in yellow chalk: MARCH 15.",
+        "At five past one Hale comes in with *Brideshead* under his arm and the fountain pen clipped in his breast pocket, and sits, and looks at the board.",
+        "“The Ides,” he says. “Beware. I always do.”",
+        {
+          "if": "hale_dock",
+          "text": "Jack sent the word round the table’s email list on Friday, as instructed, and Yusuf has plainly spent the weekend waiting. “Thursday,” he says, to see. Nothing happens. “*Thursday*,” a little louder, and the sophomores look at Hale, and Hale uncaps the pen. “Yes, Mr. Noorzai. It’s a day of the week again. Try not to wear it out.”",
+          "else": "Hale opens the book and, without looking up from it: “The fine on *Thursday* is lifted. I find I have no further use for it.”"
+        },
+        "Book One. They do Oxford. The plovers’ eggs at Sebastian’s lunch; Anthony Blanche at the window with a megaphone, reciting at the rowing men; Aloysius, the bear, who needs a new brush and gets one. “Aloysius is load-bearing,” Yusuf says. “Take him out and the first half comes down.” Hale: “Mr. Noorzai is reading structural engineering into Waugh again. Go on, it’s an improvement.” The sophomore with the nose ring says Charles is in love with Sebastian; another says Charles is in love with being invited; Hale says, “Both, and the second one is England.” They do the picnic under the elms, the strawberries and the wine, and the skull Charles keeps in his rooms in a bowl of roses with the words cut on its forehead, and Hale reads those out, the only words of Waugh’s he reads all hour: *Et in Arcadia ego.* “Even in Arcadia, there am I,” he says. “Death, speaking. At a party. As usual.”",
+        "From the window end Lena gives them Sebastian at the picnic, wanting to bury something precious in every place he’s ever been happy, so that when he’s old and ugly and miserable he can come back and dig it up and remember. “He’s twenty years old,” she says, “and he’s already making arrangements to be sad. That’s the most Catholic thing in Book One, and nobody’s said a prayer yet.”",
+        "“Miss Broussard finds Catholicism in a picnic.”",
+        "“Professor, I’m from New Orleans. I find it in a *parking lot*.” The sophomores laugh. Jack, at the door end, watches her pencil go back behind her ear, and the half smile she gives the oak and not Hale, and thinks he has never wanted to bury anything anywhere, and might start.",
+        "Hale lets her have it. Then he sets the pen down and tells the window end and the table at large that the Forum committee has written to him. They would like October. “A rematch,” he says, holding the word away from himself with two fingers. “As though we were heavyweights. I have told them I will accept no other opponent.”",
+        "“You didn’t ask me,” Lena says.",
+        "“I’m told that’s how it’s done now.”",
+        "The sophomores laugh. At the door end Jack looks for something urgent in Waugh.",
+        "“And on Thursday,” Hale says, “Miss Broussard has a taste for the floor; she may have mine. You’ll lead, Miss Broussard. Book One. I shall sit where you sit and be insufferable.”",
+        "“At the window end?”",
+        "“Wherever I like. It’s my table.” He doesn’t smile, and he is very pleased, and the sophomores can see both. Since Thursday night he has stopped pretending to the table that she is merely his best student; he talks to the window end with the proprietary pride of a jockey whose horse threw him.",
+        "“I’ll want the pen,” Lena says.",
+        "“You will not have the pen.”",
+        "Caleb has said nothing since ten past. His pen is capped on his book. When they get to Lord Marchmain — Sebastian’s father, who went abroad years ago and stays there, in Venice, in a palace with a woman who isn’t his wife — Caleb says, to his own page, “Some dads just leave the building.” Nobody answers it. The nose ring goes on about Lady Marchmain’s charm, and the talk moves down the oak and takes the line with it.",
+        "With ten minutes left Hale turns his head to the door end. “Mr. Costigan. You’ve been sitting on something since the picnic. Hatch it.”"
+      ],
+      "choices": [
+        {
+          "tag": "Sincerity",
+          "text": "“The bear’s the only thing Sebastian’s honest with.”",
+          "set": {
+            "s2e22_sebastian": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“Aloysius never lies to him and never asks him down to dinner,” Hale says. “Yes.” He writes something in his own copy with the fountain pen, a short line, and blots it on his cuff.",
+            "Across the oak Lena is writing in her margin too, small and fast. From the door end he can’t see what."
+          ],
+          "goto": "s04"
+        },
+        {
+          "tag": "Wit",
+          "text": "“Sebastian’s teddy bear has a better wardrobe than I do.”",
+          "set": {
+            "s2e22_sebastian": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "The sophomores laugh. “Everyone at Oxford had a better wardrobe than you, Mr. Costigan,” Hale says. “It was 1923.”",
+            "Beside Caleb, Yusuf looks down the table at the Carhartt over the back of Jack’s chair, considers its cuffs, and very quietly nods."
+          ],
+          "goto": "s04"
+        },
+        {
+          "tag": "Candor",
+          "text": "“Waugh makes them miserable because he’s about to make them Catholic.”",
+          "set": {
+            "s2e22_sebastian": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "“Spoilers, Mr. Costigan.” Hale turns a page, and can’t leave it there. “He’s not wrong, Miss Broussard. Don’t look so pleased.”",
+            "The bell goes in the corridor. Hale lets the door end file out past his chair without a word about any of it, and Jack goes out with the rest, and is halfway down the Hollis stairs before he notices he’s been let off."
+          ],
+          "goto": "s04"
+        }
+      ]
+    },
+    "s04": {
+      "slug": "TUESDAY · 11:00 AM · MORRO HALL 1100 — HE ASKED",
+      "set": {
+        "fenner_asked": true,
+        "rel.skye.trust": "+1"
+      },
+      "body": [
+        "The showers that came through at dawn have gone off east over the hills, and Morro 1100’s long windows are full of a rinsed blue with the lagoon flashing at the bottom of them. Jack climbs the tiers at five to eleven and finds Skye already in the back row under the exit sign, Pair 41, her bag on the floor on her own side.",
+        "Her hair is wet — not shower-wet but sea-wet, gone dark and roped where it lies on the shoulders of a big navy fisherman’s sweater, a fine line of salt drying white along her hairline, and at the neck of the sweater the two black straps of a swimsuit that hasn’t finished being wet, printing two dark stripes down through the wool. Jack sits, and gets his notebook out, and looks at the notebook with real dedication.",
+        "“Hi,” she says. She has the pen cap in her teeth. “The moon’s on the sun’s side all week. I looked it up.” She takes the cap out to point it at him. “Did you know the good lows move? In winter they come in the evening. By summer they’re at dawn, and the only people on the reef are surfers and old men with buckets. Textbooks don’t tell you that. A surfer tells you that.”",
+        "Down at the board Dr. Fenner has his sun and moon and earth on their string again, three circles in a row. He tells the room what he told it last week, with the same delight: sun and moon pulling the same way, the highest highs of the month, the lowest lows, every day this week. Then he puts the marker down on the tray and turns round and faces the room, which in Jack’s experience he has never done without a slide behind him.",
+        "“Last Thursday,” he says, “I asked you to go down to the wharf at Monday evening’s low — the lowest of the month — and look at the pilings.” He looks up the tiers. “Did anybody?”",
+        "No one did. A hundred strangers discover something on their phones. Somebody in the fourth row coughs. Fenner waits with his hands in his cardigan pockets, and the hope goes out of his face a little at a time, the way air goes out of a pool float.",
+        "From the back row, without standing up, Skye says: “Mussels.”",
+        "Every head in Morro 1100 turns round.",
+        "“The blue-black ones, in mats, all the way down. Gooseneck barnacles under them — they look like a bunch of tiny hooves. Ochre stars, orange and purple, five or six to a piling. Anemones closed up like fists, because they were out of the water and they didn’t like it. And the waterline was a foot below where it was last Thursday.” She holds the white iPhone up toward the front of the room, eighty feet off, with a picture on it too small to make out past the third row.",
+        "Fenner takes his glasses off. He holds them down at his side and looks up the tiers at the back row with his bare face, and he is so happy that for a while he can’t do anything with it.",
+        "“Pair forty-one,” he says finally. “Thank you.” He puts the glasses back on. “*Pollicipes polymerus*. They feed with their legs. Upside down. All their lives.” He turns back to the board and finds the marker, and the whole room can hear him humming.",
+        "Jack leans over. “You went last Thursday too.”",
+        "“I needed a control.” She thumbs between two pictures of the same piling: the same black ruff of mussels, the same orange star, and the wet line on the wood a foot lower in the second. “Monday it was at six-something. Tonight it’s fifty minutes later. I’m going to keep going till it’s the middle of the night, and then I’m going to stop being interested.” She scrolls to a third picture: a man in a county windbreaker on the wharf, frowning straight into the lens. “He thought I was from the state. I let him. He showed me a sea slug.”",
+        "Down at the board Fenner is still humming, and she watches him with the pen cap back in her teeth, and then — briefly, low, for Jack only — she is a woman in a housecoat at a dinner table somewhere in the Valley, passing the peas. “*Dale.* Honey. Somebody looked at the pilings.” A sniff. “I always said somebody would.” And she’s back, copying the tide table off the board.",
+        "She flips back a page for him. In last week’s margin there’s PILINGS, in her capitals, boxed. He reaches over and puts a check beside it in his pencil.",
+        "Skye looks at the check. “I was wrong about him,” she says. “I *hate* that.”",
+        "At the half hour Fenner comes up the side stairs with the refraction projects in a stack, ticking pairs on his clipboard, and lays theirs on the desk without stopping: the graph paper, the Point traced off the chart, the four colors of wave bending onto the reef. In the corner, in Fenner’s red ballpoint, *Both halves. Good.* And under it, circled, an A.",
+        "She doesn’t say anything. She points at it.",
+        "“We got an A,” he says.",
+        "“*I* got an A. You got the math.” She slides the sheet into a folder, carefully, by the edges. “The math got a B-plus. I’m being generous.”",
+        "For the rest of the hour they take down the tides side by side, the rinsed light moving down the long windows. She smells of the ocean instead of grapefruit. He takes notes on the Coriolis effect as though his life depended on it.",
+        "At a quarter past twelve the room comes apart down the tiers in zippers and backpacks. She puts the folder in her bag and stands up with the bag on her shoulder and her damp hair down the back of the sweater.",
+        "“Did you bring proofs?”",
+        "“Tomorrow.”",
+        "“Bring the good ones,” Skye says. “I read ahead again.”"
+      ],
+      "choices": [
+        {
+          "tag": "Wit",
+          "text": "“I’m bringing five. Aquinas did the lifting; I’m just carrying them.”",
+          "set": {
+            "s2e22_proofs": "wit",
+            "trait.wit": "+1"
+          },
+          "key": "When Skye asked if you were bringing proofs, you told her you’d bring Aquinas’s five and carry them yourself.",
+          "response": [
+            "“Then I’ll be ready for five.” She caps her pen with her teeth and drops it in the bag.",
+            "The Saab key is already in her hand by the time she reaches the side door at the bottom of the tiers, and the door has swung shut behind her before he has his notebook closed."
+          ],
+          "goto": "s05"
+        },
+        {
+          "tag": "Candor",
+          "text": "“I’ve got two I believe and three I can recite.”",
+          "set": {
+            "s2e22_proofs": "candor",
+            "trait.candor": "+1"
+          },
+          "key": "When Skye asked if you were bringing proofs, you told her you had two you believed and three you could recite.",
+          "response": [
+            "“Bring the two.” She looks at him over the top of the phone. “The three I can get off Wikipedia.”",
+            "She goes up the aisle against the crowd coming down for the 12:30, the only person in the building going the wrong way, and the crowd parts for her without seeming to notice it’s doing it."
+          ],
+          "goto": "s05"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“I’m bringing the one that got me.”",
+          "set": {
+            "s2e22_proofs": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "key": "When Skye asked if you were bringing proofs, you told her you’d bring the one that got you.",
+          "response": [
+            "“Which one got you?”",
+            "“Ask me at four.”",
+            "It goes all through her face, and she doesn’t say a word about it, and then she’s gone down the side stairs, and Jack is alone in Pair 41 with the A."
+          ],
+          "goto": "s05"
+        }
+      ]
+    },
+    "s05": {
+      "slug": "TUESDAY · 10:20 PM · THE ANCHOR — THE WALK-IN",
+      "set": {
+        "laney_knows_kevin": true,
+        "rel.laney.warmth": "+1"
+      },
+      "body": [
+        "The Anchor’s back kitchen at twenty past ten smells of bleach and fryer oil and, under them tonight, something sweet and licorice that doesn’t belong to anything on the menu. Tuesday is the slow night: four booths, two fishermen, a table of nursing students splitting fries, and the Hobart with nothing to do but wait for him. Jack comes in through the back door from the dumpster with the empty bins in one hand and the Carhartt still on against the wind off the wharf, and Rudy, at the flattop with his scraper and his radio going low in Spanish on the shelf above him, says before Jack has opened his mouth: “Mijo. I know nothing.”",
+        "Jack hasn’t asked him anything.",
+        "Gloria comes through from the front with the coffee pot, past the dish station, past Jack, past the walk-in, and does not break stride. “You didn’t see anybody in my walk-in.”",
+        "He hadn’t. He does now. The walk-in door has a porthole in it the size of a dinner plate, fogged at the edges, and through the clear middle of it is the Saints sweatshirt with one of Rudy’s white aprons tied twice round it, standing over a fifty-pound sack of flour on the floor with a clipboard, and a jar of anise seed on the shelf at her elbow among the butter. On the steel table by the ovens two small loaves are cooling on a sheet pan, one gold, the other dark as a saddle all down the end that faced the back.",
+        "“The back of the oven runs hot,” Rudy says, scraping. “I told her.” He thinks about that. “I know nothing.”",
+        "The walk-in door opens on its gasket. Lena comes out with the clipboard against her chest and flour to the elbows and a streak of it in her eyebrow, sees him standing there with a bin in each hand, and stops. Since September he has never seen anyone go into that walk-in who wasn’t paid to, and she has the look of a girl caught raiding the icebox at midnight: chin up, eyes going once to the swinging door Gloria went out by. Then she crosses the tile and puts one floury hand flat on his chest, to hold him exactly where he is, and kisses him, by the Hobart, the cold of the walk-in still coming off her.",
+        "“You didn’t see me,” she says against his mouth, and goes back in, and pulls the walk-in door shut behind her with both hands. Through the porthole she turns her back on him and makes a mark on the clipboard.",
+        "There is a white handprint on the front of the Carhartt over his ribs, five fingers and a palm. He looks at it, and leaves it.",
+        "Gloria comes back through with the empty pot, looks at the handprint, looks at the walk-in door, and says to the coffee machine, “I didn’t see that either.”",
+        "He does an hour at the dish machine with his hands bare, a week after Kevin told him what that does to them. Every time the walk-in door sighs on its gasket behind him he doesn’t turn round, which takes more out of him than the dishes do. Once, Rudy goes in with a hotel pan and comes out without it, and passes Jack on the way back to the grill, and says, without stopping, “The anise is for a cake. For my sister. I know nothing,” and Jack says, “Okay, Rudy,” and Rudy looks relieved to have got that settled.",
+        "At a quarter to eleven he takes a rack of clean cups out front, and Laney Price is sitting at the counter by herself.",
+        "He has never seen Laney at the Anchor without an audience. She is in a pink velour sweatsuit with her hair up in a scrunchie, which is how Laney dresses when there’s been a death, and she has a slice of coconut cream in front of her that she has not touched, and when she sees him she points her fork at him across the Formica.",
+        "“*Sit.*”",
+        "He puts the cups down on the counter by the coffee station and doesn’t sit. Gloria, at the register, becomes very interested in a roll of receipt paper.",
+        "“A soprano in the Newman band,” Laney says, “the tall one who does the descant at Communion like somebody’s paying her by the note — she sat down next to me on the lagoon steps tonight and asked was I *okay*, because of *Kevin*. And I said why on God’s green earth wouldn’t I be okay about Kevin. And she told me.” The fork comes down an inch. “Clare. A *week* ago. In the Newman kitchen. And he drove straight here, after. Tuesday. Your *shift*.” She lets that do its work. “You *knew*. A *week*.”",
+        "“He asked me not to.”",
+        "Something goes over her face, furious and touched in the same breath, and she can’t pick, so she does both. “You *kept* it. Of course you kept it. You keep *everything*, you’re like a — you’re a *safe-deposit box* in a flannel shirt.” She puts the fork down and picks it back up. “I bought him a slice. I was going to take it to 420.” She looks at the slice. “Was he okay? When he came in?”",
+        "Jack thinks about the counter a week ago, the good quarter-zip zipped to the collarbone, the fork lined up beside the saucer. “He had the coconut cream,” he says. “All of it.”",
+        "Laney puts her hand over her mouth. “He *always* gets the toast,” she says through it. “He gets the toast and he holds everybody’s keys.” She takes the hand down. “He’s been doing his picture smile all week, at breakfast, at Mass, and I thought it was a *test*.” She stabs at the crust and doesn’t eat it. “And I *liked* her. She fixed his collar in church. Now I have to be *civil* to her at the sign of peace till we graduate.” And smaller: “Did he say anything about *me*?”",
+        "“He said you’d organize something.”",
+        "Laney sits back on the stool and closes her eyes.",
+        "“Sugar,” she says, “I am going to organize *everything*.” Her eyes open. “There is going to be a casserole rota on that boy’s door by breakfast. Through *Easter*. Tuna noodle. King Ranch. Margot is going to make whatever it is Swedish people make when they’re sad. He is going to be *fed*, and he’s going to be *visited*, and he is never going to eat alone in a diner at midnight again for as long as I draw breath.”",
+        "“Tuna noodle he gets from me,” Gloria says from the register, without turning round. “With the potato chips on top. I know nothing about any of this.”",
+        "“Gloria, you’re Thursdays.” Laney doesn’t even look round. “Where was I. *Fed*. And Friday he’s getting fed whether he likes it or —” She stops. She looks at the kitchen door. “Friday’s nothing. Forget Friday.”",
+        "Behind the pass, Rudy turns his radio up."
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“He asked me not to tell you. So I didn’t.”",
+          "set": {
+            "s2e22_laney": "candor",
+            "trait.candor": "+1"
+          },
+          "key": "When Laney found out about Kevin and Clare and came to the Anchor, you told her you’d kept it because he asked you to.",
+          "response": [
+            "“I *know*,” Laney says. “That’s what makes me so *mad*.”",
+            "She stabs the coconut cream. Then she eats it — Kevin’s slice, the one she bought to carry up four flights in a napkin — furiously, in big bites, the whole thing to the last crumb of crust, glaring at Jack the entire time as if it were his fault the pie was good."
+          ],
+          "goto": "s06"
+        },
+        {
+          "tag": "Wit",
+          "text": "“He’s going to need a spreadsheet.”",
+          "set": {
+            "s2e22_laney": "wit",
+            "trait.wit": "+1"
+          },
+          "key": "When Laney found out about Kevin and Clare and came to the Anchor, you told her Kevin was going to need a spreadsheet.",
+          "response": [
+            "“He’s going to *get* one. Color-coded. He’s going to hate it, and it is going to be *so good* for him.”",
+            "She has three pens out of her purse before she’s done saying it, pink and green and black, and pulls a napkin out of the dispenser and starts ruling it into columns. MON. TUE. WED. Jack goes back to the kitchen for the next rack. When he comes out again she’s on her third napkin and has gotten as far as Holy Week."
+          ],
+          "goto": "s06"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Let her be angry at you. It’s easier for her than being sad for him.*",
+          "set": {
+            "s2e22_laney": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "When Laney found out about Kevin and Clare and came to the Anchor, you let her be angry at you instead.",
+          "response": [
+            "He lets her. He stands there with his macerated hands at his sides and takes all of it — the safe-deposit box, the week, every breakfast he sat across from her and said *pass the salt* like a *Methodist* — and she runs out of angry before her coffee has gone cold.",
+            "Then she orders a whole coconut cream pie to go, for 420. Gloria boxes it without being asked and ties the string twice. Laney goes out the door with the box held level in both hands in front of her, chin up, not crying, and the bell rings over her."
+          ],
+          "goto": "s06"
+        }
+      ]
+    },
+    "s06": {
+      "slug": "WEDNESDAY · 7:15 AM · DELGADO HALL, HER LANDING — CABBAGES",
+      "set": {
+        "stupak_bet": true
+      },
+      "body": [
+        "The legal pad must be finished, because she’s back on her step: sweatpants, wool socks, a cereal bowl on her knees full of dried chickpeas, and she is going through them one at a time with a fingertip, pushing them from one side of the bowl to the other, picking out the little stones and the split ones and dropping them in a coffee cup on the step beside her. *Plink*, goes a stone into the cup. The window over her head has the morning in it, pale and clear, with a contrail crossing it.",
+        "The RAZR in his breast pocket has a text on it from while he was shaving.",
+        {
+          "type": "sms",
+          "from": "Dad",
+          "text": "ERIN GO BRAGH. WEAR GREEN OR YOUR MOTHER WILL HEAR ABOUT IT.",
+          "time": "7:02 AM"
+        },
+        "The Costigans are Frank’s side, the Irish half, and every March 17 his father remembers it for one day and texts like the owner of a pub. Jack has his green flannel on already. He isn’t about to find out what his mother would hear.",
+        "Lena looks at the flannel and then holds up a chickpea to it, judicially, for color.",
+        "“In New Orleans,” she says, “on St. Patrick’s, they have a parade down Magazine Street through the Irish Channel, and the men on the floats throw *cabbages*. Whole heads. And potatoes, and carrots, and onions, off a moving truck, at people. And if you catch a cabbage, you go home and make corned beef and cabbage, and that’s your supper, and it’s a miracle, because you were struck by it.” She drops a stone in the cup. “Jude caught one in the face when he was six, and Mama says it explains a great deal.” She is not Irish, and she says all of this with the authority of somebody who has been hit by produce for the faith.",
+        "She has the paper off the lobby rack folded under the bowl, open to the inside pages, the health-care bill again. The Catholic hospitals are for it. The bishops are against it, because of what it would pay for. She taps the two columns with a fingernail, one and then the other. “I can’t decide who I’m angrier at. The sisters who run half the hospitals from here to Shreveport say pass it and the poor get a doctor. The bishops say not one dime for abortion, so no. And I agree with *both* of them, Jack, which is a sin against something, I just haven’t found out what.”",
+        "“Stupak’ll fold by Sunday.”",
+        "“He will *not*.” She points a chickpea at him. “That man has a spine like a pew.”",
+        "He has his four-dollar Catechism under his arm, and folded into it at thirty-one, sticking out an inch, two sheets of notebook paper covered on both sides in pencil. Proofs, or what he could get onto two pages between the end of his shift and two in the morning. She sees them. Her eyes go to the folded corners, and then back up to his face.",
+        "She doesn’t wish him luck, or make anything of four o’clock.",
+        "“Tell me after.”",
+        "“I will.”",
+        "She nods, and looks down, and goes back to the chickpeas. He stands on the step above her and watches her hands go through the bowl, the right one sorting and the left one holding the rim steady, sure and quick and careful, turning each one over before she lets it stay."
+      ],
+      "next": "s07"
+    }
+  }
+}

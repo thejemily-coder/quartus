@@ -2650,3 +2650,46 @@ Nobody in the core cast has met anybody else on-page. Specifically:
 - **Wardrobe and props.** Skye's gown (Sweetwater wedding episode / season-two premiere on Wit; "the only dress she ever got to keep"); Jack's used $4 Driftwood Books copy with a stranger's pencil to ¶30 and the sticker on the cover; Skye's Post-it inside the front cover; the chewed pen cap; the cards in the left blazer pocket all night and Lena's programme notes; Caleb's crumpled gray card; the red card in Lena's missal [caleb]; Hale's dented silver flask [hale]; the score sheet Lena keeps; Jack's Carhartt; the socks (Ma's rule for rented shoes); the unopened Barq's.
 - **Skye.** Her thread is open; she does not know the condition; do not resolve offstage.
 - **Carried and untouched:** page 233; Mémère's cedar-chest ring; Luc's gas-leak file; `promised_skye_truth`; Cabazon postcard and swing print; Clovis holds the pack (eight left); Kevin's 35:15 sheet; the Wes line; Margot's list (Julian, Priya, Magdalena Broussard) and Preview Weekend; Lena's "One's not your business" candle.
+
+### S2E22
+> Final revision (see continuity.md S2E22). Branch tags are `[scene | condition]`. Canon is Mon Mar 15 – Sun Mar 21, 2010. Everything said aloud in a room is heard by the people in it unless the entry says otherwise. None of the hidden canon appears on the page, in keys, cues or nextTime.
+
+#### Jack
+- **Learns:** [s02] Hale's Forum rematch against Lena is in October. [s04] Pair 41 got an A on refraction; Fenner asks for a page on the pilings, due Thursday. [s05, via the Anchor] Laney knows about Kevin and Clare. [s07-s07d] Skye surfs Sands on a single-fin; her conscience speaks in Debbie's voice; she keeps a running total in the back cover; next week is ¶39; "It's a strategy. It's a very good strategy." [s08a | `s2e22_wed=="kevin"`] -> [s09k] Kevin's account (the soprano told Laney Tuesday night; the rota and Laney at his door at 7 AM Wednesday; the dishes; the supplement at 1 AM; the pie on [restraint]); he sees the casseroles. [s09t | `s2e22_wed=="theo"`] Skye read Stanislavski at fourteen. [s10] Lena led Thursday's seminar. [s10a] Nonna mailed fava beans to Lena. [s13] he was born at 9:41 AM Eastern, 7 lb 11 oz, and Ma calls at that minute every year; Ma says Lena called her Monday (not what about); Nonna: "the girl has the beans". [s14] Skye knows his birthday and texted him. [s15] Lena ate Ma's wedding soup on the solemnity: "That's how much I like you, Costigan." [s16] Danny learned from Ma that "the veil girl" was doing the table; Margot played Joseph, "That was always me. You were the baby." [s17] Mémère's Ash Wednesday words. [s19h | `s2e22_sat=="hale"`] Hale walked past Friday at six and knew whose birthday it was. [s20] Lena has a burn blister on her thumb from frying at 5 AM; St. Brendan's veils its crucifix and most of the statues as its own yearly custom. [s21] Kevin is for the bill. [s22] Lena is going to the Annunciation on Thursday.
+- **Tells:** [s08] Lena: Skye was in a wetsuit and bikini top, the outcome of the session, and that she kept her hands to herself (Lena's `s2e22_door` choices). [s08a | kevin] Kevin / [theo] Theo: his Wednesday (see Others). [s09t | `s2e21_wed!="theo"`] Theo: the whole campaign. [s16] Danny, Lena (talk on [sincerity]). [s22] Lena: "My father agrees with you *and* my mother. Don't make him pick."
+- **Does not know:** what Lena called Ma about on Monday (the beans, per Nonna's line, but unconfirmed to him); Skye's feelings about the "Don't" he has not yet delivered; whether the condition will come up.
+
+#### Lena
+- **Hears:** [s08] from Jack: Skye in a wetsuit and bikini top, the outcome, and that Skye kept her hands to herself. [s14] Skye's birthday texts to Jack (she read them). [s16] Danny thanks her for the table [sincerity]; the C.O. finished *Brideshead*. [s16a] Mémère's card arrived. [s17] her own telling to Mémère: his birthday at Christmas (`s2e17_wed=="house"`) or the night he told her (else); Mémère's Ash Wednesday words are revealed to Jack by her. [s19l | `s2e22_sat=="lena"`] Lyle at the Saturday 11:30 meal.
+- **Does not hear:** the Low Tide session itself (s07-s07d) beyond Jack's telling; Kevin's account (s09k) or Theo's (s09t); the Hale talk (s19h).
+- **Tells:** [s01] a note (`s2e22_note`); the Annunciation line behind "Nine months to Christmas". [s10a] receives Nonna's box. [s13, via Ma] called Ma on Monday. [s15] "That's how much I like you, Costigan." [s16a | candor] keeps a second bean in her own jacket pocket; gave up Facebook for Lent. [s22] she is going to the Annunciation on Thursday.
+
+#### Skye
+- **Knows from earlier episodes:** the first session (¶27-30) and the Post-it.
+- **Learns this episode:** [s04-s07] Jack's proofs; the adjectives homework. [s14] she knows it is Jack's birthday and texts him.
+- **Does or shows:** [s07] single-fin, Sands, the board in the rack (first in ten years), Debbie's voice, running total in the back cover; trade of "¶39". [s07b] free point on entry. [s07d] "Bring adjectives"; leaves with the board.
+- **She does not know:** the condition and the promise; Lena's condition (the reveal is held); that Lena read the birthday texts; Jack's telling Lena (s08) in detail.
+
+#### Others
+- **Hale** — [s02] rematch against Lena in October. [s10] Lena led Thursday's seminar. [s19h | hale] gets the cookies; walked past Friday at six and knew whose birthday it was; his stack is twelve essays, eleven of them saying yes.
+- **Laney** — [s05] learns about Kevin and Clare from the soprano, and about Kevin's night at the Anchor from Gloria. [s09k] with the rota, at Kevin's door at 7 AM Wednesday.
+- **Gloria** — [s05] on call for the rota; told Laney about the Anchor night.
+- **Kevin** — [s09k | kevin] tells Jack his account; his mother is a Walgreens pharmacist in San Jose [s21]; for the bill.
+- **Theo** — [s09t | theo] if `s2e21_wed!="theo"`, learns the whole campaign; tells Jack about Stanislavski; hears "First, today. Before you."
+- **Fenner** — [s04] Pair 41 got an A on refraction; asked them for a page on the pilings, due Thursday.
+- **Ma / Nonna / Gina** — [s13] Ma knows Lena called Monday (not what about); Nonna: "the girl has the beans"; Gina's texts gated on `s2e19_status`. [s16] Danny learned from Ma that "the veil girl" was doing the table. [s17] Mémère's Ash Wednesday words revealed.
+- **Danny** — [s16] learns Margot played Joseph; says "That was always me. You were the baby." [sincerity] talks with Lena and thanks her.
+- **Margot** — [s16] played Joseph (Danny learns); her door is cut from s15.
+- **Peter Haddad** — [s05] the man who drove the van; Wednesday on the 420 rota.
+- **Lyle** — [s19l | lena] at the Saturday 11:30 meal.
+- **Osei** — not seen this episode (his `s2e21_osei=="candor"` gate shapes s07).
+
+#### LIVE RISKS carried out of S2E22
+- **The condition and the promise.** Unchanged from S2E21: Jack, Lena (and Osei if `s2e21_wed=="osei"`) know it; Skye does not; Theo does not. The "Don't" scene is still unplayed. Skye still does not know about Lena's condition; the reveal is held.
+- **Kevin's hometown.** S2E21 said Fremont (the ham in the garage freezer); this episode (and the bible) says San Jose. Treat San Jose as canon; reconcile S2E21's line.
+- **Branch-gated facts.** `s2e22_wed` (kevin / theo) gates s09k/s09t; `s2e22_sat` (hale / lena) gates s19h/s19l; `s2e21_wed` gates Theo's whole-campaign learning in s09t; `s2e17_wed` house path gates the holy card (s15) and Lena's telling of Mémère (s17); `s2e19_status` gates Gina's texts (s13); `s2e19_roux` gates the Barq's (s15); `s2e21_osei=="candor"` gates s07.
+- **Counts to keep.** Jack born 9:41 AM Eastern, 7 lb 11 oz; nineteen on Fri Mar 19; rota Mon Laney, Tue Margot, Wed Peter, Thu Priya, Gloria on call; ¶39 next; Hale's twelve essays (eleven yes); Forum rematch in October; the beans blessed "before six"; "Nine months to Christmas".
+- **Wardrobe and props.** Skye's single-fin (wax brown, ding in the nose); Jack's bean behind his license; Lena's second bean in her jacket pocket [candor]; the Ohio loaf (Lena keeps); the piece of cross bread (Jack, against storms); Lena's thumb blister; the Barq's [roux]; Ma's wedding soup; the holy card (Jack's ledge, house path); veiled crucifix and most statues at St. Brendan's (Sunday).
+- **Unverified.** The rain in Youngstown on the call day and the veiling custom at St. Brendan's need the Researcher.
+- **Skye.** Thread open; she knows it is his birthday and texted him; do not resolve offstage.
+- **Carried and untouched:** page 233; Mémère's cedar-chest ring; Luc's gas-leak file; `promised_skye_truth`; Cabazon postcard and swing print; Clovis holds the pack (eight left); Kevin's 35:15 sheet; the Wes line; Margot's list (Julian, Priya, Magdalena Broussard) and Preview Weekend; Lena's "One's not your business" candle.

@@ -458,6 +458,13 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 297. **Narration that answers a line before a later scene says it** (S2E21). Let the scene that owns the line deliver it.
 298. **The same kiss or exit pasted under every option** (S2E21). Extends #291; hoist into shared text or vary per option.
 299. **Anaphora runs ("not when... not when...")** (S2E21). One an episode.
+300. **A pause measured by a ritual or small unit** (S2E22: "as long as it takes X to Y", "a Glory Be", "a free throw", "a votive"). Once an episode; extends the duration buttons already cut.
+301. **Glosses that make a beat a first or a record** (S2E22: "which is new", "has never happened", "first time all week"). Cut the gloss; let the beat be new.
+302. **A kiss that leaves a mark on Jack as the button** (S2E22: flour, water, thumbprints). One an episode; extends #298.
+303. **"Good." as a one-word verdict across several speakers** (S2E22: Osei, Theo, Lena). Reassign to one voice at a time; Danny's two "Good."s are spec.
+304. **One body detail re-stamped all through a session** (S2E22: salt, wringing, dripping). About six uses an episode.
+305. **Skye opening her end-of-round lines with "Don't..."** (S2E22). Vary the opener; do not make it her stamp before the condition scene.
+306. **Background stairwell sounds as filler** (S2E22: toilet, shower, pipes). Extends #275; set a sound up once, spend it once.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);

@@ -1,0 +1,771 @@
+{
+  "scenes": {
+    "s07": {
+      "slug": "WEDNESDAY · 4:00 PM · LOW TIDE, LAS OLAS — QUESTION THE SEA",
+      "music": "Local Natives — “Wide Eyes”",
+      "set": {
+        "cat_open2": true,
+        "rel.skye.heat": "+1",
+        "resolve.jack": "-1"
+      },
+      "body": [
+        "The showers have blown through by three, and Las Olas has come out wet and shining under a sun that won’t make up its mind. Two blocks over, St. Patrick’s Day is already loud: a bagpipe being learned on a porch, green plastic bowlers hung on the bike racks, a boy in a shamrock bodysuit asleep face-down on a lawn at four in the afternoon. A block in from Seacliff Road it’s quieter. Low Tide is the way he left it a week ago: the old racks up the walls with their three yellowed longboards, the menu painted on a fourth, the varnished plywood counter, DOLORES on her Post-it on the espresso machine, the barista with the nose ring. The two surfers in hoodies are at the table under the racks, arguing, as far as Jack can tell, the same swell.",
+        "There’s a board in the short rack by the back door, the one that has stood empty for as long as Low Tide has been a coffee shop: a battered single-fin with the wax gone brown and a ding in the nose patched with something white, and it’s still dripping on the concrete.",
+        "“First board in that rack in ten years,” the barista tells him, unasked, snapping a lid onto somebody’s to-go cup, and tips her head at the back table.",
+        "Skye is already there, at the table by the long window, and she’s wet. She has come straight out of the water. The wetsuit is peeled down to her waist, black neoprene with the arms knotted round her hips, and above it she has on a green bikini top that is plainly a swimsuit and plainly not anything anybody has ever worn to a coffee shop. The salt is drying white on her shoulders and in her hair, down and long and sun-streaked and tangled, and still dripping on the binder in front of her. There’s sand on her ankles and on the concrete under the chair. A towel hangs round her neck. She’s barefoot. She has a surfer’s shoulders, which he had somehow forgotten, and the freckles have come out across her nose. It’s the girl he went out to the Point with at dawn, and it isn’t a costume at all.",
+        "The barista comes round the end of the counter with a second towel and drops it on the back of Skye’s chair in passing, like a refill. Skye throws it over her own shoulder, on top of the first one.",
+        "One of the surfers tips his chair back on two legs. “Sands?”",
+        "“Waist-high,” Skye says. “Glassy till eleven. Then the wind.”",
+        "Both of them nod, deep and respectful. The one on two legs lets his chair down. “On the single-fin?”",
+        "“I’m old-fashioned.”",
+        "He thinks about this and approves of it, and turns the approval on Jack, who is standing there in a Carhartt with a four-dollar Catechism under his arm. “You surf, bro?”",
+        "“I’m from Ohio.”",
+        "“Oh.” Real sympathy. “Sorry, man.” And they go back to their argument.",
+        "Jack sits down. There’s a coffee on his side of the table already, black, in the mug with the chip out of the handle.",
+        {
+          "if": "s2e21_c2==\"personal\" || s2e21_c3==\"personal\"",
+          "text": "“I kept it,” she says, of nothing he can see, and nothing more."
+        },
+        "“It’s the only green I own,” Skye says. “It’s St. Patrick’s. I’m observant.” She wrings a rope of hair out over the floor, well away from the book. “Last week was wardrobe. This is just what I look like at four o’clock if nobody makes me change.”",
+        {
+          "if": "s2e21_gown==\"wit\"",
+          "text": "She looks at his Carhartt, buttoned to the second snap, and down at her own bare shoulders, salted white. “Last week you told me I was overdressed. I took the note.” A drop runs off the end of her hair and down the inside of her arm. “So. Now who’s underdressed?”"
+        },
+        {
+          "if": "s2e21_wed==\"osei\"",
+          "text": "He looks. There isn’t a version of the next minute in which he doesn’t, and his body answers the salt on her collarbone and the wet green of the swimsuit all at once and frankly, before the rest of him has been asked. He knows this one better than he knew the gown, and that’s worse.",
+          "else": "He looks. There isn’t a version of the next minute in which he doesn’t, and his body answers the salt on her collarbone and the wet green of the swimsuit all at once and frankly, before the rest of him has been asked. He knows this one better than he knew the gown."
+        },
+        "For ten minutes it’s Oceanography. After the pilings Fenner asked Pair 41 for a page on them, the first optional assignment anybody can remember him setting, and she has written her half in her small fast capitals and wants his. The refraction project from Tuesday is in her folder with its red A in the corner. She takes it out long enough to say, “An A’s a grade. It isn’t a review,” and puts it back. She reads his paragraph on the gooseneck barnacles, crosses out *weird* and writes *sessile*, and slides it back to him.",
+        {
+          "if": "s2e21_c3==\"reframe\" && duel.cat1.heart<=1 && duel.cat1.rigor>=2",
+          "text": "Before the book, she sits back with the two towel ends in her fists. “I said I’d turn it over till Friday,” she says. “I turned it over till Saturday.” She looks out at the bike path. “A God who doesn’t need anything from me. I’ve never been in a room with anybody like that. I don’t know how you’d play it.” And she opens the binder."
+        },
+        {
+          "if": "s2e21_c3==\"reframe\" && duel.cat1.heart>=2 || s2e21_c3==\"reframe\" && duel.cat1.rigor<=1",
+          "text": "Before the book, she sits back with the two towel ends in her fists. “I turned that over all week,” she says. She looks out at the bike path. “A God who doesn’t need anything from me. I’ve never been in a room with anybody like that. I don’t know how you’d play it.” And she opens the binder."
+        },
+        {
+          "if": "s2e21_c3==\"press\"",
+          "text": "Before the book, she puts another paperback on the table beside it: the *Confessions*, a Penguin, the spine already broken in two places. “Two books in,” she says. “He’s very upset about a pear.” She puts it away and opens the binder."
+        },
+        {
+          "if": "s2e21_c3==\"concede\"",
+          "text": "Before the book, she taps its cover with one finger. “You said you can’t prove it, you believe it. I want to see if that holds up once there are proofs on the table.” She opens the binder."
+        },
+        "The binder is open to the tab KNOWING, and the three highlighters lie along the top of it in their row: yellow, she agrees; pink, she doesn’t; green, a good line. The book is beside it, the Borders sticker going soft at one corner. She turns the pages on past the end of last week.",
+        {
+          "if": "s2e21_c1==\"concede\"",
+          "text": "On the way past twenty-seven he catches START LOOKING, still in its box across the top of the page, and under it, new, in green, smaller: *still looking.*"
+        },
+        "The receipt is in the gutter at thirty-one. Down the page, *converging and convincing arguments* has gone yellow. A line above it *proofs* is pink, with a question mark in the margin the size of a fishhook.",
+        "“In my business,” she says, “‘convincing’ is a note you give an actor who isn’t.”",
+        "She moves her finger down a paragraph to thirty-two, where the book hands the floor to Augustine, and reads it off the page: *Question the beauty of the sea.*",
+        "“So I did,” Skye says. “For two hours. I’m reporting back.”"
+      ],
+      "choices": [
+        {
+          "tag": "Wit",
+          "text": "“You’re dripping on the desire for God.”",
+          "set": {
+            "s2e22_suit": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“You’re dripping on the desire for God.”",
+            "“The desire for God was *last* week. Keep up.” She wrings the end of her hair out onto the floor, not the page, and from the counter the barista sends a third towel sliding down the plywood after it."
+          ],
+          "goto": "s07a"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“How was it out there?”",
+          "set": {
+            "s2e22_suit": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“How was it out there?”",
+            "“Perfect.” She looks down at the book when she says the rest. “That’s my problem.”",
+            "She says it to the paragraph, so it’s the argument she means, mostly. He hears the rest of it anyway. Skye uncaps the yellow."
+          ],
+          "goto": "s07a"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Look at the page.*",
+          "set": {
+            "s2e22_suit": "restraint",
+            "trait.control": "+1",
+            "soul.restraint": "+1"
+          },
+          "response": [
+            "He looks at the page. Thirty-one, the receipt, her pink fishhook. He reads it to the bottom and goes on into thirty-two, while a drop off the end of her hair lands on the plywood beside his hand.",
+            "“Coward,” she says, pleasantly, and turns the book round to face him at thirty-one.",
+            "His eyes stay on the print. Eventually, a sentence or two along, he is actually reading it."
+          ],
+          "goto": "s07a"
+        }
+      ]
+    },
+    "s07a": {
+      "slug": "WEDNESDAY · 4:15 PM · LOW TIDE — ¶31–32",
+      "duel": "cat2",
+      "body": [
+        "She paddled out at Sands at one o’clock, she says, after the wind came up and everybody else came in, and sat past the break for two hours on the board in the chop, and did exactly what it says. She asked. She tells it to him straight across the table with her elbows on the binder.",
+        "“I looked at it for two hours. The light on it. The way a set comes in and the first wave’s never the best one, so you wait. A harbor seal came up next to the board twice and looked at me like I was in its seat. Pelicans went over so low I could hear the air in them. At about two-fifteen the sun came out on the water all at once, a mile wide. I looked at it like it was somebody across a table I was trying to read.” She stops. “It was beautiful every single time, and it didn’t say a word. It wasn’t saying anything. I was.”",
+        "“In the wind?” he says. “Everybody else had come in.”",
+        "“The wind was the point. Anybody thinks a glassy morning’s beautiful. I wanted to see if it still was when it was ugly.” She pulls the towel off her neck and wrings it out over the floor, and the water patters on the concrete. “It was. That’s what bothers me. It was gorgeous while it was trying to drown me.”",
+        "Behind her, through the long window, past the bike path and the ice plant and the lifeguard tower, there’s a strip of it, blue going to green, with the sun on it in pieces.",
+        "“Here’s what I think it is,” she says. “We’re animals. For about a hundred thousand years the people who liked the look of water and a long horizon lived near the fish and the fresh water, and they could see who was coming, and they had kids. The ones who didn’t care for the view didn’t do as well. I’m descended from a very long line of people who thought the ocean was gorgeous.” She points the capped end of the yellow highlighter at the window. “So of course it feels like a message. It *is* one. It’s from my great-great-everybody, and it says *stay near the fish*. The beauty’s in the wiring. That’s exactly why it feels like somebody’s talking. Same with fire. Same with a baby’s face. Same with a sunset, which is just the air being dirty in the right direction.”",
+        "She picks the Catechism up and holds it to her ear like a telephone, and she’s a recorded surf line, a voice Jack has never heard in his life and knows anyway: a man who has been awake since four and stoned since five, reading the report off a napkin.",
+        "“*Thanks for calling the Sands surf report. Motion: steady. Becoming: waist to chest. Contingency: high.*” A long, contented pause, full of static. “*Order and beauty: glassy all morning, blown out by noon.*”",
+        "Still on the phone, still in it, as slow as the tide: “And if everything needs a reason, so does yours. Who made him? Don’t say *nobody*. If *nobody* is allowed, I’ll take it for the sea and save us a step.” She hangs the book up on the table. “Beep.”",
+        "It’s a good one, and an old one, the one every kid asks in second grade and Hume made respectable. And she isn’t wrong about the water. He was eighteen before he ever saw an ocean, and on his first morning at Marisol he stood at the bluff rail with his hands in the Carhartt and felt spoken to, and couldn’t have told anybody who was doing the talking. Before that the biggest water he knew was Lake Milton in August, brown at the edges, and the Mahoning, which nobody in Youngstown has ever called beautiful to its face. It seemed to him that first morning the most obvious thing in the world that somebody had meant it. It still does. The trouble is that she has just told him exactly why it would."
+      ],
+      "choices": [
+        {
+          "tag": "Press",
+          "text": "*Contingency — not who knocked over the first domino. What’s holding the line up right now.*",
+          "set": {
+            "s2e22_c1": "press",
+            "duel.cat2.rigor": "+1",
+            "skye_cat_jack": "+1"
+          },
+          "response": [
+            "“Everything you sat on for two hours might not have been,” he says. “The wave, the board, you. Things that might not be don’t explain why they are. Something has to be that can’t not be, or there’d be nothing at all. That’s Aquinas. That isn’t who started it. It’s who’s holding it up this afternoon.”",
+            "“Or it’s just there,” she says at last. “No reason. Brute. Some things are.”",
+            "“Then you’re the one stopping at the sea. Not me.”",
+            "She doesn’t answer that. Her hair drips on the open page, and a dark spot spreads slowly over *contingency*, and she lets it."
+          ],
+          "goto": "s07b"
+        },
+        {
+          "tag": "Reframe",
+          "text": "*The sea isn’t the speaker. It’s the letter.*",
+          "set": {
+            "s2e22_c1": "reframe",
+            "duel.cat2.rigor": "+1",
+            "skye_cat_jack": "+1"
+          },
+          "response": [
+            "“Augustine never says the sea talks,” he says. “Read the next line. *Their beauty is a profession* — and the book puts the Latin in brackets, *confessio*. A confession. Somebody else’s. You don’t ask a letter what it thinks. You ask who wrote it.”",
+            "“Letters get forged.”",
+            "“Then somebody forged it. Still somebody.”",
+            "“Huh,” she says.",
+            "She turns in her chair and looks out the long window at the strip of blue past the bike path, and keeps looking, with her chin up, till a bicycle goes by and breaks it."
+          ],
+          "goto": "s07b"
+        },
+        {
+          "tag": "Concede",
+          "text": "“You’re right that *nobody* is allowed. The book doesn’t say you can’t stop at the sea. It says you won’t.”",
+          "set": {
+            "s2e22_c1": "concede",
+            "duel.cat2.heart": "+1",
+            "skye_cat_skye": "+1",
+            "rel.skye.trust": "+1"
+          },
+          "response": [
+            "“You’re right that *nobody* is allowed,” he says. “The book doesn’t say you can’t stop at the sea. It says you won’t. Thirty-four says the world doesn’t have its own first principle in it, or its own last end. It’s betting on you. You’ll keep asking why there’s a sea. If you can stop asking, you win.”",
+            "She’s quiet. Then: “I can’t stop asking. You know I can’t.”",
+            "Out on the bike path a kid on a beach cruiser goes by with a board under one arm, steering with the other, and she watches him out of the window."
+          ],
+          "goto": "s07b"
+        },
+        {
+          "tag": "Riposte",
+          "text": "“Two hours on a board to test one paragraph. Augustine would’ve hired you.”",
+          "set": {
+            "s2e22_c1": "riposte",
+            "duel.cat2.wit": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            "“Two hours on a board to test one paragraph. Augustine would’ve hired you.”",
+            "“Augustine couldn’t *afford* me.” The delight gets to her face first and the argument gets there second, salt and freckles and all. “I’d have charged him by the paragraph. Thirteen books about himself. He’d have been good for it.”",
+            "Under the racks the two surfers have stopped pretending not to listen. One of them lifts his cup to her, gravely, and the other one nods."
+          ],
+          "goto": "s07b"
+        }
+      ]
+    },
+    "s07b": {
+      "slug": "WEDNESDAY · 4:45 PM · LOW TIDE — ¶33–34",
+      "duel": "cat2",
+      "set": {
+        "duel.cat2.skye": "+1",
+        "skye_cat_skye": "+1"
+      },
+      "body": [
+        "Thirty-three, and she’s on her feet before he’s finished reading it, barefoot on the concrete with one towel swung round her shoulders like a shawl, and she’s somebody else: a woman in a caftan and a great many bracelets who teaches a Saturday class in a converted dry cleaner’s in Studio City and has not sat down since 1979.",
+        "“*Openness!*” she tells the shop, clapping on the beat. “From the *diaphragm!* *Truth and beauty* — find it in the pelvis, people, it is not in your *face!* *Moral goodness* — on the out-breath! *Freedom* — shake out your hands! And *conscience*” — she wheels on Jack, bracelets and all — “where does it *live?* *Show* me!”",
+        "Behind the counter the barista says “*Yes*,” to nobody in particular. One of the surfers says, without turning round, “My sister took that class,” and goes back to his argument. Skye sits down.",
+        "She puts the towel back round her neck and holds both ends of it, and looks at the binder instead of at him.",
+        "“I know whose voice my conscience has,” she says. “It’s my mother’s. It says *again*, and *smile*, and *they’re not paying you to have a face like that.*” A drop of water runs out of her hair and down the side of her neck, and she leaves it. “I’ve had Debbie’s voice in my head since I was eleven. You’d call it God’s. I know exactly which lot she parks in.”",
+        "“What does it say when you get it right?”",
+        "“It doesn’t. That’s how you know you got it right.”",
+        "The surfers argue on under the racks. The stereo goes on into the next song. Jack has his pencil in his hand and nothing to do with it. He knows Debbie the way you know the weather in another state: by what it has done to the person who just drove in from there. His own conscience talks in Ma’s voice about half the time — *Did you eat? Don’t lie to me* — and in a nun’s the rest. But under both of them there has always been something else that doesn’t sound like anybody, and that he has never been able to do an impression of.",
+        "“That’s all it is,” she says, more quietly. “Whoever raises you puts a voice in. Later you hear it and think it came down through the ceiling. Some kids get a nice one.” She turns the book round to him and puts her finger at the end of thirty-three, on the line about the soul: *the seed of eternity we bear in ourselves, irreducible to the merely material.* “And this. I can make a whole theater believe there’s somebody in here. It’s my job. A soul’s the oldest special effect there is.” She leans back. “I go in, I find where she keeps it — the girl I’m playing — her shoulders, her mouth, whatever — and eight hundred people swear there’s somebody in there. There isn’t. There’s me, and a lighting cue. When they call cut she’s gone, and I go to craft services and eat a bagel.”",
+        "He thinks of Nonna at Christmas in the front room on Glenwood, who couldn’t always say which grandson he was, and who knew to the day how many Sundays were left before Lent. Somebody in there was keeping the calendar. He would bet the house on it. He can’t prove it to a girl who makes eight hundred people believe in somebody who isn’t there."
+      ],
+      "choices": [
+        {
+          "tag": "Press",
+          "text": "*The debunking saws off its own branch — and Debbie never asked whether a line was true.*",
+          "set": {
+            "s2e22_c2": "press",
+            "duel.cat2.rigor": "+1",
+            "skye_cat_jack": "+1"
+          },
+          "response": [
+            "“If your conscience is only Debbie,” he says, “so is the voice telling you it’s only Debbie. You don’t get to trust the one that tells you not to trust it. Some of it’s her. Not the part that asks whether it’s *true*.” He leans in over the plywood. “Last week you asked me whether a line was true or just a line. Debbie never asked you that in your life. She wanted it to land.”",
+            "“Maybe that part’s just me,” she says.",
+            "“Then it’s you. It isn’t Debbie. That’s all I need.”",
+            "Skye looks at him for a good while. Then she writes something in pink, and under it, smaller, something in yellow."
+          ],
+          "goto": "s07c"
+        },
+        {
+          "tag": "Personal",
+          "text": "*“You cried in a parking garage the day you got everything you wanted. That’s the longing for the infinite.”*",
+          "cue": "Skye will remember that.",
+          "set": {
+            "s2e22_c2": "personal",
+            "duel.cat2.rigor": "+1",
+            "skye_cat_jack": "+1",
+            "rel.skye.friction": "+1",
+            "rel.skye.trust": "-1"
+          },
+          "response": [
+            "“You cried in a parking garage the day you got everything you wanted,” he says. “That’s the longing for the infinite. You told me so, at this table.”",
+            "She looks at the window, and back at him, level. “I told you that as a *story*.”",
+            "“I know.”",
+            "“Okay.” She writes something in pink and tips the binder so he can’t see it. Her face has gone very still and very friendly."
+          ],
+          "goto": "s07c"
+        },
+        {
+          "tag": "Concede",
+          "text": "“You’re right that some of it’s her. Mine’s got Ma in it, and Nonna, and a nun at St. Brigid’s with a yardstick.”",
+          "set": {
+            "s2e22_c2": "concede",
+            "duel.cat2.heart": "+1",
+            "skye_cat_skye": "+1",
+            "rel.skye.trust": "+1"
+          },
+          "response": [
+            "“You’re right that some of it’s her,” he says. “Mine’s got Ma in it, and Nonna, and a nun at St. Brigid’s with a yardstick. The book doesn’t say conscience comes to you clean. It says it comes.”",
+            "“A yardstick,” she says. “That’s so much worse than a ruler. Did it work?”",
+            "“On the knuckles, every time.”",
+            "“That’s so much worse.” And then, straight across the table: “Thank you for not telling me she’s God.”",
+            "Behind the counter the barista reaches up and turns the stereo down a notch, as if somebody had asked her to."
+          ],
+          "goto": "s07c"
+        },
+        {
+          "tag": "Riposte",
+          "text": "“If your conscience is your mother, mine’s mine. And mine would eat yours.”",
+          "set": {
+            "s2e22_c2": "riposte",
+            "duel.cat2.wit": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            "“If your conscience is your mother, mine’s mine,” he says. “And mine would eat yours.”",
+            "“She’d *try*. Debbie’s undefeated.” Skye grins and doesn’t bother hiding it. “Put them in a room. I’d pay.”",
+            "Jack laughs, loud enough that both surfers look over to see what they’ve missed."
+          ],
+          "goto": "s07c"
+        }
+      ]
+    },
+    "s07c": {
+      "slug": "WEDNESDAY · 5:10 PM · LOW TIDE — ¶35–38",
+      "duel": "cat2",
+      "body": [
+        "“— no, because look at thirty-seven.” She’s already turning the book round to him across the plywood, her finger under the line before he’s found it: *persuade themselves that what they would not like to be true is false or at least doubtful.* “People who don’t believe are people who don’t *want* to. That’s last week’s move with footnotes. Fine. Then you’re a person who *does* want to.” She turns her hand over on the table, palm up, palm down. “It cuts exactly as deep both ways, and your book only swings it in one direction.”",
+        "“That isn’t what it —”",
+        "“I’m not done.”",
+        "She flips back two pages without looking. “And this one admits it. Thirty-five. The proofs can *predispose* you. That’s what a doctor says about a family history.” She taps the word. “The proofs get you to a *first cause*. Nobody ever lit a candle for a first cause. You need him to show up and *say* something.” She goes back to thirty-seven. “And this list. Why it’s hard to see him. The senses, the imagination, and — my favorite — *disordered appetites*.” She looks at him over the top of the book, with salt in her eyelashes. “Your church has a footnote for being hungry for the wrong thing. I think that’s the most honest sentence in the chapter.” Jack, sitting across from a girl in a bikini top with the salt drying on her, is not at this moment the man to argue with her about disordered appetites, and from her face she’s aware of it. She runs her finger down to thirty-eight. “And then it just says so. Man needs to be *enlightened by God’s revelation*. You can’t get there on your own steam. So the proofs are the warm-up. They’re the caftan lady.” She sits back. “I respect that, actually. I respect a script that knows where its hole is.”",
+        "“Thirty-six says reason gets there with *certainty*,” he says. “That’s a lot for a book to claim before it admits it needs help.”",
+        "“Certain *what*, though? Certain there’s a first cause. That’s like being certain there’s a writer because there’s a script.” She shrugs a salted shoulder. “Great. Is he any good? Does he know my name? Is he going to give me notes?”",
+        "“That’s the difference between knowing *that* and knowing *who*.”",
+        "“That’s a writers’-room distinction. I’ve been in writers’ rooms. They make those up at two in the morning so nobody has to go home.”",
+        "The sun has gone long on the bike path, and the bikes going by throw their shadows in across the floor and out again. One of the surfers has left. The other has his hood up and his eyes shut and may or may not be listening.",
+        "She’s right about thirty-seven, and he knows it from the inside. He has talked himself out of God for an hour at a time on bad nights, because an hour without him would have been easier. It never lasted, and it never felt like thinking. He isn’t sure that proves what he’d like it to.",
+        "And then she sits up very straight in the plastic chair, and lays one hand on the open book to swear on it, and is, as far as Jack can tell, a council father at the Vatican in 1870, an old one, with a cold, in a heavy Latin English that carries every syllable in on a cushion: “*God, the first principle and last end of all things, can be known — with certainty — by the natural light of human* —”",
+        "She drops it on the last word like a hot plate.",
+        "“— reason. Great. So where’s Chapter Two?”"
+      ],
+      "choices": [
+        {
+          "tag": "Press",
+          "text": "*If wanting cuts both ways, it can’t decide anything.*",
+          "key": "When Skye said wanting it to be true cut both ways, you told her that was exactly why it couldn’t settle anything — the argument was still on the table.",
+          "set": {
+            "s2e22_c3": "press",
+            "duel.cat2.rigor": "+1",
+            "skye_cat_jack": "+1"
+          },
+          "response": [
+            "“You’re right, it cuts both ways,” he says. “So it can’t settle anything. If I believe because I want to and you don’t because you don’t, that’s two biographies. Lewis has a name for it — explaining why the other guy thinks what he thinks before you’ve shown he’s wrong. The argument’s still sitting on the table where we left it, and somebody has to answer it.”",
+            "“What’s the name?”",
+            "“Bulverism.”",
+            "“That’s a terrible name. It sounds like something cattle get.”",
+            "Skye puts one finger down on the plywood between the two mugs, where the argument is, and holds it there while she thinks."
+          ],
+          "goto": "s07d"
+        },
+        {
+          "tag": "Concede",
+          "text": "“The proofs get you to the door. They don’t open it. The book says so itself.”",
+          "key": "When Skye said the proofs only got you to a first cause, you granted that they get you to the door, and that the book says so itself.",
+          "set": {
+            "s2e22_c3": "concede",
+            "duel.cat2.heart": "+1",
+            "skye_cat_skye": "+1",
+            "rel.skye.trust": "+1"
+          },
+          "response": [
+            "“The proofs get you to the door,” he says. “They don’t open it. The book says so itself. That’s why there’s a Chapter Two.”",
+            "“A door.” She turns ahead to thirty-nine, and back to thirty-five. “Okay. I’ll take a door.”",
+            "Her thumb finds the receipt in the gutter and rests on it, and she sits like that a while, with her door."
+          ],
+          "goto": "s07d"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "*Tell her the truth about wanting.*",
+          "cue": "Skye will remember that.",
+          "key": "When Skye said you believed because you wanted to, you told her that if you believed what you wanted, you’d believe a lot less of it.",
+          "set": {
+            "s2e22_c3": "sincerity",
+            "duel.cat2.heart": "+1",
+            "skye_cat_jack": "+1",
+            "rel.skye.trust": "+1",
+            "rel.skye.heat": "+1"
+          },
+          "response": [
+            "“If I believed what I wanted, Skye, I’d believe a lot less of it.”",
+            "That’s all of it. He leaves it on the table.",
+            "She looks at him for a long time across the plywood, with the low light on one side of her face and salt in her eyebrows.",
+            "“That’s the first thing you’ve said that I believe completely.”",
+            "Her pen is lying on the open book where she put it down. She leaves it there."
+          ],
+          "goto": "s07d"
+        },
+        {
+          "tag": "Riposte",
+          "text": "“You want Chapter Two. That’s the most promising thing anybody’s said at this table.”",
+          "key": "When Skye asked where Chapter Two was, you told her wanting it was the most promising thing anyone had said at that table.",
+          "set": {
+            "s2e22_c3": "riposte",
+            "duel.cat2.wit": "+1",
+            "rel.skye.warmth": "+1"
+          },
+          "response": [
+            "“You want Chapter Two,” he says. “That’s the most promising thing anybody’s said at this table.”",
+            "“Don’t get *excited*.” But she’s laughing, and she tips the binder up so he can see the margin by thirty-eight, where at some point in the last five minutes she has drawn a small door, in green, with a knob. “I don’t trust a door without a knob,” she says."
+          ],
+          "goto": "s07d"
+        }
+      ]
+    },
+    "s07d": {
+      "slug": "WEDNESDAY · 5:40 PM · LOW TIDE — BRING ADJECTIVES",
+      "duel": "cat2",
+      "set": {
+        "cat_section": 2,
+        "cat_sessions": "+1",
+        "cat2_done": true
+      },
+      "body": [
+        "Past half five the cloud lifts off the water and the sun comes in under it, straight down the length of the shop, and lays the shadows of the board racks across the concrete like a fence. Her hair is nearly dry, gone stiff and pale with salt, and the sand under her chair has dried to powder. Thirty-eight is done. She sits back in the plastic chair.",
+        {
+          "if": "duel.cat2.heart>=2",
+          "text": "“Draw,” she says. “The director’s awake this time, and he still couldn’t pick.” She opens the back cover and writes DRAW inside it, in pink."
+        },
+        {
+          "if": "duel.cat2.heart<=1 && duel.cat2.rigor>=2",
+          "text": "“Fine,” she says, to the book, and then to him. “Roman numerals two and three to you.”"
+        },
+        {
+          "if": "duel.cat2.heart<=1 && duel.cat2.rigor>=2 && s2e22_c3==\"press\"",
+          "text": "“The two biographies. That one’s going in green.”"
+        },
+        {
+          "if": "duel.cat2.heart<=1 && duel.cat2.rigor>=2 && s2e22_c3!=\"press\" && s2e22_c2==\"press\"",
+          "text": "“Debbie and the line. I’m going to hear that every time she calls.”"
+        },
+        {
+          "if": "duel.cat2.heart<=1 && duel.cat2.rigor>=2 && s2e22_c3!=\"press\" && s2e22_c2!=\"press\" && s2e22_c1==\"press\"",
+          "text": "“The thing holding it up this afternoon. I’ll be thinking about that out past the break.”"
+        },
+        {
+          "if": "duel.cat2.heart<=1 && duel.cat2.rigor>=2 && s2e22_c3!=\"press\" && s2e22_c2!=\"press\" && s2e22_c1==\"reframe\"",
+          "text": "“The letter, and who wrote it. That was good. Don’t tell anybody I said so.”"
+        },
+        {
+          "if": "duel.cat2.heart<=1 && duel.cat2.rigor<=1",
+          "text": "“Mine,” she says. “And I didn’t even need the wetsuit.” She opens the back cover and writes the score inside it in green, and underlines it."
+        },
+        {
+          "if": "s2e22_c2==\"personal\"",
+          "text": "“The parking garage was a cheap shot,” she says. “It worked. I hate that it worked.”"
+        },
+        {
+          "if": "duel.cat1.heart<=1 && duel.cat1.rigor>=2 && duel.cat2.heart<=1 && duel.cat2.rigor>=2",
+          "text": "Along the bottom of the back cover she keeps the running total. She writes it now, small: *COSTIGAN 2 — SKYE 0.* “Don’t,” she says, before he can."
+        },
+        {
+          "if": "duel.cat1.heart<=1 && duel.cat1.rigor>=2 && duel.cat2.heart<=1 && duel.cat2.rigor<=1",
+          "text": "Along the bottom of the back cover she keeps the running total. She writes it now, small: *COSTIGAN 1 — SKYE 1.* “Now it’s a *show*.”"
+        },
+        {
+          "if": "duel.cat1.heart<=1 && duel.cat1.rigor>=2 && duel.cat2.heart>=2",
+          "text": "Along the bottom of the back cover she keeps the running total. She writes it now, small: *COSTIGAN 1 — SKYE 0 — DRAW 1.* “That’s a lead. Barely.”"
+        },
+        {
+          "if": "duel.cat1.heart>=2 && duel.cat2.heart<=1 && duel.cat2.rigor>=2",
+          "text": "Along the bottom of the back cover she keeps the running total. She writes it now, small: *COSTIGAN 1 — DRAW 1.* “Don’t gloat. You’re bad at it.”"
+        },
+        {
+          "if": "duel.cat1.heart>=2 && duel.cat2.heart<=1 && duel.cat2.rigor<=1",
+          "text": "Along the bottom of the back cover she keeps the running total. She writes it now, small: *SKYE 1 — DRAW 1.* “Now we’re getting somewhere.”"
+        },
+        {
+          "if": "duel.cat1.heart>=2 && duel.cat2.heart>=2",
+          "text": "Along the bottom of the back cover she keeps the running total. She writes it now, small: *DRAW 2.* “The director’s on a *bender*.”"
+        },
+        {
+          "if": "duel.cat1.heart<=1 && duel.cat1.rigor<=1 && duel.cat2.heart<=1 && duel.cat2.rigor>=2",
+          "text": "Along the bottom of the back cover she keeps the running total. She writes it now, small: *SKYE 1 — COSTIGAN 1.* “Now it’s a *show*.”"
+        },
+        {
+          "if": "duel.cat1.heart<=1 && duel.cat1.rigor<=1 && duel.cat2.heart<=1 && duel.cat2.rigor<=1",
+          "text": "Along the bottom of the back cover she keeps the running total. She writes it now, small: *SKYE 2 — COSTIGAN 0.* “Don’t worry. It’s a long book.”"
+        },
+        {
+          "if": "duel.cat1.heart<=1 && duel.cat1.rigor<=1 && duel.cat2.heart>=2",
+          "text": "Along the bottom of the back cover she keeps the running total. She writes it now, small: *SKYE 1 — COSTIGAN 0 — DRAW 1.* “Still mine. Barely.”"
+        },
+        "She takes the receipt out of the gutter at thirty-one and moves it on, past the end of thirty-eight, and turns the book round to him with one finger under the heading of thirty-nine: *How Can We Speak about God?*",
+        "“Next Wednesday,” she says. “How you can say anything about him at all, if he’s that far off. Bring adjectives.”",
+        "“How many?”",
+        "“If he’s infinite?” She caps the last highlighter. “Bring a truck.” She points the capped end at him. “And Thursday, the tide graph. In ink. I’m not doing your subtraction twice.”",
+        "She packs the binder and the highlighters into a canvas bag that has been to a great many beaches, and gets up, and lifts the single-fin out of the rack by the back door, and the barista stops steaming milk to watch the rack go empty again. Skye goes out the back, through the door propped open on a cinder block onto the bike path, with the board under her arm and the towel over her shoulder, barefoot on the warm concrete, and turns toward the water, and doesn’t look back. At the table by the wall the surfer with his hood up opens his eyes long enough to watch the single-fin go past the window, says “Nice,” to nobody, and shuts them again.",
+        "The barista comes over with a rag and wipes up the ring of seawater where the binder was. “Same time next week?” she says, to Jack. She looks at the empty slot in the rack. “She paid for the towels. All three. She tipped like it was a bar.”",
+        "“Yes,” he says.",
+        "He opens his own copy to thirty-nine. The stranger with the pencil quit back at thirty, at the *yes*; this far in, the margins are his. He writes *adjectives* at the top of the page, and under it, after a minute, a question mark. The coffee’s gone cold, and the sand is drying to nothing on the concrete under her chair, and he’s already arguing thirty-nine with her in his head, a week early, and glad, all the way down, that it’s a long book."
+      ],
+      "next": "s08"
+    },
+    "s08": {
+      "slug": "WEDNESDAY · 6:20 PM · DELGADO HALL, THE SECOND-FLOOR KITCHEN — KEEP OUT",
+      "set": {
+        "told_lena_cat2": true,
+        "rel.lena.trust": "+1"
+      },
+      "body": [
+        "The second-floor corridor smells of fig and orange peel and hot oil from the stairwell door on, and the smell gets stronger toward the kitchen, whose door stands half shut with a sheet of printer paper taped to it at eye level.",
+        {
+          "type": "doc",
+          "title": "On the second-floor kitchen door",
+          "text": "KEEP OUT. THIS MEANS YOU, JACK COSTIGAN. EVERYBODY ELSE: KNOCK AND BE SWORN TO SECRECY."
+        },
+        "Inside, over a sound of frying, Laney is humming something with a key change in it. Jack knocks on the frame under the sign; it seems the least he can do. The door opens a foot and Lena is in the gap: flour to the elbows, a smear of it along one cheekbone, a quilted oven mitt on her left hand with a red lobster on it. She stands so that the gap is exactly as wide as she is. Her hair is tied up in a dish towel, and there’s flour in the towel too.",
+        "“You can’t come in.”",
+        "“I know. It says.”",
+        "“It says *you*, specifically. Laney wanted it in red. I talked her down to black.” She looks at the Catechism under his arm, and back at him, and the fig and the hot oil come out round her into the corridor. “Is it after?”",
+        "“It’s after.”",
+        {
+          "if": "s2e21_wed==\"osei\"",
+          "text": "He tells her the funny part first. The two surfers who asked Skye about the swell like she was the harbor patrol, and nodded at her answer like it settled a bet. The barista with a second towel nobody had asked for, and then a third. “She said it was the only green she owns. For St. Patrick’s.” The corner of Lena’s mouth goes, a very little, and comes back. The rest of it after that, because the rest is why he’s standing at this door: that Skye came in straight out of the water; that she was in a wetsuit peeled down to her waist and tied there by the arms; that above it she had on a bikini top — at which Lena looks past him down the corridor to the fire door, and back; and that they argued thirty-one to thirty-eight for an hour and a half, whether you can get to God from the ocean or from the inside of your own head, and whether you can get anywhere at all without being told.",
+          "else": "He tells it in order, the way it happened. That Skye came in straight out of the water, in a wetsuit peeled down to her waist and tied there by the arms, and above it a bikini top, green — “the only green she owns,” she said, “for St. Patrick’s.” The two surfers who talked swell with her like she was one of them. The barista’s second towel. That they argued thirty-one to thirty-eight for an hour and a half, whether you can get to God from the ocean or from the inside of your own head, and whether you can get anywhere at all without being told."
+        },
+        {
+          "if": "duel.cat2.heart>=2",
+          "text": "“A draw.”"
+        },
+        {
+          "if": "duel.cat2.heart<=1 && duel.cat2.rigor>=2",
+          "text": "“I took it.”"
+        },
+        {
+          "if": "duel.cat2.heart<=1 && duel.cat2.rigor<=1",
+          "text": "“She took it. Fair.”"
+        },
+        "“She kept her hands to herself.”",
+        "Lena is quiet for as long as it takes whatever is in the oil behind her to need turning. Inside, Laney turns it, and goes on humming.",
+        "“Thank you for telling me.”",
+        "She says it beautifully, the way she’d thank a priest at the church door for a homily she means to argue with on the walk home, and he would rather she had thrown the oven mitt at him.",
+        "She takes the oven mitt off. She puts it back on. The lobster looks at him.",
+        "The gown was a joke, last week, and it was Skye’s own joke, and Lena could leave it where Skye put it. The wetsuit is what Skye looks like. He can see Lena know it, and keep it on her side of the door.",
+        "“Was she good?”",
+        "“Yes.”",
+        "“Good.” Sharp, and quiet."
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“You went polite on me.”",
+          "cue": "Lena will remember that.",
+          "key": "When you told Lena about Skye’s second Wednesday and she went polite on you, you told her so, and she came back.",
+          "set": {
+            "s2e22_door": "candor",
+            "trait.candor": "+1",
+            "rel.lena.trust": "+1",
+            "soul.honesty": "+1"
+          },
+          "response": [
+            "“You went polite on me.”",
+            "“I did.” She doesn’t pretend otherwise; she breathes in through her nose, flour and all. “Give me a second to come back from it.”",
+            "She takes the second. He watches her take it, her eyes on the floor tile between his boots and her socks, and then her chin comes up. “There. I’m back.” She leans out through the gap and kisses him, deliberately, with the oven mitt still on and held out to one side so it won’t get flour on the Carhartt.",
+            "She goes back in with the mitt raised over her shoulder like a salute."
+          ],
+          "goto": "s08a"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“It’s Wednesday. That’s all it is.”",
+          "key": "When you told Lena about Skye’s second Wednesday, you told her it was only Wednesday, and she said she knew.",
+          "set": {
+            "s2e22_door": "sincerity",
+            "trait.sincerity": "+1",
+            "rel.lena.warmth": "+1"
+          },
+          "response": [
+            "“It’s Wednesday. That’s all it is.”",
+            "“I know what it is.” Quiet, not sharp. She looks down at the lobster. And again, softer: “I know what it is, Jack.”",
+            "She kisses him, short, with flour on her mouth, and steps back, and the door closes to a hand’s width and stays there long enough for him to see her face in the gap, and that she’s all right."
+          ],
+          "goto": "s08a"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Wait. Let her come back on her own.*",
+          "key": "When you told Lena about Skye’s second Wednesday, you waited until she came back on her own.",
+          "set": {
+            "s2e22_door": "restraint",
+            "trait.control": "+1"
+          },
+          "response": [
+            "He waits, and lets the frying fill it.",
+            "The mitt comes off. Goes back on. She looks up.",
+            "“Friday is still mine.”",
+            "She kisses his cheek and goes back in, and before the door is shut he hears her telling Laney the oil’s too hot."
+          ],
+          "goto": "s08a"
+        }
+      ]
+    },
+    "s08a": {
+      "slug": "WEDNESDAY · 6:40 PM · DELGADO HALL, THE EAST STAIRWELL — GREEN",
+      "body": [
+        "Somebody has taped a paper shamrock to the fire-extinguisher case in the east stairwell, and from the third floor comes the sound of a party starting early: a speaker in a propped-open door, a girl teaching a corridor to jig in flip-flops. Jack stops on the landing between two and three and opens the RAZR. Two texts, both from Theo.",
+        {
+          "type": "sms",
+          "from": "Theo",
+          "text": "costigan. the bluff. sigma rho. green beer, a fiddle, not one irish person",
+          "time": "6:12 PM"
+        },
+        {
+          "type": "sms",
+          "from": "Theo",
+          "text": "i am wearing velvet. come and witness it",
+          "time": "6:31 PM"
+        },
+        "And upstairs, on the door of 420, which he passed this morning on his way to the showers, there’s Laney’s casserole rota, in three colors of Sharpie, through Easter."
+      ],
+      "choices": [
+        {
+          "tag": "Theo",
+          "text": "*Go find Theo on the bluff.*",
+          "key": "After telling Lena, you went to find Theo at a St. Patrick’s party on the bluff.",
+          "set": {
+            "s2e22_wed": "theo"
+          },
+          "goto": "s09t"
+        },
+        {
+          "tag": "Kevin",
+          "text": "*Knock on 420. Somebody should eat one of those casseroles with him.*",
+          "key": "After telling Lena, you went to eat a casserole with Kevin.",
+          "set": {
+            "s2e22_wed": "kevin"
+          },
+          "goto": "s09k"
+        }
+      ]
+    },
+    "s09t": {
+      "slug": "WEDNESDAY · 9:30 PM · THE SIGMA RHO HOUSE ON THE BLUFF — SHIPPING UP",
+      "music": "Dropkick Murphys — “I’m Shipping Up to Boston”",
+      "set": {
+        "theo_knows_cat": true,
+        "rel.theo.warmth": "+1",
+        "rel.theo.trust": "+1"
+      },
+      "body": [
+        "The Sigma Rho house sits on the bluff with its back to the Pacific and its deck hung out over the dark like a diving board, and every speaker the brothers own is out on the deck playing the same song, for the third time since Jack came up the side stairs. It’s shoulder to shoulder in green out there: green beads, green plastic bowlers, a boy in a kilt who is not Scottish and a girl explaining to him at length that he’s wearing it wrong. The keg by the rail is putting out something the color of antifreeze. Somewhere indoors, under the speakers, there really is a fiddle, played by a sophomore from Bakersfield who learned it for tonight and is losing.",
+        "Theo is at the far end of the rail, alone in the crowd the way he can manage to be, in a blazer of green velvet so deep it looks wet, holding a pint of the green beer he hasn’t touched. When he sees Jack he lifts it, by way of introduction. “Behold. I said velvet. I don’t lie about fabric.”",
+        "“You look like a pool table.”",
+        "“I look like a pool table in a *Visconti* picture.” He takes a second pint off the rail, where it’s been waiting, and puts it in Jack’s hand. “Say it. You’ve got the face. I could see it from the stairs.”",
+        {
+          "if": "s2e21_wed!=\"theo\"",
+          "text": "So Jack tells him, at the rail, with the water going on in the dark below. That Skye came back to Oceanography two weeks ago. That last Tuesday she put a paperback Catechism down on his notebook and said she wanted to read it with him, from the beginning, in order, one section at a time, until one of them talked the other one round. Wednesdays at four, at Low Tide on Las Olas. That last week she came in a gown, and today she came straight out of the ocean. Theo’s eyebrows go up at *came back*, and they’re still up at *Catechism*. He has turned round to listen, with his back to the party.",
+          "else": "So Jack tells him how the second one went, at the rail, with the water going on in the dark below: straight out of the ocean this time, a wetsuit, thirty-one to thirty-eight."
+        },
+        {
+          "if": "s2e21_wed!=\"theo\"",
+          "text": "“The *whole* thing?”",
+          "else": "“Who won?” Theo says, and Jack tells him, and Theo nods at the dark water for a while."
+        },
+        {
+          "if": "s2e21_wed!=\"theo\"",
+          "text": "“Two thousand eight hundred and sixty-five paragraphs.”",
+          "else": "“She’s going to finish it, you know,” he says. “All of it. She doesn’t know how not to.”"
+        },
+        {
+          "if": "s2e21_wed!=\"theo\"",
+          "text": "Theo shuts his eyes. “A girl. A book. Twenty-eight hundred paragraphs and a wetsuit. At Low Tide, which makes a cortado I still think about.” He opens them. “Cannes. Out of competition. They’d have to hose down the Croisette.” Then the pitch goes out of him, and he looks down into his beer. “She finishes things,” he says. “When she was fourteen a director told her she didn’t understand her own character, and she went home and read all of Stanislavski in a weekend so she could tell him why he was wrong. All of it. Came in on the Monday and did. She won.” He turns the pint on the rail. “Other people get bored. She gets to the end. And next week she’ll come in something else. She never wears the same thing twice in front of the same audience. She didn’t when we were eleven.”"
+        },
+        {
+          "if": "s2e21_wed!=\"theo\"",
+          "text": "A boy in a shamrock bodysuit goes past them singing a different song from the one that’s playing. Theo waits for him to be gone."
+        },
+        {
+          "if": "s2e21_wed!=\"theo\"",
+          "text": "“Be careful with her, Costigan,” he says. “Not for you.”"
+        },
+        "“Does Lena know?”",
+        "“Before anybody. Both times.”",
+        "“What did she say?”",
+        "“‘Thank you for telling me.’”",
+        "Theo winces all the way down into the velvet. “Oh, no. The *polite* one.”",
+        "“She came back from it.”",
+        "“Good.” Theo drinks none of his beer, in celebration. Down the deck somebody starts the song again from the top, and a cheer goes up for it as though it were new.",
+        "“Friday,” Theo says. “Nineteen.” He shakes his head at the Pacific. “I’ve been nineteen since November. I don’t recommend it. Everybody expects you to have learned something.”"
+      ],
+      "choices": [
+        {
+          "tag": "Wit",
+          "text": "*Drink the green beer. One. For St. Patrick, who got rid of the snakes.*",
+          "set": {
+            "s2e22_theo": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "He drinks it. It’s terrible: cold, thin, and faintly minty for reasons of its own. Theo watches him get to the bottom like a man watching a nature documentary about something with too many legs.",
+            "“Patrick didn’t get rid of the snakes, Costigan. There were never any snakes in Ireland.”",
+            "“Then he did a great job.”",
+            "Theo laughs, short, into the velvet."
+          ],
+          "goto": "s10"
+        },
+        {
+          "tag": "Restraint",
+          "text": "*Hold it till it goes flat.*",
+          "set": {
+            "s2e22_theo": "restraint",
+            "trait.control": "+1"
+          },
+          "response": [
+            "They stand at the rail with two full pints going flat in the wind off the water and talk about nothing much: the boy in the kilt, the Croisette, whether Fenner owns a second cardigan. When the beer is dead Theo takes Jack’s glass out of his hand and pours them both over the rail into the ice plant, one and then the other, with ceremony."
+          ],
+          "goto": "s10"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“I’m glad it’s you in the other bed, Theo.”",
+          "set": {
+            "s2e22_theo": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“I’m glad it’s you in the other bed, Theo.”",
+            "Theo looks at the water. “Don’t. I’ll cry on the velvet, and it doesn’t come out.”",
+            "The song comes round again behind them.",
+            "“Me too,” he says, short, still looking at the water."
+          ],
+          "goto": "s10"
+        }
+      ]
+    },
+    "s09k": {
+      "slug": "WEDNESDAY · 9:30 PM · DELGADO HALL, ROOM 420 — THE ROTA",
+      "set": {
+        "kevin_420": true,
+        "rel.kevin.warmth": "+1",
+        "rel.kevin.trust": "+1",
+        "resolve.jack": "+1"
+      },
+      "body": [
+        "The rota is still up on the door of 420, at eye level, with enough Scotch tape on it to ride out a hurricane.",
+        {
+          "type": "doc",
+          "title": "On the door of 420, in three colors of Sharpie",
+          "text": "KEVIN’S CASSEROLE ROTA — THROUGH EASTER. MON: LANEY (KING RANCH CHICKEN). TUE: MARGOT (LENTIL, WITH FOOTNOTES). WED: PETER H. THU: PRIYA. FRI: SPOKEN FOR. SAT: LANEY AGAIN. SUN: CHURCH, THEN LANEY. NO SUBSTITUTIONS. NO REFUSALS. —L.P."
+        },
+        "Jack knocks.",
+        "“It’s open,” Kevin says. “Unfortunately.”",
+        "Doug has gone down to the bars on Las Olas in a foam hat shaped like a pint glass, and his half of the room is an unmade bed and an Xbox. Kevin is at his desk in his quarter-zip, under the poster of the human muscular system, eating casserole cold out of a Pyrex dish. The mini-fridge stands open beside him, and in it, stacked like sandbags, there are three more.",
+        "“Respectfully,” Kevin says, without getting up, “this is what I was afraid of.”",
+        "He points his fork at the fridge, top shelf to bottom. “Monday. Laney. King Ranch chicken, delivered Tuesday night, retroactively. Tuesday. Margot. Lentil. It came with a bibliography. Wednesday. Peter Haddad. Something with tater tots on top that I believe is a Minnesota thing.” He taps the dish in front of him. “This one’s not on the rota. This one’s a *supplement*. Laney left it outside the door at eleven o’clock last night with a note that said *in case*. In case of what, she didn’t specify.”",
+        "He holds up a forkful and looks at it with professional interest. “King Ranch chicken is a delivery system for cream of mushroom soup. The sodium in this dish alone is a cardiac event. I’m going to be the first pre-med in the history of Marisol to be hospitalized by kindness.”",
+        "“How’d she find out?”",
+        "“A soprano.” Kevin says it the way he’d say *a tick*. “In the Newman kitchen, Tuesday, over the coffee urn. One verse and Laney had the names, the date and the reason. I came back from orgo at ten and there was a rota on my door and Laney standing next to it. She read it to me. Out loud. In the hall. Like a proclamation from a balcony. At eleven there was a supplement.” He chews. “Doug won’t touch any of it. Doug says casseroles are for funerals.”",
+        "“What’d you tell him?”",
+        "“I told him I’m aware of what they’re for.”",
+        "He pulls Margot’s lentil out of the fridge and peels back the foil, and there is in fact an index card taped to the inside of it, typed. He reads it aloud in the voice he uses for case studies. “Footnote three. *The lentil is among the oldest cultivated legumes. See Genesis 25, in which a man sells his birthright for a bowl of them. Do not do this.*” He puts the foil back. “Priya’s is tomorrow. She’s laminated the reheating instructions. I’ve seen a draft.”",
+        "He fishes a second fork out of the desk drawer and holds it out over his shoulder. Jack pulls Doug’s desk chair over and eats. It’s cold, and good, and there is far too much of it.",
+        "Down the hall somebody runs past singing about Galway, badly, and a door bangs on it.",
+        "“She said I’m never in the room,” Kevin says. He scrapes a corner of the dish clean. “I’m in this room. I’m in it a lot, actually.”",
+        "He eats a tater tot off Peter Haddad’s casserole, cold, out of the fridge, with his fingers."
+      ],
+      "choices": [
+        {
+          "tag": "Wit",
+          "text": "*Rank the casseroles.*",
+          "set": {
+            "s2e22_kevin": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "Jack ranks them the way Gloria rates the pies at the Anchor, out loud, with tasting notes: the tater tots first, for nerve; Margot’s lentil second, for scholarship; the King Ranch last, for the mushrooms. Kevin disputes every placing on clinical grounds, the tots as a lipid profile and the lentils as a fiber event, and in the end he takes a purple Sharpie out of the cup on his desk, opens the door, and writes the final standings on Laney’s rota under SUN, in a fourth color."
+          ],
+          "goto": "s10"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“Laney loves you. She’s just bad at it in a good way.”",
+          "set": {
+            "s2e22_kevin": "sincerity",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“Laney loves you. She’s just bad at it in a good way.”",
+            "“I know.” Kevin looks at the open fridge, at the three dishes under their foil. “It’s the best thing anybody’s done for me all year, and if you tell her I said so I’ll deny it under oath.”",
+            "He goes back to eating."
+          ],
+          "goto": "s10"
+        },
+        {
+          "tag": "Candor",
+          "text": "“I didn’t tell her.”",
+          "set": {
+            "s2e22_kevin": "candor",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "“I didn’t tell her.”",
+            "“I know you didn’t.” Kevin pushes the Pyrex to the middle of the desk. “That’s why I let you in.”",
+            "They eat out of the one dish, a fork each, while somebody down the hall puts the Galway song on again."
+          ],
+          "goto": "s10"
+        }
+      ]
+    }
+  }
+}
