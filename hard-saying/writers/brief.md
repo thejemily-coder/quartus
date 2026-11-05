@@ -73,6 +73,10 @@ Season 2 from S2E10 for this timeline.
     public, where they might be photographed, she tries to keep their conduct **on the romantic side of the line, not the
     sexual.** They're not always perfect about it: they're genuinely having fun pretty constantly, and that gives itself
     over to recklessness (a stranger's photo, a blog item, a call from home now and then).
+  - **Contraception (player, 2026-11-05; confirms the room's plan).** No condom on the page in S2E10, on purpose. Skye is on
+    birth control, and she doesn't mention it, **hoping that if she doesn't, Jack won't have yet another thing to confess.**
+    If Jack ever thinks about it he almost certainly realizes, and **confesses at least not wanting to know.** No pregnancy
+    plot. (When it is finally said aloud between them, she says it; the room places it.)
   - **Alt S2E11 notes session (player, 2026-11-05).** The away-weeks montage (Feb 6–21: calls and texts with Skye in New
     Mexico; texts from Theo, Kevin and Margot in New Orleans) takes **about half the episode**, with playable texting/call
     choices. **Skye's return:** he meets her at the airport/curb and they can't wait; **a long night in** (heat, talk, her
