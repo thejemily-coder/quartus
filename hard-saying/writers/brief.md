@@ -18,6 +18,23 @@ Season 2 from S2E10 for this timeline.
 - All other hard rules stand: no mocking the faith; no cheap villains; no death of Lena or Jack; no sexual assault or
   rape in anyone's background; Skye never coerces.
 
+- **Alt Season 2 re-plan (player, 2026-11-05; after playing S2E10; supersedes the 2026-10-29 Showrunner re-map where they
+  differ, and any brief entry about how or when Jack and Skye end).**
+  - **Jack and Skye stay together, open-ended.** No planned end in S2. The relationship keeps growing, and so does the
+    heat of their intimacy. **Don't force anything:** no engineered breakup, no deadline, no "the purpose of amendment ends
+    it" beat. (The side-of-the-road breakup, "So I'm the bad column," and the Catechism-after-the-breakup sequence are
+    suspended in this timeline, not scheduled.)
+  - **Jack stays in the fight with his faith.** He doesn't drift away; he keeps going back to Osei and keeps not being able
+    to promise. He struggles with sex, confession and the Eucharist, visibly, week to week. **Skye struggles with what
+    he's going through. It's hard, and it brings them closer together.**
+  - **Skye and the faith:** move her Catechism campaign ("explain it until I understand") up to now: she wants to understand
+    what's tearing at him. She keeps coming to Mass with him, including the Sundays he doesn't go up. At some point she
+    goes to talk to Osei on her own.
+  - **Jack and Lena: later still.** Not together in S2 or Summer 2010; sophomore fall or after, a longer road.
+  - **Lena ends it with Julian** (her own decision) and is single through the spring.
+  - **The silence holds to the season finale.** Total cold most of the season; the first real words come at the end of
+    freshman year. (Proxy fight #2 and its verbatim line are held for whenever the silence breaks; the room places it.)
+  - **The alliance discovery is held until later** (late in the season or beyond), not mid-season.
 - **Alt S2E10 notes session (player, 2026-10-29).**
   - **The no comes in layers.** Theo pitches New Orleans first (the alliance's play: the Saints' Super Bowl run,
     Bacchus, maybe tickets already bought). Then an invitation from Lena herself arrives (a note or text, breaking the
