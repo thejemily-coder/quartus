@@ -58,6 +58,12 @@ Season 2 from S2E10 for this timeline.
     deserved to know all of it. **It brings Jack and Skye even closer together.** Skye doesn't treat Lena with hostility,
     but **she's probably going to dislike her from now on**, and **Laney** too, now that she has confirmation Laney was rude
     to her because Lena likes Jack. (Never a catfight; Skye's dislike is cool, civil and real.)
+  - **More re-map answers (player, 2026-11-05).** **Episode length from S2E12: 16,000–20,000 words per playthrough**
+    (S2E10 ran ~23–25k; tighten). **Lena finds out this season that Jack and Skye are sleeping together, not from Jack:**
+    it reaches her some other way (gossip, Laney, a slip; the room picks a plausible route that obeys the knowledge
+    rules), and it feeds the anger. **The alliance fight with Theo is mostly comic:** Jack understands Theo meant well,
+    especially before Skye; what really bothers him is that Theo kept at it after Jack said he loved Skye, because Skye is
+    one of Theo's oldest friends.
   - **Alt S2E11 notes session (player, 2026-11-05).** The away-weeks montage (Feb 6–21: calls and texts with Skye in New
     Mexico; texts from Theo, Kevin and Margot in New Orleans) takes **about half the episode**, with playable texting/call
     choices. **Skye's return:** he meets her at the airport/curb and they can't wait; **a long night in** (heat, talk, her
