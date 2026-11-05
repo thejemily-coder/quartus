@@ -1,0 +1,383 @@
+{
+  "scenes": {
+    "s15": {
+      "slug": "SATURDAY, FEBRUARY 20 · 9:52 PM · SANTA BARBARA AIRPORT — THE CURB",
+      "music": "Local Natives — “Airplanes”",
+      "set": {
+        "rel.skye.warmth": "+1"
+      },
+      "body": [
+        "He washes the sweatshirt in the morning, as instructed. Machine three, warm, a capful of Doug’s detergent because his own ran out Thursday, and then the dryer at the end of the row with the round glass door, where he stands with his arms folded and watches the gray CREW go by, and by, and by, like the one fish in a dentist’s tank. Doug comes in behind him with a laundry basket holding nothing but World of Warcraft T-shirts and stops in the door.",
+        "“Dude.” All five vowels. “Are you *crying* at a dryer?”",
+        "“It’s the sheets.”",
+        "Doug looks at the dryer. There is one sweatshirt in it. “What sheets?”",
+        "At two he takes the Saab through the car wash on Hollister, the one with the big blue brushes that come down on the windshield like a pair of golden retrievers who have missed him, and it stalls at the exit under the blowers, and the kid with the chamois knocks on his window to ask if he’s okay.",
+        "The airport is the old one, from the war: white stucco, red tile, arched windows, palms lit from underneath, a terminal about the size of the parish hall at St. Brigid’s. There is one arrivals curb and one airport cop to keep it, a heavyset man with a whistle on a lanyard who has already waved the Saab on twice. Jack has done two loops of the lot road. On the third the radio is playing a song about airplanes that he doesn’t know, which seems like a lot to ask of a coincidence, and he leaves it on low and puts the hazards on and sits at the curb as small as a Saab can sit.",
+        "The hat rides shotgun. It has been on the shelf over his bed in 412 for two weeks, crown down, next to Theo’s DVDs; he took it off her closet shelf the morning she left, with the key, and couldn’t have told anybody why, and nobody asked. Tonight it came down the hill on the passenger seat. It’s the only way a Stetson should travel.",
+        "At 9:49 a plane comes in low over the slough with its landing lights on, and he watches it down behind the terminal roof and has no way of knowing whether it’s hers. 9:52. The sliding doors open and let out a man with golf clubs and a family of five with a car seat between them, and close, and open again.",
+        {
+          "if": "s2e11_pic==\"saved\"",
+          "text": "A girl comes out in a sheepskin coat, with a carry-on and a suitcase, and his eyes go right past her. Dark hair to her shoulders, nearly black under the terminal lights: somebody’s daughter, home from somewhere, nobody he’s met. He saw a strip of that hair once, above a thumbprint of ash on a screen the size of a stamp, and it didn’t get him ready for any of this. Then the girl sees the Saab, and her chin comes up, and her mouth starts going at one corner before the rest of her has decided to, and it’s her.",
+          "else": "She comes out in the sheepskin coat with the carry-on and the suitcase, and he’s seen the hair already, dark against a motel mirror on a screen the size of a stamp. Under the terminal lights it’s a different thing, darker and real, and the face under it is the one he knows best in the world, so that the hair looks like part of the costume, something she has on and hasn’t gotten around to taking off."
+        },
+        "The bank sign across the road says fifty-eight degrees, and she has the sheepskin collar turned up around her ears. Under the coat, buttoned to the throat, is his flannel.",
+        "She comes straight to the open passenger window and leans in to say something to him, and finds the hat. She laughs, one short surprised sound. Then she reaches in with both hands and takes it off the seat and puts it on, there at the curb under the sodium lights in front of the cop and the golf clubs and God: the brownie-pan Stetson her mother said she would not wear in an airport. She tips it back off her forehead with one finger.",
+        "Jack is out of the car on the street side with the door hanging open and the radio still going, grinning at her across the Saab’s roof like a man who has won something at a fair."
+      ],
+      "choices": [
+        {
+          "tag": "Reckless",
+          "text": "*Don’t say anything. Get to her.*",
+          "set": {
+            "s2e11_curb": "reckless",
+            "rel.skye.heat": "+1",
+            "trait.reckless": "+1"
+          },
+          "response": [
+            "He comes around the hood. She lets go of the suitcase on the way to meet him and it tips over on the curb behind her with a slap, and it can stay there. She hits him at a run with both arms around his neck, and he takes her up off the curb, coat and all, the whole weight of the sheepskin, her boots off the ground, and the hat goes somewhere over his shoulder into the loading zone. She smells like the inside of an airplane and motel soap, and under that, her."
+          ],
+          "goto": "s15a"
+        },
+        {
+          "tag": "Wit",
+          "text": "“You’re a sheriff in the airport.”",
+          "set": {
+            "s2e11_curb": "wit",
+            "trait.wit": "+1"
+          },
+          "response": [
+            "“I’m not in the airport.” She points down at her boots, at the painted edge of the curb under the toes of them. “I’m at the *curb*.”",
+            "And then she comes around the back of the Saab at him, hat and all, and the brim gets him in the forehead before the rest of her does."
+          ],
+          "goto": "s15a"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“You came home early.”",
+          "set": {
+            "s2e11_curb": "sincerity",
+            "rel.skye.warmth": "+1",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "“I came home *on time*.” She’s around the back of the Saab and into him, up on the toes of her boots, and then up on the toes of his, standing on his feet like a kid at a wedding. She says the rest into his collar. “They had me late.”"
+          ],
+          "goto": "s15a"
+        }
+      ]
+    },
+    "s15a": {
+      "slug": "SATURDAY, FEBRUARY 20 · 9:58 PM · SBA ARRIVALS → HOLLISTER → THE 217",
+      "body": [
+        "They kiss at the curb with the hazards going. It isn’t the kind of kiss an airport is built for. It’s two weeks long and it keeps going: her cold hands up under his jaw, his inside the sheepskin at her back where the shirt under it is still warm from the plane, her mouth opening under his and her weight coming onto him by degrees until he’s holding up most of her, the brim of the hat bent against his ear, until a whistle goes off three feet away.",
+        "The cop has one hand on his belt and the whistle still in his teeth. He takes it out. “Ma’am. Sir.” He nods at the blinking Saab. “It’s a *loading* zone.”",
+        "Skye doesn’t let go of Jack’s collar. “We’re loading.”",
+        "The suitcase goes in the back seat with the carry-on on top of it; the hat goes on the dash, crown down, rocking. Jack gets behind the wheel with the cop watching from the curb, puts in the clutch, finds first, lets it out as he has let it out fifty times in two weeks — and the Saab bucks once and dies, under the light, in front of the cop, who doesn’t move a muscle of his face about it.",
+        "Skye is already laughing. “Move over, Youngstown.”",
+        "They trade places around the hood — probably a second violation — and she drives. She drives the Saab like a limb she’d forgotten she had: second gear before the end of the curb, the clutch going in and out under her boot without a sound, the car taking it from her without a word of complaint.",
+        "Under the airport road’s lights, with her window down and the night coming in off the slough, her hair goes almost blue. She catches him looking at it.",
+        "“Twelve washes,” she says. “Corinne’s counting.” She pushes it back off her forehead with her wrist. “She refers to it as the situation.”",
+        {
+          "if": "s2e11_pic==\"saved\"",
+          "text": "At the light by the long-term lot she keeps her eyes on the signal. “Did you open it?”"
+        },
+        {
+          "if": "s2e11_pic==\"saved\"",
+          "text": "“Not yet.”"
+        },
+        {
+          "if": "s2e11_pic==\"saved\"",
+          "text": "“Good.” The light changes, and she shifts up. “I want to be there when you do.”"
+        },
+        "At the red light on Hollister she puts the Saab in neutral and turns her head and looks at him, and it isn’t her. It’s an old man’s look, heavy-lidded, a look that has been up since yesterday and has stood in a lot of kitchen doorways after midnight, and her voice comes from somewhere down at the bottom of the coat, slow and tired, no question mark on anything.",
+        "“*Where were you.*”",
+        "“Here,” Jack says.",
+        "She holds the old man’s eyes on him the length of the red, and then they’re gone and it’s her, in the dashboard light, biting the inside of her cheek. The light goes green. Somebody behind them leans on his horn. She lets him.",
+        "On the 217 her right hand comes off the gearshift and lands on his thigh and stays, and when she has to shift she does it with her left hand reaching all the way across her own body, twice, badly, and still doesn’t take the right one back. The road is two miles long. The marsh opens up dark on one side and the campus lights come up ahead, and her hand is warm through his jeans the length of it, her thumb moving now and then and going nowhere. He sits in the passenger seat of her car with the salt coming in the window and the hat rocking on the dash and her hand on him, and he is so happy he could put his head out the window like a dog."
+      ],
+      "next": "s16"
+    },
+    "s16": {
+      "slug": "SATURDAY, FEBRUARY 20 · 10:35 PM · DEL PLAYA LANE — THE LONG NIGHT IN",
+      "music": "Sade — “By Your Side”",
+      "set": {
+        "rel.skye.heat": "+2",
+        "soul.restraint": "-1",
+        "confession_owed": "+1",
+        "resolve.jack": "-1"
+      },
+      "body": [
+        "It has taken them thirty-five minutes to do twelve minutes of road, and the gravel turnout by the slough accounts for most of it. Sol’s house is dark. Sol is in Ojai again, Tomás is down on the boat till Monday, the porch light is off, and the porch leans a little toward the street, as it always has. Off the bluff the surf is up tonight, a long slow set coming in out of the dark and going over against the foot of the stairs.",
+        "She can’t find the key. She goes through the coat on the top step, every pocket, both sides, laughing at herself, and hands him what she finds as she finds it: a boarding pass, a motel key card with a cartoon roadrunner on it, a call sheet folded into a square, a lip balm, a guitar pick that isn’t hers, two flat foil packets of Pop-Tarts. His hands are full by the time the keys turn up in the last pocket she tries, the inside one, over her heart.",
+        {
+          "if": "s2e11_light==\"absolved\"",
+          "text": "He knows what he said on the kneeler. It’s out on the porch with them for exactly the length of a breath, in and out of him. Then he takes the keys out of her hand, finds the right one by feel in the dark, and opens the door himself."
+        },
+        "Inside, the front room smells of Sol’s plants, wet soil and the green pepper smell of the big fig by the window, and of the house, old wood and salt. She takes the boarding pass and the Pop-Tarts and the rest out of his hands in one armful and dumps it on the hall table, and crosses the dark room without touching anything, and on her way past the turntable on its milk crate by the window she lifts the arm and sets the needle down with one hand, not stopping.",
+        "“Sol leaves a record on for the plants,” she says.",
+        "The needle finds its groove with a hiss, and a bass line comes up into the dark, unhurried, and a woman’s voice somewhere behind it, low, somebody with all night to say it in.",
+        "She comes back across the room and stops a step short of him, close enough that he can smell the plane on her, and motel soap, and somebody else’s shampoo in the dark hair, something with coconut that isn’t hers. He puts his hands in it. It’s heavier than her own hair, coarser at the ends from whatever Dell is made of, and when he pushes it back off her face with both hands her cheekbones are cold from the car window, and she’s warm everywhere his hands go after that.",
+        "They get as far as the bottom of the stairs. She hangs the hat on the newel post herself, a girl hanging her hat in a saloon, and she’s still in the coat when he has her against the banister with his mouth on her throat above the collar of the shirt. Her hands are already under his sweatshirt at the small of his back, cold as the porch rail, so that he says something about it into her neck, and she laughs and spreads her fingers wider on purpose.",
+        "Two weeks ago he was learning her. He isn’t learning anymore. His hands go where they mean to go, in under the coat and the shirt to the warm skin over her ribs, his thumb along the underside of her breast, and her breath catches exactly where he wanted it to, and he’s the one who turns her on the bottom stair so she’s a step above him and they’re eye to eye, and the one who starts on the buttons from the top. She lets him. She likes it, and tells him so against his ear, in a voice he has never heard on her. “Look at you.”",
+        "Two buttons down, she’s gone. She takes his wrist and stops it there, and looks at him from one step up with Dell Harlan’s eyes — flat, patient, done with him already, a girl who has spent her life waiting in kitchens for men to get to the point — and says, short and quick and bored, “Think about how long you’ve been standing on that stair.”",
+        "It goes straight down the back of his neck. He doesn’t play the sheriff. He doesn’t play anything. He picks her up off the step — she is lighter than the coat — and carries her up, and by the landing she’s laughing too hard to be anybody but herself, the flat eyes gone, her arms locked around his neck and her heels knocking the wall on every stair, saying his name with the laugh still in it. That’s the one he came for.",
+        "On the landing her boots go, one and then the other, kicked down the stairs, the second one going to the bottom a stair at a time like somebody leaving in a hurry. His sweatshirt goes over the rail. She gets out of her jeans against the wall with his help, hopping, swearing at the button in a whisper, and the shirt is open all the way down under the coat now, and there’s nothing under it. She tells him what she wants, straight out, with her mouth on his, the way she asks for everything. He tells her the same.",
+        "They make it as far as her doorway. The mattress is right there across the room on the floor, the blanket on it, the lamp beside it on the boards, the string of Christmas bulbs dark over the window — four steps away, and it might as well be in New Mexico."
+      ],
+      "choices": [
+        {
+          "tag": "Reckless",
+          "text": "*The coat stays on.*",
+          "set": {
+            "s2e11_night": "reckless",
+            "rel.skye.heat": "+1",
+            "trait.reckless": "+1"
+          },
+          "response": [
+            "Her hands go to the collar to shrug out of it, and he catches the lapels instead, a fistful of sheepskin in each hand, and takes her down with him onto the floorboards of her own doorway. The coat comes down under her and opens around her like a pelt laid out by a fire. Wool and cold air and jet fuel come up out of it, and the motel, and her.",
+            "He puts his mouth on her in the middle of all that fleece: the notch of her throat, her breastbone, the warm underside of her breast and the nipple drawing tight against his tongue. His hand goes down the length of her, over the soft of her stomach and between her legs, and she is hot and wet against his fingers, and she says his name and lifts herself into his hand. One bare heel braces against the doorframe.",
+            "She gets his belt. She’s faster at it than he is and proud of it, and when she has him in her hand she holds him there and looks up at him from the coat, the dark hair spilled out over the white wool where it doesn’t belong. “Now,” she says. “Here.”",
+            "He doesn’t argue. He gets an arm under her, his hand spread at the small of her back inside the coat, and pulls her hips up to him and comes into her, and it takes the breath out of both of them, and she grabs the coat’s collar on either side of her head and hangs on to it like a rope.",
+            "It’s fast. It has no patience in it at all. Two weeks are in it, the snow and the phone and the plane, and the boards under the coat knock against the threshold every time he moves, and every time she comes up to meet him, her knees high on either side of him and her heels at the backs of his thighs, pulling. The coat slides. They go with it, a foot across the floor into the room, and they don’t stop for it. She lets go of the collar and puts her hand in his hair and drags his mouth down onto hers, and she comes like that, all at once, a sound going out of her and into him, her body bowing up off the sheepskin and closing hard around him, the empty sleeves of the coat flung out on either side of her. He goes over a moment after, with her name in her open mouth, and keeps moving through it until there’s nothing left in him to move with.",
+            "Downstairs, a long way off, something soft lets go of the newel post and drops to the floor of the hall.",
+            "They lie in the doorway on the coat with the record still going below them. Her hair is stuck to his cheek. One bare foot is out on the cold boards past the hem, and the rest of her is under him in the wool, the shirt twisted half off one shoulder, her heart slamming against his chest.",
+            "“That was the hat,” she says.",
+            "“That was the hat.”",
+            "She starts to laugh. It comes up from under him and shakes them both, and she looks past his shoulder at the mattress, four steps away with its blanket on it, and laughs harder. “I own a *bed*,” she says. “It’s right there. I *own* one.”"
+          ],
+          "goto": "s16a"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "*Turn the lamp on. You want to see her.*",
+          "set": {
+            "s2e11_night": "sincerity",
+            "rel.skye.warmth": "+1",
+            "trait.sincerity": "+1"
+          },
+          "response": [
+            "The lamp is on the floor by the mattress, where it lives. He lets go of her long enough to cross to it on his knees and turn it on.",
+            "When he looks back she’s where he left her, on the floorboards in the doorway, up on her elbows in the open coat, blinking at the light and then at him. It’s a forty-watt bulb in a paper shade from Target and it turns the room small and gold. He comes back to her on his knees, and she watches him cross back to her, and her lips part a little and stay that way.",
+            "He gets the coat off her shoulders and down her arms, and the shirt after it, and spreads them both under her on the boards, and she lies back on them in the light.",
+            "He looks at her. He doesn’t hurry it. The long pale line of her from the throat down; the flush already starting up her chest; her breasts, the nipples gone tight in the cold of the room; a bruise the size of a plum on her shin from a horse trailer in New Mexico that he’s seeing for the first time; the freckle on her hip that he could find blind; the dark rinse fanned out over his own flannel, and her face under it, looking right back at him. She doesn’t do a voice. She doesn’t do a face. She lies in the gold and lets him look, and her breathing changes while he does it.",
+            "He kisses her from the mouth down, slow at first, and can’t keep it slow. His mouth is on her breast and his hand is between her legs and her hips are coming up off the boards to meet it, and he watches her face the entire time: the line that comes between her eyebrows, her lip caught in her teeth and let go, her eyes going unfocused and coming back to find him. He has never watched anybody this close. He has never been let.",
+            "“Come here,” she says, and pulls him up by the hair. “I want to see you too.”",
+            "She gets his jeans down with her heels. He goes into her with the lamp on them both, and it’s urgent, and fast, the boards hard under his knees and her hands hard on his back, and he can see everything — the red his jaw has left on her throat, the sweat starting at her hairline under the dark, the moment her mouth opens and nothing comes out of it. She keeps her eyes on him. When it takes her he watches it go through her face in the light, every bit of it, the thing he wanted, and it takes him along with it, her name breaking in half in his mouth.",
+            "After, they’re a heap in the doorway, half on the coat and half on the bare floor, the shirt rucked up under her shoulder blades, the mattress three feet off with the lamp shining on it anyway, as if it’s expecting company.",
+            "She turns her head on the boards toward the lamp, and back. “You turned on a *light*,” she says, “to do it on the *floor*.”",
+            "“I wanted to see you.”",
+            "“You saw me.” Her laugh starts low and won’t stop, and she puts her forearm over her eyes in the gold and laughs into her elbow until he’s laughing too, with his face in her neck, on the floor of her doorway, beside a perfectly good bed."
+          ],
+          "goto": "s16a"
+        },
+        {
+          "tag": "Candor",
+          "text": "*Tell her exactly what you missed.*",
+          "set": {
+            "s2e11_night": "candor",
+            "rel.skye.trust": "+1",
+            "trait.candor": "+1"
+          },
+          "response": [
+            "He gets the coat open on the floorboards under her and the shirt off her shoulders and kneels over her in the doorway, and he tells her.",
+            "He has never said anything like it to anybody. He doesn’t dress it. He says it in his own words, Youngstown words, short ones, with his mouth barely off her skin. Her mouth, he tells her, and puts his on it. The back of her neck, here, under the hair, where it’s warm — and he turns her face aside with his hand and puts his mouth there, and she shivers the length of her body. Her hands. The weight of her asleep. The sound she makes when he does this — and he does it, his hand moving down between her legs, slow, and she makes it, and he says, “That one. That one,” into her ear, and her hips come up off the coat.",
+            "“Keep going,” she says. Her eyes are shut. “You never *say* things. You say *I’m good*. Don’t you dare stop talking.”",
+            "So he doesn’t. He tells her about the phone at two in the morning on his chest in 412, warm from her voice. He tells her he missed her feet on him at night, always freezing, two packages straight out of the icebox, and she laughs with her eyes shut and puts them on him now to prove it. He tells her what he wanted on that motel tile. He tells her the thing he missed most: the way she says his name, low, when she’s close, all one breath — and she goes red from her collarbones up to the dark hair, he can see it even in the gray from the window, and she gets her hands in his jeans and gets them open and pulls him down onto her by the hips.",
+            "He goes into her talking. He doesn’t know he can do that until he does it, and he keeps on, his mouth at her ear: how she feels around him, how long two weeks is, that he loves her, that she’s here. She answers with her body before she answers with anything else. She wraps her legs around him and rides up hard against him every time he moves, and holds on to the back of his neck, and the boards knock under them, and her breathing comes apart into pieces, and then she says it, just as he told her he missed it, his name, low and all in one breath —",
+            "— and that’s the end of what he can say. It goes through both of them close together, her first, crying out against his shoulder, and him into her hair a moment after, and he holds her through it with his arms under her and the sheepskin bunched in his fists.",
+            "They lie in the doorway, breathing like they ran there. The record goes on downstairs. She reaches out one arm without lifting her head and pats the edge of the mattress, about two feet past her fingertips.",
+            "“So close,” she tells it.",
+            "He laughs into her collarbone. She laughs under him. “You talk now,” she says. “When did you start talking?”",
+            "“Tuesday. Behind a dumpster.”",
+            "She laughs so hard the coat slides a little farther toward the bed."
+          ],
+          "goto": "s16a"
+        }
+      ]
+    },
+    "s16a": {
+      "slug": "SUNDAY, FEBRUARY 21 · 1:05 AM · HER ROOM — STORIES FROM THE SET",
+      "set": {
+        "rel.skye.trust": "+1"
+      },
+      "journal": [
+        {
+          "kind": "person",
+          "id": "debbie",
+          "title": "Debbie Callender",
+          "text": "Skye’s mother. Her manager. A voice like a hotel lobby. Did a Chevy commercial in ’94. Calls her baby. Keeps a legal pad. ‘Then you’re going to be very expensive.’ Tuesday, Studio City: already up, already asking about Teddy. ‘Baby. A *bed*.’ The accountant in Encino called her about Haiti: ‘Sweetheart, *I’m* Skylark.’ At the valet, with no lobby in it: Skye doesn’t write to anybody. She doesn’t write to her. In Santa Fe she took the room next door from the thirteenth and sat in video village. She asked for a softer take, for Cassidy’s girls. The director let Skye choose. Skye chose mean. That night in the motel Debbie cried, and said it was the best thing she’s ever seen her do, and that it terrified her. Corinne called about the faith-journey sit-down. Skye let it ring."
+        }
+      ],
+      "body": [
+        "By one in the morning they’ve made it onto the mattress, under the blanket, with the sheepskin spread over the top for weight. The record downstairs ran out an hour ago.",
+        {
+          "if": "s2e11_night==\"sincerity\"",
+          "text": "The lamp is still on from the doorway, down on the floor in its paper shade, throwing the two of them up the wall."
+        },
+        "What’s left is the surf at the foot of the bluff and her chewing. She sent him down to the hall table for the Pop-Tarts — brown sugar cinnamon, from the vending machine outside the motel office, carried a thousand miles in a coat pocket and gone flat on one side where she sat on them in Phoenix — and up on the way back for the sweatshirt off the rail, and she checks it before she’ll put it on, collar to her nose.",
+        "“*Washed*,” she says, with real surprise, and gets into it.",
+        "Then she tells him. She tells it with the parts played: lying on her back with the Pop-Tart held up over her face, crumbs coming down on the sweatshirt, doing the voices for the room.",
+        "“Day two, the horse bit the director. Clementine. On the *shoulder*, through a down vest, in front of the whole crew.” She does the director, a small woman being very calm: “*Okay.*” She does the director walking very calmly to her car and sitting in it for ten minutes. “So after that I made friends with her. On my own time. I stole carrots off craft services every morning and stood in her stall at six with my coat full of them and talked to her about my mother.”",
+        "“What did she say?”",
+        "“She ate the carrots. She’s a wonderful listener.” A bite. “Dell has to ride her into the yard at a lope and get down without ever looking at her. And I wanted to look at her. So I made friends with her, so Dell didn’t have to.”",
+        "The director is Ana Lucero. Ana asked her, the first week, who Dell was with.",
+        "“Nobody ever asks that. On *Sweetwater* nobody asks Cassidy anything but where she got the sweater.” She turns her head on the pillow. “I told her. The boy. The one her father put in the back of his car.” She licks sugar off her thumb. “And Ana *kept* it. She put it in. There’s a shot of a pickup going by the kitchen window, and Dell not looking at it. Two seconds. Not one person watching will ever know what that is.” The Pop-Tart comes down and points at him. “I know.”",
+        "Walt Breedlove played the sheriff: sixty-some, a face like a saddle left out, forty Westerns, shot by every leading man who ever wore a hat. On the last day, by the honey wagon, he took her by the elbow. She does him. It’s the voice from the red light, gentled down: an old man being careful with her. “*You’re not a nice girl, kid. You’re a kind one. Different muscle.*”",
+        "Jack lies with his hand on her ankle under the blanket and doesn’t say anything, because she’s gone quiet after it, looking up past him with the Pop-Tart forgotten on her chest.",
+        "“And the crew clapped,” she says. “The first time I said *Out* and got it right. The boom guy started it. And a grip who was on *Sweetwater* in season one, who hated me then. I know he did, I heard him say so to the craft-services lady. He clapped the longest.”",
+        "“Which take?”",
+        "“The barn. Walt says *Your mother called*, and I say *Out*, and then I don’t leave. I just stand there in the door with the horse behind me. Ana didn’t call cut. She let it run till the horse got bored.”",
+        "She wrote Danny, small, with capitals. “He told me,” Jack says. “THE GOAT AT CARRILLO.”",
+        "“I told him other things.”",
+        "“What other things?”",
+        "“That you stall.”",
+        "Valentine’s Day she went to Mass by herself, at the cathedral in Santa Fe, St. Francis: big, brown stone, cold, candles banked up everywhere, old women in black lace who knew every word without the book. She sat in the back.",
+        {
+          "if": "s2e11_light==\"absolved\"",
+          "text": "“I didn’t go up. I’ve never known how, and anyway, I figured you were going up for both of us.”",
+          "else": "“I didn’t go up. Because you don’t.” She looks at the Pop-Tart as though it might know. “Is that allowed? To not go up because somebody else doesn’t?”"
+        },
+        "“And then the Gospel.” She comes up on one elbow. “Jack. There’s a woe for people everybody likes. *Woe to you when all speak well of you.* It’s right there in it.” She aims the Pop-Tart at his chest. “I’m *in* the Bible.”",
+        "He laughs. He gets about halfway through it before he sees her face. It isn’t laughing, not all the way down. Somebody in Burbank is paid by the hour to make sure all speak well of Skye Callender. He stops laughing and keeps his hand where it is on her ankle, and she lies back down, and after a minute she goes on to the ashes.",
+        "Rosalind, the makeup girl, the one who wiped hers off for continuity — Rosalind is from Española and goes to Mass every day of her life, and she kept her own ashes on all day under her bangs. She combed them down over it in the trailer mirror. “Where continuity couldn’t see,” Skye says. “I want to be Rosalind when I grow up.”",
+        "“You’d make a terrible Rosalind. You’d tell everybody.”",
+        "“I’d tell *you*.”",
+        "“When do you hear? About the show.”",
+        "“May. They’ll tell us in May.” She puts the last corner of the first Pop-Tart in her mouth and tears open the second foil with her teeth, as if May were a town she’d driven through once and didn’t think much of.",
+        "And her mother. Debbie took the room next door from the thirteenth, with the connecting door, and sat every day in video village beside the monitors with her legal pad on her knee. On the fourth day she asked Ana for a softer take of the kitchen scene — “for Cassidy’s girls,” Skye says, in a voice like a hotel lobby, “the ones who write in, the twelve-year-olds in Tulsa” — and Ana let Skye choose. Skye chose mean. That night Debbie stood in the doorway between the rooms in her robe and cried, and told her it was the best thing she had ever seen her do, and that it terrified her. Corinne called the next morning about the faith-journey sit-down. Skye watched it ring on the motel bedspread till it stopped.",
+        "She’s quiet after that. She folds the foil over the last of the Pop-Tart, very neatly, into a square.",
+        "“She said it terrified her.”",
+        "The surf comes in and goes over at the bottom of the bluff.",
+        "“I think she meant me.”",
+        "Jack puts his arm under her and pulls her over onto his chest, and she goes, and lies there. In a while she unfolds the foil and eats the rest of the Pop-Tart over his heart, getting crumbs on both of them."
+      ],
+      "next": "s16b"
+    },
+    "s16b": {
+      "slug": "SUNDAY, FEBRUARY 21 · 2:40 AM · HER ROOM — THE WEDNESDAYS",
+      "set": {
+        "skye_knows_wednesdays": true
+      },
+      "body": [
+        "“Your turn,” she says, at twenty to three, into his chest. “I told you the *horse*. You haven’t told me one thing that happened to you in two weeks that wasn’t somebody else’s snow.”",
+        "He could tell her about Doug’s futon and the onside kick, or Theo on the phone from a street in New Orleans with the whole city screaming behind him, or Kevin’s candle, or the three times the Saab stalled in front of Tomás. She’s had most of it already, by text, in pieces, at a quarter a picture. He lies with her weight on him and the surf coming up the bluff, and what he wants to tell her isn’t any of that. He shifts so he can see her face. The Christmas bulbs over the window are still up and still dark. It’s Lent; somebody ought to take them down.",
+        {
+          "if": "s2e11_light==\"absolved\"",
+          "text": "So he tells her about Wednesdays. That he went back the Wednesday after she left and knelt on a strip of gaffer tape and told the man behind the linen all of it, Friday night and the two doors he walked past after, and said he meant to stop, and meant it. That he went up at Mass on Valentine’s, and again on Wednesday with the ash still on him. That he kept it ten days. That tonight he didn’t, and he’ll go this Wednesday and say so, because that is how it works, you go back and say what happened. That he isn’t sorry he’s going to have to say it, and he is, both, and he can’t get the two of them to come out the same length.",
+          "else": "So he tells her about Wednesdays. That he went back the Wednesday after she left and knelt on a strip of gaffer tape and told the man behind the linen the truth, and went again this Wednesday with ash on his forehead and told it again. That the truth is he can’t promise. That without the promise there’s no absolution, only a blessing, and a man on the other side of the linen who says *come back*, and he does. That this is why he stays in the pew on Sundays. That he’ll stay in it today, in about nine hours."
+        },
+        "He doesn’t make a speech of it. He tells it with his hand moving in the dark hair at the back of her head, in the order it happened, and when he runs out he stops. She doesn’t interrupt him once. Her hand on his chest closes on a fistful of blanket somewhere in the middle and opens again, and that’s all.",
+        {
+          "if": "s2e11_light==\"absolved\"",
+          "text": "She’s quiet a long time on his shoulder. “So on Wednesday you told a man you wouldn’t,” she says. “And then I got off a plane.”",
+          "else": "She’s quiet a long time on his shoulder. “So every Wednesday,” she says, “you go tell a man you’re not sorry enough about me.”"
+        }
+      ],
+      "choices": [
+        {
+          "tag": "Candor",
+          "text": "“I go tell him the truth. It’s the only clean thing I’ve got left.”",
+          "set": {
+            "s2e11_wed_answer": "candor",
+            "soul.honesty": "+1",
+            "trait.candor": "+1"
+          },
+          "key": "When Skye asked about Wednesdays, you told her the truth is the only clean thing you’ve got left.",
+          "response": [
+            "“Clean.” She says the word back and turns it over, carefully, like something she found in a coat pocket and isn’t sure is hers. She isn’t angry. He would rather she were angry. She lifts her head off his shoulder to see his face.",
+            "“Am I the thing that isn’t?”",
+            "“No.”",
+            "It’s true, and he says it so she can hear that it’s true, and she hears it. It doesn’t fix anything. He can see that on her, and he can see her see it on him.",
+            "She puts her head back down on his shoulder, carefully, the way you’d set down something with a crack in it, and leaves her hand where it was."
+          ],
+          "goto": "s16c"
+        },
+        {
+          "tag": "Sincerity",
+          "text": "“I’m not sorry about you. I’m sorry I can’t be two things at once.”",
+          "cue": "Skye heard that.",
+          "set": {
+            "s2e11_wed_answer": "sincerity",
+            "rel.skye.warmth": "+1",
+            "trait.sincerity": "+1"
+          },
+          "key": "When Skye asked about Wednesdays, you told her you’re not sorry about her — you’re sorry you can’t be two things at once.",
+          "response": [
+            "She says it back under her breath, against his shoulder, trying the weight of it — *two things at once* — the way she runs a new line at a red light to see whether it will hold. It holds. He can feel it hold, and he can feel it hurt her on the way in.",
+            "“Then what am I?” she says. “On Wednesdays.”",
+            "“You’re the reason I go.”",
+            "She lies with that. Her breath goes out slow across his chest, and comes back, and he can’t tell yet whether he’s given her something good. He isn’t sure himself.",
+            "“That’s a good line,” she says at last. “I hate it.” She doesn’t move off him."
+          ],
+          "goto": "s16c"
+        },
+        {
+          "tag": "Restraint",
+          "text": "“Yes.”",
+          "set": {
+            "s2e11_wed_answer": "restraint",
+            "trait.control": "+1"
+          },
+          "key": "When Skye asked about Wednesdays, you said yes.",
+          "response": [
+            "It lands on her like a slap. The breath goes out of her, and she sits up with the blanket held against her, her back to him in his sweatshirt, and for a while the only thing in the room is the surf.",
+            "Then, without turning around: “Thank you for not lying.”",
+            "And, after another set has come in and gone over: “Am I the thing you’re sorry for?”",
+            "“No,” he says, to her back. It’s the part after *yes*, and he can tell from the line of her shoulders that it isn’t getting to her yet.",
+            "She stays sitting up. But her hand comes back behind her and finds his on the blanket by feel, and takes it, and keeps it."
+          ],
+          "goto": "s16c"
+        }
+      ]
+    },
+    "s16c": {
+      "slug": "SUNDAY, FEBRUARY 21 · 3:20 AM · HER ROOM — THE SECOND TIME",
+      "body": [
+        {
+          "if": "s2e11_wed_answer==\"candor\"",
+          "text": "“Clean,” she says again, later, to the ceiling, and puts it down."
+        },
+        {
+          "if": "s2e11_wed_answer==\"sincerity\"",
+          "text": "“Two things at once,” she says, later, to the ceiling, like a note she means to keep."
+        },
+        {
+          "if": "s2e11_wed_answer!=\"candor\" && s2e11_wed_answer!=\"sincerity\"",
+          "text": "Later she lies back down, on her own side of the mattress, and then not on her own side."
+        },
+        "She doesn’t leave it there. She lies on her side facing him with her hand under her cheek and asks him how it works. Really. Not the book.",
+        "“What do you say? When you go in. The actual words.”",
+        "He tells her. *Bless me, Father.* How long it’s been. Then the thing, in as few words as it takes and no fewer, on a kneeler with tape on it, to a square of linen with a man’s shape behind it and a radiator going. What comes back through the linen he mostly keeps; it was said to him. He gives her the part he can’t help carrying up the hill: *come back*.",
+        "“Is it worse now? Because it’s Lent?”",
+        "He thinks about it honestly. “It’s not worse. It’s the same. Lent’s just when you notice.”",
+        "She takes that in. A car goes by down on Del Playa with its windows open and a party in it, and goes on.",
+        "“And Sundays,” she says. “When everybody goes up. What do you do?”",
+        "“Kneel. Watch them go.”",
+        "“What do I do?”",
+        "“Whatever you want. Sit. Kneel. Read the hymnal.”",
+        "“I’ll kneel,” she says. “I like the kneeling. It’s the only part where I know my blocking.”",
+        "“Does he know my name?”",
+        "“He knows *a* name.”",
+        "He feels her smile against his shoulder. “Good. Keep the other one.”",
+        "“I’m keeping it.”",
+        "“Can I come? Sunday.” She hears herself. “Today.”",
+        "“It’s at eleven-thirty.”",
+        "“That isn’t an answer, Youngstown.”",
+        "“Yes,” he says. “Come.”",
+        "“Is he kind to you? Your priest.”",
+        "“He’s kind. He doesn’t let me off.”",
+        "“Good,” she says, into his shoulder. “Don’t let him let you off.”",
+        {
+          "if": "s2e11_night==\"sincerity\"",
+          "text": "She reaches over him and turns off the lamp.",
+          "else": "She reaches over him and turns on the lamp."
+        },
+        "It’s nothing like the doorway. It’s slow, and almost nothing is said. She comes over him under the blanket with the sheepskin’s weight on her back and takes him into her and stays there, barely moving, her forearms on the pillow on either side of his head and her face a few inches over his. He puts his hand into the dark hair at the back of her skull and holds it. Under the stranger’s color it’s the same warm nape, the same small hollow behind her ear his thumb goes to on its own. They move like that a long time, hardly at all, like two people trying not to wake a house. The hurt from before is still in her face. She doesn’t hide it from him and she doesn’t stop for it; she lets him see it and keeps her eyes on his, and he keeps his on hers, and what they do is slow enough that he can feel every bit of her around him, and her heartbeat in it, and his own. When she’s close her eyes fill and don’t spill over.",
+        "“Mary Catherine,” he says.",
+        "She breathes against his mouth, and his name is in it. It comes up in both of them slowly, a long swell that lifts and lifts and sets them down, and she doesn’t make a sound until after, and then it’s only his name again, into his neck.",
+        "She sleeps on him. Her breathing goes long and then longer, and catches once, the small hitch she makes going under, and then she’s gone. The surf comes up the bluff and goes back. His arm is under her, and somewhere past three-thirty it goes to pins and needles from the shoulder down, and then to nothing at all, and he leaves it where it is."
+      ],
+      "next": "s17"
+    }
+  }
+}

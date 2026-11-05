@@ -1,0 +1,239 @@
+{
+  "scenes": {
+    "s01": {
+      "slug": "SATURDAY, FEBRUARY 6 · 4:45 AM · DEL PLAYA LANE, HER ROOM",
+      "body": [
+        "The alarm on the windowsill is a bright little run of marimba, cheerful as a game show, and Jack sleeps through it exactly as advertised. What wakes him is the rain. It’s on the shingles, fine and steady, and running in the gutter at the corner of the window, and under it, close by, there’s the sound of a zipper being done up slowly so as not to wake anybody.",
+        "She’s dressing in the dark by the gray that comes in around the curtain from the corner streetlight. Jeans. His flannel from the Walk, buttoned to the throat. The sheepskin coat over it, the big collar turned up. He watches her through his eyelashes and doesn’t let on, and she hums a little for her audience without turning around.",
+        "At the closet she reaches up to the shelf and takes down the hat. She stands there holding it by the brim in both hands, turning it a little in the gray, for a long time. She lays it back on the shelf, crown down, where it was.",
+        "She opens the desk drawer, drops something in it that clinks, and bumps the drawer shut with her hip.",
+        "“Key’s in the drawer,” she says. “Start her twice a week. She sulks.”",
+        "“Who sulks.”",
+        "“The *car*, Youngstown.”",
+        "He’s asleep again before she’s finished laughing at him, or near enough. What comes next is headlights sliding across the ceiling. He lifts his head off the pillow. Through the gap in the curtain there’s a town car at the bottom of Sol’s porch steps, black and shining, its wipers going, and a driver under an umbrella with his hand already on the back door like he’s holding it for a bride.",
+        "The suitcase goes down the stairs first. He hears every step of it with his eyes shut — the bump, the bump, the wheels catching on the landing, the driver at the bottom saying *I got it, I got it*. She comes back up for the carry-on, and for him.",
+        "She kneels on the mattress in the coat. The sheepskin is cold from the open door downstairs and smells like rain. She kisses him the way she said she would, slow, taking her time over it like there’s no car at all, one hand spread open on his chest over the CREW sweatshirt. Her thumb moves on the lettering. She sits back on her heels with her eyebrows up and waits for *mm*."
+      ],
+      "choices": [
+        {
+          "text": "“I love you.”",
+          "tag": "Sincerity",
+          "cue": "Skye will remember that.",
+          "set": {"s2e11_bye": "love", "rel.skye.warmth": "+1", "trait.sincerity": "+1"},
+          "key": "Instead of *mm*, you told Skye you loved her.",
+          "response": [
+            "It catches her halfway off the mattress.",
+            {"if": "s2e10_yes==\"sincerity\"", "text": "She stops in the door with the carry-on. “That’s cheating. You already said that one.”", "else": "She stops in the door with the carry-on. “You never said that one at a *door*.”"},
+            {"if": "s2e10_yes==\"sincerity\"", "text": "“It’s still true at five.”"},
+            "She comes back across the floorboards in the coat and kisses him again, harder, the cold collar against his jaw, and says it back into his mouth. From the stairs, going down: “Better than *mm*. Barely.”",
+            "The front door. The car door, a heavy, expensive sound in the rain."
+          ],
+          "goto": "s02"
+        },
+        {
+          "text": "“Be mean to the horse.”",
+          "tag": "Wit",
+          "set": {"s2e11_bye": "horse", "rel.skye.warmth": "+1", "trait.wit": "+1"},
+          "key": "Instead of *mm*, you sent Skye off to be mean to a horse.",
+          "response": [
+            "From the doorway, low and fifty years older, the carry-on in her fist like a lunch pail, Dell Harlan says: “*The horse knows what it did.*”",
+            "Then it’s Skye, laughing on every stair to the bottom, and the front door, and the car door shutting on the rain."
+          ],
+          "goto": "s02"
+        },
+        {
+          "text": "“Come back.”",
+          "tag": "Candor",
+          "set": {"s2e11_bye": "back", "rel.skye.trust": "+1", "trait.candor": "+1"},
+          "key": "Instead of *mm*, you told Skye to come back.",
+          "response": [
+            "She stops in the doorway with her hand on the frame. In the gray he can see her mouth and not much else.",
+            "“That’s the plan,” she says.",
+            "Her hand taps the frame twice. “Wash the sweatshirt.”",
+            "The stairs. The car door."
+          ],
+          "goto": "s02"
+        },
+        {
+          "text": "*Say* mm.",
+          "tag": "Reckless",
+          "set": {"s2e11_bye": "mm", "rel.skye.heat": "+1", "trait.reckless": "+1"},
+          "key": "You said *mm*. She called it.",
+          "response": [
+            "“*Told* you,” from the stairs, and he listens to her laugh go down them and out the front door into the rain and into the car, and then the car."
+          ],
+          "goto": "s02"
+        }
+      ]
+    },
+    "s05": {
+      "slug": "SUNDAY, FEBRUARY 7 · 10:40 PM · DELGADO HALL, THE LAUNDRY ROOM — THE MOTEL",
+      "set": {"rel.skye.trust": "+1"},
+      "body": [
+        "*It’s a Wonderful Life* ran till ten in 420, because Doug would not hear of a man watching it alone on the night of the Saints. He cried at the bell. Yusuf studied the ceiling tiles for the length of it, like a man checking a span.",
+        "Machine three is thumping through its spin cycle like it has something to prove. His towels are in it, and his jeans, and every shirt he owns that Theo hasn’t called a cry for help. The sweatshirt isn’t, because he’s wearing it. The Delgado laundry room on a Sunday night is a buzzing tube light, the warm chemical sweetness of a hundred people’s dryer sheets with none of the people, a lost-and-found box of single socks on the folding table, and his RAZR beside the box, ringing.",
+        "It’s the first long one. She’s in the motel outside Santa Fe, on the bed in her coat, because the wall heater has to think about it first. “Listen.” He hears it through the phone: a knock, like somebody at a door, and then the roar. “Every time. Like it’s asking permission.” Down the walkway the ice machine drops a load. Out in the lot two grips are arguing about the Colts in the cold, and she does them for him, one from Indianapolis who is taking it personally and one who had twenty dollars on New Orleans and wants it understood that it was a matter of principle.",
+        "The table read was this morning, in a church hall in town with folding chairs and a crucifix and a coffee urn that bled onto the tablecloth. “I said *Out*,” she says, “and it had something on it this time. I don’t know what. The room went quiet. The man playing my father — the sheriff — he looked up from his pages, and he didn’t look down again. The whole read. He just watched me.”",
+        "Jack leans on the folding table with the phone and doesn’t say anything. It isn’t his turn yet.",
+        "“And my mother booked the room next door for next week,” she says. “She called the front desk and asked for the connecting key. Like it’s a *suite*.”",
+        {"if": "s2e10_tue==\"delplaya\"", "text": "“And you packed me like a *Costigan*. I can’t get one thing out without everything coming out. I wanted a sock and I got Ohio.”", "else": "“I packed myself. Everything I own is in one sock.”"},
+        "She knows the words for it now. She learned them in his car and in his pew, and she uses them carefully, the way she’d hold somebody else’s good camera.",
+        "“Did you go up today?”"
+      ],
+      "choices": [
+        {
+          "text": "“No. I went to Mass in town and stayed in the pew.”",
+          "tag": "Candor",
+          "set": {"s2e11_call": "candor", "skye_knows_town_mass": true, "soul.honesty": "+1", "trait.candor": "+1"},
+          "response": [
+            "“In *town*.”",
+            "“At the Mission.”",
+            "“You’re hiding from your priest.”",
+            "“For a week.”",
+            "“I hid from my mother for two years once. On a soundstage.” The heater roars along behind her. “They always find you at the craft-services table, Youngstown.”",
+            "Outside her door the grips have gone in. What’s left is the ice machine and her breathing, close to the phone.",
+            "“Go back Wednesday.”"
+          ],
+          "goto": "s06"
+        },
+        {
+          "text": "“I’ll tell you when you’re home.”",
+          "tag": "Sincerity",
+          "set": {"s2e11_call": "sincerity", "rel.skye.warmth": "+1", "trait.sincerity": "+1"},
+          "response": [
+            "Down the walkway the ice machine drops its whole load, and she waits till it’s done.",
+            "“Okay,” she says. “Then I’m coming home.”",
+            "She tells him about the grips instead. The Indianapolis one has gone to sit in his truck with the engine running, and the other one is doing a touchdown dance by himself under the light over the ice machine, slow, in a parka, with his arms up, for an audience of one bucket. She narrates it like golf, low and reverent, until Jack has to sit down on the folding table."
+          ],
+          "goto": "s06"
+        },
+        {
+          "text": "“Tell me about the horse.”",
+          "tag": "Restraint",
+          "set": {"s2e11_call": "restraint", "trait.control": "+1"},
+          "response": [
+            "She does. A sorrel mare named Clementine who doesn’t like anybody and likes Skye least of all, who on the first afternoon stood on the wrangler’s foot and went on standing on it to make a point. She does the wrangler, a slow man from Española with a voice like a gravel driveway: “*She ain’t mean. She’s particular.*” She does the horse, which is mostly a long wet sigh through the lips, and it’s good enough that Jack looks over his shoulder at the dryers.",
+            "At the end of the horse she moves the phone to her other ear.",
+            "“You didn’t answer me.”",
+            "He keeps the phone at his ear and lets her have that.",
+            "“Goodnight, Youngstown.”",
+            "Machine three buzzes."
+          ],
+          "goto": "s06"
+        }
+      ]
+    },
+    "s06a": {
+      "slug": "TUESDAY, FEBRUARY 9 · 11:52 PM · THE ANCHOR, THE BACK LOT — SNOW",
+      "set": {"rel.skye.warmth": "+1"},
+      "body": [
+        "His break is ten minutes behind the dumpster corral, by the propane cage, in a wet apron, with steam coming off his forearms into the cold. It’s the only spot behind the Anchor where the RAZR finds its bar. Through the screen door the Hobart is going like a train in a tunnel, out past the lot the freeway hisses on wet pavement, and the phone rings in his hand.",
+        "“It’s snowing,” Skye says. “Jack. It’s *snowing*. Listen.”",
+        "He listens. He gets nothing at all — no heater, no ice machine, no grips — and takes the phone away from his ear to check the bars.",
+        "“That’s it,” he tells her. “That’s what it sounds like.”",
+        "“I’ve been in snow. Snow at a lodge at Christmas, from inside, with cocoa. Paper snow on a soundstage that gets in your bra.” Her voice goes up, like her face has gone up with it. “I’ve never stood in it while it *came down*. It’s landing on me. It doesn’t weigh anything.”",
+        "Jack laughs at her, a Youngstown laugh, a laugh with a few hundred driveways in it — and stops, because she’s gone quiet on the other end, and he can see her without trying: the coat, the motel lot, her face tipped up into it with her mouth open.",
+        "So he tells her what snow is for. It’s for Mrs. DeLuca’s walk on Glenwood, five dollars and a Coke, and she checks the corners with her cane. It’s for the hill at Mill Creek above the lily pond, where half the South Side goes on a snow day with cafeteria trays and garbage-can lids and one kid every year on an inner tube who finds the tree. It’s for Danny, eleven years old, pulling him up that hill on a flattened Giant Eagle box with a clothesline through it, and down, and up again, until the box went soft and gave out in the slush, and then Danny carrying him the rest of the way home on his back, both of them soaked through, Danny saying *you weigh a thousand pounds* every block and not putting him down.",
+        "There’s a sound on her end like a coat going down onto a sidewalk.",
+        "“What are you doing?”",
+        "“Lying in it,” she says. “In your flannel. In the parking lot. Under the orange light. The night clerk is watching me out the office window like I’m on fire.”",
+        "Jack is grinning at a dumpster. He’s standing behind a diner near midnight in a wet apron with his arms steaming, doing it at the phone, at the propane cage, at the sky over the lot where there isn’t any snow, and there’s nobody to see it but a cat on the fence who has seen worse.",
+        "The screen door bangs. Rudy, with a spatula: “Costigan. The Hobart.”",
+        "“I have to go wash a pie tin,” Jack tells her.",
+        "“Go. I’m making an angel.” A crunch, and the coat shushing back and forth. “That’s a Catholic thing, right?”",
+        "“It’s a kid thing.”",
+        "“In Ohio,” she says, “that’s the same thing.”",
+        "Rudy holds the screen door open with his boot and looks at Jack’s face, and at the sky, and lets him by."
+      ],
+      "next": "s07"
+    },
+    "s09a": {
+      "slug": "SUNDAY, FEBRUARY 14 · 11:52 PM · DELGADO HALL, 412 — PICTURE MESSAGE",
+      "set": {"skye_pics": "+1"},
+      "body": [
+        "Theo’s bed is made with hospital corners. The desk lamp is the only light in 412, and the RAZR lies on Jack’s chest where he left it after Laney, going up and down with his breathing, until it buzzes against the sweatshirt.",
+        {"type": "sms", "from": "SKYE (MISFIT)", "text": "happy valentines. the flannel says hi", "time": "11:51 PM"},
+        "He laughs through his nose at the ceiling.",
+        {"type": "sms", "from": "SKYE (MISFIT)", "text": "took it at 10. its almost 1 here. i was brave for 2 hours and 50 minutes", "time": "11:52 PM"},
+        "*New Picture Msg*, says the little envelope, and the RAZR goes away somewhere to think about it. A bar crawls across the bottom of the screen, stalls, crawls on. What it hands him at the end is a thumbnail: a pale shape and a darker shape, too small to be anything yet."
+      ],
+      "choices": [
+        {
+          "text": "*Open it. All the way. Right here.*",
+          "tag": "Reckless",
+          "set": {"s2e11_pic": "open", "skye_pics_kept": "+1", "rel.skye.heat": "+1", "resolve.jack": "-1", "trait.reckless": "+1"},
+          "key": "On Valentine’s night you opened Skye’s picture right there in 412.",
+          "response": [
+            "He opens it, and the little screen fills with a motel bathroom: a mirror still fogged at the corners from the shower, a fluorescent tube over it he can practically hear. Her, in the mirror. His flannel and nothing else. It hangs open down the middle, and her free hand holds it shut in one place, low, at her hip, and lets it go everywhere else — the hollow of her throat, the long pale line of her from there down, the curve of one breast where the flannel has slid back off it, her stomach, her bare knee. The iPhone is up at her collarbone with its little apple shining back at the glass.",
+            "Her hair is dark. That’s the first thing and the strangest: Dell’s rinse, nearly black under the motel light, so that for the length of a breath it’s a stranger in a stranger’s bathroom — and then it’s her mouth, the corner of it coming up, and it’s Skye. A bath towel lies in a heap on the tile by her feet. On the mirror over her shoulder, in lipstick, there’s a lopsided heart and YOUNGSTOWN, the letters crowding up against each other at the end where she ran out of mirror.",
+            "He looks for as long as he looks. Then he writes back the only thing there is in him.",
+            {"type": "sms", "from": "Jack", "text": "come home", "time": "11:58 PM"},
+            {"type": "sms", "from": "SKYE (MISFIT)", "text": "working on it", "time": "11:59 PM"}
+          ],
+          "goto": "s10"
+        },
+        {
+          "text": "*Call her first.*",
+          "tag": "Sincerity",
+          "set": {"s2e11_pic": "call", "skye_pics_kept": "+1", "rel.skye.warmth": "+1", "trait.sincerity": "+1"},
+          "key": "On Valentine’s night you called Skye before you opened her picture.",
+          "response": [
+            "He calls. She picks up on the first ring, already laughing."
+          ],
+          "goto": "s09b"
+        },
+        {
+          "text": "*Close the phone. Save it for when she’s home.*",
+          "tag": "Restraint",
+          "set": {"s2e11_pic": "saved", "pic10_unopened": true, "skye_pics_kept": "+1", "trait.control": "+1"},
+          "key": "On Valentine’s night you saved Skye’s picture, unopened, for when she was home.",
+          "response": [
+            "He shuts the phone on the thumbnail and lays it face down on the footlocker, and lies back with his hands folded on his chest like a saint on a tomb, and looks at the ceiling. At twenty past twelve the footlocker buzzes.",
+            {"type": "sms", "from": "SKYE (MISFIT)", "text": "COWARD", "time": "12:20 AM"},
+            {"type": "sms", "from": "SKYE (MISFIT)", "text": "(i love that about u. sometimes)", "time": "12:21 AM"}
+          ],
+          "goto": "s10"
+        }
+      ]
+    },
+    "s09b": {
+      "slug": "MONDAY, FEBRUARY 15 · 12:01 AM · DELGADO HALL, 412 — HER VOICE FIRST",
+      "body": [
+        "“Did you open it?”",
+        "“I wanted your voice first.”",
+        "On her end the motel heater knocks, and then it roars. “Open it now,” she says. “I’ll wait.”",
+        "So he does, with her on the line. He holds the RAZR up over his face at the end of his arm, her breathing coming small and tinny out of the earpiece, and the picture opens: the bathroom mirror fogged at the corners; his flannel and nothing else, hanging open, her hand holding it shut low at one hip and letting it go everywhere else; the tile, the towel; on the glass over her shoulder, in lipstick, a lopsided heart and YOUNGSTOWN. Her hair is dark. He doesn’t know her — a dark-haired girl in a motel, anybody — and then the corner of her mouth comes up and it’s Skye, so much Skye that he puts his free hand over his eyes.",
+        "She can’t see his face. She listens to it. “Well?”",
+        "“I didn’t know you,” he says. “Not at first. With the hair. And then it was your mouth.” He brings the phone back to his ear and has nothing to do with the other hand. “I want to be on that tile. I want it so much I can’t lie still on this bed.”",
+        "A long breath comes down the line, a laugh with the sound turned off.",
+        "Then she clears her throat and someone else takes the phone — a woman behind a front desk, carpet and a little brass bell and a name tag: “This concludes our programming.”",
+        "He finds Theo’s desk clock across the dark room. “It’s Kevin’s birthday.”",
+        "“Tell Kevin happy birthday from the flannel.”",
+        "“I’m not telling him that.”",
+        "“Tell him from Dell.” And then, close to the phone, with the lobby gone out of it: “Goodnight, Jack.”",
+        "She’s gone before he says it back. He lies under the lamp a while with the RAZR open on his chest, warm where it’s been."
+      ],
+      "next": "s10"
+    },
+    "s14": {
+      "slug": "FRIDAY, FEBRUARY 19 · 6:40 PM · ANACAPA COMMONS — THE FIRST FRIDAY",
+      "set": {"resolve.jack": "+1"},
+      "body": [
+        "On the first Friday of Lent, Anacapa Commons does the fish. It comes as a breaded square, perfectly square, of something white that was never that shape in the ocean, with a lemon wedge and a paper cup of tartar sauce, and Jack eats every bit of it at a table by the window because it’s the meal. One today, and this is it. He’s hungry in a clean, specific way, and he mentions it to nobody. In Youngstown the baccalà has been soaking in Nonna’s enamel basin on the cellar stairs since Tuesday, the water changed three times a day like she’s nursing it, and tonight it’s on the table on Glenwood with the potatoes and the good oil, and none of it is here.",
+        "Kevin’s text was waiting when he sat down.",
+        {"type": "sms", "from": "Kevin", "text": "Fasting, and the orgo curve came out. I’ve become a monk with a calculator.", "time": "5:58 PM"},
+        "His tray is on the conveyor when the RAZR goes again. It’s her. He takes it outside.",
+        "The Commons steps are emptying into the dusk. The light has gone down behind the Delgado roofline and left the sky over it lit from underneath, and on her end there’s a bar in Santa Fe: glasses, a jukebox nobody is listening to, somebody’s boot heels coming down off a table, and a crew of grown men singing something with a great deal of whistling in it.",
+        "“It’s a wrap party,” Skye says, over it. “I’m wrapped. Dell’s wrapped. The horse is wrapped and doesn’t know it yet.”",
+        "She tells him the rest with her mouth close to the phone. Corinne’s office has her on a plane into Burbank Sunday at noon, a car, a meeting Monday about the next thing. And this afternoon, in the motel parking lot, on her own phone, Skye rebooked herself onto Saturday’s last flight into Santa Barbara, through Phoenix, and nobody’s office knows yet.",
+        "“Corinne’s going to find out from the *airline*,” she says, and somebody behind her whoops at something else entirely.",
+        "Jack is on his feet on the Commons steps. He doesn’t remember standing up.",
+        "“9:52,” she says. “Don’t stall it at the curb.”",
+        "“I won’t.”",
+        "“You will. Do it after I’m in the car.” The whistling swells up behind her, and somebody yells *Skye!* across the bar like a toast, and she says she has to go be thrown in the air.",
+        "He has the Saab and he has Saturday. He doesn’t sleep much."
+      ],
+      "next": "s15"
+    }
+  }
+}

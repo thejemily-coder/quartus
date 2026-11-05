@@ -363,6 +363,15 @@ For every line of dialogue or narration that implies knowledge, ask: **how does 
 202. **A counted deadline used as a refrain** (S2E10). "Sixteen days" appeared seven times in one draft. Once or twice an episode, and never as the button on a scene.
 203. **Pen-cap and pen-position business as everyone's default beat marker** (S2E10). Name it once per scene at most; do not let every character have a pen to cap.
 204. **A journal-card update that is a bare addition** (S2E10, process rule). Every journal card update must be the save text plus the addition, built in code, never an added fragment alone.
+205. **"She does [the voice]" as the frame for Skye's stories** (S2E11). At most two per episode.
+206. **Ending a scene on the phone open in his hand** (S2E11). At most one per episode.
+207. **"Good." as the approving beat** (S2E11). At most four per episode, spread across speakers.
+208. **A Hale chair quip as the button on a response** (S2E11, s20a). At most one per duel.
+209. **"carefully" as the tact adverb for Skye and Kevin** (S2E11). At most two per episode.
+210. **Opening Skye's calls on the sound at her end** (S2E11). At most one per episode.
+211. **Re-painting an image from the scene before** (S2E11). Set it up once, then cite it in a few words.
+212. **Recapping events the player has already seen** (S2E11; related to #195). Add a new fact or cut it.
+213. **Osei's "X is not Y. It is Z."** (S2E11). At most one per episode.
 Note on #50 (S2E07): "a hand's width / a hand's breadth" is the same figure; count both together.
 Small repeats to watch (S2E01): Lena borrowing Skye's coinages (#64 — "a whole thing" is Skye's from S1E22; "in order" is Skye's register, not Lena's: Lena says "Start at the stairs"); both girls' calls opening on the same demand or
 asking "what did your mother say" (never template the two Christmas calls); the phone-call silence (#98 — one an episode: S2E01 spent it on the levee, plus the sanctioned near-say at the levee goodbye; Brentwood got a leaf blower);
