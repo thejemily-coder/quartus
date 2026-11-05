@@ -35,6 +35,9 @@ Season 2 from S2E10 for this timeline.
   - **The silence holds to the season finale.** Total cold most of the season; the first real words come at the end of
     freshman year. (Proxy fight #2 and its verbatim line are held for whenever the silence breaks; the room places it.)
   - **The alliance discovery is held until later** (late in the season or beyond), not mid-season.
+  - **Speed through the away weeks (player, 2026-11-05).** Jack alone for a while isn't interesting: skip ahead through the
+    New Orleans trip and Skye's location shoot (New Mexico, as published in S2E10) with brief overviews of Jack's calls and
+    texts with Skye, and some texts with Theo, Kevin and Margot. Get to the returns quickly.
 - **Alt S2E10 notes session (player, 2026-10-29).**
   - **The no comes in layers.** Theo pitches New Orleans first (the alliance's play: the Saints' Super Bowl run,
     Bacchus, maybe tickets already bought). Then an invitation from Lena herself arrives (a note or text, breaking the
