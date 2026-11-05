@@ -38,6 +38,13 @@ Season 2 from S2E10 for this timeline.
   - **Speed through the away weeks (player, 2026-11-05).** Jack alone for a while isn't interesting: skip ahead through the
     New Orleans trip and Skye's location shoot (New Mexico, as published in S2E10) with brief overviews of Jack's calls and
     texts with Skye, and some texts with Theo, Kevin and Margot. Get to the returns quickly.
+  - **Season shape and finale (player, 2026-11-05).** The endgame is not settled in this timeline. The feelings and hurt
+    between Jack and Lena don't go away; they **fuel the mutual anger.** By season's end they do have an honest
+    conversation, but it is **melancholic and regretful** that they didn't speak plainly before. **Jack doesn't end things
+    with Skye:** he's in love with her; she cares, and is legitimately trying with his faith, not going through the motions;
+    he is completely happy with her. **The friend group goes back to the way it was,** with awkwardness and uncertainty.
+    **Theo and Laney eventually find out about the honest conversation, and the alliance quietly re-forms** to figure out a
+    new approach for sophomore year.
 - **Alt S2E10 notes session (player, 2026-10-29).**
   - **The no comes in layers.** Theo pitches New Orleans first (the alliance's play: the Saints' Super Bowl run,
     Bacchus, maybe tickets already bought). Then an invitation from Lena herself arrives (a note or text, breaking the
