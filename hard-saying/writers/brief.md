@@ -45,6 +45,13 @@ Season 2 from S2E10 for this timeline.
     he is completely happy with her. **The friend group goes back to the way it was,** with awkwardness and uncertainty.
     **Theo and Laney eventually find out about the honest conversation, and the alliance quietly re-forms** to figure out a
     new approach for sophomore year.
+  - **Re-map defaults (player, 2026-11-05).** The silence breaks in the finale with the **big blowup first** (proxy fight #2
+    with the player's verbatim line), then the melancholic honest conversation on the last night. **Easter default: in the
+    pew beside Skye** on her birthday (he can't make the promise on Holy Wednesday; the other outcome stays playable).
+    **Skye is coming back to Marisol in the fall.** Summer plans: a **long visit from Skye to Youngstown**, and an **extended
+    visit from Jack to her New Mexico shoot** (at least one day on set; otherwise he explores the area while she shoots, and
+    they spend all her free time together). **Family:** **Danny knows** about the Sunday struggle because Jack tells him; the
+    rest of the family **notices when Jack doesn't go up during the summer.**
 - **Alt S2E10 notes session (player, 2026-10-29).**
   - **The no comes in layers.** Theo pitches New Orleans first (the alliance's play: the Saints' Super Bowl run,
     Bacchus, maybe tickets already bought). Then an invitation from Lena herself arrives (a note or text, breaking the
