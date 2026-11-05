@@ -52,6 +52,11 @@ Season 2 from S2E10 for this timeline.
     visit from Jack to her New Mexico shoot** (at least one day on set; otherwise he explores the area while she shoots, and
     they spend all her free time together). **Family:** **Danny knows** about the Sunday struggle because Jack tells him; the
     rest of the family **notices when Jack doesn't go up during the summer.**
+  - **Alt S2E11 notes session (player, 2026-11-05).** The away-weeks montage (Feb 6–21: calls and texts with Skye in New
+    Mexico; texts from Theo, Kevin and Margot in New Orleans) takes **about half the episode**, with playable texting/call
+    choices. **Skye's return:** he meets her at the airport/curb and they can't wait; **a long night in** (heat, talk, her
+    stories from the set). **She hangs out with the friends again, but Jack is still avoiding Lena and Laney,** so the full
+    ensemble happens only when it's unavoidable.
 - **Alt S2E10 notes session (player, 2026-10-29).**
   - **The no comes in layers.** Theo pitches New Orleans first (the alliance's play: the Saints' Super Bowl run,
     Bacchus, maybe tickets already bought). Then an invitation from Lena herself arrives (a note or text, breaking the
