@@ -52,6 +52,12 @@ Season 2 from S2E10 for this timeline.
     visit from Jack to her New Mexico shoot** (at least one day on set; otherwise he explores the area while she shoots, and
     they spend all her free time together). **Family:** **Danny knows** about the Sunday struggle because Jack tells him; the
     rest of the family **notices when Jack doesn't go up during the summer.**
+  - **After the honest conversation: Jack tells Skye everything (player, 2026-11-05; S2 finale).** Jack tells Skye about
+    the conversation with Lena, with **complete honesty about Lena from the beginning**, and that **he's not going
+    anywhere**: there's nothing to worry about because he's happily and completely in love with her (Skye); she just
+    deserved to know all of it. **It brings Jack and Skye even closer together.** Skye doesn't treat Lena with hostility,
+    but **she's probably going to dislike her from now on**, and **Laney** too, now that she has confirmation Laney was rude
+    to her because Lena likes Jack. (Never a catfight; Skye's dislike is cool, civil and real.)
   - **Alt S2E11 notes session (player, 2026-11-05).** The away-weeks montage (Feb 6–21: calls and texts with Skye in New
     Mexico; texts from Theo, Kevin and Margot in New Orleans) takes **about half the episode**, with playable texting/call
     choices. **Skye's return:** he meets her at the airport/curb and they can't wait; **a long night in** (heat, talk, her
